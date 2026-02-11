@@ -285,19 +285,20 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
   const isReply = !!comment.parentId;
 
   return (
-    <div className={`rounded-xl p-4 ${isReply
-      ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-neon-blue/20 border-blue-200"
-      : "dark:bg-white/5 bg-black/5"}`}
-    >
-      {/* Reply indicator — @닉네임 */}
-      {isReply && comment.replyToAuthorName && (
-        <div className="flex items-center gap-1.5 mb-1.5 text-xs">
-          <Reply className="w-3 h-3 dark:text-neon-blue text-blue-500" />
-          <span className="dark:text-neon-blue text-blue-600 font-medium">@{comment.replyToAuthorName}</span>
-        </div>
-      )}
+    <div className={isReply ? "ml-8" : ""}>
+      <div className={`rounded-xl p-4 ${isReply
+        ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-neon-blue/20 border-blue-200"
+        : "dark:bg-white/5 bg-black/5"}`}
+      >
+        {/* Reply indicator — @닉네임 */}
+        {isReply && comment.replyToAuthorName && (
+          <div className="flex items-center gap-1.5 mb-1.5 text-xs">
+            <Reply className="w-3 h-3 dark:text-neon-blue text-blue-500" />
+            <span className="dark:text-neon-blue text-blue-600 font-medium">@{comment.replyToAuthorName}</span>
+          </div>
+        )}
 
-      {/* Header */}
+        {/* Header */}
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <span className="text-sm font-medium dark:text-white text-zinc-900">
@@ -456,6 +457,7 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
           </button>
         </div>
       )}
+      </div>
     </div>
   );
 }
