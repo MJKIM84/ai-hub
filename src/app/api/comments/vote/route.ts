@@ -22,21 +22,62 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 중복 투표 확인
+    // 기존 투표 확인 (unique: commentId + voterIp)
     const existingVote = await prisma.commentVote.findUnique({
       where: {
-        commentId_voterIp_type: { commentId, voterIp: ip, type },
+        commentId_voterIp: { commentId, voterIp: ip },
       },
     });
 
     if (existingVote) {
-      return NextResponse.json(
-        { error: "이미 투표했습니다", alreadyVoted: true },
-        { status: 409 }
-      );
+      if (existingVote.type === type) {
+        // 같은 타입 클릭 → 투표 취소
+        await prisma.commentVote.delete({
+          where: { id: existingVote.id },
+        });
+
+        const updateData = type === "like"
+          ? { likes: { decrement: 1 } }
+          : { dislikes: { decrement: 1 } };
+
+        const updatedComment = await prisma.comment.update({
+          where: { id: commentId },
+          data: updateData,
+        });
+
+        return NextResponse.json({
+          success: true,
+          action: "cancelled",
+          likes: updatedComment.likes,
+          dislikes: updatedComment.dislikes,
+        });
+      } else {
+        // 다른 타입 → 투표 변경
+        await prisma.commentVote.update({
+          where: { id: existingVote.id },
+          data: { type },
+        });
+
+        // 기존 타입 감소 + 새 타입 증가
+        const updateData = type === "like"
+          ? { likes: { increment: 1 }, dislikes: { decrement: 1 } }
+          : { dislikes: { increment: 1 }, likes: { decrement: 1 } };
+
+        const updatedComment = await prisma.comment.update({
+          where: { id: commentId },
+          data: updateData,
+        });
+
+        return NextResponse.json({
+          success: true,
+          action: "switched",
+          likes: updatedComment.likes,
+          dislikes: updatedComment.dislikes,
+        });
+      }
     }
 
-    // 투표 생성 + 카운트 업데이트
+    // 신규 투표
     await prisma.commentVote.create({
       data: { commentId, voterIp: ip, type },
     });
@@ -52,6 +93,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
+      action: "voted",
       likes: updatedComment.likes,
       dislikes: updatedComment.dislikes,
     });

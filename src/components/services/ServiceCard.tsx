@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ThumbsUp, Eye, Flag, Bot, UserCheck, Check, ChevronRight } from "lucide-react";
+import { ThumbsUp, Eye, Flag, Bot, UserCheck, ChevronRight } from "lucide-react";
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
@@ -24,7 +24,6 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
 
   const handleVote = async (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (voted) return;
     try {
       const res = await fetch("/api/vote", {
         method: "POST",
@@ -32,10 +31,12 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
         body: JSON.stringify({ serviceId: service.id, type: "upvote" }),
       });
       const data = await res.json();
-      if (data.alreadyVoted || res.ok) {
-        setVoted(true);
-      }
-      if (res.ok && !data.alreadyVoted) {
+      if (res.ok) {
+        if (data.action === "cancelled") {
+          setVoted(false);
+        } else {
+          setVoted(true);
+        }
         onVote?.(service.id);
       }
     } catch {}
@@ -124,15 +125,14 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
         <div className="flex items-center gap-2">
           <button
             onClick={handleVote}
-            disabled={voted}
             className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
               transition-all duration-200
               ${voted
-                ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-neon-blue cursor-default"
+                ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-neon-blue"
                 : "dark:bg-white/5 bg-black/5 dark:hover:bg-neon-blue/20 hover:bg-neon-blue/10 dark:text-zinc-400 text-zinc-500 dark:hover:text-neon-blue hover:text-neon-blue"
               }`}
           >
-            {voted ? <Check className="w-3 h-3" /> : <ThumbsUp className="w-3 h-3" />}
+            <ThumbsUp className={`w-3 h-3 ${voted ? "fill-current" : ""}`} />
             {voted ? "추천됨" : "추천"}
           </button>
           <ChevronRight className="w-4 h-4 dark:text-zinc-500 text-zinc-400

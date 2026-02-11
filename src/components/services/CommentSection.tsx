@@ -1,7 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { MessageSquare, ThumbsUp, ThumbsDown, Send, Loader2, ChevronDown } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import {
+  MessageSquare, ThumbsUp, ThumbsDown, Send, Loader2,
+  ChevronDown, CornerDownRight, Pencil, Trash2, X, Check,
+  Lock, Reply,
+} from "lucide-react";
 import { formatRelativeTime } from "@/lib/utils";
 import type { Comment } from "@/types/service";
 
@@ -11,34 +15,35 @@ interface CommentSectionProps {
   initialTotal: number;
 }
 
-export function CommentSection({ serviceId, initialComments, initialTotal }: CommentSectionProps) {
-  const [comments, setComments] = useState<Comment[]>(initialComments);
-  const [total, setTotal] = useState(initialTotal);
-  const [page, setPage] = useState(1);
-  const [hasMore, setHasMore] = useState(initialTotal > 20);
-  const [loadingMore, setLoadingMore] = useState(false);
+// ─── Comment Form (used for both top-level and replies) ───
+interface CommentFormProps {
+  serviceId: string;
+  parentId?: string;
+  onSubmitted: (comment: Comment) => void;
+  onCancel?: () => void;
+  compact?: boolean;
+}
 
-  // 댓글 작성 상태
+function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: CommentFormProps) {
   const [nickname, setNickname] = useState("");
+  const [password, setPassword] = useState("");
   const [content, setContent] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
-  // 투표 상태 (commentId → "like" | "dislike")
-  const [votedComments, setVotedComments] = useState<Record<string, string>>({});
-
-  // localStorage에서 닉네임 복원
   useEffect(() => {
     const saved = localStorage.getItem("aihub_nickname");
     if (saved) setNickname(saved);
+    const savedPw = localStorage.getItem("aihub_comment_pw");
+    if (savedPw) setPassword(savedPw);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
-    if (!nickname.trim() || !content.trim()) {
-      setError("닉네임과 댓글 내용을 입력해주세요.");
+    if (!nickname.trim() || !content.trim() || !password.trim()) {
+      setError("닉네임, 비밀번호, 댓글 내용을 모두 입력해주세요.");
       return;
     }
 
@@ -51,6 +56,8 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
           serviceId,
           content: content.trim(),
           authorName: nickname.trim(),
+          password: password.trim(),
+          parentId: parentId || undefined,
         }),
       });
 
@@ -66,15 +73,470 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
       }
 
       const newComment = await res.json();
-      setComments((prev) => [newComment, ...prev]);
-      setTotal((prev) => prev + 1);
+      onSubmitted(newComment);
       setContent("");
       localStorage.setItem("aihub_nickname", nickname.trim());
+      localStorage.setItem("aihub_comment_pw", password.trim());
     } catch {
       setError("댓글 작성에 실패했습니다.");
     } finally {
       setSubmitting(false);
     }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className={compact ? "mb-3" : "mb-8"}>
+      <div className={`${compact ? "rounded-lg p-3 dark:bg-white/3 bg-black/3" : "glass rounded-xl p-4"}`}>
+        <div className="flex gap-2 mb-2 flex-wrap">
+          <input
+            type="text"
+            value={nickname}
+            onChange={(e) => setNickname(e.target.value)}
+            placeholder="닉네임"
+            maxLength={50}
+            className={`${compact ? "w-24" : "w-32 sm:w-40"} px-3 py-2 rounded-lg text-sm bg-transparent
+              dark:bg-white/5 bg-black/5
+              dark:text-white text-zinc-900
+              dark:placeholder-zinc-500 placeholder-zinc-400
+              outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30`}
+          />
+          <div className="relative">
+            <Lock className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-zinc-500 text-zinc-400" />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="비밀번호"
+              maxLength={100}
+              className={`${compact ? "w-24" : "w-28 sm:w-36"} pl-7 pr-3 py-2 rounded-lg text-sm bg-transparent
+                dark:bg-white/5 bg-black/5
+                dark:text-white text-zinc-900
+                dark:placeholder-zinc-500 placeholder-zinc-400
+                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30`}
+            />
+          </div>
+        </div>
+        <div className="flex gap-2">
+          <textarea
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            placeholder={parentId ? "답글을 작성해주세요..." : "댓글을 작성해주세요..."}
+            maxLength={1000}
+            rows={compact ? 2 : 3}
+            className="flex-1 px-3 py-2 rounded-lg text-sm bg-transparent resize-none
+              dark:bg-white/5 bg-black/5
+              dark:text-white text-zinc-900
+              dark:placeholder-zinc-500 placeholder-zinc-400
+              outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
+          />
+        </div>
+        <div className="flex items-center justify-between mt-2">
+          <span className="text-xs dark:text-zinc-500 text-zinc-400">
+            {content.length}/1000
+          </span>
+          <div className="flex items-center gap-2">
+            {onCancel && (
+              <button
+                type="button"
+                onClick={onCancel}
+                className="px-3 py-1.5 rounded-lg text-xs font-medium
+                  dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300 hover:text-zinc-700 transition-colors"
+              >
+                취소
+              </button>
+            )}
+            <button
+              type="submit"
+              disabled={submitting || !nickname.trim() || !content.trim() || !password.trim()}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium
+                bg-gradient-to-r from-neon-blue to-neon-purple text-white
+                hover:opacity-90 transition-all duration-200
+                disabled:opacity-40 disabled:cursor-not-allowed"
+            >
+              {submitting ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+              등록
+            </button>
+          </div>
+        </div>
+        {error && (
+          <p className="text-xs text-red-400 mt-1">{error}</p>
+        )}
+      </div>
+    </form>
+  );
+}
+
+// ─── Single Comment Item ───
+interface CommentItemProps {
+  comment: Comment;
+  serviceId: string;
+  depth: number;
+  onDeleted: (commentId: string) => void;
+  onUpdated: (comment: Comment) => void;
+}
+
+function CommentItem({ comment, serviceId, depth, onDeleted, onUpdated }: CommentItemProps) {
+  const [showReplyForm, setShowReplyForm] = useState(false);
+  const [replies, setReplies] = useState<Comment[]>(comment.replies || []);
+  const [repliesLoaded, setRepliesLoaded] = useState(false);
+  const [loadingReplies, setLoadingReplies] = useState(false);
+  const [replyCount, setReplyCount] = useState(comment.replyCount || 0);
+
+  // Vote state
+  const [likes, setLikes] = useState(comment.likes);
+  const [dislikes, setDislikes] = useState(comment.dislikes);
+  const [votedType, setVotedType] = useState<"like" | "dislike" | null>(null);
+
+  // Edit/Delete state
+  const [editing, setEditing] = useState(false);
+  const [editContent, setEditContent] = useState(comment.content);
+  const [editPassword, setEditPassword] = useState("");
+  const [editError, setEditError] = useState("");
+  const [editLoading, setEditLoading] = useState(false);
+
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deletePassword, setDeletePassword] = useState("");
+  const [deleteError, setDeleteError] = useState("");
+  const [deleteLoading, setDeleteLoading] = useState(false);
+
+  const loadReplies = useCallback(async () => {
+    if (repliesLoaded || loadingReplies) return;
+    setLoadingReplies(true);
+    try {
+      const res = await fetch(`/api/comments?serviceId=${serviceId}&parentId=${comment.id}`);
+      const data = await res.json();
+      setReplies(data.items);
+      setRepliesLoaded(true);
+    } catch {} finally {
+      setLoadingReplies(false);
+    }
+  }, [serviceId, comment.id, repliesLoaded, loadingReplies]);
+
+  const handleVote = async (type: "like" | "dislike") => {
+    try {
+      const res = await fetch("/api/comments/vote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ commentId: comment.id, type }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setLikes(data.likes);
+        setDislikes(data.dislikes);
+        if (data.action === "cancelled") {
+          setVotedType(null);
+        } else {
+          setVotedType(type);
+        }
+      }
+    } catch {}
+  };
+
+  const handleEdit = async () => {
+    if (!editPassword.trim() || !editContent.trim()) {
+      setEditError("비밀번호와 내용을 입력해주세요.");
+      return;
+    }
+    setEditLoading(true);
+    setEditError("");
+    try {
+      const res = await fetch("/api/comments", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          commentId: comment.id,
+          content: editContent.trim(),
+          password: editPassword.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        onUpdated(data);
+        setEditing(false);
+        setEditPassword("");
+      } else {
+        setEditError(data.error || "수정에 실패했습니다.");
+      }
+    } catch {
+      setEditError("수정에 실패했습니다.");
+    } finally {
+      setEditLoading(false);
+    }
+  };
+
+  const handleDelete = async () => {
+    if (!deletePassword.trim()) {
+      setDeleteError("비밀번호를 입력해주세요.");
+      return;
+    }
+    setDeleteLoading(true);
+    setDeleteError("");
+    try {
+      const res = await fetch("/api/comments", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          commentId: comment.id,
+          password: deletePassword.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        onDeleted(data.deletedId);
+      } else {
+        setDeleteError(data.error || "삭제에 실패했습니다.");
+      }
+    } catch {
+      setDeleteError("삭제에 실패했습니다.");
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+
+  const handleReplySubmitted = (newReply: Comment) => {
+    setReplies((prev) => [newReply, ...prev]);
+    setReplyCount((prev) => prev + 1);
+    setShowReplyForm(false);
+    setRepliesLoaded(true);
+  };
+
+  const handleReplyDeleted = (replyId: string) => {
+    setReplies((prev) => prev.filter((r) => r.id !== replyId));
+    setReplyCount((prev) => prev - 1);
+  };
+
+  const handleReplyUpdated = (updatedReply: Comment) => {
+    setReplies((prev) => prev.map((r) => r.id === updatedReply.id ? { ...r, ...updatedReply } : r));
+  };
+
+  const maxIndent = 4;
+  const indentPx = Math.min(depth, maxIndent) * 24;
+
+  return (
+    <div style={{ marginLeft: depth > 0 ? `${indentPx}px` : undefined }}>
+      <div className={`rounded-xl p-4 ${depth > 0 ? "dark:bg-white/3 bg-black/3 border-l-2 dark:border-white/10 border-black/10" : "dark:bg-white/5 bg-black/5"}`}>
+        {/* Header */}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            {depth > 0 && <CornerDownRight className="w-3 h-3 dark:text-zinc-500 text-zinc-400" />}
+            <span className="text-sm font-medium dark:text-white text-zinc-900">
+              {comment.authorName}
+            </span>
+            <span className="text-xs dark:text-zinc-600 text-zinc-400">
+              ({comment.maskedIp})
+            </span>
+          </div>
+          <span className="text-xs dark:text-zinc-500 text-zinc-400">
+            {formatRelativeTime(comment.createdAt)}
+          </span>
+        </div>
+
+        {/* Content / Edit mode */}
+        {editing ? (
+          <div className="mb-3">
+            <textarea
+              value={editContent}
+              onChange={(e) => setEditContent(e.target.value)}
+              maxLength={1000}
+              rows={3}
+              className="w-full px-3 py-2 rounded-lg text-sm bg-transparent resize-none
+                dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
+            />
+            <div className="flex items-center gap-2 mt-2">
+              <div className="relative">
+                <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-zinc-500 text-zinc-400" />
+                <input
+                  type="password"
+                  value={editPassword}
+                  onChange={(e) => setEditPassword(e.target.value)}
+                  placeholder="비밀번호 확인"
+                  className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
+                    dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+                    dark:placeholder-zinc-500 placeholder-zinc-400
+                    outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
+                />
+              </div>
+              <button
+                onClick={handleEdit}
+                disabled={editLoading}
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
+                  bg-gradient-to-r from-neon-blue to-neon-purple text-white
+                  hover:opacity-90 transition-all disabled:opacity-40"
+              >
+                {editLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
+                수정
+              </button>
+              <button
+                onClick={() => { setEditing(false); setEditContent(comment.content); setEditError(""); }}
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs
+                  dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300"
+              >
+                <X className="w-3 h-3" /> 취소
+              </button>
+            </div>
+            {editError && <p className="text-xs text-red-400 mt-1">{editError}</p>}
+          </div>
+        ) : (
+          <p className="text-sm dark:text-zinc-300 text-zinc-600 leading-relaxed mb-3 whitespace-pre-wrap">
+            {comment.content}
+          </p>
+        )}
+
+        {/* Delete confirm */}
+        {showDeleteConfirm && (
+          <div className="mb-3 p-3 rounded-lg dark:bg-red-500/10 bg-red-50 border dark:border-red-500/20 border-red-200">
+            <p className="text-xs dark:text-red-300 text-red-600 mb-2">정말 삭제하시겠습니까? 답글도 함께 삭제됩니다.</p>
+            <div className="flex items-center gap-2">
+              <div className="relative">
+                <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-red-400 text-red-500" />
+                <input
+                  type="password"
+                  value={deletePassword}
+                  onChange={(e) => setDeletePassword(e.target.value)}
+                  placeholder="비밀번호"
+                  className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
+                    dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+                    dark:placeholder-zinc-500 placeholder-zinc-400
+                    outline-none focus:ring-1 dark:focus:ring-red-500/50 focus:ring-red-500/30"
+                />
+              </div>
+              <button
+                onClick={handleDelete}
+                disabled={deleteLoading}
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
+                  bg-red-500 text-white hover:bg-red-600 transition-all disabled:opacity-40"
+              >
+                {deleteLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Trash2 className="w-3 h-3" />}
+                삭제
+              </button>
+              <button
+                onClick={() => { setShowDeleteConfirm(false); setDeletePassword(""); setDeleteError(""); }}
+                className="text-xs dark:text-zinc-400 text-zinc-500"
+              >
+                취소
+              </button>
+            </div>
+            {deleteError && <p className="text-xs text-red-400 mt-1">{deleteError}</p>}
+          </div>
+        )}
+
+        {/* Actions: vote, reply, edit, delete */}
+        {!editing && !showDeleteConfirm && (
+          <div className="flex items-center gap-3 flex-wrap">
+            <button
+              onClick={() => handleVote("like")}
+              className={`flex items-center gap-1 text-xs transition-colors
+                ${votedType === "like"
+                  ? "dark:text-neon-green text-emerald-600"
+                  : "dark:text-zinc-500 text-zinc-400 dark:hover:text-neon-green hover:text-emerald-600"
+                }`}
+            >
+              <ThumbsUp className={`w-3.5 h-3.5 ${votedType === "like" ? "fill-current" : ""}`} />
+              {likes > 0 && likes}
+            </button>
+            <button
+              onClick={() => handleVote("dislike")}
+              className={`flex items-center gap-1 text-xs transition-colors
+                ${votedType === "dislike"
+                  ? "dark:text-pink-400 text-pink-600"
+                  : "dark:text-zinc-500 text-zinc-400 dark:hover:text-pink-400 hover:text-pink-600"
+                }`}
+            >
+              <ThumbsDown className={`w-3.5 h-3.5 ${votedType === "dislike" ? "fill-current" : ""}`} />
+              {dislikes > 0 && dislikes}
+            </button>
+
+            <button
+              onClick={() => setShowReplyForm(!showReplyForm)}
+              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+                dark:hover:text-neon-blue hover:text-neon-blue transition-colors"
+            >
+              <Reply className="w-3.5 h-3.5" />
+              답글
+            </button>
+
+            <button
+              onClick={() => setEditing(true)}
+              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+                dark:hover:text-zinc-300 hover:text-zinc-600 transition-colors"
+            >
+              <Pencil className="w-3 h-3" />
+              수정
+            </button>
+
+            <button
+              onClick={() => setShowDeleteConfirm(true)}
+              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+                dark:hover:text-red-400 hover:text-red-600 transition-colors"
+            >
+              <Trash2 className="w-3 h-3" />
+              삭제
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Reply form */}
+      {showReplyForm && (
+        <div className="mt-2" style={{ marginLeft: `${Math.min(depth + 1, maxIndent) * 24}px` }}>
+          <CommentForm
+            serviceId={serviceId}
+            parentId={comment.id}
+            onSubmitted={handleReplySubmitted}
+            onCancel={() => setShowReplyForm(false)}
+            compact
+          />
+        </div>
+      )}
+
+      {/* Replies */}
+      {replyCount > 0 && !repliesLoaded && (
+        <button
+          onClick={loadReplies}
+          disabled={loadingReplies}
+          className="flex items-center gap-1.5 mt-2 text-xs dark:text-neon-blue text-blue-600
+            hover:underline transition-colors"
+          style={{ marginLeft: `${Math.min(depth + 1, maxIndent) * 24}px` }}
+        >
+          {loadingReplies ? (
+            <Loader2 className="w-3 h-3 animate-spin" />
+          ) : (
+            <ChevronDown className="w-3 h-3" />
+          )}
+          답글 {replyCount}개 보기
+        </button>
+      )}
+
+      {replies.length > 0 && (
+        <div className="mt-2 space-y-2">
+          {replies.map((reply) => (
+            <CommentItem
+              key={reply.id}
+              comment={reply}
+              serviceId={serviceId}
+              depth={depth + 1}
+              onDeleted={handleReplyDeleted}
+              onUpdated={handleReplyUpdated}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Main CommentSection ───
+export function CommentSection({ serviceId, initialComments, initialTotal }: CommentSectionProps) {
+  const [comments, setComments] = useState<Comment[]>(initialComments);
+  const [total, setTotal] = useState(initialTotal);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(initialTotal > 20);
+  const [loadingMore, setLoadingMore] = useState(false);
+
+  const handleNewComment = (comment: Comment) => {
+    setComments((prev) => [comment, ...prev]);
+    setTotal((prev) => prev + 1);
   };
 
   const handleLoadMore = async () => {
@@ -86,37 +548,18 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
       setComments((prev) => [...prev, ...data.items]);
       setPage(nextPage);
       setHasMore(data.hasMore);
-    } catch {
-      // ignore
-    } finally {
+    } catch {} finally {
       setLoadingMore(false);
     }
   };
 
-  const handleCommentVote = async (commentId: string, type: "like" | "dislike") => {
-    if (votedComments[commentId]) return;
+  const handleDeleted = (commentId: string) => {
+    setComments((prev) => prev.filter((c) => c.id !== commentId));
+    setTotal((prev) => prev - 1);
+  };
 
-    try {
-      const res = await fetch("/api/comments/vote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ commentId, type }),
-      });
-      const data = await res.json();
-
-      if (data.alreadyVoted || res.ok) {
-        setVotedComments((prev) => ({ ...prev, [commentId]: type }));
-      }
-      if (res.ok && !data.alreadyVoted) {
-        setComments((prev) =>
-          prev.map((c) =>
-            c.id === commentId
-              ? { ...c, likes: data.likes, dislikes: data.dislikes }
-              : c
-          )
-        );
-      }
-    } catch {}
+  const handleUpdated = (updated: Comment) => {
+    setComments((prev) => prev.map((c) => c.id === updated.id ? { ...c, ...updated } : c));
   };
 
   return (
@@ -126,60 +569,10 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
         댓글 {total > 0 && <span className="text-sm font-normal dark:text-zinc-500 text-zinc-400">{total}개</span>}
       </h2>
 
-      {/* 댓글 작성 폼 */}
-      <form onSubmit={handleSubmit} className="mb-8">
-        <div className="glass rounded-xl p-4">
-          <div className="flex gap-3 mb-3">
-            <input
-              type="text"
-              value={nickname}
-              onChange={(e) => setNickname(e.target.value)}
-              placeholder="닉네임"
-              maxLength={50}
-              className="w-32 sm:w-40 px-3 py-2 rounded-lg text-sm bg-transparent
-                dark:bg-white/5 bg-black/5
-                dark:text-white text-zinc-900
-                dark:placeholder-zinc-500 placeholder-zinc-400
-                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
-            />
-          </div>
-          <div className="flex gap-3">
-            <textarea
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              placeholder="댓글을 작성해주세요..."
-              maxLength={1000}
-              rows={3}
-              className="flex-1 px-3 py-2 rounded-lg text-sm bg-transparent resize-none
-                dark:bg-white/5 bg-black/5
-                dark:text-white text-zinc-900
-                dark:placeholder-zinc-500 placeholder-zinc-400
-                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
-            />
-          </div>
-          <div className="flex items-center justify-between mt-3">
-            <span className="text-xs dark:text-zinc-500 text-zinc-400">
-              {content.length}/1000
-            </span>
-            <button
-              type="submit"
-              disabled={submitting || !nickname.trim() || !content.trim()}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
-                bg-gradient-to-r from-neon-blue to-neon-purple text-white
-                hover:opacity-90 transition-all duration-200
-                disabled:opacity-40 disabled:cursor-not-allowed"
-            >
-              {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
-              등록
-            </button>
-          </div>
-          {error && (
-            <p className="text-xs text-red-400 mt-2">{error}</p>
-          )}
-        </div>
-      </form>
+      {/* Top-level comment form */}
+      <CommentForm serviceId={serviceId} onSubmitted={handleNewComment} />
 
-      {/* 댓글 목록 */}
+      {/* Comment list */}
       {comments.length === 0 ? (
         <div className="text-center py-12">
           <MessageSquare className="w-8 h-8 mx-auto mb-3 dark:text-zinc-600 text-zinc-300" />
@@ -190,47 +583,14 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
       ) : (
         <div className="space-y-3">
           {comments.map((comment) => (
-            <div key={comment.id} className="rounded-xl p-4 dark:bg-white/5 bg-black/5">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium dark:text-white text-zinc-900">
-                  {comment.authorName}
-                </span>
-                <span className="text-xs dark:text-zinc-500 text-zinc-400">
-                  {formatRelativeTime(comment.createdAt)}
-                </span>
-              </div>
-              <p className="text-sm dark:text-zinc-300 text-zinc-600 leading-relaxed mb-3 whitespace-pre-wrap">
-                {comment.content}
-              </p>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={() => handleCommentVote(comment.id, "like")}
-                  disabled={!!votedComments[comment.id]}
-                  className={`flex items-center gap-1 text-xs transition-colors
-                    ${votedComments[comment.id] === "like"
-                      ? "dark:text-neon-green text-emerald-600"
-                      : "dark:text-zinc-500 text-zinc-400 dark:hover:text-neon-green hover:text-emerald-600"
-                    }
-                    disabled:cursor-default`}
-                >
-                  <ThumbsUp className="w-3.5 h-3.5" />
-                  {comment.likes > 0 && comment.likes}
-                </button>
-                <button
-                  onClick={() => handleCommentVote(comment.id, "dislike")}
-                  disabled={!!votedComments[comment.id]}
-                  className={`flex items-center gap-1 text-xs transition-colors
-                    ${votedComments[comment.id] === "dislike"
-                      ? "dark:text-pink-400 text-pink-600"
-                      : "dark:text-zinc-500 text-zinc-400 dark:hover:text-pink-400 hover:text-pink-600"
-                    }
-                    disabled:cursor-default`}
-                >
-                  <ThumbsDown className="w-3.5 h-3.5" />
-                  {comment.dislikes > 0 && comment.dislikes}
-                </button>
-              </div>
-            </div>
+            <CommentItem
+              key={comment.id}
+              comment={comment}
+              serviceId={serviceId}
+              depth={0}
+              onDeleted={handleDeleted}
+              onUpdated={handleUpdated}
+            />
           ))}
 
           {hasMore && (

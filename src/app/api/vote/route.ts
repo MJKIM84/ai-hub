@@ -22,64 +22,83 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 중복 투표 확인
-    const existingVote = await prisma.vote.findUnique({
-      where: {
-        serviceId_voterIp_type: { serviceId, voterIp: ip, type },
-      },
-    });
-
-    if (existingVote && (type === "upvote" || type === "downvote")) {
-      return NextResponse.json(
-        {
-          error: type === "upvote" ? "이미 추천한 서비스입니다" : "이미 비추천한 서비스입니다",
-          alreadyVoted: true,
-        },
-        { status: 409 }
-      );
-    }
-
-    // 클릭은 중복 기록만 안 하고 카운트는 올림 (조회수 성격)
-    if (!existingVote) {
-      await prisma.vote.create({
-        data: { serviceId, voterIp: ip, type },
-      });
-    }
-
-    const updateData: Record<string, unknown> = {};
+    // 클릭은 단순 카운트 증가 (Vote 레코드 없이)
     if (type === "click") {
-      updateData.clicks = { increment: 1 };
-    } else if (type === "upvote" && !existingVote) {
-      updateData.upvotes = { increment: 1 };
-    } else if (type === "downvote" && !existingVote) {
-      updateData.downvotes = { increment: 1 };
-    }
-
-    if (Object.keys(updateData).length > 0) {
-      const updatedService = await prisma.service.update({
-        where: { id: serviceId },
-        data: updateData as never,
-      });
-
-      const points = calculatePoints(updatedService.clicks, updatedService.upvotes, updatedService.downvotes);
-      const newScore = calculateGravityScore(points, updatedService.createdAt);
-
       await prisma.service.update({
         where: { id: serviceId },
-        data: { score: newScore },
+        data: { clicks: { increment: 1 } },
       });
 
       return NextResponse.json({
         success: true,
-        upvotes: updatedService.upvotes,
-        downvotes: updatedService.downvotes,
+        upvotes: service.upvotes,
+        downvotes: service.downvotes,
       });
     }
 
+    // 추천/비추천 처리 — unique(serviceId, voterIp)로 1인 1표
+    const existingVote = await prisma.vote.findUnique({
+      where: {
+        serviceId_voterIp: { serviceId, voterIp: ip },
+      },
+    });
+
+    let updateData: Record<string, unknown> = {};
+    let action = "voted";
+
+    if (existingVote) {
+      if (existingVote.type === type) {
+        // 같은 타입 재클릭 → 투표 취소
+        await prisma.vote.delete({
+          where: { id: existingVote.id },
+        });
+
+        updateData = type === "upvote"
+          ? { upvotes: { decrement: 1 } }
+          : { downvotes: { decrement: 1 } };
+        action = "cancelled";
+      } else {
+        // 다른 타입 → 투표 변경 (upvote ↔ downvote)
+        await prisma.vote.update({
+          where: { id: existingVote.id },
+          data: { type },
+        });
+
+        updateData = type === "upvote"
+          ? { upvotes: { increment: 1 }, downvotes: { decrement: 1 } }
+          : { downvotes: { increment: 1 }, upvotes: { decrement: 1 } };
+        action = "switched";
+      }
+    } else {
+      // 신규 투표
+      await prisma.vote.create({
+        data: { serviceId, voterIp: ip, type },
+      });
+
+      updateData = type === "upvote"
+        ? { upvotes: { increment: 1 } }
+        : { downvotes: { increment: 1 } };
+      action = "voted";
+    }
+
+    const updatedService = await prisma.service.update({
+      where: { id: serviceId },
+      data: updateData as never,
+    });
+
+    const points = calculatePoints(updatedService.clicks, updatedService.upvotes, updatedService.downvotes);
+    const newScore = calculateGravityScore(points, updatedService.createdAt);
+
+    await prisma.service.update({
+      where: { id: serviceId },
+      data: { score: newScore },
+    });
+
     return NextResponse.json({
       success: true,
-      upvotes: service.upvotes,
-      downvotes: service.downvotes,
+      action,
+      upvotes: updatedService.upvotes,
+      downvotes: updatedService.downvotes,
     });
   } catch (error) {
     console.error("POST /api/vote error:", error);

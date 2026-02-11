@@ -36,6 +36,19 @@ export const commentCreateSchema = z.object({
   serviceId: z.string().min(1),
   content: z.string().min(1, '댓글을 입력해주세요').max(1000),
   authorName: z.string().min(1, '닉네임을 입력해주세요').max(50),
+  password: z.string().min(1, '비밀번호를 입력해주세요').max(100),
+  parentId: z.string().optional(),
+});
+
+export const commentUpdateSchema = z.object({
+  commentId: z.string().min(1),
+  content: z.string().min(1, '댓글을 입력해주세요').max(1000),
+  password: z.string().min(1, '비밀번호를 입력해주세요'),
+});
+
+export const commentDeleteSchema = z.object({
+  commentId: z.string().min(1),
+  password: z.string().min(1, '비밀번호를 입력해주세요'),
 });
 
 export const commentVoteSchema = z.object({

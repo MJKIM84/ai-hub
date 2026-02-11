@@ -70,7 +70,7 @@ model Vote {
 
   createdAt DateTime @default(now())
 
-  @@unique([serviceId, voterIp, type])
+  @@unique([serviceId, voterIp])
   @@index([serviceId])
 }
 
@@ -83,14 +83,20 @@ model Comment {
   content      String
   authorName   String
   authorIp     String
+  password     String   @default("") // hashed password for edit/delete
   likes        Int      @default(0)
   dislikes     Int      @default(0)
+
+  parentId     String?
+  parent       Comment?  @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies      Comment[] @relation("CommentReplies")
 
   createdAt    DateTime @default(now())
 
   commentVotes CommentVote[]
 
   @@index([serviceId])
+  @@index([parentId])
   @@index([createdAt])
 }
 
@@ -103,7 +109,7 @@ model CommentVote {
 
   createdAt  DateTime @default(now())
 
-  @@unique([commentId, voterIp, type])
+  @@unique([commentId, voterIp])
   @@index([commentId])
 }
 

@@ -51,6 +51,28 @@ export function getClientIp(headers: Headers): string {
     || "anonymous";
 }
 
+export function maskIp(ip: string): string {
+  if (!ip || ip === "anonymous") return "익명";
+  const parts = ip.split(".");
+  if (parts.length === 4) {
+    return `${parts[0]}.${parts[1]}.*.*`;
+  }
+  // IPv6 or other format
+  if (ip.includes(":")) {
+    const v6parts = ip.split(":");
+    if (v6parts.length >= 2) return `${v6parts[0]}:${v6parts[1]}:***`;
+  }
+  return ip.slice(0, Math.ceil(ip.length / 2)) + "***";
+}
+
+export async function hashPassword(password: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(password + "aihub_salt_2024");
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 export function getBaseUrl(): string {
   if (typeof window !== 'undefined') return '';
   return process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';

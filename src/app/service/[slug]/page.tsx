@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
-import { formatDate, formatNumber } from "@/lib/utils";
+import { formatDate, formatNumber, maskIp } from "@/lib/utils";
 import {
   ArrowLeft, ExternalLink, Eye, Calendar, Flag, Tag, Bot, UserCheck, MessageSquare
 } from "lucide-react";
@@ -94,23 +94,38 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const logoSrc = service.logoUrl || service.ogImageUrl || service.faviconUrl;
 
-  // 초기 댓글 데이터 서버사이드 fetch
-  const [initialComments, commentTotal] = await Promise.all([
+  // 초기 댓글 데이터 서버사이드 fetch (최상위 댓글만)
+  const [rawComments, commentTotal] = await Promise.all([
     prisma.comment.findMany({
-      where: { serviceId: service.id },
+      where: { serviceId: service.id, parentId: null },
       orderBy: { createdAt: "desc" },
       take: 20,
       select: {
         id: true,
         content: true,
         authorName: true,
+        authorIp: true,
         likes: true,
         dislikes: true,
+        parentId: true,
         createdAt: true,
+        _count: { select: { replies: true } },
       },
     }),
-    prisma.comment.count({ where: { serviceId: service.id } }),
+    prisma.comment.count({ where: { serviceId: service.id, parentId: null } }),
   ]);
+
+  const initialComments = rawComments.map((c) => ({
+    id: c.id,
+    content: c.content,
+    authorName: c.authorName,
+    maskedIp: maskIp(c.authorIp),
+    likes: c.likes,
+    dislikes: c.dislikes,
+    parentId: c.parentId,
+    replyCount: c._count.replies,
+    createdAt: c.createdAt,
+  }));
 
   // JSON-LD
   const jsonLd = {

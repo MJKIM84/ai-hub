@@ -45,8 +45,12 @@ export interface Comment {
   serviceId: string;
   content: string;
   authorName: string;
+  maskedIp: string; // masked IP like "123.45.*.*"
   likes: number;
   dislikes: number;
+  parentId: string | null;
+  replies?: Comment[];
+  replyCount?: number;
   createdAt: string;
 }
 
