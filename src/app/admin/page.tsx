@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, useCallback, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
 import {
   Globe, FileEdit, Database, Activity, MessageSquare, AlertTriangle, Mail,
   Check, X, ExternalLink, Loader2, RefreshCw, Eye, EyeOff, Trash2, ThumbsUp, ThumbsDown,
+  LogOut, Lock,
 } from "lucide-react";
 
 type Tab = "discoveries" | "edit-requests" | "sources" | "crawl-runs" | "feedback" | "reports" | "comments";
@@ -110,9 +110,112 @@ export default function AdminPageWrapper() {
   );
 }
 
+/* ============================
+   로그인 화면
+   ============================ */
+function LoginForm({ onLogin }: { onLogin: () => void }) {
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, password }),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        onLogin();
+      } else {
+        setError(data.error || "로그인에 실패했습니다");
+      }
+    } catch {
+      setError("서버에 연결할 수 없습니다");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center dark:bg-zinc-950 bg-zinc-50">
+      <div className="glass p-8 w-full max-w-sm">
+        <div className="flex items-center justify-center gap-2 mb-6">
+          <Lock className="w-6 h-6 text-neon-blue" />
+          <h1 className="text-xl font-bold dark:text-white text-zinc-900">Admin Login</h1>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium dark:text-zinc-300 text-zinc-700 mb-1">
+              아이디
+            </label>
+            <input
+              type="text"
+              value={id}
+              onChange={(e) => setId(e.target.value)}
+              className="w-full px-4 py-2.5 rounded-xl text-sm
+                dark:bg-white/5 bg-black/5
+                dark:text-white text-zinc-900
+                dark:border-white/10 border-black/10 border
+                focus:outline-none focus:ring-2 focus:ring-neon-blue/50"
+              placeholder="관리자 ID"
+              autoComplete="username"
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium dark:text-zinc-300 text-zinc-700 mb-1">
+              비밀번호
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-4 py-2.5 rounded-xl text-sm
+                dark:bg-white/5 bg-black/5
+                dark:text-white text-zinc-900
+                dark:border-white/10 border-black/10 border
+                focus:outline-none focus:ring-2 focus:ring-neon-blue/50"
+              placeholder="비밀번호"
+              autoComplete="current-password"
+              required
+            />
+          </div>
+
+          {error && (
+            <p className="text-sm text-red-400 text-center">{error}</p>
+          )}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full py-2.5 rounded-xl text-sm font-medium
+              bg-gradient-to-r from-neon-blue to-neon-purple text-white
+              hover:opacity-90 transition-opacity
+              disabled:opacity-50 flex items-center justify-center gap-2"
+          >
+            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
+            {loading ? "로그인 중..." : "로그인"}
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+/* ============================
+   메인 어드민 페이지
+   ============================ */
 function AdminPage() {
-  const searchParams = useSearchParams();
-  const token = searchParams.get("token") || "";
+  const [authenticated, setAuthenticated] = useState<boolean | null>(null);
   const [activeTab, setActiveTab] = useState<Tab>("feedback");
   const [loading, setLoading] = useState(false);
 
@@ -130,52 +233,60 @@ function AdminPage() {
   const [commentFilter, setCommentFilter] = useState<string>("");
   const [reportHiddenOnly, setReportHiddenOnly] = useState(false);
 
+  // 세션 확인
+  useEffect(() => {
+    fetch("/api/admin/session")
+      .then((r) => r.json())
+      .then((data) => setAuthenticated(data.authenticated))
+      .catch(() => setAuthenticated(false));
+  }, []);
+
   const fetchData = useCallback(async () => {
-    if (!token) return;
+    if (!authenticated) return;
     setLoading(true);
     try {
       const statusParam = statusFilter ? `&status=${statusFilter}` : "";
       switch (activeTab) {
         case "discoveries": {
-          const res = await fetch(`/api/admin/discoveries?token=${token}${statusParam}`);
+          const res = await fetch(`/api/admin/discoveries?${statusParam}`);
           const data = await res.json();
           setDiscoveries(data.items || []);
           break;
         }
         case "edit-requests": {
-          const res = await fetch(`/api/admin/edit-requests?token=${token}${statusParam}`);
+          const res = await fetch(`/api/admin/edit-requests?${statusParam}`);
           const data = await res.json();
           setEditRequests(data.items || []);
           break;
         }
         case "sources": {
-          const res = await fetch(`/api/admin/sources?token=${token}`);
+          const res = await fetch(`/api/admin/sources`);
           const data = await res.json();
           setSources(data.items || []);
           break;
         }
         case "crawl-runs": {
-          const res = await fetch(`/api/admin/crawl-runs?token=${token}`);
+          const res = await fetch(`/api/admin/crawl-runs`);
           const data = await res.json();
           setCrawlRuns(data.items || []);
           break;
         }
         case "feedback": {
-          const res = await fetch(`/api/admin/feedback?token=${token}${statusParam}`);
+          const res = await fetch(`/api/admin/feedback?${statusParam}`);
           const data = await res.json();
           setFeedbackList(data.items || []);
           break;
         }
         case "reports": {
-          const hiddenParam = reportHiddenOnly ? "&hidden=true" : "";
-          const res = await fetch(`/api/admin/reports?token=${token}${hiddenParam}`);
+          const hiddenParam = reportHiddenOnly ? "hidden=true" : "";
+          const res = await fetch(`/api/admin/reports?${hiddenParam}`);
           const data = await res.json();
           setReportedComments(data.items || []);
           break;
         }
         case "comments": {
-          const filterParam = commentFilter ? `&filter=${commentFilter}` : "";
-          const res = await fetch(`/api/admin/comments?token=${token}${filterParam}`);
+          const filterParam = commentFilter ? `filter=${commentFilter}` : "";
+          const res = await fetch(`/api/admin/comments?${filterParam}`);
           const data = await res.json();
           setAdminComments(data.items || []);
           break;
@@ -186,14 +297,14 @@ function AdminPage() {
     } finally {
       setLoading(false);
     }
-  }, [token, activeTab, statusFilter, reportHiddenOnly, commentFilter]);
+  }, [authenticated, activeTab, statusFilter, reportHiddenOnly, commentFilter]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
-  // Actions — 기존
+  // Actions
   const handleDiscoveryAction = async (id: string, action: "approve" | "reject") => {
     try {
-      await fetch(`/api/admin/discoveries/${id}?token=${token}`, {
+      await fetch(`/api/admin/discoveries/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action }),
@@ -206,7 +317,7 @@ function AdminPage() {
 
   const handleEditRequestAction = async (id: string, action: "approve" | "reject") => {
     try {
-      await fetch(`/api/admin/edit-requests/${id}?token=${token}`, {
+      await fetch(`/api/admin/edit-requests/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action }),
@@ -217,10 +328,9 @@ function AdminPage() {
     }
   };
 
-  // Actions — 신규
   const handleFeedbackStatus = async (id: string, status: string) => {
     try {
-      await fetch(`/api/admin/feedback?token=${token}`, {
+      await fetch(`/api/admin/feedback`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, status }),
@@ -233,7 +343,7 @@ function AdminPage() {
 
   const handleCommentAction = async (api: string, commentId: string, action: string) => {
     try {
-      await fetch(`/api/admin/${api}?token=${token}`, {
+      await fetch(`/api/admin/${api}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ commentId, action }),
@@ -244,17 +354,23 @@ function AdminPage() {
     }
   };
 
-  if (!token) {
+  const handleLogout = async () => {
+    await fetch("/api/admin/logout", { method: "POST" });
+    setAuthenticated(false);
+  };
+
+  // 로딩 중
+  if (authenticated === null) {
     return (
       <div className="min-h-screen flex items-center justify-center dark:bg-zinc-950 bg-zinc-50">
-        <div className="glass p-8 text-center max-w-md">
-          <h1 className="text-xl font-bold dark:text-white text-zinc-900 mb-4">Admin Access Required</h1>
-          <p className="text-sm dark:text-zinc-400 text-zinc-500">
-            관리자 인증이 필요합니다.
-          </p>
-        </div>
+        <Loader2 className="w-8 h-8 animate-spin dark:text-zinc-400 text-zinc-500" />
       </div>
     );
+  }
+
+  // 로그인 필요
+  if (!authenticated) {
+    return <LoginForm onLogin={() => setAuthenticated(true)} />;
   }
 
   const tabs: { id: Tab; label: string; icon: React.ReactNode }[] = [
@@ -299,18 +415,31 @@ function AdminPage() {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-2xl font-bold dark:text-white text-zinc-900">Admin Dashboard</h1>
-          <button
-            onClick={fetchData}
-            disabled={loading}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm
-              dark:bg-white/5 bg-black/5
-              dark:text-zinc-300 text-zinc-600
-              dark:hover:bg-white/10 hover:bg-black/10
-              transition-all"
-          >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-            새로고침
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={fetchData}
+              disabled={loading}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm
+                dark:bg-white/5 bg-black/5
+                dark:text-zinc-300 text-zinc-600
+                dark:hover:bg-white/10 hover:bg-black/10
+                transition-all"
+            >
+              {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+              새로고침
+            </button>
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm
+                dark:bg-red-500/10 bg-red-500/5
+                dark:text-red-400 text-red-600
+                dark:hover:bg-red-500/20 hover:bg-red-500/10
+                transition-all"
+            >
+              <LogOut className="w-4 h-4" />
+              로그아웃
+            </button>
+          </div>
         </div>
 
         {/* Tabs */}
@@ -525,7 +654,6 @@ function AdminPage() {
                             {!c.isDeleted && (
                               <p className="text-sm dark:text-zinc-300 text-zinc-700 mb-2 whitespace-pre-wrap">{c.content}</p>
                             )}
-                            {/* 신고 사유 목록 */}
                             {c.commentReports.length > 0 && (
                               <div className="mt-2 space-y-1">
                                 <p className="text-xs font-medium dark:text-zinc-400 text-zinc-500">신고 사유:</p>
