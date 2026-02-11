@@ -10,9 +10,29 @@ export interface ScrapeResult {
   suggestedTags: string[];
 }
 
+function isPrivateHost(hostname: string): boolean {
+  const blocked = [
+    /^localhost$/i,
+    /^127\.\d+\.\d+\.\d+$/,
+    /^10\.\d+\.\d+\.\d+$/,
+    /^172\.(1[6-9]|2\d|3[01])\.\d+\.\d+$/,
+    /^192\.168\.\d+\.\d+$/,
+    /^0\.0\.0\.0$/,
+    /^::1$/,
+    /^\[::1\]$/,
+    /^metadata\.google\.internal$/i,
+    /^169\.254\.\d+\.\d+$/,
+  ];
+  return blocked.some((re) => re.test(hostname));
+}
+
 export async function scrapeServiceMetadata(url: string): Promise<ScrapeResult> {
   const parsedUrl = new URL(url);
   const domain = parsedUrl.hostname;
+
+  if (isPrivateHost(domain)) {
+    throw new Error("내부 네트워크 주소는 허용되지 않습니다");
+  }
 
   const response = await fetch(url, {
     headers: {

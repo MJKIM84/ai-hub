@@ -58,9 +58,12 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
               alt={service.name}
               className="w-full h-full object-cover"
               onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-                (e.target as HTMLImageElement).parentElement!.innerHTML =
-                  `<span class="text-lg font-bold dark:text-zinc-400 text-zinc-500">${service.name[0]}</span>`;
+                const img = e.target as HTMLImageElement;
+                img.style.display = 'none';
+                const fallback = document.createElement('span');
+                fallback.className = 'text-lg font-bold dark:text-zinc-400 text-zinc-500';
+                fallback.textContent = service.name[0] || '?';
+                img.parentElement?.appendChild(fallback);
               }}
             />
           ) : (

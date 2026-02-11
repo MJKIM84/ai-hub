@@ -157,7 +157,7 @@ function AdminPage() {
         <div className="glass p-8 text-center max-w-md">
           <h1 className="text-xl font-bold dark:text-white text-zinc-900 mb-4">Admin Access Required</h1>
           <p className="text-sm dark:text-zinc-400 text-zinc-500">
-            URL에 ?token=ADMIN_SECRET를 추가해주세요
+            관리자 인증이 필요합니다.
           </p>
         </div>
       </div>

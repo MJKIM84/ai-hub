@@ -70,10 +70,18 @@ export const metadata: Metadata = {
     // 구글 서치 콘솔 인증 (실제 인증 코드로 교체 필요)
     // google: "YOUR_GOOGLE_CODE",
   },
-  other: {
-    "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION || "",
-    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "",
-  },
+  ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION || process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
+    ? {
+        other: {
+          ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION
+            ? { "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION }
+            : {}),
+          ...(process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
+            ? { "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION }
+            : {}),
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({

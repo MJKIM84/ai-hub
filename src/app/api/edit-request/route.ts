@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
     console.error("POST /api/edit-request error:", error);
     if (error instanceof Error && error.name === "ZodError") {
       return NextResponse.json(
-        { error: "입력 데이터가 유효하지 않습니다", details: error },
+        { error: "입력 데이터가 유효하지 않습니다" },
         { status: 400 }
       );
     }

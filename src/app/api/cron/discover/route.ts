@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
     const authHeader = request.headers.get("authorization");
     const cronSecret = process.env.CRON_SECRET;
 
-    if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+    if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
@@ -27,7 +27,6 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         error: "크롤링 실행 중 오류가 발생했습니다",
-        details: error instanceof Error ? error.message : String(error),
       },
       { status: 500 }
     );
