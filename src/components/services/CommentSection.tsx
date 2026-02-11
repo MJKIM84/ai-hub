@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import {
   MessageSquare, ThumbsUp, ThumbsDown, Send, Loader2,
-  ChevronDown, CornerDownRight, Pencil, Trash2, X, Check,
+  ChevronDown, Pencil, Trash2, X, Check,
   Lock, Reply,
 } from "lucide-react";
 import { formatRelativeTime } from "@/lib/utils";
@@ -15,16 +15,17 @@ interface CommentSectionProps {
   initialTotal: number;
 }
 
-// ─── Comment Form (used for both top-level and replies) ───
+// ─── Comment Form ───
 interface CommentFormProps {
   serviceId: string;
   parentId?: string;
+  replyToName?: string;
   onSubmitted: (comment: Comment) => void;
   onCancel?: () => void;
   compact?: boolean;
 }
 
-function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: CommentFormProps) {
+function CommentForm({ serviceId, parentId, replyToName, onSubmitted, onCancel, compact }: CommentFormProps) {
   const [nickname, setNickname] = useState("");
   const [password, setPassword] = useState("");
   const [content, setContent] = useState("");
@@ -86,7 +87,14 @@ function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: Co
 
   return (
     <form onSubmit={handleSubmit} className={compact ? "mb-3" : "mb-8"}>
-      <div className={`${compact ? "rounded-lg p-3 dark:bg-white/3 bg-black/3" : "glass rounded-xl p-4"}`}>
+      <div className={`${compact ? "rounded-lg p-3 dark:bg-white/3 bg-black/3 border dark:border-white/5 border-black/5" : "glass rounded-xl p-4"}`}>
+        {replyToName && (
+          <div className="flex items-center gap-1.5 mb-2 text-xs dark:text-neon-blue text-blue-600">
+            <Reply className="w-3 h-3" />
+            <span className="font-medium">@{replyToName}</span>
+            <span className="dark:text-zinc-500 text-zinc-400">에게 답글</span>
+          </div>
+        )}
         <div className="flex gap-2 mb-2 flex-wrap">
           <input
             type="text"
@@ -135,16 +143,6 @@ function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: Co
             {content.length}/1000
           </span>
           <div className="flex items-center gap-2">
-            {onCancel && (
-              <button
-                type="button"
-                onClick={onCancel}
-                className="px-3 py-1.5 rounded-lg text-xs font-medium
-                  dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300 hover:text-zinc-700 transition-colors"
-              >
-                취소
-              </button>
-            )}
             <button
               type="submit"
               disabled={submitting || !nickname.trim() || !content.trim() || !password.trim()}
@@ -156,6 +154,16 @@ function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: Co
               {submitting ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
               등록
             </button>
+            {onCancel && (
+              <button
+                type="button"
+                onClick={onCancel}
+                className="px-3 py-1.5 rounded-lg text-xs font-medium
+                  dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300 hover:text-zinc-700 transition-colors"
+              >
+                취소
+              </button>
+            )}
           </div>
         </div>
         {error && (
@@ -166,22 +174,16 @@ function CommentForm({ serviceId, parentId, onSubmitted, onCancel, compact }: Co
   );
 }
 
-// ─── Single Comment Item ───
+// ─── Single Comment Item (flat — no nesting) ───
 interface CommentItemProps {
   comment: Comment;
   serviceId: string;
-  depth: number;
   onDeleted: (commentId: string) => void;
   onUpdated: (comment: Comment) => void;
+  onReply: (commentId: string, authorName: string) => void;
 }
 
-function CommentItem({ comment, serviceId, depth, onDeleted, onUpdated }: CommentItemProps) {
-  const [showReplyForm, setShowReplyForm] = useState(false);
-  const [replies, setReplies] = useState<Comment[]>(comment.replies || []);
-  const [repliesLoaded, setRepliesLoaded] = useState(false);
-  const [loadingReplies, setLoadingReplies] = useState(false);
-  const [replyCount, setReplyCount] = useState(comment.replyCount || 0);
-
+function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: CommentItemProps) {
   // Vote state
   const [likes, setLikes] = useState(comment.likes);
   const [dislikes, setDislikes] = useState(comment.dislikes);
@@ -198,19 +200,6 @@ function CommentItem({ comment, serviceId, depth, onDeleted, onUpdated }: Commen
   const [deletePassword, setDeletePassword] = useState("");
   const [deleteError, setDeleteError] = useState("");
   const [deleteLoading, setDeleteLoading] = useState(false);
-
-  const loadReplies = useCallback(async () => {
-    if (repliesLoaded || loadingReplies) return;
-    setLoadingReplies(true);
-    try {
-      const res = await fetch(`/api/comments?serviceId=${serviceId}&parentId=${comment.id}`);
-      const data = await res.json();
-      setReplies(data.items);
-      setRepliesLoaded(true);
-    } catch {} finally {
-      setLoadingReplies(false);
-    }
-  }, [serviceId, comment.id, repliesLoaded, loadingReplies]);
 
   const handleVote = async (type: "like" | "dislike") => {
     try {
@@ -293,240 +282,185 @@ function CommentItem({ comment, serviceId, depth, onDeleted, onUpdated }: Commen
     }
   };
 
-  const handleReplySubmitted = (newReply: Comment) => {
-    setReplies((prev) => [newReply, ...prev]);
-    setReplyCount((prev) => prev + 1);
-    setShowReplyForm(false);
-    setRepliesLoaded(true);
-  };
-
-  const handleReplyDeleted = (replyId: string) => {
-    setReplies((prev) => prev.filter((r) => r.id !== replyId));
-    setReplyCount((prev) => prev - 1);
-  };
-
-  const handleReplyUpdated = (updatedReply: Comment) => {
-    setReplies((prev) => prev.map((r) => r.id === updatedReply.id ? { ...r, ...updatedReply } : r));
-  };
-
-  const maxIndent = 4;
-  const indentPx = Math.min(depth, maxIndent) * 24;
+  const isReply = !!comment.parentId;
 
   return (
-    <div style={{ marginLeft: depth > 0 ? `${indentPx}px` : undefined }}>
-      <div className={`rounded-xl p-4 ${depth > 0 ? "dark:bg-white/3 bg-black/3 border-l-2 dark:border-white/10 border-black/10" : "dark:bg-white/5 bg-black/5"}`}>
-        {/* Header */}
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            {depth > 0 && <CornerDownRight className="w-3 h-3 dark:text-zinc-500 text-zinc-400" />}
-            <span className="text-sm font-medium dark:text-white text-zinc-900">
-              {comment.authorName}
-            </span>
-            <span className="text-xs dark:text-zinc-600 text-zinc-400">
-              ({comment.maskedIp})
-            </span>
-          </div>
-          <span className="text-xs dark:text-zinc-500 text-zinc-400">
-            {formatRelativeTime(comment.createdAt)}
+    <div className={`rounded-xl p-4 ${isReply
+      ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-neon-blue/20 border-blue-200"
+      : "dark:bg-white/5 bg-black/5"}`}
+    >
+      {/* Reply indicator — @닉네임 */}
+      {isReply && comment.replyToAuthorName && (
+        <div className="flex items-center gap-1.5 mb-1.5 text-xs">
+          <Reply className="w-3 h-3 dark:text-neon-blue text-blue-500" />
+          <span className="dark:text-neon-blue text-blue-600 font-medium">@{comment.replyToAuthorName}</span>
+        </div>
+      )}
+
+      {/* Header */}
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-medium dark:text-white text-zinc-900">
+            {comment.authorName}
+          </span>
+          <span className="text-xs dark:text-zinc-600 text-zinc-400">
+            ({comment.maskedIp})
           </span>
         </div>
-
-        {/* Content / Edit mode */}
-        {editing ? (
-          <div className="mb-3">
-            <textarea
-              value={editContent}
-              onChange={(e) => setEditContent(e.target.value)}
-              maxLength={1000}
-              rows={3}
-              className="w-full px-3 py-2 rounded-lg text-sm bg-transparent resize-none
-                dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
-                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
-            />
-            <div className="flex items-center gap-2 mt-2">
-              <div className="relative">
-                <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-zinc-500 text-zinc-400" />
-                <input
-                  type="password"
-                  value={editPassword}
-                  onChange={(e) => setEditPassword(e.target.value)}
-                  placeholder="비밀번호 확인"
-                  className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
-                    dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
-                    dark:placeholder-zinc-500 placeholder-zinc-400
-                    outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
-                />
-              </div>
-              <button
-                onClick={handleEdit}
-                disabled={editLoading}
-                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
-                  bg-gradient-to-r from-neon-blue to-neon-purple text-white
-                  hover:opacity-90 transition-all disabled:opacity-40"
-              >
-                {editLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
-                수정
-              </button>
-              <button
-                onClick={() => { setEditing(false); setEditContent(comment.content); setEditError(""); }}
-                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs
-                  dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300"
-              >
-                <X className="w-3 h-3" /> 취소
-              </button>
-            </div>
-            {editError && <p className="text-xs text-red-400 mt-1">{editError}</p>}
-          </div>
-        ) : (
-          <p className="text-sm dark:text-zinc-300 text-zinc-600 leading-relaxed mb-3 whitespace-pre-wrap">
-            {comment.content}
-          </p>
-        )}
-
-        {/* Delete confirm */}
-        {showDeleteConfirm && (
-          <div className="mb-3 p-3 rounded-lg dark:bg-red-500/10 bg-red-50 border dark:border-red-500/20 border-red-200">
-            <p className="text-xs dark:text-red-300 text-red-600 mb-2">정말 삭제하시겠습니까? 답글도 함께 삭제됩니다.</p>
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-red-400 text-red-500" />
-                <input
-                  type="password"
-                  value={deletePassword}
-                  onChange={(e) => setDeletePassword(e.target.value)}
-                  placeholder="비밀번호"
-                  className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
-                    dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
-                    dark:placeholder-zinc-500 placeholder-zinc-400
-                    outline-none focus:ring-1 dark:focus:ring-red-500/50 focus:ring-red-500/30"
-                />
-              </div>
-              <button
-                onClick={handleDelete}
-                disabled={deleteLoading}
-                className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
-                  bg-red-500 text-white hover:bg-red-600 transition-all disabled:opacity-40"
-              >
-                {deleteLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Trash2 className="w-3 h-3" />}
-                삭제
-              </button>
-              <button
-                onClick={() => { setShowDeleteConfirm(false); setDeletePassword(""); setDeleteError(""); }}
-                className="text-xs dark:text-zinc-400 text-zinc-500"
-              >
-                취소
-              </button>
-            </div>
-            {deleteError && <p className="text-xs text-red-400 mt-1">{deleteError}</p>}
-          </div>
-        )}
-
-        {/* Actions: vote, reply, edit, delete */}
-        {!editing && !showDeleteConfirm && (
-          <div className="flex items-center gap-3 flex-wrap">
-            <button
-              onClick={() => handleVote("like")}
-              className={`flex items-center gap-1 text-xs transition-colors
-                ${votedType === "like"
-                  ? "dark:text-neon-green text-emerald-600"
-                  : "dark:text-zinc-500 text-zinc-400 dark:hover:text-neon-green hover:text-emerald-600"
-                }`}
-            >
-              <ThumbsUp className={`w-3.5 h-3.5 ${votedType === "like" ? "fill-current" : ""}`} />
-              {likes > 0 && likes}
-            </button>
-            <button
-              onClick={() => handleVote("dislike")}
-              className={`flex items-center gap-1 text-xs transition-colors
-                ${votedType === "dislike"
-                  ? "dark:text-pink-400 text-pink-600"
-                  : "dark:text-zinc-500 text-zinc-400 dark:hover:text-pink-400 hover:text-pink-600"
-                }`}
-            >
-              <ThumbsDown className={`w-3.5 h-3.5 ${votedType === "dislike" ? "fill-current" : ""}`} />
-              {dislikes > 0 && dislikes}
-            </button>
-
-            <button
-              onClick={() => setShowReplyForm(!showReplyForm)}
-              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
-                dark:hover:text-neon-blue hover:text-neon-blue transition-colors"
-            >
-              <Reply className="w-3.5 h-3.5" />
-              답글
-            </button>
-
-            <button
-              onClick={() => setEditing(true)}
-              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
-                dark:hover:text-zinc-300 hover:text-zinc-600 transition-colors"
-            >
-              <Pencil className="w-3 h-3" />
-              수정
-            </button>
-
-            <button
-              onClick={() => setShowDeleteConfirm(true)}
-              className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
-                dark:hover:text-red-400 hover:text-red-600 transition-colors"
-            >
-              <Trash2 className="w-3 h-3" />
-              삭제
-            </button>
-          </div>
-        )}
+        <span className="text-xs dark:text-zinc-500 text-zinc-400">
+          {formatRelativeTime(comment.createdAt)}
+        </span>
       </div>
 
-      {/* Reply form */}
-      {showReplyForm && (
-        <div className="mt-2" style={{ marginLeft: `${Math.min(depth + 1, maxIndent) * 24}px` }}>
-          <CommentForm
-            serviceId={serviceId}
-            parentId={comment.id}
-            onSubmitted={handleReplySubmitted}
-            onCancel={() => setShowReplyForm(false)}
-            compact
+      {/* Content / Edit mode */}
+      {editing ? (
+        <div className="mb-3">
+          <textarea
+            value={editContent}
+            onChange={(e) => setEditContent(e.target.value)}
+            maxLength={1000}
+            rows={3}
+            className="w-full px-3 py-2 rounded-lg text-sm bg-transparent resize-none
+              dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+              outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
           />
+          <div className="flex items-center gap-2 mt-2">
+            <div className="relative">
+              <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-zinc-500 text-zinc-400" />
+              <input
+                type="password"
+                value={editPassword}
+                onChange={(e) => setEditPassword(e.target.value)}
+                placeholder="비밀번호 확인"
+                className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
+                  dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+                  dark:placeholder-zinc-500 placeholder-zinc-400
+                  outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
+              />
+            </div>
+            <button
+              onClick={handleEdit}
+              disabled={editLoading}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
+                bg-gradient-to-r from-neon-blue to-neon-purple text-white
+                hover:opacity-90 transition-all disabled:opacity-40"
+            >
+              {editLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
+              수정
+            </button>
+            <button
+              onClick={() => { setEditing(false); setEditContent(comment.content); setEditError(""); }}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs
+                dark:text-zinc-400 text-zinc-500 hover:dark:text-zinc-300"
+            >
+              <X className="w-3 h-3" /> 취소
+            </button>
+          </div>
+          {editError && <p className="text-xs text-red-400 mt-1">{editError}</p>}
+        </div>
+      ) : (
+        <p className="text-sm dark:text-zinc-300 text-zinc-600 leading-relaxed mb-3 whitespace-pre-wrap">
+          {comment.content}
+        </p>
+      )}
+
+      {/* Delete confirm */}
+      {showDeleteConfirm && (
+        <div className="mb-3 p-3 rounded-lg dark:bg-red-500/10 bg-red-50 border dark:border-red-500/20 border-red-200">
+          <p className="text-xs dark:text-red-300 text-red-600 mb-2">정말 삭제하시겠습니까?</p>
+          <div className="flex items-center gap-2">
+            <div className="relative">
+              <Lock className="absolute left-2 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-red-400 text-red-500" />
+              <input
+                type="password"
+                value={deletePassword}
+                onChange={(e) => setDeletePassword(e.target.value)}
+                placeholder="비밀번호"
+                className="w-28 pl-6 pr-2 py-1.5 rounded-lg text-xs bg-transparent
+                  dark:bg-white/5 bg-black/5 dark:text-white text-zinc-900
+                  dark:placeholder-zinc-500 placeholder-zinc-400
+                  outline-none focus:ring-1 dark:focus:ring-red-500/50 focus:ring-red-500/30"
+              />
+            </div>
+            <button
+              onClick={handleDelete}
+              disabled={deleteLoading}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
+                bg-red-500 text-white hover:bg-red-600 transition-all disabled:opacity-40"
+            >
+              {deleteLoading ? <Loader2 className="w-3 h-3 animate-spin" /> : <Trash2 className="w-3 h-3" />}
+              삭제
+            </button>
+            <button
+              onClick={() => { setShowDeleteConfirm(false); setDeletePassword(""); setDeleteError(""); }}
+              className="text-xs dark:text-zinc-400 text-zinc-500"
+            >
+              취소
+            </button>
+          </div>
+          {deleteError && <p className="text-xs text-red-400 mt-1">{deleteError}</p>}
         </div>
       )}
 
-      {/* Replies */}
-      {replyCount > 0 && !repliesLoaded && (
-        <button
-          onClick={loadReplies}
-          disabled={loadingReplies}
-          className="flex items-center gap-1.5 mt-2 text-xs dark:text-neon-blue text-blue-600
-            hover:underline transition-colors"
-          style={{ marginLeft: `${Math.min(depth + 1, maxIndent) * 24}px` }}
-        >
-          {loadingReplies ? (
-            <Loader2 className="w-3 h-3 animate-spin" />
-          ) : (
-            <ChevronDown className="w-3 h-3" />
-          )}
-          답글 {replyCount}개 보기
-        </button>
-      )}
+      {/* Actions: vote, reply, edit, delete */}
+      {!editing && !showDeleteConfirm && (
+        <div className="flex items-center gap-3 flex-wrap">
+          <button
+            onClick={() => handleVote("like")}
+            className={`flex items-center gap-1 text-xs transition-colors
+              ${votedType === "like"
+                ? "dark:text-neon-green text-emerald-600"
+                : "dark:text-zinc-500 text-zinc-400 dark:hover:text-neon-green hover:text-emerald-600"
+              }`}
+          >
+            <ThumbsUp className={`w-3.5 h-3.5 ${votedType === "like" ? "fill-current" : ""}`} />
+            {likes > 0 && likes}
+          </button>
+          <button
+            onClick={() => handleVote("dislike")}
+            className={`flex items-center gap-1 text-xs transition-colors
+              ${votedType === "dislike"
+                ? "dark:text-pink-400 text-pink-600"
+                : "dark:text-zinc-500 text-zinc-400 dark:hover:text-pink-400 hover:text-pink-600"
+              }`}
+          >
+            <ThumbsDown className={`w-3.5 h-3.5 ${votedType === "dislike" ? "fill-current" : ""}`} />
+            {dislikes > 0 && dislikes}
+          </button>
 
-      {replies.length > 0 && (
-        <div className="mt-2 space-y-2">
-          {replies.map((reply) => (
-            <CommentItem
-              key={reply.id}
-              comment={reply}
-              serviceId={serviceId}
-              depth={depth + 1}
-              onDeleted={handleReplyDeleted}
-              onUpdated={handleReplyUpdated}
-            />
-          ))}
+          <button
+            onClick={() => onReply(comment.id, comment.authorName)}
+            className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+              dark:hover:text-neon-blue hover:text-neon-blue transition-colors"
+          >
+            <Reply className="w-3.5 h-3.5" />
+            답글
+          </button>
+
+          <button
+            onClick={() => setEditing(true)}
+            className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+              dark:hover:text-zinc-300 hover:text-zinc-600 transition-colors"
+          >
+            <Pencil className="w-3 h-3" />
+            수정
+          </button>
+
+          <button
+            onClick={() => setShowDeleteConfirm(true)}
+            className="flex items-center gap-1 text-xs dark:text-zinc-500 text-zinc-400
+              dark:hover:text-red-400 hover:text-red-600 transition-colors"
+          >
+            <Trash2 className="w-3 h-3" />
+            삭제
+          </button>
         </div>
       )}
     </div>
   );
 }
 
-// ─── Main CommentSection ───
+// ─── Main CommentSection (flat layout) ───
 export function CommentSection({ serviceId, initialComments, initialTotal }: CommentSectionProps) {
   const [comments, setComments] = useState<Comment[]>(initialComments);
   const [total, setTotal] = useState(initialTotal);
@@ -534,9 +468,13 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
   const [hasMore, setHasMore] = useState(initialTotal > 20);
   const [loadingMore, setLoadingMore] = useState(false);
 
+  // Reply state — which comment are we replying to?
+  const [replyTo, setReplyTo] = useState<{ commentId: string; authorName: string } | null>(null);
+
   const handleNewComment = (comment: Comment) => {
-    setComments((prev) => [comment, ...prev]);
+    setComments((prev) => [...prev, comment]); // 시간순이므로 끝에 추가
     setTotal((prev) => prev + 1);
+    setReplyTo(null);
   };
 
   const handleLoadMore = async () => {
@@ -562,6 +500,14 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
     setComments((prev) => prev.map((c) => c.id === updated.id ? { ...c, ...updated } : c));
   };
 
+  const handleReply = (commentId: string, authorName: string) => {
+    setReplyTo({ commentId, authorName });
+    // 스크롤 to form
+    setTimeout(() => {
+      document.getElementById("comment-reply-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+  };
+
   return (
     <div className="mt-8">
       <h2 className="flex items-center gap-2 text-lg font-bold dark:text-white text-zinc-900 mb-6">
@@ -570,9 +516,11 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
       </h2>
 
       {/* Top-level comment form */}
-      <CommentForm serviceId={serviceId} onSubmitted={handleNewComment} />
+      {!replyTo && (
+        <CommentForm serviceId={serviceId} onSubmitted={handleNewComment} />
+      )}
 
-      {/* Comment list */}
+      {/* Comment list — flat, all at the same level */}
       {comments.length === 0 ? (
         <div className="text-center py-12">
           <MessageSquare className="w-8 h-8 mx-auto mb-3 dark:text-zinc-600 text-zinc-300" />
@@ -587,9 +535,9 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
               key={comment.id}
               comment={comment}
               serviceId={serviceId}
-              depth={0}
               onDeleted={handleDeleted}
               onUpdated={handleUpdated}
+              onReply={handleReply}
             />
           ))}
 
@@ -613,6 +561,20 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
               </button>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Reply form — appears at the bottom when replying */}
+      {replyTo && (
+        <div id="comment-reply-form" className="mt-4">
+          <CommentForm
+            serviceId={serviceId}
+            parentId={replyTo.commentId}
+            replyToName={replyTo.authorName}
+            onSubmitted={handleNewComment}
+            onCancel={() => setReplyTo(null)}
+            compact
+          />
         </div>
       )}
     </div>

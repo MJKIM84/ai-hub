@@ -10,7 +10,6 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const serviceId = searchParams.get("serviceId");
     const page = Math.max(1, parseInt(searchParams.get("page") || "1", 10));
-    const parentId = searchParams.get("parentId"); // null = top-level only
 
     if (!serviceId) {
       return NextResponse.json(
@@ -19,14 +18,13 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const where = parentId
-      ? { serviceId, parentId }
-      : { serviceId, parentId: null }; // top-level comments only
+    // 모든 댓글을 시간순(오래된 순)으로 가져옴 — 플랫 레이아웃
+    const where = { serviceId };
 
     const [items, total] = await Promise.all([
       prisma.comment.findMany({
         where,
-        orderBy: { createdAt: "desc" },
+        orderBy: { createdAt: "asc" },
         skip: (page - 1) * COMMENTS_PER_PAGE,
         take: COMMENTS_PER_PAGE,
         select: {
@@ -37,6 +35,7 @@ export async function GET(request: NextRequest) {
           likes: true,
           dislikes: true,
           parentId: true,
+          parent: { select: { authorName: true } },
           createdAt: true,
           _count: { select: { replies: true } },
         },
@@ -53,6 +52,7 @@ export async function GET(request: NextRequest) {
       likes: item.likes,
       dislikes: item.dislikes,
       parentId: item.parentId,
+      replyToAuthorName: item.parent?.authorName || undefined,
       replyCount: item._count.replies,
       createdAt: item.createdAt,
     }));
@@ -107,10 +107,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // parentId 유효성 확인
+    // parentId 유효성 확인 + 부모 닉네임 가져오기
+    let replyToAuthorName: string | undefined;
     if (data.parentId) {
       const parentComment = await prisma.comment.findUnique({
         where: { id: data.parentId },
+        select: { authorName: true, serviceId: true },
       });
       if (!parentComment || parentComment.serviceId !== data.serviceId) {
         return NextResponse.json(
@@ -118,6 +120,7 @@ export async function POST(request: NextRequest) {
           { status: 404 }
         );
       }
+      replyToAuthorName = parentComment.authorName;
     }
 
     const hashedPw = await hashPassword(data.password);
@@ -144,10 +147,16 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({
-      ...comment,
+      id: comment.id,
+      content: comment.content,
+      authorName: comment.authorName,
       maskedIp: maskIp(comment.authorIp),
-      authorIp: undefined,
+      likes: comment.likes,
+      dislikes: comment.dislikes,
+      parentId: comment.parentId,
+      replyToAuthorName,
       replyCount: 0,
+      createdAt: comment.createdAt,
     }, { status: 201 });
   } catch (error) {
     console.error("POST /api/comments error:", error);
@@ -199,6 +208,7 @@ export async function PATCH(request: NextRequest) {
         likes: true,
         dislikes: true,
         parentId: true,
+        parent: { select: { authorName: true } },
         createdAt: true,
         _count: { select: { replies: true } },
       },
@@ -212,6 +222,7 @@ export async function PATCH(request: NextRequest) {
       likes: updated.likes,
       dislikes: updated.dislikes,
       parentId: updated.parentId,
+      replyToAuthorName: updated.parent?.authorName || undefined,
       replyCount: updated._count.replies,
       createdAt: updated.createdAt,
     });

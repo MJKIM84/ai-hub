@@ -94,11 +94,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const logoSrc = service.logoUrl || service.ogImageUrl || service.faviconUrl;
 
-  // 초기 댓글 데이터 서버사이드 fetch (최상위 댓글만)
+  // 초기 댓글 데이터 서버사이드 fetch (플랫 — 시간순)
   const [rawComments, commentTotal] = await Promise.all([
     prisma.comment.findMany({
-      where: { serviceId: service.id, parentId: null },
-      orderBy: { createdAt: "desc" },
+      where: { serviceId: service.id },
+      orderBy: { createdAt: "asc" },
       take: 20,
       select: {
         id: true,
@@ -108,11 +108,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         likes: true,
         dislikes: true,
         parentId: true,
+        parent: { select: { authorName: true } },
         createdAt: true,
         _count: { select: { replies: true } },
       },
     }),
-    prisma.comment.count({ where: { serviceId: service.id, parentId: null } }),
+    prisma.comment.count({ where: { serviceId: service.id } }),
   ]);
 
   const initialComments = rawComments.map((c) => ({
@@ -123,6 +124,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     likes: c.likes,
     dislikes: c.dislikes,
     parentId: c.parentId,
+    replyToAuthorName: c.parent?.authorName || undefined,
     replyCount: c._count.replies,
     createdAt: c.createdAt,
   }));

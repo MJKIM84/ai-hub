@@ -49,7 +49,7 @@ export interface Comment {
   likes: number;
   dislikes: number;
   parentId: string | null;
-  replies?: Comment[];
+  replyToAuthorName?: string; // 답글 대상 닉네임
   replyCount?: number;
   createdAt: string;
 }
