@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Sparkles, Mail, Send, Loader2, Check, Handshake, MessageSquareText } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   const [type, setType] = useState<"partnership" | "feedback">("feedback");
@@ -169,9 +170,18 @@ export function Footer() {
                 AI HUB
               </span>
             </div>
-            <p className="text-sm dark:text-zinc-500 text-zinc-400">
-              AI 서비스의 파편화를 해소하고, 개발자와 사용자를 연결합니다.
-            </p>
+            <div className="flex items-center gap-4">
+              <Link
+                href="/policy"
+                className="text-sm dark:text-zinc-500 text-zinc-400 hover:dark:text-zinc-300 hover:text-zinc-600 transition-colors"
+              >
+                운영정책
+              </Link>
+              <span className="dark:text-zinc-700 text-zinc-300">|</span>
+              <p className="text-sm dark:text-zinc-500 text-zinc-400">
+                AI 서비스의 파편화를 해소하고, 개발자와 사용자를 연결합니다.
+              </p>
+            </div>
           </div>
         </div>
       </div>
