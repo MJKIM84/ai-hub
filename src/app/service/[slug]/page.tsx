@@ -171,32 +171,59 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   </span>
                 )}
               </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2 flex-wrap">
-                  <h1 className="text-2xl font-bold dark:text-white text-zinc-900">
-                    {service.name}
-                  </h1>
-                  {service.isKorean && (
-                    <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
-                      dark:bg-neon-blue/15 bg-neon-blue/10 dark:text-neon-blue text-blue-600">
-                      <Flag className="w-3 h-3" />
-                      한국
-                    </span>
-                  )}
-                  {service.source === "auto" && (
-                    <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
-                      dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
-                      <Bot className="w-3 h-3" />
-                      Auto
-                    </span>
-                  )}
-                  {service.source === "developer" && (
-                    <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
-                      dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600">
-                      <UserCheck className="w-3 h-3" />
-                      인증됨
-                    </span>
-                  )}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <div className="flex items-center gap-3 flex-wrap min-w-0">
+                    <h1 className="text-2xl font-bold dark:text-white text-zinc-900">
+                      {service.name}
+                    </h1>
+                    {service.isKorean && (
+                      <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
+                        dark:bg-neon-blue/15 bg-neon-blue/10 dark:text-neon-blue text-blue-600">
+                        <Flag className="w-3 h-3" />
+                        한국
+                      </span>
+                    )}
+                    {service.source === "auto" && (
+                      <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
+                        dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
+                        <Bot className="w-3 h-3" />
+                        Auto
+                      </span>
+                    )}
+                    {service.source === "developer" && (
+                      <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
+                        dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600">
+                        <UserCheck className="w-3 h-3" />
+                        인증됨
+                      </span>
+                    )}
+                  </div>
+                  {/* 서비스 방문 + 정보 수정 버튼 (우측 상단) */}
+                  <div className="flex items-center gap-2 shrink-0">
+                    <EditRequestButton
+                      serviceId={service.id}
+                      serviceName={service.name}
+                      currentData={{
+                        name: service.name,
+                        description: service.description,
+                        category: service.category,
+                        pricingModel: service.pricingModel,
+                      }}
+                    />
+                    <a
+                      href={service.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium
+                        bg-gradient-to-r from-neon-blue to-neon-purple text-white
+                        hover:opacity-90 transition-all duration-200 whitespace-nowrap
+                        shadow-lg shadow-neon-blue/20"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      서비스 방문하기
+                    </a>
+                  </div>
                 </div>
                 {service.tagline && (
                   <p className="text-base dark:text-zinc-400 text-zinc-500 mb-3">
@@ -280,31 +307,6 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               serviceId={service.id}
               initialUpvotes={service.upvotes}
               initialDownvotes={service.downvotes}
-            />
-
-            {/* 서비스 방문하기 CTA */}
-            <a
-              href={service.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-sm font-medium
-                bg-gradient-to-r from-neon-blue to-neon-purple text-white
-                hover:opacity-90 transition-all duration-200
-                shadow-lg shadow-neon-blue/20"
-            >
-              <ExternalLink className="w-4 h-4" />
-              서비스 방문하기
-            </a>
-
-            <EditRequestButton
-              serviceId={service.id}
-              serviceName={service.name}
-              currentData={{
-                name: service.name,
-                description: service.description,
-                category: service.category,
-                pricingModel: service.pricingModel,
-              }}
             />
           </div>
 

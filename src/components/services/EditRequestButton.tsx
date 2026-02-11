@@ -25,14 +25,14 @@ export function EditRequestButton({
   return (
     <>
       <button
-        onClick={() => setShowModal(true)}
-        className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-medium
+        onClick={(e) => { e.stopPropagation(); setShowModal(true); }}
+        className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium whitespace-nowrap
           dark:bg-white/5 bg-black/5
           dark:text-zinc-400 text-zinc-500
           dark:hover:bg-white/10 hover:bg-black/10
-          transition-all duration-200 mt-3"
+          transition-all duration-200"
       >
-        <PenLine className="w-4 h-4" />
+        <PenLine className="w-3.5 h-3.5" />
         정보 수정 요청
       </button>
 
