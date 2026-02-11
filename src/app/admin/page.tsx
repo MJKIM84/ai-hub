@@ -3,11 +3,11 @@
 import { useState, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import {
-  Globe, FileEdit, Database, Activity,
-  Check, X, ExternalLink, Loader2, RefreshCw
+  Globe, FileEdit, Database, Activity, MessageSquare, AlertTriangle, Mail,
+  Check, X, ExternalLink, Loader2, RefreshCw, Eye, EyeOff, Trash2, ThumbsUp, ThumbsDown,
 } from "lucide-react";
 
-type Tab = "discoveries" | "edit-requests" | "sources" | "crawl-runs";
+type Tab = "discoveries" | "edit-requests" | "sources" | "crawl-runs" | "feedback" | "reports" | "comments";
 
 interface DiscoveryLog {
   id: string;
@@ -60,6 +60,44 @@ interface CrawlRunItem {
   errorMessage: string | null;
 }
 
+interface FeedbackItem {
+  id: string;
+  type: string;
+  email: string | null;
+  message: string;
+  senderIp: string;
+  status: string;
+  createdAt: string;
+}
+
+interface ReportedComment {
+  id: string;
+  content: string;
+  authorName: string;
+  authorIp: string;
+  reports: number;
+  isHidden: boolean;
+  isDeleted: boolean;
+  createdAt: string;
+  service: { id: string; name: string; slug: string };
+  commentReports: { id: string; reporterIp: string; reason: string | null; createdAt: string }[];
+}
+
+interface AdminComment {
+  id: string;
+  content: string;
+  authorName: string;
+  authorIp: string;
+  reports: number;
+  isHidden: boolean;
+  isDeleted: boolean;
+  likes: number;
+  dislikes: number;
+  parentId: string | null;
+  createdAt: string;
+  service: { id: string; name: string; slug: string };
+}
+
 export default function AdminPageWrapper() {
   return (
     <Suspense fallback={
@@ -75,15 +113,22 @@ export default function AdminPageWrapper() {
 function AdminPage() {
   const searchParams = useSearchParams();
   const token = searchParams.get("token") || "";
-  const [activeTab, setActiveTab] = useState<Tab>("discoveries");
+  const [activeTab, setActiveTab] = useState<Tab>("feedback");
   const [loading, setLoading] = useState(false);
 
-  // Data
+  // Data — 기존
   const [discoveries, setDiscoveries] = useState<DiscoveryLog[]>([]);
   const [editRequests, setEditRequests] = useState<EditRequestItem[]>([]);
   const [sources, setSources] = useState<SourceItem[]>([]);
   const [crawlRuns, setCrawlRuns] = useState<CrawlRunItem[]>([]);
   const [statusFilter, setStatusFilter] = useState<string>("");
+
+  // Data — 신규
+  const [feedbackList, setFeedbackList] = useState<FeedbackItem[]>([]);
+  const [reportedComments, setReportedComments] = useState<ReportedComment[]>([]);
+  const [adminComments, setAdminComments] = useState<AdminComment[]>([]);
+  const [commentFilter, setCommentFilter] = useState<string>("");
+  const [reportHiddenOnly, setReportHiddenOnly] = useState(false);
 
   const fetchData = useCallback(async () => {
     if (!token) return;
@@ -115,16 +160,37 @@ function AdminPage() {
           setCrawlRuns(data.items || []);
           break;
         }
+        case "feedback": {
+          const res = await fetch(`/api/admin/feedback?token=${token}${statusParam}`);
+          const data = await res.json();
+          setFeedbackList(data.items || []);
+          break;
+        }
+        case "reports": {
+          const hiddenParam = reportHiddenOnly ? "&hidden=true" : "";
+          const res = await fetch(`/api/admin/reports?token=${token}${hiddenParam}`);
+          const data = await res.json();
+          setReportedComments(data.items || []);
+          break;
+        }
+        case "comments": {
+          const filterParam = commentFilter ? `&filter=${commentFilter}` : "";
+          const res = await fetch(`/api/admin/comments?token=${token}${filterParam}`);
+          const data = await res.json();
+          setAdminComments(data.items || []);
+          break;
+        }
       }
     } catch (err) {
       console.error("Fetch error:", err);
     } finally {
       setLoading(false);
     }
-  }, [token, activeTab, statusFilter]);
+  }, [token, activeTab, statusFilter, reportHiddenOnly, commentFilter]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
+  // Actions — 기존
   const handleDiscoveryAction = async (id: string, action: "approve" | "reject") => {
     try {
       await fetch(`/api/admin/discoveries/${id}?token=${token}`, {
@@ -151,6 +217,33 @@ function AdminPage() {
     }
   };
 
+  // Actions — 신규
+  const handleFeedbackStatus = async (id: string, status: string) => {
+    try {
+      await fetch(`/api/admin/feedback?token=${token}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, status }),
+      });
+      fetchData();
+    } catch (err) {
+      console.error("Feedback action error:", err);
+    }
+  };
+
+  const handleCommentAction = async (api: string, commentId: string, action: string) => {
+    try {
+      await fetch(`/api/admin/${api}?token=${token}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ commentId, action }),
+      });
+      fetchData();
+    } catch (err) {
+      console.error("Comment action error:", err);
+    }
+  };
+
   if (!token) {
     return (
       <div className="min-h-screen flex items-center justify-center dark:bg-zinc-950 bg-zinc-50">
@@ -165,8 +258,11 @@ function AdminPage() {
   }
 
   const tabs: { id: Tab; label: string; icon: React.ReactNode }[] = [
-    { id: "discoveries", label: "발견 목록", icon: <Globe className="w-4 h-4" /> },
+    { id: "feedback", label: "문의/의견", icon: <Mail className="w-4 h-4" /> },
+    { id: "reports", label: "댓글 신고", icon: <AlertTriangle className="w-4 h-4" /> },
+    { id: "comments", label: "댓글 관리", icon: <MessageSquare className="w-4 h-4" /> },
     { id: "edit-requests", label: "수정 요청", icon: <FileEdit className="w-4 h-4" /> },
+    { id: "discoveries", label: "발견 목록", icon: <Globe className="w-4 h-4" /> },
     { id: "sources", label: "소스 관리", icon: <Database className="w-4 h-4" /> },
     { id: "crawl-runs", label: "크롤링 이력", icon: <Activity className="w-4 h-4" /> },
   ];
@@ -176,6 +272,8 @@ function AdminPage() {
       pending: "dark:bg-yellow-500/15 bg-yellow-500/10 dark:text-yellow-400 text-yellow-600",
       approved: "dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600",
       rejected: "dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600",
+      reviewed: "dark:bg-blue-500/15 bg-blue-500/10 dark:text-blue-400 text-blue-600",
+      resolved: "dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600",
       duplicate: "dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600",
       error: "dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600",
       running: "dark:bg-blue-500/15 bg-blue-500/10 dark:text-blue-400 text-blue-600",
@@ -187,6 +285,13 @@ function AdminPage() {
         {status}
       </span>
     );
+  };
+
+  const formatDate = (dateStr: string) => {
+    return new Date(dateStr).toLocaleString("ko-KR", {
+      year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit",
+    });
   };
 
   return (
@@ -209,11 +314,11 @@ function AdminPage() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-2 mb-6 overflow-x-auto">
+        <div className="flex gap-2 mb-6 overflow-x-auto pb-1">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => { setActiveTab(tab.id); setStatusFilter(""); }}
+              onClick={() => { setActiveTab(tab.id); setStatusFilter(""); setCommentFilter(""); setReportHiddenOnly(false); }}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium whitespace-nowrap transition-all
                 ${activeTab === tab.id
                   ? "bg-gradient-to-r from-neon-blue to-neon-purple text-white"
@@ -226,9 +331,9 @@ function AdminPage() {
           ))}
         </div>
 
-        {/* Status filter */}
+        {/* Status filter — 기존 탭들 */}
         {(activeTab === "discoveries" || activeTab === "edit-requests") && (
-          <div className="flex gap-2 mb-4">
+          <div className="flex gap-2 mb-4 flex-wrap">
             {["", "pending", "approved", "rejected", ...(activeTab === "discoveries" ? ["duplicate", "error"] : [])].map((s) => (
               <button
                 key={s}
@@ -245,6 +350,74 @@ function AdminPage() {
           </div>
         )}
 
+        {/* Feedback 필터 */}
+        {activeTab === "feedback" && (
+          <div className="flex gap-2 mb-4 flex-wrap">
+            {["", "pending", "reviewed", "resolved"].map((s) => (
+              <button
+                key={s}
+                onClick={() => setStatusFilter(s)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+                  ${statusFilter === s
+                    ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-blue-600"
+                    : "dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500"
+                  }`}
+              >
+                {s === "" ? "전체" : s === "pending" ? "대기" : s === "reviewed" ? "확인됨" : "해결됨"}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Reports 필터 */}
+        {activeTab === "reports" && (
+          <div className="flex gap-2 mb-4">
+            <button
+              onClick={() => setReportHiddenOnly(false)}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+                ${!reportHiddenOnly
+                  ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-blue-600"
+                  : "dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500"
+                }`}
+            >
+              전체 신고
+            </button>
+            <button
+              onClick={() => setReportHiddenOnly(true)}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+                ${reportHiddenOnly
+                  ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-blue-600"
+                  : "dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500"
+                }`}
+            >
+              숨김된 댓글만
+            </button>
+          </div>
+        )}
+
+        {/* Comments 필터 */}
+        {activeTab === "comments" && (
+          <div className="flex gap-2 mb-4 flex-wrap">
+            {[
+              { value: "", label: "전체" },
+              { value: "hidden", label: "숨김" },
+              { value: "deleted", label: "삭제됨" },
+            ].map((f) => (
+              <button
+                key={f.value}
+                onClick={() => setCommentFilter(f.value)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all
+                  ${commentFilter === f.value
+                    ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-blue-600"
+                    : "dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500"
+                  }`}
+              >
+                {f.label}
+              </button>
+            ))}
+          </div>
+        )}
+
         {/* Content */}
         <div className="glass rounded-2xl overflow-hidden">
           {loading ? (
@@ -253,6 +426,237 @@ function AdminPage() {
             </div>
           ) : (
             <>
+              {/* ===== 문의/의견 (Feedback) ===== */}
+              {activeTab === "feedback" && (
+                <div className="divide-y dark:divide-white/5 divide-black/5">
+                  {feedbackList.length === 0 ? (
+                    <p className="p-8 text-center text-sm dark:text-zinc-500 text-zinc-400">문의/의견이 없습니다</p>
+                  ) : (
+                    feedbackList.map((f) => (
+                      <div key={f.id} className="p-4 flex items-start gap-4">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className={`px-2 py-0.5 rounded-md text-xs font-medium
+                              ${f.type === "partnership"
+                                ? "dark:bg-purple-500/15 bg-purple-500/10 dark:text-purple-400 text-purple-600"
+                                : "dark:bg-blue-500/15 bg-blue-500/10 dark:text-blue-400 text-blue-600"
+                              }`}
+                            >
+                              {f.type === "partnership" ? "제휴" : "의견"}
+                            </span>
+                            {statusBadge(f.status)}
+                            <span className="text-xs dark:text-zinc-500 text-zinc-400">
+                              {formatDate(f.createdAt)}
+                            </span>
+                          </div>
+                          {f.email && (
+                            <p className="text-xs dark:text-zinc-400 text-zinc-500 mb-1">{f.email}</p>
+                          )}
+                          <p className="text-sm dark:text-zinc-300 text-zinc-700 whitespace-pre-wrap">{f.message}</p>
+                        </div>
+                        {f.status === "pending" && (
+                          <div className="flex gap-2 shrink-0">
+                            <button
+                              onClick={() => handleFeedbackStatus(f.id, "reviewed")}
+                              className="px-3 py-1.5 rounded-lg text-xs font-medium
+                                dark:bg-blue-500/15 bg-blue-500/10 dark:text-blue-400 text-blue-600 hover:opacity-80"
+                            >
+                              확인
+                            </button>
+                            <button
+                              onClick={() => handleFeedbackStatus(f.id, "resolved")}
+                              className="px-3 py-1.5 rounded-lg text-xs font-medium
+                                dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600 hover:opacity-80"
+                            >
+                              해결
+                            </button>
+                          </div>
+                        )}
+                        {f.status === "reviewed" && (
+                          <button
+                            onClick={() => handleFeedbackStatus(f.id, "resolved")}
+                            className="px-3 py-1.5 rounded-lg text-xs font-medium shrink-0
+                              dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600 hover:opacity-80"
+                          >
+                            해결 완료
+                          </button>
+                        )}
+                      </div>
+                    ))
+                  )}
+                </div>
+              )}
+
+              {/* ===== 댓글 신고 (Reports) ===== */}
+              {activeTab === "reports" && (
+                <div className="divide-y dark:divide-white/5 divide-black/5">
+                  {reportedComments.length === 0 ? (
+                    <p className="p-8 text-center text-sm dark:text-zinc-500 text-zinc-400">신고된 댓글이 없습니다</p>
+                  ) : (
+                    reportedComments.map((c) => (
+                      <div key={c.id} className="p-4">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1 flex-wrap">
+                              <span className="text-sm font-medium dark:text-white text-zinc-900">
+                                {c.authorName}
+                              </span>
+                              <span className="text-xs dark:text-zinc-500 text-zinc-400">
+                                {c.authorIp}
+                              </span>
+                              <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600">
+                                신고 {c.reports}건
+                              </span>
+                              {c.isHidden && (
+                                <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
+                                  숨김
+                                </span>
+                              )}
+                              {c.isDeleted && (
+                                <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-zinc-500/15 bg-zinc-500/10 dark:text-zinc-400 text-zinc-500">
+                                  삭제됨
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-xs dark:text-zinc-400 text-zinc-500 mb-1">
+                              서비스: <a href={`/service/${c.service.slug}`} target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">{c.service.name}</a>
+                              {" · "}{formatDate(c.createdAt)}
+                            </p>
+                            {!c.isDeleted && (
+                              <p className="text-sm dark:text-zinc-300 text-zinc-700 mb-2 whitespace-pre-wrap">{c.content}</p>
+                            )}
+                            {/* 신고 사유 목록 */}
+                            {c.commentReports.length > 0 && (
+                              <div className="mt-2 space-y-1">
+                                <p className="text-xs font-medium dark:text-zinc-400 text-zinc-500">신고 사유:</p>
+                                {c.commentReports.map((r) => (
+                                  <p key={r.id} className="text-xs dark:text-zinc-500 text-zinc-400 pl-2 border-l-2 dark:border-zinc-700 border-zinc-300">
+                                    {r.reporterIp} · {r.reason || "사유 없음"} · {formatDate(r.createdAt)}
+                                  </p>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                          {!c.isDeleted && (
+                            <div className="flex flex-col gap-2 shrink-0">
+                              {c.isHidden ? (
+                                <button
+                                  onClick={() => handleCommentAction("reports", c.id, "unhide")}
+                                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                    dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600 hover:opacity-80"
+                                >
+                                  <Eye className="w-3 h-3" /> 숨김 해제
+                                </button>
+                              ) : (
+                                <button
+                                  onClick={() => handleCommentAction("reports", c.id, "hide")}
+                                  className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                    dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600 hover:opacity-80"
+                                >
+                                  <EyeOff className="w-3 h-3" /> 숨김
+                                </button>
+                              )}
+                              <button
+                                onClick={() => handleCommentAction("reports", c.id, "delete")}
+                                className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                  dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600 hover:opacity-80"
+                              >
+                                <Trash2 className="w-3 h-3" /> 삭제
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+              )}
+
+              {/* ===== 댓글 관리 (Comments) ===== */}
+              {activeTab === "comments" && (
+                <div className="divide-y dark:divide-white/5 divide-black/5">
+                  {adminComments.length === 0 ? (
+                    <p className="p-8 text-center text-sm dark:text-zinc-500 text-zinc-400">댓글이 없습니다</p>
+                  ) : (
+                    adminComments.map((c) => (
+                      <div key={c.id} className="p-4 flex items-start gap-4">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1 flex-wrap">
+                            <span className="text-sm font-medium dark:text-white text-zinc-900">
+                              {c.authorName || "삭제됨"}
+                            </span>
+                            <span className="text-xs dark:text-zinc-500 text-zinc-400">
+                              {c.authorIp}
+                            </span>
+                            {c.isHidden && (
+                              <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
+                                숨김
+                              </span>
+                            )}
+                            {c.isDeleted && (
+                              <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-zinc-500/15 bg-zinc-500/10 dark:text-zinc-400 text-zinc-500">
+                                삭제됨
+                              </span>
+                            )}
+                            {c.reports > 0 && (
+                              <span className="px-2 py-0.5 rounded-md text-xs font-medium dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600">
+                                신고 {c.reports}
+                              </span>
+                            )}
+                            {c.parentId && (
+                              <span className="px-2 py-0.5 rounded-md text-xs dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500">
+                                답글
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-xs dark:text-zinc-400 text-zinc-500 mb-1">
+                            <a href={`/service/${c.service.slug}`} target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">{c.service.name}</a>
+                            {" · "}{formatDate(c.createdAt)}
+                            {" · "}
+                            <span className="inline-flex items-center gap-0.5"><ThumbsUp className="w-3 h-3" /> {c.likes}</span>
+                            {" "}
+                            <span className="inline-flex items-center gap-0.5"><ThumbsDown className="w-3 h-3" /> {c.dislikes}</span>
+                          </p>
+                          {!c.isDeleted && (
+                            <p className="text-sm dark:text-zinc-300 text-zinc-700 whitespace-pre-wrap">{c.content}</p>
+                          )}
+                        </div>
+                        {!c.isDeleted && (
+                          <div className="flex flex-col gap-2 shrink-0">
+                            {c.isHidden ? (
+                              <button
+                                onClick={() => handleCommentAction("comments", c.id, "unhide")}
+                                className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                  dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600 hover:opacity-80"
+                              >
+                                <Eye className="w-3 h-3" /> 해제
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => handleCommentAction("comments", c.id, "hide")}
+                                className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                  dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600 hover:opacity-80"
+                              >
+                                <EyeOff className="w-3 h-3" /> 숨김
+                              </button>
+                            )}
+                            <button
+                              onClick={() => handleCommentAction("comments", c.id, "delete")}
+                              className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium
+                                dark:bg-red-500/15 bg-red-500/10 dark:text-red-400 text-red-600 hover:opacity-80"
+                            >
+                              <Trash2 className="w-3 h-3" /> 삭제
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    ))
+                  )}
+                </div>
+              )}
+
+              {/* ===== 기존 탭들 ===== */}
+
               {/* Discoveries */}
               {activeTab === "discoveries" && (
                 <div className="divide-y dark:divide-white/5 divide-black/5">
