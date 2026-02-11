@@ -7,6 +7,8 @@ import { CategoryFilter } from "@/components/filters/CategoryFilter";
 import { ServiceGrid } from "@/components/services/ServiceGrid";
 import { calculateRelevanceScore } from "@/lib/search";
 
+export const dynamic = "force-dynamic";
+
 const ITEMS_PER_PAGE = 12;
 
 interface PageProps {

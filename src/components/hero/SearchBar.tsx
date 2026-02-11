@@ -1,13 +1,14 @@
 "use client";
 
 import { Search, X } from "lucide-react";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const [query, setQuery] = useState(initialQuery || "");
   const router = useRouter();
   const searchParams = useSearchParams();
+  const hasScrolled = useRef(false);
 
   const updateSearch = useCallback(
     (value: string) => {
@@ -30,6 +31,19 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     return () => clearTimeout(timer);
   }, [query, updateSearch]);
 
+  const handleFocus = () => {
+    if (hasScrolled.current) return;
+    hasScrolled.current = true;
+
+    const target = document.getElementById("service-grid");
+    if (target) {
+      // 검색바가 화면 상단에 고정되도록 약간 위로 오프셋
+      const offset = 100;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="max-w-2xl mx-auto px-4 -mt-2 mb-8">
       <div className="relative neon-border rounded-2xl">
@@ -39,6 +53,7 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onFocus={handleFocus}
             placeholder="어떤 AI 도구를 찾고 계신가요?"
             className="w-full ml-3 bg-transparent outline-none text-base
               dark:text-white text-zinc-900

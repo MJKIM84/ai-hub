@@ -67,7 +67,7 @@ export function ServiceGrid({
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="service-grid" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between mb-6">
         <p className="text-sm dark:text-zinc-500 text-zinc-400">
           총 <span className="dark:text-white text-zinc-900 font-semibold">{totalCount}</span>개의 서비스

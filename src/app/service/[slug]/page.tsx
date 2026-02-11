@@ -8,14 +8,75 @@ import {
   ArrowLeft, ExternalLink, ThumbsUp, Eye, Calendar, Flag, Tag
 } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const dynamic = "force-dynamic";
+
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const services = await prisma.service.findMany({ select: { slug: true } });
-  return services.map((s) => ({ slug: s.slug }));
+  try {
+    const services = await prisma.service.findMany({ select: { slug: true } });
+    return services.map((s) => ({ slug: s.slug }));
+  } catch {
+    // 빌드 시 DB 연결 실패해도 동적 렌더링으로 폴백
+    return [];
+  }
+}
+
+// 동적 메타데이터 생성 — 구글/네이버 검색 결과에 표시
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = await prisma.service.findUnique({ where: { slug } });
+
+  if (!service) {
+    return { title: "서비스를 찾을 수 없습니다" };
+  }
+
+  const category = CATEGORIES.find((c) => c.id === service.category);
+  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | AI HUB`;
+  const description =
+    service.description ||
+    service.tagline ||
+    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. AI HUB에서 자세한 정보를 확인하세요.`;
+  const ogImage = service.ogImageUrl || service.logoUrl || service.faviconUrl;
+
+  return {
+    title: `${service.name} - ${category?.nameKo || "AI 서비스"}`,
+    description,
+    keywords: [
+      service.name,
+      category?.nameKo || "",
+      category?.name || "",
+      "AI 서비스",
+      "AI 도구",
+      ...((() => { try { return JSON.parse(service.tags) as string[]; } catch { return []; } })()),
+    ].filter(Boolean),
+    alternates: {
+      canonical: `/service/${slug}`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}/service/${slug}`,
+      type: "article",
+      locale: "ko_KR",
+      siteName: "AI HUB",
+      ...(ogImage && {
+        images: [{ url: ogImage, width: 1200, height: 630, alt: service.name }],
+      }),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(ogImage && { images: [ogImage] }),
+    },
+  };
 }
 
 export default async function ServiceDetailPage({ params }: PageProps) {
@@ -32,10 +93,42 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const logoSrc = service.logoUrl || service.ogImageUrl || service.faviconUrl;
 
+  // JSON-LD — 구글 리치 결과 (SoftwareApplication)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: service.name,
+    description: service.description || service.tagline || "",
+    url: service.url,
+    applicationCategory: "AI",
+    operatingSystem: "Web",
+    ...(logoSrc && { image: logoSrc }),
+    ...(pricing && {
+      offers: {
+        "@type": "Offer",
+        price: pricing.id === "free" ? "0" : undefined,
+        priceCurrency: "KRW",
+        availability: "https://schema.org/InStock",
+      },
+    }),
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: Math.min(5, Math.max(1, (service.upvotes / Math.max(service.clicks, 1)) * 5 + 2.5)).toFixed(1),
+      ratingCount: service.upvotes + service.clicks,
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
   return (
     <>
       <Header />
       <main className="min-h-screen pt-24 pb-12 px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <div className="max-w-3xl mx-auto">
           <Link
             href="/"
