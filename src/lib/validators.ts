@@ -1,0 +1,34 @@
+import { z } from 'zod';
+
+export const serviceCreateSchema = z.object({
+  url: z.string().url('올바른 URL을 입력해주세요'),
+  name: z.string().min(1, '서비스 이름을 입력해주세요').max(100),
+  description: z.string().max(500).optional(),
+  tagline: z.string().max(200).optional(),
+  category: z.string().min(1),
+  tags: z.array(z.string()).optional().default([]),
+  pricingModel: z.enum(['free', 'freemium', 'paid']).default('free'),
+  logoUrl: z.string().url().optional().or(z.literal('')),
+  faviconUrl: z.string().url().optional().or(z.literal('')),
+  ogImageUrl: z.string().url().optional().or(z.literal('')),
+  isKorean: z.boolean().optional().default(false),
+});
+
+export const scrapeRequestSchema = z.object({
+  url: z.string().url('올바른 URL을 입력해주세요'),
+});
+
+export const voteRequestSchema = z.object({
+  serviceId: z.string().min(1),
+  type: z.enum(['upvote', 'click']),
+});
+
+export const serviceQuerySchema = z.object({
+  q: z.string().optional(),
+  category: z.string().optional(),
+  pricing: z.string().optional(),
+  korean: z.coerce.boolean().optional(),
+  sort: z.enum(['gravity', 'newest', 'popular', 'name']).optional().default('gravity'),
+  page: z.coerce.number().int().positive().optional().default(1),
+  limit: z.coerce.number().int().min(1).max(50).optional().default(12),
+});

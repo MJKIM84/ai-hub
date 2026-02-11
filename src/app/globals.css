@@ -1,26 +1,225 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-neon-blue: #00D4FF;
+  --color-neon-purple: #A855F7;
+  --color-neon-pink: #EC4899;
+  --color-neon-green: #10B981;
+  --color-neon-orange: #F97316;
+
+  --color-glass-light: rgba(255, 255, 255, 0.06);
+  --color-glass-medium: rgba(255, 255, 255, 0.10);
+  --color-glass-heavy: rgba(255, 255, 255, 0.16);
+
+  --color-surface-dark: #0a0a0f;
+  --color-surface-dark-secondary: #12121a;
+  --color-surface-light: #f8f9fa;
+  --color-surface-light-secondary: #ffffff;
+
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 2s ease-in-out infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes glow {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
 }
 
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Light mode default styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-surface-light);
+  color: #1a1a2e;
+  font-family: var(--font-sans);
+}
+
+/* Dark mode styles */
+.dark body {
+  background: var(--color-surface-dark);
+  color: #e4e4e7;
+}
+
+/* Glass morphism utilities */
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.dark .glass {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.dark .glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark .glass-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px) scale(1.01);
+}
+
+/* Neon gradient border */
+.neon-border {
+  position: relative;
+}
+
+.neon-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--color-neon-blue), var(--color-neon-purple), var(--color-neon-pink));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.neon-border:hover::before,
+.neon-border:focus-within::before {
+  opacity: 1;
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(0, 212, 255, 0.12) 0%,
+    rgba(168, 85, 247, 0.08) 40%,
+    transparent 70%
+  );
+}
+
+.dark .hero-gradient {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(0, 212, 255, 0.15) 0%,
+    rgba(168, 85, 247, 0.1) 40%,
+    transparent 70%
+  );
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+/* ========== 개인개발 카테고리 특별 스타일 ========== */
+@keyframes indie-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(255, 107, 0, 0.4), 0 0 20px rgba(255, 107, 0, 0.15); }
+  50% { box-shadow: 0 0 14px rgba(255, 107, 0, 0.6), 0 0 30px rgba(255, 60, 60, 0.25); }
+}
+
+@keyframes indie-glow-light {
+  0%, 100% { box-shadow: 0 0 8px rgba(234, 88, 12, 0.35), 0 0 16px rgba(234, 88, 12, 0.12); }
+  50% { box-shadow: 0 0 12px rgba(234, 88, 12, 0.5), 0 0 24px rgba(220, 38, 38, 0.18); }
+}
+
+/* 비활성 상태 — 다크 모드 */
+.dark .indie-dev-btn-inactive {
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.12), rgba(255, 60, 60, 0.10));
+  border: 1px solid rgba(255, 107, 0, 0.3);
+  color: #ff8a3d;
+  animation: indie-glow 2.5s ease-in-out infinite;
+}
+
+.dark .indie-dev-btn-inactive:hover {
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.22), rgba(255, 60, 60, 0.18));
+  border-color: rgba(255, 107, 0, 0.5);
+  color: #ffaa66;
+}
+
+/* 비활성 상태 — 라이트 모드 */
+.indie-dev-btn-inactive {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.08), rgba(220, 38, 38, 0.06));
+  border: 1px solid rgba(234, 88, 12, 0.35);
+  color: #c2410c;
+  animation: indie-glow-light 2.5s ease-in-out infinite;
+}
+
+.indie-dev-btn-inactive:hover {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.15), rgba(220, 38, 38, 0.10));
+  border-color: rgba(234, 88, 12, 0.5);
+  color: #9a3412;
+}
+
+/* 활성(선택된) 상태 — 공통 */
+.indie-dev-btn-active {
+  background: linear-gradient(135deg, #ff6b00, #ff3c3c);
+  color: #ffffff;
+  border: 1px solid transparent;
+  animation: none;
+  box-shadow: 0 4px 20px rgba(255, 107, 0, 0.45), 0 0 30px rgba(255, 60, 60, 0.2);
+}
+
+.indie-dev-btn-active:hover {
+  opacity: 0.92;
+}
+
+/* Category scroll no-scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

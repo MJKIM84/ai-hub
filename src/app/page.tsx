@@ -1,65 +1,94 @@
-import Image from "next/image";
+import { prisma } from "@/lib/prisma";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { HeroSection } from "@/components/hero/HeroSection";
+import { SearchBar } from "@/components/hero/SearchBar";
+import { CategoryFilter } from "@/components/filters/CategoryFilter";
+import { ServiceGrid } from "@/components/services/ServiceGrid";
+import { calculateRelevanceScore } from "@/lib/search";
 
-export default function Home() {
+const ITEMS_PER_PAGE = 12;
+
+interface PageProps {
+  searchParams: Promise<{
+    q?: string;
+    category?: string;
+    sort?: string;
+    page?: string;
+  }>;
+}
+
+export default async function HomePage({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const page = Math.max(1, parseInt(params.page || "1", 10));
+  const sort = params.sort || "gravity";
+
+  const where: Record<string, unknown> = {};
+  if (params.category) where.category = params.category;
+  if (params.q) {
+    where.OR = [
+      { name: { contains: params.q } },
+      { description: { contains: params.q } },
+      { tagline: { contains: params.q } },
+      { tags: { contains: params.q } },
+      { category: { contains: params.q } },
+    ];
+  }
+
+  let orderBy: Record<string, string> = {};
+  switch (sort) {
+    case "newest": orderBy = { createdAt: "desc" }; break;
+    case "popular": orderBy = { clicks: "desc" }; break;
+    case "name": orderBy = { name: "asc" }; break;
+    default: orderBy = { score: "desc" };
+  }
+
+  const [items, total, categoryCounts] = await Promise.all([
+    prisma.service.findMany({
+      where: where as never,
+      orderBy: orderBy as never,
+      skip: (page - 1) * ITEMS_PER_PAGE,
+      take: ITEMS_PER_PAGE,
+    }),
+    prisma.service.count({ where: where as never }),
+    prisma.service.groupBy({
+      by: ["category"],
+      _count: { id: true },
+    }),
+  ]);
+
+  let sortedItems = items;
+  if (params.q && items.length > 0) {
+    sortedItems = [...items].sort((a, b) => {
+      const scoreA = calculateRelevanceScore(params.q!, a);
+      const scoreB = calculateRelevanceScore(params.q!, b);
+      return scoreB - scoreA;
+    });
+  }
+
+  const countMap: Record<string, number> = {};
+  for (const c of categoryCounts) {
+    countMap[c.category] = c._count.id;
+  }
+
+  const totalPages = Math.ceil(total / ITEMS_PER_PAGE);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <Header />
+      <main className="min-h-screen">
+        <HeroSection />
+        <SearchBar initialQuery={params.q} />
+        <CategoryFilter activeCategory={params.category} categoryCounts={countMap} />
+        <ServiceGrid
+          initialServices={JSON.parse(JSON.stringify(sortedItems))}
+          totalCount={total}
+          currentPage={page}
+          hasMore={page < totalPages}
+          currentSort={sort}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
