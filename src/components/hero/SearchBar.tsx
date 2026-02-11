@@ -9,6 +9,7 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const hasScrolled = useRef(false);
+  const searchWrapperRef = useRef<HTMLDivElement>(null);
 
   const updateSearch = useCallback(
     (value: string) => {
@@ -35,17 +36,16 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     if (hasScrolled.current) return;
     hasScrolled.current = true;
 
-    const target = document.getElementById("service-grid");
-    if (target) {
-      // 검색바가 화면 상단에 고정되도록 약간 위로 오프셋
-      const offset = 100;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    // 검색바 자체를 화면 상단 근처로 스크롤 → 검색바 + 서비스 카드 동시에 보임
+    if (searchWrapperRef.current) {
+      const offset = 20; // 상단 여백
+      const top = searchWrapperRef.current.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: "smooth" });
     }
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 -mt-2 mb-8">
+    <div ref={searchWrapperRef} className="max-w-2xl mx-auto px-4 -mt-2 mb-8">
       <div className="relative neon-border rounded-2xl">
         <div className="glass flex items-center px-5 py-4">
           <Search className="w-5 h-5 dark:text-zinc-400 text-zinc-500 shrink-0" />
