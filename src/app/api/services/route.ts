@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { serviceCreateSchema, serviceQuerySchema } from "@/lib/validators";
-import { calculateGravityScore, calculatePoints } from "@/lib/ranking";
+import { calculateGravityScore } from "@/lib/ranking";
 import { calculateRelevanceScore } from "@/lib/search";
 import { createSlug } from "@/lib/utils";
+import { checkDuplicate } from "@/lib/discovery/dedup";
 
 export async function GET(request: NextRequest) {
   try {
@@ -77,6 +78,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const data = serviceCreateSchema.parse(body);
 
+    // 기존 URL 중복 검사
     const existing = await prisma.service.findUnique({
       where: { url: data.url },
     });
@@ -85,6 +87,31 @@ export async function POST(request: NextRequest) {
         { error: "이미 등록된 URL입니다" },
         { status: 409 }
       );
+    }
+
+    // 3단계 중복 검사 (URL 정규화 + 도메인 + 이름 유사도)
+    const dupCheck = await checkDuplicate(data.url, data.name, prisma);
+    if (dupCheck.isDuplicate) {
+      return NextResponse.json(
+        {
+          error: "유사한 서비스가 이미 등록되어 있습니다",
+          duplicate: {
+            matchType: dupCheck.matchType,
+            matchedServiceName: dupCheck.matchedServiceName,
+            similarityScore: dupCheck.similarityScore,
+          },
+        },
+        { status: 409 }
+      );
+    }
+
+    // 도메인 매칭 경고 (중복은 아니지만 같은 도메인)
+    let duplicateWarning = null;
+    if (dupCheck.matchType === "domain") {
+      duplicateWarning = {
+        message: `같은 도메인의 서비스가 이미 존재합니다: ${dupCheck.matchedServiceName}`,
+        matchedServiceName: dupCheck.matchedServiceName,
+      };
     }
 
     let slug = createSlug(data.name);
@@ -107,11 +134,19 @@ export async function POST(request: NextRequest) {
         faviconUrl: data.faviconUrl || undefined,
         ogImageUrl: data.ogImageUrl || undefined,
         isKorean: data.isKorean,
+        source: data.source || "user",
         score: calculateGravityScore(0, new Date()),
       },
     });
 
-    return NextResponse.json({ service, message: "서비스가 등록되었습니다" }, { status: 201 });
+    return NextResponse.json(
+      {
+        service,
+        message: "서비스가 등록되었습니다",
+        ...(duplicateWarning && { warning: duplicateWarning }),
+      },
+      { status: 201 }
+    );
   } catch (error) {
     console.error("POST /api/services error:", error);
     if (error instanceof Error && error.name === "ZodError") {

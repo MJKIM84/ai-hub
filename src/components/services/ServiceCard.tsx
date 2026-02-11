@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, ThumbsUp, Eye, Flag } from "lucide-react";
+import { ExternalLink, ThumbsUp, Eye, Flag, Bot, UserCheck } from "lucide-react";
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
@@ -74,6 +74,12 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
             </h3>
             {service.isKorean && (
               <span title="한국 서비스"><Flag className="w-3.5 h-3.5 text-neon-blue shrink-0" /></span>
+            )}
+            {service.source === "auto" && (
+              <span title="자동 수집"><Bot className="w-3.5 h-3.5 text-orange-400 shrink-0" /></span>
+            )}
+            {service.source === "developer" && (
+              <span title="개발자 인증"><UserCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" /></span>
             )}
           </div>
           <p className="text-sm dark:text-zinc-400 text-zinc-500 line-clamp-2 mt-1 leading-relaxed">

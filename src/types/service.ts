@@ -17,6 +17,7 @@ export interface Service {
   isVerified: boolean;
   isKorean: boolean;
   submittedBy: string | null;
+  source: string;
   createdAt: Date;
   updatedAt: Date;
 }

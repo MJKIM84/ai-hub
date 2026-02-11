@@ -5,10 +5,11 @@ import { Footer } from "@/components/layout/Footer";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatDate, formatNumber } from "@/lib/utils";
 import {
-  ArrowLeft, ExternalLink, ThumbsUp, Eye, Calendar, Flag, Tag
+  ArrowLeft, ExternalLink, ThumbsUp, Eye, Calendar, Flag, Tag, Bot, UserCheck
 } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { EditRequestButton } from "@/components/services/EditRequestButton";
 
 export const dynamic = "force-dynamic";
 
@@ -163,6 +164,20 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       한국
                     </span>
                   )}
+                  {service.source === "auto" && (
+                    <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
+                      dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
+                      <Bot className="w-3 h-3" />
+                      Auto
+                    </span>
+                  )}
+                  {service.source === "developer" && (
+                    <span className="flex items-center gap-1 px-2 py-1 rounded-lg text-xs font-medium
+                      dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600">
+                      <UserCheck className="w-3 h-3" />
+                      인증됨
+                    </span>
+                  )}
                 </div>
                 {service.tagline && (
                   <p className="text-base dark:text-zinc-400 text-zinc-500 mb-3">
@@ -251,6 +266,17 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <ExternalLink className="w-4 h-4" />
               서비스 방문하기
             </a>
+
+            <EditRequestButton
+              serviceId={service.id}
+              serviceName={service.name}
+              currentData={{
+                name: service.name,
+                description: service.description,
+                category: service.category,
+                pricingModel: service.pricingModel,
+              }}
+            />
           </div>
         </div>
       </main>

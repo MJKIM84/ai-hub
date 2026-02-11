@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X, Globe, Loader2, Check, ChevronRight, Sparkles } from "lucide-react";
+import { X, Globe, Loader2, Check, ChevronRight, Sparkles, AlertTriangle } from "lucide-react";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 
 interface RegisterModalProps {
@@ -31,6 +31,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
   const [category, setCategory] = useState("");
   const [pricingModel, setPricingModel] = useState("free");
   const [isKorean, setIsKorean] = useState(false);
+  const [duplicateWarning, setDuplicateWarning] = useState<string | null>(null);
 
   const handleExtract = async () => {
     setLoading(true);
@@ -61,6 +62,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
   const handleSubmit = async () => {
     setLoading(true);
     setError(null);
+    setDuplicateWarning(null);
     try {
       const res = await fetch("/api/services", {
         method: "POST",
@@ -78,9 +80,22 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
           logoUrl: extracted?.ogImageUrl || extracted?.faviconUrl,
         }),
       });
+      const data = await res.json();
       if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.error || "등록에 실패했습니다");
+        // 중복 감지 시 상세 정보 표시
+        if (res.status === 409 && data.duplicate) {
+          const dupInfo = data.duplicate;
+          setError(
+            `유사한 서비스가 이미 존재합니다: "${dupInfo.matchedServiceName}" (유사도: ${Math.round(dupInfo.similarityScore * 100)}%)`
+          );
+        } else {
+          throw new Error(data.error || "등록에 실패했습니다");
+        }
+        return;
+      }
+      // 경고가 있으면 표시
+      if (data.warning) {
+        setDuplicateWarning(data.warning.message);
       }
       setStep("success");
     } catch (err) {
@@ -286,9 +301,15 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
               <h3 className="text-lg font-semibold dark:text-white text-zinc-900 mb-2">
                 등록이 완료되었습니다!
               </h3>
-              <p className="text-sm dark:text-zinc-400 text-zinc-500 mb-6">
+              <p className="text-sm dark:text-zinc-400 text-zinc-500 mb-4">
                 서비스가 성공적으로 등록되었습니다.
               </p>
+              {duplicateWarning && (
+                <div className="flex items-start gap-2 p-3 rounded-xl dark:bg-orange-500/10 bg-orange-500/5 mb-4">
+                  <AlertTriangle className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <p className="text-xs dark:text-orange-300 text-orange-600">{duplicateWarning}</p>
+                </div>
+              )}
               <button
                 onClick={() => { onClose(); window.location.reload(); }}
                 className="px-6 py-3 rounded-xl text-sm font-medium

@@ -12,6 +12,15 @@ export const serviceCreateSchema = z.object({
   faviconUrl: z.string().url().optional().or(z.literal('')),
   ogImageUrl: z.string().url().optional().or(z.literal('')),
   isKorean: z.boolean().optional().default(false),
+  source: z.enum(['user', 'auto', 'developer']).optional().default('user'),
+});
+
+export const editRequestSchema = z.object({
+  serviceId: z.string().min(1),
+  requestType: z.enum(['claim', 'edit']),
+  contactEmail: z.string().email('올바른 이메일을 입력해주세요'),
+  changes: z.record(z.string(), z.unknown()).optional().default({}),
+  reason: z.string().max(500).optional(),
 });
 
 export const scrapeRequestSchema = z.object({
