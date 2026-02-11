@@ -36,6 +36,7 @@ export async function GET(request: NextRequest) {
           dislikes: true,
           parentId: true,
           parent: { select: { authorName: true } },
+          isDeleted: true,
           reports: true,
           isHidden: true,
           createdAt: true,
@@ -56,6 +57,7 @@ export async function GET(request: NextRequest) {
       parentId: item.parentId,
       replyToAuthorName: item.parent?.authorName || undefined,
       replyCount: item._count.replies,
+      isDeleted: item.isDeleted,
       reports: item.reports,
       isHidden: item.isHidden,
       createdAt: item.createdAt,
@@ -160,6 +162,7 @@ export async function POST(request: NextRequest) {
       parentId: comment.parentId,
       replyToAuthorName,
       replyCount: 0,
+      isDeleted: false,
       reports: 0,
       isHidden: false,
       createdAt: comment.createdAt,
@@ -188,7 +191,7 @@ export async function PATCH(request: NextRequest) {
       where: { id: data.commentId },
     });
 
-    if (!comment) {
+    if (!comment || comment.isDeleted) {
       return NextResponse.json(
         { error: "댓글을 찾을 수 없습니다" },
         { status: 404 }
@@ -215,6 +218,7 @@ export async function PATCH(request: NextRequest) {
         dislikes: true,
         parentId: true,
         parent: { select: { authorName: true } },
+        isDeleted: true,
         reports: true,
         isHidden: true,
         createdAt: true,
@@ -232,6 +236,7 @@ export async function PATCH(request: NextRequest) {
       parentId: updated.parentId,
       replyToAuthorName: updated.parent?.authorName || undefined,
       replyCount: updated._count.replies,
+      isDeleted: updated.isDeleted,
       reports: updated.reports,
       isHidden: updated.isHidden,
       createdAt: updated.createdAt,
@@ -260,7 +265,7 @@ export async function DELETE(request: NextRequest) {
       where: { id: data.commentId },
     });
 
-    if (!comment) {
+    if (!comment || comment.isDeleted) {
       return NextResponse.json(
         { error: "댓글을 찾을 수 없습니다" },
         { status: 404 }
@@ -275,9 +280,16 @@ export async function DELETE(request: NextRequest) {
       );
     }
 
-    // Cascade delete will handle replies and votes
-    await prisma.comment.delete({
+    // Soft delete — 내용만 제거하고 레코드는 유지 (답글 보존)
+    await prisma.comment.update({
       where: { id: data.commentId },
+      data: {
+        isDeleted: true,
+        content: "",
+        authorName: "삭제됨",
+        authorIp: "",
+        password: "",
+      },
     });
 
     return NextResponse.json({ success: true, deletedId: data.commentId });

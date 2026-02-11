@@ -88,8 +88,10 @@ model Comment {
   dislikes     Int      @default(0)
 
   parentId     String?
-  parent       Comment?  @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  parent       Comment?  @relation("CommentReplies", fields: [parentId], references: [id], onDelete: SetNull)
   replies      Comment[] @relation("CommentReplies")
+
+  isDeleted    Boolean  @default(false)
 
   createdAt    DateTime @default(now())
 

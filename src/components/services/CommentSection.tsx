@@ -314,6 +314,23 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
 
   const isReply = !!comment.parentId;
 
+  // 삭제된 댓글
+  if (comment.isDeleted) {
+    return (
+      <div className={isReply ? "ml-8" : ""}>
+        <div className={`rounded-xl p-4 ${isReply
+          ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
+          : "dark:bg-white/5 bg-black/5"}`}
+        >
+          <div className="flex items-center gap-2 text-sm dark:text-zinc-500 text-zinc-400">
+            <Trash2 className="w-4 h-4" />
+            <span>삭제된 댓글입니다.</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // 숨김 처리된 댓글
   if (comment.isHidden) {
     return (
@@ -581,8 +598,12 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
   };
 
   const handleDeleted = (commentId: string) => {
-    setComments((prev) => prev.filter((c) => c.id !== commentId));
-    setTotal((prev) => prev - 1);
+    // soft delete — 리스트에서 제거하지 않고 삭제 표시로 전환
+    setComments((prev) => prev.map((c) =>
+      c.id === commentId
+        ? { ...c, isDeleted: true, content: "", authorName: "삭제됨", maskedIp: "" }
+        : c
+    ));
   };
 
   const handleUpdated = (updated: Comment) => {
