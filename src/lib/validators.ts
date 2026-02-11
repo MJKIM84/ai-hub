@@ -29,7 +29,18 @@ export const scrapeRequestSchema = z.object({
 
 export const voteRequestSchema = z.object({
   serviceId: z.string().min(1),
-  type: z.enum(['upvote', 'click']),
+  type: z.enum(['upvote', 'downvote', 'click']),
+});
+
+export const commentCreateSchema = z.object({
+  serviceId: z.string().min(1),
+  content: z.string().min(1, '댓글을 입력해주세요').max(1000),
+  authorName: z.string().min(1, '닉네임을 입력해주세요').max(50),
+});
+
+export const commentVoteSchema = z.object({
+  commentId: z.string().min(1),
+  type: z.enum(['like', 'dislike']),
 });
 
 export const serviceQuerySchema = z.object({

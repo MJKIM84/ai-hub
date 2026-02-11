@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { ExternalLink, ThumbsUp, Eye, Flag, Bot, UserCheck, Check } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ThumbsUp, Eye, Flag, Bot, UserCheck, Check, ChevronRight } from "lucide-react";
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
@@ -13,21 +14,12 @@ interface ServiceCardProps {
 
 export function ServiceCard({ service, onVote }: ServiceCardProps) {
   const [voted, setVoted] = useState(false);
+  const router = useRouter();
   const category = CATEGORIES.find((c) => c.id === service.category);
   const pricing = PRICING_MODELS.find((p) => p.id === service.pricingModel);
-  const tags: string[] = (() => {
-    try { return JSON.parse(service.tags); } catch { return []; }
-  })();
 
-  const handleClick = async () => {
-    try {
-      await fetch("/api/vote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ serviceId: service.id, type: "click" }),
-      });
-    } catch {}
-    window.open(service.url, "_blank", "noopener,noreferrer");
+  const handleClick = () => {
+    router.push(`/service/${service.slug}`);
   };
 
   const handleVote = async (e: React.MouseEvent) => {
@@ -143,7 +135,7 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
             {voted ? <Check className="w-3 h-3" /> : <ThumbsUp className="w-3 h-3" />}
             {voted ? "추천됨" : "추천"}
           </button>
-          <ExternalLink className="w-4 h-4 dark:text-zinc-500 text-zinc-400
+          <ChevronRight className="w-4 h-4 dark:text-zinc-500 text-zinc-400
             group-hover:text-neon-blue transition-colors" />
         </div>
       </div>

@@ -24,6 +24,7 @@ model Service {
 
   clicks       Int      @default(0)
   upvotes      Int      @default(0)
+  downvotes    Int      @default(0)
   score        Float    @default(0)
 
   isVerified   Boolean  @default(false)
@@ -36,6 +37,7 @@ model Service {
 
   reviews        Review[]
   votes          Vote[]
+  comments       Comment[]
   discoveryLogs  DiscoveryLog[]
   editRequests   EditRequest[]
 
@@ -70,6 +72,39 @@ model Vote {
 
   @@unique([serviceId, voterIp, type])
   @@index([serviceId])
+}
+
+// ─── 커뮤니티 시스템 ───
+
+model Comment {
+  id           String   @id @default(cuid())
+  serviceId    String
+  service      Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  content      String
+  authorName   String
+  authorIp     String
+  likes        Int      @default(0)
+  dislikes     Int      @default(0)
+
+  createdAt    DateTime @default(now())
+
+  commentVotes CommentVote[]
+
+  @@index([serviceId])
+  @@index([createdAt])
+}
+
+model CommentVote {
+  id         String   @id @default(cuid())
+  commentId  String
+  comment    Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  voterIp    String
+  type       String   // "like" | "dislike"
+
+  createdAt  DateTime @default(now())
+
+  @@unique([commentId, voterIp, type])
+  @@index([commentId])
 }
 
 // ─── 자동 수집 시스템 ───

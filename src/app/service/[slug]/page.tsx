@@ -5,11 +5,13 @@ import { Footer } from "@/components/layout/Footer";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatDate, formatNumber } from "@/lib/utils";
 import {
-  ArrowLeft, ExternalLink, ThumbsUp, Eye, Calendar, Flag, Tag, Bot, UserCheck
+  ArrowLeft, ExternalLink, Eye, Calendar, Flag, Tag, Bot, UserCheck, MessageSquare
 } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { EditRequestButton } from "@/components/services/EditRequestButton";
+import { ServiceVotePanel } from "@/components/services/ServiceVotePanel";
+import { CommentSection } from "@/components/services/CommentSection";
 
 export const dynamic = "force-dynamic";
 
@@ -24,12 +26,10 @@ export async function generateStaticParams() {
     const services = await prisma.service.findMany({ select: { slug: true } });
     return services.map((s) => ({ slug: s.slug }));
   } catch {
-    // 빌드 시 DB 연결 실패해도 동적 렌더링으로 폴백
     return [];
   }
 }
 
-// 동적 메타데이터 생성 — 구글/네이버 검색 결과에 표시
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const service = await prisma.service.findUnique({ where: { slug } });
@@ -94,7 +94,25 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const logoSrc = service.logoUrl || service.ogImageUrl || service.faviconUrl;
 
-  // JSON-LD — 구글 리치 결과 (SoftwareApplication)
+  // 초기 댓글 데이터 서버사이드 fetch
+  const [initialComments, commentTotal] = await Promise.all([
+    prisma.comment.findMany({
+      where: { serviceId: service.id },
+      orderBy: { createdAt: "desc" },
+      take: 20,
+      select: {
+        id: true,
+        content: true,
+        authorName: true,
+        likes: true,
+        dislikes: true,
+        createdAt: true,
+      },
+    }),
+    prisma.comment.count({ where: { serviceId: service.id } }),
+  ]);
+
+  // JSON-LD
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -139,6 +157,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             목록으로 돌아가기
           </Link>
 
+          {/* 서비스 정보 카드 */}
           <div className="glass p-8">
             <div className="flex items-start gap-5 mb-6">
               <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0
@@ -153,7 +172,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 )}
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
+                <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <h1 className="text-2xl font-bold dark:text-white text-zinc-900">
                     {service.name}
                   </h1>
@@ -207,14 +226,16 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               </div>
             </div>
 
+            {/* 상세 설명 (잘림 없이 전체 표시) */}
             {service.description && (
               <div className="mb-6 pb-6 border-b dark:border-white/10 border-black/10">
-                <p className="dark:text-zinc-300 text-zinc-600 leading-relaxed">
+                <p className="dark:text-zinc-300 text-zinc-600 leading-relaxed whitespace-pre-wrap">
                   {service.description}
                 </p>
               </div>
             )}
 
+            {/* 통계 */}
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
                 <Eye className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
@@ -224,11 +245,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 <p className="text-xs dark:text-zinc-500 text-zinc-400">조회</p>
               </div>
               <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
-                <ThumbsUp className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
+                <MessageSquare className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
                 <p className="text-lg font-semibold dark:text-white text-zinc-900">
-                  {formatNumber(service.upvotes)}
+                  {commentTotal}
                 </p>
-                <p className="text-xs dark:text-zinc-500 text-zinc-400">추천</p>
+                <p className="text-xs dark:text-zinc-500 text-zinc-400">댓글</p>
               </div>
               <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
                 <Calendar className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
@@ -254,6 +275,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               </div>
             )}
 
+            {/* 추천 / 비추천 */}
+            <ServiceVotePanel
+              serviceId={service.id}
+              initialUpvotes={service.upvotes}
+              initialDownvotes={service.downvotes}
+            />
+
+            {/* 서비스 방문하기 CTA */}
             <a
               href={service.url}
               target="_blank"
@@ -278,6 +307,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               }}
             />
           </div>
+
+          {/* 커뮤니티 댓글 섹션 */}
+          <CommentSection
+            serviceId={service.id}
+            initialComments={JSON.parse(JSON.stringify(initialComments))}
+            initialTotal={commentTotal}
+          />
         </div>
       </main>
       <Footer />

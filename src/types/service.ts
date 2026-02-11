@@ -13,6 +13,7 @@ export interface Service {
   pricingModel: string;
   clicks: number;
   upvotes: number;
+  downvotes: number;
   score: number;
   isVerified: boolean;
   isKorean: boolean;
@@ -37,6 +38,16 @@ export interface ScrapedData {
   faviconUrl: string;
   suggestedCategory: string;
   suggestedTags: string[];
+}
+
+export interface Comment {
+  id: string;
+  serviceId: string;
+  content: string;
+  authorName: string;
+  likes: number;
+  dislikes: number;
+  createdAt: string;
 }
 
 export interface ServiceCreateInput {

@@ -11,6 +11,6 @@ export function calculateGravityScore(
   return (points - 1) / denominator;
 }
 
-export function calculatePoints(clicks: number, upvotes: number): number {
-  return clicks + upvotes * 2;
+export function calculatePoints(clicks: number, upvotes: number, downvotes: number = 0): number {
+  return clicks + upvotes * 2 - downvotes;
 }
