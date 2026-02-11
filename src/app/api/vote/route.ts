@@ -23,37 +23,58 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    try {
+    // 중복 투표 확인
+    const existingVote = await prisma.vote.findUnique({
+      where: {
+        serviceId_voterIp_type: { serviceId, voterIp: ip, type },
+      },
+    });
+
+    if (existingVote && type === "upvote") {
+      return NextResponse.json(
+        { error: "이미 추천한 서비스입니다", alreadyVoted: true },
+        { status: 409 }
+      );
+    }
+
+    // 클릭은 중복 기록만 안 하고 카운트는 올림 (조회수 성격)
+    if (!existingVote) {
       await prisma.vote.create({
         data: { serviceId, voterIp: ip, type },
       });
-    } catch {
-      // Duplicate vote - silently ignore
     }
 
     const updateData: Record<string, unknown> = {};
     if (type === "click") {
       updateData.clicks = { increment: 1 };
-    } else {
+    } else if (!existingVote) {
+      // upvote는 중복이 아닐 때만 카운트 증가
       updateData.upvotes = { increment: 1 };
     }
 
-    const updatedService = await prisma.service.update({
-      where: { id: serviceId },
-      data: updateData as never,
-    });
+    if (Object.keys(updateData).length > 0) {
+      const updatedService = await prisma.service.update({
+        where: { id: serviceId },
+        data: updateData as never,
+      });
 
-    const points = calculatePoints(updatedService.clicks, updatedService.upvotes);
-    const newScore = calculateGravityScore(points, updatedService.createdAt);
+      const points = calculatePoints(updatedService.clicks, updatedService.upvotes);
+      const newScore = calculateGravityScore(points, updatedService.createdAt);
 
-    await prisma.service.update({
-      where: { id: serviceId },
-      data: { score: newScore },
-    });
+      await prisma.service.update({
+        where: { id: serviceId },
+        data: { score: newScore },
+      });
+
+      return NextResponse.json({
+        success: true,
+        newCount: type === "click" ? updatedService.clicks : updatedService.upvotes,
+      });
+    }
 
     return NextResponse.json({
       success: true,
-      newCount: type === "click" ? updatedService.clicks : updatedService.upvotes,
+      newCount: service.upvotes,
     });
   } catch (error) {
     console.error("POST /api/vote error:", error);

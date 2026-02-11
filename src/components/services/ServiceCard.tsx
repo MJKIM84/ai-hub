@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink, ThumbsUp, Eye, Flag, Bot, UserCheck } from "lucide-react";
+import { useState } from "react";
+import { ExternalLink, ThumbsUp, Eye, Flag, Bot, UserCheck, Check } from "lucide-react";
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
@@ -11,6 +12,7 @@ interface ServiceCardProps {
 }
 
 export function ServiceCard({ service, onVote }: ServiceCardProps) {
+  const [voted, setVoted] = useState(false);
   const category = CATEGORIES.find((c) => c.id === service.category);
   const pricing = PRICING_MODELS.find((p) => p.id === service.pricingModel);
   const tags: string[] = (() => {
@@ -30,13 +32,20 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
 
   const handleVote = async (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (voted) return;
     try {
-      await fetch("/api/vote", {
+      const res = await fetch("/api/vote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ serviceId: service.id, type: "upvote" }),
       });
-      onVote?.(service.id);
+      const data = await res.json();
+      if (data.alreadyVoted || res.ok) {
+        setVoted(true);
+      }
+      if (res.ok && !data.alreadyVoted) {
+        onVote?.(service.id);
+      }
     } catch {}
   };
 
@@ -123,15 +132,16 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
         <div className="flex items-center gap-2">
           <button
             onClick={handleVote}
-            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
-              dark:bg-white/5 bg-black/5
-              dark:hover:bg-neon-blue/20 hover:bg-neon-blue/10
-              dark:text-zinc-400 text-zinc-500
-              dark:hover:text-neon-blue hover:text-neon-blue
-              transition-all duration-200"
+            disabled={voted}
+            className={`flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-medium
+              transition-all duration-200
+              ${voted
+                ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-neon-blue cursor-default"
+                : "dark:bg-white/5 bg-black/5 dark:hover:bg-neon-blue/20 hover:bg-neon-blue/10 dark:text-zinc-400 text-zinc-500 dark:hover:text-neon-blue hover:text-neon-blue"
+              }`}
           >
-            <ThumbsUp className="w-3 h-3" />
-            추천
+            {voted ? <Check className="w-3 h-3" /> : <ThumbsUp className="w-3 h-3" />}
+            {voted ? "추천됨" : "추천"}
           </button>
           <ExternalLink className="w-4 h-4 dark:text-zinc-500 text-zinc-400
             group-hover:text-neon-blue transition-colors" />
