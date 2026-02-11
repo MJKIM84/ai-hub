@@ -10,6 +10,8 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const searchParams = useSearchParams();
   const hasScrolled = useRef(false);
   const searchWrapperRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const isTypingRef = useRef(false);
 
   const updateSearch = useCallback(
     (value: string) => {
@@ -20,7 +22,8 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
         params.delete("q");
       }
       params.delete("page");
-      router.push(`/?${params.toString()}`);
+      // replace + scroll:false로 타이핑 중 스크롤 위치 유지
+      router.replace(`/?${params.toString()}`, { scroll: false });
     },
     [router, searchParams]
   );
@@ -31,6 +34,14 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     }, 300);
     return () => clearTimeout(timer);
   }, [query, updateSearch]);
+
+  // 서버 데이터가 바뀌어도 포커스 + 스크롤 위치 복원
+  useEffect(() => {
+    if (isTypingRef.current && inputRef.current) {
+      // 타이핑 중이면 포커스를 다시 잡아줌
+      inputRef.current.focus();
+    }
+  });
 
   const handleFocus = () => {
     if (hasScrolled.current) return;
@@ -50,10 +61,15 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
         <div className="glass flex items-center px-5 py-4">
           <Search className="w-5 h-5 dark:text-zinc-400 text-zinc-500 shrink-0" />
           <input
+            ref={inputRef}
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              isTypingRef.current = true;
+              setQuery(e.target.value);
+            }}
             onFocus={handleFocus}
+            onBlur={() => { isTypingRef.current = false; }}
             placeholder="어떤 AI 도구를 찾고 계신가요?"
             className="w-full ml-3 bg-transparent outline-none text-base
               dark:text-white text-zinc-900

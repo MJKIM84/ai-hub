@@ -31,7 +31,7 @@ export function CategoryFilter({ activeCategory, categoryCounts }: CategoryFilte
       params.set("category", categoryId);
     }
     params.delete("page");
-    router.push(`/?${params.toString()}`);
+    router.replace(`/?${params.toString()}`, { scroll: false });
   };
 
   const current = activeCategory || "all";

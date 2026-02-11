@@ -22,7 +22,7 @@ export function SortSelector({ currentSort }: { currentSort?: string }) {
       params.set("sort", sortId);
     }
     params.delete("page");
-    router.push(`/?${params.toString()}`);
+    router.replace(`/?${params.toString()}`, { scroll: false });
   };
 
   const active = currentSort || "gravity";
