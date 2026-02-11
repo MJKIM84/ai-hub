@@ -51,6 +51,8 @@ export interface Comment {
   parentId: string | null;
   replyToAuthorName?: string; // 답글 대상 닉네임
   replyCount?: number;
+  reports: number;
+  isHidden: boolean;
   createdAt: string;
 }
 

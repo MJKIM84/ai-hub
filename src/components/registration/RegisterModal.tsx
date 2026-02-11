@@ -107,7 +107,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
       <div className="relative w-full max-w-lg glass dark:bg-zinc-900/90 bg-white/95 rounded-2xl overflow-hidden">
         <div className="flex items-center justify-between p-5 border-b dark:border-white/10 border-black/10">

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import {
   MessageSquare, ThumbsUp, ThumbsDown, Send, Loader2,
   ChevronDown, Pencil, Trash2, X, Check,
-  Lock, Reply,
+  Lock, Reply, AlertTriangle, EyeOff,
 } from "lucide-react";
 import { formatRelativeTime } from "@/lib/utils";
 import type { Comment } from "@/types/service";
@@ -181,9 +181,10 @@ interface CommentItemProps {
   onDeleted: (commentId: string) => void;
   onUpdated: (comment: Comment) => void;
   onReply: (commentId: string, authorName: string) => void;
+  onHidden: (commentId: string) => void;
 }
 
-function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: CommentItemProps) {
+function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidden }: CommentItemProps) {
   // Vote state
   const [likes, setLikes] = useState(comment.likes);
   const [dislikes, setDislikes] = useState(comment.dislikes);
@@ -200,6 +201,11 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
   const [deletePassword, setDeletePassword] = useState("");
   const [deleteError, setDeleteError] = useState("");
   const [deleteLoading, setDeleteLoading] = useState(false);
+
+  // Report state
+  const [reported, setReported] = useState(false);
+  const [reportLoading, setReportLoading] = useState(false);
+  const [showReportTooltip, setShowReportTooltip] = useState(false);
 
   const handleVote = async (type: "like" | "dislike") => {
     try {
@@ -282,7 +288,48 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
     }
   };
 
+  const handleReport = async () => {
+    if (reported || reportLoading) return;
+    setReportLoading(true);
+    try {
+      const res = await fetch("/api/comments/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ commentId: comment.id }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setReported(true);
+        if (data.isHidden) {
+          onHidden(comment.id);
+        }
+      } else if (res.status === 409) {
+        // 이미 신고함
+        setReported(true);
+      }
+    } catch {} finally {
+      setReportLoading(false);
+    }
+  };
+
   const isReply = !!comment.parentId;
+
+  // 숨김 처리된 댓글
+  if (comment.isHidden) {
+    return (
+      <div className={isReply ? "ml-8" : ""}>
+        <div className={`rounded-xl p-4 ${isReply
+          ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
+          : "dark:bg-white/5 bg-black/5"}`}
+        >
+          <div className="flex items-center gap-2 text-sm dark:text-zinc-500 text-zinc-400">
+            <EyeOff className="w-4 h-4" />
+            <span>신고가 누적되어 숨김 처리된 댓글입니다.</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={isReply ? "ml-8" : ""}>
@@ -403,7 +450,7 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
         </div>
       )}
 
-      {/* Actions: vote, reply, edit, delete */}
+      {/* Actions: vote, reply, edit, delete, report */}
       {!editing && !showDeleteConfirm && (
         <div className="flex items-center gap-3 flex-wrap">
           <button
@@ -455,6 +502,46 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply }: Comm
             <Trash2 className="w-3 h-3" />
             삭제
           </button>
+
+          {/* 신고 버튼 with 툴팁 */}
+          <div
+            className="relative"
+            onMouseEnter={() => setShowReportTooltip(true)}
+            onMouseLeave={() => setShowReportTooltip(false)}
+          >
+            <button
+              onClick={handleReport}
+              disabled={reported || reportLoading}
+              className={`flex items-center gap-1 text-xs transition-colors
+                ${reported
+                  ? "dark:text-orange-400 text-orange-500 cursor-default"
+                  : "dark:text-zinc-500 text-zinc-400 dark:hover:text-orange-400 hover:text-orange-500"
+                } disabled:cursor-default`}
+            >
+              {reportLoading ? (
+                <Loader2 className="w-3 h-3 animate-spin" />
+              ) : (
+                <AlertTriangle className={`w-3 h-3 ${reported ? "fill-current" : ""}`} />
+              )}
+              {reported ? "신고됨" : "신고"}
+            </button>
+
+            {/* Tooltip */}
+            {showReportTooltip && (
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-xl
+                dark:bg-zinc-800 bg-white shadow-lg border dark:border-white/10 border-black/10
+                text-xs dark:text-zinc-300 text-zinc-600 z-50 pointer-events-none">
+                <p className="font-medium dark:text-white text-zinc-900 mb-1.5">신고 안내</p>
+                <ul className="space-y-1 leading-relaxed">
+                  <li>- 신고가 5건 누적되면 자동 숨김</li>
+                  <li>- 관리자 확인 후 복구 또는 삭제</li>
+                  <li>- IP당 1회만 신고 가능</li>
+                </ul>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px
+                  border-4 border-transparent dark:border-t-zinc-800 border-t-white" />
+              </div>
+            )}
+          </div>
         </div>
       )}
       </div>
@@ -510,6 +597,12 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
     }, 100);
   };
 
+  const handleHidden = (commentId: string) => {
+    setComments((prev) => prev.map((c) =>
+      c.id === commentId ? { ...c, isHidden: true } : c
+    ));
+  };
+
   return (
     <div className="mt-8">
       <h2 className="flex items-center gap-2 text-lg font-bold dark:text-white text-zinc-900 mb-6">
@@ -540,6 +633,7 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
               onDeleted={handleDeleted}
               onUpdated={handleUpdated}
               onReply={handleReply}
+              onHidden={handleHidden}
             />
           ))}
 

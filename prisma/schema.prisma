@@ -93,7 +93,11 @@ model Comment {
 
   createdAt    DateTime @default(now())
 
-  commentVotes CommentVote[]
+  reports      Int      @default(0)
+  isHidden     Boolean  @default(false)
+
+  commentVotes   CommentVote[]
+  commentReports CommentReport[]
 
   @@index([serviceId])
   @@index([parentId])
@@ -180,6 +184,35 @@ model EditRequest {
 
   @@index([serviceId])
   @@index([status])
+}
+
+model CommentReport {
+  id         String   @id @default(cuid())
+  commentId  String
+  comment    Comment  @relation(fields: [commentId], references: [id], onDelete: Cascade)
+  reporterIp String
+  reason     String?  // optional reason
+
+  createdAt  DateTime @default(now())
+
+  @@unique([commentId, reporterIp])
+  @@index([commentId])
+}
+
+// ─── 피드백 시스템 ───
+
+model Feedback {
+  id        String   @id @default(cuid())
+  type      String   // "partnership" | "feedback"
+  email     String?
+  message   String
+  senderIp  String
+  status    String   @default("pending") // "pending" | "reviewed"
+
+  createdAt DateTime @default(now())
+
+  @@index([status])
+  @@index([createdAt])
 }
 
 model CrawlRun {

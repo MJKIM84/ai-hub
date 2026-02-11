@@ -56,6 +56,11 @@ export const commentVoteSchema = z.object({
   type: z.enum(['like', 'dislike']),
 });
 
+export const commentReportSchema = z.object({
+  commentId: z.string().min(1),
+  reason: z.string().max(200).optional(),
+});
+
 export const serviceQuerySchema = z.object({
   q: z.string().optional(),
   category: z.string().optional(),

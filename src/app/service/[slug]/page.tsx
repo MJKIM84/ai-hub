@@ -109,6 +109,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         dislikes: true,
         parentId: true,
         parent: { select: { authorName: true } },
+        reports: true,
+        isHidden: true,
         createdAt: true,
         _count: { select: { replies: true } },
       },
@@ -126,6 +128,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     parentId: c.parentId,
     replyToAuthorName: c.parent?.authorName || undefined,
     replyCount: c._count.replies,
+    reports: c.reports,
+    isHidden: c.isHidden,
     createdAt: c.createdAt,
   }));
 

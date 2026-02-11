@@ -36,6 +36,8 @@ export async function GET(request: NextRequest) {
           dislikes: true,
           parentId: true,
           parent: { select: { authorName: true } },
+          reports: true,
+          isHidden: true,
           createdAt: true,
           _count: { select: { replies: true } },
         },
@@ -54,6 +56,8 @@ export async function GET(request: NextRequest) {
       parentId: item.parentId,
       replyToAuthorName: item.parent?.authorName || undefined,
       replyCount: item._count.replies,
+      reports: item.reports,
+      isHidden: item.isHidden,
       createdAt: item.createdAt,
     }));
 
@@ -156,6 +160,8 @@ export async function POST(request: NextRequest) {
       parentId: comment.parentId,
       replyToAuthorName,
       replyCount: 0,
+      reports: 0,
+      isHidden: false,
       createdAt: comment.createdAt,
     }, { status: 201 });
   } catch (error) {
@@ -209,6 +215,8 @@ export async function PATCH(request: NextRequest) {
         dislikes: true,
         parentId: true,
         parent: { select: { authorName: true } },
+        reports: true,
+        isHidden: true,
         createdAt: true,
         _count: { select: { replies: true } },
       },
@@ -224,6 +232,8 @@ export async function PATCH(request: NextRequest) {
       parentId: updated.parentId,
       replyToAuthorName: updated.parent?.authorName || undefined,
       replyCount: updated._count.replies,
+      reports: updated.reports,
+      isHidden: updated.isHidden,
       createdAt: updated.createdAt,
     });
   } catch (error) {
