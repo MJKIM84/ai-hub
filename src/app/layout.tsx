@@ -65,23 +65,13 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // 네이버 웹마스터 도구 인증 (실제 인증 코드로 교체 필요)
-    // other: { "naver-site-verification": "YOUR_NAVER_CODE" },
-    // 구글 서치 콘솔 인증 (실제 인증 코드로 교체 필요)
-    // google: "YOUR_GOOGLE_CODE",
+    ...(process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
+      ? { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION }
+      : {}),
+    ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION
+      ? { other: { "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION } }
+      : {}),
   },
-  ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION || process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
-    ? {
-        other: {
-          ...(process.env.NEXT_PUBLIC_NAVER_VERIFICATION
-            ? { "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION }
-            : {}),
-          ...(process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
-            ? { "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION }
-            : {}),
-        },
-      }
-    : {}),
 };
 
 export default function RootLayout({
@@ -89,7 +79,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // JSON-LD 구조화 데이터 — 웹사이트 + 검색 액션
+  // JSON-LD 구조화 데이터 — 웹사이트 + 검색 액션 + 조직 + FAQ
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -98,6 +88,7 @@ export default function RootLayout({
         "@id": `${SITE_URL}/#website`,
         url: SITE_URL,
         name: SITE_NAME,
+        alternateName: ["FindMyAI", "파인드마이AI", "find my ai"],
         description: SITE_DESCRIPTION,
         inLanguage: "ko-KR",
         potentialAction: {
@@ -118,6 +109,45 @@ export default function RootLayout({
           "@type": "ImageObject",
           url: `${SITE_URL}/og-image.png`,
         },
+        sameAs: [],
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": `${SITE_URL}/#collection`,
+        url: SITE_URL,
+        name: "AI 도구 디렉토리",
+        description: "ChatGPT, Claude, Midjourney 등 AI 도구를 카테고리별로 탐색하세요.",
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        inLanguage: "ko-KR",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "FindMyAI는 무엇인가요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "FindMyAI는 ChatGPT, Claude, Midjourney 등 수백 개의 AI 도구를 카테고리별로 탐색하고 비교할 수 있는 AI 디렉토리 서비스입니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "AI 서비스를 무료로 등록할 수 있나요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "네, 개인 개발자도 URL 하나만 입력하면 1분 안에 무료로 AI 서비스를 등록하고 홍보할 수 있습니다.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "어떤 카테고리의 AI 도구를 찾을 수 있나요?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "텍스트 생성, 이미지 생성, 코드 어시스턴트, 음성/스피치, 번역, 교육, 데이터 분석, 영상 편집 등 다양한 카테고리를 제공합니다.",
+            },
+          },
+        ],
       },
     ],
   };
@@ -125,6 +155,12 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="FindMyAI - AI 도구 피드"
+          href={`${SITE_URL}/feed.xml`}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -135,31 +135,58 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     createdAt: c.createdAt,
   }));
 
-  // JSON-LD
+  // JSON-LD — SoftwareApplication + BreadcrumbList
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: service.name,
-    description: service.description || service.tagline || "",
-    url: service.url,
-    applicationCategory: "AI",
-    operatingSystem: "Web",
-    ...(logoSrc && { image: logoSrc }),
-    ...(pricing && {
-      offers: {
-        "@type": "Offer",
-        price: pricing.id === "free" ? "0" : undefined,
-        priceCurrency: "KRW",
-        availability: "https://schema.org/InStock",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: service.name,
+        description: service.description || service.tagline || "",
+        url: service.url,
+        applicationCategory: "AI",
+        operatingSystem: "Web",
+        ...(logoSrc && { image: logoSrc }),
+        ...(pricing && {
+          offers: {
+            "@type": "Offer",
+            price: pricing.id === "free" ? "0" : undefined,
+            priceCurrency: "KRW",
+            availability: "https://schema.org/InStock",
+          },
+        }),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: Math.min(5, Math.max(1, (service.upvotes / Math.max(service.clicks, 1)) * 5 + 2.5)).toFixed(1),
+          ratingCount: Math.max(1, service.upvotes + service.clicks),
+          bestRating: "5",
+          worstRating: "1",
+        },
       },
-    }),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: Math.min(5, Math.max(1, (service.upvotes / Math.max(service.clicks, 1)) * 5 + 2.5)).toFixed(1),
-      ratingCount: service.upvotes + service.clicks,
-      bestRating: "5",
-      worstRating: "1",
-    },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "홈",
+            item: SITE_URL,
+          },
+          ...(category ? [{
+            "@type": "ListItem",
+            position: 2,
+            name: category.nameKo,
+            item: `${SITE_URL}/?category=${service.category}`,
+          }] : []),
+          {
+            "@type": "ListItem",
+            position: category ? 3 : 2,
+            name: service.name,
+            item: `${SITE_URL}/service/${slug}`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

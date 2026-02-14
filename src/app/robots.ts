@@ -17,6 +17,12 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin"],
       },
       {
+        // 네이버 검색봇 (신규)
+        userAgent: "Yeti-Image",
+        allow: "/",
+        disallow: ["/api/", "/admin"],
+      },
+      {
         // 구글 검색봇
         userAgent: "Googlebot",
         allow: "/",

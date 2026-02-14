@@ -38,13 +38,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [
+  // 정적 페이지들
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1.0,
     },
+    {
+      url: `${SITE_URL}/policy`,
+      lastModified: new Date("2025-01-01"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${SITE_URL}/status`,
+      lastModified: new Date(),
+      changeFrequency: "always",
+      priority: 0.2,
+    },
+  ];
+
+  return [
+    ...staticPages,
     ...categoryUrls,
     ...serviceUrls,
   ];
