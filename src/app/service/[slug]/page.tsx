@@ -15,7 +15,7 @@ import { CommentSection } from "@/components/services/CommentSection";
 
 export const dynamic = "force-dynamic";
 
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -39,11 +39,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const category = CATEGORIES.find((c) => c.id === service.category);
-  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | AI HUB`;
+  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | FindMyAI`;
   const description =
     service.description ||
     service.tagline ||
-    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. AI HUB에서 자세한 정보를 확인하세요.`;
+    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. FindMyAI에서 자세한 정보를 확인하세요.`;
   const ogImage = service.ogImageUrl || service.logoUrl || service.faviconUrl;
 
   return {
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `${SITE_URL}/service/${slug}`,
       type: "article",
       locale: "ko_KR",
-      siteName: "AI HUB",
+      siteName: "FindMyAI",
       ...(ogImage && {
         images: [{ url: ogImage, width: 1200, height: 630, alt: service.name }],
       }),

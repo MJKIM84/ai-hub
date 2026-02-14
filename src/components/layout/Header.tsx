@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, Plus } from "lucide-react";
+import { Search, Plus } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { RegisterModal } from "../registration/RegisterModal";
 
@@ -15,10 +15,10 @@ export function Header() {
           <div className="flex items-center justify-between h-16">
             <a href="/" className="flex items-center gap-2 group">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-white" />
+                <Search className="w-4 h-4 text-white" />
               </div>
               <span className="text-lg font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
-                AI HUB
+                FindMyAI
               </span>
             </a>
 

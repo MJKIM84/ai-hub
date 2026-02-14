@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
 
 export const dynamic = "force-dynamic";
 

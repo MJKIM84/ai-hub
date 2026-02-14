@@ -5,8 +5,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "운영정책 | AI HUB",
-  description: "AI HUB 서비스 이용 제한 사유 및 댓글 운영정책 안내",
+  title: "운영정책",
+  description: "FindMyAI 서비스 이용 제한 사유 및 댓글 운영정책 안내",
 };
 
 export default function PolicyPage() {

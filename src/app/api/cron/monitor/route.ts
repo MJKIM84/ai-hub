@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
 const MAX_RETRIES = 2;
 const HEALTH_TIMEOUT = 15000; // 15초
 
@@ -70,7 +70,7 @@ async function sendNotification(
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          content: `${emoji} **AI HUB 모니터링**\n${message}\n\n🕐 ${new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })}`,
+          content: `${emoji} **FindMyAI 모니터링**\n${message}\n\n🕐 ${new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })}`,
         }),
         signal: AbortSignal.timeout(10000),
       });
@@ -86,7 +86,7 @@ async function sendNotification(
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          text: `${isRecovery ? "✅" : "🚨"} AI HUB: ${message}`,
+          text: `${isRecovery ? "✅" : "🚨"} FindMyAI: ${message}`,
         }),
         signal: AbortSignal.timeout(10000),
       });

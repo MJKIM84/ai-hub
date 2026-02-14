@@ -2,27 +2,27 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
-const SITE_NAME = "AI HUB";
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
+const SITE_NAME = "FindMyAI";
 const SITE_DESCRIPTION =
-  "AI 서비스를 한눈에 발견하고 비교하세요. ChatGPT, Claude, Midjourney 등 수백 개의 AI 도구를 카테고리별로 탐색하고, 개인 개발자도 무료로 AI 서비스를 등록·홍보할 수 있는 허브 포털입니다.";
+  "나에게 맞는 AI를 찾아보세요. ChatGPT, Claude, Midjourney 등 수백 개의 AI 도구를 카테고리별로 탐색하고, 개인 개발자도 무료로 AI 서비스를 등록·홍보할 수 있는 AI 디렉토리입니다.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI HUB - AI 서비스 허브 포털 | AI 도구 비교·발견·등록",
-    template: "%s | AI HUB",
+    default: "FindMyAI - 나에게 맞는 AI를 찾아보세요 | AI 도구 비교·발견·등록",
+    template: "%s | FindMyAI",
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "AI", "인공지능", "AI 도구", "AI 서비스", "AI 허브", "AI 디렉토리",
+    "AI", "인공지능", "AI 도구", "AI 서비스", "FindMyAI", "AI 디렉토리",
     "ChatGPT", "Claude", "Midjourney", "AI 비교", "AI 추천",
     "개인개발", "사이드 프로젝트", "AI 홍보", "무료 등록",
-    "인공지능 서비스 모음", "AI tool directory", "AI service hub",
+    "인공지능 서비스 모음", "AI tool directory", "find my AI",
   ],
-  authors: [{ name: "AI HUB" }],
-  creator: "AI HUB",
-  publisher: "AI HUB",
+  authors: [{ name: "FindMyAI" }],
+  creator: "FindMyAI",
+  publisher: "FindMyAI",
   formatDetection: {
     email: false,
     address: false,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "AI HUB - AI 서비스 허브 포털",
+    title: "FindMyAI - 나에게 맞는 AI를 찾아보세요",
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI HUB - AI 서비스 허브 포털",
+        alt: "FindMyAI - 나에게 맞는 AI를 찾아보세요",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI HUB - AI 서비스 허브 포털",
+    title: "FindMyAI - 나에게 맞는 AI를 찾아보세요",
     description: SITE_DESCRIPTION,
     images: ["/og-image.png"],
   },
