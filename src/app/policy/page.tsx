@@ -5,8 +5,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "운영정책 | AI HUB",
-  description: "AI HUB 서비스 이용 제한 사유 및 댓글 운영정책 안내",
+  title: "운영정책",
+  description: "pipeAI 서비스 이용 제한 사유 및 댓글 운영정책 안내",
 };
 
 export default function PolicyPage() {
@@ -20,7 +20,7 @@ export default function PolicyPage() {
             className="inline-flex items-center gap-2 text-sm dark:text-zinc-400 text-zinc-500 hover:text-neon-blue transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            목록으로 돌아가기
+            파이프라인으로 돌아가기
           </Link>
 
           <div className="glass p-8">

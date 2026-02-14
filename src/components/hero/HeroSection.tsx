@@ -1,17 +1,17 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { Sparkles, Rocket, ArrowDown } from "lucide-react";
+import { Workflow, Rocket, ArrowDown } from "lucide-react";
 
 const HERO_SLIDES = [
   {
-    badge: "AI 서비스를 한곳에서 발견하세요",
-    badgeIcon: "sparkles" as const,
-    titleTop: "나에게 맞는",
-    titleBottom: "AI 도구를 발견하세요",
+    badge: "AI를 파이프라인으로 연결하세요",
+    badgeIcon: "workflow" as const,
+    titleTop: "나만의",
+    titleBottom: "AI 워크플로를 설계하세요",
     gradient: "from-neon-blue via-neon-purple to-neon-pink",
-    desc1: "수만 개의 AI 서비스 중에서 당신에게 딱 맞는 도구를 찾아보세요.",
-    desc2: "카테고리별로 비교하고, 커뮤니티 추천을 확인하세요.",
+    desc1: "수백 개의 AI 서비스를 탐색하고, 파이프라인으로 조합하세요.",
+    desc2: "업무에 딱 맞는 AI 워크플로를 만들어보세요.",
   },
   {
     badge: "내가 만든 AI 서비스를 무료로 홍보하세요",
@@ -49,7 +49,21 @@ export function HeroSection() {
 
   return (
     <section className="relative pt-32 pb-12 px-4 hero-gradient overflow-hidden">
+      {/* Pipeline network lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <svg className="absolute inset-0 w-full h-full opacity-[0.06] dark:opacity-[0.08]" xmlns="http://www.w3.org/2000/svg">
+          <line x1="10%" y1="20%" x2="40%" y2="50%" stroke="currentColor" strokeWidth="1" className="text-neon-blue" />
+          <line x1="40%" y1="50%" x2="70%" y2="30%" stroke="currentColor" strokeWidth="1" className="text-neon-blue" />
+          <line x1="70%" y1="30%" x2="90%" y2="60%" stroke="currentColor" strokeWidth="1" className="text-neon-purple" />
+          <line x1="30%" y1="70%" x2="60%" y2="80%" stroke="currentColor" strokeWidth="1" className="text-neon-purple" />
+          <line x1="20%" y1="40%" x2="50%" y2="20%" stroke="currentColor" strokeWidth="1" className="text-neon-blue" />
+          <circle cx="10%" cy="20%" r="3" className="fill-neon-blue" />
+          <circle cx="40%" cy="50%" r="4" className="fill-neon-blue" />
+          <circle cx="70%" cy="30%" r="3" className="fill-neon-purple" />
+          <circle cx="90%" cy="60%" r="3" className="fill-neon-purple" />
+          <circle cx="30%" cy="70%" r="3" className="fill-neon-purple" />
+          <circle cx="60%" cy="80%" r="3" className="fill-neon-blue" />
+        </svg>
         <div className="absolute top-20 left-1/4 w-72 h-72 bg-neon-blue/10 rounded-full blur-3xl animate-float" />
         <div className="absolute top-40 right-1/4 w-96 h-96 bg-neon-purple/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
       </div>
@@ -65,8 +79,8 @@ export function HeroSection() {
             dark:bg-white/5 bg-black/5
             dark:border-white/10 border-black/10 border
             text-sm mb-6">
-            {slide.badgeIcon === "sparkles" ? (
-              <Sparkles className="w-4 h-4 text-neon-blue" />
+            {slide.badgeIcon === "workflow" ? (
+              <Workflow className="w-4 h-4 text-neon-blue" />
             ) : (
               <Rocket className="w-4 h-4 text-neon-orange" />
             )}

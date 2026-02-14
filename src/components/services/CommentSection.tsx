@@ -317,11 +317,10 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   // 삭제된 댓글
   if (comment.isDeleted) {
     return (
-      <div className={isReply ? "ml-8" : ""}>
-        <div className={`rounded-xl p-4 ${isReply
-          ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
-          : "dark:bg-white/5 bg-black/5"}`}
-        >
+      <div className={`relative ${isReply ? "ml-6" : ""}`}>
+        <div className={`pipe-timeline-dot ${isReply ? "pipe-timeline-dot-reply" : ""} pipe-timeline-dot-muted`} />
+        {isReply && <div className="pipe-timeline-branch" />}
+        <div className="rounded-xl p-4 dark:bg-white/[0.02] bg-black/[0.02]">
           <div className="flex items-center gap-2 text-sm dark:text-zinc-500 text-zinc-400">
             <Trash2 className="w-4 h-4" />
             <span>삭제된 댓글입니다.</span>
@@ -334,11 +333,10 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   // 숨김 처리된 댓글
   if (comment.isHidden) {
     return (
-      <div className={isReply ? "ml-8" : ""}>
-        <div className={`rounded-xl p-4 ${isReply
-          ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
-          : "dark:bg-white/5 bg-black/5"}`}
-        >
+      <div className={`relative ${isReply ? "ml-6" : ""}`}>
+        <div className={`pipe-timeline-dot ${isReply ? "pipe-timeline-dot-reply" : ""} pipe-timeline-dot-muted`} />
+        {isReply && <div className="pipe-timeline-branch" />}
+        <div className="rounded-xl p-4 dark:bg-white/[0.02] bg-black/[0.02]">
           <div className="flex items-center gap-2 text-sm dark:text-zinc-500 text-zinc-400">
             <EyeOff className="w-4 h-4" />
             <span>신고가 누적되어 숨김 처리된 댓글입니다.</span>
@@ -349,9 +347,11 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   }
 
   return (
-    <div className={isReply ? "ml-8" : ""}>
+    <div className={`relative ${isReply ? "ml-6" : ""}`}>
+      <div className={`pipe-timeline-dot ${isReply ? "pipe-timeline-dot-reply" : ""}`} />
+      {isReply && <div className="pipe-timeline-branch" />}
       <div className={`rounded-xl p-4 ${isReply
-        ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-neon-blue/20 border-blue-200"
+        ? "dark:bg-white/[0.02] bg-black/[0.02]"
         : "dark:bg-white/5 bg-black/5"}`}
       >
         {/* Reply indicator — @닉네임 */}
@@ -636,7 +636,7 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
         <CommentForm serviceId={serviceId} onSubmitted={handleNewComment} />
       )}
 
-      {/* Comment list — flat, all at the same level */}
+      {/* Comment list — timeline pipe layout */}
       {comments.length === 0 ? (
         <div className="text-center py-12">
           <MessageSquare className="w-8 h-8 mx-auto mb-3 dark:text-zinc-600 text-zinc-300" />
@@ -645,53 +645,60 @@ export function CommentSection({ serviceId, initialComments, initialTotal }: Com
           </p>
         </div>
       ) : (
-        <div className="space-y-3">
-          {comments.map((comment) => (
-            <CommentItem
-              key={comment.id}
-              comment={comment}
-              serviceId={serviceId}
-              onDeleted={handleDeleted}
-              onUpdated={handleUpdated}
-              onReply={handleReply}
-              onHidden={handleHidden}
-            />
-          ))}
+        <div className="pipe-timeline">
+          <div className="pipe-timeline-line" />
+          <div className="space-y-3">
+            {comments.map((comment) => (
+              <CommentItem
+                key={comment.id}
+                comment={comment}
+                serviceId={serviceId}
+                onDeleted={handleDeleted}
+                onUpdated={handleUpdated}
+                onReply={handleReply}
+                onHidden={handleHidden}
+              />
+            ))}
 
-          {hasMore && (
-            <div className="flex justify-center pt-4">
-              <button
-                onClick={handleLoadMore}
-                disabled={loadingMore}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium
-                  dark:bg-white/5 bg-black/5
-                  dark:hover:bg-white/10 hover:bg-black/10
-                  dark:text-zinc-400 text-zinc-500
-                  disabled:opacity-50 transition-all duration-200"
-              >
-                {loadingMore ? (
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                ) : (
-                  <ChevronDown className="w-4 h-4" />
-                )}
-                {loadingMore ? "불러오는 중..." : "더보기"}
-              </button>
-            </div>
-          )}
+            {hasMore && (
+              <div className="flex justify-center pt-4">
+                <button
+                  onClick={handleLoadMore}
+                  disabled={loadingMore}
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium
+                    dark:bg-white/5 bg-black/5
+                    dark:hover:bg-white/10 hover:bg-black/10
+                    dark:text-zinc-400 text-zinc-500
+                    disabled:opacity-50 transition-all duration-200"
+                >
+                  {loadingMore ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <ChevronDown className="w-4 h-4" />
+                  )}
+                  {loadingMore ? "불러오는 중..." : "더보기"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       )}
 
-      {/* Reply form — appears at the bottom when replying */}
+      {/* Reply form — appears at the bottom with pipe dot */}
       {replyTo && (
-        <div id="comment-reply-form" className="mt-4">
-          <CommentForm
-            serviceId={serviceId}
-            parentId={replyTo.commentId}
-            replyToName={replyTo.authorName}
-            onSubmitted={handleNewComment}
-            onCancel={() => setReplyTo(null)}
-            compact
-          />
+        <div id="comment-reply-form" className="pipe-timeline mt-4">
+          <div className="pipe-timeline-line" style={{ height: '100%' }} />
+          <div className="relative">
+            <div className="pipe-timeline-dot pipe-timeline-dot-form" />
+            <CommentForm
+              serviceId={serviceId}
+              parentId={replyTo.commentId}
+              replyToName={replyTo.authorName}
+              onSubmitted={handleNewComment}
+              onCancel={() => setReplyTo(null)}
+              compact
+            />
+          </div>
         </div>
       )}
     </div>

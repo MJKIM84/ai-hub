@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X, Globe, Loader2, Check, ChevronRight, Sparkles, AlertTriangle } from "lucide-react";
+import { X, Globe, Loader2, Check, ChevronRight, Workflow, AlertTriangle } from "lucide-react";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 
 interface RegisterModalProps {
@@ -159,7 +159,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
                 {loading ? (
                   <Loader2 className="w-4 h-4 animate-spin" />
                 ) : (
-                  <Sparkles className="w-4 h-4" />
+                  <Workflow className="w-4 h-4" />
                 )}
                 {loading ? "분석 중..." : "URL 분석하기"}
               </button>

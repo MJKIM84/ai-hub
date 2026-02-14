@@ -70,7 +70,7 @@ async function sendNotification(
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          content: `${emoji} **AI HUB 모니터링**\n${message}\n\n🕐 ${new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })}`,
+          content: `${emoji} **pipeAI 모니터링**\n${message}\n\n🕐 ${new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })}`,
         }),
         signal: AbortSignal.timeout(10000),
       });
@@ -86,7 +86,7 @@ async function sendNotification(
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          text: `${isRecovery ? "✅" : "🚨"} AI HUB: ${message}`,
+          text: `${isRecovery ? "✅" : "🚨"} pipeAI: ${message}`,
         }),
         signal: AbortSignal.timeout(10000),
       });

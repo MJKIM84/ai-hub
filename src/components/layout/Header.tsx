@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, Plus } from "lucide-react";
+import { GitBranch, Plus, Workflow } from "lucide-react";
+import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 import { RegisterModal } from "../registration/RegisterModal";
 
@@ -13,14 +14,25 @@ export function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 glass">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <a href="/" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-white" />
-              </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
-                AI HUB
-              </span>
-            </a>
+            <div className="flex items-center gap-6">
+              <a href="/" className="flex items-center gap-2 group">
+                <div className="w-8 h-8 rounded-md bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center">
+                  <GitBranch className="w-4 h-4 text-white" />
+                </div>
+                <span className="text-lg font-bold">
+                  <span className="dark:text-zinc-300 text-zinc-600">pipe</span>
+                  <span className="bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">AI</span>
+                </span>
+              </a>
+              <Link
+                href="/workflow"
+                className="hidden sm:flex items-center gap-1.5 text-sm font-medium
+                  dark:text-zinc-400 text-zinc-500 hover:dark:text-neon-blue hover:text-neon-blue transition-colors"
+              >
+                <Workflow className="w-4 h-4" />
+                워크플로
+              </Link>
+            </div>
 
             <div className="flex items-center gap-3">
               <button

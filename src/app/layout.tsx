@@ -3,26 +3,26 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://aihub.example.com";
-const SITE_NAME = "AI HUB";
+const SITE_NAME = "pipeAI";
 const SITE_DESCRIPTION =
-  "AI 서비스를 한눈에 발견하고 비교하세요. ChatGPT, Claude, Midjourney 등 수백 개의 AI 도구를 카테고리별로 탐색하고, 개인 개발자도 무료로 AI 서비스를 등록·홍보할 수 있는 허브 포털입니다.";
+  "AI 서비스를 파이프라인으로 연결하세요. 수백 개의 AI 도구를 탐색하고, 나만의 AI 워크플로를 설계할 수 있는 플랫폼입니다. 개인 개발자도 무료로 AI 서비스를 등록·홍보할 수 있습니다.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI HUB - AI 서비스 허브 포털 | AI 도구 비교·발견·등록",
-    template: "%s | AI HUB",
+    default: "pipeAI - AI 파이프라인 플랫폼 | AI 워크플로·비교·발견",
+    template: "%s | pipeAI",
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "AI", "인공지능", "AI 도구", "AI 서비스", "AI 허브", "AI 디렉토리",
+    "AI", "인공지능", "AI 도구", "AI 서비스", "AI 파이프라인", "AI 워크플로",
     "ChatGPT", "Claude", "Midjourney", "AI 비교", "AI 추천",
     "개인개발", "사이드 프로젝트", "AI 홍보", "무료 등록",
-    "인공지능 서비스 모음", "AI tool directory", "AI service hub",
+    "인공지능 서비스 모음", "AI tool directory", "AI workflow builder",
   ],
-  authors: [{ name: "AI HUB" }],
-  creator: "AI HUB",
-  publisher: "AI HUB",
+  authors: [{ name: "pipeAI" }],
+  creator: "pipeAI",
+  publisher: "pipeAI",
   formatDetection: {
     email: false,
     address: false,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "AI HUB - AI 서비스 허브 포털",
+    title: "pipeAI - AI 파이프라인 플랫폼",
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "AI HUB - AI 서비스 허브 포털",
+        alt: "pipeAI - AI 파이프라인 플랫폼",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI HUB - AI 서비스 허브 포털",
+    title: "pipeAI - AI 파이프라인 플랫폼",
     description: SITE_DESCRIPTION,
     images: ["/og-image.png"],
   },

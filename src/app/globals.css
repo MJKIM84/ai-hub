@@ -3,11 +3,14 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-neon-blue: #00D4FF;
-  --color-neon-purple: #A855F7;
+  --color-neon-blue: #00E5FF;
+  --color-neon-purple: #7C3AED;
   --color-neon-pink: #EC4899;
   --color-neon-green: #10B981;
   --color-neon-orange: #F97316;
+
+  --color-pipe-cyan: #00E5FF;
+  --color-pipe-indigo: #7C3AED;
 
   --color-glass-light: rgba(255, 255, 255, 0.06);
   --color-glass-medium: rgba(255, 255, 255, 0.10);
@@ -23,6 +26,7 @@
   --animate-float: float 6s ease-in-out infinite;
   --animate-glow: glow 2s ease-in-out infinite alternate;
   --animate-shimmer: shimmer 2s ease-in-out infinite;
+  --animate-pipe-flow: pipe-flow 3s linear infinite;
 }
 
 @keyframes float {
@@ -38,6 +42,16 @@
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
+}
+
+@keyframes pipe-flow {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes pipe-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
 /* Light mode default styles */
@@ -100,6 +114,164 @@ body {
   transform: translateY(-2px) scale(1.01);
 }
 
+/* ========== Pipe Node — 서비스 카드 스타일 ========== */
+.pipe-node {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 3px solid var(--color-pipe-cyan);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.pipe-node:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12), -3px 0 12px rgba(0, 229, 255, 0.15);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-color: var(--color-pipe-cyan);
+  transform: translateY(-2px);
+}
+
+.dark .pipe-node {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  border-left-color: var(--color-pipe-cyan);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark .pipe-node:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), -3px 0 16px rgba(0, 229, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-left-color: var(--color-pipe-cyan);
+  transform: translateY(-2px);
+}
+
+/* Pipe node 카테고리 컬러 바 변형 */
+.pipe-node-purple { border-left-color: var(--color-pipe-indigo); }
+.pipe-node-purple:hover { border-left-color: var(--color-pipe-indigo); }
+.dark .pipe-node-purple { border-left-color: var(--color-pipe-indigo); }
+
+.pipe-node-green { border-left-color: var(--color-neon-green); }
+.pipe-node-green:hover { border-left-color: var(--color-neon-green); }
+.dark .pipe-node-green { border-left-color: var(--color-neon-green); }
+
+.pipe-node-orange { border-left-color: var(--color-neon-orange); }
+.pipe-node-orange:hover { border-left-color: var(--color-neon-orange); }
+.dark .pipe-node-orange { border-left-color: var(--color-neon-orange); }
+
+.pipe-node-pink { border-left-color: var(--color-neon-pink); }
+.pipe-node-pink:hover { border-left-color: var(--color-neon-pink); }
+.dark .pipe-node-pink { border-left-color: var(--color-neon-pink); }
+
+/* Pipe flow — 애니메이션 라인 */
+.pipe-flow-line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-pipe-cyan) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: pipe-flow 3s linear infinite;
+}
+
+/* ========== Pipe Timeline — 댓글 타임라인 ========== */
+.pipe-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.pipe-timeline-line {
+  position: absolute;
+  left: 0.625rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  border-radius: 1px;
+}
+
+.pipe-timeline-line {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dark .pipe-timeline-line {
+  background: rgba(0, 229, 255, 0.15);
+}
+
+.pipe-timeline-dot {
+  position: absolute;
+  left: -1.125rem;
+  top: 1.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  background: var(--color-surface-light);
+  z-index: 1;
+}
+
+.dark .pipe-timeline-dot {
+  border-color: var(--color-pipe-cyan);
+  background: var(--color-surface-dark);
+  box-shadow: 0 0 6px rgba(0, 229, 255, 0.3);
+}
+
+.pipe-timeline-dot-reply {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: -0.875rem;
+}
+
+.pipe-timeline-dot-muted {
+  border-color: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dark .pipe-timeline-dot-muted {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+}
+
+.pipe-timeline-dot-form {
+  border-color: var(--color-pipe-indigo);
+  background: var(--color-pipe-indigo);
+  width: 0.625rem;
+  height: 0.625rem;
+  left: -1rem;
+}
+
+.dark .pipe-timeline-dot-form {
+  border-color: var(--color-pipe-indigo);
+  background: var(--color-pipe-indigo);
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.4);
+}
+
+.pipe-timeline-branch {
+  position: absolute;
+  left: -1.125rem;
+  top: 1.45rem;
+  width: 0.75rem;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.pipe-timeline-branch {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dark .pipe-timeline-branch {
+  background: rgba(0, 229, 255, 0.15);
+}
+
+/* ========== Pipe Connector — 그리드 연결선 ========== */
+.pipe-grid-connector {
+  position: relative;
+}
+
 /* Neon gradient border */
 .neon-border {
   position: relative;
@@ -125,23 +297,19 @@ body {
   opacity: 1;
 }
 
-/* Hero gradient */
+/* Hero gradient — pipeline network */
 .hero-gradient {
-  background: radial-gradient(
-    ellipse at 50% 0%,
-    rgba(0, 212, 255, 0.12) 0%,
-    rgba(168, 85, 247, 0.08) 40%,
-    transparent 70%
-  );
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(0, 229, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 0%, rgba(0, 229, 255, 0.1) 0%, transparent 60%);
 }
 
 .dark .hero-gradient {
-  background: radial-gradient(
-    ellipse at 50% 0%,
-    rgba(0, 212, 255, 0.15) 0%,
-    rgba(168, 85, 247, 0.1) 40%,
-    transparent 70%
-  );
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(0, 229, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 40%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 0%, rgba(0, 229, 255, 0.15) 0%, transparent 60%);
 }
 
 /* Scrollbar styling */

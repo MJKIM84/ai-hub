@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ThumbsUp, Eye, Flag, Bot, UserCheck, ChevronRight } from "lucide-react";
+import { ThumbsUp, Eye, Flag, Bot, UserCheck, ArrowRight } from "lucide-react";
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
@@ -10,6 +10,27 @@ import { formatNumber } from "@/lib/utils";
 interface ServiceCardProps {
   service: Service;
   onVote?: (serviceId: string) => void;
+}
+
+// 카테고리별 파이프 컬러 매핑
+function getPipeColorClass(categoryId: string): string {
+  const colorMap: Record<string, string> = {
+    "text-generation": "",
+    "image-generation": "pipe-node-purple",
+    "image-editing": "pipe-node-pink",
+    "code-assistant": "pipe-node-green",
+    "productivity": "",
+    "voice-speech": "pipe-node-orange",
+    "education": "pipe-node-purple",
+    "video": "pipe-node-pink",
+    "data-analysis": "pipe-node-green",
+    "writing": "pipe-node-purple",
+    "translation": "",
+    "healthcare": "pipe-node-pink",
+    "korean-llm": "",
+    "indie-dev": "pipe-node-orange",
+  };
+  return colorMap[categoryId] || "";
 }
 
 export function ServiceCard({ service, onVote }: ServiceCardProps) {
@@ -43,11 +64,12 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
   };
 
   const logoSrc = service.logoUrl || service.faviconUrl || service.ogImageUrl;
+  const pipeColor = getPipeColorClass(service.category);
 
   return (
     <div
       onClick={handleClick}
-      className="glass-card p-5 cursor-pointer group relative flex flex-col h-full"
+      className={`pipe-node ${pipeColor} p-5 cursor-pointer group relative flex flex-col h-full`}
     >
       <div className="flex items-start gap-4 mb-3">
         <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0
@@ -138,8 +160,8 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
             <ThumbsUp className={`w-3 h-3 ${voted ? "fill-current" : ""}`} />
             {voted ? "추천됨" : "추천"}
           </button>
-          <ChevronRight className="w-4 h-4 dark:text-zinc-500 text-zinc-400
-            group-hover:text-neon-blue transition-colors" />
+          <ArrowRight className="w-4 h-4 dark:text-zinc-500 text-zinc-400
+            group-hover:text-neon-blue group-hover:translate-x-0.5 transition-all" />
         </div>
       </div>
     </div>

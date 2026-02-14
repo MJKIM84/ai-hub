@@ -39,11 +39,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const category = CATEGORIES.find((c) => c.id === service.category);
-  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | AI HUB`;
+  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | pipeAI`;
   const description =
     service.description ||
     service.tagline ||
-    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. AI HUB에서 자세한 정보를 확인하세요.`;
+    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. pipeAI에서 자세한 정보를 확인하세요.`;
   const ogImage = service.ogImageUrl || service.logoUrl || service.faviconUrl;
 
   return {
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `${SITE_URL}/service/${slug}`,
       type: "article",
       locale: "ko_KR",
-      siteName: "AI HUB",
+      siteName: "pipeAI",
       ...(ogImage && {
         images: [{ url: ogImage, width: 1200, height: 630, alt: service.name }],
       }),
@@ -177,11 +177,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             className="inline-flex items-center gap-2 text-sm dark:text-zinc-400 text-zinc-500 hover:text-neon-blue transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            목록으로 돌아가기
+            파이프라인으로 돌아가기
           </Link>
 
-          {/* 서비스 정보 카드 */}
-          <div className="glass p-8">
+          {/* 서비스 정보 카드 — pipe-node 스타일 */}
+          <div className="pipe-node p-8">
             <div className="flex items-start gap-5 mb-6">
               <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0
                 dark:bg-white/10 bg-black/5 flex items-center justify-center">

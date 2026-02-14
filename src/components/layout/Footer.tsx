@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, Mail, Send, Loader2, Check, Handshake, MessageSquareText } from "lucide-react";
+import { GitBranch, Mail, Send, Loader2, Check, Handshake, MessageSquareText } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -52,7 +52,7 @@ export function Footer() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-lg font-bold dark:text-white text-zinc-900 mb-2">
-              AI HUB와 함께하기
+              pipeAI와 함께하기
             </h3>
             <p className="text-sm dark:text-zinc-400 text-zinc-500">
               제휴 문의, 기능 제안, 서비스 개선 의견 등 무엇이든 환영합니다.
@@ -164,10 +164,11 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-md bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center">
-                <Sparkles className="w-3 h-3 text-white" />
+                <GitBranch className="w-3 h-3 text-white" />
               </div>
-              <span className="text-sm font-semibold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
-                AI HUB
+              <span className="text-sm font-semibold">
+                <span className="dark:text-zinc-400 text-zinc-500">pipe</span>
+                <span className="bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">AI</span>
               </span>
             </div>
             <div className="flex items-center gap-4">
@@ -179,7 +180,7 @@ export function Footer() {
               </Link>
               <span className="dark:text-zinc-700 text-zinc-300">|</span>
               <p className="text-sm dark:text-zinc-500 text-zinc-400">
-                AI 서비스의 파편화를 해소하고, 개발자와 사용자를 연결합니다.
+                AI를 연결하고, 워크플로를 만드세요.
               </p>
             </div>
           </div>
