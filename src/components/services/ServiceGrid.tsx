@@ -11,6 +11,7 @@ interface ServiceGridProps {
   initialServices: Service[];
   totalCount: number;
   todayCount?: number;
+  unfilteredTodayCount?: number;
   currentPage: number;
   hasMore: boolean;
   currentSort?: string;
@@ -21,6 +22,7 @@ export function ServiceGrid({
   initialServices,
   totalCount,
   todayCount,
+  unfilteredTodayCount,
   currentPage,
   hasMore,
   currentSort,
@@ -103,7 +105,7 @@ export function ServiceGrid({
               총 <span className="dark:text-white text-zinc-900 font-semibold">{totalCount}</span>개의 서비스
             </p>
           )}
-          {todayCount != null && todayCount > 0 && (
+          {(unfilteredTodayCount ?? todayCount ?? 0) > 0 && (
             <button
               onClick={() => {
                 const params = new URLSearchParams(searchParams.toString());
@@ -111,7 +113,9 @@ export function ServiceGrid({
                   params.delete("filter");
                 } else {
                   params.set("filter", "today");
+                  params.delete("category"); // 오늘 필터 시 카테고리 해제
                 }
+                params.delete("page");
                 router.push(`/?${params.toString()}`);
               }}
               className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium whitespace-nowrap
@@ -121,7 +125,7 @@ export function ServiceGrid({
                   : "bg-emerald-500/15 text-emerald-500 hover:bg-emerald-500/25 animate-pulse"
                 }`}
             >
-              🆕 오늘 {todayCount}개 등록
+              🆕 오늘 {unfilteredTodayCount ?? todayCount}개 등록
             </button>
           )}
         </div>

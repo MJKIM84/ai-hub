@@ -16,6 +16,14 @@ export async function GET(request: NextRequest) {
     if (params.pricing) where.pricingModel = params.pricing;
     if (params.korean) where.isKorean = true;
 
+    if (params.filter === "today") {
+      const todayStart = new Date();
+      todayStart.setHours(todayStart.getHours() + 9); // UTC → KST
+      todayStart.setHours(0, 0, 0, 0);
+      todayStart.setHours(todayStart.getHours() - 9); // KST → UTC
+      where.createdAt = { gte: todayStart };
+    }
+
     if (params.q) {
       where.OR = [
         { name: { contains: params.q, mode: "insensitive" } },

@@ -66,6 +66,7 @@ export const serviceQuerySchema = z.object({
   category: z.string().optional(),
   pricing: z.string().optional(),
   korean: z.coerce.boolean().optional(),
+  filter: z.enum(['today']).optional(),
   sort: z.enum(['gravity', 'newest', 'popular', 'name']).optional().default('gravity'),
   page: z.coerce.number().int().positive().optional().default(1),
   limit: z.coerce.number().int().min(1).max(50).optional().default(12),

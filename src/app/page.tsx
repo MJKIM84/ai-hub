@@ -101,6 +101,7 @@ export default async function HomePage({ searchParams }: PageProps) {
           initialServices={JSON.parse(JSON.stringify(sortedItems))}
           totalCount={total}
           todayCount={todayCount}
+          unfilteredTodayCount={todayCount}
           currentPage={page}
           hasMore={page < totalPages}
           currentSort={sort}
