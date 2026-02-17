@@ -15,6 +15,7 @@ export default function Icon() {
           justifyContent: "center",
           background: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
           borderRadius: "7px",
+          position: "relative",
         }}
       >
         <svg
@@ -26,8 +27,24 @@ export default function Icon() {
         >
           <circle cx="10.5" cy="10.5" r="6" stroke="white" strokeWidth="2.5" fill="none" />
           <line x1="15" y1="15" x2="20" y2="20" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-          <text x="10.5" y="13" textAnchor="middle" fontFamily="sans-serif" fontWeight="800" fontSize="7" fill="white">AI</text>
         </svg>
+        <div
+          style={{
+            position: "absolute",
+            top: "6px",
+            left: "3px",
+            fontSize: "7px",
+            fontWeight: 800,
+            color: "white",
+            width: "18px",
+            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          AI
+        </div>
       </div>
     ),
     { ...size }

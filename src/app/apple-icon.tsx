@@ -15,29 +15,33 @@ export default function AppleIcon() {
           justifyContent: "center",
           background: "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
           borderRadius: "38px",
+          position: "relative",
         }}
       >
-        {/* 돋보기 + AI 텍스트 */}
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="50" cy="50" r="28" stroke="white" strokeWidth="8" fill="none" opacity="0.95" />
+          <line x1="70" y1="70" x2="98" y2="98" stroke="white" strokeWidth="8" strokeLinecap="round" opacity="0.95" />
+        </svg>
         <div
           style={{
+            position: "absolute",
+            top: "48px",
+            left: "43px",
+            fontSize: "28px",
+            fontWeight: 800,
+            color: "white",
             display: "flex",
-            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            position: "relative",
           }}
         >
-          <svg
-            width="120"
-            height="120"
-            viewBox="0 0 120 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="50" cy="50" r="28" stroke="white" strokeWidth="8" fill="none" opacity="0.95" />
-            <line x1="70" y1="70" x2="98" y2="98" stroke="white" strokeWidth="8" strokeLinecap="round" opacity="0.95" />
-            <text x="50" y="56" textAnchor="middle" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="28" fill="white">AI</text>
-          </svg>
+          AI
         </div>
       </div>
     ),
