@@ -6,6 +6,7 @@ import { ThumbsUp, Eye, Flag, Bot, UserCheck, ChevronRight } from "lucide-react"
 import type { Service } from "@/types/service";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatNumber } from "@/lib/utils";
+import { ServiceLogo } from "./ServiceLogo";
 
 interface ServiceCardProps {
   service: Service;
@@ -44,7 +45,6 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
     } catch {}
   };
 
-  const logoSrc = service.logoUrl || service.faviconUrl || service.ogImageUrl;
   const displayDescription = service.descriptionKo || service.description || service.tagline || "설명이 없습니다.";
 
   return (
@@ -67,28 +67,14 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
         </div>
       )}
       <div className="flex items-start gap-4 mb-3">
-        <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0
-          dark:bg-white/10 bg-black/5 flex items-center justify-center">
-          {logoSrc ? (
-            <img
-              src={logoSrc}
-              alt={service.name}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.style.display = 'none';
-                const fallback = document.createElement('span');
-                fallback.className = 'text-lg font-bold dark:text-zinc-400 text-zinc-500';
-                fallback.textContent = service.name[0] || '?';
-                img.parentElement?.appendChild(fallback);
-              }}
-            />
-          ) : (
-            <span className="text-lg font-bold dark:text-zinc-400 text-zinc-500">
-              {service.name[0]}
-            </span>
-          )}
-        </div>
+        <ServiceLogo
+          logoUrl={service.logoUrl}
+          faviconUrl={service.faviconUrl}
+          ogImageUrl={service.ogImageUrl}
+          serviceUrl={service.url}
+          name={service.name}
+          size="md"
+        />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
             <h3 className="font-semibold dark:text-white text-zinc-900 truncate text-base">

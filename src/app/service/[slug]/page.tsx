@@ -14,6 +14,7 @@ import { RelatedArticles } from "@/components/services/RelatedArticles";
 import { CommentSection } from "@/components/services/CommentSection";
 import { BackButton } from "@/components/services/BackButton";
 import { ServiceDescription } from "@/components/services/ServiceDescription";
+import { ServiceDetailLogo } from "@/components/services/ServiceDetailLogo";
 
 export const dynamic = "force-dynamic";
 
@@ -305,17 +306,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {/* 모바일: 세로 배치 / 데스크톱: 가로 배치 */}
             <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5 mb-4 sm:mb-6">
               <div className="flex items-center gap-3 sm:block">
-                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl overflow-hidden shrink-0
-                  dark:bg-white/10 bg-black/5 flex items-center justify-center">
-                  {logoSrc ? (
-                    <img src={logoSrc} alt={service.name} className="w-full h-full object-cover"
-                      onError={undefined} />
-                  ) : (
-                    <span className="text-3xl font-bold dark:text-zinc-400 text-zinc-500">
-                      {service.name[0]}
-                    </span>
-                  )}
-                </div>
+                <ServiceDetailLogo
+                  logoUrl={service.logoUrl}
+                  faviconUrl={service.faviconUrl}
+                  ogImageUrl={service.ogImageUrl}
+                  serviceUrl={service.url}
+                  name={service.name}
+                />
                 {/* 모바일에서 로고 옆에 이름 표시 */}
                 <div className="sm:hidden flex-1 min-w-0">
                   <h1 className="text-xl font-bold dark:text-white text-zinc-900">

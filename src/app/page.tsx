@@ -40,7 +40,9 @@ export default async function HomePage({ searchParams }: PageProps) {
   if (params.q) {
     where.OR = [
       { name: { contains: params.q, mode: "insensitive" } },
+      { nameKo: { contains: params.q, mode: "insensitive" } },
       { description: { contains: params.q, mode: "insensitive" } },
+      { descriptionKo: { contains: params.q, mode: "insensitive" } },
       { tagline: { contains: params.q, mode: "insensitive" } },
       { tags: { contains: params.q, mode: "insensitive" } },
       { category: { contains: params.q, mode: "insensitive" } },

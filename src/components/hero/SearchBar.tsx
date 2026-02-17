@@ -1,15 +1,17 @@
 "use client";
 
-import { Search, X } from "lucide-react";
+import { Search, X, Loader2 } from "lucide-react";
 import { useState, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const [query, setQuery] = useState(initialQuery || "");
+  const [isSearching, setIsSearching] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
   const hasScrolled = useRef(false);
   const searchWrapperRef = useRef<HTMLDivElement>(null);
+  const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const executeSearch = useCallback(
     (value: string) => {
@@ -21,17 +23,44 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
       }
       params.delete("page");
       router.replace(`/?${params.toString()}`, { scroll: false });
+      // 검색 완료 후 로딩 해제
+      setTimeout(() => setIsSearching(false), 300);
     },
     [router, searchParams]
   );
 
+  // 키 입력 핸들러 — 디바운스 검색
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setQuery(value);
+
+    // 이전 타이머 취소
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+
+    setIsSearching(true);
+    debounceTimer.current = setTimeout(() => {
+      executeSearch(value);
+    }, 300);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // 엔터 키 → 즉시 검색
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+    setIsSearching(true);
     executeSearch(query);
   };
 
   const handleClear = () => {
     setQuery("");
+    if (debounceTimer.current) {
+      clearTimeout(debounceTimer.current);
+    }
+    setIsSearching(false);
     executeSearch("");
   };
 
@@ -50,11 +79,15 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     <div ref={searchWrapperRef} className="max-w-2xl mx-auto px-4 -mt-2 mb-8">
       <form onSubmit={handleSubmit} className="relative neon-border rounded-2xl">
         <div className="glass flex items-center px-3 py-3 sm:px-5 sm:py-4">
-          <Search className="w-5 h-5 dark:text-zinc-400 text-zinc-500 shrink-0" />
+          {isSearching ? (
+            <Loader2 className="w-5 h-5 text-neon-blue shrink-0 animate-spin" />
+          ) : (
+            <Search className="w-5 h-5 dark:text-zinc-400 text-zinc-500 shrink-0" />
+          )}
           <input
             type="text"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={handleChange}
             onFocus={handleFocus}
             placeholder="어떤 AI 도구를 찾고 계신가요?"
             className="w-full ml-3 bg-transparent outline-none text-base

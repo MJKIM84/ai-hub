@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Mail, Send, Loader2, Check, Handshake, MessageSquareText } from "lucide-react";
+import Image from "next/image";
+import { Mail, Send, Loader2, Check, Handshake, MessageSquareText } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -163,9 +164,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-md bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center">
-                <Search className="w-3 h-3 text-white" />
-              </div>
+              <Image src="/logo.svg" alt="FindMyAI" width={24} height={24} className="rounded-md" />
               <span className="text-sm font-semibold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent">
                 FindMyAI
               </span>
