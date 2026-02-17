@@ -57,7 +57,7 @@ export default async function HomePage({ searchParams }: PageProps) {
     default: orderBy = { score: "desc" };
   }
 
-  const [items, total, categoryCounts, todayCount] = await Promise.all([
+  const [items, total, categoryCounts, todayCount, allServiceCount] = await Promise.all([
     prisma.service.findMany({
       where: where as never,
       orderBy: orderBy as never,
@@ -72,6 +72,7 @@ export default async function HomePage({ searchParams }: PageProps) {
     prisma.service.count({
       where: { createdAt: { gte: todayStart } },
     }),
+    prisma.service.count(),
   ]);
 
   let sortedItems = items;
@@ -100,6 +101,7 @@ export default async function HomePage({ searchParams }: PageProps) {
         <ServiceGrid
           initialServices={JSON.parse(JSON.stringify(sortedItems))}
           totalCount={total}
+          allServiceCount={allServiceCount}
           todayCount={todayCount}
           unfilteredTodayCount={todayCount}
           currentPage={page}

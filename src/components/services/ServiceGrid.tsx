@@ -10,6 +10,7 @@ import type { Service } from "@/types/service";
 interface ServiceGridProps {
   initialServices: Service[];
   totalCount: number;
+  allServiceCount?: number;
   todayCount?: number;
   unfilteredTodayCount?: number;
   currentPage: number;
@@ -21,6 +22,7 @@ interface ServiceGridProps {
 export function ServiceGrid({
   initialServices,
   totalCount,
+  allServiceCount,
   todayCount,
   unfilteredTodayCount,
   currentPage,
@@ -98,7 +100,7 @@ export function ServiceGrid({
               }}
               className="text-sm dark:text-zinc-400 text-zinc-500 hover:text-neon-blue transition-colors cursor-pointer"
             >
-              ← 전체 <span className="dark:text-white text-zinc-900 font-semibold">{totalCount}</span>개 보기
+              ← 전체 <span className="dark:text-white text-zinc-900 font-semibold">{allServiceCount ?? totalCount}</span>개 보기
             </button>
           ) : (
             <p className="text-sm dark:text-zinc-500 text-zinc-400 whitespace-nowrap">
