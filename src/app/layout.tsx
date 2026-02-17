@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID;
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
 const SITE_NAME = "FindMyAI";
@@ -40,7 +44,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "FindMyAI - 나에게 맞는 AI를 찾아보세요",
@@ -51,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FindMyAI - 나에게 맞는 AI를 찾아보세요",
     description: SITE_DESCRIPTION,
-    images: ["/og-image.png"],
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -107,7 +111,7 @@ export default function RootLayout({
         url: SITE_URL,
         logo: {
           "@type": "ImageObject",
-          url: `${SITE_URL}/og-image.png`,
+          url: `${SITE_URL}/opengraph-image`,
         },
         sameAs: [],
       },
@@ -167,6 +171,37 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased min-h-screen transition-colors duration-300">
+        {/* Google Analytics */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
+        {/* Microsoft Clarity */}
+        {CLARITY_ID && (
+          <Script id="microsoft-clarity" strategy="afterInteractive">
+            {`
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "${CLARITY_ID}");
+            `}
+          </Script>
+        )}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

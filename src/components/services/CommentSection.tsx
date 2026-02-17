@@ -95,20 +95,20 @@ function CommentForm({ serviceId, parentId, replyToName, onSubmitted, onCancel, 
             <span className="dark:text-zinc-500 text-zinc-400">에게 답글</span>
           </div>
         )}
-        <div className="flex gap-2 mb-2 flex-wrap">
+        <div className="flex gap-2 mb-2">
           <input
             type="text"
             value={nickname}
             onChange={(e) => setNickname(e.target.value)}
             placeholder="닉네임"
             maxLength={50}
-            className={`${compact ? "w-24" : "w-32 sm:w-40"} px-3 py-2 rounded-lg text-sm bg-transparent
+            className={`flex-1 min-w-0 ${compact ? "max-w-[100px]" : "max-w-[140px] sm:max-w-[160px]"} px-3 py-2 rounded-lg text-sm bg-transparent
               dark:bg-white/5 bg-black/5
               dark:text-white text-zinc-900
               dark:placeholder-zinc-500 placeholder-zinc-400
               outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30`}
           />
-          <div className="relative">
+          <div className="relative flex-1 min-w-0 max-w-[140px] sm:max-w-[160px]">
             <Lock className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3 h-3 dark:text-zinc-500 text-zinc-400" />
             <input
               type="password"
@@ -116,11 +116,11 @@ function CommentForm({ serviceId, parentId, replyToName, onSubmitted, onCancel, 
               onChange={(e) => setPassword(e.target.value)}
               placeholder="비밀번호"
               maxLength={100}
-              className={`${compact ? "w-24" : "w-28 sm:w-36"} pl-7 pr-3 py-2 rounded-lg text-sm bg-transparent
+              className="w-full pl-7 pr-3 py-2 rounded-lg text-sm bg-transparent
                 dark:bg-white/5 bg-black/5
                 dark:text-white text-zinc-900
                 dark:placeholder-zinc-500 placeholder-zinc-400
-                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30`}
+                outline-none focus:ring-1 dark:focus:ring-neon-blue/50 focus:ring-neon-blue/30"
             />
           </div>
         </div>
@@ -146,7 +146,7 @@ function CommentForm({ serviceId, parentId, replyToName, onSubmitted, onCancel, 
             <button
               type="submit"
               disabled={submitting || !nickname.trim() || !content.trim() || !password.trim()}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium
+              className="flex items-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg text-xs font-medium
                 bg-gradient-to-r from-neon-blue to-neon-purple text-white
                 hover:opacity-90 transition-all duration-200
                 disabled:opacity-40 disabled:cursor-not-allowed"
@@ -317,7 +317,7 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   // 삭제된 댓글
   if (comment.isDeleted) {
     return (
-      <div className={isReply ? "ml-8" : ""}>
+      <div className={isReply ? "ml-4 sm:ml-8" : ""}>
         <div className={`rounded-xl p-4 ${isReply
           ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
           : "dark:bg-white/5 bg-black/5"}`}
@@ -334,7 +334,7 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   // 숨김 처리된 댓글
   if (comment.isHidden) {
     return (
-      <div className={isReply ? "ml-8" : ""}>
+      <div className={isReply ? "ml-4 sm:ml-8" : ""}>
         <div className={`rounded-xl p-4 ${isReply
           ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-zinc-700 border-zinc-300"
           : "dark:bg-white/5 bg-black/5"}`}
@@ -349,7 +349,7 @@ function CommentItem({ comment, serviceId, onDeleted, onUpdated, onReply, onHidd
   }
 
   return (
-    <div className={isReply ? "ml-8" : ""}>
+    <div className={isReply ? "ml-4 sm:ml-8" : ""}>
       <div className={`rounded-xl p-4 ${isReply
         ? "dark:bg-white/[0.02] bg-black/[0.02] border-l-2 dark:border-neon-blue/20 border-blue-200"
         : "dark:bg-white/5 bg-black/5"}`}

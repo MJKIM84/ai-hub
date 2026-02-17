@@ -18,6 +18,9 @@ model Service {
   faviconUrl   String?
   ogImageUrl   String?
 
+  nameKo       String?
+  descriptionKo String?
+
   category     String
   tags         String   @default("[]")
   pricingModel String   @default("free")
@@ -40,6 +43,7 @@ model Service {
   comments       Comment[]
   discoveryLogs  DiscoveryLog[]
   editRequests   EditRequest[]
+  articles       Article[]
 
   @@index([category])
   @@index([score])
@@ -232,4 +236,22 @@ model CrawlRun {
   errorMessage    String?
 
   @@index([startedAt])
+}
+
+// ─── 관련 기사 시스템 ───
+
+model Article {
+  id          String    @id @default(cuid())
+  serviceId   String
+  service     Service   @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+  title       String
+  titleKo     String?
+  url         String
+  sourceName  String    // "TechCrunch", "VentureBeat" 등
+  imageUrl    String?
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@unique([serviceId, url])
+  @@index([serviceId])
 }

@@ -5,13 +5,15 @@ import { Footer } from "@/components/layout/Footer";
 import { CATEGORIES, PRICING_MODELS } from "@/constants/categories";
 import { formatDate, formatNumber, maskIp } from "@/lib/utils";
 import {
-  ArrowLeft, ExternalLink, Eye, Calendar, Flag, Tag, Bot, UserCheck, MessageSquare
+  ExternalLink, Eye, Calendar, Flag, Tag, Bot, UserCheck, MessageSquare
 } from "lucide-react";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { EditRequestButton } from "@/components/services/EditRequestButton";
 import { ServiceVotePanel } from "@/components/services/ServiceVotePanel";
+import { RelatedArticles } from "@/components/services/RelatedArticles";
 import { CommentSection } from "@/components/services/CommentSection";
+import { BackButton } from "@/components/services/BackButton";
+import { ServiceDescription } from "@/components/services/ServiceDescription";
 
 export const dynamic = "force-dynamic";
 
@@ -199,31 +201,58 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         />
 
         <div className="max-w-3xl mx-auto">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm dark:text-zinc-400 text-zinc-500 hover:text-neon-blue transition-colors mb-8"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            목록으로 돌아가기
-          </Link>
+          <BackButton />
 
           {/* 서비스 정보 카드 */}
-          <div className="glass p-8">
-            <div className="flex items-start gap-5 mb-6">
-              <div className="w-20 h-20 rounded-2xl overflow-hidden shrink-0
-                dark:bg-white/10 bg-black/5 flex items-center justify-center">
-                {logoSrc ? (
-                  <img src={logoSrc} alt={service.name} className="w-full h-full object-cover"
-                    onError={undefined} />
-                ) : (
-                  <span className="text-3xl font-bold dark:text-zinc-400 text-zinc-500">
-                    {service.name[0]}
-                  </span>
-                )}
+          <div className="glass p-4 sm:p-8">
+            {/* 모바일: 세로 배치 / 데스크톱: 가로 배치 */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-5 mb-4 sm:mb-6">
+              <div className="flex items-center gap-3 sm:block">
+                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl overflow-hidden shrink-0
+                  dark:bg-white/10 bg-black/5 flex items-center justify-center">
+                  {logoSrc ? (
+                    <img src={logoSrc} alt={service.name} className="w-full h-full object-cover"
+                      onError={undefined} />
+                  ) : (
+                    <span className="text-3xl font-bold dark:text-zinc-400 text-zinc-500">
+                      {service.name[0]}
+                    </span>
+                  )}
+                </div>
+                {/* 모바일에서 로고 옆에 이름 표시 */}
+                <div className="sm:hidden flex-1 min-w-0">
+                  <h1 className="text-xl font-bold dark:text-white text-zinc-900">
+                    {service.name}
+                  </h1>
+                  <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                    {service.isKorean && (
+                      <span className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-xs font-medium
+                        dark:bg-neon-blue/15 bg-neon-blue/10 dark:text-neon-blue text-blue-600">
+                        <Flag className="w-3 h-3" />
+                        한국
+                      </span>
+                    )}
+                    {service.source === "auto" && (
+                      <span className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-xs font-medium
+                        dark:bg-orange-500/15 bg-orange-500/10 dark:text-orange-400 text-orange-600">
+                        <Bot className="w-3 h-3" />
+                        Auto
+                      </span>
+                    )}
+                    {service.source === "developer" && (
+                      <span className="flex items-center gap-1 px-2 py-0.5 rounded-lg text-xs font-medium
+                        dark:bg-emerald-500/15 bg-emerald-500/10 dark:text-emerald-400 text-emerald-600">
+                        <UserCheck className="w-3 h-3" />
+                        인증됨
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex items-start justify-between gap-3 mb-2">
-                  <div className="flex items-center gap-3 flex-wrap min-w-0">
+                <div className="mb-2">
+                  {/* 데스크톱에서만 이름 표시 (모바일은 위에서 로고 옆에 표시) */}
+                  <div className="hidden sm:flex items-center gap-3 flex-wrap min-w-0 mb-2">
                     <h1 className="text-2xl font-bold dark:text-white text-zinc-900">
                       {service.name}
                     </h1>
@@ -249,8 +278,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       </span>
                     )}
                   </div>
-                  {/* 서비스 방문 + 정보 수정 버튼 (우측 상단) */}
-                  <div className="flex items-center gap-2 shrink-0">
+                  {/* 서비스 방문 + 정보 수정 버튼 */}
+                  <div className="flex items-center gap-2">
                     <EditRequestButton
                       serviceId={service.id}
                       serviceName={service.name}
@@ -265,7 +294,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       href={service.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium
+                      className="flex items-center gap-1.5 px-3 py-2 sm:px-4 sm:py-2 rounded-xl text-xs font-medium
                         bg-gradient-to-r from-neon-blue to-neon-purple text-white
                         hover:opacity-90 transition-all duration-200 whitespace-nowrap
                         shadow-lg shadow-neon-blue/20"
@@ -303,34 +332,38 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* 상세 설명 (잘림 없이 전체 표시) */}
-            {service.description && (
+            {/* 상세 설명 (한국어/영어 토글) */}
+            {(service.description || service.descriptionKo) && (
               <div className="mb-6 pb-6 border-b dark:border-white/10 border-black/10">
-                <p className="dark:text-zinc-300 text-zinc-600 leading-relaxed whitespace-pre-wrap">
-                  {service.description}
-                </p>
+                <ServiceDescription
+                  name={service.name}
+                  nameKo={service.nameKo}
+                  description={service.description}
+                  descriptionKo={service.descriptionKo}
+                  tagline={service.tagline}
+                />
               </div>
             )}
 
             {/* 통계 */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
-              <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
-                <Eye className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
-                <p className="text-lg font-semibold dark:text-white text-zinc-900">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6">
+              <div className="text-center p-2.5 sm:p-4 rounded-xl dark:bg-white/5 bg-black/5">
+                <Eye className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-1.5 sm:mb-2 dark:text-zinc-400 text-zinc-500" />
+                <p className="text-base sm:text-lg font-semibold dark:text-white text-zinc-900">
                   {formatNumber(service.clicks)}
                 </p>
                 <p className="text-xs dark:text-zinc-500 text-zinc-400">조회</p>
               </div>
-              <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
-                <MessageSquare className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
-                <p className="text-lg font-semibold dark:text-white text-zinc-900">
+              <div className="text-center p-2.5 sm:p-4 rounded-xl dark:bg-white/5 bg-black/5">
+                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-1.5 sm:mb-2 dark:text-zinc-400 text-zinc-500" />
+                <p className="text-base sm:text-lg font-semibold dark:text-white text-zinc-900">
                   {commentTotal}
                 </p>
                 <p className="text-xs dark:text-zinc-500 text-zinc-400">댓글</p>
               </div>
-              <div className="text-center p-4 rounded-xl dark:bg-white/5 bg-black/5">
-                <Calendar className="w-5 h-5 mx-auto mb-2 dark:text-zinc-400 text-zinc-500" />
-                <p className="text-sm font-semibold dark:text-white text-zinc-900">
+              <div className="text-center p-2.5 sm:p-4 rounded-xl dark:bg-white/5 bg-black/5">
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-1.5 sm:mb-2 dark:text-zinc-400 text-zinc-500" />
+                <p className="text-xs sm:text-sm font-semibold dark:text-white text-zinc-900">
                   {formatDate(service.createdAt)}
                 </p>
                 <p className="text-xs dark:text-zinc-500 text-zinc-400">등록일</p>
@@ -359,6 +392,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               initialDownvotes={service.downvotes}
             />
           </div>
+
+          {/* 관련 기사 섹션 */}
+          <RelatedArticles serviceId={service.id} />
 
           {/* 커뮤니티 댓글 섹션 */}
           <CommentSection

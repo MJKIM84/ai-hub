@@ -109,7 +109,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 
-      <div className="relative w-full max-w-lg glass dark:bg-zinc-900/90 bg-white/95 rounded-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg glass dark:bg-zinc-900/90 bg-white/95 rounded-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between p-5 border-b dark:border-white/10 border-black/10">
           <h2 className="text-lg font-semibold dark:text-white text-zinc-900">
             {step === "url" && "AI 서비스 등록"}
@@ -212,7 +212,7 @@ export function RegisterModal({ onClose }: RegisterModalProps) {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium dark:text-zinc-400 text-zinc-500 mb-1.5">카테고리</label>
                     <select

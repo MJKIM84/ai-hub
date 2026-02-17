@@ -17,6 +17,7 @@ interface PageProps {
     category?: string;
     sort?: string;
     page?: string;
+    filter?: string;
   }>;
 }
 
@@ -25,8 +26,17 @@ export default async function HomePage({ searchParams }: PageProps) {
   const page = Math.max(1, parseInt(params.page || "1", 10));
   const sort = params.sort || "gravity";
 
+  // 오늘 자정(KST) 기준 시작 시각 계산
+  const todayStart = new Date();
+  todayStart.setHours(todayStart.getHours() + 9); // UTC → KST
+  todayStart.setHours(0, 0, 0, 0);
+  todayStart.setHours(todayStart.getHours() - 9); // KST → UTC
+
   const where: Record<string, unknown> = {};
   if (params.category) where.category = params.category;
+  if (params.filter === "today") {
+    where.createdAt = { gte: todayStart };
+  }
   if (params.q) {
     where.OR = [
       { name: { contains: params.q, mode: "insensitive" } },
@@ -45,7 +55,7 @@ export default async function HomePage({ searchParams }: PageProps) {
     default: orderBy = { score: "desc" };
   }
 
-  const [items, total, categoryCounts] = await Promise.all([
+  const [items, total, categoryCounts, todayCount] = await Promise.all([
     prisma.service.findMany({
       where: where as never,
       orderBy: orderBy as never,
@@ -56,6 +66,9 @@ export default async function HomePage({ searchParams }: PageProps) {
     prisma.service.groupBy({
       by: ["category"],
       _count: { id: true },
+    }),
+    prisma.service.count({
+      where: { createdAt: { gte: todayStart } },
     }),
   ]);
 
@@ -85,9 +98,11 @@ export default async function HomePage({ searchParams }: PageProps) {
         <ServiceGrid
           initialServices={JSON.parse(JSON.stringify(sortedItems))}
           totalCount={total}
+          todayCount={todayCount}
           currentPage={page}
           hasMore={page < totalPages}
           currentSort={sort}
+          currentFilter={params.filter}
         />
       </main>
       <Footer />

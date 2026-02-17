@@ -46,11 +46,11 @@ export function ServiceVotePanel({ serviceId, initialUpvotes, initialDownvotes }
   };
 
   return (
-    <div className="flex items-center gap-3 my-6">
+    <div className="flex items-center gap-2 sm:gap-3 my-6 flex-wrap">
       <button
         onClick={() => handleVote("upvote")}
         disabled={loading}
-        className={`flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium transition-all duration-200
+        className={`flex items-center gap-2 px-3 py-2.5 sm:px-5 sm:py-3 rounded-xl text-sm font-medium transition-all duration-200
           ${currentVote === "upvote"
             ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-neon-blue ring-1 dark:ring-neon-blue/30 ring-neon-blue/20"
             : "dark:bg-white/5 bg-black/5 dark:hover:bg-neon-blue/20 hover:bg-neon-blue/10 dark:text-zinc-300 text-zinc-600 dark:hover:text-neon-blue hover:text-neon-blue"
@@ -63,7 +63,7 @@ export function ServiceVotePanel({ serviceId, initialUpvotes, initialDownvotes }
       <button
         onClick={() => handleVote("downvote")}
         disabled={loading}
-        className={`flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-medium transition-all duration-200
+        className={`flex items-center gap-2 px-3 py-2.5 sm:px-5 sm:py-3 rounded-xl text-sm font-medium transition-all duration-200
           ${currentVote === "downvote"
             ? "dark:bg-pink-500/20 bg-pink-500/10 dark:text-pink-400 text-pink-600 ring-1 dark:ring-pink-500/30 ring-pink-500/20"
             : "dark:bg-white/5 bg-black/5 dark:hover:bg-pink-500/20 hover:bg-pink-500/10 dark:text-zinc-300 text-zinc-600 dark:hover:text-pink-400 hover:text-pink-600"
@@ -74,7 +74,7 @@ export function ServiceVotePanel({ serviceId, initialUpvotes, initialDownvotes }
       </button>
 
       {currentVote && (
-        <span className="text-xs dark:text-zinc-500 text-zinc-400 ml-1">
+        <span className="hidden sm:inline text-xs dark:text-zinc-500 text-zinc-400 ml-1">
           다시 클릭하면 취소됩니다
         </span>
       )}

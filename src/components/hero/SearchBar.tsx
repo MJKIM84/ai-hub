@@ -49,7 +49,7 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   return (
     <div ref={searchWrapperRef} className="max-w-2xl mx-auto px-4 -mt-2 mb-8">
       <form onSubmit={handleSubmit} className="relative neon-border rounded-2xl">
-        <div className="glass flex items-center px-5 py-4">
+        <div className="glass flex items-center px-3 py-3 sm:px-5 sm:py-4">
           <Search className="w-5 h-5 dark:text-zinc-400 text-zinc-500 shrink-0" />
           <input
             type="text"

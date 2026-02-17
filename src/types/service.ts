@@ -4,6 +4,8 @@ export interface Service {
   url: string;
   name: string;
   description: string | null;
+  nameKo: string | null;
+  descriptionKo: string | null;
   tagline: string | null;
   logoUrl: string | null;
   faviconUrl: string | null;

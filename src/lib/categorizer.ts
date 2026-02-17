@@ -7,6 +7,7 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
   'text-generation': [
     'gpt', 'llm', 'chatbot', 'chat', 'language model', 'conversational',
     '챗봇', '대화', '언어 모델', 'ai assistant', 'copilot',
+    'ai agent', 'ai chat', 'ai-powered',
   ],
   'image-generation': [
     'image generat', 'text to image', 'diffusion', 'dall-e', 'midjourney',
@@ -23,6 +24,7 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
   'productivity': [
     'productivity', 'workflow', 'automation', 'project management', 'notion',
     '생산성', '자동화', '업무', 'task management', 'scheduling',
+    'ai tool', 'ai app', 'ai platform', 'ai-based',
   ],
   'voice-speech': [
     'speech', 'voice', 'tts', 'stt', 'text to speech', 'speech to text',
@@ -85,11 +87,13 @@ export function suggestCategory(text: string): {
   }
 
   const maxScore = sorted[0][1];
-  const totalKeywords = CATEGORY_KEYWORDS[sorted[0][0]].length;
+
+  // confidence 계산: 키워드 1개 매칭 = 0.3, 2개 = 0.5, 3개 = 0.7, 4개+ = 0.9
+  const confidence = Math.min(maxScore * 0.2 + 0.1, 1);
 
   return {
     primary: sorted[0][0],
-    confidence: Math.min(maxScore / totalKeywords, 1),
+    confidence,
     alternatives: sorted.slice(1, 4).map(([cat]) => cat),
   };
 }

@@ -48,10 +48,10 @@ export function HeroSection() {
   const slide = HERO_SLIDES[current];
 
   return (
-    <section className="relative pt-32 pb-12 px-4 hero-gradient overflow-hidden">
+    <section className="relative pt-24 sm:pt-32 pb-8 sm:pb-12 px-4 hero-gradient overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-1/4 w-72 h-72 bg-neon-blue/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute top-40 right-1/4 w-96 h-96 bg-neon-purple/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
+        <div className="absolute top-20 left-1/4 w-48 h-48 sm:w-72 sm:h-72 bg-neon-blue/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-40 right-1/4 w-56 h-56 sm:w-96 sm:h-96 bg-neon-purple/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
       </div>
 
       <div className="relative max-w-4xl mx-auto text-center">
@@ -76,7 +76,7 @@ export function HeroSection() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6">
             <span className="dark:text-white text-zinc-900">{slide.titleTop}</span>
             <br />
             <span className={`bg-gradient-to-r ${slide.gradient} bg-clip-text text-transparent`}>
@@ -85,7 +85,7 @@ export function HeroSection() {
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl dark:text-zinc-400 text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl dark:text-zinc-400 text-zinc-500 max-w-2xl mx-auto mb-6 sm:mb-10 leading-relaxed">
             {slide.desc1}
             <br className="hidden sm:block" />
             {slide.desc2}

@@ -37,8 +37,8 @@ export function CategoryFilter({ activeCategory, categoryCounts }: CategoryFilte
   const current = activeCategory || "all";
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-      <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
+      <div className="flex gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar pb-2">
         {CATEGORIES.map((cat) => {
           const Icon = iconMap[cat.icon];
           const isActive = current === cat.id;
@@ -51,7 +51,7 @@ export function CategoryFilter({ activeCategory, categoryCounts }: CategoryFilte
               <button
                 key={cat.id}
                 onClick={() => setCategory(cat.id)}
-                className={`indie-dev-btn flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold whitespace-nowrap
+                className={`indie-dev-btn flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap
                   transition-all duration-200 shrink-0 relative overflow-hidden
                   ${isActive
                     ? "indie-dev-btn-active shadow-lg"
@@ -73,7 +73,7 @@ export function CategoryFilter({ activeCategory, categoryCounts }: CategoryFilte
             <button
               key={cat.id}
               onClick={() => setCategory(cat.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap
                 transition-all duration-200 shrink-0
                 ${isActive
                   ? "bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-lg shadow-neon-blue/20"

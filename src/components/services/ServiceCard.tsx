@@ -19,6 +19,8 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
   const pricing = PRICING_MODELS.find((p) => p.id === service.pricingModel);
 
   const handleClick = () => {
+    // 현재 스크롤 위치 저장
+    sessionStorage.setItem("scrollY", String(window.scrollY));
     router.push(`/service/${service.slug}`);
   };
 
@@ -43,12 +45,27 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
   };
 
   const logoSrc = service.logoUrl || service.faviconUrl || service.ogImageUrl;
+  const displayDescription = service.descriptionKo || service.description || service.tagline || "설명이 없습니다.";
 
   return (
     <div
       onClick={handleClick}
-      className="glass-card p-5 cursor-pointer group relative flex flex-col h-full"
+      className="glass-card p-4 sm:p-5 cursor-pointer group relative flex flex-col h-full"
     >
+      {/* Hover 시 전체 설명 오버레이 (모바일에서는 숨김 — 터치 디바이스 hover 문제 방지) */}
+      {(service.description || service.tagline) && (
+        <div className="absolute inset-0 z-10 rounded-2xl p-5 hidden md:flex flex-col justify-center
+          dark:bg-zinc-900/95 bg-white/95 backdrop-blur-sm
+          opacity-0 group-hover:opacity-100 transition-opacity duration-200
+          pointer-events-none">
+          <h4 className="font-semibold dark:text-white text-zinc-900 text-sm mb-2">
+            {service.name}
+          </h4>
+          <p className="text-sm dark:text-zinc-300 text-zinc-600 leading-relaxed overflow-y-auto max-h-[200px]">
+            {displayDescription}
+          </p>
+        </div>
+      )}
       <div className="flex items-start gap-4 mb-3">
         <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0
           dark:bg-white/10 bg-black/5 flex items-center justify-center">
@@ -88,7 +105,7 @@ export function ServiceCard({ service, onVote }: ServiceCardProps) {
             )}
           </div>
           <p className="text-sm dark:text-zinc-400 text-zinc-500 line-clamp-2 mt-1 leading-relaxed">
-            {service.description || service.tagline || "설명이 없습니다."}
+            {displayDescription}
           </p>
         </div>
       </div>

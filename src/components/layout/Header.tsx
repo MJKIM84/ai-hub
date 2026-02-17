@@ -25,10 +25,10 @@ export function Header() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowRegister(true)}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium
+                className="flex items-center gap-2 px-3 py-2.5 sm:px-4 sm:py-2 rounded-xl text-sm font-medium
                   bg-gradient-to-r from-neon-blue to-neon-purple text-white
-                  hover:opacity-90 transition-all duration-200 hover:scale-105
-                  shadow-lg shadow-neon-blue/20"
+                  hover:opacity-90 transition-all duration-200 active:scale-95 sm:hover:scale-105
+                  shadow-lg shadow-neon-blue/20 min-h-[44px]"
               >
                 <Plus className="w-4 h-4" />
                 <span className="hidden sm:inline">서비스 등록</span>

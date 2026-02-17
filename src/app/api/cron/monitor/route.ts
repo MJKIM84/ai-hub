@@ -1,18 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
+import { sendSlackMessage } from "@/lib/slack";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://findmy.ai.kr";
 const MAX_RETRIES = 2;
-const HEALTH_TIMEOUT = 15000; // 15초
+const HEALTH_TIMEOUT = 15000;
 
 interface MonitorResult {
   healthy: boolean;
   attempts: number;
   lastError?: string;
   redeploy?: { triggered: boolean; success?: boolean; error?: string };
-  notification?: { sent: boolean; method?: string; error?: string };
+  slackNotified?: boolean;
 }
 
 async function checkHealth(): Promise<{ ok: boolean; error?: string }> {
@@ -57,58 +58,8 @@ async function triggerRedeploy(): Promise<{ success: boolean; error?: string }> 
   }
 }
 
-async function sendNotification(
-  message: string,
-  isRecovery: boolean = false
-): Promise<{ sent: boolean; method?: string; error?: string }> {
-  // 1. Discord 웹훅 (우선)
-  const discordWebhook = process.env.DISCORD_WEBHOOK_URL;
-  if (discordWebhook) {
-    try {
-      const emoji = isRecovery ? "✅" : "🚨";
-      const res = await fetch(discordWebhook, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          content: `${emoji} **FindMyAI 모니터링**\n${message}\n\n🕐 ${new Date().toLocaleString("ko-KR", { timeZone: "Asia/Seoul" })}`,
-        }),
-        signal: AbortSignal.timeout(10000),
-      });
-      if (res.ok) return { sent: true, method: "discord" };
-    } catch {}
-  }
-
-  // 2. Slack 웹훅
-  const slackWebhook = process.env.SLACK_WEBHOOK_URL;
-  if (slackWebhook) {
-    try {
-      const res = await fetch(slackWebhook, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          text: `${isRecovery ? "✅" : "🚨"} FindMyAI: ${message}`,
-        }),
-        signal: AbortSignal.timeout(10000),
-      });
-      if (res.ok) return { sent: true, method: "slack" };
-    } catch {}
-  }
-
-  // 3. 이메일 (향후 확장 — 현재는 로그만)
-  const alertEmail = process.env.ALERT_EMAIL;
-  if (alertEmail) {
-    console.warn(`[Monitor] 이메일 알림 대상: ${alertEmail}, 메시지: ${message}`);
-    // 향후 SendGrid/Resend 등 연동 시 구현
-  }
-
-  // 웹훅이 설정되지 않았으면 콘솔 로그만
-  console.error(`[Monitor] ALERT: ${message}`);
-  return { sent: false, error: "No notification channel configured" };
-}
-
 export async function GET(request: NextRequest) {
   try {
-    // Vercel Cron 인증
     const authHeader = request.headers.get("authorization");
     const cronSecret = process.env.CRON_SECRET;
 
@@ -118,7 +69,6 @@ export async function GET(request: NextRequest) {
 
     const result: MonitorResult = { healthy: false, attempts: 0 };
 
-    // 재시도 포함 헬스 체크
     for (let i = 0; i <= MAX_RETRIES; i++) {
       result.attempts = i + 1;
       const health = await checkHealth();
@@ -130,7 +80,6 @@ export async function GET(request: NextRequest) {
 
       result.lastError = health.error;
 
-      // 마지막 시도가 아니면 3초 대기 후 재시도
       if (i < MAX_RETRIES) {
         await new Promise((r) => setTimeout(r, 3000));
       }
@@ -145,21 +94,25 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // 서비스 다운 감지
+    // 서비스 다운 감지 — Slack 알림
     console.error(`[Monitor] Service DOWN after ${result.attempts} attempts: ${result.lastError}`);
 
-    // 알림 전송
-    const notifMsg = `서비스 다운 감지!\n에러: ${result.lastError}\n시도 횟수: ${result.attempts}`;
-    result.notification = await sendNotification(notifMsg);
+    result.slackNotified = await sendSlackMessage({
+      text: `🚨 FindMyAI 서비스 다운 감지!\n에러: ${result.lastError}\n시도 횟수: ${result.attempts}`,
+    });
 
     // Vercel 재배포 트리거
     const redeployResult = await triggerRedeploy();
     result.redeploy = { triggered: true, ...redeployResult };
 
     if (redeployResult.success) {
-      await sendNotification("자동 재배포가 트리거되었습니다. 잠시 후 서비스가 복구될 예정입니다.", false);
+      await sendSlackMessage({
+        text: "🔄 FindMyAI 자동 재배포가 트리거되었습니다. 잠시 후 서비스가 복구될 예정입니다.",
+      });
     } else {
-      await sendNotification(`⚠️ 자동 재배포 실패: ${redeployResult.error}\n수동 확인이 필요합니다.`, false);
+      await sendSlackMessage({
+        text: `⚠️ FindMyAI 자동 재배포 실패: ${redeployResult.error}\n수동 확인이 필요합니다.`,
+      });
     }
 
     return NextResponse.json(

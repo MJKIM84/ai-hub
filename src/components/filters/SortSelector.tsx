@@ -28,14 +28,14 @@ export function SortSelector({ currentSort }: { currentSort?: string }) {
   const active = currentSort || "gravity";
 
   return (
-    <div className="flex items-center gap-2">
-      <ArrowUpDown className="w-4 h-4 dark:text-zinc-500 text-zinc-400" />
-      <div className="flex gap-1">
+    <div className="flex items-center gap-1 sm:gap-2">
+      <ArrowUpDown className="w-4 h-4 dark:text-zinc-500 text-zinc-400 hidden sm:block" />
+      <div className="flex gap-0.5 sm:gap-1">
         {SORT_OPTIONS.map((opt) => (
           <button
             key={opt.id}
             onClick={() => setSort(opt.id)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200
+            className={`px-2 py-1.5 sm:px-3 sm:py-1.5 rounded-lg text-xs font-medium transition-all duration-200
               ${active === opt.id
                 ? "dark:bg-white/10 bg-black/10 dark:text-white text-zinc-900"
                 : "dark:text-zinc-500 text-zinc-400 dark:hover:text-zinc-300 hover:text-zinc-600"

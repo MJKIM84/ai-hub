@@ -3,8 +3,10 @@ import { scrapeServiceMetadata } from "@/lib/scraper";
 import { suggestCategory } from "@/lib/categorizer";
 import { calculateGravityScore } from "@/lib/ranking";
 import { createSlug } from "@/lib/utils";
+import { translateService } from "@/lib/translator";
 import { normalizeUrl, extractDomain, checkDuplicate } from "./dedup";
 import { SOURCE_FETCHERS, type DiscoveredItem } from "./sources";
+import { validateCrawledServices, type ValidationReport } from "./validator";
 
 interface CrawlResult {
   crawlRunId: string;
@@ -13,6 +15,8 @@ interface CrawlResult {
   urlsNew: number;
   urlsDuplicate: number;
   servicesCreated: number;
+  createdServiceIds: string[];
+  validation: ValidationReport | null;
   errors: string[];
 }
 
@@ -34,15 +38,17 @@ export async function runDailyCrawl(): Promise<CrawlResult> {
     urlsNew: 0,
     urlsDuplicate: 0,
     servicesCreated: 0,
+    createdServiceIds: [],
+    validation: null,
     errors: [],
   };
 
   try {
-    // 2. 활성 소스 조회 (priority 내림차순, 최대 3개)
+    // 2. 활성 소스 조회 (priority 내림차순, 최대 5개 — 웹 소스 우선)
     const sources = await prisma.discoverySource.findMany({
       where: { isActive: true },
       orderBy: { priority: "desc" },
-      take: 3,
+      take: 5,
     });
 
     // 소스가 없으면 기본 소스 시드
@@ -51,7 +57,7 @@ export async function runDailyCrawl(): Promise<CrawlResult> {
       const seeded = await prisma.discoverySource.findMany({
         where: { isActive: true },
         orderBy: { priority: "desc" },
-        take: 3,
+        take: 5,
       });
       sources.push(...seeded);
     }
@@ -91,7 +97,19 @@ export async function runDailyCrawl(): Promise<CrawlResult> {
       }
     }
 
-    // 4. CrawlRun 완료 처리
+    // 4. 새로 생성된 서비스 검증
+    if (result.createdServiceIds.length > 0) {
+      try {
+        console.log(`[Crawl] ${result.createdServiceIds.length}개 신규 서비스 검증 시작...`);
+        result.validation = await validateCrawledServices(result.createdServiceIds);
+        console.log(`[Crawl] 검증 완료: ${result.validation.passed}/${result.validation.totalChecked} 통과, ${result.validation.warnings.length}건 경고`);
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        result.errors.push(`[Validation] ${msg}`);
+      }
+    }
+
+    // 5. CrawlRun 완료 처리
     await prisma.crawlRun.update({
       where: { id: crawlRun.id },
       data: {
@@ -178,8 +196,9 @@ async function processDiscoveredUrl(
       `${metadata.name} ${metadata.description || ""}`
     );
 
-    // 자동 승인 조건: 메타데이터 추출 성공 + 카테고리 confidence > 0.3
-    const autoApprove = categoryResult.confidence > 0.3;
+    // 자동 승인 조건: 메타데이터 추출 성공 + 카테고리 매칭됨 (confidence > 0)
+    // 이미 AI 관련 소스에서 발견된 URL이므로 키워드 1개만 매칭돼도 승인
+    const autoApprove = categoryResult.confidence >= 0.3;
 
     if (autoApprove) {
       // 서비스 생성
@@ -191,12 +210,17 @@ async function processDiscoveredUrl(
         slug = `${slug}-${Date.now().toString(36)}`;
       }
 
+      // 영어 서비스면 한글 번역
+      const translation = await translateService(metadata.name, metadata.description);
+
       const service = await prisma.service.create({
         data: {
           slug,
           url: item.url,
           name: metadata.name,
           description: metadata.description,
+          nameKo: translation.nameKo,
+          descriptionKo: translation.descriptionKo,
           category: categoryResult.primary,
           tags: JSON.stringify(metadata.suggestedTags),
           pricingModel: "free",
@@ -208,6 +232,7 @@ async function processDiscoveredUrl(
       });
 
       result.servicesCreated++;
+      result.createdServiceIds.push(service.id);
 
       await prisma.discoveryLog.create({
         data: {
@@ -259,20 +284,28 @@ async function processDiscoveredUrl(
 
 /**
  * 기본 소스 시드
+ * 웹 AI 디렉토리 소스를 높은 priority로, GitHub은 낮은 priority로 설정
  */
 async function seedDefaultSources() {
   const defaults = [
+    // 웹 AI 디렉토리 (높은 priority — 우선 크롤)
     {
-      name: "Hacker News (Show HN)",
-      type: "hackernews",
-      url: "https://hn.algolia.com/api/v1/search_by_date",
-      priority: 10,
+      name: "Futurepedia",
+      type: "futurepedia",
+      url: "https://www.futurepedia.io/ai-tools",
+      priority: 9,
     },
     {
-      name: "GitHub Trending",
-      type: "github",
-      url: "https://github.com/trending",
-      priority: 5,
+      name: "Toolify AI",
+      type: "toolify",
+      url: "https://www.toolify.ai/",
+      priority: 9,
+    },
+    {
+      name: "BensBites",
+      type: "bensbites",
+      url: "https://bensbites.com/trending",
+      priority: 8,
     },
     {
       name: "Product Hunt AI",
@@ -281,17 +314,30 @@ async function seedDefaultSources() {
       priority: 8,
     },
     {
+      name: "Hacker News (Show HN)",
+      type: "hackernews",
+      url: "https://hn.algolia.com/api/v1/search_by_date",
+      priority: 7,
+    },
+    {
       name: "There Is An AI For That",
       type: "theresanai",
       url: "https://theresanaiforthat.com/new/",
       priority: 7,
+    },
+    // GitHub — 낮은 priority (1000+ 스타만 필터)
+    {
+      name: "GitHub Trending",
+      type: "github",
+      url: "https://github.com/trending",
+      priority: 3,
     },
   ];
 
   for (const source of defaults) {
     await prisma.discoverySource.upsert({
       where: { url: source.url },
-      update: {},
+      update: { priority: source.priority },
       create: source,
     });
   }
