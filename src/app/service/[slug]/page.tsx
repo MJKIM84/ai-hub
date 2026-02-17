@@ -41,42 +41,75 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const category = CATEGORIES.find((c) => c.id === service.category);
-  const title = `${service.name} - ${category?.nameKo || "AI 서비스"} | FindMyAI`;
-  const description =
-    service.description ||
-    service.tagline ||
-    `${service.name}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. FindMyAI에서 자세한 정보를 확인하세요.`;
+  const pricing = PRICING_MODELS.find((p) => p.id === service.pricingModel);
+
+  // 한국어 이름 우선 사용
+  const displayName = service.nameKo || service.name;
+  const categoryName = category?.nameKo || "AI 서비스";
+  const pricingName = pricing?.nameKo || "";
+
+  // 한국어 description 우선, 없으면 영어 + 한국어 보조 설명 생성
+  const koDesc = service.descriptionKo;
+  const enDesc = service.description || service.tagline;
+  const richDescription = koDesc
+    ? `${koDesc} ${displayName}은(는) ${categoryName} 카테고리의 ${pricingName ? pricingName + " " : ""}AI 서비스입니다.`
+    : enDesc
+    ? `${displayName} - ${enDesc}. ${categoryName} 분야 AI 도구로 FindMyAI에서 리뷰, 가격, 대안 정보를 확인하세요.`
+    : `${displayName}은(는) ${categoryName} 카테고리의 ${pricingName ? pricingName + " " : ""}AI 서비스입니다. 사용자 리뷰, 가격 정보, 대안 비교를 FindMyAI에서 확인하세요.`;
+
+  // SEO에 최적화된 title
+  const title = `${displayName} - ${categoryName} | 가격, 리뷰, 대안 비교`;
+  const ogTitle = `${displayName} - ${categoryName} AI 도구 | FindMyAI`;
   const ogImage = service.ogImageUrl || service.logoUrl || service.faviconUrl;
 
+  // 풍부한 키워드: 서비스명 변형 + 카테고리 + 태그 + 한국어 검색어
+  const parsedTags: string[] = (() => { try { return JSON.parse(service.tags) as string[]; } catch { return []; } })();
+  const tagCategories = parsedTags
+    .map((t) => CATEGORIES.find((c) => c.id === t)?.nameKo)
+    .filter(Boolean) as string[];
+
+  const keywords = [
+    service.name,
+    displayName,
+    `${service.name} 사용법`,
+    `${service.name} 가격`,
+    `${service.name} 후기`,
+    `${service.name} 대안`,
+    `${service.name} 한국어`,
+    `${displayName} 리뷰`,
+    categoryName,
+    category?.name || "",
+    ...tagCategories,
+    ...parsedTags,
+    pricingName,
+    "AI 서비스",
+    "AI 도구",
+    "인공지능",
+    ...(service.isKorean ? ["한국 AI", "국산 AI", "한국어 AI"] : []),
+  ].filter(Boolean);
+
   return {
-    title: `${service.name} - ${category?.nameKo || "AI 서비스"}`,
-    description,
-    keywords: [
-      service.name,
-      category?.nameKo || "",
-      category?.name || "",
-      "AI 서비스",
-      "AI 도구",
-      ...((() => { try { return JSON.parse(service.tags) as string[]; } catch { return []; } })()),
-    ].filter(Boolean),
+    title: `${displayName} - ${categoryName}`,
+    description: richDescription,
+    keywords,
     alternates: {
       canonical: `/service/${slug}`,
     },
     openGraph: {
-      title,
-      description,
+      title: ogTitle,
+      description: richDescription,
       url: `${SITE_URL}/service/${slug}`,
       type: "article",
       locale: "ko_KR",
       siteName: "FindMyAI",
       ...(ogImage && {
-        images: [{ url: ogImage, width: 1200, height: 630, alt: service.name }],
+        images: [{ url: ogImage, width: 1200, height: 630, alt: displayName }],
       }),
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: ogTitle,
+      description: richDescription,
       ...(ogImage && { images: [ogImage] }),
     },
   };
@@ -137,17 +170,25 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     createdAt: c.createdAt,
   }));
 
-  // JSON-LD — SoftwareApplication + BreadcrumbList
+  // 한국어 이름/설명 우선
+  const displayName = service.nameKo || service.name;
+  const displayDesc = service.descriptionKo || service.description || service.tagline || "";
+  const parsedTags: string[] = (() => { try { return JSON.parse(service.tags) as string[]; } catch { return []; } })();
+
+  // JSON-LD — SoftwareApplication + BreadcrumbList + FAQPage + WebPage
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "SoftwareApplication",
         name: service.name,
-        description: service.description || service.tagline || "",
+        ...(service.nameKo && { alternateName: service.nameKo }),
+        description: displayDesc,
         url: service.url,
-        applicationCategory: "AI",
+        applicationCategory: category?.name || "AI",
+        applicationSubCategory: category?.nameKo || "AI 도구",
         operatingSystem: "Web",
+        inLanguage: service.isKorean ? "ko" : "en",
         ...(logoSrc && { image: logoSrc }),
         ...(pricing && {
           offers: {
@@ -155,6 +196,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             price: pricing.id === "free" ? "0" : undefined,
             priceCurrency: "KRW",
             availability: "https://schema.org/InStock",
+            category: pricing.nameKo,
           },
         }),
         aggregateRating: {
@@ -164,6 +206,27 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           bestRating: "5",
           worstRating: "1",
         },
+        ...(parsedTags.length > 0 && {
+          keywords: parsedTags.map((t) => {
+            const tagCat = CATEGORIES.find((c) => c.id === t);
+            return tagCat ? tagCat.nameKo : t;
+          }).join(", "),
+        }),
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}/service/${slug}`,
+        url: `${SITE_URL}/service/${slug}`,
+        name: `${displayName} - ${category?.nameKo || "AI 서비스"} | FindMyAI`,
+        description: displayDesc,
+        inLanguage: "ko-KR",
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        about: {
+          "@type": "SoftwareApplication",
+          name: service.name,
+        },
+        datePublished: service.createdAt.toISOString(),
+        dateModified: service.updatedAt.toISOString(),
       },
       {
         "@type": "BreadcrumbList",
@@ -183,8 +246,42 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           {
             "@type": "ListItem",
             position: category ? 3 : 2,
-            name: service.name,
+            name: displayName,
             item: `${SITE_URL}/service/${slug}`,
+          },
+        ],
+      },
+      // FAQ 구조화 데이터 — 서비스별 자동 생성 (구글 리치 스니펫)
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: `${displayName}은(는) 무료인가요?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: pricing?.id === "free"
+                ? `네, ${displayName}은(는) 무료로 사용할 수 있는 AI 서비스입니다.`
+                : pricing?.id === "freemium"
+                ? `${displayName}은(는) 기본 기능을 무료로 제공하며, 추가 기능은 유료입니다 (프리미엄 모델).`
+                : `${displayName}은(는) 유료 AI 서비스입니다. 자세한 가격은 공식 사이트에서 확인해주세요.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: `${displayName}은(는) 어떤 AI 서비스인가요?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: displayDesc || `${displayName}은(는) ${category?.nameKo || "AI"} 카테고리의 서비스입니다. FindMyAI에서 자세한 정보를 확인하세요.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: `${displayName}의 대안은 무엇인가요?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `FindMyAI에서 ${category?.nameKo || "AI"} 카테고리의 다른 서비스들을 비교해보세요. 다양한 대안과 리뷰를 확인할 수 있습니다.`,
+            },
           },
         ],
       },
