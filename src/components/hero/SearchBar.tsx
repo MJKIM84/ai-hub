@@ -66,7 +66,7 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     hasScrolled.current = true;
 
     if (searchWrapperRef.current) {
-      const offset = 20;
+      const offset = 80; // 고정 헤더 높이 + 여유 공간
       const top = searchWrapperRef.current.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top, behavior: "smooth" });
     }
