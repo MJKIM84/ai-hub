@@ -1,7 +1,7 @@
 "use client";
 
 import { Search, X, Loader2 } from "lucide-react";
-import { useState, useCallback, useRef } from "react";
+import { useState, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export function SearchBar({ initialQuery }: { initialQuery?: string }) {
@@ -12,29 +12,27 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const hasScrolled = useRef(false);
   const searchWrapperRef = useRef<HTMLDivElement>(null);
   const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // searchParams를 ref로 최신 상태 유지
+  const searchParamsRef = useRef(searchParams);
+  searchParamsRef.current = searchParams;
 
-  const executeSearch = useCallback(
-    (value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (value.trim()) {
-        params.set("q", value.trim());
-      } else {
-        params.delete("q");
-      }
-      params.delete("page");
-      router.replace(`/?${params.toString()}`, { scroll: false });
-      // 검색 완료 후 로딩 해제
-      setTimeout(() => setIsSearching(false), 300);
-    },
-    [router, searchParams]
-  );
+  const executeSearch = (value: string) => {
+    const params = new URLSearchParams(searchParamsRef.current.toString());
+    if (value.trim()) {
+      params.set("q", value.trim());
+    } else {
+      params.delete("q");
+    }
+    params.delete("page");
+    router.push(`/?${params.toString()}`, { scroll: false });
+    setTimeout(() => setIsSearching(false), 500);
+  };
 
   // 키 입력 핸들러 — 디바운스 검색
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setQuery(value);
 
-    // 이전 타이머 취소
     if (debounceTimer.current) {
       clearTimeout(debounceTimer.current);
     }
@@ -47,7 +45,6 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // 엔터 키 → 즉시 검색
     if (debounceTimer.current) {
       clearTimeout(debounceTimer.current);
     }
@@ -60,7 +57,7 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
     if (debounceTimer.current) {
       clearTimeout(debounceTimer.current);
     }
-    setIsSearching(false);
+    setIsSearching(true);
     executeSearch("");
   };
 
