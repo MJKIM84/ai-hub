@@ -9,7 +9,6 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   const [isSearching, setIsSearching] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
-  const hasScrolled = useRef(false);
   const searchWrapperRef = useRef<HTMLDivElement>(null);
   const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   // searchParams를 ref로 최신 상태 유지
@@ -62,14 +61,13 @@ export function SearchBar({ initialQuery }: { initialQuery?: string }) {
   };
 
   const handleFocus = () => {
-    if (hasScrolled.current) return;
-    hasScrolled.current = true;
-
-    if (searchWrapperRef.current) {
-      const offset = 80; // 고정 헤더 높이 + 여유 공간
-      const top = searchWrapperRef.current.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
+    if (!searchWrapperRef.current) return;
+    const rect = searchWrapperRef.current.getBoundingClientRect();
+    // 검색창이 이미 헤더 아래 충분히 보이면 스크롤하지 않음
+    if (rect.top >= 70 && rect.top <= 200) return;
+    const headerHeight = 72;
+    const top = rect.top + window.scrollY - headerHeight;
+    window.scrollTo({ top, behavior: "smooth" });
   };
 
   return (
