@@ -906,19 +906,30 @@ function AdminPage() {
                   {dashboard ? (
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                       {[
-                        { label: "전체 서비스", value: dashboard.totalServices, color: "text-neon-blue" },
-                        { label: "오늘 등록", value: dashboard.todayServices, color: "text-neon-green" },
-                        { label: "총 클릭수", value: dashboard.totalClicks.toLocaleString(), color: "text-neon-purple" },
-                        { label: "총 댓글", value: dashboard.totalComments, color: "text-neon-pink" },
-                        { label: "대기 문의", value: dashboard.pendingFeedback, color: "text-yellow-400" },
-                        { label: "대기 수정요청", value: dashboard.pendingEditRequests, color: "text-yellow-400" },
-                        { label: "대기 발견", value: dashboard.pendingDiscoveries, color: "text-yellow-400" },
-                        { label: "신고된 댓글", value: dashboard.reportedComments, color: "text-red-400" },
+                        { label: "전체 서비스", value: dashboard.totalServices, color: "text-neon-blue", tab: "services" as Tab },
+                        { label: "오늘 등록", value: dashboard.todayServices, color: "text-neon-green", tab: "services" as Tab },
+                        { label: "총 클릭수", value: dashboard.totalClicks.toLocaleString(), color: "text-neon-purple", tab: "services" as Tab },
+                        { label: "총 댓글", value: dashboard.totalComments, color: "text-neon-pink", tab: "comments" as Tab },
+                        { label: "대기 문의", value: dashboard.pendingFeedback, color: "text-yellow-400", tab: "feedback" as Tab, filter: "pending" },
+                        { label: "대기 수정요청", value: dashboard.pendingEditRequests, color: "text-yellow-400", tab: "edit-requests" as Tab, filter: "pending" },
+                        { label: "대기 발견", value: dashboard.pendingDiscoveries, color: "text-yellow-400", tab: "discoveries" as Tab, filter: "pending" },
+                        { label: "신고된 댓글", value: dashboard.reportedComments, color: "text-red-400", tab: "reports" as Tab },
                       ].map((stat) => (
-                        <div key={stat.label} className="dark:bg-white/5 bg-black/5 rounded-xl p-4 text-center">
+                        <button
+                          key={stat.label}
+                          onClick={() => {
+                            setActiveTab(stat.tab);
+                            setStatusFilter(stat.filter || "");
+                            setCommentFilter("");
+                            setReportHiddenOnly(false);
+                          }}
+                          className="dark:bg-white/5 bg-black/5 rounded-xl p-4 text-center
+                            hover:dark:bg-white/10 hover:bg-black/10 transition-all cursor-pointer
+                            hover:ring-1 hover:dark:ring-white/10 hover:ring-black/10"
+                        >
                           <p className={`text-2xl font-bold ${stat.color}`}>{stat.value}</p>
                           <p className="text-xs dark:text-zinc-400 text-zinc-500 mt-1">{stat.label}</p>
-                        </div>
+                        </button>
                       ))}
                     </div>
                   ) : (
