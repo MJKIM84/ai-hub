@@ -1,25 +1,27 @@
 import { NextRequest } from "next/server";
 import { cookies } from "next/headers";
-import { scryptSync, randomBytes, timingSafeEqual } from "crypto";
+import { createHash, randomBytes } from "crypto";
 import { prisma } from "@/lib/prisma";
 
 const SESSION_COOKIE_NAME = "admin_session";
 const SESSION_MAX_AGE = 60 * 60 * 24; // 24시간
 
-// ─── 비밀번호 해싱 ───
+// ─── 비밀번호 해싱 (SHA-256 + salt — Node 버전 간 호환) ───
 
 export function hashPassword(password: string): string {
   const salt = randomBytes(16).toString("hex");
-  const hash = scryptSync(password, salt, 64).toString("hex");
+  const hash = createHash("sha256").update(salt + password).digest("hex");
   return `${salt}:${hash}`;
 }
 
 export function verifyPassword(password: string, stored: string): boolean {
-  const [salt, hash] = stored.split(":");
+  const idx = stored.indexOf(":");
+  if (idx === -1) return false;
+  const salt = stored.substring(0, idx);
+  const hash = stored.substring(idx + 1);
   if (!salt || !hash) return false;
-  const hashBuffer = Buffer.from(hash, "hex");
-  const derivedKey = scryptSync(password, salt, 64);
-  return timingSafeEqual(hashBuffer, derivedKey);
+  const computed = createHash("sha256").update(salt + password).digest("hex");
+  return computed === hash;
 }
 
 // ─── 세션 관리 ───
