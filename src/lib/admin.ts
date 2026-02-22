@@ -1,18 +1,34 @@
 import { NextRequest } from "next/server";
 import { cookies } from "next/headers";
+import { scryptSync, randomBytes, timingSafeEqual } from "crypto";
+import { prisma } from "@/lib/prisma";
 
 const SESSION_COOKIE_NAME = "admin_session";
 const SESSION_MAX_AGE = 60 * 60 * 24; // 24시간
 
-/**
- * 세션 토큰 생성 — HMAC 기반 간단 서명
- */
+// ─── 비밀번호 해싱 ───
+
+export function hashPassword(password: string): string {
+  const salt = randomBytes(16).toString("hex");
+  const hash = scryptSync(password, salt, 64).toString("hex");
+  return `${salt}:${hash}`;
+}
+
+export function verifyPassword(password: string, stored: string): boolean {
+  const [salt, hash] = stored.split(":");
+  if (!salt || !hash) return false;
+  const hashBuffer = Buffer.from(hash, "hex");
+  const derivedKey = scryptSync(password, salt, 64);
+  return timingSafeEqual(hashBuffer, derivedKey);
+}
+
+// ─── 세션 관리 ───
+
 function generateSessionToken(): string {
   const secret = process.env.ADMIN_SECRET || "fallback-secret";
   const timestamp = Date.now().toString();
   const payload = `${timestamp}:${secret}`;
 
-  // Web Crypto 없이 간단한 해시 생성
   let hash = 0;
   for (let i = 0; i < payload.length; i++) {
     const char = payload.charCodeAt(i);
@@ -22,9 +38,6 @@ function generateSessionToken(): string {
   return `${timestamp}:${Math.abs(hash).toString(36)}`;
 }
 
-/**
- * 세션 토큰 검증 — 24시간 이내 생성된 토큰인지 확인
- */
 function isValidSessionToken(token: string): boolean {
   const parts = token.split(":");
   if (parts.length !== 2) return false;
@@ -36,15 +49,34 @@ function isValidSessionToken(token: string): boolean {
   return age >= 0 && age < SESSION_MAX_AGE * 1000;
 }
 
-/**
- * 어드민 인증 — ID/비밀번호 검증
- */
-export function verifyAdminCredentials(id: string, password: string): boolean {
-  const adminId = process.env.ADMIN_ID;
-  const adminPassword = process.env.ADMIN_PASSWORD;
+// ─── 인증 ───
 
-  if (!adminId || !adminPassword) return false;
-  return id === adminId && password === adminPassword;
+/**
+ * DB 기반 관리자 인증 — 초기 계정 자동 생성 포함
+ */
+export async function verifyAdminCredentials(id: string, password: string): Promise<boolean> {
+  // DB에서 관리자 계정 확인
+  let admin = await prisma.adminUser.findUnique({ where: { username: id } });
+
+  // 계정이 없고, DB에 관리자 레코드가 하나도 없으면 초기 계정 생성
+  if (!admin) {
+    const count = await prisma.adminUser.count();
+    if (count === 0) {
+      const defaultId = process.env.ADMIN_ID || "mang84";
+      const defaultPw = process.env.ADMIN_PASSWORD || "0000";
+      admin = await prisma.adminUser.create({
+        data: {
+          username: defaultId,
+          password: hashPassword(defaultPw),
+        },
+      });
+    }
+  }
+
+  if (!admin) return false;
+  if (admin.username !== id) return false;
+
+  return verifyPassword(password, admin.password);
 }
 
 /**
@@ -72,13 +104,10 @@ export async function clearAdminSession(): Promise<void> {
 }
 
 /**
- * 어드민 인증 확인 (3가지 방식 지원)
- * 1. 세션 쿠키 (로그인 기반)
- * 2. Authorization 헤더 (Bearer token)
- * 3. 쿼리 파라미터 (?token=) — 하위 호환
+ * 어드민 인증 확인 (3가지 방식)
  */
 export function verifyAdminToken(request: NextRequest): boolean {
-  // 1. 세션 쿠키 확인
+  // 1. 세션 쿠키
   const sessionCookie = request.cookies.get(SESSION_COOKIE_NAME);
   if (sessionCookie && isValidSessionToken(sessionCookie.value)) {
     return true;

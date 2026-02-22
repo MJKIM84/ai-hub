@@ -21,11 +21,18 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
       return NextResponse.json({ error: "Service not found" }, { status: 404 });
     }
 
+    const allowedFields = [
+      "name", "nameKo", "description", "descriptionKo", "tagline",
+      "url", "category", "tags", "pricingModel",
+      "isVerified", "isKorean", "logoUrl", "faviconUrl", "ogImageUrl",
+    ];
+
     const updateData: Record<string, unknown> = {};
-    if (body.name !== undefined) updateData.name = body.name;
-    if (body.description !== undefined) updateData.description = body.description;
-    if (body.category !== undefined) updateData.category = body.category;
-    if (body.url !== undefined) updateData.url = body.url;
+    for (const field of allowedFields) {
+      if (body[field] !== undefined) {
+        updateData[field] = body[field];
+      }
+    }
 
     const updated = await prisma.service.update({
       where: { id },

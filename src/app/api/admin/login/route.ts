@@ -13,7 +13,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!verifyAdminCredentials(id, password)) {
+    const valid = await verifyAdminCredentials(id, password);
+    if (!valid) {
       // 브루트포스 방지용 지연
       await new Promise((r) => setTimeout(r, 1000));
       return NextResponse.json(
