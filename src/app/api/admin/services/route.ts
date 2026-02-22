@@ -13,8 +13,11 @@ export async function GET(request: NextRequest) {
     const limit = Math.min(50, Math.max(1, parseInt(searchParams.get("limit") || "20")));
     const search = searchParams.get("search") || "";
     const category = searchParams.get("category") || "";
-    const sort = searchParams.get("sort") || "createdAt";
-    const order = searchParams.get("order") || "desc";
+    const allowedSorts = ["createdAt", "clicks", "upvotes", "downvotes", "name", "category", "score"];
+    const sortParam = searchParams.get("sort") || "createdAt";
+    const sort = allowedSorts.includes(sortParam) ? sortParam : "createdAt";
+    const orderParam = searchParams.get("order") || "desc";
+    const order = orderParam === "asc" ? "asc" : "desc";
 
     const where: Record<string, unknown> = {};
 
@@ -54,6 +57,7 @@ export async function GET(request: NextRequest) {
           clicks: true,
           upvotes: true,
           downvotes: true,
+          score: true,
           logoUrl: true,
           createdAt: true,
         },

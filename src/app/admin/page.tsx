@@ -5,7 +5,7 @@ import {
   Globe, FileEdit, Database, Activity, MessageSquare, AlertTriangle, Mail,
   Check, X, ExternalLink, Loader2, RefreshCw, Eye, EyeOff, Trash2, ThumbsUp, ThumbsDown,
   LogOut, Lock, LayoutDashboard, Server, Search, ChevronLeft, ChevronRight, Settings,
-  Save, Pencil,
+  Save, Pencil, ArrowUpDown, ArrowUp, ArrowDown,
 } from "lucide-react";
 
 type Tab = "dashboard" | "services" | "discoveries" | "edit-requests" | "sources" | "crawl-runs" | "feedback" | "reports" | "comments";
@@ -573,6 +573,8 @@ function AdminPage() {
   const [servicePage, setServicePage] = useState(1);
   const [serviceTotalPages, setServiceTotalPages] = useState(1);
   const [serviceTotal, setServiceTotal] = useState(0);
+  const [serviceSort, setServiceSort] = useState("createdAt");
+  const [serviceOrder, setServiceOrder] = useState<"asc" | "desc">("desc");
   const [editingService, setEditingService] = useState<ServiceItem | null>(null);
   const [deletingServiceId, setDeletingServiceId] = useState<string | null>(null);
 
@@ -610,7 +612,7 @@ function AdminPage() {
         }
         case "services": {
           const searchParam = serviceSearch ? `&search=${encodeURIComponent(serviceSearch)}` : "";
-          const res = await fetch(`/api/admin/services?page=${servicePage}&limit=20${searchParam}`);
+          const res = await fetch(`/api/admin/services?page=${servicePage}&limit=20&sort=${serviceSort}&order=${serviceOrder}${searchParam}`);
           const data = await res.json();
           setServices(data.items || []);
           setServiceTotalPages(data.totalPages || 1);
@@ -667,7 +669,7 @@ function AdminPage() {
     } finally {
       setLoading(false);
     }
-  }, [authenticated, activeTab, statusFilter, reportHiddenOnly, commentFilter, servicePage, serviceSearch]);
+  }, [authenticated, activeTab, statusFilter, reportHiddenOnly, commentFilter, servicePage, serviceSearch, serviceSort, serviceOrder]);
 
   useEffect(() => { fetchData(); }, [fetchData]);
 
@@ -943,8 +945,8 @@ function AdminPage() {
               {/* ===== 서비스 관리 ===== */}
               {activeTab === "services" && (
                 <div>
-                  {/* 검색바 + 통계 */}
-                  <div className="p-4 border-b dark:border-white/5 border-black/5">
+                  {/* 검색바 + 정렬 */}
+                  <div className="p-4 border-b dark:border-white/5 border-black/5 space-y-3">
                     <div className="flex items-center gap-3">
                       <div className="flex-1 relative">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 dark:text-zinc-400 text-zinc-500" />
@@ -963,6 +965,46 @@ function AdminPage() {
                       <span className="text-xs dark:text-zinc-400 text-zinc-500 whitespace-nowrap">
                         총 {serviceTotal}개
                       </span>
+                    </div>
+                    {/* 정렬 옵션 */}
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <ArrowUpDown className="w-3.5 h-3.5 dark:text-zinc-500 text-zinc-400 shrink-0" />
+                      {[
+                        { key: "createdAt", label: "등록일" },
+                        { key: "clicks", label: "클릭수" },
+                        { key: "upvotes", label: "추천" },
+                        { key: "downvotes", label: "비추천" },
+                        { key: "name", label: "이름" },
+                        { key: "category", label: "카테고리" },
+                        { key: "score", label: "점수" },
+                      ].map((opt) => {
+                        const isActive = serviceSort === opt.key;
+                        return (
+                          <button
+                            key={opt.key}
+                            onClick={() => {
+                              if (isActive) {
+                                setServiceOrder(serviceOrder === "desc" ? "asc" : "desc");
+                              } else {
+                                setServiceSort(opt.key);
+                                setServiceOrder(opt.key === "name" || opt.key === "category" ? "asc" : "desc");
+                              }
+                              setServicePage(1);
+                            }}
+                            className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium transition-all
+                              ${isActive
+                                ? "dark:bg-neon-blue/20 bg-neon-blue/10 dark:text-neon-blue text-blue-600"
+                                : "dark:bg-white/5 bg-black/5 dark:text-zinc-400 text-zinc-500 hover:dark:bg-white/10 hover:bg-black/10"
+                              }`}
+                          >
+                            {opt.label}
+                            {isActive && (serviceOrder === "desc"
+                              ? <ArrowDown className="w-3 h-3" />
+                              : <ArrowUp className="w-3 h-3" />
+                            )}
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
 
