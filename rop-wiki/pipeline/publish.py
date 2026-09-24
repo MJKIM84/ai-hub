@@ -60,7 +60,7 @@ from lib import autoregion as ar  # noqa: E402
 from lib import frontmatter as fm  # noqa: E402
 from lib import paths, runs  # noqa: E402
 from lib.nav import write_mkdocs_yml  # noqa: E402
-from lib.render import AutoRegionError, load_backlog, refresh_all_auto_regions  # noqa: E402
+from lib.render import AutoRegionError, load_backlog, neutralize_footnotes, refresh_all_auto_regions  # noqa: E402
 from lib.source import load_source  # noqa: E402
 import render_run_md  # noqa: E402
 
@@ -1452,7 +1452,12 @@ class Publisher:
         for pg in (self.pages or {}).get("pages", []):
             kind = "폐기" if pg.get("status") == "deprecated" else ("생성" if pg.get("action") == "create" else "갱신")
             title = self._title_of(pg["path"])
-            pages_rows.append(f"| {kind} | [{_esc(title)}]({paths.rel_link(log_rel, paths.docs_rel(pg['path']))}) | {_esc(pg.get('diff_summary', ''))} |")
+            # 반영되지 않은 실행(보류·중단·원복)이면 새 페이지가 docs 에 없으므로 링크 대신 경로 글자만 적는다(깨진 링크 방지)
+            if (paths.ROOT / pg["path"]).exists():
+                page_cell = f"[{_esc(title)}]({paths.rel_link(log_rel, paths.docs_rel(pg['path']))})"
+            else:
+                page_cell = f"{_esc(title)} (`{pg['path']}`, 미반영)"
+            pages_rows.append(f"| {kind} | {page_cell} | {_esc(pg.get('diff_summary', ''))} |")
         side = ", ".join(f"{k} {v}건" for k, v in (("용어집", self.counts["glossary"]), ("참고문헌", self.counts["references"]), ("표준", self.counts["standards"]),
                                                  ("열린 질문", self.counts["open_questions"]), ("흐름 매트릭스 칸", self.counts["flow_cells"]),
                                                  ("트랙 백로그", self.counts["backlog"]), ("정정 요청", self.counts["corrections"])) if v)
@@ -1554,7 +1559,7 @@ class Publisher:
         if self.notes:
             nxt.append("- 퍼블리셔 메모: " + " / ".join(_esc(n) for n in self.notes[:6]))
         next_notes = "\n".join(nxt) if nxt else "없음"
-        return "\n".join([
+        return neutralize_footnotes("\n".join([
             f"## 실행 {self.run_id}", "",
             "### 실행 개요", "",
             "| 항목 | 값 |", "|---|---|",
@@ -1573,7 +1578,7 @@ class Publisher:
             "### 반려·보류 사유", "", park, "",
             "### 예산 사용량", "", budget_table, "",
             "### 다음 실행 메모", "", next_notes, "",
-        ])
+        ]))
 
     def write_daily_log_and_summary(self, final: bool, end_state: str | None = None, published: bool | None = None) -> None:
         if end_state is None:
@@ -1790,7 +1795,7 @@ def primary_page(pages: dict) -> str:
 
 
 def _esc(s) -> str:
-    return str(s if s is not None else "").replace("|", "\\|").replace("\n", " ")
+    return neutralize_footnotes(s).replace("|", "\\|").replace("\n", " ")
 
 
 def _log_segment(entry: str, label: str) -> str:

@@ -129,9 +129,19 @@ def all_pages(refresh: bool = False) -> list[tuple[str, dict]]:
 
 # --- 공통 도우미 ---------------------------------------------------------------------
 
+_FOOT_REF_TEXT = re.compile(r"(?<!`)\[\^([^\]\s]+)\](?!:)")
+
+
+def neutralize_footnotes(s) -> str:
+    """에이전트 산출물의 자유 텍스트(검증 노트·수정 지시·로그 항목 등)를 로그·자동 영역에 옮길 때 쓴다.
+    그 텍스트 안의 각주 참조 표기 `[^ref-013]` 는 옮겨 간 페이지에 정의가 없어 check_links 의 '정의 없는 각주'
+    오류가 되므로 인라인 코드로 감싸 글자 그대로 보이게 한다(인라인 코드 안은 각주 검사·렌더 대상이 아니다)."""
+    return _FOOT_REF_TEXT.sub(lambda m: f"`[^{m.group(1)}]`", str(s if s is not None else ""))
+
+
 def _esc(s) -> str:
-    """표 셀용 이스케이프."""
-    return str(s if s is not None else "").replace("|", "\\|").replace("\n", " ")
+    """표 셀용 이스케이프. 각주 참조 표기는 인라인 코드로 바꾼다(neutralize_footnotes)."""
+    return neutralize_footnotes(s).replace("|", "\\|").replace("\n", " ")
 
 
 def _table(header: list[str], rows: list[list[str]]) -> str:
@@ -863,7 +873,8 @@ def refresh_all_auto_regions(verbose: bool = False, strict: bool = False) -> lis
                 continue
             if content is None:
                 continue
-            new_text = ar.replace_region(new_text, key, content)
+            # 자동 영역에는 각주 정의가 없으므로, 에이전트 텍스트에 섞인 각주 참조 표기는 인라인 코드로 바꾼다
+            new_text = ar.replace_region(new_text, key, neutralize_footnotes(content))
         if new_text != text:
             pending.append((p, new_text, rel, keys))
     LAST_FAILURES[:] = failures
