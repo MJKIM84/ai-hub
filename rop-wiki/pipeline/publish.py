@@ -411,7 +411,25 @@ class Publisher:
                     errs.append(f"온톨로지 버전 불일치: pages.json ontology_draft_version {new_version!r} != {od_rel} ontology_version {page_version!r}")
         return errs
 
+    _TAG_PAREN = re.compile(r"\[(사실|추정|의견|분류원문|가설|사용자 실험)\]\(")
+
+    def normalize_tag_parens(self) -> None:
+        """표기 정규화(형식만, 내용 불변): 사실 표기 태그 바로 뒤에 여는 괄호가 붙으면(`[추정](finding f27 …)`) 마크다운이
+        이를 링크로 읽어 엄격 빌드가 실패한다. 태그와 괄호 사이에 공백 하나를 넣는다. 바꾼 건수는 실행 로그에 남긴다."""
+        total = 0
+        for pg in self.pages.get("pages", []):
+            src = self.page_src(pg)
+            text = src.read_text(encoding="utf-8")
+            new, n = self._TAG_PAREN.subn(lambda m: f"[{m.group(1)}] (", text)
+            if n:
+                src.write_text(new, encoding="utf-8")
+                total += n
+                self.info(f"2단계 전 표기 정규화: {self.page_rel(pg)} — 태그 뒤 괄호 {n}건에 공백 삽입(링크 오인 방지, 내용 불변)")
+        if not total:
+            self.info("2단계 전 표기 정규화: 바꿀 것 없음")
+
     def step2_frontmatter(self) -> None:
+        self.normalize_tag_parens()
         errs = []
         for pg in self.pages.get("pages", []):
             rel = self.page_rel(pg)
