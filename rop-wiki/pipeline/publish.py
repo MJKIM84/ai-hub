@@ -1113,7 +1113,10 @@ class Publisher:
         if new_version and old_version is not None and new_version != old_version:
             onto_cell = f"v{old_version} → v{new_version}: {onto_seg or '변경 내용은 온톨로지 초안 페이지 참고'} · 검증 승인: {'예' if (tc2.get('ontology_changes_grounded', tc1.get('ontology_changes_grounded'))) else '미상'}"
         elif not onto_seg or onto_seg.startswith(("없음", "변경 없음")):
-            onto_cell = f"변경 없음({onto_seg or '승인·반영된 변경 없음'})" if onto_seg else "변경 없음(승인·반영된 변경 없음)"
+            if onto_seg.startswith("변경 없음"):
+                onto_cell = onto_seg
+            else:
+                onto_cell = f"변경 없음({onto_seg})" if onto_seg else "변경 없음(승인·반영된 변경 없음)"
         else:
             onto_cell = f"버전 변경 없음(v{new_version or old_version}; 승인·반영된 변경 없음. 로그 항목의 제안: {onto_seg})"
         sa = tr.get("stage_completion_self_assessment") or {}
@@ -1531,7 +1534,7 @@ class Publisher:
             m = re.search(r"\[check_links\] 오류 (\d+)건", lc.read_text(encoding="utf-8"))
             nxt.append(f"- 내부 링크·각주 검사(runs/{self.run_id}/link_check.txt): " + (f"오류 {m.group(1)}건" if m else "통과"))
         probe = runs.read_json(self.rd / "probe.json", {}) or {}
-        if probe and probe.get("web_search_available") is None:
+        if probe and "web_search_available" in probe and probe["web_search_available"] is None:
             nxt.append("- 환경: 웹 도구 점검 생략(--skip-probe, 드라이런) — 웹 검색 도구는 점검하지 않았다. 정규 실행에서는 쓰지 않는다")
         if probe and probe.get("web_fetch_available") is False:
             if probe.get("web_fetch_override"):
@@ -1710,7 +1713,11 @@ class Publisher:
             if self.snapshotted and not self.args.dry_run:
                 self.restore(f"퍼블리셔 실패({_short(str(e).splitlines()[0] if str(e) else type(e).__name__, 80)})")
             if not (self.args.check_only or self.args.dry_run):
-                first = _short(str(e).splitlines()[0] if str(e) else type(e).__name__, 120)
+                lines = [l.strip() for l in str(e).splitlines() if l.strip()]
+                first = lines[0] if lines else type(e).__name__
+                if first.endswith(":") and len(lines) > 1:   # "…검증 실패:" 뒤의 첫 오류 항목까지 종료 상태에 남긴다
+                    first += " " + lines[1].lstrip("- ")
+                first = _short(first, 160)
                 try:
                     self.record_publisher_step("실패", first)
                     self.write_daily_log_and_summary(final=True, end_state=f"중단(퍼블리셔: {first})", published=False)

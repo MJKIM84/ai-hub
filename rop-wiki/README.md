@@ -98,9 +98,11 @@ cron은 로그인 셸의 환경을 쓰지 않으므로, 사용자 계정의 로�
 | 도구 | 필요 정도 | 없을 때 |
 |---|---|---|
 | 웹 검색(WebSearch) | 필수 | `config/settings.yaml`의 `web_tools_required: true`(사양서 0장)에 따라 준비 단계에서 즉시 중단하고 로그에 남긴다(exit 3) |
-| 페이지 열람(WebFetch) | 권장 | 기본 설정 `web_fetch_required: false`에서는 계속 진행하되 에이전트에 `web_fetch_available: false`를 알린다. 이때 에이전트는 출처 실재성을 검색 결과의 기관·제목·URL 일치로 확인하고, 모든 출처에 "원문 미열람"을 표시하며, 신뢰도 `high`를 주지 않는다(교차 확인돼도 `medium` 상한). 사양서 원문대로 열람 실패도 중단하려면 `web_fetch_required: true`로 바꾼다 |
+| 페이지 열람(WebFetch) | 필수 | 기본 설정 `web_fetch_required: true`(사양서 0장·7.3)에서는 준비 단계에서 즉시 중단하고 로그에 남긴다(exit 3). 네트워크 정책으로 열람이 막힌 환경에서만 사용자 override(`--allow-no-fetch`, 환경변수 `ROP_ALLOW_NO_FETCH=1`, 또는 설정 `web_fetch_required: false`)로 계속 진행할 수 있다. 이때 에이전트에 `web_fetch_available: false`를 알리고 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다. 에이전트는 출처 실재성을 검색 결과의 기관·제목·URL 일치로 확인하고, 모든 출처에 "원문 미열람"을 표시하며, 신뢰도 `high`를 주지 않는다(교차 확인돼도 `medium` 상한) |
 
 점검 명령은 `python3 pipeline/agent_runner.py probe`다. `claude -p --tools WebSearch`로 검색 1회, `claude -p --tools WebFetch`로 `settings.web_fetch_probe_url`(기본 GS1 EPCIS 페이지) 열람 1회를 실제로 해 보고 `web_search_available`·`web_fetch_available`을 돌려준다. 셸 `curl` 결과는 `details.web_fetch_curl` 참고값일 뿐 판정에 쓰지 않는다(프록시 정책이 curl과 도구에 다르게 적용될 수 있다). 실행마다 같은 점검이 준비 단계에서 자동으로 돌고 결과는 `runs/<id>/probe.json`에 남는다.
+
+에이전트 모델은 `config/settings.yaml`의 `model`(기본 `claude-opus-5-5`)이며 `agent_runner.py`가 `claude -p --model`로 넘긴다. 비우면 CLI 기본 모델을 쓴다.
 
 ### 2.5 설치 확인
 
@@ -135,6 +137,8 @@ bash pipeline/run_daily.sh --run-type weekly_review               # 주간 정�
 bash pipeline/run_daily.sh --resume 2026-09-24-01                 # 있는 산출물부터 이어서(보류 폴더면 되돌려 재투입)
 bash pipeline/run_daily.sh --resume 2026-09-24-01 --step publish  # 한 단계만
 bash pipeline/run_daily.sh --no-build --no-commit                 # 빌드·커밋 없이(시험)
+bash pipeline/run_daily.sh --allow-no-fetch                       # 페이지 열람이 막힌 환경에서 원문 미열람 모드로 진행(사용자 override)
+ROP_ALLOW_NO_FETCH=1 bash pipeline/run_daily.sh                   # 같은 override 를 환경변수로(cron 줄에 넣을 때)
 bash pipeline/run_daily.sh --help
 ```
 
@@ -153,9 +157,10 @@ bash pipeline/run_daily.sh --help
 | `--run-id ID` | 실행 id를 지정한다. 기본 `<date>-<NN>` 자동 부여(같은 날 두 번째는 `-02`) |
 | `--resume ID` | `runs/<ID>/`(또는 `runs/parked/<ID>/`)의 산출물이 있는 단계는 건너뛰고 다음 단계부터 이어간다. 보류 폴더는 `runs/<ID>/`로 되돌리고 `summary.json`의 보류 표시를 지운다 |
 | `--step S` | 단일 단계만 실행한다. 값: `prepare` · `select` · `research` · `verify1` · `storytell` · `verify2` · `publish` · `log`. `prepare`·`select` 외에는 `--resume`(또는 `--run-id`)이 필요하다 |
-| `--skip-probe` | 웹 도구 점검을 생략한다(기존 `probe.json` 재사용, 없으면 WebSearch·WebFetch 점검을 생략하고 curl 참고값만 기록) |
+| `--skip-probe` | 드라이런 전용. 웹 도구 점검을 생략한다(기존 `probe.json` 재사용, 없으면 WebSearch 는 점검하지 않고 `web_search_available: null`과 "웹 도구 점검 생략(드라이런)"을 기록하며, WebFetch 는 curl 참고값만 쓴다) |
+| `--allow-no-fetch` | 사용자 override. 페이지 열람 도구를 쓸 수 없어도 중단하지 않고 원문 미열람 모드로 진행한다. 환경변수 `ROP_ALLOW_NO_FETCH=1`과 같다 |
 | `--no-build` | 퍼블리셔 6단계(사이트 빌드)를 건너뛴다(8단계의 재빌드도) |
-| `--no-commit` | 퍼블리셔 7단계(커밋)를 건너뛴다(8단계의 커밋 수정도) |
+| `--no-commit` | 퍼블리셔 7단계(커밋)를 건너뛴다(커밋 해시 기록 커밋도) |
 | `-h`, `--help` | 사용법 |
 
 `--run-type`을 주면 대상 선정 규칙 대신 그 값을 쓰고 `target.json`에 `forced: true`가 기록된다. `--area`·`--track`·`--stage`·`--question-ids`는 `--run-type`(또는 트랙 실행일의 트랙 선정)과 함께 줄 때만 반영되며, 단독으로 주면 무시되고 정규 선정 규칙대로 대상이 정해진다.
@@ -166,8 +171,8 @@ bash pipeline/run_daily.sh --help
 |---|---|
 | 0 | 완료(게시) 또는 `--step`으로 지정한 단계 완료 |
 | 2 | 옵션·설정 오류, 재개할 실행 폴더 없음, 또는 보류(`runs/parked/<id>/`로 이동) |
-| 3 | 준비 단계 즉시 중단(웹 검색 도구 없음 등) |
-| 4 | 퍼블리셔 실패(검사 실패·빌드 실패·커밋 실패). 고친 뒤 `--resume <id> --step publish` |
+| 3 | 준비 단계 즉시 중단(웹 검색 도구 없음, override 없이 페이지 열람 도구 없음 등). 중단 로그는 커밋된다 |
+| 4 | 퍼블리셔 실패(검사 실패·빌드 실패·커밋 실패). 되돌린 상태의 실패 일일 로그(`(중단)`)를 커밋한다. 고친 뒤 `--resume <id> --step publish` |
 | 그 밖의 값 | 단계 스크립트(`select_target.py`, `agent_runner.py probe`, `pipeline/lib/runs.py` 등)가 낸 실패 코드를 `run_daily.sh`의 실패 트랩(`trap … ERR` → `exit "$rc"`)이 그대로 전파한 것이다(예: `select_target.py`가 대상을 정하지 못하면 1). 원인은 `runs/<id>/log.md`의 "실패: 단계 <단계> (run_daily.sh 줄 N, exit N)" 줄과 `summary.json`의 `end_state`에서 본다(실행 폴더가 만들어지기 전에 실패하면 표준 출력, cron이면 `runs/cron.log`에만 남는다). 고친 뒤 `--resume <id>` |
 
 결과는 `runs/<id>/log.md`(단계별 진행), `summary.json`(`end_state`, `published`, `parked`, 소요 시간), `research.md`·`verification.md`·`pages.md`·`verification2.md`(사람이 읽는 산출물), `docs/logs/daily/<date>.md`(일일 로그: 단계별 결과와 소요 시간, 검증 판정, 생성·갱신 페이지, 예산 사용량, 다음 실행 메모)에서 본다. 게시되면 `docs/changelog.md`, 홈·대분류·세부영역의 "최근 업데이트", 트랙 실행이면 트랙 로그·질문 백로그·온톨로지 초안이 함께 갱신된다.
@@ -247,7 +252,7 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 | 실험 결과 | `experiments/<YYYY-MM-DD>-<slug>/` | 사용자가 직접 수행한 실험의 `README.md`(트랙·단계·답하려는 질문·목적·방법·결과 요약·한계)와 데이터 파일을 둔다. 서식은 `experiments/README.md` | 다음 트랙 실행에서 리서치 에이전트가 읽어 `[사용자 실험]` 태그로 반영한다. `[사실]`로 올라가려면 내용 검증 에이전트의 판정이 필요하다 |
 | 구축 멈춤 지점 | `config/settings.yaml`의 `checkpoints` | `true`(기본)면 구축 순서(사양서 9장)의 두 지점 — 단계 1 뼈대 생성 뒤(구조·소개 페이지·원문 보호 검사 결과), 단계 3 드라이런 두 번 뒤(산출물·소요 시간·예산 사용량) — 에서 사용자 확인을 받는다 | 구축 절차에만 쓰이며 일일 실행 스크립트는 이 값을 읽지 않는다(`RUN.md` 8.2절) |
 
-구축 시 확인한 에이전트 파일 버전(2026-09-24): `shared-rules.md` 1.0, `researcher.md` 1.0, `verifier.md` 1.2, `storyteller.md` 1.2.
+구축 시 확인한 에이전트 파일 버전(2026-09-24): `shared-rules.md` 1.1, `researcher.md` 1.1, `verifier.md` 1.3, `storyteller.md` 1.3.
 
 ## 8. 문제 해결
 
@@ -256,14 +261,14 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 | 증상 | 원인·확인 | 조치 |
 |---|---|---|
 | `web_search_available: false`로 준비 단계 중단(exit 3, 로그 "즉시 중단: 웹 검색(WebSearch) 도구를 쓸 수 없다(web_tools_required)") | 웹 검색 도구 없음(사양서 7.3 "즉시 중단·로그"). `settings.web_tools_required: true` | `claude -p --tools WebSearch`가 동작하는지, 네트워크 정책이 검색을 막는지 확인한다. `runs/<id>/probe.json`의 `details.web_search` 참고. 복구 뒤 `--resume <id>`(준비 단계부터 다시 점검한다) |
-| `web_fetch_available: false`인데 실행은 계속됨 / curl로는 열리는데(또는 반대) | 페이지 열람 차단. 판정은 `claude -p --tools WebFetch` 결과이고 셸 curl은 참고값(`probe.json`의 `details.web_fetch` vs `details.web_fetch_curl`) | 정상 동작이다("원문 미열람" 모드, 2.4절). 모든 출처에 "원문 미열람"이 붙고 신뢰도 `high`가 없으면 그 때문이다. 열람이 되는 환경에서 `ROP_CHECK_URLS=1 bash pipeline/checks/run_all.sh` → `python3 pipeline/scaffold.py --apply-url-check`로 참고문헌 신뢰도를 올린다. 사양서 원문대로 중단하려면 `web_fetch_required: true` |
+| "즉시 중단: 페이지 열람(WebFetch) 도구를 쓸 수 없다"(exit 3) / override 로 계속된 실행 / curl로는 열리는데(또는 반대) | 페이지 열람 차단. 판정은 `claude -p --tools WebFetch` 결과이고 셸 curl은 참고값(`probe.json`의 `details.web_fetch` vs `details.web_fetch_curl`) | 기본은 중단이다(2.4절). 열람이 막힌 환경이면 `--allow-no-fetch`(또는 `ROP_ALLOW_NO_FETCH=1`)로 원문 미열람 모드를 쓴다. 이때 모든 출처에 "원문 미열람"이 붙고 신뢰도 `high`가 없다. 열람이 되는 환경에서 `ROP_CHECK_URLS=1 bash pipeline/checks/run_all.sh` → `python3 pipeline/scaffold.py --apply-url-check`로 참고문헌 신뢰도를 올린다 |
 | 일일 로그 "예산 사용량" 표에 초과·도달 표시 | 리서치 결과의 `self_check.budget_used`가 `target.json`의 예산(`daily_budget.max_search_queries`·`max_sources_per_run`, 트랙은 `track_max_*`)에 닿음. 사양서 7.3 "부분 결과로 진행하되 로그에 표시" | 실행은 부분 결과로 게시된다. 반복되면 `config/settings.yaml`의 `daily_budget`을 조정하거나 `priority.yaml`에 질문을 좁혀 적는다 |
 | 로그 "스키마 불일치" 뒤 보류(`runs/parked/`) | 에이전트 반환 JSON이 `schemas/*.json`을 통과하지 못했다. 사양서 7.3대로 `## 스키마 불일치 (재실행)` 절을 붙여 1회 재실행한 뒤에도 실패 | `runs/parked/<id>/prompts/*.response.json`(`research`·`verification1`·`storyteller`·`verification2`)과 `log.md`의 오류 목록을 본다. 프롬프트·스키마를 고쳤으면 `--resume <id>`(걸린 단계부터). 스키마 자체를 바꿨으면 `schemas/README.md`의 예시 검사도 다시 돌린다 |
 | `claude 오류 응답: API Error 400 … input_schema does not support oneOf/allOf`, `--json-schema is not a valid JSON Schema`, `strict mode: missing type` | `agent_runner.py`가 스키마를 CLI용으로 바꾸지 못한 경우 | `schemas/*.json`을 고쳤다면 최상위 `allOf/oneOf/anyOf`를 쓰지 말고 `pipeline/lib/runs.py`의 `cli_schema()`(`$schema`·`$id`·`$defs` 제거, 하위 스키마 `type` 보충)를 확인한다 |
 | 1차 검증 반려·2차 불통과가 `max_retries`(기본 2회) 뒤에도 이어져 보류(exit 2) | `verification.md`·`verification2.md`의 반려 사유·수정 지시 | 7절 "보류 산출물"대로 검토한 뒤 `--resume <id>` 또는 폐기(`DISCARDED`). 직전 판정은 `verification.attemptN.json`·`verification2.attemptN.json`에 남는다 |
-| 같은 영역이 3회 연속 보류 | 사양서 7.3. 대상 선정(`rotation.exclude_after_consecutive_parks: 3`)에서 그 영역이 제외되고 `data/open_questions.json`에 사용자 검토 요청이 올라간다 | 열린 질문의 검토 요청을 읽고 `runs/parked/`를 정리한다. 다시 다루게 하려면 `config/priority.yaml`의 `areas`에 그 영역을 지정한다(제외 해제). 재투입해 게시까지 가면 연속 보류 횟수에 세지 않는다 |
+| 같은 영역이 3회 연속 보류 | 사양서 7.3. 대상 선정(`rotation.exclude_after_consecutive_parks: 3`)에서 그 영역이 제외되고 `data/open_questions.json`에 사용자 검토 요청이 올라간다 | 열린 질문의 검토 요청을 읽고 `runs/parked/`를 정리한다. 다시 다루게 하려면 `config/priority.yaml`의 `areas`에 그 영역을 지정한다(제외 해제, 바로 다음 실행부터 선정 가능). 보류된 실행은 최근 7일 감점·건너뜀 집계에 세지 않는다. 재투입해 게시까지 가면 연속 보류 횟수에 세지 않는다 |
 | `mkdocs build --strict` 실패(퍼블리셔 6단계, exit 4) | 보통 내비게이션·링크·앵커 경고. `runs/<id>/build.log` | 사양서 6.4·7.3대로 5단계 반영은 스냅숏(`runs/<id>/backup/`)으로 되돌려져 있고 커밋은 없다. 원인을 고친 뒤 `--resume <id> --step publish`. 앵커 오류는 `RUN.md` 7절의 "4단계 제목 앵커 검사" 항목 참고 |
-| 확정 로그 재빌드 실패(퍼블리셔 8단계) | `runs/<id>/build-final.log`, `summary.json`의 `final_log_rebuild_failed` | 5~7단계의 반영·커밋은 유지되고 확정 일일 로그만 되돌려졌다. 원인 수정 뒤 `--resume <id> --step log` |
+| 확정 로그 재빌드 실패(퍼블리셔 8단계) | `runs/<id>/build-final.log`, `summary.json`의 `final_log_rebuild_failed` | 8단계는 7단계 커밋 전에 돈다. 재빌드가 실패하면 확정 일일 로그 대신 예비 일일 로그가 커밋에 들어간다. 원인 수정 뒤 `--resume <id> --step log` |
 | 퍼블리셔 2·3·4단계 검사 실패(참고문헌 id 충돌, 온톨로지 버전 불일치, `replaced_by` 없음, 원문 보호 diff, 깨진 링크·각주) | 스토리텔러 산출물 `runs/<id>/pages/`·`pages.json`의 문제. 반영 전이라 되돌릴 것은 없다 | `pages/`를 고쳐 `--resume <id> --step publish`. `[분류원문]` 문장·절 제목을 바꾼 경우는 원문대로 되돌린다 |
 | `claude 실행 파일을 찾을 수 없다` | cron이면 `PATH` 줄, 셸이면 `which claude` | `install_cron.sh`가 넣은 `PATH`를 확인하거나 `settings.claude_bin`에 절대 경로를 적는다 |
 | claude 인증 오류(`claude -p` 응답이 `is_error: true`이고 로그인·인증 관련 문구) | 로그인 만료, cron 환경에서 자격 증명을 읽지 못함 | `claude auth status` → `claude auth login`. cron에서는 2.3절의 장기 토큰(`claude setup-token`) 또는 `ANTHROPIC_API_KEY`를 crontab 환경에 둔다 [가정]. 고친 뒤 `--resume <id>` |
@@ -279,7 +284,7 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 
 이 위키는 `ai-hub`(Next.js 프로젝트) git 저장소의 하위 폴더 `rop-wiki/`다. `config/settings.yaml`의 `repo_root: ".."`가 저장소 루트, `repo_path: "./rop-wiki"`가 루트에서 본 위키 폴더다. 위키의 스크립트는 `ai-hub`의 다른 파일을 읽거나 쓰지 않는다.
 
-**퍼블리셔의 커밋(자동).** 퍼블리셔 7단계는 저장소 루트에서 `git add -A -- rop-wiki/docs rop-wiki/data rop-wiki/config rop-wiki/mkdocs.yml rop-wiki/inbox rop-wiki/runs/<run_id>`로 위 여섯 경로를 스테이지하고 현재 브랜치에 커밋한다. 이 여섯 경로 밖의 미커밋 변경은 스테이지에 올리지 않지만, 경로 안은 그 실행이 바꾼 파일만이 아니라 미커밋 변경 전부가 올라간다(`git add -A`). 메시지 형식은 사양서 6.4대로 `run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n`이다(예 `run(2026-09-24): 영역 심화 7. 화물·재고·자산 식별과 추적 — 생성 0/갱신 1`). 주간 정리는 대상 영역 자리에 ISO 주(`2026-W40`), 트랙 실행은 트랙·단계·질문 id를 본문 둘째 줄에 둔다. 보류·중단된 실행도 일일 로그를 커밋하며 제목 끝에 `(보류)` 같은 종료 상태를 괄호로 붙인다. 8단계 확정 로그는 같은 커밋에 `--amend`로 합쳐진다. `git config user.name`이 없으면 임시 identity("ROP 연구 위키 퍼블리셔")로 커밋한다. 원격 푸시는 `git_push: true`일 때만 하며 기본은 하지 않는다. 커밋 자체를 끄려면 `git_commit: false` 또는 `--no-commit`.
+**퍼블리셔의 커밋(자동).** 퍼블리셔 7단계는 저장소 루트에서 `git commit -- <경로>`로 `rop-wiki/docs`·`data`·`config`·`mkdocs.yml`·`inbox`·`runs/<run_id>`·`runs/parked/<run_id>`만 담아 현재 브랜치에 커밋한다. 사용자가 다른 파일을 스테이지해 두었어도 섞지 않지만, 이 경로 안의 미커밋 변경은 그 실행이 바꾼 파일이 아니어도 함께 들어간다. 확정 일일 로그·`summary.json`·퍼블리셔 단계 기록은 커밋 전에 모두 쓰므로 실행 뒤 미커밋 파일이 남지 않는다(amend 없음). 커밋은 자기 해시를 담을 수 없어서, 바로 뒤에 `summary.json`의 `commit` 필드만 바꾸는 작은 커밋 `run(DATE): 커밋 해시 기록 <id> → <hash>`를 하나 더 만든다. [가정] 메시지 형식은 사양서 6.4대로 `run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n`이다(예 `run(2026-09-24): 영역 심화 7. 화물·재고·자산 식별과 추적 — 생성 0/갱신 1`). 주간 정리는 대상 영역 자리에 ISO 주(`2026-W40`), 트랙 실행은 트랙·단계·질문 id를 본문 둘째 줄에 둔다. 보류·중단된 실행도 일일 로그를 커밋하며 제목 끝에 `(보류)` 같은 종료 상태를 괄호로 붙인다. `git config user.name`이 없으면 임시 identity("ROP 연구 위키 퍼블리셔")로 커밋한다. 원격 푸시는 `git_push: true`일 때만 하며 기본은 하지 않는다. 커밋 자체를 끄려면 `git_commit: false` 또는 `--no-commit`.
 
 **사람의 커밋.** 퍼블리셔가 스테이지하지 않는 파일(`agents/`, `templates/`, `schemas/`, `pipeline/`, `experiments/`, `README.md`, `requirements.txt`)과 사용자가 고친 `config/`·`inbox/`는 사람이 직접 커밋한다. 다만 `config/`·`inbox/`의 미커밋 변경은 퍼블리셔가 다음 실행 커밋(`run(DATE): …`)에 함께 스테이지하므로, 실행 커밋과 분리해 남기려면 실행 전에 직접 커밋한다(보류·중단 실행의 일일 로그 커밋도 같은 경로를 스테이지한다). 메시지는 기존 이력과 같이 `<유형>(rop-wiki): <요약>` 형식을 쓴다(예 `docs(rop-wiki): 분류 원문(_source) 추가`) [가정: 사양서는 사람 커밋의 형식을 정하지 않는다]. 커밋 전에 `bash pipeline/checks/run_all.sh`를 돌린다.
 
@@ -293,10 +298,11 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 - 에이전트 파일 버전 규칙(규칙 추가·삭제는 major, 문구·서식은 minor)과 변경 이력의 `run_id: manual-<날짜>`는 `pipeline/RUN.md` 8.1절의 가정을 따른다.
 - 사람이 직접 커밋할 때의 메시지 형식 `<유형>(rop-wiki): <요약>`은 기존 커밋 이력에서 가져온 것이다.
 - `runs/cron.log`는 커밋하지 않는다.
-- `web_fetch_required: false`(페이지 열람 차단 시 "원문 미열람" 모드로 진행)는 `config/README.md`의 사용자 결정 항목이며, 이 문서는 그 기본값을 설명한다.
+- 페이지 열람 차단 시의 override(`--allow-no-fetch`, `ROP_ALLOW_NO_FETCH=1`, `web_fetch_required: false`)는 사양서에 없는 예외다. 기본값은 사양서대로 중단(`web_fetch_required: true`)이다.
+- 실행마다 실행 커밋과 커밋 해시 기록 커밋, 두 개가 생긴다. 실행 커밋 하나만 원하면 `summary.json`의 `commit`을 비워 두는 방식으로 바꿀 수 있다.
 - 정정 요청을 `rejected`로 바꾸는 퍼블리셔 처리는 미구현이다(`pipeline/publish.py`는 `corrections_applied`만 다룬다). 구현될 때까지 반영하지 않을 요청은 사람이 상태 줄을 직접 바꾼다. 퍼블리셔·검증 스키마 담당에게 `corrections_rejected` 필드와 처리 추가를 요청한다.
 
-## 관련 문서
+## 11. 관련 문서
 
 - [`pipeline/RUN.md`](pipeline/RUN.md) — 일일 실행 절차 정본(준비물, 명령·옵션, 단계별 파일, 재시도·보류, `--resume`, 스케줄, 문제 해결, 개입 절차)
 - [`config/README.md`](config/README.md) — 설정 항목과 대상 선정 규칙

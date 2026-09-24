@@ -16,7 +16,7 @@ CLI 호출(실험으로 확인한 형식):
 
 사용:
   python3 pipeline/agent_runner.py probe [--out runs/<id>/probe.json] [--skip-search] [--skip-fetch]
-      → {"web_search_available": bool, "web_fetch_available": bool, …}
+      → {"web_search_available": bool (--skip-search 면 null), "web_fetch_available": bool, …}
       web_search_available 은 `claude -p --tools WebSearch`, web_fetch_available 은 `claude -p --tools WebFetch` 로
       실제 도구를 써 본 결과다(셸 curl 결과는 details.web_fetch_curl 참고값).
   python3 pipeline/agent_runner.py run --role researcher|verifier|storyteller --run-id <id>
