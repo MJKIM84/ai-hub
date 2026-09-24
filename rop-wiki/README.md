@@ -193,7 +193,7 @@ python3 pipeline/render_run_md.py 2026-09-24-01                    # research.md
 
 정본: [`pipeline/RUN.md`](pipeline/RUN.md) 6절. 스케줄러는 cron이고 실행 시각은 매일 06:00 Asia/Seoul(사양서 0장 `run_time: "06:00 Asia/Seoul"`)이다. 예시 파일은 [`pipeline/cron.example`](pipeline/cron.example)이다.
 
-**현재 상태(2026-09-24).** 구축 환경에는 `crontab` 명령이 없어 등록 블록은 `bash pipeline/install_cron.sh --dry-run`으로만 확인했고 스케줄은 미등록이다(`bash pipeline/uninstall_cron.sh`는 "crontab 명령이 없다"로 exit 1). 운영 환경에서 `bash pipeline/install_cron.sh`로 등록하고 `crontab -l`로 확인한다. 어느 환경·스케줄러에 등록할지는 완료 보고서(사양서 11장)의 사용자 결정 항목이다.
+**현재 상태(2026-09-25).** 구축 컨테이너에 cron 을 설치해 `install_cron.sh` 등록, `crontab -l` 확인, `uninstall_cron.sh` 해제, 재등록까지 동작을 검증했고 등록 블록이 crontab 에 들어 있다. 다만 이 컨테이너는 cron 데몬이 돌지 않고 세션이 끝나면 사라지므로 운영용 등록이 아니다. 항상 켜진 운영 환경에서 `bash pipeline/install_cron.sh` 로 등록하고 `crontab -l` 로 확인한다. 어느 환경·스케줄러에 등록할지는 [완료 보고서](BUILD_REPORT.md) 3절의 사용자 결정 항목이다.
 
 | 할 일 | 명령 | 설명 |
 |---|---|---|
@@ -252,7 +252,7 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 | 실험 결과 | `experiments/<YYYY-MM-DD>-<slug>/` | 사용자가 직접 수행한 실험의 `README.md`(트랙·단계·답하려는 질문·목적·방법·결과 요약·한계)와 데이터 파일을 둔다. 서식은 `experiments/README.md` | 다음 트랙 실행에서 리서치 에이전트가 읽어 `[사용자 실험]` 태그로 반영한다. `[사실]`로 올라가려면 내용 검증 에이전트의 판정이 필요하다 |
 | 구축 멈춤 지점 | `config/settings.yaml`의 `checkpoints` | `true`(기본)면 구축 순서(사양서 9장)의 두 지점 — 단계 1 뼈대 생성 뒤(구조·소개 페이지·원문 보호 검사 결과), 단계 3 드라이런 두 번 뒤(산출물·소요 시간·예산 사용량) — 에서 사용자 확인을 받는다 | 구축 절차에만 쓰이며 일일 실행 스크립트는 이 값을 읽지 않는다(`RUN.md` 8.2절) |
 
-구축 시 확인한 에이전트 파일 버전(2026-09-24): `shared-rules.md` 1.1, `researcher.md` 1.1, `verifier.md` 1.3, `storyteller.md` 1.3.
+구축 시 확인한 에이전트 파일 버전(2026-09-25): `shared-rules.md` 1.1, `researcher.md` 1.1, `verifier.md` 1.4, `storyteller.md` 1.5.
 
 ## 8. 문제 해결
 
@@ -304,6 +304,8 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 
 ## 11. 관련 문서
 
+- [`BUILD_REPORT.md`](BUILD_REPORT.md) — 구축 완료 보고서(사양서 11장): 만든 것, 드라이런 결과, 사용자 결정 항목, 한계
+- [`BUILD_ASSUMPTIONS.md`](BUILD_ASSUMPTIONS.md) — 구축 [가정] 전체 목록
 - [`pipeline/RUN.md`](pipeline/RUN.md) — 일일 실행 절차 정본(준비물, 명령·옵션, 단계별 파일, 재시도·보류, `--resume`, 스케줄, 문제 해결, 개입 절차)
 - [`config/README.md`](config/README.md) — 설정 항목과 대상 선정 규칙
 - [`agents/`](agents/) — 에이전트 규칙 파일 4종
