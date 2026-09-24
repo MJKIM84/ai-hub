@@ -2,7 +2,8 @@
 # ROP 연구 위키 — 일일 파이프라인 실행 스크립트 (빌드 사양서 7.2 의 8단계, 7.3 실패 처리)
 #
 # 순서: 1 준비 → 2 대상 선정 → 3 리서치 → 4 1차 검증(반려면 재조사, 최대 max_retries) → 5 스토리텔러
-#       → 6 2차 검증(불통과면 재작성, 최대 max_retries) → 7 퍼블리셔 → 8 일일 로그·운영 지표(퍼블리셔 9단계)
+#       → 6 2차 검증(불통과면 재작성, 최대 max_retries) → 7 퍼블리셔(사양서 6.4 의 1~7단계: 스키마·판정 → 프런트매터 → 원문 보호
+#       → 링크 → 반영 → 빌드 → 커밋) → 8 일일 로그·운영 지표(퍼블리셔 8단계 일일 로그, 9단계 알림)
 # 사용:
 #   bash pipeline/run_daily.sh                      # 오늘(settings.timezone) 정규 실행
 #   bash pipeline/run_daily.sh --date 2026-09-24 --run-type area_deep_dive --area 7      # 대상 지정(드라이런)
@@ -11,6 +12,7 @@
 #   bash pipeline/run_daily.sh --resume 2026-09-24-01 --step publish   # 단일 단계만
 # 옵션: --date D --run-type T --area N --track S --stage N --question-ids a,b --resume ID --run-id ID
 #       --step {prepare|select|research|verify1|storytell|verify2|publish|log} --skip-probe --no-build --no-commit
+#       (--skip-probe: 기존 probe.json 재사용, 없으면 WebSearch·WebFetch 도구 점검을 생략하고 curl 참고값만 기록. --no-build/--no-commit: 퍼블리셔 6·7단계 생략)
 # 산출물: runs/<run_id>/ (target.json, probe.json, docs_tree.txt, prompts/, research.json·md, verification.json·md,
 #         pages/·pages.json, verification2.json·md, log.md, timings.json, summary.json). 보류는 runs/parked/<run_id>/.
 # 단계별 소요 시간은 runs/<run_id>/log.md 와 timings.json 에 남고, 퍼블리셔가 일일 로그(docs/logs/daily/<date>.md)에 옮긴다.
@@ -117,8 +119,10 @@ export ROP_TODAY="$DATE"
 if [ -n "$RESUME" ]; then
   RUN_ID="$RESUME"
   if [ -d "runs/parked/$RUN_ID" ] && [ ! -d "runs/$RUN_ID" ]; then
-    mv "runs/parked/$RUN_ID" "runs/$RUN_ID"
-    say "보류 폴더를 되돌렸다: runs/parked/$RUN_ID → runs/$RUN_ID (재투입)"
+    # 재투입(7.4): 폴더를 되돌리고 summary.json 의 보류 표시(parked·end_state·park_reason)를 지운다(lib/runs.py unpark).
+    # 지우지 않으면 재투입해 게시까지 성공한 실행도 parked: true 로 남아 select_target 의 연속 보류 횟수에 세어지고 일일 로그에 '보류' 줄이 붙는다.
+    "$PY" "$LIB" unpark --run-id "$RUN_ID" >/dev/null
+    say "보류 폴더를 되돌렸다: runs/parked/$RUN_ID → runs/$RUN_ID (재투입, summary.json 의 보류 표시 해제)"
   fi
   if [ ! -d "runs/$RUN_ID" ]; then say "재개할 실행 폴더가 없다: runs/$RUN_ID"; exit 2; fi
   DATE="$(jget "runs/$RUN_ID/target.json" date "$DATE")"; export ROP_TODAY="$DATE"
@@ -139,7 +143,7 @@ if [ "$NEEDS_PROBE" = 1 ]; then
   if [ "$SKIP_PROBE" = 1 ] && [ -f "$RD/probe.json" ]; then
     rlog "웹 도구 점검 생략(--skip-probe): 기존 probe.json 사용" "준비"
   else
-    "$PY" pipeline/agent_runner.py probe --out "$RD/probe.json" $( [ "$SKIP_PROBE" = 1 ] && echo --skip-search ) >/dev/null
+    "$PY" pipeline/agent_runner.py probe --out "$RD/probe.json" $( [ "$SKIP_PROBE" = 1 ] && echo "--skip-search --skip-fetch" ) >/dev/null
   fi
   WS="$(jget "$RD/probe.json" web_search_available false)"
   WF="$(jget "$RD/probe.json" web_fetch_available false)"
@@ -279,7 +283,7 @@ elif should_run storytell || should_run verify2; then
 fi
 
 # ---------------------------------------------------------------------------------------------
-# 7·8. 퍼블리셔 (검사 → 반영 → 빌드 → 커밋 → 일일 로그·운영 지표·요약)
+# 7·8. 퍼블리셔 (사양서 6.4: 1 스키마·판정 → 2 프런트매터 → 3 원문 보호 → 4 링크 → 5 반영 → 6 빌드 → 7 커밋 → 8 일일 로그 → 9 알림)
 # ---------------------------------------------------------------------------------------------
 if [ "$STEP" = "log" ]; then
   begin_step "퍼블리셔"; publish_log_only; end_step "성공" "일일 로그만(--step log)"; exit 0
@@ -290,11 +294,15 @@ if should_run publish; then
   fi
   begin_step "퍼블리셔"
   rlog "퍼블리셔 시작(no_build=$NO_BUILD no_commit=$NO_COMMIT)" "퍼블리셔"
-  if ! "$PY" pipeline/publish.py "$RUN_ID" $( [ "$NO_BUILD" = 1 ] && echo --no-build ) $( [ "$NO_COMMIT" = 1 ] && echo --no-commit ); then
-    rc=$?
+  # `if ! cmd; then rc=$?` 는 부정된 값(항상 0)을 읽으므로 `cmd || rc=$?` 로 실제 종료 코드를 받는다(ERR 트랩도 걸리지 않는다).
+  rc=0
+  "$PY" pipeline/publish.py "$RUN_ID" $( [ "$NO_BUILD" = 1 ] && echo --no-build ) $( [ "$NO_COMMIT" = 1 ] && echo --no-commit ) || rc=$?
+  if [ "$rc" -ne 0 ]; then
+    end_step "실패" "exit $rc (publish.py; 일일 로그는 퍼블리셔가 이미 썼다)"
     say "퍼블리셔 실패(exit $rc): $RD/log.md 와 docs/logs/daily/$DATE.md 를 본다. 고친 뒤 'bash pipeline/run_daily.sh --resume $RUN_ID --step publish' 로 다시 시도한다"
     exit 4
   fi
+  end_step "성공" "$(jget "$RD/summary.json" end_state)"
   say "== 완료: $RUN_ID ($SEL_TYPE) — $(jget "$RD/summary.json" end_state) · 소요 $(jget "$RD/summary.json" duration_sec)초 · 로그 docs/logs/daily/$DATE.md"
 fi
 exit 0

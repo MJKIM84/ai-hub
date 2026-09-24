@@ -15,6 +15,7 @@ probe.json(웹 도구 점검 결과), docs_tree.txt(docs/ 페이지 경로 목�
   python3 pipeline/lib/runs.py step --run-id <id> --step 리서치 --result 성공 --seconds 123 --note "…"
   python3 pipeline/lib/runs.py log --run-id <id> --msg "…" [--step 준비]
   python3 pipeline/lib/runs.py park --run-id <id> --reason "…"
+  python3 pipeline/lib/runs.py unpark --run-id <id>        # 재투입: runs/parked/<id> → runs/<id>, summary 의 보류 표시 해제
   python3 pipeline/lib/runs.py jsonget --file runs/<id>/verification.json --key verdict [--default x]
   python3 pipeline/lib/runs.py setting --key daily_budget.max_retries
   python3 pipeline/lib/runs.py docs-tree --run-id <id>
@@ -357,6 +358,34 @@ def park_run(run_id: str, reason: str, settings: dict | None = None) -> Path:
     log = RunLog(dst, settings)
     log.log(f"보류(runs/parked/{run_id}/): {reason}", step="보류")
     write_summary(dst, run_id=run_id, parked=True, park_reason=reason, published=False, end_state="보류(runs/parked/)")
+    return dst
+
+
+def unpark_run(run_id: str, settings: dict | None = None) -> Path:
+    """재투입(7.4): runs/parked/<run_id>/ 를 runs/<run_id>/ 로 되돌리고 summary.json 의 보류 표시를 지운다.
+    parked → false, end_state → 재투입, park_reason 은 resumed_from_park_reason 으로 옮긴다(보류 이력은 log.md 와 이 키에 남는다).
+    이렇게 해야 재투입 뒤 게시까지 간 실행이 select_target 의 연속 보류 횟수에 세어지지 않고, 일일 로그에 '보류' 줄이 붙지 않는다.
+    이미 runs/<run_id>/ 에 있으면(보류 폴더가 없으면) summary 만 정리한다."""
+    src = parked_dir(run_id, settings)
+    dst = run_dir(run_id, settings)
+    if src.is_dir():
+        if dst.exists():
+            raise FileExistsError(f"runs/{run_id} 와 runs/parked/{run_id} 가 둘 다 있다. 하나를 정리한 뒤 다시 시도한다")
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(src), str(dst))
+    elif not dst.is_dir():
+        raise FileNotFoundError(f"실행 폴더 없음: {src} / {dst}")
+    prev = read_summary(dst)
+    fields: dict = {"parked": False, "end_state": "재투입", "resumed_at": now_str(settings)}
+    if prev.get("park_reason"):
+        fields["resumed_from_park_reason"] = prev["park_reason"]
+    data = read_summary(dst)
+    data.pop("park_reason", None)
+    data.update(fields)
+    data.setdefault("run_id", run_id)
+    write_json(dst / "summary.json", data)
+    log = RunLog(dst, settings)
+    log.log(f"재투입: runs/parked/{run_id}/ → runs/{run_id}/ (이전 보류 사유: {prev.get('park_reason') or '기록 없음'})", step="재투입")
     return dst
 
 
@@ -713,6 +742,7 @@ def _cli(argv=None) -> int:
     p.add_argument("--result", required=True); p.add_argument("--seconds", type=float); p.add_argument("--note", default="")
     p = sub.add_parser("log"); p.add_argument("--run-id", required=True); p.add_argument("--msg", required=True); p.add_argument("--step")
     p = sub.add_parser("park"); p.add_argument("--run-id", required=True); p.add_argument("--reason", required=True)
+    p = sub.add_parser("unpark"); p.add_argument("--run-id", required=True)
     p = sub.add_parser("jsonget"); p.add_argument("--file", required=True); p.add_argument("--key", required=True); p.add_argument("--default", default="")
     p = sub.add_parser("setting"); p.add_argument("--key", required=True); p.add_argument("--default", default="")
     p = sub.add_parser("docs-tree"); p.add_argument("--run-id", required=True)
@@ -741,6 +771,8 @@ def _cli(argv=None) -> int:
         log.log(args.msg, args.step)
     elif args.cmd == "park":
         print(park_run(args.run_id, args.reason, settings))
+    elif args.cmd == "unpark":
+        print(unpark_run(args.run_id, settings))
     elif args.cmd == "jsonget":
         data = read_json(args.file, None)
         v = get_path(data, args.key, None) if data is not None else None
