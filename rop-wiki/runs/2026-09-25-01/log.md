@@ -37,3 +37,26 @@
 - 2026-09-25 01:31:08 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-01/pages.json
 - 2026-09-25 01:31:08 KST [스토리텔러] 결과: 재시도 2회 후 성공 · 소요 10분 20초 · 페이지 2개
 - 2026-09-25 01:31:09 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-01/prompts/verification2-retry2.md (212,897자)
+- 2026-09-25 01:32:21 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 1분 12초 · 비용 $1.4264 · subtype success
+- 2026-09-25 01:32:21 KST [내용 검증 에이전트] 저장: runs/2026-09-25-01/verification2.json
+- 2026-09-25 01:32:21 KST [2차 검증] 결과: 재시도 2회 후 통과 · 소요 1분 13초 · 신뢰도 medium
+- 2026-09-25 01:32:21 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 01:32:21 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-01 (영역 심화)
+- 2026-09-25 01:32:21 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 01:32:21 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 01:32:21 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 2개, 반영 전 사전 검사 포함)
+- 2026-09-25 01:32:21 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 01:32:22 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 01:32:22 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 01:32:24 KST [퍼블리셔] 원복: 5단계 반영 뒤 링크 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 01:32:24 KST [퍼블리셔] 실패: 5단계 반영 뒤 링크·각주 검사 실패:
+[check_links] 오류 1건 (파일 113개 검사)
+- logs/daily/2026-09-25.md: 각주 [^ref-013] 참조는 있으나 정의가 없음
+
+- 2026-09-25 01:32:24 KST [퍼블리셔] 결과: 실패 · 소요 3초 · 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 113개 검사)
+- 2026-09-25 01:32:24 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 113개 검사)))
+- 2026-09-25 01:32:25 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 113개 검사)))
+- 2026-09-25 01:32:29 KST [퍼블리셔] --log-only: 사이트 빌드 실패(로그 페이지 반영은 유지):  /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'logs/daily/2026-09-25.md' contains a link '../../topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md', but the target 'topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md' is not found among documentation files.
+
+- 2026-09-25 01:32:29 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 7. 화물·재고·자산 식별과 추적 — 생성 1/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
