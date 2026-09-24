@@ -93,9 +93,9 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-recent:start -->
 - 2026-09-25 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id({#q1-01}) 규칙 추가 (실행 manual-2026-09-25)
 - 2026-09-25 · 갱신 · agents/verifier.md — 내용 검증 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id 검사 추가 (실행 manual-2026-09-25)
-- 2026-09-24 · 갱신 · agents/shared-rules.md — 공통 규칙 1.0 → 1.1: 각주 형식을 한 가지로 통일하고 자동 갱신 영역 키 목록 보완 (실행 manual-2026-09-24)
-- 2026-09-24 · 갱신 · agents/researcher.md — 리서치 에이전트 프롬프트 1.0 → 1.1: 스키마에 맞춤(답한 질문 0~3개, vendor_claim), 질문–발견 사항 대응 규약 추가 (실행 manual-2026-09-24)
-- 2026-09-24 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.2 → 1.3: 절 제목·소속 대분류 상자를 시드와 일치, 질문–발견 사항 대응 규약 읽기 규칙 추가 (실행 manual-2026-09-24)
+- 2026-09-25 · 갱신 · [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 영역 심화: 섹션 3~11 신규 작성, 상태 줄 추가, 각주 15건 정의. 2차 재수정: 중복 문장 축소(3·5·7·8·9·10·11절), 6절 로봇 적재 보고 소제목을 주제 페이지로 분리하고 링크, 7절 약어 정리 (실행 2026-09-25-01)
+- 2026-09-25 · 생성 · [로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인](topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md) — 신규 작성: 7. 화물·재고·자산 식별과 추적 6절의 로봇 관제 인터페이스 적재·하역 보고(VDA 5050 loads, Open-RMF 워크셀 결과)와 인계 확인 추론을 분량 기준에 따라 분리 (실행 2026-09-25-01)
+- 2026-09-25 · 요약 · [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 7. 화물·재고·자산 식별과 추적: 영역 심화 초안: 3~11절 신규 작성(GS1 식별 키, EPCIS·CBV 이벤트, 출하 인계 시나리오), 로봇 적재·하역 보고와 인계 확인을 주제 페이지로 분리 (실행 2026-09-25-01)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

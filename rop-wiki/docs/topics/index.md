@@ -19,5 +19,7 @@ version: 1
 ## 목록
 
 <!-- auto:topics-index:start -->
-아직 작성된 주제 페이지가 없다. 파이프라인 2주기부터 생성된다.
+| 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
+|---|---|---|---|---|---|
+| 2026-09-25 | [로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인](2026/2026-09-25-robot-load-reporting-handover-confirmation.md) | [7. 화물·재고·자산 식별과 추적](../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | — |
 <!-- auto:topics-index:end -->

@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 2 | 0 | 0 | 5 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -47,7 +47,7 @@ version: 1
 |---|---|---|---|---|
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | seed | — | 2026-09-24 | 1 |
 | [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | seed | — | 2026-09-24 | 1 |
-| [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | seed | — | 2026-09-24 | 1 |
+| [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | 2026-09-25 | 2 |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | seed | — | 2026-09-24 | 1 |
 
 **C. 연결·실행 기반**
@@ -110,17 +110,17 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 오픈소스 문서 | 3 |
-| 표준 | 2 |
-| 논문 | 2 |
+| 표준 | 13 |
+| 오픈소스 문서 | 5 |
+| 논문 | 3 |
 | 정부·연구기관 | 2 |
 | 기사 | 1 |
 
-신뢰도: medium 10건
+신뢰도: medium 24건
 
 ### 물류 흐름 매트릭스 채움률
 
-- 0/42 칸 (0%) — [흐름 매트릭스](flow-matrix.md)
+- 6/42 칸 (14%) — [흐름 매트릭스](flow-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
