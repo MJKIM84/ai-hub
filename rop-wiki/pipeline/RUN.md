@@ -22,7 +22,7 @@
 bash pipeline/run_daily.sh                                   # 오늘(settings.timezone) 정규 실행: 대상 선정 규칙대로
 bash pipeline/run_daily.sh --date 2026-09-24 --run-type area_deep_dive --area 7      # 대상을 지정한 실행(드라이런·재현)
 bash pipeline/run_daily.sh --run-type track --track manual-capability-ontology --stage 1 --question-ids q1-01,q1-02
-bash pipeline/run_daily.sh --run-type weekly_review           # 주간 정리만 따로
+bash pipeline/run_daily.sh --run-type weekly_review           # 주간 정리만 따로(리서치 전에 링크·출처 유효성 점검을 스크립트가 먼저 수행한다)
 bash pipeline/run_daily.sh --resume 2026-09-24-01             # 있는 산출물부터 이어서(보류 폴더는 자동으로 되돌린다)
 bash pipeline/run_daily.sh --resume 2026-09-24-01 --step publish    # 한 단계만
 bash pipeline/run_daily.sh --no-build --no-commit             # 빌드·커밋 없이(시험)
