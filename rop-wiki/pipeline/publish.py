@@ -9,12 +9,15 @@
  2.  프런트매터 필수 필드 검증(pages/) + 반영 전 사전 검사(참고문헌 id 충돌, 온톨로지 버전 대조, deprecated 의 replaced_by)
      — 5단계 안에서 실패해 부분 반영이 남지 않도록 스냅숏 이전에 실패시킨다
  3.  원문 보호 검사: pages/ 를 docs 에 복사한 상태에서 checks/protect_source.py (실패 시 스냅숏에서 원복)
- 4.  내부 링크·각주 검사(checks/check_links.py) + 프런트매터·이동 경로 검사(checks/check_frontmatter.py)
+ 4.  내부 링크·각주 검사(checks/check_links.py) + 제목 앵커 검사(AnchorIndex: 경로#앵커 링크와 pages.json 의 링크 필드 앵커를
+     mkdocs 가 만드는 제목 id 와 대조 — 6단계 빌드에서 실패할 앵커를 여기서 잡는다) + 프런트매터·이동 경로 검사(checks/check_frontmatter.py)
  5.  반영: 페이지 status published·updated·last_run·version, 용어집·참고문헌·표준·열린 질문·흐름 매트릭스·변경 이력,
      트랙(백로그·새 질문·트랙 로그·온톨로지 버전 이력·단계 전환·세부영역 반영 제안), 정정 요청 상태,
      자동 갱신 영역(refresh_all_auto_regions) + mkdocs.yml(write_mkdocs_yml) → 최종 검사 → (예비) 일일 로그·요약
  6.  사이트 빌드(settings.site_build_cmd) — 실패하면 스냅숏으로 docs/data/config/tracks/mkdocs.yml/inbox 를 되돌리고 로그에 남긴다
- 7.  git 커밋(settings.git_commit) — "run(<date>): <실행 유형 한국어> <대상 영역 이름> — 생성 n/갱신 n"
+ 7.  git 커밋(settings.git_commit) — 제목 "run(<date>): <실행 유형 한국어> <대상 영역 이름> — 생성 n/갱신 n"
+     (주간 정리는 <대상 영역 이름> 자리에 ISO 주 "2026-W40", 월간 재검증은 대상 영역이 없으면 비운다;
+     트랙 실행의 트랙·단계·질문은 제목이 아니라 본문 둘째 줄에 둔다 [가정 — RUN.md 9절])
  8.  일일 로그 docs/logs/daily/<date>.md 확정 + runs/<run_id>/summary.json → 재빌드 → 커밋 수정(amend).
      재빌드가 실패하면 확정 로그 변경분만 되돌리고 amend 를 건너뛴다
  9.  알림(notify 가 none 이 아니면 자리만)
@@ -74,6 +77,116 @@ def _run_check(script: str, *args: str) -> tuple[int, str]:
 def _slugify(text: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", str(text or "").lower()).strip("-")
     return re.sub(r"-{2,}", "-", s)
+
+
+# --- 제목 앵커 검사(4단계) -------------------------------------------------------------------
+_MD_LINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+_MD_FENCE = re.compile(r"^(```|~~~).*?^\1[ \t]*$", re.M | re.S)
+_MD_INLINE_CODE = re.compile(r"`[^`\n]*`")
+_MD_HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
+_EXTERNAL = ("http://", "https://", "mailto:", "tel:", "ftp://")
+_FALLBACK_EXTENSIONS = ["toc", "tables", "fenced_code", "footnotes", "admonition", "attr_list", "md_in_html"]
+
+
+class AnchorIndex:
+    """docs 페이지의 제목 앵커(id) 목록. mkdocs 와 같은 Python-Markdown 확장·설정(mkdocs.yml 의 markdown_extensions)으로
+    본문을 변환해 toc 의 id 와 렌더된 HTML 의 id 속성을 모은다(mkdocs 1.6 의 validation.links.anchors 가 보는 것과 같다).
+    기본 toc slugify 는 한글을 버리므로 "## 3. 조사 결과" 의 앵커는 #3 이고 한글만인 제목은 #_1 같은 자동 id 가 된다. 안정된 앵커가
+    필요하면 소제목을 `### q1-02 …` 처럼 영숫자 id 로 시작한다(트랙 단계 페이지의 관례). mkdocs.yml 의 toc 설정이 바뀌면(예: 유니코드
+    slugify) 이 검사도 그 설정을 따라간다."""
+
+    def __init__(self):
+        self._md = None
+        self._cache: dict[str, set[str]] = {}
+        self.note: str | None = None
+
+    def clear(self) -> None:
+        self._cache.clear()
+
+    def _converter(self):
+        if self._md is not None:
+            return self._md
+        import logging
+        import markdown
+        exts, cfgs = list(_FALLBACK_EXTENSIONS), {"toc": {"permalink": True}}
+        try:
+            from mkdocs.config import load_config
+            lg = logging.getLogger("mkdocs")
+            prev = lg.level
+            lg.setLevel(logging.ERROR)
+            try:
+                cfg = load_config(str(paths.MKDOCS_YML))
+            finally:
+                lg.setLevel(prev)
+            exts, cfgs = list(cfg["markdown_extensions"]), dict(cfg["mdx_configs"])
+        except Exception as e:  # mkdocs 설정을 못 읽으면 기본 확장으로 계산한다(6단계 빌드가 최종 확인한다)
+            self.note = f"mkdocs.yml 을 읽지 못해 기본 Markdown 확장으로 앵커를 계산했다: {_short(str(e), 120)}"
+        self._md = markdown.Markdown(extensions=exts, extension_configs=cfgs)
+        return self._md
+
+    def ids(self, path: Path) -> set[str]:
+        key = str(path.resolve())
+        if key in self._cache:
+            return self._cache[key]
+        md = self._converter()
+        md.reset()
+        try:
+            _, body = fm.read(path)
+        except Exception:
+            body = path.read_text(encoding="utf-8")
+        html = md.convert(body)
+        found = set(re.findall(r'\sid="([^"]+)"', html))
+
+        def walk(tokens):
+            for t in tokens:
+                if t.get("id"):
+                    found.add(str(t["id"]))
+                walk(t.get("children") or [])
+        walk(getattr(md, "toc_tokens", None) or [])
+        self._cache[key] = found
+        return found
+
+
+def check_anchor_links(index: AnchorIndex, extra_links: list[tuple[str, str]] | None = None) -> list[str]:
+    """docs 안 모든 .md 의 '경로#앵커' 링크(같은 페이지의 '#앵커' 포함)와 extra_links[(라벨, 'docs/….md#앵커')] 의 앵커가
+    대상 페이지의 실제 제목 id 에 있는지 검사한다. 파일 존재 여부는 check_links.py 가 보므로 없는 파일은 건너뛴다.
+    오류 문자열 목록(비어 있으면 통과)."""
+    errs: list[str] = []
+
+    def check(label: str, base: Path | None, target: str) -> None:
+        if target.startswith(_EXTERNAL) or target.startswith("<") or "#" not in target:
+            return
+        path_part, anchor = target.split("#", 1)
+        path_part = path_part.split("?", 1)[0]
+        anchor = anchor.strip()
+        if not anchor:
+            return
+        if base is None:                      # pages.json 의 링크 필드: 저장소 루트 기준 docs/… 경로
+            dest = (ROOT / path_part).resolve()
+        elif path_part:
+            dest = (base.parent / path_part).resolve()
+        else:                                 # 같은 페이지 안의 #앵커
+            dest = base.resolve()
+        if dest.suffix != ".md" or not dest.is_file():
+            return
+        ids = index.ids(dest)
+        if anchor not in ids:
+            hint = ", ".join(f"#{i}" for i in sorted(ids) if not i.startswith(("fn:", "fnref:")))
+            try:
+                dest_rel = dest.relative_to(paths.DOCS).as_posix()
+            except ValueError:
+                dest_rel = dest.as_posix()
+            errs.append(f"{label}: 앵커 없음 {target} — {dest_rel} 에 있는 제목 id: {_short(hint, 200) or '없음'}")
+
+    for p in sorted(paths.DOCS.rglob("*.md")):
+        text = p.read_text(encoding="utf-8")
+        scrubbed = _MD_INLINE_CODE.sub("", _MD_FENCE.sub("", _MD_HTML_COMMENT.sub("", text)))
+        rel = p.relative_to(paths.DOCS).as_posix()
+        for m in _MD_LINK.finditer(scrubbed):
+            check(rel, p, m.group(3))
+    for label, link in extra_links or []:
+        check(label, None, str(link))
+    return errs
 
 
 def _short(s, n=80) -> str:
@@ -154,6 +267,7 @@ class Publisher:
         self.commit_hash = None
         self.built = False
         self.src = load_source()
+        self.anchors = AnchorIndex()
 
     # --- 공통 ------------------------------------------------------------------------
     def info(self, msg: str, step: str = "퍼블리셔") -> None:
@@ -356,16 +470,45 @@ class Publisher:
             raise PublishError("3단계 원문 보호 검사 실패:\n" + out[-4000:])
         self.info("3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)")
 
+    def _pages_json_anchor_links(self) -> list[tuple[str, str]]:
+        """pages.json 에서 앵커를 허용하는 링크 필드 세 곳(schemas/README.md) 가운데 '#앵커' 가 붙은 값. 이 값들은 5단계에서
+        data/*.json 에 저장되고 auto 영역(열린 질문·흐름 매트릭스·질문 백로그·트랙 로그)에 링크로 렌더되므로 앵커가 틀리면
+        6단계 빌드(--strict)에서 실패한다. 4단계에서 미리 대조한다."""
+        out: list[tuple[str, str]] = []
+        for i, u in enumerate(self.pages.get("open_question_updates") or []):
+            if u.get("link"):
+                out.append((f"pages.json open_question_updates[{i}].link", str(u["link"])))
+        for i, u in enumerate(self.pages.get("flow_matrix_updates") or []):
+            if u.get("link"):
+                out.append((f"pages.json flow_matrix_updates[{i}].link", str(u["link"])))
+        for i, b in enumerate((self.pages.get("track_updates") or {}).get("backlog_updates") or []):
+            if b.get("answer_link"):
+                out.append((f"pages.json track_updates.backlog_updates[{i}].answer_link", str(b["answer_link"])))
+        return [(label, link) for label, link in out if "#" in link]
+
+    def _anchor_errors(self, extra: list[tuple[str, str]] | None = None) -> list[str]:
+        self.anchors.clear()
+        errs = check_anchor_links(self.anchors, extra)
+        if self.anchors.note and self.anchors.note not in self.notes:
+            self.notes.append(self.anchors.note)
+        return errs
+
     def step4_links(self) -> None:
         code, out = _run_check("check_links.py")
         if code != 0:
             self.restore("4단계 링크·각주 검사 실패")
             raise PublishError("4단계 내부 링크·각주 검사 실패:\n" + out[-4000:])
+        errs = self._anchor_errors(self._pages_json_anchor_links())
+        if errs:
+            self.restore("4단계 제목 앵커 검사 실패")
+            raise PublishError("4단계 내부 링크·각주 검사(제목 앵커) 실패 — mkdocs 가 만드는 제목 id 와 대조했다(6단계 빌드에서 실패할 링크를 "
+                               "여기서 잡는다. 기본 slugify 는 한글을 버리므로 '## 3. 조사 결과' 의 앵커는 #3 이고, 안정된 앵커는 "
+                               "'### q1-02 …' 처럼 영숫자로 시작하는 소제목이다):\n" + "\n".join(f"  - {e}" for e in errs[:40]))
         code, out2 = _run_check("check_frontmatter.py")
         if code != 0:
             self.restore("4단계 프런트매터 검사 실패")
             raise PublishError("4단계 프런트매터·이동 경로 검사(docs 전체) 실패:\n" + out2[-4000:])
-        self.info("4단계 내부 링크·각주 검사 통과 (check_links.py, check_frontmatter.py)")
+        self.info("4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)")
 
     # --- 5. 반영 ------------------------------------------------------------------------------
     def _finalize_page_meta(self, pg: dict) -> None:
@@ -481,14 +624,22 @@ class Publisher:
                 r = self._ref_data(s)
                 if r:
                     refs.append(r)
-            tag = "[사실]" if refs else "[추정]"
+            # 한 줄 정의의 사실 태그는 스크립트가 정하지 않는다(5.3 주장 단위 태그, 6.2 강등 판정은 검증 에이전트 몫). 스토리텔러가
+            # glossary_updates[].tag(사실|추정|의견)를 주면 그대로 쓰고, 없거나 값이 다르면 [추정] 이다 [가정 — RUN.md 9절].
+            # pages.schema.json 의 glossary_updates 에 tag 필드를 두는 것은 스키마 담당에게 요청한다.
+            tag_val = str(g.get("tag") or "").strip()
+            if tag_val not in ("사실", "추정", "의견"):
+                if tag_val:
+                    self.notes.append(f"용어집 '{g.get('term_ko')}' 의 tag 값 {tag_val!r} 은 사실|추정|의견 이 아니어서 [추정]으로 둔다")
+                tag_val = "추정"
+            tag = f"[{tag_val}]"
             foot = "".join(f"[^{r['id']}]" for r in refs)
             one_line = f"{g['definition']} {tag}{foot}"
             related = [int(x) for x in (g.get("related_areas") or []) if str(x).isdigit()]
             area_lines = "\n".join(f"- [{self.src.area(n).title}]({paths.rel_link(rel, paths.area_rel_path(n))})" for n in related) or "- 아직 없음"
             foot_lines = "\n".join(_footnote_line(r) for r in refs)
             ref_links = ", ".join("[{0}]({1})".format(r["id"], paths.rel_link(rel, "references/" + r["id"] + ".md")) for r in refs)
-            src_section = (foot_lines + ("\n\n- 참고문헌 페이지: " + ref_links if ref_links else "")) if refs else "출처 미기재(리서치 브리프의 용어 후보이며 정의를 뒷받침하는 참고문헌 id 가 없어 [추정]으로 둔다)."
+            src_section = (foot_lines + ("\n\n- 참고문헌 페이지: " + ref_links if ref_links else "")) if refs else "출처 미기재(리서치 브리프의 용어 후보이며 정의를 뒷받침하는 참고문헌 id 가 없다)."
             if dst.is_file():
                 meta, body = fm.read(dst)
                 meta.update({"definition": g["definition"], "updated": self.date, "version": int(meta.get("version") or 0) + 1,
@@ -684,7 +835,13 @@ class Publisher:
         summary = f"{parts[1]}: {parts[2]}" if len(parts) >= 4 else entry
         primary = self.pages["pages"][0]["path"] if self.pages.get("pages") else "docs/"
         rows.extend(page_rows)
-        rows.append({"date": self.date, "run_id": self.run_id, "action": "요약", "page": primary, "summary": summary})
+        summary_row = {"date": self.date, "run_id": self.run_id, "action": "요약", "page": primary, "summary": summary}
+        # 홈·대분류·세부영역의 "최근 업데이트"는 사양서 4.1·4.3 대로 changelog 행에서 자동 생성한다(lib/render.py). 스토리텔러가 낸
+        # index_updates(부록 B.3) 문구는 페이지에 직접 쓰지 않고 요약 행에 기록만 남긴다 [가정 — RUN.md 9절]
+        iu = {k: v for k, v in (self.pages.get("index_updates") or {}).items() if v}
+        if iu:
+            summary_row["index_updates"] = iu
+        rows.append(summary_row)
         rows.extend(self._changelog_rows)
         runs.write_json(p, data)
 
@@ -722,6 +879,28 @@ class Publisher:
             nums = [int(b["id"].split("-")[1]) for b in items if re.match(rf"^q{st}-\d{{2}}$", str(b.get("id", "")))]
             return f"q{st}-{(max(nums) + 1) if nums else 1:02d}"
 
+        # 제기 근거(8.2: finding id 또는 "사용자"). "사용자"는 config/priority.yaml 의 track_questions 에서 온 질문에만 쓴다. 에이전트가
+        # 낸 질문에 근거 finding id 가 없거나 근거 없이 "사용자"라고 적으면 `run:<run_id>`(에이전트 제기, 근거 미기재)로 기록해 사용자
+        # 제기와 섞이지 않게 한다 [가정 — RUN.md 9절]. 그 밖의 값은 그대로 두고 메모만 남긴다(형식은 스키마가 본다).
+        user_q_texts = {str(q.get("question", "")).strip() for q in runs.load_priority().get("track_questions", [])
+                        if str(q.get("track", "")) == slug and q.get("question")}
+        agent_origin = f"run:{self.run_id}"
+
+        def origin_of(value, question_text: str, where: str) -> str:
+            o = str(value or "").strip()
+            if re.match(r"^f\d+$", o):
+                return o
+            if o == "사용자" and question_text in user_q_texts:
+                return o
+            if o == "사용자":
+                self.notes.append(f"{where}: 제기 근거가 '사용자'인데 config/priority.yaml 의 track_questions 에 없는 질문이라 {agent_origin}(에이전트 제기, 근거 미기재)로 기록했다")
+                return agent_origin
+            if not o:
+                self.notes.append(f"{where}: 제기 근거(finding id)가 없어 {agent_origin}(에이전트 제기, 근거 미기재)로 기록했다")
+                return agent_origin
+            self.notes.append(f"{where}: 제기 근거 {o!r} 가 finding id·'사용자' 형식이 아니지만 그대로 기록했다")
+            return o
+
         # (0) priority.yaml 의 track_questions 를 제기 근거 "사용자"로 등록 (8.2)
         for q in runs.load_priority().get("track_questions", []):
             if str(q.get("track", "")) != slug or not q.get("question"):
@@ -752,7 +931,8 @@ class Publisher:
                 qid = u["id"] if not re.match(r"^q\d+-\d{2}$", u["id"]) or u["id"] not in by_id else next_qid(int(u["stage"]))
                 if int(u["stage"]) != int(qid.split("-")[0][1:]):
                     qid = next_qid(int(u["stage"]))
-                row = {"id": qid, "question": u["question"], "stage": int(u["stage"]), "origin": u.get("origin") or "사용자",
+                row = {"id": qid, "question": u["question"], "stage": int(u["stage"]),
+                       "origin": origin_of(u.get("origin"), str(u["question"]).strip(), f"백로그 새 질문 {qid}"),
                        "status": u["status"], "answered_run_id": None, "answer_link": u.get("answer_link"),
                        "created": self.date, "origin_run_id": self.run_id}
                 items.append(row); by_id[qid] = row; texts[str(u["question"]).strip()] = row
@@ -777,8 +957,8 @@ class Publisher:
                 continue
             st = int(nq.get("stage") or stage)
             qid = nq.get("id") if nq.get("id") and nq["id"] not in by_id and nq["id"].startswith(f"q{st}-") else next_qid(st)
-            row = {"id": qid, "question": t, "stage": st, "origin": nq.get("rationale_finding_id") or "사용자", "status": "열림",
-                   "answered_run_id": None, "answer_link": None, "created": self.date, "origin_run_id": self.run_id}
+            row = {"id": qid, "question": t, "stage": st, "origin": origin_of(nq.get("rationale_finding_id"), t, f"브리프 새 질문 {qid}"),
+                   "status": "열림", "answered_run_id": None, "answer_link": None, "created": self.date, "origin_run_id": self.run_id}
             items.append(row); by_id[qid] = row; texts[t] = row
             self.counts["backlog"] += 1
         runs.write_json(bp, data)
@@ -948,6 +1128,10 @@ class Publisher:
         if code != 0:
             self.restore("5단계 반영 뒤 링크 검사 실패")
             raise PublishError("5단계 반영 뒤 링크·각주 검사 실패:\n" + out[-4000:])
+        errs = self._anchor_errors()   # auto 영역에 렌더된 링크(백로그 답 링크·열린 질문·매트릭스)의 앵커까지 대조
+        if errs:
+            self.restore("5단계 반영 뒤 제목 앵커 검사 실패")
+            raise PublishError("5단계 반영 뒤 제목 앵커 검사 실패:\n" + "\n".join(f"  - {e}" for e in errs[:40]))
         code, out = _run_check("check_frontmatter.py")
         if code != 0:
             self.restore("5단계 반영 뒤 프런트매터 검사 실패")
@@ -984,16 +1168,35 @@ class Publisher:
                  f"{rel}{self.rd.resolve().relative_to(ROOT.resolve()).as_posix()}"]
         return repo, items
 
-    def commit_message(self) -> str:
+    def commit_name(self) -> str:
+        """6.4 커밋 형식의 <대상 영역 이름> 자리. 주간 정리는 대상 영역이 없으므로 ISO 주(예 2026-W40), 월간 재검증은 대상 영역이
+        있으면 그 이름, 없으면 비운다(실행 유형 라벨과 겹치는 문구를 넣지 않는다). 트랙 실행은 중심 세부영역 이름이다."""
         t = self.target.get("target") or {}
-        name = t.get("area_name") or ""
-        if self.run_type == "track" and self.track:
-            name = f"{name} ({self.track.get('name') or self.track.get('slug')} 단계 {self.track.get('stage')})"
         if self.run_type == "weekly_review":
-            name = f"주간 정리 {runs.iso_week(self.date)}"
-        if self.run_type == "monthly_recheck" and not name:
-            name = "월간 재검증"
-        return f"run({self.date}): {self.run_type_label()} {name} — 생성 {self.counts['create']}/갱신 {self.counts['update'] + self.counts['deprecate']}"
+            return runs.iso_week(self.date)
+        return str(t.get("area_name") or "")
+
+    def commit_subject(self, created: int, updated: int, suffix: str = "") -> str:
+        parts = [f"run({self.date}):", self.run_type_label()]
+        name = self.commit_name()
+        if name:
+            parts.append(name)
+        return " ".join(parts) + f" — 생성 {created}/갱신 {updated}" + (f" ({suffix})" if suffix else "")
+
+    def commit_body(self) -> str:
+        """트랙 실행의 부가 정보(트랙 이름·단계·질문)는 6.4 제목 형식에 없는 요소이므로 본문(둘째 줄)에 둔다 [가정 — RUN.md 9절]."""
+        if self.run_type == "track" and self.track:
+            names = (self.track_cfg or {}).get("stage_names") or {}
+            st = self.track.get("stage")
+            sn = names.get(st) or names.get(str(st)) or ""
+            return (f"트랙: {self.track.get('name') or self.track.get('slug')} · 단계 {st}{'. ' + sn if sn else ''}"
+                    f" · 질문 {', '.join(self.track.get('question_ids') or []) or '없음'}")
+        return ""
+
+    def commit_message(self) -> str:
+        subject = self.commit_subject(self.counts["create"], self.counts["update"] + self.counts["deprecate"])
+        body = self.commit_body()
+        return subject + (f"\n\n{body}" if body else "")
 
     def _git(self, repo: Path, *args: str) -> subprocess.CompletedProcess:
         ident = []
@@ -1031,7 +1234,7 @@ class Publisher:
         h = self._git(repo, "rev-parse", "--short", "HEAD")
         self.commit_hash = (h.stdout or "").strip()
         self.committed = True
-        self.info(f"7단계 커밋 {'수정(amend)' if amend else '완료'}: {self.commit_hash} — {self.commit_message()}")
+        self.info(f"7단계 커밋 {'수정(amend)' if amend else '완료'}: {self.commit_hash} — {self.commit_message().splitlines()[0]}")
         if self.settings.get("git_push"):
             p = self._git(repo, "push")
             if p.returncode != 0:
@@ -1190,6 +1393,23 @@ class Publisher:
         if self.track and self.pages and self.pages.get("track_updates"):
             tu = self.pages["track_updates"]
             nxt.append(f"- 트랙 다음 실행: {_log_segment(tu.get('log_entry', ''), '다음 실행') or _log_segment(tu.get('log_entry', ''), '다음 실행 제안') or tu.get('overview_progress', '')}")
+        # 주간 정리의 링크·출처 유효성 점검(7.1): run_daily.sh 가 리서치 전에 check_urls.py·check_links.py 를 실행해 남긴 결과
+        uc = runs.read_json(self.rd / "url_check.json", None)
+        if isinstance(uc, dict):
+            c = uc.get("counts") or {}
+            items = uc.get("items") or []
+            bad = [f"{it.get('ref_id')}({it.get('status')})" for it in items if it.get("result") == "오류"]
+            line = (f"- 링크·출처 유효성 점검(참고문헌 URL {len(items)}건, runs/{self.run_id}/url_check.json): "
+                    f"열림 {c.get('열림', 0)} · 오류 {c.get('오류', 0)} · 미확인 {c.get('미확인', 0)}")
+            if bad:
+                line += " — 오류 URL: " + ", ".join(bad)
+            if items and c.get("미확인", 0) == len(items):
+                line += " (전부 미확인: 네트워크 정책으로 외부 접속이 막혔을 가능성이 크다)"
+            nxt.append(line)
+        lc = self.rd / "link_check.txt"
+        if lc.is_file():
+            m = re.search(r"\[check_links\] 오류 (\d+)건", lc.read_text(encoding="utf-8"))
+            nxt.append(f"- 내부 링크·각주 검사(runs/{self.run_id}/link_check.txt): " + (f"오류 {m.group(1)}건" if m else "통과"))
         probe = runs.read_json(self.rd / "probe.json", {}) or {}
         if probe and not probe.get("web_fetch_available", True):
             nxt.append("- 환경: web_fetch_available: false (페이지 열람 차단, 모든 출처 원문 미열람·신뢰도 medium 상한)")
@@ -1324,12 +1544,16 @@ class Publisher:
             self.step9_notify()
             self.info(f"퍼블리셔 완료: 생성 {self.counts['create']}/갱신 {self.counts['update'] + self.counts['deprecate']} · {runs.fmt_duration(time.time() - self.t0)}")
             return 0
-        except PublishError as e:
-            self.info(f"실패: {e}")
+        except Exception as e:  # PublishError 와 예기치 않은 오류 모두: 부분 반영을 남기지 않는다
+            if not isinstance(e, PublishError):
+                import traceback
+                self.info(f"실패(예기치 않은 오류 {type(e).__name__}): {e}\n{traceback.format_exc()[-1500:]}")
+            else:
+                self.info(f"실패: {e}")
             # 6.4 "하나라도 실패하면 반영하지 않는다": 스냅숏 이후·커밋 전의 실패(5단계 안의 실패 포함)는 스냅숏으로 되돌린다.
-            # 3·4·6단계는 자기 자리에서 restore 를 이미 불렀고(멱등), 5단계 안의 PublishError 는 여기서 되돌린다.
+            # 3·4·6단계는 자기 자리에서 restore 를 이미 불렀고(멱등), 5단계 안의 실패는 여기서 되돌린다.
             if self.snapshotted and not self.committed and not self.args.dry_run:
-                self.restore(f"퍼블리셔 실패({_short(str(e).splitlines()[0], 80)})")
+                self.restore(f"퍼블리셔 실패({_short(str(e).splitlines()[0] if str(e) else type(e).__name__, 80)})")
             if not (self.args.check_only or self.args.dry_run):
                 try:
                     self.write_daily_log_and_summary(final=True, end_state=f"중단(퍼블리셔: {_short(str(e).splitlines()[0], 120)})", published=False)
@@ -1359,20 +1583,22 @@ class Publisher:
                 existing = [i for i in items if (repo / i).exists()]
                 self._git(repo, "add", "-A", "--", *existing)
                 if self._git(repo, "diff", "--cached", "--quiet").returncode != 0:
-                    t = self.target.get("target") or {}
                     # 보류·중단 실행의 커밋도 6.4 의 형식("run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n")을 지키고
-                    # 종료 상태를 괄호로 덧붙인다. 사양서는 보류·중단 실행의 커밋 형식을 정하지 않았다 [가정 — RUN.md 8절]
+                    # 종료 상태를 괄호로 덧붙인다. 사양서는 보류·중단 실행의 커밋 형식을 정하지 않았다 [가정 — RUN.md 9절]
                     try:
                         n_c, n_u = int(prev.get("pages_created") or 0), int(prev.get("pages_updated") or 0)
                     except (TypeError, ValueError):
                         n_c, n_u = 0, 0
                     state = str(end_state).split("(")[0].strip() or "중단"
-                    msg = f"run({self.date}): {self.run_type_label()} {t.get('area_name') or ''} — 생성 {n_c}/갱신 {n_u} ({state})".replace("  ", " ")
+                    msg = self.commit_subject(n_c, n_u, state)
+                    body = self.commit_body()
+                    if body:
+                        msg += f"\n\n{body}"
                     c = self._git(repo, "commit", "-q", "-m", msg)
                     if c.returncode == 0:
                         self.committed = True
                         self.commit_hash = (self._git(repo, "rev-parse", "--short", "HEAD").stdout or "").strip()
-                        self.info(f"로그 커밋: {self.commit_hash} — {msg}")
+                        self.info(f"로그 커밋: {self.commit_hash} — {msg.splitlines()[0]}")
                         runs.write_summary(self.rd, committed=True, commit=self.commit_hash)
         return 0
 

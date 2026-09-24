@@ -6,7 +6,9 @@
 - track_day: 오늘 요일이 track_days(주당 트랙 실행 횟수만큼 앞에서부터)에 있고 활성 트랙이 있으면 트랙 실행.
   트랙이 여럿이면 번갈아(직전 트랙 실행의 다음 트랙). 현재 단계와 이번에 다룰 백로그 질문 id 1~3개를 고른다:
   priority.track_questions 지정 → 앞 단계로 되돌아온 질문(stage < current_stage 이고 열림) → 오래된 순.
-- monthly_recheck: 이달 첫 실행(이전 실행이 있을 때만; 트랙 실행일과 겹쳐 미뤄진 경우 다음 비트랙 실행).
+- monthly_recheck: 이달 첫 실행(이전 실행이 있을 때만; 트랙 실행일과 겹쳐 미뤄진 경우 다음 비트랙 실행). '이달 첫 실행'은 게시까지 간
+  비트랙 실행(CLI 로 run_type 을 지정한 드라이런·재현 실행 포함) 또는 monthly_recheck 실행으로 센다. 중단·보류된 실행과 트랙 실행은
+  세지 않는다 [가정 — 사용자 결정 항목, RUN.md 9절].
 - weekly_review: 매 weekly_review_every(7)번째 실행(미뤄진 경우 포함). 실행 번호는 runs/ 와 runs/parked/ 의 실행 id 수.
 - priority: priority.yaml 의 areas·topics·questions(최근 skip_if_targeted_within_days 안에 다룬 항목은 건너뜀).
 - cycle1: status seed 인 최저 번호 세부영역 → area_deep_dive.
@@ -16,7 +18,7 @@
   data/open_questions.json 에 올린다(priority.areas 에 지정하면 제외가 풀린다).
 
 출력: runs/<run_id>/target.json
-  {run_id, date, run_type, target{area_no, area_name, category}, track{slug, stage, question_ids, …}|null,
+  {run_id, date, run_type, forced, target{area_no, area_name, category}, track{slug, stage, question_ids, …}|null,
    corrections[], budget{…}, selection_rationale, …}
 CLI 오버라이드(드라이런용): --date, --run-type, --area, --track, --stage, --question-ids, --run-id, --stdout, --no-side-effects
 """
@@ -55,6 +57,7 @@ def load_history(settings: dict) -> list[dict]:
             "area_no": tgt.get("area_no"), "track": (t.get("track") or {}).get("slug") if t.get("track") else None,
             "topic": t.get("topic"), "priority_questions": t.get("priority_questions") or [],
             "parked": bool(s.get("parked")) or runs.is_parked(rid, settings), "published": bool(s.get("published")),
+            "forced": bool(t.get("forced")),   # CLI 로 run_type 을 지정한 실행(드라이런·재현). 기록용이며 '이달 첫 실행' 판정에서 빼지 않는다
         })
     return out
 
@@ -314,12 +317,19 @@ def periodic_due(history: list[dict], run_number: int, day: str, rotation: dict)
     every = int(rotation.get("weekly_review_every") or 7)
     prev = [h for h in history if h["number"] < run_number]
     this_month = [h for h in prev if str(h["date"])[:7] == day[:7]]
+    # 월간 재검증(7.1 "매월 첫 실행"): 이달의 이전 실행 가운데 '이달 첫 실행'으로 셀 수 있는 것 — 게시(published)까지 간 비트랙 실행
+    # 또는 run_type 이 monthly_recheck 인 실행 — 이 없으면 due 다. 준비·검증 단계에서 중단·보류된 실행(published false, run_type 이
+    # 비어 있거나 기본값)과 트랙 실행은 이달 첫 실행으로 세지 않는다(트랙 실행뿐이면 미뤄진 것). CLI 로 run_type 을 지정한 실행(forced,
+    # 9장 단계 3 의 드라이런)도 게시까지 갔으면 이달 첫 실행으로 센다 — 빼면 드라이런 뒤 첫 정규 비트랙 실행이 재검증할 게시 페이지가
+    # 거의 없는 상태에서 월간 재검증이 되어 1주기 시작이 하루 늦어진다 [가정 — 사용자 결정 항목, RUN.md 9절].
+    counted = [h for h in this_month
+               if h.get("run_type") == "monthly_recheck"
+               or (h.get("published") and h.get("run_type") != "track")]
     monthly = False
     monthly_deferred = False
-    if prev and not any(h.get("run_type") == "monthly_recheck" for h in this_month):
-        if all(h.get("run_type") == "track" for h in this_month):
-            monthly = True
-            monthly_deferred = bool(this_month)
+    if prev and not counted:
+        monthly = True
+        monthly_deferred = bool(this_month)
     weekly = False
     weekly_deferred = False
     k = (run_number // every) * every
@@ -477,7 +487,7 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
     target = area_target(area_no) if area_no else {"area_no": None, "area_name": None, "category": None}
     return {
         "run_id": run_id, "date": day, "weekday": runs.weekday_name(day), "run_number": run_number,
-        "run_type": run_type, "target": target, "topic": topic, "track": track_block,
+        "run_type": run_type, "forced": bool(forced), "target": target, "topic": topic, "track": track_block,
         "corrections": corrections, "budget": budget,
         "priority_reason": prio_reason, "priority_questions": prio_questions,
         "excluded_areas": excluded,

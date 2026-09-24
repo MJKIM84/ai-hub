@@ -13,8 +13,8 @@
 # 옵션: --date D --run-type T --area N --track S --stage N --question-ids a,b --resume ID --run-id ID
 #       --step {prepare|select|research|verify1|storytell|verify2|publish|log} --skip-probe --no-build --no-commit
 #       (--skip-probe: 기존 probe.json 재사용, 없으면 WebSearch·WebFetch 도구 점검을 생략하고 curl 참고값만 기록. --no-build/--no-commit: 퍼블리셔 6·7단계 생략)
-# 산출물: runs/<run_id>/ (target.json, probe.json, docs_tree.txt, prompts/, research.json·md, verification.json·md,
-#         pages/·pages.json, verification2.json·md, log.md, timings.json, summary.json). 보류는 runs/parked/<run_id>/.
+# 산출물: runs/<run_id>/ (target.json, probe.json, docs_tree.txt, prompts/, research.json·md, verification.json·md, pages/·pages.json,
+#         verification2.json·md, log.md, timings.json, summary.json; 주간 정리면 link_check.txt·url_check.json 도). 보류는 runs/parked/<run_id>/.
 # 단계별 소요 시간은 runs/<run_id>/log.md 와 timings.json 에 남고, 퍼블리셔가 일일 로그(docs/logs/daily/<date>.md)에 옮긴다.
 set -euo pipefail
 
@@ -24,7 +24,7 @@ PY="${PYTHON:-python3}"
 LIB="pipeline/lib/runs.py"
 
 usage() {
-  sed -n '2,17p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+  sed -n '2,18p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
 }
 
 # ---------------------------------------------------------------------------------------------
@@ -93,6 +93,19 @@ abort() {  # 준비 단계의 즉시 중단(7.3 "웹 도구 없음 → 즉시 �
   publish_log_only
   say "중단: $reason"
   exit 3
+}
+
+weekly_checks() {  # 7.1 주간 정리의 "링크·출처 유효성 점검": 에이전트의 WebFetch 에 맡기지 않고 스크립트가 리서치 전에 수행해
+                   # 결과 파일(runs/<id>/link_check.txt, url_check.json)을 리서치·검증·스토리텔러 입력에 넣고 일일 로그의 다음 실행 메모에 옮긴다
+  begin_step "링크·출처 점검"
+  local rc=0 rc2=0 links="" urls=""
+  "$PY" pipeline/checks/check_links.py > "$RD/link_check.txt" 2>&1 || rc=$?
+  "$PY" pipeline/checks/check_urls.py --timeout 10 --json "$RD/url_check.json" > "$RD/url_check.txt" 2>&1 || rc2=$?
+  links="$(grep -o '\[check_links\].*' "$RD/link_check.txt" | tail -n 1 || true)"
+  urls="$(grep -o '\[check_urls\] [0-9]*건.*' "$RD/url_check.txt" | tail -n 1 || true)"
+  rlog "내부 링크·각주 검사(exit $rc): ${links:-출력 없음} → $RD/link_check.txt" "링크·출처 점검"
+  rlog "참고문헌 URL 열림 확인(exit $rc2): ${urls:-출력 없음} → $RD/url_check.json" "링크·출처 점검"
+  end_step "$( [ "$rc" = 0 ] && [ "$rc2" = 0 ] && echo 성공 || echo "완료(문제 있음)" )" "${links:-링크 검사 출력 없음} / ${urls:-URL 점검 출력 없음}"
 }
 
 park() {  # 검증 반려·불통과가 max_retries 뒤에도 이어지거나 스키마 불일치가 재실행 뒤에도 남을 때(7.3)
@@ -189,6 +202,7 @@ elif should_run research || should_run verify1; then
   research_done=0
   if [ -n "$RESUME" ] && [ -f "$RD/research.json" ] && [ "$STEP" != "research" ]; then research_done=1; fi
   if [ "$STEP" = "verify1" ]; then research_done=1; fi
+  if [ "$SEL_TYPE" = "weekly_review" ] && [ "$research_done" = 0 ]; then weekly_checks; fi
   while :; do
     if [ "$research_done" = 0 ]; then
       begin_step "리서치"

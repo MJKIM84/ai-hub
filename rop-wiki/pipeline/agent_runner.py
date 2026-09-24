@@ -15,8 +15,10 @@ CLI 호출(실험으로 확인한 형식):
   - 위험 플래그(--dangerously-skip-permissions)는 쓰지 않는다. --permission-mode dontAsk 로 프롬프트 없이 실행됨을 확인했다.
 
 사용:
-  python3 pipeline/agent_runner.py probe [--out runs/<id>/probe.json] [--skip-search]
+  python3 pipeline/agent_runner.py probe [--out runs/<id>/probe.json] [--skip-search] [--skip-fetch]
       → {"web_search_available": bool, "web_fetch_available": bool, …}
+      web_search_available 은 `claude -p --tools WebSearch`, web_fetch_available 은 `claude -p --tools WebFetch` 로
+      실제 도구를 써 본 결과다(셸 curl 결과는 details.web_fetch_curl 참고값).
   python3 pipeline/agent_runner.py run --role researcher|verifier|storyteller --run-id <id>
          [--stage first|second] [--retry N] [--dry-run]
       → runs/<id>/research.json(+.md) | verification.json | verification2.json | pages.json + pages/
@@ -57,6 +59,38 @@ TEMPLATES_BY_RUN_TYPE = {
     "weekly_review": [],
     "track": ["track-stage.md", "ontology-draft.md", "track-overview.md", "topic.md"],
 }
+# 페이지 프런트매터 type → 템플릿 파일(2차 검증의 "템플릿 섹션 순서 준수" 검사용 기준 템플릿). track 은 subtype 으로 나뉜다.
+# type log 는 일일 로그(daily-log.md)가 기준이지만 주간 정리 페이지(docs/logs/weekly/, tags weekly_review)도 type log 이므로
+# 그 페이지는 daily-log.md 대신 _weekly_section_spec() 의 절 구성을 기준으로 준다(6.3 절차 8, storyteller.md 6절).
+TEMPLATE_BY_PAGE_TYPE = {
+    "home": "home.md", "about": "about.md", "category": "category.md", "area": "area.md", "topic": "topic.md",
+    "glossary": "glossary.md", "reference": "reference.md", "log": "daily-log.md", "track": "track-overview.md",
+    "track-stage": "track-stage.md", "ontology-draft": "ontology-draft.md", "track-log": "track-log.md",
+}
+WEEKLY_TEMPLATE = "templates/weekly-log.md"   # 템플릿 담당이 만들면 그것을 주간 정리의 기준 템플릿으로 쓴다(없으면 storyteller.md 6절) [가정]
+WEEKLY_CHECK_FILES = (   # 주간 정리에서 run_daily.sh 가 리서치 전에 남기는 링크·출처 유효성 점검 결과(7.1) — 리서치·검증·스토리텔러 입력
+    ("url_check.json", "참고문헌 URL 열림 확인 결과, pipeline/checks/check_urls.py"),
+    ("link_check.txt", "내부 링크·각주 검사 결과, pipeline/checks/check_links.py"),
+)
+
+
+def _is_weekly_page(rel: str, meta: dict) -> bool:
+    """주간 정리 페이지인가: docs/logs/weekly/ 아래이거나 tags 에 weekly_review 가 있다(storyteller.md 4.1·6절)."""
+    tags = [str(x) for x in (meta.get("tags") or [])]
+    return rel.startswith("logs/weekly/") or "weekly_review" in tags
+
+
+def _weekly_section_spec() -> tuple[str, str] | None:
+    """주간 정리 페이지의 기준 절 구성. templates/weekly-log.md 가 있으면 그 파일, 없으면 agents/storyteller.md 6절의
+    '**weekly_review(주간 정리)**' 단락(절 목록 1~7)을 떼어 준다. 둘 다 없으면 None."""
+    item = _label_text(WEEKLY_TEMPLATE)
+    if item:
+        return item
+    text = runs.read_text(runs.AGENTS_DIR / "storyteller.md")
+    m = re.search(r"^\*\*weekly_review\(주간 정리\)\*\*.*?(?=\n[ \t]*\n|\Z)", text, re.S | re.M)
+    if not m:
+        return None
+    return ("agents/storyteller.md (6절 — 주간 정리 페이지의 절 구성; templates/weekly-log.md 가 없어 기준 템플릿 대용)", m.group(0).strip())
 
 
 class AgentError(RuntimeError):
@@ -317,8 +351,33 @@ def probe_web_search(settings: dict, timeout: int = 240) -> dict:
         return {"available": False, "detail": str(e)[:400]}
 
 
+_FETCH_PROBE_SCHEMA = {"type": "object", "properties": {"ok": {"type": "boolean"}, "fetched": {"type": "boolean"}, "note": {"type": "string"}},
+                       "required": ["ok", "fetched"]}
+
+
+def _fetch_probe_prompt(url: str) -> str:
+    return (f'Use the WebFetch tool exactly once to open the URL {url} with the prompt "What is the title of this page?". '
+            'Then return JSON {"ok": true, "fetched": <true if the WebFetch tool call succeeded and returned page content, '
+            'false if it was denied, blocked, errored or returned no content>, "note": "<one short sentence, include the error text if any>"}.')
+
+
+def probe_web_fetch_tool(settings: dict, url: str, timeout: int = 240) -> dict:
+    """에이전트가 실제로 쓰는 WebFetch 도구로 probe URL 을 한 번 열게 해 가용성을 본다(probe_web_search 와 같은 방식).
+    프록시 정책이 셸의 curl 과 도구에 다르게 적용될 수 있으므로 web_fetch_available 은 이 결과로만 정한다."""
+    cmd = claude_cmd(settings, None, _FETCH_PROBE_SCHEMA, max_turns=4, tools=["WebFetch"])
+    try:
+        env, elapsed = call_claude(_fetch_probe_prompt(url), cmd, timeout)
+        data = extract_output(env)
+        ok = bool(isinstance(data, dict) and data.get("fetched") is True and not env.get("is_error"))
+        return {"available": ok, "detail": (data.get("note") if isinstance(data, dict) else None) or str(env.get("result"))[:200],
+                "elapsed_sec": round(elapsed, 1), "num_turns": env.get("num_turns"), "method": "claude -p --tools WebFetch"}
+    except AgentError as e:
+        return {"available": False, "detail": str(e)[:400], "method": "claude -p --tools WebFetch"}
+
+
 def probe_web_fetch(url: str, timeout: int = 20) -> dict:
-    """curl HEAD(거부되면 GET)로 페이지 열람 가능 여부를 본다. 2xx·3xx 면 열람 가능."""
+    """참고값: 셸의 curl HEAD(거부되면 GET)로 probe URL 이 열리는지 본다. 2xx·3xx 면 열림.
+    web_fetch_available 의 근거로는 쓰지 않는다(details.web_fetch_curl 에만 남긴다)."""
     def _curl(method_args):
         try:
             p = subprocess.run(["curl", "-sS", "-o", "/dev/null", "-w", "%{http_code}", "-m", str(timeout), *method_args, url],
@@ -346,15 +405,24 @@ def probe_web_fetch(url: str, timeout: int = 20) -> dict:
     return {"available": bool(code) and 200 <= code < 400, "status": code, "detail": err or f"curl {code}"}
 
 
-def probe(settings: dict, url: str | None = None, skip_search: bool = False) -> dict:
+def probe(settings: dict, url: str | None = None, skip_search: bool = False, skip_fetch: bool = False) -> dict:
+    """웹 도구 점검(7.2 의 1단계). web_search_available 은 `claude -p --tools WebSearch`, web_fetch_available 은
+    `claude -p --tools WebFetch` 로 실제 도구를 한 번씩 써 본 결과다. curl 결과는 참고값(details.web_fetch_curl)으로만 남긴다.
+    skip_fetch(드라이런)면 도구 점검을 생략하고 curl 참고값을 web_fetch_available 로 쓰되 details 에 생략을 표시한다 [가정]."""
     url = url or str(settings.get("web_fetch_probe_url") or "")
-    search = {"available": None, "detail": "건너뜀"} if skip_search else probe_web_search(settings)
-    fetch = probe_web_fetch(url) if url else {"available": False, "detail": "probe URL 없음"}
+    search = {"available": None, "detail": "건너뜀(--skip-search)"} if skip_search else probe_web_search(settings)
+    curl = probe_web_fetch(url) if url else {"available": False, "detail": "probe URL 없음"}
+    if not url:
+        fetch = {"available": False, "detail": "probe URL 없음(settings.web_fetch_probe_url)"}
+    elif skip_fetch:
+        fetch = {"available": bool(curl.get("available")), "detail": "건너뜀(--skip-fetch): WebFetch 도구 점검을 생략하고 curl 참고값을 썼다", "method": "curl(참고값)"}
+    else:
+        fetch = probe_web_fetch_tool(settings, url)
     return {
         "web_search_available": bool(search.get("available")) if not skip_search else True,
         "web_fetch_available": bool(fetch.get("available")),
         "probe_url": url, "checked_at": runs.now_str(settings),
-        "details": {"web_search": search, "web_fetch": fetch},
+        "details": {"web_search": search, "web_fetch": fetch, "web_fetch_curl": curl},
     }
 
 
@@ -397,13 +465,31 @@ def _related_area_nos(target: dict, track_cfg: dict | None) -> list[int]:
 
 
 def _previous_research(run_id: str, settings: dict, n: int = 7) -> list[tuple[str, str]]:
-    out = []
-    ids = [i for i in runs.list_run_ids(settings, include_parked=False) if i < run_id]
+    """최근 n회 실행의 research.md(6.1 입력, 공통 규칙 10). 보류된 실행(runs/parked/)도 포함하되 라벨에 "(보류)" 를 붙이고,
+    그 실행의 verification.md(반려 사유)를 함께 넣어 같은 영역이 반복 보류될 때 직전 조사·반려 사유를 재사용하게 한다."""
+    out: list[tuple[str, str]] = []
+    briefs = 0
+    ids = [i for i in runs.list_run_ids(settings, include_parked=True) if i < run_id]
     for rid in sorted(ids, reverse=True):
-        p = runs.run_dir(rid, settings) / "research.md"
-        if p.is_file():
-            out.append((f"runs/{rid}/research.md", p.read_text(encoding="utf-8")))
-        if len(out) >= n:
+        d = runs.find_run_dir(rid, settings)
+        if not d:
+            continue
+        p = d / "research.md"
+        if not p.is_file():
+            continue
+        rel = d.relative_to(ROOT).as_posix()
+        parked = runs.is_parked(rid, settings)
+        if parked:
+            reason = str(runs.read_summary(d).get("park_reason") or "").strip()
+            label = f"{rel}/research.md (보류" + (f": {reason[:120]}" if reason else "") + ")"
+            out.append((label, p.read_text(encoding="utf-8")))
+            v = d / "verification.md"
+            if v.is_file():
+                out.append((f"{rel}/verification.md (보류 실행의 반려 사유)", v.read_text(encoding="utf-8")))
+        else:
+            out.append((f"{rel}/research.md", p.read_text(encoding="utf-8")))
+        briefs += 1
+        if briefs >= n:
             break
     return out
 
@@ -470,6 +556,13 @@ def _weekly_inputs(run_id: str, day: str, settings: dict) -> list[tuple[str, str
                 rel = p.relative_to(ROOT).as_posix()
                 out.append((rel, p.read_text(encoding="utf-8")))
     _add(out, "data/changelog.json")
+    # 7.1 "링크·출처 유효성 점검": run_daily.sh 가 이번 실행 폴더에 남긴 스크립트 점검 결과(에이전트는 이를 근거로 정리한다)
+    rd = runs.find_run_dir(run_id, settings)
+    if rd:
+        for fn, label in WEEKLY_CHECK_FILES:
+            p = rd / fn
+            if p.is_file():
+                out.append((f"{rd.relative_to(ROOT).as_posix()}/{fn} ({label})", p.read_text(encoding="utf-8")))
     return out
 
 
@@ -622,15 +715,37 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         _add(inputs, f"{rel_run}/verification.json")
         pages_json = runs.read_json(rd / "pages.json", {}) or {}
         _add(inputs, f"{rel_run}/pages.json", json.dumps(pages_json, ensure_ascii=False, indent=2))
+        page_types: list[str] = []
+        weekly_page = False
         for pg in pages_json.get("pages", []):
             rel = paths.docs_rel(pg.get("path", ""))
             p = rd / "pages" / rel
             if p.is_file():
                 inputs.append((f"{rel_run}/pages/{rel}", p.read_text(encoding="utf-8")))
+                try:
+                    meta, _ = fm.read(p)
+                    if _is_weekly_page(rel, meta):
+                        weekly_page = True   # 주간 정리(type log)는 일일 로그 템플릿이 기준이 아니다
+                    elif meta.get("type") and meta.get("subtype") != "index":
+                        page_types.append(str(meta["type"]))
+                except Exception:
+                    pass
             if (ROOT / pg.get("path", "")).is_file():
                 _add(inputs, pg["path"])
         if target_rel and not any(l == target_rel for l, _ in inputs):
             _add(inputs, target_rel)
+        # 6.2 2차 검증 항목 "템플릿 섹션 순서 준수": 스토리텔러가 받은 것과 같은 기준 템플릿(실행 유형별 + pages.json 이 만진 페이지 유형별)을 준다
+        tpls: list[str] = list(TEMPLATES_BY_RUN_TYPE.get(rt, []))
+        for t in page_types:
+            f = TEMPLATE_BY_PAGE_TYPE.get(t)
+            if f and f not in tpls:
+                tpls.append(f)
+        for tpl in tpls:
+            _add(inputs, f"templates/{tpl}")
+        if weekly_page or rt == "weekly_review":
+            spec = _weekly_section_spec()   # 주간 정리 페이지의 기준 절 구성(templates/weekly-log.md 또는 storyteller.md 6절)
+            if spec:
+                inputs.append(spec)
         _add(inputs, f"{rel_run}/docs_tree.txt")
         _add(inputs, "docs/glossary/index.md")
         _add(inputs, "docs/references/index.md")
@@ -790,7 +905,7 @@ def cmd_probe(args) -> int:
     except Exception as e:
         print(json.dumps({"web_search_available": False, "web_fetch_available": False, "error": f"설정 로드 실패: {e}"}, ensure_ascii=False))
         return 2
-    result = probe(settings, url=args.url, skip_search=args.skip_search)
+    result = probe(settings, url=args.url, skip_search=args.skip_search, skip_fetch=args.skip_fetch)
     if args.out:
         runs.write_json(args.out, result)
     print(json.dumps(result, ensure_ascii=False))
@@ -800,10 +915,11 @@ def cmd_probe(args) -> int:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    p = sub.add_parser("probe", help="웹 도구 점검(WebSearch 1회, probe URL curl HEAD)")
+    p = sub.add_parser("probe", help="웹 도구 점검(claude -p 로 WebSearch 1회, WebFetch 로 probe URL 1회; curl 은 참고값)")
     p.add_argument("--out", help="결과 JSON 저장 경로")
     p.add_argument("--url", help="페이지 열람 점검 URL(기본 settings.web_fetch_probe_url)")
     p.add_argument("--skip-search", action="store_true", help="WebSearch 점검을 건너뛴다(드라이런용)")
+    p.add_argument("--skip-fetch", action="store_true", help="WebFetch 도구 점검을 건너뛰고 curl 참고값을 쓴다(드라이런용)")
     p.set_defaults(func=cmd_probe)
     p = sub.add_parser("run", help="에이전트 1회 실행")
     p.add_argument("--role", required=True, choices=list(ROLE_FILES))

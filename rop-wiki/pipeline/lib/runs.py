@@ -654,6 +654,8 @@ def semantic_checks(kind: str, data: dict, run_type: str | None = None, track_cf
         t = data.get("track")
         if is_track and not t:
             errs.append("트랙 실행인데 research.json 에 track 블록이 없다")
+        if run_type and not is_track and t is not None:   # 부록 B.1 "track 블록은 트랙 실행에만 넣는다"(verification·pages 검사와 같이 양방향)
+            errs.append("트랙 실행이 아닌데 research.json 에 track 블록이 있다")
         if t:
             if track_cfg and t.get("slug") != track_cfg.get("slug"):
                 errs.append(f"track.slug 불일치: {t.get('slug')!r} != {track_cfg.get('slug')!r}")
