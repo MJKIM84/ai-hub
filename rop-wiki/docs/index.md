@@ -68,7 +68,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 31 | 아직 없음 | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 33 | q1-02 — 산업 상호운용 규격은 로봇 기능을 어떤 형식으로 기술하는가? (후보: VDA 5050의 팩트시트, MassRobotics AMR 상호운용 표준, OPC UA Robotics, Asset Administration Shell의 능력·스킬·서비스 모델, Open-RMF Fleet Adapter의 기능 기술) ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-02)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례
@@ -93,9 +93,9 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-recent:start -->
 - 2026-09-25 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id({#q1-01}) 규칙 추가 (실행 manual-2026-09-25)
 - 2026-09-25 · 갱신 · agents/verifier.md — 내용 검증 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id 검사 추가 (실행 manual-2026-09-25)
-- 2026-09-25 · 갱신 · [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 영역 심화: 섹션 3~11 신규 작성, 상태 줄 추가, 각주 15건 정의. 2차 재수정: 중복 문장 축소(3·5·7·8·9·10·11절), 6절 로봇 적재 보고 소제목을 주제 페이지로 분리하고 링크, 7절 약어 정리 (실행 2026-09-25-01)
-- 2026-09-25 · 생성 · [로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인](topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md) — 신규 작성: 7. 화물·재고·자산 식별과 추적 6절의 로봇 관제 인터페이스 적재·하역 보고(VDA 5050 loads, Open-RMF 워크셀 결과)와 인계 확인 추론을 분량 기준에 따라 분리 (실행 2026-09-25-01)
-- 2026-09-25 · 요약 · [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 7. 화물·재고·자산 식별과 추적: 영역 심화 초안: 3~11절 신규 작성(GS1 식별 키, EPCIS·CBV 이벤트, 출하 인계 시나리오), 로봇 적재·하역 보고와 인계 확인을 주제 페이지로 분리 (실행 2026-09-25-01)
+- 2026-09-25 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.4 → 1.5: 태그 바로 뒤 괄호 금지 규칙 추가 (실행 manual-2026-09-25)
+- 2026-09-25 · 갱신 · [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) — q1-01·q1-02 답함, q1-03 부분 답, 후속 질문 4건(q1-07·q1-08·q4-06·q5-05), 완료 조건 미충족 평가, 출처 20건(원문 미열람), 이력 행 추가. 2차 수정: 4절 결론 셋째 항목에서 MassRobotics setup 메시지를 기능 기술로 쓴 부분 삭제(능력 필드 유무 미확인 명시), 남은 불확실성 한 항목 평서문으로 (실행 2026-09-25-02)
+- 2026-09-25 · 갱신 · [능력 온톨로지 초안](tracks/manual-capability-ontology/ontology-draft.md) — 온톨로지 v0 → v0.1: 개념 효과·스킬·오류 추가(확정), 기능 속성에 능력 출처 구분 추가(초안 → 확정), 관계 기능 / 구현된다 / 스킬 추가, 다이어그램 갱신, 전제조건·스킬 상태 기계 등은 6절 질문으로 (실행 2026-09-25-02)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

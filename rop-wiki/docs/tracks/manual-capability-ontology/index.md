@@ -6,16 +6,17 @@ related_areas: [5, 9, 21, 23, 24, 27, 8, 12, 13, 25, 28]
 tags: [온톨로지, 매뉴얼, 로봇 능력, 중점 연구 트랙]
 status: published
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [ref-004]
-version: 1
+last_run: 2026-09-25
+version: 2
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › 매뉴얼 기반 로봇 기능 온톨로지
 
 # 매뉴얼 기반 로봇 기능 온톨로지
 
-> 트랙 상태: active · 현재 단계: 단계 1. 기존 능력 표현 모델과 표준 조사 · 마지막 트랙 실행: 없음
+> 트랙 상태: active · 현재 단계: 단계 1. 기존 능력 표현 모델과 표준 조사 · 마지막 트랙 실행: 2026-09-25
 
 이 페이지는 중점 연구 트랙 "매뉴얼 기반 로봇 기능 온톨로지"의 개요다. 트랙(track)은 분류 원문의 7개 대분류·28개 세부 연구영역을 바꾸지 않고, 여러 세부영역을 가로지르는 하나의 연구 주제를 단계적으로 파고드는 집중 연구 프로그램이다. 이 트랙은 로봇 매뉴얼 같은 비정형 문서에서 로봇의 기능을 구조화한 온톨로지(ontology)를 만들고, 그것을 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)의 온보딩·작업 배정·실행·검증에 잇는 방법을 일곱 단계로 조사한다.
 
@@ -102,8 +103,8 @@ version: 1
 | [단계 1. 기존 능력 표현 모델과 표준 조사](stage-1-existing-models-and-standards.md) | 진행 중 | 6 | 미충족 |
 | [단계 2. 로봇 문서 유형과 정보 구조 조사](stage-2-document-types.md) | 대기 | 5 | 미충족 |
 | [단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조사](stage-3-extraction-methods.md) | 대기 | 6 | 미충족 |
-| [단계 4. 온톨로지를 실행에 연결하는 방법 조사](stage-4-execution-grounding.md) | 대기 | 5 | 미충족 |
-| [단계 5. 완전성과 정확성을 검증하는 방법 조사](stage-5-completeness-verification.md) | 대기 | 4 | 미충족 |
+| [단계 4. 온톨로지를 실행에 연결하는 방법 조사](stage-4-execution-grounding.md) | 대기 | 6 | 미충족 |
+| [단계 5. 완전성과 정확성을 검증하는 방법 조사](stage-5-completeness-verification.md) | 대기 | 5 | 미충족 |
 | [단계 6. 변경 관리·운영·거버넌스 조사](stage-6-lifecycle-governance.md) | 대기 | 4 | 미충족 |
 | [단계 7. ROP 활용 시나리오 종합과 가설 판정](stage-7-rop-scenarios-and-hypotheses.md) | 대기 | 1 | 미충족 |
 
@@ -112,11 +113,11 @@ version: 1
 
 ## 6. 살아있는 산출물 링크
 
-- [능력 온톨로지 초안](ontology-draft.md) — 현재 버전 v0. 분류 원문 5. 로봇 능력·작업 온톨로지의 정의에서 도출한 개념 7개·관계 5개와 트랙 정의가 더한 근거 문서 개념 1개·관계 1개(개념 8개·관계 6개)의 시드이며, 내용 검증 에이전트가 승인한 변경만 반영해 버전을 올린다.
-- [모델·표준 비교표](model-standard-comparison.md) — 단계 1 산출물. 빈 틀(단계 1 실행에서 채운다).
+- [능력 온톨로지 초안](ontology-draft.md) — 현재 버전 v0.1. v0 시드(개념 8개·관계 6개)에 단계 1 실행 2026-09-25-02에서 검증 승인된 변경(개념 효과·스킬·오류, 관계 기능 / 구현된다 / 스킬, 기능의 능력 출처 구분 속성)을 반영했다.
+- [모델·표준 비교표](model-standard-comparison.md) — 단계 1 산출물. 단계 1 실행 2026-09-25-02에서 초안 작성(후보 10행과 후보 밖 2행, 다섯 정보 항목 열 대부분 미조사, 모든 행 원문 미열람).
 - [문서 유형 매트릭스](document-type-matrix.md) — 단계 2 산출물. 빈 틀(단계 2 실행에서 채운다).
 - [평가 지표와 검증 절차](evaluation-and-verification.md) — 단계 5 산출물. 빈 틀(단계 5 실행에서 채운다).
-- [질문 백로그](question-backlog.md) — 열린 질문 31건 · 답한 질문 0건(구축 시점의 시드 기준. 최신 수치는 백로그 페이지의 자동 표를 따른다)
+- [질문 백로그](question-backlog.md) — 열린 질문 33건 · 답한 질문 2건(실행 2026-09-25-02 반영 기준. 최신 수치는 백로그 페이지의 자동 표를 따른다)
 - [트랙 로그](log.md) — 실행별 기록
 - [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.
 
@@ -125,9 +126,9 @@ version: 1
 <!-- auto:track-recent-runs:start -->
 | 실행 id | 날짜 | 단계 | 판정(1차 / 2차) | 생성 / 갱신 | 일일 로그 |
 |---|---|---|---|---|---|
-| 2026-09-25-02 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 0 | [로그](../../logs/daily/2026-09-25.md) |
+| 2026-09-25-02 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 4 | [로그](../../logs/daily/2026-09-25.md) |
 <!-- auto:track-recent-runs:end -->
 
 ## 8. 참고 자료
 
-[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24
+[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24 (원문 미열람)

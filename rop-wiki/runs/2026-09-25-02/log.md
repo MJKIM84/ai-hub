@@ -52,3 +52,22 @@ WARNING -  Doc file 'tracks/manual-capability-ontology/ontology-draft.md' contai
 - 2026-09-25 02:02:58 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
 - 2026-09-25 02:02:59 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
 - 2026-09-25 02:03:03 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 트랙 실행 5. 로봇 능력·작업 온톨로지 — 생성 0/갱신 4 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
+- 2026-09-25 02:04:02 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-02 resume=2026-09-25-02 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 02:04:02 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 02:04:03 KST [준비] 결과: 성공 · 소요 1초 · 건너뜀
+- 2026-09-25 02:04:03 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-02 (트랙 실행)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 2단계 전 표기 정규화: tracks/manual-capability-ontology/ontology-draft.md — 태그 뒤 괄호 1건에 공백 삽입(링크 오인 방지, 내용 불변)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 4개, 반영 전 사전 검사 포함)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-02/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 02:04:03 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 02:04:04 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 02:04:07 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 0/갱신 4/폐기 0, 용어 4, 참고문헌 19, 표준 7, 열린 질문 2, 매트릭스 칸 0, 백로그 7, 정정 0; auto 영역 갱신 31개 페이지, mkdocs.yml 갱신
+- 2026-09-25 02:04:09 KST [퍼블리셔] 6단계 사이트 빌드 성공 ('mkdocs build --strict', 3초)
+- 2026-09-25 02:04:09 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 게시 완료)
+- 2026-09-25 02:04:14 KST [퍼블리셔] 8단계 확정 로그 반영 뒤 사이트 재빌드 성공
+- 2026-09-25 02:04:14 KST [퍼블리셔] 퍼블리셔 완료: 생성 0/갱신 4 · 11초
+- 2026-09-25 02:04:14 KST [퍼블리셔] 결과: 성공 · 소요 11초 · 게시 완료
+- 2026-09-25 02:04:14 KST [퍼블리셔] 7단계 커밋: run(2026-09-25): 트랙 실행 5. 로봇 능력·작업 온톨로지 — 생성 0/갱신 4 (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
