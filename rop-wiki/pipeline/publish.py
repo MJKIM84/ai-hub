@@ -102,9 +102,8 @@ _FALLBACK_EXTENSIONS = ["toc", "tables", "fenced_code", "footnotes", "admonition
 class AnchorIndex:
     """docs 페이지의 제목 앵커(id) 목록. mkdocs 와 같은 Python-Markdown 확장·설정(mkdocs.yml 의 markdown_extensions)으로
     본문을 변환해 toc 의 id 와 렌더된 HTML 의 id 속성을 모은다(mkdocs 1.6 의 validation.links.anchors 가 보는 것과 같다).
-    기본 toc slugify 는 한글을 버리므로 "## 3. 조사 결과" 의 앵커는 #3 이고 한글만인 제목은 #_1 같은 자동 id 가 된다. 안정된 앵커가
-    필요하면 소제목을 `### q1-02 …` 처럼 영숫자 id 로 시작한다(트랙 단계 페이지의 관례). mkdocs.yml 의 toc 설정이 바뀌면(예: 유니코드
-    slugify) 이 검사도 그 설정을 따라간다."""
+    mkdocs.yml 의 toc 는 유니코드 slugify(pymdownx.slugs, 소문자)를 쓰므로 "## 3. 조사 결과" 의 앵커는 #3-조사-결과 다. 트랙 단계
+    페이지의 답 소제목은 `### q1-02 … {#q1-02}` 처럼 명시 id 로 짧은 앵커를 고정한다. 이 검사는 mkdocs.yml 의 toc 설정을 그대로 따른다."""
 
     def __init__(self):
         self._md = None
@@ -563,8 +562,8 @@ class Publisher:
         if errs:
             self.restore("4단계 제목 앵커 검사 실패")
             raise PublishError("4단계 내부 링크·각주 검사(제목 앵커) 실패 — mkdocs 가 만드는 제목 id 와 대조했다(6단계 빌드에서 실패할 링크를 "
-                               "여기서 잡는다. 기본 slugify 는 한글을 버리므로 '## 3. 조사 결과' 의 앵커는 #3 이고, 안정된 앵커는 "
-                               "'### q1-02 …' 처럼 영숫자로 시작하는 소제목이다):\n" + "\n".join(f"  - {e}" for e in errs[:40]))
+                               "여기서 잡는다. 제목 앵커는 유니코드 slugify 로 만든다('## 3. 조사 결과' → #3-조사-결과). "
+                               "답 소제목은 '### q1-02 … {#q1-02}' 처럼 명시 id 를 붙인다):\n" + "\n".join(f"  - {e}" for e in errs[:40]))
         code, out2 = _run_check("check_frontmatter.py")
         if code != 0:
             self.restore("4단계 프런트매터 검사 실패")
