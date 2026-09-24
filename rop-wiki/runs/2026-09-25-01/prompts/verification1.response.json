@@ -1,0 +1,325 @@
+{
+  "duration_api_ms": 231319,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.6073542,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 114817,
+    "cache_read_input_tokens": 202136,
+    "output_tokens": 17395,
+    "output_tokens_details": {
+      "thinking_tokens": 9515
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 114817,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15310,
+        "cache_read_input_tokens": 105129,
+        "cache_creation_input_tokens": 9688,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 9688
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 17395,
+      "cacheReadInputTokens": 202136,
+      "cacheCreationInputTokens": 114817,
+      "webSearchRequests": 0,
+      "costUSD": 1.3068872,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9515,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 142792,
+      "outputTokens": 5535,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 13,
+      "costUSD": 0.300467,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 15,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-01\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과 일치: ISO 소개 페이지(iso.org/standard/85557)가 EPCIS 2.0 정의·기업 내·기업 간 가시성 이벤트 데이터 생성·공유 목표를 요약한다. 발행 2024-03(스니펫). 단일 발행 주체(ISO/IEC, GS1 원문 기반)라 교차 확인 아님.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. ISO/IEC 19988:2024 소개(iso.org/standard/85558)와 GS1 CBV 참조 페이지(ref.gs1.org/standards/cbv/) 모두 검색 결과에서 확인. EPCIS 와 함께 쓸 어휘 구조·값 규정 요약 일치. 두 출처 모두 GS1 계열이라 독립 교차 아님.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. OpenEPCIS 문서 스니펫이 다섯 이벤트 유형을 그대로 나열한다. 발행 기관 원문이 아닌 GS1 적합 구현 프로젝트 문서이며 발행일 미확인.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 스니펫은 AggregationEvent 가 포장 관계(낱개→케이스, 케이스→팔레트)를 기록한다는 부분까지만 확인한다. '분리 전까지 같은 위치에 있다고 본다' 구절은 검증 스니펫에서 확인되지 않아 삭제 지시.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 스니펫은 2.0 도입, 객체 간 느슨한 연결(센서를 팔레트·컨테이너에 붙이는 장기 연결)을 확인한다. '위치에 연결'·'해제' 부분은 미확인이라 문구 축소 지시.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"원문 미열람. 사실 → 추정: 2022년 6월 비준 시점과 JSON/JSON-LD·REST API 추가는 OpenEPCIS 단일 출처이고 검증 검색 스니펫에서 확인하지 못했다(브리프도 GS1 원문 교차 실패를 자인). How 차원은 ISO 소개 스니펫에 다섯 차원으로 나타난다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. GS1 EPCIS·CBV 구현 가이드라인·CBV 검색 스니펫이 소유·책임·점유 이전 시 source/destination 목록 사용과 owning_party·possessing_party·location 세 유형(CBV 7.4.2)을 확인한다. 두 출처 모두 GS1 발행이라 독립 교차 아님.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 스니펫에서 receiving·putting_away 가 CBV 업무 단계로, shipping 이 ref.gs1.org/cbv/BizStep-shipping 로 확인된다. picking 은 검증 스니펫에서 확인하지 못했다. '물류 흐름 단계에 대응시킬 수 있다'는 추론이므로 분리 지시.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. GS1 SSCC 페이지 스니펫(18자리, 케이스·팔레트·소포 물류 단위)과 구조(확장 자리·업체코드·일련 참조·검증 숫자) 확인. GS1 Korea 자료(2019-09)도 검색됨. GS1 계열 출처끼리라 독립 교차 아님.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. GS1 물류 라벨 관련 스니펫: SSCC 가 없는 라벨은 GS1 물류 라벨로 보지 않으며, SSCC 는 GS1-128 로 표시하고 AI 00 은 항상 SSCC 를 뜻한다. 일부 스니펫은 Scan4Transport 가이드라인 맥락이다. ref-018 발행일 미확인.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. GS1 Korea 발간자료(Vol. 21, 2019-09) 스니펫이 팔레트 바코드 하단 400~800mm 높이를 확인한다. '같은 데이터 라벨을 두 면에 부착 권장'은 검증 스니펫에서 확인하지 못해 삭제 지시. 발행 후 2년이 지난 자료(2019-09)라 월간 재검증 대상.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. GS1 GO 지원 문서와 GRAI 페이지 스니펫이 GIAI(컨테이너·트럭·트레일러)와 GRAI(트레이·상자·팔레트·케그) 구분을 확인한다. 같은 발행 주체라 독립 교차 아님.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 스니펫이 TDS 의 SSCC-96·SGLN-96·GRAI-96·GIAI-96 인코딩을 확인한다. 브리프 URL 은 TDS 1.11판이고 검색 결과에 더 새 판(1.13, 2.x)이 보인다. 버전 명시 지시.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. VDA 5050 V2.0.0 스니펫이 loads 의 loadId(바코드·RFID 등 고유 식별, 식별 전이면 빈 값 가능), loadType, loadPosition 을 확인한다. weight(kg), '빈 배열 = 적재물 없음', '판단할 수 없으면 보내지 않음'은 검증 스니펫에서 확인하지 못해 축소 지시. 발행 2022-01.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 스니펫이 pick·drop 동작에 loadType·loadId 가 파라미터로 쓰인다고 요약한다. 원문 규정인지 구현 라이브러리 설명인지 미확인이라 [추정] 유지가 맞다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. Open-RMF Workcells 문서 스니펫이 Dispenser·Ingestor 두 워크셀, DispenserRequest→DispenserResult SUCCESS, IngestorRequest→IngestorResult SUCCESS 흐름을 확인한다. 발행일 미확인.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"원문 미열람. 사실 → 추정. 논문은 실재(Singh·Olsen·Vorst·Tripp, 2009, Packaging Technology and Science)하고 변수 목록(제품·포장 유형, 태그 종류·위치, 팔레트 패턴, 지게차 속도, 도크 도어형 포털)은 일치한다. 그러나 검증 검색 스니펫은 '지게차 속도가 느릴수록 판독성이 전반적으로 좋았다'고 요약해 브리프의 '지게차 속도는 거의 영향 없음'과 상충한다. '금속 캔 최저' 순위도 검증 스니펫에서 확인하지 못했다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"원문 미열람. MDPI Encyclopedia 논문은 실재한다(DOI 10.3390/encyclopedia6090197, 2026-09 무렵 발행으로 보임). 검색 스니펫은 센싱·위치추정·항법·통신·다중 로봇 조율 조사만 요약하며 WMS·MES·ERP·PLC 연동과 추적 가능한 이벤트 로그에 관한 평가는 나타나지 않는다. 스니펫 범위를 넘으므로 삭제.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. f14·f16·f7·f4 에서 도출한 추론이다. 인용 출처가 결합 방식을 직접 말하지는 않으므로 [추정]·low 가 맞다. 두 계층을 잇는 표준 매핑이 확인되지 않았다는 점을 함께 쓰게 한다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. loadId 가 로봇이 식별한 값(바코드·RFID)이라는 점은 f14 스니펫으로 확인된다. ROP 역할 경계는 분류 원문 9장에 대응시킨 추론이라 [추정] 유지. '연계 대상' 표기가 적절하다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f1·f3·f7 의 EPCIS 설명은 기존 원문 주석과 ref-003(GS1 EPCIS and CBV Linked Data Model)·용어집 '전자 제품 코드 정보 서비스' 정의와 겹치지만 충돌은 없다. 같은 주장에는 기존 각주 ref-003 을 재사용한다\",\"glossary_candidates 여섯 건은 용어집 기존 용어와 중복되지 않는다(EPCIS·Open-RMF·플릿 어댑터는 기존 용어로 링크만 한다)\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"required_fixes\":[\"모든 각주 정의: 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[] 의 모든 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이라 어느 출처도 원문을 열지 못했다. ref-003 은 기존 각주 줄(접근일 2026-09-24)을 재사용하고 같은 표기를 붙인다.\",\"ref-025: 참고문헌 등록(reference_updates)과 페이지 각주에서 뺀다 — f18 삭제 뒤 이 출처를 참조하는 finding 이 없다(미사용 출처).\",\"f18: 본문(3절·8절)에 넣지 않는다 — 검증 검색 스니펫이 WMS·MES·ERP·PLC 연동과 이벤트 로그에 관한 평가를 뒷받침하지 않는다. 3절은 [분류원문] 주석과 f19([추정]), f14·f16·f7 의 확인된 사실로만 구성한다.\",\"f17: [사실] → [추정]으로 강등한다. '일반적인 지게차 속도는 판독성에 거의 영향을 주지 않았다'와 '음료 금속 캔이 가장 낮았다' 구절은 삭제한다 — 검증 스니펫은 지게차가 느릴수록 판독성이 좋았다고 요약해 브리프 요약과 상충하고, 캔 순위는 확인되지 않았다. 남는 문장(판독성이 제품·포장 유형, 태그 종류·위치, 적재 패턴에 따라 달라졌다)에는 실험 조건(도크 도어를 모사한 RFID 포털, 2009년 논문)을 밝히고, 원문 재확인은 additional_research_requests 로 넘긴다.\",\"f6: [사실] → [추정]으로 강등하고 '비준 시점(2022년 6월)은 OpenEPCIS 문서 단일 출처이며 GS1 원문으로 교차 확인하지 못했다'를 병기한다 — 검증 검색에서도 확인하지 못했다.\",\"f4: '결합된 객체들이 분리 전까지 같은 위치에 있다고 본다' 구절을 삭제하고, 상위(parent)·하위(children) 객체의 결합·분리를 기록한다는 부분(케이스를 팔레트에 싣거나 내리는 예)만 [사실]로 쓴다 — 삭제할 구절은 검증 스니펫으로 확인되지 않았다.\",\"f5: '또는 위치'와 '(또는 해제)'를 빼고, EPCIS 2.0 에서 도입되어 센서를 컨테이너·팔레트 같은 자산에 붙이는 장기 연결을 기록한다는 범위로만 [사실]로 쓴다 — 빼는 부분은 검증 스니펫에 나타나지 않는다.\",\"f8: bizStep 예시에서 picking 을 빼고 receiving·putting_away·shipping 만 든다(picking 은 미확인). 'EPCIS 이벤트를 물류 흐름 단계에 대응시킬 수 있다'는 별도 문장으로 분리해 [추정]으로 쓴다 — 이 부분은 출처의 진술이 아니라 추론이다.\",\"f11: '같은 데이터의 라벨을 두 면에 붙이는 것을 권장' 구절을 삭제한다(검증 스니펫으로 미확인). 400~800mm 는 GS1 Korea 자료(2019-09) 기준임을 문장에 밝힌다. 이를 로봇·고정 스캐너 판독 위치 설계와 연결하는 서술을 넣는다면 [추정]으로 쓴다.\",\"f13: 근거가 EPC Tag Data Standard 1.11판(ref-021 URL)임을 본문 또는 각주 제목에 명시한다 — 검색 결과에 더 새 판이 있으므로 최신판 기준 재확인은 additional_research_requests 로 넘기고, 본문에 새 판 번호를 쓰지 않는다.\",\"f14: loadId(바코드·RFID 등 고유 식별, 식별 전이면 빈 값 가능)·loadType·loadPosition 만 [사실]로 쓴다. weight(kg), '빈 배열은 적재물 없음', '적재 상태를 판단할 수 없으면 보내지 않음'은 삭제하거나 '원문 미열람·미확인'을 붙인 [추정]으로 분리한다 — 검증 스니펫에 나타나지 않았다. 기준일 VDA 5050 2.0.0(2022-01)을 명시한다.\",\"f19: [추정]을 유지하고, f14·f16·f7 에서 도출한 추론이며 로봇 완료 신호와 EPCIS 인계 이벤트를 잇는 표준 매핑은 확인되지 않았다는 점을 같은 문장이나 바로 뒤 문장에 밝힌다. 인용 출처가 결합 방식을 직접 규정하는 것처럼 쓰지 않는다.\",\"9절: 바코드·RFID 판독 자체(f20)와 RFID 포털 판독 성능(f17)은 '로봇 자체 지능·제어'(센서 인식)와 판독 설비 쪽의 연계 대상으로 짧게 다룬다. ROP 직접 범위는 식별 결과의 수신·대조·기록([추정], f20)으로 한정한다 — 분류 원문 9장 기준.\",\"ref-011: 발행일을 2024-03 으로 적는다 — ISO 소개 스니펫의 발행 시점이다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 확인 17건, 미확인 3건(f6, f17, f18), 교차 확인 0건. 강등: f6 사실 → 추정, f17 사실 → 추정. 삭제: f18. f4·f5·f8·f11·f14 는 검증 스니펫으로 확인되지 않은 구절만 뺐다. 원문 미열람 출처: ref-003, ref-011, ref-012, ref-013, ref-014, ref-015, ref-016, ref-017, ref-018, ref-019, ref-020, ref-021, ref-022, ref-023, ref-024, ref-025(모두 검색 결과의 기관·제목·URL 일치로 실재를 확인함). 미사용 출처: ref-025(f18 삭제에 따름). 주의: 표준 근거가 대부분 GS1 계열(ISO/IEC 판 포함)이라 서로 독립된 교차 확인이 없다. f17 의 지게차 속도 효과는 브리프 요약과 검증 검색 요약이 서로 달라 원문 재확인이 필요하다. EPC 태그 데이터 표준은 1.11판 기준이다. 로봇 완료 신호와 EPCIS 인계 이벤트의 결합(f19)은 추론이다. 한국 자료는 GS1 Korea 1건(2019-09)뿐이다. 검증 검색 13회를 썼다(리서치 17회와 합쳐 회당 상한 30회 도달). 정정 요청: 해당 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-01",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과 일치: ISO 소개 페이지(iso.org/standard/85557)가 EPCIS 2.0 정의·기업 내·기업 간 가시성 이벤트 데이터 생성·공유 목표를 요약한다. 발행 2024-03(스니펫). 단일 발행 주체(ISO/IEC, GS1 원문 기반)라 교차 확인 아님."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. ISO/IEC 19988:2024 소개(iso.org/standard/85558)와 GS1 CBV 참조 페이지(ref.gs1.org/standards/cbv/) 모두 검색 결과에서 확인. EPCIS 와 함께 쓸 어휘 구조·값 규정 요약 일치. 두 출처 모두 GS1 계열이라 독립 교차 아님."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. OpenEPCIS 문서 스니펫이 다섯 이벤트 유형을 그대로 나열한다. 발행 기관 원문이 아닌 GS1 적합 구현 프로젝트 문서이며 발행일 미확인."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 스니펫은 AggregationEvent 가 포장 관계(낱개→케이스, 케이스→팔레트)를 기록한다는 부분까지만 확인한다. '분리 전까지 같은 위치에 있다고 본다' 구절은 검증 스니펫에서 확인되지 않아 삭제 지시."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 스니펫은 2.0 도입, 객체 간 느슨한 연결(센서를 팔레트·컨테이너에 붙이는 장기 연결)을 확인한다. '위치에 연결'·'해제' 부분은 미확인이라 문구 축소 지시."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "원문 미열람. 사실 → 추정: 2022년 6월 비준 시점과 JSON/JSON-LD·REST API 추가는 OpenEPCIS 단일 출처이고 검증 검색 스니펫에서 확인하지 못했다(브리프도 GS1 원문 교차 실패를 자인). How 차원은 ISO 소개 스니펫에 다섯 차원으로 나타난다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. GS1 EPCIS·CBV 구현 가이드라인·CBV 검색 스니펫이 소유·책임·점유 이전 시 source/destination 목록 사용과 owning_party·possessing_party·location 세 유형(CBV 7.4.2)을 확인한다. 두 출처 모두 GS1 발행이라 독립 교차 아님."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 스니펫에서 receiving·putting_away 가 CBV 업무 단계로, shipping 이 ref.gs1.org/cbv/BizStep-shipping 로 확인된다. picking 은 검증 스니펫에서 확인하지 못했다. '물류 흐름 단계에 대응시킬 수 있다'는 추론이므로 분리 지시."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. GS1 SSCC 페이지 스니펫(18자리, 케이스·팔레트·소포 물류 단위)과 구조(확장 자리·업체코드·일련 참조·검증 숫자) 확인. GS1 Korea 자료(2019-09)도 검색됨. GS1 계열 출처끼리라 독립 교차 아님."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. GS1 물류 라벨 관련 스니펫: SSCC 가 없는 라벨은 GS1 물류 라벨로 보지 않으며, SSCC 는 GS1-128 로 표시하고 AI 00 은 항상 SSCC 를 뜻한다. 일부 스니펫은 Scan4Transport 가이드라인 맥락이다. ref-018 발행일 미확인."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. GS1 Korea 발간자료(Vol. 21, 2019-09) 스니펫이 팔레트 바코드 하단 400~800mm 높이를 확인한다. '같은 데이터 라벨을 두 면에 부착 권장'은 검증 스니펫에서 확인하지 못해 삭제 지시. 발행 후 2년이 지난 자료(2019-09)라 월간 재검증 대상."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. GS1 GO 지원 문서와 GRAI 페이지 스니펫이 GIAI(컨테이너·트럭·트레일러)와 GRAI(트레이·상자·팔레트·케그) 구분을 확인한다. 같은 발행 주체라 독립 교차 아님."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 스니펫이 TDS 의 SSCC-96·SGLN-96·GRAI-96·GIAI-96 인코딩을 확인한다. 브리프 URL 은 TDS 1.11판이고 검색 결과에 더 새 판(1.13, 2.x)이 보인다. 버전 명시 지시."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. VDA 5050 V2.0.0 스니펫이 loads 의 loadId(바코드·RFID 등 고유 식별, 식별 전이면 빈 값 가능), loadType, loadPosition 을 확인한다. weight(kg), '빈 배열 = 적재물 없음', '판단할 수 없으면 보내지 않음'은 검증 스니펫에서 확인하지 못해 축소 지시. 발행 2022-01."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 스니펫이 pick·drop 동작에 loadType·loadId 가 파라미터로 쓰인다고 요약한다. 원문 규정인지 구현 라이브러리 설명인지 미확인이라 [추정] 유지가 맞다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. Open-RMF Workcells 문서 스니펫이 Dispenser·Ingestor 두 워크셀, DispenserRequest→DispenserResult SUCCESS, IngestorRequest→IngestorResult SUCCESS 흐름을 확인한다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "원문 미열람. 사실 → 추정. 논문은 실재(Singh·Olsen·Vorst·Tripp, 2009, Packaging Technology and Science)하고 변수 목록(제품·포장 유형, 태그 종류·위치, 팔레트 패턴, 지게차 속도, 도크 도어형 포털)은 일치한다. 그러나 검증 검색 스니펫은 '지게차 속도가 느릴수록 판독성이 전반적으로 좋았다'고 요약해 브리프의 '지게차 속도는 거의 영향 없음'과 상충한다. '금속 캔 최저' 순위도 검증 스니펫에서 확인하지 못했다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "원문 미열람. MDPI Encyclopedia 논문은 실재한다(DOI 10.3390/encyclopedia6090197, 2026-09 무렵 발행으로 보임). 검색 스니펫은 센싱·위치추정·항법·통신·다중 로봇 조율 조사만 요약하며 WMS·MES·ERP·PLC 연동과 추적 가능한 이벤트 로그에 관한 평가는 나타나지 않는다. 스니펫 범위를 넘으므로 삭제."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. f14·f16·f7·f4 에서 도출한 추론이다. 인용 출처가 결합 방식을 직접 말하지는 않으므로 [추정]·low 가 맞다. 두 계층을 잇는 표준 매핑이 확인되지 않았다는 점을 함께 쓰게 한다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. loadId 가 로봇이 식별한 값(바코드·RFID)이라는 점은 f14 스니펫으로 확인된다. ROP 역할 경계는 분류 원문 9장에 대응시킨 추론이라 [추정] 유지. '연계 대상' 표기가 적절하다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f1·f3·f7 의 EPCIS 설명은 기존 원문 주석과 ref-003(GS1 EPCIS and CBV Linked Data Model)·용어집 '전자 제품 코드 정보 서비스' 정의와 겹치지만 충돌은 없다. 같은 주장에는 기존 각주 ref-003 을 재사용한다",
+        "glossary_candidates 여섯 건은 용어집 기존 용어와 중복되지 않는다(EPCIS·Open-RMF·플릿 어댑터는 기존 용어로 링크만 한다)"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "required_fixes": [
+      "모든 각주 정의: 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[] 의 모든 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이라 어느 출처도 원문을 열지 못했다. ref-003 은 기존 각주 줄(접근일 2026-09-24)을 재사용하고 같은 표기를 붙인다.",
+      "ref-025: 참고문헌 등록(reference_updates)과 페이지 각주에서 뺀다 — f18 삭제 뒤 이 출처를 참조하는 finding 이 없다(미사용 출처).",
+      "f18: 본문(3절·8절)에 넣지 않는다 — 검증 검색 스니펫이 WMS·MES·ERP·PLC 연동과 이벤트 로그에 관한 평가를 뒷받침하지 않는다. 3절은 [분류원문] 주석과 f19([추정]), f14·f16·f7 의 확인된 사실로만 구성한다.",
+      "f17: [사실] → [추정]으로 강등한다. '일반적인 지게차 속도는 판독성에 거의 영향을 주지 않았다'와 '음료 금속 캔이 가장 낮았다' 구절은 삭제한다 — 검증 스니펫은 지게차가 느릴수록 판독성이 좋았다고 요약해 브리프 요약과 상충하고, 캔 순위는 확인되지 않았다. 남는 문장(판독성이 제품·포장 유형, 태그 종류·위치, 적재 패턴에 따라 달라졌다)에는 실험 조건(도크 도어를 모사한 RFID 포털, 2009년 논문)을 밝히고, 원문 재확인은 additional_research_requests 로 넘긴다.",
+      "f6: [사실] → [추정]으로 강등하고 '비준 시점(2022년 6월)은 OpenEPCIS 문서 단일 출처이며 GS1 원문으로 교차 확인하지 못했다'를 병기한다 — 검증 검색에서도 확인하지 못했다.",
+      "f4: '결합된 객체들이 분리 전까지 같은 위치에 있다고 본다' 구절을 삭제하고, 상위(parent)·하위(children) 객체의 결합·분리를 기록한다는 부분(케이스를 팔레트에 싣거나 내리는 예)만 [사실]로 쓴다 — 삭제할 구절은 검증 스니펫으로 확인되지 않았다.",
+      "f5: '또는 위치'와 '(또는 해제)'를 빼고, EPCIS 2.0 에서 도입되어 센서를 컨테이너·팔레트 같은 자산에 붙이는 장기 연결을 기록한다는 범위로만 [사실]로 쓴다 — 빼는 부분은 검증 스니펫에 나타나지 않는다.",
+      "f8: bizStep 예시에서 picking 을 빼고 receiving·putting_away·shipping 만 든다(picking 은 미확인). 'EPCIS 이벤트를 물류 흐름 단계에 대응시킬 수 있다'는 별도 문장으로 분리해 [추정]으로 쓴다 — 이 부분은 출처의 진술이 아니라 추론이다.",
+      "f11: '같은 데이터의 라벨을 두 면에 붙이는 것을 권장' 구절을 삭제한다(검증 스니펫으로 미확인). 400~800mm 는 GS1 Korea 자료(2019-09) 기준임을 문장에 밝힌다. 이를 로봇·고정 스캐너 판독 위치 설계와 연결하는 서술을 넣는다면 [추정]으로 쓴다.",
+      "f13: 근거가 EPC Tag Data Standard 1.11판(ref-021 URL)임을 본문 또는 각주 제목에 명시한다 — 검색 결과에 더 새 판이 있으므로 최신판 기준 재확인은 additional_research_requests 로 넘기고, 본문에 새 판 번호를 쓰지 않는다.",
+      "f14: loadId(바코드·RFID 등 고유 식별, 식별 전이면 빈 값 가능)·loadType·loadPosition 만 [사실]로 쓴다. weight(kg), '빈 배열은 적재물 없음', '적재 상태를 판단할 수 없으면 보내지 않음'은 삭제하거나 '원문 미열람·미확인'을 붙인 [추정]으로 분리한다 — 검증 스니펫에 나타나지 않았다. 기준일 VDA 5050 2.0.0(2022-01)을 명시한다.",
+      "f19: [추정]을 유지하고, f14·f16·f7 에서 도출한 추론이며 로봇 완료 신호와 EPCIS 인계 이벤트를 잇는 표준 매핑은 확인되지 않았다는 점을 같은 문장이나 바로 뒤 문장에 밝힌다. 인용 출처가 결합 방식을 직접 규정하는 것처럼 쓰지 않는다.",
+      "9절: 바코드·RFID 판독 자체(f20)와 RFID 포털 판독 성능(f17)은 '로봇 자체 지능·제어'(센서 인식)와 판독 설비 쪽의 연계 대상으로 짧게 다룬다. ROP 직접 범위는 식별 결과의 수신·대조·기록([추정], f20)으로 한정한다 — 분류 원문 9장 기준.",
+      "ref-011: 발행일을 2024-03 으로 적는다 — ISO 소개 스니펫의 발행 시점이다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 확인 17건, 미확인 3건(f6, f17, f18), 교차 확인 0건. 강등: f6 사실 → 추정, f17 사실 → 추정. 삭제: f18. f4·f5·f8·f11·f14 는 검증 스니펫으로 확인되지 않은 구절만 뺐다. 원문 미열람 출처: ref-003, ref-011, ref-012, ref-013, ref-014, ref-015, ref-016, ref-017, ref-018, ref-019, ref-020, ref-021, ref-022, ref-023, ref-024, ref-025(모두 검색 결과의 기관·제목·URL 일치로 실재를 확인함). 미사용 출처: ref-025(f18 삭제에 따름). 주의: 표준 근거가 대부분 GS1 계열(ISO/IEC 판 포함)이라 서로 독립된 교차 확인이 없다. f17 의 지게차 속도 효과는 브리프 요약과 검증 검색 요약이 서로 달라 원문 재확인이 필요하다. EPC 태그 데이터 표준은 1.11판 기준이다. 로봇 완료 신호와 EPCIS 인계 이벤트의 결합(f19)은 추론이다. 한국 자료는 GS1 Korea 1건(2019-09)뿐이다. 검증 검색 13회를 썼다(리서치 17회와 합쳐 회당 상한 30회 도달). 정정 요청: 해당 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 4245,
+  "type": "result",
+  "duration_ms": 168523,
+  "uuid": "ee10de38-fda9-44ff-a9df-488db25af894",
+  "ttft_stream_ms": 1415,
+  "time_to_request_ms": 112,
+  "first_content_frame_ms": 1416,
+  "time_to_request_from_spawn_ms": 28694571,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790266000872.0718,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 170.6
+}
