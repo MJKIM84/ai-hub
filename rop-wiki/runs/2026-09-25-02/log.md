@@ -28,3 +28,27 @@
 - 2026-09-25 02:02:18 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-02/pages.json
 - 2026-09-25 02:02:18 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 6분 8초 · 페이지 4개
 - 2026-09-25 02:02:18 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-02/prompts/verification2-retry1.md (356,890자)
+- 2026-09-25 02:02:50 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 32초 · 비용 $2.2127 · subtype success
+- 2026-09-25 02:02:50 KST [내용 검증 에이전트] 저장: runs/2026-09-25-02/verification2.json
+- 2026-09-25 02:02:51 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 33초 · 신뢰도 medium
+- 2026-09-25 02:02:51 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-02 (트랙 실행)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 4개, 반영 전 사전 검사 포함)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-02/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 02:02:51 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 02:02:52 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 02:02:55 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 0/갱신 4/폐기 0, 용어 4, 참고문헌 19, 표준 7, 열린 질문 2, 매트릭스 칸 0, 백로그 7, 정정 0; auto 영역 갱신 32개 페이지, mkdocs.yml 갱신
+- 2026-09-25 02:02:58 KST [퍼블리셔] 원복: 6단계 사이트 빌드 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 02:02:58 KST [퍼블리셔] 실패: 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log):
+
+Aborted with 1 warnings in strict mode!
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'tracks/manual-capability-ontology/ontology-draft.md' contains an unrecognized relative link 'finding f27, 실행 2026-09-25-02', it was left as is.
+
+- 2026-09-25 02:02:58 KST [퍼블리셔] 결과: 실패 · 소요 7초 · 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!
+- 2026-09-25 02:02:58 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
+- 2026-09-25 02:02:59 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
+- 2026-09-25 02:03:03 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 트랙 실행 5. 로봇 능력·작업 온톨로지 — 생성 0/갱신 4 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

@@ -48,6 +48,20 @@
       "seconds": 368.0,
       "note": "페이지 4개",
       "at": "2026-09-25 02:02:18 KST"
+    },
+    {
+      "step": "2차 검증",
+      "result": "재시도 1회 후 통과",
+      "seconds": 33.0,
+      "note": "신뢰도 medium",
+      "at": "2026-09-25 02:02:51 KST"
+    },
+    {
+      "step": "퍼블리셔",
+      "result": "실패",
+      "seconds": 6.8,
+      "note": "6단계 사이트 빌드 실패(exit 1, 3초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!",
+      "at": "2026-09-25 02:02:58 KST"
     }
   ]
 }
