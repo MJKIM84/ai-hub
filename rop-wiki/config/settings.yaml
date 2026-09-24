@@ -1,0 +1,60 @@
+# config/settings.yaml — ROP 연구 위키 파이프라인의 전역 설정
+#
+# 앞부분(wiki_name ~ web_tools_required)은 빌드 사양서 0장 "설정 (실행 전 확인)"의 YAML 을 값과 주석 그대로 옮긴 것이다.
+# 뒷부분(repo_root 이후)은 실행 스크립트(pipeline/run_daily.*, pipeline/select_target.*, pipeline/agent_runner.py,
+# pipeline/publish.*)가 읽는 항목이며 구축자가 추가했다. 항목마다 뜻과 읽는 주체는 config/README.md 에 있다.
+# 상대 경로는 모두 위키 루트(이 파일의 상위 폴더, rop-wiki/) 기준이다. 날짜·시각은 timezone 의 지역 시각으로 해석한다.
+
+# ---------------------------------------------------------------------------------------------
+# 1. 빌드 사양서 0장 (값·주석 그대로)
+# ---------------------------------------------------------------------------------------------
+wiki_name: "ROP 연구 위키"                 # 표시 이름. 부제: SCM 관점의 로봇 오케스트레이션 플랫폼 연구
+repo_path: "./rop-wiki"                    # 저장소 경로
+storage: "markdown+git"                    # 기본값. Notion·Obsidian 등으로 바꿔도 4~7장의 구조와 규칙은 그대로 유지하고 저장 방식만 바꾼다
+site_generator: "mkdocs-material"          # 정적 사이트. 다른 도구를 쓰더라도 4.8의 내비게이션 순서를 그대로 재현한다
+agent_runtime: "claude-code-headless"      # 에이전트 실행 방식: claude -p 헤드리스 실행 또는 Agent SDK
+scheduler: "cron"                          # cron / n8n / GitHub Actions 중 택1
+run_time: "06:00 Asia/Seoul"               # 매일 1회
+language: "ko"                             # 본문 한국어, 전문용어는 첫 등장 시 영문 병기
+checkpoints: true                          # true면 9장의 멈춤 지점 2곳에서 사용자 확인을 받는다
+tracks: ["manual-capability-ontology"]     # 활성 중점 연구 트랙(8장). 정의는 config/tracks/<slug>.yaml
+track_runs_per_week: 2                     # 주 7회 실행 중 트랙에 배정하는 횟수. 7이면 트랙 단계가 끝날 때까지 트랙만 실행
+daily_budget:
+  new_topic_pages: 1                       # 하루 신규 주제 페이지 상한
+  page_updates: 2                          # 하루 기존 페이지 갱신 상한
+  max_sources_per_run: 15                  # 회당 신규 출처 상한
+  max_search_queries: 30                   # 회당 검색 횟수 상한
+  max_retries: 2                           # 검증 반려 시 재작업 횟수
+  track_max_sources_per_run: 20            # 트랙 실행은 출처·검색 상한을 별도로 둔다
+  track_max_search_queries: 40
+notify: "none"                             # none / slack_webhook / email
+web_tools_required: true                   # 웹 검색·페이지 열람 도구가 없으면 실행을 중단하고 로그에 남긴다
+
+# ---------------------------------------------------------------------------------------------
+# 2. 실행 스크립트용 항목 (구축자 추가)
+#
+# 위 web_tools_required(사양서 0장 주석 "웹 검색·페이지 열람 도구가 없으면 실행을 중단")는 이 파이프라인에서 아래 web_fetch_required 와 함께 읽는다.
+# 웹 검색(WebSearch) 점검 실패는 언제나 web_tools_required 대로 즉시 중단·로그한다(7.3). 페이지 열람(WebFetch) 점검 실패는 web_fetch_required 가
+# true 면 같은 방식으로 중단하고, 기본값 false 면 중단하지 않고 진행한다. 즉 기본값은 사양서 규칙을 "웹 검색 도구 없음"으로 좁힌 것이며,
+# 사용자 결정 항목으로 11장 완료 보고에 기본값(false: 진행)과 대안(true: 사양서 원문대로 중단)을 함께 올린다 [가정 — 사용자 결정 항목]
+# ---------------------------------------------------------------------------------------------
+repo_root: ".."                            # git 저장소 루트. 위키 루트 기준 상대 경로. 위키가 ai-hub 저장소의 하위 폴더 rop-wiki/ 라는 전제 [가정]. git_commit·git_push 는 이 경로에서 실행하고, 위의 repo_path("./rop-wiki")는 그 저장소 루트에서 본 위키 폴더다
+claude_bin: "claude"                       # 헤드리스 실행에 쓰는 Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다. agent_runner.py 가 `claude -p` 로 호출한다
+model: ""                                  # 에이전트 모델 id. 비우면 CLI 기본 모델을 쓴다(--model 옵션을 붙이지 않는다)
+max_turns:                                 # 에이전트별 최대 턴 수(claude -p --max-turns). 넘으면 agent_runner.py 가 호출을 끊고 7.3 의 스키마 불일치와 같이 1회 재실행 후 보류한다 [가정: 사양서 7.3 은 턴 수·시간 초과의 처리를 정하지 않는다]
+  researcher: 60
+  verifier: 40
+  storyteller: 8
+agent_timeout_sec: 1800                    # 에이전트 1회 호출의 시간 상한(초). 넘으면 강제 종료하고 max_turns 초과와 같이 처리한다(1회 재실행 후 보류) [가정: 위와 같음]
+allowed_tools:                             # 에이전트별 허용 도구(claude -p --allowedTools). 리서치·검증은 WebSearch·WebFetch 만, 스토리텔러는 도구 없이 실행한다(빈 목록). 파일 읽기·쓰기 도구는 어느 에이전트에도 주지 않는다
+  researcher: [WebSearch, WebFetch]
+  verifier: [WebSearch, WebFetch]
+  storyteller: []
+site_build_cmd: "mkdocs build --strict"    # 퍼블리셔 6단계 사이트 빌드 명령. 위키 루트에서 실행한다. 실패하면 커밋을 되돌리고 로그에 남긴다(6.4)
+git_commit: true                           # 퍼블리셔 7단계 커밋 여부. 메시지 형식: run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n
+git_push: false                            # 커밋 후 원격 푸시 여부. 기본은 푸시하지 않는다
+timezone: "Asia/Seoul"                     # run_time·run_id(<DATE>-<NN>)·created/updated/accessed 날짜 계산에 쓰는 시간대
+web_fetch_probe_url: "https://ref.gs1.org/epcis/"   # 준비 단계(7.2의 1)의 페이지 열람 점검용 URL(참고문헌 ref-003 GS1 EPCIS). 열리지 않으면 아래 web_fetch_required 에 따른다(기본값 false: 중단하지 않고 실행 컨텍스트에 web_fetch_available: false 를 표시하고 진행). 웹 검색까지 못 쓰면 web_tools_required 에 따라 중단한다
+web_fetch_required: false                  # 페이지 열람(WebFetch) 점검이 실패했을 때 즉시 중단·로그할지. false(기본값): 중단하지 않고 실행 컨텍스트에 web_fetch_available: false 를 표시한 채 진행한다(에이전트 실행 규약의 환경 알림과 같은 동작. 에이전트는 출처를 검색 결과로만 확인하고 모든 출처에 "원문 미열람"을 표시하며 신뢰도 high 를 주지 않는다). true: 0장 주석(위 web_tools_required)과 7.3 의 "웹 도구 없음 → 즉시 중단·로그" 원문대로 열람 실패도 즉시 중단한다. 기본값은 사양서 규칙을 "웹 검색 도구 없음"으로 좁힌 것이므로 사용자 결정 항목으로 보고한다 [가정 — 사용자 결정 항목. 기본값 false: 진행 / 대안 true: 사양서 원문대로 중단]
+runs_dir: "runs"                           # 실행 산출물 폴더(위키 루트 기준). runs/<DATE>-<NN>/ 와 보류 산출물 runs/parked/
+data_dir: "data"                           # 퍼블리셔가 페이지를 다시 쓸 때 원천으로 삼는 상태 데이터 폴더(위키 루트 기준). open_questions.json, changelog.json, flow_matrix.json, tracks/<slug>/backlog.json

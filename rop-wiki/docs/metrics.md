@@ -1,0 +1,132 @@
+---
+title: "운영 지표"
+type: metrics
+status: published
+created: 2026-09-24
+updated: 2026-09-24
+version: 1
+---
+
+[홈](index.md) › 운영 지표
+
+# 운영 지표
+
+영역별 페이지 상태 분포, 검증 통과율, 반려·보류 건수, 출처 유형 분포, 물류 흐름 매트릭스 채움률, 마지막 갱신이 오래된 영역을 퍼블리셔가 계산한다. 원천은 페이지 프런트매터(status, updated), `data/changelog.json`, `data/flow_matrix.json`, `runs/<run_id>/summary.json`, 참고문헌 페이지의 `source_type` 이다.
+
+## 지표
+
+<!-- auto:metrics:start -->
+기준일: 2026-09-24
+
+### 영역별 페이지 상태 분포
+
+| 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
+|---|---|---|---|---|---|---|---|
+| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+
+세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
+
+**A. 업무·공급망 설계**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | seed | — | 2026-09-24 | 1 |
+| [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | seed | — | 2026-09-24 | 1 |
+| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | seed | — | 2026-09-24 | 1 |
+| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | seed | — | 2026-09-24 | 1 |
+
+**B. 공통 정보·환경 모델**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | seed | — | 2026-09-24 | 1 |
+| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | seed | — | 2026-09-24 | 1 |
+| [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | seed | — | 2026-09-24 | 1 |
+| [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | seed | — | 2026-09-24 | 1 |
+
+**C. 연결·실행 기반**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | seed | — | 2026-09-24 | 1 |
+| [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | seed | — | 2026-09-24 | 1 |
+| [11. 분산 시스템·통신·컴퓨팅 구조](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | seed | — | 2026-09-24 | 1 |
+| [12. 명령·작업 실행의 신뢰성](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | seed | — | 2026-09-24 | 1 |
+
+**D. 계획·최적화**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [13. 작업 배정 — MRTA](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | seed | — | 2026-09-24 | 1 |
+| [14. 작업 순서·스케줄링](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | seed | — | 2026-09-24 | 1 |
+| [15. 다중 로봇 경로·교통 관리 — MAPF](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | seed | — | 2026-09-24 | 1 |
+| [16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | seed | — | 2026-09-24 | 1 |
+
+**E. 협업·현장 운영**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [17. 로봇 간 협업·물리적 인계](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | seed | — | 2026-09-24 | 1 |
+| [18. 사람–로봇 협업·운영 인터페이스](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | seed | — | 2026-09-24 | 1 |
+| [19. 모니터링·이상 탐지·원인 분석](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | seed | — | 2026-09-24 | 1 |
+| [20. 예외 복구·재계획·업무 연속성](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | seed | — | 2026-09-24 | 1 |
+
+**F. 도입·검증·유지관리**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [21. 온보딩·설정·현장 시운전](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | seed | — | 2026-09-24 | 1 |
+| [22. 시뮬레이션·예측용 디지털 트윈](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | seed | — | 2026-09-24 | 1 |
+| [23. 시험·형식 검증·벤치마크](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | seed | — | 2026-09-24 | 1 |
+| [24. 자산·소프트웨어 수명주기 관리](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | seed | — | 2026-09-24 | 1 |
+
+**G. 안전·보안·지능·거버넌스**
+
+| 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
+|---|---|---|---|---|
+| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed | — | 2026-09-24 | 1 |
+| [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | seed | — | 2026-09-24 | 1 |
+| [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | seed | — | 2026-09-24 | 1 |
+| [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | seed | — | 2026-09-24 | 1 |
+
+### 검증 통과율
+
+실행 기록(runs/*/summary.json)이 없다.
+
+### 반려·보류 건수
+
+- 1차 반려 0건, 2차 불통과·재검증 0건
+- 보류(runs/parked) 0건
+
+### 출처 유형 분포
+
+| 유형 | 건수 |
+|---|---|
+| 오픈소스 문서 | 3 |
+| 표준 | 2 |
+| 논문 | 2 |
+| 정부·연구기관 | 2 |
+| 기사 | 1 |
+
+신뢰도: medium 10건
+
+### 물류 흐름 매트릭스 채움률
+
+- 0/42 칸 (0%) — [흐름 매트릭스](flow-matrix.md)
+
+### 마지막 갱신이 오래된 영역 상위 5
+
+| 세부영역 | 마지막 갱신 | 경과일 | 상태 |
+|---|---|---|---|
+| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-24 | 0 | seed |
+| [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-24 | 0 | seed |
+| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-24 | 0 | seed |
+| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-24 | 0 | seed |
+| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-24 | 0 | seed |
+<!-- auto:metrics:end -->

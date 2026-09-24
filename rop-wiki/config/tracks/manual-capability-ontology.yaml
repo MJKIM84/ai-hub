@@ -1,0 +1,39 @@
+# 중점 연구 트랙 정의 — 매뉴얼 기반 로봇 기능 온톨로지 (빌드 사양서 8.1 · 8.2)
+# 형식은 8.2 "트랙 정의 파일 형식" 그대로다. 트랙은 분류를 바꾸지 않으며, 이 파일은 세부영역을 추가·병합하지 않는다.
+# 퍼블리셔(pipeline/lib/render.py)는 slug, name, status, current_stage, stages 를 읽어 홈의 트랙 현황과
+# 트랙 개요의 단계 진행 현황을 만든다. 대상 선정 스크립트는 runs_per_week 와 budget 을 읽는다.
+slug: manual-capability-ontology
+name: "매뉴얼 기반 로봇 기능 온톨로지"
+status: active                     # active | paused | done
+primary_area: 5                    # 5. 로봇 능력·작업 온톨로지
+related_areas: [9, 21, 23, 24, 27, 8, 12, 13, 25, 28]
+# 9. 로봇·제조사 관제 연동, 21. 온보딩·설정·현장 시운전, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리(분류 원문 10장 매핑),
+# 27. AI·학습·적응과 모델 운영(분류 원문 8장 교차 규칙),
+# 8. 실시간 세계 상태·데이터 일관성, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스(활용처 추가 연결, 구축자 제안)
+current_stage: 1
+stages: 7
+runs_per_week: 2                   # 비우면 0장의 track_runs_per_week를 따른다
+budget: {max_sources_per_run: 20, max_search_queries: 40}
+
+# --- 아래는 구축자가 추가한 필드 [가정] ------------------------------------------------------
+# stage_names: 단계 번호 → 단계 이름(사양서 8.1 의 "단계 n. <이름>" 제목에서 이름 부분). 표시할 때는 "단계 1. 기존 능력 표현 모델과 표준 조사"처럼 번호와 이름을 함께 쓴다.
+stage_names:
+  1: "기존 능력 표현 모델과 표준 조사"
+  2: "로봇 문서 유형과 정보 구조 조사"
+  3: "비정형 문서에서 온톨로지를 추출하는 방법 조사"
+  4: "온톨로지를 실행에 연결하는 방법 조사"
+  5: "완전성과 정확성을 검증하는 방법 조사"
+  6: "변경 관리·운영·거버넌스 조사"
+  7: "ROP 활용 시나리오 종합과 가설 판정"
+# stage_pages: 단계 번호 → 단계 페이지 파일명(docs/tracks/manual-capability-ontology/ 아래, 사양서 3장 경로 규약)
+stage_pages:
+  1: stage-1-existing-models-and-standards.md
+  2: stage-2-document-types.md
+  3: stage-3-extraction-methods.md
+  4: stage-4-execution-grounding.md
+  5: stage-5-completeness-verification.md
+  6: stage-6-lifecycle-governance.md
+  7: stage-7-rop-scenarios-and-hypotheses.md
+# 퍼블리셔가 단계 상태·완료 조건 판정을 기록하려면 render.py 가 읽는 선택 키를 쓴다 [가정]:
+#   stage_status: {1: "진행 중"}        # 대기 | 진행 중 | 완료 | 재개. 없으면 current_stage 기준으로 계산한다
+#   stage_completion: {1: false}       # 내용 검증 에이전트의 stage_complete 판정. 없으면 current_stage 앞 단계만 충족으로 본다

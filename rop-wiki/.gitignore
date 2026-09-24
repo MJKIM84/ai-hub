@@ -1,0 +1,9 @@
+# 빌드 산출물
+site/
+# 파이썬
+__pycache__/
+*.pyc
+.pytest_cache/
+# 편집기·OS
+.DS_Store
+# runs/ 는 실행 산출물이지만 재현을 위해 커밋한다. runs/**/prompts/ 도 남긴다(무시하지 않음).

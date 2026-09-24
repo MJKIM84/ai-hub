@@ -1,0 +1,15 @@
+# ROP 연구 위키 — cron 등록 예시 (빌드 사양서 0장 scheduler: cron, run_time: "06:00 Asia/Seoul"; 9장 단계 4)
+#
+# 등록: bash pipeline/install_cron.sh        (이 파일의 자리표시자를 실제 경로로 바꿔 crontab 에 마커 주석과 함께 넣는다)
+# 해제: bash pipeline/uninstall_cron.sh      (마커 주석 사이의 줄만 지운다)
+# 손으로 넣으려면 `crontab -e` 에서 아래 네 줄을 붙여 넣고 /ABSOLUTE/PATH/TO/rop-wiki 를 위키 루트의 절대 경로로,
+# PATH 를 claude·mkdocs·python3 가 있는 경로로 바꾼다(cron 은 로그인 셸의 PATH 를 쓰지 않는다).
+#
+# - CRON_TZ 는 cronie(대부분의 리눅스 배포판) 가 지원하는 시간대 지정이다. 지원하지 않는 cron 이면 이 줄을 지우고
+#   서버 시간대에 맞춰 시각을 바꾸거나(예: UTC 서버면 "0 21 * * *" = 전날 21:00 UTC = 06:00 KST) TZ=Asia/Seoul 로 바꿔 본다.
+# - 실행 결과와 오류는 runs/cron.log 에 누적된다. 실행별 상세 로그는 runs/<DATE>-<NN>/log.md, 일일 로그는 docs/logs/daily/<DATE>.md.
+# - 같은 날 두 번 실행되면 실행 id 가 <DATE>-02 로 붙는다(재실행이 필요하면 bash pipeline/run_daily.sh --resume <run_id>).
+
+CRON_TZ=Asia/Seoul
+PATH=/usr/local/bin:/usr/bin:/bin:/opt/node22/bin
+0 6 * * * cd /ABSOLUTE/PATH/TO/rop-wiki && /usr/bin/env bash pipeline/run_daily.sh >> runs/cron.log 2>&1
