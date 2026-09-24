@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-002]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 기업–제어 시스템 통합 표준
@@ -21,7 +22,7 @@ version: 3
 
 | 한글 | 영문 | 약어와 풀어 쓴 이름 |
 |---|---|---|
-| 기업–제어 시스템 통합 표준 | Enterprise-Control System Integration | ISA-95 — ANSI(American National Standards Institute)/ISA-95. 제정 기관은 국제자동화협회(ISA, International Society of Automation)이다. 통용되는 한글 명칭이 없어 영문 부제를 옮겼다 |
+| 기업–제어 시스템 통합 표준 | Enterprise-Control System Integration | ISA-95. ANSI(American National Standards Institute)/ISA-95 표기의 근거는 미확인이다. 제정 기관은 국제자동화협회(ISA, International Society of Automation)이다. 통용되는 한글 명칭이 없어 영문 부제를 옮겼다 |
 
 ## 한 줄 정의
 

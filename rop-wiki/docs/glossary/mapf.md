@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-005, ref-006]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 다중 에이전트 경로 찾기

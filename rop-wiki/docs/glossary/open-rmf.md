@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-004]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 오픈 RMF
@@ -21,7 +22,7 @@ version: 3
 
 | 한글 | 영문 | 약어와 풀어 쓴 이름 |
 |---|---|---|
-| 오픈 RMF | Open-RMF | RMF — Robotics Middleware Framework. ROS 2 — Robot Operating System 2. 플릿 어댑터 — Fleet Adapter. 통용되는 한글 명칭이 없어 "오픈 RMF"로 적는다 |
+| 오픈 RMF | Open-RMF | Open-RMF — Open Robotics Middleware Framework(명칭 풀이 미확인). ROS 2 — Robot Operating System 2. 플릿 어댑터 — Fleet Adapter. 통용되는 한글 명칭이 없어 "오픈 RMF"로 적는다 |
 
 ## 한 줄 정의
 

@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-008]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 산업 자동화용 민첩 로봇 경진대회

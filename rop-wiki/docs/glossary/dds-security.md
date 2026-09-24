@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-009, ref-010]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › DDS 보안 규격

@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: []
 version: 3
+confidence: low
 ---
 
 [홈](../index.md) › [용어집](index.md) › 다중 로봇 작업 배정

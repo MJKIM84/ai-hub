@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-002]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › WES/WCS/WMS/MES/TMS
@@ -27,7 +28,7 @@ version: 3
 | 제조 실행 시스템 | Manufacturing Execution System | MES |
 | 운송 관리 시스템 | Transportation Management System | TMS |
 
-이 위키의 용어집 시드 목록(사양서 4.7)이 다섯 약어를 한 항목으로 묶고 있어 한 페이지에서 각각 풀어 쓴다. 약어마다 따로 페이지가 필요해지면 나누어 만든다.
+이 위키의 용어집 시드 목록이 다섯 약어를 한 항목으로 묶고 있어 한 페이지에서 각각 풀어 쓴다. 약어마다 따로 페이지가 필요해지면 나누어 만든다.
 
 ## 한 줄 정의
 

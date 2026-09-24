@@ -11,6 +11,7 @@ created: 2026-09-24
 updated: 2026-09-24
 sources: [ref-003]
 version: 3
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 전자 제품 코드 정보 서비스
