@@ -60,3 +60,22 @@
 WARNING -  Doc file 'logs/daily/2026-09-25.md' contains a link '../../topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md', but the target 'topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md' is not found among documentation files.
 
 - 2026-09-25 01:32:29 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 7. 화물·재고·자산 식별과 추적 — 생성 1/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
+- 2026-09-25 01:34:14 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-01 resume=2026-09-25-01 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 01:34:14 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 01:34:14 KST [준비] 결과: 성공 · 소요 0초 · 건너뜀
+- 2026-09-25 01:34:15 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-01 (영역 심화)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 2개, 반영 전 사전 검사 포함)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 01:34:15 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 1건 (파일 93개 검사)
+- logs/daily/2026-09-25.md: 각주 [^ref-013] 참조는 있으나 정의가 없음
+
+- 2026-09-25 01:34:15 KST [퍼블리셔] 결과: 실패 · 소요 0초 · 4단계 내부 링크·각주 검사 실패: [check_links] 오류 1건 (파일 93개 검사)
+- 2026-09-25 01:34:15 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 1건 (파일 93개 검사)))
+- 2026-09-25 01:34:16 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 1건 (파일 93개 검사)))
+- 2026-09-25 01:34:20 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 7. 화물·재고·자산 식별과 추적 — 생성 0/갱신 0 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
