@@ -49,7 +49,7 @@ ROP를 ISA-95의 관점으로 보면 업무 시스템과 현장 장비 제어 �
 ## 출처
 
 [^ref-002]: ISA, Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems, 2025, https://www.isa.org/news-press-releases/2025/april/update-to-isa-95-standard-addresses-integration-of, 접근일 2026-09-24 (원문 미열람)
-[^cand-04]: ISA, ISA95, Enterprise-Control System Integration (ISA95 표준 위원회 소개), 발행일 미확인, https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa95, 접근일 2026-09-24 (원문 미열람)
+[^cand-04]: ISA, ISA95, Enterprise-Control System Integration (ISA95 표준 위원회 소개), 미확인, https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa95, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-002](../references/ref-002.md)
 - cand-04 는 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.

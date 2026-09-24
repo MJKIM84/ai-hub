@@ -49,7 +49,7 @@ ROP 맥락에서 EPCIS가 중요한 이유는 원문이 지적한 대로 로봇�
 ## 출처
 
 [^ref-003]: GS1, EPCIS and CBV Linked Data Model, 미확인, https://ref.gs1.org/epcis/, 접근일 2026-09-24 (원문 미열람)
-[^cand-11]: ISO/IEC, ISO/IEC 19987 Information technology — EPC Information Services (EPCIS), 발행일 미확인, https://www.iso.org/standard/85557.html, 접근일 2026-09-24 (원문 미열람)
+[^cand-11]: ISO/IEC, ISO/IEC 19987 Information technology — EPC Information Services (EPCIS), 미확인, https://www.iso.org/standard/85557.html, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-003](../references/ref-003.md)
 - cand-11 은 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.

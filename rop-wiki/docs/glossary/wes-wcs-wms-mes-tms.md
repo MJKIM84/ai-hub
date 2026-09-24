@@ -65,9 +65,9 @@ ROP와 이들 시스템의 책임 경계는 [ROP가 직접 소유할 범위와 �
 ## 출처
 
 [^ref-002]: ISA, Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems, 2025, https://www.isa.org/news-press-releases/2025/april/update-to-isa-95-standard-addresses-integration-of, 접근일 2026-09-24 (원문 미열람)
-[^cand-06]: ASCM, A Guide To Warehouse Management & Management Systems, 발행일 미확인, https://www.ascm.org/topics/warehouse-management-wms-explained/, 접근일 2026-09-24 (원문 미열람)
-[^cand-07]: MHI, What is WCS? (MHI Blog), 발행일 미확인, https://www.mhi.org/blog/126051/what-is-wcs, 접근일 2026-09-24 (원문 미열람)
-[^cand-08]: MHI, Warehouse Execution Software Implementation (MHI Blog), 발행일 미확인, https://www.mhi.org/blog/66378/warehouse-execution-software-implementation, 접근일 2026-09-24 (원문 미열람)
+[^cand-06]: ASCM, A Guide To Warehouse Management & Management Systems, 미확인, https://www.ascm.org/topics/warehouse-management-wms-explained/, 접근일 2026-09-24 (원문 미열람)
+[^cand-07]: MHI, What is WCS? (MHI Blog), 미확인, https://www.mhi.org/blog/126051/what-is-wcs, 접근일 2026-09-24 (원문 미열람)
+[^cand-08]: MHI, Warehouse Execution Software Implementation (MHI Blog), 미확인, https://www.mhi.org/blog/66378/warehouse-execution-software-implementation, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-002](../references/ref-002.md)
 - cand-06, cand-07, cand-08 은 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.

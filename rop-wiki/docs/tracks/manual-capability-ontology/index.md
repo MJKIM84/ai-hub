@@ -128,4 +128,4 @@ version: 1
 
 ## 8. 참고 자료
 
-[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 발행일 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24
+[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24

@@ -49,7 +49,7 @@ confidence: low
 ## 출처
 
 [^cand-03]: ISO, ISO 23247-1:2021 Automation systems and integration — Digital twin framework for manufacturing — Part 1: Overview and general principles, 2021, https://www.iso.org/standard/75066.html, 접근일 2026-09-24 (원문 미열람)
-[^cand-13]: TTA(한국정보통신기술협회), TTA정보통신용어사전 — 디지털 트윈, 발행일 미확인, https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=191771-1, 접근일 2026-09-24 (원문 미열람)
+[^cand-13]: TTA(한국정보통신기술협회), TTA정보통신용어사전 — 디지털 트윈, 미확인, https://terms.tta.or.kr/dictionary/dictionaryView.do?word_seq=191771-1, 접근일 2026-09-24 (원문 미열람)
 
 - cand-03, cand-13 은 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.
 - [표준·프레임워크 목록](../standards/index.md)

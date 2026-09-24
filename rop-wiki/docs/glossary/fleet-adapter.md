@@ -54,7 +54,7 @@ ROP 맥락에서 플릿 어댑터는 9. 로봇·제조사 관제 연동의 SCM �
 ## 출처
 
 [^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24 (원문 미열람)
-[^cand-10]: Open Robotics, Mobile Robot Fleet Integration — Programming Multiple Robots with ROS 2, 발행일 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets.html, 접근일 2026-09-24 (원문 미열람)
+[^cand-10]: Open Robotics, Mobile Robot Fleet Integration — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets.html, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-004](../references/ref-004.md)
 - cand-10 은 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.

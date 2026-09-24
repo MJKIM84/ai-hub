@@ -54,7 +54,7 @@ ROP 맥락에서 DDS-Security는 26. 사이버보안·접근권한·개인정보
 
 [^ref-009]: ROS 2 Design, ROS 2 DDS-Security Integration, 미확인, https://design.ros2.org/articles/ros2_dds_security.html, 접근일 2026-09-24 (원문 미열람)
 [^ref-010]: ROS 2 Design, ROS 2 Robotic Systems Threat Model, 미확인, https://design.ros2.org/articles/ros2_threat_model.html, 접근일 2026-09-24 (원문 미열람)
-[^cand-09]: OMG, About the DDS Security Specification Version 1.2, 발행일 미확인, https://www.omg.org/spec/DDS-SECURITY/1.2/About-DDS-SECURITY, 접근일 2026-09-24 (원문 미열람)
+[^cand-09]: OMG, About the DDS Security Specification Version 1.2, 미확인, https://www.omg.org/spec/DDS-SECURITY/1.2/About-DDS-SECURITY, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-009](../references/ref-009.md), [ref-010](../references/ref-010.md)
 - cand-09 는 검색 결과의 기관·제목·URL 로 실재만 확인한 후보 출처다. 정식 참고문헌 id 는 첫 검증 실행에서 부여하며, 그 전까지 이 출처에 기댄 주장은 [추정]으로 둔다.
