@@ -3,7 +3,7 @@
 # 등록: bash pipeline/install_cron.sh        (이 파일의 자리표시자를 실제 경로로 바꿔 crontab 에 마커 주석과 함께 넣는다.
 #                                             시각과 CRON_TZ 는 config/settings.yaml 의 run_time·timezone 에서 읽는다. 0장 run_time 을 바꾸면 다시 등록한다)
 # 해제: bash pipeline/uninstall_cron.sh      (마커 주석 사이의 줄만 지운다)
-# 손으로 넣으려면 `crontab -e` 에서 아래 네 줄을 붙여 넣고 /ABSOLUTE/PATH/TO/rop-wiki 를 위키 루트의 절대 경로로,
+# 손으로 넣으려면 `crontab -e` 에서 아래 세 줄을 붙여 넣고 /ABSOLUTE/PATH/TO/rop-wiki 를 위키 루트의 절대 경로로,
 # PATH 를 claude·mkdocs·python3 가 있는 경로로 바꾼다(cron 은 로그인 셸의 PATH 를 쓰지 않는다).
 #
 # - CRON_TZ 는 cronie(대부분의 리눅스 배포판) 가 지원하는 시간대 지정이다. 지원하지 않는 cron 이면 이 줄을 지우고

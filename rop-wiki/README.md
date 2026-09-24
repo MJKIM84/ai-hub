@@ -216,7 +216,7 @@ PATH=/opt/node22/bin:/usr/local/bin:/usr/bin:/bin
 - `CRON_TZ`는 cronie 계열 cron이 지원하는 시간대 지정이다. 지원하지 않는 cron이면 이 줄을 지우고 서버 시간대로 시각을 환산한다(UTC 서버면 `0 21 * * *` = 전날 21:00 UTC = 06:00 KST).
 - `crontab` 명령이 없으면 `install_cron.sh`가 exit 1로 끝나며 등록할 명령 한 줄을 출력한다. 그 줄을 n8n·GitHub Actions 등 다른 스케줄러에 등록한다.
 - 같은 날 두 번 실행되면 실행 id가 `<DATE>-02`로 붙는다. 실패한 실행을 다시 하려면 새 실행이 아니라 `--resume <run_id>`를 쓴다.
-- 손으로 넣으려면 `crontab -e`에서 `cron.example`의 주석이 아닌 세 줄(`CRON_TZ`, `PATH`, 실행 줄)을 붙여 넣고 경로와 `PATH`를 바꾼다(`cron.example` 머리 주석에 "아래 네 줄"이라 적힌 것은 오기이며 세 줄이 맞다).
+- 손으로 넣으려면 `crontab -e`에서 `cron.example`의 주석이 아닌 세 줄(`CRON_TZ`, `PATH`, 실행 줄)을 붙여 넣고 경로와 `PATH`를 바꾼다.
 
 ## 6. 검사 스크립트
 
