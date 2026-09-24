@@ -1,0 +1,292 @@
+{
+  "run_id": "2026-09-25-02",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). ref-025(IEEE Xplore 7084073)는 검증 검색 예산 소진으로 다시 검색하지 않았고, 리서치 검색 결과의 기관·제목·URL 일치 기록에 기대 실재로 판단했다. 발췌 요약이 CORA·CORAX·POS·RPARTS 구성과 일치한다. 단일 출처, 발행 2015."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색에서 IEEE SA 페이지(standards.ieee.org/standard/1872_2-2021.html)를 확인했다. 스니펫은 1872-2015 확장, AuR 설계 패턴·아키텍처 기술, 2022년 발행, 현행(active) 표준임을 담는다. OECD.AI·ANSI 목록은 IEEE 소개문을 옮긴 것이라 독립 교차로 보지 않는다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). 저자 논문(ICRA 2018)이 자기 프레임워크의 구조를 기술한 것이라 [사실] 유지. 성능 주장은 없음. 리서치 검색 결과 일치 기록에 기댐."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). arXiv 2011.11972(FOIS 2021). 스니펫에 행동·로봇·어포던스·실행 실패 하위 온톨로지가 나온다. 리서치 검색 결과 일치 기록에 기댐."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). ResearchGate에 올라간 1998년 기술보고서 사본이다. 스니펫이 파라미터·전제조건·효과와 도메인/문제 분리를 담는다. flow_item '시작 조건'은 물류 흐름 항목과 맞지 않으므로 흐름 매트릭스에 넣지 않는다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). W3C 권고안 발행일 2017-10-19가 브리프 기록과 일치한다. 발췌의 '2023년판 초안' 내용은 주장에 들어 있지 않으므로 본문에 넣지 않는다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). ref-030 System Capabilities 모듈의 SystemCapability·OperatingRange·SurvivalRange·Condition. 발행 기관 자료이며 단일 출처."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색에서 Scientific Reports 논문을 확인했다(DOI 10.1038/s41598-025-16649-3, 2025-10-02 발행, Naqvi 외). 스니펫에 광고 능력과 운용 능력의 구분이 나온다. PMC 사본은 같은 논문이라 독립 교차가 아니다. ref-041의 기관 칸은 저자로 고치고 발행일은 2025-10-02로 적는다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). Frontiers 서베이(2024-07). 리서치 검색 결과 일치 기록에 기댐."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "원문 미열람. 사실 → 추정. 'AGV 제조사는 통합을 위해 팩트시트를 제공해야 한다'는 의무 문구가 발췌 스니펫에 없다. 스니펫이 뒷받침하는 것은 팩트시트 토픽으로 파라미터를 관제에 미리 알린다는 부분까지다. 2.0.0 기준이며 3.0.0(2026)이 나와 있어 판을 명시해야 한다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 이미 [추정]이다. 검색 요약에 구현 라이브러리 문서가 섞여 있다. ref-031은 GitHub main 브랜치 문서라 3.0.0 발행(2026-03) 뒤에는 3.0 기준일 수 있으므로 판이 미확인이다. 블록 이름은 '판 미확인'을 병기해 쓴다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "원문 미열람. 사실 → 추정(기능 목록 부분). 검증 검색에서 VDA 보도자료 페이지(URL 260421)를 확인했다. 스니펫에는 3.0이 2026-03-19에 발행되고 보도자료가 2026-04에 나왔다는 것과 자율도 높은 이동로봇 통합을 위한 확장이라는 것만 있다. 구역·경로 공유·CRITICAL/URGENT 오류 등급·절전 action은 리서치 발췌와 검증 스니펫 어디에도 없다. 발행 사실은 idealworks·The Robot Report 기사로도 나오지만 원문 미열람이라 교차 확인으로 세지 않는다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색에서 2021년 5월 1.0 발표와 위치·속도·방향·상태·작업/가용 상태 공유를 확인했다. 보도 기사는 MassRobotics 발표를 옮긴 것이라 독립 교차가 아니다. 'MassRobotics AMR Interoperability - Version 2.0'이라는 2022-09 기사가 검색됐으므로 2.0의 현재 상태는 미확인으로 둔다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). OPC Foundation 공식 온라인 참조(발행 기관 자료)다. 판과 발행일이 미확인이므로 '판·발행일 미확인'을 명시한다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). Plattform Industrie 4.0 토론 문서(ref-035)와 같은 작업반의 논문(ref-036)은 독립 교차가 아니다. 정의 구절 직접 인용은 출처당 1회만 한다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "열린 질문 이동",
+      "note": "원문 미열람. 리서치 스스로 FeasibilityCheck·PreconditionCheck 설명의 출처가 ref-036인지 확정하지 못했다고 적었다. 출처–주장 대응이 확인되지 않아 본문의 사실·추정 문장으로 쓰지 않는다. 단계 페이지 4절 '남은 불확실성'에 출처 미확정 항목으로만 둔다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "원문 미열람. 사실 → 추정. IDTA 02020 표준의 구조를 IDTA 원문이 아니라 제3자 프리프린트(ref-037)로 뒷받침했다(검증 항목 12). ref-037은 검증 검색에서 실재를 확인했다: Vieira da Silva, Köcher, Gill, Weiss, Fay(Helmut Schmidt University), arXiv 2023-07, IEEE ETFA 2023 게재(IEEE Xplore 10275459). 기관·발행일을 고친다. IDTA 발행 자료로 다시 확인해야 한다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). arXiv 2209.10900 초록 페이지. 리서치 검색 결과 일치 기록에 기댐."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). Open-RMF 공식 문서이고 발행일은 미확인(확인일 기준). 리서치 검색 결과 일치 기록에 기댐."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). Open-RMF 공식 튜토리얼이고 발췌 구절이 주장과 일치한다. 이 출처의 직접 인용은 1회로 한정한다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색에서 KCI 서지(신민종·한영석·정재윤, 한국전자거래학회지 29(4), 203-213, 2024)를 확인했다. 주장은 게재 사실에 한정되며, 본문 내용(AAS로 무엇을 공유하는지)은 미확인이므로 서술하지 않는다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 예산). ref-022는 기존 참고문헌을 재사용했다. 2.0.0 기준 서술이며, 3.0.0에서 오류 등급이 바뀌었다는 주장(f12)은 검증되지 않았다. '2.0.0 기준'을 명시한다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. f19·f20에서 끌어낸 [추정]이다. 검색 범위의 한계를 병기한 채 유지한다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. f14의 규격 목적에서 끌어낸 [추정]이다. Part 2 이후 범위가 미확인이라는 점을 병기한다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. [추정] 유지. 다만 'CSS 계열 스킬 모델이 전제조건을 담는다'는 부분은 열린 질문으로 옮긴 f16에 기대므로 빼고, 전제조건·효과 담당은 PDDL(f5)로만 적는다. IDTA 02020 부분(f17)은 강등된 근거라는 점을 반영한다."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. f4·f22에서 끌어낸 [추정]이며 유지한다."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. f8을 트랙 가설 1에 대응시킨 [추정]이다. 트랙 가설 1의 판정 근거로 쓰지 않고 단계 1의 시사점으로만 쓴다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "온톨로지 변경 제안 '전제조건 (Precondition)'이 온톨로지 초안 v0의 '실행 조건(Execution Condition)'과 정의가 겹친다(다른 이름으로 이미 있는 개념). 제안 설명에도 경계 미정이라고 적혀 있다.",
+      "ref-025 id: 이전 브리프 2026-09-25-01이 ref-025를 MDPI Encyclopedia 출처에 썼다. 참고문헌 목록에는 ref-024까지만 등록돼 있다. 이번 실행은 ref-025를 IEEE 1872-2015에 배정했으므로 퍼블리셔가 충돌 여부를 확인해야 한다.",
+      "f10·f22(VDA 5050 2.0.0)와 기존 용어집 'VDA 5050' 항목·ref-022: 내용은 충돌하지 않는다. 새 각주를 만들지 않고 ref-022를 재사용한다."
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "'자산관리셸'(용어 후보)과 '자산관리쉘'(f21 논문 제목) 표기가 섞여 있다. 본문 용어는 '자산관리셸'로 통일하고, 논문 제목은 원문 표기를 그대로 둔다.",
+      "CSS 모델의 '능력(capability)'과 온톨로지 초안의 '기능(Capability)'이 같은 영어 용어에 다른 한글을 쓴다. 본문에서 대응 관계를 한 번 밝혀야 한다.",
+      "용어 후보 '자산관리셸' 정의의 '디지털 트윈 표준 구조'를 뒷받침하는 finding이 없다. 기존 용어집 '디지털 트윈' 정의, 그리고 8. 실시간 세계 상태·데이터 일관성 / 22. 시뮬레이션·예측용 디지털 트윈 구분과 섞일 위험이 있다."
+    ]
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "required_fixes": [
+    "모든 각주: 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[]의 모든 항목에 source_unopened: true를 넣는다 — web_fetch_available: false 환경이다.",
+    "f10: [사실] → [추정]으로 강등한다. 'AGV 제조사는 팩트시트를 제공해야 한다'는 의무 문구는 빼고, '팩트시트 토픽으로 차량 기능을 관제에 미리 알린다'까지만 쓰며 'VDA 5050 2.0.0 기준'을 명시한다 — 의무 문구가 출처 스니펫에 없다.",
+    "f12: '3.0.0판이 2026년에 발행되어 자율도 높은 이동로봇 통합을 위해 인터페이스를 확장했다'는 [사실]로 둔다. 구역·경로 공유·CRITICAL/URGENT 오류 등급·절전 action 목록은 [추정]으로 강등하고 '검색 요약 기준, 원문 미열람'을 병기한다 — 기능 목록은 스니펫으로 확인되지 않았다.",
+    "ref-032: 발행일을 '2026-04'(보도자료, URL 260421)로 적는다. 본문에는 '3.0.0 발행 2026-03(보도자료 2026-04)'로 쓰고 정확한 일자는 단정하지 않는다 — 검색 요약은 3.0 발행을 2026-03-19, 보도자료를 2026-04-20로 전하는데 URL은 260421이다.",
+    "f10·f11·f22 서술과 모델·표준 비교표 VDA 5050 행: 판을 명시한다(f10·f22는 2.0.0, f11은 '판 미확인 — GitHub main 브랜치, 구현 라이브러리 문서 혼재'). 3.0.0이 나와 있다는 사실을 함께 적는다 — 최신성(검증 항목 4).",
+    "f16: 본문의 사실·추정 문장으로 쓰지 않는다. 단계 페이지 4절 '남은 불확실성'에 'CSS 계열 스킬의 FeasibilityCheck·PreconditionCheck 설명은 출처 미확정'으로만 둔다 — 출처–주장 대응이 확인되지 않았다.",
+    "f17: [사실] → [추정]으로 강등하고 'IDTA 원문 미열람, 제3자 논문 경유'를 병기한다. 모델·표준 비교표 AAS 행의 칸에도 같은 표시를 한다 — 표준 주장을 발행 기관 자료가 아닌 프리프린트로 뒷받침했다.",
+    "ref-037: 기관(저자)을 'Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A.'로, 발행일을 '2023-07'로 고친다. 신뢰도는 medium 이하로 둔다 — 검증 검색에서 저자와 arXiv·IEEE ETFA 2023 게재를 확인했다.",
+    "ref-041: 기관 칸을 저자 'Naqvi, M. R. 외(Scientific Reports)'로, 발행일을 '2025-10-02'로 고친다 — 검증 검색 결과와 맞춘다.",
+    "f25: 'CSS 계열 스킬 모델이 전제조건·효과를 담는다'는 부분을 빼고 전제조건·효과는 PDDL(f5)로만 적는다. IDTA 02020 부분에는 f17의 강등을 반영해 [추정] 문장으로 둔다 — f16이 열린 질문으로 이동했다.",
+    "f21: 게재 사실(저자·학술지·권호·쪽·2024)만 쓰고 논문 본문 내용은 서술하지 않는다 — 본문 미확인이다.",
+    "f14·f19·f20·ref-031·ref-034·ref-039·ref-040: 각주 발행일 자리에 '미확인'을 쓴다. f14는 OPC 40010-1의 판도 '미확인'으로 적는다.",
+    "온톨로지 변경 '전제조건 (Precondition)': 개념 표에 넣지 않고 6절 미해결 모델링 질문의 '실행 조건과 제약의 경계' 항목에 '전제조건(PDDL 행동 전제조건, f5)을 실행 조건과 별도 개념으로 둘지'로 덧붙인다 — 기존 '실행 조건'과 정의가 겹친다.",
+    "온톨로지 변경 '효과 (Effect)': 승인. 개념 표에 상태 '확정'으로 넣고 근거 출처 칸에 f5·f15의 각주(ref-029, ref-035)를 둔다.",
+    "온톨로지 변경 '스킬 (Skill)': 승인. 정의는 '기능(능력)의 실행 가능한 구현'(f15·f17)으로 한정한다. '상태 기계로 실행 상태를 드러내고 OPC UA·REST로 호출된다'는 f16에 기대므로 넣지 않고 6절 미해결 질문으로 둔다. 상태는 '확정'.",
+    "온톨로지 변경 관계 '기능 / 구현된다 / 스킬': 승인. 관계 표에 넣고 근거 칸에 ref-035·ref-037을 두되, ref-037에는 '원문 미열람, IDTA 원문 아님'을 병기한다.",
+    "온톨로지 변경 '오류 (Error)': 승인. 속성 후보에서 '3.0의 CRITICAL·URGENT'를 빼고 '등급(VDA 5050 2.0.0의 WARNING·FATAL)'만 적는다. '복구 가능성'은 '미확인'으로 둔다. 상태는 '확정' — 3.0 등급은 강등된 f12에 기대고 이 변경의 근거 finding에도 없다.",
+    "온톨로지 변경 '기능 (Capability)' 수정: 승인. 속성에 '능력 출처 구분(광고 능력 / 운용 능력)'을 더하고 상태를 '초안' → '확정'으로 바꾼다(근거 f8). 매뉴얼 값이 광고 능력이라는 해석(f27)은 [추정]으로 병기한다.",
+    "온톨로지 초안 버전: 승인한 변경이 있으므로 ontology_version을 \"0\" → \"0.1\"로 올리고 H1·상태 줄·프런트매터·JSON 네 곳을 맞춘다. 4. 다이어그램에 효과·스킬·오류와 '구현된다' 관계를 반영한다.",
+    "용어 후보 '자산관리셸(AAS)': 이번 실행에서 용어집에 등록하지 않는다 — 정의('디지털 트윈 표준 구조')를 뒷받침하는 finding이 없다. 본문 표기는 '자산관리셸'로 통일하고 f21 논문 제목만 원문 표기 '자산관리쉘'을 쓴다.",
+    "용어 후보 '팩트시트': 정의를 'VDA 5050에서 차량이 자신의 기능 정보를 상위 관제에 미리 알리는 메시지(토픽)'로 줄인다(f10). 블록 목록(유형·물리 파라미터·적재 명세 등)은 [추정] f11에 기대므로 정의에 넣지 않는다.",
+    "용어 후보 '능력·스킬·서비스 모델': 정의 끝에 '이 위키의 온톨로지 초안에서는 CSS의 능력(capability)을 기능(Capability)으로 부른다'를 한 번 밝힌다 — 용어 충돌을 막기 위해서다.",
+    "단계 페이지 2절·backlog_updates: q1-01·q1-02는 '답함'(답한 실행 id 2026-09-25-02, 답 위치 #q1-01·#q1-02, 3절 소제목에 {#q1-01}·{#q1-02})으로 바꾼다. q1-03은 백로그 '조사 중', 2절 표 '열림', answer_link null로 둔다. q1-04~q1-06은 바꾸지 않는다.",
+    "모델·표준 비교표: 발행 기관·종류 칸은 finding이 있는 행만 채운다. 다섯 정보 항목 칸은 f5·f7·f11·f17·f22·f26이 직접 뒷받침하는 칸만 '부분' 등으로 채우고 태그 수준(추정)을 병기한다. 나머지는 '미조사'로 둔다. 모든 행의 상태는 '원문 미열람'. RCO(f8)와 이종 자율 로봇 능력·스킬 모델(f18)은 근거 finding id를 적어 후보 밖 행으로 추가한다.",
+    "세부영역 반영 제안(5. 로봇 능력·작업 온톨로지, 9. 로봇·제조사 관제 연동, 28. 표준·상호운용성·다사업자 거버넌스): 세부영역 페이지를 이번 실행에서 직접 고치지 않는다. area_reflection_proposals와 트랙 로그에만 남긴다. 28. 표준·상호운용성·다사업자 거버넌스 제안의 f12는 강등된 부분을 [추정]으로 표시한다.",
+    "단계 페이지 6절·상태 줄·트랙 개요 상태 줄: 완료 조건 두 항목을 모두 '미충족'으로 적는다. 다음 줄은 '다음 단계로 전환: 아니오(비교표의 다섯 정보 항목 열 대부분 미조사, ROP용 능력 개념 요구 목록 초안 미반영, 막힌 질문 q1-03·q1-04·q1-05·q1-06)'로 쓴다. 트랙 개요 '마지막 트랙 실행'은 2026-09-25, 현재 단계는 '단계 1. 기존 능력 표현 모델과 표준 조사'로 유지한다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 확인 24건, 미확인 3건(f10, f12, f16), 교차 확인 0건. 강등: f10 사실 → 추정, f12 사실 → 추정(3.0 기능 목록 부분), f17 사실 → 추정(IDTA 표준 내용을 제3자 프리프린트로 뒷받침). 열린 질문 이동: f16(출처 미확정). 원문 미열람 출처: ref-022, ref-025~ref-043 전부. 검증 검색은 리서치 34회에 더해 6회로 트랙 상한 40회에 이르렀다. 검색으로 다시 확인한 출처는 ref-026·ref-032·ref-033·ref-037·ref-041·ref-043이고, 나머지는 리서치 검색 결과 일치 기록에 기대 실재로 판단했다(원문 미열람, 검증 예산). 주의: 표준 대부분이 발행 기관 소개·검색 요약 수준에서만 확인됐다. VDA 5050은 2.0.0 기준 서술이며 3.0.0이 2026년에 발행됐다(보도자료 2026-04, 발행 2026-03-19로 요약됨. 정확한 일자는 미확인). ref-025 id는 이전 실행 2026-09-25-01의 미등록 출처와 겹치므로 퍼블리셔가 충돌을 확인해야 한다. 정정 요청 없음. 온톨로지 변경 승인: 효과(f5·f15), 스킬(f15·f17, 정의 축소), 관계 기능 / 구현된다 / 스킬(f15·f17), 오류(f22·f26, 3.0 등급 제외), 기능 속성 수정 — 광고 능력·운용 능력 구분(f8, 시드 개념 확정: 기능(f8)) / 거부: 전제조건(f5·f16 — 기존 '실행 조건'과 정의가 겹쳐 6절 미해결 모델링 질문으로 이동). 온톨로지 버전 0 → 0.1. 단계 완료 조건: 미충족(부족: 모델·표준 비교표의 다섯 정보 항목 열 대부분 미조사, ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 미반영 — q1-06 미조사). 막힌 질문: q1-03(부분 답, 조사 중), q1-04, q1-05, q1-06. 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 있음).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": false,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
