@@ -157,6 +157,8 @@ def _link(page_rel: str, target: str | None, text: str | None = None) -> str:
         return text or ""
     if re.match(r"^[a-z]+://", target):
         return f"[{text or target}]({target})"
+    target, _, anchor = target.partition("#")          # 앵커는 파일 존재 확인에서 떼고 링크에 다시 붙인다
+    frag = f"#{anchor}" if anchor else ""
     rel = paths.docs_rel(target)
     if rel.endswith("/") or rel == "":
         rel = rel + "index.md"
@@ -164,7 +166,7 @@ def _link(page_rel: str, target: str | None, text: str | None = None) -> str:
         rel = rel + "/index.md"
     if not (DOCS / rel).is_file():
         return text or rel
-    return f"[{text or _title_of(rel)}]({paths.rel_link(page_rel, rel)})"
+    return f"[{text or _title_of(rel)}]({paths.rel_link(page_rel, rel)}{frag})"
 
 
 def _title_of(rel: str) -> str:
