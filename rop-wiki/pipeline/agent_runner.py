@@ -408,7 +408,9 @@ def probe_web_fetch(url: str, timeout: int = 20) -> dict:
 def probe(settings: dict, url: str | None = None, skip_search: bool = False, skip_fetch: bool = False) -> dict:
     """웹 도구 점검(7.2 의 1단계). web_search_available 은 `claude -p --tools WebSearch`, web_fetch_available 은
     `claude -p --tools WebFetch` 로 실제 도구를 한 번씩 써 본 결과다. curl 결과는 참고값(details.web_fetch_curl)으로만 남긴다.
-    skip_fetch(드라이런)면 도구 점검을 생략하고 curl 참고값을 web_fetch_available 로 쓰되 details 에 생략을 표시한다 [가정]."""
+    skip_fetch(드라이런)면 도구 점검을 생략하고 curl 참고값을 web_fetch_available 로 쓰되 details 에 생략을 표시한다 [가정].
+    skip_search(드라이런)면 web_search_available 을 null 로 둔다(점검하지 않은 것을 가용으로 기록하지 않는다). run_daily.sh 는
+    null 이면 "웹 도구 점검 생략(드라이런)"을 로그에 남기고 중단하지 않는다."""
     url = url or str(settings.get("web_fetch_probe_url") or "")
     search = {"available": None, "detail": "건너뜀(--skip-search)"} if skip_search else probe_web_search(settings)
     curl = probe_web_fetch(url) if url else {"available": False, "detail": "probe URL 없음"}
@@ -419,7 +421,7 @@ def probe(settings: dict, url: str | None = None, skip_search: bool = False, ski
     else:
         fetch = probe_web_fetch_tool(settings, url)
     return {
-        "web_search_available": bool(search.get("available")) if not skip_search else True,
+        "web_search_available": bool(search.get("available")) if not skip_search else None,
         "web_fetch_available": bool(fetch.get("available")),
         "probe_url": url, "checked_at": runs.now_str(settings),
         "details": {"web_search": search, "web_fetch": fetch, "web_fetch_curl": curl},
@@ -479,6 +481,8 @@ def _previous_research(run_id: str, settings: dict, n: int = 7) -> list[tuple[st
             continue
         rel = d.relative_to(ROOT).as_posix()
         parked = runs.is_parked(rid, settings)
+        if parked and runs.is_discarded(rid, settings):
+            continue   # 사용자가 폐기한 보류 실행(runs/parked/<id>/DISCARDED, RUN.md 5절)의 브리프는 넣지 않는다
         if parked:
             reason = str(runs.read_summary(d).get("park_reason") or "").strip()
             label = f"{rel}/research.md (보류" + (f": {reason[:120]}" if reason else "") + ")"
@@ -492,6 +496,33 @@ def _previous_research(run_id: str, settings: dict, n: int = 7) -> list[tuple[st
         if briefs >= n:
             break
     return out
+
+
+AREA_REFLECTIONS_REL = "data/area_reflection_proposals.json"
+
+
+def area_reflection_items(target_json: dict, run_id: str) -> list[dict]:
+    """이 실행이 반영을 검토할 세부영역 반영 제안(6.3 절차 9 "반영은 다음 해당 영역 실행에서", 8.2 (5)): 트랙이 아닌 실행의
+    대상 영역에 대한 status 제안 항목 가운데 이 실행보다 앞선 실행이 낸 것. 퍼블리셔가 그 영역 페이지를 게시하면 같은 기준으로
+    '반영'과 실행 id 를 적는다(publish.py pending_reflection)."""
+    if target_json.get("run_type") == "track":
+        return []
+    no = (target_json.get("target") or {}).get("area_no")
+    if not str(no).isdigit():
+        return []
+    data = runs.read_json(ROOT / AREA_REFLECTIONS_REL, {}) or {}
+    return [it for it in (data.get("items") or [])
+            if it.get("status") == "제안" and str(it.get("area_no")) == str(no) and str(it.get("run_id") or "") < str(run_id)]
+
+
+def _area_reflection_input(target_json: dict, run_id: str) -> tuple[str, str] | None:
+    items = area_reflection_items(target_json, run_id)
+    if not items:
+        return None
+    t = target_json.get("target") or {}
+    label = (f"{AREA_REFLECTIONS_REL} (대상 영역 {t.get('area_name')} 에 대한 트랙 반영 제안 {len(items)}건, status 제안 — "
+             "반영은 이 실행에서: 사양서 6.3 절차 9·공통 규칙 11)")
+    return label, json.dumps({"items": items}, ensure_ascii=False, indent=2)
 
 
 def _experiment_inputs() -> list[tuple[str, str]]:
@@ -635,8 +666,16 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
     budget = target_json.get("budget") or runs.budget_for(settings, rt, track_cfg)
     ctx["예산"] = dict(budget)
     wf = (probe_json or {}).get("web_fetch_available")
-    ctx["환경 알림"] = f"web_fetch_available: {'true' if wf else 'false'}" + ("" if wf else " (페이지 열람이 차단된 환경: 공통 규칙 0절 6항)") \
+    note = f"web_fetch_available: {'true' if wf else 'false'}" + ("" if wf else " (페이지 열람이 차단된 환경: 공통 규칙 0절 6항)") \
         if wf is not None else "없음"
+    if wf is False and (probe_json or {}).get("web_fetch_override"):
+        note += " · 페이지 열람 불가 — 원문 미열람 모드(사용자 override: " + str(probe_json.get("web_fetch_override_source") or "사용자") + ")"
+    ctx["환경 알림"] = note
+    if role in ("researcher", "storyteller") or (role == "verifier" and (stage or "first") == "first"):
+        arp = area_reflection_items(target_json, str(target_json.get("run_id") or ""))
+        if arp:
+            ctx["세부영역 반영 제안"] = (f"{len(arp)}건 — 트랙 실행이 이 영역 페이지에 반영하자고 제안한 내용(입력 {AREA_REFLECTIONS_REL}). "
+                                   "이번 실행의 조사·검증을 거쳐 해당 절에 반영을 검토한다(사양서 6.3 절차 9 '반영은 다음 해당 영역 실행에서')")
     ctx["언어"] = settings.get("language", "ko")
     if role == "verifier":
         ctx["verification_stage"] = stage or "first"
@@ -660,10 +699,14 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
     slug = (target_json.get("track") or {}).get("slug") if is_track else None
     stage_no = (target_json.get("track") or {}).get("stage") if is_track else None
 
+    reflection = _area_reflection_input(target_json, run_id)   # 비트랙 실행: 대상 영역의 트랙 반영 제안(status 제안)
+
     def common_context_pages():
         _add(inputs, f"{rel_run}/target.json", json.dumps(target_json, ensure_ascii=False, indent=2))
         if target_rel:
             _add(inputs, target_rel)
+        if reflection:
+            inputs.append(reflection)
         for pg in _correction_pages(target_json):
             if pg != target_rel:
                 _add(inputs, pg)
@@ -691,6 +734,8 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         _add(inputs, f"{rel_run}/research.json")
         if target_rel:
             _add(inputs, target_rel)
+        if reflection:
+            inputs.append(reflection)
         for pg in _correction_pages(target_json):
             if pg != target_rel:
                 _add(inputs, pg)
@@ -762,6 +807,8 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         if target_rel:
             _add(inputs, target_rel)
             _add(inputs, paths.category_repo_path(paths.category_letter_of(int(t["area_no"]))))
+        if reflection:
+            inputs.append(reflection)
         for pg in _correction_pages(target_json):
             if pg != target_rel:
                 _add(inputs, pg)

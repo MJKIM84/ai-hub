@@ -1,7 +1,8 @@
 """YAML 프런트매터 읽기·쓰기와 필수 필드 상수(사양서 5.1·5.2).
 
 - read(path) -> (meta, body). 날짜 값은 항상 ISO 문자열로 돌려준다.
-- write(path, meta, body). ISO 날짜 문자열은 따옴표 없는 날짜로, title/category 는 큰따옴표로 쓴다.
+- write(path, meta, body). 날짜 필드(DATE_KEYS)의 ISO 날짜 문자열은 따옴표 없는 날짜로, title/category 는 큰따옴표로 쓴다.
+  날짜 필드가 아닌 값은 ISO 날짜 모양이어도 문자열로 남긴다(예: 일일 로그의 title "2026-09-25").
 """
 from __future__ import annotations
 
@@ -25,7 +26,17 @@ CONFIDENCE_VALUES: list[str] = ["high", "medium", "low"]
 
 TRACK_SUBTYPES: list[str] = ["comparison", "matrix", "evaluation", "experiments"]
 
-# type 별 추가 필수 필드. subtype: index 인 목록 페이지(topics/index.md 등)는 면제한다. [가정]
+# subtype: index(색인 페이지)를 둘 수 있는 type. 이 type 의 색인 페이지(glossary/index.md, references/index.md, standards/index.md,
+# topics/index.md, logs/index.md)만 아래 유형별 추가 필수 필드를 면제한다 [가정]
+INDEX_SUBTYPE_TYPES: list[str] = ["glossary", "reference", "standard", "topic", "log"]
+
+# 프런트매터 날짜 필드. dumps() 는 이 키의 ISO 날짜 문자열만 따옴표 없는 날짜로 쓴다
+DATE_KEYS: tuple[str, ...] = ("created", "updated", "accessed", "last_run", "published")
+
+# 본문 첫 줄의 이동 경로(공통 컨텍스트, 사양서 4.8): "[홈](…) › …" 또는 홈 페이지의 "홈" 한 단어
+BREADCRUMB_RE = re.compile(r"^(\[홈\]\([^)\s]+\)|홈)( › .+)?$")
+
+# type 별 추가 필수 필드. subtype: index 인 목록 페이지(topics/index.md 등, INDEX_SUBTYPE_TYPES)는 면제한다. [가정]
 TYPE_REQUIRED: dict[str, list[str]] = {
     "area": ["category", "area_no"],
     "topic": ["primary_area_no"],
@@ -85,7 +96,7 @@ def read(path: Path | str) -> tuple[dict, str]:
 def dumps(meta: dict, body: str) -> str:
     prepared = {}
     for k, v in meta.items():
-        if isinstance(v, str) and _ISO_DATE.match(v):
+        if k in DATE_KEYS and isinstance(v, str) and _ISO_DATE.match(v):
             v = date.fromisoformat(v)
         elif k in ("title", "category") and isinstance(v, str):
             v = _Quoted(v)
@@ -126,9 +137,16 @@ def validate(meta: dict, path: str = "") -> list[str]:
     v = meta.get("version")
     if v is not None and not isinstance(v, (int, float, str)):
         errs.append(f"version 값 오류: {v!r}")
-    if t == "track" and "subtype" in meta and meta["subtype"] not in TRACK_SUBTYPES + ["index"]:
-        errs.append(f"track subtype 값 오류: {meta['subtype']!r}")
-    if meta.get("subtype") != "index":
+    sub = meta.get("subtype")
+    if t == "track" and "subtype" in meta and sub not in TRACK_SUBTYPES + ["index"]:
+        errs.append(f"track subtype 값 오류: {sub!r}")
+    elif t != "track" and "subtype" in meta:
+        if sub != "index":
+            errs.append(f"subtype 값 오류: type={t} 에는 subtype: index 만 쓸 수 있다({sub!r})")
+        elif t not in INDEX_SUBTYPE_TYPES:
+            errs.append(f"subtype: index 는 색인 페이지 유형({', '.join(INDEX_SUBTYPE_TYPES)})에만 쓴다(type={t})")
+    index_exempt = sub == "index" and t in INDEX_SUBTYPE_TYPES + ["track"]
+    if not index_exempt:
         for k in TYPE_REQUIRED.get(t, []):
             if k not in meta or meta[k] in (None, ""):
                 errs.append(f"type={t} 추가 필수 필드 없음: {k}")

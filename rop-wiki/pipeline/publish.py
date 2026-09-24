@@ -11,22 +11,30 @@
  3.  원문 보호 검사: pages/ 를 docs 에 복사한 상태에서 checks/protect_source.py (실패 시 스냅숏에서 원복)
  4.  내부 링크·각주 검사(checks/check_links.py) + 제목 앵커 검사(AnchorIndex: 경로#앵커 링크와 pages.json 의 링크 필드 앵커를
      mkdocs 가 만드는 제목 id 와 대조 — 6단계 빌드에서 실패할 앵커를 여기서 잡는다) + 프런트매터·이동 경로 검사(checks/check_frontmatter.py)
- 5.  반영: 페이지 status published·updated·last_run·version, 용어집·참고문헌·표준·열린 질문·흐름 매트릭스·변경 이력,
-     트랙(백로그·새 질문·트랙 로그·온톨로지 버전 이력·단계 전환·세부영역 반영 제안), 정정 요청 상태,
-     자동 갱신 영역(refresh_all_auto_regions) + mkdocs.yml(write_mkdocs_yml) → 최종 검사 → (예비) 일일 로그·요약
+ 5.  반영: 페이지 status published·updated·last_run·version·confidence, 용어집·참고문헌·표준·열린 질문·흐름 매트릭스·변경 이력,
+     트랙(백로그·새 질문·트랙 로그 원천 data/tracks/<slug>/log.json·온톨로지 버전 이력·단계 전환·세부영역 반영 제안 누적),
+     비트랙 실행이 대상 영역 페이지를 게시하면 그 영역의 세부영역 반영 제안을 '반영'으로 표시, 정정 요청 상태,
+     자동 갱신 영역(refresh_all_auto_regions(strict=True), 트랙 로그 포함) + mkdocs.yml(write_mkdocs_yml) → 최종 검사 → (예비) 일일 로그·요약
  6.  사이트 빌드(settings.site_build_cmd) — 실패하면 스냅숏으로 docs/data/config/tracks/mkdocs.yml/inbox 를 되돌리고 로그에 남긴다
- 7.  git 커밋(settings.git_commit) — 제목 "run(<date>): <실행 유형 한국어> <대상 영역 이름> — 생성 n/갱신 n"
+ 8.  일일 로그 docs/logs/daily/<date>.md 확정 + runs/<run_id>/summary.json → auto 영역 → 재빌드 — 7단계 커밋 "전에" 한다.
+     재빌드가 실패하면 확정 로그 변경분(docs, mkdocs.yml)만 6단계 빌드 시점으로 되돌리고 예비 로그로 커밋한다(반영은 유지).
+     이어 퍼블리셔 단계 기록(runs/<run_id>/timings.json·log.md)을 남긴다
+ 7.  git 커밋(settings.git_commit) — 한 번만 커밋하고 amend 하지 않는다. 제목 "run(<date>): <실행 유형 한국어> <대상 영역 이름> — 생성 n/갱신 n"
      (주간 정리는 <대상 영역 이름> 자리에 ISO 주 "2026-W40", 월간 재검증은 대상 영역이 없으면 비운다;
-     트랙 실행의 트랙·단계·질문은 제목이 아니라 본문 둘째 줄에 둔다 [가정 — RUN.md 9절])
- 8.  일일 로그 docs/logs/daily/<date>.md 확정 + runs/<run_id>/summary.json → 재빌드 → 커밋 수정(amend).
-     재빌드가 실패하면 확정 로그 변경분만 되돌리고 amend 를 건너뛴다
+     트랙 실행의 트랙·단계·질문은 제목이 아니라 본문 둘째 줄에 둔다 [가정 — RUN.md 9절]). 커밋 뒤에는 runs/<run_id>/ 에 로그를
+     더 쓰지 않는다(이후 메시지는 표준 출력만). 커밋 해시는 그 커밋 안의 summary.json 에 넣을 수 없으므로(파일 내용이 해시를
+     결정한다) summary.json 의 committed·commit 두 필드만 고친 기록 커밋 "run(<date>): 커밋 해시 기록 <run_id> → <hash>" 을
+     바로 뒤에 하나 더 만든다 [가정 — RUN.md 9절]. 이렇게 하면 commit 필드는 브랜치에 있는 실행 커밋을 가리키고, 실행이 쓴
+     로그·기록 파일은 모두 커밋된다(다음 실행으로 넘어가는 미커밋 파일이 없다)
  9.  알림(notify 가 none 이 아니면 자리만)
+ (8단계를 7단계 앞에 두는 것은 확정 로그와 실행 기록을 한 커밋에 담기 위한 것이다. 사양서 6.4 의 번호는 그대로 쓴다 [가정])
 
 실패 처리: 스냅숏(runs/<run_id>/backup/) 이후 어느 단계에서든 PublishError 가 나면 커밋 전이면 스냅숏으로 되돌린다.
 스냅숏 복원은 git checkout 을 쓰지 않는다(사용자의 미커밋 inbox/corrections.md·config/tracks 수정을 보존한다).
 
 옵션
-  --check-only : 1단계(스키마·판정 확인)만 확인하고 끝낸다(schemas/examples 로 드라이 체크 가능)
+  --check-only : 1단계(스키마·판정 확인)와 pages.json 링크 필드의 제목 앵커 대조만 하고 끝낸다(schemas/examples 로 드라이 체크 가능.
+                 실행 폴더 이름을 예시의 run_id 와 같게 runs/2026-09-24-01/ 로 만든다 — 1단계가 run_id 일치를 검사한다)
   --dry-run    : 1~4단계를 실행하되 docs 를 원래대로 되돌리고 반영하지 않는다
   --log-only   : 보류·중단된 실행의 일일 로그와 summary.json 만 쓴다(runs/parked/ 도 찾는다)
   --no-build / --no-commit : 6·7단계를 건너뛴다(시험용)
@@ -52,7 +60,7 @@ from lib import autoregion as ar  # noqa: E402
 from lib import frontmatter as fm  # noqa: E402
 from lib import paths, runs  # noqa: E402
 from lib.nav import write_mkdocs_yml  # noqa: E402
-from lib.render import load_backlog, refresh_all_auto_regions  # noqa: E402
+from lib.render import AutoRegionError, load_backlog, refresh_all_auto_regions  # noqa: E402
 from lib.source import load_source  # noqa: E402
 import render_run_md  # noqa: E402
 
@@ -63,6 +71,9 @@ FINAL_SNAPSHOT_ITEMS = ["docs", "mkdocs.yml"]   # 8단계 확정 로그 재빌�
 TRACK_PAGE_TYPES = {"track", "track-stage", "ontology-draft", "track-log", "questions"}
 OPEN_STATES = ("열림", "조사 중")
 RUN_TYPE_UNSET = "미선정"   # target.json 이 없는(대상 선정 전에 중단된) 실행의 실행 유형 표시
+AREA_REFLECTIONS = paths.DATA / "area_reflection_proposals.json"   # 트랙 실행이 쌓는 세부영역 반영 제안(6.3 절차 9)
+CONFIDENCE_PAGE_TYPES = ("area", "topic", "track-stage", "ontology-draft")   # 게시 시 2차 검증의 confidence 를 언제나 적는 유형
+FETCH_OVERRIDE_NOTE = "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"   # run_daily.sh 의 --allow-no-fetch 등과 같은 문구
 
 
 class PublishError(RuntimeError):
@@ -217,8 +228,10 @@ def _term_keys(*terms) -> set[str]:
 
 
 def _footnote_line(ref: dict) -> str:
+    """각주 정의 한 줄: "[^ref-003]: 기관, 제목, 발행일 또는 미확인, URL, 접근일 YYYY-MM-DD"(원문을 열지 못했으면 끝에 " (원문 미열람)").
+    발행일을 모르면 "미확인"으로 쓴다(lib/source.py Reference.footnote 와 같은 형식)."""
     pub = ref.get("published")
-    pub = str(pub) if pub not in (None, "", "미확인") else "발행일 미확인"
+    pub = str(pub) if pub not in (None, "", "미확인", "발행일 미확인") else "미확인"
     tail = " (원문 미열람)" if ref.get("source_unopened") else ""
     return f"[^{ref['id']}]: {ref.get('org', '')}, {ref.get('title', '')}, {pub}, {ref.get('url', '')}, 접근일 {ref.get('accessed', '')}{tail}"
 
@@ -268,11 +281,36 @@ class Publisher:
         self.built = False
         self.src = load_source()
         self.anchors = AnchorIndex()
+        self.mode = "log_only" if getattr(args, "log_only", False) else "publish"
+        # 실행 커밋 뒤에는 runs/<run_id>/ 에 로그를 쓰지 않는다(커밋에 들어가지 않은 로그 줄이 남지 않도록). info() 는 표준 출력만 한다
+        self.sealed = False
+        self.publisher_step_recorded = False
 
     # --- 공통 ------------------------------------------------------------------------
     def info(self, msg: str, step: str = "퍼블리셔") -> None:
-        self.log.log(msg, step=step)
+        if not self.sealed:
+            self.log.log(msg, step=step)
         print(f"[publish] {msg}")
+
+    def record_publisher_step(self, result: str, note: str = "") -> None:
+        """퍼블리셔 단계(7.2 의 7)의 결과·소요 시간을 runs/<run_id>/timings.json·log.md 에 남긴다. 성공이면 커밋 직전에 불러
+        이 기록이 실행 커밋에 들어가게 한다. run_daily.sh 는 퍼블리셔가 끝난 뒤 실행 폴더에 아무것도 쓰지 않는다."""
+        if self.sealed:
+            return
+        seconds = 0.0 if self.publisher_step_recorded else round(time.time() - self.t0, 1)
+        self.log.step("퍼블리셔", result, seconds, note)
+        self.publisher_step_recorded = True
+
+    def publisher_seconds(self) -> float:
+        """일일 로그·요약에 쓰는 퍼블리셔 소요 시간. publish 모드는 이 실행의 경과 시간, log-only 모드는 timings.json 의 기록."""
+        if self.mode == "publish":
+            return time.time() - self.t0
+        v = self.log.timings().get("퍼블리셔") or {}
+        return float(v.get("seconds") or 0)
+
+    def total_seconds(self) -> float:
+        timings = self.log.timings()
+        return sum((v.get("seconds") or 0) for k, v in timings.items() if k != "퍼블리셔") + self.publisher_seconds()
 
     def run_type_label(self) -> str:
         """실행 유형의 한국어 표시. target.json 이 없으면 '미선정'."""
@@ -391,8 +429,8 @@ class Publisher:
             for e in fm.validate(meta, rel):
                 errs.append(f"{rel}: {e}")
             first = next((l for l in body.split("\n") if l.strip()), "")
-            if not (first.startswith("홈") or first.startswith("[홈](")):
-                errs.append(f"{rel}: 본문 첫 줄이 이동 경로('홈 › …')가 아님")
+            if not fm.BREADCRUMB_RE.match(first.strip()):
+                errs.append(f"{rel}: 본문 첫 줄이 이동 경로('[홈](…) › …')가 아님")
             exists = self.page_dst(pg).is_file()
             if pg.get("action") == "create" and exists:
                 errs.append(f"{rel}: action create 인데 docs 에 이미 있다")
@@ -486,6 +524,29 @@ class Publisher:
                 out.append((f"pages.json track_updates.backlog_updates[{i}].answer_link", str(b["answer_link"])))
         return [(label, link) for label, link in out if "#" in link]
 
+    def check_only_anchor_errors(self) -> list[str]:
+        """--check-only 용 앵커 대조: pages.json 링크 필드의 '#앵커' 를 대상 페이지(이번 실행의 runs/<run_id>/pages/ 에 초안이
+        있으면 그 초안, 없으면 docs/ 의 현재 페이지)의 제목 id 와 대조한다. docs 에 복사하기 전이므로 4단계의 docs 전체 대조 대신
+        이것만 본다(4단계·6단계에서 실패할 링크를 드라이 체크에서 미리 잡는다)."""
+        errs: list[str] = []
+        self.anchors.clear()
+        for label, link in self._pages_json_anchor_links():
+            path_part, anchor = link.split("#", 1)
+            anchor = anchor.strip()
+            if not anchor or path_part.startswith(_EXTERNAL):
+                continue
+            rel = paths.docs_rel(path_part.split("?", 1)[0])
+            cand = self.rd / "pages" / rel
+            if not cand.is_file():
+                cand = paths.DOCS / rel
+            if cand.suffix != ".md" or not cand.is_file():
+                continue
+            ids = self.anchors.ids(cand)
+            if anchor not in ids:
+                hint = ", ".join(f"#{i}" for i in sorted(ids) if not i.startswith(("fn:", "fnref:")))
+                errs.append(f"{label}: 앵커 없음 {link} — {rel} 에 있는 제목 id: {_short(hint, 200) or '없음'}")
+        return errs
+
     def _anchor_errors(self, extra: list[tuple[str, str]] | None = None) -> list[str]:
         self.anchors.clear()
         errs = check_anchor_links(self.anchors, extra)
@@ -544,9 +605,13 @@ class Publisher:
             self.notes.append(f"{self.page_rel(pg)}: version 을 {old_v + 1} 로 올렸다(초안 {new_v})")
         elif new_v < 1:
             meta["version"] = 1
-        # 2차 검증이 확정한 신뢰도를 신뢰도 필드가 있는 페이지에 적는다(6.2 "confidence 는 여기서 확정") [가정]
-        if "confidence" in meta and self.v2.get("confidence"):
-            meta["confidence"] = self.v2["confidence"]
+        # 2차 검증이 확정한 신뢰도를 적는다(5.1 "내용 검증 에이전트가 부여", 6.2 "confidence 는 여기서 확정"). 신뢰도 필드가 있는
+        # 페이지와, 초안이 키를 빠뜨렸더라도 본문을 가진 연구 페이지 유형(area·topic·track-stage·ontology-draft)에는 언제나 쓴다 [가정]
+        if self.v2.get("confidence") and ("confidence" in meta or meta.get("type") in CONFIDENCE_PAGE_TYPES):
+            if "confidence" not in meta:
+                meta = _insert_after(meta, "status", "confidence", self.v2["confidence"])
+            else:
+                meta["confidence"] = self.v2["confidence"]
         # 주제 페이지 9. 검증 노트: "2차 대기" → 2차 판정, "검증자 주의" → 2차 검증 노트 (storyteller.md 6절·verifier.md 11절 요청) [가정]
         if meta.get("type") == "topic":
             body = body.replace("/ 2차 대기", f"/ 2차 {self.v2.get('verdict')}")
@@ -901,21 +966,11 @@ class Publisher:
             self.notes.append(f"{where}: 제기 근거 {o!r} 가 finding id·'사용자' 형식이 아니지만 그대로 기록했다")
             return o
 
-        # (0) priority.yaml 의 track_questions 를 제기 근거 "사용자"로 등록 (8.2)
-        for q in runs.load_priority().get("track_questions", []):
-            if str(q.get("track", "")) != slug or not q.get("question"):
-                continue
-            t = str(q["question"]).strip()
-            if t in texts or (q.get("id") and q["id"] in by_id):
-                continue
-            try:
-                st = int(q.get("stage") or stage)
-            except (TypeError, ValueError):
-                st = stage
-            row = {"id": next_qid(st), "question": t, "stage": st, "origin": "사용자", "status": "열림",
-                   "answered_run_id": None, "answer_link": None, "created": self.date, "origin_run_id": None,
-                   "priority": q.get("priority") or "normal"}
-            items.append(row); by_id[row["id"]] = row; texts[t] = row
+        # (0) priority.yaml 의 track_questions 를 제기 근거 "사용자"로 등록 (8.2). 보통은 대상 선정(select_target.py)이 이미 등록했고,
+        #     여기서는 그 뒤에 더해진 질문이나 --no-side-effects 로 선정한 실행을 보완한다
+        for row in runs.register_user_track_questions(items, slug, stage, self.date):
+            by_id[row["id"]] = row
+            texts[row["question"]] = row
             self.counts["backlog"] += 1
             self.notes.append(f"사용자 지정 트랙 질문 등록: {row['id']}")
         # (1) backlog_updates
@@ -1077,31 +1132,55 @@ class Publisher:
             "completion_assessment": comp_cell, "area_reflection_proposals": arp_cell, "next_run_proposal": next_cell,
             "log_entry": tu.get("log_entry", ""), "overview_progress": tu.get("overview_progress", ""),
         }
+        # 트랙 로그의 원천(data/tracks/<slug>/log.json)에 항목을 더한다. 페이지의 "실행 기록" 절(auto:track-log)은 5단계 끝의
+        # refresh_all_auto_regions() 가 이 파일에서 최신순으로 다시 만든다(lib/render.py render_track_log). 같은 실행 id 가 이미 있으면
+        # (--resume 로 퍼블리셔를 다시 실행한 경우) 새 항목으로 바꾼다.
         lp = paths.DATA / "tracks" / slug / "log.json"
         ldata = runs.read_json(lp, {"items": []}) or {"items": []}
-        ldata.setdefault("items", []).append(entry)
+        items = [it for it in ldata.setdefault("items", []) if it.get("run_id") != self.run_id]
+        items.append(entry)
+        ldata["items"] = items
         runs.write_json(lp, ldata)
-        block = "\n".join([
-            f"### 실행 {self.run_id} — 단계 {stage}. {stage_name}", "",
-            "| 항목 | 내용 |", "|---|---|",
-            f"| 실행 id | {entry['run_id_cell']} |", f"| 단계 | {entry['stage_cell']} |",
-            f"| 답한 질문 | {_esc(answered_cell)} |", f"| 새 질문 | {_esc(new_cell)} |", f"| 온톨로지 변경 | {_esc(onto_cell)} |",
-            f"| 완료 조건 평가 | {_esc(comp_cell)} |", f"| 세부영역 반영 제안 | {_esc(arp_cell)} |", f"| 다음 실행 제안 | {_esc(next_cell)} |",
-        ])
         page = paths.DOCS / "tracks" / slug / "log.md"
-        if page.is_file():
-            meta, body = fm.read(page)
-            if "<!-- append-below -->" in body:
-                body = body.replace("<!-- append-below -->", "<!-- append-below -->\n\n" + block + "\n", 1)
-            elif ar.has_region(body, "track-log"):
-                cur = ar.get_region(body, "track-log") or ""
-                body = ar.replace_region(body, "track-log", block + ("\n\n" + cur if cur.strip() else ""))
-            else:
-                body = body.rstrip("\n") + "\n\n" + block + "\n"
+        page_rel = f"tracks/{slug}/log.md"
+        if page.is_file() and page_rel not in {self.page_rel(pg) for pg in self.pages.get("pages", [])}:
+            meta, body = fm.read(page)   # 본문(auto 영역 포함)은 그대로 두고 프런트매터의 updated·version 만 올린다(템플릿 규약)
             meta["updated"] = self.date
             meta["version"] = int(meta.get("version") or 0) + 1
             fm.write(page, meta, body)
-            self._changelog_item("갱신", f"docs/tracks/{slug}/log.md", f"트랙 로그 항목 추가(단계 {stage})")
+        self._changelog_item("갱신", f"docs/{page_rel}", f"트랙 로그 항목 추가(단계 {stage})")
+
+    # --- 세부영역 반영 제안의 반영 표시 ----------------------------------------------------------------
+    def _apply_area_reflections(self) -> None:
+        """트랙 실행이 쌓은 세부영역 반영 제안(data/area_reflection_proposals.json, status 제안)을, 그 영역 페이지를 게시하는
+        비트랙 실행에서 '반영'으로 표시하고 반영한 실행 id 를 적는다(사양서 6.3 절차 9 "반영은 다음 해당 영역 실행에서", 8.2 (5)).
+        agent_runner.py 가 같은 조건의 제안(대상 영역, status 제안, 이 실행보다 앞선 트랙 실행이 낸 것)을 이 실행의 리서치·1차 검증·
+        스토리텔러 입력에 넣었다. 대상 영역 페이지가 pages.json 에 없으면(주제 페이지만 쓴 실행 등) 제안으로 남겨 다음 해당 영역
+        실행에 다시 넣는다 [가정]."""
+        if self.track:
+            return
+        no = (self.target.get("target") or {}).get("area_no")
+        if not str(no).isdigit():
+            return
+        no = int(no)
+        data = runs.read_json(AREA_REFLECTIONS, None)
+        if not isinstance(data, dict):
+            return
+        mine = [it for it in data.get("items", []) if pending_reflection(it, no, self.run_id)]
+        if not mine:
+            return
+        area_rel = paths.area_rel_path(no)
+        touched = any(self.page_rel(pg) == area_rel and pg.get("status") != "deprecated" for pg in self.pages.get("pages", []))
+        name = self.src.area(no).title
+        if not touched:
+            self.notes.append(f"세부영역 반영 제안 {len(mine)}건({name})은 이번 실행이 그 영역 페이지를 갱신하지 않아 '제안'으로 남겼다")
+            return
+        for it in mine:
+            it["status"] = "반영"
+            it["reflected_run_id"] = self.run_id
+            it["reflected_date"] = self.date
+        runs.write_json(AREA_REFLECTIONS, data)
+        self.notes.append(f"세부영역 반영 제안 {len(mine)}건을 반영으로 표시했다({name}, 실행 {self.run_id})")
 
     # --- 5단계 본체 -------------------------------------------------------------------------
     def step5_apply(self) -> None:
@@ -1115,10 +1194,15 @@ class Publisher:
         self._apply_flow_matrix()
         if self.track:
             self._apply_track()
+        self._apply_area_reflections()
         self._apply_corrections()
         self._apply_changelog()
         self.write_daily_log_and_summary(final=False)
-        changed = refresh_all_auto_regions()
+        try:
+            changed = refresh_all_auto_regions(strict=True)   # 하나라도 렌더하지 못하면 반영하지 않는다(6.4)
+        except AutoRegionError as e:
+            self.restore("5단계 자동 갱신 영역 렌더 실패")
+            raise PublishError(f"5단계 반영 실패: {e}")
         write_mkdocs_yml()
         code, out = _run_check("protect_source.py")
         if code != 0:
@@ -1161,11 +1245,15 @@ class Publisher:
 
     # --- 7. 커밋 ---------------------------------------------------------------------------
     def _git_paths(self) -> tuple[Path, list[str]]:
+        """퍼블리셔가 스테이지하는 경로(저장소 루트 기준). 실행 폴더는 runs/<id>/ 와 runs/parked/<id>/ 둘 다 넣는다 — 보류 후
+        재투입(또는 보류)으로 폴더가 옮겨지면 이전 위치의 커밋된 파일 삭제도 같은 커밋에 들어가야 미커밋 변경이 남지 않는다."""
         repo = runs.repo_root(self.settings)
         rel = ROOT.resolve().relative_to(repo).as_posix()
         rel = "" if rel == "." else rel + "/"
-        items = [f"{rel}docs", f"{rel}data", f"{rel}config", f"{rel}mkdocs.yml", f"{rel}inbox",
-                 f"{rel}{self.rd.resolve().relative_to(ROOT.resolve()).as_posix()}"]
+        run_paths = []
+        for d in (runs.run_dir(self.run_id, self.settings), runs.parked_dir(self.run_id, self.settings)):
+            run_paths.append(f"{rel}{d.resolve().relative_to(ROOT.resolve()).as_posix()}")
+        items = [f"{rel}docs", f"{rel}data", f"{rel}config", f"{rel}mkdocs.yml", f"{rel}inbox", *run_paths]
         return repo, items
 
     def commit_name(self) -> str:
@@ -1205,43 +1293,69 @@ class Publisher:
             ident = ["-c", "user.name=ROP 연구 위키 퍼블리셔", "-c", "user.email=rop-wiki@localhost"]
         return subprocess.run(["git", "-C", str(repo), *ident, *args], capture_output=True, text=True)
 
-    def step7_commit(self, amend: bool = False) -> None:
+    def commit_check(self) -> tuple[bool, str]:
+        """커밋할 수 있는가(설정·옵션·저장소). (가능 여부, 못 하면 그 사유). 사유는 커밋 전에 메모로 남겨 요약·일일 로그에 들어가게 한다."""
         if self.args.no_commit or not self.settings.get("git_commit", True):
-            self.info("7단계 커밋 건너뜀(git_commit false 또는 --no-commit)")
-            return
-        repo, items = self._git_paths()
+            return False, "커밋 건너뜀(git_commit false 또는 --no-commit)"
+        repo, _ = self._git_paths()
         if not (repo / ".git").exists():
-            self.notes.append(f"git 저장소가 아니어서 커밋하지 않았다: {repo}")
-            self.info(f"7단계 커밋 건너뜀: git 저장소 아님 {repo}")
-            return
-        # 스냅숏은 runs/<run_id>/backup/ 에 있어 커밋에 들어가지 않도록 여기서 지운다. 이 뒤의 실패(git add·commit)는
-        # 빌드까지 성공한 상태이므로 파일을 반영된 채 두고 실패로 기록한다(RUN.md 4절) [가정]
+            return False, f"git 저장소가 아니어서 커밋하지 않았다: {repo}"
+        return True, ""
+
+    def commit_run(self, message: str, label: str) -> bool:
+        """실행 커밋 한 번(amend 하지 않는다) + 커밋 해시 기록 커밋. 커밋했으면 True.
+
+        1) 마지막 로그 줄("<label>: <제목>")을 쓴 뒤 스테이지·커밋한다. 그 뒤로는 runs/<run_id>/ 에 로그를 쓰지 않는다(sealed —
+           info() 는 표준 출력만). 실행이 쓴 로그·기록(log.md, timings.json, summary.json, 일일 로그)은 모두 이 커밋에 들어간다.
+        2) 커밋 해시는 그 커밋 안의 파일에 넣을 수 없으므로(내용이 해시를 결정한다) summary.json 의 committed·commit 두 필드만 고쳐
+           "run(<date>): 커밋 해시 기록 <run_id> → <hash>" 커밋을 바로 하나 더 만든다. 그래서 summary.json 의 commit 은 브랜치에 있는
+           실행 커밋을 가리키고, 다음 실행으로 넘어가는 미커밋 파일이 남지 않는다 [가정 — RUN.md 9절].
+        3) git_push 면 두 커밋을 푸시한다(결과는 표준 출력만).
+        커밋은 `git commit -- <경로>` 로 퍼블리셔 경로만 담는다(사용자가 다른 파일을 스테이지해 두었어도 섞지 않는다)."""
+        ok, why = self.commit_check()
+        if not ok:
+            self.info(f"{label} {why}")
+            return False
+        repo, items = self._git_paths()
+        # 스냅숏(runs/<run_id>/backup/)은 커밋에 들어가지 않도록 여기서 지운다. 이 뒤의 실패(git add·commit)는 빌드까지 성공한
+        # 상태이므로 파일을 반영된 채 두고 실패로 기록한다(RUN.md 4절) [가정]
         self.drop_backup()
-        existing = [i for i in items if (repo / i).exists()]
+        subject = message.splitlines()[0]
+        self.info(f"{label}: {subject} (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)")
+        existing = [i for i in items if (repo / i).exists() or (self._git(repo, "ls-files", "--", i).stdout or "").strip()]
         add = self._git(repo, "add", "-A", "--", *existing)
         if add.returncode != 0:
-            raise PublishError(f"7단계 git add 실패: {add.stderr[-800:]}")
-        diff = self._git(repo, "diff", "--cached", "--quiet")
-        if diff.returncode == 0 and not amend:
-            self.info("7단계 커밋: 변경 없음(스테이지 비어 있음)")
-            return
-        args = ["commit", "-q", "-m", self.commit_message()]
-        if amend:
-            args = ["commit", "-q", "--amend", "--no-edit"]
-        c = self._git(repo, *args)
+            raise PublishError(f"{label} git add 실패: {add.stderr[-800:]}")
+        # git commit -- <경로> 는 git 이 아는 파일이 하나도 없는 경로(빈 폴더 등)를 주면 실패하므로 그런 경로는 뺀다
+        known = [i for i in existing if (self._git(repo, "ls-files", "--", i).stdout or "").strip()
+                 or (self._git(repo, "diff", "--cached", "--name-only", "--", i).stdout or "").strip()]
+        if not known or self._git(repo, "diff", "--cached", "--quiet", "--", *known).returncode == 0:
+            self.info(f"{label}: 변경 없음(스테이지 비어 있음)")
+            return False
+        c = self._git(repo, "commit", "-q", "-m", message, "--", *known)
         if c.returncode != 0:
-            raise PublishError(f"7단계 git commit 실패: {(c.stderr or c.stdout)[-800:]}")
-        h = self._git(repo, "rev-parse", "--short", "HEAD")
-        self.commit_hash = (h.stdout or "").strip()
+            raise PublishError(f"{label} git commit 실패: {(c.stderr or c.stdout)[-800:]}")
+        self.sealed = True
         self.committed = True
-        self.info(f"7단계 커밋 {'수정(amend)' if amend else '완료'}: {self.commit_hash} — {self.commit_message().splitlines()[0]}")
+        self.commit_hash = (self._git(repo, "rev-parse", "--short", "HEAD").stdout or "").strip()
+        self.info(f"{label} 완료: {self.commit_hash} — {subject}")
+        # 커밋 해시 기록 커밋(summary.json 두 필드만)
+        rel_root = ROOT.resolve().relative_to(repo).as_posix()
+        summary_rel = ("" if rel_root == "." else rel_root + "/") + (self.rd / "summary.json").resolve().relative_to(ROOT.resolve()).as_posix()
+        runs.write_summary(self.rd, committed=True, commit=self.commit_hash)
+        self._git(repo, "add", "--", summary_rel)
+        c2 = self._git(repo, "commit", "-q", "-m", f"run({self.date}): 커밋 해시 기록 {self.run_id} → {self.commit_hash}", "--", summary_rel)
+        if c2.returncode != 0:
+            print(f"[publish] 경고: 커밋 해시 기록 커밋 실패 — {summary_rel} 이 미커밋으로 남았다: {(c2.stderr or c2.stdout)[-300:]}")
+        else:
+            print(f"[publish] 커밋 해시 기록: {summary_rel} commit={self.commit_hash}")
         if self.settings.get("git_push"):
-            p = self._git(repo, "push")
-            if p.returncode != 0:
-                self.notes.append(f"git push 실패: {(p.stderr or '')[-300:]}")
-                self.info("git push 실패(로그 참고)")
-            else:
-                self.info("git push 완료")
+            pr = self._git(repo, "push")
+            print(f"[publish] git push {'완료' if pr.returncode == 0 else '실패: ' + (pr.stderr or '')[-300:]}")
+        return True
+
+    def step7_commit(self) -> None:
+        self.commit_run(self.commit_message(), "7단계 커밋")
 
     # --- 8·9. 일일 로그·요약·알림 ------------------------------------------------------------------
     def _retries(self, prefix: str) -> tuple[int, list[str]]:
@@ -1263,9 +1377,9 @@ class Publisher:
             new_sources = sum(1 for s in self.research.get("sources", []) if s.get("id") not in self.existing_refs_before)
         r1, _ = self._retries("verification")
         r2, _ = self._retries("verification2")
-        timings = self.log.timings()
-        total = sum((v.get("seconds") or 0) for v in timings.values()) + (time.time() - self.t0)
+        total = self.total_seconds()
         prev = runs.read_summary(self.rd)
+        probe = runs.read_json(self.rd / "probe.json", {}) or {}
         # 보류 표시: 게시에 성공한 실행은 parked 를 False 로 확정한다(재투입된 실행이 select_target 의 연속 보류 횟수에 계속 세어지지 않도록).
         # 실행 폴더가 runs/parked/ 에 있으면(보류 상태) 그대로 True 다.
         parked = False if published else (bool(prev.get("parked")) or runs.is_parked(self.run_id, self.settings))
@@ -1276,11 +1390,15 @@ class Publisher:
             "pages_created": self.counts["create"], "pages_updated": self.counts["update"] + self.counts["deprecate"],
             "new_sources": new_sources, "parked": parked, "published": published,
             "committed": self.committed, "commit": self.commit_hash, "built": self.built,
+            "web_fetch_available": probe.get("web_fetch_available"), "web_fetch_override": probe.get("web_fetch_override") or None,
             "budget_used": used, "budget": self.target.get("budget"), "duration_sec": round(total, 1),
             "first_retries": r1, "second_retries": r2, "end_state": end_state,
             "changelog_entry": (self.pages or {}).get("changelog_entry"), "notes": self.notes,
             "counts": self.counts, "updated_at": runs.now_str(self.settings),
         }
+        if self.mode == "log_only" and not self.committed and prev.get("commit"):
+            # 로그만 다시 쓰는 호출이 아직 커밋하지 않았으면 이전 커밋 기록을 유지한다(커밋하면 commit_run 이 새 해시로 바꾼다)
+            data["committed"], data["commit"] = bool(prev.get("committed")), prev.get("commit")
         if parked and prev.get("park_reason"):
             data["park_reason"] = prev["park_reason"]
         # 재투입(runs/parked/ → runs/)된 실행은 이전 보류 사유를 별도 키로 이어받는다(lib/runs.py unpark)
@@ -1312,17 +1430,18 @@ class Publisher:
         timings = self.log.timings()
         rows = []
         for name in runs.STEP_NAMES:
-            if name == "퍼블리셔":
+            v = timings.get(name)
+            if name == "퍼블리셔" and self.mode == "publish":
                 res = "성공" if end_state.startswith("게시") else ("실패" if "퍼블리셔" in end_state else "건너뜀")
                 rows.append(f"| 퍼블리셔 | {res} | {runs.fmt_duration(time.time() - self.t0)} | {_esc('; '.join(self.notes[-3:]) or '—')} |")
                 continue
-            v = timings.get(name)
+            if name in runs.OPTIONAL_STEPS and not v:
+                continue   # 주간 정리에만 있는 단계(링크·출처 점검)는 실행되지 않은 날 행을 두지 않는다
             if v:
                 rows.append(f"| {name} | {v.get('result')} | {runs.fmt_duration(v.get('seconds'))} | {_esc(v.get('note') or '—')} |")
             else:
                 rows.append(f"| {name} | 건너뜀 | — | 실행되지 않음 |")
-        total = sum((v.get("seconds") or 0) for v in timings.values()) + (time.time() - self.t0)
-        rows.append(f"| 합계 | | {runs.fmt_duration(total)} | |")
+        rows.append(f"| 합계 | | {runs.fmt_duration(self.total_seconds())} | |")
         r1, reasons1 = self._retries("verification")
         r2, reasons2 = self._retries("verification2")
         tc = (self.v2 or {}).get("track_checks") or (self.v1 or {}).get("track_checks")
@@ -1355,7 +1474,8 @@ class Publisher:
         elif prev.get("resumed_from_park_reason") or prev.get("park_reason"):
             park_lines.append(f"- 재투입: 이전에 보류됐던 실행을 runs/parked/ 에서 되돌려 이어갔다 — 이전 보류 사유: {prev.get('resumed_from_park_reason') or prev.get('park_reason')}")
         if self.target.get("excluded_areas"):
-            park_lines.append("- 3회 연속 보류로 대상 선정에서 제외한 영역: " + ", ".join(self.src.area(n).title for n in self.target["excluded_areas"]) + " (열린 질문에 사용자 검토 요청 등록)")
+            n_parks = int(runs.load_rotation().get("exclude_after_consecutive_parks") or 3)
+            park_lines.append(f"- {n_parks}회 연속 보류로 대상 선정에서 제외한 영역: " + ", ".join(self.src.area(n).title for n in self.target["excluded_areas"]) + " (열린 질문에 사용자 검토 요청 등록)")
         if "중단" in end_state:
             park_lines.append(f"- 중단: {end_state}")
         park = "\n".join(park_lines) if park_lines else "없음"
@@ -1411,8 +1531,24 @@ class Publisher:
             m = re.search(r"\[check_links\] 오류 (\d+)건", lc.read_text(encoding="utf-8"))
             nxt.append(f"- 내부 링크·각주 검사(runs/{self.run_id}/link_check.txt): " + (f"오류 {m.group(1)}건" if m else "통과"))
         probe = runs.read_json(self.rd / "probe.json", {}) or {}
-        if probe and not probe.get("web_fetch_available", True):
-            nxt.append("- 환경: web_fetch_available: false (페이지 열람 차단, 모든 출처 원문 미열람·신뢰도 medium 상한)")
+        if probe and probe.get("web_search_available") is None:
+            nxt.append("- 환경: 웹 도구 점검 생략(--skip-probe, 드라이런) — 웹 검색 도구는 점검하지 않았다. 정규 실행에서는 쓰지 않는다")
+        if probe and probe.get("web_fetch_available") is False:
+            if probe.get("web_fetch_override"):
+                nxt.append(f"- 환경: {FETCH_OVERRIDE_NOTE} — web_fetch_available: false, override: {probe.get('web_fetch_override_source') or '사용자'}. "
+                           "모든 출처 원문 미열람·신뢰도 medium 상한(사양서 0장 web_tools_required 의 예외로 사용자가 허용)")
+            else:
+                nxt.append("- 환경: web_fetch_available: false (페이지 열람 차단, 모든 출처 원문 미열람·신뢰도 medium 상한)")
+        # 세부영역 반영 제안(트랙 → 해당 영역 실행) 가운데 아직 반영되지 않은 것
+        arp = runs.read_json(AREA_REFLECTIONS, {}) or {}
+        pend = [it for it in (arp.get("items") or []) if it.get("status") == "제안"]
+        if pend:
+            by_area: dict = {}
+            for it in pend:
+                by_area[it.get("area_no")] = by_area.get(it.get("area_no"), 0) + 1
+            nxt.append("- 미반영 세부영역 반영 제안: " + ", ".join(
+                f"{self.src.area(int(a)).title if str(a).isdigit() else a} {c}건" for a, c in sorted(by_area.items(), key=lambda x: (0, int(x[0])) if str(x[0]).isdigit() else (1, str(x[0]))))
+                + " (다음 해당 영역 실행의 입력에 들어간다)")
         if self.notes:
             nxt.append("- 퍼블리셔 메모: " + " / ".join(_esc(n) for n in self.notes[:6]))
         next_notes = "\n".join(nxt) if nxt else "없음"
@@ -1473,9 +1609,13 @@ class Publisher:
             self.info(f"8단계 일일 로그 저장: docs/logs/daily/{self.date}.md · summary.json (종료 상태: {end_state})")
 
     def step8_daily_log(self) -> bool:
-        """확정 일일 로그·summary.json 을 쓰고 auto 영역·mkdocs.yml 을 다시 만든 뒤 재빌드하고 커밋을 수정(amend)한다.
-        재빌드가 실패하면 확정 로그 변경분(docs, mkdocs.yml)만 8단계 직전 스냅숏으로 되돌리고 amend 를 건너뛴다
-        (빌드가 깨진 상태를 커밋에 넣지 않는다, 6.4 "빌드 실패 시 롤백"). 5~7단계의 반영·커밋은 유지한다."""
+        """확정 일일 로그·summary.json 을 쓰고 auto 영역·mkdocs.yml 을 다시 만든 뒤 재빌드한다. 7단계 커밋 "전에" 실행해 확정 로그가
+        실행 커밋 하나에 들어가게 한다(커밋 수정 amend 를 쓰지 않는다) [가정 — RUN.md 9절].
+        재빌드(또는 auto 영역 렌더)가 실패하면 확정 로그 변경분(docs, mkdocs.yml)만 6단계 빌드 시점으로 되돌리고(빌드가 깨진 상태를
+        커밋하지 않는다, 6.4 "빌드 실패 시 롤백") 5단계의 예비 로그로 커밋한다. 5단계의 반영은 유지한다."""
+        ok_commit, why = self.commit_check()
+        if not ok_commit and why not in self.notes:
+            self.notes.append(why)
         final_backup = self.rd / "backup-final"
         if final_backup.exists():
             shutil.rmtree(final_backup)
@@ -1488,30 +1628,34 @@ class Publisher:
                 dst.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(src, dst)
         self.write_daily_log_and_summary(final=True, end_state="게시 완료", published=True)
-        refresh_all_auto_regions()
-        write_mkdocs_yml()
-        ok = True
-        if not self.args.no_build:
-            cmd = self._build_cmd()
+        ok, out, why_fail = True, "", ""
+        try:
+            refresh_all_auto_regions(strict=True)
+            write_mkdocs_yml()
+        except AutoRegionError as e:
+            ok, out, why_fail = False, str(e), "확정 로그 반영 뒤 자동 갱신 영역 렌더 실패"
+        cmd = self._build_cmd()
+        if ok and not self.args.no_build:
             p = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT))
             out = (p.stdout or "") + (p.stderr or "")
             if p.returncode != 0:
-                ok = False
-                (self.rd / "build-final.log").write_text(out, encoding="utf-8")
-                self._copy_back(final_backup, FINAL_SNAPSHOT_ITEMS)
-                note = ("확정 로그 재빌드 실패·되돌림: 일일 로그·자동 영역·mkdocs.yml 을 6단계 빌드 시점으로 되돌리고 커밋 수정(amend)을 건너뛰었다. "
-                        f"5~7단계의 반영과 커밋은 유지한다. 출력은 runs/{self.run_id}/build-final.log. 원인을 고친 뒤 "
-                        f"'bash pipeline/run_daily.sh --resume {self.run_id} --step log' 로 확정 로그를 다시 쓴다")
-                self.notes.append(note)
-                self.info("8단계: " + note)
-                runs.write_summary(self.rd, final_log_rebuild_failed=True, notes=self.notes)
+                ok, why_fail = False, "확정 로그 재빌드 실패"
+        if ok:
+            if not self.args.no_build:
+                self.info("8단계 확정 로그 반영 뒤 사이트 재빌드 성공")
+        else:
+            (self.rd / "build-final.log").write_text(out, encoding="utf-8")
+            self._copy_back(final_backup, FINAL_SNAPSHOT_ITEMS)
+            note = (f"{why_fail}·되돌림: 일일 로그·자동 영역·mkdocs.yml 을 6단계 빌드 시점(예비 로그)으로 되돌리고 그대로 커밋한다. "
+                    f"5단계의 반영은 유지한다. 출력은 runs/{self.run_id}/build-final.log. 원인을 고친 뒤 "
+                    f"'bash pipeline/run_daily.sh --resume {self.run_id} --step log' 로 확정 로그를 다시 쓴다")
+            self.notes.append(note)
+            self.info("8단계: " + note)
+            runs.write_summary(self.rd, final_log_rebuild_failed=True, notes=self.notes)
+            if not self.args.no_build:
                 p2 = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(ROOT))
                 self.info(f"8단계: 되돌린 상태의 재빌드 {'성공' if p2.returncode == 0 else '실패(exit ' + str(p2.returncode) + ')'}")
-            else:
-                self.info("8단계 확정 로그 반영 뒤 사이트 재빌드 성공")
         shutil.rmtree(final_backup, ignore_errors=True)
-        if ok and self.committed:
-            self.step7_commit(amend=True)
         return ok
 
     def step9_notify(self) -> None:
@@ -1527,7 +1671,11 @@ class Publisher:
             self.step1_schema()
             self.step1b_verdicts()
             if self.args.check_only:
-                self.info("--check-only: 1단계(스키마·판정 확인)까지 확인했다(반영하지 않음)")
+                errs = self.check_only_anchor_errors()
+                if errs:
+                    raise PublishError("--check-only: pages.json 링크 필드의 제목 앵커 대조 실패(4단계·6단계에서 실패할 링크):\n"
+                                       + "\n".join(f"  - {e}" for e in errs[:40]))
+                self.info("--check-only: 1단계(스키마·판정 확인)와 pages.json 링크 필드 앵커 대조까지 확인했다(반영하지 않음)")
                 return 0
             self.step2_frontmatter()
             self.step3_protect()
@@ -1539,10 +1687,14 @@ class Publisher:
                 return 0
             self.step5_apply()
             self.step6_build()
-            self.step7_commit()
-            self.step8_daily_log()
+            final_ok = self.step8_daily_log()          # 확정 일일 로그·요약(커밋 전)
+            done = (f"퍼블리셔 완료: 생성 {self.counts['create']}/갱신 {self.counts['update'] + self.counts['deprecate']} · "
+                    f"{runs.fmt_duration(time.time() - self.t0)}")
+            self.info(done)
+            # 퍼블리셔 단계 기록(timings.json·log.md)도 실행 커밋에 들어간다
+            self.record_publisher_step("성공", "게시 완료" if final_ok else "게시 완료 · 확정 로그 재빌드 실패(예비 로그로 커밋, --step log 필요)")
+            self.step7_commit()             # 한 번만 커밋(amend 없음) + 커밋 해시 기록 커밋. 이후 로그는 표준 출력만
             self.step9_notify()
-            self.info(f"퍼블리셔 완료: 생성 {self.counts['create']}/갱신 {self.counts['update'] + self.counts['deprecate']} · {runs.fmt_duration(time.time() - self.t0)}")
             return 0
         except Exception as e:  # PublishError 와 예기치 않은 오류 모두: 부분 반영을 남기지 않는다
             if not isinstance(e, PublishError):
@@ -1550,13 +1702,18 @@ class Publisher:
                 self.info(f"실패(예기치 않은 오류 {type(e).__name__}): {e}\n{traceback.format_exc()[-1500:]}")
             else:
                 self.info(f"실패: {e}")
+            if self.committed:   # 실행 커밋 뒤의 오류(예: 알림)는 게시를 되돌리지 않는다
+                print(f"[publish] 경고: 커밋 뒤 오류 — 게시·커밋은 유지한다: {e}")
+                return 0
             # 6.4 "하나라도 실패하면 반영하지 않는다": 스냅숏 이후·커밋 전의 실패(5단계 안의 실패 포함)는 스냅숏으로 되돌린다.
             # 3·4·6단계는 자기 자리에서 restore 를 이미 불렀고(멱등), 5단계 안의 실패는 여기서 되돌린다.
-            if self.snapshotted and not self.committed and not self.args.dry_run:
+            if self.snapshotted and not self.args.dry_run:
                 self.restore(f"퍼블리셔 실패({_short(str(e).splitlines()[0] if str(e) else type(e).__name__, 80)})")
             if not (self.args.check_only or self.args.dry_run):
+                first = _short(str(e).splitlines()[0] if str(e) else type(e).__name__, 120)
                 try:
-                    self.write_daily_log_and_summary(final=True, end_state=f"중단(퍼블리셔: {_short(str(e).splitlines()[0], 120)})", published=False)
+                    self.record_publisher_step("실패", first)
+                    self.write_daily_log_and_summary(final=True, end_state=f"중단(퍼블리셔: {first})", published=False)
                     refresh_all_auto_regions()
                     write_mkdocs_yml()
                 except Exception as e2:  # 로그 기록 실패는 원래 오류를 가리지 않는다
@@ -1565,10 +1722,18 @@ class Publisher:
             return 1
 
     def log_only(self) -> int:
+        """보류·중단된 실행(또는 --step log)의 일일 로그·summary.json 을 쓰고 한 번 커밋한다(퍼블리셔 7단계와 같은 commit_run:
+        커밋 뒤에는 실행 폴더에 로그를 쓰지 않고, 커밋 해시는 기록 커밋으로 summary.json 에 남긴다)."""
         prev = runs.read_summary(self.rd)
         end_state = prev.get("end_state") or ("보류(runs/parked/)" if prev.get("parked") else "중단")
+        ok_commit, why = self.commit_check()
+        if not ok_commit and why not in self.notes:
+            self.notes.append(why)
         self.write_daily_log_and_summary(final=True, end_state=end_state, published=bool(prev.get("published")))
         refresh_all_auto_regions()
+        from lib.render import LAST_FAILURES
+        if LAST_FAILURES:
+            self.info("--log-only: 자동 갱신 영역 일부를 렌더하지 못해 그대로 두었다: " + "; ".join(LAST_FAILURES[:5]))
         write_mkdocs_yml()
         if not self.args.no_build:
             cmd = self._build_cmd()
@@ -1577,30 +1742,41 @@ class Publisher:
                 self.info("--log-only: 사이트 빌드 실패(로그 페이지 반영은 유지): " + ((p.stdout or "") + (p.stderr or ""))[-300:])
             else:
                 self.built = True
-        if not self.args.no_commit and self.settings.get("git_commit", True):
-            repo, items = self._git_paths()
-            if (repo / ".git").exists():
-                existing = [i for i in items if (repo / i).exists()]
-                self._git(repo, "add", "-A", "--", *existing)
-                if self._git(repo, "diff", "--cached", "--quiet").returncode != 0:
-                    # 보류·중단 실행의 커밋도 6.4 의 형식("run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n")을 지키고
-                    # 종료 상태를 괄호로 덧붙인다. 사양서는 보류·중단 실행의 커밋 형식을 정하지 않았다 [가정 — RUN.md 9절]
-                    try:
-                        n_c, n_u = int(prev.get("pages_created") or 0), int(prev.get("pages_updated") or 0)
-                    except (TypeError, ValueError):
-                        n_c, n_u = 0, 0
-                    state = str(end_state).split("(")[0].strip() or "중단"
-                    msg = self.commit_subject(n_c, n_u, state)
-                    body = self.commit_body()
-                    if body:
-                        msg += f"\n\n{body}"
-                    c = self._git(repo, "commit", "-q", "-m", msg)
-                    if c.returncode == 0:
-                        self.committed = True
-                        self.commit_hash = (self._git(repo, "rev-parse", "--short", "HEAD").stdout or "").strip()
-                        self.info(f"로그 커밋: {self.commit_hash} — {msg.splitlines()[0]}")
-                        runs.write_summary(self.rd, committed=True, commit=self.commit_hash)
+                runs.write_summary(self.rd, built=True)
+        # 보류·중단 실행의 커밋도 6.4 의 형식("run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n")을 지키고
+        # 종료 상태를 괄호로 덧붙인다. 사양서는 보류·중단 실행의 커밋 형식을 정하지 않았다 [가정 — RUN.md 9절]
+        try:
+            n_c, n_u = int(prev.get("pages_created") or 0), int(prev.get("pages_updated") or 0)
+        except (TypeError, ValueError):
+            n_c, n_u = 0, 0
+        state = str(end_state).split("(")[0].strip() or "중단"
+        msg = self.commit_subject(n_c, n_u, state)
+        body = self.commit_body()
+        if body:
+            msg += f"\n\n{body}"
+        try:
+            self.commit_run(msg, "로그 커밋")
+        except PublishError as e:
+            print(f"[publish] --log-only 커밋 실패: {e}")
         return 0
+
+
+def _insert_after(meta: dict, after: str, key: str, value) -> dict:
+    """meta 의 after 키 바로 뒤에 key 를 넣은 새 dict(프런트매터 필드 순서 유지). after 가 없으면 끝에 넣는다."""
+    out: dict = {}
+    for k, v in meta.items():
+        out[k] = v
+        if k == after:
+            out[key] = value
+    out.setdefault(key, value)
+    return out
+
+
+def pending_reflection(item: dict, area_no: int, run_id: str) -> bool:
+    """이 실행이 반영할 세부영역 반영 제안인가: 대상 영역의 status 제안 항목 가운데 이 실행보다 앞선 실행이 낸 것.
+    agent_runner.py(입력)와 퍼블리셔(반영 표시)가 같은 기준을 쓴다."""
+    return (item.get("status") == "제안" and str(item.get("area_no")) == str(area_no)
+            and str(item.get("run_id") or "") < str(run_id))
 
 
 def primary_page(pages: dict) -> str:
@@ -1638,7 +1814,7 @@ def main(argv=None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="1~4단계만 실행하고 docs 를 되돌린다")
     ap.add_argument("--log-only", action="store_true", help="보류·중단된 실행의 일일 로그·summary.json 만 쓴다")
     ap.add_argument("--no-build", action="store_true", help="6단계 사이트 빌드(와 8단계 재빌드)를 건너뛴다")
-    ap.add_argument("--no-commit", action="store_true", help="7단계 커밋(과 8단계 amend)을 건너뛴다")
+    ap.add_argument("--no-commit", action="store_true", help="7단계 커밋(과 커밋 해시 기록 커밋)을 건너뛴다")
     args = ap.parse_args(argv)
     try:
         settings = runs.load_settings()

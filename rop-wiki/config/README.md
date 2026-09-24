@@ -6,7 +6,7 @@
 |---|---|---|---|
 | `settings.yaml` | 위키 이름, 실행 방식, 하루 예산, 에이전트 호출 옵션, 빌드·커밋 옵션 | `pipeline/run_daily.*`, `pipeline/select_target.*`, `pipeline/agent_runner.py`, `pipeline/publish.*` | 운영자(드물게) |
 | `rotation.yaml` | 그날 어떤 실행 유형으로 어느 영역을 다룰지 정하는 규칙 | `pipeline/select_target.*` | 운영자(드물게) |
-| `priority.yaml` | 순환보다 먼저 다룰 영역·주제·질문, 트랙 백로그에 넣을 질문 | `pipeline/select_target.*`, 리서치·검증 에이전트(입력), 퍼블리셔(트랙 백로그) | 사용자(수시) |
+| `priority.yaml` | 순환보다 먼저 다룰 영역·주제·질문, 트랙 백로그에 넣을 질문 | `pipeline/select_target.*`(트랙 백로그 등록 포함), 리서치·검증 에이전트(입력), 퍼블리셔(트랙 백로그 보완 등록) | 사용자(수시) |
 | `tracks/<slug>.yaml` | 중점 연구 트랙의 정의(단계, 관련 영역, 트랙 예산) | `pipeline/select_target.*`, 리서치 에이전트(입력), 퍼블리셔(`pipeline/lib/render.py`) | 트랙 담당(추가·종료 시), 퍼블리셔(단계 전환 시 `current_stage`·`status`·선택 키만) |
 
 공통 규칙은 다음과 같다.
@@ -45,7 +45,7 @@
 | `daily_budget.track_max_sources_per_run` | `20` | 트랙 실행의 출처 상한 | 리서치 컨텍스트(트랙) |
 | `daily_budget.track_max_search_queries` | `40` | 트랙 실행의 검색 횟수 상한 | 리서치·검증 컨텍스트(트랙) |
 | `notify` | `"none"` | 알림 방식(none / slack_webhook / email) | 퍼블리셔 9단계 |
-| `web_tools_required` | `true` | 웹 검색·페이지 열람 도구가 없으면 실행을 중단하고 로그에 남긴다. 이 파이프라인은 웹 검색(WebSearch) 점검 실패에 이 값을 그대로 적용하고, 페이지 열람(WebFetch)만 실패한 경우는 구축자 추가 항목 `web_fetch_required` 에 따른다(기본값은 진행) [가정 — 사용자 결정 항목] | `run_daily.*` 준비 단계 |
+| `web_tools_required` | `true` | 웹 검색·페이지 열람 도구가 없으면 실행을 중단하고 로그에 남긴다. 이 파이프라인은 원문대로 적용한다: 준비 단계에서 웹 검색(WebSearch) 또는 페이지 열람(WebFetch) 점검이 실패하면 즉시 중단·로그(7.3). 예외는 페이지 열람만 막힌 환경의 사용자 override 하나다(`run_daily.sh --allow-no-fetch`, 환경변수 `ROP_ALLOW_NO_FETCH=1`, 또는 `web_fetch_required: false`) — 이때는 원문 미열람 모드로 진행하고 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다 | `run_daily.*` 준비 단계 |
 
 ### 구축자 추가 항목
 
@@ -53,7 +53,7 @@
 |---|---|---|---|
 | `repo_root` | `".."` | git 저장소 루트. 위키 루트 기준 상대 경로. 위키가 ai-hub 저장소의 하위 폴더라는 전제다 [가정] | 퍼블리셔(커밋·푸시·롤백) |
 | `claude_bin` | `"claude"` | Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다 | `agent_runner.py` |
-| `model` | `""` | 에이전트 모델 id. 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
+| `model` | `"claude-opus-5-5"` | 에이전트 모델 id. `agent_runner.py` 가 `claude -p --model <id>` 로 넘긴다(웹 도구 점검 호출 포함). 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
 | `max_turns.researcher` / `.verifier` / `.storyteller` | `60` / `40` / `8` | 에이전트별 최대 턴 수(`--max-turns`). 넘으면 호출을 끊고 7.3 의 스키마 불일치와 같이 1회 재실행 뒤 보류한다 [가정: 사양서 7.3 은 턴 수·시간 초과의 처리를 정하지 않는다] | `agent_runner.py` |
 | `agent_timeout_sec` | `1800` | 에이전트 1회 호출의 시간 상한(초). 넘으면 강제 종료하고 `max_turns` 초과와 같이 처리한다(1회 재실행 뒤 보류) [가정: 위와 같음] | `agent_runner.py` |
 | `allowed_tools.researcher` / `.verifier` / `.storyteller` | `[WebSearch, WebFetch]` / `[WebSearch, WebFetch]` / `[]` | 에이전트별 허용 도구(`--allowedTools`). 빈 목록은 도구 없이 실행한다는 뜻이다. 파일 읽기·쓰기 도구는 어느 에이전트에도 주지 않는다 | `agent_runner.py` |
@@ -61,8 +61,8 @@
 | `git_commit` | `true` | 퍼블리셔 7단계 커밋 여부. 메시지 형식은 `run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n` | 퍼블리셔 |
 | `git_push` | `false` | 커밋 후 원격 푸시 여부 | 퍼블리셔 |
 | `timezone` | `"Asia/Seoul"` | `run_time`, 실행 id(`<DATE>-<NN>`), 페이지의 `created`/`updated`/접근일 계산에 쓰는 시간대 | 모든 스크립트 |
-| `web_fetch_probe_url` | `"https://ref.gs1.org/epcis/"` | 준비 단계의 페이지 열람 점검용 URL(참고문헌 ref-001~010 가운데 ref-003 GS1 EPCIS). 열리지 않으면 `web_fetch_required` 에 따른다. 웹 검색까지 못 쓰면 `web_tools_required` 에 따라 중단한다 | `run_daily.*` 준비 단계 |
-| `web_fetch_required` | `false` | 페이지 열람(WebFetch) 점검이 실패했을 때 즉시 중단·로그할지. 기본값 `false` 는 실행을 멈추지 않고 실행 컨텍스트에 `web_fetch_available: false` 를 표시한 채 진행한다(에이전트 실행 규약의 환경 알림과 같은 동작. 에이전트는 출처를 검색 결과로만 확인하고 "원문 미열람"을 표시하며 신뢰도 `high` 를 주지 않는다). 이는 0장 주석과 7.3 의 "웹 도구 없음 → 즉시 중단"을 "웹 검색 도구 없음"으로 좁힌 것이며, 11장 완료 보고의 사용자 결정 항목에 기본값과 대안을 함께 올린다. 사양서 원문대로 열람 실패도 중단하려면 `true` 로 바꾼다 [가정 — 사용자 결정 항목. 기본값 `false`: 진행 / 대안 `true`: 사양서 원문대로 중단] | `run_daily.*` 준비 단계 |
+| `web_fetch_probe_url` | `"https://ref.gs1.org/epcis/"` | 준비 단계의 페이지 열람 점검용 URL(참고문헌 ref-001~010 가운데 ref-003 GS1 EPCIS). `claude -p --tools WebFetch` 로 한 번 연다. 열리지 않으면 `web_tools_required` 대로 중단한다(사용자 override 가 있으면 원문 미열람 모드로 진행) | `run_daily.*` 준비 단계 |
+| `web_fetch_required` | `true` | 페이지 열람(WebFetch) 점검이 실패했을 때 즉시 중단·로그할지. 기본값 `true` 는 0장 `web_tools_required` 와 7.3 원문대로 중단한다. 페이지 열람이 네트워크 정책으로 막힌 제한 환경에서는 실행마다 `bash pipeline/run_daily.sh --allow-no-fetch`(또는 `ROP_ALLOW_NO_FETCH=1`)로 허용하거나, 이 값을 `false` 로 두어 계속 허용한다(사용자 override). override 로 진행하면 실행 컨텍스트에 `web_fetch_available: false` 를 표시하고(에이전트는 출처를 검색 결과로만 확인하고 모든 출처에 "원문 미열람"을 표시하며 신뢰도 `high` 를 주지 않는다), `runs/<id>/log.md`·`probe.json`(`web_fetch_override`, `web_fetch_override_source`)·일일 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다. 웹 검색 도구가 없으면 override 와 관계없이 중단한다 [가정: override 수단 — 사양서는 예외를 정하지 않는다] | `run_daily.*` 준비 단계 |
 | `runs_dir` | `"runs"` | 실행 산출물 폴더. `runs/<DATE>-<NN>/` 와 보류 산출물 `runs/parked/` | 모든 스크립트 |
 | `data_dir` | `"data"` | 퍼블리셔가 자동 갱신 영역을 다시 쓸 때 원천으로 삼는 JSON 폴더 | 퍼블리셔, `select_target.*` |
 
@@ -94,7 +94,7 @@
 | `corrections.include_update` | `true` | `inbox/corrections.md` 에 `open` 요청이 걸린 페이지가 있으면 그 페이지의 갱신을 당일 작업에 포함한다. 대상 선정 자체는 바꾸지 않고 `daily_budget.page_updates` 안에서 처리한다(넘치면 다음 해당 실행으로). 사양서 7.1 은 이 문장을 2주기 항목에 두지만 정정 요청은 1주기·우선 지정 실행 중에도 들어오므로 실행 주기와 관계없이 적용한다(`docs/corrections.md` 의 처리 흐름과 같다) [가정] |
 | `corrections.applies_to` | `[area_deep_dive, topic, update, monthly_recheck]` | 당일 실행 유형이 이 목록에 있을 때 갱신 작업을 붙인다. `weekly_review` 는 신규 조사를 하지 않으므로(7.1), `track` 은 트랙 페이지만 쓰므로 뺀다. 그런 날에도 리서치 에이전트는 파일 전문을 입력으로 읽고, 트랙 페이지에 걸린 요청은 트랙 실행의 1차 검증 항목 11 로 다룬다 [가정] |
 | `scoring.weights.*` | 모두 `1` | 점수 = 마지막 갱신 경과일 + 열린 질문 수 + 비어 있는 매트릭스 칸 수 + 우선 가중치 − 최근 감점. 사양서 7.1 이 단순 합이므로 가중치는 모두 1 이다 |
-| `scoring.recent_penalty_days` | `7` | 최근 7일 안에(오늘 제외) 대상이었던 영역이면 감점한다. 트랙 실행은 세부영역 페이지를 갱신하지 않으므로 세지 않는다 [가정] |
+| `scoring.recent_penalty_days` | `7` | 최근 7일 안에(오늘 제외) 다룬 영역이면 감점한다. '다룬 것'은 게시까지 간 실행만이다(보류·중단된 실행은 세지 않는다). 트랙 실행은 세부영역 페이지를 갱신하지 않으므로 세지 않는다 [가정] |
 | `scoring.recent_penalty` | `5` | 감점 크기. 한 번만 뺀다 [가정] |
 | `weekly_review_every` | `7` | 매 7번째 실행은 주간 정리다. 실행 번호는 `runs/<DATE>-<NN>/` 과 `runs/parked/<DATE>-<NN>/` 에 있는 실행 id 의 수로 센다(보류로 옮겨진 실행도 세고, 같은 id 는 한 번만 센다. `runs/parked/` 폴더 자체는 세지 않는다) [가정] |
 | `monthly_recheck` | `"first run of month"` | 매월 첫 실행은 월간 재검증이다 |
@@ -105,9 +105,9 @@
 | `priority.overrides_rotation` | `true` | `priority.yaml` 항목은 순환보다 우선한다 |
 | `priority.pick` | `"highest weight, then file order"` | 우선 항목(`areas`·`topics`·`questions`)이 여럿이면 `weight` 가 큰 것(`questions` 는 `question_weight`), 같으면 파일에 적힌 순서(`areas` → `topics` → `questions` 키 순, 키 안에서는 항목 순) [가정] |
 | `priority.run_type` | (문자열) | `areas`·`questions` 항목은 그 영역 페이지가 `seed` 면 `area_deep_dive`, 아니면 `topic`(`questions` 가 `topic` 이면 질문 문장이 주제 제목). `topics` 항목은 언제나 `topic` [가정] |
-| `priority.skip_if_targeted_within_days` | `7` | 최근 7일 안에 이미 다룬 우선 항목은 건너뛴다(`questions` 는 그 질문이 조사 질문에 포함된 실행이 있었으면 다룬 것). 항목을 지우지 않아도 같은 항목만 매일 반복되지 않게 한다 [가정] |
+| `priority.skip_if_targeted_within_days` | `7` | 최근 7일 안에 이미 다룬 우선 항목은 건너뛴다(`questions` 는 그 질문이 조사 질문에 포함된 실행이 있었으면 다룬 것). '다룬 것'은 게시까지 간 실행만이다(보류·중단된 실행은 세지 않는다). 연속 보류로 제외됐다가 `areas` 지정으로 제외가 풀린 영역은 이 건너뛰기를 면제해 다음 실행에서 바로 고른다. 항목을 지우지 않아도 같은 항목만 매일 반복되지 않게 한다 [가정] |
 | `priority.question_weight` | `3` | `questions` 항목의 가중치(항목에 `weight` 필드가 없으므로 이 값을 쓴다). `questions` 항목은 `areas` 와 같이 `area_no` 영역을 순환보다 먼저 대상으로 올리고(7.1), 이 값은 `pick` 의 비교와 2주기 점수의 우선 가중치 항(항목당 3)에 쓴다 [가정: 가중치 크기] |
-| `exclude_after_consecutive_parks` | `3` | 같은 영역이 3회 연속 보류되면 대상 선정에서 제외하고 사용자 검토 요청을 열린 질문에 올린다(7.3). `priority.yaml` 의 `areas` 에 다시 지정하면 제외가 풀린다 [가정] |
+| `exclude_after_consecutive_parks` | `3` | 같은 영역이 3회 연속 보류되면 대상 선정에서 제외하고 사용자 검토 요청을 열린 질문에 올린다(7.3). `priority.yaml` 의 `areas` 에 다시 지정하면 제외가 풀리고, 다음 실행에서 바로 대상이 된다(7일 건너뛰기 면제). 폐기 표시(`runs/parked/<id>/DISCARDED`)한 보류도 연속 횟수에 센다 [가정] |
 | `tie_break` | `"lowest area number"` | 점수가 같으면 번호가 낮은 영역 |
 
 ### 점수 항의 계산 근거 [가정: 해석]
@@ -118,7 +118,7 @@
 | 열린 질문 수 | `data/open_questions.json` | 상태가 열림·조사 중이고 관련 영역에 그 영역이 포함된 항목 수 |
 | 비어 있는 매트릭스 칸 수 | `data/flow_matrix.json` | 42칸(입고 → 적치 → 보충 → 피킹 → 포장 → 출하 → 반품 × 시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과) 가운데 그 영역의 페이지 링크가 없는 칸 수 |
 | 우선 가중치 | `config/priority.yaml` | `areas[].weight` + `topics[].weight`(같은 `area_no`) + `questions` 항목 수 × `priority.question_weight`. 우선 항목은 보통 `priority` 단계에서 먼저 선정되므로, 이 항은 `skip_if_targeted_within_days` 로 건너뛴 항목이 2주기 점수에 남기는 보조 가중치다 |
-| 최근 감점 | `runs/*/target.json` | 최근 `recent_penalty_days` 일 안의 비트랙 실행 대상이면 `recent_penalty` 를 한 번 뺀다 |
+| 최근 감점 | `runs/*/target.json`·`summary.json` | 최근 `recent_penalty_days` 일 안에 게시까지 간 비트랙 실행의 대상이면 `recent_penalty` 를 한 번 뺀다(보류·중단된 실행은 세지 않는다) |
 
 ## `priority.yaml` — 사용자 우선순위
 
@@ -129,7 +129,7 @@
 | `areas` | `area_no`, `weight`, `reason` | 세부영역을 먼저 다루게 한다. `weight` 는 선정 점수에 더하는 가중치, `reason` 은 로그에 남는 사유 | 다음 대상 선정 |
 | `topics` | `title`, `area_no`, `weight` | 특정 주제로 주제 조사를 실행하게 한다. `area_no` 는 주 연구영역 | 다음 대상 선정 |
 | `questions` | `question`, `area_no` | 답을 찾게 할 질문. `area_no` 영역을 `areas` 와 같이 순환보다 먼저 대상으로 올리고(가중치는 `rotation.yaml` 의 `priority.question_weight`), 그 영역이 대상이 되면 리서치 에이전트의 조사 질문에 포함된다 | 다음 대상 선정 |
-| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문. 퍼블리셔가 제기 근거 "사용자"로 백로그에 등록해 우선순위를 올린다(8.2). 리서치 에이전트는 트랙 실행마다 현재 단계의 열린 질문 가운데 사용자 지정 → 앞 단계로 되돌아온 질문 → 오래된 순으로 1~3개를 고르므로(6.1) 현재 단계에 넣은 사용자 질문이 가장 앞에 온다. 사용자 질문이 여럿이면 `priority`(`high / normal / low` 순), 같으면 파일 순이다. `stage` 가 현재 단계보다 앞이면 되돌아온 질문과 같이 우선 처리하고, 뒤이면 그 단계가 될 때 다룬다 [가정] | 다음 트랙 실행 |
+| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문. 다음 트랙 실행의 대상 선정(`select_target.*`)이 제기 근거 "사용자"로 백로그에 먼저 등록하고 그 실행의 질문으로 고른다(8.2. 대상 선정 뒤에 더한 질문은 퍼블리셔가 보완 등록한다). 리서치 에이전트는 트랙 실행마다 현재 단계의 열린 질문 가운데 사용자 지정 → 앞 단계로 되돌아온 질문 → 오래된 순으로 1~3개를 고르므로(6.1) 현재 단계에 넣은 사용자 질문이 가장 앞에 온다. 사용자 질문이 여럿이면 `priority`(`high / normal / low` 순), 같으면 파일 순이다. `stage` 가 현재 단계보다 앞이면 되돌아온 질문과 같이 우선 처리하고, 뒤이면 그 단계가 될 때 다룬다 [가정] | 다음 트랙 실행 |
 
 유의점은 다음과 같다.
 
@@ -169,7 +169,8 @@ python3 -c "import yaml,glob; [yaml.safe_load(open(p, encoding='utf-8')) for p i
 ## `[가정]` 목록
 
 - `settings.repo_root: ".."` — 위키가 ai-hub 저장소의 하위 폴더 `rop-wiki/` 라는 전제.
-- `settings.web_fetch_required: false` — 페이지 열람 점검(`web_fetch_probe_url`)이 실패해도 실행을 멈추지 않고 `web_fetch_available: false` 로 진행한다. 0장 주석과 7.3 의 "웹 도구 없음 → 즉시 중단"을 "웹 검색 도구 없음"으로 좁힌 것이며, 사용자 결정 항목이다(기본값: 진행. 원문대로 중단하려면 `true`). 웹 검색까지 못 쓰면 `web_tools_required` 에 따라 중단한다.
+- 페이지 열람 불가 시의 사용자 override(`run_daily.sh --allow-no-fetch`, `ROP_ALLOW_NO_FETCH=1`, `settings.web_fetch_required: false`) — 기본은 0장·7.3 원문대로 중단한다(`web_fetch_required: true`). override 는 페이지 열람만 막힌 제한 환경에서 사용자가 명시적으로 고를 때만 원문 미열람 모드로 진행하게 하며, 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다. 사양서는 이 예외를 정하지 않는다.
+- `settings.model: "claude-opus-5-5"` — 헤드리스 에이전트 모델. 2026-09-24 에 `claude -p --model claude-opus-5-5 --output-format json --json-schema …` 로 `structured_output` 이 오는 것을 확인했다.
 - `settings.max_turns`·`settings.agent_timeout_sec` — 턴 수·시간 초과는 7.3 의 스키마 불일치와 같이 1회 재실행 후 보류한다. 사양서 7.3 은 이 경우를 정하지 않는다.
 - 퍼블리셔가 `tracks/<slug>.yaml` 의 `current_stage`(단계 7 뒤 `status: done`)와 선택 키 `stage_status`·`stage_completion` 을 단계 전환 승인 뒤 갱신한다. 실행 스크립트가 `config/` 를 다시 쓰는 유일한 예외다.
 - `rotation.precedence` — 트랙 실행일 → 월간 재검증 → 주간 정리 → 우선 지정 → 1주기 → 2주기 순. 트랙 실행일이 정기 실행보다 앞이므로, 이달 첫 실행·매 7번째 실행이 트랙 요일과 겹치면 정기 실행을 다음 비트랙 실행으로 미룬다(`deferred_periodic_runs`). 사양서 7.1 의 "매월 첫 실행"·"매 7번째 실행"과 글자 그대로는 다르며, 정기 실행을 앞세우면 트랙의 주당 횟수가 매주 하나씩 빠지기 때문에 택했다. 사용자 결정 항목이다(기본값: 트랙 우선·정기 실행 미룸 / 대안: 정기 실행 우선·그날의 트랙 실행 건너뜀).
@@ -180,6 +181,6 @@ python3 -c "import yaml,glob; [yaml.safe_load(open(p, encoding='utf-8')) for p i
 - 주당 트랙 실행 횟수는 `tracks/<slug>.yaml` 의 `runs_per_week` → `settings.track_runs_per_week` 순으로 정하고 `rotation.yaml` 에는 두지 않는다. 활성 트랙이 여럿이고 값이 다르면 가장 큰 값.
 - `rotation.priority.*` — 우선 항목이 여럿일 때의 선택, 실행 유형, 7일 건너뛰기. `questions` 항목은 사양서 7.1 대로 `areas` 와 같이 해당 영역을 우선 대상으로 올리며, 그 가중치는 3.
 - `rotation.corrections` — 정정 요청 갱신은 대상 선정을 바꾸지 않고 당일 작업에 더한다. 사양서 7.1 은 이 문장을 2주기 항목에 두지만, 1주기·우선 지정·월간 재검증 실행에도 적용한다(`applies_to`). 주간 정리(신규 조사 없음)와 트랙 실행(트랙 페이지만 씀)에는 갱신 작업을 붙이지 않는다.
-- 보류 3회로 제외된 영역은 `priority.yaml` 의 `areas` 에 지정하면 다시 대상이 된다.
+- 보류 3회로 제외된 영역은 `priority.yaml` 의 `areas` 에 지정하면 다시 대상이 된다(다음 실행에서 바로 — 7일 건너뛰기 면제). 최근 7일 건너뛰기·최근 감점은 게시까지 간 실행만 '다룬 것'으로 센다.
 - `priority.yaml` 의 `track_questions[].priority` 값은 `high / normal / low` 이고, 사용자 지정 질문이 여럿일 때 고르는 순서에만 쓴다. 사용자 지정 질문 → 앞 단계로 되돌아온 질문 → 오래된 순은 사양서 6.1 의 규칙이고, `stage` 가 현재 단계와 다른 사용자 질문의 처리 시점(앞 단계면 되돌아온 질문과 같이 우선, 뒤 단계면 그 단계가 될 때)은 구축자가 정했다.
 - 설정 파일이 `yaml.safe_load` 로 읽히지 않으면 준비 단계에서 즉시 중단·로그한다. 사양서 7.3 은 설정 파일 오류의 처리를 정하지 않는다.

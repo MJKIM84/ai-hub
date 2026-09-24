@@ -11,6 +11,10 @@ refresh_all_auto_regions() 는 docs 전체를 순회해 마커가 있는 페이�
 - data/changelog.json      : {"items":[{"date","run_id","action","page","summary"}]}
 - data/flow_matrix.json    : {"steps":[…],"items":[…],"cells":{"피킹|완료·인계":[{"link","title","run_id"}]}}
 - data/tracks/<slug>/backlog.json : {"items":[{"id","question","stage","origin","status","answered_run_id","answer_link","created"}]}
+- data/tracks/<slug>/log.json     : {"items":[{"run_id","date","stage","stage_name","stage_page","run_id_cell","stage_cell",
+                                     "answered_questions","new_questions","ontology_change","completion_assessment",
+                                     "area_reflection_proposals","next_run_proposal", …}]} — 트랙 로그(auto:track-log)의 원천.
+                                     셀 값은 로그 페이지(tracks/<slug>/log.md) 위치 기준 상대 링크를 담은 마크다운이다 [가정]
 - runs/<run_id>/summary.json : {run_id,date,run_type,target,verdict_first,verdict_second,pages_created,
                                 pages_updated,new_sources,parked,budget_used,duration_sec}
 - config/tracks/<slug>.yaml : slug,name,status,current_stage,stages,
@@ -601,9 +605,12 @@ def render_backlog(slug: str, page_rel: str | None = None) -> str:
     items = load_backlog(slug)
     if not items:
         return "백로그가 비어 있다(data/tracks/<slug>/backlog.json 없음 또는 항목 없음)."
+    cfg = load_track_config(slug) or {}
     rows = []
     for b in sorted(items, key=lambda b: (int(b.get("stage") or 0), str(b.get("id")))):
-        rows.append([b.get("id", ""), b.get("question", ""), str(b.get("stage", "")), b.get("origin", ""),
+        st = b.get("stage")
+        stage_cell = _stage_label(slug, int(st), cfg) if str(st).isdigit() else str(st or "")   # 번호와 이름을 함께 쓴다(항목 호칭)
+        rows.append([b.get("id", ""), b.get("question", ""), stage_cell, b.get("origin", ""),
                      b.get("status", ""), b.get("answered_run_id") or "—",
                      _link(page_rel, b.get("answer_link"), "답") if b.get("answer_link") else "—",
                      b.get("created", "")])
@@ -674,12 +681,14 @@ def render_track_recent_runs(slug: str, page_rel: str | None = None, n: int = 5)
     if not runs:
         return "아직 트랙 실행 기록이 없다."
     runs.sort(key=lambda r: (str(r.get("date", "")), str(r.get("run_id", ""))), reverse=True)
+    cfg = load_track_config(slug) or {}
     rows = []
     for r in runs[:n]:
         t = r.get("target") or {}
         stage = t.get("stage", "—") if isinstance(t, dict) else "—"
+        stage_cell = _stage_label(slug, int(stage), cfg) if str(stage).isdigit() else str(stage)   # 번호와 이름을 함께 쓴다(항목 호칭)
         log_rel = f"logs/daily/{r.get('date', '')}.md"
-        rows.append([r.get("run_id", ""), r.get("date", ""), str(stage),
+        rows.append([r.get("run_id", ""), r.get("date", ""), stage_cell,
                      f"{r.get('verdict_first', '—')} / {r.get('verdict_second', '—')}",
                      f"{r.get('pages_created', 0)} / {r.get('pages_updated', 0)}",
                      _link(page_rel, log_rel, "로그") if (DOCS / log_rel).is_file() else "—"])
@@ -695,6 +704,49 @@ def render_ontology_version_history(slug: str, page_rel: str | None = None) -> s
     rows = [[str(it.get("version", "")), str(it.get("date", "")), it.get("changes", ""), it.get("run_id", "")]
             for it in items]
     return _table(["버전", "날짜", "변경 내용", "근거 실행 id"], rows)
+
+
+def load_track_log(slug: str) -> list[dict]:
+    return _load_json(DATA / "tracks" / slug / "log.json", {}).get("items", []) or []
+
+
+# 트랙 로그 한 실행의 여덟 항목(사양서 5.4 트랙 로그): (표의 항목 이름, log.json 의 키)
+TRACK_LOG_ROWS: list[tuple[str, str]] = [
+    ("실행 id", "run_id_cell"), ("단계", "stage_cell"), ("답한 질문", "answered_questions"), ("새 질문", "new_questions"),
+    ("온톨로지 변경", "ontology_change"), ("완료 조건 평가", "completion_assessment"),
+    ("세부영역 반영 제안", "area_reflection_proposals"), ("다음 실행 제안", "next_run_proposal"),
+]
+
+
+def render_track_log(slug: str, page_rel: str | None = None) -> str:
+    """트랙 로그의 "실행 기록"(auto:track-log). data/tracks/<slug>/log.json 항목을 최신순(날짜 내림차순, 같은 날짜면
+    나중에 추가된 항목이 먼저)으로, 실행마다 "### 실행 <id> — 단계 <n>. <이름>" 소제목과 여덟 항목 표 하나로 만든다.
+    셀 값은 log.json 에 저장된 마크다운(로그 페이지 기준 상대 링크 포함)을 그대로 쓰므로 이 영역은 tracks/<slug>/log.md 에만 둔다."""
+    items = load_track_log(slug)
+    if not items:
+        return "아직 트랙 실행 기록이 없다."
+    cfg = load_track_config(slug) or {}
+    names = cfg.get("stage_names") or {}
+    order = sorted(enumerate(items), key=lambda x: (str(x[1].get("date") or ""), x[0]), reverse=True)
+    blocks = []
+    for _, e in order:
+        st = e.get("stage")
+        name = e.get("stage_name") or (names.get(st) or names.get(str(st)) if st is not None else None)
+        if name:
+            label = f"단계 {st}. {name}"
+        elif str(st).isdigit():
+            label = _stage_label(slug, int(st), cfg)
+        else:
+            label = f"단계 {st}" if st is not None else "단계 미상"
+        fallback = {
+            "run_id_cell": e.get("run_id") or "",
+            "stage_cell": f"[{label}]({e['stage_page']})" if e.get("stage_page") else label,
+        }
+        lines = [f"### 실행 {e.get('run_id', '')} — {label}", "", "| 항목 | 내용 |", "|---|---|"]
+        for head, key in TRACK_LOG_ROWS:
+            lines.append(f"| {head} | {_esc(e.get(key) or fallback.get(key) or '없음')} |")
+        blocks.append("\n".join(lines))
+    return "\n\n".join(blocks)
 
 
 # --- 전체 갱신 -----------------------------------------------------------------------
@@ -741,6 +793,9 @@ def render_for(key: str, page_rel: str, meta: dict) -> str | None:
     if key == "ontology-version-history":
         slug = _slug_from(page_rel, meta)
         return render_ontology_version_history(slug, page_rel) if slug else None
+    if key == "track-log":
+        slug = _slug_from(page_rel, meta)
+        return render_track_log(slug, page_rel) if slug else None
     if key == "open-questions":
         return render_open_questions(page_rel)
     if key == "changelog":
@@ -765,10 +820,28 @@ def render_for(key: str, page_rel: str, meta: dict) -> str | None:
     return None
 
 
-def refresh_all_auto_regions(verbose: bool = False) -> list[str]:
-    """docs 전체를 순회해 마커가 있는 페이지의 영역을 다시 채운다. 바뀐 파일 목록을 돌려준다."""
+class AutoRegionError(RuntimeError):
+    """strict 모드에서 자동 갱신 영역을 다시 만들지 못했을 때(렌더 예외 또는 등록되지 않은 키)."""
+
+    def __init__(self, failures: list[str]):
+        self.failures = failures
+        super().__init__("자동 갱신 영역 렌더 실패 %d건:\n" % len(failures) + "\n".join(f"  - {f}" for f in failures[:40]))
+
+
+LAST_FAILURES: list[str] = []   # 마지막 refresh_all_auto_regions() 호출의 실패 목록(strict 가 아닐 때 호출자가 확인한다)
+
+
+def refresh_all_auto_regions(verbose: bool = False, strict: bool = False) -> list[str]:
+    """docs 전체를 순회해 마커가 있는 페이지의 영역을 다시 채운다. 바뀐 파일 목록을 돌려준다.
+
+    렌더 실패(예외)와 AUTO_KEYS 에 없는 키는 (페이지, 키, 사유) 로 모아 LAST_FAILURES 에 남긴다.
+    strict=True 면 실패가 하나라도 있을 때 아무 파일도 쓰지 않고 AutoRegionError 를 올린다(퍼블리셔 5·8단계: 사양서 6.4
+    "하나라도 실패하면 반영하지 않는다" — 낡은 영역을 그대로 둔 채 빌드·커밋하지 않도록). strict=False(기본, scaffold 등)는
+    실패한 영역만 그대로 두고 나머지를 갱신한다."""
     all_pages(refresh=True)
     changed: list[str] = []
+    failures: list[str] = []
+    pending: list[tuple[Path, str, str, list[str]]] = []
     for p in sorted(DOCS.rglob("*.md")):
         text = p.read_text(encoding="utf-8")
         keys = ar.list_regions(text)
@@ -778,9 +851,13 @@ def refresh_all_auto_regions(verbose: bool = False) -> list[str]:
         meta, _ = fm.parse(text)
         new_text = text
         for key in keys:
+            if key not in ar.AUTO_KEYS:
+                failures.append(f"{rel} auto:{key}: 등록되지 않은 키(pipeline/lib/autoregion.py 의 AUTO_KEYS 에 없음)")
+                continue
             try:
                 content = render_for(key, rel, meta)
-            except Exception as e:  # 렌더 실패는 해당 영역만 건너뛴다
+            except Exception as e:  # 렌더 실패는 해당 영역만 건너뛰고 기록한다
+                failures.append(f"{rel} auto:{key}: {type(e).__name__}: {e}")
                 if verbose:
                     print(f"[render] {rel} auto:{key} 실패: {e}")
                 continue
@@ -788,9 +865,14 @@ def refresh_all_auto_regions(verbose: bool = False) -> list[str]:
                 continue
             new_text = ar.replace_region(new_text, key, content)
         if new_text != text:
-            p.write_text(new_text, encoding="utf-8")
-            changed.append(rel)
-            if verbose:
-                print(f"[render] 갱신: {rel} ({', '.join(keys)})")
+            pending.append((p, new_text, rel, keys))
+    LAST_FAILURES[:] = failures
+    if strict and failures:
+        raise AutoRegionError(failures)
+    for p, new_text, rel, keys in pending:
+        p.write_text(new_text, encoding="utf-8")
+        changed.append(rel)
+        if verbose:
+            print(f"[render] 갱신: {rel} ({', '.join(keys)})")
     all_pages(refresh=True)
     return changed

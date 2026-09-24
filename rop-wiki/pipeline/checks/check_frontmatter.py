@@ -4,7 +4,8 @@
 모든 docs 페이지에 대해 프런트매터 존재, 필수 필드(title,type,status,created,updated,version),
 type·status·confidence 허용 값, type 별 추가 필수 필드, 날짜 형식을 검사한다.
 또한 모든 docs 페이지(홈 포함)의 본문 첫 줄이 이동 경로("홈 › …" 또는 "[홈](…) › …")인지 검사한다.
-홈은 경로가 "홈" 한 단어뿐이므로 링크 없는 "홈" 한 줄이면 된다. 오류가 있으면 exit 1.
+홈은 경로가 "홈" 한 단어뿐이므로 링크 없는 "홈" 한 줄이면 된다. 형식은 lib/frontmatter.py 의 BREADCRUMB_RE
+(^(\[홈\]\(…\)|홈)( › …)?$)로 검사한다("홈페이지…" 같은 임의 문장은 통과하지 않는다). 오류가 있으면 exit 1.
 """
 from __future__ import annotations
 
@@ -34,8 +35,8 @@ def main() -> int:
         for e in fm.validate(meta, rel):
             errors.append(f"{rel}: {e}")
         first = next((l for l in body.split("\n") if l.strip()), "")
-        if not (first.startswith("홈") or first.startswith("[홈](")):
-            errors.append(f"{rel}: 본문 첫 줄이 이동 경로('홈 › …')가 아님: {first[:40]!r}")
+        if not fm.BREADCRUMB_RE.match(first.strip()):
+            errors.append(f"{rel}: 본문 첫 줄이 이동 경로('[홈](…) › …' 또는 홈 페이지의 '홈')가 아님: {first[:40]!r}")
     if errors:
         print(f"[check_frontmatter] 오류 {len(errors)}건 (파일 {len(files)}개 검사)")
         for e in errors:

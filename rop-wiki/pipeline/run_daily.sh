@@ -11,11 +11,17 @@
 #   bash pipeline/run_daily.sh --resume 2026-09-24-01              # 있는 산출물부터 이어서(보류 폴더면 되돌려 재투입)
 #   bash pipeline/run_daily.sh --resume 2026-09-24-01 --step publish   # 단일 단계만
 # 옵션: --date D --run-type T --area N --track S --stage N --question-ids a,b --resume ID --run-id ID
-#       --step {prepare|select|research|verify1|storytell|verify2|publish|log} --skip-probe --no-build --no-commit
-#       (--skip-probe: 기존 probe.json 재사용, 없으면 WebSearch·WebFetch 도구 점검을 생략하고 curl 참고값만 기록. --no-build/--no-commit: 퍼블리셔 6·7단계 생략)
+#       --step {prepare|select|research|verify1|storytell|verify2|publish|log} --skip-probe --allow-no-fetch --no-build --no-commit
+#       (--skip-probe: 드라이런용. 기존 probe.json 재사용, 없으면 WebSearch 점검을 생략(미점검으로 기록)하고 WebFetch 는 curl 참고값만 쓴다.
+#        --allow-no-fetch(또는 환경변수 ROP_ALLOW_NO_FETCH=1): 페이지 열람 도구가 없을 때 중단하지 않고 원문 미열람 모드로 진행(사용자 override).
+#        --no-build/--no-commit: 퍼블리셔 6·7단계 생략)
+# 웹 도구(7.3): 웹 검색 또는 페이지 열람 도구가 없으면 즉시 중단·로그(0장 web_tools_required). 열람만 없고 override 가 있으면
+#   진행하되 에이전트 컨텍스트에 web_fetch_available: false 를 주고 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다.
 # 산출물: runs/<run_id>/ (target.json, probe.json, docs_tree.txt, prompts/, research.json·md, verification.json·md, pages/·pages.json,
 #         verification2.json·md, log.md, timings.json, summary.json; 주간 정리면 link_check.txt·url_check.json 도). 보류는 runs/parked/<run_id>/.
 # 단계별 소요 시간은 runs/<run_id>/log.md 와 timings.json 에 남고, 퍼블리셔가 일일 로그(docs/logs/daily/<date>.md)에 옮긴다.
+# 커밋: 퍼블리셔(publish.py, 보류·중단이면 --log-only)가 실행 기록까지 한 커밋에 담는다. 이 스크립트는 퍼블리셔를 부른 뒤
+#   실행 폴더에 아무것도 쓰지 않는다(커밋 뒤 미커밋 로그가 남지 않도록).
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -24,14 +30,15 @@ PY="${PYTHON:-python3}"
 LIB="pipeline/lib/runs.py"
 
 usage() {
-  sed -n '2,18p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+  sed -n '2,24p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
 }
 
 # ---------------------------------------------------------------------------------------------
 # 옵션
 # ---------------------------------------------------------------------------------------------
 DATE=""; RUN_TYPE=""; AREA=""; TRACK=""; STAGE=""; QIDS=""; RESUME=""; STEP=""; RUN_ID_OPT=""
-SKIP_PROBE=0; NO_BUILD=0; NO_COMMIT=0
+SKIP_PROBE=0; NO_BUILD=0; NO_COMMIT=0; ALLOW_NO_FETCH=0; ALLOW_NO_FETCH_SRC=""
+if [ "${ROP_ALLOW_NO_FETCH:-0}" = "1" ]; then ALLOW_NO_FETCH=1; ALLOW_NO_FETCH_SRC="ROP_ALLOW_NO_FETCH=1"; fi
 while [ $# -gt 0 ]; do
   case "$1" in
     --date) DATE="$2"; shift 2;;
@@ -44,6 +51,7 @@ while [ $# -gt 0 ]; do
     --run-id) RUN_ID_OPT="$2"; shift 2;;
     --step) STEP="$2"; shift 2;;
     --skip-probe) SKIP_PROBE=1; shift;;
+    --allow-no-fetch) ALLOW_NO_FETCH=1; ALLOW_NO_FETCH_SRC="--allow-no-fetch"; shift;;
     --no-build) NO_BUILD=1; shift;;
     --no-commit) NO_COMMIT=1; shift;;
     -h|--help) usage; exit 0;;
@@ -138,6 +146,10 @@ if [ -n "$RESUME" ]; then
     say "보류 폴더를 되돌렸다: runs/parked/$RUN_ID → runs/$RUN_ID (재투입, summary.json 의 보류 표시 해제)"
   fi
   if [ ! -d "runs/$RUN_ID" ]; then say "재개할 실행 폴더가 없다: runs/$RUN_ID"; exit 2; fi
+  if [ -z "$STEP" ] && [ "$(jget "runs/$RUN_ID/summary.json" published false)" = "true" ]; then
+    # 이미 게시·커밋된 실행: 실행 폴더에 기록을 더하면 커밋되지 않은 채 남으므로 아무것도 쓰지 않고 끝낸다
+    say "재개: 이미 게시된 실행($RUN_ID) — 할 일이 없다"; exit 0
+  fi
   DATE="$(jget "runs/$RUN_ID/target.json" date "$DATE")"; export ROP_TODAY="$DATE"
 else
   RUN_ID="${RUN_ID_OPT:-$("$PY" "$LIB" new-run-id --date "$DATE")}"
@@ -148,7 +160,8 @@ rlog "실행 시작 (date=$DATE run_id=$RUN_ID resume=${RESUME:-없음} step=${S
 [ -n "$RESUME" ] && rlog "재개: 있는 산출물부터 이어서 실행한다" "준비"
 MAX_RETRIES="$(setting daily_budget.max_retries 2)"
 WEB_TOOLS_REQUIRED="$(setting web_tools_required true)"
-WEB_FETCH_REQUIRED="$(setting web_fetch_required false)"
+WEB_FETCH_REQUIRED="$(setting web_fetch_required true)"
+FETCH_OVERRIDE_NOTE="페이지 열람 불가 — 원문 미열람 모드(사용자 override)"
 PROBE_NOTE="건너뜀"
 NEEDS_PROBE=1
 case "$STEP" in select|publish|log) NEEDS_PROBE=0;; esac
@@ -158,14 +171,31 @@ if [ "$NEEDS_PROBE" = 1 ]; then
   else
     "$PY" pipeline/agent_runner.py probe --out "$RD/probe.json" $( [ "$SKIP_PROBE" = 1 ] && echo "--skip-search --skip-fetch" ) >/dev/null
   fi
-  WS="$(jget "$RD/probe.json" web_search_available false)"
+  WS="$(jget "$RD/probe.json" web_search_available 미점검)"
   WF="$(jget "$RD/probe.json" web_fetch_available false)"
   PROBE_NOTE="web_search_available: $WS · web_fetch_available: $WF"
   rlog "웹 도구 점검: $PROBE_NOTE" "준비"
-  if [ "$WS" != "true" ] && [ "$WEB_TOOLS_REQUIRED" = "true" ]; then abort "웹 검색(WebSearch) 도구를 쓸 수 없다(web_tools_required)"; fi
+  # 7.3 "웹 도구 없음 → 즉시 중단·로그", 0장 web_tools_required("웹 검색·페이지 열람 도구가 없으면 실행을 중단")
+  if [ "$WS" = "미점검" ]; then
+    # --skip-probe(드라이런)로 점검하지 않은 것을 가용으로 기록하지 않는다. 정규(cron) 실행에서는 --skip-probe 를 쓰지 않는다
+    rlog "웹 도구 점검 생략(--skip-probe, 드라이런): 웹 검색 도구는 점검하지 않았다(web_search_available: null)" "준비"
+    PROBE_NOTE="$PROBE_NOTE · 웹 도구 점검 생략(드라이런)"
+  elif [ "$WS" != "true" ] && [ "$WEB_TOOLS_REQUIRED" = "true" ]; then
+    abort "웹 검색(WebSearch) 도구를 쓸 수 없다(web_tools_required)"
+  fi
   if [ "$WF" != "true" ]; then
-    if [ "$WEB_FETCH_REQUIRED" = "true" ]; then abort "페이지 열람(WebFetch) 점검 실패(web_fetch_required)"; fi
-    rlog "페이지 열람 불가: 계속 진행하되 실행 컨텍스트에 web_fetch_available: false 를 표시한다" "준비"
+    SRC=""
+    if [ "$ALLOW_NO_FETCH" = 1 ]; then SRC="$ALLOW_NO_FETCH_SRC"
+    elif [ "$WEB_TOOLS_REQUIRED" != "true" ]; then SRC="settings.web_tools_required: false"
+    elif [ "$WEB_FETCH_REQUIRED" != "true" ]; then SRC="settings.web_fetch_required: false"
+    fi
+    if [ -z "$SRC" ]; then
+      abort "페이지 열람(WebFetch) 도구를 쓸 수 없다(web_tools_required). 원문 미열람 모드로 진행하려면 --allow-no-fetch 또는 ROP_ALLOW_NO_FETCH=1"
+    fi
+    # override: 진행하되 에이전트 실행 컨텍스트에 web_fetch_available: false(원문 미열람 모드)를 알리고, 로그·일일 로그에 남긴다
+    "$PY" "$LIB" jsonset --file "$RD/probe.json" --set web_fetch_available=false web_fetch_override=true "web_fetch_override_source=$SRC"
+    rlog "$FETCH_OVERRIDE_NOTE — override: $SRC. 실행 컨텍스트에 web_fetch_available: false 를 표시하고 진행한다" "준비"
+    PROBE_NOTE="$PROBE_NOTE · $FETCH_OVERRIDE_NOTE"
   fi
 fi
 "$PY" "$LIB" docs-tree --run-id "$RUN_ID" >/dev/null
@@ -299,24 +329,25 @@ fi
 # ---------------------------------------------------------------------------------------------
 # 7·8. 퍼블리셔 (사양서 6.4: 1 스키마·판정 → 2 프런트매터 → 3 원문 보호 → 4 링크 → 5 반영 → 6 빌드 → 7 커밋 → 8 일일 로그 → 9 알림)
 # ---------------------------------------------------------------------------------------------
+# 커밋 규칙: 실행 폴더(log.md·timings.json·summary.json)에 쓰는 기록은 모두 퍼블리셔 호출 "전에" 끝낸다. 퍼블리셔(publish.py,
+# 보류·중단이면 --log-only)는 자기 단계 기록까지 쓴 뒤 한 번 커밋하고, 이 스크립트는 그 뒤 실행 폴더에 아무것도 쓰지 않는다(say 는 표준 출력).
 if [ "$STEP" = "log" ]; then
-  begin_step "퍼블리셔"; publish_log_only; end_step "성공" "일일 로그만(--step log)"; exit 0
+  begin_step "퍼블리셔"; end_step "성공" "일일 로그만(--step log)"; publish_log_only; exit 0
 fi
 if should_run publish; then
-  if [ -n "$RESUME" ] && [ -z "$STEP" ] && [ "$(jget "$RD/summary.json" published false)" = "true" ]; then
-    say "재개: 이미 게시된 실행($RUN_ID) — 퍼블리셔 건너뜀"; exit 0
-  fi
   begin_step "퍼블리셔"
   rlog "퍼블리셔 시작(no_build=$NO_BUILD no_commit=$NO_COMMIT)" "퍼블리셔"
   # `if ! cmd; then rc=$?` 는 부정된 값(항상 0)을 읽으므로 `cmd || rc=$?` 로 실제 종료 코드를 받는다(ERR 트랩도 걸리지 않는다).
   rc=0
   "$PY" pipeline/publish.py "$RUN_ID" $( [ "$NO_BUILD" = 1 ] && echo --no-build ) $( [ "$NO_COMMIT" = 1 ] && echo --no-commit ) || rc=$?
   if [ "$rc" -ne 0 ]; then
-    end_step "실패" "exit $rc (publish.py; 일일 로그는 퍼블리셔가 이미 썼다)"
+    # 퍼블리셔가 퍼블리셔 단계 실패 기록(timings.json·log.md)과 실패 일일 로그를 이미 썼고 반영은 스냅숏으로 되돌렸다.
+    # 보류·준비 중단과 같이 되돌린 상태를 재빌드하고 일일 로그를 커밋한다("run(DATE): … (중단)", 6.4 "빌드 실패 시 롤백·로그").
+    publish_log_only
     say "퍼블리셔 실패(exit $rc): $RD/log.md 와 docs/logs/daily/$DATE.md 를 본다. 고친 뒤 'bash pipeline/run_daily.sh --resume $RUN_ID --step publish' 로 다시 시도한다"
     exit 4
   fi
-  end_step "성공" "$(jget "$RD/summary.json" end_state)"
-  say "== 완료: $RUN_ID ($SEL_TYPE) — $(jget "$RD/summary.json" end_state) · 소요 $(jget "$RD/summary.json" duration_sec)초 · 로그 docs/logs/daily/$DATE.md"
+  # 퍼블리셔 단계 결과는 publish.py 가 커밋 전에 기록했다(여기서 end_step 을 부르면 커밋 뒤 미커밋 기록이 남는다)
+  say "== 완료: $RUN_ID ($SEL_TYPE) — $(jget "$RD/summary.json" end_state) · 소요 $(jget "$RD/summary.json" duration_sec)초 · 커밋 $(jget "$RD/summary.json" commit 없음) · 로그 docs/logs/daily/$DATE.md"
 fi
 exit 0

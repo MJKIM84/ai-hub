@@ -10,12 +10,14 @@
   비트랙 실행(CLI 로 run_type 을 지정한 드라이런·재현 실행 포함) 또는 monthly_recheck 실행으로 센다. 중단·보류된 실행과 트랙 실행은
   세지 않는다 [가정 — 사용자 결정 항목, RUN.md 9절].
 - weekly_review: 매 weekly_review_every(7)번째 실행(미뤄진 경우 포함). 실행 번호는 runs/ 와 runs/parked/ 의 실행 id 수.
-- priority: priority.yaml 의 areas·topics·questions(최근 skip_if_targeted_within_days 안에 다룬 항목은 건너뜀).
+- priority: priority.yaml 의 areas·topics·questions(최근 skip_if_targeted_within_days 안에 다룬 항목은 건너뜀). '다룬 것'은 게시까지 간
+  실행만이다(보류·중단된 실행은 세지 않는다). 연속 보류로 제외됐다가 areas 지정으로 제외가 풀린 영역은 이 건너뛰기를 면제해 바로 고른다.
 - cycle1: status seed 인 최저 번호 세부영역 → area_deep_dive.
-- cycle2: 점수 = 마지막 갱신 경과일 + 열린 질문 수 + 비어 있는 매트릭스 칸 수 + 우선 가중치 − 최근 7일 감점, 동점이면 번호순 → topic.
+- cycle2: 점수 = 마지막 갱신 경과일 + 열린 질문 수 + 비어 있는 매트릭스 칸 수 + 우선 가중치 − 최근 7일 감점(게시까지 간 실행만), 동점이면 번호순 → topic.
 - 정정 요청(inbox/corrections.md 의 open 항목)이 있으면 그 페이지의 갱신을 당일 작업에 포함한다(target.json 의 corrections).
 - 같은 영역이 exclude_after_consecutive_parks(3)회 연속 보류되면 대상 선정에서 제외하고 사용자 검토 요청을
   data/open_questions.json 에 올린다(priority.areas 에 지정하면 제외가 풀린다).
+- 트랙 실행이면 priority.track_questions 를 트랙 백로그에 제기 근거 "사용자"로 먼저 등록한 뒤 질문 id 를 고른다(8.2, 6.1).
 
 출력: runs/<run_id>/target.json
   {run_id, date, run_type, forced, target{area_no, area_name, category}, track{slug, stage, question_ids, …}|null,
@@ -62,6 +64,13 @@ def load_history(settings: dict) -> list[dict]:
     return out
 
 
+def covered(h: dict) -> bool:
+    """최근 N일 건너뛰기(priority.skip_if_targeted_within_days)·최근 감점(scoring.recent_penalty)에서 '다룬 것'으로 세는 실행:
+    게시까지 간(published) 비보류 실행. 보류(runs/parked/)·중단된 실행은 그 영역을 다루지 못했으므로 세지 않는다 —
+    세면 3회 연속 보류로 제외된 영역을 priority.yaml 로 풀어도 마지막 보류 뒤 7일 동안 고를 수 없다(7.3·7.1) [가정]."""
+    return bool(h.get("published")) and not h.get("parked")
+
+
 def _within_days(h_date: str, day: str, days: int) -> bool:
     try:
         d0, d1 = date.fromisoformat(h_date), date.fromisoformat(day)
@@ -83,10 +92,9 @@ def area_statuses() -> dict[int, dict]:
     return out
 
 
-def excluded_areas(history: list[dict], rotation: dict, priority: dict) -> list[int]:
-    n = int(rotation.get("exclude_after_consecutive_parks") or 3)
-    lifted = {int(a.get("area_no")) for a in priority.get("areas", []) if str(a.get("area_no", "")).isdigit()}
-    out = []
+def park_streaks(history: list[dict]) -> dict[int, int]:
+    """세부영역별 최근 연속 보류 횟수(트랙 실행 제외, 최근 실행부터 거꾸로 센다)."""
+    out: dict[int, int] = {}
     for no in paths.AREA_NOS:
         mine = [h for h in history if h.get("run_type") != "track" and h.get("area_no") == no]
         streak = 0
@@ -95,9 +103,26 @@ def excluded_areas(history: list[dict], rotation: dict, priority: dict) -> list[
                 streak += 1
             else:
                 break
-        if streak >= n and no not in lifted:
-            out.append(no)
+        out[no] = streak
     return out
+
+
+def _priority_area_nos(priority: dict) -> set[int]:
+    return {int(a.get("area_no")) for a in priority.get("areas", []) if str(a.get("area_no", "")).isdigit()}
+
+
+def excluded_areas(history: list[dict], rotation: dict, priority: dict) -> list[int]:
+    n = int(rotation.get("exclude_after_consecutive_parks") or 3)
+    lifted = _priority_area_nos(priority)
+    return [no for no, s in park_streaks(history).items() if s >= n and no not in lifted]
+
+
+def lifted_areas(history: list[dict], rotation: dict, priority: dict) -> list[int]:
+    """연속 보류로 제외될 영역 가운데 priority.yaml 의 areas 에 지정해 제외가 풀린 영역(7.3 → 7.4 사용자 개입).
+    이 영역은 최근 N일 건너뛰기를 면제해 다음 실행에서 바로 고른다. 게시까지 가면 연속 보류가 끊겨 이 목록에서 빠진다."""
+    n = int(rotation.get("exclude_after_consecutive_parks") or 3)
+    chosen = _priority_area_nos(priority)
+    return [no for no, s in park_streaks(history).items() if s >= n and no in chosen]
 
 
 def register_review_requests(excluded: list[int], day: str, run_id: str, rotation: dict) -> list[str]:
@@ -223,20 +248,23 @@ def pick_track_questions(slug: str, cfg: dict, priority: dict, stage: int, overr
 # --- 우선 지정·주기 -------------------------------------------------------------------------
 
 def pick_priority(priority: dict, rotation: dict, history: list[dict], day: str, statuses: dict[int, dict],
-                  excluded: list[int]) -> dict | None:
+                  excluded: list[int], lifted: list[int] | None = None) -> dict | None:
     pr = rotation.get("priority") or {}
     skip_days = int(pr.get("skip_if_targeted_within_days") or 7)
     qw = float(pr.get("question_weight") or 3)
-    recent = [h for h in history if h.get("run_type") != "track" and _within_days(h["date"], day, skip_days)]
+    # 최근 N일 안에 '다룬' 항목만 건너뛴다. 보류·중단된 실행은 세지 않는다(covered)
+    recent = [h for h in history if h.get("run_type") != "track" and covered(h) and _within_days(h["date"], day, skip_days)]
+    lifted = set(lifted or [])
     cands = []
     for i, a in enumerate(priority.get("areas", [])):
         no = a.get("area_no")
         if not str(no).isdigit() or not 1 <= int(no) <= 28:
             continue
         no = int(no)
-        if any(h.get("area_no") == no for h in recent):
+        if no not in lifted and any(h.get("area_no") == no for h in recent):
             continue
-        cands.append((float(a.get("weight") or 0), 0, i, {"kind": "areas", "area_no": no, "reason": a.get("reason"), "weight": a.get("weight")}))
+        cands.append((float(a.get("weight") or 0), 0, i, {"kind": "areas", "area_no": no, "reason": a.get("reason"), "weight": a.get("weight"),
+                                                         "lifted": no in lifted}))
     for i, t in enumerate(priority.get("topics", [])):
         no = t.get("area_no")
         if not str(no).isdigit() or not 1 <= int(no) <= 28 or not t.get("title"):
@@ -287,7 +315,8 @@ def cycle2_scores(statuses: dict[int, dict], rotation: dict, priority: dict, his
     oq = load_open_questions()
     fmx = load_flow_matrix()
     total_cells = len(fmx["steps"]) * len(fmx["items"])
-    recent_areas = {h.get("area_no") for h in history if h.get("run_type") != "track" and _within_days(h["date"], day, pen_days)}
+    recent_areas = {h.get("area_no") for h in history
+                    if h.get("run_type") != "track" and covered(h) and _within_days(h["date"], day, pen_days)}   # 보류·중단 실행은 감점하지 않는다
     out = []
     for no in paths.AREA_NOS:
         if no in excluded:
@@ -372,12 +401,16 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
     src = load_source()
     statuses = area_statuses()
     excluded = excluded_areas(history, rotation, priority)
+    lifted = lifted_areas(history, rotation, priority)
+    n_parks = int(rotation.get("exclude_after_consecutive_parks") or 3)
     notes: list[str] = []
     review_ids: list[str] = []
     if excluded and side_effects:
         review_ids = register_review_requests(excluded, day, run_id, rotation)
     if excluded:
-        notes.append(f"3회 연속 보류로 제외한 영역: {', '.join(src.area(n).title for n in excluded)}" + (f" (열린 질문 {', '.join(review_ids)} 등록)" if review_ids else ""))
+        notes.append(f"{n_parks}회 연속 보류로 제외한 영역: {', '.join(src.area(n).title for n in excluded)}" + (f" (열린 질문 {', '.join(review_ids)} 등록)" if review_ids else ""))
+    if lifted:
+        notes.append(f"{n_parks}회 연속 보류 뒤 priority.yaml 의 areas 로 제외를 푼 영역: {', '.join(src.area(n).title for n in lifted)} (최근 {int((rotation.get('priority') or {}).get('skip_if_targeted_within_days') or 7)}일 건너뛰기 면제)")
 
     all_ids = sorted(set(runs.list_run_ids(settings)) | {run_id})
     run_number = all_ids.index(run_id) + 1
@@ -408,6 +441,15 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
             raise SystemExit("[select_target] 활성 트랙이 없다")
         slug, cfg = pick_track(settings, tracks, history, override.get("track"))
         stage = int(override.get("stage") or cfg.get("current_stage") or 1)
+        if side_effects:
+            # 8.2·6.1: 사용자 지정 트랙 질문(priority.track_questions)을 백로그에 제기 근거 "사용자"로 먼저 등록해, 이번 트랙 실행에서
+            # 바로 question_ids 로 고르고 answered_question_ids(q-id)로 답할 수 있게 한다(퍼블리셔 5단계의 등록은 보완용으로 남는다)
+            bp = paths.track_backlog(slug)
+            bdata = runs.read_json(bp, {"items": []}) or {"items": []}
+            added = runs.register_user_track_questions(bdata.setdefault("items", []), slug, stage, day, priority)
+            if added:
+                runs.write_json(bp, bdata)
+                notes.append(f"사용자 지정 트랙 질문 백로그 등록: {', '.join(r['id'] for r in added)}")
         qids, unmatched, qwhy = pick_track_questions(slug, cfg, priority, stage, override.get("question_ids"))
         names = cfg.get("stage_names") or {}
         track_block = {"slug": slug, "name": cfg.get("name"), "stage": stage, "stages": int(cfg.get("stages") or 7),
@@ -451,14 +493,14 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
             if rule == "priority":
                 if not (rotation.get("priority") or {}).get("overrides_rotation", True):
                     continue
-                item = pick_priority(priority, rotation, history, day, statuses, excluded)
+                item = pick_priority(priority, rotation, history, day, statuses, excluded, lifted)
                 if item:
                     run_type = item["run_type"]
                     area_no = item["area_no"]
                     topic = item.get("title") or (item.get("question") if item["kind"] == "questions" and run_type == "topic" else None)
                     prio_reason = item.get("reason") or f"priority.yaml {item['kind']} 지정"
                     prio_questions = item.get("questions") or []
-                    why = f"우선 지정({item['kind']}, 가중치 {item.get('weight')}) → {run_type}"
+                    why = f"우선 지정({item['kind']}, 가중치 {item.get('weight')}" + (", 연속 보류 제외 해제" if item.get("lifted") else "") + f") → {run_type}"
                     break
             if rule == "cycle1":
                 no = cycle1_pick(statuses, rotation, excluded)
@@ -490,7 +532,7 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
         "run_type": run_type, "forced": bool(forced), "target": target, "topic": topic, "track": track_block,
         "corrections": corrections, "budget": budget,
         "priority_reason": prio_reason, "priority_questions": prio_questions,
-        "excluded_areas": excluded,
+        "excluded_areas": excluded, "lifted_areas": lifted,
         "deferred": {"monthly_recheck": monthly and run_type == "track", "weekly_review": weekly and run_type == "track"},
         "selection_rationale": why + ((" · " + " · ".join(notes)) if notes else ""),
     }

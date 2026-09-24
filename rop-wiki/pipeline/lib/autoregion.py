@@ -19,6 +19,9 @@ AUTO_KEYS: list[str] = [
     "category-area-table",
     # 백본 추가 키 [가정]: 참고문헌 페이지의 "인용된 페이지" 목록(docs 전체의 sources·[^ref-id]·링크를 스캔)
     "reference-cited-pages",
+    # 파이프라인 추가 키 [가정]: 트랙 로그 페이지(docs/tracks/<slug>/log.md)의 "실행 기록" 절. 원천은 data/tracks/<slug>/log.json 이고
+    # 퍼블리셔가 트랙 실행마다 항목을 더한 뒤 refresh_all_auto_regions() 가 최신순으로 다시 만든다(사양서 4.6 트랙 로그 갱신 주체: 퍼블리셔)
+    "track-log",
 ]
 
 _START = "<!-- auto:{key}:start -->"

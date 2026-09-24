@@ -15,6 +15,7 @@ from lib import frontmatter as fm  # noqa: E402
 from lib import paths  # noqa: E402
 from lib.korean import topic_particle  # noqa: E402
 from lib.nav import _title, build_nav, flatten_nav, load_mkdocs_yml, mkdocs_yml_is_current, render_mkdocs_yml  # noqa: E402
+from lib import render as render_mod  # noqa: E402
 from lib.render import load_track_config, render_flow_matrix, render_for, track_slugs  # noqa: E402
 
 
@@ -74,6 +75,30 @@ class TestFrontmatter(unittest.TestCase):
         self.assertTrue(any("primary_area_no" in e for e in errs))
         self.assertEqual(fm.validate({"title": "x", "type": "topic", "subtype": "index", "status": "published",
                                       "created": "2026-09-24", "updated": "2026-09-24", "version": 1}), [])
+        # subtype: index 면제는 색인 페이지 유형에만 — area 에 붙이면 category 누락도 잡고 subtype 도 오류다
+        errs = fm.validate({"title": "x", "type": "area", "subtype": "index", "area_no": 7, "status": "seed",
+                            "created": "2026-09-24", "updated": "2026-09-24", "version": 1})
+        self.assertTrue(any("category" in e for e in errs), errs)
+        self.assertTrue(any("subtype" in e for e in errs), errs)
+        errs = fm.validate({"title": "x", "type": "glossary", "subtype": "matrix", "status": "published",
+                            "created": "2026-09-24", "updated": "2026-09-24", "version": 1})
+        self.assertTrue(any("subtype" in e for e in errs), errs)
+
+    def test_iso_title_stays_string(self):
+        """날짜 필드가 아닌 값(예: 일일 로그 title)은 ISO 날짜 모양이어도 문자열로 남는다. 날짜 필드는 따옴표 없는 날짜."""
+        meta = {"title": "2026-09-25", "type": "log", "status": "published", "created": "2026-09-25",
+                "updated": "2026-09-25", "version": 1}
+        text = fm.dumps(meta, "본문\n")
+        self.assertIn('title: "2026-09-25"', text)
+        self.assertIn("created: 2026-09-25", text)
+        back, _ = fm.parse(text)
+        self.assertIsInstance(back["title"], str)
+        self.assertEqual(back, meta)
+
+    def test_breadcrumb_re(self):
+        self.assertTrue(fm.BREADCRUMB_RE.match("[홈](../../index.md) › [로그](../index.md) › 2026-09-24"))
+        self.assertTrue(fm.BREADCRUMB_RE.match("홈"))
+        self.assertFalse(fm.BREADCRUMB_RE.match("홈페이지 소개 문장"))
 
 
 class TestAutoregion(unittest.TestCase):
@@ -230,6 +255,138 @@ class TestNavAndRender(unittest.TestCase):
         self.assertIn("| **입고** |", m)
         self.assertIsNone(render_for("unknown-key", "index.md", {}))
         self.assertIsInstance(render_for("metrics", "metrics.md", {}), str)
+
+
+class TestTrackLog(unittest.TestCase):
+    """트랙 로그(auto:track-log): 키 등록, data/tracks/<slug>/log.json 과 페이지 영역의 일치, 최신순 렌더링."""
+
+    def test_key_registered(self):
+        self.assertIn("track-log", ar.AUTO_KEYS)
+
+    def test_page_region_matches_log_json(self):
+        import json
+        checked = 0
+        for slug in track_slugs():
+            page = paths.DOCS / "tracks" / slug / "log.md"
+            src = paths.DATA / "tracks" / slug / "log.json"
+            if not page.is_file():
+                continue
+            text = page.read_text(encoding="utf-8")
+            if not ar.has_region(text, "track-log"):
+                continue
+            self.assertTrue(src.is_file(), f"{src} 없음: 트랙 로그 영역의 원천이 있어야 한다")
+            meta, _ = fm.parse(text)
+            rel = f"tracks/{slug}/log.md"
+            rendered = render_for("track-log", rel, meta)
+            self.assertEqual(ar.get_region(text, "track-log"), rendered,
+                             f"{rel} 의 auto:track-log 영역이 {src.relative_to(paths.ROOT)} 렌더 결과와 다르다(둘 중 하나를 고쳐 맞춘다)")
+            items = json.loads(src.read_text(encoding="utf-8")).get("items", [])
+            self.assertEqual(rendered.count("\n### 실행 ") + rendered.startswith("### 실행 "), len(items))
+            for it in items:
+                self.assertIn(f"### 실행 {it['run_id']} — ", rendered)
+                for head, key in render_mod.TRACK_LOG_ROWS:
+                    self.assertIn(f"| {head} | ", rendered)
+                    if it.get(key):
+                        self.assertIn(render_mod._esc(it[key]), rendered, f"{it['run_id']} {key}")
+            checked += 1
+        if not checked:
+            self.skipTest("auto:track-log 영역이 있는 트랙 로그 페이지 없음")
+
+    def test_render_newest_first(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            base = Path(d) / "tracks" / "zz-test"
+            base.mkdir(parents=True)
+            items = [{"run_id": "build-2026-09-24", "date": "2026-09-24", "stage": 1, "stage_name": "가", "ontology_change": "a|b"},
+                     {"run_id": "2026-09-29-01", "date": "2026-09-29", "stage": 1, "stage_name": "가"},
+                     {"run_id": "2026-09-26-01", "date": "2026-09-26", "stage": 2, "stage_name": "나"}]
+            (base / "log.json").write_text(json.dumps({"items": items}, ensure_ascii=False), encoding="utf-8")
+            old = render_mod.DATA
+            render_mod.DATA = Path(d)
+            try:
+                out = render_mod.render_track_log("zz-test")
+            finally:
+                render_mod.DATA = old
+        heads = [l for l in out.split("\n") if l.startswith("### 실행 ")]
+        self.assertEqual(heads, ["### 실행 2026-09-29-01 — 단계 1. 가", "### 실행 2026-09-26-01 — 단계 2. 나",
+                                 "### 실행 build-2026-09-24 — 단계 1. 가"])
+        self.assertIn("| 온톨로지 변경 | a\\|b |", out)                 # 표 셀의 | 는 이스케이프
+        self.assertEqual(out.count("| 다음 실행 제안 | 없음 |"), 3)       # 빈 항목은 "없음"
+        self.assertEqual(out.count("| 항목 | 내용 |"), 3)
+
+
+class TestRefreshStrict(unittest.TestCase):
+    def test_unregistered_key_strict(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            page = Path(d) / "x.md"
+            body = "---\ntitle: x\ntype: log\n---\n\n홈\n\n<!-- auto:no-such-key:start -->\n옛 내용\n<!-- auto:no-such-key:end -->\n"
+            page.write_text(body, encoding="utf-8")
+            old = render_mod.DOCS
+            render_mod.DOCS = Path(d)
+            try:
+                with self.assertRaises(render_mod.AutoRegionError):
+                    render_mod.refresh_all_auto_regions(strict=True)
+                self.assertEqual(page.read_text(encoding="utf-8"), body)
+                self.assertEqual(render_mod.refresh_all_auto_regions(), [])
+                self.assertEqual(len(render_mod.LAST_FAILURES), 1)
+                self.assertIn("등록되지 않은 키", render_mod.LAST_FAILURES[0])
+            finally:
+                render_mod.DOCS = old
+                render_mod.all_pages(refresh=True)
+
+
+class TestSelectTargetCoverage(unittest.TestCase):
+    """보류된 실행은 '다룬 것'이 아니다(최근 7일 건너뛰기·최근 감점), 제외가 풀린 영역은 바로 고른다."""
+
+    def setUp(self):
+        self.st = _load_script("select_target")
+        self.rotation = {"priority": {"skip_if_targeted_within_days": 7, "question_weight": 3}, "exclude_after_consecutive_parks": 3}
+        self.statuses = {7: {"status": "seed"}}
+
+    def _h(self, rid, area, parked, published, rt="area_deep_dive"):
+        return {"run_id": rid, "number": 0, "date": rid[:10], "run_type": rt, "area_no": area, "track": None,
+                "topic": None, "priority_questions": [], "parked": parked, "published": published, "forced": False}
+
+    def test_parked_runs_do_not_block_priority(self):
+        history = [self._h("2026-10-05-01", 7, True, False), self._h("2026-10-06-01", 7, True, False),
+                   self._h("2026-10-07-01", 7, True, False)]
+        priority = {"areas": [{"area_no": 7, "weight": 10}], "topics": [], "questions": []}
+        self.assertEqual(self.st.excluded_areas(history, self.rotation, priority), [])
+        self.assertEqual(self.st.lifted_areas(history, self.rotation, priority), [7])
+        self.assertEqual(self.st.excluded_areas(history, self.rotation, {"areas": []}), [7])
+        item = self.st.pick_priority(priority, self.rotation, history, "2026-10-08", self.statuses, [], [7])
+        self.assertIsNotNone(item)
+        self.assertEqual(item["area_no"], 7)
+
+    def test_lifted_area_skips_recent_published(self):
+        history = [self._h("2026-10-03-01", 7, False, True), self._h("2026-10-05-01", 7, True, False),
+                   self._h("2026-10-06-01", 7, True, False), self._h("2026-10-07-01", 7, True, False)]
+        priority = {"areas": [{"area_no": 7, "weight": 10}], "topics": [], "questions": []}
+        lifted = self.st.lifted_areas(history, self.rotation, priority)
+        self.assertEqual(lifted, [7])
+        self.assertIsNotNone(self.st.pick_priority(priority, self.rotation, history, "2026-10-08", self.statuses, [], lifted))
+
+    def test_published_run_still_skipped(self):
+        history = [self._h("2026-10-05-01", 7, False, True)]
+        priority = {"areas": [{"area_no": 7, "weight": 10}], "topics": [], "questions": []}
+        self.assertIsNone(self.st.pick_priority(priority, self.rotation, history, "2026-10-08", self.statuses, [], []))
+        self.assertFalse(self.st.covered(self._h("2026-10-05-01", 7, True, False)))
+        self.assertTrue(self.st.covered(self._h("2026-10-05-01", 7, False, True)))
+
+
+class TestAreaReflections(unittest.TestCase):
+    def test_pending_reflection_rule(self):
+        pub = _load_script("publish")
+        ar_mod = _load_script("agent_runner")
+        items = [{"run_id": "2026-09-26-01", "area_no": 5, "status": "제안"},
+                 {"run_id": "2026-09-26-01", "area_no": 5, "status": "반영"},
+                 {"run_id": "2026-09-26-01", "area_no": 9, "status": "제안"},
+                 {"run_id": "2026-10-02-01", "area_no": 5, "status": "제안"}]
+        got = [i for i, it in enumerate(items) if pub.pending_reflection(it, 5, "2026-09-30-01")]
+        self.assertEqual(got, [0])
+        self.assertEqual(ar_mod.area_reflection_items({"run_type": "track", "target": {"area_no": 5}}, "2026-09-30-01"), [])
 
 
 if __name__ == "__main__":

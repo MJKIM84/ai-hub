@@ -17,6 +17,7 @@ probe.json(웹 도구 점검 결과), docs_tree.txt(docs/ 페이지 경로 목�
   python3 pipeline/lib/runs.py park --run-id <id> --reason "…"
   python3 pipeline/lib/runs.py unpark --run-id <id>        # 재투입: runs/parked/<id> → runs/<id>, summary 의 보류 표시 해제
   python3 pipeline/lib/runs.py jsonget --file runs/<id>/verification.json --key verdict [--default x]
+  python3 pipeline/lib/runs.py jsonset --file runs/<id>/probe.json --set web_fetch_override=true …
   python3 pipeline/lib/runs.py setting --key daily_budget.max_retries
   python3 pipeline/lib/runs.py docs-tree --run-id <id>
   python3 pipeline/lib/runs.py run-dir --run-id <id>
@@ -59,7 +60,10 @@ RUN_TYPE_KO = {
     "area_deep_dive": "영역 심화", "topic": "주제 조사", "update": "갱신",
     "weekly_review": "주간 정리", "monthly_recheck": "월간 재검증", "track": "트랙 실행",
 }
-STEP_NAMES = ["준비", "대상 선정", "리서치", "1차 검증", "스토리텔러", "2차 검증", "퍼블리셔"]
+# 일일 로그 "단계별 결과와 소요 시간" 표의 행 순서. "링크·출처 점검"은 주간 정리(7.1)에서 run_daily.sh 가 리서치 전에 수행하는 단계이며
+# 실행되지 않은 날은 표에 행을 두지 않는다(OPTIONAL_STEPS)
+STEP_NAMES = ["준비", "대상 선정", "링크·출처 점검", "리서치", "1차 검증", "스토리텔러", "2차 검증", "퍼블리셔"]
+OPTIONAL_STEPS = {"링크·출처 점검"}
 ROLES = ["researcher", "verifier", "storyteller"]
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
@@ -84,7 +88,7 @@ DEFAULT_SETTINGS: dict = {
     "git_push": False,
     "timezone": "Asia/Seoul",
     "web_fetch_probe_url": "https://ref.gs1.org/epcis/",
-    "web_fetch_required": False,
+    "web_fetch_required": True,
     "runs_dir": "runs",
     "data_dir": "data",
 }
@@ -243,6 +247,13 @@ def is_parked(run_id: str, settings: dict | None = None) -> bool:
     return parked_dir(run_id, settings).is_dir()
 
 
+def is_discarded(run_id: str, settings: dict | None = None) -> bool:
+    """사용자가 폐기한 보류 실행인가(7.4 "재투입 또는 폐기"): runs/parked/<run_id>/DISCARDED 파일이 있다(RUN.md 5절).
+    폐기한 실행의 브리프는 다음 실행의 입력(최근 실행의 research.md)에 넣지 않는다. 연속 보류 횟수에는 그대로 센다
+    (제외 해제는 config/priority.yaml 의 areas 지정으로 한다) [가정]."""
+    return (parked_dir(run_id, settings) / "DISCARDED").is_file()
+
+
 # --- JSON·텍스트 ----------------------------------------------------------------------
 
 def read_json(path: Path | str, default=None):
@@ -387,6 +398,40 @@ def unpark_run(run_id: str, settings: dict | None = None) -> Path:
     log = RunLog(dst, settings)
     log.log(f"재투입: runs/parked/{run_id}/ → runs/{run_id}/ (이전 보류 사유: {prev.get('park_reason') or '기록 없음'})", step="재투입")
     return dst
+
+
+# --- 트랙 백로그: 사용자 지정 질문 등록 ---------------------------------------------------------------
+
+def register_user_track_questions(items: list[dict], slug: str, default_stage: int, day: str,
+                                  priority: dict | None = None) -> list[dict]:
+    """config/priority.yaml 의 track_questions 가운데 이 트랙(slug) 질문으로 백로그 항목(items)에 없는 것을 제기 근거 "사용자"로
+    더한다(8.2 "사용자는 track_questions 에 질문을 넣어 우선순위를 올린다"). 같은 문장(앞뒤 공백 무시)이나 같은 id 가 있으면
+    건너뛴다. items 를 고치고 더한 행 목록을 돌려준다. select_target.py(트랙 실행의 대상 선정 — 그 실행에서 바로 question_ids 로
+    고를 수 있게)와 publish.py(5단계, 대상 선정에서 등록하지 못한 경우의 보완)가 함께 쓴다."""
+    prio = priority if priority is not None else load_priority()
+    texts = {str(b.get("question", "")).strip() for b in items}
+    ids = {b.get("id") for b in items}
+    added: list[dict] = []
+    for q in prio.get("track_questions", []) or []:
+        if str(q.get("track", "")) != slug or not q.get("question"):
+            continue
+        text = str(q["question"]).strip()
+        if text in texts or (q.get("id") and q["id"] in ids):
+            continue
+        try:
+            st = int(q.get("stage") or default_stage)
+        except (TypeError, ValueError):
+            st = int(default_stage)
+        nums = [int(str(b["id"]).split("-")[1]) for b in items if re.match(rf"^q{st}-\d{{2}}$", str(b.get("id", "")))]
+        qid = f"q{st}-{(max(nums) + 1) if nums else 1:02d}"
+        row = {"id": qid, "question": text, "stage": st, "origin": "사용자", "status": "열림",
+               "answered_run_id": None, "answer_link": None, "created": day, "origin_run_id": None,
+               "priority": q.get("priority") or "normal"}
+        items.append(row)
+        texts.add(text)
+        ids.add(qid)
+        added.append(row)
+    return added
 
 
 # --- 정정 요청(inbox/corrections.md) -----------------------------------------------------------
@@ -746,6 +791,7 @@ def _cli(argv=None) -> int:
     p = sub.add_parser("park"); p.add_argument("--run-id", required=True); p.add_argument("--reason", required=True)
     p = sub.add_parser("unpark"); p.add_argument("--run-id", required=True)
     p = sub.add_parser("jsonget"); p.add_argument("--file", required=True); p.add_argument("--key", required=True); p.add_argument("--default", default="")
+    p = sub.add_parser("jsonset"); p.add_argument("--file", required=True); p.add_argument("--set", nargs="*", default=[])
     p = sub.add_parser("setting"); p.add_argument("--key", required=True); p.add_argument("--default", default="")
     p = sub.add_parser("docs-tree"); p.add_argument("--run-id", required=True)
     p = sub.add_parser("run-dir"); p.add_argument("--run-id", required=True)
@@ -786,6 +832,13 @@ def _cli(argv=None) -> int:
             print("true" if v else "false")
         else:
             print(v)
+    elif args.cmd == "jsonset":
+        # 최상위 키만 고친다(값 true/false/null/정수는 그 형식으로, 나머지는 문자열). run_daily.sh 가 probe.json 에 override 를 남길 때 쓴다
+        data = read_json(args.file, {}) or {}
+        for kv in args.set:
+            k, _, v = kv.partition("=")
+            data[k] = {"true": True, "false": False, "null": None}.get(v, int(v) if re.fullmatch(r"-?\d+", v) else v)
+        write_json(args.file, data)
     elif args.cmd == "setting":
         v = get_path(settings, args.key, None)
         if v is None:
