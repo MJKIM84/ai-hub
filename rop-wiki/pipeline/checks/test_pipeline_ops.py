@@ -295,6 +295,18 @@ class TestPromptSlimming(unittest.TestCase):
         self.assertIn("docs/references/index.md", [l for l, _ in full])
 
 
+class TestDailyLogLinks(unittest.TestCase):
+    def test_fix_relative_links(self):
+        from lib.render import fix_relative_links
+        g = next(p for p in sorted((paths.DOCS / "glossary").glob("*.md")) if p.name != "index.md")
+        txt = f"[용어](../glossary/{g.name}) · [없는 것](../glossary/zz-none.md) · [외부](https://example.org/a.md)"
+        out = fix_relative_links(txt, "logs/daily/2026-09-25.md")
+        self.assertIn(f"[용어](../../glossary/{g.name})", out)    # 일일 로그 기준 경로로 다시 씀
+        self.assertIn("없는 것", out)
+        self.assertNotIn("zz-none.md", out)                          # 찾지 못한 링크는 글자만 남김
+        self.assertIn("(https://example.org/a.md)", out)
+
+
 class TestSelection(unittest.TestCase):
     def test_weighted_track_pick(self):
         import select_target as S
