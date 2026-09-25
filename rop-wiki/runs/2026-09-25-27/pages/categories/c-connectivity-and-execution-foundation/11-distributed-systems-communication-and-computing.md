@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-009, ref-031, ref-227, ref-256, ref-468, ref-469, ref-470, ref-471, ref-472, ref-473, ref-474, ref-475, ref-476, ref-477, ref-478, ref-479, ref-480, ref-481, ref-482]
+sources: [ref-031, ref-256, ref-471, ref-472, ref-475, ref-477, ref-478, ref-479, ref-480, ref-481, ref-482]
 last_run: 2026-09-25
 version: 2
 ---

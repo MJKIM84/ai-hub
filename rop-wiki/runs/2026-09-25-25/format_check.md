@@ -1,23 +1,3 @@
 # 형식 검증 결과(pages)
 
-- 판정: 오류 13건
-- 분량 초과 자동 분리:
-    - docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-09-25-area10-s7.md (1,209자)
-    - docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md "4. 핵심 개념과 용어" → docs/topics/2026/2026-09-25-area10-s4.md (1,050자)
-    - docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-09-25-area10-s10.md (754자)
-    - docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md "8. 대표 연구와 자료" → docs/topics/2026/2026-09-25-area10-s8.md (671자)
-    - docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md "11. 열린 질문" → docs/topics/2026/2026-09-25-area10-s11.md (655자)
-- 오류:
-    - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
-    - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 09-robot-and-vendor-fleet-manager-integration.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 12-command-and-task-execution-reliability.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../a-business-supply-chain-design/03-capacity-site-and-facility-planning.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../b-common-information-and-environment-model/06-map-space-and-location-model.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area10-s10.md: 깨진 링크 ../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md
+- 판정: 통과

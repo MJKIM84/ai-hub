@@ -4,12 +4,12 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md | draft | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행 |
+| update | docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md | draft | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지 |
 | create | docs/topics/2026/2026-09-25-area11-s6.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "6. 대표 접근법과 기술" 절(2,039자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area11-s4.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "4. 핵심 개념과 용어" 절(1,171자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area11-s8.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "8. 대표 연구와 자료" 절(855자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area11-s7.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "7. 관련 표준·프레임워크·오픈소스" 절(769자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area11-s10.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(737자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area11-s10.md | draft | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(737자)을 옮겼다. 형식 수정: 본문 세부영역 링크 8개를 주제 페이지 위치 기준(../../categories/…) 경로로 고쳤다 |
 
 ## 변경 이력·색인
 
@@ -109,3 +109,4 @@
 - ref-031 직접 인용 1회 — 5절 서술의 'fulfills the order up to the last released node' 한 구절만 원문 인용하고 나머지 VDA 5050 내용은 재서술했다.
 - 기준일 명시 — f18 은 '2020년 논문 기준'(5절·7절·8절), f1·f2 는 'VDA 5050 3.0.0(main, 확인일 2026-09-25) 기준'(4절·5절·6절·7절)으로 본문에 밝혔다.
 - 분량 초과 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 본문 8,611자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,711자
+- 형식 수정: docs/topics/2026/2026-09-25-area11-s10.md 본문의 세부영역 링크 8개(9·12·8·1·20·26·3·27)를 주제 페이지 위치 기준 ../../categories/<대분류 slug>/<파일>.md 로 고쳤다. 세부영역 페이지 프런트매터 sources 를 분리 뒤 남은 각주 정의(ref-031, ref-256, ref-471, ref-472, ref-475, ref-477~ref-482)와 일치시켰다. 주장·태그·각주 내용은 바꾸지 않았다.
