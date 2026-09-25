@@ -15,3 +15,4 @@
 - 2026-09-25 12:50:10 KST [형식 검증]   - 출처 ref-031: data/source_texts 의 원문 텍스트(data/source_texts/ref-031.txt)가 있어 fetched true(github_raw)
 - 2026-09-25 12:50:10 KST [리서치] 예산 점검: 예산 안
 - 2026-09-25 12:50:11 KST [리서치] 결과: 성공 · 소요 4분 27초 · 예산 안
+- 2026-09-25 12:53:08 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-38/prompts/verification1.md (491,251자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)

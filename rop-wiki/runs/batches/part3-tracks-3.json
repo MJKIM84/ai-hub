@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 03:49:41",
+  "updated": "2026-09-25 03:53:10",
   "concurrency": 3,
   "items": [
     {
@@ -162,14 +162,18 @@
         "group": "t1",
         "label": "트랙1 매뉴얼 능력 온톨로지 #3"
       },
-      "status": "퍼블리셔 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-35",
           "started": "2026-09-25 03:31:37",
           "agents_exit": 0,
-          "publish_exit": null,
-          "agents_done": "2026-09-25 03:49:41"
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 03:49:41",
+          "published_at": "2026-09-25 03:53:09",
+          "cost_usd": 15.6862,
+          "duration_sec": 1143.0,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-35"
@@ -237,9 +241,16 @@
         "group": "t1",
         "label": "트랙1 매뉴얼 능력 온톨로지 #4"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-41",
+          "started": "2026-09-25 03:53:10",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-41"
     },
     {
       "index": 9,
