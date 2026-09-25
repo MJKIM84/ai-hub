@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-5",
   "date": "2026-09-25",
-  "updated": "2026-09-25 09:31:09",
+  "updated": "2026-09-25 10:07:13",
   "concurrency": 3,
   "items": [
     {
@@ -351,14 +351,19 @@
         "group": "t2",
         "label": "트랙2 자연어 작업 챗봇 #11 q3-04"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-77",
           "started": "2026-09-25 09:06:55",
-          "agents_exit": null,
-          "publish_exit": null,
-          "continued": false
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": false,
+          "agents_done": "2026-09-25 09:51:08",
+          "published_at": "2026-09-25 09:55:48",
+          "cost_usd": 35.0935,
+          "duration_sec": 2801.0,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-77"
@@ -406,9 +411,17 @@
         "group": "t2",
         "label": "트랙2 자연어 작업 챗봇 #12 q4-01"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-79",
+          "started": "2026-09-25 09:55:50",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
+        }
+      ],
+      "run_id": "2026-09-25-79"
     },
     {
       "index": 14,
@@ -470,14 +483,19 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #15 q4-04"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-78",
           "started": "2026-09-25 09:31:09",
-          "agents_exit": null,
-          "publish_exit": null,
-          "continued": false
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": false,
+          "agents_done": "2026-09-25 10:02:23",
+          "published_at": "2026-09-25 10:07:11",
+          "cost_usd": 29.9855,
+          "duration_sec": 2024.5,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-78"
@@ -512,9 +530,17 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #16 q5-01"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-80",
+          "started": "2026-09-25 10:07:13",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
+        }
+      ],
+      "run_id": "2026-09-25-80"
     },
     {
       "index": 19,

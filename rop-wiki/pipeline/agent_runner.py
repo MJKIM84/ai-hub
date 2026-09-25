@@ -840,6 +840,21 @@ def _index_inputs(target_json: dict, track_cfg: dict | None) -> list[tuple[str, 
     return out
 
 
+def _standards_summary() -> tuple[str, str]:
+    """표준·프레임워크 목록 요약(이름·종류·발행 기관 한 줄씩). 전체 표(관련 영역·요약·출처 링크)는 8만 자가 넘어 스토리텔러 입력에서 뺀다
+    — 이름과 종류만 알면 기존 항목과 표기를 맞추고 standards_updates 중복을 피할 수 있다(운영 전환 1-5 비용, 3부 배치)."""
+    txt = runs.read_text(ROOT / "docs/standards/index.md", "")
+    rows = []
+    for line in txt.split("\n"):
+        if not line.startswith("| ") or line.startswith("| 이름") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 3:
+            name = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", cells[0])
+            rows.append(f"- {name} · {cells[1]} · {cells[2]}")
+    return (f"docs/standards/index.md (요약: {len(rows)}개 — 이름 · 종류 · 발행 기관)", "\n".join(rows) or "없음")
+
+
 def _monthly_inputs() -> list[tuple[str, str]]:
     out: list[tuple[str, str]] = []
     for rel in ("docs/references/index.md", "docs/standards/index.md", "docs/glossary/index.md"):
@@ -1054,7 +1069,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             spec = _weekly_section_spec()   # 주간 정리 페이지의 기준 절 구성(templates/weekly-log.md 또는 storyteller.md 6절)
             if spec:
                 inputs.append(spec)
-        _add(inputs, f"{rel_run}/docs_tree.txt")
+        # docs_tree.txt(문서 목록)는 넣지 않는다: 링크·경로 존재 검사는 형식 검증 코드가 한다(D-045)
         inputs.extend(_index_inputs(target_json, track_cfg))
         _add(inputs, "_source/ROP_SCM_연구분야_분류.md")
         if retry and (rd / "verification2.json").is_file():
@@ -1080,7 +1095,10 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             if letter:
                 _add(inputs, paths.category_repo_path(letter))
         inputs.extend(_index_inputs(target_json, track_cfg))
-        _add(inputs, "docs/standards/index.md")
+        if rt in ("weekly_review", "monthly_recheck"):
+            _add(inputs, "docs/standards/index.md")
+        else:
+            inputs.append(_standards_summary())
         _add(inputs, f"{rel_run}/docs_tree.txt")
         _add(inputs, "inbox/corrections.md")
         if rt == "weekly_review":
