@@ -86,7 +86,7 @@
       "claim": "VDMA 가 공개한 LIF 공식 저장소 README 는 LIF 를 무인운반 차량 통합사업자가 주행 레이아웃(엣지·노드·스테이션의 모음)을 상위 관제에 넘기기 위한 교환 형식으로 정의하며, 1.0.0 판(2023-09)이 VDA 5050 인터페이스 정의의 영향을 받았다고 밝힌다.",
       "tag": "사실",
       "source_ids": [
-        "ref-228"
+        "ref-242"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -100,7 +100,7 @@
       "claim": "LIF 1.0.0 지침 기반 제3자 JSON 스키마에서 스테이션은 식별자, 상호작용 노드 목록(interactionNodeIds), 위치(x·y 미터, 선택 방향 theta), 높이·이름·설명만 두고 스테이션 유형 필드가 없으며, 노드의 차종별 속성에 action 을 두고 레이아웃은 층(layoutLevelId)·버전(layoutVersion)을 갖는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-229"
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -115,8 +115,8 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-228",
-        "ref-229"
+        "ref-242",
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -130,7 +130,7 @@
       "claim": "IFC 4.3 개발 저장소 문서는 IfcTransportElement 를 시설 안에서 사람·동물·물품을 옮기는 운송 관련 객체의 일반화로 정의하고 엘리베이터·에스컬레이터·무빙워크를 예로 들어, BIM 모델에서는 엘리베이터가 표준 클래스로 담길 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-230"
+        "ref-244"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -144,8 +144,8 @@
       "claim": "IFC 4.3 개발 저장소의 콘센트 유형 열거(IfcOutletTypeEnum: 음향영상·통신·전원·데이터·전화 콘센트)와 전기기기 유형 열거(IfcElectricApplianceTypeEnum: 식기세척기·복사기·자판기 등)에는 차량·로봇 충전 설비를 뜻하는 값이 없고 USERDEFINED·NOTDEFINED 만 남는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-231",
-        "ref-232"
+        "ref-245",
+        "ref-246"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -159,9 +159,9 @@
       "claim": "BIM(IFC) 입력에서 엘리베이터는 표준 클래스로 얻을 수 있지만 로봇 충전소는 이번에 확인한 IFC 4.3 유형 값에 없어, 사용자 정의 유형·속성 세트로 따로 모델링되거나 설계 도면에 아예 담기지 않을 가능성이 클 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-230",
-        "ref-231",
-        "ref-232"
+        "ref-244",
+        "ref-245",
+        "ref-246"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -175,7 +175,7 @@
       "claim": "Beinschob 외(Robotics and Autonomous Systems 87, 2017)는 다중 AGV 도입의 병목으로 정밀 2D 지도 작성, 픽업·하역 위치의 3D 좌표 지정, 사람의 경로망(roadmap) 설계를 들고, 3D 레이저 스캐너로 벽·문·랙의 크기·위치·방향을 담은 의미 지도를 만들어 경로망을 자동 설계하는 반자동 방법을 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-234"
+        "ref-248"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,7 +190,7 @@
       "claim": "Digani 외(IROS 2014)는 산업 창고의 의미 지도에서 얻은 자유 공간 지도를 바탕으로 커버리지·연결성·경로 중복성을 고려해 다중 AGV 경로망을 자동 생성하는 방법을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-235"
+        "ref-249"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -205,7 +205,7 @@
       "claim": "MiR 충전 스테이션(MiR Charge 24V) 운영 매뉴얼은 사용자가 로봇을 충전기 1m 안으로 직접 몰고 가 지도에 충전기 유형 마커를 만든 뒤 마커 감지 기능을 쓰면 충전기의 V자 마커로 위치·방향이 자동 설정된다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-236"
+        "ref-250"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -221,7 +221,7 @@
       "claim": "연계 대상: Nav2 도킹 프레임워크는 도크 위치를 설정 파라미터나 도크 데이터베이스 YAML 에 유형·좌표계·자세로 사람이 적고, 실행 시 AprilTag 같은 검출기가 내는 detected_dock_pose 로 자세를 보정하며, README 에는 지도·평면도에서 도크 위치를 도출하는 방법이 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-233"
+        "ref-247"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -235,7 +235,7 @@
       "claim": "Sommer·Stjepandić·Stobrawa·von Soden(Journal of Industrial Information Integration, 2023)은 공장 계획용으로 현장 스캔과 객체 인식으로 생산 레이아웃과 설비 의미를 기록해 건조 환경(built environment)의 디지털 트윈을 자동 생성하는 방법을 다뤘다.",
       "tag": "사실",
       "source_ids": [
-        "ref-237"
+        "ref-251"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -281,13 +281,13 @@
       "tag": "추정",
       "source_ids": [
         "ref-079",
-        "ref-236",
-        "ref-233",
-        "ref-234",
-        "ref-237",
+        "ref-250",
+        "ref-247",
+        "ref-248",
+        "ref-251",
         "ref-085",
-        "ref-228",
-        "ref-229",
+        "ref-242",
+        "ref-243",
         "ref-031",
         "ref-109"
       ],
@@ -304,8 +304,8 @@
       "tag": "추정",
       "source_ids": [
         "ref-079",
-        "ref-229",
-        "ref-233"
+        "ref-243",
+        "ref-247"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -319,10 +319,10 @@
       "claim": "연계 대상: 충전기 앞 정밀 도킹과 마커 감지(MiR V자 마커, Nav2 도킹)는 분류 원문 9장의 로봇 자체 지능·제어 쪽이므로, 이종 제조사를 연결하는 ROP 는 충전소·스테이션의 목록과 대략 위치, 접근 지점, 제조사 action(startCharging, pick·drop)으로의 매핑과 정보 출처 관리를 맡는 경계가 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-236",
-        "ref-233",
+        "ref-250",
+        "ref-247",
         "ref-031",
-        "ref-229"
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -394,7 +394,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-228",
+      "id": "ref-242",
       "org": "VDMA (Intralogistics-2X-LIF GitHub)",
       "title": "Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA)",
       "published": "2023-09",
@@ -409,7 +409,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-229",
+      "id": "ref-243",
       "org": "continua-systems (GitHub)",
       "title": "vdma-lif — schema/lif-schema.json (JSON parsers and models for the VDMA LIF)",
       "published": null,
@@ -424,7 +424,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-230",
+      "id": "ref-244",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcTransportElement (docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md)",
       "published": null,
@@ -439,7 +439,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-231",
+      "id": "ref-245",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcOutletTypeEnum (docs/schemas/domain/IfcElectricalDomain/Types/IfcOutletTypeEnum.md)",
       "published": null,
@@ -454,7 +454,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-232",
+      "id": "ref-246",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcElectricApplianceTypeEnum (docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricApplianceTypeEnum.md)",
       "published": null,
@@ -469,7 +469,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-233",
+      "id": "ref-247",
       "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
       "title": "nav2_docking — README (Open Navigation's Nav2 Docking Framework)",
       "published": null,
@@ -484,7 +484,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-234",
+      "id": "ref-248",
       "org": "Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L.",
       "title": "Semi-automated map creation for fast deployment of AGV fleets in modern logistics",
       "published": "2017",
@@ -499,7 +499,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-235",
+      "id": "ref-249",
       "org": "Digani, V., Sabattini, L., Secchi, C., & Fantuzzi, C.",
       "title": "An automatic approach for the generation of the roadmap for multi-AGV systems in an industrial environment",
       "published": "2014",
@@ -514,7 +514,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-236",
+      "id": "ref-250",
       "org": "Mobile Industrial Robots(MiR) (ManualsLib 게재본)",
       "title": "MiR Charge 24V Operating Manual — Setting charging station markers on the map",
       "published": null,
@@ -529,7 +529,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-237",
+      "id": "ref-251",
       "org": "Sommer, M., Stjepandić, J., Stobrawa, S., & von Soden, M.",
       "title": "Automated generation of digital twin for a built environment using scan and object detection as input for production planning",
       "published": "2023",
@@ -619,13 +619,13 @@
     "unverified": [
       "모든 finding 교차 확인 실패: 사례·표준마다 발행 주체 한 곳의 자료만 있음(f9 의 두 IFC 열거 파일은 같은 발행 주체)",
       "f2·f14 의 '평면도 자동 인식·도출 부재'는 열람 도구 응답 기준이며 문서 전체를 글자 단위로 대조하지 않음",
-      "f6 LIF 스테이션 유형 필드 부재는 제3자 스키마(ref-229) 기준이며 VDMA 공식 지침 PDF 와 공식 저장소 스키마 파일은 열지 못함(공식 저장소 추정 경로 404)",
+      "f6 LIF 스테이션 유형 필드 부재는 제3자 스키마(ref-243) 기준이며 VDMA 공식 지침 PDF 와 공식 저장소 스키마 파일은 열지 못함(공식 저장소 추정 경로 404)",
       "f10 IFC 4.3 의 다른 클래스(IfcElectricFlowStorageDevice, IfcFurniture 등)·속성 세트에 로봇 충전소·작업대 표현이 있는지 미확인",
       "f11·f12·f15·f16·f17 논문 원문 미열람(검색 요약 범위), f12 의 작업 지점 입력 방식 미확인",
       "f13 MiR 충전기 마커 절차는 매뉴얼 게재 사이트 사본의 검색 요약이며 벤더 주장",
       "Kollmorgen NDC8 의 DWG·DXF 가져오기와 스테이션 설정은 검색으로 확인하지 못해 넣지 않음",
       "국내 물류센터에서 도면·레이아웃 자료로 충전소·작업대를 관제에 등록한 사례는 한국어 검색 2회에서 찾지 못함(개인 저장소·마케팅 자료만 나와 넣지 않음, oq-022 미해결)",
-      "ref-229·ref-230~ref-233·ref-236 발행일 미확인"
+      "ref-243·ref-244~ref-247·ref-250 발행일 미확인"
     ],
     "scope_violations": [
       "f14·f20: 충전기 앞 정밀 도킹과 마커 감지는 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이므로 '연계 대상: '으로 표시하고 도크 위치 정보의 출처 사례로만 씀",
@@ -636,7 +636,7 @@
       "queries": 15,
       "sources": 10
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다(재사용 ref-079 traffic-editor 원본, ref-031 VDA 5050 main 명세 / 신규 ref-228 LIF 공식 README, ref-229 제3자 LIF 스키마, ref-230~ref-232 IFC 4.3 개발 원본 3건, ref-233 Nav2 도킹 README). 논문·벤더 매뉴얼 6건(재사용 ref-085·ref-109 포함)은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium, 벤더 low). 교차 확인 0건. 검색 15회/40, 신규 출처 10건/20(ref-228~ref-237), 재사용 4건(ref-031, ref-079, ref-085, ref-109). 질문 선택: target.json 지정 q1-03 1건. q1-03 은 '도면에서 운영 시설을 자동 인식한 사례는 검색 범위에서 찾지 못했고, 도면 밖 정보(수동 주석·현장 감지·레이아웃 교환·설비 계획)로 보완한다'로 답했으며 종합 신뢰도 medium 으로 본다(부재는 확인이 아님). 한국 자료: 찾지 못함. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 은 f15(객체 인식 기반 트윈 생성) 정도이며 도면 해석이 아니라 현장 스캔 해석이어서 6. 지도·공간·위치 모델·22. 시뮬레이션·예측용 디지털 트윈 쪽으로만 연결했다. 백로그 참고: q1-07 은 q1-06 과 같은 질문의 중복 등록(실행 2026-09-25-11)으로 보여 폐기 처리 검토를 제안한다. 일반 열린 질문 신규 없음(새 질문은 모두 트랙 전용). 후속 질문 2건, 온톨로지 변경 제안 3건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다(재사용 ref-079 traffic-editor 원본, ref-031 VDA 5050 main 명세 / 신규 ref-242 LIF 공식 README, ref-243 제3자 LIF 스키마, ref-244~ref-246 IFC 4.3 개발 원본 3건, ref-247 Nav2 도킹 README). 논문·벤더 매뉴얼 6건(재사용 ref-085·ref-109 포함)은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium, 벤더 low). 교차 확인 0건. 검색 15회/40, 신규 출처 10건/20(ref-242~ref-251), 재사용 4건(ref-031, ref-079, ref-085, ref-109). 질문 선택: target.json 지정 q1-03 1건. q1-03 은 '도면에서 운영 시설을 자동 인식한 사례는 검색 범위에서 찾지 못했고, 도면 밖 정보(수동 주석·현장 감지·레이아웃 교환·설비 계획)로 보완한다'로 답했으며 종합 신뢰도 medium 으로 본다(부재는 확인이 아님). 한국 자료: 찾지 못함. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 은 f15(객체 인식 기반 트윈 생성) 정도이며 도면 해석이 아니라 현장 스캔 해석이어서 6. 지도·공간·위치 모델·22. 시뮬레이션·예측용 디지털 트윈 쪽으로만 연결했다. 백로그 참고: q1-07 은 q1-06 과 같은 질문의 중복 등록(실행 2026-09-25-11)으로 보여 폐기 처리 검토를 제안한다. 일반 열린 질문 신규 없음(새 질문은 모두 트랙 전용). 후속 질문 2건, 온톨로지 변경 제안 3건."
   },
   "track": {
     "slug": "floorplan-recognition",

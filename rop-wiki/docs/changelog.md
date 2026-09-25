@@ -28,6 +28,25 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설), 상태 줄 열린 3·답함 3으로 갱신, 4절 결론·불확실성, 5절 q2-06 등록·중복 폐기 기록, 6절 전환 아니오(q1-04·q1-05·q1-06), 7·8·9절 갱신 |
+| 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.2 → v0.3: 개념 '작업 스테이션' 추가(확정), '충전 위치' 접근 지점 속성 추가·확정, '엘리베이터' BIM 대응 클래스 속성 추가·확정, 다이어그램에 작업 스테이션 노드, 6절 질문 4건 추가·q1-03 항목 근거 보강 |
+| 2026-09-25-19 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 운영 시설(충전소·작업 스테이션) 보완 사례 소절 추가, 4절에 단계 2 전 선행 근거(IFC 4.3·VDMA LIF·VDA 5050 시설 표현) 작성 |
+| 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 초안 v0.3, 아이디어 3·4절 갱신, 백로그 q1-03 답함·중복 3건 폐기 반영 |
+| 2026-09-25-19 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 1: q1-03 답함(충전 위치·작업 스테이션 보완 사례), 공간 그래프 스키마 초안 v0.2→v0.3, 백로그 중복 3건 폐기·q2-06 등록, 신규 출처 id ref-046~ref-250로 재부여 |
+| 2026-09-25-19 | 생성 | [docs/references/ref-046.md](references/ref-046.md) | 참고문헌 ref-046 등록: Layout-Interchange-Format — README (Repository for the Layou… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-212.md](references/ref-212.md) | 참고문헌 ref-212 등록: vdma-lif — schema/lif-schema.json (JSON parsers and models f… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-213.md](references/ref-213.md) | 참고문헌 ref-213 등록: IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IF… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-214.md](references/ref-214.md) | 참고문헌 ref-214 등록: IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-215.md](references/ref-215.md) | 참고문헌 ref-215 등록: IFC 4.3 — IfcElectricApplianceTypeEnum (개발 브랜치 ifc4.3-main 원… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-216.md](references/ref-216.md) | 참고문헌 ref-216 등록: nav2_docking — README (Open Navigation's Nav2 Docking Framew… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-217.md](references/ref-217.md) | 참고문헌 ref-217 등록: Semi-automated map creation for fast deployment of AGV fleet… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-218.md](references/ref-218.md) | 참고문헌 ref-218 등록: An automatic approach for the generation of the roadmap for… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-219.md](references/ref-219.md) | 참고문헌 ref-219 등록: MiR Charge 24V Operating Manual — Setting charging station m… |
+| 2026-09-25-19 | 생성 | [docs/references/ref-241.md](references/ref-241.md) | 참고문헌 ref-241 등록: Automated generation of digital twin for a built environment… |
+| 2026-09-25-19 | 생성 | [docs/glossary/layout-interchange-format.md](glossary/layout-interchange-format.md) | 용어집 항목 레이아웃 교환 형식 |
+| 2026-09-25-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-15 | 갱신 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s7.md](topics/2026/2026-09-25-area05-s7.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,658자)을 옮겼다 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s6.md](topics/2026/2026-09-25-area05-s6.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "6. 대표 접근법과 기술" 절(1,396자)을 옮겼다 |

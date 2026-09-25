@@ -505,6 +505,49 @@
       "ref_id": "ref-138",
       "run_id": "2026-09-25-15",
       "date": "2026-09-25"
+    },
+    {
+      "name": "VDMA LIF (Layout Interchange Format)",
+      "org": "VDMA",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        6,
+        9
+      ],
+      "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+      "summary": "무인운반 차량 통합사업자가 엣지·노드·스테이션으로 된 주행 레이아웃을 상위 관제에 넘기기 위한 구속력 없는 교환 형식. 판·발행일은 출처마다 달라 열린 질문으로 두었다.",
+      "ref_id": "ref-046",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IFC 4.3 (Industry Foundation Classes, 개발 저장소 ifc4.3-main)",
+      "org": "buildingSMART",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md",
+      "summary": "BIM 교환 형식. 개발 원본에서 IfcTransportElement 가 엘리베이터 등 운송 요소를 담고, 확인한 콘센트·전기기기 유형 열거에는 로봇 충전 설비 값이 없다. 게시판 IFC 4.3 ADD2와 문구가 다를 수 있다.",
+      "ref_id": "ref-213",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Nav2 Docking Framework (nav2_docking)",
+      "org": "ROS Navigation (Open Navigation)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16,
+        6
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md",
+      "summary": "도크 위치를 파라미터나 도크 데이터베이스 YAML 로 정의하고 검출기의 검출 자세로 보정하는 ROS 2 도킹 서버. 정밀 도킹은 로봇 자체 지능·제어 쪽 연계 대상이다.",
+      "ref_id": "ref-216",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
     }
   ]
 }
