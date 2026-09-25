@@ -76,3 +76,11 @@
 
 - 2026-09-25 14:49:30 KST [퍼블리셔] 결과: 실패 · 소요 46초 · 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 772개 검사)
 - 2026-09-25 14:49:30 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 772개 검사)))
+- 2026-09-25 14:50:09 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 772개 검사)))
+- 2026-09-25 14:51:19 KST [퍼블리셔] --log-only: 사이트 빌드 실패(로그 페이지 반영은 유지): //squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/[0m
+[0m
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'logs/daily/2026-09-25.md' contains an unrecognized relative link '…', it was left as is.
+
+- 2026-09-25 14:51:19 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 대분류 연결 — 생성 0/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
