@@ -28,6 +28,12 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-55 | 갱신 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 아직 다루지 않은 연결에 7. 화물·재고·자산 식별과 추적 명시), '참고 자료' 끝에 새 각주 정의 38건 추가 |
+| 2026-09-25-55 | 요약 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | D. 계획·최적화: '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) |
+| 2026-09-25-55 | 생성 | [docs/references/ref-493.md](references/ref-493.md) | 참고문헌 ref-493 등록: Decentralized Multi-Robot Task Allocation Under Degraded Com… |
+| 2026-09-25-55 | 생성 | [docs/references/ref-494.md](references/ref-494.md) | 참고문헌 ref-494 등록: Trust-Aware Sequential Decision Making and Rollout Planning… |
+| 2026-09-25-55 | 생성 | [docs/glossary/fleet-control-level.md](glossary/fleet-control-level.md) | 용어집 항목 플릿 제어 수준 |
+| 2026-09-25-55 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 기반·호라이즌 |
 | 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-01 답함(처리 흐름 네 단계·사람 검토 네 지점, 결론은 추정), 2~9절 갱신, 후속 질문 2건(q3-07·q3-08). 2차 수정: H1 아래 단계 상태 줄 갱신(진행 중 · 열린 7 · 답함 1), 6절 첫 행 검증 판정 '충족 · 전환 미승인', 전환 줄에 핵심 구성 요소 추가. 머리 영역 수정 때문에 페이지 전문으로 보냄 |
 | 2026-09-25-54 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5. 구현 가설 절 첫 작성: 처리 흐름과 사람 검토 지점(q3-01, 실행 2026-09-25-54, 추정 중심), 핵심 구성 요소·다른 아이디어와의 연결은 아직 조사되지 않음(2차 재실행에서 변경 없음) |
 | 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 아이디어 5절 첫 반영(q3-01), 백로그 후속 질문 15건·q3-01 답함, 스키마 초안 변경 없음 기록. 상태 줄은 입력 값 그대로(현재 단계 단계 1 유지, 마지막 트랙 실행 2026-09-25)(2차 재실행에서 변경 없음) |
