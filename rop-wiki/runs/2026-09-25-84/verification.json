@@ -1,0 +1,288 @@
+{
+  "run_id": "2026-09-25-84",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에서 Cochrane 핸드북 14장의 기관·제목·URL이 일치하고, 스니펫에 다섯 영역(비뚤림 위험·비일관성·비직접성·비정밀성·출판 비뚤림)과 결과(outcome)별 행 구성이 나타난다. 네 수준 표기는 브리프 스니펫 기준. 발행일 미확인. 단일 출처라 교차 확인 없음."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "원문 미열람. ACM DL 서지(ESEM 2008, 178–187쪽, DOI 10.1145/1414004.1414034)는 일치한다. 스니펫이 뒷받침하는 범위는 '1차 연구 질 평가 체계와 근거 묶음 강도 등급 체계를 개관하고 애자일 개발 체계적 문헌고찰로 예시'까지다. '처음 적용한 연구'(순위 표현), 'GRADE(2004판)를 풀어 설명', '질적·관찰 연구를 함께 다루는'은 확인되지 않아 해당 구절은 삭제 지시."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에서 NASA ESTO의 'Definition Of Technology Readiness Levels'(esto.nasa.gov/files/trl_definitions.pdf)가 확인되고, 스니펫은 TRL 5를 관련 환경 검증, TRL 6을 관련 환경의 시스템·하위 시스템 모델 또는 시제품 시연으로 설명한다. '실험실 규모와 공학 규모 검증을 구분'은 스니펫에 없으므로 문구 조정 지시. 발행일 미확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 국가법령정보센터에서 방위사업청 '기술성숙도평가(TRA) 업무지침'이 검색되고 스니펫에 'TRL 6으로 평가되면 체계개발 진입이 가능하다'는 내용이 있다. 다만 검색 결과의 admRulSeq 값(2000000021317, 2100000048410)이 브리프 URL(2000000018891)과 달라 브리프 URL이 가리키는 판은 확인하지 못했다. 규칙 번호도 검색 결과에서 '예규 제725호'로 나와 브리프의 '훈령 제725호'와 다르므로 번호·종류·제정일은 미확인으로 둔다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-05). 게시된 아이디어 3 페이지 3절 데이터셋 표의 검증된 문장과 일치(5,000장, 80여 범주, 계단 있음·엘리베이터 미확인). 원문 미열람, 기존 각주 ref-063 재사용."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용. 기존 페이지에서 FloorPlanCAD 엘리베이터 범주를 제3자 카드 근거 추정으로 둔 것과 일치. 추정 태그 적절."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-36). ref-421·ref-213은 엘리베이터(ELEVATOR 유형 값) 부분을 뒷받침한다. IfcDoor·IfcStair 부분의 근거인 ref-419·ref-420이 source_ids에 빠져 있어 각주 추가 지시. 개발 브랜치 기준 명시와 실무 IFC 프록시 오분류 가능성(기존 검증 문장, ref-432) 병기 지시."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정(결론 구절). 두 열거에 충전 설비 값이 없다는 것은 출처가 뒷받침한다(사실). 그러나 '충전 위치는 BIM 표준 유형으로 도면에 담기지 않는 것으로 확인된다'는 일반화이며, 기존 게시 페이지는 이를 '담기지 않을 가능성이 클 것으로 보인다 [추정]'으로 두었다. 두 출처는 발행 주체가 같다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-19). traffic-editor 경유점 속성을 사람이 입력한다는 기존 검증 문장과 일치. 충전소 지정 속성 이름에 관한 출처 충돌(열린 질문 oq-069)을 함께 표시하도록 지시."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용. '부재 확인 아님'을 명시한 추정으로, 기존 페이지 한계 서술과 일치."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. IDTA 02020의 요구·제공 능력 비교와 속성 제약은 기존 검증 사실. '공간 통과 조건과 로봇 능력을 같은 틀로 대조할 표현 수단이 존재한다'는 로봇 공간 통과로 옮긴 해석이며, 기존 페이지는 이를 추정으로 두었다. 해석 구절을 [추정]으로 분리하라는 지시. 원문 미열람."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. 팩트시트 스키마와 플릿 어댑터 템플릿에 계단·문·승강기 능력 필드가 없다는 것은 기존 검증 사실. '가설 2 의 대조에 쓸 로봇 쪽 능력 값이 관제 인터페이스에서 오지 않는다'는 해석으로 [추정] 분리."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. Pset_DoorCommon·Pset_StairCommon 속성은 기존 검증 사실(공식 문서 검색 요약, 원문 미열람). '공간 쪽 통과 조건 값은 BIM 에서 얻을 수 있다'는 해석(실무 모델에 속성이 채워지는지는 미확인)으로 [추정] 분리."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. 문 어댑터가 문 여닫기를 처리한다는 것은 기존 검증 사실. '대조 규칙이 선택 조건을 가져야 한다'는 기존 페이지에서도 추정으로 둔 해석이다. 연계 대상 표시는 적절함. 해석 구절은 [추정]으로 분리."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-82). 단계 5 페이지에서 저자 보고, 지도 1건, 재확인 안 됨으로 [추정] 처리한 것과 일치. 원문 미열람."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용. 과제 측 보고값 추정으로 적절. 다만 as_of를 2026-09-25로 적었는데, 기존 게시 문장은 기준일을 2015-04(재게재 기사 기준, CORDIS 원 게재일 미확인)로 두었으므로 그에 맞추도록 지시."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "벤더 주장. vendor_claim: true이고 태그가 추정이다. 판정 근거로 쓰지 않는다는 처리가 기존 페이지와 일치."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. building_map_generator가 사람이 주석한 파일로 월드와 주행 그래프를 만든다는 것은 기존 검증 사실(같은 Open Robotics 자료라 독립 교차 확인 아님). '도면 기반 결과를 시뮬레이션 초기값으로 옮기는 경로가 존재한다'는 입력이 사람 주석인 도구를 도면 인식 결과로 넓힌 해석이므로 [추정]으로 분리."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. 실제 부하 상태로 초기화하면 과도 구간이 준다는 보고는 기존 검증 사실(저자 미확인, 원문 미열람). '도면 기반 정적 초기값만으로는 운영 예측용 초기값이 되지 않음을 시사'는 기존 페이지에서 추정으로 둔 해석이므로 [추정]으로 분리. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분 서술 유지."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. BIM 격자 지도가 구조 요소만 담아 가구·설계–시공 편차가 위치추정 정확도에 영향을 준다는 것은 기존 검증 사실. '반대 방향 근거가 된다'는 가설 판정용 해석으로 [추정] 분리. 연계 대상 표시 유지."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합(추정, low). 근거 f1·f2는 판정 절차를 직접 정하지 않으며 finding도 그렇게 밝힌다. f2 강등 뒤에도 GRADE 영역(f1)이 핵심 근거로 남는다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "설계 제안(추정). 판정 값 네 가지는 트랙 개요 3절 정의와 일치. 다만 '부분 지지'(빠지는 부분 확인)와 '미판정'(핵심 하위 주장에 직접 근거 없음)의 조건이 겹칠 수 있고 우선순위가 정해지지 않았으므로, 남은 불확실성에 명시하라는 지시."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "잠정 판정(추정, low). 근거 f5~f10·f20과 맞는다. 물류 도면의 직접 근거가 없어 f22 규칙의 미판정 조건과도 겹친다는 점을 병기하도록 지시. 트랙 개요 3절에는 '부분 지지(잠정)'로만 싣는다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "잠정 판정(추정, low). 표현 가능성만 확인되고 대조 정확도 근거가 없다는 서술이 f11~f14와 맞는다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "잠정 판정(추정). 벤더 수치를 판정 근거에서 뺀 처리가 적절하다. 미판정은 f22 규칙과 맞는다."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "실험 후보 도출(추정). 실험 페이지의 '제안' 상태 계획의 근거로 쓸 수 있다. 수치 목표나 합격 임계값은 근거가 없어 넣지 않는다."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "설명용 가정 사례(추정). 측정값이 없음을 밝혔다. 흐름 단계 출하 / 예외·성과."
+    },
+    {
+      "finding_id": "f28",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 범위 관찰(부재 확인 아님)로 적절."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "f8: 게시된 아이디어 3 페이지 4절·스키마 초안 6절에서는 '로봇 충전소는 … 담기지 않을 가능성이 클 것으로 보인다 [추정]'인데, f8은 같은 결론을 '확인된다 [사실]'로 올려 기존 검증 문장과 충돌한다",
+      "f9: 충전소 지정 속성 이름(is_charger 대 is_parking_spot)은 열린 질문 oq-069의 출처 충돌 대상이다",
+      "f16: 기존 게시 문장의 기준일은 2015-04(재게재 기사 기준)인데 f16의 as_of는 2026-09-25이다",
+      "f5~f20: 이전 실행의 검증된 finding을 재인용한 것이므로 새 각주를 만들지 말고 기존 ref id 각주를 재사용해야 한다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f2: '소프트웨어 공학 체계적 문헌고찰에 근거 강도 평가를 처음 적용한 연구로', 'GRADE(2004판)를 풀어 설명하고', '질적·관찰 연구를 함께 다루는' 구절을 삭제한다. 남는 문장('ESEM 2008, 178–187쪽에서 1차 연구의 질 평가 체계와 근거 묶음 강도 등급 체계를 개관하고 애자일 개발 체계적 문헌고찰로 예시했다')만 [사실][^ref-808]로 둔다 — 검색 요약이 순위 표현과 세부 내용을 뒷받침하지 않는다.",
+    "f3: '실험실 규모와 공학 규모 검증을 구분한다'를 'TRL 5(관련 환경 검증)와 TRL 6(관련 환경 시연)을 구분한다'로 고친다. 각주 발행일은 '미확인'으로 둔다 — 검색 요약에 규모 구분 문구가 없다.",
+    "f4: 규칙의 종류·번호·제정일('훈령 제725호', 2021-07-23)을 본문에 쓰지 않는다. '판·규칙 번호 미확인'으로 두고 각주 발행일은 '미확인'으로 둔다 — 검색 결과는 '예규 제725호'로 적어 브리프와 다르고, 브리프 URL의 admRulSeq 값도 검색 결과와 다르다.",
+    "f7: IfcDoor·IfcStair 부분에 기존 각주 [^ref-419][^ref-420]을 더하고 '개발 브랜치 기준'을 명시한다. 실무 IFC 모델에서 프록시로 내보내질 수 있다는 기존 검증 문장(ref-432)을 병기한다 — 현재 source_ids(ref-421·ref-213)는 엘리베이터 부분만 뒷받침한다.",
+    "f8: 문장을 둘로 나눈다. '콘센트·전기기기 유형 열거에 충전 설비 값이 없다'는 [사실][^ref-214][^ref-215](같은 발행 주체, 독립 교차 확인 아님)로 두고, '충전 위치는 BIM 표준 유형으로 담기지 않을 가능성이 클 것으로 보인다'는 [추정]으로 강등한다 — '확인된다'는 일반화이며 기존 게시 문장과 충돌한다.",
+    "f11·f12·f13·f14·f18·f19·f20: 각 문장에서 출처가 직접 말하는 부분은 기존 게시 문장대로 [사실]로 두고, 가설 판정용 해석 구절은 별도 문장으로 나누어 [추정]으로 강등한다. 해석 구절은 f11 '같은 틀로 대조할 표현 수단이 존재한다', f12 '로봇 쪽 능력 값이 관제 인터페이스에서 오지 않는다', f13 '통과 조건 값은 BIM 에서 얻을 수 있다', f14 '대조 규칙이 선택 조건을 가져야 한다', f18 '도면 기반 결과를 시뮬레이션 초기값으로 옮기는 경로가 존재한다', f19 '도면 기반 정적 초기값만으로는 운영 예측용 초기값이 되지 않음을 시사', f20 '반대 방향 근거가 된다'이다 — 이 해석들은 출처 서술을 넘어서며 기존 페이지에서도 추정으로 두었다.",
+    "f9: 충전소 속성(is_charger)을 인용할 때 충전소 지정 속성 이름의 출처 충돌이 열린 질문 oq-069로 남아 있음을 한 구절로 병기한다.",
+    "f16: 기준일을 기존 게시 문장과 같게 '2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인'으로 적는다.",
+    "트랙 개요(docs/tracks/floorplan-recognition/index.md) 3절: 판정 칸에 가설 1 '부분 지지(잠정, 확실성 낮음)', 가설 2 '부분 지지(잠정, 확실성 낮음 — 표현 가능성만 확인)', 가설 3 '미판정'을 적는다. 근거 칸에는 '단계 5·실행 2026-09-25-84'를 적는다. 가설 문장의 [가설] 태그는 그대로 두고 [사실]로 올리지 않는다. 판정 규칙 단락(f22)은 이 위키의 설계 제안([추정])으로 쓰고, GRADE·TRL이 가설 판정 규칙을 정한 것처럼 서술하지 않는다.",
+    "단계 5 페이지 4절 남은 불확실성: 판정 값 규칙(f22)에서 '부분 지지'(빠지는 부분 확인)와 '미판정'(핵심 하위 주장에 물류 조건 직접 근거 없음)의 조건이 겹칠 수 있고 우선순위가 정해지지 않았다는 점을 명시한다. 가설 1의 잠정 판정이 이 겹침에 해당한다는 점도 명시한다(f22·f23).",
+    "실험 페이지(experiments.md) '제안된 실험 계획': E5-01~E5-04를 상태 '제안'으로 싣는다. 측정 지표는 q5-01·q5-02 답 소제목으로 링크하고, 근거 f26·f22를 [추정]으로 표기한다. 수치 목표·합격 임계값·참가자 수는 근거가 없으므로 넣지 않는다(q5-09·q5-12로 남김).",
+    "용어 후보 '기술 성숙도(TRL)': 정의는 f3·f4 범위(1~9단계 가운데 관련 환경 검증·시연의 구분, 국내 방위사업 평가 절차에서의 쓰임)로 쓰고, 근거 없는 '기초 원리 이해부터 실제 운용까지' 구절은 빼거나 출처 각주 없이 쓰지 않는다.",
+    "모든 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 모든 항목에 source_unopened: true를 넣는다(이번 실행은 원문 열람이 차단된 환경이며 어떤 출처도 원문을 열지 않았다).",
+    "f27: 설명용 가상 시나리오임을 표 머리에 밝히고 수치를 넣지 않는다. 물류 흐름 단계는 '출하', 항목은 '예외·성과'로 둔다.",
+    "단계 5 페이지 6절: 완료 조건 세 행의 검증 판정 칸을 '충족 · 미승인'으로 적는다(1차 예비 판정이며 2차에서 확정). 표 아래 줄은 '다음 단계로 전환: 아니오(막힌 질문 q5-04~q5-10, q5-12, q5-13 열림; 단계 5는 마지막 단계이므로 트랙 done 전환 미승인)'로 적는다. 상태 줄의 단계 상태는 '진행 중'을 유지한다.",
+    "23. 시험·형식 검증·벤치마크 반영 제안은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 '세부영역 반영 제안'으로만 남긴다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(검증 검색 4회, 리서치 8회와 합쳐 12/40). 확인 19건, 미확인 9건, 교차 확인 0건. 강등: f2 사실 → 추정(과장 구절 삭제 후 남는 부분은 사실), f8 사실 → 추정(결론 구절), f11·f12·f13·f14·f18·f19·f20 해석 구절 사실 → 추정(출처 서술 부분은 사실 유지). 원문 미열람 출처: ref-807, ref-808, ref-809, ref-810, ref-063, ref-068, ref-073, ref-074, ref-421, ref-213, ref-214, ref-215, ref-079, ref-081, ref-229, ref-228, ref-105, ref-573, ref-574, ref-283, ref-794, ref-265, ref-271, ref-441, ref-406, ref-632, ref-217(이번 실행 전체). 주의: 가설 판정 절차와 판정 값 규칙은 GRADE·TRL을 옮긴 이 위키의 설계 제안(추정)이다. 가설 1·2의 '부분 지지'와 가설 3의 '미판정'은 물류센터 조건의 직접 근거가 없는 잠정 판정이며, 가설 문장은 [가설] 태그를 유지한다. 판정 규칙의 '부분 지지'와 '미판정' 조건이 겹칠 수 있고 우선순위는 정해지지 않았다. 방위사업청 업무지침은 판과 규칙 번호를 확인하지 못했다. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 충족(1차 예비 — 평가 지표·검증 절차는 아이디어 6절에 있고, 가설 판정표와 실험 계획은 이번 실행의 스토리텔러 반영을 조건으로 함, 2차에서 확정). 단계 전환: 미승인(막힌 질문 q5-04~q5-10, q5-12, q5-13 열림; 단계 5는 마지막 단계이며 트랙 done 전환도 미승인).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": true,
+    "stage_transition_approved": false
+  }
+}
