@@ -1,0 +1,44 @@
+{
+  "run_id": "2026-09-25-44",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f5·f6·f9·f10·f11·f13·f14: 이미 게시된 문장은 단계 2 페이지 q2-03 소제목과 아이디어 3 페이지 4절에서 새로 반복하지 않고 기존 문장(아이디어 3 페이지 3·4절, 단계 2 페이지 q2-01 대조 사례, 단계 1 q1-03 답, 6. 지도·공간·위치 모델 3·9절)을 가리키며 기존 각주를 재사용했다 — 1차 지시대로 처리됨.",
+      "f3·f5: LIF 판·발행일 충돌은 한쪽을 고르지 않고 둘 다 제시하고 열린 질문 oq-025로 연결했다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only, raw.githubusercontent.com만 열람)에서 검증됐다. 확인 14건, 미확인 0건, 교차 확인 0건. 검증자가 zoneSet.schema(ref-980), nav2_map_server README(ref-978), rmf_traffic_editor README(ref-979), LIF 공식 README(ref-046)를 원본으로 다시 열었고, VDA 5050 3.0.0(ref-031)은 입력 원문 텍스트로 대조했다. 강등: 없음. 원문 미열람 출처: ref-079, ref-105, ref-212, ref-227, ref-346, ref-349(모두 이전 실행 검증 통과 주장의 재인용). 주의: 형식마다 발행 주체 한 곳의 자료에 기대며, 'VDA 5050이 지도 파일의 내용 형식을 정하지 않는다'(f4)와 수용 형식 3분류·공용 자원 목록 전용 형식 부재(f12)는 발췌 범위·검색 2회 범위의 추론이다(부재 확인 아님). LIF 판·발행일은 VDA 5050 인용(2024-03)과 LIF README(2023-09)가 충돌해 oq-025로 남는다. 정정 요청 없음. 열린 질문 해결 인정 없음. 온톨로지 변경 승인: 층별 지도 (Floor Map) 수정 중 '교환 형식(후보)' 속성(f1·f5·f7·f8) / 거부: 층별 지도의 '지도 판' 속성(6절 지도 버전 질문 근거 보강, f1·f6), 제한 구역 (Restricted Zone) 추가(6절 미해결 모델링 질문, f2). 초안 v0.5 → v0.6(H1 v0.4 표기 오류 수정). 새 질문 2건 q4-07(단계 4, f4)·q3-06(단계 3, f12) 등록, 중복 없음. 단계 완료 조건: 미충족(부족: 표준과 대응시킨 관계(엣지) 유형이 공간 그래프 스키마 초안에 없음. 완료 조건 1은 아이디어 3 페이지 4절에 '관제·ROP 수용 형식' 소절이 실려 2차에서 충족을 확인했다). 단계 전환: 미승인(막힌 질문 q2-04·q2-06·q2-07·q2-08·q2-09). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 18건 모두 이행을 확인했다(ref-031 직접 인용 0회, f4·f12 한정 문구, 주문 그래프 분리, 연계 대상 표시, 벤더 주장 병기, 기존 각주 재사용, 온톨로지 변경 부분 반영, 백로그·단계 페이지 2·5·6절, 용어집 정의 수정). 사소한 표기 의견(수정 지시 아님): 단계 페이지 q2-03의 Open-RMF 건물 지도 메시지 안내 문장과 아이디어 페이지 새 소절 마지막 항목은 태그 없는 안내 문장이다. index_updates.category_recent 의 '세부영역 반영 제안 3건'은 6. 지도·공간·위치 모델 2건과 28. 표준·상호운용성·다사업자 거버넌스 1건을 합친 수다. 단계 페이지 4절 v0.6 결론 항목은 두 미반영 사유가 한 문장에 섞여 읽기 어렵다. reference_updates 의 ref-046 은 source_unopened: true(리서치 미열람)이나 1차 검증자가 원본을 열어 확인했다. 트랙 개요 상태 줄의 '현재 단계: 단계 1'은 트랙 정의 current_stage 1과 같으나 실행은 단계 2를 다루므로 트랙 담당의 확인이 필요하다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
