@@ -71,7 +71,7 @@
       "claim": "MiR Fleet Enterprise 문서는 CAD에서 만든 평면도를 PNG로 올려 지도로 쓸 수 있고 올릴 때 축척은 1m당 20픽셀이어야 하며 X-Y 위치와 회전을 조정할 수 있다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-092"
+        "ref-138"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -87,7 +87,7 @@
       "claim": "Boniardi 외(IROS 2017)는 건축 CAD 평면도를 2D 라이다 위치추정의 기준 지도로 직접 쓰되, 벽 근처 가구·장비가 도면 요소를 가리는 문제를 포즈 그래프 SLAM과 GICP 기반 스캔–지도 정합으로 다뤘다.",
       "tag": "사실",
       "source_ids": [
-        "ref-087"
+        "ref-133"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -102,7 +102,7 @@
       "claim": "Boniardi 외(IROS 2019)는 단안 카메라 영상에서 합성곱 신경망으로 방 배치 경계를 추출해 입자 필터로 건축 평면도와 맞추는 위치추정을 제안하며, 같은 센서로 수집한 지도를 전문가가 만들어야 하는 설치 부담을 줄이는 것을 동기로 든다.",
       "tag": "사실",
       "source_ids": [
-        "ref-088"
+        "ref-134"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -146,7 +146,7 @@
       "claim": "Pointr는 MapScale이 DWG·DXF·벡터 PDF·GeoJSON 도면을 사람용 실내 지도 형식(IMDF)으로 수작업 없이 변환하고 경로를 자동 생성한다고 소개하나, 이는 사람 길안내용 지도이며 로봇 지도 생성 사례는 아니다.",
       "tag": "추정",
       "source_ids": [
-        "ref-093"
+        "ref-139"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -162,7 +162,7 @@
       "claim": "Navitec Systems는 자사 플릿 관제가 실제 CAD 파일을 화면에 렌더링해 시각화하고, 지도 작성·경로·스테이션 계획을 서비스로 제공한다고 소개한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-095"
+        "ref-141"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -237,7 +237,7 @@
       "claim": "ifc2indoorgml(ISPRS Archives 2022)은 IFC 데이터에서 실내 공간 표준 IndoorGML 모델을 자동 생성하는 오픈소스 도구이며, 저자들은 IndoorGML이 개념은 탄탄하나 실용 도구가 부족해 만들기 어렵다는 점을 개발 동기로 든다.",
       "tag": "사실",
       "source_ids": [
-        "ref-090"
+        "ref-136"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -252,7 +252,7 @@
       "claim": "BIM-SLAM(2024)은 BIM 모델에서 점유 격자 지도를 만들고 IFC로 로봇이 질의할 수 있는 URDF 건물 월드를 생성하며, 다중 세션 SLAM의 앵커링으로 모델 세션과 실측 데이터를 정렬한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-094"
+        "ref-140"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -267,7 +267,7 @@
       "claim": "arXiv 2408.01737 연구는 건축 도면에서 만든 계층 그래프(A-Graph)와 3D 라이다로 온라인 추정한 상황 그래프(S-Graph)를 결합해, 로봇 위치와 함께 도면(as-planned)과 현장(as-built)의 전역 정렬·구조 편차를 실시간으로 추정하며, 최대 35cm·15도 편차까지 견고했다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-089"
+        "ref-135"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -282,7 +282,7 @@
       "claim": "국내 체계적 문헌고찰(한국산학기술학회논문지 2025)은 2020~2025년 BIM–건설로봇 통합 문헌 1,356편을 분석해 연구가 시뮬레이션에 치우치고 BIM–로봇 연계는 단방향 IFC 변환이 다수이며, 실시간 양방향 연계·설계–제어 종단 간 흐름·현장 검증과 지표 보고가 부족하다고 정리했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-091"
+        "ref-137"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -298,13 +298,13 @@
       "tag": "추정",
       "source_ids": [
         "ref-079",
-        "ref-092",
-        "ref-087",
+        "ref-138",
+        "ref-133",
         "ref-083",
         "ref-084",
         "ref-081",
         "ref-085",
-        "ref-090"
+        "ref-136"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -320,8 +320,8 @@
       "source_ids": [
         "ref-079",
         "ref-081",
-        "ref-087",
-        "ref-089",
+        "ref-133",
+        "ref-135",
         "ref-082"
       ],
       "cross_checked": false,
@@ -336,9 +336,9 @@
       "claim": "이번에 확인한 제품 쪽 근거(MiR Fleet, Navitec, Pointr)는 도면 가져오기·시각화·사람용 지도 변환에 관한 벤더 설명뿐이고, 물류 로봇 관제 제품이 도면에서 문·승강기·충전 위치를 자동 추출해 지도와 공용 자원 목록을 만든다는 공개 근거는 찾지 못했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-092",
-        "ref-095",
-        "ref-093"
+        "ref-138",
+        "ref-141",
+        "ref-139"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -353,9 +353,9 @@
       "claim": "연계 대상: 도면·BIM을 기준으로 한 로봇 위치추정과 SLAM(Boniardi 외, Ogm2Pgbm, diS-Graph 계열)은 분류 원문 9장의 로봇 자체 지능·제어 쪽이므로, 이종 제조사를 연결하는 ROP는 도면에서 만든 층별 지도·공간 그래프의 좌표·층 이름 정렬과 버전 관리를 맡고 로컬 지도 생성·위치추정은 제조사 쪽에 맡기는 경계가 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-087",
+        "ref-133",
         "ref-082",
-        "ref-089",
+        "ref-135",
         "ref-080"
       ],
       "cross_checked": false,
@@ -488,7 +488,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-087",
+      "id": "ref-133",
       "org": "Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W.",
       "title": "Robust LiDAR-based localization in architectural floor plans",
       "published": "2017",
@@ -503,7 +503,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-088",
+      "id": "ref-134",
       "org": "Boniardi, F., Valada, A., Mohan, R., Caselitz, T., & Burgard, W.",
       "title": "Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network",
       "published": "2019-03",
@@ -518,7 +518,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-089",
+      "id": "ref-135",
       "org": "arXiv:2408.01737 저자(미확인)",
       "title": "Tightly Coupled SLAM with Imprecise Architectural Plans",
       "published": "2024-08",
@@ -533,7 +533,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-090",
+      "id": "ref-136",
       "org": "Biljecki, F. 외(저자 목록 미확인)",
       "title": "IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC",
       "published": "2022",
@@ -548,7 +548,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-091",
+      "id": "ref-137",
       "org": "한국산학기술학회논문지(저자 미확인)",
       "title": "BIM-건설로봇 통합 연구의 체계적 문헌고찰",
       "published": "2025",
@@ -563,7 +563,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-092",
+      "id": "ref-138",
       "org": "Mobile Industrial Robots(MiR)",
       "title": "MiR Fleet Enterprise Documentation Version 1.2 (en)",
       "published": "2025-01",
@@ -578,7 +578,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-093",
+      "id": "ref-139",
       "org": "Pointr",
       "title": "IMDF from Floor Plan & CAD Conversion Services",
       "published": null,
@@ -593,7 +593,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-094",
+      "id": "ref-140",
       "org": "arXiv:2408.15870 저자(미확인)",
       "title": "BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR",
       "published": "2024-08",
@@ -608,7 +608,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-095",
+      "id": "ref-141",
       "org": "Navitec Systems",
       "title": "Universal Fleet Control Software for AGVs & AMRs",
       "published": null,
@@ -715,10 +715,10 @@
     "cross_checked_count": 0,
     "unverified": [
       "모든 finding 교차 확인 실패: 사례마다 저자 계열 1차 출처만 있음(f7·f8 은 같은 저자라 독립 아님)",
-      "f4·f9·f10 벤더 주장이며 독립 출처로 확인하지 못함, ref-092 는 유통사 사이트 게재본",
+      "f4·f9·f10 벤더 주장이며 독립 출처로 확인하지 못함, ref-138 는 유통사 사이트 게재본",
       "f5·f6·f11·f13~f18 논문 원문 미열람(검색 요약 범위)",
-      "f17 편차 35cm·15도 수치 단일 출처, ref-089·ref-094 저자 목록 미확인",
-      "ref-090 저자 목록 일부 미확인, ref-091 저자 미확인",
+      "f17 편차 35cm·15도 수치 단일 출처, ref-135·ref-140 저자 목록 미확인",
+      "ref-136 저자 목록 일부 미확인, ref-137 저자 미확인",
       "IEEE 'BIM-to-Robot Mapping' 논문(11019519)은 검색 요약 문장이 여러 논문과 섞여 출처로 넣지 않음",
       "OTTO 설정 시간 50% 단축 주장은 CAD 도면과 무관하고 벤더 주장이라 q1-04 후보로만 남기고 넣지 않음",
       "Kollmorgen NDC8·SEER Roboshop 의 CAD 가져오기 기능은 검색 결과로 확인하지 못함"
@@ -730,7 +730,7 @@
       "queries": 31,
       "sources": 17
     },
-    "limits": "fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 원문 4건(ref-079 traffic-editor, ref-080 integration_nav-maps, ref-082 Ogm2Pgbm README, ref-084 osmAG-from-cad README)은 열었고 나머지 13건은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium). 검색 31회/40, 신규 출처 17건/20(ref-079~ref-095, next_ref_id 기준), 재사용 0건. 질문 선택: target.json 지정 q1-02. q1-02 는 연구·오픈소스 쪽은 입력 형식별로 답했으나 제품 쪽은 벤더 주장 3건뿐이라 종합 신뢰도 medium. 래스터 이미지 자동 인식(q1-01 의 데이터셋·모델)을 로봇 지도까지 이은 공개 사례는 찾지 못했다(f19). 한국 자료: KCI 문헌고찰 1건(ref-091, 건설로봇 대상), 물류 분야 국내 사례는 찾지 못해 열린 질문으로 올림. 27. AI·학습·적응과 모델 운영 관련 finding 은 f6(CNN 기반 평면도 위치추정) 정도이며 6. 지도·공간·위치 모델과 함께 다뤘다. 22. 시뮬레이션·예측용 디지털 트윈 연결은 f1 의 시뮬레이션 월드 생성뿐이며 8. 실시간 세계 상태·데이터 일관성과 섞지 않았다. 후속 질문 3건, 온톨로지 변경 제안 4건."
+    "limits": "fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 원문 4건(ref-079 traffic-editor, ref-080 integration_nav-maps, ref-082 Ogm2Pgbm README, ref-084 osmAG-from-cad README)은 열었고 나머지 13건은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium). 검색 31회/40, 신규 출처 17건/20(ref-079~ref-141, next_ref_id 기준), 재사용 0건. 질문 선택: target.json 지정 q1-02. q1-02 는 연구·오픈소스 쪽은 입력 형식별로 답했으나 제품 쪽은 벤더 주장 3건뿐이라 종합 신뢰도 medium. 래스터 이미지 자동 인식(q1-01 의 데이터셋·모델)을 로봇 지도까지 이은 공개 사례는 찾지 못했다(f19). 한국 자료: KCI 문헌고찰 1건(ref-137, 건설로봇 대상), 물류 분야 국내 사례는 찾지 못해 열린 질문으로 올림. 27. AI·학습·적응과 모델 운영 관련 finding 은 f6(CNN 기반 평면도 위치추정) 정도이며 6. 지도·공간·위치 모델과 함께 다뤘다. 22. 시뮬레이션·예측용 디지털 트윈 연결은 f1 의 시뮬레이션 월드 생성뿐이며 8. 실시간 세계 상태·데이터 일관성과 섞지 않았다. 후속 질문 3건, 온톨로지 변경 제안 4건."
   },
   "track": {
     "slug": "floorplan-recognition",

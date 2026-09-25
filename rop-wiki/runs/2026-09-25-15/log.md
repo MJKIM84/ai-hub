@@ -7,3 +7,34 @@
 - 2026-09-25 11:00:44 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 11:00:44 KST [대상 선정] 결과: 성공 · 소요 0초 · area_deep_dive · 5. 로봇 능력·작업 온톨로지
 - 2026-09-25 11:00:44 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-15/prompts/research.md (188,951자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 11:09:58 KST [리서치 에이전트] 호출 완료(시도 1): 턴 34 · 9분 13초 · 비용 $4.2788 · subtype success
+- 2026-09-25 11:09:58 KST [리서치 에이전트] 저장: runs/2026-09-25-15/research.json
+- 2026-09-25 11:09:58 KST [형식 검증] 리서치 산출물 검사: 출처 27건 중 원문 열람 8건 · 신뢰도 상한 적용 4건
+- 2026-09-25 11:09:58 KST [형식 검증]   - 출처 ref-126: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 11:09:58 KST [형식 검증]   - 출처 ref-126: 원문 미열람이라 신뢰도 high → medium
+- 2026-09-25 11:09:58 KST [형식 검증]   - 출처 ref-131: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/README.md)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 11:09:58 KST [형식 검증]   - 출처 ref-131: 원문 미열람이라 신뢰도 high → medium
+- 2026-09-25 11:09:58 KST [리서치] 예산 점검: 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:09:58 KST [리서치] 결과: 성공 · 소요 9분 14초 · 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:09:58 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-15/prompts/verification1.md (258,397자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:12:56 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 21 · 2분 58초 · 비용 $2.4145 · subtype success
+- 2026-09-25 11:12:56 KST [내용 검증 에이전트] 저장: runs/2026-09-25-15/verification.json
+- 2026-09-25 11:12:56 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-25 11:12:57 KST [1차 검증] 결과: 조건부 승인 · 소요 2분 58초 · 신뢰도 medium
+- 2026-09-25 11:12:57 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-15/prompts/storyteller.md (173,280자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 11:18:09 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 12초 · 비용 $1.6982 · subtype success
+- 2026-09-25 11:18:09 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-15/pages.json
+- 2026-09-25 11:18:09 KST [스토리텔러] 결과: 성공 · 소요 5분 12초 · 페이지 1개
+- 2026-09-25 11:18:34 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-15 (영역 심화)
+- 2026-09-25 11:18:34 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:18:34 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 11:18:34 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-139→ref-152
+- 2026-09-25 11:18:34 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:18:34 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-15/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:18:34 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:18:35 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:18:35 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:18:35 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 11:18:36 KST [형식 검증] 원고 형식 검사: 통과 · 자동 분리 4건
+- 2026-09-25 11:18:36 KST [형식 검증] 결과: 통과 · 소요 27초 · 자동 분리 4건
+- 2026-09-25 11:18:36 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-15/prompts/verification2.md (210,012자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)

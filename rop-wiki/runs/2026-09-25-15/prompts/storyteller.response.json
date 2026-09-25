@@ -1,0 +1,908 @@
+{
+  "duration_api_ms": 310325,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.6982314,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 107895,
+    "cache_read_input_tokens": 63017,
+    "output_tokens": 41123,
+    "output_tokens_details": {
+      "thinking_tokens": 11382
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 107895,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 41123,
+        "cache_read_input_tokens": 63017,
+        "cache_creation_input_tokens": 107895,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 107895
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 41123,
+      "cacheReadInputTokens": 63017,
+      "cacheCreationInputTokens": 107895,
+      "webSearchRequests": 0,
+      "costUSD": 1.6982314,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11382,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-15\",\"outline\":[{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":500,\"summary\":\"같은 운반 로봇 가운데 누가 화물을 취급할 수 있는지는 여러 규격 필드와 현재 상태를 함께 대조해야 판단할 수 있을 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133]\",\"planned_findings\":[\"f29\",\"f6\",\"f19\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":900,\"summary\":\"핵심 개념은 구현과 무관한 기능 명세인 능력과 그 실행 구현인 스킬의 구분이며, 능력의 조건을 적는 제약·범위 개념이 더해진다. [사실][^ref-126][^ref-128]\",\"planned_findings\":[\"f10\",\"f9\",\"f18\",\"f13\",\"f19\",\"f1\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\",\"budget_chars\":800,\"summary\":\"적치 단계에서 제조사가 다른 운반 로봇 가운데 팔레트를 취급할 로봇을 고르는 가상 시나리오로, 적재 명세·도달 가능성·완료 보고·선언과 운용 능력의 차이를 보여 준다. [사실][^ref-125]\",\"planned_findings\":[\"f6\",\"f29\",\"f2\",\"f23\",\"f8\",\"f30\",\"f19\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":900,\"summary\":\"능력과 실행의 연결은 이름 기반 선언 방식과 능력–스킬 모델 방식으로 나뉘는 것으로 보이며, 의미 모델로 실행 가능성을 판정하거나 LLM으로 능력 온톨로지를 만든 뒤 형식 검증하는 접근이 있다. [추정][^ref-125][^ref-040][^ref-126][^ref-128]\",\"planned_findings\":[\"f30\",\"f3\",\"f8\",\"f4\",\"f9\",\"f11\",\"f23\",\"f24\",\"f25\",\"f26\",\"f31\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":900,\"summary\":\"물류 이동로봇 인터페이스(VDA 5050 팩트시트, MassRobotics, Open-RMF)와 능력 모델 표준·온톨로지(IDTA 02020, CaSkMan, SSN, IEEE 1872 계열, ISO 22166-201, KS B 7321-2)가 이 영역의 기반이다. [사실][^ref-125]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f5\",\"f7\",\"f8\",\"f9\",\"f12\",\"f11\",\"f13\",\"f15\",\"f16\",\"f27\",\"f28\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":700,\"summary\":\"로봇 지식 처리(KnowRob 2.0, SOMA), 광고·운용 능력 통합, 온톨로지 기반 배정과 LLM 기반 능력 온톨로지 생성 연구가 대표 자료다. [사실][^ref-130]\",\"planned_findings\":[\"f14\",\"f17\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\",\"f33\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\",\"budget_chars\":450,\"summary\":\"능력의 실제 구현·성능은 로봇 자체 지능·제어에 맡기고, ROP는 제조사 선언을 공통 모델로 모아 작업 요구와 대조하고 선언과 실제의 차이를 기록하는 쪽을 맡는 것으로 보인다. [추정][^ref-125][^ref-126][^ref-041]\",\"planned_findings\":[\"f32\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":700,\"summary\":\"7. 화물·재고·자산 식별과 추적, 8. 실시간 세계 상태·데이터 일관성, 9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 21. 온보딩·설정·현장 시운전, 27. AI·학습·적응과 모델 운영, 28. 표준·상호운용성·다사업자 거버넌스와 이어진다.\",\"planned_findings\":[\"f6\",\"f5\",\"f19\",\"f1\",\"f7\",\"f8\",\"f30\",\"f23\",\"f24\",\"f33\",\"f25\",\"f26\",\"f31\",\"f12\",\"f27\",\"f28\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":450,\"summary\":\"국내 표준 부합화(oq-004), 적재물 유형 공통 어휘, 선언 능력과 운용 능력 중 배정 기준값이 열린 질문이다.\",\"planned_findings\":[\"f27\",\"f28\",\"f6\",\"f19\"]}],\"pages\":[{\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 13절 각주 27건, 트랙 반영 제안 3건(4·7·8절) 반영\",\"content\":\"---\\ntitle: \\\"5. 로봇 능력·작업 온톨로지\\\"\\ntype: area\\ncategory: \\\"B. 공통 정보·환경 모델\\\"\\narea_no: 5\\nrelated_areas: [7, 8, 9, 12, 13, 21, 27, 28]\\ntags: [능력 모델, 스킬, VDA 5050 팩트시트, 능력 온톨로지, 실행 가능성 판정]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-24\\nupdated: 2026-09-25\\nsources: [ref-025, ref-026, ref-027, ref-028, ref-029, ref-035, ref-038, ref-040, ref-041, ref-042, ref-043, ref-105, ref-125, ref-126, ref-127, ref-128, ref-129, ref-130, ref-131, ref-132, ref-133, ref-134, ref-135, ref-136, ref-137, ref-138, ref-139]\\nlast_run: 2026-09-25\\nversion: 2\\n---\\n\\n[홈](../../index.md) › [B. 공통 정보·환경 모델](index.md) › 5. 로봇 능력·작업 온톨로지\\n\\n# 5. 로봇 능력·작업 온톨로지\\n\\n!!! info \\\"소속 대분류\\\"\\n    [B. 공통 정보·환경 모델](index.md) — 핵심 질문:\\n    로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? [분류원문]\\n\\n<!-- auto:area-tracks:start -->\\n!!! note \\\"관련 연구 트랙\\\"\\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\\n\\n    - [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) — 중심 영역(●) · 확장 아이디어: [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)\\n    - [자연어 업무 지시 챗봇](../../tracks/nl-task-chatbot/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)\\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\\n<!-- auto:area-tracks:end -->\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 한 줄 정의\\n\\n제조사별 기능·제약·장착 장비·실행 조건을 공통 모델로 표현하고, 작업 요구와 연결 [분류원문]\\n\\n## 2. SCM 관점의 질문\\n\\n같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? [분류원문]\\n\\n> 원문 주석: 27번의 AI는 특정 기능 하나에만 해당하지 않는다. **매뉴얼 해석은 5·21번, 도면 해석은 6번, 학습 기반 배차는 13번, 장애 분석은 19번**에 적용되는 연구 방법이다. [분류원문]\\n\\n## 3. 왜 중요한가\\n\\n같은 운반 로봇 가운데 어느 로봇이 특정 화물을 실제로 취급할 수 있는지는 적재 명세(적재 유형·최대 중량·처리 높이), 지원 동작, 현재 상태(남은 적재 용량·운영 상태), 적재 상태에서의 경로 통과 가능성을 함께 대조해야 판단할 수 있어, 한 규격의 필드만으로는 정해지지 않을 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133]\\n\\n제조사마다 능력을 적는 방식도 맞춰져 있지 않다. VDA 5050 팩트시트의 적재 유형(loadType)과 MassRobotics 표준의 화물 설명(cargoType)은 모두 문자열로 적게 할 뿐 공통 어휘를 지정하지 않으므로, 제조사 사이에서 화물 취급 가능 여부를 맞추려면 적재물 유형 사전이 따로 필요할 것으로 보인다. [추정][^ref-125][^ref-127]\\n\\n문서에 선언된 능력과 현장에서 관측되는 능력이 다를 수 있다는 점도 연구 대상이다. Naqvi 외(2025)는 제조사가 광고한 능력(advertised capabilities)과 운용 중 관측된 능력(operational capabilities)을 온톨로지로 구분해 통합하는 방법을 제시했다. [사실][^ref-041] 따라서 이 영역은 흩어진 선언을 한 모델로 모아 작업 요구와 연결하는, 배정·실행 판단의 공통 기반으로 볼 수 있다. [의견]\\n\\n## 4. 핵심 개념과 용어\\n\\n이 영역의 중심 개념은 구현과 무관한 기능 명세인 능력과, 그 능력을 실제로 실행하는 구현인 스킬의 구분이며, 여기에 능력의 조건을 적는 제약·범위 개념이 더해진다. [사실][^ref-126][^ref-128]\\n\\n- **능력(Capability)** — 구현과 무관한 기능 명세다. [사실][^ref-126] 이 위키의 [능력·스킬·서비스 모델(CSS)](../../glossary/capabilities-skills-services.md) 용어 항목과 매뉴얼 기반 로봇 기능 온톨로지 트랙의 온톨로지 초안이 '기능(Capability)'이라 부르는 개념과 같은 뜻이며, 이 페이지에서는 '능력'으로 쓴다.\\n- **스킬(Skill)** — OPC UA 같은 호출 인터페이스를 가진, 능력의 캡슐화된 구현이다. IDTA 02020과 CaSkMan 온톨로지가 이 구분을 공통으로 쓴다. [사실][^ref-126][^ref-128] CaSkMan은 Plattform Industrie 4.0의 CSS 참조 모델 위에 구축됐다. [사실][^ref-128] IDTA 02020도 같은 CSS 계열의 구분을 따르는 것으로 보이나, IDTA 안내문에서 CSS 언급은 확인되지 않았다. [추정][^ref-035]\\n- **속성 제약·전이 제약(Property Constraint·Transition Constraint)** — IDTA 02020은 능력의 속성(최대 속도·허용 오차·온도 범위 등)에 전제조건·불변조건·사후조건 역할의 제약을 붙이고, 순서·병렬 흐름을 전이 제약으로 정한다. [사실][^ref-126]\\n- **전제조건·효과(Precondition·Effect)** — [계획 도메인 정의 언어(PDDL)](../../glossary/pddl.md)는 행동을 파라미터·전제조건·효과로 기술하고 도메인과 문제 인스턴스를 분리한다. [사실][^ref-029]\\n- **운용 범위·생존 범위(Operating Range·Survival Range)** — W3C/OGC SSN의 System Capabilities 모듈은 특정 조건에서의 시스템 능력, 정상 운용 범위, 그리고 벗어나면 시스템이 손상되어 능력 명세가 더 이상 성립하지 않을 수 있는 생존 범위를 구분한다. [사실][^ref-132]\\n- **광고 능력·운용 능력(Advertised·Operational Capability)** — 제조사가 광고한 능력과 운용 중 관측된 능력을 나누는 구분이다. [사실][^ref-041]\\n- **팩트시트(Factsheet)** — [VDA 5050](../../glossary/vda-5050.md) 3.0.0판에서 이동로봇이 유형·능력 명세, 물리 파라미터, 지원 동작, 적재 명세 등을 관제에 미리 알리는 스키마다(확인일 2026-09-25). [사실][^ref-125]\\n\\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\\n\\n**물류 흐름 단계:** 적치\\n\\n**시나리오:** 입고된 팔레트를 적치 위치로 옮길 운반 로봇 고르기\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 입고가 확정된 팔레트에 적치 작업이 생긴다(가상 설정). |\\n| 작업 대상 | 팔레트 한 개. 적재 유형을 VDA 5050 팩트시트는 loadType(예: EPAL)으로, MassRobotics 표준은 cargoType 문자열로 적지만 공통 어휘는 정하지 않은 것으로 보인다. [추정][^ref-125][^ref-127] |\\n| 수행 자원 | 제조사가 다른 운반 로봇 두 대(가상 설정). 어느 쪽이 취급할 수 있는지는 적재 명세·지원 동작·남은 적재 용량·운영 상태를 함께 대조해야 할 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133] |\\n| 제약 | 팩트시트의 적재 명세(loadSets)는 최대 중량, 최소·최대 적재 처리 높이, 대략의 픽·드롭 소요 시간을 적는다. [사실][^ref-125] 적재 상태에 따라 달라지는 장소 도달 가능성을 판정하는 연구도 있다. [사실][^ref-133] |\\n| 완료·인계 | Open-RMF에서는 어댑터가 로봇 API의 완료를 확인한 뒤 execution.finished()를 호출해 완료를 알린다. [사실][^ref-040] |\\n| 예외·성과 | 선언된 능력과 운용 중 관측된 능력이 다를 수 있다. [사실][^ref-041] 어느 값을 배정 기준으로 삼을지는 열린 질문이다. |\\n\\n다음은 설명을 위한 가상의 시나리오이다. 적치 작업이 생기면 ROP는 두 로봇의 팩트시트에서 팔레트 유형·중량·처리 높이를 비교하고, 상태 보고에서 남은 적재 용량과 운영 상태를 확인한다. 적재 유형 문자열이 제조사마다 다르면 이 비교 자체가 막힐 수 있다. [추정][^ref-125][^ref-127]\\n\\n작업이 끝나면 완료 보고는 인터페이스 안에서 선언한 동작 이름을 그대로 쓰는 방식으로 돌아오는 것으로 보인다. [추정][^ref-125][^ref-040] 적재 후 속도처럼 선언과 다른 운용 값이 쌓이면 능력 모델을 어떻게 갱신할지가 다음 과제로 남는다.\\n\\n## 6. 대표 접근법과 기술\\n\\n능력 기술과 실행의 연결은 같은 인터페이스 안에서 선언한 동작 이름을 명령·완료 보고에 그대로 쓰는 방식과, 별도 능력 모델을 상태 기계를 가진 스킬 인터페이스로 잇는 방식으로 나뉘는 것으로 보인다. [추정][^ref-125][^ref-040][^ref-126][^ref-128]\\n\\n### 인터페이스 안의 이름 기반 선언\\n\\nVDA 5050 3.0.0 팩트시트의 지원 동작 목록은 동작마다 actionType, 자유 문장 설명, 허용 범위, 파라미터(key·데이터형·선택 여부), 일시정지·취소 가능 여부를 적는다. [사실][^ref-125] Open-RMF의 사용자 정의 동작은 설정의 actions 목록에 이름으로만 선언되고, 작업 요청의 category(동작 이름)와 JSON description으로 호출된다. [사실][^ref-040] 한계로, 팩트시트 파라미터에는 허용 값 범위나 실행 전제조건을 담는 구조화 필드가 없어 그런 조건은 자유 문장이나 적재 명세의 최소·최대 필드에 흩어질 것으로 보인다. [추정][^ref-125]\\n\\n### 능력–스킬 모델\\n\\nIDTA 02020 능력 서브모델 1.0은 속성·제약·스킬로 능력을 기술하며, 요구 능력과 제공 능력을 신뢰성 있게 비교하는 것을 목적으로 한다. [사실][^ref-126] CaSkMan은 설비 구조, 추상 능력, 상태 기계를 가진 실행 스킬, 속성을 모델링하고 VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360을 잇는 정렬 온톨로지다. [사실][^ref-128] 이번 조사에서는 두 방식을 서로 매핑한 표준을 확인하지 못했다.\\n\\n### 의미 모델로 실행 가능성을 판정한 뒤 배정기로 넘기기\\n\\nElectronics(2026-08) 게재 연구는 로봇·작업·장소의 의미 모델과 선언적·절차적 혼합 추론으로 다축 능력 조건과 적재 상태에 따른 장소 도달 가능성을 판정하고, 그 결과를 배정 알고리즘과 무관한 공통 입력(ReasonerOutput)으로 넘긴다. [사실][^ref-133] CAPILANO는 이종 조립 자원과 결합 능력을 OWL 온톨로지로 기술하고 SPARQL 질의와 가용성을 고려한 연속 작업 배정을 한 틀로 묶었다. [사실][^ref-134] 이 연구는 제조 조립(라인리스 이동 조립 시스템) 대상이므로 물류 사례가 아니라 방법 참고로만 본다.\\n\\n### 문서·로봇 기술 파일에서 능력 온톨로지 만들기\\n\\n분류 원문 교차 규칙에 따라 매뉴얼 해석은 27. AI·학습·적응과 모델 운영의 연구 방법을 이 영역과 21. 온보딩·설정·현장 시운전에 적용하는 경우다. Vieira da Silva 외(ETFA 2024)는 여러 LLM과 프롬프트 기법으로 능력 온톨로지를 생성하고 RDF 구문 검사·OWL 추론·SHACL 제약에 기반한 반자동 품질 검사를 적용해, 복잡한 능력에서도 오류가 거의 없었다고 저자들이 보고했다. [사실][^ref-135] Dussard·Sarthou(ICSR 2026)는 URDF 로봇 기술 파일의 식별자를 LLM으로 해석해 기존 온톨로지 개념을 채우고, 여러 질의의 다수결과 구문·스키마 수준 검증으로 신뢰성을 높이는 파이프라인을 제안했다. [사실][^ref-136] 두 연구 모두 생성 결과를 형식 검증에 통과시키므로, 문서 기반 능력 모델 구축에서도 생성과 검증을 분리한 구조가 필요할 것으로 보인다. [추정][^ref-135][^ref-136] 물류 로봇 매뉴얼을 대상으로 한 공개 사례는 이번 조사에서 확인하지 못했다.\\n\\n## 7. 관련 표준·프레임워크·오픈소스\\n\\n물류 이동로봇 인터페이스는 적재·동작 능력을 필드로 선언하게 하고, 능력 모델 표준·온톨로지는 능력·스킬·조건을 구조화한다. [사실][^ref-125][^ref-126] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| VDA 5050 팩트시트 스키마(3.0.0판) | 표준 | 유형 명세(등급·능력), 물리 파라미터, 프로토콜 한계·기능, 기하, 적재 명세를 필수 블록으로 둔다(확인일 2026-09-25). [사실][^ref-125] | 공식 저장소 스키마 원문 |\\n| MassRobotics AMR 상호운용 표준 JSON 스키마 | 표준 | 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 설명·화물 최대 부피·최대 중량·제품 문서 링크를, 상태 보고에 운영 상태(9개 값)와 남은 적재 용량 비율을 둔다. [사실][^ref-127] | 공식 저장소 스키마 원문 |\\n| Open-RMF 플릿 어댑터 설정 | 오픈소스 | 플릿 단위로 수행 가능한 작업 유형(task_capabilities: loop, delivery 등), 사용자 정의 동작 이름, 작업 종료 후 동작(park·charge·nothing)을 선언한다. [사실][^ref-105] | 공식 템플릿 원문 |\\n| IDTA 02020 Capability Description 1.0 | 표준 | 능력을 속성·속성 제약·전이 제약·스킬로 기술하고 요구·제공 능력 비교를 목적으로 하는 자산관리셸(AAS) 서브모델이다. [사실][^ref-126] | IDTA 저장소 안내문, 원문 미열람 |\\n| IDTA 02047 Technical Data for AGV 1.0 | 표준 | 여러 제조사·유형의 무인운반차를 한 생산 환경에서 운영하기 위해 제조사 독립 기술 데이터를 AAS 서브모델로 표준화하려는 명세다. 세부 필드는 미확인이다. [사실][^ref-131] | IDTA 저장소 안내문, 원문 미열람 |\\n| CaSkMan | 오픈소스 | 제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하는 OWL 정렬 온톨로지다. [사실][^ref-128] | 공식 저장소 원문 |\\n| W3C/OGC SSN System Capabilities 모듈 | 표준 | 조건별 시스템 능력, 운용 범위, 생존 범위를 hasSystemCapability·inCondition 관계로 기술한다. 작업반 저장소 편집본이며 권고안과 문구 일치는 미확인이다. [사실][^ref-132] | 작업반 저장소 원문 |\\n| IEEE 1872-2015 (CORA) | 표준 | 로봇·자동화 분야의 일반 개념·관계·공리를 담은 핵심 온톨로지를 정한 표준 온톨로지다([용어: CORA](../../glossary/cora.md)). [사실][^ref-025] | 원문 미열람 |\\n| IEEE 1872.2 AuR 온톨로지 OWL 구현(헬무트 슈미트 대학) | 오픈소스 | IEEE 1872.2 AuR 온톨로지(표준은 상위 온톨로지 DUL·SUMO를 씀)의 OWL 구현으로, SUMO는 OWL 표현이 없어 제외하고 DUL만 포함한 제3자 구현이다. 로봇이 제공하고 기능 실행으로 수행되는 기능, 상호작용, 환경을 기술한다. [사실][^ref-129][^ref-026] | 구현 저장소 원문, 표준 원문 미열람 |\\n| ISO 22166-201:2024 | 표준 | 서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위해 모듈 공통 정보 모델의 구조와 속성·하위 클래스의 의미를 정한다. [사실][^ref-137] | 원문 미열람 |\\n| KS B 7321-2 | 표준 | '로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델'이 KSSN에 등록되어 있다. 제정일·내용은 미확인이다. [사실][^ref-138] | 원문 미열람 |\\n\\n## 8. 대표 연구와 자료\\n\\n대표 자료는 로봇 지식 처리·활동 온톨로지, 능력·스킬 모델, 광고·운용 능력 통합, 온톨로지 기반 배정, LLM 기반 능력 온톨로지 생성 연구로 나뉜다. [사실][^ref-130][^ref-038][^ref-041]\\n\\n- Beetz 외, KnowRob 2.0(2018) — 인지 기반 로봇 에이전트를 위한 2세대 지식 처리 프레임워크다. [사실][^ref-027]\\n- EASE CRC, SOMA — DUL(DOLCE+DnS Ultralite) 상위 온톨로지를 확장한 OWL 활동 온톨로지로, 로봇 에이전트의 의도·계획·움직임·물체와의 접촉 같은 활동 측면을 표현한다. [사실][^ref-130][^ref-028]\\n- Vieira da Silva·Köcher·Fay, 이종 자율 로봇을 위한 능력·스킬 모델(2022) — 이종 자율 로봇용 능력·스킬 모델을 제안한 프리프린트다. [사실][^ref-038]\\n- Naqvi 외, 광고 능력과 운용 능력의 온톨로지 기반 통합(2025) — 두 능력을 온톨로지로 구분해 통합하는 방법을 제시했다. [사실][^ref-041]\\n- Aguado 외, 신뢰할 수 있는 로봇 자율성을 위한 온톨로지 활용 프로세스 서베이(2024) — 이 주제의 서베이 논문이다. [사실][^ref-042]\\n- 신민종·한영석·정재윤, 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계(2024) — 국내 학술지 게재 논문이며, 능력 기술을 포함하는지는 미확인이다. [사실][^ref-043]\\n- Electronics 게재 논문, 이종 다중 로봇 작업 배정을 위한 의미 기반 실행 가능성 추론(2026) — 6절 참고. 저자 미확인. [사실][^ref-133]\\n- Kluge-Wilkes 외, CAPILANO(2022) — 제조 조립(라인리스 이동 조립 시스템) 대상 온톨로지 기반 배정 연구로, 방법 참고용이다. [사실][^ref-134]\\n- Vieira da Silva 외(2024), Dussard·Sarthou(2026) — LLM으로 능력 온톨로지를 생성·채우고 형식 검증하는 연구다(6절 참고). [사실][^ref-135][^ref-136]\\n- Meseguer Valenzuela·Blanes Noguera, 이동로봇 플릿 작업 배정 리뷰(2025) — 이동로봇 플릿의 작업 배정 문제를 에너지 소비와 필요 로봇 수 최소화 관점에서 정리하고 AI 기반 방법을 포함한 최적화 알고리즘을 검토했다. [사실][^ref-139]\\n\\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 제조사가 선언한 능력·제약(팩트시트·능력 서브모델)을 공통 모델로 모아 작업 요구와 대조하고, 실행 결과로 선언과 실제의 차이를 기록한다. [추정][^ref-125][^ref-126][^ref-041] | 연계 대상: 파지·센서 인식·로컬 회피 같은 능력의 실제 구현과 성능 보장은 제조사 쪽에 둔다. [추정][^ref-125][^ref-126][^ref-041] |\\n\\n이 경계는 제품 전략에 따라 옮겨질 수 있다. 분류 원문은 \\\"이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다\\\"고 적는다([범위 경계](../../about/scope-boundary.md)). 이 영역에서 ROP가 맡는 인터페이스는 제조사 선언을 읽는 공통 능력 모델과 요구–능력 대조이며, 능력 자체를 구현하는 일은 포함하지 않는 것으로 본다. [의견]\\n\\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\\n\\n이 영역의 능력 모델은 화물 식별, 현재 상태, 관제 연동, 실행 신뢰성, 배정, 온보딩, AI 방법, 표준 거버넌스 영역과 맞물린다. [추정][^ref-125][^ref-133]\\n\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) — 팩트시트 적재 유형과 MassRobotics 화물 설명을 맞추려면 적재물 유형 어휘가 필요할 것으로 보인다. [추정][^ref-125][^ref-127]\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) — 상태 보고의 운영 상태·남은 적재 용량과 운용 중 관측된 능력은 현재 상태 표현으로서 배정 판단에 들어간다. [사실][^ref-127][^ref-041]\\n- [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 팩트시트와 플릿 어댑터 설정이 제조사 능력 선언의 입구다. [사실][^ref-125][^ref-105]\\n- [12. 명령·작업 실행의 신뢰성](../c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 선언한 동작 이름이 명령·완료 보고로 이어지는 방식이 실행 확인과 맞닿는다. [추정][^ref-040][^ref-125]\\n- [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md) — 실행 가능성 판정 결과를 배정기 독립 입력으로 넘기는 연구가 두 영역을 잇는다. [사실][^ref-133][^ref-139]\\n- [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 매뉴얼·로봇 기술 파일 해석으로 능력 모델을 만드는 일은 온보딩 때 필요하다. [추정][^ref-135][^ref-136]\\n- [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — LLM 기반 능력 온톨로지 생성과 형식 검증은 이 영역에 적용되는 AI 방법이다. [사실][^ref-135][^ref-136]\\n- [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — IDTA 02047, ISO 22166-201, KS B 7321-2 같은 제조사 독립 정보 모델 표준이 걸려 있다. [사실][^ref-131][^ref-137][^ref-138]\\n- [매뉴얼 기반 로봇 기능 온톨로지 트랙](../../tracks/manual-capability-ontology/index.md) — 이 영역을 중심으로 한 중점 연구 트랙이다.\\n\\n## 11. 열린 질문\\n\\n국내 표준 부합화, 적재물 유형 공통 어휘, 선언 능력과 운용 능력 가운데 배정 기준이 아직 풀리지 않았다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n- **oq-004** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-02) IEEE 1872 계열 로봇 온톨로지 표준이나 AAS 능력 서브모델을 KS로 부합화했거나 국내 로봇 관제 사업에 적용한 사례가 있는가? 부분 근거로 서비스 로봇 모듈 정보 모델 국제표준과 국내 KS가 확인됐으나, 로봇 온톨로지·능력 서브모델의 부합화는 확인되지 않았다.[^ref-137][^ref-138]\\n- (신규, 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-15) VDA 5050 팩트시트의 loadType과 MassRobotics의 cargoType이 자유 문자열일 때 팔레트·용기 같은 적재물 유형을 제조사 사이에 같은 의미로 맞출 공통 어휘나 코드 체계가 있는가?[^ref-125][^ref-127]\\n- (신규, 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-15) 제조사가 문서로 선언한 능력(팩트시트·매뉴얼)과 현장에서 관측한 운용 능력(적재 후 속도, 배터리 저하 등)이 다를 때 작업 배정은 어느 값을 기준으로 삼고 능력 모델을 어떻게 갱신하는가?[^ref-041]\\n\\n트랙 전용 질문은 [질문 백로그](../../tracks/manual-capability-ontology/question-backlog.md)에 있다.\\n\\n## 12. 최근 업데이트 (자동)\\n\\n<!-- auto:area-recent:start -->\\n아직 기록된 업데이트가 없다.\\n<!-- auto:area-recent:end -->\\n\\n## 13. 참고 자료 (각주)\\n\\n[^ref-025]: IEEE, 1872-2015 - IEEE Standard Ontologies for Robotics and Automation, 2015, https://ieeexplore.ieee.org/document/7084073/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-026]: IEEE, IEEE 1872.2-2021 - IEEE Standard for Autonomous Robotics (AuR) Ontology, 2022, https://standards.ieee.org/standard/1872_2-2021.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-027]: Beetz, M., Beßler, D., Haidu, A., Pomarlan, M., Bozcuoglu, A. K., & Bartels, G., KnowRob 2.0 — A 2nd Generation Knowledge Processing Framework for Cognition-Enabled Robotic Agents, 2018, https://ai.uni-bremen.de/papers/beetz18knowrob.pdf, 접근일 2026-09-25 (원문 미열람)\\n[^ref-028]: Beßler, D. 외, Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents, 2021, https://arxiv.org/pdf/2011.11972, 접근일 2026-09-25 (원문 미열람)\\n[^ref-029]: McDermott, D. 외, PDDL - The Planning Domain Definition Language, 1998, https://www.researchgate.net/publication/2278933_PDDL_-_The_Planning_Domain_Definition_Language, 접근일 2026-09-25 (원문 미열람)\\n[^ref-035]: Plattform Industrie 4.0, Information Model for Capabilities, Skills & Services, 2022-11, https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-038]: Vieira da Silva, L. M., Köcher, A., & Fay, A., A Capability and Skill Model for Heterogeneous Autonomous Robots, 2022-09, https://arxiv.org/abs/2209.10900, 접근일 2026-09-25 (원문 미열람)\\n[^ref-040]: Open Robotics, PerformAction Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html, 접근일 2026-09-25\\n[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\\n[^ref-042]: Aguado, E., Gomez, V., Hernando, M., Rossi, C., & Sanz, R., A survey of ontology-enabled processes for dependable robot autonomy, 2024-07, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1377897/full, 접근일 2026-09-25 (원문 미열람)\\n[^ref-043]: 신민종, 한영석, 정재윤, 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계, 2024, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560, 접근일 2026-09-25 (원문 미열람)\\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\\n[^ref-125]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-126]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description, 접근일 2026-09-25 (원문 미열람)\\n[^ref-127]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\\n[^ref-128]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25\\n[^ref-129]: Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub), IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation), 미확인, https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2, 접근일 2026-09-25\\n[^ref-130]: EASE CRC (ease-crc/soma), SOMA — README (Socio-physical Model of Activities), 미확인, https://github.com/ease-crc/soma, 접근일 2026-09-25\\n[^ref-131]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25 (원문 미열람)\\n[^ref-132]: W3C / OGC Spatial Data on the Web WG (w3c/sdw GitHub), ssn/integrated/ssn-system.ttl (SSN System Capabilities module), 미확인, https://github.com/w3c/sdw/blob/gh-pages/ssn/integrated/ssn-system.ttl, 접근일 2026-09-25\\n[^ref-133]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\\n[^ref-134]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)\\n[^ref-135]: Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies, 2024-04, https://arxiv.org/abs/2404.17524, 접근일 2026-09-25 (원문 미열람)\\n[^ref-136]: Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF, 2026-06, https://arxiv.org/abs/2606.17073, 접근일 2026-09-25 (원문 미열람)\\n[^ref-137]: ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules, 2024-02, https://www.iso.org/standard/82334.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-138]: 국가표준인증통합정보시스템(KSSN), KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010147546, 접근일 2026-09-25 (원문 미열람)\\n[^ref-139]: Meseguer Valenzuela, A., & Blanes Noguera, F., Task Allocation in Mobile Robot Fleets: A review, 2025-01, https://arxiv.org/abs/2501.08726, 접근일 2026-09-25 (원문 미열람)\\n\"}],\"changelog_entry\":\"2026-09-25 | 5. 로봇 능력·작업 온톨로지 | 영역 심화: 3~11절 신규 작성(능력·스킬 구분, VDA 5050 팩트시트·MassRobotics·Open-RMF 능력 선언, IDTA 02020·CaSkMan·SSN·IEEE 1872 계열·ISO 22166-201·KS B 7321-2, 적치 시나리오, 열린 질문 2건 신규·oq-004 연결), 트랙 반영 제안 3건 반영 | run 2026-09-25-15\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 5. 로봇 능력·작업 온톨로지: 영역 심화 초안 작성(능력·스킬 구분, 제조사 능력 선언 규격 비교, 적치 시나리오, 열린 질문 2건 추가)\",\"category_recent\":\"2026-09-25 — 5. 로봇 능력·작업 온톨로지: 3~11절 신규 작성, VDA 5050 팩트시트·MassRobotics·IDTA 02020 등 능력 표현 표준 정리\",\"area_recent\":\"2026-09-25 — 5. 로봇 능력·작업 온톨로지: 3~11절 신규 작성, 트랙 반영 제안 3건(4·7·8절) 반영, oq-004 연결\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"skill\",\"term_ko\":\"스킬\",\"term_en\":\"Skill\",\"definition\":\"구현과 무관하게 명세한 능력(capability)을 실제로 실행하는 캡슐화된 구현으로, OPC UA 같은 호출 인터페이스를 가지며 상태 기계를 가질 수 있다(예: CaSkMan 의 ISA 88 상태 기계).\",\"description\":\"IDTA 02020 능력 서브모델과 CaSkMan 온톨로지가 능력과 스킬을 구분해 쓴다. 이 위키의 온톨로지 초안이 '기능(Capability)'이라 부르는 개념이 여기의 능력에 해당한다.\",\"related_areas\":[5,9,12],\"sources\":[\"ref-126\",\"ref-128\"]},{\"action\":\"new\",\"slug\":\"vda-5050-factsheet\",\"term_ko\":\"팩트시트\",\"term_en\":\"Factsheet (VDA 5050)\",\"definition\":\"VDA 5050에서 이동로봇이 유형 명세·물리 파라미터·지원 동작·적재 명세를 관제에 미리 알리는 메시지이다.\",\"description\":\"3.0.0판 스키마는 typeSpecification, physicalParameters, protocolLimits, protocolFeatures, mobileRobotGeometry, loadSpecification 을 필수 블록으로 둔다(확인일 2026-09-25).\",\"related_areas\":[5,9],\"sources\":[\"ref-125\"]},{\"action\":\"new\",\"slug\":\"asset-administration-shell\",\"term_ko\":\"자산관리셸\",\"term_en\":\"Asset Administration Shell (AAS)\",\"definition\":\"산업 자산의 정보를 서브모델 단위로 표준화해 디지털로 표현·교환하게 하는 인더스트리 4.0의 디지털 표현 구조이다.\",\"description\":\"IDTA 02020(능력 기술), IDTA 02047(무인운반차 기술 데이터) 같은 서브모델 템플릿이 있다.\",\"related_areas\":[5,28],\"sources\":[\"ref-126\",\"ref-131\"]},{\"action\":\"new\",\"slug\":\"shacl\",\"term_ko\":\"형상 제약 언어\",\"term_en\":\"Shapes Constraint Language (SHACL)\",\"definition\":\"RDF 그래프가 정해진 구조·값 조건을 지키는지 검증하는 W3C 제약 언어로, 생성된 온톨로지의 품질 검사에 쓰인다.\",\"related_areas\":[5,27],\"sources\":[\"ref-135\"]}],\"reference_updates\":[{\"id\":\"ref-125\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 공식 저장소 main(3.0.0판)의 팩트시트 JSON 스키마. 유형 명세·물리 파라미터·지원 동작·적재 명세 블록의 필드를 정의한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-126\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"title\":\"IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. IDTA 공식 서브모델 템플릿 저장소의 능력 기술 서브모델 1.0 안내. 능력 정의, 속성, 속성 제약·전이 제약, 스킬과의 관계, 요구·제공 능력 비교 목적을 설명한다.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-127\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. 식별 보고(최대 속도·화물 최대 중량·부피 등)와 상태 보고(운영 상태·남은 적재 용량) 필드를 정의한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-128\",\"org\":\"CaSkade-Automation (GitHub)\",\"title\":\"CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README)\",\"published\":null,\"url\":\"https://github.com/CaSkade-Automation/CaSkMan\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하는 OWL 정렬 온톨로지 저장소 README. VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360 과 CSS 참조 모델을 잇는다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-129\",\"org\":\"Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub)\",\"title\":\"IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation)\",\"published\":null,\"url\":\"https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"IEEE 1872.2 AuR 온톨로지를 OWL 로 구현한 제3자 저장소 README. SUMO 는 OWL 표현이 없어 제외하고 DUL 만 포함했으며, 로봇 기능과 기능 실행, 상호작용·환경 기술을 설명한다. IEEE 표준 본문은 아니다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-130\",\"org\":\"EASE CRC (ease-crc/soma)\",\"title\":\"SOMA — README (Socio-physical Model of Activities)\",\"published\":null,\"url\":\"https://github.com/ease-crc/soma\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"SOMA 공식 저장소 README. DUL 상위 온톨로지를 확장해 로봇 에이전트의 활동을 표현하는 OWL 온톨로지임을 설명한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-131\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"title\":\"IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 여러 제조사·유형의 무인운반차를 통합하기 위한 제조사 독립 기술 데이터 AAS 서브모델 1.0 안내.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-132\",\"org\":\"W3C / OGC Spatial Data on the Web WG (w3c/sdw GitHub)\",\"title\":\"ssn/integrated/ssn-system.ttl (SSN System Capabilities module)\",\"published\":null,\"url\":\"https://github.com/w3c/sdw/blob/gh-pages/ssn/integrated/ssn-system.ttl\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"SSN 온톨로지의 System Capabilities 모듈 파일. 시스템 능력·운용 범위·생존 범위·조건과 관계를 정의한다. 작업반 저장소 편집본이라 /TR 권고안과 문구가 다를 수 있다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-133\",\"org\":\"Electronics(MDPI) 게재 논문(저자 미확인)\",\"title\":\"Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation\",\"published\":\"2026-08-11\",\"url\":\"https://doi.org/10.3390/electronics15163562\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇·작업·장소 의미 모델과 혼합 추론으로 능력 조건과 적재 상태 도달 가능성을 판정하고 배정기 독립 출력으로 넘기는 방법을 제안한 논문(Electronics 15(16) 3562).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-134\",\"org\":\"Kluge-Wilkes, A. 외(RWTH Aachen WZL)\",\"title\":\"Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems\",\"published\":\"2022\",\"url\":\"https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이종 조립 자원의 능력을 OWL 온톨로지(CAPILANO)로 기술하고 SPARQL 질의와 가용성 기반 작업 배정을 결합한 연구(2022년 MHI Colloquium·WGMHI 연보 게재). 제조 조립 대상.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-135\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"On the Use of Large Language Models to Generate Capability Ontologies\",\"published\":\"2024-04\",\"url\":\"https://arxiv.org/abs/2404.17524\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LLM 으로 능력 온톨로지를 생성하고 RDF 구문 검사·OWL 추론·SHACL 로 품질을 반자동 검사한 연구(IEEE ETFA 2024).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-136\",\"org\":\"Dussard, B., & Sarthou, G. (LAAS-CNRS)\",\"title\":\"Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF\",\"published\":\"2026-06\",\"url\":\"https://arxiv.org/abs/2606.17073\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. URDF 로봇 기술을 LLM 으로 해석해 로봇 온톨로지를 채우고 다수결·스키마 검증으로 신뢰성을 높이는 파이프라인(ICSR 2026).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-137\",\"org\":\"ISO\",\"title\":\"ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules\",\"published\":\"2024-02\",\"url\":\"https://www.iso.org/standard/82334.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 서비스 로봇 모듈의 상호운용·재사용·조립을 위한 공통 정보 모델의 구조와 속성 의미를 정한 국제표준(1판, 2024-02)의 ISO 소개 페이지.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-138\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010147546\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 서비스 로봇 소프트웨어 모듈의 정보 모델을 다루는 국내 KS 표준의 KSSN 상세 페이지.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-139\",\"org\":\"Meseguer Valenzuela, A., & Blanes Noguera, F.\",\"title\":\"Task Allocation in Mobile Robot Fleets: A review\",\"published\":\"2025-01\",\"url\":\"https://arxiv.org/abs/2501.08726\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이동로봇 플릿의 작업 배정 문제와 AI 기반 방법을 포함한 최적화 알고리즘을 검토한 리뷰 프리프린트.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-025\",\"org\":\"IEEE\",\"title\":\"1872-2015 - IEEE Standard Ontologies for Robotics and Automation\",\"published\":\"2015\",\"url\":\"https://ieeexplore.ieee.org/document/7084073/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇·자동화 분야 핵심 온톨로지(CORA)를 정한 IEEE 표준.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-026\",\"org\":\"IEEE\",\"title\":\"IEEE 1872.2-2021 - IEEE Standard for Autonomous Robotics (AuR) Ontology\",\"published\":\"2022\",\"url\":\"https://standards.ieee.org/standard/1872_2-2021.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자율 로봇 분야 온톨로지(AuR)를 정한 IEEE 표준.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-027\",\"org\":\"Beetz, M., Beßler, D., Haidu, A., Pomarlan, M., Bozcuoglu, A. K., & Bartels, G.\",\"title\":\"KnowRob 2.0 — A 2nd Generation Knowledge Processing Framework for Cognition-Enabled Robotic Agents\",\"published\":\"2018\",\"url\":\"https://ai.uni-bremen.de/papers/beetz18knowrob.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 인지 기반 로봇 에이전트를 위한 2세대 지식 처리 프레임워크 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-028\",\"org\":\"Beßler, D. 외\",\"title\":\"Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents\",\"published\":\"2021\",\"url\":\"https://arxiv.org/pdf/2011.11972\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자율 로봇 에이전트의 활동 온톨로지 SOMA 의 기초를 제시한 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-029\",\"org\":\"McDermott, D. 외\",\"title\":\"PDDL - The Planning Domain Definition Language\",\"published\":\"1998\",\"url\":\"https://www.researchgate.net/publication/2278933_PDDL_-_The_Planning_Domain_Definition_Language\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 행동을 파라미터·전제조건·효과로 기술하는 계획 도메인 정의 언어 문서.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-035\",\"org\":\"Plattform Industrie 4.0\",\"title\":\"Information Model for Capabilities, Skills & Services\",\"published\":\"2022-11\",\"url\":\"https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.html\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 능력·스킬·서비스(CSS) 정보 모델을 제안한 Plattform Industrie 4.0 토론 문서.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-038\",\"org\":\"Vieira da Silva, L. M., Köcher, A., & Fay, A.\",\"title\":\"A Capability and Skill Model for Heterogeneous Autonomous Robots\",\"published\":\"2022-09\",\"url\":\"https://arxiv.org/abs/2209.10900\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이종 자율 로봇을 위한 능력·스킬 모델을 제안한 프리프린트.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-040\",\"org\":\"Open Robotics\",\"title\":\"PerformAction Tutorial - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"플릿 어댑터 설정에 사용자 정의 동작을 선언하고 작업 요청으로 호출한 뒤 execution.finished() 로 완료를 알리는 방법을 설명하는 공식 튜토리얼(mdBook 원본).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-041\",\"org\":\"Naqvi, M. R. 외(Scientific Reports)\",\"title\":\"Ontology-driven integration of advertised and operational capabilities in robots\",\"published\":\"2025-10-02\",\"url\":\"https://www.nature.com/articles/s41598-025-16649-3\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇의 광고 능력과 운용 능력을 온톨로지로 통합하는 방법을 제시한 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-042\",\"org\":\"Aguado, E., Gomez, V., Hernando, M., Rossi, C., & Sanz, R.\",\"title\":\"A survey of ontology-enabled processes for dependable robot autonomy\",\"published\":\"2024-07\",\"url\":\"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1377897/full\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자율 로봇 신뢰성을 위한 온톨로지 활용 프로세스 서베이.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-043\",\"org\":\"신민종, 한영석, 정재윤\",\"title\":\"자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계\",\"published\":\"2024\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자산관리셸 표준으로 자율이동로봇 모니터링 시스템을 설계한 국내 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]},{\"id\":\"ref-105\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"fleet_adapter_template — fleet_adapter_template/config.yaml\",\"published\":null,\"url\":\"https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 플릿 어댑터 템플릿 설정 파일. 작업 능력(task_capabilities), 사용자 정의 동작, 작업 종료 후 동작, 배터리·충전 항목을 정의한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"VDA 5050 팩트시트의 loadType 과 MassRobotics 의 cargoType 이 자유 문자열일 때 팔레트·용기 같은 적재물 유형을 제조사 사이에 같은 의미로 맞출 공통 어휘나 코드 체계가 있는가?\",\"areas\":[5,7],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"제조사가 문서로 선언한 능력(팩트시트·매뉴얼)과 현장에서 관측한 운용 능력(적재 후 속도, 배터리 저하 등)이 다를 때 작업 배정은 어느 값을 기준으로 삼고 능력 모델을 어떻게 갱신하는가?\",\"areas\":[5,8,13],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[{\"step\":\"적치\",\"item\":\"시작 조건\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"},{\"step\":\"적치\",\"item\":\"작업 대상\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"},{\"step\":\"적치\",\"item\":\"수행 자원\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"},{\"step\":\"적치\",\"item\":\"제약\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"},{\"step\":\"적치\",\"item\":\"완료·인계\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"},{\"step\":\"적치\",\"item\":\"예외·성과\",\"link\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"5. 로봇 능력·작업 온톨로지\"}],\"additional_research_requests\":[\"7절: IDTA 02047 Technical Data for AGV 1.0 의 세부 필드(적재량·치수·속도 등)가 README 범위에서 미확인이라, 명세 본문을 열어 VDA 5050 팩트시트 적재 명세와 비교할 근거가 필요하다.\",\"7·11절: KS B 7321-2 의 제정일, ISO 22166-202 부합 여부, 제1부 존재 여부를 확인해야 oq-004 의 부분 근거를 보강할 수 있다.\",\"8절: ref-133(Electronics 2026) 저자 미확인 — 참고문헌 기관 표기를 채울 서지 확인이 필요하다.\",\"6절: 물류 로봇 매뉴얼에서 능력 모델을 LLM 으로 추출한 공개 사례를 찾지 못했다 — 매뉴얼 해석 적용 사례가 있으면 6절과 21. 온보딩·설정·현장 시운전 연결을 보강할 수 있다.\",\"출처 기록: ref-126·ref-131 은 1차 검증자가 raw 경로로 열어 일치를 확인했으나 브리프에 fetched false 로 기록돼 원문 미열람 표시를 유지했다. 다음 실행에서 fetched 기록을 바로잡을지 확인이 필요하다.\",\"6절: VDA 5050·Open-RMF 의 이름 기반 동작 선언과 IDTA 02020·CaSkMan 의 능력–스킬 모델을 서로 매핑한 표준·구현이 있는지 조사가 필요하다(현재 [추정]).\"],\"fixes_applied\":[\"f15 문구 수정 — 7절 표의 IEEE 1872.2 행을 'IEEE 1872.2 AuR 온톨로지(표준은 상위 온톨로지 DUL·SUMO를 씀)의 OWL 구현으로, SUMO는 OWL 표현이 없어 제외하고 DUL만 포함한 제3자 구현'으로 썼다.\",\"f10 CSS 계열 한정 — 4절 스킬 항목에서 능력·스킬 구분만 IDTA 02020·CaSkMan 공통 [사실]로 두고, CSS 참조 모델 기반은 CaSkMan(ref-128)에만 [사실]로, IDTA 02020 과 CSS 의 관계는 ref-035 근거 [추정]으로 썼다.\",\"f33 적용 분야 삭제 — 8절 Meseguer Valenzuela·Blanes Noguera 항목을 '이동로봇 플릿의 작업 배정 문제'로 쓰고 '의료·물류 등'을 넣지 않았다.\",\"f13 인용 — 4절 운용 범위·생존 범위 항목과 7절 SSN 행에서 원문을 직접 인용하지 않고 재서술했다.\",\"ref-134 발행일 — 13절 각주와 reference_updates 의 발행일을 2022 로 썼다.\",\"ref-137 발행일 — 13절 각주와 reference_updates 의 발행일을 2024-02 로 썼다.\",\"ref-135 저자 — 13절 각주와 reference_updates 의 기관을 'Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.'로 썼다.\",\"원문 미열람 표기 — fetched false 출처(ref-025~029, ref-035, ref-038, ref-041~043, ref-126, ref-131, ref-133~139) 각주에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 와 '원문 미열람. ' 요약 머리를 넣었으며, fetched true 출처(ref-040, ref-105, ref-125, ref-127~130, ref-132)에는 붙이지 않았다.\",\"재인용 범위 — f16~f22·f28 을 7·8절에서 존재·제목·게재 사실 범위로만 쓰고, f22(신민종 외) 항목에 '능력 기술을 포함하는지는 미확인'을 함께 적었다.\",\"f24 위치 — 5절 시나리오에 넣지 않고 6·8절에서 제조 조립(라인리스 이동 조립 시스템) 대상 연구로 밝혀 방법 참고로만 썼다.\",\"f25·f26·f31 교차 연결 — 6절에 교차 규칙을 밝히고 10절에 27. AI·학습·적응과 모델 운영과 21. 온보딩·설정·현장 시운전을 모두 연결했으며, f25 의 '오류가 거의 없었다'를 저자들의 보고로 썼다.\",\"f5·f19 연결 — 10절의 8. 실시간 세계 상태·데이터 일관성 항목을 현재 상태 표현으로만 쓰고 22. 시뮬레이션·예측용 디지털 트윈은 언급하지 않았다.\",\"용어 — 4절 능력 항목 첫 등장에서 용어집 CSS 항목·온톨로지 초안의 '기능(Capability)'과 같은 뜻임을 밝혔고, glossary_updates 의 스킬 정의를 '상태 기계를 가질 수 있다(예: CaSkMan 의 ISA 88 상태 기계)'로 고쳤다.\",\"oq-004 — 해결로 바꾸지 않고(open_question_updates 에 상태 변경 없음) 11절에서 열림으로 연결하며 f27·f28(ISO 22166-201, KS B 7321-2)을 부분 근거로 적었다.\",\"트랙 반영 제안 3건 — 4절(능력·스킬, 전제조건·효과, 광고·운용 능력), 7절(IEEE 1872 계열, SSN System Capabilities, IDTA 02020), 8절(KnowRob 2.0, SOMA, RCO, 서베이, 이종 자율 로봇 능력·스킬 모델, 국내 KCI)에 반영했고, 7절 IDTA 02020 은 제3자 논문 경유 [추정]이 아니라 f9(ref-126, 원문 미열람 표기)를 근거로 [사실]로 썼다.\"],\"standards_updates\":[{\"name\":\"IDTA 02020 Capability Description 1.0\",\"kind\":\"표준\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description\",\"related_areas\":[5,28],\"summary\":\"능력을 속성·속성 제약·전이 제약·스킬로 기술하고 요구 능력과 제공 능력의 비교를 목적으로 하는 자산관리셸 서브모델(원문 미열람).\",\"ref_id\":\"ref-126\"},{\"name\":\"IDTA 02047 Technical Data for Automated Guided Vehicles 1.0\",\"kind\":\"표준\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles\",\"related_areas\":[5,28],\"summary\":\"여러 제조사·유형의 무인운반차를 한 환경에서 운영하기 위한 제조사 독립 기술 데이터 자산관리셸 서브모델(원문 미열람, 세부 필드 미확인).\",\"ref_id\":\"ref-131\"},{\"name\":\"CaSkMan\",\"kind\":\"오픈소스\",\"org\":\"CaSkade-Automation (GitHub)\",\"url\":\"https://github.com/CaSkade-Automation/CaSkMan\",\"related_areas\":[5],\"summary\":\"제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하고 VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360 을 잇는 OWL 정렬 온톨로지.\",\"ref_id\":\"ref-128\"},{\"name\":\"SOMA (Socio-physical Model of Activities)\",\"kind\":\"오픈소스\",\"org\":\"EASE CRC\",\"url\":\"https://github.com/ease-crc/soma\",\"related_areas\":[5],\"summary\":\"DUL 상위 온톨로지를 확장해 로봇 에이전트의 활동을 표현하는 OWL 온톨로지.\",\"ref_id\":\"ref-130\"},{\"name\":\"IEEE 1872.2 AuR 온톨로지 OWL 구현(IndustrialStandard-ODP-IEEE1872-2)\",\"kind\":\"오픈소스\",\"org\":\"Helmut Schmidt University, Institute of Automation Technology\",\"url\":\"https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2\",\"related_areas\":[5,28],\"summary\":\"IEEE 1872.2 AuR 온톨로지의 제3자 OWL 구현으로, SUMO 는 제외하고 DUL 만 포함한다.\",\"ref_id\":\"ref-129\"},{\"name\":\"ISO 22166-201:2024 서비스 로봇 모듈 공통 정보 모델\",\"kind\":\"표준\",\"org\":\"ISO\",\"url\":\"https://www.iso.org/standard/82334.html\",\"related_areas\":[5,28],\"summary\":\"서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위한 모듈 공통 정보 모델의 구조와 속성 의미를 정한 국제표준(원문 미열람).\",\"ref_id\":\"ref-137\"},{\"name\":\"KS B 7321-2 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델\",\"kind\":\"표준\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010147546\",\"related_areas\":[5,28],\"summary\":\"KSSN 에 등록된 서비스 로봇 소프트웨어 모듈 정보 모델 국가표준. 제정일·내용 미확인(원문 미열람).\",\"ref_id\":\"ref-138\"}]}",
+  "structured_output": {
+    "run_id": "2026-09-25-15",
+    "outline": [
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 500,
+        "summary": "같은 운반 로봇 가운데 누가 화물을 취급할 수 있는지는 여러 규격 필드와 현재 상태를 함께 대조해야 판단할 수 있을 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133]",
+        "planned_findings": [
+          "f29",
+          "f6",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 900,
+        "summary": "핵심 개념은 구현과 무관한 기능 명세인 능력과 그 실행 구현인 스킬의 구분이며, 능력의 조건을 적는 제약·범위 개념이 더해진다. [사실][^ref-126][^ref-128]",
+        "planned_findings": [
+          "f10",
+          "f9",
+          "f18",
+          "f13",
+          "f19",
+          "f1"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+        "budget_chars": 800,
+        "summary": "적치 단계에서 제조사가 다른 운반 로봇 가운데 팔레트를 취급할 로봇을 고르는 가상 시나리오로, 적재 명세·도달 가능성·완료 보고·선언과 운용 능력의 차이를 보여 준다. [사실][^ref-125]",
+        "planned_findings": [
+          "f6",
+          "f29",
+          "f2",
+          "f23",
+          "f8",
+          "f30",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 900,
+        "summary": "능력과 실행의 연결은 이름 기반 선언 방식과 능력–스킬 모델 방식으로 나뉘는 것으로 보이며, 의미 모델로 실행 가능성을 판정하거나 LLM으로 능력 온톨로지를 만든 뒤 형식 검증하는 접근이 있다. [추정][^ref-125][^ref-040][^ref-126][^ref-128]",
+        "planned_findings": [
+          "f30",
+          "f3",
+          "f8",
+          "f4",
+          "f9",
+          "f11",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f31"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 900,
+        "summary": "물류 이동로봇 인터페이스(VDA 5050 팩트시트, MassRobotics, Open-RMF)와 능력 모델 표준·온톨로지(IDTA 02020, CaSkMan, SSN, IEEE 1872 계열, ISO 22166-201, KS B 7321-2)가 이 영역의 기반이다. [사실][^ref-125]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f5",
+          "f7",
+          "f8",
+          "f9",
+          "f12",
+          "f11",
+          "f13",
+          "f15",
+          "f16",
+          "f27",
+          "f28"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 700,
+        "summary": "로봇 지식 처리(KnowRob 2.0, SOMA), 광고·운용 능력 통합, 온톨로지 기반 배정과 LLM 기반 능력 온톨로지 생성 연구가 대표 자료다. [사실][^ref-130]",
+        "planned_findings": [
+          "f14",
+          "f17",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f33"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+        "budget_chars": 450,
+        "summary": "능력의 실제 구현·성능은 로봇 자체 지능·제어에 맡기고, ROP는 제조사 선언을 공통 모델로 모아 작업 요구와 대조하고 선언과 실제의 차이를 기록하는 쪽을 맡는 것으로 보인다. [추정][^ref-125][^ref-126][^ref-041]",
+        "planned_findings": [
+          "f32"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 700,
+        "summary": "7. 화물·재고·자산 식별과 추적, 8. 실시간 세계 상태·데이터 일관성, 9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 21. 온보딩·설정·현장 시운전, 27. AI·학습·적응과 모델 운영, 28. 표준·상호운용성·다사업자 거버넌스와 이어진다.",
+        "planned_findings": [
+          "f6",
+          "f5",
+          "f19",
+          "f1",
+          "f7",
+          "f8",
+          "f30",
+          "f23",
+          "f24",
+          "f33",
+          "f25",
+          "f26",
+          "f31",
+          "f12",
+          "f27",
+          "f28"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 450,
+        "summary": "국내 표준 부합화(oq-004), 적재물 유형 공통 어휘, 선언 능력과 운용 능력 중 배정 기준값이 열린 질문이다.",
+        "planned_findings": [
+          "f27",
+          "f28",
+          "f6",
+          "f19"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 13절 각주 27건, 트랙 반영 제안 3건(4·7·8절) 반영",
+        "content": "---\ntitle: \"5. 로봇 능력·작업 온톨로지\"\ntype: area\ncategory: \"B. 공통 정보·환경 모델\"\narea_no: 5\nrelated_areas: [7, 8, 9, 12, 13, 21, 27, 28]\ntags: [능력 모델, 스킬, VDA 5050 팩트시트, 능력 온톨로지, 실행 가능성 판정]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-24\nupdated: 2026-09-25\nsources: [ref-025, ref-026, ref-027, ref-028, ref-029, ref-035, ref-038, ref-040, ref-041, ref-042, ref-043, ref-105, ref-125, ref-126, ref-127, ref-128, ref-129, ref-130, ref-131, ref-132, ref-133, ref-134, ref-135, ref-136, ref-137, ref-138, ref-139]\nlast_run: 2026-09-25\nversion: 2\n---\n\n[홈](../../index.md) › [B. 공통 정보·환경 모델](index.md) › 5. 로봇 능력·작업 온톨로지\n\n# 5. 로봇 능력·작업 온톨로지\n\n!!! info \"소속 대분류\"\n    [B. 공통 정보·환경 모델](index.md) — 핵심 질문:\n    로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? [분류원문]\n\n<!-- auto:area-tracks:start -->\n!!! note \"관련 연구 트랙\"\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\n\n    - [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) — 중심 영역(●) · 확장 아이디어: [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)\n    - [자연어 업무 지시 챗봇](../../tracks/nl-task-chatbot/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\n<!-- auto:area-tracks:end -->\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 한 줄 정의\n\n제조사별 기능·제약·장착 장비·실행 조건을 공통 모델로 표현하고, 작업 요구와 연결 [분류원문]\n\n## 2. SCM 관점의 질문\n\n같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? [분류원문]\n\n> 원문 주석: 27번의 AI는 특정 기능 하나에만 해당하지 않는다. **매뉴얼 해석은 5·21번, 도면 해석은 6번, 학습 기반 배차는 13번, 장애 분석은 19번**에 적용되는 연구 방법이다. [분류원문]\n\n## 3. 왜 중요한가\n\n같은 운반 로봇 가운데 어느 로봇이 특정 화물을 실제로 취급할 수 있는지는 적재 명세(적재 유형·최대 중량·처리 높이), 지원 동작, 현재 상태(남은 적재 용량·운영 상태), 적재 상태에서의 경로 통과 가능성을 함께 대조해야 판단할 수 있어, 한 규격의 필드만으로는 정해지지 않을 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133]\n\n제조사마다 능력을 적는 방식도 맞춰져 있지 않다. VDA 5050 팩트시트의 적재 유형(loadType)과 MassRobotics 표준의 화물 설명(cargoType)은 모두 문자열로 적게 할 뿐 공통 어휘를 지정하지 않으므로, 제조사 사이에서 화물 취급 가능 여부를 맞추려면 적재물 유형 사전이 따로 필요할 것으로 보인다. [추정][^ref-125][^ref-127]\n\n문서에 선언된 능력과 현장에서 관측되는 능력이 다를 수 있다는 점도 연구 대상이다. Naqvi 외(2025)는 제조사가 광고한 능력(advertised capabilities)과 운용 중 관측된 능력(operational capabilities)을 온톨로지로 구분해 통합하는 방법을 제시했다. [사실][^ref-041] 따라서 이 영역은 흩어진 선언을 한 모델로 모아 작업 요구와 연결하는, 배정·실행 판단의 공통 기반으로 볼 수 있다. [의견]\n\n## 4. 핵심 개념과 용어\n\n이 영역의 중심 개념은 구현과 무관한 기능 명세인 능력과, 그 능력을 실제로 실행하는 구현인 스킬의 구분이며, 여기에 능력의 조건을 적는 제약·범위 개념이 더해진다. [사실][^ref-126][^ref-128]\n\n- **능력(Capability)** — 구현과 무관한 기능 명세다. [사실][^ref-126] 이 위키의 [능력·스킬·서비스 모델(CSS)](../../glossary/capabilities-skills-services.md) 용어 항목과 매뉴얼 기반 로봇 기능 온톨로지 트랙의 온톨로지 초안이 '기능(Capability)'이라 부르는 개념과 같은 뜻이며, 이 페이지에서는 '능력'으로 쓴다.\n- **스킬(Skill)** — OPC UA 같은 호출 인터페이스를 가진, 능력의 캡슐화된 구현이다. IDTA 02020과 CaSkMan 온톨로지가 이 구분을 공통으로 쓴다. [사실][^ref-126][^ref-128] CaSkMan은 Plattform Industrie 4.0의 CSS 참조 모델 위에 구축됐다. [사실][^ref-128] IDTA 02020도 같은 CSS 계열의 구분을 따르는 것으로 보이나, IDTA 안내문에서 CSS 언급은 확인되지 않았다. [추정][^ref-035]\n- **속성 제약·전이 제약(Property Constraint·Transition Constraint)** — IDTA 02020은 능력의 속성(최대 속도·허용 오차·온도 범위 등)에 전제조건·불변조건·사후조건 역할의 제약을 붙이고, 순서·병렬 흐름을 전이 제약으로 정한다. [사실][^ref-126]\n- **전제조건·효과(Precondition·Effect)** — [계획 도메인 정의 언어(PDDL)](../../glossary/pddl.md)는 행동을 파라미터·전제조건·효과로 기술하고 도메인과 문제 인스턴스를 분리한다. [사실][^ref-029]\n- **운용 범위·생존 범위(Operating Range·Survival Range)** — W3C/OGC SSN의 System Capabilities 모듈은 특정 조건에서의 시스템 능력, 정상 운용 범위, 그리고 벗어나면 시스템이 손상되어 능력 명세가 더 이상 성립하지 않을 수 있는 생존 범위를 구분한다. [사실][^ref-132]\n- **광고 능력·운용 능력(Advertised·Operational Capability)** — 제조사가 광고한 능력과 운용 중 관측된 능력을 나누는 구분이다. [사실][^ref-041]\n- **팩트시트(Factsheet)** — [VDA 5050](../../glossary/vda-5050.md) 3.0.0판에서 이동로봇이 유형·능력 명세, 물리 파라미터, 지원 동작, 적재 명세 등을 관제에 미리 알리는 스키마다(확인일 2026-09-25). [사실][^ref-125]\n\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\n\n**물류 흐름 단계:** 적치\n\n**시나리오:** 입고된 팔레트를 적치 위치로 옮길 운반 로봇 고르기\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 입고가 확정된 팔레트에 적치 작업이 생긴다(가상 설정). |\n| 작업 대상 | 팔레트 한 개. 적재 유형을 VDA 5050 팩트시트는 loadType(예: EPAL)으로, MassRobotics 표준은 cargoType 문자열로 적지만 공통 어휘는 정하지 않은 것으로 보인다. [추정][^ref-125][^ref-127] |\n| 수행 자원 | 제조사가 다른 운반 로봇 두 대(가상 설정). 어느 쪽이 취급할 수 있는지는 적재 명세·지원 동작·남은 적재 용량·운영 상태를 함께 대조해야 할 것으로 보인다. [추정][^ref-125][^ref-127][^ref-133] |\n| 제약 | 팩트시트의 적재 명세(loadSets)는 최대 중량, 최소·최대 적재 처리 높이, 대략의 픽·드롭 소요 시간을 적는다. [사실][^ref-125] 적재 상태에 따라 달라지는 장소 도달 가능성을 판정하는 연구도 있다. [사실][^ref-133] |\n| 완료·인계 | Open-RMF에서는 어댑터가 로봇 API의 완료를 확인한 뒤 execution.finished()를 호출해 완료를 알린다. [사실][^ref-040] |\n| 예외·성과 | 선언된 능력과 운용 중 관측된 능력이 다를 수 있다. [사실][^ref-041] 어느 값을 배정 기준으로 삼을지는 열린 질문이다. |\n\n다음은 설명을 위한 가상의 시나리오이다. 적치 작업이 생기면 ROP는 두 로봇의 팩트시트에서 팔레트 유형·중량·처리 높이를 비교하고, 상태 보고에서 남은 적재 용량과 운영 상태를 확인한다. 적재 유형 문자열이 제조사마다 다르면 이 비교 자체가 막힐 수 있다. [추정][^ref-125][^ref-127]\n\n작업이 끝나면 완료 보고는 인터페이스 안에서 선언한 동작 이름을 그대로 쓰는 방식으로 돌아오는 것으로 보인다. [추정][^ref-125][^ref-040] 적재 후 속도처럼 선언과 다른 운용 값이 쌓이면 능력 모델을 어떻게 갱신할지가 다음 과제로 남는다.\n\n## 6. 대표 접근법과 기술\n\n능력 기술과 실행의 연결은 같은 인터페이스 안에서 선언한 동작 이름을 명령·완료 보고에 그대로 쓰는 방식과, 별도 능력 모델을 상태 기계를 가진 스킬 인터페이스로 잇는 방식으로 나뉘는 것으로 보인다. [추정][^ref-125][^ref-040][^ref-126][^ref-128]\n\n### 인터페이스 안의 이름 기반 선언\n\nVDA 5050 3.0.0 팩트시트의 지원 동작 목록은 동작마다 actionType, 자유 문장 설명, 허용 범위, 파라미터(key·데이터형·선택 여부), 일시정지·취소 가능 여부를 적는다. [사실][^ref-125] Open-RMF의 사용자 정의 동작은 설정의 actions 목록에 이름으로만 선언되고, 작업 요청의 category(동작 이름)와 JSON description으로 호출된다. [사실][^ref-040] 한계로, 팩트시트 파라미터에는 허용 값 범위나 실행 전제조건을 담는 구조화 필드가 없어 그런 조건은 자유 문장이나 적재 명세의 최소·최대 필드에 흩어질 것으로 보인다. [추정][^ref-125]\n\n### 능력–스킬 모델\n\nIDTA 02020 능력 서브모델 1.0은 속성·제약·스킬로 능력을 기술하며, 요구 능력과 제공 능력을 신뢰성 있게 비교하는 것을 목적으로 한다. [사실][^ref-126] CaSkMan은 설비 구조, 추상 능력, 상태 기계를 가진 실행 스킬, 속성을 모델링하고 VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360을 잇는 정렬 온톨로지다. [사실][^ref-128] 이번 조사에서는 두 방식을 서로 매핑한 표준을 확인하지 못했다.\n\n### 의미 모델로 실행 가능성을 판정한 뒤 배정기로 넘기기\n\nElectronics(2026-08) 게재 연구는 로봇·작업·장소의 의미 모델과 선언적·절차적 혼합 추론으로 다축 능력 조건과 적재 상태에 따른 장소 도달 가능성을 판정하고, 그 결과를 배정 알고리즘과 무관한 공통 입력(ReasonerOutput)으로 넘긴다. [사실][^ref-133] CAPILANO는 이종 조립 자원과 결합 능력을 OWL 온톨로지로 기술하고 SPARQL 질의와 가용성을 고려한 연속 작업 배정을 한 틀로 묶었다. [사실][^ref-134] 이 연구는 제조 조립(라인리스 이동 조립 시스템) 대상이므로 물류 사례가 아니라 방법 참고로만 본다.\n\n### 문서·로봇 기술 파일에서 능력 온톨로지 만들기\n\n분류 원문 교차 규칙에 따라 매뉴얼 해석은 27. AI·학습·적응과 모델 운영의 연구 방법을 이 영역과 21. 온보딩·설정·현장 시운전에 적용하는 경우다. Vieira da Silva 외(ETFA 2024)는 여러 LLM과 프롬프트 기법으로 능력 온톨로지를 생성하고 RDF 구문 검사·OWL 추론·SHACL 제약에 기반한 반자동 품질 검사를 적용해, 복잡한 능력에서도 오류가 거의 없었다고 저자들이 보고했다. [사실][^ref-135] Dussard·Sarthou(ICSR 2026)는 URDF 로봇 기술 파일의 식별자를 LLM으로 해석해 기존 온톨로지 개념을 채우고, 여러 질의의 다수결과 구문·스키마 수준 검증으로 신뢰성을 높이는 파이프라인을 제안했다. [사실][^ref-136] 두 연구 모두 생성 결과를 형식 검증에 통과시키므로, 문서 기반 능력 모델 구축에서도 생성과 검증을 분리한 구조가 필요할 것으로 보인다. [추정][^ref-135][^ref-136] 물류 로봇 매뉴얼을 대상으로 한 공개 사례는 이번 조사에서 확인하지 못했다.\n\n## 7. 관련 표준·프레임워크·오픈소스\n\n물류 이동로봇 인터페이스는 적재·동작 능력을 필드로 선언하게 하고, 능력 모델 표준·온톨로지는 능력·스킬·조건을 구조화한다. [사실][^ref-125][^ref-126] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| VDA 5050 팩트시트 스키마(3.0.0판) | 표준 | 유형 명세(등급·능력), 물리 파라미터, 프로토콜 한계·기능, 기하, 적재 명세를 필수 블록으로 둔다(확인일 2026-09-25). [사실][^ref-125] | 공식 저장소 스키마 원문 |\n| MassRobotics AMR 상호운용 표준 JSON 스키마 | 표준 | 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 설명·화물 최대 부피·최대 중량·제품 문서 링크를, 상태 보고에 운영 상태(9개 값)와 남은 적재 용량 비율을 둔다. [사실][^ref-127] | 공식 저장소 스키마 원문 |\n| Open-RMF 플릿 어댑터 설정 | 오픈소스 | 플릿 단위로 수행 가능한 작업 유형(task_capabilities: loop, delivery 등), 사용자 정의 동작 이름, 작업 종료 후 동작(park·charge·nothing)을 선언한다. [사실][^ref-105] | 공식 템플릿 원문 |\n| IDTA 02020 Capability Description 1.0 | 표준 | 능력을 속성·속성 제약·전이 제약·스킬로 기술하고 요구·제공 능력 비교를 목적으로 하는 자산관리셸(AAS) 서브모델이다. [사실][^ref-126] | IDTA 저장소 안내문, 원문 미열람 |\n| IDTA 02047 Technical Data for AGV 1.0 | 표준 | 여러 제조사·유형의 무인운반차를 한 생산 환경에서 운영하기 위해 제조사 독립 기술 데이터를 AAS 서브모델로 표준화하려는 명세다. 세부 필드는 미확인이다. [사실][^ref-131] | IDTA 저장소 안내문, 원문 미열람 |\n| CaSkMan | 오픈소스 | 제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하는 OWL 정렬 온톨로지다. [사실][^ref-128] | 공식 저장소 원문 |\n| W3C/OGC SSN System Capabilities 모듈 | 표준 | 조건별 시스템 능력, 운용 범위, 생존 범위를 hasSystemCapability·inCondition 관계로 기술한다. 작업반 저장소 편집본이며 권고안과 문구 일치는 미확인이다. [사실][^ref-132] | 작업반 저장소 원문 |\n| IEEE 1872-2015 (CORA) | 표준 | 로봇·자동화 분야의 일반 개념·관계·공리를 담은 핵심 온톨로지를 정한 표준 온톨로지다([용어: CORA](../../glossary/cora.md)). [사실][^ref-025] | 원문 미열람 |\n| IEEE 1872.2 AuR 온톨로지 OWL 구현(헬무트 슈미트 대학) | 오픈소스 | IEEE 1872.2 AuR 온톨로지(표준은 상위 온톨로지 DUL·SUMO를 씀)의 OWL 구현으로, SUMO는 OWL 표현이 없어 제외하고 DUL만 포함한 제3자 구현이다. 로봇이 제공하고 기능 실행으로 수행되는 기능, 상호작용, 환경을 기술한다. [사실][^ref-129][^ref-026] | 구현 저장소 원문, 표준 원문 미열람 |\n| ISO 22166-201:2024 | 표준 | 서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위해 모듈 공통 정보 모델의 구조와 속성·하위 클래스의 의미를 정한다. [사실][^ref-137] | 원문 미열람 |\n| KS B 7321-2 | 표준 | '로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델'이 KSSN에 등록되어 있다. 제정일·내용은 미확인이다. [사실][^ref-138] | 원문 미열람 |\n\n## 8. 대표 연구와 자료\n\n대표 자료는 로봇 지식 처리·활동 온톨로지, 능력·스킬 모델, 광고·운용 능력 통합, 온톨로지 기반 배정, LLM 기반 능력 온톨로지 생성 연구로 나뉜다. [사실][^ref-130][^ref-038][^ref-041]\n\n- Beetz 외, KnowRob 2.0(2018) — 인지 기반 로봇 에이전트를 위한 2세대 지식 처리 프레임워크다. [사실][^ref-027]\n- EASE CRC, SOMA — DUL(DOLCE+DnS Ultralite) 상위 온톨로지를 확장한 OWL 활동 온톨로지로, 로봇 에이전트의 의도·계획·움직임·물체와의 접촉 같은 활동 측면을 표현한다. [사실][^ref-130][^ref-028]\n- Vieira da Silva·Köcher·Fay, 이종 자율 로봇을 위한 능력·스킬 모델(2022) — 이종 자율 로봇용 능력·스킬 모델을 제안한 프리프린트다. [사실][^ref-038]\n- Naqvi 외, 광고 능력과 운용 능력의 온톨로지 기반 통합(2025) — 두 능력을 온톨로지로 구분해 통합하는 방법을 제시했다. [사실][^ref-041]\n- Aguado 외, 신뢰할 수 있는 로봇 자율성을 위한 온톨로지 활용 프로세스 서베이(2024) — 이 주제의 서베이 논문이다. [사실][^ref-042]\n- 신민종·한영석·정재윤, 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계(2024) — 국내 학술지 게재 논문이며, 능력 기술을 포함하는지는 미확인이다. [사실][^ref-043]\n- Electronics 게재 논문, 이종 다중 로봇 작업 배정을 위한 의미 기반 실행 가능성 추론(2026) — 6절 참고. 저자 미확인. [사실][^ref-133]\n- Kluge-Wilkes 외, CAPILANO(2022) — 제조 조립(라인리스 이동 조립 시스템) 대상 온톨로지 기반 배정 연구로, 방법 참고용이다. [사실][^ref-134]\n- Vieira da Silva 외(2024), Dussard·Sarthou(2026) — LLM으로 능력 온톨로지를 생성·채우고 형식 검증하는 연구다(6절 참고). [사실][^ref-135][^ref-136]\n- Meseguer Valenzuela·Blanes Noguera, 이동로봇 플릿 작업 배정 리뷰(2025) — 이동로봇 플릿의 작업 배정 문제를 에너지 소비와 필요 로봇 수 최소화 관점에서 정리하고 AI 기반 방법을 포함한 최적화 알고리즘을 검토했다. [사실][^ref-139]\n\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 제조사가 선언한 능력·제약(팩트시트·능력 서브모델)을 공통 모델로 모아 작업 요구와 대조하고, 실행 결과로 선언과 실제의 차이를 기록한다. [추정][^ref-125][^ref-126][^ref-041] | 연계 대상: 파지·센서 인식·로컬 회피 같은 능력의 실제 구현과 성능 보장은 제조사 쪽에 둔다. [추정][^ref-125][^ref-126][^ref-041] |\n\n이 경계는 제품 전략에 따라 옮겨질 수 있다. 분류 원문은 \"이종 제조사를 연결하는 ROP는 그 기능을 제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다\"고 적는다([범위 경계](../../about/scope-boundary.md)). 이 영역에서 ROP가 맡는 인터페이스는 제조사 선언을 읽는 공통 능력 모델과 요구–능력 대조이며, 능력 자체를 구현하는 일은 포함하지 않는 것으로 본다. [의견]\n\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\n\n이 영역의 능력 모델은 화물 식별, 현재 상태, 관제 연동, 실행 신뢰성, 배정, 온보딩, AI 방법, 표준 거버넌스 영역과 맞물린다. [추정][^ref-125][^ref-133]\n\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) — 팩트시트 적재 유형과 MassRobotics 화물 설명을 맞추려면 적재물 유형 어휘가 필요할 것으로 보인다. [추정][^ref-125][^ref-127]\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) — 상태 보고의 운영 상태·남은 적재 용량과 운용 중 관측된 능력은 현재 상태 표현으로서 배정 판단에 들어간다. [사실][^ref-127][^ref-041]\n- [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 팩트시트와 플릿 어댑터 설정이 제조사 능력 선언의 입구다. [사실][^ref-125][^ref-105]\n- [12. 명령·작업 실행의 신뢰성](../c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 선언한 동작 이름이 명령·완료 보고로 이어지는 방식이 실행 확인과 맞닿는다. [추정][^ref-040][^ref-125]\n- [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md) — 실행 가능성 판정 결과를 배정기 독립 입력으로 넘기는 연구가 두 영역을 잇는다. [사실][^ref-133][^ref-139]\n- [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 매뉴얼·로봇 기술 파일 해석으로 능력 모델을 만드는 일은 온보딩 때 필요하다. [추정][^ref-135][^ref-136]\n- [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — LLM 기반 능력 온톨로지 생성과 형식 검증은 이 영역에 적용되는 AI 방법이다. [사실][^ref-135][^ref-136]\n- [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — IDTA 02047, ISO 22166-201, KS B 7321-2 같은 제조사 독립 정보 모델 표준이 걸려 있다. [사실][^ref-131][^ref-137][^ref-138]\n- [매뉴얼 기반 로봇 기능 온톨로지 트랙](../../tracks/manual-capability-ontology/index.md) — 이 영역을 중심으로 한 중점 연구 트랙이다.\n\n## 11. 열린 질문\n\n국내 표준 부합화, 적재물 유형 공통 어휘, 선언 능력과 운용 능력 가운데 배정 기준이 아직 풀리지 않았다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n- **oq-004** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-02) IEEE 1872 계열 로봇 온톨로지 표준이나 AAS 능력 서브모델을 KS로 부합화했거나 국내 로봇 관제 사업에 적용한 사례가 있는가? 부분 근거로 서비스 로봇 모듈 정보 모델 국제표준과 국내 KS가 확인됐으나, 로봇 온톨로지·능력 서브모델의 부합화는 확인되지 않았다.[^ref-137][^ref-138]\n- (신규, 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-15) VDA 5050 팩트시트의 loadType과 MassRobotics의 cargoType이 자유 문자열일 때 팔레트·용기 같은 적재물 유형을 제조사 사이에 같은 의미로 맞출 공통 어휘나 코드 체계가 있는가?[^ref-125][^ref-127]\n- (신규, 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-15) 제조사가 문서로 선언한 능력(팩트시트·매뉴얼)과 현장에서 관측한 운용 능력(적재 후 속도, 배터리 저하 등)이 다를 때 작업 배정은 어느 값을 기준으로 삼고 능력 모델을 어떻게 갱신하는가?[^ref-041]\n\n트랙 전용 질문은 [질문 백로그](../../tracks/manual-capability-ontology/question-backlog.md)에 있다.\n\n## 12. 최근 업데이트 (자동)\n\n<!-- auto:area-recent:start -->\n아직 기록된 업데이트가 없다.\n<!-- auto:area-recent:end -->\n\n## 13. 참고 자료 (각주)\n\n[^ref-025]: IEEE, 1872-2015 - IEEE Standard Ontologies for Robotics and Automation, 2015, https://ieeexplore.ieee.org/document/7084073/, 접근일 2026-09-25 (원문 미열람)\n[^ref-026]: IEEE, IEEE 1872.2-2021 - IEEE Standard for Autonomous Robotics (AuR) Ontology, 2022, https://standards.ieee.org/standard/1872_2-2021.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-027]: Beetz, M., Beßler, D., Haidu, A., Pomarlan, M., Bozcuoglu, A. K., & Bartels, G., KnowRob 2.0 — A 2nd Generation Knowledge Processing Framework for Cognition-Enabled Robotic Agents, 2018, https://ai.uni-bremen.de/papers/beetz18knowrob.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-028]: Beßler, D. 외, Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents, 2021, https://arxiv.org/pdf/2011.11972, 접근일 2026-09-25 (원문 미열람)\n[^ref-029]: McDermott, D. 외, PDDL - The Planning Domain Definition Language, 1998, https://www.researchgate.net/publication/2278933_PDDL_-_The_Planning_Domain_Definition_Language, 접근일 2026-09-25 (원문 미열람)\n[^ref-035]: Plattform Industrie 4.0, Information Model for Capabilities, Skills & Services, 2022-11, https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-038]: Vieira da Silva, L. M., Köcher, A., & Fay, A., A Capability and Skill Model for Heterogeneous Autonomous Robots, 2022-09, https://arxiv.org/abs/2209.10900, 접근일 2026-09-25 (원문 미열람)\n[^ref-040]: Open Robotics, PerformAction Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html, 접근일 2026-09-25\n[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\n[^ref-042]: Aguado, E., Gomez, V., Hernando, M., Rossi, C., & Sanz, R., A survey of ontology-enabled processes for dependable robot autonomy, 2024-07, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1377897/full, 접근일 2026-09-25 (원문 미열람)\n[^ref-043]: 신민종, 한영석, 정재윤, 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계, 2024, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560, 접근일 2026-09-25 (원문 미열람)\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-125]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-126]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description, 접근일 2026-09-25 (원문 미열람)\n[^ref-127]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\n[^ref-128]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25\n[^ref-129]: Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub), IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation), 미확인, https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2, 접근일 2026-09-25\n[^ref-130]: EASE CRC (ease-crc/soma), SOMA — README (Socio-physical Model of Activities), 미확인, https://github.com/ease-crc/soma, 접근일 2026-09-25\n[^ref-131]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25 (원문 미열람)\n[^ref-132]: W3C / OGC Spatial Data on the Web WG (w3c/sdw GitHub), ssn/integrated/ssn-system.ttl (SSN System Capabilities module), 미확인, https://github.com/w3c/sdw/blob/gh-pages/ssn/integrated/ssn-system.ttl, 접근일 2026-09-25\n[^ref-133]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-134]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)\n[^ref-135]: Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies, 2024-04, https://arxiv.org/abs/2404.17524, 접근일 2026-09-25 (원문 미열람)\n[^ref-136]: Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF, 2026-06, https://arxiv.org/abs/2606.17073, 접근일 2026-09-25 (원문 미열람)\n[^ref-137]: ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules, 2024-02, https://www.iso.org/standard/82334.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-138]: 국가표준인증통합정보시스템(KSSN), KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010147546, 접근일 2026-09-25 (원문 미열람)\n[^ref-139]: Meseguer Valenzuela, A., & Blanes Noguera, F., Task Allocation in Mobile Robot Fleets: A review, 2025-01, https://arxiv.org/abs/2501.08726, 접근일 2026-09-25 (원문 미열람)\n"
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 5. 로봇 능력·작업 온톨로지 | 영역 심화: 3~11절 신규 작성(능력·스킬 구분, VDA 5050 팩트시트·MassRobotics·Open-RMF 능력 선언, IDTA 02020·CaSkMan·SSN·IEEE 1872 계열·ISO 22166-201·KS B 7321-2, 적치 시나리오, 열린 질문 2건 신규·oq-004 연결), 트랙 반영 제안 3건 반영 | run 2026-09-25-15",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 5. 로봇 능력·작업 온톨로지: 영역 심화 초안 작성(능력·스킬 구분, 제조사 능력 선언 규격 비교, 적치 시나리오, 열린 질문 2건 추가)",
+      "category_recent": "2026-09-25 — 5. 로봇 능력·작업 온톨로지: 3~11절 신규 작성, VDA 5050 팩트시트·MassRobotics·IDTA 02020 등 능력 표현 표준 정리",
+      "area_recent": "2026-09-25 — 5. 로봇 능력·작업 온톨로지: 3~11절 신규 작성, 트랙 반영 제안 3건(4·7·8절) 반영, oq-004 연결"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "skill",
+        "term_ko": "스킬",
+        "term_en": "Skill",
+        "definition": "구현과 무관하게 명세한 능력(capability)을 실제로 실행하는 캡슐화된 구현으로, OPC UA 같은 호출 인터페이스를 가지며 상태 기계를 가질 수 있다(예: CaSkMan 의 ISA 88 상태 기계).",
+        "description": "IDTA 02020 능력 서브모델과 CaSkMan 온톨로지가 능력과 스킬을 구분해 쓴다. 이 위키의 온톨로지 초안이 '기능(Capability)'이라 부르는 개념이 여기의 능력에 해당한다.",
+        "related_areas": [
+          5,
+          9,
+          12
+        ],
+        "sources": [
+          "ref-126",
+          "ref-128"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "vda-5050-factsheet",
+        "term_ko": "팩트시트",
+        "term_en": "Factsheet (VDA 5050)",
+        "definition": "VDA 5050에서 이동로봇이 유형 명세·물리 파라미터·지원 동작·적재 명세를 관제에 미리 알리는 메시지이다.",
+        "description": "3.0.0판 스키마는 typeSpecification, physicalParameters, protocolLimits, protocolFeatures, mobileRobotGeometry, loadSpecification 을 필수 블록으로 둔다(확인일 2026-09-25).",
+        "related_areas": [
+          5,
+          9
+        ],
+        "sources": [
+          "ref-125"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "asset-administration-shell",
+        "term_ko": "자산관리셸",
+        "term_en": "Asset Administration Shell (AAS)",
+        "definition": "산업 자산의 정보를 서브모델 단위로 표준화해 디지털로 표현·교환하게 하는 인더스트리 4.0의 디지털 표현 구조이다.",
+        "description": "IDTA 02020(능력 기술), IDTA 02047(무인운반차 기술 데이터) 같은 서브모델 템플릿이 있다.",
+        "related_areas": [
+          5,
+          28
+        ],
+        "sources": [
+          "ref-126",
+          "ref-131"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "shacl",
+        "term_ko": "형상 제약 언어",
+        "term_en": "Shapes Constraint Language (SHACL)",
+        "definition": "RDF 그래프가 정해진 구조·값 조건을 지키는지 검증하는 W3C 제약 언어로, 생성된 온톨로지의 품질 검사에 쓰인다.",
+        "related_areas": [
+          5,
+          27
+        ],
+        "sources": [
+          "ref-135"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-125",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 공식 저장소 main(3.0.0판)의 팩트시트 JSON 스키마. 유형 명세·물리 파라미터·지원 동작·적재 명세 블록의 필드를 정의한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-126",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "title": "IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. IDTA 공식 서브모델 템플릿 저장소의 능력 기술 서브모델 1.0 안내. 능력 정의, 속성, 속성 제약·전이 제약, 스킬과의 관계, 요구·제공 능력 비교 목적을 설명한다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-127",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. 식별 보고(최대 속도·화물 최대 중량·부피 등)와 상태 보고(운영 상태·남은 적재 용량) 필드를 정의한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-128",
+        "org": "CaSkade-Automation (GitHub)",
+        "title": "CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README)",
+        "published": null,
+        "url": "https://github.com/CaSkade-Automation/CaSkMan",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하는 OWL 정렬 온톨로지 저장소 README. VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360 과 CSS 참조 모델을 잇는다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-129",
+        "org": "Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub)",
+        "title": "IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation)",
+        "published": null,
+        "url": "https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "IEEE 1872.2 AuR 온톨로지를 OWL 로 구현한 제3자 저장소 README. SUMO 는 OWL 표현이 없어 제외하고 DUL 만 포함했으며, 로봇 기능과 기능 실행, 상호작용·환경 기술을 설명한다. IEEE 표준 본문은 아니다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-130",
+        "org": "EASE CRC (ease-crc/soma)",
+        "title": "SOMA — README (Socio-physical Model of Activities)",
+        "published": null,
+        "url": "https://github.com/ease-crc/soma",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "SOMA 공식 저장소 README. DUL 상위 온톨로지를 확장해 로봇 에이전트의 활동을 표현하는 OWL 온톨로지임을 설명한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-131",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "title": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 여러 제조사·유형의 무인운반차를 통합하기 위한 제조사 독립 기술 데이터 AAS 서브모델 1.0 안내.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-132",
+        "org": "W3C / OGC Spatial Data on the Web WG (w3c/sdw GitHub)",
+        "title": "ssn/integrated/ssn-system.ttl (SSN System Capabilities module)",
+        "published": null,
+        "url": "https://github.com/w3c/sdw/blob/gh-pages/ssn/integrated/ssn-system.ttl",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "SSN 온톨로지의 System Capabilities 모듈 파일. 시스템 능력·운용 범위·생존 범위·조건과 관계를 정의한다. 작업반 저장소 편집본이라 /TR 권고안과 문구가 다를 수 있다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-133",
+        "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+        "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+        "published": "2026-08-11",
+        "url": "https://doi.org/10.3390/electronics15163562",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇·작업·장소 의미 모델과 혼합 추론으로 능력 조건과 적재 상태 도달 가능성을 판정하고 배정기 독립 출력으로 넘기는 방법을 제안한 논문(Electronics 15(16) 3562).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-134",
+        "org": "Kluge-Wilkes, A. 외(RWTH Aachen WZL)",
+        "title": "Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems",
+        "published": "2022",
+        "url": "https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이종 조립 자원의 능력을 OWL 온톨로지(CAPILANO)로 기술하고 SPARQL 질의와 가용성 기반 작업 배정을 결합한 연구(2022년 MHI Colloquium·WGMHI 연보 게재). 제조 조립 대상.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-135",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "On the Use of Large Language Models to Generate Capability Ontologies",
+        "published": "2024-04",
+        "url": "https://arxiv.org/abs/2404.17524",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LLM 으로 능력 온톨로지를 생성하고 RDF 구문 검사·OWL 추론·SHACL 로 품질을 반자동 검사한 연구(IEEE ETFA 2024).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-136",
+        "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
+        "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.17073",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. URDF 로봇 기술을 LLM 으로 해석해 로봇 온톨로지를 채우고 다수결·스키마 검증으로 신뢰성을 높이는 파이프라인(ICSR 2026).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-137",
+        "org": "ISO",
+        "title": "ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules",
+        "published": "2024-02",
+        "url": "https://www.iso.org/standard/82334.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 서비스 로봇 모듈의 상호운용·재사용·조립을 위한 공통 정보 모델의 구조와 속성 의미를 정한 국제표준(1판, 2024-02)의 ISO 소개 페이지.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-138",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 서비스 로봇 소프트웨어 모듈의 정보 모델을 다루는 국내 KS 표준의 KSSN 상세 페이지.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-139",
+        "org": "Meseguer Valenzuela, A., & Blanes Noguera, F.",
+        "title": "Task Allocation in Mobile Robot Fleets: A review",
+        "published": "2025-01",
+        "url": "https://arxiv.org/abs/2501.08726",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이동로봇 플릿의 작업 배정 문제와 AI 기반 방법을 포함한 최적화 알고리즘을 검토한 리뷰 프리프린트.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-025",
+        "org": "IEEE",
+        "title": "1872-2015 - IEEE Standard Ontologies for Robotics and Automation",
+        "published": "2015",
+        "url": "https://ieeexplore.ieee.org/document/7084073/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇·자동화 분야 핵심 온톨로지(CORA)를 정한 IEEE 표준.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-026",
+        "org": "IEEE",
+        "title": "IEEE 1872.2-2021 - IEEE Standard for Autonomous Robotics (AuR) Ontology",
+        "published": "2022",
+        "url": "https://standards.ieee.org/standard/1872_2-2021.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자율 로봇 분야 온톨로지(AuR)를 정한 IEEE 표준.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-027",
+        "org": "Beetz, M., Beßler, D., Haidu, A., Pomarlan, M., Bozcuoglu, A. K., & Bartels, G.",
+        "title": "KnowRob 2.0 — A 2nd Generation Knowledge Processing Framework for Cognition-Enabled Robotic Agents",
+        "published": "2018",
+        "url": "https://ai.uni-bremen.de/papers/beetz18knowrob.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 인지 기반 로봇 에이전트를 위한 2세대 지식 처리 프레임워크 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-028",
+        "org": "Beßler, D. 외",
+        "title": "Foundations of the Socio-physical Model of Activities (SOMA) for Autonomous Robotic Agents",
+        "published": "2021",
+        "url": "https://arxiv.org/pdf/2011.11972",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자율 로봇 에이전트의 활동 온톨로지 SOMA 의 기초를 제시한 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-029",
+        "org": "McDermott, D. 외",
+        "title": "PDDL - The Planning Domain Definition Language",
+        "published": "1998",
+        "url": "https://www.researchgate.net/publication/2278933_PDDL_-_The_Planning_Domain_Definition_Language",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 행동을 파라미터·전제조건·효과로 기술하는 계획 도메인 정의 언어 문서.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-035",
+        "org": "Plattform Industrie 4.0",
+        "title": "Information Model for Capabilities, Skills & Services",
+        "published": "2022-11",
+        "url": "https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.html",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 능력·스킬·서비스(CSS) 정보 모델을 제안한 Plattform Industrie 4.0 토론 문서.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-038",
+        "org": "Vieira da Silva, L. M., Köcher, A., & Fay, A.",
+        "title": "A Capability and Skill Model for Heterogeneous Autonomous Robots",
+        "published": "2022-09",
+        "url": "https://arxiv.org/abs/2209.10900",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이종 자율 로봇을 위한 능력·스킬 모델을 제안한 프리프린트.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-040",
+        "org": "Open Robotics",
+        "title": "PerformAction Tutorial - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "플릿 어댑터 설정에 사용자 정의 동작을 선언하고 작업 요청으로 호출한 뒤 execution.finished() 로 완료를 알리는 방법을 설명하는 공식 튜토리얼(mdBook 원본).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-041",
+        "org": "Naqvi, M. R. 외(Scientific Reports)",
+        "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+        "published": "2025-10-02",
+        "url": "https://www.nature.com/articles/s41598-025-16649-3",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇의 광고 능력과 운용 능력을 온톨로지로 통합하는 방법을 제시한 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-042",
+        "org": "Aguado, E., Gomez, V., Hernando, M., Rossi, C., & Sanz, R.",
+        "title": "A survey of ontology-enabled processes for dependable robot autonomy",
+        "published": "2024-07",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1377897/full",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자율 로봇 신뢰성을 위한 온톨로지 활용 프로세스 서베이.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-043",
+        "org": "신민종, 한영석, 정재윤",
+        "title": "자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계",
+        "published": "2024",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자산관리셸 표준으로 자율이동로봇 모니터링 시스템을 설계한 국내 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      },
+      {
+        "id": "ref-105",
+        "org": "Open Robotics (open-rmf)",
+        "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+        "published": null,
+        "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 플릿 어댑터 템플릿 설정 파일. 작업 능력(task_capabilities), 사용자 정의 동작, 작업 종료 후 동작, 배터리·충전 항목을 정의한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "VDA 5050 팩트시트의 loadType 과 MassRobotics 의 cargoType 이 자유 문자열일 때 팔레트·용기 같은 적재물 유형을 제조사 사이에 같은 의미로 맞출 공통 어휘나 코드 체계가 있는가?",
+        "areas": [
+          5,
+          7
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "제조사가 문서로 선언한 능력(팩트시트·매뉴얼)과 현장에서 관측한 운용 능력(적재 후 속도, 배터리 저하 등)이 다를 때 작업 배정은 어느 값을 기준으로 삼고 능력 모델을 어떻게 갱신하는가?",
+        "areas": [
+          5,
+          8,
+          13
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [
+      {
+        "step": "적치",
+        "item": "시작 조건",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      },
+      {
+        "step": "적치",
+        "item": "작업 대상",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      },
+      {
+        "step": "적치",
+        "item": "수행 자원",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      },
+      {
+        "step": "적치",
+        "item": "제약",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      },
+      {
+        "step": "적치",
+        "item": "완료·인계",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      },
+      {
+        "step": "적치",
+        "item": "예외·성과",
+        "link": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "5. 로봇 능력·작업 온톨로지"
+      }
+    ],
+    "additional_research_requests": [
+      "7절: IDTA 02047 Technical Data for AGV 1.0 의 세부 필드(적재량·치수·속도 등)가 README 범위에서 미확인이라, 명세 본문을 열어 VDA 5050 팩트시트 적재 명세와 비교할 근거가 필요하다.",
+      "7·11절: KS B 7321-2 의 제정일, ISO 22166-202 부합 여부, 제1부 존재 여부를 확인해야 oq-004 의 부분 근거를 보강할 수 있다.",
+      "8절: ref-133(Electronics 2026) 저자 미확인 — 참고문헌 기관 표기를 채울 서지 확인이 필요하다.",
+      "6절: 물류 로봇 매뉴얼에서 능력 모델을 LLM 으로 추출한 공개 사례를 찾지 못했다 — 매뉴얼 해석 적용 사례가 있으면 6절과 21. 온보딩·설정·현장 시운전 연결을 보강할 수 있다.",
+      "출처 기록: ref-126·ref-131 은 1차 검증자가 raw 경로로 열어 일치를 확인했으나 브리프에 fetched false 로 기록돼 원문 미열람 표시를 유지했다. 다음 실행에서 fetched 기록을 바로잡을지 확인이 필요하다.",
+      "6절: VDA 5050·Open-RMF 의 이름 기반 동작 선언과 IDTA 02020·CaSkMan 의 능력–스킬 모델을 서로 매핑한 표준·구현이 있는지 조사가 필요하다(현재 [추정])."
+    ],
+    "fixes_applied": [
+      "f15 문구 수정 — 7절 표의 IEEE 1872.2 행을 'IEEE 1872.2 AuR 온톨로지(표준은 상위 온톨로지 DUL·SUMO를 씀)의 OWL 구현으로, SUMO는 OWL 표현이 없어 제외하고 DUL만 포함한 제3자 구현'으로 썼다.",
+      "f10 CSS 계열 한정 — 4절 스킬 항목에서 능력·스킬 구분만 IDTA 02020·CaSkMan 공통 [사실]로 두고, CSS 참조 모델 기반은 CaSkMan(ref-128)에만 [사실]로, IDTA 02020 과 CSS 의 관계는 ref-035 근거 [추정]으로 썼다.",
+      "f33 적용 분야 삭제 — 8절 Meseguer Valenzuela·Blanes Noguera 항목을 '이동로봇 플릿의 작업 배정 문제'로 쓰고 '의료·물류 등'을 넣지 않았다.",
+      "f13 인용 — 4절 운용 범위·생존 범위 항목과 7절 SSN 행에서 원문을 직접 인용하지 않고 재서술했다.",
+      "ref-134 발행일 — 13절 각주와 reference_updates 의 발행일을 2022 로 썼다.",
+      "ref-137 발행일 — 13절 각주와 reference_updates 의 발행일을 2024-02 로 썼다.",
+      "ref-135 저자 — 13절 각주와 reference_updates 의 기관을 'Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.'로 썼다.",
+      "원문 미열람 표기 — fetched false 출처(ref-025~029, ref-035, ref-038, ref-041~043, ref-126, ref-131, ref-133~139) 각주에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 와 '원문 미열람. ' 요약 머리를 넣었으며, fetched true 출처(ref-040, ref-105, ref-125, ref-127~130, ref-132)에는 붙이지 않았다.",
+      "재인용 범위 — f16~f22·f28 을 7·8절에서 존재·제목·게재 사실 범위로만 쓰고, f22(신민종 외) 항목에 '능력 기술을 포함하는지는 미확인'을 함께 적었다.",
+      "f24 위치 — 5절 시나리오에 넣지 않고 6·8절에서 제조 조립(라인리스 이동 조립 시스템) 대상 연구로 밝혀 방법 참고로만 썼다.",
+      "f25·f26·f31 교차 연결 — 6절에 교차 규칙을 밝히고 10절에 27. AI·학습·적응과 모델 운영과 21. 온보딩·설정·현장 시운전을 모두 연결했으며, f25 의 '오류가 거의 없었다'를 저자들의 보고로 썼다.",
+      "f5·f19 연결 — 10절의 8. 실시간 세계 상태·데이터 일관성 항목을 현재 상태 표현으로만 쓰고 22. 시뮬레이션·예측용 디지털 트윈은 언급하지 않았다.",
+      "용어 — 4절 능력 항목 첫 등장에서 용어집 CSS 항목·온톨로지 초안의 '기능(Capability)'과 같은 뜻임을 밝혔고, glossary_updates 의 스킬 정의를 '상태 기계를 가질 수 있다(예: CaSkMan 의 ISA 88 상태 기계)'로 고쳤다.",
+      "oq-004 — 해결로 바꾸지 않고(open_question_updates 에 상태 변경 없음) 11절에서 열림으로 연결하며 f27·f28(ISO 22166-201, KS B 7321-2)을 부분 근거로 적었다.",
+      "트랙 반영 제안 3건 — 4절(능력·스킬, 전제조건·효과, 광고·운용 능력), 7절(IEEE 1872 계열, SSN System Capabilities, IDTA 02020), 8절(KnowRob 2.0, SOMA, RCO, 서베이, 이종 자율 로봇 능력·스킬 모델, 국내 KCI)에 반영했고, 7절 IDTA 02020 은 제3자 논문 경유 [추정]이 아니라 f9(ref-126, 원문 미열람 표기)를 근거로 [사실]로 썼다."
+    ],
+    "standards_updates": [
+      {
+        "name": "IDTA 02020 Capability Description 1.0",
+        "kind": "표준",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+        "related_areas": [
+          5,
+          28
+        ],
+        "summary": "능력을 속성·속성 제약·전이 제약·스킬로 기술하고 요구 능력과 제공 능력의 비교를 목적으로 하는 자산관리셸 서브모델(원문 미열람).",
+        "ref_id": "ref-126"
+      },
+      {
+        "name": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0",
+        "kind": "표준",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles",
+        "related_areas": [
+          5,
+          28
+        ],
+        "summary": "여러 제조사·유형의 무인운반차를 한 환경에서 운영하기 위한 제조사 독립 기술 데이터 자산관리셸 서브모델(원문 미열람, 세부 필드 미확인).",
+        "ref_id": "ref-131"
+      },
+      {
+        "name": "CaSkMan",
+        "kind": "오픈소스",
+        "org": "CaSkade-Automation (GitHub)",
+        "url": "https://github.com/CaSkade-Automation/CaSkMan",
+        "related_areas": [
+          5
+        ],
+        "summary": "제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하고 VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360 을 잇는 OWL 정렬 온톨로지.",
+        "ref_id": "ref-128"
+      },
+      {
+        "name": "SOMA (Socio-physical Model of Activities)",
+        "kind": "오픈소스",
+        "org": "EASE CRC",
+        "url": "https://github.com/ease-crc/soma",
+        "related_areas": [
+          5
+        ],
+        "summary": "DUL 상위 온톨로지를 확장해 로봇 에이전트의 활동을 표현하는 OWL 온톨로지.",
+        "ref_id": "ref-130"
+      },
+      {
+        "name": "IEEE 1872.2 AuR 온톨로지 OWL 구현(IndustrialStandard-ODP-IEEE1872-2)",
+        "kind": "오픈소스",
+        "org": "Helmut Schmidt University, Institute of Automation Technology",
+        "url": "https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2",
+        "related_areas": [
+          5,
+          28
+        ],
+        "summary": "IEEE 1872.2 AuR 온톨로지의 제3자 OWL 구현으로, SUMO 는 제외하고 DUL 만 포함한다.",
+        "ref_id": "ref-129"
+      },
+      {
+        "name": "ISO 22166-201:2024 서비스 로봇 모듈 공통 정보 모델",
+        "kind": "표준",
+        "org": "ISO",
+        "url": "https://www.iso.org/standard/82334.html",
+        "related_areas": [
+          5,
+          28
+        ],
+        "summary": "서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위한 모듈 공통 정보 모델의 구조와 속성 의미를 정한 국제표준(원문 미열람).",
+        "ref_id": "ref-137"
+      },
+      {
+        "name": "KS B 7321-2 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+        "kind": "표준",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+        "related_areas": [
+          5,
+          28
+        ],
+        "summary": "KSSN 에 등록된 서비스 로봇 소프트웨어 모듈 정보 모델 국가표준. 제정일·내용 미확인(원문 미열람).",
+        "ref_id": "ref-138"
+      }
+    ]
+  },
+  "ttft_ms": 105809,
+  "type": "result",
+  "duration_ms": 310432,
+  "uuid": "2024fa2f-a7d1-4802-b5a4-7e7586364cc7",
+  "ttft_stream_ms": 2418,
+  "time_to_request_ms": 75,
+  "first_content_frame_ms": 2418,
+  "time_to_request_from_spawn_ms": 6524045,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790302377330.4448,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 312.4
+}
