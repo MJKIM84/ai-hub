@@ -124,6 +124,26 @@ version: 1
 | 2026-09-25-24 | 생성 | [docs/glossary/crdt.md](glossary/crdt.md) | 용어집 항목 무충돌 복제 데이터 타입 |
 | 2026-09-25-24 | 생성 | [docs/glossary/epcis-error-declaration.md](glossary/epcis-error-declaration.md) | 용어집 항목 오류 선언 |
 | 2026-09-25-24 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-03·q1-06·q1-07 답함(3절 소제목·앵커), q1-02 팩트시트 문장 판별 정리, KnowRob 판 구분 병기, 4·5·6·7·8·9절과 상태 줄 갱신, 후속 질문 q6-05. 2차 수정: 6절 비교표 조건 근거 칸의 '모두 채워졌다'를 미조사 칸이 남은 행을 밝히는 문장으로 고침 |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.2 → v0.3: 기능 한정자(요구/제공), 개념 실행 상태 추가, 장착 장비 속성 2건·확정, 다이어그램 갱신, 6절에 요구 목록 초안·거부된 변경 3건 질문(2차 재실행에서 변경 없음) |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | 학술 온톨로지 행(IEEE 1872 CORA, IEEE 1872.2, KnowRob·SOMA, SSN/SOSA) 다섯 정보 항목 채움, VDA 5050 행에 2.1.0 태그 기준·3.0.0 필드 변화 반영, 빠진 정보 요약 갱신, 상태 줄 갱신(2차 재실행에서 변경 없음) |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 6. 살아있는 산출물 링크: 온톨로지 초안 v0.3, 비교표 학술 온톨로지 행 채움, 백로그 수치 갱신(2차 재실행에서 변경 없음) |
+| 2026-09-25-23 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 3절에 능력 매칭 선행 연구, 4절에 충전·적재·장착 장비 표현(실행 2026-09-25-23) 추가. 2차 수정: 4절 ref-245 각주에 원문 미열람 표기 |
+| 2026-09-25-23 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-03·q1-06·q1-07 답함, 비교표 학술 온톨로지 행 채움, 온톨로지 초안 v0.2 → v0.3, 후속 질문 q6-05 등록·중복 백로그 3건 폐기 |
+| 2026-09-25-23 | 생성 | [docs/references/ref-323.md](references/ref-323.md) | 참고문헌 ref-323 등록: VDA5050/VDA5050 (tag 2.1.0) — json_schemas/factsheet.schema |
+| 2026-09-25-23 | 생성 | [docs/references/ref-329.md](references/ref-329.md) | 참고문헌 ref-329 등록: VDA5050/VDA5050 (tag 2.0.0) — VDA5050_EN_V1.md |
+| 2026-09-25-23 | 생성 | [docs/references/ref-324.md](references/ref-324.md) | 참고문헌 ref-324 등록: SOMA — owl/SOMA-ACT.owl |
+| 2026-09-25-23 | 생성 | [docs/references/ref-325.md](references/ref-325.md) | 참고문헌 ref-325 등록: IndustrialStandard-ODP-IEEE1872-2 — AuR_IEEE1872-2.ttl |
+| 2026-09-25-23 | 생성 | [docs/references/ref-330.md](references/ref-330.md) | 참고문헌 ref-330 등록: IEEE1872-owl — cora-bare.owl (OWL specification of CORA) |
+| 2026-09-25-23 | 생성 | [docs/references/ref-326.md](references/ref-326.md) | 참고문헌 ref-326 등록: knowrob — README (dev branch) |
+| 2026-09-25-23 | 생성 | [docs/references/ref-327.md](references/ref-327.md) | 참고문헌 ref-327 등록: Semantic rules for capability matchmaking in the context of… |
+| 2026-09-25-23 | 생성 | [docs/references/ref-328.md](references/ref-328.md) | 참고문헌 ref-328 등록: Automated Process Planning Based on a Semantic Capability Mo… |
+| 2026-09-25-23 | 생성 | [docs/glossary/capability-matchmaking.md](glossary/capability-matchmaking.md) | 용어집 항목 능력 매칭 |
+| 2026-09-25-23 | 생성 | [docs/glossary/required-and-provided-capability.md](glossary/required-and-provided-capability.md) | 용어집 항목 요구 능력·제공 능력 |
+| 2026-09-25-23 | 생성 | [docs/glossary/capability-based-task-allocation.md](glossary/capability-based-task-allocation.md) | 용어집 항목 능력 기반 작업 배정 |
+| 2026-09-25-23 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 8건 갱신 |
+| 2026-09-25-23 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 후속 질문 q1-08·q5-04 등록, 4·6·7·8·9절 갱신. 초안 변경 없음. 2차: f1 문장을 '검색 요약에는 소요 시간 수치가 없다(원문 미열람)'로 수정 |
 | 2026-09-25-22 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 현장 모델링 부담의 근거 소절 추가, 6절에 단계 5 조사 전 선행 근거(가설 3 비교 기준 후보·측정 대상 반복 작업) 작성. 2차: 6절 마지막 문장에 '연계 대상: '과 [추정] 태그·각주 추가 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크의 백로그·아이디어 페이지 현황을 실행 2026-09-25-22 기준으로 갱신(상태 줄은 변경 없음) |

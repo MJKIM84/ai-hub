@@ -557,6 +557,56 @@
       "section": "8. 대표 연구와 자료",
       "summary": "음성 지시 창고 작업 자료(Lucas Systems, 벤더 문서), 위치 체크 디지트 불일치 경고를 기술한 미국 특허 공보 US 8868519(양수인 VOCOLLECT, INC., 출원 2011-05-27), Locus Robotics 사용자 인터페이스와 Aila 사례(벤더 주장), 자연어 지시 로봇 사례로 Amazon 차세대 Proteus(2026-06-04 발표, 실험실 파일럿, 벤더 주장)와 InOrbit RobOps Copilot 제품 페이지(벤더 주장). 모두 원문 미열람.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25",
+      "track": "manual-capability-ontology",
+      "stage": 1,
+      "area_no": 5,
+      "section": "4. 핵심 개념과 용어",
+      "summary": "요구 능력·제공 능력의 구분과 능력 매칭(IDTA 02020 README 의 요구·제공 능력 비교, Järvenpää 외 2023 의 SPIN 능력 매칭 규칙). 이 위키 온톨로지 초안에서는 기능의 한정자(요구 / 제공)로 표현한다. 분류 원문 SCM 질문과 요구–제공 속성 비교 규칙의 연결은 [추정]으로 둔다(실행 2026-09-25-23, f19·f20·f25).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25",
+      "track": "manual-capability-ontology",
+      "stage": 1,
+      "area_no": 5,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "학술 온톨로지가 다섯 정보 항목을 담는 정도: SOMA-ACT 는 전제·완료·오류(실행 상태 6종, 요구 초기·기대 종료 상황), SSN System Capabilities 는 범위·환경 조건을 일부 담고, CORA 제3자 OWL 번역·IEEE 1872.2 제3자 구현은 담지 않으며, 적재 제약은 VDA 5050 적재 세트 같은 산업 규격에만 있다(열람 파일 기준, 실행 2026-09-25-23, f8~f15·f18).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25",
+      "track": "manual-capability-ontology",
+      "stage": 1,
+      "area_no": 5,
+      "section": "8. 대표 연구와 자료",
+      "summary": "능력 매칭 연구: Järvenpää 외(IJCIM 36(1), 2023)의 결합 능력 추론·능력 매칭 SPIN 규칙, Köcher·Vieira da Silva·Fay(arXiv 2312.08801)의 의미 능력 모델+SMT 공정 계획. 제조 공정 연구이므로 방법 선례로만 소개(원문 미열람, 실행 2026-09-25-23, f20·f21).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25",
+      "track": "manual-capability-ontology",
+      "stage": 1,
+      "area_no": 9,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 팩트시트 2.x(공식 저장소 2.1.0 태그)와 3.0.0(main)의 확인된 필드 이름 변화(agvGeometry→mobileRobotGeometry, maxWeight→maximumWeight 등)와 추가 필드(ZONE 범위, 필수 pauseAllowed·cancelAllowed, supportedZones, batteryCharging). 어댑터가 두 판을 함께 받으려면 필드 이름 대응표로 정규화가 필요할 것으로 보인다([추정], 실행 2026-09-25-23, f3~f6).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25",
+      "track": "manual-capability-ontology",
+      "stage": 1,
+      "area_no": 16,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 3.0.0(main) 팩트시트 구성 블록의 충전 설정 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)이 로봇 선언의 일부로 추가돼 충전 시점 계획의 입력이 될 수 있다(실행 2026-09-25-23, f4·f22).",
+      "status": "제안"
     }
   ]
 }

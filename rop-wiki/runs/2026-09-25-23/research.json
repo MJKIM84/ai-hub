@@ -28,7 +28,7 @@
       "claim": "VDA 5050 공식 저장소 2.1.0 태그의 팩트시트 JSON 스키마(제목 'AGV Factsheet')는 version·manufacturer·serialNumber 와 typeSpecification·physicalParameters·protocolLimits·protocolFeatures·agvGeometry·loadSpecification 블록을 필수로 두고, 버전·네트워크 정보를 담는 vehicleConfig 블록을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-348"
+        "ref-323"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -56,7 +56,7 @@
       "claim": "2.1.0 태그와 main(3.0.0) 팩트시트 스키마를 대조하면 agvGeometry→mobileRobotGeometry, vehicleConfig→mobileRobotConfiguration, agvActions→mobileRobotActions, resultDescription→actionResult, agvKinematic·agvClass·maxLoadMass→mobileRobotKinematics·mobileRobotClass·maximumLoadMass, speedMin·speedMax·accelerationMax·decelerationMax·heightMin·heightMax→minimumSpeed·maximumSpeed·maximumAcceleration·maximumDeceleration·minimumHeight·maximumHeight 로 이름이 바뀌었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-348",
+        "ref-323",
         "ref-228"
       ],
       "cross_checked": false,
@@ -71,7 +71,7 @@
       "claim": "main(3.0.0) 팩트시트 스키마는 2.1.0 태그 스키마에 없던 action 적용 범위 ZONE, action 필수 필드 pauseAllowed·cancelAllowed, 유형 명세의 supportedZones, 구성 블록의 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)을 더했고, 지원·필수 선택 파라미터 목록(optionalParameters: parameter·support SUPPORTED/REQUIRED·description)은 두 판 모두 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-348",
+        "ref-323",
         "ref-228"
       ],
       "cross_checked": false,
@@ -86,7 +86,7 @@
       "claim": "적재 제약은 두 판 모두 적재 명세(loadSpecification)의 적재 세트(loadSets)에 기술되며, 2.1.0 태그는 maxWeight, min/maxLoadhandlingHeight·Depth·Tilt, agvSpeedLimit·agvAccelerationLimit·agvDecelerationLimit, pickTime·dropTime 을, main(3.0.0)은 maximumWeight, minimum/maximumLoadhandlingHeight·Depth·Tilt, maximumSpeed·maximumAcceleration·maximumDeceleration, pickTime·dropTime 을 두고, 로봇 전체 최대 적재 질량은 유형 명세(maxLoadMass→maximumLoadMass)에 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-348",
+        "ref-323",
         "ref-228"
       ],
       "cross_checked": false,
@@ -101,7 +101,7 @@
       "claim": "2.x 와 3.0.0 팩트시트의 적재 제약은 적재 세트 단위(치수·최대 중량·취급 높이·깊이·기울기·적재 시 속도 한계·적재·하역 시간)라는 구조가 같고 필드 이름만 바뀐 것으로 보여, ROP 가 두 판을 함께 받으려면 필드 이름 대응표로 판 무관 속성에 정규화할 수 있을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-348",
+        "ref-323",
         "ref-228"
       ],
       "cross_checked": false,
@@ -116,8 +116,8 @@
       "claim": "VDA 5050 공식 저장소 2.0.0 태그의 명세 마크다운(머리말 'RELEASE CANDIDATE' 표기)은 팩트시트 블록으로 localizationParameters 를 적지만, 2.1.0 태그와 main 스키마에서는 이 블록이 확인되지 않아 2.0.0 게시판의 블록 구성은 확정할 수 없는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-354",
-        "ref-348",
+        "ref-329",
+        "ref-323",
         "ref-228"
       ],
       "cross_checked": false,
@@ -160,7 +160,7 @@
       "claim": "SOMA 공식 저장소의 SOMA-ACT 온톨로지는 작업 실행 상태 영역(ExecutionStateRegion)에 Active·Cancelled·Failed·Paused·Pending·Succeeded 여섯 상태를 두고, 전제 상황(hasRequiredInitialSituation)과 기대 종료 상황(hasExpectedTerminalSituation) 관계, 충족되지 않은 사후조건 같은 기대 불일치를 나타내는 NonmanifestedSituation 클래스를 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-349"
+        "ref-324"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -174,7 +174,7 @@
       "claim": "SOMA 는 다섯 정보 항목 가운데 전제조건(요구 초기 상황), 완료 확인(기대 종료 상황과 Succeeded 상태), 오류 의미(Failed 상태와 기대 불일치 상황)를 담지만, 이번에 연 SOMA-ACT 파일에서 파라미터 허용 범위와 적재 제약은 확인되지 않았다.",
       "tag": "추정",
       "source_ids": [
-        "ref-349"
+        "ref-324"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -188,7 +188,7 @@
       "claim": "헬무트 슈미트 대학이 공개한 IEEE 1872.2 AuR 온톨로지 OWL 구현은 기능(Function)·기능 실행(FunctionExecution), 행동 분류(ArchitecturalBehavior·ManifestedBehavior·EmergentBehavior 등), 물리·정보 상호작용, 객체 중심 환경 기술 클래스를 두고 기능을 행동에 잇는 isPlayedBy 속성을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-350"
+        "ref-325"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -202,7 +202,7 @@
       "claim": "이 IEEE 1872.2 OWL 구현에서는 능력·전제조건·사후조건·파라미터 범위·실패·작업 완료 상태를 명시하는 클래스·속성이 확인되지 않아, 다섯 정보 항목을 구조로 담지 않는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-350"
+        "ref-325"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -216,7 +216,7 @@
       "claim": "IEEE 1872-2015 CORA 의 공개 OWL 번역(cora-bare.owl)은 Robot·RobotGroup·RobotInterface·RoboticEnvironment·RoboticSystem·SingleRoboticSystem·CollectiveRoboticSystem 클래스와 equippedWith·robotPart 및 자율성 수준(자율·반자율·원격 조종·원격 조작) 속성을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-355"
+        "ref-330"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -230,7 +230,7 @@
       "claim": "CORA 는 로봇·로봇 시스템의 분류와 부품·장착 관계를 표현할 뿐 다섯 정보 항목(전제조건·파라미터 범위·적재·환경 제약·완료 확인·오류 의미)과 능력·작업 개념은 담지 않는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-355"
+        "ref-330"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -244,7 +244,7 @@
       "claim": "KnowRob 공식 저장소 README 는 KnowRob 을 RDF·RDFS·OWL 어휘의 맥락화된 트리플로 지식을 표현하고 여러 추론기의 결과를 결합하는 하이브리드 지식 베이스로 설명하며, 저장 백엔드로 Prolog 기반 저장소·MongoDB·Redland 를 들고, 로봇 제어 구조에 묻힌 암묵 지식을 온톨로지 기반 데이터 접근으로 명시화한다고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-351"
+        "ref-326"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -258,8 +258,8 @@
       "claim": "KnowRob README 는 전제조건·파라미터 범위·실패 같은 항목을 직접 다루지 않아, KnowRob 행의 다섯 정보 항목은 README 만으로 판정할 수 없고 KnowRob 이 쓰는 도메인 온톨로지(SOMA 등) 쪽 판정에 기대야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-351",
-        "ref-349"
+        "ref-326",
+        "ref-324"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -273,10 +273,10 @@
       "claim": "원문을 연 학술 온톨로지 기준으로 전제조건·완료 확인·오류 의미는 SOMA 가, 파라미터 범위·환경 제약은 SSN System Capabilities 가 일부 담고, CORA·IEEE 1872.2 구현은 다섯 항목을 담지 않으며, 적재 제약은 어떤 학술 온톨로지에서도 확인되지 않고 VDA 5050 적재 세트 같은 산업 규격에만 있어, ROP 는 적재 제약과 오류의 조치 의미(등급·재시도)를 산업 규격 쪽에서 가져와야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-349",
+        "ref-324",
         "ref-235",
-        "ref-355",
-        "ref-350",
+        "ref-330",
+        "ref-325",
         "ref-228"
       ],
       "cross_checked": false,
@@ -306,7 +306,7 @@
       "claim": "Järvenpää 외(IJCIM 36(1), 2023)는 제품과 자원의 온톨로지 기술과 SPIN 규칙으로 결합 자원의 결합 능력 파라미터를 추론하고 제품 특성을 자원(조합)의 능력 파라미터와 비교해 가능한 자원 조합을 찾는 능력 매칭 소프트웨어를 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-352"
+        "ref-327"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -321,7 +321,7 @@
       "claim": "Köcher·Vieira da Silva·Fay(arXiv 2312.08801, AAAI 2024 CAIPI 워크숍)는 의미 능력 모델과 SMT 로 제품 생산이나 자율 로봇 임무 수행에 필요한 개별 능력의 순서를 자동으로 찾는 공정 계획 방법을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-353"
+        "ref-328"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -366,12 +366,12 @@
       "tag": "추정",
       "source_ids": [
         "ref-229",
-        "ref-352",
-        "ref-349",
+        "ref-327",
+        "ref-324",
         "ref-235",
         "ref-228",
         "ref-245",
-        "ref-355"
+        "ref-330"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -386,7 +386,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-229",
-        "ref-352",
+        "ref-327",
         "ref-228",
         "ref-236"
       ],
@@ -416,7 +416,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-348",
+      "id": "ref-323",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 (tag 2.1.0) — json_schemas/factsheet.schema",
       "published": null,
@@ -431,7 +431,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-354",
+      "id": "ref-329",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 (tag 2.0.0) — VDA5050_EN_V1.md",
       "published": null,
@@ -461,7 +461,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-349",
+      "id": "ref-324",
       "org": "EASE CRC (ease-crc/soma)",
       "title": "SOMA — owl/SOMA-ACT.owl",
       "published": null,
@@ -476,7 +476,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-350",
+      "id": "ref-325",
       "org": "Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub)",
       "title": "IndustrialStandard-ODP-IEEE1872-2 — AuR_IEEE1872-2.ttl",
       "published": null,
@@ -491,7 +491,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-355",
+      "id": "ref-330",
       "org": "srfiorini (IEEE1872-owl GitHub)",
       "title": "IEEE1872-owl — cora-bare.owl (OWL specification of CORA)",
       "published": null,
@@ -506,7 +506,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-351",
+      "id": "ref-326",
       "org": "KnowRob (knowrob GitHub)",
       "title": "knowrob — README (dev branch)",
       "published": null,
@@ -566,7 +566,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-352",
+      "id": "ref-327",
       "org": "Järvenpää, E., Siltala, N., Hylli, O., Nylund, H., & Lanz, M.",
       "title": "Semantic rules for capability matchmaking in the context of manufacturing system design and reconfiguration",
       "published": "2023",
@@ -581,7 +581,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-353",
+      "id": "ref-328",
       "org": "Köcher, A., Vieira da Silva, L. M., & Fay, A.",
       "title": "Automated Process Planning Based on a Semantic Capability Model and SMT",
       "published": "2023-12",
@@ -699,7 +699,7 @@
       "f17: KnowRob 자체의 다섯 정보 항목은 README 범위에서 판정 불가",
       "f20·f21: 논문 원문 미열람(검색 요약 범위)",
       "f24: 요구 목록 초안은 이 위키의 종합이며 단일 출처 없음",
-      "ref-348·ref-349·ref-350·ref-351·ref-354·ref-355 발행일 미확인"
+      "ref-323·ref-324·ref-325·ref-326·ref-329·ref-330 발행일 미확인"
     ],
     "scope_violations": [
       "f14: CORA 의 자율성 수준·부품 관계는 로봇 분류 설명이며 로봇 제어를 ROP 직접 범위로 서술하지 않음",
@@ -709,7 +709,7 @@
       "queries": 6,
       "sources": 8
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 열었다: 신규 ref-348(VDA 5050 2.1.0 태그 팩트시트 스키마)·ref-354(2.0.0 태그 명세 마크다운)·ref-349(SOMA-ACT.owl)·ref-350(IEEE 1872.2 제3자 OWL)·ref-351(KnowRob README)·ref-355(CORA 제3자 OWL 번역), 재사용 ref-228(main 팩트시트 스키마)·ref-235(SSN 시스템 능력 모듈)·ref-229(IDTA 02020 README). 논문 2건(ref-352·ref-353)과 재사용 ref-245·ref-236 은 원문 미열람(신뢰도 상한 medium). finding 신뢰도는 모두 medium 이하. 검색 6회/40, 신규 출처 8건/20(ref-348~ref-355, 예약 구간 안), 재사용 5건. 교차 확인 0건. 질문 선택: target.json 지정 q1-03·q1-06·q1-07 세 건 모두 답했다. q1-03 은 앞 실행들의 산업 규격 대조에 이번 학술 온톨로지 행 대조를 더해 답으로 올리되, KnowRob 은 README 만 열어 SOMA 판정에 기댄다는 한계가 있어 신뢰도 medium 으로 본다. q1-06 은 여러 출처를 대응시킨 추정 목록(f24)이라 신뢰도 low. q1-07 의 2.x 기준은 2.0.0 태그 스키마 경로가 404 라 2.1.0 태그 스키마로 대신했다. 한국 자료: 로봇 능력 온톨로지·능력 기반 할당 한국어 검색 결과는 해외 논문 번역 페이지뿐이라 넣지 않았다. 참고: 2026-09-25-16 의 f8(MassRobotics 식별 보고 필드)은 q1-08 의 답 근거가 되므로 다음 실행에서 q1-08 을 처리하면 된다. 백로그 정리 필요: q1-10·q4-11·q5-08 은 q1-09·q4-09·q5-07 과 같은 질문이 중복 등록된 것으로 보인다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 새 일반 열린 질문 없음. 후속 질문 2건, 온톨로지 변경 제안 5건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 열었다: 신규 ref-323(VDA 5050 2.1.0 태그 팩트시트 스키마)·ref-329(2.0.0 태그 명세 마크다운)·ref-324(SOMA-ACT.owl)·ref-325(IEEE 1872.2 제3자 OWL)·ref-326(KnowRob README)·ref-330(CORA 제3자 OWL 번역), 재사용 ref-228(main 팩트시트 스키마)·ref-235(SSN 시스템 능력 모듈)·ref-229(IDTA 02020 README). 논문 2건(ref-327·ref-328)과 재사용 ref-245·ref-236 은 원문 미열람(신뢰도 상한 medium). finding 신뢰도는 모두 medium 이하. 검색 6회/40, 신규 출처 8건/20(ref-323~ref-330, 예약 구간 안), 재사용 5건. 교차 확인 0건. 질문 선택: target.json 지정 q1-03·q1-06·q1-07 세 건 모두 답했다. q1-03 은 앞 실행들의 산업 규격 대조에 이번 학술 온톨로지 행 대조를 더해 답으로 올리되, KnowRob 은 README 만 열어 SOMA 판정에 기댄다는 한계가 있어 신뢰도 medium 으로 본다. q1-06 은 여러 출처를 대응시킨 추정 목록(f24)이라 신뢰도 low. q1-07 의 2.x 기준은 2.0.0 태그 스키마 경로가 404 라 2.1.0 태그 스키마로 대신했다. 한국 자료: 로봇 능력 온톨로지·능력 기반 할당 한국어 검색 결과는 해외 논문 번역 페이지뿐이라 넣지 않았다. 참고: 2026-09-25-16 의 f8(MassRobotics 식별 보고 필드)은 q1-08 의 답 근거가 되므로 다음 실행에서 q1-08 을 처리하면 된다. 백로그 정리 필요: q1-10·q4-11·q5-08 은 q1-09·q4-09·q5-07 과 같은 질문이 중복 등록된 것으로 보인다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 새 일반 열린 질문 없음. 후속 질문 2건, 온톨로지 변경 제안 5건."
   },
   "track": {
     "slug": "manual-capability-ontology",
