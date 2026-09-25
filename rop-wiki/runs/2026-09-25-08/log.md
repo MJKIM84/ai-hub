@@ -119,3 +119,28 @@ WARNING -  Doc file 'glossary/isa-95.md' contains a link '#fnref:cand-04', but t
 - 2026-09-25 10:56:50 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!))
 - 2026-09-25 10:56:57 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!))
 - 2026-09-25 10:57:09 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 1. 주문·업무 시스템 연계 — 생성 4/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
+- 2026-09-25 10:57:25 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-08 resume=2026-09-25-08 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 10:57:25 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 10:57:25 KST [준비] 결과: 성공 · 소요 0초 · 건너뜀
+- 2026-09-25 10:57:26 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-08 (영역 심화)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 5개, 반영 전 사전 검사 포함)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-08/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 10:57:26 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 10:57:27 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 10:57:37 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 4/갱신 1/폐기 0, 용어 3, 참고문헌 9, 표준 2, 열린 질문 2, 매트릭스 칸 7, 백로그 0, 정정 0; auto 영역 갱신 25개 페이지, mkdocs.yml 갱신
+- 2026-09-25 10:57:43 KST [퍼블리셔] 원복: 6단계 사이트 빌드 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 10:57:43 KST [퍼블리셔] 실패: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log):
+
+Aborted with 2 warnings in strict mode!
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'glossary/isa-95.md' contains a link '#fnref:ref-002', but there is no such anchor on this page. This seems to be a footnote that is never referenced.
+WARNING -  Doc file 'glossary/isa-95.md' contains a link '#fnref:cand-04', but there is no such anchor on this page. This seems to be a footnote that is never referenced.
+
+- 2026-09-25 10:57:43 KST [퍼블리셔] 결과: 실패 · 소요 17초 · 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!
+- 2026-09-25 10:57:43 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!))
+- 2026-09-25 10:57:50 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!))
+- 2026-09-25 10:58:02 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 1. 주문·업무 시스템 연계 — 생성 4/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
