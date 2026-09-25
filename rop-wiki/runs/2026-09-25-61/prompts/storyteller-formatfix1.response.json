@@ -1,0 +1,834 @@
+{
+  "duration_api_ms": 285038,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.086524,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 150624,
+    "cache_read_input_tokens": 63020,
+    "output_tokens": 43446,
+    "output_tokens_details": {
+      "thinking_tokens": 1255
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 150624,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 43446,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 150624,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 150624
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 43446,
+      "cacheReadInputTokens": 63020,
+      "cacheCreationInputTokens": 150624,
+      "webSearchRequests": 0,
+      "costUSD": 2.086524,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1255,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-61\",\"outline\":[{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":900,\"summary\":\"펌웨어 변경의 재검증 범위를 산정하는 공개 절차는 찾지 못했고, 배포판 지원 종료·시뮬레이터 교체·EU 기계 규정의 실질적 변경·국내 재평가 권고가 수명주기 관리를 강제한다. [추정][^ref-031]\",\"planned_findings\":[\"f22\",\"f9\",\"f10\",\"f17\",\"f20\",\"f21\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":650,\"summary\":\"자산 관리(ISO 55000:2024), 상태 감시(ISO 17359), 배터리 건강 상태(batteryHealth), 소프트웨어 명판, 패치 관리, 의미적 버전·지도 버전, 관리형 노드가 핵심 용어다. [사실][^ref-755]\",\"planned_findings\":[\"f13\",\"f12\",\"f14\",\"f5\",\"f11\",\"f16\",\"f2\",\"f1\",\"f8\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\",\"budget_chars\":700,\"summary\":\"적치 구역 지도 버전 전환과 출하 마감 전 배터리 열화 로봇 배정의 두 가상 시나리오로, 지도 활성화 규칙과 batteryHealth·range 가 시작 조건·제약이 되는 모습을 보인다. [추정][^ref-031]\",\"planned_findings\":[\"f26\",\"f1\",\"f5\",\"f3\",\"f25\",\"f23\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":800,\"summary\":\"부품 상태 감시·고장 진단, 배터리 열화를 반영한 배정·충전, 버전 필드 관리, 관리형 노드와 OTA 배포·복구가 대표 접근법이다. [사실][^ref-757]\",\"planned_findings\":[\"f14\",\"f15\",\"f4\",\"f6\",\"f8\",\"f18\",\"f19\",\"f1\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":500,\"summary\":\"VDA 5050 명세·스키마, MassRobotics, IDTA 02007, ISO 17359·55000, IEC TR 62443-2-3, ROS 2 관리형 노드·REP 2000, rmf_simulation, 국내 협동로봇 설치 작업장 안전인증이 관련된다. [사실][^ref-031]\",\"planned_findings\":[\"f1\",\"f4\",\"f5\",\"f6\",\"f11\",\"f12\",\"f13\",\"f16\",\"f8\",\"f9\",\"f10\",\"f21\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":350,\"summary\":\"산업용 로봇 상태 감시 검토 논문(Lei 외 2025)과 배터리 열화 인지 플릿 스케줄링 프리프린트(2026-03)가 대표 연구다. [사실][^ref-757]\",\"planned_findings\":[\"f14\",\"f15\",\"f18\",\"f19\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\",\"budget_chars\":500,\"summary\":\"ROP 는 버전 목록 유지·배터리 상태 반영·배포 복구 조율·지도 전환 동기화를 맡고, 펌웨어 내용·부품 진단·BMS 열화 추정은 제조사 쪽 연계 대상으로 보인다. [추정][^ref-051]\",\"planned_findings\":[\"f23\",\"f24\",\"f7\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":450,\"summary\":\"시험·시뮬레이션·보안·안전·충전·배정·모니터링·온보딩·관제 연동·표준·지도 영역과 이어진다는 것이 구축자 의견이다. [의견][^ref-403]\",\"planned_findings\":[\"f27\",\"f7\",\"f4\",\"f26\",\"f15\",\"f14\"]},{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":300,\"summary\":\"영향 범위 산정 절차, VDA 5050 판 혼재 운영, 국내 인증의 펌웨어 변경 재심사, EU 실질적 변경의 오케스트레이션 적용 여부가 열린 질문이다.\",\"planned_findings\":[\"f22\",\"f2\",\"f21\",\"f17\"]}],\"pages\":[{\"path\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리\\\"\\ntype: area\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\narea_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [펌웨어 버전 관리, 지도 버전, 배터리 건강 상태, 상태 감시, 패치 관리, 무선 업데이트]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-24\\nupdated: 2026-09-25\\nsources: [ref-031, ref-051, ref-228, ref-230, ref-668, ref-364, ref-753, ref-403, ref-757, ref-758, ref-760, ref-761, ref-763]\\nlast_run: 2026-09-25\\nversion: 2\\n---\\n\\n[홈](../../index.md) › [F. 도입·검증·유지관리](index.md) › 24. 자산·소프트웨어 수명주기 관리\\n\\n# 24. 자산·소프트웨어 수명주기 관리\\n\\n!!! info \\\"소속 대분류\\\"\\n    [F. 도입·검증·유지관리](index.md) — 핵심 질문:\\n    새 현장에 설치하고, 변경하면서, 오래 운영하려면? [분류원문]\\n\\n<!-- auto:area-tracks:start -->\\n!!! note \\\"관련 연구 트랙\\\"\\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\\n\\n    - [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)\\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\\n<!-- auto:area-tracks:end -->\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 한 줄 정의\\n\\n고장 예측·정비, 배터리 열화, 펌웨어·어댑터·지도·모델 버전, 배포·복구, 장비 교체 [분류원문]\\n\\n## 2. SCM 관점의 질문\\n\\n제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? [분류원문]\\n\\n## 3. 왜 중요한가\\n\\n펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\\n\\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가](../../topics/2026/2026-09-25-area24-s3.md)에 있다.\\n\\n## 4. 핵심 개념과 용어\\n\\n수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\\n\\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어](../../topics/2026/2026-09-25-area24-s4.md)에 있다.\\n\\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\\n\\n다음은 설명을 위한 가상의 시나리오 두 개이다. 지도 버전 전환 규칙과 배터리 상태 보고 필드가 적치의 시작 조건과 출하의 제약으로 어떻게 작용하는지를 보인다. [추정][^ref-031][^ref-051]\\n\\n### 적치: 랙 배치 변경 뒤 새 지도 버전으로 작업 재개\\n\\n**물류 흐름 단계:** 적치\\n\\n**시나리오:** 랙 배치 변경 뒤 새 지도 버전으로 적치 작업 재개\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 랙 배치가 바뀌어 새 지도 버전이 나오면, 진행 중 적치 주문을 정리하고 지도 전환 시점을 정하는 일이 적치 재개의 시작 조건이 되는 것으로 보인다. [추정][^ref-031] |\\n| 작업 대상 | 입고 뒤 적치할 팔레트·박스(가상) |\\n| 수행 자원 | 플릿 제어가 즉시 동작 downloadMap·enableMap 으로 지도 내려받기·활성화를 지시하고 [사실][^ref-031], 로봇은 상태 메시지로 mapId·mapVersion·mapStatus 를 보고한다. [사실][^ref-051] |\\n| 제약 | 같은 mapId 에서는 한 번에 한 버전만 활성화된다. [사실][^ref-031] |\\n| 완료·인계 | 로봇이 보고한 새 mapVersion 의 mapStatus 가 ENABLED 인지 확인한 뒤 적치 주문을 재개한다(이 시나리오의 가정). mapStatus 는 ENABLED 또는 DISABLED 값을 가진다. [사실][^ref-051] |\\n| 예외·성과 | 로봇이 사용할 수 없는 선택 필드가 담긴 주문을 받으면 UNSUPPORTED_PARAMETER 오류를 CRITICAL 수준으로 보고하도록 규정돼 있다. [사실][^ref-031] 이 규정 때문에 판 차이로 생긴 미지원 기능이 실행 시점 오류로 드러난다고 해석할 수 있다. [추정][^ref-031] |\\n\\n### 출하: 마감 전 배터리 열화 로봇의 배정\\n\\n**물류 흐름 단계:** 출하\\n\\n**시나리오:** 출하 마감 전 집중 시간대에 배터리 상태가 낮아진 로봇 배정\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 출하 마감 전 집중 시간대에 출하 주문이 몰린다(가상). |\\n| 작업 대상 | 출하 대기 구역으로 옮길 화물(가상) |\\n| 수행 자원 | 로봇은 stateOfCharge·batteryHealth·range 를 보고하고 [사실][^ref-051], ROP 는 이 값을 작업 배정·충전 계획에 반영하는 쪽으로 보인다. [추정][^ref-051] |\\n| 제약 | batteryHealth 가 낮아진 로봇은 같은 충전 상태에서도 추정 도달 거리(range)가 짧아질 수 있어, 배터리 열화가 작업 배정·충전 계획의 제약으로 작용하는 것으로 보인다(물류센터 실측 자료는 미확인). [추정][^ref-051][^ref-403] |\\n| 완료·인계 | 해당 없음 |\\n| 예외·성과 | 해당 없음 |\\n\\n두 시나리오에서 이 영역이 관여하는 칸은 적치의 시작 조건·수행 자원·제약·완료·인계·예외·성과와 출하의 수행 자원·제약이다. 전체 흐름은 [흐름 매트릭스](../../flow-matrix.md)에서 본다.\\n\\n## 6. 대표 접근법과 기술\\n\\n산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\\n\\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area24-s6.md)에 있다.\\n\\n## 7. 관련 표준·프레임워크·오픈소스\\n\\n이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n\\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area24-s7.md)에 있다.\\n\\n## 8. 대표 연구와 자료\\n\\n이 영역의 대표 연구는 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나뉜다. [사실][^ref-757][^ref-403]\\n\\n- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료다. [사실][^ref-757]\\n- 저자 미확인, Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots(2026-03, arXiv 프리프린트, 동료 심사 전) — 작업 배정·충전을 플릿 전체 배터리 열화 균형과 함께 최적화한다. [사실][^ref-403]\\n- Amazon Web Services, ros2-ota-firmware-updates README — 플릿 OTA 배포·버전 조회·롤백을 시연하는 샘플이다. [추정] 벤더 주장[^ref-760]\\n- SDR 과제 킥오프 워크숍 보도(2026-07-23) — 국내 클라우드 기반 OTA 목표 사례다. [추정][^ref-761]\\n\\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\\n\\nROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율하고, 펌웨어 내용과 부품·배터리 내부 진단은 제조사 쪽에 두는 것으로 보인다. [추정][^ref-051][^ref-757]\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 로봇·어댑터·지도·모델의 버전 목록 유지, 로봇이 보고하는 배터리 상태·오류를 배정·충전 계획에 반영, 업데이트 배포와 실패 시 복구 조율, 지도 버전 활성화 시점 동기화 [추정][^ref-031][^ref-051][^ref-364][^ref-760] | 연계 대상: 펌웨어 내용 자체, 관절·감속기 같은 기계 부품의 고장 진단·잔여 수명 예측, 배터리 관리 시스템(Battery Management System, BMS) 내부의 열화 추정. ROP 는 그 결과(배터리 상태 값·오류 코드·정비 필요 신호)를 받는 쪽으로 보인다. [추정][^ref-757][^ref-051][^ref-230] |\\n\\n업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포하는 방식도 ROP 가 조율할 후보로 보이지만, 이 부분은 확인한 출처에 직접 근거가 없는 구축자 추론이다. [추정]\\n\\n분류 원문 9장은 이 경계가 제품 전략에 따라 이동할 수 있고, 이종 제조사를 연결하는 ROP 는 \\\"인터페이스와 실행 보장\\\"을 맡을 수 있다고 적는다([범위 경계](../../about/scope-boundary.md)). 규격마다 버전 필드의 위치가 달라(VDA 5050 은 팩트시트에 소프트웨어 버전, 상태 메시지에 지도 버전을 두고 MassRobotics 스키마는 버전 필드가 없다) 여러 규격이 섞인 플릿에서는 ROP 가 로봇별 버전 목록을 별도로 유지해야 할 것으로 보인다. [추정][^ref-228][^ref-051][^ref-230]\\n\\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\\n\\n아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\\n\\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결](../../topics/2026/2026-09-25-area24-s10.md)에 있다.\\n\\n## 11. 열린 질문\\n\\n이번 실행에서 새로 올린 질문이며 id 는 퍼블리셔가 부여한다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) 제조사 펌웨어가 바뀔 때 어느 현장·기능을 다시 검증할지 영향 범위를 산정하는 공개 절차나 표준이 있는가?\\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) VDA 5050 2.x 판과 3.0.0 판 로봇이 섞인 플릿에서 주 버전 차이를 어떻게 운영·이행하는가?\\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) 국내 협동로봇 설치 작업장 안전인증에서 제어기 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정으로 확인할 수 있는가?\\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) EU 기계 규정의 실질적 변경 판단이 로봇 동작을 바꾸는 오케스트레이션 정책·어댑터 업데이트에도 적용되는가?\\n\\n## 12. 최근 업데이트 (자동)\\n\\n<!-- auto:area-recent:start -->\\n아직 기록된 업데이트가 없다.\\n<!-- auto:area-recent:end -->\\n\\n## 13. 참고 자료 (각주)\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\\n[^ref-760]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25\\n[^ref-761]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)\\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area24-s4.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \\\"4. 핵심 개념과 용어\\\" 절(1,365자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\\\"\\ntype: topic\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\nprimary_area_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-031, ref-051, ref-364, ref-753, ref-754, ref-755, ref-757, ref-758]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#4\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\\n\\n# 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \\\"핵심 개념과 용어\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \\\"핵심 개념과 용어\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\\n\\n- **자산 관리(Asset Management)** — ISO 55000:2024(제2판, 2024-07, ISO/TC 251)는 자산 관리의 용어·개요·원칙을 정하고 ISO 55000:2014 를 대체하며, 모든 유형의 자산에 적용된다. [사실][^ref-755]\\n- **상태 감시(Condition Monitoring)** — ISO 17359:2018 은 기계의 상태 감시 프로그램을 세울 때의 일반 절차 지침으로, 진동·온도·유량·오염·전력·속도 같은 변수를 쓰며 상태 감시·진단 표준군의 상위 문서 역할을 한다. [사실][^ref-754] 산업용 로봇 분야의 검토 논문은 상태 감시·고장 진단을 상태 기반 정비(Condition-Based Maintenance, CBM) 구현 관점에서 정리한다. [사실][^ref-757]\\n- **배터리 건강 상태(State of Health, SOH)** — VDA 5050 상태 메시지는 [충전 상태(State of Charge, SOC)](../../glossary/state-of-charge.md)(stateOfCharge)와 별도로 원래 용량 대비 배터리 상태(batteryHealth), 충전 중 여부, 현재 충전 상태로 갈 수 있는 추정 거리(range)를 로봇이 보고하게 한다. [사실][^ref-051]\\n- **소프트웨어 명판(Software Nameplate)** — [자산관리셸(Asset Administration Shell, AAS)](../../glossary/asset-administration-shell.md)의 IDTA 02007 서브모델은 업데이트·패치 관리·라이선스 관리·감사를 위해 소프트웨어 제품과 설치 인스턴스 정보를 통일된 형태로 표현하며, 버전(주·부·개정·빌드), 배포일·빌드일·설치일, 설치 경로·체크섬, 설치된 버전과 구성 경로 같은 속성을 둔다. [사실][^ref-753]\\n- **패치 관리(Patch Management)** — IEC TR 62443-2-3:2015 는 산업 자동화·제어 시스템의 패치 관리 프로그램을 운영하는 자산 소유자와 제품 공급자에 대한 요구, 공급자–소유자 간 패치 정보 교환 형식, 패치 개발·배포·설치 활동을 정의하며, 보안 외 패치·업데이트에도 적용될 수 있다고 적는다. [사실][^ref-758]\\n- **의미적 버전과 지도 버전** — [VDA 5050](../../glossary/vda-5050.md)은 주 버전 변경을 새 필수 필드 도입 같은 호환성을 깨는 변경, 부 버전을 기능 추가, 수 버전을 작은 수정으로 규정하고 MQTT 토픽 경로에 주 버전(v3 등)을 넣는다. [사실][^ref-031] 지도는 지도 식별자(mapId)와 지도 버전(mapVersion)의 조합으로 식별한다. [사실][^ref-031]\\n- **[관리형 노드(Managed Node)](../../glossary/managed-node.md)** — ROS 2 관리형 노드 설계는 미구성·비활성·활성·종료의 네 주 상태와 구성·활성화·비활성화·정리·종료 전이를 두어, 실행 전에 구성 요소가 올바로 초기화됐는지 확인하고 실행 중 노드를 교체·재시작할 수 있게 한다. [사실][^ref-364]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\\n[^ref-754]: ISO, ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines, 2018, https://www.iso.org/standard/71194.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-755]: ISO, ISO 55000:2024 - Asset management — Vocabulary, overview and principles, 2024-07, https://www.iso.org/standard/83053.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \\\"핵심 개념과 용어\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area24-s6.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \\\"6. 대표 접근법과 기술\\\" 절(1,327자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\\\"\\ntype: topic\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\nprimary_area_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-031, ref-228, ref-230, ref-364, ref-403, ref-757, ref-760, ref-761]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#6\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\\n\\n# 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \\\"대표 접근법과 기술\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \\\"대표 접근법과 기술\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\\n\\n### 부품 상태 감시와 고장 진단\\n\\nLei 외(2025)의 검토 논문은 산업용 로봇의 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 상태 감시·고장 진단 기술을 상태 기반 정비 구현 관점에서 정리했다. [사실][^ref-757] 부품 진단 자체는 로봇 제조사 쪽 연계 대상이며, ROP 가 결과를 받는 방식은 9절에서 다룬다.\\n\\n### 배터리 열화를 반영한 배정·충전\\n\\n2026년 3월 arXiv 프리프린트(동료 심사 전, 저자 미확인)는 작업 배정·서비스 순서·충전 여부·충전 모드·충전기 접근을 함께 최적화해 플릿 전체의 배터리 열화를 균형 있게 나누는 정식화를 제안했고, 급속 충전에 따른 사이클 열화와 높은 충전 상태로 대기할 때의 달력 열화를 근사 열화 지표로 반영했다. [사실][^ref-403] 규격 쪽에서는 VDA 5050 팩트시트의 batteryCharging 블록이 임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간을 담는다. [사실][^ref-228]\\n\\n### 버전 정보 수집\\n\\nVDA 5050 팩트시트 스키마는 mobileRobotConfiguration.versions 배열에 로봇에서 도는 하드웨어·소프트웨어 버전(예: softwareVersion)을 키–값으로 담는다. [사실][^ref-228] MassRobotics AMR 상호운용 표준 JSON 스키마는 제조사명·모델·일련번호, 배터리 잔량 비율, 남은 가동 시간, 오류 코드 목록을 담지만 소프트웨어·펌웨어 버전 필드는 명시적으로 두지 않은 것으로 보인다. [추정][^ref-230]\\n\\n### 배포·교체·복구\\n\\nROS 2 관리형 노드는 실행 전 초기화 확인과 실행 중 노드 교체·재시작을 위한 상태 전이를 제공한다. [사실][^ref-364] aws-samples 저장소의 시연용 샘플인 ROS 2 플릿 무선 업데이트(Over-the-Air, OTA) 구현은 IoT Jobs·Greengrass v2·Docker 로 배포를 지시·추적하고 플릿 색인으로 기기별 펌웨어 버전을 조회한다. [추정] 벤더 주장[^ref-760] README 는 실패한 업데이트를 이전의 검증된 버전으로 자동 복귀시키는 것을 이점으로 나열할 뿐, 자동 롤백의 구현 절차는 보이지 않는다. [추정] 벤더 주장[^ref-760]\\n\\n국내에서는 2026-07-22 판교에서 열린 SDR(Software Defined Robot) 차세대 로봇 공통 플랫폼 기술개발 3차년도 착수 워크숍에서 KIST 휴머노이드연구단이 클라우드 기반 SDR 공통 서비스 프레임워크를 소개했고, 이 플랫폼이 무선 업데이트로 로봇 소프트웨어를 갱신하고 기능을 추가하는 것을 목표로 한다고 보도됐다(원 매체 미확인). [추정][^ref-761]\\n\\n### 지도 버전 배포\\n\\nVDA 5050 3.0.0 은 즉시 동작 downloadMap·enableMap·deleteMap 으로 지도 내려받기·활성화·삭제를 지시한다. [사실][^ref-031] 지도 전환 절차는 5절의 적치 시나리오에서 보였다.\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\\n[^ref-760]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25\\n[^ref-761]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \\\"대표 접근법과 기술\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area24-s3.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \\\"3. 왜 중요한가\\\" 절(1,019자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\\\"\\ntype: topic\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\nprimary_area_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-031, ref-228, ref-668, ref-752, ref-753, ref-759, ref-762, ref-763]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#3\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\\n\\n# 24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \\\"왜 중요한가\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \\\"왜 중요한가\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\\n\\n바뀌는 것은 제조사 펌웨어만이 아니다. ROS 2 배포판 지원 정책(REP 2000)에 따르면 장기 지원판은 5년, 비장기 지원판은 1.5년 지원되며, Humble 은 2022-05~2027-05, Jazzy 는 2024-05~2029-05, Kilted 는 2025-05~2026-11 이 지원 기간이다. [사실][^ref-752] Kilted 의 지원 종료는 기준일 2026-09-25 에서 약 2개월 뒤로, 곧 바뀌는 사실이다. [사실][^ref-752] 오케스트레이션 검증에 쓰는 시뮬레이션 환경도 같아서, rmf_simulation 저장소는 지원 대상으로 Gazebo Classic 11(지원 2025년 1월 종료)과 Gazebo Fortress 를 적고 있다. [사실][^ref-668]\\n\\n변경은 안전·규제 문제로도 이어진다. EU 기계 규정 (EU) 2023/1230 은 2027-01-20 부터 적용되며, 시장에 나온 기계에 대해 제조사가 예견·계획하지 않은 물리적 또는 디지털 변경이 새 위험을 만들거나 기존 위험을 키워 새 보호 조치가 필요해지면 이를 '실질적 변경'으로 정의한다. [사실][^ref-759] 이 정의에 따르면 로봇 동작을 바꾸는 소프트웨어 업데이트도 실질적 변경 여부를 따져야 하는 대상이 될 수 있다. [추정][^ref-759]\\n\\n국내에서는 로봇 안전 컨설팅 업체 세이프틱스의 가이드가, 같은 모델로 교체해도 제어기 펌웨어 버전·안전 기능 파라미터·엔드이펙터 재장착 정밀도가 달라지면 위험성평가 조건이 바뀐 것이므로 변경 범위 재평가와 검증 문서 갱신이 필요하다고 권고한다. [의견][^ref-763] 한국로봇사용자협회의 협동로봇 설치 작업장 안전인증은 협동운전 산업용 로봇 시스템의 ISO 10218-2 준수 여부를 심사하고 인증서 발급일로부터 2년 주기로 정기 심사한다. [사실][^ref-762] 펌웨어 변경이 재심사 대상인지는 미확인이다.\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\\n[^ref-752]: Open Robotics (ROS REP), REP 2000 -- ROS 2 Releases and Target Platforms, 미확인, https://www.ros.org/reps/rep-2000.html, 접근일 2026-09-25\\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\\n[^ref-762]: 한국로봇사용자협회, 협동로봇 설치 작업장 안전인증 안내, 미확인, https://www.korua.or.kr/inspect/inspectInfo.do, 접근일 2026-09-25 (원문 미열람)\\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \\\"왜 중요한가\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area24-s7.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \\\"7. 관련 표준·프레임워크·오픈소스\\\" 절(982자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\\\"\\ntype: topic\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\nprimary_area_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-031, ref-051, ref-228, ref-230, ref-668, ref-364, ref-752, ref-753, ref-754, ref-755, ref-758, ref-759, ref-762]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#7\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\\n\\n# 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \\\"관련 표준·프레임워크·오픈소스\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \\\"관련 표준·프레임워크·오픈소스\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| VDA 5050 3.0.0 명세 | 표준 | 의미적 버전 규칙, 지도 배포·버전 관리, 미지원 파라미터 오류 규정 [사실] | [^ref-031] |\\n| VDA 5050 팩트시트 스키마 | 표준 | versions 배열(하드웨어·소프트웨어 버전), batteryCharging 블록 [사실] | [^ref-228] |\\n| VDA 5050 상태 스키마 | 표준 | batteryHealth·range 와 mapId·mapVersion·mapStatus 보고 [사실] | [^ref-051] |\\n| MassRobotics AMR 상호운용 표준 | 표준 | 배터리 잔량·남은 가동 시간·오류 코드. 버전 필드는 없는 것으로 보임 [추정] | [^ref-230] |\\n| IDTA 02007 소프트웨어 명판 | 표준 | 소프트웨어 제품·설치 인스턴스의 버전·설치 정보 [사실] | [^ref-753] |\\n| ISO 17359:2018 | 표준 | 기계 상태 감시 프로그램 수립 일반 지침(원문 미열람) [사실] | [^ref-754] |\\n| ISO 55000:2024 | 표준 | 자산 관리 용어·개요·원칙(원문 미열람) [사실] | [^ref-755] |\\n| IEC TR 62443-2-3:2015 | 표준 | 산업 제어 시스템 패치 관리(원문 미열람) [사실] | [^ref-758] |\\n| ROS 2 관리형 노드 | 프레임워크 | 노드 초기화 확인과 실행 중 교체·재시작 [사실] | [^ref-364] |\\n| REP 2000 | 프레임워크 | ROS 2 배포판 지원 기간 정책 [사실] | [^ref-752] |\\n| rmf_simulation | 오픈소스 | 시뮬레이터 판(Gazebo Classic 11·Fortress) 지원 범위(원문 미열람) [사실] | [^ref-668] |\\n| 한국로봇사용자협회 협동로봇 설치 작업장 안전인증 | 평가 프로그램 | ISO 10218-2 준수 심사, 2년 주기 정기 심사(원문 미열람) [사실] | [^ref-762] |\\n\\n규정으로는 EU 기계 규정 (EU) 2023/1230 이 디지털 변경을 포함한 실질적 변경을 정의한다(3절). [사실][^ref-759]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\\n[^ref-752]: Open Robotics (ROS REP), REP 2000 -- ROS 2 Releases and Target Platforms, 미확인, https://www.ros.org/reps/rep-2000.html, 접근일 2026-09-25\\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\\n[^ref-754]: ISO, ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines, 2018, https://www.iso.org/standard/71194.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-755]: ISO, ISO 55000:2024 - Asset management — Vocabulary, overview and principles, 2024-07, https://www.iso.org/standard/83053.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\\n[^ref-762]: 한국로봇사용자협회, 협동로봇 설치 작업장 안전인증 안내, 미확인, https://www.korua.or.kr/inspect/inspectInfo.do, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \\\"관련 표준·프레임워크·오픈소스\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area24-s10.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \\\"10. 다른 연구영역과의 연결\\\" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침\",\"content\":\"---\\ntitle: \\\"24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\\\"\\ntype: topic\\ncategory: \\\"F. 도입·검증·유지관리\\\"\\nprimary_area_no: 24\\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-031, ref-228, ref-230, ref-668, ref-403, ref-757, ref-758, ref-759, ref-763]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#10\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\\n\\n# 24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \\\"다른 연구영역과의 연결\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \\\"다른 연구영역과의 연결 (번호와 이름을 함께 표기)\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\\n\\n- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 업데이트 뒤 정상·장애 상황의 회귀 시험이 재검증 범위 산정의 결과를 받는다. [의견][^ref-763]\\n- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 가정한 미래를 실험하는 시뮬레이션 환경 자체도 시뮬레이터 판 교체에 따른 수명주기 관리 대상이다. [의견][^ref-668]\\n- [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) — 보안 패치의 배포·설치가 이 영역의 배포 절차와 겹친다. [의견][^ref-758]\\n- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 펌웨어·안전 파라미터 변경 뒤 위험성 재평가와 실질적 변경 판단이 필요하다. [의견][^ref-763][^ref-759]\\n- [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — 배터리 열화를 반영한 충전 모드·충전기 접근 계획과 이어진다. [의견][^ref-403]\\n- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 배터리 열화 균형을 작업 배정과 함께 최적화하는 연구가 있다. [의견][^ref-403]\\n- [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) — 상태 감시·고장 진단 결과와 오류 코드가 정비 판단의 입력이 된다. [의견][^ref-757]\\n- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 로봇 등록 때 팩트시트의 버전 정보를 수집해 버전 목록의 출발점으로 삼는다. [의견][^ref-228]\\n- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 규격별 버전·배터리 필드 차이를 어댑터가 메워야 한다. [의견][^ref-228][^ref-230]\\n- [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 규격 주 버전 이행이 여러 사업자의 합의 문제다. [의견][^ref-031]\\n- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 지도 버전의 배포·활성화 시점이 지도 모델 변경과 맞물린다. [의견][^ref-031]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \\\"다른 연구영역과의 연결\\\" 절에서 분리 |\\n\"}],\"changelog_entry\":\"2026-09-25 | 24. 자산·소프트웨어 수명주기 관리 | 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) | run 2026-09-25-61\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 영역 심화로 3~11절 첫 작성(펌웨어·지도 버전, 배터리 건강 상태, 배포·복구, 변경 후 재평가)\",\"category_recent\":\"2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 영역 심화로 3~11절 첫 작성, 열린 질문 4건 등록\",\"area_recent\":\"2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 3~11절 신규 작성(실행 2026-09-25-61)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"condition-based-maintenance\",\"term_ko\":\"상태 기반 정비\",\"term_en\":\"Condition-Based Maintenance (CBM)\",\"definition\":\"정해진 주기 대신 상태 감시로 확인한 설비 상태에 따라 정비 여부와 시점을 정하는 정비 방식이다.\",\"description\":\"산업용 로봇 분야에서는 고장 모드 분석, 데이터 수집·센서, 모델 기반·데이터 기반 상태 감시·고장 진단 기법이 상태 기반 정비 구현 관점에서 정리돼 있다.\",\"related_areas\":[24,19],\"sources\":[\"ref-757\",\"ref-754\"]},{\"action\":\"new\",\"slug\":\"state-of-health\",\"term_ko\":\"배터리 건강 상태\",\"term_en\":\"State of Health (SOH)\",\"definition\":\"배터리의 현재 용량·성능을 새 배터리 대비 비율로 나타낸 값으로, VDA 5050 상태 메시지의 batteryHealth 가 이에 해당한다.\",\"description\":\"VDA 5050 상태 스키마는 충전 상태(stateOfCharge)와 별도로 batteryHealth 와 추정 도달 거리(range)를 로봇이 보고하게 한다.\",\"related_areas\":[24,16],\"sources\":[\"ref-051\"]},{\"action\":\"new\",\"slug\":\"software-nameplate\",\"term_ko\":\"소프트웨어 명판\",\"term_en\":\"Software Nameplate (IDTA 02007)\",\"definition\":\"자산관리셸에서 소프트웨어 제품과 설치 인스턴스의 식별·버전·설치 정보를 통일된 형태로 기술하는 서브모델이다.\",\"description\":\"업데이트·패치 관리·라이선스 관리·감사를 목적으로 하며 버전(주·부·개정·빌드), 배포일·빌드일·설치일, 설치 경로·체크섬 같은 속성을 둔다.\",\"related_areas\":[24,28],\"sources\":[\"ref-753\"]},{\"action\":\"new\",\"slug\":\"over-the-air-update\",\"term_ko\":\"무선 업데이트\",\"term_en\":\"Over-the-Air Update (OTA)\",\"definition\":\"기기를 회수하지 않고 네트워크로 소프트웨어·펌웨어를 내려받아 갱신하는 방식이다.\",\"description\":\"로봇 플릿용 시연 샘플과 국내 SDR 과제 보도에서 다뤄졌다. 롤백 등 기능 주장은 벤더 주장 수준이다.\",\"related_areas\":[24],\"sources\":[\"ref-760\",\"ref-761\"]}],\"reference_updates\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 의미적 버전 규칙, 토픽의 주 버전, 지도 배포·버전(downloadMap·enableMap·deleteMap), 미지원 파라미터 오류 규정 확인.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 상태 메시지 JSON 스키마. powerSupply(stateOfCharge·batteryHealth·charging·range)와 maps(mapId·mapVersion·mapStatus) 필드 확인.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 팩트시트 JSON 스키마. 이번 실행에서 versions 배열과 batteryCharging 블록 확인.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"MassRobotics AMR 상호운용 표준 JSON 스키마. 이번 실행에서 식별·배터리·오류 필드 확인.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-668\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_simulation — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_simulation\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. Open-RMF 시뮬레이션 플러그인 저장소 README(이번 실행에서 다시 열지 않음, 2026-09-25-56 확인 내용 재사용).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-364\",\"org\":\"Open Robotics (ROS 2 Design)\",\"title\":\"Managed nodes (ROS 2 Design: node_lifecycle)\",\"published\":null,\"url\":\"https://design.ros2.org/articles/node_lifecycle.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"ROS 2 관리형 노드의 주 상태·전이 상태·전이와 목적(초기화 확인, 실행 중 교체·재시작) 설계 문서.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-752\",\"org\":\"Open Robotics (ROS REP)\",\"title\":\"REP 2000 -- ROS 2 Releases and Target Platforms\",\"published\":null,\"url\":\"https://www.ros.org/reps/rep-2000.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"ROS 2 배포판별 출시·지원 종료 일정과 LTS 5년·비LTS 1.5년 지원 정책.\",\"source_unopened\":false,\"cited_by\":[\"docs/topics/2026/2026-09-25-area24-s3.md\"]},{\"id\":\"ref-753\",\"org\":\"IDTA (admin-shell-io/id GitHub)\",\"title\":\"IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"자산관리셸 소프트웨어 명판 서브모델의 목적(업데이트·패치·라이선스·감사)과 버전·설치 인스턴스 속성.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-754\",\"org\":\"ISO\",\"title\":\"ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines\",\"published\":\"2018\",\"url\":\"https://www.iso.org/standard/71194.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 기계 상태 감시 프로그램 수립 일반 지침, 상태 감시·진단 표준군의 상위 문서.\",\"source_unopened\":true,\"cited_by\":[\"docs/topics/2026/2026-09-25-area24-s4.md\"]},{\"id\":\"ref-755\",\"org\":\"ISO\",\"title\":\"ISO 55000:2024 - Asset management — Vocabulary, overview and principles\",\"published\":\"2024-07\",\"url\":\"https://www.iso.org/standard/83053.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자산 관리 용어·개요·원칙 제2판(ISO/TC 251, 2014 판 대체), 모든 유형의 자산에 적용.\",\"source_unopened\":true,\"cited_by\":[\"docs/topics/2026/2026-09-25-area24-s4.md\"]},{\"id\":\"ref-403\",\"org\":\"arXiv (저자 미확인)\",\"title\":\"Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots\",\"published\":\"2026-03\",\"url\":\"https://arxiv.org/abs/2603.22731\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. AMR 플릿의 작업 배정·충전을 배터리 열화 균형과 함께 최적화하는 프리프린트(동료 심사 전).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-757\",\"org\":\"Lei, Y., Liu, H., Li, N. 외\",\"title\":\"Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)\",\"published\":\"2025\",\"url\":\"https://link.springer.com/article/10.1007/s11431-024-2810-2\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 로봇 고장 모드, 데이터 수집, 모델·데이터 기반 상태 감시·고장 진단 검토.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-758\",\"org\":\"IEC\",\"title\":\"IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment\",\"published\":\"2015-06\",\"url\":\"https://webstore.iec.ch/en/publication/22811\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업 제어 시스템 패치 관리 프로그램의 소유자·공급자 요구와 패치 정보 교환 형식.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-759\",\"org\":\"European Union (EUR-Lex)\",\"title\":\"Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery\",\"published\":\"2023-06\",\"url\":\"https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EU 기계 규정. 2027-01-20 적용, 제조사가 예견·계획하지 않은 물리적·디지털 변경을 포함한 실질적 변경 정의.\",\"source_unopened\":true,\"cited_by\":[\"docs/topics/2026/2026-09-25-area24-s3.md\"]},{\"id\":\"ref-760\",\"org\":\"Amazon Web Services (aws-samples GitHub)\",\"title\":\"ros2-ota-firmware-updates — README\",\"published\":null,\"url\":\"https://github.com/aws-samples/ros2-ota-firmware-updates\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"aws-samples 저장소의 ROS 2 플릿 무선 펌웨어 업데이트 시연용 샘플(IoT Jobs·Greengrass·Docker, 버전 조회, 자동 롤백을 이점으로 나열).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-761\",\"org\":\"네이트 뉴스(원 매체 미확인)\",\"title\":\"클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장\",\"published\":\"2026-07-23\",\"url\":\"https://m.news.nate.com/view/20260723n24828\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. SDR 차세대 로봇 공통 플랫폼 기술개발 3차년도 착수 워크숍(KIST 휴머노이드연구단)과 클라우드 기반 OTA 목표 보도.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]},{\"id\":\"ref-762\",\"org\":\"한국로봇사용자협회\",\"title\":\"협동로봇 설치 작업장 안전인증 안내\",\"published\":null,\"url\":\"https://www.korua.or.kr/inspect/inspectInfo.do\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 협동로봇 설치 작업장 안전인증(ISO 10218-2 준수 심사, 2년 주기 정기 심사) 안내.\",\"source_unopened\":true,\"cited_by\":[\"docs/topics/2026/2026-09-25-area24-s3.md\"]},{\"id\":\"ref-763\",\"org\":\"세이프틱스(Safetics)\",\"title\":\"로봇 시스템 위험성평가 가이드\",\"published\":null,\"url\":\"https://doc.safetics.io/insight-risk-assessment/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇 시스템 위험성평가 가이드. 동일 모델 교체 시 펌웨어·안전 파라미터 변경에 따른 재평가 권고.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"제조사 펌웨어가 바뀔 때 어느 현장·기능을 다시 검증할지 영향 범위를 산정하는 공개 절차나 표준이 있는가?\",\"areas\":[24,23],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"VDA 5050 2.x 판과 3.0.0 판 로봇이 섞인 플릿에서 주 버전 차이를 어떻게 운영·이행하는가?\",\"areas\":[24,9,28],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"국내 협동로봇 설치 작업장 안전인증에서 제어기 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정으로 확인할 수 있는가?\",\"areas\":[24,25],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"EU 기계 규정의 실질적 변경 판단이 로봇 동작을 바꾸는 오케스트레이션 정책·어댑터 업데이트에도 적용되는가?\",\"areas\":[24,25],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[{\"step\":\"적치\",\"item\":\"시작 조건\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"적치\",\"item\":\"작업 대상\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"적치\",\"item\":\"수행 자원\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"적치\",\"item\":\"제약\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"적치\",\"item\":\"완료·인계\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"적치\",\"item\":\"예외·성과\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"출하\",\"item\":\"시작 조건\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"출하\",\"item\":\"작업 대상\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"출하\",\"item\":\"수행 자원\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"},{\"step\":\"출하\",\"item\":\"제약\",\"link\":\"docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md\",\"title\":\"24. 자산·소프트웨어 수명주기 관리\"}],\"standards_updates\":[{\"name\":\"IDTA 02007 Nameplate for Software in Manufacturing (Software Nameplate 1.0)\",\"kind\":\"표준\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"url\":\"https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md\",\"related_areas\":[24,28],\"summary\":\"자산관리셸 서브모델로 소프트웨어 제품과 설치 인스턴스의 버전·설치 정보를 업데이트·패치·라이선스·감사 목적으로 통일해 표현한다.\",\"ref_id\":\"ref-753\"},{\"name\":\"ISO 17359:2018 기계 상태 감시·진단 일반 지침\",\"kind\":\"표준\",\"org\":\"ISO\",\"url\":\"https://www.iso.org/standard/71194.html\",\"related_areas\":[24,19],\"summary\":\"기계의 상태 감시 프로그램 수립 일반 절차 지침이며 상태 감시·진단 표준군의 상위 문서다(원문 미열람).\",\"ref_id\":\"ref-754\"},{\"name\":\"ISO 55000:2024 자산 관리 — 용어·개요·원칙\",\"kind\":\"표준\",\"org\":\"ISO (ISO/TC 251)\",\"url\":\"https://www.iso.org/standard/83053.html\",\"related_areas\":[24],\"summary\":\"자산 관리의 용어·개요·원칙을 정한 제2판(2024-07)으로 2014판을 대체하며 모든 유형의 자산에 적용된다(원문 미열람).\",\"ref_id\":\"ref-755\"},{\"name\":\"IEC TR 62443-2-3:2015 IACS 환경의 패치 관리\",\"kind\":\"표준\",\"org\":\"IEC\",\"url\":\"https://webstore.iec.ch/en/publication/22811\",\"related_areas\":[24,26],\"summary\":\"산업 제어 시스템 패치 관리 프로그램의 자산 소유자·공급자 요구와 패치 정보 교환 형식을 정의한다(원문 미열람).\",\"ref_id\":\"ref-758\"},{\"name\":\"REP 2000 ROS 2 Releases and Target Platforms\",\"kind\":\"프레임워크\",\"org\":\"Open Robotics (ROS REP)\",\"url\":\"https://www.ros.org/reps/rep-2000.html\",\"related_areas\":[24],\"summary\":\"ROS 2 배포판별 출시·지원 종료 일정과 장기 지원판 5년·비장기 지원판 1.5년 지원 정책을 정한다.\",\"ref_id\":\"ref-752\"},{\"name\":\"rmf_simulation (Open-RMF 시뮬레이션 플러그인)\",\"kind\":\"오픈소스\",\"org\":\"Open Robotics (open-rmf)\",\"url\":\"https://github.com/open-rmf/rmf_simulation\",\"related_areas\":[22,24],\"summary\":\"Open-RMF 시뮬레이션 플러그인 저장소로 Gazebo Classic 11과 Gazebo Fortress 를 지원 대상으로 적는다(원문 미열람).\",\"ref_id\":\"ref-668\"},{\"name\":\"협동로봇 설치 작업장 안전인증\",\"kind\":\"평가 프로그램\",\"org\":\"한국로봇사용자협회\",\"url\":\"https://www.korua.or.kr/inspect/inspectInfo.do\",\"related_areas\":[25,24],\"summary\":\"협동운전 산업용 로봇 시스템의 ISO 10218-2 준수를 심사하고 발급일로부터 2년 주기로 정기 심사한다(원문 미열람).\",\"ref_id\":\"ref-762\"}],\"additional_research_requests\":[\"4절: 예지보전(Predictive Maintenance) 정의를 뒷받침할 출처가 브리프에 없어 본문·용어집에 넣지 못했다 — 표준·검토 논문 출처로 정의를 확인해 달라.\",\"전 절: 모든 핵심 주장이 단일 출처이므로 교차 확인이 필요하다(특히 REP 2000 지원 기간, VDA 5050 버전·지도 규칙, IDTA 02007 속성). 페이지 신뢰도를 높이려면 독립 출처가 필요하다.\",\"3절·11절: EU 기계 규정에서 제조사가 예견한 소프트웨어 업데이트의 취급(실질적 변경 제외 여부)을 조문 원문이나 EU 공식 지침으로 확인해 달라 — 브리프에는 정의 조건만 있다.\",\"3절·11절: 국내 협동로봇 설치 작업장 안전인증에서 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정 원문 확인이 필요하다.\",\"6절·7절: 신규 출처 예산 도달로 빠진 ISO 13374, ISO 10218-1:2025 사이버보안 요구, CISA SBOM, 카나리 배포 연구를 다음 실행에서 조사해 달라.\",\"9절: '업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포'하는 방식의 근거(단계적 배포·카나리 배포의 로봇 플릿 적용 사례)가 없어 구축자 추론으로만 남겼다.\"],\"fixes_applied\":[\"ref-031·ref-051 재사용 지시 — 본문 각주와 13절 정의, sources, reference_updates 에서 URL 이 같은 기존 ref-031(VDA5050_EN.md)과 ref-051(state.schema)을 그대로 쓰고 새 id 로 등록하지 않았다.\",\"f13 축소 지시 — 4절 '자산 관리' 항목에 제2판·2024-07·ISO/TC 251·2014판 대체·용어·개요·원칙·모든 유형의 자산 적용만 [사실]로 쓰고 '하드웨어·소프트웨어·설비 포함'과 '수명주기 단계별 평가' 구절은 넣지 않았다.\",\"f17 분리 지시 — 3절에 '제조사가 예견·계획하지 않은' 조건을 넣은 실질적 변경 정의를 [사실]로, 소프트웨어 업데이트가 판단 대상이 될 수 있다는 부분을 별도 문장 [추정]으로 썼다.\",\"f18 문구 수정 지시 — 6절·8절에서 'aws-samples 저장소의 시연용 샘플'로 쓰고 자동 롤백은 README 가 이점으로 나열할 뿐 구현 절차는 보이지 않는다고 밝혔으며 [추정]과 '벤더 주장'을 유지했다.\",\"f19 강등 지시 — 6절·8절에서 [추정]으로 쓰고 주관 조직명을 'KIST 휴머노이드연구단'으로 고쳤으며 원 매체 미확인을 병기했다.\",\"f27 의견 주체 표시 지시 — 10절 첫 문장에 '구축자 의견'임을 밝히고 각 연결 항목을 [의견]으로 두었다.\",\"f23 추론 표시 지시 — 9절 표 아래에 '운영 시간대·일부 로봇 단위 분할 배포'가 확인한 출처에 직접 근거가 없는 구축자 추론이라고 밝히고 [추정]을 유지했다.\",\"f15 프리프린트 표시 지시 — 6절과 8절에 arXiv 프리프린트(동료 심사 전)이며 저자 미확인임을 적었다.\",\"f9 기준일 지시 — 3절에 Kilted 지원 종료(2026-11)가 기준일 2026-09-25 에서 약 2개월 뒤라는 문장을 더했다.\",\"원문 미열람 표시 지시 — ref-754·ref-755·ref-403·ref-757·ref-758·ref-759·ref-761·ref-762·ref-763·ref-668 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.\",\"신뢰도·태그 지시 — 프런트매터 confidence 를 medium 으로 두고 각 finding 의 태그를 1차 판정 처분(f13·f17 부분 강등, f19 강등, 나머지 유지)대로 썼다.\",\"분량 초과 자동 분리: 24. 자산·소프트웨어 수명주기 관리 본문 8,444자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,733자\",\"형식 검증 수정: 주제 페이지 2026-09-25-area24-s10.md 3절의 세부영역 링크 11건이 원 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 원 세부영역 페이지 프런트매터 sources 를 13절 각주 정의 목록과 일치시켰다. 주장·태그·각주는 바꾸지 않았다.\"]}",
+  "structured_output": {
+    "run_id": "2026-09-25-61",
+    "outline": [
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 900,
+        "summary": "펌웨어 변경의 재검증 범위를 산정하는 공개 절차는 찾지 못했고, 배포판 지원 종료·시뮬레이터 교체·EU 기계 규정의 실질적 변경·국내 재평가 권고가 수명주기 관리를 강제한다. [추정][^ref-031]",
+        "planned_findings": [
+          "f22",
+          "f9",
+          "f10",
+          "f17",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 650,
+        "summary": "자산 관리(ISO 55000:2024), 상태 감시(ISO 17359), 배터리 건강 상태(batteryHealth), 소프트웨어 명판, 패치 관리, 의미적 버전·지도 버전, 관리형 노드가 핵심 용어다. [사실][^ref-755]",
+        "planned_findings": [
+          "f13",
+          "f12",
+          "f14",
+          "f5",
+          "f11",
+          "f16",
+          "f2",
+          "f1",
+          "f8"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+        "budget_chars": 700,
+        "summary": "적치 구역 지도 버전 전환과 출하 마감 전 배터리 열화 로봇 배정의 두 가상 시나리오로, 지도 활성화 규칙과 batteryHealth·range 가 시작 조건·제약이 되는 모습을 보인다. [추정][^ref-031]",
+        "planned_findings": [
+          "f26",
+          "f1",
+          "f5",
+          "f3",
+          "f25",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 800,
+        "summary": "부품 상태 감시·고장 진단, 배터리 열화를 반영한 배정·충전, 버전 필드 관리, 관리형 노드와 OTA 배포·복구가 대표 접근법이다. [사실][^ref-757]",
+        "planned_findings": [
+          "f14",
+          "f15",
+          "f4",
+          "f6",
+          "f8",
+          "f18",
+          "f19",
+          "f1"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 500,
+        "summary": "VDA 5050 명세·스키마, MassRobotics, IDTA 02007, ISO 17359·55000, IEC TR 62443-2-3, ROS 2 관리형 노드·REP 2000, rmf_simulation, 국내 협동로봇 설치 작업장 안전인증이 관련된다. [사실][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f4",
+          "f5",
+          "f6",
+          "f11",
+          "f12",
+          "f13",
+          "f16",
+          "f8",
+          "f9",
+          "f10",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 350,
+        "summary": "산업용 로봇 상태 감시 검토 논문(Lei 외 2025)과 배터리 열화 인지 플릿 스케줄링 프리프린트(2026-03)가 대표 연구다. [사실][^ref-757]",
+        "planned_findings": [
+          "f14",
+          "f15",
+          "f18",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+        "budget_chars": 500,
+        "summary": "ROP 는 버전 목록 유지·배터리 상태 반영·배포 복구 조율·지도 전환 동기화를 맡고, 펌웨어 내용·부품 진단·BMS 열화 추정은 제조사 쪽 연계 대상으로 보인다. [추정][^ref-051]",
+        "planned_findings": [
+          "f23",
+          "f24",
+          "f7"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 450,
+        "summary": "시험·시뮬레이션·보안·안전·충전·배정·모니터링·온보딩·관제 연동·표준·지도 영역과 이어진다는 것이 구축자 의견이다. [의견][^ref-403]",
+        "planned_findings": [
+          "f27",
+          "f7",
+          "f4",
+          "f26",
+          "f15",
+          "f14"
+        ]
+      },
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 300,
+        "summary": "영향 범위 산정 절차, VDA 5050 판 혼재 운영, 국내 인증의 펌웨어 변경 재심사, EU 실질적 변경의 오케스트레이션 적용 여부가 열린 질문이다.",
+        "planned_findings": [
+          "f22",
+          "f2",
+          "f21",
+          "f17"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리\"\ntype: area\ncategory: \"F. 도입·검증·유지관리\"\narea_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [펌웨어 버전 관리, 지도 버전, 배터리 건강 상태, 상태 감시, 패치 관리, 무선 업데이트]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-24\nupdated: 2026-09-25\nsources: [ref-031, ref-051, ref-228, ref-230, ref-668, ref-364, ref-753, ref-403, ref-757, ref-758, ref-760, ref-761, ref-763]\nlast_run: 2026-09-25\nversion: 2\n---\n\n[홈](../../index.md) › [F. 도입·검증·유지관리](index.md) › 24. 자산·소프트웨어 수명주기 관리\n\n# 24. 자산·소프트웨어 수명주기 관리\n\n!!! info \"소속 대분류\"\n    [F. 도입·검증·유지관리](index.md) — 핵심 질문:\n    새 현장에 설치하고, 변경하면서, 오래 운영하려면? [분류원문]\n\n<!-- auto:area-tracks:start -->\n!!! note \"관련 연구 트랙\"\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\n\n    - [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\n<!-- auto:area-tracks:end -->\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 한 줄 정의\n\n고장 예측·정비, 배터리 열화, 펌웨어·어댑터·지도·모델 버전, 배포·복구, 장비 교체 [분류원문]\n\n## 2. SCM 관점의 질문\n\n제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? [분류원문]\n\n## 3. 왜 중요한가\n\n펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\n\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가](../../topics/2026/2026-09-25-area24-s3.md)에 있다.\n\n## 4. 핵심 개념과 용어\n\n수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\n\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어](../../topics/2026/2026-09-25-area24-s4.md)에 있다.\n\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\n\n다음은 설명을 위한 가상의 시나리오 두 개이다. 지도 버전 전환 규칙과 배터리 상태 보고 필드가 적치의 시작 조건과 출하의 제약으로 어떻게 작용하는지를 보인다. [추정][^ref-031][^ref-051]\n\n### 적치: 랙 배치 변경 뒤 새 지도 버전으로 작업 재개\n\n**물류 흐름 단계:** 적치\n\n**시나리오:** 랙 배치 변경 뒤 새 지도 버전으로 적치 작업 재개\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 랙 배치가 바뀌어 새 지도 버전이 나오면, 진행 중 적치 주문을 정리하고 지도 전환 시점을 정하는 일이 적치 재개의 시작 조건이 되는 것으로 보인다. [추정][^ref-031] |\n| 작업 대상 | 입고 뒤 적치할 팔레트·박스(가상) |\n| 수행 자원 | 플릿 제어가 즉시 동작 downloadMap·enableMap 으로 지도 내려받기·활성화를 지시하고 [사실][^ref-031], 로봇은 상태 메시지로 mapId·mapVersion·mapStatus 를 보고한다. [사실][^ref-051] |\n| 제약 | 같은 mapId 에서는 한 번에 한 버전만 활성화된다. [사실][^ref-031] |\n| 완료·인계 | 로봇이 보고한 새 mapVersion 의 mapStatus 가 ENABLED 인지 확인한 뒤 적치 주문을 재개한다(이 시나리오의 가정). mapStatus 는 ENABLED 또는 DISABLED 값을 가진다. [사실][^ref-051] |\n| 예외·성과 | 로봇이 사용할 수 없는 선택 필드가 담긴 주문을 받으면 UNSUPPORTED_PARAMETER 오류를 CRITICAL 수준으로 보고하도록 규정돼 있다. [사실][^ref-031] 이 규정 때문에 판 차이로 생긴 미지원 기능이 실행 시점 오류로 드러난다고 해석할 수 있다. [추정][^ref-031] |\n\n### 출하: 마감 전 배터리 열화 로봇의 배정\n\n**물류 흐름 단계:** 출하\n\n**시나리오:** 출하 마감 전 집중 시간대에 배터리 상태가 낮아진 로봇 배정\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 출하 마감 전 집중 시간대에 출하 주문이 몰린다(가상). |\n| 작업 대상 | 출하 대기 구역으로 옮길 화물(가상) |\n| 수행 자원 | 로봇은 stateOfCharge·batteryHealth·range 를 보고하고 [사실][^ref-051], ROP 는 이 값을 작업 배정·충전 계획에 반영하는 쪽으로 보인다. [추정][^ref-051] |\n| 제약 | batteryHealth 가 낮아진 로봇은 같은 충전 상태에서도 추정 도달 거리(range)가 짧아질 수 있어, 배터리 열화가 작업 배정·충전 계획의 제약으로 작용하는 것으로 보인다(물류센터 실측 자료는 미확인). [추정][^ref-051][^ref-403] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 해당 없음 |\n\n두 시나리오에서 이 영역이 관여하는 칸은 적치의 시작 조건·수행 자원·제약·완료·인계·예외·성과와 출하의 수행 자원·제약이다. 전체 흐름은 [흐름 매트릭스](../../flow-matrix.md)에서 본다.\n\n## 6. 대표 접근법과 기술\n\n산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\n\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area24-s6.md)에 있다.\n\n## 7. 관련 표준·프레임워크·오픈소스\n\n이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area24-s7.md)에 있다.\n\n## 8. 대표 연구와 자료\n\n이 영역의 대표 연구는 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나뉜다. [사실][^ref-757][^ref-403]\n\n- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료다. [사실][^ref-757]\n- 저자 미확인, Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots(2026-03, arXiv 프리프린트, 동료 심사 전) — 작업 배정·충전을 플릿 전체 배터리 열화 균형과 함께 최적화한다. [사실][^ref-403]\n- Amazon Web Services, ros2-ota-firmware-updates README — 플릿 OTA 배포·버전 조회·롤백을 시연하는 샘플이다. [추정] 벤더 주장[^ref-760]\n- SDR 과제 킥오프 워크숍 보도(2026-07-23) — 국내 클라우드 기반 OTA 목표 사례다. [추정][^ref-761]\n\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\n\nROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율하고, 펌웨어 내용과 부품·배터리 내부 진단은 제조사 쪽에 두는 것으로 보인다. [추정][^ref-051][^ref-757]\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 로봇·어댑터·지도·모델의 버전 목록 유지, 로봇이 보고하는 배터리 상태·오류를 배정·충전 계획에 반영, 업데이트 배포와 실패 시 복구 조율, 지도 버전 활성화 시점 동기화 [추정][^ref-031][^ref-051][^ref-364][^ref-760] | 연계 대상: 펌웨어 내용 자체, 관절·감속기 같은 기계 부품의 고장 진단·잔여 수명 예측, 배터리 관리 시스템(Battery Management System, BMS) 내부의 열화 추정. ROP 는 그 결과(배터리 상태 값·오류 코드·정비 필요 신호)를 받는 쪽으로 보인다. [추정][^ref-757][^ref-051][^ref-230] |\n\n업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포하는 방식도 ROP 가 조율할 후보로 보이지만, 이 부분은 확인한 출처에 직접 근거가 없는 구축자 추론이다. [추정]\n\n분류 원문 9장은 이 경계가 제품 전략에 따라 이동할 수 있고, 이종 제조사를 연결하는 ROP 는 \"인터페이스와 실행 보장\"을 맡을 수 있다고 적는다([범위 경계](../../about/scope-boundary.md)). 규격마다 버전 필드의 위치가 달라(VDA 5050 은 팩트시트에 소프트웨어 버전, 상태 메시지에 지도 버전을 두고 MassRobotics 스키마는 버전 필드가 없다) 여러 규격이 섞인 플릿에서는 ROP 가 로봇별 버전 목록을 별도로 유지해야 할 것으로 보인다. [추정][^ref-228][^ref-051][^ref-230]\n\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\n\n아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\n\n자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결](../../topics/2026/2026-09-25-area24-s10.md)에 있다.\n\n## 11. 열린 질문\n\n이번 실행에서 새로 올린 질문이며 id 는 퍼블리셔가 부여한다. 전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) 제조사 펌웨어가 바뀔 때 어느 현장·기능을 다시 검증할지 영향 범위를 산정하는 공개 절차나 표준이 있는가?\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) VDA 5050 2.x 판과 3.0.0 판 로봇이 섞인 플릿에서 주 버전 차이를 어떻게 운영·이행하는가?\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) 국내 협동로봇 설치 작업장 안전인증에서 제어기 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정으로 확인할 수 있는가?\n- (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-61) EU 기계 규정의 실질적 변경 판단이 로봇 동작을 바꾸는 오케스트레이션 정책·어댑터 업데이트에도 적용되는가?\n\n## 12. 최근 업데이트 (자동)\n\n<!-- auto:area-recent:start -->\n아직 기록된 업데이트가 없다.\n<!-- auto:area-recent:end -->\n\n## 13. 참고 자료 (각주)\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\n[^ref-760]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25\n[^ref-761]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area24-s4.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"4. 핵심 개념과 용어\" 절(1,365자)을 옮겼다",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\"\ntype: topic\ncategory: \"F. 도입·검증·유지관리\"\nprimary_area_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-031, ref-051, ref-364, ref-753, ref-754, ref-755, ref-757, ref-758]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#4\n---\n\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\n\n# 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \"핵심 개념과 용어\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \"핵심 개념과 용어\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n수명주기 관리를 이야기하려면 먼저 무엇을 자산으로 보고, 그 상태와 버전을 어떤 이름으로 부르는지 정해야 한다.\n\n- **자산 관리(Asset Management)** — ISO 55000:2024(제2판, 2024-07, ISO/TC 251)는 자산 관리의 용어·개요·원칙을 정하고 ISO 55000:2014 를 대체하며, 모든 유형의 자산에 적용된다. [사실][^ref-755]\n- **상태 감시(Condition Monitoring)** — ISO 17359:2018 은 기계의 상태 감시 프로그램을 세울 때의 일반 절차 지침으로, 진동·온도·유량·오염·전력·속도 같은 변수를 쓰며 상태 감시·진단 표준군의 상위 문서 역할을 한다. [사실][^ref-754] 산업용 로봇 분야의 검토 논문은 상태 감시·고장 진단을 상태 기반 정비(Condition-Based Maintenance, CBM) 구현 관점에서 정리한다. [사실][^ref-757]\n- **배터리 건강 상태(State of Health, SOH)** — VDA 5050 상태 메시지는 [충전 상태(State of Charge, SOC)](../../glossary/state-of-charge.md)(stateOfCharge)와 별도로 원래 용량 대비 배터리 상태(batteryHealth), 충전 중 여부, 현재 충전 상태로 갈 수 있는 추정 거리(range)를 로봇이 보고하게 한다. [사실][^ref-051]\n- **소프트웨어 명판(Software Nameplate)** — [자산관리셸(Asset Administration Shell, AAS)](../../glossary/asset-administration-shell.md)의 IDTA 02007 서브모델은 업데이트·패치 관리·라이선스 관리·감사를 위해 소프트웨어 제품과 설치 인스턴스 정보를 통일된 형태로 표현하며, 버전(주·부·개정·빌드), 배포일·빌드일·설치일, 설치 경로·체크섬, 설치된 버전과 구성 경로 같은 속성을 둔다. [사실][^ref-753]\n- **패치 관리(Patch Management)** — IEC TR 62443-2-3:2015 는 산업 자동화·제어 시스템의 패치 관리 프로그램을 운영하는 자산 소유자와 제품 공급자에 대한 요구, 공급자–소유자 간 패치 정보 교환 형식, 패치 개발·배포·설치 활동을 정의하며, 보안 외 패치·업데이트에도 적용될 수 있다고 적는다. [사실][^ref-758]\n- **의미적 버전과 지도 버전** — [VDA 5050](../../glossary/vda-5050.md)은 주 버전 변경을 새 필수 필드 도입 같은 호환성을 깨는 변경, 부 버전을 기능 추가, 수 버전을 작은 수정으로 규정하고 MQTT 토픽 경로에 주 버전(v3 등)을 넣는다. [사실][^ref-031] 지도는 지도 식별자(mapId)와 지도 버전(mapVersion)의 조합으로 식별한다. [사실][^ref-031]\n- **[관리형 노드(Managed Node)](../../glossary/managed-node.md)** — ROS 2 관리형 노드 설계는 미구성·비활성·활성·종료의 네 주 상태와 구성·활성화·비활성화·정리·종료 전이를 두어, 실행 전에 구성 요소가 올바로 초기화됐는지 확인하고 실행 중 노드를 교체·재시작할 수 있게 한다. [사실][^ref-364]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\n[^ref-754]: ISO, ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines, 2018, https://www.iso.org/standard/71194.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-755]: ISO, ISO 55000:2024 - Asset management — Vocabulary, overview and principles, 2024-07, https://www.iso.org/standard/83053.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \"핵심 개념과 용어\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area24-s6.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"6. 대표 접근법과 기술\" 절(1,327자)을 옮겼다",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\"\ntype: topic\ncategory: \"F. 도입·검증·유지관리\"\nprimary_area_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-031, ref-228, ref-230, ref-364, ref-403, ref-757, ref-760, ref-761]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#6\n---\n\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\n\n# 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \"대표 접근법과 기술\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \"대표 접근법과 기술\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]\n\n### 부품 상태 감시와 고장 진단\n\nLei 외(2025)의 검토 논문은 산업용 로봇의 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 상태 감시·고장 진단 기술을 상태 기반 정비 구현 관점에서 정리했다. [사실][^ref-757] 부품 진단 자체는 로봇 제조사 쪽 연계 대상이며, ROP 가 결과를 받는 방식은 9절에서 다룬다.\n\n### 배터리 열화를 반영한 배정·충전\n\n2026년 3월 arXiv 프리프린트(동료 심사 전, 저자 미확인)는 작업 배정·서비스 순서·충전 여부·충전 모드·충전기 접근을 함께 최적화해 플릿 전체의 배터리 열화를 균형 있게 나누는 정식화를 제안했고, 급속 충전에 따른 사이클 열화와 높은 충전 상태로 대기할 때의 달력 열화를 근사 열화 지표로 반영했다. [사실][^ref-403] 규격 쪽에서는 VDA 5050 팩트시트의 batteryCharging 블록이 임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간을 담는다. [사실][^ref-228]\n\n### 버전 정보 수집\n\nVDA 5050 팩트시트 스키마는 mobileRobotConfiguration.versions 배열에 로봇에서 도는 하드웨어·소프트웨어 버전(예: softwareVersion)을 키–값으로 담는다. [사실][^ref-228] MassRobotics AMR 상호운용 표준 JSON 스키마는 제조사명·모델·일련번호, 배터리 잔량 비율, 남은 가동 시간, 오류 코드 목록을 담지만 소프트웨어·펌웨어 버전 필드는 명시적으로 두지 않은 것으로 보인다. [추정][^ref-230]\n\n### 배포·교체·복구\n\nROS 2 관리형 노드는 실행 전 초기화 확인과 실행 중 노드 교체·재시작을 위한 상태 전이를 제공한다. [사실][^ref-364] aws-samples 저장소의 시연용 샘플인 ROS 2 플릿 무선 업데이트(Over-the-Air, OTA) 구현은 IoT Jobs·Greengrass v2·Docker 로 배포를 지시·추적하고 플릿 색인으로 기기별 펌웨어 버전을 조회한다. [추정] 벤더 주장[^ref-760] README 는 실패한 업데이트를 이전의 검증된 버전으로 자동 복귀시키는 것을 이점으로 나열할 뿐, 자동 롤백의 구현 절차는 보이지 않는다. [추정] 벤더 주장[^ref-760]\n\n국내에서는 2026-07-22 판교에서 열린 SDR(Software Defined Robot) 차세대 로봇 공통 플랫폼 기술개발 3차년도 착수 워크숍에서 KIST 휴머노이드연구단이 클라우드 기반 SDR 공통 서비스 프레임워크를 소개했고, 이 플랫폼이 무선 업데이트로 로봇 소프트웨어를 갱신하고 기능을 추가하는 것을 목표로 한다고 보도됐다(원 매체 미확인). [추정][^ref-761]\n\n### 지도 버전 배포\n\nVDA 5050 3.0.0 은 즉시 동작 downloadMap·enableMap·deleteMap 으로 지도 내려받기·활성화·삭제를 지시한다. [사실][^ref-031] 지도 전환 절차는 5절의 적치 시나리오에서 보였다.\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\n[^ref-760]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25\n[^ref-761]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \"대표 접근법과 기술\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area24-s3.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"3. 왜 중요한가\" 절(1,019자)을 옮겼다",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\"\ntype: topic\ncategory: \"F. 도입·검증·유지관리\"\nprimary_area_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-031, ref-228, ref-668, ref-752, ref-753, ref-759, ref-762, ref-763]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#3\n---\n\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\n\n# 24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \"왜 중요한가\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \"왜 중요한가\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]\n\n바뀌는 것은 제조사 펌웨어만이 아니다. ROS 2 배포판 지원 정책(REP 2000)에 따르면 장기 지원판은 5년, 비장기 지원판은 1.5년 지원되며, Humble 은 2022-05~2027-05, Jazzy 는 2024-05~2029-05, Kilted 는 2025-05~2026-11 이 지원 기간이다. [사실][^ref-752] Kilted 의 지원 종료는 기준일 2026-09-25 에서 약 2개월 뒤로, 곧 바뀌는 사실이다. [사실][^ref-752] 오케스트레이션 검증에 쓰는 시뮬레이션 환경도 같아서, rmf_simulation 저장소는 지원 대상으로 Gazebo Classic 11(지원 2025년 1월 종료)과 Gazebo Fortress 를 적고 있다. [사실][^ref-668]\n\n변경은 안전·규제 문제로도 이어진다. EU 기계 규정 (EU) 2023/1230 은 2027-01-20 부터 적용되며, 시장에 나온 기계에 대해 제조사가 예견·계획하지 않은 물리적 또는 디지털 변경이 새 위험을 만들거나 기존 위험을 키워 새 보호 조치가 필요해지면 이를 '실질적 변경'으로 정의한다. [사실][^ref-759] 이 정의에 따르면 로봇 동작을 바꾸는 소프트웨어 업데이트도 실질적 변경 여부를 따져야 하는 대상이 될 수 있다. [추정][^ref-759]\n\n국내에서는 로봇 안전 컨설팅 업체 세이프틱스의 가이드가, 같은 모델로 교체해도 제어기 펌웨어 버전·안전 기능 파라미터·엔드이펙터 재장착 정밀도가 달라지면 위험성평가 조건이 바뀐 것이므로 변경 범위 재평가와 검증 문서 갱신이 필요하다고 권고한다. [의견][^ref-763] 한국로봇사용자협회의 협동로봇 설치 작업장 안전인증은 협동운전 산업용 로봇 시스템의 ISO 10218-2 준수 여부를 심사하고 인증서 발급일로부터 2년 주기로 정기 심사한다. [사실][^ref-762] 펌웨어 변경이 재심사 대상인지는 미확인이다.\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\n[^ref-752]: Open Robotics (ROS REP), REP 2000 -- ROS 2 Releases and Target Platforms, 미확인, https://www.ros.org/reps/rep-2000.html, 접근일 2026-09-25\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\n[^ref-762]: 한국로봇사용자협회, 협동로봇 설치 작업장 안전인증 안내, 미확인, https://www.korua.or.kr/inspect/inspectInfo.do, 접근일 2026-09-25 (원문 미열람)\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \"왜 중요한가\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area24-s7.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(982자)을 옮겼다",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\"\ntype: topic\ncategory: \"F. 도입·검증·유지관리\"\nprimary_area_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-031, ref-051, ref-228, ref-230, ref-668, ref-364, ref-752, ref-753, ref-754, ref-755, ref-758, ref-759, ref-762]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#7\n---\n\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\n\n# 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \"관련 표준·프레임워크·오픈소스\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \"관련 표준·프레임워크·오픈소스\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| VDA 5050 3.0.0 명세 | 표준 | 의미적 버전 규칙, 지도 배포·버전 관리, 미지원 파라미터 오류 규정 [사실] | [^ref-031] |\n| VDA 5050 팩트시트 스키마 | 표준 | versions 배열(하드웨어·소프트웨어 버전), batteryCharging 블록 [사실] | [^ref-228] |\n| VDA 5050 상태 스키마 | 표준 | batteryHealth·range 와 mapId·mapVersion·mapStatus 보고 [사실] | [^ref-051] |\n| MassRobotics AMR 상호운용 표준 | 표준 | 배터리 잔량·남은 가동 시간·오류 코드. 버전 필드는 없는 것으로 보임 [추정] | [^ref-230] |\n| IDTA 02007 소프트웨어 명판 | 표준 | 소프트웨어 제품·설치 인스턴스의 버전·설치 정보 [사실] | [^ref-753] |\n| ISO 17359:2018 | 표준 | 기계 상태 감시 프로그램 수립 일반 지침(원문 미열람) [사실] | [^ref-754] |\n| ISO 55000:2024 | 표준 | 자산 관리 용어·개요·원칙(원문 미열람) [사실] | [^ref-755] |\n| IEC TR 62443-2-3:2015 | 표준 | 산업 제어 시스템 패치 관리(원문 미열람) [사실] | [^ref-758] |\n| ROS 2 관리형 노드 | 프레임워크 | 노드 초기화 확인과 실행 중 교체·재시작 [사실] | [^ref-364] |\n| REP 2000 | 프레임워크 | ROS 2 배포판 지원 기간 정책 [사실] | [^ref-752] |\n| rmf_simulation | 오픈소스 | 시뮬레이터 판(Gazebo Classic 11·Fortress) 지원 범위(원문 미열람) [사실] | [^ref-668] |\n| 한국로봇사용자협회 협동로봇 설치 작업장 안전인증 | 평가 프로그램 | ISO 10218-2 준수 심사, 2년 주기 정기 심사(원문 미열람) [사실] | [^ref-762] |\n\n규정으로는 EU 기계 규정 (EU) 2023/1230 이 디지털 변경을 포함한 실질적 변경을 정의한다(3절). [사실][^ref-759]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\n[^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25\n[^ref-752]: Open Robotics (ROS REP), REP 2000 -- ROS 2 Releases and Target Platforms, 미확인, https://www.ros.org/reps/rep-2000.html, 접근일 2026-09-25\n[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25\n[^ref-754]: ISO, ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines, 2018, https://www.iso.org/standard/71194.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-755]: ISO, ISO 55000:2024 - Asset management — Vocabulary, overview and principles, 2024-07, https://www.iso.org/standard/83053.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\n[^ref-762]: 한국로봇사용자협회, 협동로봇 설치 작업장 안전인증 안내, 미확인, https://www.korua.or.kr/inspect/inspectInfo.do, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \"관련 표준·프레임워크·오픈소스\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area24-s10.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"10. 다른 연구영역과의 연결\" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침",
+        "content": "---\ntitle: \"24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\"\ntype: topic\ncategory: \"F. 도입·검증·유지관리\"\nprimary_area_no: 24\nrelated_areas: [6, 9, 13, 16, 19, 21, 22, 23, 25, 26, 28]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-031, ref-228, ref-230, ref-668, ref-403, ref-757, ref-758, ref-759, ref-763]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md#10\n---\n\n[홈](../../index.md) › [주제](../index.md) › 24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\n\n# 24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\n- 이 페이지는 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지의 \"다른 연구영역과의 연결\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 페이지를 쓰는 과정에서 \"다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]\n\n- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 업데이트 뒤 정상·장애 상황의 회귀 시험이 재검증 범위 산정의 결과를 받는다. [의견][^ref-763]\n- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 가정한 미래를 실험하는 시뮬레이션 환경 자체도 시뮬레이터 판 교체에 따른 수명주기 관리 대상이다. [의견][^ref-668]\n- [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) — 보안 패치의 배포·설치가 이 영역의 배포 절차와 겹친다. [의견][^ref-758]\n- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 펌웨어·안전 파라미터 변경 뒤 위험성 재평가와 실질적 변경 판단이 필요하다. [의견][^ref-763][^ref-759]\n- [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — 배터리 열화를 반영한 충전 모드·충전기 접근 계획과 이어진다. [의견][^ref-403]\n- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 배터리 열화 균형을 작업 배정과 함께 최적화하는 연구가 있다. [의견][^ref-403]\n- [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) — 상태 감시·고장 진단 결과와 오류 코드가 정비 판단의 입력이 된다. [의견][^ref-757]\n- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 로봇 등록 때 팩트시트의 버전 정보를 수집해 버전 목록의 출발점으로 삼는다. [의견][^ref-228]\n- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 규격별 버전·배터리 필드 차이를 어댑터가 메워야 한다. [의견][^ref-228][^ref-230]\n- [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 규격 주 버전 이행이 여러 사업자의 합의 문제다. [의견][^ref-031]\n- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 지도 버전의 배포·활성화 시점이 지도 모델 변경과 맞물린다. [의견][^ref-031]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0), 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25\n[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)\n[^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)\n[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)\n[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)\n[^ref-759]: European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery, 2023-06, https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng, 접근일 2026-09-25 (원문 미열람)\n[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-61 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-61 | 24. 자산·소프트웨어 수명주기 관리 의 \"다른 연구영역과의 연결\" 절에서 분리 |\n"
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 24. 자산·소프트웨어 수명주기 관리 | 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) | run 2026-09-25-61",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 영역 심화로 3~11절 첫 작성(펌웨어·지도 버전, 배터리 건강 상태, 배포·복구, 변경 후 재평가)",
+      "category_recent": "2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 영역 심화로 3~11절 첫 작성, 열린 질문 4건 등록",
+      "area_recent": "2026-09-25 — 24. 자산·소프트웨어 수명주기 관리: 3~11절 신규 작성(실행 2026-09-25-61)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "condition-based-maintenance",
+        "term_ko": "상태 기반 정비",
+        "term_en": "Condition-Based Maintenance (CBM)",
+        "definition": "정해진 주기 대신 상태 감시로 확인한 설비 상태에 따라 정비 여부와 시점을 정하는 정비 방식이다.",
+        "description": "산업용 로봇 분야에서는 고장 모드 분석, 데이터 수집·센서, 모델 기반·데이터 기반 상태 감시·고장 진단 기법이 상태 기반 정비 구현 관점에서 정리돼 있다.",
+        "related_areas": [
+          24,
+          19
+        ],
+        "sources": [
+          "ref-757",
+          "ref-754"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "state-of-health",
+        "term_ko": "배터리 건강 상태",
+        "term_en": "State of Health (SOH)",
+        "definition": "배터리의 현재 용량·성능을 새 배터리 대비 비율로 나타낸 값으로, VDA 5050 상태 메시지의 batteryHealth 가 이에 해당한다.",
+        "description": "VDA 5050 상태 스키마는 충전 상태(stateOfCharge)와 별도로 batteryHealth 와 추정 도달 거리(range)를 로봇이 보고하게 한다.",
+        "related_areas": [
+          24,
+          16
+        ],
+        "sources": [
+          "ref-051"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "software-nameplate",
+        "term_ko": "소프트웨어 명판",
+        "term_en": "Software Nameplate (IDTA 02007)",
+        "definition": "자산관리셸에서 소프트웨어 제품과 설치 인스턴스의 식별·버전·설치 정보를 통일된 형태로 기술하는 서브모델이다.",
+        "description": "업데이트·패치 관리·라이선스 관리·감사를 목적으로 하며 버전(주·부·개정·빌드), 배포일·빌드일·설치일, 설치 경로·체크섬 같은 속성을 둔다.",
+        "related_areas": [
+          24,
+          28
+        ],
+        "sources": [
+          "ref-753"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "over-the-air-update",
+        "term_ko": "무선 업데이트",
+        "term_en": "Over-the-Air Update (OTA)",
+        "definition": "기기를 회수하지 않고 네트워크로 소프트웨어·펌웨어를 내려받아 갱신하는 방식이다.",
+        "description": "로봇 플릿용 시연 샘플과 국내 SDR 과제 보도에서 다뤄졌다. 롤백 등 기능 주장은 벤더 주장 수준이다.",
+        "related_areas": [
+          24
+        ],
+        "sources": [
+          "ref-760",
+          "ref-761"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 3.0.0 명세 원문. 의미적 버전 규칙, 토픽의 주 버전, 지도 배포·버전(downloadMap·enableMap·deleteMap), 미지원 파라미터 오류 규정 확인.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 상태 메시지 JSON 스키마. powerSupply(stateOfCharge·batteryHealth·charging·range)와 maps(mapId·mapVersion·mapStatus) 필드 확인.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 팩트시트 JSON 스키마. 이번 실행에서 versions 배열과 batteryCharging 블록 확인.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. 이번 실행에서 식별·배터리·오류 필드 확인.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-668",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_simulation — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_simulation",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. Open-RMF 시뮬레이션 플러그인 저장소 README(이번 실행에서 다시 열지 않음, 2026-09-25-56 확인 내용 재사용).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-364",
+        "org": "Open Robotics (ROS 2 Design)",
+        "title": "Managed nodes (ROS 2 Design: node_lifecycle)",
+        "published": null,
+        "url": "https://design.ros2.org/articles/node_lifecycle.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "ROS 2 관리형 노드의 주 상태·전이 상태·전이와 목적(초기화 확인, 실행 중 교체·재시작) 설계 문서.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-752",
+        "org": "Open Robotics (ROS REP)",
+        "title": "REP 2000 -- ROS 2 Releases and Target Platforms",
+        "published": null,
+        "url": "https://www.ros.org/reps/rep-2000.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "ROS 2 배포판별 출시·지원 종료 일정과 LTS 5년·비LTS 1.5년 지원 정책.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area24-s3.md"
+        ]
+      },
+      {
+        "id": "ref-753",
+        "org": "IDTA (admin-shell-io/id GitHub)",
+        "title": "IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "자산관리셸 소프트웨어 명판 서브모델의 목적(업데이트·패치·라이선스·감사)과 버전·설치 인스턴스 속성.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-754",
+        "org": "ISO",
+        "title": "ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines",
+        "published": "2018",
+        "url": "https://www.iso.org/standard/71194.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 기계 상태 감시 프로그램 수립 일반 지침, 상태 감시·진단 표준군의 상위 문서.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area24-s4.md"
+        ]
+      },
+      {
+        "id": "ref-755",
+        "org": "ISO",
+        "title": "ISO 55000:2024 - Asset management — Vocabulary, overview and principles",
+        "published": "2024-07",
+        "url": "https://www.iso.org/standard/83053.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자산 관리 용어·개요·원칙 제2판(ISO/TC 251, 2014 판 대체), 모든 유형의 자산에 적용.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area24-s4.md"
+        ]
+      },
+      {
+        "id": "ref-403",
+        "org": "arXiv (저자 미확인)",
+        "title": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.22731",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. AMR 플릿의 작업 배정·충전을 배터리 열화 균형과 함께 최적화하는 프리프린트(동료 심사 전).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-757",
+        "org": "Lei, Y., Liu, H., Li, N. 외",
+        "title": "Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)",
+        "published": "2025",
+        "url": "https://link.springer.com/article/10.1007/s11431-024-2810-2",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 로봇 고장 모드, 데이터 수집, 모델·데이터 기반 상태 감시·고장 진단 검토.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-758",
+        "org": "IEC",
+        "title": "IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment",
+        "published": "2015-06",
+        "url": "https://webstore.iec.ch/en/publication/22811",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업 제어 시스템 패치 관리 프로그램의 소유자·공급자 요구와 패치 정보 교환 형식.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-759",
+        "org": "European Union (EUR-Lex)",
+        "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery",
+        "published": "2023-06",
+        "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EU 기계 규정. 2027-01-20 적용, 제조사가 예견·계획하지 않은 물리적·디지털 변경을 포함한 실질적 변경 정의.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area24-s3.md"
+        ]
+      },
+      {
+        "id": "ref-760",
+        "org": "Amazon Web Services (aws-samples GitHub)",
+        "title": "ros2-ota-firmware-updates — README",
+        "published": null,
+        "url": "https://github.com/aws-samples/ros2-ota-firmware-updates",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "aws-samples 저장소의 ROS 2 플릿 무선 펌웨어 업데이트 시연용 샘플(IoT Jobs·Greengrass·Docker, 버전 조회, 자동 롤백을 이점으로 나열).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-761",
+        "org": "네이트 뉴스(원 매체 미확인)",
+        "title": "클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장",
+        "published": "2026-07-23",
+        "url": "https://m.news.nate.com/view/20260723n24828",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. SDR 차세대 로봇 공통 플랫폼 기술개발 3차년도 착수 워크숍(KIST 휴머노이드연구단)과 클라우드 기반 OTA 목표 보도.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      },
+      {
+        "id": "ref-762",
+        "org": "한국로봇사용자협회",
+        "title": "협동로봇 설치 작업장 안전인증 안내",
+        "published": null,
+        "url": "https://www.korua.or.kr/inspect/inspectInfo.do",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 협동로봇 설치 작업장 안전인증(ISO 10218-2 준수 심사, 2년 주기 정기 심사) 안내.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area24-s3.md"
+        ]
+      },
+      {
+        "id": "ref-763",
+        "org": "세이프틱스(Safetics)",
+        "title": "로봇 시스템 위험성평가 가이드",
+        "published": null,
+        "url": "https://doc.safetics.io/insight-risk-assessment/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇 시스템 위험성평가 가이드. 동일 모델 교체 시 펌웨어·안전 파라미터 변경에 따른 재평가 권고.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "제조사 펌웨어가 바뀔 때 어느 현장·기능을 다시 검증할지 영향 범위를 산정하는 공개 절차나 표준이 있는가?",
+        "areas": [
+          24,
+          23
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "VDA 5050 2.x 판과 3.0.0 판 로봇이 섞인 플릿에서 주 버전 차이를 어떻게 운영·이행하는가?",
+        "areas": [
+          24,
+          9,
+          28
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "국내 협동로봇 설치 작업장 안전인증에서 제어기 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정으로 확인할 수 있는가?",
+        "areas": [
+          24,
+          25
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "EU 기계 규정의 실질적 변경 판단이 로봇 동작을 바꾸는 오케스트레이션 정책·어댑터 업데이트에도 적용되는가?",
+        "areas": [
+          24,
+          25
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [
+      {
+        "step": "적치",
+        "item": "시작 조건",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "적치",
+        "item": "작업 대상",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "적치",
+        "item": "수행 자원",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "적치",
+        "item": "제약",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "적치",
+        "item": "완료·인계",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "적치",
+        "item": "예외·성과",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "출하",
+        "item": "시작 조건",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "출하",
+        "item": "작업 대상",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "출하",
+        "item": "수행 자원",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      },
+      {
+        "step": "출하",
+        "item": "제약",
+        "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "title": "24. 자산·소프트웨어 수명주기 관리"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "IDTA 02007 Nameplate for Software in Manufacturing (Software Nameplate 1.0)",
+        "kind": "표준",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "url": "https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md",
+        "related_areas": [
+          24,
+          28
+        ],
+        "summary": "자산관리셸 서브모델로 소프트웨어 제품과 설치 인스턴스의 버전·설치 정보를 업데이트·패치·라이선스·감사 목적으로 통일해 표현한다.",
+        "ref_id": "ref-753"
+      },
+      {
+        "name": "ISO 17359:2018 기계 상태 감시·진단 일반 지침",
+        "kind": "표준",
+        "org": "ISO",
+        "url": "https://www.iso.org/standard/71194.html",
+        "related_areas": [
+          24,
+          19
+        ],
+        "summary": "기계의 상태 감시 프로그램 수립 일반 절차 지침이며 상태 감시·진단 표준군의 상위 문서다(원문 미열람).",
+        "ref_id": "ref-754"
+      },
+      {
+        "name": "ISO 55000:2024 자산 관리 — 용어·개요·원칙",
+        "kind": "표준",
+        "org": "ISO (ISO/TC 251)",
+        "url": "https://www.iso.org/standard/83053.html",
+        "related_areas": [
+          24
+        ],
+        "summary": "자산 관리의 용어·개요·원칙을 정한 제2판(2024-07)으로 2014판을 대체하며 모든 유형의 자산에 적용된다(원문 미열람).",
+        "ref_id": "ref-755"
+      },
+      {
+        "name": "IEC TR 62443-2-3:2015 IACS 환경의 패치 관리",
+        "kind": "표준",
+        "org": "IEC",
+        "url": "https://webstore.iec.ch/en/publication/22811",
+        "related_areas": [
+          24,
+          26
+        ],
+        "summary": "산업 제어 시스템 패치 관리 프로그램의 자산 소유자·공급자 요구와 패치 정보 교환 형식을 정의한다(원문 미열람).",
+        "ref_id": "ref-758"
+      },
+      {
+        "name": "REP 2000 ROS 2 Releases and Target Platforms",
+        "kind": "프레임워크",
+        "org": "Open Robotics (ROS REP)",
+        "url": "https://www.ros.org/reps/rep-2000.html",
+        "related_areas": [
+          24
+        ],
+        "summary": "ROS 2 배포판별 출시·지원 종료 일정과 장기 지원판 5년·비장기 지원판 1.5년 지원 정책을 정한다.",
+        "ref_id": "ref-752"
+      },
+      {
+        "name": "rmf_simulation (Open-RMF 시뮬레이션 플러그인)",
+        "kind": "오픈소스",
+        "org": "Open Robotics (open-rmf)",
+        "url": "https://github.com/open-rmf/rmf_simulation",
+        "related_areas": [
+          22,
+          24
+        ],
+        "summary": "Open-RMF 시뮬레이션 플러그인 저장소로 Gazebo Classic 11과 Gazebo Fortress 를 지원 대상으로 적는다(원문 미열람).",
+        "ref_id": "ref-668"
+      },
+      {
+        "name": "협동로봇 설치 작업장 안전인증",
+        "kind": "평가 프로그램",
+        "org": "한국로봇사용자협회",
+        "url": "https://www.korua.or.kr/inspect/inspectInfo.do",
+        "related_areas": [
+          25,
+          24
+        ],
+        "summary": "협동운전 산업용 로봇 시스템의 ISO 10218-2 준수를 심사하고 발급일로부터 2년 주기로 정기 심사한다(원문 미열람).",
+        "ref_id": "ref-762"
+      }
+    ],
+    "additional_research_requests": [
+      "4절: 예지보전(Predictive Maintenance) 정의를 뒷받침할 출처가 브리프에 없어 본문·용어집에 넣지 못했다 — 표준·검토 논문 출처로 정의를 확인해 달라.",
+      "전 절: 모든 핵심 주장이 단일 출처이므로 교차 확인이 필요하다(특히 REP 2000 지원 기간, VDA 5050 버전·지도 규칙, IDTA 02007 속성). 페이지 신뢰도를 높이려면 독립 출처가 필요하다.",
+      "3절·11절: EU 기계 규정에서 제조사가 예견한 소프트웨어 업데이트의 취급(실질적 변경 제외 여부)을 조문 원문이나 EU 공식 지침으로 확인해 달라 — 브리프에는 정의 조건만 있다.",
+      "3절·11절: 국내 협동로봇 설치 작업장 안전인증에서 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정 원문 확인이 필요하다.",
+      "6절·7절: 신규 출처 예산 도달로 빠진 ISO 13374, ISO 10218-1:2025 사이버보안 요구, CISA SBOM, 카나리 배포 연구를 다음 실행에서 조사해 달라.",
+      "9절: '업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포'하는 방식의 근거(단계적 배포·카나리 배포의 로봇 플릿 적용 사례)가 없어 구축자 추론으로만 남겼다."
+    ],
+    "fixes_applied": [
+      "ref-031·ref-051 재사용 지시 — 본문 각주와 13절 정의, sources, reference_updates 에서 URL 이 같은 기존 ref-031(VDA5050_EN.md)과 ref-051(state.schema)을 그대로 쓰고 새 id 로 등록하지 않았다.",
+      "f13 축소 지시 — 4절 '자산 관리' 항목에 제2판·2024-07·ISO/TC 251·2014판 대체·용어·개요·원칙·모든 유형의 자산 적용만 [사실]로 쓰고 '하드웨어·소프트웨어·설비 포함'과 '수명주기 단계별 평가' 구절은 넣지 않았다.",
+      "f17 분리 지시 — 3절에 '제조사가 예견·계획하지 않은' 조건을 넣은 실질적 변경 정의를 [사실]로, 소프트웨어 업데이트가 판단 대상이 될 수 있다는 부분을 별도 문장 [추정]으로 썼다.",
+      "f18 문구 수정 지시 — 6절·8절에서 'aws-samples 저장소의 시연용 샘플'로 쓰고 자동 롤백은 README 가 이점으로 나열할 뿐 구현 절차는 보이지 않는다고 밝혔으며 [추정]과 '벤더 주장'을 유지했다.",
+      "f19 강등 지시 — 6절·8절에서 [추정]으로 쓰고 주관 조직명을 'KIST 휴머노이드연구단'으로 고쳤으며 원 매체 미확인을 병기했다.",
+      "f27 의견 주체 표시 지시 — 10절 첫 문장에 '구축자 의견'임을 밝히고 각 연결 항목을 [의견]으로 두었다.",
+      "f23 추론 표시 지시 — 9절 표 아래에 '운영 시간대·일부 로봇 단위 분할 배포'가 확인한 출처에 직접 근거가 없는 구축자 추론이라고 밝히고 [추정]을 유지했다.",
+      "f15 프리프린트 표시 지시 — 6절과 8절에 arXiv 프리프린트(동료 심사 전)이며 저자 미확인임을 적었다.",
+      "f9 기준일 지시 — 3절에 Kilted 지원 종료(2026-11)가 기준일 2026-09-25 에서 약 2개월 뒤라는 문장을 더했다.",
+      "원문 미열람 표시 지시 — ref-754·ref-755·ref-403·ref-757·ref-758·ref-759·ref-761·ref-762·ref-763·ref-668 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
+      "신뢰도·태그 지시 — 프런트매터 confidence 를 medium 으로 두고 각 finding 의 태그를 1차 판정 처분(f13·f17 부분 강등, f19 강등, 나머지 유지)대로 썼다.",
+      "분량 초과 자동 분리: 24. 자산·소프트웨어 수명주기 관리 본문 8,444자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,733자",
+      "형식 검증 수정: 주제 페이지 2026-09-25-area24-s10.md 3절의 세부영역 링크 11건이 원 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 원 세부영역 페이지 프런트매터 sources 를 13절 각주 정의 목록과 일치시켰다. 주장·태그·각주는 바꾸지 않았다."
+    ]
+  },
+  "ttft_ms": 15739,
+  "type": "result",
+  "duration_ms": 285147,
+  "uuid": "9bf0a9b6-210d-4ea6-9eec-36c4c7de32a2",
+  "ttft_stream_ms": 2115,
+  "time_to_request_ms": 72,
+  "first_content_frame_ms": 2115,
+  "time_to_request_from_spawn_ms": 5423778,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790318520071.6882,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 286.7
+}

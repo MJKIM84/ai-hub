@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-031, ref-051, ref-228, ref-230, ref-668, ref-364, ref-752, ref-753, ref-754, ref-755, ref-403, ref-757, ref-758, ref-759, ref-760, ref-761, ref-762, ref-763]
+sources: [ref-031, ref-051, ref-228, ref-230, ref-523, ref-364, ref-753, ref-403, ref-757, ref-758, ref-760, ref-761, ref-763]
 last_run: 2026-09-25
 version: 2
 ---
@@ -124,7 +124,7 @@ ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율�
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
-아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-668][^ref-758][^ref-403][^ref-763]
+아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-523][^ref-758][^ref-403][^ref-763]
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결](../../topics/2026/2026-09-25-area24-s10.md)에 있다.
 
@@ -149,7 +149,7 @@ ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율�
 [^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25
 [^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
 [^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25
-[^ref-668]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)
+[^ref-523]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)
 [^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25
 [^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25
 [^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)

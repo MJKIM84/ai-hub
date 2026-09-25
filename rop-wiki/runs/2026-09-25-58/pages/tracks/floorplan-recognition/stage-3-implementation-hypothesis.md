@@ -18,7 +18,7 @@ version: 3
 
 # 단계 3. 구현 가설 설계
 
-> 단계 상태: 진행 중 · 열린 질문: 7건 · 답한 질문: 1건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
+> 단계 상태: 진행 중 · 열린 질문: 7건 · 답한 질문: 2건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
 
 ## 1. 이 단계에서 밝힐 것
 
@@ -207,13 +207,13 @@ flowchart TB
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
 | 처리 흐름이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-54에서 5절에 '처리 흐름과 사람 검토 지점' 소절을 실었다(q3-01, 결론은 추정) | 충족 · 전환 미승인 |
-| 핵심 구성 요소 가운데 공간 그래프 단위가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-58에서 5절 '핵심 구성 요소'에 공간 그래프의 두 층위·자원 예약 단위·통과 조건 분리를 실었다(q3-02, 결론은 추정) | 충족 후보(1차 검증) · 미승인 |
+| 핵심 구성 요소 가운데 공간 그래프 단위가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-58에서 5절 '핵심 구성 요소'에 공간 그래프의 두 층위·자원 예약 단위·통과 조건 분리를 실었다(q3-02, 결론은 추정) | 충족 · 전환 미승인 |
 | 핵심 구성 요소 가운데 능력 대조·시뮬레이션 초기값이 같은 절에 실림 | 미충족 | 능력 대조(q3-03)·시뮬레이션 초기값(q3-04)이 미답 | 미충족 · 미승인 |
 | 다른 아이디어와의 연결이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 미충족 | 근거 finding 없음 | 미충족 · 미승인 |
-| [공간 그래프 스키마 초안](space-graph-schema-draft.md)이 근거 finding과 함께 v0.1 이상으로 갱신됨 | 충족 | 실행 2026-09-25-58에서 단계 3 근거로 v0.6 → v0.7 갱신(경유점·주행 차선 추가, 공용 자원 확정, 근거 f1·f2·f3·f4·f5·f6·f7·f9·f10) | 충족 후보(1차 검증) · 미승인 |
+| [공간 그래프 스키마 초안](space-graph-schema-draft.md)이 근거 finding과 함께 v0.1 이상으로 갱신됨 | 충족 | 실행 2026-09-25-58에서 단계 3 근거로 v0.6 → v0.7 갱신(경유점·주행 차선 추가, 공용 자원 확정, 근거 f1·f2·f3·f4·f5·f6·f7·f9·f10) | 충족 · 전환 미승인 |
 | 사용자에게 제안하는 실험 계획이 [실험](experiments.md)에 실림 | 미충족 | 제안된 실험 계획 없음 | 미충족 · 미승인 |
 
-다음 단계로 전환: 아니오(완료 조건 미충족: 아이디어 3 5절 핵심 구성 요소 중 능력 대조·시뮬레이션 초기값, 다른 아이디어와의 연결, 실험 계획; 막힌 질문 q3-03·q3-04·q3-05·q3-06·q3-07·q3-08)
+다음 단계로 전환: 아니오(완료 조건 미충족: 아이디어 3 5절 핵심 구성 요소 중 능력 대조·시뮬레이션 초기값, 다른 아이디어와의 연결, 실험 계획; 막힌 질문 q3-03·q3-04·q3-05·q3-06·q3-07·q3-08·q3-09)
 
 ## 7. 관련 세부영역
 
@@ -241,7 +241,7 @@ flowchart TB
 [^ref-463]: arXiv 2602.06507 저자(미확인), FloorplanVLM: A Vision-Language Model for Floorplan Vectorization, 2026-02, https://arxiv.org/abs/2602.06507, 접근일 2026-09-25 (원문 미열람)
 [^ref-460]: 대한건축학회논문집 40(1), 297-303(DOI 10.5659/JAIK.2024.40.1.297) 게재 논문 저자(미확인), 딥러닝과 경로계획 기반의 주택 평면도 3D 모델링 방법, 2024, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003047128, 접근일 2026-09-25 (원문 미열람)
 [^ref-441]: Open Robotics (open-rmf), rmf_traffic_editor — README, 미확인, https://github.com/open-rmf/rmf_traffic_editor, 접근일 2026-09-25
-[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25
 [^ref-225]: Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S., IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC, 2022, https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/, 접근일 2026-09-25 (원문 미열람)
 [^ref-456]: Oraskari, J. (jyrkioraskari GitHub), IFCtoLBD — README (IFCtoLBD converts IFC (Industry Foundation Classes STEP formatted files into the Linked Building Data ontologies), 미확인, https://github.com/jyrkioraskari/IFCtoLBD, 접근일 2026-09-25
 [^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25
