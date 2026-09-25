@@ -1,0 +1,573 @@
+{
+  "run_id": "2026-09-25-22",
+  "outline": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 1400,
+      "summary": "q1-04 를 답함(실행 2026-09-25-22)으로 바꾸고 후속 질문 q1-08 을 열림으로 더한다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 3800,
+      "summary": "현장 모델링 시간과 반복 작업은 정성 연구, 과제 측 보고값, 벤더 주장, 도구·형식 문서로만 확인되고, 단계별 소요 시간을 독립적으로 측정한 자료는 이번 검색 범위에서 찾지 못했다. [추정][^ref-217][^ref-318][^ref-324]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "q1-04 결론은 자료 유형 정리와 반복 작업 목록(추정)이고, 독립 시간 측정 자료가 없다는 점이 가장 큰 불확실성이다.",
+      "planned_findings": [
+        "f17",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 500,
+      "summary": "q1-08(국내 소요 시간 자료, 단계 1)과 q5-04(PAN-Robots 비교 조건, 단계 5)를 등록한다.",
+      "planned_findings": [
+        "f2",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 600,
+      "summary": "두 완료 조건은 충족, 검증 판정은 충족·전환 미승인이다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "section": "3. 선행 연구·제품 사례",
+      "budget_chars": 900,
+      "summary": "현장 모델링 부담의 근거 소절을 덧붙인다(설치 병목 연구, 과제 측 보고값, 벤더 주장).",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f11",
+        "f15",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "section": "6. 검증 방법",
+      "budget_chars": 900,
+      "summary": "단계 5 조사 전 선행 근거로 가설 3 판정의 비교 기준 후보와 측정 대상 반복 작업 목록을 적는다.",
+      "planned_findings": [
+        "f2",
+        "f17",
+        "f18"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-04 답함(3절 소제목 신설), 후속 질문 q1-08·q5-04 등록, 4·6·7·8·9절 갱신. 초안 변경 없음. H1 아래 단계 상태 줄(답한 질문 3건 → 4건)은 H2 밖이라 패치로 고칠 수 없어 트랙 개요 5절 자동 표를 따른다",
+      "patches": [
+        {
+          "section": "2. 질문 목록",
+          "action": "replace",
+          "frontmatter": {
+            "related_areas": [
+              6,
+              27,
+              21,
+              22,
+              28,
+              16,
+              3,
+              15
+            ],
+            "sources": [
+              "ref-031",
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-080",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-109",
+              "ref-120",
+              "ref-220",
+              "ref-221",
+              "ref-222",
+              "ref-223",
+              "ref-224",
+              "ref-225",
+              "ref-226",
+              "ref-227",
+              "ref-046",
+              "ref-212",
+              "ref-213",
+              "ref-214",
+              "ref-215",
+              "ref-216",
+              "ref-217",
+              "ref-218",
+              "ref-219",
+              "ref-241",
+              "ref-105",
+              "ref-163",
+              "ref-318",
+              "ref-319",
+              "ref-320",
+              "ref-321",
+              "ref-322",
+              "ref-323",
+              "ref-324",
+              "ref-326",
+              "ref-327"
+            ]
+          },
+          "content": "이 단계의 시작 질문 4개와 후속 질문이다. q1-01은 사용자 요청의 시작 질문 문구 그대로이고, q1-02~q1-04는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \"조사 중\"은 이 표에서 \"열림\"으로 표시하고 \"폐기\"는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커 또는 주제 페이지 링크를 적는다. 제기 근거 칸에는 finding id 또는 \"사용자\"만 쓴다.\n\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\n|---|---|---|---|---|---|\n| q1-01 | 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-05 | [3절 q1-01](#q1-01) |\n| q1-02 | 건축 도면(CAD·BIM·스캔 이미지)에서 로봇용 지도나 공간 모델을 자동으로 만드는 연구·제품 사례는 무엇이 있고, 입력 형식마다 무엇을 자동화하는가? | 답함 | 사용자 | 2026-09-25-11 | [3절 q1-02](#q1-02) |\n| q1-03 | 충전 위치·작업대처럼 로봇 운영에 쓰는 시설을 도면에서 인식하거나 도면 밖 정보로 보완한 사례가 있는가? | 답함 | 사용자 | 2026-09-25-19 | [3절 q1-03](#q1-03) |\n| q1-04 | 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? | 답함 | 사용자 | 2026-09-25-22 | [3절 q1-04](#q1-04) |\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 열림 | f18, 실행 2026-09-25-05 | | |\n| q1-06 | 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? | 열림 | f21, 실행 2026-09-25-11 | | |\n| q1-08 | 국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가? | 열림 | f17, 실행 2026-09-25-22 | | |"
+        },
+        {
+          "section": "3. 조사 결과",
+          "action": "append",
+          "content": "\n### q1-04 새 현장 도입의 지도 작성·공용 자원 등록 시간과 반복 작업을 확인할 수 있는 자료 {#q1-04}\n\n이번 검색 범위(리서치 한·영 검색 25회, 검증 검색 11회)에서 현장 모델링 시간과 반복 작업은 (1) 설치 병목을 정성적으로 기술한 연구, (2) 과제 측 설치 기간 비교, (3) 벤더의 내부 시험·주장, (4) 반복 작업 항목을 드러내는 도구·형식 문서로만 확인되고, 단계별 소요 시간을 독립적으로 측정한 시간 연구는 찾지 못한 것으로 보인다. 이 분류는 이 위키가 만든 것이며, 찾지 못했다는 뜻이고 부재가 확인된 것은 아니다. [추정][^ref-217][^ref-320][^ref-322][^ref-318][^ref-324][^ref-327][^ref-079][^ref-105][^ref-046][^ref-326] 이번 실행(2026-09-25-22)에서 원문을 연 출처는 GitHub 원본 README 두 건(LIF, SLAM Toolbox)이고, 검증 에이전트가 traffic-editor 문서와 플릿 어댑터 설정 파일의 GitHub 원본을 열었다. 나머지는 검색 요약 범위이며 교차 확인된 항목은 없다.\n\n#### 설치 병목을 정성적으로 기술한 연구\n\nq1-03에서 본 Beinschob 외(Robotics and Autonomous Systems 87, 2017)는 다중 AGV 도입의 긴 설치 시간 원인으로 정밀 2D 지도 작성, 픽업·하역 위치의 3D 좌표 지정, 전문 기술자의 수작업 경로망 설계를 들고, 지도 작성에 숙련 인력이 필요하며 하역 지점 위치 정보가 없거나 부정확해 현장에서 고쳐야 하는 경우가 많다고 지적했다. 소요 시간 수치는 제시하지 않았다. [사실][^ref-217]\n\nBeinschob·Reinke(2015)는 반사판 기반 AGV가 위치추정을 위해 수백에서 수천 개의 반사판 설치를 요구하는 등 도입에 큰 노력과 투자가 들며, PAN-Robots 과제가 자연 지형지물 기반의 반자동 공장 탐사로 설치 시간과 비용을 줄이려 한다고 밝혔다. [사실][^ref-319]\n\n다중 AGV 경로망(roadmap) 자동 설계 연구(IEEE Transactions on Automation Science and Engineering 21(4), 2024, 2023 온라인 공개, 저자 미확인)는 경로망이 보통 전문가가 설계해 시간이 많이 들고 최적이 아닐 수 있다고 보고, 개미 군집 최적화로 경로망을 생성해 SIPP 기반 다중 에이전트 경로 찾기(MAPF) 시뮬레이터로 평가하고 처리량 기반 플릿 규모를 제안했다. [추정][^ref-320]\n\nRüdt·Enke·Furmans(KIT, arXiv 2511.07175, 2025-11)는 산업 현장의 수작업 경로망 생성이 시간·비용이 많이 들고 최적이 아니라고 지적하며, 스테이션 상호작용 지점 등에 노드를 두고 스테이션 간 운송 수요를 반영해 경로망을 자동 생성하는 방법을 제안했다. 노드 배치 세부(자유 공간의 볼록 모서리)는 v1 요약 기준이다. [사실][^ref-321]\n\nHeselden·Das(ICRA 2024 Field Robotics 워크숍, 2024-04)는 새 환경에 로봇을 배치할 때 지도 작성이 시간이 많이 드는 과정이고 지도 관리가 체계적이지 않으면 위험하다고 보고, 위치·객체·위상·점유 정보를 표준화한 지도 처리 방식과 템플릿·절차적 생성으로 빠진 데이터를 채우는 관리 스크립트를 제안했다. [사실][^ref-322]\n\n#### 과제 측 설치 기간 비교\n\n유럽연합 CORDIS 기사는 FP7 과제 PAN-Robots의 반자동 3D 지도 작성·경로망 자동 설계 시스템이 AGV 시스템 설치 기간을 6개월에서 2개월로 줄여 공장 가동 중단 시간을 아낄 수 있다고 전한다. 과제 측 보고값이며 비교 조건·측정 방법은 미확인이다(기준일 2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인). 재게재본은 같은 원문이라 독립 출처가 아니다. [추정][^ref-318]\n\n#### 지도 계산 속도와 병목의 위치\n\n오픈소스 SLAM Toolbox의 README는 약 30,000 제곱피트까지 실시간의 5배 이상, 약 60,000 제곱피트까지 3배 속도로 지도를 처리하고 200,000 제곱피트 시설에서 쓰였다고 적으며, 저장한 포즈 그래프에서 이어서 지도를 작성하는 기능·지도 병합·수동 그래프 편집을 제공한다. 이 수치는 프로젝트 문서의 자체 벤치마크 보고값(독립 측정 아님)이고, 데이터 수집 주행 시간은 포함하지 않는다(발행일 미확인, 2026-09-25 확인). [사실][^ref-323] 연계 대상: SLAM 지도 작성은 분류 원문 9장의 로봇 자체 지능·제어 쪽이며, 이 위키는 이를 설치 부담의 근거로만 다룬다.\n\nSLAM 계산 자체가 실시간보다 빠르다는 보고와 설치 병목으로 지도 작성·위치 지정·경로망 설계를 든 연구를 함께 보면, 현장 모델링 시간의 큰 부분은 계산보다 데이터 수집 주행과 사람의 후처리·주석·설계에서 나오는 것으로 보인다. 단계별 소요 시간을 나눠 측정한 자료는 찾지 못했다. [추정][^ref-323][^ref-217][^ref-320][^ref-321]\n\n#### 제조사·도구 문서에 드러난 반복 작업\n\nMiR250 사용자 매뉴얼(제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본)은 지도를 만들 때 로봇을 수동 모드로 두고 사람이 현장 전체를 몰고 다니며 레이저 스캔으로 지도를 기록한 뒤 지도를 설정하도록 안내한다. 소요 시간 수치는 없다. [추정] 벤더 주장[^ref-326]\n\nOTTO Motors는 소프트웨어 2.28 판(2023) 발표에서 자사 내부 시험으로 시설 지도와 새 작업 흐름을 설정하는 시간이 이전 판보다 50% 줄었고, 충전기·팔레트 같은 여러 끝점의 설정을 한 번에 복제·변경하며 시설 일부만 다시 지도화할 수 있다고 밝힌다(내부 시험, 측정 조건 미공개). [추정] 벤더 주장[^ref-324]\n\nq1-03에서 본 것처럼 Open-RMF traffic-editor는 충전소·주차 위치·대기 지점·도킹 이름·픽업 디스펜서·하역 인제스터를 경유점 속성으로 사람이 편집기에서 입력하게 한다. [사실][^ref-079] 이 구조에서는 현장마다 공용 자원 등록이 수작업 주석으로 반복될 것으로 보인다. [추정][^ref-079]\n\nOpen-RMF 플릿 어댑터 템플릿 설정 파일은 플릿마다 층별 RMF 지도 좌표와 로봇 지도 좌표의 대응점(reference_coordinates), 속도·차체·배터리 사양, 수행 가능 작업 유형을 적게 한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-105] 설정 파일 구조로 보면 제조사 플릿을 하나 더할 때마다 좌표 정렬과 설정이 반복될 것으로 보인다. [추정][^ref-105]\n\n#### 다중 제조사 레이아웃 전달\n\nVDMA LIF 공식 저장소 README는 통합사업자가 엣지·노드·스테이션으로 된 주행 레이아웃을 제3자 중앙 관제에 처음 넘겨 쓰게 하는 것을 목적으로 적는다(1.0.0 판, 2023-09. 판·발행일 충돌은 [열린 질문](../../open-questions.md) oq-025). 작업량·시간 절감 수치는 README에 없다. [사실][^ref-046]\n\nLIF 해설을 낸 관제 소프트웨어 업체 ScaliRo는 다중 제조사 프로젝트에서 레이아웃을 중복 작성하는 비용이 프로젝트당 수 인일(person-day)에 이른다고 주장한다(근거 자료·측정 방법 미공개). [추정] 벤더 주장[^ref-327]\n\n#### 국내 연구\n\n노주형 외(로봇학회 논문지 21(1), 2026)는 3D 라이다–IMU SLAM 기반 탐사와 RGB-D 카메라·4자유도 매니퓰레이터로 엘리베이터 버튼을 누르는 층간 이동을 결합해 다층 실내 지도를 사람 개입 없이 자율로 구축하는 시스템을 제안했다. 소요 시간 수치는 확인하지 못했다. [사실][^ref-163] 연계 대상: 자율 탐사 SLAM과 엘리베이터 버튼 조작은 로봇 자체 지능·제어 쪽 기술이다.\n\n#### 종합: 새 현장·새 제조사마다 반복되는 작업\n\n확인한 자료에서 반복되는 작업은 층마다의 지도 작성 주행, 픽업·하역·충전 위치 지정, 경로망 설계, 제조사 지도와 공통 지도의 좌표 대응, 제조사·관제 형식별 레이아웃 재입력으로 정리되며, 이 가운데 위치 지정·경로망 초안·좌표 대응이 도면 기반 자동 생성이 줄일 후보로 보인다. 실제로 줄어드는 시간은 측정 자료가 없어 가설 3 판정([단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md)의 q5-02)으로 넘긴다. [추정][^ref-217][^ref-079][^ref-105][^ref-046][^ref-327][^ref-321][^ref-163]\n\n#### ROP 범위 경계\n\n연계 대상: SLAM 지도 작성 주행과 로봇 쪽 위치추정 지도의 생성은 분류 원문 9장의 로봇 자체 지능·제어 쪽이므로, 이종 제조사를 연결하는 ROP가 시간 단축을 측정·책임질 대상은 공용 자원 등록, 좌표·층 이름 정렬, 레이아웃 전달·버전 관리 같은 ROP 쪽 설정 작업이 될 것으로 보인다. [추정][^ref-323][^ref-326][^ref-105][^ref-046]"
+        },
+        {
+          "section": "4. 결론과 남은 불확실성",
+          "action": "append",
+          "content": "\n**결론(실행 2026-09-25-22, q1-04)**\n- 현장 모델링 시간과 반복 작업은 정성 연구, 과제 측 보고값(PAN-Robots 6개월→2개월), 벤더 주장(OTTO 50%, ScaliRo 수 인일), 도구·형식 문서로만 확인되는 것으로 보인다. [추정][^ref-217][^ref-318][^ref-324][^ref-327][^ref-079][^ref-105]\n- 반복 작업은 지도 작성 주행, 픽업·하역·충전 위치 지정, 경로망 설계, 좌표 대응, 형식별 레이아웃 재입력으로 정리되며, 위치 지정·경로망 초안·좌표 대응이 도면 기반 자동 생성의 단축 후보로 보인다. [추정][^ref-217][^ref-105][^ref-046][^ref-321]\n\n**남은 불확실성(실행 2026-09-25-22)**\n- 단계별 소요 시간을 독립적으로 측정한 시간 연구는 검색 범위(리서치 25회, 검증 11회)에서 찾지 못했다. 부재가 확인된 것은 아니다.\n- PAN-Robots 설치 기간 비교는 과제 측 단일 출처이고 비교 조건이 미확인이다(후속 질문 q5-04). OTTO 50%·ScaliRo 수 인일은 벤더 주장이며 가설 3 판정 근거로 쓰지 않는다.\n- SLAM Toolbox 처리 속도는 프로젝트 자체 보고값이다. ref-320 저자는 미확인이고, ref-318~ref-322·ref-324·ref-326·ref-327·ref-163은 원문 미열람이다.\n- 국내 물류센터의 지도 작성·시운전 소요 시간 공개 자료는 찾지 못했다(후속 질문 q1-08, oq-022 미해결).\n- 온톨로지 변경(실행 2026-09-25-22): 없음. q1-04는 시간·작업 부담 자료에 관한 질문이어서 공간 그래프의 개념·관계에 새 근거를 주지 않았다(초안 v0.3 유지)."
+        },
+        {
+          "section": "5. 이 단계가 낳은 후속 질문",
+          "action": "append",
+          "content": "\n실행 2026-09-25-22(q1-04)에서 등록한 후속 질문:\n\n| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q1-08 | 국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가? | 단계 1. 선행 연구·제품 사례 조사 | f17 (실행 2026-09-25-22) | 열림 |\n| q5-04 | PAN-Robots 과제가 보고한 설치 기간 6개월→2개월의 비교 조건(대상 공장 규모, 기준 시스템, 단계별 소요 시간)을 과제 결과 보고서·산출물로 확인해, 도면 기반 자동 생성의 시간 단축 효과를 판정할 기준 자료로 쓸 수 있는가? | [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md) | f2 (실행 2026-09-25-22) | 열림 |"
+        },
+        {
+          "section": "6. 완료 조건 충족 현황",
+          "action": "replace",
+          "content": "충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 선행 연구·데이터셋·제품 사례 비교가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \"3. 선행 연구·제품 사례\" 절에 실림 | 충족 | 데이터셋 비교(실행 2026-09-25-05), 도면→로봇 지도 연구·오픈소스 도구 비교와 제품 사례(실행 2026-09-25-11), 운영 시설 보완 사례(실행 2026-09-25-19), 현장 모델링 부담의 근거(실행 2026-09-25-22)가 실렸다. 제품 쪽 근거는 벤더 주장뿐이다 | 충족 · 미승인 |\n| 인식 대상 요소 목록이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에 반영됨 | 충족 | 초안 v0.1에 창문·난간 추가, 벽·문·계단 확정(실행 2026-09-25-05). v0.2에서 층간 정렬 기준점 추가(실행 2026-09-25-11). v0.3에서 작업 스테이션 추가, 충전 위치·엘리베이터 확정(실행 2026-09-25-19) | 충족 · 미승인 |\n\n다음 단계로 전환: 아니오(막힌 질문 q1-05·q1-06 과 이번에 등록할 국내 소요 시간 질문 q1-08)"
+        },
+        {
+          "section": "7. 관련 세부영역",
+          "action": "append",
+          "content": "\n실행 2026-09-25-22(q1-04)의 반영 제안:\n\n- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 3. 왜 중요한가(지도 작성이 새 환경 배치의 시간 병목), 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)(SLAM 지도 작성은 연계 대상, 좌표 정렬·레이아웃 전달은 ROP 쪽)\n- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 3. 왜 중요한가, 6. 대표 접근법과 기술, 8. 대표 연구와 자료(설치 병목 연구, 반복 작업 항목, 과제 측 설치 기간 비교)\n- [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) — 6. 대표 접근법과 기술, 8. 대표 연구와 자료(경로망 수작업 설계의 한계와 자동 경로망 생성)"
+        },
+        {
+          "section": "8. 출처",
+          "action": "append",
+          "content": "[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-163]: 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템, 2026, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667, 접근일 2026-09-25 (원문 미열람)\n[^ref-318]: European Commission (CORDIS), PAN-ROBOTS: Automating logistics for the factory of the future, 미확인, https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future, 접근일 2026-09-25 (원문 미열람)\n[^ref-319]: Beinschob, P., & Reinke, C., Graph SLAM based mapping for AGV localization in large-scale warehouses, 2015, https://ieeexplore.ieee.org/document/7312637/, 접근일 2026-09-25 (원문 미열람)\n[^ref-320]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\n[^ref-321]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\n[^ref-322]: Heselden, J. R., & Das, G. P., Unified Map Handling for Robotic Systems: Enhancing Interoperability and Efficiency Across Diverse Environments, 2024-04, https://arxiv.org/abs/2404.13499, 접근일 2026-09-25 (원문 미열람)\n[^ref-323]: Macenski, S. (SteveMacenski GitHub), slam_toolbox — README (Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS), 미확인, https://github.com/SteveMacenski/slam_toolbox, 접근일 2026-09-25\n[^ref-324]: OTTO Motors (Rockwell Automation), Maximize AMR productivity and simplify commissioning with our latest software release, 2023, https://ottomotors.com/blog/amr-productivity-software-release/, 접근일 2026-09-25 (원문 미열람)\n[^ref-326]: Mobile Industrial Robots(MiR) (ManualsLib 게재본), MiR250 User Manual — Creating and configuring a map (page 104, 제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본), 미확인, https://www.manualslib.com/manual/1941073/Mir-Mir250.html?page=104, 접근일 2026-09-25 (원문 미열람)\n[^ref-327]: ScaliRo, LIF – Layout Interchange Format Explained, 미확인, https://scaliro.de/en/lif/, 접근일 2026-09-25 (원문 미열람)"
+        },
+        {
+          "section": "9. 이력",
+          "action": "replace",
+          "content": "실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-22 | q1-04 | q1-08, q5-04 | 없음(v0.3 유지) | 5 |\n| 2026-09-25 | 2026-09-25-19 | q1-03 | q2-06(q1-07·q2-05·q4-06 폐기) | v0.2 → v0.3 | 4 |\n| 2026-09-25 | 2026-09-25-11 | q1-02 | q1-06 | v0.1 → v0.2 | 3 |\n| 2026-09-25 | 2026-09-25-05 | q1-01 | q1-05, q2-04, q4-05 | v0 → v0.1 | 2 |\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q1-01~q1-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에서 생성) | 1 |"
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절에 현장 모델링 부담의 근거 소절 추가, 6절에 단계 5 조사 전 선행 근거(가설 3 비교 기준 후보·측정 대상 반복 작업) 작성",
+      "patches": [
+        {
+          "section": "3. 선행 연구·제품 사례",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-031",
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-109",
+              "ref-120",
+              "ref-220",
+              "ref-221",
+              "ref-222",
+              "ref-223",
+              "ref-224",
+              "ref-225",
+              "ref-226",
+              "ref-227",
+              "ref-046",
+              "ref-212",
+              "ref-213",
+              "ref-214",
+              "ref-215",
+              "ref-216",
+              "ref-217",
+              "ref-218",
+              "ref-219",
+              "ref-241",
+              "ref-105",
+              "ref-163",
+              "ref-318",
+              "ref-320",
+              "ref-321",
+              "ref-324",
+              "ref-327"
+            ]
+          },
+          "content": "\n### 현장 모델링 부담의 근거 (2026-09-25 기준)\n\n이 소절은 [q1-04 답](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04)(실행 2026-09-25-22)의 요약이며, 문장별 상세는 단계 페이지에 있다. 현장 모델링 시간과 반복 작업은 정성 연구, 과제 측 보고값, 벤더 주장, 도구·형식 문서로만 확인되고, 단계별 소요 시간을 독립 측정한 자료는 이번 검색 범위에서 찾지 못한 것으로 보인다(부재 확인 아님). [추정][^ref-217][^ref-318][^ref-324][^ref-327]\n\n- Beinschob 외(2017)는 다중 AGV 설치 병목으로 정밀 2D 지도 작성, 픽업·하역 위치 지정, 수작업 경로망 설계를 들고 하역 지점 위치를 현장에서 고치는 경우가 많다고 지적했다. [사실][^ref-217]\n- 다중 AGV 경로망 자동 설계 연구(IEEE T-ASE 21(4), 2024)는 전문가 경로망 설계가 시간이 많이 들고 최적이 아닐 수 있다고 보고 개미 군집 최적화 기반 경로망 생성과 MAPF 시뮬레이터 평가를 다뤘다. [추정][^ref-320]\n- Rüdt 외(KIT, 2025-11)는 수작업 경로망 생성의 시간·비용 문제를 지적하고 스테이션 상호작용 지점과 운송 수요를 반영한 자동 생성 방법을 제안했다. [사실][^ref-321]\n- EU CORDIS 기사는 PAN-Robots 시스템이 AGV 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전한다(과제 측 보고값, 비교 조건·측정 방법 미확인, 기준일 2015-04 재게재 기사 기준). [추정][^ref-318]\n- OTTO Motors는 소프트웨어 2.28 판(2023)에서 시설 지도·작업 흐름 설정 시간이 내부 시험으로 50% 줄었다고 밝힌다(내부 시험, 측정 조건 미공개). [추정] 벤더 주장[^ref-324]\n- ScaliRo는 다중 제조사 프로젝트에서 레이아웃 중복 작성 비용이 프로젝트당 수 인일에 이른다고 주장한다. [추정] 벤더 주장[^ref-327]\n\n[^ref-318]: European Commission (CORDIS), PAN-ROBOTS: Automating logistics for the factory of the future, 미확인, https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future, 접근일 2026-09-25 (원문 미열람)\n[^ref-320]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\n[^ref-321]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\n[^ref-324]: OTTO Motors (Rockwell Automation), Maximize AMR productivity and simplify commissioning with our latest software release, 2023, https://ottomotors.com/blog/amr-productivity-software-release/, 접근일 2026-09-25 (원문 미열람)\n[^ref-327]: ScaliRo, LIF – Layout Interchange Format Explained, 미확인, https://scaliro.de/en/lif/, 접근일 2026-09-25 (원문 미열람)"
+        },
+        {
+          "section": "6. 검증 방법",
+          "action": "replace",
+          "content": "이 절의 내용은 [단계 5. 검증 방법과 가설 판정](../tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) 조사 전의 선행 근거이며, [q1-04 답](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04)(실행 2026-09-25-22)에서 확인한 것이다. 평가 지표와 검증 절차는 단계 5(q5-02 등) 실행이 채운다.\n\n### 가설 3 판정의 비교 기준 후보\n\n- EU CORDIS 기사는 FP7 과제 PAN-Robots의 반자동 3D 지도 작성·경로망 자동 설계 시스템이 AGV 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전한다. 과제 측 보고값이며 비교 조건·측정 방법은 미확인이다(기준일 2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인). [추정][^ref-318] 비교 조건 확인은 후속 질문 q5-04로 넘겼다.\n- 기준 시간 자료를 독립적으로 측정한 연구는 이번 검색 범위(리서치 25회, 검증 11회)에서 찾지 못했다. 부재가 확인된 것은 아니다. [추정][^ref-217][^ref-318][^ref-324]\n- 벤더 수치(OTTO Motors 내부 시험 50%, ScaliRo 프로젝트당 수 인일)는 측정 조건이 공개되지 않아 가설 3 판정 근거로 쓰지 않는다.\n\n### 측정 대상 후보: 반복 작업 목록\n\n확인한 자료에서 새 현장·새 제조사마다 반복되는 작업은 층마다의 지도 작성 주행, 픽업·하역·충전 위치 지정, 경로망 설계, 제조사 지도와 공통 지도의 좌표 대응, 제조사·관제 형식별 레이아웃 재입력으로 정리되며, 이 가운데 위치 지정·경로망 초안·좌표 대응이 도면 기반 자동 생성이 줄일 후보로 보인다. [추정][^ref-217][^ref-079][^ref-105][^ref-046][^ref-327][^ref-321][^ref-163] 로봇 쪽 SLAM 지도 작성 주행은 분류 원문 9장의 연계 대상이므로, ROP 쪽 측정 대상은 공용 자원 등록, 좌표·층 이름 정렬, 레이아웃 전달·버전 관리 같은 설정 작업이 될 것으로 보인다.\n\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-163]: 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템, 2026, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6. 살아있는 산출물 링크의 백로그·아이디어 페이지 현황을 실행 2026-09-25-22 기준으로 갱신(상태 줄은 변경 없음)",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [공간 그래프 스키마 초안](space-graph-schema-draft.md) — 현재 버전 v0.3. 실행 2026-09-25-05에서 창문·난간 개념과 문 없는 인접 관계를 더하고 공간 노드에 방 유형 속성을 넣었으며 벽·문·계단·공간 노드를 확정했다. 실행 2026-09-25-11에서 층간 정렬 기준점을 더하고 층별 지도(축척·도면 대비 변환)와 평면도(형식 값 후보)를 확정했으며, 문 속성 추가 제안은 미해결 질문으로 두었다. 실행 2026-09-25-19에서 작업 스테이션 개념을 더하고 충전 위치(접근 지점 속성)·엘리베이터(BIM 대응 클래스 속성)를 확정했으며, 정보 출처 속성과 작업 스테이션의 공용 자원 포함 여부는 미해결 질문으로 두었다. 실행 2026-09-25-22에서는 변경이 없었다.\n- [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md) — 확장 아이디어 페이지. 3절(선행 연구·제품 사례)에 공개 데이터셋 비교(실행 2026-09-25-05), 도면→로봇 지도 연구·오픈소스 도구 비교와 제품 사례(벤더 주장 병기, 실행 2026-09-25-11), 운영 시설(충전소·작업 스테이션) 보완 사례(실행 2026-09-25-19), 현장 모델링 부담의 근거(실행 2026-09-25-22)가 실렸다. 4절에는 단계 2 조사 전 선행 근거로 IFC 4.3·VDMA LIF·VDA 5050의 시설 표현이 실렸다(실행 2026-09-25-19). 6절에는 단계 5 조사 전 선행 근거로 가설 3 판정의 비교 기준 후보와 측정 대상 반복 작업이 실렸다(실행 2026-09-25-22). 5절은 단계 3·4 실행이 채운다.\n- [질문 백로그](question-backlog.md) — 시작 질문 18건과 후속 질문 7건(실행 2026-09-25-05의 3건, 실행 2026-09-25-11의 1건, 실행 2026-09-25-19의 1건, 실행 2026-09-25-22의 2건). 실행 2026-09-25-11에서 중복 등록된 q1-07·q2-05·q4-06은 실행 2026-09-25-19에서 폐기했다. q1-01·q1-02·q1-03·q1-04 답함. 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 1 | q1-04 답함(현장 모델링 시간·반복 작업 자료 유형과 반복 작업 목록 정리), 후속 질문 q1-08·q5-04 등록, 아이디어 3 6절 선행 근거 작성, 초안 변경 없음 | run 2026-09-25-22",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: q1-04 답함 — 새 현장 지도 작성·공용 자원 등록 시간은 정성 연구·과제 보고값·벤더 주장·도구 문서로만 확인되고 독립 시간 측정 자료는 찾지 못함",
+    "category_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1(중심 6. 지도·공간·위치 모델): q1-04 답함, 반복 작업 목록(지도 작성 주행·위치 지정·경로망 설계·좌표 대응·레이아웃 재입력) 정리, 세부영역 반영 제안 3건",
+    "area_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: 3. 왜 중요한가(지도 작성의 시간 병목)와 9절(SLAM 지도 작성은 연계 대상, 좌표 정렬·레이아웃 전달은 ROP 쪽) 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "roadmap",
+      "term_ko": "경로망",
+      "term_en": "Roadmap",
+      "definition": "다중 AGV·이동로봇이 따라 달릴 수 있는 노드와 엣지의 주행 경로 그래프로, 현장 도입 때 전문가가 설계하거나 자동 생성한다.",
+      "description": "경로망의 수작업 설계는 다중 AGV 설치의 병목으로 꼽히며, 시뮬레이션 기반 설계나 스테이션 상호작용 지점·운송 수요를 반영한 자동 생성 연구가 있다. 지도 정합은 기존 용어 map-alignment 를 따른다.",
+      "related_areas": [
+        15,
+        21,
+        6
+      ],
+      "sources": [
+        "ref-217",
+        "ref-320",
+        "ref-321"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-318",
+      "org": "European Commission (CORDIS)",
+      "title": "PAN-ROBOTS: Automating logistics for the factory of the future",
+      "published": null,
+      "url": "https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. FP7 과제 PAN-Robots의 반자동 3D 지도 작성·AGV 시스템 성과를 소개하며 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전하는 EU 연구 성과 기사(재게재 기사 기준 2015-04, CORDIS 원 게재일 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-319",
+      "org": "Beinschob, P., & Reinke, C.",
+      "title": "Graph SLAM based mapping for AGV localization in large-scale warehouses",
+      "published": "2015",
+      "url": "https://ieeexplore.ieee.org/document/7312637/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 반사판 기반 AGV의 설치 부담을 지적하고 그래프 SLAM으로 대형 창고 지도를 만들어 AGV 위치추정에 쓰는 방법을 다룬 PAN-Robots 계열 학회 논문(IEEE ICCP 2015).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-320",
+      "org": "IEEE 게재 논문 저자(미확인)",
+      "title": "Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))",
+      "published": "2024",
+      "url": "https://ieeexplore.ieee.org/document/10287275/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 개미 군집 최적화로 다중 AGV 경로망을 생성하고 SIPP 기반 MAPF 시뮬레이터로 평가하며 처리량 기반 플릿 규모를 제안한 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-321",
+      "org": "Rüdt, M., Enke, C., & Furmans, K. (KIT)",
+      "title": "Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization)",
+      "published": "2025-11",
+      "url": "https://arxiv.org/abs/2511.07175",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 수작업 경로망 생성의 시간·비용 문제를 지적하고 스테이션 상호작용 지점과 운송 수요를 반영한 연속 공간 경로망 자동 생성 방법을 제안한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-322",
+      "org": "Heselden, J. R., & Das, G. P.",
+      "title": "Unified Map Handling for Robotic Systems: Enhancing Interoperability and Efficiency Across Diverse Environments",
+      "published": "2024-04",
+      "url": "https://arxiv.org/abs/2404.13499",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 새 환경 배치에서 지도 작성이 시간이 많이 든다는 문제를 들고 표준화한 지도 처리 방식과 생성 보조 스크립트를 제안한 ICRA 2024 워크숍 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-323",
+      "org": "Macenski, S. (SteveMacenski GitHub)",
+      "title": "slam_toolbox — README (Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS)",
+      "published": null,
+      "url": "https://github.com/SteveMacenski/slam_toolbox",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 SLAM Toolbox 공식 README. 처리 속도(프로젝트 자체 보고값)·적용 시설 규모, 저장한 포즈 그래프에서 이어 작성·병합·수동 편집 기능을 설명한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-324",
+      "org": "OTTO Motors (Rockwell Automation)",
+      "title": "Maximize AMR productivity and simplify commissioning with our latest software release",
+      "published": "2023",
+      "url": "https://ottomotors.com/blog/amr-productivity-software-release/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 소프트웨어 2.28 판의 시설 지도·작업 흐름 설정 시간 단축(내부 시험 50%, 측정 조건 미공개), 충전기 등 끝점 설정 일괄 복제, 부분 재지도화 기능을 소개한 제조사 블로그.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-326",
+      "org": "Mobile Industrial Robots(MiR) (ManualsLib 게재본)",
+      "title": "MiR250 User Manual — Creating and configuring a map (page 104, 제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본)",
+      "published": null,
+      "url": "https://www.manualslib.com/manual/1941073/Mir-Mir250.html?page=104",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 로봇을 수동 모드로 몰아 지도를 기록하고 설정하는 MiR250 지도 작성 절차를 설명한 사용자 매뉴얼 사본.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-327",
+      "org": "ScaliRo",
+      "title": "LIF – Layout Interchange Format Explained",
+      "published": null,
+      "url": "https://scaliro.de/en/lif/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. VDMA LIF의 구조와 도입 동기(다중 제조사 레이아웃 중복 작성 비용이 프로젝트당 수 인일이라는 주장)를 설명한 관제 소프트웨어 업체 해설.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "standards_updates": [
+    {
+      "name": "SLAM Toolbox",
+      "kind": "오픈소스",
+      "org": "Macenski, S. (SteveMacenski GitHub)",
+      "url": "https://github.com/SteveMacenski/slam_toolbox",
+      "related_areas": [
+        6,
+        21
+      ],
+      "summary": "ROS 2용 평생 지도 작성·위치추정 오픈소스. 저장한 포즈 그래프에서 이어 작성·지도 병합·수동 그래프 편집을 제공한다. SLAM 은 로봇 자체 지능·제어 쪽 연계 대상이다.",
+      "ref_id": "ref-323"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 1 페이지 H1 아래 단계 상태 줄(답한 질문 3건 → 4건, 열린 질문 3건 유지)은 H2 밖이라 patches 로 고칠 수 없다. 퍼블리셔가 백로그 수치로 갱신하거나 다음 전체 재작성 실행에서 고치도록 pipeline 담당에게 요청한다.",
+    "q5-04: PAN-Robots 설치 기간 6개월→2개월의 비교 조건(대상 공장 규모·기준 시스템·단계별 소요 시간)을 과제 최종 보고서로 확인해야 아이디어 3 6절의 비교 기준으로 쓸 수 있다.",
+    "q1-08: 국내 물류센터의 지도 작성·공용 자원 등록·좌표 정렬 소요 시간을 단계별로 공개한 공공·학술 자료가 21. 온보딩·설정·현장 시운전 3절과 단계 1 완료에 필요하다.",
+    "ref-320 저자 목록과 ref-318 CORDIS 원 게재일이 미확인이다."
+  ],
+  "fixes_applied": [
+    "f10 삭제 — BlueBotics 문장을 단계 페이지·아이디어 페이지·반영 제안 어디에도 넣지 않았고 ref-325 를 각주·프런트매터 sources·reference_updates 에서 뺐다.",
+    "f16·f18 ref-163 → ref-163 — 두 주장 모두 기존 ref-163 각주(참고문헌 줄 그대로)를 쓰고 ref-163 은 만들지 않았다.",
+    "f2 강등 — 단계 페이지 3절·아이디어 3·6절에서 [추정]으로 쓰고 '과제 측 보고값, 비교 조건·측정 방법 미확인'과 기준일 '2015-04(재게재 기사 기준, CORDIS 원 게재일 미확인)'을 문장에 넣었다.",
+    "f4 비교 절 삭제 — 연결성·중복성 비교 문장을 빼고 개미 군집 최적화 경로망 생성·SIPP 기반 MAPF 시뮬레이터 평가·처리량 기반 플릿 규모 제안만 [추정]으로 썼으며, ref-320 발행 정보를 'IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)'로 고쳤다.",
+    "f5 서지 정정 — ref-321 기관을 'Rüdt, M., Enke, C., & Furmans, K. (KIT)'로 고치고 각주 제목에 v2 제목을 병기했다.",
+    "f12 분리 — 경유점 속성 사람 입력은 q1-03 을 짧게 참조한 [사실] 문장, 현장마다 반복된다는 절은 별도 [추정] 문장으로 쓰고 기존 ref-079 각주를 재사용했다.",
+    "f13 분리 — 플릿별 설정 항목은 [사실], 플릿을 더할 때마다 반복된다는 절은 별도 [추정] 문장으로 썼다.",
+    "f15 오류 절 삭제 — 좌표 오기·스테이션 누락·충돌 절을 빼고 '프로젝트당 수 인일' 부분만 [추정] 벤더 주장으로 남겼다.",
+    "f7 병기 — '프로젝트 문서의 자체 벤치마크 보고값(독립 측정 아님)'을 문장에 넣고 같은 소절에 SLAM 은 연계 대상임을 밝혔으며, f16 의 자율 탐사 SLAM·엘리베이터 버튼 조작도 연계 대상으로 짧게 적었다.",
+    "f9 병기 — [추정] 뒤에 '벤더 주장'을 붙이고 제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본임을 문장과 각주에 밝혔다.",
+    "f11 병기 — [추정] 벤더 주장에 '내부 시험, 측정 조건 미공개'를 붙이고 ref-324 발행일을 2023(소프트웨어 2.28 판 발표 기준)으로 적었다.",
+    "원문 미열람 표시 — ref-318·ref-319·ref-320·ref-321·ref-322·ref-324·ref-326·ref-327 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-079·ref-046·ref-217 은 기존 정의를 재사용하고 ref-105·ref-163 은 참고문헌 페이지 줄 그대로 옮겼다.",
+    "용어 — '지도 정합'은 glossary_updates 에 넣지 않았고 '경로망(Roadmap)'만 신규로 냈다.",
+    "아이디어 6절 — '단계 5 조사 전 선행 근거'를 먼저 밝히고 PAN-Robots 비교를 [추정] 과제 측 보고값으로, 독립 측정 연구 부재를 검색 범위 기준(부재 확인 아님)으로 적고, 벤더 수치(OTTO·ScaliRo)는 가설 3 판정 근거로 쓰지 않는다고 명시했다.",
+    "세부영역 반영 제안 — 21. 온보딩·설정·현장 시운전, 15. 다중 로봇 경로·교통 관리 — MAPF, 6. 지도·공간·위치 모델 페이지를 직접 고치지 않고 area_reflection_proposals 로만 냈으며 f10 을 빼고 f4 는 비교 절을 뺀 내용만 넣었다.",
+    "단계 1 페이지 6절 — 두 완료 조건을 '충족', 검증 판정을 '충족 · 미승인'으로 두고 '다음 단계로 전환: 아니오(막힌 질문 q1-05·q1-06 과 이번에 등록할 국내 소요 시간 질문 q1-08)'로 썼으며 단계 상태는 '진행 중'을 유지했다."
+  ],
+  "area_reflection_proposals": [
+    {
+      "area_no": 21,
+      "section": "3. 왜 중요한가",
+      "summary": "새 현장 AGV·이동로봇 도입의 긴 설치 시간 원인으로 정밀 2D 지도 작성, 픽업·하역 위치 지정, 전문가 수작업 경로망 설계가 꼽힌다(Beinschob 외 2017 [사실], ref-217). 지도 작성은 새 환경 배치의 시간이 많이 드는 과정이다(Heselden·Das 2024 [사실], ref-322). PAN-Robots 설치 기간 6개월→2개월은 과제 측 보고값(비교 조건 미확인, [추정], ref-318)."
+    },
+    {
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "새 현장·새 제조사마다 반복되는 작업(지도 작성 주행, 위치 지정, 경로망 설계, 좌표 대응, 형식별 레이아웃 재입력)의 정리 [추정](ref-217·ref-079·ref-105·ref-046). Open-RMF 플릿 어댑터 설정의 층별 좌표 대응점·사양·작업 능력 항목 [사실](ref-105). OTTO 설정 복제·부분 재지도화는 [추정] 벤더 주장(ref-324)."
+    },
+    {
+      "area_no": 21,
+      "section": "8. 대표 연구와 자료",
+      "summary": "Beinschob 외(2017, ref-217), Beinschob·Reinke(2015, ref-319), 다중 AGV 경로망 자동 설계 연구(IEEE T-ASE 2024, ref-320, 비교 절 제외), Rüdt 외(2025, ref-321), Heselden·Das(2024, ref-322), PAN-Robots CORDIS 기사(ref-318, [추정])."
+    },
+    {
+      "area_no": 15,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "경로망은 보통 전문가가 수작업으로 설계해 시간이 많이 들고 최적이 아닐 수 있으며, 개미 군집 최적화 기반 생성과 SIPP 기반 MAPF 시뮬레이터 평가([추정], ref-320), 스테이션 상호작용 지점과 운송 수요를 반영한 연속 공간 경로망 자동 생성([사실], ref-321)이 제안됐다."
+    },
+    {
+      "area_no": 15,
+      "section": "8. 대표 연구와 자료",
+      "summary": "IEEE Transactions on Automation Science and Engineering 21(4) 2024 경로망 자동 설계 연구(ref-320, 저자 미확인), Rüdt·Enke·Furmans(KIT, arXiv 2511.07175, ref-321)."
+    },
+    {
+      "area_no": 6,
+      "section": "3. 왜 중요한가",
+      "summary": "지도 작성은 새 환경 배치의 시간 병목이며([사실], ref-322), SLAM 계산 자체는 실시간보다 빠르다는 프로젝트 자체 보고(ref-323)와 함께 보면 시간의 큰 부분은 데이터 수집 주행과 사람의 주석·설계에서 나오는 것으로 보인다([추정])."
+    },
+    {
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "연계 대상: SLAM 지도 작성 주행과 로봇 쪽 위치추정 지도 생성(ref-323, ref-326). ROP 쪽: 플릿별 좌표 대응점 설정(ref-105), 레이아웃 전달·버전 관리(ref-046), 공용 자원 등록([추정])."
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+    "ontology_draft_version": "0.3",
+    "backlog_updates": [
+      {
+        "id": "q1-04",
+        "status": "답함",
+        "answer_link": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04"
+      },
+      {
+        "id": "q1-08",
+        "status": "열림",
+        "answer_link": null,
+        "question": "국내 물류센터에서 로봇 도입 시 지도 작성·충전소 등 공용 자원 등록·제조사별 좌표 정렬에 든 시간을 단계별로 공개한 공공·학술 자료나 사례가 있는가? (q1-04 에서 파생)",
+        "stage": 1,
+        "origin": "f17"
+      },
+      {
+        "id": "q5-04",
+        "status": "열림",
+        "answer_link": null,
+        "question": "PAN-Robots 과제가 보고한 설치 기간 6개월→2개월의 비교 조건(대상 공장 규모, 기준 시스템, 단계별 소요 시간)을 과제 결과 보고서·산출물로 확인해, 도면 기반 자동 생성의 시간 단축 효과를 판정할 기준 자료로 쓸 수 있는가? (q1-04 에서 파생)",
+        "stage": 5,
+        "origin": "f2"
+      }
+    ],
+    "log_entry": "답한 질문: q1-04(현장 모델링 시간·반복 작업은 정성 연구·과제 측 보고값·벤더 주장·도구·형식 문서로만 확인, 독립 시간 측정 자료는 검색 범위에서 찾지 못함 — f1·f2·f3·f4·f5·f6·f7·f8·f9·f11·f12·f13·f14·f15·f16·f17·f18·f19, f10 삭제) / 새 질문: q1-08(국내 소요 시간 자료, f17), q5-04(PAN-Robots 비교 조건, f2) / 온톨로지 변경: 없음(v0.3 유지 — q1-04 는 시간·작업 부담 자료 질문이라 개념·관계 근거 없음) / 완료 조건 평가: 충족(검증 판정 충족, 단계 전환 미승인 — 막힌 질문 q1-05·q1-06·q1-08) / 세부영역 반영 제안: 21. 온보딩·설정·현장 시운전 3건, 15. 다중 로봇 경로·교통 관리 — MAPF 2건, 6. 지도·공간·위치 모델 2건 / 다음 실행 제안: q1-05 또는 q1-06, 이어서 q1-08 / 비고: 단계 페이지 상태 줄(답한 질문 4건)은 패치 범위 밖이라 미갱신",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 3, 답함 4, 완료 조건 충족(검증 판정 충족, 단계 전환 미승인: 막힌 질문 q1-05·q1-06·q1-08)"
+  }
+}

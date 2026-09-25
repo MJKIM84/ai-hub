@@ -1,0 +1,334 @@
+{
+  "duration_api_ms": 265504,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.6726098,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 331987,
+    "cache_read_input_tokens": 1660894,
+    "output_tokens": 20344,
+    "output_tokens_details": {
+      "thinking_tokens": 10859
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 331987,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12390,
+        "cache_read_input_tokens": 404934,
+        "cache_creation_input_tokens": 3207,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3207
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 20344,
+      "cacheReadInputTokens": 1660894,
+      "cacheCreationInputTokens": 331987,
+      "webSearchRequests": 0,
+      "costUSD": 3.3949948,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 10859,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 142420,
+      "outputTokens": 5039,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 11,
+      "costUSD": 0.277615,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 17,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-22\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 검색 요약에 정밀 2D 지도 작성·픽업/하역 위치 3D 좌표 지정·수작업 경로망 설계 병목, 숙련 인력 필요, 하역 지점 위치의 현장 수정이 모두 나타난다(Robotics and Autonomous Systems 87, 281-295, 2017). 원문 미열람(검색 결과 일치). 기존 ref-217 재사용이며 단계 페이지 q1-03의 Beinschob 외 문장과 겹친다. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정: '6개월 대신 2개월' 구절은 검증 검색에서 확인됐으나 phys.org(2015-04)·EC newsroom 재게재본은 같은 EU 원문의 재게재라 독립 출처가 아니다. 가설 3 판정에 쓰일 핵심 수치가 단일 출처이고 비교 조건이 미확인이다. 기준일 as_of 2026-09-25 는 틀렸다 — 재게재 기사 기준 2015-04 로 표기하고 CORDIS 원 게재일은 미확인으로 둔다. 원문 미열람.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IEEE ICCP 2015 발표, 반사판 수백~수천 개, 숙련 인력 설치, 'high effort and investment', PAN-Robots 반자동 탐사로 설치 시간·비용 절감이 검색 요약에 나타난다. 원문 미열람(검색 결과 일치).\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 뒷받침: 개미 군집 최적화 기반 경로망 생성과 SIPP 기반 MAPF 시뮬레이터 평가, 처리량 기반 플릿 규모 제안은 확인됐다. '연결성·중복성에서 수작업 경로망보다 낫다'는 비교는 검증 검색에서도 브리프 발췌에서도 나타나지 않는다(연결성·중복성은 Digani 외 2014, ref-218 의 기준이다). 이 절은 삭제한다. 서지 정정: IEEE Transactions on Automation Science and Engineering 21(4), 6190-6201, 2024 게재(IEEE Xplore 문서 10287275, 2023 온라인 공개). 저자 미확인. 원문 미열람.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2511.07175, 2025-11-10 제출, 저자 Marvin Rüdt·Constantin Enke·Kai Furmans(KIT 물류·물자취급연구소 IFL). v2 제목은 'Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization'로 바뀌었다. 스테이션 간 운송 수요 반영이 확인됐다. 노드 배치 세부(볼록 모서리)는 v1 요약 기준이다. 원문 미열람.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Heselden·Das, arXiv 2404.13499(2024-04-21), ICRA 2024 Field Robotics 워크숍. 지도 작성이 시간이 많이 든다는 문제의식, 템플릿·절차적 생성, 농업·도로·실내 데이터셋이 검색 요약에 나타난다. 원문 미열람.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 에이전트가 raw.githubusercontent.com 의 ros2 브랜치 README 를 열었다. 5x+ 실시간(약 30,000 sq ft)·3x(약 60,000 sq ft)·200,000 sq ft 건물 사례와 이어서 작성·병합·수동 그래프 편집 기능이 일치한다. 이것은 프로젝트 문서의 자체 벤치마크 보고값이며 독립 측정이 아니다. SLAM 은 분류 원문 9장의 연계 대상이다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f1·f4·f5·f7 에서 도출한 추론이며 [추정] 이 맞다. f4 의 비교 절을 삭제해도 경로망 수작업 설계라는 근거는 남는다. 단계별 시간 측정 자료는 없다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ManualsLib 의 MiR250 매뉴얼 104쪽 'Creating and configuring a map' 페이지는 실재한다. 검증 검색 요약에는 페이지 주제만 나오고 수동 주행 절차는 나오지 않아 세부 내용은 리서치 스니펫에만 기댄다. [추정] 벤더 주장과 제조사 공식 사이트가 아닌 게재본임을 병기하는 조건으로 유지한다. 원문 미열람.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"BlueBotics 글은 실재하지만 검증 검색 요약에는 일반 팁 7개만 나온다. 인용 구절 두 개('exclude the mapping step', 'main factor … navigation technology')를 정확한 구절로 검색해도 찾지 못했다. 벤더 문서의 확인되지 않은 주장이므로 삭제하고 ref-325 는 미사용 출처로 뺀다. 원문 미열람.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: OTTO 블로그와 The Robot Report 가 소프트웨어 2.28 판(2023-03 전후)의 '내부 시험 50% 단축'을 전한다. The Robot Report 는 벤더 발표를 옮긴 것이라 독립 확인이 아니다. [추정] 벤더 주장을 유지한다. 발행일은 미확인 대신 2023(2.28 판 발표 기준)으로 고친다. 원문 미열람.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"검증 에이전트가 ros2multirobotbook 의 traffic-editor.md 미러를 열었다. 경유점 속성(is_charger·is_parking_spot·is_holding_point·dock_name·pickup_dispenser·dropoff_ingestor)을 GUI 속성 패널에서 사람이 입력한다는 부분은 [사실] 로 확인됐다. '현장마다 공용 자원 등록이 수작업 주석으로 반복된다'는 문서에 없는 추론이므로 이 절만 [추정] 으로 분리한다. 기존 단계 페이지 q1-03 문장과 겹치므로 ref-079 기존 각주를 재사용한다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"검증 에이전트가 raw config.yaml 을 열었다. 층별 reference_coordinates(rmf·robot 좌표 쌍), linear·footprint·battery, task_capabilities 항목은 [사실] 로 확인됐다. '플릿을 하나 더할 때마다 좌표 정렬과 설정이 반복된다'는 추론이므로 [추정] 으로 분리한다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 에이전트가 LIF 공식 README(raw)를 열었다. 'Version 1.0.0 - September 2023'과 통합사업자→제3자 중앙 관제 전달 목적이 일치한다. 단계 페이지·아이디어 4절의 기존 LIF 문장과 겹친다. 판·발행일 충돌은 oq-025 에 이미 올라 있다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"ScaliRo 해설은 실재하고 '다중 제조사 프로젝트에서 중복 레이아웃 작성 비용이 프로젝트당 수 인일' 구절은 확인됐다. 뒷부분(좌표 오기·스테이션 누락 → 시운전 때 충돌·교통 막힘)은 브리프 발췌에도 검증 검색 요약에도 없으므로 삭제한다. [추정] 벤더 주장은 유지한다. 원문 미열람.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"출처 중복: ref-328 은 참고문헌에 이미 있는 ref-163 과 같은 논문·같은 KCI URL 이다. ref-163 을 재사용하고 ref-328 은 만들지 않는다. 내용은 기존 6. 지도·공간·위치 모델 페이지 인용과 일치한다. 자율 탐사 SLAM·엘리베이터 버튼 조작은 연계 대상이다. 소요 시간 수치는 없다. 원문 미열람.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"자료 유형별로 묶은 이 위키의 분류이며 [추정] 이 맞다. f10 삭제에 따라 근거 목록에 BlueBotics 를 넣지 않는다. 부재는 검색 범위 기준(검색 25회)으로 적는다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"설계 추론이며 [추정] 이 맞다. 각주는 ref-328 대신 ref-163 을 쓰고, f15 의 삭제된 오류 절에 기대지 않게 서술한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"분류 원문 9장 경계를 적용한 추론이며 '연계 대상:' 표시가 있다. [추정] 이 맞다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"ref-328(노주형 외, 로봇학회 논문지 21(1))은 참고문헌에 이미 있는 ref-163 과 같은 논문·같은 URL 이다\",\"f1 은 단계 1 페이지 q1-03 절과 아이디어 3절의 Beinschob 외(2017, ref-217) 문장과 겹친다\",\"f12 는 단계 1 페이지 q1-03 절의 traffic-editor 경유점 속성 문장(ref-079)과 겹친다\",\"f14 는 단계 1 페이지 q1-03 절과 아이디어 4절의 LIF README 문장(ref-046)과 겹친다. 판·발행일 충돌은 oq-025 로 이미 올라 있다\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"용어 후보 '지도 정합(Map Alignment)'은 용어집에 이미 있다(map-alignment.md). 신규로 등록하지 않고 기존 정의를 쓴다\"]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f10: 삭제한다. 본문·아이디어 페이지·21. 온보딩·설정·현장 시운전 반영 제안 어디에도 넣지 않는다. BlueBotics 인용 구절은 검증 검색에서 확인되지 않았다. ref-325 는 미사용 출처가 되므로 reference_updates·각주·프런트매터 sources 에서 뺀다.\",\"f16·f18: 출처 ref-328 을 만들지 않고 기존 ref-163 각주(참고문헌 페이지의 줄 그대로)를 쓴다 — 같은 논문·같은 URL 의 중복이다.\",\"f2: [사실] → [추정]으로 강등한다. 문장 안에 '과제 측 보고값, 비교 조건·측정 방법 미확인'을 유지한다. 기준일은 '2015-04 (재게재 기사 기준, CORDIS 원 게재일 미확인)'로 적는다 — 핵심 수치가 단일 출처이고 재게재본은 독립 출처가 아니다.\",\"f4: '시뮬레이션 기반 자동 설계 경로망이 연결성·중복성에서 수작업 경로망보다 낫다' 절을 삭제한다. 개미 군집 최적화 기반 경로망 생성과 SIPP 기반 MAPF 시뮬레이터 평가, 처리량 기반 플릿 규모 제안만 쓴다. ref-320 발행 정보는 'IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)'로 고친다 — 비교 절은 출처가 뒷받침하지 않는다.\",\"f5: ref-321 기관 칸을 'Rüdt, M., Enke, C., & Furmans, K. (KIT)'로 고치고, v2 제목이 'Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization'로 바뀌었음을 각주에 적는다 — 검증 검색으로 저자와 판을 확인했다.\",\"f12: 경유점 속성을 편집기에서 사람이 입력한다는 부분은 [사실]로 두고, '현장마다 공용 자원 등록이 수작업 주석으로 반복된다'는 별도 문장으로 떼어 [추정]으로 쓴다. 단계 페이지 q1-03 에 같은 문장이 있으므로 q1-04 절에서는 그 문장을 짧게 참조하고 기존 ref-079 각주를 재사용한다.\",\"f13: 플릿별 설정 항목(층별 좌표 대응점, 속도·차체·배터리, 작업 능력)은 [사실]로 두고, '플릿을 더할 때마다 좌표 정렬과 설정이 반복된다'는 [추정]으로 분리한다 — 설정 파일 구조에서 한 추론이다.\",\"f15: '형식 사이 수작업 전달이 좌표 오기·스테이션 누락 오류를 낳아 시운전 때 충돌·교통 막힘으로 드러난다' 절을 삭제한다. '다중 제조사 프로젝트에서 중복 레이아웃 작성 비용이 수 인일' 부분만 [추정] 벤더 주장으로 남긴다 — 뒷부분은 출처 발췌에 없다.\",\"f7: '프로젝트 문서의 자체 벤치마크 보고값(독립 측정 아님)'을 문장에 병기한다. SLAM 지도 작성은 로봇 자체 지능·제어 쪽 연계 대상임을 같은 소절에 밝힌다. f16 의 자율 탐사 SLAM·엘리베이터 버튼 조작도 연계 대상으로 짧게 다룬다.\",\"f9: [추정] 뒤에 '벤더 주장'을 병기하고, 제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본임을 밝힌다.\",\"f11: [추정] 벤더 주장을 유지하고 '내부 시험, 측정 조건 미공개'를 병기한다. ref-324 발행일은 2023(소프트웨어 2.28 판 발표 기준)으로 적는다.\",\"ref-318·ref-319·ref-320·ref-321·ref-322·ref-324·ref-326·ref-327: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-079·ref-105·ref-046·ref-217·ref-163 은 참고문헌 페이지의 기존 각주 줄을 그대로 복사한다.\",\"용어 후보 '지도 정합(Map Alignment)'은 glossary_updates 에 신규로 넣지 않는다. 기존 용어 페이지 map-alignment.md 에 링크만 한다. '경로망(Roadmap)'만 신규 후보로 둔다.\",\"아이디어 페이지 6절: '단계 5 조사 전 선행 근거'라고 먼저 밝히고 PAN-Robots 설치 기간 비교(f2)를 [추정] 과제 측 보고값으로 쓴다. 기준 시간 자료를 독립 측정한 연구는 이번 검색 범위에서 찾지 못했음(부재 확인 아님)을 적는다. 벤더 수치(f11·f15)는 가설 3 판정 근거로 쓰지 않는다고 명시한다.\",\"세부영역 반영 제안(21. 온보딩·설정·현장 시운전, 15. 다중 로봇 경로·교통 관리 — MAPF, 6. 지도·공간·위치 모델)은 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals 로만 낸다. f10 을 빼고, f4 는 비교 절을 뺀 내용만 넣는다.\",\"단계 1 페이지 6절: 완료 조건 두 항목은 '충족'으로 두고, 아래 줄은 '다음 단계로 전환: 아니오(막힌 질문 q1-05·q1-06 과 이번에 등록할 국내 소요 시간 질문)'로 쓴다. 상태 줄의 단계 상태는 '진행 중'으로 둔다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). 확인 13건, 미확인 6건(f4·f9·f10·f12·f13·f15), 교차 확인 0건. 강등: f2 사실 → 추정(핵심 수치 단일 출처·재게재본은 독립 아님), f4 비교 절 삭제, f12·f13 반복 추론 절을 추정으로 분리, f15 오류 절 삭제. 삭제: f10(BlueBotics 인용 구절 미확인, ref-325 미사용 출처). 원문 미열람 출처: ref-217, ref-318, ref-319, ref-320, ref-321, ref-322, ref-324, ref-326, ref-327, ref-163(ref-328 대체). 검증 에이전트가 GitHub 원본으로 ref-046·ref-323·ref-079·ref-105 를 열어 f7·f12·f13·f14 를 확인했다. 출처 중복: ref-328 은 ref-163 과 같은 논문이다. 용어: '지도 정합'은 기존 용어라 신규 등록하지 않는다. 주의: q1-04 의 답은 '현장 모델링 시간과 반복 작업은 정성 연구, 과제 측 보고값(PAN-Robots 6개월→2개월), 벤더 주장(OTTO 50%, ScaliRo 수 인일), 도구·형식 문서로만 확인된다'는 자료 유형 정리(추정)다. 단계별 소요 시간을 독립적으로 측정한 자료는 검색 범위(리서치 25회, 검증 11회)에서 찾지 못했고 부재가 확인된 것은 아니다. 수치는 가설 3 판정 근거로 쓰기 전에 재확인이 필요하다. 검색은 리서치 25회와 검증 11회를 합쳐 36회/40회를 썼다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 충족(아이디어 3절 비교와 공간 그래프 스키마 초안의 인식 대상 요소가 이전 실행에서 채워짐). 단계 전환: 미승인(막힌 질문 q1-05·q1-06, 이번 실행의 국내 소요 시간 신규 질문). 폐기 질문 q1-07·q2-05·q4-06 은 전환을 막지 않는다.\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":true,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-22",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 검색 요약에 정밀 2D 지도 작성·픽업/하역 위치 3D 좌표 지정·수작업 경로망 설계 병목, 숙련 인력 필요, 하역 지점 위치의 현장 수정이 모두 나타난다(Robotics and Autonomous Systems 87, 281-295, 2017). 원문 미열람(검색 결과 일치). 기존 ref-217 재사용이며 단계 페이지 q1-03의 Beinschob 외 문장과 겹친다. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정: '6개월 대신 2개월' 구절은 검증 검색에서 확인됐으나 phys.org(2015-04)·EC newsroom 재게재본은 같은 EU 원문의 재게재라 독립 출처가 아니다. 가설 3 판정에 쓰일 핵심 수치가 단일 출처이고 비교 조건이 미확인이다. 기준일 as_of 2026-09-25 는 틀렸다 — 재게재 기사 기준 2015-04 로 표기하고 CORDIS 원 게재일은 미확인으로 둔다. 원문 미열람."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IEEE ICCP 2015 발표, 반사판 수백~수천 개, 숙련 인력 설치, 'high effort and investment', PAN-Robots 반자동 탐사로 설치 시간·비용 절감이 검색 요약에 나타난다. 원문 미열람(검색 결과 일치)."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 뒷받침: 개미 군집 최적화 기반 경로망 생성과 SIPP 기반 MAPF 시뮬레이터 평가, 처리량 기반 플릿 규모 제안은 확인됐다. '연결성·중복성에서 수작업 경로망보다 낫다'는 비교는 검증 검색에서도 브리프 발췌에서도 나타나지 않는다(연결성·중복성은 Digani 외 2014, ref-218 의 기준이다). 이 절은 삭제한다. 서지 정정: IEEE Transactions on Automation Science and Engineering 21(4), 6190-6201, 2024 게재(IEEE Xplore 문서 10287275, 2023 온라인 공개). 저자 미확인. 원문 미열람."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2511.07175, 2025-11-10 제출, 저자 Marvin Rüdt·Constantin Enke·Kai Furmans(KIT 물류·물자취급연구소 IFL). v2 제목은 'Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization'로 바뀌었다. 스테이션 간 운송 수요 반영이 확인됐다. 노드 배치 세부(볼록 모서리)는 v1 요약 기준이다. 원문 미열람."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Heselden·Das, arXiv 2404.13499(2024-04-21), ICRA 2024 Field Robotics 워크숍. 지도 작성이 시간이 많이 든다는 문제의식, 템플릿·절차적 생성, 농업·도로·실내 데이터셋이 검색 요약에 나타난다. 원문 미열람."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 에이전트가 raw.githubusercontent.com 의 ros2 브랜치 README 를 열었다. 5x+ 실시간(약 30,000 sq ft)·3x(약 60,000 sq ft)·200,000 sq ft 건물 사례와 이어서 작성·병합·수동 그래프 편집 기능이 일치한다. 이것은 프로젝트 문서의 자체 벤치마크 보고값이며 독립 측정이 아니다. SLAM 은 분류 원문 9장의 연계 대상이다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f1·f4·f5·f7 에서 도출한 추론이며 [추정] 이 맞다. f4 의 비교 절을 삭제해도 경로망 수작업 설계라는 근거는 남는다. 단계별 시간 측정 자료는 없다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ManualsLib 의 MiR250 매뉴얼 104쪽 'Creating and configuring a map' 페이지는 실재한다. 검증 검색 요약에는 페이지 주제만 나오고 수동 주행 절차는 나오지 않아 세부 내용은 리서치 스니펫에만 기댄다. [추정] 벤더 주장과 제조사 공식 사이트가 아닌 게재본임을 병기하는 조건으로 유지한다. 원문 미열람."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "BlueBotics 글은 실재하지만 검증 검색 요약에는 일반 팁 7개만 나온다. 인용 구절 두 개('exclude the mapping step', 'main factor … navigation technology')를 정확한 구절로 검색해도 찾지 못했다. 벤더 문서의 확인되지 않은 주장이므로 삭제하고 ref-325 는 미사용 출처로 뺀다. 원문 미열람."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: OTTO 블로그와 The Robot Report 가 소프트웨어 2.28 판(2023-03 전후)의 '내부 시험 50% 단축'을 전한다. The Robot Report 는 벤더 발표를 옮긴 것이라 독립 확인이 아니다. [추정] 벤더 주장을 유지한다. 발행일은 미확인 대신 2023(2.28 판 발표 기준)으로 고친다. 원문 미열람."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "검증 에이전트가 ros2multirobotbook 의 traffic-editor.md 미러를 열었다. 경유점 속성(is_charger·is_parking_spot·is_holding_point·dock_name·pickup_dispenser·dropoff_ingestor)을 GUI 속성 패널에서 사람이 입력한다는 부분은 [사실] 로 확인됐다. '현장마다 공용 자원 등록이 수작업 주석으로 반복된다'는 문서에 없는 추론이므로 이 절만 [추정] 으로 분리한다. 기존 단계 페이지 q1-03 문장과 겹치므로 ref-079 기존 각주를 재사용한다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "검증 에이전트가 raw config.yaml 을 열었다. 층별 reference_coordinates(rmf·robot 좌표 쌍), linear·footprint·battery, task_capabilities 항목은 [사실] 로 확인됐다. '플릿을 하나 더할 때마다 좌표 정렬과 설정이 반복된다'는 추론이므로 [추정] 으로 분리한다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 에이전트가 LIF 공식 README(raw)를 열었다. 'Version 1.0.0 - September 2023'과 통합사업자→제3자 중앙 관제 전달 목적이 일치한다. 단계 페이지·아이디어 4절의 기존 LIF 문장과 겹친다. 판·발행일 충돌은 oq-025 에 이미 올라 있다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "ScaliRo 해설은 실재하고 '다중 제조사 프로젝트에서 중복 레이아웃 작성 비용이 프로젝트당 수 인일' 구절은 확인됐다. 뒷부분(좌표 오기·스테이션 누락 → 시운전 때 충돌·교통 막힘)은 브리프 발췌에도 검증 검색 요약에도 없으므로 삭제한다. [추정] 벤더 주장은 유지한다. 원문 미열람."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "출처 중복: ref-328 은 참고문헌에 이미 있는 ref-163 과 같은 논문·같은 KCI URL 이다. ref-163 을 재사용하고 ref-328 은 만들지 않는다. 내용은 기존 6. 지도·공간·위치 모델 페이지 인용과 일치한다. 자율 탐사 SLAM·엘리베이터 버튼 조작은 연계 대상이다. 소요 시간 수치는 없다. 원문 미열람."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "자료 유형별로 묶은 이 위키의 분류이며 [추정] 이 맞다. f10 삭제에 따라 근거 목록에 BlueBotics 를 넣지 않는다. 부재는 검색 범위 기준(검색 25회)으로 적는다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "설계 추론이며 [추정] 이 맞다. 각주는 ref-328 대신 ref-163 을 쓰고, f15 의 삭제된 오류 절에 기대지 않게 서술한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "분류 원문 9장 경계를 적용한 추론이며 '연계 대상:' 표시가 있다. [추정] 이 맞다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "ref-328(노주형 외, 로봇학회 논문지 21(1))은 참고문헌에 이미 있는 ref-163 과 같은 논문·같은 URL 이다",
+        "f1 은 단계 1 페이지 q1-03 절과 아이디어 3절의 Beinschob 외(2017, ref-217) 문장과 겹친다",
+        "f12 는 단계 1 페이지 q1-03 절의 traffic-editor 경유점 속성 문장(ref-079)과 겹친다",
+        "f14 는 단계 1 페이지 q1-03 절과 아이디어 4절의 LIF README 문장(ref-046)과 겹친다. 판·발행일 충돌은 oq-025 로 이미 올라 있다"
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "용어 후보 '지도 정합(Map Alignment)'은 용어집에 이미 있다(map-alignment.md). 신규로 등록하지 않고 기존 정의를 쓴다"
+      ]
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f10: 삭제한다. 본문·아이디어 페이지·21. 온보딩·설정·현장 시운전 반영 제안 어디에도 넣지 않는다. BlueBotics 인용 구절은 검증 검색에서 확인되지 않았다. ref-325 는 미사용 출처가 되므로 reference_updates·각주·프런트매터 sources 에서 뺀다.",
+      "f16·f18: 출처 ref-328 을 만들지 않고 기존 ref-163 각주(참고문헌 페이지의 줄 그대로)를 쓴다 — 같은 논문·같은 URL 의 중복이다.",
+      "f2: [사실] → [추정]으로 강등한다. 문장 안에 '과제 측 보고값, 비교 조건·측정 방법 미확인'을 유지한다. 기준일은 '2015-04 (재게재 기사 기준, CORDIS 원 게재일 미확인)'로 적는다 — 핵심 수치가 단일 출처이고 재게재본은 독립 출처가 아니다.",
+      "f4: '시뮬레이션 기반 자동 설계 경로망이 연결성·중복성에서 수작업 경로망보다 낫다' 절을 삭제한다. 개미 군집 최적화 기반 경로망 생성과 SIPP 기반 MAPF 시뮬레이터 평가, 처리량 기반 플릿 규모 제안만 쓴다. ref-320 발행 정보는 'IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)'로 고친다 — 비교 절은 출처가 뒷받침하지 않는다.",
+      "f5: ref-321 기관 칸을 'Rüdt, M., Enke, C., & Furmans, K. (KIT)'로 고치고, v2 제목이 'Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization'로 바뀌었음을 각주에 적는다 — 검증 검색으로 저자와 판을 확인했다.",
+      "f12: 경유점 속성을 편집기에서 사람이 입력한다는 부분은 [사실]로 두고, '현장마다 공용 자원 등록이 수작업 주석으로 반복된다'는 별도 문장으로 떼어 [추정]으로 쓴다. 단계 페이지 q1-03 에 같은 문장이 있으므로 q1-04 절에서는 그 문장을 짧게 참조하고 기존 ref-079 각주를 재사용한다.",
+      "f13: 플릿별 설정 항목(층별 좌표 대응점, 속도·차체·배터리, 작업 능력)은 [사실]로 두고, '플릿을 더할 때마다 좌표 정렬과 설정이 반복된다'는 [추정]으로 분리한다 — 설정 파일 구조에서 한 추론이다.",
+      "f15: '형식 사이 수작업 전달이 좌표 오기·스테이션 누락 오류를 낳아 시운전 때 충돌·교통 막힘으로 드러난다' 절을 삭제한다. '다중 제조사 프로젝트에서 중복 레이아웃 작성 비용이 수 인일' 부분만 [추정] 벤더 주장으로 남긴다 — 뒷부분은 출처 발췌에 없다.",
+      "f7: '프로젝트 문서의 자체 벤치마크 보고값(독립 측정 아님)'을 문장에 병기한다. SLAM 지도 작성은 로봇 자체 지능·제어 쪽 연계 대상임을 같은 소절에 밝힌다. f16 의 자율 탐사 SLAM·엘리베이터 버튼 조작도 연계 대상으로 짧게 다룬다.",
+      "f9: [추정] 뒤에 '벤더 주장'을 병기하고, 제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본임을 밝힌다.",
+      "f11: [추정] 벤더 주장을 유지하고 '내부 시험, 측정 조건 미공개'를 병기한다. ref-324 발행일은 2023(소프트웨어 2.28 판 발표 기준)으로 적는다.",
+      "ref-318·ref-319·ref-320·ref-321·ref-322·ref-324·ref-326·ref-327: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-079·ref-105·ref-046·ref-217·ref-163 은 참고문헌 페이지의 기존 각주 줄을 그대로 복사한다.",
+      "용어 후보 '지도 정합(Map Alignment)'은 glossary_updates 에 신규로 넣지 않는다. 기존 용어 페이지 map-alignment.md 에 링크만 한다. '경로망(Roadmap)'만 신규 후보로 둔다.",
+      "아이디어 페이지 6절: '단계 5 조사 전 선행 근거'라고 먼저 밝히고 PAN-Robots 설치 기간 비교(f2)를 [추정] 과제 측 보고값으로 쓴다. 기준 시간 자료를 독립 측정한 연구는 이번 검색 범위에서 찾지 못했음(부재 확인 아님)을 적는다. 벤더 수치(f11·f15)는 가설 3 판정 근거로 쓰지 않는다고 명시한다.",
+      "세부영역 반영 제안(21. 온보딩·설정·현장 시운전, 15. 다중 로봇 경로·교통 관리 — MAPF, 6. 지도·공간·위치 모델)은 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals 로만 낸다. f10 을 빼고, f4 는 비교 절을 뺀 내용만 넣는다.",
+      "단계 1 페이지 6절: 완료 조건 두 항목은 '충족'으로 두고, 아래 줄은 '다음 단계로 전환: 아니오(막힌 질문 q1-05·q1-06 과 이번에 등록할 국내 소요 시간 질문)'로 쓴다. 상태 줄의 단계 상태는 '진행 중'으로 둔다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). 확인 13건, 미확인 6건(f4·f9·f10·f12·f13·f15), 교차 확인 0건. 강등: f2 사실 → 추정(핵심 수치 단일 출처·재게재본은 독립 아님), f4 비교 절 삭제, f12·f13 반복 추론 절을 추정으로 분리, f15 오류 절 삭제. 삭제: f10(BlueBotics 인용 구절 미확인, ref-325 미사용 출처). 원문 미열람 출처: ref-217, ref-318, ref-319, ref-320, ref-321, ref-322, ref-324, ref-326, ref-327, ref-163(ref-328 대체). 검증 에이전트가 GitHub 원본으로 ref-046·ref-323·ref-079·ref-105 를 열어 f7·f12·f13·f14 를 확인했다. 출처 중복: ref-328 은 ref-163 과 같은 논문이다. 용어: '지도 정합'은 기존 용어라 신규 등록하지 않는다. 주의: q1-04 의 답은 '현장 모델링 시간과 반복 작업은 정성 연구, 과제 측 보고값(PAN-Robots 6개월→2개월), 벤더 주장(OTTO 50%, ScaliRo 수 인일), 도구·형식 문서로만 확인된다'는 자료 유형 정리(추정)다. 단계별 소요 시간을 독립적으로 측정한 자료는 검색 범위(리서치 25회, 검증 11회)에서 찾지 못했고 부재가 확인된 것은 아니다. 수치는 가설 3 판정 근거로 쓰기 전에 재확인이 필요하다. 검색은 리서치 25회와 검증 11회를 합쳐 36회/40회를 썼다. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음). 단계 완료 조건: 충족(아이디어 3절 비교와 공간 그래프 스키마 초안의 인식 대상 요소가 이전 실행에서 채워짐). 단계 전환: 미승인(막힌 질문 q1-05·q1-06, 이번 실행의 국내 소요 시간 신규 질문). 폐기 질문 q1-07·q2-05·q4-06 은 전환을 막지 않는다.",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": true,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 59016,
+  "type": "result",
+  "duration_ms": 218957,
+  "uuid": "da3d779c-239f-43e2-8856-4d4bedca9d7d",
+  "ttft_stream_ms": 4637,
+  "time_to_request_ms": 139,
+  "first_content_frame_ms": 4638,
+  "time_to_request_from_spawn_ms": 9153121,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790305006430.1218,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 220.6
+}

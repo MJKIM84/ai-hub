@@ -28,6 +28,23 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 후속 질문 q1-08·q5-04 등록, 4·6·7·8·9절 갱신. 초안 변경 없음. 2차: f1 문장을 '검색 요약에는 소요 시간 수치가 없다(원문 미열람)'로 수정 |
+| 2026-09-25-22 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 현장 모델링 부담의 근거 소절 추가, 6절에 단계 5 조사 전 선행 근거(가설 3 비교 기준 후보·측정 대상 반복 작업) 작성. 2차: 6절 마지막 문장에 '연계 대상: '과 [추정] 태그·각주 추가 |
+| 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크의 백로그·아이디어 페이지 현황을 실행 2026-09-25-22 기준으로 갱신(상태 줄은 변경 없음) |
+| 2026-09-25-22 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 1: q1-04 답함(현장 모델링 시간·반복 작업 자료 유형과 반복 작업 목록 정리), 후속 질문 q1-08·q5-04 등록, 아이디어 3 6절 선행 근거 작성, 초안 변경 없음 |
+| 2026-09-25-22 | 생성 | [docs/references/ref-265.md](references/ref-265.md) | 참고문헌 ref-265 등록: PAN-ROBOTS: Automating logistics for the factory of the futu… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-266.md](references/ref-266.md) | 참고문헌 ref-266 등록: Graph SLAM based mapping for AGV localization in large-scale… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-267.md](references/ref-267.md) | 참고문헌 ref-267 등록: Simulation-Based Approach for Automatic Roadmap Design in Mu… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-268.md](references/ref-268.md) | 참고문헌 ref-268 등록: Automated Generation of Continuous-Space Roadmaps for Routin… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-269.md](references/ref-269.md) | 참고문헌 ref-269 등록: Unified Map Handling for Robotic Systems: Enhancing Interope… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-270.md](references/ref-270.md) | 참고문헌 ref-270 등록: slam_toolbox — README (Slam Toolbox for lifelong mapping and… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-271.md](references/ref-271.md) | 참고문헌 ref-271 등록: Maximize AMR productivity and simplify commissioning with ou… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-273.md](references/ref-273.md) | 참고문헌 ref-273 등록: MiR250 User Manual — Creating and configuring a map (page 10… |
+| 2026-09-25-22 | 생성 | [docs/references/ref-274.md](references/ref-274.md) | 참고문헌 ref-274 등록: LIF – Layout Interchange Format Explained |
+| 2026-09-25-22 | 생성 | [docs/glossary/roadmap.md](glossary/roadmap.md) | 용어집 항목 경로망 |
+| 2026-09-25-22 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-02 답함(3절 q1-02 소제목 추가), 2·4·5·6·7·8·9절 갱신, 후속 질문 q3-05·q3-06, 상태 줄 '답한 질문: 2건'으로 갱신(2차 수정 지시로 전체 content 전송) |
 | 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.1 → v0.2: 배정 개념에 속성 '배정 산출 방식' 추가·확정(f3·f5·f7·f8·f9), '규칙' 값은 6절 질문으로. H1 버전 표기를 바꿔야 해서 전체 content 로 보냄(2차 재실행에서 변경 없음) |
 | 2026-09-25-21 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절 갱신: LLM 담당 범위와 LLM·최적화 결합 선행 연구, 제품 사례 소절(공개 에이전트 프레임워크, 로봇 운영 제품 — 벤더 주장) 작성, q1-03 미조사 명시. 2차: LTAA 문장에 저자 보고값 병기, 평가 환경 문장에 '건설 기계 시나리오' 복원과 ref-168 각주 추가 |

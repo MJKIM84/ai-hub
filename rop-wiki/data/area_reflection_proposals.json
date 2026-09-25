@@ -467,6 +467,76 @@
       "section": "6. 대표 접근법과 기술",
       "summary": "로봇 운영 제품의 자연어·음성 인터페이스: InOrbit RobOps Copilot(2024 질의·설명, 2026 미션 실행), Formant F3, 다임리서치 다비스(개발 계획). 모두 [추정] 벤더 주장이며 미션 정의 방식과 실행 전 확인·승인 절차는 미확인(q1-03에서 조사).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 21,
+      "section": "3. 왜 중요한가",
+      "summary": "새 현장 AGV·이동로봇 도입의 긴 설치 시간 원인으로 정밀 2D 지도 작성, 픽업·하역 위치 지정, 전문가 수작업 경로망 설계가 꼽힌다(Beinschob 외 2017 [사실], ref-217). 지도 작성은 새 환경 배치의 시간이 많이 드는 과정이다(Heselden·Das 2024 [사실], ref-269). PAN-Robots 설치 기간 6개월→2개월은 과제 측 보고값(비교 조건 미확인, [추정], ref-265).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "새 현장·새 제조사마다 반복되는 작업(지도 작성 주행, 위치 지정, 경로망 설계, 좌표 대응, 형식별 레이아웃 재입력)의 정리: [추정], ref-217·ref-079·ref-105·ref-046. Open-RMF 플릿 어댑터 설정의 층별 좌표 대응점·사양·작업 능력 항목: [사실], ref-105. OTTO 설정 복제·부분 재지도화: [추정] 벤더 주장, ref-271.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 21,
+      "section": "8. 대표 연구와 자료",
+      "summary": "Beinschob 외(2017, ref-217), Beinschob·Reinke(2015, ref-266), 다중 AGV 경로망 자동 설계 연구(IEEE T-ASE 2024, ref-267, 비교 절 제외), Rüdt 외(2025, ref-268), Heselden·Das(2024, ref-269), PAN-Robots CORDIS 기사(ref-265, [추정]).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 15,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "경로망은 보통 전문가가 수작업으로 설계해 시간이 많이 들고 최적이 아닐 수 있으며, 개미 군집 최적화 기반 생성과 SIPP 기반 MAPF 시뮬레이터 평가([추정], ref-267), 스테이션 상호작용 지점과 운송 수요를 반영한 연속 공간 경로망 자동 생성([사실], ref-268)이 제안됐다.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 15,
+      "section": "8. 대표 연구와 자료",
+      "summary": "IEEE Transactions on Automation Science and Engineering 21(4) 2024 경로망 자동 설계 연구(ref-267, 저자 미확인), Rüdt·Enke·Furmans(KIT, arXiv 2511.07175, ref-268).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "3. 왜 중요한가",
+      "summary": "지도 작성은 새 환경 배치의 시간 병목이며([사실], ref-269), SLAM 계산 자체는 실시간보다 빠르다는 프로젝트 자체 보고(ref-270)와 함께 보면 시간의 큰 부분은 데이터 수집 주행과 사람의 주석·설계에서 나오는 것으로 보인다([추정]).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "연계 대상: SLAM 지도 작성 주행과 로봇 쪽 위치추정 지도 생성(ref-270, ref-273). ROP 쪽: 플릿별 좌표 대응점 설정(ref-105), 레이아웃 전달·버전 관리(ref-046), 공용 자원 등록([추정]).",
+      "status": "제안"
     }
   ]
 }
