@@ -1929,6 +1929,13 @@ class Publisher:
             self.commit_run(msg, "로그 커밋")
         except PublishError as e:
             print(f"[publish] --log-only 커밋 실패: {e}")
+        # 보류·중단 알림(1-6): 커밋 뒤라 실행 폴더에 쓰지 않고 표준 출력만 남긴다. 설정이 꺼져 있으면(기본) 보내지 않는다
+        try:
+            from lib import notify as N
+            r = N.send(runs.read_summary(self.rd), f"docs/logs/daily/{self.date}.md")
+            print(f"[publish] 9단계 알림: {r.get('status')} — {r.get('detail', '')}")
+        except Exception as e:  # noqa: BLE001
+            print(f"[publish] 9단계 알림 건너뜀: {e}")
         return 0
 
 
