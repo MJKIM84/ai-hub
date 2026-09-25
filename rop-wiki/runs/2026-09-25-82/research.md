@@ -32,25 +32,25 @@
 
 | id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
 |---|---|---|---|---|---|---|---|---|
-| f1 | [사실] | He Zhang(arXiv 2608.25608)은 래스터 평면도 벡터화 결과를 사람이 고치는 데 드는 일을 벽·방·개구부에 대한 편집기 연산 유형별 비용으로 채점하는 편집 비용 지표를 제시하고, 정밀도·재현율·F1 이 수정 노력을 좌우하는 실패 유형에 둔감하다고 보았다. | ref-748 | 아니오 | medium | 2026-08 | — | 원문 미열람 |
-| f2 | [사실] | Opiela·Hrehová(IPIN-WiP 2023)는 평면도 이미지에서 벽·문·구역을 주석해 지도 모델을 만드는 작업에서, IPIN 2019 대회 지도를 숙련 사용자가 수작업으로 주석하는 데 40분이 걸린 반면 자동 주석 뒤 수정에는 5분이 걸렸다고 보고했다. | ref-749 | 아니오 | medium | 2023 | — | 원문 미열람 |
-| f3 | [사실] | Polygon-RNN(CVPR 2017)과 Polygon-RNN++(CVPR 2018)는 반자동 다각형 주석의 사람 노력을, 예측 꼭짓점이 정답에서 임계값 이상 벗어날 때마다 고치는 가상 주석자를 두고 그 수정 횟수(클릭 수)로 재며, Polygon-RNN++ 는 원 모델보다 클릭을 약 50% 줄였다고 보고했다. | ref-751, ref-750 | 아니오 | medium | 2018-03 | — | 원문 미열람 |
+| f1 | [사실] | He Zhang(arXiv 2608.25608)은 래스터 평면도 벡터화 결과를 사람이 고치는 데 드는 일을 벽·방·개구부에 대한 편집기 연산 유형별 비용으로 채점하는 편집 비용 지표를 제시하고, 정밀도·재현율·F1 이 수정 노력을 좌우하는 실패 유형에 둔감하다고 보았다. | ref-763 | 아니오 | medium | 2026-08 | — | 원문 미열람 |
+| f2 | [사실] | Opiela·Hrehová(IPIN-WiP 2023)는 평면도 이미지에서 벽·문·구역을 주석해 지도 모델을 만드는 작업에서, IPIN 2019 대회 지도를 숙련 사용자가 수작업으로 주석하는 데 40분이 걸린 반면 자동 주석 뒤 수정에는 5분이 걸렸다고 보고했다. | ref-764 | 아니오 | medium | 2023 | — | 원문 미열람 |
+| f3 | [사실] | Polygon-RNN(CVPR 2017)과 Polygon-RNN++(CVPR 2018)는 반자동 다각형 주석의 사람 노력을, 예측 꼭짓점이 정답에서 임계값 이상 벗어날 때마다 고치는 가상 주석자를 두고 그 수정 횟수(클릭 수)로 재며, Polygon-RNN++ 는 원 모델보다 클릭을 약 50% 줄였다고 보고했다. | ref-766, ref-765 | 아니오 | medium | 2018-03 | — | 원문 미열람 |
 | f4 | [사실] | 대화형 분할 연구의 NoC@90 지표는 목표 IoU 90% 에 이르는 데 필요한 평균 사용자 클릭 수로 정의되며, 보통 최대 클릭 수(예: 20회)를 상한으로 둔다. | ref-762 | 아니오 | medium | 2020-03 | — | 원문 미열람 |
-| f5 | [사실] | A-Scan2BIM(BMVC 2023)은 전문 건축가가 Revit 에서 수행한 Scan-to-BIM 모델링 과정을 편집 연산 이력으로 기록한 데이터셋(16개 장면, 89시간)을 만들고, 복원 품질 지표와 함께 연산 순서의 자연스러움과 다음 벽 예측 정확도를 평가했다. | ref-752, ref-753 | 아니오 | medium | 2023-11 | — | — |
-| f6 | [사실] | 기계번역 분야의 HTER(Snover 외, 2006)는 시스템 출력과 사람이 최소한으로 고친 결과 사이의 삽입·삭제·치환·이동 편집 수로 사후 편집 노력을 잰다. | ref-754 | 아니오 | medium | 2006-08 | — | 원문 미열람 |
-| f7 | [사실] | 기계번역 사후 편집 연구는 편집 노력을 시간적·기술적(편집 수)·인지적 노력의 세 차원(Krings 2001)으로 나누며, 세 차원의 상관이 약해 HTER 같은 편집 수 지표만으로는 노력을 다 잡지 못한다고 보고하고, 사후 편집 시간을 인지적 노력의 척도로 쓰는 연구도 있다. | ref-756, ref-755 | 아니오 | medium | 2020-11 | — | 원문 미열람 |
-| f8 | [사실] | 키 입력 수준 모델(KLM, Card·Moran·Newell 1983)은 숙련 사용자가 오류 없이 과제를 수행하는 시간을 키 입력·포인팅·손 이동·정신적 준비·시스템 응답 같은 연산자 시간의 합으로 예측한다. | ref-757 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f5 | [사실] | A-Scan2BIM(BMVC 2023)은 전문 건축가가 Revit 에서 수행한 Scan-to-BIM 모델링 과정을 편집 연산 이력으로 기록한 데이터셋(16개 장면, 89시간)을 만들고, 복원 품질 지표와 함께 연산 순서의 자연스러움과 다음 벽 예측 정확도를 평가했다. | ref-767, ref-768 | 아니오 | medium | 2023-11 | — | — |
+| f6 | [사실] | 기계번역 분야의 HTER(Snover 외, 2006)는 시스템 출력과 사람이 최소한으로 고친 결과 사이의 삽입·삭제·치환·이동 편집 수로 사후 편집 노력을 잰다. | ref-769 | 아니오 | medium | 2006-08 | — | 원문 미열람 |
+| f7 | [사실] | 기계번역 사후 편집 연구는 편집 노력을 시간적·기술적(편집 수)·인지적 노력의 세 차원(Krings 2001)으로 나누며, 세 차원의 상관이 약해 HTER 같은 편집 수 지표만으로는 노력을 다 잡지 못한다고 보고하고, 사후 편집 시간을 인지적 노력의 척도로 쓰는 연구도 있다. | ref-771, ref-770 | 아니오 | medium | 2020-11 | — | 원문 미열람 |
+| f8 | [사실] | 키 입력 수준 모델(KLM, Card·Moran·Newell 1983)은 숙련 사용자가 오류 없이 과제를 수행하는 시간을 키 입력·포인팅·손 이동·정신적 준비·시스템 응답 같은 연산자 시간의 합으로 예측한다. | ref-772 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
 | f9 | [사실] | Beinschob 외(2017)는 새 AGV 시스템 설치에서 벽·문·랙 같은 기반 요소의 정밀 측정, 적재·하역 지점(운영 지점) 계산, 대개 수작업인 경로망 설계가 시간이 많이 드는 작업이라고 보고 이를 반자동화했다. | ref-217 | 아니오 | medium | 2017 | — | 원문 미열람 |
-| f10 | [사실] | 도면 인식·선–문자 추출로 BIM 을 자동 생성한 연구(JAABE, 2020)는 8,500㎡ 건물에서 기본 BIM 생성 15분과, 그 전에 필요한 2D CAD 도면 수작업 준비 약 1시간을 따로 보고했다. | ref-760 | 아니오 | medium | 2020 | — | 원문 미열람 |
-| f11 | [사실] | 2024 년 연구는 BIM 기반 시설 관리를 위한 as-built 모델링에서 점군을 BIM 소프트웨어로 수작업 모델링하는 방식과 AI 기반 반자동 모델링을 시간과 투입 인력 면에서 비교하는 시간–편익 분석을 수행했다. | ref-761 | 아니오 | low | 2024-06 | — | 원문 미열람 |
-| f12 | [의견] | 가상 시운전 연구 36건을 검토한 2026 년 구조적 리뷰는 이 연구들이 기술적으로는 발전했지만 그 능력을 검증된 시운전 결과(시운전 시간 등)와 일관되게 연결한 근거는 부족하다고 평가했다. | ref-758 | 아니오 | medium | 2026 | — | 원문 미열람 |
-| f13 | [사실] | 국내 연구(박준우 외, KIBIM Magazine 11(4), 2021)는 딥러닝·매개변수 알고리즘·Dynamo 를 활용한 Scan-to-BIM 자동화로 강원소방학교 건물 단위 BIM 모델 생성을 실증했으며, 수작업 대비 소요 시간을 보고했는지는 확인하지 못했다. | ref-759 | 아니오 | medium | 2021 | — | 원문 미열람 |
-| f14 | [추정] | q5-02 에 대해 확인한 자료를 이 위키가 묶으면, 현장 모델링 시간 단축은 같은 도면·현장을 두 조건(수작업 기준 대 자동 생성+사람 보정)으로 처리해 (1) 시간: 입력 준비·자동 처리·사람 보정 시간을 단계별로 따로 기록한 총 소요 시간, (2) 수정: 요소 유형(벽·문·엘리베이터·계단·충전 위치·목적지)별 추가·삭제·이동 편집 연산 수와 가중 편집 비용, (3) 결과 품질: 보정 후 결과가 q5-01 의 합격 기준을 만족하는지를 함께 재는 구성이 근거가 가장 많은 것으로 보인다. | ref-748, ref-749, ref-750, ref-754, ref-756, ref-760, ref-217 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
-| f15 | [추정] | 편집 수 지표와 실제 소요 시간의 상관이 약하다는 기계번역 연구와 F1 이 수정 노력에 둔감하다는 평면도 연구를 보면, 수정 횟수는 소요 시간의 대용치로 쓰지 말고 시간과 함께 기록하며, 편집 비용의 연산별 가중치는 측정한 연산별 평균 시간으로 보정해야 할 것으로 보인다. | ref-756, ref-755, ref-748 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
-| f16 | [추정] | 현장 수작업 기준 시간을 실측하기 어려우면, 수작업과 보정 작업의 편집 연산 순서를 나열해 키 입력 수준 모델로 숙련자 무오류 시간을 추정하는 방법을 보조로 쓸 수 있어 보이나, 이 추정은 판단·확인 시간과 오류 수정 시간을 빼므로 실측을 대신하지 못할 것으로 보인다. | ref-757, ref-752 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f10 | [사실] | 도면 인식·선–문자 추출로 BIM 을 자동 생성한 연구(JAABE, 2020)는 8,500㎡ 건물에서 기본 BIM 생성 15분과, 그 전에 필요한 2D CAD 도면 수작업 준비 약 1시간을 따로 보고했다. | ref-775 | 아니오 | medium | 2020 | — | 원문 미열람 |
+| f11 | [사실] | 2024 년 연구는 BIM 기반 시설 관리를 위한 as-built 모델링에서 점군을 BIM 소프트웨어로 수작업 모델링하는 방식과 AI 기반 반자동 모델링을 시간과 투입 인력 면에서 비교하는 시간–편익 분석을 수행했다. | ref-776 | 아니오 | low | 2024-06 | — | 원문 미열람 |
+| f12 | [의견] | 가상 시운전 연구 36건을 검토한 2026 년 구조적 리뷰는 이 연구들이 기술적으로는 발전했지만 그 능력을 검증된 시운전 결과(시운전 시간 등)와 일관되게 연결한 근거는 부족하다고 평가했다. | ref-773 | 아니오 | medium | 2026 | — | 원문 미열람 |
+| f13 | [사실] | 국내 연구(박준우 외, KIBIM Magazine 11(4), 2021)는 딥러닝·매개변수 알고리즘·Dynamo 를 활용한 Scan-to-BIM 자동화로 강원소방학교 건물 단위 BIM 모델 생성을 실증했으며, 수작업 대비 소요 시간을 보고했는지는 확인하지 못했다. | ref-774 | 아니오 | medium | 2021 | — | 원문 미열람 |
+| f14 | [추정] | q5-02 에 대해 확인한 자료를 이 위키가 묶으면, 현장 모델링 시간 단축은 같은 도면·현장을 두 조건(수작업 기준 대 자동 생성+사람 보정)으로 처리해 (1) 시간: 입력 준비·자동 처리·사람 보정 시간을 단계별로 따로 기록한 총 소요 시간, (2) 수정: 요소 유형(벽·문·엘리베이터·계단·충전 위치·목적지)별 추가·삭제·이동 편집 연산 수와 가중 편집 비용, (3) 결과 품질: 보정 후 결과가 q5-01 의 합격 기준을 만족하는지를 함께 재는 구성이 근거가 가장 많은 것으로 보인다. | ref-763, ref-764, ref-765, ref-769, ref-771, ref-775, ref-217 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f15 | [추정] | 편집 수 지표와 실제 소요 시간의 상관이 약하다는 기계번역 연구와 F1 이 수정 노력에 둔감하다는 평면도 연구를 보면, 수정 횟수는 소요 시간의 대용치로 쓰지 말고 시간과 함께 기록하며, 편집 비용의 연산별 가중치는 측정한 연산별 평균 시간으로 보정해야 할 것으로 보인다. | ref-771, ref-770, ref-763 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f16 | [추정] | 현장 수작업 기준 시간을 실측하기 어려우면, 수작업과 보정 작업의 편집 연산 순서를 나열해 키 입력 수준 모델로 숙련자 무오류 시간을 추정하는 방법을 보조로 쓸 수 있어 보이나, 이 추정은 판단·확인 시간과 오류 수정 시간을 빼므로 실측을 대신하지 못할 것으로 보인다. | ref-772, ref-767 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
 | f17 | [추정] | 이종 제조사를 연결하는 ROP 의 측정 대상은 도면 인식 결과 보정, 공용 자원 등록, 좌표·층 정렬, 목적지 대응표 작성, 레이아웃 전달 같은 설정 작업의 시간·수정 횟수로 한정하고, 연계 대상: 로봇 쪽 지도 작성 주행·위치추정 조정 시간은 제조사·통합자의 기록을 받아 전체 시운전 기간의 구성 요소로만 합산하는 경계가 될 것으로 보인다. | ref-217, ref-105 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
-| f18 | [추정] | ‘3층 출하 대기장’을 제조사가 다른 두 로봇의 목적지로 쓰게 하는 작업을 예로 들면, 도면 수신부터 대기장 구역 노드·승강기·충전 위치 등록, 두 제조사 지도와의 좌표 대응, 목적지 대응표 작성까지를 수작업과 자동 생성+보정 조건에서 각각 시간·수정 횟수로 재고, 첫 출하 작업에서 도착이 인정될 때까지 걸린 기간을 성과 지표로 볼 수 있을 것으로 보인다(설명용 가정 사례). | ref-749, ref-748, ref-105 | 아니오 | low | 2026-09-25 | 출하 / 예외·성과 | 원문 미열람 |
-| f19 | [추정] | 이번 검색 범위(한국어 6회 포함 30회)에서는 물류센터 로봇 도입에서 도면 기반 자동 생성이 지도·공용 자원 설정 시간을 얼마나 줄였는지 같은 조건으로 잰 연구나 국내 사례, 실내공간정보 구축 공수를 정한 공개 품셈을 찾지 못했다(부재 확인 아님). | ref-759, ref-758, ref-749 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f18 | [추정] | ‘3층 출하 대기장’을 제조사가 다른 두 로봇의 목적지로 쓰게 하는 작업을 예로 들면, 도면 수신부터 대기장 구역 노드·승강기·충전 위치 등록, 두 제조사 지도와의 좌표 대응, 목적지 대응표 작성까지를 수작업과 자동 생성+보정 조건에서 각각 시간·수정 횟수로 재고, 첫 출하 작업에서 도착이 인정될 때까지 걸린 기간을 성과 지표로 볼 수 있을 것으로 보인다(설명용 가정 사례). | ref-764, ref-763, ref-105 | 아니오 | low | 2026-09-25 | 출하 / 예외·성과 | 원문 미열람 |
+| f19 | [추정] | 이번 검색 범위(한국어 6회 포함 30회)에서는 물류센터 로봇 도입에서 도면 기반 자동 생성이 지도·공용 자원 설정 시간을 얼마나 줄였는지 같은 조건으로 잰 연구나 국내 사례, 실내공간정보 구축 공수를 정한 공개 품셈을 찾지 못했다(부재 확인 아님). | ref-774, ref-773, ref-764 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
 
 ### 근거 발췌
 
@@ -78,40 +78,40 @@
 
 | id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
 |---|---|---|---|---|---|---|---|---|
-| ref-748 | Zhang, H. (Independent Researcher, arXiv 2608.25608) | When Should a Network Emit Geometry, and When Should It Detect It? Readout, Reconciliation, and Representation in Floorplan Vectorization | 2026-08 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2608.25608 | 예 |
-| ref-749 | Opiela, M., & Hrehová, M. (Pavol Jozef Šafárik University, IPIN-WiP 2023, CEUR-WS Vol-3581) | Map Model Extraction from Image Floor Plans | 2023 | 논문 | medium | 2026-09-25 | https://ceur-ws.org/Vol-3581/194_WiP.pdf | 예 |
-| ref-750 | Acuna, D., Ling, H., Kar, A., & Fidler, S. (CVPR 2018) | Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++ | 2018-03 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1803.09693 | 예 |
-| ref-751 | Castrejón, L., Kundu, K., Urtasun, R., & Fidler, S. (CVPR 2017) | Annotating Object Instances with a Polygon-RNN | 2017-04 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1704.05548 | 예 |
-| ref-752 | Song, W. 외 (BMVC 2023, arXiv 2311.18166) | A-Scan2BIM: Assistive Scan to Building Information Modeling | 2023-11 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2311.18166 | 예 |
-| ref-753 | Song, W. (weiliansong/A-Scan2BIM GitHub) | A-Scan2BIM — README (Official implementation of the paper A-Scan2BIM: Assistive Scan to Building Information Modeling) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/weiliansong/A-Scan2BIM | 아니오 |
-| ref-754 | Snover, M., Dorr, B., Schwartz, R., Micciulla, L., & Makhoul, J. (AMTA 2006) | A Study of Translation Edit Rate with Targeted Human Annotation | 2006-08 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2006.amta-papers.25/ | 예 |
-| ref-755 | Koponen, M., Aziz, W., Ramos, L., & Specia, L. (AMTA 2012 WPTP) | Post-editing time as a measure of cognitive effort | 2012-10 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2012.amta-wptp.2/ | 예 |
-| ref-756 | Alvarez-Vidal, S., Oliver, A., & Badia, T. (EAMT 2020) | Quantitative Analysis of Post-Editing Effort Indicators for NMT | 2020-11 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2020.eamt-1.44.pdf | 예 |
-| ref-757 | Kieras, D. (University of Michigan) | Using the Keystroke-Level Model to Estimate Execution Times | 미확인 | 논문 | low | 2026-09-25 | https://www.cs.umd.edu/~golbeck/INST631/KSM.pdf | 예 |
-| ref-758 | ScienceDirect 게재 논문 저자(미확인) | A structured review of virtual commissioning: simulation fidelity, industrial validation, and design-oriented decision-making | 2026 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/pii/S2590123026038491 | 예 |
-| ref-759 | 박준우, 김재홍, 김소현, 이지민, 최창순, 정광복, 이재욱(KIBIM Magazine 11(4), 53-62) | Scan-to-BIM 자동화 기술을 활용한 건축물 단위의 BIM 모델 생성 - 강원소방학교 BIM 모델링 실증을 중심으로 - | 2021 | 논문 | medium | 2026-09-25 | https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002801297 | 예 |
-| ref-760 | Journal of Asian Architecture and Building Engineering 게재 논문 저자(미확인) | Automated BIM generation using drawing recognition and line-text extraction | 2020 | 논문 | medium | 2026-09-25 | https://www.tandfonline.com/doi/full/10.1080/13467581.2020.1806071 | 예 |
-| ref-761 | ResearchGate 게재 논문 저자(미확인) | Time-Benefit Analysis of Semiautomatic 3D Laser Scanning for BIM-based Facility Management | 2024-06 | 논문 | low | 2026-09-25 | https://www.researchgate.net/publication/381549957_Time-Benefit_Analysis_of_Semiautomatic_3D_Laser_Scanning_for_BIM-_based_Facility_Management | 예 |
+| ref-763 | Zhang, H. (Independent Researcher, arXiv 2608.25608) | When Should a Network Emit Geometry, and When Should It Detect It? Readout, Reconciliation, and Representation in Floorplan Vectorization | 2026-08 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2608.25608 | 예 |
+| ref-764 | Opiela, M., & Hrehová, M. (Pavol Jozef Šafárik University, IPIN-WiP 2023, CEUR-WS Vol-3581) | Map Model Extraction from Image Floor Plans | 2023 | 논문 | medium | 2026-09-25 | https://ceur-ws.org/Vol-3581/194_WiP.pdf | 예 |
+| ref-765 | Acuna, D., Ling, H., Kar, A., & Fidler, S. (CVPR 2018) | Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++ | 2018-03 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1803.09693 | 예 |
+| ref-766 | Castrejón, L., Kundu, K., Urtasun, R., & Fidler, S. (CVPR 2017) | Annotating Object Instances with a Polygon-RNN | 2017-04 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1704.05548 | 예 |
+| ref-767 | Song, W. 외 (BMVC 2023, arXiv 2311.18166) | A-Scan2BIM: Assistive Scan to Building Information Modeling | 2023-11 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2311.18166 | 예 |
+| ref-768 | Song, W. (weiliansong/A-Scan2BIM GitHub) | A-Scan2BIM — README (Official implementation of the paper A-Scan2BIM: Assistive Scan to Building Information Modeling) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/weiliansong/A-Scan2BIM | 아니오 |
+| ref-769 | Snover, M., Dorr, B., Schwartz, R., Micciulla, L., & Makhoul, J. (AMTA 2006) | A Study of Translation Edit Rate with Targeted Human Annotation | 2006-08 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2006.amta-papers.25/ | 예 |
+| ref-770 | Koponen, M., Aziz, W., Ramos, L., & Specia, L. (AMTA 2012 WPTP) | Post-editing time as a measure of cognitive effort | 2012-10 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2012.amta-wptp.2/ | 예 |
+| ref-771 | Alvarez-Vidal, S., Oliver, A., & Badia, T. (EAMT 2020) | Quantitative Analysis of Post-Editing Effort Indicators for NMT | 2020-11 | 논문 | medium | 2026-09-25 | https://aclanthology.org/2020.eamt-1.44.pdf | 예 |
+| ref-772 | Kieras, D. (University of Michigan) | Using the Keystroke-Level Model to Estimate Execution Times | 미확인 | 논문 | low | 2026-09-25 | https://www.cs.umd.edu/~golbeck/INST631/KSM.pdf | 예 |
+| ref-773 | ScienceDirect 게재 논문 저자(미확인) | A structured review of virtual commissioning: simulation fidelity, industrial validation, and design-oriented decision-making | 2026 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/pii/S2590123026038491 | 예 |
+| ref-774 | 박준우, 김재홍, 김소현, 이지민, 최창순, 정광복, 이재욱(KIBIM Magazine 11(4), 53-62) | Scan-to-BIM 자동화 기술을 활용한 건축물 단위의 BIM 모델 생성 - 강원소방학교 BIM 모델링 실증을 중심으로 - | 2021 | 논문 | medium | 2026-09-25 | https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002801297 | 예 |
+| ref-775 | Journal of Asian Architecture and Building Engineering 게재 논문 저자(미확인) | Automated BIM generation using drawing recognition and line-text extraction | 2020 | 논문 | medium | 2026-09-25 | https://www.tandfonline.com/doi/full/10.1080/13467581.2020.1806071 | 예 |
+| ref-776 | ResearchGate 게재 논문 저자(미확인) | Time-Benefit Analysis of Semiautomatic 3D Laser Scanning for BIM-based Facility Management | 2024-06 | 논문 | low | 2026-09-25 | https://www.researchgate.net/publication/381549957_Time-Benefit_Analysis_of_Semiautomatic_3D_Laser_Scanning_for_BIM-_based_Facility_Management | 예 |
 | ref-762 | Forte, M., Price, B., Cohen, S., Xu, N., & Pitié, F. (arXiv 2003.07932) | Getting to 99% Accuracy in Interactive Segmentation | 2020-03 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2003.07932 | 예 |
 | ref-217 | Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L. | Semi-automated map creation for fast deployment of AGV fleets in modern logistics | 2017 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/abs/pii/S0921889015302724 | 예 |
 | ref-105 | Open Robotics (open-rmf) | fleet_adapter_template — fleet_adapter_template/config.yaml | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml | 예 |
 
 ### 출처 요약
 
-- **ref-748**: 원문 미열람. 평면도 벡터화에서 좌표 생성 방식과 검출 방식을 비교하고, 초안을 고치는 사람의 일로 점수를 매기는 편집 비용 지표를 제시한 프리프린트.
-- **ref-749**: 원문 미열람. 평면도 이미지의 벽·문·구역 주석으로 볼록 다각형 지도 모델을 만들고, 자동 주석 뒤 수정 시간을 수작업 주석 시간과 비교한 진행 중 연구.
-- **ref-750**: 원문 미열람. 대화형 다각형 주석 모델로, IoU 와 수정에 필요한 주석자 클릭 수로 평가하고 원 모델 대비 클릭 감소를 보고했다.
-- **ref-751**: 원문 미열람. 반자동 다각형 주석을 제안하고, 임계값을 넘는 꼭짓점을 고치는 가상 주석자의 수정 횟수로 사람 노력을 평가했다.
-- **ref-752**: 원문 미열람. 전문 건축가의 Revit 편집 이력을 기록한 Scan-to-BIM 데이터셋과 다음 편집 연산을 예측하는 보조 시스템, 연산 순서 지표를 제안했다.
-- **ref-753**: 공식 구현 저장소 README. 후보 벽 열거·다음 벽 예측 네트워크와 복원 지표·순서 지표·다음 벽 예측 정확도 평가 명령을 안내한다.
-- **ref-754**: 원문 미열람. 번역 편집률(TER)과 사람이 최소로 고친 번역을 기준으로 한 HTER 를 정의했다.
-- **ref-755**: 원문 미열람. 기계번역 사후 편집 시간을 인지적 노력의 척도로 쓰는 방법을 다룬 워크숍 논문.
-- **ref-756**: 원문 미열람. 사후 편집 노력의 시간적·기술적·인지적 차원(Krings)과 지표 사이의 약한 상관을 분석했다.
-- **ref-757**: 원문 미열람. 키 입력 수준 모델로 숙련 사용자의 무오류 과제 실행 시간을 연산자 시간의 합으로 추정하는 방법 해설. 강의 사이트 게재본.
-- **ref-758**: 원문 미열람. 가상 시운전 연구 36건을 검토해 시뮬레이션 능력과 검증된 시운전 결과를 잇는 근거가 부족하다고 평가한 구조적 리뷰.
-- **ref-759**: 원문 미열람. 딥러닝·매개변수 알고리즘·Dynamo 기반 Scan-to-BIM 자동화로 건물 단위 BIM 모델을 생성한 국내 실증 연구.
-- **ref-760**: 원문 미열람. 2D 도면의 선·문자를 분리 추출해 객체 BIM 을 준자동 생성하는 방법과 건물 사례의 생성 시간을 보고했다.
-- **ref-761**: 원문 미열람. 시설 관리용 as-built BIM 에서 수작업 모델링과 AI 기반 반자동 모델링의 시간·인력을 비교한 분석. 게재지 미확인.
+- **ref-763**: 원문 미열람. 평면도 벡터화에서 좌표 생성 방식과 검출 방식을 비교하고, 초안을 고치는 사람의 일로 점수를 매기는 편집 비용 지표를 제시한 프리프린트.
+- **ref-764**: 원문 미열람. 평면도 이미지의 벽·문·구역 주석으로 볼록 다각형 지도 모델을 만들고, 자동 주석 뒤 수정 시간을 수작업 주석 시간과 비교한 진행 중 연구.
+- **ref-765**: 원문 미열람. 대화형 다각형 주석 모델로, IoU 와 수정에 필요한 주석자 클릭 수로 평가하고 원 모델 대비 클릭 감소를 보고했다.
+- **ref-766**: 원문 미열람. 반자동 다각형 주석을 제안하고, 임계값을 넘는 꼭짓점을 고치는 가상 주석자의 수정 횟수로 사람 노력을 평가했다.
+- **ref-767**: 원문 미열람. 전문 건축가의 Revit 편집 이력을 기록한 Scan-to-BIM 데이터셋과 다음 편집 연산을 예측하는 보조 시스템, 연산 순서 지표를 제안했다.
+- **ref-768**: 공식 구현 저장소 README. 후보 벽 열거·다음 벽 예측 네트워크와 복원 지표·순서 지표·다음 벽 예측 정확도 평가 명령을 안내한다.
+- **ref-769**: 원문 미열람. 번역 편집률(TER)과 사람이 최소로 고친 번역을 기준으로 한 HTER 를 정의했다.
+- **ref-770**: 원문 미열람. 기계번역 사후 편집 시간을 인지적 노력의 척도로 쓰는 방법을 다룬 워크숍 논문.
+- **ref-771**: 원문 미열람. 사후 편집 노력의 시간적·기술적·인지적 차원(Krings)과 지표 사이의 약한 상관을 분석했다.
+- **ref-772**: 원문 미열람. 키 입력 수준 모델로 숙련 사용자의 무오류 과제 실행 시간을 연산자 시간의 합으로 추정하는 방법 해설. 강의 사이트 게재본.
+- **ref-773**: 원문 미열람. 가상 시운전 연구 36건을 검토해 시뮬레이션 능력과 검증된 시운전 결과를 잇는 근거가 부족하다고 평가한 구조적 리뷰.
+- **ref-774**: 원문 미열람. 딥러닝·매개변수 알고리즘·Dynamo 기반 Scan-to-BIM 자동화로 건물 단위 BIM 모델을 생성한 국내 실증 연구.
+- **ref-775**: 원문 미열람. 2D 도면의 선·문자를 분리 추출해 객체 BIM 을 준자동 생성하는 방법과 건물 사례의 생성 시간을 보고했다.
+- **ref-776**: 원문 미열람. 시설 관리용 as-built BIM 에서 수작업 모델링과 AI 기반 반자동 모델링의 시간·인력을 비교한 분석. 게재지 미확인.
 - **ref-762**: 원문 미열람. 대화형 분할의 클릭 수 기반 평가(NoC@85·90)와 고정확도 목표를 다룬 연구.
 - **ref-217**: 원문 미열람. 3D 레이저 스캔 의미 지도와 경로망 자동 설계로 다중 AGV 설치 시간을 줄이는 반자동 방법.
 - **ref-105**: 원문 미열람. Open-RMF 플릿 어댑터 템플릿 설정(층 이름별 대응점, 속도·차체·배터리 등). 이번 실행에서는 다시 열지 않았다.
@@ -161,7 +161,7 @@
     - f17: 로봇 쪽 지도 작성 주행·위치추정 조정은 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 ROP 측정 대상에서 제외하도록 서술
     - f11·f13: Scan-to-BIM 은 건설·시설 관리 영역 연구라 측정 방식의 사례로만 제안
     - f6·f7: 기계번역 분야 지표를 도면 보정에 옮기는 것은 추정(f15)으로만 서술
-- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 신규 ref-753(A-Scan2BIM README). 나머지 신규 14건(ref-748~ref-752, ref-754~ref-762)과 재사용 ref-217·ref-105 는 원문 미열람이라 신뢰도 상한 medium, high 없음. CEUR·arXiv·ScienceDirect 원문은 정책 차단. 검색 30회/40(한국어 6회), 신규 출처 15건/20(ref-748~ref-762, 예약 구간 안), 재사용 2건. 질문 선택: target.json 지정 q5-02 1건. q5-02 는 수정 노력 지표·수작업 대비 시간 비교 사례·편집 수와 시간의 관계(사실)로 답했으나 측정 구성·경계·시나리오(f14~f18)는 이 위키의 종합이고 물류 로봇 설정 작업 근거가 없어 질문 종합 신뢰도 low. 한국 자료: 국내 Scan-to-BIM 실증(ref-759) 1건, 품셈·물류 사례는 찾지 못함(일반 열린 질문 1건). 교차 규칙: 도면 해석 모델의 수정 노력 평가는 27. AI·학습·적응과 모델 운영과 적용 대상 6. 지도·공간·위치 모델 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(f12 가상 시운전은 21. 온보딩·설정·현장 시운전 쪽 근거로만 씀). 정정 요청 없음. 온톨로지 변경 없음: 시간·수정 측정은 공간 그래프 스키마의 개념·관계가 아니라 검증 방법이므로 아이디어 페이지 6절에 둔다. 후속 질문 2건. 페이지 제안: 트랙 산출물 2건, 세부영역 반영 제안 3건(갱신 상한과 별도). 백로그 참고: q5-11 이 q5-09 와 같은 질문으로 중복 등록되어 정리 필요.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 신규 ref-768(A-Scan2BIM README). 나머지 신규 14건(ref-763~ref-767, ref-769~ref-762)과 재사용 ref-217·ref-105 는 원문 미열람이라 신뢰도 상한 medium, high 없음. CEUR·arXiv·ScienceDirect 원문은 정책 차단. 검색 30회/40(한국어 6회), 신규 출처 15건/20(ref-763~ref-762, 예약 구간 안), 재사용 2건. 질문 선택: target.json 지정 q5-02 1건. q5-02 는 수정 노력 지표·수작업 대비 시간 비교 사례·편집 수와 시간의 관계(사실)로 답했으나 측정 구성·경계·시나리오(f14~f18)는 이 위키의 종합이고 물류 로봇 설정 작업 근거가 없어 질문 종합 신뢰도 low. 한국 자료: 국내 Scan-to-BIM 실증(ref-774) 1건, 품셈·물류 사례는 찾지 못함(일반 열린 질문 1건). 교차 규칙: 도면 해석 모델의 수정 노력 평가는 27. AI·학습·적응과 모델 운영과 적용 대상 6. 지도·공간·위치 모델 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(f12 가상 시운전은 21. 온보딩·설정·현장 시운전 쪽 근거로만 씀). 정정 요청 없음. 온톨로지 변경 없음: 시간·수정 측정은 공간 그래프 스키마의 개념·관계가 아니라 검증 방법이므로 아이디어 페이지 6절에 둔다. 후속 질문 2건. 페이지 제안: 트랙 산출물 2건, 세부영역 반영 제안 3건(갱신 상한과 별도). 백로그 참고: q5-11 이 q5-09 와 같은 질문으로 중복 등록되어 정리 필요.
 
 ## 트랙 블록
 

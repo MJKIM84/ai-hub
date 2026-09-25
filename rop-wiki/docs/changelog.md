@@ -65,6 +65,30 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 소제목 신설, 측정 구성 추정 중심), 후속 질문 q5-12·q5-13, 4·5·6·7·8·9절 갱신 |
+| 2026-09-25-82 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '검증 절차: 현장 모델링 시간 단축 측정' 소절 추가(q5-02, 추정 중심), 절 첫 문단과 평가 지표 소절 끝의 미조사 문장을 새 소절과 맞춤 |
+| 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-82(단계 5, q5-02) 진행 문단 추가 |
+| 2026-09-25-82 | 요약 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | 건축 도면 자동 인식 단계 5: q5-02 답함(현장 모델링 시간 단축을 시간·수정·결과 품질 세 축으로 재는 측정 구성, 추정 중심), 후속 질문 q5-12·q5-13, q5-11 폐기, 1차 조건부 승인 수정 15건·2차 수정 1건 이행 |
+| 2026-09-25-82 | 생성 | [docs/references/ref-793.md](references/ref-793.md) | 참고문헌 ref-793 등록: When Should a Network Emit Geometry, and When Should It Dete… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-794.md](references/ref-794.md) | 참고문헌 ref-794 등록: Map Model Extraction from Image Floor Plans |
+| 2026-09-25-82 | 생성 | [docs/references/ref-795.md](references/ref-795.md) | 참고문헌 ref-795 등록: Efficient Interactive Annotation of Segmentation Datasets wi… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-796.md](references/ref-796.md) | 참고문헌 ref-796 등록: Annotating Object Instances with a Polygon-RNN |
+| 2026-09-25-82 | 생성 | [docs/references/ref-797.md](references/ref-797.md) | 참고문헌 ref-797 등록: A-Scan2BIM: Assistive Scan to Building Information Modeling |
+| 2026-09-25-82 | 생성 | [docs/references/ref-798.md](references/ref-798.md) | 참고문헌 ref-798 등록: A-Scan2BIM — README (Official implementation of the paper A-… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-799.md](references/ref-799.md) | 참고문헌 ref-799 등록: A Study of Translation Edit Rate with Targeted Human Annotat… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-800.md](references/ref-800.md) | 참고문헌 ref-800 등록: Post-editing time as a measure of cognitive effort |
+| 2026-09-25-82 | 생성 | [docs/references/ref-801.md](references/ref-801.md) | 참고문헌 ref-801 등록: Quantitative Analysis of Post-Editing Effort Indicators for… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-802.md](references/ref-802.md) | 참고문헌 ref-802 등록: Using the Keystroke-Level Model to Estimate Execution Times |
+| 2026-09-25-82 | 생성 | [docs/references/ref-803.md](references/ref-803.md) | 참고문헌 ref-803 등록: A structured review of virtual commissioning: simulation fid… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-804.md](references/ref-804.md) | 참고문헌 ref-804 등록: Scan-to-BIM 자동화 기술을 활용한 건축물 단위의 BIM 모델 생성 - 강원소방학교 BIM 모델링 실… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-805.md](references/ref-805.md) | 참고문헌 ref-805 등록: Automated BIM generation using drawing recognition and line-… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-806.md](references/ref-806.md) | 참고문헌 ref-806 등록: Time-Benefit Analysis of Semiautomatic 3D Laser Scanning for… |
+| 2026-09-25-82 | 생성 | [docs/references/ref-792.md](references/ref-792.md) | 참고문헌 ref-792 등록: Getting to 99% Accuracy in Interactive Segmentation |
+| 2026-09-25-82 | 생성 | [docs/glossary/edit-cost.md](glossary/edit-cost.md) | 용어집 항목 편집 비용 |
+| 2026-09-25-82 | 생성 | [docs/glossary/number-of-clicks.md](glossary/number-of-clicks.md) | 용어집 항목 클릭 수 지표 |
+| 2026-09-25-82 | 생성 | [docs/glossary/keystroke-level-model.md](glossary/keystroke-level-model.md) | 용어집 항목 키 입력 수준 모델 |
+| 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-757 발행일 2026-04), 이력 행 추가 |
 | 2026-09-25-81 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16 |
 | 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가 |
