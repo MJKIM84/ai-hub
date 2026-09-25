@@ -1,0 +1,373 @@
+{
+  "duration_api_ms": 286449,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.903328199999999,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 109555,
+    "cache_read_input_tokens": 1106261,
+    "output_tokens": 18892,
+    "output_tokens_details": {
+      "thinking_tokens": 7945
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 109555,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11645,
+        "cache_read_input_tokens": 182361,
+        "cache_creation_input_tokens": 3348,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3348
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 18892,
+      "cacheReadInputTokens": 1106261,
+      "cacheCreationInputTokens": 109555,
+      "webSearchRequests": 0,
+      "costUSD": 1.4755882,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7945,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 206500,
+      "outputTokens": 8248,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.42774,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 24,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-68\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과에 nist.gov 뉴스 URL·제목과 AI RMF 1.0 자율 적용 지침(2023-01-26) 발표가 확인됨. 네 기능 Govern·Map·Measure·Manage 는 다른 검색 결과(NIST AI 100-1 등)로 확인됨. '거버넌스가 나머지 세 기능을 가로지른다'는 이번 스니펫에서 확인되지 않아 수정 지시 대상. 브리프에 교차 출처가 없어 cross_checked false.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. iso.org/standard/42001 검색 결과 일치, AIMS 수립·실행·유지·지속 개선 요구사항 표준으로 확인.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. iso.org/standard/77304.html 검색 결과 일치. 2023-02 발행, ISO 31000 을 AI 에 적용한 지침, 소통·맥락 설정·위험 평가·처리·감시·검토·기록·보고를 다룸이 스니펫으로 확인됨.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. law.go.kr lsiSeq=268543 검색 결과 일치. 시행령 시행일 2026-01-22, 고영향 인공지능이 생명·신체의 안전·기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있는 AI 라는 정의가 검색 결과로 확인됨. 개정안이 국회를 통과했다는 검색 결과가 있어 개정 법률의 시행일과 내용은 미확인. 기준일 명시 필요.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 정확한 URL(regulatory-framework-ai)은 검색 결과에 나오지 않았고, 같은 EC 'Shaping Europe's digital future' 포털의 AI Act 안내 내용(제품 안전 법령 대상 고위험 분류)과 EC AI Act Service Desk 의 제6조 설명으로 확인함. 약한 확인. 제6조(1)의 두 누적 조건(부속서 I 대상 제품의 안전 구성요소 또는 제품 자체 + 제3자 적합성 평가)과 맞음. 검색 결과에 'AI Omnibus 발효'가 있어 적용 시점이 개정됐을 수 있음. 브리프가 시점을 넣지 않은 것은 적절.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2204.01691 검색 결과 일치. Say=과제 접지, Can=사전 학습 기술의 가치 함수(affordance)를 이용한 세계 접지가 스니펫으로 확인됨. 두 값을 '곱한다'는 결합 방식은 스니펫에 없어 문구 수정 지시.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2304.11477 검색 결과 일치. 자연어→PDDL→고전 계획기→자연어 구조는 확인됨. 성능 비교 문구(대부분 최적, LLM 단독은 실행 가능한 계획도 대부분 실패)는 이번 스니펫에 직접 나오지 않음. 이전 실행 2026-09-25-66 f6 이 같은 논문(ref-092)의 저자 보고로 기록했으므로 저자 보고·벤치마크 도메인 조건 한정을 유지하는 조건으로 둔다. 같은 URL 이 기존 ref-092 로 등록돼 있어 중복 id.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2307.01928 검색 결과 일치. 등각 예측 기반 과제 완수의 통계적 보장, 사람 도움 최소화, 미세조정 없이 사용, 공간·수치·선호 모호성의 시뮬레이션·실로봇 실험이 스니펫으로 확인됨. '후보 행동이 하나로 좁혀지지 않을 때만'이라는 동작 조건은 스니펫에 없어 문구 수정 지시. 벤더 문서 근거가 아님(직전 반려 사유 해소).\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2209.07753 검색 결과 일치. 인식 출력을 처리하고 제어 기본 API 를 매개변수화하는 정책 코드를 few-shot 으로 생성하며, API 호출을 재조합함이 스니펫으로 확인됨.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"브리프는 원문 미열람(fetched false)으로 적었으나, 검증 에이전트가 raw.githubusercontent.com 의 AmbiK README 를 열어 1000쌍, 보정 100·시험 900, 모호성 유형·명확화 질문과 답·작업 계획 필드를 확인함. 모호성 유형은 선호·상식·안전 세 가지. 주방 환경 조건.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 이번 실행에서 다시 검색하지 않았음(검증 예산 배분). 이전 실행 2026-09-25-30·62 에서 검증을 통과한 출처 ref-359 를 재사용함. arXiv 최초판은 2024-09, 트랙 반영 제안은 EMNLP 2025 로 적어 판 표기가 다름. 기준일 표기 수정 지시.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2302.11649 제목이 검색 결과에 나타나 실재를 확인함. 주장은 방법과 말뭉치 존재에 한정되어 있고 수치는 발췌에만 있음(저자 보고, 판에 따라 다를 수 있음). 이전 실행 검증 통과분 재사용.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증 에이전트가 raw.githubusercontent.com 의 LoTa-Bench README 를 열어 가정 서비스 에이전트의 작업 계획 성능 자동 정량화, ALFRED/AI2-THOR 와 Watch-And-Help 확장/VirtualHome 두 환경 쌍을 확인함(브리프 표기는 fetched false). 2026-09-25-67 f46 과 같은 출처를 재사용함.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2604.05427 검색 결과 일치(2026-04-07 제출, Purdue SMART Lab). ISO 13482 근거 안전 속성 추출, 결정적 판정 게이트, 불변 조건·가드·중단 조건의 작업 안전 계약이 확인됨. 판정 결과는 accept·reject·defer 이며 'defer'를 '사람 확인 요청'으로 옮긴 것은 스니펫 범위를 넘어 문구 수정 지시. 개인 돌봄 로봇 표준 기반이라 물류 적용은 추정.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2209.05738 검색 결과 일치. MDP 정식화, 주의 기반 정책과 PPO, 총 이동 지연 최소화, 로봇·작업 수에 독립적인 전역 임베딩, 500개 작업에서 MPDM(탐욕)·RBTS(후회 기반) 대비 최대 10%(25~1000초) 개선, ICRA 2023 모두 스니펫으로 확인됨. 저자 보고, 시뮬레이션 조건, 단일 출처.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. papers.nips.cc 5656 검색 결과 일치. 스니펫에서 확인한 위험 요인은 경계 침식·얽힘·숨은 피드백 루프·선언되지 않은 소비자와 데이터 의존성이고, 설정 문제·외부 세계 변화는 이번 스니펫에 없어 목록을 줄이도록 수정 지시.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. research.google 게시 페이지와 IEEE Big Data 2017 게재가 검색 결과로 확인됨. 28개 시험·감시 항목과 운영 준비도·기술 부채 기준표가 스니펫으로 확인됨. '1급 관심사' 표현은 스니펫에 없어 문구 수정 지시.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. mlflow.org 모델 레지스트리 문서(latest 판 하위 workflow 페이지와 판별 문서)가 검색 결과로 확인됨. 계보·버전·별칭·태그, champion 별칭 재지정으로 운영 모델 교체가 스니펫으로 확인됨. 발행일 없음(문서 판 미확인). 오픈소스 문서이며 기능 설명이라 벤더 성능 주장 아님.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 머니투데이 2026-09-19 기사의 URL·제목이 검색 결과와 일치하고, 한진 대전 메가허브 AI 적재량 예측, 상·하차 종료 시점 예측, 다음 차량 접안 대기시간 단축이 스니펫으로 확인됨. 기업 발표를 전한 기사이고 수치 없음. [추정]·벤더 주장·vendor_claim true 표시 적절. 간선차량 접안은 거점 간 운송과 맞닿아 있어 범위 문구 수정 지시.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 종합 [추정]. 구성 출처는 모두 실재를 확인함(ref-740 은 ref-092 로 바꿈). 각 구성 요소의 성격은 해당 finding 들과 맞음. 원문 미열람.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"가상 시나리오 [추정]. 수치 없음. 출처가 가정·주방·벤치마크 환경임을 밝혔음. 피킹/시작 조건 배치 적절. ref-740 → ref-092.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"가상 시나리오 [추정]. 수치 없음. MLflow 별칭 재지정, ML Test Score, Sculley 의 위험 요인, RTAW 유형 학습 배차를 조합한 것으로 각 출처 범위와 맞음. 출하/예외·성과 배치 적절.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"분류 원문 9장에 비춘 범위 판단 [추정]. 인용 출처는 모두 실재를 확인함. ROP 직접 몫을 채택 기준·검증·확인 요청·기록·모델 버전 승인으로 한정해 경계를 지켰음.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"'연계 대상:' 표시 [추정]. 저수준 정책·파지·수요예측을 분류 원문 9장의 로봇 자체 지능·제어와 상위 업무 시스템으로 둔 판단이 원문과 맞음.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"영역 대응 [추정]. 교차 규칙(학습 기반 배차 → 13. 작업 배정 — MRTA)을 적용했음. 원문 주석이 가리키는 5. 로봇 능력·작업 온톨로지, 21. 온보딩·설정·현장 시운전, 6. 지도·공간·위치 모델, 19. 모니터링·이상 탐지·원인 분석은 page_proposals 10절 설명에서 원문으로 연결함. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈을 섞지 않았음.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[\"f19: 한진 간선차량 상·하차 시점 예측과 접안 대기 단축은 분류 원문 9장 '거점 간 운송' 경계와 맞닿아 있어, ROP 몫은 입출고 시간·인계·현장 작업 동기화로만 서술하고 간선 배차·운송계획은 연계 대상으로 적어야 한다(수정 지시로 해결 가능).\",\"f14: SafeGate 는 개인 돌봄 로봇 표준(ISO 13482) 기반 연구이므로 물류 적용은 [추정]으로만 쓴다(브리프 자체 점검과 같음).\"]},\"duplication\":{\"ok\":false,\"overlaps\":[\"ref-740(LLM+P, https://arxiv.org/abs/2304.11477)은 기존 ref-092(2026-09-25-66 브리프 출처표, 같은 URL)와 같은 출처다. f7·f20·f21 의 각주는 ref-092 를 재사용해야 한다.\",\"ref-739(SayCan)·ref-741(KnowNo)은 트랙 반영 제안이 인용한 기존 id(SayCan ref-087·ref-088, KnowNo ref-350·ref-351)와 URL 이 같을 수 있다. 참고문헌 목록 요약이 입력에 없어 확인하지 못했다. 같은 URL 이면 퍼블리셔가 기존 id 로 합친다.\",\"f13(LoTa-Bench, ref-541)은 2026-09-25-67 f46 과 같은 출처·주장이다. 모순은 없고 기존 id 재사용이 적절하다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f7·f20·f21: 각주 ref-740 을 기존 ref-092(같은 URL https://arxiv.org/abs/2304.11477)로 바꾸고, ref-740 은 reference_updates 에 새로 등록하지 않는다. 같은 출처가 이미 등록돼 있기 때문이다.\",\"f1: '거버넌스가 나머지 세 기능을 가로지른다' 구절을 뺀다. 원문 미열람 상태에서 검색 스니펫으로 확인되지 않았기 때문이다. 나머지(2023-01-26 발표, 자율 적용, 네 기능)는 [사실]로 유지한다.\",\"f6: '곱해'를 '결합해'로 바꾼다. 스니펫은 과제 접지와 세계 접지의 결합까지만 확인해 주고 결합 방식은 확인해 주지 않기 때문이다.\",\"f8: '후보 행동이 하나로 좁혀지지 않을 때만'을 '필요할 때'로 바꾸고 '저자 보고' 한정을 둔다. 스니펫이 뒷받침하는 범위가 거기까지이기 때문이다.\",\"f14: '실행 승인·사람 확인 요청·거부'를 '승인·거부·보류(defer)'로 바꾸고, 물류 적용은 [추정]으로만 서술한다. 논문이 쓰는 판정 결과가 accept·reject·defer 이고 개인 돌봄 로봇 표준 기반이기 때문이다.\",\"f16: 위험 요인 목록을 '경계 침식, 얽힘, 숨은 피드백 루프, 선언되지 않은 소비자, 데이터 의존성 등'으로 줄인다. 설정 문제·외부 세계 변화는 이번 스니펫에서 확인되지 않았기 때문이다. f22 의 '외부 세계 변화' 언급도 '데이터 의존성·숨은 피드백 루프 같은 ML 고유 위험'으로 바꾼다.\",\"f17: '데이터·모델·인프라 시험과 감시를 1급 관심사로 두는'을 빼고 '28개 시험·감시 항목으로 운영 준비도를 점수화하는 기준표'로 서술한다. 스니펫 범위를 넘기 때문이다.\",\"f4: 본문과 7절에 기준일 2026-01-22(시행령 시행일)를 적고, 개정 법률의 시행일과 고영향 영역 목록은 '미확인'으로 둔다. 개정안 통과 보도가 있지만 원문을 확인하지 못했기 때문이다.\",\"f5: 적용 시점을 쓰지 않고 '적용 시점은 개정(AI Omnibus) 논의로 이 페이지에서 확정하지 않음'을 한 줄 덧붙인다. 검색 결과에 개정 발효 소식이 있기 때문이다. 고위험 분류 요건은 '안전 구성요소이거나 제품 자체이고 제3자 적합성 평가 대상'으로 서술한다.\",\"f11: 기준일을 'arXiv 2024-09(학회 게재판은 미확인)'로 적는다. 트랙 반영 제안의 EMNLP 2025 표기와 판이 다르기 때문이다.\",\"f19: 본문 5절에서 [추정]과 '벤더 주장'을 함께 표기하고, ROP 쪽 몫을 입출고 시간·접안·현장 상·하차 작업 동기화로만 쓴다. 간선 배차·운송계획은 분류 원문 9장 '거점 간 운송'의 연계 대상으로 짧게 적는다.\",\"f15: 8절과 6절에서 개선 수치(최대 10%)에 '저자 보고, 시뮬레이션 창고 조건, 단일 출처'를 붙이고, 10절에서 13. 작업 배정 — MRTA 와 양쪽을 연결한다(교차 규칙: 학습 기반 배차).\",\"f21·f22: 5절 시나리오에 '가상 시나리오'임을 밝히고 수치를 넣지 않는다. 출처 환경(가정·주방·벤치마크, 시뮬레이션 창고)이 물류 현장과 다르다는 한계도 적는다.\",\"10절: 원문 주석의 교차 규칙에 따라 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전(매뉴얼 해석), 6. 지도·공간·위치 모델(도면 해석), 13. 작업 배정 — MRTA(학습 기반 배차), 19. 모니터링·이상 탐지·원인 분석(장애 분석)을 번호와 이름으로 모두 연결한다. 도면 해석·매뉴얼 추출 쪽은 이번 브리프에 finding 이 없으므로 '다음 실행에서 반영 예정인 트랙 제안'으로만 적고 내용은 서술하지 않는다.\",\"11절: oq-030 은 이번 실행에서 조사하지 않았으므로 열림 상태로 유지하고 해결로 바꾸지 않는다. open_questions_new 3건은 형식대로 등록한다.\",\"모든 각주 정의: 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 모든 항목에 source_unopened: true 를 넣는다. web_fetch_available: false 환경이고 브리프의 모든 출처가 fetched false 이기 때문이다.\",\"트랙 반영 제안 15건 중 이번 브리프가 다루지 않은 것(2026-09-25-05·21·36·54·57 과 -04 의 Cohen 외·Huang 외, -30 의 LMCR·구조화 출력, -37 의 DELIVER·SayPlan): 이번 페이지 본문에 넣지 않는다. 검증된 finding 이 없기 때문이다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f1·f6·f8·f14·f16·f17 은 검색 스니펫 범위로 문구를 줄이도록 지시했다. 원문 미열람 출처: ref-734, ref-735, ref-736, ref-737, ref-738, ref-739, ref-740, ref-741, ref-742, ref-743, ref-744, ref-745, ref-746, ref-747, ref-359, ref-056, ref-575. ref-354(AmbiK)와 ref-541(LoTa-Bench)은 검증 에이전트가 GitHub 공식 저장소 README 를 열어 확인했다. 주의: 사실로 둔 주장은 모두 단일 출처이고 논문 수치는 저자 보고다. 5절 시나리오와 9절 범위 구분은 이 위키의 추정이다. ref-738(EU AI Act 안내 페이지)은 정확한 URL 이 검색 결과에 나오지 않아 같은 포털 내용으로만 약하게 확인했다. ref-740 은 기존 ref-092 와 같은 출처라 재사용하도록 지시했다. 한국 인공지능 기본법의 개정 법률 내용과 EU AI Act 적용 시점은 미확인이다. oq-030 은 이번에 조사하지 않아 열림으로 남는다. 정정 요청 없음. 검색 사용: 검증 17회(리서치 12회와 합쳐 29/30).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-68",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과에 nist.gov 뉴스 URL·제목과 AI RMF 1.0 자율 적용 지침(2023-01-26) 발표가 확인됨. 네 기능 Govern·Map·Measure·Manage 는 다른 검색 결과(NIST AI 100-1 등)로 확인됨. '거버넌스가 나머지 세 기능을 가로지른다'는 이번 스니펫에서 확인되지 않아 수정 지시 대상. 브리프에 교차 출처가 없어 cross_checked false."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. iso.org/standard/42001 검색 결과 일치, AIMS 수립·실행·유지·지속 개선 요구사항 표준으로 확인."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. iso.org/standard/77304.html 검색 결과 일치. 2023-02 발행, ISO 31000 을 AI 에 적용한 지침, 소통·맥락 설정·위험 평가·처리·감시·검토·기록·보고를 다룸이 스니펫으로 확인됨."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. law.go.kr lsiSeq=268543 검색 결과 일치. 시행령 시행일 2026-01-22, 고영향 인공지능이 생명·신체의 안전·기본권에 중대한 영향을 미치거나 위험을 초래할 우려가 있는 AI 라는 정의가 검색 결과로 확인됨. 개정안이 국회를 통과했다는 검색 결과가 있어 개정 법률의 시행일과 내용은 미확인. 기준일 명시 필요."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 정확한 URL(regulatory-framework-ai)은 검색 결과에 나오지 않았고, 같은 EC 'Shaping Europe's digital future' 포털의 AI Act 안내 내용(제품 안전 법령 대상 고위험 분류)과 EC AI Act Service Desk 의 제6조 설명으로 확인함. 약한 확인. 제6조(1)의 두 누적 조건(부속서 I 대상 제품의 안전 구성요소 또는 제품 자체 + 제3자 적합성 평가)과 맞음. 검색 결과에 'AI Omnibus 발효'가 있어 적용 시점이 개정됐을 수 있음. 브리프가 시점을 넣지 않은 것은 적절."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2204.01691 검색 결과 일치. Say=과제 접지, Can=사전 학습 기술의 가치 함수(affordance)를 이용한 세계 접지가 스니펫으로 확인됨. 두 값을 '곱한다'는 결합 방식은 스니펫에 없어 문구 수정 지시."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2304.11477 검색 결과 일치. 자연어→PDDL→고전 계획기→자연어 구조는 확인됨. 성능 비교 문구(대부분 최적, LLM 단독은 실행 가능한 계획도 대부분 실패)는 이번 스니펫에 직접 나오지 않음. 이전 실행 2026-09-25-66 f6 이 같은 논문(ref-092)의 저자 보고로 기록했으므로 저자 보고·벤치마크 도메인 조건 한정을 유지하는 조건으로 둔다. 같은 URL 이 기존 ref-092 로 등록돼 있어 중복 id."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2307.01928 검색 결과 일치. 등각 예측 기반 과제 완수의 통계적 보장, 사람 도움 최소화, 미세조정 없이 사용, 공간·수치·선호 모호성의 시뮬레이션·실로봇 실험이 스니펫으로 확인됨. '후보 행동이 하나로 좁혀지지 않을 때만'이라는 동작 조건은 스니펫에 없어 문구 수정 지시. 벤더 문서 근거가 아님(직전 반려 사유 해소)."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2209.07753 검색 결과 일치. 인식 출력을 처리하고 제어 기본 API 를 매개변수화하는 정책 코드를 few-shot 으로 생성하며, API 호출을 재조합함이 스니펫으로 확인됨."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "브리프는 원문 미열람(fetched false)으로 적었으나, 검증 에이전트가 raw.githubusercontent.com 의 AmbiK README 를 열어 1000쌍, 보정 100·시험 900, 모호성 유형·명확화 질문과 답·작업 계획 필드를 확인함. 모호성 유형은 선호·상식·안전 세 가지. 주방 환경 조건."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 이번 실행에서 다시 검색하지 않았음(검증 예산 배분). 이전 실행 2026-09-25-30·62 에서 검증을 통과한 출처 ref-359 를 재사용함. arXiv 최초판은 2024-09, 트랙 반영 제안은 EMNLP 2025 로 적어 판 표기가 다름. 기준일 표기 수정 지시."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2302.11649 제목이 검색 결과에 나타나 실재를 확인함. 주장은 방법과 말뭉치 존재에 한정되어 있고 수치는 발췌에만 있음(저자 보고, 판에 따라 다를 수 있음). 이전 실행 검증 통과분 재사용."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증 에이전트가 raw.githubusercontent.com 의 LoTa-Bench README 를 열어 가정 서비스 에이전트의 작업 계획 성능 자동 정량화, ALFRED/AI2-THOR 와 Watch-And-Help 확장/VirtualHome 두 환경 쌍을 확인함(브리프 표기는 fetched false). 2026-09-25-67 f46 과 같은 출처를 재사용함."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2604.05427 검색 결과 일치(2026-04-07 제출, Purdue SMART Lab). ISO 13482 근거 안전 속성 추출, 결정적 판정 게이트, 불변 조건·가드·중단 조건의 작업 안전 계약이 확인됨. 판정 결과는 accept·reject·defer 이며 'defer'를 '사람 확인 요청'으로 옮긴 것은 스니펫 범위를 넘어 문구 수정 지시. 개인 돌봄 로봇 표준 기반이라 물류 적용은 추정."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2209.05738 검색 결과 일치. MDP 정식화, 주의 기반 정책과 PPO, 총 이동 지연 최소화, 로봇·작업 수에 독립적인 전역 임베딩, 500개 작업에서 MPDM(탐욕)·RBTS(후회 기반) 대비 최대 10%(25~1000초) 개선, ICRA 2023 모두 스니펫으로 확인됨. 저자 보고, 시뮬레이션 조건, 단일 출처."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. papers.nips.cc 5656 검색 결과 일치. 스니펫에서 확인한 위험 요인은 경계 침식·얽힘·숨은 피드백 루프·선언되지 않은 소비자와 데이터 의존성이고, 설정 문제·외부 세계 변화는 이번 스니펫에 없어 목록을 줄이도록 수정 지시."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. research.google 게시 페이지와 IEEE Big Data 2017 게재가 검색 결과로 확인됨. 28개 시험·감시 항목과 운영 준비도·기술 부채 기준표가 스니펫으로 확인됨. '1급 관심사' 표현은 스니펫에 없어 문구 수정 지시."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. mlflow.org 모델 레지스트리 문서(latest 판 하위 workflow 페이지와 판별 문서)가 검색 결과로 확인됨. 계보·버전·별칭·태그, champion 별칭 재지정으로 운영 모델 교체가 스니펫으로 확인됨. 발행일 없음(문서 판 미확인). 오픈소스 문서이며 기능 설명이라 벤더 성능 주장 아님."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 머니투데이 2026-09-19 기사의 URL·제목이 검색 결과와 일치하고, 한진 대전 메가허브 AI 적재량 예측, 상·하차 종료 시점 예측, 다음 차량 접안 대기시간 단축이 스니펫으로 확인됨. 기업 발표를 전한 기사이고 수치 없음. [추정]·벤더 주장·vendor_claim true 표시 적절. 간선차량 접안은 거점 간 운송과 맞닿아 있어 범위 문구 수정 지시."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 종합 [추정]. 구성 출처는 모두 실재를 확인함(ref-740 은 ref-092 로 바꿈). 각 구성 요소의 성격은 해당 finding 들과 맞음. 원문 미열람."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "가상 시나리오 [추정]. 수치 없음. 출처가 가정·주방·벤치마크 환경임을 밝혔음. 피킹/시작 조건 배치 적절. ref-740 → ref-092."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "가상 시나리오 [추정]. 수치 없음. MLflow 별칭 재지정, ML Test Score, Sculley 의 위험 요인, RTAW 유형 학습 배차를 조합한 것으로 각 출처 범위와 맞음. 출하/예외·성과 배치 적절."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "분류 원문 9장에 비춘 범위 판단 [추정]. 인용 출처는 모두 실재를 확인함. ROP 직접 몫을 채택 기준·검증·확인 요청·기록·모델 버전 승인으로 한정해 경계를 지켰음."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "'연계 대상:' 표시 [추정]. 저수준 정책·파지·수요예측을 분류 원문 9장의 로봇 자체 지능·제어와 상위 업무 시스템으로 둔 판단이 원문과 맞음."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "영역 대응 [추정]. 교차 규칙(학습 기반 배차 → 13. 작업 배정 — MRTA)을 적용했음. 원문 주석이 가리키는 5. 로봇 능력·작업 온톨로지, 21. 온보딩·설정·현장 시운전, 6. 지도·공간·위치 모델, 19. 모니터링·이상 탐지·원인 분석은 page_proposals 10절 설명에서 원문으로 연결함. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈을 섞지 않았음."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": [
+        "f19: 한진 간선차량 상·하차 시점 예측과 접안 대기 단축은 분류 원문 9장 '거점 간 운송' 경계와 맞닿아 있어, ROP 몫은 입출고 시간·인계·현장 작업 동기화로만 서술하고 간선 배차·운송계획은 연계 대상으로 적어야 한다(수정 지시로 해결 가능).",
+        "f14: SafeGate 는 개인 돌봄 로봇 표준(ISO 13482) 기반 연구이므로 물류 적용은 [추정]으로만 쓴다(브리프 자체 점검과 같음)."
+      ]
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "ref-740(LLM+P, https://arxiv.org/abs/2304.11477)은 기존 ref-092(2026-09-25-66 브리프 출처표, 같은 URL)와 같은 출처다. f7·f20·f21 의 각주는 ref-092 를 재사용해야 한다.",
+        "ref-739(SayCan)·ref-741(KnowNo)은 트랙 반영 제안이 인용한 기존 id(SayCan ref-087·ref-088, KnowNo ref-350·ref-351)와 URL 이 같을 수 있다. 참고문헌 목록 요약이 입력에 없어 확인하지 못했다. 같은 URL 이면 퍼블리셔가 기존 id 로 합친다.",
+        "f13(LoTa-Bench, ref-541)은 2026-09-25-67 f46 과 같은 출처·주장이다. 모순은 없고 기존 id 재사용이 적절하다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f7·f20·f21: 각주 ref-740 을 기존 ref-092(같은 URL https://arxiv.org/abs/2304.11477)로 바꾸고, ref-740 은 reference_updates 에 새로 등록하지 않는다. 같은 출처가 이미 등록돼 있기 때문이다.",
+      "f1: '거버넌스가 나머지 세 기능을 가로지른다' 구절을 뺀다. 원문 미열람 상태에서 검색 스니펫으로 확인되지 않았기 때문이다. 나머지(2023-01-26 발표, 자율 적용, 네 기능)는 [사실]로 유지한다.",
+      "f6: '곱해'를 '결합해'로 바꾼다. 스니펫은 과제 접지와 세계 접지의 결합까지만 확인해 주고 결합 방식은 확인해 주지 않기 때문이다.",
+      "f8: '후보 행동이 하나로 좁혀지지 않을 때만'을 '필요할 때'로 바꾸고 '저자 보고' 한정을 둔다. 스니펫이 뒷받침하는 범위가 거기까지이기 때문이다.",
+      "f14: '실행 승인·사람 확인 요청·거부'를 '승인·거부·보류(defer)'로 바꾸고, 물류 적용은 [추정]으로만 서술한다. 논문이 쓰는 판정 결과가 accept·reject·defer 이고 개인 돌봄 로봇 표준 기반이기 때문이다.",
+      "f16: 위험 요인 목록을 '경계 침식, 얽힘, 숨은 피드백 루프, 선언되지 않은 소비자, 데이터 의존성 등'으로 줄인다. 설정 문제·외부 세계 변화는 이번 스니펫에서 확인되지 않았기 때문이다. f22 의 '외부 세계 변화' 언급도 '데이터 의존성·숨은 피드백 루프 같은 ML 고유 위험'으로 바꾼다.",
+      "f17: '데이터·모델·인프라 시험과 감시를 1급 관심사로 두는'을 빼고 '28개 시험·감시 항목으로 운영 준비도를 점수화하는 기준표'로 서술한다. 스니펫 범위를 넘기 때문이다.",
+      "f4: 본문과 7절에 기준일 2026-01-22(시행령 시행일)를 적고, 개정 법률의 시행일과 고영향 영역 목록은 '미확인'으로 둔다. 개정안 통과 보도가 있지만 원문을 확인하지 못했기 때문이다.",
+      "f5: 적용 시점을 쓰지 않고 '적용 시점은 개정(AI Omnibus) 논의로 이 페이지에서 확정하지 않음'을 한 줄 덧붙인다. 검색 결과에 개정 발효 소식이 있기 때문이다. 고위험 분류 요건은 '안전 구성요소이거나 제품 자체이고 제3자 적합성 평가 대상'으로 서술한다.",
+      "f11: 기준일을 'arXiv 2024-09(학회 게재판은 미확인)'로 적는다. 트랙 반영 제안의 EMNLP 2025 표기와 판이 다르기 때문이다.",
+      "f19: 본문 5절에서 [추정]과 '벤더 주장'을 함께 표기하고, ROP 쪽 몫을 입출고 시간·접안·현장 상·하차 작업 동기화로만 쓴다. 간선 배차·운송계획은 분류 원문 9장 '거점 간 운송'의 연계 대상으로 짧게 적는다.",
+      "f15: 8절과 6절에서 개선 수치(최대 10%)에 '저자 보고, 시뮬레이션 창고 조건, 단일 출처'를 붙이고, 10절에서 13. 작업 배정 — MRTA 와 양쪽을 연결한다(교차 규칙: 학습 기반 배차).",
+      "f21·f22: 5절 시나리오에 '가상 시나리오'임을 밝히고 수치를 넣지 않는다. 출처 환경(가정·주방·벤치마크, 시뮬레이션 창고)이 물류 현장과 다르다는 한계도 적는다.",
+      "10절: 원문 주석의 교차 규칙에 따라 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전(매뉴얼 해석), 6. 지도·공간·위치 모델(도면 해석), 13. 작업 배정 — MRTA(학습 기반 배차), 19. 모니터링·이상 탐지·원인 분석(장애 분석)을 번호와 이름으로 모두 연결한다. 도면 해석·매뉴얼 추출 쪽은 이번 브리프에 finding 이 없으므로 '다음 실행에서 반영 예정인 트랙 제안'으로만 적고 내용은 서술하지 않는다.",
+      "11절: oq-030 은 이번 실행에서 조사하지 않았으므로 열림 상태로 유지하고 해결로 바꾸지 않는다. open_questions_new 3건은 형식대로 등록한다.",
+      "모든 각주 정의: 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 모든 항목에 source_unopened: true 를 넣는다. web_fetch_available: false 환경이고 브리프의 모든 출처가 fetched false 이기 때문이다.",
+      "트랙 반영 제안 15건 중 이번 브리프가 다루지 않은 것(2026-09-25-05·21·36·54·57 과 -04 의 Cohen 외·Huang 외, -30 의 LMCR·구조화 출력, -37 의 DELIVER·SayPlan): 이번 페이지 본문에 넣지 않는다. 검증된 finding 이 없기 때문이다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f1·f6·f8·f14·f16·f17 은 검색 스니펫 범위로 문구를 줄이도록 지시했다. 원문 미열람 출처: ref-734, ref-735, ref-736, ref-737, ref-738, ref-739, ref-740, ref-741, ref-742, ref-743, ref-744, ref-745, ref-746, ref-747, ref-359, ref-056, ref-575. ref-354(AmbiK)와 ref-541(LoTa-Bench)은 검증 에이전트가 GitHub 공식 저장소 README 를 열어 확인했다. 주의: 사실로 둔 주장은 모두 단일 출처이고 논문 수치는 저자 보고다. 5절 시나리오와 9절 범위 구분은 이 위키의 추정이다. ref-738(EU AI Act 안내 페이지)은 정확한 URL 이 검색 결과에 나오지 않아 같은 포털 내용으로만 약하게 확인했다. ref-740 은 기존 ref-092 와 같은 출처라 재사용하도록 지시했다. 한국 인공지능 기본법의 개정 법률 내용과 EU AI Act 적용 시점은 미확인이다. oq-030 은 이번에 조사하지 않아 열림으로 남는다. 정정 요청 없음. 검색 사용: 검증 17회(리서치 12회와 합쳐 29/30).",
+    "retry_reason": null
+  },
+  "ttft_ms": 10425,
+  "type": "result",
+  "duration_ms": 207544,
+  "uuid": "f46d2ba8-601f-46fe-888c-0564a12d018b",
+  "ttft_stream_ms": 1231,
+  "time_to_request_ms": 75,
+  "first_content_frame_ms": 1231,
+  "time_to_request_from_spawn_ms": 7245463,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790320341632.296,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 209.4
+}

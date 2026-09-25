@@ -1,0 +1,373 @@
+{
+  "duration_api_ms": 261358,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.007435600000001,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 370362,
+    "cache_read_input_tokens": 1802113,
+    "output_tokens": 19073,
+    "output_tokens_details": {
+      "thinking_tokens": 7831
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 370362,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11587,
+        "cache_read_input_tokens": 441755,
+        "cache_creation_input_tokens": 4761,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4761
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 151602,
+      "outputTokens": 6203,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 12,
+      "costUSD": 0.302617,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 19073,
+      "cacheReadInputTokens": 1802113,
+      "cacheCreationInputTokens": 370362,
+      "webSearchRequests": 0,
+      "costUSD": 3.7048186000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7831,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 21,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-65\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw.githubusercontent.com factsheet.schema(main)를 검증에서 직접 열어 typeSpecification(…supportedZones)·physicalParameters(min/maxSpeed, min/maxHeight, width, length 등)를 대조했고 계단·문·승강기·단 높이 필드가 없음을 확인. 단일 발행 주체, 발행일 미확인.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(data/source_texts/ref-031) 5.2 'restricted for certain mobile robot groups (based on the size ratios)', 5.3 경로 계산의 물리 특성 고려, 6.1.1 허용 엣지만 주문 포함, 6.1.4.3 INVALID_ORDER_ACTION 모두 원문에 있음. 관제 보유 통행 제한 부분은 단계 3 페이지 q3-02(실행 2026-09-25-58)에 이미 같은 문장이 있어 기존 각주 재사용 대상. ref-031 은 fetched_via 가 inbox 여야 함(브리프는 github_raw, fetch_url null).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지: 두 스키마의 단위(미터·m/s) 일치는 factsheet 열람으로 확인, order.schema(ref-413)는 이번 실행 원문 미열람(이전 실행 확인). 비교 규칙이 명세에 없다는 점을 본문에 남긴다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: config.yaml 을 검증에서 열어 limits·profile(footprint 0.3, vicinity 0.5)·reversible·battery_system·task_capabilities(loop·delivery)·actions 와 문·승강기 필드 부재 확인. graph_idx 는 ref-079(이번 원문 미열람, 기존 페이지 q3-02 에 같은 내용) 기준 — 기존 문장·각주 재사용.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"LaneRequest.msg(fleet_name, open_lanes, close_lanes) 검증에서 열어 확인. 주의: 같은 rmf_traffic 저장소에 LaneClosure.hpp(차선 열림·닫힘 상태를 계획기에 주는 클래스)가 있음을 검증에서 확인 — '그래프 정의에 폐쇄 상태가 없다'는 Graph.hpp 파일 범위로만 서술해야 하며 rmf_traffic 전체로 일반화하면 과장. 두 출처 같은 발행 주체.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: integration_doors.md 원본을 열어 traffic_editor 로 문 이름과 함께 그림, 문 어댑터가 'state supervisor' 로 작업을 방해할 요청을 막음, DoorRequest·DoorState 확인.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: nav2_route README 열람으로 GeoJSON 노드·엣지 metadata, Penalty·Semantic·DynamicEdges 채점, 엣지 진입·이탈·노드 도달 시 동작(문 열기 예) 확인. 단 동적 엣지는 원문 요약상 '외부(제3자) 애플리케이션이 요청한 값으로 엣지를 닫고 다시 여는' 기능으로 확인됨 — '로봇이 막힌 엣지를 보고해 닫음'으로 한정하지 않도록 수정 지시.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(buildingSMART ifc43-docs Pset_DoorCommon, HasDrive·HandicapAccessible 속성 페이지)가 정의와 일치. IfcDoor OverallWidth 는 ref-419(개발 브랜치, 이번 미열람, 기존 확인). 발행 기관 공식 문서라 표준 근거로 인정, 신뢰도 medium 상한.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(standards.buildingsmart.org IFC4.3.2 Pset_StairCommon)에 RiserHeight·TreadLength·NumberOfRiser 정의 일치. '통과 난이도를 수치로 담을 수 있다'는 해석이므로 문장 뒷부분은 추정으로 분리 서술 권장.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(MDPI Buildings 14(8) 2274, Concordia 저장소)가 네 개념 묶음과 UGV 의 '최대 계단 단 높이' 제약을 뒷받침. 기존 단계 3 페이지에 OBRNIT(ref-461) 문장이 있어 각주 재사용.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(IJGI 9(2) 66, doi 10.3390/ijgi9020066)가 PWDElevator 면적·통과 폭, PWDRamp 경사, 임계값 기반 통과 가능·어려움·불가 3단계를 뒷받침. 대상은 교통약자(사람)이며 로봇 적용은 이 위키의 추론임을 본문에 남긴다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(arXiv 2402.18174, 저자 de Vos 외 6인, 2024-02)가 BIM 의미·형상의 그래프 세계 모델과 로봇 스킬별 지도 생성을 뒷받침. '유리 아닌 요소' 예시는 검증 스니펫에서 재확인 못함(브리프 스니펫 기준).\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. Springer 챕터 10.1007/978-3-031-85859-8_5 검색 초록이 연결 그래프 가중치·A*·로봇별 지도·다양한 주행 능력 수용을 뒷받침.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증에서 공식 저장소 README(raw)를 열어 required/provided capabilities, 속성 예(maximum speed, allowed tolerances), 속성 제약을 precondition·invariant·postcondition 으로 사용, 매칭 확인(버전 1.0, 날짜 미기재). 단 브리프 sources 는 fetched:false·source_unopened:true 로, 한계 문구(raw 로 열었다)와 불일치 — 브리프 누락 기록. 코드 상한 유지(medium).\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2209.10900 초록 검색 결과와 일치(2022-09-22 제출, 2023-02-09 개정, at - Automatisierungstechnik 게재 확인).\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. Frontiers(2025-02-25, PubMed·PMC 등재) 검색 결과가 SCITOS G5 + Kinova 7-DOF 팔, 문 열기·승강기 조작, 요양 시설·대학 건물 현장 시험을 뒷받침. '연계 대상:' 표시 적정(분류 원문 9장 로봇 자체 지능·제어).\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. KSSN 검색에 KS B 7317 표준명 등재 확인, 2021-11-11 보도(ZDNet·전자신문 등 같은 보도자료 기반, 독립 아님)가 속도제어·보호정지·높낮이차·틈새극복·추락·넘어짐 방지 기준을 뒷받침. 수치 기준 미확인 유지. 승강기 안전 제어 자체는 연계 대상.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. KCI·KoreaScience 검색 결과(지적과 국토정보 52(2), 17-34, 2022, DOI 10.22640/LXSIRI.2022.52.2.17)가 업무용 건축물 한정, FGI·AHP, 23개 항목, 요건 2분류를 뒷받침. 저자는 이관용·구한민·이윤서·정민승·윤동근·김갑성으로 확인(브리프 org '저자 미확인' 정정 대상).\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2601.10340 검색 결과(저자 Morilla-Cabello·Montijano)가 정찰 비행 기반 의미 지도, 플랫폼별 능력 인식 경로, 이종 차량 경로 문제로 배정·궤적 동시 계산, 시뮬레이션과 3개 플랫폼 실임무를 뒷받침. '실외' 환경 한정은 검증 스니펫에서 확인되지 않음(대규모·미지 복잡 환경 점검).\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2606.00117(Halilovic·Hasic·Krivic) 검색 결과가 지역 어포던스 온톨로지·가상 상태 변화 평가·로봇 사서 벤치마크를 뒷받침. 발행일: arXiv id 2606 과 cs.RO 2026-06 목록 기준 2026-06 — 브리프의 2026-05 는 정정 대상.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지: 구성 사실(f8·f9·f10·f11·f14·f1·f3)은 확인됨. 로봇 통과성을 요구–제공 능력 매칭으로 정의한 단일 출처 없음을 본문에 남긴다. 용어는 용어집 '요구 능력·제공 능력', '능력 매칭'과 맞춘다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지: 문 어댑터(f6)·HasDrive(f8)·팔 기반 조작(f16)·KS 탑승 기준(f17) 확인. 원문 VDA 5050 5.3 이 관제 기능에 '문·게이트·승강기 등 주변 시스템과의 통신'을 둔다는 점도 설비 연동 경로와 합치. 로봇 조작·승강기 안전 제어는 연계 대상 표시 유지.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 단계 3 페이지 q3-02 의 기존 추정 문장('플릿 중립 기본 그래프와 로봇별 통행 가능 여부 분리')과 대부분 겹침 — 새 문장으로 반복하지 말고 기존 문장을 확장(능력 속성 별도 보유, 현재 상태 층 분리)하는 방식으로 쓴다. 현재 상태 층은 8. 실시간 세계 상태·데이터 일관성 쪽.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지: CHORAL(f19)·Omer 외(f13)·VDA 5050 허용 엣지(f2) 확인. 작업 배정은 13. 작업 배정 — MRTA 연결로만 서술. 흐름 단계 출하 적정.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f2(관제 보유 로봇별 통행 제한·허용 엣지만 주문)는 단계 3 페이지 q3-02 절의 ref-031 문장과 같음 — 새 문장 대신 기존 문장·각주 재사용\",\"f23(플릿 중립 기본 그래프와 로봇별 통행 가능 여부 분리)는 단계 3 페이지 q3-02 종합과 공간 그래프 스키마 초안 6절 '주행 차선의 통과 조건 가운데 로봇 능력 조건' 항목과 겹침 — 확장 서술로 처리\",\"f4 의 traffic-editor graph_idx 플릿별 그래프 부분은 단계 3 페이지 q3-02(ref-079) 기존 문장과 같음\",\"f10 OBRNIT(ref-461)은 단계 3 페이지 q3-01 절에 기존 문장이 있음 — 각주 재사용, 새 내용(최대 계단 단 높이 제약)만 추가\",\"공간 그래프 스키마 초안 6절 q3-03 항목('공간 그래프를 로봇 기능 온톨로지와 어떤 관계로 잇는가')은 이번 답으로 근거 보강 대상이며 해결로 바꾸지 않는다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f5: '그래프 정의에는 로봇별 필터나 차선 폐쇄 상태가 없다'를 'rmf_traffic 의 Graph.hpp 파일에는 …이 없다'로 파일 범위를 한정해 쓰고, rmf_traffic 전체에 폐쇄 상태 표현이 없다고 일반화하지 않는다 — 검증에서 같은 저장소에 LaneClosure.hpp(차선 열림·닫힘 상태 클래스)가 있음을 확인했으나 브리프 finding 이 아니므로 본문에 새로 서술하지는 않는다.\",\"f7: 동적 엣지 채점기를 '로봇이 막힌 엣지를 보고해 닫는다'로 한정하지 말고 '외부 요청 값에 따라 막힌 엣지를 닫고 다시 여는 동적 엣지 채점기'로 서술한다 — 검증 열람에서 원문은 제3자 애플리케이션 요청 값을 근거로 설명한다.\",\"f9: 앞 문장(Pset_StairCommon 의 세 속성)은 [사실], '계단의 통과 난이도를 수치로 담을 수 있다'는 해석이므로 별도 문장 [추정]으로 나눈다.\",\"f11: 교통약자(사람) 대상 연구임을 본문에 밝히고, 로봇 통과 판정에 옮기는 부분은 f21 의 [추정] 문장에서만 다룬다.\",\"f19: '(실외 점검 임무 대상)'의 '실외'를 빼고 '점검 임무 대상(환경 조건 미확인)'으로 쓴다 — 검증 검색 초록은 대규모·미지 복잡 환경과 정찰 비행만 말한다. 각주 ref-654 기관 칸은 'Morilla-Cabello, D., & Montijano, E.'로 쓴다.\",\"f20·ref-655: 발행일을 2026-05 에서 2026-06 으로 고친다(arXiv 2606.00117, cs.RO 2026-06 목록). reference_updates 의 published 도 2026-06.\",\"ref-658: 각주·reference_updates 의 기관 칸을 '이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34)'으로 고친다 — 검증 검색(KCI·KoreaScience)으로 확인.\",\"ref-031: reference_updates 의 원문 열람 경로는 입력 원문 텍스트(inbox)로 적는다 — 브리프 sources 의 fetched_via 'github_raw'·fetch_url null 은 자체 한계 문구(inbox)와 어긋난다.\",\"원문 미열람 표기: ref-079·ref-348·ref-413·ref-419·ref-461·ref-647·ref-648·ref-649·ref-650·ref-651·ref-652·ref-653·ref-654·ref-655·ref-656·ref-657·ref-658 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다(ref-651 은 브리프 sources 기준 미열람으로 둔다).\",\"f2·f4(graph_idx)·f10·f23: 단계 3 페이지에 이미 있는 같은 주장은 새 문장을 만들지 말고 기존 문장과 각주(ref-031·ref-079·ref-461)를 재사용하며, 새로 확인된 부분(도입 단계 로봇 그룹별 경로 제한, INVALID_ORDER_ACTION 거부, 플릿 설정의 문·승강기 필드 부재, OBRNIT 최대 단 높이 제약)만 덧붙인다.\",\"f21: '요구 능력–제공 능력 매칭'은 용어집 [요구 능력·제공 능력](../../glossary/required-and-provided-capability.md)과 [능력 매칭](../../glossary/capability-matchmaking.md)에 링크해 같은 용어로 쓴다.\",\"용어 후보 '통과 가능성(Traversability)': 정의에서 '능력과 현재 상태로'를 '로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다'로 고쳐 f23 의 정적·현재 상태 구분과 맞춘다.\",\"온톨로지 초안: 승인한 변경 두 건만 반영한다 — '문'에 속성 '자동 구동 여부(IFC 4.3.2 Pset_DoorCommon.HasDrive)'·'장애인 접근 가능(HandicapAccessible, 지역 건축 기준)' 추가(f8), '계단'에 속성 '단 높이·디딤판 길이·단 수(Pset_StairCommon RiserHeight·TreadLength·NumberOfRiser)' 추가(f9). 두 행 상태는 '확정' 유지, 초안 버전 v0.7 → v0.8(H1·auto 상태·프런트매터·JSON 네 곳 일치).\",\"온톨로지 초안: 개념 '통과 요구 조건(Traversal Requirement)' 추가는 반영하지 않고 6절 미해결 모델링 질문으로 둔다 — 아이디어 정의 문구 밖 개념이고 관계가 정해지지 않았으며, 매뉴얼 기반 로봇 기능 온톨로지 트랙의 '작업 요구'·'제약'·'실행 조건' 개념과 중복 여부를 입력으로 확인할 수 없고, 근거 f11(사람 대상)·f14(제조 공정)를 로봇 공간 통과로 옮기는 것은 추정이다(f21 [추정] 근거로 6절 q3-03 항목에 보강).\",\"세부영역 반영 제안(10. 설비·건물 시스템 연동): KS B 7317 은 표준명·제정 사실만 [사실]로 쓰고 단차·틈새 수치는 '미확인'으로 두며, 승강기 탑승 안전 제어 자체는 '연계 대상'으로 짧게 적는다.\",\"단계 3 페이지 6절: '다른 아이디어와의 연결'과 '핵심 구성 요소 가운데 능력 대조' 행은 이번 실행(q3-03, 결론 추정)으로 충족 표시할 수 있으나, 시뮬레이션 초기값(q3-04)과 실험 계획 행은 미충족으로 두고 '다음 단계로 전환: 아니오(완료 조건 미충족: 시뮬레이션 초기값, 실험 계획; 막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09)'로 쓴다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(raw.githubusercontent.com 만 열림)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-079, ref-348, ref-413, ref-419, ref-461, ref-647, ref-648, ref-649, ref-650, ref-651, ref-652, ref-653, ref-654, ref-655, ref-656, ref-657, ref-658. 브리프 기록 불일치: ref-651 은 sources 에 미열람(fetched false)으로 적혔으나 자체 한계 문구는 raw 로 열었다고 적음(검증에서 README 를 열어 주장 일치 확인, 신뢰도 상한은 유지), ref-031 은 fetched_via 가 inbox 여야 함. 검증 검색 13회(리서치 22회 합산 35/40). 주의: q3-03 의 답(요구–제공 능력 매칭, 로봇 능력 또는 설비 연동 선택 조건, 로봇별 통행 가능 부분 그래프와 현재 상태 층 분리)은 확인된 사실을 이 위키가 묶은 추정이며 이를 제시한 단일 출처는 없다. 모든 핵심 사실은 발행 주체 한 곳의 자료다. f5 는 Graph.hpp 파일 범위로 한정해 읽어야 한다(rmf_traffic 저장소에 LaneClosure.hpp 가 있음을 검증에서 확인). KS B 7317 의 단차·틈새 수치는 미확인이다. 온톨로지 변경 승인: 문 속성 자동 구동 여부·장애인 접근 가능(f8), 계단 속성 단 높이·디딤판 길이·단 수(f9) / 거부: 개념 '통과 요구 조건'(f8·f9·f11·f14 — 아이디어 정의 밖 개념, 관계 미정, 매뉴얼 기반 로봇 기능 온톨로지 트랙 개념과의 중복 미확인 → 6절 미해결 모델링 질문). 단계 완료 조건: 미충족(부족: 아이디어 3 5절 핵심 구성 요소 중 시뮬레이션 초기값, 사용자에게 제안하는 실험 계획). 단계 전환: 미승인(막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09 열림).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-65",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw.githubusercontent.com factsheet.schema(main)를 검증에서 직접 열어 typeSpecification(…supportedZones)·physicalParameters(min/maxSpeed, min/maxHeight, width, length 등)를 대조했고 계단·문·승강기·단 높이 필드가 없음을 확인. 단일 발행 주체, 발행일 미확인."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(data/source_texts/ref-031) 5.2 'restricted for certain mobile robot groups (based on the size ratios)', 5.3 경로 계산의 물리 특성 고려, 6.1.1 허용 엣지만 주문 포함, 6.1.4.3 INVALID_ORDER_ACTION 모두 원문에 있음. 관제 보유 통행 제한 부분은 단계 3 페이지 q3-02(실행 2026-09-25-58)에 이미 같은 문장이 있어 기존 각주 재사용 대상. ref-031 은 fetched_via 가 inbox 여야 함(브리프는 github_raw, fetch_url null)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지: 두 스키마의 단위(미터·m/s) 일치는 factsheet 열람으로 확인, order.schema(ref-413)는 이번 실행 원문 미열람(이전 실행 확인). 비교 규칙이 명세에 없다는 점을 본문에 남긴다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: config.yaml 을 검증에서 열어 limits·profile(footprint 0.3, vicinity 0.5)·reversible·battery_system·task_capabilities(loop·delivery)·actions 와 문·승강기 필드 부재 확인. graph_idx 는 ref-079(이번 원문 미열람, 기존 페이지 q3-02 에 같은 내용) 기준 — 기존 문장·각주 재사용."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "LaneRequest.msg(fleet_name, open_lanes, close_lanes) 검증에서 열어 확인. 주의: 같은 rmf_traffic 저장소에 LaneClosure.hpp(차선 열림·닫힘 상태를 계획기에 주는 클래스)가 있음을 검증에서 확인 — '그래프 정의에 폐쇄 상태가 없다'는 Graph.hpp 파일 범위로만 서술해야 하며 rmf_traffic 전체로 일반화하면 과장. 두 출처 같은 발행 주체."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: integration_doors.md 원본을 열어 traffic_editor 로 문 이름과 함께 그림, 문 어댑터가 'state supervisor' 로 작업을 방해할 요청을 막음, DoorRequest·DoorState 확인."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: nav2_route README 열람으로 GeoJSON 노드·엣지 metadata, Penalty·Semantic·DynamicEdges 채점, 엣지 진입·이탈·노드 도달 시 동작(문 열기 예) 확인. 단 동적 엣지는 원문 요약상 '외부(제3자) 애플리케이션이 요청한 값으로 엣지를 닫고 다시 여는' 기능으로 확인됨 — '로봇이 막힌 엣지를 보고해 닫음'으로 한정하지 않도록 수정 지시."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(buildingSMART ifc43-docs Pset_DoorCommon, HasDrive·HandicapAccessible 속성 페이지)가 정의와 일치. IfcDoor OverallWidth 는 ref-419(개발 브랜치, 이번 미열람, 기존 확인). 발행 기관 공식 문서라 표준 근거로 인정, 신뢰도 medium 상한."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(standards.buildingsmart.org IFC4.3.2 Pset_StairCommon)에 RiserHeight·TreadLength·NumberOfRiser 정의 일치. '통과 난이도를 수치로 담을 수 있다'는 해석이므로 문장 뒷부분은 추정으로 분리 서술 권장."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(MDPI Buildings 14(8) 2274, Concordia 저장소)가 네 개념 묶음과 UGV 의 '최대 계단 단 높이' 제약을 뒷받침. 기존 단계 3 페이지에 OBRNIT(ref-461) 문장이 있어 각주 재사용."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(IJGI 9(2) 66, doi 10.3390/ijgi9020066)가 PWDElevator 면적·통과 폭, PWDRamp 경사, 임계값 기반 통과 가능·어려움·불가 3단계를 뒷받침. 대상은 교통약자(사람)이며 로봇 적용은 이 위키의 추론임을 본문에 남긴다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(arXiv 2402.18174, 저자 de Vos 외 6인, 2024-02)가 BIM 의미·형상의 그래프 세계 모델과 로봇 스킬별 지도 생성을 뒷받침. '유리 아닌 요소' 예시는 검증 스니펫에서 재확인 못함(브리프 스니펫 기준)."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. Springer 챕터 10.1007/978-3-031-85859-8_5 검색 초록이 연결 그래프 가중치·A*·로봇별 지도·다양한 주행 능력 수용을 뒷받침."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증에서 공식 저장소 README(raw)를 열어 required/provided capabilities, 속성 예(maximum speed, allowed tolerances), 속성 제약을 precondition·invariant·postcondition 으로 사용, 매칭 확인(버전 1.0, 날짜 미기재). 단 브리프 sources 는 fetched:false·source_unopened:true 로, 한계 문구(raw 로 열었다)와 불일치 — 브리프 누락 기록. 코드 상한 유지(medium)."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2209.10900 초록 검색 결과와 일치(2022-09-22 제출, 2023-02-09 개정, at - Automatisierungstechnik 게재 확인)."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. Frontiers(2025-02-25, PubMed·PMC 등재) 검색 결과가 SCITOS G5 + Kinova 7-DOF 팔, 문 열기·승강기 조작, 요양 시설·대학 건물 현장 시험을 뒷받침. '연계 대상:' 표시 적정(분류 원문 9장 로봇 자체 지능·제어)."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. KSSN 검색에 KS B 7317 표준명 등재 확인, 2021-11-11 보도(ZDNet·전자신문 등 같은 보도자료 기반, 독립 아님)가 속도제어·보호정지·높낮이차·틈새극복·추락·넘어짐 방지 기준을 뒷받침. 수치 기준 미확인 유지. 승강기 안전 제어 자체는 연계 대상."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. KCI·KoreaScience 검색 결과(지적과 국토정보 52(2), 17-34, 2022, DOI 10.22640/LXSIRI.2022.52.2.17)가 업무용 건축물 한정, FGI·AHP, 23개 항목, 요건 2분류를 뒷받침. 저자는 이관용·구한민·이윤서·정민승·윤동근·김갑성으로 확인(브리프 org '저자 미확인' 정정 대상)."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2601.10340 검색 결과(저자 Morilla-Cabello·Montijano)가 정찰 비행 기반 의미 지도, 플랫폼별 능력 인식 경로, 이종 차량 경로 문제로 배정·궤적 동시 계산, 시뮬레이션과 3개 플랫폼 실임무를 뒷받침. '실외' 환경 한정은 검증 스니펫에서 확인되지 않음(대규모·미지 복잡 환경 점검)."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2606.00117(Halilovic·Hasic·Krivic) 검색 결과가 지역 어포던스 온톨로지·가상 상태 변화 평가·로봇 사서 벤치마크를 뒷받침. 발행일: arXiv id 2606 과 cs.RO 2026-06 목록 기준 2026-06 — 브리프의 2026-05 는 정정 대상."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지: 구성 사실(f8·f9·f10·f11·f14·f1·f3)은 확인됨. 로봇 통과성을 요구–제공 능력 매칭으로 정의한 단일 출처 없음을 본문에 남긴다. 용어는 용어집 '요구 능력·제공 능력', '능력 매칭'과 맞춘다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지: 문 어댑터(f6)·HasDrive(f8)·팔 기반 조작(f16)·KS 탑승 기준(f17) 확인. 원문 VDA 5050 5.3 이 관제 기능에 '문·게이트·승강기 등 주변 시스템과의 통신'을 둔다는 점도 설비 연동 경로와 합치. 로봇 조작·승강기 안전 제어는 연계 대상 표시 유지."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 단계 3 페이지 q3-02 의 기존 추정 문장('플릿 중립 기본 그래프와 로봇별 통행 가능 여부 분리')과 대부분 겹침 — 새 문장으로 반복하지 말고 기존 문장을 확장(능력 속성 별도 보유, 현재 상태 층 분리)하는 방식으로 쓴다. 현재 상태 층은 8. 실시간 세계 상태·데이터 일관성 쪽."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지: CHORAL(f19)·Omer 외(f13)·VDA 5050 허용 엣지(f2) 확인. 작업 배정은 13. 작업 배정 — MRTA 연결로만 서술. 흐름 단계 출하 적정."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f2(관제 보유 로봇별 통행 제한·허용 엣지만 주문)는 단계 3 페이지 q3-02 절의 ref-031 문장과 같음 — 새 문장 대신 기존 문장·각주 재사용",
+        "f23(플릿 중립 기본 그래프와 로봇별 통행 가능 여부 분리)는 단계 3 페이지 q3-02 종합과 공간 그래프 스키마 초안 6절 '주행 차선의 통과 조건 가운데 로봇 능력 조건' 항목과 겹침 — 확장 서술로 처리",
+        "f4 의 traffic-editor graph_idx 플릿별 그래프 부분은 단계 3 페이지 q3-02(ref-079) 기존 문장과 같음",
+        "f10 OBRNIT(ref-461)은 단계 3 페이지 q3-01 절에 기존 문장이 있음 — 각주 재사용, 새 내용(최대 계단 단 높이 제약)만 추가",
+        "공간 그래프 스키마 초안 6절 q3-03 항목('공간 그래프를 로봇 기능 온톨로지와 어떤 관계로 잇는가')은 이번 답으로 근거 보강 대상이며 해결로 바꾸지 않는다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f5: '그래프 정의에는 로봇별 필터나 차선 폐쇄 상태가 없다'를 'rmf_traffic 의 Graph.hpp 파일에는 …이 없다'로 파일 범위를 한정해 쓰고, rmf_traffic 전체에 폐쇄 상태 표현이 없다고 일반화하지 않는다 — 검증에서 같은 저장소에 LaneClosure.hpp(차선 열림·닫힘 상태 클래스)가 있음을 확인했으나 브리프 finding 이 아니므로 본문에 새로 서술하지는 않는다.",
+      "f7: 동적 엣지 채점기를 '로봇이 막힌 엣지를 보고해 닫는다'로 한정하지 말고 '외부 요청 값에 따라 막힌 엣지를 닫고 다시 여는 동적 엣지 채점기'로 서술한다 — 검증 열람에서 원문은 제3자 애플리케이션 요청 값을 근거로 설명한다.",
+      "f9: 앞 문장(Pset_StairCommon 의 세 속성)은 [사실], '계단의 통과 난이도를 수치로 담을 수 있다'는 해석이므로 별도 문장 [추정]으로 나눈다.",
+      "f11: 교통약자(사람) 대상 연구임을 본문에 밝히고, 로봇 통과 판정에 옮기는 부분은 f21 의 [추정] 문장에서만 다룬다.",
+      "f19: '(실외 점검 임무 대상)'의 '실외'를 빼고 '점검 임무 대상(환경 조건 미확인)'으로 쓴다 — 검증 검색 초록은 대규모·미지 복잡 환경과 정찰 비행만 말한다. 각주 ref-654 기관 칸은 'Morilla-Cabello, D., & Montijano, E.'로 쓴다.",
+      "f20·ref-655: 발행일을 2026-05 에서 2026-06 으로 고친다(arXiv 2606.00117, cs.RO 2026-06 목록). reference_updates 의 published 도 2026-06.",
+      "ref-658: 각주·reference_updates 의 기관 칸을 '이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34)'으로 고친다 — 검증 검색(KCI·KoreaScience)으로 확인.",
+      "ref-031: reference_updates 의 원문 열람 경로는 입력 원문 텍스트(inbox)로 적는다 — 브리프 sources 의 fetched_via 'github_raw'·fetch_url null 은 자체 한계 문구(inbox)와 어긋난다.",
+      "원문 미열람 표기: ref-079·ref-348·ref-413·ref-419·ref-461·ref-647·ref-648·ref-649·ref-650·ref-651·ref-652·ref-653·ref-654·ref-655·ref-656·ref-657·ref-658 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다(ref-651 은 브리프 sources 기준 미열람으로 둔다).",
+      "f2·f4(graph_idx)·f10·f23: 단계 3 페이지에 이미 있는 같은 주장은 새 문장을 만들지 말고 기존 문장과 각주(ref-031·ref-079·ref-461)를 재사용하며, 새로 확인된 부분(도입 단계 로봇 그룹별 경로 제한, INVALID_ORDER_ACTION 거부, 플릿 설정의 문·승강기 필드 부재, OBRNIT 최대 단 높이 제약)만 덧붙인다.",
+      "f21: '요구 능력–제공 능력 매칭'은 용어집 [요구 능력·제공 능력](../../glossary/required-and-provided-capability.md)과 [능력 매칭](../../glossary/capability-matchmaking.md)에 링크해 같은 용어로 쓴다.",
+      "용어 후보 '통과 가능성(Traversability)': 정의에서 '능력과 현재 상태로'를 '로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다'로 고쳐 f23 의 정적·현재 상태 구분과 맞춘다.",
+      "온톨로지 초안: 승인한 변경 두 건만 반영한다 — '문'에 속성 '자동 구동 여부(IFC 4.3.2 Pset_DoorCommon.HasDrive)'·'장애인 접근 가능(HandicapAccessible, 지역 건축 기준)' 추가(f8), '계단'에 속성 '단 높이·디딤판 길이·단 수(Pset_StairCommon RiserHeight·TreadLength·NumberOfRiser)' 추가(f9). 두 행 상태는 '확정' 유지, 초안 버전 v0.7 → v0.8(H1·auto 상태·프런트매터·JSON 네 곳 일치).",
+      "온톨로지 초안: 개념 '통과 요구 조건(Traversal Requirement)' 추가는 반영하지 않고 6절 미해결 모델링 질문으로 둔다 — 아이디어 정의 문구 밖 개념이고 관계가 정해지지 않았으며, 매뉴얼 기반 로봇 기능 온톨로지 트랙의 '작업 요구'·'제약'·'실행 조건' 개념과 중복 여부를 입력으로 확인할 수 없고, 근거 f11(사람 대상)·f14(제조 공정)를 로봇 공간 통과로 옮기는 것은 추정이다(f21 [추정] 근거로 6절 q3-03 항목에 보강).",
+      "세부영역 반영 제안(10. 설비·건물 시스템 연동): KS B 7317 은 표준명·제정 사실만 [사실]로 쓰고 단차·틈새 수치는 '미확인'으로 두며, 승강기 탑승 안전 제어 자체는 '연계 대상'으로 짧게 적는다.",
+      "단계 3 페이지 6절: '다른 아이디어와의 연결'과 '핵심 구성 요소 가운데 능력 대조' 행은 이번 실행(q3-03, 결론 추정)으로 충족 표시할 수 있으나, 시뮬레이션 초기값(q3-04)과 실험 계획 행은 미충족으로 두고 '다음 단계로 전환: 아니오(완료 조건 미충족: 시뮬레이션 초기값, 실험 계획; 막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09)'로 쓴다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(raw.githubusercontent.com 만 열림)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-079, ref-348, ref-413, ref-419, ref-461, ref-647, ref-648, ref-649, ref-650, ref-651, ref-652, ref-653, ref-654, ref-655, ref-656, ref-657, ref-658. 브리프 기록 불일치: ref-651 은 sources 에 미열람(fetched false)으로 적혔으나 자체 한계 문구는 raw 로 열었다고 적음(검증에서 README 를 열어 주장 일치 확인, 신뢰도 상한은 유지), ref-031 은 fetched_via 가 inbox 여야 함. 검증 검색 13회(리서치 22회 합산 35/40). 주의: q3-03 의 답(요구–제공 능력 매칭, 로봇 능력 또는 설비 연동 선택 조건, 로봇별 통행 가능 부분 그래프와 현재 상태 층 분리)은 확인된 사실을 이 위키가 묶은 추정이며 이를 제시한 단일 출처는 없다. 모든 핵심 사실은 발행 주체 한 곳의 자료다. f5 는 Graph.hpp 파일 범위로 한정해 읽어야 한다(rmf_traffic 저장소에 LaneClosure.hpp 가 있음을 검증에서 확인). KS B 7317 의 단차·틈새 수치는 미확인이다. 온톨로지 변경 승인: 문 속성 자동 구동 여부·장애인 접근 가능(f8), 계단 속성 단 높이·디딤판 길이·단 수(f9) / 거부: 개념 '통과 요구 조건'(f8·f9·f11·f14 — 아이디어 정의 밖 개념, 관계 미정, 매뉴얼 기반 로봇 기능 온톨로지 트랙 개념과의 중복 미확인 → 6절 미해결 모델링 질문). 단계 완료 조건: 미충족(부족: 아이디어 3 5절 핵심 구성 요소 중 시뮬레이션 초기값, 사용자에게 제안하는 실험 계획). 단계 전환: 미승인(막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09 열림).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 49446,
+  "type": "result",
+  "duration_ms": 202178,
+  "uuid": "119faff9-c36b-4bcf-bf76-2c3e87e4bb14",
+  "ttft_stream_ms": 4621,
+  "time_to_request_ms": 93,
+  "first_content_frame_ms": 4621,
+  "time_to_request_from_spawn_ms": 6746550,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790319842818.4343,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 203.9
+}

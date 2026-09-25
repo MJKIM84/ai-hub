@@ -33,7 +33,7 @@
       "claim": "VDA 5050 3.0.0 은 기능·운영·시스템 안전 요구를 정의하지 않으며 안전 표준으로 간주하거나 적용해서는 안 된다고 범위 절에 명시한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-569"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -47,7 +47,7 @@
       "claim": "VDA 5050 3.0.0 상태 메시지의 safetyState 는 비상정지 상태(eStop: AUTOACK·MANUAL·REMOTE·NONE)와 보호 필드 침범 여부(fieldViolation)를 보고하고, 즉시 동작 startPause·stopPause 로 자동 주행을 멈추고 재개하며, operatingMode 로 로봇이 자동 주문을 받는지(AUTOMATIC)·수동 제어 중인지(MANUAL)를 알린다.",
       "tag": "사실",
       "source_ids": [
-        "ref-569"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -90,7 +90,7 @@
       "claim": "ISO 3691-4:2023 은 무인 산업 차량(AGV·AMR·자동 대차·견인차 포함)과 그 시스템의 안전 요구와 검증 방법을 정하며, 운용 구역(operating zone)의 상태가 안전 운용에 큰 영향을 준다고 보고 운용 구역 준비를 부속서 A 에 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-570"
+        "ref-470"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -105,7 +105,7 @@
       "claim": "ANSI/A3 R15.08-2(2023)는 산업용 이동 로봇(IMR) 한 대 또는 플릿을 현장에 통합·구성·맞춤화할 때의 안전 요구를 정하는 시스템 통합자용 표준으로, 로봇 자체 요구는 Part 1 이, 사용자 요구는 예정된 Part 3 이 맡는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-571"
+        "ref-472"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -165,7 +165,7 @@
       "claim": "SafeGate(arXiv 2604.05427)는 자연어 작업 명령에서 ISO 13482 에 근거한 안전 관련 속성을 뽑아 결정적 판정으로 실행 승인·사람에게 확인 요청·거부 중 하나를 내고, 승인한 작업은 불변 조건·가드·중단 조건으로 된 작업 안전 계약으로 분해해 실행 중 감시에 쓰는 구조를 제안했으며, 230개 벤치마크 작업·30개 AI2-THOR 시나리오·실로봇 실험으로 평가했다고 저자가 보고한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-575"
+        "ref-417"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -255,8 +255,8 @@
       "claim": "분류 원문 질문과 관련해, 확인한 표준은 차량 단위 안전(ISO 3691-4, R15.08-1)과 현장·플릿 통합 안전(R15.08-2, ISO 10218-2:2025 의 로봇 응용)을 나누고 STPA 연구는 개별적으로 정상인 구성요소 간 상호작용에서 위험을 찾으므로, 여러 로봇을 함께 움직이는 ROP 의 경로·구역·정지 결정은 시스템 수준 위험성평가 대상이 되는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-570",
-        "ref-571",
+        "ref-470",
+        "ref-472",
         "ref-572",
         "ref-577"
       ],
@@ -273,7 +273,7 @@
       "claim": "ROP 가 직접 맡을 안전 몫은 로봇이 보고하는 안전 상태(비상정지·보호 필드 침범·운용 모드) 수집, 일시정지·재개 지시, 비상 신호에 따른 플릿별 대피·주차 조율, 구역·권한 제약을 경로·배정에 반영하는 운영 조율이며, 상호운용 규격 자체가 안전 표준이 아니므로 이 조율이 안전 기능을 대신하지는 않는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-569",
+        "ref-031",
         "ref-004",
         "ref-580"
       ],
@@ -290,8 +290,8 @@
       "claim": "연계 대상: 비상정지 회로, 안전 스캐너 보호 필드, 속도·힘 제한 같은 안전 기능의 설계·검증과 현장 방호 설비는 로봇 제조사와 설비 안전 제어(분류 원문 9장) 쪽이며, ROP 는 그 상태와 결과를 받는 쪽으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-569",
-        "ref-570",
+        "ref-031",
+        "ref-470",
         "ref-572"
       ],
       "cross_checked": false,
@@ -307,7 +307,7 @@
       "claim": "피킹 구역에 작업자가 들어와 로봇이 보호 필드 침범(fieldViolation)이나 비상정지 상태를 보고하면, ROP 는 해당 로봇의 진행 중 피킹 작업을 보류·재배정하고 재개 조건(안전 상태 해제, 운용 모드 AUTOMATIC 복귀)을 확인한 뒤 stopPause 등으로 재개를 지시해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-569"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -338,9 +338,9 @@
       "tag": "추정",
       "source_ids": [
         "ref-572",
-        "ref-575",
+        "ref-417",
         "ref-004",
-        "ref-569"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -368,7 +368,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-569",
+      "id": "ref-031",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)",
       "published": null,
@@ -383,7 +383,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-570",
+      "id": "ref-470",
       "org": "ISO",
       "title": "ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
       "published": "2023",
@@ -398,7 +398,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-571",
+      "id": "ref-472",
       "org": "Association for Advancing Automation (A3)",
       "title": "ANSI/A3 R15.08-2 Safety Standard for Industrial Mobile Robot Systems and Applications Now Available",
       "published": "2023-10",
@@ -458,7 +458,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-575",
+      "id": "ref-417",
       "org": "arXiv (SafeGate 저자, 저자명 미확인)",
       "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
       "published": "2026-04",
@@ -618,7 +618,7 @@
       "oq-064 R15.08-2 유형 C 대응 KS·인증 기준 미확인 — 미해결 유지",
       "f7 ISO 10218-2:2025 변경 내용은 ISO 소개 페이지 원문 미열람, 검색 요약(인증기관·협회 해설) 기준",
       "f10 SafeGate 평가 수치는 저자 보고, 원문 미열람",
-      "ref-575·ref-577·ref-578 저자, ref-577·ref-580·ref-581·ref-004·ref-569 발행일 미확인",
+      "ref-417·ref-577·ref-578 저자, ref-577·ref-580·ref-581·ref-004·ref-031 발행일 미확인",
       "ISO 3691-4 의 제조사–통합자 책임 분담은 2차 해설에만 있어 finding 에서 제외"
     ],
     "scope_violations": [
@@ -630,6 +630,6 @@
       "queries": 11,
       "sources": 13
     },
-    "limits": "재실행 1회차. 반려 사유 1(finding f5 가 벤더 문서만 근거로 한 [사실]인데 vendor_claim 표시 없음): 직전 반환 JSON 이 이번 입력에 포함되지 않아 형식만 고칠 수 없었으므로 브리프를 처음부터 다시 작성했다(검색 11회/30). 이번 브리프는 벤더 문서 출처를 하나도 쓰지 않았고, 모든 [사실] finding 은 표준·정부·오픈소스·논문 출처에 기대며, 벤더 문서만 근거로 한 [사실] finding 이 없다(관련 finding: f5 는 이제 ISO 3691-4 표준 근거). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 신규 ref-569(VDA 5050 3.0.0 명세), 재사용 ref-004(rmf-core). 나머지 12건은 검색 요약 기준(원문 미열람, 신뢰도 상한 medium). ref-004 는 참고문헌 목록 요약이 입력에 없어 리서치 규칙 예시의 값을 그대로 썼다. 신규 출처 13건(ref-569~ref-581, 예약 구간 안). 한국 자료: 이동식 협동로봇 KS 제정 보도자료(ref-573), 산안규칙 제223조(ref-574), KS B ISO/TS 15066(ref-581). 트랙 반영 제안(nl-task-chatbot 단계 2, SafeGate)은 f10 으로 확인해 6절에 제안했다. 교차 규칙: SafeGate 는 27. AI·학습·적응과 모델 운영과 적용 대상 영역에 함께 연결하도록 f21 로 제안. 8·22 구분 관련 주장 없음. 정정 요청 없음."
+    "limits": "재실행 1회차. 반려 사유 1(finding f5 가 벤더 문서만 근거로 한 [사실]인데 vendor_claim 표시 없음): 직전 반환 JSON 이 이번 입력에 포함되지 않아 형식만 고칠 수 없었으므로 브리프를 처음부터 다시 작성했다(검색 11회/30). 이번 브리프는 벤더 문서 출처를 하나도 쓰지 않았고, 모든 [사실] finding 은 표준·정부·오픈소스·논문 출처에 기대며, 벤더 문서만 근거로 한 [사실] finding 이 없다(관련 finding: f5 는 이제 ISO 3691-4 표준 근거). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 신규 ref-031(VDA 5050 3.0.0 명세), 재사용 ref-004(rmf-core). 나머지 12건은 검색 요약 기준(원문 미열람, 신뢰도 상한 medium). ref-004 는 참고문헌 목록 요약이 입력에 없어 리서치 규칙 예시의 값을 그대로 썼다. 신규 출처 13건(ref-031~ref-581, 예약 구간 안). 한국 자료: 이동식 협동로봇 KS 제정 보도자료(ref-573), 산안규칙 제223조(ref-574), KS B ISO/TS 15066(ref-581). 트랙 반영 제안(nl-task-chatbot 단계 2, SafeGate)은 f10 으로 확인해 6절에 제안했다. 교차 규칙: SafeGate 는 27. AI·학습·적응과 모델 운영과 적용 대상 영역에 함께 연결하도록 f21 로 제안. 8·22 구분 관련 주장 없음. 정정 요청 없음."
   }
 }
