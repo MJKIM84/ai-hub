@@ -27,7 +27,7 @@
       "claim": "ECLASS e.V. 는 Release 15.0 에서 그룹 27-38-01 '로봇(Roboter)'의 클래스를 재구성하고 산업용 로봇 구조에 속성을 추가했으며, 새로 만든 전문가 그룹 'Robotic'이 2024-04-30 첫 회의를 열었다고 알렸다.",
       "tag": "사실",
       "source_ids": [
-        "ref-888"
+        "ref-182"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -42,7 +42,7 @@
       "claim": "ECLASS 는 4단계 계층의 8자리 코드로 제품 클래스를 분류하며, 각 분류 클래스는 고유 식별자(IRDI)·우선 명칭·코드를 갖고 IRDI 의 코드 공간 01 이 분류 클래스를 뜻한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-890",
+        "ref-184",
         "ref-392"
       ],
       "cross_checked": false,
@@ -58,8 +58,8 @@
       "claim": "이번 한·영 검색 범위에서는 ECLASS 에 무인운반차·자율이동로봇 자체를 가리키는 분류 클래스나 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목을 확인하지 못했고, 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-888",
-        "ref-890"
+        "ref-182",
+        "ref-184"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -74,7 +74,7 @@
       "claim": "IEC TC 3 의 공통 데이터 사전(CDD) 안내 페이지는 제품 온톨로지 도메인으로 IEC 61987(공정 자동화), IEC 62683(저압 개폐장치·제어장치), IEC 63213(전기·전자기량 측정 장비)과 단위 도메인 IEC 62720 을 든다.",
       "tag": "사실",
       "source_ids": [
-        "ref-889"
+        "ref-183"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -89,7 +89,7 @@
       "claim": "IEC CDD 안내에 든 도메인에 로봇 도메인이 없어, IEC CDD 에서 이동로봇 범위 능력을 가리키는 항목을 가져올 수 있을 가능성은 낮아 보인다(CDD 데이터베이스 자체는 조회하지 못함).",
       "tag": "추정",
       "source_ids": [
-        "ref-889"
+        "ref-183"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -136,8 +136,8 @@
       "source_ids": [
         "ref-243",
         "ref-245",
-        "ref-888",
-        "ref-889",
+        "ref-182",
+        "ref-183",
         "ref-037"
       ],
       "cross_checked": false,
@@ -153,7 +153,7 @@
       "claim": "ECLASS Release 16.0 은 2025-11-28 발행되었고 새 분류 클래스 137개를 포함한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-891"
+        "ref-185"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -166,7 +166,7 @@
   ],
   "sources": [
     {
-      "id": "ref-888",
+      "id": "ref-182",
       "org": "ECLASS e.V.",
       "title": "Neuer Content für ECLASS Release 15.0",
       "published": null,
@@ -181,7 +181,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-889",
+      "id": "ref-183",
       "org": "IEC TC 3",
       "title": "Common Data Dictionary – CDD – TC 3",
       "published": null,
@@ -196,7 +196,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-890",
+      "id": "ref-184",
       "org": "ECLASS e.V.",
       "title": "Classification Class - ECLASS Technischer Support",
       "published": null,
@@ -211,7 +211,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-891",
+      "id": "ref-185",
       "org": "ECLASS e.V.",
       "title": "The latest ECLASS Release",
       "published": null,
@@ -354,7 +354,7 @@
       "q1-09 부분 답: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리를 열 수 없어 이동로봇 분류 클래스·범위 능력 항목의 존재 여부를 직접 확인하지 못함",
       "f3·f5·f7 은 검색 결과·README 기준의 부재 관찰이며 부재 확정 아님",
       "IDTA 02020 명세 PDF 는 raw 경로로 받았으나 압축 바이너리라 ECLASS 참조 규정을 읽지 못함",
-      "ref-888~ref-891 원문 미열람, 발행일 미확인",
+      "ref-182~ref-185 원문 미열람, 발행일 미확인",
       "모든 finding 교차 확인 실패"
     ],
     "scope_violations": [],
@@ -362,7 +362,7 @@
       "queries": 21,
       "sources": 4
     },
-    "limits": "답한 질문 없음: q1-09 는 ECLASS·IEC CDD 원 데이터베이스가 네트워크 정책(mirror_only)으로 열리지 않고 검색 결과에도 이동로봇 클래스 목록이 나오지 않아 핵심(항목 존재 여부)을 확정하지 못함 — 부분 답 f1~f9 만 냄. web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 재사용 ref-234(IDTA 02047 README)뿐이며, IDTA 02020 PDF 는 바이너리라 읽지 못함. 신규 ref-888~ref-891(예약 구간 안)과 재사용 ref-037·ref-243·ref-245·ref-392 는 원문 미열람(신뢰도 상한 medium). 검색 21회/40, 신규 출처 4건/20. 한국어 검색 1회에서는 ECLASS 기반 물류로봇 분류를 다룬 국내 자료를 찾지 못함(블로그·기사만). 온톨로지 변경 없음: 능력 단위 의미 식별자를 뒷받침할 사전 항목을 확인하지 못해 초안 6절 '기능의 의미 식별자 속성' 질문을 유지함(f6·f8 은 근거 보강). 후속 질문 1건. 27. AI·학습·적응과 모델 운영, 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음."
+    "limits": "답한 질문 없음: q1-09 는 ECLASS·IEC CDD 원 데이터베이스가 네트워크 정책(mirror_only)으로 열리지 않고 검색 결과에도 이동로봇 클래스 목록이 나오지 않아 핵심(항목 존재 여부)을 확정하지 못함 — 부분 답 f1~f9 만 냄. web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 재사용 ref-234(IDTA 02047 README)뿐이며, IDTA 02020 PDF 는 바이너리라 읽지 못함. 신규 ref-182~ref-185(예약 구간 안)과 재사용 ref-037·ref-243·ref-245·ref-392 는 원문 미열람(신뢰도 상한 medium). 검색 21회/40, 신규 출처 4건/20. 한국어 검색 1회에서는 ECLASS 기반 물류로봇 분류를 다룬 국내 자료를 찾지 못함(블로그·기사만). 온톨로지 변경 없음: 능력 단위 의미 식별자를 뒷받침할 사전 항목을 확인하지 못해 초안 6절 '기능의 의미 식별자 속성' 질문을 유지함(f6·f8 은 근거 보강). 후속 질문 1건. 27. AI·학습·적응과 모델 운영, 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음."
   },
   "track": {
     "slug": "manual-capability-ontology",

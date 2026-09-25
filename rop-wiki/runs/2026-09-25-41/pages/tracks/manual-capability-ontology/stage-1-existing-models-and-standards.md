@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-888, ref-889, ref-890, ref-891]
+sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-182, ref-183, ref-184, ref-185]
 last_run: 2026-09-25
 version: 6
 ---
@@ -190,19 +190,19 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 실행 2026-09-25-41은 ECLASS·IEC CDD 자료를 한국어·영어로 다시 검색했으나, ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리는 네트워크 정책으로 열지 못해 질문의 핵심(범위 능력 항목의 존재 여부)은 여전히 미확인이다. 이번 실행에서 원문을 연 출처는 IDTA 02047 README 하나이고, 나머지는 검색 결과로 기관·제목·URL 을 확인한 원문 미열람 자료다. 교차 확인은 없으며, 모든 사실이 발행 기관 한 곳의 자료에 기댄다. 한국어 검색에서는 ECLASS 기반 물류로봇 분류·속성 사전을 다룬 국내 자료를 찾지 못했다.
 
-**ECLASS 의 로봇 관련 작업.** ECLASS e.V. 는 Release 15.0 에서 그룹 27-38-01 '로봇(Roboter)'의 클래스를 재구성하고 산업용 로봇 구조에 속성을 추가했으며, 새로 만든 전문가 그룹 'Robotic'이 2024-04-30 첫 회의를 열었다고 알렸다(Release 15.0 발행 2024-11-30(검색 결과 기준), 확인일 2026-09-25). [사실][^ref-888] ECLASS Release 16.0 은 2025-11-28 발행되었고 새 분류 클래스 137개를 포함한다. [사실][^ref-891] 16.0 에 이동로봇 클래스가 들어 있는지는 미확인이다.
+**ECLASS 의 로봇 관련 작업.** ECLASS e.V. 는 Release 15.0 에서 그룹 27-38-01 '로봇(Roboter)'의 클래스를 재구성하고 산업용 로봇 구조에 속성을 추가했으며, 새로 만든 전문가 그룹 'Robotic'이 2024-04-30 첫 회의를 열었다고 알렸다(Release 15.0 발행 2024-11-30(검색 결과 기준), 확인일 2026-09-25). [사실][^ref-182] ECLASS Release 16.0 은 2025-11-28 발행되었고 새 분류 클래스 137개를 포함한다. [사실][^ref-185] 16.0 에 이동로봇 클래스가 들어 있는지는 미확인이다.
 
-**ECLASS 분류 구조.** ECLASS 는 4단계 계층의 8자리 코드로 제품 클래스를 분류하며, 각 분류 클래스는 고유 식별자(International Registration Data Identifier, IRDI)·우선 명칭·코드를 갖는다(확인일 2026-09-25). [사실][^ref-890][^ref-392] IRDI 의 코드 공간 01 이 분류 클래스를 뜻한다는 점은 위 부분 답에 적은 것과 같다.
+**ECLASS 분류 구조.** ECLASS 는 4단계 계층의 8자리 코드로 제품 클래스를 분류하며, 각 분류 클래스는 고유 식별자(International Registration Data Identifier, IRDI)·우선 명칭·코드를 갖는다(확인일 2026-09-25). [사실][^ref-184][^ref-392] IRDI 의 코드 공간 01 이 분류 클래스를 뜻한다는 점은 위 부분 답에 적은 것과 같다.
 
-**이동로봇 클래스와 범위 능력 항목.** 이번 한·영 검색 범위에서는 ECLASS 에 무인운반차·자율이동로봇 자체를 가리키는 분류 클래스나 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목을 확인하지 못했고, 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다(데이터베이스를 직접 조회하지 못한 검색 결과 기준의 관찰이며 부재 확정이 아니다). [추정][^ref-888][^ref-890]
+**이동로봇 클래스와 범위 능력 항목.** 이번 한·영 검색 범위에서는 ECLASS 에 무인운반차·자율이동로봇 자체를 가리키는 분류 클래스나 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목을 확인하지 못했고, 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다(데이터베이스를 직접 조회하지 못한 검색 결과 기준의 관찰이며 부재 확정이 아니다). [추정][^ref-182][^ref-184]
 
-**IEC CDD.** IEC TC 3 의 공통 데이터 사전(Common Data Dictionary, CDD) 안내 페이지는 제품 온톨로지 도메인으로 IEC 61987(공정 자동화), IEC 62683(저압 개폐장치·제어장치), IEC 63213(전기·전자기량 측정 장비)과 단위 도메인 IEC 62720 을 든다(확인일 2026-09-25). [사실][^ref-889] 안내에 든 도메인에 로봇 도메인이 없어 IEC CDD 에서 이동로봇 범위 능력을 가리키는 항목을 가져올 가능성은 낮아 보이지만, 이는 IEC TC 3 안내 페이지에 든 도메인 기준이며 CDD 데이터베이스는 조회하지 못했다. [추정][^ref-889]
+**IEC CDD.** IEC TC 3 의 공통 데이터 사전(Common Data Dictionary, CDD) 안내 페이지는 제품 온톨로지 도메인으로 IEC 61987(공정 자동화), IEC 62683(저압 개폐장치·제어장치), IEC 63213(전기·전자기량 측정 장비)과 단위 도메인 IEC 62720 을 든다(확인일 2026-09-25). [사실][^ref-183] 안내에 든 도메인에 로봇 도메인이 없어 IEC CDD 에서 이동로봇 범위 능력을 가리키는 항목을 가져올 가능성은 낮아 보이지만, 이는 IEC TC 3 안내 페이지에 든 도메인 기준이며 CDD 데이터베이스는 조회하지 못했다. [추정][^ref-183]
 
 **능력의 의미 식별자를 ECLASS 분류로 가리키는 방법.** Vieira da Silva 외(2023-07 프리프린트)는 DIN 8580·VDI 2860 공정 유형을 능력의 의미 식별자(semanticId)로 해당 ECLASS 분류를 써서 나타낼 수 있다고 적어 능력 단위 의미 식별자를 ECLASS 분류 클래스로 가리키는 방법을 제시하며, 그 대상은 제조 공정 유형이고 이동로봇 범위 능력 사례는 아니다(제3자 논문, 원문 미열람). [사실][^ref-037]
 
 **IDTA 02047 README.** IDTA 02047 무인운반차 기술 데이터 1.0 README 는 이 서브모델을 IDTA 가 처음 공식 발행한 1.0 판(AAS 메타모델 3.0 호환)으로 소개하며, ECLASS 분류 클래스·IEC CDD 나 충전·계단·도어·리프트 같은 능력을 언급하지 않는다(발행일 표기 없음, 확인일 2026-09-25, README 기준의 부재 관찰). [사실][^ref-234]
 
-**시사점.** 구축자 의견으로는 IDTA 02020·02047 이 능력 단위 사전을 지정하지 않고 ECLASS·IEC CDD 에서도 이동로봇 범위 능력 항목이 확인되지 않았으므로, ROP 는 당분간 범위 능력의 의미 식별자를 자체 네임스페이스로 정하고 ECLASS 클래스가 생기면 대응시키는 방식을 택하는 것이 현실적이라고 보며, 다만 근거가 된 ECLASS·IEC CDD 항목 부재는 검색 결과·안내 페이지 기준의 관찰이고 부재가 확정된 것은 아니다. [의견][^ref-888][^ref-889][^ref-037] 이 의견은 어느 출처도 권고하지 않은 규범적 판단이며, 네임스페이스·버전 규칙과 등록 제안 책임은 후속 질문 q6-06 으로 보냈다.
+**시사점.** 구축자 의견으로는 IDTA 02020·02047 이 능력 단위 사전을 지정하지 않고 ECLASS·IEC CDD 에서도 이동로봇 범위 능력 항목이 확인되지 않았으므로, ROP 는 당분간 범위 능력의 의미 식별자를 자체 네임스페이스로 정하고 ECLASS 클래스가 생기면 대응시키는 방식을 택하는 것이 현실적이라고 보며, 다만 근거가 된 ECLASS·IEC CDD 항목 부재는 검색 결과·안내 페이지 기준의 관찰이고 부재가 확정된 것은 아니다. [의견][^ref-182][^ref-183][^ref-037] 이 의견은 어느 출처도 권고하지 않은 규범적 판단이며, 네임스페이스·버전 규칙과 등록 제안 책임은 후속 질문 q6-06 으로 보냈다.
 
 ## 4. 결론과 남은 불확실성
 
@@ -245,8 +245,8 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 **실행 2026-09-25-41 결론과 남은 불확실성**
 
-- 결론: ECLASS 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보이며, 무인운반차·자율이동로봇 클래스나 범위 능력 항목은 이번 검색 범위에서 확인되지 않았다(부재 확정 아님). [추정][^ref-888][^ref-890]
-- 결론: IEC TC 3 안내 페이지에 든 CDD 도메인에는 로봇 도메인이 없다(안내 페이지 기준, CDD 데이터베이스 미조회). [추정][^ref-889]
+- 결론: ECLASS 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보이며, 무인운반차·자율이동로봇 클래스나 범위 능력 항목은 이번 검색 범위에서 확인되지 않았다(부재 확정 아님). [추정][^ref-182][^ref-184]
+- 결론: IEC TC 3 안내 페이지에 든 CDD 도메인에는 로봇 도메인이 없다(안내 페이지 기준, CDD 데이터베이스 미조회). [추정][^ref-183]
 - 온톨로지 변경 없음(v0.3 유지): 능력 단위 의미 식별자를 뒷받침할 사전 항목을 확인하지 못해 초안 6절의 '기능의 의미 식별자 속성' 질문을 그대로 두었다. 이번 ECLASS 분류 참조 방법(제조 공정 대상)과 구축자 의견은 그 질문의 근거 보강 후보로만 트랙 로그에 남긴다.
 - 불확실성: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리를 조회하지 못했다. ECLASS 공지·기술 명세 페이지와 IEC TC 3 페이지는 원문 미열람이며 발행일이 미확인이다. Release 15.0 발행일(2024-11-30)은 검색 결과 기준이다.
 - 불확실성: 검증 검색 결과는 CDD 레지스트리 범위가 모든 ISO·IEC 도메인으로 확장되고 있다고 적어, 안내 페이지 목록만으로 로봇 도메인의 부재를 일반화할 수 없다.
@@ -353,10 +353,10 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 [^ref-392]: ECLASS e.V., IRDI - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/irdi, 접근일 2026-09-25 (원문 미열람)
 
 [^ref-234]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25
-[^ref-888]: ECLASS e.V., Neuer Content für ECLASS Release 15.0, 미확인, https://eclass.eu/aktuelles/news/neuer-content-fuer-eclass-release-150, 접근일 2026-09-25 (원문 미열람)
-[^ref-889]: IEC TC 3, Common Data Dictionary – CDD – TC 3, 미확인, https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/, 접근일 2026-09-25 (원문 미열람)
-[^ref-890]: ECLASS e.V., Classification Class - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/classification-class, 접근일 2026-09-25 (원문 미열람)
-[^ref-891]: ECLASS e.V., The latest ECLASS Release, 미확인, https://eclass.eu/en/eclass-standard/releases, 접근일 2026-09-25 (원문 미열람)
+[^ref-182]: ECLASS e.V., Neuer Content für ECLASS Release 15.0, 미확인, https://eclass.eu/aktuelles/news/neuer-content-fuer-eclass-release-150, 접근일 2026-09-25 (원문 미열람)
+[^ref-183]: IEC TC 3, Common Data Dictionary – CDD – TC 3, 미확인, https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/, 접근일 2026-09-25 (원문 미열람)
+[^ref-184]: ECLASS e.V., Classification Class - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/classification-class, 접근일 2026-09-25 (원문 미열람)
+[^ref-185]: ECLASS e.V., The latest ECLASS Release, 미확인, https://eclass.eu/en/eclass-standard/releases, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

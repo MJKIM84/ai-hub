@@ -70,6 +70,7 @@
 - 용어집 'IEC 공통 데이터 사전' — 정의에서 운영 주체 서술을 빼고 지시된 문장으로 썼으며, 'ECLASS' 는 f2 근거(ref-890·ref-392)로 등록했다.
 - backlog_updates — 새 질문을 q6-06, stage 6, origin 'f8' 로 등록했다.
 - 온톨로지 초안 — ontology-draft.md 를 pages 에 넣지 않고 ontology_draft_version 을 '0.3'으로 유지했으며, f6·f8 은 트랙 로그에 6절 '기능의 의미 식별자 속성' 질문의 근거 보강 후보로만 적었다.
+- 2차: 용어집 'ECLASS'(slug eclass) description 에서 출처가 뒷받침하지 않는 구절 'AAS 서브모델은 속성의 의미 식별자로 ECLASS IRDI 를 쓸 수 있다'를 빼고, f2·ref-890·ref-392 범위 안의 내용(분류 클래스의 IRDI·우선 명칭·코드, 코드 공간 01 = 분류 클래스)만 남겼다. sources 는 ref-890·ref-392 그대로 두었다.
 
 ## 트랙 갱신
 
