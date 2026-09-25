@@ -34,7 +34,7 @@
       "tag": "사실",
       "source_ids": [
         "ref-031",
-        "ref-629"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -48,7 +48,7 @@
       "claim": "VDA 5050 팩트시트 스키마는 유형 사양(typeSpecification), 물리 파라미터, 프로토콜 한계, 지원 프로토콜 기능·동작(protocolFeatures), 로봇 기하, 적재 사양(loadSpecification), 하드웨어·소프트웨어 버전과 충전 파라미터를 담는 로봇 구성(mobileRobotConfiguration)의 일곱 절을 필수로 두며, 스키마 설명은 이 정보가 관제 통합에 필요하고 시스템 계획·규모 산정·시뮬레이션에도 쓸 수 있다고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-629"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -90,7 +90,7 @@
       "claim": "VDMA 의 레이아웃 교환 형식(LIF) 1.0.0(2023-09)은 무인운반차 통합사업자가 간선·노드·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 처음 넘겨주기 위한 비구속적 교환 형식이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-633"
+        "ref-046"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -104,7 +104,7 @@
       "claim": "MassRobotics AMR 상호운용 표준의 신원 보고(identityReport)는 uuid·시각·제조사명·모델·일련번호·기본 외곽 치수를 필수로, 최고 속도·예상 가동 시간·충전기 형식·지원 업체·제품 문서 URI·화물 종류·최대 화물 부피·최대 화물 무게를 선택으로 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-601"
+        "ref-230"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -118,7 +118,7 @@
       "claim": "Open-RMF 플릿 어댑터 설정 파일은 새 플릿마다 속도·가속 한계, 외곽 반경, 배터리·기계 파라미터, 후진 가능 여부, 수행 가능한 작업 유형(순회·배송·청소), 작업 종료 후 동작, 로봇 좌표계와 RMF 좌표계를 대응점 쌍으로 변환하는 reference_coordinates, 제조사 관제 API 연결 정보를 채우게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-631"
+        "ref-153"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -132,7 +132,7 @@
       "claim": "Open-RMF traffic-editor 는 기존 건축 도면·평면도를 배경 이미지로 불러오고, 알려진 두 점 사이 거리 측정으로 축척을 맞춘 뒤 정점·벽·문·승강기·주행 차선·충전기를 사람이 주석하게 하며, 층 사이 정렬은 수직으로 맞춘 기준점(fiducial) 쌍으로 변환을 계산한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-630"
+        "ref-079"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -160,7 +160,7 @@
       "claim": "Open-RMF 연동 수준 가운데 전체 제어(Full Control)는 경로를 언제든 새 경로로 바꿀 수 있고, 신호등 제어(Traffic Light)는 일시정지·재개만 허용하며, 읽기 전용(Read Only) 플릿은 제어권 없이 상태만 보고하므로, 새 플릿 온보딩 때 어느 수준으로 연동할지가 선택 사항이 된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-569"
+        "ref-251"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -175,7 +175,7 @@
       "claim": "Beinschob 외(Robotics and Autonomous Systems 87권, 2017)는 다중 AGV 도입의 긴 설치 시간 원인으로 공장의 정밀 2D 지도 작성, 픽업·하역 위치의 3D 좌표 지정, 전문가의 수작업 경로망 설계를 들고, 레이저 스캐너 시스템으로 3D 의미 지도를 얻어 이를 반자동화하는 통합 시스템을 제안한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-634"
+        "ref-217"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,7 +190,7 @@
       "claim": "EU CORDIS 의 PAN-Robots 과제 소개는 기존 표지를 활용한 위치 추정과 반자동 공장 탐사로 시스템 설치 기간을 6개월에서 2개월로 줄일 수 있다고 적지만, 이는 과제 측 보고값이며 비교 조건은 확인되지 않았다.",
       "tag": "추정",
       "source_ids": [
-        "ref-641"
+        "ref-265"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -205,7 +205,7 @@
       "claim": "Heselden·Das(arXiv 2404.13499, 2024)는 지도 작성이 새 환경에 로봇을 배치할 때 시간이 많이 드는 과정이라고 보고, 전역 위치·물체 위치·위상·점유 정보 중심의 표준화된 지도 처리 방식과 빠진 데이터를 틀·절차적으로 생성하는 관리 스크립트를 제안한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-635"
+        "ref-269"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -220,7 +220,7 @@
       "claim": "노주형 외(한국로봇학회 논문지 21권 1호, 2026)는 3D 라이다–관성 센서 기반 SLAM 탐사와 로봇팔로 승강기 버튼을 누르는 기능을 결합해 사물인터넷 장치 개조나 외부 시스템 연동 없이 다층 실내 지도를 처음부터 끝까지 자율로 구축하는 시스템을 제안한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-642"
+        "ref-163"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -235,7 +235,7 @@
       "claim": "IDTA 02020 능력 기술(Capability Description) 서브모델 1.0 은 공정·제품 요구와 자원 능력을 함께 모델링해 요구 능력과 제공 능력을 비교하고 생산 공정의 계획·오케스트레이션을 지원하도록 만든 자산관리셸 서브모델 명세다.",
       "tag": "사실",
       "source_ids": [
-        "ref-632"
+        "ref-229"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -250,7 +250,7 @@
       "claim": "Vieira da Silva 외(arXiv 2307.00827, ETFA 2023)는 새 자원과 기능의 통합 공수를 줄이려는 플러그 앤 프로듀스(Plug and Produce)를 위해 능력·스킬을 기술하는 두 접근(온톨로지 기반 형식 기술, 자산관리셸 서브모델 표준화)이 서로 호환되지 않는다고 보고 둘 사이의 대응을 제안한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-636"
+        "ref-037"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -280,7 +280,7 @@
       "claim": "연계 대상: ISO 3691-4:2023 은 무인 산업용 트럭과 그 시스템의 안전 요구사항과 검증 수단을 정하고, 트럭이 안전하게 운행하도록 운행 구역을 준비하는 요구를 부속서 A 에 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-638"
+        "ref-470"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -327,12 +327,12 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-629",
-        "ref-601",
-        "ref-631",
-        "ref-630",
-        "ref-634",
-        "ref-635"
+        "ref-228",
+        "ref-230",
+        "ref-153",
+        "ref-079",
+        "ref-217",
+        "ref-269"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -346,9 +346,9 @@
       "claim": "이번에 확인한 범위의 팩트시트 스키마 최상위 절과 신원 보고 필드에는 제조사 지도와 공통(관제) 지도 사이의 좌표 대응을 담는 항목이 보이지 않고, Open-RMF 는 이를 현장별 어댑터 설정(reference_coordinates)으로 두므로, 좌표 정합은 현장 시운전의 설정·검증 항목으로 남는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-629",
-        "ref-601",
-        "ref-631"
+        "ref-228",
+        "ref-230",
+        "ref-153"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -363,8 +363,8 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-631",
-        "ref-569"
+        "ref-153",
+        "ref-251"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -391,7 +391,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-601",
+      "id": "ref-230",
       "org": "MassRobotics",
       "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
       "published": null,
@@ -406,7 +406,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-569",
+      "id": "ref-251",
       "org": "Open Robotics",
       "title": "Programming Multiple Robots with ROS 2 — integration_fleets (Fleet Adapter integration)",
       "published": null,
@@ -421,7 +421,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-629",
+      "id": "ref-228",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
       "published": null,
@@ -436,7 +436,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-630",
+      "id": "ref-079",
       "org": "Open Robotics",
       "title": "Programming Multiple Robots with ROS 2 — traffic-editor",
       "published": null,
@@ -451,7 +451,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-631",
+      "id": "ref-153",
       "org": "Open Robotics",
       "title": "Programming Multiple Robots with ROS 2 — integration_fleets_adapter_tutorial",
       "published": null,
@@ -466,7 +466,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-632",
+      "id": "ref-229",
       "org": "IDTA (admin-shell-io/submodel-templates)",
       "title": "IDTA 02020 Submodel Capability Description 1.0 — README",
       "published": null,
@@ -481,7 +481,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-633",
+      "id": "ref-046",
       "org": "VDMA (Intralogistics-2X-LIF GitHub)",
       "title": "Layout-Interchange-Format — Repository for the Layout Interchange Format (LIF) developed by the VDMA",
       "published": "2023-09",
@@ -496,7 +496,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-634",
+      "id": "ref-217",
       "org": "Beinschob, P. 외",
       "title": "Semi-automated map creation for fast deployment of AGV fleets in modern logistics",
       "published": "2017",
@@ -511,7 +511,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-635",
+      "id": "ref-269",
       "org": "Heselden, J. R., & Das, G. P.",
       "title": "Unified Map Handling for Robotic Systems: Enhancing Interoperability and Efficiency Across Diverse Environments",
       "published": "2024-04",
@@ -526,7 +526,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-636",
+      "id": "ref-037",
       "org": "Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A.",
       "title": "Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies",
       "published": "2023-07",
@@ -556,7 +556,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-638",
+      "id": "ref-470",
       "org": "ISO",
       "title": "ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
       "published": "2023",
@@ -601,7 +601,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-641",
+      "id": "ref-265",
       "org": "European Commission CORDIS",
       "title": "PAN-ROBOTS: Automating logistics for the factory of the future",
       "published": null,
@@ -616,7 +616,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-642",
+      "id": "ref-163",
       "org": "노주형, 강규리, 김연찬, 심현철 (한국로봇학회)",
       "title": "탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템",
       "published": "2026",
@@ -708,6 +708,6 @@
       "queries": 18,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-031·ref-601(재사용), ref-629·ref-630·ref-631·ref-632·ref-633·ref-643(신규). 그 밖의 신규 출처(ref-634~ref-642)와 재사용 ref-569 는 원문 미열람(신뢰도 상한 medium, 모든 finding medium 이하). 검색 18회/30, 신규 출처 15건/15(ref-629~ref-643, 예약 구간 안) — 신규 출처 상한 도달로 MiR·OTTO 벤더 문서, Boniardi 외 2019, 다중 AGV 경로망 자동 설계(IEEE T-ASE 2024), Rüdt 외 2025, 문서 해석 LLM(기술 매뉴얼 지식 추출) 논문은 추가하지 않았다. 입력의 참고문헌 목록이 요약본(0건 표시)이라 트랙 반영 제안이 인용한 ref-217·ref-265·ref-269 등의 서지 정보를 몰라 재사용하지 못하고, 같은 문헌(Beinschob 외 2017, PAN-Robots CORDIS, Heselden·Das 2024)을 새 id(ref-634·ref-641·ref-635)로 다시 적었다 — 같은 URL 이면 퍼블리셔가 기존 id 로 합쳐야 한다. ref-569 는 이전 브리프(2026-09-25-50) 값을 재인용. 트랙 반영 제안 6건 가운데 traffic-editor(f8), 플릿 어댑터 설정(f7), Beinschob 외(f11), Heselden·Das(f13), PAN-Robots(f12)는 이번 finding 으로 재확인했고, 나머지는 페이지 제안 rationale 에 다음 실행 후보로 적었다. 한국 자료: KTL–KILA 협약(f19, 기사), 한국로봇학회 논문(f14). 한국어 검색에서 나온 블로그·업체 홍보 글은 쓰지 않았다. 교차 규칙: 문서 해석 AI(f17)는 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 연구 방법으로 27. AI·학습·적응과 모델 운영 연결을 제안. 8. 실시간 세계 상태·데이터 일관성 관련 주장 없음, 22. 시뮬레이션·예측용 디지털 트윈은 가상 시운전(f20)·팩트시트의 시뮬레이션 용도(f2) 연결로만 제안. 정정 요청 없음. oq-022 는 해결하지 못함."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-031·ref-230(재사용), ref-228·ref-079·ref-153·ref-229·ref-046·ref-643(신규). 그 밖의 신규 출처(ref-217~ref-163)와 재사용 ref-251 는 원문 미열람(신뢰도 상한 medium, 모든 finding medium 이하). 검색 18회/30, 신규 출처 15건/15(ref-228~ref-643, 예약 구간 안) — 신규 출처 상한 도달로 MiR·OTTO 벤더 문서, Boniardi 외 2019, 다중 AGV 경로망 자동 설계(IEEE T-ASE 2024), Rüdt 외 2025, 문서 해석 LLM(기술 매뉴얼 지식 추출) 논문은 추가하지 않았다. 입력의 참고문헌 목록이 요약본(0건 표시)이라 트랙 반영 제안이 인용한 ref-217·ref-265·ref-269 등의 서지 정보를 몰라 재사용하지 못하고, 같은 문헌(Beinschob 외 2017, PAN-Robots CORDIS, Heselden·Das 2024)을 새 id(ref-217·ref-265·ref-269)로 다시 적었다 — 같은 URL 이면 퍼블리셔가 기존 id 로 합쳐야 한다. ref-251 는 이전 브리프(2026-09-25-50) 값을 재인용. 트랙 반영 제안 6건 가운데 traffic-editor(f8), 플릿 어댑터 설정(f7), Beinschob 외(f11), Heselden·Das(f13), PAN-Robots(f12)는 이번 finding 으로 재확인했고, 나머지는 페이지 제안 rationale 에 다음 실행 후보로 적었다. 한국 자료: KTL–KILA 협약(f19, 기사), 한국로봇학회 논문(f14). 한국어 검색에서 나온 블로그·업체 홍보 글은 쓰지 않았다. 교차 규칙: 문서 해석 AI(f17)는 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 연구 방법으로 27. AI·학습·적응과 모델 운영 연결을 제안. 8. 실시간 세계 상태·데이터 일관성 관련 주장 없음, 22. 시뮬레이션·예측용 디지털 트윈은 가상 시운전(f20)·팩트시트의 시뮬레이션 용도(f2) 연결로만 제안. 정정 요청 없음. oq-022 는 해결하지 못함."
   }
 }

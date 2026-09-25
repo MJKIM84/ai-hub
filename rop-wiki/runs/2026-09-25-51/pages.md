@@ -29,15 +29,15 @@
 |---|---|---|---|---|---|
 | ref-031 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050 | 표준 | high | https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md |
 | ref-130 | OPC Foundation | UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv) | 표준 | medium | https://github.com/OPCFoundation/UA-Nodeset/tree/latest/ISA95-JOBCONTROL |
-| ref-599 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_state.json | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
+| ref-111 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_state.json | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
 | ref-600 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json |
-| ref-601 | MassRobotics | MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json | 표준 | high | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json |
+| ref-230 | MassRobotics | MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json | 표준 | high | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json |
 | ref-602 | CNCF Serverless Workflow (serverlessworkflow/specification GitHub) | Serverless Workflow Specification — dsl.md | 오픈소스 문서 | high | https://github.com/serverlessworkflow/specification/blob/main/dsl.md |
 | ref-603 | BehaviorTree.CPP (BehaviorTree GitHub) | BehaviorTree.CPP — README | 오픈소스 문서 | high | https://github.com/BehaviorTree/BehaviorTree.CPP |
 | ref-604 | Höller, D., Behnke, G., Bercher, P., Biundo, S., Fiorino, H., Pellier, D., & Alford, R. | HDDL – A Language to Describe Hierarchical Planning Problems | 논문 | medium | https://arxiv.org/abs/1911.05499 |
 | ref-605 | OMG(Object Management Group) | Business Process Model and Notation (BPMN), Version 2.0.2 | 표준 | medium | https://www.omg.org/spec/BPMN/2.0.2/ |
 | ref-606 | Pettinari, S. (FaMe 공식 저장소, UNICAM PROS) | FaMe — a BPMN-driven framework for Multi-Robot System development (GitHub README) | 오픈소스 문서 | high | https://github.com/SaraPettinari/fame |
-| ref-607 | Filippone, G., Pettinari, S., & Pelliccione, P.(GSSI) | Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis | 논문 | medium | https://arxiv.org/abs/2603.15427 |
+| ref-116 | Filippone, G., Pettinari, S., & Pelliccione, P.(GSSI) | Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis | 논문 | medium | https://arxiv.org/abs/2603.15427 |
 | ref-608 | IEEE Standards Association | IEEE 1872.1-2024 — IEEE Standard for Robot Task Representation | 표준 | medium | https://standards.ieee.org/ieee/1872.1/6993/ |
 
 ## 열린 질문 갱신
@@ -65,6 +65,7 @@
 - 단계 2 페이지 3절 BPMN 행: BPMN 2.0.2 명세 원문의 수행자·자원 배정 절 번호와 순서 흐름 정의 — 현재 검색 요약 범위이며 원문 미열람이다.
 - 단계 2 페이지 4절 한국 자료: 로봇 작업·임무 기술 형식이나 작업 지시 표현을 다룬 KS 표준·국내 연구(한국어 검색 확대) — 한국 자료 우선 규칙에 따라 필요하다.
 - 아이디어 2 4절·단계 2 완료 조건: 해석·분해 정확도 평가용 지시–정답 작업 쌍 데이터셋(q2-03) — 단계 2 완료 조건의 남은 항목이다.
+- 형식 검증(퍼블리셔 4단계) 메모: 깨진 링크는 이 원고의 본문이 아니라 퍼블리셔가 만드는 logs/daily/2026-09-25.md 에서 보고되었다. 이 원고의 페이지 링크는 모두 docs_tree 에 있는 경로이거나 같은 실행이 만드는 앵커(#q2-02)다. 퍼블리셔가 URL 병합으로 ref-600·ref-602·ref-603·ref-604 를 이전 id(ref-569·ref-570·ref-571·ref-572, docs_tree 에 참고문헌 페이지 없음)로 합치면 일일 로그의 참고문헌 링크가 깨질 수 있으므로, 병합 대상 id 의 참고문헌 페이지 생성 여부와 일일 로그의 링크 대상을 pipeline/publish 담당이 확인해 달라.
 
 ## 이행한 수정 지시
 
@@ -77,22 +78,23 @@
 - f15 — IEEE 1872.1-2024 발행일을 2024-06-18(IEEE SA 발행 기관 소개 기준)로 적고 바로 뒤 문장에 '표준 본문(유료)은 열람하지 못해 작업 분해·배정·의존 표현 방식은 미확인'을 두었다. 5. 로봇 능력·작업 온톨로지 반영 제안에도 같은 단서를 달았다.
 - f16 — 판 표기를 'v1 2026-03, v2 2026-08-17'로 적었다. 저자의 '표준·합의된 형식이 없다'는 평가 문장은 브리프 finding 에 없어 본문에 쓰지 않았다.
 - f7 — 설비 ID 구절을 '설비·물리 자산 데이터형의 ID 는 클래스 또는 개별 대상을 가리킬 수 있다' 수준으로 썼다.
-- 인용 — ref-031·ref-599·ref-600 을 포함해 모든 출처의 영어 원문 구절을 직접 인용하지 않고 한국어로 재서술했다(필드 이름·값 이름만 그대로 표기).
-- 원문 미열람 표시 — ref-604·ref-605·ref-607·ref-608 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-031·ref-130·ref-599·ref-600·ref-601·ref-602·ref-603·ref-606 은 원문을 연 출처로 두었다.
-- 참고문헌 id — reference_updates 에 브리프 id(ref-599~ref-608)를 쓰고, changelog_entry 에 이전 실행 id(ref-111·ref-505, ref-569, ref-230·ref-507, ref-570, ref-571, ref-572, ref-116)와의 퍼블리셔 URL 병합 확인 필요 문구를 남겼다.
+- 인용 — ref-031·ref-111·ref-600 을 포함해 모든 출처의 영어 원문 구절을 직접 인용하지 않고 한국어로 재서술했다(필드 이름·값 이름만 그대로 표기).
+- 원문 미열람 표시 — ref-604·ref-605·ref-116·ref-608 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-031·ref-130·ref-111·ref-600·ref-230·ref-602·ref-603·ref-606 은 원문을 연 출처로 두었다.
+- 참고문헌 id — reference_updates 에 브리프 id(ref-111~ref-608)를 쓰고, changelog_entry 에 이전 실행 id(ref-111·ref-505, ref-569, ref-230·ref-507, ref-570, ref-571, ref-572, ref-116)와의 퍼블리셔 URL 병합 확인 필요 문구를 남겼다.
 - 온톨로지 초안 — 두 변경을 반영해 v0.4 → v0.5 로 올리고 H1 '(v0.5)', 프런트매터 ontology_version '0.5', track_updates.ontology_draft_version '0.5' 를 맞췄다(상태 줄은 auto:page-status 마커이므로 퍼블리셔가 프런트매터 값으로 채운다). 진행 상태는 Open-RMF status 대표 값·12개 표기, dispatch 5개 값(canceled_in_flight 포함), ISA-95 JobState·실제 시작·종료 시각 메모를 더하고 초안 → 확정, 배정은 Open-RMF assigned_to·dispatch 상태와 VDA 5050 주문 수신 로봇 대응 메모를 더하고 확정 유지했으며, 필드 부재 부분(f3·f19)은 속성 정의가 아닌 [추정] 문장으로만 적었다. H1 변경이 필요해 초안 페이지는 전체 content 로 보냈다.
 - 초안 6절 — 진행 상태 네 값과 외부 값의 대응 규칙 질문을 새로 두고, 플릿 사이 작업 선행 의존(f18, oq-049)은 기존 '작업 / 선행 의존한다 / 작업' 질문에 합쳤으며, IEEE 1872.1-2024 작업 개념과의 대응(f15, 본문 미열람) 질문을 더했다.
 - 단계 2 페이지 — 2절 q2-02 를 답함·2026-09-25-51·#q2-02 로 바꾸고 3절에 '### q2-02 … {#q2-02}' 소제목을 두었다. 6절 두 행을 미충족, 검증 판정 '미충족 · 미승인'으로, 아래 줄을 지시 문구 그대로 썼고, 상태 줄을 열린 질문 5건·답한 질문 2건으로 맞췄다. 상태 줄이 H2 절 밖이라 이 페이지는 전체 content 로 보냈다.
 - 새 질문 — backlog_updates 에 q3-08(단계 3, origin f17), q3-09(단계 3, origin f18, 'ROP 가 VDA 5050 관제 역할을 맡는 구성' 조건 포함), q2-07(단계 2, origin f15)을 등록하고 단계 페이지 2·5절에도 실었다.
 - 아이디어 2 4절 — '작업·배정 결과를 표현하는 표준·형식' 소절의 비교표가 이 위키가 구성한 표이며 출처 표·그림을 옮긴 것이 아님을 [추정]과 함께 밝히고, 평가 데이터(q2-03) 미조사를 절 머리와 소절 끝에 적었다.
 - 세부영역 — 13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링, 5. 로봇 능력·작업 온톨로지 페이지는 고치지 않고 area_reflection_proposals 로만 냈으며, 14. 작업 순서·스케줄링 제안의 f18 은 범위를 좁힌 판으로 썼다.
-- docs/ideas/nl-task-chatbot.md: 각주 정의 9개를 참고문헌에서 만들어 붙임: ref-599, ref-600, ref-601, ref-602, ref-603, ref-604, ref-605, ref-607, ref-608
+- docs/ideas/nl-task-chatbot.md: 각주 정의 9개를 참고문헌에서 만들어 붙임: ref-111, ref-600, ref-230, ref-602, ref-603, ref-604, ref-605, ref-116, ref-608
+- docs/ideas/nl-task-chatbot.md: 각주 정의 9개를 참고문헌에서 만들어 붙임: ref-111, ref-116, ref-230, ref-600, ref-602, ref-603, ref-604, ref-605, ref-608
 
 ## 트랙 갱신
 
 - 단계 페이지: docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md
 - 온톨로지 초안 버전: 0.5
-- 트랙 로그 항목: 답한 질문: q2-02(작업·배정 결과를 표현하는 표준·형식과 빠진 것, 근거 f1~f19; 같은 질문을 다뤘으나 반영되지 않은 실행 2026-09-25-43 의 반영 재시도) / 새 질문: q2-07(f15), q3-08(f17), q3-09(f18) / 온톨로지 변경: v0.4 → v0.5: 개념 '진행 상태 (Progress)' 외부 표현 원천 메모(Open-RMF status·dispatch 값, ISA-95 JobState·실제 시작·종료 시각) 추가·초안 → 확정(f2·f7), 개념 '배정 (Assignment)' 외부 표현 대응 메모(Open-RMF assigned_to·dispatch 상태, VDA 5050 주문 수신 로봇) 추가·확정 유지(f2·f4; 필드 부재는 추정 메모 f3·f19), 근거 실행 2026-09-25-51 / 완료 조건 평가: 미충족(부족: 아이디어 2 4절 평가 데이터(q2-03) 미조사, 작업 모델 정보 항목 일부만 반영(작업 요구 적재물 속성·완료 조건 미확정)) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링, 5. 로봇 능력·작업 온톨로지 4건 / 다음 실행 제안: q2-03, q2-07, q2-04 / 비고: ref-599~ref-607 일부가 이전 실행 id 와 같은 URL 이라 퍼블리셔 URL 병합 확인 필요, 트랙 개요 상태 줄의 현재 단계 표기(단계 1)와 진행 현황의 확인 필요
+- 트랙 로그 항목: 답한 질문: q2-02(작업·배정 결과를 표현하는 표준·형식과 빠진 것, 근거 f1~f19; 같은 질문을 다뤘으나 반영되지 않은 실행 2026-09-25-43 의 반영 재시도) / 새 질문: q2-07(f15), q3-08(f17), q3-09(f18) / 온톨로지 변경: v0.4 → v0.5: 개념 '진행 상태 (Progress)' 외부 표현 원천 메모(Open-RMF status·dispatch 값, ISA-95 JobState·실제 시작·종료 시각) 추가·초안 → 확정(f2·f7), 개념 '배정 (Assignment)' 외부 표현 대응 메모(Open-RMF assigned_to·dispatch 상태, VDA 5050 주문 수신 로봇) 추가·확정 유지(f2·f4; 필드 부재는 추정 메모 f3·f19), 근거 실행 2026-09-25-51 / 완료 조건 평가: 미충족(부족: 아이디어 2 4절 평가 데이터(q2-03) 미조사, 작업 모델 정보 항목 일부만 반영(작업 요구 적재물 속성·완료 조건 미확정)) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링, 5. 로봇 능력·작업 온톨로지 4건 / 다음 실행 제안: q2-03, q2-07, q2-04 / 비고: ref-111~ref-116 일부가 이전 실행 id 와 같은 URL 이라 퍼블리셔 URL 병합 확인 필요, 트랙 개요 상태 줄의 현재 단계 표기(단계 1)와 진행 현황의 확인 필요
 - 개요 진행 현황: 단계 2 진행 중 — 열린 질문 5, 답함 2, 완료 조건 미충족 (q2-02 답함, 업무 분해·배정 설계 초안 v0.5)
 
 ### 백로그 갱신

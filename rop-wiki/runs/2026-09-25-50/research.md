@@ -40,11 +40,11 @@
 | f4 | [사실] | VDA 5050 state 스키마의 loads 배열은 로봇에 실린 적재물의 식별번호(loadId), 종류, 적재 위치(loadPosition), 치수, 무게를 보고하게 하므로 고장 로봇에 어떤 화물이 실려 있는지 관제가 알 수 있는 근거가 된다. | ref-051 | 아니오 | medium | 2026-09-25 | 작업 대상 | — |
 | f5 | [사실] | VDA 5050 의 startPause 즉시 동작은 자동 주행을 멈추고 일시정지 가능한 동작(pauseAllowed=true)만 멈추며, stopPause 로 주문 실행을 재개한다. | ref-031 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f6 | [사실] | VDA 5050 은 교착(deadlock) 탐지·해소와 통신 오류 탐지·해소를 관제(fleet control)의 역할로 두고, 구역 충돌 같은 상황에서 사용자 개입이 필요한지, 현재 주문을 취소하고 새 주문을 보낼지를 관제가 결정한다고 설명한다. | ref-031 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
-| f7 | [사실] | Open-RMF 플릿 어댑터의 RobotUpdateHandle 은 작업 중단(interrupt)과 재개(resume), 작업 취소(cancel_task)·강제 종료(kill_task), 마지막 보고 위치에서의 재계획 요청(replan), 작업 수락 중지(set_commission), 이슈 생성(create_issue) 기능을 제공한다. | ref-570 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
+| f7 | [사실] | Open-RMF 플릿 어댑터의 RobotUpdateHandle 은 작업 중단(interrupt)과 재개(resume), 작업 취소(cancel_task)·강제 종료(kill_task), 마지막 보고 위치에서의 재계획 요청(replan), 작업 수락 중지(set_commission), 이슈 생성(create_issue) 기능을 제공한다. | ref-537 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f8 | [사실] | Open-RMF 의 교통 스케줄은 지연·취소·경로 변경을 반영해 계속 바뀌는 데이터베이스이고, 충돌이 예상되면 관련 플릿 관리자 사이의 협상이 시작되며, 긴급 참여자는 의도적으로 충돌을 게시해 협상을 강제할 수 있다. | ref-004 | 아니오 | medium | 2026-09-25 | — | — |
-| f9 | [사실] | Open-RMF 연동 수준 가운데 전체 제어(Full Control)는 경로를 언제든 중단하고 새 경로로 바꿀 수 있고, 신호등 제어(Traffic Light)는 일시정지·재개만 허용하며, 읽기 전용(Read Only) 플릿은 RMF 에 제어권 없이 상태만 보고한다. | ref-569, ref-004 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
-| f10 | [사실] | Open-RMF rmf_ros2 이슈 224 는 플릿 어댑터가 재시작되면 배정된 작업이 유실되는 문제를 제기하고, 작업 로그·백업을 SQLite 로 저장하는 PR 161 과 rmf-web 영속 데이터베이스를 조회하는 대안을 제안하지만, 배포판 반영 여부는 이번에 확인되지 않았다. | ref-582 | 아니오 | medium | 2026-09-25 | 예외·성과 | 원문 미열람 |
-| f11 | [사실] | Hönig 외(IEEE RA-L, 2019)는 MAPF 계획을 후처리해 로봇 간 순서와 운동 제약을 행동 의존 그래프(ADG)로 인코딩함으로써 예기치 않은 감속·장애물·지연에도 계획을 충돌 없이 실행하고 재계획과 실행을 겹치게 하는 창고용 실행 틀을 제시한다. | ref-571 | 아니오 | medium | 2019-04 | 예외·성과 | 원문 미열람 |
+| f9 | [사실] | Open-RMF 연동 수준 가운데 전체 제어(Full Control)는 경로를 언제든 중단하고 새 경로로 바꿀 수 있고, 신호등 제어(Traffic Light)는 일시정지·재개만 허용하며, 읽기 전용(Read Only) 플릿은 RMF 에 제어권 없이 상태만 보고한다. | ref-251, ref-004 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f10 | [사실] | Open-RMF rmf_ros2 이슈 224 는 플릿 어댑터가 재시작되면 배정된 작업이 유실되는 문제를 제기하고, 작업 로그·백업을 SQLite 로 저장하는 PR 161 과 rmf-web 영속 데이터베이스를 조회하는 대안을 제안하지만, 배포판 반영 여부는 이번에 확인되지 않았다. | ref-374 | 아니오 | medium | 2026-09-25 | 예외·성과 | 원문 미열람 |
+| f11 | [사실] | Hönig 외(IEEE RA-L, 2019)는 MAPF 계획을 후처리해 로봇 간 순서와 운동 제약을 행동 의존 그래프(ADG)로 인코딩함으로써 예기치 않은 감속·장애물·지연에도 계획을 충돌 없이 실행하고 재계획과 실행을 겹치게 하는 창고용 실행 틀을 제시한다. | ref-188 | 아니오 | medium | 2019-04 | 예외·성과 | 원문 미열람 |
 | f12 | [사실] | Feng 외(ICAPS 2024)는 실행 중 로봇이 지연될 때 경로는 유지하고 통과 순서만 다시 정하는 전환 가능 간선 탐색(Switchable-Edge Search, SES)을 제안하며, 최선 변형이 중소 규모 문제에서 1초 미만, 대규모 문제에서 기준선보다 최대 4배 빠르다고 보고한다. | ref-572 | 아니오 | medium | 2024 | 예외·성과 | 원문 미열람 |
 | f13 | [사실] | Kalempa 외(Sensors, 2021)의 MRPF 는 작업 간 의존성, 우선순위 기반 선점(preemption) 스케줄링, 고장 복구를 함께 다루는 다중 로봇 작업 배정 방법이며, 소규모 창고 물류 실험 환경(ARENA)에서 평가되었다. | ref-573 | 아니오 | medium | 2021-09-30 | 수행 자원 | 원문 미열람 |
 | f14 | [사실] | 창고 로봇 경로 계획용 다중 에이전트 롤아웃·재배열(multiagent rollout with reshuffling) 방법은 온라인 재계획으로 환경 변화에 적응하며, 일부 로봇이 고장 나는 예제로 이를 보여 준다. | ref-574 | 아니오 | medium | 2023 | 예외·성과 | 원문 미열람 |
@@ -56,7 +56,7 @@
 | f20 | [추정] | Swisslog 은 AutoStore 그리드에서 로봇이 멈추면 자사 SynQ 소프트웨어가 멈춘 로봇 아래 보관함의 재고를 다른 보관함으로 재할당해, 멈춘 로봇을 정기 휴식이나 저수요 시간에 꺼낼 때까지 주문 처리를 계속한다고 설명한다. | ref-580 | 아니오 | low | 2025-07 | 피킹 / 예외·성과 | 원문 미열람, 벤더 주장 |
 | f21 | [사실] | GS1 EPCIS 저장소는 기존 이벤트를 수정·삭제하지 않는 일지(journal) 방식이며, 잘못 기록된 이벤트는 같은 eventID 에 오류 선언(errorDeclaration: 선언 시각, 사유, 정정 이벤트 id 목록)을 붙인 이벤트로 정정한다. | ref-581 | 아니오 | medium | 2016-09-29 | 완료·인계 | 원문 미열람 |
 | f22 | [추정] | f1~f4·f13·f18·f21 을 종합하면 운반 중 고장 로봇의 화물과 남은 주문 처리는 고장·연결 끊김 감지(오류·연결 상태), 주문 일시정지·취소, 실린 화물 식별(loads), 남은 작업의 재배정, 화물의 물리적 회수, 재고·이벤트 기록의 보상·정정으로 이어지는 결정 흐름으로 볼 수 있을 것으로 보인다. | ref-031, ref-051, ref-573, ref-578, ref-581 | 아니오 | low | 2026-09-25 | 피킹 / 예외·성과 | — |
-| f23 | [추정] | 연계 대상: 장애물 회피·재위치 추정·비상정지 회로 같은 로봇 자체 복구·안전 제어는 제조사 몫이고, VDA 5050·Open-RMF 가 관제에 주는 기능(주문 취소·일시정지·재계획 요청·작업 수락 중지·이슈 보고)을 보면 이종 로봇을 연결하는 ROP 는 주문 취소·재배정·수동 전환 결정과 기록 정정을 맡는 경계가 될 것으로 보인다. | ref-031, ref-570 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
+| f23 | [추정] | 연계 대상: 장애물 회피·재위치 추정·비상정지 회로 같은 로봇 자체 복구·안전 제어는 제조사 몫이고, VDA 5050·Open-RMF 가 관제에 주는 기능(주문 취소·일시정지·재계획 요청·작업 수락 중지·이슈 보고)을 보면 이종 로봇을 연결하는 ROP 는 주문 취소·재배정·수동 전환 결정과 기록 정정을 맡는 경계가 될 것으로 보인다. | ref-031, ref-537 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
 | f24 | [추정] | VDA 5050 에서 연결이 끊긴 로봇이 마지막 해제 노드까지만 주행한다는 규칙(f2)을 보면, 관제가 한 번에 해제하는 주문 범위(base)의 길이가 통신 단절 동안 현장 작업이 얼마나 계속되는지를 정하는 설계 변수가 될 것으로 보인다. | ref-031 | 아니오 | low | 2026-09-25 | 제약 | — |
 
 ### 근거 발췌
@@ -93,9 +93,9 @@
 | ref-031 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050 | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md | 아니오 |
 | ref-051 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/state.schema | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema | 아니오 |
 | ref-004 | Open Robotics | RMF Core Overview — Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/rmf-core.html | 아니오 |
-| ref-569 | Open Robotics | Programming Multiple Robots with ROS 2 — integration_fleets (Fleet Adapter integration) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_fleets.html | 아니오 |
-| ref-570 | Open Robotics (open-rmf/rmf_ros2) | rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 아니오 |
-| ref-571 | Hönig, W., Kiesel, S., Tinka, A., Durham, J. W., & Ayanian, N. | Persistent and Robust Execution of MAPF Schedules in Warehouses | 2019-04 | 논문 | medium | 2026-09-25 | https://ieeexplore.ieee.org/abstract/document/8620328/ | 예 |
+| ref-251 | Open Robotics | Programming Multiple Robots with ROS 2 — integration_fleets (Fleet Adapter integration) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_fleets.html | 아니오 |
+| ref-537 | Open Robotics (open-rmf/rmf_ros2) | rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 아니오 |
+| ref-188 | Hönig, W., Kiesel, S., Tinka, A., Durham, J. W., & Ayanian, N. | Persistent and Robust Execution of MAPF Schedules in Warehouses | 2019-04 | 논문 | medium | 2026-09-25 | https://ieeexplore.ieee.org/abstract/document/8620328/ | 예 |
 | ref-572 | Feng, Y., Paul, A., Chen, Z., & Li, J. | A Real-Time Rescheduling Algorithm for Multi-robot Plan Execution | 2024 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2403.18145 | 예 |
 | ref-573 | Kalempa, V. C., Piardi, L., Limeira, M., & de Oliveira, A. S. | Multi-Robot Preemptive Task Scheduling with Fault Recovery: A Novel Approach to Automatic Logistics of Smart Factories | 2021-09-30 | 논문 | medium | 2026-09-25 | https://www.mdpi.com/1424-8220/21/19/6536 | 예 |
 | ref-574 | KTH 연구진 (arXiv:2211.08201) | Multiagent Rollout with Reshuffling for Warehouse Robots Path Planning | 2023 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2211.08201 | 예 |
@@ -106,16 +106,16 @@
 | ref-579 | Element Logic | FAQ - Element Logic (AutoStore) | 미확인 | 벤더 문서 | low | 2026-09-25 | https://www.elementlogic.net/solutions-and-services/autostore/faq/ | 예 |
 | ref-580 | Swisslog | The benefits of using AutoStore for high-throughput retail fulfillment | 2025-07 | 벤더 문서 | low | 2026-09-25 | https://www.swisslog.com/en-us/case-studies-and-resources/blog/2025/07/benefits-of-autostore-htp | 예 |
 | ref-581 | GS1 | EPC Information Services (EPCIS) Standard 1.2 | 2016-09-29 | 표준 | medium | 2026-09-25 | https://www.gs1.org/sites/default/files/docs/epc/EPCIS-Standard-1.2-r-2016-09-29.pdf | 예 |
-| ref-582 | Open Robotics (open-rmf/rmf_ros2) | Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2 | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/issues/224 | 예 |
+| ref-374 | Open Robotics (open-rmf/rmf_ros2) | Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2 | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/issues/224 | 예 |
 
 ### 출처 요약
 
 - **ref-031**: VDA 5050 최신판(3.0.0) 명세 원문. cancelOrder·startPause·연결 끊김·오류 처리와 관제 역할을 규정한다.
 - **ref-051**: VDA 5050 상태 메시지 JSON 스키마. errorLevel, actionStatus, loads, paused, newBaseRequest 필드를 정의한다.
 - **ref-004**: 작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고.
-- **ref-569**: Open-RMF 플릿 어댑터 연동 수준(Full Control, Easy Full Control, Traffic Light)과 경로 중단·교체 방식을 설명하는 장.
-- **ref-570**: 플릿 어댑터의 로봇 갱신 핸들 API 헤더. interrupt·resume·cancel_task·kill_task·replan·set_commission·create_issue·responsive wait 등의 문서 주석을 담는다.
-- **ref-571**: 원문 미열람. 행동 의존 그래프로 창고 MAPF 계획을 지연·감속에 강건하게 실행하고 재계획과 실행을 겹치게 하는 틀(IEEE RA-L).
+- **ref-251**: Open-RMF 플릿 어댑터 연동 수준(Full Control, Easy Full Control, Traffic Light)과 경로 중단·교체 방식을 설명하는 장.
+- **ref-537**: 플릿 어댑터의 로봇 갱신 핸들 API 헤더. interrupt·resume·cancel_task·kill_task·replan·set_commission·create_issue·responsive wait 등의 문서 주석을 담는다.
+- **ref-188**: 원문 미열람. 행동 의존 그래프로 창고 MAPF 계획을 지연·감속에 강건하게 실행하고 재계획과 실행을 겹치게 하는 틀(IEEE RA-L).
 - **ref-572**: 원문 미열람. 실행 중 지연된 로봇의 통과 순서를 전환 가능 간선 탐색(SES)으로 실시간 재스케줄하는 알고리즘(ICAPS 2024).
 - **ref-573**: 원문 미열람. 우선순위 선점 스케줄링·작업 의존성·고장 복구를 결합한 다중 로봇 작업 배정 방법 MRPF(Sensors 21(19)).
 - **ref-574**: 원문 미열람. 창고 로봇 경로 계획용 다중 에이전트 롤아웃 방법으로, 온라인 재계획으로 로봇 고장에 적응하는 예제를 보인다(IFAC 게재, 프리프린트).
@@ -126,7 +126,7 @@
 - **ref-579**: 원문 미열람. AutoStore 통합 업체의 FAQ. 로봇 고장 시 XHandler 모듈의 처리와 시스템 지속 운영을 설명한다.
 - **ref-580**: 원문 미열람. Swisslog 블로그. 멈춘 로봇 아래 재고를 SynQ 가 재할당해 주문 처리를 계속한다고 설명한다.
 - **ref-581**: 원문 미열람. EPCIS 1.2 표준. 저장소를 일지 방식으로 두고 오류 선언(errorDeclaration)으로 이벤트를 정정하는 방법을 정한다.
-- **ref-582**: 원문 미열람. 플릿 어댑터 재시작 시 작업 유실 문제와 SQLite 백업(PR 161)·rmf-web 영속 DB 조회 제안을 다룬 이슈.
+- **ref-374**: 원문 미열람. 플릿 어댑터 재시작 시 작업 유실 문제와 SQLite 백업(PR 161)·rmf-web 영속 DB 조회 제안을 다룬 이슈.
 
 ## 페이지 제안
 
@@ -170,4 +170,4 @@
 - 범위 경계 위반 의심:
     - f23: 장애물 회피·재위치 추정·비상정지 회로는 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이므로 '연계 대상: '으로 표시하고 ROP 는 취소·재배정·기록 정정만 맡는다고 구분
     - f16·f17: 기업 BCP 체계 전반은 전사 관리 영역이라 ROP 직접 범위가 아니며 현장 로봇 운영 계획의 참조 틀로만 제안
-- 한계: 재실행(스키마 불일치) 1회차. 반려 사유 1·2(f19·f20 이 벤더 문서만 근거로 한 [사실]이고 vendor_claim 표시 없음): 직전 research.json 이 이번 입력에 포함되지 않아 형식만 고칠 원본이 없었으므로, 같은 대상에 대해 예산 안에서 브리프 전체를 다시 작성했다. 벤더 문서만 근거로 한 f19(Element Logic·AutoStore XHandler)·f20(Swisslog SynQ 재고 재할당)은 vendor_claim: true, 태그 추정, 신뢰도 low, evidence_excerpt 첫머리 '벤더 주장: '으로 냈다(관련 finding: f19, f20). 직전 브리프와 finding 번호·내용이 다를 수 있다. web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-031·ref-051(VDA 5050)·ref-004(rmf-core), 신규 ref-569(integration_fleets)·ref-570(RobotUpdateHandle.hpp)·ref-578(보상 트랜잭션 패턴). 그 밖의 신규 출처는 원문 미열람(신뢰도 상한 medium). web_fetch_available: false 에 따라 재사용 출처의 신뢰도도 medium 으로 적었다. 검색 20회/30, 신규 출처 14건/15(ref-569~ref-582, 예약 구간 안). 한국 자료: 행정안전부 재해경감 인증(f16), 고용노동부 BCP 가이드(f17). 국내 물류센터의 로봇 장애 수동 전환 사례는 한국어 검색 3회에서 찾지 못함(열린 질문으로 올림). 입력의 참고문헌 목록은 요약본(0건 표시)이라 기존 id 는 이전 브리프에 나온 ref-031·ref-051 과 공통 규칙의 ref-004 만 재사용했다 — 같은 URL 이 이미 있으면 퍼블리셔가 합쳐야 한다. 기존 열린 질문 oq-003·oq-021·oq-038·oq-048 은 관련 근거(f21·f18·f2·f24·f10)만 내고 해결 제안하지 않음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 열린 질문 1건으로만 연결했고 섞지 않았다. 정정 요청 없음.
+- 한계: 재실행(스키마 불일치) 1회차. 반려 사유 1·2(f19·f20 이 벤더 문서만 근거로 한 [사실]이고 vendor_claim 표시 없음): 직전 research.json 이 이번 입력에 포함되지 않아 형식만 고칠 원본이 없었으므로, 같은 대상에 대해 예산 안에서 브리프 전체를 다시 작성했다. 벤더 문서만 근거로 한 f19(Element Logic·AutoStore XHandler)·f20(Swisslog SynQ 재고 재할당)은 vendor_claim: true, 태그 추정, 신뢰도 low, evidence_excerpt 첫머리 '벤더 주장: '으로 냈다(관련 finding: f19, f20). 직전 브리프와 finding 번호·내용이 다를 수 있다. web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-031·ref-051(VDA 5050)·ref-004(rmf-core), 신규 ref-251(integration_fleets)·ref-537(RobotUpdateHandle.hpp)·ref-578(보상 트랜잭션 패턴). 그 밖의 신규 출처는 원문 미열람(신뢰도 상한 medium). web_fetch_available: false 에 따라 재사용 출처의 신뢰도도 medium 으로 적었다. 검색 20회/30, 신규 출처 14건/15(ref-251~ref-374, 예약 구간 안). 한국 자료: 행정안전부 재해경감 인증(f16), 고용노동부 BCP 가이드(f17). 국내 물류센터의 로봇 장애 수동 전환 사례는 한국어 검색 3회에서 찾지 못함(열린 질문으로 올림). 입력의 참고문헌 목록은 요약본(0건 표시)이라 기존 id 는 이전 브리프에 나온 ref-031·ref-051 과 공통 규칙의 ref-004 만 재사용했다 — 같은 URL 이 이미 있으면 퍼블리셔가 합쳐야 한다. 기존 열린 질문 oq-003·oq-021·oq-038·oq-048 은 관련 근거(f21·f18·f2·f24·f10)만 내고 해결 제안하지 않음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 열린 질문 1건으로만 연결했고 섞지 않았다. 정정 요청 없음.

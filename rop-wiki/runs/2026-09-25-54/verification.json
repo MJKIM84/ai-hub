@@ -1,0 +1,210 @@
+{
+  "run_id": "2026-09-25-54",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw README 재열람. 처리 흐름 문구, 파라미터(resolution m/px, door_width·corridor_width, root_node 위도·경도·픽셀 좌표), run_manifest.json(입력·출력·명령·메타데이터), --with-text 기본 꺼짐 모두 원문과 일치. 발행일 미확인, 확인일 2026-09-25. 기존 ref-084 재사용 적정(단계 1·2 페이지와 중복 서술하지 말고 처리 흐름 맥락으로만 인용)."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw README 재열람. 'centered 512*512 images', 'structural graphs embedded with floorplan semantics', 'you might need to retrain the model' 원문과 일치. 기준일 2024(README 판)."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(arXiv 정책 차단). 검증 검색 결과로 제목·arXiv 번호·2026-02-06 제출, 구조화 JSON 시퀀스 출력, Floorplan-2M·HQ-300K, SFT·GRPO, 외벽 IoU 92.52% 확인. 벽·문·창문·방 요소 목록과 Qwen2.5-VL-3B 는 검증 스니펫에 직접 나타나지 않음(리서치 스니펫 기준). 성능 수치는 저자 보고 단일 출처로 명시 유지."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 프로젝트 페이지 원본(raw) 재열람. 11,917건 중 5,538건 선별, 'reduces labeling cost by over 50x using CAD layers and blocks', 벡터 공간 전문가 보정 원문과 일치. 50배는 저자 측 수치. 같은 내용이 아이디어 페이지 4절(ref-434)에 이미 있으므로 기존 각주 재사용."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 결과로 저자 6인, AAAI 36(11) 12524–12530, 기호별 불확실성 계산으로 어려운 분류에 전문가 지식 획득, 물량 산출 맥락 확인. 기준일 2022."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 결과로 저자(Ratul·Acharjee·Park·Sakib), 2025-10-16 제출, 인지 추출→사람 피드백→스키마 검증→BIM 스크립트, 평면도 10장, 벽 검출 약 83%에서 피드백 뒤 거의 완전 정렬, P/R/F1 0.83 이상, RMSE·MAE 0 수렴 확인. 저자 보고 단일 출처."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(재인용). 검증 검색에서 arXiv 2508.07714 DoorDet 존재 확인. 절차 서술은 아이디어 페이지 3절의 기존 문장(ref-077)과 같으므로 새 서술 대신 기존 각주 재사용. 기존 페이지는 '공개 데이터셋이 드물다'는 저자 판단을 [의견]으로 두었으므로 이번 문장은 절차 부분만 [사실]로 쓴다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf_traffic_editor README(raw) 재열람 — .building.yaml 저장, building_map_generator nav(주행 그래프)·gazebo/ignition(월드) 원문과 일치. ref-079 는 같은 발행 주체라 독립 확인 아님(브리프도 명시). ref-079 는 이번 실행에서 원문 미열람. 단계 2 페이지 q2-03 의 같은 사실과 중복이므로 기존 각주 재사용."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(재인용, 기존 ref-225). 'IFC→IndoorGML 자동 생성 오픈소스 도구'는 기존 검증 문장과 같음. 뒷부분 'BIM 입력은 이미지 인식·벡터화 단계를 거치지 않고 … 바로 변환하는 경로가 있다'는 출처 진술이 아니라 이 위키의 해석이므로 [추정]으로 분리 표기 지시."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: IFCtoLBD README(raw) 열람 — IFC STEP·IFC/XML·IFC/JSON 입력, Turtle·JSON-LD·ICDD 패키지 출력, 'validate it with SHACL', Version 2.54.0, Apache License 2.0, BOT 언급 모두 원문과 일치. 발행일 미확인, 확인일 2026-09-25."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: w3c/data-shapes 저장소 편집자 초안(ED) 원본 열람 — 정의 문구, sh:conforms(결과 없을 때만 true)·sh:result 원문과 일치. 열람본은 권고안(/TR/shacl/, 2017)이 아니라 편집자 초안이므로 페이지·각주에 '편집자 초안으로 확인' 명시 필요. 기준일 2017(권고안)."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: buildingSMART/IDS README(development 브랜치, raw) 열람 — 'Computer interpretable XML based standard from buildingSMART to define IFC based Information Delivery Specifications', XSD(ids.xsd)와 XML 예시 언급 일치. 판 번호 없음(미확인). 발행일 미확인, 확인일 2026-09-25."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 결과로 MJCF·URDF·SDF→USD 통합 장면 그래프, 웹 도구에서 온톨로지 개념 클래스로 의미 라벨 주석, 지식 그래프 변환과 역량 질문 응답 확인. 검색 결과는 'IROS 2025 에 제출'로 적으므로 '(IROS 2025)'를 '(IROS 2025 제출)'로 고치도록 지시."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 결과로 MDPI Buildings 14(8) 2274, Concordia 대학 저장소 사본, 로봇·건물·주행 작업·점검 작업 네 개념 묶음, Protégé 개발·공개 저장소 확인. '가구·HVAC 같은 건물 개념을 ifcOWL 에서 가져옴'은 검증 스니펫에 없어 미확인 — 해당 구절 삭제 또는 '미확인' 표기 지시."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 결과로 제목, 대한건축학회논문집 40(1) 297-303(2024), DOI 10.5659/JAIK.2024.40.1.297, 딥러닝과 경로계획 기반 주택 평면도 3D 모델 생성 확인. '인스턴스 정규화·화이트닝' 세부 기법은 검증 스니펫에 없어 미확인 — 세부 기법명 삭제 또는 '미확인' 표기 지시. 한국 자료 우선 규칙 충족."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: f1·f2·f3·f8·f9·f10·f11 을 이 위키가 대응시킨 종합이며 네 단계 구분을 제시한 단일 출처 없음(브리프 명시). 근거 finding 은 모두 살아남음. 신뢰도 low 적정. 근거에 원문 미열람 출처(ref-696·ref-225·ref-079) 포함."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: f1·f4·f5·f6·f7·f8·f11·f13 에서 도출한 검토 지점 네 곳은 이 위키의 종합이며 지점별 효과 측정 자료 없음. 근거 finding 모두 살아남음. 신뢰도 low 적정."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 분류 원문 SCM 질문 대응. osmAG 문자 이름 기본 꺼짐(f1, 원문 확인)과 사람 주석 사례(f8·f13) 근거. '래스터 문자 인식에 기댄다'는 단계 2 q2-02 기존 추정과 일치. 흐름 단계 출하 / 완료·인계 적정."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f1(osmAG 처리 흐름·문자 이름 기본 꺼짐)은 단계 1·2 페이지와 아이디어 페이지 3절의 ref-084 문장과 겹친다 — 기존 각주 재사용, 처리 흐름 맥락으로만 서술",
+      "f2(Raster-to-Graph 512×512 정규화)는 단계 2 q2-02 와 스키마 초안 6절의 ref-070 문장과 겹친다 — 기존 각주 재사용",
+      "f4(ArchCAD-400K 레이어·블록 자동 라벨링·벡터 공간 보정)는 아이디어 페이지 4절의 ref-434 문장과 겹친다 — 새 수치(50배, 5,538/11,917)만 추가",
+      "f7(DoorDet 반자동 절차)은 아이디어 페이지 3절의 ref-077 문장과 겹친다 — 기존 문장 재사용",
+      "f8(building.yaml→주행 그래프·월드)은 아이디어 페이지 4절 '관제·ROP 수용 형식'의 ref-441 문장과 겹친다",
+      "f9(ifc2indoorgml)는 아이디어 페이지 3절 표의 ref-225 행과 겹친다",
+      "새 참고문헌 ref-692(SHACL)는 용어집에 shacl 항목이 있어 기존 참고문헌과 URL 이 같을 수 있다 — 같은 URL 이면 퍼블리셔가 기존 id 로 합친다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f9: 문장을 둘로 나눠 'ifc2indoorgml 은 IFC 데이터에서 IndoorGML 모델을 자동 생성하는 오픈소스 도구다'만 [사실][^ref-225]로 두고, 'BIM 입력은 이미지 인식·벡터화 단계를 거치지 않고 공간 그래프 표현으로 바로 변환하는 경로가 있다'는 이 위키의 해석으로 [추정]을 붙인다 — 뒷부분은 출처 진술이 아니다.",
+    "f13: '(IROS 2025)'를 '(IROS 2025 제출)'로 고친다 — 검색 결과는 제출 사실만 전한다.",
+    "f14: '가구·HVAC 같은 건물 개념을 ifcOWL 에서 가져온' 구절을 빼거나 '(ifcOWL 개념 재사용 여부 미확인)'으로 바꾼다 — 검증 검색 결과에서 확인되지 않았고 원문 미열람이다.",
+    "f15: '인스턴스 정규화·화이트닝' 세부 기법명을 빼거나 '(세부 기법 미확인)'으로 표기하고, 각주 ref-693 의 기관 자리를 검색 결과가 전하는 서지(대한건축학회논문집 40(1), 297-303, DOI 10.5659/JAIK.2024.40.1.297)로 보강한다 — 원문 미열람이며 세부 기법은 검증 스니펫에 없다.",
+    "f11: 페이지 본문 또는 각주 ref-692 에 'W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음'을 명시한다 — 열람한 것은 /TR/shacl/ 권고안이 아니라 편집자 초안이다.",
+    "f3·f5·f6: 수치(외벽 IoU 92.52%, 벽 검출 약 83%·P/R/F1 0.83 이상, 50배 비용 절감(f4))는 모두 '저자 보고, 단일 출처'를 문장 안에 병기한다 — 독립 교차 확인이 없다.",
+    "원문 미열람 표기: ref-079·ref-077·ref-225·ref-690·ref-691·ref-693·ref-694·ref-695·ref-696 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — 이번 실행에서 원문을 열지 못한 출처다.",
+    "f1·f2·f4·f7·f8·f9: 이미 게시된 문장과 같은 사실은 새 문장·새 각주를 만들지 말고 기존 각주(ref-084·ref-070·ref-434·ref-077·ref-441·ref-225)를 재사용해 단계 3 페이지 3절의 처리 흐름 맥락으로만 요약한다 — 중복 서술을 피한다.",
+    "단계 3 페이지: 2절 표 q3-01 을 '답함'(답한 실행 id 2026-09-25-54, 답 위치 #q3-01)으로, 3절에 '### q3-01 … {#q3-01}' 소제목을 두고 결론 문장(f16·f17·f18)은 [추정]으로 유지한다 — rationale 의 '답:' 항목과 answered_question_ids 가 일치하며 결론이 이 위키의 종합이다.",
+    "새 질문 '처리 단계마다 사람이 고친 요소 수와 검토 시간을 기록해 가설 1·가설 3 을 판정하는 지표로 쓸 수 있는가?'는 q5-02(수작업 대비 소요 시간·수정 횟수 기준)와 사실상 같은 질문이므로 backlog_updates 에 새로 넣지 않고, 필요하면 q5-02 의 단계 5 페이지 메모로만 남긴다.",
+    "단계 전환 미승인: track_updates.stage_transition 을 넣지 않고, 단계 3 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(완료 조건 미충족: 아이디어 5절 다른 아이디어와의 연결·스키마 단계 3 근거 갱신·실험 계획 없음; 막힌 질문 q3-02·q3-03·q3-04·q3-05·q3-06)'로, 6절 표 검증 판정 칸을 '미충족'으로, 상태 줄 완료 조건을 '미충족'으로 둔다. 트랙 개요의 '현재 단계'는 입력 값(단계 1. 선행 연구·제품 사례 조사)을 바꾸지 않는다 — 단계 1·2 도 완료 조건 미충족이며 이번 실행은 CLI 지정 질문이다.",
+    "아이디어 페이지 5절: '처리 흐름과 사람 검토 지점' 소절은 f16·f17·f18 을 [추정]으로, 근거 사례(f1·f2·f3·f4·f5·f6·f7·f8·f10·f11)를 각 태그대로 싣고, '다른 아이디어와의 연결'은 이번 근거가 없으므로 '아직 조사되지 않음'으로 남긴다 — 근거 finding 이 없는 연결을 쓰지 않는다.",
+    "용어집 후보 '정보 전달 명세(IDS)'의 정의에서 '표준'의 판 번호를 쓰지 않는다(README 에 판 없음, 미확인) — f12 의 확인 범위를 넘지 않는다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 18건, 미확인 0건, 교차 확인 0건. 강등: 없음(f9 뒷부분은 [추정]으로 분리, f14·f15 의 미확인 세부는 삭제 또는 '미확인' 표기 지시). 원문 미열람 출처: ref-079, ref-077, ref-225, ref-690, ref-691, ref-693, ref-694, ref-695, ref-696(원문을 연 것은 ref-084·ref-070·ref-434·ref-441·ref-689·ref-697 의 GitHub 원본과 ref-692 의 W3C 편집자 초안). 주의: q3-01 의 결론(처리 흐름 네 단계 구분과 사람 검토 네 지점, 장소 이름의 사람 확인)은 확인한 도구·연구를 이 위키가 묶은 추정이며, 검토 지점별 효과를 측정한 자료는 찾지 못했다. FloorplanVLM·Sketch2BIM·ArchCAD-400K 의 성능·비용 수치는 저자 보고 단일 출처다. SHACL 은 권고안이 아니라 편집자 초안으로 확인했다. 검증 검색 8회(리서치 12회와 합쳐 20/40). 새 질문 3건 가운데 가설 판정 지표 질문은 q5-02 와 중복으로 판정해 등록하지 않는다. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 미충족(부족: 아이디어 3. 건축 도면 자동 인식 5절의 다른 아이디어와의 연결 근거, 공간 그래프 스키마 초안의 단계 3 근거 갱신, 실험 페이지의 실험 계획; 막힌 질문 q3-02·q3-03·q3-04·q3-05·q3-06). 단계 전환: 미승인(완료 조건 미충족·막힌 질문 있음. 이번 실행은 단계 1·2 도 완료 조건 미충족인 상태에서 CLI 지정으로 단계 3 질문을 다뤘으므로 트랙 현재 단계 표기는 바꾸지 않는다).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [
+      "처리 단계마다 사람이 고친 요소 수와 검토 시간을 기록해 가설 1(인식만으로 대부분 추출)과 가설 3(현장 모델링 시간 단축)을 판정하는 지표로 쓸 수 있는가? (q3-01 에서 파생) — q5-02 와 중복"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
