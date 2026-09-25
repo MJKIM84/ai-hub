@@ -18,7 +18,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "section": "4. 핵심 개념과 용어",
       "budget_chars": 800,
-      "summary": "이 영역은 로봇 인터페이스의 중단·취소 동작(cancelOrder, startPause, RETRIABLE, connectionState)과 기록 쪽의 보상·정정(보상 트랜잭션, 오류 선언) 용어로 읽는다. [사실][^ref-031]",
+      "summary": "이 영역의 용어는 로봇 인터페이스의 중단·취소 동작과 기록의 보상·정정 개념으로 나뉜다. [의견]",
       "planned_findings": [
         "f1",
         "f2",
@@ -34,7 +34,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
       "budget_chars": 800,
-      "summary": "피킹한 토트를 포장대로 옮기던 로봇이 멈추면 감지·취소·화물 식별·재배정·회수·기록 정정으로 이어지는 결정 흐름이 필요하다. [추정][^ref-031]",
+      "summary": "피킹한 토트를 포장대로 옮기던 로봇이 멈추면 감지·취소·화물 식별·재배정·회수·기록 정정으로 이어지는 결정 흐름이 필요할 것으로 보인다. [추정][^ref-031]",
       "planned_findings": [
         "f1",
         "f2",
@@ -52,7 +52,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "section": "6. 대표 접근법과 기술",
       "budget_chars": 1100,
-      "summary": "관제 인터페이스의 중단·취소·재계획 기능, 통신 단절 동안의 계속 운행 규칙, 실행 중 재계획 연구, 고장 허용 재배정, 보상·정정 패턴이 대표 접근법이다. [사실][^ref-031]",
+      "summary": "대표 접근법은 관제 인터페이스의 중단·취소·재계획, 통신 단절 동안의 계속 운행, 실행 중 재계획, 고장 허용 재배정, 기록의 보상·정정으로 나뉜다. [의견]",
       "planned_findings": [
         "f1",
         "f2",
@@ -75,7 +75,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "budget_chars": 500,
-      "summary": "VDA 5050·Open-RMF 가 예외 동작을 정의하고, ISO 22301 과 국내 BCP 제도는 현장 제한 운영 계획의 참조 틀(연계 대상)이다. [사실][^ref-031]",
+      "summary": "VDA 5050·Open-RMF 가 예외 동작을 정의하고, ISO 22301 과 국내 BCP 제도는 현장 제한 운영 계획의 참조 틀(연계 대상)이다. [추정][^ref-031][^ref-575]",
       "planned_findings": [
         "f1",
         "f7",
@@ -90,7 +90,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 450,
-      "summary": "지연에 강건한 MAPF 실행(행동 의존 그래프), 통과 순서 재스케줄(SES), 고장 복구 포함 작업 배정(MRPF), 롤아웃 기반 온라인 재계획이 대표 연구다. [사실][^ref-188]",
+      "summary": "대표 연구는 지연에 강건한 계획 실행, 통과 순서 재스케줄, 고장 복구 포함 작업 배정, 온라인 재계획 네 갈래다. [의견]",
       "planned_findings": [
         "f11",
         "f12",
@@ -145,40 +145,40 @@
       "path": "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오), 페이지 상태 자동 영역 추가"
+      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 영역 추가. 2차 수정: 4·6·8절 정리 문장을 [의견]으로, 5절 완료·인계 칸 첫 문장을 [추정]으로 분리"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area20-s6.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"6. 대표 접근법과 기술\" 절(1,542자)을 옮겼다"
+      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"6. 대표 접근법과 기술\" 절을 옮겼다. 2차 수정: 세 줄 요약과 3절 첫 문장을 [의견]으로 바꿈"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area20-s4.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"4. 핵심 개념과 용어\" 절(1,199자)을 옮겼다"
+      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"4. 핵심 개념과 용어\" 절을 옮겼다. 2차 수정: 요약 문장을 [의견]으로, BCMS 항목에 ISO 22301:2019 기준(개정 1:2024 별도) 명시"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area20-s11.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"11. 열린 질문\" 절(1,125자)을 옮겼다"
+      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"11. 열린 질문\" 절을 옮겼다(2차 수정 대상 아님, 변경 없음)"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area20-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(837자)을 옮겼다"
+      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절을 옮겼다. 2차 수정: ISO 22301 행의 '현장에는 참조 틀이다'를 [추정]으로 분리"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area20-s10.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(736자)을 옮겼다. 본문 링크를 주제 페이지 기준 경로(../../categories/…)로 고침"
+      "diff_summary": "자동 분리: 20. 예외 복구·재계획·업무 연속성 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절을 옮겼다. 2차 수정: 7. 화물·재고·자산 식별과 추적 항목에 EPCIS 1.2(2016-09-29 기준) 명시"
     }
   ],
-  "changelog_entry": "2026-09-25 | 20. 예외 복구·재계획·업무 연속성 | 영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오) | run 2026-09-25-50",
+  "changelog_entry": "2026-09-25 | 20. 예외 복구·재계획·업무 연속성 | 영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오), 2차 수정으로 정리 문장 태그 조정 | run 2026-09-25-50",
   "index_updates": {
     "home_recent": "2026-09-25 — 20. 예외 복구·재계획·업무 연속성: 영역 심화로 3~11절 작성(운반 중 고장 로봇의 화물·남은 주문 처리 흐름, VDA 5050·Open-RMF 중단·취소·재계획, 업무 연속성 참조 틀)",
     "category_recent": "2026-09-25 — 20. 예외 복구·재계획·업무 연속성: 영역 심화 3~11절 신규 작성, 열린 질문 3건 추가",
@@ -244,7 +244,10 @@
       "accessed": "2026-09-25",
       "summary": "작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고. 교통 스케줄 협상과 읽기 전용 플릿 설명.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": false
     },
@@ -259,7 +262,12 @@
       "accessed": "2026-09-25",
       "summary": "VDA 5050 최신판(3.0.0) 명세 원문. cancelOrder·startPause·연결 끊김·오류 처리와 관제 역할을 규정한다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md",
+        "docs/topics/2026/2026-09-25-area20-s11.md"
       ],
       "source_unopened": false
     },
@@ -274,7 +282,10 @@
       "accessed": "2026-09-25",
       "summary": "VDA 5050 상태 메시지 JSON 스키마. errorLevel, actionStatus, loads, paused, newBaseRequest 필드를 정의한다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": false
     },
@@ -289,7 +300,10 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 행동 의존 그래프로 창고 MAPF 계획을 지연·감속에 강건하게 실행하고 재계획과 실행을 겹치게 하는 틀(IEEE RA-L).",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": true
     },
@@ -320,7 +334,10 @@
       "accessed": "2026-09-25",
       "summary": "플릿 어댑터의 로봇 갱신 핸들 API 헤더. interrupt·resume·cancel_task·kill_task·replan·set_commission·create_issue 등의 문서 주석을 담는다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": false
     },
@@ -335,7 +352,9 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 실행 중 지연된 로봇의 통과 순서를 전환 가능 간선 탐색(SES)으로 실시간 재스케줄하는 알고리즘(ICAPS 2024).",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": true
     },
@@ -350,7 +369,9 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 우선순위 선점 스케줄링·작업 의존성·고장 복구를 결합한 다중 로봇 작업 배정 방법 MRPF(Sensors 21(19)).",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md"
       ],
       "source_unopened": true
     },
@@ -365,7 +386,8 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 창고 로봇 경로 계획용 다중 에이전트 롤아웃 방법으로, 온라인 재계획으로 로봇 고장에 적응하는 예제를 보인다(IFAC 게재, 프리프린트).",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md"
       ],
       "source_unopened": true
     },
@@ -380,7 +402,9 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 업무 연속성 관리 시스템(BCMS)의 요구사항 국제표준(2019 기준, 개정 1:2024 별도). 발행 기관 소개 페이지 검색 결과로 확인.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md"
       ],
       "source_unopened": true
     },
@@ -395,7 +419,8 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. 재해경감을 위한 기업의 자율활동 지원에 관한 법률에 따른 기업재난관리표준과 재해경감 우수기업 인증 절차 안내.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md"
       ],
       "source_unopened": true
     },
@@ -425,7 +450,12 @@
       "accessed": "2026-09-25",
       "summary": "여러 단계 작업이 실패할 때 완료된 단계를 되돌리는 보상 트랜잭션 패턴 설명. 멱등 단계, 진행 기록, 사람 개입을 권한다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md",
+        "docs/topics/2026/2026-09-25-area20-s11.md"
       ],
       "source_unopened": false
     },
@@ -470,7 +500,12 @@
       "accessed": "2026-09-25",
       "summary": "원문 미열람. EPCIS 1.2 표준. 저장소를 일지 방식으로 두고 오류 선언(errorDeclaration)으로 이벤트를 정정하는 방법을 정한다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md"
+        "docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md",
+        "docs/topics/2026/2026-09-25-area20-s4.md",
+        "docs/topics/2026/2026-09-25-area20-s6.md",
+        "docs/topics/2026/2026-09-25-area20-s7.md",
+        "docs/topics/2026/2026-09-25-area20-s10.md",
+        "docs/topics/2026/2026-09-25-area20-s11.md"
       ],
       "source_unopened": true
     },
@@ -687,6 +722,13 @@
     "원문 미열람 표시 — ref-188·572·573·574·575·576·577·579·580·581·374 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-576·579·374 의 발행일 자리에 '미확인'을 썼다.",
     "열린 질문 상태 — 11절에서 oq-003·oq-021·oq-038·oq-048 을 모두 '열림'으로 두고 부분 근거로만 적었으며 open_question_updates 에 해결로 내지 않았다.",
     "분량 초과 자동 분리: 20. 예외 복구·재계획·업무 연속성 본문 8,408자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,648자",
-    "형식 검증 재작성: docs/topics/2026/2026-09-25-area20-s10.md 3절의 세부영역 링크 10개를 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤고, 세부영역 페이지 프런트매터 sources 를 13절 각주 정의(14건)와 일치시켰다. 주장·태그·각주 내용은 바꾸지 않았다."
+    "형식 검증 재작성: docs/topics/2026/2026-09-25-area20-s10.md 3절의 세부영역 링크 10개를 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤고, 세부영역 페이지 프런트매터 sources 를 13절 각주 정의(14건)와 일치시켰다. 주장·태그·각주 내용은 바꾸지 않았다.",
+    "2차: 4절 요약 문장 태그 — 세부영역 4절 요약 문장을 [사실][^ref-031]에서 [의견]으로 바꾸고 각주를 뗐으며, 2026-09-25-area20-s4.md 의 세 줄 요약과 3절 첫 문장도 같게 바꿨다.",
+    "2차: 6절 요약 문장 태그 — 세부영역 6절 요약 문장을 [사실][^ref-031][^ref-537]에서 [의견]으로 바꾸고 각주를 뗐으며, 2026-09-25-area20-s6.md 의 세 줄 요약과 3절 첫 문장도 같게 바꿨다.",
+    "2차: 8절 첫 문장 태그 — '대표 연구는 … 네 갈래다.'를 [사실][^ref-188][^ref-572]에서 [의견]으로 바꾸고 각주를 뗐다.",
+    "2차: 5절 완료·인계 칸 — 첫 문장 '회수한 화물의 위치를 … 완료로 인정할 수 있다.' 끝에 [추정][^ref-578][^ref-581]을 따로 붙이고, 뒤 문장 'EPCIS 1.2 기준으로는 …'은 [사실][^ref-581]로 그대로 두었다.",
+    "2차: 7절 ISO 22301 행 — 2026-09-25-area20-s7.md 3절 표에서 ISO 요구사항 설명 문장만 [사실]로 두고 '현장에는 참조 틀이다.'를 떼어 [추정]을 붙였다.",
+    "2차: 4절 BCMS 항목 판 명시 — 2026-09-25-area20-s4.md 용어 목록의 업무 연속성 관리 시스템 항목에 '(ISO 22301:2019 기준, 개정 1:2024 별도)'를 적었다.",
+    "2차: 10절 7. 화물·재고·자산 식별과 추적 항목 — 2026-09-25-area20-s10.md 에서 'EPCIS 오류 선언'을 'EPCIS 1.2(2016-09-29 기준) 오류 선언'으로 고쳤다."
   ]
 }

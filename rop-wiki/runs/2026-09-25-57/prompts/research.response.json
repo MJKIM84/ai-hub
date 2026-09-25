@@ -1,0 +1,1044 @@
+{
+  "duration_api_ms": 425079,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.148597,
+  "usage": {
+    "input_tokens": 32,
+    "cache_creation_input_tokens": 257029,
+    "cache_read_input_tokens": 4792930,
+    "output_tokens": 32733,
+    "output_tokens_details": {
+      "thinking_tokens": 9217
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 257029,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 26328,
+        "cache_read_input_tokens": 330191,
+        "cache_creation_input_tokens": 671,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 671
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 32,
+      "outputTokens": 32733,
+      "cacheReadInputTokens": 4792930,
+      "cacheCreationInputTokens": 257029,
+      "webSearchRequests": 0,
+      "costUSD": 3.669606000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9217,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 246981,
+      "outputTokens": 10402,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.478991,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 33,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-57\",\"date\":\"2026-09-25\",\"run_type\":\"track\",\"target\":{\"area_no\":5,\"area_name\":\"5. 로봇 능력·작업 온톨로지\",\"category\":\"B. 공통 정보·환경 모델\"},\"gaps\":[\"단계 2 질문 q2-01, q2-02, q2-03 열림(target.json 지정, CLI 지정 질문 id). 단계 2 페이지는 seed 상태로 3절 조사 결과·4절 결론·5절 후속 질문이 비어 있음\",\"완료 조건: 문서 유형 매트릭스(document-type-matrix.md) 7행 × 8열 모든 칸 미조사\",\"완료 조건: 공개 문서 샘플 목록 표 비어 있음\",\"5. 로봇 능력·작업 온톨로지 페이지 8절(대표 연구와 자료)에 제조사 문서 유형·정보 형태를 다룬 자료 없음\",\"능력 온톨로지 초안의 근거 문서 개념에 문서 유형·이용 조건 속성 없음(6절 근거 문서 단위·버전 질문 열림)\"],\"research_questions\":[\"같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? [분류원문]\",\"q2-01 제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가?\",\"q2-02 기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가?\",\"q2-03 공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가?\",\"사용 정보(information for use)와 기계 취급설명서를 다루는 국제 표준(IEC/IEEE 82079-1, ISO 20607, ISO 10218-1)은 제조사 문서의 유형·구성을 어떻게 규정하는가? (단계 2 페이지 3절, 매트릭스 행 정의 겨냥)\",\"산업용 로봇 문서의 표·그림·스크린숏에서 정보를 찾는 문서 질의응답 연구는 형태별 난이도를 어떻게 보고하는가? (q2-02, 27. AI·학습·적응과 모델 운영 연결)\",\"국내 제조사(두산로보틱스 등)의 매뉴얼 유형과 공개 조건은 어떠한가? (한국 자료 우선 규칙)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"IEC/IEEE 82079-1:2019 는 도료 한 통부터 대형 산업 기계·플랜트까지 모든 종류의 제품에 대해 사용 정보(instructions for use)를 설계·작성하는 일반 원칙과 상세 요구사항을 정하는 IEC·IEEE·ISO 공동 표준이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-719\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): 2019판은 사용 정보의 목적·품질·관리 절차를 5절 원칙으로 두고 작성 절차와 경험적 평가 방법을 규범 부분에 넣었다.\",\"as_of\":\"2019\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f2\",\"claim\":\"IEC/IEEE 82079-1:2019 는 사용 정보를 기능 구조상 개념 정보·지시 정보·참조 정보 같은 정보 유형으로 나누도록 하는 것으로 보여, 제조사 문서의 기능 정보를 문서 유형뿐 아니라 정보 유형 축으로도 분류할 수 있을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-719\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"원문 미열람: 검색 요약은 사용 정보를 conceptual, instructional, reference information 유형에 배정한다고 전한다. 조항 번호·정확한 문구는 미확인.\",\"as_of\":\"2019\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"ISO 20607:2019 는 기계 제조사가 취급설명서의 안전 관련 부분을 작성할 때의 요구사항을 정하며, 기계 수명주기 전 단계를 고려한 안전 관련 내용·구조·표현을 다루되 일반 기술 문서 작성 지침은 아니다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-720\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(ISO 소개 페이지 검색 요약 기준): 안전 관련 내용·구조·표현, 수명주기 전 단계. 소음·진동 선언 요구는 다루지 않는다.\",\"as_of\":\"2019\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"ISO 10218-1:2025 는 산업용 로봇의 본질 안전 설계·보호 방책과 함께 사용 정보(information for use)에 관한 요구를 두어, 로봇 제조사의 안전 관련 문서 내용이 안전 표준의 규정 대상이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-721\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): inherent safe design, protective measures, and information for use of industrial robots. 사용 정보의 세부 항목(가반하중·정지 거리 등)은 미확인.\",\"as_of\":\"2025\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"두산로보틱스 매뉴얼 포털은 사용자 매뉴얼(안전·조작·프로그래밍·모니터링·테스트·환경 설정), 설치 매뉴얼(설치·인터페이스·수동/자동 모드·안전 기능·운송·유지보수·인증 정보), 티치 펜던트 없이 외부 응용에서 컨트롤러를 제어하는 C/C++ API 매뉴얼, 액세서리·퀵 가이드·ROS 사용법을 담은 기타 매뉴얼로 문서를 나눈다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-731\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): 설치 메뉴얼은 로봇 설치방법, 인터페이스, 수동/자동 모드, 안전 관련 기능, 운송, 유지보수, 인증 정보 등을 담는다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f6\",\"claim\":\"Clearpath Robotics 의 공개 문서 저장소 cpr-documentation 은 하드웨어 사용자 매뉴얼, 하드웨어 정비 매뉴얼, 소프트웨어 설정 가이드, 소프트웨어 변경 이력, 업데이트 안내, ROS 튜토리얼을 담고 Docusaurus 로 빌드해 docs.clearpathrobotics.com 으로 배포한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-728\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"hardware user manuals,\\\" \\\"hardware maintenance manuals,\\\" \\\"software configuration guides,\\\" software changelogs. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"Kinova KORTEX API 공식 저장소는 API 동작 방식·전송·라우팅·서보 모드·오류 관리 가이드(마크다운), C++·Python·Modbus 빠른 시작, Modbus 인터페이스 제어 문서(ICD), 코드 예제, Gen3·Gen3 lite 릴리스 노트, Protocol Buffer 메시지 정의를 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-722\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README 기준: Error management 가이드, Modbus ICD, release notes(Gen3 2.8.0, Gen3 lite 2.3.4), \\\"Google Protocol Buffer message objects\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"MiR(Mobile Industrial Robots)는 제품별 REST API 참조 가이드를 유통사 사이트의 매뉴얼 항목에 두고, 유통사 다운로드 페이지에서 소프트웨어·제품 릴리스 노트, CAD 파일, 인증서를 제공하며, 로봇·플릿 화면의 도움말 메뉴에서도 API 문서를 띄울 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-730\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준, MiR Fleet reference guide v1.2, 2020-03 재게시본): REST API reference guides on the Distributor site under Manuals; Release Notes, CAD files, Certificates.\",\"as_of\":\"2020-03\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"공식 저장소 README 기준으로 UR External Control URCap 은 URCap 라이브러리 1.3.0 이상이 필요해 최소 PolyScope 3.7·5.1 을 지원한다고 적어, 통합 문서가 로봇 소프트웨어 버전 조건을 담는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-727\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: minimal PolyScope versions \\\"3.7 and 5.1\\\" (URCap library 1.3.0 이상 필요). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"두산로보틱스 API-DRFL 공식 저장소 README 는 컨트롤러 프레임워크 DRCF v2·v3 를 전처리기 값으로 골라 빌드하게 하고, Ubuntu 18.04·20.04·22.04 와 Linux 전용 Arm64 지원을 적으며, API 매뉴얼은 별도 GitHub Pages 사이트로 연결한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-732\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"DRCF v2\\\"/\\\"DRCF v3\\\" 전처리기 설정, \\\"Ubuntu supports versions : 18.04, 20.04 and 22.04\\\", Official Doosan Robotics API Manual 링크. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"UR ROS 2 드라이버 README 는 드라이버가 가반하중 3 kg~30 kg 의 UR 로봇 전 라인과 PolyScope X·PolyScope 5·CB3 컨트롤러 로봇에 호환된다고 적는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-726\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: \\\"compatible across the entire line of UR robots -- from 3 kg payload to 30 kg payload\\\". 독립 확인 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f12\",\"claim\":\"확인한 샘플을 종합하면 기능·명령 정보는 API·통합 가이드와 메시지 정의에, 운용 모드·안전 기능·유지보수는 설치·안전 매뉴얼에, 오류 의미는 API 오류 열거표에, 호환 버전 조건은 통합 문서 README·릴리스 노트에, 치수 정보는 CAD 파일에 주로 있는 것으로 보여, 매트릭스 행마다 담는 정보 항목이 다를 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-731\",\"ref-728\",\"ref-722\",\"ref-723\",\"ref-730\",\"ref-727\",\"ref-732\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합: 두산(설치 매뉴얼의 모드·안전 기능), Kinova(오류 열거표·메시지 정의), MiR(CAD·릴리스 노트), UR·두산 README(버전 조건). 기종 수가 적고 AMR 매뉴얼 본문은 미열람.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"Kinova KORTEX API 의 Action 메시지 참조 문서는 멤버 이름·데이터형·설명·사용법 네 열의 표로 기능(동작 파라미터)을 기술하며, 값 범위나 단위는 적지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-724\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"표 행 예: send_twist_command | oneof:action_parameters [TwistCommand] | Control the tool in velocity. 범위·단위 열 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Kinova KORTEX API 의 하위 오류 코드 문서는 열거자·값·설명 세 열의 표로 약 140개 항목(예: INVALID_PARAM 3, ROBOT_IN_FAULT 22)을 두어, 오류 의미가 짧은 설명 문구의 파라미터 표 형태로 존재한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-723\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SubErrorCodes.md: Enumerator | Value | Description 표, 값 0~141. 원인·복구 방법 열은 없다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"Open-RMF PerformAction 튜토리얼은 플릿이 수행할 수 있는 동작을 config.yaml 의 actions 목록으로 선언하고, 작업 요청 JSON 의 category·description 과 어댑터의 execute_action 처리 코드를 코드 예제(YAML·JSON·Python)로 보여 주며, 동작 파라미터를 별도 파라미터 표로 두지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-040\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문: \\\"we can provide a list of performable actions for our fleet\\\" — actions: [\\\"clean\\\"], description 의 zone 값은 코드 예제 안에서만 설명된다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"OSRF 의 mir100-client 는 MiR100 REST API 2.7.0 의 PDF 문서를 자동 변환해 Swagger Codegen 으로 만든 Python 클라이언트로, PDF 로만 제공되는 API 참조를 기계가독 명세로 바꾸는 단계가 실제로 쓰인 사례다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-729\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"Automatically converted from v270 pdf\\\", \\\"automatically generated by the Swagger Codegen project\\\", API version \\\"2.7.0\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f17\",\"claim\":\"산업용 로봇 사후 서비스 문서 질의응답 연구(2026)는 답의 근거가 오류 화면 스크린숏·인터페이스 화면·배선도 같은 다중 모달 자료에 있어 텍스트 기반 검색 증강 생성(RAG)이 활용하기 어렵다고 보고, OCR 과 구조화된 의미 서술로 이미지 내용을 검색 가능한 텍스트로 바꾸는 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-734\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): error screenshots, interface displays, and wiring diagrams; OCR 로 오류 코드·파라미터 필드·인터페이스 문구를 추출.\",\"as_of\":\"2026\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"MARL-RAGDoc(Scientific Reports, 2026)은 운용 매뉴얼·회로도·파라미터 표 같은 산업 문서의 지식이 텍스트·이미지·레이아웃에 나뉘어 있다고 보고, 텍스트·이미지·표 전용 에이전트가 근거를 고르는 계층형 다중 에이전트 강화학습 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-735\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): operation manuals, circuit diagrams, and parameter tables contain domain knowledge distributed across text, images, and document layout.\",\"as_of\":\"2026\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f19\",\"claim\":\"중국어 텍스트·표·차트 질의응답 데이터셋 CT2C-QA 연구는 모달리티별 정확도가 텍스트, 표, 차트 순으로 낮아졌다고 보고했다(로봇 문서가 아닌 일반 데이터셋 조건).\",\"tag\":\"사실\",\"source_ids\":[\"ref-736\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): text accuracy is significantly better than tables, which in turn surpasses the chart category. 수치는 미확인.\",\"as_of\":\"2024-10\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f20\",\"claim\":\"문서 레이아웃 분석 데이터셋 DocLayNet 은 여섯 문서 범주 가운데 하나로 매뉴얼(manuals)을 두고 80,863쪽에 11개 레이아웃 클래스를 사람이 주석해, 매뉴얼의 표·그림 영역을 분리하는 모델의 학습·평가 기준이 된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-733\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"financial_reports, scientific_articles, laws_and_regulations, government_tenders, manuals, patents\\\", 80,863 pages, \\\"11 distinct class labels\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"확인한 사례를 종합하면 기능 정보의 형태별 추출 난이도는 기계가독 명세(JSON 스키마·Protocol Buffer·OpenAPI)가 가장 낮고, 열거·파라미터 표, 코드 예제 속 설명, 서술 문장 순으로 높아지며, 스크린숏·배선도·도면 같은 그림이 가장 높을 것으로 보이고, 표 형태라도 범위·단위·복구 방법이 빠져 다른 문서로 보완해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-228\",\"ref-722\",\"ref-729\",\"ref-723\",\"ref-724\",\"ref-040\",\"ref-734\",\"ref-735\",\"ref-736\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합이며 로봇 문서에서 형태별 추출 정확도를 측정한 자료는 찾지 못했다. 텍스트>표>차트 순서는 일반 데이터셋 결과(f19).\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"분류 원문 질문(누가 이 화물을 실제로 취급할 수 있는가)에 쓰일 적재 한계·치수는 확인한 API 참조 표에는 범위·단위 없이 없거나 약하고 설치 매뉴얼·사양서·팩트시트 스키마 쪽에 있을 것으로 보여, 능력 추출은 API 문서만으로는 부족하고 여러 문서 유형을 함께 읽어야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-724\",\"ref-731\",\"ref-228\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Kinova Action 표에 범위·단위 열 없음(f13), 두산 설치 매뉴얼이 인터페이스·안전 기능을 담음(f5), VDA 5050 팩트시트 적재 세트가 최대 중량·취급 높이를 둠(재인용: 2026-09-25-23).\",\"as_of\":\"2026-09-25\",\"flow_step\":\"적치\",\"flow_item\":\"수행 자원\"},{\"id\":\"f23\",\"claim\":\"Kinova KORTEX API 저장소는 BSD 3-Clause 라이선스로 공개되고 Windows 10·Ubuntu 16.04·18.04·20.04 에서 시험했다고 적어, 로봇팔 API 문서 샘플을 공개 저장소에서 라이선스와 함께 얻을 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-722\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"BSD 3-Clause 'Revised' License\\\", \\\"tested on Windows 10, Ubuntu 16.04, Ubuntu 18.04 and Ubuntu 20.04\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"libfranka 공식 저장소는 Franka 연구용 로봇 제어 C++ 라이브러리를 Apache 2.0 라이선스로 공개하고, 기능 개요는 생성된 API 문서에, 설정·사용법은 별도의 Franka Control Interface(FCI) 문서 사이트에 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-725\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: \\\"Apache 2.0 license\\\", \\\"research versions of Franka Emika robots\\\", FCI 문서 링크. 로봇 시스템 버전 호환표는 README 에 없다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"Clearpath 문서 원본은 공개 GitHub 저장소에 있지만 README 에 문서 본문의 라이선스·이용 조건은 적혀 있지 않다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-728\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README 열람 결과 라이선스·이용 조건 문구 없음(부재 관찰, 저장소 LICENSE 파일은 미확인). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"두산로보틱스 매뉴얼은 웹 포털(manual.doosanrobotics.com)에서 판별로 열람할 수 있지만, 매뉴얼 상세 정보는 회원 가입이 필요한 Robot LAB 에서 확인하게 되어 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-731\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): 매뉴얼에 대한 상세 정보는 Robot LAB 에서 확인할 수 있으며 회원 가입이 필요. 사용자 매뉴얼 3.6.0·API 1.32 판 경로 확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f27\",\"claim\":\"MiR 커뮤니티는 파트너·고객만 쓰는 폐쇄형 플랫폼이고 REST API 참조 가이드는 유통사 사이트에 있어, AMR 의 API 문서가 공개 열람되지 않는 사례다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-730\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람(검색 요약 기준): closed platform only for MiR partners and customers; REST API reference guides on the Distributor site.\",\"as_of\":\"2020-03\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f28\",\"claim\":\"MassRobotics AMR 상호운용 표준의 식별 보고는 제품 문서 링크(productDocumentation)를 선택 필드로 두어, 로봇이 자기 문서의 위치를 관제에 알릴 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-230\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"identityReport 선택 필드 productDocumentation (재인용: 2026-09-25-35)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f29\",\"claim\":\"확인한 샘플을 종합하면 로봇팔·협동로봇(Kinova, Franka, UR, 두산)의 API·통합 문서는 공개 저장소에 오픈소스 라이선스로 있는 경우가 많지만, 사용자·설치·안전 매뉴얼과 AMR API 참조(MiR)는 회원 가입이나 유통사 접근이 필요할 수 있고 공개 저장소라도 문서 본문 라이선스가 적히지 않은 경우가 있어, 샘플별로 재사용 조건을 따로 확인해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-722\",\"ref-725\",\"ref-727\",\"ref-732\",\"ref-731\",\"ref-730\",\"ref-728\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"이 위키의 종합: 샘플 6개 제조사(AMR 2, 협동로봇 2, 로봇팔 2) 기준. 매뉴얼 PDF 본문의 이용 약관은 열어 보지 못했다.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-719\",\"org\":\"IEEE / IEC / ISO\",\"title\":\"82079-1-2019 - IEEE/IEC International Standard for Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements\",\"published\":\"2019\",\"url\":\"https://ieeexplore.ieee.org/document/8715838\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 모든 제품의 사용 정보 작성 원칙·요구사항을 정한 공동 표준 소개(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-720\",\"org\":\"ISO\",\"title\":\"ISO 20607:2019 - Safety of machinery — Instruction handbook — General drafting principles\",\"published\":\"2019\",\"url\":\"https://www.iso.org/standard/68519.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 기계 취급설명서의 안전 관련 부분 작성 요구사항(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-721\",\"org\":\"ISO\",\"title\":\"ISO 10218-1:2025 - Robotics — Safety requirements — Part 1: Industrial robots\",\"published\":\"2025\",\"url\":\"https://www.iso.org/standard/73933.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 로봇의 본질 안전 설계·보호 방책·사용 정보 요구(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-722\",\"org\":\"Kinova (Kinovarobotics GitHub)\",\"title\":\"Kinova-kortex2_Gen3_G3L — readme.md\",\"published\":null,\"url\":\"https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/readme.md\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"KORTEX API 공식 저장소 README. 문서 구성(API 가이드·ICD·예제·릴리스 노트·protobuf), BSD 3-Clause 라이선스.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/readme.md\"},{\"id\":\"ref-723\",\"org\":\"Kinova (Kinovarobotics GitHub)\",\"title\":\"Kinova-kortex2_Gen3_G3L — api_python/doc/markdown/enums/Api/SubErrorCodes.md\",\"published\":null,\"url\":\"https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/api_python/doc/markdown/enums/Api/SubErrorCodes.md\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"하위 오류 코드 열거표(열거자·값·설명, 약 140항목).\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/api_python/doc/markdown/enums/Api/SubErrorCodes.md\"},{\"id\":\"ref-724\",\"org\":\"Kinova (Kinovarobotics GitHub)\",\"title\":\"Kinova-kortex2_Gen3_G3L — api_python/doc/markdown/messages/Base/Action.md\",\"published\":null,\"url\":\"https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/api_python/doc/markdown/messages/Base/Action.md\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Action 메시지 참조 표(멤버 이름·데이터형·설명·사용법), 범위·단위 없음.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/api_python/doc/markdown/messages/Base/Action.md\"},{\"id\":\"ref-725\",\"org\":\"Franka Robotics (frankarobotics GitHub)\",\"title\":\"libfranka — README.md\",\"published\":null,\"url\":\"https://github.com/frankarobotics/libfranka\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Franka 연구용 로봇 C++ 라이브러리 README. Apache 2.0, API 문서·FCI 문서 링크.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/frankarobotics/libfranka/master/README.md\"},{\"id\":\"ref-726\",\"org\":\"Universal Robots (UniversalRobots GitHub)\",\"title\":\"Universal_Robots_ROS2_Driver — README.md\",\"published\":null,\"url\":\"https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/blob/main/README.md\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"UR ROS 2 드라이버 README. 호환 로봇 범위(벤더 주장), External Control URCap, 설치·설정·안전 관련 문서 목차.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Driver/main/README.md\"},{\"id\":\"ref-727\",\"org\":\"Universal Robots (UniversalRobots GitHub)\",\"title\":\"Universal_Robots_ExternalControl_URCap — README.md\",\"published\":null,\"url\":\"https://github.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/blob/master/README.md\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"External Control URCap README. 최소 PolyScope 3.7·5.1 요구.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/master/README.md\"},{\"id\":\"ref-728\",\"org\":\"Clearpath Robotics (clearpathrobotics GitHub)\",\"title\":\"cpr-documentation — README.md\",\"published\":null,\"url\":\"https://github.com/clearpathrobotics/cpr-documentation/blob/development/README.md\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Clearpath 문서 원본 저장소 README. 사용자·정비 매뉴얼, 설정 가이드, 변경 이력, Docusaurus 빌드.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/clearpathrobotics/cpr-documentation/development/README.md\"},{\"id\":\"ref-729\",\"org\":\"Open Robotics (osrf GitHub)\",\"title\":\"mir100-client — README.md (Generated from mir100 rest api pdf)\",\"published\":null,\"url\":\"https://github.com/osrf/mir100-client\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"MiR100 REST API 2.7.0 PDF 를 자동 변환해 Swagger Codegen 으로 만든 Python 클라이언트.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/mir100-client/master/README.md\"},{\"id\":\"ref-730\",\"org\":\"Mobile Industrial Robots (MiR), 유통사 재게시본\",\"title\":\"MiR Fleet Reference guide (en), Revision v.1.2\",\"published\":\"2020-03\",\"url\":\"https://www.hmi-mbs.fr/wp-content/uploads/2020/07/notice-mir_fleet_reference_guide_12_en.pdf\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 유통사 사이트의 REST API 가이드·릴리스 노트·CAD·인증서 제공 경로(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-731\",\"org\":\"두산로보틱스(Doosan Robotics)\",\"title\":\"V3-manual - Doosan Robotics (매뉴얼 포털)\",\"published\":null,\"url\":\"https://manual.doosanrobotics.com/\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 사용자·설치·API·기타 매뉴얼 구성과 Robot LAB 회원 가입 조건(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-732\",\"org\":\"두산로보틱스(DoosanRobotics GitHub)\",\"title\":\"API-DRFL — README.md\",\"published\":null,\"url\":\"https://github.com/DoosanRobotics/API-DRFL\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"두산 API 라이브러리 README. DRCF v2·v3 선택, 지원 OS·아키텍처, API 매뉴얼 링크.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/DoosanRobotics/API-DRFL/main/README.md\"},{\"id\":\"ref-733\",\"org\":\"IBM Research (DS4SD GitHub)\",\"title\":\"DocLayNet — README.md\",\"published\":null,\"url\":\"https://github.com/DS4SD/DocLayNet\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"매뉴얼을 포함한 6개 문서 범주 80,863쪽의 사람 주석 레이아웃 데이터셋.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/DS4SD/DocLayNet/main/README.md\"},{\"id\":\"ref-734\",\"org\":\"AI(MDPI) 게재 논문 저자(미확인)\",\"title\":\"A Dual-Channel Multimodal RAG System: OCR- and Semantic Description-Driven Question Answering for Industrial Robot After-Sales Service\",\"published\":\"2026\",\"url\":\"https://doi.org/10.3390/ai7060229\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 로봇 사후 서비스 질의응답에서 스크린숏·배선도를 OCR·의미 서술로 텍스트화하는 다중 모달 RAG.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-735\",\"org\":\"Scientific Reports 게재 논문 저자(미확인)\",\"title\":\"Hierarchical multi-agent reinforcement learning for retrieval-augmented industrial document question answering\",\"published\":\"2026\",\"url\":\"https://www.nature.com/articles/s41598-026-41684-z\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 매뉴얼·회로도·파라미터 표의 텍스트·이미지·표 근거를 에이전트별로 고르는 MARL-RAGDoc.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-736\",\"org\":\"arXiv 2410.21415 저자(미확인)\",\"title\":\"CT2C-QA: Multimodal Question Answering over Chinese Text, Table and Chart\",\"published\":\"2024-10\",\"url\":\"https://arxiv.org/abs/2410.21415\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 텍스트·표·차트 질의응답에서 텍스트>표>차트 순 정확도 보고(검색 요약).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-040\",\"org\":\"Open Robotics\",\"title\":\"PerformAction Tutorial - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"사용자 정의 동작을 config.yaml 로 선언하고 execute_action 으로 처리하는 튜토리얼.\",\"fetched\":true,\"fetched_via\":\"inbox\",\"fetch_url\":null},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 팩트시트 JSON 스키마(적재 명세·지원 action). 이번 실행에서는 다시 열지 않음.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-230\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 식별·상태 보고 JSON 스키마. 이번 실행에서는 다시 열지 않음.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/stage-2-document-types.md\",\"sections\":[\"2\",\"3\",\"4\",\"5\",\"6\",\"8\",\"9\"],\"rationale\":\"q2-01 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12 (신뢰도 medium) / q2-02 답: f13·f14·f15·f16·f17·f18·f19·f20·f21·f22 (신뢰도 low) / q2-03 답: f23·f24·f25·f26·f27·f28·f29 (신뢰도 medium) — 2절 세 질문 상태 답함, 3절 q2-01·q2-02·q2-03 소제목 신설({#q2-01} 등): 사용 정보 표준(f1~f4), 제조사별 문서 구성(f5~f10, f11 은 벤더 주장), 문서 유형별 정보 위치 종합(f12 추정), 형태별 사례(f13~f16)와 문서 질의응답 연구(f17~f20), 난이도 종합(f21 추정)과 분류 원문 질문 연결(f22), 샘플별 이용 조건(f23~f28)과 종합(f29 추정) / 4절 결론·불확실성(로봇 문서 형태별 정확도 측정 자료 없음, AMR 매뉴얼 본문 미열람) / 5절 후속 질문 / 6절 완료 조건 현황 / 8절 출처 / 9절 이력\"},{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/document-type-matrix.md\",\"sections\":[\"3\",\"4\",\"7\",\"8\"],\"rationale\":\"트랙 산출물 갱신: 3절 매트릭스 일부 칸 채움 — 통합·API 가이드의 기능·인터페이스(있음: 파라미터 표·코드 예제, f7·f13·f15), 파라미터 범위(부분: 범위·단위 없음, f13), 오류 코드표의 오류 의미(부분: 설명 문구만·복구 방법 없음, f14), 릴리스 노트·통합 README 의 버전 조건(f9·f10), 설치 매뉴얼의 운용 모드·안전 기능(f5), 치수도·도면은 CAD 파일로 제공(f8). 샘플 병기, 나머지는 미조사 유지 / 4절 공개 문서 샘플 6건(Clearpath·MiR AMR, UR·두산 협동로봇, Kinova·Franka 로봇팔)과 이용 조건(f23~f27), UR 호환 범위는 [추정] 벤더 주장(f11) / 7절 출처 / 8절 이력\"},{\"action\":\"update\",\"path\":\"docs/tracks/manual-capability-ontology/ontology-draft.md\",\"sections\":[\"2\",\"6\"],\"rationale\":\"트랙 산출물 갱신(검증 승인 시): 근거 문서 개념에 속성 '문서 유형'·'이용 조건' 추가 제안(f5·f6·f7·f8·f26·f27·f29). 미승인 시 6절 근거 문서 단위·버전 질문에 병기\"},{\"action\":\"update\",\"path\":\"docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md\",\"sections\":[\"6\",\"8\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f12, f13, f21, f22): 능력 정보가 문서 유형별로 흩어지고 API 참조 표에 범위·단위가 빠져 여러 문서를 함께 읽어야 한다는 점, 사용 정보 표준(f1, f3, f4)\"},{\"action\":\"update\",\"path\":\"docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md\",\"sections\":[\"6\",\"8\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f9, f10, f16, f26, f27): 온보딩 때 필요한 제조사 문서의 버전 호환 조건과 접근 제한, PDF API 참조를 기계가독 명세로 바꾼 사례\"},{\"action\":\"update\",\"path\":\"docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md\",\"sections\":[\"6\",\"8\"],\"rationale\":\"트랙 manual-capability-ontology 단계 2 반영 제안 (f17, f18, f19, f20): 교차 규칙(매뉴얼 해석은 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용)에 따라 산업용 로봇 문서의 다중 모달 RAG 연구와 형태별 정확도 차이를 양쪽 페이지에 연결\"}],\"glossary_candidates\":[{\"term_ko\":\"사용 정보\",\"term_en\":\"Information for Use (Instructions for Use)\",\"definition\":\"제품을 안전하고 효과적으로 쓰도록 제조사가 사용자에게 제공하는 설명서·지시·경고 등의 정보로, IEC/IEEE 82079-1 이 작성 원칙을 정한다.\"},{\"term_ko\":\"문서 레이아웃 분석\",\"term_en\":\"Document Layout Analysis\",\"definition\":\"문서 페이지를 본문·표·그림·캡션 같은 영역으로 나누고 종류를 판별하는 처리로, 매뉴얼에서 표·그림을 따로 추출하기 위한 첫 단계다.\"}],\"open_questions_new\":[\"국내 물류 로봇(AMR) 제조사의 사용자 매뉴얼·API 문서는 공개 열람이 가능한가, 회원 가입·계약 조건이 있다면 ROP 사업자가 능력 추출 근거로 재사용할 수 있는 범위는 어디까지인가? | 관련 영역: 5. 로봇 능력·작업 온톨로지, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f29 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":21,\"cross_checked_count\":0,\"unverified\":[\"모든 finding 교차 확인 없음: 제조사·표준마다 발행 주체 한 곳의 자료\",\"f1~f4: 표준 원문(유료) 미열람, 검색 요약 기준. ISO 10218-1:2025·ISO 3691-4 의 사용 정보 세부 항목 미확인\",\"f2: 82079-1 정보 유형(개념·지시·참조)의 조항·문구 미확인\",\"f5·f26: 두산 매뉴얼 포털 미열람(검색 요약)\",\"f8·f27: MiR 가이드는 유통사 재게시 PDF 의 검색 요약이며 최신 접근 조건 미확인\",\"f11: UR 호환 범위는 벤더 주장, 독립 확인 없음\",\"f17~f19: 논문 원문 미열람, 수치 미확인\",\"f21·f22·f29: 이 위키의 종합이며 로봇 문서의 형태별 추출 정확도를 측정한 자료는 찾지 못함\",\"AMR 사용자·안전 매뉴얼 본문, 치수도·도면, 안전 매뉴얼 유형 샘플은 열지 못함\"],\"scope_violations\":[\"f4: ISO 10218-1 의 안전 설계·보호 방책은 로봇 자체 안전 제어(연계 대상)이며 문서 요구사항 측면으로만 사용\"],\"budget_used\":{\"queries\":17,\"sources\":18},\"limits\":\"web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 신규 ref-722·ref-723·ref-724(Kinova), ref-725(libfranka), ref-726·ref-727(UR), ref-728(Clearpath), ref-729(OSRF mir100-client), ref-732(두산 API-DRFL), ref-733(DocLayNet). ref-040 은 입력 원문 텍스트(inbox). 표준 3건·MiR·두산 포털·논문 3건과 재사용 ref-228·ref-230 은 원문 미열람(신뢰도 상한 medium). libfranka 는 frankaemika 경로가 404 라 frankarobotics/master 로 열었다. 검색 17회/40, 신규 출처 18건/20(ref-719~ref-736, 예약 구간 안), 재사용 3건. 질문 선택: target.json 지정 q2-01·q2-02·q2-03 세 건 모두 답했으나 q2-02 는 로봇 문서 형태별 정확도 측정 자료가 없어 종합 신뢰도 low. 한국 자료: 두산로보틱스 매뉴얼 포털·API 저장소(ref-731·ref-732). 고용노동부 협동작업 안전 가이드는 제조사 문서가 아니라 넣지 않았다. 교차 규칙: 매뉴얼 해석 AI 연구(f17~f20)는 27. AI·학습·적응과 모델 운영과 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전 양쪽 반영을 제안했다. 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 온톨로지 변경 1건(근거 문서 속성). 후속 질문 3건. 일반 열린 질문 1건. 정정 요청 없음.\"},\"track\":{\"slug\":\"manual-capability-ontology\",\"stage\":2,\"answered_question_ids\":[\"q2-01\",\"q2-02\",\"q2-03\"],\"new_questions\":[{\"question\":\"PDF 로만 제공되는 로봇 REST API 참조(MiR 등)를 OpenAPI 같은 기계가독 명세로 자동 변환할 때 엔드포인트·파라미터·오류 응답이 얼마나 빠지거나 틀리며, 변환 결과를 어떻게 검증하는가? (q2-02 에서 파생)\",\"stage\":3,\"rationale_finding_id\":\"f16\"},{\"question\":\"API 참조 표에 없는 파라미터 범위·단위와 오류의 복구 방법은 제조사 문서 가운데 어느 유형(사용자 매뉴얼, 설치 매뉴얼, 오류 코드표 부록)에서 찾을 수 있는가? (q2-02 에서 파생)\",\"stage\":2,\"rationale_finding_id\":\"f13\"},{\"question\":\"문서 본문 라이선스가 적히지 않았거나 회원 가입·유통사 접근으로만 얻는 제조사 문서를 능력 온톨로지의 근거 문서로 저장·재배포할 때의 권리 조건과 책임은 누가 확인하는가? (q2-03 에서 파생)\",\"stage\":6,\"rationale_finding_id\":\"f29\"}],\"ontology_changes\":[{\"op\":\"modify\",\"kind\":\"concept\",\"name\":\"근거 문서 (Evidence Document)\",\"evidence_finding_ids\":[\"f5\",\"f6\",\"f7\",\"f8\",\"f26\",\"f27\",\"f29\"],\"description\":\"속성 '문서 유형'(사용자 매뉴얼·설치 매뉴얼·API·통합 가이드·오류 코드표·릴리스 노트·CAD 등)과 '이용 조건'(공개·회원 가입·유통사 제한·라이선스)을 더한다. 6절의 '근거 문서의 단위와 버전' 질문과 충돌하지 않고 보완한다.\"}],\"stage_completion_self_assessment\":{\"met\":false,\"missing\":[\"문서 유형 매트릭스: 일부 칸만 근거가 있고 사용자 매뉴얼·안전 매뉴얼·치수도·도면 행 대부분이 미조사로 남음(스토리텔러 반영·검증 전)\",\"공개 문서 샘플 목록: 6건 근거는 모였으나 반영·검증 전이며 AMR 매뉴얼 본문 샘플 미열람\",\"열린 질문 q2-04·q2-05·q2-06\"]}}}",
+  "structured_output": {
+    "run_id": "2026-09-25-57",
+    "date": "2026-09-25",
+    "run_type": "track",
+    "target": {
+      "area_no": 5,
+      "area_name": "5. 로봇 능력·작업 온톨로지",
+      "category": "B. 공통 정보·환경 모델"
+    },
+    "gaps": [
+      "단계 2 질문 q2-01, q2-02, q2-03 열림(target.json 지정, CLI 지정 질문 id). 단계 2 페이지는 seed 상태로 3절 조사 결과·4절 결론·5절 후속 질문이 비어 있음",
+      "완료 조건: 문서 유형 매트릭스(document-type-matrix.md) 7행 × 8열 모든 칸 미조사",
+      "완료 조건: 공개 문서 샘플 목록 표 비어 있음",
+      "5. 로봇 능력·작업 온톨로지 페이지 8절(대표 연구와 자료)에 제조사 문서 유형·정보 형태를 다룬 자료 없음",
+      "능력 온톨로지 초안의 근거 문서 개념에 문서 유형·이용 조건 속성 없음(6절 근거 문서 단위·버전 질문 열림)"
+    ],
+    "research_questions": [
+      "같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? [분류원문]",
+      "q2-01 제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가?",
+      "q2-02 기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가?",
+      "q2-03 공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가?",
+      "사용 정보(information for use)와 기계 취급설명서를 다루는 국제 표준(IEC/IEEE 82079-1, ISO 20607, ISO 10218-1)은 제조사 문서의 유형·구성을 어떻게 규정하는가? (단계 2 페이지 3절, 매트릭스 행 정의 겨냥)",
+      "산업용 로봇 문서의 표·그림·스크린숏에서 정보를 찾는 문서 질의응답 연구는 형태별 난이도를 어떻게 보고하는가? (q2-02, 27. AI·학습·적응과 모델 운영 연결)",
+      "국내 제조사(두산로보틱스 등)의 매뉴얼 유형과 공개 조건은 어떠한가? (한국 자료 우선 규칙)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "IEC/IEEE 82079-1:2019 는 도료 한 통부터 대형 산업 기계·플랜트까지 모든 종류의 제품에 대해 사용 정보(instructions for use)를 설계·작성하는 일반 원칙과 상세 요구사항을 정하는 IEC·IEEE·ISO 공동 표준이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-719"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): 2019판은 사용 정보의 목적·품질·관리 절차를 5절 원칙으로 두고 작성 절차와 경험적 평가 방법을 규범 부분에 넣었다.",
+        "as_of": "2019",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f2",
+        "claim": "IEC/IEEE 82079-1:2019 는 사용 정보를 기능 구조상 개념 정보·지시 정보·참조 정보 같은 정보 유형으로 나누도록 하는 것으로 보여, 제조사 문서의 기능 정보를 문서 유형뿐 아니라 정보 유형 축으로도 분류할 수 있을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-719"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "원문 미열람: 검색 요약은 사용 정보를 conceptual, instructional, reference information 유형에 배정한다고 전한다. 조항 번호·정확한 문구는 미확인.",
+        "as_of": "2019",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "ISO 20607:2019 는 기계 제조사가 취급설명서의 안전 관련 부분을 작성할 때의 요구사항을 정하며, 기계 수명주기 전 단계를 고려한 안전 관련 내용·구조·표현을 다루되 일반 기술 문서 작성 지침은 아니다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-720"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(ISO 소개 페이지 검색 요약 기준): 안전 관련 내용·구조·표현, 수명주기 전 단계. 소음·진동 선언 요구는 다루지 않는다.",
+        "as_of": "2019",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "ISO 10218-1:2025 는 산업용 로봇의 본질 안전 설계·보호 방책과 함께 사용 정보(information for use)에 관한 요구를 두어, 로봇 제조사의 안전 관련 문서 내용이 안전 표준의 규정 대상이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-721"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): inherent safe design, protective measures, and information for use of industrial robots. 사용 정보의 세부 항목(가반하중·정지 거리 등)은 미확인.",
+        "as_of": "2025",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "두산로보틱스 매뉴얼 포털은 사용자 매뉴얼(안전·조작·프로그래밍·모니터링·테스트·환경 설정), 설치 매뉴얼(설치·인터페이스·수동/자동 모드·안전 기능·운송·유지보수·인증 정보), 티치 펜던트 없이 외부 응용에서 컨트롤러를 제어하는 C/C++ API 매뉴얼, 액세서리·퀵 가이드·ROS 사용법을 담은 기타 매뉴얼로 문서를 나눈다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-731"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): 설치 메뉴얼은 로봇 설치방법, 인터페이스, 수동/자동 모드, 안전 관련 기능, 운송, 유지보수, 인증 정보 등을 담는다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f6",
+        "claim": "Clearpath Robotics 의 공개 문서 저장소 cpr-documentation 은 하드웨어 사용자 매뉴얼, 하드웨어 정비 매뉴얼, 소프트웨어 설정 가이드, 소프트웨어 변경 이력, 업데이트 안내, ROS 튜토리얼을 담고 Docusaurus 로 빌드해 docs.clearpathrobotics.com 으로 배포한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-728"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"hardware user manuals,\" \"hardware maintenance manuals,\" \"software configuration guides,\" software changelogs. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "Kinova KORTEX API 공식 저장소는 API 동작 방식·전송·라우팅·서보 모드·오류 관리 가이드(마크다운), C++·Python·Modbus 빠른 시작, Modbus 인터페이스 제어 문서(ICD), 코드 예제, Gen3·Gen3 lite 릴리스 노트, Protocol Buffer 메시지 정의를 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-722"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README 기준: Error management 가이드, Modbus ICD, release notes(Gen3 2.8.0, Gen3 lite 2.3.4), \"Google Protocol Buffer message objects\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "MiR(Mobile Industrial Robots)는 제품별 REST API 참조 가이드를 유통사 사이트의 매뉴얼 항목에 두고, 유통사 다운로드 페이지에서 소프트웨어·제품 릴리스 노트, CAD 파일, 인증서를 제공하며, 로봇·플릿 화면의 도움말 메뉴에서도 API 문서를 띄울 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-730"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준, MiR Fleet reference guide v1.2, 2020-03 재게시본): REST API reference guides on the Distributor site under Manuals; Release Notes, CAD files, Certificates.",
+        "as_of": "2020-03",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "공식 저장소 README 기준으로 UR External Control URCap 은 URCap 라이브러리 1.3.0 이상이 필요해 최소 PolyScope 3.7·5.1 을 지원한다고 적어, 통합 문서가 로봇 소프트웨어 버전 조건을 담는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-727"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: minimal PolyScope versions \"3.7 and 5.1\" (URCap library 1.3.0 이상 필요). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "두산로보틱스 API-DRFL 공식 저장소 README 는 컨트롤러 프레임워크 DRCF v2·v3 를 전처리기 값으로 골라 빌드하게 하고, Ubuntu 18.04·20.04·22.04 와 Linux 전용 Arm64 지원을 적으며, API 매뉴얼은 별도 GitHub Pages 사이트로 연결한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-732"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"DRCF v2\"/\"DRCF v3\" 전처리기 설정, \"Ubuntu supports versions : 18.04, 20.04 and 22.04\", Official Doosan Robotics API Manual 링크. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "UR ROS 2 드라이버 README 는 드라이버가 가반하중 3 kg~30 kg 의 UR 로봇 전 라인과 PolyScope X·PolyScope 5·CB3 컨트롤러 로봇에 호환된다고 적는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-726"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: \"compatible across the entire line of UR robots -- from 3 kg payload to 30 kg payload\". 독립 확인 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f12",
+        "claim": "확인한 샘플을 종합하면 기능·명령 정보는 API·통합 가이드와 메시지 정의에, 운용 모드·안전 기능·유지보수는 설치·안전 매뉴얼에, 오류 의미는 API 오류 열거표에, 호환 버전 조건은 통합 문서 README·릴리스 노트에, 치수 정보는 CAD 파일에 주로 있는 것으로 보여, 매트릭스 행마다 담는 정보 항목이 다를 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-731",
+          "ref-728",
+          "ref-722",
+          "ref-723",
+          "ref-730",
+          "ref-727",
+          "ref-732"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합: 두산(설치 매뉴얼의 모드·안전 기능), Kinova(오류 열거표·메시지 정의), MiR(CAD·릴리스 노트), UR·두산 README(버전 조건). 기종 수가 적고 AMR 매뉴얼 본문은 미열람.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "Kinova KORTEX API 의 Action 메시지 참조 문서는 멤버 이름·데이터형·설명·사용법 네 열의 표로 기능(동작 파라미터)을 기술하며, 값 범위나 단위는 적지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-724"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "표 행 예: send_twist_command | oneof:action_parameters [TwistCommand] | Control the tool in velocity. 범위·단위 열 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Kinova KORTEX API 의 하위 오류 코드 문서는 열거자·값·설명 세 열의 표로 약 140개 항목(예: INVALID_PARAM 3, ROBOT_IN_FAULT 22)을 두어, 오류 의미가 짧은 설명 문구의 파라미터 표 형태로 존재한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-723"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SubErrorCodes.md: Enumerator | Value | Description 표, 값 0~141. 원인·복구 방법 열은 없다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "Open-RMF PerformAction 튜토리얼은 플릿이 수행할 수 있는 동작을 config.yaml 의 actions 목록으로 선언하고, 작업 요청 JSON 의 category·description 과 어댑터의 execute_action 처리 코드를 코드 예제(YAML·JSON·Python)로 보여 주며, 동작 파라미터를 별도 파라미터 표로 두지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-040"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문: \"we can provide a list of performable actions for our fleet\" — actions: [\"clean\"], description 의 zone 값은 코드 예제 안에서만 설명된다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "OSRF 의 mir100-client 는 MiR100 REST API 2.7.0 의 PDF 문서를 자동 변환해 Swagger Codegen 으로 만든 Python 클라이언트로, PDF 로만 제공되는 API 참조를 기계가독 명세로 바꾸는 단계가 실제로 쓰인 사례다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-729"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"Automatically converted from v270 pdf\", \"automatically generated by the Swagger Codegen project\", API version \"2.7.0\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f17",
+        "claim": "산업용 로봇 사후 서비스 문서 질의응답 연구(2026)는 답의 근거가 오류 화면 스크린숏·인터페이스 화면·배선도 같은 다중 모달 자료에 있어 텍스트 기반 검색 증강 생성(RAG)이 활용하기 어렵다고 보고, OCR 과 구조화된 의미 서술로 이미지 내용을 검색 가능한 텍스트로 바꾸는 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-734"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): error screenshots, interface displays, and wiring diagrams; OCR 로 오류 코드·파라미터 필드·인터페이스 문구를 추출.",
+        "as_of": "2026",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "MARL-RAGDoc(Scientific Reports, 2026)은 운용 매뉴얼·회로도·파라미터 표 같은 산업 문서의 지식이 텍스트·이미지·레이아웃에 나뉘어 있다고 보고, 텍스트·이미지·표 전용 에이전트가 근거를 고르는 계층형 다중 에이전트 강화학습 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-735"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): operation manuals, circuit diagrams, and parameter tables contain domain knowledge distributed across text, images, and document layout.",
+        "as_of": "2026",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f19",
+        "claim": "중국어 텍스트·표·차트 질의응답 데이터셋 CT2C-QA 연구는 모달리티별 정확도가 텍스트, 표, 차트 순으로 낮아졌다고 보고했다(로봇 문서가 아닌 일반 데이터셋 조건).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-736"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): text accuracy is significantly better than tables, which in turn surpasses the chart category. 수치는 미확인.",
+        "as_of": "2024-10",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f20",
+        "claim": "문서 레이아웃 분석 데이터셋 DocLayNet 은 여섯 문서 범주 가운데 하나로 매뉴얼(manuals)을 두고 80,863쪽에 11개 레이아웃 클래스를 사람이 주석해, 매뉴얼의 표·그림 영역을 분리하는 모델의 학습·평가 기준이 된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-733"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"financial_reports, scientific_articles, laws_and_regulations, government_tenders, manuals, patents\", 80,863 pages, \"11 distinct class labels\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 사례를 종합하면 기능 정보의 형태별 추출 난이도는 기계가독 명세(JSON 스키마·Protocol Buffer·OpenAPI)가 가장 낮고, 열거·파라미터 표, 코드 예제 속 설명, 서술 문장 순으로 높아지며, 스크린숏·배선도·도면 같은 그림이 가장 높을 것으로 보이고, 표 형태라도 범위·단위·복구 방법이 빠져 다른 문서로 보완해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-228",
+          "ref-722",
+          "ref-729",
+          "ref-723",
+          "ref-724",
+          "ref-040",
+          "ref-734",
+          "ref-735",
+          "ref-736"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합이며 로봇 문서에서 형태별 추출 정확도를 측정한 자료는 찾지 못했다. 텍스트>표>차트 순서는 일반 데이터셋 결과(f19).",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "분류 원문 질문(누가 이 화물을 실제로 취급할 수 있는가)에 쓰일 적재 한계·치수는 확인한 API 참조 표에는 범위·단위 없이 없거나 약하고 설치 매뉴얼·사양서·팩트시트 스키마 쪽에 있을 것으로 보여, 능력 추출은 API 문서만으로는 부족하고 여러 문서 유형을 함께 읽어야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-724",
+          "ref-731",
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Kinova Action 표에 범위·단위 열 없음(f13), 두산 설치 매뉴얼이 인터페이스·안전 기능을 담음(f5), VDA 5050 팩트시트 적재 세트가 최대 중량·취급 높이를 둠(재인용: 2026-09-25-23).",
+        "as_of": "2026-09-25",
+        "flow_step": "적치",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f23",
+        "claim": "Kinova KORTEX API 저장소는 BSD 3-Clause 라이선스로 공개되고 Windows 10·Ubuntu 16.04·18.04·20.04 에서 시험했다고 적어, 로봇팔 API 문서 샘플을 공개 저장소에서 라이선스와 함께 얻을 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-722"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"BSD 3-Clause 'Revised' License\", \"tested on Windows 10, Ubuntu 16.04, Ubuntu 18.04 and Ubuntu 20.04\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "libfranka 공식 저장소는 Franka 연구용 로봇 제어 C++ 라이브러리를 Apache 2.0 라이선스로 공개하고, 기능 개요는 생성된 API 문서에, 설정·사용법은 별도의 Franka Control Interface(FCI) 문서 사이트에 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-725"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: \"Apache 2.0 license\", \"research versions of Franka Emika robots\", FCI 문서 링크. 로봇 시스템 버전 호환표는 README 에 없다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "Clearpath 문서 원본은 공개 GitHub 저장소에 있지만 README 에 문서 본문의 라이선스·이용 조건은 적혀 있지 않다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-728"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README 열람 결과 라이선스·이용 조건 문구 없음(부재 관찰, 저장소 LICENSE 파일은 미확인). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "두산로보틱스 매뉴얼은 웹 포털(manual.doosanrobotics.com)에서 판별로 열람할 수 있지만, 매뉴얼 상세 정보는 회원 가입이 필요한 Robot LAB 에서 확인하게 되어 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-731"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): 매뉴얼에 대한 상세 정보는 Robot LAB 에서 확인할 수 있으며 회원 가입이 필요. 사용자 매뉴얼 3.6.0·API 1.32 판 경로 확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f27",
+        "claim": "MiR 커뮤니티는 파트너·고객만 쓰는 폐쇄형 플랫폼이고 REST API 참조 가이드는 유통사 사이트에 있어, AMR 의 API 문서가 공개 열람되지 않는 사례다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-730"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람(검색 요약 기준): closed platform only for MiR partners and customers; REST API reference guides on the Distributor site.",
+        "as_of": "2020-03",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f28",
+        "claim": "MassRobotics AMR 상호운용 표준의 식별 보고는 제품 문서 링크(productDocumentation)를 선택 필드로 두어, 로봇이 자기 문서의 위치를 관제에 알릴 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-230"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "identityReport 선택 필드 productDocumentation (재인용: 2026-09-25-35)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f29",
+        "claim": "확인한 샘플을 종합하면 로봇팔·협동로봇(Kinova, Franka, UR, 두산)의 API·통합 문서는 공개 저장소에 오픈소스 라이선스로 있는 경우가 많지만, 사용자·설치·안전 매뉴얼과 AMR API 참조(MiR)는 회원 가입이나 유통사 접근이 필요할 수 있고 공개 저장소라도 문서 본문 라이선스가 적히지 않은 경우가 있어, 샘플별로 재사용 조건을 따로 확인해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-722",
+          "ref-725",
+          "ref-727",
+          "ref-732",
+          "ref-731",
+          "ref-730",
+          "ref-728"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "이 위키의 종합: 샘플 6개 제조사(AMR 2, 협동로봇 2, 로봇팔 2) 기준. 매뉴얼 PDF 본문의 이용 약관은 열어 보지 못했다.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-719",
+        "org": "IEEE / IEC / ISO",
+        "title": "82079-1-2019 - IEEE/IEC International Standard for Preparation of information for use (instructions for use) of products - Part 1: Principles and general requirements",
+        "published": "2019",
+        "url": "https://ieeexplore.ieee.org/document/8715838",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 모든 제품의 사용 정보 작성 원칙·요구사항을 정한 공동 표준 소개(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-720",
+        "org": "ISO",
+        "title": "ISO 20607:2019 - Safety of machinery — Instruction handbook — General drafting principles",
+        "published": "2019",
+        "url": "https://www.iso.org/standard/68519.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 기계 취급설명서의 안전 관련 부분 작성 요구사항(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-721",
+        "org": "ISO",
+        "title": "ISO 10218-1:2025 - Robotics — Safety requirements — Part 1: Industrial robots",
+        "published": "2025",
+        "url": "https://www.iso.org/standard/73933.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 로봇의 본질 안전 설계·보호 방책·사용 정보 요구(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-722",
+        "org": "Kinova (Kinovarobotics GitHub)",
+        "title": "Kinova-kortex2_Gen3_G3L — readme.md",
+        "published": null,
+        "url": "https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/readme.md",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "KORTEX API 공식 저장소 README. 문서 구성(API 가이드·ICD·예제·릴리스 노트·protobuf), BSD 3-Clause 라이선스.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/readme.md"
+      },
+      {
+        "id": "ref-723",
+        "org": "Kinova (Kinovarobotics GitHub)",
+        "title": "Kinova-kortex2_Gen3_G3L — api_python/doc/markdown/enums/Api/SubErrorCodes.md",
+        "published": null,
+        "url": "https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/api_python/doc/markdown/enums/Api/SubErrorCodes.md",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "하위 오류 코드 열거표(열거자·값·설명, 약 140항목).",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/api_python/doc/markdown/enums/Api/SubErrorCodes.md"
+      },
+      {
+        "id": "ref-724",
+        "org": "Kinova (Kinovarobotics GitHub)",
+        "title": "Kinova-kortex2_Gen3_G3L — api_python/doc/markdown/messages/Base/Action.md",
+        "published": null,
+        "url": "https://github.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/blob/master/api_python/doc/markdown/messages/Base/Action.md",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Action 메시지 참조 표(멤버 이름·데이터형·설명·사용법), 범위·단위 없음.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/Kinovarobotics/Kinova-kortex2_Gen3_G3L/master/api_python/doc/markdown/messages/Base/Action.md"
+      },
+      {
+        "id": "ref-725",
+        "org": "Franka Robotics (frankarobotics GitHub)",
+        "title": "libfranka — README.md",
+        "published": null,
+        "url": "https://github.com/frankarobotics/libfranka",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Franka 연구용 로봇 C++ 라이브러리 README. Apache 2.0, API 문서·FCI 문서 링크.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/frankarobotics/libfranka/master/README.md"
+      },
+      {
+        "id": "ref-726",
+        "org": "Universal Robots (UniversalRobots GitHub)",
+        "title": "Universal_Robots_ROS2_Driver — README.md",
+        "published": null,
+        "url": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/blob/main/README.md",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "UR ROS 2 드라이버 README. 호환 로봇 범위(벤더 주장), External Control URCap, 설치·설정·안전 관련 문서 목차.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ROS2_Driver/main/README.md"
+      },
+      {
+        "id": "ref-727",
+        "org": "Universal Robots (UniversalRobots GitHub)",
+        "title": "Universal_Robots_ExternalControl_URCap — README.md",
+        "published": null,
+        "url": "https://github.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/blob/master/README.md",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "External Control URCap README. 최소 PolyScope 3.7·5.1 요구.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/master/README.md"
+      },
+      {
+        "id": "ref-728",
+        "org": "Clearpath Robotics (clearpathrobotics GitHub)",
+        "title": "cpr-documentation — README.md",
+        "published": null,
+        "url": "https://github.com/clearpathrobotics/cpr-documentation/blob/development/README.md",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Clearpath 문서 원본 저장소 README. 사용자·정비 매뉴얼, 설정 가이드, 변경 이력, Docusaurus 빌드.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/clearpathrobotics/cpr-documentation/development/README.md"
+      },
+      {
+        "id": "ref-729",
+        "org": "Open Robotics (osrf GitHub)",
+        "title": "mir100-client — README.md (Generated from mir100 rest api pdf)",
+        "published": null,
+        "url": "https://github.com/osrf/mir100-client",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "MiR100 REST API 2.7.0 PDF 를 자동 변환해 Swagger Codegen 으로 만든 Python 클라이언트.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/mir100-client/master/README.md"
+      },
+      {
+        "id": "ref-730",
+        "org": "Mobile Industrial Robots (MiR), 유통사 재게시본",
+        "title": "MiR Fleet Reference guide (en), Revision v.1.2",
+        "published": "2020-03",
+        "url": "https://www.hmi-mbs.fr/wp-content/uploads/2020/07/notice-mir_fleet_reference_guide_12_en.pdf",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 유통사 사이트의 REST API 가이드·릴리스 노트·CAD·인증서 제공 경로(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-731",
+        "org": "두산로보틱스(Doosan Robotics)",
+        "title": "V3-manual - Doosan Robotics (매뉴얼 포털)",
+        "published": null,
+        "url": "https://manual.doosanrobotics.com/",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 사용자·설치·API·기타 매뉴얼 구성과 Robot LAB 회원 가입 조건(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-732",
+        "org": "두산로보틱스(DoosanRobotics GitHub)",
+        "title": "API-DRFL — README.md",
+        "published": null,
+        "url": "https://github.com/DoosanRobotics/API-DRFL",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "두산 API 라이브러리 README. DRCF v2·v3 선택, 지원 OS·아키텍처, API 매뉴얼 링크.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/DoosanRobotics/API-DRFL/main/README.md"
+      },
+      {
+        "id": "ref-733",
+        "org": "IBM Research (DS4SD GitHub)",
+        "title": "DocLayNet — README.md",
+        "published": null,
+        "url": "https://github.com/DS4SD/DocLayNet",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "매뉴얼을 포함한 6개 문서 범주 80,863쪽의 사람 주석 레이아웃 데이터셋.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/DS4SD/DocLayNet/main/README.md"
+      },
+      {
+        "id": "ref-734",
+        "org": "AI(MDPI) 게재 논문 저자(미확인)",
+        "title": "A Dual-Channel Multimodal RAG System: OCR- and Semantic Description-Driven Question Answering for Industrial Robot After-Sales Service",
+        "published": "2026",
+        "url": "https://doi.org/10.3390/ai7060229",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 로봇 사후 서비스 질의응답에서 스크린숏·배선도를 OCR·의미 서술로 텍스트화하는 다중 모달 RAG.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-735",
+        "org": "Scientific Reports 게재 논문 저자(미확인)",
+        "title": "Hierarchical multi-agent reinforcement learning for retrieval-augmented industrial document question answering",
+        "published": "2026",
+        "url": "https://www.nature.com/articles/s41598-026-41684-z",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 매뉴얼·회로도·파라미터 표의 텍스트·이미지·표 근거를 에이전트별로 고르는 MARL-RAGDoc.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-736",
+        "org": "arXiv 2410.21415 저자(미확인)",
+        "title": "CT2C-QA: Multimodal Question Answering over Chinese Text, Table and Chart",
+        "published": "2024-10",
+        "url": "https://arxiv.org/abs/2410.21415",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 텍스트·표·차트 질의응답에서 텍스트>표>차트 순 정확도 보고(검색 요약).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-040",
+        "org": "Open Robotics",
+        "title": "PerformAction Tutorial - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "사용자 정의 동작을 config.yaml 로 선언하고 execute_action 으로 처리하는 튜토리얼.",
+        "fetched": true,
+        "fetched_via": "inbox",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 팩트시트 JSON 스키마(적재 명세·지원 action). 이번 실행에서는 다시 열지 않음.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-230",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 식별·상태 보고 JSON 스키마. 이번 실행에서는 다시 열지 않음.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/stage-2-document-types.md",
+        "sections": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "rationale": "q2-01 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12 (신뢰도 medium) / q2-02 답: f13·f14·f15·f16·f17·f18·f19·f20·f21·f22 (신뢰도 low) / q2-03 답: f23·f24·f25·f26·f27·f28·f29 (신뢰도 medium) — 2절 세 질문 상태 답함, 3절 q2-01·q2-02·q2-03 소제목 신설({#q2-01} 등): 사용 정보 표준(f1~f4), 제조사별 문서 구성(f5~f10, f11 은 벤더 주장), 문서 유형별 정보 위치 종합(f12 추정), 형태별 사례(f13~f16)와 문서 질의응답 연구(f17~f20), 난이도 종합(f21 추정)과 분류 원문 질문 연결(f22), 샘플별 이용 조건(f23~f28)과 종합(f29 추정) / 4절 결론·불확실성(로봇 문서 형태별 정확도 측정 자료 없음, AMR 매뉴얼 본문 미열람) / 5절 후속 질문 / 6절 완료 조건 현황 / 8절 출처 / 9절 이력"
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/document-type-matrix.md",
+        "sections": [
+          "3",
+          "4",
+          "7",
+          "8"
+        ],
+        "rationale": "트랙 산출물 갱신: 3절 매트릭스 일부 칸 채움 — 통합·API 가이드의 기능·인터페이스(있음: 파라미터 표·코드 예제, f7·f13·f15), 파라미터 범위(부분: 범위·단위 없음, f13), 오류 코드표의 오류 의미(부분: 설명 문구만·복구 방법 없음, f14), 릴리스 노트·통합 README 의 버전 조건(f9·f10), 설치 매뉴얼의 운용 모드·안전 기능(f5), 치수도·도면은 CAD 파일로 제공(f8). 샘플 병기, 나머지는 미조사 유지 / 4절 공개 문서 샘플 6건(Clearpath·MiR AMR, UR·두산 협동로봇, Kinova·Franka 로봇팔)과 이용 조건(f23~f27), UR 호환 범위는 [추정] 벤더 주장(f11) / 7절 출처 / 8절 이력"
+      },
+      {
+        "action": "update",
+        "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "sections": [
+          "2",
+          "6"
+        ],
+        "rationale": "트랙 산출물 갱신(검증 승인 시): 근거 문서 개념에 속성 '문서 유형'·'이용 조건' 추가 제안(f5·f6·f7·f8·f26·f27·f29). 미승인 시 6절 근거 문서 단위·버전 질문에 병기"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+        "sections": [
+          "6",
+          "8"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f12, f13, f21, f22): 능력 정보가 문서 유형별로 흩어지고 API 참조 표에 범위·단위가 빠져 여러 문서를 함께 읽어야 한다는 점, 사용 정보 표준(f1, f3, f4)"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md",
+        "sections": [
+          "6",
+          "8"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f9, f10, f16, f26, f27): 온보딩 때 필요한 제조사 문서의 버전 호환 조건과 접근 제한, PDF API 참조를 기계가독 명세로 바꾼 사례"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "sections": [
+          "6",
+          "8"
+        ],
+        "rationale": "트랙 manual-capability-ontology 단계 2 반영 제안 (f17, f18, f19, f20): 교차 규칙(매뉴얼 해석은 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용)에 따라 산업용 로봇 문서의 다중 모달 RAG 연구와 형태별 정확도 차이를 양쪽 페이지에 연결"
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "사용 정보",
+        "term_en": "Information for Use (Instructions for Use)",
+        "definition": "제품을 안전하고 효과적으로 쓰도록 제조사가 사용자에게 제공하는 설명서·지시·경고 등의 정보로, IEC/IEEE 82079-1 이 작성 원칙을 정한다."
+      },
+      {
+        "term_ko": "문서 레이아웃 분석",
+        "term_en": "Document Layout Analysis",
+        "definition": "문서 페이지를 본문·표·그림·캡션 같은 영역으로 나누고 종류를 판별하는 처리로, 매뉴얼에서 표·그림을 따로 추출하기 위한 첫 단계다."
+      }
+    ],
+    "open_questions_new": [
+      "국내 물류 로봇(AMR) 제조사의 사용자 매뉴얼·API 문서는 공개 열람이 가능한가, 회원 가입·계약 조건이 있다면 ROP 사업자가 능력 추출 근거로 재사용할 수 있는 범위는 어디까지인가? | 관련 영역: 5. 로봇 능력·작업 온톨로지, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f29 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 21,
+      "cross_checked_count": 0,
+      "unverified": [
+        "모든 finding 교차 확인 없음: 제조사·표준마다 발행 주체 한 곳의 자료",
+        "f1~f4: 표준 원문(유료) 미열람, 검색 요약 기준. ISO 10218-1:2025·ISO 3691-4 의 사용 정보 세부 항목 미확인",
+        "f2: 82079-1 정보 유형(개념·지시·참조)의 조항·문구 미확인",
+        "f5·f26: 두산 매뉴얼 포털 미열람(검색 요약)",
+        "f8·f27: MiR 가이드는 유통사 재게시 PDF 의 검색 요약이며 최신 접근 조건 미확인",
+        "f11: UR 호환 범위는 벤더 주장, 독립 확인 없음",
+        "f17~f19: 논문 원문 미열람, 수치 미확인",
+        "f21·f22·f29: 이 위키의 종합이며 로봇 문서의 형태별 추출 정확도를 측정한 자료는 찾지 못함",
+        "AMR 사용자·안전 매뉴얼 본문, 치수도·도면, 안전 매뉴얼 유형 샘플은 열지 못함"
+      ],
+      "scope_violations": [
+        "f4: ISO 10218-1 의 안전 설계·보호 방책은 로봇 자체 안전 제어(연계 대상)이며 문서 요구사항 측면으로만 사용"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 18
+      },
+      "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 신규 ref-722·ref-723·ref-724(Kinova), ref-725(libfranka), ref-726·ref-727(UR), ref-728(Clearpath), ref-729(OSRF mir100-client), ref-732(두산 API-DRFL), ref-733(DocLayNet). ref-040 은 입력 원문 텍스트(inbox). 표준 3건·MiR·두산 포털·논문 3건과 재사용 ref-228·ref-230 은 원문 미열람(신뢰도 상한 medium). libfranka 는 frankaemika 경로가 404 라 frankarobotics/master 로 열었다. 검색 17회/40, 신규 출처 18건/20(ref-719~ref-736, 예약 구간 안), 재사용 3건. 질문 선택: target.json 지정 q2-01·q2-02·q2-03 세 건 모두 답했으나 q2-02 는 로봇 문서 형태별 정확도 측정 자료가 없어 종합 신뢰도 low. 한국 자료: 두산로보틱스 매뉴얼 포털·API 저장소(ref-731·ref-732). 고용노동부 협동작업 안전 가이드는 제조사 문서가 아니라 넣지 않았다. 교차 규칙: 매뉴얼 해석 AI 연구(f17~f20)는 27. AI·학습·적응과 모델 운영과 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전 양쪽 반영을 제안했다. 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 온톨로지 변경 1건(근거 문서 속성). 후속 질문 3건. 일반 열린 질문 1건. 정정 요청 없음."
+    },
+    "track": {
+      "slug": "manual-capability-ontology",
+      "stage": 2,
+      "answered_question_ids": [
+        "q2-01",
+        "q2-02",
+        "q2-03"
+      ],
+      "new_questions": [
+        {
+          "question": "PDF 로만 제공되는 로봇 REST API 참조(MiR 등)를 OpenAPI 같은 기계가독 명세로 자동 변환할 때 엔드포인트·파라미터·오류 응답이 얼마나 빠지거나 틀리며, 변환 결과를 어떻게 검증하는가? (q2-02 에서 파생)",
+          "stage": 3,
+          "rationale_finding_id": "f16"
+        },
+        {
+          "question": "API 참조 표에 없는 파라미터 범위·단위와 오류의 복구 방법은 제조사 문서 가운데 어느 유형(사용자 매뉴얼, 설치 매뉴얼, 오류 코드표 부록)에서 찾을 수 있는가? (q2-02 에서 파생)",
+          "stage": 2,
+          "rationale_finding_id": "f13"
+        },
+        {
+          "question": "문서 본문 라이선스가 적히지 않았거나 회원 가입·유통사 접근으로만 얻는 제조사 문서를 능력 온톨로지의 근거 문서로 저장·재배포할 때의 권리 조건과 책임은 누가 확인하는가? (q2-03 에서 파생)",
+          "stage": 6,
+          "rationale_finding_id": "f29"
+        }
+      ],
+      "ontology_changes": [
+        {
+          "op": "modify",
+          "kind": "concept",
+          "name": "근거 문서 (Evidence Document)",
+          "evidence_finding_ids": [
+            "f5",
+            "f6",
+            "f7",
+            "f8",
+            "f26",
+            "f27",
+            "f29"
+          ],
+          "description": "속성 '문서 유형'(사용자 매뉴얼·설치 매뉴얼·API·통합 가이드·오류 코드표·릴리스 노트·CAD 등)과 '이용 조건'(공개·회원 가입·유통사 제한·라이선스)을 더한다. 6절의 '근거 문서의 단위와 버전' 질문과 충돌하지 않고 보완한다."
+        }
+      ],
+      "stage_completion_self_assessment": {
+        "met": false,
+        "missing": [
+          "문서 유형 매트릭스: 일부 칸만 근거가 있고 사용자 매뉴얼·안전 매뉴얼·치수도·도면 행 대부분이 미조사로 남음(스토리텔러 반영·검증 전)",
+          "공개 문서 샘플 목록: 6건 근거는 모였으나 반영·검증 전이며 AMR 매뉴얼 본문 샘플 미열람",
+          "열린 질문 q2-04·q2-05·q2-06"
+        ]
+      }
+    }
+  },
+  "ttft_ms": 10630,
+  "type": "result",
+  "duration_ms": 358423,
+  "uuid": "7dba4abe-8980-4e9d-9b22-853dd1b8cef0",
+  "ttft_stream_ms": 3294,
+  "time_to_request_ms": 101,
+  "first_content_frame_ms": 3295,
+  "time_to_request_from_spawn_ms": 3130572,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790316226569.239,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 360.2
+}
