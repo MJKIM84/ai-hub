@@ -65,6 +65,31 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-757 발행일 2026-04), 이력 행 추가 |
+| 2026-09-25-81 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 게시본(v14) 6절을 유지한 채 실행 2026-09-25-81(q4-02 답, 초안 변경 없음)만 덧붙임, version 15 |
+| 2026-09-25-81 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 |
+| 2026-09-25-81 | 생성 | [docs/references/ref-748.md](references/ref-748.md) | 참고문헌 ref-748 등록: json-schema-spec — specs/jsonschema-validation.md (JSON Sche… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-749.md](references/ref-749.md) | 참고문헌 ref-749 등록: jsonschemabench — README (JSONSchemaBench) |
+| 2026-09-25-81 | 생성 | [docs/references/ref-750.md](references/ref-750.md) | 참고문헌 ref-750 등록: JSONSchemaBench: A Rigorous Benchmark of Structured Outputs… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-751.md](references/ref-751.md) | 참고문헌 ref-751 등록: VAL — The plan validation system (README) |
+| 2026-09-25-81 | 생성 | [docs/references/ref-752.md](references/ref-752.md) | 참고문헌 ref-752 등록: Leveraging Pre-trained Large Language Models to Construct an… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-753.md](references/ref-753.md) | 참고문헌 ref-753 등록: VerifyLLM: LLM-Based Pre-Execution Task Plan Verification fo… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-754.md](references/ref-754.md) | 참고문헌 ref-754 등록: Plan Verification for LLM-Based Embodied Task Completion Age… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-755.md](references/ref-755.md) | 참고문헌 ref-755 등록: CAPE: Corrective Actions from Precondition Errors using Larg… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-756.md](references/ref-756.md) | 참고문헌 ref-756 등록: SIMMER: Benchmarking Latent Failures in LLM Executable Plann… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-757.md](references/ref-757.md) | 참고문헌 ref-757 등록: LLM-Based Adaptive Control Code Generation Framework with Di… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-758.md](references/ref-758.md) | 참고문헌 ref-758 등록: Integrating LLMs and Digital Twins for Adaptive Multi-Robot… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-759.md](references/ref-759.md) | 참고문헌 ref-759 등록: Human-AI Collaboration for Multi-Line Task Adjustment Using… |
+| 2026-09-25-81 | 생성 | [docs/references/ref-760.md](references/ref-760.md) | 참고문헌 ref-760 등록: Constraint Checking of Skills using SHACL |
+| 2026-09-25-81 | 생성 | [docs/references/ref-761.md](references/ref-761.md) | 참고문헌 ref-761 등록: SELP: Generating Safe and Efficient Task Plans for Robot Age… |
+| 2026-09-25-81 | 생성 | [docs/glossary/constrained-decoding.md](glossary/constrained-decoding.md) | 용어집 항목 제약 디코딩 |
+| 2026-09-25-81 | 생성 | [docs/glossary/json-schema.md](glossary/json-schema.md) | 용어집 항목 JSON 스키마 |
+| 2026-09-25-81 | 생성 | [docs/glossary/latent-failure.md](glossary/latent-failure.md) | 용어집 항목 잠재 실패 |
+| 2026-09-25-81 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-01 답함(3절 신설), 2절에 q5-04~q5-10 행 추가, 4·5·6·8·9절 갱신, 상태 줄 갱신(seed 페이지 전체를 content 로 보냄). 2차 수정: 6절 첫 완료 조건을 한 행·미충족으로 되돌림, 4절 결론의 '클래스별' 삭제 |
 | 2026-09-25-80 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: 도입 단락을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 '평가 지표 (q5-01)' 소절(세 층 지표·운영 허용치 변환·경로 차이 정의·ROP 경계, 추정 중심)을 더함, 근거 공백 문장에 태그·각주 추가 |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-80(단계 5, q5-01) 산출물 요약 단락 추가 |

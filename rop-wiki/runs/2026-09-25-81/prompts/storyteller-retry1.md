@@ -2127,12 +2127,13 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 <!-- 신규 작성은 "신규 작성". 갱신마다 한 행을 위에 추가하고 프런트매터 version 을 올린다. 정정 요청을 반영했으면 corr-NNN id 를 적는다. -->
 ```
 
-### docs/references/index.md (요약: 이번 대상 페이지가 인용한 174건 / 전체 729건. 목록에 없는 출처는 새 id 로 적는다 — 같은 URL 이 이미 있으면 퍼블리셔가 기존 id 로 합친다)
+### docs/references/index.md (요약: 이번 대상 페이지가 인용한 198건 / 전체 747건. 목록에 없는 출처는 새 id 로 적는다 — 같은 URL 이 이미 있으면 퍼블리셔가 기존 id 로 합친다)
 
 ```markdown
 | id | 기관 | 제목 | 발행일 | URL | 접근일 | 원문 열람 |
 |---|---|---|---|---|---|---|
 | ref-006 | Ma, H., Li, J., Kumar, T. K. S., & Koenig, S. | Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks | 2017 | https://arxiv.org/abs/1705.10868 | 2026-09-24 | 아니오 |
+| ref-008 | NIST | ARIAC Documentation | 미확인 | https://pages.nist.gov/ARIAC_docs/en/latest/ | 2026-09-25 | 예 |
 | ref-015 | GS1 | EPCIS and CBV Implementation Guideline | 미확인 | https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf | 2026-09-25 | 아니오 |
 | ref-031 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050 | 미확인 | https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md | 2026-09-25 | 예 |
 | ref-039 | Open Robotics | Currently supported Tasks - Programming Multiple Robots with ROS 2 | 미확인 | https://osrf.github.io/ros2multirobotbook/task_types.html | 2026-09-25 | 예 |
@@ -2155,6 +2156,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-094 | Huang, W. (language-planner 공식 저장소) | language-planner — Official Code for "Language Models as Zero-Shot Planners" (GitHub README) | 미확인 | https://github.com/huangwl18/language-planner | 2026-09-25 | 아니오 |
 | ref-095 | Google Research | Code as Policies: Language Model Programs for Embodied Control (google-research/code_as_policies README) | 미확인 | https://github.com/google-research/google-research/blob/master/code_as_policies/README.md | 2026-09-25 | 아니오 |
 | ref-101 | Merschformann, M. (RAWSim-O GitHub) | RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README) | 미확인 | https://github.com/merschformann/RAWSim-O | 2026-09-25 | 예 |
+| ref-104 | Open Robotics (open-rmf) | rmf_demos — Demonstrations of Open-RMF (README) | 미확인 | https://github.com/open-rmf/rmf_demos | 2026-09-25 | 예 |
 | ref-105 | Open Robotics (open-rmf) | fleet_adapter_template — fleet_adapter_template/config.yaml | 미확인 | https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml | 2026-09-25 | 예 |
 | ref-111 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_state.json | 미확인 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json | 2026-09-25 | 예 |
 | ref-116 | Filippone, G., Pettinari, S., & Pelliccione, P. | Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis | 2026-03 | https://arxiv.org/abs/2603.15427 | 2026-09-25 | 아니오 |
@@ -2223,6 +2225,8 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-402 | KISTI ScienceON 수록 논문(저자 미확인) | 시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화 | 미확인 | https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO200634515151716 | 2026-09-25 | 아니오 |
 | ref-403 | Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin) | Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots | 2026-03 | https://arxiv.org/abs/2603.22731 | 2026-09-25 | 아니오 |
 | ref-404 | Open Robotics (open-rmf) | rmf_task — README | 미확인 | https://github.com/open-rmf/rmf_task | 2026-09-25 | 예 |
+| ref-406 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 미확인 | https://osrf.github.io/ros2multirobotbook/simulation.html | 2026-09-25 | 예 |
+| ref-407 | gpue (GitHub) | vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS) | 미확인 | https://github.com/gpue/vda5050-sim | 2026-09-25 | 예 |
 | ref-410 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/task_description__delivery.json | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__delivery.json | 2026-09-25 | 예 |
 | ref-411 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payload_transfer.json | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/event_description__payload_transfer.json | 2026-09-25 | 예 |
 | ref-412 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/place.json | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/place.json | 2026-09-25 | 예 |
@@ -2240,6 +2244,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-502 | OMG(Object Management Group) | Business Process Model and Notation (BPMN), Version 2.0.2 | 2014-01 | https://www.omg.org/spec/BPMN/2.0.2/ | 2026-09-25 | 아니오 |
 | ref-503 | Pettinari, S. (FaMe 공식 저장소, UNICAM PROS) | FaMe — a BPMN-driven framework for Multi-Robot System development (GitHub README) | 미확인 | https://github.com/SaraPettinari/fame | 2026-09-25 | 예 |
 | ref-504 | IEEE Standards Association | IEEE 1872.1-2024 — IEEE Standard for Robot Task Representation | 2024-06-18 | https://standards.ieee.org/ieee/1872.1/6993/ | 2026-09-25 | 아니오 |
+| ref-528 | NIST (usnistgov/ARIAC_docs) | ARIAC 2025 Documentation — Challenges | 미확인 | https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html | 2026-09-25 | 예 |
 | ref-537 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp | 2026-09-25 | 예 |
 | ref-539 | askforalfred (ALFRED 공식 저장소) | ALFRED — A Benchmark for Interpreting Grounded Instructions for Everyday Tasks (GitHub README) | 미확인 | https://github.com/askforalfred/alfred | 2026-09-25 | 예 |
 | ref-540 | Shridhar, M. 외 | ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks | 2020 | https://openaccess.thecvf.com/content_CVPR_2020/html/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.html | 2026-09-25 | 아니오 |
@@ -2267,6 +2272,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-615 | Powell, C. 외(University of Strathclyde) | Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models | 2025 | https://link.springer.com/article/10.1007/s10844-025-00940-w | 2026-09-25 | 아니오 |
 | ref-616 | Saha, S., Das, S., Duan, H., & Liu, X.-Y. | Hybrid LLM-based Intelligent Framework for Robot Task Scheduling | 2026-05 | https://arxiv.org/abs/2605.15486 | 2026-09-25 | 아니오 |
 | ref-620 | 국가법령정보센터(과학기술정보통신부) | 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 | 미확인 | https://www.law.go.kr/lsInfoP.do?lsiSeq=268543 | 2026-09-25 | 아니오 |
+| ref-623 | Agrawal, A. 외 | RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments | 2022-09 | https://arxiv.org/abs/2209.05738 | 2026-09-25 | 아니오 |
 | ref-656 | Open Robotics (open-rmf) | rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp | 2026-09-25 | 예 |
 | ref-657 | Open Robotics (open-rmf) | rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp | 미확인 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp | 2026-09-25 | 예 |
 | ref-658 | Rasa Technologies (RasaHQ/rasa GitHub) | Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx) | 미확인 | https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx | 2026-09-25 | 예 |
@@ -2306,9 +2312,27 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-715 | Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본) | Article 14: Human Oversight | EU Artificial Intelligence Act | 2024 | https://artificialintelligenceact.eu/article/14/ | 2026-09-25 | 아니오 |
 | ref-716 | arXiv 2502.10036 저자(미확인) | Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI | 2025-02 | https://arxiv.org/abs/2502.10036 | 2026-09-25 | 아니오 |
 | ref-717 | Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP) | A comparison of confirmation styles for error handling in a speech dialog system | 2004-10 | https://www.isca-archive.org/interspeech_2004/sagawa04_interspeech.pdf | 2026-09-25 | 아니오 |
+| ref-730 | Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(ACL 2022 Short Papers, 소속 미확인) | Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking | 2022-05 | https://aclanthology.org/2022.acl-short.33/ | 2026-09-25 | 아니오 |
+| ref-731 | Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021) | A Survey on Spoken Language Understanding: Recent Advances and New Frontiers | 2021 | https://www.ijcai.org/proceedings/2021/0622.pdf | 2026-09-25 | 아니오 |
+| ref-732 | Gramopadhye, M., & Szafir, D. | Generating Executable Action Plans with Environmentally-Aware Language Models | 2022-10 | https://arxiv.org/abs/2210.04964 | 2026-09-25 | 아니오 |
+| ref-733 | Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83) | Robustness and stability measures for scheduling: single-machine environment | 2008 | https://www.tandfonline.com/doi/full/10.1080/07408170701283198 | 2026-09-25 | 아니오 |
+| ref-734 | Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46) | Dynamic rescheduling that simultaneously considers efficiency and stability | 2004 | https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950 | 2026-09-25 | 아니오 |
+| ref-735 | Aakriti05 (RTAW 공식 저장소) | RTAW-Centralised-multi-robot-task-allocation — README | 미확인 | https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation | 2026-09-25 | 예 |
+| ref-736 | Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267) | The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models | 2025 | https://proceedings.mlr.press/v267/patil25a.html | 2026-09-25 | 아니오 |
+| ref-737 | ShishirPatil (gorilla GitHub) | berkeley-function-call-leaderboard — README | 미확인 | https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard | 2026-09-25 | 예 |
+| ref-738 | Yao, S. 외(Sierra, τ-bench 저자) | τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains | 2024-06 | https://arxiv.org/abs/2406.12045 | 2026-09-25 | 아니오 |
+| ref-739 | sierra-research (tau-bench GitHub) | tau-bench — README | 미확인 | https://github.com/sierra-research/tau-bench | 2026-09-25 | 예 |
+| ref-740 | Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인) | Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations | 2026-01 | https://arxiv.org/abs/2601.17087 | 2026-09-25 | 아니오 |
+| ref-741 | Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington) | The Reality Gap in Robotics: Challenges, Solutions, and Best Practices | 2025-10 | https://arxiv.org/abs/2510.20808 | 2026-09-25 | 아니오 |
+| ref-742 | coatyio (vda-5050-lib.js GitHub) | vda-5050-lib.js — Universal VDA 5050 library for Node.js and browsers (README) | 미확인 | https://github.com/coatyio/vda-5050-lib.js | 2026-09-25 | 예 |
+| ref-743 | Wu, J., Lu, C., Arrieta, A., & Ali, S. 외(Simula Research Laboratory·Mondragon University·PAL Robotics) | Vision Language Model-based Testing of Industrial Autonomous Mobile Robots | 2025-08 | https://arxiv.org/abs/2508.02338 | 2026-09-25 | 아니오 |
+| ref-744 | Yin, S. 외(SafeAgentBench 저자) | SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents | 2024-12 | https://arxiv.org/abs/2412.13178 | 2026-09-25 | 아니오 |
+| ref-745 | shengyin1224 (SafeAgentBench 공식 저장소) | SafeAgentBench — README | 미확인 | https://github.com/shengyin1224/SafeAgentBench | 2026-09-25 | 예 |
+| ref-746 | Atil, B. 외 | Non-Determinism of "Deterministic" LLM Settings | 2024-08 | https://arxiv.org/abs/2408.04667 | 2026-09-25 | 아니오 |
+| ref-747 | 인더스트리뉴스 | 다임리서치, 가상검증 기술로 물류자동화 실현 | 미확인 | https://www.industrynews.co.kr/news/articleView.html?idxno=56677 | 2026-09-25 | 아니오 |
 ```
 
-### docs/glossary/index.md (요약: 용어 186개, slug: 한국어 (영어). 정의는 docs/glossary/<slug>.md)
+### docs/glossary/index.md (요약: 용어 192개, slug: 한국어 (영어). 정의는 docs/glossary/<slug>.md)
 
 ```markdown
 - action-dependency-graph: 행동 의존 그래프 (Action Dependency Graph (ADG))
@@ -2404,6 +2428,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - irreducible-infeasible-subset: 기약 불능 제약 집합 (Irreducible Infeasible Subset (IIS))
 - isa-95: 기업–제어 시스템 통합 표준 (ISA-95 Enterprise-Control System Integration)
 - job-shop-scheduling-problem: 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP))
+- joint-goal-accuracy: 결합 목표 정확도 (Joint Goal Accuracy (JGA))
 - lane-closure: 차선 폐쇄 (Lane Closure)
 - layout-interchange-format: 레이아웃 교환 형식 (Layout Interchange Format (LIF))
 - lifelong-mapf: 지속형 다중 에이전트 경로 찾기 (Lifelong Multi-Agent Path Finding (Lifelong MAPF))
@@ -2434,11 +2459,13 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - open-rmf: 오픈 RMF (Open-RMF (Open Robotics Middleware Framework))
 - operating-mode: 운용 모드 (Operating Mode (VDA 5050 operatingMode))
 - operating-zone: 운용 구역 (Operating Zone (ISO 3691-4))
+- optimality-gap: 최적성 간격 (Optimality Gap)
 - order-batching: 주문 배치 (Order Batching)
 - over-the-air-update: 무선 업데이트 (Over-the-Air Update (OTA))
 - overall-equipment-effectiveness: 종합설비효율 (Overall Equipment Effectiveness (OEE))
 - panoptic-quality: 파놉틱 품질 (Panoptic Quality (PQ))
 - panoptic-symbol-spotting: 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting)
+- pass-k: pass^k 지표 (pass^k)
 - pddl: 계획 도메인 정의 언어 (Planning Domain Definition Language (PDDL))
 - perfect-order-fulfillment: 완전 주문 이행률 (Perfect Order Fulfillment)
 - plug-and-produce: 플러그 앤 프로듀스 (Plug and Produce)
@@ -2449,6 +2476,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - put-wall: 풋월 (Put Wall)
 - raster-to-vector-conversion: 래스터–벡터 변환 (Raster-to-Vector Conversion)
 - read-point: 판독 지점 (Read Point (EPCIS readPoint))
+- reality-gap: 현실 격차 (Reality Gap (Sim-to-Real Gap))
 - regression-testing: 회귀 시험 (Regression Testing)
 - release-zone: 해제 구역 (Release Zone)
 - required-and-provided-capability: 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability)
@@ -2461,6 +2489,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - safe-interval-path-planning: 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP))
 - saga: 사가 (Saga)
 - scan-vs-bim: 스캔 대 BIM 비교 (Scan-vs-BIM)
+- schedule-stability: 일정 안정성 (Schedule Stability)
 - scor: 공급망 운영 참조 모델 (Supply Chain Operations Reference (SCOR))
 - semantic-id: 의미 식별자 (Semantic ID (semanticId))
 - semantic-versioning: 의미적 버전 관리 (Semantic Versioning (SemVer))
@@ -2486,6 +2515,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - time-window: 시간창 (Time Window)
 - topological-map: 위상 지도 (Topological Map)
 - traversability: 통과 가능성 (Traversability)
+- user-simulator: 사용자 시뮬레이터 (User Simulator)
 - vda-5050-cancel-order: 주문 취소 즉시 동작 (cancelOrder (VDA 5050 instant action))
 - vda-5050-factsheet: VDA 5050 팩트시트 (VDA 5050 factsheet)
 - vda-5050: VDA 5050 (VDA 5050)
@@ -2499,7 +2529,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - zones-and-conduits: 보안 구역과 도관 (Zones and Conduits (IEC 62443))
 ```
 
-### docs/open-questions.md (요약: 대상 영역 [1, 2, 5, 6, 8, 12, 13, 14, 16, 18, 19, 20, 23, 25, 26, 27] 에 걸린 91건 / 전체 116건)
+### docs/open-questions.md (요약: 대상 영역 [1, 2, 5, 6, 8, 12, 13, 14, 16, 18, 19, 20, 23, 25, 26, 27] 에 걸린 91건 / 전체 117건)
 
 ```markdown
 - oq-002 [열림] 국내 물류센터에서 SSCC 라벨이나 EPCIS 이벤트를 로봇 작업 결과(적재·하역 완료)와 연결해 운영하는 사례가 있는가? (영역 7, 1)
@@ -2595,7 +2625,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - oq-116 [열림] ISO 18646-2:2024 의 지도 작성 정확도 시험은 무엇을 어떤 기준점과 절차로 측정하며, KS 로 부합화되어 국내 물류 로봇 시험에 쓰이는가? (영역 23, 6)
 ```
 
-### docs/standards/index.md (요약: 200개 — 이름 · 종류 · 발행 기관)
+### docs/standards/index.md (요약: 204개 — 이름 · 종류 · 발행 기관)
 
 ```markdown
 - SCOR (SCOR Digital Standard) · 표준 · ASCM(Association for Supply Chain Management)
@@ -2798,6 +2828,10 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - ASTM F3244 Standard Test Method for Navigation: Defined Area · ASTM International · 표준
 - SSIG (평면도 구조 유사도 지표) · van Engelenburg, C. 외 (caspervanengelenburg GitHub) · 오픈소스
 - SLABIM (SLAM–BIM 결합 데이터셋) · HKUST Aerial Robotics Group · 오픈소스
+- vda5050-sim (VDA 5050 가상 로봇 플릿 시뮬레이터) · gpue (vda5050-sim GitHub, 개인 저장소) · 오픈소스
+- vda-5050-lib.js (가상 AGV 어댑터 포함 VDA 5050 라이브러리) · coatyio · 오픈소스
+- τ-bench (도구–에이전트–사용자 상호작용 벤치마크) · sierra-research · 평가 프로그램
+- SafeAgentBench (LLM 체화 에이전트 안전 계획 벤치마크) · SafeAgentBench 저자(shengyin1224 공식 저장소) · 평가 프로그램
 ```
 
 ### runs/2026-09-25-81/docs_tree.txt
@@ -2919,6 +2953,7 @@ glossary/frozen-horizon.md
 glossary/giai.md
 glossary/goal-condition.md
 glossary/grai.md
+glossary/graph-edit-distance.md
 glossary/hallucination.md
 glossary/hddl.md
 glossary/hierarchical-task-network.md
@@ -2941,6 +2976,7 @@ glossary/irdi.md
 glossary/irreducible-infeasible-subset.md
 glossary/isa-95.md
 glossary/job-shop-scheduling-problem.md
+glossary/joint-goal-accuracy.md
 glossary/lane-closure.md
 glossary/layout-interchange-format.md
 glossary/lifelong-mapf.md
@@ -2971,10 +3007,13 @@ glossary/ocel.md
 glossary/open-rmf.md
 glossary/operating-mode.md
 glossary/operating-zone.md
+glossary/optimality-gap.md
 glossary/order-batching.md
 glossary/over-the-air-update.md
 glossary/overall-equipment-effectiveness.md
+glossary/panoptic-quality.md
 glossary/panoptic-symbol-spotting.md
+glossary/pass-k.md
 glossary/pddl.md
 glossary/perfect-order-fulfillment.md
 glossary/plug-and-produce.md
@@ -2985,6 +3024,7 @@ glossary/process-mining.md
 glossary/put-wall.md
 glossary/raster-to-vector-conversion.md
 glossary/read-point.md
+glossary/reality-gap.md
 glossary/regression-testing.md
 glossary/release-zone.md
 glossary/required-and-provided-capability.md
@@ -2997,6 +3037,7 @@ glossary/runtime-verification.md
 glossary/safe-interval-path-planning.md
 glossary/saga.md
 glossary/scan-vs-bim.md
+glossary/schedule-stability.md
 glossary/scor.md
 glossary/semantic-id.md
 glossary/semantic-versioning.md
@@ -3017,10 +3058,12 @@ glossary/state-of-charge.md
 glossary/state-of-health.md
 glossary/stpa.md
 glossary/structured-output.md
+glossary/success-weighted-by-path-length.md
 glossary/task-decomposition.md
 glossary/time-window.md
 glossary/topological-map.md
 glossary/traversability.md
+glossary/user-simulator.md
 glossary/vda-5050-cancel-order.md
 glossary/vda-5050-factsheet.md
 glossary/vda-5050.md
@@ -3759,6 +3802,36 @@ references/ref-714.md
 references/ref-715.md
 references/ref-716.md
 references/ref-717.md
+references/ref-718.md
+references/ref-719.md
+references/ref-720.md
+references/ref-721.md
+references/ref-722.md
+references/ref-723.md
+references/ref-724.md
+references/ref-725.md
+references/ref-726.md
+references/ref-727.md
+references/ref-728.md
+references/ref-729.md
+references/ref-730.md
+references/ref-731.md
+references/ref-732.md
+references/ref-733.md
+references/ref-734.md
+references/ref-735.md
+references/ref-736.md
+references/ref-737.md
+references/ref-738.md
+references/ref-739.md
+references/ref-740.md
+references/ref-741.md
+references/ref-742.md
+references/ref-743.md
+references/ref-744.md
+references/ref-745.md
+references/ref-746.md
+references/ref-747.md
 standards/index.md
 topics/2026/2026-09-25-area01-s11.md
 topics/2026/2026-09-25-area01-s3.md
@@ -4070,7 +4143,7 @@ status: published
 created: 2026-09-25
 updated: 2026-09-25
 last_run: 2026-09-25
-version: 12
+version: 14
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › 자연어 업무 지시 챗봇
@@ -4160,15 +4233,15 @@ version: 12
 | [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | 대기 | 4 | 미충족 |
 | [단계 3. 구현 가설 설계](stage-3-implementation-hypothesis.md) | 대기 | 11 | 미충족 |
 | [단계 4. 오해석 방지와 확인 절차](stage-4-misinterpretation-safeguards.md) | 대기 | 13 | 미충족 |
-| [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md) | 대기 | 10 | 미충족 |
+| [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md) | 대기 | 12 | 미충족 |
 
 현재 단계: 단계 1. 선행 연구·제품 사례 조사 (1 / 5) · 트랙 상태: active
 <!-- auto:track-progress:end -->
 
 ## 6. 살아있는 산출물 링크
 
-- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인'은 초안 6절의 질문으로 남았다). 트랙 실행이 근거 finding과 함께 갱신한다.
-- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 이 실행은 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 단계 4 를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.
+- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-98, 2026-09-25-99 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표는 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.
+- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 실행 2026-09-25-99 에서 CLI 로 지정된 질문으로 q5-02 에 답해 6절에 검증 절차 소절(지시·실행·교란·반복 네 층 가상 시험 구성, 신뢰도 low)을 더했다. 가설 판정(q5-03)은 아직 조사하지 않았다. 실행 2026-09-25-79, 2026-09-25-98, 2026-09-25-99 는 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.
 - [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.
 - [트랙 로그](log.md) — 실행별 기록
 - [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.
@@ -4178,11 +4251,11 @@ version: 12
 <!-- auto:track-recent-runs:start -->
 | 실행 id | 날짜 | 단계 | 판정(1차 / 2차) | 생성 / 갱신 | 일일 로그 |
 |---|---|---|---|---|---|
+| 2026-09-25-99 | 2026-09-25 | 단계 5. 검증 방법과 가설 판정 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../logs/daily/2026-09-25.md) |
+| 2026-09-25-98 | 2026-09-25 | 단계 5. 검증 방법과 가설 판정 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../logs/daily/2026-09-25.md) |
 | 2026-09-25-79 | 2026-09-25 | 단계 4. 오해석 방지와 확인 절차 | 조건부 승인 / 통과 | 0 / 4 | [로그](../../logs/daily/2026-09-25.md) |
 | 2026-09-25-77 | 2026-09-25 | 단계 3. 구현 가설 설계 | 조건부 승인 / 통과 | 0 / 4 | [로그](../../logs/daily/2026-09-25.md) |
 | 2026-09-25-74 | 2026-09-25 | 단계 3. 구현 가설 설계 | 조건부 승인 / 통과 | 0 / 4 | [로그](../../logs/daily/2026-09-25.md) |
-| 2026-09-25-71 | 2026-09-25 | 단계 3. 구현 가설 설계 | 조건부 승인 / 통과 | 0 / 4 | [로그](../../logs/daily/2026-09-25.md) |
-| 2026-09-25-66 | 2026-09-25 | 단계 3. 구현 가설 설계 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../logs/daily/2026-09-25.md) |
 <!-- auto:track-recent-runs:end -->
 
 ## 8. 참고 자료
@@ -4572,9 +4645,9 @@ flowchart LR
       "question": "해석·분해 정확도, 배정 적합성, 일정 품질을 각각 어떤 지표로 측정하는가?",
       "stage": 5,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-98",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
       "created": "2026-09-25"
     },
     {
@@ -4582,9 +4655,9 @@ flowchart LR
       "question": "가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가?",
       "stage": 5,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-99",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
       "created": "2026-09-25"
     },
     {
@@ -4789,7 +4862,7 @@ flowchart LR
       "question": "배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생)",
       "stage": 5,
       "origin": "f17",
-      "status": "열림",
+      "status": "폐기",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-25",
@@ -4970,6 +5043,61 @@ flowchart LR
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-79"
+    },
+    {
+      "id": "q5-11",
+      "question": "물류 지시 해석 평가에서 슬롯별 오류 비용(기한·대상 화물·장소 오류가 오배정·납기 지연으로 이어지는 정도)을 어떻게 추정해 슬롯 가중치나 치명 오류 집계 기준으로 정하며, 모두 맞아야 정답인 전체 정확도와 어떻게 함께 보고하는가? (q5-01 에서 파생)",
+      "stage": 5,
+      "origin": "f15",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-98"
+    },
+    {
+      "id": "q5-12",
+      "question": "배정 적합성의 최적성 간격을 재기 위한 해법기 기준값을 창고 규모 사례에서 시간 제한 때문에 최적해로 인증하지 못할 때, 최선 해·하한 가운데 무엇을 기준으로 삼고 최근접 배정 기준선과 함께 어떻게 보고하는가? (q5-01 에서 파생) (관련: q5-05, oq-052)",
+      "stage": 5,
+      "origin": "f13",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-98"
+    },
+    {
+      "id": "q5-13",
+      "question": "가상 현장 시험에 쓸 창고 레이아웃(피킹 구역·도크·승강기·충전기)과 지시 시나리오 집합(정상·교란·위험·권한 밖 지시)을 q5-04 의 지시–정답 쌍과 어떻게 묶어 구성하고, 시나리오 수와 교란 조합의 범위를 어떤 기준으로 정하는가? (q5-02 에서 파생)",
+      "stage": 5,
+      "origin": "f23",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-99"
+    },
+    {
+      "id": "q5-14",
+      "question": "LLM 모의 관리자로 얻은 챗봇 성과를 실제 관제 요원·현장 관리자 소수 표본의 시험으로 보정하려면 표본 규모와 비교 지표(성공률, 되묻기 횟수, 오배정)를 어떻게 정하는가? (q5-02 에서 파생) (관련: q5-10)",
+      "stage": 5,
+      "origin": "f20",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-99"
+    },
+    {
+      "id": "q5-15",
+      "question": "LLM 비결정성을 고려해 모델·프롬프트 변경 뒤 회귀 시험에서 같은 시나리오를 몇 번 반복하고(pass^k 의 k), 어떤 분포 차이를 합격·불합격 기준으로 삼는가? (q5-02 에서 파생)",
+      "stage": 5,
+      "origin": "f15",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-99"
     }
   ]
 }
@@ -5191,7 +5319,7 @@ v0을 아이디어 정의에서 도출하는 과정과 이후 트랙 실행에�
 
 ### docs/ideas/nl-task-chatbot.md
 
-```markdown
+````markdown
 ---
 title: "아이디어 2. 자연어 업무 지시 챗봇"
 type: idea
@@ -5201,9 +5329,9 @@ tags: [확장 아이디어, 자연어 지시, 챗봇, LLM, 작업 배정, 스케
 status: published
 created: 2026-09-25
 updated: 2026-09-25
-version: 13
+version: 15
 sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-164, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-350, ref-351, ref-352, ref-353, ref-354, ref-355, ref-356, ref-357, ref-358, ref-359, ref-360, ref-362, ref-015, ref-031, ref-125, ref-130, ref-228, ref-411, ref-413, ref-418, ref-111, ref-495, ref-230, ref-496, ref-500, ref-501, ref-502, ref-116, ref-504, ref-539, ref-540, ref-541, ref-542, ref-543, ref-544, ref-545, ref-546, ref-547, ref-548, ref-056, ref-404, ref-377, ref-592, ref-593, ref-594, ref-595, ref-596, ref-598, ref-611, ref-612, ref-615, ref-616, ref-376, ref-236, ref-417, ref-586, ref-674, ref-675, ref-676, ref-711, ref-677, ref-712, ref-678, ref-656, ref-657, ref-039, ref-658, ref-659, ref-660, ref-661, ref-662, ref-663, ref-664, ref-041,
-  ref-126, ref-127, ref-680, ref-537, ref-681, ref-682, ref-683, ref-684, ref-373, ref-685, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-717]
+  ref-126, ref-127, ref-680, ref-537, ref-681, ref-682, ref-683, ref-684, ref-373, ref-685, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-717, ref-730, ref-731, ref-732, ref-733, ref-734, ref-623, ref-735, ref-736, ref-737, ref-406, ref-528, ref-738, ref-739, ref-740, ref-741, ref-407, ref-743, ref-744, ref-745, ref-746]
 confidence: low
 last_run: 2026-09-25
 ---
@@ -5213,7 +5341,7 @@ last_run: 2026-09-25
 # 아이디어 2. 자연어 업무 지시 챗봇
 
 <!-- auto:page-status:start -->
-> 페이지 상태: published · 신뢰도: low · 페이지 버전: 13 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 페이지 상태: published · 신뢰도: low · 페이지 버전: 15 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
 <!-- auto:page-status:end -->
 
 이 페이지는 확장 아이디어 2의 정리 페이지다. 이 아이디어는 새 중점 연구 트랙 [자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/index.md)으로 연구하며, 트랙의 살아있는 산출물은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)이다. 세 아이디어의 연결은 [확장 아이디어 연결 구조](index.md)에 있다. 3~6절은 트랙 실행이 출처와 함께 채우며, 그 전까지 조사하지 않은 내용은 쓰지 않는다.
@@ -5647,14 +5775,93 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 
 ## 6. 검증 방법
 
-아직 조사되지 않음 — [자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/index.md) 트랙 실행이 채운다. 주로 [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md)의 결과가 이 절에 실린다.
+이 절은 [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md)의 결과를 싣는다. 지금까지 q5-01 의 답인 평가 지표(실행 2026-09-25-98)를 실었다. 검증 절차(q5-02, 가상 현장·가상 로봇으로 지시 시나리오를 재현하는 시험)와 가설 판정(q5-03)은 아직 조사되지 않았다.
+
+### 평가 지표
+
+확인한 지표를 이 위키가 묶으면, 챗봇의 측정은 해석·분해·배정 적합성·일정 품질의 네 층으로 두는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-731][^ref-730][^ref-736][^ref-540][^ref-732][^ref-592][^ref-623][^ref-734][^ref-733] 네 층을 한 번에 제시한 출처는 없고, 근거 환경이 가정 시뮬레이터·대화·도구 호출·운영과학 일반·창고 배정 시뮬레이션·제조 작업장이라 물류 지시 조건이 아니어서 신뢰도가 낮다. 평가에 쓸 지시–정답 데이터는 4절의 [해석·분해 평가 데이터](#해석분해-평가-데이터) 소절에, 자세한 근거는 [단계 5 조사 결과](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01)에 있다.
+
+| 층 | 지표 후보 | 근거 환경 |
+|---|---|---|
+| 해석 | 의도 정확도, 슬롯별 정밀도·재현율·F1, 전체 정확도; 여러 턴이면 결합 목표 정확도·상대 슬롯 정확도; 구조화 출력이면 필드 값 대조(AST식) | 음성 비서·대화·일반 API |
+| 분해 | 성공률, 목표 조건 달성률, LCS 순서 일치, 실행 가능 동작 비율 | 가정 시뮬레이터 |
+| 배정 적합성 | 실행 가능 배정 비율, 해법기 기준값 대비 최적성 간격 | 운영과학 일반 |
+| 일정 품질 | makespan, 납기 지연, 총 이동 지연, 재스케줄 뒤 시작 시각 편차 | 창고 배정 시뮬레이션, 제조 작업장 |
+
+위 표는 이 위키의 종합이며 네 층을 한 번에 제시한 출처는 없고, 근거 환경이 물류 지시 조건이 아니다. [추정][^ref-731][^ref-540][^ref-592][^ref-734]
+
+- **해석**: SLU 서베이(IJCAI 2021)는 [슬롯 채우기](../glossary/slot-filling.md)의 F1, [의도 인식](../glossary/intent-recognition.md)의 의도 정확도, 의도와 슬롯을 모두 맞힌 문장 비율인 전체 정확도를 대표 지표로 든다(원문 미열람). [사실][^ref-731] 대화 상태 추적 연구(ACL 2022)는 결합 목표 정확도가 성능을 과소평가하고 슬롯 정확도가 과대평가한다고 지적하고 상대 슬롯 정확도를 제안했다(MultiWOZ 조건, 저자 보고, 원문 미열람). [사실][^ref-730] BFCL 은 함수 호출을 AST 대조와 실행으로 채점한다(README 확인일 2026-09-25; 2,000개 넘는 쌍은 논문 기준, 원문 미열람, 같은 저자 자료). [사실][^ref-737][^ref-736]
+- **분해**: ALFRED 는 성공률과 [목표 조건](../glossary/goal-condition.md) 성공률을 쓰고(가정 환경, 원문 미열람) [사실][^ref-540], Gramopadhye·Szafir(2022-10)는 정답 계획과의 최장 공통 부분수열(LCS) 비율로 행동 순서 일치를 잰다(VirtualHome 조건, 원문 미열람). [사실][^ref-732]
+- **배정 적합성**: ConstraintBench 의 시설 입지 영역은 평균 실행 가능 비율 85.0%였지만 실행 가능성과 최적성을 함께 만족한 비율은 모든 모델에서 0%, 실행 가능 해의 중앙 최적성 간격은 9.41%였다(저자 보고, 원문 미열람; 전체 결과는 5절). [사실][^ref-592] 창고 배정 연구 RTAW(ICRA 2023)는 총 이동 지연(TTD)을 탐욕 픽업 거리·후회 기반 기준선과 비교했다(시뮬레이션 조건, 저자 보고). [사실][^ref-623][^ref-735]
+- **일정 품질**: 동적 작업장 재스케줄링 연구(2004)는 효율을 makespan·납기 지연으로, 안정성을 작업 시작 시각 편차로 잰다(원문 미열람). [사실][^ref-734] 단일 기계 연구(2008)는 강건성·안정성 대리 척도 두 가지를 개발했으나 두 개념 정의의 원문 문구는 확인하지 못했다. [사실][^ref-733] 두 연구의 물류 적용은 미확인이다.
+- **배정의 분리 보고**: 배정 적합성은 실행 가능성과 최적성이 따로 움직이므로 실행 가능 배정 비율과 해법기(예: [혼합 정수 계획(MILP)](../glossary/milp.md)) 최적값(또는 최선 해) 대비 목적함수 격차를 분리해 보고해야 할 것으로 보인다. [추정][^ref-592][^ref-090]
+- **슬롯별 지표 병행**: 모두 맞아야 정답인 지표는 화물·장소·기한 슬롯 하나만 틀려도 0점이 되므로, 슬롯별 지표를 함께 두고 오배정 비용이 큰 슬롯의 오류를 따로 집계해야 할 것으로 보인다. [추정][^ref-730][^ref-731][^ref-545] 슬롯 가중치의 근거는 없어 백로그 q5-11 로 남겼다.
+
+검증 절차(q5-02)와 가설 판정(q5-03)은 아직 조사되지 않았고, 사용자에게 제안하는 실험 계획도 아직 없다.
+
+[^ref-730]: Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(ACL 2022 Short Papers, 소속 미확인), Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking, 2022-05, https://aclanthology.org/2022.acl-short.33/, 접근일 2026-09-25 (원문 미열람)
+[^ref-731]: Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021), A Survey on Spoken Language Understanding: Recent Advances and New Frontiers, 2021, https://www.ijcai.org/proceedings/2021/0622.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-732]: Gramopadhye, M., & Szafir, D., Generating Executable Action Plans with Environmentally-Aware Language Models, 2022-10, https://arxiv.org/abs/2210.04964, 접근일 2026-09-25 (원문 미열람)
+[^ref-733]: Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83), Robustness and stability measures for scheduling: single-machine environment, 2008, https://www.tandfonline.com/doi/full/10.1080/07408170701283198, 접근일 2026-09-25 (원문 미열람)
+[^ref-734]: Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46), Dynamic rescheduling that simultaneously considers efficiency and stability, 2004, https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950, 접근일 2026-09-25 (원문 미열람)
+[^ref-623]: Agrawal, A. 외(RTAW 저자, ICRA 2023), RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments, 2022-09, https://arxiv.org/abs/2209.05738, 접근일 2026-09-25 (원문 미열람)
+[^ref-735]: Aakriti05 (RTAW 공식 저장소), RTAW-Centralised-multi-robot-task-allocation — README, 미확인, https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation, 접근일 2026-09-25
+[^ref-736]: Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267), The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models, 2025, https://proceedings.mlr.press/v267/patil25a.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-737]: ShishirPatil (gorilla GitHub), berkeley-function-call-leaderboard — README, 미확인, https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard, 접근일 2026-09-25
+
+### 검증 절차: 가상 현장·가상 로봇 시나리오 시험
+
+이 절 머리와 평가 지표 소절 끝의 '검증 절차(q5-02)는 아직 조사되지 않았다'는 서술은 실행 2026-09-25-98 기준이며, 실행 2026-09-25-99 에서 [단계 5 의 q5-02](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02)에 답했다. 가설 판정(q5-03)과 사용자에게 제안하는 실험 계획은 아직 조사되지 않았다. 이 시험이 산출하는 지표는 위 [평가 지표](#평가-지표) 소절의 네 층 지표다.
+
+확인한 자료를 이 위키가 묶으면, 가상 현장 시험은 지시 층·실행 층·교란 층·반복 층의 네 층으로 구성하는 것이 근거가 가장 많은 것으로 보인다. [추정][^ref-738][^ref-407][^ref-406][^ref-528][^ref-031][^ref-746] 네 층을 한 번에 제시한 출처는 없고, 근거 조건이 소매·항공 대화, 개인 저장소의 가상 AGV, 호텔·클리닉·제조 데모, 제조 키팅이라 물류 지시 조건이 아니어서 신뢰도가 낮다.
+
+| 층 | 하는 일 | 근거 사례 |
+|---|---|---|
+| 지시 층 | LLM 모의 관리자가 시나리오별 목표로 지시하고 끝 상태를 목표 상태와 비교해 채점 | τ-bench |
+| 실행 층 | ROP 를 VDA 5050 가상 로봇이나 Open-RMF 시뮬레이션(문·승강기·워크셀)에 표준 인터페이스로 연결 | vda5050-sim, Open-RMF 시뮬레이션 |
+| 교란 층 | 시작 시각 또는 발생 조건을 정한 교란(고장·통신 손실·비상정지·긴급 주문) 주입 | ARIAC, vda5050-sim |
+| 반복 층 | 같은 시나리오를 여러 번 돌려 pass^k 와 평가 지표를 작업 상태 기록에서 산출 | τ-bench, Atil 외 |
+
+```mermaid
+flowchart LR
+  simuser[LLM 모의 관리자] -->|채팅 지시| chatbot[챗봇]
+  chatbot -->|작업 요청| rop[ROP 배정·일정]
+  rop -->|표준 인터페이스| virt[가상 로봇·가상 현장]
+  fault[교란 주입] --> virt
+  virt -->|상태 보고| rop
+  rop -->|작업 상태 기록| score[끝 상태 채점과 반복 시행 분포]
+  simuser -.->|목표 상태| score
+```
+
+- **가상 현장의 모사 범위**: Open-RMF 공식 도서의 시뮬레이션 장은 문·여러 층 승강기·워크셀을 모사해 다중 플릿을 시험하게 하지만, slotcar 로봇은 장애물 없는 경로를 가정하고 개별 주행보다 교통 관리 시험을 우선한다(확인일 2026-09-25). [사실][^ref-406]
+- **가상 로봇**: vda5050-sim 은 README 가 VDA 5050 3.0.0 준수를 표명하는(저장소 자기 표명, 적합성 시험 결과 미확인) 가상 플릿에 로봇별 확률로 연결 끊김·오류·비상정지 등을 주입하지만 이동은 노드 사이 직선 운동학뿐이다(개인 저장소). [사실][^ref-407]
+- **교란 주입**: [장애 주입](../glossary/fault-injection.md)(Fault Injection)의 예로, ARIAC 문서(2025 판 기준)는 컨베이어 고장·전압 시험기 고장·고우선순위 주문을 시작 시각(START_TIME)으로, 진공 도구 고장을 잡기 시도 횟수(GRASP_OCCURRENCE)로 발생시킨다(제조 키팅 조건). [추정][^ref-528]
+- **모의 사용자와 채점**: τ-bench 는 LLM 이 모사한 사용자와 에이전트의 대화 끝 데이터베이스 상태를 목표 상태와 비교해 채점하고 pass^k 로 일관성을 잰다. [사실][^ref-738][^ref-739] Lost in Simulation(arXiv 2601.17087, 게재처 미확인) 저자들은 모의 사용자 LLM 에 따라 성공률이 최대 9%p 달라지고 난이도별 체계적 보정 오차가 있다고 보고했다(소매 과제, 저자 보고, 원문 미열람). [사실][^ref-740]
+- **비결정성과 현실 격차**: 결정적으로 설정한 LLM 도 반복 실행에서 정확도가 최대 15% 달라졌다는 보고가 있고(arXiv 판 기준, 저자 보고, 원문 미열람) [사실][^ref-746], 시뮬레이션의 추상화·근사 때문에 현실 격차를 피할 수 없다는 리뷰가 있다(Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인, 원문 미열람). [사실][^ref-741]
+- **시험 경계**: 확인한 가상 로봇이 직선 운동학이나 장애물 없는 경로를 가정하므로 가상 현장 시험은 지시 해석·배정·일정·예외 처리 같은 ROP 쪽 결정을 재는 데 한정되는 것으로 보인다. [추정][^ref-407][^ref-406][^ref-741][^ref-743] 연계 대상: 로봇 쪽 주행·회피·파지 성능과 현실 격차는 제조사 시험과 실기 시험으로 따로 확인해야 할 것으로 보인다.
+- **보정과 반복**: 모의 관리자 시험 결과는 실제 관리자 소수 표본의 시험으로 보정하고, 챗봇 쪽과 모의 사용자 쪽 모두 반복 시행 분포로 보고해야 할 것으로 보인다(근거 조건은 소매 대화·일반 NLP 과제). [추정][^ref-740][^ref-746][^ref-738]
+- **위험 지시 포함**: SafeAgentBench 에서 가장 나은 기준 에이전트의 위험 과제 거부율은 5%, 가장 안전 의식이 높은 기준 에이전트의 세부 위험 과제 거부율은 10%로 보고되었으므로(가정 환경, 저자 보고) [사실][^ref-745][^ref-744], 시나리오 집합에 위험·권한 밖·수행 불가 지시를 의도적으로 넣어 게이트가 멈추는 비율을 재야 할 것으로 보이며, 이를 실제 위험 없이 할 수 있는 것이 가상 시험의 장점으로 보인다. [추정][^ref-745][^ref-744][^ref-743]
+
+가설 판정(q5-03)과 사용자에게 제안하는 실험 계획은 아직 없다.
+
+[^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-09-25
+[^ref-528]: NIST (usnistgov/ARIAC_docs), ARIAC documentation — Challenges (ref-008 ARIAC 문서와 같은 문서 사이트의 challenges 페이지), 미확인, https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html, 접근일 2026-09-25
+[^ref-738]: Yao, S. 외(Sierra, τ-bench 저자), τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains, 2024-06, https://arxiv.org/abs/2406.12045, 접근일 2026-09-25 (원문 미열람)
+[^ref-739]: sierra-research (tau-bench GitHub), tau-bench — README, 미확인, https://github.com/sierra-research/tau-bench, 접근일 2026-09-25
+[^ref-740]: Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인), Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations, 2026-01, https://arxiv.org/abs/2601.17087, 접근일 2026-09-25 (원문 미열람)
+[^ref-741]: Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington), The Reality Gap in Robotics: Challenges, Solutions, and Best Practices (Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인), 2025-10, https://arxiv.org/abs/2510.20808, 접근일 2026-09-25 (원문 미열람)
+[^ref-407]: gpue (vda5050-sim GitHub, 개인 저장소), vda5050-sim — Standards-compliant VDA5050 (v3.0.0) robot fleet simulator (README), 미확인, https://github.com/gpue/vda5050-sim, 접근일 2026-09-25
+[^ref-743]: Wu, J., Lu, C., Arrieta, A., & Ali, S. 외(Simula Research Laboratory·Mondragon University·PAL Robotics), Vision Language Model-based Testing of Industrial Autonomous Mobile Robots, 2025-08, https://arxiv.org/abs/2508.02338, 접근일 2026-09-25 (원문 미열람)
+[^ref-744]: Yin, S. 외(SafeAgentBench 저자), SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents, 2024-12, https://arxiv.org/abs/2412.13178, 접근일 2026-09-25 (원문 미열람)
+[^ref-745]: shengyin1224 (SafeAgentBench 공식 저장소), SafeAgentBench — README, 미확인, https://github.com/shengyin1224/SafeAgentBench, 접근일 2026-09-25
+[^ref-746]: Atil, B. 외, Non-Determinism of "Deterministic" LLM Settings (Eval4NLP 2025 게재판 제목: Non-Determinism of "Deterministic" LLM System Settings in Hosted Environments, 수치는 arXiv 판 기준), 2024-08, https://arxiv.org/abs/2408.04667, 접근일 2026-09-25 (원문 미열람)
 
 ## 7. 미해결 질문 백로그
 
 아래 표는 퍼블리셔가 트랙 [질문 백로그](../tracks/nl-task-chatbot/question-backlog.md)의 원천 데이터에서 상태순(열림 → 조사 중 → 답함 → 보류 → 폐기)으로 자동으로 만든다.
 
 <!-- auto:idea-backlog:start -->
-원천: [질문 백로그](../tracks/nl-task-chatbot/question-backlog.md)([자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/index.md) 트랙) · 열림 40건 · 답함 12건
+원천: [질문 백로그](../tracks/nl-task-chatbot/question-backlog.md)([자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/index.md) 트랙) · 열림 42건 · 답함 14건 · 폐기 1건
 
 | 상태 | id | 질문 | 단계 | 제기 근거 | 답 |
 |---|---|---|---|---|---|
@@ -5688,16 +5895,18 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 | 열림 | q4-12 | 화물을 이미 실었거나 옮긴 작업을 채팅으로 취소할 때 되돌림 보상 작업의 생성·실행을 누가 승인하고, 지시 변경 요약 확인(무엇을 취소하고 무엇이 영향받는가)은 어떤 형식으로 보여 주는가? (q3-04 에서 파생) (관련: oq-021, q4-11) | [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | f23 | — |
 | 열림 | q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (q4-01 에서 파생) (관련: q4-04) | [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | f22 | — |
 | 열림 | q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? (q4-01 에서 파생) | [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | f5 | — |
-| 열림 | q5-01 | 해석·분해 정확도, 배정 적합성, 일정 품질을 각각 어떤 지표로 측정하는가? | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 사용자 | — |
-| 열림 | q5-02 | 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 사용자 | — |
 | 열림 | q5-03 | 가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가? | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 사용자 | — |
 | 열림 | q5-04 | 물류 지시 평가 자료를 자체 구축할 때 지시–정답 쌍의 정답을 무엇(업무 분해·배정 설계 초안의 작업 모델 인스턴스, 최종 상태·목표 조건, 배정 결과)으로 두고, ALFRED 목표 조건·SMART-LLM 최종 상태·AmbiK 명확화 질문 형식을 화물·로케이션·기한 항목으로 어떻게 확장하는가? (q2-03 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f16 | — |
 | 열림 | q5-05 | 배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생) (관련: q3-05, q5-01) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f17 | — |
-| 열림 | q5-06 | 배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f17 | — |
 | 열림 | q5-07 | SDI 절제 실험처럼 결정적 검증기를 LLM 비평자로 바꿨을 때의 성공률 차이를 물류 지시(피킹·운반·출하) 시나리오로 재면 어떤 결과가 나오며, 어느 단계의 검증기가 가장 큰 차이를 만드는가? (q3-02 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f7 | — |
 | 열림 | q5-08 | 후보가 여럿일 때 '시스템이 계산할 수 있는 차이는 자동 결정, 사용자만 아는 정보에 걸린 차이만 되묻기' 규칙을 물류 지시 시나리오에 적용하면 되묻기 횟수와 오배정은 모든 경우를 묻거나 묻지 않는 방식에 비해 어떻게 달라지는가? (q3-03 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f23 | — |
 | 열림 | q5-09 | InterruptBench 의 추가·수정·철회 끼어들기 유형을 물류 지시(피킹·운반·출하) 시나리오로 옮겨, 챗봇이 변경을 올바른 작업에 적용하는 비율과 재계획 뒤 일정 변동량을 어떤 지표로 재는가? (q3-04 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f15 | — |
 | 열림 | q5-10 | 물류 지시 시나리오에서 관제 요원의 승인 지연 시간·거부율·수정률을 재어 승인 피로와 자동화 편향이 나타나는지, 확인 요약에 결정적 검사 결과를 함께 보이면 잘못된 지시를 멈추는 비율이 달라지는지를 어떤 실험으로 측정하는가? (q4-01 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f21 | — |
+| 열림 | q5-11 | 물류 지시 해석 평가에서 슬롯별 오류 비용(기한·대상 화물·장소 오류가 오배정·납기 지연으로 이어지는 정도)을 어떻게 추정해 슬롯 가중치나 치명 오류 집계 기준으로 정하며, 모두 맞아야 정답인 전체 정확도와 어떻게 함께 보고하는가? (q5-01 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f15 | — |
+| 열림 | q5-12 | 배정 적합성의 최적성 간격을 재기 위한 해법기 기준값을 창고 규모 사례에서 시간 제한 때문에 최적해로 인증하지 못할 때, 최선 해·하한 가운데 무엇을 기준으로 삼고 최근접 배정 기준선과 함께 어떻게 보고하는가? (q5-01 에서 파생) (관련: q5-05, oq-052) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f13 | — |
+| 열림 | q5-13 | 가상 현장 시험에 쓸 창고 레이아웃(피킹 구역·도크·승강기·충전기)과 지시 시나리오 집합(정상·교란·위험·권한 밖 지시)을 q5-04 의 지시–정답 쌍과 어떻게 묶어 구성하고, 시나리오 수와 교란 조합의 범위를 어떤 기준으로 정하는가? (q5-02 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f23 | — |
+| 열림 | q5-14 | LLM 모의 관리자로 얻은 챗봇 성과를 실제 관제 요원·현장 관리자 소수 표본의 시험으로 보정하려면 표본 규모와 비교 지표(성공률, 되묻기 횟수, 오배정)를 어떻게 정하는가? (q5-02 에서 파생) (관련: q5-10) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f20 | — |
+| 열림 | q5-15 | LLM 비결정성을 고려해 모델·프롬프트 변경 뒤 회귀 시험에서 같은 시나리오를 몇 번 반복하고(pass^k 의 k), 어떤 분포 차이를 합격·불합격 기준으로 삼는가? (q5-02 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f15 | — |
 | 답함 | q1-01 | 자연어 지시를 작업 단위로 분해하는 기존 접근은 무엇이 있는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-01) |
 | 답함 | q1-02 | LLM을 로봇 작업 계획이나 여러 로봇의 작업 배정에 쓴 연구·제품 사례는 무엇이 있고, 각각 LLM이 맡는 범위(해석·분해·배정·명령 생성)는 어디까지인가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-02) |
 | 답함 | q1-03 | 물류·시설 현장에서 채팅이나 음성으로 로봇·작업자에게 일을 지시하는 운영 인터페이스 제품은 무엇이 있고, 지시를 받은 뒤 확인·승인을 어떻게 받는가? | [단계 1. 선행 연구·제품 사례 조사](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-03) |
@@ -5710,6 +5919,9 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 | 답함 | q3-03 | 온톨로지 질의가 수행 가능한 로봇을 찾지 못하거나 후보를 여럿 낼 때, 챗봇은 무엇을 사용자에게 되묻고 무엇을 스스로 정하는가? | [단계 3. 구현 가설 설계](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03) |
 | 답함 | q3-04 | 진행 중인 작업에 새 지시가 들어오거나 지시가 바뀌면(취소·우선순위 변경) 작업 모델과 일정은 어떻게 갱신하는가? | [단계 3. 구현 가설 설계](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-04) |
 | 답함 | q4-01 | LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가? | [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-01) |
+| 답함 | q5-01 | 해석·분해 정확도, 배정 적합성, 일정 품질을 각각 어떤 지표로 측정하는가? | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01) |
+| 답함 | q5-02 | 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 사용자 | [답](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02) |
+| 폐기 | q5-06 | 배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생) | [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | f17 | — |
 <!-- auto:idea-backlog:end -->
 
 [^ref-015]: GS1, EPCIS and CBV Implementation Guideline, 미확인, https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf, 접근일 2026-09-25 (원문 미열람)
@@ -5741,7 +5953,7 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 [^ref-547]: OpenBench 저자(arXiv 2502.09238), OpenBench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics, 2025-02, https://arxiv.org/abs/2502.09238, 접근일 2026-09-25 (원문 미열람)
 [^ref-548]: Högskolan Väst (DiVA 학위논문, 저자 미확인), An LLM- Interface for Robot Mission Specification in Logistics, 미확인, https://hv.diva-portal.org/smash/get/diva2:2080486/FULLTEXT01.pdf, 접근일 2026-09-25 (원문 미열람)
 [^ref-056]: Liu, J. X. 외, Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments, 2023-02, https://arxiv.org/abs/2302.11649, 접근일 2026-09-25 (원문 미열람)
-```
+````
 
 ### templates/track-draft.md
 
@@ -8020,9 +8232,10 @@ version: 13
     "issues": []
   },
   "duplication": {
-    "ok": true,
+    "ok": false,
     "overlaps": [
-      "f20 은 1차 지시대로 단계 4 페이지와 아이디어 페이지에서 q4-01 서술로 연결만 했다(새 서술 없음)"
+      "새 질문 id q5-11 이 기존 백로그 q5-11(실행 2026-09-25-98, '물류 지시 해석 평가에서 슬롯별 오류 비용…')과 겹친다. 백로그 반영 시 기존 질문을 덮어쓴다",
+      "트랙 개요 6절 replace 패치와 아이디어 페이지 산출본이 실행 2026-09-25-98·99 반영 전의 옛 판(개요 v13, 아이디어 v13→14)을 바탕으로 만들어져, 게시된 판(개요 v14, 아이디어 v15)의 98·99 실행 서술과 충돌한다"
     ]
   },
   "terminology": {
@@ -8035,21 +8248,24 @@ version: 13
   "corrections_applied": [],
   "corrections_rejected": [],
   "required_fixes": [
-    "ref-782 각주 정의: docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md 와 docs/ideas/nl-task-chatbot.md 의 [^ref-782] 정의 줄 발행일이 아직 '2026' 이다. 1차 지시(f16)대로 '2026-04' 로 고친다 — 본문과 reference_updates 는 2026-04 인데 각주만 달라 페이지 안에서 기준일이 어긋난다.",
-    "docs/ideas/nl-task-chatbot.md 프런트매터 sources: 이번에 붙인 각주 ref-773·ref-777·ref-778·ref-781·ref-782·ref-784·ref-785·ref-786·ref-416·ref-459 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다(5절 patch 에 frontmatter 가 없다).",
-    "docs/tracks/nl-task-chatbot/task-model-draft.md 프런트매터 sources: 6절에 새로 붙인 각주 ref-416·ref-459·ref-713·ref-773·ref-777·ref-781·ref-785 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다.",
-    "단계 4 페이지 H1 아래 상태 줄의 '열린 질문: 13건 · 답한 질문: 1건' 을 이번 2절 표에 맞게 '열린 질문: 14건 · 답한 질문: 2건' 으로 고친다 — 부록 C 트랙 단계 상태 줄의 숫자는 2절 표와 맞아야 한다. H2 밖이라 patch 로 바꿀 수 없으면 pages.json 에 머리 영역 교체 patch 를 두거나 퍼블리셔 처리로 넘기되, 어느 쪽으로 처리했는지 fixes_applied 에 적는다.",
-    "아이디어 페이지 5절 '검증 방법별로 잡는 오류' 소절의 '근거 사례' 항목에서 'VDA 5050 3.0.0 은 … 서로 다른 오류 유형으로 보고하며, 이 거절은 로봇 쪽 기능인 연계 대상이다. [사실][^ref-031]' 을 두 문장으로 나눈다: 오류 유형 보고는 [사실][^ref-031], '이 거절은 로봇 쪽 기능인 연계 대상이며 ROP 는 오류를 받아 처리하는 쪽만 맡는 것으로 본다' 는 [추정][^ref-031] — 1차 f4 지시와 단계 4 페이지에서는 경계 판단을 [추정]으로 두었는데 여기서는 [사실] 문장에 합쳐져 태그가 올라갔다.",
-    "단계 4 페이지 6절 표 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)' 로 고친다 — 이번 실행에서 q4-15·q4-16 이 열림으로 더해졌고 track_updates.log_entry 도 q4-03~q4-16 으로 적었다(1차 지시 문구의 범위가 좁았던 것을 바로잡는다)."
+    "트랙 개요(docs/tracks/nl-task-chatbot/index.md) 6절 replace 패치: 입력의 현재 게시본(version 14)의 6절을 기준으로 다시 쓴다. 실행 2026-09-25-98·99 관련 서술(초안 변경 없음 목록의 98·99, 6절 '평가 지표'·'검증 절차' 소절, 79·98·99 가 뒤 단계를 다뤘다는 문장)을 지우지 말고 유지한 채 실행 2026-09-25-81(q4-02 답, '검증 방법별로 잡는 오류' 소절, '검증 기록' 재제안이 초안 6절 질문으로 남음)만 덧붙인다. 프런트매터 version 은 15 로 둔다. 이유: 현재 패치는 옛 판(v13) 기준이어서 게시된 98·99 실행 내용을 지운다(이전 지시에 없던 새 문제).",
+    "아이디어 2 페이지(docs/ideas/nl-task-chatbot.md): 5절 append 패치는 현재 게시본(version 15, 6절에 평가 지표·검증 절차 소절이 있는 판)에 적용하고, 6절과 auto 영역 내용은 게시본 그대로 둔다. version 은 16 으로 한다. 이유: 산출본이 옛 판(v13)을 바탕으로 해 version 14·6절 '아직 조사되지 않음'이 되어 있다(이전 지시에 없던 새 문제).",
+    "아이디어 2 페이지 프런트매터 sources: 게시본의 목록(ref-730~ref-746 포함)을 유지하고 이번 소절이 인용한 ref-773, ref-362, ref-785, ref-777, ref-786, ref-416, ref-781, ref-713, ref-031, ref-459, ref-778, ref-782, ref-784, ref-697 가운데 없는 id 를 더한다 — 본문 각주와 프런트매터가 어긋난다.",
+    "업무 분해·배정 설계 초안 프런트매터 sources 에 6절 새 항목이 인용한 ref-773, ref-785, ref-777, ref-416, ref-781, ref-713, ref-459 를 더한다 — 본문 각주와 프런트매터가 어긋난다.",
+    "새 단계 5 질문의 id 를 q5-11 에서 q5-16 으로 고친다(backlog_updates, 단계 4 페이지 5절 표, 9절 이력 행, log_entry) — 백로그에 이미 다른 질문 q5-11~q5-15 가 있다.",
+    "단계 4 페이지 8절과 아이디어 2 페이지의 각주 정의 [^ref-782] 의 발행일을 '2026' 에서 '2026-04' 로 고친다 — 1차 지시(f16: 각주·reference_updates published 2026-04)가 reference_updates 에만 이행됐다.",
+    "단계 4 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)' 로 고친다 — 이번 실행이 q4-15·q4-16 을 더해 열린 질문 범위가 바뀌었고 log_entry 와도 맞춘다(1차 지시 문구 이후 생긴 차이)."
   ],
   "confidence": "low",
-  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 트랙 개요 상태 줄(단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 트랙 데이터 확인이 필요하다. 검증 검색은 12회(리서치 25회와 합쳐 37/40)였다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계가 초안 6절 질문으로 남아 있음, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 수정 후 재검증. 드리프트 없음(1차 수정 지시 14건 이행 확인: f15 강등·수치 교정, f17·f13·f3·f12·f14·f9·f11·f19 저자 보고 병기, f16·f4 연계 대상 경계, f21·f24 표 표시, f20 연결만, 온톨로지 변경 미반영과 v0.8 유지, 세부영역은 반영 제안으로만). [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과 기준). 남은 지적은 국소 수정 6건이다: ref-782 각주 발행일(2026 → 2026-04), 아이디어 페이지·업무 분해·배정 설계 초안의 프런트매터 sources 누락, 단계 4 상태 줄 숫자(열린 14·답한 2), 아이디어 페이지 VDA 5050 문장의 태그 상향, 6절 전환 줄의 열린 질문 범위(q4-16까지). 참고(수정 지시 아님): '사람 확인과 LLM 판정자' 소절과 아이디어 페이지의 사람 확인 연결 문장은 주장이 아닌 연결 문장이라 태그 없이 기존 각주만 두었다. 트랙 판정은 1차 값을 유지한다.",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 수정 후 재검증. 드리프트 없음(1차 수정 지시 14건은 본문에 이행됨), [분류원문] 보존, 섹션 순서 준수. 새로 찾은 문제: 트랙 개요 6절 패치와 아이디어 페이지 산출본이 실행 2026-09-25-98·99 반영 전 판을 바탕으로 해 게시된 내용을 지우거나 버전이 거꾸로 간다, 새 질문 q5-11 이 기존 백로그 id 와 겹친다, 아이디어·초안 페이지 프런트매터 sources 누락, ref-782 각주 발행일 미이행. 단계 4 페이지 상태 줄('열린 질문: 13건 · 답한 질문: 1건')은 H2 절 밖이라 패치로 고칠 수 없으므로 퍼블리셔가 열린 질문 14건·답한 질문 2건으로 갱신해야 한다(스토리텔러 요청과 같음). 단계 4 페이지와 아이디어 페이지에서 사람 확인 한계를 q4-01 로 잇는 연결 문장은 태그 없이 각주만 붙어 있으나 주장이 아닌 연결 문장으로 본다.",
   "retry_reason": null,
   "track_checks": {
     "standard_sources_ok": true,
     "vendor_claims_tagged": true,
     "ontology_changes_grounded": false,
-    "backlog_duplicates": [],
+    "backlog_duplicates": [
+      "q5-11(새 질문 '물류 지시에 오류를 주입한 시험 세트로 … 오류 포착률과 확인 비용을 어떻게 재는가?' 의 id 가 기존 q5-11 과 충돌 — 질문 내용은 중복이 아니므로 q5-16 으로 재번호)"
+    ],
     "stage_tag_issues": [],
     "completeness_wording_ok": true,
     "stage_complete": false,
@@ -8064,13 +8280,14 @@ version: 13
 - 판정(verdict): 수정 후 재검증
 - 재작업 사유(retry_reason): —
 - 수정 지시(required_fixes):
-    - ref-782 각주 정의: docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md 와 docs/ideas/nl-task-chatbot.md 의 [^ref-782] 정의 줄 발행일이 아직 '2026' 이다. 1차 지시(f16)대로 '2026-04' 로 고친다 — 본문과 reference_updates 는 2026-04 인데 각주만 달라 페이지 안에서 기준일이 어긋난다.
-    - docs/ideas/nl-task-chatbot.md 프런트매터 sources: 이번에 붙인 각주 ref-773·ref-777·ref-778·ref-781·ref-782·ref-784·ref-785·ref-786·ref-416·ref-459 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다(5절 patch 에 frontmatter 가 없다).
-    - docs/tracks/nl-task-chatbot/task-model-draft.md 프런트매터 sources: 6절에 새로 붙인 각주 ref-416·ref-459·ref-713·ref-773·ref-777·ref-781·ref-785 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다.
-    - 단계 4 페이지 H1 아래 상태 줄의 '열린 질문: 13건 · 답한 질문: 1건' 을 이번 2절 표에 맞게 '열린 질문: 14건 · 답한 질문: 2건' 으로 고친다 — 부록 C 트랙 단계 상태 줄의 숫자는 2절 표와 맞아야 한다. H2 밖이라 patch 로 바꿀 수 없으면 pages.json 에 머리 영역 교체 patch 를 두거나 퍼블리셔 처리로 넘기되, 어느 쪽으로 처리했는지 fixes_applied 에 적는다.
-    - 아이디어 페이지 5절 '검증 방법별로 잡는 오류' 소절의 '근거 사례' 항목에서 'VDA 5050 3.0.0 은 … 서로 다른 오류 유형으로 보고하며, 이 거절은 로봇 쪽 기능인 연계 대상이다. [사실][^ref-031]' 을 두 문장으로 나눈다: 오류 유형 보고는 [사실][^ref-031], '이 거절은 로봇 쪽 기능인 연계 대상이며 ROP 는 오류를 받아 처리하는 쪽만 맡는 것으로 본다' 는 [추정][^ref-031] — 1차 f4 지시와 단계 4 페이지에서는 경계 판단을 [추정]으로 두었는데 여기서는 [사실] 문장에 합쳐져 태그가 올라갔다.
-    - 단계 4 페이지 6절 표 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)' 로 고친다 — 이번 실행에서 q4-15·q4-16 이 열림으로 더해졌고 track_updates.log_entry 도 q4-03~q4-16 으로 적었다(1차 지시 문구의 범위가 좁았던 것을 바로잡는다).
-- 검증 노트: 판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 트랙 개요 상태 줄(단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 트랙 데이터 확인이 필요하다. 검증 검색은 12회(리서치 25회와 합쳐 37/40)였다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계가 초안 6절 질문으로 남아 있음, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 수정 후 재검증. 드리프트 없음(1차 수정 지시 14건 이행 확인: f15 강등·수치 교정, f17·f13·f3·f12·f14·f9·f11·f19 저자 보고 병기, f16·f4 연계 대상 경계, f21·f24 표 표시, f20 연결만, 온톨로지 변경 미반영과 v0.8 유지, 세부영역은 반영 제안으로만). [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과 기준). 남은 지적은 국소 수정 6건이다: ref-782 각주 발행일(2026 → 2026-04), 아이디어 페이지·업무 분해·배정 설계 초안의 프런트매터 sources 누락, 단계 4 상태 줄 숫자(열린 14·답한 2), 아이디어 페이지 VDA 5050 문장의 태그 상향, 6절 전환 줄의 열린 질문 범위(q4-16까지). 참고(수정 지시 아님): '사람 확인과 LLM 판정자' 소절과 아이디어 페이지의 사람 확인 연결 문장은 주장이 아닌 연결 문장이라 태그 없이 기존 각주만 두었다. 트랙 판정은 1차 값을 유지한다.
-- 트랙 검사(track_checks): {"standard_sources_ok": true, "vendor_claims_tagged": true, "ontology_changes_grounded": false, "backlog_duplicates": [], "stage_tag_issues": [], "completeness_wording_ok": true, "stage_complete": false, "stage_transition_approved": false}
+    - 트랙 개요(docs/tracks/nl-task-chatbot/index.md) 6절 replace 패치: 입력의 현재 게시본(version 14)의 6절을 기준으로 다시 쓴다. 실행 2026-09-25-98·99 관련 서술(초안 변경 없음 목록의 98·99, 6절 '평가 지표'·'검증 절차' 소절, 79·98·99 가 뒤 단계를 다뤘다는 문장)을 지우지 말고 유지한 채 실행 2026-09-25-81(q4-02 답, '검증 방법별로 잡는 오류' 소절, '검증 기록' 재제안이 초안 6절 질문으로 남음)만 덧붙인다. 프런트매터 version 은 15 로 둔다. 이유: 현재 패치는 옛 판(v13) 기준이어서 게시된 98·99 실행 내용을 지운다(이전 지시에 없던 새 문제).
+    - 아이디어 2 페이지(docs/ideas/nl-task-chatbot.md): 5절 append 패치는 현재 게시본(version 15, 6절에 평가 지표·검증 절차 소절이 있는 판)에 적용하고, 6절과 auto 영역 내용은 게시본 그대로 둔다. version 은 16 으로 한다. 이유: 산출본이 옛 판(v13)을 바탕으로 해 version 14·6절 '아직 조사되지 않음'이 되어 있다(이전 지시에 없던 새 문제).
+    - 아이디어 2 페이지 프런트매터 sources: 게시본의 목록(ref-730~ref-746 포함)을 유지하고 이번 소절이 인용한 ref-773, ref-362, ref-785, ref-777, ref-786, ref-416, ref-781, ref-713, ref-031, ref-459, ref-778, ref-782, ref-784, ref-697 가운데 없는 id 를 더한다 — 본문 각주와 프런트매터가 어긋난다.
+    - 업무 분해·배정 설계 초안 프런트매터 sources 에 6절 새 항목이 인용한 ref-773, ref-785, ref-777, ref-416, ref-781, ref-713, ref-459 를 더한다 — 본문 각주와 프런트매터가 어긋난다.
+    - 새 단계 5 질문의 id 를 q5-11 에서 q5-16 으로 고친다(backlog_updates, 단계 4 페이지 5절 표, 9절 이력 행, log_entry) — 백로그에 이미 다른 질문 q5-11~q5-15 가 있다.
+    - 단계 4 페이지 8절과 아이디어 2 페이지의 각주 정의 [^ref-782] 의 발행일을 '2026' 에서 '2026-04' 로 고친다 — 1차 지시(f16: 각주·reference_updates published 2026-04)가 reference_updates 에만 이행됐다.
+    - 단계 4 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)' 로 고친다 — 이번 실행이 q4-15·q4-16 을 더해 열린 질문 범위가 바뀌었고 log_entry 와도 맞춘다(1차 지시 문구 이후 생긴 차이).
+- 검증 노트: 판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 수정 후 재검증. 드리프트 없음(1차 수정 지시 14건은 본문에 이행됨), [분류원문] 보존, 섹션 순서 준수. 새로 찾은 문제: 트랙 개요 6절 패치와 아이디어 페이지 산출본이 실행 2026-09-25-98·99 반영 전 판을 바탕으로 해 게시된 내용을 지우거나 버전이 거꾸로 간다, 새 질문 q5-11 이 기존 백로그 id 와 겹친다, 아이디어·초안 페이지 프런트매터 sources 누락, ref-782 각주 발행일 미이행. 단계 4 페이지 상태 줄('열린 질문: 13건 · 답한 질문: 1건')은 H2 절 밖이라 패치로 고칠 수 없으므로 퍼블리셔가 열린 질문 14건·답한 질문 2건으로 갱신해야 한다(스토리텔러 요청과 같음). 단계 4 페이지와 아이디어 페이지에서 사람 확인 한계를 q4-01 로 잇는 연결 문장은 태그 없이 각주만 붙어 있으나 주장이 아닌 연결 문장으로 본다.
+- 트랙 검사(track_checks): {"standard_sources_ok": true, "vendor_claims_tagged": true, "ontology_changes_grounded": false, "backlog_duplicates": ["q5-11(새 질문 '물류 지시에 오류를 주입한 시험 세트로 … 오류 포착률과 확인 비용을 어떻게 재는가?' 의 id 가 기존 q5-11 과 충돌 — 질문 내용은 중복이 아니므로 q5-16 으로 재번호)"], "stage_tag_issues": [], "completeness_wording_ok": true, "stage_complete": false, "stage_transition_approved": false}
 
 이전 초안(runs/<run_id>/pages.json, pages/)과 2차 판정(verification2.json)은 입력에 있다. storyteller.md 9절대로 이행하고 모든 페이지의 content 를 포함한 전체 pages.json 을 다시 반환한다.
