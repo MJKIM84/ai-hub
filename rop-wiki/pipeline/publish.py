@@ -888,6 +888,10 @@ class Publisher:
                         txt = existing
                     new_secs.append((h, txt))
                 body = "\n\n".join(([new_secs[0][1]] if new_secs[0][1] else []) + [f"## {h}\n\n{t}" for h, t in new_secs[1:]]) + "\n"
+                # 한 줄 정의를 바꾸면 옛 정의의 각주 참조가 사라진다. 참조가 없는 각주 정의는 엄격 빌드가 경고(실패)로 보므로 뺀다
+                # (3부 배치: glossary/isa-95.md 의 ref-002·cand-04 정의가 남아 사이트 빌드가 실패했다)
+                from lib import validate as _V
+                body = _V._drop_unused_defs(body)
                 fm.write(dst, meta, body)
                 self.notes.append(f"용어집 갱신: {rel}")
             else:

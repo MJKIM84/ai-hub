@@ -7,7 +7,9 @@
 
   python3 pipeline/run_batch.py --plan plan.yaml [--concurrency 4] [--allow-no-fetch] [--max-attempts 3] [--dry-run]
 
-plan.yaml: 항목 목록. 각 항목 키: run_type(필수), area, track, stage, question_ids, max_questions, category, topic, group, label.
+plan.yaml: 항목 목록. 각 항목 키: run_type(필수), area, track, stage, question_ids, max_questions, category, topic, group, label,
+  resume(이미 만든 실행 id — 에이전트 단계가 끝나기를 기다렸다가 게시만 한다. 배치를 다시 띄울 때 쓴다).
+퍼블리셔가 실패하면 게시만 한 번 다시 하고, 그래도 실패하면 항목을 새로 실행한다.
 결과: runs/batches/<batch_id>.json (항목별 실행 id·상태·시도 횟수·비용·소요 시간) 과 표준 출력 요약.
 한 항목이 max_attempts 번 연속 실패(보류·중단)하면 보류로 기록하고 다음 항목으로 넘어간다. 전체 배치는 멈추지 않는다.
 """
@@ -113,9 +115,44 @@ class Batch:
         say(f"점검 결과: {self.probe_file.read_text(encoding='utf-8')[:300] if self.probe_file.is_file() else '없음'}")
 
     # --- 항목 실행 -------------------------------------------------------------------------------
+    @staticmethod
+    def _run_alive(rid: str) -> bool:
+        """그 실행 id 로 도는 run_daily.sh 가 있는가(배치를 다시 띄울 때 넘겨받은 실행의 에이전트 단계가 끝났는지 본다)."""
+        p = subprocess.run(["pgrep", "-f", f"run_daily.sh .*--run-id {rid}( |$)"], capture_output=True, text=True)
+        return bool((p.stdout or "").strip())
+
+    def _adopt(self, idx: int, rid: str) -> None:
+        """plan 항목의 resume: 이미 만든 실행(에이전트 단계 진행 중이거나 끝남)을 넘겨받아 에이전트를 다시 돌리지 않고 게시한다."""
+        res = self.results[idx]
+        att = {"run_id": rid, "started": _now(), "agents_exit": None, "publish_exit": None, "adopted": True}
+        with self.lock:
+            res["attempts"].append(att)
+            res["run_id"] = rid
+            res["status"] = "넘겨받은 실행 대기"
+        self.save()
+        say(f"[{idx}] {res['label']} → 기존 실행 {rid} 를 넘겨받음(에이전트 단계가 끝나기를 기다린다)")
+        while self._run_alive(rid):
+            time.sleep(15)
+        rd = runs.find_run_dir(rid, self.settings)
+        ok = bool(rd) and (rd / "verification2.json").is_file() and not runs.is_parked(rid, self.settings)
+        att["agents_exit"] = 0 if ok else 2
+        att["agents_done"] = _now()
+        if ok:
+            with self.lock:
+                res["status"] = "퍼블리셔 대기"
+                self.publish_q.append((idx, rid))
+                self.publish_cv.notify_all()
+            say(f"[{idx}] {rid} 넘겨받은 실행의 에이전트 단계 완료 → 퍼블리셔 대기")
+        else:
+            say(f"[{idx}] {rid} 넘겨받은 실행이 2차 검증까지 끝나지 않았거나 보류됐다 — 새로 실행한다")
+            self._after_attempt(idx, ok=False, why="넘겨받은 실행 미완료")
+        self.save()
+
     def _run_agents(self, idx: int) -> None:
         it = self.plan[idx]
         res = self.results[idx]
+        if it.get("resume") and not res["attempts"]:
+            return self._adopt(idx, str(it["resume"]))
         rid = reserve_run_id(self.day, self.settings)
         shutil.copy(self.probe_file, ROOT / "runs" / rid / "probe.json")
         att = {"run_id": rid, "started": _now(), "agents_exit": None, "publish_exit": None}
@@ -185,6 +222,16 @@ class Batch:
             with open(log_path, "w", encoding="utf-8") as fh:
                 p = subprocess.run(["bash", "pipeline/run_daily.sh", "--resume", rid, "--step", "publish"], cwd=str(ROOT),
                                    stdout=fh, stderr=subprocess.STDOUT)
+            if p.returncode != 0:
+                # 퍼블리셔 실패는 먼저 게시만 한 번 다시 한다(일시적 원인 — 동시 파일 변화 등 — 이면 에이전트 단계를 다시 돌릴 필요가 없다).
+                # 두 번째도 실패하면 이 시도를 실패로 보고 항목을 새로 실행한다
+                say(f"[{idx}] {rid} 퍼블리셔 실패(exit {p.returncode}) — 게시만 한 번 다시 시도")
+                time.sleep(15)
+                with open(log_path, "a", encoding="utf-8") as fh:
+                    fh.write("\n\n===== 게시 재시도 =====\n")
+                    fh.flush()
+                    p = subprocess.run(["bash", "pipeline/run_daily.sh", "--resume", rid, "--step", "publish"], cwd=str(ROOT),
+                                       stdout=fh, stderr=subprocess.STDOUT)
             att = self.results[idx]["attempts"][-1]
             att["publish_exit"] = p.returncode
             att["published_at"] = _now()

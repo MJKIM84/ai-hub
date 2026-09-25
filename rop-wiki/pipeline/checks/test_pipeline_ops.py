@@ -100,17 +100,18 @@ class TestValidate(unittest.TestCase):
 
     def test_split_name_collision_gets_suffix(self):
         text = _area_page({"6. 대표 접근법과 기술": "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(250))})
-        taken = paths.DOCS / "topics" / "2099" / "2099-01-01-area07-s6.md"
-        taken.parent.mkdir(parents=True, exist_ok=True)
-        taken.write_text("x", encoding="utf-8")
-        try:
-            _, topics = V.split_oversized_area(paths.area_repo_path(7), text, 4000, [], "2099-01-01-01", "2099-01-01")
-        finally:
-            taken.unlink()
+        # 실제 docs/ 를 건드리지 않는다(배치 퍼블리셔가 docs 를 검사하는 중에 임시 파일이 생겼다 사라지면 게시가 실패한다).
+        # 이름 충돌 검사는 paths.DOCS 기준이므로 임시 폴더로 바꿔 끼운다
+        orig = paths.DOCS
+        with tempfile.TemporaryDirectory() as td:
+            taken = Path(td) / "topics" / "2099" / "2099-01-01-area07-s6.md"
+            taken.parent.mkdir(parents=True)
+            taken.write_text("x", encoding="utf-8")
+            paths.DOCS = Path(td)
             try:
-                taken.parent.rmdir()
-            except OSError:
-                pass
+                _, topics = V.split_oversized_area(paths.area_repo_path(7), text, 4000, [], "2099-01-01-01", "2099-01-01")
+            finally:
+                paths.DOCS = orig
         self.assertEqual(topics[0]["path"], "docs/topics/2099/2099-01-01-area07-s6-2.md")
 
     def test_small_area_not_split(self):

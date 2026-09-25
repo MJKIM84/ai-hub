@@ -1,7 +1,7 @@
 {
-  "batch_id": "part3-areas",
+  "batch_id": "part3-areas-2",
   "date": "2026-09-25",
-  "updated": "2026-09-25 01:55:16",
+  "updated": "2026-09-25 02:00:43",
   "concurrency": 3,
   "items": [
     {
@@ -10,24 +10,26 @@
       "item": {
         "run_type": "area_deep_dive",
         "area": 1,
-        "label": "세부영역 1 영역 심화"
+        "label": "세부영역 1 영역 심화",
+        "resume": "2026-09-25-08"
       },
       "status": "에이전트 단계 진행",
       "attempts": [
         {
           "run_id": "2026-09-25-08",
-          "started": "2026-09-25 01:32:10",
+          "started": "2026-09-25 01:56:32",
           "agents_exit": 0,
           "publish_exit": 4,
-          "agents_done": "2026-09-25 01:54:15",
-          "published_at": "2026-09-25 01:54:43",
+          "adopted": true,
+          "agents_done": "2026-09-25 01:56:32",
+          "published_at": "2026-09-25 01:58:02",
           "cost_usd": 12.3677,
-          "duration_sec": 1333.8,
-          "end_state": "중단(퍼블리셔: 5단계 반영 뒤 프런트매터 검사 실패: Traceback (most recent call last):)"
+          "duration_sec": 1369.2,
+          "end_state": "중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!)"
         },
         {
           "run_id": "2026-09-25-13",
-          "started": "2026-09-25 01:54:46",
+          "started": "2026-09-25 01:58:05",
           "agents_exit": null,
           "publish_exit": null
         }
@@ -40,76 +42,68 @@
       "item": {
         "run_type": "area_deep_dive",
         "area": 2,
-        "label": "세부영역 2 영역 심화"
+        "label": "세부영역 2 영역 심화",
+        "resume": "2026-09-25-09"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-09",
-          "started": "2026-09-25 01:32:40",
-          "agents_exit": null,
-          "publish_exit": null
+          "started": "2026-09-25 01:56:52",
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "adopted": true,
+          "agents_done": "2026-09-25 02:00:07",
+          "published_at": "2026-09-25 02:00:40",
+          "cost_usd": 13.9083,
+          "duration_sec": 1652.6,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-09"
     },
     {
       "index": 2,
-      "label": "세부영역 3 영역 심화",
-      "item": {
-        "run_type": "area_deep_dive",
-        "area": 3,
-        "label": "세부영역 3 영역 심화"
-      },
-      "status": "게시",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-10",
-          "started": "2026-09-25 01:33:10",
-          "agents_exit": 0,
-          "publish_exit": 0,
-          "agents_done": "2026-09-25 01:54:17",
-          "published_at": "2026-09-25 01:55:14",
-          "cost_usd": 11.1584,
-          "duration_sec": 1281.2,
-          "end_state": "게시 완료"
-        }
-      ],
-      "run_id": "2026-09-25-10"
-    },
-    {
-      "index": 3,
       "label": "세부영역 4 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
         "area": 4,
-        "label": "세부영역 4 영역 심화"
+        "label": "세부영역 4 영역 심화",
+        "resume": "2026-09-25-14"
       },
-      "status": "에이전트 단계 진행",
+      "status": "넘겨받은 실행 대기",
       "attempts": [
         {
           "run_id": "2026-09-25-14",
-          "started": "2026-09-25 01:55:16",
+          "started": "2026-09-25 01:57:12",
           "agents_exit": null,
-          "publish_exit": null
+          "publish_exit": null,
+          "adopted": true
         }
       ],
       "run_id": "2026-09-25-14"
     },
     {
-      "index": 4,
+      "index": 3,
       "label": "세부영역 5 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
         "area": 5,
         "label": "세부영역 5 영역 심화"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-15",
+          "started": "2026-09-25 02:00:43",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-15"
     },
     {
-      "index": 5,
+      "index": 4,
       "label": "세부영역 6 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -121,7 +115,7 @@
       "run_id": null
     },
     {
-      "index": 6,
+      "index": 5,
       "label": "세부영역 8 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -133,7 +127,7 @@
       "run_id": null
     },
     {
-      "index": 7,
+      "index": 6,
       "label": "세부영역 9 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -145,7 +139,7 @@
       "run_id": null
     },
     {
-      "index": 8,
+      "index": 7,
       "label": "세부영역 10 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -157,7 +151,7 @@
       "run_id": null
     },
     {
-      "index": 9,
+      "index": 8,
       "label": "세부영역 11 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -169,7 +163,7 @@
       "run_id": null
     },
     {
-      "index": 10,
+      "index": 9,
       "label": "세부영역 12 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -181,7 +175,7 @@
       "run_id": null
     },
     {
-      "index": 11,
+      "index": 10,
       "label": "세부영역 13 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -193,7 +187,7 @@
       "run_id": null
     },
     {
-      "index": 12,
+      "index": 11,
       "label": "세부영역 14 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -205,7 +199,7 @@
       "run_id": null
     },
     {
-      "index": 13,
+      "index": 12,
       "label": "세부영역 15 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -217,7 +211,7 @@
       "run_id": null
     },
     {
-      "index": 14,
+      "index": 13,
       "label": "세부영역 16 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -229,7 +223,7 @@
       "run_id": null
     },
     {
-      "index": 15,
+      "index": 14,
       "label": "세부영역 17 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -241,7 +235,7 @@
       "run_id": null
     },
     {
-      "index": 16,
+      "index": 15,
       "label": "세부영역 18 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -253,7 +247,7 @@
       "run_id": null
     },
     {
-      "index": 17,
+      "index": 16,
       "label": "세부영역 19 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -265,7 +259,7 @@
       "run_id": null
     },
     {
-      "index": 18,
+      "index": 17,
       "label": "세부영역 20 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -277,7 +271,7 @@
       "run_id": null
     },
     {
-      "index": 19,
+      "index": 18,
       "label": "세부영역 21 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -289,7 +283,7 @@
       "run_id": null
     },
     {
-      "index": 20,
+      "index": 19,
       "label": "세부영역 22 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -301,7 +295,7 @@
       "run_id": null
     },
     {
-      "index": 21,
+      "index": 20,
       "label": "세부영역 23 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -313,7 +307,7 @@
       "run_id": null
     },
     {
-      "index": 22,
+      "index": 21,
       "label": "세부영역 24 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -325,7 +319,7 @@
       "run_id": null
     },
     {
-      "index": 23,
+      "index": 22,
       "label": "세부영역 25 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -337,7 +331,7 @@
       "run_id": null
     },
     {
-      "index": 24,
+      "index": 23,
       "label": "세부영역 26 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -349,7 +343,7 @@
       "run_id": null
     },
     {
-      "index": 25,
+      "index": 24,
       "label": "세부영역 27 영역 심화",
       "item": {
         "run_type": "area_deep_dive",
@@ -361,7 +355,7 @@
       "run_id": null
     },
     {
-      "index": 26,
+      "index": 25,
       "label": "세부영역 28 영역 심화",
       "item": {
         "run_type": "area_deep_dive",

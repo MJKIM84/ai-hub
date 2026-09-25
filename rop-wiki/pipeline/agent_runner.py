@@ -906,7 +906,18 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         _add(inputs, f"{rel_run}/research.json")
         _add(inputs, f"{rel_run}/verification.json")
         pages_json = runs.read_json(rd / "pages.json", {}) or {}
-        _add(inputs, f"{rel_run}/pages.json", json.dumps(pages_json, ensure_ascii=False, indent=2))
+        # 페이지 본문(content·patches)은 바로 아래 runs/<id>/pages/ 의 완성 페이지로 주므로 pages.json 에서는 자리 표시로 바꾼다(같은 본문이
+        # 두 번 들어가 2차 검증 프롬프트가 30만~50만 자가 됐다. 3부 배치 첫 트랙 실행)
+        slim = json.loads(json.dumps(pages_json, ensure_ascii=False))
+        for pg in slim.get("pages", []):
+            rel_pg = paths.docs_rel(pg.get("path", ""))
+            if pg.get("content"):
+                pg["content"] = f"(본문 생략 — 입력 {rel_run}/pages/{rel_pg} 의 완성 페이지를 본다)"
+            for pt in pg.get("patches") or []:
+                if pt.get("content"):
+                    pt["content"] = f"(절 본문 생략 — {rel_run}/pages/{rel_pg} 의 해당 절을 본다)"
+        _add(inputs, f"{rel_run}/pages.json", json.dumps(slim, ensure_ascii=False, indent=2))
+        _add(inputs, f"{rel_run}/format_check.md")
         page_types: list[str] = []
         weekly_page = False
         for pg in pages_json.get("pages", []):
@@ -926,14 +937,8 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
                 _add(inputs, pg["path"])
         if target_rel and not any(l == target_rel for l, _ in inputs):
             _add(inputs, target_rel)
-        # 6.2 2차 검증 항목 "템플릿 섹션 순서 준수": 스토리텔러가 받은 것과 같은 기준 템플릿(실행 유형별 + pages.json 이 만진 페이지 유형별)을 준다
-        tpls: list[str] = list(TEMPLATES_BY_RUN_TYPE.get(rt, []))
-        for t in page_types:
-            f = TEMPLATE_BY_PAGE_TYPE.get(t)
-            if f and f not in tpls:
-                tpls.append(f)
-        for tpl in tpls:
-            _add(inputs, f"templates/{tpl}")
+        # 6.2 2차 검증 항목 "템플릿 섹션 순서 준수"는 형식 검증 코드(validate_run.py, 템플릿 H2 대조)가 이미 통과시켰다(검증 에이전트 부록 R-3).
+        # 결과는 위 format_check.md 로 준다. 템플릿 전문(유형마다 약 1만 자)은 2차 검증에 넣지 않는다(운영 전환 1-5 비용)
         if weekly_page or rt == "weekly_review":
             spec = _weekly_section_spec()   # 주간 정리 페이지의 기준 절 구성(templates/weekly-log.md 또는 storyteller.md 6절)
             if spec:
