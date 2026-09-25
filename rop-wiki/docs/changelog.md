@@ -857,6 +857,7 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| deploy-2026-09-25 | 배포 | docs/ | 라이브 배포: GitHub Pages(https://mjkim84.github.io/ai-hub/), GitHub Actions로 자동 빌드·배포 |
 | 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 {#q5-02} 소제목 신설: 네 층 가상 시험 구성·한계), 후속 질문 q5-13~q5-15, 2·4·5·6·8·9절 갱신, 7절에 22. 시뮬레이션·예측용 디지털 트윈 추가. 2차: 단계 상태 줄을 열린 질문 12건·답한 질문 2건으로 고치고 SafeAgentBench 10% 출처 문장을 README·초록으로 나눠 고침(상태 줄 때문에 전체 content 로 보냄) |
 | 2026-09-25-99 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절에 '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절 신설(네 층 구성 표·Mermaid 도식, f18~f21 추정, 근거 f1·f2·f4·f7(강등)·f8·f9·f10·f15), 새 각주 11건(2차 재실행에서 변경 없음) |
 | 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 2차: '6. 살아있는 산출물 링크' 절만 갱신 — 아이디어 2 항목에 q5-02 답(검증 절차 소절) 반영과 실행 2026-09-25-99 의 지정 질문 처리 서술 추가, 초안 변경 없음 실행 목록에 2026-09-25-99 추가(현재 단계 표기·상태 줄은 그대로) |

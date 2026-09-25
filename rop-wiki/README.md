@@ -251,6 +251,18 @@ python3 pipeline/lib/notify.py --enable deploy && bash pipeline/deploy_site.sh -
 sed -i 's/^git_push: false/git_push: true/' config/settings.yaml                        # 퍼블리셔 커밋 뒤 원격 푸시
 ```
 
+## 5B. 배포 (라이브, 2026-09-25)
+
+이 위키는 GitHub Pages 로 공개돼 있다.
+
+- **공개 주소**: <https://mjkim84.github.io/ai-hub/>
+- **배포 방식**: GitHub Actions(`.github/workflows/rop-wiki-pages.yml`). `main` 브랜치의 `rop-wiki/**` 변경이 푸시되면 자동으로 빌드·배포하고, Actions 탭에서 "rop-wiki pages" 워크플로를 수동 실행(`workflow_dispatch`)할 수도 있다. `config/ops.yaml` 의 `deploy.enabled: true`, `deploy.method: actions` 가 이 방식을 가리킨다(다른 방식인 `pipeline/deploy_site.sh` 의 `mkdocs gh-deploy` 는 `deploy.method` 가 `actions` 인 동안 아무것도 하지 않는다 — 두 방식을 동시에 켜지 않는다).
+- **수동 재배포 명령**: 저장소에 대한 GitHub API·CLI 권한이 있는 사람이 Actions 탭 → "rop-wiki pages" → "Run workflow" (또는 `gh workflow run rop-wiki-pages.yml --ref main`)로 다시 실행한다. 로컬에서 빌드만 확인하려면 `cd rop-wiki && mkdocs build --strict`.
+- **안내 배너 끄는 법**: `config/ops.yaml` 의 `publish.show_verification_banner` 를 `false` 로 바꾸고 `python3 pipeline/scaffold.py`(또는 아무 퍼블리셔 실행)로 `mkdocs.yml` 을 다시 생성한 뒤 커밋·푸시한다(`mkdocs.yml` 은 `pipeline/lib/nav.py write_mkdocs_yml()` 이 매번 다시 쓰므로 이 값 하나만 바꾸면 된다 — `mkdocs.yml` 을 손으로 고치지 않는다).
+- **로그를 다시 공개하는 법**: `config/ops.yaml` 의 `publish.logs_public` 를 `true` 로 바꾸고 같은 방식으로 `mkdocs.yml` 을 다시 생성해 커밋·푸시한다. `docs/logs/` 와 `docs/metrics.md` 가 다시 빌드·내비게이션에 들어가고, `changelog.md` 로 돌려놨던 링크들도 다음 퍼블리셔 실행에서 원래 대상으로 돌아간다(`pipeline/lib/render.py` 의 `_link()` 가 `publish.logs_public` 를 따른다).
+- **Pages 끄는 법(비공개로 되돌리기)**: 저장소 Settings → Pages → "Unpublish site"(또는 Build and deployment 의 Source 를 다른 값으로 바꾸기). 워크플로 자체를 끄려면 `.github/workflows/rop-wiki-pages.yml` 을 지우거나 `config/ops.yaml` 의 `deploy.enabled` 를 `false` 로 되돌린다.
+- **일일 파이프라인 결과가 사이트에 반영되려면**: 퍼블리셔가 로컬에 커밋하는 것과 별개로, `config/settings.yaml` 의 `git_push` 가 `true` 여야 원격에 푸시되고(현재 **`false`로 꺼져 있다** — 5A절 "켜는 방법" 참고), 그 푸시가 `main` 의 `rop-wiki/**` 를 건드려야 워크플로가 다시 돈다. 지금은 이 저장소 소유자가 직접 병합·푸시해야 배포에 반영된다.
+
 ## 6. 검사 스크립트
 
 ```bash
