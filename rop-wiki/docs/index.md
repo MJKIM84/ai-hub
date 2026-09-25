@@ -69,7 +69,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 45 | q2-01 — 제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-01)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 34 | q3-02 — 지시 해석 → 작업 분해 → 능력 질의 → 배정 → 스케줄링 → 진행 관리의 흐름에서 단계마다 입력·출력은 무엇이고, 규칙·최적화처럼 결과가 정해진(결정적) 구성 요소는 어디에 두는가? ([답](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-02)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
+| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 36 | q3-03 — 온톨로지 질의가 수행 가능한 로봇을 찾지 못하거나 후보를 여럿 낼 때, 챗봇은 무엇을 사용자에게 되묻고 무엇을 스스로 정하는가? ([답](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 30 | q4-02 — 도면과 현장의 차이(개보수, 가구·랙 배치, 임시 장애물)를 어떻게 찾아 지도에 반영하는가? ([답](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-02)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 

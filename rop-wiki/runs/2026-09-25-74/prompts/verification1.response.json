@@ -1,0 +1,386 @@
+{
+  "duration_api_ms": 251228,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.2805168,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 403264,
+    "cache_read_input_tokens": 1880569,
+    "output_tokens": 22897,
+    "output_tokens_details": {
+      "thinking_tokens": 4853
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 403264,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 8170,
+        "cache_read_input_tokens": 460116,
+        "cache_creation_input_tokens": 19302,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 19302
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 116696,
+      "outputTokens": 4723,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 8,
+      "costUSD": 0.22031100000000003,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 22897,
+      "cacheReadInputTokens": 1880569,
+      "cacheCreationInputTokens": 403264,
+      "webSearchRequests": 0,
+      "costUSD": 4.0602058,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4853,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 17,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-74\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw Dispatcher.cpp 열람. 무입찰 시 FailedToAssign, 오류 코드 10, 'No fleet adapters offered a bid for task', 로그 'Dispatching failed, and the task will not be performed' 일치. 단일 공식 소스.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: task_types.md raw 열람, 작업 유형 수용 설정이 없으면 입찰하지 않는다는 문장과 로그 예 일치. ref-105 템플릿 설정은 이전 실행에서 열람 확인. 두 출처 모두 Open Robotics 계열로 독립 아님.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: task_state.json dispatch 필드(상태 값 5종, assignment, errors)는 이전 실행(2026-09-25-51·71)에서 열람 확인된 내용과 일치. 단일 출처.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인·정정 필요: Dispatcher.cpp 는 Auctioneer::make 에 QuickestFinishEvaluator 를 넘기고 공개 메서드 evaluator()로 교체 가능. 그러나 Auctioneer.hpp 문서 주석은 evaluator 미지정 시 기본을 LeastFleetDiffCostEvaluator 로 적고, 사용자 정의 Evaluator 추상 인터페이스가 있다. '기본 평가기'는 디스패처 생성 시 지정값으로 한정해 서술하도록 수정 지시. 세 평가기 순위 기준 문서화 없음(미확인).\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: task_request.json raw 열람, fleet_name(string 또는 array) 설명 문구와 필수 필드 category·description 일치.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-031 6.1.4.2(UNSUPPORTED_PARAMETER, CRITICAL)·6.1.4.3(INVALID_ORDER_ACTION, WARNING, 최대 인상 높이 예)·6.1.4.9(MOBILE_ROBOT_NOT_AVAILABLE, WARNING)와 오류 표 일치. '능력 부족 대 일시적 가용 불가 구분'은 해석이므로 명세의 오류 유형 구분으로 한정. 주문 거절은 로봇 쪽 기능(연계 대상).\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 요약 범위). ref-236 은 이전 실행에서 검색 결과로 실재 확인된 재사용 출처. 저자 미확인, ReasonerOutput 필드 구성 미확인.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(리서치가 W3C data-shapes 저장소 편집자 초안을 raw 로 열람). 권고안(2017-07) 본문이 아니라 편집자 초안이므로 각주에 '편집자 초안 기준' 병기 지시. 검증 예산상 재열람하지 않음.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 AAAI OJS 페이지·저자 5인·ICAPS 2010 pp.81–88 실재 확인, 초록의 'excuse 형식화와 알고리즘' 일치.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 1903.08218 실재·저자(Sreedharan, Srivastava, Smith, Kambhampati)·계층적 추상화로 간결한 해결 불가 사유 생성 확인. 랜드마크·엘리베이터 예시는 리서치 스니펫 범위.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 arXiv 2308.12923·INFOR(T&F) 게재 실재, GPT-4 와 해법기 연결로 IIS 식별·불능 원인 설명·수정 제안 일치.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 저자 Schneider·Wu·Das·Chernova, IEEE RA-L 9권(2024) 게재, 22명 대면 사용자 연구·수색·구조 영역 확인. '운영자' 연구라는 표현과 '명세 오류 식별·해결 유의 향상'은 이번 검색 요약에 나타나지 않아 저자 보고로 한정하고 조건(22명, 수색·구조 영역)을 병기하도록 지시.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2404.11817(저자 Shida·Jimbo·Odashima·Matsubara, IEEE/SICE SII 2025) 실재, 운반 불가 작업의 교착과 작업별 배제 수준 학습 일치. 로봇 운반 능력은 연계 대상, 배정 규칙 사례로만.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-30 검증 통과 내용). 이번 실행 원문 미열람. 프로젝트 페이지·논문은 같은 저자 계열로 독립 교차 아님.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-30 검증 통과). 이번 실행 원문 미열람. 같은 저자 계열.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 Liang·Zhang·Fisac(Princeton), NeurIPS 2024, 안전 계획 지식 기반·등각 예측 결합과 불필요한 되묻기 감소 확인. 저자 보고.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 arXiv 2511.08798, 저자 Suri 외(UMD·Adobe), 명세·모델 불확실성 분리, EVPI 와 비용, 커버리지 7–39%·질문 1.5–2.7배 감소, ClarifyBench 확인. 'ACL 2026 Findings' 게재는 확인되지 않아 '게재처 미확인'으로 고치도록 지시. 수치는 저자 보고.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. fallback-handoff.mdx raw 열람: 문턱 0.7, 두 단계 폴백(의도 확인 → 거부 시 재진술) 일치. 그러나 최종 폴백의 기본 동작은 utter_default 발화와 대화 상태 초기화이고, 사람 인계는 사용자 정의 동작으로 구성하는 예로 제시된다. '보통 사람 상담원에게 넘긴다'는 과장.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: README raw 열람. plan/infeasible/clarify 세 응답, 함정 여섯 계열(무함정 제외), pyperplan 차등 시험 등 기계 검증 정답, 'No model separates a missing capability from an unreachable goal' 문장 일치. 개인 연구자·Zenodo 프리프린트·동료심사 전이므로 신뢰도 low 유지, 결론의 근거가 아닌 참고 사례로만 사용.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-66 검증 통과). 이번 실행 원문 미열람, 저자 보고.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 Scientific Reports 15권 34326(2025), DOI 10.1038/s41598-025-16649-3, 광고 능력과 운용 능력을 함께 표현하는 RCO 확인. SPARQL 비교는 리서치 스니펫 범위. 저자 미확인.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(이 위키의 종합). 원인 네 갈래 분류를 제시한 단일 출처 없음을 본문에 밝히게 한다. 근거 f18 강등 반영(사람 인계는 선택 구성).\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(이 위키의 종합). 물류 조건 평가 없음 명시. 근거 f4 의 기본 평가기 정정 반영.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 평가 기준을 누가 정하는지는 출처에 없다는 점을 본문에 남긴다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(설명용 가정 사례임을 명시). 사람 작업자 처리 전환은 18. 사람–로봇 협업·운영 인터페이스의 선택지로만.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 검색 범위 관찰이며 부재 확인 아님.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f1·f3 의 dispatch failed_to_assign·errors 는 업무 분해·배정 설계 초안의 진행 상태 외부 표현 메모(v0.5)와 겹침 — 기존 각주 ref-111 재사용\",\"f4·f5 의 Open-RMF 입찰 비교는 단계 3 q3-02 소절과 13. 작업 배정 — MRTA 5절의 ref-376 서술과 겹침 — 기존 각주 재사용\",\"f14·f15 는 단계 1 q1-04 와 아이디어 페이지 3절의 CLARA·KnowNo 서술 재인용 — 기존 각주 ref-350~ref-353 재사용\",\"f21 은 열린 질문 oq-024(선언 능력 대 관측 능력)와 관련 — 해결 인정은 하지 않음\",\"백로그 기존 중복 q3-12·q3-13, q4-09·q4-10, q3-09·q3-10, q5-05·q5-06, q1-05·q1-06 는 이번 새 질문과 무관한 기존 정리 과제\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f4: '기본 평가기는 QuickestFinishEvaluator'를 'Open-RMF 디스패처는 경매자를 만들 때 QuickestFinishEvaluator 를 지정하며(Dispatcher.cpp), Auctioneer.hpp 문서 주석은 평가기를 지정하지 않을 때의 기본을 LeastFleetDiffCostEvaluator 로 적는다'로 두 출처 기준을 병기하고, 사용자 정의 평가기 추상 인터페이스가 있다는 점과 세 평가기의 순위 기준은 미확인임을 남긴다 — 헤더 문서와 디스패처 코드의 기본값 표현이 다르다.\",\"f18: [사실] → [추정]으로 강등하고 문장을 'Rasa 는 의도 분류 신뢰도가 문턱(설정 예 0.7) 아래면 폴백으로 넘어가고, 두 단계 폴백에서 추정한 의도를 확인받고 거부되면 재진술을 요청하며, 최종 폴백의 기본 동작은 기본 응답 발화와 대화 상태 초기화이고 사람 인계는 사용자 정의 동작으로 구성하는 예로 제시된다'로 고친다 — 원문은 사람 인계를 기본이 아닌 선택 구성으로 적는다. f22·f25 의 '사람 인계' 근거 서술도 같은 범위로 맞춘다.\",\"f12: '운영자 사용자 연구'를 '22명 참가 대면 사용자 연구(수색·구조 영역, IEEE RA-L 9권 2024)'로 바꾸고, 명세 오류 식별·해결 향상은 저자 보고임을 병기한다 — 확인된 연구 조건이 운영자·물류가 아니다.\",\"f17: 'ACL 2026 Findings' 게재 표기를 지우고 'arXiv 2511.08798, 게재처 미확인'으로 적는다(저자 표기는 'Suri, M. 외(University of Maryland·Adobe Research)'로 쓸 수 있다) — 게재처는 검색에서 확인되지 않았다.\",\"f19: 본문에 '개인 연구자가 공개한 동료심사 전 벤치마크(Zenodo 프리프린트)'임을 유지하고 q3-03 결론(f22·f23)의 근거 목록에 넣지 않으며, 평가 모델명·수치를 쓰지 않는다 — 출처 신뢰도 low.\",\"f6: '능력 부족과 일시적 가용 불가를 서로 다른 오류로 보고한다'를 '수행할 수 없는 동작(INVALID_ORDER_ACTION, WARNING), 쓸 수 없는 선택 필드(UNSUPPORTED_PARAMETER, CRITICAL), 새 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE, WARNING)를 서로 다른 오류 유형으로 정의한다'로 명세 기준 서술로 고치고, 주문 거절은 로봇 쪽 기능이며 ROP 는 그 오류를 받아 원인을 구분·설명하는 쪽임을 밝힌다 — 범위 경계.\",\"f13: 운반 불가 작업의 판정·학습은 로봇 쪽 운반 능력과 맞닿은 연계 대상임을 밝히고 배정에서 실행 불가 작업을 일시 배제하는 규칙 사례로만 쓴다(IEEE/SICE SII 2025 게재 병기) — 범위 경계.\",\"ref-725 각주: 발행일 2017-07 은 권고안 기준이고 열람한 것은 W3C data-shapes 저장소 편집자 초안임을 제목 뒤나 본문에 병기한다 — 권고안 문구와의 일치는 미확인이다.\",\"각주: 이번 실행에서 원문을 열지 못한 출처(ref-236, ref-350, ref-351, ref-352, ref-353, ref-598, ref-717, ref-718, ref-719, ref-720, ref-721, ref-722, ref-723, ref-726)의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다 — 원문 열람 차단 환경.\",\"온톨로지 변경 '배정 실패 (Assignment Failure)' 추가는 반영하지 않고 업무 분해·배정 설계 초안 6절 미해결 모델링 질문으로 둔다(근거 f1·f3·f6·f22 병기, 진행 상태의 dispatch 값 failed_to_assign·errors 및 배정 개념과의 경계, 사유 유형 값이 추정 근거라는 점) — 기존 개념과 경계가 겹치고 사유 유형이 추정이다. 초안 버전은 v0.7 그대로 두고 초안 페이지는 6절만 갱신한다.\",\"아이디어 2. 자연어 업무 지시 챗봇 5절: '온톨로지 질의 결과에 따른 되묻기' 소절에서 다른 아이디어와의 연결(아이디어 1 의 선언·운용 능력 f21, 아이디어 3 의 장소 슬롯)은 구조 언급 수준임을 밝히고 완료 조건 충족으로 적지 않는다 — 단계 완료 조건 미충족.\",\"세부영역 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영, 5. 로봇 능력·작업 온톨로지 페이지는 직접 고치지 않고 area_reflection_proposals 로만 남긴다(27. AI·학습·적응과 모델 운영 반영 제안의 f19 는 신뢰도 low 참고 사례로 표시) — 트랙은 분류를 바꾸지 않는다.\",\"단계 3 페이지: q3-03 을 답함(답 위치 #q3-03, 3절 소제목 '### q3-03 … {#q3-03}')으로 바꾸고, 6절은 '다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 미완, 실험 계획 없음, 열린 질문 q3-04~q3-13)'로 두며 상태 줄의 열린·답한 질문 수를 2절 표와 맞춘다 — 단계 전환 미승인.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 25건, 미확인 1건, 교차 확인 0건. 강등: f18 사실 → 추정(Rasa 최종 폴백의 기본은 기본 응답과 대화 초기화이고 사람 인계는 선택 구성). 원문 미열람 출처: ref-236, ref-350, ref-351, ref-352, ref-353, ref-598, ref-717, ref-718, ref-719, ref-720, ref-721, ref-722, ref-723, ref-726. 원문을 연 출처는 raw.githubusercontent.com 경유 ref-713·ref-714·ref-715·ref-716·ref-724·ref-725(편집자 초안)·ref-105·ref-111·ref-125·ref-376과 입력 원문 ref-031이며, 검증자가 ref-713·ref-714·ref-715·ref-716·ref-724·ref-125를 다시 열어 확인했다. 브리프의 ref-031 은 fetched_via github_raw·fetch_url null 로 적혔으나 한계 항목은 입력 원문(inbox)으로 적어 표기가 어긋난다. 검증 검색 8회(리서치 17회 포함 25/40). 주의: q3-03 의 답(후보 없음 원인 네 갈래와 되묻기 범위, 후보 여럿일 때 자동 결정과 되묻기의 경계)은 이 위키의 종합이고 근거가 물류 플릿 조건이 아니며, Open-RMF 기본 평가기는 디스패처 코드(QuickestFinish)와 헤더 문서(LeastFleetDiffCost)의 표현이 달라 병기해야 한다. Plan-Failure-Bench(f19)는 개인 연구자의 동료심사 전 자료다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 개념 '배정 실패'(f1·f3·f6·f22, 진행 상태·배정과 경계 중복, 사유 유형 추정) → 초안 6절 질문. 단계 완료 조건: 미충족(부족: 아이디어 2 5절의 다른 아이디어와의 연결, 실험 페이지의 실험 계획; 막힌 질문 q3-04~q3-13 열림). 단계 전환: 미승인(완료 조건 미충족·열린 질문 남음).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-74",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw Dispatcher.cpp 열람. 무입찰 시 FailedToAssign, 오류 코드 10, 'No fleet adapters offered a bid for task', 로그 'Dispatching failed, and the task will not be performed' 일치. 단일 공식 소스."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: task_types.md raw 열람, 작업 유형 수용 설정이 없으면 입찰하지 않는다는 문장과 로그 예 일치. ref-105 템플릿 설정은 이전 실행에서 열람 확인. 두 출처 모두 Open Robotics 계열로 독립 아님."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: task_state.json dispatch 필드(상태 값 5종, assignment, errors)는 이전 실행(2026-09-25-51·71)에서 열람 확인된 내용과 일치. 단일 출처."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인·정정 필요: Dispatcher.cpp 는 Auctioneer::make 에 QuickestFinishEvaluator 를 넘기고 공개 메서드 evaluator()로 교체 가능. 그러나 Auctioneer.hpp 문서 주석은 evaluator 미지정 시 기본을 LeastFleetDiffCostEvaluator 로 적고, 사용자 정의 Evaluator 추상 인터페이스가 있다. '기본 평가기'는 디스패처 생성 시 지정값으로 한정해 서술하도록 수정 지시. 세 평가기 순위 기준 문서화 없음(미확인)."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: task_request.json raw 열람, fleet_name(string 또는 array) 설명 문구와 필수 필드 category·description 일치."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-031 6.1.4.2(UNSUPPORTED_PARAMETER, CRITICAL)·6.1.4.3(INVALID_ORDER_ACTION, WARNING, 최대 인상 높이 예)·6.1.4.9(MOBILE_ROBOT_NOT_AVAILABLE, WARNING)와 오류 표 일치. '능력 부족 대 일시적 가용 불가 구분'은 해석이므로 명세의 오류 유형 구분으로 한정. 주문 거절은 로봇 쪽 기능(연계 대상)."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 요약 범위). ref-236 은 이전 실행에서 검색 결과로 실재 확인된 재사용 출처. 저자 미확인, ReasonerOutput 필드 구성 미확인."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(리서치가 W3C data-shapes 저장소 편집자 초안을 raw 로 열람). 권고안(2017-07) 본문이 아니라 편집자 초안이므로 각주에 '편집자 초안 기준' 병기 지시. 검증 예산상 재열람하지 않음."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 AAAI OJS 페이지·저자 5인·ICAPS 2010 pp.81–88 실재 확인, 초록의 'excuse 형식화와 알고리즘' 일치."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 1903.08218 실재·저자(Sreedharan, Srivastava, Smith, Kambhampati)·계층적 추상화로 간결한 해결 불가 사유 생성 확인. 랜드마크·엘리베이터 예시는 리서치 스니펫 범위."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 arXiv 2308.12923·INFOR(T&F) 게재 실재, GPT-4 와 해법기 연결로 IIS 식별·불능 원인 설명·수정 제안 일치."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 저자 Schneider·Wu·Das·Chernova, IEEE RA-L 9권(2024) 게재, 22명 대면 사용자 연구·수색·구조 영역 확인. '운영자' 연구라는 표현과 '명세 오류 식별·해결 유의 향상'은 이번 검색 요약에 나타나지 않아 저자 보고로 한정하고 조건(22명, 수색·구조 영역)을 병기하도록 지시."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2404.11817(저자 Shida·Jimbo·Odashima·Matsubara, IEEE/SICE SII 2025) 실재, 운반 불가 작업의 교착과 작업별 배제 수준 학습 일치. 로봇 운반 능력은 연계 대상, 배정 규칙 사례로만."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-30 검증 통과 내용). 이번 실행 원문 미열람. 프로젝트 페이지·논문은 같은 저자 계열로 독립 교차 아님."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-30 검증 통과). 이번 실행 원문 미열람. 같은 저자 계열."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 Liang·Zhang·Fisac(Princeton), NeurIPS 2024, 안전 계획 지식 기반·등각 예측 결합과 불필요한 되묻기 감소 확인. 저자 보고."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 arXiv 2511.08798, 저자 Suri 외(UMD·Adobe), 명세·모델 불확실성 분리, EVPI 와 비용, 커버리지 7–39%·질문 1.5–2.7배 감소, ClarifyBench 확인. 'ACL 2026 Findings' 게재는 확인되지 않아 '게재처 미확인'으로 고치도록 지시. 수치는 저자 보고."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. fallback-handoff.mdx raw 열람: 문턱 0.7, 두 단계 폴백(의도 확인 → 거부 시 재진술) 일치. 그러나 최종 폴백의 기본 동작은 utter_default 발화와 대화 상태 초기화이고, 사람 인계는 사용자 정의 동작으로 구성하는 예로 제시된다. '보통 사람 상담원에게 넘긴다'는 과장."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: README raw 열람. plan/infeasible/clarify 세 응답, 함정 여섯 계열(무함정 제외), pyperplan 차등 시험 등 기계 검증 정답, 'No model separates a missing capability from an unreachable goal' 문장 일치. 개인 연구자·Zenodo 프리프린트·동료심사 전이므로 신뢰도 low 유지, 결론의 근거가 아닌 참고 사례로만 사용."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-66 검증 통과). 이번 실행 원문 미열람, 저자 보고."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 Scientific Reports 15권 34326(2025), DOI 10.1038/s41598-025-16649-3, 광고 능력과 운용 능력을 함께 표현하는 RCO 확인. SPARQL 비교는 리서치 스니펫 범위. 저자 미확인."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(이 위키의 종합). 원인 네 갈래 분류를 제시한 단일 출처 없음을 본문에 밝히게 한다. 근거 f18 강등 반영(사람 인계는 선택 구성)."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(이 위키의 종합). 물류 조건 평가 없음 명시. 근거 f4 의 기본 평가기 정정 반영."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 평가 기준을 누가 정하는지는 출처에 없다는 점을 본문에 남긴다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(설명용 가정 사례임을 명시). 사람 작업자 처리 전환은 18. 사람–로봇 협업·운영 인터페이스의 선택지로만."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 검색 범위 관찰이며 부재 확인 아님."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f1·f3 의 dispatch failed_to_assign·errors 는 업무 분해·배정 설계 초안의 진행 상태 외부 표현 메모(v0.5)와 겹침 — 기존 각주 ref-111 재사용",
+        "f4·f5 의 Open-RMF 입찰 비교는 단계 3 q3-02 소절과 13. 작업 배정 — MRTA 5절의 ref-376 서술과 겹침 — 기존 각주 재사용",
+        "f14·f15 는 단계 1 q1-04 와 아이디어 페이지 3절의 CLARA·KnowNo 서술 재인용 — 기존 각주 ref-350~ref-353 재사용",
+        "f21 은 열린 질문 oq-024(선언 능력 대 관측 능력)와 관련 — 해결 인정은 하지 않음",
+        "백로그 기존 중복 q3-12·q3-13, q4-09·q4-10, q3-09·q3-10, q5-05·q5-06, q1-05·q1-06 는 이번 새 질문과 무관한 기존 정리 과제"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f4: '기본 평가기는 QuickestFinishEvaluator'를 'Open-RMF 디스패처는 경매자를 만들 때 QuickestFinishEvaluator 를 지정하며(Dispatcher.cpp), Auctioneer.hpp 문서 주석은 평가기를 지정하지 않을 때의 기본을 LeastFleetDiffCostEvaluator 로 적는다'로 두 출처 기준을 병기하고, 사용자 정의 평가기 추상 인터페이스가 있다는 점과 세 평가기의 순위 기준은 미확인임을 남긴다 — 헤더 문서와 디스패처 코드의 기본값 표현이 다르다.",
+      "f18: [사실] → [추정]으로 강등하고 문장을 'Rasa 는 의도 분류 신뢰도가 문턱(설정 예 0.7) 아래면 폴백으로 넘어가고, 두 단계 폴백에서 추정한 의도를 확인받고 거부되면 재진술을 요청하며, 최종 폴백의 기본 동작은 기본 응답 발화와 대화 상태 초기화이고 사람 인계는 사용자 정의 동작으로 구성하는 예로 제시된다'로 고친다 — 원문은 사람 인계를 기본이 아닌 선택 구성으로 적는다. f22·f25 의 '사람 인계' 근거 서술도 같은 범위로 맞춘다.",
+      "f12: '운영자 사용자 연구'를 '22명 참가 대면 사용자 연구(수색·구조 영역, IEEE RA-L 9권 2024)'로 바꾸고, 명세 오류 식별·해결 향상은 저자 보고임을 병기한다 — 확인된 연구 조건이 운영자·물류가 아니다.",
+      "f17: 'ACL 2026 Findings' 게재 표기를 지우고 'arXiv 2511.08798, 게재처 미확인'으로 적는다(저자 표기는 'Suri, M. 외(University of Maryland·Adobe Research)'로 쓸 수 있다) — 게재처는 검색에서 확인되지 않았다.",
+      "f19: 본문에 '개인 연구자가 공개한 동료심사 전 벤치마크(Zenodo 프리프린트)'임을 유지하고 q3-03 결론(f22·f23)의 근거 목록에 넣지 않으며, 평가 모델명·수치를 쓰지 않는다 — 출처 신뢰도 low.",
+      "f6: '능력 부족과 일시적 가용 불가를 서로 다른 오류로 보고한다'를 '수행할 수 없는 동작(INVALID_ORDER_ACTION, WARNING), 쓸 수 없는 선택 필드(UNSUPPORTED_PARAMETER, CRITICAL), 새 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE, WARNING)를 서로 다른 오류 유형으로 정의한다'로 명세 기준 서술로 고치고, 주문 거절은 로봇 쪽 기능이며 ROP 는 그 오류를 받아 원인을 구분·설명하는 쪽임을 밝힌다 — 범위 경계.",
+      "f13: 운반 불가 작업의 판정·학습은 로봇 쪽 운반 능력과 맞닿은 연계 대상임을 밝히고 배정에서 실행 불가 작업을 일시 배제하는 규칙 사례로만 쓴다(IEEE/SICE SII 2025 게재 병기) — 범위 경계.",
+      "ref-725 각주: 발행일 2017-07 은 권고안 기준이고 열람한 것은 W3C data-shapes 저장소 편집자 초안임을 제목 뒤나 본문에 병기한다 — 권고안 문구와의 일치는 미확인이다.",
+      "각주: 이번 실행에서 원문을 열지 못한 출처(ref-236, ref-350, ref-351, ref-352, ref-353, ref-598, ref-717, ref-718, ref-719, ref-720, ref-721, ref-722, ref-723, ref-726)의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다 — 원문 열람 차단 환경.",
+      "온톨로지 변경 '배정 실패 (Assignment Failure)' 추가는 반영하지 않고 업무 분해·배정 설계 초안 6절 미해결 모델링 질문으로 둔다(근거 f1·f3·f6·f22 병기, 진행 상태의 dispatch 값 failed_to_assign·errors 및 배정 개념과의 경계, 사유 유형 값이 추정 근거라는 점) — 기존 개념과 경계가 겹치고 사유 유형이 추정이다. 초안 버전은 v0.7 그대로 두고 초안 페이지는 6절만 갱신한다.",
+      "아이디어 2. 자연어 업무 지시 챗봇 5절: '온톨로지 질의 결과에 따른 되묻기' 소절에서 다른 아이디어와의 연결(아이디어 1 의 선언·운용 능력 f21, 아이디어 3 의 장소 슬롯)은 구조 언급 수준임을 밝히고 완료 조건 충족으로 적지 않는다 — 단계 완료 조건 미충족.",
+      "세부영역 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영, 5. 로봇 능력·작업 온톨로지 페이지는 직접 고치지 않고 area_reflection_proposals 로만 남긴다(27. AI·학습·적응과 모델 운영 반영 제안의 f19 는 신뢰도 low 참고 사례로 표시) — 트랙은 분류를 바꾸지 않는다.",
+      "단계 3 페이지: q3-03 을 답함(답 위치 #q3-03, 3절 소제목 '### q3-03 … {#q3-03}')으로 바꾸고, 6절은 '다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 미완, 실험 계획 없음, 열린 질문 q3-04~q3-13)'로 두며 상태 줄의 열린·답한 질문 수를 2절 표와 맞춘다 — 단계 전환 미승인."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 25건, 미확인 1건, 교차 확인 0건. 강등: f18 사실 → 추정(Rasa 최종 폴백의 기본은 기본 응답과 대화 초기화이고 사람 인계는 선택 구성). 원문 미열람 출처: ref-236, ref-350, ref-351, ref-352, ref-353, ref-598, ref-717, ref-718, ref-719, ref-720, ref-721, ref-722, ref-723, ref-726. 원문을 연 출처는 raw.githubusercontent.com 경유 ref-713·ref-714·ref-715·ref-716·ref-724·ref-725(편집자 초안)·ref-105·ref-111·ref-125·ref-376과 입력 원문 ref-031이며, 검증자가 ref-713·ref-714·ref-715·ref-716·ref-724·ref-125를 다시 열어 확인했다. 브리프의 ref-031 은 fetched_via github_raw·fetch_url null 로 적혔으나 한계 항목은 입력 원문(inbox)으로 적어 표기가 어긋난다. 검증 검색 8회(리서치 17회 포함 25/40). 주의: q3-03 의 답(후보 없음 원인 네 갈래와 되묻기 범위, 후보 여럿일 때 자동 결정과 되묻기의 경계)은 이 위키의 종합이고 근거가 물류 플릿 조건이 아니며, Open-RMF 기본 평가기는 디스패처 코드(QuickestFinish)와 헤더 문서(LeastFleetDiffCost)의 표현이 달라 병기해야 한다. Plan-Failure-Bench(f19)는 개인 연구자의 동료심사 전 자료다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 개념 '배정 실패'(f1·f3·f6·f22, 진행 상태·배정과 경계 중복, 사유 유형 추정) → 초안 6절 질문. 단계 완료 조건: 미충족(부족: 아이디어 2 5절의 다른 아이디어와의 연결, 실험 페이지의 실험 계획; 막힌 질문 q3-04~q3-13 열림). 단계 전환: 미승인(완료 조건 미충족·열린 질문 남음).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 9293,
+  "type": "result",
+  "duration_ms": 205022,
+  "uuid": "08008725-4a0d-4db6-a5bb-a8e8795d6ca6",
+  "ttft_stream_ms": 5417,
+  "time_to_request_ms": 109,
+  "first_content_frame_ms": 5417,
+  "time_to_request_from_spawn_ms": 12230431,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790325326521.64,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 206.9
+}

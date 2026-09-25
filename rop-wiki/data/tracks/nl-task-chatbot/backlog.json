@@ -95,9 +95,9 @@
       "question": "온톨로지 질의가 수행 가능한 로봇을 찾지 못하거나 후보를 여럿 낼 때, 챗봇은 무엇을 사용자에게 되묻고 무엇을 스스로 정하는가?",
       "stage": 3,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-74",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
       "created": "2026-09-25"
     },
     {
@@ -454,6 +454,39 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-71"
+    },
+    {
+      "id": "q4-11",
+      "question": "배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생)",
+      "stage": 4,
+      "origin": "f22",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-74"
+    },
+    {
+      "id": "q3-14",
+      "question": "온톨로지 기반 실행 가능성 판정이 후보를 하나도 내지 않을 때, 어느 능력·제약 때문인지를 SHACL 검증 보고처럼 제약 단위로 돌려주는 형식을 배정기 독립 출력(ReasonerOutput)에 둘 수 있는가, 그 형식에서 챗봇이 사용자에게 보여 줄 설명을 만들 수 있는가? (q3-03 에서 파생)",
+      "stage": 3,
+      "origin": "f8",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-74"
+    },
+    {
+      "id": "q5-08",
+      "question": "후보가 여럿일 때 '시스템이 계산할 수 있는 차이는 자동 결정, 사용자만 아는 정보에 걸린 차이만 되묻기' 규칙을 물류 지시 시나리오에 적용하면 되묻기 횟수와 오배정은 모든 경우를 묻거나 묻지 않는 방식에 비해 어떻게 달라지는가? (q3-03 에서 파생)",
+      "stage": 5,
+      "origin": "f23",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-74"
     }
   ]
 }

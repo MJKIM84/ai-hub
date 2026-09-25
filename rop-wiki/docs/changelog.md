@@ -45,6 +45,27 @@ version: 1
 | 2026-09-25-75 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
+| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설 #q3-03), 새 질문 q3-14·q4-11·q5-08, 4·6·7·8·9절과 상태 줄 갱신(답한 질문 3건·열린 질문 10건), 단계 전환 아니오 |
+| 2026-09-25-74 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '온톨로지 질의 결과에 따른 되묻기' 소절 신설(q3-03), 다른 아이디어와의 연결은 구조 언급 수준으로 명시, 절 머리 문장 갱신 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절에 개념 '배정 실패' 제안(검증 미반영)을 미해결 모델링 질문으로 추가, 초안 버전 v0.7 유지 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 상태 줄의 현재 단계를 '단계 3. 구현 가설 설계'로 갱신, 6절 산출물 링크에 실행 2026-09-25-74(q3-03, 초안 변경 없음) 반영 |
+| 2026-09-25-74 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-03 답함(후보 없음·후보 여럿일 때 되묻기 범위, 신뢰도 low), 새 질문 3건, 초안 v0.7 유지 |
+| 2026-09-25-74 | 생성 | [docs/references/ref-656.md](references/ref-656.md) | 참고문헌 ref-656 등록: rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp |
+| 2026-09-25-74 | 생성 | [docs/references/ref-657.md](references/ref-657.md) | 참고문헌 ref-657 등록: rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/bidding/Aucti… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-658.md](references/ref-658.md) | 참고문헌 ref-658 등록: Fallback and Human Handoff — Rasa documentation (docs/docs/f… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-659.md](references/ref-659.md) | 참고문헌 ref-659 등록: Coming Up With Good Excuses: What to do When no Plan Can be… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-660.md](references/ref-660.md) | 참고문헌 ref-660 등록: Why Couldn't You do that? Explaining Unsolvability of Classi… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-661.md](references/ref-661.md) | 참고문헌 ref-661 등록: Diagnosing Infeasible Optimization Problems Using Large Lang… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-662.md](references/ref-662.md) | 참고문헌 ref-662 등록: CE-MRS: Contrastive Explanations for Multi-Robot Systems |
+| 2026-09-25-74 | 생성 | [docs/references/ref-663.md](references/ref-663.md) | 참고문헌 ref-663 등록: Introspective Planning: Aligning Robots' Uncertainty with In… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-664.md](references/ref-664.md) | 참고문헌 ref-664 등록: Structured Uncertainty guided Clarification for LLM Agents |
+| 2026-09-25-74 | 생성 | [docs/references/ref-665.md](references/ref-665.md) | 참고문헌 ref-665 등록: Reinforcement Learning of Multi-robot Task Allocation for Mu… |
+| 2026-09-25-74 | 생성 | [docs/references/ref-666.md](references/ref-666.md) | 참고문헌 ref-666 등록: plan-failure-bench — README (Benchmark measuring how LLM pla… |
+| 2026-09-25-74 | 생성 | [docs/glossary/contrastive-explanation.md](glossary/contrastive-explanation.md) | 용어집 항목 대조적 설명 |
+| 2026-09-25-74 | 생성 | [docs/glossary/irreducible-infeasible-subset.md](glossary/irreducible-infeasible-subset.md) | 용어집 항목 기약 불능 제약 집합 |
+| 2026-09-25-74 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-73 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
 | 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |

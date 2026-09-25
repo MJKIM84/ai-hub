@@ -2489,6 +2489,34 @@
       "ref_id": "ref-650",
       "run_id": "2026-09-25-75",
       "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_task_ros2 디스패처·입찰 경매자(평가기)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        13,
+        9
+      ],
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+      "summary": "작업 입찰을 받아 평가기로 플릿을 고르고, 입찰이 없으면 배정 상태를 FailedToAssign 으로 기록하는 Open-RMF 디스패처. 기본 평가기 표현은 디스패처 코드(QuickestFinish)와 헤더 문서(LeastFleetDiffCost)가 다르다.",
+      "ref_id": "ref-656",
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Rasa 폴백·사람 인계(Fallback and Human Handoff, Rasa 3.x)",
+      "org": "Rasa Technologies",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx",
+      "summary": "의도 분류 신뢰도 문턱 아래의 폴백, 두 단계 폴백(의도 확인·재진술), 최종 폴백과 선택 구성인 사람 인계를 설명하는 Rasa 문서.",
+      "ref_id": "ref-658",
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25"
     }
   ]
 }

@@ -1549,6 +1549,56 @@
       "section": "6. 대표 접근법과 기술",
       "summary": "현장 변화에 따른 지도 판(mapVersion) 갱신·사전 적재 후 활성화와 구역 집합 교체(내용 불변, 새 zoneSetId) 규칙, 임시 적치 대응을 판 갱신과 구역·차선 처리로 나누는 흐름(추정). 근거 ref-031.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "Open-RMF 디스패처는 무입찰 시 FailedToAssign·오류(코드 10)를 기록하고 작업을 수행하지 않는다(f1). 여러 입찰은 평가기로 고르며 기본값은 디스패처 코드(QuickestFinishEvaluator 지정)와 Auctioneer.hpp 문서(미지정 시 LeastFleetDiffCostEvaluator)를 병기, 순위 기준 미확인(f4). 작업 요청 fleet_name 으로 허용 플릿 지정(f5). 실행 불가 작업의 일시 배제 학습(f13, 운반 능력은 연계 대상). 후보 여럿일 때 계산 가능한 목적 기준은 평가기로 자동 결정하고 사용자만 아는 정보에 걸릴 때만 되묻는 경계와 분류 원문 질문과의 연결(f23·f24, 추정). 27. AI·학습·적응과 모델 운영과 양쪽 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 18,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "배정 실패 시 원인 설명과 사용자가 바꿀 수 있는 항목만 되묻는 범위(f22, 추정). Rasa 폴백(문턱 설정 예 0.7, 두 단계 폴백, 최종 폴백 기본은 기본 응답·대화 초기화이고 사람 인계는 선택 구성, f18 추정). 불필요한 되묻기를 줄이는 내성적 계획(f16)과 EVPI 기반 질문 선택(f17, 게재처 미확인, 저자 보고). CE-MRS 대조적 설명의 22명 참가 대면 사용자 연구(수색·구조 영역, f12).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 과 해법기를 함수 호출로 결합해 IIS 로 불능 원인을 찾고 설명·수정 제안을 내는 OptiChat(f11), 내성적 계획과 등각 예측 결합(f16), 명세·모델 불확실성을 나눈 EVPI 기반 되묻기(f17). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 양쪽 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "해결 불가 설명 연구: Göbelbecker 외 excuse(ICAPS 2010, f9), Sreedharan 외 plan advice 해결 불가 설명(f10), CE-MRS(IEEE RA-L 9권 2024, f12). 계획 실패 유형 벤치마크 Plan-Failure-Bench(f19)는 개인 연구자의 동료심사 전 자료로 신뢰도 low 참고 사례로만 표시.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 5,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "온톨로지 기반 실행 가능성 판정(ReasonerOutput, f7)이 후보 없음의 원인을 SHACL 검증 보고 같은 제약 단위 형식(f8, 편집자 초안 기준)으로 13. 작업 배정 — MRTA 에 돌려주는 연결과, 제조사 광고 능력과 측정 운용 능력을 함께 표현하는 RCO(f21, oq-024 관련).",
+      "status": "제안"
     }
   ]
 }

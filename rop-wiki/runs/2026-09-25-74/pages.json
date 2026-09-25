@@ -1,0 +1,923 @@
+{
+  "run_id": "2026-09-25-74",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 400,
+      "summary": "q3-03 을 답함(#q3-03)으로 바꾸고 새 단계 3 질문 q3-14 를 더한다.",
+      "planned_findings": [
+        "f8"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 6500,
+      "summary": "q3-03: 후보 없음은 원인을 설명하고 사용자가 바꿀 수 있는 항목만 되묻고, 후보 여럿은 계산 가능한 목적 기준이면 평가기로 정하고 사용자만 아는 정보에 걸릴 때만 되묻는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-656][^ref-661][^ref-664]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "q3-03 결론(신뢰도 low)과 평가기 기본값 표현 차이, 원문 미열람 등 불확실성을 더한다.",
+      "planned_findings": [
+        "f4",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 600,
+      "summary": "q3-14, q4-11, q5-08 을 더한다.",
+      "planned_findings": [
+        "f8",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 500,
+      "summary": "완료 조건 미충족, 전환 미승인.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "7. 관련 세부영역",
+      "budget_chars": 600,
+      "summary": "13, 18, 27, 5 에 반영 제안을 더한다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "5. 구현 가설",
+      "budget_chars": 1800,
+      "summary": "온톨로지 질의 결과에 따른 되묻기 소절 신설. 다른 아이디어와의 연결은 구조 언급 수준. [추정][^ref-656][^ref-664]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f6",
+        "f11",
+        "f15",
+        "f17",
+        "f18",
+        "f21",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "section": "6. 미해결 모델링 질문",
+      "budget_chars": 700,
+      "summary": "개념 '배정 실패' 제안을 질문으로 둔다(v0.7 유지). [추정][^ref-656][^ref-111]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f6",
+        "f22"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q3-03 답함(3절 소제목 신설 #q3-03), 새 질문 q3-14·q4-11·q5-08, 4·6·7·8·9절과 상태 줄 갱신(답한 질문 3건·열린 질문 10건), 단계 전환 아니오"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "5절에 '온톨로지 질의 결과에 따른 되묻기' 소절 신설(q3-03), 다른 아이디어와의 연결은 구조 언급 수준으로 명시, 절 머리 문장 갱신",
+      "patches": [
+        {
+          "section": "5. 구현 가설",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-592",
+              "ref-593",
+              "ref-594",
+              "ref-595",
+              "ref-596",
+              "ref-598",
+              "ref-611",
+              "ref-612",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-417",
+              "ref-586",
+              "ref-674",
+              "ref-675",
+              "ref-676",
+              "ref-711",
+              "ref-677",
+              "ref-712",
+              "ref-678",
+              "ref-656",
+              "ref-657",
+              "ref-039",
+              "ref-658",
+              "ref-659",
+              "ref-660",
+              "ref-661",
+              "ref-662",
+              "ref-663",
+              "ref-664",
+              "ref-041"
+            ]
+          },
+          "content": "이 절은 [단계 3. 구현 가설 설계](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md)와 [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md)의 결과를 싣는다. 지금까지 q3-02 의 답인 처리 흐름과 핵심 구성 요소(실행 2026-09-25-71), q3-01 의 답인 스케줄링 결정의 분담(실행 2026-09-25-66), q3-03 의 답인 온톨로지 질의 결과에 따른 되묻기(실행 2026-09-25-74)를 실었고, 지시 변경 반영(q3-04)과 확인 절차(단계 4)는 아직 조사되지 않았다. 다른 아이디어와의 연결 구조(구축자 제안)는 [확장 아이디어 연결 구조](index.md)에 있다.\n\n### 처리 흐름과 핵심 구성 요소\n\n확인한 자료를 이 위키가 묶으면, 처리 흐름은 지시 해석 → 작업 분해 → 능력 질의 → 배정 → 스케줄링 → 진행 관리의 여섯 단계로 나눌 수 있고, LLM 은 지시 해석·작업 분해의 제안과 결과 설명을, 결정적 구성 요소는 분해 결과의 검사와 능력 질의·배정·스케줄링·진행 관리를 맡는 배치가 근거가 가장 많은 것으로 보인다. [추정][^ref-356][^ref-166][^ref-675][^ref-236][^ref-376][^ref-377][^ref-111][^ref-674] 이 흐름을 한 번에 제시한 단일 출처는 찾지 못했고, 근거가 산업용 로봇 셀·조작 시뮬레이션·공장·실험실 조건이어서 신뢰도가 낮다. 자세한 근거는 [단계 3 조사 결과](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-02)에 있다.\n\n아래 표는 위 근거를 이 위키가 대응시켜 구성한 처리 흐름 가설이다. [추정][^ref-356][^ref-166][^ref-236][^ref-376][^ref-377][^ref-111]\n\n| 단계 | 입력 | 출력 | 맡는 쪽 | 결정적 검사·근거 사례 |\n|---|---|---|---|---|\n| 지시 해석 | 채팅·대화 맥락 | 의도·슬롯 | LLM 제안 | 필수 슬롯 규칙 검사(Rasa 폼) |\n| 작업 분해 | 슬롯 | 작업 목록·의존 그래프 또는 형식 명세 | LLM 제안 | 계획기·검증기 검사(LiP-LLM, SDI, SPCA 하이브리드 구성) |\n| 능력 질의 | 작업 요구 | 배정기에 묶이지 않는 실행 가능성 판정 | 온톨로지 추론 | ReasonerOutput(Electronics 2026) |\n| 배정 | 판정·비용 | 로봇 또는 플릿 | 최적화·입찰 비교 | Open-RMF 입찰, 선형계획(LiP-LLM) |\n| 스케줄링 | 배정·시각 제약 | 로봇별 순서·충전 삽입 | 작업 계획기 | rmf_task |\n| 진행 관리 | 로봇·플릿 상태 보고 | 진행 상태 기록·재계획 요청 | 결정적 상태 기록 | Open-RMF 작업 상태 |\n\n- **결정적 검증기의 역할**: Liu 외(KTH, 2026-06)의 Specifier–Designer–Inspector 구조는 언어 이해·맥락 추론만 LLM 에 맡기고 검증·순서·실행을 결정적으로 두며, 5개 난이도 70개 자연어 명령에서 100% 성공을 보고했다(저자 보고, 원문 미열람). [사실][^ref-674] 기호 검증기를 같은 방식으로 프롬프트한 LLM 으로 바꾸면 성공률이 98.1% 에서 3.8% 로 떨어졌다고 보고했는데, 이는 그룹 A–D 의 52개 명령 부분집합 조건의 저자 보고값이며 독립 재현은 확인되지 않았다. [사실][^ref-674]\n- **상태 반영의 관문**: Tang 외(2026-06)는 에이전트·휴리스틱·최적화 모듈의 제안을 결정적 검증과 원자적 반영(atomic commit)을 거쳐야만 작업 숲·관리형 블랙보드에 받아들이는 구조를 제안했다(검색 요약 기준 평가 조건은 실내 공장 시나리오·원격 건설 벤치마크, 원문 미열람). [사실][^ref-711]\n- **분해 뒤 검사**: SPCA 틀의 공식 README 는 Plan 단계를 PDDL·LLM·하이브리드 가운데 고르는 틀로 적고 컴파일·시뮬레이션 검증을 두며, 'LLM → PDDL → 휴리스틱 계획기 → 두 번째 LLM 코드 생성' 구조는 그 하이브리드 구성을 원문 미열람 논문 요약 기준으로 서술한 것으로 보인다. [추정][^ref-675][^ref-676]\n- **능력 질의의 출력**: Electronics(2026-08-11) 논문은 온톨로지 기반 판정 결과를 특정 배정기에 묶이지 않는 ReasonerOutput 으로 정형화해 여러 배정 알고리즘의 공통 입력으로 쓴다고 제안했다(원문 미열람, 필드 구성 미확인). [사실][^ref-236]\n- **배정·진행의 결정적 구성 요소**: Open-RMF 디스패처는 플릿 어댑터들의 비용 입찰을 가장 빨리 끝나는 것·가장 낮은 비용 같은 설정 기준으로 비교해 이긴 플릿에 배치 요청을 보낸다(확인일 2026-09-25 기준). [사실][^ref-376] 작업 상태 스키마는 배정 결과(assigned_to)·배정 과정(dispatch 상태)·진행(status 값)을 나타낸다. [사실][^ref-111]\n- **해석 뒤 규칙 검사와 실행 전 게이트**: Rasa 폼은 비어 있는 필수 슬롯을 묻고 추출값을 검증 동작으로 검사한다. [사실][^ref-356] SafeGate(2026-04)는 자연어 명령의 안전 속성을 뽑아 ISO 13482 기반 결정적 판정으로 실행을 승인·거부하는 실행 전 게이트다(원문 미열람). [사실][^ref-417] ISO 13482 는 개인 돌봄 로봇 안전 표준이어서 물류 이동로봇 적용은 미확인이다.\n- **검증 게이트 배치**: 확인한 구조들이 LLM 출력이 상태·실행에 반영되기 직전마다 결정적 검사를 두므로(SPCA 부분은 추정 근거, 관리형 블랙보드의 제안 주체는 LLM 에 한정되지 않음), ROP 에서도 단계 사이 경계에 검증 게이트를 두는 것이 선택지로 보인다. [추정][^ref-674][^ref-675][^ref-711][^ref-417][^ref-356][^ref-586]\n- **도구 노출 경계**: ROS-MCP-Server 는 rosbridge 로 ROS·ROS 2 의 토픽·서비스·액션·파라미터를 LLM 도구로 노출하며 README 에 현재의 권한·제한 장치 설명이 없다(확인일 2026-09-25 기준). [사실][^ref-712] 채팅 LLM 에 저수준 로봇 도구를 열면 능력 질의·배정·검증 게이트를 우회할 수 있어 ROP 는 작업 요청 제출 같은 상위 도구만 노출해야 할 것으로 보인다. [추정][^ref-712][^ref-180] 로봇 토픽·액션의 직접 제어는 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다.\n- **반례**: CoMuRoS 는 작업 관리자 LLM 이 해석·배정·재계획을 맡는 구조로 정답률(correctness) 최대 0.91(22개 시나리오·54개 작업·약 20대 로봇 벤치마크, 저자 보고)을 보고했다. [사실][^ref-677] 다만 이런 LLM 배정 연구는 실험실·텍스트 벤치마크 조건이고 결정적 배정기와 같은 조건의 비교가 확인되지 않아, 위 배치의 반박 근거로는 약한 것으로 보인다. [추정][^ref-677][^ref-678][^ref-674]\n\n이 결과 가운데 검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 배정 개념 속성 '배정 산출 방식'에 값 후보 '입찰 비교'로 반영되었다(v0.7). 개념 '실행 가능성 판정'과 '검증 기록'은 초안 6절의 질문으로 남았다.\n\n### 스케줄링 결정의 분담\n\n확인한 자료로는 순서·시각·충전 삽입 같은 스케줄링 결정은 결정적 최적화·계획 해법이 맡고, LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-592][^ref-594][^ref-377][^ref-596][^ref-598][^ref-615] 이는 이 위키의 종합이며, 근거가 작업장·프로젝트·운영과학 일반·건설·항만·여행 계획 조건이고 이종 제조사 창고 플릿 비교 자료는 검색 범위에서 찾지 못해 신뢰도가 낮다. 자세한 근거는 [단계 3 조사 결과](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01)에 있다.\n\n- **LLM 직접 생성의 한계**: ConstraintBench 저자들은 10개 운영과학 영역 200개 과제에서 6개 모델을 평가해 가장 좋은 모델의 실행 가능 해 비율이 65.0%였고, 실행 가능성과 최적성(솔버 기준 0.1% 이내)을 함께 만족한 비율은 어느 모델도 30.5%를 넘지 못했다고 보고했다(저자 보고값, 원문 미열람). [사실][^ref-592] SCHEDBench 저자들은 같은 스케줄링 문제를 의미가 같은 다른 문장 표현으로 주면 실행 가능 비율이 떨어지고 제약 위반이 달라진다고 보고했다. [사실][^ref-594] 자원 제약 프로젝트 스케줄링에서 여러 제약이 함께 걸리면 실행 가능성이 급락한다는 보고도 있는 것으로 보인다(저자 보고, 검증 미재확인). [추정][^ref-593]\n- **정식화와 해법기의 결합**: OptiMUS 는 LLM 이 정식화한 모델을 MIP·LP 해법기로 푼다. [사실][^ref-596] LAPPI 는 LLM 이 대화로 선호를 후보·점수·제약으로 바꿔 최적화 문제를 인스턴스화하고 풀이는 해법기에 맡긴다. [사실][^ref-598] 다중 로봇 연구 LiP-LLM·PIP-LLM·FLEET·Peng 외도 LLM 이 정식화하고 결정적 해법이 배정·일정을 푼다. [사실][^ref-166][^ref-181][^ref-242][^ref-167]\n- **오케스트레이션 도구의 위치**: Open-RMF rmf_task 의 작업 계획기는 요청된 시작 시각을 지키며 작업이 가장 빨리 끝나도록 로봇별 작업 순서를 정하고, 탐욕 방식과 A* 기반 방식 가운데 하나로 푼다. [사실][^ref-404][^ref-377] rmf_task 는 배터리 같은 자원 제약을 고려해 충전 작업을 일정에 자동으로 끼워 넣는다. [사실][^ref-404]\n- **반례**: 미세 조정한 LLM 이 작업장 스케줄링에서 규칙·초기 신경망 방법을 앞섰다는 보고와 LLM 두 개가 건설 로봇 스케줄을 직접 만든 연구가 있으나, 비교 대상이 정확 해법기가 아니거나 확인되지 않아 해법기 대체의 근거로는 약한 것으로 보인다. [추정][^ref-595][^ref-616][^ref-592]\n- **동적 재스케줄링**: LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·검증을 거쳐 반영하며 실시간 재계산은 해법이 맡는 구조가 선택지로 보인다. [추정][^ref-611][^ref-612][^ref-404]\n- **설명 역할**: 스케줄링 시스템이 낸 결과를 사람에게 설명하는 텍스트를 LLM 으로 생성하는 연구가 있다. [사실][^ref-615]\n\n이 결과 가운데 검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 일정 개념에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용)으로 반영되었다(v0.6). 이 분담은 트랙 개요의 가설 3과 같은 방향이지만, 가설 판정은 단계 5에서 한다.\n\n### 온톨로지 질의 결과에 따른 되묻기\n\n확인한 자료를 이 위키가 묶으면, 수행 가능한 로봇·플릿이 없을 때(후보 없음) 챗봇은 원인을 설명하고 사용자가 바꿀 수 있는 항목(기한 완화, 장소·대상 변경, 사람 처리 전환)만 되묻고 재질의·대기·재입찰은 시스템이 정하며, 후보가 여럿일 때는 차이가 완료 시각·비용처럼 시스템이 계산할 수 있는 목적 기준뿐이면 평가기·최적화로 스스로 정하고 사용자만 아는 정보·선호에 걸리거나 해석이 여러 갈래일 때만 되묻는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-656][^ref-039][^ref-031][^ref-236][^ref-659][^ref-660][^ref-661][^ref-350][^ref-664][^ref-663][^ref-598][^ref-662] 이 분담을 한 번에 제시한 단일 출처는 찾지 못했고, 근거가 물류 플릿 조건이 아니어서 신뢰도가 낮다. 자세한 근거는 [단계 3 조사 결과](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03)에 있다.\n\n- **후보 없음의 기록**: Open-RMF 디스패처는 어떤 플릿 어댑터도 입찰하지 않으면 배정 상태를 FailedToAssign 으로 두고 오류를 기록하며, 그 작업은 수행되지 않는다(확인일 2026-09-25 기준). [사실][^ref-656] 작업 상태 스키마의 dispatch 필드는 failed_to_assign 상태와 오류 배열(errors)을 두어 배정 실패의 사유를 기록할 자리를 제공한다. [사실][^ref-111] 플릿 어댑터는 해당 작업 유형을 받도록 설정되어 있지 않으면 입찰하지 않는다. [사실][^ref-039]\n- **로봇 쪽 거절 오류**: VDA 5050 3.0.0 은 수행할 수 없는 동작(INVALID_ORDER_ACTION, WARNING), 쓸 수 없는 선택 필드(UNSUPPORTED_PARAMETER, CRITICAL), 새 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE, WARNING)를 서로 다른 오류 유형으로 정의한다. [사실][^ref-031] 주문 거절은 로봇 쪽 기능인 연계 대상이며, ROP 는 그 오류를 받아 원인을 구분·설명하는 쪽을 맡는 것으로 본다. [추정][^ref-031]\n- **후보 여럿의 자동 결정**: Open-RMF 디스패처는 여러 입찰 가운데 평가기로 하나를 고른다. 디스패처는 경매자를 만들 때 QuickestFinishEvaluator 를 지정하고, Auctioneer.hpp 문서 주석은 평가기를 지정하지 않을 때의 기본을 LeastFleetDiffCostEvaluator 로 적으며, 사용자 정의 평가기 인터페이스가 있고 세 평가기의 순위 기준은 미확인이다. [사실][^ref-656][^ref-657]\n- **해결 불가 설명**: 계획을 찾지 못할 때 과제를 풀 수 있게 만드는 반사실적 변경(excuse)을 찾는 연구(ICAPS 2010) [사실][^ref-659]와, 사용자 제약이 해결 불가의 원인일 수 있다고 보는 연구가 있다. [사실][^ref-660] OptiChat 은 LLM 이 해법기와 연결되어 기약 불능 제약 집합(Irreducible Infeasible Subset, IIS)을 찾고 불능 원인을 자연어로 설명하며 수정 제안을 낸다(원문 미열람). [사실][^ref-661] CE-MRS 는 다중 로봇의 해를 대조적으로 설명하며, 22명 참가 대면 사용자 연구(수색·구조 영역, IEEE RA-L 9권 2024)에서 명세 오류를 찾아 고치는 능력이 좋아졌다고 저자들이 보고했다(원문 미열람). [사실][^ref-662]\n- **되묻기 기준**: KnowNo 는 등각 예측으로 정한 문턱을 넘는 선택지가 둘 이상이면 도움을 요청한다. [사실][^ref-350] 내성적 계획은 불필요한 되묻기를 줄였다고 저자들이 보고했다. [사실][^ref-663] SAGE-Agent(arXiv 2511.08798, 게재처 미확인)는 질문마다 완전 정보의 기대 가치(EVPI)와 질문 비용을 따져 되물을 질문을 고르며 질문 수를 1.5~2.7배 줄였다고 보고했다(저자 보고값, 원문 미열람). [사실][^ref-664] Rasa 는 두 단계 폴백에서 추정한 의도를 확인받고 거부되면 재진술을 요청하며, 최종 폴백의 기본 동작은 기본 응답과 대화 상태 초기화이고 사람 인계는 사용자 정의로 구성하는 예로 제시되는 것으로 보인다. [추정][^ref-658] LAPPI 는 대화로 선호를 최적화 문제에 반영한다. [사실][^ref-598]\n- **분담 가설**: 후보 없음의 원인은 능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류로 나눌 수 있어 보이며, 이 분류는 이 위키의 종합이다. [추정][^ref-656][^ref-039][^ref-031][^ref-236][^ref-661] 후보 여럿일 때 '가장 가까운 로봇'은 평가기 선택지의 하나이므로, 운영 조직이 평가 기준을 미리 정하고 채팅에서는 그 기준에 따른 선택 이유를 설명하는 편이 전체 기준의 일관성에 맞는 것으로 보인다(평가 기준을 누가 정하는지는 출처에 없음). [추정][^ref-656][^ref-657][^ref-662][^ref-376]\n- **다른 아이디어와의 연결(구조 언급 수준)**: 후보 없음의 원인 가운데 능력 부재는 [아이디어 1. 로봇 기능 온톨로지](robot-capability-ontology.md)가 다루는 선언 능력과 운용 능력의 차이와 이어질 수 있다. 제조사가 광고한 능력과 측정한 운용 능력을 함께 표현하고 비교하는 로봇 능력 온톨로지(RCO) 연구가 있다(Scientific Reports 2025, 원문 미열람). [사실][^ref-041] 장소·대상 변경을 되물을 때 제시할 장소 후보가 [아이디어 3. 건축 도면 자동 인식](floorplan-recognition.md)의 공간 그래프와 이어지는지는 조사하지 않았고 구조만 언급한다. 이 연결은 구조 언급 수준이어서 단계 3 완료 조건의 '다른 아이디어와의 연결'은 아직 충족되지 않았다.\n\n이번 실행에서 제안된 개념 '배정 실패'는 검증이 반영하지 않아 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md) 6절의 질문으로 남았다(초안 v0.7 유지).\n\n[^ref-404]: Open Robotics (open-rmf), rmf_task — README, 미확인, https://github.com/open-rmf/rmf_task, 접근일 2026-09-25 (원문 미열람)\n[^ref-377]: Open Robotics (open-rmf), rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp, 미확인, https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp, 접근일 2026-09-25 (원문 미열람)\n[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)\n[^ref-593]: Jain, R. 외(R-ConstraintBench 저자), R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling, 2025-08, https://arxiv.org/abs/2508.15204, 접근일 2026-09-25 (원문 미열람)\n[^ref-594]: SCHEDBench 저자(arXiv 2608.00991, 저자 미확인), SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling, 2026-08, https://arxiv.org/abs/2608.00991, 접근일 2026-09-25 (원문 미열람)\n[^ref-595]: Starjob 저자(arXiv 2503.01877, 저자 미확인), Starjob: Dataset for LLM-Driven Job Shop Scheduling, 2025-03, https://arxiv.org/abs/2503.01877, 접근일 2026-09-25 (원문 미열람)\n[^ref-596]: teshnizi (OptiMUS 공식 저장소), OptiMUS — Optimization Modeling Using mip Solvers and large language models (GitHub README), 미확인, https://github.com/teshnizi/OptiMUS, 접근일 2026-09-25\n[^ref-598]: Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026), LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation, 2025-12, https://arxiv.org/abs/2512.14138, 접근일 2026-09-25 (원문 미열람)\n[^ref-611]: RACE-Sched 저자(arXiv 2605.29262, 저자 미확인), Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling, 2026-05, https://arxiv.org/abs/2605.29262, 접근일 2026-09-25 (원문 미열람)\n[^ref-612]: Li, J., & Li, C.(소속 미확인), LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling, 2026-08, https://arxiv.org/abs/2608.09343, 접근일 2026-09-25 (원문 미열람)\n[^ref-615]: Powell, C. 외(University of Strathclyde), Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models, 2025, https://link.springer.com/article/10.1007/s10844-025-00940-w, 접근일 2026-09-25 (원문 미열람)\n[^ref-616]: Saha, S., Das, S., Duan, H., & Liu, X.-Y., Hybrid LLM-based Intelligent Framework for Robot Task Scheduling, 2026-05, https://arxiv.org/abs/2605.15486, 접근일 2026-09-25 (원문 미열람)\n[^ref-376]: Open Robotics, Tasks in RMF (task) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task.html, 접근일 2026-09-25\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-417]: Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems, 2026-04, https://arxiv.org/abs/2604.05427, 접근일 2026-09-25 (원문 미열람)\n[^ref-586]: Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S., Saldyt, L., & Murthy, A., LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks, 2024-02, https://arxiv.org/abs/2402.01817, 접근일 2026-09-25 (원문 미열람)\n[^ref-674]: Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH), Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins, 2026-06, https://arxiv.org/abs/2606.08214, 접근일 2026-09-25 (원문 미열람)\n[^ref-675]: Pesjak, D., & Žabkar, J., Robot Planning via LLM Proposals and Symbolic Verification, 2026, https://www.mdpi.com/2504-4990/8/1/22, 접근일 2026-09-25 (원문 미열람)\n[^ref-676]: Pesjak, D. (minigrid-crewai 공식 저장소), minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitHub README), 미확인, https://github.com/DrejcPesjak/minigrid-crewai, 접근일 2026-09-25\n[^ref-711]: Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems, 2026-06, https://arxiv.org/abs/2606.31339, 접근일 2026-09-25 (원문 미열람)\n[^ref-677]: CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재), LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning, 2025-11, https://arxiv.org/abs/2511.22354, 접근일 2026-09-25 (원문 미열람)\n[^ref-712]: robotmcp (ROS-MCP-Server 공식 저장소), ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README), 미확인, https://github.com/robotmcp/ros-mcp-server, 접근일 2026-09-25\n[^ref-678]: Park, J., & Kim, J. S.(소속 미확인), STRAP-LLM: structured task allocation and planning for heterogeneous robots using large language models, 미확인, https://link.springer.com/article/10.1007/s11370-025-00676-0, 접근일 2026-09-25 (원문 미열람)\n[^ref-656]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 접근일 2026-09-25\n[^ref-657]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp, 접근일 2026-09-25\n[^ref-039]: Open Robotics, Currently supported Tasks (task_types) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\n[^ref-658]: Rasa Technologies (RasaHQ/rasa GitHub), Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx, 접근일 2026-09-25\n[^ref-659]: Göbelbecker, M., Keller, T., Eyerich, P., Brenner, M., & Nebel, B., Coming Up With Good Excuses: What to do When no Plan Can be Found, 2010, https://ojs.aaai.org/index.php/ICAPS/article/view/13421, 접근일 2026-09-25 (원문 미열람)\n[^ref-660]: Sreedharan, S., Srivastava, S., Smith, D., & Kambhampati, S., Why Couldn't You do that? Explaining Unsolvability of Classical Planning Problems in the Presence of Plan Advice, 2019-03, https://arxiv.org/abs/1903.08218, 접근일 2026-09-25 (원문 미열람)\n[^ref-661]: Chen, H. 외(OptiChat 저자), Diagnosing Infeasible Optimization Problems Using Large Language Models, 2023-08, https://arxiv.org/abs/2308.12923, 접근일 2026-09-25 (원문 미열람)\n[^ref-662]: Schneider, E. 외(CE-MRS 저자), CE-MRS: Contrastive Explanations for Multi-Robot Systems, 2024-10, https://arxiv.org/abs/2410.08408, 접근일 2026-09-25 (원문 미열람)\n[^ref-663]: Liang, K. 외(Introspective Planning 저자), Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity, 2024-02, https://arxiv.org/abs/2402.06529, 접근일 2026-09-25 (원문 미열람)\n[^ref-664]: Suri, M. 외(University of Maryland·Adobe Research), Structured Uncertainty guided Clarification for LLM Agents, 2025-11, https://arxiv.org/abs/2511.08798, 접근일 2026-09-25 (원문 미열람)\n[^ref-041]: Scientific Reports 게재 논문(저자 미확인), Ontology-driven integration of advertised and operational capabilities in robots, 2025, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\n"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절에 개념 '배정 실패' 제안(검증 미반영)을 미해결 모델링 질문으로 추가, 초안 버전 v0.7 유지",
+      "patches": [
+        {
+          "section": "6. 미해결 모델링 질문",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-031",
+              "ref-054",
+              "ref-055",
+              "ref-059",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-125",
+              "ref-130",
+              "ref-166",
+              "ref-167",
+              "ref-169",
+              "ref-181",
+              "ref-242",
+              "ref-350",
+              "ref-352",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-361",
+              "ref-411",
+              "ref-412",
+              "ref-413",
+              "ref-414",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-501",
+              "ref-502",
+              "ref-504",
+              "ref-404",
+              "ref-377",
+              "ref-596",
+              "ref-597",
+              "ref-611",
+              "ref-612",
+              "ref-592",
+              "ref-594",
+              "ref-595",
+              "ref-598",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-674",
+              "ref-711",
+              "ref-656",
+              "ref-039"
+            ]
+          },
+          "content": "- 배정 실패(Assignment Failure)를 개념으로 둘 것인가, 진행 상태·배정 개념의 속성으로 둘 것인가. Open-RMF 디스패처는 어떤 플릿도 입찰하지 않으면 배정 상태를 FailedToAssign 으로 두고 오류를 기록하며(확인일 2026-09-25 기준) [사실][^ref-656] 작업 상태 스키마의 dispatch 필드는 failed_to_assign 상태와 오류 배열(errors)을 둔다. [사실][^ref-111] VDA 5050 3.0.0 은 수행할 수 없는 동작(INVALID_ORDER_ACTION)과 새 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE)를 서로 다른 오류 유형으로 정의한다. [사실][^ref-031] 이 결과를 사유 유형(값 후보: 능력 부재 / 일시적 가용 불가 / 제약 조합 불능 / 해석 오류), 오류 기록 원천, 사용자에게 제시한 대안과 응답을 속성으로 가진 개념으로 두자는 제안(근거 f1·f3·f6·f22, 실행 2026-09-25-74)은 검증이 반영하지 않았다. 진행 상태 개념의 외부 표현 메모(dispatch 값 failed_to_assign·errors) 및 배정 개념과 경계가 겹치고, 사유 유형 값은 여러 출처를 이 위키가 묶은 종합이라 추정 근거이기 때문이다. [추정][^ref-656][^ref-039][^ref-031][^ref-236] 사용자에게 제시한 대안·응답을 위의 사용자 확인 질문과 어떻게 나눌지도 함께 정한다. — 관련: q3-03, q4-01, q4-04, q4-11\n\n[^ref-656]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 접근일 2026-09-25\n[^ref-039]: Open Robotics, Currently supported Tasks (task_types) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_types.html, 접근일 2026-09-25\n"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "상태 줄의 현재 단계를 '단계 3. 구현 가설 설계'로 갱신, 6절 산출물 링크에 실행 2026-09-25-74(q3-03, 초안 변경 없음) 반영"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 3 | q3-03 답함(후보 없음·후보 여럿일 때 되묻기 범위, 신뢰도 low), 새 질문 3건, 초안 v0.7 유지 | run 2026-09-25-74",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 3: q3-03(온톨로지 질의가 후보를 찾지 못하거나 여럿 낼 때 챗봇이 되묻는 것과 스스로 정하는 것) 답함, 신뢰도 low",
+    "category_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 3: 배정 실패(무입찰) 기록과 후보 여럿일 때 평가기·되묻기 경계를 정리하고 13. 작업 배정 — MRTA 에 반영 제안",
+    "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 3(q3-03)에서 Open-RMF 무입찰 배정 실패 기록, 평가기 기본값 병기, 후보 여럿일 때 되묻기 경계를 6. 대표 접근법과 기술에 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "contrastive-explanation",
+      "term_ko": "대조적 설명",
+      "term_en": "Contrastive Explanation",
+      "definition": "시스템이 왜 다른 선택(예: 다른 로봇·다른 일정)이 아니라 이 선택을 했는지를 대안과 비교해 설명하는 방식으로, 사용자가 명세 오류를 찾는 데 쓰인다.",
+      "description": "다중 로봇 시스템에서는 작업 배정·스케줄링·경로 계획 정보를 골라 써서 해를 대조적으로 설명하는 방법(CE-MRS)이 연구되었다. 저자 보고 사용자 연구의 조건은 수색·구조 영역이다.",
+      "related_areas": [
+        13,
+        18,
+        27
+      ],
+      "sources": [
+        "ref-662"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "irreducible-infeasible-subset",
+      "term_ko": "기약 불능 제약 집합",
+      "term_en": "Irreducible Infeasible Subset (IIS)",
+      "definition": "최적화 모델을 실행 불가능하게 만드는 제약 가운데, 어느 하나라도 빼면 실행 가능해지는 최소 제약 묶음으로, 불능 원인을 사람에게 보여 주는 데 쓰인다.",
+      "description": "OptiChat 은 LLM 이 해법기와 연결되어 IIS 를 찾고 불능 원인을 자연어로 설명하며 수정 제안을 낸다.",
+      "related_areas": [
+        13,
+        14,
+        27
+      ],
+      "sources": [
+        "ref-661"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-656",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 디스패처 소스. 무입찰 시 FailedToAssign·오류 기록, 경매자 생성 시 QuickestFinishEvaluator 지정과 평가기 교체 메서드.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-657",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/bidding/Auctioneer.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "입찰 경매자 헤더. 평가기 LeastFleetDiffCost·LeastFleetCost·QuickestFinish 정의, 미지정 시 기본을 LeastFleetDiffCostEvaluator 로 적는 문서 주석, 사용자 정의 평가기 인터페이스(순위 기준 문서화 없음).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-039",
+      "org": "Open Robotics",
+      "title": "Currently supported Tasks (task_types) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task_types.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "지원 작업 유형 문서. 플릿 어댑터가 해당 작업 유형을 받도록 설정되지 않으면 입찰하지 않는다고 설명.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-658",
+      "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
+      "title": "Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx)",
+      "published": null,
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "NLU 폴백 문턱, 두 단계 폴백(의도 확인·재진술). 최종 폴백의 기본은 기본 응답과 대화 초기화이고 사람 인계는 사용자 정의 구성 예.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-659",
+      "org": "Göbelbecker, M., Keller, T., Eyerich, P., Brenner, M., & Nebel, B.",
+      "title": "Coming Up With Good Excuses: What to do When no Plan Can be Found",
+      "published": "2010",
+      "url": "https://ojs.aaai.org/index.php/ICAPS/article/view/13421",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 계획을 찾지 못할 때 과제를 풀 수 있게 만드는 초기 상태의 반사실적 변경(excuse)을 찾는 형식화와 알고리즘(ICAPS 2010).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-660",
+      "org": "Sreedharan, S., Srivastava, S., Smith, D., & Kambhampati, S.",
+      "title": "Why Couldn't You do that? Explaining Unsolvability of Classical Planning Problems in the Presence of Plan Advice",
+      "published": "2019-03",
+      "url": "https://arxiv.org/abs/1903.08218",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 사용자 제약이 원인이 되는 해결 불가를 계층적 추상화·랜드마크로 설명하는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-661",
+      "org": "Chen, H. 외(OptiChat 저자)",
+      "title": "Diagnosing Infeasible Optimization Problems Using Large Language Models",
+      "published": "2023-08",
+      "url": "https://arxiv.org/abs/2308.12923",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. GPT-4 와 해법기를 연결해 IIS 로 불능 원인을 찾고 수정 제안을 하는 대화형 시스템 OptiChat(INFOR 2024 게재).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-662",
+      "org": "Schneider, E. 외(CE-MRS 저자)",
+      "title": "CE-MRS: Contrastive Explanations for Multi-Robot Systems",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.08408",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업 배정·스케줄링·경로 계획 정보를 쓰는 다중 로봇 대조적 설명과 22명 참가 대면 사용자 연구(수색·구조 영역, IEEE RA-L 9권 2024, 저자 보고).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-663",
+      "org": "Liang, K. 외(Introspective Planning 저자)",
+      "title": "Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.06529",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 내성적 추론 예시 검색과 등각 예측 결합으로 불필요한 되묻기를 줄이는 LLM 계획(NeurIPS 2024).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-664",
+      "org": "Suri, M. 외(University of Maryland·Adobe Research)",
+      "title": "Structured Uncertainty guided Clarification for LLM Agents",
+      "published": "2025-11",
+      "url": "https://arxiv.org/abs/2511.08798",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 도구 인자 위의 구조화 불확실성과 EVPI 로 되물을 질문을 고르는 방법(SAGE-Agent)과 ClarifyBench. arXiv 2511.08798, 게재처 미확인.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-665",
+      "org": "Shida, Y. 외",
+      "title": "Reinforcement Learning of Multi-robot Task Allocation for Multi-object Transportation with Infeasible Tasks",
+      "published": "2024-04",
+      "url": "https://arxiv.org/abs/2404.11817",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 운반 불가 작업이 교착을 부르는 문제와 작업별 배제 수준 학습으로 일시 배제하는 동적 배정(IEEE/SICE SII 2025 게재).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-666",
+      "org": "Kazmi, M. (plan-failure-bench GitHub)",
+      "title": "plan-failure-bench — README (Benchmark measuring how LLM planners fail at robot tasks)",
+      "published": null,
+      "url": "https://github.com/munawarkazmi/plan-failure-bench",
+      "type": "오픈소스 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "개인 연구자 벤치마크 README. plan/infeasible/clarify 세 응답과 여섯 함정 유형, 기계 검증 정답. 동료심사 전 프리프린트(Zenodo).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-459",
+      "org": "W3C",
+      "title": "Shapes Constraint Language (SHACL)",
+      "published": "2017-07",
+      "url": "https://www.w3.org/TR/shacl/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "SHACL 명세의 검증 보고(sh:conforms, sh:result)와 결과 속성 구조. 발행일은 권고안 기준이며, 열람한 것은 W3C data-shapes 저장소의 편집자 초안이라 권고안 문구와의 일치는 미확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-041",
+      "org": "Scientific Reports 게재 논문(저자 미확인)",
+      "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+      "published": "2025",
+      "url": "https://www.nature.com/articles/s41598-025-16649-3",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 제조사 광고 능력과 측정 운용 능력을 함께 표현하는 로봇 능력 온톨로지(RCO)와 SPARQL 비교 질의.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 명세. 주문 거절 오류 유형(INVALID_ORDER_ACTION, UNSUPPORTED_PARAMETER, MOBILE_ROBOT_NOT_AVAILABLE) 확인(입력 원문 텍스트로 열람).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "플릿 어댑터 템플릿 설정. task_capabilities(loop·delivery), recharge_threshold 0.10.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "작업 상태 스키마. dispatch 필드의 상태 값·배정 대상·오류 배열.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-125",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "작업 요청 스키마. 필수 category·description, 선택 fleet_name(허용 플릿 지정) 등.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-376",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 입찰 흐름(BidNotice·BidProposal·설정 기준 비교). 무입찰·실패 처리는 이 문서에 없음.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-236",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+      "published": "2026-08-11",
+      "url": "https://doi.org/10.3390/electronics15163562",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 온톨로지 기반 실행 가능성 판정을 배정기 독립 ReasonerOutput 으로 정형화, 적재 상태·플릿 구성이 실행 가능성에 영향.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-350",
+      "org": "Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트)",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io)",
+      "published": null,
+      "url": "https://robot-help.github.io/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. KnowNo 프로젝트 페이지. 등각 예측 기반 도움 요청.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-351",
+      "org": "Ren, A. Z. 외",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.01928",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. KnowNo 논문(CoRL 2023).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-352",
+      "org": "Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트)",
+      "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io)",
+      "published": null,
+      "url": "https://clararobot.github.io/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. CLARA 프로젝트 페이지. 명확·모호·수행 불가 명령 구분.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-353",
+      "org": "Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S.",
+      "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents",
+      "published": "2024",
+      "url": "https://arxiv.org/abs/2306.10376",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. CLARA 논문(IEEE RA-L 2024).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-598",
+      "org": "Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026)",
+      "title": "LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.14138",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 대화로 선호를 최적화 문제로 인스턴스화하고 해법기가 푸는 방식.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "로봇 관제가 배정 실패(수행 가능한 로봇·플릿 없음)를 WMS 등 상위 업무 시스템에 어떤 필드로 되돌리고, 상위 시스템이 이를 사람 작업 지시로 전환하는 표준이나 국내 물류센터 사례가 있는가?",
+      "areas": [
+        13,
+        1
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
+      "title": "단계 3. 구현 가설 설계 — q3-03"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
+      "title": "단계 3. 구현 가설 설계 — q3-03"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
+      "title": "단계 3. 구현 가설 설계 — q3-03"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
+      "title": "단계 3. 구현 가설 설계 — q3-03"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03",
+      "title": "단계 3. 구현 가설 설계 — q3-03"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 3 페이지 3절 q3-03: Open-RMF 평가기 LeastFleetCostEvaluator·LeastFleetDiffCostEvaluator·QuickestFinishEvaluator 의 순위 기준(구현 코드)과 디스패처 코드·헤더 문서의 기본 평가기 표현 차이를 확인할 자료가 필요하다 — 두 출처의 기본값 표현이 달라 병기만 했다.",
+    "단계 3 페이지 3절 q3-03·q3-14: Electronics(2026) ReasonerOutput 이 불가 사유를 필드로 담는지 원문 확인이 필요하다 — 후보 없음의 원인 설명 형식 판단에 필요하다.",
+    "단계 3 페이지 3절 q3-03: SHACL 2017-07 권고안 원문으로 검증 보고 구조(sh:conforms, sh:result 속성)를 재확인할 필요가 있다 — 이번에는 편집자 초안만 열람했다.",
+    "단계 3 완료 조건: 다른 아이디어와의 연결(아이디어 1 의 선언·운용 능력, 아이디어 3 의 공간 그래프 장소 슬롯)을 뒷받침할 근거 finding 이 필요하다 — 이번 반영은 구조 언급 수준이다.",
+    "단계 3 완료 조건: 실험 페이지에 실을 사용자 실험 계획(예: 후보 없음·후보 여럿 되묻기 규칙의 물류 지시 시나리오 시험)은 다음 트랙 실행에서 제안이 필요하다 — 이번 1차 판정은 실험 계획 없음을 미충족으로 두었다.",
+    "물류 창고 관제에서 배정 실패를 사용자와 대화로 처리한 연구·국내 사례(한국어 자료 포함)가 필요하다 — q3-03 결론의 근거가 물류 조건이 아니다.",
+    "백로그 정리: q3-12·q3-13, q4-09·q4-10, q3-09·q3-10, q5-05·q5-06, q1-05·q1-06 이 중복 등록되어 있어 담당자의 정리(폐기 처리)가 필요하다.",
+    "트랙 개요·단계 페이지의 머리 상태 줄은 patches 로 갱신할 수 없어 이번에 두 페이지를 전체 content 로 냈다 — 머리 상태 줄 갱신 방식(patches 대상 확장)을 pipeline 담당에게 요청한다."
+  ],
+  "fixes_applied": [
+    "f4 기본 평가기 표현 — 단계 3 페이지 q3-03 '후보가 여럿일 때' 소절과 아이디어 페이지 5절에서 '디스패처는 경매자를 만들 때 QuickestFinishEvaluator 를 지정하며(Dispatcher.cpp), Auctioneer.hpp 문서 주석은 미지정 시 기본을 LeastFleetDiffCostEvaluator 로 적는다'로 두 출처를 병기하고, 사용자 정의 평가기 추상 인터페이스와 세 평가기 순위 기준 미확인을 남겼으며, 종합 문장도 '디스패처 코드가 지정한 평가기'로 맞췄다.",
+    "f18 강등 — Rasa 문장을 [추정]으로 바꾸고 '문턱(설정 예 0.7), 두 단계 폴백의 의도 확인·재진술, 최종 폴백의 기본은 기본 응답 발화와 대화 상태 초기화이고 사람 인계는 사용자 정의 동작으로 구성하는 예'로 고쳤으며, f22 종합과 f25 시나리오의 사람 인계 서술을 '선택 구성'으로 맞췄다.",
+    "f12 연구 조건 — CE-MRS 를 '22명 참가 대면 사용자 연구(수색·구조 영역, IEEE RA-L 9권 2024)'로 바꾸고 명세 오류 식별·해결 향상을 저자 보고로 병기했으며, 참고문헌 요약도 같게 고쳤다.",
+    "f17 게재처 — 'ACL 2026 Findings' 를 지우고 'arXiv 2511.08798, 게재처 미확인', 저자 표기 'Suri, M. 외(University of Maryland·Adobe Research)'로 본문·각주·참고문헌 항목을 고쳤다.",
+    "f19 — 본문에 '개인 연구자가 공개한 동료심사 전 벤치마크(Zenodo 프리프린트)'임을 밝히고 종합(f22·f23) 문장의 각주에서 ref-666 를 뺐으며 '종합의 근거로 쓰지 않는다'를 적고 평가 모델명·수치는 쓰지 않았다.",
+    "f6 — VDA 5050 문장을 세 오류 유형(INVALID_ORDER_ACTION WARNING, UNSUPPORTED_PARAMETER CRITICAL, MOBILE_ROBOT_NOT_AVAILABLE WARNING)을 서로 다른 오류 유형으로 정의한다는 명세 기준 서술로 고치고, 주문 거절은 로봇 쪽 기능(연계 대상)이며 ROP 는 오류를 받아 원인을 구분·설명하는 쪽임을 단계 페이지와 아이디어 페이지에 밝혔다.",
+    "f13 — Shida 외 문장에 IEEE/SICE SII 2025 게재를 병기하고, 운반 불가 판정·학습은 로봇 쪽 운반 능력과 맞닿은 연계 대상이며 배정에서 실행 불가 작업을 일시 배제하는 규칙 사례로만 다룬다고 적었다.",
+    "ref-459 각주 — 단계 페이지 각주 제목 뒤에 '발행일은 권고안 기준이며 열람본은 W3C data-shapes 저장소 편집자 초안으로 권고안 문구와의 일치는 미확인'을 병기하고 본문에도 같은 사실을 적었다.",
+    "원문 미열람 표시 — ref-236·350·351·352·353·598·717·718·719·720·721·722·723·726 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
+    "온톨로지 변경 거부 — 개념 '배정 실패'를 초안 2절에 넣지 않고 업무 분해·배정 설계 초안 6절에 근거 f1·f3·f6·f22, dispatch 값 failed_to_assign·errors 및 배정 개념과의 경계, 사유 유형 값이 추정 근거라는 점을 적은 질문으로 추가했으며 초안 버전은 v0.7 로 두고 6절만 갱신했다.",
+    "아이디어 2 5절 — '온톨로지 질의 결과에 따른 되묻기' 소절에서 아이디어 1(선언·운용 능력)·아이디어 3(장소 슬롯) 연결을 구조 언급 수준이라고 밝히고 완료 조건이 아직 충족되지 않았다고 적었다.",
+    "세부영역 페이지 비수정 — 13·18·27·5 세부영역 페이지는 pages 에 넣지 않고 area_reflection_proposals 로만 냈으며, 27. AI·학습·적응과 모델 운영 8절 제안에 Plan-Failure-Bench 를 신뢰도 low 참고 사례로 표시했다.",
+    "단계 3 페이지 — q3-03 을 답함(답한 실행 2026-09-25-74, 답 위치 #q3-03)으로 바꾸고 3절 소제목 '### q3-03 … {#q3-03}'을 두었으며, 6절을 '다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 미완, 실험 계획 없음, 열린 질문 q3-04~q3-13)'로 쓰고 상태 줄을 2절 표와 같은 열린 질문 10건·답한 질문 3건으로 맞췄다."
+  ],
+  "standards_updates": [
+    {
+      "name": "Open-RMF rmf_task_ros2 디스패처·입찰 경매자(평가기)",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+      "related_areas": [
+        13,
+        9
+      ],
+      "summary": "작업 입찰을 받아 평가기로 플릿을 고르고, 입찰이 없으면 배정 상태를 FailedToAssign 으로 기록하는 Open-RMF 디스패처. 기본 평가기 표현은 디스패처 코드(QuickestFinish)와 헤더 문서(LeastFleetDiffCost)가 다르다.",
+      "ref_id": "ref-656"
+    },
+    {
+      "name": "Rasa 폴백·사람 인계(Fallback and Human Handoff, Rasa 3.x)",
+      "kind": "오픈소스",
+      "org": "Rasa Technologies",
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx",
+      "related_areas": [
+        18,
+        27
+      ],
+      "summary": "의도 분류 신뢰도 문턱 아래의 폴백, 두 단계 폴백(의도 확인·재진술), 최종 폴백과 선택 구성인 사람 인계를 설명하는 Rasa 문서.",
+      "ref_id": "ref-658"
+    }
+  ],
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "Open-RMF 디스패처는 무입찰 시 FailedToAssign·오류(코드 10)를 기록하고 작업을 수행하지 않는다(f1). 여러 입찰은 평가기로 고르며 기본값은 디스패처 코드(QuickestFinishEvaluator 지정)와 Auctioneer.hpp 문서(미지정 시 LeastFleetDiffCostEvaluator)를 병기, 순위 기준 미확인(f4). 작업 요청 fleet_name 으로 허용 플릿 지정(f5). 실행 불가 작업의 일시 배제 학습(f13, 운반 능력은 연계 대상). 후보 여럿일 때 계산 가능한 목적 기준은 평가기로 자동 결정하고 사용자만 아는 정보에 걸릴 때만 되묻는 경계와 분류 원문 질문과의 연결(f23·f24, 추정). 27. AI·학습·적응과 모델 운영과 양쪽 연결."
+    },
+    {
+      "area_no": 18,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "배정 실패 시 원인 설명과 사용자가 바꿀 수 있는 항목만 되묻는 범위(f22, 추정). Rasa 폴백(문턱 설정 예 0.7, 두 단계 폴백, 최종 폴백 기본은 기본 응답·대화 초기화이고 사람 인계는 선택 구성, f18 추정). 불필요한 되묻기를 줄이는 내성적 계획(f16)과 EVPI 기반 질문 선택(f17, 게재처 미확인, 저자 보고). CE-MRS 대조적 설명의 22명 참가 대면 사용자 연구(수색·구조 영역, f12)."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 과 해법기를 함수 호출로 결합해 IIS 로 불능 원인을 찾고 설명·수정 제안을 내는 OptiChat(f11), 내성적 계획과 등각 예측 결합(f16), 명세·모델 불확실성을 나눈 EVPI 기반 되묻기(f17). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 양쪽 연결."
+    },
+    {
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "해결 불가 설명 연구: Göbelbecker 외 excuse(ICAPS 2010, f9), Sreedharan 외 plan advice 해결 불가 설명(f10), CE-MRS(IEEE RA-L 9권 2024, f12). 계획 실패 유형 벤치마크 Plan-Failure-Bench(f19)는 개인 연구자의 동료심사 전 자료로 신뢰도 low 참고 사례로만 표시."
+    },
+    {
+      "area_no": 5,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "온톨로지 기반 실행 가능성 판정(ReasonerOutput, f7)이 후보 없음의 원인을 SHACL 검증 보고 같은 제약 단위 형식(f8, 편집자 초안 기준)으로 13. 작업 배정 — MRTA 에 돌려주는 연결과, 제조사 광고 능력과 측정 운용 능력을 함께 표현하는 RCO(f21, oq-024 관련)."
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+    "ontology_draft_version": "0.7",
+    "backlog_updates": [
+      {
+        "id": "q3-03",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-03"
+      },
+      {
+        "id": "q4-11",
+        "status": "열림",
+        "answer_link": null,
+        "question": "배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생)",
+        "stage": 4,
+        "origin": "f22"
+      },
+      {
+        "id": "q3-14",
+        "status": "열림",
+        "answer_link": null,
+        "question": "온톨로지 기반 실행 가능성 판정이 후보를 하나도 내지 않을 때, 어느 능력·제약 때문인지를 SHACL 검증 보고처럼 제약 단위로 돌려주는 형식을 배정기 독립 출력(ReasonerOutput)에 둘 수 있는가, 그 형식에서 챗봇이 사용자에게 보여 줄 설명을 만들 수 있는가? (q3-03 에서 파생)",
+        "stage": 3,
+        "origin": "f8"
+      },
+      {
+        "id": "q5-08",
+        "status": "열림",
+        "answer_link": null,
+        "question": "후보가 여럿일 때 '시스템이 계산할 수 있는 차이는 자동 결정, 사용자만 아는 정보에 걸린 차이만 되묻기' 규칙을 물류 지시 시나리오에 적용하면 되묻기 횟수와 오배정은 모든 경우를 묻거나 묻지 않는 방식에 비해 어떻게 달라지는가? (q3-03 에서 파생)",
+        "stage": 5,
+        "origin": "f23"
+      }
+    ],
+    "log_entry": "답한 질문: q3-03(후보 없음은 원인 설명과 사용자가 바꿀 수 있는 항목만 되묻기, 후보 여럿은 계산 가능한 목적 기준이면 평가기로 자동 결정; 근거 f1~f18·f20~f26, 종합 f22·f23 은 추정, f19 는 신뢰도 low 참고 사례, 페이지 신뢰도 low) / 새 질문: q3-14(f8), q4-11(f22), q5-08(f23); 일반 열린 질문 1건(배정 실패의 상위 업무 시스템 반환, 영역 13. 작업 배정 — MRTA·1. 주문·업무 시스템 연계) / 온톨로지 변경: 없음(v0.7 유지; 개념 '배정 실패'(f1·f3·f6·f22)는 진행 상태·배정 개념과 경계 중복, 사유 유형 추정으로 검증 거부 → 초안 6절 질문) / 완료 조건 평가: 미충족(부족: 아이디어 2 5절의 다른 아이디어와의 연결(구조 언급 수준), 실험 페이지의 실험 계획; 열린 질문 q3-04~q3-13) / 세부영역 반영 제안: 13. 작업 배정 — MRTA(6절), 18. 사람–로봇 협업·운영 인터페이스(6절), 27. AI·학습·적응과 모델 운영(6절·8절), 5. 로봇 능력·작업 온톨로지(10절) 5건 / 다음 실행 제안: q3-04, q3-12(q3-13 중복 정리), 단계 3 실험 계획 제안과 다른 아이디어 연결 근거 조사",
+    "overview_progress": "단계 3 진행 중 — 열린 질문 10(단계 페이지 표 기준, 백로그에는 중복 q3-13 포함 11), 답함 3, 완료 조건 미충족"
+  }
+}
