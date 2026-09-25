@@ -32,7 +32,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
       "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
       "budget_chars": 1400,
-      "summary": "출하 단계에서 제조사가 다른 AMR로 출하 팔레트를 운반하는 가상 시나리오로, 요청 변환·제어 수준 선택·완료 확인·오류 변환에 이 영역이 관여한다. [추정][^ref-031][^ref-260]",
+      "summary": "출하 단계에서 제조사가 다른 AMR로 출하 팔레트를 운반하는 가상 시나리오로, 요청 변환·제어 수준 선택·완료 확인·오류 변환에 이 영역이 관여한다. [추정][^ref-031][^ref-153]",
       "planned_findings": [
         "f32",
         "f34",
@@ -84,7 +84,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 1200,
-      "summary": "Franke 외(2023)는 VDA 5050이 주변 설비 인터페이스를 다루지 않는다고 지적했다. [사실][^ref-267] 국내 사례는 기사·벤더 자료뿐이라 벤더 주장으로 둔다.",
+      "summary": "VDA 5050이 주변 설비 인터페이스를 다루지 않는다는 한계를 지적한 연구가 있다. [사실][^ref-267] 이번 조사에서 찾은 국내 자료는 기사·벤더 발표뿐이다.",
       "planned_findings": [
         "f24",
         "f25",
@@ -99,20 +99,21 @@
     {
       "path": "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
       "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
-      "budget_chars": 800,
-      "summary": "이종 제조사를 잇는 ROP의 어댑터는 명령·상태·오류 변환, 좌표 변환, 완료 확인, 교통·설비 조정 인터페이스를 맡고, 로컬 주행 기능은 연계 대상으로 로봇·제조사에 남는 것으로 보인다. [추정][^ref-031][^ref-258][^ref-105][^ref-260]",
+      "budget_chars": 850,
+      "summary": "이종 제조사를 잇는 ROP의 어댑터는 명령·상태·오류 변환, 좌표 변환, 완료 확인, 교통·설비 조정 인터페이스를 맡고, 로컬 주행 기능은 연계 대상으로 로봇·제조사에 남는 것으로 보인다. [추정][^ref-031][^ref-258][^ref-105][^ref-153]",
       "planned_findings": [
         "f35",
         "f17",
         "f24",
-        "f10"
+        "f10",
+        "f9"
       ]
     },
     {
       "path": "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "budget_chars": 900,
-      "summary": "능력 선언은 5. 로봇 능력·작업 온톨로지, 좌표 대응은 6. 지도·공간·위치 모델, 주문·오류 상태는 12. 명령·작업 실행의 신뢰성과 이어진다. [추정][^ref-031][^ref-105]",
+      "summary": "능력 선언은 5. 로봇 능력·작업 온톨로지, 좌표 대응은 6. 지도·공간·위치 모델, 주문·오류 상태는 12. 명령·작업 실행의 신뢰성과 이어지는 것으로 보인다. [추정][^ref-031][^ref-105]",
       "planned_findings": [
         "f18",
         "f7",
@@ -143,7 +144,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안(2026-09-25-02) 7절 반영, 페이지 상태 표식 추가"
+      "diff_summary": "섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안 7절 반영, 페이지 상태 표식 추가. 2차 수정: 9절 설비 행 태그 분리·free_fleet 문장 태그와 ref-264 각주 추가, 8절 요약 문장 교체"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area09-s7.md",
@@ -155,7 +156,7 @@
       "path": "docs/topics/2026/2026-09-25-area09-s8.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 9. 로봇·제조사 관제 연동 의 \"8. 대표 연구와 자료\" 절(1,706자)을 옮겼다"
+      "diff_summary": "자동 분리: 9. 로봇·제조사 관제 연동 의 \"8. 대표 연구와 자료\" 절(1,706자)을 옮겼다. 2차 수정: 1절·3절 첫 요약 문장을 ref-267 범위 문장과 조사 범위 설명 두 문장으로 교체"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area09-s6.md",
@@ -179,7 +180,7 @@
       "path": "docs/topics/2026/2026-09-25-area09-s10.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 9. 로봇·제조사 관제 연동 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(815자)을 옮겼다. 세부영역 링크를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다"
+      "diff_summary": "자동 분리: 9. 로봇·제조사 관제 연동 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(815자)을 옮겼다. 세부영역 링크를 주제 페이지 위치 기준 경로로 고쳤다. 2차 수정: 12. 명령·작업 실행의 신뢰성 연결 문장 태그를 [추정]으로"
     }
   ],
   "changelog_entry": "2026-09-25 | 9. 로봇·제조사 관제 연동 | 영역 심화: 3~11절 신규 작성(제어 수준·어댑터 API·VDA 5050 3.0.0·MassRobotics·출하 시나리오), 트랙 반영 제안 1건 반영 | run 2026-09-25-20",
@@ -406,7 +407,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-260",
+      "id": "ref-153",
       "org": "Open Robotics",
       "title": "Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -476,7 +477,9 @@
       "accessed": "2026-09-25",
       "summary": "zenoh 로 각 로봇의 Nav2·Nav1 내비게이션 스택에 직접 접속하는 Python 플릿 어댑터의 README.",
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area09-s6.md"
+        "docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md",
+        "docs/topics/2026/2026-09-25-area09-s6.md",
+        "docs/topics/2026/2026-09-25-area09-s7.md"
       ],
       "source_unopened": false
     },
@@ -710,8 +713,8 @@
     "8절: 국내 표준(TTA·KS)이나 공공 연구기관 자료 가운데 이기종 로봇 관제 인터페이스를 다룬 것 — 이번에는 기사·벤더 자료뿐이었다.",
     "8절: ref-136 의 120 ms 지연 측정 조건과 ref-268 의 저자·권호 확인(원문 열람).",
     "대분류 C. 연결·실행 기반 페이지의 '다른 대분류와의 연결' 절은 C 대분류 세부영역 심화가 끝난 뒤로 미룬다(예산·규칙).",
-    "퍼블리셔: 신규 참고문헌 ref-258~ref-272 가 미게시 실행의 번호와 충돌하지 않는지 확인이 필요하다(1차 검증 지적).",
-    "pipeline 담당: 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크를 주제 페이지 위치 기준으로 다시 써야 한다(이번 형식 검증 실패 원인)."
+    "퍼블리셔: 신규 참고문헌 ref-258~ref-272 가 미게시 실행의 번호와 충돌하지 않는지 확인이 필요하다(1차 검증 지적). ref-228·ref-230 의 게시 신뢰도(high)를 이번 medium 으로 낮출지도 판단이 필요하다(2차 검증 참고).",
+    "pipeline 담당: 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크를 주제 페이지 위치 기준으로 다시 쓰고, reference_updates 의 cited_by 에 분리 주제 페이지를 더하며, '아래 표는'·'(6절)' 같은 원 절 기준 지시어를 처리해야 한다(2차 검증 참고)."
   ],
   "fixes_applied": [
     "f4: 어댑터 역할만 [사실] — 4절 플릿 어댑터 항목에 '하드웨어별 인터페이스와 RMF 범용 인터페이스 사이의 다리'만 [사실][^ref-259]로 쓰고 ROS 1·ROS 2·REST·XMLRPC·SQL DB 연동 경로 열거는 넣지 않았다.",
@@ -726,12 +729,16 @@
     "f19: 7절 VDA 5050 3.0.0 행에 발행일 '미확인'과 oq-005 를 적고, 11절에 oq-005 를 열림 상태로 연결했다(해결로 바꾸지 않음).",
     "트랙 반영 제안: 7절 표에 팩트시트를 3.0.0 명세 근거 f18 [사실][^ref-031][^ref-228]로, MassRobotics 메시지를 identityReport·statusReport(f20)로 적고, 오류·action 보고(f14·f16)와 Open-RMF 작업 능력·사용자 정의 동작(f7·f5)도 반영했다.",
     "f32~f36: [추정] 태그를 유지했고, 5절 시나리오를 '출하' 단계와 여섯 항목 표로 썼으며(작업 대상은 해당 없음), f35 는 9절 표에 '연계 대상:' 표시로 두고, f34 뒤에 '두 방식의 처리량·비용을 정량 비교한 자료는 찾지 못했다'를 남겼다.",
-    "인용: ref-031·ref-260 을 포함한 모든 출처에서 직접 인용을 쓰지 않고 evidence_excerpt 내용을 한국어로 재서술했다.",
+    "인용: ref-031·ref-153 을 포함한 모든 출처에서 직접 인용을 쓰지 않고 evidence_excerpt 내용을 한국어로 재서술했다.",
     "각주·참고문헌: ref-032·136·228·230·261·265·266·267·268·269·270·271·272 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다(ref-261 summary 도 '원문 미열람. '으로 시작).",
     "용어집: glossary_updates 에 'VDA 5050' 항목을 action update 로 내고 정의를 '서로 다른 제조사의 AGV·AMR을 하나의 관제로 운용하기 위한 제조사 중립 통신 인터페이스'로 바꿨다(근거 ref-031·ref-267).",
     "용어집: MQTT 후보의 term_ko 를 '메시지 큐잉 원격 측정 전송'으로 바꾸고 term_en 에 Message Queuing Telemetry Transport (MQTT)를 두었으며 본문 4절도 같은 표기로 썼다.",
     "10절: 연결 여덟 개를 모두 번호와 이름(5. 로봇 능력·작업 온톨로지, 6. 지도·공간·위치 모델, 10. 설비·건물 시스템 연동, 11. 분산 시스템·통신·컴퓨팅 구조, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 15. 다중 로봇 경로·교통 관리 — MAPF, 20. 예외 복구·재계획·업무 연속성)으로 쓰고 related_areas 와 맞췄다.",
     "분량 초과 자동 분리: 9. 로봇·제조사 관제 연동 본문 10,808자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,585자",
-    "형식 검증 재작성: docs/topics/2026/2026-09-25-area09-s10.md 의 세부영역 링크 9개(1절 1개, 3절 8개)를 주제 페이지 위치 기준 ../../categories/<대분류 slug>/<파일>.md 경로로 고쳤다. 세부영역 페이지 9절의 오탈자 '이이종'을 '이종'으로 고치고, 세부영역 페이지 프런트매터 sources 를 남은 본문 각주 정의(11건)와 일치시켰다. 주장·태그·각주 내용은 바꾸지 않았다."
+    "형식 검증 재작성: docs/topics/2026/2026-09-25-area09-s10.md 의 세부영역 링크 9개(1절 1개, 3절 8개)를 주제 페이지 위치 기준 ../../categories/<대분류 slug>/<파일>.md 경로로 고쳤다. 세부영역 페이지 9절의 오탈자 '이이종'을 '이종'으로 고치고, 세부영역 페이지 프런트매터 sources 를 남은 본문 각주 정의(11건)와 일치시켰다. 주장·태그·각주 내용은 바꾸지 않았다.",
+    "2차: 9절 표 '시설·설비 제어' 행 — 'ROP가 직접 맡는 것' 칸을 '로봇 작업과 설비를 잇는 별도 인터페이스. [추정][^ref-031][^ref-258][^ref-105][^ref-153]'과 별도 문장 'VDA 5050은 AGV·관제와 주변 설비 사이 인터페이스를 다루지 않는다. [사실][^ref-267]'로 나눴다.",
+    "2차: 8절 요약 문장 — 세부영역 페이지 8절과 주제 페이지 2026-09-25-area09-s8 의 1절 첫 항목·3절 첫 문장을 'VDA 5050이 주변 설비 인터페이스를 다루지 않는다는 한계를 지적한 연구가 있다. [사실][^ref-267]'과 태그·각주 없는 '이번 조사에서 찾은 국내 자료는 기사·벤더 발표뿐이다.'로 바꿨다(이종 플릿 중앙 제어 구조는 3절 목록의 ref-268 항목에 이미 [사실][^ref-268]로 있어 요약에서는 뺐다).",
+    "2차: 주제 페이지 2026-09-25-area09-s10 3절 '12. 명령·작업 실행의 신뢰성' 항목의 태그를 [사실]에서 [추정]으로 바꿨다(각주 [^ref-031] 유지).",
+    "2차: 세부영역 페이지 9절 마지막 단락 free_fleet 문장 끝에 [추정][^ref-264]를 붙이고, 13절에 ref-264 각주 정의(주제 페이지 s6 의 정의 줄 그대로, 원문 미열람 표기 없음)를 더했으며, 프런트매터 sources 에 ref-264 를 넣고 reference_updates 의 ref-264 cited_by 에 세부영역 페이지를 더했다."
   ]
 }

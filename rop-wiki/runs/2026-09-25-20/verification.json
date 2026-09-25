@@ -42,7 +42,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: ref-260 raw 원본에 navigate(robot_name, position, map, speed_limit)·start_activity·stop·position([x, y, theta])·map·battery_soc·is_command_completed 와 navigate·stop·execute_action 콜백이 있다. 발행일 미확인."
+      "note": "확인: ref-153 raw 원본에 navigate(robot_name, position, map, speed_limit)·start_activity·stop·position([x, y, theta])·map·battery_soc·is_command_completed 와 navigate·stop·execute_action 콜백이 있다. 발행일 미확인."
     },
     {
       "finding_id": "f6",
@@ -50,7 +50,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: ref-260 원본의 비동기 갱신 루프 문장(한 로봇의 상태 조회 오류가 다른 로봇 갱신을 막지 않음)."
+      "note": "확인: ref-153 원본의 비동기 갱신 루프 문장(한 로봇의 상태 조회 오류가 다른 로봇 갱신을 막지 않음)."
     },
     {
       "finding_id": "f7",
@@ -320,7 +320,7 @@
   "quotation_check": {
     "ok": true,
     "issues": [
-      "브리프 evidence_excerpt 가 ref-031(f11~f19, f31)과 ref-260(f5·f6)에서 여러 구절을 인용한다. 페이지에서는 출처당 직접 인용 1회만 허용되므로 나머지는 재서술해야 한다(수정 지시로 처리)"
+      "브리프 evidence_excerpt 가 ref-031(f11~f19, f31)과 ref-153(f5·f6)에서 여러 구절을 인용한다. 페이지에서는 출처당 직접 인용 1회만 허용되므로 나머지는 재서술해야 한다(수정 지시로 처리)"
     ]
   },
   "corrections_applied": [],
@@ -338,7 +338,7 @@
     "f19: VDA 5050 3.0.0 발행일은 '미확인'으로 쓰고 oq-005(출처 충돌)를 11절에 연결한다. oq-005 를 해결로 바꾸지 않는다.",
     "7절 트랙 반영 제안(2026-09-25-02) 반영: 팩트시트는 2.0.0 기준 [추정] 대신 3.0.0 명세 근거(f18, [사실])로, MassRobotics 메시지 명칭은 'setup·status' 대신 스키마 명칭 identityReport·statusReport(f20)로 적는다.",
     "f32·f33·f34·f35·f36: [추정] 태그를 유지하고, 5절 시나리오는 '출하' 단계와 여섯 항목(시작 조건·수행 자원·완료·인계·예외·성과)을 명시하며, f35 는 '연계 대상:' 표시를 유지해 9절에 둔다. f34 에는 '두 방식의 처리량·비용 정량 비교 자료는 찾지 못함'을 남긴다.",
-    "인용: ref-031 과 ref-260 에서 직접 인용은 각 1회만 쓰고 나머지 evidence_excerpt 내용은 한국어로 재서술한다 — 출처당 직접 인용 1회 규칙.",
+    "인용: ref-031 과 ref-153 에서 직접 인용은 각 1회만 쓰고 나머지 evidence_excerpt 내용은 한국어로 재서술한다 — 출처당 직접 인용 1회 규칙.",
     "각주·참고문헌: 브리프에서 fetched:false 인 ref-032·ref-136·ref-228·ref-230·ref-261·ref-265·ref-266·ref-267·ref-268·ref-269·ref-270·ref-271·ref-272 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경 규칙.",
     "용어집: 'VDA 5050' 항목 정의를 f11 근거로 '서로 다른 제조사의 이동로봇을 하나의 관제로 운용하기 위한 제조사 중립 통신 인터페이스' 취지로 갱신(action: update)한다 — 현재 정의는 팩트시트 메시지의 정의다.",
     "용어집 후보 'MQTT'의 term_ko 를 음차 '엠큐티티' 대신 뜻을 옮긴 명칭(예: '메시지 큐잉 원격 측정 전송')으로 바꾸고 영문 Message Queuing Telemetry Transport (MQTT)를 병기한다 — 용어집 표기 관례.",
