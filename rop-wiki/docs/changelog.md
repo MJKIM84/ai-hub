@@ -65,6 +65,14 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신 |
+| 2026-09-25-85 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절에 실행 2026-09-25-85(q4-04 답, 초안 v0.9 유지) 한 줄 추가 |
+| 2026-09-25-85 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 |
+| 2026-09-25-85 | 생성 | [docs/glossary/expected-value-of-perfect-information.md](glossary/expected-value-of-perfect-information.md) | 용어집 항목 완전 정보의 기대 가치 |
+| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·잠정 판정표·필요 실험), 후속 질문 q5-14·q5-15, 완료 조건 표 갱신(충족 · 미승인), 출처 26건 추가, 이력 행 추가 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 3절 가설 판정 칸 갱신(가설 1·2 부분 지지(잠정), 가설 3 미판정)과 판정 규칙 단락(추정), 6절 이번 실행 요약 추가, 8절 각주 정의 추가 |
 | 2026-09-25-84 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '가설 판정 절차 (q5-03)' 소절 추가(근거 확실성 평가, 판정 값 규칙과 TRL 보조 축, 잠정 판정, 필요 실험), 절 안내 문장에 q5-03 소절 안내 추가, 기존 두 소절의 'q5-03 아직 조사하지 않았다' 구절을 새 소절 안내로 정정(2차 수정), 각주 4건 추가 |

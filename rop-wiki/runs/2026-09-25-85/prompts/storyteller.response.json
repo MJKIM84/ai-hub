@@ -1,0 +1,763 @@
+{
+  "duration_api_ms": 394745,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.7492004,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 334211,
+    "cache_read_input_tokens": 63022,
+    "output_tokens": 53145,
+    "output_tokens_details": {
+      "thinking_tokens": 13758
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 334211,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 53145,
+        "cache_read_input_tokens": 63022,
+        "cache_creation_input_tokens": 334211,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 334211
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 53145,
+      "cacheReadInputTokens": 63022,
+      "cacheCreationInputTokens": 334211,
+      "webSearchRequests": 0,
+      "costUSD": 3.7492004,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 13758,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-85\",\"outline\":[{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"3. 조사 결과 — q4-04\",\"budget_chars\":5200,\"summary\":\"확인한 자료를 이 위키가 묶으면 필수 슬롯 누락·복수 후보는 되묻기, 영향이 큰 작업은 사람 승인, 제때 풀 수 없는 불확실성·검사 불통과·승인자 부재·시간 초과는 배치 전 실행 보류로 넘기는 구성이 선택지로 보인다(신뢰도 low). [추정][^ref-350][^ref-695][^ref-031]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"4. 결론과 남은 불확실성\",\"budget_chars\":3600,\"summary\":\"되묻기·승인·보류 수단의 사실 근거와 세 경로 전환 기준 종합(추정, low)을 결론에 더하고, 물류 조건 근거 부재와 신규 검색 0회를 불확실성에 적는다.\",\"planned_findings\":[\"f1\",\"f2\",\"f6\",\"f10\",\"f17\",\"f23\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"5. 이 단계가 낳은 후속 질문\",\"budget_chars\":2600,\"summary\":\"보류 시간 한계 질문 q4-19 를 더한다.\",\"planned_findings\":[\"f19\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"6. 완료 조건 충족 현황\",\"budget_chars\":900,\"summary\":\"제한 운영 기준 행을 q4-04 답 근거로 채우되 미충족·미승인으로 둔다.\",\"planned_findings\":[\"f17\"]},{\"path\":\"docs/ideas/nl-task-chatbot.md\",\"section\":\"5. 구현 가설 — 제한 운영으로 넘기는 기준\",\"budget_chars\":2200,\"summary\":\"세 경로 전환 기준·규칙과 점수 병행·보류 시점·승인 한정을 이 위키의 종합(추정)으로 싣는다. [추정][^ref-350][^ref-697][^ref-031]\",\"planned_findings\":[\"f17\",\"f18\",\"f19\",\"f20\",\"f1\",\"f2\",\"f7\",\"f10\",\"f12\"]},{\"path\":\"docs/tracks/nl-task-chatbot/task-model-draft.md\",\"section\":\"6. 미해결 모델링 질문\",\"budget_chars\":600,\"summary\":\"'사용자 확인' 질문에 q4-04 답(f17·f19, 추정)을 연결하고 v0.9 를 유지한다.\",\"planned_findings\":[\"f17\",\"f19\"]},{\"path\":\"docs/tracks/nl-task-chatbot/index.md\",\"section\":\"6. 살아있는 산출물 링크\",\"budget_chars\":300,\"summary\":\"q4-04 답과 초안 v0.9 유지를 한 줄로 덧붙인다.\",\"planned_findings\":[]}],\"pages\":[{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신\",\"patches\":[{\"section\":\"2. 질문 목록\",\"action\":\"replace\",\"content\":\"이 단계의 시작 질문 4개(q4-01~q4-04)와 앞 단계 실행에서 이 단계로 보낸 질문(q4-05~q4-12), 실행 2026-09-25-79 의 후속 질문(q4-13·q4-14), 실행 2026-09-25-81 의 후속 질문(q4-15·q4-16), 실행 2026-09-25-83 의 후속 질문(q4-17·q4-18), 실행 2026-09-25-85 의 후속 질문(q4-19)이다. q4-01은 사용자 요청의 시작 질문 문구 그대로이고, q4-02~q4-04는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 질문 문구와 상태, 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \\\"조사 중\\\"은 이 표에서 \\\"열림\\\"으로 표시하고 \\\"폐기\\\"는 표에서 빼고 백로그에만 남긴다. 제기 근거 칸에는 finding id 또는 \\\"사용자\\\"만 쓰고, finding 이 나온 실행 id 는 백로그에 있다. q4-09와 q4-10은 같은 질문이 백로그에 두 번 등록된 것이어서 백로그 정리가 필요하다.\\n\\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\\n|---|---|---|---|---|---|\\n| q4-01 | LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-79 | [q4-01 답](#q4-01) |\\n| q4-02 | 해석 결과를 실행 전에 검증하는 방법(스키마 검증, 온톨로지 제약 대조, 사람 확인, 모의 실행)에는 무엇이 있고 각각 어떤 오류를 잡는가? | 답함 | 사용자 | 2026-09-25-81 | [q4-02 답](#q4-02) |\\n| q4-03 | 채팅 사용자별 명령 권한(어느 로봇·구역·작업까지 지시할 수 있는가)과 지시·확인의 감사 기록은 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-83 | [q4-03 답](#q4-03) |\\n| q4-04 | 해석의 불확실성이 클 때 되묻기·사람 승인·실행 보류 같은 제한 운영으로 넘기는 기준은 무엇인가? | 답함 | 사용자 | 2026-09-25-85 | [q4-04 답](#q4-04) |\\n| q4-05 | LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때, 허용 동작 대응(Huang 외)·assertion(ProgPrompt)·계획기 검사(LLM+P) 같은 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? (q1-01 에서 파생) | 열림 | f14 | | |\\n| q4-06 | 작업자 음성 피킹의 체크 디지트·스캔처럼 동작 하나하나를 현장에서 확인받는 방식과, 자연어 지시의 해석 결과(작업·대상·로봇)를 배정 전에 요약해 확인받는 방식을 함께 둘 때 각각 어떤 오류를 잡고 확인 부담은 얼마나 늘어나는가? (q1-03 에서 파생) | 열림 | f9 | | |\\n| q4-07 | 필수 슬롯 누락은 규칙(스키마)으로 검사하고 지시의 모호성은 KnowNo·CLARA 같은 불확실성 추정으로 판단하는 식으로 두 방식을 나눠 쓸 때, 가정용 벤치마크(AmbiK)에서 보고된 모호성 탐지의 낮은 구분 성능이 물류 지시(화물·장소·기한)에서도 나타나는가, 되묻기 횟수와 오배정은 어떻게 달라지는가? (q1-04 에서 파생) | 열림 | f11 | | |\\n| q4-08 | RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생) | 열림 | f13 | | |\\n| q4-09 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) (관련: q4-03) | 열림 | f20 | | |\\n| q4-10 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) | 열림 | f20 | | |\\n| q4-11 | 배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생) | 열림 | f22 | | |\\n| q4-12 | 화물을 이미 실었거나 옮긴 작업을 채팅으로 취소할 때 되돌림 보상 작업의 생성·실행을 누가 승인하고, 지시 변경 요약 확인(무엇을 취소하고 무엇이 영향받는가)은 어떤 형식으로 보여 주는가? (q3-04 에서 파생) (관련: oq-021, q4-11) | 열림 | f23 | | |\\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (q4-01 에서 파생) (관련: q4-04) | 열림 | f22 | | |\\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? (q4-01 에서 파생) | 열림 | f5 | | |\\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생) | 열림 | f22 | | |\\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104) | 열림 | f23 | | |\\n| q4-17 | 교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (q4-03 에서 파생) (관련: q4-13) | 열림 | f21 | | |\\n| q4-18 | 채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? (q4-03 에서 파생) | 열림 | f22 | | |\\n| q4-19 | 실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (q4-04 에서 파생) (관련: q4-11, q4-13) | 열림 | f19 | | |\"},{\"section\":\"3. 조사 결과\",\"action\":\"append\",\"content\":\"실행 2026-09-25-85 가 q4-04 에 답했다. 이 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 단계 4 를 다뤘다.\\n\\n### q4-04 해석의 불확실성이 클 때 제한 운영으로 넘기는 기준 {#q4-04}\\n\\n확인한 자료를 이 위키가 묶으면, 필수 슬롯이 비었거나 문턱을 넘는 해석 후보가 둘 이상이면 되묻기, 해석은 하나로 정해졌지만 영향이 큰 작업이면 사람 승인, 사용자가 제때 풀 수 없는 불확실성·결정적 검사 불통과·승인자 부재·승인 시간 초과면 배치 전 실행 보류로 넘기고, 그 밖에는 해석 요약을 보이는 암시적 확인으로 실행하는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031] 이는 이 위키의 종합이며 세 경로를 한 번에 제시한 출처는 없고, 물류 조건 근거가 없어 이 답의 종합 신뢰도는 low 다. 이 답은 [q4-01 답](#q4-01)의 해석 게이트와 사람 확인 겹에서 어느 경로로 넘길지를 정하는 기준을 다룬다.\\n\\n```mermaid\\nflowchart LR\\n  interp[\\\"해석 결과\\\"] --> gate{\\\"결정적 검사 통과\\\"}\\n  gate -->|\\\"불통과\\\"| hold[\\\"배치 전 실행 보류\\\"]\\n  gate -->|\\\"통과\\\"| slot{\\\"필수 슬롯 누락 또는 문턱을 넘는 후보가 둘 이상\\\"}\\n  slot -->|\\\"예\\\"| ask[\\\"되묻기\\\"]\\n  slot -->|\\\"아니오\\\"| impact{\\\"영향이 큰 작업\\\"}\\n  impact -->|\\\"예\\\"| approve[\\\"사람 승인\\\"]\\n  impact -->|\\\"아니오\\\"| implicit[\\\"암시적 확인으로 실행\\\"]\\n  ask -->|\\\"제때 풀 수 없음\\\"| hold\\n  approve -->|\\\"승인자 부재·시간 초과\\\"| hold\\n  approve -->|\\\"승인\\\"| run[\\\"배치\\\"]\\n  implicit --> run\\n  hold -->|\\\"보류 한계 초과\\\"| exit[\\\"사람 인계 또는 취소(ROP 판단)\\\"]\\n```\\n\\n위 흐름도는 이 위키가 직접 그린 가설 구성이며 출처의 그림을 옮긴 것이 아니다.\\n\\n#### 되묻기로 넘기는 기준\\n\\n- KnowNo 는 LLM 계획기가 낸 선택지 가운데 등각 예측으로 정한 문턱을 넘는 것이 둘 이상이면 사람에게 도움을 요청하고 하나면 스스로 실행한다(가정·실험실 조건). [사실][^ref-350]\\n- CLARA 는 LLM 불확실성과 상황 맥락으로 명령을 명확·모호·수행 불가로 나누어, 모호한 명령에는 질문을 만들어 사용자와 대화하고 수행 불가능한 명령은 거절한다. 프로젝트 페이지와 논문은 같은 저자라 독립 교차 확인이 아니다. [사실][^ref-352][^ref-353]\\n- 내성적 계획(Introspective Planning, 2024-02)은 사후 추론 예시 지식 기반으로 LLM 불확실성을 과업 모호성에 맞추고 등각 예측과 결합해 성공 보장을 유지하면서 불필요한 되묻기를 줄였다고 저자들이 보고했다(원문 미열람). [사실][^ref-663]\\n- SAGE-Agent(arXiv 2511.08798, 게재처 미확인)는 질문마다 완전 정보의 기대 가치(Expected Value of Perfect Information, EVPI)와 질문 비용을 따져 되물을 질문을 고르며, 기준선 대비 질문 수를 1.5~2.7배 줄였다고 보고했다(저자 보고값, 원문 미열람, 도구 호출 조건). [사실][^ref-664]\\n- AmbiK 논문 저자들은 기존 모호성 탐지 방법의 구분 점수가 대부분 10% 미만이고 가장 높은 값도 Llama-3-8B 에서 LofreeCP 44%, KnowNo 40%였다고 보고했다(저자 보고값, 원문 미열람, 주방 텍스트 작업 조건, 독립 재현 미확인). [사실][^ref-355]\\n- Rasa 는 의도 분류 신뢰도가 문턱(기본 0.7) 아래면 폴백으로 넘어가고, 두 단계 폴백에서는 추정한 의도를 사용자에게 확인받고 부정하면 재진술을 요청한다. 사람 인계는 기본 동작이 아니라 최종 폴백의 예시로 제시되며 채널별로 사용자가 구현한다(발행일 미확인, 확인일 2026-09-25 기준). [사실][^ref-658]\\n\\n#### 사람 승인으로 넘기는 조건\\n\\n영향이 큰 행동 전 사람 승인(OWASP LLM06:2025), 도구 호출을 거부할 수 있는 사람과 사용자 확인·호출 전 입력 표시 권고(MCP 명세 2025-06-18판), 설정한 도구 호출에서 멈추고 승인·인자 수정·거부·직접 응답으로 결정하게 하는 중단점(LangChain)은 [q4-01 답](#q4-01)에 정리한 그대로다. [사실][^ref-695][^ref-696][^ref-697]\\n\\n#### 실행 보류의 수단 (로봇 쪽 실행은 연계 대상)\\n\\n- VDA 5050 3.0.0(공식 저장소 main 판, 확인일 2026-09-25)은 모든 이동로봇이 cancelOrder·startPause·stopPause 순간 동작을 지원하게 하고, waitForTrigger 동작으로 관제의 트리거가 올 때까지 대기시키되 시간 초과 처리와 필요 시 주문 취소를 관제의 책임으로 두며, 재시도 가능 상태(RETRIABLE)의 동작은 관제나 운영자의 개입을 기다린다. [사실][^ref-031]\\n- 같은 명세는 관제가 풀어 준 베이스는 바꿀 수 없어 이미 실행된 것으로 가정해야 한다고 본다. 운용 모드 INTERVENED 에서는 관제가 로봇을 제어하지 않으며, 관제는 주문·주문 갱신은 보낼 수 있으나 순간 동작은 cancelOrder 만 보낼 수 있다. [사실][^ref-031]\\n- 로봇의 일시 정지·대기·재시도 실행은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며, ROP 는 보류 지시와 시간 초과 판단(취소·사람 인계)만 맡는다. [추정][^ref-031]\\n- 이를 묶으면 실행 보류는 베이스를 풀어 주기 전에 걸고, 이미 실행 중인 작업은 일시 정지나 트리거 대기로 멈추되 보류 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다. 이는 이 위키의 종합이며 물류 조건 근거는 없다. [추정][^ref-031][^ref-697]\\n\\n#### 사람 승인의 한계와 규정\\n\\n자세한 서술은 [q4-01 답](#q4-01)의 '사람 승인의 한계와 규제'와 같고 여기서는 요지만 둔다.\\n\\n- 계획 후 실행 방식 LLM 에이전트에서 그럴듯해 보이는 계획에 대한 사용자 신뢰가 잘못 보정되기 쉬웠다는 보고가 있다(일상 비서 시뮬레이션 조건, 저자 보고, 원문 미열람). [사실][^ref-713]\\n- 컴퓨터 사용 에이전트의 감독 전략이 문제 행동을 보이게 하는 데는 영향을 주었지만 보인 뒤 멈추게 하는 데는 영향이 작았다고 보고한 것으로 보인다(저자·조건별 수치 미확인, 원문 미열람). [추정][^ref-714]\\n- EU AI Act 제14조 제4항 (b)호는 감독하는 사람이 자동화 편향을 계속 인식할 수 있게 설계하도록 요구하는 것으로 보인다(제3자 조문 게재본 기준, EUR-Lex 원문 미확인, 물류 배정 AI 의 고위험 해당 여부 미확인). [추정][^ref-715]\\n- 한국 인공지능기본법 제34조는 고영향 인공지능 사업자가 사람의 관리·감독 조치를 이행하도록 정한다(시행령 세부 미확인, 고영향 해당 여부는 [열린 질문](../../open-questions.md) oq-105). [사실][^ref-620]\\n- Sagawa 외(INTERSPEECH 2004)는 명시적·최종·암시적 확인 방식을 비교했다(우열·수치 미확인). [사실][^ref-717]\\n\\n#### 세 경로 전환 기준 (이 위키의 종합)\\n\\n| 경로 | 넘기는 조건 | 사용자에게 보이는 것 | 근거 사례 |\\n|---|---|---|---|\\n| 되묻기 | 필수 슬롯 누락, 문턱을 넘는 해석 후보가 둘 이상 | 빠진 항목이나 후보 해석을 묻는 질문 | Rasa 폼·폴백, KnowNo, CLARA |\\n| 사람 승인 | 해석은 하나로 정해졌지만 영향이 큰 작업 | 해석 요약과 도구 입력, 승인·수정·거부 | OWASP LLM06:2025, MCP 도구 명세, LangChain 사람 참여 미들웨어 |\\n| 배치 전 실행 보류 | 사용자가 제때 풀 수 없는 불확실성, 결정적 검사 불통과, 승인자 부재, 승인 시간 초과 | 보류 사유 | LangChain 중단점, VDA 5050 대기·일시 정지(연계 대상) |\\n| 암시적 확인으로 실행 | 위 조건에 해당하지 않는 일상 지시 | 해석 요약을 응답에 되풀이 | [q4-01 답](#q4-01)의 차등 확인 종합 |\\n\\n위 표는 이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다. 세 경로를 한 번에 제시한 출처는 없고 물류 조건 근거가 없다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031]\\n\\n- 불확실성 점수의 문턱은 보정 데이터 분포에 기대고(재보정 주기는 [열린 질문](../../open-questions.md) oq-107) 가정 벤치마크에서 모호성 탐지 구분 성능이 낮게 보고되었으므로, 제한 운영 전환은 불확실성 점수 하나에 맡기지 말고 필수 슬롯 누락·영향 작업 목록 같은 규칙 조건과 함께 두는 편이 맞는 것으로 보인다. 이는 이 위키의 종합이며 물류 지시 조건 근거는 없다. [추정][^ref-350][^ref-355][^ref-663][^ref-664]\\n- 명시적 승인으로 넘기는 작업을 영향이 큰 작업으로 한정하고 승인 화면에 결정적 검사 결과와 불확실성의 이유를 함께 보여 주는 것이 승인 피로를 줄이는 선택지로 보인다. 이는 [q4-01 답](#q4-01)의 사람 확인 범위 종합과 같은 방향의 이 위키의 종합이며, 물류 관제 요원의 승인 행동을 잰 자료는 없다. [추정][^ref-713][^ref-714][^ref-715][^ref-717][^ref-695]\\n\\n#### 분류 원문 질문과의 연결\\n\\n> 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]\\n\\n되묻기·승인·보류 중에는 배정을 미리 확정하지 않고, 해소 뒤 그 시점의 로봇 상태로 배정을 계산하면 보류 동안 가장 가까운 로봇이 다른 작업에 묶여도 전체 기준에 따라 다시 고를 수 있어 보인다. 이는 디스패처의 입찰 시점 배정과 베이스 불변을 근거로 한 이 위키의 종합이며, 보류 지연이 배정 품질에 주는 영향을 잰 자료는 확인하지 못했고 물류 조건 근거도 없다. [추정][^ref-656][^ref-031]\\n\\n#### 설명용 시나리오\\n\\n다음은 설명을 위한 가상의 시나리오이다(설명용 가정 사례, 현장 수치 없음).\\n\\n**물류 흐름 단계:** 피킹\\n\\n**시나리오:** 피킹 구역 관리자의 모호한 지시와 영향이 큰 지시를 제한 운영 경로로 나누기\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 관리자가 채팅으로 '급한 거 먼저 도크로'라고 지시하면 대상 화물·도크 슬롯이 비어 되묻기로 넘기는 흐름이 가능해 보인다. [추정][^ref-356][^ref-350] |\\n| 작업 대상 | 피킹이 끝난 토트(설명용 가정) |\\n| 수행 자원 | 되묻기·승인이 풀릴 때까지 배정을 확정하지 않고, 해소 뒤 그 시점의 로봇 상태로 배정을 계산하는 분담이 선택지로 보인다. [추정][^ref-656][^ref-031] |\\n| 제약 | '진행 중인 3번 구역 운반 전부 취소'처럼 다른 사람의 진행 작업을 바꾸는 지시는 사람 승인으로, 승인자가 응답하지 않으면 배치 전 보류로 넘기는 흐름이 가능해 보인다. 이미 풀어 준 베이스는 실행된 것으로 가정해야 하므로, 대상 로봇이 이미 화물을 실은 실행 중 작업은 배치 전 보류가 아니라 일시 정지·트리거 대기로 멈추는 경로로 다루는 것이 선택지로 보인다(로봇 쪽 실행은 연계 대상). [추정][^ref-695][^ref-031] |\\n| 완료·인계 | 해당 없음 |\\n| 예외·성과 | 보류 시간 한계를 넘기면 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보이며, 보류 지연이 처리량·납기에 주는 영향을 잰 자료는 찾지 못했다. [추정][^ref-031][^ref-697] |\\n\\n보류 시간 한계를 기한·출하 마감과 연동하는 방법은 후속 질문 q4-19 로 올렸다.\\n\\n#### 근거 공백\\n\\n이번 실행은 신규 검색 없이 기존 참고문헌만 재사용했고, 검색 범위 관찰은 이전 실행(2026-09-25-79·81·83) 기준이다. 이번 실행과 이전 단계 4 실행들이 확인한 근거는 가정·주방·도구 호출·일상 비서 조건이었고, 물류 창고 로봇 채팅 지시에서 되묻기·승인·보류로 넘기는 기준을 평가한 연구나 국내 사례는 확인되지 않았다(이 위키의 종합, 부재의 확인은 아님). [추정][^ref-355][^ref-713][^ref-664]\"},{\"section\":\"4. 결론과 남은 불확실성\",\"action\":\"replace\",\"content\":\"**결론**\\n- 에이전트 설계 지침과 도구 규격(OWASP 과도한 에이전시 항목, MCP 도구 명세, LangChain 사람 참여 미들웨어)은 영향이 큰 행동 전 사람 승인·호출 전 입력 표시·승인·수정·거부 결정을 요구하거나 제공한다. [사실][^ref-695][^ref-696][^ref-697]\\n- LLM 로봇 계획·배정 출력을 형식 논리·결정적 판정으로 거르는 가드레일 연구(Safety Chip, RoboGuard, SafePlan, SafeGate)가 있으며, 그중 SafePlan 은 배정 결과까지 검사한다. [사실][^ref-698][^ref-700][^ref-702][^ref-417]\\n- 확인 절차는 다섯 겹(해석 게이트, 제약 게이트, 사람 확인, 검증 뒤 반영, 마지막 거절)으로 두고, 확인은 배치(베이스 해제) 전에 끝내며, 사람 확인은 영향이 크거나 불확실한 작업에 한정하는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-356][^ref-695][^ref-711][^ref-031][^ref-656]\\n- JSON Schema 검증 어휘는 자료형·허용 값·수치 범위·필수 속성 같은 구조를 검사하고 [사실][^ref-748] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다. [사실][^ref-031]\\n- 실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고 각각 놓치는 오류가 있어 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-748][^ref-760][^ref-752][^ref-416][^ref-713][^ref-031]\\n- 개별 지시의 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 가져오는 구분이 분류 원문 7장과 맞는 것으로 보인다. [추정][^ref-416][^ref-757]\\n- 로봇 관제 쪽 구현은 명령 권한을 역할·동작·인가 그룹(Open-RMF 웹 API 서버)이나 인클레이브·노드별 허용·거부 규칙(SROS 2, 기본 거부)으로 표현하고, OWASP LLM06:2025 는 허용 여부를 LLM 이 아니라 하위 시스템에서 사용자 권한 맥락으로 집행하라고 권고한다. [사실][^ref-762][^ref-579][^ref-695]\\n- 명령 권한은 ROP 의 결정적 인가 계층이 역할·동작·자원 그룹·환경 조건을 대조하는 기본 거부 규칙으로 집행하고, 채팅 사용자 신원과 권한 판정은 ROP 경계에서 작업 요청 id 와 연결해 감사 추적으로 남기는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-695][^ref-762][^ref-768][^ref-125][^ref-031]\\n- 되묻기로 넘기는 기준으로 등각 예측 문턱(KnowNo), 명확·모호·수행 불가 구분(CLARA), 신뢰도 문턱 폴백(Rasa, 기본 0.7)이 있다. [사실][^ref-350][^ref-352][^ref-658] VDA 5050 3.0.0 은 모든 이동로봇에 cancelOrder·startPause·stopPause 지원을 요구하고 waitForTrigger 의 시간 초과 처리를 관제 책임으로 둔다. [사실][^ref-031]\\n- 필수 슬롯 누락·복수 후보는 되묻기, 영향이 큰 작업은 사람 승인, 제때 풀 수 없는 불확실성·검사 불통과·승인자 부재·승인 시간 초과는 배치 전 실행 보류로 넘기고, 불확실성 점수는 규칙 조건과 함께 쓰는 구성이 선택지로 보인다(이 위키의 종합, 물류 조건 근거 없음, 신뢰도 low). [추정][^ref-350][^ref-355][^ref-695][^ref-697][^ref-031]\\n\\n**남은 불확실성**\\n- 다섯 겹 확인 절차와 방법별 포착·놓침 분담을 한 번에 제시한 단일 출처가 없고, 근거가 물류 플릿 조건이 아니다.\\n- RoboGuard 수치(92% → 2.5% 미만)와 SafePlan 수치(90.5%, 621개)는 원문 미열람 저자 보고값이며 SafePlan 저자는 미확인이다.\\n- q4-02 근거 수치(SELP, CAPE, Guan 외, Hariharan 외, SIMMER, Ko·Lin, Deng 외)는 모두 원문 미열람 저자 보고값이다. SIMMER 는 동료심사 전 프리프린트이며 평가한 모델 수는 미확인이고, Ko·Lin 의 거부·성공 수치는 검증에서 다시 확인하지 못했다.\\n- JSONSchemaBench 의 여섯 프레임워크 목록은 원문 미열람 논문 요약 기준이고, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\\n- JSON Schema 는 main 브랜치 차기판 초안 기준이며 게시된 2020-12 판과의 문구 차이는 미확인이다. VAL 의 검증 실패 보고 형식도 미확인이다. VerifyLLM·SELP 의 저자 목록은 미확인이다.\\n- OWASP 문서의 발행일(2024-11)은 문서 안에서 확인하지 못했다.\\n- 감독 전략 비교 연구의 내용과 조건별 수치, Sagawa 외 비교의 우열은 미확인이다.\\n- EU AI Act 제14조는 공식 관보 원문을 확인하지 못했고, 인공지능기본법 제34조의 시행령 세부와 물류 배정 AI 의 고영향 해당 여부(oq-105)는 미확인이다.\\n- 명령 권한 구성과 감사 추적 항목(q4-03)은 이 위키의 종합이며, 물류 챗봇의 명령 권한·감사 기록을 직접 다룬 출처와 국내 사례는 찾지 못했다.\\n- IEC 62443-3-3 의 SR 번호·내용은 제3자 요약 기준이고, 개인정보 접속기록 보관 기간과 고시 현행판은 미확인이다. EU AI Act 로그 조문(제12·19·26조)은 제3자 게재본 기준이며, 채팅 지시 기록의 개인정보처리시스템 해당 여부는 열린 질문으로 올렸다.\\n- Progent 공격 성공률 수치는 요약마다 다르고(판 차이 미확인), AgentGuard·도구 호출 출처 서베이의 세부와 MiniScope 의 방법은 원문 미열람이다. MiR 의 권한·감사 기능은 벤더 주장이다.\\n- 제한 운영 기준(q4-04)의 세 경로 전환 기준은 이 위키의 종합이며, 세 경로를 한 번에 제시한 출처와 물류 창고 로봇 채팅 지시에 대한 평가·국내 사례는 확인되지 않았다. 모든 근거가 단일 출처이고 교차 확인되지 않았다.\\n- SAGE-Agent(질문 수 1.5~2.7배 감소)와 AmbiK(구분 점수) 수치는 원문 미열람 저자 보고값이며, 각각 도구 호출·주방 텍스트 작업 조건이다.\\n- q4-04 를 답한 실행(2026-09-25-85)은 신규 검색 없이 기존 참고문헌만 재사용했다. 보류 시간 한계와 기한·출하 마감의 연동은 후속 질문 q4-19 로 남겼다.\\n- [업무 분해·배정 설계 초안](task-model-draft.md)은 v0.9 로 올라 개념 '명령 권한'이 더해지고 지시의 입력자가 인증된 사용자 식별로 정리되었으나, 권한 판정 결과의 기록 위치는 정하지 않았다. 제안된 개념 '사용자 확인'(실행 2026-09-25-79)과 결정적 검사만 담도록 경계를 좁혀 다시 제안된 개념 '검증 기록'(실행 2026-09-25-81)은 서로의 경계와 배정 속성 '확인 여부'와의 경계가 정해지지 않았고 근거에 추정·원문 미열람이 섞여 초안 6절의 질문으로 두었다. 실행 2026-09-25-85 에서는 온톨로지 변경 제안이 없어 초안을 v0.9 로 유지하고 q4-04 답을 6절 '사용자 확인' 질문에 연결만 했다.\"},{\"section\":\"5. 이 단계가 낳은 후속 질문\",\"action\":\"replace\",\"content\":\"| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\\n|---|---|---|---|---|\\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (관련: q4-04) | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-79) | 열림 |\\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? | 단계 4. 오해석 방지와 확인 절차 | f5(실행 2026-09-25-79) | 열림 |\\n| q5-10 | 물류 지시 시나리오에서 관제 요원의 승인 지연 시간·거부율·수정률을 재어 승인 피로와 자동화 편향이 나타나는지, 확인 요약에 결정적 검사 결과를 함께 보이면 잘못된 지시를 멈추는 비율이 달라지는지를 어떤 실험으로 측정하는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-79) | 열림 |\\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-81) | 열림 |\\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (관련: oq-104) | 단계 4. 오해석 방지와 확인 절차 | f23(실행 2026-09-25-81) | 열림 |\\n| q5-16 | 물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-81) | 열림 |\\n| q4-17 | 교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (관련: q4-13) | 단계 4. 오해석 방지와 확인 절차 | f21(실행 2026-09-25-83) | 열림 |\\n| q4-18 | 채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-83) | 열림 |\\n| q5-17 | 권한 밖 지시와 프롬프트 주입이 섞인 물류 지시 시험 세트로, LLM 단의 거절과 ROP 인가 계층의 결정적 거부가 각각 권한 밖 작업 요청을 얼마나 막는지와 정상 지시의 오거부율을 어떻게 재는가? (관련: q5-13) | 단계 5. 검증 방법과 가설 판정 | f6(실행 2026-09-25-83) | 열림 |\\n| q4-19 | 실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (관련: q4-11, q4-13) | 단계 4. 오해석 방지와 확인 절차 | f19(실행 2026-09-25-85) | 열림 |\\n\\n실행 2026-09-25-85 에서 제안된 다른 후속 질문(불확실성 점수만 쓰는 방식과 규칙을 함께 쓰는 방식의 비교)은 q4-07·q5-08 과 중복이라 등록하지 않았다.\"},{\"section\":\"6. 완료 조건 충족 현황\",\"action\":\"replace\",\"content\":\"충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\\n\\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\\n|---|---|---|---|\\n| 실행 전 검증 단계를 담은 확인 절차 초안이 [업무 분해·배정 설계 초안](task-model-draft.md)의 미해결 모델링 질문과 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)의 \\\"5. 구현 가설\\\" 절에 반영됨 | 미충족 | [q4-01 답](#q4-01)의 다섯 겹 확인 절차와 [q4-02 답](#q4-02)의 검증 방법별 포착 오류를 초안 6절 질문과 아이디어 5절 소절로 반영했으나 검증 승인 상태가 아니고 근거가 추정(신뢰도 low)이다 | 미충족 · 미승인 |\\n| 명령 권한을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | [q4-03 답](#q4-03)의 권한 규칙 구성과 감사 추적 항목을 초안(개념 '명령 권한', v0.9, 6절 질문)과 아이디어 5절 소절로 반영했으나 근거가 추정(신뢰도 low)이고 검증 승인 상태가 아니다 | 미충족 · 미승인 |\\n| 제한 운영 기준을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | [q4-04 답](#q4-04)의 되묻기·사람 승인·실행 보류 전환 기준을 초안 6절 '사용자 확인' 질문과 아이디어 5절 '제한 운영으로 넘기는 기준' 소절로 반영했으나 이 위키의 종합(추정, 신뢰도 low)이고 검증 승인 상태가 아니다 | 미충족 · 미승인 |\\n\\n다음 단계로 전환: 아니오(완료 조건 반영이 추정 근거·검증 승인 전, 열린 질문 q4-05~q4-18)\"},{\"section\":\"8. 출처\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-031\",\"ref-350\",\"ref-352\",\"ref-353\",\"ref-355\",\"ref-356\",\"ref-417\",\"ref-418\",\"ref-656\",\"ref-658\",\"ref-663\",\"ref-664\",\"ref-711\",\"ref-695\",\"ref-696\",\"ref-697\",\"ref-698\",\"ref-699\",\"ref-700\",\"ref-701\",\"ref-702\",\"ref-703\",\"ref-713\",\"ref-714\",\"ref-715\",\"ref-716\",\"ref-620\",\"ref-717\",\"ref-748\",\"ref-749\",\"ref-750\",\"ref-751\",\"ref-752\",\"ref-753\",\"ref-754\",\"ref-755\",\"ref-756\",\"ref-757\",\"ref-758\",\"ref-759\",\"ref-760\",\"ref-761\",\"ref-362\",\"ref-459\",\"ref-236\",\"ref-416\",\"ref-125\",\"ref-579\",\"ref-762\",\"ref-763\",\"ref-764\",\"ref-765\",\"ref-766\",\"ref-767\",\"ref-768\",\"ref-769\",\"ref-770\",\"ref-771\",\"ref-772\",\"ref-773\",\"ref-774\",\"ref-775\",\"ref-776\"]},\"content\":\"[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-350]: Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io), 미확인, https://robot-help.github.io/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-352]: Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트), CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io), 미확인, https://clararobot.github.io/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-353]: Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S., CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents, 2024, https://arxiv.org/abs/2306.10376, 접근일 2026-09-25 (원문 미열람)\\n[^ref-355]: Ivanova, A. 외(AmbiK 저자, dblp 기록 기준), AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment, 2025, https://aclanthology.org/2025.acl-long.1593/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-356]: Rasa Technologies (RasaHQ/rasa GitHub), Forms — Rasa documentation (docs/docs/forms.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx, 접근일 2026-09-25 (원문 미열람)\\n[^ref-417]: Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems, 2026-04, https://arxiv.org/abs/2604.05427, 접근일 2026-09-25 (원문 미열람)\\n[^ref-418]: Mecalux, Mecalux integrates generative AI into Easy WMS, 미확인, https://www.mecalux.com/news/generative-ai-easy-wms-mecalux, 접근일 2026-09-25 (원문 미열람)\\n[^ref-656]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 접근일 2026-09-25 (원문 미열람)\\n[^ref-658]: Rasa Technologies (RasaHQ/rasa GitHub), Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx, 접근일 2026-09-25 (원문 미열람)\\n[^ref-663]: Liang, K. 외(Introspective Planning 저자), Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity, 2024-02, https://arxiv.org/abs/2402.06529, 접근일 2026-09-25 (원문 미열람)\\n[^ref-664]: Suri, M. 외(University of Maryland·Adobe Research), Structured Uncertainty guided Clarification for LLM Agents, 2025-11, https://arxiv.org/abs/2511.08798, 접근일 2026-09-25 (원문 미열람)\\n[^ref-711]: Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems, 2026-06, https://arxiv.org/abs/2606.31339, 접근일 2026-09-25 (원문 미열람)\\n[^ref-695]: OWASP Top 10 for LLM Applications 프로젝트 (OWASP GitHub), LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency.md), 2024-11, https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md, 접근일 2026-09-25 (원문 미열람)\\n[^ref-696]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Server Features: Tools (docs/specification/2025-06-18/server/tools.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx, 접근일 2026-09-25 (원문 미열람)\\n[^ref-697]: LangChain (langchain-ai/docs GitHub), Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx), 미확인, https://docs.langchain.com/oss/python/langchain/human-in-the-loop, 접근일 2026-09-25 (원문 미열람)\\n[^ref-698]: Yang, Z. 외(Brown University H2R Lab), Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents, 2023-09, https://arxiv.org/abs/2309.09919, 접근일 2026-09-25 (원문 미열람)\\n[^ref-699]: YzyLmc (Safety Chip 공식 저장소), ltl_safety — README (Plug in the Safety Chip), 미확인, https://github.com/YzyLmc/ltl_safety, 접근일 2026-09-25\\n[^ref-700]: Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H.(IEEE RA-L 2026 채택 표기), Safety Guardrails for LLM-Enabled Robots, 2025-03, https://arxiv.org/abs/2503.07885, 접근일 2026-09-25 (원문 미열람)\\n[^ref-701]: KumarRobotics (RoboGuard 공식 저장소), RoboGuard — Safety guardrails for LLM-enabled robots (GitHub README), 미확인, https://github.com/KumarRobotics/RoboGuard, 접근일 2026-09-25\\n[^ref-702]: SafePlan 저자(arXiv 2503.06892, 저자 미확인), SafePlan: Leveraging Formal Logic and Chain-of-Thought Reasoning for Enhanced Safety in LLM-based Robotic Task Planning, 2025-03, https://arxiv.org/abs/2503.06892, 접근일 2026-09-25 (원문 미열람)\\n[^ref-703]: RichardHGL (CHI 2025 Plan-then-Execute 공식 저장소), CHI2025_Plan-then-Execute_LLMAgent — README, 미확인, https://github.com/RichardHGL/CHI2025_Plan-then-Execute_LLMAgent, 접근일 2026-09-25\\n[^ref-713]: He, G., Demartini, G., & Gadiraju, U., Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant, 2025-04, https://dl.acm.org/doi/10.1145/3706598.3713218, 접근일 2026-09-25 (원문 미열람)\\n[^ref-714]: arXiv 2604.04918 저자(미확인), Comparing Human Oversight Strategies for Computer-Use Agents, 2026-04, https://arxiv.org/abs/2604.04918, 접근일 2026-09-25 (원문 미열람)\\n[^ref-715]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 14: Human Oversight — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/14/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-716]: arXiv 2502.10036 저자(미확인), Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI, 2025-02, https://arxiv.org/abs/2502.10036, 접근일 2026-09-25 (원문 미열람)\\n[^ref-620]: 국가법령정보센터(법제처), 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 (법률 제20676호, 2025-01-21), 2025-01-21, https://www.law.go.kr/lsInfoP.do?lsiSeq=268543, 접근일 2026-09-25 (원문 미열람)\\n[^ref-717]: Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP), A comparison of confirmation styles for error handling in a speech dialog system, 2004-10, https://www.isca-archive.org/interspeech_2004/sagawa04_interspeech.pdf, 접근일 2026-09-25 (원문 미열람)\\n\\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\\n[^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-748]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\\n[^ref-749]: guidance-ai (JSONSchemaBench GitHub), jsonschemabench — README (JSONSchemaBench), 미확인, https://github.com/guidance-ai/jsonschemabench, 접근일 2026-09-25\\n[^ref-750]: Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868), JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models, 2025-01, https://arxiv.org/abs/2501.10868, 접근일 2026-09-25 (원문 미열람)\\n[^ref-751]: KCL-Planning (VAL GitHub), VAL — The plan validation system (README), 미확인, https://github.com/KCL-Planning/VAL, 접근일 2026-09-25\\n[^ref-752]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\\n[^ref-753]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\\n[^ref-754]: Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G., Plan Verification for LLM-Based Embodied Task Completion Agents, 2025-09, https://arxiv.org/abs/2509.02761, 접근일 2026-09-25 (원문 미열람)\\n[^ref-755]: Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D., CAPE: Corrective Actions from Precondition Errors using Large Language Models, 2022-11, https://arxiv.org/abs/2211.09935, 접근일 2026-09-25 (원문 미열람)\\n[^ref-756]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\\n[^ref-757]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\\n[^ref-758]: Deng, M., Fu, B., Li, L., & Wang, X., Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction, 2025-06, https://arxiv.org/abs/2506.18178, 접근일 2026-09-25 (원문 미열람)\\n[^ref-759]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\\n[^ref-760]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-761]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)\\n\\n[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25\\n[^ref-579]: Open Robotics (ros2/design GitHub), ROS 2 Access Control Policies (design.ros2.org articles/ros2_access_control_policies), 미확인, https://design.ros2.org/articles/ros2_access_control_policies.html, 접근일 2026-09-25\\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-09-25\\n[^ref-763]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Basic: Authorization (docs/specification/2025-06-18/basic/authorization.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/basic/authorization.mdx, 접근일 2026-09-25\\n[^ref-764]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 12: Record-Keeping — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/12/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-765]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 19: Automatically Generated Logs — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/19/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-766]: 국가법령정보센터(개인정보보호위원회 고시), 개인정보의 안전성 확보조치 기준, 미확인, https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=010202&admRulSeq=2100000229672, 접근일 2026-09-25 (원문 미열람)\\n[^ref-767]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-25 (원문 미열람)\\n[^ref-768]: NIST, Guide to Attribute Based Access Control (ABAC) Definition and Considerations (NIST SP 800-162), 2014-01, https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf, 접근일 2026-09-25 (원문 미열람)\\n[^ref-769]: Shi, T. 외(Progent 저자, 소속 미확인), Progent: Programmable Privilege Control for LLM Agents, 2025-04, https://arxiv.org/abs/2504.11703, 접근일 2026-09-25 (원문 미열람)\\n[^ref-770]: South, T., Marro, S., Hardjono, T., Mahari, R., Whitney, C. D., Greenwood, D., Chan, A., & Pentland, A., Authenticated Delegation and Authorized AI Agents, 2025-01, https://arxiv.org/abs/2501.09674, 접근일 2026-09-25 (원문 미열람)\\n[^ref-771]: Tsai, L., & Bagdasarian, E.(Google, HotOS 2025), Contextual Agent Security: A Policy for Every Purpose, 2025-01, https://arxiv.org/abs/2501.17070, 접근일 2026-09-25 (원문 미열람)\\n[^ref-772]: Luo, J. 외(Fudan University·Shanghai Innovation Institute), AgentGuard: An Attribute-Based Access Control Framework for Tool-Use LLM-Based Agent, 2026-05, https://arxiv.org/abs/2605.28071, 접근일 2026-09-25 (원문 미열람)\\n[^ref-773]: Zhu, J., Tseng, K., Vernik, G., Huang, X., Patil, S. G., Fang, V., & Popa, R. A.(arXiv 2512.11147), MiniScope: A Least-Privilege Framework for Authorizing Tool-Calling Agents, 2025-12, https://arxiv.org/abs/2512.11147, 접근일 2026-09-25 (원문 미열람)\\n[^ref-774]: Mobile Industrial Robots(MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-25 (원문 미열람)\\n[^ref-775]: Automated Warehouse, MiR Fleet Enterprise includes scalability, cybersecurity features for mobile robots, 미확인, https://www.automatedwarehouseonline.com/mir-fleet-enterprise-includes-scalability-cybersecurity-features-mobile-robots/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-776]: Wang, Y. 외(arXiv 2606.04990), From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents, 2026-06, https://arxiv.org/abs/2606.04990, 접근일 2026-09-25 (원문 미열람)\"},{\"section\":\"9. 이력\",\"action\":\"replace\",\"content\":\"실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\\n\\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\\n|---|---|---|---|---|---|\\n| 2026-09-25 | 2026-09-25-85 | q4-04 | q4-19 | 없음(v0.9 유지, q4-04 답을 초안 6절 '사용자 확인' 질문에 연결). 메모: ref-658 원문 확인으로 Rasa 사람 인계 서술은 [사실] 유지(아이디어 페이지 5절의 같은 문장 [추정]은 이번 실행에서 고치지 않음) | 5 |\\n| 2026-09-25 | 2026-09-25-83 | q4-03 | q4-17, q4-18, q5-17 | v0.8 → v0.9(개념 '명령 권한' 추가, 지시 개념의 입력자를 인증된 사용자 식별로 정리) | 4 |\\n| 2026-09-25 | 2026-09-25-81 | q4-02 | q4-15, q4-16, q5-16 | 없음(v0.8 유지, 개념 '검증 기록' 재제안은 초안 6절 질문) | 3 |\\n| 2026-09-25 | 2026-09-25-79 | q4-01 | q4-13, q4-14, q5-10 | 없음(v0.8 유지, 개념 '사용자 확인' 제안은 초안 6절 질문) | 2 |\\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q4-01~q4-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [업무 분해·배정 설계 초안](task-model-draft.md)에서 생성) | 1 |\"}]},{\"path\":\"docs/ideas/nl-task-chatbot.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low)\",\"patches\":[{\"section\":\"5. 구현 가설\",\"action\":\"append\",\"content\":\"### 제한 운영으로 넘기는 기준\\n\\n실행 2026-09-25-85 에서 [단계 4 의 q4-04](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04)에 답했다. 이로써 단계 4 의 시작 질문 4개(q4-01~q4-04)는 모두 답해졌지만, 확인 절차 초안의 근거가 추정이고 검증 승인 전이어서 단계 4 완료 조건은 미충족이다.\\n\\n확인한 자료를 이 위키가 묶으면, 필수 슬롯이 비었거나 문턱을 넘는 해석 후보가 둘 이상이면 되묻기, 해석은 하나로 정해졌지만 영향이 큰 작업이면 사람 승인, 사용자가 제때 풀 수 없는 불확실성·결정적 검사 불통과·승인자 부재·승인 시간 초과면 배치 전 실행 보류로 넘기고, 그 밖에는 해석 요약을 보이는 암시적 확인으로 실행하는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031] 세 경로를 한 번에 제시한 출처는 없고 물류 조건 근거가 없어 신뢰도가 낮다.\\n\\n| 경로 | 넘기는 조건 | 근거 사례 |\\n|---|---|---|\\n| 되묻기 | 필수 슬롯 누락, 문턱을 넘는 해석 후보가 둘 이상 | Rasa 폼·폴백, KnowNo, CLARA |\\n| 사람 승인 | 해석은 하나지만 영향이 큰 작업 | OWASP LLM06:2025, MCP 도구 명세, LangChain 사람 참여 미들웨어 |\\n| 배치 전 실행 보류 | 제때 풀 수 없는 불확실성, 결정적 검사 불통과, 승인자 부재, 승인 시간 초과 | LangChain 중단점, VDA 5050 대기·일시 정지(연계 대상) |\\n| 암시적 확인으로 실행 | 위 조건에 해당하지 않는 일상 지시 | 위 '오해석 방지 확인 절차'의 차등 확인 |\\n\\n위 표는 이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다.\\n\\n- **되묻기 근거**: KnowNo 는 등각 예측 문턱을 넘는 선택지가 둘 이상이면 도움을 요청하고 [사실][^ref-350] CLARA 는 명령을 명확·모호·수행 불가로 나누어 모호한 명령에는 질문을 만든다. [사실][^ref-352]\\n- **점수와 규칙의 병행**: 불확실성 점수의 문턱은 보정 데이터 분포에 기대고 가정 벤치마크에서 모호성 탐지 구분 성능이 낮게 보고되었으므로, 전환은 점수 하나에 맡기지 말고 필수 슬롯 누락·영향 작업 목록 같은 규칙 조건과 함께 두는 편이 맞는 것으로 보인다(이 위키의 종합, 물류 조건 근거 없음). [추정][^ref-350][^ref-355][^ref-663][^ref-664]\\n- **보류 시점과 수단**: VDA 5050 3.0.0 은 모든 이동로봇이 cancelOrder·startPause·stopPause 를 지원하게 하고 waitForTrigger 의 시간 초과 처리를 관제의 책임으로 둔다(확인일 2026-09-25). [사실][^ref-031] 실행 보류는 베이스를 풀어 주기 전에 걸고, 이미 실행 중인 작업은 일시 정지·트리거 대기로 멈추되 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다(이 위키의 종합). [추정][^ref-031][^ref-697] 로봇의 일시 정지·대기 실행 자체는 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다.\\n- **승인 대상 한정**: 그럴듯한 계획에 대한 사용자 신뢰가 잘못 보정되기 쉬웠다는 보고(일상 비서 시뮬레이션 조건) [사실][^ref-713]와 영향이 큰 행동 전 사람 승인 권고 [사실][^ref-695]를 함께 보면, 명시적 승인은 영향이 큰 작업으로 한정하고 승인 화면에 결정적 검사 결과와 불확실성의 이유를 함께 보여 주는 것이 승인 피로를 줄이는 선택지로 보인다(이 위키의 종합, 물류 관제 요원의 승인 행동을 잰 자료 없음). [추정][^ref-713][^ref-714][^ref-715][^ref-717][^ref-695]\\n\\n이번 실행에서는 온톨로지 변경 제안이 없어 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)은 v0.9 를 유지하고, q4-04 답을 초안 6절의 '사용자 확인' 질문에 연결했다. 보류 시간 한계와 기한·출하 마감의 연동은 백로그 q4-19 로 남겼다.\"}]},{\"path\":\"docs/tracks/nl-task-chatbot/task-model-draft.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음)\",\"patches\":[{\"section\":\"6. 미해결 모델링 질문\",\"action\":\"append\",\"content\":\"- 위 '사용자 확인(승인)을 별도 개념으로 둘지, 배정의 속성(확인 여부)으로 둘지' 항목에 대해 실행 2026-09-25-85 에서 [q4-04 답](stage-4-misinterpretation-safeguards.md#q4-04)이 나왔다. 확인한 자료를 이 위키가 묶으면 불확실성과 영향도에 따라 되묻기·사람 승인·배치 전 실행 보류로 넘기고 그 밖에는 암시적 확인으로 실행하며, 실행 보류는 베이스를 풀어 주기 전에 걸고 보류 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다(이 위키의 종합, 물류 조건 근거 없음, 신뢰도 low). [추정][^ref-350][^ref-696][^ref-697][^ref-031] 이 제한 운영 경로(되묻기 / 사람 승인 / 실행 보류)를 제안된 개념 '사용자 확인'의 속성 후보로 둘지는 정하지 않았고, 온톨로지 변경 제안이 없어 초안은 v0.9 를 유지한다. — 관련: q4-04, q4-13, q4-19\"}]},{\"path\":\"docs/tracks/nl-task-chatbot/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"6절에 실행 2026-09-25-85(q4-04 답, 초안 v0.9 유지) 한 줄 추가\",\"patches\":[{\"section\":\"6. 살아있는 산출물 링크\",\"action\":\"append\",\"content\":\"- 실행 2026-09-25-85 에서 CLI 로 지정된 질문으로 단계 4 의 q4-04 에 답해 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) 5절에 '제한 운영으로 넘기는 기준' 소절(되묻기·사람 승인·실행 보류 세 경로, 신뢰도 low)을 더했다. [업무 분해·배정 설계 초안](task-model-draft.md)은 변경 없이 v0.9 를 유지했다. 단계 3·4 완료와 단계 전환이 승인되지 않아 현재 단계는 단계 3 으로 둔다.\"}]}],\"changelog_entry\":\"2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 | run 2026-09-25-85\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 자연어 업무 지시 챗봇 단계 4. 오해석 방지와 확인 절차: q4-04 답함(제한 운영으로 넘기는 되묻기·사람 승인·실행 보류 기준, 이 위키의 종합, 신뢰도 low)\",\"category_recent\":\"2026-09-25 — 13. 작업 배정 — MRTA(자연어 업무 지시 챗봇 트랙): 되묻기·승인·보류 중 배정을 확정하지 않고 해소 시점 상태로 배정하는 분담을 반영 제안\",\"area_recent\":\"2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 q4-04 에서 제한 운영 중 배정 시점 분담을 6. 대표 접근법과 기술에 반영 제안\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"expected-value-of-perfect-information\",\"term_ko\":\"완전 정보의 기대 가치\",\"term_en\":\"Expected Value of Perfect Information (EVPI)\",\"definition\":\"불확실한 값을 정확히 알게 될 때 기대되는 결정 결과의 개선량으로, 되물을 질문을 고를 때 질문 비용과 비교하는 기준으로 쓰인다.\",\"description\":\"SAGE-Agent 는 질문마다 EVPI 와 질문 비용을 따져 되물을 질문을 고른다고 보고했다(저자 보고, 원문 미열람, 도구 호출 조건).\",\"related_areas\":[27,18],\"sources\":[\"ref-664\"]}],\"reference_updates\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 주문·베이스·호라이즌, 순간 동작(cancelOrder·startPause·stopPause), waitForTrigger, 운용 모드, 오류 유형을 규정.\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-350\",\"org\":\"Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트)\",\"title\":\"Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io)\",\"published\":null,\"url\":\"https://robot-help.github.io/\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 등각 예측으로 LLM 계획기의 도움 요청 시점을 정하는 KnowNo 프로젝트 페이지.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-352\",\"org\":\"Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트)\",\"title\":\"CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io)\",\"published\":null,\"url\":\"https://clararobot.github.io/\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 명령을 명확·모호·수행 불가로 나누고 모호한 명령을 질문으로 푸는 CLARA 프로젝트 페이지.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-353\",\"org\":\"Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S.\",\"title\":\"CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents\",\"published\":\"2024\",\"url\":\"https://arxiv.org/abs/2306.10376\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. CLARA 논문(IEEE RA-L 2024).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-355\",\"org\":\"Ivanova, A. 외(AmbiK 저자, dblp 기록 기준)\",\"title\":\"AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment\",\"published\":\"2025\",\"url\":\"https://aclanthology.org/2025.acl-long.1593/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 주방 모호 지시 데이터셋과 모호성 탐지 방법 평가.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-356\",\"org\":\"Rasa Technologies (RasaHQ/rasa GitHub)\",\"title\":\"Forms — Rasa documentation (docs/docs/forms.mdx)\",\"published\":null,\"url\":\"https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 필수 슬롯을 차례로 묻고 검증하는 Rasa 폼 문서.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-658\",\"org\":\"Rasa Technologies (RasaHQ/rasa GitHub)\",\"title\":\"Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx)\",\"published\":null,\"url\":\"https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 신뢰도 문턱 폴백, 두 단계 폴백, 사람 인계 구성 문서.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-663\",\"org\":\"Liang, K. 외(Introspective Planning 저자)\",\"title\":\"Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity\",\"published\":\"2024-02\",\"url\":\"https://arxiv.org/abs/2402.06529\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 내성적 계획으로 불필요한 되묻기를 줄이는 방법.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-664\",\"org\":\"Suri, M. 외(University of Maryland·Adobe Research)\",\"title\":\"Structured Uncertainty guided Clarification for LLM Agents\",\"published\":\"2025-11\",\"url\":\"https://arxiv.org/abs/2511.08798\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EVPI 와 질문 비용으로 되물을 질문을 고르는 SAGE-Agent.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-695\",\"org\":\"OWASP Top 10 for LLM Applications 프로젝트 (OWASP GitHub)\",\"title\":\"LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency.md)\",\"published\":\"2024-11\",\"url\":\"https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 과도한 에이전시의 원인과 사람 승인·최소 권한·완전한 중재 대응.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-696\",\"org\":\"Model Context Protocol (modelcontextprotocol GitHub)\",\"title\":\"Specification 2025-06-18 — Server Features: Tools (docs/specification/2025-06-18/server/tools.mdx)\",\"published\":\"2025-06-18\",\"url\":\"https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 도구 호출의 사람 확인·입력 표시·감사 기록 권고.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-697\",\"org\":\"LangChain (langchain-ai/docs GitHub)\",\"title\":\"Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx)\",\"published\":null,\"url\":\"https://docs.langchain.com/oss/python/langchain/human-in-the-loop\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 도구 호출 중단과 승인·수정·거부·응답 결정 미들웨어.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-713\",\"org\":\"He, G., Demartini, G., & Gadiraju, U.\",\"title\":\"Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant\",\"published\":\"2025-04\",\"url\":\"https://dl.acm.org/doi/10.1145/3706598.3713218\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 계획 후 실행 LLM 에이전트의 사용자 신뢰·팀 성과 연구(CHI 2025).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-714\",\"org\":\"arXiv 2604.04918 저자(미확인)\",\"title\":\"Comparing Human Oversight Strategies for Computer-Use Agents\",\"published\":\"2026-04\",\"url\":\"https://arxiv.org/abs/2604.04918\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 컴퓨터 사용 에이전트의 사람 감독 전략 비교.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-715\",\"org\":\"Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본)\",\"title\":\"Article 14: Human Oversight | EU Artificial Intelligence Act\",\"published\":\"2024\",\"url\":\"https://artificialintelligenceact.eu/article/14/\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EU AI Act 제14조 사람 감독 조문 게재본.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-717\",\"org\":\"Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP)\",\"title\":\"A comparison of confirmation styles for error handling in a speech dialog system\",\"published\":\"2004-10\",\"url\":\"https://www.isca-archive.org/interspeech_2004/sagawa04_interspeech.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 음성 대화 시스템의 명시적·최종·암시적 확인 방식 비교.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-620\",\"org\":\"국가법령정보센터(과학기술정보통신부)\",\"title\":\"인공지능 발전과 신뢰 기반 조성 등에 관한 기본법\",\"published\":null,\"url\":\"https://www.law.go.kr/lsInfoP.do?lsiSeq=268543\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 고영향 인공지능 사업자의 사람 관리·감독 조치 등을 정한 법률.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-656\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. Open-RMF 디스패처의 입찰·배정·배정 실패 처리 구현.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]}],\"open_question_updates\":[],\"flow_matrix_updates\":[{\"step\":\"피킹\",\"item\":\"시작 조건\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"작업 대상\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"수행 자원\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"제약\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"예외·성과\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"}],\"additional_research_requests\":[\"pipeline 담당: 단계 4 페이지 H1 아래 상태 줄('> 단계 상태: … · 답한 질문: n건 …')은 H2 절 밖이라 patches 로 고칠 수 없다. 이번 실행으로 답한 질문이 3건에서 4건으로 바뀌었으므로(열린 질문 15건, 진행 중, 미충족은 그대로) 퍼블리셔가 백로그에서 이 줄을 다시 쓰거나 H2 앞 머리 영역에 대한 패치를 허용하도록 요청한다.\",\"물류 창고 로봇 채팅 지시에서 되묻기·사람 승인·실행 보류로 넘기는 기준을 평가한 연구·국내 사례(단계 4 페이지 q4-04 절과 18. 사람–로봇 협업·운영 인터페이스 6절에 필요): 이번 실행은 신규 검색 0회라 물류 조건 근거가 없어 전환 기준이 이 위키의 종합(신뢰도 low)에 머문다.\",\"보류 지연이 배정 품질·납기에 주는 영향을 잰 자료(q4-04 분류 원문 질문 연결과 13. 작업 배정 — MRTA 6절에 필요): 확인하지 못했다.\",\"Sagawa 외(2004)의 명시적·최종·암시적 확인 비교 결과의 우열·수치(q4-04 암시적 확인 경로의 근거로 필요): 원문 미열람으로 미확인이다.\"],\"fixes_applied\":[\"f22 수정 — 단계 4 페이지 q4-04 설명용 시나리오의 제약 칸에서 '이미 화물을 실은 경우'를 배치 전 보류가 아니라 일시 정지·트리거 대기로 멈추는 경로(로봇 쪽 실행은 연계 대상)로 고치고, 풀어 준 베이스는 실행된 것으로 가정해야 한다는 근거를 함께 적었다.\",\"범위 경계 문장 — q4-04 '실행 보류의 수단' 소절에 '로봇의 일시 정지·대기·재시도 실행은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며 ROP 는 보류 지시와 시간 초과 판단(취소·사람 인계)만 맡는다'를 [추정][^ref-031] 로 두었다.\",\"f11 INTERVENED — '관제는 주문·주문 갱신은 보낼 수 있으나 순간 동작은 cancelOrder 만 보낼 수 있다'로 순간 동작 한정을 유지해 썼다.\",\"중복 방지 — f7·f8·f9·f12·f13·f14·f15·f16·f20 은 q4-04 절에서 한두 문장 요지만 두고 [q4-01 답](#q4-01)으로 연결했으며, 기존 각주 ref-695·696·697·713·714·715·620·717 을 재사용했다.\",\"f6 — Rasa 폴백 문장을 [사실]로 두고 '사람 인계는 기본 동작이 아니라 최종 폴백의 예시이며 채널별로 사용자가 구현한다'는 한정을 넣었다. 아이디어 페이지 5절의 기존 [추정] 문장은 고치지 않았고, 단계 4 페이지 9. 이력 행에 'ref-658 원문 확인으로 [사실] 유지' 메모를 남겼다.\",\"f4·f5·f12 — 수치·결과 뒤에 '저자 보고값, 원문 미열람'과 조건(도구 호출 / 주방 텍스트 작업 / 일상 비서 시뮬레이션)을 적었다.\",\"f14·f15 — f14 는 [추정]으로 두고 'EUR-Lex 원문 미확인·고위험 해당 여부 미확인'을, f15 는 '시행령 세부 미확인, 고영향 해당 여부는 oq-105'를 함께 적었다.\",\"f17·f18·f20·f21·f23 — 문장마다 '이 위키의 종합'과 물류 조건 근거가 없다는 점을 밝혔고 q4-04 답의 종합 신뢰도를 low 로 적었으며, 세 경로 전환 기준 표 아래에 '이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다'를 넣었다.\",\"f23 — 근거 공백 소절에 '이번 실행은 신규 검색 없이 기존 참고문헌만 재사용했고, 검색 범위 관찰은 이전 실행(2026-09-25-79·81·83) 기준'이라고 적었다.\",\"각주 — 단계 4 페이지 8절에서 ref-031 을 뺀 이번 실행 출처의 각주 정의에 ' (원문 미열람)'을 달았다(ref-695·696·697 에 새로 추가, ref-352·353·355·658·663·664 는 새로 정의). reference_updates 에는 ref-031 만 source_unopened false 이고 나머지는 true 다.\",\"중복 질문 — '불확실성 점수만으로 되묻기를 정하는 방식과 규칙을 함께 쓰는 방식의 비교' 질문은 q4-07·q5-08 과 겹쳐 backlog_updates 에 넣지 않았고, 단계 4 페이지 5절 표 아래에 중복으로 제외했다고 적었다.\",\"새 질문 — 보류 시간 한계 질문을 q4-19 로 단계 4 에 등록했다(origin f19, 2·5절 표와 backlog_updates).\",\"task-model-draft.md — ontology_version 0.9 와 H1·버전 이력은 그대로 두고, 6절에 q4-04 답(f17·f19, 추정)을 '사용자 확인' 질문에 잇는 항목만 덧붙였다(ontology_draft_version '0.9').\",\"단계 4 페이지 6절 — '제한 운영 기준' 행을 q4-04 답을 근거로 적고 충족 여부는 '미충족', 검증 판정은 '미충족 · 미승인'으로 두었다. 표 아래 줄은 '다음 단계로 전환: 아니오(완료 조건 반영이 추정 근거·검증 승인 전, 열린 질문 q4-05~q4-18)'로 썼다. 상태 줄은 H2 밖이라 패치가 닿지 않는다. 단계 상태 '진행 중'은 그대로이고, '답한 질문 3건→4건'은 퍼블리셔가 갱신하도록 additional_research_requests 에 요청했다(4. 결론·2절 표에서는 q4-04 가 답함으로 표시된다).\",\"세부영역 반영 제안 — 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영 페이지는 직접 고치지 않고 area_reflection_proposals 로만 냈다. 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 적용 대상 영역을 양쪽에서 잇는다는 점도 적었다.\"],\"track_updates\":{\"stage_page\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"ontology_draft_version\":\"0.9\",\"backlog_updates\":[{\"id\":\"q4-04\",\"status\":\"답함\",\"answer_link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04\"},{\"id\":\"q4-19\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (q4-04 에서 파생) (관련: q4-11, q4-13)\",\"stage\":4,\"origin\":\"f19\"}],\"log_entry\":\"답한 질문: q4-04(되묻기·사람 승인·실행 보류로 넘기는 기준, f1~f23, 이 위키의 종합, 신뢰도 low; 재실행 1회차, 신규 검색 0회) / 새 질문: q4-19(보류 시간 한계, f19). 불확실성 점수 대 규칙 병행 비교 질문은 q4-07·q5-08 과 중복이라 제외 / 온톨로지 변경: 없음(v0.9 유지, q4-04 답을 초안 6절 '사용자 확인' 질문에 연결) / 완료 조건 평가: 미충족(부족: 실행 전 검증 단계·명령 권한·제한 운영 기준 초안이 추정 근거이고 검증 승인 전; 열린 질문 q4-05~q4-19; q4-09·q4-10 중복 정리 필요) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영 3건 / 다음 실행 제안: q4-13(영향이 큰 작업 목록 기준) 또는 q4-19(보류 시간 한계)\",\"overview_progress\":\"단계 4 진행 중(지정 질문 실행, 현재 단계는 단계 3 유지) — 열린 질문 15, 답함 4, 완료 조건 미충족\"},\"area_reflection_proposals\":[{\"area_no\":13,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"트랙 자연어 업무 지시 챗봇 q4-04(f19·f21, 추정): 해석 되묻기·사람 승인·실행 보류 동안에는 배정을 확정하지 않고, 해소 뒤 그 시점 로봇 상태로 배정을 계산하는 분담을 둔다. 실행 보류는 VDA 5050 베이스를 풀어 주기 전에 걸어야 한다. 분류 원문 질문(가장 가까운 로봇)과의 연결도 적는다. 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에서 잇는다.\"},{\"area_no\":18,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"트랙 자연어 업무 지시 챗봇 q4-04(f6·f9·f17·f20): Rasa 신뢰도 문턱 폴백과 두 단계 폴백(사람 인계는 최종 폴백의 예시), LangChain 승인·수정·거부 중단점을 적는다. 되묻기·사람 승인·실행 보류로 넘기는 기준과, 명시적 승인을 영향이 큰 작업으로 한정해 승인 피로를 줄이는 선택지(이 위키의 종합, 추정)를 함께 둔다.\"},{\"area_no\":27,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"트랙 자연어 업무 지시 챗봇 q4-04(f1·f3·f4·f5·f18): 불확실성 기반 되묻기 기준(KnowNo 등각 예측, 내성적 계획, SAGE-Agent EVPI, 저자 보고값)과 AmbiK 모호성 탐지 한계를 적고, 불확실성 점수와 규칙 조건을 함께 쓰는 선택지(추정)를 둔다. 적용 대상인 13. 작업 배정 — MRTA와 18. 사람–로봇 협업·운영 인터페이스에 함께 연결한다.\"}]}",
+  "structured_output": {
+    "run_id": "2026-09-25-85",
+    "outline": [
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "3. 조사 결과 — q4-04",
+        "budget_chars": 5200,
+        "summary": "확인한 자료를 이 위키가 묶으면 필수 슬롯 누락·복수 후보는 되묻기, 영향이 큰 작업은 사람 승인, 제때 풀 수 없는 불확실성·검사 불통과·승인자 부재·시간 초과는 배치 전 실행 보류로 넘기는 구성이 선택지로 보인다(신뢰도 low). [추정][^ref-350][^ref-695][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "4. 결론과 남은 불확실성",
+        "budget_chars": 3600,
+        "summary": "되묻기·승인·보류 수단의 사실 근거와 세 경로 전환 기준 종합(추정, low)을 결론에 더하고, 물류 조건 근거 부재와 신규 검색 0회를 불확실성에 적는다.",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f6",
+          "f10",
+          "f17",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "5. 이 단계가 낳은 후속 질문",
+        "budget_chars": 2600,
+        "summary": "보류 시간 한계 질문 q4-19 를 더한다.",
+        "planned_findings": [
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "6. 완료 조건 충족 현황",
+        "budget_chars": 900,
+        "summary": "제한 운영 기준 행을 q4-04 답 근거로 채우되 미충족·미승인으로 둔다.",
+        "planned_findings": [
+          "f17"
+        ]
+      },
+      {
+        "path": "docs/ideas/nl-task-chatbot.md",
+        "section": "5. 구현 가설 — 제한 운영으로 넘기는 기준",
+        "budget_chars": 2200,
+        "summary": "세 경로 전환 기준·규칙과 점수 병행·보류 시점·승인 한정을 이 위키의 종합(추정)으로 싣는다. [추정][^ref-350][^ref-697][^ref-031]",
+        "planned_findings": [
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f1",
+          "f2",
+          "f7",
+          "f10",
+          "f12"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "section": "6. 미해결 모델링 질문",
+        "budget_chars": 600,
+        "summary": "'사용자 확인' 질문에 q4-04 답(f17·f19, 추정)을 연결하고 v0.9 를 유지한다.",
+        "planned_findings": [
+          "f17",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/index.md",
+        "section": "6. 살아있는 산출물 링크",
+        "budget_chars": 300,
+        "summary": "q4-04 답과 초안 v0.9 유지를 한 줄로 덧붙인다.",
+        "planned_findings": []
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신",
+        "patches": [
+          {
+            "section": "2. 질문 목록",
+            "action": "replace",
+            "content": "이 단계의 시작 질문 4개(q4-01~q4-04)와 앞 단계 실행에서 이 단계로 보낸 질문(q4-05~q4-12), 실행 2026-09-25-79 의 후속 질문(q4-13·q4-14), 실행 2026-09-25-81 의 후속 질문(q4-15·q4-16), 실행 2026-09-25-83 의 후속 질문(q4-17·q4-18), 실행 2026-09-25-85 의 후속 질문(q4-19)이다. q4-01은 사용자 요청의 시작 질문 문구 그대로이고, q4-02~q4-04는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 질문 문구와 상태, 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \"조사 중\"은 이 표에서 \"열림\"으로 표시하고 \"폐기\"는 표에서 빼고 백로그에만 남긴다. 제기 근거 칸에는 finding id 또는 \"사용자\"만 쓰고, finding 이 나온 실행 id 는 백로그에 있다. q4-09와 q4-10은 같은 질문이 백로그에 두 번 등록된 것이어서 백로그 정리가 필요하다.\n\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\n|---|---|---|---|---|---|\n| q4-01 | LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-79 | [q4-01 답](#q4-01) |\n| q4-02 | 해석 결과를 실행 전에 검증하는 방법(스키마 검증, 온톨로지 제약 대조, 사람 확인, 모의 실행)에는 무엇이 있고 각각 어떤 오류를 잡는가? | 답함 | 사용자 | 2026-09-25-81 | [q4-02 답](#q4-02) |\n| q4-03 | 채팅 사용자별 명령 권한(어느 로봇·구역·작업까지 지시할 수 있는가)과 지시·확인의 감사 기록은 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-83 | [q4-03 답](#q4-03) |\n| q4-04 | 해석의 불확실성이 클 때 되묻기·사람 승인·실행 보류 같은 제한 운영으로 넘기는 기준은 무엇인가? | 답함 | 사용자 | 2026-09-25-85 | [q4-04 답](#q4-04) |\n| q4-05 | LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때, 허용 동작 대응(Huang 외)·assertion(ProgPrompt)·계획기 검사(LLM+P) 같은 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? (q1-01 에서 파생) | 열림 | f14 | | |\n| q4-06 | 작업자 음성 피킹의 체크 디지트·스캔처럼 동작 하나하나를 현장에서 확인받는 방식과, 자연어 지시의 해석 결과(작업·대상·로봇)를 배정 전에 요약해 확인받는 방식을 함께 둘 때 각각 어떤 오류를 잡고 확인 부담은 얼마나 늘어나는가? (q1-03 에서 파생) | 열림 | f9 | | |\n| q4-07 | 필수 슬롯 누락은 규칙(스키마)으로 검사하고 지시의 모호성은 KnowNo·CLARA 같은 불확실성 추정으로 판단하는 식으로 두 방식을 나눠 쓸 때, 가정용 벤치마크(AmbiK)에서 보고된 모호성 탐지의 낮은 구분 성능이 물류 지시(화물·장소·기한)에서도 나타나는가, 되묻기 횟수와 오배정은 어떻게 달라지는가? (q1-04 에서 파생) | 열림 | f11 | | |\n| q4-08 | RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생) | 열림 | f13 | | |\n| q4-09 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) (관련: q4-03) | 열림 | f20 | | |\n| q4-10 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) | 열림 | f20 | | |\n| q4-11 | 배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생) | 열림 | f22 | | |\n| q4-12 | 화물을 이미 실었거나 옮긴 작업을 채팅으로 취소할 때 되돌림 보상 작업의 생성·실행을 누가 승인하고, 지시 변경 요약 확인(무엇을 취소하고 무엇이 영향받는가)은 어떤 형식으로 보여 주는가? (q3-04 에서 파생) (관련: oq-021, q4-11) | 열림 | f23 | | |\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (q4-01 에서 파생) (관련: q4-04) | 열림 | f22 | | |\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? (q4-01 에서 파생) | 열림 | f5 | | |\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생) | 열림 | f22 | | |\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104) | 열림 | f23 | | |\n| q4-17 | 교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (q4-03 에서 파생) (관련: q4-13) | 열림 | f21 | | |\n| q4-18 | 채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? (q4-03 에서 파생) | 열림 | f22 | | |\n| q4-19 | 실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (q4-04 에서 파생) (관련: q4-11, q4-13) | 열림 | f19 | | |"
+          },
+          {
+            "section": "3. 조사 결과",
+            "action": "append",
+            "content": "실행 2026-09-25-85 가 q4-04 에 답했다. 이 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 단계 4 를 다뤘다.\n\n### q4-04 해석의 불확실성이 클 때 제한 운영으로 넘기는 기준 {#q4-04}\n\n확인한 자료를 이 위키가 묶으면, 필수 슬롯이 비었거나 문턱을 넘는 해석 후보가 둘 이상이면 되묻기, 해석은 하나로 정해졌지만 영향이 큰 작업이면 사람 승인, 사용자가 제때 풀 수 없는 불확실성·결정적 검사 불통과·승인자 부재·승인 시간 초과면 배치 전 실행 보류로 넘기고, 그 밖에는 해석 요약을 보이는 암시적 확인으로 실행하는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031] 이는 이 위키의 종합이며 세 경로를 한 번에 제시한 출처는 없고, 물류 조건 근거가 없어 이 답의 종합 신뢰도는 low 다. 이 답은 [q4-01 답](#q4-01)의 해석 게이트와 사람 확인 겹에서 어느 경로로 넘길지를 정하는 기준을 다룬다.\n\n```mermaid\nflowchart LR\n  interp[\"해석 결과\"] --> gate{\"결정적 검사 통과\"}\n  gate -->|\"불통과\"| hold[\"배치 전 실행 보류\"]\n  gate -->|\"통과\"| slot{\"필수 슬롯 누락 또는 문턱을 넘는 후보가 둘 이상\"}\n  slot -->|\"예\"| ask[\"되묻기\"]\n  slot -->|\"아니오\"| impact{\"영향이 큰 작업\"}\n  impact -->|\"예\"| approve[\"사람 승인\"]\n  impact -->|\"아니오\"| implicit[\"암시적 확인으로 실행\"]\n  ask -->|\"제때 풀 수 없음\"| hold\n  approve -->|\"승인자 부재·시간 초과\"| hold\n  approve -->|\"승인\"| run[\"배치\"]\n  implicit --> run\n  hold -->|\"보류 한계 초과\"| exit[\"사람 인계 또는 취소(ROP 판단)\"]\n```\n\n위 흐름도는 이 위키가 직접 그린 가설 구성이며 출처의 그림을 옮긴 것이 아니다.\n\n#### 되묻기로 넘기는 기준\n\n- KnowNo 는 LLM 계획기가 낸 선택지 가운데 등각 예측으로 정한 문턱을 넘는 것이 둘 이상이면 사람에게 도움을 요청하고 하나면 스스로 실행한다(가정·실험실 조건). [사실][^ref-350]\n- CLARA 는 LLM 불확실성과 상황 맥락으로 명령을 명확·모호·수행 불가로 나누어, 모호한 명령에는 질문을 만들어 사용자와 대화하고 수행 불가능한 명령은 거절한다. 프로젝트 페이지와 논문은 같은 저자라 독립 교차 확인이 아니다. [사실][^ref-352][^ref-353]\n- 내성적 계획(Introspective Planning, 2024-02)은 사후 추론 예시 지식 기반으로 LLM 불확실성을 과업 모호성에 맞추고 등각 예측과 결합해 성공 보장을 유지하면서 불필요한 되묻기를 줄였다고 저자들이 보고했다(원문 미열람). [사실][^ref-663]\n- SAGE-Agent(arXiv 2511.08798, 게재처 미확인)는 질문마다 완전 정보의 기대 가치(Expected Value of Perfect Information, EVPI)와 질문 비용을 따져 되물을 질문을 고르며, 기준선 대비 질문 수를 1.5~2.7배 줄였다고 보고했다(저자 보고값, 원문 미열람, 도구 호출 조건). [사실][^ref-664]\n- AmbiK 논문 저자들은 기존 모호성 탐지 방법의 구분 점수가 대부분 10% 미만이고 가장 높은 값도 Llama-3-8B 에서 LofreeCP 44%, KnowNo 40%였다고 보고했다(저자 보고값, 원문 미열람, 주방 텍스트 작업 조건, 독립 재현 미확인). [사실][^ref-355]\n- Rasa 는 의도 분류 신뢰도가 문턱(기본 0.7) 아래면 폴백으로 넘어가고, 두 단계 폴백에서는 추정한 의도를 사용자에게 확인받고 부정하면 재진술을 요청한다. 사람 인계는 기본 동작이 아니라 최종 폴백의 예시로 제시되며 채널별로 사용자가 구현한다(발행일 미확인, 확인일 2026-09-25 기준). [사실][^ref-658]\n\n#### 사람 승인으로 넘기는 조건\n\n영향이 큰 행동 전 사람 승인(OWASP LLM06:2025), 도구 호출을 거부할 수 있는 사람과 사용자 확인·호출 전 입력 표시 권고(MCP 명세 2025-06-18판), 설정한 도구 호출에서 멈추고 승인·인자 수정·거부·직접 응답으로 결정하게 하는 중단점(LangChain)은 [q4-01 답](#q4-01)에 정리한 그대로다. [사실][^ref-695][^ref-696][^ref-697]\n\n#### 실행 보류의 수단 (로봇 쪽 실행은 연계 대상)\n\n- VDA 5050 3.0.0(공식 저장소 main 판, 확인일 2026-09-25)은 모든 이동로봇이 cancelOrder·startPause·stopPause 순간 동작을 지원하게 하고, waitForTrigger 동작으로 관제의 트리거가 올 때까지 대기시키되 시간 초과 처리와 필요 시 주문 취소를 관제의 책임으로 두며, 재시도 가능 상태(RETRIABLE)의 동작은 관제나 운영자의 개입을 기다린다. [사실][^ref-031]\n- 같은 명세는 관제가 풀어 준 베이스는 바꿀 수 없어 이미 실행된 것으로 가정해야 한다고 본다. 운용 모드 INTERVENED 에서는 관제가 로봇을 제어하지 않으며, 관제는 주문·주문 갱신은 보낼 수 있으나 순간 동작은 cancelOrder 만 보낼 수 있다. [사실][^ref-031]\n- 로봇의 일시 정지·대기·재시도 실행은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며, ROP 는 보류 지시와 시간 초과 판단(취소·사람 인계)만 맡는다. [추정][^ref-031]\n- 이를 묶으면 실행 보류는 베이스를 풀어 주기 전에 걸고, 이미 실행 중인 작업은 일시 정지나 트리거 대기로 멈추되 보류 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다. 이는 이 위키의 종합이며 물류 조건 근거는 없다. [추정][^ref-031][^ref-697]\n\n#### 사람 승인의 한계와 규정\n\n자세한 서술은 [q4-01 답](#q4-01)의 '사람 승인의 한계와 규제'와 같고 여기서는 요지만 둔다.\n\n- 계획 후 실행 방식 LLM 에이전트에서 그럴듯해 보이는 계획에 대한 사용자 신뢰가 잘못 보정되기 쉬웠다는 보고가 있다(일상 비서 시뮬레이션 조건, 저자 보고, 원문 미열람). [사실][^ref-713]\n- 컴퓨터 사용 에이전트의 감독 전략이 문제 행동을 보이게 하는 데는 영향을 주었지만 보인 뒤 멈추게 하는 데는 영향이 작았다고 보고한 것으로 보인다(저자·조건별 수치 미확인, 원문 미열람). [추정][^ref-714]\n- EU AI Act 제14조 제4항 (b)호는 감독하는 사람이 자동화 편향을 계속 인식할 수 있게 설계하도록 요구하는 것으로 보인다(제3자 조문 게재본 기준, EUR-Lex 원문 미확인, 물류 배정 AI 의 고위험 해당 여부 미확인). [추정][^ref-715]\n- 한국 인공지능기본법 제34조는 고영향 인공지능 사업자가 사람의 관리·감독 조치를 이행하도록 정한다(시행령 세부 미확인, 고영향 해당 여부는 [열린 질문](../../open-questions.md) oq-105). [사실][^ref-620]\n- Sagawa 외(INTERSPEECH 2004)는 명시적·최종·암시적 확인 방식을 비교했다(우열·수치 미확인). [사실][^ref-717]\n\n#### 세 경로 전환 기준 (이 위키의 종합)\n\n| 경로 | 넘기는 조건 | 사용자에게 보이는 것 | 근거 사례 |\n|---|---|---|---|\n| 되묻기 | 필수 슬롯 누락, 문턱을 넘는 해석 후보가 둘 이상 | 빠진 항목이나 후보 해석을 묻는 질문 | Rasa 폼·폴백, KnowNo, CLARA |\n| 사람 승인 | 해석은 하나로 정해졌지만 영향이 큰 작업 | 해석 요약과 도구 입력, 승인·수정·거부 | OWASP LLM06:2025, MCP 도구 명세, LangChain 사람 참여 미들웨어 |\n| 배치 전 실행 보류 | 사용자가 제때 풀 수 없는 불확실성, 결정적 검사 불통과, 승인자 부재, 승인 시간 초과 | 보류 사유 | LangChain 중단점, VDA 5050 대기·일시 정지(연계 대상) |\n| 암시적 확인으로 실행 | 위 조건에 해당하지 않는 일상 지시 | 해석 요약을 응답에 되풀이 | [q4-01 답](#q4-01)의 차등 확인 종합 |\n\n위 표는 이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다. 세 경로를 한 번에 제시한 출처는 없고 물류 조건 근거가 없다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031]\n\n- 불확실성 점수의 문턱은 보정 데이터 분포에 기대고(재보정 주기는 [열린 질문](../../open-questions.md) oq-107) 가정 벤치마크에서 모호성 탐지 구분 성능이 낮게 보고되었으므로, 제한 운영 전환은 불확실성 점수 하나에 맡기지 말고 필수 슬롯 누락·영향 작업 목록 같은 규칙 조건과 함께 두는 편이 맞는 것으로 보인다. 이는 이 위키의 종합이며 물류 지시 조건 근거는 없다. [추정][^ref-350][^ref-355][^ref-663][^ref-664]\n- 명시적 승인으로 넘기는 작업을 영향이 큰 작업으로 한정하고 승인 화면에 결정적 검사 결과와 불확실성의 이유를 함께 보여 주는 것이 승인 피로를 줄이는 선택지로 보인다. 이는 [q4-01 답](#q4-01)의 사람 확인 범위 종합과 같은 방향의 이 위키의 종합이며, 물류 관제 요원의 승인 행동을 잰 자료는 없다. [추정][^ref-713][^ref-714][^ref-715][^ref-717][^ref-695]\n\n#### 분류 원문 질문과의 연결\n\n> 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]\n\n되묻기·승인·보류 중에는 배정을 미리 확정하지 않고, 해소 뒤 그 시점의 로봇 상태로 배정을 계산하면 보류 동안 가장 가까운 로봇이 다른 작업에 묶여도 전체 기준에 따라 다시 고를 수 있어 보인다. 이는 디스패처의 입찰 시점 배정과 베이스 불변을 근거로 한 이 위키의 종합이며, 보류 지연이 배정 품질에 주는 영향을 잰 자료는 확인하지 못했고 물류 조건 근거도 없다. [추정][^ref-656][^ref-031]\n\n#### 설명용 시나리오\n\n다음은 설명을 위한 가상의 시나리오이다(설명용 가정 사례, 현장 수치 없음).\n\n**물류 흐름 단계:** 피킹\n\n**시나리오:** 피킹 구역 관리자의 모호한 지시와 영향이 큰 지시를 제한 운영 경로로 나누기\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 관리자가 채팅으로 '급한 거 먼저 도크로'라고 지시하면 대상 화물·도크 슬롯이 비어 되묻기로 넘기는 흐름이 가능해 보인다. [추정][^ref-356][^ref-350] |\n| 작업 대상 | 피킹이 끝난 토트(설명용 가정) |\n| 수행 자원 | 되묻기·승인이 풀릴 때까지 배정을 확정하지 않고, 해소 뒤 그 시점의 로봇 상태로 배정을 계산하는 분담이 선택지로 보인다. [추정][^ref-656][^ref-031] |\n| 제약 | '진행 중인 3번 구역 운반 전부 취소'처럼 다른 사람의 진행 작업을 바꾸는 지시는 사람 승인으로, 승인자가 응답하지 않으면 배치 전 보류로 넘기는 흐름이 가능해 보인다. 이미 풀어 준 베이스는 실행된 것으로 가정해야 하므로, 대상 로봇이 이미 화물을 실은 실행 중 작업은 배치 전 보류가 아니라 일시 정지·트리거 대기로 멈추는 경로로 다루는 것이 선택지로 보인다(로봇 쪽 실행은 연계 대상). [추정][^ref-695][^ref-031] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 보류 시간 한계를 넘기면 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보이며, 보류 지연이 처리량·납기에 주는 영향을 잰 자료는 찾지 못했다. [추정][^ref-031][^ref-697] |\n\n보류 시간 한계를 기한·출하 마감과 연동하는 방법은 후속 질문 q4-19 로 올렸다.\n\n#### 근거 공백\n\n이번 실행은 신규 검색 없이 기존 참고문헌만 재사용했고, 검색 범위 관찰은 이전 실행(2026-09-25-79·81·83) 기준이다. 이번 실행과 이전 단계 4 실행들이 확인한 근거는 가정·주방·도구 호출·일상 비서 조건이었고, 물류 창고 로봇 채팅 지시에서 되묻기·승인·보류로 넘기는 기준을 평가한 연구나 국내 사례는 확인되지 않았다(이 위키의 종합, 부재의 확인은 아님). [추정][^ref-355][^ref-713][^ref-664]"
+          },
+          {
+            "section": "4. 결론과 남은 불확실성",
+            "action": "replace",
+            "content": "**결론**\n- 에이전트 설계 지침과 도구 규격(OWASP 과도한 에이전시 항목, MCP 도구 명세, LangChain 사람 참여 미들웨어)은 영향이 큰 행동 전 사람 승인·호출 전 입력 표시·승인·수정·거부 결정을 요구하거나 제공한다. [사실][^ref-695][^ref-696][^ref-697]\n- LLM 로봇 계획·배정 출력을 형식 논리·결정적 판정으로 거르는 가드레일 연구(Safety Chip, RoboGuard, SafePlan, SafeGate)가 있으며, 그중 SafePlan 은 배정 결과까지 검사한다. [사실][^ref-698][^ref-700][^ref-702][^ref-417]\n- 확인 절차는 다섯 겹(해석 게이트, 제약 게이트, 사람 확인, 검증 뒤 반영, 마지막 거절)으로 두고, 확인은 배치(베이스 해제) 전에 끝내며, 사람 확인은 영향이 크거나 불확실한 작업에 한정하는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-356][^ref-695][^ref-711][^ref-031][^ref-656]\n- JSON Schema 검증 어휘는 자료형·허용 값·수치 범위·필수 속성 같은 구조를 검사하고 [사실][^ref-748] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다. [사실][^ref-031]\n- 실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고 각각 놓치는 오류가 있어 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-748][^ref-760][^ref-752][^ref-416][^ref-713][^ref-031]\n- 개별 지시의 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 가져오는 구분이 분류 원문 7장과 맞는 것으로 보인다. [추정][^ref-416][^ref-757]\n- 로봇 관제 쪽 구현은 명령 권한을 역할·동작·인가 그룹(Open-RMF 웹 API 서버)이나 인클레이브·노드별 허용·거부 규칙(SROS 2, 기본 거부)으로 표현하고, OWASP LLM06:2025 는 허용 여부를 LLM 이 아니라 하위 시스템에서 사용자 권한 맥락으로 집행하라고 권고한다. [사실][^ref-762][^ref-579][^ref-695]\n- 명령 권한은 ROP 의 결정적 인가 계층이 역할·동작·자원 그룹·환경 조건을 대조하는 기본 거부 규칙으로 집행하고, 채팅 사용자 신원과 권한 판정은 ROP 경계에서 작업 요청 id 와 연결해 감사 추적으로 남기는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-695][^ref-762][^ref-768][^ref-125][^ref-031]\n- 되묻기로 넘기는 기준으로 등각 예측 문턱(KnowNo), 명확·모호·수행 불가 구분(CLARA), 신뢰도 문턱 폴백(Rasa, 기본 0.7)이 있다. [사실][^ref-350][^ref-352][^ref-658] VDA 5050 3.0.0 은 모든 이동로봇에 cancelOrder·startPause·stopPause 지원을 요구하고 waitForTrigger 의 시간 초과 처리를 관제 책임으로 둔다. [사실][^ref-031]\n- 필수 슬롯 누락·복수 후보는 되묻기, 영향이 큰 작업은 사람 승인, 제때 풀 수 없는 불확실성·검사 불통과·승인자 부재·승인 시간 초과는 배치 전 실행 보류로 넘기고, 불확실성 점수는 규칙 조건과 함께 쓰는 구성이 선택지로 보인다(이 위키의 종합, 물류 조건 근거 없음, 신뢰도 low). [추정][^ref-350][^ref-355][^ref-695][^ref-697][^ref-031]\n\n**남은 불확실성**\n- 다섯 겹 확인 절차와 방법별 포착·놓침 분담을 한 번에 제시한 단일 출처가 없고, 근거가 물류 플릿 조건이 아니다.\n- RoboGuard 수치(92% → 2.5% 미만)와 SafePlan 수치(90.5%, 621개)는 원문 미열람 저자 보고값이며 SafePlan 저자는 미확인이다.\n- q4-02 근거 수치(SELP, CAPE, Guan 외, Hariharan 외, SIMMER, Ko·Lin, Deng 외)는 모두 원문 미열람 저자 보고값이다. SIMMER 는 동료심사 전 프리프린트이며 평가한 모델 수는 미확인이고, Ko·Lin 의 거부·성공 수치는 검증에서 다시 확인하지 못했다.\n- JSONSchemaBench 의 여섯 프레임워크 목록은 원문 미열람 논문 요약 기준이고, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\n- JSON Schema 는 main 브랜치 차기판 초안 기준이며 게시된 2020-12 판과의 문구 차이는 미확인이다. VAL 의 검증 실패 보고 형식도 미확인이다. VerifyLLM·SELP 의 저자 목록은 미확인이다.\n- OWASP 문서의 발행일(2024-11)은 문서 안에서 확인하지 못했다.\n- 감독 전략 비교 연구의 내용과 조건별 수치, Sagawa 외 비교의 우열은 미확인이다.\n- EU AI Act 제14조는 공식 관보 원문을 확인하지 못했고, 인공지능기본법 제34조의 시행령 세부와 물류 배정 AI 의 고영향 해당 여부(oq-105)는 미확인이다.\n- 명령 권한 구성과 감사 추적 항목(q4-03)은 이 위키의 종합이며, 물류 챗봇의 명령 권한·감사 기록을 직접 다룬 출처와 국내 사례는 찾지 못했다.\n- IEC 62443-3-3 의 SR 번호·내용은 제3자 요약 기준이고, 개인정보 접속기록 보관 기간과 고시 현행판은 미확인이다. EU AI Act 로그 조문(제12·19·26조)은 제3자 게재본 기준이며, 채팅 지시 기록의 개인정보처리시스템 해당 여부는 열린 질문으로 올렸다.\n- Progent 공격 성공률 수치는 요약마다 다르고(판 차이 미확인), AgentGuard·도구 호출 출처 서베이의 세부와 MiniScope 의 방법은 원문 미열람이다. MiR 의 권한·감사 기능은 벤더 주장이다.\n- 제한 운영 기준(q4-04)의 세 경로 전환 기준은 이 위키의 종합이며, 세 경로를 한 번에 제시한 출처와 물류 창고 로봇 채팅 지시에 대한 평가·국내 사례는 확인되지 않았다. 모든 근거가 단일 출처이고 교차 확인되지 않았다.\n- SAGE-Agent(질문 수 1.5~2.7배 감소)와 AmbiK(구분 점수) 수치는 원문 미열람 저자 보고값이며, 각각 도구 호출·주방 텍스트 작업 조건이다.\n- q4-04 를 답한 실행(2026-09-25-85)은 신규 검색 없이 기존 참고문헌만 재사용했다. 보류 시간 한계와 기한·출하 마감의 연동은 후속 질문 q4-19 로 남겼다.\n- [업무 분해·배정 설계 초안](task-model-draft.md)은 v0.9 로 올라 개념 '명령 권한'이 더해지고 지시의 입력자가 인증된 사용자 식별로 정리되었으나, 권한 판정 결과의 기록 위치는 정하지 않았다. 제안된 개념 '사용자 확인'(실행 2026-09-25-79)과 결정적 검사만 담도록 경계를 좁혀 다시 제안된 개념 '검증 기록'(실행 2026-09-25-81)은 서로의 경계와 배정 속성 '확인 여부'와의 경계가 정해지지 않았고 근거에 추정·원문 미열람이 섞여 초안 6절의 질문으로 두었다. 실행 2026-09-25-85 에서는 온톨로지 변경 제안이 없어 초안을 v0.9 로 유지하고 q4-04 답을 6절 '사용자 확인' 질문에 연결만 했다."
+          },
+          {
+            "section": "5. 이 단계가 낳은 후속 질문",
+            "action": "replace",
+            "content": "| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (관련: q4-04) | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-79) | 열림 |\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? | 단계 4. 오해석 방지와 확인 절차 | f5(실행 2026-09-25-79) | 열림 |\n| q5-10 | 물류 지시 시나리오에서 관제 요원의 승인 지연 시간·거부율·수정률을 재어 승인 피로와 자동화 편향이 나타나는지, 확인 요약에 결정적 검사 결과를 함께 보이면 잘못된 지시를 멈추는 비율이 달라지는지를 어떤 실험으로 측정하는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-79) | 열림 |\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-81) | 열림 |\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (관련: oq-104) | 단계 4. 오해석 방지와 확인 절차 | f23(실행 2026-09-25-81) | 열림 |\n| q5-16 | 물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-81) | 열림 |\n| q4-17 | 교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (관련: q4-13) | 단계 4. 오해석 방지와 확인 절차 | f21(실행 2026-09-25-83) | 열림 |\n| q4-18 | 채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-83) | 열림 |\n| q5-17 | 권한 밖 지시와 프롬프트 주입이 섞인 물류 지시 시험 세트로, LLM 단의 거절과 ROP 인가 계층의 결정적 거부가 각각 권한 밖 작업 요청을 얼마나 막는지와 정상 지시의 오거부율을 어떻게 재는가? (관련: q5-13) | 단계 5. 검증 방법과 가설 판정 | f6(실행 2026-09-25-83) | 열림 |\n| q4-19 | 실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (관련: q4-11, q4-13) | 단계 4. 오해석 방지와 확인 절차 | f19(실행 2026-09-25-85) | 열림 |\n\n실행 2026-09-25-85 에서 제안된 다른 후속 질문(불확실성 점수만 쓰는 방식과 규칙을 함께 쓰는 방식의 비교)은 q4-07·q5-08 과 중복이라 등록하지 않았다."
+          },
+          {
+            "section": "6. 완료 조건 충족 현황",
+            "action": "replace",
+            "content": "충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 실행 전 검증 단계를 담은 확인 절차 초안이 [업무 분해·배정 설계 초안](task-model-draft.md)의 미해결 모델링 질문과 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)의 \"5. 구현 가설\" 절에 반영됨 | 미충족 | [q4-01 답](#q4-01)의 다섯 겹 확인 절차와 [q4-02 답](#q4-02)의 검증 방법별 포착 오류를 초안 6절 질문과 아이디어 5절 소절로 반영했으나 검증 승인 상태가 아니고 근거가 추정(신뢰도 low)이다 | 미충족 · 미승인 |\n| 명령 권한을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | [q4-03 답](#q4-03)의 권한 규칙 구성과 감사 추적 항목을 초안(개념 '명령 권한', v0.9, 6절 질문)과 아이디어 5절 소절로 반영했으나 근거가 추정(신뢰도 low)이고 검증 승인 상태가 아니다 | 미충족 · 미승인 |\n| 제한 운영 기준을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | [q4-04 답](#q4-04)의 되묻기·사람 승인·실행 보류 전환 기준을 초안 6절 '사용자 확인' 질문과 아이디어 5절 '제한 운영으로 넘기는 기준' 소절로 반영했으나 이 위키의 종합(추정, 신뢰도 low)이고 검증 승인 상태가 아니다 | 미충족 · 미승인 |\n\n다음 단계로 전환: 아니오(완료 조건 반영이 추정 근거·검증 승인 전, 열린 질문 q4-05~q4-18)"
+          },
+          {
+            "section": "8. 출처",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-031",
+                "ref-350",
+                "ref-352",
+                "ref-353",
+                "ref-355",
+                "ref-356",
+                "ref-417",
+                "ref-418",
+                "ref-656",
+                "ref-658",
+                "ref-663",
+                "ref-664",
+                "ref-711",
+                "ref-695",
+                "ref-696",
+                "ref-697",
+                "ref-698",
+                "ref-699",
+                "ref-700",
+                "ref-701",
+                "ref-702",
+                "ref-703",
+                "ref-713",
+                "ref-714",
+                "ref-715",
+                "ref-716",
+                "ref-620",
+                "ref-717",
+                "ref-748",
+                "ref-749",
+                "ref-750",
+                "ref-751",
+                "ref-752",
+                "ref-753",
+                "ref-754",
+                "ref-755",
+                "ref-756",
+                "ref-757",
+                "ref-758",
+                "ref-759",
+                "ref-760",
+                "ref-761",
+                "ref-362",
+                "ref-459",
+                "ref-236",
+                "ref-416",
+                "ref-125",
+                "ref-579",
+                "ref-762",
+                "ref-763",
+                "ref-764",
+                "ref-765",
+                "ref-766",
+                "ref-767",
+                "ref-768",
+                "ref-769",
+                "ref-770",
+                "ref-771",
+                "ref-772",
+                "ref-773",
+                "ref-774",
+                "ref-775",
+                "ref-776"
+              ]
+            },
+            "content": "[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-350]: Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io), 미확인, https://robot-help.github.io/, 접근일 2026-09-25 (원문 미열람)\n[^ref-352]: Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트), CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io), 미확인, https://clararobot.github.io/, 접근일 2026-09-25 (원문 미열람)\n[^ref-353]: Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S., CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents, 2024, https://arxiv.org/abs/2306.10376, 접근일 2026-09-25 (원문 미열람)\n[^ref-355]: Ivanova, A. 외(AmbiK 저자, dblp 기록 기준), AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment, 2025, https://aclanthology.org/2025.acl-long.1593/, 접근일 2026-09-25 (원문 미열람)\n[^ref-356]: Rasa Technologies (RasaHQ/rasa GitHub), Forms — Rasa documentation (docs/docs/forms.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx, 접근일 2026-09-25 (원문 미열람)\n[^ref-417]: Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems, 2026-04, https://arxiv.org/abs/2604.05427, 접근일 2026-09-25 (원문 미열람)\n[^ref-418]: Mecalux, Mecalux integrates generative AI into Easy WMS, 미확인, https://www.mecalux.com/news/generative-ai-easy-wms-mecalux, 접근일 2026-09-25 (원문 미열람)\n[^ref-656]: Open Robotics (open-rmf), rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp, 접근일 2026-09-25 (원문 미열람)\n[^ref-658]: Rasa Technologies (RasaHQ/rasa GitHub), Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx, 접근일 2026-09-25 (원문 미열람)\n[^ref-663]: Liang, K. 외(Introspective Planning 저자), Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity, 2024-02, https://arxiv.org/abs/2402.06529, 접근일 2026-09-25 (원문 미열람)\n[^ref-664]: Suri, M. 외(University of Maryland·Adobe Research), Structured Uncertainty guided Clarification for LLM Agents, 2025-11, https://arxiv.org/abs/2511.08798, 접근일 2026-09-25 (원문 미열람)\n[^ref-711]: Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems, 2026-06, https://arxiv.org/abs/2606.31339, 접근일 2026-09-25 (원문 미열람)\n[^ref-695]: OWASP Top 10 for LLM Applications 프로젝트 (OWASP GitHub), LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency.md), 2024-11, https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md, 접근일 2026-09-25 (원문 미열람)\n[^ref-696]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Server Features: Tools (docs/specification/2025-06-18/server/tools.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx, 접근일 2026-09-25 (원문 미열람)\n[^ref-697]: LangChain (langchain-ai/docs GitHub), Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx), 미확인, https://docs.langchain.com/oss/python/langchain/human-in-the-loop, 접근일 2026-09-25 (원문 미열람)\n[^ref-698]: Yang, Z. 외(Brown University H2R Lab), Plug in the Safety Chip: Enforcing Constraints for LLM-driven Robot Agents, 2023-09, https://arxiv.org/abs/2309.09919, 접근일 2026-09-25 (원문 미열람)\n[^ref-699]: YzyLmc (Safety Chip 공식 저장소), ltl_safety — README (Plug in the Safety Chip), 미확인, https://github.com/YzyLmc/ltl_safety, 접근일 2026-09-25\n[^ref-700]: Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H.(IEEE RA-L 2026 채택 표기), Safety Guardrails for LLM-Enabled Robots, 2025-03, https://arxiv.org/abs/2503.07885, 접근일 2026-09-25 (원문 미열람)\n[^ref-701]: KumarRobotics (RoboGuard 공식 저장소), RoboGuard — Safety guardrails for LLM-enabled robots (GitHub README), 미확인, https://github.com/KumarRobotics/RoboGuard, 접근일 2026-09-25\n[^ref-702]: SafePlan 저자(arXiv 2503.06892, 저자 미확인), SafePlan: Leveraging Formal Logic and Chain-of-Thought Reasoning for Enhanced Safety in LLM-based Robotic Task Planning, 2025-03, https://arxiv.org/abs/2503.06892, 접근일 2026-09-25 (원문 미열람)\n[^ref-703]: RichardHGL (CHI 2025 Plan-then-Execute 공식 저장소), CHI2025_Plan-then-Execute_LLMAgent — README, 미확인, https://github.com/RichardHGL/CHI2025_Plan-then-Execute_LLMAgent, 접근일 2026-09-25\n[^ref-713]: He, G., Demartini, G., & Gadiraju, U., Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant, 2025-04, https://dl.acm.org/doi/10.1145/3706598.3713218, 접근일 2026-09-25 (원문 미열람)\n[^ref-714]: arXiv 2604.04918 저자(미확인), Comparing Human Oversight Strategies for Computer-Use Agents, 2026-04, https://arxiv.org/abs/2604.04918, 접근일 2026-09-25 (원문 미열람)\n[^ref-715]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 14: Human Oversight — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/14/, 접근일 2026-09-25 (원문 미열람)\n[^ref-716]: arXiv 2502.10036 저자(미확인), Automation Bias in the AI Act: On the Legal Implications of Attempting to De-Bias Human Oversight of AI, 2025-02, https://arxiv.org/abs/2502.10036, 접근일 2026-09-25 (원문 미열람)\n[^ref-620]: 국가법령정보센터(법제처), 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 (법률 제20676호, 2025-01-21), 2025-01-21, https://www.law.go.kr/lsInfoP.do?lsiSeq=268543, 접근일 2026-09-25 (원문 미열람)\n[^ref-717]: Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP), A comparison of confirmation styles for error handling in a speech dialog system, 2004-10, https://www.isca-archive.org/interspeech_2004/sagawa04_interspeech.pdf, 접근일 2026-09-25 (원문 미열람)\n\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\n[^ref-748]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\n[^ref-749]: guidance-ai (JSONSchemaBench GitHub), jsonschemabench — README (JSONSchemaBench), 미확인, https://github.com/guidance-ai/jsonschemabench, 접근일 2026-09-25\n[^ref-750]: Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868), JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models, 2025-01, https://arxiv.org/abs/2501.10868, 접근일 2026-09-25 (원문 미열람)\n[^ref-751]: KCL-Planning (VAL GitHub), VAL — The plan validation system (README), 미확인, https://github.com/KCL-Planning/VAL, 접근일 2026-09-25\n[^ref-752]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\n[^ref-753]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\n[^ref-754]: Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G., Plan Verification for LLM-Based Embodied Task Completion Agents, 2025-09, https://arxiv.org/abs/2509.02761, 접근일 2026-09-25 (원문 미열람)\n[^ref-755]: Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D., CAPE: Corrective Actions from Precondition Errors using Large Language Models, 2022-11, https://arxiv.org/abs/2211.09935, 접근일 2026-09-25 (원문 미열람)\n[^ref-756]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\n[^ref-757]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\n[^ref-758]: Deng, M., Fu, B., Li, L., & Wang, X., Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction, 2025-06, https://arxiv.org/abs/2506.18178, 접근일 2026-09-25 (원문 미열람)\n[^ref-759]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\n[^ref-760]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\n[^ref-761]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)\n\n[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25\n[^ref-579]: Open Robotics (ros2/design GitHub), ROS 2 Access Control Policies (design.ros2.org articles/ros2_access_control_policies), 미확인, https://design.ros2.org/articles/ros2_access_control_policies.html, 접근일 2026-09-25\n[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-09-25\n[^ref-763]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Basic: Authorization (docs/specification/2025-06-18/basic/authorization.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/basic/authorization.mdx, 접근일 2026-09-25\n[^ref-764]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 12: Record-Keeping — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/12/, 접근일 2026-09-25 (원문 미열람)\n[^ref-765]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 19: Automatically Generated Logs — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/19/, 접근일 2026-09-25 (원문 미열람)\n[^ref-766]: 국가법령정보센터(개인정보보호위원회 고시), 개인정보의 안전성 확보조치 기준, 미확인, https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=010202&admRulSeq=2100000229672, 접근일 2026-09-25 (원문 미열람)\n[^ref-767]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-25 (원문 미열람)\n[^ref-768]: NIST, Guide to Attribute Based Access Control (ABAC) Definition and Considerations (NIST SP 800-162), 2014-01, https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-769]: Shi, T. 외(Progent 저자, 소속 미확인), Progent: Programmable Privilege Control for LLM Agents, 2025-04, https://arxiv.org/abs/2504.11703, 접근일 2026-09-25 (원문 미열람)\n[^ref-770]: South, T., Marro, S., Hardjono, T., Mahari, R., Whitney, C. D., Greenwood, D., Chan, A., & Pentland, A., Authenticated Delegation and Authorized AI Agents, 2025-01, https://arxiv.org/abs/2501.09674, 접근일 2026-09-25 (원문 미열람)\n[^ref-771]: Tsai, L., & Bagdasarian, E.(Google, HotOS 2025), Contextual Agent Security: A Policy for Every Purpose, 2025-01, https://arxiv.org/abs/2501.17070, 접근일 2026-09-25 (원문 미열람)\n[^ref-772]: Luo, J. 외(Fudan University·Shanghai Innovation Institute), AgentGuard: An Attribute-Based Access Control Framework for Tool-Use LLM-Based Agent, 2026-05, https://arxiv.org/abs/2605.28071, 접근일 2026-09-25 (원문 미열람)\n[^ref-773]: Zhu, J., Tseng, K., Vernik, G., Huang, X., Patil, S. G., Fang, V., & Popa, R. A.(arXiv 2512.11147), MiniScope: A Least-Privilege Framework for Authorizing Tool-Calling Agents, 2025-12, https://arxiv.org/abs/2512.11147, 접근일 2026-09-25 (원문 미열람)\n[^ref-774]: Mobile Industrial Robots(MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-25 (원문 미열람)\n[^ref-775]: Automated Warehouse, MiR Fleet Enterprise includes scalability, cybersecurity features for mobile robots, 미확인, https://www.automatedwarehouseonline.com/mir-fleet-enterprise-includes-scalability-cybersecurity-features-mobile-robots/, 접근일 2026-09-25 (원문 미열람)\n[^ref-776]: Wang, Y. 외(arXiv 2606.04990), From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents, 2026-06, https://arxiv.org/abs/2606.04990, 접근일 2026-09-25 (원문 미열람)"
+          },
+          {
+            "section": "9. 이력",
+            "action": "replace",
+            "content": "실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-85 | q4-04 | q4-19 | 없음(v0.9 유지, q4-04 답을 초안 6절 '사용자 확인' 질문에 연결). 메모: ref-658 원문 확인으로 Rasa 사람 인계 서술은 [사실] 유지(아이디어 페이지 5절의 같은 문장 [추정]은 이번 실행에서 고치지 않음) | 5 |\n| 2026-09-25 | 2026-09-25-83 | q4-03 | q4-17, q4-18, q5-17 | v0.8 → v0.9(개념 '명령 권한' 추가, 지시 개념의 입력자를 인증된 사용자 식별로 정리) | 4 |\n| 2026-09-25 | 2026-09-25-81 | q4-02 | q4-15, q4-16, q5-16 | 없음(v0.8 유지, 개념 '검증 기록' 재제안은 초안 6절 질문) | 3 |\n| 2026-09-25 | 2026-09-25-79 | q4-01 | q4-13, q4-14, q5-10 | 없음(v0.8 유지, 개념 '사용자 확인' 제안은 초안 6절 질문) | 2 |\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q4-01~q4-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [업무 분해·배정 설계 초안](task-model-draft.md)에서 생성) | 1 |"
+          }
+        ]
+      },
+      {
+        "path": "docs/ideas/nl-task-chatbot.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low)",
+        "patches": [
+          {
+            "section": "5. 구현 가설",
+            "action": "append",
+            "content": "### 제한 운영으로 넘기는 기준\n\n실행 2026-09-25-85 에서 [단계 4 의 q4-04](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04)에 답했다. 이로써 단계 4 의 시작 질문 4개(q4-01~q4-04)는 모두 답해졌지만, 확인 절차 초안의 근거가 추정이고 검증 승인 전이어서 단계 4 완료 조건은 미충족이다.\n\n확인한 자료를 이 위키가 묶으면, 필수 슬롯이 비었거나 문턱을 넘는 해석 후보가 둘 이상이면 되묻기, 해석은 하나로 정해졌지만 영향이 큰 작업이면 사람 승인, 사용자가 제때 풀 수 없는 불확실성·결정적 검사 불통과·승인자 부재·승인 시간 초과면 배치 전 실행 보류로 넘기고, 그 밖에는 해석 요약을 보이는 암시적 확인으로 실행하는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-350][^ref-352][^ref-356][^ref-658][^ref-695][^ref-696][^ref-697][^ref-031] 세 경로를 한 번에 제시한 출처는 없고 물류 조건 근거가 없어 신뢰도가 낮다.\n\n| 경로 | 넘기는 조건 | 근거 사례 |\n|---|---|---|\n| 되묻기 | 필수 슬롯 누락, 문턱을 넘는 해석 후보가 둘 이상 | Rasa 폼·폴백, KnowNo, CLARA |\n| 사람 승인 | 해석은 하나지만 영향이 큰 작업 | OWASP LLM06:2025, MCP 도구 명세, LangChain 사람 참여 미들웨어 |\n| 배치 전 실행 보류 | 제때 풀 수 없는 불확실성, 결정적 검사 불통과, 승인자 부재, 승인 시간 초과 | LangChain 중단점, VDA 5050 대기·일시 정지(연계 대상) |\n| 암시적 확인으로 실행 | 위 조건에 해당하지 않는 일상 지시 | 위 '오해석 방지 확인 절차'의 차등 확인 |\n\n위 표는 이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다.\n\n- **되묻기 근거**: KnowNo 는 등각 예측 문턱을 넘는 선택지가 둘 이상이면 도움을 요청하고 [사실][^ref-350] CLARA 는 명령을 명확·모호·수행 불가로 나누어 모호한 명령에는 질문을 만든다. [사실][^ref-352]\n- **점수와 규칙의 병행**: 불확실성 점수의 문턱은 보정 데이터 분포에 기대고 가정 벤치마크에서 모호성 탐지 구분 성능이 낮게 보고되었으므로, 전환은 점수 하나에 맡기지 말고 필수 슬롯 누락·영향 작업 목록 같은 규칙 조건과 함께 두는 편이 맞는 것으로 보인다(이 위키의 종합, 물류 조건 근거 없음). [추정][^ref-350][^ref-355][^ref-663][^ref-664]\n- **보류 시점과 수단**: VDA 5050 3.0.0 은 모든 이동로봇이 cancelOrder·startPause·stopPause 를 지원하게 하고 waitForTrigger 의 시간 초과 처리를 관제의 책임으로 둔다(확인일 2026-09-25). [사실][^ref-031] 실행 보류는 베이스를 풀어 주기 전에 걸고, 이미 실행 중인 작업은 일시 정지·트리거 대기로 멈추되 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다(이 위키의 종합). [추정][^ref-031][^ref-697] 로봇의 일시 정지·대기 실행 자체는 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다.\n- **승인 대상 한정**: 그럴듯한 계획에 대한 사용자 신뢰가 잘못 보정되기 쉬웠다는 보고(일상 비서 시뮬레이션 조건) [사실][^ref-713]와 영향이 큰 행동 전 사람 승인 권고 [사실][^ref-695]를 함께 보면, 명시적 승인은 영향이 큰 작업으로 한정하고 승인 화면에 결정적 검사 결과와 불확실성의 이유를 함께 보여 주는 것이 승인 피로를 줄이는 선택지로 보인다(이 위키의 종합, 물류 관제 요원의 승인 행동을 잰 자료 없음). [추정][^ref-713][^ref-714][^ref-715][^ref-717][^ref-695]\n\n이번 실행에서는 온톨로지 변경 제안이 없어 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)은 v0.9 를 유지하고, q4-04 답을 초안 6절의 '사용자 확인' 질문에 연결했다. 보류 시간 한계와 기한·출하 마감의 연동은 백로그 q4-19 로 남겼다."
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음)",
+        "patches": [
+          {
+            "section": "6. 미해결 모델링 질문",
+            "action": "append",
+            "content": "- 위 '사용자 확인(승인)을 별도 개념으로 둘지, 배정의 속성(확인 여부)으로 둘지' 항목에 대해 실행 2026-09-25-85 에서 [q4-04 답](stage-4-misinterpretation-safeguards.md#q4-04)이 나왔다. 확인한 자료를 이 위키가 묶으면 불확실성과 영향도에 따라 되묻기·사람 승인·배치 전 실행 보류로 넘기고 그 밖에는 암시적 확인으로 실행하며, 실행 보류는 베이스를 풀어 주기 전에 걸고 보류 시간 초과 때 사람 인계나 주문 취소로 넘기는 판단은 ROP(관제) 쪽이 맡는 구성이 선택지로 보인다(이 위키의 종합, 물류 조건 근거 없음, 신뢰도 low). [추정][^ref-350][^ref-696][^ref-697][^ref-031] 이 제한 운영 경로(되묻기 / 사람 승인 / 실행 보류)를 제안된 개념 '사용자 확인'의 속성 후보로 둘지는 정하지 않았고, 온톨로지 변경 제안이 없어 초안은 v0.9 를 유지한다. — 관련: q4-04, q4-13, q4-19"
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "6절에 실행 2026-09-25-85(q4-04 답, 초안 v0.9 유지) 한 줄 추가",
+        "patches": [
+          {
+            "section": "6. 살아있는 산출물 링크",
+            "action": "append",
+            "content": "- 실행 2026-09-25-85 에서 CLI 로 지정된 질문으로 단계 4 의 q4-04 에 답해 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) 5절에 '제한 운영으로 넘기는 기준' 소절(되묻기·사람 승인·실행 보류 세 경로, 신뢰도 low)을 더했다. [업무 분해·배정 설계 초안](task-model-draft.md)은 변경 없이 v0.9 를 유지했다. 단계 3·4 완료와 단계 전환이 승인되지 않아 현재 단계는 단계 3 으로 둔다."
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 | run 2026-09-25-85",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 4. 오해석 방지와 확인 절차: q4-04 답함(제한 운영으로 넘기는 되묻기·사람 승인·실행 보류 기준, 이 위키의 종합, 신뢰도 low)",
+      "category_recent": "2026-09-25 — 13. 작업 배정 — MRTA(자연어 업무 지시 챗봇 트랙): 되묻기·승인·보류 중 배정을 확정하지 않고 해소 시점 상태로 배정하는 분담을 반영 제안",
+      "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 q4-04 에서 제한 운영 중 배정 시점 분담을 6. 대표 접근법과 기술에 반영 제안"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "expected-value-of-perfect-information",
+        "term_ko": "완전 정보의 기대 가치",
+        "term_en": "Expected Value of Perfect Information (EVPI)",
+        "definition": "불확실한 값을 정확히 알게 될 때 기대되는 결정 결과의 개선량으로, 되물을 질문을 고를 때 질문 비용과 비교하는 기준으로 쓰인다.",
+        "description": "SAGE-Agent 는 질문마다 EVPI 와 질문 비용을 따져 되물을 질문을 고른다고 보고했다(저자 보고, 원문 미열람, 도구 호출 조건).",
+        "related_areas": [
+          27,
+          18
+        ],
+        "sources": [
+          "ref-664"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 3.0.0 명세 원문. 주문·베이스·호라이즌, 순간 동작(cancelOrder·startPause·stopPause), waitForTrigger, 운용 모드, 오류 유형을 규정.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-350",
+        "org": "Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트)",
+        "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io)",
+        "published": null,
+        "url": "https://robot-help.github.io/",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 등각 예측으로 LLM 계획기의 도움 요청 시점을 정하는 KnowNo 프로젝트 페이지.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-352",
+        "org": "Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트)",
+        "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io)",
+        "published": null,
+        "url": "https://clararobot.github.io/",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 명령을 명확·모호·수행 불가로 나누고 모호한 명령을 질문으로 푸는 CLARA 프로젝트 페이지.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-353",
+        "org": "Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S.",
+        "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents",
+        "published": "2024",
+        "url": "https://arxiv.org/abs/2306.10376",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. CLARA 논문(IEEE RA-L 2024).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-355",
+        "org": "Ivanova, A. 외(AmbiK 저자, dblp 기록 기준)",
+        "title": "AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment",
+        "published": "2025",
+        "url": "https://aclanthology.org/2025.acl-long.1593/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 주방 모호 지시 데이터셋과 모호성 탐지 방법 평가.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-356",
+        "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
+        "title": "Forms — Rasa documentation (docs/docs/forms.mdx)",
+        "published": null,
+        "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 필수 슬롯을 차례로 묻고 검증하는 Rasa 폼 문서.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-658",
+        "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
+        "title": "Fallback and Human Handoff — Rasa documentation (docs/docs/fallback-handoff.mdx)",
+        "published": null,
+        "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 신뢰도 문턱 폴백, 두 단계 폴백, 사람 인계 구성 문서.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-663",
+        "org": "Liang, K. 외(Introspective Planning 저자)",
+        "title": "Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity",
+        "published": "2024-02",
+        "url": "https://arxiv.org/abs/2402.06529",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 내성적 계획으로 불필요한 되묻기를 줄이는 방법.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-664",
+        "org": "Suri, M. 외(University of Maryland·Adobe Research)",
+        "title": "Structured Uncertainty guided Clarification for LLM Agents",
+        "published": "2025-11",
+        "url": "https://arxiv.org/abs/2511.08798",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EVPI 와 질문 비용으로 되물을 질문을 고르는 SAGE-Agent.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-695",
+        "org": "OWASP Top 10 for LLM Applications 프로젝트 (OWASP GitHub)",
+        "title": "LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency.md)",
+        "published": "2024-11",
+        "url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 과도한 에이전시의 원인과 사람 승인·최소 권한·완전한 중재 대응.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-696",
+        "org": "Model Context Protocol (modelcontextprotocol GitHub)",
+        "title": "Specification 2025-06-18 — Server Features: Tools (docs/specification/2025-06-18/server/tools.mdx)",
+        "published": "2025-06-18",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 도구 호출의 사람 확인·입력 표시·감사 기록 권고.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-697",
+        "org": "LangChain (langchain-ai/docs GitHub)",
+        "title": "Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx)",
+        "published": null,
+        "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 도구 호출 중단과 승인·수정·거부·응답 결정 미들웨어.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-713",
+        "org": "He, G., Demartini, G., & Gadiraju, U.",
+        "title": "Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant",
+        "published": "2025-04",
+        "url": "https://dl.acm.org/doi/10.1145/3706598.3713218",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 계획 후 실행 LLM 에이전트의 사용자 신뢰·팀 성과 연구(CHI 2025).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-714",
+        "org": "arXiv 2604.04918 저자(미확인)",
+        "title": "Comparing Human Oversight Strategies for Computer-Use Agents",
+        "published": "2026-04",
+        "url": "https://arxiv.org/abs/2604.04918",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 컴퓨터 사용 에이전트의 사람 감독 전략 비교.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-715",
+        "org": "Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본)",
+        "title": "Article 14: Human Oversight | EU Artificial Intelligence Act",
+        "published": "2024",
+        "url": "https://artificialintelligenceact.eu/article/14/",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EU AI Act 제14조 사람 감독 조문 게재본.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-717",
+        "org": "Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP)",
+        "title": "A comparison of confirmation styles for error handling in a speech dialog system",
+        "published": "2004-10",
+        "url": "https://www.isca-archive.org/interspeech_2004/sagawa04_interspeech.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 음성 대화 시스템의 명시적·최종·암시적 확인 방식 비교.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-620",
+        "org": "국가법령정보센터(과학기술정보통신부)",
+        "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+        "published": null,
+        "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 고영향 인공지능 사업자의 사람 관리·감독 조치 등을 정한 법률.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-656",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. Open-RMF 디스패처의 입찰·배정·배정 실패 처리 구현.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      }
+    ],
+    "open_question_updates": [],
+    "flow_matrix_updates": [
+      {
+        "step": "피킹",
+        "item": "시작 조건",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "작업 대상",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "수행 자원",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "제약",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "예외·성과",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      }
+    ],
+    "additional_research_requests": [
+      "pipeline 담당: 단계 4 페이지 H1 아래 상태 줄('> 단계 상태: … · 답한 질문: n건 …')은 H2 절 밖이라 patches 로 고칠 수 없다. 이번 실행으로 답한 질문이 3건에서 4건으로 바뀌었으므로(열린 질문 15건, 진행 중, 미충족은 그대로) 퍼블리셔가 백로그에서 이 줄을 다시 쓰거나 H2 앞 머리 영역에 대한 패치를 허용하도록 요청한다.",
+      "물류 창고 로봇 채팅 지시에서 되묻기·사람 승인·실행 보류로 넘기는 기준을 평가한 연구·국내 사례(단계 4 페이지 q4-04 절과 18. 사람–로봇 협업·운영 인터페이스 6절에 필요): 이번 실행은 신규 검색 0회라 물류 조건 근거가 없어 전환 기준이 이 위키의 종합(신뢰도 low)에 머문다.",
+      "보류 지연이 배정 품질·납기에 주는 영향을 잰 자료(q4-04 분류 원문 질문 연결과 13. 작업 배정 — MRTA 6절에 필요): 확인하지 못했다.",
+      "Sagawa 외(2004)의 명시적·최종·암시적 확인 비교 결과의 우열·수치(q4-04 암시적 확인 경로의 근거로 필요): 원문 미열람으로 미확인이다."
+    ],
+    "fixes_applied": [
+      "f22 수정 — 단계 4 페이지 q4-04 설명용 시나리오의 제약 칸에서 '이미 화물을 실은 경우'를 배치 전 보류가 아니라 일시 정지·트리거 대기로 멈추는 경로(로봇 쪽 실행은 연계 대상)로 고치고, 풀어 준 베이스는 실행된 것으로 가정해야 한다는 근거를 함께 적었다.",
+      "범위 경계 문장 — q4-04 '실행 보류의 수단' 소절에 '로봇의 일시 정지·대기·재시도 실행은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며 ROP 는 보류 지시와 시간 초과 판단(취소·사람 인계)만 맡는다'를 [추정][^ref-031] 로 두었다.",
+      "f11 INTERVENED — '관제는 주문·주문 갱신은 보낼 수 있으나 순간 동작은 cancelOrder 만 보낼 수 있다'로 순간 동작 한정을 유지해 썼다.",
+      "중복 방지 — f7·f8·f9·f12·f13·f14·f15·f16·f20 은 q4-04 절에서 한두 문장 요지만 두고 [q4-01 답](#q4-01)으로 연결했으며, 기존 각주 ref-695·696·697·713·714·715·620·717 을 재사용했다.",
+      "f6 — Rasa 폴백 문장을 [사실]로 두고 '사람 인계는 기본 동작이 아니라 최종 폴백의 예시이며 채널별로 사용자가 구현한다'는 한정을 넣었다. 아이디어 페이지 5절의 기존 [추정] 문장은 고치지 않았고, 단계 4 페이지 9. 이력 행에 'ref-658 원문 확인으로 [사실] 유지' 메모를 남겼다.",
+      "f4·f5·f12 — 수치·결과 뒤에 '저자 보고값, 원문 미열람'과 조건(도구 호출 / 주방 텍스트 작업 / 일상 비서 시뮬레이션)을 적었다.",
+      "f14·f15 — f14 는 [추정]으로 두고 'EUR-Lex 원문 미확인·고위험 해당 여부 미확인'을, f15 는 '시행령 세부 미확인, 고영향 해당 여부는 oq-105'를 함께 적었다.",
+      "f17·f18·f20·f21·f23 — 문장마다 '이 위키의 종합'과 물류 조건 근거가 없다는 점을 밝혔고 q4-04 답의 종합 신뢰도를 low 로 적었으며, 세 경로 전환 기준 표 아래에 '이 위키가 구성한 가설 표이며 출처의 표를 옮긴 것이 아니다'를 넣었다.",
+      "f23 — 근거 공백 소절에 '이번 실행은 신규 검색 없이 기존 참고문헌만 재사용했고, 검색 범위 관찰은 이전 실행(2026-09-25-79·81·83) 기준'이라고 적었다.",
+      "각주 — 단계 4 페이지 8절에서 ref-031 을 뺀 이번 실행 출처의 각주 정의에 ' (원문 미열람)'을 달았다(ref-695·696·697 에 새로 추가, ref-352·353·355·658·663·664 는 새로 정의). reference_updates 에는 ref-031 만 source_unopened false 이고 나머지는 true 다.",
+      "중복 질문 — '불확실성 점수만으로 되묻기를 정하는 방식과 규칙을 함께 쓰는 방식의 비교' 질문은 q4-07·q5-08 과 겹쳐 backlog_updates 에 넣지 않았고, 단계 4 페이지 5절 표 아래에 중복으로 제외했다고 적었다.",
+      "새 질문 — 보류 시간 한계 질문을 q4-19 로 단계 4 에 등록했다(origin f19, 2·5절 표와 backlog_updates).",
+      "task-model-draft.md — ontology_version 0.9 와 H1·버전 이력은 그대로 두고, 6절에 q4-04 답(f17·f19, 추정)을 '사용자 확인' 질문에 잇는 항목만 덧붙였다(ontology_draft_version '0.9').",
+      "단계 4 페이지 6절 — '제한 운영 기준' 행을 q4-04 답을 근거로 적고 충족 여부는 '미충족', 검증 판정은 '미충족 · 미승인'으로 두었다. 표 아래 줄은 '다음 단계로 전환: 아니오(완료 조건 반영이 추정 근거·검증 승인 전, 열린 질문 q4-05~q4-18)'로 썼다. 상태 줄은 H2 밖이라 패치가 닿지 않는다. 단계 상태 '진행 중'은 그대로이고, '답한 질문 3건→4건'은 퍼블리셔가 갱신하도록 additional_research_requests 에 요청했다(4. 결론·2절 표에서는 q4-04 가 답함으로 표시된다).",
+      "세부영역 반영 제안 — 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영 페이지는 직접 고치지 않고 area_reflection_proposals 로만 냈다. 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 적용 대상 영역을 양쪽에서 잇는다는 점도 적었다."
+    ],
+    "track_updates": {
+      "stage_page": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+      "ontology_draft_version": "0.9",
+      "backlog_updates": [
+        {
+          "id": "q4-04",
+          "status": "답함",
+          "answer_link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-04"
+        },
+        {
+          "id": "q4-19",
+          "status": "열림",
+          "answer_link": null,
+          "question": "실행 보류로 넘긴 지시의 보류 시간 한계(승인자 무응답·되묻기 무응답)를 작업의 기한·출하 마감과 어떻게 연동하고, 한계를 넘으면 취소·사람 작업 전환·다른 승인자 인계 가운데 무엇으로 넘기는가? (q4-04 에서 파생) (관련: q4-11, q4-13)",
+          "stage": 4,
+          "origin": "f19"
+        }
+      ],
+      "log_entry": "답한 질문: q4-04(되묻기·사람 승인·실행 보류로 넘기는 기준, f1~f23, 이 위키의 종합, 신뢰도 low; 재실행 1회차, 신규 검색 0회) / 새 질문: q4-19(보류 시간 한계, f19). 불확실성 점수 대 규칙 병행 비교 질문은 q4-07·q5-08 과 중복이라 제외 / 온톨로지 변경: 없음(v0.9 유지, q4-04 답을 초안 6절 '사용자 확인' 질문에 연결) / 완료 조건 평가: 미충족(부족: 실행 전 검증 단계·명령 권한·제한 운영 기준 초안이 추정 근거이고 검증 승인 전; 열린 질문 q4-05~q4-19; q4-09·q4-10 중복 정리 필요) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영 3건 / 다음 실행 제안: q4-13(영향이 큰 작업 목록 기준) 또는 q4-19(보류 시간 한계)",
+      "overview_progress": "단계 4 진행 중(지정 질문 실행, 현재 단계는 단계 3 유지) — 열린 질문 15, 답함 4, 완료 조건 미충족"
+    },
+    "area_reflection_proposals": [
+      {
+        "area_no": 13,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "트랙 자연어 업무 지시 챗봇 q4-04(f19·f21, 추정): 해석 되묻기·사람 승인·실행 보류 동안에는 배정을 확정하지 않고, 해소 뒤 그 시점 로봇 상태로 배정을 계산하는 분담을 둔다. 실행 보류는 VDA 5050 베이스를 풀어 주기 전에 걸어야 한다. 분류 원문 질문(가장 가까운 로봇)과의 연결도 적는다. 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에서 잇는다."
+      },
+      {
+        "area_no": 18,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "트랙 자연어 업무 지시 챗봇 q4-04(f6·f9·f17·f20): Rasa 신뢰도 문턱 폴백과 두 단계 폴백(사람 인계는 최종 폴백의 예시), LangChain 승인·수정·거부 중단점을 적는다. 되묻기·사람 승인·실행 보류로 넘기는 기준과, 명시적 승인을 영향이 큰 작업으로 한정해 승인 피로를 줄이는 선택지(이 위키의 종합, 추정)를 함께 둔다."
+      },
+      {
+        "area_no": 27,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "트랙 자연어 업무 지시 챗봇 q4-04(f1·f3·f4·f5·f18): 불확실성 기반 되묻기 기준(KnowNo 등각 예측, 내성적 계획, SAGE-Agent EVPI, 저자 보고값)과 AmbiK 모호성 탐지 한계를 적고, 불확실성 점수와 규칙 조건을 함께 쓰는 선택지(추정)를 둔다. 적용 대상인 13. 작업 배정 — MRTA와 18. 사람–로봇 협업·운영 인터페이스에 함께 연결한다."
+      }
+    ]
+  },
+  "ttft_ms": 128699,
+  "type": "result",
+  "duration_ms": 395976,
+  "uuid": "cc481dbd-810b-4f0e-bfd4-4ec8c1332b91",
+  "ttft_stream_ms": 4461,
+  "time_to_request_ms": 91,
+  "first_content_frame_ms": 4461,
+  "time_to_request_from_spawn_ms": 3984255,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790345535985.028,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 398.1
+}

@@ -1,0 +1,134 @@
+{
+  "run_id": "2026-09-25-85",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 4,
+    "question_ids": [
+      "q4-04"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 0,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 0
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1292.4,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 | run 2026-09-25-85",
+  "notes": [
+    "용어집 생성: glossary/expected-value-of-perfect-information.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 1,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 5,
+    "backlog": 3,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 23:23:12 KST",
+  "usage": {
+    "input_tokens": 40,
+    "cache_creation_input_tokens": 2247617,
+    "cache_read_input_tokens": 4930434,
+    "output_tokens": 123695,
+    "cost_usd": 22.0548,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 9.3064,
+        "output_tokens": 50714,
+        "cache_read_input_tokens": 4177632,
+        "cache_creation_input_tokens": 862913
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.9671,
+        "output_tokens": 13146,
+        "cache_read_input_tokens": 593341,
+        "cache_creation_input_tokens": 446658
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 3.7492,
+        "output_tokens": 53145,
+        "cache_read_input_tokens": 63022,
+        "cache_creation_input_tokens": 334211
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 4.9474,
+        "output_tokens": 5698,
+        "cache_read_input_tokens": 76155,
+        "cache_creation_input_tokens": 602276
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md (7개 절)",
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/task-model-draft.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 1,
+  "cross_checked_findings": 0
+}
