@@ -51,6 +51,29 @@ version: 1
 | 2026-09-25-57 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-56 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8·10절은 주제 페이지로 분리), 2차 수정: 4절 끊긴 문장 정정, 5절 수행 자원·완료·인계 칸 태그 정정, 6·8절 요약 [의견]화, 7절 요약 각주 보강, 9절 벤더 주장 병기, sources 정리 |
+| 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s7.md](topics/2026/2026-09-25-area22-s7.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 요약·첫 문장에 RAWSim-O·OFacT 근거 각주(ref-101·ref-524) 추가 |
+| 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s8.md](topics/2026/2026-09-25-area22-s8.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약·첫 문장의 대표 자료 선정을 [의견] (구축자 의견)으로 바꾸고 근거 각주 보강 |
+| 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s10.md](topics/2026/2026-09-25-area22-s10.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 번호만 쓴 호칭 2곳 정정, 6. 지도·공간·위치 모델 연결을 [사실]/[추정]으로 분리, 28 연결의 '표준 기반' 단정 정정 |
+| 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s4.md](topics/2026/2026-09-25-area22-s4.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 수정 없음) |
+| 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s6.md](topics/2026/2026-09-25-area22-s6.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 요약·첫 문장을 [의견] (구축자 의견)으로 바꾸고 ref-241 각주 추가, '3절' 지칭을 원 페이지 3. 왜 중요한가 링크로 정정 |
+| 2026-09-25-56 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 22. 시뮬레이션·예측용 디지털 트윈: 영역 심화: 3~11절 신규 작성(1차 조건부 승인 수정 16건·2차 수정 11건 반영, 트랙 floorplan-recognition 반영 제안 8절 반영) |
+| 2026-09-25-56 | 생성 | [docs/references/ref-516.md](references/ref-516.md) | 참고문헌 ref-516 등록: KS X ISO 23247-1 자동화 시스템 및 통합 — 제조를 위한 디지털 트윈 프레임워크 — 제1부: 개… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-517.md](references/ref-517.md) | 참고문헌 ref-517 등록: Digital Twins for Advanced Manufacturing |
+| 2026-09-25-56 | 생성 | [docs/references/ref-518.md](references/ref-518.md) | 참고문헌 ref-518 등록: ISO 23247-6:2026 — Automation systems and integration — Digi… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-519.md](references/ref-519.md) | 참고문헌 ref-519 등록: 설계부터 생산까지 데이터 연결…제조 디지털 트윈 국제표준 발간 |
+| 2026-09-25-56 | 생성 | [docs/references/ref-520.md](references/ref-520.md) | 참고문헌 ref-520 등록: Discrete Event Simulation and Digital Twins: Review and Chal… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-521.md](references/ref-521.md) | 참고문헌 ref-521 등록: Digital twins for logistics and supply chain systems: Litera… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-522.md](references/ref-522.md) | 참고문헌 ref-522 등록: Simulation-based decision support tool for in-house logistic… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-523.md](references/ref-523.md) | 참고문헌 ref-523 등록: rmf_simulation — README |
+| 2026-09-25-56 | 생성 | [docs/references/ref-524.md](references/ref-524.md) | 참고문헌 ref-524 등록: ofact — Simulation-based Digital Twin for Production and Log… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-525.md](references/ref-525.md) | 참고문헌 ref-525 등록: Verification and validation of simulation models (Proceeding… |
+| 2026-09-25-56 | 생성 | [docs/references/ref-526.md](references/ref-526.md) | 참고문헌 ref-526 등록: 가상세계 쌍둥이 창고로 물류 예측... CJ대한통운, 디지털 트윈 구축 (보도자료) |
+| 2026-09-25-56 | 생성 | [docs/references/ref-527.md](references/ref-527.md) | 참고문헌 ref-527 등록: NVIDIA Unveils 'Mega' Omniverse Blueprint for Building Indus… |
+| 2026-09-25-56 | 생성 | [docs/glossary/digital-thread.md](glossary/digital-thread.md) | 용어집 항목 디지털 스레드 |
+| 2026-09-25-56 | 생성 | [docs/glossary/digital-twin-composition.md](glossary/digital-twin-composition.md) | 용어집 항목 디지털 트윈 결합 |
+| 2026-09-25-56 | 생성 | [docs/glossary/verification-and-validation-of-simulation-models.md](glossary/verification-and-validation-of-simulation-models.md) | 용어집 항목 시뮬레이션 모델 검증·타당성 확인 |
+| 2026-09-25-56 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-25-55 | 갱신 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 아직 다루지 않은 연결에 7. 화물·재고·자산 식별과 추적 명시), '참고 자료' 끝에 새 각주 정의 38건 추가 |
 | 2026-09-25-55 | 요약 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | D. 계획·최적화: '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) |
 | 2026-09-25-55 | 생성 | [docs/references/ref-493.md](references/ref-493.md) | 참고문헌 ref-493 등록: Decentralized Multi-Robot Task Allocation Under Degraded Com… |
