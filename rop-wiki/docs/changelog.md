@@ -28,6 +28,22 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설, 신뢰도 low), 4절 결론·불확실성(f22 이번 실행에서도 미확인), 후속 질문 q4-06, 완료 조건 표·이력 갱신, 상태 줄 갱신(상태 줄이 절 밖에 있어 patches 대신 전체 content로 보냄) |
+| 2026-09-25-26 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절: q1-03 미조사 문장 두 곳을 채팅·음성 지시의 확인·승인 방식 비교(작업자 대상 동작 단위 확인 대 로봇 대상 확인 절차 미확인)로 교체 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 아이디어 2 항목의 'q1-03 미조사' 문구를 이번 실행 결과로 교체(상태 줄은 마지막 트랙 실행 2026-09-25·현재 단계 단계 1 그대로라 변경 없음) |
+| 2026-09-25-26 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-03 답함(채팅·음성 지시 제품의 확인·승인 방식, 신뢰도 low), 후속 질문 q4-06 등록, 아이디어 2 3절 갱신 |
+| 2026-09-25-26 | 생성 | [docs/references/ref-272.md](references/ref-272.md) | 참고문헌 ref-272 등록: Voice-Directed Warehousing - Solutions \| Lucas Systems |
+| 2026-09-25-26 | 생성 | [docs/references/ref-275.md](references/ref-275.md) | 참고문헌 ref-275 등록: System and method for generating and updating location check… |
+| 2026-09-25-26 | 생성 | [docs/references/ref-276.md](references/ref-276.md) | 참고문헌 ref-276 등록: Amazon unveils next-gen Proteus robot as part of €10 billion… |
+| 2026-09-25-26 | 생성 | [docs/references/ref-277.md](references/ref-277.md) | 참고문헌 ref-277 등록: Proteus gets natural-language ability as Amazon expands Euro… |
+| 2026-09-25-26 | 생성 | [docs/references/ref-278.md](references/ref-278.md) | 참고문헌 ref-278 등록: InOrbit RobOps Copilot - Bring AI power to robot operations |
+| 2026-09-25-26 | 생성 | [docs/references/ref-279.md](references/ref-279.md) | 참고문헌 ref-279 등록: Efficient Robot Interface for Seamless Human-Robot Collabora… |
+| 2026-09-25-26 | 생성 | [docs/references/ref-280.md](references/ref-280.md) | 참고문헌 ref-280 등록: Locus Robotics leverages Aila's scanning to increase product… |
+| 2026-09-25-26 | 생성 | [docs/references/ref-281.md](references/ref-281.md) | 참고문헌 ref-281 등록: 현대로템, 무인로봇 국책과제 2건 수주 |
+| 2026-09-25-26 | 생성 | [docs/glossary/voice-picking.md](glossary/voice-picking.md) | 용어집 항목 음성 피킹 |
+| 2026-09-25-26 | 생성 | [docs/glossary/location-check-digit.md](glossary/location-check-digit.md) | 용어집 항목 위치 체크 디지트 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 2건 갱신 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 후속 질문 q1-08·q5-04 등록, 4·6·7·8·9절 갱신. 초안 변경 없음. 2차: f1 문장을 '검색 요약에는 소요 시간 수치가 없다(원문 미열람)'로 수정 |
 | 2026-09-25-22 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 현장 모델링 부담의 근거 소절 추가, 6절에 단계 5 조사 전 선행 근거(가설 3 비교 기준 후보·측정 대상 반복 작업) 작성. 2차: 6절 마지막 문장에 '연계 대상: '과 [추정] 태그·각주 추가 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크의 백로그·아이디어 페이지 현황을 실행 2026-09-25-22 기준으로 갱신(상태 줄은 변경 없음) |

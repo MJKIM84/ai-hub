@@ -5,7 +5,7 @@ track: nl-task-chatbot
 stage: 1
 related_areas: [27, 13, 18, 2]
 tags: [선행 연구, 제품 사례, 작업 분해, LLM, 확인·승인]
-status: published
+status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25

@@ -69,7 +69,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q1-05 — 제조사마다 같은 이름의 기능('운반', '도킹', '리프트')이 다른 의미를 갖는 문제를 기존 모델은 어떻게 다루는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 22 | q1-02 — LLM을 로봇 작업 계획이나 여러 로봇의 작업 배정에 쓴 연구·제품 사례는 무엇이 있고, 각각 LLM이 맡는 범위(해석·분해·배정·명령 생성)는 어디까지인가? ([답](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-02)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
+| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 22 | q1-03 — 물류·시설 현장에서 채팅이나 음성으로 로봇·작업자에게 일을 지시하는 운영 인터페이스 제품은 무엇이 있고, 지시를 받은 뒤 확인·승인을 어떻게 받는가? ([답](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-03)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 21 | q1-04 — 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
