@@ -28,6 +28,23 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 소제목 {#q3-04} 신설, 변경 유형별 조작 표·도식, 출하 시나리오), 2절 질문 목록 갱신과 q3-15 추가, 4절 결론 추가, 후속 질문 3건, 6절 완료 조건 미충족·전환 아니오(q3-05~q3-15), 7절 반영 제안, 8절 각주 12건 추가, 9절 이력 행 추가. 2차 수정: 전문으로 보내 H1 아래 단계 상태 줄을 답한 질문 4건·열린 질문 10건으로 갱신, 전환 줄 막힌 질문 범위를 q3-05~q3-15 로 고침 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.7 → v0.8: 지시 개념에 속성 '변경 유형'·'원 지시 참조', 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동' 추가, 두 개념 초안 → 확정; 6절에 q3-04 답 연결과 경계 규칙·보상 작업 승인 주체 질문 추가. 2차 수정: 전문으로 보내 H1 을 '(v0.8)' 로 고쳐 프런트매터·JSON 버전과 맞춤 |
+| 2026-09-25-77 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '지시 변경 반영' 소절 신설(q3-04, 실행 2026-09-25-77): 단계 3 시작 질문 4개가 모두 답해졌음과 다른 아이디어와의 연결은 여전히 구조 언급 수준(완료 조건 미충족)임을 명시, 새 각주 10건(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 현재 버전 v0.8(실행 2026-09-25-77 지시·작업 개념 확정)과 아이디어 2 5절의 지시 변경 반영(q3-04) 반영(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-77 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-04 답함(지시 변경 반영: 변경 유형별 조작·변경 허용 상태·사건 기반 재스케줄링·보상 작업), 업무 분해·배정 설계 초안 v0.7 → v0.8, 후속 질문 3건 |
+| 2026-09-25-77 | 생성 | [docs/references/ref-680.md](references/ref-680.md) | 참고문헌 ref-680 등록: rmf_api_msgs — rmf_api_msgs/schemas/skip_phase_request.json |
+| 2026-09-25-77 | 생성 | [docs/references/ref-681.md](references/ref-681.md) | 참고문헌 ref-681 등록: OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4) — 6 IS… |
+| 2026-09-25-77 | 생성 | [docs/references/ref-682.md](references/ref-682.md) | 참고문헌 ref-682 등록: Rescheduling Manufacturing Systems: A Framework of Strategie… |
+| 2026-09-25-77 | 생성 | [docs/references/ref-683.md](references/ref-683.md) | 참고문헌 ref-683 등록: Freezing the Master Production Schedule Under Rolling Planni… |
+| 2026-09-25-77 | 생성 | [docs/references/ref-684.md](references/ref-684.md) | 참고문헌 ref-684 등록: When Users Change Their Mind: Evaluating Interruptible Agent… |
+| 2026-09-25-77 | 생성 | [docs/references/ref-685.md](references/ref-685.md) | 참고문헌 ref-685 등록: rasa-calm-demo — data/flows/patterns.yml |
+| 2026-09-25-77 | 생성 | [docs/references/ref-686.md](references/ref-686.md) | 참고문헌 ref-686 등록: AI 기반 멀티 에이전트 시스템 제조 환경 도입 방법론 연구(A Study on the Methodology… |
+| 2026-09-25-77 | 생성 | [docs/glossary/event-driven-rescheduling.md](glossary/event-driven-rescheduling.md) | 용어집 항목 사건 기반 재스케줄링 |
+| 2026-09-25-77 | 생성 | [docs/glossary/frozen-horizon.md](glossary/frozen-horizon.md) | 용어집 항목 동결 구간 |
+| 2026-09-25-77 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-76 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-03 답함(3절 {#q4-03} 신설, 추정 중심), 후속 질문 q4-12·q4-13, 완료 조건 2행 충족(1차 예비)·전환 미승인, 출처 16건 추가, 이력 행 추가; 2차 수정: 상태 줄 수치·완료 조건 갱신, 7절에 10. 설비·건물 시스템 연동 추가 |
 | 2026-09-25-76 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.0 → v1.1: 층 속성 '시스템별 층 식별자(별칭)' 추가(MassRobotics planarDatum 제외), 개념 '좌표계 정렬'은 반영하지 않고 6절 근거 보강, 6절에 층·장소 식별자 대응 근거와 도면–현장 정합 절차 초안(추정) 추가; 2차 수정: H1 을 v1.1 로, 프런트매터 sources 에서 미인용 ref-159·ref-669·ref-679 제거 |
 | 2026-09-25-76 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '좌표 정렬과 층·목적지 이름 맞춤' 소절(q4-03, 추정 중심)과 q4-02·q4-03 을 합친 '도면–현장 정합 절차 초안(추정)' 소절 추가; 2차 수정: 5절을 replace 로 보내 기존 소절의 'q4-03 미조사·정합 절차 미완성' 문장을 이번 결과로 고치고 메타 문장 삭제 |

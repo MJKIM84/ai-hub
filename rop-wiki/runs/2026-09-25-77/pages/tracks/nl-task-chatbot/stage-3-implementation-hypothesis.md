@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-586, ref-592, ref-593, ref-594, ref-595, ref-596, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-166, ref-181, ref-242, ref-167, ref-111, ref-236, ref-417, ref-180, ref-356, ref-674, ref-675, ref-676, ref-711, ref-677, ref-712, ref-678, ref-656, ref-657, ref-039, ref-105, ref-125, ref-459, ref-041, ref-659, ref-660, ref-661, ref-662, ref-665, ref-352, ref-353, ref-350, ref-351, ref-663, ref-664, ref-658, ref-666, ref-495, ref-126, ref-127, ref-715, ref-537, ref-717, ref-718, ref-719, ref-720, ref-373, ref-722, ref-723]
+sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-586, ref-592, ref-593, ref-594, ref-595, ref-596, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-166, ref-181, ref-242, ref-167, ref-111, ref-236, ref-417, ref-180, ref-356, ref-674, ref-675, ref-676, ref-711, ref-677, ref-712, ref-678, ref-656, ref-657, ref-039, ref-105, ref-125, ref-459, ref-041, ref-659, ref-660, ref-661, ref-662, ref-665, ref-352, ref-353, ref-350, ref-351, ref-663, ref-664, ref-658, ref-666, ref-495, ref-126, ref-127, ref-680, ref-537, ref-681, ref-682, ref-683, ref-684, ref-373, ref-685, ref-686]
 last_run: 2026-09-25
 version: 5
 ---
@@ -18,7 +18,7 @@ version: 5
 
 # 단계 3. 구현 가설 설계
 
-> 단계 상태: 진행 중 · 열린 질문: 10건 · 답한 질문: 3건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
+> 단계 상태: 진행 중 · 열린 질문: 10건 · 답한 질문: 4건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
 
 ## 1. 이 단계에서 밝힐 것
 
@@ -311,28 +311,28 @@ flowchart TD
 
 ### q3-04 진행 중인 작업에 새 지시가 들어오거나 지시가 바뀌면 작업 모델과 일정은 어떻게 갱신하는가 {#q3-04}
 
-확인한 자료를 이 위키가 묶으면, 지시 변경은 추가·수정·철회로 나눌 수 있고, 작업 모델은 작업마다 이미 실행되어 바꿀 수 없는 부분과 아직 바꿀 수 있는 부분(변경 허용 상태)을 두어 변경을 바꿀 수 있는 부분에만 적용하며, 일정은 지시 변경을 사건으로 삼아 결정적 작업 계획기가 남은 요청으로 다시 계산하고 LLM 은 변경을 요청 조작(추가·취소·중단·재제출)으로 옮기고 확인받는 데 그치는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-720][^ref-031][^ref-111][^ref-717][^ref-126][^ref-495][^ref-377][^ref-718][^ref-722] 이 분담을 한 번에 제시한 단일 출처는 찾지 못했고, 근거가 로봇 관제 규격·제조 재스케줄링·기준생산계획·웹 탐색 LLM·실험실 로봇 조건이며 물류 창고 조건에서 확인되지 않아 이 결론의 신뢰도는 낮다(low). 아래에 근거를 나누어 적는다.
+확인한 자료를 이 위키가 묶으면, 지시 변경은 추가·수정·철회로 나눌 수 있고, 작업 모델은 작업마다 이미 실행되어 바꿀 수 없는 부분과 아직 바꿀 수 있는 부분(변경 허용 상태)을 두어 변경을 바꿀 수 있는 부분에만 적용하며, 일정은 지시 변경을 사건으로 삼아 결정적 작업 계획기가 남은 요청으로 다시 계산하고 LLM 은 변경을 요청 조작(추가·취소·중단·재제출)으로 옮기고 확인받는 데 그치는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-684][^ref-031][^ref-111][^ref-681][^ref-126][^ref-495][^ref-377][^ref-682][^ref-685] 이 분담을 한 번에 제시한 단일 출처는 찾지 못했고, 근거가 로봇 관제 규격·제조 재스케줄링·기준생산계획·웹 탐색 LLM·실험실 로봇 조건이며 물류 창고 조건에서 확인되지 않아 이 결론의 신뢰도는 낮다(low). 아래에 근거를 나누어 적는다.
 
 #### 로봇 관제 인터페이스가 진행 중 작업에서 바꿀 수 있는 부분
 
 - VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25)에서 관제가 이미 로봇에 풀어 준(released) 경로 구간인 베이스(base)는 바꿀 수 없어 관제는 베이스가 실행된 것으로 가정해야 하며, 풀어 주지 않은 호라이즌(horizon)만 같은 주문 id 에 주문 갱신 번호(orderUpdateId)를 올린 주문 갱신으로 바꾸거나 지울 수 있다. [사실][^ref-031]
 - 같은 명세에서 로봇이 순간 동작 cancelOrder([주문 취소 즉시 동작](../../glossary/vda-5050-cancel-order.md))를 받으면 가능한 한 빨리 멈추고, 예정 동작은 FAILED 로 두며, 취소 가능한 실행 중 동작은 취소하되 취소 불가(cancelAllowed=false) 동작은 끝까지 수행한다. [사실][^ref-031] 취소된 주문에는 더 이상 갱신을 보낼 수 없고(ORDER_UPDATE_FOLLOWING_CANCEL), 로봇은 유휴 상태일 때만 새 주문을 받으며(OTHER_ORDER_ACTIVE), 명세는 취소 절차도 통신 한계 때문에 신뢰할 수 없다고 적는다. [사실][^ref-031]
 - 로봇이 멈추고 동작을 취소하거나 끝까지 수행하는 실행은 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이며, ROP 는 cancelOrder 지시를 보내고 그 결과(동작 상태 actionState·오류)를 받아 작업 모델에 반영하는 쪽만 맡는 것으로 본다. [추정][^ref-031]
-- Open-RMF API 는 제출된 작업에 대해 작업 id 와 라벨만으로 된 취소 요청(cancel_task_request), 나중에 재개 요청으로 이어 갈 수 있는 중단 요청(interrupt_task_request), 특정 단계를 건너뛰는 요청(skip_phase_request)을 둔다(확인일 2026-09-25 기준). [사실][^ref-126][^ref-127][^ref-715] 세 파일은 같은 저장소의 문서라 독립 교차가 아니다.
+- Open-RMF API 는 제출된 작업에 대해 작업 id 와 라벨만으로 된 취소 요청(cancel_task_request), 나중에 재개 요청으로 이어 갈 수 있는 중단 요청(interrupt_task_request), 특정 단계를 건너뛰는 요청(skip_phase_request)을 둔다(확인일 2026-09-25 기준). [사실][^ref-126][^ref-127][^ref-680] 세 파일은 같은 저장소의 문서라 독립 교차가 아니다.
 - Open-RMF 작업 상태 스키마는 작업의 완료된 단계·실행 중 단계·대기 단계를 나누어 기록하고, 적용된 중단(요청 토큰별)과 취소·강제 종료 기록에 요청 도착 시각과 라벨을 담는다. [사실][^ref-111]
 - Open-RMF 복합 작업 기술 스키마의 on_cancel 은 해당 단계 도중 작업이 취소되면 수행할 활동 목록이며, 각 활동은 건너뛸 수는 있지만 취소할 수는 없는 별도 단계로 실행된다. [사실][^ref-495]
 - Open-RMF 플릿 어댑터의 로봇 핸들(RobotUpdateHandle)은 로봇에 배치된 작업을 다시 배정하는 reassign_dispatched_tasks, 현재 작업을 일시 중단하고 제어권을 넘기는 interrupt, 배정된 작업을 취소하는 cancel_task 를 두며, 헤더 주석이 밝힌 현재 구현 기준으로 재배정은 원래 배정된 같은 플릿 안의 로봇으로만 이루어진다(확인일 2026-09-25 기준). [사실][^ref-537]
-- 이번에 연 Open-RMF 취소·중단·단계 건너뛰기 요청 스키마와 작업 요청 스키마(필드 구성은 [단계 2 조사 결과](stage-2-data-and-standards.md#q2-01) 참조)에서는 이미 제출된 작업의 우선순위를 바꾸는 요청 형식이 확인되지 않아, 우선순위 변경은 취소 뒤 새 요청으로 다시 내는 방식이 필요할 수 있는 것으로 보인다. 연 파일 범위의 관찰이며 rmf_api_msgs 스키마 전체 목록은 확인하지 못했다(부재 확인 아님). [추정][^ref-126][^ref-127][^ref-715][^ref-125]
+- 이번에 연 Open-RMF 취소·중단·단계 건너뛰기 요청 스키마와 작업 요청 스키마(필드 구성은 [단계 2 조사 결과](stage-2-data-and-standards.md#q2-01) 참조)에서는 이미 제출된 작업의 우선순위를 바꾸는 요청 형식이 확인되지 않아, 우선순위 변경은 취소 뒤 새 요청으로 다시 내는 방식이 필요할 수 있는 것으로 보인다. 연 파일 범위의 관찰이며 rmf_api_msgs 스키마 전체 목록은 확인하지 못했다(부재 확인 아님). [추정][^ref-126][^ref-127][^ref-680][^ref-125]
 
 #### 업무 시스템 작업 지시의 상태별 수정
 
-- OPC UA for ISA-95 Part 4 작업 제어(OPC 10031-4 온라인 참조, 발행일 미확인)는 작업 지시를 실행 전 상태(NotAllowedToStart, AllowedToStart)에서만 Update 메서드로 바꿀 수 있게 하고, 실행 중·중단·미시작 상태의 작업 지시는 Abort 로 Aborted 상태로 보내며, Start·RevokeStart 메서드를 둔다(원문 미열람, 검색 요약 기준). [사실][^ref-717]
-- 같은 작업 제어가 Pause·Resume 메서드도 둔다는 서술은 검색 요약 기준이며 검증에서 재확인하지 못했다(검색 요약 기준, 검증 재확인 못함). [추정][^ref-717]
+- OPC UA for ISA-95 Part 4 작업 제어(OPC 10031-4 온라인 참조, 발행일 미확인)는 작업 지시를 실행 전 상태(NotAllowedToStart, AllowedToStart)에서만 Update 메서드로 바꿀 수 있게 하고, 실행 중·중단·미시작 상태의 작업 지시는 Abort 로 Aborted 상태로 보내며, Start·RevokeStart 메서드를 둔다(원문 미열람, 검색 요약 기준). [사실][^ref-681]
+- 같은 작업 제어가 Pause·Resume 메서드도 둔다는 서술은 검색 요약 기준이며 검증에서 재확인하지 못했다(검색 요약 기준, 검증 재확인 못함). [추정][^ref-681]
 
 #### 재스케줄링 정책과 일정 안정성
 
-- Vieira·Herrmann·Lin(Journal of Scheduling 6(1), 2003)은 재스케줄링을 전략·정책·방법으로 나누는 틀을 제시하고, 정책으로 주기적 재스케줄링과 [사건 기반 재스케줄링](../../glossary/event-driven-rescheduling.md)을 구분했다(원문 미열람). [사실][^ref-718] 같은 틀은 혼합 정책을 두고, 방법을 일정 수선(repair)과 전체 재생성으로, 환경을 정적·동적으로 나눈다(원문 미열람, 검색 요약 기준). [사실][^ref-718]
-- Sridharan·Berry·Udayabhanu(Management Science 33(9), 1987-09)는 롤링 계획 구간에서 기준생산계획(Master Production Schedule, MPS)의 동결 방법·동결 비율·계획 구간 길이가 계획 안정성에 주는 영향을 시뮬레이션으로 분석했고, 넓은 운영 조건에서 계획 구간의 50%까지 [동결](../../glossary/frozen-horizon.md)해도 생산·재고 비용 영향이 크지 않았다고 보고했다(저자 보고, 시뮬레이션, 원문 미열람). [사실][^ref-719] 이 결과가 재고생산(make-to-stock) 조건이었는지는 미확인이며, 단일 출처 수치다.
+- Vieira·Herrmann·Lin(Journal of Scheduling 6(1), 2003)은 재스케줄링을 전략·정책·방법으로 나누는 틀을 제시하고, 정책으로 주기적 재스케줄링과 사건 기반 재스케줄링(event-driven rescheduling)을 구분했다(원문 미열람). [사실][^ref-682] 같은 틀은 혼합 정책을 두고, 방법을 일정 수선(repair)과 전체 재생성으로, 환경을 정적·동적으로 나눈다(원문 미열람, 검색 요약 기준). [사실][^ref-682]
+- Sridharan·Berry·Udayabhanu(Management Science 33(9), 1987-09)는 롤링 계획 구간에서 기준생산계획(Master Production Schedule, MPS)의 동결 방법·동결 비율·계획 구간 길이가 계획 안정성에 주는 영향을 시뮬레이션으로 분석했고, 넓은 운영 조건에서 계획 구간의 50%까지 동결(frozen horizon)해도 생산·재고 비용 영향이 크지 않았다고 보고했다(저자 보고, 시뮬레이션, 원문 미열람). [사실][^ref-683] 이 결과가 재고생산(make-to-stock) 조건이었는지는 미확인이며, 단일 출처 수치다.
 - Open-RMF rmf_task 작업 계획기의 plan() 은 계획 요청 시각(time_now), 로봇들의 초기 상태, 배정할 요청 집합을 받아 배정을 새로 생성하고, 계획 도중 중단 여부를 판단하는 interrupter 함수를 옵션으로 받으며, 배정 결과마다 로봇이 이 배정의 실행을 시작하는 시각(deployment_time)을 담는다(확인일 2026-09-25 기준). [사실][^ref-377]
 - LLM 추론 지연 때문에 실시간 디스패치를 기호 휴리스틱에 맡기는 RACE-Sched 의 구조는 [q3-01 소절](#q3-01)에 정리되어 있다. [사실][^ref-611]
 
@@ -343,13 +343,13 @@ flowchart TD
 #### LLM·대화 시스템의 지시 변경 처리
 
 - CoMuRoS 는 채팅 인터페이스로 사용자가 실행 중 언제든 새 명령을 주거나 진행 작업을 중단하거나 의도를 바꿀 수 있게 하고, 사용자 의도 변경이나 작업 실패가 작업 관리자의 재계획·재배정을 촉발하며, 재계획 때는 완료(COMPLETED)가 아닌 작업만 다시 고려한다(실험실 이종 로봇 팀 조건, 저자 보고, Frontiers in Robotics and AI 2026-08-04 게재, 원문 미열람). [사실][^ref-677]
-- InterruptBench(arXiv 2604.00892) 저자들은 긴 웹 탐색 과제 도중의 사용자 끼어들기를 요구 추가(addition)·목표 수정(revision)·철회(retraction) 세 유형으로 형식화하고, WebArena-Lite 에서 유도한 벤치마크로 6개 LLM 을 평가해 LLM 에이전트가 갱신된 의도에 효과적·효율적으로 적응하는 데 어려움을 겪는다고 보고했다(저자 보고, 원문 미열람). [사실][^ref-720] 이 결과는 웹 탐색 조건이어서 로봇·물류 지시에 적용되는지는 미확인이다.
-- Rasa CALM 공식 데모의 대화 복구 패턴은 앞서 준 슬롯 값을 사용자가 고치면 수정을 확인받아 적용하는 pattern_correction 과, 진행 중 흐름이 취소되면 시작되는 메타 흐름 pattern_cancel_flow 를 업무 흐름과 분리해 둔다(확인일 2026-09-25 기준). [사실][^ref-722] 공식 데모 저장소의 정의이며 제품 기본 동작과 같은지는 미확인이다.
-- 국내 연구로 양진홍·유남현(한국정보전자통신기술학회논문지 18(3), 2025-06)은 제조 환경 AI 기반 다중 에이전트 시스템에서 시스템 에이전트가 설비 고장·긴급 주문 같은 변화를 인식하면 자원 에이전트에 재할당을, AI 스케줄링 에이전트에 재스케줄링 계획을 요청하는 구조를 제시한 것으로 보인다(원문 미열람, 검색 요약 기준, 재스케줄링 요청 구조는 검증 검색에서 재확인되지 않음). [추정][^ref-723]
+- InterruptBench(arXiv 2604.00892) 저자들은 긴 웹 탐색 과제 도중의 사용자 끼어들기를 요구 추가(addition)·목표 수정(revision)·철회(retraction) 세 유형으로 형식화하고, WebArena-Lite 에서 유도한 벤치마크로 6개 LLM 을 평가해 LLM 에이전트가 갱신된 의도에 효과적·효율적으로 적응하는 데 어려움을 겪는다고 보고했다(저자 보고, 원문 미열람). [사실][^ref-684] 이 결과는 웹 탐색 조건이어서 로봇·물류 지시에 적용되는지는 미확인이다.
+- Rasa CALM 공식 데모의 대화 복구 패턴은 앞서 준 슬롯 값을 사용자가 고치면 수정을 확인받아 적용하는 pattern_correction 과, 진행 중 흐름이 취소되면 시작되는 메타 흐름 pattern_cancel_flow 를 업무 흐름과 분리해 둔다(확인일 2026-09-25 기준). [사실][^ref-685] 공식 데모 저장소의 정의이며 제품 기본 동작과 같은지는 미확인이다.
+- 국내 연구로 양진홍·유남현(한국정보전자통신기술학회논문지 18(3), 2025-06)은 제조 환경 AI 기반 다중 에이전트 시스템에서 시스템 에이전트가 설비 고장·긴급 주문 같은 변화를 인식하면 자원 에이전트에 재할당을, AI 스케줄링 에이전트에 재스케줄링 계획을 요청하는 구조를 제시한 것으로 보인다(원문 미열람, 검색 요약 기준, 재스케줄링 요청 구조는 검증 검색에서 재확인되지 않음). [추정][^ref-686]
 
 #### 종합: 변경 유형별 조작과 변경 허용 상태
 
-아래 표와 도식은 변경 유형(InterruptBench)과 확인한 인터페이스의 변경 수단을 이 위키가 대응시킨 것이며, 이 대응을 제시한 단일 출처는 없다. [추정][^ref-720][^ref-717][^ref-031][^ref-126][^ref-127][^ref-495][^ref-377]
+아래 표와 도식은 변경 유형(InterruptBench)과 확인한 인터페이스의 변경 수단을 이 위키가 대응시킨 것이며, 이 대응을 제시한 단일 출처는 없다. [추정][^ref-684][^ref-681][^ref-031][^ref-126][^ref-127][^ref-495][^ref-377]
 
 | 변경 유형 | 아직 실행 전인 부분 | 실행 중이거나 이미 실행된 부분 | 확인한 변경 수단 |
 |---|---|---|---|
@@ -371,13 +371,13 @@ flowchart TD
   replan --> hist["지시·작업 이력 기록"]
 ```
 
-- 확인한 형식들은 모두 작업을 이미 실행되어 바꿀 수 없는 부분과 아직 바꿀 수 있는 부분으로 나누므로(VDA 5050 베이스·호라이즌, Open-RMF 완료·실행 중·대기 단계, ISA-95 실행 전 상태·실행 중 상태, CoMuRoS 완료·미완료), ROP 작업 모델은 작업마다 변경 허용 상태를 두고 지시 변경을 바꿀 수 있는 부분에만 적용하는 것이 선택지로 보이며, 이는 기준생산계획의 동결 구간과 같은 발상이다. [추정][^ref-031][^ref-111][^ref-717][^ref-677][^ref-719] 동결 구간의 근거는 기준생산계획 조건이어서 로봇 작업에 적용되는지는 미확인이다.
-- 일정 갱신은 채팅 지시 변경을 사건으로 삼는 사건 기반 재스케줄링으로, 결정적 작업 계획기에 현재 로봇 상태와 남은 요청 집합을 다시 넣어 배정·순서를 재계산하고, 가까운 시각의 배정은 동결해 일정 흔들림을 줄이며, LLM 은 일정을 직접 다시 짜지 않고 변경을 요청 조작(추가·취소·중단·재제출)으로 바꾸는 역할에 그치는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-718][^ref-377][^ref-719][^ref-611][^ref-537] 물류 플릿 조건의 평가는 없고, 재배정·재스케줄링에서 LLM 추론 지연의 허용 한계는 [열린 질문](../../open-questions.md) oq-104 로 남아 있다.
-- 지시 변경 이력은 원 지시를 덮어쓰지 않고 수정·철회 지시를 원 지시를 참조하는 별도 기록으로 남기고, 영향받은 작업마다 취소·중단 요청의 도착 시각과 사유 라벨을 연결하는 방식이 확인한 형식(Open-RMF 취소·중단 기록, ISA-95 Update, 대화 수정 패턴)과 맞는 것으로 보인다. [추정][^ref-111][^ref-126][^ref-717][^ref-722]
+- 확인한 형식들은 모두 작업을 이미 실행되어 바꿀 수 없는 부분과 아직 바꿀 수 있는 부분으로 나누므로(VDA 5050 베이스·호라이즌, Open-RMF 완료·실행 중·대기 단계, ISA-95 실행 전 상태·실행 중 상태, CoMuRoS 완료·미완료), ROP 작업 모델은 작업마다 변경 허용 상태를 두고 지시 변경을 바꿀 수 있는 부분에만 적용하는 것이 선택지로 보이며, 이는 기준생산계획의 동결 구간과 같은 발상이다. [추정][^ref-031][^ref-111][^ref-681][^ref-677][^ref-683] 동결 구간의 근거는 기준생산계획 조건이어서 로봇 작업에 적용되는지는 미확인이다.
+- 일정 갱신은 채팅 지시 변경을 사건으로 삼는 사건 기반 재스케줄링으로, 결정적 작업 계획기에 현재 로봇 상태와 남은 요청 집합을 다시 넣어 배정·순서를 재계산하고, 가까운 시각의 배정은 동결해 일정 흔들림을 줄이며, LLM 은 일정을 직접 다시 짜지 않고 변경을 요청 조작(추가·취소·중단·재제출)으로 바꾸는 역할에 그치는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-682][^ref-377][^ref-683][^ref-611][^ref-537] 물류 플릿 조건의 평가는 없고, 재배정·재스케줄링에서 LLM 추론 지연의 허용 한계는 [열린 질문](../../open-questions.md) oq-104 로 남아 있다.
+- 지시 변경 이력은 원 지시를 덮어쓰지 않고 수정·철회 지시를 원 지시를 참조하는 별도 기록으로 남기고, 영향받은 작업마다 취소·중단 요청의 도착 시각과 사유 라벨을 연결하는 방식이 확인한 형식(Open-RMF 취소·중단 기록, ISA-95 Update, 대화 수정 패턴)과 맞는 것으로 보인다. [추정][^ref-111][^ref-126][^ref-681][^ref-685]
 - 화물을 이미 실었거나 옮긴 뒤의 취소는 작업을 지우는 것이 아니라 되돌림 같은 보상 작업을 새로 만드는 일이므로, 사가의 보상 트랜잭션처럼 작업 단계마다 취소 시 수행할 활동(Open-RMF on_cancel)을 작업 모델에 미리 두는 것이 선택지로 보인다. [추정][^ref-373][^ref-495][^ref-031] VDA 5050 은 취소 불가 동작을 끝까지 수행하게 하므로 물리적 되돌림은 별도 주문이 필요한 것으로 보인다. 되돌림 뒤 재고 반영 규칙은 분류 원문 9장의 상위 업무 시스템 경계에 속하는 연계 대상이며, 누가 정하는지는 [열린 질문](../../open-questions.md) oq-021 로 남아 있다.
-- LLM 에이전트가 사용자 끼어들기 처리에 약하다는 보고가 있으므로, 챗봇은 지시 변경을 적용하기 전에 해석한 변경(대상 작업, 변경 유형, 영향받는 작업·로봇)을 요약해 확인받는 절차를 두는 것이 선택지로 보이며, 이는 대화 수정 패턴의 확인과 같은 방향이다. [추정][^ref-720][^ref-722][^ref-677] InterruptBench 는 웹 탐색 조건이어서 로봇·물류 지시 적용은 미확인이며, 확인 절차의 설계는 [단계 4. 오해석 방지와 확인 절차](stage-4-misinterpretation-safeguards.md)로 이어진다.
+- LLM 에이전트가 사용자 끼어들기 처리에 약하다는 보고가 있으므로, 챗봇은 지시 변경을 적용하기 전에 해석한 변경(대상 작업, 변경 유형, 영향받는 작업·로봇)을 요약해 확인받는 절차를 두는 것이 선택지로 보이며, 이는 대화 수정 패턴의 확인과 같은 방향이다. [추정][^ref-684][^ref-685][^ref-677] InterruptBench 는 웹 탐색 조건이어서 로봇·물류 지시 적용은 미확인이며, 확인 절차의 설계는 [단계 4. 오해석 방지와 확인 절차](stage-4-misinterpretation-safeguards.md)로 이어진다.
 - 위 q3-01 소절에 인용한 분류 원문 13. 작업 배정 — MRTA 의 SCM 관점 질문과 관련해, 우선순위 변경이나 긴급 지시가 들어오면 처음 배정 때 가장 가까웠던 로봇이 이미 다른 작업에 묶여 있을 수 있어 남은 요청 전체를 다시 배정해야 전체 목적을 따를 수 있지만, Open-RMF 의 재배정은 현재 구현 기준으로 같은 플릿 안으로 한정되어 플릿을 넘는 재최적화는 ROP 가 따로 맡아야 할 것으로 보인다. [추정][^ref-537][^ref-377] 플릿 단위 배정의 최적성 손실은 [열린 질문](../../open-questions.md) oq-053 과 이어진다.
-- 이번에 확인한 지시 변경 처리 근거는 로봇 관제·업무 시스템 인터페이스 규격, 제조 재스케줄링·기준생산계획 연구, 웹 탐색 LLM 벤치마크, 실험실 이종 로봇 팀, 국내 제조 다중 에이전트 연구였고, 물류 창고 로봇에 채팅으로 준 지시를 도중에 바꾸는 상황을 평가한 연구와 국내 물류 사례는 한국어 검색을 포함한 검색 범위에서 찾지 못했다(부재의 확인은 아님). [추정][^ref-720][^ref-677][^ref-723][^ref-718]
+- 이번에 확인한 지시 변경 처리 근거는 로봇 관제·업무 시스템 인터페이스 규격, 제조 재스케줄링·기준생산계획 연구, 웹 탐색 LLM 벤치마크, 실험실 이종 로봇 팀, 국내 제조 다중 에이전트 연구였고, 물류 창고 로봇에 채팅으로 준 지시를 도중에 바꾸는 상황을 평가한 연구와 국내 물류 사례는 한국어 검색을 포함한 검색 범위에서 찾지 못했다(부재의 확인은 아님). [추정][^ref-684][^ref-677][^ref-686][^ref-682]
 
 #### 설명용 시나리오: 출하 마감 전 운반 지시 취소와 긴급 출고
 
@@ -387,14 +387,14 @@ flowchart TD
 
 | 항목 | 내용 |
 |---|---|
-| 시작 조건 | 출하 마감 전에 관리자가 채팅으로 앞서 지시한 운반을 취소하고 다른 긴급 출고를 지시한다(설명용 가정). 챗봇이 대상 작업·변경 유형·영향을 요약해 확인받는 흐름이 가능해 보인다. [추정][^ref-722][^ref-720] |
+| 시작 조건 | 출하 마감 전에 관리자가 채팅으로 앞서 지시한 운반을 취소하고 다른 긴급 출고를 지시한다(설명용 가정). 챗봇이 대상 작업·변경 유형·영향을 요약해 확인받는 흐름이 가능해 보인다. [추정][^ref-685][^ref-684] |
 | 작업 대상 | 이미 운반이 지시된 화물과 긴급 출고 화물(설명용 가정) |
 | 수행 자원 | 작업 계획기는 계획 요청 시각, 로봇들의 초기 상태, 요청 집합을 받아 배정을 새로 생성하고 [사실][^ref-377] Open-RMF 의 재배정은 현재 구현 기준으로 같은 플릿 안으로 한정된다. [사실][^ref-537] |
 | 제약 | VDA 5050 에서 이미 풀어 준 베이스는 바꿀 수 없고 풀어 주지 않은 호라이즌만 주문 갱신으로 바꿀 수 있다. [사실][^ref-031] |
-| 완료·인계 | Open-RMF 작업 상태의 취소·중단 기록은 요청 도착 시각과 라벨을 담으며 [사실][^ref-111] 원 지시를 참조하는 변경 기록과 이 기록을 잇는 방식이 가능해 보인다. [추정][^ref-111][^ref-722] |
+| 완료·인계 | Open-RMF 작업 상태의 취소·중단 기록은 요청 도착 시각과 라벨을 담으며 [사실][^ref-111] 원 지시를 참조하는 변경 기록과 이 기록을 잇는 방식이 가능해 보인다. [추정][^ref-111][^ref-685] |
 | 예외·성과 | 이미 화물을 실었으면 단계별 취소 시 활동처럼 되돌림 보상 작업을 만드는 흐름이 가능해 보인다. [추정][^ref-495][^ref-373] 되돌림 뒤 재고 반영은 상위 업무 시스템의 연계 대상이다(oq-021). |
 
-다음은 설명을 위한 가상의 시나리오이다. 출하 마감 전 관리자가 채팅으로 앞선 운반을 취소하고 긴급 출고를 넣으면, 챗봇은 변경을 요약해 확인받고, 시스템은 대상 작업의 변경 허용 상태를 보아 대기 중이면 취소·재제출하고 이미 화물을 실었으면 되돌림 보상 작업을 만든 뒤, 계획기가 남은 요청으로 일정을 다시 계산하는 흐름이 가능해 보인다. [추정][^ref-126][^ref-495][^ref-377][^ref-722][^ref-031] 보상 작업의 승인 주체와 변경 요약 확인의 형식은 정하지 않았으며 후속 질문 q4-12 로 둔다.
+다음은 설명을 위한 가상의 시나리오이다. 출하 마감 전 관리자가 채팅으로 앞선 운반을 취소하고 긴급 출고를 넣으면, 챗봇은 변경을 요약해 확인받고, 시스템은 대상 작업의 변경 허용 상태를 보아 대기 중이면 취소·재제출하고 이미 화물을 실었으면 되돌림 보상 작업을 만든 뒤, 계획기가 남은 요청으로 일정을 다시 계산하는 흐름이 가능해 보인다. [추정][^ref-126][^ref-495][^ref-377][^ref-685][^ref-031] 보상 작업의 승인 주체와 변경 요약 확인의 형식은 정하지 않았으며 후속 질문 q4-12 로 둔다.
 
 ## 4. 결론과 남은 불확실성
 
@@ -433,8 +433,8 @@ flowchart TD
 - 지시 변경 반영(q3-04)은 아직 답하지 않았다.
 
 **실행 2026-09-25-77 에서 더한 결론**
-- q3-04 의 답: 지시 변경을 추가·수정·철회로 나누고, 작업마다 변경 허용 상태를 두어 바꿀 수 있는 부분에만 변경을 적용하며, 일정은 결정적 작업 계획기가 사건 기반으로 다시 계산하고 LLM 은 변경을 요청 조작으로 옮기고 확인받는 데 그치는 분담이 근거가 가장 많은 것으로 보인다(신뢰도 low, 이 위키의 종합). [추정][^ref-720][^ref-031][^ref-111][^ref-717][^ref-377][^ref-718]
-- VDA 5050 은 이미 풀어 준 베이스를 바꿀 수 없게 하고, Open-RMF 는 취소·중단·단계 건너뛰기 요청과 완료·실행 중·대기 단계 기록을 둔다. [사실][^ref-031][^ref-126][^ref-127][^ref-715][^ref-111]
+- q3-04 의 답: 지시 변경을 추가·수정·철회로 나누고, 작업마다 변경 허용 상태를 두어 바꿀 수 있는 부분에만 변경을 적용하며, 일정은 결정적 작업 계획기가 사건 기반으로 다시 계산하고 LLM 은 변경을 요청 조작으로 옮기고 확인받는 데 그치는 분담이 근거가 가장 많은 것으로 보인다(신뢰도 low, 이 위키의 종합). [추정][^ref-684][^ref-031][^ref-111][^ref-681][^ref-377][^ref-682]
+- VDA 5050 은 이미 풀어 준 베이스를 바꿀 수 없게 하고, Open-RMF 는 취소·중단·단계 건너뛰기 요청과 완료·실행 중·대기 단계 기록을 둔다. [사실][^ref-031][^ref-126][^ref-127][^ref-680][^ref-111]
 - 화물 적재 뒤 취소는 보상 작업을 새로 만드는 일로 다루고 단계별 취소 시 활동을 작업 모델에 미리 두는 것이 선택지로 보인다. [추정][^ref-373][^ref-495]
 - 이번 실행(2026-09-25-77)에서 [업무 분해·배정 설계 초안](task-model-draft.md)의 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정하고 초안 버전을 v0.7 에서 v0.8 로 올렸다. 이력 방식, 변경 허용 상태의 경계 규칙, 보상 작업의 승인 주체는 정의에 넣지 않고 초안 6절의 질문으로 두었다.
 
@@ -483,7 +483,7 @@ flowchart TD
 | [업무 분해·배정 설계 초안](task-model-draft.md)이 근거 finding과 함께 v0.1 이상으로 갱신됨 | 충족 | 이번 실행에서 지시 개념(변경 유형·원 지시 참조)과 작업 개념(변경 허용 상태·취소 시 보상 활동)을 확정해 v0.8 로 갱신(f1·f4·f5·f10·f15·f16·f19·f20·f22·f23, 실행 2026-09-25-77) | 충족 |
 | 사용자에게 제안하는 실험 계획이 [실험](experiments.md)에 실림 | 미충족 | 제안된 실험 계획이 없다 | 미충족 · 미승인 |
 
-다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 미완, 실험 계획 없음, 열린 질문 q3-05~q3-14)
+다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 미완, 실험 계획 없음, 열린 질문 q3-05~q3-15)
 
 ## 7. 관련 세부영역
 
@@ -573,15 +573,15 @@ flowchart TD
 [^ref-495]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json, 접근일 2026-09-25
 [^ref-126]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/cancel_task_request.json, 접근일 2026-09-25
 [^ref-127]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/interrupt_task_request.json, 접근일 2026-09-25
-[^ref-715]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/skip_phase_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/skip_phase_request.json, 접근일 2026-09-25
+[^ref-680]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/skip_phase_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/skip_phase_request.json, 접근일 2026-09-25
 [^ref-537]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp, 접근일 2026-09-25
-[^ref-717]: OPC Foundation, OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4) — 6 ISA-95 Data Representation Model, 미확인, https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/6, 접근일 2026-09-25 (원문 미열람)
-[^ref-718]: Vieira, G. E., Herrmann, J. W., & Lin, E. (Journal of Scheduling 6(1), 35-58), Rescheduling Manufacturing Systems: A Framework of Strategies, Policies, and Methods, 2003, https://link.springer.com/article/10.1023/A:1022235519958, 접근일 2026-09-25 (원문 미열람)
-[^ref-719]: Sridharan, S. V., Berry, W. L., & Udayabhanu, V. (Management Science 33(9), 1137-1149), Freezing the Master Production Schedule Under Rolling Planning Horizons, 1987-09, https://pubsonline.informs.org/doi/10.1287/mnsc.33.9.1137, 접근일 2026-09-25 (원문 미열람)
-[^ref-720]: InterruptBench 저자(arXiv 2604.00892, 저자 미확인), When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation, 2026-04, https://arxiv.org/abs/2604.00892, 접근일 2026-09-25 (원문 미열람)
+[^ref-681]: OPC Foundation, OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4) — 6 ISA-95 Data Representation Model, 미확인, https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/6, 접근일 2026-09-25 (원문 미열람)
+[^ref-682]: Vieira, G. E., Herrmann, J. W., & Lin, E. (Journal of Scheduling 6(1), 35-58), Rescheduling Manufacturing Systems: A Framework of Strategies, Policies, and Methods, 2003, https://link.springer.com/article/10.1023/A:1022235519958, 접근일 2026-09-25 (원문 미열람)
+[^ref-683]: Sridharan, S. V., Berry, W. L., & Udayabhanu, V. (Management Science 33(9), 1137-1149), Freezing the Master Production Schedule Under Rolling Planning Horizons, 1987-09, https://pubsonline.informs.org/doi/10.1287/mnsc.33.9.1137, 접근일 2026-09-25 (원문 미열람)
+[^ref-684]: InterruptBench 저자(arXiv 2604.00892, 저자 미확인), When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation, 2026-04, https://arxiv.org/abs/2604.00892, 접근일 2026-09-25 (원문 미열람)
 [^ref-373]: Garcia-Molina, H., & Salem, K. (ACM SIGMOD 1987), Sagas, 1987, https://dl.acm.org/doi/10.1145/38713.38742, 접근일 2026-09-25 (원문 미열람)
-[^ref-722]: Rasa Technologies (RasaHQ/rasa-calm-demo GitHub), rasa-calm-demo — data/flows/patterns.yml, 미확인, https://github.com/RasaHQ/rasa-calm-demo/blob/main/data/flows/patterns.yml, 접근일 2026-09-25
-[^ref-723]: 양진홍, 유남현(한국정보전자통신기술학회논문지 18(3), 155-171), AI 기반 멀티 에이전트 시스템 제조 환경 도입 방법론 연구(A Study on the Methodology for Implementing AI-based Multi-Agent Systems in Manufacturing Environments), 2025-06, https://www.koreascience.kr/article/JAKO202519736002981.page, 접근일 2026-09-25 (원문 미열람)
+[^ref-685]: Rasa Technologies (RasaHQ/rasa-calm-demo GitHub), rasa-calm-demo — data/flows/patterns.yml, 미확인, https://github.com/RasaHQ/rasa-calm-demo/blob/main/data/flows/patterns.yml, 접근일 2026-09-25
+[^ref-686]: 양진홍, 유남현(한국정보전자통신기술학회논문지 18(3), 155-171), AI 기반 멀티 에이전트 시스템 제조 환경 도입 방법론 연구(A Study on the Methodology for Implementing AI-based Multi-Agent Systems in Manufacturing Environments), 2025-06, https://www.koreascience.kr/article/JAKO202519736002981.page, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

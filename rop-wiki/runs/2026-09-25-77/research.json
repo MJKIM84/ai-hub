@@ -61,7 +61,7 @@
       "source_ids": [
         "ref-126",
         "ref-127",
-        "ref-715"
+        "ref-680"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -119,7 +119,7 @@
       "source_ids": [
         "ref-126",
         "ref-127",
-        "ref-715",
+        "ref-680",
         "ref-125"
       ],
       "cross_checked": false,
@@ -162,7 +162,7 @@
       "claim": "OPC UA for ISA-95 Part 4 작업 제어는 작업 지시를 실행 전 상태(NotAllowedToStart, AllowedToStart)에서만 Update 메서드로 바꿀 수 있게 하고, 실행 중·중단·미시작 상태의 작업 지시는 Abort 로 Aborted 상태로 보내며, Start·RevokeStart·Pause·Resume 메서드를 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-717"
+        "ref-681"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -177,7 +177,7 @@
       "claim": "Vieira·Herrmann·Lin(Journal of Scheduling 6(1), 2003)은 재스케줄링을 환경(정적·동적), 전략, 정책(주기적·사건 기반·혼합), 방법(일정 수선(repair)·전체 재생성)으로 분류하는 틀을 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-718"
+        "ref-682"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -192,7 +192,7 @@
       "claim": "Sridharan·Berry·Udayabhanu(Management Science 33(9), 1987)는 롤링 계획 구간에서 기준생산계획(MPS)의 동결 방법·동결 비율·계획 구간 길이가 계획 안정성에 주는 영향을 시뮬레이션으로 분석했고, 재고생산 환경의 여러 조건에서 계획 구간의 50%까지 동결해도 생산·재고 비용 영향이 크지 않았다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-719"
+        "ref-683"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -237,7 +237,7 @@
       "claim": "InterruptBench(arXiv 2604.00892)는 긴 웹 탐색 과제 도중의 사용자 끼어들기를 요구 추가(addition)·목표 수정(revision)·철회(retraction) 세 유형으로 형식화하고 WebArena-Lite 에서 유도한 벤치마크로 6개 LLM 을 평가해, LLM 에이전트가 갱신된 의도에 효과적·효율적으로 적응하는 데 어려움을 겪는다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-720"
+        "ref-684"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -252,7 +252,7 @@
       "claim": "Rasa CALM 데모의 대화 복구 패턴은 앞서 준 슬롯 값을 사용자가 고치면 수정을 확인받아 적용하는 pattern_correction 과, 진행 중 흐름이 취소되면 시작되는 메타 흐름 pattern_cancel_flow 를 업무 흐름과 분리해 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-722"
+        "ref-685"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -266,7 +266,7 @@
       "claim": "국내 연구 Yang·Yoo(한국정보전자통신기술학회논문지 18(3), 2025)는 제조 환경 AI 기반 다중 에이전트 시스템에서 시스템 에이전트가 설비 고장·긴급 주문 같은 변화를 인식하면 자원 에이전트에 재할당을, AI 스케줄링 에이전트에 재스케줄링 계획을 요청하는 구조를 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-723"
+        "ref-686"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -296,8 +296,8 @@
       "claim": "q3-04 의 지시 변경은 추가(새 지시)·수정(우선순위·기한·장소 변경)·철회(취소)로 나눌 수 있고, 확인한 인터페이스에 대응시키면 추가는 새 요청 제출과 재계획, 수정은 아직 실행 전인 부분이면 갱신(ISA-95 Update, VDA 5050 호라이즌 갱신)·실행 중이면 중단 또는 취소 뒤 재제출, 철회는 취소 요청과 단계별 취소 시 활동 수행으로 옮겨지는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-720",
-        "ref-717",
+        "ref-684",
+        "ref-681",
         "ref-031",
         "ref-126",
         "ref-127",
@@ -319,9 +319,9 @@
       "source_ids": [
         "ref-031",
         "ref-111",
-        "ref-717",
+        "ref-681",
         "ref-677",
-        "ref-719"
+        "ref-683"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -336,9 +336,9 @@
       "claim": "일정 갱신은 채팅 지시 변경을 사건으로 삼는 사건 기반 재스케줄링으로, 결정적 작업 계획기에 현재 로봇 상태와 남은 요청 집합을 다시 넣어 배정·순서를 재계산하고, 가까운 시각의 배정은 동결해 일정 흔들림을 줄이며, LLM 은 일정을 직접 다시 짜지 않고 변경을 요청 조작(추가·취소·중단·재제출)으로 바꾸는 역할에 그치는 분담이 근거가 가장 많은 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-718",
+        "ref-682",
         "ref-377",
-        "ref-719",
+        "ref-683",
         "ref-611",
         "ref-537"
       ],
@@ -357,8 +357,8 @@
       "source_ids": [
         "ref-111",
         "ref-126",
-        "ref-717",
-        "ref-722"
+        "ref-681",
+        "ref-685"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -390,8 +390,8 @@
       "claim": "LLM 에이전트가 사용자 끼어들기 처리에 약하다는 보고가 있으므로, 챗봇은 지시 변경을 적용하기 전에 해석한 변경(대상 작업, 변경 유형, 영향받는 작업·로봇)을 요약해 확인받는 절차를 두는 것이 선택지로 보이며, 이는 대화 수정 패턴의 확인과 같은 방향이고 단계 4 확인 절차 설계로 이어진다.",
       "tag": "추정",
       "source_ids": [
-        "ref-720",
-        "ref-722",
+        "ref-684",
+        "ref-685",
         "ref-677"
       ],
       "cross_checked": false,
@@ -425,7 +425,7 @@
         "ref-126",
         "ref-495",
         "ref-377",
-        "ref-722",
+        "ref-685",
         "ref-031"
       ],
       "cross_checked": false,
@@ -440,10 +440,10 @@
       "claim": "이번에 확인한 지시 변경 처리 근거는 로봇 관제·업무 시스템 인터페이스 규격, 제조 재스케줄링·기준생산계획 연구, 웹 탐색 LLM 벤치마크, 실험실 이종 로봇 팀, 국내 제조 다중 에이전트 연구였고, 물류 창고 로봇에 채팅으로 준 지시를 도중에 바꾸는 상황을 평가한 연구와 국내 물류 사례는 한국어 검색 2회를 포함한 검색 범위에서 찾지 못했다(부재의 확인은 아님).",
       "tag": "추정",
       "source_ids": [
-        "ref-720",
+        "ref-684",
         "ref-677",
-        "ref-723",
-        "ref-718"
+        "ref-686",
+        "ref-682"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -501,7 +501,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-715",
+      "id": "ref-680",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_api_msgs — rmf_api_msgs/schemas/skip_phase_request.json",
       "published": null,
@@ -531,7 +531,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-717",
+      "id": "ref-681",
       "org": "OPC Foundation",
       "title": "OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4) — 6 ISA-95 Data Representation Model",
       "published": null,
@@ -546,7 +546,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-718",
+      "id": "ref-682",
       "org": "Vieira, G. E., Herrmann, J. W., & Lin, E. (Journal of Scheduling 6(1), 35-58)",
       "title": "Rescheduling Manufacturing Systems: A Framework of Strategies, Policies, and Methods",
       "published": "2003",
@@ -561,7 +561,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-719",
+      "id": "ref-683",
       "org": "Sridharan, S. V., Berry, W. L., & Udayabhanu, V. (Management Science 33(9), 1137-1149)",
       "title": "Freezing the Master Production Schedule Under Rolling Planning Horizons",
       "published": "1987-09",
@@ -576,7 +576,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-720",
+      "id": "ref-684",
       "org": "InterruptBench 저자(arXiv 2604.00892, 저자 미확인)",
       "title": "When Users Change Their Mind: Evaluating Interruptible Agents in Long-Horizon Web Navigation",
       "published": "2026-04",
@@ -606,7 +606,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-722",
+      "id": "ref-685",
       "org": "Rasa Technologies (RasaHQ/rasa-calm-demo GitHub)",
       "title": "rasa-calm-demo — data/flows/patterns.yml",
       "published": null,
@@ -621,7 +621,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-723",
+      "id": "ref-686",
       "org": "Yang, J.-H., & Yoo, N.-H. (한국정보전자통신기술학회논문지 18(3), 155-171)",
       "title": "A Study on the Methodology for Implementing AI-based Multi-Agent Systems in Manufacturing Environments",
       "published": "2025",
@@ -821,7 +821,7 @@
       "f7 Open-RMF 우선순위 변경 요청 형식의 부재는 연 파일 범위 관찰이며 rmf_api_msgs 스키마 전체 목록 미확인",
       "f10 ISA-95 작업 제어 상태·메서드는 OPC Foundation 온라인 참조의 검색 요약 기준(원문 미열람), 발행일 미확인",
       "f11·f12·f13·f15·f17 원문 미열람(검색 요약 범위), f12·f15 결과는 저자 보고",
-      "ref-720 저자 목록 미확인, 평가 수치 미확인",
+      "ref-684 저자 목록 미확인, 평가 수치 미확인",
       "f14 CoMuRoS 작업 상태 값은 검색 요약 기준",
       "f19~f27 은 이 위키의 종합이며 지시 변경 유형별 처리·변경 허용 상태·이력 관리를 한 번에 제시한 단일 출처는 찾지 못함",
       "Open-RMF 에서 새 요청이 들어올 때 이미 대기 중인 작업의 배정이 함께 재계산되는지는 공식 문서(task.md)에서 확인되지 않음"
@@ -835,7 +835,7 @@
       "queries": 16,
       "sources": 11
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: ref-031(입력 원문 텍스트, inbox), raw.githubusercontent.com 으로 신규 ref-126(cancel_task_request)·ref-127(interrupt_task_request)·ref-715(skip_phase_request)·ref-537(RobotUpdateHandle.hpp)·ref-722(Rasa CALM 데모 patterns.yml), 재사용 ref-377(TaskPlanner.hpp)·ref-111(task_state)·ref-495(compose)·ref-125(task_request). ISA-95 노드셋 원문(raw)은 열람 응답이 잘려 작업 지시 수신 객체 정의를 확인하지 못해 OPC Foundation 온라인 참조(ref-717, 원문 미열람)를 썼다. 나머지 신규 5건과 재사용 ref-677·ref-611 은 원문 미열람이라 신뢰도 상한 medium. 원문을 연 출처도 공통 규칙 0절 6항에 따라 high 를 주지 않았다. 검색 16회/40(한국어 2회), 신규 출처 11건/20(ref-126~ref-723, 예약 구간 안), 재사용 7건. 질문 선택: target.json 지정 q3-04 1건. q3-04 는 인터페이스 변경 수단(사실)과 재스케줄링·보상 트랜잭션·LLM 끼어들기 연구(사실)로 답했으나 변경 유형별 처리·변경 허용 상태·재스케줄링 분담(f19~f26)은 이 위키의 종합이고 근거가 물류 플릿 조건이 아니라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 2회에서 국내 물류 사례는 찾지 못했고 제조 다중 에이전트 연구 1건(ref-723)을 넣었다. 교차 규칙: LLM 끼어들기·재계획 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 적재 뒤 취소의 되돌림·재고 반영은 기존 oq-021, 출고 우선순위 재정렬은 oq-019, 중복 요청 판별은 oq-046 과 겹친다. 용어 후보: 트랙 glossary_targets 는 모두 용어집에 있어 finding 근거 용어 2건을 냈다. 후속 질문 3건, 온톨로지 변경 제안 2건. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 5건(갱신 상한과 별도). 백로그 참고: q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q5-05·q5-06, q1-05·q1-06 중복 등록 정리 필요."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: ref-031(입력 원문 텍스트, inbox), raw.githubusercontent.com 으로 신규 ref-126(cancel_task_request)·ref-127(interrupt_task_request)·ref-680(skip_phase_request)·ref-537(RobotUpdateHandle.hpp)·ref-685(Rasa CALM 데모 patterns.yml), 재사용 ref-377(TaskPlanner.hpp)·ref-111(task_state)·ref-495(compose)·ref-125(task_request). ISA-95 노드셋 원문(raw)은 열람 응답이 잘려 작업 지시 수신 객체 정의를 확인하지 못해 OPC Foundation 온라인 참조(ref-681, 원문 미열람)를 썼다. 나머지 신규 5건과 재사용 ref-677·ref-611 은 원문 미열람이라 신뢰도 상한 medium. 원문을 연 출처도 공통 규칙 0절 6항에 따라 high 를 주지 않았다. 검색 16회/40(한국어 2회), 신규 출처 11건/20(ref-126~ref-686, 예약 구간 안), 재사용 7건. 질문 선택: target.json 지정 q3-04 1건. q3-04 는 인터페이스 변경 수단(사실)과 재스케줄링·보상 트랜잭션·LLM 끼어들기 연구(사실)로 답했으나 변경 유형별 처리·변경 허용 상태·재스케줄링 분담(f19~f26)은 이 위키의 종합이고 근거가 물류 플릿 조건이 아니라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 2회에서 국내 물류 사례는 찾지 못했고 제조 다중 에이전트 연구 1건(ref-686)을 넣었다. 교차 규칙: LLM 끼어들기·재계획 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 적재 뒤 취소의 되돌림·재고 반영은 기존 oq-021, 출고 우선순위 재정렬은 oq-019, 중복 요청 판별은 oq-046 과 겹친다. 용어 후보: 트랙 glossary_targets 는 모두 용어집에 있어 finding 근거 용어 2건을 냈다. 후속 질문 3건, 온톨로지 변경 제안 2건. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 5건(갱신 상한과 별도). 백로그 참고: q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q5-05·q5-06, q1-05·q1-06 중복 등록 정리 필요."
   },
   "track": {
     "slug": "nl-task-chatbot",
