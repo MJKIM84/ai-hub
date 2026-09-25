@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료: topics/2026/2026-09-25-area15-s8.md
+      - 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area15-s7.md
+      - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술: topics/2026/2026-09-25-area15-s6.md
+      - 15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어: topics/2026/2026-09-25-area15-s4.md
+      - 15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가: topics/2026/2026-09-25-area15-s3.md
       - 14. 작업 순서·스케줄링 — 대표 연구와 자료: topics/2026/2026-09-25-area14-s8.md
       - 14. 작업 순서·스케줄링 — 대표 접근법과 기술: topics/2026/2026-09-25-area14-s6.md
       - 14. 작업 순서·스케줄링 — 핵심 개념과 용어: topics/2026/2026-09-25-area14-s4.md
@@ -246,6 +251,7 @@ nav:
     - 공간 그래프 (Space Graph): glossary/space-graph.md
     - 공급망 운영 참조 모델 (SCOR): glossary/scor.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
+    - 교착 (Deadlock): glossary/deadlock.md
     - 구조화 출력 (Structured Output): glossary/structured-output.md
     - 국제 등록 데이터 식별자 (International Registration Data Identifier (IRDI)): glossary/irdi.md
     - 글로벌 개별 자산 식별자 (Global Individual Asset Identifier (GIAI)): glossary/giai.md
@@ -285,12 +291,14 @@ nav:
     - 시간창 (Time Window): glossary/time-window.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
+    - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability): glossary/required-and-provided-capability.md
+    - 우선순위 상속·되돌림 (Priority Inheritance with Backtracking (PIBT)): glossary/priority-inheritance-with-backtracking.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
@@ -313,6 +321,7 @@ nav:
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
     - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
+    - 충돌 기반 탐색 (Conflict-Based Search (CBS)): glossary/conflict-based-search.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
@@ -324,6 +333,7 @@ nav:
     - 합의 기반 번들 알고리즘 (Consensus-Based Bundle Algorithm (CBBA)): glossary/consensus-based-bundle-algorithm.md
     - 해제 구역 (Release Zone): glossary/release-zone.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
+    - 행동 의존 그래프 (Action Dependency Graph (ADG)): glossary/action-dependency-graph.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
     - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
     - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
@@ -535,6 +545,19 @@ nav:
     - ref-183 — Common Data Dictionary – CDD – TC 3: references/ref-183.md
     - ref-184 — Classification Class - ECLASS Technischer Support: references/ref-184.md
     - ref-185 — The latest ECLASS Release: references/ref-185.md
+    - 'ref-186 — Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks': references/ref-186.md
+    - ref-187 — Conflict-based search for optimal multi-agent pathfinding: references/ref-187.md
+    - ref-188 — Persistent and Robust Execution of MAPF Schedules in Warehouses: references/ref-188.md
+    - ref-189 — Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding: references/ref-189.md
+    - 'ref-190 — Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity': references/ref-190.md
+    - ref-191 — MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023): references/ref-191.md
+    - ref-192 — A traffic management system for large and heterogeneous vehicles in narrow industrial environments: references/ref-192.md
+    - ref-193 — Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments: references/ref-193.md
+    - ref-194 — 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안: references/ref-194.md
+    - 'ref-195 — SIPP: Safe interval path planning for dynamic environments': references/ref-195.md
+    - 'ref-196 — Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios': references/ref-196.md
+    - ref-197 — rmf_traffic — README: references/ref-197.md
+    - 'ref-199 — Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding': references/ref-199.md
     - ref-212 — vdma-lif — schema/lif-schema.json (JSON parsers and models for the VDMA LIF, VDMA 공식 산출물이 아닌 제3자 스키마): references/ref-212.md
     - ref-213 — IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-213.md
     - ref-214 — IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-214.md

@@ -40,6 +40,32 @@ version: 1
 | 2026-09-25-41 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-39 | 갱신 | [docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영 |
+| 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s6.md](topics/2026/2026-09-25-area15-s6.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "6. 대표 접근법과 기술" 절(2,051자)을 옮겼다. 2차 수정: SIPP 가정 한계 문장을 [추정]으로 고쳐 썼다 |
+| 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s8.md](topics/2026/2026-09-25-area15-s8.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "8. 대표 연구와 자료" 절(1,679자)을 옮겼다 |
+| 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s7.md](topics/2026/2026-09-25-area15-s7.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,155자)을 옮겼다. 형식 수정: 아직 참고문헌 페이지가 없는 ref-197·ref-191 링크를 텍스트 id 로 바꿨다 |
+| 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s4.md](topics/2026/2026-09-25-area15-s4.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "4. 핵심 개념과 용어" 절(969자)을 옮겼다 |
+| 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s3.md](topics/2026/2026-09-25-area15-s3.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "3. 왜 중요한가" 절(742자)을 옮겼다 |
+| 2026-09-25-39 | 요약 | [docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 |
+| 2026-09-25-39 | 생성 | [docs/references/ref-186.md](references/ref-186.md) | 참고문헌 ref-186 등록: Multi-Agent Pathfinding: Definitions, Variants, and Benchmar… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-187.md](references/ref-187.md) | 참고문헌 ref-187 등록: Conflict-based search for optimal multi-agent pathfinding |
+| 2026-09-25-39 | 생성 | [docs/references/ref-188.md](references/ref-188.md) | 참고문헌 ref-188 등록: Persistent and Robust Execution of MAPF Schedules in Warehou… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-189.md](references/ref-189.md) | 참고문헌 ref-189 등록: Priority Inheritance with Backtracking for Iterative Multi-a… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-190.md](references/ref-190.md) | 참고문헌 ref-190 등록: Optimal Multi-Robot Path Planning on Graphs: Structure and C… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-191.md](references/ref-191.md) | 참고문헌 ref-191 등록: MAPF-LRR2023 — README (Team Pikachu's solution in the League… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-192.md](references/ref-192.md) | 참고문헌 ref-192 등록: A traffic management system for large and heterogeneous vehi… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-193.md](references/ref-193.md) | 참고문헌 ref-193 등록: Hierarchical Traffic Management of Multi-AGV Systems With De… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-194.md](references/ref-194.md) | 참고문헌 ref-194 등록: 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안 |
+| 2026-09-25-39 | 생성 | [docs/references/ref-195.md](references/ref-195.md) | 참고문헌 ref-195 등록: SIPP: Safe interval path planning for dynamic environments |
+| 2026-09-25-39 | 생성 | [docs/references/ref-196.md](references/ref-196.md) | 참고문헌 ref-196 등록: Overview: Generalizations of Multi-Agent Path Finding to Rea… |
+| 2026-09-25-39 | 생성 | [docs/references/ref-197.md](references/ref-197.md) | 참고문헌 ref-197 등록: rmf_traffic — README |
+| 2026-09-25-39 | 생성 | [docs/references/ref-199.md](references/ref-199.md) | 참고문헌 ref-199 등록: Deploying Ten Thousand Robots: Scalable Imitation Learning f… |
+| 2026-09-25-39 | 생성 | [docs/glossary/conflict-based-search.md](glossary/conflict-based-search.md) | 용어집 항목 충돌 기반 탐색 |
+| 2026-09-25-39 | 생성 | [docs/glossary/safe-interval-path-planning.md](glossary/safe-interval-path-planning.md) | 용어집 항목 안전 구간 경로 계획 |
+| 2026-09-25-39 | 생성 | [docs/glossary/priority-inheritance-with-backtracking.md](glossary/priority-inheritance-with-backtracking.md) | 용어집 항목 우선순위 상속·되돌림 |
+| 2026-09-25-39 | 생성 | [docs/glossary/action-dependency-graph.md](glossary/action-dependency-graph.md) | 용어집 항목 행동 의존 그래프 |
+| 2026-09-25-39 | 생성 | [docs/glossary/deadlock.md](glossary/deadlock.md) | 용어집 항목 교착 |
+| 2026-09-25-39 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-38 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 아직 다루지 않은 연결), 참고 자료 절에 각주 정의 41건 덧붙임 |
 | 2026-09-25-38 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | C. 연결·실행 기반: 다른 대분류와의 연결 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 27. AI·학습·적응과 모델 운영은 근거 없음), 조건부 승인 수정 15건 이행 |
 | 2026-09-25-38 | 생성 | [docs/references/ref-405.md](references/ref-405.md) | 참고문헌 ref-405 등록: Security - Programming Multiple Robots with ROS 2 |

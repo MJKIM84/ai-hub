@@ -1,0 +1,808 @@
+{
+  "duration_api_ms": 287353,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.796204,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 237259,
+    "cache_read_input_tokens": 63020,
+    "output_tokens": 44276,
+    "output_tokens_details": {
+      "thinking_tokens": 340
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 237259,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 44276,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 237259,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 237259
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 44276,
+      "cacheReadInputTokens": 63020,
+      "cacheCreationInputTokens": 237259,
+      "webSearchRequests": 0,
+      "costUSD": 2.796204,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 340,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-39\",\"outline\":[{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":800,\"summary\":\"MAPF 는 목적마다 최적해 계산이 어려운 문제다. [사실][^ref-828][^ref-832] 제조사가 다른 로봇 사이의 양보 규칙은 표준이 아니라 조율 계층이 정해야 할 것으로 보인다. [추정][^ref-031][^ref-253][^ref-004]\",\"planned_findings\":[\"f1\",\"f2\",\"f18\",\"f29\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":1000,\"summary\":\"MAPF·지속형 MAPF·MAPD·경로망·베이스와 호라이즌·해제 구역·교착·행동 의존 그래프가 핵심 개념이다. [사실][^ref-828][^ref-079]\",\"planned_findings\":[\"f1\",\"f9\",\"f13\",\"f14\",\"f15\",\"f16\",\"f7\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\",\"budget_chars\":900,\"summary\":\"피킹 통로에서 서로 다른 제조사 로봇이 마주치는 가상 시나리오로, 경로망 제약·구역 허가로 예방하고 협상·일시정지로 푸는 순서를 보인다. [추정][^ref-079][^ref-031][^ref-004]\",\"planned_findings\":[\"f11\",\"f13\",\"f14\",\"f16\",\"f27\",\"f28\",\"f29\",\"f7\",\"f10\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":1600,\"summary\":\"MAPF 해법은 최적 탐색(CBS·SIPP)부터 대규모 반복형(PIBT)까지 이어지고 실행 후처리·산업 교통 관리·경로망 자동 설계 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\",\"planned_findings\":[\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f25\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":1000,\"summary\":\"Open-RMF 는 교통 스케줄·협상을 구현하고 VDA 5050 은 경로 해제·구역 규칙을 정하되 교통 조율 전략은 범위에서 뺀다. [사실][^ref-004][^ref-031]\",\"planned_findings\":[\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f8\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":1400,\"summary\":\"분류 원문이 든 Li 외(2020)·Ma 외(2017)는 지속형 MAPF 와 MAPD 를 다룬다. [사실][^ref-005][^ref-006] 성능 수치는 모두 저자 보고다.\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f9\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f25\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\",\"budget_chars\":800,\"summary\":\"ROP 직접 범위는 여러 제조사 플릿에 걸친 공유 공간의 경로망·구역 단위 조율로, 로컬 회피와 플릿 내부 경로 계획은 연계 대상으로 추정한다. [추정][^ref-031][^ref-004]\",\"planned_findings\":[\"f26\",\"f27\",\"f11\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":800,\"summary\":\"MAPD 로 13. 작업 배정 — MRTA, 공유 자원으로 16. 공용 자원·충전·에너지 최적화, 경로망으로 6. 지도·공간·위치 모델·21. 온보딩·설정·현장 시운전, 제어 수준으로 9. 로봇·제조사 관제 연동, 경로망 평가 시뮬레이션으로 22. 시뮬레이션·예측용 디지털 트윈, 학습 기반 MAPF 로 27. AI·학습·적응과 모델 운영과 이어진다. [추정][^ref-006][^ref-079]\",\"planned_findings\":[\"f30\",\"f25\"]},{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":600,\"summary\":\"oq-032 는 부분 근거만 있어 열린 채 두고, 표준 결합·벤치마크 현장 이전·업무 우선순위의 교통 우선권 반영 질문 3건을 새로 올린다.\",\"planned_findings\":[\"f11\",\"f10\",\"f8\",\"f18\"]}],\"pages\":[{\"path\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF\\\"\\ntype: area\\ncategory: \\\"D. 계획·최적화\\\"\\narea_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [MAPF, 교통 관리, 교착, Open-RMF, VDA 5050]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-24\\nupdated: 2026-09-25\\nsources: [ref-004, ref-005, ref-006, ref-031, ref-079, ref-253, ref-267, ref-268, ref-828, ref-829, ref-830, ref-831, ref-832, ref-833, ref-834, ref-835, ref-836, ref-837, ref-838, ref-839, ref-841]\\nlast_run: 2026-09-25\\nversion: 2\\n---\\n\\n[홈](../../index.md) › [D. 계획·최적화](index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF\\n\\n!!! info \\\"소속 대분류\\\"\\n    [D. 계획·최적화](index.md) — 핵심 질문:\\n    누가, 언제, 어디로, 어떤 자원을 사용해 작업할 것인가? [분류원문]\\n\\n<!-- auto:area-tracks:start -->\\n!!! note \\\"관련 연구 트랙\\\"\\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\\n\\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\\n<!-- auto:area-tracks:end -->\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 한 줄 정의\\n\\n여러 로봇의 경로와 통과 시점을 조율하고, 혼잡·교착·우선권을 처리 [분류원문]\\n\\n## 2. SCM 관점의 질문\\n\\n서로 다른 제조사의 로봇이 좁은 통로에서 마주치면 누가 양보할까? [분류원문]\\n\\n## 3. 왜 중요한가\\n\\n여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\\n\\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가](../../topics/2026/2026-09-25-area15-s3.md)에 있다.\\n\\n## 4. 핵심 개념과 용어\\n\\n이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\\n\\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어](../../topics/2026/2026-09-25-area15-s4.md)에 있다.\\n\\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\\n\\n**물류 흐름 단계:** 피킹\\n\\n**시나리오:** 피킹 구역의 좁은 통로에서 서로 다른 제조사의 보충 로봇과 피킹 운반 로봇이 마주침\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 피킹 운반 작업과 보충 작업이 비슷한 시각에 배정되어 두 로봇의 경로가 같은 좁은 통로를 지나게 된다(설명용 가정). |\\n| 작업 대상 | 해당 없음(이 영역은 화물보다 로봇의 이동과 통과 시점을 다룬다). |\\n| 수행 자원 | 제조사가 다른 두 로봇과 각 제조사 관제, 여러 플릿을 조율하는 ROP(설명용 가정). Open-RMF 기준으로 플릿은 제어 수준에 따라 경로 지시, 일시정지·재개, 상태 수신만 가능할 수 있고, 읽기 전용 플릿은 공유 공간마다 하나만 허용된다. [사실][^ref-004] |\\n| 제약 | 차선의 양방향 여부·방향 제약과 대기 지점 같은 경로망 속성 [사실][^ref-079], 해제된 노드·간선만 주행할 수 있다는 규칙과 해제 구역의 진입 요청·응답 [사실][^ref-031] |\\n| 완료·인계 | 해당 없음 |\\n| 예외·성과 | 지연이 쌓이면 행동 의존 그래프로 순서를 지키며 실행을 이어갈지 재계획할지를 판단해야 하며 [사실][^ref-830], 재계획 여부와 교착 해소 주체가 처리량을 좌우할 것으로 보인다. [추정][^ref-830][^ref-031][^ref-834] |\\n\\n다음은 설명을 위한 가상의 시나리오이며, 확인된 현장 사례가 아니다. 이 영역은 여섯 항목 가운데 수행 자원·제약·예외·성과에 주로 관여한다.\\n\\n두 로봇이 마주치는 상황은 대기 지점·차선 방향 같은 경로망 제약과 구역 진입 허가로 먼저 막고, 그래도 생기면 협상이나 일시정지로 한쪽을 대기시키는 순서로 다룰 수 있을 것으로 이 위키는 추정한다. [추정][^ref-079][^ref-031][^ref-004] Open-RMF에서는 충돌이 감지되면 관련 플릿이 선호 경로와 상대를 수용하는 경로를 내고 제3자 판정자가 조합을 고르는 협상을 한다. [사실][^ref-004]\\n\\n## 6. 대표 접근법과 기술\\n\\nMAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\\n\\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술](../../topics/2026/2026-09-25-area15-s6.md)에 있다.\\n\\n## 7. 관련 표준·프레임워크·오픈소스\\n\\nOpen-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\\n\\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area15-s7.md)에 있다.\\n\\n## 8. 대표 연구와 자료\\n\\n분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\\n\\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료](../../topics/2026/2026-09-25-area15-s8.md)에 있다.\\n\\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\\n\\n이 위키는 ROP가 직접 맡을 교통 관리 범위를 여러 제조사 플릿에 걸친 공유 공간의 경로망·구역 단위 조율로 추정한다. [추정][^ref-031][^ref-004]\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 로봇 자체 지능·제어 | 여러 제조사 플릿에 걸친 공유 공간의 경로 예약·해제(베이스 확장), 구역 진입 허가, 우선권과 교착 탐지·해소 [추정][^ref-031][^ref-004] | 연계 대상: 개별 로봇의 로컬 장애물 회피·주행 제어, 제조사 플릿 내부의 경로 계획 [추정][^ref-004][^ref-031] |\\n\\n이 직접 범위는 VDA 5050이 관제 기능으로 두는 교착 탐지·해소·교통 제어와, Open-RMF가 교통 스케줄·협상으로 다루는 층위에 해당하는 것으로 보인다. [추정][^ref-031][^ref-004]\\n\\n연계 대상으로 보는 로컬 회피와 플릿 내부 경로 계획은 로봇·제조사 관제가 맡고, ROP는 제어 수준(Full Control·신호등·읽기 전용)에 따라 경로 지시·일시정지·상태 수신만 할 수 있는 것으로 이 위키는 추정한다(로컬 회피 책임을 명시한 문구는 이번에 확인한 문서 범위에서 찾지 못했다). [추정][^ref-004][^ref-031] 분류 원문 9장은 이종 제조사를 연결하는 ROP가 로컬 주행 기능을 「제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다」고 보며, 경계는 제품 전략에 따라 이동할 수 있다([범위 경계](../../about/scope-boundary.md)).\\n\\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\\n\\n이 영역은 작업 배정, 공유 자원, 경로망과 지도, 제조사 관제 연동, 시뮬레이션, AI 영역과 이어지는 것으로 이 위키는 정리한다. [추정][^ref-006][^ref-079][^ref-267][^ref-004]\\n\\n- [13. 작업 배정 — MRTA](13-task-allocation-mrta.md) — MAPD는 작업 배정과 충돌 없는 경로 계획을 함께 다루므로 두 영역이 맞물린다. [추정][^ref-006]\\n- [16. 공용 자원·충전·에너지 최적화](16-shared-resource-charging-and-energy-optimization.md) — 충전소·대기 지점 같은 공유 자원이 경로망의 경유점 속성으로 표현된다. [추정][^ref-079]\\n- [6. 지도·공간·위치 모델](../b-common-information-and-environment-model/06-map-space-and-location-model.md) — 경로망·차선 그래프가 교통 관리의 공간 기반이다. [추정][^ref-079]\\n- [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 현장 도입 때 플릿별 경로망과 차선 속성을 설정한다. [추정][^ref-079]\\n- [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 플릿의 제어 수준이 ROP가 교통에 개입할 수 있는 범위를 정한다. [추정][^ref-004]\\n- [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 경로망 설계를 평가하는 MAPF 시뮬레이션은 가정한 미래를 실험하므로 이 영역에 속하며, 현재 상태를 표현하는 8. 실시간 세계 상태·데이터 일관성과는 구분한다. [추정][^ref-267]\\n- [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 모방 학습을 적용한 지속형 MAPF 연구가 있어, 학습 기반 경로 계획은 이 영역과 27. AI·학습·적응과 모델 운영 양쪽에 연결한다. [사실][^ref-841]\\n\\n## 11. 열린 질문\\n\\n- **oq-032** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-20) 제조사 관제가 일시정지·재개나 상태 보고만 허용할 때 공용 통로·승강기·문에서 다른 플릿과의 교착을 어떻게 막는가, 제어 수준에 따른 교통 성능 차이를 측정한 연구가 있는가? — 부분 근거로 Open-RMF 문서는 신호등 수준 플릿은 일시정지·재개만 가능하고 공유 공간마다 읽기 전용 플릿을 하나만 허용한다고 적지만, 제어 수준별 교통 성능을 측정한 연구는 찾지 못해 열린 채로 둔다. [사실][^ref-004]\\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) VDA 5050 3.0.0 의 해제 구역·협조 재계획 구역과 Open-RMF 교통 스케줄·협상을 한 현장에서 함께 쓰는 공개 설계나 구현이 있는가?\\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) 격자·단위 시간 가정의 MAPF 벤치마크 성과(대회 결과 포함)가 실제 물류센터 로봇의 처리량으로 얼마나 이어지는지 측정한 공개 자료나 국내 사례가 있는가?\\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) 주문 납기·출하 마감 같은 업무 우선순위를 교통 협상·통로 양보의 우선권으로 옮기는 규칙을 정한 연구나 현장 기준이 있는가?\\n\\n전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n## 12. 최근 업데이트 (자동)\\n\\n<!-- auto:area-recent:start -->\\n아직 기록된 업데이트가 없다.\\n<!-- auto:area-recent:end -->\\n\\n## 13. 참고 자료 (각주)\\n\\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area15-s6.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"6. 대표 접근법과 기술\\\" 절(2,051자)을 옮겼다. 2차 수정: SIPP 가정 한계 문장을 [추정]으로 고쳐 썼다\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\\\"\\ntype: topic\\ncategory: \\\"D. 계획·최적화\\\"\\nprimary_area_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-267, ref-268, ref-829, ref-830, ref-831, ref-833, ref-834, ref-835, ref-836, ref-837, ref-838, ref-841]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#6\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- MAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \\\"대표 접근법과 기술\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \\\"대표 접근법과 기술\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\nMAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\\n\\n### 최적 탐색: CBS와 SIPP\\n\\n충돌 기반 탐색(Conflict-Based Search, CBS)은 상위 단계에서 에이전트 쌍의 충돌로 이루어진 충돌 트리를 탐색하고, 하위 단계에서는 한 번에 에이전트 하나의 경로만 찾는 2단계 최적 알고리즘이다. [사실][^ref-829] 안전 구간 경로 계획(Safe Interval Path Planning, SIPP)은 연속된 시간 단계를 충돌 없는 안전 구간으로 묶어 상태를 위치와 안전 구간의 쌍으로 두며, 로봇이 즉시 출발·정지할 수 있다는 가정 등 아래에서 해를 반드시 찾고 최적임이 증명된다. [사실][^ref-837] 이 위키는 즉시 출발·정지 가정이 실제 로봇의 운동 제약과 다르다고 본다. [추정][^ref-837][^ref-838]\\n\\n### 대규모·지속형 해법\\n\\nPIBT(Priority Inheritance with Backtracking)는 매 시간 단계마다 에이전트에 고유 우선순위를 주고 우선순위 상속과 되돌림으로 한 걸음씩 이동을 정한다. 저자들은 수백 대 규모에서도 거의 즉시 해를 낸다고 보고했고, 인접 노드 쌍이 모두 단순 순환에 속하는 그래프(예: 이중 연결)에서는 모든 에이전트가 유한 시간 안에 목적지에 도달함을 보였다고 밝힌다. [사실][^ref-831]\\n\\nLeague of Robot Runners 2023 대회에서 Overall Best 트랙을 우승했다고 팀이 자기 보고한 해법 저장소는, 해법을 PIBT·대규모 이웃 탐색(Large Neighborhood Search, LNS)·창(window) 단위 계획을 결합한 WPPL로 설명하고 특정 위치에서 특정 행동을 유도하는 안내 그래프를 쓰며, 대회의 실행 단계당 계획 시간 한도를 1초로 적는다(2026-09-25 확인). [사실][^ref-833] 지속형 MAPF에 모방 학습을 적용한 연구(2024)는 제안 방법이 이 대회 우승 해법을 앞섰다고 저자가 보고했다. [사실][^ref-841]\\n\\n### 계획과 실행의 간극\\n\\nMa 외(2017)는 표준 MAPF 해법이 최대 속도 같은 운동 제약과 불완전한 실행을 무시한다고 지적하고, MAPF 해를 단순 시간 네트워크로 후처리해 속도 한계·안전 거리·여유 시간을 반영한 실행 일정을 만드는 MAPF-POST를 제시했다. [사실][^ref-838] Hönig 외(2019)는 풀어 둔 MAPF 해의 통과 순서와 운동 제약을 행동 의존 그래프로 인코딩해, 예상 못한 감속이나 장애물이 있어도 창고 AGV가 계획을 충돌 없이 실행하고 지연이 쌓이면 재계획 여부를 판단하는 체계를 제시했다. [사실][^ref-830]\\n\\n### 산업 현장의 교통 관리와 교착 대응\\n\\nBonetti 외(2026)는 좁은 양방향 통로와 높은 교통 밀도의 비격자형 현장에서 크기·능력이 다른 대형 AGV를 위해, NURBS 곡선 경로망 위의 지속형 MAPF, 시간 지평을 조정하는 애니타임 충돌 해소, 실제 AGV와의 실행 계층, 교착 탐지·해소 장치를 갖춘 교통 관리 시스템을 제안했다. 대형·이종 AGV 공장 조건의 연구이므로 물류센터에 바로 적용할 근거로 보지 않는다. [사실][^ref-834]\\n\\n계층형 교통 관리 연구는 구역 간 교통을 다루는 위상 계층, 교통을 고려해 경로를 계산하는 중간 계층, 경로망에서 시간에 따라 AGV를 조율하는 하위 계층의 3계층 구조와 시간 확장 그래프 기반 교착 예방을 제안했다. [사실][^ref-835] 국내에서는 전진표 외(2005)가 자동화 컨테이너 터미널에서 그리드 점유 순서 그래프의 강결합 요소로의 진입을 통제해 교착을 막고, AGV 간 간섭 지연을 반영한 회귀식으로 경로를 실시간 선정하는 방안을 냈다. 실외 컨테이너 터미널 조건이므로 물류센터 직접 근거로 서술하지 않는다. [사실][^ref-836]\\n\\n### 경로망 자동 설계\\n\\n[건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) 트랙이 반영을 제안한 경로망 자동 설계 연구를 이번 조사·검증을 거쳐 싣는다. 한 연구(2024)는 공장 배치·차량 대수·작업 분포·배차 규칙에 맞춘 경로망을 개미 군집 영감 최적화와 사건 기반 시뮬레이터로 생성하고, SIPP를 쓰는 MAPF 시뮬레이터로 처리량을 평가해 적정 차량 대수를 제시한다. [사실][^ref-267] Rüdt·Enke·Furmans(2025)는 자유 공간의 볼록 모서리와 스테이션 상호작용 지점에 노드를 두고 로봇 치수에서 나온 최소 거리 제약과 운송 수요 기반 K-최단 경로 가지치기로 연속 공간 경로망을 만들며, 저자 보고로는 PIBT에서 최대 차량 수일 때 비교 방법(GSRM)보다 1.2~23.4% 앞섰다. [사실][^ref-268]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-268]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\\n[^ref-833]: DiligentPanda (Team Pikachu, GitHub), MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023), 미확인, https://github.com/DiligentPanda/MAPF-LRR2023, 접근일 2026-09-25\\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\\n[^ref-835]: IEEE 게재 논문 저자(미확인), Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments (IEEE Transactions on Automation Science and Engineering), 2023(검색 결과 기준), https://ieeexplore.ieee.org/document/10132864/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-836]: 전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지), 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안, 2005, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155, 접근일 2026-09-25 (원문 미열람)\\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"대표 접근법과 기술\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area15-s8.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"8. 대표 연구와 자료\\\" 절(1,679자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\\\"\\ntype: topic\\ncategory: \\\"D. 계획·최적화\\\"\\nprimary_area_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-005, ref-006, ref-267, ref-268, ref-828, ref-829, ref-830, ref-831, ref-832, ref-834, ref-835, ref-836, ref-837, ref-838, ref-841]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#8\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \\\"대표 연구와 자료\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \\\"대표 연구와 자료\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\\n\\n- Stern 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks(2019) — MAPF의 가정·목적함수 용어를 정리하고 격자 벤치마크를 제시해 해법 비교의 기준이 된다. [사실][^ref-828]\\n- Yu·LaValle, Optimal Multi-Robot Path Planning on Graphs(2015) — 네 목적의 파레토 관계와 각 목적의 NP-hard 성을 보였다. [사실][^ref-832]\\n- Sharon 외, Conflict-based search for optimal multi-agent pathfinding(2015) — 2단계 최적 알고리즘 CBS를 제시했다. [사실][^ref-829]\\n- Phillips·Likhachev, SIPP(2011, ICRA) — 안전 구간으로 움직이는 장애물 사이 경로를 찾는 방법이다. [사실][^ref-837]\\n- Okumura 외, PIBT(2019) — 대규모 반복형 MAPF 방법이며 속도는 저자 보고다. [사실][^ref-831]\\n- Ma 외, Overview: Generalizations of MAPF to Real-World Scenarios(2017) — 운동 제약을 반영하는 MAPF-POST 후처리를 다룬다. [사실][^ref-838]\\n- Hönig 외, Persistent and Robust Execution of MAPF Schedules in Warehouses(2019) — 행동 의존 그래프로 창고 AGV의 계획 실행을 지연에 강건하게 한다. [사실][^ref-830]\\n- Bonetti 외, A traffic management system for large and heterogeneous vehicles in narrow industrial environments(2026) — 대형·이종 AGV 공장 조건의 교통 관리 시스템이며 처리량 우위는 저자 보고다. [사실][^ref-834]\\n- Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments(저자 미확인, 2023 검색 결과 기준) — 3계층 구조와 시간 확장 그래프 기반 교착 예방을 다룬다. [사실][^ref-835]\\n- 전진표 외, 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안(2005, 한국항해항만학회지 29(8)) — 국내 자료이며 실외 컨테이너 터미널 조건이다. [사실][^ref-836]\\n- Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems(저자 미확인, 2024) — 시뮬레이션 기반 경로망 자동 설계와 차량 대수 평가를 다룬다. [사실][^ref-267]\\n- Rüdt·Enke·Furmans, 연속 공간 경로망 자동 생성(2025, 프리프린트) — 거리 제약과 운송 수요를 반영한 경로망 생성이며 개선 폭은 저자 보고다. [사실][^ref-268]\\n- Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding(2024, 프리프린트) — 학습 기반 지속형 MAPF이며 대회 우승 해법 추월은 저자 보고다. [사실][^ref-841]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-268]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\\n[^ref-835]: IEEE 게재 논문 저자(미확인), Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments (IEEE Transactions on Automation Science and Engineering), 2023(검색 결과 기준), https://ieeexplore.ieee.org/document/10132864/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-836]: 전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지), 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안, 2005, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155, 접근일 2026-09-25 (원문 미열람)\\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"대표 연구와 자료\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area15-s7.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"7. 관련 표준·프레임워크·오픈소스\\\" 절(1,155자)을 옮겼다. 형식 수정: 아직 참고문헌 페이지가 없는 ref-839·ref-833 링크를 텍스트 id 로 바꿨다\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\\\"\\ntype: topic\\ncategory: \\\"D. 계획·최적화\\\"\\nprimary_area_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-004, ref-031, ref-079, ref-253, ref-833, ref-839]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#7\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- Open-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \\\"관련 표준·프레임워크·오픈소스\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \\\"관련 표준·프레임워크·오픈소스\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\nOpen-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| Open-RMF 교통 스케줄·협상 | 오픈소스 | 시설 안 로봇의 예정 주행 궤적을 모은 중앙 교통 스케줄 데이터베이스에 각 플릿 관리자가 예정 경로를 보고·갱신하고, 충돌 통지 뒤 플릿별 제안을 제3자 판정자가 고른다. 플릿 제어 수준은 Full Control·신호등(일시정지·재개)·읽기 전용·연동 불가로 나뉜다. [사실][^ref-004] | [ref-004](../../references/ref-004.md) |\\n| rmf_traffic | 오픈소스 | 여러 에이전트 사이 이동로봇 교통을 스케줄링·협상하는 알고리즘과 자료구조를 제공하는 Open-RMF 패키지다. [사실][^ref-839] | ref-839 |\\n| Open-RMF Traffic Editor | 오픈소스 | 플릿별 경로망 그래프(기본 9개)와 차선·경유점 속성을 편집한다. 차선 속도 제한 항목은 문서에서 확인되지 않았다. [사실][^ref-079] | [ref-079](../../references/ref-079.md) |\\n| VDA 5050 3.0.0 (main 판, 2026-09-25 확인) | 표준 | 베이스 해제 규칙과 결정 지점 전 베이스 확장을 정한다. 윤곽 기반 구역으로 해제(RELEASE)·협조 재계획(COORDINATED_REPLANNING)·진입 금지(BLOCKED)·속도 제한(SPEED_LIMIT)을, 운동 중심 기반 구역으로 선호 주행 방향(DIRECTED/BIDIRECTED)을 둔다. 교착 탐지·해소와 버퍼 경로·대기 위치를 포함한 교통 제어는 관제 기능으로 든다. [사실][^ref-031] | [ref-031](../../references/ref-031.md) |\\n| MassRobotics AMR 상호운용 표준 | 표준 | 제조사가 다른 로봇의 공존을 위해 위치·속도·방향·상태·작업 가용성을 공유하게 하며, README에는 경로 조율이나 우선권 결정 절차가 적혀 있지 않다. [사실][^ref-253] | [ref-253](../../references/ref-253.md) |\\n| MAPF-LRR2023 | 오픈소스 | League of Robot Runners 2023 대회 참가 팀이 공개한 지속형 MAPF 해법(WPPL) 저장소다(우승은 팀 자기 보고). [사실][^ref-833] | ref-833 |\\n\\n표준 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다. 관련 용어: [오픈 RMF](../../glossary/open-rmf.md), [다중 플릿 오케스트레이션](../../glossary/multi-fleet-orchestration.md), [해제 구역](../../glossary/release-zone.md).\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\\n[^ref-253]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — README, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-09-25 (원문 미열람)\\n[^ref-833]: DiligentPanda (Team Pikachu, GitHub), MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023), 미확인, https://github.com/DiligentPanda/MAPF-LRR2023, 접근일 2026-09-25\\n[^ref-839]: Open Robotics (open-rmf), rmf_traffic — README, 미확인, https://github.com/open-rmf/rmf_traffic, 접근일 2026-09-25\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"관련 표준·프레임워크·오픈소스\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area15-s4.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"4. 핵심 개념과 용어\\\" 절(969자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\\\"\\ntype: topic\\ncategory: \\\"D. 계획·최적화\\\"\\nprimary_area_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-005, ref-006, ref-031, ref-079, ref-828, ref-830]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#4\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \\\"핵심 개념과 용어\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \\\"핵심 개념과 용어\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\\n\\n- **[다중 에이전트 경로 찾기](../../glossary/mapf.md)(Multi-Agent Path Finding, MAPF)** — 여러 에이전트가 서로 충돌하지 않고 동시에 따라갈 경로를 계획하는 문제다. 목적함수로는 마지막 도착 시각(makespan)이나 행동 비용의 합(sum of costs)이 쓰인다. [사실][^ref-828]\\n- **[지속형 MAPF](../../glossary/lifelong-mapf.md)(Lifelong MAPF)·[다중 에이전트 픽업·배송](../../glossary/multi-agent-pickup-and-delivery.md)(Multi-Agent Pickup and Delivery, MAPD)** — 대규모 창고에서 목적지가 계속 새로 주어지는 경로 계획과, 픽업·배송 작업이 온라인으로 들어오는 경로 계획을 다룬다. [사실][^ref-005][^ref-006]\\n- **[경로망](../../glossary/roadmap.md)(Roadmap)** — 로봇이 따라 달리는 노드·엣지 그래프다. Open-RMF 교통 편집기(Traffic Editor)는 차선마다 양방향 여부·소속 플릿 그래프 번호·전진/후진 방향 제약을, 경유점마다 대기 지점(무기한 대기 허용)·주차 지점·충전소 표시를 둔다. [사실][^ref-079]\\n- **베이스·호라이즌(base·horizon)** — [VDA 5050](../../glossary/vda-5050.md)에서 관제가 이미 해제한 노드·간선(베이스)과 계획만 된 부분(호라이즌)을 나누는 개념이며, 로봇은 해제되지 않은 노드·간선을 지나면 안 된다. [사실][^ref-031]\\n- **[해제 구역](../../glossary/release-zone.md)(Release Zone)** — VDA 5050 3.0.0에서 로봇이 진입을 요청하고 관제가 응답해야 들어갈 수 있는 구역이다. [사실][^ref-031]\\n- **교착(Deadlock)** — 여러 로봇이 서로 비켜 주기를 기다리며 아무도 진행하지 못하는 상태로, VDA 5050은 교착의 탐지·해소를 관제의 기능으로 든다. [사실][^ref-031]\\n- **행동 의존 그래프(Action Dependency Graph)** — MAPF 계획에서 로봇 사이 통과 순서를 의존 관계로 기록해, 지연이 생겨도 그 순서를 지키며 계획을 실행하게 하는 그래프다. [사실][^ref-830]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"핵심 개념과 용어\\\" 절에서 분리 |\\n\"},{\"path\":\"docs/topics/2026/2026-09-25-area15-s3.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"3. 왜 중요한가\\\" 절(742자)을 옮겼다\",\"content\":\"---\\ntitle: \\\"15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\\\"\\ntype: topic\\ncategory: \\\"D. 계획·최적화\\\"\\nprimary_area_no: 15\\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\\ntags: [분리 페이지]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-25\\nupdated: 2026-09-25\\nsources: [ref-004, ref-031, ref-253, ref-828, ref-830, ref-832, ref-834]\\nlast_run: 2026-09-25\\nversion: 1\\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#3\\n---\\n\\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\\n\\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 세 줄 요약\\n\\n- 여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \\\"왜 중요한가\\\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\\n\\n## 2. 배경\\n\\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \\\"왜 중요한가\\\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\\n\\n## 3. 본문\\n\\n여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\\n\\nStern 외(2019)는 연구마다 같은 길을 동시에 지날 수 있는지 같은 가정과 목적함수가 서로 달라 비교가 어렵다고 보고, 공통 용어와 격자 기반 벤치마크를 제안했다. [사실][^ref-828] Yu·LaValle(2015)은 그래프 위 다중 로봇 경로 계획의 네 목적(총 도착 시간, 마지막 도착 시각, 총 이동 거리, 최대 개별 이동 거리)이 동시에 최적화될 수 없는 파레토 관계이며, 각 목적의 최적해 계산이 NP-hard 임을 보였다. [사실][^ref-832]\\n\\n공급망 관점에서는 교통 지연과 교착이 처리량 손실로 이어지므로, 실행 중 지연이 쌓일 때 계획을 유지할지 다시 짤지와 교착이 생기면 누가 푸는지가 운영 성과를 가를 것으로 이 위키는 추정한다. [추정][^ref-830][^ref-031][^ref-834]\\n\\n2절의 질문(누가 양보하는가)에 대해 이 위키는 다음과 같이 추론한다. VDA 5050은 우선순위·교착 해소를 관제에 맡기고 MassRobotics 표준은 상태 공유만 정하므로, 양보 규칙은 여러 플릿 위의 조율 계층(ROP 또는 Open-RMF식 협상 판정자)이 정해야 하고, 한쪽 플릿이 읽기 전용 수준이면 그 플릿은 양보시킬 수 없어 다른 플릿이 양보하는 구조가 될 것으로 보인다(양보 규칙을 정한 공통 표준은 이번 조사 범위에서 찾지 못했으나 부재가 확정된 것은 아니다). [추정][^ref-031][^ref-253][^ref-004]\\n\\n## 4. 현장 시나리오\\n\\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 5. ROP 관점의 시사점\\n\\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\\n\\n## 6. 연결되는 연구영역\\n\\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\\n\\n## 7. 열린 질문\\n\\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\\n\\n## 8. 출처\\n\\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-253]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — README, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-09-25 (원문 미열람)\\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\\n\\n## 9. 검증 노트\\n\\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\\n\\n## 10. 이력\\n\\n| 날짜 | 실행 id | 변경 |\\n|---|---|---|\\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \\\"왜 중요한가\\\" 절에서 분리 |\\n\"}],\"changelog_entry\":\"2026-09-25 | 15. 다중 로봇 경로·교통 관리 — MAPF | 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 | run 2026-09-25-39\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화로 3~11절 신규 작성(MAPF 해법, Open-RMF·VDA 5050 교통 규칙, 교착 대응, 경로망 자동 설계)\",\"category_recent\":\"2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화로 3~11절 신규 작성, 건축 도면 자동 인식 트랙의 경로망 자동 설계 반영 제안 2건 반영\",\"area_recent\":\"2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 섹션 3~11 신규 작성(실행 2026-09-25-39)\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"conflict-based-search\",\"term_ko\":\"충돌 기반 탐색\",\"term_en\":\"Conflict-Based Search (CBS)\",\"definition\":\"에이전트 쌍의 충돌로 이루어진 충돌 트리를 상위 단계에서 탐색하고 하위 단계에서는 에이전트 하나씩 경로를 다시 찾는 2단계 최적 MAPF 알고리즘이다.\",\"related_areas\":[15],\"sources\":[\"ref-829\"]},{\"action\":\"new\",\"slug\":\"safe-interval-path-planning\",\"term_ko\":\"안전 구간 경로 계획\",\"term_en\":\"Safe Interval Path Planning (SIPP)\",\"definition\":\"위치마다 충돌 없는 연속 시간 구간(안전 구간)을 두고 위치와 안전 구간의 쌍을 상태로 삼아 움직이는 장애물 사이 경로를 찾는 방법이다.\",\"related_areas\":[15],\"sources\":[\"ref-837\"]},{\"action\":\"new\",\"slug\":\"priority-inheritance-with-backtracking\",\"term_ko\":\"우선순위 상속·되돌림\",\"term_en\":\"Priority Inheritance with Backtracking (PIBT)\",\"definition\":\"매 시간 단계마다 에이전트에 우선순위를 주고 우선순위 상속과 되돌림으로 한 걸음씩 이동을 정하는 반복형 MAPF 방법이다.\",\"related_areas\":[15],\"sources\":[\"ref-831\"]},{\"action\":\"new\",\"slug\":\"action-dependency-graph\",\"term_ko\":\"행동 의존 그래프\",\"term_en\":\"Action Dependency Graph (ADG)\",\"definition\":\"MAPF 계획에서 로봇들 사이 통과 순서를 의존 관계로 기록해, 실행 중 지연이 생겨도 그 순서를 지키며 충돌 없이 계획을 실행하게 하는 그래프이다.\",\"related_areas\":[15],\"sources\":[\"ref-830\"]},{\"action\":\"new\",\"slug\":\"deadlock\",\"term_ko\":\"교착\",\"term_en\":\"Deadlock\",\"definition\":\"여러 로봇이 서로 상대가 비켜 주기를 기다리며 아무도 진행하지 못하는 상태로, 좁은 통로·공유 구간에서 교통 관리가 탐지·예방·해소해야 한다.\",\"description\":\"VDA 5050 은 교착의 탐지·해소를 관제의 기능으로 든다.\",\"related_areas\":[15,9],\"sources\":[\"ref-031\"]}],\"reference_updates\":[{\"id\":\"ref-004\",\"org\":\"Open Robotics\",\"title\":\"RMF Core Overview — Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/rmf-core.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 핵심 구조 문서. 교통 스케줄 데이터베이스, 충돌 통지·협상, 플릿 제어 수준 4종과 읽기 전용 플릿 제한을 원문으로 확인했다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":false},{\"id\":\"ref-005\",\"org\":\"Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S.\",\"title\":\"Lifelong Multi-Agent Path Finding in Large-Scale Warehouses\",\"published\":\"2020\",\"url\":\"https://arxiv.org/abs/2005.07371\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 대규모 창고에서 에이전트가 계속 새 목적지를 받는 지속형 MAPF 를 다룬 논문(분류 원문 참고 자료).\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-006\",\"org\":\"Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.\",\"title\":\"Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks\",\"published\":\"2017\",\"url\":\"https://arxiv.org/abs/1705.10868\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 온라인으로 들어오는 픽업·배송 작업의 배정과 충돌 없는 경로 계획을 함께 다룬 MAPD 논문(분류 원문 참고 자료).\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 최신판(main, 3.0.0) 명세 원문. 베이스·호라이즌과 해제 규칙, 교통 조율 전략의 범위 제외, 관제의 교착 해소 기능, 구역 유형을 확인했다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":false},{\"id\":\"ref-079\",\"org\":\"Open Robotics\",\"title\":\"Traffic Editor - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 교통 편집기 문서. 차선의 양방향·그래프 번호·방향 제약과 경유점의 대기 지점·주차·충전소 속성, 플릿별 그래프를 원문으로 확인했다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":false},{\"id\":\"ref-253\",\"org\":\"MassRobotics\",\"title\":\"MassRobotics-AMR/AMR_Interop_Standard — README\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람(리서치 기록 기준). 제조사가 다른 로봇의 공존을 위해 위치·속도·방향·상태·작업 가용성을 공유한다는 목적을 밝힌 AMR 상호운용 표준 저장소 README.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-267\",\"org\":\"IEEE 게재 논문 저자(미확인)\",\"title\":\"Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))\",\"published\":\"2024\",\"url\":\"https://ieeexplore.ieee.org/document/10287275/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 개미 군집 영감 최적화와 사건 기반 시뮬레이터로 경로망을 생성하고 SIPP 기반 MAPF 시뮬레이터로 처리량·차량 대수를 평가한 논문.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-268\",\"org\":\"Rüdt, M., Enke, C., & Furmans, K. (KIT)\",\"title\":\"Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization)\",\"published\":\"2025-11\",\"url\":\"https://arxiv.org/abs/2511.07175\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 스테이션 상호작용 지점·거리 제약·운송 수요 기반 가지치기로 연속 공간 경로망을 생성하고 MAPD 해법으로 평가한 프리프린트.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-828\",\"org\":\"Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외\",\"title\":\"Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks\",\"published\":\"2019-06\",\"url\":\"https://arxiv.org/abs/1906.08291\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MAPF 의 가정·목적함수 용어를 통일하고 격자 기반 벤치마크를 제시한 SoCS 2019 논문.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-829\",\"org\":\"Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R.\",\"title\":\"Conflict-based search for optimal multi-agent pathfinding\",\"published\":\"2015\",\"url\":\"https://dl.acm.org/doi/10.1016/j.artint.2014.11.006\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 충돌 트리 상위 탐색과 단일 에이전트 하위 탐색으로 된 최적 MAPF 알고리즘 CBS 를 제시한 Artificial Intelligence 219 논문.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-830\",\"org\":\"Hönig, W., Kiesel, S. 외\",\"title\":\"Persistent and Robust Execution of MAPF Schedules in Warehouses\",\"published\":\"2019\",\"url\":\"https://ieeexplore.ieee.org/abstract/document/8620328/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 행동 의존 그래프로 창고 AGV 의 MAPF 계획을 지연에 강건하게 실행하고 재계획 시점을 판단하는 IEEE RA-L 논문.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-831\",\"org\":\"Okumura, K., Machida, M., Défago, X., & Tamura, Y.\",\"title\":\"Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding\",\"published\":\"2019-01\",\"url\":\"https://arxiv.org/abs/1901.11282\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 매 단계 우선순위·우선순위 상속·되돌림으로 반복형 MAPF 를 푸는 PIBT 를 제시한 논문(IJCAI 2019, AIJ 2022).\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-832\",\"org\":\"Yu, J., & LaValle, S. M.\",\"title\":\"Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity\",\"published\":\"2015-07\",\"url\":\"https://arxiv.org/abs/1507.03289\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 그래프 위 다중 로봇 경로 계획의 네 목적 사이 파레토 관계와 각 목적의 NP-hard 성을 보인 논문.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-833\",\"org\":\"DiligentPanda (Team Pikachu, GitHub)\",\"title\":\"MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023)\",\"published\":null,\"url\":\"https://github.com/DiligentPanda/MAPF-LRR2023\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"League of Robot Runners 2023 참가 팀의 해법 저장소 README. PIBT·LNS·창 단위 계획을 결합한 WPPL, 안내 그래프, 대회 계획 시간 한도(1초)를 설명하며 우승은 팀 자기 보고다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"docs/topics/2026/2026-09-25-area15-s6.md\",\"docs/topics/2026/2026-09-25-area15-s7.md\"],\"source_unopened\":false},{\"id\":\"ref-834\",\"org\":\"Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L.\",\"title\":\"A traffic management system for large and heterogeneous vehicles in narrow industrial environments\",\"published\":\"2026-09\",\"url\":\"https://arxiv.org/abs/2609.10400\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. NURBS 경로망 위 지속형 MAPF 와 교착 탐지·해소로 좁은 통로의 크기가 다른 AGV 를 조율하는 교통 관리 시스템 프리프린트.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-835\",\"org\":\"IEEE 게재 논문 저자(미확인)\",\"title\":\"Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments\",\"published\":\"2023\",\"url\":\"https://ieeexplore.ieee.org/document/10132864/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 위상·중간·경로망 3계층 구조와 시간 확장 그래프 기반 교착 예방으로 다중 AGV 교통을 관리하는 논문. 발행일(2023, IEEE Transactions on Automation Science and Engineering)은 검색 결과 기준이며 저자는 미확인.\",\"cited_by\":[\"docs/topics/2026/2026-09-25-area15-s6.md\",\"docs/topics/2026/2026-09-25-area15-s8.md\"],\"source_unopened\":true},{\"id\":\"ref-836\",\"org\":\"전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지)\",\"title\":\"자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안\",\"published\":\"2005\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 그리드 점유 순서 그래프의 강결합 요소 진입 통제로 AGV 교착을 막고 회귀식으로 경로를 선정하는 국내 논문(29권 8호).\",\"cited_by\":[\"docs/topics/2026/2026-09-25-area15-s6.md\",\"docs/topics/2026/2026-09-25-area15-s8.md\"],\"source_unopened\":true},{\"id\":\"ref-837\",\"org\":\"Phillips, M., & Likhachev, M.\",\"title\":\"SIPP: Safe interval path planning for dynamic environments\",\"published\":\"2011\",\"url\":\"https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 시간 단계를 안전 구간으로 묶어 동적 장애물 사이 경로를 찾는 SIPP 를 제시한 ICRA 2011 논문(URL 은 ResearchGate 사본).\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-838\",\"org\":\"Ma, H., Koenig, S. 외\",\"title\":\"Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios\",\"published\":\"2017-02\",\"url\":\"https://arxiv.org/abs/1702.05515\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MAPF 를 실제 로봇에 옮길 때의 운동 제약·실행 불완전성 문제와 MAPF-POST 후처리를 다룬 IJCAI-16 워크숍 개관.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true},{\"id\":\"ref-839\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_traffic — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_traffic\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 교통 패키지 README. 여러 에이전트 사이 이동로봇 교통의 스케줄링·협상 알고리즘과 자료구조를 제공한다고 밝힌다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\",\"docs/topics/2026/2026-09-25-area15-s7.md\"],\"source_unopened\":false},{\"id\":\"ref-841\",\"org\":\"arXiv 2410.21415 저자(미확인)\",\"title\":\"Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding\",\"published\":\"2024-10\",\"url\":\"https://arxiv.org/abs/2410.21415\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 지속형 MAPF 에 확장형 모방 학습(SILLM)을 적용한 프리프린트로, 2023 League of Robot Runners 우승 해법을 앞섰다고 저자가 보고한다.\",\"cited_by\":[\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md\"],\"source_unopened\":true}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"VDA 5050 3.0.0 의 해제 구역·협조 재계획 구역과 Open-RMF 교통 스케줄·협상을 한 현장에서 함께 쓰는 공개 설계나 구현이 있는가?\",\"areas\":[15,9],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"격자·단위 시간 가정의 MAPF 벤치마크 성과(대회 결과 포함)가 실제 물류센터 로봇의 처리량으로 얼마나 이어지는지 측정한 공개 자료나 국내 사례가 있는가?\",\"areas\":[15,23],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"주문 납기·출하 마감 같은 업무 우선순위를 교통 협상·통로 양보의 우선권으로 옮기는 규칙을 정한 연구나 현장 기준이 있는가?\",\"areas\":[15,14],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[{\"step\":\"피킹\",\"item\":\"시작 조건\",\"link\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"15. 다중 로봇 경로·교통 관리 — MAPF\"},{\"step\":\"피킹\",\"item\":\"수행 자원\",\"link\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"15. 다중 로봇 경로·교통 관리 — MAPF\"},{\"step\":\"피킹\",\"item\":\"제약\",\"link\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"15. 다중 로봇 경로·교통 관리 — MAPF\"},{\"step\":\"피킹\",\"item\":\"예외·성과\",\"link\":\"docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"15. 다중 로봇 경로·교통 관리 — MAPF\"}],\"standards_updates\":[{\"name\":\"rmf_traffic (Open-RMF 교통 스케줄링·협상 패키지)\",\"kind\":\"오픈소스\",\"org\":\"Open Robotics (open-rmf)\",\"url\":\"https://github.com/open-rmf/rmf_traffic\",\"related_areas\":[15,9],\"summary\":\"여러 에이전트 사이 이동로봇 교통을 스케줄링하고 협상하는 알고리즘과 자료구조를 제공하는 Open-RMF 패키지다.\",\"ref_id\":\"ref-839\"},{\"name\":\"Open-RMF Traffic Editor\",\"kind\":\"오픈소스\",\"org\":\"Open Robotics\",\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"related_areas\":[15,6,21],\"summary\":\"플릿별 경로망 그래프와 차선(양방향·방향 제약)·경유점(대기 지점·주차·충전소) 속성을 편집하는 Open-RMF 도구다.\",\"ref_id\":\"ref-079\"},{\"name\":\"MAPF-LRR2023 (League of Robot Runners 2023 팀 해법 WPPL)\",\"kind\":\"오픈소스\",\"org\":\"DiligentPanda (Team Pikachu, GitHub)\",\"url\":\"https://github.com/DiligentPanda/MAPF-LRR2023\",\"related_areas\":[15,23],\"summary\":\"PIBT·LNS·창 단위 계획을 결합한 지속형 MAPF 해법 WPPL 의 공개 저장소이며, 대회 우승은 팀 자기 보고다.\",\"ref_id\":\"ref-833\"}],\"additional_research_requests\":[\"5절 완료·인계 칸: 교통 구간 통과의 완료를 무엇으로 확인하고 경로 해제·반납하는지(예: VDA 5050 베이스 해제 반납, Open-RMF 예정 경로 갱신) 근거가 필요하다 — 이번 브리프에 없어 '해당 없음'으로 두었다.\",\"8절 국내 자료: ref-840(물류과학기술연구 MARL 트랜스포터 경로 계획)의 실재를 확인하지 못해 뺐다. 국내 물류센터 다중 AGV·AMR 교착·혼잡 경로 계획 연구를 추가 조사해야 한다.\",\"9절: 승강기·문 같은 시설·설비 제어 경계에서 교통 관리(통과 예약·대기)가 어떻게 나뉘는지 근거가 있으면 경계 표에 행을 더할 수 있다.\",\"11절 oq-032: 플릿 제어 수준(Full Control·신호등·읽기 전용)별 교통 성능·교착 발생을 측정한 연구 조사가 필요하다.\",\"6절: 트랙 반영 제안의 '경로망은 보통 전문가가 수작업으로 설계한다'(ref-267) 서술은 출처 확인이 안 돼 싣지 않았다. 원문 확인 시 재검토한다.\",\"6절(분리 페이지 s6): SIPP 의 즉시 출발·정지 가정이 실제 로봇 운동 제약과 어떻게 다른지 명시한 출처(SIPP 확장 연구 등)가 있으면 [사실]로 다시 쓸 수 있다.\"],\"fixes_applied\":[\"f24 삭제 — 본문 어디에도 싣지 않았고 ref-840 을 reference_updates·13절 각주·프런트매터 sources 에서 뺐으며, 8절 국내 자료는 f21(ref-836)만 썼다.\",\"원문 미열람 표시 — ref-005·ref-006·ref-253·ref-267·ref-268·ref-828·ref-829·ref-830·ref-831·ref-832·ref-834·ref-835·ref-836·ref-837·ref-838·ref-841 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다(ref-253 summary 도 '원문 미열람'으로 시작하게 고침).\",\"성능·순위 저자 보고 명시 — 6·8절에서 PIBT 속도(f4), Bonetti 처리량 우위(f19), GSRM 대비 1.2~23.4%(f23), SILLM 의 대회 우승 해법 추월(f25), WPPL 의 Overall Best 우승(f8)을 각각 '저자 보고'·'팀 자기 보고'로 적고 8절 머리에 이 위키가 확인한 성능이 아님을 밝혔다.\",\"f2 — '3-SAT 환원' 표현을 빼고 3·8절에서 '각 목적의 최적해 계산이 NP-hard 임을 보였다'까지만 썼다.\",\"f22 — 6·8절에 방법 서술만 반영하고 '경로망은 보통 전문가가 수작업으로 설계' 서술은 싣지 않았으며, 트랙 반영 제안 2건은 f22·f23 으로 6. 대표 접근법과 기술·8. 대표 연구와 자료에 반영한 것으로 처리했다.\",\"f20 — ref-835 각주의 저자를 '미확인'으로, 발행일을 '2023(검색 결과 기준)'으로 적고 reference_updates summary 에도 검색 결과 기준임을 밝혔다.\",\"f19·f21 — 6·8절에서 각각 대형·이종 AGV 공장 조건, 실외 자동화 컨테이너 터미널 조건임을 밝히고 물류센터 직접 적용 근거로 보지 않는다고 적었다.\",\"f18·f26·f27·f28·f29·f30 — [추정] 태그를 유지하고 문장에 '이 위키는 추정한다/추론한다'를 밝혔다. f28 시나리오는 5절에 확인된 현장 사례가 아닌 설명용 가상 시나리오임을 적었고, f27 은 9절에서 '연계 대상'으로 짧게 다루며 로컬 회피 책임을 명시한 문구를 찾지 못했음을 적었다.\",\"f16 — 4·7절에서 RELEASE·COORDINATED_REPLANNING·BLOCKED·SPEED_LIMIT 는 윤곽 기반 구역, DIRECTED/BIDIRECTED 는 운동 중심 기반 구역으로 구분해 썼다.\",\"f25 — 10절에서 27. AI·학습·적응과 모델 운영을 연결하고 학습 기반 경로 계획을 이 영역과 양쪽에 연결한다고 적었다.\",\"f30 — 10절에서 경로망 설계 평가용 MAPF 시뮬레이션을 22. 시뮬레이션·예측용 디지털 트윈으로만 연결하고 8. 실시간 세계 상태·데이터 일관성과 구분한다고 명시했다.\",\"11절 — oq-032 를 열림으로 두고 f11 을 부분 근거로 연결했으며, 새 열린 질문 3건을 11절과 open_question_updates(new, 열림)에 등록했다.\",\"직접 인용 제한 — VDA 5050(ref-031)·Open-RMF(ref-004·ref-079) 내용은 모두 재서술했고 출처 원문 직접 인용은 쓰지 않았다.\",\"용어 후보 5건 — 충돌 기반 탐색·안전 구간 경로 계획·우선순위 상속·되돌림·행동 의존 그래프·교착을 glossary_updates 에 신규로 내고, PIBT 정의에서 '빠르게' 같은 성능 표현을 뺐다.\",\"분량 초과 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 본문 9,348자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,617자\",\"형식 검증 수정 — docs/topics/2026/2026-09-25-area15-s7.md 표의 출처 칸에서 아직 참고문헌 페이지가 없는 ref-839·ref-833 링크(../../references/ref-839.md, ../../references/ref-833.md)를 링크 없는 텍스트 id 로 바꿨다. 각주 정의·주장·태그는 바꾸지 않았다.\",\"2차: SIPP 가정 한계 문장 드리프트 — docs/topics/2026/2026-09-25-area15-s6.md 3절 '최적 탐색: CBS와 SIPP' 소제목 아래 '이 가정은 실제 로봇의 가감속과 다르다는 점이 한계다. [사실][^ref-838]'를 '이 위키는 즉시 출발·정지 가정이 실제 로봇의 운동 제약과 다르다고 본다. [추정][^ref-837][^ref-838]'로 고쳐 썼다. 그 밖의 부분은 바꾸지 않았다.\"]}",
+  "structured_output": {
+    "run_id": "2026-09-25-39",
+    "outline": [
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 800,
+        "summary": "MAPF 는 목적마다 최적해 계산이 어려운 문제다. [사실][^ref-828][^ref-832] 제조사가 다른 로봇 사이의 양보 규칙은 표준이 아니라 조율 계층이 정해야 할 것으로 보인다. [추정][^ref-031][^ref-253][^ref-004]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f18",
+          "f29"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 1000,
+        "summary": "MAPF·지속형 MAPF·MAPD·경로망·베이스와 호라이즌·해제 구역·교착·행동 의존 그래프가 핵심 개념이다. [사실][^ref-828][^ref-079]",
+        "planned_findings": [
+          "f1",
+          "f9",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f7"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+        "budget_chars": 900,
+        "summary": "피킹 통로에서 서로 다른 제조사 로봇이 마주치는 가상 시나리오로, 경로망 제약·구역 허가로 예방하고 협상·일시정지로 푸는 순서를 보인다. [추정][^ref-079][^ref-031][^ref-004]",
+        "planned_findings": [
+          "f11",
+          "f13",
+          "f14",
+          "f16",
+          "f27",
+          "f28",
+          "f29",
+          "f7",
+          "f10"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 1600,
+        "summary": "MAPF 해법은 최적 탐색(CBS·SIPP)부터 대규모 반복형(PIBT)까지 이어지고 실행 후처리·산업 교통 관리·경로망 자동 설계 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]",
+        "planned_findings": [
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f25"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 1000,
+        "summary": "Open-RMF 는 교통 스케줄·협상을 구현하고 VDA 5050 은 경로 해제·구역 규칙을 정하되 교통 조율 전략은 범위에서 뺀다. [사실][^ref-004][^ref-031]",
+        "planned_findings": [
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f8"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 1400,
+        "summary": "분류 원문이 든 Li 외(2020)·Ma 외(2017)는 지속형 MAPF 와 MAPD 를 다룬다. [사실][^ref-005][^ref-006] 성능 수치는 모두 저자 보고다.",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f9",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f25"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+        "budget_chars": 800,
+        "summary": "ROP 직접 범위는 여러 제조사 플릿에 걸친 공유 공간의 경로망·구역 단위 조율로, 로컬 회피와 플릿 내부 경로 계획은 연계 대상으로 추정한다. [추정][^ref-031][^ref-004]",
+        "planned_findings": [
+          "f26",
+          "f27",
+          "f11"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 800,
+        "summary": "MAPD 로 13. 작업 배정 — MRTA, 공유 자원으로 16. 공용 자원·충전·에너지 최적화, 경로망으로 6. 지도·공간·위치 모델·21. 온보딩·설정·현장 시운전, 제어 수준으로 9. 로봇·제조사 관제 연동, 경로망 평가 시뮬레이션으로 22. 시뮬레이션·예측용 디지털 트윈, 학습 기반 MAPF 로 27. AI·학습·적응과 모델 운영과 이어진다. [추정][^ref-006][^ref-079]",
+        "planned_findings": [
+          "f30",
+          "f25"
+        ]
+      },
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 600,
+        "summary": "oq-032 는 부분 근거만 있어 열린 채 두고, 표준 결합·벤치마크 현장 이전·업무 우선순위의 교통 우선권 반영 질문 3건을 새로 올린다.",
+        "planned_findings": [
+          "f11",
+          "f10",
+          "f8",
+          "f18"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF\"\ntype: area\ncategory: \"D. 계획·최적화\"\narea_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [MAPF, 교통 관리, 교착, Open-RMF, VDA 5050]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-24\nupdated: 2026-09-25\nsources: [ref-004, ref-005, ref-006, ref-031, ref-079, ref-253, ref-267, ref-268, ref-828, ref-829, ref-830, ref-831, ref-832, ref-833, ref-834, ref-835, ref-836, ref-837, ref-838, ref-839, ref-841]\nlast_run: 2026-09-25\nversion: 2\n---\n\n[홈](../../index.md) › [D. 계획·최적화](index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF\n\n!!! info \"소속 대분류\"\n    [D. 계획·최적화](index.md) — 핵심 질문:\n    누가, 언제, 어디로, 어떤 자원을 사용해 작업할 것인가? [분류원문]\n\n<!-- auto:area-tracks:start -->\n!!! note \"관련 연구 트랙\"\n    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은 이 페이지에 반영하도록 제안된다. 전체 매핑은 [확장 아이디어 연결 구조](../../ideas/index.md)에 있다.\n\n    - [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) — 함께 필요한 영역(○) · 확장 아이디어: [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)\n<!-- auto:area-tracks:end -->\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 한 줄 정의\n\n여러 로봇의 경로와 통과 시점을 조율하고, 혼잡·교착·우선권을 처리 [분류원문]\n\n## 2. SCM 관점의 질문\n\n서로 다른 제조사의 로봇이 좁은 통로에서 마주치면 누가 양보할까? [분류원문]\n\n## 3. 왜 중요한가\n\n여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\n\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가](../../topics/2026/2026-09-25-area15-s3.md)에 있다.\n\n## 4. 핵심 개념과 용어\n\n이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\n\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어](../../topics/2026/2026-09-25-area15-s4.md)에 있다.\n\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\n\n**물류 흐름 단계:** 피킹\n\n**시나리오:** 피킹 구역의 좁은 통로에서 서로 다른 제조사의 보충 로봇과 피킹 운반 로봇이 마주침\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 피킹 운반 작업과 보충 작업이 비슷한 시각에 배정되어 두 로봇의 경로가 같은 좁은 통로를 지나게 된다(설명용 가정). |\n| 작업 대상 | 해당 없음(이 영역은 화물보다 로봇의 이동과 통과 시점을 다룬다). |\n| 수행 자원 | 제조사가 다른 두 로봇과 각 제조사 관제, 여러 플릿을 조율하는 ROP(설명용 가정). Open-RMF 기준으로 플릿은 제어 수준에 따라 경로 지시, 일시정지·재개, 상태 수신만 가능할 수 있고, 읽기 전용 플릿은 공유 공간마다 하나만 허용된다. [사실][^ref-004] |\n| 제약 | 차선의 양방향 여부·방향 제약과 대기 지점 같은 경로망 속성 [사실][^ref-079], 해제된 노드·간선만 주행할 수 있다는 규칙과 해제 구역의 진입 요청·응답 [사실][^ref-031] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 지연이 쌓이면 행동 의존 그래프로 순서를 지키며 실행을 이어갈지 재계획할지를 판단해야 하며 [사실][^ref-830], 재계획 여부와 교착 해소 주체가 처리량을 좌우할 것으로 보인다. [추정][^ref-830][^ref-031][^ref-834] |\n\n다음은 설명을 위한 가상의 시나리오이며, 확인된 현장 사례가 아니다. 이 영역은 여섯 항목 가운데 수행 자원·제약·예외·성과에 주로 관여한다.\n\n두 로봇이 마주치는 상황은 대기 지점·차선 방향 같은 경로망 제약과 구역 진입 허가로 먼저 막고, 그래도 생기면 협상이나 일시정지로 한쪽을 대기시키는 순서로 다룰 수 있을 것으로 이 위키는 추정한다. [추정][^ref-079][^ref-031][^ref-004] Open-RMF에서는 충돌이 감지되면 관련 플릿이 선호 경로와 상대를 수용하는 경로를 내고 제3자 판정자가 조합을 고르는 협상을 한다. [사실][^ref-004]\n\n## 6. 대표 접근법과 기술\n\nMAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\n\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술](../../topics/2026/2026-09-25-area15-s6.md)에 있다.\n\n## 7. 관련 표준·프레임워크·오픈소스\n\nOpen-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\n\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area15-s7.md)에 있다.\n\n## 8. 대표 연구와 자료\n\n분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\n\n자세한 내용은 주제 페이지 [15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료](../../topics/2026/2026-09-25-area15-s8.md)에 있다.\n\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\n\n이 위키는 ROP가 직접 맡을 교통 관리 범위를 여러 제조사 플릿에 걸친 공유 공간의 경로망·구역 단위 조율로 추정한다. [추정][^ref-031][^ref-004]\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 로봇 자체 지능·제어 | 여러 제조사 플릿에 걸친 공유 공간의 경로 예약·해제(베이스 확장), 구역 진입 허가, 우선권과 교착 탐지·해소 [추정][^ref-031][^ref-004] | 연계 대상: 개별 로봇의 로컬 장애물 회피·주행 제어, 제조사 플릿 내부의 경로 계획 [추정][^ref-004][^ref-031] |\n\n이 직접 범위는 VDA 5050이 관제 기능으로 두는 교착 탐지·해소·교통 제어와, Open-RMF가 교통 스케줄·협상으로 다루는 층위에 해당하는 것으로 보인다. [추정][^ref-031][^ref-004]\n\n연계 대상으로 보는 로컬 회피와 플릿 내부 경로 계획은 로봇·제조사 관제가 맡고, ROP는 제어 수준(Full Control·신호등·읽기 전용)에 따라 경로 지시·일시정지·상태 수신만 할 수 있는 것으로 이 위키는 추정한다(로컬 회피 책임을 명시한 문구는 이번에 확인한 문서 범위에서 찾지 못했다). [추정][^ref-004][^ref-031] 분류 원문 9장은 이종 제조사를 연결하는 ROP가 로컬 주행 기능을 「제조사에 맡기고 인터페이스와 실행 보장을 담당할 수 있다」고 보며, 경계는 제품 전략에 따라 이동할 수 있다([범위 경계](../../about/scope-boundary.md)).\n\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\n\n이 영역은 작업 배정, 공유 자원, 경로망과 지도, 제조사 관제 연동, 시뮬레이션, AI 영역과 이어지는 것으로 이 위키는 정리한다. [추정][^ref-006][^ref-079][^ref-267][^ref-004]\n\n- [13. 작업 배정 — MRTA](13-task-allocation-mrta.md) — MAPD는 작업 배정과 충돌 없는 경로 계획을 함께 다루므로 두 영역이 맞물린다. [추정][^ref-006]\n- [16. 공용 자원·충전·에너지 최적화](16-shared-resource-charging-and-energy-optimization.md) — 충전소·대기 지점 같은 공유 자원이 경로망의 경유점 속성으로 표현된다. [추정][^ref-079]\n- [6. 지도·공간·위치 모델](../b-common-information-and-environment-model/06-map-space-and-location-model.md) — 경로망·차선 그래프가 교통 관리의 공간 기반이다. [추정][^ref-079]\n- [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 현장 도입 때 플릿별 경로망과 차선 속성을 설정한다. [추정][^ref-079]\n- [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 플릿의 제어 수준이 ROP가 교통에 개입할 수 있는 범위를 정한다. [추정][^ref-004]\n- [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 경로망 설계를 평가하는 MAPF 시뮬레이션은 가정한 미래를 실험하므로 이 영역에 속하며, 현재 상태를 표현하는 8. 실시간 세계 상태·데이터 일관성과는 구분한다. [추정][^ref-267]\n- [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 모방 학습을 적용한 지속형 MAPF 연구가 있어, 학습 기반 경로 계획은 이 영역과 27. AI·학습·적응과 모델 운영 양쪽에 연결한다. [사실][^ref-841]\n\n## 11. 열린 질문\n\n- **oq-032** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-20) 제조사 관제가 일시정지·재개나 상태 보고만 허용할 때 공용 통로·승강기·문에서 다른 플릿과의 교착을 어떻게 막는가, 제어 수준에 따른 교통 성능 차이를 측정한 연구가 있는가? — 부분 근거로 Open-RMF 문서는 신호등 수준 플릿은 일시정지·재개만 가능하고 공유 공간마다 읽기 전용 플릿을 하나만 허용한다고 적지만, 제어 수준별 교통 성능을 측정한 연구는 찾지 못해 열린 채로 둔다. [사실][^ref-004]\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) VDA 5050 3.0.0 의 해제 구역·협조 재계획 구역과 Open-RMF 교통 스케줄·협상을 한 현장에서 함께 쓰는 공개 설계나 구현이 있는가?\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) 격자·단위 시간 가정의 MAPF 벤치마크 성과(대회 결과 포함)가 실제 물류센터 로봇의 처리량으로 얼마나 이어지는지 측정한 공개 자료나 국내 사례가 있는가?\n- (신규 · 상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-39) 주문 납기·출하 마감 같은 업무 우선순위를 교통 협상·통로 양보의 우선권으로 옮기는 규칙을 정한 연구나 현장 기준이 있는가?\n\n전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n## 12. 최근 업데이트 (자동)\n\n<!-- auto:area-recent:start -->\n아직 기록된 업데이트가 없다.\n<!-- auto:area-recent:end -->\n\n## 13. 참고 자료 (각주)\n\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area15-s6.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"6. 대표 접근법과 기술\" 절(2,051자)을 옮겼다. 2차 수정: SIPP 가정 한계 문장을 [추정]으로 고쳐 썼다",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\"\ntype: topic\ncategory: \"D. 계획·최적화\"\nprimary_area_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-267, ref-268, ref-829, ref-830, ref-831, ref-833, ref-834, ref-835, ref-836, ref-837, ref-838, ref-841]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#6\n---\n\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- MAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \"대표 접근법과 기술\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \"대표 접근법과 기술\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\nMAPF 해법은 최적해를 보장하는 탐색(CBS·SIPP)부터 대규모 반복 상황을 겨냥한 방법(PIBT)까지 폭이 넓고, 계획을 실제 로봇 실행에 맞추는 후처리 연구가 함께 있다. [사실][^ref-829][^ref-837][^ref-831][^ref-838]\n\n### 최적 탐색: CBS와 SIPP\n\n충돌 기반 탐색(Conflict-Based Search, CBS)은 상위 단계에서 에이전트 쌍의 충돌로 이루어진 충돌 트리를 탐색하고, 하위 단계에서는 한 번에 에이전트 하나의 경로만 찾는 2단계 최적 알고리즘이다. [사실][^ref-829] 안전 구간 경로 계획(Safe Interval Path Planning, SIPP)은 연속된 시간 단계를 충돌 없는 안전 구간으로 묶어 상태를 위치와 안전 구간의 쌍으로 두며, 로봇이 즉시 출발·정지할 수 있다는 가정 등 아래에서 해를 반드시 찾고 최적임이 증명된다. [사실][^ref-837] 이 위키는 즉시 출발·정지 가정이 실제 로봇의 운동 제약과 다르다고 본다. [추정][^ref-837][^ref-838]\n\n### 대규모·지속형 해법\n\nPIBT(Priority Inheritance with Backtracking)는 매 시간 단계마다 에이전트에 고유 우선순위를 주고 우선순위 상속과 되돌림으로 한 걸음씩 이동을 정한다. 저자들은 수백 대 규모에서도 거의 즉시 해를 낸다고 보고했고, 인접 노드 쌍이 모두 단순 순환에 속하는 그래프(예: 이중 연결)에서는 모든 에이전트가 유한 시간 안에 목적지에 도달함을 보였다고 밝힌다. [사실][^ref-831]\n\nLeague of Robot Runners 2023 대회에서 Overall Best 트랙을 우승했다고 팀이 자기 보고한 해법 저장소는, 해법을 PIBT·대규모 이웃 탐색(Large Neighborhood Search, LNS)·창(window) 단위 계획을 결합한 WPPL로 설명하고 특정 위치에서 특정 행동을 유도하는 안내 그래프를 쓰며, 대회의 실행 단계당 계획 시간 한도를 1초로 적는다(2026-09-25 확인). [사실][^ref-833] 지속형 MAPF에 모방 학습을 적용한 연구(2024)는 제안 방법이 이 대회 우승 해법을 앞섰다고 저자가 보고했다. [사실][^ref-841]\n\n### 계획과 실행의 간극\n\nMa 외(2017)는 표준 MAPF 해법이 최대 속도 같은 운동 제약과 불완전한 실행을 무시한다고 지적하고, MAPF 해를 단순 시간 네트워크로 후처리해 속도 한계·안전 거리·여유 시간을 반영한 실행 일정을 만드는 MAPF-POST를 제시했다. [사실][^ref-838] Hönig 외(2019)는 풀어 둔 MAPF 해의 통과 순서와 운동 제약을 행동 의존 그래프로 인코딩해, 예상 못한 감속이나 장애물이 있어도 창고 AGV가 계획을 충돌 없이 실행하고 지연이 쌓이면 재계획 여부를 판단하는 체계를 제시했다. [사실][^ref-830]\n\n### 산업 현장의 교통 관리와 교착 대응\n\nBonetti 외(2026)는 좁은 양방향 통로와 높은 교통 밀도의 비격자형 현장에서 크기·능력이 다른 대형 AGV를 위해, NURBS 곡선 경로망 위의 지속형 MAPF, 시간 지평을 조정하는 애니타임 충돌 해소, 실제 AGV와의 실행 계층, 교착 탐지·해소 장치를 갖춘 교통 관리 시스템을 제안했다. 대형·이종 AGV 공장 조건의 연구이므로 물류센터에 바로 적용할 근거로 보지 않는다. [사실][^ref-834]\n\n계층형 교통 관리 연구는 구역 간 교통을 다루는 위상 계층, 교통을 고려해 경로를 계산하는 중간 계층, 경로망에서 시간에 따라 AGV를 조율하는 하위 계층의 3계층 구조와 시간 확장 그래프 기반 교착 예방을 제안했다. [사실][^ref-835] 국내에서는 전진표 외(2005)가 자동화 컨테이너 터미널에서 그리드 점유 순서 그래프의 강결합 요소로의 진입을 통제해 교착을 막고, AGV 간 간섭 지연을 반영한 회귀식으로 경로를 실시간 선정하는 방안을 냈다. 실외 컨테이너 터미널 조건이므로 물류센터 직접 근거로 서술하지 않는다. [사실][^ref-836]\n\n### 경로망 자동 설계\n\n[건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) 트랙이 반영을 제안한 경로망 자동 설계 연구를 이번 조사·검증을 거쳐 싣는다. 한 연구(2024)는 공장 배치·차량 대수·작업 분포·배차 규칙에 맞춘 경로망을 개미 군집 영감 최적화와 사건 기반 시뮬레이터로 생성하고, SIPP를 쓰는 MAPF 시뮬레이터로 처리량을 평가해 적정 차량 대수를 제시한다. [사실][^ref-267] Rüdt·Enke·Furmans(2025)는 자유 공간의 볼록 모서리와 스테이션 상호작용 지점에 노드를 두고 로봇 치수에서 나온 최소 거리 제약과 운송 수요 기반 K-최단 경로 가지치기로 연속 공간 경로망을 만들며, 저자 보고로는 PIBT에서 최대 차량 수일 때 비교 방법(GSRM)보다 1.2~23.4% 앞섰다. [사실][^ref-268]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\n[^ref-268]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\n[^ref-833]: DiligentPanda (Team Pikachu, GitHub), MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023), 미확인, https://github.com/DiligentPanda/MAPF-LRR2023, 접근일 2026-09-25\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\n[^ref-835]: IEEE 게재 논문 저자(미확인), Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments (IEEE Transactions on Automation Science and Engineering), 2023(검색 결과 기준), https://ieeexplore.ieee.org/document/10132864/, 접근일 2026-09-25 (원문 미열람)\n[^ref-836]: 전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지), 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안, 2005, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155, 접근일 2026-09-25 (원문 미열람)\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"대표 접근법과 기술\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area15-s8.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"8. 대표 연구와 자료\" 절(1,679자)을 옮겼다",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\"\ntype: topic\ncategory: \"D. 계획·최적화\"\nprimary_area_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-005, ref-006, ref-267, ref-268, ref-828, ref-829, ref-830, ref-831, ref-832, ref-834, ref-835, ref-836, ref-837, ref-838, ref-841]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#8\n---\n\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \"대표 연구와 자료\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \"대표 연구와 자료\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n분류 원문이 참고 자료로 든 Li 외(2020)와 Ma 외(2017)는 각각 대규모 창고의 지속형 MAPF와 픽업·배송 작업이 온라인으로 들어오는 MAPD의 경로 계획을 다룬다. [사실][^ref-005][^ref-006] 아래 연구의 성능·순위 수치는 모두 단일 출처의 저자·팀 보고이며 이 위키가 확인한 성능이 아니다.\n\n- Stern 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks(2019) — MAPF의 가정·목적함수 용어를 정리하고 격자 벤치마크를 제시해 해법 비교의 기준이 된다. [사실][^ref-828]\n- Yu·LaValle, Optimal Multi-Robot Path Planning on Graphs(2015) — 네 목적의 파레토 관계와 각 목적의 NP-hard 성을 보였다. [사실][^ref-832]\n- Sharon 외, Conflict-based search for optimal multi-agent pathfinding(2015) — 2단계 최적 알고리즘 CBS를 제시했다. [사실][^ref-829]\n- Phillips·Likhachev, SIPP(2011, ICRA) — 안전 구간으로 움직이는 장애물 사이 경로를 찾는 방법이다. [사실][^ref-837]\n- Okumura 외, PIBT(2019) — 대규모 반복형 MAPF 방법이며 속도는 저자 보고다. [사실][^ref-831]\n- Ma 외, Overview: Generalizations of MAPF to Real-World Scenarios(2017) — 운동 제약을 반영하는 MAPF-POST 후처리를 다룬다. [사실][^ref-838]\n- Hönig 외, Persistent and Robust Execution of MAPF Schedules in Warehouses(2019) — 행동 의존 그래프로 창고 AGV의 계획 실행을 지연에 강건하게 한다. [사실][^ref-830]\n- Bonetti 외, A traffic management system for large and heterogeneous vehicles in narrow industrial environments(2026) — 대형·이종 AGV 공장 조건의 교통 관리 시스템이며 처리량 우위는 저자 보고다. [사실][^ref-834]\n- Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments(저자 미확인, 2023 검색 결과 기준) — 3계층 구조와 시간 확장 그래프 기반 교착 예방을 다룬다. [사실][^ref-835]\n- 전진표 외, 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안(2005, 한국항해항만학회지 29(8)) — 국내 자료이며 실외 컨테이너 터미널 조건이다. [사실][^ref-836]\n- Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems(저자 미확인, 2024) — 시뮬레이션 기반 경로망 자동 설계와 차량 대수 평가를 다룬다. [사실][^ref-267]\n- Rüdt·Enke·Furmans, 연속 공간 경로망 자동 생성(2025, 프리프린트) — 거리 제약과 운송 수요를 반영한 경로망 생성이며 개선 폭은 저자 보고다. [사실][^ref-268]\n- Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding(2024, 프리프린트) — 학습 기반 지속형 MAPF이며 대회 우승 해법 추월은 저자 보고다. [사실][^ref-841]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\n[^ref-267]: IEEE 게재 논문 저자(미확인), Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개)), 2024, https://ieeexplore.ieee.org/document/10287275/, 접근일 2026-09-25 (원문 미열람)\n[^ref-268]: Rüdt, M., Enke, C., & Furmans, K. (KIT), Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization), 2025-11, https://arxiv.org/abs/2511.07175, 접근일 2026-09-25 (원문 미열람)\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\n[^ref-829]: Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R., Conflict-based search for optimal multi-agent pathfinding, 2015, https://dl.acm.org/doi/10.1016/j.artint.2014.11.006, 접근일 2026-09-25 (원문 미열람)\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\n[^ref-831]: Okumura, K., Machida, M., Défago, X., & Tamura, Y., Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding, 2019-01, https://arxiv.org/abs/1901.11282, 접근일 2026-09-25 (원문 미열람)\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\n[^ref-835]: IEEE 게재 논문 저자(미확인), Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments (IEEE Transactions on Automation Science and Engineering), 2023(검색 결과 기준), https://ieeexplore.ieee.org/document/10132864/, 접근일 2026-09-25 (원문 미열람)\n[^ref-836]: 전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지), 자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안, 2005, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155, 접근일 2026-09-25 (원문 미열람)\n[^ref-837]: Phillips, M., & Likhachev, M. (ICRA 2011), SIPP: Safe interval path planning for dynamic environments, 2011, https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments, 접근일 2026-09-25 (원문 미열람)\n[^ref-838]: Ma, H., Koenig, S. 외, Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios, 2017-02, https://arxiv.org/abs/1702.05515, 접근일 2026-09-25 (원문 미열람)\n[^ref-841]: arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding, 2024-10, https://arxiv.org/abs/2410.21415, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"대표 연구와 자료\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area15-s7.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,155자)을 옮겼다. 형식 수정: 아직 참고문헌 페이지가 없는 ref-839·ref-833 링크를 텍스트 id 로 바꿨다",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\"\ntype: topic\ncategory: \"D. 계획·최적화\"\nprimary_area_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-004, ref-031, ref-079, ref-253, ref-833, ref-839]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#7\n---\n\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- Open-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \"관련 표준·프레임워크·오픈소스\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \"관련 표준·프레임워크·오픈소스\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\nOpen-RMF는 여러 플릿의 교통 스케줄과 협상을 구현하고, VDA 5050은 경로 해제와 구역 규칙을 정하되 경로 결정·우선순위 같은 교통 조율 전략은 규격 범위에서 뺀다. [사실][^ref-004][^ref-031]\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| Open-RMF 교통 스케줄·협상 | 오픈소스 | 시설 안 로봇의 예정 주행 궤적을 모은 중앙 교통 스케줄 데이터베이스에 각 플릿 관리자가 예정 경로를 보고·갱신하고, 충돌 통지 뒤 플릿별 제안을 제3자 판정자가 고른다. 플릿 제어 수준은 Full Control·신호등(일시정지·재개)·읽기 전용·연동 불가로 나뉜다. [사실][^ref-004] | [ref-004](../../references/ref-004.md) |\n| rmf_traffic | 오픈소스 | 여러 에이전트 사이 이동로봇 교통을 스케줄링·협상하는 알고리즘과 자료구조를 제공하는 Open-RMF 패키지다. [사실][^ref-839] | ref-839 |\n| Open-RMF Traffic Editor | 오픈소스 | 플릿별 경로망 그래프(기본 9개)와 차선·경유점 속성을 편집한다. 차선 속도 제한 항목은 문서에서 확인되지 않았다. [사실][^ref-079] | [ref-079](../../references/ref-079.md) |\n| VDA 5050 3.0.0 (main 판, 2026-09-25 확인) | 표준 | 베이스 해제 규칙과 결정 지점 전 베이스 확장을 정한다. 윤곽 기반 구역으로 해제(RELEASE)·협조 재계획(COORDINATED_REPLANNING)·진입 금지(BLOCKED)·속도 제한(SPEED_LIMIT)을, 운동 중심 기반 구역으로 선호 주행 방향(DIRECTED/BIDIRECTED)을 둔다. 교착 탐지·해소와 버퍼 경로·대기 위치를 포함한 교통 제어는 관제 기능으로 든다. [사실][^ref-031] | [ref-031](../../references/ref-031.md) |\n| MassRobotics AMR 상호운용 표준 | 표준 | 제조사가 다른 로봇의 공존을 위해 위치·속도·방향·상태·작업 가용성을 공유하게 하며, README에는 경로 조율이나 우선권 결정 절차가 적혀 있지 않다. [사실][^ref-253] | [ref-253](../../references/ref-253.md) |\n| MAPF-LRR2023 | 오픈소스 | League of Robot Runners 2023 대회 참가 팀이 공개한 지속형 MAPF 해법(WPPL) 저장소다(우승은 팀 자기 보고). [사실][^ref-833] | ref-833 |\n\n표준 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다. 관련 용어: [오픈 RMF](../../glossary/open-rmf.md), [다중 플릿 오케스트레이션](../../glossary/multi-fleet-orchestration.md), [해제 구역](../../glossary/release-zone.md).\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-253]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — README, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-09-25 (원문 미열람)\n[^ref-833]: DiligentPanda (Team Pikachu, GitHub), MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023), 미확인, https://github.com/DiligentPanda/MAPF-LRR2023, 접근일 2026-09-25\n[^ref-839]: Open Robotics (open-rmf), rmf_traffic — README, 미확인, https://github.com/open-rmf/rmf_traffic, 접근일 2026-09-25\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"관련 표준·프레임워크·오픈소스\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area15-s4.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"4. 핵심 개념과 용어\" 절(969자)을 옮겼다",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\"\ntype: topic\ncategory: \"D. 계획·최적화\"\nprimary_area_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-005, ref-006, ref-031, ref-079, ref-828, ref-830]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#4\n---\n\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 핵심 개념과 용어\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \"핵심 개념과 용어\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \"핵심 개념과 용어\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n이 영역의 기본 개념은 충돌 없는 경로 집합을 찾는 MAPF와, 현장에서 로봇이 달리는 경로망과 그 위의 교통 규칙을 표현하는 개념들이다. [사실][^ref-828][^ref-079]\n\n- **[다중 에이전트 경로 찾기](../../glossary/mapf.md)(Multi-Agent Path Finding, MAPF)** — 여러 에이전트가 서로 충돌하지 않고 동시에 따라갈 경로를 계획하는 문제다. 목적함수로는 마지막 도착 시각(makespan)이나 행동 비용의 합(sum of costs)이 쓰인다. [사실][^ref-828]\n- **[지속형 MAPF](../../glossary/lifelong-mapf.md)(Lifelong MAPF)·[다중 에이전트 픽업·배송](../../glossary/multi-agent-pickup-and-delivery.md)(Multi-Agent Pickup and Delivery, MAPD)** — 대규모 창고에서 목적지가 계속 새로 주어지는 경로 계획과, 픽업·배송 작업이 온라인으로 들어오는 경로 계획을 다룬다. [사실][^ref-005][^ref-006]\n- **[경로망](../../glossary/roadmap.md)(Roadmap)** — 로봇이 따라 달리는 노드·엣지 그래프다. Open-RMF 교통 편집기(Traffic Editor)는 차선마다 양방향 여부·소속 플릿 그래프 번호·전진/후진 방향 제약을, 경유점마다 대기 지점(무기한 대기 허용)·주차 지점·충전소 표시를 둔다. [사실][^ref-079]\n- **베이스·호라이즌(base·horizon)** — [VDA 5050](../../glossary/vda-5050.md)에서 관제가 이미 해제한 노드·간선(베이스)과 계획만 된 부분(호라이즌)을 나누는 개념이며, 로봇은 해제되지 않은 노드·간선을 지나면 안 된다. [사실][^ref-031]\n- **[해제 구역](../../glossary/release-zone.md)(Release Zone)** — VDA 5050 3.0.0에서 로봇이 진입을 요청하고 관제가 응답해야 들어갈 수 있는 구역이다. [사실][^ref-031]\n- **교착(Deadlock)** — 여러 로봇이 서로 비켜 주기를 기다리며 아무도 진행하지 못하는 상태로, VDA 5050은 교착의 탐지·해소를 관제의 기능으로 든다. [사실][^ref-031]\n- **행동 의존 그래프(Action Dependency Graph)** — MAPF 계획에서 로봇 사이 통과 순서를 의존 관계로 기록해, 지연이 생겨도 그 순서를 지키며 계획을 실행하게 하는 그래프다. [사실][^ref-830]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-005]: Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding in Large-Scale Warehouses, 2020, https://arxiv.org/abs/2005.07371, 접근일 2026-09-25 (원문 미열람)\n[^ref-006]: Ma, H., Li, J., Kumar, T. K. S., & Koenig, S., Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks, 2017, https://arxiv.org/abs/1705.10868, 접근일 2026-09-25 (원문 미열람)\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"핵심 개념과 용어\" 절에서 분리 |\n"
+      },
+      {
+        "path": "docs/topics/2026/2026-09-25-area15-s3.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"3. 왜 중요한가\" 절(742자)을 옮겼다",
+        "content": "---\ntitle: \"15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\"\ntype: topic\ncategory: \"D. 계획·최적화\"\nprimary_area_no: 15\nrelated_areas: [6, 9, 13, 16, 21, 22, 27]\ntags: [분리 페이지]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-25\nupdated: 2026-09-25\nsources: [ref-004, ref-031, ref-253, ref-828, ref-830, ref-832, ref-834]\nlast_run: 2026-09-25\nversion: 1\nsplit_from: docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#3\n---\n\n[홈](../../index.md) › [주제](../index.md) › 15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\n\n# 15. 다중 로봇 경로·교통 관리 — MAPF — 왜 중요한가\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 세 줄 요약\n\n- 여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\n- 이 페이지는 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지의 \"왜 중요한가\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.\n\n## 2. 배경\n\n[15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 페이지를 쓰는 과정에서 \"왜 중요한가\" 절의 분량이 세부영역 페이지 기준(4,000자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.\n\n## 3. 본문\n\n여러 로봇이 같은 공간에서 서로 부딪히지 않는 경로와 통과 시점을 정하는 일은 다중 에이전트 경로 찾기(Multi-Agent Path Finding, MAPF)로 연구되며, 목적마다 최적해를 계산하기 어려운 문제로 알려져 있다. [사실][^ref-828][^ref-832]\n\nStern 외(2019)는 연구마다 같은 길을 동시에 지날 수 있는지 같은 가정과 목적함수가 서로 달라 비교가 어렵다고 보고, 공통 용어와 격자 기반 벤치마크를 제안했다. [사실][^ref-828] Yu·LaValle(2015)은 그래프 위 다중 로봇 경로 계획의 네 목적(총 도착 시간, 마지막 도착 시각, 총 이동 거리, 최대 개별 이동 거리)이 동시에 최적화될 수 없는 파레토 관계이며, 각 목적의 최적해 계산이 NP-hard 임을 보였다. [사실][^ref-832]\n\n공급망 관점에서는 교통 지연과 교착이 처리량 손실로 이어지므로, 실행 중 지연이 쌓일 때 계획을 유지할지 다시 짤지와 교착이 생기면 누가 푸는지가 운영 성과를 가를 것으로 이 위키는 추정한다. [추정][^ref-830][^ref-031][^ref-834]\n\n2절의 질문(누가 양보하는가)에 대해 이 위키는 다음과 같이 추론한다. VDA 5050은 우선순위·교착 해소를 관제에 맡기고 MassRobotics 표준은 상태 공유만 정하므로, 양보 규칙은 여러 플릿 위의 조율 계층(ROP 또는 Open-RMF식 협상 판정자)이 정해야 하고, 한쪽 플릿이 읽기 전용 수준이면 그 플릿은 양보시킬 수 없어 다른 플릿이 양보하는 구조가 될 것으로 보인다(양보 규칙을 정한 공통 표준은 이번 조사 범위에서 찾지 못했으나 부재가 확정된 것은 아니다). [추정][^ref-031][^ref-253][^ref-004]\n\n## 4. 현장 시나리오\n\n현장 시나리오는 원 페이지의 [5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 5. ROP 관점의 시사점\n\nROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절에 있다.\n\n## 6. 연결되는 연구영역\n\n- 주 연구영역: [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)\n- 관련 영역: [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)\n\n## 7. 열린 질문\n\n열린 질문은 원 페이지의 [11. 열린 질문](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) 절과 [열린 질문](../../open-questions.md) 페이지에 모은다.\n\n## 8. 출처\n\n[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-253]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — README, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard, 접근일 2026-09-25 (원문 미열람)\n[^ref-828]: Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외, Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks, 2019-06, https://arxiv.org/abs/1906.08291, 접근일 2026-09-25 (원문 미열람)\n[^ref-830]: Hönig, W., Kiesel, S. 외, Persistent and Robust Execution of MAPF Schedules in Warehouses, 2019, https://ieeexplore.ieee.org/abstract/document/8620328/, 접근일 2026-09-25 (원문 미열람)\n[^ref-832]: Yu, J., & LaValle, S. M., Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity, 2015-07, https://arxiv.org/abs/1507.03289, 접근일 2026-09-25 (원문 미열람)\n[^ref-834]: Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L., A traffic management system for large and heterogeneous vehicles in narrow industrial environments, 2026-09, https://arxiv.org/abs/2609.10400, 접근일 2026-09-25 (원문 미열람)\n\n## 9. 검증 노트\n\n원 페이지와 함께 실행 2026-09-25-39 의 1차·2차 검증을 거쳤다. 분리는 코드가 했고 내용은 바꾸지 않았다.\n\n## 10. 이력\n\n| 날짜 | 실행 id | 변경 |\n|---|---|---|\n| 2026-09-25 | 2026-09-25-39 | 15. 다중 로봇 경로·교통 관리 — MAPF 의 \"왜 중요한가\" 절에서 분리 |\n"
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 15. 다중 로봇 경로·교통 관리 — MAPF | 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 | run 2026-09-25-39",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화로 3~11절 신규 작성(MAPF 해법, Open-RMF·VDA 5050 교통 규칙, 교착 대응, 경로망 자동 설계)",
+      "category_recent": "2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화로 3~11절 신규 작성, 건축 도면 자동 인식 트랙의 경로망 자동 설계 반영 제안 2건 반영",
+      "area_recent": "2026-09-25 — 15. 다중 로봇 경로·교통 관리 — MAPF: 섹션 3~11 신규 작성(실행 2026-09-25-39)"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "conflict-based-search",
+        "term_ko": "충돌 기반 탐색",
+        "term_en": "Conflict-Based Search (CBS)",
+        "definition": "에이전트 쌍의 충돌로 이루어진 충돌 트리를 상위 단계에서 탐색하고 하위 단계에서는 에이전트 하나씩 경로를 다시 찾는 2단계 최적 MAPF 알고리즘이다.",
+        "related_areas": [
+          15
+        ],
+        "sources": [
+          "ref-829"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "safe-interval-path-planning",
+        "term_ko": "안전 구간 경로 계획",
+        "term_en": "Safe Interval Path Planning (SIPP)",
+        "definition": "위치마다 충돌 없는 연속 시간 구간(안전 구간)을 두고 위치와 안전 구간의 쌍을 상태로 삼아 움직이는 장애물 사이 경로를 찾는 방법이다.",
+        "related_areas": [
+          15
+        ],
+        "sources": [
+          "ref-837"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "priority-inheritance-with-backtracking",
+        "term_ko": "우선순위 상속·되돌림",
+        "term_en": "Priority Inheritance with Backtracking (PIBT)",
+        "definition": "매 시간 단계마다 에이전트에 우선순위를 주고 우선순위 상속과 되돌림으로 한 걸음씩 이동을 정하는 반복형 MAPF 방법이다.",
+        "related_areas": [
+          15
+        ],
+        "sources": [
+          "ref-831"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "action-dependency-graph",
+        "term_ko": "행동 의존 그래프",
+        "term_en": "Action Dependency Graph (ADG)",
+        "definition": "MAPF 계획에서 로봇들 사이 통과 순서를 의존 관계로 기록해, 실행 중 지연이 생겨도 그 순서를 지키며 충돌 없이 계획을 실행하게 하는 그래프이다.",
+        "related_areas": [
+          15
+        ],
+        "sources": [
+          "ref-830"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "deadlock",
+        "term_ko": "교착",
+        "term_en": "Deadlock",
+        "definition": "여러 로봇이 서로 상대가 비켜 주기를 기다리며 아무도 진행하지 못하는 상태로, 좁은 통로·공유 구간에서 교통 관리가 탐지·예방·해소해야 한다.",
+        "description": "VDA 5050 은 교착의 탐지·해소를 관제의 기능으로 든다.",
+        "related_areas": [
+          15,
+          9
+        ],
+        "sources": [
+          "ref-031"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-004",
+        "org": "Open Robotics",
+        "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 핵심 구조 문서. 교통 스케줄 데이터베이스, 충돌 통지·협상, 플릿 제어 수준 4종과 읽기 전용 플릿 제한을 원문으로 확인했다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-005",
+        "org": "Li, J., Tinka, A., Kiesel, S., Durham, J. W., Kumar, T. K. S., & Koenig, S.",
+        "title": "Lifelong Multi-Agent Path Finding in Large-Scale Warehouses",
+        "published": "2020",
+        "url": "https://arxiv.org/abs/2005.07371",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 대규모 창고에서 에이전트가 계속 새 목적지를 받는 지속형 MAPF 를 다룬 논문(분류 원문 참고 자료).",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-006",
+        "org": "Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.",
+        "title": "Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks",
+        "published": "2017",
+        "url": "https://arxiv.org/abs/1705.10868",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 온라인으로 들어오는 픽업·배송 작업의 배정과 충돌 없는 경로 계획을 함께 다룬 MAPD 논문(분류 원문 참고 자료).",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 최신판(main, 3.0.0) 명세 원문. 베이스·호라이즌과 해제 규칙, 교통 조율 전략의 범위 제외, 관제의 교착 해소 기능, 구역 유형을 확인했다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-079",
+        "org": "Open Robotics",
+        "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 교통 편집기 문서. 차선의 양방향·그래프 번호·방향 제약과 경유점의 대기 지점·주차·충전소 속성, 플릿별 그래프를 원문으로 확인했다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-253",
+        "org": "MassRobotics",
+        "title": "MassRobotics-AMR/AMR_Interop_Standard — README",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람(리서치 기록 기준). 제조사가 다른 로봇의 공존을 위해 위치·속도·방향·상태·작업 가용성을 공유한다는 목적을 밝힌 AMR 상호운용 표준 저장소 README.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-267",
+        "org": "IEEE 게재 논문 저자(미확인)",
+        "title": "Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))",
+        "published": "2024",
+        "url": "https://ieeexplore.ieee.org/document/10287275/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 개미 군집 영감 최적화와 사건 기반 시뮬레이터로 경로망을 생성하고 SIPP 기반 MAPF 시뮬레이터로 처리량·차량 대수를 평가한 논문.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-268",
+        "org": "Rüdt, M., Enke, C., & Furmans, K. (KIT)",
+        "title": "Automated Generation of Continuous-Space Roadmaps for Routing Mobile Robot Fleets (v2 제목: Continuous-Space Roadmap Generation for Mobile Robot Fleets with Distance Constraints and Geometry-Aware Discretization)",
+        "published": "2025-11",
+        "url": "https://arxiv.org/abs/2511.07175",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 스테이션 상호작용 지점·거리 제약·운송 수요 기반 가지치기로 연속 공간 경로망을 생성하고 MAPD 해법으로 평가한 프리프린트.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-828",
+        "org": "Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외",
+        "title": "Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks",
+        "published": "2019-06",
+        "url": "https://arxiv.org/abs/1906.08291",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MAPF 의 가정·목적함수 용어를 통일하고 격자 기반 벤치마크를 제시한 SoCS 2019 논문.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-829",
+        "org": "Sharon, G., Stern, R., Felner, A., & Sturtevant, N. R.",
+        "title": "Conflict-based search for optimal multi-agent pathfinding",
+        "published": "2015",
+        "url": "https://dl.acm.org/doi/10.1016/j.artint.2014.11.006",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 충돌 트리 상위 탐색과 단일 에이전트 하위 탐색으로 된 최적 MAPF 알고리즘 CBS 를 제시한 Artificial Intelligence 219 논문.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-830",
+        "org": "Hönig, W., Kiesel, S. 외",
+        "title": "Persistent and Robust Execution of MAPF Schedules in Warehouses",
+        "published": "2019",
+        "url": "https://ieeexplore.ieee.org/abstract/document/8620328/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 행동 의존 그래프로 창고 AGV 의 MAPF 계획을 지연에 강건하게 실행하고 재계획 시점을 판단하는 IEEE RA-L 논문.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-831",
+        "org": "Okumura, K., Machida, M., Défago, X., & Tamura, Y.",
+        "title": "Priority Inheritance with Backtracking for Iterative Multi-agent Path Finding",
+        "published": "2019-01",
+        "url": "https://arxiv.org/abs/1901.11282",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 매 단계 우선순위·우선순위 상속·되돌림으로 반복형 MAPF 를 푸는 PIBT 를 제시한 논문(IJCAI 2019, AIJ 2022).",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-832",
+        "org": "Yu, J., & LaValle, S. M.",
+        "title": "Optimal Multi-Robot Path Planning on Graphs: Structure and Computational Complexity",
+        "published": "2015-07",
+        "url": "https://arxiv.org/abs/1507.03289",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 그래프 위 다중 로봇 경로 계획의 네 목적 사이 파레토 관계와 각 목적의 NP-hard 성을 보인 논문.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-833",
+        "org": "DiligentPanda (Team Pikachu, GitHub)",
+        "title": "MAPF-LRR2023 — README (Team Pikachu's solution in the League of Robot Runners Competition 2023)",
+        "published": null,
+        "url": "https://github.com/DiligentPanda/MAPF-LRR2023",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "League of Robot Runners 2023 참가 팀의 해법 저장소 README. PIBT·LNS·창 단위 계획을 결합한 WPPL, 안내 그래프, 대회 계획 시간 한도(1초)를 설명하며 우승은 팀 자기 보고다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+          "docs/topics/2026/2026-09-25-area15-s6.md",
+          "docs/topics/2026/2026-09-25-area15-s7.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-834",
+        "org": "Bonetti, A., Proia, S., Guidetti, S., & Sabattini, L.",
+        "title": "A traffic management system for large and heterogeneous vehicles in narrow industrial environments",
+        "published": "2026-09",
+        "url": "https://arxiv.org/abs/2609.10400",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. NURBS 경로망 위 지속형 MAPF 와 교착 탐지·해소로 좁은 통로의 크기가 다른 AGV 를 조율하는 교통 관리 시스템 프리프린트.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-835",
+        "org": "IEEE 게재 논문 저자(미확인)",
+        "title": "Hierarchical Traffic Management of Multi-AGV Systems With Deadlock Prevention Applied to Industrial Environments",
+        "published": "2023",
+        "url": "https://ieeexplore.ieee.org/document/10132864/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 위상·중간·경로망 3계층 구조와 시간 확장 그래프 기반 교착 예방으로 다중 AGV 교통을 관리하는 논문. 발행일(2023, IEEE Transactions on Automation Science and Engineering)은 검색 결과 기준이며 저자는 미확인.",
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area15-s6.md",
+          "docs/topics/2026/2026-09-25-area15-s8.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-836",
+        "org": "전진표, 강재호, 류광렬, 김갑환, 윤항묵(한국항해항만학회지)",
+        "title": "자동화 컨테이너 터미널에서 AGV 교착 방지와 회귀 분석을 이용한 경로 선정 방안",
+        "published": "2005",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001130155",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 그리드 점유 순서 그래프의 강결합 요소 진입 통제로 AGV 교착을 막고 회귀식으로 경로를 선정하는 국내 논문(29권 8호).",
+        "cited_by": [
+          "docs/topics/2026/2026-09-25-area15-s6.md",
+          "docs/topics/2026/2026-09-25-area15-s8.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-837",
+        "org": "Phillips, M., & Likhachev, M.",
+        "title": "SIPP: Safe interval path planning for dynamic environments",
+        "published": "2011",
+        "url": "https://www.researchgate.net/publication/224252713_SIPP_Safe_interval_path_planning_for_dynamic_environments",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 시간 단계를 안전 구간으로 묶어 동적 장애물 사이 경로를 찾는 SIPP 를 제시한 ICRA 2011 논문(URL 은 ResearchGate 사본).",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-838",
+        "org": "Ma, H., Koenig, S. 외",
+        "title": "Overview: Generalizations of Multi-Agent Path Finding to Real-World Scenarios",
+        "published": "2017-02",
+        "url": "https://arxiv.org/abs/1702.05515",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MAPF 를 실제 로봇에 옮길 때의 운동 제약·실행 불완전성 문제와 MAPF-POST 후처리를 다룬 IJCAI-16 워크숍 개관.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      },
+      {
+        "id": "ref-839",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_traffic — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_traffic",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 교통 패키지 README. 여러 에이전트 사이 이동로봇 교통의 스케줄링·협상 알고리즘과 자료구조를 제공한다고 밝힌다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md",
+          "docs/topics/2026/2026-09-25-area15-s7.md"
+        ],
+        "source_unopened": false
+      },
+      {
+        "id": "ref-841",
+        "org": "arXiv 2410.21415 저자(미확인)",
+        "title": "Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding",
+        "published": "2024-10",
+        "url": "https://arxiv.org/abs/2410.21415",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 지속형 MAPF 에 확장형 모방 학습(SILLM)을 적용한 프리프린트로, 2023 League of Robot Runners 우승 해법을 앞섰다고 저자가 보고한다.",
+        "cited_by": [
+          "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md"
+        ],
+        "source_unopened": true
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "VDA 5050 3.0.0 의 해제 구역·협조 재계획 구역과 Open-RMF 교통 스케줄·협상을 한 현장에서 함께 쓰는 공개 설계나 구현이 있는가?",
+        "areas": [
+          15,
+          9
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "격자·단위 시간 가정의 MAPF 벤치마크 성과(대회 결과 포함)가 실제 물류센터 로봇의 처리량으로 얼마나 이어지는지 측정한 공개 자료나 국내 사례가 있는가?",
+        "areas": [
+          15,
+          23
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "주문 납기·출하 마감 같은 업무 우선순위를 교통 협상·통로 양보의 우선권으로 옮기는 규칙을 정한 연구나 현장 기준이 있는가?",
+        "areas": [
+          15,
+          14
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [
+      {
+        "step": "피킹",
+        "item": "시작 조건",
+        "link": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "15. 다중 로봇 경로·교통 관리 — MAPF"
+      },
+      {
+        "step": "피킹",
+        "item": "수행 자원",
+        "link": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "15. 다중 로봇 경로·교통 관리 — MAPF"
+      },
+      {
+        "step": "피킹",
+        "item": "제약",
+        "link": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "15. 다중 로봇 경로·교통 관리 — MAPF"
+      },
+      {
+        "step": "피킹",
+        "item": "예외·성과",
+        "link": "docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "15. 다중 로봇 경로·교통 관리 — MAPF"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "rmf_traffic (Open-RMF 교통 스케줄링·협상 패키지)",
+        "kind": "오픈소스",
+        "org": "Open Robotics (open-rmf)",
+        "url": "https://github.com/open-rmf/rmf_traffic",
+        "related_areas": [
+          15,
+          9
+        ],
+        "summary": "여러 에이전트 사이 이동로봇 교통을 스케줄링하고 협상하는 알고리즘과 자료구조를 제공하는 Open-RMF 패키지다.",
+        "ref_id": "ref-839"
+      },
+      {
+        "name": "Open-RMF Traffic Editor",
+        "kind": "오픈소스",
+        "org": "Open Robotics",
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "related_areas": [
+          15,
+          6,
+          21
+        ],
+        "summary": "플릿별 경로망 그래프와 차선(양방향·방향 제약)·경유점(대기 지점·주차·충전소) 속성을 편집하는 Open-RMF 도구다.",
+        "ref_id": "ref-079"
+      },
+      {
+        "name": "MAPF-LRR2023 (League of Robot Runners 2023 팀 해법 WPPL)",
+        "kind": "오픈소스",
+        "org": "DiligentPanda (Team Pikachu, GitHub)",
+        "url": "https://github.com/DiligentPanda/MAPF-LRR2023",
+        "related_areas": [
+          15,
+          23
+        ],
+        "summary": "PIBT·LNS·창 단위 계획을 결합한 지속형 MAPF 해법 WPPL 의 공개 저장소이며, 대회 우승은 팀 자기 보고다.",
+        "ref_id": "ref-833"
+      }
+    ],
+    "additional_research_requests": [
+      "5절 완료·인계 칸: 교통 구간 통과의 완료를 무엇으로 확인하고 경로 해제·반납하는지(예: VDA 5050 베이스 해제 반납, Open-RMF 예정 경로 갱신) 근거가 필요하다 — 이번 브리프에 없어 '해당 없음'으로 두었다.",
+      "8절 국내 자료: ref-840(물류과학기술연구 MARL 트랜스포터 경로 계획)의 실재를 확인하지 못해 뺐다. 국내 물류센터 다중 AGV·AMR 교착·혼잡 경로 계획 연구를 추가 조사해야 한다.",
+      "9절: 승강기·문 같은 시설·설비 제어 경계에서 교통 관리(통과 예약·대기)가 어떻게 나뉘는지 근거가 있으면 경계 표에 행을 더할 수 있다.",
+      "11절 oq-032: 플릿 제어 수준(Full Control·신호등·읽기 전용)별 교통 성능·교착 발생을 측정한 연구 조사가 필요하다.",
+      "6절: 트랙 반영 제안의 '경로망은 보통 전문가가 수작업으로 설계한다'(ref-267) 서술은 출처 확인이 안 돼 싣지 않았다. 원문 확인 시 재검토한다.",
+      "6절(분리 페이지 s6): SIPP 의 즉시 출발·정지 가정이 실제 로봇 운동 제약과 어떻게 다른지 명시한 출처(SIPP 확장 연구 등)가 있으면 [사실]로 다시 쓸 수 있다."
+    ],
+    "fixes_applied": [
+      "f24 삭제 — 본문 어디에도 싣지 않았고 ref-840 을 reference_updates·13절 각주·프런트매터 sources 에서 뺐으며, 8절 국내 자료는 f21(ref-836)만 썼다.",
+      "원문 미열람 표시 — ref-005·ref-006·ref-253·ref-267·ref-268·ref-828·ref-829·ref-830·ref-831·ref-832·ref-834·ref-835·ref-836·ref-837·ref-838·ref-841 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다(ref-253 summary 도 '원문 미열람'으로 시작하게 고침).",
+      "성능·순위 저자 보고 명시 — 6·8절에서 PIBT 속도(f4), Bonetti 처리량 우위(f19), GSRM 대비 1.2~23.4%(f23), SILLM 의 대회 우승 해법 추월(f25), WPPL 의 Overall Best 우승(f8)을 각각 '저자 보고'·'팀 자기 보고'로 적고 8절 머리에 이 위키가 확인한 성능이 아님을 밝혔다.",
+      "f2 — '3-SAT 환원' 표현을 빼고 3·8절에서 '각 목적의 최적해 계산이 NP-hard 임을 보였다'까지만 썼다.",
+      "f22 — 6·8절에 방법 서술만 반영하고 '경로망은 보통 전문가가 수작업으로 설계' 서술은 싣지 않았으며, 트랙 반영 제안 2건은 f22·f23 으로 6. 대표 접근법과 기술·8. 대표 연구와 자료에 반영한 것으로 처리했다.",
+      "f20 — ref-835 각주의 저자를 '미확인'으로, 발행일을 '2023(검색 결과 기준)'으로 적고 reference_updates summary 에도 검색 결과 기준임을 밝혔다.",
+      "f19·f21 — 6·8절에서 각각 대형·이종 AGV 공장 조건, 실외 자동화 컨테이너 터미널 조건임을 밝히고 물류센터 직접 적용 근거로 보지 않는다고 적었다.",
+      "f18·f26·f27·f28·f29·f30 — [추정] 태그를 유지하고 문장에 '이 위키는 추정한다/추론한다'를 밝혔다. f28 시나리오는 5절에 확인된 현장 사례가 아닌 설명용 가상 시나리오임을 적었고, f27 은 9절에서 '연계 대상'으로 짧게 다루며 로컬 회피 책임을 명시한 문구를 찾지 못했음을 적었다.",
+      "f16 — 4·7절에서 RELEASE·COORDINATED_REPLANNING·BLOCKED·SPEED_LIMIT 는 윤곽 기반 구역, DIRECTED/BIDIRECTED 는 운동 중심 기반 구역으로 구분해 썼다.",
+      "f25 — 10절에서 27. AI·학습·적응과 모델 운영을 연결하고 학습 기반 경로 계획을 이 영역과 양쪽에 연결한다고 적었다.",
+      "f30 — 10절에서 경로망 설계 평가용 MAPF 시뮬레이션을 22. 시뮬레이션·예측용 디지털 트윈으로만 연결하고 8. 실시간 세계 상태·데이터 일관성과 구분한다고 명시했다.",
+      "11절 — oq-032 를 열림으로 두고 f11 을 부분 근거로 연결했으며, 새 열린 질문 3건을 11절과 open_question_updates(new, 열림)에 등록했다.",
+      "직접 인용 제한 — VDA 5050(ref-031)·Open-RMF(ref-004·ref-079) 내용은 모두 재서술했고 출처 원문 직접 인용은 쓰지 않았다.",
+      "용어 후보 5건 — 충돌 기반 탐색·안전 구간 경로 계획·우선순위 상속·되돌림·행동 의존 그래프·교착을 glossary_updates 에 신규로 내고, PIBT 정의에서 '빠르게' 같은 성능 표현을 뺐다.",
+      "분량 초과 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 본문 9,348자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,617자",
+      "형식 검증 수정 — docs/topics/2026/2026-09-25-area15-s7.md 표의 출처 칸에서 아직 참고문헌 페이지가 없는 ref-839·ref-833 링크(../../references/ref-839.md, ../../references/ref-833.md)를 링크 없는 텍스트 id 로 바꿨다. 각주 정의·주장·태그는 바꾸지 않았다.",
+      "2차: SIPP 가정 한계 문장 드리프트 — docs/topics/2026/2026-09-25-area15-s6.md 3절 '최적 탐색: CBS와 SIPP' 소제목 아래 '이 가정은 실제 로봇의 가감속과 다르다는 점이 한계다. [사실][^ref-838]'를 '이 위키는 즉시 출발·정지 가정이 실제 로봇의 운동 제약과 다르다고 본다. [추정][^ref-837][^ref-838]'로 고쳐 썼다. 그 밖의 부분은 바꾸지 않았다."
+    ]
+  },
+  "ttft_ms": 7055,
+  "type": "result",
+  "duration_ms": 287529,
+  "uuid": "7cd4b64c-f1d0-4016-94aa-c955977b13a5",
+  "ttft_stream_ms": 3409,
+  "time_to_request_ms": 129,
+  "first_content_frame_ms": 3409,
+  "time_to_request_from_spawn_ms": 13661088,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790309514212.075,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 289.3
+}

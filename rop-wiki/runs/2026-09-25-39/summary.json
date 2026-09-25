@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-39",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 15,
+    "area_name": "15. 다중 로봇 경로·교통 관리 — MAPF",
+    "category": "D. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 23,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1904.1,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 15. 다중 로봇 경로·교통 관리 — MAPF | 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 | run 2026-09-25-39",
+  "notes": [
+    "참고문헌 생성: references/ref-186.md",
+    "참고문헌 생성: references/ref-187.md",
+    "참고문헌 생성: references/ref-188.md",
+    "참고문헌 생성: references/ref-189.md",
+    "참고문헌 생성: references/ref-190.md",
+    "참고문헌 생성: references/ref-191.md",
+    "참고문헌 생성: references/ref-192.md",
+    "참고문헌 생성: references/ref-193.md",
+    "참고문헌 생성: references/ref-194.md",
+    "참고문헌 생성: references/ref-195.md",
+    "참고문헌 생성: references/ref-196.md",
+    "참고문헌 생성: references/ref-197.md",
+    "참고문헌 생성: references/ref-199.md",
+    "용어집 생성: glossary/conflict-based-search.md",
+    "용어집 생성: glossary/safe-interval-path-planning.md",
+    "용어집 생성: glossary/priority-inheritance-with-backtracking.md",
+    "용어집 생성: glossary/action-dependency-graph.md",
+    "용어집 생성: glossary/deadlock.md",
+    "세부영역 반영 제안 2건을 반영으로 표시했다(15. 다중 로봇 경로·교통 관리 — MAPF, 실행 2026-09-25-39)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 5,
+    "references": 13,
+    "standards": 3,
+    "open_questions": 3,
+    "flow_cells": 4,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 13:18:20 KST",
+  "usage": {
+    "input_tokens": 56,
+    "cache_creation_input_tokens": 1404730,
+    "cache_read_input_tokens": 3953771,
+    "output_tokens": 191446,
+    "cost_usd": 16.5695,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.9877,
+        "output_tokens": 33232,
+        "cache_read_input_tokens": 2664552,
+        "cache_creation_input_tokens": 160296
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.3687,
+        "output_tokens": 14945,
+        "cache_read_input_tokens": 927567,
+        "cache_creation_input_tokens": 216059
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 7.8583,
+        "output_tokens": 133000,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 645056
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 3.2701,
+        "output_tokens": 9277,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 381760
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 5,
+  "cross_checked_findings": 0
+}
