@@ -32,6 +32,21 @@ version: 1
 | 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |
 | 2026-09-25-73 | 생성 | [docs/references/ref-712.md](references/ref-712.md) | 참고문헌 ref-712 등록: ros-mcp-server — Connect AI models like Claude & GPT with ro… |
+| 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-01 답함(보정 여섯 묶음·용도별 지도·ROP 경계, 추정), 후속 질문 2건(q4-09·q4-10), 완료 조건 첫 행 충족(2차 확인)·둘째 행 미충족, 상태 줄 진행 중; 2차: 시나리오 제약 칸 비용 지도 필터 문장을 Nav2 로 한정 |
+| 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v0.9 → v1.0: 층별 지도 교환 형식(후보)의 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터' 추가(f1); 거부된 '로봇 지도 좌표계 변환'은 6절 정렬 정보 질문 근거 보강(f5); 6절에 보정 항목·용도별 지도·운영 규칙 마스크 질문 추가 |
+| 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 상태 줄 갱신(현재 단계 단계 4, 마지막 트랙 실행 2026-09-25), 6절 산출물 링크에 스키마 초안 v1.0·q4-01 답·후속 질문 2건 반영 |
+| 2026-09-25-72 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 끝에 '내비게이션 지도 변환 보정' 소절 추가(q4-01, 추정), 도면–현장 정합 절차 미조사 명시, 새 각주 5건 정의 |
+| 2026-09-25-72 | 요약 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | 건축 도면 자동 인식 단계 4: q4-01 답함(내비게이션 지도 변환 보정 여섯 묶음·용도별 지도·ROP 경계, 추정), 공간 그래프 스키마 초안 v1.0, 후속 질문 2건 |
+| 2026-09-25-72 | 생성 | [docs/references/ref-644.md](references/ref-644.md) | 참고문헌 ref-644 등록: nav2_costmap_2d — README |
+| 2026-09-25-72 | 생성 | [docs/references/ref-645.md](references/ref-645.md) | 참고문헌 ref-645 등록: Navigating with Keepout Zones — Nav2 documentation |
+| 2026-09-25-72 | 생성 | [docs/references/ref-646.md](references/ref-646.md) | 참고문헌 ref-646 등록: BIM-to-Robot Mapping: Constructing IFC-Referenced Occupancy… |
+| 2026-09-25-72 | 생성 | [docs/references/ref-647.md](references/ref-647.md) | 참고문헌 ref-647 등록: Improving autonomous robotic navigation using IFC files |
+| 2026-09-25-72 | 생성 | [docs/references/ref-648.md](references/ref-648.md) | 참고문헌 ref-648 등록: LiDAR-Based Glass Detection for Improved Occupancy Grid Mapp… |
+| 2026-09-25-72 | 생성 | [docs/glossary/costmap.md](glossary/costmap.md) | 용어집 항목 비용 지도 |
+| 2026-09-25-72 | 생성 | [docs/glossary/filter-mask.md](glossary/filter-mask.md) | 용어집 항목 필터 마스크 |
+| 2026-09-25-72 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-02 답함(3절 {#q3-02} 소제목 신설: 여섯 단계 입력·출력, 결정적 구성 요소·검증 게이트·도구 노출 경계, 피킹 시나리오), 2·4·5·6·7·8·9절 갱신, 후속 질문 3건. 2차 수정: 절 밖 상태 줄을 고치려고 전체 페이지로 보냄 — 상태 줄 '답한 질문: 2건', 6절 전환 줄 질문 범위 q3-03~q3-12 |
 | 2026-09-25-71 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '처리 흐름과 핵심 구성 요소' 소절 신설(q3-02, 실행 2026-09-25-71), 절 안내 문장 갱신, 5절 각주 정의에 새 출처 추가·원문 미열람 표기 보완(2차 수정 대상 아님, 변경 없음) |
 | 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.6 → v0.7: 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교' 추가(f1, 상태 확정 유지), 1절 버전 설명 추가, 6절에 거부된 제안(실행 가능성 판정·검증 기록) 질문 2건 추가. 2차 수정: 절 밖 H1 을 고치려고 전체 페이지로 보냄 — H1 '(v0.7)' |
