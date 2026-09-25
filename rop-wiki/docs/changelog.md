@@ -28,6 +28,31 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 질문 표를 백로그 문구와 맞춤, 후속 질문 3건, 완료 조건 미충족·전환 아니오, 상태 줄 진행 중. 2차 수정: OWASP 발행일 표기 정정, 2절 표 백로그 일치(상태 줄이 H2 밖이라 전체 content 로 보냄) |
+| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절에 사용자 확인 질문의 q4-01 답 링크와 속성 후보를 질문으로 덧붙임(개념 추가 미반영, 초안 v0.8 유지). 2차 수정: MCP 풀어쓰기·용어집 링크, 사람 참여 루프 용어집 링크 |
+| 2026-09-25-79 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '오해석 방지 확인 절차' 소절 추가(q4-01, 실행 2026-09-25-79), 머리 문장의 '확인 절차 미조사' 서술을 실행 기준과 함께 갱신, 명령 권한·제한 운영 기준 미조사 명시. 2차 수정: MCP 첫 등장 풀어쓰기·용어집 링크 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크 절 갱신: 실행 2026-09-25-79 에서 초안 v0.8 유지·개념 '사용자 확인' 제안은 6절 질문, 아이디어 2 5절에 '오해석 방지 확인 절차' 소절(q4-01) 추가. 상태 줄은 바꾸지 않음(단계 3 완료·전환 미승인) |
+| 2026-09-25-79 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 후속 질문 3건, 초안 v0.8 유지(개념 '사용자 확인'은 6절 질문), 아이디어 2 5절에 오해석 방지 확인 절차 소절 추가, 트랙 개요 산출물 현황 갱신 |
+| 2026-09-25-79 | 생성 | [docs/references/ref-695.md](references/ref-695.md) | 참고문헌 ref-695 등록: LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-696.md](references/ref-696.md) | 참고문헌 ref-696 등록: Specification 2025-06-18 — Server Features: Tools (docs/spec… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-697.md](references/ref-697.md) | 참고문헌 ref-697 등록: Human-in-the-loop — LangChain docs (src/oss/langchain/human-… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-698.md](references/ref-698.md) | 참고문헌 ref-698 등록: Plug in the Safety Chip: Enforcing Constraints for LLM-drive… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-699.md](references/ref-699.md) | 참고문헌 ref-699 등록: ltl_safety — README (Plug in the Safety Chip) |
+| 2026-09-25-79 | 생성 | [docs/references/ref-700.md](references/ref-700.md) | 참고문헌 ref-700 등록: Safety Guardrails for LLM-Enabled Robots |
+| 2026-09-25-79 | 생성 | [docs/references/ref-701.md](references/ref-701.md) | 참고문헌 ref-701 등록: RoboGuard — Safety guardrails for LLM-enabled robots (GitHub… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-702.md](references/ref-702.md) | 참고문헌 ref-702 등록: SafePlan: Leveraging Formal Logic and Chain-of-Thought Reaso… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-703.md](references/ref-703.md) | 참고문헌 ref-703 등록: CHI2025_Plan-then-Execute_LLMAgent — README |
+| 2026-09-25-79 | 생성 | [docs/references/ref-713.md](references/ref-713.md) | 참고문헌 ref-713 등록: Plan-Then-Execute: An Empirical Study of User Trust and Team… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-714.md](references/ref-714.md) | 참고문헌 ref-714 등록: Comparing Human Oversight Strategies for Computer-Use Agents |
+| 2026-09-25-79 | 생성 | [docs/references/ref-715.md](references/ref-715.md) | 참고문헌 ref-715 등록: Article 14: Human Oversight \| EU Artificial Intelligence Act |
+| 2026-09-25-79 | 생성 | [docs/references/ref-716.md](references/ref-716.md) | 참고문헌 ref-716 등록: Automation Bias in the AI Act: On the Legal Implications of… |
+| 2026-09-25-79 | 생성 | [docs/references/ref-717.md](references/ref-717.md) | 참고문헌 ref-717 등록: A comparison of confirmation styles for error handling in a… |
+| 2026-09-25-79 | 생성 | [docs/glossary/excessive-agency.md](glossary/excessive-agency.md) | 용어집 항목 과도한 에이전시 |
+| 2026-09-25-79 | 생성 | [docs/glossary/automation-bias.md](glossary/automation-bias.md) | 용어집 항목 자동화 편향 |
+| 2026-09-25-79 | 생성 | [docs/glossary/explicit-implicit-confirmation.md](glossary/explicit-implicit-confirmation.md) | 용어집 항목 명시적 확인·암시적 확인 |
+| 2026-09-25-79 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-04 답함(3절 {#q4-04} 신설: 지도 판 식별·배포 규칙은 사실, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 추정), 후속 질문 q4-15·q5-08, q4-14 폐기로 2절 표에서 제외, 상태 줄 답한 질문 4건, 6절 막힌 질문에 q4-15 추가, 7절 목록에 23·25 추가, 4·5·8·9절 갱신. 머리 줄 수정 때문에 전체 페이지로 보냄 |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.1 → v1.2: 평면도 '버전' 속성에 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모 추가(f7·f9). 층별 지도 '판 식별자(후보)'는 반영하지 않고 6절 지도 버전 항목 근거 보강, 정합 절차 초안에 판 교체 시 재검증 단계 추가. H1 버전 표기를 (v1.2)로 맞추려고 전체 페이지로 보냄 |
 | 2026-09-25-78 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '도면·지도 판 관리와 재검증' 소절 신설(q4-04 요약, 정합 절차 초안 7단계 추가, 종합은 추정) |

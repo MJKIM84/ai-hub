@@ -2574,6 +2574,50 @@
       "ref_id": "ref-689",
       "run_id": "2026-09-25-78",
       "date": "2026-09-25"
+    },
+    {
+      "name": "OWASP Top 10 for LLM Applications 2025 (LLM06 Excessive Agency)",
+      "org": "OWASP",
+      "kind": "프레임워크",
+      "related_areas": [
+        27,
+        26,
+        18
+      ],
+      "url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md",
+      "summary": "LLM 애플리케이션 보안 위험 목록. 과도한 에이전시 항목은 과도한 기능·권한·자율성을 원인으로 들고 영향이 큰 행동 전 사람 승인·최소 권한·완전한 중재를 대응으로 제시한다.",
+      "ref_id": "ref-695",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Model Context Protocol 명세 2025-06-18 (Server Features: Tools)",
+      "org": "Model Context Protocol (modelcontextprotocol GitHub)",
+      "kind": "표준",
+      "related_areas": [
+        27,
+        26,
+        18
+      ],
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx",
+      "summary": "LLM 이 도구를 호출하는 프로토콜의 도구 명세. 호출을 거부할 수 있는 사람 참여, 민감 작업 확인, 호출 전 입력 표시, 접근 통제·감사 기록을 권고한다.",
+      "ref_id": "ref-696",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "LangChain Human-in-the-loop 미들웨어",
+      "org": "LangChain",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+      "summary": "설정한 도구 호출에서 에이전트 실행을 멈추고 사람이 승인·인자 수정·거부·직접 응답으로 결정하게 하는 미들웨어. 체크포인터로 중단 상태를 보존한다.",
+      "ref_id": "ref-697",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
     }
   ]
 }

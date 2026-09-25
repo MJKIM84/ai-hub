@@ -1,0 +1,44 @@
+{
+  "run_id": "2026-09-25-79",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "단계 4 페이지 2절 표의 q4-09·q4-10 은 백로그에 두 번 등록된 기존 질문이며, 표는 백로그 문구 그대로 두고 2절 도입 문장에 중복 사실을 밝혔다. 백로그 정리는 별도 요청 사항이다(q3-09·q3-10, q3-12·q3-13, q5-05·q5-06, q1-05·q1-06 도 같다).",
+      "업무 분해·배정 설계 초안 6절의 새 항목은 기존 '사용자 확인을 별도 개념으로 둘지' 질문과 '검증 기록' 질문에 q4-01 답을 연결한 것이다. 개념을 추가하지 않아 충돌은 없다(v0.8 유지)."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(web_fetch_available: false, fetch_mode mirror_only)에서 검증됐다. 확인 24건, 미확인 1건(f13), 교차 확인 1건(f14). 강등: f13 사실 → 추정(주장 내용을 검색 결과로 확인하지 못함), f14 사실 → 추정(EU 공식 관보 원문이 아니라 제3자 게재본에 근거함). 원문 미열람 출처: ref-698, ref-700, ref-702, ref-713, ref-714, ref-715, ref-716, ref-620, ref-717, ref-350, ref-356, ref-417, ref-418, ref-656, ref-711. 주의: q4-01 의 답인 다섯 겹 확인 절차, 확인 시점, 사람 확인 한정, 차등 확인(f19~f24)은 이 위키의 종합([추정])이다. 근거 조건은 가정·실험실 로봇, 일상 비서·컴퓨터 사용 에이전트, 로봇 관제 규격이다. 물류 창고 로봇에 채팅으로 준 지시의 확인 절차를 평가한 연구와 국내 사례는 찾지 못했다. RoboGuard 수치는 초록 기준 '92% → 2.5% 미만'(저자 보고값)으로 반영됐다. 이번 실행은 단계 3 완료가 승인되지 않은 상태에서 CLI 지정으로 단계 4 질문을 다뤘고, 트랙 개요의 현재 단계는 단계 3 으로 유지했다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 개념 '사용자 확인 (Confirmation)'(f2·f3·f16·f19). 이 개념은 초안 6절 질문으로 반영됐고 초안은 v0.8 을 유지한다. 단계 완료 조건: 미충족(부족: 명령 권한 q4-03, 제한 운영 기준 q4-04 미조사). 단계 전환: 미승인(막힌 질문 q4-02~q4-14 열림, q4-09·q4-10 중복 정리 필요). / 2차 통과. 재검증 결과 직전 2차 지시 5건이 모두 이행됐다: OWASP 발행일 표기 정정, 아이디어 2 5절과 초안 6절의 MCP 풀어쓰기·용어집 링크, 트랙 개요 6절 갱신(현재 단계 줄 유지), 단계 4 페이지 2절 표의 백로그 일치, 트랙 로그의 번호+이름 호칭. 드리프트 없음. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고: 6절 첫 행(실행 전 검증 단계)은 이번 실행에서 초안 6절과 아이디어 5절에 반영됐으므로 다음 실행에서 충족 여부를 다시 판정한다. 6절 아래 전환 줄의 열린 질문 범위(q4-02~q4-12)에 이번 새 질문 q4-13·q4-14 도 더해 읽는다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": false,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
