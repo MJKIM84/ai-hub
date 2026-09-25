@@ -1,0 +1,44 @@
+# 실행 로그 2026-09-25-77
+
+- 2026-09-25 18:06:55 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-77 resume=없음 step=전체 run_type=track area=자동 track=nl-task-chatbot)
+- 2026-09-25 18:06:55 KST [준비] 웹 도구 점검 생략(--skip-probe): 기존 probe.json 사용
+- 2026-09-25 18:06:56 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: false
+- 2026-09-25 18:06:56 KST [준비] 부분 열람 모드: 일반 웹 페이지 열람은 차단, GitHub 공식 저장소 원문(raw.githubusercontent.com)과 inbox 원문만 열람 — 출처별 원문 열람 표시·신뢰도 상한 적용
+- 2026-09-25 18:06:56 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
+- 2026-09-25 18:06:56 KST [대상 선정] 결과: 성공 · 소요 0초 · track · 13. 작업 배정 — MRTA
+- 2026-09-25 18:06:57 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-77/prompts/research.md (530,281자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 18:14:11 KST [리서치 에이전트] 호출 완료(시도 1): 턴 31 · 7분 14초 · 비용 $6.4642 · subtype success
+- 2026-09-25 18:14:11 KST [리서치 에이전트] 저장: runs/2026-09-25-77/research.json
+- 2026-09-25 18:14:12 KST [형식 검증] 리서치 산출물 검사: 출처 18건 중 원문 열람 10건 · 신뢰도 상한 적용 1건
+- 2026-09-25 18:14:12 KST [형식 검증]   - 출처 ref-031: data/source_texts 의 원문 텍스트(data/source_texts/ref-031.txt)가 있어 fetched true(github_raw)(에이전트 표시는 인정하지 않음 — inbox 열람 표시가 있으나 data/source_texts 에 원문 텍스트가 없다)
+- 2026-09-25 18:14:12 KST [리서치] 예산 점검: 예산 안
+- 2026-09-25 18:14:12 KST [리서치] 결과: 성공 · 소요 7분 16초 · 예산 안
+- 2026-09-25 18:14:12 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-77/prompts/verification1.md (578,203자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 18:17:36 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 20 · 3분 24초 · 비용 $4.2509 · subtype success
+- 2026-09-25 18:17:36 KST [내용 검증 에이전트] 저장: runs/2026-09-25-77/verification.json
+- 2026-09-25 18:17:36 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-25 18:17:36 KST [1차 검증] 결과: 조건부 승인 · 소요 3분 24초 · 신뢰도 low
+- 2026-09-25 18:17:37 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-77/prompts/storyteller.md (489,995자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 18:26:39 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 9분 2초 · 비용 $4.0680 · subtype success
+- 2026-09-25 18:26:39 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-77/pages.json
+- 2026-09-25 18:26:39 KST [스토리텔러] 결과: 성공 · 소요 9분 2초 · 페이지 4개
+- 2026-09-25 18:31:06 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-77 (트랙 실행)
+- 2026-09-25 18:31:06 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 18:31:06 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 18:31:07 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-713→ref-126, ref-714→ref-127, ref-716→ref-537, ref-721→ref-373
+- 2026-09-25 18:31:07 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 4개, 반영 전 사전 검사 포함)
+- 2026-09-25 18:31:08 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-77/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 18:31:09 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 18:31:10 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 18:31:10 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 2건 (파일 1101개 검사)
+- tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md: 깨진 링크 ../../glossary/event-driven-rescheduling.md
+- tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md: 깨진 링크 ../../glossary/frozen-horizon.md
+
+- 2026-09-25 18:31:11 KST [형식 검증] 원고 형식 검사: 오류 4건 · 패치 적용 4건
+- 2026-09-25 18:31:11 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 18:31:11 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-25 18:31:11 KST [형식 검증]   - 퍼블리셔 사전 검사: - tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md: 깨진 링크 ../../glossary/event-driven-rescheduling.md
+- 2026-09-25 18:31:11 KST [형식 검증]   - 퍼블리셔 사전 검사: - tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md: 깨진 링크 ../../glossary/frozen-horizon.md
+- 2026-09-25 18:31:11 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-25-77/format_check.md)
+- 2026-09-25 18:31:11 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-77/prompts/storyteller-formatfix1.md (747,483자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
