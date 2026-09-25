@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-09-25-100",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 5,
+    "question_ids": [
+      "q5-03"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": null,
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 3,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 9,
+    "sources": 3
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2242.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 5 | q5-03 답함(가설 1~3 전 가설 미판정, 문헌 근거 수준 가설 1·3 부분 지지·가설 2 근거 부족), 실험 계획 E5-01~E5-03 제안, 새 질문 3건(실제 실행 id 2026-09-25-100) | run 2026-09-25-00",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 21:55:26 KST",
+  "usage": {
+    "input_tokens": 42,
+    "cache_creation_input_tokens": 1979880,
+    "cache_read_input_tokens": 4244008,
+    "output_tokens": 307143,
+    "cost_usd": 23.3027,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.4273,
+        "output_tokens": 46967,
+        "cache_read_input_tokens": 2675214,
+        "cache_creation_input_tokens": 339403
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.3328,
+        "output_tokens": 18613,
+        "cache_read_input_tokens": 858837,
+        "cache_creation_input_tokens": 325351
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 15.4579,
+        "output_tokens": 240571,
+        "cache_read_input_tokens": 689673,
+        "cache_creation_input_tokens": 1313567
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": false,
+    "errors": [
+      "퍼블리셔 사전 검사: [publish] 실패: 1단계 스키마 밖 검사 실패:",
+      "퍼블리셔 사전 검사: - verification.json: run_id '2026-09-25-00' 가 '2026-09-25-100' 와 다르다",
+      "퍼블리셔 사전 검사: - pages.json: run_id '2026-09-25-00' 가 '2026-09-25-100' 와 다르다",
+      "퍼블리셔 사전 검사: - research.json: run_id '2026-09-25-00' 가 '2026-09-25-100' 와 다르다"
+    ],
+    "patched": [
+      "docs/tracks/nl-task-chatbot/index.md (3개 절)",
+      "docs/tracks/nl-task-chatbot/experiments.md (1개 절)",
+      "docs/ideas/nl-task-chatbot.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 1,
+  "cross_checked_findings": 0,
+  "park_reason": "형식 검증 실패가 형식 수정 재작성 2회 뒤에도 남음(runs/2026-09-25-100/format_check.md)"
+}
