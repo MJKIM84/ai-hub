@@ -159,6 +159,11 @@ nav:
       - 21. 온보딩·설정·현장 시운전 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area21-s7.md
       - 21. 온보딩·설정·현장 시운전 — 대표 접근법과 기술: topics/2026/2026-09-25-area21-s6.md
       - 21. 온보딩·설정·현장 시운전 — 핵심 개념과 용어: topics/2026/2026-09-25-area21-s4.md
+      - 20. 예외 복구·재계획·업무 연속성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area20-s7.md
+      - 20. 예외 복구·재계획·업무 연속성 — 대표 접근법과 기술: topics/2026/2026-09-25-area20-s6.md
+      - 20. 예외 복구·재계획·업무 연속성 — 핵심 개념과 용어: topics/2026/2026-09-25-area20-s4.md
+      - 20. 예외 복구·재계획·업무 연속성 — 열린 질문: topics/2026/2026-09-25-area20-s11.md
+      - 20. 예외 복구·재계획·업무 연속성 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area20-s10.md
       - 19. 모니터링·이상 탐지·원인 분석 — 대표 연구와 자료: topics/2026/2026-09-25-area19-s8.md
       - 19. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area19-s7.md
       - 19. 모니터링·이상 탐지·원인 분석 — 대표 접근법과 기술: topics/2026/2026-09-25-area19-s6.md
@@ -308,6 +313,7 @@ nav:
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
+    - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
@@ -327,6 +333,7 @@ nav:
     - 신원 보고 (Identity Report (MassRobotics identityReport)): glossary/identity-report.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
+    - 업무 연속성 관리 시스템 (Business Continuity Management System (BCMS)): glossary/business-continuity-management-system.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
@@ -354,6 +361,7 @@ nav:
     - 정보 전달 명세 (Information Delivery Specification (IDS)): glossary/information-delivery-specification.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
     - 주문 배치 (Order Batching): glossary/order-batching.md
+    - 주문 취소 즉시 동작 (cancelOrder (VDA 5050 instant action)): glossary/vda-5050-cancel-order.md
     - 지도 정합 (Map Alignment): glossary/map-alignment.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
@@ -902,6 +910,17 @@ nav:
     - ref-480 — "대형 물류센터 집품 작업, 로봇 6대로 효율화": references/ref-480.md
     - ref-481 — Virtual commissioning with Siemens solutions reduces launch time by three weeks: references/ref-481.md
     - ref-482 — rmf_site — README (RMF Site Editor): references/ref-482.md
+    - ref-483 — A Real-Time Rescheduling Algorithm for Multi-robot Plan Execution: references/ref-483.md
+    - ? 'ref-484 — Multi-Robot Preemptive Task Scheduling with Fault Recovery: A Novel Approach to Automatic Logistics of Smart Factories'
+      : references/ref-484.md
+    - ref-485 — Multiagent Rollout with Reshuffling for Warehouse Robots Path Planning: references/ref-485.md
+    - ref-486 — ISO 22301:2019 - Security and resilience — Business continuity management systems — Requirements: references/ref-486.md
+    - ref-487 — 재해경감 우수기업 인증제도: references/ref-487.md
+    - ref-488 — 중소규모 사업장 기능연속성계획(BCP) 수립 가이드 안내: references/ref-488.md
+    - ref-489 — Compensating Transaction pattern: references/ref-489.md
+    - ref-490 — FAQ - Element Logic (AutoStore): references/ref-490.md
+    - ref-491 — The benefits of using AutoStore for high-throughput retail fulfillment: references/ref-491.md
+    - ref-492 — EPC Information Services (EPCIS) Standard 1.2: references/ref-492.md
     - 'ref-497 — Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review': references/ref-497.md
     - ref-498 — 유진로봇, 지능형 제조 물류시스템 공개: references/ref-498.md
     - ref-499 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg: references/ref-499.md

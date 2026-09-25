@@ -177,7 +177,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "종합 추정으로 [추정]·low 적정. 근거 출처 가운데 ref-573·ref-581 은 원문 미열람인데 finding 은 source_unopened: false 로 적혀 있다(브리프 표시 불일치, 페이지 서술에는 영향 없음). 이 흐름을 한 절차로 정한 출처는 없다고 밝힌다."
+      "note": "종합 추정으로 [추정]·low 적정. 근거 출처 가운데 ref-484·ref-492 은 원문 미열람인데 finding 은 source_unopened: false 로 적혀 있다(브리프 표시 불일치, 페이지 서술에는 영향 없음). 이 흐름을 한 절차로 정한 출처는 없다고 밝힌다."
     },
     {
       "finding_id": "f23",
@@ -240,12 +240,12 @@
     "f15·f16·f17: 기업 BCP·BCMS 체계는 ROP 직접 범위가 아니라 현장 제한 운영·수동 전환 계획의 참조 틀(연계 대상)로 짧게 서술하고, f17 은 감염병 대응 권고 가이드임을 밝힌다.",
     "f19·f20: 본문에서 [추정] 뒤에 '벤더 주장'을 병기하고, AutoStore 자체 제어기(XHandler)·통합업체 소프트웨어(SynQ)의 기능으로 서술하며 ROP 기능처럼 쓰지 않는다 — 두 출처는 서로 독립이 아니다.",
     "f18: 보상 트랜잭션 패턴을 물리 작업·재고 되돌림에 적용하는 문장은 [추정]으로 쓴다 — 출처는 소프트웨어 설계 패턴이다.",
-    "ref-574: 기관 칸을 'Emanuelsson, W., Penacho Riveiros, A., Li, Y., Johansson, K. H., & Mårtensson, J. (KTH)'로 고친다 — 검색 결과로 저자를 확인했다.",
-    "ref-580: URL 을 검색 결과로 확인한 https://www.swisslog.com/en-us/blog/2025/07/benefits-of-autostore-htp 로 고친다 — 브리프 URL 경로가 확인되지 않았다.",
-    "원문을 열지 못한 출처(ref-188, ref-572, ref-573, ref-574, ref-575, ref-576, ref-577, ref-579, ref-580, ref-581, ref-374)는 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. 발행일이 없는 ref-576·ref-579·ref-374 는 각주 발행일 자리에 '미확인'을 쓴다.",
+    "ref-485: 기관 칸을 'Emanuelsson, W., Penacho Riveiros, A., Li, Y., Johansson, K. H., & Mårtensson, J. (KTH)'로 고친다 — 검색 결과로 저자를 확인했다.",
+    "ref-491: URL 을 검색 결과로 확인한 https://www.swisslog.com/en-us/blog/2025/07/benefits-of-autostore-htp 로 고친다 — 브리프 URL 경로가 확인되지 않았다.",
+    "원문을 열지 못한 출처(ref-188, ref-483, ref-484, ref-485, ref-486, ref-487, ref-488, ref-490, ref-491, ref-492, ref-374)는 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. 발행일이 없는 ref-487·ref-490·ref-374 는 각주 발행일 자리에 '미확인'을 쓴다.",
     "11절 열린 질문: oq-003·oq-021·oq-038·oq-048 은 해결로 바꾸지 않는다 — f10·f18·f21·f24 는 부분 근거일 뿐 답이 아니다."
   ],
   "confidence": "medium",
-  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. raw.githubusercontent.com 으로 연 출처(ref-031, ref-051, ref-004, ref-251, ref-537, ref-578)는 원문과 대조했고, 나머지는 검색 결과 일치로 확인했다. 확인 24건, 미확인 0건, 교차 확인 0건(VDA 5050 명세와 스키마, Open-RMF 문서들은 각각 발행 주체가 같아 독립 교차 확인이 아니다). 강등: 없음(f19·f20 은 이미 [추정]·벤더 주장). 원문 미열람 출처: ref-188(브리프의 ref-188, 기존 id 로 통합), ref-572, ref-573, ref-574, ref-575, ref-576, ref-577, ref-579, ref-580, ref-581, ref-374. 수정 사항: f2 connectionState 에 HIBERNATING 누락, f6 사용자 개입 결정은 통로 이탈 오류 문맥, ISO 22301 개정 1:2024 와 EPCIS 1.2 기준 판 명시, ref-574 저자·ref-580 URL 정정. 브리프 표시 불일치: f22 는 원문 미열람 출처(ref-573·ref-581)에 기대는데 source_unopened: false 로 적혀 있다. 해결 인정한 열린 질문 없음(oq-003·oq-021·oq-038·oq-048 은 부분 근거만 있음). 정정 요청 없음. 검증 검색 10회(리서치 20회와 합쳐 30/30, 상한 도달). 주의: 핵심 주장은 표준·오픈소스 문서 각각 한 곳에 기댄다. 연구 수치(f12)는 저자 보고값이다. 운반 중 고장 처리 흐름(f22)과 ROP 경계(f23)는 이를 한 절차로 정한 출처가 없는 종합 추정이다.",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. raw.githubusercontent.com 으로 연 출처(ref-031, ref-051, ref-004, ref-251, ref-537, ref-489)는 원문과 대조했고, 나머지는 검색 결과 일치로 확인했다. 확인 24건, 미확인 0건, 교차 확인 0건(VDA 5050 명세와 스키마, Open-RMF 문서들은 각각 발행 주체가 같아 독립 교차 확인이 아니다). 강등: 없음(f19·f20 은 이미 [추정]·벤더 주장). 원문 미열람 출처: ref-188(브리프의 ref-188, 기존 id 로 통합), ref-483, ref-484, ref-485, ref-486, ref-487, ref-488, ref-490, ref-491, ref-492, ref-374. 수정 사항: f2 connectionState 에 HIBERNATING 누락, f6 사용자 개입 결정은 통로 이탈 오류 문맥, ISO 22301 개정 1:2024 와 EPCIS 1.2 기준 판 명시, ref-485 저자·ref-491 URL 정정. 브리프 표시 불일치: f22 는 원문 미열람 출처(ref-484·ref-492)에 기대는데 source_unopened: false 로 적혀 있다. 해결 인정한 열린 질문 없음(oq-003·oq-021·oq-038·oq-048 은 부분 근거만 있음). 정정 요청 없음. 검증 검색 10회(리서치 20회와 합쳐 30/30, 상한 도달). 주의: 핵심 주장은 표준·오픈소스 문서 각각 한 곳에 기댄다. 연구 수치(f12)는 저자 보고값이다. 운반 중 고장 처리 흐름(f22)과 ROP 경계(f23)는 이를 한 절차로 정한 출처가 없는 종합 추정이다.",
   "retry_reason": null
 }

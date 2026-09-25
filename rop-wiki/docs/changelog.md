@@ -68,6 +68,27 @@ version: 1
 | 2026-09-25-52 | 생성 | [docs/glossary/plug-and-produce.md](glossary/plug-and-produce.md) | 용어집 항목 플러그 앤 프로듀스 |
 | 2026-09-25-52 | 생성 | [docs/glossary/identity-report.md](glossary/identity-report.md) | 용어집 항목 신원 보고 |
 | 2026-09-25-52 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-50 | 갱신 | [docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 영역 추가. 2차 수정: 4·6·8절 정리 문장을 [의견]으로, 5절 완료·인계 칸 첫 문장을 [추정]으로 분리 |
+| 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s6.md](topics/2026/2026-09-25-area20-s6.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 세 줄 요약과 3절 첫 문장을 [의견]으로 바꿈 |
+| 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s4.md](topics/2026/2026-09-25-area20-s4.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 요약 문장을 [의견]으로, BCMS 항목에 ISO 22301:2019 기준(개정 1:2024 별도) 명시 |
+| 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s11.md](topics/2026/2026-09-25-area20-s11.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "11. 열린 질문" 절을 옮겼다(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s7.md](topics/2026/2026-09-25-area20-s7.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: ISO 22301 행의 '현장에는 참조 틀이다'를 [추정]으로 분리 |
+| 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s10.md](topics/2026/2026-09-25-area20-s10.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차 수정: 7. 화물·재고·자산 식별과 추적 항목에 EPCIS 1.2(2016-09-29 기준) 명시 |
+| 2026-09-25-50 | 요약 | [docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 20. 예외 복구·재계획·업무 연속성: 영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오), 2차 수정으로 정리 문장 태그 조정 |
+| 2026-09-25-50 | 생성 | [docs/references/ref-483.md](references/ref-483.md) | 참고문헌 ref-483 등록: A Real-Time Rescheduling Algorithm for Multi-robot Plan Exec… |
+| 2026-09-25-50 | 생성 | [docs/references/ref-484.md](references/ref-484.md) | 참고문헌 ref-484 등록: Multi-Robot Preemptive Task Scheduling with Fault Recovery:… |
+| 2026-09-25-50 | 생성 | [docs/references/ref-485.md](references/ref-485.md) | 참고문헌 ref-485 등록: Multiagent Rollout with Reshuffling for Warehouse Robots Pat… |
+| 2026-09-25-50 | 생성 | [docs/references/ref-486.md](references/ref-486.md) | 참고문헌 ref-486 등록: ISO 22301:2019 - Security and resilience — Business continui… |
+| 2026-09-25-50 | 생성 | [docs/references/ref-487.md](references/ref-487.md) | 참고문헌 ref-487 등록: 재해경감 우수기업 인증제도 |
+| 2026-09-25-50 | 생성 | [docs/references/ref-488.md](references/ref-488.md) | 참고문헌 ref-488 등록: 중소규모 사업장 기능연속성계획(BCP) 수립 가이드 안내 |
+| 2026-09-25-50 | 생성 | [docs/references/ref-489.md](references/ref-489.md) | 참고문헌 ref-489 등록: Compensating Transaction pattern |
+| 2026-09-25-50 | 생성 | [docs/references/ref-490.md](references/ref-490.md) | 참고문헌 ref-490 등록: FAQ - Element Logic (AutoStore) |
+| 2026-09-25-50 | 생성 | [docs/references/ref-491.md](references/ref-491.md) | 참고문헌 ref-491 등록: The benefits of using AutoStore for high-throughput retail f… |
+| 2026-09-25-50 | 생성 | [docs/references/ref-492.md](references/ref-492.md) | 참고문헌 ref-492 등록: EPC Information Services (EPCIS) Standard 1.2 |
+| 2026-09-25-50 | 생성 | [docs/glossary/compensating-transaction.md](glossary/compensating-transaction.md) | 용어집 항목 보상 트랜잭션 |
+| 2026-09-25-50 | 생성 | [docs/glossary/business-continuity-management-system.md](glossary/business-continuity-management-system.md) | 용어집 항목 업무 연속성 관리 시스템 |
+| 2026-09-25-50 | 생성 | [docs/glossary/vda-5050-cancel-order.md](glossary/vda-5050-cancel-order.md) | 용어집 항목 주문 취소 즉시 동작 |
+| 2026-09-25-50 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-09-25-48 | 갱신 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s4.md](topics/2026/2026-09-25-area19-s4.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "4. 핵심 개념과 용어" 절(1,482자)을 옮겼다 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s7.md](topics/2026/2026-09-25-area19-s7.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,413자)을 옮겼다 |
