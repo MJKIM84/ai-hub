@@ -20,6 +20,19 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-26-02 | 갱신 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-781·ref-782 추가, last_run 2026-09-26 |
+| 2026-09-26-02 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 |
+| 2026-09-26-02 | 생성 | [docs/topics/2026/2026-09-26-area04-s10.md](topics/2026/2026-09-26-area04-s10.md) | 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다(2차 재실행에서 변경 없음) |
+| 2026-09-26-02 | 생성 | [docs/topics/2026/2026-09-26-area25-s7.md](topics/2026/2026-09-26-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: ref-783 각주 정의 제목을 ISO 페이지 전체 제목으로 고침 |
+| 2026-09-26-02 | 요약 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리): ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 |
+| 2026-09-26-02 | 생성 | [docs/references/ref-781.md](references/ref-781.md) | 참고문헌 ref-781 등록: ISO/DIS 22400-2 - Automation systems and integration — Key p… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-782.md](references/ref-782.md) | 참고문헌 ref-782 등록: ISO 22400-2:2014/Amd 1:2017 - Automation systems and integra… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-783.md](references/ref-783.md) | 참고문헌 ref-783 등록: ISO/AWI 15066-1 - Collaborative Safety – Physical contact wi… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-784.md](references/ref-784.md) | 참고문헌 ref-784 등록: ISO/TS 15066:2016 - Robots and robotic devices — Collaborati… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-814.md](references/ref-814.md) | 참고문헌 ref-814 등록: KS B ISO 10218-2(2017 확인) 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 -… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-789.md](references/ref-789.md) | 참고문헌 ref-789 등록: ISO/CD 3691-4 - Industrial trucks — Safety requirements and… |
+| 2026-09-26-02 | 생성 | [docs/references/ref-790.md](references/ref-790.md) | 참고문헌 ref-790 등록: DIN EN ISO 12100 - 2025-01 (Draft standard) |
+| 2026-09-26-02 | 생성 | [docs/references/ref-791.md](references/ref-791.md) | 참고문헌 ref-791 등록: Machines Got Smarter, Now ISO 12100 has to Catch Up |
 | 2026-09-26-01 | 생성 | [docs/logs/weekly/2026-W39.md](logs/weekly/2026-W39.md) | 2026-W39 주간 정리 신규 작성(실행 90회 정리, 링크·출처 점검 3건, 참고문헌 중복 2묶음) |
 | 2026-09-26-01 | 갱신 | [docs/references/ref-637.md](references/ref-637.md) | 각주 형식 절에 퍼센트 인코딩 URL 을 적고 제명 변경 가능성을 [추정]·원문 미열람으로 병기, needs_update (등록 URL 교체는 pipeline 담당 요청) |
 | 2026-09-26-01 | 폐기 | [docs/references/ref-709.md](references/ref-709.md) | ref-315 와 같은 보도자료를 가리키는 중복 항목으로 deprecated 처리, 대체 페이지 ref-315(프런트매터 replaced_by 추가) |

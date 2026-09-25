@@ -21,6 +21,8 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-26 | [4. 성과·경제성·프로세스 개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [4. 성과·경제성·프로세스 개선](../categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | published | medium | — |
+| 2026-09-26 | [25. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [1. 주문·업무 시스템 연계 — 열린 질문](2026/2026-09-25-area01-s11.md) | [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | published | medium | — |
 | 2026-09-25 | [1. 주문·업무 시스템 연계 — 왜 중요한가](2026/2026-09-25-area01-s3.md) | [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | published | medium | — |
 | 2026-09-25 | [1. 주문·업무 시스템 연계 — 핵심 개념과 용어](2026/2026-09-25-area01-s4.md) | [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | published | medium | — |

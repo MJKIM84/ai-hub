@@ -1,0 +1,131 @@
+{
+  "run_id": "2026-09-26-02",
+  "date": "2026-09-26",
+  "run_type": "monthly_recheck",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": null
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 2,
+  "pages_updated": 2,
+  "new_sources": 15,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 20,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1309.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-26 | 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리) | ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 | run 2026-09-26-02",
+  "notes": [
+    "참고문헌 생성: references/ref-781.md",
+    "참고문헌 생성: references/ref-782.md",
+    "참고문헌 생성: references/ref-783.md",
+    "참고문헌 생성: references/ref-784.md",
+    "참고문헌 생성: references/ref-814.md",
+    "참고문헌 생성: references/ref-789.md",
+    "참고문헌 생성: references/ref-790.md",
+    "참고문헌 생성: references/ref-791.md"
+  ],
+  "counts": {
+    "create": 2,
+    "update": 2,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 8,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-26 00:52:53 KST",
+  "usage": {
+    "input_tokens": 46,
+    "cache_creation_input_tokens": 1695740,
+    "cache_read_input_tokens": 3906860,
+    "output_tokens": 128454,
+    "cost_usd": 17.5756,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.1634,
+        "output_tokens": 28354,
+        "cache_read_input_tokens": 2431420,
+        "cache_creation_input_tokens": 334725
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.6049,
+        "output_tokens": 24286,
+        "cache_read_input_tokens": 1113780,
+        "cache_creation_input_tokens": 214744
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 7.0676,
+        "output_tokens": 65587,
+        "cache_read_input_tokens": 189066,
+        "cache_creation_input_tokens": 714744
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 3.6593,
+        "output_tokens": 9466,
+        "cache_read_input_tokens": 152310,
+        "cache_creation_input_tokens": 429940
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0392,
+        "output_tokens": 205,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1292
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.006,
+        "output_tokens": 232,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.0352,
+        "output_tokens": 324,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 295
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 2,
+  "cross_checked_findings": 0
+}

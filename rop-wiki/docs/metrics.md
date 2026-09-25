@@ -22,13 +22,13 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
+| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
-| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
+| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 0 | 0 | 0 | 27 | 0 | 0 | 27 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -39,7 +39,7 @@ version: 1
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | published | medium | 2026-09-25 | 2 |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | 2026-09-25 | 2 |
 | [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | 2026-09-25 | 2 |
-| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | published | medium | 2026-09-25 | 2 |
+| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | published | medium | 2026-09-26 | 3 |
 
 **B. 공통 정보·환경 모델**
 
@@ -90,16 +90,16 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | published | medium | 2026-09-25 | 2 |
+| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
 | [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | published | medium | 2026-09-25 | 2 |
 | [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-09-25 | 2 |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | published | medium | 2026-09-25 | 2 |
 
 ### 검증 통과율
 
-- 실행 87회 중 최종 통과 87회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 87
-- 2차 검증 판정: 통과 87
+- 실행 88회 중 최종 통과 88회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 88
+- 2차 검증 판정: 통과 88
 
 ### 반려·보류 건수
 
@@ -112,13 +112,13 @@ version: 1
 |---|---|
 | 논문 | 344 |
 | 오픈소스 문서 | 186 |
-| 표준 | 142 |
+| 표준 | 149 |
 | 정부·연구기관 | 58 |
 | 벤더 문서 | 40 |
 | 기사 | 23 |
-| 업계 보고서 | 6 |
+| 업계 보고서 | 7 |
 
-신뢰도: medium 613건, high 125건, low 61건
+신뢰도: medium 620건, high 125건, low 62건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -131,6 +131,6 @@ version: 1
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 1 | published |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-25 | 1 | published |
 | [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-25 | 1 | published |
-| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-25 | 1 | published |
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-25 | 1 | published |
+| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 2026-09-25 | 1 | published |
 <!-- auto:metrics:end -->
