@@ -76,14 +76,29 @@
       "models": [
         "claude-opus-5-5"
       ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 222650,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 47009,
+      "cost_usd": 2.734,
+      "seconds": 314.5,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 34,
-    "cache_creation_input_tokens": 897737,
-    "cache_read_input_tokens": 2973657,
-    "output_tokens": 150683,
-    "cost_usd": 11.5685,
-    "calls": 5
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 1120387,
+    "cache_read_input_tokens": 3036677,
+    "output_tokens": 197692,
+    "cost_usd": 14.3025,
+    "calls": 6
   }
 }
