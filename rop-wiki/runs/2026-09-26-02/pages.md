@@ -4,10 +4,10 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md | draft | 월간 재검증: 7절 끝에 ISO 22400-2 판 상태(개정 1:2017, ISO/DIS 22400-2 FDIS 등록 승인, 새 판 미발행) 덧붙임, 분량 기준 초과로 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김 |
-| update | docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md | draft | 월간 재검증: 7절 끝에 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태 덧붙임 |
-| create | docs/topics/2026/2026-09-26-area04-s10.md | draft | 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다 |
-| create | docs/topics/2026/2026-09-26-area25-s7.md | draft | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,130자)을 옮겼다 |
+| update | docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md | draft | 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-811·ref-812 추가, last_run 2026-09-26 |
+| update | docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md | draft | 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 |
+| create | docs/topics/2026/2026-09-26-area04-s10.md | draft | 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다(2차 재실행에서 변경 없음) |
+| create | docs/topics/2026/2026-09-26-area25-s7.md | draft | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: ref-813 각주 정의 제목을 ISO 페이지 전체 제목으로 고침 |
 
 ## 변경 이력·색인
 
@@ -64,14 +64,15 @@
 - ISO 12100 개정판의 FDIS·발행 시점을 ISO 공식 페이지로 확인 필요(현재는 업계 블로그 전망뿐)
 - 산업 디지털 전환 및 인공지능 활용 촉진법의 시행일과 데이터 공동 생성 조문 번호·내용을 법령정보센터 원문으로 확인 필요(oq-122)
 - pipeline 담당 요청: 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크를 새 위치(docs/topics/YYYY/) 기준으로 다시 쓰지 않아 깨진 링크가 생겼다 — 이번에는 스토리텔러가 분리를 직접 수행해 우회함
+- pipeline 담당 요청: 자동 분리 뒤 reference_updates 의 cited_by 와 세부영역 프런트매터 sources·last_run 을 분리 결과에 맞춰 자동으로 갱신하는 처리가 필요하다(이번 2차 수정 지시 4건이 모두 이 불일치에서 나왔다)
 
 ## 이행한 수정 지시
 
-- 갱신 범위 — 4. 성과·경제성·프로세스 개선과 25. 안전·위험 관리 두 페이지만 patches 로 보냈고, 주제 페이지 2026-09-25-area04-s4·s7 과 표준 목록은 건드리지 않았으며 주제 페이지 반영은 changelog_entry 의 다음 실행 후보에 적었다.
-- append 로 보내기 — 두 페이지 모두 7. 관련 표준·프레임워크·오픈소스 절에 action append 로 '재검증(2026-09-26, 실행 2026-09-26-02)' 소제목과 판 상태만 덧붙였고 기존 문장은 지우지 않았다(10절 replace 는 분량 분리로 기존 문장을 주제 페이지로 옮긴 것이며 삭제가 아니다).
-- needs_update·deprecated 지시 없음 — 두 페이지 status 를 draft 로 두고 patches 에 frontmatter 상태 변경을 넣지 않았다.
+- 갱신 범위 — 4. 성과·경제성·프로세스 개선과 25. 안전·위험 관리 두 페이지만 갱신했고, 주제 페이지 2026-09-25-area04-s4·s7 과 표준 목록은 건드리지 않았으며 주제 페이지 반영은 changelog_entry 의 다음 실행 후보에 적었다.
+- append 로 보내기 — 두 페이지 모두 7. 관련 표준·프레임워크·오픈소스 절에 '재검증(2026-09-26, 실행 2026-09-26-02)' 소제목과 판 상태만 덧붙였고 기존 문장은 지우지 않았다(10절은 분량 분리로 기존 문장을 주제 페이지로 옮긴 것이며 삭제가 아니다).
+- needs_update·deprecated 지시 없음 — 두 페이지 status 를 draft 로 두었다.
 - f2·f3 — 4. 성과·경제성·프로세스 개선 7절 재검증 소제목 아래에 지시된 문장을 [사실][^ref-812][^ref-811][^ref-139]로 썼다.
-- f4 — 25. 안전·위험 관리 7절에서 'A3(미국 로봇 안전 표준 개발 단체) FAQ 설명에 따르면'으로 주체를 밝히고 용어집 '협동 적용(Collaborative Application)'을 링크해 [사실][^ref-471][^ref-560]로 썼다.
+- f4 — 'A3(미국 로봇 안전 표준 개발 단체) FAQ 설명에 따르면'으로 주체를 밝히고 용어집 '협동 적용(Collaborative Application)'을 링크해 [사실][^ref-471][^ref-560]로 썼다.
 - f5 — ISO/AWI 15066-1 제목을 'Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data'로 적고, ISO/TS 15066:2016 이 폐지되지 않은 2022 확인판이라는 점과 기준일 2026-09-26 을 함께 남겼다.
 - f6 — KS 구판 기준 가능성을 [추정]으로 두고 같은 문장에 '검색 범위 내 미발견이며 부재 확인이 아니다'를 밝혔다.
 - f7 — ISO 3691-4 차기판 단계를 '확인일 2026-09-26 ISO 프로젝트 페이지(ISO/CD 3691-4) 표기 기준'으로 한정해 썼다.
@@ -82,8 +83,12 @@
 - oq-122 — open_question_updates 에 해결 갱신을 넣지 않아 열림으로 유지했다.
 - 새 열린 질문 — 질문 끝에 '(관련 기존 질문: oq-070, oq-092)'를 덧붙이고 areas 를 [25, 18]로 등록했다.
 - 각주·참고문헌 — 이번 실행 인용 출처는 모두 원문 미열람이므로 reference_updates 각 항목에 source_unopened: true 를 넣었고, 신규 출처는 페이지에 실제 인용한 ref-811·ref-812·ref-813·ref-814·ref-819·ref-820·ref-821·ref-825 만 등록했다.
-- 형식 수정 — 자동 분리된 docs/topics/2026/2026-09-26-area04-s10.md 의 깨진 링크 7개(세부영역 페이지 상대 경로)를 ../../categories/<대분류 slug>/<파일>.md 로 고쳐 이 페이지를 content 로 직접 보내고, 4. 성과·경제성·프로세스 개선 10절은 같은 요약 문장과 주제 페이지 링크로 replace 해 코드가 다시 분리하지 않게 했다. 주장·태그·각주는 바꾸지 않았다.
+- 형식 수정 — 자동 분리된 docs/topics/2026/2026-09-26-area04-s10.md 의 깨진 링크 7개를 ../../categories/<대분류 slug>/<파일>.md 로 고쳐 이 페이지를 content 로 직접 보내고, 4. 성과·경제성·프로세스 개선 10절은 같은 요약 문장과 주제 페이지 링크로 바꿔 코드가 다시 분리하지 않게 했다. 주장·태그·각주는 바꾸지 않았다.
 - docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md: 각주 정의 2개를 참고문헌에서 만들어 붙임: ref-811, ref-812
 - docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md: 각주 정의 10개를 참고문헌에서 만들어 붙임: ref-211, ref-471, ref-555, ref-568, ref-813, ref-814, ref-819, ref-820, ref-821, ref-825
 - 분량 초과 자동 분리: 25. 안전·위험 관리 본문 4,734자 > 기준 4,000자 → 1개 절을 주제 페이지로 옮김, 남은 본문 3,740자
 - docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md: 참조가 없는 각주 정의를 뺐다
+- 2차: 4. 성과·경제성·프로세스 개선 프런트매터 sources 에 ref-811·ref-812 를 더해 7절 각주·13절 정의와 맞췄다.
+- 2차: docs/topics/2026/2026-09-26-area25-s7.md 의 [^ref-813] 각주 정의 제목을 'ISO/AWI 15066-1 - Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data'로 고쳤다.
+- 2차: 04-performance-economics-and-process-improvement.md 와 25-safety-and-risk-management.md 프런트매터 last_run 을 2026-09-26 으로 고쳤다(version 3 유지).
+- 2차: reference_updates 의 ref-471·ref-560·ref-813·ref-814·ref-825·ref-568·ref-211·ref-470·ref-819·ref-566·ref-820·ref-821·ref-555 cited_by 에 docs/topics/2026/2026-09-26-area25-s7.md 를 넣었고, 기존 인용이 있는 ref-470·ref-560·ref-566 만 25. 안전·위험 관리 세부영역 경로를 함께 두었다.
