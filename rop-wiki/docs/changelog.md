@@ -37,6 +37,22 @@ version: 1
 | 2026-09-25-38 | 생성 | [docs/references/ref-409.md](references/ref-409.md) | 참고문헌 ref-409 등록: 아파트 단지의 로봇 친화형 환경 인증 모델 개발 (지적과 국토정보 53(1), 83-105) |
 | 2026-09-25-38 | 생성 | [docs/glossary/enclave.md](glossary/enclave.md) | 용어집 항목 인클레이브 |
 | 2026-09-25-38 | 생성 | [docs/glossary/conformance-test.md](glossary/conformance-test.md) | 용어집 항목 적합성 시험 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-01 답함(2·3·4·5·6·8·9절 작성), 후속 질문 2건(q2-05·q2-06), q2-04 행 추가, 상태 줄 갱신. 2차 수정: 3절 첫 문장에 ref-411 추가, 2절 제기 근거 칸을 finding id 만으로 정리. seed 단계 페이지의 H1 아래 상태 줄을 바꿔야 해서 content 로 보냄 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.3 → v0.4: 상황 속성에 공간 노드 참조 추가(확정 유지), 업무 기한·우선순위 값 원천과 기한 필드 부재 메모(초안 → 확정), 작업 요구 수정 거부를 6절 질문으로. 2차 수정: 6절 화물 식별 단위 문장 각주를 ref-411·ref-031 로 교체하고 각주 정의·sources 추가. H1 버전 표기를 바꿔야 해서 content 로 보냄 |
+| 2026-09-25-37 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절에 '필요한 데이터 항목과 원천' 소절 작성(q2-01), 표준·형식 목록·평가 데이터는 미조사로 명시. 2차 수정: 첫 문장에 ref-411 추가, 팩트시트 항목을 [사실] 문장과 태그 없는 대리 원천 문장으로 분리 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.4, 아이디어 페이지 4절 작성 반영(현재 단계는 트랙 정의 current_stage 1 그대로라 상태 줄 변경 없음) |
+| 2026-09-25-37 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-01 답함(로봇 인터페이스·업무 시스템 필드와 정보 항목 원천 대응), 초안 v0.3 → v0.4, 후속 질문 2건 |
+| 2026-09-25-37 | 생성 | [docs/references/ref-410.md](references/ref-410.md) | 참고문헌 ref-410 등록: rmf_ros2 — rmf_fleet_adapter/schemas/task_description__deliv… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-411.md](references/ref-411.md) | 참고문헌 ref-411 등록: rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payl… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-412.md](references/ref-412.md) | 참고문헌 ref-412 등록: rmf_ros2 — rmf_fleet_adapter/schemas/place.json |
+| 2026-09-25-37 | 생성 | [docs/references/ref-413.md](references/ref-413.md) | 참고문헌 ref-413 등록: VDA5050/VDA5050 — json_schemas/order.schema |
+| 2026-09-25-37 | 생성 | [docs/references/ref-414.md](references/ref-414.md) | 참고문헌 ref-414 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphNode.… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-415.md](references/ref-415.md) | 참고문헌 ref-415 등록: A deep learning approach for understanding natural language… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-416.md](references/ref-416.md) | 참고문헌 ref-416 등록: SayPlan: Grounding Large Language Models using 3D Scene Grap… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-417.md](references/ref-417.md) | 참고문헌 ref-417 등록: Pre-Execution Safety Gate & Task Safety Contracts for LLM-Co… |
+| 2026-09-25-37 | 생성 | [docs/references/ref-418.md](references/ref-418.md) | 참고문헌 ref-418 등록: Mecalux integrates generative AI into Easy WMS |
+| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-08 답함(3절 {#q1-08} 신설), q1-09 부분 답 소제목 추가, 4·5·6·7·8·9절 갱신, 상태 줄 열린 질문 1건·답한 질문 8건, 후속 질문 2건(q4-13·q2-06) |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | MassRobotics 행에 화물 최대값 형식·보고 전용 구조·지원 작업·부착 장비 부재 보강, IDTA 02047 행에 특수 능력·ECLASS 식별자 사용 범위 메모, 빠진 정보 요약·출처·이력 갱신 |
 | 2026-09-25-35 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 범위 능력의 의미 식별자 미확인·특수 능력 자유 텍스트(IDTA 02047)와 MassRobotics 화물 최대 중량·충전기 유형 보강, ref-245 각주의 원문 미열람 표기 제거 |

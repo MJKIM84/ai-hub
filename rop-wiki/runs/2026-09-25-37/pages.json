@@ -5,7 +5,7 @@
       "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
       "section": "3. 조사 결과",
       "budget_chars": 3800,
-      "summary": "Open-RMF 작업 요청과 VDA 5050 3.0.0 주문에는 기한 필드가 없고, 업무 시스템 작업 지시(ISA-95)는 종료 시각·우선순위를 선택 필드로 둔다. [사실][^ref-125][^ref-771][^ref-130] 여섯 정보 항목과 원천의 대응은 이 위키의 추론이다. [추정][^ref-228]",
+      "summary": "Open-RMF 작업 요청과 VDA 5050 3.0.0 주문에는 기한 필드가 없고, 업무 시스템 작업 지시(ISA-95)는 종료 시각·우선순위를 선택 필드로 둔다. [사실][^ref-125][^ref-413][^ref-130] 여섯 정보 항목과 원천의 대응은 이 위키의 추론이다. [추정][^ref-228]",
       "planned_findings": [
         "f1",
         "f2",
@@ -31,7 +31,7 @@
       "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
       "section": "4. 결론과 남은 불확실성",
       "budget_chars": 1100,
-      "summary": "로봇 인터페이스는 작업 종류·장소·화물을 받지만 기한 필드가 없다. [사실][^ref-125][^ref-771] 대리 원천을 썼고 완료 조건의 표현 원천은 미확인이다.",
+      "summary": "로봇 인터페이스는 작업 종류·장소·화물을 받지만 기한 필드가 없다. [사실][^ref-125][^ref-413] 대리 원천을 썼고 완료 조건의 표현 원천은 미확인이다.",
       "planned_findings": [
         "f1",
         "f4",
@@ -65,24 +65,24 @@
       "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "q2-01 답함(2·3·4·5·6·8·9절 작성), 후속 질문 2건(q2-05·q2-06), q2-04 행 추가, 상태 줄 갱신. 2차 수정: 3절 첫 문장에 ref-769 추가, 2절 제기 근거 칸을 finding id 만으로 정리. seed 단계 페이지의 H1 아래 상태 줄을 바꿔야 해서 content 로 보냄"
+      "diff_summary": "q2-01 답함(2·3·4·5·6·8·9절 작성), 후속 질문 2건(q2-05·q2-06), q2-04 행 추가, 상태 줄 갱신. 2차 수정: 3절 첫 문장에 ref-411 추가, 2절 제기 근거 칸을 finding id 만으로 정리. seed 단계 페이지의 H1 아래 상태 줄을 바꿔야 해서 content 로 보냄"
     },
     {
       "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "초안 v0.3 → v0.4: 상황 속성에 공간 노드 참조 추가(확정 유지), 업무 기한·우선순위 값 원천과 기한 필드 부재 메모(초안 → 확정), 작업 요구 수정 거부를 6절 질문으로. 2차 수정: 6절 화물 식별 단위 문장 각주를 ref-769·ref-031 로 교체하고 각주 정의·sources 추가. H1 버전 표기를 바꿔야 해서 content 로 보냄"
+      "diff_summary": "초안 v0.3 → v0.4: 상황 속성에 공간 노드 참조 추가(확정 유지), 업무 기한·우선순위 값 원천과 기한 필드 부재 메모(초안 → 확정), 작업 요구 수정 거부를 6절 질문으로. 2차 수정: 6절 화물 식별 단위 문장 각주를 ref-411·ref-031 로 교체하고 각주 정의·sources 추가. H1 버전 표기를 바꿔야 해서 content 로 보냄"
     },
     {
       "path": "docs/ideas/nl-task-chatbot.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "4절에 '필요한 데이터 항목과 원천' 소절 작성(q2-01), 표준·형식 목록·평가 데이터는 미조사로 명시. 2차 수정: 첫 문장에 ref-769 추가, 팩트시트 항목을 [사실] 문장과 태그 없는 대리 원천 문장으로 분리",
+      "diff_summary": "4절에 '필요한 데이터 항목과 원천' 소절 작성(q2-01), 표준·형식 목록·평가 데이터는 미조사로 명시. 2차 수정: 첫 문장에 ref-411 추가, 팩트시트 항목을 [사실] 문장과 태그 없는 대리 원천 문장으로 분리",
       "patches": [
         {
           "section": "4. 필요한 데이터와 표준",
           "action": "replace",
-          "content": "이 절은 [단계 2. 필요한 데이터와 표준 조사](../tracks/nl-task-chatbot/stage-2-data-and-standards.md)의 결과를 싣는다. 이번에는 q2-01 의 답인 필요한 데이터 항목과 그 원천만 실었고, 분해한 작업·배정 결과를 표현하는 표준·형식 목록 비교(q2-02)와 해석·분해 평가 데이터(q2-03)는 아직 조사하지 않았다.\n\n### 필요한 데이터 항목과 원천\n\n로봇 관제 인터페이스는 작업 종류·장소·화물을 받지만 기한 필드는 없고, 기한·우선순위는 업무 시스템 작업 지시에 선택 필드로 있다. [사실][^ref-125][^ref-769][^ref-771][^ref-130] 로봇 기능 온톨로지와 공간 그래프는 아직 트랙 산출물이 없어, VDA 5050 팩트시트와 Open-RMF 건물 지도 그래프를 대리 원천으로 썼다. 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-01)에 있다.\n\n아래 표는 로봇 관제 인터페이스와 업무 시스템 표준의 필드를 채팅 지시의 여섯 정보 항목에 대응시켜 이 위키가 구성한 것이며, 이 대응을 제시한 단일 출처는 확인하지 못했다. [추정][^ref-125][^ref-769][^ref-771][^ref-228][^ref-130][^ref-015]\n\n| 정보 항목 | 로봇 인터페이스 쪽 필드 | 업무 시스템 쪽 필드 |\n|---|---|---|\n| 작업 종류 | Open-RMF 작업 범주, VDA 5050 동작 유형, 팩트시트 지원 동작 | 미확인 |\n| 장소 | 경유점 이름·번호(Open-RMF), 지도 id 가 있는 노드(VDA 5050) | 미확인 |\n| 대상 화물 | sku·수량(Open-RMF), 적재물 id·유형(VDA 5050), 팩트시트 적재 명세 | 자재 정의·로트(ISA-95), SSCC 같은 식별자(EPCIS) |\n| 기한 | 필드 없음 | 종료 시각(ISA-95) |\n| 우선순위 | 우선순위(Open-RMF 선택 필드), VDA 5050 주문 수준에는 없음 | 우선순위(ISA-95) |\n| 완료 조건 | 이번에 연 요청·주문 스키마에 필드 없음 | 미확인 |\n\n- Open-RMF 작업 요청은 작업 범주와 작업 기술만 필수로 두고 가장 이른 시작 시각·우선순위 등을 선택 필드로 두며 기한 필드가 없다. VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 주문에도 주문 수준의 기한·우선순위 필드가 없다. [사실][^ref-125][^ref-771]\n- OPC UA for ISA-95 작업 제어 노드셋(모델 발행일 2024-01-31)의 작업 지시는 작업 지시 id 만 필수이고 시작·종료 시각, 우선순위, 자재 요구 등은 선택이며, 자재 데이터형은 자재 정의 id·로트 id·수량·단위 등을 둔다(자재 클래스·하위 로트 id 도 있음, 모두 선택). [사실][^ref-130]\n- VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 팩트시트는 적재 명세와 지원 동작 목록을 로봇이 선언하게 한다. [사실][^ref-228] 이번 실행은 이를 로봇 기능 온톨로지의 대리 원천으로 썼다.\n- 기한은 로봇 쪽에 필드가 없으므로 ROP 의 작업 모델이 보유하고 로봇에는 가장 이른 시작 시각·우선순위·배정 순서로 바꿔 넘겨야 할 것으로 보인다(열린 질문 [oq-019](../open-questions.md)와 같은 방향). [추정][^ref-125][^ref-771][^ref-130]\n- 대상 화물은 인터페이스마다 식별 단위(품목 코드·수량, 적재물 id, 자재·로트, SSCC)가 달라 어느 단위로 받을지와 대응을 정해야 할 것으로 보인다(열린 질문 [oq-007](../open-questions.md)·[oq-023](../open-questions.md)). [추정][^ref-769][^ref-031][^ref-130][^ref-015]\n- 상위 업무 시스템 쪽에서는 Mecalux 가 WMS 에 통합한 대화형 비서가 긴급 주문 출고나 통로 잠금 해제 같은 WMS 작업을 채팅 요청으로 실행하되 실행 전에 동작·영향 항목 요약을 보여 주고 확인을 받는다고 밝힌다. 이는 WMS 제품 기능이며 ROP 에게는 연계 대상의 사례다. [추정] 벤더 주장[^ref-776]\n- 완료 조건의 표현 원천(작업 상태 스키마, EPCIS 이벤트)은 아직 확인하지 않았다.\n\n검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 상황(장소 표현의 공간 노드 참조)과 업무(기한·우선순위 값 원천) 속성으로 반영되었다(v0.4).",
+          "content": "이 절은 [단계 2. 필요한 데이터와 표준 조사](../tracks/nl-task-chatbot/stage-2-data-and-standards.md)의 결과를 싣는다. 이번에는 q2-01 의 답인 필요한 데이터 항목과 그 원천만 실었고, 분해한 작업·배정 결과를 표현하는 표준·형식 목록 비교(q2-02)와 해석·분해 평가 데이터(q2-03)는 아직 조사하지 않았다.\n\n### 필요한 데이터 항목과 원천\n\n로봇 관제 인터페이스는 작업 종류·장소·화물을 받지만 기한 필드는 없고, 기한·우선순위는 업무 시스템 작업 지시에 선택 필드로 있다. [사실][^ref-125][^ref-411][^ref-413][^ref-130] 로봇 기능 온톨로지와 공간 그래프는 아직 트랙 산출물이 없어, VDA 5050 팩트시트와 Open-RMF 건물 지도 그래프를 대리 원천으로 썼다. 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-01)에 있다.\n\n아래 표는 로봇 관제 인터페이스와 업무 시스템 표준의 필드를 채팅 지시의 여섯 정보 항목에 대응시켜 이 위키가 구성한 것이며, 이 대응을 제시한 단일 출처는 확인하지 못했다. [추정][^ref-125][^ref-411][^ref-413][^ref-228][^ref-130][^ref-015]\n\n| 정보 항목 | 로봇 인터페이스 쪽 필드 | 업무 시스템 쪽 필드 |\n|---|---|---|\n| 작업 종류 | Open-RMF 작업 범주, VDA 5050 동작 유형, 팩트시트 지원 동작 | 미확인 |\n| 장소 | 경유점 이름·번호(Open-RMF), 지도 id 가 있는 노드(VDA 5050) | 미확인 |\n| 대상 화물 | sku·수량(Open-RMF), 적재물 id·유형(VDA 5050), 팩트시트 적재 명세 | 자재 정의·로트(ISA-95), SSCC 같은 식별자(EPCIS) |\n| 기한 | 필드 없음 | 종료 시각(ISA-95) |\n| 우선순위 | 우선순위(Open-RMF 선택 필드), VDA 5050 주문 수준에는 없음 | 우선순위(ISA-95) |\n| 완료 조건 | 이번에 연 요청·주문 스키마에 필드 없음 | 미확인 |\n\n- Open-RMF 작업 요청은 작업 범주와 작업 기술만 필수로 두고 가장 이른 시작 시각·우선순위 등을 선택 필드로 두며 기한 필드가 없다. VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 주문에도 주문 수준의 기한·우선순위 필드가 없다. [사실][^ref-125][^ref-413]\n- OPC UA for ISA-95 작업 제어 노드셋(모델 발행일 2024-01-31)의 작업 지시는 작업 지시 id 만 필수이고 시작·종료 시각, 우선순위, 자재 요구 등은 선택이며, 자재 데이터형은 자재 정의 id·로트 id·수량·단위 등을 둔다(자재 클래스·하위 로트 id 도 있음, 모두 선택). [사실][^ref-130]\n- VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 팩트시트는 적재 명세와 지원 동작 목록을 로봇이 선언하게 한다. [사실][^ref-228] 이번 실행은 이를 로봇 기능 온톨로지의 대리 원천으로 썼다.\n- 기한은 로봇 쪽에 필드가 없으므로 ROP 의 작업 모델이 보유하고 로봇에는 가장 이른 시작 시각·우선순위·배정 순서로 바꿔 넘겨야 할 것으로 보인다(열린 질문 [oq-019](../open-questions.md)와 같은 방향). [추정][^ref-125][^ref-413][^ref-130]\n- 대상 화물은 인터페이스마다 식별 단위(품목 코드·수량, 적재물 id, 자재·로트, SSCC)가 달라 어느 단위로 받을지와 대응을 정해야 할 것으로 보인다(열린 질문 [oq-007](../open-questions.md)·[oq-023](../open-questions.md)). [추정][^ref-411][^ref-031][^ref-130][^ref-015]\n- 상위 업무 시스템 쪽에서는 Mecalux 가 WMS 에 통합한 대화형 비서가 긴급 주문 출고나 통로 잠금 해제 같은 WMS 작업을 채팅 요청으로 실행하되 실행 전에 동작·영향 항목 요약을 보여 주고 확인을 받는다고 밝힌다. 이는 WMS 제품 기능이며 ROP 에게는 연계 대상의 사례다. [추정] 벤더 주장[^ref-418]\n- 완료 조건의 표현 원천(작업 상태 스키마, EPCIS 이벤트)은 아직 확인하지 않았다.\n\n검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 상황(장소 표현의 공간 노드 참조)과 업무(기한·우선순위 값 원천) 속성으로 반영되었다(v0.4).",
           "frontmatter": {
             "sources": [
               "ref-054",
@@ -139,9 +139,9 @@
               "ref-125",
               "ref-130",
               "ref-228",
-              "ref-769",
-              "ref-771",
-              "ref-776"
+              "ref-411",
+              "ref-413",
+              "ref-418"
             ]
           }
         }
@@ -170,7 +170,7 @@
   "glossary_updates": [],
   "reference_updates": [
     {
-      "id": "ref-768",
+      "id": "ref-410",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_ros2 — rmf_fleet_adapter/schemas/task_description__delivery.json",
       "published": null,
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "id": "ref-769",
+      "id": "ref-411",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payload_transfer.json",
       "published": null,
@@ -202,7 +202,7 @@
       ]
     },
     {
-      "id": "ref-770",
+      "id": "ref-412",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_ros2 — rmf_fleet_adapter/schemas/place.json",
       "published": null,
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "id": "ref-771",
+      "id": "ref-413",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — json_schemas/order.schema",
       "published": null,
@@ -235,7 +235,7 @@
       ]
     },
     {
-      "id": "ref-772",
+      "id": "ref-414",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphNode.msg",
       "published": null,
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "id": "ref-773",
+      "id": "ref-415",
       "org": "Martins, P. H., Custódio, L., & Ventura, R.",
       "title": "A deep learning approach for understanding natural language commands for mobile service robots",
       "published": "2018-07",
@@ -266,7 +266,7 @@
       ]
     },
     {
-      "id": "ref-774",
+      "id": "ref-416",
       "org": "Rana, K. 외",
       "title": "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning",
       "published": "2023-07",
@@ -281,7 +281,7 @@
       ]
     },
     {
-      "id": "ref-775",
+      "id": "ref-417",
       "org": "Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab)",
       "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
       "published": "2026-04",
@@ -296,7 +296,7 @@
       ]
     },
     {
-      "id": "ref-776",
+      "id": "ref-418",
       "org": "Mecalux",
       "title": "Mecalux integrates generative AI into Easy WMS",
       "published": null,
@@ -428,11 +428,11 @@
     "f12 — ISO 13482 가 개인 돌봄 로봇 안전 표준이고 230개 과업·AI2-THOR 30개 시나리오 평가가 저자 보고이며 물류 현장 대상이 아님을 같은 문단에 적고, 25. 안전·위험 관리와 27. AI·학습·적응과 모델 운영 양쪽에 7절 연결과 반영 제안을 냈다.",
     "f14·f16 대리 원천 — 단계 2 페이지 3절 q2-01 답 첫 단락과 4절 불확실성에 VDA 5050 팩트시트·Open-RMF 건물 지도 그래프를 대리 원천으로 썼다고 적고, 완료 조건 표현 원천(작업 상태 스키마·EPCIS 이벤트) 미확인을 4절 불확실성에 적었다.",
     "기존 열린 질문 연결 — 단계 2 페이지 3절에서 f15 를 oq-019, f16 을 oq-029, f17 을 oq-007·oq-023 에 링크로 연결했고 새 일반 열린 질문은 만들지 않았다(open_question_updates 빈 배열).",
-    "원문 미열람 표시 — ref-015·ref-360·ref-773·ref-774·ref-775·ref-776 각주의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, 원문을 연 ref-125·ref-031·ref-228·ref-130·ref-768~ref-772 에는 붙이지 않았다.",
-    "기관·저자 — reference_updates 와 각주에서 ref-773 을 'Martins, P. H., Custódio, L., & Ventura, R.', ref-775 를 'Obi, I., … & Min, B.-C.(Purdue University SMART Lab)', ref-774 를 'Rana, K. 외'로 적었다.",
+    "원문 미열람 표시 — ref-015·ref-360·ref-415·ref-416·ref-417·ref-418 각주의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, 원문을 연 ref-125·ref-031·ref-228·ref-130·ref-410~ref-414 에는 붙이지 않았다.",
+    "기관·저자 — reference_updates 와 각주에서 ref-415 을 'Martins, P. H., Custódio, L., & Ventura, R.', ref-417 를 'Obi, I., … & Min, B.-C.(Purdue University SMART Lab)', ref-416 를 'Rana, K. 외'로 적었다.",
     "용어 보류 — '사람 확인 루프(Human-in-the-Loop)'를 glossary_updates 에 넣지 않고 정의 출처 확보를 additional_research_requests 에 적었다.",
-    "상황 수정 승인 — 초안 상황 행의 주요 속성에 '장소 표현과 그 해석 결과인 공간 노드 참조(지도 id, 경유점 이름 또는 번호)'를 짝으로 더하고 근거 칸에 finding f3·f4 (실행 2026-09-25-37)와 ref-770·ref-772·ref-771 을 달았으며 상태 확정을 유지하고, 이름 대응 규칙은 6절 질문(q2-01, q2-05, oq-029)으로 두었다.",
-    "업무 수정 승인 — 기한·우선순위의 '(단계 2에서 확정)'을 지우고 값 원천 후보 '채팅 지시 / 업무 시스템 작업 지시(ISA-95 EndTime·Priority)'(f7, ref-130)를 적었으며, 로봇 인터페이스 기한 필드 부재를 [사실](ref-125·ref-771), 작업 모델의 기한 보유를 f15 근거 [추정]으로 쓰고, 완료 조건의 '(단계 2에서 확정)'은 유지하고 상태를 초안 → 확정으로 바꿨다.",
+    "상황 수정 승인 — 초안 상황 행의 주요 속성에 '장소 표현과 그 해석 결과인 공간 노드 참조(지도 id, 경유점 이름 또는 번호)'를 짝으로 더하고 근거 칸에 finding f3·f4 (실행 2026-09-25-37)와 ref-412·ref-414·ref-413 을 달았으며 상태 확정을 유지하고, 이름 대응 규칙은 6절 질문(q2-01, q2-05, oq-029)으로 두었다.",
+    "업무 수정 승인 — 기한·우선순위의 '(단계 2에서 확정)'을 지우고 값 원천 후보 '채팅 지시 / 업무 시스템 작업 지시(ISA-95 EndTime·Priority)'(f7, ref-130)를 적었으며, 로봇 인터페이스 기한 필드 부재를 [사실](ref-125·ref-413), 작업 모델의 기한 보유를 f15 근거 [추정]으로 쓰고, 완료 조건의 '(단계 2에서 확정)'은 유지하고 상태를 초안 → 확정으로 바꿨다.",
     "작업 요구 수정 거부 — 개념 목록 표에 반영하지 않고 6절에 '작업 요구에 적재물 식별과 적재물 유형·치수·중량을 더해 팩트시트 loadSets 와 대조할 것인가 — 능력 온톨로지 초안과 대조 후 결정(근거 f2·f5·f6·f17, 관련 q2-01)' 질문을 두었다.",
     "버전 0.4 — 초안 H1 '(v0.4)', 프런트매터 ontology_version '0.4', track_updates.ontology_draft_version \"0.4\" 를 맞추고 1절 버전 요약 문단에 v0.4 변경(상황·업무 승인, 작업 요구 거부)을 적었다. H1 변경을 위해 초안은 content 로 보냈다.",
     "q3-01 중복 — 기한 변환 규칙 질문을 backlog_updates 에 새 id 로 넣지 않고 단계 2 페이지 5절 표 아래에 'q3-01 에 근거 f15 로 연결'로 적었다.",
@@ -441,11 +441,11 @@
     "단계 2 페이지 6절·상태 줄 — 완료 조건 두 행을 '미충족', 검증 판정 '미충족 · 미승인'으로 두고 표 아래를 '다음 단계로 전환: 아니오(아이디어 2 4절의 표준·형식 목록(q2-02) 미조사, 작업 모델 정보 항목 일부만 반영, 열린 질문 q2-02·q2-03·q2-04)'로 썼으며, 상태 줄을 '단계 상태: 진행 중 … 완료 조건: 미충족'으로 바꿨다(상태 줄 변경을 위해 seed 단계 페이지를 content 로 보냈다).",
     "아이디어 4절 — '필요한 데이터 항목과 원천' 소절만 쓰고 표준·형식 목록 비교(q2-02)와 평가 데이터(q2-03)가 미조사임을 명시했으며, 항목–원천 대응 표 앞 문장에 이 위키가 구성한 표이며 [추정]임을 적었다.",
     "세부영역 직접 수정 금지 — 13. 작업 배정 — MRTA, 1. 주문·업무 시스템 연계, 18. 사람–로봇 협업·운영 인터페이스 페이지는 pages 에 넣지 않고 area_reflection_proposals 로만 냈으며, 1. 주문·업무 시스템 연계 제안에서 f13 은 7절이 아닌 6. 대표 접근법과 기술의 제품 사례로 표시했다.",
-    "2차: 초안 6절 각주 교체 — 작업 요구 질문 항목의 화물 식별 단위 문장 각주를 [^ref-771][^ref-125] 에서 [^ref-769][^ref-031] 로 바꾸고, 페이지 끝에 ref-769·ref-031 각주 정의(원문 미열람 표시 없음)를 더했으며 프런트매터 sources 에 두 id 를 넣고, reference_updates 의 ref-769·ref-031 cited_by 에 docs/tracks/nl-task-chatbot/task-model-draft.md 를 더했다.",
+    "2차: 초안 6절 각주 교체 — 작업 요구 질문 항목의 화물 식별 단위 문장 각주를 [^ref-413][^ref-125] 에서 [^ref-411][^ref-031] 로 바꾸고, 페이지 끝에 ref-411·ref-031 각주 정의(원문 미열람 표시 없음)를 더했으며 프런트매터 sources 에 두 id 를 넣고, reference_updates 의 ref-411·ref-031 cited_by 에 docs/tracks/nl-task-chatbot/task-model-draft.md 를 더했다.",
     "2차: 아이디어 4절 팩트시트 항목 분리 — 'VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 팩트시트는 적재 명세와 지원 동작 목록을 로봇이 선언하게 한다. [사실][^ref-228]'과 태그 없는 '이번 실행은 이를 로봇 기능 온톨로지의 대리 원천으로 썼다.' 두 문장으로 나눴다.",
-    "2차: ref-769 추가 — 단계 2 페이지 3절 q2-01 첫 문장과 아이디어 4절 '필요한 데이터 항목과 원천' 첫 문장('로봇 관제 인터페이스는 작업 종류·장소·화물을 받지만…')의 각주에 [^ref-769] 를 더했다.",
+    "2차: ref-411 추가 — 단계 2 페이지 3절 q2-01 첫 문장과 아이디어 4절 '필요한 데이터 항목과 원천' 첫 문장('로봇 관제 인터페이스는 작업 종류·장소·화물을 받지만…')의 각주에 [^ref-411] 를 더했다.",
     "2차: 제기 근거 칸 정리 — 단계 2 페이지 2절 질문 목록 표의 q2-04·q2-05·q2-06 제기 근거 칸을 'f13'·'f16'·'f17' 로 고쳤다(실행 id 는 5절 근거 칸에 유지).",
-    "docs/ideas/nl-task-chatbot.md: 각주 정의 8개를 참고문헌에서 만들어 붙임: ref-015, ref-031, ref-125, ref-130, ref-228, ref-769, ref-771, ref-776"
+    "docs/ideas/nl-task-chatbot.md: 각주 정의 8개를 참고문헌에서 만들어 붙임: ref-015, ref-031, ref-125, ref-130, ref-228, ref-411, ref-413, ref-418"
   ],
   "track_updates": {
     "stage_page": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
