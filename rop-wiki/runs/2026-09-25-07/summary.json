@@ -1,0 +1,135 @@
+{
+  "run_id": "2026-09-25-07",
+  "date": "2026-09-25",
+  "run_type": "update",
+  "target": {
+    "area_no": 7,
+    "area_name": "7. 화물·재고·자산 식별과 추적",
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 1,
+  "pages_updated": 1,
+  "new_sources": 2,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 2,
+    "sources": 2
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 518.8,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 7. 화물·재고·자산 식별과 추적 | corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 | run 2026-09-25-07",
+  "notes": [
+    "참고문헌 생성: references/ref-051.md",
+    "참고문헌 생성: references/ref-052.md",
+    "용어집 갱신: glossary/vda-5050.md"
+  ],
+  "counts": {
+    "create": 1,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 1,
+    "references": 2,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 2
+  },
+  "updated_at": "2026-09-25 10:31:42 KST",
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 696464,
+    "cache_read_input_tokens": 1486930,
+    "output_tokens": 53817,
+    "cost_usd": 7.1951,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 1.1955,
+        "output_tokens": 12835,
+        "cache_read_input_tokens": 684072,
+        "cache_creation_input_tokens": 82854
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6856,
+        "output_tokens": 8468,
+        "cache_read_input_tokens": 558885,
+        "cache_creation_input_tokens": 167787
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 2.409,
+        "output_tokens": 23168,
+        "cache_read_input_tokens": 71381,
+        "cache_creation_input_tokens": 241419
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.8203,
+        "output_tokens": 8354,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 202845
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md (3개 절)"
+    ],
+    "splits": [
+      {
+        "from": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-25-area07-s7.md",
+        "chars": 1570
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 3,
+  "cross_checked_findings": 0
+}

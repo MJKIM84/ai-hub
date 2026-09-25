@@ -1,0 +1,140 @@
+{
+  "duration_api_ms": 21310,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.8865148,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 102507,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 2561,
+    "output_tokens_details": {
+      "thinking_tokens": 999
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 102507,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2561,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 102507,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 102507
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 2561,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 102507,
+      "webSearchRequests": 0,
+      "costUSD": 0.8865148,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 999,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-07\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[\"corr-001\"],\"corrections_rejected\":[{\"id\":\"corr-002\",\"reason\":\"요청 대상 문장은 분류 원문(부록 A)의 세부영역 정의로 [분류원문] 보호 대상이라 정정할 수 없다. 요청이 말한 식별 수단(GS1-128 바코드, RFID용 EPC 인코딩)은 페이지 4·6절에서 이미 출처와 함께 다루며, '실시간으로'는 원문에 없는 표현이다.\"}],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 8건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-022(VDA 게시 PDF. 공식 저장소 2.0.0 태그 마크다운은 확인), ref-032, ref-018, ref-021. VDA 5050 공식 저장소 raw 원문(main README·state.schema, 2.0.0 태그 명세)은 1차 검증 단계에서 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 대조했다. 정정 요청: corr-001 반영(현행판 3.0.0 병기, loads·loadId가 두 판 모두에 있음, 열람 표시 수정). corr-002 불인정·거절(분류 원문 정의는 정정 대상이 아님). oq-005·oq-007은 해결 인정하지 않았다(열림 유지). 주의: 모든 VDA 5050 근거가 같은 발행 주체(VDA/VDMA)의 산출물이라 독립 교차 확인이 없다. 3.0.0의 정확한 발행일(2026-03-19 대 2026-04 보도자료)은 여전히 미확인이다. / 2차 통과(재검증). 드리프트 없음. 직전 2차 수정 지시 2건 이행 확인: 7절 발행 시점 문장에 [사실][^ref-032]가 붙었고 세부영역 7절 요약과 분리 주제 페이지 1·3절에도 같게 옮겨졌다. 용어집 vda-5050의 sources에 ref-051·ref-022가 더해졌다. 1차 수정 지시 11건도 계속 이행된 상태다. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 파이프라인 참고(수정 지시 대상 아님): 자동 분리 뒤 세부영역 프런트매터 sources에 본문에서 더 이상 쓰지 않는 ref-011·ref-012·ref-045·ref-050이 남아 있다. 분리 주제 페이지는 세 줄 요약이 두 줄이고 9절이 템플릿 형식과 다르며 주 연구영역 머리 줄이 없다. reference_updates의 cited_by에 분리 주제 페이지가 빠져 있다. 모두 분리 코드(pipeline) 담당이 처리할 사항이다. 분리 주제 페이지 본문은 원 7절 내용을 그대로 옮긴 것으로 확인했다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-07",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [
+      "corr-001"
+    ],
+    "corrections_rejected": [
+      {
+        "id": "corr-002",
+        "reason": "요청 대상 문장은 분류 원문(부록 A)의 세부영역 정의로 [분류원문] 보호 대상이라 정정할 수 없다. 요청이 말한 식별 수단(GS1-128 바코드, RFID용 EPC 인코딩)은 페이지 4·6절에서 이미 출처와 함께 다루며, '실시간으로'는 원문에 없는 표현이다."
+      }
+    ],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 8건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-022(VDA 게시 PDF. 공식 저장소 2.0.0 태그 마크다운은 확인), ref-032, ref-018, ref-021. VDA 5050 공식 저장소 raw 원문(main README·state.schema, 2.0.0 태그 명세)은 1차 검증 단계에서 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 대조했다. 정정 요청: corr-001 반영(현행판 3.0.0 병기, loads·loadId가 두 판 모두에 있음, 열람 표시 수정). corr-002 불인정·거절(분류 원문 정의는 정정 대상이 아님). oq-005·oq-007은 해결 인정하지 않았다(열림 유지). 주의: 모든 VDA 5050 근거가 같은 발행 주체(VDA/VDMA)의 산출물이라 독립 교차 확인이 없다. 3.0.0의 정확한 발행일(2026-03-19 대 2026-04 보도자료)은 여전히 미확인이다. / 2차 통과(재검증). 드리프트 없음. 직전 2차 수정 지시 2건 이행 확인: 7절 발행 시점 문장에 [사실][^ref-032]가 붙었고 세부영역 7절 요약과 분리 주제 페이지 1·3절에도 같게 옮겨졌다. 용어집 vda-5050의 sources에 ref-051·ref-022가 더해졌다. 1차 수정 지시 11건도 계속 이행된 상태다. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 파이프라인 참고(수정 지시 대상 아님): 자동 분리 뒤 세부영역 프런트매터 sources에 본문에서 더 이상 쓰지 않는 ref-011·ref-012·ref-045·ref-050이 남아 있다. 분리 주제 페이지는 세 줄 요약이 두 줄이고 9절이 템플릿 형식과 다르며 주 연구영역 머리 줄이 없다. reference_updates의 cited_by에 분리 주제 페이지가 빠져 있다. 모두 분리 코드(pipeline) 담당이 처리할 사항이다. 분리 주제 페이지 본문은 원 7절 내용을 그대로 옮긴 것으로 확인했다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 11051,
+  "type": "result",
+  "duration_ms": 21412,
+  "uuid": "2498274f-db3b-4f8d-8281-ab19f6d45573",
+  "ttft_stream_ms": 1678,
+  "time_to_request_ms": 79,
+  "first_content_frame_ms": 1678,
+  "time_to_request_from_spawn_ms": 4014255,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790299867618.5503,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 23.1
+}
