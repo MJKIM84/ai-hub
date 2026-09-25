@@ -1,0 +1,682 @@
+{
+  "run_id": "2026-09-25-06",
+  "outline": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 900,
+      "summary": "q1-04·q1-05를 답함으로, q1-03은 부분 답이라 열림으로 두고, 새 질문 q1-09를 이 단계에 더한다.",
+      "planned_findings": [
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 7500,
+      "summary": "VDA 5050 3.0.0 팩트시트는 적재 명세·지원 동작을 필드로 담지만 동작 파라미터에 허용 범위가 없다. [사실][^ref-062] 능력 기술과 실행 인터페이스는 이름을 기준으로 잇거나 능력–스킬–상태 기계로 잇는 두 방식으로 나뉘는 것으로 보인다. [추정][^ref-062][^ref-067]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 2600,
+      "summary": "다섯 정보 항목이 여러 규격에 흩어져 있고 한 규격에 모두 구조화된 경우는 확인되지 않았다. [추정][^ref-062][^ref-064] IEEE 1872 계열·SSN·PDDL·KnowRob 원문은 아직 확인하지 못했다.",
+      "planned_findings": [
+        "f13",
+        "f21",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 700,
+      "summary": "q1-09(f23), q2-06(f4, 단계 2로 이동), q2-07(f16)을 더한다.",
+      "planned_findings": [
+        "f4",
+        "f16",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 700,
+      "summary": "두 완료 조건 모두 미충족, 단계 전환 미승인.",
+      "planned_findings": []
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-04·q1-05 답함(3절 소제목 {#q1-04}·{#q1-05}), q1-03 부분 답을 공식 저장소 원문 기준으로 교체, q1-02의 팩트시트 서술을 3.0.0 main 기준으로 바꾸고 3.0.0 오류 등급 문장 추가, 후속 질문 3건(q1-09·q2-06·q2-07), 완료 조건 미충족, 출처 ref-062~ref-074 추가, 상태 줄 숫자 갱신. 상태 줄(H1 아래)을 고쳐야 해서 patches 대신 content로 보냄"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "v0.1 → v0.2: 개념 '실행 상태' 추가, '오류' 등급(3.0.0 네 값)·참조·조치 힌트 속성 추가, '기능' 속성 '의미 참조' 추가, 관계 3건 추가, 다이어그램 갱신, 6절에 제약 종류 질문 추가. H1 버전 표기를 고쳐야 해서 patches 대신 content로 보냄"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "VDA 5050(3.0.0 기준)·MassRobotics 행을 공식 저장소 원문으로 채워 '확인', IDTA 02020 칸의 ConditionContainer 를 ConstraintSet·PropertyConstraintContainer·TransitionConstraintContainer 로 교체(원문 미열람 유지), SOMA·OPC UA Robotics·Open-RMF 칸 보강, 후보 밖 2행(CaSkMan, OPC 30050 PackML) 추가, 5절 빠진 정보 요약 갱신. 상태 줄(H1 아래)을 고쳐야 해서 patches 대신 content로 보냄"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6. 살아있는 산출물 링크: 온톨로지 초안 v0.2, 비교표 실행 2026-09-25-06 갱신, 백로그 수치, 아이디어 페이지 3·4절 반영 표시 갱신(상태 줄은 값이 바뀌지 않아 그대로)",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [능력 온톨로지 초안](ontology-draft.md) — 현재 버전 v0.2. v0 시드(개념 8개·관계 6개)에 단계 1 실행 2026-09-25-02(v0.1: 개념 효과·스킬·오류, 관계 기능 / 구현된다 / 스킬, 기능의 능력 출처 구분 속성)와 실행 2026-09-25-06(v0.2: 개념 실행 상태, 오류 등급·참조·조치 힌트와 기능 의미 참조 속성, 관계 스킬 / 실행 상태를 드러낸다 / 실행 상태, 기능 / 일반화된다 / 기능, 기능 / 구성된다 / 기능)에서 검증 승인된 변경을 반영했다.\n- [모델·표준 비교표](model-standard-comparison.md) — 단계 1 산출물. 실행 2026-09-25-02에서 초안 작성, 실행 2026-09-25-06에서 VDA 5050·MassRobotics·CaSkMan 행을 공식 저장소 원문으로 채워 \"확인\"으로 바꾸고 후보 밖 2행(CaSkMan, OPC 30050 PackML)을 더했다. IEEE 1872 계열·SSN·PDDL·KnowRob 행의 다섯 정보 항목은 미조사다.\n- [문서 유형 매트릭스](document-type-matrix.md) — 단계 2 산출물. 빈 틀(단계 2 실행에서 채운다).\n- [평가 지표와 검증 절차](evaluation-and-verification.md) — 단계 5 산출물. 빈 틀(단계 5 실행에서 채운다).\n- [질문 백로그](question-backlog.md) — 열린 질문 40건(조사 중 1건 포함) · 답한 질문 4건(실행 2026-09-25-06 반영 기준. 최신 수치는 백로그 페이지의 자동 표를 따른다)\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.\n- [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md) — 확장 아이디어 페이지(문제 정의, 관련 세부 연구영역, 선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법, 미해결 질문 백로그). 3~6절은 이 트랙의 실행이 채우며, 실행 2026-09-25-06에서 3·4절을 처음 채웠다."
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/robot-capability-ontology.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3. 선행 연구·제품 사례, 4. 필요한 데이터와 표준을 트랙 실행 2026-09-25-06의 검증된 finding으로 처음 채움(각주 7건)",
+      "patches": [
+        {
+          "section": "3. 선행 연구·제품 사례",
+          "action": "replace",
+          "frontmatter": {
+            "confidence": "medium",
+            "sources": [
+              "ref-031",
+              "ref-062",
+              "ref-064",
+              "ref-066",
+              "ref-067",
+              "ref-070",
+              "ref-072"
+            ],
+            "last_run": "2026-09-25"
+          },
+          "content": "기존 능력 표현 모델과 표준의 조사 결과는 [단계 1. 기존 능력 표현 모델과 표준 조사](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md)와 [모델·표준 비교표](../tracks/manual-capability-ontology/model-standard-comparison.md)에 쌓이고 있다. 아래는 [매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/index.md) 트랙 실행 2026-09-25-06에서 확인된 것 가운데 이 아이디어와 직접 닿는 것만 옮긴 요약이다.\n\n- VDA 5050 3.0.0은 모든 이동로봇이 따르는 사전 정의 동작(pick, drop, startCharging 등)을 의미·파라미터·상태 전이와 함께 정하고, 이것으로 옮길 수 없는 동작만 제조사가 추가로 정의해 팩트시트의 지원 동작 목록에 같은 형식으로 선언하게 한다(공식 저장소 main 기준, 기준일 2026-09-25). [사실][^ref-031]\n- IDTA 02020 능력 기술 서브모델 1.0은 능력을 구현과 무관한 기능 명세로 정의하고, 속성·제약과 능력을 구현하는 스킬로 기술한다. [사실][^ref-064]\n- 오픈소스 온톨로지 CaSkMan은 제조 설비의 능력과 스킬, 스킬 인터페이스(REST·OPC UA)를 잇고, 능력을 표준 분류(VDI 2860·DIN 8580)에서 파생한 하위 클래스로 기술하도록 권한다. [사실][^ref-067]\n- Dussard 외(2023)는 로봇이 가진 구성요소와 하위 능력으로부터 능력을 추론하는 온톨로지 기반 기술 방법을 제안했다. [사실][^ref-070]\n\n제품 사례(제조사 관제·온보딩 도구)는 아직 조사되지 않았다."
+        },
+        {
+          "section": "4. 필요한 데이터와 표준",
+          "action": "replace",
+          "content": "이 아이디어의 범위 능력 가운데 적재·충전과 로봇 식별 정보는 기존 규격에 담을 자리가 있다. 규격별 비교는 [모델·표준 비교표](../tracks/manual-capability-ontology/model-standard-comparison.md)에 있다.\n\n- 적재: VDA 5050 3.0.0 팩트시트의 적재 명세(loadSets)는 적재 유형·위치·치수·최대 중량, 적재 처리 높이·깊이·기울기의 최소·최대값, 적재 시 최대 속도·가감속, 픽·드롭 소요 시간을 기술하는 필드를 둔다(기준일 2026-09-25). [사실][^ref-062]\n- 충전: VDA 5050 3.0.0 명세는 startCharging 동작을, 충전이 시작되어 powerSupply.charging 이 true 로 보고되면 완료(FINISHED)로 본다. [사실][^ref-031]\n- 로봇 식별·능력 요약: MassRobotics AMR 상호운용 표준 JSON 스키마는 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 최대 부피·최대 중량·제품 문서 링크 필드를 둔다(스키마 판 미확인). [사실][^ref-066]\n- 능력 모델: IDTA 02020은 능력의 속성(최대 속도·허용 오차·온도 범위 등)과 제약(전제조건·불변조건·사후조건, 순서 요구)을 기술한다. [사실][^ref-064]\n- 의미 참조: 자산관리셸(Asset Administration Shell, AAS) 메타모델(2024년판)은 요소의 의미를 의미 식별자(semanticId)로 ECLASS·IEC 공통 데이터 사전(Common Data Dictionary, CDD) 같은 외부 사전의 식별자에 연결한다. [사실][^ref-072]\n\n이동·계단·도어 조작 능력을 담는 필드와, 매뉴얼·SDK 문서에서 이 값들을 얻는 방법은 아직 조사되지 않았다. 문서 유형과 정보 구조는 [단계 2. 로봇 문서 유형과 정보 구조 조사](../tracks/manual-capability-ontology/stage-2-document-types.md)와 [문서 유형 매트릭스](../tracks/manual-capability-ontology/document-type-matrix.md)에서 다룬다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-04·q1-05 답함, q1-03 부분 답을 공식 저장소 원문 기준으로 보강, 온톨로지 초안 v0.1 → v0.2, 모델·표준 비교표 3행 확인·후보 밖 2행 추가, 새 출처 ref-062~ref-074 | run 2026-09-25-06",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-04(능력 기술과 실행 인터페이스의 연결)·q1-05(같은 이름 기능의 의미 차이) 답함, VDA 5050 3.0.0 팩트시트·상태 스키마 원문 확인, 능력 온톨로지 초안 v0.2",
+    "category_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: 5. 로봇 능력·작업 온톨로지 관련 VDA 5050 3.0.0·IDTA 02020·CaSkMan·AAS semanticId 조사, 능력 온톨로지 초안 v0.2(실행 상태 개념, 기능 일반화·구성 관계)",
+    "area_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: 6. 대표 접근법과 기술(능력–스킬–상태 기계 연결, 같은 이름 기능의 의미 고정)과 7. 관련 표준·프레임워크·오픈소스(IDTA 02020, CaSkMan, AAS semanticId, VDA 5050 3.0.0 팩트시트) 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "update",
+      "slug": "vda-5050",
+      "term_ko": "VDA 5050",
+      "term_en": "VDA 5050",
+      "definition": "독일자동차산업협회(VDA)와 VDMA가 정한 이동로봇과 상위 관제(fleet control) 사이의 통신 인터페이스 권고안이다.",
+      "description": "공식 저장소 main(3.0.0판, 확인일 2026-09-25)은 팩트시트·주문·상태 메시지로 이동로봇의 지원 동작·동작 상태·오류를 주고받게 한다. 팩트시트 자체는 별도 용어 '팩트시트'에서 다룬다.",
+      "related_areas": [
+        5,
+        7,
+        9
+      ],
+      "sources": [
+        "ref-031",
+        "ref-062",
+        "ref-063"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "vda-5050-factsheet",
+      "term_ko": "팩트시트",
+      "term_en": "Factsheet (VDA 5050)",
+      "definition": "VDA 5050 에서 이동로봇이 유형 명세·물리 파라미터·지원 동작·적재 명세 등을 관제에 미리 알리는 메시지이다.",
+      "description": "3.0.0판 JSON 스키마는 유형 명세·물리 파라미터·프로토콜 한계·지원 기능·이동로봇 기하·적재 명세를 필수 블록으로 둔다.",
+      "related_areas": [
+        5,
+        9
+      ],
+      "sources": [
+        "ref-062"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "asset-administration-shell",
+      "term_ko": "자산관리셸",
+      "term_en": "Asset Administration Shell (AAS)",
+      "definition": "산업 자산의 정보를 서브모델 단위로 표준화해 디지털로 표현·교환하게 하는 인더스트리 4.0 의 디지털 트윈 구조로, 요소의 의미를 semanticId 로 외부 사전에 연결한다.",
+      "description": "참고문헌 제목에 쓰인 '자산관리쉘' 표기(ref-043)는 원문 제목이므로 그대로 둔다.",
+      "related_areas": [
+        5,
+        28
+      ],
+      "sources": [
+        "ref-072"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "semantic-id",
+      "term_ko": "의미 식별자",
+      "term_en": "semanticId",
+      "definition": "자산관리셸의 요소가 ECLASS·IEC 공통 데이터 사전 같은 외부 사전의 어떤 개념을 뜻하는지 가리키는 참조 식별자이다.",
+      "related_areas": [
+        5,
+        28
+      ],
+      "sources": [
+        "ref-072"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-022",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control",
+      "published": "2022-01",
+      "url": "https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AGV·AMR 과 상위 관제 간 통신 권고안. order·state 메시지, pick/drop action, 적재물(loads) 보고 필드를 정의.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(현재 main 은 3.0.0 판). 사전 정의 동작·추가 동작 규칙, 주문 거부 시나리오를 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-036",
+      "org": "Köcher, A. 외",
+      "title": "A Reference Model for Common Understanding of Capabilities and Skills in Manufacturing",
+      "published": "2022",
+      "url": "https://arxiv.org/abs/2209.09632",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Plattform Industrie 4.0 작업반의 CSS 참조 모델을 정리한 논문. 능력·스킬·서비스의 정의와 관계를 제시.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-040",
+      "org": "Open Robotics",
+      "title": "PerformAction Tutorial - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "플릿 어댑터 설정에 사용자 정의 동작을 선언하고 execute_action 콜백으로 실행·완료를 알리는 방법을 설명하는 공식 튜토리얼.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-062",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/json_schemas/factsheet.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 저장소 main(3.0.0판)의 팩트시트 JSON 스키마. 유형 명세·물리 파라미터·지원 동작·적재 명세 블록의 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-063",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/json_schemas/state.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 저장소 main(3.0.0판)의 상태 메시지 JSON 스키마. 동작 상태 값과 오류 구조·오류 등급(WARNING·URGENT·CRITICAL·FATAL)을 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-064",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "title": "IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IDTA 공식 서브모델 템플릿 저장소의 능력 기술 서브모델 1.0 안내. 능력·속성·제약(속성 제약·전이 제약)·스킬의 구조와 목적을 설명한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-065",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "title": "IDTA 02020_Template_Capability_Description.json",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IDTA 02020 능력 기술 서브모델 템플릿 JSON. 능력·속성 집합과 realizedBy·composedOf·generalizedBy 관계, 제약 요소의 semanticId 를 담는다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-066",
+      "org": "MassRobotics",
+      "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
+      "published": null,
+      "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. identityReport·statusReport 메시지 필드(최대 속도, 화물 최대 중량·부피, 운영 상태 등)를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-067",
+      "org": "CaSkade-Automation (GitHub)",
+      "title": "CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README)",
+      "published": null,
+      "url": "https://github.com/CaSkade-Automation/CaSkMan",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "제조 설비의 능력·스킬·스킬 인터페이스(REST·OPC UA)를 기술하는 OWL 온톨로지 저장소 README. VDI 3682·VDI 2860·DIN 8580·ISA 88 등을 잇는 정렬 온톨로지로 소개한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-068",
+      "org": "EASE CRC (ease-crc/soma)",
+      "title": "SOMA — owl/SOMA-ACT.owl",
+      "published": null,
+      "url": "https://github.com/ease-crc/soma/blob/master/owl/SOMA-ACT.owl",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "SOMA 공식 저장소의 활동 모듈 OWL 파일. 실행 상태 영역(실패·성공·진행 중·취소·일시정지·대기)과 충족되지 않은 기대를 나타내는 클래스를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-069",
+      "org": "OPC Foundation / VDMA",
+      "title": "UA-Nodeset Robotics — Opc.Ua.Robotics.Nodeset2.documentation.csv",
+      "published": null,
+      "url": "https://github.com/OPCFoundation/UA-Nodeset/blob/latest/Robotics/Opc.Ua.Robotics.Nodeset2.documentation.csv",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "OPC UA for Robotics 공식 노드셋의 문서화 목록. 모션 장치 시스템·컨트롤러·작업 제어·안전 상태·부하 형식을 정의한다. 명세 본문은 아니다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-070",
+      "org": "Dussard, B. 외",
+      "title": "Ontological Component-based Description of Robot Capabilities",
+      "published": "2023-06",
+      "url": "https://arxiv.org/abs/2306.07569",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 로봇이 가진 구성요소와 하위 능력으로부터 능력을 추론하는 온톨로지 기반 기술 방법을 제안한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-071",
+      "org": "Li, X. 외(Sensors, MDPI)",
+      "title": "SWARMs Ontology: A Common Information Model for the Cooperation of Underwater Robots",
+      "published": "2017",
+      "url": "https://doi.org/10.3390/s17030569",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이종 수중 로봇 간 같은 용어의 의미 차이를 해결하려고 핵심 온톨로지로 도메인 온톨로지를 연결한 공통 정보 모델 논문(Sensors 17(3) 569).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-072",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "title": "Specification of the Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1)",
+      "published": "2024",
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자산관리셸 메타모델 명세. 서브모델 요소의 의미를 semanticId 로 외부 사전(ECLASS·IEC CDD) 식별자에 연결하는 구조를 정의한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-073",
+      "org": "OPC Foundation / OMAC",
+      "title": "OPC-30050 – OPC UA for PackML - Common Object Model: PackML",
+      "published": null,
+      "url": "https://reference.opcfoundation.org/specs/OPC-30050",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ISA-88 기반 PackML 상태 기계와 표준 명령을 OPC UA 정보 모델로 정의한 동반 규격의 공식 온라인 참조.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-074",
+      "org": "Jungbluth, S., Barth, T., Nußbaum, J., Hermann, J., & Ruskowski, M.",
+      "title": "Developing a skill-based flexible transport system using OPC UA",
+      "published": "2023",
+      "url": "https://www.degruyterbrill.com/document/doi/10.1515/auto-2022-0115/html?lang=en",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. at – Automatisierungstechnik 71(2) 163–175 게재 논문. OPC UA 정보 모델과 스킬 개념으로 운반 시스템을 제어하고 AGV 통신은 VDA 5050(MQTT)로 두는 사례를 제시한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "국내 로봇 관제·물류 현장에서 제조사별 동작 이름(운반·도킹·리프트)을 공통 의미로 맞추는 사전이나 표준화 작업(ECLASS 부합, KS 등)이 있는가?",
+      "areas": [
+        5,
+        28
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "q1-03 잔여(단계 1 페이지 3절·비교표 4절): IEEE 1872-2015 CORA, IEEE 1872.2-2021, W3C SSN/SOSA, PDDL, KnowRob 원문(또는 공식 공개 초안·OWL 파일)으로 다섯 정보 항목(전제조건, 파라미터 범위, 적재·환경 제약, 완료 확인 방법, 오류의 의미)의 담김 여부 확인 — 단계 1 완료 조건(비교표 작성)과 q1-03 답함 처리에 필요",
+    "q1-07(단계 1 페이지 3절): VDA 5050 2.0.0 태그 원문(raw.githubusercontent.com/VDA5050/VDA5050/2.0.0/…)의 팩트시트 스키마와 3.0.0 main 필드 대조(agvGeometry → mobileRobotGeometry, agvActions → mobileRobotActions 등) — 이번 실행은 2.0.0 대조를 하지 않았다",
+    "q1-08(단계 1 페이지 3절): 이번 실행 f8(MassRobotics JSON 스키마 필드)이 적재량·지원 작업·부착 장비 기술에 해당하는지 판정하고 스키마 판 번호 확인",
+    "q1-06(온톨로지 초안·단계 1 완료 조건): 분류 원문 5. 로봇 능력·작업 온톨로지 정의 요소 기준의 ROP용 능력 개념 요구 목록 초안 근거 조사 — 단계 1 두 번째 완료 조건에 필요",
+    "OPC UA for Robotics 노드셋의 메서드 목록과 형식별 소속 부(Part), OPC 40010-1 판·발행일 확인(비교표 OPC UA Robotics 행)",
+    "CSS 계열 스킬의 PreconditionCheck·ContextCheck·FeasibilityCheck 설명의 출처 논문 확정(온톨로지 초안 6절 스킬 속성 질문)",
+    "q4-06 조사 메모: 이번 실행 f21(두 연결 방식 매핑 표준을 검색 범위에서 찾지 못함)과 f20(Jungbluth 외 2023, VDA 5050 MQTT와 OPC UA 스킬 병행)을 q4-06 조사에서 재인용할 것",
+    "한국 자료 우선 규칙: 로봇 능력·스킬 기반 작업 기술이나 이종 로봇 의미 상호운용을 다룬 국내 학술·표준(KS, ECLASS 부합) 자료 — 이번 실행 한·영 검색에서 찾지 못했다",
+    "pipeline 담당 요청: 실행 컨텍스트 next_ref_id 가 게시·미게시 참고문헌 id(최대 ref-061)와 충돌했다(검증이 ref-062~ref-074 로 재부여). next_ref_id 산출 점검 필요",
+    "pipeline 담당 요청: 단계 페이지·온톨로지 초안·비교표는 H1 아래 상태 줄·H1 버전 표기를 바꿔야 해서 patches(H2 절 단위) 대신 content 로 보냈다. H1·머리 영역을 고칠 수 있는 패치 형식이 필요하다",
+    "corr-001(7. 화물·재고·자산 식별과 추적 7절 VDA 5050 행)은 이번 대상 페이지 밖이라 다음 해당 영역 갱신 실행에서 처리해야 한다. 이번 실행의 ref-062(3.0.0 팩트시트)·ref-031(3.0.0 명세)이 근거로 쓰일 수 있다"
+  ],
+  "fixes_applied": [
+    "참고문헌 id 충돌 — 브리프의 ref-044~ref-056 을 ref-062~ref-074 로 바꿔 단계 페이지·온톨로지 초안·비교표·아이디어 페이지의 각주, 프런트매터 sources, reference_updates 에 일관되게 썼고 재사용 출처 ref-022·ref-031·ref-036·ref-040 은 그대로 두었다(기존 ref-044~ref-050 은 건드리지 않음).",
+    "q1-03 부분 답 — 단계 페이지 2절 상태 '열림', 3절 소제목 '### q1-03 … (부분 답)'(명시 id 없음), backlog_updates 에 {q1-03, 조사 중, null} 로 냈다.",
+    "q1-04·q1-05 답함 — 3절에 '### q1-04 … {#q1-04}', '### q1-05 … {#q1-05}' 소제목을 두고 2절·backlog_updates 를 답함으로 냈으며, 결론 문장 f21·f26 은 [추정]으로 썼다.",
+    "f20 강등 — 단계 페이지 q1-04 절의 Jungbluth 외 문장을 [추정]으로 쓰고 '스킬을 운반 단위의 자기 기술 대안으로 논의' 구절을 뺐다(저자·at 71(2) 163–175·VDA 5050 MQTT·GetTransporter·ReleaseSpecificShuttle 만 사용).",
+    "f22 — Position 좌표 예시를 본문에 쓰지 않았고 저자는 'Li, X. 외'로 두었다.",
+    "f15 — INVALID_ORDER_ACTION 을 등급 WARNING 으로 보고한다고 단계 페이지 q1-04 절과 비교표 VDA 5050 행에 적었다.",
+    "인용 — ref-031·ref-067 을 포함한 모든 출처에서 직접 인용을 쓰지 않고 재서술했다.",
+    "단계 페이지 q1-02 절 — agvGeometry [추정][^ref-031] 문장을 f1 의 3.0.0 main 기준 [사실][^ref-062] 문장(기준일 2026-09-25)으로 바꾸고 agvGeometry 는 '2.0.0 원문과의 필드 대조는 실시하지 않았다'로 남겼으며, ref-032 의 CRITICAL·URGENT [추정] 문장은 태그를 그대로 두고 f6 의 3.0.0 오류 등급 [사실][^ref-063] 문장을 별도로 더했다.",
+    "비교표 — AAS 행의 ConditionContainer 표기를 ConstraintSet·PropertyConstraintContainer·TransitionConstraintContainer 로 바꾸고 상태는 '원문 미열람' 유지, fetched=true 출처만 쓴 VDA 5050·MassRobotics·CaSkMan 행을 '확인'으로, CaSkMan(f19·f24)·OPC 30050 PackML(f18) 을 '후보 밖' 행으로 근거 finding id 와 함께 추가했다.",
+    "각주 원문 미열람 표기 — ref-022·ref-036·ref-064·ref-065·ref-070~ref-074 각주에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 로 두었으며, ref-031·ref-040 각주에서는 이 표기를 뺐다.",
+    "온톨로지 초안 v0.2 — 승인 변경 6건만 반영: 오류 등급(2.0.0 WARNING·FATAL 병기, 3.0.0 WARNING·URGENT·CRITICAL·FATAL)·errorReferences·errorHint(f6), 개념 실행 상태 '확정'(f5·f11, 보조 f18), 관계 스킬 / 실행 상태를 드러낸다 / 실행 상태(f19, 보조 f17·f18)·기능 / 일반화된다 / 기능(f10·f24)·기능 / 구성된다 / 기능(f10), 기능 속성 '의미 참조'(f14·f23·f24); H1 '(v0.2)', 프런트매터 ontology_version '0.2', track_updates.ontology_draft_version '0.2', 4절 다이어그램 갱신.",
+    "온톨로지 초안 — 제약 종류 수정(f9)은 반영하지 않고 6절에 미해결 질문으로 두었으며, 6절 '스킬 상태 기계 속성' 항목을 새 관계로 다뤘다고 갱신했다.",
+    "f21 새 질문 — q4-06 과 중복이라 backlog_updates 에 넣지 않고 track_updates.log_entry 에 q4-06 조사 메모로만 남겼다.",
+    "f4 새 질문 — 단계 2 로 고쳐 q2-06(stage 2)으로 등록하고 단계 페이지 5절의 보낼 단계를 '단계 2. 로봇 문서 유형과 정보 구조 조사'로 썼다.",
+    "용어집 — 'VDA 5050' 정의를 지시 문장 그대로 update 로 냈고, '팩트시트'(차량 대신 이동로봇)·'자산관리셸'·'의미 식별자'를 new 로 냈다.",
+    "corr-001 — 대상 페이지 밖이라 처리하지 않았고 additional_research_requests 에 다음 갱신 실행으로 넘긴다고 적었다(corrections 반영 없음).",
+    "단계 페이지 6절·상태 줄 — 두 완료 조건 '미충족'·검증 판정 '미충족 · 미승인', 전환 '아니오(…막힌 질문 q1-03·q1-06·q1-07·q1-08)'로 썼고, 상태 줄을 답한 질문 4건·열린 질문 5건(q1-03·q1-06·q1-07·q1-08·q1-09)으로 맞췄다.",
+    "docs/ideas/robot-capability-ontology.md: 각주 정의 7개를 참고문헌에서 만들어 붙임: ref-031, ref-062, ref-064, ref-066, ref-067, ref-070, ref-072"
+  ],
+  "standards_updates": [
+    {
+      "name": "IDTA 02020 Capability Description (1.0)",
+      "kind": "표준",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0",
+      "related_areas": [
+        5,
+        28
+      ],
+      "summary": "자산관리셸의 능력 기술 서브모델 템플릿. 능력을 속성·제약(속성 제약·전이 제약)·능력을 구현하는 스킬로 기술하고 일반화·구성 관계 요소를 둔다(원문 미열람 표시).",
+      "ref_id": "ref-064"
+    },
+    {
+      "name": "Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1)",
+      "kind": "표준",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf",
+      "related_areas": [
+        5,
+        28
+      ],
+      "summary": "자산관리셸 메타모델 명세(2024). 서브모델 요소의 의미를 semanticId 로 ECLASS·IEC CDD 같은 외부 사전 식별자에 연결한다(원문 미열람).",
+      "ref_id": "ref-072"
+    },
+    {
+      "name": "CaSkMan (capability and skill ontology for manufacturing)",
+      "kind": "오픈소스",
+      "org": "CaSkade-Automation",
+      "url": "https://github.com/CaSkade-Automation/CaSkMan",
+      "related_areas": [
+        5
+      ],
+      "summary": "제조 설비의 능력·스킬·스킬 인터페이스(REST·OPC UA)를 기술하는 OWL 정렬 온톨로지로, VDI 3682·VDI 2860·DIN 8580·ISA 88·DIN EN 61360 을 잇는다.",
+      "ref_id": "ref-067"
+    },
+    {
+      "name": "OPC UA for PackML (OPC 30050)",
+      "kind": "표준",
+      "org": "OPC Foundation / OMAC",
+      "url": "https://reference.opcfoundation.org/specs/OPC-30050",
+      "related_areas": [
+        9,
+        28
+      ],
+      "summary": "ISA-88 기반 PackML 상태 기계와 표준 명령을 OPC UA 정보 모델로 정의한 동반 규격(판·발행일 미확인, 원문 미열람).",
+      "ref_id": "ref-073"
+    },
+    {
+      "name": "SOMA (Socio-physical Model of Activities) 온톨로지 저장소",
+      "kind": "오픈소스",
+      "org": "EASE CRC",
+      "url": "https://github.com/ease-crc/soma",
+      "related_areas": [
+        5
+      ],
+      "summary": "로봇용 활동 온톨로지 SOMA 의 공식 저장소. SOMA-ACT 모듈이 활동의 실행 상태와 충족되지 않은 기대를 나타내는 클래스를 정의한다.",
+      "ref_id": "ref-068"
+    }
+  ],
+  "area_reflection_proposals": [
+    {
+      "area_no": 5,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "능력 기술과 실행 인터페이스의 연결은 인터페이스 안 동작 이름 기반(VDA 5050·Open-RMF)과 능력–스킬–상태 기계 기반(CSS·IDTA 02020·CaSkMan·PackML) 두 방식으로 나뉘는 것으로 보인다 [추정](ref-062·ref-040·ref-064·ref-067·ref-036). 같은 이름 기능의 의미 차이는 고정 어휘·외부 사전 식별자(AAS semanticId)·표준 분류 하위 클래스·능력 계층·핵심 온톨로지·구성요소 기반 추론으로 다뤄진다 [추정](ref-031·ref-072·ref-067·ref-065·ref-071·ref-070). 근거: 트랙 실행 2026-09-25-06 f21·f26."
+    },
+    {
+      "area_no": 5,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "IDTA 02020 능력 기술 서브모델 1.0(능력·속성·속성 제약·전이 제약·스킬, 일반화·구성 관계; ref-064·ref-065, 원문 미열람 표시), CaSkMan 정렬 온톨로지(ref-067), AAS 메타모델 semanticId 의 외부 사전 참조(ref-072), VDA 5050 3.0.0 팩트시트 적재 명세·지원 동작 목록(ref-062). 근거: f1·f2·f9·f10·f19·f23·f24."
+    },
+    {
+      "area_no": 9,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "VDA 5050 3.0.0은 사전 정의 동작을 규격이 정하고 옮길 수 없는 동작만 제조사가 추가 정의해 팩트시트에 같은 형식으로 선언하게 하며, 수행 불가 동작 주문은 INVALID_ORDER_ACTION(등급 WARNING)으로 보고한다 [사실](ref-031·ref-062). Open-RMF 는 rmf_fleet actions 이름 목록 선언과 execute_action 콜백·execution.finished() 로 사용자 정의 동작을 실행한다 [사실](ref-040). 근거: f14·f15·f16."
+    },
+    {
+      "area_no": 9,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 3.0.0 공식 저장소 JSON 스키마: 지원 동작(mobileRobotActions)의 적용 범위·파라미터·차단 유형, 동작 상태 일곱 값(RETRIABLE 포함), 오류 등급 WARNING·URGENT·CRITICAL·FATAL(ref-062·ref-063). 동작별 완료 판정(pick·startCharging, ref-031). VDA 5050 MQTT 와 OPC UA 스킬을 함께 쓴 운반 시스템 사례 [추정](ref-074). 근거: f3·f5·f6·f7·f20."
+    },
+    {
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "MassRobotics AMR 상호운용 표준 공식 JSON 스키마(identityReport·statusReport 필드, 판 미확인; ref-066), OPC UA for Robotics 공식 노드셋 형식(TaskControlType·SafetyStateType·LoadType 등; ref-069), OPC 30050 PackML 상태 기계(ref-073, 원문 미열람), AAS semanticId 를 통한 ECLASS·IEC CDD 의미 참조(ref-072, 원문 미열람). 근거: f8·f12·f18·f23."
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+    "ontology_draft_version": "0.2",
+    "backlog_updates": [
+      {
+        "id": "q1-03",
+        "status": "조사 중",
+        "answer_link": null
+      },
+      {
+        "id": "q1-04",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-04"
+      },
+      {
+        "id": "q1-05",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-05"
+      },
+      {
+        "id": "q1-09",
+        "status": "열림",
+        "answer_link": null,
+        "question": "ECLASS 나 IEC 공통 데이터 사전에 이동로봇의 운반·도킹·리프트·충전 능력을 가리킬 수 있는 클래스·속성이 있는가?",
+        "stage": 1,
+        "origin": "f23"
+      },
+      {
+        "id": "q2-06",
+        "status": "열림",
+        "answer_link": null,
+        "question": "VDA 5050 3.0.0 팩트시트의 동작 파라미터에 허용 범위 필드가 없을 때, 제조사는 리프트 높이 같은 동작 한계를 물리 파라미터·적재 명세의 최소·최대 필드와 자유 문장 설명 가운데 어디에 적는가?",
+        "stage": 2,
+        "origin": "f4"
+      },
+      {
+        "id": "q2-07",
+        "status": "열림",
+        "answer_link": null,
+        "question": "제조사 매뉴얼·통합 가이드는 VDA 5050 추가 동작이나 Open-RMF 사용자 정의 동작의 의미·파라미터·완료 조건을 어떤 형식으로 설명하는가?",
+        "stage": 2,
+        "origin": "f16"
+      }
+    ],
+    "log_entry": "답한 질문: q1-04(f14~f21), q1-05(f22~f26); q1-03 은 부분 답 보강(f1~f13, IEEE 1872 계열·SSN·PDDL·KnowRob 원문 미열람으로 조사 중 유지) / 새 질문: q1-09(f23), q2-06(f4, 검증 지시로 단계 1 → 2), q2-07(f16); f21 제안 질문은 q4-06 과 중복이라 등록하지 않음 — q4-06 조사 메모: VDA 5050 사전 정의 동작과 IDTA 02020 능력·VDI 2860 분류를 매핑한 표준은 검색 범위에서 찾지 못함(f21), VDA 5050 MQTT 와 OPC UA 스킬 병행 사례 있음(f20, 추정) / 온톨로지 변경: v0.1 → v0.2 (2026-09-25, 근거 실행 2026-09-25-06): 개념 '오류' 수정(f6, 3.0.0 등급 WARNING·URGENT·CRITICAL·FATAL 과 참조·조치 힌트 속성), 개념 '실행 상태' 추가(f5·f11, 보조 f18), 관계 '스킬 / 실행 상태를 드러낸다 / 실행 상태' 추가(f19, 보조 f17·f18), 관계 '기능 / 일반화된다 / 기능' 추가(f10·f24), 관계 '기능 / 구성된다 / 기능' 추가(f10), 개념 '기능' 속성 '의미 참조' 추가(f14·f23·f24); 거부: 개념 '제약' 종류 수정(f9) → 6절 미해결 질문 / 완료 조건 평가: 미충족(부족: 비교표 IEEE 1872 계열·SSN·PDDL·KnowRob 행 다섯 정보 항목 미조사, ROP용 능력 개념 요구 목록 초안 미반영; 막힌 질문 q1-03·q1-06·q1-07·q1-08) / 세부영역 반영 제안: 5. 로봇 능력·작업 온톨로지 2건, 9. 로봇·제조사 관제 연동 2건, 28. 표준·상호운용성·다사업자 거버넌스 1건 / 다음 실행 제안: q1-06, q1-07, q1-08(이번 f1~f3·f8 재인용 가능), q1-03 잔여(IEEE 1872 계열·SSN·PDDL·KnowRob 원문)",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 5, 답함 4, 완료 조건 미충족"
+  }
+}

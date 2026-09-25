@@ -1079,11 +1079,15 @@ class Publisher:
         runs.write_json(p, data)
 
     def _apply_corrections(self) -> None:
-        ids = list(dict.fromkeys((self.v1.get("corrections_applied") or []) + (self.v2.get("corrections_applied") or [])))
+        # 이 실행의 대상 정정 요청(target.json corrections)만 처리한다. 검증 에이전트가 정정 요청함에서 본 다른 요청 id 를 적어도
+        # 반영·거절로 바꾸지 않는다(3부 배치의 트랙 실행이 다른 실행의 정정 요청을 거절 목록에 넣은 일이 있었다)
+        allowed = {c.get("id") for c in (self.target.get("corrections") or [])}
+        ids = [i for i in dict.fromkeys((self.v1.get("corrections_applied") or []) + (self.v2.get("corrections_applied") or []))
+               if i in allowed]
         rejected: dict = {}
         for v in (self.v1, self.v2):
             for r in (v or {}).get("corrections_rejected") or []:
-                if r.get("id") and r.get("id") not in ids:
+                if r.get("id") in allowed and r.get("id") not in ids:
                     rejected[r["id"]] = r.get("reason") or "사유 미기재"
         if not ids and not rejected:
             return
@@ -1916,6 +1920,10 @@ class Publisher:
                 return 0
             if not (self.args.dry_run or self.args.check_only):
                 self.reconcile_concurrent_changes()
+                self.remap_reference_ids()
+            elif getattr(self.args, "precheck", False):
+                # 사전 검사에서도 참고문헌 id 를 먼저 재배정한다: 병렬 실행이 같은 '다음 id'를 받은 충돌은 코드가 푸는 일이라
+                # 스토리텔러 형식 수정으로 돌려보내지 않는다(3부 배치 첫 트랙 실행에서 이 충돌로 형식 수정 1회·$2.37 이 들었다)
                 self.remap_reference_ids()
             self.step2_frontmatter()
             self.step3_protect()

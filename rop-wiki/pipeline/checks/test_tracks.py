@@ -163,10 +163,12 @@ class TestBacklogs(unittest.TestCase):
         for slug in NEW_TRACKS:
             cfg = _cfg(slug)
             items = json.loads(paths.track_backlog(slug).read_text(encoding="utf-8"))["items"]
+            # 시작 질문(제기 근거 "사용자")만 센다. 실행이 더한 후속 질문(제기 근거 finding id)과 답함·조사 중 상태 변화는 정상 운영이다
+            seed = [b for b in items if b["origin"] == "사용자"]
             for n in range(1, int(cfg["stages"]) + 1):
-                k = sum(1 for b in items if int(b["stage"]) == n)
+                k = sum(1 for b in seed if int(b["stage"]) == n)
                 self.assertTrue(3 <= k <= 5, f"{slug} 단계 {n} 시작 질문 {k}개(3~5개여야 한다)")
-            self.assertTrue(all(b["status"] == "열림" and b["origin"] == "사용자" for b in items))
+            self.assertTrue(all(b["status"] in ("열림", "조사 중", "답함", "보류") or str(b["status"]).startswith("보류") for b in items))
 
     def test_first_track_additions(self):
         items = {b["id"]: b for b in json.loads(paths.track_backlog(FIRST).read_text(encoding="utf-8"))["items"]}
@@ -275,7 +277,7 @@ class TestAreaTracksAndIdeas(unittest.TestCase):
             meta, body = fm.read(p)
             self.assertEqual(meta["type"], "idea")
             self.assertEqual(meta["track"], slug)
-            self.assertEqual(meta["status"], "seed")
+            self.assertIn(meta["status"], ("seed", "draft", "published", "verified", "needs_update"))   # 트랙 실행이 게시하면 seed 가 아니다
             heads = [l[3:].strip() for l in body.split("\n") if l.startswith("## ")]
             self.assertEqual(heads, IDEA_SECTIONS, p.name)
             self.assertIn(cfg["idea_definition"], body, "1절에 아이디어 정의 문구 그대로")

@@ -1,0 +1,906 @@
+{
+  "duration_api_ms": 443184,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.2878064000000005,
+  "usage": {
+    "input_tokens": 44,
+    "cache_creation_input_tokens": 157071,
+    "cache_read_input_tokens": 4496567,
+    "output_tokens": 32846,
+    "output_tokens_details": {
+      "thinking_tokens": 9420
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 157071,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 23164,
+        "cache_read_input_tokens": 227488,
+        "cache_creation_input_tokens": 3414,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3414
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 44,
+      "outputTokens": 32846,
+      "cacheReadInputTokens": 4496567,
+      "cacheCreationInputTokens": 157071,
+      "webSearchRequests": 0,
+      "costUSD": 2.8129774000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9420,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 255484,
+      "outputTokens": 11869,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 16,
+      "costUSD": 0.474829,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 32,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-08\",\"date\":\"2026-09-25\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":1,\"area_name\":\"1. 주문·업무 시스템 연계\",\"category\":\"A. 업무·공급망 설계\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음\",\"섹션 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 용어집에 ISA-95(ref-002)·SCOR(ref-001)만 연결되어 있음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문은 oq-002 뿐\"],\"research_questions\":[\"출고 우선순위가 바뀌면 이미 진행 중인 로봇 작업을 어떻게 바꿀까? [분류원문]\",\"상위 업무 시스템과 실행 계층 사이의 연계를 다루는 표준(ISA-95·B2MML, SCOR)은 주문·일정 요청과 그 변경·취소·상태를 어떤 구조와 동사로 주고받는가? (섹션 4·7 겨냥)\",\"로봇 관제 인터페이스(VDA 5050, Open-RMF, MassRobotics)는 진행 중인 작업의 갱신·취소·일시중지와 우선순위를 어떻게 다루며, WMS·ERP 쪽 인터페이스를 범위에 넣는가? (섹션 6·9 겨냥)\",\"WMS·WES·WCS와 로봇 관제를 잇는 실제 제품 연계 구조(SAP Warehouse Robotics 등)는 업무 작업을 로봇 작업으로 어떻게 바꾸고 결과를 되돌리는가? (섹션 5·6 겨냥)\",\"주문 우선순위가 동적으로 바뀌는 로봇 창고에서 배정·스케줄링을 다룬 연구는 무엇인가? (섹션 8·10 겨냥)\",\"국내 규제·인증·현장 자료(스마트물류센터 인증 등)는 업무 시스템과 자동화 설비 연계를 어떻게 다루는가? (한국 자료 우선, 섹션 3·8 겨냥, oq-002 관련)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"ASCM의 SCOR 모델은 공급망 핵심 활동을 Plan·Order·Source·Transform·Fulfill·Return 여섯 개 1수준 프로세스와 이를 아우르는 0수준 Orchestrate로 나누며, Order는 위치·결제·가격·이행 상태 등 주문 데이터를 포함한 고객 구매 활동을, Fulfill은 배송 일정 수립·피킹·포장·출하·설치·청구 같은 주문 이행 활동을 뜻한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-001\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(ASCM SCOR 프로세스 소개): Order process describes activities associated with the customer purchase ... fulfillment status. Fulfill 은 scheduling order delivery, picking, packing, shipping 포함. 원문 미열람 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f2\",\"claim\":\"ISA-95는 주로 4수준(ERP 등 사업 계획·물류: 기본 공장 운영 일정, 재고, 출하 요구)과 3수준(MES 등 제조 운영 관리) 사이의 인터페이스를 다루는 표준이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-053\",\"ref-002\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(ISA 표준 소개): primarily deals with the interface between levels 3 and 4. Level 4 는 basic plant operations schedule, inventory, shipping requirements. 두 출처 모두 ISA 발행이라 독립 교차 아님. 원문 미열람\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"ISA는 2025년 4월 ANSI/ISA-95.00.01-2025(IEC 62264-1 Mod) Part 1: Models and Terminology를 발표했으며, 2010년판을 개정해 기업 영역과 제조·제어 영역의 경계를 더 분명히 하는 변경을 담았다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-002\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ISA 보도자료 검색 요약: update to the 2010 version ... highlight the boundary between enterprise and manufacturing and control domains. 원문 미열람\",\"as_of\":\"2025-04\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"ISA-95 Part 5(ANSI/ISA-95.00.05-2018, Business-to-Manufacturing Transactions)는 3수준과 4수준 사이, 그리고 3수준 안의 정보 교환을 거래(transaction)로 정의하며 PROCESS·CHANGE·CANCEL·ACKNOWLEDGE 같은 동사와 거래 모델을 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-054\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ISA 게시 목차 PDF 검색 요약: 'Verbs and transaction models' 절, Table 1 동사 정의, Respond 선택 사항 표. 동사 전체 목록은 원문 미열람으로 미확인.\",\"as_of\":\"2018\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"B2MML은 MESA International이 관리하는 ISA-95(IEC/ISO 62264)의 XML 스키마(XSD) 구현이며, 같은 저장소에 JSON Schema 판(B2MML-JSON)도 제공된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-055\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README 원문: B2MML is \\\"an XML implementation of the ANSI/ISA-95, Enterprise-Control System Integration\\\" family of standards. B2MML-JSON 은 검증이 덜 되었다는 안내가 있음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"B2MML의 OperationsSchedule 스키마는 일정(OperationsSchedule) 아래에 우선순위(Priority)·시작·종료 시각·요청 상태(RequestState)를 가진 운영 요청(OperationsRequest)과 세그먼트 요구(SegmentRequirement)를 두고, Get·Show·Process·Acknowledge·Change·Respond·Cancel·Sync 여덟 가지 거래 요소를 정의한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-056\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"B2MML-OperationsSchedule.xsd: ProcessOperationsSchedule, ChangeOperationsSchedule, CancelOperationsSchedule, SyncOperationsSchedule 등 거래 요소와 OperationsRequest 의 Priority·RequestState 확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f7\",\"claim\":\"B2MML 공통 스키마의 요청 상태 값은 Forecast, Released, Waiting, Cancelled, Ready, Running, Completed, Aborted, Held, Suspended, Closed, Other이며 Other일 때 사용자 정의 값을 붙일 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-057\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"B2MML-Common.xsd RequestState1Type 열거값 확인, RequestStateType 은 OtherValue 속성으로 확장. 머리말 저작권 표기 'Copyright 2023 MESA International, Version 0701'.\",\"as_of\":\"2023\",\"flow_step\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f8\",\"claim\":\"VDA 5050 3.0.0은 관제(fleet control)와 이동로봇 사이의 통신만 범위로 하고, 경로·우선순위 결정 같은 교통 관리 로직과 그 밖의 통신 인터페이스를 범위에서 제외하므로 WMS·ERP와 관제 사이의 인터페이스는 정하지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"main 명세 원문: \\\"Other Communication Interfaces: Interfaces unrelated to the communication between a fleet control system and mobile robots are excluded.\\\" 교통 관리의 prioritization 도 제외 항목. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"VDA 5050 3.0.0에서 주문은 주행 허가된 기준 경로(base)와 예정 경로(horizon)로 나뉘고, 같은 주문의 갱신은 orderId를 유지한 채 orderUpdateId를 늘리며 이전 주문의 마지막 기준 노드를 첫 노드로 이어 붙이고, 추가로 허가된 노드가 없으면 로봇은 마지막 기준 노드에서 멈춘다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"main 명세(요약 도구 경유): stitching node 는 'the first node of the order update corresponds to the last base node of the previous order message'. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f10\",\"claim\":\"VDA 5050 3.0.0에서 로봇이 주문을 수행하는 중에 orderId가 다른 새 주문을 받으면 새 주문을 받아들이지 않고 기존 주문을 계속하며 오류 유형 OTHER_ORDER_ACTIVE(WARNING)를 보고하고, orderUpdateId가 현재 이하인 갱신은 OUTDATED_ORDER_UPDATE로 무시한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"main 명세(요약 도구 경유): \\\"The mobile robot shall not take over the new order in its internal buffer.\\\" 오류 등급 표기는 글자 단위 미확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"제약\"},{\"id\":\"f11\",\"claim\":\"VDA 5050 3.0.0의 즉시 동작 cancelOrder를 받으면 로봇은 가능한 한 빨리 멈추고, 예정된 동작은 FAILED로, 실행 중인 동작은 취소할 수 있으면 FAILED로, 취소할 수 없으면 끝날 때까지 수행한 뒤 FINISHED 또는 FAILED로 보고하며, 모든 이동·동작이 멈추면 cancelOrder가 FINISHED가 되고 대기 상태로 돌아간다(수행 중인 주문이 없으면 NO_ORDER_TO_CANCEL).\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"main 명세(요약 도구 경유): cancelOrder 수신 시 'the mobile robot shall attempt to stop as soon as possible'. orderId·orderUpdateId 는 유지. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"예외·성과\"},{\"id\":\"f12\",\"claim\":\"MassRobotics AMR 상호운용 표준의 공식 저장소 README는 표준의 목적을 서로 다른 로봇이 위치·속도·방향·상태·작업/가용 상태 등의 정보를 공유하는 것으로 설명하며, 작업 지시나 WMS 연계 인터페이스는 적지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-033\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README 원문: allows autonomous vehicles of different types to share information about their robot(s) location, speed, direction, health, tasking / availability. 판 번호 미확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"이번에 확인한 로봇 쪽 공개 규격(VDA 5050, MassRobotics)은 모두 관제–로봇 또는 로봇 간 정보 공유만 정하므로, 업무 시스템의 주문·변경·취소를 로봇 작업으로 바꾸고 결과를 되돌리는 계층은 규격 공백으로 남아 ROP가 채울 위치로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-033\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f8·f12 에서 도출한 추론. WMS–관제 사이 표준 인터페이스는 한·영 검색에서 찾지 못함(부재의 확인은 아님).\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Open-RMF는 작업 요청을 JSON 스키마 기반 API 요청으로 받으며, 가장 알맞은 플릿에 맡기는 dispatch_task_request와 특정 로봇에 맡기는 robot_task_request 두 방식이 있고, 사용자는 작업 취소나 단계 건너뛰기 요청을 보낼 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-062\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task_new 원문: \\\"You may take additional control over your tasks by sending requests to RMF to cancel a task or skip a phase.\\\" 작업 범주 Clean·Compose·Delivery·Patrol. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f15\",\"claim\":\"Open-RMF 작업 요청 스키마는 필수 항목 category·description과 함께 선택 항목으로 가장 이른 시작 시각(unix_millis_earliest_start_time), 우선순위(priority, 플릿이 지원하는 우선순위 스키마와 맞아야 함), 라벨, 요청자(requester)를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-058\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task_request.json: priority 설명 \\\"This must match a priority schema supported by a fleet.\\\" 우선순위의 값 형식 자체는 이 파일에서 정하지 않음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f16\",\"claim\":\"Open-RMF 작업 상태 스키마는 작업 진행 상태로 uninitialized·blocked·error·failed·queued·standby·underway·delayed·skipped·canceled·killed·completed 등의 값을 두고, 취소(cancellation)·강제 종료(killed) 요청 기록, 재개 정보(resumed_by)를 가진 중단(interruptions) 기록, 완료 시각과 예상 소요 시간(estimate_millis)을 담는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-059\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task_state.json 의 status enum 과 cancellation·killed·interruptions·unix_millis_finish_time·estimate_millis 필드 확인. 단계(phase)에는 original_estimate_millis 도 있음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f17\",\"claim\":\"Open-RMF의 작업 중단 요청(interrupt_task_request)은 task_id로 지정한 작업을 멈추게 하며, 중단된 작업은 재개 요청(resume_task_request)을 보내면 이어서 수행된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-060\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"스키마 설명 원문: \\\"An interrupted task will resume its task later when a resume_task_requested is sent.\\\" 라벨로 중단 사유를 남길 수 있음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f18\",\"claim\":\"Open-RMF의 배정은 디스패처가 새 작업 요청마다 모든 플릿 어댑터에 BidNotice를 보내고, 수행 가능한 플릿이 비용 추정을 담은 BidProposal로 응답하면 가장 빨리 끝남·최저 비용 같은 설정 가능한 기준으로 비교해 DispatchRequest로 낙찰하는 입찰 방식이며, 충전 작업은 충전량이 부족할 때 일정에 끼워 넣는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-061\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task 장 원문: \\\"When the Dispatcher receives a new task request ... it sends out a rmf_task_msgs/BidNotice message to all the fleet adapters.\\\" 플릿 쪽은 TaskPlanner 로 비용 산출. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f19\",\"claim\":\"이번에 연 Open-RMF 문서는 우선순위를 플릿별 스키마에 맡기고 이미 배정·수행 중인 작업의 우선순위를 바꾸는 요청 형식은 보이지 않아, 우선순위 변경은 취소 후 재요청이나 중단·재개 조합으로 처리해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-058\",\"ref-061\",\"ref-062\",\"ref-060\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f14·f15·f17·f18 에서 도출. 저장소의 전체 스키마 목록(우선순위 변경 요청 존재 여부)은 확인하지 못함 — 부재의 확인은 아님.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"제약\"},{\"id\":\"f20\",\"claim\":\"SAP Warehouse Robotics(SAP BTP 기반)는 SAP EWM과 연계해 로봇 작업을 제조사 관제(fleet management system)로 보내고, 제조사별로 구현하는 어댑터가 그 작업을 관제 API로 옮기며, 관제가 로봇 배정과 로봇 명령 변환을 맡는 구조를 문서화한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-063\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(SAP 도움말): adapter 는 SAP Warehouse Robotics 와 FMS 사이에서 robot tasks 를 FMS API 로 번역, FMS 는 task 를 로봇에 배정하고 명령으로 변환. 원문 미열람 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f21\",\"claim\":\"SAP 문서는 로봇이 처리할 수 있는 창고 작업을 취급 단위(handling unit, HU) 창고 작업으로 한정하고, 로봇용 창고 오더에는 HU 창고 작업 하나만 담도록 안내한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-063\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 검색 요약 'Robots can only process handling unit (HU) warehouse tasks', 'warehouse order ... contains only one HU warehouse task'. 제품 기능 제약이며 독립 확인 없음. 원문 미열람\",\"as_of\":\"2026-09-25\",\"flow_step\":\"피킹\",\"flow_item\":\"작업 대상\",\"source_unopened\":true,\"vendor_claim\":true},{\"id\":\"f22\",\"claim\":\"Zhang 외(2024, Transportation Research Part E)는 AMR 창고를 동적 우선순위 대기행렬 네트워크로 모델링했고, 실험에서 동적 우선순위 모델이 정적 우선순위·선착순(FCFS) 모델보다 지연 시간이 짧았으며 공정성 지표로 설정 결정 도구를 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-064\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록 검색 요약: dynamic priority model achieves shorter delay times than the static priority model and the FCFS model. 조건: 저자들의 대기행렬 모델 실험. vol. 192. 원문 미열람\",\"as_of\":\"2024\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f23\",\"claim\":\"SOAR(2026 프리프린트)는 로봇 이동형 풀필먼트 시스템(RMFS)의 주문 배정과 로봇 스케줄링을 사건 구동 마르코프 결정 과정으로 묶어, 비동기 시스템 사건마다 심층 강화학습 에이전트가 두 결정을 동시에 내리는 실시간 공동 최적화 방법을 제안한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-065\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2605.03842 검색 요약: Event-Driven Markov Decision Process ... simultaneous scheduling in response to asynchronous system events. 저자 소속 Beihang University·Geekplus. 원문 미열람\",\"as_of\":\"2026-05\",\"flow_step\":\"피킹\",\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f24\",\"claim\":\"국토교통부 스마트물류센터 인증(2020년 도입)은 하차·입고, 운반·적치, 보관·재고 관리, 피킹·분류, 검품·검수·포장, 상차·출고의 자동화 정도를 보는 기능영역과 건축물 구조 성능·성과관리·정보시스템을 보는 기반영역으로 평가해 1~5등급을 준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-066\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(인증 심사기준·보도): 기능영역 6개 과정, 기반영역 3개 관점, 1등급~5등급. 정보시스템 평가 세부 항목(WMS–설비 연계 기준)은 미확인. 원문 미열람 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f25\",\"claim\":\"국내 로봇 업체 자료는 WES가 WMS에서 받은 주문 정보로 출고 시각·SKU 수·주문 난이도에 따라 작업 우선순위를 재정렬하고, WCS가 AGV·로봇·컨베이어를 제어하며 장비 이상 시 작업을 다른 장비로 분배한다고 설명한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-067\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 검색 요약(씨메스 블로그 'WES · WCS · WMS, 무엇이 다를까요?'): 출고 시간, SKU 수, 주문 난이도에 따라 작업 우선순위를 자동으로 재정렬. 원문 미열람 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"시작 조건\",\"source_unopened\":true,\"vendor_claim\":true},{\"id\":\"f26\",\"claim\":\"출고 우선순위 변경을 진행 중인 로봇 작업에 반영하는 방법은 규격 동작에 비추어 (1) 아직 로봇에 내려가지 않은 작업의 대기열 재정렬, (2) VDA 5050에서는 다른 orderId가 거부되므로 cancelOrder 후 새 주문 발행, (3) Open-RMF의 중단·재개 또는 취소 후 재요청, (4) 취소 불가 동작은 끝까지 수행 뒤 다음 작업 조정으로 나뉘며, 선택은 이미 수행된 적재 상태와 취소 비용에 달려 있을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-060\",\"ref-062\",\"ref-056\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f6(B2MML Change·Cancel), f10·f11(VDA 5050 거부·취소 동작), f14·f17(Open-RMF 취소·중단)을 SCM 질문에 대응시킨 추론. 이 절차를 규정한 표준은 찾지 못함.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"예외·성과\"},{\"id\":\"f27\",\"claim\":\"상위 요청 상태(B2MML의 Running·Held·Suspended·Cancelled·Aborted·Completed)와 로봇 쪽 상태(Open-RMF 작업 상태, VDA 5050 동작 상태)는 이름과 단위가 달라, 결과를 업무 시스템에 되돌리려면 ROP가 두 상태 체계 사이의 대응표를 정의해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-057\",\"ref-059\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f7·f16 과 VDA 5050 동작 상태(FINISHED·FAILED 등)를 대조한 추론. 공개 대응표는 찾지 못함.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f28\",\"claim\":\"연계 대상: 어떤 주문을 먼저 낼지 정하는 우선순위 정책(납기·고객 등급·재고 정책)은 상위 업무 시스템(ERP·WMS)의 몫이고, ROP는 그 결과로 들어온 주문·변경·취소를 로봇 작업으로 바꾸어 실행하고 상태를 되돌리는 부분을 맡는 것이 분류 원문 9장의 상위 업무 시스템 경계와 확인한 규격 범위에 맞아 보인다.\",\"tag\":\"의견\",\"source_ids\":[\"ref-053\",\"ref-031\",\"ref-063\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2(ISA-95 4수준 대 3수준), f8(VDA 5050 범위), f20(SAP 구조: 업무 시스템→어댑터→관제)과 분류 원문 9장 '주문·납기·재고 제약을 받아 실행하고 결과 반영'을 대응시킨 판단.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true}],\"sources\":[{\"id\":\"ref-001\",\"org\":\"ASCM\",\"title\":\"SCOR Digital Standard\",\"published\":null,\"url\":\"https://www.ascm.org/corporate-solutions/standards-tools/scor-ds/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ASCM 의 공급망 운영 참조 모델. Plan·Order·Source·Transform·Fulfill·Return 과 Orchestrate 프로세스를 정의(이번 실행은 ASCM SCOR 프로세스 소개 검색 요약 사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-002\",\"org\":\"ISA\",\"title\":\"Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems\",\"published\":\"2025\",\"url\":\"https://www.isa.org/news-press-releases/2025/april/update-to-isa-95-standard-addresses-integration-of\",\"type\":\"기사\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ANSI/ISA-95.00.01-2025(Part 1) 발행을 알리는 ISA 보도자료. 기업·제조 제어 영역 경계를 분명히 한 개정 내용을 소개.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 공식 명세의 GitHub 저장소 본문(main 은 3.0.0 판). 범위, 주문 갱신(base·horizon), 주문 거부 오류, cancelOrder 동작을 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-033\",\"org\":\"MassRobotics\",\"title\":\"Autonomous Mobile Robot Standards Published by MassRobotics\",\"published\":\"2021-05\",\"url\":\"https://www.massrobotics.org/autonomous-mobile-robot-standards-published-by-massrobotics/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"MassRobotics AMR 상호운용 표준 발표. 이번 실행은 공식 저장소 README(공식 산출물)를 열어 표준 목적(위치·속도·상태·작업 가용 정보 공유)을 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/README.md\"},{\"id\":\"ref-053\",\"org\":\"ISA\",\"title\":\"ISA-95 Standard: Enterprise-Control System Integration\",\"published\":null,\"url\":\"https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ISA-95 시리즈 공식 소개 페이지. 3수준(제조 운영 관리)과 4수준(사업 계획·물류) 사이 인터페이스를 다룬다고 설명.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-054\",\"org\":\"ISA\",\"title\":\"ANSI/ISA-95.00.05-2018 Contents (Enterprise-Control System Integration – Part 5: Business-to-Manufacturing Transactions)\",\"published\":\"2018\",\"url\":\"https://www.isa.org/getmedia/8ab6de45-43da-488e-9c38-e228355c71c9/ISA-95-00-05-2018_toc.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ISA-95 Part 5(2018) 목차 공개본. 동사와 거래 모델, Respond 선택 사항 등 표 구성을 보여 준다.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-055\",\"org\":\"MESA International\",\"title\":\"B2MML-BatchML — README.md\",\"published\":null,\"url\":\"https://github.com/MESAInternational/B2MML-BatchML/blob/master/README.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"MESA 공식 저장소 README. B2MML 이 ISA-95(IEC/ISO 62264)의 XML 스키마 구현이고 BatchML·B2MML-JSON 도 제공함을 설명.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/README.md\"},{\"id\":\"ref-056\",\"org\":\"MESA International\",\"title\":\"B2MML-BatchML — Schema/B2MML-OperationsSchedule.xsd\",\"published\":null,\"url\":\"https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-OperationsSchedule.xsd\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"ISA-95 운영 일정(OperationsSchedule)·운영 요청의 XML 스키마. 우선순위·요청 상태 필드와 Process·Change·Cancel·Sync 등 거래 요소를 정의.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-OperationsSchedule.xsd\"},{\"id\":\"ref-057\",\"org\":\"MESA International\",\"title\":\"B2MML-BatchML — Schema/B2MML-Common.xsd\",\"published\":\"2023\",\"url\":\"https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"B2MML 공통 형식 스키마(저작권 2023, Version 0701 표기). 요청 상태 열거값(Released·Running·Held·Suspended·Cancelled 등)을 정의.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-Common.xsd\"},{\"id\":\"ref-058\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — schemas/task_request.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 요청 JSON 스키마. category·description 과 가장 이른 시작 시각·우선순위·라벨·요청자 선택 항목을 정의.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_request.json\"},{\"id\":\"ref-059\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 상태 JSON 스키마. 진행 상태 값, 취소·강제 종료·중단 기록, 완료 시각·예상 소요 시간을 정의.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_state.json\"},{\"id\":\"ref-060\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — schemas/interrupt_task_request.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/interrupt_task_request.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 중단 요청 JSON 스키마. task_id 로 작업을 멈추고 재개 요청으로 이어서 수행하게 한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/interrupt_task_request.json\"},{\"id\":\"ref-061\",\"org\":\"Open Robotics\",\"title\":\"Tasks in RMF - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/task.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 의 작업 디스패치(BidNotice·BidProposal·DispatchRequest 입찰, TaskPlanner 비용 산출, 충전 작업 삽입)를 설명하는 공식 문서.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md\"},{\"id\":\"ref-062\",\"org\":\"Open Robotics\",\"title\":\"Creating a new Task - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/task_new.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 에 ApiRequest 로 작업을 제출하는 방법(dispatch_task_request, robot_task_request)과 취소·단계 건너뛰기 요청을 안내하는 공식 문서.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_new.md\"},{\"id\":\"ref-063\",\"org\":\"SAP\",\"title\":\"Use SAP Warehouse Robotics - Fleet Management (SAP Help Portal)\",\"published\":null,\"url\":\"https://help.sap.com/docs/WAREHOUSE_ROBOTICS/cde7e2684f3c4e6c9034485e4307bd11/2b3d934ca17a4771b2f5b82d5aca9f93.html\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. SAP Warehouse Robotics 가 SAP EWM 로봇 작업을 어댑터를 거쳐 제조사 관제로 보내는 연계 방식과 로봇 처리 대상 창고 작업 조건을 설명하는 제품 문서.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-064\",\"org\":\"Zhang, Z., Gong, Y., Yuan, Z., & Chen, W.\",\"title\":\"Robotic warehouse systems considering dynamic priority\",\"published\":\"2024\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S1366554524003703\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. Transportation Research Part E 192권 논문. AMR 창고를 동적 우선순위 대기행렬 네트워크로 평가하고 정적 우선순위·FCFS 와 비교.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-065\",\"org\":\"SOAR 저자(Beihang University, Geekplus Technology)\",\"title\":\"SOAR: Real-Time Joint Optimization of Order Allocation and Robot Scheduling in Robotic Mobile Fulfillment Systems\",\"published\":\"2026-05\",\"url\":\"https://arxiv.org/abs/2605.03842\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 주문 배정과 로봇 스케줄링을 사건 구동 MDP 로 묶어 심층 강화학습으로 실시간 공동 최적화하는 프리프린트.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-066\",\"org\":\"한국교통연구원(인증스마트물류센터)\",\"title\":\"인증스마트물류센터 : 인증심사 > 심사기준 > 일반\",\"published\":null,\"url\":\"https://cslc.koti.re.kr/new_sub2/new_sub2_2_1\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 국토교통부 스마트물류센터 인증의 심사기준 안내. 기능영역(물류 처리 과정별 자동화)과 기반영역(구조 성능·성과관리·정보시스템), 등급 체계.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-067\",\"org\":\"씨메스(CMES)\",\"title\":\"물류 자동화 시스템을 이해하는 첫 걸음 : WES · WCS · WMS, 무엇이 다를까요?\",\"published\":null,\"url\":\"https://blog.cmesrobotics.ai/wes-wcs-wms\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 국내 로봇 업체 블로그. WMS·WES·WCS 의 역할 구분과 WES 의 작업 우선순위 재정렬, WCS 의 설비 제어를 설명.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f1·f2·f13·f24(업무 주문과 로봇 작업 사이의 규격 공백, 국내 인증의 정보시스템 평가) / 섹션 4: f2·f5·f6·f7·f9·f16(ISA-95 수준, B2MML 운영 요청·요청 상태, VDA 5050 base·horizon, Open-RMF 작업 상태) / 섹션 5: 출하 단계 우선순위 변경 시나리오 — 시작 조건 f25, 제약 f10·f19, 예외·성과 f11·f26, 완료·인계 f16·f27; 피킹 단계 작업 대상 f21 / 섹션 6: f6·f9·f10·f11·f14·f15·f17·f18·f20·f26·f27 / 섹션 7: ISA-95(ref-002·ref-053·ref-054 f3·f4), B2MML(f5·f6·f7), VDA 5050(f8~f11), Open-RMF API(f14~f18), MassRobotics(f12), SAP Warehouse Robotics(f20·f21 벤더 주장 병기) / 섹션 8: f22·f23(동적 우선순위·RL 공동 최적화; f23 은 27. AI·학습·적응과 모델 운영, 13. 작업 배정 — MRTA 와 양쪽 연결) / 섹션 9: f28·f13·f8(우선순위 정책은 연계 대상, ROP는 변환·실행·상태 반영) / 섹션 10: 2. 공정·워크플로 모델링(f7·f27 완료 상태), 9. 로봇·제조사 관제 연동(f8·f20), 12. 명령·작업 실행의 신뢰성(f10·f11), 13. 작업 배정 — MRTA(f18·f23), 14. 작업 순서·스케줄링(f22), 20. 예외 복구·재계획·업무 연속성(f11·f17·f26), 4. 성과·경제성·프로세스 개선(f22), 27. AI·학습·적응과 모델 운영(f23) / 섹션 11: open_questions_new 3건, oq-002 연결\"}],\"glossary_candidates\":[{\"term_ko\":\"B2MML\",\"term_en\":\"Business To Manufacturing Markup Language (B2MML)\",\"definition\":\"MESA International이 관리하는 ISA-95(IEC 62264) 데이터 모델의 XML 스키마 구현으로, 운영 일정·실적 같은 업무–제조 간 거래 메시지 형식을 제공한다.\"},{\"term_ko\":\"기준 경로·예정 경로\",\"term_en\":\"Base / Horizon (VDA 5050)\",\"definition\":\"VDA 5050 주문에서 로봇이 주행해도 되는 허가된 노드·엣지(기준 경로)와 아직 허가되지 않은 계획 경로(예정 경로)를 나눈 구분이다.\"},{\"term_ko\":\"작업 입찰\",\"term_en\":\"Task Bidding (Open-RMF)\",\"definition\":\"Open-RMF 디스패처가 새 작업을 플릿 어댑터들에 공지하고 각 플릿의 비용 제안을 비교해 작업을 맡기는 배정 방식이다.\"}],\"open_questions_new\":[\"업무 시스템(WMS·WES·ERP)과 다제조사 로봇 관제 사이의 주문·변경·취소·결과 보고를 정한 공개 표준이나 공동 규격이 있는가, 없다면 B2MML 같은 ISA-95 구현을 창고 물류에 쓰는 사례가 있는가? | 관련 영역: 1. 주문·업무 시스템 연계, 9. 로봇·제조사 관제 연동, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f13 | 종류: 일반\",\"출고 우선순위가 바뀌었을 때 이미 적재를 시작한 로봇 작업을 취소 후 재발행·중단 후 재개·끝까지 수행 중 무엇으로 처리할지 정하는 기준과 그 비용(처리량·지연)은 어떻게 평가하는가? | 관련 영역: 1. 주문·업무 시스템 연계, 20. 예외 복구·재계획·업무 연속성, 14. 작업 순서·스케줄링 | 근거: f26 | 종류: 일반\",\"국토교통부 스마트물류센터 인증의 정보시스템 평가는 WMS와 로봇·자동화 설비의 연계 수준(작업 지시·실적 반영)을 어떤 세부 항목으로 평가하는가? | 관련 영역: 1. 주문·업무 시스템 연계, 4. 성과·경제성·프로세스 개선 | 근거: f24 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":19,\"cross_checked_count\":0,\"unverified\":[\"f4 ISA-95 Part 5 동사 전체 목록(SYNC·GET·SHOW·RESPOND 포함 여부)은 목차 검색 요약만 확인, B2MML(f6)의 여덟 거래 요소는 구현 스키마 기준\",\"f9~f11 VDA 5050 문구는 WebFetch 요약 모델을 거친 인용이라 글자 단위 일치 미확인\",\"f15 Open-RMF 우선순위 스키마의 실제 값 형식(플릿 지원 priority 스키마) 미확인\",\"f19 rmf_api_msgs 전체 스키마 목록(우선순위 변경 요청 존재 여부) 미확인\",\"f20·f21 SAP 도움말 원문 미열람, 어느 문서(관리 가이드·도움말 페이지)에 있는 문구인지 확정 못 함\",\"f22 논문 본문의 모델 가정·수치 미확인\",\"f24 인증 정보시스템 세부 평가 항목 미확인\",\"모든 finding 교차 확인 실패: 표준별 발행 기관 1차 출처만 있음(ISA 소개와 ISA 보도자료는 같은 기관, B2MML 은 ISA-95 의 구현이라 독립으로 보지 않음)\",\"ref-031·ref-055·ref-056·ref-058~ref-063·ref-066·ref-067 발행일 미확인\"],\"scope_violations\":[\"f28: 우선순위 정책 결정은 분류 원문 9장 '상위 업무 시스템'의 외부 연계 영역이라 '연계 대상: '으로 표시함\",\"f23: 강화학습 기반 배정은 27. AI·학습·적응과 모델 운영의 방법이 13. 작업 배정 — MRTA 에 적용된 것이므로 두 영역에 함께 연결하도록 제안함\"],\"budget_used\":{\"queries\":16,\"sources\":15},\"limits\":\"fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 저장소 원문(VDA 5050 main 명세, MassRobotics README, B2MML README·OperationsSchedule·Common 스키마, Open-RMF rmf_api_msgs 스키마 3건, ros2multirobotbook task·task_new 장)은 열어 fetched=true 로 표시했고, ISA·ASCM·SAP·논문·국내 인증·업체 블로그는 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium)이다. 씨메스 블로그 직접 열기는 프록시가 거부했다. 검색 16회/30, 신규 출처 15건/15(상한 도달, ref-053~ref-067), 재사용 4건(ref-001, ref-002, ref-031, ref-033 — ref-033 은 소스 미러의 공식 저장소 README 로 열람). 신규 출처 상한으로 Open-RMF cancel_task_request 스키마(열람함)와 Mecalux 등 WES 해설 자료는 출처로 넣지 않았다. 주의: 실행 컨텍스트 next_ref_id(ref-053)를 따랐으나 이전 브리프 2026-09-25-04·05·06 도 ref-053 이후 번호를 다른 출처에 부여했으므로 id 충돌 여부는 퍼블리셔 확인 필요. 한국 자료: 국토교통부 스마트물류센터 인증(ref-066)과 국내 업체 블로그(ref-067)뿐이며 WMS–로봇 연동을 다룬 국내 학술 자료는 한국어 검색 2회에서 찾지 못했다. oq-002(국내 SSCC·EPCIS–로봇 연결 사례)는 이번 범위에서 새 근거가 없어 해결 제안하지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 은 f23 하나이며 13. 작업 배정 — MRTA 와 함께 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. 입력의 이전 브리프 7건을 확인했으며 이 영역을 직접 다룬 이전 조사는 없었다.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-25-08",
+    "date": "2026-09-25",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 1,
+      "area_name": "1. 주문·업무 시스템 연계",
+      "category": "A. 업무·공급망 설계"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음",
+      "섹션 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 용어집에 ISA-95(ref-002)·SCOR(ref-001)만 연결되어 있음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문은 oq-002 뿐"
+    ],
+    "research_questions": [
+      "출고 우선순위가 바뀌면 이미 진행 중인 로봇 작업을 어떻게 바꿀까? [분류원문]",
+      "상위 업무 시스템과 실행 계층 사이의 연계를 다루는 표준(ISA-95·B2MML, SCOR)은 주문·일정 요청과 그 변경·취소·상태를 어떤 구조와 동사로 주고받는가? (섹션 4·7 겨냥)",
+      "로봇 관제 인터페이스(VDA 5050, Open-RMF, MassRobotics)는 진행 중인 작업의 갱신·취소·일시중지와 우선순위를 어떻게 다루며, WMS·ERP 쪽 인터페이스를 범위에 넣는가? (섹션 6·9 겨냥)",
+      "WMS·WES·WCS와 로봇 관제를 잇는 실제 제품 연계 구조(SAP Warehouse Robotics 등)는 업무 작업을 로봇 작업으로 어떻게 바꾸고 결과를 되돌리는가? (섹션 5·6 겨냥)",
+      "주문 우선순위가 동적으로 바뀌는 로봇 창고에서 배정·스케줄링을 다룬 연구는 무엇인가? (섹션 8·10 겨냥)",
+      "국내 규제·인증·현장 자료(스마트물류센터 인증 등)는 업무 시스템과 자동화 설비 연계를 어떻게 다루는가? (한국 자료 우선, 섹션 3·8 겨냥, oq-002 관련)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "ASCM의 SCOR 모델은 공급망 핵심 활동을 Plan·Order·Source·Transform·Fulfill·Return 여섯 개 1수준 프로세스와 이를 아우르는 0수준 Orchestrate로 나누며, Order는 위치·결제·가격·이행 상태 등 주문 데이터를 포함한 고객 구매 활동을, Fulfill은 배송 일정 수립·피킹·포장·출하·설치·청구 같은 주문 이행 활동을 뜻한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-001"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(ASCM SCOR 프로세스 소개): Order process describes activities associated with the customer purchase ... fulfillment status. Fulfill 은 scheduling order delivery, picking, packing, shipping 포함. 원문 미열람 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f2",
+        "claim": "ISA-95는 주로 4수준(ERP 등 사업 계획·물류: 기본 공장 운영 일정, 재고, 출하 요구)과 3수준(MES 등 제조 운영 관리) 사이의 인터페이스를 다루는 표준이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-053",
+          "ref-002"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(ISA 표준 소개): primarily deals with the interface between levels 3 and 4. Level 4 는 basic plant operations schedule, inventory, shipping requirements. 두 출처 모두 ISA 발행이라 독립 교차 아님. 원문 미열람",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "ISA는 2025년 4월 ANSI/ISA-95.00.01-2025(IEC 62264-1 Mod) Part 1: Models and Terminology를 발표했으며, 2010년판을 개정해 기업 영역과 제조·제어 영역의 경계를 더 분명히 하는 변경을 담았다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-002"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ISA 보도자료 검색 요약: update to the 2010 version ... highlight the boundary between enterprise and manufacturing and control domains. 원문 미열람",
+        "as_of": "2025-04",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "ISA-95 Part 5(ANSI/ISA-95.00.05-2018, Business-to-Manufacturing Transactions)는 3수준과 4수준 사이, 그리고 3수준 안의 정보 교환을 거래(transaction)로 정의하며 PROCESS·CHANGE·CANCEL·ACKNOWLEDGE 같은 동사와 거래 모델을 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-054"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ISA 게시 목차 PDF 검색 요약: 'Verbs and transaction models' 절, Table 1 동사 정의, Respond 선택 사항 표. 동사 전체 목록은 원문 미열람으로 미확인.",
+        "as_of": "2018",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "B2MML은 MESA International이 관리하는 ISA-95(IEC/ISO 62264)의 XML 스키마(XSD) 구현이며, 같은 저장소에 JSON Schema 판(B2MML-JSON)도 제공된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-055"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README 원문: B2MML is \"an XML implementation of the ANSI/ISA-95, Enterprise-Control System Integration\" family of standards. B2MML-JSON 은 검증이 덜 되었다는 안내가 있음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "B2MML의 OperationsSchedule 스키마는 일정(OperationsSchedule) 아래에 우선순위(Priority)·시작·종료 시각·요청 상태(RequestState)를 가진 운영 요청(OperationsRequest)과 세그먼트 요구(SegmentRequirement)를 두고, Get·Show·Process·Acknowledge·Change·Respond·Cancel·Sync 여덟 가지 거래 요소를 정의한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-056"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "B2MML-OperationsSchedule.xsd: ProcessOperationsSchedule, ChangeOperationsSchedule, CancelOperationsSchedule, SyncOperationsSchedule 등 거래 요소와 OperationsRequest 의 Priority·RequestState 확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f7",
+        "claim": "B2MML 공통 스키마의 요청 상태 값은 Forecast, Released, Waiting, Cancelled, Ready, Running, Completed, Aborted, Held, Suspended, Closed, Other이며 Other일 때 사용자 정의 값을 붙일 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-057"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "B2MML-Common.xsd RequestState1Type 열거값 확인, RequestStateType 은 OtherValue 속성으로 확장. 머리말 저작권 표기 'Copyright 2023 MESA International, Version 0701'.",
+        "as_of": "2023",
+        "flow_step": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f8",
+        "claim": "VDA 5050 3.0.0은 관제(fleet control)와 이동로봇 사이의 통신만 범위로 하고, 경로·우선순위 결정 같은 교통 관리 로직과 그 밖의 통신 인터페이스를 범위에서 제외하므로 WMS·ERP와 관제 사이의 인터페이스는 정하지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "main 명세 원문: \"Other Communication Interfaces: Interfaces unrelated to the communication between a fleet control system and mobile robots are excluded.\" 교통 관리의 prioritization 도 제외 항목. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "VDA 5050 3.0.0에서 주문은 주행 허가된 기준 경로(base)와 예정 경로(horizon)로 나뉘고, 같은 주문의 갱신은 orderId를 유지한 채 orderUpdateId를 늘리며 이전 주문의 마지막 기준 노드를 첫 노드로 이어 붙이고, 추가로 허가된 노드가 없으면 로봇은 마지막 기준 노드에서 멈춘다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "main 명세(요약 도구 경유): stitching node 는 'the first node of the order update corresponds to the last base node of the previous order message'. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f10",
+        "claim": "VDA 5050 3.0.0에서 로봇이 주문을 수행하는 중에 orderId가 다른 새 주문을 받으면 새 주문을 받아들이지 않고 기존 주문을 계속하며 오류 유형 OTHER_ORDER_ACTIVE(WARNING)를 보고하고, orderUpdateId가 현재 이하인 갱신은 OUTDATED_ORDER_UPDATE로 무시한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "main 명세(요약 도구 경유): \"The mobile robot shall not take over the new order in its internal buffer.\" 오류 등급 표기는 글자 단위 미확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f11",
+        "claim": "VDA 5050 3.0.0의 즉시 동작 cancelOrder를 받으면 로봇은 가능한 한 빨리 멈추고, 예정된 동작은 FAILED로, 실행 중인 동작은 취소할 수 있으면 FAILED로, 취소할 수 없으면 끝날 때까지 수행한 뒤 FINISHED 또는 FAILED로 보고하며, 모든 이동·동작이 멈추면 cancelOrder가 FINISHED가 되고 대기 상태로 돌아간다(수행 중인 주문이 없으면 NO_ORDER_TO_CANCEL).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "main 명세(요약 도구 경유): cancelOrder 수신 시 'the mobile robot shall attempt to stop as soon as possible'. orderId·orderUpdateId 는 유지. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f12",
+        "claim": "MassRobotics AMR 상호운용 표준의 공식 저장소 README는 표준의 목적을 서로 다른 로봇이 위치·속도·방향·상태·작업/가용 상태 등의 정보를 공유하는 것으로 설명하며, 작업 지시나 WMS 연계 인터페이스는 적지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-033"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README 원문: allows autonomous vehicles of different types to share information about their robot(s) location, speed, direction, health, tasking / availability. 판 번호 미확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "이번에 확인한 로봇 쪽 공개 규격(VDA 5050, MassRobotics)은 모두 관제–로봇 또는 로봇 간 정보 공유만 정하므로, 업무 시스템의 주문·변경·취소를 로봇 작업으로 바꾸고 결과를 되돌리는 계층은 규격 공백으로 남아 ROP가 채울 위치로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-033"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f8·f12 에서 도출한 추론. WMS–관제 사이 표준 인터페이스는 한·영 검색에서 찾지 못함(부재의 확인은 아님).",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Open-RMF는 작업 요청을 JSON 스키마 기반 API 요청으로 받으며, 가장 알맞은 플릿에 맡기는 dispatch_task_request와 특정 로봇에 맡기는 robot_task_request 두 방식이 있고, 사용자는 작업 취소나 단계 건너뛰기 요청을 보낼 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-062"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task_new 원문: \"You may take additional control over your tasks by sending requests to RMF to cancel a task or skip a phase.\" 작업 범주 Clean·Compose·Delivery·Patrol. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f15",
+        "claim": "Open-RMF 작업 요청 스키마는 필수 항목 category·description과 함께 선택 항목으로 가장 이른 시작 시각(unix_millis_earliest_start_time), 우선순위(priority, 플릿이 지원하는 우선순위 스키마와 맞아야 함), 라벨, 요청자(requester)를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-058"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task_request.json: priority 설명 \"This must match a priority schema supported by a fleet.\" 우선순위의 값 형식 자체는 이 파일에서 정하지 않음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f16",
+        "claim": "Open-RMF 작업 상태 스키마는 작업 진행 상태로 uninitialized·blocked·error·failed·queued·standby·underway·delayed·skipped·canceled·killed·completed 등의 값을 두고, 취소(cancellation)·강제 종료(killed) 요청 기록, 재개 정보(resumed_by)를 가진 중단(interruptions) 기록, 완료 시각과 예상 소요 시간(estimate_millis)을 담는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-059"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task_state.json 의 status enum 과 cancellation·killed·interruptions·unix_millis_finish_time·estimate_millis 필드 확인. 단계(phase)에는 original_estimate_millis 도 있음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f17",
+        "claim": "Open-RMF의 작업 중단 요청(interrupt_task_request)은 task_id로 지정한 작업을 멈추게 하며, 중단된 작업은 재개 요청(resume_task_request)을 보내면 이어서 수행된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-060"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "스키마 설명 원문: \"An interrupted task will resume its task later when a resume_task_requested is sent.\" 라벨로 중단 사유를 남길 수 있음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f18",
+        "claim": "Open-RMF의 배정은 디스패처가 새 작업 요청마다 모든 플릿 어댑터에 BidNotice를 보내고, 수행 가능한 플릿이 비용 추정을 담은 BidProposal로 응답하면 가장 빨리 끝남·최저 비용 같은 설정 가능한 기준으로 비교해 DispatchRequest로 낙찰하는 입찰 방식이며, 충전 작업은 충전량이 부족할 때 일정에 끼워 넣는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-061"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task 장 원문: \"When the Dispatcher receives a new task request ... it sends out a rmf_task_msgs/BidNotice message to all the fleet adapters.\" 플릿 쪽은 TaskPlanner 로 비용 산출. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f19",
+        "claim": "이번에 연 Open-RMF 문서는 우선순위를 플릿별 스키마에 맡기고 이미 배정·수행 중인 작업의 우선순위를 바꾸는 요청 형식은 보이지 않아, 우선순위 변경은 취소 후 재요청이나 중단·재개 조합으로 처리해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-058",
+          "ref-061",
+          "ref-062",
+          "ref-060"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f14·f15·f17·f18 에서 도출. 저장소의 전체 스키마 목록(우선순위 변경 요청 존재 여부)은 확인하지 못함 — 부재의 확인은 아님.",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f20",
+        "claim": "SAP Warehouse Robotics(SAP BTP 기반)는 SAP EWM과 연계해 로봇 작업을 제조사 관제(fleet management system)로 보내고, 제조사별로 구현하는 어댑터가 그 작업을 관제 API로 옮기며, 관제가 로봇 배정과 로봇 명령 변환을 맡는 구조를 문서화한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-063"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(SAP 도움말): adapter 는 SAP Warehouse Robotics 와 FMS 사이에서 robot tasks 를 FMS API 로 번역, FMS 는 task 를 로봇에 배정하고 명령으로 변환. 원문 미열람 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f21",
+        "claim": "SAP 문서는 로봇이 처리할 수 있는 창고 작업을 취급 단위(handling unit, HU) 창고 작업으로 한정하고, 로봇용 창고 오더에는 HU 창고 작업 하나만 담도록 안내한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-063"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 검색 요약 'Robots can only process handling unit (HU) warehouse tasks', 'warehouse order ... contains only one HU warehouse task'. 제품 기능 제약이며 독립 확인 없음. 원문 미열람",
+        "as_of": "2026-09-25",
+        "flow_step": "피킹",
+        "flow_item": "작업 대상",
+        "source_unopened": true,
+        "vendor_claim": true
+      },
+      {
+        "id": "f22",
+        "claim": "Zhang 외(2024, Transportation Research Part E)는 AMR 창고를 동적 우선순위 대기행렬 네트워크로 모델링했고, 실험에서 동적 우선순위 모델이 정적 우선순위·선착순(FCFS) 모델보다 지연 시간이 짧았으며 공정성 지표로 설정 결정 도구를 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-064"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록 검색 요약: dynamic priority model achieves shorter delay times than the static priority model and the FCFS model. 조건: 저자들의 대기행렬 모델 실험. vol. 192. 원문 미열람",
+        "as_of": "2024",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f23",
+        "claim": "SOAR(2026 프리프린트)는 로봇 이동형 풀필먼트 시스템(RMFS)의 주문 배정과 로봇 스케줄링을 사건 구동 마르코프 결정 과정으로 묶어, 비동기 시스템 사건마다 심층 강화학습 에이전트가 두 결정을 동시에 내리는 실시간 공동 최적화 방법을 제안한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-065"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2605.03842 검색 요약: Event-Driven Markov Decision Process ... simultaneous scheduling in response to asynchronous system events. 저자 소속 Beihang University·Geekplus. 원문 미열람",
+        "as_of": "2026-05",
+        "flow_step": "피킹",
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f24",
+        "claim": "국토교통부 스마트물류센터 인증(2020년 도입)은 하차·입고, 운반·적치, 보관·재고 관리, 피킹·분류, 검품·검수·포장, 상차·출고의 자동화 정도를 보는 기능영역과 건축물 구조 성능·성과관리·정보시스템을 보는 기반영역으로 평가해 1~5등급을 준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-066"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(인증 심사기준·보도): 기능영역 6개 과정, 기반영역 3개 관점, 1등급~5등급. 정보시스템 평가 세부 항목(WMS–설비 연계 기준)은 미확인. 원문 미열람 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f25",
+        "claim": "국내 로봇 업체 자료는 WES가 WMS에서 받은 주문 정보로 출고 시각·SKU 수·주문 난이도에 따라 작업 우선순위를 재정렬하고, WCS가 AGV·로봇·컨베이어를 제어하며 장비 이상 시 작업을 다른 장비로 분배한다고 설명한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-067"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 검색 요약(씨메스 블로그 'WES · WCS · WMS, 무엇이 다를까요?'): 출고 시간, SKU 수, 주문 난이도에 따라 작업 우선순위를 자동으로 재정렬. 원문 미열람 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "시작 조건",
+        "source_unopened": true,
+        "vendor_claim": true
+      },
+      {
+        "id": "f26",
+        "claim": "출고 우선순위 변경을 진행 중인 로봇 작업에 반영하는 방법은 규격 동작에 비추어 (1) 아직 로봇에 내려가지 않은 작업의 대기열 재정렬, (2) VDA 5050에서는 다른 orderId가 거부되므로 cancelOrder 후 새 주문 발행, (3) Open-RMF의 중단·재개 또는 취소 후 재요청, (4) 취소 불가 동작은 끝까지 수행 뒤 다음 작업 조정으로 나뉘며, 선택은 이미 수행된 적재 상태와 취소 비용에 달려 있을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-060",
+          "ref-062",
+          "ref-056"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f6(B2MML Change·Cancel), f10·f11(VDA 5050 거부·취소 동작), f14·f17(Open-RMF 취소·중단)을 SCM 질문에 대응시킨 추론. 이 절차를 규정한 표준은 찾지 못함.",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f27",
+        "claim": "상위 요청 상태(B2MML의 Running·Held·Suspended·Cancelled·Aborted·Completed)와 로봇 쪽 상태(Open-RMF 작업 상태, VDA 5050 동작 상태)는 이름과 단위가 달라, 결과를 업무 시스템에 되돌리려면 ROP가 두 상태 체계 사이의 대응표를 정의해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-057",
+          "ref-059",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f7·f16 과 VDA 5050 동작 상태(FINISHED·FAILED 등)를 대조한 추론. 공개 대응표는 찾지 못함.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f28",
+        "claim": "연계 대상: 어떤 주문을 먼저 낼지 정하는 우선순위 정책(납기·고객 등급·재고 정책)은 상위 업무 시스템(ERP·WMS)의 몫이고, ROP는 그 결과로 들어온 주문·변경·취소를 로봇 작업으로 바꾸어 실행하고 상태를 되돌리는 부분을 맡는 것이 분류 원문 9장의 상위 업무 시스템 경계와 확인한 규격 범위에 맞아 보인다.",
+        "tag": "의견",
+        "source_ids": [
+          "ref-053",
+          "ref-031",
+          "ref-063"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2(ISA-95 4수준 대 3수준), f8(VDA 5050 범위), f20(SAP 구조: 업무 시스템→어댑터→관제)과 분류 원문 9장 '주문·납기·재고 제약을 받아 실행하고 결과 반영'을 대응시킨 판단.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-001",
+        "org": "ASCM",
+        "title": "SCOR Digital Standard",
+        "published": null,
+        "url": "https://www.ascm.org/corporate-solutions/standards-tools/scor-ds/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ASCM 의 공급망 운영 참조 모델. Plan·Order·Source·Transform·Fulfill·Return 과 Orchestrate 프로세스를 정의(이번 실행은 ASCM SCOR 프로세스 소개 검색 요약 사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-002",
+        "org": "ISA",
+        "title": "Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems",
+        "published": "2025",
+        "url": "https://www.isa.org/news-press-releases/2025/april/update-to-isa-95-standard-addresses-integration-of",
+        "type": "기사",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ANSI/ISA-95.00.01-2025(Part 1) 발행을 알리는 ISA 보도자료. 기업·제조 제어 영역 경계를 분명히 한 개정 내용을 소개.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(main 은 3.0.0 판). 범위, 주문 갱신(base·horizon), 주문 거부 오류, cancelOrder 동작을 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-033",
+        "org": "MassRobotics",
+        "title": "Autonomous Mobile Robot Standards Published by MassRobotics",
+        "published": "2021-05",
+        "url": "https://www.massrobotics.org/autonomous-mobile-robot-standards-published-by-massrobotics/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "MassRobotics AMR 상호운용 표준 발표. 이번 실행은 공식 저장소 README(공식 산출물)를 열어 표준 목적(위치·속도·상태·작업 가용 정보 공유)을 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/README.md"
+      },
+      {
+        "id": "ref-053",
+        "org": "ISA",
+        "title": "ISA-95 Standard: Enterprise-Control System Integration",
+        "published": null,
+        "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ISA-95 시리즈 공식 소개 페이지. 3수준(제조 운영 관리)과 4수준(사업 계획·물류) 사이 인터페이스를 다룬다고 설명.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-054",
+        "org": "ISA",
+        "title": "ANSI/ISA-95.00.05-2018 Contents (Enterprise-Control System Integration – Part 5: Business-to-Manufacturing Transactions)",
+        "published": "2018",
+        "url": "https://www.isa.org/getmedia/8ab6de45-43da-488e-9c38-e228355c71c9/ISA-95-00-05-2018_toc.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ISA-95 Part 5(2018) 목차 공개본. 동사와 거래 모델, Respond 선택 사항 등 표 구성을 보여 준다.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-055",
+        "org": "MESA International",
+        "title": "B2MML-BatchML — README.md",
+        "published": null,
+        "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/README.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "MESA 공식 저장소 README. B2MML 이 ISA-95(IEC/ISO 62264)의 XML 스키마 구현이고 BatchML·B2MML-JSON 도 제공함을 설명.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/README.md"
+      },
+      {
+        "id": "ref-056",
+        "org": "MESA International",
+        "title": "B2MML-BatchML — Schema/B2MML-OperationsSchedule.xsd",
+        "published": null,
+        "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-OperationsSchedule.xsd",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "ISA-95 운영 일정(OperationsSchedule)·운영 요청의 XML 스키마. 우선순위·요청 상태 필드와 Process·Change·Cancel·Sync 등 거래 요소를 정의.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-OperationsSchedule.xsd"
+      },
+      {
+        "id": "ref-057",
+        "org": "MESA International",
+        "title": "B2MML-BatchML — Schema/B2MML-Common.xsd",
+        "published": "2023",
+        "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "B2MML 공통 형식 스키마(저작권 2023, Version 0701 표기). 요청 상태 열거값(Released·Running·Held·Suspended·Cancelled 등)을 정의.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-Common.xsd"
+      },
+      {
+        "id": "ref-058",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — schemas/task_request.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 요청 JSON 스키마. category·description 과 가장 이른 시작 시각·우선순위·라벨·요청자 선택 항목을 정의.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_request.json"
+      },
+      {
+        "id": "ref-059",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 상태 JSON 스키마. 진행 상태 값, 취소·강제 종료·중단 기록, 완료 시각·예상 소요 시간을 정의.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_state.json"
+      },
+      {
+        "id": "ref-060",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — schemas/interrupt_task_request.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/interrupt_task_request.json",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 중단 요청 JSON 스키마. task_id 로 작업을 멈추고 재개 요청으로 이어서 수행하게 한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/interrupt_task_request.json"
+      },
+      {
+        "id": "ref-061",
+        "org": "Open Robotics",
+        "title": "Tasks in RMF - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 의 작업 디스패치(BidNotice·BidProposal·DispatchRequest 입찰, TaskPlanner 비용 산출, 충전 작업 삽입)를 설명하는 공식 문서.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md"
+      },
+      {
+        "id": "ref-062",
+        "org": "Open Robotics",
+        "title": "Creating a new Task - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 에 ApiRequest 로 작업을 제출하는 방법(dispatch_task_request, robot_task_request)과 취소·단계 건너뛰기 요청을 안내하는 공식 문서.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_new.md"
+      },
+      {
+        "id": "ref-063",
+        "org": "SAP",
+        "title": "Use SAP Warehouse Robotics - Fleet Management (SAP Help Portal)",
+        "published": null,
+        "url": "https://help.sap.com/docs/WAREHOUSE_ROBOTICS/cde7e2684f3c4e6c9034485e4307bd11/2b3d934ca17a4771b2f5b82d5aca9f93.html",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. SAP Warehouse Robotics 가 SAP EWM 로봇 작업을 어댑터를 거쳐 제조사 관제로 보내는 연계 방식과 로봇 처리 대상 창고 작업 조건을 설명하는 제품 문서.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-064",
+        "org": "Zhang, Z., Gong, Y., Yuan, Z., & Chen, W.",
+        "title": "Robotic warehouse systems considering dynamic priority",
+        "published": "2024",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1366554524003703",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. Transportation Research Part E 192권 논문. AMR 창고를 동적 우선순위 대기행렬 네트워크로 평가하고 정적 우선순위·FCFS 와 비교.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-065",
+        "org": "SOAR 저자(Beihang University, Geekplus Technology)",
+        "title": "SOAR: Real-Time Joint Optimization of Order Allocation and Robot Scheduling in Robotic Mobile Fulfillment Systems",
+        "published": "2026-05",
+        "url": "https://arxiv.org/abs/2605.03842",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 주문 배정과 로봇 스케줄링을 사건 구동 MDP 로 묶어 심층 강화학습으로 실시간 공동 최적화하는 프리프린트.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-066",
+        "org": "한국교통연구원(인증스마트물류센터)",
+        "title": "인증스마트물류센터 : 인증심사 > 심사기준 > 일반",
+        "published": null,
+        "url": "https://cslc.koti.re.kr/new_sub2/new_sub2_2_1",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 국토교통부 스마트물류센터 인증의 심사기준 안내. 기능영역(물류 처리 과정별 자동화)과 기반영역(구조 성능·성과관리·정보시스템), 등급 체계.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-067",
+        "org": "씨메스(CMES)",
+        "title": "물류 자동화 시스템을 이해하는 첫 걸음 : WES · WCS · WMS, 무엇이 다를까요?",
+        "published": null,
+        "url": "https://blog.cmesrobotics.ai/wes-wcs-wms",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 국내 로봇 업체 블로그. WMS·WES·WCS 의 역할 구분과 WES 의 작업 우선순위 재정렬, WCS 의 설비 제어를 설명.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f1·f2·f13·f24(업무 주문과 로봇 작업 사이의 규격 공백, 국내 인증의 정보시스템 평가) / 섹션 4: f2·f5·f6·f7·f9·f16(ISA-95 수준, B2MML 운영 요청·요청 상태, VDA 5050 base·horizon, Open-RMF 작업 상태) / 섹션 5: 출하 단계 우선순위 변경 시나리오 — 시작 조건 f25, 제약 f10·f19, 예외·성과 f11·f26, 완료·인계 f16·f27; 피킹 단계 작업 대상 f21 / 섹션 6: f6·f9·f10·f11·f14·f15·f17·f18·f20·f26·f27 / 섹션 7: ISA-95(ref-002·ref-053·ref-054 f3·f4), B2MML(f5·f6·f7), VDA 5050(f8~f11), Open-RMF API(f14~f18), MassRobotics(f12), SAP Warehouse Robotics(f20·f21 벤더 주장 병기) / 섹션 8: f22·f23(동적 우선순위·RL 공동 최적화; f23 은 27. AI·학습·적응과 모델 운영, 13. 작업 배정 — MRTA 와 양쪽 연결) / 섹션 9: f28·f13·f8(우선순위 정책은 연계 대상, ROP는 변환·실행·상태 반영) / 섹션 10: 2. 공정·워크플로 모델링(f7·f27 완료 상태), 9. 로봇·제조사 관제 연동(f8·f20), 12. 명령·작업 실행의 신뢰성(f10·f11), 13. 작업 배정 — MRTA(f18·f23), 14. 작업 순서·스케줄링(f22), 20. 예외 복구·재계획·업무 연속성(f11·f17·f26), 4. 성과·경제성·프로세스 개선(f22), 27. AI·학습·적응과 모델 운영(f23) / 섹션 11: open_questions_new 3건, oq-002 연결"
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "B2MML",
+        "term_en": "Business To Manufacturing Markup Language (B2MML)",
+        "definition": "MESA International이 관리하는 ISA-95(IEC 62264) 데이터 모델의 XML 스키마 구현으로, 운영 일정·실적 같은 업무–제조 간 거래 메시지 형식을 제공한다."
+      },
+      {
+        "term_ko": "기준 경로·예정 경로",
+        "term_en": "Base / Horizon (VDA 5050)",
+        "definition": "VDA 5050 주문에서 로봇이 주행해도 되는 허가된 노드·엣지(기준 경로)와 아직 허가되지 않은 계획 경로(예정 경로)를 나눈 구분이다."
+      },
+      {
+        "term_ko": "작업 입찰",
+        "term_en": "Task Bidding (Open-RMF)",
+        "definition": "Open-RMF 디스패처가 새 작업을 플릿 어댑터들에 공지하고 각 플릿의 비용 제안을 비교해 작업을 맡기는 배정 방식이다."
+      }
+    ],
+    "open_questions_new": [
+      "업무 시스템(WMS·WES·ERP)과 다제조사 로봇 관제 사이의 주문·변경·취소·결과 보고를 정한 공개 표준이나 공동 규격이 있는가, 없다면 B2MML 같은 ISA-95 구현을 창고 물류에 쓰는 사례가 있는가? | 관련 영역: 1. 주문·업무 시스템 연계, 9. 로봇·제조사 관제 연동, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f13 | 종류: 일반",
+      "출고 우선순위가 바뀌었을 때 이미 적재를 시작한 로봇 작업을 취소 후 재발행·중단 후 재개·끝까지 수행 중 무엇으로 처리할지 정하는 기준과 그 비용(처리량·지연)은 어떻게 평가하는가? | 관련 영역: 1. 주문·업무 시스템 연계, 20. 예외 복구·재계획·업무 연속성, 14. 작업 순서·스케줄링 | 근거: f26 | 종류: 일반",
+      "국토교통부 스마트물류센터 인증의 정보시스템 평가는 WMS와 로봇·자동화 설비의 연계 수준(작업 지시·실적 반영)을 어떤 세부 항목으로 평가하는가? | 관련 영역: 1. 주문·업무 시스템 연계, 4. 성과·경제성·프로세스 개선 | 근거: f24 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 19,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f4 ISA-95 Part 5 동사 전체 목록(SYNC·GET·SHOW·RESPOND 포함 여부)은 목차 검색 요약만 확인, B2MML(f6)의 여덟 거래 요소는 구현 스키마 기준",
+        "f9~f11 VDA 5050 문구는 WebFetch 요약 모델을 거친 인용이라 글자 단위 일치 미확인",
+        "f15 Open-RMF 우선순위 스키마의 실제 값 형식(플릿 지원 priority 스키마) 미확인",
+        "f19 rmf_api_msgs 전체 스키마 목록(우선순위 변경 요청 존재 여부) 미확인",
+        "f20·f21 SAP 도움말 원문 미열람, 어느 문서(관리 가이드·도움말 페이지)에 있는 문구인지 확정 못 함",
+        "f22 논문 본문의 모델 가정·수치 미확인",
+        "f24 인증 정보시스템 세부 평가 항목 미확인",
+        "모든 finding 교차 확인 실패: 표준별 발행 기관 1차 출처만 있음(ISA 소개와 ISA 보도자료는 같은 기관, B2MML 은 ISA-95 의 구현이라 독립으로 보지 않음)",
+        "ref-031·ref-055·ref-056·ref-058~ref-063·ref-066·ref-067 발행일 미확인"
+      ],
+      "scope_violations": [
+        "f28: 우선순위 정책 결정은 분류 원문 9장 '상위 업무 시스템'의 외부 연계 영역이라 '연계 대상: '으로 표시함",
+        "f23: 강화학습 기반 배정은 27. AI·학습·적응과 모델 운영의 방법이 13. 작업 배정 — MRTA 에 적용된 것이므로 두 영역에 함께 연결하도록 제안함"
+      ],
+      "budget_used": {
+        "queries": 16,
+        "sources": 15
+      },
+      "limits": "fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 저장소 원문(VDA 5050 main 명세, MassRobotics README, B2MML README·OperationsSchedule·Common 스키마, Open-RMF rmf_api_msgs 스키마 3건, ros2multirobotbook task·task_new 장)은 열어 fetched=true 로 표시했고, ISA·ASCM·SAP·논문·국내 인증·업체 블로그는 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium)이다. 씨메스 블로그 직접 열기는 프록시가 거부했다. 검색 16회/30, 신규 출처 15건/15(상한 도달, ref-053~ref-067), 재사용 4건(ref-001, ref-002, ref-031, ref-033 — ref-033 은 소스 미러의 공식 저장소 README 로 열람). 신규 출처 상한으로 Open-RMF cancel_task_request 스키마(열람함)와 Mecalux 등 WES 해설 자료는 출처로 넣지 않았다. 주의: 실행 컨텍스트 next_ref_id(ref-053)를 따랐으나 이전 브리프 2026-09-25-04·05·06 도 ref-053 이후 번호를 다른 출처에 부여했으므로 id 충돌 여부는 퍼블리셔 확인 필요. 한국 자료: 국토교통부 스마트물류센터 인증(ref-066)과 국내 업체 블로그(ref-067)뿐이며 WMS–로봇 연동을 다룬 국내 학술 자료는 한국어 검색 2회에서 찾지 못했다. oq-002(국내 SSCC·EPCIS–로봇 연결 사례)는 이번 범위에서 새 근거가 없어 해결 제안하지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 은 f23 하나이며 13. 작업 배정 — MRTA 와 함께 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. 입력의 이전 브리프 7건을 확인했으며 이 영역을 직접 다룬 이전 조사는 없었다."
+    }
+  },
+  "ttft_ms": 6488,
+  "type": "result",
+  "duration_ms": 413445,
+  "uuid": "2ed8704e-07eb-4ee1-9e32-14512ab4d241",
+  "ttft_stream_ms": 1895,
+  "time_to_request_ms": 96,
+  "first_content_frame_ms": 1895,
+  "time_to_request_from_spawn_ms": 4078968,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790299932240.5535,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 415.2
+}

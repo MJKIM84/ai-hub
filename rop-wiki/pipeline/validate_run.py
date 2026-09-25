@@ -85,14 +85,23 @@ def stage_verification(rd: Path, settings: dict, which: str) -> int:
         print(f"[validate] {name} 없음")
         return 2
     errs: list[str] = []
+    fixed: list[str] = []
     corr_ids = {c.get("id") for c in target.get("corrections") or []}
-    for r in v.get("corrections_rejected") or []:
-        if r.get("id") not in corr_ids:
-            errs.append(f"corrections_rejected 의 {r.get('id')} 는 이번 실행의 정정 요청이 아니다(target.json corrections: {sorted(corr_ids) or '없음'})")
+    # 이번 실행의 정정 요청이 아닌 id 는 코드가 뺀다(판단이 필요 없는 정리). 퍼블리셔도 대상 요청만 처리한다
+    keep_rej = [r for r in v.get("corrections_rejected") or [] if r.get("id") in corr_ids]
+    keep_app = [i for i in v.get("corrections_applied") or [] if i in corr_ids]
+    dropped = [r.get("id") for r in v.get("corrections_rejected") or [] if r.get("id") not in corr_ids]
+    dropped += [i for i in v.get("corrections_applied") or [] if i not in corr_ids]
+    if dropped:
+        v["corrections_rejected"], v["corrections_applied"] = keep_rej, keep_app
+        runs.write_json(rd / name, v)
+        fixed.append(f"이번 실행의 정정 요청이 아닌 id 를 뺐다: {sorted(set(dropped))} (target.json corrections: {sorted(corr_ids) or '없음'})")
     both = set(v.get("corrections_applied") or []) & {r.get("id") for r in v.get("corrections_rejected") or []}
     if both:
         errs.append(f"같은 정정 요청을 반영과 거절에 모두 넣었다: {sorted(both)}")
-    report = {"stage": which, "ok": not errs, "errors": errs}
+    report = {"stage": which, "ok": not errs, "errors": errs, "fixed": fixed}
+    for f in fixed:
+        _log(rd, settings, f"  - {f}")
     runs.write_json(rd / "checks" / f"{which}.json", report)
     _log(rd, settings, f"{'1차' if which == 'verification1' else '2차'} 검증 산출물 검사: {'통과' if not errs else f'오류 {len(errs)}건'}")
     return 0 if not errs else 1
