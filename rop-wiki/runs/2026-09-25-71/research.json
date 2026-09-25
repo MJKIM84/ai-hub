@@ -1,0 +1,818 @@
+{
+  "run_id": "2026-09-25-71",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화"
+  },
+  "gaps": [
+    "단계 3 질문 q3-02 열림(target.json 지정, CLI 지정 질문 id). 단계 3 페이지 3절에 q3-02 소제목 없음",
+    "완료 조건: 아이디어 2. 자연어 업무 지시 챗봇 5절에 처리 흐름·핵심 구성 요소가 없음(스케줄링 결정의 분담 소절만 있음)",
+    "완료 조건: 실험 페이지에 사용자에게 제안하는 실험 계획 없음(이번 실행 범위 밖, 스토리텔러 몫)",
+    "업무 분해·배정 설계 초안: 작업 요구 → 로봇(온톨로지 질의)의 출력 형식과 배정 산출 방식의 '규칙'·입찰 비교 값에 근거 없음, LLM 출력을 상태에 반영하기 전 검증 기록을 둘 곳 없음",
+    "13. 작업 배정 — MRTA 섹션 6에 LLM 해석–능력 판정–배정으로 이어지는 흐름에서 결정적 구성 요소 위치의 근거 없음"
+  ],
+  "research_questions": [
+    "가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]",
+    "q3-02 지시 해석 → 작업 분해 → 능력 질의 → 배정 → 스케줄링 → 진행 관리의 흐름에서 단계마다 입력·출력은 무엇이고, 규칙·최적화처럼 결과가 정해진(결정적) 구성 요소는 어디에 두는가?",
+    "LLM 과 기호·결정적 검증기를 결합한 로봇 계획 구조(신경-기호 구조)는 어느 단계에 LLM 을, 어느 단계에 계획기·검증기·실행기를 두며, 결정적 검증기를 LLM 비평자로 바꾸면 결과가 어떻게 달라지는가? (단계 3 페이지 3절, 27. AI·학습·적응과 모델 운영 겨냥)",
+    "능력 질의(온톨로지 추론)의 출력은 배정 알고리즘에 어떤 형식으로 넘기며, Open-RMF 입찰·rmf_task 같은 오케스트레이션 도구는 배정·일정·진행 상태를 어떤 입력·출력으로 다루는가? (13. 작업 배정 — MRTA 섹션 6, 5. 로봇 능력·작업 온톨로지 연결)",
+    "LLM 제안을 진행 상태·실행에 반영하기 전에 검증·승인하는 게이트(안전 게이트, 원자적 반영)는 어디에 두는가? (20. 예외 복구·재계획·업무 연속성, 25. 안전·위험 관리 연결)",
+    "LLM 에게 로봇을 도구(MCP, LangChain 도구)로 노출하는 방식은 결정적 구성 요소를 우회할 위험이 있는가? (26. 사이버보안·접근권한·개인정보 연결)",
+    "국내에 LLM 해석과 결정적 배정·검증을 잇는 로봇 관제 처리 흐름 연구·사례가 있는가? (한국 자료 우선 규칙)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Open-RMF 에서는 사용자가 작업 요청을 내면 디스패처가 모든 플릿 어댑터에 입찰 공고(BidNotice)를 보내고, 처리할 수 있는 플릿 어댑터가 rmf_task 작업 계획기로 비용을 계산해 입찰(BidProposal)하며, 디스패처가 가장 빨리 끝나는 것·가장 낮은 비용 같은 설정 기준으로 비교해 이긴 플릿에 배치 요청(DispatchRequest)을 보내고, 필요하면 충전 작업이 자동으로 끼워진다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-376"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "작업 수명주기: 요청 제출 → rmf_dispatcher_node 의 BidNotice → 플릿 어댑터의 BidProposal(비용 추정, TaskPlanner 사용) → 설정 기준으로 평가 → DispatchRequest. 짧은 인용: \"tasks are awarded to robot fleets based on the outcome of a bidding process\" (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": "피킹",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f2",
+      "claim": "Open-RMF rmf_task 의 작업 계획기는 플릿 안의 작업과 로봇을 받아 요청된 시작 시각을 지키며 작업이 가장 빨리 끝나도록 로봇별 작업 순서를 정하는 결정적 구성 요소로, 탐욕 방식과 A* 기반 방식 가운데 하나로 풀고 배터리 제약에 따라 충전 작업을 끼워 넣는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-377",
+        "ref-404"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "TaskPlanner.hpp 는 greedy 와 A* 기반 방식 선택, 기본 비용 계산기 BinaryPriorityCostCalculator 를 둔다. README 는 자원 제약을 고려한 충전 작업 자동 삽입을 설명한다. (재인용: 2026-09-25-66)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "Open-RMF 작업 상태 스키마는 배정 결과를 assigned_to(그룹·이름)로, 배정 과정을 dispatch 상태(queued·selected·dispatched·failed_to_assign·canceled_in_flight)로, 진행을 status 값과 단계별 상태·예상 소요 시간으로 표현해, 진행 관리 단계가 받을 결정적 상태 기록의 형식이 된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-111"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "task_state.json: booking 필수, assigned_to, dispatch 상태 값, status 값(queued·underway·delayed·completed·canceled·failed 등), estimate_millis. (재인용: 2026-09-25-51)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "완료·인계",
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "Electronics(2026) 게재 논문은 로봇·작업·장소의 의미 모델에 선언적 추론과 절차적 평가를 결합해 여러 축의 능력 조건과 적재 상태에서의 장소 도달 가능성을 판정하고, 그 결과를 특정 배정기에 묶이지 않는 ReasonerOutput 으로 정형화해 여러 배정 알고리즘의 공통 입력으로 쓴다고 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-236"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: hybrid reasoning(declarative + procedural)으로 multi-axis capability conditions·loaded-state place reachability 판정, 결과를 allocator-independent ReasonerOutput 으로 정형화. 기존 연구는 실행 가능성을 특정 최적화기·계획기 안에서 다뤘다고 지적.",
+      "as_of": "2026-08-11",
+      "flow_step": null,
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "LiP-LLM 은 작업 계획을 기술 목록 생성, 의존 그래프 생성, 작업 배정의 세 단계로 나누고, 앞 두 단계는 LLM 이, 배정은 선형계획이 맡는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-166"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: LiP-LLM divides task planning into three steps: skill list generation, dependency graph generation, and task allocation(선형계획).",
+      "as_of": "2024-10",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f6",
+      "claim": "Liu 외(KTH, arXiv 2606.08214)는 산업용 로봇에서 언어 이해·맥락 추론만 LLM 에 맡기고 검증·순서 결정·실행은 모두 결정적으로 두는 Specifier–Designer–Inspector 구조를 제안했으며, Inspector 는 LLM 비평자 대신 기호 제약 검증기이고 LangGraph 기반 동적 경로 설정으로 실패 복구를, Unity3D 디지털 트윈으로 사람 검토를 하며, 5개 난이도의 자연어 명령 70개에서 100% 성공을 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-674"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: LLMs are used for tasks that require language understanding or contextual reasoning, while all verification, sequencing, and execution remain deterministic. 70개 명령·5개 난이도 100% 성공(저자 보고).",
+      "as_of": "2026-06",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "같은 연구(Liu 외)의 절제 실험에서 기호 검증기(Inspector)를 같은 방식으로 프롬프트한 LLM 으로 바꾸면 전체 성공률이 98.1% 에서 3.8% 로 떨어졌다고 저자들이 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-674"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: Replacing the symbolic Inspector with an equivalently-prompted LLM collapses overall success from 98.1% to 3.8%, with 0% on Groups C and D(저자 보고값, 산업용 로봇 명령 조건, 독립 재현 미확인).",
+      "as_of": "2026-06",
+      "flow_step": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "Pesjak·Žabkar(Machine Learning and Knowledge Extraction 8권, 2026)의 Sense–Plan–Code–Act 틀은 LLM 이 세계 기술을 PDDL 로 바꾸고, 휴리스틱 계획기가 유효한 계획을 만들며, 두 번째 LLM 이 계획을 코드로 바꾼 뒤 그 코드를 컴파일로 구문 검증하고 시뮬레이션으로 의미 검증하는 구조다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-675",
+        "ref-676"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "논문 요약(원문 미열람): LLM→PDDL, heuristic planner→valid plan, second LLM→code, compilation 과 simulation 으로 검증. 공식 저장소 README 는 Plan 단계를 LLM+기호 계획기 혼합, Act 를 실행·평가 뒤 재계획으로 적는다(README 는 Sense 를 결정적 인식으로 적어 논문 요약과 표현이 다름).",
+      "as_of": "2026",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f9",
+      "claim": "Tang 외(arXiv 2606.31339)는 산업용 다중 로봇에서 작업 위계를 담는 작업 숲(task forest)과 실행 상태·로봇 기록·자원 잠금·세계 믿음·제안·검증 기록을 담는 관리형 블랙보드를 동기화해 두고, 에이전트(LLM)의 제안은 결정적 검증과 원자적 반영(atomic commit)을 거쳐야만 받아들이는 구조를 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-677"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: admits agentic proposals only through deterministic verification and atomic commit; 제안 생성만으로는 작업 의존·자원 소유·안전 보류·복구 경계가 보장되지 않는다는 동기.",
+      "as_of": "2026-06",
+      "flow_step": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "CoMuRoS(arXiv 2511.22354)는 작업 관리자 LLM 이 자연어 목표를 해석·분류하고 정적 규칙과 동적 맥락(작업·이력·로봇 상태·사건)으로 하위 작업을 배정하며, 로봇마다 로컬 LLM 이 기본 기술로 실행 코드를 구성하고, 작업 실패나 사용자 의도 변경이 재계획을 촉발하는 구조로, 약 20대 로봇의 22개 텍스트 시나리오 벤치마크에서 정확도 최대 0.91을 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-678"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: Task Manager LLM interprets natural-language goals, classifies tasks, and allocates subtasks using static rules plus dynamic contexts; 재계획 세트 5개 시나리오 정확도 1.0(저자 보고, 실험실·텍스트 벤치마크 조건).",
+      "as_of": "2025-11",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "SafeGate(arXiv 2604.05427)는 자연어 명령에서 안전 관련 속성을 구조화해 뽑고 ISO 13482 기반의 결정적 판정으로 실행을 승인·거부한 뒤, 통과한 명령을 불변 조건·가드·중단 조건으로 된 작업 안전 계약으로 분해하는 실행 전 게이트다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-417"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: deterministic decision gates to approve or reject execution based on ISO 13482. (재인용: 2026-09-25-37)",
+      "as_of": "2026-04",
+      "flow_step": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f12",
+      "claim": "오픈소스 ROS-MCP-Server 는 rosbridge 를 통해 로봇 코드 수정 없이 LLM 에게 ROS·ROS 2 의 토픽 발행·구독, 서비스 호출, 액션, 파라미터를 도구로 노출하며, README 에는 권한 제한이 기여 안내의 계획 항목으로만 언급되고 현재의 권한·제한 장치 설명은 없다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-679"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README: LLM 이 topics, services, actions 와 그 타입(사용자 정의 포함)을 설정 없이 발견; rosbridge 사용; Apache 2.0. 권한(permissions)은 계획 기능으로만 언급. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f13",
+      "claim": "한국전자기술연구원 연구진은 LangChain 에이전트의 도구를 ROS 2 토픽·서비스 인터페이스로 정의해 자연어 명령을 로봇 제어 명령으로 바꾸는 다중 로봇 관제 시스템을 발표해, 국내 사례에서도 LLM 이 닿는 범위가 도구 정의로 정해지는 구조가 쓰였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-180"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "LangChain 에이전트 도구를 ROS 2 토픽·서비스로 정의, 로봇별 위치·상태 모니터링(학술대회 이름·일자 미확인). (재인용: 2026-09-25-21)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f14",
+      "claim": "Rasa 폼은 필수 슬롯을 정해 두고 비어 있는 다음 필수 슬롯을 사용자에게 묻고, 추출한 값을 사용자 정의 검증 동작으로 검사한 뒤 필수 슬롯이 모두 채워지면 비활성화되어, 지시 해석 단계의 출력(채워진 슬롯)을 규칙으로 검사하는 결정적 구성 요소의 예가 된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-356"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "forms.mdx: required_slots, utter_ask_<슬롯>, 검증 동작(validate), 모두 채워지면 비활성화. (재인용: 2026-09-25-30)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "시작 조건",
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "STRAP-LLM(Park·Kim, Intelligent Service Robotics)은 구조화 프롬프트로 LLM 이 이종 로봇의 작업 배정과 기술 계획을 로봇 실행 언어로 직접 생성하게 하는 틀로, 저자들은 새 로봇을 추가해도 실행 정확도가 높게 유지된다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-680"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 요약: structured prompting framework that generates task allocation and planning in the robot's execution language; consistently high execution accuracy(저자 보고, 수치·비교 대상·저자 소속 미확인, 게재 연도는 요약마다 2025·2026로 다름). (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "Kambhampati 외는 LLM 을 근사적 아이디어 생성기로 두고 외부 모델 기반 검증기·비평자와 양방향으로 결합하는 LLM-모듈로 틀을 제안하며, 자기회귀 LLM 이 혼자서는 계획이나 자기 검증을 하지 못한다고 본다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-586"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "ICML 2024 입장 논문 요약: LLM-Modulo, external model-based verifiers. (재인용: 2026-09-25-66)",
+      "as_of": "2024-02",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "q3-02 에 대해 확인한 자료를 이 위키가 묶으면, 처리 흐름은 (1) 지시 해석: 입력 채팅·대화 맥락 → 출력 의도·슬롯(규칙 검사), (2) 작업 분해: 입력 슬롯 → 출력 작업 목록·의존 그래프 또는 형식 명세(계획기·검증기 검사), (3) 능력 질의: 입력 작업 요구 → 출력 배정기 독립 실행 가능성 판정(온톨로지 추론), (4) 배정: 입력 판정·비용 → 출력 로봇 또는 플릿(최적화·입찰 비교), (5) 스케줄링: 입력 배정·시각 제약 → 출력 로봇별 순서·충전 삽입(작업 계획기), (6) 진행 관리: 입력 로봇·플릿 상태 보고 → 출력 진행 상태 기록과 재계획 요청으로 나눌 수 있고, LLM 은 (1)·(2)의 제안과 결과 설명에, 결정적 구성 요소는 (2)의 검사와 (3)~(6)에 두는 배치가 근거가 가장 많은 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-356",
+        "ref-166",
+        "ref-675",
+        "ref-236",
+        "ref-376",
+        "ref-377",
+        "ref-111",
+        "ref-674"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 종합: 슬롯 검사(Rasa), 기술 목록·의존 그래프 뒤 선형계획 배정(LiP-LLM), LLM→PDDL→계획기(SPCA), 배정기 독립 판정 출력(ReasonerOutput), 입찰 비교(Open-RMF), 작업 계획기(rmf_task), 작업 상태 스키마, 검증·순서·실행의 결정적 처리(SDI). 이 여섯 단계를 한 흐름으로 제시한 단일 출처는 확인하지 못함.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f18",
+      "claim": "확인한 신경-기호 구조들은 LLM 출력이 상태나 실행에 반영되기 직전마다 결정적 검사를 두므로(해석 뒤 슬롯 검사, 분해 뒤 계획기·컴파일·시뮬레이션 검사, 배치 전 안전 게이트·사람 검토, 진행 상태 반영 시 검증 뒤 원자적 반영), ROP 에서도 검증 게이트를 단계 사이 경계에 두는 것이 선택지로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-674",
+        "ref-675",
+        "ref-677",
+        "ref-417",
+        "ref-356",
+        "ref-586"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "SDI 의 기호 Inspector, SPCA 의 컴파일·시뮬레이션 검증, 관리형 블랙보드의 결정적 검증·원자적 반영, SafeGate 의 실행 전 판정, Rasa 검증 동작을 이 위키가 대응시킨 추론.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f19",
+      "claim": "반례로 CoMuRoS 와 STRAP-LLM 은 LLM 이 배정과 재계획까지 맡으면서 높은 정확도를 보고해 LLM 배정이 배제되는 것은 아니지만, 평가가 실험실·텍스트 벤치마크 조건이고 결정적 배정기와 같은 조건에서 비교한 결과는 확인되지 않아, 흐름 배치의 반박 근거로는 약한 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-678",
+        "ref-680",
+        "ref-674"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "CoMuRoS 정확도 최대 0.91(텍스트 벤치마크), STRAP-LLM 실행 정확도 높음(수치 미확인); SDI 절제 실험은 검증기 대체 시 급락을 보고. 결정적 배정기와의 동조건 비교 미확인.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f20",
+      "claim": "LLM 에게 로봇 토픽·서비스·액션을 도구로 직접 노출하는 방식(ROS-MCP-Server, LangChain 도구 정의)은 LLM 이 닿는 범위를 도구 목록이 정하므로, 채팅 LLM 에 저수준 로봇 도구를 열면 위 흐름의 능력 질의·배정·검증 게이트를 우회할 수 있어, ROP 는 검증 파이프라인으로 들어가는 상위 도구(작업 요청 제출 등)만 노출해야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-679",
+        "ref-180",
+        "ref-417"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "ROS-MCP-Server 는 토픽·서비스·액션을 설정 없이 노출하고 권한 제한은 계획 단계, KETI 는 도구를 ROS 2 인터페이스로 정의. 우회 위험과 상위 도구만 노출하자는 판단은 이 위키의 추론.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f21",
+      "claim": "분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, 이 흐름에서 '누구에게 맡길지'는 능력 판정으로 거른 후보 가운데 입찰 비교·최적화의 목적 기준(가장 빨리 끝남, 가장 낮은 비용)으로 결정되고 LLM 은 그 목적 가중치를 지시에서 뽑아 넘기는 데 그치므로, 최근접 배정이 전체적으로 유리한지는 배정 단계에 둔 목적 기준에 따라 달라지는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-376",
+        "ref-236",
+        "ref-377"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Open-RMF 디스패처의 설정 기준 비교, ReasonerOutput 의 배정기 독립 입력, 작업 계획기의 완료 시각 최소화를 이 위키가 이은 추론.",
+      "as_of": "2026-09-25",
+      "flow_step": "피킹",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f22",
+      "claim": "피킹 단계에서 관리자가 채팅으로 '피킹 끝난 토트를 10시 전까지 포장대로'라고 지시하면, 해석 단계는 장소·대상·기한 슬롯을 채워 검사하고 빠진 값을 되묻고, 능력 질의가 토트 운반이 가능한 로봇을 판정하며, 배정·스케줄링은 입찰·작업 계획기가 정하고, 진행 관리는 작업 상태 기록으로 지연을 알리는 흐름이 가능해 보인다(설명용 가정 사례).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-356",
+        "ref-236",
+        "ref-376",
+        "ref-377",
+        "ref-111"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "설명용 가정 사례. 각 단계 구성 요소는 f14·f4·f1·f2·f3 의 출처에 기댄 이 위키의 구성.",
+      "as_of": "2026-09-25",
+      "flow_step": "피킹",
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f23",
+      "claim": "이번에 확인한 처리 흐름 연구의 평가 환경은 산업용 로봇 셀(SDI), 조작·격자 시뮬레이션(SPCA), 산업용 다중 로봇 임무(관리형 블랙보드), 실험실 이종 로봇 팀(CoMuRoS)이었고, 이종 제조사 창고 플릿에서 LLM 해석부터 진행 관리까지의 흐름 전체를 평가한 자료와 국내 연구는 검색 범위에서 찾지 못했다(부재의 확인은 아님).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-674",
+        "ref-675",
+        "ref-677",
+        "ref-678"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 범위의 관찰. 한국어 검색 2회는 해외 논문의 번역 페이지만 나왔다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-376",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "RMF 작업 수명주기: 디스패처 입찰 공고, 플릿 어댑터 비용 입찰, 설정 기준 비교 뒤 배치 요청, 충전 작업 자동 삽입. 이번 실행에서 mdBook 원본을 열었다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-377",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. rmf_task 작업 계획기 헤더(탐욕·A* 방식, 기본 비용 계산기). 이번 실행에서는 다시 열지 않았다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-404",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — README",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. rmf_task 저장소 README(작업 순서 계획, 충전 작업 자동 삽입). 이번 실행에서는 다시 열지 않았다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Open-RMF 작업 상태 스키마(배정 결과·배정 과정·진행 상태). 이번 실행에서는 다시 열지 않았다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-236",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+      "published": "2026-08-11",
+      "url": "https://doi.org/10.3390/electronics15163562",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 온톨로지 기반 의미적 실행 가능성 추론으로 능력 조건·적재 상태 도달 가능성을 판정하고 배정기 독립 출력으로 넘기는 방법.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-166",
+      "org": "Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T.",
+      "title": "LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21040",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 기술 목록·의존 그래프를 만들고 선형계획이 배정하는 다중 로봇 작업 계획.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-417",
+      "org": "Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab)",
+      "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
+      "published": "2026-04",
+      "url": "https://arxiv.org/abs/2604.05427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자연어 명령의 안전 속성을 뽑아 결정적 게이트로 승인·거부하고 작업 안전 계약으로 분해하는 SafeGate.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-180",
+      "org": "이종록, 황정훈, 박민철(한국전자기술연구원)",
+      "title": "LLM 기반 로봇관제시스템의 Agent AI 구축",
+      "published": null,
+      "url": "https://d2j16w31g89z0j.cloudfront.net/site/2026w/abs/0560-YDVVV.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LangChain 에이전트 도구를 ROS 2 인터페이스로 정의한 다중 로봇 관제 시스템(국내 발표).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-356",
+      "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
+      "title": "Forms — Rasa documentation (docs/docs/forms.mdx)",
+      "published": null,
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 필수 슬롯 되묻기와 검증 동작을 두는 Rasa 폼 문서. 이번 실행에서는 다시 열지 않았다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-586",
+      "org": "Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S., Saldyt, L., & Murthy, A.",
+      "title": "LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.01817",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 을 생성기로, 외부 검증기를 비평자로 두는 LLM-모듈로 입장 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-674",
+      "org": "Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH)",
+      "title": "Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.08214",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 은 언어 이해·맥락 추론만, 검증·순서·실행은 결정적으로 두는 Specifier–Designer–Inspector 구조와 기호 검증기 절제 실험(98.1%→3.8%).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-675",
+      "org": "Pesjak, D., & Žabkar, J.",
+      "title": "Robot Planning via LLM Proposals and Symbolic Verification",
+      "published": "2026",
+      "url": "https://www.mdpi.com/2504-4990/8/1/22",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Machine Learning and Knowledge Extraction 8(1) 22. LLM→PDDL, 계획기, LLM 코드 생성, 컴파일·시뮬레이션 검증의 Sense–Plan–Code–Act 틀.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-676",
+      "org": "Pesjak, D. (minigrid-crewai 공식 저장소)",
+      "title": "minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitHub README)",
+      "published": null,
+      "url": "https://github.com/DrejcPesjak/minigrid-crewai",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "SPCA 네 단계의 입력·출력과 LLM·결정적 구분, 논문 서지(MAKE 2026, doi 10.3390/make8010022)를 적은 저장소 README.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/DrejcPesjak/minigrid-crewai/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-677",
+      "org": "Tang, G. 외(arXiv 2606.31339)",
+      "title": "Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.31339",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업 숲과 관리형 블랙보드를 두고 에이전트 제안을 결정적 검증·원자적 반영으로만 받아들이는 산업용 다중 로봇 임무 상태 관리 구조.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-678",
+      "org": "CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재)",
+      "title": "LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning",
+      "published": "2025-11",
+      "url": "https://arxiv.org/abs/2511.22354",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업 관리자 LLM 이 해석·분류·배정, 로봇별 로컬 LLM 이 코드 구성, 사건 기반 재계획을 하는 CoMuRoS 구조와 텍스트 벤치마크 결과.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-679",
+      "org": "robotmcp (ROS-MCP-Server 공식 저장소)",
+      "title": "ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README)",
+      "published": null,
+      "url": "https://github.com/robotmcp/ros-mcp-server",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "rosbridge 로 ROS·ROS 2 의 토픽·서비스·액션·파라미터를 MCP 도구로 LLM 에 노출하는 오픈소스 서버. 권한 기능은 계획 항목으로만 언급.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/robotmcp/ros-mcp-server/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-680",
+      "org": "Park, J., & Kim, J. S.(소속 미확인)",
+      "title": "STRAP-LLM: structured task allocation and planning for heterogeneous robots using large language models",
+      "published": null,
+      "url": "https://link.springer.com/article/10.1007/s11370-025-00676-0",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Intelligent Service Robotics 게재. 구조화 프롬프트로 LLM 이 이종 로봇의 배정·기술 계획을 실행 언어로 생성하는 틀(게재 연도 미확인).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "sections": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "rationale": "q3-02 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12·f13·f14·f15·f16·f17·f18·f19·f20·f21·f22·f23 (신뢰도 low) — 2절 q3-02 상태 답함, 3절 q3-02 소제목 신설({#q3-02}): 오케스트레이션 도구의 흐름(Open-RMF 입찰 f1, 작업 계획기 f2, 작업 상태 f3), 능력 질의의 출력 형식(f4), LLM 분해+해법 배정(f5), 신경-기호 구조(SDI f6·f7, SPCA f8, 관리형 블랙보드 f9, LLM-모듈로 f16 의견), 해석 단계의 규칙 검사(f14), 실행 전 게이트(f11), 도구 노출(f12·f13, 국내 f13), 반례(f10·f15·f19), 종합: 여섯 단계 입력·출력과 결정적 구성 요소 위치(f17, mermaid 도식 권장)·검증 게이트 경계(f18)·도구 노출 경계(f20)·SCM 질문 연결(f21)·피킹 시나리오(f22)·근거 공백(f23) / 4절 결론·불확실성 / 5절 후속 질문 / 6절 완료 조건 현황 / 8절 출처 / 9절 이력"
+    },
+    {
+      "action": "update",
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "sections": [
+        "5"
+      ],
+      "rationale": "아이디어 페이지 5절(트랙 산출물): '처리 흐름과 핵심 구성 요소' 소절 신설 — 단계별 입력·출력과 LLM·결정적 구성 요소 배치 가설 f17·f18(추정), 근거 f1·f2·f3·f4·f6·f7·f8·f9·f14, 도구 노출 경계 f20, 반례 f10·f19. 다른 아이디어와의 연결: 능력 질의(아이디어 1, f4), 장소 슬롯의 공간 노드 해석(아이디어 3)은 구조만 언급하고 근거는 기존 4절 링크"
+    },
+    {
+      "action": "update",
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "sections": [
+        "2",
+        "3",
+        "6"
+      ],
+      "rationale": "트랙 산출물 갱신: track.ontology_changes(배정 산출 방식에 '입찰 비교' 값, 개념 '실행 가능성 판정' 추가, 개념 '검증 기록' 추가)가 승인되면 2·3절 반영과 초안 버전 인상(f1·f4·f6·f9·f18). 미승인 부분과 '검증 기록'과 배정의 '확인 여부'·사용자 확인 개념(q4-01·q4-04) 관계는 6절 질문으로"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 nl-task-chatbot 단계 3 반영 제안 (f1, f4, f5, f17, f21): 능력 판정 출력을 배정기 독립 입력으로 넘기는 방법, 입찰 비교의 위치, LLM 해석–결정적 배정 흐름과 분류 원문 질문 연결. 27. AI·학습·적응과 모델 운영과 양쪽 연결"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "sections": [
+        "6",
+        "8"
+      ],
+      "rationale": "트랙 nl-task-chatbot 단계 3 반영 제안 (f6, f7, f8, f9, f16, f18): 신경-기호 구조(SDI·SPCA·관리형 블랙보드)와 결정적 검증기 절제 실험, 검증 게이트 배치. 적용 대상 13. 작업 배정 — MRTA 와 함께 연결"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 nl-task-chatbot 단계 3 반영 제안 (f12, f13, f20): LLM 에 로봇 토픽·서비스를 도구로 직접 노출하는 MCP·LangChain 방식과 권한 장치 부재, 상위 도구만 노출하는 경계(추정)"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md",
+      "sections": [
+        "10"
+      ],
+      "rationale": "트랙 nl-task-chatbot 단계 3 반영 제안 (f4): 온톨로지 기반 실행 가능성 판정 결과를 배정기 독립 출력으로 13. 작업 배정 — MRTA 에 넘기는 연결"
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "모델 컨텍스트 프로토콜",
+      "term_en": "Model Context Protocol (MCP)",
+      "definition": "LLM 이 외부 시스템의 상태를 조회하고 정해진 도구로 동작을 수행하도록 도구·자원을 구조화해 노출하는 개방형 연결 규약이다."
+    },
+    {
+      "term_ko": "신경-기호 AI",
+      "term_en": "Neuro-symbolic AI",
+      "definition": "LLM 같은 신경망 모델의 유연한 해석·생성과 계획기·검증기 같은 기호적(규칙·논리 기반) 구성 요소의 결정적 검사를 결합하는 AI 구성 방식이다."
+    }
+  ],
+  "open_questions_new": [],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 17,
+    "cross_checked_count": 0,
+    "unverified": [
+      "모든 finding 교차 확인 없음: 연구마다 단일 논문이거나 같은 저자의 논문·저장소 쌍(f8)",
+      "f6·f7 SDI 수치(70개 명령 100%, 98.1%→3.8%)는 검색 요약 기준 저자 보고값, 원문 미열람(arXiv 열람은 프록시가 거부)",
+      "f8 SPCA: 저장소 README 는 Sense 단계를 결정적 인식으로, 논문 요약은 LLM 의 PDDL 변환으로 적어 표현 차이 있음",
+      "f10 CoMuRoS 저자 목록 미확인, 정확도 지표 정의 미확인",
+      "f15 STRAP-LLM 저자 소속·게재 연도(2025/2026)·수치·비교 대상 미확인",
+      "ref-236 저자 미확인, ReasonerOutput 의 필드 구성 미확인",
+      "f23 창고 플릿 흐름 평가 자료·국내 연구의 부재는 검색 범위 관찰이며 부재 확인 아님",
+      "f17·f18·f20~f22 는 이 위키의 종합이며 여섯 단계 흐름을 한 번에 제시한 단일 출처는 찾지 못함"
+    ],
+    "scope_violations": [
+      "f12·f20: 로봇 토픽·액션 직접 제어는 분류 원문 9장 '로봇 자체 지능·제어' 경계와 맞닿아, ROP 는 상위 도구만 노출한다는 경계 판단으로만 서술",
+      "f6·f8·f9: 산업용 로봇 셀·조작 대상 연구라 물류 적용은 미확인으로 명시"
+    ],
+    "budget_used": {
+      "queries": 13,
+      "sources": 7
+    },
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-376(task.md), 신규 ref-676(SPCA README)·ref-679(ROS-MCP-Server README). arXiv 직접 열람은 프록시가 거부해 나머지 신규 5건과 재사용 9건은 원문 미열람(신뢰도 상한 medium), 모든 finding 신뢰도 medium 이하. 검색 13회/40, 신규 출처 7건/20(ref-674~ref-680, 예약 구간 안), 재사용 10건. 질문 선택: target.json 지정 q3-02 1건. q3-02 는 오케스트레이션 도구 구조와 신경-기호 연구(사실)로 답했으나, 여섯 단계 입력·출력과 결정적 구성 요소 배치(f17·f18)는 이 위키의 종합이고 근거가 물류 플릿 조건이 아니라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 2회는 해외 논문 번역 페이지만 나와, 기존 국내 출처 ref-180(한국전자기술연구원)을 재인용했다. 교차 규칙: LLM 구조 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA 양쪽에 반영 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈: SDI 의 디지털 트윈은 사람 검토용, SPCA 의 시뮬레이션은 코드 검증 도구로만 언급해 두 영역을 섞지 않았다. 정정 요청 없음. 새 일반 열린 질문 없음: 창고 조건 비교 실측은 기존 oq-052·q3-05 와 겹친다. 용어 후보: 트랙 glossary_targets 는 모두 용어집에 있어 MCP·신경-기호 AI 2건을 냈다. 온톨로지 변경 제안 3건, 후속 질문 3건. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 4건(갱신 상한과 별도)."
+  },
+  "track": {
+    "slug": "nl-task-chatbot",
+    "stage": 3,
+    "answered_question_ids": [
+      "q3-02"
+    ],
+    "new_questions": [
+      {
+        "question": "ROP 가 온톨로지 기반 실행 가능성 판정(배정기 독립 출력)으로 후보를 거른 뒤 Open-RMF 처럼 플릿 단위 입찰로 배정할 때, 판정은 플릿 단위로 넘기는가 로봇 단위로 넘기는가, 제조사 관제가 플릿 안에서 다시 로봇을 고르면 판정 결과와 어긋날 때 누가 조정하는가? (q3-02 에서 파생)",
+        "stage": 3,
+        "rationale_finding_id": "f4"
+      },
+      {
+        "question": "채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생)",
+        "stage": 4,
+        "rationale_finding_id": "f20"
+      },
+      {
+        "question": "SDI 절제 실험처럼 결정적 검증기를 LLM 비평자로 바꿨을 때의 성공률 차이를 물류 지시(피킹·운반·출하) 시나리오로 재면 어떤 결과가 나오며, 어느 단계의 검증기가 가장 큰 차이를 만드는가? (q3-02 에서 파생)",
+        "stage": 5,
+        "rationale_finding_id": "f7"
+      }
+    ],
+    "ontology_changes": [
+      {
+        "op": "modify",
+        "kind": "concept",
+        "name": "배정 (Assignment)",
+        "evidence_finding_ids": [
+          "f1"
+        ],
+        "description": "속성 '배정 산출 방식'의 값 후보에 '입찰 비교(플릿이 낸 비용 입찰을 설정 기준—가장 빨리 끝남·가장 낮은 비용—으로 비교, Open-RMF 디스패처)'를 더한다. 기존 값(LLM 직접 추론 / 최적화 해법)과 충돌하지 않으며, 6절의 '규칙' 값 질문과는 별개다."
+      },
+      {
+        "op": "add",
+        "kind": "concept",
+        "name": "실행 가능성 판정 (Feasibility Result)",
+        "evidence_finding_ids": [
+          "f4",
+          "f17"
+        ],
+        "description": "작업 요구를 로봇 능력·장소 모델과 대조한 온톨로지 질의의 출력으로, 로봇(또는 플릿)별 수행 가능 여부와 근거를 담으며 특정 배정 알고리즘에 묶이지 않는 입력(ReasonerOutput 에 해당)이다. 기존 관계 '작업 요구 / 온톨로지 질의로 후보 로봇을 찾는다 / 로봇'의 결과물을 개념으로 드러내는 제안이며, 관계 재구성(작업 요구 → 실행 가능성 판정 → 배정)은 검증 판단에 맡긴다."
+      },
+      {
+        "op": "add",
+        "kind": "concept",
+        "name": "검증 기록 (Verification Record)",
+        "evidence_finding_ids": [
+          "f9",
+          "f6",
+          "f18"
+        ],
+        "description": "LLM 이 낸 해석·분해·재계획 제안이 결정적 검사(슬롯 검사, 계획기·기호 검증, 안전 게이트)를 통과했는지와 반영 시각을 남기는 기록. 관리형 블랙보드의 검증 기록(f9)에 해당한다. 배정 속성 '확인 여부'와 6절 질문 '사용자 확인을 별도 개념으로 둘지'(q4-01·q4-04)와 겹칠 수 있어, 사람 확인까지 포함할지는 검증이 판단한다."
+      }
+    ],
+    "stage_completion_self_assessment": {
+      "met": false,
+      "missing": [
+        "처리 흐름·핵심 구성 요소가 아이디어 2. 자연어 업무 지시 챗봇 5절에 아직 실리지 않음(이번 제안의 검증 승인 전)",
+        "사용자에게 제안하는 실험 계획이 실험 페이지에 없음",
+        "열린 질문 q3-03~q3-11(q3-09·q3-10 중복 정리 필요)"
+      ]
+    }
+  }
+}
