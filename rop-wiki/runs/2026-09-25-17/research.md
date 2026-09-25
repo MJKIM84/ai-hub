@@ -41,9 +41,9 @@
 | f3 | [사실] | VDA 5050 3.0.0 은 지도마다 구역 집합(zoneSetId, 하나의 mapId 에 연결)을 두고 mapId 당 하나만 활성화하게 하며, 구역 유형으로 통행 금지(BLOCKED)·속도 제한(SPEED_LIMIT)·우선(PRIORITY)·방향 지정(DIRECTED) 등을 정의한다. | ref-031 | 아니오 | medium | 2026-09-25 | 제약 | — |
 | f4 | [사실] | MassRobotics AMR 상호운용 표준의 공식 JSON 스키마는 상태 보고의 위치를 x·y·z·각도(쿼터니언)와 참조하는 평면 기준(planarDatum, UUID)으로 두지만, 평면 기준의 원점·좌표계를 정의하는 메시지와 위치추정 신뢰도 필드는 스키마에 두지 않는다. | ref-033 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f5 | [사실] | Open-RMF API 의 로봇 상태 스키마는 위치를 지도 이름(map)·x·y·yaw 네 필수 필드의 2차원 위치(location_2D)로 보고하며, 위치추정 불확실성을 담는 필드는 두지 않는다. | ref-148, ref-155 | 아니오 | medium | 2026-09-25 | — | — |
-| f6 | [사실] | Open-RMF traffic-editor 는 평면도 이미지를 로봇 교통 지도를 그리는 배경으로 들여와 기본 축척(1픽셀=5cm)을 두 점 사이 실측 거리 입력으로 보정하고, 층마다 대응하는 기준점(fiducial) 2쌍 이상으로 층 사이 이동·회전·축척 변환을 구하며, 로봇이 만든 지도를 레이어로 올려 축척·이동·회전으로 평면도에 맞추게 한다. | ref-152 | 아니오 | medium | 2026-09-25 | — | — |
-| f7 | [사실] | traffic-editor 는 경로 정점에 충전 위치(is_charger)·주차 위치(is_parking_spot)·대기 지점(is_holding_point)·이름 붙은 장소 속성을 사람이 주석하게 하고, 문(여닫이·미닫이 등 유형)·승강기·벽을 함께 기술한 결과를 .building.yaml 로 저장하며 building_map_generator 가 이를 시뮬레이션 월드로 만든다. | ref-152 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
-| f8 | [사실] | Open-RMF 통합 문서는 로봇 경로 지도로 경유점마다 층 이름(B1·L1 등)과 층 안 미터 단위 (x, y) 좌표, 충전·주차·비상 대피 지점 같은 기능 속성을, 간선마다 일방·양방향과 속도 제한을 요구하고, 받을 수 있는 형식으로 YAML·XML·텍스트·DXF·DWG·SVG 를 들며 텍스트 자료는 화면 캡처로 좌표계·건물 정렬을 점검하라고 권한다. | ref-153 | 아니오 | medium | 2026-09-25 | — | — |
+| f6 | [사실] | Open-RMF traffic-editor 는 평면도 이미지를 로봇 교통 지도를 그리는 배경으로 들여와 기본 축척(1픽셀=5cm)을 두 점 사이 실측 거리 입력으로 보정하고, 층마다 대응하는 기준점(fiducial) 2쌍 이상으로 층 사이 이동·회전·축척 변환을 구하며, 로봇이 만든 지도를 레이어로 올려 축척·이동·회전으로 평면도에 맞추게 한다. | ref-079 | 아니오 | medium | 2026-09-25 | — | — |
+| f7 | [사실] | traffic-editor 는 경로 정점에 충전 위치(is_charger)·주차 위치(is_parking_spot)·대기 지점(is_holding_point)·이름 붙은 장소 속성을 사람이 주석하게 하고, 문(여닫이·미닫이 등 유형)·승강기·벽을 함께 기술한 결과를 .building.yaml 로 저장하며 building_map_generator 가 이를 시뮬레이션 월드로 만든다. | ref-079 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f8 | [사실] | Open-RMF 통합 문서는 로봇 경로 지도로 경유점마다 층 이름(B1·L1 등)과 층 안 미터 단위 (x, y) 좌표, 충전·주차·비상 대피 지점 같은 기능 속성을, 간선마다 일방·양방향과 속도 제한을 요구하고, 받을 수 있는 형식으로 YAML·XML·텍스트·DXF·DWG·SVG 를 들며 텍스트 자료는 화면 캡처로 좌표계·건물 정렬을 점검하라고 권한다. | ref-080 | 아니오 | medium | 2026-09-25 | — | — |
 | f9 | [사실] | Open-RMF 플릿 어댑터는 로봇 좌표계가 RMF 와 다를 때 층별로 같은 위치를 가리키는 RMF 좌표와 로봇 좌표 쌍(reference_coordinates)을 설정에 적고, nudged 라이브러리로 두 좌표계 사이 회전·축척·이동 변환과 변환 오차를 추정하며, 대응 경유점을 4개 이상 두도록 권한다. | ref-154, ref-105 | 아니오 | medium | 2026-09-25 | — | — |
 | f10 | [사실] | ROS 의 REP 105 는 이동로봇 좌표계를 연속적이지만 한없이 드리프트할 수 있는 odom 과, 드리프트가 크지 않은 대신 위치 보정 때문에 불연속 점프가 생기는 장기 전역 기준 map 으로 나누고, 여러 지도를 오가는 경우 공통 기준으로 earth 좌표계를 두게 한다. | ref-156 | 아니오 | medium | 2026-09-25 | — | — |
 | f11 | [사실] | VDMA 의 LIF(Layout Interchange Format) 1.0.0(2023-09)은 무인운반차 통합사가 간선·노드·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 처음 넘기기 위한 교환 형식이며, VDA 5050 인터페이스 정의의 영향을 받았다. | ref-160 | 아니오 | medium | 2023-09 | — | — |
@@ -53,12 +53,12 @@
 | f15 | [사실] | OGC IndoorGML 2.0 은 Part 1 개념 모델이 공개되었고 Part 2 인코딩은 작업 중이며, Part 2a XML 인코딩 초안은 실내 공간 분할(CellSpace·경계), 공간 연결을 나타내는 노드·엣지의 쌍대 그래프, 의미별 주제 레이어(ThematicLayer), 레이어 간 연결(InterLayerConnection)을 GML 3.2.1 로 인코딩한다. | ref-158 | 아니오 | medium | 2026-09-25 | — | — |
 | f16 | [사실] | ISO 19164:2024 는 건물 실내 위치 기반 응용에 공통으로 필요한 실내 지물의 의미 분류 체계와 속성·지물 간 연관을 정하며 기하·위상 기술은 다루지 않고, OGC IndoorGML 이 이를 구현하는 표준으로 소개된다. | ref-159 | 아니오 | medium | 2024 | — | 원문 미열람 |
 | f17 | [사실] | GS1 글로벌 로케이션 번호(GLN)는 물리적 위치와 그 안의 하위 위치(도크 문·보관 위치 등)를 식별할 수 있고, 하위 위치는 GLN 확장 요소로도 식별하되 이 확장 요소는 조직 내부나 거래 당사자 간 합의로만 쓴다. | ref-164 | 아니오 | medium | 2026-09-25 | 출하 / 완료·인계 | 원문 미열람 |
-| f18 | [추정] | 분류 원문 질문(제조사마다 다른 지도에서 ‘3층 출하 대기장’을 같은 장소로 인식)에 답하려면 (1) 층별 좌표 변환(Open-RMF 기준 좌표 쌍, ISO 21423 공통 좌표계 초안), (2) 지도·층 식별자 대응(VDA 5050 mapId, Open-RMF 지도·층 이름, MassRobotics planarDatum), (3) 업무 장소 식별자(GLN 하위 위치)와 지도 위 이름 붙은 경유점·스테이션의 대응 표가 함께 필요할 것으로 보이며, 이 대응을 한 규격이 정하는 것은 확인되지 않았다. | ref-154, ref-161, ref-031, ref-153, ref-033, ref-164, ref-152 | 아니오 | low | 2026-09-25 | 출하 / 완료·인계 | — |
+| f18 | [추정] | 분류 원문 질문(제조사마다 다른 지도에서 ‘3층 출하 대기장’을 같은 장소로 인식)에 답하려면 (1) 층별 좌표 변환(Open-RMF 기준 좌표 쌍, ISO 21423 공통 좌표계 초안), (2) 지도·층 식별자 대응(VDA 5050 mapId, Open-RMF 지도·층 이름, MassRobotics planarDatum), (3) 업무 장소 식별자(GLN 하위 위치)와 지도 위 이름 붙은 경유점·스테이션의 대응 표가 함께 필요할 것으로 보이며, 이 대응을 한 규격이 정하는 것은 확인되지 않았다. | ref-154, ref-161, ref-031, ref-080, ref-033, ref-164, ref-079 | 아니오 | low | 2026-09-25 | 출하 / 완료·인계 | — |
 | f19 | [사실] | Prakhya 외의 평생 3D 지도 작성 틀은 동적 점 제거, 여러 세션 지도의 자동 정합, 두 지도 사이 추가·제거 변화 탐지, 현재 상태의 기준 지도 하나와 변화분만 저장해 이전 세션 지도를 복원하고 두 세션 간 변화를 조회하는 지도 버전 관리로 구성된다. | ref-162 | 아니오 | medium | 2025-01 | — | 원문 미열람 |
 | f20 | [추정] | 랙·팔레트 배치 변경으로 지도가 바뀌는 창고에서는 변화 탐지로 만든 새 지도 판을 제조사마다 배포·활성화(VDA 5050 mapVersion·enableMap)해야 하므로, 여러 제조사 지도의 판 번호와 활성 시점을 함께 기록하지 않으면 같은 장소의 좌표 대응이 판마다 어긋날 수 있을 것으로 보인다. | ref-031, ref-162, ref-154 | 아니오 | low | 2026-09-25 | 적치 / 예외·성과 | — |
 | f21 | [사실] | Abdul Hafez·Joerger·Spenko(IJRR 2025)는 항공 분야의 무결성 위험(integrity risk) 지표를 EKF 기반 SLAM 위치추정에 적용해 센서 측정 결함을 고려한 위치추정 안전성을 정량화했고, 데이터 연관 오류가 이 지표로만 예측되는 큰 위치 성능 저하를 낼 수 있다고 보고했다. | ref-163 | 아니오 | medium | 2025-05 | 예외·성과 | 원문 미열람 |
 | f22 | [추정] | 확인한 규격에서 위치추정 신뢰도는 VDA 5050 만 0~1 점수와 정확도 범위로 보고하고 MassRobotics 스키마와 Open-RMF 로봇 상태에는 해당 필드가 없어, 이종 제조사 로봇의 위치 신뢰도를 같은 기준으로 비교·수용하는 규칙은 ROP 쪽에서 따로 정해야 할 것으로 보인다. | ref-031, ref-033, ref-155 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
-| f23 | [사실] | arXiv 2408.01737 연구는 건축 도면에서 만든 계층 그래프(A-Graph)와 3D 라이다로 추정한 상황 그래프(S-Graph)를 결합해 로봇 위치와 함께 도면(as-planned)과 현장(as-built)의 정렬·구조 편차를 실시간 추정하고, 최대 35cm·15도 편차까지 견고했다고 보고했다. | ref-166 | 아니오 | medium | 2024-08 | — | 원문 미열람 |
+| f23 | [사실] | arXiv 2408.01737 연구는 건축 도면에서 만든 계층 그래프(A-Graph)와 3D 라이다로 추정한 상황 그래프(S-Graph)를 결합해 로봇 위치와 함께 도면(as-planned)과 현장(as-built)의 정렬·구조 편차를 실시간 추정하고, 최대 35cm·15도 편차까지 견고했다고 보고했다. | ref-224 | 아니오 | medium | 2024-08 | — | 원문 미열람 |
 | f24 | [사실] | 노주형 외(로봇학회 논문지, 2026)는 3D 라이다–IMU SLAM 과 다중 센서 비용 지도로 탐사 경계를 만들고 RGB-D 카메라와 4자유도 팔로 승강기 버튼을 눌러 층을 옮겨 가며 사람 개입 없이 다층 실내 지도를 구축하는 시스템을 제시했다. | ref-165 | 아니오 | medium | 2026 | — | 원문 미열람 |
 | f25 | [사실] | 래스터 평면도 인식 연구에는 방 경계 유도 주의를 쓰는 다중 작업 신경망으로 벽·문·방 유형을 분할하는 DeepFloorplan 과, 래스터 평면도의 의미 분할을 개선해 다세대 평면도를 인식·재구성하는 Kratochvila 외(2024)가 있다. | ref-064, ref-078 | 아니오 | medium | 2024-08 | — | 원문 미열람 |
 | f26 | [사실] | 평면도를 기하 구조로 바꾸는 접근에는 래스터 평면도를 벽 선분·방 다각형 같은 벡터 표현으로 바꾸는 Raster-to-Vector(2017)와, 주의 트랜스포머로 평면도의 구조 그래프를 자기회귀 방식으로 예측하는 Raster-to-Graph(2024)가 있다. | ref-065, ref-070 | 아니오 | medium | 2024 | — | 원문 미열람 |
@@ -66,7 +66,7 @@
 | f28 | [사실] | 공개 평면도 데이터셋으로 CubiCasa5K(평면도 이미지 분석), MLStructFP(다세대 평면도), ResPlan(주거 평면도 1만 7천 건의 벡터·그래프), 국내 AI Hub 건축 도면 데이터가 있다. | ref-063, ref-069, ref-071, ref-074 | 아니오 | medium | 2025-08 | — | 원문 미열람 |
 | f29 | [추정] | 이전 트랙 실행은 FloorPlanCAD 주석이 비상업(CC BY-NC 4.0) 조건이고 ResPlan 이 CC BY 4.0 이라고 보고해, 공개 평면도 데이터셋을 상용 도면 인식에 쓰려면 데이터셋별 라이선스 검토가 필요할 것으로 보인다. | ref-066, ref-071 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
 | f30 | [사실] | DeFazio 외(2024)는 시각–언어 모델(VLM)이 평면도 지도를 해석해 로봇 이동 과업 계획에 쓸 수 있는지 평가했고, 조밀하게 라벨이 붙은 평면도와 최대 아홉 단계 과업 조건에서 GPT-4o 의 성공률 0.96 을 보고했다. | ref-076 | 아니오 | medium | 2024-09 | — | 원문 미열람 |
-| f31 | [추정] | 도면에서 만든 지도·공간 모델에는 충전·대기 위치 같은 로봇 운영 요소와 도면–현장 편차가 자동으로 담기지 않아, traffic-editor 처럼 사람이 주석하고 축척·정렬을 맞추거나 위치추정 쪽에서 편차를 추정하는 단계가 남는 것으로 보인다. | ref-152, ref-166, ref-153 | 아니오 | low | 2026-09-25 | 제약 | — |
+| f31 | [추정] | 도면에서 만든 지도·공간 모델에는 충전·대기 위치 같은 로봇 운영 요소와 도면–현장 편차가 자동으로 담기지 않아, traffic-editor 처럼 사람이 주석하고 축척·정렬을 맞추거나 위치추정 쪽에서 편차를 추정하는 단계가 남는 것으로 보인다. | ref-079, ref-224, ref-080 | 아니오 | low | 2026-09-25 | 제약 | — |
 | f32 | [추정] | 연계 대상: 로컬 지도 작성·SLAM·위치추정 계산은 분류 원문 9장의 로봇 자체 지능·제어 쪽이고, 이종 제조사를 연결하는 ROP는 제조사 지도와 공통 좌표계 사이 변환, 층·지도 식별자와 업무 장소 대응, 지도 판 관리, 보고된 위치 신뢰도의 수용 기준을 맡는 경계가 될 것으로 보인다. | ref-156, ref-031, ref-154, ref-163 | 아니오 | low | 2026-09-25 | — | — |
 
 ### 근거 발췌
@@ -124,8 +124,8 @@
 | ref-074 | 한국지능정보사회진흥원(AI Hub) | 건축 도면 데이터 | 미확인 | 정부·연구기관 | medium | 2026-09-25 | https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465 | 예 |
 | ref-076 | DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S. | Vision Language Models Can Parse Floor Plan Maps | 2024-09 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2409.12842 | 예 |
 | ref-078 | Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S. | Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans | 2024-08 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2408.01526 | 예 |
-| ref-152 | Open Robotics | Traffic Editor - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/traffic-editor.html | 아니오 |
-| ref-153 | Open Robotics | Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html | 아니오 |
+| ref-079 | Open Robotics | Traffic Editor - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/traffic-editor.html | 아니오 |
+| ref-080 | Open Robotics | Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html | 아니오 |
 | ref-154 | Open Robotics | Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html | 아니오 |
 | ref-155 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/location_2D.json | 아니오 |
 | ref-156 | ROS (ros-infrastructure/rep) | REP 105 -- Coordinate Frames for Mobile Platforms | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://www.ros.org/reps/rep-0105.html | 아니오 |
@@ -138,7 +138,7 @@
 | ref-163 | Abdul Hafez, O., Joerger, M., & Spenko, M. | Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach | 2025-05 | 논문 | medium | 2026-09-25 | https://journals.sagepub.com/doi/10.1177/02783649241287797 | 예 |
 | ref-164 | GS1 | Identifying a physical location - GLN | 미확인 | 표준 | medium | 2026-09-25 | https://www.gs1.org/standards/id-keys/gln/physical-location | 예 |
 | ref-165 | 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지) | 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 | 2026 | 논문 | medium | 2026-09-25 | https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667 | 예 |
-| ref-166 | arXiv:2408.01737 저자(미확인) | Tightly Coupled SLAM with Imprecise Architectural Plans | 2024-08 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2408.01737 | 예 |
+| ref-224 | arXiv:2408.01737 저자(미확인) | Tightly Coupled SLAM with Imprecise Architectural Plans | 2024-08 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2408.01737 | 예 |
 
 ### 출처 요약
 
@@ -158,8 +158,8 @@
 - **ref-074**: 원문 미열람. AI Hub 가 공개한 국내 건축 도면 학습 데이터 안내 페이지.
 - **ref-076**: 원문 미열람. 시각–언어 모델의 평면도 지도 해석과 로봇 과업 계획 성능을 평가한 프리프린트.
 - **ref-078**: 원문 미열람. 래스터 평면도 의미 분할을 개선해 다세대 평면도를 인식·재구성한 프리프린트.
-- **ref-152**: 평면도 이미지를 배경으로 벽·문·승강기·차선·충전 정점을 주석하고, 측정으로 축척을, 기준점으로 층을 맞추며, 로봇 지도를 레이어로 정렬하는 Open-RMF 도구 설명(mdBook 원본).
-- **ref-153**: Open-RMF 통합 시 로봇 경로 지도 요건(경유점 층 이름·미터 좌표·기능 속성, 간선 방향·속도, 받는 형식)과 정렬 점검 방법을 안내하는 문서(mdBook 원본).
+- **ref-079**: 평면도 이미지를 배경으로 벽·문·승강기·차선·충전 정점을 주석하고, 측정으로 축척을, 기준점으로 층을 맞추며, 로봇 지도를 레이어로 정렬하는 Open-RMF 도구 설명(mdBook 원본).
+- **ref-080**: Open-RMF 통합 시 로봇 경로 지도 요건(경유점 층 이름·미터 좌표·기능 속성, 간선 방향·속도, 받는 형식)과 정렬 점검 방법을 안내하는 문서(mdBook 원본).
 - **ref-154**: 플릿 어댑터 작성 튜토리얼(mdBook 원본). 로봇 좌표계와 RMF 좌표계를 기준 좌표 쌍과 nudged 라이브러리로 변환하는 방법과 권장 대응점 수를 설명한다.
 - **ref-155**: Open-RMF API 의 2차원 위치 스키마. 지도 이름(map)·x·y·yaw 를 필수 필드로 정의한다.
 - **ref-156**: ROS 이동 플랫폼 좌표계 규약. base_link·odom·map·earth 좌표계의 의미와 연속성·드리프트 특성, 여러 지도에서의 earth 좌표계 사용을 정한다(저장소 원본 rst).
@@ -172,7 +172,7 @@
 - **ref-163**: 원문 미열람. 항공의 무결성 위험 지표로 EKF 기반 SLAM 이동로봇의 위치추정 안전성을 정량화한 IJRR 44(6) 논문.
 - **ref-164**: 원문 미열람. GLN 으로 물리적 위치와 하위 위치(도크 문·보관 위치 등)를 식별하고 GLN 확장 요소를 쓰는 조건을 안내하는 GS1 페이지.
 - **ref-165**: 원문 미열람. 3D 라이다–IMU SLAM 탐사와 팔로 승강기 버튼을 눌러 층을 옮기며 다층 실내 지도를 자율 구축하는 국내 논문(21권 1호).
-- **ref-166**: 원문 미열람. 건축 도면 그래프와 라이다 상황 그래프를 결합해 위치와 도면–현장 구조 편차를 실시간 추정하는 SLAM 프리프린트.
+- **ref-224**: 원문 미열람. 건축 도면 그래프와 라이다 상황 그래프를 결합해 위치와 도면–현장 구조 편차를 실시간 추정하는 SLAM 프리프린트.
 
 ## 페이지 제안
 
@@ -213,9 +213,9 @@
     - f25~f30 은 이전 트랙 실행 2026-09-25-05 근거의 재인용이며 이번 실행에서 원문을 다시 열지 않음
     - 트랙 반영 제안의 '축척 복원은 별도 과제'([추정] f21, 2026-09-25-05)와 엘리베이터 라벨 관련 근거는 이번에 확인하지 못해 finding 으로 내지 않음
     - IndoorGML 2.0 Part 1(22-045r5) 본문은 파일 크기 한도로 열지 못해 Part 2a 초안과 README 로만 확인
-    - GitHub 원문 출처 대부분 발행일 미확인, ref-166 저자 미확인
+    - GitHub 원문 출처 대부분 발행일 미확인, ref-224 저자 미확인
     - 모든 finding 교차 확인 실패(f27 제외): 규격·연구마다 발행 주체 한 곳 자료만 확인, f9 두 출처는 같은 기관
 - 범위 경계 위반 의심:
     - f10·f19·f21·f23·f24: SLAM·위치추정·지도 작성은 분류 원문 9장 '로봇 자체 지능·제어'의 연계 영역이므로 좌표계 규약·지도 판·신뢰도 수용 관점으로만 쓰고 f32 에 '연계 대상: '으로 경계를 표시함
     - f24: 승강기 버튼을 누르는 팔 조작은 로봇 자체 제어이므로 다층 지도 구축 사례로만 인용
-- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 공식 저장소 원문 11건을 열었다(재사용 ref-031 VDA 5050 명세, ref-033 MassRobotics JSON 스키마, ref-105 어댑터 config.yaml, ref-148 robot_state.json / 신규 ref-152 traffic-editor, ref-153 integration_nav-maps, ref-154 어댑터 튜토리얼, ref-155 location_2D.json, ref-156 REP 105, ref-157 IfcSpace, ref-158 IndoorGML SWG README·26-042, ref-160 LIF README). ISO·GS1·논문 7건과 재사용 평면도 출처 12건은 원문 미열람(신뢰도 상한 medium). 검색 16회/30, 신규 출처 15건/15(ref-152~ref-166, next_ref_id 기준)로 출처 상한에 도달해 국가기술표준원 로봇 승강기 탑승 KS 보도자료(10. 설비·건물 시스템 연동 쪽), Automate ISO 21423 해설, 국내 IndoorGML 개념 논문(KCI), LT-mapper 는 넣지 못했다. 재사용 16건. 교차 확인은 f27 1건뿐. 주의: 이전 트랙 실행 2026-09-25-11 이 traffic-editor 등을 ref-079~ref-095 로 제안했으나 참고문헌 목록의 해당 id 는 다른 출처(ref-087 SayCan 등)라 이번에 새 id 로 부여했다 — 퍼블리셔가 URL 중복을 확인해야 한다. 트랙 반영 제안 4건(2026-09-25-05, 6·7·8·11절)은 재인용 finding(f25~f30)과 페이지 제안으로 다루었다. 한국 자료: KCI 다층 지도 구축 논문(ref-165), AI Hub 건축 도면 데이터(ref-074 재사용). 교차 규칙: 도면 해석 AI finding(f25~f30)은 27. AI·학습·적응과 모델 운영과 6. 지도·공간·위치 모델 양쪽 연결을 제안했다. 8. 실시간 세계 상태·데이터 일관성은 현재 위치 보고 연결로만, 22. 시뮬레이션·예측용 디지털 트윈은 시뮬레이션 월드 생성 연결로만 제안해 섞지 않았다.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 공식 저장소 원문 11건을 열었다(재사용 ref-031 VDA 5050 명세, ref-033 MassRobotics JSON 스키마, ref-105 어댑터 config.yaml, ref-148 robot_state.json / 신규 ref-079 traffic-editor, ref-080 integration_nav-maps, ref-154 어댑터 튜토리얼, ref-155 location_2D.json, ref-156 REP 105, ref-157 IfcSpace, ref-158 IndoorGML SWG README·26-042, ref-160 LIF README). ISO·GS1·논문 7건과 재사용 평면도 출처 12건은 원문 미열람(신뢰도 상한 medium). 검색 16회/30, 신규 출처 15건/15(ref-079~ref-224, next_ref_id 기준)로 출처 상한에 도달해 국가기술표준원 로봇 승강기 탑승 KS 보도자료(10. 설비·건물 시스템 연동 쪽), Automate ISO 21423 해설, 국내 IndoorGML 개념 논문(KCI), LT-mapper 는 넣지 못했다. 재사용 16건. 교차 확인은 f27 1건뿐. 주의: 이전 트랙 실행 2026-09-25-11 이 traffic-editor 등을 ref-079~ref-095 로 제안했으나 참고문헌 목록의 해당 id 는 다른 출처(ref-087 SayCan 등)라 이번에 새 id 로 부여했다 — 퍼블리셔가 URL 중복을 확인해야 한다. 트랙 반영 제안 4건(2026-09-25-05, 6·7·8·11절)은 재인용 finding(f25~f30)과 페이지 제안으로 다루었다. 한국 자료: KCI 다층 지도 구축 논문(ref-165), AI Hub 건축 도면 데이터(ref-074 재사용). 교차 규칙: 도면 해석 AI finding(f25~f30)은 27. AI·학습·적응과 모델 운영과 6. 지도·공간·위치 모델 양쪽 연결을 제안했다. 8. 실시간 세계 상태·데이터 일관성은 현재 위치 보고 연결로만, 22. 시뮬레이션·예측용 디지털 트윈은 시뮬레이션 월드 생성 연결로만 제안해 섞지 않았다.

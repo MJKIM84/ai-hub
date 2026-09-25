@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-2",
   "date": "2026-09-25",
-  "updated": "2026-09-25 02:32:13",
+  "updated": "2026-09-25 02:49:16",
   "concurrency": 3,
   "items": [
     {
@@ -15,7 +15,7 @@
         "label": "트랙1 매뉴얼 능력 온톨로지 #1",
         "resume": "2026-09-25-06"
       },
-      "status": "에이전트 단계 진행",
+      "status": "퍼블리셔 진행",
       "attempts": [
         {
           "run_id": "2026-09-25-06",
@@ -28,8 +28,9 @@
         {
           "run_id": "2026-09-25-16",
           "started": "2026-09-25 02:05:21",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": null,
+          "agents_done": "2026-09-25 02:49:16"
         }
       ],
       "run_id": "2026-09-25-16"
@@ -130,13 +131,18 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #3"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-19",
           "started": "2026-09-25 02:25:17",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 02:48:20",
+          "published_at": "2026-09-25 02:49:09",
+          "cost_usd": 14.0193,
+          "duration_sec": 1409.9,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-19"
@@ -179,9 +185,16 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #4"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-22",
+          "started": "2026-09-25 02:49:12",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-22"
     },
     {
       "index": 9,

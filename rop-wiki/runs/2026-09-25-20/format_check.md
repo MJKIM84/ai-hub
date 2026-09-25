@@ -1,0 +1,22 @@
+# 형식 검증 결과(pages)
+
+- 판정: 오류 11건
+- 분량 초과 자동 분리:
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-09-25-area09-s7.md (1,784자)
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "8. 대표 연구와 자료" → docs/topics/2026/2026-09-25-area09-s8.md (1,706자)
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "6. 대표 접근법과 기술" → docs/topics/2026/2026-09-25-area09-s6.md (1,498자)
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "11. 열린 질문" → docs/topics/2026/2026-09-25-area09-s11.md (1,297자)
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "4. 핵심 개념과 용어" → docs/topics/2026/2026-09-25-area09-s4.md (1,070자)
+    - docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-09-25-area09-s10.md (815자)
+- 오류:
+    - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+    - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/06-map-space-and-location-model.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 10-facility-and-building-system-integration.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 11-distributed-systems-communication-and-computing.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 12-command-and-task-execution-reliability.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/13-task-allocation-mrta.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md

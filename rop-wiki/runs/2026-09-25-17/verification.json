@@ -49,7 +49,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: traffic-editor mdBook 원본 열람(배경 이미지 캔버스, 기본 축척 1px=5cm와 측정 거리 보정, 기준점 2쌍 이상으로 이동·회전·축척 변환, 로봇 지도 레이어의 축척·이동·회전). 단 브리프의 새 id ref-152 는 이미 다른 출처(Meseguer Valenzuela 외 작업 배정 리뷰)에 쓰인 id 이고, 같은 URL 이 ref-079 로 이미 등록돼 있다 — ref-079 로 재사용해야 한다."
+      "note": "확인: traffic-editor mdBook 원본 열람(배경 이미지 캔버스, 기본 축척 1px=5cm와 측정 거리 보정, 기준점 2쌍 이상으로 이동·회전·축척 변환, 로봇 지도 레이어의 축척·이동·회전). 단 브리프의 새 id ref-079 는 이미 다른 출처(Meseguer Valenzuela 외 작업 배정 리뷰)에 쓰인 id 이고, 같은 URL 이 ref-079 로 이미 등록돼 있다 — ref-079 로 재사용해야 한다."
     },
     {
       "finding_id": "f7",
@@ -65,7 +65,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: integration_nav-maps 원본 열람(층 이름 B1·L1, 미터 단위 (x, y), 충전기·주차·비상 대피 지점 플래그, 간선 일방·양방향과 속도 제한, YAML·XML·텍스트·DXF·DWG·SVG 순서, 스크린샷 'sanity-checking'). 새 id ref-153 대신 이미 등록된 ref-080(같은 URL)을 재사용해야 한다."
+      "note": "확인: integration_nav-maps 원본 열람(층 이름 B1·L1, 미터 단위 (x, y), 충전기·주차·비상 대피 지점 플래그, 간선 일방·양방향과 속도 제한, YAML·XML·텍스트·DXF·DWG·SVG 순서, 스크린샷 'sanity-checking'). 새 id ref-080 대신 이미 등록된 ref-080(같은 URL)을 재사용해야 한다."
     },
     {
       "finding_id": "f9",
@@ -185,7 +185,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "원문 미열람. 이번 검증에서 재검색하지 않았다(재인용: 2026-09-25-11). 같은 arXiv 2408.01737 이 이미 ref-224(Shaheer, M. 외, 저자 확인됨)로 등록돼 있으므로 새 id ref-166(저자 미확인) 대신 ref-224 를 재사용해야 한다. 35cm·15도는 단일 출처 실험 조건 수치."
+      "note": "원문 미열람. 이번 검증에서 재검색하지 않았다(재인용: 2026-09-25-11). 같은 arXiv 2408.01737 이 이미 ref-224(Shaheer, M. 외, 저자 확인됨)로 등록돼 있으므로 새 id ref-224(저자 미확인) 대신 ref-224 를 재사용해야 한다. 35cm·15도는 단일 출처 실험 조건 수치."
     },
     {
       "finding_id": "f24",
@@ -271,9 +271,9 @@
   "duplication": {
     "ok": false,
     "overlaps": [
-      "브리프의 새 id ref-152(traffic-editor)는 참고문헌 목록에서 이미 다른 출처(Meseguer Valenzuela·Blanes Noguera, Task Allocation in Mobile Robot Fleets)의 id 이며, traffic-editor 는 같은 URL 로 ref-079 에 이미 등록돼 있다",
-      "브리프의 새 id ref-153(integration_nav-maps)은 같은 URL 의 기존 ref-080 과 중복",
-      "브리프의 새 id ref-166(arXiv 2408.01737, 저자 미확인)은 같은 URL 의 기존 ref-224(Shaheer, M. 외)와 중복",
+      "브리프의 새 id ref-079(traffic-editor)는 참고문헌 목록에서 이미 다른 출처(Meseguer Valenzuela·Blanes Noguera, Task Allocation in Mobile Robot Fleets)의 id 이며, traffic-editor 는 같은 URL 로 ref-079 에 이미 등록돼 있다",
+      "브리프의 새 id ref-080(integration_nav-maps)은 같은 URL 의 기존 ref-080 과 중복",
+      "브리프의 새 id ref-224(arXiv 2408.01737, 저자 미확인)은 같은 URL 의 기존 ref-224(Shaheer, M. 외)와 중복",
       "f4 의 근거 ref-033(MassRobotics 발표 페이지)은 실제로 열어 본 JSON 스키마가 아니며, 같은 스키마가 ref-230 으로 이미 등록돼 있다",
       "브리프 limits 의 '이전 실행 2026-09-25-11 이 제안한 ref-079~ref-095 는 목록의 해당 id 가 다른 출처'라는 판단은 ref-079·ref-080 에 대해서는 틀렸다(두 id 는 traffic-editor·integration_nav-maps 그대로다)",
       "기존 열린 질문 oq-022(국내 물류센터의 CAD·BIM 도면 활용과 도면–현장 차이 확인)가 이 영역에 걸려 있으나 브리프 11절 계획에 연결이 없다",
@@ -296,7 +296,7 @@
   "required_fixes": [
     "f1: 'positionInitialized(위치추정 초기화 여부)'를 VDA 5050 3.0.0 명칭 'localized(필수, 위치를 신뢰할 수 있는지)'로 고치고, localizationScore(위치추정 품질 0~1)·deviationRange(미터 단위 위치 편차 범위)가 선택 필드임을 적으며, 각주에 ref-051(main state.schema)을 더한다 — main 상태 스키마에 positionInitialized 가 없고 3.0 에서 localized 로 바뀌었다.",
     "f22: 'VDA 5050 만 0~1 점수와 정확도 범위로 보고'를 '선택 필드로 보고할 수 있게 한다'로 고친다 — 두 필드는 main 상태 스키마에서 선택 필드다.",
-    "출처 id 재매핑: f6·f7·f18·f31 의 ref-152 는 기존 ref-079 로, f8·f18·f31 의 ref-153 은 기존 ref-080 으로, f23·f31 의 ref-166 은 기존 ref-224(Shaheer, M. 외)로 바꾸고, reference_updates 에 ref-152·ref-153·ref-166 을 새로 등록하지 않는다 — 같은 URL 이 이미 등록돼 있고 ref-152 는 다른 출처(Meseguer Valenzuela 외)의 id 다.",
+    "출처 id 재매핑: f6·f7·f18·f31 의 ref-079 는 기존 ref-079 로, f8·f18·f31 의 ref-080 은 기존 ref-080 으로, f23·f31 의 ref-224 은 기존 ref-224(Shaheer, M. 외)로 바꾸고, reference_updates 에 ref-079·ref-080·ref-224 을 새로 등록하지 않는다 — 같은 URL 이 이미 등록돼 있고 ref-079 는 다른 출처(Meseguer Valenzuela 외)의 id 다.",
     "f4·f18·f22: 근거 출처 ref-033 을 ref-230(MassRobotics AMR_Interop_Standard.json)으로 바꾸고 이번 실행 reference_updates 에 ref-033 을 넣지 않는다 — 실제로 연 문서는 발표 페이지가 아니라 JSON 스키마이고 ref-230 으로 이미 등록돼 있다.",
     "f11: LIF 를 'README 기준 1.0.0(2023-09)'으로 판·기준일을 밝혀 적는다 — VDA 5050 3.0.0 원문(ref-031)이 LIF 를 'VDMA 2024-03' 판으로 인용해 더 새 판이 있을 수 있다.",
     "f12: '발행 여부 미확인'을 유지하고 기준일 2026-09-25 에 검색 결과상 FDIS 단계였음을 적을 수 있다. f13 은 [추정]을 유지하고 '초안 해설 요약 기준이며 기준점 개수는 미확인'을 병기해 열린 질문(ISO 21423 공통 좌표계)과 연결한다 — 검증 검색에서 '기준점 3개 이상' 문구를 확인하지 못했다.",
@@ -310,6 +310,6 @@
     "9절: f10·f19·f21·f23·f24 의 SLAM·위치추정·지도 작성 기술은 '연계 대상'으로 짧게 두고 ROP 가 맡는 것처럼 쓰지 않는다. ROP 쪽 경계(f32)는 [추정]으로 둔다."
   ],
   "confidence": "medium",
-  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 공식 저장소만 열림). 확인 32건, 미확인 0건, 교차 확인 0건. 강등: 없음(f13 은 기존 [추정] 유지, f1 은 3.0.0 필드명 positionInitialized → localized 정정 조건부 유지). 원문 미열람 출처: ref-063, ref-064, ref-065, ref-066, ref-067, ref-069, ref-070, ref-071, ref-073, ref-074, ref-076, ref-078, ref-159, ref-161, ref-162, ref-163, ref-164, ref-165, ref-224(브리프 ref-166). 검증자가 GitHub 원문으로 다시 연 출처: ref-031 원문 텍스트, ref-051 상태 스키마, ref-230 MassRobotics 스키마, ref-148·ref-155 Open-RMF 스키마, ref-079 traffic-editor, ref-080 경로 지도 요건, ref-154 어댑터 튜토리얼, ref-105 설정, ref-156 REP 105, ref-157 IfcSpace, ref-158 IndoorGML SWG, ref-160 LIF. 출처 id 정리: ref-152·ref-153·ref-166 은 기존 ref-079·ref-080·ref-224 와 같은 출처라 재사용하고, f4 의 근거는 ref-033 대신 ref-230 이다. 주의: 규격 필드 비교는 발행 주체 한 곳의 원문 기준이며 제조사 지도와 업무 장소를 잇는 대응 규칙(f18), 지도 판 동기화(f20), 신뢰도 수용 기준(f22), ROP 경계(f32)는 이 위키의 추론이다. ISO 21423 은 최종 발행이 확인되지 않았고(검색상 FDIS 단계) 공통 좌표계의 기준점 개수는 미확인이다. LIF 는 README 판(1.0.0, 2023-09)보다 새 판(VDMA 2024-03)이 VDA 5050 3.0.0 에 인용돼 있다. 평면도 인식 자료(f25~f30)는 이전 트랙 실행의 재인용이다. 2026-09-25-11 트랙 반영 제안 가운데 osmAG·BIM 기반 지도 생성·도면 기반 위치추정 연구는 이번 브리프에 근거가 없어 반영하지 않았다. 검증 검색 10회(리서치 16회와 합쳐 26/30).",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 공식 저장소만 열림). 확인 32건, 미확인 0건, 교차 확인 0건. 강등: 없음(f13 은 기존 [추정] 유지, f1 은 3.0.0 필드명 positionInitialized → localized 정정 조건부 유지). 원문 미열람 출처: ref-063, ref-064, ref-065, ref-066, ref-067, ref-069, ref-070, ref-071, ref-073, ref-074, ref-076, ref-078, ref-159, ref-161, ref-162, ref-163, ref-164, ref-165, ref-224(브리프 ref-224). 검증자가 GitHub 원문으로 다시 연 출처: ref-031 원문 텍스트, ref-051 상태 스키마, ref-230 MassRobotics 스키마, ref-148·ref-155 Open-RMF 스키마, ref-079 traffic-editor, ref-080 경로 지도 요건, ref-154 어댑터 튜토리얼, ref-105 설정, ref-156 REP 105, ref-157 IfcSpace, ref-158 IndoorGML SWG, ref-160 LIF. 출처 id 정리: ref-079·ref-080·ref-224 은 기존 ref-079·ref-080·ref-224 와 같은 출처라 재사용하고, f4 의 근거는 ref-033 대신 ref-230 이다. 주의: 규격 필드 비교는 발행 주체 한 곳의 원문 기준이며 제조사 지도와 업무 장소를 잇는 대응 규칙(f18), 지도 판 동기화(f20), 신뢰도 수용 기준(f22), ROP 경계(f32)는 이 위키의 추론이다. ISO 21423 은 최종 발행이 확인되지 않았고(검색상 FDIS 단계) 공통 좌표계의 기준점 개수는 미확인이다. LIF 는 README 판(1.0.0, 2023-09)보다 새 판(VDMA 2024-03)이 VDA 5050 3.0.0 에 인용돼 있다. 평면도 인식 자료(f25~f30)는 이전 트랙 실행의 재인용이다. 2026-09-25-11 트랙 반영 제안 가운데 osmAG·BIM 기반 지도 생성·도면 기반 위치추정 연구는 이번 브리프에 근거가 없어 반영하지 않았다. 검증 검색 10회(리서치 16회와 합쳐 26/30).",
   "retry_reason": null
 }

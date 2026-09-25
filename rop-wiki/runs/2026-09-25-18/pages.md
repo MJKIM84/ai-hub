@@ -4,13 +4,13 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md | draft | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 각주 22건 정의, 프런트매터 related_areas·tags·sources·confidence 채움 |
+| update | docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md | draft | 영역 심화: 섹션 3~11 신규 작성(분량 초과 절은 주제 페이지로 분리하고 요약·링크를 남김), 페이지 상태 자동 영역 표식 추가, 프런트매터 related_areas·tags·sources·confidence 채움 |
 | create | docs/topics/2026/2026-09-25-area08-s7.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,700자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area08-s6.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(1,644자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area08-s4.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "4. 핵심 개념과 용어" 절(1,467자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area08-s11.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,104자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area08-s8.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "8. 대표 연구와 자료" 절(1,046자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area08-s10.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(860자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area08-s10.md | draft | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(860자)을 옮겼다. 본문 연결 목록의 링크 8개를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
 
 ## 변경 이력·색인
 
@@ -99,6 +99,7 @@
 - 전반: 교차 확인 0건 — VDA 5050·Open-RMF·Sparkplug·EPCIS 주장에 발행 주체와 독립된 두 번째 출처가 필요하다.
 - 8절: Toris·Chernova(ICRA 2017) 시간 지속성 모델 등 출처 상한으로 넣지 못한 자료의 URL 확인.
 - 다음 실행 후보: 10. 설비·건물 시스템 연동 페이지에 f6·f7·f8(문·승강기 상태 메시지와 어댑터 감독) 반영.
+- pipeline 담당: 자동 분리 시 세부영역 페이지 기준 상대 링크(같은 대분류 파일명, ../<대분류 slug>/…)를 주제 페이지 위치 기준(../../categories/…)으로 다시 써 주는 처리가 필요하다 — 이번 실행의 10절 분리 페이지에서 링크 8개가 깨졌다.
 
 ## 이행한 수정 지시
 
@@ -118,3 +119,4 @@
 - f9 기준 — 4절·6절·7절에 ROS 2 QoS 가 Jazzy 판 문서 기준(2026-09-25 확인)임을 밝혔고, ref-182~ref-188 과 VDA 5050 계열(ref-031·ref-051) 각주의 발행일을 '미확인'으로 두었다.
 - 용어집 — '디지털 섀도' 정의에 Kritzinger 외(2018)의 분류임을 밝히고 설명에 기존 '디지털 트윈' 용어 페이지 링크를 두었으며 기존 '디지털 트윈' 정의는 바꾸지 않았다.
 - 분량 초과 자동 분리: 8. 실시간 세계 상태·데이터 일관성 본문 10,331자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,649자
+- 형식 검증 재작성: docs/topics/2026/2026-09-25-area08-s10.md 3절 연결 목록의 깨진 링크 8개(세부영역 페이지 기준 상대 경로)를 주제 페이지 위치 기준 경로 ../../categories/<대분류 slug>/<파일>.md 로 고쳤다. 세부영역 페이지 프런트매터 sources 를 남은 본문의 각주 정의 17건과 일치시키고, reference_updates 의 cited_by 를 실제 인용 페이지로 맞췄다. 주장·태그·각주 내용은 바꾸지 않았다.

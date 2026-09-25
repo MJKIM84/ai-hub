@@ -1,0 +1,256 @@
+{
+  "run_id": "2026-09-25-21",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-288 README를 github_raw로 다시 열었다. 'Decompose the high-level task into subtasks', 능력 기반 배정, Fast Downward와 PDDL, ICRA 2025(Atlanta) 게재를 확인했다. 단일 출처라 교차 확인은 아니다. 발행일은 미확인이며 기준일은 확인일로 둔다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README 원문에서 '105% higher success rate and 36% higher efficiency than existing LM-based multi-agent planners'와 AI2-THOR 기반 가정 작업 벤치마크를 확인했다. 단일 저자 보고 수치이므로 '저자 보고값, 독립 재현 미확인'과 MAT-THOR 조건을 함께 적는다는 조건으로 [사실]을 유지한다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 arXiv 2410.21040과 IEEE Xplore 게재 기록을 확인했다. 스니펫에 'skill list generation and dependency graph generation by LLMs, and task allocation using linear programming'이 있다. 저자 Obata 외 표기도 검색 결과와 일치한다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색 스니펫에서 LLM 기반 방법이 'struggled with task allocation due to tracking limitations'였고 선형계획 쪽이 'fewer allocation errors'였다는 서술을 확인했다. 'almost no failures'는 이번 검증 스니펫에서는 보이지 않았다. 병렬 실행 증가는 이전 검증 기록 기준이다. 저자 보고값으로만 쓰고 실험 조건은 미확인으로 둔다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 제약 추출 82%(DeepSeek-R1-Distill-Qwen-32B), MILP 코드 생성 90%(Qwen2.5-Coder-7B-Instruct), 항공기 외피 제조 사례, makespan 최소화 목적을 확인했다. 저자 보고값이며 대상은 제조 생산 제약이다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 선언 그래프(disjunctive graph) 구성을 LLM이 돕는다는 점, 결정적 해법, 공정 트리로 저수준 프로그램을 생성한다는 점, 세 복잡도 수준의 IMR-Bench, 저자 Su·Xu·van Kaick·Xu·Hu, ICRA 2026을 확인했다. '선언 그래프'는 용어집에 없는 번역어이므로 영문 병기가 필요하다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 team-level PDDL로 'abstracting away robot assignment', 하위 작업 의존 그래프, 정수계획 기반 로봇 수준 배정을 확인했다. 저자는 Guangyao Shi, Yuwei Wu, Vijay Kumar, Gaurav S. Sukhatme이고 arXiv 게재일은 2025-10-26이다. ref-305의 org '저자 미확인'은 고쳐야 한다. 이동 비용·작업 부하 최적화 문구는 리서치 쪽 스니펫 기준이다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 LLM 앞단의 작업 그래프(소요 시간·선후관계)와 능력을 고려한 적합도 행렬, 형식적 뒷단의 makespan 최소화를 확인했다. 제거 실험에서 뒷단은 MILP다. 저자는 Corban Rivera 외(JHU APL·JHU·DEVCOM ARL)이고 2025-10-08 제출이다. ref-306의 org '저자 미확인'은 고쳐야 한다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README를 github_raw로 다시 열어 중앙 배정자, PEFA, 쿼드로터·로봇 개·로봇 개 등에 장착된 로봇 팔, 5개 장면 100개 장기 작업, OmniGibson v0.2.1·Isaac Sim 2022.2.0을 확인했다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지(원문 미열람). 검증 검색 초록 요약에서 TEACh 건설 작업, 동적 계획법·Q-러닝·DQN 비교, Heavy Excels 77%와 'outperforming all traditional methods', 토큰 94.6%·배정 시간 86% 절감을 다시 확인했다. 상충하는 2차 요약(동적 계획법이 더 높음)은 이전 검증 기록에 근거하며 이번에는 다시 확인하지 않았다. 따라서 출처 충돌 열린 질문으로 두는 처리가 맞다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 Springer Autonomous Robots(DOI 10.1007/s10514-026-10257-4)를 확인했다. 스니펫에는 네 층 분류와 과제(수학적 추론 한계·환각·지연·벤치마크 필요)가 모두 나타난다. arXiv 판 기준일은 2025-02이다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 고수준 함수 라이브러리와 프롬프트 설계 원칙은 논문 검색 요약(ref-298, 원문 미열람, v2 2023-07-19)에서, PromptCraft 저장소와 AirSim 기반 시뮬레이터는 README(ref-297, github_raw 열람)에서 확인했다. README는 함수 라이브러리를 설명하지 않으므로 함수 라이브러리 서술의 각주는 ref-298만 단다. 두 출처 모두 Microsoft라 독립 교차가 아니다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ROSA README(LangChain 기반, ROS 1 Noetic, ROS 2 Humble·Iron·Jazzy)와 Custom Agents 위키(tools·tool_packages 파라미터)를 github_raw로 다시 열어 확인했다. 두 문서는 같은 발행 주체다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 위키 예시 rosa.invoke(\"Move forward by 2 units.\")가 확인 절차 없이 바로 호출되고, README·위키에 사람 확인·권한 제한 설명이 없다는 점을 다시 확인했다. 연 문서 범위의 관찰이며 부재의 확인은 아니므로 [추정]을 유지한다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: RAI README를 다시 열어 ROS 2 Jazzy·Humble, rai_asr·rai_tts·rai_perception·rai_sim·rai_bench(그 밖에 rai_nomad 등), Apache 2.0, 안전·승인·도구 제한 설명이 없다는 점을 확인했다. 문서 내용에 관한 진술이라 [사실]로 둘 수 있다. 다만 설명이 없다는 부분은 'README 범위에서'로 한정해 쓴다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검증 검색에서 같은 URL의 초록(이종록·황정훈·박민철, 한국전자기술연구원), LangChain 에이전트가 ROS 2에 연결된 도구를 호출하는 구조, 자연어를 ROS 2 명령으로 바꾸는 흐름, 실시간 상태 모니터링을 확인했다. 학술대회 이름·일자는 미확인이다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): inorbit.ai/press/inorbit-robops-copilot URL이 실재하고, Automate·Robotics 24/7·PRWeb에 같은 보도자료가 실려 있다. 'ask questions in their preferred language, get detailed explanations, refine their analysis'도 확인했다. 재게재끼리는 독립 확인이 아니므로 벤더 주장 [추정]을 유지한다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): Robotics 24/7·Control Design·PRWeb·Automated Warehouse에서 음성을 포함한 자연어로 동작 정의, 실시간 데이터 조회, 성능 분석, 미션 실행, 보고서 생성을 한다는 내용과 8개 기업 합동 시연(Automate 2026, 2026-06-22~25)을 확인했다. 같은 보도자료이며 벤더 주장이다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 이번 검증 검색 스니펫에서 음성·텍스트 명령을 실시간 동작으로 옮겨 로봇 작업·이동·플릿 단위 운영을 실행한다는 서술, 다단계 조사 에이전트, 2025-06-30 발표를 확인했다. 이전 검증에서 확인하지 못한 '제어' 범위가 벤더 주장 수준에서 뒷받침된다. [추정]과 벤더 주장 병기를 유지하고, 승인 방식은 미확인으로 둔다. 보도자료의 'world's first', 'AI-native' 같은 마케팅 표현은 쓰지 않는다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 와우테일과 로봇신문 기사에서 온프레미스 에이전트 다비스, xMS 데이터 기반 의사결정 지원, 실증 뒤 2027년 상반기 1.0 출시 계획을 확인했다. 개발 계획이자 벤더 주장이므로 [추정]을 유지한다. 기사 속 고객사·공정 수는 claim에 없으므로 넣지 않는다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 구성 finding들(f1·f3·f5~f10·f12·f13·f15·f16과 재사용 ref-089·ref-091)을 이 위키가 묶은 분류다. 단일 출처가 없다는 점이 명시되어 있어 [추정]을 유지한다. q1-01의 '분해 결과 형태' 여섯 유형과 축이 다르다는 점을 본문에 밝혀야 한다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: f17~f20에서 도출한 추론이다. 모두 벤더 주장이며 부재의 확인이 아니라는 점이 명시되어 있다. 확인·승인 부분은 q1-03과 겹치므로 남은 불확실성으로만 쓴다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 평가 환경 정리는 f2·f5·f6·f9·f10과 맞는다. 다만 PIP-LLM의 창고 작업 언급은 이번 검증 검색의 논문 요약에서도 보이지 않았다. 브리프의 source_unopened: false 표시와 달리 다수의 근거 출처가 원문 미열람이다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: f4·f5·f7·f8을 분류 원문 13. 작업 배정 — MRTA의 SCM 질문에 대응시킨 추론이며 [추정]이다. 최근접 배정과 직접 비교한 LLM 연구가 없다는 한계가 명시되어 있다. 근거 논문은 모두 원문 미열람이다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "보류된 실행 2026-09-25-12가 같은 질문 q1-02를 다뤘으나 게시되지 않았다. 이번 브리프는 새 출처 id(ref-288~ref-306)를 쓰며, 참고문헌 목록(최대 ref-240)과 최근 실행 2026-09-25-19·20(ref-228~ref-272)과도 충돌하지 않는다.",
+      "f21의 LLM 담당 범위 3분류는 단계 1 페이지 3절 q1-01의 '분해 결과 형태' 여섯 유형과 축이 다르다. 모순은 아니며 본문에 축이 다르다는 점을 밝힌다.",
+      "SMART-LLM(ref-089)과 LLM+P(ref-091)는 기존 각주를 재사용했다. 기존 검증 서술과 모순되지 않는다.",
+      "백로그 q1-05와 q1-06은 사실상 같은 질문이다(실행 2026-09-25-04 중복 등록). 백로그 정리가 필요하다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "ref-305: 기관 칸을 'Shi, G., Wu, Y., Kumar, V., & Sukhatme, G. S.'로, 발행일을 2025-10으로 적는다(각주 정의와 reference_updates 모두). 이유: 검증 검색에서 저자 목록을 확인했고 '저자 미확인'은 사실과 다르다.",
+    "ref-306: 기관 칸을 'Rivera, C., Byrd, G., Booker, M., Kemp, B., Gaines, A., Holmes, E., Uplinger, J., de Melo, C. M., & Handelman, D.(JHU APL·JHU·DEVCOM ARL)'로 적는다. 이유: 검증 검색에서 저자 목록과 소속을 확인했다.",
+    "원문 미열람 표시: ref-089, ref-091, ref-289, ref-290, ref-291, ref-292, ref-294, ref-298, ref-300, ref-301, ref-302, ref-303, ref-304, ref-305, ref-306의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates에 source_unopened: true를 넣는다. ref-089·ref-091은 기존 참고문헌 페이지의 각주 줄을 재사용한다. 이유: 이 출처들은 검색 요약만 확인했다.",
+    "f2·f4·f5·f10: 수치와 비교 결과를 쓸 때마다 같은 문장이나 바로 뒤 문장에 '저자 보고값, 독립 재현 미확인'과 평가 조건을 적는다. 조건은 f2 MAT-THOR·AI2-THOR 가정 작업, f4 시뮬레이션·실험 조건 미확인, f5 항공기 외피 제조 생산 제약과 makespan 최소화, f10 TEACh 건설 작업이다.",
+    "f10과 open_questions_new의 출처 충돌 질문: 두 요약을 모두 [추정]으로 제시하고 한쪽을 고르지 않는다. 동적 계획법 완료율 '0.95'는 이번 브리프 finding에 근거가 없으므로 질문과 본문에서 빼고 '다른 2차 요약은 동적 계획법의 완료율이 더 높다고 적는다' 수준으로만 쓴다.",
+    "f12: '고수준 함수 라이브러리로 코드 합성' 서술에는 ref-298만 각주로 단다. ref-297(PromptCraft README)은 저장소와 AirSim 기반 시뮬레이터 공개의 근거로만 쓴다. 이유: README에는 함수 라이브러리 설명이 없다.",
+    "f17·f18·f19·f20·f22: 단계 1 페이지 3절, 아이디어 2 페이지 3절 '제품 사례', 18. 사람–로봇 협업·운영 인터페이스 반영 제안의 모든 문장에 [추정]과 '벤더 주장'을 병기한다. Formant 보도자료의 'world's first'·'AI-native' 같은 마케팅 표현과, f20 기사 속 고객사·공정 수(30개사 50여 공정)는 넣지 않는다. f20은 '개발 계획'임을 밝힌다.",
+    "f14·f15: 확인·권한 장치가 없다는 서술은 'README·위키(연 문서) 범위에서 설명이 없다'로 한정한다. '장치가 없다'처럼 부재를 단정하지 않는다.",
+    "f23: 'PIP-LLM의 창고 작업 언급'은 '일반 검색 요약에만 있고 논문 요약에서는 확인되지 않음(미확인)'으로 쓰거나 빼고, 검색 범위의 결과이며 부재의 확인이 아님을 밝힌다.",
+    "f21: 3분류는 이 위키의 정리이며 단일 출처가 없다는 점과, q1-01의 여섯 유형(분해 결과 형태)과 축이 다르다는 점(LLM 담당 범위)을 본문에 적는다.",
+    "용어: 본문에서 '과업'이 아니라 용어집 표기인 '작업'(작업 분해, 작업 배정)을 쓴다. f6의 '선언 그래프'는 첫 등장 때 영문 disjunctive graph를 병기한다. MILP는 용어집 등록명 '혼합 정수 계획(Mixed Integer Linear Programming, MILP)'과 같은 문자열로 쓴다.",
+    "온톨로지 변경 '배정 (Assignment)' 수정을 승인한다. 기존 '선택 근거'와 합치지 않는 별도 속성 '배정 산출 방식'을 더한다. 값 후보는 'LLM 직접 추론'(COHERENT, f9[^ref-293])과 '최적화 해법(선형계획·정수계획·MILP·makespan 최소화)'(LiP-LLM f3, Peng 외 f5, PIP-LLM f7, FLEET f8)이다. '규칙' 값은 근거 finding이 없으므로 넣지 않고 6절 미해결 모델링 질문으로 둔다. 배정 행의 상태를 초안에서 확정으로 바꾸고, 초안 버전을 '0.1'에서 '0.2'로 올려 H1 '(v0.2)', 상태 줄, 프런트매터 ontology_version, track_updates.ontology_draft_version 네 곳을 맞춘다.",
+    "새 질문 2건(LLM 직접 배정과 정식화+해법기 방식 비교(단계 3, f10), 온톨로지 질의 기반 적합도 대 LLM 적합도 행렬(단계 3, f8))을 backlog_updates에 등록한다. origin은 각각 f10, f8이다.",
+    "단계 1 페이지: 2절 q1-02를 '답함'(답한 실행 2026-09-25-21, 답 위치 #q1-02)으로 바꾸고, 3절에 '### q1-02 … {#q1-02}' 소제목을 둔다. 4절 남은 불확실성에는 '운영 제품의 미션이 미리 정의된 미션 호출인지 새 분해인지와 실행 전 확인·권한 장치는 미확인(f22, q1-03과 연결)'을 적는다.",
+    "단계 1 페이지 6절: 두 완료 조건의 검증 판정 칸은 모두 '미충족 · 미승인'으로 둔다. 상태 줄의 완료 조건은 '미충족'으로 둔다. 6절 아래 줄은 '다음 단계로 전환: 아니오(채팅·음성 지시 제품의 확인·승인 비교 q1-03 미조사, 지시 분해 접근 유형 목록이 업무 분해·배정 설계 초안에 미반영, 열린 질문 q1-03·q1-04·q1-05·q1-06)'로 쓴다.",
+    "13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영, 18. 사람–로봇 협업·운영 인터페이스는 세부영역 페이지를 직접 고치지 않는다. area_reflection_proposals로만 내고, 13과 27에는 교차 규칙(학습 기반 배차)에 따라 서로 연결을 표시한다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). GitHub 공식 저장소 문서 6건(LaMMA-P, COHERENT, ROSA README·위키, PromptCraft, RAI)은 raw 경로로 다시 열어 확인했다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등은 없다. 원문 미열람 출처는 ref-089, ref-091, ref-289, ref-290, ref-291, ref-292, ref-294, ref-298, ref-300, ref-301, ref-302, ref-303, ref-304, ref-305, ref-306이다. 이 가운데 ref-305·ref-306은 기관 칸의 '저자 미확인'을 검증 검색으로 확인한 저자로 고쳐야 한다. 주의할 점이 네 가지 있다. 첫째, 연구 수치(105%·36%, 82%·90%, 77%, 토큰 94.6%·시간 86%)는 모두 저자 보고값이며 독립 재현이 확인되지 않았다. 둘째, LTAA의 비교 우위는 초록 요약과 다른 2차 요약이 충돌하므로 출처 충돌 열린 질문으로 둔다. 셋째, 제품 사례(InOrbit, Formant, 다임리서치)는 모두 보도자료·기사에 근거한 벤더 주장이다. 공개 자료에서는 미션이 미리 정의된 것인지 새로 분해한 것인지, 실행 전 확인·권한 장치가 있는지 확인되지 않았다. 넷째, LLM 담당 범위 3분류(f21)는 이 위키의 정리이며 단일 출처가 없다. 백로그의 q1-05와 q1-06은 같은 질문의 중복 등록이라 정리가 필요하다. 검증 검색은 14회다(리서치 17회를 합쳐 31/40). 온톨로지 변경은 배정 (Assignment) 수정을 승인했다: 별도 속성 '배정 산출 방식'(값: LLM 직접 추론 f9 / 최적화 해법(선형계획·정수계획·MILP·makespan 최소화) f3·f5·f7·f8), 초안 → 확정, v0.1 → v0.2. 거부: 같은 변경의 '규칙' 값(근거 finding 없음, 6절 질문으로). 새 질문 2건(단계 3, f10·f8)은 등록한다. 백로그 중복은 없다. 단계 완료 조건: 미충족(부족: 채팅·음성 지시 제품의 확인·승인 비교(q1-03) 미조사, 지시 분해 접근 유형 목록이 업무 분해·배정 설계 초안에 미반영). 단계 전환: 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
