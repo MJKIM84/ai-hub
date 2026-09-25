@@ -1,0 +1,45 @@
+# 1차 검증(브리프) 2026-09-25-07
+
+**판정: 조건부 승인** · 신뢰도: medium
+
+## 주장별 검증
+
+| finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
+|---|---|---|---|---|---|
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: README raw 원문을 검증 단계에서 다시 열었다. 'main branch contains the latest published version of VDA 5050 (currently version 3.0.0)' 문구가 있다. 입력 원문 텍스트 ref-031 머리의 'Version 3.0.0'도 확인했다. 두 파일이 같은 저장소(VDA/VDMA)에서 나와 독립 교차 확인은 아니다. 일반 웹은 원문 미열람 환경이고, 발행일은 미확인이다. |
+| f2 | 예 | 예 | 아니오 | 유지 | 확인: state.schema(main) raw를 다시 열었다. loads 설명(판단 불가 시 생략, 빈 배열이면 적재 없음), loadId(예: barcode or RFID, 식별 전이면 빈 값), loadType·loadPosition·weight(kg)·boundingBoxReference·loadDimensions 설명이 주장과 같다. 단일 출처이고 발행일은 미확인이다. 이전 실행 2026-09-25-03 f10과 내용이 겹치므로 ref-022·ref-031 각주를 재사용한다. |
+| f3 | 예 | 예 | 아니오 | 유지 | 확인: 공식 저장소 2.0.0 태그 마크다운을 다시 열었다. 머리말 'Version 2.0.0 RELEASE CANDIDATE, FOR REVIEW!!'와 loads·loadId·loadType·loadPosition·weight 정의를 확인했다. 브리프가 ref-022를 fetched=false·source_unopened=true로 둔 것은 옳다. 연 것은 VDA 게시 PDF(ref-022 URL)가 아니라 미러(official_artifact)라서 PDF와의 글자 단위 일치는 미확인이다. as_of 2022-01은 PDF 발행 기준이다. |
+| f4 | 예 | 예 | 아니오 | 유지 | 확인: 입력 원문 텍스트 ref-031(3.0.0 main) 6.2.3의 Table 4·Table 5와 대조했다. drop FINISHED 'Load has left the mobile robot and mobile robot reports new load state', pick FINISHED 'Load has entered the mobile robot…', 선택 파라미터 lhd·stationType·stationName·loadType·loadId(string, optional)가 모두 있다. 단일 발행 주체이고 발행일은 미확인이다. |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: 검색 결과에서 VDA 보도자료 'Version 3.0 of VDA 5050 released'(URL 260421 계열)의 기관·제목·URL이 일치했다. 다만 원문 미열람이다. 구역(zone) 개념은 원문 텍스트 ref-031 6.4 Zones에서 직접 확인된다. 검색 요약은 발표일을 2026-03-19로 전하고 URL은 04-21 계열이라 발행일 충돌이 남는다(oq-005 유지, 날짜 기재 금지). 이 finding의 source_unopened=false 표기는 미열람인 ref-032에 기대므로 부정확하다. |
+| f6 | 예 | 예 | 아니오 | 유지 | 구축자(리서치 에이전트) 의견이다. f1~f4에서 도출한 편집 제안이고 근거 finding은 모두 확인됐다. 다만 7절 표에 [의견] 문장으로 싣지 않고 편집 근거로만 쓴다. |
+| f7 | 예 | 예 | 아니오 | 유지 | 확인: state.schema loadId 설명에는 GS1·SSCC 형식 규정이 없다(검증 단계 재열람). 불일치 보고 규정은 열람 범위 밖이라 미확인이며 부재 확인이 아니다. [추정]이 적절하다. oq-007 해결 판정 근거가 되지 않는다. 이전 실행 03 f12의 loadId 문구('Set by fleet control or mobile robot…')는 state.schema에는 없다. 명세 본문 7장 등 다른 위치에 있는지 확인하지 못했다. |
+| f8 | 예 | 예 | 아니오 | 유지 | 구축자 의견이다. 근거는 공통 규칙 1(분류 원문 정의 변경 금지)과 정정 요청함 안내이며, 이는 corr-002 거절 사유와 같다. 식별 수단이 이미 4·6절에 있다는 점은 입력 페이지에서 확인했다(4절 EPC 인코딩 ref-021, 6절 GS1-128·AI 00 ref-018). ref-018·ref-021은 원문 미열람이다. |
+
+## 항목별 결과
+
+| 항목 | 결과 | 내용 |
+|---|---|---|
+| 분류 적합성 | 예 | — |
+| 범위 경계 | 예 | — |
+| 중복·모순 | 예 | f2·f3는 실행 2026-09-25-03 f10(2.0.0 loads·loadId)과 같은 내용이다 — ref-022 각주를 재사용한다., f4는 실행 2026-09-25-03 f11(pick·drop FINISHED 정의)과 같은 내용이다 — ref-031 각주를 재사용한다., f5는 실행 2026-09-25-02 f12(VDA 5050 3.0 발행)·oq-005와 겹친다 — ref-032를 재사용하고 발행일 충돌은 oq-005에 남긴다., 실행 2026-09-25-03 f12의 3.0.0 loadId 문구와 이번 state.schema 설명(바코드·RFID 예시)은 문구가 다르다. 위치가 다를 수 있어 모순으로 판정하지 않고 oq-007 보강 문구에만 반영한다. |
+| 용어 일관성 | 아니오 | 용어집 VDA 5050 항목의 한 줄 정의('VDA 5050에서 차량이 자신의 기능 정보를 상위 관제에 미리 알리는 메시지(토픽)이다')는 팩트시트(factsheet) 메시지의 정의이고 규격 자체의 정의가 아니다. 원문 텍스트 ref-031 1장('communication interface for exchanging information between central fleet control and mobile robots')과 맞지 않는다. |
+| 인용 길이·저작권 | 예 | — |
+| 정정 요청 반영 | — | corr-001 |
+
+## 수정 지시(required_fixes)
+
+- 7절 VDA 5050 행(corr-001): 이름 칸을 'VDA 5050 3.0.0(현행판)·2.0.0'으로 고친다. 관계 칸은 '적재물 식별 보고(state 메시지의 loads·loadId, 두 판 모두 정의) [사실][^ref-031][^ref-051][^ref-022]'로 고친다. 근거는 f1·f2·f3이며, 현행판 3.0.0과 적재물 보고가 두 판 모두에 있음이 공식 저장소 원문으로 확인됐다.
+- 7절 VDA 5050 행 출처 칸: '원문 미열람'을 '공식 저장소 main 원문 확인(ref-031·ref-051·ref-052). 2.0.0은 공식 저장소 태그 마크다운(RELEASE CANDIDATE 문구) 확인, VDA 게시 PDF(ref-022)는 원문 미열람·일치 미확인'으로 바꾼다. 근거는 f3이며, 연 것이 PDF가 아닌 미러라서 이렇게 구분한다.
+- f4(pick·drop 완료 정의와 loadId 파라미터)를 7절에 쓸 때는 [사실][^ref-031]로 쓰고 3.0.0 기준임을 밝힌다. 3절·5절·9절의 기존 ref-022 문장은 이번 patch 범위(7·11절) 밖이므로 고치지 않는다.
+- f5: 현행판 표기에 발행 시점을 쓸 때는 '2026년 발행, 정확한 날짜 미확인(oq-005)'까지만 쓴다. 구역 개념을 언급하려면 [사실][^ref-031][^ref-032]로 쓴다. 보도자료(ref-032)가 원문 미열람이고 발행일 출처가 충돌하기 때문이다.
+- f6·f8은 [의견] 문장으로 본문에 싣지 않는다. 7절 편집과 corr-002 처리의 근거로만 쓴다. 두 finding은 편집 제안이지 위키 주장이 아니다.
+- 11절 oq-007 항목: 상태를 '열림'으로 유지한다. f7을 '3.0.0 state 스키마의 loadId 설명은 바코드·RFID를 예시로만 들고 GS1 키 형식을 정하지 않으며, 불일치 보고 규정은 확인하지 못했다(부재 확인 아님) [추정][^ref-051]'로 보강한다. oq-007은 해결로 바꾸지 않는다 — f7이 추정이고 명세 7장을 열람하지 못했기 때문이다.
+- 1절 한 줄 정의는 바꾸지 않는다(corr-002 거절). 분류 원문 보호 대상이다.
+- 13절 각주: ref-031·ref-051·ref-052 정의를 '기관, 제목, 미확인, URL, 접근일 2026-09-25' 형식으로 추가한다. ref-032를 쓰면 발행일 '2026-04', 접근일 뒤에 ' (원문 미열람)'을 붙인다. ref-022 각주의 ' (원문 미열람)'은 유지한다(PDF 미열람). 프런트매터 sources에 실제로 쓴 id(ref-031·ref-051, 쓰면 ref-032·ref-052)를 더한다.
+- reference_updates: ref-051·ref-052는 신규 등록한다(원문 확인, source_unopened: false). ref-032·ref-022는 source_unopened: true를 유지한다. 본문에서 쓰지 않은 출처는 등록하지 않는다.
+- 용어집 docs/glossary/vda-5050.md: 한 줄 정의를 '독일자동차산업협회(VDA)와 VDMA가 정한 이동로봇(AGV·AMR)과 상위 관제(fleet control) 사이의 통신 인터페이스 권고안이며 현행판은 3.0.0이다'로 바로잡는다(근거 f1, ref-031·ref-052). 팩트시트는 그 안의 한 메시지로 설명에서 구분한다 — 기존 정의가 팩트시트 메시지 정의와 섞여 있기 때문이다.
+- 변경 이력·페이지 갱신 요약에 corr-001 반영과 corr-002 거절(사유: 분류원문 보호)을 적는다.
+
+## 검증 노트
+
+판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 8건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-022(VDA 게시 PDF. 공식 저장소 2.0.0 태그 마크다운은 확인), ref-032, ref-018, ref-021. VDA 5050 공식 저장소 raw 원문(main README·state.schema, 2.0.0 태그 명세)은 검증 단계에서 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 대조했다. 정정 요청: corr-001 반영(현행판 3.0.0 병기, loads·loadId가 두 판 모두에 있음, 열람 표시 수정). corr-002 불인정·거절(분류 원문 정의는 정정 대상이 아님). oq-005·oq-007은 해결 인정하지 않았다(열림 유지). 브리프 출처 원문 미열람 표시 불일치: f5가 미열람 출처 ref-032에 기대는데 source_unopened가 false로 적혀 있다. 주의: 모든 VDA 5050 근거가 같은 발행 주체(VDA/VDMA)의 산출물이라 독립 교차 확인이 없다. 3.0.0 정확한 발행일(2026-03-19 대 2026-04 보도자료)은 여전히 미확인이다. 이전 실행의 3.0.0 loadId 문구('Set by fleet control or mobile robot…')가 명세 어디에 있는지는 확인하지 못했다. 검증 검색 1회(리서치 2회 포함 누적 3회/30).

@@ -1,0 +1,216 @@
+{
+  "run_id": "2026-09-25-07",
+  "outline": [
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 1500,
+      "summary": "VDA 5050 행을 현행판 3.0.0과 2.0.0 병기로 고치고, 적재물 식별 보고(loads·loadId)가 두 판 모두에 정의되어 있다고 쓴다. [사실][^ref-031][^ref-051][^ref-022] 열람 표시는 공식 저장소 원문 확인과 VDA 게시 PDF 미열람으로 나눈다.",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 900,
+      "summary": "oq-007은 열림으로 유지한다. 3.0.0 state 스키마의 loadId 설명은 바코드·RFID를 예시로만 들고 GS1 키 형식을 정하지 않으며, 불일치 보고 규정은 확인하지 못했다. [추정][^ref-051]",
+      "planned_findings": [
+        "f7"
+      ]
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "13. 참고 자료 (각주)",
+      "budget_chars": 0,
+      "summary": "각주 정의에 ref-031·ref-032·ref-051·ref-052를 더한다.",
+      "planned_findings": []
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음)",
+      "patches": [
+        {
+          "section": "7. 관련 표준·프레임워크·오픈소스",
+          "action": "replace",
+          "content": "| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| EPCIS 2.0·CBV (ISO/IEC 19987·19988:2024) | 표준 | 이벤트 공유·어휘 [사실][^ref-011][^ref-012][^ref-014][^ref-044][^ref-045] | GS1 공식 저장소 온톨로지 파일 확인(ref-044·ref-045), ISO/IEC 판(ref-011·ref-012)은 원문 미열람 |\n| GS1 식별 키·물류 라벨·EPC 태그 데이터 표준 1.11판 | 표준 | 식별과 표시 [사실][^ref-016][^ref-018][^ref-019][^ref-020][^ref-021] | 원문 미열람 |\n| VDA 5050 3.0.0(현행판)·2.0.0 | 표준 | 적재물 식별 보고(state 메시지의 loads·loadId, 두 판 모두 정의) [사실][^ref-031][^ref-051][^ref-022] | 공식 저장소 main 원문 확인(ref-031·ref-051·ref-052). 2.0.0은 공식 저장소 태그 마크다운(RELEASE CANDIDATE 문구) 확인, VDA 게시 PDF(ref-022)는 원문 미열람·일치 미확인 |\n| Open-RMF 워크셀 | 오픈소스 | 적재·하역 요청·결과 [사실][^ref-023] | 원문 미열람 |\n| Oliot EPCIS (Auto-ID Labs Korea, 세종대학교) | 오픈소스 | 2014년부터 개발·유지하는 국내 EPCIS 구현, 2세대는 EPCIS/CBV 2.0 표준 개발 과정에 맞춰 새로 개발 [사실][^ref-050] | 공식 저장소 README 확인 |\n\nVDA 5050 공식 저장소 README는 main 브랜치가 최신 발행판(현재 3.0.0)을 담는다고 밝히고, main 명세의 제목도 Version 3.0.0이다(확인일 2026-09-25, 같은 발행 주체의 두 파일이라 독립 교차 확인은 아니다). [사실][^ref-052][^ref-031] 3.0.0은 2026년 발행이며 정확한 날짜는 미확인이다(oq-005). 이 판은 구역(zone) 개념 등 자율도가 높은 이동로봇 통합을 위한 내용을 더했다. [사실][^ref-031][^ref-032]\n\n3.0.0 state 스키마의 선택 배열 loads는 loadId(바코드·RFID 등 고유 식별 번호, 아직 식별 전이면 빈 값), loadType, loadPosition, weight(kg), boundingBoxReference, loadDimensions를 담고, 로봇이 적재 상태를 판단할 수 없으면 배열을 생략한다(확인일 2026-09-25). [사실][^ref-051] 2.0.0 태그 명세도 loads와 loadId·loadType·loadPosition·weight를 같은 의미로 정의한다(2022-01 기준). [사실][^ref-022] 3.0.0 명세 기준으로 pick 완료는 적재물이 이동로봇에 들어오고 새 적재 상태를 보고한 것, drop 완료는 적재물이 이동로봇을 떠나고 새 적재 상태를 보고한 것이며, 두 동작은 선택 파라미터로 lhd·stationType·stationName·loadType·loadId를 둔다. [사실][^ref-031]\n\nGS1 공식 저장소의 온톨로지 파일은 초안 저장소 파일(2021-09-30 수정)이라 ref.gs1.org 비준판과의 문구 일치는 미확인이다. [사실][^ref-044][^ref-045] OpenEPCIS 문서에 따르면 EPCIS 2.0·CBV 2.0은 GS1 비준과 함께 JSON 계열 형식·웹 API·센서 데이터·'어떻게(How)' 차원을 추가했으나, 비준 시점(2022년 6월)은 OpenEPCIS 문서 단일 출처이며 GS1 원문으로 교차 확인하지 못했다. [추정][^ref-013] 목록: [표준·프레임워크 목록](../../standards/index.md)",
+          "frontmatter": {
+            "sources": [
+              "ref-003",
+              "ref-011",
+              "ref-012",
+              "ref-013",
+              "ref-014",
+              "ref-015",
+              "ref-016",
+              "ref-017",
+              "ref-018",
+              "ref-019",
+              "ref-020",
+              "ref-021",
+              "ref-022",
+              "ref-023",
+              "ref-024",
+              "ref-031",
+              "ref-032",
+              "ref-044",
+              "ref-045",
+              "ref-050",
+              "ref-051",
+              "ref-052"
+            ]
+          }
+        },
+        {
+          "section": "11. 열린 질문",
+          "action": "replace",
+          "content": "- (상태: 열림) 로봇의 적재·하역 완료 신호(VDA 5050 drop 동작 완료, Open-RMF IngestorResult)를 EPCIS 인계 이벤트로 옮기는 표준 매핑이나 공개 구현 사례가 있는가? — 이번 검색 범위에서는 찾지 못했고, 추론 구조는 [주제 페이지](../../topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md)에 있다.\n- (상태: 열림) 국내 물류센터에서 SSCC 라벨이나 EPCIS 이벤트를 로봇 작업 결과(적재·하역 완료)와 연결해 운영하는 사례가 있는가? — 관련 자료: 국내 EPCIS 구현 Oliot EPCIS(7절). 로봇 작업 결과와 연결한 운영 사례는 아니다.\n- (상태: 열림) 로봇·게이트의 바코드·RFID 판독 실패나 오판독이 생기면 인계 확정을 보류·재스캔·사람 확인 중 어떤 기준으로 처리해야 하는가?\n- (상태: 열림) CBV의 loading·unloading이 운송 수단 적재로 정의되어 있을 때 시설 안 로봇의 적재·운반·하역은 어떤 업무 단계(bizStep) 값이나 사용자 정의 어휘로 기록해야 하는가?\n- (상태: 열림) VDA 5050 3.0.0에서 관제가 loadId를 정할 때 SSCC 같은 GS1 키를 그대로 쓰도록 권고하거나 제약하는 규정이 있는가, 로봇이 판독한 식별자와 다르면 어떻게 보고하는가? — 3.0.0 state 스키마의 loadId 설명은 바코드·RFID를 예시로만 들고 GS1 키 형식을 정하지 않으며, 불일치 보고 규정은 확인하지 못했다(부재 확인 아님). [추정][^ref-051]\n\n전체 목록: [열린 질문](../../open-questions.md)"
+        },
+        {
+          "section": "13. 참고 자료 (각주)",
+          "action": "replace",
+          "content": "[^ref-003]: GS1, EPCIS and CBV Linked Data Model, 미확인, https://ref.gs1.org/epcis/, 접근일 2026-09-24 (원문 미열람)\n[^ref-011]: ISO/IEC, ISO/IEC 19987:2024 - Information technology — EPC Information Services (EPCIS), 2024-03, https://www.iso.org/standard/85557.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-012]: ISO/IEC, ISO/IEC 19988:2024 - Information technology — GS1 Core Business Vocabulary (CBV), 2024, https://www.iso.org/standard/85558.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-013]: OpenEPCIS, EPCIS 2.0 and EPCIS 1.2 | OpenEPCIS Docs, 미확인, https://openepcis.io/docs/epcis/, 접근일 2026-09-25 (원문 미열람)\n[^ref-014]: GS1, Core Business Vocabulary (CBV) Standard, 미확인, https://ref.gs1.org/standards/cbv/, 접근일 2026-09-25 (원문 미열람)\n[^ref-015]: GS1, EPCIS and CBV Implementation Guideline, 미확인, https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-016]: GS1, Serial Shipping Container Code (SSCC), 미확인, https://www.gs1.org/standards/id-keys/sscc, 접근일 2026-09-25 (원문 미열람)\n[^ref-017]: GS1 Korea(대한상공회의소 유통물류진흥원), SSCC (Serial Shipping Container Code) GS1 Information Vol. 21, 2019-09, http://www.gs1kr.org/front/service/File/SSCC%20%EB%B0%9C%EA%B0%84%20%EC%9E%90%EB%A3%8C.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-018]: GS1, GS1 Logistic Label Guideline, 미확인, https://www.gs1.org/docs/tl/GS1_Logistic_Label_Guideline.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-019]: GS1, Global Returnable Asset Identifier (GRAI), 미확인, https://www.gs1.org/standards/id-keys/grai, 접근일 2026-09-25 (원문 미열람)\n[^ref-020]: GS1, Which GS1 identification key should be used for individual assets used to transport goods? (GS1 GO Customer Service Portal), 미확인, https://support.gs1.org/support/solutions/articles/43000734294-which-gs1-identification-key-should-be-used-for-individual-assets-used-to-transport-goods-, 접근일 2026-09-25 (원문 미열람)\n[^ref-021]: GS1, EPC Tag Data Standard (1.11판), 미확인, https://www.gs1.org/sites/default/files/docs/epc/GS1_EPC_TDS_i1_11.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-022]: VDA(Verband der Automobilindustrie), VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control, 2022-01, https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-024]: Singh, J. 외, RFID tag readability issues with palletized loads of consumer goods, 2009, https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864, 접근일 2026-09-25 (원문 미열람)\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-032]: VDA(Verband der Automobilindustrie), Version 3.0 of VDA 5050 released, 2026-04, https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN, 접근일 2026-09-25 (원문 미열람)\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0 — GS1 공식 저장소(초안 저장소)의 온톨로지 파일이며 ref.gs1.org 비준판과의 문구 일치는 미확인; 발행일은 온톨로지 수정일), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25\n[^ref-045]: GS1, gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0 — GS1 공식 저장소(초안 저장소)의 온톨로지 파일이며 ref.gs1.org 비준판과의 문구 일치는 미확인; 발행일은 온톨로지 수정일), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl, 접근일 2026-09-25\n[^ref-050]: Auto-ID Labs Korea(세종대학교) · Byun J., Oliot EPCIS for GS1 EPCIS/CBV 2.0.0 (GitHub JaewookByun/epcis README), 미확인, https://github.com/JaewookByun/epcis, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-052]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — README.md, 미확인, https://github.com/VDA5050/VDA5050/blob/main/README.md, 접근일 2026-09-25"
+        }
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area07-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 화물·재고·자산 식별과 추적 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,570자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 7. 화물·재고·자산 식별과 추적 | corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 | run 2026-09-25-07",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: corr-001 반영(VDA 5050 현행판 3.0.0 병기, 적재물 식별 보고가 두 판 모두에 있음), corr-002 거절(분류원문 보호)",
+    "category_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 7절 VDA 5050 행을 3.0.0(현행판)·2.0.0 병기와 공식 저장소 원문 확인 표시로 갱신(corr-001), 11절 oq-007 보강. corr-002 거절(분류원문 보호)",
+    "area_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 7절 VDA 5050 3.0.0·2.0.0 병기와 열람 표시 수정(corr-001), 11절 oq-007 보강, 각주 4건 추가. corr-002 거절(분류원문 보호)"
+  },
+  "glossary_updates": [
+    {
+      "action": "update",
+      "slug": "vda-5050",
+      "term_ko": "VDA 5050",
+      "term_en": "VDA 5050",
+      "definition": "독일자동차산업협회(VDA)와 VDMA가 정한 이동로봇(AGV·AMR)과 상위 관제(fleet control) 사이의 통신 인터페이스 권고안이며 현행판은 3.0.0이다.",
+      "description": "공식 저장소 README는 main 브랜치가 최신 발행판(현재 3.0.0)을 담는다고 밝힌다(확인일 2026-09-25). 3.0.0의 정확한 발행일은 미확인이다(oq-005). 차량이 자신의 기능 정보를 상위 관제에 미리 알리는 팩트시트(factsheet)는 이 규격 안의 메시지 가운데 하나이며 규격 자체와 구분한다. 적재물 식별 보고(state 메시지의 loads·loadId)는 2.0.0과 3.0.0 모두에 정의되어 있다.",
+      "related_areas": [
+        5,
+        7,
+        9
+      ],
+      "sources": [
+        "ref-031",
+        "ref-052"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-022",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control",
+      "published": "2022-01",
+      "url": "https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AGV·AMR과 상위 관제 간 통신 권고안으로 order·state 메시지, pick/drop action, 적재물(loads) 보고 필드를 정의한다. 공식 저장소 2.0.0 태그 마크다운(RELEASE CANDIDATE 문구)은 확인했으나 VDA 게시 PDF와의 일치는 미확인이다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(현재 main은 3.0.0판). pick·drop 동작 완료 정의와 선택 파라미터(loadId 포함), 구역(zone) 개념을 담는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ]
+    },
+    {
+      "id": "ref-032",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "Version 3.0 of VDA 5050 released",
+      "published": "2026-04",
+      "url": "https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 발행 기관의 VDA 5050 3.0 발행 보도자료. 구역 개념 등 자율도 높은 이동로봇 지원 확장을 소개한다. 발행일은 검색 요약과 URL이 달라 미확인(oq-005).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ]
+    },
+    {
+      "id": "ref-051",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 저장소 main(3.0.0)의 state 메시지 JSON 스키마. 선택 배열 loads와 loadId·loadType·loadPosition·weight·boundingBoxReference·loadDimensions의 설명을 담는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ]
+    },
+    {
+      "id": "ref-052",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — README.md",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/README.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 저장소 README. main 브랜치가 최신 발행판(현재 3.0.0)을 담는다고 밝히고 판 번호 규칙과 VDA 공식 문서 위치를 안내한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "11절 oq-007: VDA 5050 3.0.0 명세 7장(메시지 명세) 이후를 열람해 loadId 형식 규정과 식별 결과가 지시한 loadId와 다를 때의 보고 규칙이 있는지 확인해야 한다(이번 열람 응답이 7장 앞에서 잘림).",
+    "11절 oq-007: 이전 실행 2026-09-25-03 f12의 3.0.0 loadId 문구('Set by fleet control or mobile robot …')가 명세의 어느 위치(action 파라미터 설명 등)에 있는지 확인이 필요하다.",
+    "7절 VDA 5050 행: 공식 저장소 2.0.0 태그 마크다운(RELEASE CANDIDATE)과 VDA 게시 PDF(ref-022)의 글자 단위 일치를 확인해야 열람 표시를 더 정리할 수 있다.",
+    "7절 현행판 표기·oq-005: VDA 5050 3.0.0의 정확한 발행일(2026-03-19 대 2026-04 보도자료)을 발행 기관 원문으로 확인해야 한다.",
+    "표준 목록의 VDA 5050 (3.0.0) 행 관련 영역에 7. 화물·재고·자산 식별과 추적을 더하고 참고문헌을 공식 저장소(ref-031)로 보강할지 다음 실행에서 판단이 필요하다."
+  ],
+  "fixes_applied": [
+    "7절 VDA 5050 행(corr-001) — 이름 칸을 'VDA 5050 3.0.0(현행판)·2.0.0'으로, 관계 칸을 '적재물 식별 보고(state 메시지의 loads·loadId, 두 판 모두 정의) [사실][^ref-031][^ref-051][^ref-022]'로 고쳤다.",
+    "7절 VDA 5050 행 출처 칸 — '원문 미열람'을 지시 문구('공식 저장소 main 원문 확인(ref-031·ref-051·ref-052). 2.0.0은 공식 저장소 태그 마크다운(RELEASE CANDIDATE 문구) 확인, VDA 게시 PDF(ref-022)는 원문 미열람·일치 미확인')로 바꿨다.",
+    "f4 — 7절 표 아래 문단에 '3.0.0 명세 기준'임을 밝혀 pick·drop 완료 정의와 선택 파라미터를 [사실][^ref-031]로 썼고, 3·5·9절의 기존 ref-022 문장은 고치지 않았다.",
+    "f5 — 7절에 '2026년 발행이며 정확한 날짜는 미확인(oq-005)'까지만 쓰고, 구역(zone) 개념 문장은 [사실][^ref-031][^ref-032]로 썼다.",
+    "f6·f8 — [의견] 문장으로 본문에 싣지 않고 7절 편집과 corr-002 거절의 근거로만 썼다.",
+    "11절 oq-007 — 상태 '열림'을 유지하고 지시 문구대로 f7 보강 문장을 [추정][^ref-051]로 덧붙였으며 해결로 바꾸지 않았다(open_question_updates 없음).",
+    "1절 한 줄 정의 — 바꾸지 않았다(corr-002 거절, 1절 패치 없음).",
+    "13절 각주 — ref-031·ref-051·ref-052를 '기관, 제목, 미확인, URL, 접근일 2026-09-25' 형식으로, ref-032를 발행일 2026-04와 ' (원문 미열람)'으로 추가했고 ref-022의 ' (원문 미열람)'을 유지했으며, 프런트매터 sources에 ref-031·ref-032·ref-051·ref-052를 더했다.",
+    "reference_updates — ref-051·ref-052를 source_unopened: false로 신규 등록하고, ref-032·ref-022는 source_unopened: true를 유지했으며 본문에서 쓰지 않은 ref-018·ref-021은 넣지 않았다.",
+    "용어집 VDA 5050 — glossary_updates(action: update)로 한 줄 정의를 지시 문구로 바로잡고 팩트시트는 규격 안의 한 메시지로 설명에서 구분했다(근거 ref-031·ref-052).",
+    "변경 이력·페이지 갱신 요약 — changelog_entry, diff_summary, index_updates에 corr-001 반영과 corr-002 거절(사유: 분류원문 보호)을 적었다.",
+    "분량 초과 자동 분리: 7. 화물·재고·자산 식별과 추적 본문 4,922자 > 기준 4,000자 → 1개 절을 주제 페이지로 옮김, 남은 본문 3,641자"
+  ]
+}
