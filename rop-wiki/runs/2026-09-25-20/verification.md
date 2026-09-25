@@ -10,8 +10,8 @@
 | f2 | 예 | 예 | 아니오 | 유지 | 확인: ref-258 raw 원본(integration_fleets.md)에 명시 경로 지정, 언제든 중단·교체 가능, 이동 중 위치 실시간 갱신 요구가 있다. 단일 출처, 발행일 미확인. |
 | f3 | 예 | 예 | 아니오 | 유지 | 확인: ref-004 원문의 Fleet Adapters 절(어댑터가 제조사별 API 를 RMF 교통 일정·협상 인터페이스에 연결)과 Traffic Schedule 절(예정 궤적의 중앙 데이터베이스, 충돌 시 협상). 단일 발행 주체. |
 | f4 | 예 | 아니오 | 아니오 | 강등 | 부분 일치: '어댑터가 하드웨어별 인터페이스와 RMF 범용 인터페이스를 잇는다'는 ref-259 본문에 있다. 그러나 ROS 1·ROS 2 로봇, REST·XMLRPC API, SQL DB 연동 경로 열거는 mdBook 원본의 주석 처리된(게시 페이지에 렌더링되지 않는) 요구사항 메모에만 있어, 게시된 통합 개요가 이를 든다고 볼 수 없다. 어댑터 역할 부분만 [사실]로 남기고 연동 경로 열거는 삭제한다. |
-| f5 | 예 | 예 | 아니오 | 유지 | 확인: ref-260 raw 원본에 navigate(robot_name, position, map, speed_limit)·start_activity·stop·position([x, y, theta])·map·battery_soc·is_command_completed 와 navigate·stop·execute_action 콜백이 있다. 발행일 미확인. |
-| f6 | 예 | 예 | 아니오 | 유지 | 확인: ref-260 원본의 비동기 갱신 루프 문장(한 로봇의 상태 조회 오류가 다른 로봇 갱신을 막지 않음). |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: ref-153 raw 원본에 navigate(robot_name, position, map, speed_limit)·start_activity·stop·position([x, y, theta])·map·battery_soc·is_command_completed 와 navigate·stop·execute_action 콜백이 있다. 발행일 미확인. |
+| f6 | 예 | 예 | 아니오 | 유지 | 확인: ref-153 원본의 비동기 갱신 루프 문장(한 로봇의 상태 조회 오류가 다른 로봇 갱신을 막지 않음). |
 | f7 | 예 | 예 | 아니오 | 유지 | 확인: ref-105 config.yaml 원본에 fleet_manager prefix·user·password, reference_coordinates(L1, 4쌍), linear 0.5·0.75, footprint 0.3, battery(12V·24Ahr), task_capabilities(loop·delivery)가 있다. 템플릿 예시값이다. |
 | f8 | 예 | 예 | 아니오 | 유지 | 확인: ref-148 robot_state.json 원본의 status enum 7종과 issues(category 문자열, detail 은 object·array·string). |
 | f9 | 예 | 예 | 아니오 | 유지 | 확인: ref-264 README 원본(fleet_adapter_template 기반 Python 플릿 어댑터, zenoh 로 내비게이션 스택 접근). Nav1 통합은 시뮬레이션·ROS 1 Noetic 에서만 시험됐다는 단서가 있어 본문에 병기해야 한다. |
@@ -51,7 +51,7 @@
 | 범위 경계 | 예 | — |
 | 중복·모순 | 예 | f15(VDA 5050 connection 상태)는 2026-09-25-18 브리프 f2(8. 실시간 세계 상태·데이터 일관성)와 같은 내용이다 — ref-031 각주를 재사용하고 상태 목록을 OFFLINE 포함으로 맞춘다, f8·f36 의 Open-RMF 로봇 상태 7종은 2026-09-25-18 브리프 f5 와 같은 ref-148 근거다 — 각주 재사용, f36 의 상태 매핑 질문은 oq-014(BPMN–로봇 작업 상태)·oq-020(ISA-95–VDA 5050·Open-RMF)과 인접하나 로봇 인터페이스 간 상태 매핑이라 별개 질문으로 둔다, 참고: 2026-09-25-19 브리프가 ref-228~ref-237 을 LIF·IFC 등 다른 출처에 부여했으나 게시된 참고문헌 목록에서 ref-228 은 VDA 5050 팩트시트 스키마, ref-230 은 MassRobotics JSON 이다. 이번 실행의 ref-228·ref-230 사용은 게시 목록과 일치한다. 신규 ref-258~ref-272 는 미게시 실행과의 번호 충돌을 퍼블리셔가 확인해야 한다 |
 | 용어 일관성 | 아니오 | 용어집 'VDA 5050' 항목의 한 줄 정의가 팩트시트 메시지의 정의('이동로봇이 유형 명세·물리 파라미터·지원 동작·적재 명세를 관제에 미리 알리는 메시지')로 잘못 들어가 있다 — f11 근거로 표준 자체 정의로 갱신 필요, 용어 후보 '엠큐티티'는 용어집의 표기 관례(약어 대신 뜻을 옮긴 한글 명칭 + 영문 병기)와 맞지 않는다 |
-| 인용 길이·저작권 | 예 | 브리프 evidence_excerpt 가 ref-031(f11~f19, f31)과 ref-260(f5·f6)에서 여러 구절을 인용한다. 페이지에서는 출처당 직접 인용 1회만 허용되므로 나머지는 재서술해야 한다(수정 지시로 처리) |
+| 인용 길이·저작권 | 예 | 브리프 evidence_excerpt 가 ref-031(f11~f19, f31)과 ref-153(f5·f6)에서 여러 구절을 인용한다. 페이지에서는 출처당 직접 인용 1회만 허용되므로 나머지는 재서술해야 한다(수정 지시로 처리) |
 | 정정 요청 반영 | — | — |
 
 ## 수정 지시(required_fixes)
@@ -68,7 +68,7 @@
 - f19: VDA 5050 3.0.0 발행일은 '미확인'으로 쓰고 oq-005(출처 충돌)를 11절에 연결한다. oq-005 를 해결로 바꾸지 않는다.
 - 7절 트랙 반영 제안(2026-09-25-02) 반영: 팩트시트는 2.0.0 기준 [추정] 대신 3.0.0 명세 근거(f18, [사실])로, MassRobotics 메시지 명칭은 'setup·status' 대신 스키마 명칭 identityReport·statusReport(f20)로 적는다.
 - f32·f33·f34·f35·f36: [추정] 태그를 유지하고, 5절 시나리오는 '출하' 단계와 여섯 항목(시작 조건·수행 자원·완료·인계·예외·성과)을 명시하며, f35 는 '연계 대상:' 표시를 유지해 9절에 둔다. f34 에는 '두 방식의 처리량·비용 정량 비교 자료는 찾지 못함'을 남긴다.
-- 인용: ref-031 과 ref-260 에서 직접 인용은 각 1회만 쓰고 나머지 evidence_excerpt 내용은 한국어로 재서술한다 — 출처당 직접 인용 1회 규칙.
+- 인용: ref-031 과 ref-153 에서 직접 인용은 각 1회만 쓰고 나머지 evidence_excerpt 내용은 한국어로 재서술한다 — 출처당 직접 인용 1회 규칙.
 - 각주·참고문헌: 브리프에서 fetched:false 인 ref-032·ref-136·ref-228·ref-230·ref-261·ref-265·ref-266·ref-267·ref-268·ref-269·ref-270·ref-271·ref-272 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경 규칙.
 - 용어집: 'VDA 5050' 항목 정의를 f11 근거로 '서로 다른 제조사의 이동로봇을 하나의 관제로 운용하기 위한 제조사 중립 통신 인터페이스' 취지로 갱신(action: update)한다 — 현재 정의는 팩트시트 메시지의 정의다.
 - 용어집 후보 'MQTT'의 term_ko 를 음차 '엠큐티티' 대신 뜻을 옮긴 명칭(예: '메시지 큐잉 원격 측정 전송')으로 바꾸고 영문 Message Queuing Telemetry Transport (MQTT)를 병기한다 — 용어집 표기 관례.

@@ -35,7 +35,7 @@
       "tag": "사실",
       "source_ids": [
         "ref-004",
-        "ref-258"
+        "ref-251"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -49,7 +49,7 @@
       "claim": "Open-RMF 의 전체 제어 어댑터는 제조사 관제(또는 로봇 API)가 로봇이 따를 명시적 경로를 지정할 수 있고 그 경로를 언제든 중단해 새 경로로 바꿀 수 있으며 이동 중 위치를 실시간으로 갱신해 주기를 요구한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-258"
+        "ref-251"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -77,7 +77,7 @@
       "claim": "Open-RMF 통합 개요는 ROS 1·ROS 2 를 직접 쓰는 로봇, REST·XMLRPC 같은 공식 API를 제공하는 제조사 관제, SQL 데이터베이스 같은 다른 통신 수단을 모두 연동 경로로 들고, 어댑터를 하드웨어별 인터페이스와 RMF 범용 인터페이스 사이의 다리로 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-259"
+        "ref-252"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -147,7 +147,7 @@
       "claim": "Open-RMF 의 free_fleet 은 fleet_adapter_template 기반 Python 플릿 어댑터로, 제조사 관제를 거치지 않고 각 로봇의 Nav2(ROS 2 Jazzy)·Nav1(ROS 1 Noetic) 내비게이션 스택에 zenoh 통신 계층으로 직접 접속한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-264"
+        "ref-256"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -161,7 +161,7 @@
       "claim": "Open-RMF 커뮤니티 어댑터 목록은 MiR(MiR Fleet)·OTTO Motors·Clearpath·InOrbit 등 제조사·플랫폼별 플릿 어댑터와 KONE 등 승강기 어댑터, 문·기기 어댑터를 함께 모아 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-262"
+        "ref-254"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -176,7 +176,7 @@
       "tag": "사실",
       "source_ids": [
         "ref-031",
-        "ref-267"
+        "ref-259"
       ],
       "cross_checked": true,
       "confidence": "medium",
@@ -307,7 +307,7 @@
       "claim": "MassRobotics AMR 상호운용 표준은 여러 제조사 AMR 이 같은 공간에서 위치·속도·방향·상태·작업 가용성 정보를 공유하게 하는 것을 목적으로 하며, 공식 JSON 스키마는 식별 보고(identityReport)와 상태 보고(statusReport) 두 메시지만 정의해 로봇에 명령을 보내는 메시지를 두지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-261",
+        "ref-253",
         "ref-230"
       ],
       "cross_checked": false,
@@ -323,7 +323,7 @@
       "claim": "InOrbit 이 공개한 ros_amr_interop 저장소는 ROS 2 로봇을 MQTT 기반 VDA 5050 관제에 연결하는 VDA5050 커넥터와, ROS 2 데이터를 YAML 매핑으로 MassRobotics 상호운용 수신기에 보내는 송신 노드를 제공한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-263"
+        "ref-255"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -337,7 +337,7 @@
       "claim": "Interact Analysis 는 다중 플릿 오케스트레이션을 제3자 관제가 로봇에 직접 접속해 제어하는 저수준 제어(Low-Level Control, 현재 가장 흔함)와 제3자 관제가 각 제조사 관제에 작업을 넘기는 고수준 제어(High Level Control, 늘어나는 중)로 나누고, 장기적으로 어느 쪽이 쓰일지는 아직 정해지지 않았다고 본다.",
       "tag": "의견",
       "source_ids": [
-        "ref-265"
+        "ref-257"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -352,7 +352,7 @@
       "claim": "ARM Institute 의 IO-AMRs 과제는 AMR 제조사마다 자체 플릿 관리 소프트웨어를 써서 여러 브랜드를 섞은 플릿 운영이 어렵다는 문제를 다루며, 다중 지도 관리자·연결 계층·전역 플릿 관리자를 만드는 것을 목표로 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-266"
+        "ref-258"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -367,7 +367,7 @@
       "claim": "Franke 외(2023)는 VDA 5050 이 AGV·관제 사이 인터페이스만 다루고 AGV·관제와 주변 설비(periphery) 사이 인터페이스는 다루지 않는다고 지적하고, 소프트웨어 공급사·하드웨어 제조사·사용자 워크숍으로 새 표준 인터페이스 요구를 정리했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-267"
+        "ref-259"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -382,7 +382,7 @@
       "claim": "2026년 ScienceDirect 게재 연구는 상용 다중 제조사 AMR 플릿과 천장 반송 차량(OHT)·바닥 AGV 사이의 작업 조정을 하나의 소프트웨어 정의 공장(Software-Defined Factory) 틀에 넣고 통신·위치추정·경로계획·작업 배정을 중앙 시스템이 다루는 이종 플릿 제어 시스템을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-268"
+        "ref-260"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -412,7 +412,7 @@
       "claim": "MiR 이 기존 RESTful 로봇 인터페이스를 MQTT 와 연결해 자사 AMR 과 타사 관제 사이에 VDA 5050 메시지를 주고받게 하는 어댑터 'MiR VDA 5050' 을 출시했다고 국내 전문지가 보도했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-269"
+        "ref-261"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -428,7 +428,7 @@
       "claim": "클로봇은 브랜드·이동 방식과 무관하게 이기종 로봇을 하나의 시스템처럼 관제한다는 클라우드 기반 플릿 관리 시스템(CROMS)을 제공한다고 밝힌다.",
       "tag": "추정",
       "source_ids": [
-        "ref-270"
+        "ref-262"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -444,7 +444,7 @@
       "claim": "카카오모빌리티는 서비스 요청을 로봇 실행 단위로 추상화하는 Task, 이기종 로봇을 통합 표준 API 로 잇는 Command Interface, 장애 시 작업을 다른 로봇에 재배정하는 Reallocation, 건물 인프라·기존 시스템을 잇는 Integration Backbone 을 로봇 플랫폼 구성으로 발표했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-271"
+        "ref-263"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -460,7 +460,7 @@
       "claim": "노바테크가 현대자동차그룹 메타플랜트 아메리카에서 12종 약 300대의 이기종 물류 로봇을 자사 오케스트레이션 플랫폼 하나로 통합 운영한다고 보도됐다.",
       "tag": "추정",
       "source_ids": [
-        "ref-272"
+        "ref-264"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -521,8 +521,8 @@
       "tag": "추정",
       "source_ids": [
         "ref-004",
-        "ref-258",
-        "ref-265",
+        "ref-251",
+        "ref-257",
         "ref-031"
       ],
       "cross_checked": false,
@@ -539,7 +539,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-258",
+        "ref-251",
         "ref-105",
         "ref-153"
       ],
@@ -690,7 +690,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-258",
+      "id": "ref-251",
       "org": "Open Robotics",
       "title": "Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -705,7 +705,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-259",
+      "id": "ref-252",
       "org": "Open Robotics",
       "title": "Integration (integration) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -735,7 +735,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-261",
+      "id": "ref-253",
       "org": "MassRobotics",
       "title": "MassRobotics-AMR/AMR_Interop_Standard — README",
       "published": null,
@@ -750,7 +750,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-262",
+      "id": "ref-254",
       "org": "Open Robotics (open-rmf)",
       "title": "awesome_adapters — A curated list of adapters from the community which can be used with Open-RMF (README)",
       "published": null,
@@ -765,7 +765,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-263",
+      "id": "ref-255",
       "org": "InOrbit (inorbit-ai GitHub)",
       "title": "ros_amr_interop — README (ROS packages for AMR interoperability: VDA5050 connector, MassRobotics AMR sender)",
       "published": null,
@@ -780,7 +780,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-264",
+      "id": "ref-256",
       "org": "Open Robotics (open-rmf)",
       "title": "free_fleet — README (A free fleet management system)",
       "published": null,
@@ -795,7 +795,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-265",
+      "id": "ref-257",
       "org": "Interact Analysis",
       "title": "AMR Multi-Fleet Orchestration Software Explained",
       "published": null,
@@ -810,7 +810,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-266",
+      "id": "ref-258",
       "org": "ARM Institute",
       "title": "Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs)",
       "published": null,
@@ -825,7 +825,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-267",
+      "id": "ref-259",
       "org": "Franke, S., Lünsch, D., Jost, J., & Roidl, M.",
       "title": "Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept",
       "published": "2023",
@@ -840,7 +840,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-268",
+      "id": "ref-260",
       "org": "ScienceDirect 게재 논문(저자 미확인)",
       "title": "Heterogeneous multi-agent fleet control system for material handling in a Software-Defined Factory",
       "published": "2026",
@@ -855,7 +855,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-269",
+      "id": "ref-261",
       "org": "헬로티(HelloT)",
       "title": "미르, 다기종 모바일 로봇 연동 SW 어댑터 ‘MiR VDA 5050’ 론칭",
       "published": null,
@@ -870,7 +870,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-270",
+      "id": "ref-262",
       "org": "클로봇(Clobot)",
       "title": "통합 로봇 관제 플랫폼 크롬스[CROMS]",
       "published": null,
@@ -885,7 +885,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-271",
+      "id": "ref-263",
       "org": "디지털투데이",
       "title": "카카오모빌리티, 로봇 플랫폼 사업 본격화...\"이기종 로봇 통합 운영\"",
       "published": "2026-05",
@@ -900,7 +900,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-272",
+      "id": "ref-264",
       "org": "머니투데이",
       "title": "\"로봇 통합 관제 기술, 인정받았다\"..노바테크, 70억원 투자 유치",
       "published": "2026-07-14",
@@ -964,7 +964,7 @@
       "f18·f19·f20 은 같은 발행 주체(VDA, MassRobotics) 자료 두 개라 독립 교차 아님",
       "f14 주문 거절 오류 유형별 오류 등급은 열람 도구 응답만으로 확정하지 않아 넣지 않음",
       "f10 어댑터 목록 각 항목의 제어 수준 미확인",
-      "f22·f23·f24·f25·f26 원문 미열람(검색 요약 범위), ref-265·ref-266 발행일 미확인, ref-268 저자·권호 미확인",
+      "f22·f23·f24·f25·f26 원문 미열람(검색 요약 범위), ref-257·ref-258 발행일 미확인, ref-260 저자·권호 미확인",
       "f26 의 120 ms 수치 측정 조건 미확인",
       "f27~f30 벤더 주장·기사이며 독립 확인 없음. 클로봇 자체 명령 규격(CRCS)은 출처 URL 을 특정하지 못해 넣지 않음",
       "oq-005(VDA 5050 3.0.0 정확한 발행일) 미해결",
@@ -979,6 +979,6 @@
       "queries": 17,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 공식 원문을 열었다: 재사용 ref-004(rmf-core)·ref-031(VDA 5050 3.0.0 명세)·ref-105(어댑터 템플릿 설정)·ref-148(robot_state 스키마), 신규 ref-258·ref-259·ref-153(Open-RMF 통합 문서 원본)·ref-261(MassRobotics README)·ref-262(awesome_adapters)·ref-263(InOrbit ros_amr_interop)·ref-264(free_fleet). openTCS VDA 5050 어댑터와 InOrbit 저장소의 한 브랜치는 404 로 열지 못해 opentcs 는 출처에서 뺐다. 업계 보고서·연구기관·논문·기사·벤더 페이지 8건과 재사용 4건(ref-032·ref-136·ref-228·ref-230)은 원문 미열람이라 신뢰도 상한 medium(벤더·기사는 low). 검색 17회/30, 신규 출처 15건/15(ref-258~ref-272)로 신규 출처 상한에 도달해 SYNAOS 비교 글·DiVA 학위논문·MiR 공식 VDA 5050 페이지는 넣지 않았다. 교차 확인 1건(f11: VDA 5050 목적, 명세 원본과 Franke 외). 트랙 반영 제안 1건(2026-09-25-02)은 모두 다루었다: 팩트시트 기능 알림은 2.0.0 기준 [추정]에서 3.0.0 명세 원본 근거(f18)로, 상태 오류·action 완료 보고는 f14·f16·f31 로, 3.0.0 발행은 f19(발행일은 oq-005 로 남김)로, MassRobotics 는 f20(메시지 명칭은 스키마 기준 identityReport·statusReport)으로, Open-RMF 작업 능력·사용자 정의 동작은 f5·f7 로 재확인했다. 한국 자료: 국내 표준(TTA·KS)에서 이기종 로봇 관제 인터페이스 표준은 찾지 못했고, 국내 사례는 기사·벤더 자료(f27~f30)뿐이라 벤더 주장으로 표시했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 분류원문 질문(개별 로봇 제어 대 제조사 관제 위임)은 f34 로 추정 수준 답만 냈고 정량 비교 자료는 찾지 못했다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 공식 원문을 열었다: 재사용 ref-004(rmf-core)·ref-031(VDA 5050 3.0.0 명세)·ref-105(어댑터 템플릿 설정)·ref-148(robot_state 스키마), 신규 ref-251·ref-252·ref-153(Open-RMF 통합 문서 원본)·ref-253(MassRobotics README)·ref-254(awesome_adapters)·ref-255(InOrbit ros_amr_interop)·ref-256(free_fleet). openTCS VDA 5050 어댑터와 InOrbit 저장소의 한 브랜치는 404 로 열지 못해 opentcs 는 출처에서 뺐다. 업계 보고서·연구기관·논문·기사·벤더 페이지 8건과 재사용 4건(ref-032·ref-136·ref-228·ref-230)은 원문 미열람이라 신뢰도 상한 medium(벤더·기사는 low). 검색 17회/30, 신규 출처 15건/15(ref-251~ref-264)로 신규 출처 상한에 도달해 SYNAOS 비교 글·DiVA 학위논문·MiR 공식 VDA 5050 페이지는 넣지 않았다. 교차 확인 1건(f11: VDA 5050 목적, 명세 원본과 Franke 외). 트랙 반영 제안 1건(2026-09-25-02)은 모두 다루었다: 팩트시트 기능 알림은 2.0.0 기준 [추정]에서 3.0.0 명세 원본 근거(f18)로, 상태 오류·action 완료 보고는 f14·f16·f31 로, 3.0.0 발행은 f19(발행일은 oq-005 로 남김)로, MassRobotics 는 f20(메시지 명칭은 스키마 기준 identityReport·statusReport)으로, Open-RMF 작업 능력·사용자 정의 동작은 f5·f7 로 재확인했다. 한국 자료: 국내 표준(TTA·KS)에서 이기종 로봇 관제 인터페이스 표준은 찾지 못했고, 국내 사례는 기사·벤더 자료(f27~f30)뿐이라 벤더 주장으로 표시했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 분류원문 질문(개별 로봇 제어 대 제조사 관제 위임)은 f34 로 추정 수준 답만 냈고 정량 비교 자료는 찾지 못했다."
   }
 }

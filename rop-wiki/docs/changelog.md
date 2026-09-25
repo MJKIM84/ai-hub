@@ -57,6 +57,33 @@ version: 1
 | 2026-09-25-21 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-20 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안 7절 반영, 페이지 상태 표식 추가. 2차 수정: 9절 설비 행 태그 분리·free_fleet 문장 태그와 ref-256 각주 추가, 8절 요약 문장 교체 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s7.md](topics/2026/2026-09-25-area09-s7.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,784자)을 옮겼다 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s8.md](topics/2026/2026-09-25-area09-s8.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,706자)을 옮겼다. 2차 수정: 1절·3절 첫 요약 문장을 ref-259 범위 문장과 조사 범위 설명 두 문장으로 교체 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s6.md](topics/2026/2026-09-25-area09-s6.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,498자)을 옮겼다 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s11.md](topics/2026/2026-09-25-area09-s11.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,297자)을 옮겼다 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s4.md](topics/2026/2026-09-25-area09-s4.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "4. 핵심 개념과 용어" 절(1,070자)을 옮겼다 |
+| 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s10.md](topics/2026/2026-09-25-area09-s10.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(815자)을 옮겼다. 세부영역 링크를 주제 페이지 위치 기준 경로로 고쳤다. 2차 수정: 12. 명령·작업 실행의 신뢰성 연결 문장 태그를 [추정]으로 |
+| 2026-09-25-20 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 9. 로봇·제조사 관제 연동: 영역 심화: 3~11절 신규 작성(제어 수준·어댑터 API·VDA 5050 3.0.0·MassRobotics·출하 시나리오), 트랙 반영 제안 1건 반영 |
+| 2026-09-25-20 | 생성 | [docs/references/ref-251.md](references/ref-251.md) | 참고문헌 ref-251 등록: Mobile Robot Fleets (integration_fleets) - Programming Multi… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-252.md](references/ref-252.md) | 참고문헌 ref-252 등록: Integration (integration) - Programming Multiple Robots with… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-253.md](references/ref-253.md) | 참고문헌 ref-253 등록: MassRobotics-AMR/AMR_Interop_Standard — README |
+| 2026-09-25-20 | 생성 | [docs/references/ref-254.md](references/ref-254.md) | 참고문헌 ref-254 등록: awesome_adapters — A curated list of adapters from the commu… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-255.md](references/ref-255.md) | 참고문헌 ref-255 등록: ros_amr_interop — README (ROS packages for AMR interoperabil… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-256.md](references/ref-256.md) | 참고문헌 ref-256 등록: free_fleet — README (A free fleet management system) |
+| 2026-09-25-20 | 생성 | [docs/references/ref-257.md](references/ref-257.md) | 참고문헌 ref-257 등록: AMR Multi-Fleet Orchestration Software Explained |
+| 2026-09-25-20 | 생성 | [docs/references/ref-258.md](references/ref-258.md) | 참고문헌 ref-258 등록: Interoperability and Orchestration of Autonomous Mobile Robo… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-259.md](references/ref-259.md) | 참고문헌 ref-259 등록: Identification of requirements and opportunities for new typ… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-260.md](references/ref-260.md) | 참고문헌 ref-260 등록: Heterogeneous multi-agent fleet control system for material… |
+| 2026-09-25-20 | 생성 | [docs/references/ref-261.md](references/ref-261.md) | 참고문헌 ref-261 등록: 미르, 다기종 모바일 로봇 연동 SW 어댑터 ‘MiR VDA 5050’ 론칭 |
+| 2026-09-25-20 | 생성 | [docs/references/ref-262.md](references/ref-262.md) | 참고문헌 ref-262 등록: 통합 로봇 관제 플랫폼 크롬스[CROMS] |
+| 2026-09-25-20 | 생성 | [docs/references/ref-263.md](references/ref-263.md) | 참고문헌 ref-263 등록: 카카오모빌리티, 로봇 플랫폼 사업 본격화..."이기종 로봇 통합 운영" |
+| 2026-09-25-20 | 생성 | [docs/references/ref-264.md](references/ref-264.md) | 참고문헌 ref-264 등록: "로봇 통합 관제 기술, 인정받았다"..노바테크, 70억원 투자 유치 |
+| 2026-09-25-20 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 VDA 5050 |
+| 2026-09-25-20 | 생성 | [docs/glossary/fleet-management-system.md](glossary/fleet-management-system.md) | 용어집 항목 플릿 관리 시스템 |
+| 2026-09-25-20 | 생성 | [docs/glossary/multi-fleet-orchestration.md](glossary/multi-fleet-orchestration.md) | 용어집 항목 다중 플릿 오케스트레이션 |
+| 2026-09-25-20 | 생성 | [docs/glossary/mqtt.md](glossary/mqtt.md) | 용어집 항목 메시지 큐잉 원격 측정 전송 |
+| 2026-09-25-20 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설), 상태 줄 열린 3·답함 3으로 갱신, 4절 결론·불확실성, 5절 q2-06 등록·중복 폐기 기록, 6절 전환 아니오(q1-04·q1-05·q1-06), 7·8·9절 갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.2 → v0.3: 개념 '작업 스테이션' 추가(확정), '충전 위치' 접근 지점 속성 추가·확정, '엘리베이터' BIM 대응 클래스 속성 추가·확정, 다이어그램에 작업 스테이션 노드, 6절 질문 4건 추가·q1-03 항목 근거 보강 |
 | 2026-09-25-19 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 운영 시설(충전소·작업 스테이션) 보완 사례 소절 추가, 4절에 단계 2 전 선행 근거(IFC 4.3·VDMA LIF·VDA 5050 시설 표현) 작성 |

@@ -759,6 +759,46 @@
       "ref_id": "ref-175",
       "run_id": "2026-09-25-21",
       "date": "2026-09-25"
+    },
+    {
+      "name": "free_fleet (Open-RMF 플릿 어댑터)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9
+      ],
+      "url": "https://github.com/open-rmf/free_fleet",
+      "summary": "fleet_adapter_template 기반 Python 플릿 어댑터로, 제조사 관제를 거치지 않고 로봇의 Nav2·Nav1 내비게이션 스택에 zenoh 로 직접 접속한다(Nav1 은 시뮬레이션·ROS 1 Noetic 에서만 시험).",
+      "ref_id": "ref-256",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ros_amr_interop (VDA5050 커넥터·MassRobotics 송신 노드)",
+      "org": "InOrbit",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        28
+      ],
+      "url": "https://github.com/inorbit-ai/ros_amr_interop",
+      "summary": "ROS 2 로봇을 MQTT 기반 VDA 5050 관제에 연결하는 커넥터(ROS 2 Galactic)와 MassRobotics 상호운용 수신기로 데이터를 보내는 송신 노드(Foxy·Galactic)를 제공한다(README 기준, 확인일 2026-09-25).",
+      "ref_id": "ref-255",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF fleet_adapter_template",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9
+      ],
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "summary": "제조사 관제 접속 정보, RMF–로봇 지도 좌표 대응점, 속도·차체 한계, 배터리, 작업 능력(task_capabilities)을 플릿 단위로 적는 플릿 어댑터 템플릿이다.",
+      "ref_id": "ref-105",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
     }
   ]
 }

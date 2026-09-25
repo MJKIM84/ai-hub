@@ -155,6 +155,12 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 9. 로봇·제조사 관제 연동 — 대표 연구와 자료: topics/2026/2026-09-25-area09-s8.md
+      - 9. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area09-s7.md
+      - 9. 로봇·제조사 관제 연동 — 대표 접근법과 기술: topics/2026/2026-09-25-area09-s6.md
+      - 9. 로봇·제조사 관제 연동 — 핵심 개념과 용어: topics/2026/2026-09-25-area09-s4.md
+      - 9. 로봇·제조사 관제 연동 — 열린 질문: topics/2026/2026-09-25-area09-s11.md
+      - 9. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area09-s10.md
       - 7. 화물·재고·자산 식별과 추적 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area07-s7.md
       - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
       - 6. 지도·공간·위치 모델 — 대표 연구와 자료: topics/2026/2026-09-25-area06-s8.md
@@ -207,12 +213,14 @@ nav:
     - 다중 로봇 작업 배정 (MRTA): glossary/mrta.md
     - 다중 에이전트 경로 찾기 (MAPF): glossary/mapf.md
     - 다중 에이전트 픽업·배송 (Multi-Agent Pickup and Delivery): glossary/multi-agent-pickup-and-delivery.md
+    - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
     - 디지털 트윈 (Digital Twin): glossary/digital-twin.md
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
+    - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
@@ -242,6 +250,7 @@ nav:
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
+    - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
@@ -489,6 +498,21 @@ nav:
     - 'ref-248 — ISO 22166-202:2025 - Robotics — Modularity for service robots — Part 202: Information model for software modules': references/ref-248.md
     - ref-249 — Ontological Component-based Description of Robot Capabilities: references/ref-249.md
     - ref-250 — SkiROS2 — README (skill-based robot control platform): references/ref-250.md
+    - ref-251 — Mobile Robot Fleets (integration_fleets) - Programming Multiple Robots with ROS 2: references/ref-251.md
+    - ref-252 — Integration (integration) - Programming Multiple Robots with ROS 2: references/ref-252.md
+    - ref-253 — MassRobotics-AMR/AMR_Interop_Standard — README: references/ref-253.md
+    - ref-254 — awesome_adapters — A curated list of adapters from the community which can be used with Open-RMF (README): references/ref-254.md
+    - 'ref-255 — ros_amr_interop — README (ROS packages for AMR interoperability: VDA5050 connector, MassRobotics AMR sender)': references/ref-255.md
+    - ref-256 — free_fleet — README (A free fleet management system): references/ref-256.md
+    - ref-257 — AMR Multi-Fleet Orchestration Software Explained: references/ref-257.md
+    - ref-258 — Interoperability and Orchestration of Autonomous Mobile Robots (IO-AMRs): references/ref-258.md
+    - ? ref-259 — Identification of requirements and opportunities for new types of standardized interfaces for AGV systems based on the VDA 5050 concept
+      : references/ref-259.md
+    - ref-260 — Heterogeneous multi-agent fleet control system for material handling in a Software-Defined Factory: references/ref-260.md
+    - ref-261 — 미르, 다기종 모바일 로봇 연동 SW 어댑터 ‘MiR VDA 5050’ 론칭: references/ref-261.md
+    - ref-262 — 통합 로봇 관제 플랫폼 크롬스[CROMS]: references/ref-262.md
+    - ref-263 — 카카오모빌리티, 로봇 플랫폼 사업 본격화..."이기종 로봇 통합 운영": references/ref-263.md
+    - ref-264 — "로봇 통합 관제 기술, 인정받았다"..노바테크, 70억원 투자 유치: references/ref-264.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md
