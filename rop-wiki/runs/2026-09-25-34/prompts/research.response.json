@@ -1,0 +1,899 @@
+{
+  "duration_api_ms": 409017,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.9055995999999995,
+  "usage": {
+    "input_tokens": 28,
+    "cache_creation_input_tokens": 148083,
+    "cache_read_input_tokens": 2717858,
+    "output_tokens": 31070,
+    "output_tokens_details": {
+      "thinking_tokens": 8921
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 148083,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 25172,
+        "cache_read_input_tokens": 219057,
+        "cache_creation_input_tokens": 2859,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2859
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 28,
+      "outputTokens": 31070,
+      "cacheReadInputTokens": 2717858,
+      "cacheCreationInputTokens": 148083,
+      "webSearchRequests": 0,
+      "costUSD": 2.3497475999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8921,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 310582,
+      "outputTokens": 11054,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 19,
+      "costUSD": 0.5558519999999999,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 32,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-34\",\"date\":\"2026-09-25\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":14,\"area_name\":\"14. 작업 순서·스케줄링\",\"category\":\"D. 계획·최적화\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음(주문 배치, 선후 제약, 시간창, 풋월, 가장 이른 시작 시각 등)\",\"섹션 5. 현장 시나리오 비어 있음(피킹→포장 동기화, 긴급 주문 삽입)\",\"섹션 6. 대표 접근법과 기술 비어 있음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 비어 있음\",\"섹션 11. 열린 질문 비어 있음(기존 oq-013·oq-019 가 이 영역을 관련 영역으로 둠)\"],\"research_questions\":[\"피킹·운반·포장이 서로 기다리지 않게 어떤 순서로 실행할까? [분류원문]\",\"주문 묶음(배치)과 작업대 처리 순서 결정은 어떻게 연구되었고, 로봇이 선반을 나르는 창고에서 어떤 효과가 보고되었는가? (섹션 3·6·8 겨냥)\",\"작업 선후관계와 시간 제약(시간창)은 연구·표준·도구에서 어떻게 분류·표현되는가(MRTA 시간·순서 제약 분류, ISA-95 의존 유형, 제약 프로그래밍)? (섹션 4·6·7 겨냥, oq-013 관련)\",\"피킹과 분류·포장 공정 사이 동기화를 다룬 연구와 국내 자료는 무엇인가? (섹션 5·8 겨냥)\",\"긴급 작업 삽입과 재배정을 오픈소스 로봇 관제(Open-RMF)는 어떤 필드·기능으로 지원하고 무엇이 비어 있는가? (섹션 6·7·9 겨냥, oq-019 관련)\",\"작업 순서·스케줄링에서 ROP가 직접 맡을 것과 상위 업무 시스템·로봇 제조사에 맡길 것의 경계는 무엇인가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"주문 피킹은 대부분 창고에서 가장 노동집약적이고 비용이 큰 활동으로 알려져 있으며, 그 비용은 창고 운영비의 최대 55% 로 추정되고, 배치·구역화·경로·보관 배정이 주요 설계·통제 결정 문제로 다뤄진다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-682\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: 'the cost of order picking is estimated to be as much as 55% of the total warehouse operating expense'. 수동 피킹 대상 문헌 검토(EJOR 182(2), 2007). 원문 미열람.\",\"as_of\":\"2007\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f2\",\"claim\":\"이커머스 창고는 주문 줄이 적은 시간 임박 주문을 대량으로 처리해야 하며, 로봇·자동 피킹 작업대 같은 자동화와 함께 동적 주문 처리·배치·구역화·분류 시스템 같은 조직 적응이 쓰인다고 조사 논문이 정리한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-684\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: 'large numbers of time-critical picking orders each consisting of just a few order lines'; 'dynamic order processing, and batching, zoning and sorting systems'. 원문 미열람.\",\"as_of\":\"2019\",\"flow_step\":\"피킹\",\"flow_item\":\"시작 조건\",\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"로봇이 선반(랙)을 작업대로 옮기는 부품-작업자 방식 창고에서 작업대의 주문 배치·순서와 그에 맞물린 랙 도착 순서를 함께 정하는 문제가 연구되었고, 저자 계산 실험에서 최적화된 주문 처리는 현장에서 흔한 단순 규칙보다 필요한 로봇 대수를 절반 넘게 줄였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-683\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: 'batching and sequencing of picking orders and the interdependent sequencing of the racks'; 'optimized order picking allows more than halving the fleet of robots compared to simple decision rules'. 저자 계산 실험 조건. 원문 미열람.\",\"as_of\":\"2017\",\"flow_step\":\"피킹\",\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"작업대가 여럿인 KIVA 방식 창고에서 주문을 작업대에 할당하고 작업대별 주문·랙 처리 순서를 함께 정하는 모델이 제안되었고, 저자 실험에서 랙 방문 수를 규칙 기반 탐욕 정책보다 3분의 1 넘게, 작업대별 독립 스케줄링보다 5분의 1 넘게 줄였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-686\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(arXiv 2108.09056): 시뮬레이티드 어닐링·빔 탐색 기반 해법, 'saving over one-third and one-fifth of rack visits' (탐욕 정책·독립 스케줄링 대비). 프리프린트, 원문 미열람.\",\"as_of\":\"2021-08\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"배치·구역 피킹 뒤에는 고객 주문별 통합이 필요하며, 풋월(put wall) 수동 통합에서 자동창고의 빈 방출 순서를 최적화해 주문 완료 시간을 줄이고 포장 작업자의 유휴 대기를 줄이는 문제가 단일 기계 스케줄링과 가까운 문제로 정식화되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-687\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: batching·zoning 은 'require subsequent order consolidation'; 'optimizing the release sequence of bins'; 'closely related to single machine scheduling ... such that the packers' idle times are reduced'. 원문 미열람.\",\"as_of\":\"2019\",\"flow_step\":\"포장\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f6\",\"claim\":\"로봇 전방-예비(forward-reserve) 창고에서 배송 요구를 조건으로 수동 피킹과 로봇 분류 작업을 동기화하는 문제가 제안되었고, 저자 실험에서 작업 완료 시간(makespan)과 전방 구역 면적이 줄었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-688\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: 'delivery-driven intralogistics synchronization problem'; 'tradeoff between manual picking and robotic sorting operations'; 피킹·분류가 동기화되지 않으면 긴급 품목이 빠져 추가 보정 피킹이 생긴다는 문제 제기. 원문 미열람.\",\"as_of\":\"2022\",\"flow_step\":\"출하\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f7\",\"claim\":\"국내 연구(신희철 외, 2024)는 물류센터 피킹 스케줄링을 분배·포장까지 포함한 주문 처리 전체 관점에서 다루었고, 배치 피킹이 오더 피킹보다 분배·포장 작업시간 절감에 긍정적 영향을 준다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-689\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: '배치 피킹 방식이 분배 및 포장 작업 시간 절감에 긍정적인 영향'; '피킹 다음의 분배 및 포장까지 포함하는 고객 주문 처리 전체 프로세스 측면'. 한국빅데이터학회 학회지 9(2), 29-46. 원문 미열람.\",\"as_of\":\"2024\",\"flow_step\":\"포장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f8\",\"claim\":\"국내 대한산업공학회지에 복수 포장대와 피킹-패킹 전환 정책(작업자가 피킹과 포장 사이를 옮겨 가는 정책)을 운영하는 물류센터의 작업자 스케줄링을 다룬 연구(2025)가 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-690\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: 대한산업공학회지 51(2), 142-149, 2025, Tran Bo Tao Huong·이광헌·홍순도. 피킹과 포장 작업에서 정책별 작업자 배치·스케줄링. 원문 미열람, 결과 수치 미확인.\",\"as_of\":\"2025\",\"flow_step\":\"포장\",\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"Nunes 외(2017)는 시간·순서 제약이 있는 다중 로봇 작업 배정(MRTA/TOC)의 분류를 제안했으며, 시간 제약은 작업이 실행되어야 하는 시간창으로 표현되고 이 문제군은 차량 경로 문제·잡숍 스케줄링과 관련된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-685\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: Robotics and Autonomous Systems 90 (2017) 55–70; 'temporal constraints are expressed as time windows'; 'relate to ... vehicle routing, job-shop scheduling, and multi-robot task allocation'. 원문 미열람.\",\"as_of\":\"2017\",\"flow_step\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f10\",\"claim\":\"선후 제약 다중 에이전트 경로 찾기(PC-MAPF)는 작업 사이에 'ti 가 끝나야 tj 가 시작한다'는 선후 제약을 두는 확장으로, 여러 로봇의 협업 픽업이나 입력 자원이 먼저 도착해야 하는 창고 조립 작업에서 생기며, PC-CBS 가 작업 완료 시간 최적 해를 찾는다고 제안된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-691\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약(arXiv 2202.10449): 'agents are assigned a sequence of planning tasks that contain precedence constraints'; 'PC-CBS ... finds makespan-optimal solutions'. 프리프린트, 원문 미열람.\",\"as_of\":\"2022-02\",\"flow_step\":\"적치\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f11\",\"claim\":\"작업 간 선후 의존이 있으면 배정·시간 순서·충돌 없는 경로가 서로 강하게 얽히므로, 14. 작업 순서·스케줄링은 13. 작업 배정 — MRTA와 15. 다중 로봇 경로·교통 관리 — MAPF와 분리해 풀기 어려운 경우가 생길 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-691\",\"ref-685\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f9(시간·순서 제약 분류)와 f10(선후 제약이 배정·경로와 결합) 대응에서 나온 추론. 검색 요약: 'task assignment, temporal ordering, and collision-free routing become tightly coupled'. 원문 미열람.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f12\",\"claim\":\"B2MML 공통 스키마의 의존 유형(Dependency1Type)은 두 요소 사이 실행 의존 제약으로 NotFollow·PossibleParallel·NotInParallel·AtStart·AfterStart·AfterEnd·NoLaterAfterStart·NoEarlierAfterStart·NoLaterAfterEnd·NoEarlierAfterEnd·Other 값을 정의하며, 일부는 의존 계수(dependency factor)로 시간 간격을 준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-117\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"B2MML-Common.xsd 원본: 'define an execution dependency constraint of two elements'; 'no later after start: start B no later than dependency factor after A start'. 창고 물류 적용 사례는 미확인(oq-013).\",\"as_of\":\"2023\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f13\",\"claim\":\"Open-RMF 작업 요청 스키마는 선택 필드로 작업의 가장 이른 시작 시각(unix_millis_earliest_start_time)과 플릿이 지원하는 우선순위 스키마에 맞아야 하는 우선순위(priority)를 두지만, 마감 시각이나 다른 작업과의 선후 관계 필드는 두지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-125\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task_request.json 원본: '(Optional) The earliest time that this task may start'; priority 'must match a priority schema supported by a fleet'. 그 밖의 필드는 요청 시각·범주·설명·라벨·요청자·플릿 이름. (재인용: 2026-09-25-31) (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f14\",\"claim\":\"Open-RMF 에서는 디스패처가 새 작업 요청을 BidNotice 로 모든 플릿 어댑터에 알리고, 처리할 수 있는 플릿이 비용을 담은 BidProposal 을 보내면 이를 비교해 낙찰 플릿에 DispatchRequest 를 보내며, 평가 방식(가장 빨리 끝내기·최소 비용 등)은 설정할 수 있고 기본값은 QuickestFinishEvaluator 이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-678\",\"ref-680\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task.md 원본: 'The Dispatcher then compares all the BidProposals received and submits a rmf_task_msgs/DispatchRequest'. Dispatcher.hpp: 'Default evaluator is: QuickestFinishEvaluator'. 같은 기관 자료라 독립 교차 아님. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f15\",\"claim\":\"Open-RMF 플릿 어댑터는 rmf_task 의 TaskPlanner 로 새 요청을 로봇 일정에 어떻게 넣을지 정하며, 배터리가 모자라면 충전 작업을 일정에 끼워 넣고, 탐욕 방식(빠르나 최적 보장 없음)과 A* 기반 방식(최적 보장, 더 오래 걸림) 중에서 고를 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-678\",\"ref-679\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task.md 원본: 'ChargeBattery tasks are optimally injected into a robot's schedule'. TaskPlanner.hpp: greedy 'Optimality is not guaranteed', A* 'guarantees optimality but may take longer to solve'; 배정마다 'The earliest time the agent will begin executing this task' 기록. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f16\",\"claim\":\"Open-RMF rmf_task 의 BinaryPriorityScheme 은 요청에 높음·낮음 두 단계 우선순위만 부여하며, 현재 구현에서 낮음 우선순위는 빈 값(nullptr)으로 반환된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-692\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"BinaryPriorityScheme.hpp 원본: make_low_priority() 'In the current implementation this returns a nullptr.'; 'binary prioritization scheme by generating either high or low Priority objects'. 비용 계산 세부는 헤더 주석에 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"Open-RMF 작업 V2 에서 작업은 단계(phase)를 만들어 내는 객체이며, 여러 단계의 연쇄나 조합으로 구성된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-110\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"task_new.md 원본: 'a task is typically made up of a series or combination of phases as its building blocks.' 요청 예시에 unix_millis_earliest_start_time 필드 포함. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"제약 프로그래밍 해법기 OR-Tools CP-SAT 은 작업을 시작·길이·끝이 'start + size == end' 로 묶인 구간 변수로 두고, 공용 자원의 겹침 금지(NoOverlap), 실행 여부를 리터럴로 정하는 선택 구간, 시작·끝 사이 선형 부등식으로 쓰는 선후 관계로 스케줄링 문제를 표현한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-681\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"scheduling.md 원본: 'A no_overlap constraint simply states that all intervals are disjoint'; 선택 구간은 'no overlap and cumulative constraints ... correctly ignore inactive intervals'. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f19\",\"claim\":\"Open-RMF 작업 요청에 마감 시각 필드가 없고 기본 우선순위 체계가 높음·낮음 두 단계이므로, 출하 마감에 따라 긴급 작업을 끼워 넣고 대기 작업을 재정렬하는 규칙은 ROP 쪽에서 따로 정해야 할 것으로 보인다(oq-019 와 연결).\",\"tag\":\"추정\",\"source_ids\":[\"ref-125\",\"ref-692\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f13(마감 필드 없음)과 f16(이진 우선순위)을 분류 원문 한 줄 정의의 '긴급 작업 삽입'에 대응시킨 추론. Open-RMF 서버가 우선순위로 기존 배정을 재계획하는지는 소스 코드로 확인하지 않음.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"시작 조건\"},{\"id\":\"f20\",\"claim\":\"자동 분류기(sorter)가 있는 창고에서 주문을 웨이브로 묶어 내릴지, 웨이브 없이 연속으로 내릴지의 출고 지시 정책을 비교한 연구가 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-134\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Gallien & Weber(2010) 'To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter', MSOM. 참고문헌 목록 재사용, 이번 실행에서 원문을 열지 않음.\",\"as_of\":\"2010\",\"flow_step\":\"출하\",\"flow_item\":\"시작 조건\",\"source_unopened\":true},{\"id\":\"f21\",\"claim\":\"주문이 동적으로 도착하는 창고 피킹에서 재최적화가 얼마나 효과적인지를 다룬 연구(Networks, 2025)가 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-133\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Lorenz, Otto, & Gendreau(2025) 'Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?'. 참고문헌 목록 재사용, 원문 미열람.\",\"as_of\":\"2025\",\"flow_step\":\"피킹\",\"flow_item\":\"시작 조건\",\"source_unopened\":true},{\"id\":\"f22\",\"claim\":\"픽업·배송 작업이 온라인으로 계속 들어오는 조건에서 에이전트에 작업을 배정하고 충돌 없는 경로를 함께 계획하는 다중 에이전트 픽업·배송(MAPD) 문제가 연구되어, 작업 순서 결정이 한 번의 계획이 아니라 연속 재계획이 되는 상황을 다룬다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-006\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Ma 외(2017) 'Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks'. 용어집 정의와 같은 내용. 참고문헌 목록 재사용, 원문 미열람.\",\"as_of\":\"2017\",\"flow_step\":\"적치\",\"flow_item\":\"시작 조건\",\"source_unopened\":true},{\"id\":\"f23\",\"claim\":\"Open-RMF 의 배정은 플릿 단위 입찰과 플릿 안 일정 계획으로 이루어지고 요청 스키마에 작업 간 선후 필드가 없으므로, 제조사가 다른 플릿 사이의 선후·동기화(예: 피킹 로봇 완료 뒤 운반 로봇 출발)는 ROP 가 작업 흐름 수준에서 관리해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-678\",\"ref-125\",\"ref-117\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f13·f14·f15 의 구조(플릿 입찰, 플릿 내 TaskPlanner, 선후 필드 부재)와 f12(상위 계층의 의존 유형 존재)를 분류 원문 9장 경계에 대응시킨 추론. 이종 플릿 선후 조율의 공개 구현은 찾지 못함.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"피킹\",\"flow_item\":\"완료·인계\"},{\"id\":\"f24\",\"claim\":\"연계 대상: 출하 마감 시각의 결정, 배송 배차·운송 계획은 상위 업무 시스템(WMS·TMS)의 영역이며, ROP 는 이를 가장 이른 시작 시각·우선순위·배송 요구 같은 작업 제약으로 받아 현장 작업 순서에 반영하는 쪽에 가까울 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-125\",\"ref-688\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f13(요청 속성으로 시작 시각·우선순위 수신)과 f6(배송 요구를 조건으로 한 현장 동기화)을 분류 원문 9장 '거점 간 운송' 경계에 대응시킨 추론.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f25\",\"claim\":\"분류 원문 질문에 대해, 연구들은 피킹 작업대의 주문·랙 순서를 정할 때 뒤 공정(통합·포장)의 주문 완료 시간과 작업자 대기를 목적에 넣는 방식으로 피킹·운반·포장의 대기를 줄이려 하므로, ROP 의 순서 결정도 포장대 도착 순서를 기준 제약으로 삼는 형태가 될 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-687\",\"ref-683\",\"ref-689\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f3(작업대 주문·랙 순서 결합), f5(빈 방출 순서로 포장자 유휴 감소), f7(배치 피킹의 포장 시간 효과)을 분류 원문 질문에 대응시킨 추론. 로봇 운반까지 포함한 국내 현장 검증은 찾지 못함.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"포장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true}],\"sources\":[{\"id\":\"ref-006\",\"org\":\"Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.\",\"title\":\"Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks\",\"published\":\"2017\",\"url\":\"https://arxiv.org/abs/1705.10868\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 온라인으로 들어오는 픽업·배송 작업의 배정과 충돌 없는 경로 계획을 함께 다루는 MAPD 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-110\",\"org\":\"Open Robotics\",\"title\":\"Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/task_new.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 V2 장 mdBook 원본. 작업이 단계(phase)의 연쇄·조합으로 구성되고 요청에 가장 이른 시작 시각을 둘 수 있음을 원문으로 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_new.md\"},{\"id\":\"ref-117\",\"org\":\"MESA International\",\"title\":\"B2MML-BatchML — Schema/B2MML-Common.xsd\",\"published\":\"2023\",\"url\":\"https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"B2MML 공통 스키마 원본. 두 요소 사이 실행 의존 제약(Dependency1Type)의 값과 설명을 원문으로 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-Common.xsd\"},{\"id\":\"ref-125\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_request.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 요청 스키마 원본. 가장 이른 시작 시각·요청 시각·우선순위 필드를 원문으로 확인했고 마감 시각 필드는 없다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_request.json\"},{\"id\":\"ref-133\",\"org\":\"Lorenz, Otto, & Gendreau (Networks, Wiley)\",\"title\":\"Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?\",\"published\":\"2025\",\"url\":\"https://onlinelibrary.wiley.com/doi/full/10.1002/net.22281\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 동적으로 도착하는 주문의 창고 피킹에서 재최적화의 효과를 다룬 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-134\",\"org\":\"Gallien, J., & Weber, T. G.\",\"title\":\"To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter\",\"published\":\"2010\",\"url\":\"https://pubsonline.informs.org/doi/abs/10.1287/msom.1100.0291\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자동 분류기가 있는 창고에서 웨이브 방식과 웨이브리스 방식의 주문 출고 정책을 비교한 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-678\",\"org\":\"Open Robotics\",\"title\":\"Tasks in RMF (task) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/task.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 장 mdBook 원본. 디스패처의 입찰(BidNotice·BidProposal·DispatchRequest), 평가 방식 설정, TaskPlanner 사용, 충전 작업 삽입을 원문으로 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md\"},{\"id\":\"ref-679\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 작업 계획기 헤더. 탐욕·A* 선택 옵션, 배정별 가장 이른 시작 시각, 종료 요청 생성, 배터리 인지 비용 전략을 주석으로 정한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_task/main/rmf_task/include/rmf_task/TaskPlanner.hpp\"},{\"id\":\"ref-680\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 디스패처 헤더. 작업 제출 시 입찰이 시작되고 기본 평가기가 QuickestFinishEvaluator 이며 사용자 정의 평가기로 바꿀 수 있음을 주석으로 정한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp\"},{\"id\":\"ref-681\",\"org\":\"Google (google/or-tools GitHub)\",\"title\":\"OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver)\",\"published\":null,\"url\":\"https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"CP-SAT 스케줄링 문서 원본. 구간 변수, 겹침 금지, 선택 구간, 선후 관계 표현을 원문으로 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/google/or-tools/stable/ortools/sat/docs/scheduling.md\"},{\"id\":\"ref-682\",\"org\":\"de Koster, R., Le-Duc, T., & Roodbergen, K. J.\",\"title\":\"Design and control of warehouse order picking: A literature review\",\"published\":\"2007\",\"url\":\"https://pure.eur.nl/en/publications/design-and-control-of-warehouse-order-picking-a-literature-review/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 수동 주문 피킹의 레이아웃·보관 배정·경로·배치·구역화 결정 문제를 정리한 EJOR 문헌 검토.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-683\",\"org\":\"Boysen, N., Briskorn, D., & Emde, S.\",\"title\":\"Parts-to-picker based order processing in a rack-moving mobile robots environment\",\"published\":\"2017\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0377221717302758\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 랙 이동 로봇 창고 작업대의 주문 배치·순서와 랙 순서를 함께 정하는 문제와 로봇 대수 절감 효과를 다룬 EJOR 논문.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-684\",\"org\":\"Boysen, N., de Koster, R., & Weidinger, F.\",\"title\":\"Warehousing in the e-commerce era: A survey\",\"published\":\"2019\",\"url\":\"https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이커머스 창고의 자동화 시스템과 동적 주문 처리·배치·구역화·분류 같은 운영 적응을 정리한 EJOR 조사 논문.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-685\",\"org\":\"Nunes, E., Manner, M., Mitiche, H., & Gini, M.\",\"title\":\"A taxonomy for task allocation problems with temporal and ordering constraints\",\"published\":\"2017\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0921889016306157\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 시간창·선후 제약이 있는 다중 로봇 작업 배정 문제(MRTA/TOC)의 분류를 제안한 Robotics and Autonomous Systems 논문.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-686\",\"org\":\"Yang, X., Hua, G., Zhang, L., Cheng, T. C. E., & Choi, T. M.\",\"title\":\"Joint order assignment and picking station scheduling in KIVA warehouses with multiple stations\",\"published\":\"2021-08\",\"url\":\"https://arxiv.org/abs/2108.09056\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 다중 작업대 KIVA 창고에서 주문 할당과 작업대별 주문·랙 처리 순서를 함께 정하는 모델과 해법(프리프린트).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-687\",\"org\":\"Boysen, N., Stephan, K., & Weidinger, F.\",\"title\":\"Manual order consolidation with put walls: the batched order bin sequencing problem\",\"published\":\"2019\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S2192437620300315\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 풋월 수동 주문 통합을 위해 자동창고의 빈 방출 순서를 최적화해 포장자 유휴를 줄이는 문제(EURO Journal on Transportation and Logistics 8(2)).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-688\",\"org\":\"Jiang, M., & Huang, G. Q.\",\"title\":\"Intralogistics synchronization in robotic forward-reserve warehouses for e-commerce last-mile delivery\",\"published\":\"2022\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S1366554522000175\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 배송 요구를 조건으로 수동 피킹과 로봇 분류를 동기화하는 문제를 제안한 Transportation Research Part E 158 논문.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-689\",\"org\":\"신희철, 이강현, 방선호, 신광섭(한국빅데이터학회 학회지)\",\"title\":\"물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구\",\"published\":\"2024\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003163116\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 분배·포장까지 포함한 주문 처리 관점에서 피킹 스케줄링을 다루고 배치 피킹의 분배·포장 시간 효과를 보고한 국내 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-690\",\"org\":\"Tran Bo Tao Huong, 이광헌, 홍순도(대한산업공학회지)\",\"title\":\"복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링\",\"published\":\"2025\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003194570\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터의 작업자 배치·스케줄링 연구(대한산업공학회지 51(2), 142-149).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-691\",\"org\":\"arXiv 2202.10449 저자(미확인)\",\"title\":\"Optimal Multi-Agent Path Finding for Precedence Constrained Planning Tasks\",\"published\":\"2022-02\",\"url\":\"https://arxiv.org/abs/2202.10449\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 작업 사이 선후 제약을 둔 MAPF(PC-MAPF)와 작업 완료 시간 최적 해법 PC-CBS 를 제안한 프리프린트.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-692\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/BinaryPriorityScheme.hpp\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 이진 우선순위 체계 헤더. 높음·낮음 우선순위 객체 생성과 낮음이 현재 nullptr 로 반환됨을 주석으로 정한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_task/main/rmf_task/include/rmf_task/BinaryPriorityScheme.hpp\"}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3(왜 중요한가): f1·f2·f3·f4 — 피킹 비용 비중, 이커머스의 시간 임박 주문, 순서 최적화의 로봇 대수·랙 방문 절감. 섹션 4(핵심 개념과 용어): 주문 배치(f1·f7), 시간창·선후 제약(f9·f10), 실행 의존 유형(f12), 가장 이른 시작 시각·우선순위(f13·f16), 풋월(f5), 웨이브리스 출고(f20). 섹션 5(현장 시나리오): 피킹 작업대 순서(f3·f4, 피킹), 피킹→포장 통합(f5·f7·f8·f25, 포장), 피킹–분류–출하 동기화(f6, 출하), 긴급 주문 삽입(f19, 출하 / 시작 조건). 섹션 6(대표 접근법과 기술): 배치·순서 동시 최적화(f3·f4), 뒤 공정 기준 순서(f5·f6), 시간·순서 제약 분류(f9), 선후 제약 경로 결합(f10·f11), 입찰 기반 배정과 플릿 내 일정 계획(f14·f15), 제약 프로그래밍(f18), 온라인 재계획(f21·f22). 섹션 7(관련 표준·프레임워크·오픈소스): B2MML 의존 유형(f12), Open-RMF 요청·디스패처·TaskPlanner·우선순위·작업 단계(f13~f17), OR-Tools CP-SAT(f18). 섹션 8(대표 연구와 자료): f1~f10, f20·f21·f22. 섹션 9(ROP가 직접 맡는 것과 외부와 연계하는 것): f23(이종 플릿 사이 선후·동기화는 직접 범위), f24(연계 대상: 출하 마감·운송 계획), f19. 섹션 10(다른 연구영역과의 연결): 13. 작업 배정 — MRTA(f9·f11·f14), 15. 다중 로봇 경로·교통 관리 — MAPF(f10·f11·f22), 16. 공용 자원·충전·에너지 최적화(f15 충전 삽입), 1. 주문·업무 시스템 연계(f13·f19·f20·f24, oq-019), 2. 공정·워크플로 모델링(f12, oq-013), 3. 처리능력·거점·설비 계획(f3 로봇 대수), 18. 사람–로봇 협업·운영 인터페이스(f5·f8 작업자 대기). 섹션 11(열린 질문): 기존 oq-013·oq-019 와 이번 새 질문.\"}],\"glossary_candidates\":[{\"term_ko\":\"주문 배치\",\"term_en\":\"Order Batching\",\"definition\":\"여러 고객 주문을 한 번의 피킹 작업으로 묶어 이동·방문 횟수를 줄이는 창고 운영 결정이다.\"},{\"term_ko\":\"선후 제약\",\"term_en\":\"Precedence Constraint\",\"definition\":\"한 작업이 끝나야 다른 작업을 시작할 수 있는 것처럼 두 작업의 실행 순서를 제한하는 조건이다.\"},{\"term_ko\":\"시간창\",\"term_en\":\"Time Window\",\"definition\":\"작업이 시작되거나 실행되어야 하는 가장 이른 시각과 가장 늦은 시각 사이의 허용 구간이다.\"},{\"term_ko\":\"풋월\",\"term_en\":\"Put Wall\",\"definition\":\"앞뒤로 열린 칸막이 선반으로, 한쪽에서 묶음 피킹한 물품을 주문별 칸에 넣고 반대쪽에서 완성된 주문을 꺼내 포장하는 주문 통합 설비이다.\"}],\"open_questions_new\":[\"제조사가 다른 로봇 플릿 사이의 작업 선후(예: 피킹 로봇 완료 뒤 운반 로봇 출발)를 작업 요청 수준에서 표현·집행하는 표준 필드나 공개 구현이 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 13. 작업 배정 — MRTA, 9. 로봇·제조사 관제 연동 | 근거: f23 | 종류: 일반\",\"로봇 작업대의 주문·랙 순서 최적화 연구가 보고한 로봇 대수·랙 방문 절감 효과를 이종 로봇과 사람 포장대가 섞인 국내 물류센터에서 검증한 자료가 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 3. 처리능력·거점·설비 계획 | 근거: f3 | 종류: 일반\",\"피킹–포장 동기화의 성과를 포장 작업자 대기시간이나 주문 완료 시간 분산 같은 지표로 재는 합의된 정의가 있는가, ROP 가 순서 결정의 목적함수로 쓸 수 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 4. 성과·경제성·프로세스 개선 | 근거: f5 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":21,\"cross_checked_count\":0,\"unverified\":[\"모든 finding 교차 확인 없음: 논문마다 단일 출처이고, Open-RMF 자료는 같은 기관 파일이라 독립 교차가 아님\",\"f3·f4·f6·f7 의 효과 수치·결과는 검색 요약 기준이며 논문 원문 미열람\",\"f8 연구의 결과 수치 미확인(제목·서지만 확인)\",\"f10 PC-MAPF 논문 저자 미확인\",\"f16 이진 우선순위가 비용 계산에 어떻게 반영되는지와 Open-RMF 가 우선순위로 기존 배정을 재계획하는지는 소스 코드로 확인하지 않음\",\"f12 의존 유형을 창고 물류 작업에 적용한 사례 미확인(oq-013 열림 유지)\",\"긴급 주문 삽입·재스케줄링을 다룬 국내 학술 자료는 한국어 검색에서 찾지 못함(벤더·블로그 자료뿐)\"],\"scope_violations\":[\"f24: 출하 마감 결정·운송 계획은 분류 원문 9장 '상위 업무 시스템'·'거점 간 운송' 연계 영역이라 '연계 대상: '으로 표시함\",\"f8: 작업자 스케줄링 연구는 18. 사람–로봇 협업·운영 인터페이스와 겹치므로 14번 페이지에는 포장 공정 동기화의 근거로만 쓰도록 제안함\"],\"budget_used\":{\"queries\":19,\"sources\":15},\"limits\":\"web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-110·ref-117·ref-125, 신규 ref-678·ref-679·ref-680·ref-681·ref-692. rmf-core.md(ref-004)도 열었으나 배정 관련 내용이 없어 쓰지 않았다. priority_description_Binary.json 은 404 로 열지 못했다. 나머지 신규 10건(ref-682~ref-691)과 재사용 ref-006·ref-133·ref-134 는 원문 미열람이라 신뢰도 상한 medium. 모든 finding 신뢰도 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 15건/15(ref-678~ref-692, 예약 구간 안), 재사용 6건. 신규 출처 예산 도달로 Ulusoy·Bilge 의 기계·AGV 동시 스케줄링 고전 연구(검증된 URL 미확보)와 주문 배치 분류 검토(EJOR 2023, 저자 미확인)는 넣지 않았다. 한국어 검색 3회에서 국내 학술 자료 2건(ref-689·ref-690)을 찾았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음(강화학습 기반 배치·순서 연구가 검색에 보였으나 출처로 넣지 않음). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 기존 oq-013(의존 유형 창고 적용)·oq-019(출고 우선순위의 Open-RMF 반영)는 관련 근거(f12, f13·f16·f19)가 늘었으나 해결되지 않았다.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-25-34",
+    "date": "2026-09-25",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 14,
+      "area_name": "14. 작업 순서·스케줄링",
+      "category": "D. 계획·최적화"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음(주문 배치, 선후 제약, 시간창, 풋월, 가장 이른 시작 시각 등)",
+      "섹션 5. 현장 시나리오 비어 있음(피킹→포장 동기화, 긴급 주문 삽입)",
+      "섹션 6. 대표 접근법과 기술 비어 있음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 비어 있음",
+      "섹션 11. 열린 질문 비어 있음(기존 oq-013·oq-019 가 이 영역을 관련 영역으로 둠)"
+    ],
+    "research_questions": [
+      "피킹·운반·포장이 서로 기다리지 않게 어떤 순서로 실행할까? [분류원문]",
+      "주문 묶음(배치)과 작업대 처리 순서 결정은 어떻게 연구되었고, 로봇이 선반을 나르는 창고에서 어떤 효과가 보고되었는가? (섹션 3·6·8 겨냥)",
+      "작업 선후관계와 시간 제약(시간창)은 연구·표준·도구에서 어떻게 분류·표현되는가(MRTA 시간·순서 제약 분류, ISA-95 의존 유형, 제약 프로그래밍)? (섹션 4·6·7 겨냥, oq-013 관련)",
+      "피킹과 분류·포장 공정 사이 동기화를 다룬 연구와 국내 자료는 무엇인가? (섹션 5·8 겨냥)",
+      "긴급 작업 삽입과 재배정을 오픈소스 로봇 관제(Open-RMF)는 어떤 필드·기능으로 지원하고 무엇이 비어 있는가? (섹션 6·7·9 겨냥, oq-019 관련)",
+      "작업 순서·스케줄링에서 ROP가 직접 맡을 것과 상위 업무 시스템·로봇 제조사에 맡길 것의 경계는 무엇인가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "주문 피킹은 대부분 창고에서 가장 노동집약적이고 비용이 큰 활동으로 알려져 있으며, 그 비용은 창고 운영비의 최대 55% 로 추정되고, 배치·구역화·경로·보관 배정이 주요 설계·통제 결정 문제로 다뤄진다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-682"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: 'the cost of order picking is estimated to be as much as 55% of the total warehouse operating expense'. 수동 피킹 대상 문헌 검토(EJOR 182(2), 2007). 원문 미열람.",
+        "as_of": "2007",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f2",
+        "claim": "이커머스 창고는 주문 줄이 적은 시간 임박 주문을 대량으로 처리해야 하며, 로봇·자동 피킹 작업대 같은 자동화와 함께 동적 주문 처리·배치·구역화·분류 시스템 같은 조직 적응이 쓰인다고 조사 논문이 정리한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-684"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: 'large numbers of time-critical picking orders each consisting of just a few order lines'; 'dynamic order processing, and batching, zoning and sorting systems'. 원문 미열람.",
+        "as_of": "2019",
+        "flow_step": "피킹",
+        "flow_item": "시작 조건",
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "로봇이 선반(랙)을 작업대로 옮기는 부품-작업자 방식 창고에서 작업대의 주문 배치·순서와 그에 맞물린 랙 도착 순서를 함께 정하는 문제가 연구되었고, 저자 계산 실험에서 최적화된 주문 처리는 현장에서 흔한 단순 규칙보다 필요한 로봇 대수를 절반 넘게 줄였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-683"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: 'batching and sequencing of picking orders and the interdependent sequencing of the racks'; 'optimized order picking allows more than halving the fleet of robots compared to simple decision rules'. 저자 계산 실험 조건. 원문 미열람.",
+        "as_of": "2017",
+        "flow_step": "피킹",
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "작업대가 여럿인 KIVA 방식 창고에서 주문을 작업대에 할당하고 작업대별 주문·랙 처리 순서를 함께 정하는 모델이 제안되었고, 저자 실험에서 랙 방문 수를 규칙 기반 탐욕 정책보다 3분의 1 넘게, 작업대별 독립 스케줄링보다 5분의 1 넘게 줄였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-686"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(arXiv 2108.09056): 시뮬레이티드 어닐링·빔 탐색 기반 해법, 'saving over one-third and one-fifth of rack visits' (탐욕 정책·독립 스케줄링 대비). 프리프린트, 원문 미열람.",
+        "as_of": "2021-08",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "배치·구역 피킹 뒤에는 고객 주문별 통합이 필요하며, 풋월(put wall) 수동 통합에서 자동창고의 빈 방출 순서를 최적화해 주문 완료 시간을 줄이고 포장 작업자의 유휴 대기를 줄이는 문제가 단일 기계 스케줄링과 가까운 문제로 정식화되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-687"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: batching·zoning 은 'require subsequent order consolidation'; 'optimizing the release sequence of bins'; 'closely related to single machine scheduling ... such that the packers' idle times are reduced'. 원문 미열람.",
+        "as_of": "2019",
+        "flow_step": "포장",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f6",
+        "claim": "로봇 전방-예비(forward-reserve) 창고에서 배송 요구를 조건으로 수동 피킹과 로봇 분류 작업을 동기화하는 문제가 제안되었고, 저자 실험에서 작업 완료 시간(makespan)과 전방 구역 면적이 줄었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-688"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: 'delivery-driven intralogistics synchronization problem'; 'tradeoff between manual picking and robotic sorting operations'; 피킹·분류가 동기화되지 않으면 긴급 품목이 빠져 추가 보정 피킹이 생긴다는 문제 제기. 원문 미열람.",
+        "as_of": "2022",
+        "flow_step": "출하",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f7",
+        "claim": "국내 연구(신희철 외, 2024)는 물류센터 피킹 스케줄링을 분배·포장까지 포함한 주문 처리 전체 관점에서 다루었고, 배치 피킹이 오더 피킹보다 분배·포장 작업시간 절감에 긍정적 영향을 준다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-689"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: '배치 피킹 방식이 분배 및 포장 작업 시간 절감에 긍정적인 영향'; '피킹 다음의 분배 및 포장까지 포함하는 고객 주문 처리 전체 프로세스 측면'. 한국빅데이터학회 학회지 9(2), 29-46. 원문 미열람.",
+        "as_of": "2024",
+        "flow_step": "포장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f8",
+        "claim": "국내 대한산업공학회지에 복수 포장대와 피킹-패킹 전환 정책(작업자가 피킹과 포장 사이를 옮겨 가는 정책)을 운영하는 물류센터의 작업자 스케줄링을 다룬 연구(2025)가 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-690"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: 대한산업공학회지 51(2), 142-149, 2025, Tran Bo Tao Huong·이광헌·홍순도. 피킹과 포장 작업에서 정책별 작업자 배치·스케줄링. 원문 미열람, 결과 수치 미확인.",
+        "as_of": "2025",
+        "flow_step": "포장",
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "Nunes 외(2017)는 시간·순서 제약이 있는 다중 로봇 작업 배정(MRTA/TOC)의 분류를 제안했으며, 시간 제약은 작업이 실행되어야 하는 시간창으로 표현되고 이 문제군은 차량 경로 문제·잡숍 스케줄링과 관련된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-685"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: Robotics and Autonomous Systems 90 (2017) 55–70; 'temporal constraints are expressed as time windows'; 'relate to ... vehicle routing, job-shop scheduling, and multi-robot task allocation'. 원문 미열람.",
+        "as_of": "2017",
+        "flow_step": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f10",
+        "claim": "선후 제약 다중 에이전트 경로 찾기(PC-MAPF)는 작업 사이에 'ti 가 끝나야 tj 가 시작한다'는 선후 제약을 두는 확장으로, 여러 로봇의 협업 픽업이나 입력 자원이 먼저 도착해야 하는 창고 조립 작업에서 생기며, PC-CBS 가 작업 완료 시간 최적 해를 찾는다고 제안된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-691"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약(arXiv 2202.10449): 'agents are assigned a sequence of planning tasks that contain precedence constraints'; 'PC-CBS ... finds makespan-optimal solutions'. 프리프린트, 원문 미열람.",
+        "as_of": "2022-02",
+        "flow_step": "적치",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f11",
+        "claim": "작업 간 선후 의존이 있으면 배정·시간 순서·충돌 없는 경로가 서로 강하게 얽히므로, 14. 작업 순서·스케줄링은 13. 작업 배정 — MRTA와 15. 다중 로봇 경로·교통 관리 — MAPF와 분리해 풀기 어려운 경우가 생길 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-691",
+          "ref-685"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f9(시간·순서 제약 분류)와 f10(선후 제약이 배정·경로와 결합) 대응에서 나온 추론. 검색 요약: 'task assignment, temporal ordering, and collision-free routing become tightly coupled'. 원문 미열람.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f12",
+        "claim": "B2MML 공통 스키마의 의존 유형(Dependency1Type)은 두 요소 사이 실행 의존 제약으로 NotFollow·PossibleParallel·NotInParallel·AtStart·AfterStart·AfterEnd·NoLaterAfterStart·NoEarlierAfterStart·NoLaterAfterEnd·NoEarlierAfterEnd·Other 값을 정의하며, 일부는 의존 계수(dependency factor)로 시간 간격을 준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-117"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "B2MML-Common.xsd 원본: 'define an execution dependency constraint of two elements'; 'no later after start: start B no later than dependency factor after A start'. 창고 물류 적용 사례는 미확인(oq-013).",
+        "as_of": "2023",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f13",
+        "claim": "Open-RMF 작업 요청 스키마는 선택 필드로 작업의 가장 이른 시작 시각(unix_millis_earliest_start_time)과 플릿이 지원하는 우선순위 스키마에 맞아야 하는 우선순위(priority)를 두지만, 마감 시각이나 다른 작업과의 선후 관계 필드는 두지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-125"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task_request.json 원본: '(Optional) The earliest time that this task may start'; priority 'must match a priority schema supported by a fleet'. 그 밖의 필드는 요청 시각·범주·설명·라벨·요청자·플릿 이름. (재인용: 2026-09-25-31) (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f14",
+        "claim": "Open-RMF 에서는 디스패처가 새 작업 요청을 BidNotice 로 모든 플릿 어댑터에 알리고, 처리할 수 있는 플릿이 비용을 담은 BidProposal 을 보내면 이를 비교해 낙찰 플릿에 DispatchRequest 를 보내며, 평가 방식(가장 빨리 끝내기·최소 비용 등)은 설정할 수 있고 기본값은 QuickestFinishEvaluator 이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-678",
+          "ref-680"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task.md 원본: 'The Dispatcher then compares all the BidProposals received and submits a rmf_task_msgs/DispatchRequest'. Dispatcher.hpp: 'Default evaluator is: QuickestFinishEvaluator'. 같은 기관 자료라 독립 교차 아님. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f15",
+        "claim": "Open-RMF 플릿 어댑터는 rmf_task 의 TaskPlanner 로 새 요청을 로봇 일정에 어떻게 넣을지 정하며, 배터리가 모자라면 충전 작업을 일정에 끼워 넣고, 탐욕 방식(빠르나 최적 보장 없음)과 A* 기반 방식(최적 보장, 더 오래 걸림) 중에서 고를 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-678",
+          "ref-679"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task.md 원본: 'ChargeBattery tasks are optimally injected into a robot's schedule'. TaskPlanner.hpp: greedy 'Optimality is not guaranteed', A* 'guarantees optimality but may take longer to solve'; 배정마다 'The earliest time the agent will begin executing this task' 기록. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f16",
+        "claim": "Open-RMF rmf_task 의 BinaryPriorityScheme 은 요청에 높음·낮음 두 단계 우선순위만 부여하며, 현재 구현에서 낮음 우선순위는 빈 값(nullptr)으로 반환된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-692"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "BinaryPriorityScheme.hpp 원본: make_low_priority() 'In the current implementation this returns a nullptr.'; 'binary prioritization scheme by generating either high or low Priority objects'. 비용 계산 세부는 헤더 주석에 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "Open-RMF 작업 V2 에서 작업은 단계(phase)를 만들어 내는 객체이며, 여러 단계의 연쇄나 조합으로 구성된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-110"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "task_new.md 원본: 'a task is typically made up of a series or combination of phases as its building blocks.' 요청 예시에 unix_millis_earliest_start_time 필드 포함. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "제약 프로그래밍 해법기 OR-Tools CP-SAT 은 작업을 시작·길이·끝이 'start + size == end' 로 묶인 구간 변수로 두고, 공용 자원의 겹침 금지(NoOverlap), 실행 여부를 리터럴로 정하는 선택 구간, 시작·끝 사이 선형 부등식으로 쓰는 선후 관계로 스케줄링 문제를 표현한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-681"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "scheduling.md 원본: 'A no_overlap constraint simply states that all intervals are disjoint'; 선택 구간은 'no overlap and cumulative constraints ... correctly ignore inactive intervals'. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f19",
+        "claim": "Open-RMF 작업 요청에 마감 시각 필드가 없고 기본 우선순위 체계가 높음·낮음 두 단계이므로, 출하 마감에 따라 긴급 작업을 끼워 넣고 대기 작업을 재정렬하는 규칙은 ROP 쪽에서 따로 정해야 할 것으로 보인다(oq-019 와 연결).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-125",
+          "ref-692"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f13(마감 필드 없음)과 f16(이진 우선순위)을 분류 원문 한 줄 정의의 '긴급 작업 삽입'에 대응시킨 추론. Open-RMF 서버가 우선순위로 기존 배정을 재계획하는지는 소스 코드로 확인하지 않음.",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f20",
+        "claim": "자동 분류기(sorter)가 있는 창고에서 주문을 웨이브로 묶어 내릴지, 웨이브 없이 연속으로 내릴지의 출고 지시 정책을 비교한 연구가 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-134"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Gallien & Weber(2010) 'To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter', MSOM. 참고문헌 목록 재사용, 이번 실행에서 원문을 열지 않음.",
+        "as_of": "2010",
+        "flow_step": "출하",
+        "flow_item": "시작 조건",
+        "source_unopened": true
+      },
+      {
+        "id": "f21",
+        "claim": "주문이 동적으로 도착하는 창고 피킹에서 재최적화가 얼마나 효과적인지를 다룬 연구(Networks, 2025)가 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-133"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Lorenz, Otto, & Gendreau(2025) 'Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?'. 참고문헌 목록 재사용, 원문 미열람.",
+        "as_of": "2025",
+        "flow_step": "피킹",
+        "flow_item": "시작 조건",
+        "source_unopened": true
+      },
+      {
+        "id": "f22",
+        "claim": "픽업·배송 작업이 온라인으로 계속 들어오는 조건에서 에이전트에 작업을 배정하고 충돌 없는 경로를 함께 계획하는 다중 에이전트 픽업·배송(MAPD) 문제가 연구되어, 작업 순서 결정이 한 번의 계획이 아니라 연속 재계획이 되는 상황을 다룬다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-006"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Ma 외(2017) 'Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks'. 용어집 정의와 같은 내용. 참고문헌 목록 재사용, 원문 미열람.",
+        "as_of": "2017",
+        "flow_step": "적치",
+        "flow_item": "시작 조건",
+        "source_unopened": true
+      },
+      {
+        "id": "f23",
+        "claim": "Open-RMF 의 배정은 플릿 단위 입찰과 플릿 안 일정 계획으로 이루어지고 요청 스키마에 작업 간 선후 필드가 없으므로, 제조사가 다른 플릿 사이의 선후·동기화(예: 피킹 로봇 완료 뒤 운반 로봇 출발)는 ROP 가 작업 흐름 수준에서 관리해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-678",
+          "ref-125",
+          "ref-117"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f13·f14·f15 의 구조(플릿 입찰, 플릿 내 TaskPlanner, 선후 필드 부재)와 f12(상위 계층의 의존 유형 존재)를 분류 원문 9장 경계에 대응시킨 추론. 이종 플릿 선후 조율의 공개 구현은 찾지 못함.",
+        "as_of": "2026-09-25",
+        "flow_step": "피킹",
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f24",
+        "claim": "연계 대상: 출하 마감 시각의 결정, 배송 배차·운송 계획은 상위 업무 시스템(WMS·TMS)의 영역이며, ROP 는 이를 가장 이른 시작 시각·우선순위·배송 요구 같은 작업 제약으로 받아 현장 작업 순서에 반영하는 쪽에 가까울 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-125",
+          "ref-688"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f13(요청 속성으로 시작 시각·우선순위 수신)과 f6(배송 요구를 조건으로 한 현장 동기화)을 분류 원문 9장 '거점 간 운송' 경계에 대응시킨 추론.",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f25",
+        "claim": "분류 원문 질문에 대해, 연구들은 피킹 작업대의 주문·랙 순서를 정할 때 뒤 공정(통합·포장)의 주문 완료 시간과 작업자 대기를 목적에 넣는 방식으로 피킹·운반·포장의 대기를 줄이려 하므로, ROP 의 순서 결정도 포장대 도착 순서를 기준 제약으로 삼는 형태가 될 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-687",
+          "ref-683",
+          "ref-689"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f3(작업대 주문·랙 순서 결합), f5(빈 방출 순서로 포장자 유휴 감소), f7(배치 피킹의 포장 시간 효과)을 분류 원문 질문에 대응시킨 추론. 로봇 운반까지 포함한 국내 현장 검증은 찾지 못함.",
+        "as_of": "2026-09-25",
+        "flow_step": "포장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-006",
+        "org": "Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.",
+        "title": "Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks",
+        "published": "2017",
+        "url": "https://arxiv.org/abs/1705.10868",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 온라인으로 들어오는 픽업·배송 작업의 배정과 충돌 없는 경로 계획을 함께 다루는 MAPD 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-110",
+        "org": "Open Robotics",
+        "title": "Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 V2 장 mdBook 원본. 작업이 단계(phase)의 연쇄·조합으로 구성되고 요청에 가장 이른 시작 시각을 둘 수 있음을 원문으로 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_new.md"
+      },
+      {
+        "id": "ref-117",
+        "org": "MESA International",
+        "title": "B2MML-BatchML — Schema/B2MML-Common.xsd",
+        "published": "2023",
+        "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "B2MML 공통 스키마 원본. 두 요소 사이 실행 의존 제약(Dependency1Type)의 값과 설명을 원문으로 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MESAInternational/B2MML-BatchML/master/Schema/B2MML-Common.xsd"
+      },
+      {
+        "id": "ref-125",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 요청 스키마 원본. 가장 이른 시작 시각·요청 시각·우선순위 필드를 원문으로 확인했고 마감 시각 필드는 없다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_api_msgs/main/rmf_api_msgs/schemas/task_request.json"
+      },
+      {
+        "id": "ref-133",
+        "org": "Lorenz, Otto, & Gendreau (Networks, Wiley)",
+        "title": "Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?",
+        "published": "2025",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/net.22281",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 동적으로 도착하는 주문의 창고 피킹에서 재최적화의 효과를 다룬 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-134",
+        "org": "Gallien, J., & Weber, T. G.",
+        "title": "To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter",
+        "published": "2010",
+        "url": "https://pubsonline.informs.org/doi/abs/10.1287/msom.1100.0291",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자동 분류기가 있는 창고에서 웨이브 방식과 웨이브리스 방식의 주문 출고 정책을 비교한 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-678",
+        "org": "Open Robotics",
+        "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 장 mdBook 원본. 디스패처의 입찰(BidNotice·BidProposal·DispatchRequest), 평가 방식 설정, TaskPlanner 사용, 충전 작업 삽입을 원문으로 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md"
+      },
+      {
+        "id": "ref-679",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 작업 계획기 헤더. 탐욕·A* 선택 옵션, 배정별 가장 이른 시작 시각, 종료 요청 생성, 배터리 인지 비용 전략을 주석으로 정한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_task/main/rmf_task/include/rmf_task/TaskPlanner.hpp"
+      },
+      {
+        "id": "ref-680",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 디스패처 헤더. 작업 제출 시 입찰이 시작되고 기본 평가기가 QuickestFinishEvaluator 이며 사용자 정의 평가기로 바꿀 수 있음을 주석으로 정한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp"
+      },
+      {
+        "id": "ref-681",
+        "org": "Google (google/or-tools GitHub)",
+        "title": "OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver)",
+        "published": null,
+        "url": "https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "CP-SAT 스케줄링 문서 원본. 구간 변수, 겹침 금지, 선택 구간, 선후 관계 표현을 원문으로 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/google/or-tools/stable/ortools/sat/docs/scheduling.md"
+      },
+      {
+        "id": "ref-682",
+        "org": "de Koster, R., Le-Duc, T., & Roodbergen, K. J.",
+        "title": "Design and control of warehouse order picking: A literature review",
+        "published": "2007",
+        "url": "https://pure.eur.nl/en/publications/design-and-control-of-warehouse-order-picking-a-literature-review/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 수동 주문 피킹의 레이아웃·보관 배정·경로·배치·구역화 결정 문제를 정리한 EJOR 문헌 검토.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-683",
+        "org": "Boysen, N., Briskorn, D., & Emde, S.",
+        "title": "Parts-to-picker based order processing in a rack-moving mobile robots environment",
+        "published": "2017",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221717302758",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 랙 이동 로봇 창고 작업대의 주문 배치·순서와 랙 순서를 함께 정하는 문제와 로봇 대수 절감 효과를 다룬 EJOR 논문.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-684",
+        "org": "Boysen, N., de Koster, R., & Weidinger, F.",
+        "title": "Warehousing in the e-commerce era: A survey",
+        "published": "2019",
+        "url": "https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이커머스 창고의 자동화 시스템과 동적 주문 처리·배치·구역화·분류 같은 운영 적응을 정리한 EJOR 조사 논문.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-685",
+        "org": "Nunes, E., Manner, M., Mitiche, H., & Gini, M.",
+        "title": "A taxonomy for task allocation problems with temporal and ordering constraints",
+        "published": "2017",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0921889016306157",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 시간창·선후 제약이 있는 다중 로봇 작업 배정 문제(MRTA/TOC)의 분류를 제안한 Robotics and Autonomous Systems 논문.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-686",
+        "org": "Yang, X., Hua, G., Zhang, L., Cheng, T. C. E., & Choi, T. M.",
+        "title": "Joint order assignment and picking station scheduling in KIVA warehouses with multiple stations",
+        "published": "2021-08",
+        "url": "https://arxiv.org/abs/2108.09056",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 다중 작업대 KIVA 창고에서 주문 할당과 작업대별 주문·랙 처리 순서를 함께 정하는 모델과 해법(프리프린트).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-687",
+        "org": "Boysen, N., Stephan, K., & Weidinger, F.",
+        "title": "Manual order consolidation with put walls: the batched order bin sequencing problem",
+        "published": "2019",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2192437620300315",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 풋월 수동 주문 통합을 위해 자동창고의 빈 방출 순서를 최적화해 포장자 유휴를 줄이는 문제(EURO Journal on Transportation and Logistics 8(2)).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-688",
+        "org": "Jiang, M., & Huang, G. Q.",
+        "title": "Intralogistics synchronization in robotic forward-reserve warehouses for e-commerce last-mile delivery",
+        "published": "2022",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1366554522000175",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 배송 요구를 조건으로 수동 피킹과 로봇 분류를 동기화하는 문제를 제안한 Transportation Research Part E 158 논문.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-689",
+        "org": "신희철, 이강현, 방선호, 신광섭(한국빅데이터학회 학회지)",
+        "title": "물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구",
+        "published": "2024",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003163116",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 분배·포장까지 포함한 주문 처리 관점에서 피킹 스케줄링을 다루고 배치 피킹의 분배·포장 시간 효과를 보고한 국내 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-690",
+        "org": "Tran Bo Tao Huong, 이광헌, 홍순도(대한산업공학회지)",
+        "title": "복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링",
+        "published": "2025",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003194570",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터의 작업자 배치·스케줄링 연구(대한산업공학회지 51(2), 142-149).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-691",
+        "org": "arXiv 2202.10449 저자(미확인)",
+        "title": "Optimal Multi-Agent Path Finding for Precedence Constrained Planning Tasks",
+        "published": "2022-02",
+        "url": "https://arxiv.org/abs/2202.10449",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 작업 사이 선후 제약을 둔 MAPF(PC-MAPF)와 작업 완료 시간 최적 해법 PC-CBS 를 제안한 프리프린트.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-692",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/BinaryPriorityScheme.hpp",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 이진 우선순위 체계 헤더. 높음·낮음 우선순위 객체 생성과 낮음이 현재 nullptr 로 반환됨을 주석으로 정한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_task/main/rmf_task/include/rmf_task/BinaryPriorityScheme.hpp"
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3(왜 중요한가): f1·f2·f3·f4 — 피킹 비용 비중, 이커머스의 시간 임박 주문, 순서 최적화의 로봇 대수·랙 방문 절감. 섹션 4(핵심 개념과 용어): 주문 배치(f1·f7), 시간창·선후 제약(f9·f10), 실행 의존 유형(f12), 가장 이른 시작 시각·우선순위(f13·f16), 풋월(f5), 웨이브리스 출고(f20). 섹션 5(현장 시나리오): 피킹 작업대 순서(f3·f4, 피킹), 피킹→포장 통합(f5·f7·f8·f25, 포장), 피킹–분류–출하 동기화(f6, 출하), 긴급 주문 삽입(f19, 출하 / 시작 조건). 섹션 6(대표 접근법과 기술): 배치·순서 동시 최적화(f3·f4), 뒤 공정 기준 순서(f5·f6), 시간·순서 제약 분류(f9), 선후 제약 경로 결합(f10·f11), 입찰 기반 배정과 플릿 내 일정 계획(f14·f15), 제약 프로그래밍(f18), 온라인 재계획(f21·f22). 섹션 7(관련 표준·프레임워크·오픈소스): B2MML 의존 유형(f12), Open-RMF 요청·디스패처·TaskPlanner·우선순위·작업 단계(f13~f17), OR-Tools CP-SAT(f18). 섹션 8(대표 연구와 자료): f1~f10, f20·f21·f22. 섹션 9(ROP가 직접 맡는 것과 외부와 연계하는 것): f23(이종 플릿 사이 선후·동기화는 직접 범위), f24(연계 대상: 출하 마감·운송 계획), f19. 섹션 10(다른 연구영역과의 연결): 13. 작업 배정 — MRTA(f9·f11·f14), 15. 다중 로봇 경로·교통 관리 — MAPF(f10·f11·f22), 16. 공용 자원·충전·에너지 최적화(f15 충전 삽입), 1. 주문·업무 시스템 연계(f13·f19·f20·f24, oq-019), 2. 공정·워크플로 모델링(f12, oq-013), 3. 처리능력·거점·설비 계획(f3 로봇 대수), 18. 사람–로봇 협업·운영 인터페이스(f5·f8 작업자 대기). 섹션 11(열린 질문): 기존 oq-013·oq-019 와 이번 새 질문."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "주문 배치",
+        "term_en": "Order Batching",
+        "definition": "여러 고객 주문을 한 번의 피킹 작업으로 묶어 이동·방문 횟수를 줄이는 창고 운영 결정이다."
+      },
+      {
+        "term_ko": "선후 제약",
+        "term_en": "Precedence Constraint",
+        "definition": "한 작업이 끝나야 다른 작업을 시작할 수 있는 것처럼 두 작업의 실행 순서를 제한하는 조건이다."
+      },
+      {
+        "term_ko": "시간창",
+        "term_en": "Time Window",
+        "definition": "작업이 시작되거나 실행되어야 하는 가장 이른 시각과 가장 늦은 시각 사이의 허용 구간이다."
+      },
+      {
+        "term_ko": "풋월",
+        "term_en": "Put Wall",
+        "definition": "앞뒤로 열린 칸막이 선반으로, 한쪽에서 묶음 피킹한 물품을 주문별 칸에 넣고 반대쪽에서 완성된 주문을 꺼내 포장하는 주문 통합 설비이다."
+      }
+    ],
+    "open_questions_new": [
+      "제조사가 다른 로봇 플릿 사이의 작업 선후(예: 피킹 로봇 완료 뒤 운반 로봇 출발)를 작업 요청 수준에서 표현·집행하는 표준 필드나 공개 구현이 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 13. 작업 배정 — MRTA, 9. 로봇·제조사 관제 연동 | 근거: f23 | 종류: 일반",
+      "로봇 작업대의 주문·랙 순서 최적화 연구가 보고한 로봇 대수·랙 방문 절감 효과를 이종 로봇과 사람 포장대가 섞인 국내 물류센터에서 검증한 자료가 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 3. 처리능력·거점·설비 계획 | 근거: f3 | 종류: 일반",
+      "피킹–포장 동기화의 성과를 포장 작업자 대기시간이나 주문 완료 시간 분산 같은 지표로 재는 합의된 정의가 있는가, ROP 가 순서 결정의 목적함수로 쓸 수 있는가? | 관련 영역: 14. 작업 순서·스케줄링, 4. 성과·경제성·프로세스 개선 | 근거: f5 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 21,
+      "cross_checked_count": 0,
+      "unverified": [
+        "모든 finding 교차 확인 없음: 논문마다 단일 출처이고, Open-RMF 자료는 같은 기관 파일이라 독립 교차가 아님",
+        "f3·f4·f6·f7 의 효과 수치·결과는 검색 요약 기준이며 논문 원문 미열람",
+        "f8 연구의 결과 수치 미확인(제목·서지만 확인)",
+        "f10 PC-MAPF 논문 저자 미확인",
+        "f16 이진 우선순위가 비용 계산에 어떻게 반영되는지와 Open-RMF 가 우선순위로 기존 배정을 재계획하는지는 소스 코드로 확인하지 않음",
+        "f12 의존 유형을 창고 물류 작업에 적용한 사례 미확인(oq-013 열림 유지)",
+        "긴급 주문 삽입·재스케줄링을 다룬 국내 학술 자료는 한국어 검색에서 찾지 못함(벤더·블로그 자료뿐)"
+      ],
+      "scope_violations": [
+        "f24: 출하 마감 결정·운송 계획은 분류 원문 9장 '상위 업무 시스템'·'거점 간 운송' 연계 영역이라 '연계 대상: '으로 표시함",
+        "f8: 작업자 스케줄링 연구는 18. 사람–로봇 협업·운영 인터페이스와 겹치므로 14번 페이지에는 포장 공정 동기화의 근거로만 쓰도록 제안함"
+      ],
+      "budget_used": {
+        "queries": 19,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-110·ref-117·ref-125, 신규 ref-678·ref-679·ref-680·ref-681·ref-692. rmf-core.md(ref-004)도 열었으나 배정 관련 내용이 없어 쓰지 않았다. priority_description_Binary.json 은 404 로 열지 못했다. 나머지 신규 10건(ref-682~ref-691)과 재사용 ref-006·ref-133·ref-134 는 원문 미열람이라 신뢰도 상한 medium. 모든 finding 신뢰도 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 15건/15(ref-678~ref-692, 예약 구간 안), 재사용 6건. 신규 출처 예산 도달로 Ulusoy·Bilge 의 기계·AGV 동시 스케줄링 고전 연구(검증된 URL 미확보)와 주문 배치 분류 검토(EJOR 2023, 저자 미확인)는 넣지 않았다. 한국어 검색 3회에서 국내 학술 자료 2건(ref-689·ref-690)을 찾았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음(강화학습 기반 배치·순서 연구가 검색에 보였으나 출처로 넣지 않음). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 기존 oq-013(의존 유형 창고 적용)·oq-019(출고 우선순위의 Open-RMF 반영)는 관련 근거(f12, f13·f16·f19)가 늘었으나 해결되지 않았다."
+    }
+  },
+  "ttft_ms": 6840,
+  "type": "result",
+  "duration_ms": 338197,
+  "uuid": "27a121a3-1467-4018-ac7e-4f8b04dfa475",
+  "ttft_stream_ms": 1546,
+  "time_to_request_ms": 82,
+  "first_content_frame_ms": 1547,
+  "time_to_request_from_spawn_ms": 11161906,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790307015391.977,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 339.7
+}

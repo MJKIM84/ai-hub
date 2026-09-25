@@ -7,3 +7,10 @@
 - 2026-09-25 12:31:38 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 12:31:38 KST [대상 선정] 결과: 성공 · 소요 0초 · track · 5. 로봇 능력·작업 온톨로지
 - 2026-09-25 12:31:38 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-35/prompts/research.md (478,112자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 12:35:54 KST [리서치 에이전트] 호출 완료(시도 1): 턴 18 · 4분 15초 · 비용 $4.4796 · subtype success
+- 2026-09-25 12:35:54 KST [리서치 에이전트] 저장: runs/2026-09-25-35/research.json
+- 2026-09-25 12:35:54 KST [형식 검증] 리서치 산출물 검사: 출처 8건 중 원문 열람 3건 · 신뢰도 상한 적용 1건
+- 2026-09-25 12:35:54 KST [형식 검증]   - 출처 ref-229: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 12:35:54 KST [리서치] 예산 점검: 예산 안
+- 2026-09-25 12:35:54 KST [리서치] 결과: 성공 · 소요 4분 16초 · 예산 안
+- 2026-09-25 12:35:54 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-35/prompts/verification1.md (515,358자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
