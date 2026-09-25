@@ -28,6 +28,8 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-60 | 갱신 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
+| 2026-09-25-60 | 요약 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-01 답함, q2-02·q2-03 부분 답, 후속 질문 2건(q2-07·q6-07), 완료 조건 미충족·전환 아니오, 출처 14건, 이력 추가. H1 아래 단계 상태 줄을 고쳐야 해 patches 대신 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 매트릭스 9/64칸 채움(페이로드·액세서리 문서 행 추가), 공개 문서 샘플 4건, 출처·이력 갱신. H1 아래 산출 단계 상태 줄을 고쳐야 해 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.3 → v0.4: 근거 문서 속성 '문서 유형'·'이용 조건' 추가와 확정(f3·f17), 속성 '정보 형태'는 6절 질문에 합침. H1 버전 표기를 고쳐야 해 전체 content 로 보냄 |
