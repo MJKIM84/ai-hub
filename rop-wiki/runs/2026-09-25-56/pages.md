@@ -4,10 +4,10 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md | draft | 영역 심화: 3~11절 신규 작성, 13절 각주 19건, 상태 자동 영역 표식 추가(조건부 승인 수정 16건 반영, 트랙 floorplan-recognition 반영 제안 8절에 반영) |
+| update | docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md | draft | 영역 심화: 3~11절 신규 작성, 13절 각주, 상태 자동 영역 표식 추가(조건부 승인 수정 16건 반영, 트랙 floorplan-recognition 반영 제안 8절에 반영) |
 | create | docs/topics/2026/2026-09-25-area22-s7.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,568자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area22-s8.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "8. 대표 연구와 자료" 절(1,550자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area22-s10.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,323자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area22-s10.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,323자)을 옮겼다. 형식 재작성: 본문 세부영역 링크 12건을 주제 페이지 위치 기준 경로(../../categories/…)로 고침 |
 | create | docs/topics/2026/2026-09-25-area22-s4.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "4. 핵심 개념과 용어" 절(998자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area22-s6.md | draft | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "6. 대표 접근법과 기술" 절(943자)을 옮겼다 |
 
@@ -34,13 +34,13 @@
 | ref-660 | NIST | Digital Twins for Advanced Manufacturing | 정부·연구기관 | medium | https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing |
 | ref-661 | ISO | ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition | 표준 | medium | https://www.iso.org/standard/87426.html |
 | ref-662 | 머니투데이 | 설계부터 생산까지 데이터 연결…제조 디지털 트윈 국제표준 발간 | 기사 | medium | https://www.mt.co.kr/economy/2026/07/28/2026072809211448284 |
-| ref-663 | Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W. | Digital Twin in manufacturing: A categorical literature review and classification | 논문 | medium | https://www.sciencedirect.com/science/article/pii/S2405896318316021 |
+| ref-291 | Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W. | Digital Twin in manufacturing: A categorical literature review and classification | 논문 | medium | https://www.sciencedirect.com/science/article/pii/S2405896318316021 |
 | ref-664 | Agalianos, K., Ponis, S. T., Aretoulaki, E., & Plakas, G. | Discrete Event Simulation and Digital Twins: Review and Challenges for Logistics | 논문 | medium | https://www.sciencedirect.com/science/article/pii/S2351978920320990 |
 | ref-665 | Le, T. V., & Fan, R. | Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges | 논문 | medium | https://www.sciencedirect.com/science/article/abs/pii/S0360835223007921 |
 | ref-666 | Coelho, F., Relvas, S., & Barbosa-Póvoa, A. P. | Simulation-based decision support tool for in-house logistics: the basis for a digital twin | 논문 | medium | https://www.sciencedirect.com/science/article/abs/pii/S0360835220307646 |
-| ref-667 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/simulation.html |
+| ref-406 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/simulation.html |
 | ref-668 | Open Robotics (open-rmf) | rmf_simulation — README | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_simulation |
-| ref-669 | Merschformann, M. (merschformann GitHub) | RAWSim-O — A simulation framework for Robotic Mobile Fulfillment Systems (README) | 오픈소스 문서 | high | https://github.com/merschformann/RAWSim-O |
+| ref-101 | Merschformann, M. (merschformann GitHub) | RAWSim-O — A simulation framework for Robotic Mobile Fulfillment Systems (README) | 오픈소스 문서 | high | https://github.com/merschformann/RAWSim-O |
 | ref-670 | OpenFactoryTwin (Fraunhofer ISST, HSBI, FH Dortmund) | ofact — Simulation-based Digital Twin for Production and Logistics Material Flows (README) | 오픈소스 문서 | high | https://github.com/OpenFactoryTwin/ofact |
 | ref-671 | Sargent, R. G. | Verification and validation of simulation models (Proceedings of the 40th Conference on Winter Simulation) | 논문 | medium | https://dl.acm.org/doi/abs/10.5555/1516744.1516780 |
 | ref-672 | CJ대한통운 | 가상세계 쌍둥이 창고로 물류 예측... CJ대한통운, 디지털 트윈 구축 (보도자료) | 벤더 문서 | low | https://www.cjlogistics.com/ko/newsroom/news/NR_00000905 |
@@ -89,7 +89,7 @@
 
 ## 이행한 수정 지시
 
-- 모든 각주 원문 미열람 표시 — 13절에서 ref-659·660·661·662·663·664·665·666·671·672·673·241·398·402·267 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙였고, reference_updates 의 이 15건에 source_unopened: true 를 넣었다(ref-667~670 은 표시하지 않음).
+- 모든 각주 원문 미열람 표시 — 원문을 열지 않은 출처 ref-659·660·661·662·291·664·665·666·671·672·673·241·398·402·267 의 각주 정의에서 접근일 뒤에 ' (원문 미열람)'을 붙였고, reference_updates 의 이 15건에 source_unopened: true 를 넣었다(ref-406·668·101·670 은 표시하지 않음).
 - f2·f3 — 4·7절에서 [사실]을 유지했고, 7절 표 아래에 '제품·설비·공정 트윈을 블록처럼 묶어 라인·공장 전체' 예시는 국가기술표준원 발표 쪽 설명이라고 밝히고 각주 ref-662 만 붙였다.
 - f4 — 7절 NIST 문장을 '신뢰할 수 있는(trustworthy) 디지털 트윈을 위한 측정 과학과 개방형 표준 개발'로 고쳤고 '상호운용' 문구를 뺐다.
 - f6·f30 — 4절(모델·섀도·트윈 축 구분), 5절 완료·인계 칸, 10절 8·23 연결 문장의 [의견]마다 '구축자 의견'임을 문장에 밝혔다.
@@ -101,8 +101,9 @@
 - f24 — 6절 NVIDIA 문장에 [추정] 벤더 주장을 유지했고, 9절 표·본문에서 센서 시뮬레이션·합성 데이터·물리 AI 는 '연계 대상'으로만 썼다.
 - f26 — 6·8절에서 '레이저 스캔'을 '스캐너·3D 카메라 스캔'으로 고쳤다.
 - f27 — 8절과 10절 8 연결에서 이 논문이 생성한 모델을 생산 계획 입력으로 쓴 용도에 한정한다고 적고 공정 병행 모니터링 용도도 언급함을 함께 적었으며 [추정]을 유지했다.
-- f14 인용 — 'simple robot navigation stack' 을 '경로 요청을 받아 레일처럼 움직이는 단순한 주행 역할'로 재서술했고(6·9절), ref-667 의 f11 구절도 재서술해 ref-667 직접 인용은 페이지에 한 번도 쓰지 않았다.
+- f14 인용 — 'simple robot navigation stack' 을 '경로 요청을 받아 레일처럼 움직이는 단순한 주행 역할'로 재서술했고(6·9절), ref-406 의 f11 구절도 재서술해 ref-406 직접 인용은 페이지에 한 번도 쓰지 않았다.
 - 용어 — '디지털 쓰레드'를 쓰지 않고 '디지털 스레드(Digital Thread)'로 통일했고, TeleportDispenser·TeleportIngestor 는 용어집 '디스펜서·인제스터'에, 디지털 섀도·디지털 트윈·이산 사건 시뮬레이션·로봇 이동형 풀필먼트 시스템은 기존 용어집 항목에 링크했으며, glossary_updates 에는 디지털 스레드·디지털 트윈 결합·시뮬레이션 모델 검증·타당성 확인 세 항목만 넣었다.
 - 4절·10절 구분 — 4절에 분류 원문 문장(현재 상태를 표현 / 가정한 미래를 실험)을 [분류원문]으로 두고, f5 의 모델·섀도·트윈 구분은 데이터 연결 수준이라는 다른 축이라고 4절과 10절 8 연결에 밝혀 섞지 않았다.
 - 10절 27 연결 — 27. AI·학습·적응과 모델 운영 연결 문장에 [추정] 벤더 주장(ref-672·ref-673)을 병기하고, 교차 규칙 적용 대상(5·6·13·19·21 영역, 번호와 이름 병기)에 대한 AI 연결 근거는 이번 브리프에 없다고 적었다.
 - 분량 초과 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 본문 9,142자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,514자
+- 형식 재작성: docs/topics/2026/2026-09-25-area22-s10.md 본문의 세부영역 링크 12건이 원 세부영역 페이지 위치 기준 경로로 남아 깨졌으므로 주제 페이지 위치 기준 '../../categories/<대분류 slug>/<파일>.md' 로 고쳤다. 주장·태그·각주는 바꾸지 않았다.

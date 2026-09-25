@@ -38,18 +38,18 @@
 | f2 | [사실] | ISO 는 2026년에 ISO 23247-5(디지털 트윈을 위한 디지털 스레드)와 ISO 23247-6(디지털 트윈 결합)을 발간했고, 국가기술표준원은 2026-07-28 이 두 표준이 한국(ETRI) 제안으로 발간되었다고 알렸다. | ref-661, ref-662 | 예 | medium | 2026-07-28 | — | 원문 미열람 |
 | f3 | [사실] | ISO 23247-6 은 목적에 따라 여러 디지털 트윈을 골라 결합하는 방법을 정해, 제품·설비·공정의 개별 트윈을 묶어 생산 라인·공장 전체의 복합 트윈을 구성하게 한다. | ref-661, ref-662 | 아니오 | medium | 2026-07-28 | — | 원문 미열람 |
 | f4 | [사실] | NIST 의 제조용 디지털 트윈 과제는 디지털 트윈을 신뢰할 수 있고 상호운용 가능하게 만드는 측정 과학과 표준 개발을 목표로 둔다. | ref-660 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
-| f5 | [사실] | Kritzinger 외(2018)는 제조 분야 문헌을 디지털 모델·디지털 섀도·디지털 트윈으로 구분해 분류했고, 가장 높은 단계인 디지털 트윈을 다룬 문헌은 드물고 모델·섀도 문헌이 더 많다고 보고했다. | ref-663 | 아니오 | medium | 2018 | — | 원문 미열람 |
-| f6 | [의견] | 분류 원문의 구분(8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험)에 문헌의 모델·섀도·트윈 구분을 맞추면, '디지털 트윈'이라는 이름이 실시간 동기화 수준을 가리키는 경우와 시나리오 실험 기능을 가리키는 경우가 섞여 쓰이므로 이 위키는 용도(현재 표현/미래 실험)로 나눠 적는 것이 맞아 보인다. | ref-663, ref-664 | 아니오 | low | 2020 | — | 원문 미열람 |
+| f5 | [사실] | Kritzinger 외(2018)는 제조 분야 문헌을 디지털 모델·디지털 섀도·디지털 트윈으로 구분해 분류했고, 가장 높은 단계인 디지털 트윈을 다룬 문헌은 드물고 모델·섀도 문헌이 더 많다고 보고했다. | ref-291 | 아니오 | medium | 2018 | — | 원문 미열람 |
+| f6 | [의견] | 분류 원문의 구분(8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험)에 문헌의 모델·섀도·트윈 구분을 맞추면, '디지털 트윈'이라는 이름이 실시간 동기화 수준을 가리키는 경우와 시나리오 실험 기능을 가리키는 경우가 섞여 쓰이므로 이 위키는 용도(현재 표현/미래 실험)로 나눠 적는 것이 맞아 보인다. | ref-291, ref-664 | 아니오 | low | 2020 | — | 원문 미열람 |
 | f7 | [사실] | Agalianos 외(2020)는 물류 4.0 에서 이산 사건 시뮬레이션(DES)이 사물인터넷 장치의 실시간 데이터를 질의하며 디지털 트윈의 한 부분으로 진화하고, 이를 통해 창고 계획·관리·의사결정을 지원한다고 정리했다. | ref-664 | 아니오 | medium | 2020 | — | 원문 미열람 |
 | f8 | [사실] | Le·Fan(2024)의 물류·공급망 디지털 트윈 문헌 검토는 실제 데이터로 검증한 논문은 소수이고 대다수가 생성 데이터를 쓴다고 보고해, 실무 적용의 부족을 지적했다. | ref-665 | 아니오 | medium | 2024 | 예외·성과 | 원문 미열람 |
 | f9 | [사실] | Le·Fan(2024)은 COVID-19 이후 공급망 위험·교란 관리에서 디지털 트윈의 이점이 뚜렷해졌다고 보고, 물류·공급망 디지털 트윈 개념 틀을 제안했다. | ref-665 | 아니오 | medium | 2024 | — | 원문 미열람 |
 | f10 | [사실] | Coelho 외(2021)는 Simio 로 만든 사내 물류 시뮬레이션 의사결정 지원 도구를 제안하고, 이 모델이 현실을 대표하여 실제 운영을 방해하지 않고 개선안을 시험하는 디지털 트윈화 도구로 쓰일 수 있다고 보고했다. | ref-666 | 아니오 | medium | 2021 | — | 원문 미열람 |
-| f11 | [사실] | Open-RMF 문서는 Gazebo·Ignition 물리 시뮬레이터를 ROS 2 와 연결해 시뮬레이션에 쓴 코드를 수정 없이 실제 시스템에서도 실행하고, 시나리오 반복·예외 상황 탐색·장시간 검증을 현장 배치 전에 할 수 있다고 설명한다. | ref-667 | 아니오 | medium | 2026-09-25 | — | — |
-| f12 | [사실] | Open-RMF 의 building_map_generator 는 traffic_editor 로 주석한 .building.yaml 에서 Gazebo·Ignition 월드(바닥·벽 메시)와 플릿 어댑터용 주행 그래프를 함께 생성하므로, 레이아웃이 바뀌면 주석을 고쳐 시뮬레이션 월드를 다시 만들 수 있다. | ref-667 | 아니오 | medium | 2026-09-25 | — | — |
-| f13 | [사실] | Open-RMF 시뮬레이션은 로봇용 slotcar 플러그인(레일식 주행과 가감속), 문·승강기 플러그인, 작업셀 적재·하역을 흉내 내는 TeleportDispenser·TeleportIngestor, Menge 기반 보행자 군중 시뮬레이션(CrowdSim), 배터리·충전기 동작 전환 도구를 제공한다. | ref-667, ref-668 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
-| f14 | [추정] | 연계 대상: Open-RMF 시뮬레이션의 로봇 모델은 레일식 주행을 흉내 내는 단순화 모델이므로, 센서 인식·로컬 회피 같은 로봇 자체 거동의 충실도는 제조사·물리 시뮬레이터 쪽에 맡기고 ROP 시뮬레이션은 플릿 조율·설비 상호작용을 실험하는 데 초점이 맞는 것으로 보인다. | ref-667, ref-668 | 아니오 | low | 2026-09-25 | — | — |
+| f11 | [사실] | Open-RMF 문서는 Gazebo·Ignition 물리 시뮬레이터를 ROS 2 와 연결해 시뮬레이션에 쓴 코드를 수정 없이 실제 시스템에서도 실행하고, 시나리오 반복·예외 상황 탐색·장시간 검증을 현장 배치 전에 할 수 있다고 설명한다. | ref-406 | 아니오 | medium | 2026-09-25 | — | — |
+| f12 | [사실] | Open-RMF 의 building_map_generator 는 traffic_editor 로 주석한 .building.yaml 에서 Gazebo·Ignition 월드(바닥·벽 메시)와 플릿 어댑터용 주행 그래프를 함께 생성하므로, 레이아웃이 바뀌면 주석을 고쳐 시뮬레이션 월드를 다시 만들 수 있다. | ref-406 | 아니오 | medium | 2026-09-25 | — | — |
+| f13 | [사실] | Open-RMF 시뮬레이션은 로봇용 slotcar 플러그인(레일식 주행과 가감속), 문·승강기 플러그인, 작업셀 적재·하역을 흉내 내는 TeleportDispenser·TeleportIngestor, Menge 기반 보행자 군중 시뮬레이션(CrowdSim), 배터리·충전기 동작 전환 도구를 제공한다. | ref-406, ref-668 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f14 | [추정] | 연계 대상: Open-RMF 시뮬레이션의 로봇 모델은 레일식 주행을 흉내 내는 단순화 모델이므로, 센서 인식·로컬 회피 같은 로봇 자체 거동의 충실도는 제조사·물리 시뮬레이터 쪽에 맡기고 ROP 시뮬레이션은 플릿 조율·설비 상호작용을 실험하는 데 초점이 맞는 것으로 보인다. | ref-406, ref-668 | 아니오 | low | 2026-09-25 | — | — |
 | f15 | [사실] | rmf_simulation 저장소는 Gazebo Classic 11(지원 2025년 1월 종료)과 Gazebo Fortress 를 지원 대상으로 적어, 시뮬레이션 환경도 시뮬레이터 판 교체에 따른 수명주기 관리가 필요하다. | ref-668 | 아니오 | medium | 2026-09-25 | — | — |
-| f16 | [사실] | RAWSim-O 는 로봇 이동형 풀필먼트 시스템(RMFS)의 이산 사건 시뮬레이션 프레임워크로, 운영 중 생기는 여러 결정 문제의 효과를 연구하고 새 결정 방법을 끼워 넣을 수 있게 하며 2D·3D 화면과 로봇 위치 히트맵을 제공한다(C#, GPL v3). | ref-669 | 아니오 | medium | 2026-09-25 | 피킹 | — |
+| f16 | [사실] | RAWSim-O 는 로봇 이동형 풀필먼트 시스템(RMFS)의 이산 사건 시뮬레이션 프레임워크로, 운영 중 생기는 여러 결정 문제의 효과를 연구하고 새 결정 방법을 끼워 넣을 수 있게 하며 2D·3D 화면과 로봇 위치 히트맵을 제공한다(C#, GPL v3). | ref-101 | 아니오 | medium | 2026-09-25 | 피킹 | — |
 | f17 | [사실] | Merschformann 외(2019)의 RMFS 결정 규칙 연구는 이산 사건 시뮬레이션으로 배정 규칙을 가정한 미래에서 실험했고, 피킹 주문 배정 규칙이 단위 처리량을 크게 바꾸었다. | ref-398 | 아니오 | medium | 2019 | 피킹 / 예외·성과 | 원문 미열람 |
 | f18 | [사실] | 국내 연구로 시뮬레이션과 메타모델을 결합해 자동물류센터 설계를 최적화한 연구가 있다. | ref-402 | 아니오 | medium | 2006 | — | 원문 미열람 |
 | f19 | [사실] | 다중 AGV 시스템의 경로망을 시뮬레이션 기반으로 자동 설계하는 연구(IEEE T-ASE 2024)가 있어, 경로망 배치안 평가가 시뮬레이션으로 이루어진다. | ref-267 | 아니오 | medium | 2024 | 제약 | 원문 미열람 |
@@ -58,12 +58,12 @@
 | f22 | [사실] | Sargent 의 시뮬레이션 모델 검증·타당성 확인(V&V) 틀은 개념 모델 타당성, 모델 검증, 운영 타당성, 데이터 타당성을 나누어 확인하고 결과 문서화와 모델 인가(accreditation)를 다룬다. | ref-671 | 아니오 | medium | 2008 | — | 원문 미열람 |
 | f23 | [추정] | CJ대한통운은 2021년 11월 현실 물류센터와 같은 가상 물류센터를 구축해 작업 동선·재고 배치·설비 효율을 최적화하고 장비 고장·피킹 오류·상품 파손 원인을 사전에 파악하며, AI 가 시나리오를 학습해 몇 시간 걸릴 일을 수초~수분에 해결한다고 발표했다. | ref-672 | 아니오 | low | 2021-11 | 피킹 / 예외·성과 | 원문 미열람, 벤더 주장 |
 | f24 | [추정] | NVIDIA 는 'Mega' Omniverse 블루프린트를 공장·창고 디지털 트윈에서 로봇 플릿과 물리 AI 를 배치 전에 개발·시험·최적화하는 참조 작업 흐름(센서 시뮬레이션·합성 데이터 생성 결합)으로 소개하고, KION·Accenture 가 창고·유통 공정 최적화에 쓴다고 밝혔다. | ref-673 | 아니오 | low | 2026-09-25 | — | 원문 미열람, 벤더 주장 |
-| f25 | [추정] | 분류 원문 질문 '성수기 주문량이 늘면 어디가 먼저 막힐까?'에 대해, 확인한 DES 연구·도구는 주문 도착량과 배정 규칙·자원 수(로봇·작업대)를 바꿔 처리량과 대기를 비교하는 방식으로 답하며, ROP 오케스트레이션 정책 자체를 성수기 시나리오로 시험한 공개 물류센터 사례는 이번 조사에서 찾지 못했다. | ref-398, ref-669, ref-666, ref-664 | 아니오 | low | 2026-09-25 | 피킹 / 제약 | — |
+| f25 | [추정] | 분류 원문 질문 '성수기 주문량이 늘면 어디가 먼저 막힐까?'에 대해, 확인한 DES 연구·도구는 주문 도착량과 배정 규칙·자원 수(로봇·작업대)를 바꿔 처리량과 대기를 비교하는 방식으로 답하며, ROP 오케스트레이션 정책 자체를 성수기 시나리오로 시험한 공개 물류센터 사례는 이번 조사에서 찾지 못했다. | ref-398, ref-101, ref-666, ref-664 | 아니오 | low | 2026-09-25 | 피킹 / 제약 | — |
 | f26 | [사실] | Sommer 외(2023)는 레이저 스캔과 객체 인식으로 공장의 건조 환경(built environment) 디지털 트윈을 자동 생성해 생산 계획의 입력으로 쓰는 방법을 제안했다. | ref-241 | 아니오 | medium | 2023 | — | 원문 미열람 |
-| f27 | [추정] | Sommer 외(2023)의 트윈은 생산 계획을 위한 배치·공간 모델이므로 22. 시뮬레이션·예측용 디지털 트윈의 초기 모델 생성(계획용)에 해당하고, 운영 중 현재 상태를 동기화하는 8. 실시간 세계 상태·데이터 일관성과는 구분되는 것으로 보인다. | ref-241, ref-667 | 아니오 | low | 2023 | — | — |
-| f28 | [추정] | ROP 가 직접 맡을 시뮬레이션 몫은 자신의 작업 배정·교통·충전 정책과 설비 요청(문·승강기)을 시뮬레이션된 플릿·설비에 대해 그대로 실행해 보는 것으로 보이며, Open-RMF 처럼 같은 코드를 시뮬레이션과 실제에 쓰는 구조가 그 근거가 된다. | ref-667, ref-668 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
+| f27 | [추정] | Sommer 외(2023)의 트윈은 생산 계획을 위한 배치·공간 모델이므로 22. 시뮬레이션·예측용 디지털 트윈의 초기 모델 생성(계획용)에 해당하고, 운영 중 현재 상태를 동기화하는 8. 실시간 세계 상태·데이터 일관성과는 구분되는 것으로 보인다. | ref-241, ref-406 | 아니오 | low | 2023 | — | — |
+| f28 | [추정] | ROP 가 직접 맡을 시뮬레이션 몫은 자신의 작업 배정·교통·충전 정책과 설비 요청(문·승강기)을 시뮬레이션된 플릿·설비에 대해 그대로 실행해 보는 것으로 보이며, Open-RMF 처럼 같은 코드를 시뮬레이션과 실제에 쓰는 구조가 그 근거가 된다. | ref-406, ref-668 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
 | f29 | [추정] | 연계 대상: 센서 시뮬레이션·합성 데이터 생성·물리 기반 로봇 거동 재현은 시뮬레이터 제공자와 로봇 제조사 영역이고, 시나리오의 주문·물동량 전망은 상위 업무 시스템의 수요예측에서 받는 입력으로 보인다. | ref-673, ref-665 | 아니오 | low | 2026-09-25 | 시작 조건 | 원문 미열람 |
-| f30 | [의견] | Open-RMF 시뮬레이션이 강조하는 시나리오 반복·예외 상황 탐색은 23. 시험·형식 검증·벤치마크의 회귀·장애 시험과 환경을 공유하므로, 22. 시뮬레이션·예측용 디지털 트윈은 운영 정책·수요 변화의 효과 예측, 23. 시험·형식 검증·벤치마크는 변경 후 동작 확인이라는 목적으로 나누는 것이 분류 원문 정의에 맞아 보인다. | ref-667 | 아니오 | low | 2026-09-25 | — | — |
+| f30 | [의견] | Open-RMF 시뮬레이션이 강조하는 시나리오 반복·예외 상황 탐색은 23. 시험·형식 검증·벤치마크의 회귀·장애 시험과 환경을 공유하므로, 22. 시뮬레이션·예측용 디지털 트윈은 운영 정책·수요 변화의 효과 예측, 23. 시험·형식 검증·벤치마크는 변경 후 동작 확인이라는 목적으로 나누는 것이 분류 원문 정의에 맞아 보인다. | ref-406 | 아니오 | low | 2026-09-25 | — | — |
 
 ### 근거 발췌
 
@@ -93,7 +93,7 @@
 - **f24**: 벤더 주장: reference workflow for combining sensor simulation and synthetic data generation ... verify performance of autonomous systems in industrial digital twins (발행일 미확인, 확인일 기준)
 - **f25**: RAWSim-O·RMFS 결정 규칙 연구는 결정 규칙별 처리량 비교, Coelho 외는 개선안 시험, Agalianos 외는 창고 계획 지원 — 성수기 병목 위치를 직접 보고한 ROP 사례 없음
 - **f26**: Journal of Industrial Information Integration 33, 100462 (2023). 스캔·객체 검출로 공장 레이아웃 모델링과 객체 인식을 자동화해 계획 입력으로 제공
-- **f27**: 계획 입력용 자동 생성(ref-241)과, 주석한 평면도에서 시뮬레이션 월드를 만드는 Open-RMF 흐름(ref-667)이 모두 실험용 모델의 초기값 생성 단계
+- **f27**: 계획 입력용 자동 생성(ref-241)과, 주석한 평면도에서 시뮬레이션 월드를 만드는 Open-RMF 흐름(ref-406)이 모두 실험용 모델의 초기값 생성 단계
 - **f28**: 문·승강기 플러그인이 /door_requests·/lift_requests 에 응답하고 slotcar 가 경로 요청을 받음 — 오케스트레이션 계층의 요청이 시뮬레이션 대상
 - **f29**: Mega 블루프린트는 센서 시뮬레이션·합성 데이터를 제공 기능으로 둠; 물류·공급망 DT 틀은 수요·교란 시나리오를 상위 계획 입력으로 다룸(분류 원문 9장 경계 적용)
 - **f30**: RMF 문서: scenario repeatability, edge case exploration, long-running validation before facility deployment
@@ -106,13 +106,13 @@
 | ref-660 | NIST | Digital Twins for Advanced Manufacturing | 미확인 | 정부·연구기관 | medium | 2026-09-25 | https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing | 예 |
 | ref-661 | ISO | ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition | 2026 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/87426.html | 예 |
 | ref-662 | 머니투데이 | 설계부터 생산까지 데이터 연결…제조 디지털 트윈 국제표준 발간 | 2026-07-28 | 기사 | medium | 2026-09-25 | https://www.mt.co.kr/economy/2026/07/28/2026072809211448284 | 예 |
-| ref-663 | Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W. | Digital Twin in manufacturing: A categorical literature review and classification | 2018 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/pii/S2405896318316021 | 예 |
+| ref-291 | Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W. | Digital Twin in manufacturing: A categorical literature review and classification | 2018 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/pii/S2405896318316021 | 예 |
 | ref-664 | Agalianos, K., Ponis, S. T., Aretoulaki, E., & Plakas, G. | Discrete Event Simulation and Digital Twins: Review and Challenges for Logistics | 2020 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/pii/S2351978920320990 | 예 |
 | ref-665 | Le, T. V., & Fan, R. | Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges | 2024 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/abs/pii/S0360835223007921 | 예 |
 | ref-666 | Coelho, F., Relvas, S., & Barbosa-Póvoa, A. P. | Simulation-based decision support tool for in-house logistics: the basis for a digital twin | 2021 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/abs/pii/S0360835220307646 | 예 |
-| ref-667 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/simulation.html | 아니오 |
+| ref-406 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/simulation.html | 아니오 |
 | ref-668 | Open Robotics (open-rmf) | rmf_simulation — README | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_simulation | 아니오 |
-| ref-669 | Merschformann, M. (merschformann GitHub) | RAWSim-O — A simulation framework for Robotic Mobile Fulfillment Systems (README) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/merschformann/RAWSim-O | 아니오 |
+| ref-101 | Merschformann, M. (merschformann GitHub) | RAWSim-O — A simulation framework for Robotic Mobile Fulfillment Systems (README) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/merschformann/RAWSim-O | 아니오 |
 | ref-670 | OpenFactoryTwin (Fraunhofer ISST, HSBI, FH Dortmund) | ofact — Simulation-based Digital Twin for Production and Logistics Material Flows (README) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/OpenFactoryTwin/ofact | 아니오 |
 | ref-671 | Sargent, R. G. | Verification and validation of simulation models (Proceedings of the 40th Conference on Winter Simulation) | 2008 | 논문 | medium | 2026-09-25 | https://dl.acm.org/doi/abs/10.5555/1516744.1516780 | 예 |
 | ref-672 | CJ대한통운 | 가상세계 쌍둥이 창고로 물류 예측... CJ대한통운, 디지털 트윈 구축 (보도자료) | 2021-11 | 벤더 문서 | low | 2026-09-25 | https://www.cjlogistics.com/ko/newsroom/news/NR_00000905 | 예 |
@@ -128,13 +128,13 @@
 - **ref-660**: 원문 미열람. 제조 디지털 트윈을 신뢰·상호운용 가능하게 하는 측정 과학과 표준 개발을 목표로 하는 NIST 과제 페이지.
 - **ref-661**: 원문 미열람. 여러 디지털 트윈을 목적에 따라 결합하는 방법을 다루는 ISO 23247 제6부 카탈로그 페이지.
 - **ref-662**: 원문 미열람. 국가기술표준원이 한국 제안 ISO 23247-5(디지털 쓰레드)·23247-6(디지털 트윈 결합) 발간을 알린 내용을 보도.
-- **ref-663**: 원문 미열람. IFAC-PapersOnLine 게재. 디지털 모델·디지털 섀도·디지털 트윈을 구분해 제조 분야 문헌을 분류하고 연구 공백 7가지를 제시.
+- **ref-291**: 원문 미열람. IFAC-PapersOnLine 게재. 디지털 모델·디지털 섀도·디지털 트윈을 구분해 제조 분야 문헌을 분류하고 연구 공백 7가지를 제시.
 - **ref-664**: 원문 미열람. Procedia Manufacturing 51. 물류에서 DES 와 디지털 트윈 통합 문헌을 검토하고 추세·과제를 정리.
 - **ref-665**: 원문 미열람. Computers & Industrial Engineering 187. 물류·공급망 디지털 트윈 문헌 검토와 개념 틀 제안, 실데이터 검증 논문이 소수라고 보고.
 - **ref-666**: 원문 미열람. Computers & Industrial Engineering 153. Simio 기반 사내 물류 시뮬레이션 의사결정 지원 도구를 디지털 트윈의 기초로 제안.
-- **ref-667**: Open-RMF 시뮬레이션 장: Gazebo·Ignition 연동, building_map_generator 의 월드·주행 그래프 생성, slotcar·문·승강기·작업셀·군중 플러그인.
+- **ref-406**: Open-RMF 시뮬레이션 장: Gazebo·Ignition 연동, building_map_generator 의 월드·주행 그래프 생성, slotcar·문·승강기·작업셀·군중 플러그인.
 - **ref-668**: Open-RMF 시뮬레이션 플러그인 저장소: 문·승강기·군중·충전 전환·slotcar·읽기 전용·텔레포트 디스펜서/인제스터, 지원 Gazebo 판.
-- **ref-669**: RMFS 이산 사건 시뮬레이션 프레임워크 README: 결정 문제별 방법 확장, 2D·3D 화면·히트맵, C#, GPL v3.
+- **ref-101**: RMFS 이산 사건 시뮬레이션 프레임워크 README: 결정 문제별 방법 확장, 2D·3D 화면·히트맵, C#, GPL v3.
 - **ref-670**: 생산·물류용 오픈소스 디지털 트윈 프레임워크 README: 상태 모델, 에이전트 제어, 데이터 통합, 시뮬레이션, 계획 서비스, 환경 인터페이스. Apache 2.0.
 - **ref-671**: 원문 미열람. 시뮬레이션 모델의 개념 모델 타당성·모델 검증·운영 타당성·데이터 타당성과 검증 절차·인가를 다룬 WSC 튜토리얼 논문.
 - **ref-672**: 원문 미열람. 물류센터 디지털 트윈 구축 계획과 기대 효과를 알린 기업 보도자료(국내 사례).
@@ -186,4 +186,4 @@
 - 범위 경계 위반 의심:
     - f14·f29: 센서 인식·로컬 주행·센서 시뮬레이션과 수요예측은 분류 원문 9장 외부 연계 영역이므로 '연계 대상:'으로 표시
     - f24: 물리 AI 학습·센서 시뮬레이션은 ROP 직접 범위가 아님(벤더 주장으로만 서술)
-- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 ref-667(Open-RMF 시뮬레이션 장, 미러 목록 경로), ref-668(rmf_simulation), ref-669(RAWSim-O), ref-670(OFacT) 4건이며 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 23회/30, 신규 출처 15건/15(ref-659~ref-673, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 23247-1 정의 원문, 물류 디지털 트윈 대규모 사례(Ashrafian·Pedersen 2023), 데이터 기반 시뮬레이션 모델 자동 생성 검토 논문은 출처로 넣지 않음. 재사용 4건: ref-398·ref-402·ref-267(2026-09-25-55 브리프 값 사용), ref-241(입력에 참고문헌 목록 값이 없어 검색으로 확인한 값으로 기재). 트랙 반영 제안 1건(2026-09-25-19, floorplan-recognition 단계 1, 8절)은 f26(사실)·f27(추정)으로 조사해 반영을 제안. 교차 확인은 f2 1건뿐. 한국 자료: KS X ISO 23247(ref-659), 국표원 발표 기사(ref-662), 국내 연구(ref-402), CJ대한통운 보도자료(ref-672, 벤더 주장). 한국어 검색에서 나온 업체 블로그는 출처로 쓰지 않음. 27. AI·학습·적응과 모델 운영 연결은 f23·f24 벤더 주장뿐이라 교차 규칙 대상(5·21·6·13·19)에 직접 해당하는 근거는 없음. 정정 요청 없음, 대상 영역 열린 질문 0건, 해결 제안 없음.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 ref-406(Open-RMF 시뮬레이션 장, 미러 목록 경로), ref-668(rmf_simulation), ref-101(RAWSim-O), ref-670(OFacT) 4건이며 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 23회/30, 신규 출처 15건/15(ref-659~ref-673, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 23247-1 정의 원문, 물류 디지털 트윈 대규모 사례(Ashrafian·Pedersen 2023), 데이터 기반 시뮬레이션 모델 자동 생성 검토 논문은 출처로 넣지 않음. 재사용 4건: ref-398·ref-402·ref-267(2026-09-25-55 브리프 값 사용), ref-241(입력에 참고문헌 목록 값이 없어 검색으로 확인한 값으로 기재). 트랙 반영 제안 1건(2026-09-25-19, floorplan-recognition 단계 1, 8절)은 f26(사실)·f27(추정)으로 조사해 반영을 제안. 교차 확인은 f2 1건뿐. 한국 자료: KS X ISO 23247(ref-659), 국표원 발표 기사(ref-662), 국내 연구(ref-402), CJ대한통운 보도자료(ref-672, 벤더 주장). 한국어 검색에서 나온 업체 블로그는 출처로 쓰지 않음. 27. AI·학습·적응과 모델 운영 연결은 f23·f24 벤더 주장뿐이라 교차 규칙 대상(5·21·6·13·19)에 직접 해당하는 근거는 없음. 정정 요청 없음, 대상 영역 열린 질문 0건, 해결 제안 없음.

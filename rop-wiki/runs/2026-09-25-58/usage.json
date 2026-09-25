@@ -15,14 +15,45 @@
         "claude-haiku-4-5-20251001",
         "claude-opus-5-5"
       ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 6,
+      "cache_creation_input_tokens": 336418,
+      "cache_read_input_tokens": 883309,
+      "output_tokens": 16578,
+      "cost_usd": 3.2985,
+      "seconds": 165.1,
+      "num_turns": 11,
+      "models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 253777,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 61510,
+      "cost_usd": 3.273,
+      "seconds": 458.6,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 18,
-    "cache_creation_input_tokens": 325569,
-    "cache_read_input_tokens": 3128693,
-    "output_tokens": 37348,
-    "cost_usd": 4.2844,
-    "calls": 1
+    "input_tokens": 26,
+    "cache_creation_input_tokens": 915764,
+    "cache_read_input_tokens": 4075022,
+    "output_tokens": 115436,
+    "cost_usd": 10.8559,
+    "calls": 3
   }
 }
