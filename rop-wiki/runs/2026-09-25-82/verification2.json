@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-09-25-82",
+  "stage": "second",
+  "verdict": "수정 후 재검증",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "아이디어 3. 건축 도면 자동 인식 6절: 이 절 첫 문단의 '검증 절차(현장 모델링 시간 단축 측정)는 q5-02 이후 실행이 채운다'와 '평가 지표' 소절 끝의 '검증 절차(현장 모델링 시간 단축 측정, q5-02)와 가설 판정(q5-03)은 아직 조사하지 않았고' 문장이 이번에 append 로 더한 '검증 절차: 현장 모델링 시간 단축 측정' 소절과 모순된다(스토리텔러도 additional_research_requests 에서 지적)"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "docs/ideas/floorplan-recognition.md 6. 검증 방법: patches 의 action 을 append 가 아니라 replace 로 바꿔 절 전체를 보낸다. 첫 문단의 '검증 절차(현장 모델링 시간 단축 측정)는 q5-02 이후 실행이 채운다'를 '검증 절차 소절은 단계 5의 q5-02 답(실행 2026-09-25-82)의 요약이다' 취지로 고치고, '평가 지표' 소절 끝 문장에서 '검증 절차(현장 모델링 시간 단축 측정, q5-02)와'를 빼 '가설 판정(q5-03)은 아직 조사하지 않았고'만 남긴다 — append 로 남은 두 문장이 새 소절과 모순되기 때문이다. 새 소절 첫 문단의 '이 절 첫 문단과 ... 뒤 실행으로 미룬 검증 절차를 이 소절이 채운다' 문장은 모순이 사라지므로 삭제한다. 나머지 절 내용(검증된 문장·각주·태그)은 한 글자도 바꾸지 않는다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 수정 후 재검증. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 17건, 미확인 2건(f7, f10), 교차 확인 0건. 강등: f2 사실 → 추정, f7 사실 → 추정, f10 사실 → 추정(수치 삭제). f15는 전제를 고쳐 추정 유지. 원문 미열람 출처: ref-763~ref-767, ref-769~ref-762, ref-217, ref-105. 원문을 연 출처는 ref-768(A-Scan2BIM README)이다. 주의: q5-02 측정 구성(시간·수정·결과 품질의 세 축, 편집 수와 시간의 동시 기록, KLM 보조 추정, ROP 측정 경계)은 이 위키의 종합([추정])이며 물류 로봇 설정 작업을 같은 조건으로 잰 사례는 없다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 없음(공간 그래프 스키마 초안 v1.2 유지). 단계 완료 조건: 미충족(부족: 가설 판정표 q5-03, 사용자에게 제안하는 실험 계획). 단계 전환: 미승인(막힌 질문 q5-03~q5-10, q5-12, q5-13 열림). / 2차 수정 후 재검증. 드리프트 없음, 1차 수정 지시 15건 이행 확인(f2·f7·f10 강등, f1·f10 수치 제외, f5 각주 분리, f8 연도 제외, f12 의견 주체, 원문 미열람 표기, q5-02 소제목·답함, q5-11 폐기, 6절 전환 표기, 세부영역 반영 제안만), [분류원문] 보존, 섹션 순서 준수, 링크 유효. 수정 1건: 아이디어 페이지 6절의 append 로 남은 '검증 절차 미조사' 문장 두 개가 새 소절과 모순된다. pipeline 담당 요청: 단계 5 페이지 H1 아래 상태 줄(열린 질문 9건·답한 질문 1건 → 10건·2건)과 트랙 개요 상태 줄의 현재 단계(단계 4 → 단계 5. 검증 방법과 가설 판정)는 H2 절 밖이라 차등 갱신 patches 로 고칠 수 없으므로 퍼블리셔가 갱신하도록 처리가 필요하다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
