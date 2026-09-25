@@ -1845,7 +1845,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 <!-- 신규 작성은 "신규 작성". 갱신마다 한 행을 위에 추가하고 프런트매터 version 을 올린다. 정정 요청을 반영했으면 corr-NNN id 를 적는다. -->
 ```
 
-### docs/references/index.md (요약: 이번 대상 페이지가 인용한 192건 / 전체 729건. 목록에 없는 출처는 새 id 로 적는다 — 같은 URL 이 이미 있으면 퍼블리셔가 기존 id 로 합친다)
+### docs/references/index.md (요약: 이번 대상 페이지가 인용한 192건 / 전체 747건. 목록에 없는 출처는 새 id 로 적는다 — 같은 URL 이 이미 있으면 퍼블리셔가 기존 id 로 합친다)
 
 ```markdown
 | id | 기관 | 제목 | 발행일 | URL | 접근일 | 원문 열람 |
@@ -2044,7 +2044,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 | ref-729 | HKUST Aerial Robotics Group (HKUST-Aerial-Robotics GitHub) | SLABIM — README (SLABIM: A SLAM-BIM Coupled Dataset in HKUST Main Building) | 2025-01-28 | https://github.com/HKUST-Aerial-Robotics/SLABIM | 2026-09-25 | 예 |
 ```
 
-### docs/glossary/index.md (요약: 용어 186개, slug: 한국어 (영어). 정의는 docs/glossary/<slug>.md)
+### docs/glossary/index.md (요약: 용어 192개, slug: 한국어 (영어). 정의는 docs/glossary/<slug>.md)
 
 ```markdown
 - action-dependency-graph: 행동 의존 그래프 (Action Dependency Graph (ADG))
@@ -2140,6 +2140,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - irreducible-infeasible-subset: 기약 불능 제약 집합 (Irreducible Infeasible Subset (IIS))
 - isa-95: 기업–제어 시스템 통합 표준 (ISA-95 Enterprise-Control System Integration)
 - job-shop-scheduling-problem: 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP))
+- joint-goal-accuracy: 결합 목표 정확도 (Joint Goal Accuracy (JGA))
 - lane-closure: 차선 폐쇄 (Lane Closure)
 - layout-interchange-format: 레이아웃 교환 형식 (Layout Interchange Format (LIF))
 - lifelong-mapf: 지속형 다중 에이전트 경로 찾기 (Lifelong Multi-Agent Path Finding (Lifelong MAPF))
@@ -2170,11 +2171,13 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - open-rmf: 오픈 RMF (Open-RMF (Open Robotics Middleware Framework))
 - operating-mode: 운용 모드 (Operating Mode (VDA 5050 operatingMode))
 - operating-zone: 운용 구역 (Operating Zone (ISO 3691-4))
+- optimality-gap: 최적성 간격 (Optimality Gap)
 - order-batching: 주문 배치 (Order Batching)
 - over-the-air-update: 무선 업데이트 (Over-the-Air Update (OTA))
 - overall-equipment-effectiveness: 종합설비효율 (Overall Equipment Effectiveness (OEE))
 - panoptic-quality: 파놉틱 품질 (Panoptic Quality (PQ))
 - panoptic-symbol-spotting: 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting)
+- pass-k: pass^k 지표 (pass^k)
 - pddl: 계획 도메인 정의 언어 (Planning Domain Definition Language (PDDL))
 - perfect-order-fulfillment: 완전 주문 이행률 (Perfect Order Fulfillment)
 - plug-and-produce: 플러그 앤 프로듀스 (Plug and Produce)
@@ -2185,6 +2188,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - put-wall: 풋월 (Put Wall)
 - raster-to-vector-conversion: 래스터–벡터 변환 (Raster-to-Vector Conversion)
 - read-point: 판독 지점 (Read Point (EPCIS readPoint))
+- reality-gap: 현실 격차 (Reality Gap (Sim-to-Real Gap))
 - regression-testing: 회귀 시험 (Regression Testing)
 - release-zone: 해제 구역 (Release Zone)
 - required-and-provided-capability: 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability)
@@ -2197,6 +2201,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - safe-interval-path-planning: 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP))
 - saga: 사가 (Saga)
 - scan-vs-bim: 스캔 대 BIM 비교 (Scan-vs-BIM)
+- schedule-stability: 일정 안정성 (Schedule Stability)
 - scor: 공급망 운영 참조 모델 (Supply Chain Operations Reference (SCOR))
 - semantic-id: 의미 식별자 (Semantic ID (semanticId))
 - semantic-versioning: 의미적 버전 관리 (Semantic Versioning (SemVer))
@@ -2222,6 +2227,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - time-window: 시간창 (Time Window)
 - topological-map: 위상 지도 (Topological Map)
 - traversability: 통과 가능성 (Traversability)
+- user-simulator: 사용자 시뮬레이터 (User Simulator)
 - vda-5050-cancel-order: 주문 취소 즉시 동작 (cancelOrder (VDA 5050 instant action))
 - vda-5050-factsheet: VDA 5050 팩트시트 (VDA 5050 factsheet)
 - vda-5050: VDA 5050 (VDA 5050)
@@ -2235,7 +2241,7 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - zones-and-conduits: 보안 구역과 도관 (Zones and Conduits (IEC 62443))
 ```
 
-### docs/open-questions.md (요약: 대상 영역 [3, 5, 6, 8, 10, 15, 16, 21, 22, 23, 24, 27, 28] 에 걸린 75건 / 전체 116건)
+### docs/open-questions.md (요약: 대상 영역 [3, 5, 6, 8, 10, 15, 16, 21, 22, 23, 24, 27, 28] 에 걸린 76건 / 전체 117건)
 
 ```markdown
 - oq-004 [열림] IEEE 1872 계열 로봇 온톨로지 표준이나 AAS 능력 서브모델을 KS로 부합화했거나 국내 로봇 관제 사업에 적용한 사례가 있는가? (영역 28, 5)
@@ -2313,9 +2319,10 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - oq-113 [열림] ROP 가 VDA 5050 updateCertificate 같은 보안 명령으로 제조사 로봇의 인증서를 교체할 때, 교체 시점·대상 승인과 실패 시 되돌림 책임은 ROP 사업자·제조사·현장 IT 조직 중 누가 지는가? (영역 26, 9, 24)
 - oq-115 [열림] 제조사가 자사 로봇 지도(SLAM 지도)의 판을 바꿀 때 변경 내용과 판 식별자를 ROP 나 상위 관제에 알리는 계약·인터페이스 관행이나 공개 사례가 있는가? (영역 24, 28)
 - oq-116 [열림] ISO 18646-2:2024 의 지도 작성 정확도 시험은 무엇을 어떤 기준점과 절차로 측정하며, KS 로 부합화되어 국내 물류 로봇 시험에 쓰이는가? (영역 23, 6)
+- oq-117 [열림] 국내 물류센터 로봇 관제 도입에서 디지털 트윈·가상 로봇으로 관제 소프트웨어를 사전 검증한 결과를 실제 시운전 결과와 비교해 공개한 사례가 있는가? (관련 기존 질문: oq-094) (영역 22, 21)
 ```
 
-### docs/standards/index.md (요약: 200개 — 이름 · 종류 · 발행 기관)
+### docs/standards/index.md (요약: 204개 — 이름 · 종류 · 발행 기관)
 
 ```markdown
 - SCOR (SCOR Digital Standard) · 표준 · ASCM(Association for Supply Chain Management)
@@ -2518,6 +2525,10 @@ version: {{version}}                        # 정수. 신규 1, 갱신마다 +1
 - ASTM F3244 Standard Test Method for Navigation: Defined Area · ASTM International · 표준
 - SSIG (평면도 구조 유사도 지표) · van Engelenburg, C. 외 (caspervanengelenburg GitHub) · 오픈소스
 - SLABIM (SLAM–BIM 결합 데이터셋) · HKUST Aerial Robotics Group · 오픈소스
+- vda5050-sim (VDA 5050 가상 로봇 플릿 시뮬레이터) · gpue (vda5050-sim GitHub, 개인 저장소) · 오픈소스
+- vda-5050-lib.js (가상 AGV 어댑터 포함 VDA 5050 라이브러리) · coatyio · 오픈소스
+- τ-bench (도구–에이전트–사용자 상호작용 벤치마크) · sierra-research · 평가 프로그램
+- SafeAgentBench (LLM 체화 에이전트 안전 계획 벤치마크) · SafeAgentBench 저자(shengyin1224 공식 저장소) · 평가 프로그램
 ```
 
 ### runs/2026-09-25-82/docs_tree.txt
@@ -2662,6 +2673,7 @@ glossary/irdi.md
 glossary/irreducible-infeasible-subset.md
 glossary/isa-95.md
 glossary/job-shop-scheduling-problem.md
+glossary/joint-goal-accuracy.md
 glossary/lane-closure.md
 glossary/layout-interchange-format.md
 glossary/lifelong-mapf.md
@@ -2692,11 +2704,13 @@ glossary/ocel.md
 glossary/open-rmf.md
 glossary/operating-mode.md
 glossary/operating-zone.md
+glossary/optimality-gap.md
 glossary/order-batching.md
 glossary/over-the-air-update.md
 glossary/overall-equipment-effectiveness.md
 glossary/panoptic-quality.md
 glossary/panoptic-symbol-spotting.md
+glossary/pass-k.md
 glossary/pddl.md
 glossary/perfect-order-fulfillment.md
 glossary/plug-and-produce.md
@@ -2707,6 +2721,7 @@ glossary/process-mining.md
 glossary/put-wall.md
 glossary/raster-to-vector-conversion.md
 glossary/read-point.md
+glossary/reality-gap.md
 glossary/regression-testing.md
 glossary/release-zone.md
 glossary/required-and-provided-capability.md
@@ -2719,6 +2734,7 @@ glossary/runtime-verification.md
 glossary/safe-interval-path-planning.md
 glossary/saga.md
 glossary/scan-vs-bim.md
+glossary/schedule-stability.md
 glossary/scor.md
 glossary/semantic-id.md
 glossary/semantic-versioning.md
@@ -2744,6 +2760,7 @@ glossary/task-decomposition.md
 glossary/time-window.md
 glossary/topological-map.md
 glossary/traversability.md
+glossary/user-simulator.md
 glossary/vda-5050-cancel-order.md
 glossary/vda-5050-factsheet.md
 glossary/vda-5050.md
@@ -3494,6 +3511,24 @@ references/ref-726.md
 references/ref-727.md
 references/ref-728.md
 references/ref-729.md
+references/ref-730.md
+references/ref-731.md
+references/ref-732.md
+references/ref-733.md
+references/ref-734.md
+references/ref-735.md
+references/ref-736.md
+references/ref-737.md
+references/ref-738.md
+references/ref-739.md
+references/ref-740.md
+references/ref-741.md
+references/ref-742.md
+references/ref-743.md
+references/ref-744.md
+references/ref-745.md
+references/ref-746.md
+references/ref-747.md
 standards/index.md
 topics/2026/2026-09-25-area01-s11.md
 topics/2026/2026-09-25-area01-s3.md

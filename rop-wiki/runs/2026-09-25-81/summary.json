@@ -18,7 +18,7 @@
   "pages_created": 0,
   "pages_updated": 0,
   "new_sources": 14,
-  "parked": true,
+  "parked": false,
   "published": false,
   "committed": true,
   "commit": "3221f61",
@@ -39,7 +39,7 @@
   "duration_sec": 1317.0,
   "first_retries": 0,
   "second_retries": 1,
-  "end_state": "보류(runs/parked/)",
+  "end_state": "재투입",
   "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 | run 2026-09-25-81",
   "notes": [],
   "counts": {
@@ -129,5 +129,6 @@
   },
   "fetched_sources": 4,
   "cross_checked_findings": 0,
-  "park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+  "resumed_at": "2026-09-25 22:09:10 KST",
+  "resumed_from_park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
 }

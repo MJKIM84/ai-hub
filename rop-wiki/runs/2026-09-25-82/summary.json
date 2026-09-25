@@ -18,7 +18,7 @@
   "pages_created": 0,
   "pages_updated": 0,
   "new_sources": 15,
-  "parked": true,
+  "parked": false,
   "published": false,
   "committed": true,
   "commit": "799d77c",
@@ -39,7 +39,7 @@
   "duration_sec": 575.0,
   "first_retries": 0,
   "second_retries": 0,
-  "end_state": "보류(runs/parked/)",
+  "end_state": "재투입",
   "changelog_entry": null,
   "notes": [],
   "counts": {
@@ -110,5 +110,6 @@
   "format_check": null,
   "fetched_sources": 1,
   "cross_checked_findings": 0,
-  "park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+  "resumed_at": "2026-09-25 22:09:30 KST",
+  "resumed_from_park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
 }
