@@ -64,7 +64,7 @@
       "source_ids": [
         "ref-047",
         "ref-048",
-        "ref-930"
+        "ref-499"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -78,7 +78,7 @@
       "claim": "Open-RMF 워크셀 결과 메시지는 요청 단위의 성공·실패 상태만 담고 넘겨받은 화물의 개별 식별자나 실측 수량 필드가 없어, 인수 확인의 근거는 워크셀 자체 판단에 기대며 ROP 가 화물 식별·적재 상태 같은 별도 확인과 결합해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-930",
+        "ref-499",
         "ref-047",
         "ref-048"
       ],
@@ -122,8 +122,8 @@
       "claim": "반도체 업종의 SEMI E84 는 자동 반송 시스템(AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정하며, 장비가 인계 준비가 되었는지, 어느 로드포트를 쓸지, 인계가 진행 중인지·완료되었는지를 신호로 주고받는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-918",
-        "ref-919"
+        "ref-202",
+        "ref-203"
       ],
       "cross_checked": true,
       "confidence": "medium",
@@ -138,8 +138,8 @@
       "claim": "SEMI E84 처럼 준비–진행–완료를 양쪽이 단계별로 확인하는 인계 신호 구조는, VDA 5050 이 비워 둔 이동로봇–작업대·로봇팔 인계 확인의 상태 모델을 ROP 가 정할 때 참고할 수 있을 것으로 보이나, 물류 업종에서 같은 역할을 하는 제조사 중립 공개 규격은 이번 조사에서 확인하지 못했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-918",
-        "ref-919",
+        "ref-202",
+        "ref-203",
         "ref-031"
       ],
       "cross_checked": false,
@@ -169,7 +169,7 @@
       "claim": "ASTM F3499-21 은 무인운반차·자율이동로봇(A-UGV)이 전역 위치나 도크 같은 현장 설비 기준 위치에 정지할 때의 위치 반복성과, 포크 같은 적재 이송 장치의 높이 제어 반복성을 확인하는 시험 방법이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-920"
+        "ref-204"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -184,8 +184,8 @@
       "claim": "NIST 는 ASTM F45 위원회에서 이동로봇·모바일 매니퓰레이터 시험 방법 개발에 참여하며, 매니퓰레이터에 단 카메라·센서로 기준 표식을 측정해 모바일 매니퓰레이터의 위치 불확도를 재는 재구성형 시험 기물(RMMA)을 설계했고 그 측정 불확도가 2 mm 수준이라고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-921",
-        "ref-922"
+        "ref-205",
+        "ref-206"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -229,7 +229,7 @@
       "claim": "Coltin·Veloso(ICRA 2014)는 여러 이동로봇이 서로 물건을 옮겨 주는 전달(transfer)을 허용해 픽업·배송 계획을 개선하는 온라인 계획 알고리즘을 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-924"
+        "ref-208"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -244,7 +244,7 @@
       "claim": "Zang 외(2026)는 구역에 묶인 플릿들이 도크 1개와 유한 버퍼를 가진 인계 스테이션으로 화물을 주고받는 지속형 다중 에이전트 픽업·배송 문제를 정식화하고, 공유 도크 예약 달력과 버퍼 점유 예측으로 경로를 승인하는 제어기(HARR)가 시뮬레이션에서 고정 도크 비교안보다 처리량을 최대 77% 높이고 적체를 92% 줄였다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-925"
+        "ref-209"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -274,7 +274,7 @@
       "claim": "Tuci 외(2018)는 로봇 한 대로 다루기에 너무 크거나 무거운 물체를 여러 로봇이 행동을 조율해 목적지까지 옮기는 협동 운반(cooperative object transport)을 검토하고, 운반·조율·제어 전략이 다양하게 제안되어 왔다고 정리했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-923"
+        "ref-207"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -289,7 +289,7 @@
       "claim": "Singh 외(2024)는 로봇 플릿의 협동 인지를 여러 에이전트가 센서 정보를 공유·융합해 환경을 더 넓게 이해하고 판단을 돕는 능력으로 정의하고 관련 연구를 체계적으로 검토했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-928"
+        "ref-497"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -304,7 +304,7 @@
       "claim": "ANSI/A3 R15.08-2-2023 은 산업용 이동로봇(IMR)과 그 플릿을 현장에 통합·배치할 때의 안전 요구사항을 정하며, AMR·AGV 플랫폼에 매니퓰레이터를 부착한 IMR 유형 C(모바일 매니퓰레이터)를 다룬다.",
       "tag": "사실",
       "source_ids": [
-        "ref-926"
+        "ref-210"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -319,7 +319,7 @@
       "claim": "국내에는 로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준 KS B ISO 10218-2(로봇 및 로봇 장치 — 산업용 로봇의 안전에 관한 요구사항 — 제2부: 로봇 시스템 및 통합)가 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-927"
+        "ref-211"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -362,7 +362,7 @@
       "claim": "국내에서는 유진로봇이 과학기술정보통신부·정보통신기획평가원의 스마트제조혁신기술개발사업으로 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 개발을 추진한다고 보도되었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-929"
+        "ref-498"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -378,9 +378,9 @@
       "tag": "추정",
       "source_ids": [
         "ref-216",
-        "ref-930",
+        "ref-499",
         "ref-031",
-        "ref-920"
+        "ref-204"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -395,10 +395,10 @@
       "claim": "피킹 단계에서 인계가 실패하면(워크셀 결과 FAILED, 도킹 재시도 한도 초과, 동작 FAILED) 인계 재시도·다른 작업대로 재배정·사람 확인 가운데 하나로 넘겨야 하며, 대기 동안 이동로봇과 작업대가 함께 묶여 처리량 손실이 생길 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-930",
+        "ref-499",
         "ref-216",
         "ref-031",
-        "ref-925"
+        "ref-209"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -414,7 +414,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-394",
-        "ref-925"
+        "ref-209"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -447,7 +447,7 @@
       "source_ids": [
         "ref-216",
         "ref-031",
-        "ref-926"
+        "ref-210"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -465,10 +465,10 @@
         "ref-023",
         "ref-044",
         "ref-394",
-        "ref-925",
-        "ref-920",
+        "ref-209",
+        "ref-204",
         "ref-008",
-        "ref-926"
+        "ref-210"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -631,7 +631,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-918",
+      "id": "ref-202",
       "org": "SEMI",
       "title": "E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface",
       "published": null,
@@ -646,7 +646,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-919",
+      "id": "ref-203",
       "org": "PEER Group",
       "title": "SEMI E84: Carrier Handoff",
       "published": null,
@@ -661,7 +661,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-920",
+      "id": "ref-204",
       "org": "ASTM International",
       "title": "Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)",
       "published": "2021",
@@ -676,7 +676,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-921",
+      "id": "ref-205",
       "org": "NIST",
       "title": "Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA)",
       "published": null,
@@ -691,7 +691,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-922",
+      "id": "ref-206",
       "org": "Bostelman, R. 외(NIST)",
       "title": "Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development",
       "published": null,
@@ -706,7 +706,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-923",
+      "id": "ref-207",
       "org": "Tuci, E., Alkilabi, M. H. M., & Akanyeti, O.",
       "title": "Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art",
       "published": "2018",
@@ -721,7 +721,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-924",
+      "id": "ref-208",
       "org": "Coltin, B., & Veloso, M.",
       "title": "Online pickup and delivery planning with transfers for mobile robots",
       "published": "2014",
@@ -736,7 +736,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-925",
+      "id": "ref-209",
       "org": "Zang, C. 외",
       "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
       "published": "2026-07",
@@ -751,7 +751,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-926",
+      "id": "ref-210",
       "org": "ANSI / A3(Association for Advancing Automation)",
       "title": "ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s)",
       "published": "2023",
@@ -766,7 +766,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-927",
+      "id": "ref-211",
       "org": "국가표준인증통합정보시스템(KSSN)",
       "title": "KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
       "published": null,
@@ -781,7 +781,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-928",
+      "id": "ref-497",
       "org": "Singh, A., Raut, G., & Choudhary, A.",
       "title": "Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review",
       "published": "2024-03",
@@ -796,7 +796,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-929",
+      "id": "ref-498",
       "org": "다음뉴스 게재 기사(원 언론사 미확인)",
       "title": "유진로봇, 지능형 제조 물류시스템 공개",
       "published": "2025-11-04",
@@ -811,7 +811,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-930",
+      "id": "ref-499",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg",
       "published": null,
@@ -882,7 +882,7 @@
       "f15 처리량·적체 수치는 저자 보고 시뮬레이션 결과",
       "f20 KS B ISO 10218-2 의 판·확인 연도와 이동식 로봇 적용 조항 미확인",
       "f23 국책과제 1차 출처(공고·과제 정보) 미확인, 기사 원 언론사 미확인",
-      "ref-922 발행연도 미확인",
+      "ref-206 발행연도 미확인",
       "물류 업종의 이동로봇–컨베이어 제조사 중립 인계 규격은 찾지 못함(oq-042 미해결)",
       "공동 운반(협동 운반)의 물류센터 적용 사례는 찾지 못함"
     ],
@@ -895,6 +895,6 @@
       "queries": 21,
       "sources": 13
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-008(ARIAC scenario.rst)·ref-023(workcells)·ref-031(VDA 5050 main)·ref-044(CBV.ttl)·ref-047·ref-048(디스펜서 요청 메시지)·ref-216(nav2_docking README), 신규 ref-930(DispenserResult.msg). 그 밖의 신규 12건과 재사용 ref-007·ref-360·ref-394 는 원문 미열람(신뢰도 상한 medium). 검색 21회/30(영어 13, 한국어 8), 신규 출처 13건/15(ref-918~ref-930, 예약 구간 안), 재사용 10건. 교차 확인 1건(f7). 입력의 정정 요청 없음. 한국 자료: KS B ISO 10218-2(ref-927), 유진로봇 국책과제 기사(ref-929); 국내 학술 논문으로 이동로봇–로봇팔 인계 확인을 다룬 것은 찾지 못했다. oq-042 는 f6·f7·f8 로 일부 답했으나(VDA 5050 은 범위 밖, 반도체 E84 존재) 물류 업종 중립 규격을 찾지 못해 해결 제안하지 않았다. oq-006 은 f21·f22 로 CBV 정의를 보강했을 뿐 해결하지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 은 내지 않았다(f16 의 LLM 은 계획용이며 인계 신호 방식만 인용). 8. 실시간 세계 상태·데이터 일관성(현재 인계 상태 판정)과 22. 시뮬레이션·예측용 디지털 트윈(ARIAC 같은 시뮬레이션 평가)은 섞지 않고 ARIAC 는 23. 시험·형식 검증·벤치마크 쪽으로 연결했다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-008(ARIAC scenario.rst)·ref-023(workcells)·ref-031(VDA 5050 main)·ref-044(CBV.ttl)·ref-047·ref-048(디스펜서 요청 메시지)·ref-216(nav2_docking README), 신규 ref-499(DispenserResult.msg). 그 밖의 신규 12건과 재사용 ref-007·ref-360·ref-394 는 원문 미열람(신뢰도 상한 medium). 검색 21회/30(영어 13, 한국어 8), 신규 출처 13건/15(ref-202~ref-499, 예약 구간 안), 재사용 10건. 교차 확인 1건(f7). 입력의 정정 요청 없음. 한국 자료: KS B ISO 10218-2(ref-211), 유진로봇 국책과제 기사(ref-498); 국내 학술 논문으로 이동로봇–로봇팔 인계 확인을 다룬 것은 찾지 못했다. oq-042 는 f6·f7·f8 로 일부 답했으나(VDA 5050 은 범위 밖, 반도체 E84 존재) 물류 업종 중립 규격을 찾지 못해 해결 제안하지 않았다. oq-006 은 f21·f22 로 CBV 정의를 보강했을 뿐 해결하지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 은 내지 않았다(f16 의 LLM 은 계획용이며 인계 신호 방식만 인용). 8. 실시간 세계 상태·데이터 일관성(현재 인계 상태 판정)과 22. 시뮬레이션·예측용 디지털 트윈(ARIAC 같은 시뮬레이션 평가)은 섞지 않고 ARIAC 는 23. 시험·형식 검증·벤치마크 쪽으로 연결했다."
   }
 }

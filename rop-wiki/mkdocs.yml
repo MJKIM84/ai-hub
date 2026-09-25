@@ -155,6 +155,12 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 17. 로봇 간 협업·물리적 인계 — 대표 연구와 자료: topics/2026/2026-09-25-area17-s8.md
+      - 17. 로봇 간 협업·물리적 인계 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area17-s7.md
+      - 17. 로봇 간 협업·물리적 인계 — 대표 접근법과 기술: topics/2026/2026-09-25-area17-s6.md
+      - 17. 로봇 간 협업·물리적 인계 — 핵심 개념과 용어: topics/2026/2026-09-25-area17-s4.md
+      - 17. 로봇 간 협업·물리적 인계 — 열린 질문: topics/2026/2026-09-25-area17-s11.md
+      - 17. 로봇 간 협업·물리적 인계 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area17-s10.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료: topics/2026/2026-09-25-area15-s8.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area15-s7.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술: topics/2026/2026-09-25-area15-s6.md
@@ -275,6 +281,7 @@ nav:
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
+    - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
@@ -285,6 +292,7 @@ nav:
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
+    - 스케줄 간 의존 (Cross-schedule Dependency (XD)): glossary/cross-schedule-dependency.md
     - 스킬 (Skill): glossary/skill.md
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
@@ -336,6 +344,8 @@ nav:
     - 행동 의존 그래프 (Action Dependency Graph (ADG)): glossary/action-dependency-graph.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
     - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
+    - 협동 운반 (Cooperative Object Transport): glossary/cooperative-object-transport.md
+    - 협동 인지 (Collaborative Perception): glossary/collaborative-perception.md
     - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
     - 혼합 정수 계획 (Mixed Integer Linear Programming (MILP)): glossary/milp.md
     - 환각 (Hallucination): glossary/hallucination.md
@@ -561,6 +571,17 @@ nav:
     - 'ref-199 — Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding': references/ref-199.md
     - ref-200 — GUIDELINE How to transport ECLASS in the Asset Administration Shell (IDTA ECLASS Semantic Transport, 1.0): references/ref-200.md
     - 'ref-201 — From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation': references/ref-201.md
+    - ref-202 — E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface: references/ref-202.md
+    - 'ref-203 — SEMI E84: Carrier Handoff': references/ref-203.md
+    - ref-204 — Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21): references/ref-204.md
+    - ref-205 — Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA): references/ref-205.md
+    - ref-206 — Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development: references/ref-206.md
+    - 'ref-207 — Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art': references/ref-207.md
+    - ref-208 — Online pickup and delivery planning with transfers for mobile robots: references/ref-208.md
+    - ref-209 — Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations: references/ref-209.md
+    - ? 'ref-210 — ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s)'
+      : references/ref-210.md
+    - 'ref-211 — KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합': references/ref-211.md
     - ref-212 — vdma-lif — schema/lif-schema.json (JSON parsers and models for the VDMA LIF, VDMA 공식 산출물이 아닌 제3자 스키마): references/ref-212.md
     - ref-213 — IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-213.md
     - ref-214 — IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-214.md
@@ -795,6 +816,9 @@ nav:
     - 'ref-434 — ArchCAD-400k: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting — project page': references/ref-434.md
     - ref-435 — Raster Image-Based House-Type Recognition and Three-Dimensional Reconstruction Technology: references/ref-435.md
     - ref-436 — 건설산업 BIM 시행지침 정책정보 상세보기: references/ref-436.md
+    - 'ref-497 — Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review': references/ref-497.md
+    - ref-498 — 유진로봇, 지능형 제조 물류시스템 공개: references/ref-498.md
+    - ref-499 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg: references/ref-499.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

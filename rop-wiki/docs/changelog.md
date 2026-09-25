@@ -36,6 +36,32 @@ version: 1
 | 2026-09-25-45 | 생성 | [docs/references/ref-201.md](references/ref-201.md) | 참고문헌 ref-201 등록: From Capability Models to Automated Planning: An AAS-Native… |
 | 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-42 | 갱신 | [docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정. 2차: 5절 제약 칸의 ASTM F3499-21 서술을 시험 방법의 존재로 고침 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s11.md](topics/2026/2026-09-25-area17-s11.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "11. 열린 질문" 절(1,494자)을 옮겼다 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s8.md](topics/2026/2026-09-25-area17-s8.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "8. 대표 연구와 자료" 절(1,462자)을 옮겼다 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s7.md](topics/2026/2026-09-25-area17-s7.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 25. 안전·위험 관리 링크를 주제 페이지 기준 경로로 고침. 2차: GS1 CBV 행을 어휘 정의만 [사실]로 쓰고 인계 이벤트 값은 미정(oq-006)으로 고침 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s4.md](topics/2026/2026-09-25-area17-s4.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "4. 핵심 개념과 용어" 절(1,232자)을 옮겼다 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s6.md](topics/2026/2026-09-25-area17-s6.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "6. 대표 접근법과 기술" 절(1,226자)을 옮겼다 |
+| 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s10.md](topics/2026/2026-09-25-area17-s10.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(647자)을 옮겼다. 세부영역 링크를 주제 페이지 기준 경로로 고침 |
+| 2026-09-25-42 | 요약 | [docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 17. 로봇 간 협업·물리적 인계: 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 |
+| 2026-09-25-42 | 생성 | [docs/references/ref-202.md](references/ref-202.md) | 참고문헌 ref-202 등록: E08400 - SEMI E84 - Specification for Enhanced Carrier Hando… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-203.md](references/ref-203.md) | 참고문헌 ref-203 등록: SEMI E84: Carrier Handoff |
+| 2026-09-25-42 | 생성 | [docs/references/ref-204.md](references/ref-204.md) | 참고문헌 ref-204 등록: Standard Test Method for Confirming the Docking Performance… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-205.md](references/ref-205.md) | 참고문헌 ref-205 등록: Design and Application of the Reconfigurable Mobile Manipula… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-206.md](references/ref-206.md) | 참고문헌 ref-206 등록: Mobile Robot and Mobile Manipulator Research Towards ASTM St… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-207.md](references/ref-207.md) | 참고문헌 ref-207 등록: Cooperative Object Transport in Multi-Robot Systems: A Revie… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-208.md](references/ref-208.md) | 참고문헌 ref-208 등록: Online pickup and delivery planning with transfers for mobil… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-209.md](references/ref-209.md) | 참고문헌 ref-209 등록: Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Lim… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-210.md](references/ref-210.md) | 참고문헌 ref-210 등록: ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Re… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-211.md](references/ref-211.md) | 참고문헌 ref-211 등록: KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-497.md](references/ref-497.md) | 참고문헌 ref-497 등록: Multi-agent Collaborative Perception for Robotic Fleet: A Sy… |
+| 2026-09-25-42 | 생성 | [docs/references/ref-498.md](references/ref-498.md) | 참고문헌 ref-498 등록: 유진로봇, 지능형 제조 물류시스템 공개 |
+| 2026-09-25-42 | 생성 | [docs/references/ref-499.md](references/ref-499.md) | 참고문헌 ref-499 등록: rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.m… |
+| 2026-09-25-42 | 생성 | [docs/glossary/mobile-manipulator.md](glossary/mobile-manipulator.md) | 용어집 항목 모바일 매니퓰레이터 |
+| 2026-09-25-42 | 생성 | [docs/glossary/cooperative-object-transport.md](glossary/cooperative-object-transport.md) | 용어집 항목 협동 운반 |
+| 2026-09-25-42 | 생성 | [docs/glossary/collaborative-perception.md](glossary/collaborative-perception.md) | 용어집 항목 협동 인지 |
+| 2026-09-25-42 | 생성 | [docs/glossary/cross-schedule-dependency.md](glossary/cross-schedule-dependency.md) | 용어집 항목 스케줄 간 의존 |
+| 2026-09-25-42 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 조사) 추가, 결론·불확실성 추가, 후속 질문 q6-06, 완료 조건 판정 미충족·미승인, 세부영역 반영 제안, 출처 5건, 이력 행 추가 |
 | 2026-09-25-41 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절 범위 능력의 의미 식별자 소절에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 항목 미확인, ECLASS 분류 semanticId 방법, 구축자 의견) 추가 |
 | 2026-09-25-41 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(ECLASS·IEC CDD 조사, 이동로봇 범위 능력 항목 미확인), 후속 질문 q6-06, 온톨로지 변경 없음(v0.3) |

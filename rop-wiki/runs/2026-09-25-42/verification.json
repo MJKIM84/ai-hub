@@ -57,7 +57,7 @@
       "supports_claim": true,
       "cross_checked": true,
       "tag_decision": "유지",
-      "note": "원문 미열람(유료 표준). 검증자 검색으로 SEMI 판매 페이지(ref-918)와 PEER Group 해설(ref-919)이 AMHS–장비 로드포트 캐리어 인계용 병렬 I/O 신호(준비·로드포트·진행·완료)를 설명하는 것을 확인했다. 발행 주체가 다르므로 독립 교차로 본다. 개별 신호 이름·순서는 미확인이다. 반도체 업종 규격이므로 업종 차이를 병기해야 한다."
+      "note": "원문 미열람(유료 표준). 검증자 검색으로 SEMI 판매 페이지(ref-202)와 PEER Group 해설(ref-203)이 AMHS–장비 로드포트 캐리어 인계용 병렬 I/O 신호(준비·로드포트·진행·완료)를 설명하는 것을 확인했다. 발행 주체가 다르므로 독립 교차로 본다. 개별 신호 이름·순서는 미확인이다. 반도체 업종 규격이므로 업종 차이를 병기해야 한다."
     },
     {
       "finding_id": "f8",
@@ -65,7 +65,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "[추정] 유지. f6·f7 을 대응시킨 추론이며, 근거 가운데 ref-918·ref-919 는 원문 미열람이다. 브리프가 source_unopened: false 로 적었으나 미열람 출처에 기대고 있다."
+      "note": "[추정] 유지. f6·f7 을 대응시킨 추론이며, 근거 가운데 ref-202·ref-203 는 원문 미열람이다. 브리프가 source_unopened: false 로 적었으나 미열람 출처에 기대고 있다."
     },
     {
       "finding_id": "f9",
@@ -89,7 +89,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "원문 미열람. 검증자 검색으로 NIST RMMA 발행물 페이지가 '2 mm 측정 불확도 내 위치 불확도 측정'을 기술함을 확인했다. 2 mm 는 NIST 자체 보고치이며 독립 교차 확인이 없다. ASTM F45 참여 서술은 ref-922 스니펫 기준이고, ref-922 발행연도는 미확인이다."
+      "note": "원문 미열람. 검증자 검색으로 NIST RMMA 발행물 페이지가 '2 mm 측정 불확도 내 위치 불확도 측정'을 기술함을 확인했다. 2 mm 는 NIST 자체 보고치이며 독립 교차 확인이 없다. ASTM F45 참여 서술은 ref-206 스니펫 기준이고, ref-206 발행연도는 미확인이다."
     },
     {
       "finding_id": "f12",
@@ -193,7 +193,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "[추정] 유지. SCM 질문에 대응한 추론이다. 근거 가운데 ref-920 은 원문 미열람이며, 세 신호 결합 규정은 어느 표준에도 없다."
+      "note": "[추정] 유지. SCM 질문에 대응한 추론이다. 근거 가운데 ref-204 은 원문 미열람이며, 세 신호 결합 규정은 어느 표준에도 없다."
     },
     {
       "finding_id": "f25",
@@ -201,7 +201,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "[추정] 유지. 현장 사례는 미확인이다. ref-925 는 원문 미열람이다."
+      "note": "[추정] 유지. 현장 사례는 미확인이다. ref-209 는 원문 미열람이다."
     },
     {
       "finding_id": "f26",
@@ -225,7 +225,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "[추정] 유지. '연계 대상'으로 표시되어 범위 경계를 지킨다. ref-926 은 원문 미열람이다."
+      "note": "[추정] 유지. '연계 대상'으로 표시되어 범위 경계를 지킨다. ref-210 은 원문 미열람이다."
     },
     {
       "finding_id": "f29",
@@ -274,10 +274,10 @@
     "f23: [사실] → [추정]으로 강등하고 문장을 '유진로봇이 과학기술정보통신부 스마트제조혁신기술개발사업의 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 개발 과제 결과물을 공개했다고 보도되었다(2025-11-04)'로 고친다. '정보통신기획평가원'과 '추진한다'는 뺀다 — 검증 검색에서 기사들은 결과물 공개를 전했고, 전담기관 명칭은 확인되지 않았다. 기사 1건 기반이라는 한계를 병기한다.",
     "f12: '관절 부하 급증' 표현을 '모터 전류 급증(도크 접촉 감지)'으로 고친다 — nav2_docking README 원문은 current spike 를 기준으로 한다.",
     "f15: 77%·92% 수치에는 '저자 보고, 시뮬레이션, 중간 부하 조건, 고정 도크 비교안 대비, 프리프린트'라는 조건을 본문에 함께 적는다 — 단일 출처의 저자 보고치다.",
-    "f11: 2 mm 는 'NIST 보고치'로 명시하고 독립 확인이 없음을 병기한다 — ref-921·ref-922 가 모두 NIST 계열이다.",
+    "f11: 2 mm 는 'NIST 보고치'로 명시하고 독립 확인이 없음을 병기한다 — ref-205·ref-206 가 모두 NIST 계열이다.",
     "f7·f8: SEMI E84 를 서술하는 문장마다 '반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다'를 병기하고, 개별 신호 이름·순서는 '미확인'으로 둔다 — 원문 미열람 유료 표준이다.",
     "f4·f8·f22·f24~f29: [추정] 문장에는 '이 위키의 추론'임을 드러내는 표현(…것으로 보인다)을 유지하고 [사실]로 올리지 않는다.",
-    "원문 미열람 표시: fetched=false 인 출처 ref-007·ref-360·ref-394·ref-918·ref-919·ref-920·ref-921·ref-922·ref-923·ref-924·ref-925·ref-926·ref-927·ref-928·ref-929 의 각주 정의에는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. raw 로 연 ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-930 에는 붙이지 않는다.",
+    "원문 미열람 표시: fetched=false 인 출처 ref-007·ref-360·ref-394·ref-202·ref-203·ref-204·ref-205·ref-206·ref-207·ref-208·ref-209·ref-210·ref-211·ref-497·ref-498 의 각주 정의에는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. raw 로 연 ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-499 에는 붙이지 않는다.",
     "ref-007: 새 각주를 만들지 않고 시드 페이지의 기존 각주 정의 줄을 재사용한다. 다른 기존 참고문헌(ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-360·ref-394)도 references/ref-NNN.md 의 각주 형식 줄을 그대로 쓴다.",
     "인용: ref-031 의 원문 직접 인용은 페이지 전체에서 1회 이하로 두고 나머지는 재서술한다 — 출처당 1회 규칙이다.",
     "f19·f20: 9절·7절에서 안전 표준은 '25. 안전·위험 관리와 연결되는 제약'으로만 서술하고, ROP 가 안전 요구를 이행하는 것처럼 쓰지 않는다. f20 에는 '판·확인 연도와 이동식 로봇 적용 조항 미확인'을 병기한다.",
@@ -285,6 +285,6 @@
     "4절: '디스펜서·인제스터'는 새 용어로 등록하지 않고 기존 용어집 페이지(docs/glossary/dispenser-ingestor.md)에 링크한다. 새 용어 후보 4건(모바일 매니퓰레이터, 협동 운반, 협동 인지, 스케줄 간 의존)은 기존 항목과 충돌하지 않으므로 등록할 수 있다."
   ],
   "confidence": "medium",
-  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only, raw.githubusercontent.com 만 열람)에서 검증됐다. 확인 28건, 미확인 1건(f23), 교차 확인 1건(f7). 강등: f23 사실 → 추정(기사는 과제 결과물 공개를 전하며 전담기관 명시는 미확인). 원문 미열람 출처: ref-007, ref-360, ref-394, ref-918, ref-919, ref-920, ref-921, ref-922, ref-923, ref-924, ref-925, ref-926, ref-927, ref-928, ref-929. 원문 확인 출처: ref-008, ref-023, ref-031, ref-044, ref-047, ref-048, ref-216, ref-930(검증자가 DispenserRequest·DispenserRequestItem·DispenserResult·nav2_docking README·ARIAC scenario.rst·CBV.ttl·VDA 5050 3.0.0 을 직접 대조). 검증 검색 9회(리서치 21회와 합쳐 30/30)로 ref-918·ref-919·ref-920·ref-921·ref-925·ref-926·ref-927·ref-928·ref-929·ref-360 의 실재와 요약 일치를 확인했다. ref-007·ref-394·ref-923·ref-924·ref-922 는 검증 예산이 부족해 리서치 스니펫 기준으로만 판단했다. 주의: 이동로봇–작업대·로봇팔 인계 확인을 제조사 중립으로 정한 물류 업종 공개 규격은 확인되지 않았다(oq-042 미해결). SEMI E84 는 반도체 업종 참고 사례이며, 인계 완료 판정 방식(f24)과 ROP 직접 범위(f27)는 이 위키의 추론이다. 정정 요청 없음. 미사용 출처 없음.",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only, raw.githubusercontent.com 만 열람)에서 검증됐다. 확인 28건, 미확인 1건(f23), 교차 확인 1건(f7). 강등: f23 사실 → 추정(기사는 과제 결과물 공개를 전하며 전담기관 명시는 미확인). 원문 미열람 출처: ref-007, ref-360, ref-394, ref-202, ref-203, ref-204, ref-205, ref-206, ref-207, ref-208, ref-209, ref-210, ref-211, ref-497, ref-498. 원문 확인 출처: ref-008, ref-023, ref-031, ref-044, ref-047, ref-048, ref-216, ref-499(검증자가 DispenserRequest·DispenserRequestItem·DispenserResult·nav2_docking README·ARIAC scenario.rst·CBV.ttl·VDA 5050 3.0.0 을 직접 대조). 검증 검색 9회(리서치 21회와 합쳐 30/30)로 ref-202·ref-203·ref-204·ref-205·ref-209·ref-210·ref-211·ref-497·ref-498·ref-360 의 실재와 요약 일치를 확인했다. ref-007·ref-394·ref-207·ref-208·ref-206 는 검증 예산이 부족해 리서치 스니펫 기준으로만 판단했다. 주의: 이동로봇–작업대·로봇팔 인계 확인을 제조사 중립으로 정한 물류 업종 공개 규격은 확인되지 않았다(oq-042 미해결). SEMI E84 는 반도체 업종 참고 사례이며, 인계 완료 판정 방식(f24)과 ROP 직접 범위(f27)는 이 위키의 추론이다. 정정 요청 없음. 미사용 출처 없음.",
   "retry_reason": null
 }

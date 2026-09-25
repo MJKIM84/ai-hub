@@ -17,7 +17,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
       "section": "4. 핵심 개념과 용어",
       "budget_chars": 900,
-      "summary": "모바일 매니퓰레이터는 ANSI/A3 R15.08-2-2023 의 IMR 유형 C 로 다뤄진다. [사실][^ref-926] 스케줄 간 의존·협동 운반·협동 인지·CBV 업무 단계를 정리한다.",
+      "summary": "모바일 매니퓰레이터는 ANSI/A3 R15.08-2-2023 의 IMR 유형 C 로 다뤄진다. [사실][^ref-210] 스케줄 간 의존·협동 운반·협동 인지·CBV 업무 단계를 정리한다.",
       "planned_findings": [
         "f19",
         "f2",
@@ -82,7 +82,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 900,
-      "summary": "NIST ARIAC 2025 는 AGV 와 로봇팔의 트레이 인계를 다룬다. [사실][^ref-008] 인계 스테이션 연구(Zang 외 2026)는 저자 보고 시뮬레이션 수치를 낸다. [사실][^ref-925]",
+      "summary": "NIST ARIAC 2025 는 AGV 와 로봇팔의 트레이 인계를 다룬다. [사실][^ref-008] 인계 스테이션 연구(Zang 외 2026)는 저자 보고 시뮬레이션 수치를 낸다. [사실][^ref-209]",
       "planned_findings": [
         "f1",
         "f9",
@@ -140,7 +140,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정"
+      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정. 2차: 5절 제약 칸의 ASTM F3499-21 서술을 시험 방법의 존재로 고침"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area17-s11.md",
@@ -158,7 +158,7 @@
       "path": "docs/topics/2026/2026-09-25-area17-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 17. 로봇 간 협업·물리적 인계 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,323자)을 옮겼다. 25. 안전·위험 관리 링크를 주제 페이지 기준 경로로 고침"
+      "diff_summary": "자동 분리: 17. 로봇 간 협업·물리적 인계 의 \"7. 관련 표준·프레임워크·오픈소스\" 절을 옮겼다. 25. 안전·위험 관리 링크를 주제 페이지 기준 경로로 고침. 2차: GS1 CBV 행을 어휘 정의만 [사실]로 쓰고 인계 이벤트 값은 미정(oq-006)으로 고침"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area17-s4.md",
@@ -198,7 +198,7 @@
         25
       ],
       "sources": [
-        "ref-926"
+        "ref-210"
       ]
     },
     {
@@ -211,7 +211,7 @@
         17
       ],
       "sources": [
-        "ref-923"
+        "ref-207"
       ]
     },
     {
@@ -224,7 +224,7 @@
         17
       ],
       "sources": [
-        "ref-928"
+        "ref-497"
       ]
     },
     {
@@ -257,7 +257,8 @@
       "summary": "원문 미열람. 사람–로봇·로봇–로봇 협업 팀과 이종 로봇 워크셀의 협업 성능을 평가하는 시험 방법·지표·통신 프로토콜 개발 프로젝트(검색 요약 기준).",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "docs/topics/2026/2026-09-25-area17-s7.md"
       ]
     },
     {
@@ -271,7 +272,10 @@
       "accessed": "2026-09-25",
       "summary": "ARIAC 문서. 2025 시나리오의 AGV 스테이션 이동, 로봇팔의 트레이 적재, 이동 전 키트 품질 확인 서비스를 원본으로 확인했다.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "docs/topics/2026/2026-09-25-area17-s7.md",
+        "docs/topics/2026/2026-09-25-area17-s8.md",
+        "docs/topics/2026/2026-09-25-area17-s10.md"
       ]
     },
     {
@@ -285,7 +289,11 @@
       "accessed": "2026-09-25",
       "summary": "디스펜서·인제스터 워크셀과 배송 작업의 요청–결과 반복 방식을 설명한 장.",
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "docs/topics/2026/2026-09-25-area17-s4.md",
+        "docs/topics/2026/2026-09-25-area17-s6.md",
+        "docs/topics/2026/2026-09-25-area17-s7.md",
+        "docs/topics/2026/2026-09-25-area17-s10.md"
       ]
     },
     {
@@ -389,7 +397,7 @@
       ]
     },
     {
-      "id": "ref-918",
+      "id": "ref-202",
       "org": "SEMI",
       "title": "E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface",
       "published": null,
@@ -404,7 +412,7 @@
       ]
     },
     {
-      "id": "ref-919",
+      "id": "ref-203",
       "org": "PEER Group",
       "title": "SEMI E84: Carrier Handoff",
       "published": null,
@@ -419,7 +427,7 @@
       ]
     },
     {
-      "id": "ref-920",
+      "id": "ref-204",
       "org": "ASTM International",
       "title": "Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)",
       "published": "2021",
@@ -434,7 +442,7 @@
       ]
     },
     {
-      "id": "ref-921",
+      "id": "ref-205",
       "org": "NIST",
       "title": "Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA)",
       "published": null,
@@ -449,7 +457,7 @@
       ]
     },
     {
-      "id": "ref-922",
+      "id": "ref-206",
       "org": "Bostelman, R. 외(NIST)",
       "title": "Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development",
       "published": null,
@@ -464,7 +472,7 @@
       ]
     },
     {
-      "id": "ref-923",
+      "id": "ref-207",
       "org": "Tuci, E., Alkilabi, M. H. M., & Akanyeti, O.",
       "title": "Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art",
       "published": "2018",
@@ -480,7 +488,7 @@
       ]
     },
     {
-      "id": "ref-924",
+      "id": "ref-208",
       "org": "Coltin, B., & Veloso, M.",
       "title": "Online pickup and delivery planning with transfers for mobile robots",
       "published": "2014",
@@ -495,7 +503,7 @@
       ]
     },
     {
-      "id": "ref-925",
+      "id": "ref-209",
       "org": "Zang, C. 외",
       "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
       "published": "2026-07",
@@ -510,7 +518,7 @@
       ]
     },
     {
-      "id": "ref-926",
+      "id": "ref-210",
       "org": "ANSI / A3(Association for Advancing Automation)",
       "title": "ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s)",
       "published": "2023",
@@ -525,7 +533,7 @@
       ]
     },
     {
-      "id": "ref-927",
+      "id": "ref-211",
       "org": "국가표준인증통합정보시스템(KSSN)",
       "title": "KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
       "published": null,
@@ -540,7 +548,7 @@
       ]
     },
     {
-      "id": "ref-928",
+      "id": "ref-497",
       "org": "Singh, A., Raut, G., & Choudhary, A.",
       "title": "Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review",
       "published": "2024-03",
@@ -556,7 +564,7 @@
       ]
     },
     {
-      "id": "ref-929",
+      "id": "ref-498",
       "org": "다음뉴스 게재 기사(원 언론사 미확인)",
       "title": "유진로봇, 지능형 제조 물류시스템 공개",
       "published": "2025-11-04",
@@ -571,7 +579,7 @@
       ]
     },
     {
-      "id": "ref-930",
+      "id": "ref-499",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg",
       "published": null,
@@ -682,7 +690,7 @@
         10
       ],
       "summary": "반도체 업종에서 자동 반송 시스템(AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 표준. 물류센터 적용 근거는 아니며 참고 사례로만 다룬다(원문 미열람).",
-      "ref_id": "ref-918"
+      "ref_id": "ref-202"
     },
     {
       "name": "ASTM F3499-21 A-UGV 도킹 성능 시험 방법",
@@ -694,7 +702,7 @@
         23
       ],
       "summary": "A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법(원문 미열람).",
-      "ref_id": "ref-920"
+      "ref_id": "ref-204"
     },
     {
       "name": "ANSI/A3 R15.08-2-2023 Industrial Mobile Robots — Safety Requirements — Part 2",
@@ -706,7 +714,7 @@
         17
       ],
       "summary": "산업용 이동로봇과 플릿의 현장 통합 안전 요구사항을 정하고 모바일 매니퓰레이터(IMR 유형 C)를 다룬다(원문 미열람).",
-      "ref_id": "ref-926"
+      "ref_id": "ref-210"
     },
     {
       "name": "KS B ISO 10218-2 산업용 로봇의 안전 — 제2부: 로봇 시스템 및 통합",
@@ -718,7 +726,7 @@
         17
       ],
       "summary": "로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준. 판·확인 연도와 이동식 로봇 적용 조항 미확인(원문 미열람).",
-      "ref_id": "ref-927"
+      "ref_id": "ref-211"
     },
     {
       "name": "Open-RMF 디스펜서·인제스터 메시지(rmf_internal_msgs의 rmf_dispenser_msgs)",
@@ -730,7 +738,7 @@
         10
       ],
       "summary": "워크셀 인계의 요청(요청 id, 대상 워크셀, 품목 목록)과 결과(ACKNOWLEDGED·SUCCESS·FAILED) 메시지 정의.",
-      "ref_id": "ref-930"
+      "ref_id": "ref-499"
     }
   ],
   "additional_research_requests": [
@@ -739,8 +747,8 @@
     "4절·8절: 협동 운반·협동 인지의 물류센터 적용 사례를 찾지 못해 개념 정의만 실었다.",
     "8절: 이동로봇–로봇팔 인계 확인을 다룬 국내 학술 논문과 유진로봇 과제의 1차 출처(과제 정보)가 필요하다.",
     "7절: KS B ISO 10218-2 의 판·확인 연도(KSSN 2017 확인판 항목 K001010116494 포함)와 이동식 로봇 적용 조항 확인이 필요하다.",
-    "8절: RMMA 2 mm 측정 불확도의 NIST 밖 독립 확인과 ref-922 발행연도 확인이 필요하다.",
-    "5절: 인계 실패 시 재시도·재배정·사람 확인에 따른 처리량 영향의 현장 사례가 필요하다(f25 는 추론).",
+    "8절: RMMA 2 mm 측정 불확도의 NIST 밖 독립 확인과 ref-206 발행연도 확인이 필요하다.",
+    "5절: 인계 실패 시 재시도·재배정·사람 확인에 따른 처리량 영향의 현장 사례와, 현장에서 도킹 정지 위치 반복성을 어떤 시험으로 확인하는지의 운영 사례가 필요하다(f25 는 추론, f10 은 시험 방법의 존재만 확인).",
     "pipeline 담당: 분량 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크(../<대분류>/…, 같은 대분류 파일명)를 docs/topics/YYYY/ 기준(../../categories/…)으로 다시 써야 한다. 이번 실행의 깨진 링크는 그 누락에서 생겼다."
   ],
   "fixes_applied": [
@@ -750,13 +758,15 @@
     "f11 병기 — 8절 RMMA 항목에 2 mm 가 NIST 보고치이며 두 출처 모두 NIST 계열이라 독립 확인이 없음을 적었다.",
     "f7·f8 업종 병기 — 3절·7절·9절·11절의 SEMI E84 서술마다 '반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다'를 넣고 7절에 개별 신호 이름·순서 미확인을 적었다.",
     "[추정] 유지 — f4·f8·f22·f24~f29 를 쓴 모든 문장을 [추정]과 '…것으로 보인다' 표현으로 두었고 [사실]로 올리지 않았다.",
-    "원문 미열람 표시 — ref-007·ref-360·ref-394·ref-918~ref-929 각주 정의 끝에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-930 에는 붙이지 않았다.",
+    "원문 미열람 표시 — ref-007·ref-360·ref-394·ref-202~ref-498 각주 정의 끝에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-499 에는 붙이지 않았다.",
     "기존 각주 재사용 — ref-007 은 시드 각주 정의 줄을 그대로 쓰고(앞 지시에 따라 끝에 원문 미열람 표시만 덧붙임), 다른 기존 참고문헌은 참고문헌 색인의 기관·제목·발행일·URL·접근일로 각주 형식 줄을 만들었다.",
     "인용 제한 — ref-031 은 원문 직접 인용 없이 모두 재서술했다(0회).",
     "f19·f20 범위 — 7절 표 아래와 9절에서 안전 표준을 25. 안전·위험 관리와 연결되는 제약으로만 서술하고 ROP 가 이행 주체가 아니라고 적었으며, f20 에 판·확인 연도와 이동식 로봇 적용 조항 미확인을 병기했다.",
     "11절 연결 — oq-001·oq-006·oq-042·oq-049 를 두고 새 질문 2(SEMI E84 물류 적용)를 oq-042 바로 아래에 나란히 두었으며, 새 질문 3 은 근거를 f10·f11 로 보고 ASTM F3499·NIST RMMA 를 함께 언급했다(근거 필드는 JSON 에 넣지 않음).",
     "4절 용어 — 디스펜서·인제스터는 기존 용어집 페이지(docs/glossary/dispenser-ingestor.md)에 링크만 하고 glossary_updates 에는 새 용어 4건(모바일 매니퓰레이터, 협동 운반, 협동 인지, 스케줄 간 의존)만 냈다.",
     "분량 초과 자동 분리: 17. 로봇 간 협업·물리적 인계 본문 9,774자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,969자",
-    "형식 검증: 분리된 주제 페이지 2026-09-25-area17-s10.md·2026-09-25-area17-s7.md 의 세부영역 링크(../<대분류>/…, 20-exception-… 파일명만)를 docs/topics/2026/ 기준 ../../categories/<대분류>/<파일>.md 로 고쳤다. 세부영역 페이지 10절 첫 항목에 빠진 목록 기호 '- '를 넣었다. 주장·태그·각주는 바꾸지 않았다."
+    "형식 검증: 분리된 주제 페이지 2026-09-25-area17-s10.md·2026-09-25-area17-s7.md 의 세부영역 링크(../<대분류>/…, 20-exception-… 파일명만)를 docs/topics/2026/ 기준 ../../categories/<대분류>/<파일>.md 로 고쳤다. 세부영역 페이지 10절 첫 항목에 빠진 목록 기호 '- '를 넣었다. 주장·태그·각주는 바꾸지 않았다.",
+    "2차: GS1 CBV 행 드리프트 — docs/topics/2026/2026-09-25-area17-s7.md 3절 표의 GS1 CBV 행을 'GS1 CBV는 업무 단계 어휘(accepting·receiving·loading·unloading 등)를 정의한다. [사실][^ref-044] 이 가운데 어느 값을 인계 이벤트에 쓸지는 정해지지 않았다(4절, oq-006).'로 고쳐 [사실]은 어휘 정의(f21)에만 두었다.",
+    "2차: ASTM F3499-21 운영 서술 — 세부영역 페이지 5절 표 '제약' 칸의 해당 문장을 '도킹 정지 위치의 반복성을 확인하는 시험 방법으로 ASTM F3499-21(2021)이 있다. [사실][^ref-204]'로 고쳤고, 그 칸 앞 문장의 [추정] 태그와 각주는 그대로 두었다."
   ]
 }
