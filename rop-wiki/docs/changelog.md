@@ -65,6 +65,19 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·잠정 판정표·필요 실험), 후속 질문 q5-14·q5-15, 완료 조건 표 갱신(충족 · 미승인), 출처 26건 추가, 이력 행 추가 |
+| 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 3절 가설 판정 칸 갱신(가설 1·2 부분 지지(잠정), 가설 3 미판정)과 판정 규칙 단락(추정), 6절 이번 실행 요약 추가, 8절 각주 정의 추가 |
+| 2026-09-25-84 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '가설 판정 절차 (q5-03)' 소절 추가(근거 확실성 평가, 판정 값 규칙과 TRL 보조 축, 잠정 판정, 필요 실험), 절 안내 문장에 q5-03 소절 안내 추가, 기존 두 소절의 'q5-03 아직 조사하지 않았다' 구절을 새 소절 안내로 정정(2차 수정), 각주 4건 추가 |
+| 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/experiments.md](tracks/floorplan-recognition/experiments.md) | 제안된 실험 계획 E5-01~E5-04(상태: 제안) 추가 |
+| 2026-09-25-84 | 요약 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | 건축 도면 자동 인식 단계 5: q5-03 답함: 가설 판정 절차·판정 값 규칙과 잠정 판정표(가설 1·2 부분 지지, 가설 3 미판정), 실험 계획 E5-01~E5-04 제안 |
+| 2026-09-25-84 | 생성 | [docs/references/ref-807.md](references/ref-807.md) | 참고문헌 ref-807 등록: Chapter 14: Completing ‘Summary of findings’ tables and grad… |
+| 2026-09-25-84 | 생성 | [docs/references/ref-808.md](references/ref-808.md) | 참고문헌 ref-808 등록: Strength of evidence in systematic reviews in software engin… |
+| 2026-09-25-84 | 생성 | [docs/references/ref-809.md](references/ref-809.md) | 참고문헌 ref-809 등록: Definition Of Technology Readiness Levels |
+| 2026-09-25-84 | 생성 | [docs/references/ref-810.md](references/ref-810.md) | 참고문헌 ref-810 등록: 기술성숙도평가(TRA) 업무지침 |
+| 2026-09-25-84 | 생성 | [docs/glossary/technology-readiness-level.md](glossary/technology-readiness-level.md) | 용어집 항목 기술 성숙도 |
+| 2026-09-25-84 | 생성 | [docs/glossary/grade-certainty-of-evidence.md](glossary/grade-certainty-of-evidence.md) | 용어집 항목 근거 확실성 등급 |
+| 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 소제목 신설, 측정 구성 추정 중심), 후속 질문 q5-12·q5-13, 4·5·6·7·8·9절 갱신 |
 | 2026-09-25-82 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '검증 절차: 현장 모델링 시간 단축 측정' 소절 추가(q5-02, 추정 중심), 절 첫 문단과 평가 지표 소절 끝의 미조사 문장을 새 소절과 맞춤 |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-82(단계 5, q5-02) 진행 문단 추가 |

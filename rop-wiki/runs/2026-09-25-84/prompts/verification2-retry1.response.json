@@ -1,0 +1,143 @@
+{
+  "duration_api_ms": 29038,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.181819,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 513755,
+    "cache_read_input_tokens": 76155,
+    "output_tokens": 2827,
+    "output_tokens_details": {
+      "thinking_tokens": 1056
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 513755,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2827,
+        "cache_read_input_tokens": 76155,
+        "cache_creation_input_tokens": 513755,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 513755
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 2827,
+      "cacheReadInputTokens": 76155,
+      "cacheCreationInputTokens": 513755,
+      "webSearchRequests": 0,
+      "costUSD": 4.181819,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1056,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-84\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과(재검증 1회). 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(검증 검색 4회, 리서치 8회와 합쳐 12/40, 2차 재검증은 도구 사용 없음). 확인 19건, 미확인 9건, 교차 확인 0건. 강등: f2 사실 → 추정(과장 구절 삭제 후 남는 부분은 사실), f8 사실 → 추정(결론 구절), f11·f12·f13·f14·f18·f19·f20 해석 구절 사실 → 추정(출처 서술 부분은 사실 유지). 원문 미열람 출처: ref-807, ref-808, ref-809, ref-810, ref-063, ref-068, ref-073, ref-074, ref-421, ref-213, ref-214, ref-215, ref-079, ref-081, ref-229, ref-228, ref-105, ref-573, ref-574, ref-283, ref-794, ref-265, ref-271, ref-441, ref-406, ref-632, ref-217(이번 실행 전체). 주의: 가설 판정 절차와 판정 값 규칙은 GRADE·TRL을 옮긴 이 위키의 설계 제안(추정)이다. 가설 1·2의 '부분 지지'와 가설 3의 '미판정'은 물류센터 조건의 직접 근거가 없는 잠정 판정이며, 가설 문장은 [가설] 태그를 유지한다. 판정 규칙의 '부분 지지'와 '미판정' 조건이 겹칠 수 있고 우선순위는 정해지지 않았다. 방위사업청 업무지침은 판과 규칙 번호를 확인하지 못했다. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 충족(평가 지표·검증 절차·가설 판정 절차는 아이디어 6절, 가설 판정표는 트랙 개요 3절, 실험 계획 E5-01~E5-04는 실험 페이지에 실림). 단계 전환: 미승인(막힌 질문 q5-04~q5-10, q5-12~q5-15 열림; 단계 5는 마지막 단계이며 트랙 done 전환도 미승인). / 2차 통과. 드리프트 없음, 1차 수정 지시 16건과 직전 2차 지시 1건(아이디어 6절의 q5-03 '아직 조사하지 않았다' 구절 두 곳 정정, 절 안내 문장 보강) 이행 확인, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 표기 의견(수정 지시 아님): 단계 5 페이지 6절 아래 줄의 막힌 질문 목록에 이번 실행의 새 질문 q5-14·q5-15가 빠져 있다. 단계 5 페이지 H1 아래 상태 줄(열린 질문 9건·답한 질문 1건·완료 조건 미충족)과 트랙 개요 상태 줄의 '현재 단계: 단계 4'는 patches 범위 밖이라 이번 판정(답한 질문 3건, 완료 조건 충족, 현재 단계 5)과 맞지 않으므로 퍼블리셔 또는 트랙 페이지 담당이 고쳐야 한다.\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":true,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-84",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 통과(재검증 1회). 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(검증 검색 4회, 리서치 8회와 합쳐 12/40, 2차 재검증은 도구 사용 없음). 확인 19건, 미확인 9건, 교차 확인 0건. 강등: f2 사실 → 추정(과장 구절 삭제 후 남는 부분은 사실), f8 사실 → 추정(결론 구절), f11·f12·f13·f14·f18·f19·f20 해석 구절 사실 → 추정(출처 서술 부분은 사실 유지). 원문 미열람 출처: ref-807, ref-808, ref-809, ref-810, ref-063, ref-068, ref-073, ref-074, ref-421, ref-213, ref-214, ref-215, ref-079, ref-081, ref-229, ref-228, ref-105, ref-573, ref-574, ref-283, ref-794, ref-265, ref-271, ref-441, ref-406, ref-632, ref-217(이번 실행 전체). 주의: 가설 판정 절차와 판정 값 규칙은 GRADE·TRL을 옮긴 이 위키의 설계 제안(추정)이다. 가설 1·2의 '부분 지지'와 가설 3의 '미판정'은 물류센터 조건의 직접 근거가 없는 잠정 판정이며, 가설 문장은 [가설] 태그를 유지한다. 판정 규칙의 '부분 지지'와 '미판정' 조건이 겹칠 수 있고 우선순위는 정해지지 않았다. 방위사업청 업무지침은 판과 규칙 번호를 확인하지 못했다. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 충족(평가 지표·검증 절차·가설 판정 절차는 아이디어 6절, 가설 판정표는 트랙 개요 3절, 실험 계획 E5-01~E5-04는 실험 페이지에 실림). 단계 전환: 미승인(막힌 질문 q5-04~q5-10, q5-12~q5-15 열림; 단계 5는 마지막 단계이며 트랙 done 전환도 미승인). / 2차 통과. 드리프트 없음, 1차 수정 지시 16건과 직전 2차 지시 1건(아이디어 6절의 q5-03 '아직 조사하지 않았다' 구절 두 곳 정정, 절 안내 문장 보강) 이행 확인, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 표기 의견(수정 지시 아님): 단계 5 페이지 6절 아래 줄의 막힌 질문 목록에 이번 실행의 새 질문 q5-14·q5-15가 빠져 있다. 단계 5 페이지 H1 아래 상태 줄(열린 질문 9건·답한 질문 1건·완료 조건 미충족)과 트랙 개요 상태 줄의 '현재 단계: 단계 4'는 patches 범위 밖이라 이번 판정(답한 질문 3건, 완료 조건 충족, 현재 단계 5)과 맞지 않으므로 퍼블리셔 또는 트랙 페이지 담당이 고쳐야 한다.",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": true,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 17392,
+  "type": "result",
+  "duration_ms": 29214,
+  "uuid": "970f162e-75ce-4ed3-a07c-875086e2185b",
+  "ttft_stream_ms": 6961,
+  "time_to_request_ms": 97,
+  "first_content_frame_ms": 6961,
+  "time_to_request_from_spawn_ms": 2587574,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790344139350.785,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 31.3
+}

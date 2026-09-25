@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-09-25-84",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 6,
+    "area_name": "6. 지도·공간·위치 모델",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "floorplan-recognition",
+    "stage": 5,
+    "question_ids": [
+      "q5-03"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 4,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 8,
+    "sources": 4
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1398.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 5 | q5-03 답함: 가설 판정 절차·판정 값 규칙과 잠정 판정표(가설 1·2 부분 지지, 가설 3 미판정), 실험 계획 E5-01~E5-04 제안 | run 2026-09-25-84",
+  "notes": [
+    "참고문헌 생성: references/ref-807.md",
+    "참고문헌 생성: references/ref-808.md",
+    "참고문헌 생성: references/ref-809.md",
+    "참고문헌 생성: references/ref-810.md",
+    "용어집 생성: glossary/technology-readiness-level.md",
+    "용어집 생성: glossary/grade-certainty-of-evidence.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 4,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 1,
+    "backlog": 3,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 22:52:33 KST",
+  "usage": {
+    "input_tokens": 34,
+    "cache_creation_input_tokens": 2666188,
+    "cache_read_input_tokens": 2806500,
+    "output_tokens": 147234,
+    "cost_usd": 25.1672,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.3032,
+        "output_tokens": 26380,
+        "cache_read_input_tokens": 1937891,
+        "cache_creation_input_tokens": 399981
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.9665,
+        "output_tokens": 18508,
+        "cache_read_input_tokens": 569971,
+        "cache_creation_input_tokens": 423388
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 8.3766,
+        "output_tokens": 90914,
+        "cache_read_input_tokens": 126044,
+        "cache_creation_input_tokens": 816639
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 8.4362,
+        "output_tokens": 10440,
+        "cache_read_input_tokens": 152310,
+        "cache_creation_input_tokens": 1024621
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md (8개 절)",
+      "docs/tracks/floorplan-recognition/index.md (3개 절)",
+      "docs/ideas/floorplan-recognition.md (1개 절)",
+      "docs/tracks/floorplan-recognition/experiments.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 0,
+  "cross_checked_findings": 0
+}

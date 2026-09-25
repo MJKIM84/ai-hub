@@ -9,9 +9,9 @@ status: published
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-718, ref-719, ref-067, ref-063, ref-065, ref-070, ref-720, ref-727, ref-729, ref-628, ref-728, ref-153, ref-721, ref-723, ref-724, ref-725, ref-726, ref-722, ref-031, ref-793, ref-794, ref-795, ref-796, ref-797, ref-798, ref-799, ref-800, ref-801, ref-802, ref-803, ref-804, ref-805, ref-806, ref-792, ref-217, ref-105]
+sources: [ref-718, ref-719, ref-067, ref-063, ref-065, ref-070, ref-720, ref-727, ref-729, ref-628, ref-728, ref-153, ref-721, ref-723, ref-724, ref-725, ref-726, ref-722, ref-031, ref-793, ref-794, ref-795, ref-796, ref-797, ref-798, ref-799, ref-800, ref-801, ref-802, ref-803, ref-804, ref-805, ref-806, ref-792, ref-217, ref-105, ref-807, ref-808, ref-809, ref-810, ref-068, ref-073, ref-074, ref-421, ref-213, ref-419, ref-420, ref-432, ref-214, ref-215, ref-079, ref-081, ref-229, ref-228, ref-573, ref-574, ref-283, ref-265, ref-271, ref-441, ref-406, ref-632]
 last_run: 2026-09-25
-version: 3
+version: 4
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [건축 도면 자동 인식](index.md) › 단계 5. 검증 방법과 가설 판정
@@ -34,7 +34,7 @@ version: 3
 |---|---|---|---|---|---|
 | q5-01 | 요소별 인식 정확도(검출·위치 오차)와 지도 품질(주행 성공률, 경로 차이)을 어떤 지표로 측정하는가? | 답함 | 사용자 | 2026-09-25-80 | [답](#q5-01) |
 | q5-02 | 현장 모델링 시간 단축 효과를 어떤 기준(수작업 대비 소요 시간, 수정 횟수)으로 측정하는가? | 답함 | 사용자 | 2026-09-25-82 | [답](#q5-02) |
-| q5-03 | 가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가? | 열림 | 사용자 | | |
+| q5-03 | 가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가? | 답함 | 사용자 | 2026-09-25-84 | [답](#q5-03) |
 | q5-04 | PAN-Robots 과제가 보고한 설치 기간 6개월→2개월의 비교 조건(대상 공장 규모, 기준 시스템, 단계별 소요 시간)을 과제 결과 보고서·산출물로 확인해, 도면 기반 자동 생성의 시간 단축 효과를 판정할 기준 자료로 쓸 수 있는가? (q1-04 에서 파생) | 열림 | f2, 실행 2026-09-25-22 | | |
 | q5-05 | 요구–제공 능력 매칭으로 만든 로봇별 통행 가능 판정이 실제 주행에서 틀리는 경우(통과 가능 판정 후 실패, 불가 판정의 과잉 제한)를 시뮬레이션·실기체 시험으로 어떻게 측정하고 임계값을 보정하는가? (q3-03 에서 파생) | 열림 | f21, 실행 2026-09-25-65 | | |
 | q5-06 | 도면 기반으로 만든 시뮬레이션 월드로 예측한 처리량·혼잡 지점을 실제 현장 측정과 비교해, 가설 3 의 '시뮬레이션 초기값으로 쓸 수 있다'를 판정하는 지표와 허용 오차는 무엇인가? (q3-04 에서 파생) | 열림 | f14, 실행 2026-09-25-70 | | |
@@ -44,6 +44,8 @@ version: 3
 | q5-10 | 도면 기반 지도와 기준 지도(측량 또는 현장 SLAM 지도)에서 같은 출발–도착 쌍으로 경로 차이(길이 비율, 지나는 공간·문·승강기 순서)를 재는 시험 세트를 물류센터에서 어떻게 구성하는가(쌍 선택, 층간 이동 포함, 제조사별 반복)? (q5-01 에서 파생) | 열림 | f21, 실행 2026-09-25-80 | | |
 | q5-12 | 같은 물류센터 층을 ROP 운영자가 수작업과 '도면 자동 생성+보정' 두 조건으로 모델링하는 비교 실험에서, 학습 효과(같은 도면 반복)와 숙련도 차이를 어떻게 통제하고(참가자·층 배정, 순서 균형), 입력 준비·자동 처리·보정·검증 시간을 어떤 단위로 기록하는가? (q5-02 에서 파생) | 열림 | f14, 실행 2026-09-25-82 | | |
 | q5-13 | 편집 비용 지표의 연산별 가중치(벽 삭제, 문·엘리베이터·충전 위치 추가, 목적지 이름 수정 등)를 실제 보정 작업의 연산별 평균 소요 시간으로 보정하려면 어떤 기록(편집 로그·화면 기록)이 필요하며, 편집 수와 시간의 상관을 어떻게 확인하는가? (q5-02 에서 파생) | 열림 | f15, 실행 2026-09-25-82 | | |
+| q5-14 | 가설 판정 규칙에서 '물류 조건의 직접 근거'로 인정할 사용자 실험의 최소 규모(도면 수·층 수·제조사 수)와, 주거·사무 건물 대상 공개 연구 결과를 비직접 근거로 한 단계 낮춰 반영하는 기준은 무엇인가? (q5-03 에서 파생) | 열림 | f22, 실행 2026-09-25-84 | | |
+| q5-15 | 새 근거(사용자 실험, 새 연구)가 들어올 때 가설 판정표를 다시 여는 조건과 판정 이력(이전 판정·근거·확실성 수준·판정 실행 id)을 남기는 형식은 무엇인가? (q5-03 에서 파생) | 열림 | f21, 실행 2026-09-25-84 | | |
 
 ## 3. 조사 결과
 
@@ -202,6 +204,109 @@ flowchart LR
 
 - 이번 검색 범위(한국어 6회 포함 30회)에서는 물류센터 로봇 도입에서 도면 기반 자동 생성이 지도·공용 자원 설정 시간을 얼마나 줄였는지 같은 조건으로 잰 연구나 국내 사례, 실내공간정보 구축 공수를 정한 공개 품셈을 찾지 못했다(부재 확인 아님). 확인한 시간 비교는 평면도 주석, 도면→BIM, Scan-to-BIM, 가상 시운전 리뷰로 물류 로봇 설정 작업 대상이 아니다. [추정][^ref-804][^ref-803][^ref-794] 공수 산정 기준은 [열린 질문](../../open-questions.md)으로 올렸다.
 
+### q5-03 가설 1~3의 판정 방법과 잠정 판정 {#q5-03}
+
+확인한 근거 평가 체계를 이 위키가 묶으면, 가설 판정은 각 가설을 하위 주장으로 나누고 하위 주장마다 근거의 확실성을 GRADE 식 영역(비직접성: 주거·사무 건물 대 물류센터, 비정밀성: 단일 출처·표본 1건, 비뚤림: 저자·과제·벤더 보고)으로 낮춰 매긴 뒤 판정 값으로 모으는 절차가 근거가 가장 많은 것으로 보인다. 가설 판정 규칙을 직접 정한 출처는 없으며 이는 이 위키의 종합이다. [추정][^ref-807][^ref-808]
+
+이번 실행은 일반 웹 페이지 열람이 막힌 환경에서 진행되어 모든 출처가 검색 요약 기준(원문 미열람)이고, 교차 확인된 발견 사항은 없다. 가설별 근거는 앞 단계 실행에서 검증된 문장을 다시 모은 것이다.
+
+```mermaid
+flowchart LR
+  hyp["가설"] --> sub["하위 주장"]
+  sub --> cert["근거 확실성 평가(GRADE 식 영역)"]
+  cert --> verdict["판정 값(지지·부분 지지·기각·미판정)"]
+  trl["기술 성숙도 보조 축(실험실 대 관련 환경)"] --> verdict
+```
+
+#### 근거 평가 체계
+
+- GRADE 접근법은 근거 묶음의 확실성을 결과(outcome)별로 높음·중간·낮음·매우 낮음 네 수준으로 매기고, 비뚤림 위험·비일관성·비직접성·비정밀성·출판 비뚤림 다섯 영역으로 확실성을 낮춘다(Cochrane 핸드북 14장, 발행일 미확인, 2026-09-25 확인). [사실][^ref-807]
+- Dybå·Dingsøyr(ESEM 2008, 178–187쪽)는 소프트웨어 공학 체계적 문헌고찰에서 1차 연구의 질 평가 체계와 근거 묶음 강도 등급 체계를 개관하고 애자일 개발 체계적 문헌고찰로 예시했다. [사실][^ref-808]
+
+#### 기술 성숙도 보조 축
+
+- NASA ESTO 의 기술 준비 수준(Technology Readiness Level, TRL) 정의는 TRL 5 를 관련 환경에서의 구성품·하위 시스템 검증, TRL 6 을 관련 환경의 시스템·하위 시스템 모델 또는 시제품 시연으로 두어 TRL 5(관련 환경 검증)와 TRL 6(관련 환경 시연)을 구분한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-809]
+- 방위사업청 '기술성숙도평가(TRA) 업무지침'은 기술성숙도를 기술이 실제 적용에 얼마나 준비되었는지를 확인하는 정량 수준으로, 기술성숙도평가를 핵심기술요소의 성숙도를 정량 평가하는 공식 절차로 정의하며 TRL 6 이면 체계개발 진입이 가능하다고 본다. 판·규칙 번호는 미확인이다(검색 요약 기준, 2026-09-25 확인). [사실][^ref-810]
+
+#### 가설 1(인식으로 초안 생성)의 근거
+
+- CubiCasa5K 는 래스터 평면도 5,000장에 방·창문·문 등 아이콘과 벽·난간·계단을 주석한 데이터셋이며(2019-04), 엘리베이터 범주는 확인되지 않았다. [사실][^ref-063]
+- 공개 평면도 데이터셋 가운데 엘리베이터 범주는 FloorPlanCAD 의 제3자 데이터셋 카드에서만 확인되어, 래스터·벡터 인식으로 엘리베이터를 추출할 수 있다는 근거는 약한 것으로 보인다. [추정][^ref-068][^ref-063]
+- IFC 4.3(개발 브랜치 기준)은 엘리베이터를 운송 요소 유형 값 ELEVATOR 로 담는다. [사실][^ref-421][^ref-213] 문·계단은 IfcDoor·IfcStair(개발 브랜치 기준)로 담겨, BIM 입력에서는 이 요소들이 인식 없이 유형 객체로 주어질 수 있다. [사실][^ref-419][^ref-420] 다만 실무 IFC 모델에서는 범용 요소 IfcBuildingElementProxy 가 유효한 IFC 엔터티가 있는 요소의 대체로 잘못 쓰일 수 있다. [사실][^ref-432]
+- IFC 4.3 의 콘센트 유형 열거와 전기기기 유형 열거에는 로봇·차량 충전 설비 값이 없다(개발 브랜치 기준, 두 출처는 같은 발행 주체라 독립 교차 확인 아님). [사실][^ref-214][^ref-215] 그래서 충전 위치는 BIM 표준 유형으로 담기지 않을 가능성이 클 것으로 보인다. [추정][^ref-214][^ref-215]
+- Open-RMF traffic-editor 에서는 충전소·주차 위치·도킹 이름·작업셀 이름 같은 운영 요소를 사람이 경유점 속성으로 입력하며, 충전소 지정 속성 이름은 출처 충돌로 [열린 질문](../../open-questions.md) oq-069 에 남아 있다. [사실][^ref-079]
+- 이전 실행들의 검색 범위에서 물류센터·창고 평면도나 충전 위치를 라벨로 담은 공개 인식 데이터셋은 찾지 못해, 가설 1 의 근거는 주거·상업 평면도에 대한 간접 근거에 머무는 것으로 보인다(부재 확인 아님). [추정][^ref-063][^ref-073][^ref-074]
+- 연계 대상: BIM 에서 만든 점유 격자 지도는 구조 요소만 담아 가구·설계–시공 편차가 위치추정 정확도에 영향을 준다고 보고되었다(2023-08). [사실][^ref-081] 이는 도면 기반 지도가 현장 운영 지도로 바로 쓰이지 않는다는 반대 방향 근거가 되는 것으로 보인다. [추정][^ref-081]
+
+#### 가설 2(능력 대조)의 근거
+
+- 능력 기술 서브모델 IDTA 02020(1.0)은 요구 능력과 제공 능력을 모델링해 비교하게 하고 속성 제약을 전제조건으로 쓸 수 있게 한다. [사실][^ref-229] 이를 로봇의 공간 통과로 옮기면 공간 통과 조건과 로봇 능력을 같은 틀로 대조할 표현 수단이 존재하는 것으로 보인다. [추정][^ref-229]
+- VDA 5050 팩트시트 스키마와 Open-RMF 플릿 어댑터 템플릿 설정은 속도·크기·배터리 같은 파라미터는 두지만 계단·문·승강기 이용 능력 필드는 두지 않는다. [사실][^ref-228][^ref-105] 그래서 가설 2 의 대조에 쓸 로봇 쪽 능력 값은 관제 인터페이스에서 오지 않는 것으로 보인다. [추정][^ref-228][^ref-105]
+- IFC 4.3.2 의 문 공통 속성 세트는 자동 구동 여부·장애인 접근 가능을, 계단 공통 속성 세트는 단 높이·디딤판 길이·단 수를 둔다(공식 문서 검색 요약 기준). [사실][^ref-573][^ref-574] 공간 쪽 통과 조건 값은 BIM 에서 얻을 수 있을 것으로 보이나, 실무 모델에 이 속성이 채워지는지는 미확인이다. [추정][^ref-573][^ref-574]
+- 연계 대상: Open-RMF 에서 문 여닫기는 로봇이 아니라 문 어댑터가 처리한다. [사실][^ref-283] 그래서 문 통과 가능 여부는 로봇 능력만이 아니라 설비 연동 여부에도 달려, 가설 2 의 대조 규칙은 선택 조건을 가져야 할 것으로 보인다. [추정][^ref-283]
+
+#### 가설 3(시간 단축·시뮬레이션 초기값)의 근거
+
+- Opiela·Hrehová(IPIN-WiP 2023)는 평면도 지도 모델 주석에서 숙련자 수작업 40분 대비 자동 주석 뒤 수정 5분을 보고했으나, 지도 1건의 저자 보고이고 물류 로봇 설정 작업이 아니며 검증 재검색에서 수치가 재확인되지 않았다. [추정][^ref-794]
+- EU CORDIS 기사는 PAN-Robots 시스템이 AGV 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전하나, 과제 측 보고값이며 비교 조건은 확인되지 않았다(기준일 2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인). [추정][^ref-265]
+- OTTO Motors 는 소프트웨어 2.28 판(2023)에서 시설 지도·작업 흐름 설정 시간이 내부 시험으로 50% 줄었다고 밝힌다. 측정 조건이 공개되지 않아 판정 근거로 쓰지 않는다. [추정] 벤더 주장[^ref-271]
+- Open-RMF building_map_generator 는 사람이 주석한 건물 파일에서 주행 그래프와 함께 바닥·벽·문·승강기를 담은 시뮬레이션 월드를 만든다(같은 Open Robotics 자료라 독립 교차 확인 아님). [사실][^ref-441][^ref-406] 이를 도면 인식 결과로 넓히면 도면 기반 결과를 시뮬레이션 초기값으로 옮기는 경로가 존재하는 것으로 보인다. [추정][^ref-441][^ref-406]
+- IFAC 2024 논문은 운영 결정용 시뮬레이션 기반 디지털 트윈을 실제 부하 상태로 초기화하면 빈 상태 기준 모델보다 과도 구간이 크게 줄어든다고 보고했다(저자 미확인). [사실][^ref-632] 이는 도면 기반 정적 초기값만으로는 운영 예측용 초기값이 되지 않음을 시사하는 것으로 보이며, 운영 예측용 초기값은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태에서 받고 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)이 그 상태로 가정한 미래를 실험한다는 구분을 따른다. [추정][^ref-632]
+
+#### 판정 값 규칙 (설계 제안)
+
+판정 값 네 가지는 [트랙 개요](index.md) 3절의 정의를 따르고, 각 값의 조건은 GRADE 의 확실성 수준과 TRL 의 실험실·관련 환경 구분을 가져와 이 위키가 정한 설계 제안이다. GRADE·TRL 이 가설 판정 규칙을 정한 것은 아니다. [추정][^ref-807][^ref-809][^ref-810]
+
+| 판정 값 | 조건(설계 제안) |
+|---|---|
+| 지지 | 핵심 하위 주장 모두 물류 조건의 직접 근거가 있고 확실성 중간 이상 |
+| 부분 지지 | 일부 하위 주장만 근거가 있거나 빠지는 부분이 확인됨 |
+| 기각 | 핵심 하위 주장에 직접 반대 근거가 있음 |
+| 미판정 | 핵심 하위 주장에 직접 근거가 없음 |
+
+보조 축으로 근거가 실험실 수준인지 관련 환경 검증·시연(TRL 5·6 식) 수준인지를 판정 값 옆에 병기하는 방식이 가능해 보인다. [추정][^ref-809][^ref-810] '부분 지지'와 '미판정'의 조건은 겹칠 수 있으며 우선순위는 정하지 않았다(4절).
+
+#### 잠정 판정표
+
+아래 표는 위 규칙을 단계 1~4 결과에 적용한 이 위키의 잠정 판정이며 출처의 표를 옮긴 것이 아니다. 가설 문장은 [가설] 태그를 유지한다.
+
+| 가설 | 잠정 판정 | 확인된 하위 주장 | 빠진 것 | 근거 단계·실행 id |
+|---|---|---|---|---|
+| 가설 1(인식으로 초안 생성) | 부분 지지(잠정, 확실성 낮음) | 벽·문·계단 인식 데이터셋, BIM 의 엘리베이터·문·계단 유형 객체 | 충전 위치·작업 스테이션·주행 차선, 도면–현장 편차, 물류센터 도면의 직접 근거 | 단계 1·2·4, 실행 2026-09-25-84 |
+| 가설 2(능력 대조) | 부분 지지(잠정, 확실성 낮음 — 표현 가능성만 확인) | 요구–제공 능력 비교 표현 수단, BIM 쪽 통과 조건 속성 | 관제 인터페이스의 로봇 능력 값(q3-10), 대조 판정의 정확도 측정(q5-05) | 단계 3, 실행 2026-09-25-84 |
+| 가설 3(시간 단축·시뮬레이션 초기값) | 미판정 | 시뮬레이션 월드 생성 경로(입력은 사람 주석) | 물류 로봇 설정 시간의 비교 측정(q5-12), 시뮬레이션 예측 대 현장 비교(q5-06) | 단계 1·3·5, 실행 2026-09-25-84 |
+
+- 가설 1 은 벽·문·계단 인식 근거와 BIM 의 엘리베이터 유형은 있으나 충전 위치·운영 요소는 도면에 담기지 않고 근거가 주거 평면도 중심이어서 잠정 '부분 지지'(확실성 낮음)로 보이며, 빠지는 것은 충전 위치·작업 스테이션·주행 차선·도면–현장 편차로 정리된다. 다만 핵심 하위 주장에 물류센터 도면의 직접 근거가 없어 규칙의 '미판정' 조건과도 겹친다. [추정][^ref-063][^ref-068][^ref-421][^ref-214][^ref-079][^ref-081]
+- 가설 2 는 요구–제공 능력 비교의 표현 수단과 BIM 쪽 통과 조건 값은 확인되지만 로봇 쪽 능력 값이 관제 인터페이스에 없고 대조 판정의 정확도를 잰 근거가 없어, 잠정 '부분 지지'(표현 가능성만 확인, 확실성 낮음)로 보인다. [추정][^ref-229][^ref-228][^ref-105][^ref-573][^ref-283]
+- 가설 3 은 시간 단축 근거가 물류 로봇 설정이 아닌 주석 1건의 저자 보고·과제 보고·벤더 주장뿐이고, 시뮬레이션 초기값은 월드 생성 경로만 있고 예측 정확도를 비교한 근거가 없어 '미판정'으로 두고 사용자 실험이 필요한 것으로 보인다. 벤더 수치는 판정 근거로 쓰지 않았다. [추정][^ref-794][^ref-265][^ref-271][^ref-441][^ref-632]
+
+같은 판정은 [트랙 개요](index.md) 3절에 '잠정'으로 실었다.
+
+#### 판정을 옮기는 데 필요한 실험
+
+판정을 미판정·부분 지지에서 옮기려면 물류센터 도면으로 [q5-01](#q5-01) 의 세 층 지표를 재는 인식 실험(가설 1), 능력 대조 판정과 실제 주행 결과를 비교하는 통행 실험(가설 2), 수작업 대 자동 생성+보정의 두 조건 모델링 시간 실험과 시뮬레이션 예측 대 현장 측정 비교(가설 3)가 사용자 실험 계획으로 필요할 것으로 보인다. [추정][^ref-809][^ref-807] 계획은 [실험](experiments.md)의 E5-01~E5-04 로 제안했다.
+
+#### 설명용 시나리오: ‘3층 출하 대기장’ 판정 항목
+
+다음은 설명을 위한 가상의 시나리오이다. 수치는 넣지 않았다.
+
+**물류 흐름 단계:** 출하
+
+**시나리오:** ‘3층 출하 대기장’을 목적지로 한 출하 운반에서 세 가설의 판정 항목을 나눈다
+
+| 항목 | 내용 |
+|---|---|
+| 시작 조건 | 해당 없음 |
+| 작업 대상 | 해당 없음 |
+| 수행 자원 | 해당 없음 |
+| 제약 | 해당 없음 |
+| 완료·인계 | 해당 없음(도착 인정 기준은 q5-01 의 시나리오를 따른다) |
+| 예외·성과 | 가설 1 은 대기장 구역·승강기를 도면에서 얻는지, 가설 2 는 승강기 엣지를 포함한 경로가 각 제조사 로봇의 통행 가능 부분 그래프 안에 있는지, 가설 3 은 도면 수신부터 첫 도착 인정까지의 설정 시간이 줄었는지로 판정 항목이 나뉠 수 있어 보인다. [추정][^ref-079][^ref-229][^ref-794] |
+
+#### 근거 공백
+
+- 이번 검색 범위(한국어 2회 포함 8회)에서는 물류센터에서 도면 기반 지도 생성의 인식 성능이나 시운전 시간 단축을 직접 잰 새 연구·국내 사례를 찾지 못해, 세 가설 모두 물류 조건의 직접 근거가 비어 있는 것으로 보인다(부재 확인 아님). [추정][^ref-217][^ref-794] 국내 R&D 과제의 기술성숙도 평가 사례는 [열린 질문](../../open-questions.md)으로 올렸다.
+
 ## 4. 결론과 남은 불확실성
 
 **결론**
@@ -211,10 +316,12 @@ flowchart LR
 - 픽셀 기준 인식 임계값은 미터 단위로 바꾸고 노드 허용 편차 같은 운영 허용치에 맞춰야 할 것으로 보인다. [추정][^ref-718][^ref-067][^ref-031][^ref-153]
 - 사람 수정 노력은 정확도 지표와 따로 편집 연산 유형별 비용, 클릭 수, 사후 편집 편집 수로 재는 선례가 있다. [사실][^ref-793][^ref-795][^ref-799]
 - 현장 모델링 시간 단축은 같은 도면·현장을 두 조건으로 처리해 단계별 시간, 요소 유형별 수정 횟수·편집 비용, 보정 후 결과 품질을 함께 재고, 수정 횟수는 시간의 대용치로만 쓰지 않는 구성이 확인한 근거와 가장 잘 맞는 것으로 보인다. [추정][^ref-793][^ref-794][^ref-801]
+- 가설 판정은 가설을 하위 주장으로 나누고 GRADE 식 영역으로 확실성을 낮춰 매긴 뒤 판정 값으로 모으고, 기술 성숙도를 보조 축으로 병기하는 절차가 근거가 가장 많은 것으로 보인다. [추정][^ref-807][^ref-808][^ref-809]
+- 이 절차를 적용한 잠정 판정은 가설 1 부분 지지(확실성 낮음), 가설 2 부분 지지(표현 가능성만 확인, 확실성 낮음), 가설 3 미판정이다. [추정][^ref-063][^ref-229][^ref-794][^ref-632]
 
 **남은 불확실성**
 
-- 지표 정의마다 단일 출처이며, q5-01 에서 교차 확인된 것은 파놉틱 품질과 SPL 정의뿐이고 q5-02 에서는 교차 확인된 것이 없다. Floor-SP 와 MonteFloor 지표 문구의 출처는 검색 요약에서 구분되지 않았다.
+- 지표 정의마다 단일 출처이며, q5-01 에서 교차 확인된 것은 파놉틱 품질과 SPL 정의뿐이고 q5-02·q5-03 에서는 교차 확인된 것이 없다. Floor-SP 와 MonteFloor 지표 문구의 출처는 검색 요약에서 구분되지 않았다.
 - ISO 18646-2:2024 의 지도 작성 정확도 시험 절차와 KS 부합화 여부는 미확인이다(원문 미열람).
 - Filatov 외의 세 지표 이름은 인용 문헌 요약 기준이고, PRM-RL 의 성공률 수치는 요약마다 달라 싣지 않았다.
 - 국내 R&D 보고서(ref-722)의 발행일과 세부 지표는 미확인이다.
@@ -223,8 +330,11 @@ flowchart LR
 - 평면도 주석의 수작업 대비 보정 시간은 지도 1건 저자 보고이고 검증 재검색에서 수치가 재확인되지 않았다. 도면→BIM 연구의 단계별 시간 수치, Scan-to-BIM 시간–편익 연구의 비교 수치·조건·게재지, 국내 Scan-to-BIM 실증의 시간 비교 여부는 미확인이다.
 - 편집 수와 소요 시간의 상관은 기계번역 출처 안에서도 서술(약함)과 결과(높음)가 엇갈리며, 도면 보정 작업에서 잰 자료는 없다.
 - KLM 출처는 강의 사이트 게재 해설본이며 원 문헌의 연도는 확인하지 못했다. 편집 비용의 연산별 수치와 A-Scan2BIM 규모(16개 장면·89시간)는 원문을 열지 못한 검색 요약 기준이다.
-- 가설 판정(q5-03)은 아직 조사하지 않았다.
-- 공간 그래프 스키마 초안은 바꾸지 않았다(v1.2 유지). 평가 지표와 시간·수정 측정은 스키마의 개념·관계가 아니라 검증 방법이어서 변경 제안이 없었다.
+- 판정 값 규칙에서 '부분 지지'(빠지는 부분이 확인됨)와 '미판정'(핵심 하위 주장에 물류 조건의 직접 근거 없음)의 조건이 겹칠 수 있고 둘 사이 우선순위는 정해지지 않았다. 가설 1 의 잠정 판정이 이 겹침에 해당한다(빠지는 부분이 확인됐지만 물류센터 도면의 직접 근거도 없다). 최소 규모와 비직접 근거 반영 기준은 후속 질문 q5-14 로 남는다.
+- 판정 절차·판정 값 규칙·잠정 판정은 GRADE·TRL 을 옮긴 이 위키의 설계 제안이며 가설 판정 규칙을 직접 정한 출처는 없다. GRADE 영역·수준, Dybå·Dingsøyr 내용, NASA TRL 정의는 검색 요약 기준이다.
+- 방위사업청 기술성숙도평가 업무지침은 현행 판과 규칙 번호·종류를 확인하지 못했다(검색 결과와 브리프의 표기가 다르다).
+- 가설별 근거는 이전 실행의 단일 출처 재인용이며, 판정표를 새 근거로 다시 여는 조건은 후속 질문 q5-15 로 남는다.
+- 공간 그래프 스키마 초안은 바꾸지 않았다(v1.2 유지). 평가 지표·시간 측정·가설 판정은 스키마의 개념·관계가 아니라 검증 방법이어서 변경 제안이 없었다.
 
 ## 5. 이 단계가 낳은 후속 질문
 
@@ -234,20 +344,22 @@ flowchart LR
 | q5-10 | 도면 기반 지도와 기준 지도(측량 또는 현장 SLAM 지도)에서 같은 출발–도착 쌍으로 경로 차이(길이 비율, 지나는 공간·문·승강기 순서)를 재는 시험 세트를 물류센터에서 어떻게 구성하는가(쌍 선택, 층간 이동 포함, 제조사별 반복)? (q5-01 에서 파생) | 단계 5. 검증 방법과 가설 판정 | f21 (실행 2026-09-25-80) | 열림 |
 | q5-12 | 같은 물류센터 층을 ROP 운영자가 수작업과 '도면 자동 생성+보정' 두 조건으로 모델링하는 비교 실험에서, 학습 효과(같은 도면 반복)와 숙련도 차이를 어떻게 통제하고(참가자·층 배정, 순서 균형), 입력 준비·자동 처리·보정·검증 시간을 어떤 단위로 기록하는가? (q5-02 에서 파생) | 단계 5. 검증 방법과 가설 판정 | f14 (실행 2026-09-25-82) | 열림 |
 | q5-13 | 편집 비용 지표의 연산별 가중치(벽 삭제, 문·엘리베이터·충전 위치 추가, 목적지 이름 수정 등)를 실제 보정 작업의 연산별 평균 소요 시간으로 보정하려면 어떤 기록(편집 로그·화면 기록)이 필요하며, 편집 수와 시간의 상관을 어떻게 확인하는가? (q5-02 에서 파생) | 단계 5. 검증 방법과 가설 판정 | f15 (실행 2026-09-25-82) | 열림 |
+| q5-14 | 가설 판정 규칙에서 '물류 조건의 직접 근거'로 인정할 사용자 실험의 최소 규모(도면 수·층 수·제조사 수)와, 주거·사무 건물 대상 공개 연구 결과를 비직접 근거로 한 단계 낮춰 반영하는 기준은 무엇인가? (q5-03 에서 파생) | 단계 5. 검증 방법과 가설 판정 | f22 (실행 2026-09-25-84) | 열림 |
+| q5-15 | 새 근거(사용자 실험, 새 연구)가 들어올 때 가설 판정표를 다시 여는 조건과 판정 이력(이전 판정·근거·확실성 수준·판정 실행 id)을 남기는 형식은 무엇인가? (q5-03 에서 파생) | 단계 5. 검증 방법과 가설 판정 | f21 (실행 2026-09-25-84) | 열림 |
 
 실행 2026-09-25-80 에서 q5-09 와 같은 질문으로 중복 등록된 q5-11 은 [질문 백로그](question-backlog.md)에서 폐기했다.
 
 ## 6. 완료 조건 충족 현황
 
-충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.
+충족 여부는 스토리텔러 에이전트가 1차 검증의 예비 판정을 따라 적은 값이고, 최종 판정은 내용 검증 에이전트가 2차 검증에서 한다. 둘이 다르면 검증 판정을 따른다.
 
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
-| 평가 지표와 검증 절차가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "6. 검증 방법" 절에 실림 | 미충족 | 평가 지표 소절(실행 2026-09-25-80)에 이어 검증 절차 소절이 추정 중심으로 실림(실행 2026-09-25-82) | 미충족 · 미승인 |
-| 가설 판정표가 [트랙 개요](index.md)의 "3. 가설과 판정 상태"에 실림 | 미충족 | q5-03 미조사 | 미충족 · 미승인 |
-| 사용자에게 제안하는 실험 계획이 [실험](experiments.md)에 실림 | 미충족 | 제안된 실험 계획 없음 | 미충족 · 미승인 |
+| 평가 지표와 검증 절차가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "6. 검증 방법" 절에 실림 | 충족 | 평가 지표 소절(실행 2026-09-25-80), 검증 절차 소절(실행 2026-09-25-82), 가설 판정 절차 소절(실행 2026-09-25-84)이 추정 중심으로 실림 | 충족 · 미승인 |
+| 가설 판정표가 [트랙 개요](index.md)의 "3. 가설과 판정 상태"에 실림 | 충족 | [q5-03](#q5-03) 의 잠정 판정(가설 1·2 부분 지지, 가설 3 미판정)을 트랙 개요 3절에 반영(실행 2026-09-25-84) | 충족 · 미승인 |
+| 사용자에게 제안하는 실험 계획이 [실험](experiments.md)에 실림 | 충족 | E5-01~E5-04 를 상태 '제안'으로 실음(실행 2026-09-25-84) | 충족 · 미승인 |
 
-다음 단계로 전환: 아니오(가설 판정표 q5-03·실험 계획 미작성, 막힌 질문 q5-03~q5-10과 새 질문 열림)
+다음 단계로 전환: 아니오(막힌 질문 q5-04~q5-10, q5-12, q5-13 열림; 단계 5는 마지막 단계이므로 트랙 done 전환 미승인)
 
 ## 7. 관련 세부영역
 
@@ -260,6 +372,8 @@ flowchart LR
 - [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 도면 해석 모델의 평가 지표(모서리·방 정밀도·재현율, 파놉틱 품질, 클래스별 IoU, SSIG)를 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 원문 8장 교차 규칙: 도면 해석은 6. 지도·공간·위치 모델에 적용)
 
 실행 2026-09-25-82(q5-02)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남겼다: [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)에는 시운전·설정 공수를 수작업 대비로 재는 방법과 가상 시운전 근거의 한계를, [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)에는 사람 수정 노력 지표(편집 비용, 클릭 수, HTER)와 편집 수–시간 관계를, [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)과 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)에는 도면 해석 모델을 사람 수정 노력으로 평가하는 방법을 각각 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 원문 8장 교차 규칙에 따라 양쪽 연결).
+
+실행 2026-09-25-84(q5-03)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로만 남겼다: [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)의 "6. 대표 접근법과 기술"에 여러 출처의 근거를 GRADE 식 영역으로 확실성을 매기고 기술 성숙도(TRL)를 병기해 기술 가설을 판정하는 방법(추정)을, [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 "11. 열린 질문"에 물류센터 도면 기반 지도 생성의 직접 근거 공백을 반영하도록 제안했다.
 
 ## 8. 출처
 
@@ -301,12 +415,40 @@ flowchart LR
 [^ref-217]: Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L., Semi-automated map creation for fast deployment of AGV fleets in modern logistics, 2017, https://www.sciencedirect.com/science/article/abs/pii/S0921889015302724, 접근일 2026-09-25 (원문 미열람)
 [^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25 (원문 미열람)
 
+[^ref-807]: Cochrane, Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence, 미확인, https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14, 접근일 2026-09-25 (원문 미열람)
+[^ref-808]: Dybå, T., & Dingsøyr, T. (ESEM 2008), Strength of evidence in systematic reviews in software engineering, 2008, https://dl.acm.org/doi/10.1145/1414004.1414034, 접근일 2026-09-25 (원문 미열람)
+[^ref-809]: NASA ESTO, Definition Of Technology Readiness Levels, 미확인, https://esto.nasa.gov/files/trl_definitions.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-810]: 방위사업청(국가법령정보센터), 기술성숙도평가(TRA) 업무지침, 미확인, https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2000000018891, 접근일 2026-09-25 (원문 미열람)
+[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)
+[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)
+[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)
+[^ref-421]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcTransportElementTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Types/IfcTransportElementTypeEnum.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-213]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-419]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcDoor.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-420]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcStair (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcStair.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-432]: Noardo, F., Arroyo Ohori, K., Krijnen, T., & Stoter, J. (Applied Sciences 11(5), 2232), An Inspection of IFC Models from Practice, 2021, https://www.mdpi.com/2076-3417/11/5/2232, 접근일 2026-09-25 (원문 미열람)
+[^ref-214]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcOutletTypeEnum.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-215]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcElectricApplianceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricApplianceTypeEnum.md, 접근일 2026-09-25 (원문 미열람)
+[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-081]: Vega-Torres, M. A. 외, Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments, 2023-08, https://arxiv.org/abs/2308.05443, 접근일 2026-09-25 (원문 미열람)
+[^ref-229]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description, 접근일 2026-09-25 (원문 미열람)
+[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25 (원문 미열람)
+[^ref-573]: buildingSMART International, Pset_DoorCommon - IFC 4.3.2 Documentation, 미확인, https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_DoorCommon.htm, 접근일 2026-09-25 (원문 미열람)
+[^ref-574]: buildingSMART International, Pset_StairCommon - IFC4.3.2.0 Documentation, 미확인, https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_StairCommon.htm, 접근일 2026-09-25 (원문 미열람)
+[^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-265]: European Commission (CORDIS), PAN-ROBOTS: Automating logistics for the factory of the future, 미확인, https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future, 접근일 2026-09-25 (원문 미열람)
+[^ref-271]: OTTO Motors (Rockwell Automation), Maximize AMR productivity and simplify commissioning with our latest software release, 2023, https://ottomotors.com/blog/amr-productivity-software-release/, 접근일 2026-09-25 (원문 미열람)
+[^ref-441]: Open Robotics (open-rmf), rmf_traffic_editor — README, 미확인, https://github.com/open-rmf/rmf_traffic_editor, 접근일 2026-09-25 (원문 미열람)
+[^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-09-25 (원문 미열람)
+[^ref-632]: IFAC-PapersOnLine 게재 논문 저자(미확인), Initialization of Simulation-Based Digital Twins for Internal Transport Systems, 2024, https://www.sciencedirect.com/science/article/pii/S2405896324015374, 접근일 2026-09-25 (원문 미열람)
+
 ## 9. 이력
 
 실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.
 
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |
 |---|---|---|---|---|---|
+| 2026-09-25 | 2026-09-25-84 | q5-03 | q5-14, q5-15 | 없음(v1.2 유지) | 4 |
 | 2026-09-25 | 2026-09-25-82 | q5-02 | q5-12, q5-13(q5-09 와 중복 등록된 q5-11 은 폐기) | 없음(v1.2 유지) | 3 |
 | 2026-09-25 | 2026-09-25-80 | q5-01 | q5-09, q5-10 | 없음(v1.2 유지) | 2 |
 | 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q5-01~q5-03(3건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에서 생성) | 1 |
