@@ -74,6 +74,27 @@ version: 1
 | 2026-09-25-41 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-40 | 갱신 | [docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 섹션 3~11 신규 작성(트랙 반영 제안 4건 반영, 1차 수정 지시 13건 이행), 2차 수정: 4·8절 연결 문장 태그 제거, 5절 조사 한계 문장 태그·각주 제거와 oq-010 연결, 6절 첫 문장을 출처 범위로 좁힘 |
+| 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s6.md](topics/2026/2026-09-25-area16-s6.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 문장을 출처 범위(충전 작업 삽입·뮤텍스 그룹·승강기 세션)로 좁혔다 |
+| 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s8.md](topics/2026/2026-09-25-area16-s8.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 첫 문장 태그 제거, 병원·호텔 연구 문구를 연관 관계로 고침, ref-535 제목 원문 복원 |
+| 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s7.md](topics/2026/2026-09-25-area16-s7.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(ref-536·ref-538 링크는 id 표기). 2차 수정: batteryCharging 행의 계획 입력 해석을 [추정]으로 분리 |
+| 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s11.md](topics/2026/2026-09-25-area16-s11.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "11. 열린 질문" 절을 옮겼다 |
+| 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s4.md](topics/2026/2026-09-25-area16-s4.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 연결 문장의 태그·각주 제거 |
+| 2026-09-25-40 | 요약 | [docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 16. 공용 자원·충전·에너지 최적화: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 4건 반영, 1차 수정 지시 13건·2차 수정 지시 6건 이행 |
+| 2026-09-25-40 | 생성 | [docs/references/ref-530.md](references/ref-530.md) | 참고문헌 ref-530 등록: Optimal recharge sequencing in multi-AGV systems: A mixed IL… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-531.md](references/ref-531.md) | 참고문헌 ref-531 등록: Deep Reinforcement Learning for Dynamic Battery Management o… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-532.md](references/ref-532.md) | 참고문헌 ref-532 등록: Simulation model and performance evaluation of battery-power… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-533.md](references/ref-533.md) | 참고문헌 ref-533 등록: Does battery management matter? Performance evaluation and o… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-534.md](references/ref-534.md) | 참고문헌 ref-534 등록: Scheduling heterogeneous multi-load AGVs with battery constr… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-535.md](references/ref-535.md) | 참고문헌 ref-535 등록: 배송 로봇의 다층, 다중 배송을 위한 효율적인 경로 계획 및 엘리베이터 층간 이동 시스템 |
+| 2026-09-25-40 | 생성 | [docs/references/ref-536.md](references/ref-536.md) | 참고문헌 ref-536 등록: rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp |
+| 2026-09-25-40 | 생성 | [docs/references/ref-537.md](references/ref-537.md) | 참고문헌 ref-537 등록: rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/R… |
+| 2026-09-25-40 | 생성 | [docs/references/ref-538.md](references/ref-538.md) | 참고문헌 ref-538 등록: rmf_reservation — Experimental reservation library in rust (… |
+| 2026-09-25-40 | 생성 | [docs/glossary/state-of-charge.md](glossary/state-of-charge.md) | 용어집 항목 충전 상태 |
+| 2026-09-25-40 | 갱신 | [docs/glossary/open-rmf.md](glossary/open-rmf.md) | 용어집 항목 뮤텍스 그룹 |
+| 2026-09-25-40 | 갱신 | [docs/glossary/open-rmf.md](glossary/open-rmf.md) | 용어집 항목 승강기 세션 |
+| 2026-09-25-40 | 생성 | [docs/glossary/battery-swapping.md](glossary/battery-swapping.md) | 용어집 항목 배터리 교환 |
+| 2026-09-25-40 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-39 | 갱신 | [docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s6.md](topics/2026/2026-09-25-area15-s6.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "6. 대표 접근법과 기술" 절(2,051자)을 옮겼다. 2차 수정: SIPP 가정 한계 문장을 [추정]으로 고쳐 썼다 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s8.md](topics/2026/2026-09-25-area15-s8.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "8. 대표 연구와 자료" 절(1,679자)을 옮겼다 |

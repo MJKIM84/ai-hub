@@ -161,6 +161,11 @@ nav:
       - 17. 로봇 간 협업·물리적 인계 — 핵심 개념과 용어: topics/2026/2026-09-25-area17-s4.md
       - 17. 로봇 간 협업·물리적 인계 — 열린 질문: topics/2026/2026-09-25-area17-s11.md
       - 17. 로봇 간 협업·물리적 인계 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area17-s10.md
+      - 16. 공용 자원·충전·에너지 최적화 — 대표 연구와 자료: topics/2026/2026-09-25-area16-s8.md
+      - 16. 공용 자원·충전·에너지 최적화 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area16-s7.md
+      - 16. 공용 자원·충전·에너지 최적화 — 대표 접근법과 기술: topics/2026/2026-09-25-area16-s6.md
+      - 16. 공용 자원·충전·에너지 최적화 — 핵심 개념과 용어: topics/2026/2026-09-25-area16-s4.md
+      - 16. 공용 자원·충전·에너지 최적화 — 열린 질문: topics/2026/2026-09-25-area16-s11.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 연구와 자료: topics/2026/2026-09-25-area15-s8.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area15-s7.md
       - 15. 다중 로봇 경로·교통 관리 — MAPF — 대표 접근법과 기술: topics/2026/2026-09-25-area15-s6.md
@@ -285,6 +290,7 @@ nav:
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
+    - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
     - 사가 (Saga): glossary/saga.md
@@ -330,6 +336,7 @@ nav:
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
     - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
     - 충돌 기반 탐색 (Conflict-Based Search (CBS)): glossary/conflict-based-search.md
+    - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
@@ -819,6 +826,16 @@ nav:
     - 'ref-497 — Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review': references/ref-497.md
     - ref-498 — 유진로봇, 지능형 제조 물류시스템 공개: references/ref-498.md
     - ref-499 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg: references/ref-499.md
+    - 'ref-530 — Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach': references/ref-530.md
+    - ref-531 — Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers: references/ref-531.md
+    - ref-532 — Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals: references/ref-532.md
+    - ? ref-533 — Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse
+      : references/ref-533.md
+    - ref-534 — Scheduling heterogeneous multi-load AGVs with battery constraints: references/ref-534.md
+    - ref-535 — 배송 로봇의 다층, 다중 배송을 위한 효율적인 경로 계획 및 엘리베이터 층간 이동 시스템: references/ref-535.md
+    - ref-536 — rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp: references/ref-536.md
+    - ref-537 — rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp: references/ref-537.md
+    - ref-538 — rmf_reservation — Experimental reservation library in rust (GitHub): references/ref-538.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

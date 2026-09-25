@@ -3,14 +3,14 @@ title: "오픈 RMF (Open-RMF)"
 type: glossary
 term_ko: 오픈 RMF
 term_en: Open-RMF (Open Robotics Middleware Framework)
-definition: ROS 2 기반의 다중 로봇 조율 프레임워크로, 제조사별 플릿 어댑터와 건물 설비 인터페이스를 통해 로봇·문·승강기 등을 연결하고 작업·교통을 조율한다.
-related_areas: [9, 10, 15, 13]
+definition: Open-RMF 에서 한 요청자가 세션 id 로 승강기 제어권을 받아 세션 종료 요청을 보낼 때까지 점유하는 단위이다.
+related_areas: [9, 10, 13, 15, 16]
 tags: [오픈소스, ROS 2, 다중 로봇, 설비 연동]
-status: draft
+status: published
 created: 2026-09-24
-updated: 2026-09-24
-sources: [ref-004]
-version: 3
+updated: 2026-09-25
+sources: [ref-004, ref-286, ref-312, ref-536]
+version: 5
 confidence: medium
 ---
 
@@ -26,7 +26,7 @@ confidence: medium
 
 ## 한 줄 정의
 
-ROS 2 기반의 다중 로봇 조율 프레임워크로, 제조사별 플릿 어댑터와 건물 설비 인터페이스를 통해 로봇·문·승강기 등을 연결하고 작업·교통을 조율한다. [사실][^ref-004]
+Open-RMF 에서 한 요청자가 세션 id 로 승강기 제어권을 받아 세션 종료 요청을 보낼 때까지 점유하는 단위이다. [추정][^ref-312][^ref-286]
 
 ## 설명
 
@@ -53,3 +53,5 @@ ROP 맥락에서 Open-RMF는 9. 로봇·제조사 관제 연동, 10. 설비·건
 
 - [ref-004](../references/ref-004.md)
 - [표준·프레임워크 목록](../standards/index.md)
+[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-09-25
+[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25

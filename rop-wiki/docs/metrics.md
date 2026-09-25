@@ -25,7 +25,7 @@ version: 1
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
+| [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 3 | 0 | 0 | 7 | 0 | 0 | 10 |
 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -66,7 +66,7 @@ version: 1
 | [13. 작업 배정 — MRTA](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | 2026-09-25 | 2 |
 | [14. 작업 순서·스케줄링](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | published | medium | 2026-09-25 | 2 |
 | [15. 다중 로봇 경로·교통 관리 — MAPF](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | published | medium | 2026-09-25 | 2 |
-| [16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | seed | — | 2026-09-24 | 1 |
+| [16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | published | medium | 2026-09-25 | 2 |
 
 **E. 협업·현장 운영**
 
@@ -99,7 +99,7 @@ version: 1
 
 - 실행 43회 중 최종 통과 42회 (통과율 98%)
 - 1차 검증 판정: 조건부 승인 42, None 1
-- 2차 검증 판정: 통과 40, None 3
+- 2차 검증 판정: 통과 41, None 2
 
 ### 반려·보류 건수
 
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 169 |
-| 오픈소스 문서 | 114 |
+| 논문 | 175 |
+| 오픈소스 문서 | 117 |
 | 표준 | 96 |
 | 벤더 문서 | 23 |
 | 정부·연구기관 | 19 |
 | 기사 | 15 |
 | 업계 보고서 | 3 |
 
-신뢰도: medium 305건, high 98건, low 36건
+신뢰도: medium 312건, high 100건, low 36건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 2026-09-24 | 1 | seed |
 | [18. 사람–로봇 협업·운영 인터페이스](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 2026-09-24 | 1 | seed |
 | [19. 모니터링·이상 탐지·원인 분석](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-09-24 | 1 | seed |
 | [20. 예외 복구·재계획·업무 연속성](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 2026-09-24 | 1 | seed |
 | [21. 온보딩·설정·현장 시운전](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 2026-09-24 | 1 | seed |
+| [22. 시뮬레이션·예측용 디지털 트윈](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->

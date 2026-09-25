@@ -147,8 +147,8 @@
       "tag": "사실",
       "source_ids": [
         "ref-079",
-        "ref-864",
-        "ref-865"
+        "ref-536",
+        "ref-537"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -162,7 +162,7 @@
       "claim": "Open-RMF 교통 그래프는 경유점·차선을 뮤텍스 그룹(mutex group)에 넣을 수 있고, 같은 뮤텍스 그룹에 속한 경유점이나 차선은 한 번에 한 로봇만 점유할 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-864"
+        "ref-536"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -191,7 +191,7 @@
       "claim": "Open-RMF 의 실험적 예약 라이브러리 rmf_reservation 은 로봇이 충전기 같은 자원을 주어진 시간 범위 안에서 정해진 시간 동안 쓰겠다고 요청하면 해법기가 로봇을 자원에 배정하는 제약 자원 스케줄링을 제공한다고 소개된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-866"
+        "ref-538"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -251,7 +251,7 @@
       "claim": "Chen·Gong·Chen·Wang(2024)은 자가 등반 로봇(SCR) 창고의 배터리 관리를 반개방형 대기행렬 네트워크로 모델링해, 배터리 열화를 반영하면 느린 충전이 빠른 충전보다 나은 조건이 있고, 우선 충전 정책이 전용 충전 정책보다 비용 효율적이며, 충전기 대수 결정 도구를 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-861"
+        "ref-533"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -266,7 +266,7 @@
       "claim": "다중 AGV 충전 순서 최적화 연구(Computers & Industrial Engineering, 2024)는 도착 시 충전소가 사용 중일 확률과 충전 전 대기 확률을 충전소마다 확률 변수로 두고 총 주행 시간 기댓값을 최소화하는 혼합 정수 선형 계획을 세웠으며, 허용 최대치까지 완전 충전하는 것이 최적임을 보였다.",
       "tag": "사실",
       "source_ids": [
-        "ref-858"
+        "ref-530"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -281,7 +281,7 @@
       "claim": "Dang·Singh·Adan·Martagan·van de Sande(2021)는 다중 적재·다능력 AGV 에 운반 요청과 충전 요청을 함께 배정·순서화하고 임계 배터리 수준을 지키는 부분 충전 시간을 정하는 혼합 정수 선형 계획과 적응형 대규모 이웃 탐색을 제시해, 현행 방식 대비 비용을 약 20~50% 줄였다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-862"
+        "ref-534"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -296,7 +296,7 @@
       "claim": "근접 정책 최적화(PPO) 기반 심층 강화학습 연구(arXiv 2607.05683)는 고정 충전소가 있는 다중 블록 창고에서 주문이 확률적으로 도착할 때 충전소 선택과 충전 시간을 충전소 대기 예상 시간을 반영해 학습하며, 고정 규칙 휴리스틱은 동적 환경과 다중 로봇 조율에서 비효율적이라고 지적한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-859"
+        "ref-531"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -311,7 +311,7 @@
       "claim": "Ma·Zhou·Stephen(2020)은 자동화 컨테이너 터미널의 배터리 AGV 시스템을 시뮬레이션해 분산형 충전소 배치와 점진적 재충전 정책이 좋은 성능을 낸다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-860"
+        "ref-532"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -401,7 +401,7 @@
       "claim": "박재범·조성준·김준식·유범재(2024)는 서버를 통해 엘리베이터를 신속하게 제어하는 모듈과 작업 구조로 층간 이동을 처리하고, 노드 그래프 기반으로 한 번의 주행에서 여러 목적지를 고려하는 다층 경로 계획 알고리즘을 제안해 실증 시험과 주행 시간 비교로 검증했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-863"
+        "ref-535"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -418,9 +418,9 @@
       "source_ids": [
         "ref-228",
         "ref-105",
-        "ref-858",
-        "ref-859",
-        "ref-861",
+        "ref-530",
+        "ref-531",
+        "ref-533",
         "ref-312"
       ],
       "cross_checked": false,
@@ -435,8 +435,8 @@
       "claim": "피킹 성수기에는 여러 로봇이 비슷한 시각에 충전 하한에 닿아 충전기 대기열이 생기고 가용 로봇 수가 줄 수 있으므로, 주문이 적은 시간대에 기회 충전을 넣거나 충전 요청을 작업 배정과 함께 계획하는 방식이 처리량 손실을 줄이는 수단이 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-862",
-        "ref-859",
+        "ref-534",
+        "ref-531",
         "ref-031"
       ],
       "cross_checked": false,
@@ -469,7 +469,7 @@
       "source_ids": [
         "ref-031",
         "ref-104",
-        "ref-864",
+        "ref-536",
         "ref-312"
       ],
       "cross_checked": false,
@@ -502,7 +502,7 @@
       "source_ids": [
         "ref-216",
         "ref-079",
-        "ref-865"
+        "ref-537"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -516,15 +516,15 @@
       "claim": "이 영역은 충전 요청을 작업 배정과 함께 푸는 연구로 13. 작업 배정 — MRTA 와, 뮤텍스 그룹·대기 지점으로 15. 다중 로봇 경로·교통 관리 — MAPF 와, 승강기 세션으로 10. 설비·건물 시스템 연동과, 충전기 대수·배치로 3. 처리능력·거점·설비 계획과, 팩트시트 충전 설정으로 5. 로봇 능력·작업 온톨로지와, 현재 배터리 상태로 8. 실시간 세계 상태·데이터 일관성과, 충전 정책 시뮬레이션으로 22. 시뮬레이션·예측용 디지털 트윈과, 학습 기반 충전 결정으로 27. AI·학습·적응과 모델 운영과 이어지는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-862",
-        "ref-864",
+        "ref-534",
+        "ref-536",
         "ref-312",
-        "ref-861",
+        "ref-533",
         "ref-109",
         "ref-228",
         "ref-051",
-        "ref-860",
-        "ref-859"
+        "ref-532",
+        "ref-531"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -821,7 +821,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-858",
+      "id": "ref-530",
       "org": "Computers & Industrial Engineering 게재 논문(저자 미확인)",
       "title": "Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach",
       "published": "2024-08",
@@ -836,7 +836,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-859",
+      "id": "ref-531",
       "org": "arXiv 2607.05683 저자(미확인)",
       "title": "Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers",
       "published": "2026-07",
@@ -851,7 +851,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-860",
+      "id": "ref-532",
       "org": "Ma, N., Zhou, C., & Stephen, A.",
       "title": "Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals",
       "published": "2020",
@@ -866,7 +866,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-861",
+      "id": "ref-533",
       "org": "Chen, W., Gong, Y., Chen, Q., & Wang, H.",
       "title": "Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse",
       "published": "2024-01",
@@ -881,7 +881,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-862",
+      "id": "ref-534",
       "org": "Dang, Q.-V., Singh, N., Adan, I., Martagan, T., & van de Sande, D.",
       "title": "Scheduling heterogeneous multi-load AGVs with battery constraints",
       "published": "2021-12",
@@ -896,7 +896,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-863",
+      "id": "ref-535",
       "org": "박재범, 조성준, 김준식, 유범재",
       "title": "배송 로봇의 다층, 다중 배송을 위한 효율적인 경로 계획 및 엘리베이터 층간 이동 시스템",
       "published": "2024",
@@ -911,7 +911,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-864",
+      "id": "ref-536",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
       "published": null,
@@ -926,7 +926,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-865",
+      "id": "ref-537",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp",
       "published": null,
@@ -941,7 +941,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-866",
+      "id": "ref-538",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_reservation — Experimental reservation library in rust (GitHub)",
       "published": null,
@@ -1011,7 +1011,7 @@
       "f12 rmf_reservation README 원문 열지 못함(main·master 404), 배포판 사용 여부 미확인",
       "f10 뮤텍스 그룹 동시 진입 버그 보고(open-rmf 이슈)가 있어 실제 동작 신뢰성 미확인",
       "f15~f26 근거 논문 원문 미열람(검색 요약·제목 범위)",
-      "f17 ref-858 저자 미확인",
+      "f17 ref-530 저자 미확인",
       "f18·f19 성능 수치는 저자 보고",
       "f22·f25 는 제목 수준만 확인",
       "f14 MiR 충전 마커는 벤더 주장이며 이번에 다시 열지 않음",
@@ -1026,6 +1026,6 @@
       "queries": 19,
       "sources": 9
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-031·ref-228·ref-051·ref-105·ref-079·ref-039·ref-104·ref-377·ref-312·ref-286·ref-284·ref-216, 신규 ref-864·ref-865. rmf_reservation README 는 404, task_new.md 에는 충전 내용 없음. 그 밖의 신규 7건(ref-858~ref-863, ref-866)과 재사용 ref-219·ref-098·ref-109·ref-146·ref-060·ref-103·ref-321 은 원문 미열람(신뢰도 상한 medium). finding 신뢰도 모두 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 9건/15(ref-858~ref-866, 예약 구간 안), 재사용 19건. 세부영역 반영 제안 4건(트랙 floorplan-recognition 2026-09-25-19 3건, manual-capability-ontology 2026-09-25-23 1건)을 모두 검토해 f1·f3·f5·f9·f13·f14·f21·f32 로 6·7·10절 반영을 제안했다(batteryCharging 필드 이름은 스키마 원문 기준으로 정정). 한국 자료: 박재범 외 2024(ref-863). 한국 물류센터 충전 연구는 검색 2회에서 찾지 못함. 교차 규칙: 학습 기반 충전 결정(f19)은 27. AI·학습·적응과 모델 운영과 이 영역 양쪽 연결을 제안했다. 8. 실시간 세계 상태·데이터 일관성(현재 배터리 상태)과 22. 시뮬레이션·예측용 디지털 트윈(충전 정책 실험)은 섞지 않았다. 정정 요청 없음. oq-016(충전·대기 시간의 OEE 손실 분류)은 관련 근거를 찾지 못해 해결 제안하지 않았다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-031·ref-228·ref-051·ref-105·ref-079·ref-039·ref-104·ref-377·ref-312·ref-286·ref-284·ref-216, 신규 ref-536·ref-537. rmf_reservation README 는 404, task_new.md 에는 충전 내용 없음. 그 밖의 신규 7건(ref-530~ref-535, ref-538)과 재사용 ref-219·ref-098·ref-109·ref-146·ref-060·ref-103·ref-321 은 원문 미열람(신뢰도 상한 medium). finding 신뢰도 모두 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 9건/15(ref-530~ref-538, 예약 구간 안), 재사용 19건. 세부영역 반영 제안 4건(트랙 floorplan-recognition 2026-09-25-19 3건, manual-capability-ontology 2026-09-25-23 1건)을 모두 검토해 f1·f3·f5·f9·f13·f14·f21·f32 로 6·7·10절 반영을 제안했다(batteryCharging 필드 이름은 스키마 원문 기준으로 정정). 한국 자료: 박재범 외 2024(ref-535). 한국 물류센터 충전 연구는 검색 2회에서 찾지 못함. 교차 규칙: 학습 기반 충전 결정(f19)은 27. AI·학습·적응과 모델 운영과 이 영역 양쪽 연결을 제안했다. 8. 실시간 세계 상태·데이터 일관성(현재 배터리 상태)과 22. 시뮬레이션·예측용 디지털 트윈(충전 정책 실험)은 섞지 않았다. 정정 요청 없음. oq-016(충전·대기 시간의 OEE 손실 분류)은 관련 근거를 찾지 못해 해결 제안하지 않았다."
   }
 }
