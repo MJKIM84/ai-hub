@@ -30,7 +30,7 @@
       "claim": "과업 지향 대화 시스템의 자연어 이해는 발화의 의도를 분류하는 의도 인식(intent detection)과 발화의 각 토큰에 의미 유형을 붙여 인자 값을 뽑는 슬롯 채우기(slot filling)의 두 하위 과제로 이루어지며, 두 과제를 함께 학습하는 결합 모델이 연구되어 왔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-565"
+        "ref-357"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -45,7 +45,7 @@
       "claim": "오픈소스 대화 프레임워크 Rasa 의 폼(form)은 도메인 파일에 필수 슬롯(required_slots)을 정해 두고, 활성화되면 비어 있는 다음 필수 슬롯을 utter_ask_<슬롯 이름> 응답으로 사용자에게 묻고, 추출한 값을 사용자 정의 검증 동작으로 검사하며, 필수 슬롯이 모두 채워지면 비활성화된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-564"
+        "ref-356"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -73,7 +73,7 @@
       "claim": "DELIVER(2025)는 말이나 글로 된 지시를 경량 LLaMA3 가 해석해 픽업·배송 위치를 뽑고, 보로노이 분할로 로봇별 구역을 나눈 뒤 경계의 중계 지점에서 화물을 넘기는 다중 로봇 픽업·배송 체계를 ROS 2 Gazebo 와 TurtleBot3 실물로 검증했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-568"
+        "ref-360"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -88,7 +88,7 @@
       "claim": "Sucker·Neubauer·Henrich(IEEE IRC 2024)는 '몇 분 뒤에 시작' 같은 모호한 시간 요구를 담은 지시를 시작 시각별 사용자 만족도를 나타내는 만족도 함수를 가진 퍼지 기술(fuzzy skill)로 표현하고, 사용자 연구에서 사다리꼴 함수가 종 모양보다 잘 맞으며 그 모양이 전치사에 따라 체계적으로 달라진다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-569"
+        "ref-361"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -103,7 +103,7 @@
       "claim": "Chen 외의 언어 모델 기반 상식 추론(LMCR, ICRA 2020)은 자연어 지시를 동사 프레임으로 파싱한 뒤, 빠진 정보를 사용자에게 묻지 않고 주변에서 관찰한 객체와 대규모 텍스트로 학습한 언어 모델의 상식 추론으로 채운다.",
       "tag": "사실",
       "source_ids": [
-        "ref-566"
+        "ref-358"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -118,8 +118,8 @@
       "claim": "고려대 등의 CLARA(IEEE RA-L 2024)는 LLM 불확실성 추정으로 로봇 명령을 명확한 명령과 불확실한 명령으로 나누고, 불확실한 명령을 상황 맥락으로 모호한 명령과 수행 불가능한 명령으로 다시 구분해, 모호한 명령에는 LLM 이 만든 질문으로 사용자와 대화해 모호성을 풀고 수행 불가능한 명령은 거절한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-560",
-        "ref-561"
+        "ref-352",
+        "ref-353"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -133,8 +133,8 @@
       "claim": "KnowNo(CoRL 2023)는 LLM 계획기가 단계마다 여러 선택지를 만들게 하고 등각 예측(conformal prediction)으로 정한 문턱을 넘는 선택지가 둘 이상이면 사람에게 도움을 요청하며, 사용자가 정한 수준의 작업 성공을 통계적으로 보장하면서 사람 개입을 줄인다고 밝힌다.",
       "tag": "사실",
       "source_ids": [
-        "ref-558",
-        "ref-559"
+        "ref-350",
+        "ref-351"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -148,7 +148,7 @@
       "claim": "Wang 외(EMNLP 2025)는 실제 지시를 분석해 LLM 에이전트가 불명확한 지시에서 빠진 도구 호출 인자를 임의로 지어내는 경향이 있다고 보고하고, 불명확한 지시 데이터셋 NoisyToolBench 와, 장애를 만나면 사용자에게 묻게 하는 Ask-when-Needed(AwN) 프롬프트 틀을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-567"
+        "ref-359"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -163,8 +163,8 @@
       "claim": "AmbiK 는 주방 환경의 모호한 로봇 지시와 그 모호하지 않은 짝 1000쌍(2000개 과업)을 모은 텍스트 데이터셋으로, 모호성 유형(사람 선호·상식·안전), 환경 설명, 명확화 질문과 답, 사용자 의도, 과업 계획을 담고 KnowNo·LofreeCP·LAP·Binary·NoHelp 다섯 방법의 실험 틀을 제공한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-562",
-        "ref-563"
+        "ref-354",
+        "ref-355"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -178,7 +178,7 @@
       "claim": "AmbiK 논문 저자들은 KnowNo·LAP·LofreeCP·Binary 같은 기존 모호성 탐지 방법이 모호한 과업과 모호하지 않은 과업을 대부분 구분하지 못했고, 모호성 구분 점수가 대부분 10% 미만(가장 높은 것은 Llama-3-8B 에서 LofreeCP 44%, KnowNo 40%)이었다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-563"
+        "ref-355"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -193,7 +193,7 @@
       "claim": "OpenAI 는 구조화 출력(Structured Outputs) 기능이 모델 출력을 개발자가 준 JSON 스키마에 맞추도록 보장해 필수 키 누락이나 잘못된 열거 값을 막는다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-570"
+        "ref-362"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -209,12 +209,12 @@
       "claim": "q1-04 에 대해 확인한 기존 방법은 (1) 의도·슬롯을 미리 정의하고 비어 있는 필수 슬롯을 차례로 묻는 슬롯 기반 방식(의도 인식·슬롯 채우기, Rasa 폼), (2) 빠진 정보를 환경 관찰과 상식 추론으로 스스로 채우는 방식(LMCR), (3) LLM 의 불확실성·빠진 인자를 탐지해 필요할 때만 되묻는 방식(KnowNo, CLARA, AwN)으로 나뉘는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-565",
-        "ref-564",
-        "ref-566",
-        "ref-558",
-        "ref-560",
-        "ref-567"
+        "ref-357",
+        "ref-356",
+        "ref-358",
+        "ref-350",
+        "ref-352",
+        "ref-359"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -229,11 +229,11 @@
       "claim": "이번에 확인한 상황 정보 추출·되묻기 연구의 평가 환경은 주방·가정(AmbiK, CLARA), 도구 호출 API(NoisyToolBench), 실내·도시 내비게이션(Lang2LTL)이었고, 물류에 가까운 예는 픽업·배송 위치만 뽑는 DELIVER 뿐이어서 화물 식별자·긴급도·기한을 필수 항목으로 둔 물류 지시 추출·되묻기 연구나 데이터셋은 이번 검색 범위에서 찾지 못했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-562",
-        "ref-560",
-        "ref-567",
+        "ref-354",
+        "ref-352",
+        "ref-359",
         "ref-055",
-        "ref-568"
+        "ref-360"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -248,9 +248,9 @@
       "claim": "업무 분해·배정 설계 초안의 '상황' 속성(장소 표현, 대상 표현, 시간 조건)을 필수 슬롯으로 두면 값마다 지시 원문에서 읽었는지, 환경·상식으로 추론했는지, 사용자에게 되물어 얻었는지를 구분해 기록할 수 있고, 추론으로 채운 값(LMCR 방식)은 AwN 이 지적한 인자 지어내기와 구분되지 않아 확인 대상이 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-564",
-        "ref-566",
-        "ref-567"
+        "ref-356",
+        "ref-358",
+        "ref-359"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -265,7 +265,7 @@
       "claim": "분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, 지시에서 뽑은 긴급도·기한은 배정의 목적(가까움 대 기한 준수)을 바꾸는 입력이므로, 퍼지 시간 요구를 만족도 함수로 표현한 연구처럼 기한을 엄격 제약이 아닌 허용 창으로 스케줄러·배정기에 넘기는 구조가 13. 작업 배정 — MRTA 와 14. 작업 순서·스케줄링 사이의 연결 근거가 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-569"
+        "ref-361"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -293,7 +293,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-558",
+      "id": "ref-350",
       "org": "Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트)",
       "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io)",
       "published": null,
@@ -308,7 +308,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-559",
+      "id": "ref-351",
       "org": "Ren, A. Z. 외",
       "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
       "published": "2023-07",
@@ -323,7 +323,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-560",
+      "id": "ref-352",
       "org": "Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트)",
       "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io)",
       "published": null,
@@ -338,7 +338,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-561",
+      "id": "ref-353",
       "org": "Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S.",
       "title": "CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents",
       "published": "2024",
@@ -353,7 +353,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-562",
+      "id": "ref-354",
       "org": "cog-model (AmbiK 저자)",
       "title": "AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment)",
       "published": null,
@@ -368,7 +368,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-563",
+      "id": "ref-355",
       "org": "AmbiK 저자(ACL 2025, 저자 목록 미확인)",
       "title": "AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment",
       "published": "2025",
@@ -383,7 +383,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-564",
+      "id": "ref-356",
       "org": "Rasa Technologies (RasaHQ/rasa GitHub)",
       "title": "Forms — Rasa documentation (docs/docs/forms.mdx)",
       "published": null,
@@ -398,7 +398,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-565",
+      "id": "ref-357",
       "org": "ACM Computing Surveys 게재 서베이 저자(미확인)",
       "title": "A Survey of Joint Intent Detection and Slot Filling Models in Natural Language Understanding",
       "published": "2022",
@@ -413,7 +413,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-566",
+      "id": "ref-358",
       "org": "Chen, H. 외",
       "title": "Enabling Robots to Understand Incomplete Natural Language Instructions Using Commonsense Reasoning",
       "published": "2019-04",
@@ -428,7 +428,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-567",
+      "id": "ref-359",
       "org": "Wang, W. 외",
       "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
       "published": "2024-09",
@@ -443,7 +443,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-568",
+      "id": "ref-360",
       "org": "arXiv 2508.19114 저자(미확인)",
       "title": "DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning",
       "published": "2025-08",
@@ -458,7 +458,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-569",
+      "id": "ref-361",
       "org": "Sucker, S., Neubauer, M., & Henrich, D.",
       "title": "Robot Tasks with Fuzzy Time Requirements from Natural Language Instructions",
       "published": "2024-11",
@@ -473,7 +473,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-570",
+      "id": "ref-362",
       "org": "OpenAI",
       "title": "Introducing Structured Outputs in the API",
       "published": "2024-08",
@@ -577,8 +577,8 @@
     "unverified": [
       "모든 finding 교차 확인 없음: 연구마다 논문과 프로젝트 페이지·README 가 같은 저자 계열이거나 단일 출처",
       "f1·f4·f5·f6·f9·f11·f12 근거 출처 원문 미열람(검색 요약 범위)",
-      "f11 AmbiK 수치(모호성 구분 점수 10% 미만, 44%·40%)는 저자 보고값이며 독립 재현 미확인, ref-563 저자 목록 미확인",
-      "ref-565 서베이 저자 목록 미확인, ref-568 DELIVER 저자 목록 미확인",
+      "f11 AmbiK 수치(모호성 구분 점수 10% 미만, 44%·40%)는 저자 보고값이며 독립 재현 미확인, ref-355 저자 목록 미확인",
+      "ref-357 서베이 저자 목록 미확인, ref-360 DELIVER 저자 목록 미확인",
       "f12 구조화 출력의 엄격 모드(모든 필드 필수, null 허용 유형) 설명은 제3자 요약에만 있어 claim 에 넣지 않음",
       "f14 물류 지시 추출·되묻기 연구의 부재는 검색 범위의 관찰이며 부재의 확인이 아님",
       "손승아·강태민·하동수(KAIST), '자연어 로봇 제어 기술 동향'(정보과학회지 2024-10)은 서지만 확인하고 내용을 보지 못해 넣지 않음",
@@ -589,7 +589,7 @@
       "queries": 22,
       "sources": 13
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 5건을 열었다(ref-558 KnowNo 프로젝트 페이지, ref-560 CLARA 프로젝트 페이지, ref-562 AmbiK README, ref-564 Rasa 폼 문서, 재사용 ref-055 Lang2LTL README). 논문·벤더 발표문 9건은 원문 미열람(신뢰도 상한 medium, 벤더 low). 검색 22회/40, 신규 출처 13건/20(ref-558~ref-570, 예약 구간 안), 재사용 1건(ref-055). 교차 확인 0건. 질문 선택: target.json 지정 q1-04 1건. q1-04 는 추출(의도·슬롯, 장소, 시간)과 빠진 정보 처리 세 방식(f13)으로 답했으나, 물류 지시(화물 식별자·긴급도·기한)를 대상으로 한 연구는 찾지 못했다(f14). 한국 자료: CLARA(고려대 주도, ref-560·ref-561). 한국어 검색 4회에서 물류 현장 되묻기 사례는 찾지 못했다. 교차 규칙: LLM 불확실성·되묻기 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 18. 사람–로봇 협업·운영 인터페이스·13. 작업 배정 — MRTA 양쪽에 반영 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 새 일반 열린 질문 없음: 물류 지시 데이터셋 문제는 트랙 백로그 q2-03·q1-05 와 겹친다. 백로그 참고: q1-05 와 q1-06 중복 정리 필요(이전 검증 지적 유지). 후속 질문 2건. 온톨로지 변경 제안 2건(상황 개념 수정)."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 5건을 열었다(ref-350 KnowNo 프로젝트 페이지, ref-352 CLARA 프로젝트 페이지, ref-354 AmbiK README, ref-356 Rasa 폼 문서, 재사용 ref-055 Lang2LTL README). 논문·벤더 발표문 9건은 원문 미열람(신뢰도 상한 medium, 벤더 low). 검색 22회/40, 신규 출처 13건/20(ref-350~ref-362, 예약 구간 안), 재사용 1건(ref-055). 교차 확인 0건. 질문 선택: target.json 지정 q1-04 1건. q1-04 는 추출(의도·슬롯, 장소, 시간)과 빠진 정보 처리 세 방식(f13)으로 답했으나, 물류 지시(화물 식별자·긴급도·기한)를 대상으로 한 연구는 찾지 못했다(f14). 한국 자료: CLARA(고려대 주도, ref-352·ref-353). 한국어 검색 4회에서 물류 현장 되묻기 사례는 찾지 못했다. 교차 규칙: LLM 불확실성·되묻기 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 18. 사람–로봇 협업·운영 인터페이스·13. 작업 배정 — MRTA 양쪽에 반영 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 새 일반 열린 질문 없음: 물류 지시 데이터셋 문제는 트랙 백로그 q2-03·q1-05 와 겹친다. 백로그 참고: q1-05 와 q1-06 중복 정리 필요(이전 검증 지적 유지). 후속 질문 2건. 온톨로지 변경 제안 2건(상황 개념 수정)."
   },
   "track": {
     "slug": "nl-task-chatbot",

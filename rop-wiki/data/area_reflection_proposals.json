@@ -637,6 +637,56 @@
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "summary": "실내 공간 표준의 발행 상태를 더한다: IndoorGML 2.0 Part 1 발행·Part 2 인코딩 초안(JSON v0.5.0), ISO 19164:2024(표준 간 클래스 대응 부속서, 원문 미열람), ISO 16739-1:2024(IFC 4.3), ifcOWL(IFC4_ADD2까지, 4.3 목록 없음), BOT v0.3.2(커뮤니티 그룹 사양), IMDF 1.0.0(OGC 커뮤니티 표준). 근거 f1·f3·f5·f10·f11·f12·f15(실행 2026-09-25-28). 3D 장면 그래프(f20)는 로봇 자체 지능·제어 연계 대상이라 제외.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "자연어 지시에서 뽑은 픽업·배송 위치(DELIVER, LLaMA3 추출 + 보로노이 분할·중계 지점)와 긴급도·기한이 배정의 입력이 되는 구조, 모호한 시간 요구를 만족도 함수(허용 창)로 넘기는 연구(Sucker 외, IEEE IRC 2024)와 SCM 관점 질문(가까움 대 기한 준수)의 연결([추정]). 27. AI·학습·적응과 모델 운영과 양쪽 연결",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 18,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "지시를 받는 운영 인터페이스의 되묻기 방식: 필수 슬롯 폼(Rasa 3.x), 불확실성 기반 도움 요청(KnowNo, 등각 예측), 명령의 명확·모호·수행 불가 판별과 질문 생성(CLARA, 국내 연구), 세 방식의 정리는 이 위키의 [추정]. 27. AI·학습·적응과 모델 운영과 양쪽 연결",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 18,
+      "section": "8. 대표 연구와 자료",
+      "summary": "Rasa 폼 문서(ref-356), CLARA(고려대 등, IEEE RA-L 2024, ref-352·ref-353), KnowNo(CoRL 2023, ref-350·ref-351), 작업 지향 대화의 의도 인식·슬롯 채우기 서베이(Weld 외 2022, ref-357)",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 불확실성 정량화(등각 예측, KnowNo)로 필요할 때만 사람에게 묻는 방법, LLM 에이전트의 빠진 인자 지어내기와 Ask-when-Needed, 모호성 탐지의 낮은 구분 성능(AmbiK, 저자 보고값·주방 텍스트 작업 조건), 구조화 출력([추정] 벤더 주장). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 양쪽 연결",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "KnowNo(ref-350·ref-351), AmbiK 데이터셋·논문(ref-354·ref-355), Wang 외 Learning to Ask(EMNLP 2025, ref-359), LMCR(ICRA 2020, ref-358), OpenAI 구조화 출력 발표문(ref-362, [추정] 벤더 주장)",
+      "status": "제안"
     }
   ]
 }

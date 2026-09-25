@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-053, ref-054, ref-055, ref-056, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-092, ref-093, ref-094, ref-095, ref-087, ref-088, ref-164, ref-165, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-173, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-281, ref-558, ref-559, ref-560, ref-561, ref-562, ref-563, ref-564, ref-565, ref-566, ref-567, ref-568, ref-569, ref-570]
+sources: [ref-053, ref-054, ref-055, ref-056, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-092, ref-093, ref-094, ref-095, ref-087, ref-088, ref-164, ref-165, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-173, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-281, ref-350, ref-351, ref-352, ref-353, ref-354, ref-355, ref-356, ref-357, ref-358, ref-359, ref-360, ref-361, ref-362]
 last_run: 2026-09-25
 version: 5
 ---
@@ -173,7 +173,7 @@ PIP-LLM·FLEET·Peng 외처럼 LLM 뒤에 이동 비용·작업 부하·makespan
 
 ### q1-04 자연어 지시에서 상황 정보를 뽑고 빠진 정보를 되묻는 방법 {#q1-04}
 
-자연어 지시에서 상황 정보를 뽑은 뒤 빠진 정보를 다루는 기존 방법은 필수 슬롯 되묻기, 추론으로 채움, 불확실성 기반 되묻기의 세 방식으로 나뉘는 것으로 보인다는 것이 이 위키의 정리다. [추정][^ref-565][^ref-564][^ref-566][^ref-558][^ref-560][^ref-567] 이 답의 신뢰도는 low이다. 확인한 연구의 평가 환경이 가정·주방, 도구 호출, 내비게이션이었고, 화물·긴급도·기한을 다룬 물류 지시 연구는 이번 검색 범위에서 찾지 못했기 때문이다. 이번 실행(2026-09-25-30)에서 원문을 연 것은 GitHub 공식 문서 5건(KnowNo·CLARA 프로젝트 페이지, AmbiK README, Rasa 폼 문서, Lang2LTL README)이고, 논문·벤더 발표문은 검색 요약 범위에서 확인했다. 논문과 프로젝트 페이지·README가 같은 저자 계열이라 교차 확인된 주장은 없다.
+자연어 지시에서 상황 정보를 뽑은 뒤 빠진 정보를 다루는 기존 방법은 필수 슬롯 되묻기, 추론으로 채움, 불확실성 기반 되묻기의 세 방식으로 나뉘는 것으로 보인다는 것이 이 위키의 정리다. [추정][^ref-357][^ref-356][^ref-358][^ref-350][^ref-352][^ref-359] 이 답의 신뢰도는 low이다. 확인한 연구의 평가 환경이 가정·주방, 도구 호출, 내비게이션이었고, 화물·긴급도·기한을 다룬 물류 지시 연구는 이번 검색 범위에서 찾지 못했기 때문이다. 이번 실행(2026-09-25-30)에서 원문을 연 것은 GitHub 공식 문서 5건(KnowNo·CLARA 프로젝트 페이지, AmbiK README, Rasa 폼 문서, Lang2LTL README)이고, 논문·벤더 발표문은 검색 요약 범위에서 확인했다. 논문과 프로젝트 페이지·README가 같은 저자 계열이라 교차 확인된 주장은 없다.
 
 #### 빠진 정보를 다루는 세 방식
 
@@ -187,44 +187,44 @@ PIP-LLM·FLEET·Peng 외처럼 LLM 뒤에 이동 비용·작업 부하·makespan
 
 #### 상황 정보의 추출
 
-- **의도·슬롯**: 작업 지향 대화 시스템(task-oriented dialogue system)의 자연어 이해는 발화의 의도를 분류하는 의도 인식(intent detection)과 발화의 각 토큰에 의미 유형을 붙여 인자 값을 뽑는 슬롯 채우기(slot filling)의 두 하위 과제로 이루어지며, 두 과제를 함께 학습하는 결합 모델이 연구되어 왔다(Weld 외 서베이, 2022-12). [사실][^ref-565]
+- **의도·슬롯**: 작업 지향 대화 시스템(task-oriented dialogue system)의 자연어 이해는 발화의 의도를 분류하는 의도 인식(intent detection)과 발화의 각 토큰에 의미 유형을 붙여 인자 값을 뽑는 슬롯 채우기(slot filling)의 두 하위 과제로 이루어지며, 두 과제를 함께 학습하는 결합 모델이 연구되어 왔다(Weld 외 서베이, 2022-12). [사실][^ref-357]
 - **장소 표현**: Lang2LTL은 [q1-01](#q1-01)에서 본 것처럼 명령에서 지칭 표현을 뽑아 실제 환경의 랜드마크에 접지한 뒤 LTL 식으로 옮기는 모듈 구조를 쓰므로, 장소 표현의 추출과 접지를 별도 단계로 둔다. [사실][^ref-055][^ref-056] 같은 README는 후속판 Lang2LTL-2가 랜드마크의 텍스트·시각 설명을 함께 써서 처음 보는 실내·실외 환경에 명령을 접지한다고 소개한다(확인일 2026-09-25 기준). [추정][^ref-055]
-- **픽업·배송 위치**: DELIVER(2025-08, SII 2026 게재)는 말이나 글로 된 지시를 경량 LLaMA3가 해석해 픽업·배송 위치를 뽑고, 보로노이 분할로 로봇별 구역을 나눈 뒤 경계의 중계 지점에서 화물을 넘기는 다중 로봇 픽업·배송 체계를 ROS 2 Gazebo와 TurtleBot3 실물로 검증했다. [사실][^ref-568]
-- **모호한 시간 요구**: Sucker·Neubauer·Henrich(IEEE IRC 2024)는 '몇 분 뒤에 시작' 같은 모호한 시간 요구를 담은 지시를 시작 시각별 사용자 만족도를 나타내는 만족도 함수를 가진 퍼지 스킬(fuzzy skill)로 표현하고, 사용자 연구에서 사다리꼴 함수가 사용자 만족도를 가장 잘 근사했으며(저자 보고, 사용자 연구 조건) 그 모양이 전치사에 따라 체계적으로 달라진다고 보고했다. [사실][^ref-569]
+- **픽업·배송 위치**: DELIVER(2025-08, SII 2026 게재)는 말이나 글로 된 지시를 경량 LLaMA3가 해석해 픽업·배송 위치를 뽑고, 보로노이 분할로 로봇별 구역을 나눈 뒤 경계의 중계 지점에서 화물을 넘기는 다중 로봇 픽업·배송 체계를 ROS 2 Gazebo와 TurtleBot3 실물로 검증했다. [사실][^ref-360]
+- **모호한 시간 요구**: Sucker·Neubauer·Henrich(IEEE IRC 2024)는 '몇 분 뒤에 시작' 같은 모호한 시간 요구를 담은 지시를 시작 시각별 사용자 만족도를 나타내는 만족도 함수를 가진 퍼지 스킬(fuzzy skill)로 표현하고, 사용자 연구에서 사다리꼴 함수가 사용자 만족도를 가장 잘 근사했으며(저자 보고, 사용자 연구 조건) 그 모양이 전치사에 따라 체계적으로 달라진다고 보고했다. [사실][^ref-361]
 
 #### 방식 1. 필수 슬롯 되묻기
 
-- 오픈소스 대화 프레임워크 Rasa의 폼(form)은 도메인 파일에 필수 슬롯(required_slots)을 정해 두고, 활성화되면 비어 있는 다음 필수 슬롯을 utter_ask_<슬롯 이름> 응답으로 사용자에게 묻고, 추출한 값을 사용자 정의 검증 동작으로 검사하며, 필수 슬롯이 모두 채워지면 비활성화된다(Rasa 3.x 문서, main 브랜치, 확인일 2026-09-25 기준). [사실][^ref-564]
+- 오픈소스 대화 프레임워크 Rasa의 폼(form)은 도메인 파일에 필수 슬롯(required_slots)을 정해 두고, 활성화되면 비어 있는 다음 필수 슬롯을 utter_ask_<슬롯 이름> 응답으로 사용자에게 묻고, 추출한 값을 사용자 정의 검증 동작으로 검사하며, 필수 슬롯이 모두 채워지면 비활성화된다(Rasa 3.x 문서, main 브랜치, 확인일 2026-09-25 기준). [사실][^ref-356]
 
 #### 방식 2. 추론으로 채움
 
-- Chen 외의 언어 모델 기반 상식 추론(LMCR, ICRA 2020)은 자연어 지시를 동사 프레임으로 파싱한 뒤, 빠진 정보를 주변 관찰 객체와 대규모 텍스트로 학습한 언어 모델의 상식 추론으로 자동으로 채운다. [사실][^ref-566]
+- Chen 외의 언어 모델 기반 상식 추론(LMCR, ICRA 2020)은 자연어 지시를 동사 프레임으로 파싱한 뒤, 빠진 정보를 주변 관찰 객체와 대규모 텍스트로 학습한 언어 모델의 상식 추론으로 자동으로 채운다. [사실][^ref-358]
 
 #### 방식 3. 불확실성 기반 되묻기
 
-- **KnowNo**: KnowNo(CoRL 2023)는 LLM 계획기가 단계마다 여러 선택지를 만들게 하고 등각 예측(conformal prediction)으로 정한 문턱을 넘는 선택지가 둘 이상이면 사람에게 도움을 요청하며, 사용자가 정한 수준의 작업 성공을 통계적으로 보장하면서 사람 개입을 줄인다고 밝힌다. [사실][^ref-558][^ref-559]
-- **CLARA(국내 연구)**: 고려대 등의 CLARA(IEEE RA-L 2024, ICRA 2024 발표)는 LLM 불확실성 추정으로 로봇 명령을 명확한 명령과 불확실한 명령으로 나누고, 불확실한 명령을 상황 맥락으로 모호한 명령과 수행 불가능한 명령으로 다시 구분해, 모호한 명령에는 LLM이 만든 질문으로 사용자와 대화해 모호성을 풀고 수행 불가능한 명령은 거절한다. [사실][^ref-560][^ref-561] 논문과 프로젝트 페이지는 같은 저자라 독립 교차 확인은 아니다.
-- **Ask-when-Needed**: Wang 외(EMNLP 2025)는 실제 지시를 분석해 [LLM 에이전트](../../glossary/llm-agent.md)가 불명확한 지시에서 빠진 도구 호출 인자를 임의로 지어내는 경향이 있다고 보고하고, 불명확한 지시 데이터셋 NoisyToolBench와, 장애를 만나면 사용자에게 묻게 하는 Ask-when-Needed(AwN) 프롬프트 틀을 제안했다. [사실][^ref-567]
+- **KnowNo**: KnowNo(CoRL 2023)는 LLM 계획기가 단계마다 여러 선택지를 만들게 하고 등각 예측(conformal prediction)으로 정한 문턱을 넘는 선택지가 둘 이상이면 사람에게 도움을 요청하며, 사용자가 정한 수준의 작업 성공을 통계적으로 보장하면서 사람 개입을 줄인다고 밝힌다. [사실][^ref-350][^ref-351]
+- **CLARA(국내 연구)**: 고려대 등의 CLARA(IEEE RA-L 2024, ICRA 2024 발표)는 LLM 불확실성 추정으로 로봇 명령을 명확한 명령과 불확실한 명령으로 나누고, 불확실한 명령을 상황 맥락으로 모호한 명령과 수행 불가능한 명령으로 다시 구분해, 모호한 명령에는 LLM이 만든 질문으로 사용자와 대화해 모호성을 풀고 수행 불가능한 명령은 거절한다. [사실][^ref-352][^ref-353] 논문과 프로젝트 페이지는 같은 저자라 독립 교차 확인은 아니다.
+- **Ask-when-Needed**: Wang 외(EMNLP 2025)는 실제 지시를 분석해 [LLM 에이전트](../../glossary/llm-agent.md)가 불명확한 지시에서 빠진 도구 호출 인자를 임의로 지어내는 경향이 있다고 보고하고, 불명확한 지시 데이터셋 NoisyToolBench와, 장애를 만나면 사용자에게 묻게 하는 Ask-when-Needed(AwN) 프롬프트 틀을 제안했다. [사실][^ref-359]
 
 #### 되묻기 판단의 한계
 
-- AmbiK는 주방 환경의 모호한 로봇 지시와 그 모호하지 않은 짝 1000쌍(2000개 작업)을 모은 텍스트 데이터셋으로, 모호성 유형(사람 선호·상식·안전), 환경 설명, 명확화 질문과 답, 사용자 의도, 작업 계획을 담고 KnowNo·LofreeCP·LAP·Binary·NoHelp 다섯 방법의 실험 틀을 제공한다. [사실][^ref-562][^ref-563]
-- AmbiK 논문 저자들은 KnowNo·LAP·LofreeCP·Binary 같은 기존 모호성 탐지 방법이 모호한 작업과 모호하지 않은 작업을 대부분 구분하지 못해 모호성 구분 점수가 대부분 10% 미만이었고 가장 높은 값도 Llama-3-8B에서 LofreeCP 44%, KnowNo 40%였다고 보고했으며, 이는 저자 보고값이고 독립 재현 미확인이며 주방 텍스트 작업(AmbiK) 조건의 결과다. [사실][^ref-563]
-- KnowNo가 밝힌 통계적 보장은 사용자가 정한 작업 성공 수준에 관한 것이고 AmbiK의 점수는 모호한 작업과 모호하지 않은 작업의 구분에 관한 것이라, 두 결과는 평가 조건과 지표가 달라 한쪽이 다른 쪽을 반박하는 것으로 읽지 않는다. [추정][^ref-558][^ref-563]
+- AmbiK는 주방 환경의 모호한 로봇 지시와 그 모호하지 않은 짝 1000쌍(2000개 작업)을 모은 텍스트 데이터셋으로, 모호성 유형(사람 선호·상식·안전), 환경 설명, 명확화 질문과 답, 사용자 의도, 작업 계획을 담고 KnowNo·LofreeCP·LAP·Binary·NoHelp 다섯 방법의 실험 틀을 제공한다. [사실][^ref-354][^ref-355]
+- AmbiK 논문 저자들은 KnowNo·LAP·LofreeCP·Binary 같은 기존 모호성 탐지 방법이 모호한 작업과 모호하지 않은 작업을 대부분 구분하지 못해 모호성 구분 점수가 대부분 10% 미만이었고 가장 높은 값도 Llama-3-8B에서 LofreeCP 44%, KnowNo 40%였다고 보고했으며, 이는 저자 보고값이고 독립 재현 미확인이며 주방 텍스트 작업(AmbiK) 조건의 결과다. [사실][^ref-355]
+- KnowNo가 밝힌 통계적 보장은 사용자가 정한 작업 성공 수준에 관한 것이고 AmbiK의 점수는 모호한 작업과 모호하지 않은 작업의 구분에 관한 것이라, 두 결과는 평가 조건과 지표가 달라 한쪽이 다른 쪽을 반박하는 것으로 읽지 않는다. [추정][^ref-350][^ref-355]
 
 #### 구조화 출력
 
-- OpenAI는 구조화 출력(Structured Outputs) 기능이 모델 출력을 개발자가 준 JSON 스키마에 맞추도록 보장해 필수 키 누락이나 잘못된 열거 값을 막는다고 설명한다(2024-08 발표). [추정] 벤더 주장[^ref-570] 필수 항목의 형식 누락을 막는 이 방식은 해석의 모호성 판단과는 다른 층의 장치이며, 이 역할 분담은 단계 4의 질문(q4-07)으로 넘긴다.
+- OpenAI는 구조화 출력(Structured Outputs) 기능이 모델 출력을 개발자가 준 JSON 스키마에 맞추도록 보장해 필수 키 누락이나 잘못된 열거 값을 막는다고 설명한다(2024-08 발표). [추정] 벤더 주장[^ref-362] 필수 항목의 형식 누락을 막는 이 방식은 해석의 모호성 판단과는 다른 층의 장치이며, 이 역할 분담은 단계 4의 질문(q4-07)으로 넘긴다.
 
 #### 업무 분해·배정 설계 초안과의 연결
 
-- 업무 분해·배정 설계 초안의 '상황' 속성(장소 표현, 대상 표현, 시간 조건)을 필수 슬롯으로 두면 값마다 지시 원문에서 읽었는지, 환경·상식으로 추론했는지, 사용자에게 되물어 얻었는지를 구분해 기록할 수 있고, 추론으로 채운 값(LMCR 방식)은 AwN이 지적한 인자 지어내기와 구분되지 않아 확인 대상이 될 것으로 보인다. 이를 적용한 로봇 관제 사례는 확인하지 못했다. [추정][^ref-564][^ref-566][^ref-567]
+- 업무 분해·배정 설계 초안의 '상황' 속성(장소 표현, 대상 표현, 시간 조건)을 필수 슬롯으로 두면 값마다 지시 원문에서 읽었는지, 환경·상식으로 추론했는지, 사용자에게 되물어 얻었는지를 구분해 기록할 수 있고, 추론으로 채운 값(LMCR 방식)은 AwN이 지적한 인자 지어내기와 구분되지 않아 확인 대상이 될 것으로 보인다. 이를 적용한 로봇 관제 사례는 확인하지 못했다. [추정][^ref-356][^ref-358][^ref-359]
 - 검증이 승인한 부분만 [업무 분해·배정 설계 초안](task-model-draft.md)에 반영했다: 상황 개념에 속성 '값 출처'(지시 원문에서 추출 / 환경·상식으로 추론 / 사용자 되묻기 응답)를 더하고 상황을 확정으로 바꿨다(v0.2 → v0.3). 모호한 시간 표현을 시간 조건에 담는 제안은 일정 개념과 겹쳐 초안의 미해결 모델링 질문으로 두었다.
 
 #### 물류 적용 공백과 SCM 질문
 
-- 이번에 확인한 상황 정보 추출·되묻기 연구의 평가 환경은 주방·가정(AmbiK, CLARA), 도구 호출 API(NoisyToolBench), 실내·도시 내비게이션(Lang2LTL)이었고, 물류에 가까운 예는 픽업·배송 위치만 뽑는 DELIVER뿐이어서 화물 식별자·긴급도·기한을 필수 항목으로 둔 물류 지시 추출·되묻기 연구나 데이터셋은 이번 검색 범위에서 찾지 못했다. 이는 검색 범위의 결과이며 부재의 확인이 아니다. [추정][^ref-562][^ref-560][^ref-567][^ref-055][^ref-568]
-- [q1-02](#q1-02)에서 옮긴 13. 작업 배정 — MRTA의 SCM 관점 질문과 관련해, 지시에서 뽑은 긴급도·기한은 배정의 목적(가까움 대 기한 준수)을 바꾸는 입력이므로, 퍼지 시간 요구를 만족도 함수로 표현한 연구처럼 기한을 엄격 제약이 아닌 허용 창으로 스케줄러·배정기에 넘기는 구조가 13. 작업 배정 — MRTA와 14. 작업 순서·스케줄링 사이의 연결 근거가 될 것으로 보인다. 물류 배정에서 긴급도 추출 결과를 목적함수에 넣은 연구는 찾지 못했다. [추정][^ref-569]
+- 이번에 확인한 상황 정보 추출·되묻기 연구의 평가 환경은 주방·가정(AmbiK, CLARA), 도구 호출 API(NoisyToolBench), 실내·도시 내비게이션(Lang2LTL)이었고, 물류에 가까운 예는 픽업·배송 위치만 뽑는 DELIVER뿐이어서 화물 식별자·긴급도·기한을 필수 항목으로 둔 물류 지시 추출·되묻기 연구나 데이터셋은 이번 검색 범위에서 찾지 못했다. 이는 검색 범위의 결과이며 부재의 확인이 아니다. [추정][^ref-354][^ref-352][^ref-359][^ref-055][^ref-360]
+- [q1-02](#q1-02)에서 옮긴 13. 작업 배정 — MRTA의 SCM 관점 질문과 관련해, 지시에서 뽑은 긴급도·기한은 배정의 목적(가까움 대 기한 준수)을 바꾸는 입력이므로, 퍼지 시간 요구를 만족도 함수로 표현한 연구처럼 기한을 엄격 제약이 아닌 허용 창으로 스케줄러·배정기에 넘기는 구조가 13. 작업 배정 — MRTA와 14. 작업 순서·스케줄링 사이의 연결 근거가 될 것으로 보인다. 물류 배정에서 긴급도 추출 결과를 목적함수에 넣은 연구는 찾지 못했다. [추정][^ref-361]
 
 ## 4. 결론과 남은 불확실성
 
@@ -238,9 +238,9 @@ PIP-LLM·FLEET·Peng 외처럼 LLM 뒤에 이동 비용·작업 부하·makespan
 - 음성 피킹에서는 작업자가 체크 디지트·수량 같은 짧은 음성 응답으로 지시받은 동작을 확인한다. [사실][^ref-272][^ref-275]
 - 작업자 대상 지시는 동작 단위의 현장 확인을 쓰는 반면 로봇 대상 자연어 지시 제품은 해석 결과를 실행 전에 확인받는 방식이 공개 자료에서 드러나지 않아, 두 확인은 대상과 시점이 다른 것으로 보인다(이 위키의 정리). [추정][^ref-272][^ref-279][^ref-276]
 - 이 정리는 [업무 분해·배정 설계 초안](task-model-draft.md)의 [미해결 모델링 질문](task-model-draft.md#6-미해결-모델링-질문) 가운데 '사용자 확인(승인)을 별도 개념으로 둘지, 배정의 속성(확인 여부)으로 둘지'와 이어진다. 동작 단위 확인과 해석 결과 확인이 다른 대상이라면 두 확인을 한 속성으로 묶기 어려울 수 있다는 점을 단계 4에서 판단한다. [추정][^ref-272][^ref-276]
-- 지시의 상황 정보에서 빠진 정보를 다루는 방법은 필수 슬롯 되묻기, 추론으로 채움, 불확실성 기반 되묻기의 세 방식으로 정리된다(이 위키의 정리, 단일 출처 없음). [추정][^ref-564][^ref-566][^ref-558]
-- LLM의 불확실성으로 명령을 판별해 필요할 때만 사람에게 묻거나 도움을 요청하는 로봇 연구가 있다(KnowNo, 국내 연구 CLARA). [사실][^ref-558][^ref-560]
-- 주방 텍스트 작업 벤치마크(AmbiK)에서 기존 모호성 탐지 방법은 모호한 작업과 모호하지 않은 작업을 대부분 구분하지 못했다(저자 보고값, 독립 재현 미확인). [사실][^ref-563]
+- 지시의 상황 정보에서 빠진 정보를 다루는 방법은 필수 슬롯 되묻기, 추론으로 채움, 불확실성 기반 되묻기의 세 방식으로 정리된다(이 위키의 정리, 단일 출처 없음). [추정][^ref-356][^ref-358][^ref-350]
+- LLM의 불확실성으로 명령을 판별해 필요할 때만 사람에게 묻거나 도움을 요청하는 로봇 연구가 있다(KnowNo, 국내 연구 CLARA). [사실][^ref-350][^ref-352]
+- 주방 텍스트 작업 벤치마크(AmbiK)에서 기존 모호성 탐지 방법은 모호한 작업과 모호하지 않은 작업을 대부분 구분하지 못했다(저자 보고값, 독립 재현 미확인). [사실][^ref-355]
 
 **남은 불확실성**
 - 논문은 모두 원문 미열람이며, 연구마다 근거가 단일 출처이거나 같은 발행 주체의 문서라 독립 교차 확인이 없다.
@@ -334,19 +334,19 @@ PIP-LLM·FLEET·Peng 외처럼 LLM 뒤에 이동 비용·작업 부하·makespan
 [^ref-279]: Locus Robotics, Efficient Robot Interface for Seamless Human-Robot Collaboration (LocusONE user interface), 미확인, https://locusrobotics.com/locusone/automated-warehouse-software/user-interface, 접근일 2026-09-25 (원문 미열람)
 [^ref-280]: Aila Technologies, Locus Robotics leverages Aila's scanning to increase productivity (case study), 미확인, https://www.ailatech.com/blog/case-study-locus-robotics/, 접근일 2026-09-25 (원문 미열람)
 [^ref-281]: 뉴스핌, 현대로템, 무인로봇 국책과제 2건 수주, 2026-05-26, https://www.newspim.com/news/view/20260526000361, 접근일 2026-09-25 (원문 미열람)
-[^ref-558]: Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io), 미확인, https://robot-help.github.io/, 접근일 2026-09-25
-[^ref-559]: Ren, A. Z. 외, Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners, 2023-07, https://arxiv.org/abs/2307.01928, 접근일 2026-09-25 (원문 미열람)
-[^ref-560]: Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트), CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io), 미확인, https://clararobot.github.io/, 접근일 2026-09-25
-[^ref-561]: Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S., CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents, 2024, https://arxiv.org/abs/2306.10376, 접근일 2026-09-25 (원문 미열람)
-[^ref-562]: cog-model (AmbiK 저자), AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment), 미확인, https://github.com/cog-model/AmbiK-dataset, 접근일 2026-09-25
-[^ref-563]: Ivanova, A. 외(AmbiK 저자, dblp 기록 기준), AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment, 2025, https://aclanthology.org/2025.acl-long.1593/, 접근일 2026-09-25 (원문 미열람)
-[^ref-564]: Rasa Technologies (RasaHQ/rasa GitHub), Forms — Rasa documentation (docs/docs/forms.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx, 접근일 2026-09-25
-[^ref-565]: Weld, H., Huang, X., Long, S., Poon, J., & Han, S. C., A Survey of Joint Intent Detection and Slot Filling Models in Natural Language Understanding, 2022-12, https://dl.acm.org/doi/10.1145/3547138, 접근일 2026-09-25 (원문 미열람)
-[^ref-566]: Chen, H. 외, Enabling Robots to Understand Incomplete Natural Language Instructions Using Commonsense Reasoning, 2019-04, https://arxiv.org/abs/1904.12907, 접근일 2026-09-25 (원문 미열람)
-[^ref-567]: Wang, W. 외, Learning to Ask: When LLM Agents Meet Unclear Instruction, 2024-09, https://arxiv.org/abs/2409.00557, 접근일 2026-09-25 (원문 미열람)
-[^ref-568]: arXiv 2508.19114 저자(미확인), DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning, 2025-08, https://arxiv.org/abs/2508.19114, 접근일 2026-09-25 (원문 미열람)
-[^ref-569]: Sucker, S., Neubauer, M., & Henrich, D., Robot Tasks with Fuzzy Time Requirements from Natural Language Instructions, 2024-11, https://arxiv.org/abs/2411.09436, 접근일 2026-09-25 (원문 미열람)
-[^ref-570]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)
+[^ref-350]: Ren, A. Z. 외(Google DeepMind·Princeton University, KnowNo 프로젝트), Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — project page (robot-help.github.io), 미확인, https://robot-help.github.io/, 접근일 2026-09-25
+[^ref-351]: Ren, A. Z. 외, Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners, 2023-07, https://arxiv.org/abs/2307.01928, 접근일 2026-09-25 (원문 미열람)
+[^ref-352]: Park, J. 외(고려대학교·연세대학교·Google Research, CLARA 프로젝트), CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents — project page (clararobot.github.io), 미확인, https://clararobot.github.io/, 접근일 2026-09-25
+[^ref-353]: Park, J., Lim, S., Lee, J., Park, S., Chang, M., Yu, Y., & Choi, S., CLARA: Classifying and Disambiguating User Commands for Reliable Interactive Robotic Agents, 2024, https://arxiv.org/abs/2306.10376, 접근일 2026-09-25 (원문 미열람)
+[^ref-354]: cog-model (AmbiK 저자), AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment), 미확인, https://github.com/cog-model/AmbiK-dataset, 접근일 2026-09-25
+[^ref-355]: Ivanova, A. 외(AmbiK 저자, dblp 기록 기준), AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment, 2025, https://aclanthology.org/2025.acl-long.1593/, 접근일 2026-09-25 (원문 미열람)
+[^ref-356]: Rasa Technologies (RasaHQ/rasa GitHub), Forms — Rasa documentation (docs/docs/forms.mdx), 미확인, https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx, 접근일 2026-09-25
+[^ref-357]: Weld, H., Huang, X., Long, S., Poon, J., & Han, S. C., A Survey of Joint Intent Detection and Slot Filling Models in Natural Language Understanding, 2022-12, https://dl.acm.org/doi/10.1145/3547138, 접근일 2026-09-25 (원문 미열람)
+[^ref-358]: Chen, H. 외, Enabling Robots to Understand Incomplete Natural Language Instructions Using Commonsense Reasoning, 2019-04, https://arxiv.org/abs/1904.12907, 접근일 2026-09-25 (원문 미열람)
+[^ref-359]: Wang, W. 외, Learning to Ask: When LLM Agents Meet Unclear Instruction, 2024-09, https://arxiv.org/abs/2409.00557, 접근일 2026-09-25 (원문 미열람)
+[^ref-360]: arXiv 2508.19114 저자(미확인), DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning, 2025-08, https://arxiv.org/abs/2508.19114, 접근일 2026-09-25 (원문 미열람)
+[^ref-361]: Sucker, S., Neubauer, M., & Henrich, D., Robot Tasks with Fuzzy Time Requirements from Natural Language Instructions, 2024-11, https://arxiv.org/abs/2411.09436, 접근일 2026-09-25 (원문 미열람)
+[^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

@@ -30,6 +30,31 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-32 | 갱신 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
 | 2026-09-25-32 | 요약 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
+| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 상태 줄·2절·4절·5절(q3-07, q4-07)·6절·7절·8절·9절 갱신 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | v0.2 → v0.3: 상황 개념에 속성 '값 출처' 추가·확정, 6절에 추론 값 확인 근거와 모호 시간 표현 질문 추가 |
+| 2026-09-25-30 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절에 '상황 정보 추출과 되묻기' 소절 추가(q1-04, 실행 2026-09-25-30) |
+| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.3, 아이디어 3절 q1-04 반영 현황 갱신 |
+| 2026-09-25-30 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-04 답함(상황 정보 추출과 빠진 정보 처리 세 방식), 업무 분해·배정 설계 초안 v0.2 → v0.3(상황 개념에 값 출처), 새 질문 q3-07·q4-07 |
+| 2026-09-25-30 | 생성 | [docs/references/ref-350.md](references/ref-350.md) | 참고문헌 ref-350 등록: Robots That Ask For Help: Uncertainty Alignment for Large La… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-351.md](references/ref-351.md) | 참고문헌 ref-351 등록: Robots That Ask For Help: Uncertainty Alignment for Large La… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-352.md](references/ref-352.md) | 참고문헌 ref-352 등록: CLARA: Classifying and Disambiguating User Commands for Reli… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-353.md](references/ref-353.md) | 참고문헌 ref-353 등록: CLARA: Classifying and Disambiguating User Commands for Reli… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-354.md](references/ref-354.md) | 참고문헌 ref-354 등록: AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-355.md](references/ref-355.md) | 참고문헌 ref-355 등록: AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment |
+| 2026-09-25-30 | 생성 | [docs/references/ref-356.md](references/ref-356.md) | 참고문헌 ref-356 등록: Forms — Rasa documentation (docs/docs/forms.mdx) |
+| 2026-09-25-30 | 생성 | [docs/references/ref-357.md](references/ref-357.md) | 참고문헌 ref-357 등록: A Survey of Joint Intent Detection and Slot Filling Models i… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-358.md](references/ref-358.md) | 참고문헌 ref-358 등록: Enabling Robots to Understand Incomplete Natural Language In… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-359.md](references/ref-359.md) | 참고문헌 ref-359 등록: Learning to Ask: When LLM Agents Meet Unclear Instruction |
+| 2026-09-25-30 | 생성 | [docs/references/ref-360.md](references/ref-360.md) | 참고문헌 ref-360 등록: DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pic… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-361.md](references/ref-361.md) | 참고문헌 ref-361 등록: Robot Tasks with Fuzzy Time Requirements from Natural Langua… |
+| 2026-09-25-30 | 생성 | [docs/references/ref-362.md](references/ref-362.md) | 참고문헌 ref-362 등록: Introducing Structured Outputs in the API |
+| 2026-09-25-30 | 생성 | [docs/glossary/intent-recognition.md](glossary/intent-recognition.md) | 용어집 항목 의도 인식 |
+| 2026-09-25-30 | 생성 | [docs/glossary/slot-filling.md](glossary/slot-filling.md) | 용어집 항목 슬롯 채우기 |
+| 2026-09-25-30 | 생성 | [docs/glossary/structured-output.md](glossary/structured-output.md) | 용어집 항목 구조화 출력 |
+| 2026-09-25-30 | 생성 | [docs/glossary/hallucination.md](glossary/hallucination.md) | 용어집 항목 환각 |
+| 2026-09-25-30 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-29 | 갱신 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | '다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 세부영역 연결 18쌍·근거 finding 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가. 2차: 번호만 쓴 호칭 수정, 첫 문장 태그·각주 보강 |
 | 2026-09-25-29 | 요약 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 세부영역 연결 18쌍, 근거 finding 22건 중 추정 9건) |
 | 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-01 답함(공간 그래프 표준 조사), 3절 조사 결과·4절 결론 신규 작성, 후속 질문 2건(q2-07·q3-05), 완료 조건 미충족·전환 미승인, 단계 상태 진행 중. 상태 줄 갱신이 필요해 patches 대신 전체 content로 보냄 |
