@@ -1,0 +1,11 @@
+# 원문 제공함 목록 — 형식과 처리 방법은 inbox/sources/README.md
+# 항목마다 file(필수), url, title, org, published, ref_id(선택). 처리: python3 pipeline/ingest_sources.py
+#
+# 예:
+#   - file: EPCIS-Standard-2.0.pdf
+#     url: https://ref.gs1.org/standards/epcis/
+#     title: EPCIS Standard 2.0
+#     org: GS1
+#     published: 2022-06
+#     ref_id: ref-003
+items: []

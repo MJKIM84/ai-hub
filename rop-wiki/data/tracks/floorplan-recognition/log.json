@@ -1,0 +1,21 @@
+{
+  "_note": "트랙 로그(docs/tracks/floorplan-recognition/log.md)의 auto:track-log 영역 원천 데이터 [가정]. 형식은 첫 트랙(data/tracks/manual-capability-ontology/log.json)과 같다. 퍼블리셔가 트랙 실행마다 항목을 추가하고 render_track_log 가 최신순으로 렌더링한다.",
+  "items": [
+    {
+      "run_id": "build-2026-09-25",
+      "date": "2026-09-25",
+      "stage": 1,
+      "stage_name": "선행 연구·제품 사례 조사",
+      "stage_page": "stage-1-prior-work-and-products.md",
+      "daily_log": null,
+      "run_id_cell": "build-2026-09-25 (확장 아이디어 3 편입으로 트랙 시드 생성. 파이프라인 실행이 아니므로 일일 로그는 없다)",
+      "stage_cell": "[단계 1. 선행 연구·제품 사례 조사](stage-1-prior-work-and-products.md) — 트랙 상태 active, 현재 단계 1",
+      "answered_questions": "없음(트랙 시드 생성이며 조사를 수행하지 않았다)",
+      "new_questions": "시드 18개: q1-01~q1-04(단계 1. 선행 연구·제품 사례 조사), q2-01~q2-03(단계 2. 필요한 데이터와 표준 조사), q3-01~q3-04(단계 3. 구현 가설 설계), q4-01~q4-04(단계 4. 지도 변환 보정과 현장 정합), q5-01~q5-03(단계 5. 검증 방법과 가설 판정). 제기 근거 사용자(확장 아이디어 편입 요청). 이 가운데 q1-01, q2-01, q4-01는 사용자 요청의 시작 질문 문구 그대로다. → [질문 백로그](question-backlog.md)",
+      "ontology_change": "초안 v0 시드 생성: [공간 그래프 스키마 초안](space-graph-schema-draft.md) — 확장 아이디어 3의 정의 문구에서 도출한 개념 10개·관계 9개. 모두 \"아이디어 정의 기반 [가정]\"이며 검증 판정 없음(구축)",
+      "completion_assessment": "자체 평가: 미충족(이 단계를 다룬 트랙 실행이 없다) · 검증 판정: 없음(구축) · 단계 전환: 아니오",
+      "area_reflection_proposals": "없음(조사 결과가 없다)",
+      "next_run_proposal": "단계 1의 열린 질문을 오래된 순(같은 날이면 id 순)으로 1~3개. 사용자 지정 질문(`config/priority.yaml`의 `track_questions`)이 있으면 그것을 먼저 다룬다. 트랙 예산은 회당 신규 출처 20건·검색 40회다"
+    }
+  ]
+}

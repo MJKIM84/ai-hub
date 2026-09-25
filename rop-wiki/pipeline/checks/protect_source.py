@@ -14,6 +14,11 @@
    세부영역 페이지 인용 블록의 고정 라벨 "원문 주석: "(2번 검사가 요구하는 형식). 표 아래 단독 태그 줄은 제외한다.
 6. mkdocs.yml: 내비 라벨의 대분류·세부영역 명칭 대조 + 파일 전체가 현재 파일시스템 기준 nav.render_mkdocs_yml()
    결과와 같은지(4.8 순서·누락 페이지). 다르면 `python3 pipeline/scaffold.py --refresh-auto` 로 재생성한다.
+   그리고 내비 구조 자체를 검사한다(check_nav_structure): 사양서 4.8 원문 순서(홈 → 소개 → 대분류 A~G → 중점 연구 트랙 →
+   주제 → 용어집 → 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그)는 그대로 지켜야 하고,
+   4.8 목록 밖의 "확장 아이디어"는 중점 연구 트랙 바로 다음(주제 앞), "정정 요청 안내"는 맨 뒤에만 올 수 있다.
+   중점 연구 트랙 아래는 트랙 정의의 order 순(첫 트랙 manual-capability-ontology 가 맨 앞)이고, 트랙마다 개요 → 단계(번호순) →
+   초안(draft_page) → 비교표·매트릭스·평가 절차 → 질문 백로그 → 로그 → 실험 순이며, 확장 아이디어 아래는 색인 → 아이디어 페이지(트랙 순)다.
 불일치 시 diff 를 출력하고 exit 1.
 """
 from __future__ import annotations
@@ -294,6 +299,90 @@ def all_doc_rels() -> list[str]:
     return [p.relative_to(paths.DOCS).as_posix() for p in sorted(paths.DOCS.rglob("*.md"))]
 
 
+# 사양서 4.8 의 상위 순서(원문 그대로). 이 순서는 새 섹션이 생겨도 바꾸지 않는다
+SPEC_48_ORDER = ["home", "about", *[f"cat:{l}" for l in paths.CATEGORY_LETTERS], "tracks", "topics", "glossary",
+                 "references", "standards", "open-questions", "flow-matrix", "changelog", "metrics", "logs"]
+# 4.8 목록 밖 섹션 → 바로 앞에 와야 하는 섹션 [가정]
+NAV_EXTRA_AFTER = {"ideas": "tracks"}
+NAV_TRAILING = ["corrections"]            # 4.8 목록 밖, 맨 뒤(로그 다음)에만 [가정]
+FIRST_TRACK = "manual-capability-ontology"  # 첫 트랙(사양서 8.1). 트랙이 늘어도 맨 앞
+
+
+def _nav_kind(item) -> str | None:
+    """상위 내비 항목의 종류(경로에서 판단)."""
+    pairs = flatten_nav([item])
+    if not pairs:
+        return None
+    path = pairs[0][1]
+    top = path.split("/", 1)[0]
+    if path == "index.md":
+        return "home"
+    if top == "categories":
+        m = re.match(r"categories/([a-g])-", path)
+        return f"cat:{m.group(1).upper()}" if m else None
+    if path.endswith(".md") and "/" not in path:
+        return path[:-3]
+    return {"about": "about", "tracks": "tracks", "ideas": "ideas", "topics": "topics", "glossary": "glossary",
+            "references": "references", "standards": "standards", "logs": "logs"}.get(top)
+
+
+def check_nav_structure(nav: list) -> list[str]:
+    """내비 구조 검사: 4.8 원문 순서 보존 + 확장 아이디어 위치 + 트랙·아이디어 하위 순서."""
+    errs: list[str] = []
+    kinds = [_nav_kind(i) for i in nav]
+    unknown = [str(next(iter(i))) if isinstance(i, dict) else str(i) for i, k in zip(nav, kinds)
+               if k is None or (k not in SPEC_48_ORDER and k not in NAV_EXTRA_AFTER and k not in NAV_TRAILING)]
+    if unknown:
+        errs.append(f"mkdocs.yml: 4.8 순서에 없는 상위 내비 항목: {unknown}")
+    if len(set(kinds)) != len(kinds):
+        errs.append(f"mkdocs.yml: 상위 내비 항목이 중복됨: {kinds}")
+    core = [k for k in kinds if k in SPEC_48_ORDER]
+    if [SPEC_48_ORDER.index(k) for k in core] != sorted(SPEC_48_ORDER.index(k) for k in core):
+        errs.append(f"mkdocs.yml: 사양서 4.8 순서가 바뀜 — 기대 순서 {[k for k in SPEC_48_ORDER if k in core]}, 실제 {core}")
+    for extra, after in NAV_EXTRA_AFTER.items():
+        if extra in kinds:
+            i = kinds.index(extra)
+            if i == 0 or kinds[i - 1] != after:
+                errs.append(f"mkdocs.yml: '{extra}' 섹션은 '{after}' 바로 다음에 와야 한다(4.8 순서 사이에 끼우지 않는다): {kinds}")
+    for t in NAV_TRAILING:
+        if t in kinds and kinds[-1] != t:
+            errs.append(f"mkdocs.yml: '{t}' 는 내비 맨 뒤에만 둔다: {kinds}")
+    # 중점 연구 트랙: 트랙 정의 order 순, 첫 트랙이 맨 앞, 트랙마다 하위 순서
+    if "tracks" in kinds:
+        section = next(iter(nav[kinds.index("tracks")].values()))
+        got_slugs = []
+        for item in section:
+            ps = [p for _, p in flatten_nav([item])]
+            m = re.match(r"tracks/([^/]+)/", ps[0]) if ps else None
+            got_slugs.append(m.group(1) if m else None)
+        exp_slugs = [s for s in paths.ordered_track_slugs() if (paths.DOCS / "tracks" / s).is_dir()]
+        if got_slugs != exp_slugs:
+            errs.append(f"mkdocs.yml: 중점 연구 트랙 순서가 트랙 정의(order)와 다름: 기대 {exp_slugs}, 실제 {got_slugs}")
+        if FIRST_TRACK in exp_slugs and got_slugs[:1] != [FIRST_TRACK]:
+            errs.append(f"mkdocs.yml: 첫 트랙({FIRST_TRACK})이 중점 연구 트랙 맨 앞에 있어야 한다: {got_slugs}")
+        for slug, item in zip(got_slugs, section):
+            if not slug:
+                continue
+            names = [p.split("/", 2)[2] for _, p in flatten_nav([item]) if p.startswith(f"tracks/{slug}/")]
+            stages = [n for n in names if n.startswith("stage-")]
+            order = ["index.md", *stages, *paths.track_page_order(slug)[1:]]
+            known = [n for n in names if n in order]
+            if names[:1] != ["index.md"]:
+                errs.append(f"mkdocs.yml: 트랙 {slug} 의 첫 항목이 개요(index.md)가 아님: {names[:1]}")
+            if [order.index(n) for n in known] != sorted(order.index(n) for n in known):
+                errs.append(f"mkdocs.yml: 트랙 {slug} 하위 순서가 4.8(개요 → 단계 → 초안 → 산출물 → 백로그 → 로그 → 실험)과 다름: {names}")
+            nums = [int(re.match(r"stage-(\d+)", n).group(1)) for n in stages]
+            if nums != sorted(nums):
+                errs.append(f"mkdocs.yml: 트랙 {slug} 단계 페이지가 번호순이 아님: {stages}")
+    # 확장 아이디어: 색인 → 아이디어 페이지(트랙 순)
+    if "ideas" in kinds:
+        got = [p for _, p in flatten_nav([nav[kinds.index("ideas")]])]
+        exp = [paths.IDEAS_INDEX] + [r for r in paths.idea_page_rels() if (paths.DOCS / r).is_file()]
+        if got[:len(exp)] != exp:
+            errs.append(f"mkdocs.yml: 확장 아이디어 하위 순서가 다름: 기대 {exp}, 실제 {got}")
+    return errs
+
+
 def check_nav() -> list[str]:
     if not paths.MKDOCS_YML.exists():
         return ["mkdocs.yml 없음"]
@@ -324,6 +413,9 @@ def check_nav() -> list[str]:
             errs.append(f"mkdocs.yml: 내비에 {rel} 없음")
         elif by_path[rel] != SRC.area(no).title:
             errs.append(f"mkdocs.yml: 세부영역 라벨 불일치 {by_path[rel]!r} != {SRC.area(no).title!r}")
+    # 구조 검사는 저장된 mkdocs.yml 과 생성기(build_nav) 결과 둘 다에 적용한다(생성기 자체의 순서 회귀도 잡는다)
+    errs += check_nav_structure(cfg.get("nav") or [])
+    errs += [f"[생성기] {e}" for e in check_nav_structure(build_nav())]
     return errs
 
 

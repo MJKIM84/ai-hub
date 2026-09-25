@@ -23,6 +23,10 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id({#q1-01}) 규칙 추가 |
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id 검사 추가 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 프롬프트 1.4 → 1.5: 태그 바로 뒤 괄호 금지 규칙 추가 |
+| manual-2026-09-25 | 갱신 | agents/shared-rules.md | 공통 규칙 1.1 → 1.2: 운영 전환 추가 규칙(원문 열람 표시·신뢰도 상한·상태 줄 금지·형식 검증·분량 분리·차등 갱신·트랙 3개) |
+| manual-2026-09-25 | 갱신 | agents/researcher.md | 리서치 에이전트 1.1 → 1.2: 원문 열기(GitHub raw·inbox), 갱신 차등 조사, 대분류 연결 절차 |
+| manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
+| manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-01·q1-02 답함, q1-03 부분 답, 후속 질문 4건(q1-07·q1-08·q4-06·q5-05), 완료 조건 미충족 평가, 출처 20건(원문 미열람), 이력 행 추가. 2차 수정: 4절 결론 셋째 항목에서 MassRobotics setup 메시지를 기능 기술로 쓴 부분 삭제(능력 필드 유무 미확인 명시), 남은 불확실성 한 항목 평서문으로 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | 온톨로지 v0 → v0.1: 개념 효과·스킬·오류 추가(확정), 기능 속성에 능력 출처 구분 추가(초안 → 확정), 관계 기능 / 구현된다 / 스킬 추가, 다이어그램 갱신, 전제조건·스킬 상태 기계 등은 6절 질문으로 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | 비교표 초안: 후보 10행의 발행 기관·종류 채움, 근거 finding이 있는 정보 항목 칸만 태그와 함께 채움(나머지 미조사), 모든 행 원문 미열람, 후보 밖 2행(RCO, 이종 자율 로봇 능력·스킬 모델) 추가, 빠진 정보 요약·출처·이력 갱신 |

@@ -165,6 +165,8 @@ class TestNavAndRender(unittest.TestCase):
         expected = ["홈", "소개", *self.CATEGORY_TITLES]
         if (docs / "tracks").is_dir() and any(p.is_dir() for p in (docs / "tracks").iterdir()):
             expected.append("중점 연구 트랙")
+        if (docs / paths.IDEAS_INDEX).is_file():
+            expected.append("확장 아이디어")   # 4.8 목록 밖의 구축자 추가 섹션: 트랙 바로 다음, 주제 앞 [가정]
         if (docs / "topics").is_dir():
             expected.append("주제")
         for rel in ("glossary/index.md", "references/index.md", "standards/index.md", "open-questions.md",
@@ -194,22 +196,25 @@ class TestNavAndRender(unittest.TestCase):
         self.assertIn("omitted_files: warn", text)
 
     def test_nav_track_children_order(self):
-        """트랙 하위: 개요 → 단계 1~7 → 온톨로지 초안 → 비교표·매트릭스·평가 절차 → 질문 백로그 → 로그 → 실험."""
-        slugs = [p.name for p in sorted((paths.DOCS / "tracks").iterdir()) if p.is_dir()] if (paths.DOCS / "tracks").is_dir() else []
+        """트랙 하위: 개요 → 단계 1~n → 초안(트랙 정의의 draft_page, 첫 트랙은 온톨로지 초안) → 비교표·매트릭스·평가 절차 →
+        질문 백로그 → 로그 → 실험. 트랙 섹션은 트랙 정의의 order 순(첫 트랙이 맨 앞)."""
+        slugs = [s for s in paths.ordered_track_slugs() if (paths.DOCS / "tracks" / s).is_dir()]
         if not slugs:
             self.skipTest("트랙 페이지 없음")
         nav = build_nav()
         tracks = next(v for i in nav if isinstance(i, dict) for k, v in i.items() if k == "중점 연구 트랙")
-        slug = slugs[0]
-        section = next(v for i in tracks for k, v in i.items())
-        got = [p for l, p in flatten_nav(section if isinstance(section, list) else [section])]
-        prefix = f"tracks/{slug}/"
-        names = [p[len(prefix):] for p in got if p.startswith(prefix)]
-        stage_names = [n for n in names if n.startswith("stage-")]
-        expected = ["index.md", *stage_names, *paths.TRACK_PAGE_ORDER[1:]]
-        expected = [n for n in expected if (paths.DOCS / prefix / n).is_file()]
-        self.assertEqual(names[:len(expected)], expected)
-        self.assertEqual([int(n.split("-")[1]) for n in stage_names], sorted(int(n.split("-")[1]) for n in stage_names))
+        self.assertEqual(len(tracks), len(slugs))
+        for slug, item in zip(slugs, tracks):
+            section = next(iter(item.values()))
+            got = [p for l, p in flatten_nav(section if isinstance(section, list) else [section])]
+            prefix = f"tracks/{slug}/"
+            names = [p[len(prefix):] for p in got if p.startswith(prefix)]
+            self.assertTrue(names, f"{slug} 섹션이 트랙 순서대로 오지 않았다")
+            stage_names = [n for n in names if n.startswith("stage-")]
+            expected = ["index.md", *stage_names, *paths.track_page_order(slug)[1:]]
+            expected = [n for n in expected if (paths.DOCS / prefix / n).is_file()]
+            self.assertEqual(names[:len(expected)], expected)
+            self.assertEqual([int(n.split("-")[1]) for n in stage_names], sorted(int(n.split("-")[1]) for n in stage_names))
 
     def test_load_mkdocs_yml(self):
         if not paths.MKDOCS_YML.exists():

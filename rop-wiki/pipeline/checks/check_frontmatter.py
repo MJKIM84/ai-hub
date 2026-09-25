@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""프런트매터 검사 (사양서 6.4 의 2단계, 5.1·5.2).
+r"""프런트매터 검사 (사양서 6.4 의 2단계, 5.1·5.2).
 
 모든 docs 페이지에 대해 프런트매터 존재, 필수 필드(title,type,status,created,updated,version),
 type·status·confidence 허용 값, type 별 추가 필수 필드, 날짜 형식을 검사한다.

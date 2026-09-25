@@ -3,8 +3,8 @@ title: "논의한 아이디어의 연구영역 매핑"
 type: about
 status: published
 created: 2026-09-24
-updated: 2026-09-24
-version: 1
+updated: 2026-09-25
+version: 2
 ---
 
 [홈](../index.md) › 논의한 아이디어의 연구영역 매핑
@@ -26,6 +26,7 @@ version: 1
 
 ## 관련 페이지
 
+- 확장 아이디어: 사용자가 2026-09-25에 제안한 세 확장 아이디어(로봇 기능 온톨로지, 자연어 업무 지시 챗봇, 건축 도면 자동 인식)와 28개 세부 연구영역의 매핑표는 [확장 아이디어 연결 구조](../ideas/index.md)에 있다. 건축 도면 기반 이동 지도는 중점 연구 트랙 [건축 도면 자동 인식](../tracks/floorplan-recognition/index.md)으로 진행 중이다.
 - 매뉴얼 기반 로봇 온톨로지: [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md), [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md), [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
 - 건축 도면 기반 이동 지도: [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md), [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
 - 로봇과 건물 조건을 함께 판단: [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md), [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md), [8. 실시간 세계 상태·데이터 일관성](../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md), [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md), [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md), [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)

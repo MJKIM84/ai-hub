@@ -155,7 +155,7 @@ def url_matches(url: str, match: str) -> bool:
     nu, nm = normalize_url(url), normalize_url(match)
     if not nu or not nm:
         return False
-    if nu == nm:
+    if nu == nm or nu in (nm + ".html", nm + ".htm"):
         return True
     return nu.startswith(nm + "/") or nu.startswith(nm + "?")
 
@@ -211,18 +211,25 @@ def load_mirrors(root: Path | str | None = None) -> list[dict]:
 
 def mirror_entries(url: str, root: Path | str | None = None) -> list[dict]:
     """url 에 맞는 미러 항목. 구체적인(긴) match 가 먼저다. github.com blob URL 은 변환한 raw 경로를 relation original 로 맨 앞에 둔다.
-    각 항목: {name, match(맞은 값), raw_urls, repo, ref, relation, note}."""
+    relation original 은 match 가 url 과 정확히 같을 때(끝 슬래시·.html 차이 무시)만 유지한다. 접두어로만 맞으면(같은 사이트의 다른 페이지)
+    related 로 낮추고 declared_relation 에 원래 값을 남긴다. 각 항목: {name, match(맞은 값), raw_urls, repo, ref, relation, note}."""
     out: list[dict] = []
     derived = github_blob_to_raw(url)
     if derived:
         out.append({"name": "GitHub blob → raw", "match": url, "raw_urls": [derived], "repo": "/".join(derived.split("/")[3:5]),
                     "ref": derived.split("/")[5] if len(derived.split("/")) > 5 else "", "relation": "original",
                     "note": "github.com 파일 URL 을 같은 파일의 raw 경로로 바꾼 것", "_len": 10 ** 6})
+    nu = normalize_url(url)
     for e in load_mirrors(root):
         best = max((len(normalize_url(m)) for m in e["match"] if url_matches(url, m)), default=0)
         if best:
             hit = next(m for m in e["match"] if url_matches(url, m) and len(normalize_url(m)) == best)
-            out.append({**{k: v for k, v in e.items() if k != "match"}, "match": hit, "_len": best})
+            row = {**{k: v for k, v in e.items() if k != "match"}, "match": hit, "_len": best}
+            nm = normalize_url(hit)
+            if row.get("relation") == "original" and nu not in (nm, nm + ".html", nm + ".htm"):
+                # 접두어로만 맞은 original 항목(같은 사이트의 다른 페이지)은 그 URL 의 원문이 아니다
+                row["declared_relation"], row["relation"] = "original", "related"
+            out.append(row)
     out.sort(key=lambda x: -x["_len"])
     for x in out:
         x.pop("_len", None)
@@ -484,19 +491,19 @@ def apply_fetch_caps(research: dict, *, root: Path | str | None = None, source_t
         sid = str(s.get("id") or "?")
         ok, via, why = _agent_fetch(s, web_fetch_available, root)
         text_meta = _text_for_source(s, texts)
+        by_text = False
         if not ok and text_meta:
-            ok, via = True, str(text_meta.get("fetched_via") or "inbox")
-            if why:
-                why = None
-        before = (s.get("fetched"), s.get("fetched_via"), s.get("source_unopened"))
+            ok, via, by_text = True, str(text_meta.get("fetched_via") or "inbox"), True
+        before = s.get("fetched")
         s["fetched"] = bool(ok)
         s["fetched_via"] = via if ok else None
         s["source_unopened"] = not ok
-        if why:
+        if by_text:
+            extra = f"(에이전트 표시는 인정하지 않음 — {why})" if why else ""
+            logs.append(f"출처 {sid}: data/source_texts 의 원문 텍스트({text_meta.get('path')})가 있어 fetched true({via}){extra}")
+        elif why:
             logs.append(f"출처 {sid}: 원문 열람 표시를 인정하지 않음 — {why}. fetched false 로 둔다")
-        elif before[0] is not True and ok:
-            logs.append(f"출처 {sid}: data/source_texts 의 원문 텍스트({text_meta.get('path') if text_meta else '?'})가 있어 fetched true({via})")
-        elif before[0] is None and not ok:
+        elif before is None and not ok:
             logs.append(f"출처 {sid}: 원문 열람 표시 없음 → fetched false(원문 미열람)")
         if not ok and _lower_to_cap(s.get("reliability")):
             logs.append(f"출처 {sid}: 원문 미열람이라 신뢰도 {s.get('reliability')} → {CAP}")
@@ -673,6 +680,24 @@ def _set_footnote_line(body: str, fetched: bool, accessed: str | None) -> str:
     return _FOOT_LINE.sub(rep, body)
 
 
+_UNOPENED_NOTE = re.compile(r"^(원문 미열람\(|원문 열람: 미확인)")
+
+
+def _mark_unopened_notes_as_history(body: str, via: str | None, date: str) -> str:
+    """원문을 열람하게 된 페이지에서, 상태 블록 밖의 '원문 미열람' 비고 문단을 지우지 않고 "등록 당시 기록"으로 바꾼다(사실 보존)."""
+    label = VIA_LABELS.get(str(via), "경로 미상")
+    out, in_block = [], False
+    for line in body.split("\n"):
+        if line.strip() == FETCH_BLOCK_START:
+            in_block = True
+        elif line.strip() == FETCH_BLOCK_END:
+            in_block = False
+        elif not in_block and _UNOPENED_NOTE.match(line):
+            line = f"등록 당시 기록: {line} → {date} 에 {label} 경로로 원문을 열람했다(아래 원문 열람 상태 표)."
+        out.append(line)
+    return "\n".join(out)
+
+
 def _insert_after(meta: dict, anchor_keys: list[str], new: dict) -> dict:
     """프런트매터에 new 키를 anchor 뒤에 넣는다(이미 있으면 그 자리에서 값만 바꾼다). 값이 None 인 키도 남긴다."""
     out: dict = {}
@@ -729,6 +754,10 @@ def sync_reference_page(page: Path | str, *, root: Path | str | None = None, tod
     item = (uc.get("items") or {}).get(ref_id) or {}
 
     was_fetched = meta.get("fetched") is True
+    if "fetched" not in meta and meta.get("url_verified") is True and (_get_table_row(body, "원문 열람") or "").startswith("확인"):
+        # 구 형식: fetched 필드가 생기기 전 퍼블리셔는 에이전트가 원문을 연 출처를 url_verified: true·"원문 열람 | 확인"으로 적었다
+        was_fetched = True
+        meta = {**meta, "fetched_via": meta.get("fetched_via") or "webfetch"}
     fetched = was_fetched or bool(tmeta)
     via = meta.get("fetched_via") if was_fetched and meta.get("fetched_via") in FETCHED_VIA else None
     if fetched and not via:
@@ -762,19 +791,23 @@ def sync_reference_page(page: Path | str, *, root: Path | str | None = None, tod
     if not fetched:
         new_meta.pop("source_text", None)
     for k in ("fetched", "fetched_via", "url_status", "source_text"):
-        if meta.get(k) != new_meta.get(k) or (k in new_meta) != (k in meta):
-            if k in ("fetched", "fetched_via", "url_status") or new_meta.get(k):
-                changes.append(f"{k}: {meta.get(k)!r} → {new_meta.get(k)!r}")
+        if meta.get(k) != new_meta.get(k) or (k == "fetched" and "fetched" not in meta):
+            changes.append(f"{k}: {meta.get(k)!r} → {new_meta.get(k)!r}")
 
     new_body = body
-    new_body = _set_table_row(new_body, "원문 열람",
-                              f"확인 — {fetch_label(new_meta)}" if fetched else "미확인 — 원문 미열람", after="신뢰도")
+    cur_row = _get_table_row(new_body, "원문 열람") or ""
+    if fetched or not cur_row.startswith("미확인 — 원문 미열람"):   # 미열람 행에 붙은 기존 설명(괄호)은 그대로 둔다
+        new_body = _set_table_row(new_body, "원문 열람",
+                                  f"확인 — {fetch_label(new_meta)}" if fetched else "미확인 — 원문 미열람", after="신뢰도")
     if "reliability" in new and new["reliability"] != rel_before:
         cell = f"{new['reliability']} (유형 기준, 원문 열람)" if fetched else f"{CAP} (원문 미열람 상한)"
         new_body = _set_table_row(new_body, "신뢰도", cell)
     if accessed:
-        new_body = _set_table_row(new_body, "접근일", f"{accessed} ({fetch_label(new_meta)})")
+        new_body = _set_table_row(new_body, "접근일", f"{accessed} ({VIA_LABELS.get(str(new_meta.get('fetched_via')), '경로 미상')}로 원문 열람)")
     new_body = _set_footnote_line(new_body, fetched, accessed or (str(new_meta.get("accessed") or "") if fetched else None))
+    if fetched:
+        new_body = _mark_unopened_notes_as_history(new_body, new_meta.get("fetched_via"),
+                                                   str((tmeta or {}).get("ingested") or new_meta.get("accessed") or today))
     new_body = _set_fetch_block(new_body, render_reference_fetch_status({**new_meta, "ref_id": ref_id}, root=root, url_check=uc, texts=texts))
     if new_meta == meta and new_body == body:
         return []
@@ -970,6 +1003,8 @@ def store_source_text(text: str, *, key: str, ref_id: str | None = None, title: 
     text = normalize_text(text)
     if not text.strip():
         raise ExtractError("빈 텍스트")
+    if str(published or "").strip() in ("", "미확인", "발행일 미확인", "None"):
+        published = None
     sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
     target = lay.texts_dir / f"{key}.txt"
     idx = _read_index(root)
@@ -977,7 +1012,7 @@ def store_source_text(text: str, *, key: str, ref_id: str | None = None, title: 
     item = {
         "ref_id": ref_id, "path": f"data/source_texts/{key}.txt",
         "title": title or old.get("title") or "", "url": url or old.get("url") or "", "org": org or old.get("org") or "",
-        "published": published if published not in (None, "") else old.get("published"),
+        "published": published if published is not None else (old.get("published") if old.get("published") not in ("미확인",) else None),
         "fetched_via": fetched_via, "source": source or old.get("source") or "", "method": method or old.get("method") or "",
         "chars": len(text), "sha256": sha, "ingested": old.get("ingested") if old.get("sha256") == sha else _today(today),
     }
@@ -1094,4 +1129,9 @@ def append_changelog(entries: list[dict], root: Path | str | None = None) -> Non
 
 
 def now_iso() -> str:
-    return datetime.now().astimezone().isoformat(timespec="seconds")
+    """현재 시각(ISO, Asia/Seoul — 위키의 날짜 기준 시간대). 시간대 자료가 없으면 시스템 시간대."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("Asia/Seoul")).isoformat(timespec="seconds")
+    except Exception:  # noqa: BLE001
+        return datetime.now().astimezone().isoformat(timespec="seconds")

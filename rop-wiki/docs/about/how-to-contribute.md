@@ -3,8 +3,8 @@ title: "기여·정정 방법"
 type: about
 status: published
 created: 2026-09-24
-updated: 2026-09-24
-version: 1
+updated: 2026-09-25
+version: 2
 ---
 
 [홈](../index.md) › 기여·정정 방법
@@ -19,6 +19,7 @@ version: 1
 |---|---|---|
 | 특정 영역·주제·질문을 먼저 조사하게 하기 | `config/priority.yaml` | 다음 대상 선정에서 순환보다 우선한다 |
 | 트랙 백로그에 질문을 넣고 우선순위 올리기 | `config/priority.yaml`의 `track_questions` | 다음 트랙 실행에서 가장 먼저 다룬다 |
+| 트랙 조사 비중 바꾸기 | `config/settings.yaml`의 `track_runs_per_week`(트랙 전체의 주당 실행 횟수)와 `track_weights`(트랙별 가중치) | 다음 대상 선정부터 적용된다. 트랙 정의의 `runs_per_week`는 비워 둔다 |
 | 틀린 문장·오래된 사실·잘못된 태그 고치기 | `inbox/corrections.md` | 다음 실행의 검증 항목에 포함되고 결과가 변경 이력에 남는다 |
 | 검증에 걸려 보류된 산출물 처리하기 | `runs/parked/` | 재투입하면 걸렸던 단계부터 다시 실행된다 [가정]. 재투입 절차는 파이프라인 절차서(`pipeline/RUN.md`)를 따른다 |
 | 직접 수행한 실험 결과 넣기 | `experiments/<날짜>-<이름>/` | 다음 트랙 실행에서 `[사용자 실험]` 태그로 반영된다 |
@@ -28,6 +29,8 @@ version: 1
 
 대상 선정은 기본적으로 순환 규칙을 따른다. 1주기에는 세부영역 번호순, 2주기부터는 점수(마지막 갱신 경과일 + 열린 질문 수 + 비어 있는 매트릭스 칸 수 + 우선 가중치 − 최근 7일 감점)로 고른다. `config/priority.yaml`에 적은 항목은 이 순환보다 우선한다.
 
+트랙 실행은 이 순환과 별도로 주 7회 가운데 `config/settings.yaml`의 `track_runs_per_week`회에 배정되고, 세 트랙 가운데 어느 트랙을 다룰지는 같은 파일의 `track_weights`(트랙 조사 비중 설정값)로 정해진다. 특정 트랙을 더 자주 다루게 하려면 그 트랙의 가중치를 올린다.
+
 네 가지를 지정할 수 있다.
 
 | 키 | 항목 필드 | 뜻 |
@@ -35,7 +38,7 @@ version: 1
 | `areas` | `area_no`, `weight`, `reason` | 세부영역을 먼저 다루게 한다. `weight`는 선정 점수에 더해지는 가중치이고 `reason`은 로그에 남는 지정 사유다 |
 | `topics` | `title`, `area_no`, `weight` | 특정 주제로 주제 조사를 실행하게 한다. `area_no`는 주 연구영역이다 |
 | `questions` | `question`, `area_no` | 답을 찾게 할 질문이다. 리서치 에이전트의 조사 질문에 포함된다 |
-| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문이다. 제기 근거가 "사용자"로 기록되고 다음 트랙 실행에서 사용자 지정 질문으로 가장 먼저 처리된다 |
+| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문이다. 제기 근거가 "사용자"로 기록되고 다음 트랙 실행에서 사용자 지정 질문으로 가장 먼저 처리된다. `track`에는 세 트랙의 slug(`manual-capability-ontology`, `nl-task-chatbot`, `floorplan-recognition`) 가운데 하나를 쓴다 |
 
 예시는 다음과 같다. 항목이 없는 키는 빈 목록(`[]`)으로 둔다.
 
@@ -100,7 +103,7 @@ track_questions:
 
 ## 실험 결과 입력: `experiments/`
 
-중점 연구 트랙의 실험은 사용자가 직접 수행한다. 스토리텔러 에이전트는 단계 3·5·7에서 실험 계획을 [실험](../tracks/manual-capability-ontology/experiments.md) 페이지에 제안하고, 사용자는 결과를 저장소의 `experiments/` 폴더에 넣는다.
+중점 연구 트랙의 실험은 사용자가 직접 수행한다. 스토리텔러 에이전트는 트랙마다 정한 단계(첫 트랙은 단계 3·5·7, 두 새 트랙은 단계 3·5)에서 실험 계획을 그 트랙의 실험 페이지([매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/experiments.md), [자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/experiments.md), [건축 도면 자동 인식](../tracks/floorplan-recognition/experiments.md))에 제안하고, 사용자는 결과를 저장소의 `experiments/` 폴더에 넣는다.
 
 - 폴더 이름은 `experiments/<날짜>-<이름>/`이다. 예: `experiments/2026-10-15-amr-manual-extraction/`. 날짜는 YYYY-MM-DD, 이름은 영문 소문자와 하이픈이다.
 - 폴더에는 `README.md`와 데이터 파일을 둔다. `README.md`에는 목적, 방법, 결과 요약을 적고, 어느 트랙·단계·질문(또는 실험 계획)에 대한 결과인지 밝힌다. 수치에는 측정 조건을 함께 적는다.
@@ -134,7 +137,8 @@ track_questions:
 - [에이전트 소개](agents.md) — 실행 순서, 반려·보류 처리, 사람이 개입하는 지점
 - [읽기 가이드](reading-guide.md) — 상태·신뢰도·태그 표기와 자동 갱신 영역
 - [열린 질문](../open-questions.md) — 분류 확장 제안과 사용자 검토 요청이 올라오는 곳
-- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](../tracks/manual-capability-ontology/index.md) — `track_questions`와 실험 결과가 반영되는 트랙
+- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](../tracks/manual-capability-ontology/index.md), [자연어 업무 지시 챗봇 트랙 개요](../tracks/nl-task-chatbot/index.md), [건축 도면 자동 인식 트랙 개요](../tracks/floorplan-recognition/index.md) — `track_questions`와 실험 결과가 반영되는 세 트랙
+- [확장 아이디어 연결 구조](../ideas/index.md) — 세 트랙이 연구하는 확장 아이디어의 연결 구조와 매핑표
 - [질문 백로그](../tracks/manual-capability-ontology/question-backlog.md) — 트랙 전용 질문의 상태
 - [변경 이력](../changelog.md), [운영 지표](../metrics.md)
 

@@ -1,6 +1,7 @@
 # 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 이 생성한다. 손으로 고치지 말 것.
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
+# 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 site_name: ROP 연구 위키
 site_description: SCM 관점의 로봇 오케스트레이션 플랫폼 연구
@@ -122,6 +123,33 @@ nav:
       - 질문 백로그: tracks/manual-capability-ontology/question-backlog.md
       - 트랙 로그 — 매뉴얼 기반 로봇 기능 온톨로지: tracks/manual-capability-ontology/log.md
       - 실험: tracks/manual-capability-ontology/experiments.md
+    - 자연어 업무 지시 챗봇:
+      - tracks/nl-task-chatbot/index.md
+      - 단계 1. 선행 연구·제품 사례 조사: tracks/nl-task-chatbot/stage-1-prior-work-and-products.md
+      - 단계 2. 필요한 데이터와 표준 조사: tracks/nl-task-chatbot/stage-2-data-and-standards.md
+      - 단계 3. 구현 가설 설계: tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md
+      - 단계 4. 오해석 방지와 확인 절차: tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md
+      - 단계 5. 검증 방법과 가설 판정: tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md
+      - 업무 분해·배정 설계 초안: tracks/nl-task-chatbot/task-model-draft.md
+      - 질문 백로그: tracks/nl-task-chatbot/question-backlog.md
+      - 트랙 로그 — 자연어 업무 지시 챗봇: tracks/nl-task-chatbot/log.md
+      - 실험: tracks/nl-task-chatbot/experiments.md
+    - 건축 도면 자동 인식:
+      - tracks/floorplan-recognition/index.md
+      - 단계 1. 선행 연구·제품 사례 조사: tracks/floorplan-recognition/stage-1-prior-work-and-products.md
+      - 단계 2. 필요한 데이터와 표준 조사: tracks/floorplan-recognition/stage-2-data-and-standards.md
+      - 단계 3. 구현 가설 설계: tracks/floorplan-recognition/stage-3-implementation-hypothesis.md
+      - 단계 4. 지도 변환 보정과 현장 정합: tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md
+      - 단계 5. 검증 방법과 가설 판정: tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md
+      - 공간 그래프 스키마 초안: tracks/floorplan-recognition/space-graph-schema-draft.md
+      - 질문 백로그: tracks/floorplan-recognition/question-backlog.md
+      - 트랙 로그 — 건축 도면 자동 인식: tracks/floorplan-recognition/log.md
+      - 실험: tracks/floorplan-recognition/experiments.md
+  - 확장 아이디어:
+    - ideas/index.md
+    - 아이디어 1. 로봇 기능 온톨로지: ideas/robot-capability-ontology.md
+    - 아이디어 2. 자연어 업무 지시 챗봇: ideas/nl-task-chatbot.md
+    - 아이디어 3. 건축 도면 자동 인식: ideas/floorplan-recognition.md
   - 주제:
     - topics/index.md
     - '2026':

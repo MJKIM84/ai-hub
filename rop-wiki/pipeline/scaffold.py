@@ -7,8 +7,9 @@
   --force            이미 있는 페이지도 덮어쓴다(data/*.json 은 건드리지 않는다)
   --reset-data       data/{open_questions,changelog,flow_matrix}.json 을 시드로 되돌린다(상태 데이터 초기화)
   --refresh-auto     페이지 생성 없이 refresh_all_auto_regions() + write_mkdocs_yml() 만 실행
-  --apply-url-check  data/url_check.json(check_urls.py --json 결과)을 참고문헌 페이지에 반영한다
-                     (URL 열림이 확인된 출처의 신뢰도를 유형 기준값으로 올린다)
+  --apply-url-check  data/url_check.json(check_urls.py 결과)을 참고문헌 페이지에 반영한다: url_status, 열린 GitHub 원문 미러의
+                     텍스트 저장(data/source_texts) → fetched·원문 열람 표시. 신뢰도 상한은 원문 열람(fetched)일 때만 푼다
+                     (--no-changelog 이면 data/changelog.json 에 쓰지 않는다)
   --verbose          바뀐 파일을 출력
 
 퍼블리셔(pipeline/publish.*)는 사이트 빌드 직전에 반드시 `--refresh-auto` 와 같은 일
@@ -459,13 +460,15 @@ def build_areas() -> None:
 # --- 참고문헌 -----------------------------------------------------------------------
 
 def load_url_check() -> tuple[str | None, dict[str, dict]]:
-    """data/url_check.json → (확인 시각(YYYY-MM-DD), {ref_id: 항목}). 없으면 (None, {})."""
-    try:
-        d = json.loads(URL_CHECK_FILE.read_text(encoding="utf-8"))
-    except (FileNotFoundError, json.JSONDecodeError):
-        return None, {}
-    checked = str(d.get("checked_at") or "")[:10] or None
-    return checked, {str(it.get("ref_id")): it for it in d.get("items") or [] if it.get("ref_id")}
+    """data/url_check.json → (확인 시각(YYYY-MM-DD), {ref_id: 항목}). 없으면 (None, {}).
+    새 형식(items 가 {ref_id: {status, …}})과 구 형식(items 목록, result 필드)을 모두 받는다(lib/sources.load_url_check).
+    항목에는 구 형식 호환용 result(열림이면 "열림")를 채워 둔다."""
+    from lib import sources  # 지연 import: 기본 scaffold 경로는 이 모듈을 쓰지 않는다
+    uc = sources.load_url_check(path=URL_CHECK_FILE)
+    items = {rid: {**it, "ref_id": rid, "result": it.get("result") or ("열림" if it.get("status") == "열림" else it.get("status"))}
+             for rid, it in (uc.get("items") or {}).items()}
+    checked = str(uc.get("checked_at") or "")[:10] or None
+    return checked, items
 
 
 def ref_access(stype: str, checked: str | None, item: dict | None) -> dict:
@@ -573,61 +576,44 @@ def build_references() -> None:
         emit(rel, page_meta, body)
 
 
-def apply_url_check() -> list[str]:
-    """data/url_check.json 을 기존 참고문헌 페이지에 반영한다(--force 없이). 바뀐 페이지 목록을 돌려준다.
+def apply_url_check(changelog: bool = True) -> list[str]:
+    """data/url_check.json(pipeline/checks/check_urls.py 결과)을 참고문헌 페이지에 반영한다. 바뀐 페이지 목록을 돌려준다.
 
-    열림이 확인된 출처: 프런트매터 reliability 를 유형 기준값으로, url_verified/url_checked 를 갱신하고
-    표의 신뢰도·원문 열람·접근일 행과 "원문 열람:" 문단을 바꾼다. updated 를 오늘로, version 을 +1 한다.
-    변경 이력(data/changelog.json)에 항목을 남기고 auto 영역을 다시 채운다. 열리지 않은 출처는 건드리지 않는다."""
-    checked, items = load_url_check()
-    if not items:
+    1. 정본 URL 이 열리지 않았지만 GitHub 원문 미러(relation original)가 열린 참고문헌은 미러 원문을 받아
+       data/source_texts/<ref_id>.txt 에 저장한다(fetched_via: github_raw). 받지 못하면 원문 미열람으로 남는다.
+    2. 모든 참고문헌 페이지를 lib/sources.sync_reference_page 로 맞춘다: 프런트매터 url_status·url_checked(·URL 이 열리면 url_verified),
+       원문 텍스트가 있으면 fetched·fetched_via·source_text, 서지 정보 표의 원문 열람 행, 각주 형식 줄, 비고 절의 원문 열람 상태 표.
+       신뢰도의 medium 상한은 원문을 실제로 열람(fetched)했을 때만 푼다 — URL 이 열리는 것만으로는 풀지 않는다(원문 열람 규칙, apply_fetch_caps 와 같은 기준).
+    3. 바뀐 페이지는 updated 를 오늘로, version 을 +1 한다. changelog 이면 data/changelog.json 에 항목을 남긴다. 그 뒤 main() 이 auto 영역을 다시 채운다."""
+    from lib import sources
+    uc = sources.load_url_check(path=URL_CHECK_FILE)
+    if not uc.get("items"):
         print(f"[scaffold] {URL_CHECK_FILE.relative_to(paths.ROOT)} 이 없거나 비어 있다. "
-              "먼저 `python3 pipeline/checks/check_urls.py --json data/url_check.json` 을 실행한다.")
+              "먼저 `python3 pipeline/checks/check_urls.py` 를 실행한다(결과는 data/url_check.json).")
         return []
+    for line in sources.ingest_mirror_texts(None, url_check=uc, only_open=True, today=TODAY):
+        log(f"[mirror] {line}")
+    texts = sources.load_source_texts()
     changed: list[str] = []
     entries: list[dict] = []
     for p in sorted((DOCS / "references").glob("ref-*.md")):
-        page_meta, body = fm.read(p)
-        ref_id = str(page_meta.get("ref_id") or p.stem)
-        stype = str(page_meta.get("source_type") or "")
-        if stype not in REF_RELIABILITY or page_meta.get("url_verified") is True:
+        notes = sources.sync_reference_page(p, url_check=uc, texts=texts, today=TODAY)
+        if not notes:
             continue
-        acc = ref_access(stype, checked, items.get(ref_id))
-        if not acc["verified"]:
-            continue
-        rows = {"신뢰도": acc["reliability_cell"], "원문 열람": acc["access_cell"], "접근일": acc["accessed_cell"]}
-        out: list[str] = []
-        for line in body.split("\n"):
-            m = re.match(r"^\| (신뢰도|원문 열람|접근일) \| .* \|$", line)
-            if m:
-                line = f"| {m.group(1)} | {rows[m.group(1)]} |"
-            elif line.startswith("원문 열람: "):
-                line = acc["note"]
-            out.append(line)
-        new_body = "\n".join(out)
-        before = page_meta.get("reliability")
-        page_meta.update({"reliability": acc["reliability"], "reliability_by_type": acc["by_type"],
-                          "url_verified": True, "url_checked": acc["checked"], "accessed": acc["checked"] or TODAY,
-                          "updated": TODAY})
-        try:
-            page_meta["version"] = int(page_meta.get("version", 1)) + 1
-        except (TypeError, ValueError):
-            page_meta["version"] = 2
-        fm.write(p, page_meta, new_body)
         rel = f"docs/{p.relative_to(DOCS).as_posix()}"
         changed.append(rel)
-        rel_note = f"신뢰도 {before} → {acc['reliability']}" if before != acc["reliability"] else f"신뢰도 {acc['reliability']} 유지"
-        entries.append({"date": TODAY, "run_id": f"url-check-{TODAY}", "action": "갱신", "page": rel,
-                        "summary": f"URL 열림 확인({acc['checked']}), 원문 미열람 표시 해제, {rel_note}"})
-        log(f"[write] {rel} (URL 열림 확인 반영)")
-    if entries:
-        cl = DATA / "changelog.json"
-        try:
-            d = json.loads(cl.read_text(encoding="utf-8"))
-        except (FileNotFoundError, json.JSONDecodeError):
-            d = {"items": []}
-        d.setdefault("items", []).extend(entries)
-        cl.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        rid = p.stem
+        it = (uc.get("items") or {}).get(rid) or {}
+        summary = f"URL 확인 반영({it.get('status') or '결과 없음'}, {str(uc.get('checked_at') or '')[:10]})"
+        if rid in texts and any(n.startswith("fetched:") for n in notes):
+            summary += f", 원문 열람 표시({sources.VIA_LABELS.get(str(texts[rid].get('fetched_via')), '')})"
+        rel_note = next((n for n in notes if n.startswith("신뢰도")), None)
+        if rel_note:
+            summary += f", {rel_note}"
+        entries.append({"date": TODAY, "run_id": f"url-check-{TODAY}", "action": "갱신", "page": rel, "summary": summary})
+        log(f"[write] {rel} ({'; '.join(notes)})")
+    if changelog and entries:
+        sources.append_changelog(entries)
     return changed
 
 
@@ -773,13 +759,14 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--reset-data", action="store_true", help="data/{open_questions,changelog,flow_matrix}.json 을 시드로 되돌린다")
     ap.add_argument("--refresh-auto", action="store_true", help="auto 영역 갱신과 mkdocs.yml 생성만 실행")
     ap.add_argument("--apply-url-check", action="store_true", help="data/url_check.json 을 참고문헌 페이지에 반영")
+    ap.add_argument("--no-changelog", action="store_true", help="--apply-url-check 가 data/changelog.json 에 기록하지 않게 한다")
     ap.add_argument("--verbose", "-v", action="store_true")
     args = ap.parse_args(argv)
     VERBOSE, FORCE, RESET_DATA = args.verbose, args.force, args.reset_data
 
     if args.apply_url_check:
-        changed = apply_url_check()
-        print(f"[scaffold] URL 열림 확인 반영: 참고문헌 {len(changed)}개 페이지")
+        changed = apply_url_check(changelog=not args.no_changelog)
+        print(f"[scaffold] URL 확인·원문 열람 반영: 참고문헌 {len(changed)}개 페이지")
     elif not args.refresh_auto:
         build_home()
         build_about()

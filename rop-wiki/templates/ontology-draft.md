@@ -73,7 +73,9 @@ version: {{version}}                        # 페이지 버전(정수). 온톨�
 
 # {{ontology_title}} (v{{ontology_version}})
 
-> 온톨로지 버전: v{{ontology_version}} · 페이지 상태: {{status}} · 신뢰도: {{confidence_or_미부여}} · 마지막 변경 실행: {{last_run_id_or_구축}}
+<!-- auto:page-status:start -->
+<!-- auto:page-status:end -->
+<!-- 상태 줄은 손으로 쓰지 않는다. 퍼블리셔가 프런트매터에서 "> 온톨로지 버전: v… · 페이지 상태: … · 신뢰도: … · 페이지 버전: … · 마지막 갱신: … · 마지막 실행: …" 한 줄을 만든다(초안 버전 라벨은 트랙 정의의 draft_version_label). 온톨로지 버전은 프런트매터 ontology_version 만 올린다. 마커 밖에 "페이지 상태:" 줄을 쓰면 check_frontmatter 가 반려한다. 마지막 변경 실행 id 는 7절 버전 이력에 남는다. -->
 
 ## 1. 목적과 범위
 

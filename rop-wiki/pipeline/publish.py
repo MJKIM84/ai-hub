@@ -242,7 +242,7 @@ def _ref_from_page(ref_id: str) -> dict | None:
     meta, _ = fm.read(p)
     return {"id": ref_id, "org": meta.get("org", ""), "title": meta.get("ref_title") or meta.get("title", ""),
             "published": meta.get("published"), "url": meta.get("url", ""), "accessed": meta.get("accessed", ""),
-            "source_unopened": meta.get("url_verified") is False}
+            "source_unopened": not meta.get("fetched")}
 
 
 class Publisher:
@@ -889,6 +889,11 @@ class Publisher:
                 "## 비고", "", note, "",
             ])
             fm.write(dst, meta, body)
+            try:   # 원문 열람 상태 블록·url_status·각주 표기를 sources 규칙대로 맞춘다(운영 전환 1-1)
+                from lib import sources as _S
+                _S.sync_reference_page(dst, today=self.date)
+            except Exception as e:  # noqa: BLE001
+                self.notes.append(f"참고문헌 {rid} 원문 열람 상태 동기화 실패: {e}")
             self.counts["references"] += 1
             self._changelog_item("생성", f"docs/{rel}", f"참고문헌 {rid} 등록: {_short(r['title'], 60)}")
             self.notes.append(f"참고문헌 생성: {rel}")
@@ -1669,16 +1674,11 @@ class Publisher:
         # 주간 정리의 링크·출처 유효성 점검(7.1): run_daily.sh 가 리서치 전에 check_urls.py·check_links.py 를 실행해 남긴 결과
         uc = runs.read_json(self.rd / "url_check.json", None)
         if isinstance(uc, dict):
-            c = uc.get("counts") or {}
-            items = uc.get("items") or []
-            bad = [f"{it.get('ref_id')}({it.get('status')})" for it in items if it.get("result") == "오류"]
-            line = (f"- 링크·출처 유효성 점검(참고문헌 URL {len(items)}건, runs/{self.run_id}/url_check.json): "
-                    f"열림 {c.get('열림', 0)} · 오류 {c.get('오류', 0)} · 미확인 {c.get('미확인', 0)}")
-            if bad:
-                line += " — 오류 URL: " + ", ".join(bad)
-            if items and c.get("미확인", 0) == len(items):
-                line += " (전부 미확인: 네트워크 정책으로 외부 접속이 막혔을 가능성이 크다)"
-            nxt.append(line)
+            try:
+                from lib import sources as _S
+                nxt.append(f"- 링크·출처 유효성 점검(runs/{self.run_id}/url_check.json): {_S.url_check_summary_line(uc)}")
+            except Exception as e:  # noqa: BLE001
+                nxt.append(f"- 링크·출처 유효성 점검(runs/{self.run_id}/url_check.json): 요약 실패({e})")
         lc = self.rd / "link_check.txt"
         if lc.is_file():
             m = re.search(r"\[check_links\] 오류 (\d+)건", lc.read_text(encoding="utf-8"))

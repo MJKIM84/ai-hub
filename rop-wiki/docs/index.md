@@ -3,8 +3,8 @@ title: "ROP 연구 위키"
 type: home
 status: published
 created: 2026-09-24
-updated: 2026-09-24
-version: 1
+updated: 2026-09-25
+version: 2
 ---
 
 홈
@@ -63,12 +63,14 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 
 ## 진행 중인 중점 연구 트랙
 
-트랙은 분류를 바꾸지 않고 여러 세부영역을 가로지르는 집중 연구 프로그램이다. 아래 현황은 퍼블리셔가 자동으로 갱신한다.
+트랙은 분류를 바꾸지 않고 여러 세부영역을 가로지르는 집중 연구 프로그램이다. 현재 트랙은 세 개다. 첫 트랙 [매뉴얼 기반 로봇 기능 온톨로지](tracks/manual-capability-ontology/index.md)에 더해, 사용자가 제안한 세 확장 아이디어(아이디어 1. 로봇 기능 온톨로지, 아이디어 2. 자연어 업무 지시 챗봇, 아이디어 3. 건축 도면 자동 인식)를 연구하기 위해 첫 트랙을 넓히고(아이디어 1) 트랙 [자연어 업무 지시 챗봇](tracks/nl-task-chatbot/index.md)과 [건축 도면 자동 인식](tracks/floorplan-recognition/index.md)을 더했다. 세 아이디어가 이어지는 구조, 공통 데이터 모델, 28개 세부 연구영역 매핑표는 [확장 아이디어 연결 구조](ideas/index.md)에 있다. 아래 현황은 퍼블리셔가 자동으로 갱신한다.
 
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 33 | q1-02 — 산업 상호운용 규격은 로봇 기능을 어떤 형식으로 기술하는가? (후보: VDA 5050의 팩트시트, MassRobotics AMR 상호운용 표준, OPC UA Robotics, Asset Administration Shell의 능력·스킬·서비스 모델, Open-RMF Fleet Adapter의 기능 기술) ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-02)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 39 | q1-02 — 산업 상호운용 규격은 로봇 기능을 어떤 형식으로 기술하는가? (후보: VDA 5050의 팩트시트, MassRobotics AMR 상호운용 표준, OPC UA Robotics, Asset Administration Shell의 능력·스킬·서비스 모델, Open-RMF Fleet Adapter의 기능 기술) ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-02)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 18 | 아직 없음 | [트랙 개요](tracks/nl-task-chatbot/index.md) |
+| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 18 | 아직 없음 | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례
@@ -94,8 +96,8 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 - 2026-09-25 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id({#q1-01}) 규칙 추가 (실행 manual-2026-09-25)
 - 2026-09-25 · 갱신 · agents/verifier.md — 내용 검증 에이전트 프롬프트 1.3 → 1.4: 유니코드 제목 앵커 규칙과 답 소제목 명시 id 검사 추가 (실행 manual-2026-09-25)
 - 2026-09-25 · 갱신 · agents/storyteller.md — 스토리텔러 에이전트 프롬프트 1.4 → 1.5: 태그 바로 뒤 괄호 금지 규칙 추가 (실행 manual-2026-09-25)
-- 2026-09-25 · 갱신 · [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) — q1-01·q1-02 답함, q1-03 부분 답, 후속 질문 4건(q1-07·q1-08·q4-06·q5-05), 완료 조건 미충족 평가, 출처 20건(원문 미열람), 이력 행 추가. 2차 수정: 4절 결론 셋째 항목에서 MassRobotics setup 메시지를 기능 기술로 쓴 부분 삭제(능력 필드 유무 미확인 명시), 남은 불확실성 한 항목 평서문으로 (실행 2026-09-25-02)
-- 2026-09-25 · 갱신 · [능력 온톨로지 초안](tracks/manual-capability-ontology/ontology-draft.md) — 온톨로지 v0 → v0.1: 개념 효과·스킬·오류 추가(확정), 기능 속성에 능력 출처 구분 추가(초안 → 확정), 관계 기능 / 구현된다 / 스킬 추가, 다이어그램 갱신, 전제조건·스킬 상태 기계 등은 6절 질문으로 (실행 2026-09-25-02)
+- 2026-09-25 · 갱신 · agents/shared-rules.md — 공통 규칙 1.1 → 1.2: 운영 전환 추가 규칙(원문 열람 표시·신뢰도 상한·상태 줄 금지·형식 검증·분량 분리·차등 갱신·트랙 3개) (실행 manual-2026-09-25)
+- 2026-09-25 · 갱신 · agents/researcher.md — 리서치 에이전트 1.1 → 1.2: 원문 열기(GitHub raw·inbox), 갱신 차등 조사, 대분류 연결 절차 (실행 manual-2026-09-25)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 
@@ -103,7 +105,8 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 
 - [SCM 관점의 연구 시작 방법](about/research-method.md) — 물류 흐름 7단계와 여섯 항목으로 기술을 교차해 보는 방법
 - [물류 흐름 매트릭스](flow-matrix.md) — 입고부터 반품까지 각 단계에서 어떤 페이지가 어떤 항목을 다루는지
-- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](tracks/manual-capability-ontology/index.md) — 진행 중인 중점 연구 트랙
+- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](tracks/manual-capability-ontology/index.md) — 진행 중인 중점 연구 트랙(첫 트랙)
+- [확장 아이디어 연결 구조](ideas/index.md) — 세 확장 아이디어와 세 트랙이 이어지는 구조, 공통 데이터 모델, 28개 세부 연구영역 매핑표
 - [용어집](glossary/index.md) — SCOR, ISA-95, EPCIS, Open-RMF, MRTA, MAPF 같은 용어의 한 줄 정의
 - [열린 질문](open-questions.md) — 아직 답하지 못한 질문과 그 상태
 

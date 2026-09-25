@@ -41,9 +41,14 @@ def stage_research(rd: Path, settings: dict) -> int:
         print("[validate] research.json 없음")
         return 2
     changes: list[str] = []
+    probe = runs.read_json(rd / "probe.json", {}) or {}
     try:
         from lib import sources as S  # 원문 열람 흐름(inbox/sources, GitHub raw 미러)
-        changes = S.apply_fetch_caps(data) or []
+        for src in data.get("sources", []):
+            # 에이전트가 raw.githubusercontent.com 을 WebFetch 로 열고 경로를 webfetch 로 적은 경우 github_raw 로 본다
+            if src.get("fetched_via") == "webfetch" and S.is_raw_github(str(src.get("fetch_url") or "")):
+                src["fetched_via"] = "github_raw"
+        changes = S.apply_fetch_caps(data, web_fetch_available=probe.get("web_fetch_available")) or []
     except ImportError:
         # sources 모듈이 없으면 최소 규칙만 적용: fetched 가 없으면 false, 못 연 출처·그 출처만 쓴 주장은 medium 상한
         for s in data.get("sources", []):

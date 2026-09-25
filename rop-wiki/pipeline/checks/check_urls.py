@@ -10,7 +10,7 @@ docs/references/ref-*.md 프런트매터의 url 을 모두 확인하고 네 가�
 정본 URL 이 열리지 않으면(정책 차단·오류·없음) config/source_mirrors.yaml 의 GitHub raw 미러(또는 github.com blob 의 raw 경로)를
 확인해 mirror·mirror_status·mirror_relation 을 남긴다. 차단 여부는 코드에 적지 않고 매번 실제로 요청해 판정한다(네트워크 정책은 바뀔 수 있다).
 
-결과: data/url_check.json (기본. --json 으로 다른 경로, --no-write 로 저장 안 함)
+결과: data/url_check.json (기본. --json 으로 다른 경로, --no-write 로 저장 안 함. --refs 로 일부만 확인하면 기존 결과에 합친다)
   {"checked_at", "counts": {열림, 없음, 정책 차단, 오류, 미러 열림}, "items": {ref_id: {url, status, http, detail, mirror, mirror_status, mirror_relation}}}
 표준 출력: 한국어 요약 표와 마지막 줄 "[check_urls] N건: 열림 n · 없음 n · 정책 차단 n · 오류 n · 미러 열림 n (확인 시각 …)".
 exit 0. --strict 이면 열림이 아닌 항목이 하나라도 있을 때 exit 1.
@@ -174,6 +174,8 @@ def main(argv=None) -> int:
         results = list(ex.map(lambda t: (t[0], check_one(t[0], t[1], args.timeout, ctx, not args.no_mirror)), refs))
     items = {rid: it for rid, it in results}
     checked = sources.now_iso()
+    out = Path(args.json_path) if args.json_path else paths.DATA / "url_check.json"
+    partial = bool(args.refs.strip())
     uc = {"checked_at": checked, "items": items}
     counts = sources.url_check_counts(uc)
     uc = {"checked_at": checked, "counts": counts, "items": items}
@@ -191,7 +193,14 @@ def main(argv=None) -> int:
         print(f"[check_urls] 정책 차단 {counts['정책 차단']}건은 이 실행 환경의 네트워크 정책이 막은 것이다(파일 결함 아님). "
               "원문은 GitHub 미러(미러 열림)나 inbox/sources/ 로 연다.")
     if not args.no_write:
-        out = Path(args.json_path) if args.json_path else paths.DATA / "url_check.json"
+        if partial and out.is_file():
+            # --refs 로 일부만 확인했으면 기존 결과에 합친다(다른 참고문헌의 결과를 지우지 않는다). 항목별 확인 시각을 남긴다.
+            prev = sources.load_url_check(path=out)
+            merged = dict(prev.get("items") or {})
+            for rid, it in items.items():
+                merged[rid] = {**it, "checked_at": checked}
+            uc = {"checked_at": prev.get("checked_at") or checked, "items": dict(sorted(merged.items()))}
+            uc = {"checked_at": uc["checked_at"], "counts": sources.url_check_counts(uc), "items": uc["items"]}
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(uc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         try:

@@ -7,16 +7,16 @@ related_areas: [21, 13, 25, 9, 5]
 tags: [활용 시나리오, 여섯 항목, 가설 판정, 실험 계획, 온보딩, 능력 기반 배정]
 status: seed
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: []
-version: 1
+version: 2
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [매뉴얼 기반 로봇 기능 온톨로지](index.md) › 단계 7. ROP 활용 시나리오 종합과 가설 판정
 
 # 단계 7. ROP 활용 시나리오 종합과 가설 판정
 
-> 단계 상태: 대기 · 열린 질문: 1건 · 답한 질문: 0건 · 완료 조건: 미충족 · 마지막 실행: 없음
+> 단계 상태: 대기 · 열린 질문: 2건 · 답한 질문: 0건 · 완료 조건: 미충족 · 마지막 실행: 없음
 
 ## 1. 이 단계에서 밝힐 것
 
@@ -33,6 +33,9 @@ version: 1
 | id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |
 |---|---|---|---|---|---|
 | q7-01 | 온보딩(21번), 능력 기반 배정(13번), 안전 제약 반영(25번), 이종 제조사 통합(9번) 각각을 부록 A 11장의 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)으로 시나리오화하면 온톨로지가 어느 항목을 바꾸는가? 가설 1~3은 단계 1~6의 결과로 어떻게 판정되는가? | 열림 | 사용자 | | |
+| q7-02 | 신규 로봇 온보딩에서 자동 생성한 능력 정의 초안은 수작업 정의와 비교해 소요 시간과 기능 누락을 얼마나 줄이는가? 이를 어떤 실험으로 측정하고 가설 3 판정에 쓰는가? | 열림 | 사용자 | | |
+
+q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)) 편입 때 새 연구 목표 5(신규 로봇 온보딩 시 능력 정의 초안 자동 생성)의 효과 측정 질문으로 더했다(2026-09-25). 가설 3의 판정 근거가 된다.
 
 표의 질문 문장은 트랙 정의 그대로 두었다. 다음은 구축자 보충이다. q7-01의 21번은 [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), 13번은 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), 25번은 [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), 9번은 [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)을 가리킨다. "부록 A 11장의 여섯 항목"은 이 위키의 분류 원문 11장, 곧 [SCM 관점의 연구 시작 방법](../../about/research-method.md)의 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)이다. "부록 A"는 이 위키의 분류 원문(`_source/ROP_SCM_연구분야_분류.md`)을 뜻한다.
 
@@ -173,3 +176,4 @@ version: 1
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 온톨로지 변경 | 버전 |
 |---|---|---|---|---|---|
 | 2026-09-24 | build-2026-09-24(구축 시드, 파이프라인 실행 아님) | 없음 | 시드 q7-01(1건, 구축 시 [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [능력 온톨로지 초안](ontology-draft.md)에서 생성) | 1 |
+| 2026-09-25 | build-2026-09-25(확장 아이디어 1 편입, 파이프라인 실행 아님) | 없음 | q7-02 추가(사용자 요청, [질문 백로그](question-backlog.md)에 등록) | 없음 | 2 |
