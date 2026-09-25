@@ -41,10 +41,17 @@ def say(msg: str) -> None:
 
 
 def reserve_run_id(day: str, settings: dict) -> str:
+    """다음 실행 id 를 폴더 생성으로 예약한다. 같은 프로세스 안은 잠금으로, 다른 프로세스(동시에 도는 배치·run_daily.sh)와는
+    mkdir 의 원자성으로 겹침을 막는다 — 이미 있으면 다음 번호를 다시 계산한다."""
     with _ID_LOCK:
-        rid = runs.new_run_id(day, settings)
-        (runs.runs_root(settings) / rid).mkdir(parents=True, exist_ok=False)
-        return rid
+        for _ in range(50):
+            rid = runs.new_run_id(day, settings)
+            try:
+                (runs.runs_root(settings) / rid).mkdir(parents=True, exist_ok=False)
+                return rid
+            except FileExistsError:
+                time.sleep(0.2)
+        raise RuntimeError("실행 id 예약 실패(50회 충돌)")
 
 
 def item_args(it: dict) -> list[str]:
