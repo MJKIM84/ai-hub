@@ -7,3 +7,16 @@
 - 2026-09-25 14:16:45 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 14:16:45 KST [대상 선정] 결과: 성공 · 소요 0초 · track · 5. 로봇 능력·작업 온톨로지
 - 2026-09-25 14:16:46 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-47/prompts/research.md (424,342자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 14:21:45 KST [리서치 에이전트] 호출 완료(시도 1): 턴 23 · 4분 58초 · 비용 $5.2477 · subtype success
+- 2026-09-25 14:21:45 KST [리서치 에이전트] 저장: runs/2026-09-25-47/research.json
+- 2026-09-25 14:21:45 KST [형식 검증] 리서치 산출물 검사: 출처 11건 중 원문 열람 1건 · 신뢰도 상한 적용 2건
+- 2026-09-25 14:21:45 KST [형식 검증]   - 출처 ref-234: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/README.md)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 14:21:45 KST [형식 검증]   - 출처 ref-439: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/README.md)은 관련 자료(정본 문서 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 14:21:45 KST [리서치] 예산 점검: 예산 안
+- 2026-09-25 14:21:45 KST [리서치] 결과: 성공 · 소요 4분 59초 · 예산 안
+- 2026-09-25 14:21:45 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-47/prompts/verification1.md (420,187자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 14:24:21 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 9 · 2분 36초 · 비용 $3.1604 · subtype success
+- 2026-09-25 14:24:21 KST [내용 검증 에이전트] 저장: runs/2026-09-25-47/verification.json
+- 2026-09-25 14:24:22 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-25 14:24:22 KST [1차 검증] 결과: 조건부 승인 · 소요 2분 37초 · 신뢰도 medium
+- 2026-09-25 14:25:09 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-47/prompts/storyteller.md (393,404자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
