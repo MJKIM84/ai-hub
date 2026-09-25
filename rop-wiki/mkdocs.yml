@@ -161,6 +161,13 @@ nav:
       - 9. 로봇·제조사 관제 연동 — 핵심 개념과 용어: topics/2026/2026-09-25-area09-s4.md
       - 9. 로봇·제조사 관제 연동 — 열린 질문: topics/2026/2026-09-25-area09-s11.md
       - 9. 로봇·제조사 관제 연동 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area09-s10.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 대표 연구와 자료: topics/2026/2026-09-25-area08-s8.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area08-s7.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 대표 접근법과 기술: topics/2026/2026-09-25-area08-s6.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 핵심 개념과 용어: topics/2026/2026-09-25-area08-s4.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 왜 중요한가: topics/2026/2026-09-25-area08-s3.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 열린 질문: topics/2026/2026-09-25-area08-s11.md
+      - 8. 실시간 세계 상태·데이터 일관성 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area08-s10.md
       - 7. 화물·재고·자산 식별과 추적 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area07-s7.md
       - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
       - 6. 지도·공간·위치 모델 — 대표 연구와 자료: topics/2026/2026-09-25-area06-s8.md
@@ -215,6 +222,7 @@ nav:
     - 다중 에이전트 경로 찾기 (MAPF): glossary/mapf.md
     - 다중 에이전트 픽업·배송 (Multi-Agent Pickup and Delivery): glossary/multi-agent-pickup-and-delivery.md
     - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
+    - 디지털 섀도 (Digital Shadow): glossary/digital-shadow.md
     - 디지털 트윈 (Digital Twin): glossary/digital-twin.md
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
@@ -222,6 +230,7 @@ nav:
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
+    - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
@@ -231,6 +240,7 @@ nav:
     - 스킬 (Skill): glossary/skill.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
+    - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
@@ -244,6 +254,7 @@ nav:
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
+    - 정보 나이 (Age of Information (AoI)): glossary/age-of-information.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
     - 지도 정합 (Map Alignment): glossary/map-alignment.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
@@ -535,6 +546,21 @@ nav:
     - ref-279 — Efficient Robot Interface for Seamless Human-Robot Collaboration (LocusONE user interface): references/ref-279.md
     - ref-280 — Locus Robotics leverages Aila's scanning to increase productivity (case study): references/ref-280.md
     - ref-281 — 현대로템, 무인로봇 국책과제 2건 수주: references/ref-281.md
+    - 'ref-282 — Quality of Service settings — ROS 2 Documentation: Jazzy': references/ref-282.md
+    - ref-283 — Doors (integration_doors) - Programming Multiple Robots with ROS 2: references/ref-283.md
+    - ref-284 — Lifts (integration_lifts) - Programming Multiple Robots with ROS 2: references/ref-284.md
+    - ref-285 — rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg: references/ref-285.md
+    - ref-286 — rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg: references/ref-286.md
+    - ref-287 — Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc): references/ref-287.md
+    - 'ref-288 — OPC Unified Architecture – Part 4: Services - 7.11 DataValue': references/ref-288.md
+    - 'ref-289 — Age of Information: An Introduction and Survey': references/ref-289.md
+    - 'ref-290 — DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH': references/ref-290.md
+    - 'ref-291 — Digital Twin in manufacturing: A categorical literature review and classification': references/ref-291.md
+    - 'ref-292 — Inventory Record Inaccuracy: An Empirical Analysis': references/ref-292.md
+    - ref-293 — Reducing False Negative Reads in RFID Data Streams Using an Adaptive Sliding-Window Approach: references/ref-293.md
+    - ref-294 — 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용: references/ref-294.md
+    - ref-295 — Conflict-free Replicated Data Types (CRDTs): references/ref-295.md
+    - ref-296 — OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현: references/ref-296.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

@@ -18,7 +18,7 @@
     "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 22. 시뮬레이션·예측용 디지털 트윈과의 구분 근거 필요",
     "섹션 11. 열린 질문 비어 있음 — 기존 열린 질문 중 oq-024 가 이 영역에 걸려 있음",
     "프런트매터 related_areas·sources 비어 있음",
-    "같은 영역을 다룬 실행 2026-09-25-18 의 브리프는 참고문헌 목록에 반영되지 않았다(ref-182~ref-196 이 목록에 없음). 이번 실행은 그 조사 방향을 재확인하되 출처 번호를 예약 구간 ref-378~ 으로 새로 부여한다"
+    "같은 영역을 다룬 실행 2026-09-25-18 의 브리프는 참고문헌 목록에 반영되지 않았다(ref-182~ref-196 이 목록에 없음). 이번 실행은 그 조사 방향을 재확인하되 출처 번호를 예약 구간 ref-282~ 으로 새로 부여한다"
   ],
   "research_questions": [
     "문이 열려 있다는 정보가 30초 전이라면 지금도 통과 가능하다고 볼 수 있을까? [분류원문]",
@@ -105,8 +105,8 @@
       "claim": "Open-RMF 에서 문 노드는 문 상태(DoorState: 시각 door_time, 문 이름, 현재 모드)를 /door_states 토픽으로 발행하고, 문 어댑터는 진행 중인 로봇 작업을 방해할 요청을 막는 상태 감독자 역할을 하며 어댑터를 거치지 않은 직접 요청은 이전 상태로 되돌린다.",
       "tag": "사실",
       "source_ids": [
-        "ref-379",
-        "ref-381"
+        "ref-283",
+        "ref-285"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -120,8 +120,8 @@
       "claim": "Open-RMF 승강기 상태(LiftState)는 시각(lift_time), 현재·목적 층, 문 상태, 운행 상태(MOTION_UNKNOWN 포함), 운영 모드(사람·AGV·화재·오프라인·비상), 세션 id 를 담고, 승강기 어댑터는 승강기의 내부 상태와 목표 상태를 추적해 로봇·일반 운행을 방해할 동작을 막는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-380",
-        "ref-382"
+        "ref-284",
+        "ref-286"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -135,8 +135,8 @@
       "claim": "이번에 연 Open-RMF 문·승강기 연동 문서에는 상태 발행 주기나 오래된 상태를 판정·처리하는 규칙이 적혀 있지 않고, 메시지 정의는 시각 필드만 둔다.",
       "tag": "추정",
       "source_ids": [
-        "ref-379",
-        "ref-380"
+        "ref-283",
+        "ref-284"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -150,7 +150,7 @@
       "claim": "ROS 2 QoS 는 연속 발행 사이의 최대 간격(Deadline), 발행에서 수신까지 이 시간을 넘으면 오래되었거나 만료된 것으로 보는 수명(Lifespan), 발행자가 살아 있음을 알려야 하는 최대 기간(Liveliness·Lease Duration)을 정책으로 두고, 기한 초과·생존성 상실·변경을 이벤트 콜백으로 알린다.",
       "tag": "사실",
       "source_ids": [
-        "ref-378"
+        "ref-282"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -164,7 +164,7 @@
       "claim": "Eclipse Sparkplug 사양은 에지 노드의 NDEATH 를 받거나 MQTT 서버 연결을 잃으면 호스트 애플리케이션이 관련 측정값을 STALE 품질로 표시하게 하고, 0~255 순번(seq)으로 순서 뒤바뀜을 감지해 재정렬 대기 시간이 지나도 빠진 메시지가 오지 않으면 재탄생(Rebirth) 요청으로 전체 상태를 다시 받게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-383"
+        "ref-287"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -178,7 +178,7 @@
       "claim": "OPC UA 의 DataValue 는 값과 함께 원천에서 값이나 상태가 마지막으로 바뀐 시각(SourceTimestamp), 서버 쪽 시각(ServerTimestamp), Good·Uncertain·Bad 로 나뉘는 상태 코드(StatusCode)를 담는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-384"
+        "ref-288"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -193,7 +193,7 @@
       "claim": "정보 나이(Age of Information, AoI)는 시각 표시된 상태 갱신을 받는 쪽의 정보가 얼마나 최신인지를 재는 지표로, 저지연 사이버물리 시스템의 설계·최적화 연구에서 평가 방법이 정리되어 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-385"
+        "ref-289"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -209,10 +209,10 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-378",
-        "ref-383",
-        "ref-379",
-        "ref-385"
+        "ref-282",
+        "ref-287",
+        "ref-283",
+        "ref-289"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -287,7 +287,7 @@
       "source_ids": [
         "ref-030",
         "ref-045",
-        "ref-384"
+        "ref-288"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -315,7 +315,7 @@
       "claim": "DeHoratius·Raman(2008)은 한 소매업체 37개 매장의 재고 기록 약 37만 건 가운데 65%가 실물과 맞지 않았고, 재고 실사는 부정확성을 줄이며 매장 환경의 복잡성과 유통 구조는 늘린다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-388"
+        "ref-292"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -330,7 +330,7 @@
       "claim": "재고 기록이 실물과 자주 어긋난다는 연구 결과로 볼 때, ROP의 화물 상태는 WMS 기록을 그대로 참값으로 두지 말고 로봇이 보고한 적재물(VDA 5050 loads)이나 판독 결과를 대조 근거로 함께 보관해 불일치를 드러내야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-388",
+        "ref-292",
         "ref-051"
       ],
       "cross_checked": false,
@@ -346,7 +346,7 @@
       "claim": "RFID 판독 스트림은 누락·오판독이 섞여 미들웨어에서 정제가 필요하며, 적응형 슬라이딩 윈도 방식 WSTD 는 SMURF 의 개념을 바탕으로 전이 감지를 개선해 이동 태그 환경에서 SMURF 보다 전체 오류가 약 30% 적었다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-389"
+        "ref-293"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -361,7 +361,7 @@
       "claim": "무충돌 복제 데이터 타입(CRDT)은 각 복제본을 다른 복제본과 조율하지 않고 수정할 수 있고, 같은 갱신 집합을 받은 복제본들이 수학적 규칙에 따라 결정적으로 같은 상태에 수렴하도록 설계된 데이터 타입이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-391"
+        "ref-295"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -376,9 +376,9 @@
       "claim": "CRDT 식 수렴은 관측 기록 모음처럼 순서와 무관하게 합칠 수 있는 상태에는 맞지만, 문·승강기 사용권처럼 한 시점에 한 주체만 가져야 하는 자원은 Open-RMF 문·승강기 어댑터나 승강기 세션 id 처럼 단일 감독자가 판정하는 구조가 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-391",
-        "ref-379",
-        "ref-382"
+        "ref-295",
+        "ref-283",
+        "ref-286"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -393,7 +393,7 @@
       "claim": "ISO 23247 은 제조 디지털 트윈을 관측 가능한 제조 요소(인력·장비·자재·공정·시설·환경·제품·지원 문서)의 목적에 맞는 디지털 표현으로서 요소와 표현 사이에 동기화가 있는 것으로 정의하고, 데이터 수집·장치 제어 도메인과 핵심 도메인을 나눈 참조 구조를 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-386"
+        "ref-290"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -408,7 +408,7 @@
       "claim": "Kritzinger 외(2018)는 제조 디지털 트윈 문헌을 데이터 통합 수준에 따라 디지털 모델·디지털 섀도(digital shadow)·디지털 트윈으로 나누고, 가장 높은 단계인 디지털 트윈에 관한 문헌은 드물다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-387"
+        "ref-291"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -423,8 +423,8 @@
       "claim": "8. 실시간 세계 상태·데이터 일관성이 다루는 현재 상태 표현은 현장과 자동으로 동기화되는 표현(디지털 섀도, ISO 23247 의 동기화된 표현)에 가깝고, 그 표현을 복제해 가정한 미래를 실험하는 쪽은 22. 시뮬레이션·예측용 디지털 트윈의 몫으로 나누는 것이 분류 원문의 구분과 맞을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-387",
-        "ref-386"
+        "ref-291",
+        "ref-290"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -439,7 +439,7 @@
       "claim": "이동건 외(2021)는 지능형 물류 로봇을 쓰는 자동물류시스템(AMHS)에 대해 설계 단계에서는 가상 환경에서 미리 검증하고 운영 단계에서는 실시간으로 모니터링·분석하는 디지털트윈을 개발·적용했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-390"
+        "ref-294"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -454,7 +454,7 @@
       "claim": "김지형(2023)은 OPC UA 와 연결 솔루션(FLEXING CPS·FLEXING EDGE)으로 이기종 로봇의 데이터를 수집·전달해 실시간 3D 디지털 트윈을 구축하는 설계·구현을 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-392"
+        "ref-296"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -469,7 +469,7 @@
       "claim": "국내 자동물류 디지털트윈 연구(f28)가 한 시스템 안에 설계 검증(가정한 구성의 사전 실험)과 운영 중 실시간 모니터링(현재 상태 표현)을 함께 두는 것으로 볼 때, 위키 서술에서는 같은 '디지털트윈' 이름 아래 기능을 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈으로 나눠 적어야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-390"
+        "ref-294"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -499,7 +499,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-379",
+        "ref-283",
         "ref-045"
       ],
       "cross_checked": false,
@@ -617,7 +617,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-378",
+      "id": "ref-282",
       "org": "Open Robotics (ROS 2 Documentation)",
       "title": "Quality of Service settings — ROS 2 Documentation: Jazzy",
       "published": null,
@@ -632,7 +632,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-379",
+      "id": "ref-283",
       "org": "Open Robotics",
       "title": "Doors (integration_doors) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -647,7 +647,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-380",
+      "id": "ref-284",
       "org": "Open Robotics",
       "title": "Lifts (integration_lifts) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -662,7 +662,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-381",
+      "id": "ref-285",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg",
       "published": null,
@@ -677,7 +677,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-382",
+      "id": "ref-286",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
       "published": null,
@@ -692,7 +692,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-383",
+      "id": "ref-287",
       "org": "Eclipse Foundation (eclipse-sparkplug GitHub)",
       "title": "Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc)",
       "published": null,
@@ -707,7 +707,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-384",
+      "id": "ref-288",
       "org": "OPC Foundation",
       "title": "OPC Unified Architecture – Part 4: Services - 7.11 DataValue",
       "published": null,
@@ -722,7 +722,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-385",
+      "id": "ref-289",
       "org": "Yates, R. D., Sun, Y., Brown, D. R., Kaul, S. K., Modiano, E., & Ulukus, S.",
       "title": "Age of Information: An Introduction and Survey",
       "published": "2021",
@@ -737,7 +737,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-386",
+      "id": "ref-290",
       "org": "NIST",
       "title": "DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH",
       "published": null,
@@ -752,7 +752,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-387",
+      "id": "ref-291",
       "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
       "title": "Digital Twin in manufacturing: A categorical literature review and classification",
       "published": "2018",
@@ -767,7 +767,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-388",
+      "id": "ref-292",
       "org": "DeHoratius, N., & Raman, A.",
       "title": "Inventory Record Inaccuracy: An Empirical Analysis",
       "published": "2008",
@@ -782,7 +782,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-389",
+      "id": "ref-293",
       "org": "Massawe, L. V. 외(Sensors)",
       "title": "Reducing False Negative Reads in RFID Data Streams Using an Adaptive Sliding-Window Approach",
       "published": "2012-03-28",
@@ -797,7 +797,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-390",
+      "id": "ref-294",
       "org": "이동건, 송승현, 이찬혁, 노상도, 윤상문, 이현영(한국CDE학회 논문집)",
       "title": "자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용",
       "published": "2021-12",
@@ -812,7 +812,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-391",
+      "id": "ref-295",
       "org": "Preguiça, N., Baquero, C., & Shapiro, M.",
       "title": "Conflict-free Replicated Data Types (CRDTs)",
       "published": "2018-05",
@@ -827,7 +827,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-392",
+      "id": "ref-296",
       "org": "김지형",
       "title": "OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현",
       "published": "2023",
@@ -886,7 +886,7 @@
     "문·승강기·충전기 같은 설비 상태 정보를 몇 초까지 믿고 통과·배정을 확정할지 정한 표준이나 국내 현장 기준이 있는가, 없으면 대상별 허용 경과 시간을 어떤 근거로 정할 것인가? | 관련 영역: 8. 실시간 세계 상태·데이터 일관성, 10. 설비·건물 시스템 연동 | 근거: f13 | 종류: 일반",
     "상태 보고 주기와 시각 체계가 다른 로봇(VDA 5050 최소 30초 주기의 ISO 8601 시각, Open-RMF 밀리초 시각)이 섞일 때 공통 세계 상태의 시각 동기화 방식과 허용 시계 오차를 규정한 자료나 사례가 있는가? | 관련 영역: 8. 실시간 세계 상태·데이터 일관성, 9. 로봇·제조사 관제 연동, 11. 분산 시스템·통신·컴퓨팅 구조 | 근거: f3 | 종류: 일반",
     "로봇이 보고한 적재물 식별·판독 결과와 WMS 재고 기록이 어긋날 때 어느 쪽을 기준으로 삼고 정정 기록을 누가 발행하는가(국내 물류센터 사례 포함)? | 관련 영역: 8. 실시간 세계 상태·데이터 일관성, 7. 화물·재고·자산 식별과 추적 | 근거: f21 | 종류: 일반",
-    "출처 충돌: 김지형(2023) 'OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현'의 게재 학술지가 검색 요약에 따라 지능정보논문지와 한국인터넷방송통신학회논문지로 다르게 나온다. 어느 쪽이 맞는가? | 관련 영역: 8. 실시간 세계 상태·데이터 일관성 | 근거: ref-392 | 종류: 출처 충돌"
+    "출처 충돌: 김지형(2023) 'OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현'의 게재 학술지가 검색 요약에 따라 지능정보논문지와 한국인터넷방송통신학회논문지로 다르게 나온다. 어느 쪽이 맞는가? | 관련 영역: 8. 실시간 세계 상태·데이터 일관성 | 근거: ref-296 | 종류: 출처 충돌"
   ],
   "open_questions_resolved": [],
   "self_check": {
@@ -900,7 +900,7 @@
       "f22 30% 수치는 저자 보고값이며 실험 조건 미확인",
       "f25 ISO 23247 표준 원문 미열람(NIST 해설 경유, 해설도 미열람)",
       "f26 디지털 모델·섀도·트윈의 자동 데이터 흐름 방향 정의는 이번 검색 요약에 직접 나타나지 않음(분류 구분만 확인)",
-      "ref-389 저자 목록 일부, ref-392 게재지 이름 미확인",
+      "ref-293 저자 목록 일부, ref-296 게재지 이름 미확인",
       "oq-024(선언 능력 대 관측 운용 능력)는 이번 조사로 해결되지 않음",
       "Perpetua(IROS 2025)·Toris·Chernova(ICRA 2017) 대상 지속성 모델은 서지만 확인했으나 신규 출처 상한으로 넣지 않음"
     ],
@@ -913,6 +913,6 @@
       "queries": 16,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 13건을 열었다: 재사용 ref-004(rmf-core)·ref-030(SOSA 편집본)·ref-031(VDA 5050 3.0.0 명세)·ref-044(CBV.ttl)·ref-045(EPCIS.ttl)·ref-051(state.schema)·ref-148(robot_state.json), 신규 ref-378(ROS 2 QoS)·ref-379·ref-380(Open-RMF 문·승강기 문서)·ref-381·ref-382(DoorState·LiftState)·ref-383(Sparkplug 5장). OPC UA 온라인 참조·NIST 해설·논문 7건(ref-384~ref-392 중 fetched=false)은 검색 요약만 봐서 원문 미열람이며 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하. 검색 16회/30, 신규 출처 15건/15(ref-378~ref-392, 예약 구간 안)로 신규 출처 상한에 도달해 Perpetua·Toris·Chernova 대상 지속성 연구는 넣지 못했다. 같은 영역의 이전 실행 2026-09-25-18 은 참고문헌 목록에 반영되지 않았으므로(번호 충돌 가능성) 그 조사 방향을 원문으로 재확인하고 새 예약 번호를 부여했다. 이번에 달라진 점: VDA 5050 연결 상태를 원문대로 4종(HIBERNATING 포함)으로 적었고, 한국 자료로 물류 대상 국내 논문(ref-390, 자동물류시스템 디지털트윈)을 더했다. 교차 확인 0건. 분류 원문 SCM 질문(30초 전 문 상태)은 f13 으로 답했으나 허용 경과 시간 값을 정한 출처가 없어 추정이다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f25~f27·f30 으로 구분 근거만 두고 섞지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 입력 누락 없음. 정정 요청 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 13건을 열었다: 재사용 ref-004(rmf-core)·ref-030(SOSA 편집본)·ref-031(VDA 5050 3.0.0 명세)·ref-044(CBV.ttl)·ref-045(EPCIS.ttl)·ref-051(state.schema)·ref-148(robot_state.json), 신규 ref-282(ROS 2 QoS)·ref-283·ref-284(Open-RMF 문·승강기 문서)·ref-285·ref-286(DoorState·LiftState)·ref-287(Sparkplug 5장). OPC UA 온라인 참조·NIST 해설·논문 7건(ref-288~ref-296 중 fetched=false)은 검색 요약만 봐서 원문 미열람이며 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하. 검색 16회/30, 신규 출처 15건/15(ref-282~ref-296, 예약 구간 안)로 신규 출처 상한에 도달해 Perpetua·Toris·Chernova 대상 지속성 연구는 넣지 못했다. 같은 영역의 이전 실행 2026-09-25-18 은 참고문헌 목록에 반영되지 않았으므로(번호 충돌 가능성) 그 조사 방향을 원문으로 재확인하고 새 예약 번호를 부여했다. 이번에 달라진 점: VDA 5050 연결 상태를 원문대로 4종(HIBERNATING 포함)으로 적었고, 한국 자료로 물류 대상 국내 논문(ref-294, 자동물류시스템 디지털트윈)을 더했다. 교차 확인 0건. 분류 원문 SCM 질문(30초 전 문 상태)은 f13 으로 답했으나 허용 경과 시간 값을 정한 출처가 없어 추정이다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f25~f27·f30 으로 구분 근거만 두고 섞지 않았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 입력 누락 없음. 정정 요청 없음."
   }
 }

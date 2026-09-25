@@ -44,6 +44,35 @@ version: 1
 | 2026-09-25-26 | 생성 | [docs/glossary/location-check-digit.md](glossary/location-check-digit.md) | 용어집 항목 위치 체크 디지트 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-24 | 갱신 | [docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 1차 조건부 승인 수정 14건 이행, 2차 수정: 5절 승강기 추론 문장에 [추정] 태그·각주 추가, 완료·인계 칸 EPCIS 문장을 사실 부분만 남김 |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s7.md](topics/2026/2026-09-25-area08-s7.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,454자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s4.md](topics/2026/2026-09-25-area08-s4.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "4. 핵심 개념과 용어" 절(1,436자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s6.md](topics/2026/2026-09-25-area08-s6.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(1,386자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s8.md](topics/2026/2026-09-25-area08-s8.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "8. 대표 연구와 자료" 절(1,250자)을 옮겼다. 2차 수정: Yates 외 항목에서 브리프에 없는 평가 문장을 뺐다 |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s10.md](topics/2026/2026-09-25-area08-s10.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,091자)을 옮겼다. 형식 수정: 세부영역 링크 9건 경로 수정. 2차 수정: 7·9·19 항목에서 사실과 해석을 나누어 해석은 [추정] 또는 태그 없는 연결 문장으로 두고 f21 을 [추정]`[^ref-292]``[^ref-051]`로 되돌림 |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s11.md](topics/2026/2026-09-25-area08-s11.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,060자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s3.md](topics/2026/2026-09-25-area08-s3.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "3. 왜 중요한가" 절(694자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-24 | 요약 | [docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 8. 실시간 세계 상태·데이터 일관성: 영역 심화: 섹션 3~11 신규 작성(허용 경과 시간·두 시각·품질·정정 이벤트, 22. 시뮬레이션·예측용 디지털 트윈과의 구분), 1차 조건부 승인 수정 14건과 2차 수정 5건 이행 |
+| 2026-09-25-24 | 생성 | [docs/references/ref-282.md](references/ref-282.md) | 참고문헌 ref-282 등록: Quality of Service settings — ROS 2 Documentation: Jazzy |
+| 2026-09-25-24 | 생성 | [docs/references/ref-283.md](references/ref-283.md) | 참고문헌 ref-283 등록: Doors (integration_doors) - Programming Multiple Robots with… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-284.md](references/ref-284.md) | 참고문헌 ref-284 등록: Lifts (integration_lifts) - Programming Multiple Robots with… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-285.md](references/ref-285.md) | 참고문헌 ref-285 등록: rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg |
+| 2026-09-25-24 | 생성 | [docs/references/ref-286.md](references/ref-286.md) | 참고문헌 ref-286 등록: rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg |
+| 2026-09-25-24 | 생성 | [docs/references/ref-287.md](references/ref-287.md) | 참고문헌 ref-287 등록: Sparkplug Specification — Chapter 5 Operational Behavior (Sp… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-288.md](references/ref-288.md) | 참고문헌 ref-288 등록: OPC Unified Architecture – Part 4: Services - 7.11 DataValue |
+| 2026-09-25-24 | 생성 | [docs/references/ref-289.md](references/ref-289.md) | 참고문헌 ref-289 등록: Age of Information: An Introduction and Survey |
+| 2026-09-25-24 | 생성 | [docs/references/ref-290.md](references/ref-290.md) | 참고문헌 ref-290 등록: DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED A… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-291.md](references/ref-291.md) | 참고문헌 ref-291 등록: Digital Twin in manufacturing: A categorical literature revi… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-292.md](references/ref-292.md) | 참고문헌 ref-292 등록: Inventory Record Inaccuracy: An Empirical Analysis |
+| 2026-09-25-24 | 생성 | [docs/references/ref-293.md](references/ref-293.md) | 참고문헌 ref-293 등록: Reducing False Negative Reads in RFID Data Streams Using an… |
+| 2026-09-25-24 | 생성 | [docs/references/ref-294.md](references/ref-294.md) | 참고문헌 ref-294 등록: 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용 |
+| 2026-09-25-24 | 생성 | [docs/references/ref-295.md](references/ref-295.md) | 참고문헌 ref-295 등록: Conflict-free Replicated Data Types (CRDTs) |
+| 2026-09-25-24 | 생성 | [docs/references/ref-296.md](references/ref-296.md) | 참고문헌 ref-296 등록: OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현 |
+| 2026-09-25-24 | 생성 | [docs/glossary/age-of-information.md](glossary/age-of-information.md) | 용어집 항목 정보 나이 |
+| 2026-09-25-24 | 생성 | [docs/glossary/digital-shadow.md](glossary/digital-shadow.md) | 용어집 항목 디지털 섀도 |
+| 2026-09-25-24 | 생성 | [docs/glossary/crdt.md](glossary/crdt.md) | 용어집 항목 무충돌 복제 데이터 타입 |
+| 2026-09-25-24 | 생성 | [docs/glossary/epcis-error-declaration.md](glossary/epcis-error-declaration.md) | 용어집 항목 오류 선언 |
+| 2026-09-25-24 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 후속 질문 q1-08·q5-04 등록, 4·6·7·8·9절 갱신. 초안 변경 없음. 2차: f1 문장을 '검색 요약에는 소요 시간 수치가 없다(원문 미열람)'로 수정 |
 | 2026-09-25-22 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 현장 모델링 부담의 근거 소절 추가, 6절에 단계 5 조사 전 선행 근거(가설 3 비교 기준 후보·측정 대상 반복 작업) 작성. 2차: 6절 마지막 문장에 '연계 대상: '과 [추정] 태그·각주 추가 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크의 백로그·아이디어 페이지 현황을 실행 2026-09-25-22 기준으로 갱신(상태 줄은 변경 없음) |
