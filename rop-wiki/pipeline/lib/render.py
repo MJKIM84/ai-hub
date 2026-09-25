@@ -143,6 +143,32 @@ def neutralize_footnotes(s) -> str:
     return _TAG_PAREN_TEXT.sub(lambda m: f"{m.group(1)} (", out)
 
 
+_MD_LINK = re.compile(r"(?<!!)\[([^\]\n]+)\]\(([^)\s#]+\.md)(#[^)\s]*)?\)")
+
+
+def fix_relative_links(text: str, page_rel: str) -> str:
+    """page_rel(docs 기준 경로) 페이지에 옮겨 적은 글의 상대 링크를 바로잡는다. 에이전트 문장 안의 링크는 원래 다른 페이지 기준으로
+    적혀 있어(예: 아이디어 페이지 기준 ../glossary/x.md) 일일 로그(logs/daily/)에서는 깨진다(3부 배치 트랙 2 게시 실패).
+    이 페이지 기준으로 없는 대상은 docs 기준 경로(앞의 ../ 를 뗀 것)로 찾아 다시 쓰고, 그래도 없으면 링크를 풀어 글자만 남긴다."""
+    import posixpath
+    base = posixpath.dirname(page_rel)
+
+    def repl(m):
+        label, target, anchor = m.group(1), m.group(2), m.group(3) or ""
+        if re.match(r"^[a-z]+:", target):
+            return m.group(0)
+        here = posixpath.normpath(posixpath.join(base, target))
+        if (DOCS / here).is_file():
+            return m.group(0)
+        stripped = re.sub(r"^(\.\./)+", "", target)
+        cand = [stripped] + ([stripped.split("docs/", 1)[1]] if "docs/" in stripped else [])
+        for c in cand:
+            if (DOCS / c).is_file():
+                return f"[{label}]({posixpath.relpath(c, base or '.')}{anchor})"
+        return label
+    return _MD_LINK.sub(repl, text)
+
+
 def _esc(s) -> str:
     """표 셀용 이스케이프. 각주 참조 표기는 인라인 코드로 바꾼다(neutralize_footnotes)."""
     return neutralize_footnotes(s).replace("|", "\\|").replace("\n", " ")

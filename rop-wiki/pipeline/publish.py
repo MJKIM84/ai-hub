@@ -1651,6 +1651,11 @@ class Publisher:
         return "\n".join(rows)
 
     def daily_block(self, end_state: str) -> str:
+        """일일 로그의 이 실행 절. 옮겨 적은 에이전트 문장의 상대 링크를 일일 로그 위치 기준으로 바로잡는다(fix_relative_links)."""
+        from lib.render import fix_relative_links
+        return fix_relative_links(self._daily_block(end_state), f"logs/daily/{self.date}.md")
+
+    def _daily_block(self, end_state: str) -> str:
         t = self.target.get("target") or {}
         rt = self.run_type
         log_rel = f"logs/daily/{self.date}.md"
