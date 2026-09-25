@@ -31,14 +31,29 @@
         "claude-haiku-4-5-20251001",
         "claude-opus-5-5"
       ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 207518,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 80758,
+      "cost_usd": 3.2879,
+      "seconds": 579.0,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 18,
-    "cache_creation_input_tokens": 584576,
-    "cache_read_input_tokens": 2653487,
-    "output_tokens": 40420,
-    "cost_usd": 6.4342,
-    "calls": 2
+    "input_tokens": 20,
+    "cache_creation_input_tokens": 792094,
+    "cache_read_input_tokens": 2716507,
+    "output_tokens": 121178,
+    "cost_usd": 9.7221,
+    "calls": 3
   }
 }
