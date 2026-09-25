@@ -30,6 +30,31 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-60 | 갱신 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
 | 2026-09-25-60 | 요약 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
+| 2026-09-25-59 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 영역 심화: 3~11절 신규 작성(4·6·7·10·11절은 주제 페이지로 분리), 2차 수정: 9절 f8 태그 분리, 3절 첫 문장 범위 정정, 10절 요약 의견 주체 표시, 3·9절 약어 풀이 |
+| 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s6.md](topics/2026/2026-09-25-area23-s6.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "6. 대표 접근법과 기술" 절을 옮겼다(2차 수정 없음) |
+| 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s7.md](topics/2026/2026-09-25-area23-s7.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 없음) |
+| 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s4.md](topics/2026/2026-09-25-area23-s4.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 적합성 시험 항목에 '벤더 주장' 병기 |
+| 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s11.md](topics/2026/2026-09-25-area23-s11.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "11. 열린 질문" 절을 옮겼다(2차 수정 없음) |
+| 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s10.md](topics/2026/2026-09-25-area23-s10.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 1절·3절 요약 문장에 '구축자 의견' 표시 |
+| 2026-09-25-59 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 23. 시험·형식 검증·벤치마크: 영역 심화: 3~11절 신규 작성(장애 주입·회귀 시험·형식 검증·런타임 검증·벤치마크), 1차 조건부 승인 수정 16건·2차 수정 5건 반영 |
+| 2026-09-25-59 | 생성 | [docs/references/ref-528.md](references/ref-528.md) | 참고문헌 ref-528 등록: ARIAC 2025 Documentation — Challenges |
+| 2026-09-25-59 | 생성 | [docs/references/ref-529.md](references/ref-529.md) | 참고문헌 ref-529 등록: ARIAC 2025 Documentation — Scoring |
+| 2026-09-25-59 | 생성 | [docs/references/ref-599.md](references/ref-599.md) | 참고문헌 ref-599 등록: Formal Specification and Verification of Autonomous Robotic… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-600.md](references/ref-600.md) | 참고문헌 ref-600 등록: A Study on Challenges of Testing Robotic Systems |
+| 2026-09-25-59 | 생성 | [docs/references/ref-601.md](references/ref-601.md) | 참고문헌 ref-601 등록: ros2_fault_injection — README |
+| 2026-09-25-59 | 생성 | [docs/references/ref-602.md](references/ref-602.md) | 참고문헌 ref-602 등록: ROSMonitoring: a Runtime Verification Framework for ROS — RE… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-603.md](references/ref-603.md) | 참고문헌 ref-603 등록: The League of Robot Runners: Competition Goals, Designs, and… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-604.md](references/ref-604.md) | 참고문헌 ref-604 등록: Lifelong Scalable Multi-Agent Realistic Testbed and A Compre… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-605.md](references/ref-605.md) | 참고문헌 ref-605 등록: ASTM Committee F45 on Driverless Automatic Guided Industrial… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-606.md](references/ref-606.md) | 참고문헌 ref-606 등록: KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-607.md](references/ref-607.md) | 참고문헌 ref-607 등록: 시험평가 \| KIRIA 첨단로봇 실증지원 디지털 플랫폼 |
+| 2026-09-25-59 | 생성 | [docs/references/ref-608.md](references/ref-608.md) | 참고문헌 ref-608 등록: OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Dep… |
+| 2026-09-25-59 | 생성 | [docs/references/ref-609.md](references/ref-609.md) | 참고문헌 ref-609 등록: BDD-Based Deadlock Avoidance for Automated Guided Vehicles i… |
+| 2026-09-25-59 | 생성 | [docs/glossary/fault-injection.md](glossary/fault-injection.md) | 용어집 항목 장애 주입 |
+| 2026-09-25-59 | 생성 | [docs/glossary/regression-testing.md](glossary/regression-testing.md) | 용어집 항목 회귀 시험 |
+| 2026-09-25-59 | 생성 | [docs/glossary/runtime-verification.md](glossary/runtime-verification.md) | 용어집 항목 런타임 검증 |
+| 2026-09-25-59 | 생성 | [docs/glossary/model-checking.md](glossary/model-checking.md) | 용어집 항목 모델 검사 |
+| 2026-09-25-59 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-01 답함, q2-02·q2-03 부분 답, 후속 질문 2건(q2-07·q6-07), 완료 조건 미충족·전환 아니오, 출처 14건, 이력 추가. H1 아래 단계 상태 줄을 고쳐야 해 patches 대신 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 매트릭스 9/64칸 채움(페이로드·액세서리 문서 행 추가), 공개 문서 샘플 4건, 출처·이력 갱신. H1 아래 산출 단계 상태 줄을 고쳐야 해 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.3 → v0.4: 근거 문서 속성 '문서 유형'·'이용 조건' 추가와 확정(f3·f17), 속성 '정보 형태'는 6절 질문에 합침. H1 버전 표기를 고쳐야 해 전체 content 로 보냄 |

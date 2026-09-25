@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 23. 시험·형식 검증·벤치마크 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area23-s7.md
+      - 23. 시험·형식 검증·벤치마크 — 대표 접근법과 기술: topics/2026/2026-09-25-area23-s6.md
+      - 23. 시험·형식 검증·벤치마크 — 핵심 개념과 용어: topics/2026/2026-09-25-area23-s4.md
+      - 23. 시험·형식 검증·벤치마크 — 열린 질문: topics/2026/2026-09-25-area23-s11.md
+      - 23. 시험·형식 검증·벤치마크 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area23-s10.md
       - 22. 시뮬레이션·예측용 디지털 트윈 — 대표 연구와 자료: topics/2026/2026-09-25-area22-s8.md
       - 22. 시뮬레이션·예측용 디지털 트윈 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area22-s7.md
       - 22. 시뮬레이션·예측용 디지털 트윈 — 대표 접근법과 기술: topics/2026/2026-09-25-area22-s6.md
@@ -311,12 +316,14 @@ nav:
     - 디지털 트윈 (Digital Twin): glossary/digital-twin.md
     - 디지털 트윈 결합 (Digital Twin Composition): glossary/digital-twin-composition.md
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
+    - 런타임 검증 (Runtime Verification): glossary/runtime-verification.md
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
+    - 모델 검사 (Model Checking): glossary/model-checking.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
@@ -365,6 +372,7 @@ nav:
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
+    - 장애 주입 (Fault Injection): glossary/fault-injection.md
     - 적합성 시험 (Conformance Test): glossary/conformance-test.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
@@ -403,6 +411,7 @@ nav:
     - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
     - 혼합 정수 계획 (Mixed Integer Linear Programming (MILP)): glossary/milp.md
     - 환각 (Hallucination): glossary/hallucination.md
+    - 회귀 시험 (Regression Testing): glossary/regression-testing.md
   - 참고문헌:
     - references/index.md
     - ref-001 — SCOR Digital Standard: references/ref-001.md
@@ -972,6 +981,8 @@ nav:
     - ref-525 — Verification and validation of simulation models (Proceedings of the 40th Conference on Winter Simulation): references/ref-525.md
     - ref-526 — 가상세계 쌍둥이 창고로 물류 예측... CJ대한통운, 디지털 트윈 구축 (보도자료): references/ref-526.md
     - ref-527 — NVIDIA Unveils 'Mega' Omniverse Blueprint for Building Industrial Robot Fleet Digital Twins: references/ref-527.md
+    - ref-528 — ARIAC 2025 Documentation — Challenges: references/ref-528.md
+    - ref-529 — ARIAC 2025 Documentation — Scoring: references/ref-529.md
     - 'ref-530 — Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach': references/ref-530.md
     - ref-531 — Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers: references/ref-531.md
     - ref-532 — Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals: references/ref-532.md
@@ -982,6 +993,18 @@ nav:
     - ref-536 — rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp: references/ref-536.md
     - ref-537 — rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp: references/ref-537.md
     - ref-538 — rmf_reservation — Experimental reservation library in rust (GitHub): references/ref-538.md
+    - 'ref-599 — Formal Specification and Verification of Autonomous Robotic Systems: A Survey': references/ref-599.md
+    - ref-600 — A Study on Challenges of Testing Robotic Systems: references/ref-600.md
+    - ref-601 — ros2_fault_injection — README: references/ref-601.md
+    - 'ref-602 — ROSMonitoring: a Runtime Verification Framework for ROS — README': references/ref-602.md
+    - 'ref-603 — The League of Robot Runners: Competition Goals, Designs, and Implementation [System Demonstration]': references/ref-603.md
+    - ? ref-604 — Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems
+      : references/ref-604.md
+    - ref-605 — ASTM Committee F45 on Driverless Automatic Guided Industrial Vehicles: references/ref-605.md
+    - 'ref-606 — KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇의 이동능력': references/ref-606.md
+    - ref-607 — 시험평가 | KIRIA 첨단로봇 실증지원 디지털 플랫폼: references/ref-607.md
+    - ref-608 — OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments: references/ref-608.md
+    - ref-609 — BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper): references/ref-609.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md
