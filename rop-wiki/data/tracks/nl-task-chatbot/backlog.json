@@ -175,9 +175,9 @@
       "question": "가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가?",
       "stage": 5,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-86",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03",
       "created": "2026-09-25"
     },
     {
@@ -696,6 +696,28 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-85"
+    },
+    {
+      "id": "q5-19",
+      "question": "가설 판정표에서 '잘못된 배정'(가설 1), '설명·재현 가능'(가설 2), '운영 안정성'(가설 3)을 q5-01 의 어떤 지표와 문턱으로 조작적으로 정의해야 지지·부분 지지·기각을 가를 수 있는가? (q5-03 에서 파생)",
+      "stage": 5,
+      "origin": "f17",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-86"
+    },
+    {
+      "id": "q3-16",
+      "question": "LLM 이 루프 밖에서 설계한 규칙이 롤링 MILP 를 앞선 보고를 고려할 때, 가설 3 의 '최적화 엔진'을 해법기로 한정할지 검증을 거친 결정적 규칙 실행기까지 넓힐지, 그에 따라 스케줄링 분담 설계를 어떻게 바꾸는가? (q5-03 에서 파생) (관련: q4-08)",
+      "stage": 3,
+      "origin": "f13",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-86"
     }
   ]
 }

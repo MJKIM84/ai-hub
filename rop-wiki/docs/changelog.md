@@ -65,6 +65,19 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·가설별 근거·잠정 판정표·필요 실험), 2절에 q5-16~q5-19 추가, 후속 질문 2건(q5-19, q3-16), 완료 조건 현황·상태 줄 갱신 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 3절 가설 판정 칸을 부분 지지(잠정)로 갱신(단계 5 · 실행 2026-09-25-86), 판정 규칙 단락·변경 기록 추가, 6절에 실행 기록 추가, 8절에 판정 근거 각주 |
+| 2026-09-25-86 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절에 '가설 판정 절차' 소절 추가(확실성 평가·TRL 보조 축·판정 값 규칙·잠정 판정 요약·필요 실험, 추정 중심) |
+| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/experiments.md](tracks/nl-task-chatbot/experiments.md) | '제안된 실험 계획' 절에 E5-01~E5-03 을 제안(사용자 수행 대기)으로 추가 |
+| 2026-09-25-86 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-03 답함: 가설 판정 절차·규칙과 잠정 판정(가설 1~3 부분 지지(잠정)), 실험 계획 E5-01~E5-03 제안 |
+| 2026-09-25-86 | 생성 | [docs/references/ref-777.md](references/ref-777.md) | 참고문헌 ref-777 등록: RobotFleet: An Open-Source Framework for Centralized Multi-R… |
+| 2026-09-25-86 | 생성 | [docs/references/ref-778.md](references/ref-778.md) | 참고문헌 ref-778 등록: robot-fleet — RobotFleet: An Open-Source Framework for Centr… |
+| 2026-09-25-86 | 생성 | [docs/references/ref-779.md](references/ref-779.md) | 참고문헌 ref-779 등록: Enhancing Robustness in Language-Driven Robotics: A Modular… |
+| 2026-09-25-86 | 생성 | [docs/references/ref-780.md](references/ref-780.md) | 참고문헌 ref-780 등록: 제조 물류 로봇에서의 대규모 언어 모델(LLM)을 활용한 로봇 협업 인터페이스 구축 |
+| 2026-09-25-86 | 생성 | [docs/glossary/ablation-study.md](glossary/ablation-study.md) | 용어집 항목 절제 실험 |
+| 2026-09-25-86 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신 |
 | 2026-09-25-85 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low) |
 | 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음) |

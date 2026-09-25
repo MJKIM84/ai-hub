@@ -30,7 +30,7 @@
       "claim": "GRADE 접근법은 근거 묶음의 확실성을 결과(outcome)별로 높음·중간·낮음·매우 낮음 네 수준으로 매기고, 비뚤림 위험·비일관성·비직접성·비정밀성·출판 비뚤림 다섯 영역에서 심각한 우려가 있으면 한 단계, 매우 심각하면 두 단계 낮춘다.",
       "tag": "사실",
       "source_ids": [
-        "ref-811"
+        "ref-807"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -45,7 +45,7 @@
       "claim": "NASA 의 기술 준비 수준(TRL) 정의는 TRL 4 를 실험실 환경에서의 구성품·하위 시스템 검증으로, TRL 5 를 실제 조건을 가깝게 모사한 관련 환경에서의 검증으로 두어 통제된 실험실 검증과 관련 환경 검증을 구분한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-812"
+        "ref-809"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -75,7 +75,7 @@
       "claim": "Garrabé 외(arXiv 2411.05474)는 LLM 출력을 기대 결과 모듈과 피드백으로 접지하는 모듈형 구조가 GPT-4o 기반 code-as-policies(직접 코드 생성) 기준선보다 픽앤플레이스·조작 과제 성공률이 높았다고 보고하고, 기준선 실패 원인으로 환경 접지 부족과 개루프 실행을 들었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-815"
+        "ref-779"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -241,8 +241,8 @@
       "claim": "RobotFleet 은 LLM 기반 추론과 혼합 정수 계획(MILP) 두 작업 배정기를 바꿔 끼울 수 있는 오픈소스 다중 로봇 계획 틀로, 논문은 MILP 배정기를 능력 제약 아래 로봇별 최대 작업 부하를 최소화하는 모델로 설명하며 공식 README 에는 두 배정기의 비교 결과가 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-813",
-        "ref-814"
+        "ref-777",
+        "ref-778"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -257,8 +257,8 @@
       "claim": "q5-03 에 대해 이 위키가 확인한 근거 평가 체계를 묶으면, 각 가설을 하위 주장으로 나누고 하위 주장마다 근거의 확실성을 GRADE 식 영역(비직접성: 가정·건설·제조 대 물류 창고, 비정밀성: 단일 출처, 비뚤림: 저자·벤더 보고)으로 낮춰 매긴 뒤 판정 값으로 모으고 TRL 을 보조 축으로 병기하는 절차가 선택지로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-811",
-        "ref-812"
+        "ref-807",
+        "ref-809"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -273,8 +273,8 @@
       "claim": "판정 값은 지지(핵심 하위 주장 모두에 물류 조건의 직접 근거가 있고 확실성 중간 이상), 부분 지지(일부 하위 주장만 근거가 있거나 빠지는 조건이 확인됨), 기각(핵심 하위 주장에 직접 반대 근거), 미판정(핵심 하위 주장에 직접 근거 없음)으로 가르는 규칙이 가능해 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-811",
-        "ref-812"
+        "ref-807",
+        "ref-809"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -290,7 +290,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-166",
-        "ref-815",
+        "ref-779",
         "ref-359",
         "ref-677",
         "ref-168",
@@ -379,7 +379,7 @@
       "claim": "이번 검색 범위(한국어 2회 포함 9회)에서는 물류 창고 로봇 채팅 지시에서 세 가설을 직접 시험한 연구를 찾지 못했고, 국내 자료로는 제조 물류 로봇에 LLM 협업 인터페이스를 구축한 2023 학술대회 논문이 확인되나 내용을 확인하지 못해 판정 근거로 쓰지 못했다(부재 확인 아님).",
       "tag": "추정",
       "source_ids": [
-        "ref-816"
+        "ref-780"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -394,7 +394,7 @@
       "claim": "세 가설의 근거가 된 구성(구조화·결정적 검증·해법기 배정)은 확인한 범위에서 시뮬레이션·실험실 검증 수준에 머물러 TRL 로 보면 관련 환경(물류 현장 모사) 검증 전 단계로 보이며, 이 성숙도 축을 판정표에 병기할 수 있어 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-812",
+        "ref-809",
         "ref-674",
         "ref-677"
       ],
@@ -409,7 +409,7 @@
   ],
   "sources": [
     {
-      "id": "ref-811",
+      "id": "ref-807",
       "org": "Cochrane",
       "title": "Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence",
       "published": null,
@@ -424,7 +424,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-812",
+      "id": "ref-809",
       "org": "NASA ESTO",
       "title": "Definition Of Technology Readiness Levels",
       "published": null,
@@ -439,7 +439,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-813",
+      "id": "ref-777",
       "org": "Gupta, R. 외(RobotFleet 저자, arXiv 2510.10379)",
       "title": "RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning",
       "published": "2025-10",
@@ -454,7 +454,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-814",
+      "id": "ref-778",
       "org": "therohangupta (RobotFleet 공식 저장소)",
       "title": "robot-fleet — RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning (GitHub README)",
       "published": null,
@@ -469,7 +469,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-815",
+      "id": "ref-779",
       "org": "Garrabé, É., Teixeira, P., Khoramshahi, M., & Doncieux, S.",
       "title": "Enhancing Robustness in Language-Driven Robotics: A Modular Approach to Failure Reduction",
       "published": "2024-11",
@@ -484,7 +484,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-816",
+      "id": "ref-780",
       "org": "강건(대한산업공학회 추계학술대회 논문집)",
       "title": "제조 물류 로봇에서의 대규모 언어 모델(LLM)을 활용한 로봇 협업 인터페이스 구축",
       "published": "2023-11",
@@ -816,7 +816,7 @@
       "queries": 9,
       "sources": 6
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처는 신규 ref-814(RobotFleet README) 1건이며, 나머지 신규 5건과 재사용 15건은 원문 미열람이라 신뢰도 상한 medium(종합 finding 은 low). 검색 9회/40(한국어 2회), 신규 출처 6건/20(ref-811~ref-816, 예약 구간 안), 재사용 15건. ref-811·ref-812 는 실행 2026-09-25-84 의 ref-807·ref-809 와 같은 URL 이지만 입력 참고문헌 목록에 없어 새 id 로 적었다(퍼블리셔가 URL 로 합침). 질문 선택: target.json 지정 q5-03 1건. q5-03 은 판정 절차·규칙(f16·f17)과 가설별 근거(f3~f15)로 답했으나 잠정 판정(f18~f20)은 이 위키의 종합이고 물류 조건 직접 근거가 없어 질문 종합 신뢰도 low. 잠정 판정은 제안이며 트랙 개요 3절 반영은 검증 승인 뒤. 한국 자료: 국내 학술대회 논문 1건(서지만) 외 국내 사례 없음. 교차 규칙: LLM 방법 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 새 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 창고 조건 비교 실측은 oq-052, LTAA 충돌은 oq-030, 선언·운용 능력 차이는 oq-024 와 겹친다. 온톨로지 변경 없음: 가설 판정은 작업 모델의 개념·관계가 아니라 검증 방법이다. 후속 질문 2건. 페이지 제안: 트랙 산출물 4건(단계 페이지·트랙 개요 3절·아이디어 6절·실험), 세부영역 반영 제안 3건(갱신 상한과 별도). 이 실행도 단계 3·4 완료가 승인되지 않은 상태에서 지정된 질문으로 단계 5 를 다뤘다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처는 신규 ref-778(RobotFleet README) 1건이며, 나머지 신규 5건과 재사용 15건은 원문 미열람이라 신뢰도 상한 medium(종합 finding 은 low). 검색 9회/40(한국어 2회), 신규 출처 6건/20(ref-807~ref-780, 예약 구간 안), 재사용 15건. ref-807·ref-809 는 실행 2026-09-25-84 의 ref-807·ref-809 와 같은 URL 이지만 입력 참고문헌 목록에 없어 새 id 로 적었다(퍼블리셔가 URL 로 합침). 질문 선택: target.json 지정 q5-03 1건. q5-03 은 판정 절차·규칙(f16·f17)과 가설별 근거(f3~f15)로 답했으나 잠정 판정(f18~f20)은 이 위키의 종합이고 물류 조건 직접 근거가 없어 질문 종합 신뢰도 low. 잠정 판정은 제안이며 트랙 개요 3절 반영은 검증 승인 뒤. 한국 자료: 국내 학술대회 논문 1건(서지만) 외 국내 사례 없음. 교차 규칙: LLM 방법 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 새 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 창고 조건 비교 실측은 oq-052, LTAA 충돌은 oq-030, 선언·운용 능력 차이는 oq-024 와 겹친다. 온톨로지 변경 없음: 가설 판정은 작업 모델의 개념·관계가 아니라 검증 방법이다. 후속 질문 2건. 페이지 제안: 트랙 산출물 4건(단계 페이지·트랙 개요 3절·아이디어 6절·실험), 세부영역 반영 제안 3건(갱신 상한과 별도). 이 실행도 단계 3·4 완료가 승인되지 않은 상태에서 지정된 질문으로 단계 5 를 다뤘다."
   },
   "track": {
     "slug": "nl-task-chatbot",

@@ -31,14 +31,59 @@
         "claude-opus-5-5",
         "claude-haiku-4-5-20251001"
       ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 326091,
+      "cache_read_input_tokens": 63022,
+      "output_tokens": 54465,
+      "cost_usd": 3.7106,
+      "seconds": 410.8,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-schema-retry",
+      "role": "storyteller",
+      "attempt": 2,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 326436,
+      "cache_read_input_tokens": 63022,
+      "output_tokens": 80585,
+      "cost_usd": 4.2358,
+      "seconds": 579.7,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 519757,
+      "cache_read_input_tokens": 76155,
+      "output_tokens": 8141,
+      "cost_usd": 4.3361,
+      "seconds": 84.3,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 20,
-    "cache_creation_input_tokens": 868182,
-    "cache_read_input_tokens": 4108023,
-    "output_tokens": 43538,
-    "cost_usd": 9.0679,
-    "calls": 2
+    "input_tokens": 26,
+    "cache_creation_input_tokens": 2040466,
+    "cache_read_input_tokens": 4310222,
+    "output_tokens": 186729,
+    "cost_usd": 21.3504,
+    "calls": 5
   }
 }
