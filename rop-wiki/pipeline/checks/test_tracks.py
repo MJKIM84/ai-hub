@@ -168,7 +168,7 @@ class TestBacklogs(unittest.TestCase):
             for n in range(1, int(cfg["stages"]) + 1):
                 k = sum(1 for b in seed if int(b["stage"]) == n)
                 self.assertTrue(3 <= k <= 5, f"{slug} 단계 {n} 시작 질문 {k}개(3~5개여야 한다)")
-            self.assertTrue(all(b["status"] in ("열림", "조사 중", "답함", "보류") or str(b["status"]).startswith("보류") for b in items))
+            self.assertTrue(all(b["status"] in ("열림", "조사 중", "답함", "보류", "폐기") or str(b["status"]).startswith("보류") for b in items))
 
     def test_first_track_additions(self):
         items = {b["id"]: b for b in json.loads(paths.track_backlog(FIRST).read_text(encoding="utf-8"))["items"]}
