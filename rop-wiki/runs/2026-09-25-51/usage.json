@@ -91,14 +91,29 @@
       "models": [
         "claude-opus-5-5"
       ]
+    },
+    {
+      "step": "verification2-retry1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 305292,
+      "cache_read_input_tokens": 76154,
+      "output_tokens": 2947,
+      "cost_usd": 2.5165,
+      "seconds": 30.0,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 26,
-    "cache_creation_input_tokens": 1708850,
-    "cache_read_input_tokens": 2918701,
-    "output_tokens": 277570,
-    "cost_usd": 20.2244,
-    "calls": 6
+    "input_tokens": 28,
+    "cache_creation_input_tokens": 2014142,
+    "cache_read_input_tokens": 2994855,
+    "output_tokens": 280517,
+    "cost_usd": 22.7409,
+    "calls": 7
   }
 }

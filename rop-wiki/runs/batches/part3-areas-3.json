@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-areas-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 06:10:12",
+  "updated": "2026-09-25 06:18:15",
   "concurrency": 3,
   "items": [
     {
@@ -114,15 +114,19 @@
         "area": 20,
         "label": "세부영역 20 영역 심화"
       },
-      "status": "퍼블리셔 대기",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-50",
           "started": "2026-09-25 05:27:34",
           "agents_exit": 0,
-          "publish_exit": null,
+          "publish_exit": 0,
           "continued": false,
-          "agents_done": "2026-09-25 06:10:12"
+          "agents_done": "2026-09-25 06:10:12",
+          "published_at": "2026-09-25 06:18:15",
+          "cost_usd": 14.3889,
+          "duration_sec": 2651.5,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-50"
@@ -135,15 +139,19 @@
         "area": 21,
         "label": "세부영역 21 영역 심화"
       },
-      "status": "퍼블리셔 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-52",
           "started": "2026-09-25 05:43:39",
           "agents_exit": 0,
-          "publish_exit": null,
+          "publish_exit": 0,
           "continued": false,
-          "agents_done": "2026-09-25 06:10:03"
+          "agents_done": "2026-09-25 06:10:03",
+          "published_at": "2026-09-25 06:15:16",
+          "cost_usd": 9.3648,
+          "duration_sec": 1672.1,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-52"
@@ -176,9 +184,17 @@
         "area": 23,
         "label": "세부영역 23 영역 심화"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-59",
+          "started": "2026-09-25 06:15:19",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
+        }
+      ],
+      "run_id": "2026-09-25-59"
     },
     {
       "index": 8,
@@ -188,9 +204,17 @@
         "area": 24,
         "label": "세부영역 24 영역 심화"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-61",
+          "started": "2026-09-25 06:18:15",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
+        }
+      ],
+      "run_id": "2026-09-25-61"
     },
     {
       "index": 9,
