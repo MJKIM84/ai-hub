@@ -649,6 +649,200 @@
       "action": "정정",
       "page": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
       "summary": "정정 요청 corr-001 반영"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "summary": "q1-01 답함(공개 평면도 인식 데이터셋·모델), 후속 질문 3건(q1-05·q2-04·q4-05), 완료 조건 1 미충족·2 충족(막힌 질문 q1-02~q1-05), 상태 줄 갱신, 4절 결론 종합 판단 [추정] 처리, 출처 17건(ref-062~ref-078로 재부여), 이력 행 추가"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "summary": "초안 v0 → v0.1: H1 버전 표기 v0.1, 창문·난간 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드' 추가, 공간 노드에 방 유형 속성, 벽·문·계단·공간 노드 확정, 에스컬레이터 등 6절 질문 추가(각주 ref-062~ref-078 체계)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/ideas/floorplan-recognition.md",
+      "summary": "3절에 단계 1 선행 연구·데이터셋 비교표(11종), 관련 모델·로봇 적용 연구, 한계를 싣고 제품 사례는 미조사(q1-02)로 명시, LLM·VLM 약어 풀어 씀, 프런트매터 sources(ref-062~ref-078) 추가"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/index.md",
+      "summary": "상태 줄의 마지막 트랙 실행을 2026-09-25로 갱신(현재 단계 유지), 머리 단락의 '조사 결과는 아직 없으며' 문장을 단계 1 결과 반영으로 수정, 6. 살아있는 산출물 링크 갱신(초안 v0.1, 아이디어 페이지 3절 초안, 후속 질문 3건), last_run 추가"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "요약",
+      "page": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "summary": "건축 도면 자동 인식 단계 1: q1-01 답함: 공개 평면도 인식 데이터셋·모델 비교, 공간 그래프 스키마 초안 v0.1, 후속 질문 3건",
+      "index_updates": {
+        "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: q1-01 답함(공개 평면도 인식 데이터셋·모델 11종 비교, 엘리베이터 라벨은 벡터 CAD 쪽에서만 추정 확인), 공간 그래프 스키마 초안 v0.1",
+        "category_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: 6. 지도·공간·위치 모델과 연결되는 공개 평면도 인식 데이터셋·모델 조사, 공간 그래프 스키마 초안 v0.1(창문·난간·문 없는 인접 관계)",
+        "area_recent": "2026-09-25 — 건축 도면 자동 인식 트랙 단계 1: 평면도 인식 데이터셋·모델 조사 결과를 6. 대표 접근법과 기술, 7. 관련 표준·프레임워크·오픈소스, 8. 대표 연구와 자료 절에 반영 제안"
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-062.md",
+      "summary": "참고문헌 ref-062 등록: CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved M…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-063.md",
+      "summary": "참고문헌 ref-063 등록: CubiCasa5K: A Dataset and an Improved Multi-Task Model for F…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-064.md",
+      "summary": "참고문헌 ref-064 등록: DeepFloorplan — README (Deep Floor Plan Recognition using a…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-065.md",
+      "summary": "참고문헌 ref-065 등록: FloorplanTransformation — README (Raster-to-Vector: Revisiti…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-066.md",
+      "summary": "참고문헌 ref-066 등록: FloorPlanCAD Dataset — project page (floorplancad.github.io…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-067.md",
+      "summary": "참고문헌 ref-067 등록: FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-068.md",
+      "summary": "참고문헌 ref-068 등록: Voxel51/FloorPlanCAD · Datasets at Hugging Face"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-069.md",
+      "summary": "참고문헌 ref-069 등록: MLStructFP — README (Large-scale multi-unit floor plan datas…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-070.md",
+      "summary": "참고문헌 ref-070 등록: Raster-to-Graph — README (Raster-to-Graph: Floorplan Recogni…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-071.md",
+      "summary": "참고문헌 ref-071 등록: ResPlan — README (ResPlan: A Large-Scale Vector-Graph Datase…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-072.md",
+      "summary": "참고문헌 ref-072 등록: msd — README (MSD: A Benchmark Dataset for Floor Plan Genera…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-073.md",
+      "summary": "참고문헌 ref-073 등록: ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Bas…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-074.md",
+      "summary": "참고문헌 ref-074 등록: 건축 도면 데이터"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-075.md",
+      "summary": "참고문헌 ref-075 등록: CVC-FP and SGT: a new database for structural floor plan ana…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-076.md",
+      "summary": "참고문헌 ref-076 등록: Vision Language Models Can Parse Floor Plan Maps"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-077.md",
+      "summary": "참고문헌 ref-077 등록: DoorDet: Semi-Automated Multi-Class Door Detection Dataset v…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/references/ref-078.md",
+      "summary": "참고문헌 ref-078 등록: Multi-Unit Floor Plan Recognition and Reconstruction Using I…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/glossary/floor-plan-recognition.md",
+      "summary": "용어집 항목 평면도 인식"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/glossary/raster-to-vector-conversion.md",
+      "summary": "용어집 항목 래스터–벡터 변환"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "생성",
+      "page": "docs/glossary/panoptic-symbol-spotting.md",
+      "summary": "용어집 항목 파놉틱 심볼 스포팅"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/question-backlog.md",
+      "summary": "백로그 항목 4건 갱신"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-05",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/log.md",
+      "summary": "트랙 로그 항목 추가(단계 1)"
     }
   ]
 }

@@ -36,6 +36,33 @@ version: 1
 | 2026-09-25-07 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 VDA 5050 |
 | 2026-09-25-07 | 정정 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 정정 요청 corr-002 거절: 요청 대상 문장은 분류 원문(부록 A)의 세부영역 정의로 [분류원문] 보호 대상이라 정정할 수 없다. 요청이 말한 식별 수단(GS1-128 바코… |
 | 2026-09-25-07 | 정정 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 정정 요청 corr-001 반영 |
+| 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-01 답함(공개 평면도 인식 데이터셋·모델), 후속 질문 3건(q1-05·q2-04·q4-05), 완료 조건 1 미충족·2 충족(막힌 질문 q1-02~q1-05), 상태 줄 갱신, 4절 결론 종합 판단 [추정] 처리, 출처 17건(ref-062~ref-078로 재부여), 이력 행 추가 |
+| 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0 → v0.1: H1 버전 표기 v0.1, 창문·난간 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드' 추가, 공간 노드에 방 유형 속성, 벽·문·계단·공간 노드 확정, 에스컬레이터 등 6절 질문 추가(각주 ref-062~ref-078 체계) |
+| 2026-09-25-05 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 단계 1 선행 연구·데이터셋 비교표(11종), 관련 모델·로봇 적용 연구, 한계를 싣고 제품 사례는 미조사(q1-02)로 명시, LLM·VLM 약어 풀어 씀, 프런트매터 sources(ref-062~ref-078) 추가 |
+| 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 상태 줄의 마지막 트랙 실행을 2026-09-25로 갱신(현재 단계 유지), 머리 단락의 '조사 결과는 아직 없으며' 문장을 단계 1 결과 반영으로 수정, 6. 살아있는 산출물 링크 갱신(초안 v0.1, 아이디어 페이지 3절 초안, 후속 질문 3건), last_run 추가 |
+| 2026-09-25-05 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 1: q1-01 답함: 공개 평면도 인식 데이터셋·모델 비교, 공간 그래프 스키마 초안 v0.1, 후속 질문 3건 |
+| 2026-09-25-05 | 생성 | [docs/references/ref-062.md](references/ref-062.md) | 참고문헌 ref-062 등록: CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved M… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-063.md](references/ref-063.md) | 참고문헌 ref-063 등록: CubiCasa5K: A Dataset and an Improved Multi-Task Model for F… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-064.md](references/ref-064.md) | 참고문헌 ref-064 등록: DeepFloorplan — README (Deep Floor Plan Recognition using a… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-065.md](references/ref-065.md) | 참고문헌 ref-065 등록: FloorplanTransformation — README (Raster-to-Vector: Revisiti… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-066.md](references/ref-066.md) | 참고문헌 ref-066 등록: FloorPlanCAD Dataset — project page (floorplancad.github.io… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-067.md](references/ref-067.md) | 참고문헌 ref-067 등록: FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-068.md](references/ref-068.md) | 참고문헌 ref-068 등록: Voxel51/FloorPlanCAD · Datasets at Hugging Face |
+| 2026-09-25-05 | 생성 | [docs/references/ref-069.md](references/ref-069.md) | 참고문헌 ref-069 등록: MLStructFP — README (Large-scale multi-unit floor plan datas… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-070.md](references/ref-070.md) | 참고문헌 ref-070 등록: Raster-to-Graph — README (Raster-to-Graph: Floorplan Recogni… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-071.md](references/ref-071.md) | 참고문헌 ref-071 등록: ResPlan — README (ResPlan: A Large-Scale Vector-Graph Datase… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-072.md](references/ref-072.md) | 참고문헌 ref-072 등록: msd — README (MSD: A Benchmark Dataset for Floor Plan Genera… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-073.md](references/ref-073.md) | 참고문헌 ref-073 등록: ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Bas… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-074.md](references/ref-074.md) | 참고문헌 ref-074 등록: 건축 도면 데이터 |
+| 2026-09-25-05 | 생성 | [docs/references/ref-075.md](references/ref-075.md) | 참고문헌 ref-075 등록: CVC-FP and SGT: a new database for structural floor plan ana… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-076.md](references/ref-076.md) | 참고문헌 ref-076 등록: Vision Language Models Can Parse Floor Plan Maps |
+| 2026-09-25-05 | 생성 | [docs/references/ref-077.md](references/ref-077.md) | 참고문헌 ref-077 등록: DoorDet: Semi-Automated Multi-Class Door Detection Dataset v… |
+| 2026-09-25-05 | 생성 | [docs/references/ref-078.md](references/ref-078.md) | 참고문헌 ref-078 등록: Multi-Unit Floor Plan Recognition and Reconstruction Using I… |
+| 2026-09-25-05 | 생성 | [docs/glossary/floor-plan-recognition.md](glossary/floor-plan-recognition.md) | 용어집 항목 평면도 인식 |
+| 2026-09-25-05 | 생성 | [docs/glossary/raster-to-vector-conversion.md](glossary/raster-to-vector-conversion.md) | 용어집 항목 래스터–벡터 변환 |
+| 2026-09-25-05 | 생성 | [docs/glossary/panoptic-symbol-spotting.md](glossary/panoptic-symbol-spotting.md) | 용어집 항목 파놉틱 심볼 스포팅 |
+| 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재. 2차 수정: 4절 끝 문장 태그·각주, 약어 첫 등장 풀어 쓰기 |
 | 2026-09-25-03 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건 |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-area07-s6.md](topics/2026/2026-09-25-area07-s6.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "6. 대표 접근법과 기술" 절(775자)을 옮겼다 |

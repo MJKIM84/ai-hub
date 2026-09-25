@@ -1,0 +1,813 @@
+{
+  "duration_api_ms": 252759,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.3732553999999997,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 199843,
+    "cache_read_input_tokens": 63017,
+    "output_tokens": 38095,
+    "output_tokens_details": {
+      "thinking_tokens": 2931
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 199843,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 38095,
+        "cache_read_input_tokens": 63017,
+        "cache_creation_input_tokens": 199843,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 199843
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 38095,
+      "cacheReadInputTokens": 63017,
+      "cacheCreationInputTokens": 199843,
+      "webSearchRequests": 0,
+      "costUSD": 2.3732553999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2931,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-05\",\"outline\":[{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"section\":\"2. 질문 목록\",\"budget_chars\":700,\"summary\":\"q1-01 을 답함(실행 2026-09-25-05)으로 바꾸고 이 단계의 새 질문 q1-05(f18)를 열림으로 더한다.\",\"planned_findings\":[\"f18\"]},{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"section\":\"3. 조사 결과\",\"budget_chars\":4200,\"summary\":\"공개 평면도 인식 자료는 래스터 이미지 데이터셋·모델, 벡터 CAD 데이터셋, 그래프 출력형 데이터셋, 국내 AI Hub 데이터, 로봇용 VLM 평면도 해석 연구로 나뉜다. [사실][^ref-062] 엘리베이터 범주는 벡터 CAD 쪽에서만 제3자 카드·검색 요약으로 확인됐다. [추정][^ref-068]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\"]},{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"section\":\"4. 결론과 남은 불확실성\",\"budget_chars\":1200,\"summary\":\"벽·문·창문은 대부분 자료의 기본 인식 대상이고 계단은 일부 자료에서 확인됐다. [사실][^ref-063] 엘리베이터·충전 위치 라벨, 라이선스, 축척 복원이 남은 불확실성이다. [추정][^ref-068]\",\"planned_findings\":[\"f17\",\"f18\",\"f19\",\"f20\",\"f21\"]},{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"section\":\"5. 이 단계가 낳은 후속 질문\",\"budget_chars\":700,\"summary\":\"후속 질문 3건(q1-05, q2-04, q4-05)을 등록하고 f20 기반 질문은 q3-02 와 중복이라 등록하지 않는다.\",\"planned_findings\":[\"f17\",\"f18\",\"f20\",\"f21\"]},{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"section\":\"6. 완료 조건 충족 현황\",\"budget_chars\":600,\"summary\":\"완료 조건 1 미충족(제품 사례 q1-02 없음), 완료 조건 2 충족(스키마 초안 v0.1), 다음 단계로 전환하지 않는다.\"},{\"path\":\"docs/ideas/floorplan-recognition.md\",\"section\":\"3. 선행 연구·제품 사례\",\"budget_chars\":2200,\"summary\":\"공개 평면도 인식 데이터셋 11종의 입력 형식·규모·요소·엘리베이터/계단·접근 조건 비교표와 관련 모델·로봇 적용 연구, 한계를 싣는다. [사실][^ref-066] 제품 사례는 아직 조사되지 않았다(q1-02).\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\"]},{\"path\":\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\",\"section\":\"2. 개념 목록 표\",\"budget_chars\":1800,\"summary\":\"창문·난간 개념을 확정으로 추가하고 공간 노드에 방 유형 속성을 더하며 벽·문·계단·공간 노드를 확정한다. [사실][^ref-071]\",\"planned_findings\":[\"f2\",\"f3\",\"f4\",\"f8\",\"f9\",\"f10\",\"f14\"]},{\"path\":\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\",\"section\":\"6. 미해결 모델링 질문\",\"budget_chars\":1000,\"summary\":\"거부된 에스컬레이터 제안, 난간·창문의 관계, 방 유형과 물류 구역 대응, 층 간 연결 확장(f20), 축척 복원(f21)을 질문으로 둔다. [추정][^ref-068]\",\"planned_findings\":[\"f6\",\"f20\",\"f21\"]}],\"pages\":[{\"path\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"q1-01 답함(공개 평면도 인식 데이터셋·모델), 후속 질문 3건(q1-05·q2-04·q4-05), 완료 조건 1 미충족·2 충족, 출처 17건(ref-062~ref-078로 재부여), 이력 행 추가\",\"patches\":[{\"section\":\"2. 질문 목록\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-062\",\"ref-063\",\"ref-064\",\"ref-065\",\"ref-066\",\"ref-067\",\"ref-068\",\"ref-069\",\"ref-070\",\"ref-071\",\"ref-072\",\"ref-073\",\"ref-074\",\"ref-075\",\"ref-076\",\"ref-077\",\"ref-078\"],\"confidence\":\"medium\",\"last_run\":\"2026-09-25\"},\"content\":\"이 단계의 시작 질문 4개다. q1-01은 사용자 요청의 시작 질문 문구 그대로이고, 나머지는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \\\"조사 중\\\"은 이 표에서 \\\"열림\\\"으로 표시하고 \\\"폐기\\\"는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커 또는 주제 페이지 링크를 적는다. 제기 근거 칸에는 finding id 또는 \\\"사용자\\\"만 쓴다.\\n\\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\\n|---|---|---|---|---|---|\\n| q1-01 | 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-05 | [3절 q1-01](#q1-01) |\\n| q1-02 | 건축 도면(CAD·BIM·스캔 이미지)에서 로봇용 지도나 공간 모델을 자동으로 만드는 연구·제품 사례는 무엇이 있고, 입력 형식마다 무엇을 자동화하는가? | 열림 | 사용자 | | |\\n| q1-03 | 충전 위치·작업대처럼 로봇 운영에 쓰는 시설을 도면에서 인식하거나 도면 밖 정보로 보완한 사례가 있는가? | 열림 | 사용자 | | |\\n| q1-04 | 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? | 열림 | 사용자 | | |\\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 열림 | f18, 실행 2026-09-25-05 | | |\"},{\"section\":\"3. 조사 결과\",\"action\":\"replace\",\"content\":\"### q1-01 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델 {#q1-01}\\n\\n이번 실행(2026-09-25-05)에서 확인한 공개 자료를 입력 형식에 따라 래스터 평면도 이미지, 벡터 CAD 도면, 그래프 출력형, 국내 공공 데이터, 로봇용 평면도 해석 연구로 나누어 정리한다. 데이터셋마다 저자 계열의 1차 출처만 있어 교차 확인된 항목은 없다. 데이터셋별 비교표는 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \\\"3. 선행 연구·제품 사례\\\" 절에 있다.\\n\\n#### 래스터 평면도 이미지 데이터셋과 모델\\n\\nCubiCasa5K는 평면도 이미지 5,000장을 80개가 넘는 객체 범주로 다각형(polygon) 주석한 공개 데이터셋이며 2019년 논문과 함께 공개되었다. [사실][^ref-062][^ref-063] 원본은 핀란드 부동산 마케팅 자료의 CAD 기반 평면도이고, 주석은 방(부엌·침실·욕실·복도 등), 아이콘(창문·문·위생기구 등), 구조 요소(벽·난간·계단 등)를 SVG 벡터 형식으로 담는다. [사실][^ref-063]\\n\\nLiu 외(ICCV 2017)의 래스터–벡터 변환(Raster-to-Vector) 방법은 래스터 평면도 이미지를 벽·문(개구부)·방 유형·아이콘을 담은 벡터 표현으로 바꾼다. 원 래스터 이미지(LIFULL 데이터)는 라이선스 때문에 공유하지 않고, 벡터 주석과 알고리즘이 생성한 10만 건 이상의 벡터 표현을 공개했다. [사실][^ref-065]\\n\\nZeng 외(ICCV 2019)의 DeepFloorplan은 방 경계를 이용한 주의(attention) 다중 작업 신경망으로 벽·문·창문과 방 유형을 인식하며, Raster-to-Vector 이미지 815장에 픽셀 주석을 단 R2V 데이터셋과 R3D 데이터셋을 쓴다. [사실][^ref-064]\\n\\nMLSTRUCT-FP는 다세대 평면도 이미지 954장에 벽 사각형 70,873개와 슬래브(실내 영역) 다각형, 축척(px/m) 메타데이터를 JSON으로 주석한 데이터셋이며 Automation in Construction(2023)에 발표되었다. [사실][^ref-069] 평면도의 출처 국가는 공식 저장소 설명에서 확인하지 못했다(미확인).\\n\\nCVC-FP는 스캔한 실제 건축 평면도 122장을 출처·양식에 따라 네 묶음으로 나누고 요소와 공간·기능 관계를 주석한 데이터셋이다(2015년 발표). [사실][^ref-075]\\n\\nKratochvila 외(2024)는 다세대 래스터 평면도에서 벽·창문·계단·난간을 픽셀 단위로 분할하는 개선된 U-Net 계열 방법과, 분할 결과를 벡터화해 3D 모델을 만드는 재구성 단계를 제안했다. [사실][^ref-078]\\n\\nDoorDet(2025) 저자들은 평면도의 세분화된 다중 유형 문 검출용 공개 데이터셋이 드물다고 보고, 객체 검출기로 문을 찾은 뒤 대규모 언어 모델(Large Language Model, LLM)이 문 유형을 분류하고 사람이 검수하는 반자동 구축 절차를 제안했다. [의견][^ref-077]\\n\\n#### 벡터 CAD 도면 데이터셋\\n\\nFloorPlanCAD는 주거·상업 건물의 실제 CAD 도면 15,663장(초판 11,602장)을 SVG 벡터로 담고 35개 범주를 선 단위로 주석해 파놉틱 심볼 스포팅(panoptic symbol spotting) 과제를 정의한 데이터셋(ICCV 2021)이다. 주석은 CC BY-NC 4.0(비상업) 라이선스이고 프로젝트는 2022년 초 종료되었다. [사실][^ref-066][^ref-067]\\n\\nFloorPlanCAD를 재배포한 제3자 데이터셋 카드의 검색 요약에 따르면 범주에 문·창문·계단과 함께 설비 범주로 엘리베이터(elevator)·에스컬레이터(escalator)가 있다. 공식 프로젝트 페이지에는 범주 목록이 없어 이 내용은 제3자 카드에만 기댄다(2026-09-25 확인). [추정][^ref-068]\\n\\nArchCAD-400K(NeurIPS 2025)는 표준화된 건축 CAD 도면 5,538장을 잘라 만든 413,062개 조각에 기둥·보 같은 구조 요소와 문·창문 같은 비구조 요소 등 27개 범주를 주석한 데이터셋이다. 주거 건물은 14%이고 대형 공공·상업 시설이 다수이며, 비상업 용도로 제한 공개된다. [사실][^ref-073]\\n\\n#### 그래프 형태로 결과를 내는 데이터셋\\n\\nRaster-to-Graph(Computer Graphics Forum, EG 2024)는 평면도 인식을 벽 교차점·벽 선분을 순차 예측하는 구조 그래프 예측 문제로 바꾸고, LIFULL HOME'S 데이터에서 만든 1만 장 이상의 주거 평면도에 구조(벽)와 의미(방 유형·문) 주석을 달았다. 데이터는 LIFULL 이용 신청 뒤에 받을 수 있다. [사실][^ref-070]\\n\\nResPlan은 온라인 부동산 매물에서 만든 주거 평면도 17,000건에 벽·문·창문·방·발코니의 벡터 형상(미터 좌표)과, 방 사이 연결을 via_door·adjacency·direct·via_window 네 유형의 엣지로 담은 그래프를 제공하며 데이터는 CC BY 4.0이다(2025년 8월 기준). [사실][^ref-071]\\n\\nModified Swiss Dwellings(MSD, ECCV 2024)는 스위스 다세대 건물 평면도 5,300여 장(아파트 18,900여 호)을 방을 노드, 문·벽 등 연결을 엣지로 하는 그래프 구조로 담은 평면도 생성 벤치마크이며 인식용 데이터셋은 아니다. [사실][^ref-072]\\n\\n#### 국내 공공 데이터\\n\\n한국지능정보사회진흥원 AI Hub의 '건축 도면 데이터'는 아파트·연립다세대·단독주택의 평면도·입면도·단면도·구조도를 대상으로 하며, 벽체·창문 등의 객체 인식(YOLOv5), 출입문·창호·벽체 구조 인식 세그멘테이션(DeepLabV3+), 도면 문자 인식(YOLOv5+CRNN) 학습 모델을 함께 제공한다(2026-09-25 확인). [사실][^ref-074]\\n\\n#### 로봇용 평면도 해석 연구\\n\\nDeFazio 외(2024)는 이동 로봇이 방 이름과 문 표시를 덧붙인 평면도 이미지를 시각-언어 모델(Vision-Language Model, VLM)에 넣어 문 접근·통과를 포함한 이동 계획을 만드는 '지도 파싱(map parsing)'을 제안했다. [사실][^ref-076] 이 연구가 보고한 성공률 0.96은 GPT-4o를 쓰고 연구진이 라벨을 조밀하게 덧붙인 평면도에서 최대 아홉 단계 이동 과제를 수행한 조건의 값이며, 단일 출처 수치다. [사실][^ref-076] 이 위키에서는 이 연구를 도면 해석 방법으로만 다룬다. 로컬 주행과 경로 실행은 분류 원문 9장 경계에 따라 로봇 자체 지능·제어 쪽의 연계 대상이다.\\n\\n#### 엘리베이터·계단 라벨과 ROP 적용상 한계\\n\\n이번에 확인한 공개 자료 가운데 엘리베이터를 범주로 명시한 것은 벡터 CAD 도면 데이터셋(FloorPlanCAD — 제3자 데이터셋 카드 근거, 그리고 검색 요약상 ArchCAD-400K)이고, 래스터 주거 평면도 데이터셋(CubiCasa5K, R2V, MLSTRUCT-FP, ResPlan)은 벽·문·창문·방(일부는 계단·난간) 중심이어서 엘리베이터 라벨은 확인되지 않았다. CubiCasa5K와 AI Hub 데이터의 전체 클래스 목록은 원문을 열지 못해 엘리베이터 부재를 확정하지 못했다. [추정][^ref-068][^ref-073][^ref-063][^ref-064][^ref-069][^ref-071]\\n\\n확인한 공개 데이터셋은 주거 건물(핀란드·일본·스위스·국내 주택) 중심이거나 공공·상업 시설 CAD이며, 물류센터·창고 평면도와 로봇 충전 위치를 라벨로 담은 데이터셋은 이번 검색 범위에서 찾지 못했다. 찾지 못했다는 뜻이며 없다는 것이 확인된 것은 아니다. [추정][^ref-063][^ref-069][^ref-070][^ref-072][^ref-073][^ref-074]\\n\\nFloorPlanCAD·ArchCAD-400K 주석이 비상업 라이선스이고 R2V·Raster-to-Graph의 원 이미지가 LIFULL 이용 승인을 요구하므로, 상용 ROP가 이 데이터셋으로 학습한 모델을 그대로 쓰기에는 라이선스 검토가 필요할 것으로 보인다. [추정][^ref-066][^ref-073][^ref-065][^ref-070]\\n\\nRaster-to-Graph의 벽 구조 그래프, ResPlan의 유형 붙은 방 연결 엣지(via_door·adjacency 등), MSD의 방–연결 그래프는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)의 '공간 노드–문–공간 노드' 구조와 가까운 출력 형태이나, 층 간 연결(엘리베이터·계단)과 통과 조건은 담지 않는 것으로 보인다. [추정][^ref-070][^ref-071][^ref-072]\\n\\nMLSTRUCT-FP(px/m 축척)와 ResPlan(미터 좌표)처럼 축척 정보를 함께 주는 데이터셋은 일부이고, 512×512로 정규화한 Raster-to-Graph처럼 축척 없이 이미지 좌표만 다루는 경우가 있어, 인식 결과를 로봇 지도 좌표로 옮기려면 축척 복원이 별도 과제가 될 것으로 보인다. [추정][^ref-069][^ref-071][^ref-070]\"},{\"section\":\"4. 결론과 남은 불확실성\",\"action\":\"replace\",\"content\":\"**결론**\\n- q1-01의 답으로 래스터 평면도 데이터셋·모델(CubiCasa5K, Raster-to-Vector·DeepFloorplan, MLSTRUCT-FP, CVC-FP), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan, MSD), 국내 AI Hub 건축 도면 데이터를 확인했다. [사실][^ref-062][^ref-064][^ref-065][^ref-066][^ref-069][^ref-070][^ref-071][^ref-072][^ref-073][^ref-074][^ref-075]\\n- 벽·문·창문은 확인한 자료 대부분의 인식 대상이고, 계단은 CubiCasa5K와 Kratochvila 외(2024)에서 인식 대상으로 확인됐다. [사실][^ref-063][^ref-064][^ref-078]\\n- 방 연결을 그래프로 내는 자료가 있어 공간 그래프 스키마 초안의 '공간 노드–문–공간 노드' 구조와 출력 형태가 가깝다. [추정][^ref-070][^ref-071][^ref-072]\\n\\n**남은 불확실성**\\n- 엘리베이터 범주는 벡터 CAD 데이터셋에서만, 그것도 제3자 데이터셋 카드와 검색 요약으로만 확인됐다. CubiCasa5K·AI Hub 데이터의 전체 클래스 목록은 미확인이다(후속 질문 q2-04). [추정][^ref-068][^ref-073]\\n- 물류센터·창고 평면도와 충전 위치 라벨을 담은 데이터셋은 찾지 못했으며 부재가 확인된 것은 아니다(후속 질문 q1-05). [추정][^ref-063][^ref-074]\\n- 다수 데이터셋이 비상업 라이선스이거나 승인제로 접근하므로 상용 적용 전 라이선스 검토가 필요할 것으로 보인다. CubiCasa5K·AI Hub 데이터의 상업 이용 조건은 미확인이다. [추정][^ref-066][^ref-073]\\n- 축척 정보가 없는 데이터셋이 있어 로봇 지도 좌표로 옮길 때 축척 복원 방법이 필요하다(후속 질문 q4-05). [추정][^ref-070]\\n- 교차 확인된 항목은 없고, 원문을 열지 못한 출처(ref-063, ref-067, ref-068, ref-073, ref-074, ref-075, ref-076, ref-077, ref-078)에 기댄 내용은 검색 요약 범위다.\\n- 온톨로지 변경: [공간 그래프 스키마 초안](space-graph-schema-draft.md)을 v0에서 v0.1로 올렸다(창문·난간 개념, 문 없는 인접 관계, 공간 노드의 방 유형 속성 추가, 벽·문·계단·공간 노드 확정). 에스컬레이터는 근거가 강등된 제3자 단일 출처라 반영하지 않고 초안 6절 질문으로 두었다.\"},{\"section\":\"5. 이 단계가 낳은 후속 질문\",\"action\":\"replace\",\"content\":\"| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\\n|---|---|---|---|---|\\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 단계 1. 선행 연구·제품 사례 조사 | f18 (실행 2026-09-25-05) | 열림 |\\n| q2-04 | AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가? | [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | f17 (실행 2026-09-25-05) | 열림 |\\n| q4-05 | 축척 정보가 없는 래스터 평면도의 인식 결과를 로봇 지도 좌표(미터)로 옮기기 위해 축척을 어떻게 복원하는가(치수 문자 OCR, 문 폭 등 기준 요소, 현장 측정)? | [단계 4. 지도 변환 보정과 현장 정합](stage-4-map-conversion-and-site-alignment.md) | f21 (실행 2026-09-25-05) | 열림 |\\n\\n그래프 출력형 평면도 인식을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하는 질문(근거 f20)은 기존 질문 q3-02와 같은 뜻이어서 새로 등록하지 않았다. f20은 [단계 3. 구현 가설 설계](stage-3-implementation-hypothesis.md)의 q3-02 관련 근거로 연결한다.\"},{\"section\":\"6. 완료 조건 충족 현황\",\"action\":\"replace\",\"content\":\"충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\\n\\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\\n|---|---|---|---|\\n| 선행 연구·데이터셋·제품 사례 비교가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \\\"3. 선행 연구·제품 사례\\\" 절에 실림 | 미충족 | 선행 연구·데이터셋 비교는 실렸으나 제품 사례(q1-02)가 아직 조사되지 않았다 | 미충족 · 미승인 |\\n| 인식 대상 요소 목록이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에 반영됨 | 충족 | 초안 v0.1에 창문·난간 추가, 벽·문·계단 확정(실행 2026-09-25-05) | 충족(1차 검증 지시) · 단계 전환 미승인 |\\n\\n다음 단계로 전환: 아니오(완료 조건 1 미충족; 막힌 질문 q1-02·q1-03·q1-04)\"},{\"section\":\"8. 출처\",\"action\":\"replace\",\"content\":\"[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)\"},{\"section\":\"9. 이력\",\"action\":\"replace\",\"content\":\"실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\\n\\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\\n|---|---|---|---|---|---|\\n| 2026-09-25 | 2026-09-25-05 | q1-01 | q1-05, q2-04, q4-05 | v0 → v0.1 | 2 |\\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q1-01~q1-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에서 생성) | 1 |\"}]},{\"path\":\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"초안 v0 → v0.1: 창문·난간 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드' 추가, 공간 노드에 방 유형 속성, 벽·문·계단·공간 노드 확정, 에스컬레이터 등 6절 질문 추가(각주 ref-062~ref-078 체계로 재부여)\",\"patches\":[{\"section\":\"2. 개념 목록 표\",\"action\":\"replace\",\"frontmatter\":{\"ontology_version\":\"0.1\",\"sources\":[\"ref-063\",\"ref-064\",\"ref-065\",\"ref-068\",\"ref-069\",\"ref-070\",\"ref-071\",\"ref-072\",\"ref-078\"],\"confidence\":\"medium\",\"last_run\":\"2026-09-25\"},\"content\":\"| 개념 | 정의 | 주요 속성 | 근거 출처 | 상태 |\\n|---|---|---|---|---|\\n| 평면도(Floor Plan) | 인식의 입력이 되는 층별 건축 도면. 모든 인식 요소의 근거 도면이 된다. 아이디어 정의 기반 [가정] | 도면 이름, 형식(벡터·래스터·BIM, 단계 2에서 확정), 층, 버전 | 확장 아이디어 3의 정의 문구 | 초안 |\\n| 층(Floor) | 건물의 한 층. 층별 지도와 공간 노드의 묶음 단위다. 아이디어 정의 기반 [가정] | 층 이름, 높이 기준(단계 4에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\\n| 공간 노드(Space Node) | 로봇이 머물거나 지나가는 공간 단위(방·구역·통로 등). 공간 그래프의 노드다. 아이디어 정의 기반 [가정] | 종류, 층, 경계, 이름·별칭, 방 유형(부엌·침실·복도 등, 데이터셋마다 분류 체계가 다름) | 확장 아이디어 3의 정의 문구; 속성 '방 유형'은 finding f3·f4·f9·f10 (실행 2026-09-25-05)[^ref-065][^ref-064][^ref-070][^ref-071] | 확정 |\\n| 벽(Wall) | 공간 노드의 경계를 이루고 통과할 수 없는 요소. 아이디어 정의 기반 [가정] | 위치, 두께(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구; finding f2·f4·f8 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-069] | 확정 |\\n| 문(Door) | 두 공간 노드를 잇는 통과 지점. 아이디어 정의 기반 [가정] | 위치, 폭, 여닫는 방식·연동 여부(10. 설비·건물 시스템 연동) | 확장 아이디어 3의 정의 문구; finding f4·f10 (실행 2026-09-25-05)[^ref-064][^ref-071] | 확정 |\\n| 창문(Window) | 공간 노드의 경계에 놓이는 개구부. 여러 평면도 인식 데이터셋의 인식 대상이며, ResPlan은 창문을 통한 방 연결(via_window)을 엣지 유형으로 둔다. 이 초안에서는 문과 달리 로봇이 지나는 연결로 쓰지 않는 경계 요소로 구분한다. | 위치 | finding f2·f4·f10 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-071] | 확정 |\\n| 난간(Railing) | 벽처럼 경계를 이루는 요소로 CubiCasa5K와 Kratochvila 외(2024)의 인식 대상이다. 벽과 같은 개념으로 묶을지는 6절 질문으로 둔다. | 위치 | finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\\n| 엘리베이터(Elevator) | 서로 다른 층의 공간 노드를 잇는 수직 이동 설비. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 운행 층, 연동 여부 | 확장 아이디어 3의 정의 문구 | 초안 |\\n| 계단(Stairs) | 서로 다른 층의 공간 노드를 잇는 수직 이동 경로. 로봇의 계단 능력이 있어야 지날 수 있다. 아이디어 정의 기반 [가정] | 위치, 잇는 층 | 확장 아이디어 3의 정의 문구; finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\\n| 충전 위치(Charging Location) | 로봇이 충전하는 자리. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 수(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\\n| 공용 자원(Shared Resource) | 여러 로봇이 나눠 쓰는 시설. 엘리베이터와 충전 위치가 시드 인스턴스다. 아이디어 정의 기반 [가정] | 종류, 위치(공간 노드), 수용량·예약 조건(16. 공용 자원·충전·에너지 최적화) | 확장 아이디어 3의 정의 문구 | 초안 |\\n| 층별 지도(Floor Map) | 한 층의 인식 결과로 자동 생성한 지도. 로봇 내비게이션 지도로 바꾸려면 보정이 필요하다(단계 4). 아이디어 정의 기반 [가정] | 층, 좌표계, 생성 시각, 보정 이력 | 확장 아이디어 3의 정의 문구 | 초안 |\\n\\n개념은 번호나 코드로 부르지 않고 이름으로 부른다. 상태 값은 초안(시드) / 제안(검증 승인 전) / 확정(검증 승인) / 폐기(이유 병기)이며, 폐기한 개념은 표에서 지우지 않고 상태만 바꾼다. 속성의 \\\"(단계 n에서 확정)\\\"은 그 단계의 조사 결과로 정한다는 뜻이다. v0.1(실행 2026-09-25-05)의 추가·확정은 내용 검증 에이전트가 승인한 변경만 반영한 것이다.\"},{\"section\":\"3. 관계 목록 표\",\"action\":\"replace\",\"content\":\"| 주어 | 관계 | 목적어 | 근거 |\\n|---|---|---|---|\\n| 평면도 | 층을 나타낸다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 층 | 공간 노드를 포함한다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 벽 | 공간 노드의 경계를 이룬다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 문 | 두 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 공간 노드 | 인접한다(문 없이) | 공간 노드 | finding f10 (실행 2026-09-25-05)[^ref-071] — 문을 거치지 않고 경계를 맞대거나 개방되어 이어진 공간 사이 관계. ResPlan의 adjacency·direct 엣지에 대응하며 '문 / 두 공간 노드를 잇는다'와 구분한다 |\\n| 엘리베이터·계단 | 서로 다른 층의 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 충전 위치 | 공간 노드에 놓인다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 엘리베이터·충전 위치 | 공용 자원이다 | 공용 자원 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 층별 지도 | 층에서 생성된다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n| 모든 인식 요소 | 근거 평면도를 가리킨다 | 평면도 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\\n\\n관계의 방향은 주어에서 목적어로 읽는다. 카디널리티는 정하지 않았으며 6절의 미해결 질문으로 둔다. 창문·난간과 공간 노드 사이의 관계는 아직 승인된 근거가 없어 표에 넣지 않았다(6절).\"},{\"section\":\"4. 다이어그램\",\"action\":\"replace\",\"content\":\"```mermaid\\nflowchart LR\\n  plan[\\\"평면도\\\"] -->|\\\"나타낸다\\\"| floor[\\\"층\\\"]\\n  floor -->|\\\"포함한다\\\"| node[\\\"공간 노드\\\"]\\n  wall[\\\"벽\\\"] -->|\\\"경계를 이룬다\\\"| node\\n  door[\\\"문\\\"] -->|\\\"두 노드를 잇는다\\\"| node\\n  node -->|\\\"인접한다(문 없이)\\\"| node\\n  elev[\\\"엘리베이터\\\"] -->|\\\"층 사이를 잇는다\\\"| node\\n  stairs[\\\"계단\\\"] -->|\\\"층 사이를 잇는다\\\"| node\\n  charge[\\\"충전 위치\\\"] -->|\\\"놓인다\\\"| node\\n  elev -->|\\\"이다\\\"| res[\\\"공용 자원\\\"]\\n  charge -->|\\\"이다\\\"| res\\n  fmap[\\\"층별 지도\\\"] -->|\\\"생성된다\\\"| floor\\n  window[\\\"창문\\\"]\\n  railing[\\\"난간\\\"]\\n```\\n\\n도식은 2절의 개념과 3절의 관계만 그렸다. 창문·난간은 개념으로만 확정했고 관계가 정해지지 않아 연결선 없이 두었다.\"},{\"section\":\"6. 미해결 모델링 질문\",\"action\":\"replace\",\"content\":\"v0을 아이디어 정의에서 도출하는 과정과 v0.1 갱신(실행 2026-09-25-05)에서 생긴 질문이다. 관련 id는 [질문 백로그](question-backlog.md)의 질문이다.\\n\\n- 공간 노드의 단위(방·구역·통로를 어디서 나누는가)와 엣지의 통과 조건(문 폭, 문 열림 필요, 엘리베이터 탑승)을 어떻게 정해야 배정·경로·자원 예약에 모두 쓰이는지 정해지지 않았다. — 관련: q3-02 [가정]\\n- 공간 그래프를 로봇 기능 온톨로지와 어떤 관계로 잇는가. \\\"이 로봇이 이 경로를 갈 수 있는가\\\"를 판단하려면 계단·도어 조작·충전 능력과 공간 요소의 대응 규칙이 필요하다. — 관련: q3-03 [가정]\\n- 표준(BIM·IFC, 실내 공간 표준)의 공간·시설 개념과 이 스키마의 개념을 어떻게 대응시키는가. — 관련: q2-01 [가정]\\n- 도면 좌표계와 로봇별 지도 좌표계의 정렬 정보, 도면–현장 차이, 지도 버전을 층별 지도의 속성으로 둘지 별도 개념으로 둘지 정해지지 않았다. — 관련: q4-02, q4-03, q4-04 [가정]\\n- 작업대·대기 공간·버퍼처럼 정의 문구에 없는 공용 자원을 도면에서 인식할지, 도면 밖 정보로 보완할지 정해지지 않았다. — 관련: q1-03 [가정]\\n- 에스컬레이터(Escalator)를 층 사이를 잇는 개념으로 둘지 정하지 않았다. FloorPlanCAD의 설비 범주에 엘리베이터와 함께 있다는 근거가 제3자 데이터셋 카드의 검색 요약뿐이고, 로봇이 이용할 수 있는지에 대한 근거도 없어 v0.1에 반영하지 않았다. [추정][^ref-068] — 관련: q3-02\\n- 난간을 벽과 같은 개념으로 묶을지 별도로 둘지, 창문·난간이 공간 노드의 경계를 이루는 관계를 둘지 정해지지 않았다. — 관련: q3-02\\n- 공간 노드의 방 유형은 주거 중심 분류(부엌·침실·복도 등)라 물류 시설 구역 유형(출하 대기장 등)과의 대응이 정해지지 않았다. — 관련: q1-05, q3-02\\n- 그래프 출력형 평면도 인식 결과(Raster-to-Graph의 벽 구조 그래프, ResPlan의 방 연결 엣지, MSD의 방–연결 그래프)는 이 스키마의 '공간 노드–문–공간 노드' 구조와 가깝지만 층 간 연결(엘리베이터·계단)과 통과 조건은 담지 않는 것으로 보여 확장 방법이 필요하다. [추정][^ref-070][^ref-071][^ref-072] — 관련: q3-02\\n- 축척 정보가 없는 인식 결과(예: 512×512로 정규화한 Raster-to-Graph)를 층별 지도의 좌표계로 옮기려면 축척 복원이 필요할 것으로 보인다. [추정][^ref-069][^ref-071][^ref-070] — 관련: q4-05, q4-01, q4-03\"},{\"section\":\"7. 버전 이력\",\"action\":\"append\",\"content\":\"[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)\"}]},{\"path\":\"docs/ideas/floorplan-recognition.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"3절에 단계 1 선행 연구·데이터셋 비교표(11종), 관련 모델·로봇 적용 연구, 한계를 싣고 제품 사례는 미조사(q1-02)로 명시(각주 ref-062~ref-078)\",\"patches\":[{\"section\":\"3. 선행 연구·제품 사례\",\"action\":\"replace\",\"frontmatter\":{\"confidence\":\"medium\",\"last_run\":\"2026-09-25\"},\"content\":\"평면도에서 벽·문·창문·계단을 인식하는 공개 데이터셋은 래스터 이미지, 벡터 CAD, 그래프 출력형으로 나뉘며, 엘리베이터 범주는 벡터 CAD 쪽에서만 제3자 자료로 확인됐다. [추정][^ref-068][^ref-073] 이 절은 [단계 1. 선행 연구·제품 사례 조사](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-01)의 실행 2026-09-25-05 결과이며, 문장별 태그와 상세는 그 단계 페이지에 있다.\\n\\n### 공개 데이터셋 비교 (2026-09-25 기준)\\n\\n아래 표는 검증된 발견 사항으로 직접 만든 것이며 출처의 표를 옮긴 것이 아니다. 각 행의 내용은 근거 열 출처에서 확인한 사실이고, FloorPlanCAD의 엘리베이터 칸만 제3자 카드에 기댄 추정이다. \\\"미확인\\\"은 이번 실행에서 확인하지 못했다는 뜻이다.\\n\\n| 자료 | 입력 형식 | 규모 | 주요 인식 요소 | 엘리베이터·계단 | 접근 조건 | 근거 |\\n|---|---|---|---|---|---|---|\\n| CubiCasa5K | 래스터 이미지, 주석 SVG | 5,000장, 80여 범주 | 방, 창문·문 등 아이콘, 벽·난간·계단 등 | 계단 있음, 엘리베이터 미확인 | 미확인 | [^ref-062][^ref-063] |\\n| Raster-to-Vector(R2V) | 래스터 → 벡터 | 벡터 표현 10만 건 이상 공개 | 벽·문(개구부)·방 유형·아이콘 | 미확인 | 원 이미지 비공개(LIFULL 라이선스) | [^ref-065] |\\n| DeepFloorplan(R2V·R3D) | 래스터, 픽셀 주석 | R2V 815장 | 벽·문·창문·방 유형 | 미확인 | 미확인 | [^ref-064] |\\n| MLSTRUCT-FP | 래스터 + JSON | 954장, 벽 사각형 70,873개 | 벽·슬래브·축척(px/m) | 미확인 | 요청 양식으로 제공 | [^ref-069] |\\n| CVC-FP | 스캔 평면도 | 122장 | 요소와 공간·기능 관계 | 미확인 | 미확인 | [^ref-075] |\\n| FloorPlanCAD | 벡터 CAD(SVG) | 15,663장, 35개 범주 | 선 단위 범주 주석 | 엘리베이터·에스컬레이터 범주(제3자 카드 근거, 추정) | 주석 CC BY-NC 4.0, 2022년 초 종료 | [^ref-066][^ref-067][^ref-068] |\\n| ArchCAD-400K | 벡터 CAD 조각 | 도면 5,538장 → 413,062조각, 27개 범주 | 기둥·보, 문·창문 | 미확인 | 비상업 용도 제한 | [^ref-073] |\\n| Raster-to-Graph | 래스터 → 구조 그래프 | 1만 장 이상 | 벽 교차점·선분, 방 유형·문 | 미확인 | LIFULL 이용 신청 | [^ref-070] |\\n| ResPlan | 벡터 + 그래프 | 17,000건 | 벽·문·창문·방·발코니, 방 연결 엣지 4유형 | 미확인 | CC BY 4.0 | [^ref-071] |\\n| MSD(생성 벤치마크) | 그래프 | 5,300여 장 | 방 노드·연결 엣지 | 미확인 | 미확인 | [^ref-072] |\\n| AI Hub 건축 도면 데이터 | 평면도·입면도·단면도·구조도 | 미확인 | 벽체·창문 객체, 출입문·창호·벽체 분할, 도면 문자 | 미확인 | 미확인 | [^ref-074] |\\n\\n### 관련 모델과 로봇 적용 연구\\n\\n- Kratochvila 외(2024)는 다세대 래스터 평면도에서 벽·창문·계단·난간을 분할하고 벡터화해 3D 모델을 만드는 방법을 제안했다. [사실][^ref-078]\\n- DoorDet(2025) 저자들은 세분화된 문 검출용 공개 데이터셋이 드물다고 보고 검출기·LLM·사람 검수를 잇는 반자동 구축 절차를 제안했다. [의견][^ref-077]\\n- DeFazio 외(2024)는 라벨을 덧붙인 평면도를 시각-언어 모델(VLM)로 해석해 문 통과를 포함한 이동 계획을 만드는 지도 파싱을 제안했고, GPT-4o·조밀 라벨 평면도·최대 아홉 단계 과제 조건에서 성공률 0.96을 보고했다(단일 출처). [사실][^ref-076] 이 위키는 이를 도면 해석 방법으로만 다루며, 로컬 주행·경로 실행은 로봇 쪽 연계 대상이다.\\n\\n### 한계\\n\\n- 물류센터·창고 평면도와 충전 위치를 라벨로 담은 데이터셋은 이번 검색 범위에서 찾지 못했다(부재 확인은 아님). [추정][^ref-063][^ref-069][^ref-070][^ref-072][^ref-073][^ref-074]\\n- 비상업 라이선스·승인제 접근이 많아 상용 ROP에 쓰려면 라이선스 검토가 필요할 것으로 보인다. [추정][^ref-066][^ref-073][^ref-065][^ref-070]\\n\\n### 제품 사례\\n\\n아직 조사되지 않음(q1-02). 건축 도면에서 로봇용 지도·공간 모델을 자동으로 만드는 제품 사례는 다음 트랙 실행에서 다룬다.\\n\\n[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)\"}]},{\"path\":\"docs/tracks/floorplan-recognition/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"6. 살아있는 산출물 링크 갱신(초안 v0.1, 아이디어 페이지 3절 초안, 백로그 21건), last_run 추가. 상태 줄(마지막 트랙 실행)은 patch 로 표현할 수 없어 퍼블리셔 갱신 요청\",\"patches\":[{\"section\":\"6. 살아있는 산출물 링크\",\"action\":\"replace\",\"frontmatter\":{\"last_run\":\"2026-09-25\"},\"content\":\"- [공간 그래프 스키마 초안](space-graph-schema-draft.md) — 현재 버전 v0.1. 실행 2026-09-25-05에서 창문·난간 개념과 문 없는 인접 관계를 더하고 공간 노드에 방 유형 속성을 넣었으며 벽·문·계단·공간 노드를 확정했다.\\n- [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md) — 확장 아이디어 페이지. 3절(선행 연구·제품 사례)에 단계 1의 공개 데이터셋 비교 초안이 실렸고 제품 사례는 아직 조사되지 않았다. 4~6절은 단계 2·3·4·5 실행이 채운다.\\n- [질문 백로그](question-backlog.md) — 시작 질문 18건과 실행 2026-09-25-05의 후속 질문 3건(q1-01 답함). 최신 수치는 백로그 페이지의 자동 표를 따른다.\\n- [트랙 로그](log.md) — 실행별 기록\\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.\"}]}],\"changelog_entry\":\"2026-09-25 | 건축 도면 자동 인식 단계 1 | q1-01 답함: 공개 평면도 인식 데이터셋·모델 비교, 공간 그래프 스키마 초안 v0.1, 후속 질문 3건 | run 2026-09-25-05\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 건축 도면 자동 인식 단계 1: q1-01 답함(공개 평면도 인식 데이터셋·모델 11종 비교, 엘리베이터 라벨은 벡터 CAD 쪽에서만 추정 확인), 공간 그래프 스키마 초안 v0.1\",\"category_recent\":\"2026-09-25 — 건축 도면 자동 인식 단계 1: 6. 지도·공간·위치 모델과 연결되는 공개 평면도 인식 데이터셋·모델 조사, 공간 그래프 스키마 초안 v0.1(창문·난간·문 없는 인접 관계)\",\"area_recent\":\"2026-09-25 — 건축 도면 자동 인식 트랙 단계 1: 평면도 인식 데이터셋·모델 조사 결과를 6. 대표 접근법과 기술, 7. 관련 표준·프레임워크·오픈소스, 8. 대표 연구와 자료 절에 반영 제안\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"floor-plan-recognition\",\"term_ko\":\"평면도 인식\",\"term_en\":\"Floor Plan Recognition\",\"definition\":\"평면도 이미지나 CAD 도면에서 벽·문·창문·계단 같은 건축 요소와 방 영역·유형을 자동으로 찾아내 구조화하는 작업이다.\",\"description\":\"래스터 이미지 데이터셋(CubiCasa5K, R2V 등), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan)이 공개되어 있다. 도면 해석은 27. AI·학습·적응과 모델 운영의 방법이 6. 지도·공간·위치 모델에 적용되는 경우다.\",\"related_areas\":[6,27],\"sources\":[\"ref-062\",\"ref-064\",\"ref-066\",\"ref-070\"]},{\"action\":\"new\",\"slug\":\"raster-to-vector-conversion\",\"term_ko\":\"래스터–벡터 변환\",\"term_en\":\"Raster-to-Vector Conversion\",\"definition\":\"픽셀 이미지로 된 평면도를 벽 선분·교차점·방 다각형 같은 기하 요소의 벡터 표현으로 바꾸는 처리이다.\",\"description\":\"Liu 외(ICCV 2017)의 Raster-to-Vector 방법이 대표적이며, 벡터 표현은 이후 지도·공간 그래프 생성의 입력이 된다.\",\"related_areas\":[6,27],\"sources\":[\"ref-065\",\"ref-070\"]},{\"action\":\"new\",\"slug\":\"panoptic-symbol-spotting\",\"term_ko\":\"파놉틱 심볼 스포팅\",\"term_en\":\"Panoptic Symbol Spotting\",\"definition\":\"CAD 도면의 선 요소마다 문·창문 같은 셀 수 있는 기호의 개별 인스턴스와 벽 같은 셀 수 없는 영역의 의미를 함께 판별하는 과제이다.\",\"description\":\"FloorPlanCAD(ICCV 2021)가 이 과제를 정의했고 ArchCAD-400K(NeurIPS 2025)가 같은 과제의 데이터셋을 제시했다.\",\"related_areas\":[6,27],\"sources\":[\"ref-066\",\"ref-067\",\"ref-073\"]}],\"reference_updates\":[{\"id\":\"ref-062\",\"org\":\"CubiCasa (Kalervo, A. 외)\",\"title\":\"CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis)\",\"published\":null,\"url\":\"https://github.com/CubiCasa/CubiCasa5k\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"CubiCasa5K 데이터셋과 다중 작업 모델의 공식 저장소 README. 5,000장·80여 범주·다각형 주석을 설명한다. (브리프 id ref-044 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-063\",\"org\":\"Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.\",\"title\":\"CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis\",\"published\":\"2019-04\",\"url\":\"https://arxiv.org/abs/1904.01920\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 핀란드 부동산 평면도 5,000장의 SVG 주석 데이터셋과 다중 작업 인식 모델을 제시한 논문(SCIA 2019). (브리프 id ref-045 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-064\",\"org\":\"Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W.\",\"title\":\"DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention)\",\"published\":\"2019\",\"url\":\"https://github.com/zlzeng/DeepFloorplan\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"ICCV 2019 평면도 인식 모델의 공식 저장소 README. R2V·R3D 데이터셋과 벽·문·창문·방 유형 인식을 설명한다. (브리프 id ref-046 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-065\",\"org\":\"Liu, C., Wu, J., Kohli, P., & Furukawa, Y.\",\"title\":\"FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation)\",\"published\":\"2017\",\"url\":\"https://github.com/art-programmer/FloorplanTransformation\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"ICCV 2017 래스터→벡터 평면도 변환의 공식 저장소 README. LIFULL 이미지 비공개와 벡터 주석·생성 결과 공개를 안내한다. (브리프 id ref-047 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-066\",\"org\":\"FloorPlanCAD 프로젝트(Fan, Z. 외)\",\"title\":\"FloorPlanCAD Dataset — project page (floorplancad.github.io index.md)\",\"published\":\"2021\",\"url\":\"https://floorplancad.github.io/\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"FloorPlanCAD 데이터셋 공식 프로젝트 페이지 원본. 도면 수, 35개 범주, CC BY-NC 4.0 주석 라이선스, 2022년 초 프로젝트 종료를 적는다. (브리프 id ref-048 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-067\",\"org\":\"Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P.\",\"title\":\"FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting\",\"published\":\"2021-05\",\"url\":\"https://arxiv.org/abs/2105.07147\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 15,000여 CAD 평면도를 35개 범주로 선 단위 주석하고 파놉틱 심볼 스포팅 과제를 제시한 ICCV 2021 논문. (브리프 id ref-049 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-068\",\"org\":\"Voxel51 (Hugging Face)\",\"title\":\"Voxel51/FloorPlanCAD · Datasets at Hugging Face\",\"published\":null,\"url\":\"https://huggingface.co/datasets/Voxel51/FloorPlanCAD\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. FloorPlanCAD 를 재배포한 제3자 데이터셋 카드. 설비 범주(엘리베이터·에스컬레이터 등)와 주석 형식을 설명한다. (브리프 id ref-050 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-069\",\"org\":\"Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT)\",\"title\":\"MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition)\",\"published\":\"2023\",\"url\":\"https://github.com/MLSTRUCT/MLStructFP\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"MLSTRUCT-FP 데이터셋 적재 라이브러리 README. 954장, 벽 사각형·슬래브·축척 JSON 형식과 Automation in Construction 2023 인용을 적는다. (브리프 id ref-051 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-070\",\"org\":\"Hu, S. 외\",\"title\":\"Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer)\",\"published\":\"2024\",\"url\":\"https://github.com/SizheHu/Raster-to-Graph\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"EG 2024 평면도 구조 그래프 인식 방법의 공식 저장소 README. 1만여 장 주거 평면도 주석과 LIFULL 데이터 이용 신청 조건을 안내한다. (브리프 id ref-052 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-071\",\"org\":\"Agour, M. 외 (ResPlan)\",\"title\":\"ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans)\",\"published\":\"2025-08\",\"url\":\"https://github.com/m-agour/ResPlan\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"17,000건 주거 평면도의 벡터·그래프 데이터셋 README. 요소 범주, 엣지 유형, 미터 좌표, CC BY 4.0 라이선스를 적는다. (브리프 id ref-053 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-072\",\"org\":\"van Engelenburg, C. 외 (MSD)\",\"title\":\"msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes)\",\"published\":\"2024\",\"url\":\"https://github.com/caspervanengelenburg/msd\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"ECCV 2024 다세대 평면도 생성 벤치마크의 공식 저장소 README. 방–연결 그래프 구조를 설명한다. (브리프 id ref-054 에서 재부여)\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]},{\"id\":\"ref-073\",\"org\":\"Luo, R. 외\",\"title\":\"ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting\",\"published\":\"2025-03\",\"url\":\"https://arxiv.org/abs/2503.22346\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 공공·상업 시설 중심 건축 CAD 도면 5,538장(413,062개 조각)의 27개 범주 주석 데이터셋을 제시한 NeurIPS 2025 논문. (브리프 id ref-055 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-074\",\"org\":\"한국지능정보사회진흥원(AI Hub)\",\"title\":\"건축 도면 데이터\",\"published\":null,\"url\":\"https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 주택 유형별 평면도·입면도·단면도·구조도의 객체·문자 주석 데이터와 객체 인식·세그멘테이션·OCR 학습 모델을 제공하는 국내 AI 학습용 데이터 페이지. (브리프 id ref-056 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-075\",\"org\":\"de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G.\",\"title\":\"CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool\",\"published\":\"2015\",\"url\":\"https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 스캔 평면도 122장의 구조 분석용 데이터셋 CVC-FP 와 주석 도구 SGT 를 제시한 논문(International Journal on Document Analysis and Recognition 18권 1호, 2015). (브리프 id ref-057 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-076\",\"org\":\"DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.\",\"title\":\"Vision Language Models Can Parse Floor Plan Maps\",\"published\":\"2024-09\",\"url\":\"https://arxiv.org/abs/2409.12842\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이동 로봇이 평면도 이미지를 VLM 으로 해석해 이동 계획을 만드는 지도 파싱 과제와 실로봇 실험을 제시한 프리프린트. (브리프 id ref-058 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-077\",\"org\":\"DoorDet 저자(arXiv 2508.07714)\",\"title\":\"DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models\",\"published\":\"2025-08\",\"url\":\"https://arxiv.org/abs/2508.07714\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 객체 검출기·LLM·사람 검수로 평면도의 다중 유형 문 검출 데이터셋을 반자동 구축하는 방법을 제시한 논문. (브리프 id ref-059 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\"]},{\"id\":\"ref-078\",\"org\":\"Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S.\",\"title\":\"Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans\",\"published\":\"2024-08\",\"url\":\"https://arxiv.org/abs/2408.01526\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 다세대 래스터 평면도의 벽·창문·계단·난간 분할과 벡터화·3D 재구성 파이프라인을 제시한 프리프린트. (브리프 id ref-060 에서 재부여)\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"docs/ideas/floorplan-recognition.md\",\"docs/tracks/floorplan-recognition/space-graph-schema-draft.md\"]}],\"open_question_updates\":[],\"flow_matrix_updates\":[],\"additional_research_requests\":[\"참고문헌 id 재부여 확인(pipeline/publish 담당): 브리프 id ref-044~ref-060 17건을 기존 참고문헌(ref-044~ref-052 사용분)과 브리프 2026-09-25-04 사용분(ref-044~ref-059, ref-061)을 피해 ref-062~ref-078 로 순서대로 재부여했다(ref-044→ref-062, 045→063, 046→064, 047→065, 048→066, 049→067, 050→068, 051→069, 052→070, 053→071, 054→072, 055→073, 056→074, 057→075, 058→076, 059→077, 060→078). research.json·verification.json 의 출처 id 와 대응표로 연결하고, 게시 전에 ref-062~ref-078 이 비어 있는지 확인해야 한다.\",\"patch 로 표현할 수 없는 머리 줄 갱신 요청(pipeline 담당): (1) 단계 1 페이지 H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 1건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25' 로, (2) 공간 그래프 스키마 초안 H1 을 '# 공간 그래프 스키마 초안 (v0.1)' 로, (3) 트랙 개요 상태 줄의 '마지막 트랙 실행' 을 2026-09-25 로 바꿔야 한다. 부록 R-3 이 update 에 patches 만 허용해 H2 밖의 줄을 보낼 수 없었다.\",\"단계 3. 구현 가설 설계 페이지의 q3-02 에 관련 근거 f20(실행 2026-09-25-05)을 연결해야 한다(1차 검증 수정 지시). 이번 입력에 단계 3 페이지가 없어 다음 단계 3 실행 또는 퍼블리셔 처리로 넘긴다.\",\"q1-02(도면에서 로봇용 지도·공간 모델을 만드는 제품 사례)가 완료 조건 1 충족에 필요하다: 아이디어 3 페이지 3절의 '제품 사례' 소절을 채울 제품·연구 사례와 입력 형식별 자동화 범위.\",\"q2-04: CubiCasa5K 80여 범주와 AI Hub 건축 도면 데이터 클래스 목록의 엘리베이터·계단 포함 여부, 두 데이터의 상업 이용 조건(원문 열람 필요).\",\"FloorPlanCAD 35개 범주 전체 목록을 공식 출처(논문 원문)로 확인하면 엘리베이터 범주 서술을 [추정]에서 재검토할 수 있다. 제3자 카드의 '30 object categories' 표기와의 차이도 확인이 필요하다.\"],\"fixes_applied\":[\"참고문헌 id 충돌 — 브리프 id ref-044~ref-060 17건을 기존 참고문헌과 브리프 2026-09-25-04 사용분(ref-044~ref-059, ref-061)에 겹치지 않는 ref-062~ref-078 로 순서대로 재부여하고, 네 페이지의 각주·프런트매터 sources, reference_updates, glossary_updates 의 sources 를 같은 대응으로 통일했다(대응표는 additional_research_requests 와 reference_updates summary 에 적었다).\",\"원문 열람 표시 — 네 페이지의 각주 정의에서 원문을 연 출처(ref-062·064·065·066·069·070·071·072, 브리프 ref-044·046·047·048·051·052·053·054)는 표시 없이, 원문 미열람 출처(ref-063·067·068·073·074·075·076·077·078, 브리프 ref-045·049·050·055·056·057·058·059·060)는 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 에 source_unopened 를 같은 값으로 넣었다.\",\"f6 — 단계 1 페이지 3절과 아이디어 페이지 표에서 [추정]으로 쓰고 근거가 제3자 재배포 카드(ref-068, 브리프 ref-050)임을 밝혔으며 'stuff 범주' 부분을 삭제하고 FloorPlanCAD 범주 수는 공식 프로젝트 페이지(ref-066, 브리프 ref-048)의 35개만 썼다.\",\"f7 — ArchCAD-400K 범주 예시에서 '도면 기호'를 빼고 기둥·보(구조 요소), 문·창문(비구조 요소)만 썼다.\",\"f8 — '칠레 주거 건물 프로젝트에서 온'을 삭제하고 단계 1 페이지에 '출처 국가는 미확인'을 적었다.\",\"f18 — 국가 목록에서 칠레를 뺐다(핀란드·일본·스위스·국내 주택).\",\"f12 — CVC-FP 출처(ref-075, 브리프 ref-057) 발행일을 각주와 reference_updates 에서 2015 로 적고 본문에 2015년 발표를 밝혔다.\",\"f16 — 성공률 0.96 에 GPT-4o, 연구진이 라벨을 조밀하게 덧붙인 평면도, 최대 아홉 단계 이동 과제 조건과 단일 출처 수치임을 단계 1 페이지와 아이디어 페이지에 병기했다.\",\"f3 — README 의 '약 90% 정밀도·재현율'은 브리프 claim 밖이므로 쓰지 않았다.\",\"f11·f13 — MSD 계단 범주 언급과 AI Hub 규모 수치는 어느 페이지에도 쓰지 않았다(아이디어 표의 AI Hub 규모 칸은 '미확인').\",\"에스컬레이터 — 공간 그래프 스키마 초안 개념 표에 넣지 않고 6절 미해결 모델링 질문으로 두었으며 '로봇이 이용할 수 없다'는 서술은 쓰지 않았다.\",\"온톨로지 승인 변경 — 창문(f2·f4·f10)·난간(f2·f14) 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드'(f10) 추가, 공간 노드 속성 방 유형(f3·f4·f9·f10)을 확정으로 반영하고 벽(f2·f4·f8)·문(f4·f10)·계단(f2·f14)을 확정으로 바꿨으며 엘리베이터·충전 위치 등 나머지 시드 행은 초안으로 두고 ontology_version 을 '0' → '0.1' 로 올렸다(H1 은 patch 로 바꿀 수 없어 추가 요청).\",\"q3-02 중복 — f20 기반 새 질문을 backlog_updates 에 넣지 않고 단계 1 페이지 5절에 q3-02 관련 근거로 연결한다고 적었으며 스키마 초안 6절에 q3-02 로 연결했다. 단계 3 페이지는 입력에 없어 연결을 추가 요청으로 넘겼다.\",\"단계 1 페이지 6절 — 완료 조건 1 '미충족', 완료 조건 2 '충족'으로 적고 표 아래 줄을 '다음 단계로 전환: 아니오(완료 조건 1 미충족; 막힌 질문 q1-02·q1-03·q1-04)'로 썼다.\",\"아이디어 3 페이지 3절 — 브리프 finding 으로 직접 만든 데이터셋 비교표와 관련 연구·한계를 싣고 제품 사례를 '아직 조사되지 않음(q1-02)'으로 명시했다.\",\"세부영역 반영 — 6. 지도·공간·위치 모델과 27. AI·학습·적응과 모델 운영 페이지는 고치지 않고 area_reflection_proposals 로만 냈으며, f16 을 도면 해석 방법으로만 쓰고 로컬 주행·경로 실행은 로봇 쪽 연계 대상임을 밝혔다.\"],\"track_updates\":{\"stage_page\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md\",\"ontology_draft_version\":\"0.1\",\"backlog_updates\":[{\"id\":\"q1-01\",\"status\":\"답함\",\"answer_link\":\"docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-01\"},{\"id\":\"q1-05\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가?\",\"stage\":1,\"origin\":\"f18\"},{\"id\":\"q2-04\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가?\",\"stage\":2,\"origin\":\"f17\"},{\"id\":\"q4-05\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"축척 정보가 없는 래스터 평면도의 인식 결과를 로봇 지도 좌표(미터)로 옮기기 위해 축척을 어떻게 복원하는가(치수 문자 OCR, 문 폭 등 기준 요소, 현장 측정)?\",\"stage\":4,\"origin\":\"f21\"}],\"log_entry\":\"답한 질문: q1-01(공개 평면도 인식 데이터셋·모델, finding f1~f21) / 새 질문: q1-05(f18), q2-04(f17), q4-05(f21) — f20 기반 질문은 q3-02 와 중복이라 등록하지 않고 q3-02 관련 근거로 연결 / 온톨로지 변경: v0 → v0.1(2026-09-25, 근거 실행 2026-09-25-05): 개념 '창문'(f2·f4·f10)·'난간'(f2·f14) 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드'(f10) 추가, '공간 노드' 속성 방 유형 추가(f3·f4·f9·f10), 시드 개념 벽(f2·f4·f8)·문(f4·f10)·계단(f2·f14) 확정; 에스컬레이터(f6) 제안은 검증 거부로 6절 질문 / 완료 조건 평가: 미충족(부족: 아이디어 3. 건축 도면 자동 인식 페이지 3절의 제품 사례 비교 q1-02; 완료 조건 2 인식 대상 요소 목록 반영은 충족) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 4건, 27. AI·학습·적응과 모델 운영 1건 / 참고문헌: 브리프 ref-044~ref-060 을 ref-062~ref-078 로 재부여 / 다음 실행 제안: q1-02, q1-03, q1-04, q1-05\",\"overview_progress\":\"단계 1 진행 중 — 열린 질문 4(q1-02·q1-03·q1-04·q1-05), 답함 1(q1-01), 완료 조건 미충족\"},\"area_reflection_proposals\":[{\"area_no\":6,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"평면도 인식 접근 세 갈래: 래스터 이미지 분할·검출(DeepFloorplan 다중 작업 신경망, Kratochvila 외 U-Net 계열 분할과 벡터화), 래스터–벡터 변환(Raster-to-Vector), 구조 그래프 예측(Raster-to-Graph). 벡터 CAD 도면은 파놉틱 심볼 스포팅 과제로 다룬다(FloorPlanCAD, ArchCAD-400K). 축척 복원은 별도 과제로 보인다([추정], f21). 근거 f3·f4·f5·f9·f14·f21.\"},{\"area_no\":6,\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"summary\":\"공개 데이터셋·오픈소스: CubiCasa5K, FloorPlanCAD(주석 CC BY-NC 4.0, 2022년 초 종료), MLSTRUCT-FP, ResPlan(CC BY 4.0, 방 연결 그래프), 국내 AI Hub 건축 도면 데이터. 다수 데이터셋이 비상업 라이선스·승인제라 상용 적용 시 라이선스 검토가 필요할 것으로 보인다([추정], f19). 근거 f1·f5·f8·f10·f13·f19.\"},{\"area_no\":6,\"section\":\"8. 대표 연구와 자료\",\"summary\":\"DeepFloorplan(ICCV 2019), Raster-to-Graph(EG 2024), DeFazio 외(2024) VLM 지도 파싱(GPT-4o·조밀 라벨 평면도·최대 아홉 단계 과제에서 성공률 0.96, 단일 출처). VLM 연구는 도면 해석 방법으로만 다루고 로컬 주행·경로 실행은 로봇 쪽 연계 대상. 27. AI·학습·적응과 모델 운영 페이지와 양쪽 연결. 근거 f4·f9·f16.\"},{\"area_no\":6,\"section\":\"11. 열린 질문\",\"summary\":\"물류센터·창고 평면도와 충전 위치 라벨을 담은 공개 데이터셋은 이번 검색에서 찾지 못했다(부재 확인 아님, [추정] f18). 엘리베이터 라벨은 벡터 CAD 데이터셋에서만 제3자 자료로 확인됐다([추정] f17). 트랙 백로그 q1-05·q2-04 와 연결.\"},{\"area_no\":27,\"section\":\"8. 대표 연구와 자료\",\"summary\":\"도면 해석(교차 규칙상 6. 지도·공간·위치 모델에 적용되는 방법): 다중 작업 신경망(DeepFloorplan), 자기회귀 그래프 예측(Raster-to-Graph), 검출기·LLM·사람 검수를 잇는 반자동 주석 구축(DoorDet, 저자 의견), VLM 평면도 파싱(DeFazio 외 2024). 6. 지도·공간·위치 모델 페이지와 양쪽 연결. 근거 f4·f9·f15·f16.\"}]}",
+  "structured_output": {
+    "run_id": "2026-09-25-05",
+    "outline": [
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "section": "2. 질문 목록",
+        "budget_chars": 700,
+        "summary": "q1-01 을 답함(실행 2026-09-25-05)으로 바꾸고 이 단계의 새 질문 q1-05(f18)를 열림으로 더한다.",
+        "planned_findings": [
+          "f18"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "section": "3. 조사 결과",
+        "budget_chars": 4200,
+        "summary": "공개 평면도 인식 자료는 래스터 이미지 데이터셋·모델, 벡터 CAD 데이터셋, 그래프 출력형 데이터셋, 국내 AI Hub 데이터, 로봇용 VLM 평면도 해석 연구로 나뉜다. [사실][^ref-062] 엘리베이터 범주는 벡터 CAD 쪽에서만 제3자 카드·검색 요약으로 확인됐다. [추정][^ref-068]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "section": "4. 결론과 남은 불확실성",
+        "budget_chars": 1200,
+        "summary": "벽·문·창문은 대부분 자료의 기본 인식 대상이고 계단은 일부 자료에서 확인됐다. [사실][^ref-063] 엘리베이터·충전 위치 라벨, 라이선스, 축척 복원이 남은 불확실성이다. [추정][^ref-068]",
+        "planned_findings": [
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "section": "5. 이 단계가 낳은 후속 질문",
+        "budget_chars": 700,
+        "summary": "후속 질문 3건(q1-05, q2-04, q4-05)을 등록하고 f20 기반 질문은 q3-02 와 중복이라 등록하지 않는다.",
+        "planned_findings": [
+          "f17",
+          "f18",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "section": "6. 완료 조건 충족 현황",
+        "budget_chars": 600,
+        "summary": "완료 조건 1 미충족(제품 사례 q1-02 없음), 완료 조건 2 충족(스키마 초안 v0.1), 다음 단계로 전환하지 않는다."
+      },
+      {
+        "path": "docs/ideas/floorplan-recognition.md",
+        "section": "3. 선행 연구·제품 사례",
+        "budget_chars": 2200,
+        "summary": "공개 평면도 인식 데이터셋 11종의 입력 형식·규모·요소·엘리베이터/계단·접근 조건 비교표와 관련 모델·로봇 적용 연구, 한계를 싣는다. [사실][^ref-066] 제품 사례는 아직 조사되지 않았다(q1-02).",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "section": "2. 개념 목록 표",
+        "budget_chars": 1800,
+        "summary": "창문·난간 개념을 확정으로 추가하고 공간 노드에 방 유형 속성을 더하며 벽·문·계단·공간 노드를 확정한다. [사실][^ref-071]",
+        "planned_findings": [
+          "f2",
+          "f3",
+          "f4",
+          "f8",
+          "f9",
+          "f10",
+          "f14"
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "section": "6. 미해결 모델링 질문",
+        "budget_chars": 1000,
+        "summary": "거부된 에스컬레이터 제안, 난간·창문의 관계, 방 유형과 물류 구역 대응, 층 간 연결 확장(f20), 축척 복원(f21)을 질문으로 둔다. [추정][^ref-068]",
+        "planned_findings": [
+          "f6",
+          "f20",
+          "f21"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "q1-01 답함(공개 평면도 인식 데이터셋·모델), 후속 질문 3건(q1-05·q2-04·q4-05), 완료 조건 1 미충족·2 충족, 출처 17건(ref-062~ref-078로 재부여), 이력 행 추가",
+        "patches": [
+          {
+            "section": "2. 질문 목록",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-062",
+                "ref-063",
+                "ref-064",
+                "ref-065",
+                "ref-066",
+                "ref-067",
+                "ref-068",
+                "ref-069",
+                "ref-070",
+                "ref-071",
+                "ref-072",
+                "ref-073",
+                "ref-074",
+                "ref-075",
+                "ref-076",
+                "ref-077",
+                "ref-078"
+              ],
+              "confidence": "medium",
+              "last_run": "2026-09-25"
+            },
+            "content": "이 단계의 시작 질문 4개다. q1-01은 사용자 요청의 시작 질문 문구 그대로이고, 나머지는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \"조사 중\"은 이 표에서 \"열림\"으로 표시하고 \"폐기\"는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커 또는 주제 페이지 링크를 적는다. 제기 근거 칸에는 finding id 또는 \"사용자\"만 쓴다.\n\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\n|---|---|---|---|---|---|\n| q1-01 | 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-05 | [3절 q1-01](#q1-01) |\n| q1-02 | 건축 도면(CAD·BIM·스캔 이미지)에서 로봇용 지도나 공간 모델을 자동으로 만드는 연구·제품 사례는 무엇이 있고, 입력 형식마다 무엇을 자동화하는가? | 열림 | 사용자 | | |\n| q1-03 | 충전 위치·작업대처럼 로봇 운영에 쓰는 시설을 도면에서 인식하거나 도면 밖 정보로 보완한 사례가 있는가? | 열림 | 사용자 | | |\n| q1-04 | 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? | 열림 | 사용자 | | |\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 열림 | f18, 실행 2026-09-25-05 | | |"
+          },
+          {
+            "section": "3. 조사 결과",
+            "action": "replace",
+            "content": "### q1-01 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델 {#q1-01}\n\n이번 실행(2026-09-25-05)에서 확인한 공개 자료를 입력 형식에 따라 래스터 평면도 이미지, 벡터 CAD 도면, 그래프 출력형, 국내 공공 데이터, 로봇용 평면도 해석 연구로 나누어 정리한다. 데이터셋마다 저자 계열의 1차 출처만 있어 교차 확인된 항목은 없다. 데이터셋별 비교표는 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \"3. 선행 연구·제품 사례\" 절에 있다.\n\n#### 래스터 평면도 이미지 데이터셋과 모델\n\nCubiCasa5K는 평면도 이미지 5,000장을 80개가 넘는 객체 범주로 다각형(polygon) 주석한 공개 데이터셋이며 2019년 논문과 함께 공개되었다. [사실][^ref-062][^ref-063] 원본은 핀란드 부동산 마케팅 자료의 CAD 기반 평면도이고, 주석은 방(부엌·침실·욕실·복도 등), 아이콘(창문·문·위생기구 등), 구조 요소(벽·난간·계단 등)를 SVG 벡터 형식으로 담는다. [사실][^ref-063]\n\nLiu 외(ICCV 2017)의 래스터–벡터 변환(Raster-to-Vector) 방법은 래스터 평면도 이미지를 벽·문(개구부)·방 유형·아이콘을 담은 벡터 표현으로 바꾼다. 원 래스터 이미지(LIFULL 데이터)는 라이선스 때문에 공유하지 않고, 벡터 주석과 알고리즘이 생성한 10만 건 이상의 벡터 표현을 공개했다. [사실][^ref-065]\n\nZeng 외(ICCV 2019)의 DeepFloorplan은 방 경계를 이용한 주의(attention) 다중 작업 신경망으로 벽·문·창문과 방 유형을 인식하며, Raster-to-Vector 이미지 815장에 픽셀 주석을 단 R2V 데이터셋과 R3D 데이터셋을 쓴다. [사실][^ref-064]\n\nMLSTRUCT-FP는 다세대 평면도 이미지 954장에 벽 사각형 70,873개와 슬래브(실내 영역) 다각형, 축척(px/m) 메타데이터를 JSON으로 주석한 데이터셋이며 Automation in Construction(2023)에 발표되었다. [사실][^ref-069] 평면도의 출처 국가는 공식 저장소 설명에서 확인하지 못했다(미확인).\n\nCVC-FP는 스캔한 실제 건축 평면도 122장을 출처·양식에 따라 네 묶음으로 나누고 요소와 공간·기능 관계를 주석한 데이터셋이다(2015년 발표). [사실][^ref-075]\n\nKratochvila 외(2024)는 다세대 래스터 평면도에서 벽·창문·계단·난간을 픽셀 단위로 분할하는 개선된 U-Net 계열 방법과, 분할 결과를 벡터화해 3D 모델을 만드는 재구성 단계를 제안했다. [사실][^ref-078]\n\nDoorDet(2025) 저자들은 평면도의 세분화된 다중 유형 문 검출용 공개 데이터셋이 드물다고 보고, 객체 검출기로 문을 찾은 뒤 대규모 언어 모델(Large Language Model, LLM)이 문 유형을 분류하고 사람이 검수하는 반자동 구축 절차를 제안했다. [의견][^ref-077]\n\n#### 벡터 CAD 도면 데이터셋\n\nFloorPlanCAD는 주거·상업 건물의 실제 CAD 도면 15,663장(초판 11,602장)을 SVG 벡터로 담고 35개 범주를 선 단위로 주석해 파놉틱 심볼 스포팅(panoptic symbol spotting) 과제를 정의한 데이터셋(ICCV 2021)이다. 주석은 CC BY-NC 4.0(비상업) 라이선스이고 프로젝트는 2022년 초 종료되었다. [사실][^ref-066][^ref-067]\n\nFloorPlanCAD를 재배포한 제3자 데이터셋 카드의 검색 요약에 따르면 범주에 문·창문·계단과 함께 설비 범주로 엘리베이터(elevator)·에스컬레이터(escalator)가 있다. 공식 프로젝트 페이지에는 범주 목록이 없어 이 내용은 제3자 카드에만 기댄다(2026-09-25 확인). [추정][^ref-068]\n\nArchCAD-400K(NeurIPS 2025)는 표준화된 건축 CAD 도면 5,538장을 잘라 만든 413,062개 조각에 기둥·보 같은 구조 요소와 문·창문 같은 비구조 요소 등 27개 범주를 주석한 데이터셋이다. 주거 건물은 14%이고 대형 공공·상업 시설이 다수이며, 비상업 용도로 제한 공개된다. [사실][^ref-073]\n\n#### 그래프 형태로 결과를 내는 데이터셋\n\nRaster-to-Graph(Computer Graphics Forum, EG 2024)는 평면도 인식을 벽 교차점·벽 선분을 순차 예측하는 구조 그래프 예측 문제로 바꾸고, LIFULL HOME'S 데이터에서 만든 1만 장 이상의 주거 평면도에 구조(벽)와 의미(방 유형·문) 주석을 달았다. 데이터는 LIFULL 이용 신청 뒤에 받을 수 있다. [사실][^ref-070]\n\nResPlan은 온라인 부동산 매물에서 만든 주거 평면도 17,000건에 벽·문·창문·방·발코니의 벡터 형상(미터 좌표)과, 방 사이 연결을 via_door·adjacency·direct·via_window 네 유형의 엣지로 담은 그래프를 제공하며 데이터는 CC BY 4.0이다(2025년 8월 기준). [사실][^ref-071]\n\nModified Swiss Dwellings(MSD, ECCV 2024)는 스위스 다세대 건물 평면도 5,300여 장(아파트 18,900여 호)을 방을 노드, 문·벽 등 연결을 엣지로 하는 그래프 구조로 담은 평면도 생성 벤치마크이며 인식용 데이터셋은 아니다. [사실][^ref-072]\n\n#### 국내 공공 데이터\n\n한국지능정보사회진흥원 AI Hub의 '건축 도면 데이터'는 아파트·연립다세대·단독주택의 평면도·입면도·단면도·구조도를 대상으로 하며, 벽체·창문 등의 객체 인식(YOLOv5), 출입문·창호·벽체 구조 인식 세그멘테이션(DeepLabV3+), 도면 문자 인식(YOLOv5+CRNN) 학습 모델을 함께 제공한다(2026-09-25 확인). [사실][^ref-074]\n\n#### 로봇용 평면도 해석 연구\n\nDeFazio 외(2024)는 이동 로봇이 방 이름과 문 표시를 덧붙인 평면도 이미지를 시각-언어 모델(Vision-Language Model, VLM)에 넣어 문 접근·통과를 포함한 이동 계획을 만드는 '지도 파싱(map parsing)'을 제안했다. [사실][^ref-076] 이 연구가 보고한 성공률 0.96은 GPT-4o를 쓰고 연구진이 라벨을 조밀하게 덧붙인 평면도에서 최대 아홉 단계 이동 과제를 수행한 조건의 값이며, 단일 출처 수치다. [사실][^ref-076] 이 위키에서는 이 연구를 도면 해석 방법으로만 다룬다. 로컬 주행과 경로 실행은 분류 원문 9장 경계에 따라 로봇 자체 지능·제어 쪽의 연계 대상이다.\n\n#### 엘리베이터·계단 라벨과 ROP 적용상 한계\n\n이번에 확인한 공개 자료 가운데 엘리베이터를 범주로 명시한 것은 벡터 CAD 도면 데이터셋(FloorPlanCAD — 제3자 데이터셋 카드 근거, 그리고 검색 요약상 ArchCAD-400K)이고, 래스터 주거 평면도 데이터셋(CubiCasa5K, R2V, MLSTRUCT-FP, ResPlan)은 벽·문·창문·방(일부는 계단·난간) 중심이어서 엘리베이터 라벨은 확인되지 않았다. CubiCasa5K와 AI Hub 데이터의 전체 클래스 목록은 원문을 열지 못해 엘리베이터 부재를 확정하지 못했다. [추정][^ref-068][^ref-073][^ref-063][^ref-064][^ref-069][^ref-071]\n\n확인한 공개 데이터셋은 주거 건물(핀란드·일본·스위스·국내 주택) 중심이거나 공공·상업 시설 CAD이며, 물류센터·창고 평면도와 로봇 충전 위치를 라벨로 담은 데이터셋은 이번 검색 범위에서 찾지 못했다. 찾지 못했다는 뜻이며 없다는 것이 확인된 것은 아니다. [추정][^ref-063][^ref-069][^ref-070][^ref-072][^ref-073][^ref-074]\n\nFloorPlanCAD·ArchCAD-400K 주석이 비상업 라이선스이고 R2V·Raster-to-Graph의 원 이미지가 LIFULL 이용 승인을 요구하므로, 상용 ROP가 이 데이터셋으로 학습한 모델을 그대로 쓰기에는 라이선스 검토가 필요할 것으로 보인다. [추정][^ref-066][^ref-073][^ref-065][^ref-070]\n\nRaster-to-Graph의 벽 구조 그래프, ResPlan의 유형 붙은 방 연결 엣지(via_door·adjacency 등), MSD의 방–연결 그래프는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)의 '공간 노드–문–공간 노드' 구조와 가까운 출력 형태이나, 층 간 연결(엘리베이터·계단)과 통과 조건은 담지 않는 것으로 보인다. [추정][^ref-070][^ref-071][^ref-072]\n\nMLSTRUCT-FP(px/m 축척)와 ResPlan(미터 좌표)처럼 축척 정보를 함께 주는 데이터셋은 일부이고, 512×512로 정규화한 Raster-to-Graph처럼 축척 없이 이미지 좌표만 다루는 경우가 있어, 인식 결과를 로봇 지도 좌표로 옮기려면 축척 복원이 별도 과제가 될 것으로 보인다. [추정][^ref-069][^ref-071][^ref-070]"
+          },
+          {
+            "section": "4. 결론과 남은 불확실성",
+            "action": "replace",
+            "content": "**결론**\n- q1-01의 답으로 래스터 평면도 데이터셋·모델(CubiCasa5K, Raster-to-Vector·DeepFloorplan, MLSTRUCT-FP, CVC-FP), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan, MSD), 국내 AI Hub 건축 도면 데이터를 확인했다. [사실][^ref-062][^ref-064][^ref-065][^ref-066][^ref-069][^ref-070][^ref-071][^ref-072][^ref-073][^ref-074][^ref-075]\n- 벽·문·창문은 확인한 자료 대부분의 인식 대상이고, 계단은 CubiCasa5K와 Kratochvila 외(2024)에서 인식 대상으로 확인됐다. [사실][^ref-063][^ref-064][^ref-078]\n- 방 연결을 그래프로 내는 자료가 있어 공간 그래프 스키마 초안의 '공간 노드–문–공간 노드' 구조와 출력 형태가 가깝다. [추정][^ref-070][^ref-071][^ref-072]\n\n**남은 불확실성**\n- 엘리베이터 범주는 벡터 CAD 데이터셋에서만, 그것도 제3자 데이터셋 카드와 검색 요약으로만 확인됐다. CubiCasa5K·AI Hub 데이터의 전체 클래스 목록은 미확인이다(후속 질문 q2-04). [추정][^ref-068][^ref-073]\n- 물류센터·창고 평면도와 충전 위치 라벨을 담은 데이터셋은 찾지 못했으며 부재가 확인된 것은 아니다(후속 질문 q1-05). [추정][^ref-063][^ref-074]\n- 다수 데이터셋이 비상업 라이선스이거나 승인제로 접근하므로 상용 적용 전 라이선스 검토가 필요할 것으로 보인다. CubiCasa5K·AI Hub 데이터의 상업 이용 조건은 미확인이다. [추정][^ref-066][^ref-073]\n- 축척 정보가 없는 데이터셋이 있어 로봇 지도 좌표로 옮길 때 축척 복원 방법이 필요하다(후속 질문 q4-05). [추정][^ref-070]\n- 교차 확인된 항목은 없고, 원문을 열지 못한 출처(ref-063, ref-067, ref-068, ref-073, ref-074, ref-075, ref-076, ref-077, ref-078)에 기댄 내용은 검색 요약 범위다.\n- 온톨로지 변경: [공간 그래프 스키마 초안](space-graph-schema-draft.md)을 v0에서 v0.1로 올렸다(창문·난간 개념, 문 없는 인접 관계, 공간 노드의 방 유형 속성 추가, 벽·문·계단·공간 노드 확정). 에스컬레이터는 근거가 강등된 제3자 단일 출처라 반영하지 않고 초안 6절 질문으로 두었다."
+          },
+          {
+            "section": "5. 이 단계가 낳은 후속 질문",
+            "action": "replace",
+            "content": "| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 단계 1. 선행 연구·제품 사례 조사 | f18 (실행 2026-09-25-05) | 열림 |\n| q2-04 | AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가? | [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | f17 (실행 2026-09-25-05) | 열림 |\n| q4-05 | 축척 정보가 없는 래스터 평면도의 인식 결과를 로봇 지도 좌표(미터)로 옮기기 위해 축척을 어떻게 복원하는가(치수 문자 OCR, 문 폭 등 기준 요소, 현장 측정)? | [단계 4. 지도 변환 보정과 현장 정합](stage-4-map-conversion-and-site-alignment.md) | f21 (실행 2026-09-25-05) | 열림 |\n\n그래프 출력형 평면도 인식을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하는 질문(근거 f20)은 기존 질문 q3-02와 같은 뜻이어서 새로 등록하지 않았다. f20은 [단계 3. 구현 가설 설계](stage-3-implementation-hypothesis.md)의 q3-02 관련 근거로 연결한다."
+          },
+          {
+            "section": "6. 완료 조건 충족 현황",
+            "action": "replace",
+            "content": "충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 선행 연구·데이터셋·제품 사례 비교가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \"3. 선행 연구·제품 사례\" 절에 실림 | 미충족 | 선행 연구·데이터셋 비교는 실렸으나 제품 사례(q1-02)가 아직 조사되지 않았다 | 미충족 · 미승인 |\n| 인식 대상 요소 목록이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에 반영됨 | 충족 | 초안 v0.1에 창문·난간 추가, 벽·문·계단 확정(실행 2026-09-25-05) | 충족(1차 검증 지시) · 단계 전환 미승인 |\n\n다음 단계로 전환: 아니오(완료 조건 1 미충족; 막힌 질문 q1-02·q1-03·q1-04)"
+          },
+          {
+            "section": "8. 출처",
+            "action": "replace",
+            "content": "[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)"
+          },
+          {
+            "section": "9. 이력",
+            "action": "replace",
+            "content": "실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-05 | q1-01 | q1-05, q2-04, q4-05 | v0 → v0.1 | 2 |\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q1-01~q1-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에서 생성) | 1 |"
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "초안 v0 → v0.1: 창문·난간 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드' 추가, 공간 노드에 방 유형 속성, 벽·문·계단·공간 노드 확정, 에스컬레이터 등 6절 질문 추가(각주 ref-062~ref-078 체계로 재부여)",
+        "patches": [
+          {
+            "section": "2. 개념 목록 표",
+            "action": "replace",
+            "frontmatter": {
+              "ontology_version": "0.1",
+              "sources": [
+                "ref-063",
+                "ref-064",
+                "ref-065",
+                "ref-068",
+                "ref-069",
+                "ref-070",
+                "ref-071",
+                "ref-072",
+                "ref-078"
+              ],
+              "confidence": "medium",
+              "last_run": "2026-09-25"
+            },
+            "content": "| 개념 | 정의 | 주요 속성 | 근거 출처 | 상태 |\n|---|---|---|---|---|\n| 평면도(Floor Plan) | 인식의 입력이 되는 층별 건축 도면. 모든 인식 요소의 근거 도면이 된다. 아이디어 정의 기반 [가정] | 도면 이름, 형식(벡터·래스터·BIM, 단계 2에서 확정), 층, 버전 | 확장 아이디어 3의 정의 문구 | 초안 |\n| 층(Floor) | 건물의 한 층. 층별 지도와 공간 노드의 묶음 단위다. 아이디어 정의 기반 [가정] | 층 이름, 높이 기준(단계 4에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 공간 노드(Space Node) | 로봇이 머물거나 지나가는 공간 단위(방·구역·통로 등). 공간 그래프의 노드다. 아이디어 정의 기반 [가정] | 종류, 층, 경계, 이름·별칭, 방 유형(부엌·침실·복도 등, 데이터셋마다 분류 체계가 다름) | 확장 아이디어 3의 정의 문구; 속성 '방 유형'은 finding f3·f4·f9·f10 (실행 2026-09-25-05)[^ref-065][^ref-064][^ref-070][^ref-071] | 확정 |\n| 벽(Wall) | 공간 노드의 경계를 이루고 통과할 수 없는 요소. 아이디어 정의 기반 [가정] | 위치, 두께(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구; finding f2·f4·f8 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-069] | 확정 |\n| 문(Door) | 두 공간 노드를 잇는 통과 지점. 아이디어 정의 기반 [가정] | 위치, 폭, 여닫는 방식·연동 여부(10. 설비·건물 시스템 연동) | 확장 아이디어 3의 정의 문구; finding f4·f10 (실행 2026-09-25-05)[^ref-064][^ref-071] | 확정 |\n| 창문(Window) | 공간 노드의 경계에 놓이는 개구부. 여러 평면도 인식 데이터셋의 인식 대상이며, ResPlan은 창문을 통한 방 연결(via_window)을 엣지 유형으로 둔다. 이 초안에서는 문과 달리 로봇이 지나는 연결로 쓰지 않는 경계 요소로 구분한다. | 위치 | finding f2·f4·f10 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-071] | 확정 |\n| 난간(Railing) | 벽처럼 경계를 이루는 요소로 CubiCasa5K와 Kratochvila 외(2024)의 인식 대상이다. 벽과 같은 개념으로 묶을지는 6절 질문으로 둔다. | 위치 | finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\n| 엘리베이터(Elevator) | 서로 다른 층의 공간 노드를 잇는 수직 이동 설비. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 운행 층, 연동 여부 | 확장 아이디어 3의 정의 문구 | 초안 |\n| 계단(Stairs) | 서로 다른 층의 공간 노드를 잇는 수직 이동 경로. 로봇의 계단 능력이 있어야 지날 수 있다. 아이디어 정의 기반 [가정] | 위치, 잇는 층 | 확장 아이디어 3의 정의 문구; finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\n| 충전 위치(Charging Location) | 로봇이 충전하는 자리. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 수(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 공용 자원(Shared Resource) | 여러 로봇이 나눠 쓰는 시설. 엘리베이터와 충전 위치가 시드 인스턴스다. 아이디어 정의 기반 [가정] | 종류, 위치(공간 노드), 수용량·예약 조건(16. 공용 자원·충전·에너지 최적화) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 층별 지도(Floor Map) | 한 층의 인식 결과로 자동 생성한 지도. 로봇 내비게이션 지도로 바꾸려면 보정이 필요하다(단계 4). 아이디어 정의 기반 [가정] | 층, 좌표계, 생성 시각, 보정 이력 | 확장 아이디어 3의 정의 문구 | 초안 |\n\n개념은 번호나 코드로 부르지 않고 이름으로 부른다. 상태 값은 초안(시드) / 제안(검증 승인 전) / 확정(검증 승인) / 폐기(이유 병기)이며, 폐기한 개념은 표에서 지우지 않고 상태만 바꾼다. 속성의 \"(단계 n에서 확정)\"은 그 단계의 조사 결과로 정한다는 뜻이다. v0.1(실행 2026-09-25-05)의 추가·확정은 내용 검증 에이전트가 승인한 변경만 반영한 것이다."
+          },
+          {
+            "section": "3. 관계 목록 표",
+            "action": "replace",
+            "content": "| 주어 | 관계 | 목적어 | 근거 |\n|---|---|---|---|\n| 평면도 | 층을 나타낸다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 층 | 공간 노드를 포함한다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 벽 | 공간 노드의 경계를 이룬다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 문 | 두 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 공간 노드 | 인접한다(문 없이) | 공간 노드 | finding f10 (실행 2026-09-25-05)[^ref-071] — 문을 거치지 않고 경계를 맞대거나 개방되어 이어진 공간 사이 관계. ResPlan의 adjacency·direct 엣지에 대응하며 '문 / 두 공간 노드를 잇는다'와 구분한다 |\n| 엘리베이터·계단 | 서로 다른 층의 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 충전 위치 | 공간 노드에 놓인다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 엘리베이터·충전 위치 | 공용 자원이다 | 공용 자원 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 층별 지도 | 층에서 생성된다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 모든 인식 요소 | 근거 평면도를 가리킨다 | 평면도 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n\n관계의 방향은 주어에서 목적어로 읽는다. 카디널리티는 정하지 않았으며 6절의 미해결 질문으로 둔다. 창문·난간과 공간 노드 사이의 관계는 아직 승인된 근거가 없어 표에 넣지 않았다(6절)."
+          },
+          {
+            "section": "4. 다이어그램",
+            "action": "replace",
+            "content": "```mermaid\nflowchart LR\n  plan[\"평면도\"] -->|\"나타낸다\"| floor[\"층\"]\n  floor -->|\"포함한다\"| node[\"공간 노드\"]\n  wall[\"벽\"] -->|\"경계를 이룬다\"| node\n  door[\"문\"] -->|\"두 노드를 잇는다\"| node\n  node -->|\"인접한다(문 없이)\"| node\n  elev[\"엘리베이터\"] -->|\"층 사이를 잇는다\"| node\n  stairs[\"계단\"] -->|\"층 사이를 잇는다\"| node\n  charge[\"충전 위치\"] -->|\"놓인다\"| node\n  elev -->|\"이다\"| res[\"공용 자원\"]\n  charge -->|\"이다\"| res\n  fmap[\"층별 지도\"] -->|\"생성된다\"| floor\n  window[\"창문\"]\n  railing[\"난간\"]\n```\n\n도식은 2절의 개념과 3절의 관계만 그렸다. 창문·난간은 개념으로만 확정했고 관계가 정해지지 않아 연결선 없이 두었다."
+          },
+          {
+            "section": "6. 미해결 모델링 질문",
+            "action": "replace",
+            "content": "v0을 아이디어 정의에서 도출하는 과정과 v0.1 갱신(실행 2026-09-25-05)에서 생긴 질문이다. 관련 id는 [질문 백로그](question-backlog.md)의 질문이다.\n\n- 공간 노드의 단위(방·구역·통로를 어디서 나누는가)와 엣지의 통과 조건(문 폭, 문 열림 필요, 엘리베이터 탑승)을 어떻게 정해야 배정·경로·자원 예약에 모두 쓰이는지 정해지지 않았다. — 관련: q3-02 [가정]\n- 공간 그래프를 로봇 기능 온톨로지와 어떤 관계로 잇는가. \"이 로봇이 이 경로를 갈 수 있는가\"를 판단하려면 계단·도어 조작·충전 능력과 공간 요소의 대응 규칙이 필요하다. — 관련: q3-03 [가정]\n- 표준(BIM·IFC, 실내 공간 표준)의 공간·시설 개념과 이 스키마의 개념을 어떻게 대응시키는가. — 관련: q2-01 [가정]\n- 도면 좌표계와 로봇별 지도 좌표계의 정렬 정보, 도면–현장 차이, 지도 버전을 층별 지도의 속성으로 둘지 별도 개념으로 둘지 정해지지 않았다. — 관련: q4-02, q4-03, q4-04 [가정]\n- 작업대·대기 공간·버퍼처럼 정의 문구에 없는 공용 자원을 도면에서 인식할지, 도면 밖 정보로 보완할지 정해지지 않았다. — 관련: q1-03 [가정]\n- 에스컬레이터(Escalator)를 층 사이를 잇는 개념으로 둘지 정하지 않았다. FloorPlanCAD의 설비 범주에 엘리베이터와 함께 있다는 근거가 제3자 데이터셋 카드의 검색 요약뿐이고, 로봇이 이용할 수 있는지에 대한 근거도 없어 v0.1에 반영하지 않았다. [추정][^ref-068] — 관련: q3-02\n- 난간을 벽과 같은 개념으로 묶을지 별도로 둘지, 창문·난간이 공간 노드의 경계를 이루는 관계를 둘지 정해지지 않았다. — 관련: q3-02\n- 공간 노드의 방 유형은 주거 중심 분류(부엌·침실·복도 등)라 물류 시설 구역 유형(출하 대기장 등)과의 대응이 정해지지 않았다. — 관련: q1-05, q3-02\n- 그래프 출력형 평면도 인식 결과(Raster-to-Graph의 벽 구조 그래프, ResPlan의 방 연결 엣지, MSD의 방–연결 그래프)는 이 스키마의 '공간 노드–문–공간 노드' 구조와 가깝지만 층 간 연결(엘리베이터·계단)과 통과 조건은 담지 않는 것으로 보여 확장 방법이 필요하다. [추정][^ref-070][^ref-071][^ref-072] — 관련: q3-02\n- 축척 정보가 없는 인식 결과(예: 512×512로 정규화한 Raster-to-Graph)를 층별 지도의 좌표계로 옮기려면 축척 복원이 필요할 것으로 보인다. [추정][^ref-069][^ref-071][^ref-070] — 관련: q4-05, q4-01, q4-03"
+          },
+          {
+            "section": "7. 버전 이력",
+            "action": "append",
+            "content": "[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)"
+          }
+        ]
+      },
+      {
+        "path": "docs/ideas/floorplan-recognition.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "3절에 단계 1 선행 연구·데이터셋 비교표(11종), 관련 모델·로봇 적용 연구, 한계를 싣고 제품 사례는 미조사(q1-02)로 명시(각주 ref-062~ref-078)",
+        "patches": [
+          {
+            "section": "3. 선행 연구·제품 사례",
+            "action": "replace",
+            "frontmatter": {
+              "confidence": "medium",
+              "last_run": "2026-09-25"
+            },
+            "content": "평면도에서 벽·문·창문·계단을 인식하는 공개 데이터셋은 래스터 이미지, 벡터 CAD, 그래프 출력형으로 나뉘며, 엘리베이터 범주는 벡터 CAD 쪽에서만 제3자 자료로 확인됐다. [추정][^ref-068][^ref-073] 이 절은 [단계 1. 선행 연구·제품 사례 조사](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-01)의 실행 2026-09-25-05 결과이며, 문장별 태그와 상세는 그 단계 페이지에 있다.\n\n### 공개 데이터셋 비교 (2026-09-25 기준)\n\n아래 표는 검증된 발견 사항으로 직접 만든 것이며 출처의 표를 옮긴 것이 아니다. 각 행의 내용은 근거 열 출처에서 확인한 사실이고, FloorPlanCAD의 엘리베이터 칸만 제3자 카드에 기댄 추정이다. \"미확인\"은 이번 실행에서 확인하지 못했다는 뜻이다.\n\n| 자료 | 입력 형식 | 규모 | 주요 인식 요소 | 엘리베이터·계단 | 접근 조건 | 근거 |\n|---|---|---|---|---|---|---|\n| CubiCasa5K | 래스터 이미지, 주석 SVG | 5,000장, 80여 범주 | 방, 창문·문 등 아이콘, 벽·난간·계단 등 | 계단 있음, 엘리베이터 미확인 | 미확인 | [^ref-062][^ref-063] |\n| Raster-to-Vector(R2V) | 래스터 → 벡터 | 벡터 표현 10만 건 이상 공개 | 벽·문(개구부)·방 유형·아이콘 | 미확인 | 원 이미지 비공개(LIFULL 라이선스) | [^ref-065] |\n| DeepFloorplan(R2V·R3D) | 래스터, 픽셀 주석 | R2V 815장 | 벽·문·창문·방 유형 | 미확인 | 미확인 | [^ref-064] |\n| MLSTRUCT-FP | 래스터 + JSON | 954장, 벽 사각형 70,873개 | 벽·슬래브·축척(px/m) | 미확인 | 요청 양식으로 제공 | [^ref-069] |\n| CVC-FP | 스캔 평면도 | 122장 | 요소와 공간·기능 관계 | 미확인 | 미확인 | [^ref-075] |\n| FloorPlanCAD | 벡터 CAD(SVG) | 15,663장, 35개 범주 | 선 단위 범주 주석 | 엘리베이터·에스컬레이터 범주(제3자 카드 근거, 추정) | 주석 CC BY-NC 4.0, 2022년 초 종료 | [^ref-066][^ref-067][^ref-068] |\n| ArchCAD-400K | 벡터 CAD 조각 | 도면 5,538장 → 413,062조각, 27개 범주 | 기둥·보, 문·창문 | 미확인 | 비상업 용도 제한 | [^ref-073] |\n| Raster-to-Graph | 래스터 → 구조 그래프 | 1만 장 이상 | 벽 교차점·선분, 방 유형·문 | 미확인 | LIFULL 이용 신청 | [^ref-070] |\n| ResPlan | 벡터 + 그래프 | 17,000건 | 벽·문·창문·방·발코니, 방 연결 엣지 4유형 | 미확인 | CC BY 4.0 | [^ref-071] |\n| MSD(생성 벤치마크) | 그래프 | 5,300여 장 | 방 노드·연결 엣지 | 미확인 | 미확인 | [^ref-072] |\n| AI Hub 건축 도면 데이터 | 평면도·입면도·단면도·구조도 | 미확인 | 벽체·창문 객체, 출입문·창호·벽체 분할, 도면 문자 | 미확인 | 미확인 | [^ref-074] |\n\n### 관련 모델과 로봇 적용 연구\n\n- Kratochvila 외(2024)는 다세대 래스터 평면도에서 벽·창문·계단·난간을 분할하고 벡터화해 3D 모델을 만드는 방법을 제안했다. [사실][^ref-078]\n- DoorDet(2025) 저자들은 세분화된 문 검출용 공개 데이터셋이 드물다고 보고 검출기·LLM·사람 검수를 잇는 반자동 구축 절차를 제안했다. [의견][^ref-077]\n- DeFazio 외(2024)는 라벨을 덧붙인 평면도를 시각-언어 모델(VLM)로 해석해 문 통과를 포함한 이동 계획을 만드는 지도 파싱을 제안했고, GPT-4o·조밀 라벨 평면도·최대 아홉 단계 과제 조건에서 성공률 0.96을 보고했다(단일 출처). [사실][^ref-076] 이 위키는 이를 도면 해석 방법으로만 다루며, 로컬 주행·경로 실행은 로봇 쪽 연계 대상이다.\n\n### 한계\n\n- 물류센터·창고 평면도와 충전 위치를 라벨로 담은 데이터셋은 이번 검색 범위에서 찾지 못했다(부재 확인은 아님). [추정][^ref-063][^ref-069][^ref-070][^ref-072][^ref-073][^ref-074]\n- 비상업 라이선스·승인제 접근이 많아 상용 ROP에 쓰려면 라이선스 검토가 필요할 것으로 보인다. [추정][^ref-066][^ref-073][^ref-065][^ref-070]\n\n### 제품 사례\n\n아직 조사되지 않음(q1-02). 건축 도면에서 로봇용 지도·공간 모델을 자동으로 만드는 제품 사례는 다음 트랙 실행에서 다룬다.\n\n[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)"
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/floorplan-recognition/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "6. 살아있는 산출물 링크 갱신(초안 v0.1, 아이디어 페이지 3절 초안, 백로그 21건), last_run 추가. 상태 줄(마지막 트랙 실행)은 patch 로 표현할 수 없어 퍼블리셔 갱신 요청",
+        "patches": [
+          {
+            "section": "6. 살아있는 산출물 링크",
+            "action": "replace",
+            "frontmatter": {
+              "last_run": "2026-09-25"
+            },
+            "content": "- [공간 그래프 스키마 초안](space-graph-schema-draft.md) — 현재 버전 v0.1. 실행 2026-09-25-05에서 창문·난간 개념과 문 없는 인접 관계를 더하고 공간 노드에 방 유형 속성을 넣었으며 벽·문·계단·공간 노드를 확정했다.\n- [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md) — 확장 아이디어 페이지. 3절(선행 연구·제품 사례)에 단계 1의 공개 데이터셋 비교 초안이 실렸고 제품 사례는 아직 조사되지 않았다. 4~6절은 단계 2·3·4·5 실행이 채운다.\n- [질문 백로그](question-backlog.md) — 시작 질문 18건과 실행 2026-09-25-05의 후속 질문 3건(q1-01 답함). 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 1 | q1-01 답함: 공개 평면도 인식 데이터셋·모델 비교, 공간 그래프 스키마 초안 v0.1, 후속 질문 3건 | run 2026-09-25-05",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: q1-01 답함(공개 평면도 인식 데이터셋·모델 11종 비교, 엘리베이터 라벨은 벡터 CAD 쪽에서만 추정 확인), 공간 그래프 스키마 초안 v0.1",
+      "category_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: 6. 지도·공간·위치 모델과 연결되는 공개 평면도 인식 데이터셋·모델 조사, 공간 그래프 스키마 초안 v0.1(창문·난간·문 없는 인접 관계)",
+      "area_recent": "2026-09-25 — 건축 도면 자동 인식 트랙 단계 1: 평면도 인식 데이터셋·모델 조사 결과를 6. 대표 접근법과 기술, 7. 관련 표준·프레임워크·오픈소스, 8. 대표 연구와 자료 절에 반영 제안"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "floor-plan-recognition",
+        "term_ko": "평면도 인식",
+        "term_en": "Floor Plan Recognition",
+        "definition": "평면도 이미지나 CAD 도면에서 벽·문·창문·계단 같은 건축 요소와 방 영역·유형을 자동으로 찾아내 구조화하는 작업이다.",
+        "description": "래스터 이미지 데이터셋(CubiCasa5K, R2V 등), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan)이 공개되어 있다. 도면 해석은 27. AI·학습·적응과 모델 운영의 방법이 6. 지도·공간·위치 모델에 적용되는 경우다.",
+        "related_areas": [
+          6,
+          27
+        ],
+        "sources": [
+          "ref-062",
+          "ref-064",
+          "ref-066",
+          "ref-070"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "raster-to-vector-conversion",
+        "term_ko": "래스터–벡터 변환",
+        "term_en": "Raster-to-Vector Conversion",
+        "definition": "픽셀 이미지로 된 평면도를 벽 선분·교차점·방 다각형 같은 기하 요소의 벡터 표현으로 바꾸는 처리이다.",
+        "description": "Liu 외(ICCV 2017)의 Raster-to-Vector 방법이 대표적이며, 벡터 표현은 이후 지도·공간 그래프 생성의 입력이 된다.",
+        "related_areas": [
+          6,
+          27
+        ],
+        "sources": [
+          "ref-065",
+          "ref-070"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "panoptic-symbol-spotting",
+        "term_ko": "파놉틱 심볼 스포팅",
+        "term_en": "Panoptic Symbol Spotting",
+        "definition": "CAD 도면의 선 요소마다 문·창문 같은 셀 수 있는 기호의 개별 인스턴스와 벽 같은 셀 수 없는 영역의 의미를 함께 판별하는 과제이다.",
+        "description": "FloorPlanCAD(ICCV 2021)가 이 과제를 정의했고 ArchCAD-400K(NeurIPS 2025)가 같은 과제의 데이터셋을 제시했다.",
+        "related_areas": [
+          6,
+          27
+        ],
+        "sources": [
+          "ref-066",
+          "ref-067",
+          "ref-073"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-062",
+        "org": "CubiCasa (Kalervo, A. 외)",
+        "title": "CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis)",
+        "published": null,
+        "url": "https://github.com/CubiCasa/CubiCasa5k",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "CubiCasa5K 데이터셋과 다중 작업 모델의 공식 저장소 README. 5,000장·80여 범주·다각형 주석을 설명한다. (브리프 id ref-044 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-063",
+        "org": "Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.",
+        "title": "CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis",
+        "published": "2019-04",
+        "url": "https://arxiv.org/abs/1904.01920",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 핀란드 부동산 평면도 5,000장의 SVG 주석 데이터셋과 다중 작업 인식 모델을 제시한 논문(SCIA 2019). (브리프 id ref-045 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-064",
+        "org": "Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W.",
+        "title": "DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention)",
+        "published": "2019",
+        "url": "https://github.com/zlzeng/DeepFloorplan",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "ICCV 2019 평면도 인식 모델의 공식 저장소 README. R2V·R3D 데이터셋과 벽·문·창문·방 유형 인식을 설명한다. (브리프 id ref-046 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-065",
+        "org": "Liu, C., Wu, J., Kohli, P., & Furukawa, Y.",
+        "title": "FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation)",
+        "published": "2017",
+        "url": "https://github.com/art-programmer/FloorplanTransformation",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "ICCV 2017 래스터→벡터 평면도 변환의 공식 저장소 README. LIFULL 이미지 비공개와 벡터 주석·생성 결과 공개를 안내한다. (브리프 id ref-047 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-066",
+        "org": "FloorPlanCAD 프로젝트(Fan, Z. 외)",
+        "title": "FloorPlanCAD Dataset — project page (floorplancad.github.io index.md)",
+        "published": "2021",
+        "url": "https://floorplancad.github.io/",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "FloorPlanCAD 데이터셋 공식 프로젝트 페이지 원본. 도면 수, 35개 범주, CC BY-NC 4.0 주석 라이선스, 2022년 초 프로젝트 종료를 적는다. (브리프 id ref-048 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-067",
+        "org": "Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P.",
+        "title": "FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting",
+        "published": "2021-05",
+        "url": "https://arxiv.org/abs/2105.07147",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 15,000여 CAD 평면도를 35개 범주로 선 단위 주석하고 파놉틱 심볼 스포팅 과제를 제시한 ICCV 2021 논문. (브리프 id ref-049 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-068",
+        "org": "Voxel51 (Hugging Face)",
+        "title": "Voxel51/FloorPlanCAD · Datasets at Hugging Face",
+        "published": null,
+        "url": "https://huggingface.co/datasets/Voxel51/FloorPlanCAD",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. FloorPlanCAD 를 재배포한 제3자 데이터셋 카드. 설비 범주(엘리베이터·에스컬레이터 등)와 주석 형식을 설명한다. (브리프 id ref-050 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-069",
+        "org": "Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT)",
+        "title": "MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition)",
+        "published": "2023",
+        "url": "https://github.com/MLSTRUCT/MLStructFP",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "MLSTRUCT-FP 데이터셋 적재 라이브러리 README. 954장, 벽 사각형·슬래브·축척 JSON 형식과 Automation in Construction 2023 인용을 적는다. (브리프 id ref-051 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-070",
+        "org": "Hu, S. 외",
+        "title": "Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer)",
+        "published": "2024",
+        "url": "https://github.com/SizheHu/Raster-to-Graph",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "EG 2024 평면도 구조 그래프 인식 방법의 공식 저장소 README. 1만여 장 주거 평면도 주석과 LIFULL 데이터 이용 신청 조건을 안내한다. (브리프 id ref-052 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-071",
+        "org": "Agour, M. 외 (ResPlan)",
+        "title": "ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans)",
+        "published": "2025-08",
+        "url": "https://github.com/m-agour/ResPlan",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "17,000건 주거 평면도의 벡터·그래프 데이터셋 README. 요소 범주, 엣지 유형, 미터 좌표, CC BY 4.0 라이선스를 적는다. (브리프 id ref-053 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-072",
+        "org": "van Engelenburg, C. 외 (MSD)",
+        "title": "msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes)",
+        "published": "2024",
+        "url": "https://github.com/caspervanengelenburg/msd",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "ECCV 2024 다세대 평면도 생성 벤치마크의 공식 저장소 README. 방–연결 그래프 구조를 설명한다. (브리프 id ref-054 에서 재부여)",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      },
+      {
+        "id": "ref-073",
+        "org": "Luo, R. 외",
+        "title": "ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting",
+        "published": "2025-03",
+        "url": "https://arxiv.org/abs/2503.22346",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 공공·상업 시설 중심 건축 CAD 도면 5,538장(413,062개 조각)의 27개 범주 주석 데이터셋을 제시한 NeurIPS 2025 논문. (브리프 id ref-055 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-074",
+        "org": "한국지능정보사회진흥원(AI Hub)",
+        "title": "건축 도면 데이터",
+        "published": null,
+        "url": "https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 주택 유형별 평면도·입면도·단면도·구조도의 객체·문자 주석 데이터와 객체 인식·세그멘테이션·OCR 학습 모델을 제공하는 국내 AI 학습용 데이터 페이지. (브리프 id ref-056 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-075",
+        "org": "de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G.",
+        "title": "CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool",
+        "published": "2015",
+        "url": "https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 스캔 평면도 122장의 구조 분석용 데이터셋 CVC-FP 와 주석 도구 SGT 를 제시한 논문(International Journal on Document Analysis and Recognition 18권 1호, 2015). (브리프 id ref-057 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-076",
+        "org": "DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.",
+        "title": "Vision Language Models Can Parse Floor Plan Maps",
+        "published": "2024-09",
+        "url": "https://arxiv.org/abs/2409.12842",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이동 로봇이 평면도 이미지를 VLM 으로 해석해 이동 계획을 만드는 지도 파싱 과제와 실로봇 실험을 제시한 프리프린트. (브리프 id ref-058 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-077",
+        "org": "DoorDet 저자(arXiv 2508.07714)",
+        "title": "DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models",
+        "published": "2025-08",
+        "url": "https://arxiv.org/abs/2508.07714",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 객체 검출기·LLM·사람 검수로 평면도의 다중 유형 문 검출 데이터셋을 반자동 구축하는 방법을 제시한 논문. (브리프 id ref-059 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md"
+        ]
+      },
+      {
+        "id": "ref-078",
+        "org": "Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S.",
+        "title": "Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans",
+        "published": "2024-08",
+        "url": "https://arxiv.org/abs/2408.01526",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 다세대 래스터 평면도의 벽·창문·계단·난간 분할과 벡터화·3D 재구성 파이프라인을 제시한 프리프린트. (브리프 id ref-060 에서 재부여)",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+          "docs/ideas/floorplan-recognition.md",
+          "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+        ]
+      }
+    ],
+    "open_question_updates": [],
+    "flow_matrix_updates": [],
+    "additional_research_requests": [
+      "참고문헌 id 재부여 확인(pipeline/publish 담당): 브리프 id ref-044~ref-060 17건을 기존 참고문헌(ref-044~ref-052 사용분)과 브리프 2026-09-25-04 사용분(ref-044~ref-059, ref-061)을 피해 ref-062~ref-078 로 순서대로 재부여했다(ref-044→ref-062, 045→063, 046→064, 047→065, 048→066, 049→067, 050→068, 051→069, 052→070, 053→071, 054→072, 055→073, 056→074, 057→075, 058→076, 059→077, 060→078). research.json·verification.json 의 출처 id 와 대응표로 연결하고, 게시 전에 ref-062~ref-078 이 비어 있는지 확인해야 한다.",
+      "patch 로 표현할 수 없는 머리 줄 갱신 요청(pipeline 담당): (1) 단계 1 페이지 H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 1건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25' 로, (2) 공간 그래프 스키마 초안 H1 을 '# 공간 그래프 스키마 초안 (v0.1)' 로, (3) 트랙 개요 상태 줄의 '마지막 트랙 실행' 을 2026-09-25 로 바꿔야 한다. 부록 R-3 이 update 에 patches 만 허용해 H2 밖의 줄을 보낼 수 없었다.",
+      "단계 3. 구현 가설 설계 페이지의 q3-02 에 관련 근거 f20(실행 2026-09-25-05)을 연결해야 한다(1차 검증 수정 지시). 이번 입력에 단계 3 페이지가 없어 다음 단계 3 실행 또는 퍼블리셔 처리로 넘긴다.",
+      "q1-02(도면에서 로봇용 지도·공간 모델을 만드는 제품 사례)가 완료 조건 1 충족에 필요하다: 아이디어 3 페이지 3절의 '제품 사례' 소절을 채울 제품·연구 사례와 입력 형식별 자동화 범위.",
+      "q2-04: CubiCasa5K 80여 범주와 AI Hub 건축 도면 데이터 클래스 목록의 엘리베이터·계단 포함 여부, 두 데이터의 상업 이용 조건(원문 열람 필요).",
+      "FloorPlanCAD 35개 범주 전체 목록을 공식 출처(논문 원문)로 확인하면 엘리베이터 범주 서술을 [추정]에서 재검토할 수 있다. 제3자 카드의 '30 object categories' 표기와의 차이도 확인이 필요하다."
+    ],
+    "fixes_applied": [
+      "참고문헌 id 충돌 — 브리프 id ref-044~ref-060 17건을 기존 참고문헌과 브리프 2026-09-25-04 사용분(ref-044~ref-059, ref-061)에 겹치지 않는 ref-062~ref-078 로 순서대로 재부여하고, 네 페이지의 각주·프런트매터 sources, reference_updates, glossary_updates 의 sources 를 같은 대응으로 통일했다(대응표는 additional_research_requests 와 reference_updates summary 에 적었다).",
+      "원문 열람 표시 — 네 페이지의 각주 정의에서 원문을 연 출처(ref-062·064·065·066·069·070·071·072, 브리프 ref-044·046·047·048·051·052·053·054)는 표시 없이, 원문 미열람 출처(ref-063·067·068·073·074·075·076·077·078, 브리프 ref-045·049·050·055·056·057·058·059·060)는 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 에 source_unopened 를 같은 값으로 넣었다.",
+      "f6 — 단계 1 페이지 3절과 아이디어 페이지 표에서 [추정]으로 쓰고 근거가 제3자 재배포 카드(ref-068, 브리프 ref-050)임을 밝혔으며 'stuff 범주' 부분을 삭제하고 FloorPlanCAD 범주 수는 공식 프로젝트 페이지(ref-066, 브리프 ref-048)의 35개만 썼다.",
+      "f7 — ArchCAD-400K 범주 예시에서 '도면 기호'를 빼고 기둥·보(구조 요소), 문·창문(비구조 요소)만 썼다.",
+      "f8 — '칠레 주거 건물 프로젝트에서 온'을 삭제하고 단계 1 페이지에 '출처 국가는 미확인'을 적었다.",
+      "f18 — 국가 목록에서 칠레를 뺐다(핀란드·일본·스위스·국내 주택).",
+      "f12 — CVC-FP 출처(ref-075, 브리프 ref-057) 발행일을 각주와 reference_updates 에서 2015 로 적고 본문에 2015년 발표를 밝혔다.",
+      "f16 — 성공률 0.96 에 GPT-4o, 연구진이 라벨을 조밀하게 덧붙인 평면도, 최대 아홉 단계 이동 과제 조건과 단일 출처 수치임을 단계 1 페이지와 아이디어 페이지에 병기했다.",
+      "f3 — README 의 '약 90% 정밀도·재현율'은 브리프 claim 밖이므로 쓰지 않았다.",
+      "f11·f13 — MSD 계단 범주 언급과 AI Hub 규모 수치는 어느 페이지에도 쓰지 않았다(아이디어 표의 AI Hub 규모 칸은 '미확인').",
+      "에스컬레이터 — 공간 그래프 스키마 초안 개념 표에 넣지 않고 6절 미해결 모델링 질문으로 두었으며 '로봇이 이용할 수 없다'는 서술은 쓰지 않았다.",
+      "온톨로지 승인 변경 — 창문(f2·f4·f10)·난간(f2·f14) 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드'(f10) 추가, 공간 노드 속성 방 유형(f3·f4·f9·f10)을 확정으로 반영하고 벽(f2·f4·f8)·문(f4·f10)·계단(f2·f14)을 확정으로 바꿨으며 엘리베이터·충전 위치 등 나머지 시드 행은 초안으로 두고 ontology_version 을 '0' → '0.1' 로 올렸다(H1 은 patch 로 바꿀 수 없어 추가 요청).",
+      "q3-02 중복 — f20 기반 새 질문을 backlog_updates 에 넣지 않고 단계 1 페이지 5절에 q3-02 관련 근거로 연결한다고 적었으며 스키마 초안 6절에 q3-02 로 연결했다. 단계 3 페이지는 입력에 없어 연결을 추가 요청으로 넘겼다.",
+      "단계 1 페이지 6절 — 완료 조건 1 '미충족', 완료 조건 2 '충족'으로 적고 표 아래 줄을 '다음 단계로 전환: 아니오(완료 조건 1 미충족; 막힌 질문 q1-02·q1-03·q1-04)'로 썼다.",
+      "아이디어 3 페이지 3절 — 브리프 finding 으로 직접 만든 데이터셋 비교표와 관련 연구·한계를 싣고 제품 사례를 '아직 조사되지 않음(q1-02)'으로 명시했다.",
+      "세부영역 반영 — 6. 지도·공간·위치 모델과 27. AI·학습·적응과 모델 운영 페이지는 고치지 않고 area_reflection_proposals 로만 냈으며, f16 을 도면 해석 방법으로만 쓰고 로컬 주행·경로 실행은 로봇 쪽 연계 대상임을 밝혔다."
+    ],
+    "track_updates": {
+      "stage_page": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "ontology_draft_version": "0.1",
+      "backlog_updates": [
+        {
+          "id": "q1-01",
+          "status": "답함",
+          "answer_link": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-01"
+        },
+        {
+          "id": "q1-05",
+          "status": "열림",
+          "answer_link": null,
+          "question": "물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가?",
+          "stage": 1,
+          "origin": "f18"
+        },
+        {
+          "id": "q2-04",
+          "status": "열림",
+          "answer_link": null,
+          "question": "AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가?",
+          "stage": 2,
+          "origin": "f17"
+        },
+        {
+          "id": "q4-05",
+          "status": "열림",
+          "answer_link": null,
+          "question": "축척 정보가 없는 래스터 평면도의 인식 결과를 로봇 지도 좌표(미터)로 옮기기 위해 축척을 어떻게 복원하는가(치수 문자 OCR, 문 폭 등 기준 요소, 현장 측정)?",
+          "stage": 4,
+          "origin": "f21"
+        }
+      ],
+      "log_entry": "답한 질문: q1-01(공개 평면도 인식 데이터셋·모델, finding f1~f21) / 새 질문: q1-05(f18), q2-04(f17), q4-05(f21) — f20 기반 질문은 q3-02 와 중복이라 등록하지 않고 q3-02 관련 근거로 연결 / 온톨로지 변경: v0 → v0.1(2026-09-25, 근거 실행 2026-09-25-05): 개념 '창문'(f2·f4·f10)·'난간'(f2·f14) 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드'(f10) 추가, '공간 노드' 속성 방 유형 추가(f3·f4·f9·f10), 시드 개념 벽(f2·f4·f8)·문(f4·f10)·계단(f2·f14) 확정; 에스컬레이터(f6) 제안은 검증 거부로 6절 질문 / 완료 조건 평가: 미충족(부족: 아이디어 3. 건축 도면 자동 인식 페이지 3절의 제품 사례 비교 q1-02; 완료 조건 2 인식 대상 요소 목록 반영은 충족) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 4건, 27. AI·학습·적응과 모델 운영 1건 / 참고문헌: 브리프 ref-044~ref-060 을 ref-062~ref-078 로 재부여 / 다음 실행 제안: q1-02, q1-03, q1-04, q1-05",
+      "overview_progress": "단계 1 진행 중 — 열린 질문 4(q1-02·q1-03·q1-04·q1-05), 답함 1(q1-01), 완료 조건 미충족"
+    },
+    "area_reflection_proposals": [
+      {
+        "area_no": 6,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "평면도 인식 접근 세 갈래: 래스터 이미지 분할·검출(DeepFloorplan 다중 작업 신경망, Kratochvila 외 U-Net 계열 분할과 벡터화), 래스터–벡터 변환(Raster-to-Vector), 구조 그래프 예측(Raster-to-Graph). 벡터 CAD 도면은 파놉틱 심볼 스포팅 과제로 다룬다(FloorPlanCAD, ArchCAD-400K). 축척 복원은 별도 과제로 보인다([추정], f21). 근거 f3·f4·f5·f9·f14·f21."
+      },
+      {
+        "area_no": 6,
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "summary": "공개 데이터셋·오픈소스: CubiCasa5K, FloorPlanCAD(주석 CC BY-NC 4.0, 2022년 초 종료), MLSTRUCT-FP, ResPlan(CC BY 4.0, 방 연결 그래프), 국내 AI Hub 건축 도면 데이터. 다수 데이터셋이 비상업 라이선스·승인제라 상용 적용 시 라이선스 검토가 필요할 것으로 보인다([추정], f19). 근거 f1·f5·f8·f10·f13·f19."
+      },
+      {
+        "area_no": 6,
+        "section": "8. 대표 연구와 자료",
+        "summary": "DeepFloorplan(ICCV 2019), Raster-to-Graph(EG 2024), DeFazio 외(2024) VLM 지도 파싱(GPT-4o·조밀 라벨 평면도·최대 아홉 단계 과제에서 성공률 0.96, 단일 출처). VLM 연구는 도면 해석 방법으로만 다루고 로컬 주행·경로 실행은 로봇 쪽 연계 대상. 27. AI·학습·적응과 모델 운영 페이지와 양쪽 연결. 근거 f4·f9·f16."
+      },
+      {
+        "area_no": 6,
+        "section": "11. 열린 질문",
+        "summary": "물류센터·창고 평면도와 충전 위치 라벨을 담은 공개 데이터셋은 이번 검색에서 찾지 못했다(부재 확인 아님, [추정] f18). 엘리베이터 라벨은 벡터 CAD 데이터셋에서만 제3자 자료로 확인됐다([추정] f17). 트랙 백로그 q1-05·q2-04 와 연결."
+      },
+      {
+        "area_no": 27,
+        "section": "8. 대표 연구와 자료",
+        "summary": "도면 해석(교차 규칙상 6. 지도·공간·위치 모델에 적용되는 방법): 다중 작업 신경망(DeepFloorplan), 자기회귀 그래프 예측(Raster-to-Graph), 검출기·LLM·사람 검수를 잇는 반자동 주석 구축(DoorDet, 저자 의견), VLM 평면도 파싱(DeFazio 외 2024). 6. 지도·공간·위치 모델 페이지와 양쪽 연결. 근거 f4·f9·f15·f16."
+      }
+    ]
+  },
+  "ttft_ms": 27432,
+  "type": "result",
+  "duration_ms": 252870,
+  "uuid": "bb1e7352-c189-45fc-b1ba-ca2a79e3ebcc",
+  "ttft_stream_ms": 2751,
+  "time_to_request_ms": 67,
+  "first_content_frame_ms": 2751,
+  "time_to_request_from_spawn_ms": 4512782,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790300366328.0403,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 254.6
+}
