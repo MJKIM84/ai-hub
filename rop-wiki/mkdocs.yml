@@ -172,6 +172,12 @@ nav:
       - 2. 공정·워크플로 모델링 — 핵심 개념과 용어: topics/2026/2026-09-25-area02-s4.md
       - 2. 공정·워크플로 모델링 — 열린 질문: topics/2026/2026-09-25-area02-s11.md
       - 2. 공정·워크플로 모델링 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area02-s10.md
+      - 1. 주문·업무 시스템 연계 — 대표 연구와 자료: topics/2026/2026-09-25-area01-s8.md
+      - 1. 주문·업무 시스템 연계 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area01-s7.md
+      - 1. 주문·업무 시스템 연계 — 대표 접근법과 기술: topics/2026/2026-09-25-area01-s6.md
+      - 1. 주문·업무 시스템 연계 — 핵심 개념과 용어: topics/2026/2026-09-25-area01-s4.md
+      - 1. 주문·업무 시스템 연계 — 왜 중요한가: topics/2026/2026-09-25-area01-s3.md
+      - 1. 주문·업무 시스템 연계 — 열린 질문: topics/2026/2026-09-25-area01-s11.md
   - 용어집:
     - glossary/index.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
@@ -203,6 +209,7 @@ nav:
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
+    - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
@@ -342,6 +349,21 @@ nav:
     - ref-122 — OCEL (Object-Centric Event Log) 2.0 Specification: references/ref-122.md
     - ref-123 — SCOR Model — Fulfill F1.3 Pick Product: references/ref-123.md
     - ref-124 — 스마트물류센터 인증제 안내: references/ref-124.md
+    - ref-125 — rmf_api_msgs — rmf_api_msgs/schemas/task_request.json: references/ref-125.md
+    - ref-126 — rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json: references/ref-126.md
+    - ref-127 — rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.json: references/ref-127.md
+    - ref-128 — rmf_api_msgs — rmf_api_msgs/schemas/rewind_task_request.json: references/ref-128.md
+    - ref-129 — B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd: references/ref-129.md
+    - ref-130 — UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv): references/ref-130.md
+    - 'ref-131 — OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (OPC 10031-4)': references/ref-131.md
+    - ? 'ref-132 — Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations'
+      : references/ref-132.md
+    - 'ref-133 — Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?': references/ref-133.md
+    - ref-134 — To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter: references/ref-134.md
+    - ref-135 — SCOR Digital Standard — Introduction and Front Matter (SCOR Version 14.0, 2025): references/ref-135.md
+    - ? 'ref-136 — Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector'
+      : references/ref-136.md
+    - ref-137 — 물류센터 관리시스템에 로봇 연동…"물류 자동화 새 표준 만든다": references/ref-137.md
     - ? 'ref-139 — ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions'
       : references/ref-139.md
     - 'ref-140 — SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment': references/ref-140.md

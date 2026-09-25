@@ -61,14 +61,44 @@
       "models": [
         "claude-opus-5-5"
       ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 146705,
+      "cache_read_input_tokens": 63017,
+      "output_tokens": 43543,
+      "cost_usd": 2.0571,
+      "seconds": 291.4,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2-retry1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 125541,
+      "cache_read_input_tokens": 76154,
+      "output_tokens": 3480,
+      "cost_usd": 1.0892,
+      "seconds": 33.4,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 60,
-    "cache_creation_input_tokens": 613627,
-    "cache_read_input_tokens": 6300323,
-    "output_tokens": 97194,
-    "cost_usd": 8.9658,
-    "calls": 4
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 885873,
+    "cache_read_input_tokens": 6439494,
+    "output_tokens": 144217,
+    "cost_usd": 12.1121,
+    "calls": 6
   }
 }

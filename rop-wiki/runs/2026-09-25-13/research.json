@@ -17,7 +17,7 @@
     "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준) 비어 있음",
     "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
     "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문은 oq-002 1건, 정정 요청 없음",
-    "이전 실행 2026-09-25-08 이 같은 영역을 조사했으나 그 출처(ref-138~ref-144 제안분)가 참고문헌 목록에 없어 게시되지 않은 것으로 보여, 원문을 다시 열어 새 id 로 재조사함"
+    "이전 실행 2026-09-25-08 이 같은 영역을 조사했으나 그 출처(ref-138~ref-187 제안분)가 참고문헌 목록에 없어 게시되지 않은 것으로 보여, 원문을 다시 열어 새 id 로 재조사함"
   ],
   "research_questions": [
     "출고 우선순위가 바뀌면 이미 진행 중인 로봇 작업을 어떻게 바꿀까? [분류원문]",
@@ -132,9 +132,9 @@
       "claim": "Open-RMF API 는 이미 요청한 작업에 대해 task_id 로 지정하는 취소 요청(cancel_task_request), 중단 요청(interrupt_task_request), 지정한 단계의 처음부터 다시 시작시키는 되감기 요청(rewind_task_request, phase_id 필수)을 별도 스키마로 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-139",
-        "ref-140",
-        "ref-141"
+        "ref-182",
+        "ref-183",
+        "ref-184"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -176,7 +176,7 @@
       "claim": "MESA International 의 B2MML 거래 프로파일 스키마(판 0701, 2023, ANSI/ISA-95.00.02-2018·95.00.05-2018 기반)는 거래 동사로 NOTIFY, GET, PROCESS, CHANGE, CANCEL, CONFIRM, SYNC ADD, SYNC CHANGE, SYNC DELETE 와 확장용 Other 를 정의한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-142"
+        "ref-185"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,7 +190,7 @@
       "claim": "OPC Foundation 공식 노드셋의 OPC UA for ISA-95 Job Control(판 2.0.0, 2024-01-31)은 작업 지시 처리에 Store, StoreAndStart, Start, RevokeStart, Pause, Resume, Stop, Update, Abort, Cancel, Clear 메서드와 작업 응답 조회 메서드를 두고, 작업 지시 데이터형과 작업 응답 데이터형을 함께 정의한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-143"
+        "ref-186"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -204,7 +204,7 @@
       "claim": "OPC UA for ISA-95 Job Control 명세는 Pause 로 시작된 작업 지시를 Interrupted 로, Resume 으로 다시 Running 으로 바꾸고, Abort 는 실행 중·중단·시작 전(AllowedToStart, NotAllowedToStart) 작업 지시 모두에 쓸 수 있어 Aborted 로 바꾸며, Aborted·Ended 가 된 작업 지시는 Clear 로 지운다.",
       "tag": "사실",
       "source_ids": [
-        "ref-144"
+        "ref-187"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -234,7 +234,7 @@
       "claim": "ASCM 의 SCOR Digital Standard 는 공급망을 Orchestrate, Plan, Order, Source, Transform, Fulfill, Return 프로세스로 나누고, Order 를 위치·결제·가격·이행 상태 등 주문 데이터를 포함한 고객 구매 활동으로, Fulfill 을 배송 일정·피킹·포장·출하 등 주문 이행 활동으로 정의한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-147"
+        "ref-190"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -249,7 +249,7 @@
       "claim": "Yu·Srinivas(2025)는 작업자가 피킹하고 AMR 이 운반하는 협업 동적 주문 피킹 문제(CHR-DOPP)에서 새 주문을 진행 중인 AMR·작업자 피킹 사이클에 반영하는 개입형 전략 두 가지(AMR 가용성·근접도 기반 반응형, 진행 중 사이클 교란을 줄이는 조건부형)를 제안하고, 개입 없는 협업 시스템보다 평균 주문 완료 시간과 평균 총 지연이 크게 좋았다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-145"
+        "ref-188"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -279,7 +279,7 @@
       "claim": "Gallien·Weber(2010)는 미국 온라인 소매업체 자료로 자동 분류기가 있는 창고의 웨이브리스(연속) 출고 지시 모델을 검증하고, 제안한 웨이브리스 정책이 모든 시나리오에서 가장 좋은 웨이브 정책 이상의 처리량을 더 낮은 교착(gridlock) 확률로 냈다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-146"
+        "ref-189"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -294,7 +294,7 @@
       "claim": "Applied Sciences(2025) 게재 사례 연구는 자동차 부문 GreenAuto 프로젝트에서 여러 제조사의 AGV·AMR 을 한 지도에서 감시·관리하는 플릿 관리 소프트웨어를 만들고, MES·ERP 에는 REST API 로 정형 데이터를, 로봇 이벤트는 MQTT 로 발행하는 구조를 두며 VDA 5050 연동은 향후 과제로 설계했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-148"
+        "ref-191"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -309,7 +309,7 @@
       "claim": "2025년 1월 기사에 따르면 통합 물류 플랫폼 운영사 테크타카는 자사 WMS 와 플로틱의 오더 피킹용 자율주행로봇 30대를 연동하는 자동화 모델을 남이천 물류센터에서 실증하는 협력을 발표했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-149"
+        "ref-192"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -326,9 +326,9 @@
       "source_ids": [
         "ref-031",
         "ref-138",
-        "ref-139",
-        "ref-140",
-        "ref-141"
+        "ref-182",
+        "ref-183",
+        "ref-184"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -342,9 +342,9 @@
       "claim": "상위 시스템의 변경·취소 지시(B2MML CHANGE·CANCEL, OPC UA Job Control Update·Pause·Abort)는 로봇 쪽 주문 갱신·일시정지·취소·재지시로 옮겨야 하지만, 취소할 수 없는 동작은 끝까지 수행되고 base 는 바뀌지 않으므로 번역이 일대일이 아니며, 이미 화물을 실은 뒤라면 되돌림 작업이 추가로 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-142",
-        "ref-143",
-        "ref-144",
+        "ref-185",
+        "ref-186",
+        "ref-187",
         "ref-031"
       ],
       "cross_checked": false,
@@ -360,10 +360,10 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-143",
+        "ref-186",
         "ref-138",
         "ref-111",
-        "ref-148"
+        "ref-191"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -377,8 +377,8 @@
       "claim": "연계 대상: 주문 접수·출고 지시 방식(웨이브·웨이브리스)과 출고 우선순위 결정은 ERP·WMS·WES 같은 상위 업무 시스템의 몫이고, ROP 는 그 결과를 작업 요청의 우선순위·시작 시각·마감 제약으로 받아 로봇 작업으로 바꾸고 진행·완료·취소 결과를 되돌리는 경계에 서는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-147",
-        "ref-146",
+        "ref-190",
+        "ref-189",
         "ref-002",
         "ref-138"
       ],
@@ -395,7 +395,7 @@
       "claim": "동적 피킹 연구(개입형 전략, 재최적화)가 진행 중 사이클에 새 주문을 반영할 때 완료 시간·지연이 개선됨을 보이므로, ROP 는 대기열 수준 재정렬만이 아니라 실행 중 작업의 수정도 지원하되 교란 비용을 조건으로 판단하는 구조가 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-145",
+        "ref-188",
         "ref-120"
       ],
       "cross_checked": false,
@@ -454,7 +454,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-139",
+      "id": "ref-182",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json",
       "published": null,
@@ -469,7 +469,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-140",
+      "id": "ref-183",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.json",
       "published": null,
@@ -484,7 +484,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-141",
+      "id": "ref-184",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_api_msgs — rmf_api_msgs/schemas/rewind_task_request.json",
       "published": null,
@@ -529,7 +529,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-142",
+      "id": "ref-185",
       "org": "MESA International",
       "title": "B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd",
       "published": "2023",
@@ -544,7 +544,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-143",
+      "id": "ref-186",
       "org": "OPC Foundation",
       "title": "UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv)",
       "published": "2024-01-31",
@@ -559,7 +559,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-144",
+      "id": "ref-187",
       "org": "OPC Foundation / ISA",
       "title": "OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (OPC 10031-4)",
       "published": null,
@@ -574,7 +574,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-145",
+      "id": "ref-188",
       "org": "Yu, S., & Srinivas, S.",
       "title": "Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations",
       "published": "2025",
@@ -604,7 +604,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-146",
+      "id": "ref-189",
       "org": "Gallien, J., & Weber, T. G.",
       "title": "To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter",
       "published": "2010",
@@ -619,7 +619,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-147",
+      "id": "ref-190",
       "org": "ASCM",
       "title": "SCOR Digital Standard — Introduction and Front Matter (SCOR Version 14.0, 2025)",
       "published": "2025",
@@ -634,7 +634,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-148",
+      "id": "ref-191",
       "org": "Applied Sciences(MDPI) 게재 논문 저자(미확인)",
       "title": "Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector",
       "published": "2025",
@@ -649,7 +649,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-149",
+      "id": "ref-192",
       "org": "머니투데이",
       "title": "물류센터 관리시스템에 로봇 연동…\"물류 자동화 새 표준 만든다\"",
       "published": "2025-01",
@@ -711,10 +711,10 @@
     "unverified": [
       "모든 finding 교차 확인 실패: 규격마다 발행 기관 한 곳의 원문만 있고(Open-RMF 스키마 4건은 같은 저장소), 논문은 단일 출처",
       "f3 VDA 5050 order 메시지 우선순위 필드 부재는 열람 도구 응답 기준이며 order.schema 직접 대조 안 함",
-      "f13 OPC 10031-4 상태 전이는 검색 요약만 확인(ref-144 원문 미열람), 노드셋 CSV 로는 메서드 이름만 확인",
+      "f13 OPC 10031-4 상태 전이는 검색 요약만 확인(ref-187 원문 미열람), 노드셋 CSV 로는 메서드 이름만 확인",
       "f14·f15·f16·f17·f18·f19 원문 미열람(검색 요약 범위만 사용)",
       "f20 국내 실증은 발표 기사뿐이며 결과 미확인",
-      "ref-120 제1저자 이름 전체와 ref-148 저자 미확인",
+      "ref-120 제1저자 이름 전체와 ref-191 저자 미확인",
       "ref-031·ref-138~ref-110 발행일 미확인",
       "TMS 연계(운송 마감·도크 배정)와 MES 생산 지시 연계는 1차 자료를 충분히 찾지 못함"
     ],
@@ -726,6 +726,6 @@
       "queries": 20,
       "sources": 15
     },
-    "limits": "fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 저장소 원문(VDA 5050 main 명세, Open-RMF rmf_api_msgs 스키마 5건과 task_new 원본, B2MML 거래 프로파일 스키마, OPC UA ISA-95 Job Control 노드셋)은 열어 fetched=true 로 표시했다. ISA 보도자료·OPC 온라인 참조·ASCM 문서·논문 4건·기사는 원문 미열람(신뢰도 상한 medium, 기사 low). 교차 확인 0건. 검색 20회/30, 신규 출처 15건/15(ref-138~ref-149, next_ref_id 기준)로 출처 상한에 도달해 Ceven·Gue(2017) 웨이브 출고 시각 연구, Open-RMF 입찰(task.md) 문서, SYNAOS 벤더 글(WMS/ERP–VDA 5050 번역 주장), 씨메스 벤더 블로그(WES 우선순위 재정렬 주장)는 넣지 못했다. 재사용 출처 2건(ref-031, ref-002). 이전 실행 2026-09-25-08 이 같은 영역을 조사했으나 그 출처 id 가 참고문헌 목록에 없어 게시되지 않은 것으로 보고 원문을 다시 열어 새 id 로 기록했다(같은 URL 이 이전 브리프의 ref-138~ref-144 제안과 겹치므로 퍼블리셔 확인 필요). 한국 자료는 기사 1건(발표 단계)뿐이며 학술·공공 자료는 한국어 검색 4회에서 찾지 못했다. oq-002 는 해결하지 못했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다."
+    "limits": "fetch_mode mirror_only(web_fetch_available: false): raw.githubusercontent.com 공식 저장소 원문(VDA 5050 main 명세, Open-RMF rmf_api_msgs 스키마 5건과 task_new 원본, B2MML 거래 프로파일 스키마, OPC UA ISA-95 Job Control 노드셋)은 열어 fetched=true 로 표시했다. ISA 보도자료·OPC 온라인 참조·ASCM 문서·논문 4건·기사는 원문 미열람(신뢰도 상한 medium, 기사 low). 교차 확인 0건. 검색 20회/30, 신규 출처 15건/15(ref-138~ref-192, next_ref_id 기준)로 출처 상한에 도달해 Ceven·Gue(2017) 웨이브 출고 시각 연구, Open-RMF 입찰(task.md) 문서, SYNAOS 벤더 글(WMS/ERP–VDA 5050 번역 주장), 씨메스 벤더 블로그(WES 우선순위 재정렬 주장)는 넣지 못했다. 재사용 출처 2건(ref-031, ref-002). 이전 실행 2026-09-25-08 이 같은 영역을 조사했으나 그 출처 id 가 참고문헌 목록에 없어 게시되지 않은 것으로 보고 원문을 다시 열어 새 id 로 기록했다(같은 URL 이 이전 브리프의 ref-138~ref-187 제안과 겹치므로 퍼블리셔 확인 필요). 한국 자료는 기사 1건(발표 단계)뿐이며 학술·공공 자료는 한국어 검색 4회에서 찾지 못했다. oq-002 는 해결하지 못했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다."
   }
 }

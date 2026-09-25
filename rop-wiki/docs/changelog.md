@@ -54,6 +54,30 @@ version: 1
 | 2026-09-25-14 | 생성 | [docs/glossary/littles-law.md](glossary/littles-law.md) | 용어집 항목 리틀의 법칙 |
 | 2026-09-25-14 | 생성 | [docs/glossary/process-mining.md](glossary/process-mining.md) | 용어집 항목 프로세스 마이닝 |
 | 2026-09-25-14 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-13 | 갱신 | [docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 섹션 3~11 신규 작성(자동 분리 반영). 2차 수정: 각주 ref-138·ref-182 → ref-110·ref-111, 5절 시작 조건·9절 마지막 문장 사실/추정 분리, 9절 표 태그 추가, 7·8절 첫 문장 목록 서술로 변경, sources 에서 미인용 ref-131 제외 |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s4.md](topics/2026/2026-09-25-area01-s4.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "4. 핵심 개념과 용어" 절. 2차 수정: 각주 ref-182 → ref-111 |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s8.md](topics/2026/2026-09-25-area01-s8.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "8. 대표 연구와 자료" 절. 2차 수정: 첫 문장을 '이번 조사에서 확인한 자료는 … 이다'로 변경 |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s6.md](topics/2026/2026-09-25-area01-s6.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "6. 대표 접근법과 기술" 절. 2차 수정: 각주 ref-138 → ref-110, 번역 절 마지막 문장 사실/추정 분리 |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s11.md](topics/2026/2026-09-25-area01-s11.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "11. 열린 질문" 절(2차 수정 없음) |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s7.md](topics/2026/2026-09-25-area01-s7.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "7. 관련 표준·프레임워크·오픈소스" 절. 2차 수정: 각주 ref-138·ref-182 → ref-110·ref-111, 첫 문장 목록 서술로 변경 |
+| 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s3.md](topics/2026/2026-09-25-area01-s3.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "3. 왜 중요한가" 절(717자)을 옮겼다 |
+| 2026-09-25-13 | 요약 | [docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 1. 주문·업무 시스템 연계: 3~11절 신규 작성: 로봇 인터페이스의 주문 갱신·취소·일시정지·되감기, ISA-95 작업 지시·B2MML 거래 동사, 동적 주문 피킹 연구, 피킹 → 출하 시나리오, ROP 경계, 새 열린 질문 3건(2차 수정: 각주 ref-110·ref-111 정정, 사실·추정 분리) |
+| 2026-09-25-13 | 생성 | [docs/references/ref-125.md](references/ref-125.md) | 참고문헌 ref-125 등록: rmf_api_msgs — rmf_api_msgs/schemas/task_request.json |
+| 2026-09-25-13 | 생성 | [docs/references/ref-126.md](references/ref-126.md) | 참고문헌 ref-126 등록: rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json |
+| 2026-09-25-13 | 생성 | [docs/references/ref-127.md](references/ref-127.md) | 참고문헌 ref-127 등록: rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.j… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-128.md](references/ref-128.md) | 참고문헌 ref-128 등록: rmf_api_msgs — rmf_api_msgs/schemas/rewind_task_request.json |
+| 2026-09-25-13 | 생성 | [docs/references/ref-129.md](references/ref-129.md) | 참고문헌 ref-129 등록: B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd |
+| 2026-09-25-13 | 생성 | [docs/references/ref-130.md](references/ref-130.md) | 참고문헌 ref-130 등록: UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodese… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-131.md](references/ref-131.md) | 참고문헌 ref-131 등록: OPC UA for ISA-95 - Part 4: Job Control - 6.2 ObjectTypes (O… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-132.md](references/ref-132.md) | 참고문헌 ref-132 등록: Collaborative Human–Robot Teaming for Dynamic Order Picking:… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-133.md](references/ref-133.md) | 참고문헌 ref-133 등록: Picking Operations in Warehouses With Dynamically Arriving O… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-134.md](references/ref-134.md) | 참고문헌 ref-134 등록: To Wave or Not to Wave? Order Release Policies for Warehouse… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-135.md](references/ref-135.md) | 참고문헌 ref-135 등록: SCOR Digital Standard — Introduction and Front Matter (SCOR… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-136.md](references/ref-136.md) | 참고문헌 ref-136 등록: Integrated Fleet Management of Mobile Robots for Enhancing I… |
+| 2026-09-25-13 | 생성 | [docs/references/ref-137.md](references/ref-137.md) | 참고문헌 ref-137 등록: 물류센터 관리시스템에 로봇 연동…"물류 자동화 새 표준 만든다" |
+| 2026-09-25-13 | 갱신 | [docs/glossary/isa-95.md](glossary/isa-95.md) | 용어집 항목 작업 지시 |
+| 2026-09-25-13 | 생성 | [docs/glossary/waveless-order-release.md](glossary/waveless-order-release.md) | 용어집 항목 웨이브리스 출고 지시 |
+| 2026-09-25-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-10 | 갱신 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s8.md](topics/2026/2026-09-25-area03-s8.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약 문장 각주에 ref-097·ref-103 추가 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s6.md](topics/2026/2026-09-25-area03-s6.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 드리프트 문장 삭제, 태그 없는 주장 3문장에 태그·각주 |

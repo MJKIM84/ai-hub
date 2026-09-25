@@ -22,7 +22,7 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 1 | 0 | 0 | 18 | 0 | 0 | 19 |
+| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -36,7 +36,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | seed | — | 2026-09-24 | 1 |
+| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | published | medium | 2026-09-25 | 2 |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | 2026-09-25 | 2 |
 | [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | 2026-09-25 | 2 |
 | [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | published | medium | 2026-09-25 | 2 |
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 10회 중 최종 통과 10회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 10
-- 2차 검증 판정: 통과 10
+- 실행 11회 중 최종 통과 11회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 11
+- 2차 검증 판정: 통과 11
 
 ### 반려·보류 건수
 
@@ -110,27 +110,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 50 |
-| 오픈소스 문서 | 34 |
-| 표준 | 31 |
+| 논문 | 54 |
+| 오픈소스 문서 | 38 |
+| 표준 | 35 |
 | 정부·연구기관 | 7 |
-| 기사 | 2 |
+| 기사 | 3 |
 | 업계 보고서 | 2 |
 | 벤더 문서 | 1 |
 
-신뢰도: medium 98건, high 27건, low 2건
+신뢰도: medium 110건, high 27건, low 3건
 
 ### 물류 흐름 매트릭스 채움률
 
-- 22/42 칸 (52%) — [흐름 매트릭스](flow-matrix.md)
+- 23/42 칸 (55%) — [흐름 매트릭스](flow-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-24 | 1 | seed |
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-24 | 1 | seed |
 | [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 2026-09-24 | 1 | seed |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 2026-09-24 | 1 | seed |
 | [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 2026-09-24 | 1 | seed |
+| [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->
