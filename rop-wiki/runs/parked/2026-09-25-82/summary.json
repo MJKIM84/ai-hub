@@ -1,0 +1,114 @@
+{
+  "run_id": "2026-09-25-82",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 6,
+    "area_name": "6. 지도·공간·위치 모델",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "floorplan-recognition",
+    "stage": 5,
+    "question_ids": [
+      "q5-02"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": null,
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 15,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 30,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 575.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": null,
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 19:46:50 KST",
+  "usage": {
+    "input_tokens": 54,
+    "cache_creation_input_tokens": 865605,
+    "cache_read_input_tokens": 9233584,
+    "output_tokens": 51720,
+    "cost_usd": 10.8863,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.2283,
+        "output_tokens": 28394,
+        "cache_read_input_tokens": 7188895,
+        "cache_creation_input_tokens": 425219
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.5733,
+        "output_tokens": 22334,
+        "cache_read_input_tokens": 2024405,
+        "cache_creation_input_tokens": 438827
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 0.0,
+        "output_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": null,
+  "fetched_sources": 1,
+  "cross_checked_findings": 0,
+  "park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+}

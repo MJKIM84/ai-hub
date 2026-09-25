@@ -1,0 +1,709 @@
+{
+  "run_id": "2026-09-25-82",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 6,
+    "area_name": "6. 지도·공간·위치 모델",
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "gaps": [
+    "단계 5 질문 q5-02 열림(target.json 지정, CLI 지정 질문 id). 단계 5 페이지 3절에 q5-02 소제목 없음",
+    "완료 조건: 검증 절차(현장 모델링 시간 단축 측정)가 아이디어 3. 건축 도면 자동 인식 6절에 없음(6절에는 평가 지표 소절과 q1-04 선행 근거만 있음)",
+    "완료 조건: 가설 판정표(q5-03)와 실험 계획이 없음 — 이번 실행 밖",
+    "아이디어 3. 건축 도면 자동 인식 6절 '측정 대상 후보: 반복 작업 목록'은 무엇을 셀지(작업 목록)만 있고 어떻게 잴지(시간·수정 횟수의 정의와 비교 설계)가 비어 있음",
+    "21. 온보딩·설정·현장 시운전 섹션 6에 시운전·설정 공수를 수작업 대비로 측정하는 방법 근거 없음",
+    "23. 시험·형식 검증·벤치마크 섹션 6에 자동 생성 결과의 사람 수정 노력(편집 비용·클릭 수) 지표 근거 없음"
+  ],
+  "research_questions": [
+    "제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [분류원문]",
+    "새 제조사나 새 물류센터를 추가할 때 반복 작업을 얼마나 줄일까? [분류원문]",
+    "q5-02 현장 모델링 시간 단축 효과를 어떤 기준(수작업 대비 소요 시간, 수정 횟수)으로 측정하는가?",
+    "도면 인식·벡터화 결과를 사람이 고치는 수고를 정확도 지표와 따로 재는 지표(편집 비용, 클릭 수, 수정 시간)에는 무엇이 있는가? (단계 5 페이지 3절, 23. 시험·형식 검증·벤치마크, 27. AI·학습·적응과 모델 운영 겨냥)",
+    "수작업 대비 '자동 생성+사람 보정'의 소요 시간 비교는 Scan-to-BIM·도면→BIM·가상 시운전 연구에서 어떻게 설계·보고되며 국내 실증이 있는가? (21. 온보딩·설정·현장 시운전, 한국 자료 우선 규칙)",
+    "수정 횟수와 실제 소요 시간은 얼마나 일치하며, 현장 측정이 어려울 때 작업 시간을 추정하는 모델은 무엇인가? (아이디어 3. 건축 도면 자동 인식 6절 검증 절차 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "He Zhang(arXiv 2608.25608)은 래스터 평면도 벡터화 결과를 사람이 고치는 데 드는 일을 벽·방·개구부에 대한 편집기 연산 유형별 비용으로 채점하는 편집 비용 지표를 제시하고, 정밀도·재현율·F1 이 수정 노력을 좌우하는 실패 유형에 둔감하다고 보았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-730"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 편집 비용은 초안을 고치는 데 필요한 사람의 일로 점수를 매기며, 연산별 분해로 한 방식이 평면도당 벽 삭제 약 3회, 개구부 생성·삭제 약 6회를 더 필요로 함을 보였다(CubiCasa5K 등, 저자 단독 프리프린트).",
+      "as_of": "2026-08",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f2",
+      "claim": "Opiela·Hrehová(IPIN-WiP 2023)는 평면도 이미지에서 벽·문·구역을 주석해 지도 모델을 만드는 작업에서, IPIN 2019 대회 지도를 숙련 사용자가 수작업으로 주석하는 데 40분이 걸린 반면 자동 주석 뒤 수정에는 5분이 걸렸다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-731"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 수작업 주석 40분 대신 5분의 수정만 필요했다(IPIN 2019 대회 지도 1건, 저자 보고, 자동 처리 시간 포함 여부 미확인).",
+      "as_of": "2023",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "Polygon-RNN(CVPR 2017)과 Polygon-RNN++(CVPR 2018)는 반자동 다각형 주석의 사람 노력을, 예측 꼭짓점이 정답에서 임계값 이상 벗어날 때마다 고치는 가상 주석자를 두고 그 수정 횟수(클릭 수)로 재며, Polygon-RNN++ 는 원 모델보다 클릭을 약 50% 줄였다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-733",
+        "ref-732"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 생성 다각형의 IoU 와 예측을 고치는 데 필요한 주석자 클릭 수 두 가지로 평가하며, 수정은 임계값을 넘는 꼭짓점마다 시뮬레이션한다(Cityscapes 조건, 저자 보고).",
+      "as_of": "2018-03",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "대화형 분할 연구의 NoC@90 지표는 목표 IoU 90% 에 이르는 데 필요한 평균 사용자 클릭 수로 정의되며, 보통 최대 클릭 수(예: 20회)를 상한으로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-744"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: NoC@x 는 관행적 85%·90% IoU 임계값에 도달하는 데 드는 평균 클릭 수이며 NoC20@90 처럼 상한을 둔다.",
+      "as_of": "2020-03",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "A-Scan2BIM(BMVC 2023)은 전문 건축가가 Revit 에서 수행한 Scan-to-BIM 모델링 과정을 편집 연산 이력으로 기록한 데이터셋(16개 장면, 89시간)을 만들고, 복원 품질 지표와 함께 연산 순서의 자연스러움과 다음 벽 예측 정확도를 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-734",
+        "ref-735"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README(원문 열람)는 reconstruction metrics·order metrics·next wall prediction 정확도를 평가 항목으로 둔다. 89시간·16장면은 논문 검색 요약 기준이며 README 에서는 확인되지 않았다.",
+      "as_of": "2023-11",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f6",
+      "claim": "기계번역 분야의 HTER(Snover 외, 2006)는 시스템 출력과 사람이 최소한으로 고친 결과 사이의 삽입·삭제·치환·이동 편집 수로 사후 편집 노력을 잰다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-736"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: HTER 는 MT 출력과 그 최소 사후 편집본 사이의 편집 거리(단어 삽입·삭제·치환, 단어열 이동)이다.",
+      "as_of": "2006-08",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "기계번역 사후 편집 연구는 편집 노력을 시간적·기술적(편집 수)·인지적 노력의 세 차원(Krings 2001)으로 나누며, 세 차원의 상관이 약해 HTER 같은 편집 수 지표만으로는 노력을 다 잡지 못한다고 보고하고, 사후 편집 시간을 인지적 노력의 척도로 쓰는 연구도 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-738",
+        "ref-737"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 세 차원은 밀접하지만 상관이 약하며 HTER 는 사후 편집에 드는 노력을 다 담지 못한다(EAMT 2020); 사후 편집 시간을 인지적 노력 척도로 제안(AMTA 2012 워크숍).",
+      "as_of": "2020-11",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "키 입력 수준 모델(KLM, Card·Moran·Newell 1983)은 숙련 사용자가 오류 없이 과제를 수행하는 시간을 키 입력·포인팅·손 이동·정신적 준비·시스템 응답 같은 연산자 시간의 합으로 예측한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-739"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 요약 기준: 사용자가 해야 할 키 입력 수준 동작의 순서를 나열하고 각 동작 시간을 더해 실행 시간을 예측한다(숙련자·무오류 가정). 확인한 사본은 강의 사이트 게재본(발행일 미확인, 확인일 기준).",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f9",
+      "claim": "Beinschob 외(2017)는 새 AGV 시스템 설치에서 벽·문·랙 같은 기반 요소의 정밀 측정, 적재·하역 지점(운영 지점) 계산, 대개 수작업인 경로망 설계가 시간이 많이 드는 작업이라고 보고 이를 반자동화했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-217"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 새 AGV 시스템 구축은 기반 요소의 정밀 측정과 운영 지점 계산이 필요해 매우 시간이 들고, 경로망 설계는 보통 수작업이다. (재인용: 2026-09-25-22)",
+      "as_of": "2017",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "도면 인식·선–문자 추출로 BIM 을 자동 생성한 연구(JAABE, 2020)는 8,500㎡ 건물에서 기본 BIM 생성 15분과, 그 전에 필요한 2D CAD 도면 수작업 준비 약 1시간을 따로 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-742"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 8,500㎡ 건물 사례에서 기본 BIM 15분, BIM 생성 전 2D CAD 도면 수작업 준비 평균 약 1시간(저자 보고, 저자 미확인). 두 번째 검색 요약에서는 수치가 재확인되지 않았다.",
+      "as_of": "2020",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f11",
+      "claim": "2024 년 연구는 BIM 기반 시설 관리를 위한 as-built 모델링에서 점군을 BIM 소프트웨어로 수작업 모델링하는 방식과 AI 기반 반자동 모델링을 시간과 투입 인력 면에서 비교하는 시간–편익 분석을 수행했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-743"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 요약 기준: 수작업 모델링은 정밀하지만 시간이 많이 들고, 반자동 모델링은 시간과 인력 요구를 줄일 수 있다고 비교했다(수치·비교 조건 미확인, 저자 미확인).",
+      "as_of": "2024-06",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f12",
+      "claim": "가상 시운전 연구 36건을 검토한 2026 년 구조적 리뷰는 이 연구들이 기술적으로는 발전했지만 그 능력을 검증된 시운전 결과(시운전 시간 등)와 일관되게 연결한 근거는 부족하다고 평가했다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-740"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: 검토한 연구들은 상호운용·동기화·행동 모델링에서 진보했으나 이를 검증된 시운전 결과에 묶는 일관된 근거를 주지 못한다(36건 구조적 리뷰, 저자 미확인).",
+      "as_of": "2026",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f13",
+      "claim": "국내 연구(박준우 외, KIBIM Magazine 11(4), 2021)는 딥러닝·매개변수 알고리즘·Dynamo 를 활용한 Scan-to-BIM 자동화로 강원소방학교 건물 단위 BIM 모델 생성을 실증했으며, 수작업 대비 소요 시간을 보고했는지는 확인하지 못했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-741"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약 기준: KIBIM Magazine 2021, 11(4), 53-62, 키워드 Scan-to-BIM·자동화·딥러닝·매개변수 알고리즘·Dynamo·공간 관계. 시간 비교 수치 미확인.",
+      "as_of": "2021",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f14",
+      "claim": "q5-02 에 대해 확인한 자료를 이 위키가 묶으면, 현장 모델링 시간 단축은 같은 도면·현장을 두 조건(수작업 기준 대 자동 생성+사람 보정)으로 처리해 (1) 시간: 입력 준비·자동 처리·사람 보정 시간을 단계별로 따로 기록한 총 소요 시간, (2) 수정: 요소 유형(벽·문·엘리베이터·계단·충전 위치·목적지)별 추가·삭제·이동 편집 연산 수와 가중 편집 비용, (3) 결과 품질: 보정 후 결과가 q5-01 의 합격 기준을 만족하는지를 함께 재는 구성이 근거가 가장 많은 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-730",
+        "ref-731",
+        "ref-732",
+        "ref-736",
+        "ref-738",
+        "ref-742",
+        "ref-217"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 종합이며 단일 출처는 없다. 편집 비용(f1)·클릭 수(f3)·HTER(f6)는 편집 수, 40분 대 5분(f2)·15분+준비 1시간(f10)은 단계별 시간 보고의 예다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "편집 수 지표와 실제 소요 시간의 상관이 약하다는 기계번역 연구와 F1 이 수정 노력에 둔감하다는 평면도 연구를 보면, 수정 횟수는 소요 시간의 대용치로 쓰지 말고 시간과 함께 기록하며, 편집 비용의 연산별 가중치는 측정한 연산별 평균 시간으로 보정해야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-738",
+        "ref-737",
+        "ref-730"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 추정: 기계번역 결과(f7)를 도면 보정 작업에 옮긴 것이며, 도면 보정에서 편집 수와 시간의 상관을 잰 자료는 찾지 못했다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "현장 수작업 기준 시간을 실측하기 어려우면, 수작업과 보정 작업의 편집 연산 순서를 나열해 키 입력 수준 모델로 숙련자 무오류 시간을 추정하는 방법을 보조로 쓸 수 있어 보이나, 이 추정은 판단·확인 시간과 오류 수정 시간을 빼므로 실측을 대신하지 못할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-739",
+        "ref-734"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 추정: KLM 은 숙련·무오류 가정(f8)이며, 실제 전문가 편집 이력 데이터셋(f5)은 연산 순서를 기록하는 방식의 예다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "이종 제조사를 연결하는 ROP 의 측정 대상은 도면 인식 결과 보정, 공용 자원 등록, 좌표·층 정렬, 목적지 대응표 작성, 레이아웃 전달 같은 설정 작업의 시간·수정 횟수로 한정하고, 연계 대상: 로봇 쪽 지도 작성 주행·위치추정 조정 시간은 제조사·통합자의 기록을 받아 전체 시운전 기간의 구성 요소로만 합산하는 경계가 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-217",
+        "ref-105"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 추정: 설치 병목(f9)과 Open-RMF 플릿 어댑터 설정(층 이름 아래 대응점 등록 등, 재인용: 2026-09-25-76)을 경계 판단에 썼다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "‘3층 출하 대기장’을 제조사가 다른 두 로봇의 목적지로 쓰게 하는 작업을 예로 들면, 도면 수신부터 대기장 구역 노드·승강기·충전 위치 등록, 두 제조사 지도와의 좌표 대응, 목적지 대응표 작성까지를 수작업과 자동 생성+보정 조건에서 각각 시간·수정 횟수로 재고, 첫 출하 작업에서 도착이 인정될 때까지 걸린 기간을 성과 지표로 볼 수 있을 것으로 보인다(설명용 가정 사례).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-731",
+        "ref-730",
+        "ref-105"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 설명용 가정 사례이며 실제 측정값은 없다.",
+      "as_of": "2026-09-25",
+      "flow_step": "출하",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f19",
+      "claim": "이번 검색 범위(한국어 6회 포함 30회)에서는 물류센터 로봇 도입에서 도면 기반 자동 생성이 지도·공용 자원 설정 시간을 얼마나 줄였는지 같은 조건으로 잰 연구나 국내 사례, 실내공간정보 구축 공수를 정한 공개 품셈을 찾지 못했다(부재 확인 아님).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-741",
+        "ref-740",
+        "ref-731"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "확인한 시간 비교는 평면도 주석 1건(f2), 도면→BIM(f10), Scan-to-BIM(f11), 가상 시운전 리뷰(f12)이며 물류 로봇 설정 작업 대상이 아니다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-730",
+      "org": "Zhang, H. (Independent Researcher, arXiv 2608.25608)",
+      "title": "When Should a Network Emit Geometry, and When Should It Detect It? Readout, Reconciliation, and Representation in Floorplan Vectorization",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.25608",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 평면도 벡터화에서 좌표 생성 방식과 검출 방식을 비교하고, 초안을 고치는 사람의 일로 점수를 매기는 편집 비용 지표를 제시한 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-731",
+      "org": "Opiela, M., & Hrehová, M. (Pavol Jozef Šafárik University, IPIN-WiP 2023, CEUR-WS Vol-3581)",
+      "title": "Map Model Extraction from Image Floor Plans",
+      "published": "2023",
+      "url": "https://ceur-ws.org/Vol-3581/194_WiP.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 평면도 이미지의 벽·문·구역 주석으로 볼록 다각형 지도 모델을 만들고, 자동 주석 뒤 수정 시간을 수작업 주석 시간과 비교한 진행 중 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-732",
+      "org": "Acuna, D., Ling, H., Kar, A., & Fidler, S. (CVPR 2018)",
+      "title": "Efficient Interactive Annotation of Segmentation Datasets with Polygon-RNN++",
+      "published": "2018-03",
+      "url": "https://arxiv.org/abs/1803.09693",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 대화형 다각형 주석 모델로, IoU 와 수정에 필요한 주석자 클릭 수로 평가하고 원 모델 대비 클릭 감소를 보고했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-733",
+      "org": "Castrejón, L., Kundu, K., Urtasun, R., & Fidler, S. (CVPR 2017)",
+      "title": "Annotating Object Instances with a Polygon-RNN",
+      "published": "2017-04",
+      "url": "https://arxiv.org/abs/1704.05548",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 반자동 다각형 주석을 제안하고, 임계값을 넘는 꼭짓점을 고치는 가상 주석자의 수정 횟수로 사람 노력을 평가했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-734",
+      "org": "Song, W. 외 (BMVC 2023, arXiv 2311.18166)",
+      "title": "A-Scan2BIM: Assistive Scan to Building Information Modeling",
+      "published": "2023-11",
+      "url": "https://arxiv.org/abs/2311.18166",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 전문 건축가의 Revit 편집 이력을 기록한 Scan-to-BIM 데이터셋과 다음 편집 연산을 예측하는 보조 시스템, 연산 순서 지표를 제안했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-735",
+      "org": "Song, W. (weiliansong/A-Scan2BIM GitHub)",
+      "title": "A-Scan2BIM — README (Official implementation of the paper A-Scan2BIM: Assistive Scan to Building Information Modeling)",
+      "published": null,
+      "url": "https://github.com/weiliansong/A-Scan2BIM",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "공식 구현 저장소 README. 후보 벽 열거·다음 벽 예측 네트워크와 복원 지표·순서 지표·다음 벽 예측 정확도 평가 명령을 안내한다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/weiliansong/A-Scan2BIM/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-736",
+      "org": "Snover, M., Dorr, B., Schwartz, R., Micciulla, L., & Makhoul, J. (AMTA 2006)",
+      "title": "A Study of Translation Edit Rate with Targeted Human Annotation",
+      "published": "2006-08",
+      "url": "https://aclanthology.org/2006.amta-papers.25/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 번역 편집률(TER)과 사람이 최소로 고친 번역을 기준으로 한 HTER 를 정의했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-737",
+      "org": "Koponen, M., Aziz, W., Ramos, L., & Specia, L. (AMTA 2012 WPTP)",
+      "title": "Post-editing time as a measure of cognitive effort",
+      "published": "2012-10",
+      "url": "https://aclanthology.org/2012.amta-wptp.2/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 기계번역 사후 편집 시간을 인지적 노력의 척도로 쓰는 방법을 다룬 워크숍 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-738",
+      "org": "Alvarez-Vidal, S., Oliver, A., & Badia, T. (EAMT 2020)",
+      "title": "Quantitative Analysis of Post-Editing Effort Indicators for NMT",
+      "published": "2020-11",
+      "url": "https://aclanthology.org/2020.eamt-1.44.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 사후 편집 노력의 시간적·기술적·인지적 차원(Krings)과 지표 사이의 약한 상관을 분석했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-739",
+      "org": "Kieras, D. (University of Michigan)",
+      "title": "Using the Keystroke-Level Model to Estimate Execution Times",
+      "published": null,
+      "url": "https://www.cs.umd.edu/~golbeck/INST631/KSM.pdf",
+      "type": "논문",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 키 입력 수준 모델로 숙련 사용자의 무오류 과제 실행 시간을 연산자 시간의 합으로 추정하는 방법 해설. 강의 사이트 게재본.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-740",
+      "org": "ScienceDirect 게재 논문 저자(미확인)",
+      "title": "A structured review of virtual commissioning: simulation fidelity, industrial validation, and design-oriented decision-making",
+      "published": "2026",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590123026038491",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 가상 시운전 연구 36건을 검토해 시뮬레이션 능력과 검증된 시운전 결과를 잇는 근거가 부족하다고 평가한 구조적 리뷰.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-741",
+      "org": "박준우, 김재홍, 김소현, 이지민, 최창순, 정광복, 이재욱(KIBIM Magazine 11(4), 53-62)",
+      "title": "Scan-to-BIM 자동화 기술을 활용한 건축물 단위의 BIM 모델 생성 - 강원소방학교 BIM 모델링 실증을 중심으로 -",
+      "published": "2021",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002801297",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 딥러닝·매개변수 알고리즘·Dynamo 기반 Scan-to-BIM 자동화로 건물 단위 BIM 모델을 생성한 국내 실증 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-742",
+      "org": "Journal of Asian Architecture and Building Engineering 게재 논문 저자(미확인)",
+      "title": "Automated BIM generation using drawing recognition and line-text extraction",
+      "published": "2020",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/13467581.2020.1806071",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 2D 도면의 선·문자를 분리 추출해 객체 BIM 을 준자동 생성하는 방법과 건물 사례의 생성 시간을 보고했다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-743",
+      "org": "ResearchGate 게재 논문 저자(미확인)",
+      "title": "Time-Benefit Analysis of Semiautomatic 3D Laser Scanning for BIM-based Facility Management",
+      "published": "2024-06",
+      "url": "https://www.researchgate.net/publication/381549957_Time-Benefit_Analysis_of_Semiautomatic_3D_Laser_Scanning_for_BIM-_based_Facility_Management",
+      "type": "논문",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 시설 관리용 as-built BIM 에서 수작업 모델링과 AI 기반 반자동 모델링의 시간·인력을 비교한 분석. 게재지 미확인.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-744",
+      "org": "Forte, M., Price, B., Cohen, S., Xu, N., & Pitié, F. (arXiv 2003.07932)",
+      "title": "Getting to 99% Accuracy in Interactive Segmentation",
+      "published": "2020-03",
+      "url": "https://arxiv.org/abs/2003.07932",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 대화형 분할의 클릭 수 기반 평가(NoC@85·90)와 고정확도 목표를 다룬 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-217",
+      "org": "Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L.",
+      "title": "Semi-automated map creation for fast deployment of AGV fleets in modern logistics",
+      "published": "2017",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0921889015302724",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 3D 레이저 스캔 의미 지도와 경로망 자동 설계로 다중 AGV 설치 시간을 줄이는 반자동 방법.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Open-RMF 플릿 어댑터 템플릿 설정(층 이름별 대응점, 속도·차체·배터리 등). 이번 실행에서는 다시 열지 않았다.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "sections": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "rationale": "q5-02 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12·f13·f14·f15·f16·f17·f18·f19 (신뢰도 low) — 2절 q5-02 상태 답함, 3절 q5-02 소제목 신설({#q5-02}): 수정 노력 지표(편집 비용 f1, 클릭 수 f3, NoC f4, 편집 이력 데이터셋 f5, HTER f6), 수작업 대비 시간 비교 사례(평면도 주석 40분 대 5분 f2, 도면→BIM 생성과 준비 시간 분리 f10, Scan-to-BIM 시간–편익 f11, 국내 Scan-to-BIM 실증 f13), 편집 수와 시간의 관계(f7), 시간 추정 모델(f8), 설치 병목 작업(f9), 가상 시운전 근거 한계(f12 의견), 종합: 시간·수정·결과 품질 세 축 측정 구성(f14, 표 권장)·편집 수를 시간 대용치로 쓰지 않음(f15)·KLM 보조 추정(f16)·ROP 측정 경계(f17 연계 대상 포함)·‘3층 출하 대기장’ 시나리오(f18)·근거 공백(f19) / 4절 결론·불확실성 / 5절 후속 질문 / 6절 완료 조건 현황(검증 절차 행) / 8절 출처 / 9절 이력"
+    },
+    {
+      "action": "update",
+      "path": "docs/ideas/floorplan-recognition.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "아이디어 페이지 6절(트랙 산출물): '검증 절차: 현장 모델링 시간 단축 측정' 소절 신설 — 세 축 측정 구성 f14·f15·f16·f17(추정), 근거 f1·f2·f3·f6·f7·f10. 기존 '측정 대상 후보: 반복 작업 목록' 소절과 연결하고 PAN-Robots 비교 조건(q5-04)·가설 판정(q5-03)은 미조사임을 명시"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 5 반영 제안 (f2, f9, f10, f12, f14, f17): 시운전·설정 공수를 수작업 대비로 재는 방법(단계별 시간·수정 횟수, 추정)과 가상 시운전 시간 단축 근거의 한계, 분류 원문 질문 '반복 작업을 얼마나 줄일까' 연결"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 5 반영 제안 (f1, f3, f4, f6, f7, f15): 자동 생성 결과의 사람 수정 노력 지표(편집 비용, 클릭 수·NoC, HTER 유사 지표)와 편집 수·시간의 약한 상관"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 5 반영 제안 (f1, f3, f5): 도면 해석 모델을 정확도가 아니라 사람 수정 노력(편집 비용·클릭 수·편집 이력)으로 평가하는 방법. 교차 규칙에 따라 적용 대상 6. 지도·공간·위치 모델과 양쪽 연결"
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "편집 비용",
+      "term_en": "Edit Cost",
+      "definition": "자동 생성 결과를 정답 수준으로 고치는 데 필요한 사람의 편집 연산(추가·삭제·이동 등)을 요소 유형별로 세거나 가중해 합한 수정 노력 지표다."
+    },
+    {
+      "term_ko": "클릭 수 지표",
+      "term_en": "Number of Clicks (NoC)",
+      "definition": "대화형 주석·분할에서 목표 정확도(예: IoU 90%)에 이르거나 예측을 고치는 데 필요한 평균 사용자 클릭 수로, 사람 노력을 재는 지표다."
+    },
+    {
+      "term_ko": "키 입력 수준 모델",
+      "term_en": "Keystroke-Level Model (KLM)",
+      "definition": "숙련 사용자가 오류 없이 과제를 수행하는 시간을 키 입력·포인팅·정신적 준비 같은 연산자 시간의 합으로 예측하는 GOMS 계열 모델이다."
+    }
+  ],
+  "open_questions_new": [
+    "국내에서 실내공간정보 구축이나 로봇 도입 시 지도·공용 자원 설정 공수(인·일)를 산정하는 품셈이나 공공 기준이 있는가? | 관련 영역: 21. 온보딩·설정·현장 시운전, 4. 성과·경제성·프로세스 개선 | 근거: f19 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 17,
+    "cross_checked_count": 0,
+    "unverified": [
+      "모든 finding 교차 확인 없음: 지표·사례마다 단일 출처(f3 의 두 출처는 같은 연구 그룹, f5 의 논문과 README 는 같은 저자, f7 의 두 출처는 서로 다른 주장을 뒷받침)",
+      "f2 의 40분 대 5분은 지도 1건 저자 보고이며 자동 처리 시간 포함 여부 미확인",
+      "f10 수치(15분, 준비 약 1시간)는 첫 검색 요약에만 있고 재검색에서 재확인되지 않음, 저자 미확인",
+      "f11 비교 수치·조건과 게재지 미확인",
+      "f13 국내 연구의 시간 비교 수치 미확인",
+      "f5 의 89시간·16장면은 README 에서 확인되지 않음",
+      "f8 KLM 출처는 강의 사이트 게재본",
+      "q5-02 부분: 물류 로봇 설정 작업을 같은 조건으로 잰 측정 사례 없음 — 측정 구성(f14~f18)은 이 위키의 종합"
+    ],
+    "scope_violations": [
+      "f17: 로봇 쪽 지도 작성 주행·위치추정 조정은 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 ROP 측정 대상에서 제외하도록 서술",
+      "f11·f13: Scan-to-BIM 은 건설·시설 관리 영역 연구라 측정 방식의 사례로만 제안",
+      "f6·f7: 기계번역 분야 지표를 도면 보정에 옮기는 것은 추정(f15)으로만 서술"
+    ],
+    "budget_used": {
+      "queries": 30,
+      "sources": 15
+    },
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 신규 ref-735(A-Scan2BIM README). 나머지 신규 14건(ref-730~ref-734, ref-736~ref-744)과 재사용 ref-217·ref-105 는 원문 미열람이라 신뢰도 상한 medium, high 없음. CEUR·arXiv·ScienceDirect 원문은 정책 차단. 검색 30회/40(한국어 6회), 신규 출처 15건/20(ref-730~ref-744, 예약 구간 안), 재사용 2건. 질문 선택: target.json 지정 q5-02 1건. q5-02 는 수정 노력 지표·수작업 대비 시간 비교 사례·편집 수와 시간의 관계(사실)로 답했으나 측정 구성·경계·시나리오(f14~f18)는 이 위키의 종합이고 물류 로봇 설정 작업 근거가 없어 질문 종합 신뢰도 low. 한국 자료: 국내 Scan-to-BIM 실증(ref-741) 1건, 품셈·물류 사례는 찾지 못함(일반 열린 질문 1건). 교차 규칙: 도면 해석 모델의 수정 노력 평가는 27. AI·학습·적응과 모델 운영과 적용 대상 6. 지도·공간·위치 모델 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(f12 가상 시운전은 21. 온보딩·설정·현장 시운전 쪽 근거로만 씀). 정정 요청 없음. 온톨로지 변경 없음: 시간·수정 측정은 공간 그래프 스키마의 개념·관계가 아니라 검증 방법이므로 아이디어 페이지 6절에 둔다. 후속 질문 2건. 페이지 제안: 트랙 산출물 2건, 세부영역 반영 제안 3건(갱신 상한과 별도). 백로그 참고: q5-11 이 q5-09 와 같은 질문으로 중복 등록되어 정리 필요."
+  },
+  "track": {
+    "slug": "floorplan-recognition",
+    "stage": 5,
+    "answered_question_ids": [
+      "q5-02"
+    ],
+    "new_questions": [
+      {
+        "question": "같은 물류센터 층을 ROP 운영자가 수작업과 '도면 자동 생성+보정' 두 조건으로 모델링하는 비교 실험에서, 학습 효과(같은 도면 반복)와 숙련도 차이를 어떻게 통제하고(참가자·층 배정, 순서 균형), 입력 준비·자동 처리·보정·검증 시간을 어떤 단위로 기록하는가? (q5-02 에서 파생)",
+        "stage": 5,
+        "rationale_finding_id": "f14"
+      },
+      {
+        "question": "편집 비용 지표의 연산별 가중치(벽 삭제, 문·엘리베이터·충전 위치 추가, 목적지 이름 수정 등)를 실제 보정 작업의 연산별 평균 소요 시간으로 보정하려면 어떤 기록(편집 로그·화면 기록)이 필요하며, 편집 수와 시간의 상관을 어떻게 확인하는가? (q5-02 에서 파생)",
+        "stage": 5,
+        "rationale_finding_id": "f15"
+      }
+    ],
+    "ontology_changes": [],
+    "stage_completion_self_assessment": {
+      "met": false,
+      "missing": [
+        "검증 절차(q5-02 답 f14~f17)는 검증 승인 전이며 아이디어 3. 건축 도면 자동 인식 6절에 아직 반영되지 않음",
+        "가설 판정표(q5-03)가 트랙 개요 3절에 없음",
+        "사용자에게 제안하는 실험 계획이 실험 페이지에 없음",
+        "열린 질문 q5-03~q5-10(q5-11 중복 정리 필요)"
+      ]
+    }
+  }
+}
