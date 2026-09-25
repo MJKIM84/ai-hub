@@ -1,0 +1,133 @@
+{
+  "run_id": "2026-09-25-81",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 4,
+    "question_ids": [
+      "q4-02"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "수정 후 재검증",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 14,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 25,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1317.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 | run 2026-09-25-81",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 19:49:15 KST",
+  "usage": {
+    "input_tokens": 48,
+    "cache_creation_input_tokens": 1562521,
+    "cache_read_input_tokens": 6619382,
+    "output_tokens": 108476,
+    "cost_usd": 16.9043,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.3429,
+        "output_tokens": 32811,
+        "cache_read_input_tokens": 4979290,
+        "cache_creation_input_tokens": 389882
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.1857,
+        "output_tokens": 17092,
+        "cache_read_input_tokens": 1480634,
+        "cache_creation_input_tokens": 407142
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 3.2987,
+        "output_tokens": 49724,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 286445
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 3.9923,
+        "output_tokens": 7857,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 477493
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md (7개 절)",
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/task-model-draft.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 4,
+  "cross_checked_findings": 0,
+  "park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+}

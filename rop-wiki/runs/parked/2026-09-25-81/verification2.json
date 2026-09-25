@@ -1,0 +1,50 @@
+{
+  "run_id": "2026-09-25-81",
+  "stage": "second",
+  "verdict": "수정 후 재검증",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f20 은 1차 지시대로 단계 4 페이지와 아이디어 페이지에서 q4-01 서술로 연결만 했다(새 서술 없음)"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "ref-782 각주 정의: docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md 와 docs/ideas/nl-task-chatbot.md 의 [^ref-782] 정의 줄 발행일이 아직 '2026' 이다. 1차 지시(f16)대로 '2026-04' 로 고친다 — 본문과 reference_updates 는 2026-04 인데 각주만 달라 페이지 안에서 기준일이 어긋난다.",
+    "docs/ideas/nl-task-chatbot.md 프런트매터 sources: 이번에 붙인 각주 ref-773·ref-777·ref-778·ref-781·ref-782·ref-784·ref-785·ref-786·ref-416·ref-459 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다(5절 patch 에 frontmatter 가 없다).",
+    "docs/tracks/nl-task-chatbot/task-model-draft.md 프런트매터 sources: 6절에 새로 붙인 각주 ref-416·ref-459·ref-713·ref-773·ref-777·ref-781·ref-785 를 더한다 — 본문 각주와 프런트매터 sources 가 일치하지 않는다.",
+    "단계 4 페이지 H1 아래 상태 줄의 '열린 질문: 13건 · 답한 질문: 1건' 을 이번 2절 표에 맞게 '열린 질문: 14건 · 답한 질문: 2건' 으로 고친다 — 부록 C 트랙 단계 상태 줄의 숫자는 2절 표와 맞아야 한다. H2 밖이라 patch 로 바꿀 수 없으면 pages.json 에 머리 영역 교체 patch 를 두거나 퍼블리셔 처리로 넘기되, 어느 쪽으로 처리했는지 fixes_applied 에 적는다.",
+    "아이디어 페이지 5절 '검증 방법별로 잡는 오류' 소절의 '근거 사례' 항목에서 'VDA 5050 3.0.0 은 … 서로 다른 오류 유형으로 보고하며, 이 거절은 로봇 쪽 기능인 연계 대상이다. [사실][^ref-031]' 을 두 문장으로 나눈다: 오류 유형 보고는 [사실][^ref-031], '이 거절은 로봇 쪽 기능인 연계 대상이며 ROP 는 오류를 받아 처리하는 쪽만 맡는 것으로 본다' 는 [추정][^ref-031] — 1차 f4 지시와 단계 4 페이지에서는 경계 판단을 [추정]으로 두었는데 여기서는 [사실] 문장에 합쳐져 태그가 올라갔다.",
+    "단계 4 페이지 6절 표 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)' 로 고친다 — 이번 실행에서 q4-15·q4-16 이 열림으로 더해졌고 track_updates.log_entry 도 q4-03~q4-16 으로 적었다(1차 지시 문구의 범위가 좁았던 것을 바로잡는다)."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 트랙 개요 상태 줄(단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 트랙 데이터 확인이 필요하다. 검증 검색은 12회(리서치 25회와 합쳐 37/40)였다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계가 초안 6절 질문으로 남아 있음, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 수정 후 재검증. 드리프트 없음(1차 수정 지시 14건 이행 확인: f15 강등·수치 교정, f17·f13·f3·f12·f14·f9·f11·f19 저자 보고 병기, f16·f4 연계 대상 경계, f21·f24 표 표시, f20 연결만, 온톨로지 변경 미반영과 v0.8 유지, 세부영역은 반영 제안으로만). [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과 기준). 남은 지적은 국소 수정 6건이다: ref-782 각주 발행일(2026 → 2026-04), 아이디어 페이지·업무 분해·배정 설계 초안의 프런트매터 sources 누락, 단계 4 상태 줄 숫자(열린 14·답한 2), 아이디어 페이지 VDA 5050 문장의 태그 상향, 6절 전환 줄의 열린 질문 범위(q4-16까지). 참고(수정 지시 아님): '사람 확인과 LLM 판정자' 소절과 아이디어 페이지의 사람 확인 연결 문장은 주장이 아닌 연결 문장이라 태그 없이 기존 각주만 두었다. 트랙 판정은 1차 값을 유지한다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

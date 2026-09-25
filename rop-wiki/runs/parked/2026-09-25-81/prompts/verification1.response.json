@@ -1,0 +1,387 @@
+{
+  "duration_api_ms": 234183,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.1857158,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 407142,
+    "cache_read_input_tokens": 1480634,
+    "output_tokens": 17092,
+    "output_tokens_details": {
+      "thinking_tokens": 6912
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 407142,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11248,
+        "cache_read_input_tokens": 475287,
+        "cache_creation_input_tokens": 8009,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 8009
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 17092,
+      "cacheReadInputTokens": 1480634,
+      "cacheCreationInputTokens": 407142,
+      "webSearchRequests": 0,
+      "costUSD": 3.8951348,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6912,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 142891,
+      "outputTokens": 5538,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 12,
+      "costUSD": 0.290581,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 17,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-81\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw.githubusercontent.com 으로 specs/jsonschema-validation.md(main 브랜치)를 열었다. type·enum·const·수치 범위·pattern·required·dependentRequired·배열·객체 크기 키워드가 있고, required 정의 문장이 발췌와 같으며, 메타스키마 IRI 는 https://json-schema.org/v1/2026 이다. 차기판 초안 기준이라 게시된 2020-12 판과 문구 차이는 미확인. 발행일 미확인, 확인일 2026-09-25 기준.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). OpenAI 발표문 스니펫에 '값 안의 실수(수학 단계 오류)는 막지 못한다'는 문구가 있다. 스키마 준수 보장은 벤더 주장이라 [추정]·vendor_claim 표시가 맞다. 이 위키 아이디어 2 페이지 3절이 같은 ref-362 로 구조화 출력을 이미 다루므로 기존 각주를 재사용한다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-774 README(github_raw)를 열어 약 1만 개(9,558개) 스키마와 효율·범위·품질 평가, 논문 arXiv 2501.10868(Geng 외)을 확인했다. 여섯 프레임워크 이름은 README 에 없어 ref-775(원문 미열람) 요약에만 기댄다. README 와 논문은 같은 저자 그룹이므로 교차 확인이 아니다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(data/source_texts/ref-031.txt)의 6.1.4 각 항과 Table 9 에서 VALIDATION_FAILURE·UNSUPPORTED_PARAMETER·INVALID_ORDER_ACTION·NO_ROUTE_TO_TARGET·UNKNOWN_MAP_ID·START_NODE_OUT_OF_RANGE·MOBILE_ROBOT_NOT_AVAILABLE 와 '내부 버퍼에 받지 않는다'는 규정을 확인했다(UNSUPPORTED_PARAMETER 만 CRITICAL, 나머지 WARNING). 브리프의 ref-031 출처 항목은 fetched_via 가 github_raw 인데 fetch_url 이 null 이고, self_check.limits 는 inbox 로 적어 표시가 어긋난다. 로봇 쪽 거절은 연계 대상이다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-74 에서 W3C data-shapes 편집자 초안으로 확인). 이번 실행은 원문 미열람. 2017 권고안과의 문구 일치는 미확인.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). IEEE INDIN 2021(2021-07-21~23) 발표, 필수 정보가 빠진 잘못 모델링된 스킬을 가려 수정 대상으로 표시한다는 내용이 스니펫과 맞는다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-74), 원문 미열람. 저자 미확인. 13. 작업 배정 — MRTA 페이지 10절이 같은 ref-236 을 이미 쓴다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-79), 원문 미열람. 저자 미확인. 단계 4 페이지 q4-01 에 같은 내용이 있어 기존 각주를 재사용한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). PDDL 검증기와 사람의 교정 피드백, GPT-4 로 40개 넘는 동작 모델, 48개 계획 과제 해결이 초록 스니펫에 있다(저자 보고). NeurIPS 2023 게재.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: VAL README(github_raw)는 'tools for AI Planning plans and planning models'라고 적고 연속 효과·파생 술어·시간 지정 초기 리터럴 기여를 언급한다. 실패 보고·수리 조언 설명은 없다(미확인 표시 유지). 발행일 미확인.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). LTL 변환 모듈, 슬라이딩 윈도(최적 5개 행동), 위치 오류·빠진 전제·중복 행동 세 유형이 스니펫과 맞는다. VerifyLLM 은 외부 계획기가 만든 행동 순서를 검증하며 평가는 가정 환경이다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). 동치 투표·제약 디코딩·도메인 미세 조정, 드론 항법 안전율 10.8%(계획 효율 19.8%), 로봇 조작 안전율 20.4% 개선은 저자 보고. ICRA 2025 게재로 검색된다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). 장면 그래프 시뮬레이터 피드백으로 실행 불가 동작을 고치는 반복 재계획과 'near-perfect executability'는 저자 보고다(3층·36개 방·140개 객체 환경, CoRL 2023). '거의 완전'은 저자 표현이므로 저자 보고로만 쓴다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). VirtualHome 사람 주석 계획 정확도가 SayCan 대비 28.89% → 49.63% 로 올랐다는 것은 저자 보고다. Spot 로봇에서는 76.49% 개선을 보고한다. ICRA 2024 게재.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"원문 미열람, 동료심사 전 프리프린트. 스니펫에서는 동작 77개·객체 262개, 오류 없는 계획 20% 미만, 잠재 실패를 포함한 계획 29~56%, 반사실적 예견 시뮬레이션으로 최대 72% 감소를 확인했다. '최대 17%'와 '여섯 LLM'은 확인하지 못했다. 사실 → 추정: 확인되지 않은 수치가 포함되어 있다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). Applied Sciences 게재(2026-04, DOI 10.3390/app16083883). 물리적 환각, 중간 작업 표현·공간 접지·로봇 선택·실행 전 동역학 검증·제조사별 코드 생성이 스니펫과 맞는다. 동역학 검증과 동작 스케일링은 분류 원문 9장 '로봇 자체 지능·제어' 경계의 연계 대상이다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). 제안–검증–결정 흐름(의미·시뮬레이션 실행·운영 제약 검사, 사람 결정, 근거 제시)을 확인했다. 올바른 거부 7/8·자율 전략 성공 3/10 은 검증 검색에서 다시 확인하지 못했다(저자 보고값, 검증 미재확인). 2026-09 프리프린트.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). 정수계획 배정, LLM 이 자연어 서술에서 최적화 제약을 갱신, 디지털 트윈 동기화, 상위 모델 97% 넘는 제약·파라미터 추출 정확도(저자 보고)를 확인했다. 저자 Deng·Fu·Li·Wang. 건설 사례는 업종별 조건이라 방법 근거로만 쓴다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검색 결과 일치). 판정자·계획자 LLM 반복, TEACh 수동 주석 행동에서 재현율 최대 90%·정밀도 100%(네 LLM), 96.5% 가 3회 이하 반복으로 수렴한다는 것은 저자 보고. NeurIPS 2025(워크숍) 게재.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"재인용(실행 2026-09-25-79), 원문 미열람. 단계 4 페이지 q4-01 이 ref-713·ref-697 로 같은 내용을 이미 싣고 있다(신뢰 보정 문제는 일상 비서 조건). 새로 쓰지 않고 기존 서술로 연결한다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 방법별 포착 오류 분담은 이 위키의 종합이고 다섯 방법을 같은 조건에서 비교한 출처는 없다. 로봇 관제 쪽 거절은 연계 대상으로 표시해야 한다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 방법별로 놓치는 오류는 ref-362(벤더 문구)·ref-777·ref-786·ref-781·ref-713 을 이 위키가 묶은 추론이다. '존재하는 다른 도크 번호' 예는 설명용 예시다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈, 초기 상태는 8. 실시간 세계 상태·데이터 일관성으로 두는 구분이 분류 원문 7장(현재 상태 표현 대 가정한 미래 실험)과 맞는다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 수치 없는 설명용 가정 사례다. 피킹 / 시작 조건.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 분류 원문 SCM 질문과의 연결이다. 물류 플릿 실측 자료는 없다(기존 oq-052 와 같은 방향).\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"[추정] 유지. 검색 범위 관찰이며 부재의 확인이 아니다. 국내 자료는 찾지 못했다(한국어 검색 2회).\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f20 은 단계 4 페이지 q4-01 의 사람 승인 한계(ref-713)·LangChain 사람 참여 미들웨어(ref-697) 서술과 같다 — 새로 쓰지 말고 q4-01 로 연결하고 기존 각주를 재사용한다\",\"f8(SafePlan, ref-702)·f5(SHACL 검증 보고, ref-459)·f7(ref-236)은 기존 페이지(단계 4 q4-01, 업무 분해·배정 설계 초안 6절, 13. 작업 배정 — MRTA 10절)에 이미 있는 주장이다 — 기존 각주를 재사용한다\",\"f2(ref-362)는 아이디어 2. 자연어 업무 지시 챗봇 3절 '구조화 출력' 항목과 같은 출처다 — 같은 각주를 재사용한다\",\"f4 는 단계 4 q4-01 의 '디스패처·로봇 쪽의 마지막 거절'(INVALID_ORDER_ACTION)을 확장한다 — 반복 서술 없이 q4-01 과 연결한다\",\"온톨로지 변경 '검증 기록'은 초안 6절의 기존 질문('검증 기록'·'사용자 확인')과 같은 대상이다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f15: [사실] → [추정]으로 강등하고, 수치는 검증에서 확인한 범위로 고친다('오류 없는 계획 20% 미만, 잠재 실패를 포함한 계획 29~56%, 반사실적 예견 시뮬레이션으로 잠재 실패 최대 72% 감소, 동작 77개·객체 262개'). '최대 17%'와 '여섯 LLM'은 쓰지 않거나 '미확인'으로 표시하고, '동료심사 전 프리프린트, 저자 보고'를 병기한다 — 검증 검색 스니펫에서 17%·여섯 모델을 확인하지 못했다.\",\"f17: '올바른 거부 7/8, 자율 전략 성공 3/10' 뒤에 '(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록)'을 붙인다 — 검증 검색에서 흐름 구조는 확인했지만 수치는 다시 확인하지 못했다.\",\"f13: '실행 가능성이 거의 완전해졌다'는 이 위키의 단정으로 쓰지 말고 '저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건)'로 저자 보고임을 밝힌다 — 공통 규칙 1절 12항의 '완전' 표현 제한.\",\"f16: 발행일을 2026-04 로 적고(각주·reference_updates published), 본문에서 '실행 전 동역학 검증·동작 스케일링은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상'임을 밝히며 ROP 쪽은 로봇 선택·공간 접지 수준의 검증만 서술한다.\",\"f4: 로봇의 주문 거절은 로봇 쪽 기능(연계 대상)이고, ROP 는 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는다고 서술한다. 오류 수준(UNSUPPORTED_PARAMETER 는 CRITICAL, 나머지 WARNING)을 적으려면 원문 Table 9 대로 적는다.\",\"f21·f24: 표로 그릴 때 '로봇 관제 쪽 거절' 행에 '연계 대상(로봇 쪽 기능)'을 표시하고, 표 아래에 '출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다'를 적는다. f24 는 '설명용 가정 사례'로 밝히고 수치를 넣지 않는다.\",\"f3: 여섯 프레임워크 목록은 ref-775(원문 미열람) 요약 기준임을 밝히고, ref-774 README 와 ref-775 논문은 같은 저자 그룹이라 독립 교차가 아님을 본문이나 불확실성에 적는다.\",\"f12·f14·f9·f11·f19: 수치 뒤에 '(저자 보고, 원문 미열람)'과 평가 조건(드론·조작 / VirtualHome·Spot / 48개 과제 / 가정 환경 / TEACh)을 유지한다.\",\"f20: 새로 서술하지 말고 단계 4 페이지 [q4-01 답](#q4-01)의 사람 승인 한계 서술과 기존 각주 ref-713·ref-697 로 연결만 한다.\",\"온톨로지 변경 '검증 기록 (Verification Record)' 추가는 반영하지 않고 업무 분해·배정 설계 초안 6절의 기존 '검증 기록' 질문에 q4-02 답(f21·f22)을 연결해 미해결 모델링 질문으로 둔다. 초안 버전은 v0.8 을 유지하고 ontology_draft_version 은 '0.8' 그대로 둔다 — 근거 가운데 f21 이 [추정]이고 f5·f17 은 원문 미열람이다. 또 사람 확인을 '사용자 확인' 개념으로 따로 둘지(6절 질문)가 정해지지 않았는데 이 제안이 그 경계를 먼저 결정하게 된다. '로봇 관제 거절'을 ROP 의 검증 방법 값으로 두는 것도 연계 대상 경계와 맞지 않는다.\",\"reference_updates: 원문을 열지 않은 출처(ref-775·ref-777~ref-786, 재사용 ref-362·ref-416·ref-459·ref-236·ref-702·ref-697·ref-713)는 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates[].source_unopened: true 로 둔다. ref-773·ref-774·ref-776 은 github_raw 로 연 원문이다.\",\"ref-031 각주는 기존 줄을 그대로 재사용한다(원문은 입력 원문 텍스트로 열람함).\",\"6절 완료 조건 충족 현황: 세 항목 모두 '미충족 · 미승인'으로 두고 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-14)'로 적는다. 2절 표에서 q4-02 는 '답함', 답 위치 [q4-02 답](#q4-02), 3절 소제목은 '### q4-02 … {#q4-02}' 형식으로 둔다.\",\"세부영역 반영 제안(13. 작업 배정 — MRTA, 23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 27. AI·학습·적응과 모델 운영)은 세부영역 페이지를 직접 고치지 말고 트랙 로그의 반영 제안으로만 남긴다. 22. 시뮬레이션·예측용 디지털 트윈 제안에는 f23 의 구분(초기 상태는 8. 실시간 세계 상태·데이터 일관성)을 함께 적는다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 트랙 개요 상태 줄(단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 트랙 데이터 확인이 필요하다. 검증 검색은 12회(리서치 25회와 합쳐 37/40)였다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계가 초안 6절 질문으로 남아 있음, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-14 열림, q4-09·q4-10 중복 정리 필요).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-81",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw.githubusercontent.com 으로 specs/jsonschema-validation.md(main 브랜치)를 열었다. type·enum·const·수치 범위·pattern·required·dependentRequired·배열·객체 크기 키워드가 있고, required 정의 문장이 발췌와 같으며, 메타스키마 IRI 는 https://json-schema.org/v1/2026 이다. 차기판 초안 기준이라 게시된 2020-12 판과 문구 차이는 미확인. 발행일 미확인, 확인일 2026-09-25 기준."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). OpenAI 발표문 스니펫에 '값 안의 실수(수학 단계 오류)는 막지 못한다'는 문구가 있다. 스키마 준수 보장은 벤더 주장이라 [추정]·vendor_claim 표시가 맞다. 이 위키 아이디어 2 페이지 3절이 같은 ref-362 로 구조화 출력을 이미 다루므로 기존 각주를 재사용한다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-774 README(github_raw)를 열어 약 1만 개(9,558개) 스키마와 효율·범위·품질 평가, 논문 arXiv 2501.10868(Geng 외)을 확인했다. 여섯 프레임워크 이름은 README 에 없어 ref-775(원문 미열람) 요약에만 기댄다. README 와 논문은 같은 저자 그룹이므로 교차 확인이 아니다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(data/source_texts/ref-031.txt)의 6.1.4 각 항과 Table 9 에서 VALIDATION_FAILURE·UNSUPPORTED_PARAMETER·INVALID_ORDER_ACTION·NO_ROUTE_TO_TARGET·UNKNOWN_MAP_ID·START_NODE_OUT_OF_RANGE·MOBILE_ROBOT_NOT_AVAILABLE 와 '내부 버퍼에 받지 않는다'는 규정을 확인했다(UNSUPPORTED_PARAMETER 만 CRITICAL, 나머지 WARNING). 브리프의 ref-031 출처 항목은 fetched_via 가 github_raw 인데 fetch_url 이 null 이고, self_check.limits 는 inbox 로 적어 표시가 어긋난다. 로봇 쪽 거절은 연계 대상이다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-74 에서 W3C data-shapes 편집자 초안으로 확인). 이번 실행은 원문 미열람. 2017 권고안과의 문구 일치는 미확인."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). IEEE INDIN 2021(2021-07-21~23) 발표, 필수 정보가 빠진 잘못 모델링된 스킬을 가려 수정 대상으로 표시한다는 내용이 스니펫과 맞는다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-74), 원문 미열람. 저자 미확인. 13. 작업 배정 — MRTA 페이지 10절이 같은 ref-236 을 이미 쓴다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-79), 원문 미열람. 저자 미확인. 단계 4 페이지 q4-01 에 같은 내용이 있어 기존 각주를 재사용한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). PDDL 검증기와 사람의 교정 피드백, GPT-4 로 40개 넘는 동작 모델, 48개 계획 과제 해결이 초록 스니펫에 있다(저자 보고). NeurIPS 2023 게재."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: VAL README(github_raw)는 'tools for AI Planning plans and planning models'라고 적고 연속 효과·파생 술어·시간 지정 초기 리터럴 기여를 언급한다. 실패 보고·수리 조언 설명은 없다(미확인 표시 유지). 발행일 미확인."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). LTL 변환 모듈, 슬라이딩 윈도(최적 5개 행동), 위치 오류·빠진 전제·중복 행동 세 유형이 스니펫과 맞는다. VerifyLLM 은 외부 계획기가 만든 행동 순서를 검증하며 평가는 가정 환경이다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). 동치 투표·제약 디코딩·도메인 미세 조정, 드론 항법 안전율 10.8%(계획 효율 19.8%), 로봇 조작 안전율 20.4% 개선은 저자 보고. ICRA 2025 게재로 검색된다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). 장면 그래프 시뮬레이터 피드백으로 실행 불가 동작을 고치는 반복 재계획과 'near-perfect executability'는 저자 보고다(3층·36개 방·140개 객체 환경, CoRL 2023). '거의 완전'은 저자 표현이므로 저자 보고로만 쓴다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). VirtualHome 사람 주석 계획 정확도가 SayCan 대비 28.89% → 49.63% 로 올랐다는 것은 저자 보고다. Spot 로봇에서는 76.49% 개선을 보고한다. ICRA 2024 게재."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "원문 미열람, 동료심사 전 프리프린트. 스니펫에서는 동작 77개·객체 262개, 오류 없는 계획 20% 미만, 잠재 실패를 포함한 계획 29~56%, 반사실적 예견 시뮬레이션으로 최대 72% 감소를 확인했다. '최대 17%'와 '여섯 LLM'은 확인하지 못했다. 사실 → 추정: 확인되지 않은 수치가 포함되어 있다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). Applied Sciences 게재(2026-04, DOI 10.3390/app16083883). 물리적 환각, 중간 작업 표현·공간 접지·로봇 선택·실행 전 동역학 검증·제조사별 코드 생성이 스니펫과 맞는다. 동역학 검증과 동작 스케일링은 분류 원문 9장 '로봇 자체 지능·제어' 경계의 연계 대상이다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). 제안–검증–결정 흐름(의미·시뮬레이션 실행·운영 제약 검사, 사람 결정, 근거 제시)을 확인했다. 올바른 거부 7/8·자율 전략 성공 3/10 은 검증 검색에서 다시 확인하지 못했다(저자 보고값, 검증 미재확인). 2026-09 프리프린트."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). 정수계획 배정, LLM 이 자연어 서술에서 최적화 제약을 갱신, 디지털 트윈 동기화, 상위 모델 97% 넘는 제약·파라미터 추출 정확도(저자 보고)를 확인했다. 저자 Deng·Fu·Li·Wang. 건설 사례는 업종별 조건이라 방법 근거로만 쓴다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검색 결과 일치). 판정자·계획자 LLM 반복, TEACh 수동 주석 행동에서 재현율 최대 90%·정밀도 100%(네 LLM), 96.5% 가 3회 이하 반복으로 수렴한다는 것은 저자 보고. NeurIPS 2025(워크숍) 게재."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "재인용(실행 2026-09-25-79), 원문 미열람. 단계 4 페이지 q4-01 이 ref-713·ref-697 로 같은 내용을 이미 싣고 있다(신뢰 보정 문제는 일상 비서 조건). 새로 쓰지 않고 기존 서술로 연결한다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 방법별 포착 오류 분담은 이 위키의 종합이고 다섯 방법을 같은 조건에서 비교한 출처는 없다. 로봇 관제 쪽 거절은 연계 대상으로 표시해야 한다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 방법별로 놓치는 오류는 ref-362(벤더 문구)·ref-777·ref-786·ref-781·ref-713 을 이 위키가 묶은 추론이다. '존재하는 다른 도크 번호' 예는 설명용 예시다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈, 초기 상태는 8. 실시간 세계 상태·데이터 일관성으로 두는 구분이 분류 원문 7장(현재 상태 표현 대 가정한 미래 실험)과 맞는다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 수치 없는 설명용 가정 사례다. 피킹 / 시작 조건."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 분류 원문 SCM 질문과의 연결이다. 물류 플릿 실측 자료는 없다(기존 oq-052 와 같은 방향)."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "[추정] 유지. 검색 범위 관찰이며 부재의 확인이 아니다. 국내 자료는 찾지 못했다(한국어 검색 2회)."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f20 은 단계 4 페이지 q4-01 의 사람 승인 한계(ref-713)·LangChain 사람 참여 미들웨어(ref-697) 서술과 같다 — 새로 쓰지 말고 q4-01 로 연결하고 기존 각주를 재사용한다",
+        "f8(SafePlan, ref-702)·f5(SHACL 검증 보고, ref-459)·f7(ref-236)은 기존 페이지(단계 4 q4-01, 업무 분해·배정 설계 초안 6절, 13. 작업 배정 — MRTA 10절)에 이미 있는 주장이다 — 기존 각주를 재사용한다",
+        "f2(ref-362)는 아이디어 2. 자연어 업무 지시 챗봇 3절 '구조화 출력' 항목과 같은 출처다 — 같은 각주를 재사용한다",
+        "f4 는 단계 4 q4-01 의 '디스패처·로봇 쪽의 마지막 거절'(INVALID_ORDER_ACTION)을 확장한다 — 반복 서술 없이 q4-01 과 연결한다",
+        "온톨로지 변경 '검증 기록'은 초안 6절의 기존 질문('검증 기록'·'사용자 확인')과 같은 대상이다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f15: [사실] → [추정]으로 강등하고, 수치는 검증에서 확인한 범위로 고친다('오류 없는 계획 20% 미만, 잠재 실패를 포함한 계획 29~56%, 반사실적 예견 시뮬레이션으로 잠재 실패 최대 72% 감소, 동작 77개·객체 262개'). '최대 17%'와 '여섯 LLM'은 쓰지 않거나 '미확인'으로 표시하고, '동료심사 전 프리프린트, 저자 보고'를 병기한다 — 검증 검색 스니펫에서 17%·여섯 모델을 확인하지 못했다.",
+      "f17: '올바른 거부 7/8, 자율 전략 성공 3/10' 뒤에 '(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록)'을 붙인다 — 검증 검색에서 흐름 구조는 확인했지만 수치는 다시 확인하지 못했다.",
+      "f13: '실행 가능성이 거의 완전해졌다'는 이 위키의 단정으로 쓰지 말고 '저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건)'로 저자 보고임을 밝힌다 — 공통 규칙 1절 12항의 '완전' 표현 제한.",
+      "f16: 발행일을 2026-04 로 적고(각주·reference_updates published), 본문에서 '실행 전 동역학 검증·동작 스케일링은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상'임을 밝히며 ROP 쪽은 로봇 선택·공간 접지 수준의 검증만 서술한다.",
+      "f4: 로봇의 주문 거절은 로봇 쪽 기능(연계 대상)이고, ROP 는 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는다고 서술한다. 오류 수준(UNSUPPORTED_PARAMETER 는 CRITICAL, 나머지 WARNING)을 적으려면 원문 Table 9 대로 적는다.",
+      "f21·f24: 표로 그릴 때 '로봇 관제 쪽 거절' 행에 '연계 대상(로봇 쪽 기능)'을 표시하고, 표 아래에 '출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다'를 적는다. f24 는 '설명용 가정 사례'로 밝히고 수치를 넣지 않는다.",
+      "f3: 여섯 프레임워크 목록은 ref-775(원문 미열람) 요약 기준임을 밝히고, ref-774 README 와 ref-775 논문은 같은 저자 그룹이라 독립 교차가 아님을 본문이나 불확실성에 적는다.",
+      "f12·f14·f9·f11·f19: 수치 뒤에 '(저자 보고, 원문 미열람)'과 평가 조건(드론·조작 / VirtualHome·Spot / 48개 과제 / 가정 환경 / TEACh)을 유지한다.",
+      "f20: 새로 서술하지 말고 단계 4 페이지 [q4-01 답](#q4-01)의 사람 승인 한계 서술과 기존 각주 ref-713·ref-697 로 연결만 한다.",
+      "온톨로지 변경 '검증 기록 (Verification Record)' 추가는 반영하지 않고 업무 분해·배정 설계 초안 6절의 기존 '검증 기록' 질문에 q4-02 답(f21·f22)을 연결해 미해결 모델링 질문으로 둔다. 초안 버전은 v0.8 을 유지하고 ontology_draft_version 은 '0.8' 그대로 둔다 — 근거 가운데 f21 이 [추정]이고 f5·f17 은 원문 미열람이다. 또 사람 확인을 '사용자 확인' 개념으로 따로 둘지(6절 질문)가 정해지지 않았는데 이 제안이 그 경계를 먼저 결정하게 된다. '로봇 관제 거절'을 ROP 의 검증 방법 값으로 두는 것도 연계 대상 경계와 맞지 않는다.",
+      "reference_updates: 원문을 열지 않은 출처(ref-775·ref-777~ref-786, 재사용 ref-362·ref-416·ref-459·ref-236·ref-702·ref-697·ref-713)는 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates[].source_unopened: true 로 둔다. ref-773·ref-774·ref-776 은 github_raw 로 연 원문이다.",
+      "ref-031 각주는 기존 줄을 그대로 재사용한다(원문은 입력 원문 텍스트로 열람함).",
+      "6절 완료 조건 충족 현황: 세 항목 모두 '미충족 · 미승인'으로 두고 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-14)'로 적는다. 2절 표에서 q4-02 는 '답함', 답 위치 [q4-02 답](#q4-02), 3절 소제목은 '### q4-02 … {#q4-02}' 형식으로 둔다.",
+      "세부영역 반영 제안(13. 작업 배정 — MRTA, 23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 27. AI·학습·적응과 모델 운영)은 세부영역 페이지를 직접 고치지 말고 트랙 로그의 반영 제안으로만 남긴다. 22. 시뮬레이션·예측용 디지털 트윈 제안에는 f23 의 구분(초기 상태는 8. 실시간 세계 상태·데이터 일관성)을 함께 적는다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-773·ref-774·ref-776 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via github_raw 이지만 fetch_url 이 null 이고, 한계 항목은 inbox 로 적었다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키의 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이어서 물류 플릿 조건이 아니다. 수치는 모두 원문 미열람 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문(q4-02)으로 단계 4 를 다뤘다. 트랙 개요 상태 줄(단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 트랙 데이터 확인이 필요하다. 검증 검색은 12회(리서치 25회와 합쳐 37/40)였다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계가 초안 6절 질문으로 남아 있음, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-14 열림, q4-09·q4-10 중복 정리 필요).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 46881,
+  "type": "result",
+  "duration_ms": 173599,
+  "uuid": "3cebdc4c-fce9-4b38-9510-a7df3242005d",
+  "ttft_stream_ms": 5575,
+  "time_to_request_ms": 116,
+  "first_content_frame_ms": 5575,
+  "time_to_request_from_spawn_ms": 19537490,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790332633395.716,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 175.5
+}
