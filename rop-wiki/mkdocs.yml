@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 25. 안전·위험 관리 — 대표 연구와 자료: topics/2026/2026-09-25-area25-s8.md
+      - 25. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area25-s7.md
+      - 25. 안전·위험 관리 — 대표 접근법과 기술: topics/2026/2026-09-25-area25-s6.md
+      - 25. 안전·위험 관리 — 왜 중요한가: topics/2026/2026-09-25-area25-s3.md
+      - 25. 안전·위험 관리 — 열린 질문: topics/2026/2026-09-25-area25-s11.md
       - 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area24-s7.md
       - 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술: topics/2026/2026-09-25-area24-s6.md
       - 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어: topics/2026/2026-09-25-area24-s4.md
@@ -358,6 +363,7 @@ nav:
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
     - 시간창 (Time Window): glossary/time-window.md
     - 시뮬레이션 모델 검증·타당성 확인 (Verification and Validation (V&V) of Simulation Models): glossary/verification-and-validation-of-simulation-models.md
+    - 시스템 이론적 프로세스 분석 (System-Theoretic Process Analysis (STPA)): glossary/stpa.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
     - 신원 보고 (Identity Report (MassRobotics identityReport)): glossary/identity-report.md
     - 신호 시간 논리 (Signal Temporal Logic (STL)): glossary/signal-temporal-logic.md
@@ -371,11 +377,13 @@ nav:
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability): glossary/required-and-provided-capability.md
     - 우선순위 상속·되돌림 (Priority Inheritance with Backtracking (PIBT)): glossary/priority-inheritance-with-backtracking.md
+    - 운용 구역 (Operating Zone (ISO 3691-4)): glossary/operating-zone.md
     - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
     - 위치 체크 디지트 (Location Check Digit): glossary/location-check-digit.md
+    - 위험성평가 (Risk Assessment (ISO 12100)): glossary/risk-assessment.md
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
     - 의미 식별자 (Semantic ID (semanticId)): glossary/semantic-id.md
@@ -1029,6 +1037,16 @@ nav:
     - ref-557 — 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장: references/ref-557.md
     - ref-558 — 협동로봇 설치 작업장 안전인증 안내: references/ref-558.md
     - ref-559 — 로봇 시스템 위험성평가 가이드: references/ref-559.md
+    - 'ref-560 — ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells': references/ref-560.md
+    - ref-561 — 이동식 협동로봇 ‘안전기준 산업표준’ 제정…상용화 길 열어: references/ref-561.md
+    - ref-562 — 산업안전보건기준에 관한 규칙 제223조(운전 중 위험 방지): references/ref-562.md
+    - ref-563 — From Safety Standards to Safe Operation with Mobile Robotic Systems Deployment: references/ref-563.md
+    - ? 'ref-564 — A Comparative Study of STPA Hierarchical Structures in Risk Analysis: The Case of a Complex Multi-Robot Mobile System (EECS 2018 학회)'
+      : references/ref-564.md
+    - ref-565 — Collision hazard modeling and analysis in a multi-mobile robots system transportation task with STPA and SPN: references/ref-565.md
+    - ref-566 — EN ISO 12100:2010 - Safety of machinery - General principles for design - Risk assessment and risk reduction: references/ref-566.md
+    - 'ref-567 — [Feature request]: Fire alarm separation for different fleets · Issue #658 · open-rmf/rmf': references/ref-567.md
+    - ref-568 — KS B ISO/TS 15066 로봇 및 로봇 장치 - 협동로봇 (2022-10-12 확인판 있음): references/ref-568.md
     - 'ref-599 — Formal Specification and Verification of Autonomous Robotic Systems: A Survey': references/ref-599.md
     - ref-600 — A Study on Challenges of Testing Robotic Systems: references/ref-600.md
     - ref-601 — ros2_fault_injection — README: references/ref-601.md

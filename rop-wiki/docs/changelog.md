@@ -30,6 +30,27 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
 | 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
+| 2026-09-25-63 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed → draft: 3~11절 첫 작성(표준 책임 분담, 정지·재개·비상 대응, STPA, SafeGate 트랙 반영), 페이지 상태 자동 영역 추가, 각주 11건(3·6·7·8·11절 상세는 주제 페이지로 분리). 2차: 9절 마지막 문장 어미를 추정형으로 수정 |
+| 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s6.md](topics/2026/2026-09-25-area25-s6.md) | 자동 분리: 25. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '운영 조율 수단' 문장을 [사실]·[추정] 두 문장으로 나눴다 |
+| 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s7.md](topics/2026/2026-09-25-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: VDA 5050 행의 관계 칸을 [사실]·[추정]으로 나눴다 |
+| 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s11.md](topics/2026/2026-09-25-area25-s11.md) | 자동 분리: 25. 안전·위험 관리 의 "11. 열린 질문" 절(910자)을 옮겼다 |
+| 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s8.md](topics/2026/2026-09-25-area25-s8.md) | 자동 분리: 25. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(767자)을 옮겼다 |
+| 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s3.md](topics/2026/2026-09-25-area25-s3.md) | 자동 분리: 25. 안전·위험 관리 의 "3. 왜 중요한가" 절(694자)을 옮겼다 |
+| 2026-09-25-63 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 25. 안전·위험 관리: 영역 심화: 3~11절 첫 작성(표준별 책임 분담, 정지·재개·비상 대응, STPA 위험 분석, SafeGate 트랙 반영) |
+| 2026-09-25-63 | 생성 | [docs/references/ref-560.md](references/ref-560.md) | 참고문헌 ref-560 등록: ISO 10218-2:2025 - Robotics — Safety requirements — Part 2:… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-561.md](references/ref-561.md) | 참고문헌 ref-561 등록: 이동식 협동로봇 ‘안전기준 산업표준’ 제정…상용화 길 열어 |
+| 2026-09-25-63 | 생성 | [docs/references/ref-562.md](references/ref-562.md) | 참고문헌 ref-562 등록: 산업안전보건기준에 관한 규칙 제223조(운전 중 위험 방지) |
+| 2026-09-25-63 | 생성 | [docs/references/ref-563.md](references/ref-563.md) | 참고문헌 ref-563 등록: From Safety Standards to Safe Operation with Mobile Robotic… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-564.md](references/ref-564.md) | 참고문헌 ref-564 등록: A Comparative Study of STPA Hierarchical Structures in Risk… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-565.md](references/ref-565.md) | 참고문헌 ref-565 등록: Collision hazard modeling and analysis in a multi-mobile rob… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-566.md](references/ref-566.md) | 참고문헌 ref-566 등록: EN ISO 12100:2010 - Safety of machinery - General principles… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-567.md](references/ref-567.md) | 참고문헌 ref-567 등록: [Feature request]: Fire alarm separation for different fleet… |
+| 2026-09-25-63 | 생성 | [docs/references/ref-568.md](references/ref-568.md) | 참고문헌 ref-568 등록: KS B ISO/TS 15066 로봇 및 로봇 장치 - 협동로봇 (2022-10-12 확인판 있음) |
+| 2026-09-25-63 | 생성 | [docs/glossary/risk-assessment.md](glossary/risk-assessment.md) | 용어집 항목 위험성평가 |
+| 2026-09-25-63 | 갱신 | [docs/glossary/risk-assessment.md](glossary/risk-assessment.md) | 용어집 항목 3단계 위험 감소 방법 |
+| 2026-09-25-63 | 생성 | [docs/glossary/operating-zone.md](glossary/operating-zone.md) | 용어집 항목 운용 구역 |
+| 2026-09-25-63 | 생성 | [docs/glossary/stpa.md](glossary/stpa.md) | 용어집 항목 시스템 이론적 프로세스 분석 |
+| 2026-09-25-63 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05. 2차 수정: 4절 결론 데이터셋 항목에 ref-540·ref-544 각주와 원문 미열람 표기, 6절 첫 행 검증 판정 '충족 · 미승인' |
 | 2026-09-25-62 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가 |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록 |

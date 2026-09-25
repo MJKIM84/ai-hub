@@ -28,7 +28,7 @@ version: 1
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
-| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 3 | 0 | 0 | 6 | 0 | 0 | 9 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -90,16 +90,16 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed | — | 2026-09-24 | 1 |
+| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | published | medium | 2026-09-25 | 2 |
 | [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | seed | — | 2026-09-24 | 1 |
 | [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | seed | — | 2026-09-24 | 1 |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | seed | — | 2026-09-24 | 1 |
 
 ### 검증 통과율
 
-- 실행 61회 중 최종 통과 61회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 61
-- 2차 검증 판정: 통과 61
+- 실행 62회 중 최종 통과 62회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 62
+- 2차 검증 판정: 통과 62
 
 ### 반려·보류 건수
 
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 221 |
-| 오픈소스 문서 | 141 |
-| 표준 | 120 |
+| 논문 | 224 |
+| 오픈소스 문서 | 142 |
+| 표준 | 123 |
 | 벤더 문서 | 37 |
-| 정부·연구기관 | 30 |
+| 정부·연구기관 | 32 |
 | 기사 | 20 |
 | 업계 보고서 | 5 |
 
-신뢰도: medium 398건, high 125건, low 51건
+신뢰도: medium 407건, high 125건, low 51건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 2026-09-24 | 1 | seed |
 | [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 2026-09-24 | 1 | seed |
 | [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 2026-09-24 | 1 | seed |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 2026-09-24 | 1 | seed |
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 0 | published |
+| [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-25 | 0 | published |
 <!-- auto:metrics:end -->
