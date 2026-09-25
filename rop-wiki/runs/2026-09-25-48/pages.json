@@ -15,7 +15,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "section": "4. 핵심 개념과 용어",
       "budget_chars": 1000,
-      "summary": "오류 수준·오류 참조·연결 상태·작업 상태 토큰·분산 추적·FDD·이동 병목 탐지·근본 원인 분석이 이 영역의 기본 용어다. [사실][^ref-051][^ref-111][^ref-502]",
+      "summary": "오류 수준·오류 참조·연결 상태·작업 상태 토큰·분산 추적·FDD·이동 병목 탐지·근본 원인 분석이 이 영역의 기본 용어다. [사실][^ref-051][^ref-111][^ref-447]",
       "planned_findings": [
         "f1",
         "f2",
@@ -45,7 +45,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "section": "6. 대표 접근법과 기술",
       "budget_chars": 900,
-      "summary": "표준 상태 어휘의 시간축 결합, 주문–작업–동작 추적 문맥 연결, 병목 탐지, FDD·RCA, LLM 실패 설명이 대표 접근이다. [추정][^ref-502][^ref-051]",
+      "summary": "표준 상태 어휘의 시간축 결합, 주문–작업–동작 추적 문맥 연결, 병목 탐지, FDD·RCA, LLM 실패 설명이 대표 접근이다. [추정][^ref-447][^ref-051]",
       "planned_findings": [
         "f10",
         "f13",
@@ -80,7 +80,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 1000,
-      "summary": "다중 로봇 FDD 설문, AGV 병목 탐지 비교, 다중 서비스 RCA 설문, REFLECT, SCM 프로세스 마이닝 리뷰, 국내 관제 인터페이스 예비 연구가 있다. [사실][^ref-509][^ref-510]",
+      "summary": "다중 로봇 FDD 설문, AGV 병목 탐지 비교, 다중 서비스 RCA 설문, REFLECT, SCM 프로세스 마이닝 리뷰, 국내 관제 인터페이스 예비 연구가 있다. [사실][^ref-450][^ref-451]",
       "planned_findings": [
         "f15",
         "f16",
@@ -94,7 +94,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
       "budget_chars": 600,
-      "summary": "로봇 내부 진단과 문 개폐 제어는 연계 대상이고, ROP 는 표준 인터페이스 보고를 모아 원인 범주로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. [추정][^ref-500][^ref-051]",
+      "summary": "로봇 내부 진단과 문 개폐 제어는 연계 대상이고, ROP 는 표준 인터페이스 보고를 모아 원인 범주로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. [추정][^ref-445][^ref-051]",
       "planned_findings": [
         "f21",
         "f7"
@@ -134,7 +134,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영)"
+      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area19-s4.md",
@@ -176,7 +176,6 @@
   "glossary_updates": [
     {
       "action": "new",
-      "slug": "root-cause-analysis",
       "term_ko": "근본 원인 분석",
       "term_en": "Root Cause Analysis (RCA)",
       "definition": "관측된 이상이나 실패를 일으킨 가장 근원적인 원인(구성 요소·사건)을 찾아내는 분석이다.",
@@ -185,12 +184,11 @@
         20
       ],
       "sources": [
-        "ref-511"
+        "ref-452"
       ]
     },
     {
       "action": "new",
-      "slug": "fault-detection-and-diagnosis",
       "term_ko": "고장 탐지·진단",
       "term_en": "Fault Detection and Diagnosis (FDD)",
       "definition": "시스템에 고장이 생겼음을 알아내고(탐지) 그 종류와 위치·원인을 밝히는(진단) 기법의 총칭이다.",
@@ -198,12 +196,11 @@
         19
       ],
       "sources": [
-        "ref-509"
+        "ref-450"
       ]
     },
     {
       "action": "new",
-      "slug": "shifting-bottleneck-detection",
       "term_ko": "이동 병목 탐지",
       "term_en": "Shifting Bottleneck Detection (Active Period Method)",
       "definition": "각 설비·차량이 끊김 없이 활성 상태로 있는 구간의 길이로 시점마다 병목을 판정하고 병목의 이동을 추적하는 방법이다.",
@@ -212,12 +209,11 @@
         4
       ],
       "sources": [
-        "ref-510"
+        "ref-451"
       ]
     },
     {
       "action": "new",
-      "slug": "distributed-tracing",
       "term_ko": "분산 추적",
       "term_en": "Distributed Tracing",
       "definition": "하나의 요청이 여러 구성 요소를 거치는 과정을 공통 추적 id 로 묶은 스팬들의 그래프로 기록하는 관측 기법이다.",
@@ -226,7 +222,7 @@
         11
       ],
       "sources": [
-        "ref-502"
+        "ref-447"
       ]
     }
   ],
@@ -243,7 +239,8 @@
       "summary": "VDA 5050 공식 저장소 main 브랜치의 명세 원문(3.0.0 판). 오류 처리와 동작 상태의 관계 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
@@ -258,11 +255,14 @@
       "summary": "VDA 5050 상태 메시지 JSON 스키마. 오류 객체·errorLevel·information 배열 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-500",
+      "id": "ref-445",
       "org": "ROS (ros/diagnostics GitHub)",
       "title": "diagnostics — README (ros2 branch)",
       "published": null,
@@ -273,11 +273,12 @@
       "summary": "ROS 2 진단 체계(/diagnostics 토픽, updater, aggregator, 원격 로깅, self_test) 구성 설명.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-501",
+      "id": "ref-446",
       "org": "ROS 2 (ros2/ros2_tracing GitHub)",
       "title": "ros2_tracing — README",
       "published": null,
@@ -288,11 +289,11 @@
       "summary": "LTTng 기반 ROS 2 추적 계측과 설정 도구 설명, 관련 논문(IEEE RA-L 2022) 인용.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-502",
+      "id": "ref-447",
       "org": "OpenTelemetry (CNCF)",
       "title": "OpenTelemetry Specification — Overview",
       "published": null,
@@ -303,11 +304,14 @@
       "summary": "추적·지표·로그·배기지 신호와 스팬·추적 정의, 문맥 전파(TraceId·SpanId) 설명.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-503",
+      "id": "ref-448",
       "org": "Open Robotics (open-rmf/rmf_internal_msgs)",
       "title": "rmf_task_msgs/msg/Alert.msg",
       "published": null,
@@ -318,7 +322,8 @@
       "summary": "Open-RMF 경보 메시지 정의(심각도 등급, 응답 목록, 관련 작업 id).",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
@@ -333,7 +338,9 @@
       "summary": "Open-RMF 문 모드 값(closed, moving, open, offline, unknown) 정의.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
@@ -348,11 +355,14 @@
       "summary": "Open-RMF 작업 상태 JSON 스키마. 상태 토큰(blocked, delayed 등), 예상 시간, 중단, 배정 상태.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-506",
+      "id": "ref-449",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — json_schemas/connection.schema",
       "published": null,
@@ -363,7 +373,10 @@
       "summary": "VDA 5050 connection 토픽(last will) 스키마. 연결 상태 네 값 정의.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
@@ -378,7 +391,9 @@
       "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. 운용 상태 열거값, errorCodes, 배터리·위치 필드.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
@@ -393,11 +408,12 @@
       "summary": "Open-RMF 문 연동: 문 노드의 상태 발행과 문 어댑터의 감독 역할.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s7.md"
       ]
     },
     {
-      "id": "ref-509",
+      "id": "ref-450",
       "org": "Khalastchi, E., & Kalech, M.",
       "title": "Fault Detection and Diagnosis in Multi-Robot Systems: A Survey",
       "published": "2019",
@@ -408,11 +424,13 @@
       "summary": "원문 미열람. Sensors 19(18):4019. 다중 로봇 시스템의 고장 탐지·진단 과제와 접근을 정리한 설문.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     },
     {
-      "id": "ref-510",
+      "id": "ref-451",
       "org": "Roser, C., Nakano, M., & Tanaka, M.",
       "title": "Comparison of bottleneck detection methods for AGV systems",
       "published": "2003",
@@ -423,11 +441,14 @@
       "summary": "원문 미열람. WSC 2003 Proceedings 1192–1198쪽. AGV 시스템에서 가동률·대기 시간 방법과 이동 병목 탐지를 비교.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     },
     {
-      "id": "ref-511",
+      "id": "ref-452",
       "org": "Soldani, J., & Brogi, A.",
       "title": "Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey",
       "published": "2022",
@@ -438,11 +459,13 @@
       "summary": "원문 미열람. ACM Computing Surveys 55(3). 다중 서비스 응용의 이상 탐지·근본 원인 분석 기법 설문.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s4.md",
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     },
     {
-      "id": "ref-512",
+      "id": "ref-453",
       "org": "Liu, Z., Bahety, A., & Song, S.",
       "title": "REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction",
       "published": "2023",
@@ -453,11 +476,12 @@
       "summary": "원문 미열람. CoRL 2023(PMLR v229). 다중 감각 경험 요약과 LLM 으로 로봇 실패를 설명·수정하는 방법.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s6.md",
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     },
     {
-      "id": "ref-513",
+      "id": "ref-454",
       "org": "International Journal of Production Research(Taylor & Francis), 저자 미확인",
       "title": "Process mining in supply chain management: state-of-the-art, use cases and research outlook",
       "published": "2024",
@@ -468,11 +492,11 @@
       "summary": "원문 미열람. SCM 분야 프로세스 마이닝 현황·활용 사례·연구 전망 리뷰. 저자 미확인.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     },
     {
-      "id": "ref-514",
+      "id": "ref-455",
       "org": "DBpia 게재 논문(저자 미확인)",
       "title": "다중 자율이동로봇 (AMR) 운영을 위한 웹 기반 사용자 중심 관제 인터페이스 설계 연구",
       "published": "2026-07",
@@ -483,7 +507,7 @@
       "summary": "원문 미열람. 다중 AMR 관제 인터페이스를 가상 테스트베드와 피험자 10명 예비 연구로 평가한 국내 논문.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md"
+        "docs/topics/2026/2026-09-25-area19-s8.md"
       ]
     }
   ],
@@ -567,7 +591,7 @@
         19
       ],
       "summary": "하드웨어 드라이버가 /diagnostics 토픽에 진단 정보를 발행하게 하고 발행 도우미·집계·원격 로깅 패키지를 제공한다. ROP 에서는 로봇 내부 진단으로 연계 대상이다.",
-      "ref_id": "ref-500"
+      "ref_id": "ref-445"
     },
     {
       "name": "ros2_tracing",
@@ -579,7 +603,7 @@
         11
       ],
       "summary": "LTTng 기반으로 ROS 2 핵심 패키지에 추적 지점을 넣는 저오버헤드 추적 프레임워크. 로봇 내부 계측 도구로 연계 대상이다.",
-      "ref_id": "ref-501"
+      "ref_id": "ref-446"
     },
     {
       "name": "OpenTelemetry Specification",
@@ -591,7 +615,7 @@
         11
       ],
       "summary": "추적·지표·로그·배기지 신호와 스팬, TraceId·SpanId 문맥 전파를 정의한 관측 명세.",
-      "ref_id": "ref-502"
+      "ref_id": "ref-447"
     },
     {
       "name": "Open-RMF 작업 상태 스키마(rmf_api_msgs task_state)",
@@ -617,7 +641,7 @@
         20
       ],
       "summary": "심각도 등급(INFO·WARNING·ERROR), 운영자 응답 목록, 관련 작업 id 를 담는 경보 메시지 정의.",
-      "ref_id": "ref-503"
+      "ref_id": "ref-448"
     }
   ],
   "additional_research_requests": [
@@ -625,24 +649,26 @@
     "11. 열린 질문(oq-033): Open-RMF·VDA 5050·MassRobotics 상태·오류 어휘 공통 매핑 — 이번 실행 후보였던 inorbit-ai ros_amr_interop README 와 Spatial Process Mining(arXiv 2506.06081)을 출처로 열어 매핑·혼합 흐름 적용 여부 확인 필요(예산 상한으로 미룸).",
     "8. 대표 연구와 자료: Khalastchi·Kalech(2019) 원문에서 1차·2차 계획 진단 구분이 실제로 있는지, Soldani·Brogi(2022) 원문에서 로그 기반 인과 그래프 접근이 있는지 확인 필요 — 현재 [추정]으로 강등됨.",
     "11. 열린 질문(신규 1): VDA 5050 2.x 판의 오류 수준 값 확인 필요 — 3.0.0 판과의 차이를 사실로 쓰려면 2.x 판 원문 근거가 필요하다.",
-    "3. 왜 중요한가·8. 대표 연구와 자료: 국내 물류센터의 로봇 정지·지연 원인 비율이나 이상 대응 시간 실측 자료, 국내 논문(ref-514) 저자·피험자 조건 재확인 필요 — 현재 국내 자료는 단일 예비 연구뿐이다.",
-    "ref-500~ref-514 가 기존 참고문헌 448건과 같은 URL 인지 퍼블리셔 병합 확인 필요(입력 요약본으로는 확인 불가)."
+    "3. 왜 중요한가·8. 대표 연구와 자료: 국내 물류센터의 로봇 정지·지연 원인 비율이나 이상 대응 시간 실측 자료, 국내 논문(ref-455) 저자·피험자 조건 재확인 필요 — 현재 국내 자료는 단일 예비 연구뿐이다.",
+    "ref-445~ref-455 가 기존 참고문헌 448건과 같은 URL 인지 퍼블리셔 병합 확인 필요(입력 요약본으로는 확인 불가).",
+    "형식 재작성 관련(pipeline 담당): 퍼블리셔 4단계가 logs/daily/2026-09-25.md 의 깨진 링크로 실패했으나 오류 메시지가 잘려 대상 링크를 알 수 없다. 페이지 본문 링크는 docs_tree.txt 와 이번 실행이 만드는 페이지만 가리키도록 확인했고, 용어집 slug 는 퍼블리셔가 term_en 에서 만들도록 비웠다. 일일 로그가 아직 만들어지지 않은 참고문헌(ref-445~ref-455)·용어집 페이지를 먼저 링크하는지 확인이 필요하다."
   ],
   "fixes_applied": [
     "f15 — 4절 FDD 항목과 8절에서 '다중 로봇 속성이 FDD 에 서로 다른 어려움을 주며 적용 가능한 FDD 접근을 정리한다'만 [사실]로 쓰고, 1차·2차 계획 진단 구분은 8절에 [추정]과 '검색 요약 기준이며 원문 미확인'을 병기했다.",
     "f17 — 4절·6절·8절에서 '다중 서비스 클라우드 응용의 이상 탐지·근본 원인 분석 기법을 개관한 설문'까지만 [사실]로 쓰고, 로그 기반 인과 그래프 접근은 [추정]으로 강등하고 '로봇 분야 적용은 아니다'를 유지했다.",
     "f20 — 8절에서 [추정]으로 강등하고 수치 네 가지를 피험자 10명·가상 테스트베드 조건과 같은 문장에 '단일 예비 연구의 보고'로 적었으며, 3절에서는 이 수치를 쓰지 않았다.",
     "f20 디지털 트윈 — 8절에서 논문의 디지털 트윈을 현재 상태를 보여 주는 실시간 관제 화면으로 적고 8. 실시간 세계 상태·데이터 일관성에만 연결했으며 22. 시뮬레이션·예측용 디지털 트윈과는 연결하지 않았다.",
-    "f16 — 3절·8절 문구를 '기존 두 방법(가동률·대기 시간 기반)에는 이동 병목 탐지와 비교해 여러 한계가 있다고 보고한다'로 바꾸고, 각주 ref-510 에 발행일 2003과 WSC 2003 Proceedings 1192–1198쪽을 적었다.",
+    "f16 — 3절·8절 문구를 '기존 두 방법(가동률·대기 시간 기반)에는 이동 병목 탐지와 비교해 여러 한계가 있다고 보고한다'로 바꾸고, 각주 ref-451 에 발행일 2003과 WSC 2003 Proceedings 1192–1198쪽을 적었다.",
     "f1·f2·f4 — 4절과 7절 서두에 기준을 'VDA 5050 3.0.0 판(GitHub main 브랜치, 접근일 2026-09-25)'으로 명시하고 main 브랜치는 판이 바뀔 수 있다고 적었다.",
     "f7 — 5절 수행 자원 칸과 7절 Open-RMF 문 행, 9절 표에서 문 개폐 제어 자체를 연계 대상(시설·설비 제어)으로 표시하고 ROP 는 문 상태(DoorMode) 확인과 요청만 다룬다고 썼다.",
     "f11·f12 — 7절 ROS 2 diagnostics·ros2_tracing 행을 로봇 내부 진단·계측 도구로서 연계 대상으로 짧게 다루고 9절 f21 경계와 같은 표현(센서·모터·드라이버 수준의 로봇 내부 진단)을 썼다.",
     "f18 — 6절과 10절에 27. AI·학습·적응과 모델 운영을 번호와 이름으로 연결하고, 27. AI·학습·적응과 모델 운영 페이지에서 오는 연결은 additional_research_requests 에 다음 실행 제안으로 남겼다.",
-    "ref-513 — 13절 각주와 reference_updates 의 기관 표기를 'International Journal of Production Research(Taylor & Francis), 저자 미확인'으로 바꾸고 'Leopold, H. 외'를 쓰지 않았다(8절 본문도 저자명 없이 기재).",
-    "원문 미열람 표시 — ref-509~ref-514 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 여섯 항목에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-500~ref-283 에는 붙이지 않았다.",
+    "ref-454 — 각주와 reference_updates 의 기관 표기를 'International Journal of Production Research(Taylor & Francis), 저자 미확인'으로 바꾸고 'Leopold, H. 외'를 쓰지 않았다(8절 본문도 저자명 없이 기재).",
+    "원문 미열람 표시 — ref-450~ref-455 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 여섯 항목에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-445~ref-283 에는 붙이지 않았다.",
     "열린 질문 신규 1번 — 질문 문장을 'VDA 5050 3.0.0 판의 네 단계 오류 수준과 이전 판(2.x)의 오류 수준이 다를 때'로 고쳐 2.x 두 단계를 사실 전제로 두지 않았다(11절과 open_question_updates 모두).",
     "5절 시나리오 — 첫 문장에 가상 시나리오임을 밝히고 수치를 쓰지 않았으며, 필드·값은 f5·f6·f8·f9(와 문 어댑터 역할 f7)가 확인한 것만 쓰고 원인 판정 절차는 [추정]으로 두었다.",
     "oq-018·oq-033 — 11절에 열림 상태로 두고 해결로 바꾸지 않았으며, f16·f19 는 oq-018 의 부분 자료로만 8절·11절에 연결했다(open_question_updates 에 상태 변경 없음).",
-    "분량 초과 자동 분리: 19. 모니터링·이상 탐지·원인 분석 본문 8,856자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,601자"
+    "분량 초과 자동 분리: 19. 모니터링·이상 탐지·원인 분석 본문 8,856자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,601자",
+    "형식 재작성 — 내용(주장·태그·각주·판정)은 바꾸지 않고, 세부영역 페이지 프런트매터 sources 를 13절 각주 정의(10건)와 일치시켰으며, reference_updates 의 cited_by 를 실제로 각주를 둔 페이지(세부영역·분리 주제 페이지)로 맞추고, glossary_updates 의 slug 를 비워 퍼블리셔가 term_en 에서 만든 경로와 일일 로그 링크가 어긋나지 않게 했다."
   ]
 }

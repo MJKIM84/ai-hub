@@ -1608,6 +1608,77 @@
       "ref_id": "ref-440",
       "run_id": "2026-09-25-44",
       "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 diagnostics",
+      "org": "ROS (ros/diagnostics GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19
+      ],
+      "url": "https://github.com/ros/diagnostics/blob/ros2/README.md",
+      "summary": "하드웨어 드라이버가 /diagnostics 토픽에 진단 정보를 발행하게 하고 발행 도우미·집계·원격 로깅 패키지를 제공한다. ROP 에서는 로봇 내부 진단으로 연계 대상이다.",
+      "ref_id": "ref-445",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ros2_tracing",
+      "org": "ROS 2 (ros2/ros2_tracing GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        11
+      ],
+      "url": "https://github.com/ros2/ros2_tracing",
+      "summary": "LTTng 기반으로 ROS 2 핵심 패키지에 추적 지점을 넣는 저오버헤드 추적 프레임워크. 로봇 내부 계측 도구로 연계 대상이다.",
+      "ref_id": "ref-446",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OpenTelemetry Specification",
+      "org": "OpenTelemetry (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        11
+      ],
+      "url": "https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md",
+      "summary": "추적·지표·로그·배기지 신호와 스팬, TraceId·SpanId 문맥 전파를 정의한 관측 명세.",
+      "ref_id": "ref-447",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 작업 상태 스키마(rmf_api_msgs task_state)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        12,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "summary": "작업·단계·이벤트 상태 토큰(blocked·delayed·error 등), 완료 예상 시간, 중단 기록, 배정 상태를 담는 JSON 스키마.",
+      "ref_id": "ref-111",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 경보 메시지(rmf_task_msgs Alert)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        18,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg",
+      "summary": "심각도 등급(INFO·WARNING·ERROR), 운영자 응답 목록, 관련 작업 id 를 담는 경보 메시지 정의.",
+      "ref_id": "ref-448",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
     }
   ]
 }

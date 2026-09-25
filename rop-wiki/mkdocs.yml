@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 19. 모니터링·이상 탐지·원인 분석 — 대표 연구와 자료: topics/2026/2026-09-25-area19-s8.md
+      - 19. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area19-s7.md
+      - 19. 모니터링·이상 탐지·원인 분석 — 대표 접근법과 기술: topics/2026/2026-09-25-area19-s6.md
+      - 19. 모니터링·이상 탐지·원인 분석 — 핵심 개념과 용어: topics/2026/2026-09-25-area19-s4.md
+      - 19. 모니터링·이상 탐지·원인 분석 — 열린 질문: topics/2026/2026-09-25-area19-s11.md
       - 18. 사람–로봇 협업·운영 인터페이스 — 대표 연구와 자료: topics/2026/2026-09-25-area18-s8.md
       - 18. 사람–로봇 협업·운영 인터페이스 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area18-s7.md
       - 18. 사람–로봇 협업·운영 인터페이스 — 대표 접근법과 기술: topics/2026/2026-09-25-area18-s6.md
@@ -263,6 +268,7 @@ nav:
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
     - 경로망 (Roadmap): glossary/roadmap.md
     - 계획 도메인 정의 언어 (Planning Domain Definition Language (PDDL)): glossary/pddl.md
+    - 고장 탐지·진단 (Fault Detection and Diagnosis (FDD)): glossary/fault-detection-and-diagnosis-fdd.md
     - 공간 그래프 (Space Graph): glossary/space-graph.md
     - 공급망 운영 참조 모델 (SCOR): glossary/scor.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
@@ -270,6 +276,7 @@ nav:
     - 구역 집합 (Zone Set (VDA 5050 zoneSet)): glossary/zone-set.md
     - 구조화 출력 (Structured Output): glossary/structured-output.md
     - 국제 등록 데이터 식별자 (International Registration Data Identifier (IRDI)): glossary/irdi.md
+    - 근본 원인 분석 (Root Cause Analysis (RCA)): glossary/root-cause-analysis-rca.md
     - 글로벌 개별 자산 식별자 (Global Individual Asset Identifier (GIAI)): glossary/giai.md
     - 글로벌 반환형 자산 식별자 (Global Returnable Asset Identifier (GRAI)): glossary/grai.md
     - 기업–제어 시스템 통합 표준 (ISA-95): glossary/isa-95.md
@@ -296,6 +303,7 @@ nav:
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
+    - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
     - 사가 (Saga): glossary/saga.md
@@ -327,6 +335,7 @@ nav:
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
     - 의미 식별자 (Semantic ID (semanticId)): glossary/semantic-id.md
+    - 이동 병목 탐지 (Shifting Bottleneck Detection (Active Period Method)): glossary/shifting-bottleneck-detection-active-period-method.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
@@ -843,6 +852,17 @@ nav:
       : references/ref-443.md
     - ? ref-444 — Submodel Templates of the Asset Administration Shell — Generic Frame for Technical Data for Industrial Equipment in Manufacturing (Version 1.1)
       : references/ref-444.md
+    - ref-445 — diagnostics — README (ros2 branch): references/ref-445.md
+    - ref-446 — ros2_tracing — README: references/ref-446.md
+    - ref-447 — OpenTelemetry Specification — Overview: references/ref-447.md
+    - ref-448 — rmf_task_msgs/msg/Alert.msg: references/ref-448.md
+    - ref-449 — VDA5050/VDA5050 — json_schemas/connection.schema: references/ref-449.md
+    - 'ref-450 — Fault Detection and Diagnosis in Multi-Robot Systems: A Survey': references/ref-450.md
+    - ref-451 — Comparison of bottleneck detection methods for AGV systems: references/ref-451.md
+    - 'ref-452 — Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey': references/ref-452.md
+    - 'ref-453 — REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction': references/ref-453.md
+    - 'ref-454 — Process mining in supply chain management: state-of-the-art, use cases and research outlook': references/ref-454.md
+    - ref-455 — 다중 자율이동로봇 (AMR) 운영을 위한 웹 기반 사용자 중심 관제 인터페이스 설계 연구: references/ref-455.md
     - ref-467 — Order batching and batch sequencing in an AMR-assisted picker-to-parts system: references/ref-467.md
     - 'ref-468 — Human-Robot Cooperation: Coordinating Autonomous Mobile Robots and Human Order Pickers': references/ref-468.md
     - ref-469 — Deploying pickers and robots in cobot-based collaborative order picking systems: references/ref-469.md

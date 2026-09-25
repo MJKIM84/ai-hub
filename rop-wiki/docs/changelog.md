@@ -36,6 +36,29 @@ version: 1
 | 2026-09-25-53 | 생성 | [docs/references/ref-444.md](references/ref-444.md) | 참고문헌 ref-444 등록: Submodel Templates of the Asset Administration Shell — Gener… |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-48 | 갱신 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴 |
+| 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s4.md](topics/2026/2026-09-25-area19-s4.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "4. 핵심 개념과 용어" 절(1,482자)을 옮겼다 |
+| 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s7.md](topics/2026/2026-09-25-area19-s7.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,413자)을 옮겼다 |
+| 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s8.md](topics/2026/2026-09-25-area19-s8.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "8. 대표 연구와 자료" 절(1,396자)을 옮겼다. 형식 재작성: 8. 실시간 세계 상태·데이터 일관성 링크를 주제 페이지 기준 경로로 고침 |
+| 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s6.md](topics/2026/2026-09-25-area19-s6.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "6. 대표 접근법과 기술" 절(861자)을 옮겼다. 형식 재작성: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침 |
+| 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s11.md](topics/2026/2026-09-25-area19-s11.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "11. 열린 질문" 절(767자)을 옮겼다 |
+| 2026-09-25-48 | 요약 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 19. 모니터링·이상 탐지·원인 분석: 영역 심화: 3~11절 신규 작성(표준 상태·오류 어휘, 원인 구분 접근, ROP 경계), 1차 조건부 승인 수정 14건 반영 |
+| 2026-09-25-48 | 생성 | [docs/references/ref-445.md](references/ref-445.md) | 참고문헌 ref-445 등록: diagnostics — README (ros2 branch) |
+| 2026-09-25-48 | 생성 | [docs/references/ref-446.md](references/ref-446.md) | 참고문헌 ref-446 등록: ros2_tracing — README |
+| 2026-09-25-48 | 생성 | [docs/references/ref-447.md](references/ref-447.md) | 참고문헌 ref-447 등록: OpenTelemetry Specification — Overview |
+| 2026-09-25-48 | 생성 | [docs/references/ref-448.md](references/ref-448.md) | 참고문헌 ref-448 등록: rmf_task_msgs/msg/Alert.msg |
+| 2026-09-25-48 | 생성 | [docs/references/ref-449.md](references/ref-449.md) | 참고문헌 ref-449 등록: VDA5050/VDA5050 — json_schemas/connection.schema |
+| 2026-09-25-48 | 생성 | [docs/references/ref-450.md](references/ref-450.md) | 참고문헌 ref-450 등록: Fault Detection and Diagnosis in Multi-Robot Systems: A Surv… |
+| 2026-09-25-48 | 생성 | [docs/references/ref-451.md](references/ref-451.md) | 참고문헌 ref-451 등록: Comparison of bottleneck detection methods for AGV systems |
+| 2026-09-25-48 | 생성 | [docs/references/ref-452.md](references/ref-452.md) | 참고문헌 ref-452 등록: Anomaly Detection and Failure Root Cause Analysis in (Micro)… |
+| 2026-09-25-48 | 생성 | [docs/references/ref-453.md](references/ref-453.md) | 참고문헌 ref-453 등록: REFLECT: Summarizing Robot Experiences for Failure Explanati… |
+| 2026-09-25-48 | 생성 | [docs/references/ref-454.md](references/ref-454.md) | 참고문헌 ref-454 등록: Process mining in supply chain management: state-of-the-art,… |
+| 2026-09-25-48 | 생성 | [docs/references/ref-455.md](references/ref-455.md) | 참고문헌 ref-455 등록: 다중 자율이동로봇 (AMR) 운영을 위한 웹 기반 사용자 중심 관제 인터페이스 설계 연구 |
+| 2026-09-25-48 | 생성 | [docs/glossary/root-cause-analysis-rca.md](glossary/root-cause-analysis-rca.md) | 용어집 항목 근본 원인 분석 |
+| 2026-09-25-48 | 생성 | [docs/glossary/fault-detection-and-diagnosis-fdd.md](glossary/fault-detection-and-diagnosis-fdd.md) | 용어집 항목 고장 탐지·진단 |
+| 2026-09-25-48 | 생성 | [docs/glossary/shifting-bottleneck-detection-active-period-method.md](glossary/shifting-bottleneck-detection-active-period-method.md) | 용어집 항목 이동 병목 탐지 |
+| 2026-09-25-48 | 생성 | [docs/glossary/distributed-tracing.md](glossary/distributed-tracing.md) | 용어집 항목 분산 추적 |
+| 2026-09-25-48 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 '실행 2026-09-25-47 보강' 소절 추가, 4절 결론·불확실성 추가, 새 질문 q4-15, 6절 완료 조건 근거 갱신(미충족·미승인), 7절 반영 제안, 8절 출처(ref-437~439 추가, ref-243 각주는 기존 게시본 형태 유지), 9절 이력 |
 | 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | IDTA 02047 행 종류 칸에 서브모델 요소 묶음 구성(검색 요약 기준)·템플릿 최상위 구조·충전 요소 식별자 추정(출처 충돌 병기), 출처 칸에 ref-198 추가, 상태 문구에 명세 PDF 원문 미열람 추가, 출처·이력 갱신 |
 | 2026-09-25-47 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 '범위 능력 충전 요소의 묶음 위치와 세 층 의미 식별자(실행 2026-09-25-47)' 단락과 ref-438 각주 추가 |
