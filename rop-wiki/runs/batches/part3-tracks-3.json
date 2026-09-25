@@ -1,132 +1,105 @@
 {
-  "batch_id": "part3-tracks-2",
+  "batch_id": "part3-tracks-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 02:50:08",
+  "updated": "2026-09-25 02:51:57",
   "concurrency": 3,
   "items": [
     {
       "index": 0,
-      "label": "트랙1 매뉴얼 능력 온톨로지 #1",
-      "item": {
-        "run_type": "track",
-        "track": "manual-capability-ontology",
-        "max_questions": 3,
-        "group": "t1",
-        "label": "트랙1 매뉴얼 능력 온톨로지 #1",
-        "resume": "2026-09-25-06"
-      },
-      "status": "게시",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-06",
-          "started": "2026-09-25 02:04:21",
-          "agents_exit": 2,
-          "publish_exit": null,
-          "adopted": true,
-          "agents_done": "2026-09-25 02:05:06"
-        },
-        {
-          "run_id": "2026-09-25-16",
-          "started": "2026-09-25 02:05:21",
-          "agents_exit": 0,
-          "publish_exit": 0,
-          "agents_done": "2026-09-25 02:49:16",
-          "published_at": "2026-09-25 02:50:08",
-          "cost_usd": 23.2728,
-          "duration_sec": 2663.2,
-          "end_state": "게시 완료"
-        }
-      ],
-      "run_id": "2026-09-25-16"
-    },
-    {
-      "index": 1,
-      "label": "트랙2 자연어 작업 챗봇 #2",
-      "item": {
-        "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #2",
-        "resume": "2026-09-25-12"
-      },
-      "status": "에이전트 단계 진행",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-12",
-          "started": "2026-09-25 02:04:41",
-          "agents_exit": 2,
-          "publish_exit": null,
-          "adopted": true,
-          "agents_done": "2026-09-25 02:32:12"
-        },
-        {
-          "run_id": "2026-09-25-21",
-          "started": "2026-09-25 02:32:13",
-          "agents_exit": null,
-          "publish_exit": null
-        }
-      ],
-      "run_id": "2026-09-25-21"
-    },
-    {
-      "index": 2,
-      "label": "트랙3 도면 인식 #2",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #2",
-        "resume": "2026-09-25-11"
-      },
-      "status": "게시",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-11",
-          "started": "2026-09-25 02:05:01",
-          "agents_exit": 0,
-          "publish_exit": 0,
-          "adopted": true,
-          "agents_done": "2026-09-25 02:24:32",
-          "published_at": "2026-09-25 02:25:16",
-          "cost_usd": 18.3906,
-          "duration_sec": 1939.7,
-          "end_state": "게시 완료"
-        }
-      ],
-      "run_id": "2026-09-25-11"
-    },
-    {
-      "index": 3,
       "label": "트랙1 매뉴얼 능력 온톨로지 #2",
       "item": {
         "run_type": "track",
         "track": "manual-capability-ontology",
         "max_questions": 3,
         "group": "t1",
-        "label": "트랙1 매뉴얼 능력 온톨로지 #2"
+        "label": "트랙1 매뉴얼 능력 온톨로지 #2",
+        "resume": "2026-09-25-23"
       },
-      "status": "에이전트 단계 진행",
+      "status": "넘겨받은 실행 대기",
       "attempts": [
         {
           "run_id": "2026-09-25-23",
-          "started": "2026-09-25 02:50:08",
+          "started": "2026-09-25 02:51:37",
           "agents_exit": null,
-          "publish_exit": null
+          "publish_exit": null,
+          "adopted": true
         }
       ],
       "run_id": "2026-09-25-23"
     },
     {
-      "index": 4,
-      "label": "트랙2 자연어 작업 챗봇 #3",
+      "index": 1,
+      "label": "트랙2 자연어 작업 챗봇 #2 q1-02",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "question_ids": [
+          "q1-02"
+        ],
+        "stage": 1,
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #3"
+        "label": "트랙2 자연어 작업 챗봇 #2 q1-02",
+        "resume": "2026-09-25-21"
+      },
+      "status": "넘겨받은 실행 대기",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-21",
+          "started": "2026-09-25 02:51:57",
+          "agents_exit": null,
+          "publish_exit": null,
+          "adopted": true
+        }
+      ],
+      "run_id": "2026-09-25-21"
+    },
+    {
+      "index": 2,
+      "label": "트랙3 도면 인식 #4 q1-04",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "question_ids": [
+          "q1-04"
+        ],
+        "stage": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #4 q1-04",
+        "resume": "2026-09-25-22"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 3,
+      "label": "트랙2 자연어 작업 챗봇 #3 q1-03",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "stage": 1,
+        "question_ids": [
+          "q1-03"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #3 q1-03"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 4,
+      "label": "트랙3 도면 인식 #5 q2-01",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 2,
+        "question_ids": [
+          "q2-01"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #5 q2-01"
       },
       "status": "대기",
       "attempts": [],
@@ -134,32 +107,6 @@
     },
     {
       "index": 5,
-      "label": "트랙3 도면 인식 #3",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #3"
-      },
-      "status": "게시",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-19",
-          "started": "2026-09-25 02:25:17",
-          "agents_exit": 0,
-          "publish_exit": 0,
-          "agents_done": "2026-09-25 02:48:20",
-          "published_at": "2026-09-25 02:49:09",
-          "cost_usd": 14.0193,
-          "duration_sec": 1409.9,
-          "end_state": "게시 완료"
-        }
-      ],
-      "run_id": "2026-09-25-19"
-    },
-    {
-      "index": 6,
       "label": "트랙1 매뉴얼 능력 온톨로지 #3",
       "item": {
         "run_type": "track",
@@ -173,14 +120,34 @@
       "run_id": null
     },
     {
-      "index": 7,
-      "label": "트랙2 자연어 작업 챗봇 #4",
+      "index": 6,
+      "label": "트랙2 자연어 작업 챗봇 #4 q1-04",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 1,
+        "question_ids": [
+          "q1-04"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #4"
+        "label": "트랙2 자연어 작업 챗봇 #4 q1-04"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 7,
+      "label": "트랙3 도면 인식 #6 q2-02",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 2,
+        "question_ids": [
+          "q2-02"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #6 q2-02"
       },
       "status": "대기",
       "attempts": [],
@@ -188,27 +155,6 @@
     },
     {
       "index": 8,
-      "label": "트랙3 도면 인식 #4",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #4"
-      },
-      "status": "에이전트 단계 진행",
-      "attempts": [
-        {
-          "run_id": "2026-09-25-22",
-          "started": "2026-09-25 02:49:12",
-          "agents_exit": null,
-          "publish_exit": null
-        }
-      ],
-      "run_id": "2026-09-25-22"
-    },
-    {
-      "index": 9,
       "label": "트랙1 매뉴얼 능력 온톨로지 #4",
       "item": {
         "run_type": "track",
@@ -222,14 +168,34 @@
       "run_id": null
     },
     {
-      "index": 10,
-      "label": "트랙2 자연어 작업 챗봇 #5",
+      "index": 9,
+      "label": "트랙2 자연어 작업 챗봇 #5 q2-01",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 2,
+        "question_ids": [
+          "q2-01"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #5"
+        "label": "트랙2 자연어 작업 챗봇 #5 q2-01"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 10,
+      "label": "트랙3 도면 인식 #7 q2-03",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 2,
+        "question_ids": [
+          "q2-03"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #7 q2-03"
       },
       "status": "대기",
       "attempts": [],
@@ -237,20 +203,6 @@
     },
     {
       "index": 11,
-      "label": "트랙3 도면 인식 #5",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #5"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 12,
       "label": "트랙1 매뉴얼 능력 온톨로지 #5",
       "item": {
         "run_type": "track",
@@ -264,14 +216,34 @@
       "run_id": null
     },
     {
-      "index": 13,
-      "label": "트랙2 자연어 작업 챗봇 #6",
+      "index": 12,
+      "label": "트랙2 자연어 작업 챗봇 #6 q2-02",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 2,
+        "question_ids": [
+          "q2-02"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #6"
+        "label": "트랙2 자연어 작업 챗봇 #6 q2-02"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 13,
+      "label": "트랙3 도면 인식 #8 q3-01",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 3,
+        "question_ids": [
+          "q3-01"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #8 q3-01"
       },
       "status": "대기",
       "attempts": [],
@@ -279,20 +251,6 @@
     },
     {
       "index": 14,
-      "label": "트랙3 도면 인식 #6",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #6"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 15,
       "label": "트랙1 매뉴얼 능력 온톨로지 #6",
       "item": {
         "run_type": "track",
@@ -306,14 +264,34 @@
       "run_id": null
     },
     {
-      "index": 16,
-      "label": "트랙2 자연어 작업 챗봇 #7",
+      "index": 15,
+      "label": "트랙2 자연어 작업 챗봇 #7 q2-03",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 2,
+        "question_ids": [
+          "q2-03"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #7"
+        "label": "트랙2 자연어 작업 챗봇 #7 q2-03"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 16,
+      "label": "트랙3 도면 인식 #9 q3-02",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 3,
+        "question_ids": [
+          "q3-02"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #9 q3-02"
       },
       "status": "대기",
       "attempts": [],
@@ -321,20 +299,6 @@
     },
     {
       "index": 17,
-      "label": "트랙3 도면 인식 #7",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #7"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 18,
       "label": "트랙1 매뉴얼 능력 온톨로지 #7",
       "item": {
         "run_type": "track",
@@ -348,14 +312,34 @@
       "run_id": null
     },
     {
-      "index": 19,
-      "label": "트랙2 자연어 작업 챗봇 #8",
+      "index": 18,
+      "label": "트랙2 자연어 작업 챗봇 #8 q3-01",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 3,
+        "question_ids": [
+          "q3-01"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #8"
+        "label": "트랙2 자연어 작업 챗봇 #8 q3-01"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 19,
+      "label": "트랙3 도면 인식 #10 q3-03",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 3,
+        "question_ids": [
+          "q3-03"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #10 q3-03"
       },
       "status": "대기",
       "attempts": [],
@@ -363,20 +347,6 @@
     },
     {
       "index": 20,
-      "label": "트랙3 도면 인식 #8",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #8"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 21,
       "label": "트랙1 매뉴얼 능력 온톨로지 #8",
       "item": {
         "run_type": "track",
@@ -390,14 +360,34 @@
       "run_id": null
     },
     {
-      "index": 22,
-      "label": "트랙2 자연어 작업 챗봇 #9",
+      "index": 21,
+      "label": "트랙2 자연어 작업 챗봇 #9 q3-02",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 3,
+        "question_ids": [
+          "q3-02"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #9"
+        "label": "트랙2 자연어 작업 챗봇 #9 q3-02"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 22,
+      "label": "트랙3 도면 인식 #11 q3-04",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "stage": 3,
+        "question_ids": [
+          "q3-04"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #11 q3-04"
       },
       "status": "대기",
       "attempts": [],
@@ -405,13 +395,16 @@
     },
     {
       "index": 23,
-      "label": "트랙3 도면 인식 #9",
+      "label": "트랙2 자연어 작업 챗봇 #10 q3-03",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #9"
+        "track": "nl-task-chatbot",
+        "stage": 3,
+        "question_ids": [
+          "q3-03"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #10 q3-03"
       },
       "status": "대기",
       "attempts": [],
@@ -419,13 +412,16 @@
     },
     {
       "index": 24,
-      "label": "트랙2 자연어 작업 챗봇 #10",
+      "label": "트랙3 도면 인식 #12 q4-01",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #10"
+        "track": "floorplan-recognition",
+        "stage": 4,
+        "question_ids": [
+          "q4-01"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #12 q4-01"
       },
       "status": "대기",
       "attempts": [],
@@ -433,13 +429,16 @@
     },
     {
       "index": 25,
-      "label": "트랙3 도면 인식 #10",
+      "label": "트랙2 자연어 작업 챗봇 #11 q3-04",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #10"
+        "track": "nl-task-chatbot",
+        "stage": 3,
+        "question_ids": [
+          "q3-04"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #11 q3-04"
       },
       "status": "대기",
       "attempts": [],
@@ -447,13 +446,16 @@
     },
     {
       "index": 26,
-      "label": "트랙2 자연어 작업 챗봇 #11",
+      "label": "트랙3 도면 인식 #13 q4-02",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #11"
+        "track": "floorplan-recognition",
+        "stage": 4,
+        "question_ids": [
+          "q4-02"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #13 q4-02"
       },
       "status": "대기",
       "attempts": [],
@@ -461,13 +463,16 @@
     },
     {
       "index": 27,
-      "label": "트랙3 도면 인식 #11",
+      "label": "트랙2 자연어 작업 챗봇 #12 q4-01",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #11"
+        "track": "nl-task-chatbot",
+        "stage": 4,
+        "question_ids": [
+          "q4-01"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #12 q4-01"
       },
       "status": "대기",
       "attempts": [],
@@ -475,13 +480,16 @@
     },
     {
       "index": 28,
-      "label": "트랙2 자연어 작업 챗봇 #12",
+      "label": "트랙3 도면 인식 #14 q4-03",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #12"
+        "track": "floorplan-recognition",
+        "stage": 4,
+        "question_ids": [
+          "q4-03"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #14 q4-03"
       },
       "status": "대기",
       "attempts": [],
@@ -489,13 +497,16 @@
     },
     {
       "index": 29,
-      "label": "트랙3 도면 인식 #12",
+      "label": "트랙2 자연어 작업 챗봇 #13 q4-02",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #12"
+        "track": "nl-task-chatbot",
+        "stage": 4,
+        "question_ids": [
+          "q4-02"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #13 q4-02"
       },
       "status": "대기",
       "attempts": [],
@@ -503,13 +514,16 @@
     },
     {
       "index": 30,
-      "label": "트랙2 자연어 작업 챗봇 #13",
+      "label": "트랙3 도면 인식 #15 q4-04",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #13"
+        "track": "floorplan-recognition",
+        "stage": 4,
+        "question_ids": [
+          "q4-04"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #15 q4-04"
       },
       "status": "대기",
       "attempts": [],
@@ -517,13 +531,16 @@
     },
     {
       "index": 31,
-      "label": "트랙3 도면 인식 #13",
+      "label": "트랙2 자연어 작업 챗봇 #14 q4-03",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #13"
+        "track": "nl-task-chatbot",
+        "stage": 4,
+        "question_ids": [
+          "q4-03"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #14 q4-03"
       },
       "status": "대기",
       "attempts": [],
@@ -531,13 +548,16 @@
     },
     {
       "index": 32,
-      "label": "트랙2 자연어 작업 챗봇 #14",
+      "label": "트랙3 도면 인식 #16 q5-01",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #14"
+        "track": "floorplan-recognition",
+        "stage": 5,
+        "question_ids": [
+          "q5-01"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #16 q5-01"
       },
       "status": "대기",
       "attempts": [],
@@ -545,13 +565,16 @@
     },
     {
       "index": 33,
-      "label": "트랙3 도면 인식 #14",
+      "label": "트랙2 자연어 작업 챗봇 #15 q4-04",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #14"
+        "track": "nl-task-chatbot",
+        "stage": 4,
+        "question_ids": [
+          "q4-04"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #15 q4-04"
       },
       "status": "대기",
       "attempts": [],
@@ -559,13 +582,16 @@
     },
     {
       "index": 34,
-      "label": "트랙2 자연어 작업 챗봇 #15",
+      "label": "트랙3 도면 인식 #17 q5-02",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #15"
+        "track": "floorplan-recognition",
+        "stage": 5,
+        "question_ids": [
+          "q5-02"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #17 q5-02"
       },
       "status": "대기",
       "attempts": [],
@@ -573,13 +599,16 @@
     },
     {
       "index": 35,
-      "label": "트랙3 도면 인식 #15",
+      "label": "트랙2 자연어 작업 챗봇 #16 q5-01",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #15"
+        "track": "nl-task-chatbot",
+        "stage": 5,
+        "question_ids": [
+          "q5-01"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #16 q5-01"
       },
       "status": "대기",
       "attempts": [],
@@ -587,13 +616,16 @@
     },
     {
       "index": 36,
-      "label": "트랙2 자연어 작업 챗봇 #16",
+      "label": "트랙3 도면 인식 #18 q5-03",
       "item": {
         "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #16"
+        "track": "floorplan-recognition",
+        "stage": 5,
+        "question_ids": [
+          "q5-03"
+        ],
+        "group": "t3",
+        "label": "트랙3 도면 인식 #18 q5-03"
       },
       "status": "대기",
       "attempts": [],
@@ -601,13 +633,16 @@
     },
     {
       "index": 37,
-      "label": "트랙3 도면 인식 #16",
+      "label": "트랙2 자연어 작업 챗봇 #17 q5-02",
       "item": {
         "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #16"
+        "track": "nl-task-chatbot",
+        "stage": 5,
+        "question_ids": [
+          "q5-02"
+        ],
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #17 q5-02"
       },
       "status": "대기",
       "attempts": [],
@@ -615,55 +650,16 @@
     },
     {
       "index": 38,
-      "label": "트랙2 자연어 작업 챗봇 #17",
+      "label": "트랙2 자연어 작업 챗봇 #18 q5-03",
       "item": {
         "run_type": "track",
         "track": "nl-task-chatbot",
-        "max_questions": 1,
+        "stage": 5,
+        "question_ids": [
+          "q5-03"
+        ],
         "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #17"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 39,
-      "label": "트랙3 도면 인식 #17",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #17"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 40,
-      "label": "트랙2 자연어 작업 챗봇 #18",
-      "item": {
-        "run_type": "track",
-        "track": "nl-task-chatbot",
-        "max_questions": 1,
-        "group": "t2",
-        "label": "트랙2 자연어 작업 챗봇 #18"
-      },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
-    },
-    {
-      "index": 41,
-      "label": "트랙3 도면 인식 #18",
-      "item": {
-        "run_type": "track",
-        "track": "floorplan-recognition",
-        "max_questions": 1,
-        "group": "t3",
-        "label": "트랙3 도면 인식 #18"
+        "label": "트랙2 자연어 작업 챗봇 #18 q5-03"
       },
       "status": "대기",
       "attempts": [],
