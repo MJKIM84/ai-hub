@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-cat-A",
   "date": "2026-09-25",
-  "updated": "2026-09-25 03:10:40",
+  "updated": "2026-09-25 03:28:08",
   "concurrency": 1,
   "items": [
     {
@@ -12,13 +12,18 @@
         "category": "A",
         "label": "대분류 A 연결"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-29",
           "started": "2026-09-25 03:10:40",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 03:25:38",
+          "published_at": "2026-09-25 03:28:07",
+          "cost_usd": 10.1796,
+          "duration_sec": 941.7,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-29"

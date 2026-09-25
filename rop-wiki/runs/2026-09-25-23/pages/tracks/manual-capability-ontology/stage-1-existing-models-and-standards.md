@@ -219,7 +219,7 @@ Electronics(2026-08-11 게재) 연구는 이종 다중 로봇 작업 배정에�
 
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
-| 모델·표준 비교표([model-standard-comparison.md](model-standard-comparison.md)) 작성 | 충족 | [모델·표준 비교표](model-standard-comparison.md)의 후보 10행과 후보 밖 5행이 모두 채워졌다. 학술 온톨로지 행(IEEE 1872 CORA, IEEE 1872.2, KnowRob·SOMA, SSN/SOSA)은 실행 2026-09-25-23에서 제3자 구현·작업반 편집본·공식 저장소 원문으로 채웠고, KnowRob 칸은 "README 범위에서 판정 불가 — SOMA 행 참조"다 | 미충족(단계 전체) · 미승인 |
+| 모델·표준 비교표([model-standard-comparison.md](model-standard-comparison.md)) 작성 | 충족 | [모델·표준 비교표](model-standard-comparison.md)의 후보 10행과 후보 밖 5행 모두에 조사 결과가 있으나, PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행과 후보 밖 RCO·이종 자율 로봇 능력·스킬 모델 행에는 "미조사" 칸이 남아 있다. 학술 온톨로지 행(IEEE 1872 CORA, IEEE 1872.2, KnowRob·SOMA, SSN/SOSA)은 실행 2026-09-25-23에서 제3자 구현·작업반 편집본·공식 저장소 원문으로 채웠고, KnowRob 칸은 "README 범위에서 판정 불가 — SOMA 행 참조"다 | 미충족(단계 전체) · 미승인 |
 | ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 반영됨 | 미충족 | 초안은 실었으나 일부만 개념에 반영: 아홉 후보 가운데 요구·제공 한정자, 실행 상태, 부착 인터페이스·적재 취급 장치 위치만 [능력 온톨로지 초안](ontology-draft.md) v0.3에 반영됐고 구성 버전·운용 구역·환경 조건·충전 조건은 6절 질문으로 남았다 | 미충족 · 미승인 |
 
 다음 단계로 전환: 아니오(요구 목록 일부 미반영, 막힌 질문 q1-08·q1-09)

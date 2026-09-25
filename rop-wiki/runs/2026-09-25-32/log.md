@@ -7,3 +7,11 @@
 - 2026-09-25 12:23:18 KST [준비] 결과: 성공 · 소요 0초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 12:23:19 KST [대상 선정] 결과: 성공 · 소요 1초 · category_link · 없음
 - 2026-09-25 12:23:19 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-32/prompts/research.md (246,520자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 12:27:25 KST [리서치 에이전트] 호출 완료(시도 1): 턴 14 · 4분 6초 · 비용 $2.3015 · subtype success
+- 2026-09-25 12:27:25 KST [리서치 에이전트] 저장: runs/2026-09-25-32/research.json
+- 2026-09-25 12:27:25 KST [형식 검증] 리서치 산출물 검사: 출처 33건 중 원문 열람 12건 · 신뢰도 상한 적용 2건
+- 2026-09-25 12:27:25 KST [형식 검증]   - 출처 ref-040: data/source_texts 의 원문 텍스트(data/source_texts/ref-040.txt)가 있어 fetched true(github_raw)
+- 2026-09-25 12:27:25 KST [형식 검증]   - 출처 ref-031: data/source_texts 의 원문 텍스트(data/source_texts/ref-031.txt)가 있어 fetched true(github_raw)
+- 2026-09-25 12:27:25 KST [리서치] 예산 점검: 예산 안
+- 2026-09-25 12:27:25 KST [리서치] 결과: 성공 · 소요 4분 6초 · 예산 안
+- 2026-09-25 12:27:26 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-32/prompts/verification1.md (363,885자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
