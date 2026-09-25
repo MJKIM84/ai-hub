@@ -76,7 +76,7 @@
       "claim": "ROS 2 설계 문서는 ROS 2가 DDS를 채택해 ROS 1의 중앙 마스터 없이 완전 분산 방식으로 참여자를 발견하게 했고, 이로써 마스터라는 단일 장애점을 없앴다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-468"
+        "ref-297"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -90,7 +90,7 @@
       "claim": "ROS 2 QoS 설계 문서는 저가 로봇의 불안정한 무선망을 배경으로 이력(history)·깊이(depth)·신뢰성(최선 노력/신뢰)·지속성(transient local/volatile) 정책을 두고, 센서 데이터에는 완전성보다 적시성을 우선해 최선 노력과 작은 큐를, 서비스·파라미터에는 신뢰 전송을 쓰는 프로파일을 제시한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-469"
+        "ref-298"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -104,7 +104,7 @@
       "claim": "ROS 2 미들웨어 구현 rmw_zenoh는 기본적으로 Zenoh 라우터를 거쳐 가십(gossip)으로 발견 정보를 주고받고 멀티캐스트 발견은 꺼 두며, 서로 다른 호스트를 잇려면 한쪽 라우터가 다른 라우터의 엔드포인트에 연결하도록 설정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-470"
+        "ref-299"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -132,7 +132,7 @@
       "claim": "Open-RMF rmf-web의 API 서버는 ROS 2 기반 RMF와 웹 클라이언트 사이를 잇는 별도 서비스로, 플릿 어댑터가 API 서버 엔드포인트로 작업·로봇 상태를 보내며, 기본 설정에서는 비영속 내부 데이터베이스를 쓰고 설정 파일로 영속 저장소를 지정할 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-473"
+        "ref-302"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -146,7 +146,7 @@
       "claim": "KubeEdge는 클라우드 부분(CloudHub·EdgeController·DeviceController)과 엣지 부분(EdgeHub·Edged·MetaManager 등)으로 나뉘며, 클라우드–엣지 네트워크가 불안정하거나 엣지가 오프라인 상태에서 재시작되어도 엣지 노드와 애플리케이션이 자율적으로 계속 동작하도록 설계되었다고 밝힌다.",
       "tag": "사실",
       "source_ids": [
-        "ref-471"
+        "ref-300"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -160,7 +160,7 @@
       "claim": "Azure IoT Edge 문서는 오프라인 동안 엣지 허브가 상위로 보낼 메시지를 재연결까지 저장하고 로컬 모듈·하위 장치를 인증해 현장 안 통신을 이어 가며, 메시지 보관 기본 수명은 7,200초이고 재연결 즉시 저장된 메시지를 보낸다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-472"
+        "ref-301"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -175,7 +175,7 @@
       "claim": "NIST SP 500-325는 포그 컴퓨팅을 클라우드와 말단 장치 사이에서 지연을 고려한 분산 애플리케이션을 지원하는 계층형 모델로 제시하고, 포그 노드가 논리적 위치와 통신 지연 비용을 알아 요청–응답 시간을 줄인다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-474"
+        "ref-303"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,7 +190,7 @@
       "claim": "Kehoe 외(2015)는 클라우드가 로봇·자동화에 주는 이점을 빅데이터 접근, 온디맨드 병렬 계산, 로봇 간 집단 학습, 사람 계산(크라우드소싱) 네 가지로 정리했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-476"
+        "ref-305"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -205,7 +205,7 @@
       "claim": "FogROS2 저자들은 ROS 2 노드를 클라우드·포그로 넘기는 이 플랫폼이 실험에서 SLAM 지연을 50% 줄이고 파지 계획 시간을 14초에서 1.2초로, 동작 계획을 45배 빠르게 했다고 보고했으며, 이를 위해 쿠버네티스 백엔드, UDP 기반 보안 통신, 영상 H.264 압축을 썼다.",
       "tag": "사실",
       "source_ids": [
-        "ref-475"
+        "ref-304"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -220,7 +220,7 @@
       "claim": "공장 내 물류용 인프라 기반 자율이동로봇 연구(arXiv 2512.15215)는 인프라 센싱·현장 내(on-premise) 클라우드 계산·로봇 탑재 자율성을 결합한 참조 구조를 제시하고, 계산 부하를 엣지로 넘기기 위해 무선 시간 민감 네트워크(wireless TSN)를 쓰는 방향을 전망했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-479"
+        "ref-308"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -235,7 +235,7 @@
       "claim": "Gilbert·Lynch(2002)는 비동기 네트워크 모델에서 분산 서비스가 일관성·가용성·분할 내성을 동시에 모두 만족할 수 없음을 증명해 Brewer의 추측(CAP)을 정리로 만들었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-481"
+        "ref-310"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -250,7 +250,7 @@
       "claim": "MQTT 5.0 표준은 연결 종료 뒤 세션 상태(미확인 QoS 1 메시지·구독)를 보존하는 세션 만료 간격, 발행 메시지의 수명인 메시지 만료 간격, 연결이 끊긴 뒤 유언 메시지 발행을 늦추는 유언 지연 간격, 여러 구독자에 메시지를 나누는 공유 구독을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-477"
+        "ref-306"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -266,7 +266,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-477"
+        "ref-306"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -281,7 +281,7 @@
       "claim": "ETRI Journal 논문(2020)은 공장 자동화 같은 초저지연 서비스가 종단 간 10ms 미만 지연을 요구하며, 3GPP가 Release 15/16에서 모바일 엣지 컴퓨팅(MEC)을, Release 16/17에서 IEEE 802.1 시간 민감 네트워킹(TSN)과 연동하는 시간 민감 통신을 표준화하고 있다고 정리했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-482"
+        "ref-311"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -296,7 +296,7 @@
       "claim": "CJ대한통운은 이천 2풀필먼트센터에 물류센터 최초로 5G 특화망 이음5G를 구축했다고 발표하면서 기존 와이파이의 채널 간섭·지연을 생산성 저하 원인으로 들고, 무선 단말 시범 적용 뒤 로봇·설비·CCTV로 확대하겠다고 밝혔으며 와이파이 대비 약 1,000배 빠른 속도를 주장했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-478"
+        "ref-307"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -312,7 +312,7 @@
       "claim": "FreightWaves 기사가 전한 하이브리드 WMS 공급사(Synergy Logistics)의 조사 보고서는 응답 조직의 84%가 최근 24개월 안에 큰 운영 중단을 한 번 이상 겪었고, 절반 가까이가 소프트웨어·연결 중단으로 자동화 자산이 멈췄으며, 중단 비용이 시간당 5천~10만 달러라고 주장한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-480"
+        "ref-309"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -344,9 +344,9 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-471",
-        "ref-472",
-        "ref-481"
+        "ref-300",
+        "ref-301",
+        "ref-310"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -361,11 +361,11 @@
       "claim": "확인한 자료를 종합하면 역할 분담은 로봇 탑재부가 실시간 주행·회피를, 현장 서버(엣지·포그)가 지연에 민감한 배정·교통·설비 연동과 단절 중 운영 지속을, 클라우드가 대규모 계산·학습·분석·여러 거점 가시성을 맡는 층 구조로 정리될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-474",
-        "ref-476",
-        "ref-475",
-        "ref-479",
-        "ref-480"
+        "ref-303",
+        "ref-305",
+        "ref-304",
+        "ref-308",
+        "ref-309"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -381,7 +381,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-478"
+        "ref-307"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -396,9 +396,9 @@
       "claim": "rmw_zenoh의 라우터 간 연결(f6), free_fleet의 로봇별 Zenoh 브리지(f7), 별도 기계에 둘 수 있는 rmf-web API 서버(f8)를 보면 오픈소스 스택만으로도 거점마다 현장 코어를 두고 라우터·API로 중앙에 모으는 다거점 구성이 가능해 보이나, 이번 조사에서 Open-RMF 다거점 운영의 공개 사례는 찾지 못했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-470",
+        "ref-299",
         "ref-256",
-        "ref-473"
+        "ref-302"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -455,7 +455,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-468",
+      "id": "ref-297",
       "org": "ROS 2 Design",
       "title": "ROS on DDS",
       "published": null,
@@ -470,7 +470,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-469",
+      "id": "ref-298",
       "org": "ROS 2 Design",
       "title": "ROS 2 Quality of Service policies",
       "published": null,
@@ -485,7 +485,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-470",
+      "id": "ref-299",
       "org": "ROS 2 (ros2/rmw_zenoh GitHub)",
       "title": "rmw_zenoh — README (A ROS 2 RMW implementation based on Zenoh)",
       "published": null,
@@ -500,7 +500,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-471",
+      "id": "ref-300",
       "org": "KubeEdge (CNCF, kubeedge GitHub)",
       "title": "KubeEdge — README",
       "published": null,
@@ -515,7 +515,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-472",
+      "id": "ref-301",
       "org": "Microsoft",
       "title": "Operate Azure IoT Edge devices offline",
       "published": "2026-03-02",
@@ -530,7 +530,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-473",
+      "id": "ref-302",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf-web — README",
       "published": null,
@@ -545,7 +545,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-474",
+      "id": "ref-303",
       "org": "NIST",
       "title": "NIST Special Publication (SP) 500-325, Fog Computing Conceptual Model",
       "published": "2018-03",
@@ -560,7 +560,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-475",
+      "id": "ref-304",
       "org": "Ichnowski, J., Chen, K. 외(UC Berkeley AUTOLAB)",
       "title": "FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2",
       "published": "2022-05",
@@ -575,7 +575,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-476",
+      "id": "ref-305",
       "org": "Kehoe, B., Patil, S., Abbeel, P., & Goldberg, K.",
       "title": "A Survey of Research on Cloud Robotics and Automation",
       "published": "2015",
@@ -590,7 +590,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-477",
+      "id": "ref-306",
       "org": "OASIS",
       "title": "MQTT Version 5.0",
       "published": "2019-03",
@@ -605,7 +605,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-478",
+      "id": "ref-307",
       "org": "CJ대한통운",
       "title": "CJ대한통운, 물류센터 최초 5G 개통 … 속도 1000배 빨라진다",
       "published": "2023-04",
@@ -620,7 +620,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-479",
+      "id": "ref-308",
       "org": "arXiv 2512.15215 저자(미확인)",
       "title": "Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives",
       "published": "2025-12",
@@ -635,7 +635,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-480",
+      "id": "ref-309",
       "org": "FreightWaves",
       "title": "Warehouses face $100K-hour downtime risk as cloud outages mount",
       "published": null,
@@ -650,7 +650,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-481",
+      "id": "ref-310",
       "org": "Gilbert, S., & Lynch, N.",
       "title": "Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services",
       "published": "2002-06",
@@ -665,7 +665,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-482",
+      "id": "ref-311",
       "org": "ETRI Journal 게재 논문(Jun 외, 한국전자통신연구원 발행)",
       "title": "Ultra-low-latency services in 5G systems: A perspective from 3GPP standards",
       "published": "2020",
@@ -737,7 +737,7 @@
       "f19 '1,000배' 속도는 벤더 주장이며 독립 측정 없음, 로봇 적용 결과 미확인",
       "f20 조사 수치는 하이브리드 WMS 판매사 보고서로 표본·방법 미확인, 기사 발행일 미확인",
       "f21 이중화 방식(능동·대기 등) 미확인",
-      "ref-479 저자·ref-482 전체 저자 목록 미확인",
+      "ref-308 저자·ref-311 전체 저자 목록 미확인",
       "Tanwani 외 포그 로보틱스 논문, 3GPP TS 22.104 AGV 요구값, MiR HoST 무정지 서버는 확인했으나 신규 출처 상한으로 넣지 않음"
     ],
     "scope_violations": [
@@ -749,6 +749,6 @@
       "queries": 21,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다: 재사용 ref-031(VDA 5050 명세)·ref-256(free_fleet README), 신규 ref-468(ROS on DDS)·ref-469(ROS 2 QoS 설계)·ref-470(rmw_zenoh)·ref-471(KubeEdge)·ref-472(Azure IoT Edge 오프라인 문서, MicrosoftDocs 저장소)·ref-473(rmf-web). FogROS2 README 경로는 404 라 논문 검색 요약만 썼다. 나머지 신규 8건과 재사용 ref-227 은 원문 미열람이며 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 21회/30, 신규 출처 15건/15(ref-468~ref-482, 예약 구간 안)로 신규 출처 상한에 도달했다. 이전 실행 2026-09-25-24 의 ref-378~ref-392(ROS 2 QoS 문서·Sparkplug 등)는 참고문헌 목록에 없어 id 충돌을 피하려고 재사용하지 않았다. 분류 원문 SCM 질문은 f22 로 답했으나 물류센터의 공개 운영 기준이 없어 추정이다. 한국 자료: CJ대한통운 이음5G 보도자료(벤더 주장)와 ETRI Journal 논문을 넣었고, 국내 학술 자료 가운데 물류 로봇 관제의 네트워크 단절 운영을 다룬 연구는 찾지 못했다. KubeEdge 의 DeviceTwin 명칭은 22. 시뮬레이션·예측용 디지털 트윈과 무관한 장치 상태 동기화 모듈이라 섞지 않았다. 27. AI·학습·적응과 모델 운영 관련은 f12(집단 학습)·f13(계산 오프로딩) 연결만 섹션 10 제안에 두었다. 정정 요청 없음, 입력 누락 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다: 재사용 ref-031(VDA 5050 명세)·ref-256(free_fleet README), 신규 ref-297(ROS on DDS)·ref-298(ROS 2 QoS 설계)·ref-299(rmw_zenoh)·ref-300(KubeEdge)·ref-301(Azure IoT Edge 오프라인 문서, MicrosoftDocs 저장소)·ref-302(rmf-web). FogROS2 README 경로는 404 라 논문 검색 요약만 썼다. 나머지 신규 8건과 재사용 ref-227 은 원문 미열람이며 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 21회/30, 신규 출처 15건/15(ref-297~ref-311, 예약 구간 안)로 신규 출처 상한에 도달했다. 이전 실행 2026-09-25-24 의 ref-378~ref-392(ROS 2 QoS 문서·Sparkplug 등)는 참고문헌 목록에 없어 id 충돌을 피하려고 재사용하지 않았다. 분류 원문 SCM 질문은 f22 로 답했으나 물류센터의 공개 운영 기준이 없어 추정이다. 한국 자료: CJ대한통운 이음5G 보도자료(벤더 주장)와 ETRI Journal 논문을 넣었고, 국내 학술 자료 가운데 물류 로봇 관제의 네트워크 단절 운영을 다룬 연구는 찾지 못했다. KubeEdge 의 DeviceTwin 명칭은 22. 시뮬레이션·예측용 디지털 트윈과 무관한 장치 상태 동기화 모듈이라 섞지 않았다. 27. AI·학습·적응과 모델 운영 관련은 f12(집단 학습)·f13(계산 오프로딩) 연결만 섹션 10 제안에 두었다. 정정 요청 없음, 입력 누락 없음."
   }
 }

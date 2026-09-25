@@ -28,6 +28,33 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-27 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지. 2차 수정: 7절 첫 문장을 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
+| 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s6.md](topics/2026/2026-09-25-area11-s6.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "6. 대표 접근법과 기술" 절(2,039자)을 옮겼다 |
+| 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s4.md](topics/2026/2026-09-25-area11-s4.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "4. 핵심 개념과 용어" 절(1,171자)을 옮겼다 |
+| 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s8.md](topics/2026/2026-09-25-area11-s8.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "8. 대표 연구와 자료" 절(855자)을 옮겼다. 2차 수정: NIST 항목의 쓰임새 평가를 [의견]으로, Gilbert·Lynch 항목의 적용 구절을 [추정]으로 분리 |
+| 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s7.md](topics/2026/2026-09-25-area11-s7.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "7. 관련 표준·프레임워크·오픈소스" 절(769자)을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 문장의 '대부분' 일반화를 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
+| 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s10.md](topics/2026/2026-09-25-area11-s10.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(737자)을 옮겼다. 형식 수정: 본문 세부영역 링크 8개를 주제 페이지 위치 기준(../../categories/…) 경로로 고쳤다. 2차 수정: 27. AI·학습·적응과 모델 운영 항목을 ref-305 사실 문장과 태그 없는 연결 문장으로 분리 |
+| 2026-09-25-27 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 11. 분산 시스템·통신·컴퓨팅 구조: 섹션 3~11 신규 작성(외부망 단절 운영 범위 추론, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 1차 조건부 승인 수정 16건·2차 수정 4건 이행 |
+| 2026-09-25-27 | 생성 | [docs/references/ref-297.md](references/ref-297.md) | 참고문헌 ref-297 등록: ROS on DDS |
+| 2026-09-25-27 | 생성 | [docs/references/ref-298.md](references/ref-298.md) | 참고문헌 ref-298 등록: ROS 2 Quality of Service policies |
+| 2026-09-25-27 | 생성 | [docs/references/ref-299.md](references/ref-299.md) | 참고문헌 ref-299 등록: rmw_zenoh — README (A ROS 2 RMW implementation based on Zeno… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-300.md](references/ref-300.md) | 참고문헌 ref-300 등록: KubeEdge — README |
+| 2026-09-25-27 | 생성 | [docs/references/ref-301.md](references/ref-301.md) | 참고문헌 ref-301 등록: Operate Azure IoT Edge devices offline |
+| 2026-09-25-27 | 생성 | [docs/references/ref-302.md](references/ref-302.md) | 참고문헌 ref-302 등록: rmf-web — README |
+| 2026-09-25-27 | 생성 | [docs/references/ref-303.md](references/ref-303.md) | 참고문헌 ref-303 등록: NIST Special Publication (SP) 500-325, Fog Computing Concept… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-304.md](references/ref-304.md) | 참고문헌 ref-304 등록: FogROS2: An Adaptive Platform for Cloud and Fog Robotics Usi… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-305.md](references/ref-305.md) | 참고문헌 ref-305 등록: A Survey of Research on Cloud Robotics and Automation |
+| 2026-09-25-27 | 생성 | [docs/references/ref-306.md](references/ref-306.md) | 참고문헌 ref-306 등록: MQTT Version 5.0 |
+| 2026-09-25-27 | 생성 | [docs/references/ref-307.md](references/ref-307.md) | 참고문헌 ref-307 등록: CJ대한통운, 물류센터 최초 5G 개통 … 속도 1000배 빨라진다 |
+| 2026-09-25-27 | 생성 | [docs/references/ref-308.md](references/ref-308.md) | 참고문헌 ref-308 등록: Infrastructure-based Autonomous Mobile Robots for Internal L… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-309.md](references/ref-309.md) | 참고문헌 ref-309 등록: Warehouses face $100K-hour downtime risk as cloud outages mo… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-310.md](references/ref-310.md) | 참고문헌 ref-310 등록: Brewer's conjecture and the feasibility of consistent, avail… |
+| 2026-09-25-27 | 생성 | [docs/references/ref-311.md](references/ref-311.md) | 참고문헌 ref-311 등록: Ultra-low-latency services in 5G systems: A perspective from… |
+| 2026-09-25-27 | 생성 | [docs/glossary/fog-computing.md](glossary/fog-computing.md) | 용어집 항목 포그 컴퓨팅 |
+| 2026-09-25-27 | 생성 | [docs/glossary/cap-theorem.md](glossary/cap-theorem.md) | 용어집 항목 CAP 정리 |
+| 2026-09-25-27 | 생성 | [docs/glossary/private-5g-network.md](glossary/private-5g-network.md) | 용어집 항목 5G 특화망(이음5G) |
+| 2026-09-25-27 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 베이스·호라이즌 |
+| 2026-09-25-27 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설, 신뢰도 low), 4절 결론·불확실성(f22 이번 실행에서도 미확인), 후속 질문 q4-06, 완료 조건 표·이력 갱신, 상태 줄 갱신(상태 줄이 절 밖에 있어 patches 대신 전체 content로 보냄) |
 | 2026-09-25-26 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절: q1-03 미조사 문장 두 곳을 채팅·음성 지시의 확인·승인 방식 비교(작업자 대상 동작 단위 확인 대 로봇 대상 확인 절차 미확인)로 교체 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 아이디어 2 항목의 'q1-03 미조사' 문구를 이번 실행 결과로 교체(상태 줄은 마지막 트랙 실행 2026-09-25·현재 단계 단계 1 그대로라 변경 없음) |

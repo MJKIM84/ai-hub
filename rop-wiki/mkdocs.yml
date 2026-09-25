@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 11. 분산 시스템·통신·컴퓨팅 구조 — 대표 연구와 자료: topics/2026/2026-09-25-area11-s8.md
+      - 11. 분산 시스템·통신·컴퓨팅 구조 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area11-s7.md
+      - 11. 분산 시스템·통신·컴퓨팅 구조 — 대표 접근법과 기술: topics/2026/2026-09-25-area11-s6.md
+      - 11. 분산 시스템·통신·컴퓨팅 구조 — 핵심 개념과 용어: topics/2026/2026-09-25-area11-s4.md
+      - 11. 분산 시스템·통신·컴퓨팅 구조 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area11-s10.md
       - 9. 로봇·제조사 관제 연동 — 대표 연구와 자료: topics/2026/2026-09-25-area09-s8.md
       - 9. 로봇·제조사 관제 연동 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area09-s7.md
       - 9. 로봇·제조사 관제 연동 — 대표 접근법과 기술: topics/2026/2026-09-25-area09-s6.md
@@ -203,7 +208,9 @@ nav:
       - 1. 주문·업무 시스템 연계 — 열린 질문: topics/2026/2026-09-25-area01-s11.md
   - 용어집:
     - glossary/index.md
+    - 5G 특화망(이음5G) (Private 5G Network (e-Um 5G)): glossary/private-5g-network.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
+    - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
     - IndoorGML (IndoorGML): glossary/indoorgml.md
     - LLM 에이전트 (LLM Agent): glossary/llm-agent.md
@@ -263,6 +270,7 @@ nav:
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
+    - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
@@ -561,6 +569,21 @@ nav:
     - ref-294 — 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용: references/ref-294.md
     - ref-295 — Conflict-free Replicated Data Types (CRDTs): references/ref-295.md
     - ref-296 — OPC UA를 활용한 이기종 로봇의 실시간 디지털 트윈 설계 및 구현: references/ref-296.md
+    - ref-297 — ROS on DDS: references/ref-297.md
+    - ref-298 — ROS 2 Quality of Service policies: references/ref-298.md
+    - ref-299 — rmw_zenoh — README (A ROS 2 RMW implementation based on Zenoh): references/ref-299.md
+    - ref-300 — KubeEdge — README: references/ref-300.md
+    - ref-301 — Operate Azure IoT Edge devices offline: references/ref-301.md
+    - ref-302 — rmf-web — README: references/ref-302.md
+    - ref-303 — NIST Special Publication (SP) 500-325, Fog Computing Conceptual Model: references/ref-303.md
+    - 'ref-304 — FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2': references/ref-304.md
+    - ref-305 — A Survey of Research on Cloud Robotics and Automation: references/ref-305.md
+    - ref-306 — MQTT Version 5.0: references/ref-306.md
+    - ref-307 — CJ대한통운, 물류센터 최초 5G 개통 … 속도 1000배 빨라진다: references/ref-307.md
+    - ref-308 — Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives: references/ref-308.md
+    - ref-309 — Warehouses face $100K-hour downtime risk as cloud outages mount: references/ref-309.md
+    - ref-310 — Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services: references/ref-310.md
+    - 'ref-311 — Ultra-low-latency services in 5G systems: A perspective from 3GPP standards': references/ref-311.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

@@ -870,6 +870,89 @@
       "ref_id": "ref-290",
       "run_id": "2026-09-25-24",
       "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 설계 문서 — ROS on DDS · QoS 정책",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://design.ros2.org/articles/qos.html",
+      "summary": "ROS 2 의 DDS 기반 분산 발견(중앙 마스터 없음)과 불안정한 무선망을 전제한 QoS 정책·프로파일을 설명하는 설계 문서.",
+      "ref_id": "ref-298",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "rmw_zenoh (Zenoh 기반 ROS 2 미들웨어)",
+      "org": "ROS 2 (ros2/rmw_zenoh)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://github.com/ros2/rmw_zenoh",
+      "summary": "Zenoh 라우터를 거친 가십 발견, 멀티캐스트 기본 비활성, 호스트 간 라우터 연결 설정을 제공하는 ROS 2 미들웨어 구현.",
+      "ref_id": "ref-299",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KubeEdge",
+      "org": "KubeEdge (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        20
+      ],
+      "url": "https://github.com/kubeedge/kubeedge",
+      "summary": "쿠버네티스를 엣지로 확장하며 클라우드–엣지 단절 중에도 엣지 노드와 애플리케이션이 자율 동작하도록 설계된 오픈소스.",
+      "ref_id": "ref-300",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf-web (대시보드·API 서버)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://github.com/open-rmf/rmf-web",
+      "summary": "ROS 2 기반 RMF 와 웹 클라이언트 사이를 잇는 API 서버와 대시보드. 기본 비영속 데이터베이스, 설정으로 영속 저장소 지정.",
+      "ref_id": "ref-302",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "MQTT Version 5.0",
+      "org": "OASIS",
+      "kind": "표준",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+      "summary": "세션 만료·메시지 만료·유언 지연 간격과 공유 구독을 정의한 메시징 표준(원문 미열람).",
+      "ref_id": "ref-306",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "NIST SP 500-325 Fog Computing Conceptual Model",
+      "org": "NIST",
+      "kind": "프레임워크",
+      "related_areas": [
+        11
+      ],
+      "url": "https://csrc.nist.gov/pubs/sp/500/325/final",
+      "summary": "클라우드와 말단 장치 사이의 지연 인식 포그 계층을 제시한 개념 모델(원문 미열람).",
+      "ref_id": "ref-303",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
     }
   ]
 }
