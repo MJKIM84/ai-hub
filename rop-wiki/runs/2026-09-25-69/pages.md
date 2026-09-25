@@ -4,7 +4,7 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md | draft | seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 변경 정책·적합성 시험, 입고·출하 시나리오, 경계·연결·열린 질문), 페이지 상태 자동 영역 추가, 13절 각주 21건 |
+| update | docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md | draft | seed → draft: 3~11절 첫 작성, 페이지 상태 자동 영역 추가, 13절 각주. 2차: 9절 승강기 연계 칸 [추정]으로 정정, ISO 10218-2 적용 범위 미확인 단서 추가, 5절 시작 조건 칸에 가상 설정 표시와 [추정] 태그 추가 |
 | create | docs/topics/2026/2026-09-25-area28-s7.md | draft | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,840자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area28-s6.md | draft | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "6. 대표 접근법과 기술" 절(1,549자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area28-s11.md | draft | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "11. 열린 질문" 절(1,233자)을 옮겼다 |
@@ -13,9 +13,9 @@
 
 ## 변경 이력·색인
 
-- 변경 이력: 2026-09-25 | 28. 표준·상호운용성·다사업자 거버넌스 | seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영 | run 2026-09-25-69
+- 변경 이력: 2026-09-25 | 28. 표준·상호운용성·다사업자 거버넌스 | seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영, 2차 수정(9절 태그·단서, 5절 시작 조건 태그) | run 2026-09-25-69
 - 홈 최근 업데이트: 2026-09-25 — 28. 표준·상호운용성·다사업자 거버넌스: 3~11절 첫 작성(VDA 5050 판 정책·책임 분리, 적합성 시험, 데이터 권리 법제, 감사·서비스 수준)
-- 대분류 최근 업데이트: 2026-09-25 — 28. 표준·상호운용성·다사업자 거버넌스: seed → draft, 3~11절 첫 작성과 13절 각주 21건
+- 대분류 최근 업데이트: 2026-09-25 — 28. 표준·상호운용성·다사업자 거버넌스: seed → draft, 3~11절 첫 작성과 13절 각주
 - 세부영역 최근 업데이트: 2026-09-25 — 28. 표준·상호운용성·다사업자 거버넌스: 3~11절 첫 작성(실행 2026-09-25-69), 트랙 반영 제안 가운데 VDA 5050·MassRobotics 분만 7절에 반영
 
 ## 용어집 갱신
@@ -38,7 +38,7 @@
 | ref-408 | ekusiadadus (GitHub) | vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces) | 오픈소스 문서 | medium | https://github.com/ekusiadadus/vda5050-lab |
 | ref-608 | OTTO by Rockwell Automation | OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments | 벤더 문서 | low | https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/ |
 | ref-704 | VDA / VDMA / KIT IFL (VDA5050 GitHub) | VDA5050/VDA5050 — README | 표준 | medium | https://github.com/VDA5050/VDA5050 |
-| ref-705 | MassRobotics | AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema) | 표준 | medium | https://github.com/MassRobotics-AMR/AMR_Interop_Standard |
+| ref-253 | MassRobotics | AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema) | 표준 | medium | https://github.com/MassRobotics-AMR/AMR_Interop_Standard |
 | ref-706 | Semantic Versioning (Tom Preston-Werner, semver.org) | Semantic Versioning 2.0.0 | 오픈소스 문서 | medium | https://semver.org/spec/v2.0.0.html |
 | ref-707 | European Union (EUR-Lex) | Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data (Data Act) | 정부·연구기관 | medium | https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng |
 | ref-708 | 국가법령정보센터(산업통상자원부) | 산업 디지털 전환 촉진법 (법률 제18692호) | 정부·연구기관 | medium | https://www.law.go.kr/법령/산업디지털전환촉진법/(18692,20220104) |
@@ -47,7 +47,7 @@
 | ref-711 | Open Source Robotics Alliance | Charter of the Open Source Robotics Alliance Project 'Open-RMF' | 오픈소스 문서 | medium | https://osralliance.org/wp-content/uploads/2024/03/open-rmf-project-charter.pdf |
 | ref-712 | OPC Foundation | How to Certify - OPC Foundation | 표준 | medium | https://opcfoundation.org/certification/how-to-certify/ |
 | ref-713 | IETF (RFC Editor) | RFC 9745: The Deprecation HTTP Response Header Field | 표준 | medium | https://www.rfc-editor.org/info/rfc9745/ |
-| ref-714 | ISO | ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells | 표준 | medium | https://www.iso.org/standard/73934.html |
+| ref-560 | ISO | ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells | 표준 | medium | https://www.iso.org/standard/73934.html |
 | ref-715 | IEC | IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample) | 표준 | medium | https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf |
 | ref-716 | ISO/IEC | ISO/IEC 20000-1:2018 - Information technology — Service management — Part 1: Service management system requirements | 표준 | medium | https://www.iso.org/standard/70636.html |
 | ref-717 | 대한민국 정책브리핑(산업통상자원부 국가기술표준원) | 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 | 정부·연구기관 | medium | https://korea.kr/news/pressReleaseView.do?newsId=156480155 |
@@ -91,7 +91,7 @@
 - 7절: 국가기술표준원이 발표한 로봇 엘리베이터 탑승 KS 의 번호가 표준 목록의 KS B 7317 과 같은지 확인이 필요하다(oq-041 관련).
 - 3절: EU 데이터법 주요 조항의 적용 개시일을 EUR-Lex 원문으로 확인해야 한다.
 - 3절: 산업디지털전환촉진법 2025-05-27 일부개정 판(법률 제20964호)에서 산업데이터 공동 생성 조문이 같은지 확인해야 한다.
-- 7절: KOROS 1148-8:2025 의 시험 항목과 ISO 22166 계열과의 관계 확인이 필요하다.
+- 7절·9절: KOROS 1148-8:2025 의 시험 항목과 ISO 22166 계열과의 관계, ISO 10218-2:2025 의 물류 이동로봇 플릿 적용 여부 확인이 필요하다.
 - 6절: 물류 로봇 다사업자 SLA 의 공개 계약 구조·사례, 그리고 VDA 5050 공식 적합성 시험 유무(oq-055)를 추가 조사해야 한다.
 
 ## 이행한 수정 지시
@@ -105,9 +105,12 @@
 - f13 — 6절·7절에서 '인증서'를 빼고 '인증 로고'만 썼다.
 - f15 — 6절에 '[추정] 벤더 주장' 표기와 시험 항목·주체 미확인 문구를 유지했다.
 - f8·f14·f19·f21·f24·f26·f27·f28·f30 — 모두 [추정] 태그를 유지했고, 9절 f21 문장에 '이를 정한 공식 기준은 확인되지 않았다'를 그대로 두었다.
-- 각주 — fetched false 출처 15건(ref-407·408·608·705·707·708·709·711·712·713·714·715·716·717·718)의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.
+- 각주 — fetched false 출처 15건(ref-407·408·608·253·707·708·709·711·712·713·560·715·716·717·718)의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.
 - 7절 트랙 반영 — VDA 5050(f1·f2·f4·f5·f29)과 MassRobotics(f9·f10)만 반영하고 'VDA 5050 3.0.0 발행 2026-03'과 'MassRobotics 1.0' 판 표기는 싣지 않았으며(발행일은 oq-005 로 유지), 나머지 10건은 반영하지 않았다.
 - 산업데이터 용어 — glossary_updates 정의를 '산업 활동 과정에서 생성·활용되는 데이터(산업디지털전환촉진법의 용어)'로 줄이고 권리 규정은 3절 본문에서 다뤘다.
 - 서비스 수준 협약 용어 — glossary_updates 정의에서 '미달 시 처리 방식'을 뺐다.
 - 11절 — oq-005·055·091·096·041·026 을 열림으로 유지하고 open_questions_new 4건을 새 질문으로 쓰고 open_question_updates 에 new 로 냈다.
-- 분량 초과 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 본문 9,290자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,545자
+- 2차: 9절 표 '시설·설비 제어' 행 — 외부 연계 칸 '연계 대상: 승강기 안전기준·제어.'의 태그를 [사실]에서 [추정][^ref-717]로 고쳤다.
+- 2차: 9절 ISO 10218-2:2025 문장(f20) — 문장 뒤에 '물류 이동로봇 플릿에 적용되는지는 미확인이다.'를 덧붙였다.
+- 2차: 5절 표 '시작 조건' 칸 — (입고)·(출하) 두 문장에 '(설명용 가상 설정)'을 밝히고, 셀 끝(출하 문장 뒤)에 [추정][^ref-031][^ref-051]을 붙였다.
+- 2차: fixes_applied '각주' 항목 — 원문 미열람 출처 목록의 'ref-705'·'ref-714'를 'ref-253'·'ref-560'으로 고쳤다.

@@ -43,6 +43,31 @@ version: 1
 | 2026-09-25-70 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-69 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | seed → draft: 3~11절 첫 작성, 페이지 상태 자동 영역 추가, 13절 각주. 2차: 9절 승강기 연계 칸 [추정]으로 정정, ISO 10218-2 적용 범위 미확인 단서 추가, 5절 시작 조건 칸에 가상 설정 표시와 [추정] 태그 추가 |
+| 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s7.md](topics/2026/2026-09-25-area28-s7.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,840자)을 옮겼다 |
+| 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s6.md](topics/2026/2026-09-25-area28-s6.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "6. 대표 접근법과 기술" 절(1,549자)을 옮겼다 |
+| 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s11.md](topics/2026/2026-09-25-area28-s11.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "11. 열린 질문" 절(1,233자)을 옮겼다 |
+| 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s4.md](topics/2026/2026-09-25-area28-s4.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "4. 핵심 개념과 용어" 절(1,053자)을 옮겼다 |
+| 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s3.md](topics/2026/2026-09-25-area28-s3.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "3. 왜 중요한가" 절(802자)을 옮겼다 |
+| 2026-09-25-69 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 28. 표준·상호운용성·다사업자 거버넌스: seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영, 2차 수정(9절 태그·단서, 5절 시작 조건 태그) |
+| 2026-09-25-69 | 생성 | [docs/references/ref-634.md](references/ref-634.md) | 참고문헌 ref-634 등록: VDA5050/VDA5050 — README |
+| 2026-09-25-69 | 생성 | [docs/references/ref-635.md](references/ref-635.md) | 참고문헌 ref-635 등록: Semantic Versioning 2.0.0 |
+| 2026-09-25-69 | 생성 | [docs/references/ref-636.md](references/ref-636.md) | 참고문헌 ref-636 등록: Regulation (EU) 2023/2854 of the European Parliament and of… |
+| 2026-09-25-69 | 생성 | [docs/references/ref-637.md](references/ref-637.md) | 참고문헌 ref-637 등록: 산업 디지털 전환 촉진법 (법률 제18692호) |
+| 2026-09-25-69 | 생성 | [docs/references/ref-638.md](references/ref-638.md) | 참고문헌 ref-638 등록: 산업 디지털 전환 촉진법의 의미와 시사점 |
+| 2026-09-25-69 | 생성 | [docs/references/ref-639.md](references/ref-639.md) | 참고문헌 ref-639 등록: osra-policies-and-procedures — README |
+| 2026-09-25-69 | 생성 | [docs/references/ref-704.md](references/ref-704.md) | 참고문헌 ref-704 등록: Charter of the Open Source Robotics Alliance Project 'Open-R… |
+| 2026-09-25-69 | 생성 | [docs/references/ref-705.md](references/ref-705.md) | 참고문헌 ref-705 등록: How to Certify - OPC Foundation |
+| 2026-09-25-69 | 생성 | [docs/references/ref-706.md](references/ref-706.md) | 참고문헌 ref-706 등록: RFC 9745: The Deprecation HTTP Response Header Field |
+| 2026-09-25-69 | 생성 | [docs/references/ref-707.md](references/ref-707.md) | 참고문헌 ref-707 등록: IEC 62443-3-3:2013 Industrial communication networks — Netwo… |
+| 2026-09-25-69 | 생성 | [docs/references/ref-708.md](references/ref-708.md) | 참고문헌 ref-708 등록: ISO/IEC 20000-1:2018 - Information technology — Service mana… |
+| 2026-09-25-69 | 생성 | [docs/references/ref-709.md](references/ref-709.md) | 참고문헌 ref-709 등록: 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 |
+| 2026-09-25-69 | 생성 | [docs/references/ref-710.md](references/ref-710.md) | 참고문헌 ref-710 등록: KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운… |
+| 2026-09-25-69 | 생성 | [docs/glossary/semantic-versioning.md](glossary/semantic-versioning.md) | 용어집 항목 의미적 버전 관리 |
+| 2026-09-25-69 | 생성 | [docs/glossary/service-level-agreement.md](glossary/service-level-agreement.md) | 용어집 항목 서비스 수준 협약 |
+| 2026-09-25-69 | 생성 | [docs/glossary/audit-trail.md](glossary/audit-trail.md) | 용어집 항목 감사 추적 |
+| 2026-09-25-69 | 생성 | [docs/glossary/industrial-data.md](glossary/industrial-data.md) | 용어집 항목 산업데이터 |
+| 2026-09-25-69 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-25-68 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s6.md](topics/2026/2026-09-25-area27-s6.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(1,218자)을 옮겼다 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s7.md](topics/2026/2026-09-25-area27-s7.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-618 각주를 떼어 안내 문장으로 바꿨다 |

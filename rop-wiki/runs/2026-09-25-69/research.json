@@ -34,7 +34,7 @@
       "tag": "사실",
       "source_ids": [
         "ref-031",
-        "ref-704"
+        "ref-634"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -62,7 +62,7 @@
       "claim": "VDA 5050 공식 저장소 README 는 VDA 웹사이트의 공식 PDF 가 GitHub 내용보다 우선하며, 어느 판에 대해서도 지원·유지보수·문제 해결을 받을 법적 권리가 없다고 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-704"
+        "ref-634"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -76,7 +76,7 @@
       "claim": "VDA 5050 의 변경은 GitHub 이슈로 제안되고 월례 회의에서 논의되는 이슈에 진행 표시를, 수용된 변경에 반영 예정 판의 마일스톤을 붙이는 방식으로 관리되며, 3.0.1 은 오타·수정, 3.1.0 은 하위 호환 변경용이고 호환을 깨는 4.0.0 은 현재 계획되지 않았다.",
       "tag": "사실",
       "source_ids": [
-        "ref-704"
+        "ref-634"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -105,7 +105,7 @@
       "claim": "의미적 버전 관리(Semantic Versioning) 2.0.0 은 공개 API 선언을 요구하고, 호환되지 않는 API 변경은 MAJOR, 하위 호환 기능 추가는 MINOR, 하위 호환 버그 수정은 PATCH 를 올리며, 기능을 폐기할 때는 먼저 폐기 표시를 담은 부 버전을 낸 뒤 주 버전에서 제거하도록 권한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-706"
+        "ref-635"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -119,7 +119,7 @@
       "claim": "IETF RFC 9745 는 자원이 폐기되었거나 폐기될 것임을 알리는 Deprecation HTTP 응답 헤더를 정하고, RFC 8594 의 Sunset 헤더와 함께 쓰일 때 Sunset 시각은 Deprecation 시각보다 이르면 안 된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-713"
+        "ref-706"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -134,8 +134,8 @@
       "claim": "ROP 의 API 변경 정책은 상위 업무 시스템에 여는 API 에는 의미적 버전 관리와 폐기 예고·종료 시각 공지를 적용하고, 로봇 쪽에는 VDA 5050 헤더 version 처럼 로봇별 프로토콜 판을 기록해 판 차이를 관리하는 두 갈래로 설계할 수 있어 보인다.",
       "tag": "추정",
       "source_ids": [
+        "ref-635",
         "ref-706",
-        "ref-713",
         "ref-031",
         "ref-051"
       ],
@@ -196,8 +196,8 @@
       "claim": "Open-RMF 는 2024-04-15 운영을 시작한 오픈소스 로보틱스 연합(OSRA) 체계에서 프로젝트 관리 위원회(PMC)가 일상 운영을 맡고, 기술 거버넌스 위원회(TGC)가 PMC 활동을 감독하며, 거버넌스 문서 개정은 해당 기구의 승인과 이사회 비준을 거친다.",
       "tag": "사실",
       "source_ids": [
-        "ref-711",
-        "ref-710"
+        "ref-704",
+        "ref-639"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -212,7 +212,7 @@
       "claim": "OPC Foundation 은 규격 적합성을 확인하는 적합성 시험 도구(CTT)를 제공하고, 제조사가 자체 인증하거나 재단이 인정한 독립 시험소의 인증을 받게 하며, 통과 제품에 인증서와 인증 로고를 준다.",
       "tag": "사실",
       "source_ids": [
-        "ref-712"
+        "ref-705"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -228,7 +228,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-031",
-        "ref-704",
+        "ref-634",
         "ref-608",
         "ref-407",
         "ref-408"
@@ -262,7 +262,7 @@
       "claim": "한국지능형로봇표준포럼(KOROS)은 단체표준 KOROS 1148-8:2025 '서비스 로봇을 위한 모듈 — 제2-8부: 소프트웨어 모듈용 정보모델 상호운용성 시험 절차'를 제·개정 현황에 올렸다.",
       "tag": "사실",
       "source_ids": [
-        "ref-718"
+        "ref-710"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -277,7 +277,7 @@
       "claim": "EU 데이터법(Regulation (EU) 2023/2854, 2023-12-13 채택, 2024-01-11 발효)은 기업·이용자·공공 사이 데이터 접근·이용 규칙을 정하고, 제품 제조사와 데이터 보유자에게 데이터 공유·상호운용성 의무를, 데이터 처리 서비스 제공자에게 고객의 사업자 전환 허용 의무를 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-707"
+        "ref-636"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -292,8 +292,8 @@
       "claim": "한국 산업디지털전환촉진법은 상당한 투자와 노력으로 산업데이터를 새로 생성한 자에게 사용·수익 권리를 주고, 2인 이상이 공동으로 생성하거나 제3자에게 제공한 경우 당사자 약정이 없으면 각자 사용·수익 권리를 가진다고 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-708",
-        "ref-709"
+        "ref-637",
+        "ref-638"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -308,8 +308,8 @@
       "claim": "로봇 상태·운행 기록처럼 제조사 로봇, ROP, 현장 운영사가 함께 만드는 데이터는 국내법상 공동 생성 데이터로 볼 여지가 있어, 약정이 없으면 각 사업자가 사용·수익 권리를 가지므로 연동 계약에서 데이터 범위·이용 목적·제3자 제공을 따로 정해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-708",
-        "ref-707"
+        "ref-637",
+        "ref-636"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -342,7 +342,7 @@
         "ref-031",
         "ref-004",
         "ref-560",
-        "ref-704"
+        "ref-634"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -357,7 +357,7 @@
       "claim": "IEC 62443-3-3:2013 은 제어 시스템이 감사 대상 이벤트를 기록하고(SR 2.8), 감사 기록에 타임스탬프를 쓰며(SR 2.11), 감사 정보를 보호하도록(SR 3.9) 요구하고, SR 2.8 의 강화 요구로 중앙에서 관리하는 시스템 전체 감사 추적을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-715"
+        "ref-707"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -372,7 +372,7 @@
       "claim": "ISO/IEC 20000-1:2018 은 서비스 관리 시스템의 수립·실행·유지·지속 개선 요구사항을 정하는 표준으로, 서비스 수준 관리를 관계·합의 프로세스에 포함한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-716"
+        "ref-708"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -387,8 +387,8 @@
       "claim": "이종 플릿 환경의 서비스 수준은 ROP 가 고객과 맺는 가용성·응답 목표가 제조사 관제·설비업체의 목표에 기대므로, 서비스 관리 표준의 서비스 수준 관리와 감사 추적 요구를 결합해 사업자별 목표와 장애 귀책을 기록으로 확인하는 구조가 필요해 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-716",
-        "ref-715"
+        "ref-708",
+        "ref-707"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -403,7 +403,7 @@
       "claim": "산업통상자원부 국가기술표준원은 2021-11-11 행정안전부(승강기 안전기준 소관)와 협력해 로봇의 엘리베이터 탑승 시 안전 요구사항과 실내 배송 로봇 등에 관한 국가표준(KS)을 제정한다고 밝혔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-717"
+        "ref-709"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -478,10 +478,10 @@
       "source_ids": [
         "ref-031",
         "ref-004",
-        "ref-712",
-        "ref-715",
+        "ref-705",
+        "ref-707",
         "ref-560",
-        "ref-717"
+        "ref-709"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -584,7 +584,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-704",
+      "id": "ref-634",
       "org": "VDA / VDMA / KIT IFL (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — README",
       "published": null,
@@ -614,7 +614,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-706",
+      "id": "ref-635",
       "org": "Semantic Versioning (Tom Preston-Werner, semver.org)",
       "title": "Semantic Versioning 2.0.0",
       "published": null,
@@ -629,7 +629,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-707",
+      "id": "ref-636",
       "org": "European Union (EUR-Lex)",
       "title": "Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data (Data Act)",
       "published": "2023-12-13",
@@ -644,7 +644,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-708",
+      "id": "ref-637",
       "org": "국가법령정보센터(산업통상자원부)",
       "title": "산업 디지털 전환 촉진법 (법률 제18692호)",
       "published": "2022-01-04",
@@ -659,7 +659,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-709",
+      "id": "ref-638",
       "org": "소프트웨어정책연구소(SPRi)",
       "title": "산업 디지털 전환 촉진법의 의미와 시사점",
       "published": null,
@@ -674,7 +674,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-710",
+      "id": "ref-639",
       "org": "Open Source Robotics Alliance (Open Robotics)",
       "title": "osra-policies-and-procedures — README",
       "published": null,
@@ -689,7 +689,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-711",
+      "id": "ref-704",
       "org": "Open Source Robotics Alliance",
       "title": "Charter of the Open Source Robotics Alliance Project 'Open-RMF'",
       "published": "2024-03",
@@ -704,7 +704,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-712",
+      "id": "ref-705",
       "org": "OPC Foundation",
       "title": "How to Certify - OPC Foundation",
       "published": null,
@@ -719,7 +719,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-713",
+      "id": "ref-706",
       "org": "IETF (RFC Editor)",
       "title": "RFC 9745: The Deprecation HTTP Response Header Field",
       "published": null,
@@ -749,7 +749,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-715",
+      "id": "ref-707",
       "org": "IEC",
       "title": "IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample)",
       "published": "2013-08",
@@ -764,7 +764,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-716",
+      "id": "ref-708",
       "org": "ISO/IEC",
       "title": "ISO/IEC 20000-1:2018 - Information technology — Service management — Part 1: Service management system requirements",
       "published": "2018",
@@ -779,7 +779,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-717",
+      "id": "ref-709",
       "org": "대한민국 정책브리핑(산업통상자원부 국가기술표준원)",
       "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
       "published": "2021-11-11",
@@ -794,7 +794,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-718",
+      "id": "ref-710",
       "org": "한국지능형로봇표준포럼(KOROS)",
       "title": "KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차",
       "published": "2025",
@@ -861,12 +861,12 @@
     "cross_checked_count": 0,
     "unverified": [
       "모든 finding 교차 확인 없음(단일 출처이거나 같은 기관 출처 쌍: f1 은 VDA 명세·README, f12 는 OSRA 헌장·정책 저장소, f5 는 VDA 명세·스키마)",
-      "f18 검색 요약 문구가 ref-708·ref-709 중 어느 출처에서 왔는지 구분 불가",
+      "f18 검색 요약 문구가 ref-637·ref-638 중 어느 출처에서 왔는지 구분 불가",
       "f17 EU 데이터법의 적용 개시일(2025-09-12)은 법률사무소 검색 요약에만 있어 넣지 않음",
       "f25 로봇 엘리베이터 탑승 KS 의 번호·세부 메시지 미확인(oq-041 미해결)",
       "f16 KOROS 1148-8:2025 시험 항목과 ISO 22166 계열 관계 미확인",
       "f15 OTTO VDA 5050 인증의 시험 항목·주체 미확인(벤더 주장)",
-      "ref-704·ref-253·ref-706·ref-709·ref-710·ref-712·ref-713 발행일 미확인",
+      "ref-634·ref-253·ref-635·ref-638·ref-639·ref-705·ref-706 발행일 미확인",
       "oq-005 VDA 5050 3.0.0 발행일은 명세 원문에 날짜가 없어 해소 못 함(f29)",
       "oq-055 VDA 5050 공식 적합성 시험 부재는 읽은 명세·README 범위에서만 확인(f14), 해결 제안하지 않음"
     ],
@@ -880,6 +880,6 @@
       "queries": 18,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-704(VDA5050 README), ref-253(MassRobotics README·JSON 스키마), ref-706(semver.md), ref-710(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-704~ref-718, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-708), SPRi(ref-709), 국가기술표준원 보도자료(ref-717), KOROS 단체표준(ref-718). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-634(VDA5050 README), ref-253(MassRobotics README·JSON 스키마), ref-635(semver.md), ref-639(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-634~ref-710, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-637), SPRi(ref-638), 국가기술표준원 보도자료(ref-709), KOROS 단체표준(ref-710). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음."
   }
 }

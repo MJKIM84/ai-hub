@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 28. 표준·상호운용성·다사업자 거버넌스 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area28-s7.md
+      - 28. 표준·상호운용성·다사업자 거버넌스 — 대표 접근법과 기술: topics/2026/2026-09-25-area28-s6.md
+      - 28. 표준·상호운용성·다사업자 거버넌스 — 핵심 개념과 용어: topics/2026/2026-09-25-area28-s4.md
+      - 28. 표준·상호운용성·다사업자 거버넌스 — 왜 중요한가: topics/2026/2026-09-25-area28-s3.md
+      - 28. 표준·상호운용성·다사업자 거버넌스 — 열린 질문: topics/2026/2026-09-25-area28-s11.md
       - 27. AI·학습·적응과 모델 운영 — 대표 연구와 자료: topics/2026/2026-09-25-area27-s8.md
       - 27. AI·학습·적응과 모델 운영 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area27-s7.md
       - 27. AI·학습·적응과 모델 운영 — 대표 접근법과 기술: topics/2026/2026-09-25-area27-s6.md
@@ -307,6 +312,7 @@ nav:
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
+    - 감사 추적 (Audit Trail): glossary/audit-trail.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
@@ -370,8 +376,10 @@ nav:
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
+    - 산업데이터 (Industrial Data): glossary/industrial-data.md
     - 상태 기반 정비 (Condition-Based Maintenance (CBM)): glossary/condition-based-maintenance.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
+    - 서비스 수준 협약 (Service Level Agreement (SLA)): glossary/service-level-agreement.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
@@ -405,6 +413,7 @@ nav:
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
     - 의미 식별자 (Semantic ID (semanticId)): glossary/semantic-id.md
+    - 의미적 버전 관리 (Semantic Versioning (SemVer)): glossary/semantic-versioning.md
     - 이동 병목 탐지 (Shifting Bottleneck Detection (Active Period Method)): glossary/shifting-bottleneck-detection-active-period-method.md
     - 이동형 영상정보처리기기 (Mobile Video Information Processing Device): glossary/mobile-video-information-processing-device.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
@@ -1143,10 +1152,26 @@ nav:
     - ref-632 — Initialization of Simulation-Based Digital Twins for Internal Transport Systems: references/ref-632.md
     - ? 'ref-633 — Integration of 4D BIM and Robot Task Planning: Creation and Flow of Construction-Related Information for Action-Level Simulation of Indoor Wall Frame Installation'
       : references/ref-633.md
+    - ref-634 — VDA5050/VDA5050 — README: references/ref-634.md
+    - ref-635 — Semantic Versioning 2.0.0: references/ref-635.md
+    - ? ref-636 — Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data (Data Act)
+      : references/ref-636.md
+    - ref-637 — 산업 디지털 전환 촉진법 (법률 제18692호): references/ref-637.md
+    - ref-638 — 산업 디지털 전환 촉진법의 의미와 시사점: references/ref-638.md
+    - ref-639 — osra-policies-and-procedures — README: references/ref-639.md
     - ref-640 — rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.msg: references/ref-640.md
     - ref-641 — Optimized Directed Roadmap Graph for Multi-Agent Path Finding Using Stochastic Gradient Descent: references/ref-641.md
     - ref-642 — An Indoor Space Subspacing Framework for Implementing a 3D Hierarchical Network-Based Topological Data Model: references/ref-642.md
     - ref-643 — Task and Motion Planning in Hierarchical 3D Scene Graphs (ISRR 2024): references/ref-643.md
+    - ref-704 — Charter of the Open Source Robotics Alliance Project 'Open-RMF': references/ref-704.md
+    - ref-705 — How to Certify - OPC Foundation: references/ref-705.md
+    - 'ref-706 — RFC 9745: The Deprecation HTTP Response Header Field': references/ref-706.md
+    - ? 'ref-707 — IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample)'
+      : references/ref-707.md
+    - ? 'ref-708 — ISO/IEC 20000-1:2018 - Information technology — Service management — Part 1: Service management system requirements'
+      : references/ref-708.md
+    - ref-709 — 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다: references/ref-709.md
+    - 'ref-710 — KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차': references/ref-710.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

@@ -1,0 +1,141 @@
+{
+  "run_id": "2026-09-25-69",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 28,
+    "area_name": "28. 표준·상호운용성·다사업자 거버넌스",
+    "category": "G. 안전·보안·지능·거버넌스"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 18,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2139.1,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 28. 표준·상호운용성·다사업자 거버넌스 | seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영, 2차 수정(9절 태그·단서, 5절 시작 조건 태그) | run 2026-09-25-69",
+  "notes": [
+    "참고문헌 생성: references/ref-634.md",
+    "참고문헌 생성: references/ref-635.md",
+    "참고문헌 생성: references/ref-636.md",
+    "참고문헌 생성: references/ref-637.md",
+    "참고문헌 생성: references/ref-638.md",
+    "참고문헌 생성: references/ref-639.md",
+    "참고문헌 생성: references/ref-704.md",
+    "참고문헌 생성: references/ref-705.md",
+    "참고문헌 생성: references/ref-706.md",
+    "참고문헌 생성: references/ref-707.md",
+    "참고문헌 생성: references/ref-708.md",
+    "참고문헌 생성: references/ref-709.md",
+    "참고문헌 생성: references/ref-710.md",
+    "용어집 생성: glossary/semantic-versioning.md",
+    "용어집 생성: glossary/service-level-agreement.md",
+    "용어집 생성: glossary/audit-trail.md",
+    "용어집 생성: glossary/industrial-data.md",
+    "세부영역 반영 제안 12건을 반영으로 표시했다(28. 표준·상호운용성·다사업자 거버넌스, 실행 2026-09-25-69)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 6,
+    "open_questions": 4,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 17:01:28 KST",
+  "usage": {
+    "input_tokens": 56,
+    "cache_creation_input_tokens": 746157,
+    "cache_read_input_tokens": 2974015,
+    "output_tokens": 163863,
+    "cost_usd": 10.6537,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.6918,
+        "output_tokens": 54397,
+        "cache_read_input_tokens": 1784961,
+        "cache_creation_input_tokens": 95340
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.9112,
+        "output_tokens": 16569,
+        "cache_read_input_tokens": 890422,
+        "cache_creation_input_tokens": 140232
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.042,
+        "output_tokens": 82630,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 295512
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.924,
+        "output_tokens": 9275,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 213514
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 6,
+  "cross_checked_findings": 0
+}

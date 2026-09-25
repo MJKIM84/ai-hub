@@ -42,8 +42,8 @@
 | f6 | [사실] | 의미적 버전 관리(Semantic Versioning) 2.0.0 은 공개 API 선언을 요구하고, 호환되지 않는 API 변경은 MAJOR, 하위 호환 기능 추가는 MINOR, 하위 호환 버그 수정은 PATCH 를 올리며, 기능을 폐기할 때는 먼저 폐기 표시를 담은 부 버전을 낸 뒤 주 버전에서 제거하도록 권한다. | ref-706 | 아니오 | medium | 2026-09-25 | — | — |
 | f7 | [사실] | IETF RFC 9745 는 자원이 폐기되었거나 폐기될 것임을 알리는 Deprecation HTTP 응답 헤더를 정하고, RFC 8594 의 Sunset 헤더와 함께 쓰일 때 Sunset 시각은 Deprecation 시각보다 이르면 안 된다. | ref-713 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f8 | [추정] | ROP 의 API 변경 정책은 상위 업무 시스템에 여는 API 에는 의미적 버전 관리와 폐기 예고·종료 시각 공지를 적용하고, 로봇 쪽에는 VDA 5050 헤더 version 처럼 로봇별 프로토콜 판을 기록해 판 차이를 관리하는 두 갈래로 설계할 수 있어 보인다. | ref-706, ref-713, ref-031, ref-051 | 아니오 | low | 2026-09-25 | — | — |
-| f9 | [사실] | MassRobotics AMR 상호운용 표준의 JSON 스키마는 신원 보고(identityReport)와 상태 보고(statusReport) 두 보고 메시지만 정의하고 명령·작업 배정 메시지는 두지 않는다. | ref-705 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
-| f10 | [사실] | MassRobotics AMR 상호운용 표준은 여러 제조사의 AMR 이 같은 현장에서 공존하도록 로봇의 위치·속도·방향·상태(health)·작업 가용성 정보를 공유하게 하는 것을 목적으로 한다. | ref-705 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
+| f9 | [사실] | MassRobotics AMR 상호운용 표준의 JSON 스키마는 신원 보고(identityReport)와 상태 보고(statusReport) 두 보고 메시지만 정의하고 명령·작업 배정 메시지는 두지 않는다. | ref-253 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
+| f10 | [사실] | MassRobotics AMR 상호운용 표준은 여러 제조사의 AMR 이 같은 현장에서 공존하도록 로봇의 위치·속도·방향·상태(health)·작업 가용성 정보를 공유하게 하는 것을 목적으로 한다. | ref-253 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f11 | [사실] | Open-RMF 는 플릿마다 플릿 어댑터가 제조사 고유 API 를 RMF 교통 일정·협상 인터페이스에 잇게 하고, 연동 수준을 전체 제어(Full Control)·신호등(Traffic Light)·읽기 전용(Read Only)·인터페이스 없음(No Interface)으로 나눠 제조사 관제를 표준화 없이 그 수준에 맞춰 통합한다. | ref-004 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
 | f12 | [사실] | Open-RMF 는 2024-04-15 운영을 시작한 오픈소스 로보틱스 연합(OSRA) 체계에서 프로젝트 관리 위원회(PMC)가 일상 운영을 맡고, 기술 거버넌스 위원회(TGC)가 PMC 활동을 감독하며, 거버넌스 문서 개정은 해당 기구의 승인과 이사회 비준을 거친다. | ref-711, ref-710 | 아니오 | medium | 2024-03 | — | — |
 | f13 | [사실] | OPC Foundation 은 규격 적합성을 확인하는 적합성 시험 도구(CTT)를 제공하고, 제조사가 자체 인증하거나 재단이 인정한 독립 시험소의 인증을 받게 하며, 통과 제품에 인증서와 인증 로고를 준다. | ref-712 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
@@ -53,17 +53,17 @@
 | f17 | [사실] | EU 데이터법(Regulation (EU) 2023/2854, 2023-12-13 채택, 2024-01-11 발효)은 기업·이용자·공공 사이 데이터 접근·이용 규칙을 정하고, 제품 제조사와 데이터 보유자에게 데이터 공유·상호운용성 의무를, 데이터 처리 서비스 제공자에게 고객의 사업자 전환 허용 의무를 둔다. | ref-707 | 아니오 | medium | 2023-12-13 | — | 원문 미열람 |
 | f18 | [사실] | 한국 산업디지털전환촉진법은 상당한 투자와 노력으로 산업데이터를 새로 생성한 자에게 사용·수익 권리를 주고, 2인 이상이 공동으로 생성하거나 제3자에게 제공한 경우 당사자 약정이 없으면 각자 사용·수익 권리를 가진다고 정한다. | ref-708, ref-709 | 아니오 | medium | 2022-01-04 | — | 원문 미열람 |
 | f19 | [추정] | 로봇 상태·운행 기록처럼 제조사 로봇, ROP, 현장 운영사가 함께 만드는 데이터는 국내법상 공동 생성 데이터로 볼 여지가 있어, 약정이 없으면 각 사업자가 사용·수익 권리를 가지므로 연동 계약에서 데이터 범위·이용 목적·제3자 제공을 따로 정해야 할 것으로 보인다. | ref-708, ref-707 | 아니오 | low | 2026-09-25 | 완료·인계 | 원문 미열람 |
-| f20 | [사실] | ISO 10218-2:2025 는 로봇 자체를 다루는 Part 1 과 구분해 산업용 로봇 적용과 로봇 셀의 안전 요구를 다루며, 통합자(integrator)가 합리적으로 예견할 수 있는 위험원과 위험 상황을 대상으로 한다. | ref-714 | 아니오 | medium | 2025-02 | — | 원문 미열람 |
-| f21 | [추정] | 분류 원문 질문과 관련해, 확인한 규격을 종합하면 연동 오류 수정 책임은 규격 불일치는 해당 메시지를 구현한 쪽(로봇 제조사 또는 관제), 플릿 어댑터·매핑 오류는 ROP, 시스템 수준 위험과 변경 승인은 통합자 역할을 맡는 쪽으로 나누는 구조가 될 수 있어 보이나, 이를 정한 공식 기준은 확인되지 않았다. | ref-031, ref-004, ref-714, ref-704 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
+| f20 | [사실] | ISO 10218-2:2025 는 로봇 자체를 다루는 Part 1 과 구분해 산업용 로봇 적용과 로봇 셀의 안전 요구를 다루며, 통합자(integrator)가 합리적으로 예견할 수 있는 위험원과 위험 상황을 대상으로 한다. | ref-560 | 아니오 | medium | 2025-02 | — | 원문 미열람 |
+| f21 | [추정] | 분류 원문 질문과 관련해, 확인한 규격을 종합하면 연동 오류 수정 책임은 규격 불일치는 해당 메시지를 구현한 쪽(로봇 제조사 또는 관제), 플릿 어댑터·매핑 오류는 ROP, 시스템 수준 위험과 변경 승인은 통합자 역할을 맡는 쪽으로 나누는 구조가 될 수 있어 보이나, 이를 정한 공식 기준은 확인되지 않았다. | ref-031, ref-004, ref-560, ref-704 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
 | f22 | [사실] | IEC 62443-3-3:2013 은 제어 시스템이 감사 대상 이벤트를 기록하고(SR 2.8), 감사 기록에 타임스탬프를 쓰며(SR 2.11), 감사 정보를 보호하도록(SR 3.9) 요구하고, SR 2.8 의 강화 요구로 중앙에서 관리하는 시스템 전체 감사 추적을 둔다. | ref-715 | 아니오 | medium | 2013-08 | — | 원문 미열람 |
 | f23 | [사실] | ISO/IEC 20000-1:2018 은 서비스 관리 시스템의 수립·실행·유지·지속 개선 요구사항을 정하는 표준으로, 서비스 수준 관리를 관계·합의 프로세스에 포함한다. | ref-716 | 아니오 | medium | 2018 | — | 원문 미열람 |
 | f24 | [추정] | 이종 플릿 환경의 서비스 수준은 ROP 가 고객과 맺는 가용성·응답 목표가 제조사 관제·설비업체의 목표에 기대므로, 서비스 관리 표준의 서비스 수준 관리와 감사 추적 요구를 결합해 사업자별 목표와 장애 귀책을 기록으로 확인하는 구조가 필요해 보인다. | ref-716, ref-715 | 아니오 | low | 2026-09-25 | 예외·성과 | 원문 미열람 |
 | f25 | [사실] | 산업통상자원부 국가기술표준원은 2021-11-11 행정안전부(승강기 안전기준 소관)와 협력해 로봇의 엘리베이터 탑승 시 안전 요구사항과 실내 배송 로봇 등에 관한 국가표준(KS)을 제정한다고 밝혔다. | ref-717 | 아니오 | medium | 2021-11-11 | 제약 | 원문 미열람 |
 | f26 | [추정] | 출하 단계에서 한 제조사가 로봇 펌웨어를 올려 VDA 5050 프로토콜 판이 바뀌면, 관제가 헤더 version 으로 판 차이를 감지하고 지원하지 않는 선택 필드는 UNSUPPORTED_PARAMETER 오류로 드러나므로, 변경 승인 전 판 호환 시험과 수정 책임을 계약으로 정해 두어야 출하 마감 전 작업 실패를 막을 수 있을 것으로 보인다. | ref-031, ref-051 | 아니오 | low | 2026-09-25 | 출하 / 예외·성과 | — |
-| f27 | [추정] | 입고 단계에서 새 제조사 로봇을 등록할 때 MassRobotics 신원 보고의 제조사명·모델·일련번호나 VDA 5050 헤더의 manufacturer·serialNumber 를 감사 기록의 주체 식별자로 쓰면, 이후 연동 오류와 변경 이력을 제조사별로 귀속할 수 있을 것으로 보인다. | ref-705, ref-051 | 아니오 | low | 2026-09-25 | 입고 / 수행 자원 | — |
+| f27 | [추정] | 입고 단계에서 새 제조사 로봇을 등록할 때 MassRobotics 신원 보고의 제조사명·모델·일련번호나 VDA 5050 헤더의 manufacturer·serialNumber 를 감사 기록의 주체 식별자로 쓰면, 이후 연동 오류와 변경 이력을 제조사별로 귀속할 수 있을 것으로 보인다. | ref-253, ref-051 | 아니오 | low | 2026-09-25 | 입고 / 수행 자원 | — |
 | f28 | [추정] | 연계 대상: VDA 5050 이 범위 밖으로 둔 기능·시스템 안전과 로봇의 위치 추정·주행 실행은 제조사 쪽이며, 28. 표준·상호운용성·다사업자 거버넌스에서 ROP 몫은 인터페이스 판·적합성·책임 경계를 정하고 확인하는 쪽으로 보인다. | ref-031 | 아니오 | low | 2026-09-25 | — | — |
 | f29 | [사실] | VDA 5050 공식 저장소 main 브랜치 명세는 3.0.0 판이며 문서 머리에 발행일이 적혀 있지 않아, 3.0.0 발행일 충돌(oq-005)은 명세 원문으로 해소되지 않는다. | ref-031 | 아니오 | medium | 2026-09-25 | — | — |
-| f30 | [추정] | 28. 표준·상호운용성·다사업자 거버넌스는 규격 판·책임 분리로 9. 로봇·제조사 관제 연동, 적합성 시험으로 23. 시험·형식 검증·벤치마크, 판 이행으로 24. 자산·소프트웨어 수명주기 관리, 감사 추적으로 26. 사이버보안·접근권한·개인정보, 통합자 위험성평가로 25. 안전·위험 관리, 승강기 연동 표준으로 10. 설비·건물 시스템 연동과 맞물리는 것으로 보인다. | ref-031, ref-004, ref-712, ref-715, ref-714, ref-717 | 아니오 | low | 2026-09-25 | — | — |
+| f30 | [추정] | 28. 표준·상호운용성·다사업자 거버넌스는 규격 판·책임 분리로 9. 로봇·제조사 관제 연동, 적합성 시험으로 23. 시험·형식 검증·벤치마크, 판 이행으로 24. 자산·소프트웨어 수명주기 관리, 감사 추적으로 26. 사이버보안·접근권한·개인정보, 통합자 위험성평가로 25. 안전·위험 관리, 승강기 연동 표준으로 10. 설비·건물 시스템 연동과 맞물리는 것으로 보인다. | ref-031, ref-004, ref-712, ref-715, ref-560, ref-717 | 아니오 | low | 2026-09-25 | — | — |
 
 ### 근거 발췌
 
@@ -109,7 +109,7 @@
 | ref-408 | ekusiadadus (GitHub) | vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/ekusiadadus/vda5050-lab | 예 |
 | ref-608 | OTTO by Rockwell Automation | OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments | 2026-04 | 벤더 문서 | low | 2026-09-25 | https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/ | 예 |
 | ref-704 | VDA / VDMA / KIT IFL (VDA5050 GitHub) | VDA5050/VDA5050 — README | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/VDA5050/VDA5050 | 아니오 |
-| ref-705 | MassRobotics | AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema) | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/MassRobotics-AMR/AMR_Interop_Standard | 예 |
+| ref-253 | MassRobotics | AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema) | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/MassRobotics-AMR/AMR_Interop_Standard | 예 |
 | ref-706 | Semantic Versioning (Tom Preston-Werner, semver.org) | Semantic Versioning 2.0.0 | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://semver.org/spec/v2.0.0.html | 아니오 |
 | ref-707 | European Union (EUR-Lex) | Regulation (EU) 2023/2854 of the European Parliament and of the Council of 13 December 2023 on harmonised rules on fair access to and use of data (Data Act) | 2023-12-13 | 정부·연구기관 | medium | 2026-09-25 | https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng | 예 |
 | ref-708 | 국가법령정보센터(산업통상자원부) | 산업 디지털 전환 촉진법 (법률 제18692호) | 2022-01-04 | 정부·연구기관 | medium | 2026-09-25 | https://www.law.go.kr/법령/산업디지털전환촉진법/(18692,20220104) | 예 |
@@ -118,7 +118,7 @@
 | ref-711 | Open Source Robotics Alliance | Charter of the Open Source Robotics Alliance Project 'Open-RMF' | 2024-03 | 오픈소스 문서 | medium | 2026-09-25 | https://osralliance.org/wp-content/uploads/2024/03/open-rmf-project-charter.pdf | 예 |
 | ref-712 | OPC Foundation | How to Certify - OPC Foundation | 미확인 | 표준 | medium | 2026-09-25 | https://opcfoundation.org/certification/how-to-certify/ | 예 |
 | ref-713 | IETF (RFC Editor) | RFC 9745: The Deprecation HTTP Response Header Field | 미확인 | 표준 | medium | 2026-09-25 | https://www.rfc-editor.org/info/rfc9745/ | 예 |
-| ref-714 | ISO | ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells | 2025-02 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/73934.html | 예 |
+| ref-560 | ISO | ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells | 2025-02 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/73934.html | 예 |
 | ref-715 | IEC | IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample) | 2013-08 | 표준 | medium | 2026-09-25 | https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf | 예 |
 | ref-716 | ISO/IEC | ISO/IEC 20000-1:2018 - Information technology — Service management — Part 1: Service management system requirements | 2018 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/70636.html | 예 |
 | ref-717 | 대한민국 정책브리핑(산업통상자원부 국가기술표준원) | 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 | 2021-11-11 | 정부·연구기관 | medium | 2026-09-25 | https://korea.kr/news/pressReleaseView.do?newsId=156480155 | 예 |
@@ -133,7 +133,7 @@
 - **ref-408**: 원문 미열람. MQTT 기록에서 VDA 5050 주문·재연결·취소 불일치를 진단하는 개인 도구.
 - **ref-608**: 원문 미열람. OTTO AMR 이 여러 VDA 5050 관제 업체와 인증을 마쳤다는 벤더 발표.
 - **ref-704**: VDA 5050 공식 저장소 README. 기여·이슈 처리 방식, 계획 판(3.0.1·3.1.0·4.0.0), 공식 PDF 우선과 지원 의무 부인 문구.
-- **ref-705**: MassRobotics 공식 저장소. 다수 제조사 AMR 공존 목적, identityReport·statusReport 두 보고 메시지 스키마.
+- **ref-253**: MassRobotics 공식 저장소. 다수 제조사 AMR 공존 목적, identityReport·statusReport 두 보고 메시지 스키마.
 - **ref-706**: 공개 API 선언과 MAJOR·MINOR·PATCH 증가 규칙, 폐기 절차를 정한 버전 관리 명세.
 - **ref-707**: 원문 미열람. EU 데이터법. 연결 제품 데이터 접근·공유, 제조사·데이터 보유자의 공유·상호운용성 의무, 처리 서비스 전환 의무.
 - **ref-708**: 원문 미열람. 산업데이터 생성자의 사용·수익 권리, 공동 생성·제3자 제공 시 권리 귀속 규정.
@@ -142,7 +142,7 @@
 - **ref-711**: 원문 미열람. Open-RMF 프로젝트 헌장. 프로젝트 리더·PMC·작업반 구성과 PMC 의 일상 운영 책임.
 - **ref-712**: 원문 미열람. OPC 제품의 자체 인증·독립 시험소 인증 절차와 적합성 시험 도구 안내.
 - **ref-713**: 원문 미열람. 자원 폐기(예정)를 알리는 Deprecation HTTP 응답 헤더와 Sunset 헤더(RFC 8594)와의 관계.
-- **ref-714**: 원문 미열람. 산업용 로봇 적용·로봇 셀의 안전 요구. 통합자가 예견 가능한 위험을 대상으로 함.
+- **ref-560**: 원문 미열람. 산업용 로봇 적용·로봇 셀의 안전 요구. 통합자가 예견 가능한 위험을 대상으로 함.
 - **ref-715**: 원문 미열람. 산업 자동화·제어 시스템의 시스템 보안 요구. 감사 대상 이벤트·타임스탬프·감사 정보 보호 요구 포함.
 - **ref-716**: 원문 미열람. 서비스 관리 시스템 요구사항 표준. 서비스 수준 관리 포함.
 - **ref-717**: 원문 미열람. 로봇 엘리베이터 탑승 안전 요구사항·실내 배송 로봇 KS 제정 보도자료.
@@ -187,7 +187,7 @@
     - f25 로봇 엘리베이터 탑승 KS 의 번호·세부 메시지 미확인(oq-041 미해결)
     - f16 KOROS 1148-8:2025 시험 항목과 ISO 22166 계열 관계 미확인
     - f15 OTTO VDA 5050 인증의 시험 항목·주체 미확인(벤더 주장)
-    - ref-704·ref-705·ref-706·ref-709·ref-710·ref-712·ref-713 발행일 미확인
+    - ref-704·ref-253·ref-706·ref-709·ref-710·ref-712·ref-713 발행일 미확인
     - oq-005 VDA 5050 3.0.0 발행일은 명세 원문에 날짜가 없어 해소 못 함(f29)
     - oq-055 VDA 5050 공식 적합성 시험 부재는 읽은 명세·README 범위에서만 확인(f14), 해결 제안하지 않음
 - 범위 경계 위반 의심:
@@ -195,4 +195,4 @@
     - f25: 승강기 안전기준·제어는 시설·설비 제어 경계라 표준 존재만 기술하고 10. 설비·건물 시스템 연동과의 연결로 제안
     - f20: ISO 10218-2 는 산업용 로봇 셀 표준이라 물류 이동로봇 적용은 미확인으로 명시
     - f17·f18·f19: 법 해석은 ROP 직접 범위가 아니며 계약 조건으로 반영할 과제로만 제안
-- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-704(VDA5050 README), ref-705(MassRobotics README·JSON 스키마), ref-706(semver.md), ref-710(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-704~ref-718, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-708), SPRi(ref-709), 국가기술표준원 보도자료(ref-717), KOROS 단체표준(ref-718). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-704(VDA5050 README), ref-253(MassRobotics README·JSON 스키마), ref-706(semver.md), ref-710(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-704~ref-718, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-708), SPRi(ref-709), 국가기술표준원 보도자료(ref-717), KOROS 단체표준(ref-718). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음.
