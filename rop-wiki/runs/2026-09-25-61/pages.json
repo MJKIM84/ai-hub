@@ -59,14 +59,15 @@
         "f8",
         "f18",
         "f19",
-        "f1"
+        "f1",
+        "f24"
       ]
     },
     {
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "budget_chars": 500,
-      "summary": "VDA 5050 명세·스키마, MassRobotics, IDTA 02007, ISO 17359·55000, IEC TR 62443-2-3, ROS 2 관리형 노드·REP 2000, rmf_simulation, 국내 협동로봇 설치 작업장 안전인증이 관련된다. [사실][^ref-031]",
+      "summary": "이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-753][^ref-758]",
       "planned_findings": [
         "f1",
         "f4",
@@ -85,8 +86,8 @@
     {
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "8. 대표 연구와 자료",
-      "budget_chars": 350,
-      "summary": "산업용 로봇 상태 감시 검토 논문(Lei 외 2025)과 배터리 열화 인지 플릿 스케줄링 프리프린트(2026-03)가 대표 연구다. [사실][^ref-757]",
+      "budget_chars": 450,
+      "summary": "대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]",
       "planned_findings": [
         "f14",
         "f15",
@@ -137,37 +138,37 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가"
+      "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-760 항목 롤백 문구 정정"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s4.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"4. 핵심 개념과 용어\" 절(1,365자)을 옮겼다"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"4. 핵심 개념과 용어\" 절(1,365자)을 옮겼다(2차 수정 없음)"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s6.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"6. 대표 접근법과 기술\" 절(1,327자)을 옮겼다"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"6. 대표 접근법과 기술\" 절(1,327자)을 옮겼다. 2차 수정: 부품 진단 연계 대상 문장을 [추정]과 각주로 고치고, 5·9절 참조를 원 세부영역 페이지 절 링크로 바꿈"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s3.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"3. 왜 중요한가\" 절(1,019자)을 옮겼다"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"3. 왜 중요한가\" 절(1,019자)을 옮겼다(2차 수정 없음)"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(982자)을 옮겼다"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(982자)을 옮겼다. 2차 수정: 1절 요약과 3절 첫 문장의 태그를 [추정]으로 낮추고 각주를 ref-031·ref-753·ref-758 로 바꿈"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s10.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"10. 다른 연구영역과의 연결\" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"10. 다른 연구영역과의 연결\" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침(2차 수정 없음)"
     }
   ],
   "changelog_entry": "2026-09-25 | 24. 자산·소프트웨어 수명주기 관리 | 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) | run 2026-09-25-61",
@@ -252,7 +253,12 @@
       "summary": "VDA 5050 3.0.0 명세 원문. 의미적 버전 규칙, 토픽의 주 버전, 지도 배포·버전(downloadMap·enableMap·deleteMap), 미지원 파라미터 오류 규정 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -267,7 +273,9 @@
       "summary": "VDA 5050 상태 메시지 JSON 스키마. powerSupply(stateOfCharge·batteryHealth·charging·range)와 maps(mapId·mapVersion·mapStatus) 필드 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -282,7 +290,11 @@
       "summary": "VDA 5050 팩트시트 JSON 스키마. 이번 실행에서 versions 배열과 batteryCharging 블록 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -297,7 +309,10 @@
       "summary": "MassRobotics AMR 상호운용 표준 JSON 스키마. 이번 실행에서 식별·배터리·오류 필드 확인.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -312,7 +327,10 @@
       "summary": "원문 미열람. Open-RMF 시뮬레이션 플러그인 저장소 README(이번 실행에서 다시 열지 않음, 2026-09-25-56 확인 내용 재사용).",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -327,7 +345,10 @@
       "summary": "ROS 2 관리형 노드의 주 상태·전이 상태·전이와 목적(초기화 확인, 실행 중 교체·재시작) 설계 문서.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -342,7 +363,8 @@
       "summary": "ROS 2 배포판별 출시·지원 종료 일정과 LTS 5년·비LTS 1.5년 지원 정책.",
       "source_unopened": false,
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area24-s3.md"
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -357,7 +379,10 @@
       "summary": "자산관리셸 소프트웨어 명판 서브모델의 목적(업데이트·패치·라이선스·감사)과 버전·설치 인스턴스 속성.",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -372,7 +397,8 @@
       "summary": "원문 미열람. 기계 상태 감시 프로그램 수립 일반 지침, 상태 감시·진단 표준군의 상위 문서.",
       "source_unopened": true,
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area24-s4.md"
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -387,7 +413,8 @@
       "summary": "원문 미열람. 자산 관리 용어·개요·원칙 제2판(ISO/TC 251, 2014 판 대체), 모든 유형의 자산에 적용.",
       "source_unopened": true,
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area24-s4.md"
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -402,7 +429,9 @@
       "summary": "원문 미열람. AMR 플릿의 작업 배정·충전을 배터리 열화 균형과 함께 최적화하는 프리프린트(동료 심사 전).",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -417,7 +446,10 @@
       "summary": "원문 미열람. 산업용 로봇 고장 모드, 데이터 수집, 모델·데이터 기반 상태 감시·고장 진단 검토.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -432,7 +464,10 @@
       "summary": "원문 미열람. 산업 제어 시스템 패치 관리 프로그램의 소유자·공급자 요구와 패치 정보 교환 형식.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s4.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -447,7 +482,9 @@
       "summary": "원문 미열람. EU 기계 규정. 2027-01-20 적용, 제조사가 예견·계획하지 않은 물리적·디지털 변경을 포함한 실질적 변경 정의.",
       "source_unopened": true,
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area24-s3.md"
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     },
     {
@@ -462,7 +499,8 @@
       "summary": "aws-samples 저장소의 ROS 2 플릿 무선 펌웨어 업데이트 시연용 샘플(IoT Jobs·Greengrass·Docker, 버전 조회, 자동 롤백을 이점으로 나열).",
       "source_unopened": false,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md"
       ]
     },
     {
@@ -477,7 +515,8 @@
       "summary": "원문 미열람. SDR 차세대 로봇 공통 플랫폼 기술개발 3차년도 착수 워크숍(KIST 휴머노이드연구단)과 클라우드 기반 OTA 목표 보도.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s6.md"
       ]
     },
     {
@@ -492,7 +531,8 @@
       "summary": "원문 미열람. 협동로봇 설치 작업장 안전인증(ISO 10218-2 준수 심사, 2년 주기 정기 심사) 안내.",
       "source_unopened": true,
       "cited_by": [
-        "docs/topics/2026/2026-09-25-area24-s3.md"
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s7.md"
       ]
     },
     {
@@ -507,7 +547,9 @@
       "summary": "원문 미열람. 로봇 시스템 위험성평가 가이드. 동일 모델 교체 시 펌웨어·안전 파라미터 변경에 따른 재평가 권고.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md"
+        "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+        "docs/topics/2026/2026-09-25-area24-s3.md",
+        "docs/topics/2026/2026-09-25-area24-s10.md"
       ]
     }
   ],
@@ -563,12 +605,6 @@
     },
     {
       "step": "적치",
-      "item": "작업 대상",
-      "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
-      "title": "24. 자산·소프트웨어 수명주기 관리"
-    },
-    {
-      "step": "적치",
       "item": "수행 자원",
       "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "title": "24. 자산·소프트웨어 수명주기 관리"
@@ -588,18 +624,6 @@
     {
       "step": "적치",
       "item": "예외·성과",
-      "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
-      "title": "24. 자산·소프트웨어 수명주기 관리"
-    },
-    {
-      "step": "출하",
-      "item": "시작 조건",
-      "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
-      "title": "24. 자산·소프트웨어 수명주기 관리"
-    },
-    {
-      "step": "출하",
-      "item": "작업 대상",
       "link": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "title": "24. 자산·소프트웨어 수명주기 관리"
     },
@@ -706,7 +730,9 @@
     "3절·11절: EU 기계 규정에서 제조사가 예견한 소프트웨어 업데이트의 취급(실질적 변경 제외 여부)을 조문 원문이나 EU 공식 지침으로 확인해 달라 — 브리프에는 정의 조건만 있다.",
     "3절·11절: 국내 협동로봇 설치 작업장 안전인증에서 펌웨어·안전 파라미터 변경이 재심사 대상인지 공식 규정 원문 확인이 필요하다.",
     "6절·7절: 신규 출처 예산 도달로 빠진 ISO 13374, ISO 10218-1:2025 사이버보안 요구, CISA SBOM, 카나리 배포 연구를 다음 실행에서 조사해 달라.",
-    "9절: '업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포'하는 방식의 근거(단계적 배포·카나리 배포의 로봇 플릿 적용 사례)가 없어 구축자 추론으로만 남겼다."
+    "9절: '업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포'하는 방식의 근거(단계적 배포·카나리 배포의 로봇 플릿 적용 사례)가 없어 구축자 추론으로만 남겼다.",
+    "5절: 적치·출하 시나리오의 작업 대상과 출하 시작 조건을 뒷받침할 물류 현장 자료가 없어 흐름 매트릭스 연결에서 뺐다 — 지도 전환·배터리 열화가 실제 물류센터 작업에 미친 사례를 조사해 달라.",
+    "운영: 자동 분리 주제 페이지 9절의 '1차·2차 검증을 거쳤다'는 고정 문구는 2차 통과 전에는 사실이 아니므로 퍼블리셔 담당이 문구 생성 시점을 확인해 달라."
   ],
   "fixes_applied": [
     "ref-031·ref-051 재사용 지시 — 본문 각주와 13절 정의, sources, reference_updates 에서 URL 이 같은 기존 ref-031(VDA5050_EN.md)과 ref-051(state.schema)을 그대로 쓰고 새 id 로 등록하지 않았다.",
@@ -721,6 +747,11 @@
     "원문 미열람 표시 지시 — ref-754·ref-755·ref-403·ref-757·ref-758·ref-759·ref-761·ref-762·ref-763·ref-523 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
     "신뢰도·태그 지시 — 프런트매터 confidence 를 medium 으로 두고 각 finding 의 태그를 1차 판정 처분(f13·f17 부분 강등, f19 강등, 나머지 유지)대로 썼다.",
     "분량 초과 자동 분리: 24. 자산·소프트웨어 수명주기 관리 본문 8,444자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,733자",
-    "형식 검증 수정: 주제 페이지 2026-09-25-area24-s10.md 3절의 세부영역 링크 11건이 원 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 원 세부영역 페이지 프런트매터 sources 를 13절 각주 정의 목록과 일치시켰다. 주장·태그·각주는 바꾸지 않았다."
+    "형식 검증 수정: 주제 페이지 2026-09-25-area24-s10.md 3절의 세부영역 링크 11건이 원 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 원 세부영역 페이지 프런트매터 sources 를 13절 각주 정의 목록과 일치시켰다. 주장·태그·각주는 바꾸지 않았다.",
+    "2차: 8절 ref-760 항목 롤백 문구 — 세부영역 8절 항목을 'aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다'로 고치고 [추정]과 '벤더 주장' 병기를 유지했다.",
+    "2차: 7절 첫 문장 태그·각주 — 세부영역 7절과 주제 페이지 2026-09-25-area24-s7.md 1절·3절의 같은 문장을 [추정][^ref-031][^ref-753][^ref-758]로 바꿨다(두 페이지 모두 sources·각주 정의에 ref-753·ref-758 이 이미 있다).",
+    "2차: 8절 대표 연구 분류·평가 — 8절 첫 문장을 '대표 연구를 … 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]'로, Lei 외 항목의 '배경 자료' 문장을 '구축자 의견이다. [의견]'인 별도 문장으로 바꾸고 논문 내용 문장만 [사실][^ref-757]로 남겼다.",
+    "2차: 6절 분리 페이지 연계 대상 문장과 절 참조 — 2026-09-25-area24-s6.md 3절 '부품 상태 감시와 고장 진단' 소절을 '부품 진단 자체는 로봇 제조사 쪽 연계 대상으로 보인다. [추정][^ref-757]'로 고치고, '9절에서 다룬다'와 '5절의 적치 시나리오'를 원 세부영역 페이지의 9절·5절 링크로 바꿨다. 같은 원칙으로 s7 페이지의 '(3절)' 참조도 3절 분리 주제 페이지 링크로 바꿨다.",
+    "2차: flow_matrix_updates 정리 — 적치/작업 대상, 출하/시작 조건, 출하/작업 대상 세 항목을 뺐다(남은 7칸은 5절 끝 문장의 관여 칸 목록과 같다)."
   ]
 }

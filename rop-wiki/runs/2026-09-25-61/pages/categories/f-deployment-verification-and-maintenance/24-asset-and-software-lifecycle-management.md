@@ -97,17 +97,17 @@ version: 2
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [사실][^ref-031] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
+이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-753][^ref-758] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area24-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-이 영역의 대표 연구는 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나뉜다. [사실][^ref-757][^ref-403]
+이 영역의 대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]
 
-- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료다. [사실][^ref-757]
+- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. [사실][^ref-757] 이 논문이 ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료라는 것은 구축자 의견이다. [의견]
 - 저자 미확인, Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots(2026-03, arXiv 프리프린트, 동료 심사 전) — 작업 배정·충전을 플릿 전체 배터리 열화 균형과 함께 최적화한다. [사실][^ref-403]
-- Amazon Web Services, ros2-ota-firmware-updates README — 플릿 OTA 배포·버전 조회·롤백을 시연하는 샘플이다. [추정] 벤더 주장[^ref-760]
+- Amazon Web Services, ros2-ota-firmware-updates README — aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다. [추정] 벤더 주장[^ref-760]
 - SDR 과제 킥오프 워크숍 보도(2026-07-23) — 국내 클라우드 기반 OTA 목표 사례다. [추정][^ref-761]
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)
