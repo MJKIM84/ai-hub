@@ -1,0 +1,36 @@
+{
+  "run_id": "2026-09-25-42",
+  "stage": "second",
+  "verdict": "수정 후 재검증",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "11절(분리 페이지 docs/topics/2026/2026-09-25-area17-s11.md)은 1차 지시대로 기존 oq-001·oq-006·oq-042·oq-049에 이번 실행의 진전을 덧붙였다. 새 질문 2(SEMI E84의 물류 적용)는 oq-042 바로 아래 하위 항목으로 두었다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "docs/topics/2026/2026-09-25-area17-s7.md 3절 표 'GS1 CBV' 행: '인계 이벤트에 쓸 업무 단계 어휘(accepting·receiving 등)를 정의한다. [사실][^ref-044]'를 'GS1 CBV는 업무 단계 어휘(accepting·receiving·loading·unloading 등)를 정의한다. [사실][^ref-044] 이 가운데 어느 값을 인계 이벤트에 쓸지는 정해지지 않았다(4절, oq-006).'처럼 고친다. f21이 뒷받침하는 것은 어휘의 정의뿐이다. CBV가 인계 이벤트용 값을 정한다는 뜻으로 읽히는 부분은 f22([추정], 이 위키의 추론)의 내용이므로 [사실]로 쓰면 태그가 올라간다.",
+    "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md 5절 표 '제약' 칸: '도킹 정지 위치의 반복성은 ASTM F3499-21 같은 시험 방법으로 확인한다. [사실][^ref-920]'를 '도킹 정지 위치의 반복성을 확인하는 시험 방법으로 ASTM F3499-21(2021)이 있다. [사실][^ref-920]'처럼 고친다. f10은 시험 방법이 있다는 사실만 뒷받침한다. 이 현장에서 그 시험으로 확인한다는 운영 서술은 브리프 어디에도 없다. 이 칸 앞 문장의 [추정] 태그와 각주는 그대로 둔다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 수정 후 재검증. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only, raw.githubusercontent.com만 열람)에서 검증됐다. 확인 28건, 미확인 1건(f23), 교차 확인 1건(f7). 강등: f23 사실 → 추정(기사는 과제 결과물 공개를 전하며, 전담기관 명시는 미확인). 원문 미열람 출처: ref-007, ref-360, ref-394, ref-918, ref-919, ref-920, ref-921, ref-922, ref-923, ref-924, ref-925, ref-926, ref-927, ref-928, ref-929. 원문 확인 출처: ref-008, ref-023, ref-031, ref-044, ref-047, ref-048, ref-216, ref-930. 주의: 이동로봇–작업대·로봇팔 인계 확인을 제조사 중립으로 정한 물류 업종 공개 규격은 확인되지 않았다(oq-042 미해결). SEMI E84는 반도체 업종의 참고 사례이며, 인계 완료 판정 방식(f24)과 ROP 직접 범위(f27)는 이 위키의 추론이다. 정정 요청 없음. / 2차 수정 후 재검증. 드리프트 2건을 처리하도록 지시했다(분리 페이지 7절 GS1 CBV 행이 f22의 추론을 [사실]로 쓴 표현, 5절 제약 칸의 ASTM F3499-21 운영 서술). 1차 수정 지시 12건은 모두 이행을 확인했다(f23 강등·문장 수정, f12 전류 급증, f15·f11 조건 병기, SEMI E84 업종 병기, 원문 미열람 표시, 기존 각주 재사용, ref-031 직접 인용 0회, 안전 표준 범위, 11절 연결, 용어 링크). [분류원문] 보존, 섹션 순서 준수, 링크 유효(docs_tree 기준). 참고: reference_updates의 cited_by가 분리 주제 페이지 인용을 일부 빠뜨렸다(예: ref-008·ref-023). 퍼블리셔 자동 영역(reference-cited-pages)이 다시 계산하는 항목이라 수정 지시는 하지 않았다. ref-007 각주는 시드 줄을 재사용해 접근일이 2026-09-24이다. 분리 주제 페이지의 검증 노트는 코드가 생성한 문구이며, 게시는 2차 통과 뒤에만 이루어진다.",
+  "retry_reason": null
+}

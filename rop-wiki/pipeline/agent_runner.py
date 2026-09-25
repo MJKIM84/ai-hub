@@ -531,6 +531,22 @@ def _related_area_nos(target: dict, track_cfg: dict | None) -> list[int]:
     return seen
 
 
+def _brief_digest(text: str) -> str:
+    """이전 실행 research.md 에서 '### 근거 발췌'·'### 출처 요약' 소절을 뺀다(중복 조사 방지에는 발견 사항·출처 표·질문으로 충분하고,
+    두 소절이 브리프의 절반을 차지해 같은 트랙 이전 브리프만 17만 자가 됐다 — 3부 배치)."""
+    out, skip = [], False
+    for line in text.split("\n"):
+        if line.startswith("### ") and line[4:].strip() in ("근거 발췌", "출처 요약"):
+            skip = True
+            out.append(line + "\n\n(이전 브리프 요약: 이 소절은 생략했다)")
+            continue
+        if skip and (line.startswith("## ") or line.startswith("### ")):
+            skip = False
+        if not skip:
+            out.append(line)
+    return "\n".join(out)
+
+
 def _same_target(d: Path, target_json: dict | None) -> bool:
     if not target_json:
         return True
@@ -574,12 +590,12 @@ def _previous_research(run_id: str, settings: dict, n: int = 7, target_json: dic
         if parked:
             reason = str(runs.read_summary(d).get("park_reason") or "").strip()
             label = f"{rel}/research.md (보류" + (f": {reason[:120]}" if reason else "") + ")"
-            out.append((label, p.read_text(encoding="utf-8")))
+            out.append((label, _brief_digest(p.read_text(encoding="utf-8"))))
             v = d / "verification.md"
             if v.is_file():
                 out.append((f"{rel}/verification.md (보류 실행의 반려 사유)", v.read_text(encoding="utf-8")))
         else:
-            out.append((f"{rel}/research.md", p.read_text(encoding="utf-8")))
+            out.append((f"{rel}/research.md", _brief_digest(p.read_text(encoding="utf-8"))))
         if _same_target(d, target_json):
             briefs += 1
             if briefs >= n:
@@ -752,6 +768,78 @@ def _weekly_inputs(run_id: str, day: str, settings: dict) -> list[tuple[str, str
     return out
 
 
+def _index_inputs(target_json: dict, track_cfg: dict | None) -> list[tuple[str, str]]:
+    """참고문헌·용어집·열린 질문 목록 입력(운영 전환 1-5 비용). 주간 정리·월간 재검증은 전체 목록 페이지를 그대로 준다.
+    그 밖의 실행은 위키가 커질수록 프롬프트가 커지지 않게 요약한다(3부 배치에서 참고문헌 목록만 10만 자가 됐다):
+    - 참고문헌: 이번 대상 페이지(세부영역·대분류·트랙·아이디어)가 인용한 id 만 한 줄씩. 같은 URL 의 새 출처는 퍼블리셔가 기존 id 로 합친다
+    - 용어집: 용어마다 한 줄(slug: 한국어 (영어))
+    - 열린 질문: 대상 영역(트랙이면 중심·관련 영역)에 걸린 것만"""
+    rt = target_json.get("run_type")
+    if rt in ("weekly_review", "monthly_recheck"):
+        out: list[tuple[str, str]] = []
+        for rel in ("docs/glossary/index.md", "docs/references/index.md", "docs/open-questions.md"):
+            _add(out, rel)
+        return out
+    t = target_json.get("target") or {}
+    tr = target_json.get("track") or {}
+    pages: list[Path] = []
+    if t.get("area_no"):
+        pages.append(ROOT / paths.area_repo_path(int(t["area_no"])))
+    if t.get("category_letter") and not t.get("area_no"):
+        pages.append(ROOT / paths.category_repo_path(str(t["category_letter"])))
+        pages += [ROOT / paths.area_repo_path(n) for n in paths.area_nos_of(str(t["category_letter"]))]
+    if tr.get("slug"):
+        pages += sorted((paths.DOCS / "tracks" / str(tr["slug"])).glob("*.md"))
+        idea = (track_cfg or {}).get("idea_page")
+        if idea:
+            pages.append(ROOT / (idea if str(idea).startswith("docs/") else f"docs/ideas/{idea}"))
+    cited: set[str] = set()
+    for pg in pages:
+        if pg.is_file():
+            cited |= set(re.findall(r"\bref-\d{3,}\b", pg.read_text(encoding="utf-8")))
+    all_refs = sorted(p.stem for p in (paths.DOCS / "references").glob("ref-*.md"))
+    rows = ["| id | 기관 | 제목 | 발행일 | URL | 접근일 | 원문 열람 |", "|---|---|---|---|---|---|---|"]
+    for rid in sorted(cited, key=lambda x: int(x.split("-")[1])):
+        f = paths.DOCS / "references" / f"{rid}.md"
+        if not f.is_file():
+            continue
+        try:
+            m, _ = fm.read(f)
+        except Exception:  # noqa: BLE001
+            continue
+        rows.append(f"| {rid} | {m.get('org', '')} | {m.get('ref_title') or m.get('title', '')} | {m.get('published') or '미확인'} | "
+                    f"{m.get('url', '')} | {m.get('accessed', '')} | {'예' if m.get('fetched') else '아니오'} |")
+    out = [(f"docs/references/index.md (요약: 이번 대상 페이지가 인용한 {len(rows) - 2}건 / 전체 {len(all_refs)}건. 목록에 없는 출처는 새 id 로 "
+            "적는다 — 같은 URL 이 이미 있으면 퍼블리셔가 기존 id 로 합친다)", "\n".join(rows))]
+    gl = []
+    for f in sorted((paths.DOCS / "glossary").glob("*.md")):
+        if f.name == "index.md":
+            continue
+        try:
+            m, _ = fm.read(f)
+        except Exception:  # noqa: BLE001
+            continue
+        gl.append(f"- {f.stem}: {m.get('term_ko', '')} ({m.get('term_en', '')})")
+    out.append((f"docs/glossary/index.md (요약: 용어 {len(gl)}개, slug: 한국어 (영어). 정의는 docs/glossary/<slug>.md)", "\n".join(gl)))
+    areas: set[int] = set()
+    if t.get("area_no"):
+        areas.add(int(t["area_no"]))
+    if t.get("category_letter") and not t.get("area_no"):
+        areas |= set(paths.area_nos_of(str(t["category_letter"])))
+    if track_cfg:
+        for k in ("primary_area", "related_areas"):
+            v = track_cfg.get(k)
+            for x in (v if isinstance(v, list) else [v]):
+                if str(x).isdigit():
+                    areas.add(int(x))
+    oq = runs.read_json(paths.DATA / "open_questions.json", {}) or {}
+    oq_items = oq if isinstance(oq, list) else oq.get("items", [])
+    sel = [q for q in oq_items if areas & {int(a) for a in (q.get("areas") or []) if str(a).isdigit()}]
+    lines = [f"- {q.get('id')} [{q.get('status')}] {q.get('question')} (영역 {', '.join(str(a) for a in q.get('areas') or [])})" for q in sel]
+    out.append((f"docs/open-questions.md (요약: 대상 영역 {sorted(areas)} 에 걸린 {len(sel)}건 / 전체 {len(oq_items)}건)", "\n".join(lines) or "없음"))
+    return out
+
+
 def _monthly_inputs() -> list[tuple[str, str]]:
     out: list[tuple[str, str]] = []
     for rel in ("docs/references/index.md", "docs/standards/index.md", "docs/glossary/index.md"):
@@ -880,9 +968,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
                 _add(inputs, pg)
         for n in _related_area_nos(t, track_cfg if is_track else None):
             inputs.append((f"{paths.area_repo_path(n)} (요약)", runs.area_summary(n)))
-        _add(inputs, "docs/glossary/index.md")
-        _add(inputs, "docs/references/index.md")
-        _add(inputs, "docs/open-questions.md")
+        inputs.extend(_index_inputs(target_json, track_cfg))
         _add(inputs, "config/priority.yaml")
         _add(inputs, "inbox/corrections.md")
         inputs.extend(_previous_research(run_id, settings, target_json=target_json))
@@ -912,9 +998,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
                 _add(inputs, pg)
         for n in _related_area_nos(t, track_cfg if is_track else None):
             inputs.append((f"{paths.area_repo_path(n)} (요약)", runs.area_summary(n)))
-        _add(inputs, "docs/glossary/index.md")
-        _add(inputs, "docs/references/index.md")
-        _add(inputs, "docs/open-questions.md")
+        inputs.extend(_index_inputs(target_json, track_cfg))
         _add(inputs, "inbox/corrections.md")
         _add(inputs, "config/priority.yaml")
         inputs.extend(_previous_research(run_id, settings, target_json=target_json))
@@ -971,9 +1055,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             if spec:
                 inputs.append(spec)
         _add(inputs, f"{rel_run}/docs_tree.txt")
-        _add(inputs, "docs/glossary/index.md")
-        _add(inputs, "docs/references/index.md")
-        _add(inputs, "docs/open-questions.md")
+        inputs.extend(_index_inputs(target_json, track_cfg))
         _add(inputs, "_source/ROP_SCM_연구분야_분류.md")
         if retry and (rd / "verification2.json").is_file():
             _add(inputs, f"{rel_run}/verification2.json")
@@ -997,8 +1079,8 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             letter = t.get("category_letter")
             if letter:
                 _add(inputs, paths.category_repo_path(letter))
-        for rel in ("docs/glossary/index.md", "docs/references/index.md", "docs/standards/index.md", "docs/open-questions.md"):
-            _add(inputs, rel)
+        inputs.extend(_index_inputs(target_json, track_cfg))
+        _add(inputs, "docs/standards/index.md")
         _add(inputs, f"{rel_run}/docs_tree.txt")
         _add(inputs, "inbox/corrections.md")
         if rt == "weekly_review":

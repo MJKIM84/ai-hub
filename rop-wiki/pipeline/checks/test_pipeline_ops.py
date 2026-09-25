@@ -273,6 +273,28 @@ class TestPreviousResearch(unittest.TestCase):
             self.assertTrue(A._same_target(track, {"target": {"area_no": 13}, "track": {"slug": "x"}}))
 
 
+class TestPromptSlimming(unittest.TestCase):
+    def test_brief_digest(self):
+        import agent_runner as A
+        text = "# b\n\n## 발견 사항\n\n| f1 |\n\n### 근거 발췌\n\n긴 발췌\n\n## 출처\n\n| ref-1 |\n\n### 출처 요약\n\n요약\n\n## 페이지 제안\n\n제안\n"
+        d = A._brief_digest(text)
+        self.assertNotIn("긴 발췌", d)
+        self.assertNotIn("요약\n\n## 페이지", d)
+        self.assertIn("| f1 |", d)
+        self.assertIn("| ref-1 |", d)
+        self.assertIn("제안", d)
+
+    def test_index_inputs_compact_for_area(self):
+        import agent_runner as A
+        out = A._index_inputs({"run_type": "area_deep_dive", "target": {"area_no": 7, "category_letter": "B"}}, None)
+        labels = [l for l, _ in out]
+        self.assertTrue(any(l.startswith("docs/references/index.md (요약") for l in labels))
+        refs = dict(out)[labels[0]]
+        self.assertIn("ref-022", refs)              # 7번 페이지가 인용한 출처
+        full = A._index_inputs({"run_type": "weekly_review", "target": {}}, None)
+        self.assertIn("docs/references/index.md", [l for l, _ in full])
+
+
 class TestSelection(unittest.TestCase):
     def test_weighted_track_pick(self):
         import select_target as S

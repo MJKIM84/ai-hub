@@ -1,0 +1,124 @@
+{
+  "run_id": "2026-09-25-40",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 16,
+    "area_name": "16. 공용 자원·충전·에너지 최적화",
+    "category": "D. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": null,
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 9,
+  "parked": false,
+  "published": false,
+  "committed": true,
+  "commit": "5959ded",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 19,
+    "sources": 9
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1691.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "재투입",
+  "changelog_entry": "2026-09-25 | 16. 공용 자원·충전·에너지 최적화 | 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 4건 반영, 1차 수정 지시 13건 이행 | run 2026-09-25-40",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 13:20:31 KST",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 878286,
+    "cache_read_input_tokens": 5622402,
+    "output_tokens": 168296,
+    "cost_usd": 12.4775,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.3664,
+        "output_tokens": 59308,
+        "cache_read_input_tokens": 3992995,
+        "cache_creation_input_tokens": 227648
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.735,
+        "output_tokens": 16476,
+        "cache_read_input_tokens": 1483083,
+        "cache_creation_input_tokens": 219601
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.2914,
+        "output_tokens": 91520,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 429478
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 0.0,
+        "output_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 14,
+  "cross_checked_findings": 0,
+  "resumed_at": "2026-09-25 14:13:14 KST",
+  "resumed_from_park_reason": "내용 검증 에이전트(2차) 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+}
