@@ -4,7 +4,7 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md | draft | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
+| update | docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md | draft | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가, 발행 시점 문장에 태그·각주. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
 | create | docs/topics/2026/2026-09-25-area07-s7.md | draft | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,570자)을 옮겼다 |
 
 ## 변경 이력·색인
@@ -18,7 +18,7 @@
 
 | 동작 | 용어(한글) | 용어(영문) | 한 줄 정의 | 관련 영역 | 출처 |
 |---|---|---|---|---|---|
-| update | VDA 5050 | VDA 5050 | 독일자동차산업협회(VDA)와 VDMA가 정한 이동로봇(AGV·AMR)과 상위 관제(fleet control) 사이의 통신 인터페이스 권고안이며 현행판은 3.0.0이다. | 5, 7, 9 | ref-031, ref-052 |
+| update | VDA 5050 | VDA 5050 | 독일자동차산업협회(VDA)와 VDMA가 정한 이동로봇(AGV·AMR)과 상위 관제(fleet control) 사이의 통신 인터페이스 권고안이며 현행판은 3.0.0이다. | 5, 7, 9 | ref-031, ref-052, ref-051, ref-022 |
 
 ## 참고문헌 갱신
 
@@ -49,6 +49,7 @@
 - 7절 VDA 5050 행: 공식 저장소 2.0.0 태그 마크다운(RELEASE CANDIDATE)과 VDA 게시 PDF(ref-022)의 글자 단위 일치를 확인해야 열람 표시를 더 정리할 수 있다.
 - 7절 현행판 표기·oq-005: VDA 5050 3.0.0의 정확한 발행일(2026-03-19 대 2026-04 보도자료)을 발행 기관 원문으로 확인해야 한다.
 - 표준 목록의 VDA 5050 (3.0.0) 행 관련 영역에 7. 화물·재고·자산 식별과 추적을 더하고 참고문헌을 공식 저장소(ref-031)로 보강할지 다음 실행에서 판단이 필요하다.
+- 파이프라인 참고(2차 검증 노트): 자동 분리 뒤 세부영역 프런트매터 sources 정리, 분리 주제 페이지의 세 줄 요약·9절 형식·주 연구영역 머리 줄, reference_updates cited_by 에 분리 주제 페이지 추가는 분리 코드 담당이 처리해야 한다.
 
 ## 이행한 수정 지시
 
@@ -63,4 +64,6 @@
 - reference_updates — ref-051·ref-052를 source_unopened: false로 신규 등록하고, ref-032·ref-022는 source_unopened: true를 유지했으며 본문에서 쓰지 않은 ref-018·ref-021은 넣지 않았다.
 - 용어집 VDA 5050 — glossary_updates(action: update)로 한 줄 정의를 지시 문구로 바로잡고 팩트시트는 규격 안의 한 메시지로 설명에서 구분했다(근거 ref-031·ref-052).
 - 변경 이력·페이지 갱신 요약 — changelog_entry, diff_summary, index_updates에 corr-001 반영과 corr-002 거절(사유: 분류원문 보호)을 적었다.
+- 2차: 7절 발행 시점 문장 — 7절 patch 에서 '3.0.0은 2026년 발행이며 정확한 날짜는 미확인이다(oq-005).' 끝에 [사실][^ref-032]를 붙였다(분리 시 세부영역 7절 요약과 주제 페이지 1·3절에 그대로 옮겨진다).
+- 2차: 용어집 vda-5050 — glossary_updates 의 sources 에 ref-051·ref-022를 더해 description 의 적재물 식별 보고 문장 근거를 담았다.
 - 분량 초과 자동 분리: 7. 화물·재고·자산 식별과 추적 본문 4,922자 > 기준 4,000자 → 1개 절을 주제 페이지로 옮김, 남은 본문 3,641자
