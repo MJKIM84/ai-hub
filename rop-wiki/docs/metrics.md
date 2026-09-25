@@ -24,7 +24,7 @@ version: 1
 |---|---|---|---|---|---|---|---|
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
+| [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 1 | 0 | 0 | 19 | 0 | 0 | 20 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -55,7 +55,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | published | medium | 2026-09-25 | 2 |
-| [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | seed | — | 2026-09-24 | 1 |
+| [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | published | medium | 2026-09-25 | 2 |
 | [11. 분산 시스템·통신·컴퓨팅 구조](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
 | [12. 명령·작업 실행의 신뢰성](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | seed | — | 2026-09-24 | 1 |
 
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 24회 중 최종 통과 24회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 24
-- 2차 검증 판정: 통과 24
+- 실행 25회 중 최종 통과 25회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 25
+- 2차 검증 판정: 통과 25
 
 ### 반려·보류 건수
 
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 104 |
-| 오픈소스 문서 | 73 |
-| 표준 | 60 |
-| 벤더 문서 | 19 |
-| 정부·연구기관 | 12 |
-| 기사 | 10 |
+| 논문 | 105 |
+| 오픈소스 문서 | 75 |
+| 표준 | 61 |
+| 벤더 문서 | 20 |
+| 기사 | 14 |
+| 정부·연구기관 | 14 |
 | 업계 보고서 | 3 |
 
-신뢰도: medium 195건, high 59건, low 27건
+신뢰도: medium 199건, high 61건, low 32건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 2026-09-24 | 1 | seed |
 | [12. 명령·작업 실행의 신뢰성](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 2026-09-24 | 1 | seed |
 | [13. 작업 배정 — MRTA](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 2026-09-24 | 1 | seed |
 | [14. 작업 순서·스케줄링](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 2026-09-24 | 1 | seed |
 | [15. 다중 로봇 경로·교통 관리 — MAPF](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 2026-09-24 | 1 | seed |
+| [16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->

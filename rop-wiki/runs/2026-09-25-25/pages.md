@@ -22,7 +22,7 @@
 
 | 동작 | 용어(한글) | 용어(영문) | 한 줄 정의 | 관련 영역 | 출처 |
 |---|---|---|---|---|---|
-| new | 승강기 어댑터 | Lift Adapter | Open-RMF 에서 플릿 어댑터·핵심 시스템의 승강기 요청을 받아 적절할 때만 승강기 노드에 전달하는 감독 구성요소이다. | 10, 12, 16 | ref-409 |
+| new | 승강기 어댑터 | Lift Adapter | Open-RMF 에서 플릿 어댑터·핵심 시스템의 승강기 요청을 받아 적절할 때만 승강기 노드에 전달하는 감독 구성요소이다. | 10, 12, 16 | ref-284 |
 | new | 디스펜서·인제스터 | Dispenser / Ingestor | Open-RMF 에서 로봇에 물건을 내주는 작업대(디스펜서)와 로봇에서 물건을 받아들이는 작업대(인제스터)로, 각각 요청·결과·상태 메시지로 배송 작업과 연동된다. | 10, 17 | ref-023 |
 | new | 해제 구역 | Release Zone | VDA 5050 3.0.0 에서 관제의 진입 허가를 받아야 이동로봇이 들어갈 수 있는 구역이다. | 10, 9, 15 | ref-031 |
 
@@ -37,9 +37,9 @@
 | ref-060 | Lee, Y. 외(Digital Health) | Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments | 논문 | medium | https://doi.org/10.1177/20552076261437181 |
 | ref-103 | PMC 게재 논문(저자 미확인) | The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments | 논문 | medium | https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/ |
 | ref-163 | 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지) | 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 | 논문 | medium | https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667 |
-| ref-408 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
-| ref-409 | Open Robotics | Lifts (integration_lifts) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_lifts.html |
-| ref-410 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg |
+| ref-283 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
+| ref-284 | Open Robotics | Lifts (integration_lifts) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_lifts.html |
+| ref-286 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg |
 | ref-411 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg |
 | ref-412 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg |
 | ref-413 | 국가표준인증통합정보시스템(KSSN) | KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | medium | https://www.kssn.net/search/stddetail.do?itemNo=K001010135682 |
@@ -77,7 +77,7 @@
 | 이름 | 종류 | 기관 | 관련 영역 | 참고문헌 | URL |
 |---|---|---|---|---|---|
 | KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | 산업통상자원부 국가기술표준원 | 10, 25 | ref-413 | https://www.kssn.net/search/stddetail.do?itemNo=K001010135682 |
-| Open-RMF 승강기·문 메시지(rmf_internal_msgs의 rmf_lift_msgs·rmf_door_msgs) | 오픈소스 | Open Robotics (open-rmf) | 10, 12, 16 | ref-410 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg |
+| Open-RMF 승강기·문 메시지(rmf_internal_msgs의 rmf_lift_msgs·rmf_door_msgs) | 오픈소스 | Open Robotics (open-rmf) | 10, 12, 16 | ref-286 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg |
 
 ## 추가 조사 요청
 
@@ -89,7 +89,7 @@
 - 3절·11절(oq-010): 물류센터 화물용 승강기·층간 반송 설비의 대기·처리량 정량 자료.
 - 8절: 국토교통부 로봇 친화형 건축물 보도자료(ref-421)의 발행일과 2025-05-28 스마트+빌딩 착수 보도와 같은 문서인지 확인.
 - 7절: 제조사 승강기 API(KONE, 현대엘리베이터)의 메시지 구조·인증 방식과 독립 출처 확인.
-- 퍼블리셔 확인: ref-408·ref-409·ref-410 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 및 참고문헌 목록의 ref-283·ref-284·ref-286 과 URL 이 같으므로 이중 등록 여부를 확인해야 한다. 또한 ref-047·ref-049 의 기존 신뢰도(high)를 이번 실행의 미재열람만으로 낮추지 않도록 확인해야 한다.
+- 퍼블리셔 확인: ref-283·ref-284·ref-286 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 및 참고문헌 목록의 ref-283·ref-284·ref-286 과 URL 이 같으므로 이중 등록 여부를 확인해야 한다. 또한 ref-047·ref-049 의 기존 신뢰도(high)를 이번 실행의 미재열람만으로 낮추지 않도록 확인해야 한다.
 - pipeline 담당 요청: 세부영역 페이지 프런트매터 sources 가 분리된 주제 페이지에서만 인용하는 출처까지 포함하고 있다. 자동 분리 시 원 페이지 sources 를 남은 각주 정의와 맞추는 처리가 필요하다.
 - pipeline 담당 요청: 절 자동 분리 시 세부영역 페이지 기준 상대 링크를 주제 페이지 위치 기준(../../categories/…)으로 다시 쓰는 처리가 필요하다.
 
@@ -105,13 +105,13 @@
 - f11·f12 — KS B 7317 을 7절 표에서 로봇 자체 탑승 안전 요구사항·제약 조건으로, 9절에서는 연계 대상으로, 10절에서 25. 안전·위험 관리 연결로만 썼고, f12 는 보도자료의 설명이며 표준 본문 조항은 미확인이라고 7절에 밝혔다.
 - f15·f16·f17 — 7절 제조사 API 세 문장 모두에 [추정] 벤더 주장을 병기하고, f16·f17 은 기사 출처이며 회사 발표에 기댄다고 적었다.
 - 9절 — 승강기·자동문·컨베이어·PLC 제어와 설비 안전 제어를 '연계 대상:'으로 짧게 두고, ROP 쪽은 작업 요청·점유 예약·상태 확인·완료 확인으로 한정했으며 f26 은 [추정]을 유지했다.
-- 원문 미열람 표기 — 각주 정의에서 ref-047·ref-049·ref-060·ref-103·ref-163·ref-413~ref-421 의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었으며, ref-023·ref-031·ref-408~ref-412 에는 붙이지 않았다.
-- 인용 — 모든 출처를 재서술로 쓰고 직접 인용을 두지 않아 ref-031·ref-408·ref-409 를 포함한 모든 출처가 출처당 1회 한도 안에 있다.
+- 원문 미열람 표기 — 각주 정의에서 ref-047·ref-049·ref-060·ref-103·ref-163·ref-413~ref-421 의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었으며, ref-023·ref-031·ref-283~ref-412 에는 붙이지 않았다.
+- 인용 — 모든 출처를 재서술로 쓰고 직접 인용을 두지 않아 ref-031·ref-283·ref-284 를 포함한 모든 출처가 출처당 1회 한도 안에 있다.
 - ref-103 — reference_updates 와 각주의 발행일을 2025 로 갱신하고 Sensors DOI 확인 사실을 요약에 적었다.
 - 11절 — 기존 oq-010 을 연결하고 새 질문 3건을 올렸으며(open_question_updates 에 new 3건), 3절과 11절에 f24 의 승강기 대기 영향은 물류센터 정량 자료가 없어 추정이라는 점을 oq-010 과 함께 적었다.
 - 분량 초과 자동 분리: 10. 설비·건물 시스템 연동 본문 7,260자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,511자
 - 형식 검증(재작성): docs/topics/2026/2026-09-25-area10-s10.md 3절의 영역 링크 11개를 세부영역 페이지 기준 경로에서 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 주장·태그·각주는 바꾸지 않았고, 이미 분리된 페이지 구성을 그대로 보내 재분리가 일어나지 않게 했다.
-- 2차: 7절 '국제 표준 미확인' — 세부영역 페이지 7절 요약과 주제 페이지 s7 의 1절·3절 첫 문장을 '관련 공개 규격은 오픈소스 메시지 정의와 로봇 탑승 안전 표준이 중심이다. [사실][^ref-410][^ref-413]'과 태그 없는 조사 한계 문장 '설비–로봇 연동 자체를 정한 국제 표준은 이번 조사에서 확인하지 못했다.'로 나눴다.
+- 2차: 7절 '국제 표준 미확인' — 세부영역 페이지 7절 요약과 주제 페이지 s7 의 1절·3절 첫 문장을 '관련 공개 규격은 오픈소스 메시지 정의와 로봇 탑승 안전 표준이 중심이다. [사실][^ref-286][^ref-413]'과 태그 없는 조사 한계 문장 '설비–로봇 연동 자체를 정한 국제 표준은 이번 조사에서 확인하지 못했다.'로 나눴다.
 - 2차: 5절 제약 칸 — KS B 7317 문장을 'KS B 7317 은 이동 로봇의 엘리베이터 탑승 안전 요구사항과 평가 방법을 정한다. [사실][^ref-413]'으로 바꿨다.
 - 2차: 주제 페이지 s10 의 9. 로봇·제조사 관제 연동 항목 — 사실('VDA 5050 3.0.0 은 주변 시스템 통신을 관제 최소 기능 목록에 넣는다. [사실][^ref-031]')과 판단('로봇 연동과 설비 연동을 함께 설계해야 한다는 것이 이 위키 구축자의 의견이다. [의견]')을 나눠 태그를 따로 붙였다.
 - 2차: 주제 페이지 s10 의 17. 로봇 간 협업·물리적 인계 항목 — 'Open-RMF 의 예시 작업대(디스펜서·인제스터)에서는 인계가 요청–결과 확인으로 이뤄진다. [사실][^ref-023]'로 한정했다.

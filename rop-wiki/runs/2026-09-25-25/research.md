@@ -34,11 +34,11 @@
 
 | id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
 |---|---|---|---|---|---|---|---|---|
-| f1 | [사실] | Open-RMF 는 문 제어기와 통신하는 문 노드(door node) 앞에 문 어댑터를 두어, 플릿 어댑터·RMF 핵심 시스템의 문 요청을 받아 로봇 운영을 방해하지 않는다고 판단될 때만 문 노드에 전달하는 상태 감독자 역할을 맡긴다. | ref-408 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f1 | [사실] | Open-RMF 는 문 제어기와 통신하는 문 노드(door node) 앞에 문 어댑터를 두어, 플릿 어댑터·RMF 핵심 시스템의 문 요청을 받아 로봇 운영을 방해하지 않는다고 판단될 때만 문 노드에 전달하는 상태 감독자 역할을 맡긴다. | ref-283 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
 | f2 | [사실] | Open-RMF 의 문 상태 메시지(DoorMode)는 자동문 제어기의 상태를 닫힘·움직이는 중·열림·오프라인·알 수 없음의 다섯 값으로 보고한다. | ref-412 | 아니오 | medium | 2026-09-25 | 완료·인계 | — |
-| f3 | [사실] | Open-RMF 의 승강기 어댑터는 플릿 어댑터·RMF 핵심 시스템의 승강기 요청을 받아 적절하다고 판단될 때만 승강기 노드에 전달하고, 어댑터를 거치지 않고 승강기 노드에 직접 보낸 요청은 무효로 만든다. | ref-409 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f3 | [사실] | Open-RMF 의 승강기 어댑터는 플릿 어댑터·RMF 핵심 시스템의 승강기 요청을 받아 적절하다고 판단될 때만 승강기 노드에 전달하고, 어댑터를 거치지 않고 승강기 노드에 직접 보낸 요청은 무효로 만든다. | ref-284 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
 | f4 | [사실] | Open-RMF 승강기 요청 메시지(LiftRequest)는 승강기 이름, 요청자별 세션 id, 요청 유형(세션 종료·AGV 모드·사람 모드), 목적 층, 문 상태(닫힘·열림)를 담으며, AGV 모드에서는 정지 시 문이 항상 열려 있고 사람 모드에서는 문이 시간 초과로 자동으로 닫힐 수 있다. | ref-411 | 아니오 | medium | 2026-09-25 | 제약 | — |
-| f5 | [사실] | Open-RMF 승강기 상태 메시지(LiftState)는 이용 가능한 층·현재 층·목적 층, 문 상태(닫힘·움직임·열림), 운행 상태(정지·상승·하강·알 수 없음), 모드(설정 가능한 사람·AGV, 읽기만 가능한 화재·오프라인·비상)와 승강기를 점유한 세션 id 를 보고한다. | ref-410 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
+| f5 | [사실] | Open-RMF 승강기 상태 메시지(LiftState)는 이용 가능한 층·현재 층·목적 층, 문 상태(닫힘·움직임·열림), 운행 상태(정지·상승·하강·알 수 없음), 모드(설정 가능한 사람·AGV, 읽기만 가능한 화재·오프라인·비상)와 승강기를 점유한 세션 id 를 보고한다. | ref-286 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f6 | [사실] | Open-RMF 는 작업대(workcell)를 물건을 내주는 디스펜서와 받아들이는 인제스터 두 유형으로 두고 각각 요청·결과·상태 메시지를 쓰며, 배송 작업에서 로봇은 픽업 위치에서 디스펜서 서비스를 요청해 확인을 기다린 뒤 하역 위치에서 인제스터 서비스를 요청해 확인을 기다린다. | ref-023, ref-047, ref-049 | 아니오 | medium | 2026-09-25 | 출하 / 완료·인계 | — |
 | f7 | [사실] | VDA 5050 3.0.0 은 관제와 이동로봇 사이 통신과 무관한 인터페이스, 곧 주변 설비·인프라 구성요소·외부 IT 시스템과의 인터페이스를 범위에서 제외한다. | ref-031 | 아니오 | medium | 2026-09-25 | — | — |
 | f8 | [사실] | VDA 5050 3.0.0 은 문·게이트·승강기 같은 주변 시스템과의 통신을 관제(fleet control) 시스템의 최소 기능 가운데 하나로 들어, 설비 연동 책임을 로봇이 아니라 관제 쪽에 둔다. | ref-031 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
@@ -57,9 +57,9 @@
 | f21 | [사실] | 국내 연구(로봇학회 논문지 2026)는 탐사와 엘리베이터 연계를 이용해 다층 실내 지도를 자율로 구축하는 시스템을 보고했다. | ref-163 | 아니오 | medium | 2026 | — | 원문 미열람 |
 | f22 | [사실] | 국토교통부는 로봇이 승강기 등을 이용해 건물 안을 이동할 수 있게 하는 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'에 착수한다고 발표했다. | ref-421 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f23 | [추정] | 분류 원문의 질문(컨베이어 준비와 로봇 도착을 어떻게 맞출까)에 대해, Open-RMF 의 디스펜서·인제스터처럼 로봇 도착 후 설비에 요청을 보내고 결과를 받아야 다음 단계로 넘어가는 요청–결과 방식과, VDA 5050 해제 구역처럼 설비 앞 구역 진입을 관제가 허가하는 방식을 조합하면 ROP 가 설비 준비 신호와 로봇 도착을 한 작업 흐름 안에서 맞출 수 있을 것으로 보인다. | ref-023, ref-031 | 아니오 | low | 2026-09-25 | 출하 / 완료·인계 | — |
-| f24 | [추정] | 입고·적치에서 로봇이 층간 운반에 승강기를 쓰면 한 세션이 승강기를 점유하는 동안 다른 로봇이 기다려야 하므로(Open-RMF 세션 방식), 승강기 대기가 처리량과 운반 시간에 영향을 줄 것으로 보인다. | ref-411, ref-410, ref-060, ref-103 | 아니오 | low | 2026-09-25 | 적치 / 예외·성과 | — |
-| f25 | [추정] | 승강기가 화재·비상·오프라인 모드로 바뀌거나 문 상태가 오프라인·알 수 없음으로 보고되면 ROP 는 해당 설비를 쓰는 작업을 멈추거나 다른 경로·사람 확인으로 넘기는 예외로 다뤄야 할 것으로 보인다. | ref-410, ref-412 | 아니오 | low | 2026-09-25 | 적치 / 예외·성과 | — |
-| f26 | [추정] | 연계 대상: 승강기·자동문·컨베이어·PLC 의 제어와 설비 안전 제어는 설비 제조사·설비 제어기 쪽에 남고, ROP 는 어댑터를 통해 작업 요청·점유 예약·상태 확인·완료 확인을 맡는 것으로 보인다. | ref-408, ref-409, ref-031 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
+| f24 | [추정] | 입고·적치에서 로봇이 층간 운반에 승강기를 쓰면 한 세션이 승강기를 점유하는 동안 다른 로봇이 기다려야 하므로(Open-RMF 세션 방식), 승강기 대기가 처리량과 운반 시간에 영향을 줄 것으로 보인다. | ref-411, ref-286, ref-060, ref-103 | 아니오 | low | 2026-09-25 | 적치 / 예외·성과 | — |
+| f25 | [추정] | 승강기가 화재·비상·오프라인 모드로 바뀌거나 문 상태가 오프라인·알 수 없음으로 보고되면 ROP 는 해당 설비를 쓰는 작업을 멈추거나 다른 경로·사람 확인으로 넘기는 예외로 다뤄야 할 것으로 보인다. | ref-286, ref-412 | 아니오 | low | 2026-09-25 | 적치 / 예외·성과 | — |
+| f26 | [추정] | 연계 대상: 승강기·자동문·컨베이어·PLC 의 제어와 설비 안전 제어는 설비 제조사·설비 제어기 쪽에 남고, ROP 는 어댑터를 통해 작업 요청·점유 예약·상태 확인·완료 확인을 맡는 것으로 보인다. | ref-283, ref-284, ref-031 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
 
 ### 근거 발췌
 
@@ -101,9 +101,9 @@
 | ref-060 | Lee, Y. 외(Digital Health) | Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments | 2026 | 논문 | medium | 2026-09-25 | https://doi.org/10.1177/20552076261437181 | 예 |
 | ref-103 | PMC 게재 논문(저자 미확인) | The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments | 미확인 | 논문 | medium | 2026-09-25 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/ | 예 |
 | ref-163 | 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지) | 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 | 2026 | 논문 | medium | 2026-09-25 | https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667 | 예 |
-| ref-408 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_doors.html | 아니오 |
-| ref-409 | Open Robotics | Lifts (integration_lifts) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_lifts.html | 아니오 |
-| ref-410 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg | 아니오 |
+| ref-283 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_doors.html | 아니오 |
+| ref-284 | Open Robotics | Lifts (integration_lifts) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_lifts.html | 아니오 |
+| ref-286 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg | 아니오 |
 | ref-411 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg | 아니오 |
 | ref-412 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg | 아니오 |
 | ref-413 | 국가표준인증통합정보시스템(KSSN) | KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 2021-11 | 표준 | medium | 2026-09-25 | https://www.kssn.net/search/stddetail.do?itemNo=K001010135682 | 예 |
@@ -125,9 +125,9 @@
 - **ref-060**: 원문 미열람. 이용이 많은 병원에서 승강기 이용을 고려한 자율 약품 배송 로봇의 실현 가능성을 다룬 논문(재사용).
 - **ref-103**: 원문 미열람. 승강기를 포함한 다층 호텔 환경의 다중 로봇 배송 경로계획 논문(재사용).
 - **ref-163**: 원문 미열람. 탐사와 엘리베이터 연계로 다층 실내 지도를 자율 구축하는 국내 논문(재사용).
-- **ref-408**: Open-RMF 의 문 연동 구조(문 노드, DoorState·DoorRequest, 상태 감독자 역할의 문 어댑터)를 설명하는 공식 문서(mdBook 원본).
-- **ref-409**: Open-RMF 의 승강기 연동 구조(승강기 노드, LiftState·LiftRequest, 요청을 걸러 전달하는 승강기 어댑터)를 설명하는 공식 문서(mdBook 원본).
-- **ref-410**: 승강기 층·문·운행 상태, 모드(사람·AGV·화재·오프라인·비상), 점유 세션을 보고하는 Open-RMF 승강기 상태 메시지 정의.
+- **ref-283**: Open-RMF 의 문 연동 구조(문 노드, DoorState·DoorRequest, 상태 감독자 역할의 문 어댑터)를 설명하는 공식 문서(mdBook 원본).
+- **ref-284**: Open-RMF 의 승강기 연동 구조(승강기 노드, LiftState·LiftRequest, 요청을 걸러 전달하는 승강기 어댑터)를 설명하는 공식 문서(mdBook 원본).
+- **ref-286**: 승강기 층·문·운행 상태, 모드(사람·AGV·화재·오프라인·비상), 점유 세션을 보고하는 Open-RMF 승강기 상태 메시지 정의.
 - **ref-411**: 세션 id, 요청 유형(세션 종료·AGV 모드·사람 모드), 목적 층, 문 상태를 담는 Open-RMF 승강기 요청 메시지 정의.
 - **ref-412**: 자동문 제어기 상태를 닫힘·움직임·열림·오프라인·알 수 없음으로 나타내는 Open-RMF 문 모드 메시지 정의.
 - **ref-413**: 원문 미열람. 이동 로봇의 엘리베이터 탑승 안전 요구사항과 평가 방법을 정한 국가표준의 KSSN 상세 페이지.
@@ -181,4 +181,4 @@
 - 범위 경계 위반 의심:
     - f26: 승강기·자동문·컨베이어·PLC 제어와 설비 안전 제어는 분류 원문 9장 '시설·설비 제어'의 외부 연계 영역이므로 '연계 대상: '으로 표시함
     - f11·f12: KS B 7317 은 로봇 자체의 탑승 안전 요구사항이므로 ROP 직접 범위가 아니라 25. 안전·위험 관리 연결과 제약 조건으로만 제안
-- 한계: 재실행 1회차. 반려 사유 1(f17 벤더 문서 근거 [사실]에 vendor_claim 누락): 직전 반환값이 이 프롬프트에 포함되지 않아 같은 범위로 브리프를 다시 구성했고, 벤더·제조사 발표에 기댄 기능·실적 주장 f15·f16·f17 을 모두 vendor_claim: true, 태그 [추정], evidence_excerpt 첫머리 '벤더 주장: '으로 냈다 (관련 finding: f15, f16, f17). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처는 ref-023·ref-031(재사용)과 ref-408~ref-412(신규) 7건이고, 나머지 14건(신규 9, 재사용 5)은 원문 미열람이라 신뢰도 상한 medium(기사·벤더는 low). 검색 11회/30, 신규 출처 14건/15(ref-408~ref-421, 예약 구간 안). 교차 확인 0건: 대부분 단일 출처이거나 같은 발행 주체의 문서다. 한국 자료: KS B 7317, 국가기술표준원·국토교통부 보도자료, 대한승강기협회 단체표준·협의체 기사, 현대엘리베이터 오픈 API 기사, 국내 논문(ref-163). 분류원문 질문(컨베이어 준비와 로봇 도착 맞추기)은 f23 으로 추정 수준 답만 냈고 정량 연구는 찾지 못했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 이전 실행 2026-09-25-20 의 신규 출처(ref-258~ref-272, 예: Franke 외 VDA 5050 주변 설비 논문)는 참고문헌 목록에 없어 재사용하지 않았다.
+- 한계: 재실행 1회차. 반려 사유 1(f17 벤더 문서 근거 [사실]에 vendor_claim 누락): 직전 반환값이 이 프롬프트에 포함되지 않아 같은 범위로 브리프를 다시 구성했고, 벤더·제조사 발표에 기댄 기능·실적 주장 f15·f16·f17 을 모두 vendor_claim: true, 태그 [추정], evidence_excerpt 첫머리 '벤더 주장: '으로 냈다 (관련 finding: f15, f16, f17). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처는 ref-023·ref-031(재사용)과 ref-283~ref-412(신규) 7건이고, 나머지 14건(신규 9, 재사용 5)은 원문 미열람이라 신뢰도 상한 medium(기사·벤더는 low). 검색 11회/30, 신규 출처 14건/15(ref-283~ref-421, 예약 구간 안). 교차 확인 0건: 대부분 단일 출처이거나 같은 발행 주체의 문서다. 한국 자료: KS B 7317, 국가기술표준원·국토교통부 보도자료, 대한승강기협회 단체표준·협의체 기사, 현대엘리베이터 오픈 API 기사, 국내 논문(ref-163). 분류원문 질문(컨베이어 준비와 로봇 도착 맞추기)은 f23 으로 추정 수준 답만 냈고 정량 연구는 찾지 못했다. 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 이전 실행 2026-09-25-20 의 신규 출처(ref-258~ref-272, 예: Franke 외 VDA 5050 주변 설비 논문)는 참고문헌 목록에 없어 재사용하지 않았다.

@@ -6,11 +6,11 @@
 
 | finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
 |---|---|---|---|---|---|
-| f1 | 예 | 예 | 아니오 | 유지 | 확인: ref-408 원문(github_raw integration_doors.md)을 검증 단계에서 다시 열어 문 어댑터의 상태 감독자 역할, adapter_door_requests 토픽, 적절할 때만 전달한다는 문장을 확인했다. 단일 발행 주체(Open Robotics). 발행일 미확인. |
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: ref-283 원문(github_raw integration_doors.md)을 검증 단계에서 다시 열어 문 어댑터의 상태 감독자 역할, adapter_door_requests 토픽, 적절할 때만 전달한다는 문장을 확인했다. 단일 발행 주체(Open Robotics). 발행일 미확인. |
 | f2 | 예 | 예 | 아니오 | 유지 | 확인: ref-412 DoorMode.msg 원문(github_raw)에 MODE_CLOSED·MOVING·OPEN·OFFLINE·UNKNOWN 다섯 값이 있다. 단일 출처. |
-| f3 | 예 | 예 | 아니오 | 유지 | 확인: ref-409 원문(github_raw integration_lifts.md)에서 'only relaying the instructions to the lift node if it is deemed appropriate', 직접 요청은 'negated'되고 승강기 노드는 OPC 같은 프로토콜로 제어기와 통신한다는 내용을 확인했다. 단일 출처. |
+| f3 | 예 | 예 | 아니오 | 유지 | 확인: ref-284 원문(github_raw integration_lifts.md)에서 'only relaying the instructions to the lift node if it is deemed appropriate', 직접 요청은 'negated'되고 승강기 노드는 OPC 같은 프로토콜로 제어기와 통신한다는 내용을 확인했다. 단일 출처. |
 | f4 | 예 | 예 | 아니오 | 유지 | 확인: ref-411 LiftRequest.msg 원문(github_raw)에 session_id, REQUEST_END_SESSION·AGV_MODE·HUMAN_MODE, destination_floor, DOOR_CLOSED·DOOR_OPEN과 AGV 모드·사람 모드 주석이 있다. 단일 출처. |
-| f5 | 예 | 예 | 아니오 | 유지 | 확인: ref-410 LiftState.msg 원문(github_raw)에 층·문 상태·운행 상태·모드(설정 가능한 HUMAN·AGV, 읽기만 가능한 FIRE·OFFLINE·EMERGENCY, UNKNOWN)·session_id 가 있다. 단일 출처. 같은 URL 이 실행 2026-09-25-24 에서 ref-382 로 제안됐다(중복 id 가능성, 검증 노트 참조). |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인: ref-286 LiftState.msg 원문(github_raw)에 층·문 상태·운행 상태·모드(설정 가능한 HUMAN·AGV, 읽기만 가능한 FIRE·OFFLINE·EMERGENCY, UNKNOWN)·session_id 가 있다. 단일 출처. 같은 URL 이 실행 2026-09-25-24 에서 ref-382 로 제안됐다(중복 id 가능성, 검증 노트 참조). |
 | f6 | 예 | 예 | 아니오 | 유지 | 확인: ref-023 원문(data/source_texts, github_raw)에서 디스펜서·인제스터의 요청·결과·상태 메시지, perform_deliveries, 배송 4단계를 확인했다. 원문은 두 유형을 'sample workcells'라 부르므로 예시 구현으로 서술해야 한다. ref-047·ref-049 는 이번 실행에서 원문 미열람(재사용)이다. 세 출처 모두 Open Robotics 라 독립 교차가 아니다. |
 | f7 | 예 | 예 | 아니오 | 유지 | 확인: ref-031 원문 2장 Scope 에서 'interfaces to peripheral equipment, infrastructure components, or external IT systems' 제외 문장을 확인했다(3.0.0 판). 발행일 미확인(oq-005 출처 충돌 관련). |
 | f8 | 예 | 예 | 아니오 | 유지 | 핵심은 확인: 5.3 관제 기능 목록에 'Communication with peripheral systems such as doors, gates, elevators, etc.'가 있다. 다만 '설비 연동 책임을 관제 쪽에 둔다'는 해석은 과장이다. 같은 명세 Scope 는 운영자·통합사·제조사·관제 제공자 사이 책임을 배분하지 않는다고 적는다. 이 구절 삭제를 지시한다. |
@@ -39,7 +39,7 @@
 |---|---|---|
 | 분류 적합성 | 예 | — |
 | 범위 경계 | 예 | — |
-| 중복·모순 | 예 | ref-408·ref-409·ref-410 은 실행 2026-09-25-24(8. 실시간 세계 상태·데이터 일관성)가 ref-379·ref-380·ref-382 로 제안한 출처와 URL 이 같다. 둘 다 아직 참고문헌 목록에 없어 브리프 id 를 쓰지만, 퍼블리셔가 등록할 때 같은 URL 의 id 가 이중 등록되지 않게 확인해야 한다, f1·f3·f5 는 실행 2026-09-25-24 의 f6·f7(문·승강기 어댑터와 LiftState)과 같은 내용이며 서로 충돌하지 않는다, 브리프 limits 는 실행 2026-09-25-20 의 출처(ref-258~)가 참고문헌 목록에 없다고 적지만, ref-258~ref-264(Franke 외 ref-259 포함)는 목록에 있다. 이번 브리프는 이 출처를 인용하지 않았으므로 페이지에 새로 넣지 않는다 |
+| 중복·모순 | 예 | ref-283·ref-284·ref-286 은 실행 2026-09-25-24(8. 실시간 세계 상태·데이터 일관성)가 ref-379·ref-380·ref-382 로 제안한 출처와 URL 이 같다. 둘 다 아직 참고문헌 목록에 없어 브리프 id 를 쓰지만, 퍼블리셔가 등록할 때 같은 URL 의 id 가 이중 등록되지 않게 확인해야 한다, f1·f3·f5 는 실행 2026-09-25-24 의 f6·f7(문·승강기 어댑터와 LiftState)과 같은 내용이며 서로 충돌하지 않는다, 브리프 limits 는 실행 2026-09-25-20 의 출처(ref-258~)가 참고문헌 목록에 없다고 적지만, ref-258~ref-264(Franke 외 ref-259 포함)는 목록에 있다. 이번 브리프는 이 출처를 인용하지 않았으므로 페이지에 새로 넣지 않는다 |
 | 용어 일관성 | 예 | — |
 | 인용 길이·저작권 | 예 | — |
 | 정정 요청 반영 | — | — |
@@ -56,11 +56,11 @@
 - f11·f12: KS B 7317 은 로봇 자체의 탑승 안전 요구사항이다. 25. 안전·위험 관리 연결과 제약 조건으로만 서술하고 ROP 직접 범위처럼 쓰지 않는다. f12 는 보도자료의 설명이며 표준 본문 조항은 미확인이라고 밝힌다.
 - f15·f16·f17: 모든 문장에 [추정]과 '벤더 주장'을 병기한다. f16·f17 은 기사 출처이며 회사 발표에 기댄다고 적는다.
 - 9절: 승강기·자동문·컨베이어·PLC 제어와 설비 안전 제어는 f26 처럼 '연계 대상'으로 짧게 다룬다. ROP 쪽은 작업 요청·점유 예약·상태 확인·완료 확인으로 한정한다. f26 은 [추정]을 유지한다.
-- 원문 미열람 표기: ref-047·ref-049·ref-060·ref-103·ref-163·ref-413·ref-414·ref-415·ref-416·ref-417·ref-418·ref-419·ref-420·ref-421 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-023·ref-031·ref-408~ref-412 는 github_raw 로 원문을 열었으므로 붙이지 않는다.
-- 인용: 출처당 직접 인용은 1회만 한다. ref-031 은 f7~f10 발췌 가운데 하나만 짧게 직접 인용하고 나머지는 재서술한다. ref-408·ref-409 도 각각 1회를 넘지 않는다.
+- 원문 미열람 표기: ref-047·ref-049·ref-060·ref-103·ref-163·ref-413·ref-414·ref-415·ref-416·ref-417·ref-418·ref-419·ref-420·ref-421 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-023·ref-031·ref-283~ref-412 는 github_raw 로 원문을 열었으므로 붙이지 않는다.
+- 인용: 출처당 직접 인용은 1회만 한다. ref-031 은 f7~f10 발췌 가운데 하나만 짧게 직접 인용하고 나머지는 재서술한다. ref-283·ref-284 도 각각 1회를 넘지 않는다.
 - ref-103: reference_updates 의 발행일을 2025 로 갱신한다(Sensors, DOI 10.3390/s25061783, 검증 검색에서 확인).
 - 11절: 기존 oq-010 을 연결하고 open_questions_new 3건을 네 필드 형식 그대로 올린다. f24 의 승강기 대기 영향은 물류센터 정량 자료가 없다는 점을 oq-010 과 함께 적는다.
 
 ## 검증 노트
 
-판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 22건, 미확인 4건, 교차 확인 0건. 강등: f14 사실 → 추정, f18 사실 → 추정, f22 사실 → 추정, f17 추정 유지·수치(배송로봇 40여 대) 삭제. 원문 미열람 출처: ref-047, ref-049, ref-060, ref-103, ref-163, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-419, ref-420, ref-421. github_raw 로 원문을 확인한 출처: ref-023, ref-031, ref-408, ref-409, ref-410, ref-411, ref-412. 주의: Open-RMF 설비 메시지와 VDA 5050 3.0.0 구역 규정은 각각 발행 주체 한 곳의 원문에 기댄다. 국내 표준·제조사 API 는 기사·보도자료 스니펫 범위에서만 확인했고 벤더 주장은 독립 확인이 없다. 분류 원문 질문(컨베이어 준비와 로봇 도착 맞추기)에는 추정 수준의 답(f23)만 있다. VDA 5050 명세는 운영 책임을 배분하지 않는다. ref-408·ref-409·ref-410 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 와 URL 이 같으므로 퍼블리셔가 이중 등록을 확인해야 한다. 브리프 표시 누락: f24 는 원문 미열람 출처(ref-060·ref-103)에 기대는데 source_unopened:false 로 적혀 있다. 정정 요청 없음. 검증 검색 9회(리서치 11회 포함 합계 20/30).
+판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 22건, 미확인 4건, 교차 확인 0건. 강등: f14 사실 → 추정, f18 사실 → 추정, f22 사실 → 추정, f17 추정 유지·수치(배송로봇 40여 대) 삭제. 원문 미열람 출처: ref-047, ref-049, ref-060, ref-103, ref-163, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-419, ref-420, ref-421. github_raw 로 원문을 확인한 출처: ref-023, ref-031, ref-283, ref-284, ref-286, ref-411, ref-412. 주의: Open-RMF 설비 메시지와 VDA 5050 3.0.0 구역 규정은 각각 발행 주체 한 곳의 원문에 기댄다. 국내 표준·제조사 API 는 기사·보도자료 스니펫 범위에서만 확인했고 벤더 주장은 독립 확인이 없다. 분류 원문 질문(컨베이어 준비와 로봇 도착 맞추기)에는 추정 수준의 답(f23)만 있다. VDA 5050 명세는 운영 책임을 배분하지 않는다. ref-283·ref-284·ref-286 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 와 URL 이 같으므로 퍼블리셔가 이중 등록을 확인해야 한다. 브리프 표시 누락: f24 는 원문 미열람 출처(ref-060·ref-103)에 기대는데 source_unopened:false 로 적혀 있다. 정정 요청 없음. 검증 검색 9회(리서치 11회 포함 합계 20/30).

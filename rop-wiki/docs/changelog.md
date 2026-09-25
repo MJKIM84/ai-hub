@@ -73,6 +73,28 @@ version: 1
 | 2026-09-25-26 | 생성 | [docs/glossary/location-check-digit.md](glossary/location-check-digit.md) | 용어집 항목 위치 체크 디지트 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-25 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터와 설비 메시지, 디스펜서·인제스터, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·단체표준·제조사 API, 출하 시나리오), 페이지 상태 표식 추가. 2차 수정: 7절 요약의 '국제 표준 미확인' 태그·각주 분리, 5절 KS B 7317 문장 교체, 3·9절 [의견]에 구축자 의견 명시 |
+| 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s7.md](topics/2026/2026-09-25-area10-s7.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 첫 문장의 '국제 표준 미확인'을 태그 없는 조사 한계 서술로 분리 |
+| 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s4.md](topics/2026/2026-09-25-area10-s4.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s10.md](topics/2026/2026-09-25-area10-s10.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 9번 항목 사실·의견 분리, 17번 항목을 Open-RMF 예시 작업대로 한정, 28번 항목 사실·열린 질문 분리 |
+| 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s8.md](topics/2026/2026-09-25-area10-s8.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "8. 대표 연구와 자료" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s11.md](topics/2026/2026-09-25-area10-s11.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "11. 열린 질문" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-25-25 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 10. 설비·건물 시스템 연동: 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터·설비 메시지, 디스펜서·인제스터 예시 구현, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·승강기협회 단체표준·제조사 API, 출하 시나리오), 2차 수정으로 태그 드리프트 6건 교정 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-312.md](references/ref-312.md) | 참고문헌 ref-312 등록: rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg |
+| 2026-09-25-25 | 생성 | [docs/references/ref-313.md](references/ref-313.md) | 참고문헌 ref-313 등록: rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg |
+| 2026-09-25-25 | 생성 | [docs/references/ref-314.md](references/ref-314.md) | 참고문헌 ref-314 등록: KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-315.md](references/ref-315.md) | 참고문헌 ref-315 등록: 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-316.md](references/ref-316.md) | 참고문헌 ref-316 등록: 승강기협, 엘리베이터-로봇 연동 단체표준 제정 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-317.md](references/ref-317.md) | 참고문헌 ref-317 등록: 승강기협회 '로봇-승강기 연동 표준개발'로 승강기 4차산업 견인 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-318.md](references/ref-318.md) | 참고문헌 ref-318 등록: KONE Service Robot API |
+| 2026-09-25-25 | 생성 | [docs/references/ref-319.md](references/ref-319.md) | 참고문헌 ref-319 등록: 현대엘리베이터, 엘리베이터-로봇 연계 가능한 '오픈 API' 공개 |
+| 2026-09-25-25 | 생성 | [docs/references/ref-320.md](references/ref-320.md) | 참고문헌 ref-320 등록: 현대엘리베이터 '오픈 API' 참여 다각화..."엘리베이터와 로봇 연동" |
+| 2026-09-25-25 | 생성 | [docs/references/ref-321.md](references/ref-321.md) | 참고문헌 ref-321 등록: Efficient Graph-Based Multi-Story Path Planning with Optimiz… |
+| 2026-09-25-25 | 생성 | [docs/references/ref-322.md](references/ref-322.md) | 참고문헌 ref-322 등록: 올해 '로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발'부터 착수 (보도자료) |
+| 2026-09-25-25 | 생성 | [docs/glossary/lift-adapter.md](glossary/lift-adapter.md) | 용어집 항목 승강기 어댑터 |
+| 2026-09-25-25 | 생성 | [docs/glossary/dispenser-ingestor.md](glossary/dispenser-ingestor.md) | 용어집 항목 디스펜서·인제스터 |
+| 2026-09-25-25 | 생성 | [docs/glossary/release-zone.md](glossary/release-zone.md) | 용어집 항목 해제 구역 |
+| 2026-09-25-25 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-24 | 갱신 | [docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 1차 조건부 승인 수정 14건 이행, 2차 수정: 5절 승강기 추론 문장에 [추정] 태그·각주 추가, 완료·인계 칸 EPCIS 문장을 사실 부분만 남김 |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s7.md](topics/2026/2026-09-25-area08-s7.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,454자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s4.md](topics/2026/2026-09-25-area08-s4.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "4. 핵심 개념과 용어" 절(1,436자)을 옮겼다(2차 재실행에서 변경 없음) |
