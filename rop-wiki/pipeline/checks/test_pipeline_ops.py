@@ -292,7 +292,9 @@ class TestPromptSlimming(unittest.TestCase):
         refs = dict(out)[labels[0]]
         self.assertIn("ref-022", refs)              # 7번 페이지가 인용한 출처
         full = A._index_inputs({"run_type": "weekly_review", "target": {}}, None)
-        self.assertIn("docs/references/index.md", [l for l, _ in full])
+        lab = [l for l, _ in full]
+        self.assertTrue(any(l.startswith("docs/references/index.md (요약형 전체") for l in lab), lab)   # 주간·월간은 요약형 전체 목록(D-047)
+        self.assertIn("docs/open-questions.md", lab)
 
 
 class TestDailyLogLinks(unittest.TestCase):
