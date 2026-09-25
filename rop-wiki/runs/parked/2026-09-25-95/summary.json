@@ -1,0 +1,97 @@
+{
+  "run_id": "2026-09-25-95",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 4,
+    "question_ids": [
+      "q4-04"
+    ]
+  },
+  "verdict_first": null,
+  "verdict_second": null,
+  "confidence": null,
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 0,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": null,
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 6.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": null,
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 20:21:00 KST",
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 1559,
+    "cache_read_input_tokens": 20284,
+    "output_tokens": 992,
+    "cost_usd": 0.0847,
+    "calls": 5,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 0.0,
+        "output_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": null,
+  "fetched_sources": 0,
+  "cross_checked_findings": 0,
+  "park_reason": "리서치 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+}
