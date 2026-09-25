@@ -19,7 +19,7 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "4. 핵심 개념과 용어",
       "budget_chars": 650,
-      "summary": "자산 관리(ISO 55000:2024), 상태 감시(ISO 17359), 배터리 건강 상태(batteryHealth), 소프트웨어 명판, 패치 관리, 의미적 버전·지도 버전, 관리형 노드가 핵심 용어다. [사실][^ref-755]",
+      "summary": "자산 관리(ISO 55000:2024), 상태 감시(ISO 17359), 배터리 건강 상태(batteryHealth), 소프트웨어 명판, 패치 관리, 의미적 버전·지도 버전, 관리형 노드가 핵심 용어다. [사실][^ref-552]",
       "planned_findings": [
         "f13",
         "f12",
@@ -50,7 +50,7 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "6. 대표 접근법과 기술",
       "budget_chars": 800,
-      "summary": "부품 상태 감시·고장 진단, 배터리 열화를 반영한 배정·충전, 버전 필드 관리, 관리형 노드와 OTA 배포·복구가 대표 접근법이다. [사실][^ref-757]",
+      "summary": "부품 상태 감시·고장 진단, 배터리 열화를 반영한 배정·충전, 버전 필드 관리, 관리형 노드와 OTA 배포·복구가 대표 접근법이다. [사실][^ref-553]",
       "planned_findings": [
         "f14",
         "f15",
@@ -67,7 +67,7 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "budget_chars": 500,
-      "summary": "이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-753][^ref-758]",
+      "summary": "이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-550][^ref-554]",
       "planned_findings": [
         "f1",
         "f4",
@@ -87,7 +87,7 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 450,
-      "summary": "대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]",
+      "summary": "대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-553][^ref-403]",
       "planned_findings": [
         "f14",
         "f15",
@@ -138,7 +138,7 @@
       "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-760 항목 롤백 문구 정정"
+      "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-556 항목 롤백 문구 정정"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s4.md",
@@ -162,7 +162,7 @@
       "path": "docs/topics/2026/2026-09-25-area24-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(982자)을 옮겼다. 2차 수정: 1절 요약과 3절 첫 문장의 태그를 [추정]으로 낮추고 각주를 ref-031·ref-753·ref-758 로 바꿈"
+      "diff_summary": "자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(982자)을 옮겼다. 2차 수정: 1절 요약과 3절 첫 문장의 태그를 [추정]으로 낮추고 각주를 ref-031·ref-550·ref-554 로 바꿈"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area24-s10.md",
@@ -190,8 +190,8 @@
         19
       ],
       "sources": [
-        "ref-757",
-        "ref-754"
+        "ref-553",
+        "ref-551"
       ]
     },
     {
@@ -221,7 +221,7 @@
         28
       ],
       "sources": [
-        "ref-753"
+        "ref-550"
       ]
     },
     {
@@ -235,8 +235,8 @@
         24
       ],
       "sources": [
-        "ref-760",
-        "ref-761"
+        "ref-556",
+        "ref-557"
       ]
     }
   ],
@@ -352,7 +352,7 @@
       ]
     },
     {
-      "id": "ref-752",
+      "id": "ref-549",
       "org": "Open Robotics (ROS REP)",
       "title": "REP 2000 -- ROS 2 Releases and Target Platforms",
       "published": null,
@@ -368,7 +368,7 @@
       ]
     },
     {
-      "id": "ref-753",
+      "id": "ref-550",
       "org": "IDTA (admin-shell-io/id GitHub)",
       "title": "IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing)",
       "published": null,
@@ -386,7 +386,7 @@
       ]
     },
     {
-      "id": "ref-754",
+      "id": "ref-551",
       "org": "ISO",
       "title": "ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines",
       "published": "2018",
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "id": "ref-755",
+      "id": "ref-552",
       "org": "ISO",
       "title": "ISO 55000:2024 - Asset management — Vocabulary, overview and principles",
       "published": "2024-07",
@@ -435,7 +435,7 @@
       ]
     },
     {
-      "id": "ref-757",
+      "id": "ref-553",
       "org": "Lei, Y., Liu, H., Li, N. 외",
       "title": "Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)",
       "published": "2025",
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "id": "ref-758",
+      "id": "ref-554",
       "org": "IEC",
       "title": "IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment",
       "published": "2015-06",
@@ -471,7 +471,7 @@
       ]
     },
     {
-      "id": "ref-759",
+      "id": "ref-555",
       "org": "European Union (EUR-Lex)",
       "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery",
       "published": "2023-06",
@@ -488,7 +488,7 @@
       ]
     },
     {
-      "id": "ref-760",
+      "id": "ref-556",
       "org": "Amazon Web Services (aws-samples GitHub)",
       "title": "ros2-ota-firmware-updates — README",
       "published": null,
@@ -504,7 +504,7 @@
       ]
     },
     {
-      "id": "ref-761",
+      "id": "ref-557",
       "org": "네이트 뉴스(원 매체 미확인)",
       "title": "클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장",
       "published": "2026-07-23",
@@ -520,7 +520,7 @@
       ]
     },
     {
-      "id": "ref-762",
+      "id": "ref-558",
       "org": "한국로봇사용자협회",
       "title": "협동로봇 설치 작업장 안전인증 안내",
       "published": null,
@@ -536,7 +536,7 @@
       ]
     },
     {
-      "id": "ref-763",
+      "id": "ref-559",
       "org": "세이프틱스(Safetics)",
       "title": "로봇 시스템 위험성평가 가이드",
       "published": null,
@@ -651,7 +651,7 @@
         28
       ],
       "summary": "자산관리셸 서브모델로 소프트웨어 제품과 설치 인스턴스의 버전·설치 정보를 업데이트·패치·라이선스·감사 목적으로 통일해 표현한다.",
-      "ref_id": "ref-753"
+      "ref_id": "ref-550"
     },
     {
       "name": "ISO 17359:2018 기계 상태 감시·진단 일반 지침",
@@ -663,7 +663,7 @@
         19
       ],
       "summary": "기계의 상태 감시 프로그램 수립 일반 절차 지침이며 상태 감시·진단 표준군의 상위 문서다(원문 미열람).",
-      "ref_id": "ref-754"
+      "ref_id": "ref-551"
     },
     {
       "name": "ISO 55000:2024 자산 관리 — 용어·개요·원칙",
@@ -674,7 +674,7 @@
         24
       ],
       "summary": "자산 관리의 용어·개요·원칙을 정한 제2판(2024-07)으로 2014판을 대체하며 모든 유형의 자산에 적용된다(원문 미열람).",
-      "ref_id": "ref-755"
+      "ref_id": "ref-552"
     },
     {
       "name": "IEC TR 62443-2-3:2015 IACS 환경의 패치 관리",
@@ -686,7 +686,7 @@
         26
       ],
       "summary": "산업 제어 시스템 패치 관리 프로그램의 자산 소유자·공급자 요구와 패치 정보 교환 형식을 정의한다(원문 미열람).",
-      "ref_id": "ref-758"
+      "ref_id": "ref-554"
     },
     {
       "name": "REP 2000 ROS 2 Releases and Target Platforms",
@@ -697,7 +697,7 @@
         24
       ],
       "summary": "ROS 2 배포판별 출시·지원 종료 일정과 장기 지원판 5년·비장기 지원판 1.5년 지원 정책을 정한다.",
-      "ref_id": "ref-752"
+      "ref_id": "ref-549"
     },
     {
       "name": "rmf_simulation (Open-RMF 시뮬레이션 플러그인)",
@@ -721,7 +721,7 @@
         24
       ],
       "summary": "협동운전 산업용 로봇 시스템의 ISO 10218-2 준수를 심사하고 발급일로부터 2년 주기로 정기 심사한다(원문 미열람).",
-      "ref_id": "ref-762"
+      "ref_id": "ref-558"
     }
   ],
   "additional_research_requests": [
@@ -744,14 +744,14 @@
     "f23 추론 표시 지시 — 9절 표 아래에 '운영 시간대·일부 로봇 단위 분할 배포'가 확인한 출처에 직접 근거가 없는 구축자 추론이라고 밝히고 [추정]을 유지했다.",
     "f15 프리프린트 표시 지시 — 6절과 8절에 arXiv 프리프린트(동료 심사 전)이며 저자 미확인임을 적었다.",
     "f9 기준일 지시 — 3절에 Kilted 지원 종료(2026-11)가 기준일 2026-09-25 에서 약 2개월 뒤라는 문장을 더했다.",
-    "원문 미열람 표시 지시 — ref-754·ref-755·ref-403·ref-757·ref-758·ref-759·ref-761·ref-762·ref-763·ref-523 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
+    "원문 미열람 표시 지시 — ref-551·ref-552·ref-403·ref-553·ref-554·ref-555·ref-557·ref-558·ref-559·ref-523 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
     "신뢰도·태그 지시 — 프런트매터 confidence 를 medium 으로 두고 각 finding 의 태그를 1차 판정 처분(f13·f17 부분 강등, f19 강등, 나머지 유지)대로 썼다.",
     "분량 초과 자동 분리: 24. 자산·소프트웨어 수명주기 관리 본문 8,444자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,733자",
     "형식 검증 수정: 주제 페이지 2026-09-25-area24-s10.md 3절의 세부영역 링크 11건이 원 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 원 세부영역 페이지 프런트매터 sources 를 13절 각주 정의 목록과 일치시켰다. 주장·태그·각주는 바꾸지 않았다.",
-    "2차: 8절 ref-760 항목 롤백 문구 — 세부영역 8절 항목을 'aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다'로 고치고 [추정]과 '벤더 주장' 병기를 유지했다.",
-    "2차: 7절 첫 문장 태그·각주 — 세부영역 7절과 주제 페이지 2026-09-25-area24-s7.md 1절·3절의 같은 문장을 [추정][^ref-031][^ref-753][^ref-758]로 바꿨다(두 페이지 모두 sources·각주 정의에 ref-753·ref-758 이 이미 있다).",
-    "2차: 8절 대표 연구 분류·평가 — 8절 첫 문장을 '대표 연구를 … 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]'로, Lei 외 항목의 '배경 자료' 문장을 '구축자 의견이다. [의견]'인 별도 문장으로 바꾸고 논문 내용 문장만 [사실][^ref-757]로 남겼다.",
-    "2차: 6절 분리 페이지 연계 대상 문장과 절 참조 — 2026-09-25-area24-s6.md 3절 '부품 상태 감시와 고장 진단' 소절을 '부품 진단 자체는 로봇 제조사 쪽 연계 대상으로 보인다. [추정][^ref-757]'로 고치고, '9절에서 다룬다'와 '5절의 적치 시나리오'를 원 세부영역 페이지의 9절·5절 링크로 바꿨다. 같은 원칙으로 s7 페이지의 '(3절)' 참조도 3절 분리 주제 페이지 링크로 바꿨다.",
+    "2차: 8절 ref-556 항목 롤백 문구 — 세부영역 8절 항목을 'aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다'로 고치고 [추정]과 '벤더 주장' 병기를 유지했다.",
+    "2차: 7절 첫 문장 태그·각주 — 세부영역 7절과 주제 페이지 2026-09-25-area24-s7.md 1절·3절의 같은 문장을 [추정][^ref-031][^ref-550][^ref-554]로 바꿨다(두 페이지 모두 sources·각주 정의에 ref-550·ref-554 이 이미 있다).",
+    "2차: 8절 대표 연구 분류·평가 — 8절 첫 문장을 '대표 연구를 … 나누는 것은 구축자 의견이다. [의견][^ref-553][^ref-403]'로, Lei 외 항목의 '배경 자료' 문장을 '구축자 의견이다. [의견]'인 별도 문장으로 바꾸고 논문 내용 문장만 [사실][^ref-553]로 남겼다.",
+    "2차: 6절 분리 페이지 연계 대상 문장과 절 참조 — 2026-09-25-area24-s6.md 3절 '부품 상태 감시와 고장 진단' 소절을 '부품 진단 자체는 로봇 제조사 쪽 연계 대상으로 보인다. [추정][^ref-553]'로 고치고, '9절에서 다룬다'와 '5절의 적치 시나리오'를 원 세부영역 페이지의 9절·5절 링크로 바꿨다. 같은 원칙으로 s7 페이지의 '(3절)' 참조도 3절 분리 주제 페이지 링크로 바꿨다.",
     "2차: flow_matrix_updates 정리 — 적치/작업 대상, 출하/시작 조건, 출하/작업 대상 세 항목을 뺐다(남은 7칸은 5절 끝 문장의 관여 칸 목록과 같다)."
   ]
 }

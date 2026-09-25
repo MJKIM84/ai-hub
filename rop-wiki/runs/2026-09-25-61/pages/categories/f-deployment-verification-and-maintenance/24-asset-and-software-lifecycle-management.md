@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-031, ref-051, ref-228, ref-230, ref-523, ref-364, ref-753, ref-403, ref-757, ref-758, ref-760, ref-761, ref-763]
+sources: [ref-031, ref-051, ref-228, ref-230, ref-523, ref-364, ref-550, ref-403, ref-553, ref-554, ref-556, ref-557, ref-559]
 last_run: 2026-09-25
 version: 2
 ---
@@ -43,7 +43,7 @@ version: 2
 
 ## 3. 왜 중요한가
 
-펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-753][^ref-763]
+펌웨어가 바뀔 때 다시 검증할 범위를 정하려면 로봇별 소프트웨어 버전을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전·기능 선언·안전 파라미터·지도 버전의 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 이번 조사(2026-09-25 기준)에서 찾지 못했다. [추정][^ref-031][^ref-228][^ref-550][^ref-559]
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가](../../topics/2026/2026-09-25-area24-s3.md)에 있다.
 
@@ -91,32 +91,32 @@ version: 2
 
 ## 6. 대표 접근법과 기술
 
-산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-757]
+산업용 로봇의 상태 감시·고장 진단은 고장 모드와 근본 원인, 데이터 수집 전략과 센서, 모델 기반·데이터 기반 기법으로 정리돼 있다. [사실][^ref-553]
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area24-s6.md)에 있다.
 
 ## 7. 관련 표준·프레임워크·오픈소스
 
-이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-753][^ref-758] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
+이 영역의 버전·상태 정보는 로봇 상호운용 규격의 필드와 자산·패치 관리 표준에서 출발한다. [추정][^ref-031][^ref-550][^ref-554] 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area24-s7.md)에 있다.
 
 ## 8. 대표 연구와 자료
 
-이 영역의 대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-757][^ref-403]
+이 영역의 대표 연구를 부품 상태 감시 검토와 배터리 열화 인지 스케줄링으로 나누는 것은 구축자 의견이다. [의견][^ref-553][^ref-403]
 
-- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. [사실][^ref-757] 이 논문이 ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료라는 것은 구축자 의견이다. [의견]
+- Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review(2025) — 산업용 로봇의 고장 모드·데이터 수집·모델 기반·데이터 기반 진단을 상태 기반 정비 관점에서 정리했다. [사실][^ref-553] 이 논문이 ROP 가 받을 정비 신호의 출처를 이해하는 배경 자료라는 것은 구축자 의견이다. [의견]
 - 저자 미확인, Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots(2026-03, arXiv 프리프린트, 동료 심사 전) — 작업 배정·충전을 플릿 전체 배터리 열화 균형과 함께 최적화한다. [사실][^ref-403]
-- Amazon Web Services, ros2-ota-firmware-updates README — aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다. [추정] 벤더 주장[^ref-760]
-- SDR 과제 킥오프 워크숍 보도(2026-07-23) — 국내 클라우드 기반 OTA 목표 사례다. [추정][^ref-761]
+- Amazon Web Services, ros2-ota-firmware-updates README — aws-samples 저장소의 시연용 샘플로 플릿 OTA 배포·버전 조회를 보이며, 자동 롤백은 README가 이점으로 나열할 뿐 구현 절차는 보이지 않는다. [추정] 벤더 주장[^ref-556]
+- SDR 과제 킥오프 워크숍 보도(2026-07-23) — 국내 클라우드 기반 OTA 목표 사례다. [추정][^ref-557]
 
 ## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)
 
-ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율하고, 펌웨어 내용과 부품·배터리 내부 진단은 제조사 쪽에 두는 것으로 보인다. [추정][^ref-051][^ref-757]
+ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율하고, 펌웨어 내용과 부품·배터리 내부 진단은 제조사 쪽에 두는 것으로 보인다. [추정][^ref-051][^ref-553]
 
 | 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |
 |---|---|---|
-| 로봇 자체 지능·제어 | 로봇·어댑터·지도·모델의 버전 목록 유지, 로봇이 보고하는 배터리 상태·오류를 배정·충전 계획에 반영, 업데이트 배포와 실패 시 복구 조율, 지도 버전 활성화 시점 동기화 [추정][^ref-031][^ref-051][^ref-364][^ref-760] | 연계 대상: 펌웨어 내용 자체, 관절·감속기 같은 기계 부품의 고장 진단·잔여 수명 예측, 배터리 관리 시스템(Battery Management System, BMS) 내부의 열화 추정. ROP 는 그 결과(배터리 상태 값·오류 코드·정비 필요 신호)를 받는 쪽으로 보인다. [추정][^ref-757][^ref-051][^ref-230] |
+| 로봇 자체 지능·제어 | 로봇·어댑터·지도·모델의 버전 목록 유지, 로봇이 보고하는 배터리 상태·오류를 배정·충전 계획에 반영, 업데이트 배포와 실패 시 복구 조율, 지도 버전 활성화 시점 동기화 [추정][^ref-031][^ref-051][^ref-364][^ref-556] | 연계 대상: 펌웨어 내용 자체, 관절·감속기 같은 기계 부품의 고장 진단·잔여 수명 예측, 배터리 관리 시스템(Battery Management System, BMS) 내부의 열화 추정. ROP 는 그 결과(배터리 상태 값·오류 코드·정비 필요 신호)를 받는 쪽으로 보인다. [추정][^ref-553][^ref-051][^ref-230] |
 
 업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포하는 방식도 ROP 가 조율할 후보로 보이지만, 이 부분은 확인한 출처에 직접 근거가 없는 구축자 추론이다. [추정]
 
@@ -124,7 +124,7 @@ ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율�
 
 ## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)
 
-아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-523][^ref-758][^ref-403][^ref-763]
+아래 연결은 이번 조사 결과를 바탕으로 한 구축자 의견이다. [의견][^ref-523][^ref-554][^ref-403][^ref-559]
 
 자세한 내용은 주제 페이지 [24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결](../../topics/2026/2026-09-25-area24-s10.md)에 있다.
 
@@ -151,10 +151,10 @@ ROP 는 버전 목록·배터리 상태·배포 복구·지도 전환을 조율�
 [^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25
 [^ref-523]: Open Robotics (open-rmf), rmf_simulation — README, 미확인, https://github.com/open-rmf/rmf_simulation, 접근일 2026-09-25 (원문 미열람)
 [^ref-364]: Open Robotics (ROS 2 Design), Managed nodes (ROS 2 Design: node_lifecycle), 미확인, https://design.ros2.org/articles/node_lifecycle.html, 접근일 2026-09-25
-[^ref-753]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25
+[^ref-550]: IDTA (admin-shell-io/id GitHub), IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing), 미확인, https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md, 접근일 2026-09-25
 [^ref-403]: arXiv (저자 미확인), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots, 2026-03, https://arxiv.org/abs/2603.22731, 접근일 2026-09-25 (원문 미열람)
-[^ref-757]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)
-[^ref-758]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)
-[^ref-760]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25
-[^ref-761]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)
-[^ref-763]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)
+[^ref-553]: Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301), 2025, https://link.springer.com/article/10.1007/s11431-024-2810-2, 접근일 2026-09-25 (원문 미열람)
+[^ref-554]: IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment, 2015-06, https://webstore.iec.ch/en/publication/22811, 접근일 2026-09-25 (원문 미열람)
+[^ref-556]: Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README, 미확인, https://github.com/aws-samples/ros2-ota-firmware-updates, 접근일 2026-09-25
+[^ref-557]: 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장, 2026-07-23, https://m.news.nate.com/view/20260723n24828, 접근일 2026-09-25 (원문 미열람)
+[^ref-559]: 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드, 미확인, https://doc.safetics.io/insight-risk-assessment/, 접근일 2026-09-25 (원문 미열람)

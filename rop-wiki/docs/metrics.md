@@ -27,7 +27,7 @@ version: 1
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
-| [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
+| [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -84,7 +84,7 @@ version: 1
 | [21. 온보딩·설정·현장 시운전](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | published | medium | 2026-09-25 | 2 |
 | [22. 시뮬레이션·예측용 디지털 트윈](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | published | medium | 2026-09-25 | 2 |
 | [23. 시험·형식 검증·벤치마크](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | published | medium | 2026-09-25 | 2 |
-| [24. 자산·소프트웨어 수명주기 관리](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | seed | — | 2026-09-24 | 1 |
+| [24. 자산·소프트웨어 수명주기 관리](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | published | medium | 2026-09-25 | 2 |
 
 **G. 안전·보안·지능·거버넌스**
 
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 59회 중 최종 통과 59회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 59
-- 2차 검증 판정: 통과 59
+- 실행 60회 중 최종 통과 60회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 60
+- 2차 검증 판정: 통과 60
 
 ### 반려·보류 건수
 
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 220 |
-| 오픈소스 문서 | 140 |
-| 표준 | 116 |
-| 벤더 문서 | 35 |
-| 정부·연구기관 | 29 |
-| 기사 | 19 |
-| 업계 보고서 | 4 |
+| 논문 | 221 |
+| 오픈소스 문서 | 141 |
+| 표준 | 120 |
+| 벤더 문서 | 37 |
+| 정부·연구기관 | 30 |
+| 기사 | 20 |
+| 업계 보고서 | 5 |
 
-신뢰도: medium 390건, high 125건, low 48건
+신뢰도: medium 398건, high 125건, low 51건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [24. 자산·소프트웨어 수명주기 관리](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 2026-09-24 | 1 | seed |
 | [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 2026-09-24 | 1 | seed |
 | [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 2026-09-24 | 1 | seed |
 | [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 2026-09-24 | 1 | seed |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 2026-09-24 | 1 | seed |
+| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 0 | published |
 <!-- auto:metrics:end -->

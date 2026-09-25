@@ -46,6 +46,29 @@ version: 1
 | 2026-09-25-62 | 생성 | [docs/glossary/signal-temporal-logic.md](glossary/signal-temporal-logic.md) | 용어집 항목 신호 시간 논리 |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-61 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-556 항목 롤백 문구 정정 |
+| 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s4.md](topics/2026/2026-09-25-area24-s4.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "4. 핵심 개념과 용어" 절(1,365자)을 옮겼다(2차 수정 없음) |
+| 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s6.md](topics/2026/2026-09-25-area24-s6.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "6. 대표 접근법과 기술" 절(1,327자)을 옮겼다. 2차 수정: 부품 진단 연계 대상 문장을 [추정]과 각주로 고치고, 5·9절 참조를 원 세부영역 페이지 절 링크로 바꿈 |
+| 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s3.md](topics/2026/2026-09-25-area24-s3.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "3. 왜 중요한가" 절(1,019자)을 옮겼다(2차 수정 없음) |
+| 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s7.md](topics/2026/2026-09-25-area24-s7.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(982자)을 옮겼다. 2차 수정: 1절 요약과 3절 첫 문장의 태그를 [추정]으로 낮추고 각주를 ref-031·ref-550·ref-554 로 바꿈 |
+| 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s10.md](topics/2026/2026-09-25-area24-s10.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "10. 다른 연구영역과의 연결" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침(2차 수정 없음) |
+| 2026-09-25-61 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 24. 자산·소프트웨어 수명주기 관리: 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) |
+| 2026-09-25-61 | 생성 | [docs/references/ref-549.md](references/ref-549.md) | 참고문헌 ref-549 등록: REP 2000 -- ROS 2 Releases and Target Platforms |
+| 2026-09-25-61 | 생성 | [docs/references/ref-550.md](references/ref-550.md) | 참고문헌 ref-550 등록: IDTA SoftwareNameplate 1/0 — README (Nameplate for Software… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-551.md](references/ref-551.md) | 참고문헌 ref-551 등록: ISO 17359:2018 - Condition monitoring and diagnostics of mac… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-552.md](references/ref-552.md) | 참고문헌 ref-552 등록: ISO 55000:2024 - Asset management — Vocabulary, overview and… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-553.md](references/ref-553.md) | 참고문헌 ref-553 등록: Condition monitoring and fault diagnosis of industrial robot… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-554.md](references/ref-554.md) | 참고문헌 ref-554 등록: IEC TR 62443-2-3:2015 Security for industrial automation and… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-555.md](references/ref-555.md) | 참고문헌 ref-555 등록: Regulation (EU) 2023/1230 of the European Parliament and of… |
+| 2026-09-25-61 | 생성 | [docs/references/ref-556.md](references/ref-556.md) | 참고문헌 ref-556 등록: ros2-ota-firmware-updates — README |
+| 2026-09-25-61 | 생성 | [docs/references/ref-557.md](references/ref-557.md) | 참고문헌 ref-557 등록: 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장 |
+| 2026-09-25-61 | 생성 | [docs/references/ref-558.md](references/ref-558.md) | 참고문헌 ref-558 등록: 협동로봇 설치 작업장 안전인증 안내 |
+| 2026-09-25-61 | 생성 | [docs/references/ref-559.md](references/ref-559.md) | 참고문헌 ref-559 등록: 로봇 시스템 위험성평가 가이드 |
+| 2026-09-25-61 | 생성 | [docs/glossary/condition-based-maintenance.md](glossary/condition-based-maintenance.md) | 용어집 항목 상태 기반 정비 |
+| 2026-09-25-61 | 생성 | [docs/glossary/state-of-health.md](glossary/state-of-health.md) | 용어집 항목 배터리 건강 상태 |
+| 2026-09-25-61 | 생성 | [docs/glossary/software-nameplate.md](glossary/software-nameplate.md) | 용어집 항목 소프트웨어 명판 |
+| 2026-09-25-61 | 생성 | [docs/glossary/over-the-air-update.md](glossary/over-the-air-update.md) | 용어집 항목 무선 업데이트 |
+| 2026-09-25-61 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-60 | 갱신 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
 | 2026-09-25-60 | 요약 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-59 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 영역 심화: 3~11절 신규 작성(4·6·7·10·11절은 주제 페이지로 분리), 2차 수정: 9절 f8 태그 분리, 3절 첫 문장 범위 정정, 10절 요약 의견 주체 표시, 3·9절 약어 풀이 |

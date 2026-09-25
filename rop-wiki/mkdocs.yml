@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 24. 자산·소프트웨어 수명주기 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area24-s7.md
+      - 24. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술: topics/2026/2026-09-25-area24-s6.md
+      - 24. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어: topics/2026/2026-09-25-area24-s4.md
+      - 24. 자산·소프트웨어 수명주기 관리 — 왜 중요한가: topics/2026/2026-09-25-area24-s3.md
+      - 24. 자산·소프트웨어 수명주기 관리 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area24-s10.md
       - 23. 시험·형식 검증·벤치마크 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area23-s7.md
       - 23. 시험·형식 검증·벤치마크 — 대표 접근법과 기술: topics/2026/2026-09-25-area23-s6.md
       - 23. 시험·형식 검증·벤치마크 — 핵심 개념과 용어: topics/2026/2026-09-25-area23-s4.md
@@ -327,9 +332,11 @@ nav:
     - 모델 검사 (Model Checking): glossary/model-checking.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
     - 목표 조건 (Goal Condition): glossary/goal-condition.md
+    - 무선 업데이트 (Over-the-Air Update (OTA)): glossary/over-the-air-update.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
+    - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
@@ -340,9 +347,11 @@ nav:
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
+    - 상태 기반 정비 (Condition-Based Maintenance (CBM)): glossary/condition-based-maintenance.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
+    - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
     - 스케줄 간 의존 (Cross-schedule Dependency (XD)): glossary/cross-schedule-dependency.md
     - 스킬 (Skill): glossary/skill.md
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
@@ -1007,6 +1016,19 @@ nav:
     - ref-546 — 일상생활 작업 및 명령 수행 데이터(임무수행 명령어): references/ref-546.md
     - 'ref-547 — OpenBench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics': references/ref-547.md
     - ref-548 — An LLM- Interface for Robot Mission Specification in Logistics: references/ref-548.md
+    - ref-549 — REP 2000 -- ROS 2 Releases and Target Platforms: references/ref-549.md
+    - ref-550 — IDTA SoftwareNameplate 1/0 — README (Nameplate for Software in Manufacturing): references/ref-550.md
+    - ref-551 — ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines: references/ref-551.md
+    - ref-552 — ISO 55000:2024 - Asset management — Vocabulary, overview and principles: references/ref-552.md
+    - ? 'ref-553 — Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)'
+      : references/ref-553.md
+    - ? 'ref-554 — IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment'
+      : references/ref-554.md
+    - ref-555 — Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery: references/ref-555.md
+    - ref-556 — ros2-ota-firmware-updates — README: references/ref-556.md
+    - ref-557 — 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장: references/ref-557.md
+    - ref-558 — 협동로봇 설치 작업장 안전인증 안내: references/ref-558.md
+    - ref-559 — 로봇 시스템 위험성평가 가이드: references/ref-559.md
     - 'ref-599 — Formal Specification and Verification of Autonomous Robotic Systems: A Survey': references/ref-599.md
     - ref-600 — A Study on Challenges of Testing Robotic Systems: references/ref-600.md
     - ref-601 — ros2_fault_injection — README: references/ref-601.md
