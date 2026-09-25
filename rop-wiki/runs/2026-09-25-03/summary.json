@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-09-25-03",
+  "date": "2026-09-25",
+  "run_type": "topic",
+  "target": {
+    "area_no": 7,
+    "area_name": "7. 화물·재고·자산 식별과 추적",
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 2,
+  "pages_updated": 1,
+  "new_sources": 7,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 7,
+    "sources": 7
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1077.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 7. 화물·재고·자산 식별과 추적 | 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성, 영역 페이지 4·6·7·11절 갱신(Oliot EPCIS 행, 새 열린 질문 2건) | run 2026-09-25-03",
+  "notes": [
+    "참고문헌 생성: references/ref-044.md",
+    "참고문헌 생성: references/ref-045.md",
+    "참고문헌 생성: references/ref-047.md",
+    "참고문헌 생성: references/ref-048.md",
+    "참고문헌 생성: references/ref-049.md",
+    "참고문헌 생성: references/ref-050.md",
+    "용어집 생성: glossary/read-point.md",
+    "용어집 생성: glossary/business-location.md",
+    "용어집 생성: glossary/association-event.md"
+  ],
+  "counts": {
+    "create": 2,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 6,
+    "standards": 1,
+    "open_questions": 2,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 10:22:14 KST",
+  "usage": {
+    "input_tokens": 48,
+    "cache_creation_input_tokens": 887033,
+    "cache_read_input_tokens": 2074931,
+    "output_tokens": 121204,
+    "cost_usd": 10.4192,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.2095,
+        "output_tokens": 21643,
+        "cache_read_input_tokens": 1287932,
+        "cache_creation_input_tokens": 151604
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.2082,
+        "output_tokens": 14348,
+        "cache_read_input_tokens": 614079,
+        "cache_creation_input_tokens": 208631
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 3.7211,
+        "output_tokens": 69764,
+        "cache_read_input_tokens": 8364,
+        "cache_creation_input_tokens": 290516
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.1377,
+        "output_tokens": 14676,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 226715
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0656,
+        "output_tokens": 262,
+        "cache_read_input_tokens": 3302,
+        "cache_creation_input_tokens": 4560
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0339,
+        "output_tokens": 254,
+        "cache_read_input_tokens": 3375,
+        "cache_creation_input_tokens": 3511
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.0432,
+        "output_tokens": 257,
+        "cache_read_input_tokens": 5571,
+        "cache_creation_input_tokens": 1496
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-25-area07-s6.md",
+        "chars": 775
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 9,
+  "cross_checked_findings": 0
+}

@@ -1,0 +1,344 @@
+{
+  "duration_api_ms": 169698,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.2081758000000002,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 208631,
+    "cache_read_input_tokens": 614079,
+    "output_tokens": 14348,
+    "output_tokens_details": {
+      "thinking_tokens": 5187
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 208631,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11503,
+        "cache_read_input_tokens": 208182,
+        "cache_creation_input_tokens": 449,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 449
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 105830,
+      "outputTokens": 2698,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.12932000000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 14348,
+      "cacheReadInputTokens": 614079,
+      "cacheCreationInputTokens": 208631,
+      "webSearchRequests": 0,
+      "costUSD": 2.0788558000000004,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 5187,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 13,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-03\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw CBV.ttl(버전 2.0, 수정 2021-09-30)에서 loading·unloading·departing·arriving 정의 문구가 일치한다. GS1 단일 발행 기관이라 교차 확인은 없다. 표준 정의의 진술이므로 [사실] 유지.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: CBV.ttl의 shipping(staging_outbound·loading·departing을 합친 과정), staging_outbound, receiving, accepting(possession 및/또는 ownership 변경), storing 정의가 일치한다. 단일 발행 기관.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: CBV.ttl의 location·owning_party·possessing_party 정의가 일치한다. ref-015는 원문 미열람(검색 결과 일치). 두 출처 모두 GS1이라 독립 교차는 아니다. 7. 화물·재고·자산 식별과 추적 페이지 4절의 기존 주장(ref-014·ref-015)과 같은 내용이다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: CBV.ttl의 in_transit, in_progress(선택적 disposition), container_closed 정의가 일치한다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EPCIS.ttl(2.0, 2021-09-30)에서 readPoint·bizLocation 둘 다 '(Optional)'이고 bizLocation 정의 문구가 일치한다. ref-015 쪽은 검색 스니펫으로 같은 구분을 확인했다(원문 미열람). 둘 다 GS1 발행이다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 원문 미열람(ref-015, 일반 웹 열람 차단). 검색 스니펫에서는 'RFID 장착 출입구가 readPoint, 그 너머 창고방이 bizLocation'이라는 비유만 확인된다. '출하 이벤트에서는 수령 전까지 업무 위치를 알 수 없어 bizLocation을 생략한다'는 안내는 스니펫에 없다. 발행일 미확인.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EPCIS.ttl에서 AggregationEvent 정의, parentID '(Optional when action is OBSERVE, required otherwise)', AssociationEvent 정의가 일치한다. 기존 페이지 4절(ref-013 기반 AssociationEvent 설명)과 겹치지만 모순되지 않는다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EPCIS.ttl의 sourceList·destinationList('(Optional) … originating/terminating endpoint of a business transfer')와 BizTransaction 예시(Purchase Order, Despatch Advice)가 일치한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"불일치: raw EPCIS-JSON-Schema-root.json을 두 번 열어 봤다. 파일 안의 required 배열은 [\\\"type\\\"] 하나뿐이고 'eventTimeZoneOffset' 문자열은 파일에 없다. 이벤트 유형별 하위 스키마로 넘기는 if/then 참조만 있다. 공통 필수 항목이 eventTime·eventTimeZoneOffset·action이라는 주장은 이 출처로 뒷받침되지 않는다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 공식 저장소 2.0.0 태그(VDA5050_EN_V1.md, 머리말 'RELEASE CANDIDATE, FOR REVIEW')에서 loadId 문구와 loads 생략·빈 배열 규정이 일치한다. VDA 게시 PDF와의 글자 단위 일치는 미확인이며, 브리프도 ref-022를 fetched=false·source_unopened=true로 두었으므로 각주는 원문 미열람으로 유지한다. 발행일 2022-01.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(일부 정정): pick·drop의 FINISHED 정의는 2.0.0 태그와 3.0.0(data/source_texts/ref-031.txt 표 5)에서 일치한다. 파라미터 표기는 다르다. 2.0.0 태그에서는 lhd·loadId·height만 optional이고 stationType·loadType에는 optional 표시가 없다. 3.0.0에서는 모두 optional이다. '두 판 모두 선택 파라미터로 loadType·loadId·stationType을 받는다'는 문구는 정정해야 한다. 같은 발행 기관의 두 판이라 독립 교차는 아니다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 3.0.0 main의 state 메시지 load 객체 절(7.8)을 WebFetch로 확인하지 못했다(요약 도구 응답이 잘렸다). 입력 원문 텍스트도 앞 118,154자까지의 발췌라 이 절이 없다. 'loadId를 관제 또는 이동로봇이 정한다'는 문구와 3.0.0의 loads 빈 배열·생략 규정은 글자 단위로 미확인이다. 브리프 self_check.unverified에도 같은 한계가 적혀 있다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: DispenserRequest.msg(time, request_guid, target_guid, transporter_type, items)와 DispenserRequestItem.msg(type_guid, quantity, compartment_name)의 원문이 일치한다. 발행일 미확인(확인일 2026-09-25).\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IngestorResult.msg(time, request_guid, source_guid, status ACKNOWLEDGED=0·SUCCESS=1·FAILED=2) 원문이 일치한다. 발행일 미확인.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: data/source_texts/ref-023.txt의 'A Full Delivery' 절차와 perform_deliveries 조건이 일치한다. 기존 주제 페이지(로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인)와 7. 화물·재고·자산 식별과 추적 페이지가 이미 다루는 내용이므로 짧게 쓰고 링크한다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f1·f2·f5의 확인된 정의에서 도출한 추론이며 한계(CBV bizStep 전체 목록 미확인)를 밝혔다. staging_outbound는 '운송 픽업 대기 구역으로의 이동'이라 출하 준비에 한정된다는 점을 본문에서 구분해야 한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 확인된 정의(f3·f5·f8)와 완료 신호(f11·f14)를 대응시킨 추론이다. 이 대응을 규정한 표준·구현이 없다고 명시했다. ref-022는 원문 미열람 각주로 둔다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f13·f14에서 품목이 유형·수량으로만 기술되는 것을 원문으로 확인했다. 식별자를 WMS·판독 결과에서 가져와야 한다는 부분은 추론이다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 전제인 f10은 2.0.0 태그 원문으로 확인했다. 보류·재스캔 기준은 oq-003으로 연결만 하고 해결로 다루지 않는다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 다만 전제인 f12(3.0.0 loadId 문구)를 글자 단위로 확인하지 못했으므로 본문에 '3.0.0 해당 문구 원문 대조 미확인'을 병기한다. 3.0.0 원문 확인 범위(표 4의 pick·drop 파라미터)에서 loadId 형식(SSCC 등)을 규정한 부분은 보이지 않는다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 부재 진술이며 '부재의 확인은 아님'을 밝혔다. 이번 검증 검색에서도 매핑 문서는 나타나지 않았다. 검색 범위(7회)를 본문에 적는다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: README에서 'developed and maintained since 2014 and now initiates the second generation', 'developed from scratch again with … GSMP EPCIS/CBV 2.0 MSWG', Auto-ID Labs. Korea at Sejong University, Java·Vert.X·MongoDB, 버전 2.2.0(안정판 2.1.0 브랜치)이 일치한다. 프로젝트의 자기 서술이라 단일 출처다. 발행일 미확인.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f10·f11·f13·f14·f15(VDA 5050 loads·pick/drop 완료, Open-RMF 워크셀 요청·결과)는 기존 주제 페이지 docs/topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md 와 7. 화물·재고·자산 식별과 추적 3·5·9절이 이미 다루는 내용과 겹친다. 새 페이지에서는 식별 수준(유형·수량 대 개체 식별자) 비교에 필요한 만큼만 쓰고 기존 주제 페이지로 링크한다.\",\"f3·f7은 7. 화물·재고·자산 식별과 추적 4절의 '인계 맥락 유형'(ref-014·ref-015)과 'EPCIS 이벤트'(ref-013) 항목과 같은 주장이다. 모순은 없다. 같은 주장에 기존 각주를 유지하고 원문을 연 ref-044·ref-045를 더한다.\",\"f17·f19는 7. 화물·재고·자산 식별과 추적 3절·5절 완료·인계 행의 기존 추정(표준 매핑 미확인)을 구체화한 것이다. 기존 문장과 충돌하지 않는다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f9: 본문·표·용어 설명 어디에도 넣지 않는다 — raw EPCIS-JSON-Schema-root.json의 required 배열은 [\\\"type\\\"] 하나뿐이고 eventTimeZoneOffset 문자열이 없어 주장이 출처로 뒷받침되지 않는다.\",\"ref-046: reference_updates와 새 페이지 각주에서 뺀다 — f9 삭제로 인용하는 finding이 없는 미사용 출처가 된다.\",\"f6: [사실] → [추정]으로 강등하고, 방·문 비유(출입구 = readPoint, 그 너머 방 = bizLocation)만 쓴다. '출하 이벤트에서는 bizLocation을 생략한다'는 부분은 삭제한다 — ref-015는 원문 미열람이고 검색 스니펫에 생략 안내가 없다.\",\"f12: [사실] → [추정]으로 강등하고 문장 끝에 '3.0.0 원문의 해당 절 글자 단위 대조 미확인'을 병기한다 — 3.0.0 state 메시지 load 절을 검증에서 열지 못했고 브리프도 요약 도구 경유 인용이라 밝혔다.\",\"f20: [추정]을 유지하되 전제인 3.0.0 loadId 문구가 미확인(f12 강등)임을 같은 문장에 밝힌다. 'ROP가 SSCC를 loadId로 내려보내는 설계'는 가능성으로만 쓰고 권고처럼 쓰지 않는다.\",\"f11: 파라미터 구절을 '2.0.0(공식 저장소 태그)에서는 lhd·loadId·height가 선택 파라미터이고 stationType·loadType은 선택 표시가 없으며, 3.0.0에서는 모두 선택이다'로 고친다. FINISHED 정의 부분은 [사실] 그대로 둔다 — 2.0.0 태그 원문에 stationType·loadType의 optional 표시가 없다.\",\"f10·f11·f19의 ref-022 각주: 기존 각주 정의를 그대로 쓰고 접근일 뒤 ' (원문 미열람)'을 유지한다. reference_updates에서 ref-022를 갱신하면 source_unopened: true로 둔다 — 브리프가 VDA 게시 PDF가 아니라 공식 저장소 2.0.0 태그(RELEASE CANDIDATE 문구 포함)를 읽었고 fetched=false로 적었다.\",\"ref-015 각주: 접근일 뒤 ' (원문 미열람)'을 유지하고, reference_updates에 넣으면 source_unopened: true로 둔다.\",\"ref-044·ref-045: 각주·참고문헌 요약에 'GS1 공식 저장소(초안 저장소)의 온톨로지 파일이며 ref.gs1.org 비준판과의 문구 일치는 미확인'을 적는다. 발행일 2021-09-30은 온톨로지 수정일임을 밝힌다 — 저장소 README가 초안이라고 밝힌다.\",\"7. 화물·재고·자산 식별과 추적 7절 갱신: EPCIS·CBV 행의 '원문 미열람'을 지우지 말고, 'GS1 공식 저장소 온톨로지 파일 확인(ref-044·ref-045), ISO/IEC 판(ref-011·ref-012)은 원문 미열람'으로 나눠 표시한다 — ISO/IEC 판은 이번에도 열지 않았다.\",\"새 주제 페이지: f10·f11·f13·f14·f15는 식별 수준 비교에 필요한 한두 문장으로 줄이고 기존 주제 페이지 '로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인'(docs/topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md)으로 링크한다 — 같은 내용이 이미 게시되어 있다.\",\"새 주제 페이지와 7. 화물·재고·자산 식별과 추적 갱신 절: 같은 출처의 직접 인용은 페이지마다 출처당 1회, 짧은 구절로만 쓴다. ref-045는 브리프에 여러 발췌(f5·f7·f8)가 있으므로 나머지는 재서술한다.\",\"oq-001: 해결로 바꾸지 않는다. 7. 화물·재고·자산 식별과 추적 11절과 open_question_updates에서 상태를 '열림'으로 두거나 '조사 중'으로 바꾸되 두 곳을 같게 한다 — f21은 부재를 확인한 것이 아니라 찾지 못했다는 진술이다. 페이지 제안의 \\\"'조사 중' 유지\\\" 표현은 현재 상태(열림)와 맞지 않는다.\",\"oq-002: 해결로 바꾸지 않는다. f22(국내 EPCIS 오픈소스 Oliot EPCIS)는 구현 존재만 보여 주고 로봇 작업 결과와 연결한 운영 사례는 아니다. 11절에서는 관련 자료로 연결만 한다.\",\"f16: 본문에서 staging_outbound는 '운송 픽업 대기 구역으로의 이동'(출하 준비)으로 정의돼 있어 시설 안 일반 운반에 쓰기 어렵다는 점을 함께 적는다. 시설 내 운반 표현은 [추정]으로만 둔다 — f2의 정의와 맞춘다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 공식 GitHub 원문(raw.githubusercontent.com)과 입력 원문 텍스트는 열어 대조했다. 확인 19건, 미확인 3건(f6, f9, f12), 교차 확인 0건이다. 핵심 정의가 모두 발행 기관 한 곳(GS1 또는 VDA)의 산출물이다. 강등: f6 사실 → 추정, f12 사실 → 추정. 삭제: f9(EPCIS JSON 루트 스키마의 required는 type 하나뿐이다). 미사용 출처: ref-046(f9 삭제에 따른 것). 원문 미열람 출처: ref-015, ref-022. ref-022는 VDA 게시 PDF 대신 공식 저장소 2.0.0 태그(RELEASE CANDIDATE 문구 포함)로 내용을 대조했다. 주의: ref-044·ref-045는 GS1 초안 저장소 파일이라 비준판과의 문구 일치는 미확인이다. VDA 5050 3.0.0의 loadId 설정 주체 문구(f12)는 원문 절을 확인하지 못했다. 로봇 완료 신호를 EPCIS 이벤트로 옮기는 표준 매핑·공개 구현은 확인되지 않아 f16~f21은 추정이다. oq-001·oq-002는 해결로 인정하지 않는다. 브리프 기록 불일치: ref-023은 fetched_via가 github_raw인데 fetch_url이 null이다. self_check.limits는 inbox 원문 텍스트로 읽었다고 적었고, 입력에 data/source_texts/ref-023.txt가 있어 원문 열람으로 본다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-03",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw CBV.ttl(버전 2.0, 수정 2021-09-30)에서 loading·unloading·departing·arriving 정의 문구가 일치한다. GS1 단일 발행 기관이라 교차 확인은 없다. 표준 정의의 진술이므로 [사실] 유지."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: CBV.ttl의 shipping(staging_outbound·loading·departing을 합친 과정), staging_outbound, receiving, accepting(possession 및/또는 ownership 변경), storing 정의가 일치한다. 단일 발행 기관."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: CBV.ttl의 location·owning_party·possessing_party 정의가 일치한다. ref-015는 원문 미열람(검색 결과 일치). 두 출처 모두 GS1이라 독립 교차는 아니다. 7. 화물·재고·자산 식별과 추적 페이지 4절의 기존 주장(ref-014·ref-015)과 같은 내용이다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: CBV.ttl의 in_transit, in_progress(선택적 disposition), container_closed 정의가 일치한다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EPCIS.ttl(2.0, 2021-09-30)에서 readPoint·bizLocation 둘 다 '(Optional)'이고 bizLocation 정의 문구가 일치한다. ref-015 쪽은 검색 스니펫으로 같은 구분을 확인했다(원문 미열람). 둘 다 GS1 발행이다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 원문 미열람(ref-015, 일반 웹 열람 차단). 검색 스니펫에서는 'RFID 장착 출입구가 readPoint, 그 너머 창고방이 bizLocation'이라는 비유만 확인된다. '출하 이벤트에서는 수령 전까지 업무 위치를 알 수 없어 bizLocation을 생략한다'는 안내는 스니펫에 없다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EPCIS.ttl에서 AggregationEvent 정의, parentID '(Optional when action is OBSERVE, required otherwise)', AssociationEvent 정의가 일치한다. 기존 페이지 4절(ref-013 기반 AssociationEvent 설명)과 겹치지만 모순되지 않는다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EPCIS.ttl의 sourceList·destinationList('(Optional) … originating/terminating endpoint of a business transfer')와 BizTransaction 예시(Purchase Order, Despatch Advice)가 일치한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "불일치: raw EPCIS-JSON-Schema-root.json을 두 번 열어 봤다. 파일 안의 required 배열은 [\"type\"] 하나뿐이고 'eventTimeZoneOffset' 문자열은 파일에 없다. 이벤트 유형별 하위 스키마로 넘기는 if/then 참조만 있다. 공통 필수 항목이 eventTime·eventTimeZoneOffset·action이라는 주장은 이 출처로 뒷받침되지 않는다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 공식 저장소 2.0.0 태그(VDA5050_EN_V1.md, 머리말 'RELEASE CANDIDATE, FOR REVIEW')에서 loadId 문구와 loads 생략·빈 배열 규정이 일치한다. VDA 게시 PDF와의 글자 단위 일치는 미확인이며, 브리프도 ref-022를 fetched=false·source_unopened=true로 두었으므로 각주는 원문 미열람으로 유지한다. 발행일 2022-01."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(일부 정정): pick·drop의 FINISHED 정의는 2.0.0 태그와 3.0.0(data/source_texts/ref-031.txt 표 5)에서 일치한다. 파라미터 표기는 다르다. 2.0.0 태그에서는 lhd·loadId·height만 optional이고 stationType·loadType에는 optional 표시가 없다. 3.0.0에서는 모두 optional이다. '두 판 모두 선택 파라미터로 loadType·loadId·stationType을 받는다'는 문구는 정정해야 한다. 같은 발행 기관의 두 판이라 독립 교차는 아니다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 3.0.0 main의 state 메시지 load 객체 절(7.8)을 WebFetch로 확인하지 못했다(요약 도구 응답이 잘렸다). 입력 원문 텍스트도 앞 118,154자까지의 발췌라 이 절이 없다. 'loadId를 관제 또는 이동로봇이 정한다'는 문구와 3.0.0의 loads 빈 배열·생략 규정은 글자 단위로 미확인이다. 브리프 self_check.unverified에도 같은 한계가 적혀 있다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: DispenserRequest.msg(time, request_guid, target_guid, transporter_type, items)와 DispenserRequestItem.msg(type_guid, quantity, compartment_name)의 원문이 일치한다. 발행일 미확인(확인일 2026-09-25)."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IngestorResult.msg(time, request_guid, source_guid, status ACKNOWLEDGED=0·SUCCESS=1·FAILED=2) 원문이 일치한다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: data/source_texts/ref-023.txt의 'A Full Delivery' 절차와 perform_deliveries 조건이 일치한다. 기존 주제 페이지(로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인)와 7. 화물·재고·자산 식별과 추적 페이지가 이미 다루는 내용이므로 짧게 쓰고 링크한다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f1·f2·f5의 확인된 정의에서 도출한 추론이며 한계(CBV bizStep 전체 목록 미확인)를 밝혔다. staging_outbound는 '운송 픽업 대기 구역으로의 이동'이라 출하 준비에 한정된다는 점을 본문에서 구분해야 한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 확인된 정의(f3·f5·f8)와 완료 신호(f11·f14)를 대응시킨 추론이다. 이 대응을 규정한 표준·구현이 없다고 명시했다. ref-022는 원문 미열람 각주로 둔다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f13·f14에서 품목이 유형·수량으로만 기술되는 것을 원문으로 확인했다. 식별자를 WMS·판독 결과에서 가져와야 한다는 부분은 추론이다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 전제인 f10은 2.0.0 태그 원문으로 확인했다. 보류·재스캔 기준은 oq-003으로 연결만 하고 해결로 다루지 않는다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 다만 전제인 f12(3.0.0 loadId 문구)를 글자 단위로 확인하지 못했으므로 본문에 '3.0.0 해당 문구 원문 대조 미확인'을 병기한다. 3.0.0 원문 확인 범위(표 4의 pick·drop 파라미터)에서 loadId 형식(SSCC 등)을 규정한 부분은 보이지 않는다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 부재 진술이며 '부재의 확인은 아님'을 밝혔다. 이번 검증 검색에서도 매핑 문서는 나타나지 않았다. 검색 범위(7회)를 본문에 적는다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: README에서 'developed and maintained since 2014 and now initiates the second generation', 'developed from scratch again with … GSMP EPCIS/CBV 2.0 MSWG', Auto-ID Labs. Korea at Sejong University, Java·Vert.X·MongoDB, 버전 2.2.0(안정판 2.1.0 브랜치)이 일치한다. 프로젝트의 자기 서술이라 단일 출처다. 발행일 미확인."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f10·f11·f13·f14·f15(VDA 5050 loads·pick/drop 완료, Open-RMF 워크셀 요청·결과)는 기존 주제 페이지 docs/topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md 와 7. 화물·재고·자산 식별과 추적 3·5·9절이 이미 다루는 내용과 겹친다. 새 페이지에서는 식별 수준(유형·수량 대 개체 식별자) 비교에 필요한 만큼만 쓰고 기존 주제 페이지로 링크한다.",
+        "f3·f7은 7. 화물·재고·자산 식별과 추적 4절의 '인계 맥락 유형'(ref-014·ref-015)과 'EPCIS 이벤트'(ref-013) 항목과 같은 주장이다. 모순은 없다. 같은 주장에 기존 각주를 유지하고 원문을 연 ref-044·ref-045를 더한다.",
+        "f17·f19는 7. 화물·재고·자산 식별과 추적 3절·5절 완료·인계 행의 기존 추정(표준 매핑 미확인)을 구체화한 것이다. 기존 문장과 충돌하지 않는다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f9: 본문·표·용어 설명 어디에도 넣지 않는다 — raw EPCIS-JSON-Schema-root.json의 required 배열은 [\"type\"] 하나뿐이고 eventTimeZoneOffset 문자열이 없어 주장이 출처로 뒷받침되지 않는다.",
+      "ref-046: reference_updates와 새 페이지 각주에서 뺀다 — f9 삭제로 인용하는 finding이 없는 미사용 출처가 된다.",
+      "f6: [사실] → [추정]으로 강등하고, 방·문 비유(출입구 = readPoint, 그 너머 방 = bizLocation)만 쓴다. '출하 이벤트에서는 bizLocation을 생략한다'는 부분은 삭제한다 — ref-015는 원문 미열람이고 검색 스니펫에 생략 안내가 없다.",
+      "f12: [사실] → [추정]으로 강등하고 문장 끝에 '3.0.0 원문의 해당 절 글자 단위 대조 미확인'을 병기한다 — 3.0.0 state 메시지 load 절을 검증에서 열지 못했고 브리프도 요약 도구 경유 인용이라 밝혔다.",
+      "f20: [추정]을 유지하되 전제인 3.0.0 loadId 문구가 미확인(f12 강등)임을 같은 문장에 밝힌다. 'ROP가 SSCC를 loadId로 내려보내는 설계'는 가능성으로만 쓰고 권고처럼 쓰지 않는다.",
+      "f11: 파라미터 구절을 '2.0.0(공식 저장소 태그)에서는 lhd·loadId·height가 선택 파라미터이고 stationType·loadType은 선택 표시가 없으며, 3.0.0에서는 모두 선택이다'로 고친다. FINISHED 정의 부분은 [사실] 그대로 둔다 — 2.0.0 태그 원문에 stationType·loadType의 optional 표시가 없다.",
+      "f10·f11·f19의 ref-022 각주: 기존 각주 정의를 그대로 쓰고 접근일 뒤 ' (원문 미열람)'을 유지한다. reference_updates에서 ref-022를 갱신하면 source_unopened: true로 둔다 — 브리프가 VDA 게시 PDF가 아니라 공식 저장소 2.0.0 태그(RELEASE CANDIDATE 문구 포함)를 읽었고 fetched=false로 적었다.",
+      "ref-015 각주: 접근일 뒤 ' (원문 미열람)'을 유지하고, reference_updates에 넣으면 source_unopened: true로 둔다.",
+      "ref-044·ref-045: 각주·참고문헌 요약에 'GS1 공식 저장소(초안 저장소)의 온톨로지 파일이며 ref.gs1.org 비준판과의 문구 일치는 미확인'을 적는다. 발행일 2021-09-30은 온톨로지 수정일임을 밝힌다 — 저장소 README가 초안이라고 밝힌다.",
+      "7. 화물·재고·자산 식별과 추적 7절 갱신: EPCIS·CBV 행의 '원문 미열람'을 지우지 말고, 'GS1 공식 저장소 온톨로지 파일 확인(ref-044·ref-045), ISO/IEC 판(ref-011·ref-012)은 원문 미열람'으로 나눠 표시한다 — ISO/IEC 판은 이번에도 열지 않았다.",
+      "새 주제 페이지: f10·f11·f13·f14·f15는 식별 수준 비교에 필요한 한두 문장으로 줄이고 기존 주제 페이지 '로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인'(docs/topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md)으로 링크한다 — 같은 내용이 이미 게시되어 있다.",
+      "새 주제 페이지와 7. 화물·재고·자산 식별과 추적 갱신 절: 같은 출처의 직접 인용은 페이지마다 출처당 1회, 짧은 구절로만 쓴다. ref-045는 브리프에 여러 발췌(f5·f7·f8)가 있으므로 나머지는 재서술한다.",
+      "oq-001: 해결로 바꾸지 않는다. 7. 화물·재고·자산 식별과 추적 11절과 open_question_updates에서 상태를 '열림'으로 두거나 '조사 중'으로 바꾸되 두 곳을 같게 한다 — f21은 부재를 확인한 것이 아니라 찾지 못했다는 진술이다. 페이지 제안의 \"'조사 중' 유지\" 표현은 현재 상태(열림)와 맞지 않는다.",
+      "oq-002: 해결로 바꾸지 않는다. f22(국내 EPCIS 오픈소스 Oliot EPCIS)는 구현 존재만 보여 주고 로봇 작업 결과와 연결한 운영 사례는 아니다. 11절에서는 관련 자료로 연결만 한다.",
+      "f16: 본문에서 staging_outbound는 '운송 픽업 대기 구역으로의 이동'(출하 준비)으로 정의돼 있어 시설 안 일반 운반에 쓰기 어렵다는 점을 함께 적는다. 시설 내 운반 표현은 [추정]으로만 둔다 — f2의 정의와 맞춘다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 공식 GitHub 원문(raw.githubusercontent.com)과 입력 원문 텍스트는 열어 대조했다. 확인 19건, 미확인 3건(f6, f9, f12), 교차 확인 0건이다. 핵심 정의가 모두 발행 기관 한 곳(GS1 또는 VDA)의 산출물이다. 강등: f6 사실 → 추정, f12 사실 → 추정. 삭제: f9(EPCIS JSON 루트 스키마의 required는 type 하나뿐이다). 미사용 출처: ref-046(f9 삭제에 따른 것). 원문 미열람 출처: ref-015, ref-022. ref-022는 VDA 게시 PDF 대신 공식 저장소 2.0.0 태그(RELEASE CANDIDATE 문구 포함)로 내용을 대조했다. 주의: ref-044·ref-045는 GS1 초안 저장소 파일이라 비준판과의 문구 일치는 미확인이다. VDA 5050 3.0.0의 loadId 설정 주체 문구(f12)는 원문 절을 확인하지 못했다. 로봇 완료 신호를 EPCIS 이벤트로 옮기는 표준 매핑·공개 구현은 확인되지 않아 f16~f21은 추정이다. oq-001·oq-002는 해결로 인정하지 않는다. 브리프 기록 불일치: ref-023은 fetched_via가 github_raw인데 fetch_url이 null이다. self_check.limits는 inbox 원문 텍스트로 읽었다고 적었고, 입력에 data/source_texts/ref-023.txt가 있어 원문 열람으로 본다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 4054,
+  "type": "result",
+  "duration_ms": 148573,
+  "uuid": "4bab642b-73f9-4d60-b1c9-131a0cd864fb",
+  "ttft_stream_ms": 2716,
+  "time_to_request_ms": 76,
+  "first_content_frame_ms": 2717,
+  "time_to_request_from_spawn_ms": 2610795,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790298464043.542,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 150.5
+}

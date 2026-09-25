@@ -27,6 +27,21 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/researcher.md | 리서치 에이전트 1.1 → 1.2: 원문 열기(GitHub raw·inbox), 갱신 차등 조사, 대분류 연결 절차 |
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
+| manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재. 2차 수정: 4절 끝 문장 태그·각주, 약어 첫 등장 풀어 쓰기 |
+| 2026-09-25-03 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건 |
+| 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-area07-s6.md](topics/2026/2026-09-25-area07-s6.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "6. 대표 접근법과 기술" 절(775자)을 옮겼다 |
+| 2026-09-25-03 | 요약 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 7. 화물·재고·자산 식별과 추적: 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성, 영역 페이지 4·6·7·11절 갱신(Oliot EPCIS 행, 새 열린 질문 2건) |
+| 2026-09-25-03 | 생성 | [docs/references/ref-044.md](references/ref-044.md) | 참고문헌 ref-044 등록: gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontol… |
+| 2026-09-25-03 | 생성 | [docs/references/ref-045.md](references/ref-045.md) | 참고문헌 ref-045 등록: gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0) |
+| 2026-09-25-03 | 생성 | [docs/references/ref-047.md](references/ref-047.md) | 참고문헌 ref-047 등록: rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.… |
+| 2026-09-25-03 | 생성 | [docs/references/ref-048.md](references/ref-048.md) | 참고문헌 ref-048 등록: rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestI… |
+| 2026-09-25-03 | 생성 | [docs/references/ref-049.md](references/ref-049.md) | 참고문헌 ref-049 등록: rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg |
+| 2026-09-25-03 | 생성 | [docs/references/ref-050.md](references/ref-050.md) | 참고문헌 ref-050 등록: Oliot EPCIS for GS1 EPCIS/CBV 2.0.0 (GitHub JaewookByun/epci… |
+| 2026-09-25-03 | 생성 | [docs/glossary/read-point.md](glossary/read-point.md) | 용어집 항목 판독 지점 |
+| 2026-09-25-03 | 생성 | [docs/glossary/business-location.md](glossary/business-location.md) | 용어집 항목 업무 위치 |
+| 2026-09-25-03 | 생성 | [docs/glossary/association-event.md](glossary/association-event.md) | 용어집 항목 연결 이벤트 |
+| 2026-09-25-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-01·q1-02 답함, q1-03 부분 답, 후속 질문 4건(q1-07·q1-08·q4-06·q5-05), 완료 조건 미충족 평가, 출처 20건(원문 미열람), 이력 행 추가. 2차 수정: 4절 결론 셋째 항목에서 MassRobotics setup 메시지를 기능 기술로 쓴 부분 삭제(능력 필드 유무 미확인 명시), 남은 불확실성 한 항목 평서문으로 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | 온톨로지 v0 → v0.1: 개념 효과·스킬·오류 추가(확정), 기능 속성에 능력 출처 구분 추가(초안 → 확정), 관계 기능 / 구현된다 / 스킬 추가, 다이어그램 갱신, 전제조건·스킬 상태 기계 등은 6절 질문으로 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | 비교표 초안: 후보 10행의 발행 기관·종류 채움, 근거 finding이 있는 정보 항목 칸만 태그와 함께 채움(나머지 미조사), 모든 행 원문 미열람, 후보 밖 2행(RCO, 이종 자율 로봇 능력·스킬 모델) 추가, 빠진 정보 요약·출처·이력 갱신 |

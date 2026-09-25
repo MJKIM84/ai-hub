@@ -154,6 +154,8 @@ nav:
     - topics/index.md
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
+      - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
   - 용어집:
     - glossary/index.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
@@ -172,10 +174,13 @@ nav:
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
+    - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
+    - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
+    - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
   - 참고문헌:
@@ -225,6 +230,12 @@ nav:
     - ref-041 — Ontology-driven integration of advertised and operational capabilities in robots: references/ref-041.md
     - ref-042 — A survey of ontology-enabled processes for dependable robot autonomy: references/ref-042.md
     - ref-043 — 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계: references/ref-043.md
+    - ref-044 — gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0): references/ref-044.md
+    - ref-045 — gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0): references/ref-045.md
+    - ref-047 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg: references/ref-047.md
+    - ref-048 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg: references/ref-048.md
+    - ref-049 — rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg: references/ref-049.md
+    - ref-050 — Oliot EPCIS for GS1 EPCIS/CBV 2.0.0 (GitHub JaewookByun/epcis README): references/ref-050.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

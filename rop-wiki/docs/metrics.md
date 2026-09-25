@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
-| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 2 | 0 | 0 | 5 |
+| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 4 | 0 | 0 | 7 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -47,7 +47,7 @@ version: 1
 |---|---|---|---|---|
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | seed | — | 2026-09-24 | 1 |
 | [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | seed | — | 2026-09-24 | 1 |
-| [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | 2026-09-25 | 2 |
+| [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | 2026-09-25 | 3 |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | seed | — | 2026-09-24 | 1 |
 
 **C. 연결·실행 기반**
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 2회 중 최종 통과 2회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 2
-- 2차 검증 판정: 통과 2
+- 실행 3회 중 최종 통과 3회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 3
+- 2차 검증 판정: 통과 3
 
 ### 반려·보류 건수
 
@@ -110,13 +110,13 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 표준 | 20 |
+| 표준 | 22 |
 | 논문 | 12 |
-| 오픈소스 문서 | 7 |
+| 오픈소스 문서 | 11 |
 | 정부·연구기관 | 3 |
 | 기사 | 1 |
 
-신뢰도: medium 34건, high 8건, low 1건
+신뢰도: medium 34건, high 14건, low 1건
 
 ### 물류 흐름 매트릭스 채움률
 

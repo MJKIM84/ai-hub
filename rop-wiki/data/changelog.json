@@ -485,6 +485,109 @@
       "action": "갱신",
       "page": "agents/storyteller.md",
       "summary": "스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "summary": "신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재. 2차 수정: 4절 끝 문장 태그·각주, 약어 첫 등장 풀어 쓰기"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "갱신",
+      "page": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "summary": "4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/topics/2026/2026-09-25-area07-s6.md",
+      "summary": "자동 분리: 7. 화물·재고·자산 식별과 추적 의 \"6. 대표 접근법과 기술\" 절(775자)을 옮겼다"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "요약",
+      "page": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "summary": "7. 화물·재고·자산 식별과 추적: 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성, 영역 페이지 4·6·7·11절 갱신(Oliot EPCIS 행, 새 열린 질문 2건)",
+      "index_updates": {
+        "home_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 주제 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성(readPoint·bizLocation·source/destination 구분, CBV loading 정의 한계, 매핑 미확인)",
+        "category_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: EPCIS 인계 이벤트 설계 주제 페이지 신규, 6·7·11절 갱신(국내 오픈소스 Oliot EPCIS, 새 열린 질문 2건)",
+        "area_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 링크, 7절 Oliot EPCIS 행, 11절 새 질문 2건"
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-044.md",
+      "summary": "참고문헌 ref-044 등록: gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontol…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-045.md",
+      "summary": "참고문헌 ref-045 등록: gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-047.md",
+      "summary": "참고문헌 ref-047 등록: rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-048.md",
+      "summary": "참고문헌 ref-048 등록: rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestI…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-049.md",
+      "summary": "참고문헌 ref-049 등록: rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/references/ref-050.md",
+      "summary": "참고문헌 ref-050 등록: Oliot EPCIS for GS1 EPCIS/CBV 2.0.0 (GitHub JaewookByun/epci…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/glossary/read-point.md",
+      "summary": "용어집 항목 판독 지점"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/glossary/business-location.md",
+      "summary": "용어집 항목 업무 위치"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "생성",
+      "page": "docs/glossary/association-event.md",
+      "summary": "용어집 항목 연결 이벤트"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-03",
+      "action": "갱신",
+      "page": "docs/standards/index.md",
+      "summary": "표준·프레임워크 1건 추가·갱신"
     }
   ]
 }
