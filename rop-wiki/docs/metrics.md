@@ -28,7 +28,7 @@ version: 1
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
-| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 2 | 0 | 0 | 14 | 0 | 0 | 16 |
+| [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | 1 | 0 | 0 | 20 | 0 | 0 | 21 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -92,7 +92,7 @@ version: 1
 |---|---|---|---|---|
 | [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | published | medium | 2026-09-25 | 2 |
 | [26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | published | medium | 2026-09-25 | 2 |
-| [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | seed | — | 2026-09-24 | 1 |
+| [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-09-25 | 2 |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | seed | — | 2026-09-24 | 1 |
 
 ### 검증 통과율
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 245 |
-| 오픈소스 문서 | 148 |
-| 표준 | 126 |
-| 정부·연구기관 | 38 |
+| 논문 | 249 |
+| 오픈소스 문서 | 149 |
+| 표준 | 128 |
+| 정부·연구기관 | 41 |
 | 벤더 문서 | 37 |
-| 기사 | 20 |
+| 기사 | 21 |
 | 업계 보고서 | 6 |
 
-신뢰도: medium 444건, high 125건, low 51건
+신뢰도: medium 454건, high 125건, low 52건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 2026-09-24 | 1 | seed |
 | [28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 2026-09-24 | 1 | seed |
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 0 | published |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-25 | 0 | published |
 | [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-25 | 0 | published |
+| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-25 | 0 | published |
 <!-- auto:metrics:end -->

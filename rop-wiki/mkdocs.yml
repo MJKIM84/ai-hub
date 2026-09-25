@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 27. AI·학습·적응과 모델 운영 — 대표 연구와 자료: topics/2026/2026-09-25-area27-s8.md
+      - 27. AI·학습·적응과 모델 운영 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area27-s7.md
+      - 27. AI·학습·적응과 모델 운영 — 대표 접근법과 기술: topics/2026/2026-09-25-area27-s6.md
+      - 27. AI·학습·적응과 모델 운영 — 핵심 개념과 용어: topics/2026/2026-09-25-area27-s4.md
+      - 27. AI·학습·적응과 모델 운영 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area27-s10.md
       - 26. 사이버보안·접근권한·개인정보 — 대표 연구와 자료: topics/2026/2026-09-25-area26-s8.md
       - 26. 사이버보안·접근권한·개인정보 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area26-s7.md
       - 26. 사이버보안·접근권한·개인정보 — 대표 접근법과 기술: topics/2026/2026-09-25-area26-s6.md
@@ -289,6 +294,7 @@ nav:
   - 용어집:
     - glossary/index.md
     - 5G 특화망(이음5G) (Private 5G Network (e-Um 5G)): glossary/private-5g-network.md
+    - AI 관리 시스템 (Artificial Intelligence Management System (AIMS)): glossary/artificial-intelligence-management-system.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
@@ -308,6 +314,7 @@ nav:
     - 계층 도메인 정의 언어 (Hierarchical Domain Definition Language (HDDL)): glossary/hddl.md
     - 계층적 작업 네트워크 (Hierarchical Task Network (HTN)): glossary/hierarchical-task-network.md
     - 계획 도메인 정의 언어 (Planning Domain Definition Language (PDDL)): glossary/pddl.md
+    - 고영향 인공지능 (High-impact AI (Korea AI Basic Act)): glossary/high-impact-ai.md
     - 고장 탐지·진단 (Fault Detection and Diagnosis (FDD)): glossary/fault-detection-and-diagnosis-fdd.md
     - 공간 그래프 (Space Graph): glossary/space-graph.md
     - 공간 세분화 (Subspacing (Indoor Space Subdivision)): glossary/indoor-space-subspacing.md
@@ -329,6 +336,7 @@ nav:
     - 다중 에이전트 픽업·배송 (Multi-Agent Pickup and Delivery): glossary/multi-agent-pickup-and-delivery.md
     - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
+    - 등각 예측 (Conformal Prediction): glossary/conformal-prediction.md
     - 디스펜서·인제스터 (Dispenser / Ingestor): glossary/dispenser-ingestor.md
     - 디지털 섀도 (Digital Shadow): glossary/digital-shadow.md
     - 디지털 스레드 (Digital Thread): glossary/digital-thread.md
@@ -343,6 +351,7 @@ nav:
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
     - 모델 검사 (Model Checking): glossary/model-checking.md
+    - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
     - 목표 조건 (Goal Condition): glossary/goal-condition.md
     - 무선 업데이트 (Over-the-Air Update (OTA)): glossary/over-the-air-update.md
@@ -1114,6 +1123,18 @@ nav:
     - ? ref-615 — Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models
       : references/ref-615.md
     - ref-616 — Hybrid LLM-based Intelligent Framework for Robot Task Scheduling: references/ref-616.md
+    - ref-617 — NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence: references/ref-617.md
+    - ref-618 — ISO/IEC 42001:2023 - AI management systems: references/ref-618.md
+    - ref-619 — ISO/IEC 23894:2023 - AI — Guidance on risk management: references/ref-619.md
+    - ref-620 — 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법: references/ref-620.md
+    - ref-621 — AI Act | Shaping Europe's digital future: references/ref-621.md
+    - 'ref-622 — Code as Policies: Language Model Programs for Embodied Control': references/ref-622.md
+    - ? 'ref-623 — RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments'
+      : references/ref-623.md
+    - ref-624 — Hidden Technical Debt in Machine Learning Systems: references/ref-624.md
+    - 'ref-625 — The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction': references/ref-625.md
+    - ref-626 — ML Model Registry | MLflow AI Platform: references/ref-626.md
+    - ref-627 — 포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI': references/ref-627.md
     - ref-640 — rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.msg: references/ref-640.md
     - ref-641 — Optimized Directed Roadmap Graph for Multi-Agent Path Finding Using Stochastic Gradient Descent: references/ref-641.md
     - ref-642 — An Indoor Space Subspacing Framework for Implementing a 3D Hierarchical Network-Based Topological Data Model: references/ref-642.md

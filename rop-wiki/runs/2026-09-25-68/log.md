@@ -123,3 +123,22 @@ WARNING -  Doc file 'categories/g-safety-security-intelligence-and-governance/27
 - 2026-09-25 16:41:57 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
 - 2026-09-25 16:42:52 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
 - 2026-09-25 16:44:39 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 27. AI·학습·적응과 모델 운영 — 생성 5/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
+- 2026-09-25 16:44:55 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-68 resume=2026-09-25-68 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 16:44:55 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 16:44:55 KST [준비] 결과: 성공 · 소요 0초 · 건너뜀
+- 2026-09-25 16:44:56 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 16:48:34 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-68 (영역 심화)
+- 2026-09-25 16:48:34 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 16:48:34 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 16:48:35 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-586→ref-617, ref-592→ref-618, ref-593→ref-619, ref-594→ref-620, ref-595→ref-621, ref-596→ref-622, ref-597→ref-623, ref-598→ref-624, ref-610→ref-625, ref-611→ref-626, ref-612→ref-627
+- 2026-09-25 16:48:35 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 6개, 반영 전 사전 검사 포함)
+- 2026-09-25 16:48:35 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-68/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 16:48:37 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 16:48:41 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 16:49:48 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 5/갱신 1/폐기 0, 용어 4, 참고문헌 11, 표준 6, 열린 질문 3, 매트릭스 칸 7, 백로그 0, 정정 0; auto 영역 갱신 34개 페이지, mkdocs.yml 갱신
+- 2026-09-25 16:50:43 KST [퍼블리셔] 6단계 사이트 빌드 성공 ('mkdocs build --strict', 55초)
+- 2026-09-25 16:50:43 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 게시 완료)
+- 2026-09-25 16:52:33 KST [퍼블리셔] 8단계 확정 로그 반영 뒤 사이트 재빌드 성공
+- 2026-09-25 16:52:33 KST [퍼블리셔] 퍼블리셔 완료: 생성 5/갱신 1 · 3분 59초
+- 2026-09-25 16:52:33 KST [퍼블리셔] 결과: 성공 · 소요 3분 59초 · 게시 완료
+- 2026-09-25 16:52:33 KST [퍼블리셔] 7단계 커밋: run(2026-09-25): 영역 심화 27. AI·학습·적응과 모델 운영 — 생성 5/갱신 1 (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

@@ -28,6 +28,29 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-68 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
+| 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s6.md](topics/2026/2026-09-25-area27-s6.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(1,218자)을 옮겼다 |
+| 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s7.md](topics/2026/2026-09-25-area27-s7.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-618 각주를 떼어 안내 문장으로 바꿨다 |
+| 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s8.md](topics/2026/2026-09-25-area27-s8.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "8. 대표 연구와 자료" 절(969자)을 옮겼다. 2차: 도입 문장의 태그·각주 제거와 README 확인 출처 명시, KnowNo 항목 문구 수정(필요할 때·저자 보고) |
+| 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s10.md](topics/2026/2026-09-25-area27-s10.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(760자)을 옮겼다. 본문 링크를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
+| 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s4.md](topics/2026/2026-09-25-area27-s4.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "4. 핵심 개념과 용어" 절(754자)을 옮겼다 |
+| 2026-09-25-68 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 27. AI·학습·적응과 모델 운영: 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법, 출처 19건 원문 미열람) |
+| 2026-09-25-68 | 생성 | [docs/references/ref-617.md](references/ref-617.md) | 참고문헌 ref-617 등록: NIST Risk Management Framework Aims to Improve Trustworthine… |
+| 2026-09-25-68 | 생성 | [docs/references/ref-618.md](references/ref-618.md) | 참고문헌 ref-618 등록: ISO/IEC 42001:2023 - AI management systems |
+| 2026-09-25-68 | 생성 | [docs/references/ref-619.md](references/ref-619.md) | 참고문헌 ref-619 등록: ISO/IEC 23894:2023 - AI — Guidance on risk management |
+| 2026-09-25-68 | 생성 | [docs/references/ref-620.md](references/ref-620.md) | 참고문헌 ref-620 등록: 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 |
+| 2026-09-25-68 | 생성 | [docs/references/ref-621.md](references/ref-621.md) | 참고문헌 ref-621 등록: AI Act \| Shaping Europe's digital future |
+| 2026-09-25-68 | 생성 | [docs/references/ref-622.md](references/ref-622.md) | 참고문헌 ref-622 등록: Code as Policies: Language Model Programs for Embodied Contr… |
+| 2026-09-25-68 | 생성 | [docs/references/ref-623.md](references/ref-623.md) | 참고문헌 ref-623 등록: RTAW: An Attention Inspired Reinforcement Learning Method fo… |
+| 2026-09-25-68 | 생성 | [docs/references/ref-624.md](references/ref-624.md) | 참고문헌 ref-624 등록: Hidden Technical Debt in Machine Learning Systems |
+| 2026-09-25-68 | 생성 | [docs/references/ref-625.md](references/ref-625.md) | 참고문헌 ref-625 등록: The ML Test Score: A Rubric for ML Production Readiness and… |
+| 2026-09-25-68 | 생성 | [docs/references/ref-626.md](references/ref-626.md) | 참고문헌 ref-626 등록: ML Model Registry \| MLflow AI Platform |
+| 2026-09-25-68 | 생성 | [docs/references/ref-627.md](references/ref-627.md) | 참고문헌 ref-627 등록: 포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI' |
+| 2026-09-25-68 | 생성 | [docs/glossary/conformal-prediction.md](glossary/conformal-prediction.md) | 용어집 항목 등각 예측 |
+| 2026-09-25-68 | 생성 | [docs/glossary/artificial-intelligence-management-system.md](glossary/artificial-intelligence-management-system.md) | 용어집 항목 AI 관리 시스템 |
+| 2026-09-25-68 | 생성 | [docs/glossary/high-impact-ai.md](glossary/high-impact-ai.md) | 용어집 항목 고영향 인공지능 |
+| 2026-09-25-68 | 생성 | [docs/glossary/model-registry.md](glossary/model-registry.md) | 용어집 항목 모델 레지스트리 |
+| 2026-09-25-68 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
 | 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
 | 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-01 답함(3절 #q3-01 신설), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건(초안 갱신만 충족), 상태 줄 갱신. 2차 수정: 6절 초안 갱신 행 충족으로 정정, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸에 ConstraintBench 조건 병기 |

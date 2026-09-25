@@ -6,7 +6,7 @@
 |---|---|---|---|
 | update | docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md | draft | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
 | create | docs/topics/2026/2026-09-25-area27-s6.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(1,218자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area27-s7.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-735 각주를 떼어 안내 문장으로 바꿨다 |
+| create | docs/topics/2026/2026-09-25-area27-s7.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-592 각주를 떼어 안내 문장으로 바꿨다 |
 | create | docs/topics/2026/2026-09-25-area27-s8.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "8. 대표 연구와 자료" 절(969자)을 옮겼다. 2차: 도입 문장의 태그·각주 제거와 README 확인 출처 명시, KnowNo 항목 문구 수정(필요할 때·저자 보고) |
 | create | docs/topics/2026/2026-09-25-area27-s10.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(760자)을 옮겼다. 본문 링크를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
 | create | docs/topics/2026/2026-09-25-area27-s4.md | draft | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "4. 핵심 개념과 용어" 절(754자)을 옮겼다 |
@@ -23,28 +23,28 @@
 | 동작 | 용어(한글) | 용어(영문) | 한 줄 정의 | 관련 영역 | 출처 |
 |---|---|---|---|---|---|
 | new | 등각 예측 | Conformal Prediction | 보정 데이터로 예측 집합의 크기를 정해, 정답이 집합에 들어갈 확률을 사용자가 정한 수준 이상으로 통계적으로 보장하는 불확실성 정량화 방법이다. | 27, 18 | ref-351 |
-| new | AI 관리 시스템 | Artificial Intelligence Management System (AIMS) | 조직이 AI 의 책임 있는 개발·제공·사용을 위한 정책·목표·프로세스를 세우고 운영하는 관리 체계로, ISO/IEC 42001 이 요구사항을 정한다. | 27, 28 | ref-735 |
-| new | 고영향 인공지능 | High-impact AI (Korea AI Basic Act) | 한국 인공지능 기본법에서 사람의 생명·안전·기본권에 중대한 영향을 미칠 수 있어 별도 책무가 부과되는 영역의 AI 시스템이다. | 27, 25, 28 | ref-737 |
-| new | 모델 레지스트리 | Model Registry | 학습된 모델의 버전·별칭·태그·계보를 한곳에서 관리해 어떤 버전을 운영에 쓰는지 정하고 교체·되돌림을 추적하게 하는 저장소다. | 27, 24 | ref-746 |
+| new | AI 관리 시스템 | Artificial Intelligence Management System (AIMS) | 조직이 AI 의 책임 있는 개발·제공·사용을 위한 정책·목표·프로세스를 세우고 운영하는 관리 체계로, ISO/IEC 42001 이 요구사항을 정한다. | 27, 28 | ref-592 |
+| new | 고영향 인공지능 | High-impact AI (Korea AI Basic Act) | 한국 인공지능 기본법에서 사람의 생명·안전·기본권에 중대한 영향을 미칠 수 있어 별도 책무가 부과되는 영역의 AI 시스템이다. | 27, 25, 28 | ref-594 |
+| new | 모델 레지스트리 | Model Registry | 학습된 모델의 버전·별칭·태그·계보를 한곳에서 관리해 어떤 버전을 운영에 쓰는지 정하고 교체·되돌림을 추적하게 하는 저장소다. | 27, 24 | ref-611 |
 
 ## 참고문헌 갱신
 
 | id | 기관 | 제목 | 유형 | 신뢰도 | URL |
 |---|---|---|---|---|---|
-| ref-734 | NIST | NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence | 정부·연구기관 | medium | https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial |
-| ref-735 | ISO/IEC | ISO/IEC 42001:2023 - AI management systems | 표준 | medium | https://www.iso.org/standard/42001 |
-| ref-736 | ISO/IEC | ISO/IEC 23894:2023 - AI — Guidance on risk management | 표준 | medium | https://www.iso.org/standard/77304.html |
-| ref-737 | 국가법령정보센터(과학기술정보통신부) | 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 | 정부·연구기관 | medium | https://www.law.go.kr/lsInfoP.do?lsiSeq=268543 |
-| ref-738 | European Commission | AI Act \| Shaping Europe's digital future | 정부·연구기관 | medium | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai |
+| ref-586 | NIST | NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence | 정부·연구기관 | medium | https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial |
+| ref-592 | ISO/IEC | ISO/IEC 42001:2023 - AI management systems | 표준 | medium | https://www.iso.org/standard/42001 |
+| ref-593 | ISO/IEC | ISO/IEC 23894:2023 - AI — Guidance on risk management | 표준 | medium | https://www.iso.org/standard/77304.html |
+| ref-594 | 국가법령정보센터(과학기술정보통신부) | 인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 | 정부·연구기관 | medium | https://www.law.go.kr/lsInfoP.do?lsiSeq=268543 |
+| ref-595 | European Commission | AI Act \| Shaping Europe's digital future | 정부·연구기관 | medium | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai |
 | ref-088 | Ahn, M. 외 | Do As I Can, Not As I Say: Grounding Language in Robotic Affordances | 논문 | medium | https://arxiv.org/abs/2204.01691 |
 | ref-092 | Liu, B. 외 | LLM+P: Empowering Large Language Models with Optimal Planning Proficiency | 논문 | medium | https://arxiv.org/abs/2304.11477 |
 | ref-351 | Ren, A. Z. 외 | Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners | 논문 | medium | https://arxiv.org/abs/2307.01928 |
-| ref-742 | Liang, J. 외 | Code as Policies: Language Model Programs for Embodied Control | 논문 | medium | https://arxiv.org/abs/2209.07753 |
-| ref-743 | Agrawal, A. 외 | RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments | 논문 | medium | https://arxiv.org/abs/2209.05738 |
-| ref-744 | Sculley, D. 외 | Hidden Technical Debt in Machine Learning Systems | 논문 | medium | https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems |
-| ref-745 | Breck, E. 외 (Google Research) | The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction | 논문 | medium | https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/ |
-| ref-746 | MLflow (Linux Foundation 오픈소스 프로젝트) | ML Model Registry \| MLflow AI Platform | 오픈소스 문서 | medium | https://mlflow.org/docs/latest/ml/model-registry/ |
-| ref-747 | 머니투데이 | 포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI' | 기사 | low | https://www.mt.co.kr/industry/2026/09/19/2026091818023697394 |
+| ref-596 | Liang, J. 외 | Code as Policies: Language Model Programs for Embodied Control | 논문 | medium | https://arxiv.org/abs/2209.07753 |
+| ref-597 | Agrawal, A. 외 | RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments | 논문 | medium | https://arxiv.org/abs/2209.05738 |
+| ref-598 | Sculley, D. 외 | Hidden Technical Debt in Machine Learning Systems | 논문 | medium | https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems |
+| ref-610 | Breck, E. 외 (Google Research) | The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction | 논문 | medium | https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/ |
+| ref-611 | MLflow (Linux Foundation 오픈소스 프로젝트) | ML Model Registry \| MLflow AI Platform | 오픈소스 문서 | medium | https://mlflow.org/docs/latest/ml/model-registry/ |
+| ref-612 | 머니투데이 | 포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI' | 기사 | low | https://www.mt.co.kr/industry/2026/09/19/2026091818023697394 |
 | ref-354 | cog-model (AmbiK 저자) | AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment) | 오픈소스 문서 | medium | https://github.com/cog-model/AmbiK-dataset |
 | ref-359 | Wang, W. 외 | Learning to Ask: When LLM Agents Meet Unclear Instruction | 논문 | medium | https://arxiv.org/abs/2409.00557 |
 | ref-056 | Liu, J. X. 외 | Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments | 논문 | medium | https://arxiv.org/abs/2302.11649 |
@@ -75,10 +75,10 @@
 
 | 이름 | 종류 | 기관 | 관련 영역 | 참고문헌 | URL |
 |---|---|---|---|---|---|
-| NIST AI RMF 1.0 (NIST AI 100-1) | 프레임워크 | NIST | 27, 25 | ref-734 | https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial |
-| ISO/IEC 42001:2023 AI 관리 시스템 | 표준 | ISO/IEC | 27, 28 | ref-735 | https://www.iso.org/standard/42001 |
-| ISO/IEC 23894:2023 AI 위험관리 지침 | 표준 | ISO/IEC | 27, 25 | ref-736 | https://www.iso.org/standard/77304.html |
-| MLflow 모델 레지스트리 | 오픈소스 | MLflow (Linux Foundation 오픈소스 프로젝트) | 27, 24 | ref-746 | https://mlflow.org/docs/latest/ml/model-registry/ |
+| NIST AI RMF 1.0 (NIST AI 100-1) | 프레임워크 | NIST | 27, 25 | ref-586 | https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial |
+| ISO/IEC 42001:2023 AI 관리 시스템 | 표준 | ISO/IEC | 27, 28 | ref-592 | https://www.iso.org/standard/42001 |
+| ISO/IEC 23894:2023 AI 위험관리 지침 | 표준 | ISO/IEC | 27, 25 | ref-593 | https://www.iso.org/standard/77304.html |
+| MLflow 모델 레지스트리 | 오픈소스 | MLflow (Linux Foundation 오픈소스 프로젝트) | 27, 24 | ref-611 | https://mlflow.org/docs/latest/ml/model-registry/ |
 | LoTa-Bench | 오픈소스 | lbaa2022 (LoTa-Bench 공식 저장소) | 27, 23 | ref-541 | https://github.com/lbaa2022/LLMTaskPlanning |
 | AmbiK 데이터셋 | 오픈소스 | cog-model (AmbiK 저자) | 27, 18 | ref-354 | https://github.com/cog-model/AmbiK-dataset |
 
@@ -113,7 +113,7 @@
 - 트랙 반영 제안 가운데 브리프가 다루지 않은 항목(2026-09-25-05·21·36·54·57, -04 의 Cohen 외·Huang 외, -30 의 LMCR·구조화 출력, -37 의 DELIVER·SayPlan)은 본문에 넣지 않고 additional_research_requests 에 재확인 요청으로만 남겼다.
 - 분량 초과 자동 분리: 27. AI·학습·적응과 모델 운영 본문 8,004자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,936자
 - 형식 검증: docs/topics/2026/2026-09-25-area27-s10.md 3절의 세부영역 링크 10건을 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 주장·태그·각주는 바꾸지 않았다.
-- 2차: 7절 도입 문장의 태그·각주 제거 — 세부영역 페이지 7절 첫 문장과 2026-09-25-area27-s7.md 의 1절 첫 항목·3절 첫 문장에서 '[사실][^ref-735]'를 떼어 태그 없는 안내 문장으로 두었다(ref-735 는 표의 ISO/IEC 42001 행에만 남김).
+- 2차: 7절 도입 문장의 태그·각주 제거 — 세부영역 페이지 7절 첫 문장과 2026-09-25-area27-s7.md 의 1절 첫 항목·3절 첫 문장에서 '[사실][^ref-592]'를 떼어 태그 없는 안내 문장으로 두었다(ref-592 는 표의 ISO/IEC 42001 행에만 남김).
 - 2차: 8절 도입 문장의 태그·각주 제거와 확인 방식 명시 — 세부영역 페이지 8절 첫 문장과 2026-09-25-area27-s8.md 의 1절 첫 항목·3절 첫 문장에서 '[사실][^ref-351]'를 떼고 '모두'를 '대부분'으로 고쳤으며 'AmbiK와 LoTa-Bench는 검증 과정에서 공식 저장소 README로 확인했다'를 덧붙였다(세부영역 페이지에서는 목록이 주제 페이지로 옮겨졌으므로 '아래 자료는'을 '이 절의 자료는'으로 썼다).
 - 2차: 2026-09-25-area27-s8.md 3절 KnowNo 항목을 '등각 예측으로 필요할 때 사람에게 도움을 요청하는 LLM 계획기(저자 보고)'로 고쳤다.
 - 2차: 세부영역 페이지 6절 첫 단락의 '아래 도식은 3절의 겹 구조를 이 위키가 그린 것이다.'를 '3절의 겹 구조를 이 위키가 그린 도식은 주제 페이지에 있다.'로 고쳤다(주장·태그 변경 없음).
