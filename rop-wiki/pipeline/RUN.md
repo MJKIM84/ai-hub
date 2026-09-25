@@ -215,3 +215,5 @@ python3 pipeline/run_batch.py --plan runs/batches/plan.yaml --concurrency 5 [--p
 | `config/ops.yaml` | 알림·원격 배포·cron 스위치(모두 기본 꺼짐). `python3 pipeline/lib/notify.py --status` |
 
 배치 실행 규칙: 웹 도구 점검은 배치에서 한 번 하고 결과를 실행마다 복사한다. 에이전트 단계는 `--concurrency` 만큼 동시에, 퍼블리셔는 하나씩 부른다(`publish.py` 전역 잠금 `runs/.cache/publish.lock`). 같은 `group` 의 항목(같은 트랙)은 앞 항목이 게시된 뒤 시작한다. 한 항목이 `--max-attempts`(3)번 연속 보류·실패하면 보류로 기록하고 다음 항목으로 넘어간다.
+
+배치가 도는 동안 사람이 검사를 돌릴 때는 퍼블리셔 잠금을 공유 모드로 잡는다: `flock -s runs/.cache/publish.lock bash pipeline/checks/run_all.sh --no-build`. 잠금 없이 돌리면 퍼블리셔가 `mkdocs.yml`·docs 를 쓰는 중간 상태를 읽어 거짓 실패가 날 수 있다. 에이전트 입력 만들기(agent_runner)도 같은 공유 잠금 아래에서 위키를 읽는다(DECISIONS D-038).
