@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-586, ref-592, ref-593, ref-594, ref-595, ref-596, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-166, ref-181, ref-242, ref-167, ref-111, ref-236, ref-417, ref-180, ref-356, ref-674, ref-675, ref-676, ref-711, ref-678, ref-712, ref-680]
+sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-586, ref-592, ref-593, ref-594, ref-595, ref-596, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-166, ref-181, ref-242, ref-167, ref-111, ref-236, ref-417, ref-180, ref-356, ref-674, ref-675, ref-676, ref-711, ref-677, ref-712, ref-678]
 last_run: 2026-09-25
 version: 3
 ---
@@ -160,9 +160,9 @@ flowchart LR
 
 #### 반례: LLM 이 배정·재계획까지 맡는 구조
 
-- CoMuRoS(arXiv 2511.22354, 2025-11)는 작업 관리자 LLM 이 자연어 목표를 해석·분류하고 정적 규칙과 동적 맥락(작업·이력·로봇 상태·사건)으로 하위 작업을 배정하며, 로봇마다 로컬 LLM 이 기본 기술로 실행 코드를 구성하고, 작업 실패나 사용자 의도 변경이 재계획을 촉발하는 구조로, 정답률(correctness) 최대 0.91(22개 시나리오·54개 작업·약 20대 로봇 벤치마크, 저자 보고)을 보고했다(원문 미열람). [사실][^ref-678]
-- STRAP-LLM(Park·Kim, Intelligent Service Robotics)은 구조화 프롬프트로 LLM 이 이종 로봇의 작업 배정과 기술 계획을 로봇 실행 언어로 직접 생성하게 하는 틀로, 저자들은 새 로봇을 추가해도 실행 정확도가 높게 유지된다고 보고했다(저자 보고; 수치·비교 대상·저자 소속·게재 연도는 미확인, 원문 미열람). [사실][^ref-680]
-- 두 연구로 보면 LLM 배정이 배제되는 것은 아니지만, 평가가 실험실·텍스트 벤치마크 조건이고 결정적 배정기와 같은 조건에서 비교한 결과는 확인되지 않아, 아래 배치의 반박 근거로는 약한 것으로 보인다. [추정][^ref-678][^ref-680][^ref-674]
+- CoMuRoS(arXiv 2511.22354, 2025-11)는 작업 관리자 LLM 이 자연어 목표를 해석·분류하고 정적 규칙과 동적 맥락(작업·이력·로봇 상태·사건)으로 하위 작업을 배정하며, 로봇마다 로컬 LLM 이 기본 기술로 실행 코드를 구성하고, 작업 실패나 사용자 의도 변경이 재계획을 촉발하는 구조로, 정답률(correctness) 최대 0.91(22개 시나리오·54개 작업·약 20대 로봇 벤치마크, 저자 보고)을 보고했다(원문 미열람). [사실][^ref-677]
+- STRAP-LLM(Park·Kim, Intelligent Service Robotics)은 구조화 프롬프트로 LLM 이 이종 로봇의 작업 배정과 기술 계획을 로봇 실행 언어로 직접 생성하게 하는 틀로, 저자들은 새 로봇을 추가해도 실행 정확도가 높게 유지된다고 보고했다(저자 보고; 수치·비교 대상·저자 소속·게재 연도는 미확인, 원문 미열람). [사실][^ref-678]
+- 두 연구로 보면 LLM 배정이 배제되는 것은 아니지만, 평가가 실험실·텍스트 벤치마크 조건이고 결정적 배정기와 같은 조건에서 비교한 결과는 확인되지 않아, 아래 배치의 반박 근거로는 약한 것으로 보인다. [추정][^ref-677][^ref-678][^ref-674]
 
 #### 종합: 여섯 단계의 입력·출력과 결정적 구성 요소
 
@@ -197,7 +197,7 @@ flowchart LR
 
 - 확인한 신경-기호 구조들은 LLM 출력이 상태나 실행에 반영되기 직전마다 결정적 검사를 둔다(해석 뒤 슬롯 검사, 분해 뒤 계획기·기호 검사, 배치 전 안전 게이트·사람 검토, 진행 상태 반영 때 검증 뒤 원자적 반영). 이 가운데 SPCA 의 컴파일·시뮬레이션 검사는 추정 근거이고, 관리형 블랙보드에서 검증을 거치는 제안의 주체는 LLM 에 한정되지 않고 에이전트·휴리스틱·최적화 모듈이다. 그래서 ROP 에서도 검증 게이트를 단계 사이 경계에 두는 것이 선택지로 보인다. [추정][^ref-674][^ref-675][^ref-711][^ref-417][^ref-356][^ref-586]
 - 위 q3-01 소절에 인용한 분류 원문 13. 작업 배정 — MRTA 의 SCM 관점 질문과 관련해, 이 흐름에서 '누구에게 맡길지'는 능력 판정으로 거른 후보 가운데 입찰 비교·최적화의 목적 기준(가장 빨리 끝남, 가장 낮은 비용)으로 결정되고 LLM 은 그 목적 가중치를 지시에서 뽑아 넘기는 데 그치므로, 최근접 배정이 전체적으로 유리한지는 배정 단계에 둔 목적 기준에 따라 달라지는 것으로 보인다. [추정][^ref-376][^ref-236][^ref-377]
-- 이번에 확인한 처리 흐름 연구의 평가 환경은 산업용 로봇 셀(SDI), 조작·격자 시뮬레이션(SPCA), 산업용 다중 로봇 임무(관리형 블랙보드), 실험실 이종 로봇 팀(CoMuRoS)이었고, 이종 제조사 창고 플릿에서 LLM 해석부터 진행 관리까지의 흐름 전체를 평가한 자료와 국내 연구는 검색 범위에서 찾지 못했다(한국어 검색 포함, 부재의 확인은 아님). [추정][^ref-674][^ref-675][^ref-711][^ref-678]
+- 이번에 확인한 처리 흐름 연구의 평가 환경은 산업용 로봇 셀(SDI), 조작·격자 시뮬레이션(SPCA), 산업용 다중 로봇 임무(관리형 블랙보드), 실험실 이종 로봇 팀(CoMuRoS)이었고, 이종 제조사 창고 플릿에서 LLM 해석부터 진행 관리까지의 흐름 전체를 평가한 자료와 국내 연구는 검색 범위에서 찾지 못했다(한국어 검색 포함, 부재의 확인은 아님). [추정][^ref-674][^ref-675][^ref-711][^ref-677]
 
 #### 설명용 시나리오: 피킹 뒤 토트 운반 지시
 
@@ -317,9 +317,9 @@ flowchart LR
 [^ref-675]: Pesjak, D., & Žabkar, J., Robot Planning via LLM Proposals and Symbolic Verification, 2026, https://www.mdpi.com/2504-4990/8/1/22, 접근일 2026-09-25 (원문 미열람)
 [^ref-676]: Pesjak, D. (minigrid-crewai 공식 저장소), minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitHub README), 미확인, https://github.com/DrejcPesjak/minigrid-crewai, 접근일 2026-09-25
 [^ref-711]: Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems, 2026-06, https://arxiv.org/abs/2606.31339, 접근일 2026-09-25 (원문 미열람)
-[^ref-678]: CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재), LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning, 2025-11, https://arxiv.org/abs/2511.22354, 접근일 2026-09-25 (원문 미열람)
+[^ref-677]: CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재), LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning, 2025-11, https://arxiv.org/abs/2511.22354, 접근일 2026-09-25 (원문 미열람)
 [^ref-712]: robotmcp (ROS-MCP-Server 공식 저장소), ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README), 미확인, https://github.com/robotmcp/ros-mcp-server, 접근일 2026-09-25
-[^ref-680]: Park, J., & Kim, J. S.(소속 미확인), STRAP-LLM: structured task allocation and planning for heterogeneous robots using large language models, 미확인, https://link.springer.com/article/10.1007/s11370-025-00676-0, 접근일 2026-09-25 (원문 미열람)
+[^ref-678]: Park, J., & Kim, J. S.(소속 미확인), STRAP-LLM: structured task allocation and planning for heterogeneous robots using large language models, 미확인, https://link.springer.com/article/10.1007/s11370-025-00676-0, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

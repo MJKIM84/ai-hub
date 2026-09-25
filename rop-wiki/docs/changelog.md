@@ -32,6 +32,20 @@ version: 1
 | 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |
 | 2026-09-25-73 | 생성 | [docs/references/ref-712.md](references/ref-712.md) | 참고문헌 ref-712 등록: ros-mcp-server — Connect AI models like Claude & GPT with ro… |
+| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-02 답함(3절 {#q3-02} 소제목 신설: 여섯 단계 입력·출력, 결정적 구성 요소·검증 게이트·도구 노출 경계, 피킹 시나리오), 2·4·5·6·7·8·9절 갱신, 후속 질문 3건. 2차 수정: 절 밖 상태 줄을 고치려고 전체 페이지로 보냄 — 상태 줄 '답한 질문: 2건', 6절 전환 줄 질문 범위 q3-03~q3-12 |
+| 2026-09-25-71 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '처리 흐름과 핵심 구성 요소' 소절 신설(q3-02, 실행 2026-09-25-71), 절 안내 문장 갱신, 5절 각주 정의에 새 출처 추가·원문 미열람 표기 보완(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.6 → v0.7: 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교' 추가(f1, 상태 확정 유지), 1절 버전 설명 추가, 6절에 거부된 제안(실행 가능성 판정·검증 기록) 질문 2건 추가. 2차 수정: 절 밖 H1 을 고치려고 전체 페이지로 보냄 — H1 '(v0.7)' |
+| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 살아있는 산출물: 초안 현재 버전 v0.7(v0.6·v0.7 내역), 아이디어 2 5절 작성 현황 갱신. H1 아래 트랙 상태 줄의 현재 단계는 2차 검증 참고대로 config 의 current_stage(단계 1)와 맞춰 두고 바꾸지 않음(공식 현재 단계는 사용자 결정 사항) |
+| 2026-09-25-71 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-02 답함(처리 흐름 여섯 단계의 입력·출력과 결정적 구성 요소·검증 게이트 배치, 신뢰도 low), 업무 분해·배정 설계 초안 v0.6 → v0.7(배정 산출 방식 '입찰 비교'), 후속 질문 3건, 1차 수정 지시 15건·2차 수정 지시 3건 이행 |
+| 2026-09-25-71 | 생성 | [docs/references/ref-674.md](references/ref-674.md) | 참고문헌 ref-674 등록: Agentic Neuro-Symbolic Planning and Commissioning for Human-… |
+| 2026-09-25-71 | 생성 | [docs/references/ref-675.md](references/ref-675.md) | 참고문헌 ref-675 등록: Robot Planning via LLM Proposals and Symbolic Verification |
+| 2026-09-25-71 | 생성 | [docs/references/ref-676.md](references/ref-676.md) | 참고문헌 ref-676 등록: minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitH… |
+| 2026-09-25-71 | 생성 | [docs/references/ref-677.md](references/ref-677.md) | 참고문헌 ref-677 등록: LLM-Based Generalizable Hierarchical Task Planning and Execu… |
+| 2026-09-25-71 | 생성 | [docs/references/ref-678.md](references/ref-678.md) | 참고문헌 ref-678 등록: STRAP-LLM: structured task allocation and planning for heter… |
+| 2026-09-25-71 | 생성 | [docs/glossary/model-context-protocol.md](glossary/model-context-protocol.md) | 용어집 항목 모델 컨텍스트 프로토콜 |
+| 2026-09-25-71 | 생성 | [docs/glossary/neuro-symbolic-ai.md](glossary/neuro-symbolic-ai.md) | 용어집 항목 신경-기호 AI |
+| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 q3-04 소절 신설), 2절 질문 목록 갱신과 q3-11 추가, 4·5·7절 추가, 6절 시뮬레이션 초기값 행 충족·전환 미승인, 8절 출처 추가, 9절 이력 행 추가 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.8 → v0.9: 층 '높이 기준'에 층 고도 값 후보 병기, 문 '여닫는 방식' 값 후보(Open-RMF 문 유형)와 '동작 범위' 속성 추가, 엘리베이터 '칸 치수' 속성 추가, 6절 질문 3건 추가, H1 버전 표기(v0.7) 오류를 v0.9로 수정 |
 | 2026-09-25-70 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 '핵심 구성 요소'에 '시뮬레이션 초기값' 소절 신설(설계·도입 검토용과 운영 중 예측용 초기화 구분), '아직 조사되지 않은 구성 요소'에서 q3-04 제거, 새 각주 3건 |

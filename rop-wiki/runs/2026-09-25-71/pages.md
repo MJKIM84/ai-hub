@@ -20,7 +20,7 @@
 
 | 동작 | 용어(한글) | 용어(영문) | 한 줄 정의 | 관련 영역 | 출처 |
 |---|---|---|---|---|---|
-| new | 모델 컨텍스트 프로토콜 | Model Context Protocol (MCP) | LLM 이 외부 시스템의 상태를 조회하고 정해진 도구로 동작을 수행하도록 도구·자원을 구조화해 노출하는 개방형 연결 규약이다. | 27, 26, 18 | ref-679 |
+| new | 모델 컨텍스트 프로토콜 | Model Context Protocol (MCP) | LLM 이 외부 시스템의 상태를 조회하고 정해진 도구로 동작을 수행하도록 도구·자원을 구조화해 노출하는 개방형 연결 규약이다. | 27, 26, 18 | ref-712 |
 | new | 신경-기호 AI | Neuro-symbolic AI | LLM 같은 신경망 모델의 유연한 해석·생성과 계획기·검증기 같은 기호적(규칙·논리 기반) 구성 요소의 결정적 검사를 결합하는 AI 구성 방식이다. | 27, 13 | ref-674, ref-586 |
 
 ## 참고문헌 갱신
@@ -30,9 +30,9 @@
 | ref-674 | Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH) | Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins | 논문 | medium | https://arxiv.org/abs/2606.08214 |
 | ref-675 | Pesjak, D., & Žabkar, J. | Robot Planning via LLM Proposals and Symbolic Verification | 논문 | medium | https://www.mdpi.com/2504-4990/8/1/22 |
 | ref-676 | Pesjak, D. (minigrid-crewai 공식 저장소) | minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitHub README) | 오픈소스 문서 | medium | https://github.com/DrejcPesjak/minigrid-crewai |
-| ref-677 | Tang, G. 외(arXiv 2606.31339) | Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems | 논문 | medium | https://arxiv.org/abs/2606.31339 |
+| ref-711 | Tang, G. 외(arXiv 2606.31339) | Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems | 논문 | medium | https://arxiv.org/abs/2606.31339 |
 | ref-678 | CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재) | LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning | 논문 | medium | https://arxiv.org/abs/2511.22354 |
-| ref-679 | robotmcp (ROS-MCP-Server 공식 저장소) | ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README) | 오픈소스 문서 | medium | https://github.com/robotmcp/ros-mcp-server |
+| ref-712 | robotmcp (ROS-MCP-Server 공식 저장소) | ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README) | 오픈소스 문서 | medium | https://github.com/robotmcp/ros-mcp-server |
 | ref-680 | Park, J., & Kim, J. S.(소속 미확인) | STRAP-LLM: structured task allocation and planning for heterogeneous robots using large language models | 논문 | medium | https://link.springer.com/article/10.1007/s11370-025-00676-0 |
 | ref-376 | Open Robotics | Tasks in RMF (task) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | medium | https://osrf.github.io/ros2multirobotbook/task.html |
 | ref-236 | Electronics(MDPI) 게재 논문(저자 미확인) | Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation | 논문 | medium | https://doi.org/10.3390/electronics15163562 |
@@ -88,10 +88,10 @@
 - 검증 기록 추가 거부 — 초안 2절에 넣지 않고 6절에 질문으로 두고, 배정 속성 '확인 여부'·사용자 확인 질문(q4-01·q4-04)과 겹쳐 경계가 정해지지 않았고 근거가 원문 미열람·추정이라는 사유를 적었다.
 - q3-02 답함 — 단계 3 페이지 2절에서 q3-02 를 답함(답한 실행 2026-09-25-71, 답 위치 #q3-02)으로 바꾸고 3절에 '### q3-02 … {#q3-02}' 소제목을 두었으며, 3절 첫 단락과 4절 결론에 신뢰도 low 와 이 위키의 종합(f17·f18 추정)임을 적었다.
 - 새 질문 3건 등록 — q3-12(f4)에 '(관련: oq-053)', q4-09(f20)에 '(관련: q4-03)'을 병기하고 q5-07(f7)과 함께 5절 표와 backlog_updates 에 냈다.
-- 원문 미열람 표기 — 단계 3 페이지 8절을 다시 써서 ref-377, ref-404, ref-111, ref-236, ref-166, ref-417, ref-180, ref-356, ref-586, ref-674, ref-675, ref-677, ref-678, ref-680 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 ref-376·ref-676·ref-679 는 표기하지 않았다. 아이디어 2 5절의 ref-404·ref-377 정의에도 붙였고, reference_updates 의 ref-674·675·677·678·680 에 source_unopened: true 를 넣었다. 패치하지 않은 절(아이디어 2 3절의 ref-356, 7절 뒤의 ref-111, 초안 7절 뒤 각주)의 기존 정의는 이번 패치 범위 밖이라 손대지 않았다.
+- 원문 미열람 표기 — 단계 3 페이지 8절을 다시 써서 ref-377, ref-404, ref-111, ref-236, ref-166, ref-417, ref-180, ref-356, ref-586, ref-674, ref-675, ref-711, ref-678, ref-680 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 ref-376·ref-676·ref-712 는 표기하지 않았다. 아이디어 2 5절의 ref-404·ref-377 정의에도 붙였고, reference_updates 의 ref-674·675·677·678·680 에 source_unopened: true 를 넣었다. 패치하지 않은 절(아이디어 2 3절의 ref-356, 7절 뒤의 ref-111, 초안 7절 뒤 각주)의 기존 정의는 이번 패치 범위 밖이라 손대지 않았다.
 - 26. 사이버보안·접근권한·개인정보 반영 제안 — area_reflection_proposals 에서 로봇 토픽·액션 직접 제어는 분류 원문 9장 '로봇 자체 지능·제어' 경계의 연계 대상으로 짧게 두고, ROP 가 상위 도구만 노출해야 한다는 판단은 [추정]으로만 적었다. 단계 3 페이지·아이디어 2 5절 본문도 같게 썼다.
 - 완료 조건 표 — 단계 3 페이지 6절에서 아이디어 2 5절 행을 처리 흐름은 실렸으나 다른 아이디어와의 연결이 없어 '미충족 · 미승인'으로 두고, 표 아래 줄을 '다음 단계로 전환: 아니오(실험 계획 없음, 열린 질문 q3-03~q3-11)'로 썼다.
-- docs/tracks/nl-task-chatbot/task-model-draft.md: 각주 정의 4개를 참고문헌에서 만들어 붙임: ref-236, ref-376, ref-674, ref-677
+- docs/tracks/nl-task-chatbot/task-model-draft.md: 각주 정의 4개를 참고문헌에서 만들어 붙임: ref-236, ref-376, ref-674, ref-711
 - 2차: 단계 3 페이지 상태 줄 — 절 밖 줄이라 페이지 전체를 content 로 보내며 H1 아래 상태 줄의 '답한 질문: 1건'을 '답한 질문: 2건'으로 고쳤다(열린 질문 10건은 그대로).
 - 2차: 초안 H1 — 페이지 전체를 content 로 보내며 H1 을 '업무 분해·배정 설계 초안 (v0.7)'로 고쳐 프런트매터 ontology_version '0.7'·track_updates.ontology_draft_version '0.7'과 맞췄다(auto:page-status 마커 사이는 퍼블리셔 영역이라 손대지 않음).
 - 2차: 단계 3 페이지 6절 전환 줄 — '다음 단계로 전환: 아니오(아이디어 2 5절 다른 아이디어와의 연결 없음, 실험 계획 없음, 열린 질문 q3-03~q3-12)'로 고쳤고, log_entry 의 완료 조건 평가와 같은 범위(q3-03~q3-12)로 맞췄다.
@@ -117,7 +117,7 @@
 | 세부영역 번호 | 절 | 요약 |
 |---|---|---|
 | 13 | 6. 대표 접근법과 기술 | 트랙 자연어 업무 지시 챗봇 단계 3(실행 2026-09-25-71): 온톨로지 기반 실행 가능성 판정 결과를 배정기에 묶이지 않는 ReasonerOutput 으로 넘기는 방법(Electronics 2026, ref-236, 원문 미열람), Open-RMF 입찰 비교가 배정 단계에 놓이는 위치(ref-376), LiP-LLM 처럼 LLM 이 분해하고 선형계획이 배정하는 분담(ref-166), 지시 해석–능력 판정–결정적 배정 흐름과 분류 원문 SCM 질문의 연결은 목적 기준에 달렸다는 판단([추정]). 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에 연결한다. |
-| 27 | 6. 대표 접근법과 기술 | 트랙 단계 3(실행 2026-09-25-71): 신경-기호 구조 — SDI(LLM 은 언어 이해만, 검증·순서·실행은 결정적, ref-674), SPCA(Plan 단계 PDDL·LLM·하이브리드 수용, 하이브리드 파이프라인은 [추정], ref-675·ref-676), 관리형 블랙보드(에이전트·휴리스틱·최적화 모듈 제안을 결정적 검증·원자적 반영으로만 수용, ref-677), LLM 출력 반영 직전 단계 경계마다 검증 게이트를 두는 배치([추정]). 적용 대상 13. 작업 배정 — MRTA 와 함께 연결한다. |
+| 27 | 6. 대표 접근법과 기술 | 트랙 단계 3(실행 2026-09-25-71): 신경-기호 구조 — SDI(LLM 은 언어 이해만, 검증·순서·실행은 결정적, ref-674), SPCA(Plan 단계 PDDL·LLM·하이브리드 수용, 하이브리드 파이프라인은 [추정], ref-675·ref-676), 관리형 블랙보드(에이전트·휴리스틱·최적화 모듈 제안을 결정적 검증·원자적 반영으로만 수용, ref-711), LLM 출력 반영 직전 단계 경계마다 검증 게이트를 두는 배치([추정]). 적용 대상 13. 작업 배정 — MRTA 와 함께 연결한다. |
 | 27 | 8. 대표 연구와 자료 | SDI 기호 검증기 절제 실험: 검증기를 같은 방식으로 프롬프트한 LLM 으로 바꾸면 성공률 98.1%→3.8%(그룹 A–D 52개 명령 부분집합, 저자 보고값, 독립 재현 미확인, 원문 미열람, ref-674). |
-| 26 | 6. 대표 접근법과 기술 | LLM 에 로봇을 도구로 노출하는 방식: ROS-MCP-Server 는 rosbridge 로 토픽·서비스·액션·파라미터를 MCP 도구로 노출하고 README 에 현재 권한 장치 설명이 없다(ref-679, 확인일 2026-09-25), 국내 KETI 연구는 LangChain 도구를 ROS 2 인터페이스로 정의했다(ref-180). 로봇 토픽·액션 직접 제어는 분류 원문 9장 '로봇 자체 지능·제어' 경계의 연계 대상이며, ROP 는 검증 파이프라인으로 들어가는 상위 도구만 노출해야 할 것으로 보인다는 판단은 [추정]으로만 둔다. |
+| 26 | 6. 대표 접근법과 기술 | LLM 에 로봇을 도구로 노출하는 방식: ROS-MCP-Server 는 rosbridge 로 토픽·서비스·액션·파라미터를 MCP 도구로 노출하고 README 에 현재 권한 장치 설명이 없다(ref-712, 확인일 2026-09-25), 국내 KETI 연구는 LangChain 도구를 ROS 2 인터페이스로 정의했다(ref-180). 로봇 토픽·액션 직접 제어는 분류 원문 9장 '로봇 자체 지능·제어' 경계의 연계 대상이며, ROP 는 검증 파이프라인으로 들어가는 상위 도구만 노출해야 할 것으로 보인다는 판단은 [추정]으로만 둔다. |
 | 5 | 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) | 온톨로지 기반 실행 가능성 판정(다축 능력 조건·적재 상태 도달 가능성) 결과를 배정기 독립 출력(ReasonerOutput)으로 13. 작업 배정 — MRTA 에 넘기는 연결(Electronics 2026, ref-236, 원문 미열람). |
