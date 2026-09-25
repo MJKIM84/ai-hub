@@ -28,6 +28,26 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 {#q5-02} 소제목 신설: 네 층 가상 시험 구성·한계), 후속 질문 q5-13~q5-15, 2·4·5·6·8·9절 갱신, 7절에 22. 시뮬레이션·예측용 디지털 트윈 추가. 2차: 단계 상태 줄을 열린 질문 12건·답한 질문 2건으로 고치고 SafeAgentBench 10% 출처 문장을 README·초록으로 나눠 고침(상태 줄 때문에 전체 content 로 보냄) |
+| 2026-09-25-99 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절에 '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절 신설(네 층 구성 표·Mermaid 도식, f18~f21 추정, 근거 f1·f2·f4·f7(강등)·f8·f9·f10·f15), 새 각주 11건(2차 재실행에서 변경 없음) |
+| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 2차: '6. 살아있는 산출물 링크' 절만 갱신 — 아이디어 2 항목에 q5-02 답(검증 절차 소절) 반영과 실행 2026-09-25-99 의 지정 질문 처리 서술 추가, 초안 변경 없음 실행 목록에 2026-09-25-99 추가(현재 단계 표기·상태 줄은 그대로) |
+| 2026-09-25-99 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-02 답함(가상 현장·가상 로봇 네 층 시험 구성과 한계, 추정 중심), 아이디어 2 6절 검증 절차 소절 신설, 트랙 개요 6절 갱신, 후속 질문 3건 |
+| 2026-09-25-99 | 생성 | [docs/references/ref-738.md](references/ref-738.md) | 참고문헌 ref-738 등록: τ-bench: A Benchmark for Tool-Agent-User Interaction in Real… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-739.md](references/ref-739.md) | 참고문헌 ref-739 등록: tau-bench — README |
+| 2026-09-25-99 | 생성 | [docs/references/ref-740.md](references/ref-740.md) | 참고문헌 ref-740 등록: Lost in Simulation: LLM-Simulated Users are Unreliable Proxi… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-741.md](references/ref-741.md) | 참고문헌 ref-741 등록: The Reality Gap in Robotics: Challenges, Solutions, and Best… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-742.md](references/ref-742.md) | 참고문헌 ref-742 등록: vda-5050-lib.js — Universal VDA 5050 library for Node.js and… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-743.md](references/ref-743.md) | 참고문헌 ref-743 등록: Vision Language Model-based Testing of Industrial Autonomous… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-744.md](references/ref-744.md) | 참고문헌 ref-744 등록: SafeAgentBench: A Benchmark for Safe Task Planning of Embodi… |
+| 2026-09-25-99 | 생성 | [docs/references/ref-745.md](references/ref-745.md) | 참고문헌 ref-745 등록: SafeAgentBench — README |
+| 2026-09-25-99 | 생성 | [docs/references/ref-746.md](references/ref-746.md) | 참고문헌 ref-746 등록: Non-Determinism of "Deterministic" LLM Settings |
+| 2026-09-25-99 | 생성 | [docs/references/ref-747.md](references/ref-747.md) | 참고문헌 ref-747 등록: 다임리서치, 가상검증 기술로 물류자동화 실현 |
+| 2026-09-25-99 | 생성 | [docs/glossary/user-simulator.md](glossary/user-simulator.md) | 용어집 항목 사용자 시뮬레이터 |
+| 2026-09-25-99 | 생성 | [docs/glossary/pass-k.md](glossary/pass-k.md) | 용어집 항목 pass^k 지표 |
+| 2026-09-25-99 | 생성 | [docs/glossary/reality-gap.md](glossary/reality-gap.md) | 용어집 항목 현실 격차 |
+| 2026-09-25-99 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-01 답함(네 층 평가 지표, 3절 신설), 2절에 단계 5 백로그 질문 반영(q5-06 폐기 제외)·새 질문 q5-11·q5-12, 4·5·6·8·9절 갱신, 상태 줄 진행 중. 시드 단계 페이지라 상태 줄(H1 아래)까지 고치려고 전체 content 로 보냄 |
 | 2026-09-25-98 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절 '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절 신설(네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행, 모두 추정), 새 출처 각주 추가 |
 | 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 초안 v0.8 유지(실행 2026-09-25-98 변경 없음), 아이디어 2 링크 설명에 CLI 지정 질문으로 단계 5 q5-01 을 다뤘음과 현재 단계 3 유지를 적음. 상태 줄은 입력 그대로(현재 단계 3, 마지막 트랙 실행 2026-09-25) |

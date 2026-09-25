@@ -758,4 +758,14 @@ version: 1
 | [ref-735](ref-735.md) | Aakriti05 (RTAW 공식 저장소) | RTAW-Centralised-multi-robot-task-allocation — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation> |
 | [ref-736](ref-736.md) | Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267) | The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models | 2025 | 논문 | medium | 2026-09-25 | <https://proceedings.mlr.press/v267/patil25a.html> |
 | [ref-737](ref-737.md) | ShishirPatil (gorilla GitHub) | berkeley-function-call-leaderboard — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard> |
+| [ref-738](ref-738.md) | Yao, S. 외(Sierra, τ-bench 저자) | τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains | 2024-06 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2406.12045> |
+| [ref-739](ref-739.md) | sierra-research (tau-bench GitHub) | tau-bench — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/sierra-research/tau-bench> |
+| [ref-740](ref-740.md) | Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인) | Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations | 2026-01 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2601.17087> |
+| [ref-741](ref-741.md) | Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington) | The Reality Gap in Robotics: Challenges, Solutions, and Best Practices | 2025-10 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2510.20808> |
+| [ref-742](ref-742.md) | coatyio (vda-5050-lib.js GitHub) | vda-5050-lib.js — Universal VDA 5050 library for Node.js and browsers (README) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/coatyio/vda-5050-lib.js> |
+| [ref-743](ref-743.md) | Wu, J., Lu, C., Arrieta, A., & Ali, S. 외(Simula Research Laboratory·Mondragon University·PAL Robotics) | Vision Language Model-based Testing of Industrial Autonomous Mobile Robots | 2025-08 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2508.02338> |
+| [ref-744](ref-744.md) | Yin, S. 외(SafeAgentBench 저자) | SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents | 2024-12 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2412.13178> |
+| [ref-745](ref-745.md) | shengyin1224 (SafeAgentBench 공식 저장소) | SafeAgentBench — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/shengyin1224/SafeAgentBench> |
+| [ref-746](ref-746.md) | Atil, B. 외 | Non-Determinism of "Deterministic" LLM Settings | 2024-08 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2408.04667> |
+| [ref-747](ref-747.md) | 인더스트리뉴스 | 다임리서치, 가상검증 기술로 물류자동화 실현 | 미확인 | 기사 | low | 2026-09-25 | <https://www.industrynews.co.kr/news/articleView.html?idxno=56677> |
 <!-- auto:references-index:end -->

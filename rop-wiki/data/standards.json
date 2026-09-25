@@ -2674,6 +2674,65 @@
       "ref_id": "ref-729",
       "run_id": "2026-09-25-80",
       "date": "2026-09-25"
+    },
+    {
+      "name": "vda5050-sim (VDA 5050 가상 로봇 플릿 시뮬레이터)",
+      "org": "gpue (vda5050-sim GitHub, 개인 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        22,
+        9
+      ],
+      "url": "https://github.com/gpue/vda5050-sim",
+      "summary": "README 가 VDA 5050 3.0.0 준수를 표명하는 가상 로봇 플릿을 MQTT·NATS 로 띄우고 로봇별 확률로 연결 끊김·오류·비상정지 등을 주입한다. 이동은 노드 사이 직선 운동학뿐이며 적합성 시험 결과는 미확인이다.",
+      "ref_id": "ref-407",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "vda-5050-lib.js (가상 AGV 어댑터 포함 VDA 5050 라이브러리)",
+      "org": "coatyio",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        9
+      ],
+      "url": "https://github.com/coatyio/vda-5050-lib.js",
+      "summary": "간선을 따라 주행하고 기본 동작을 수행하는 가상 AGV 어댑터를 시뮬레이션·통합 시험·목업 용도로 제공한다.",
+      "ref_id": "ref-742",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "τ-bench (도구–에이전트–사용자 상호작용 벤치마크)",
+      "org": "sierra-research",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23,
+        27,
+        18
+      ],
+      "url": "https://github.com/sierra-research/tau-bench",
+      "summary": "LLM 모의 사용자와 에이전트의 대화 끝 데이터베이스 상태를 목표 상태와 비교해 채점하고 pass^k 로 일관성을 잰다(항공·소매 도메인).",
+      "ref_id": "ref-739",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SafeAgentBench (LLM 체화 에이전트 안전 계획 벤치마크)",
+      "org": "SafeAgentBench 저자(shengyin1224 공식 저장소)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23,
+        25,
+        27
+      ],
+      "url": "https://github.com/shengyin1224/SafeAgentBench",
+      "summary": "AI2-THOR 에서 10가지 위험 유형 750개 과제로 실행 기반·의미 기반 두 관점의 안전 계획을 평가한다(가정 환경).",
+      "ref_id": "ref-745",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
     }
   ]
 }

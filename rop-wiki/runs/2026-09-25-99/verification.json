@@ -1,0 +1,274 @@
+{
+  "run_id": "2026-09-25-99",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증에서 raw.githubusercontent.com 의 ros2multirobotbook src/simulation.md 를 다시 열었다. 시뮬레이션을 대규모 로봇 시스템 평가의 비용·시간 절감 대안으로 적은 문장, Gazebo·Ignition, 문·다층 승강기(building_map_generator), TeleportDispenser·TeleportIngestor 워크셀, 선택 기능 CrowdSim 이 모두 있다. 단일 출처(공식 도서 원본). 발행일 미확인, 확인일 2026-09-25."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 같은 원문에 slotcar 가 정적 장애물이 없다고 가정하고, 계산 부담을 줄이려 센서 기반 주행을 피하며, 로봇 주행이 아니라 이종 플릿의 교통 관리에 초점을 둔다는 문구가 있다. '로봇 쪽 주행·회피 성능을 재지 않는다'는 이 문구에서 바로 따라 나오는 서술로 본다. 단일 출처."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf_demos README(raw)를 열었다. 월드는 Hotel·Office·Airport Terminal·Clinic·Campus·Manufacturing & Logistics 여섯 개다. 브리프의 '병원'은 README 의 Clinic World(2층 클리닉)다. 창고 전용 월드는 README 에 없고, dispatch_patrol·dispatch_delivery·dispatch_clean 스크립트와 rmf-web 대시보드가 확인된다. Manufacturing & Logistics 월드는 ROS-Industrial Asia Pacific 이 만든 컨베이어·고정 매니퓰레이터 워크셀·여러 AMR 플릿 월드다. 월드 이름 표기만 고치면 된다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: vda5050-sim README(raw)를 열었다. 'standards-compliant VDA5050 (v3.0.0)', MQTT·NATS 실행, 혼합 프로토콜 판 플릿, VDA5050 적합 관제면 무엇이든 구동, 로봇별 fault_profile(connection_drop·error_injection·field_violation·service_mode·emergency_stop 확률), '노드 사이 직선 이동, NURBS 궤적 추종 없음'이 모두 적혀 있다. 다만 3.0.0 준수는 저장소가 스스로 밝힌 것이다. 적합성 시험 결과는 확인되지 않는다. README 에는 작성자·소속이 없고 저장소 소유자 gpue 는 URL 에서만 알 수 있다(개인 저장소)."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: vda-5050-lib.js README(raw) 에 가상 AGV 어댑터가 간선을 따라 자율 주행하고 기본 동작 집합을 가지며, 시뮬레이션·통합 시험·실제 AGV 가 없거나 목업이 필요한 환경에 쓰인다고 적혀 있다. 단일 출처, 발행일 미확인."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 텍스트(data/source_texts/ref-031.txt) 4장에 무선망 통신에서 연결 실패와 메시지 손실을 고려한다는 전제가 있다. 4.1절은 order·instantActions·state·factsheet·zoneSet·responses·visualization 에 QoS 0, connection 에 QoS 1 을 규정한다. 브리프의 ref-031 출처 항목은 fetched_via 가 github_raw 인데 fetch_url 이 null 이고 summary 는 입력 원문 텍스트로 확인했다고 적는다. 실제 열람 경로는 inbox 로 본다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 일부 불일치. ARIAC challenges.rst(raw)를 검증에서 다시 열었다. 컨베이어 고장, 전압 시험기 고장, 고우선순위 주문은 START_TIME 으로 시작하지만 진공 도구(그리퍼) 고장은 GRASP_OCCURRENCE(잡기 시도 횟수)로 발생한다. 네 과제를 모두 시작 시각 파라미터로 미리 설정한다는 일반화는 원문과 다르다. 현재 문서는 ARIAC 2025 제조 키팅 조건이다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-738 은 원문 미열람이며 검증 검색 결과(arXiv 2406.12045 초록)로 확인했다. LM 이 모사한 사용자와 도메인 API·정책을 가진 에이전트의 대화, 대화 끝 데이터베이스 상태와 주석된 목표 상태의 비교, pass^k 제안, gpt-4o 성공 50% 미만·소매 pass^8 25% 미만(저자 보고)이 초록과 맞는다. ref-739 README(raw)에서 모의 사용자 전략(llm·react·verify·reflection)과 Pass^1~4, 자동 오류 식별이 LLM 을 써서 부정확할 수 있다는 경고를 확인했다. 두 자료는 같은 저자라 독립 교차가 아니다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. arXiv 2601.17087 초록에 τ-Bench 소매 과제, 미국·인도·케냐·나이지리아 참가자, 사용자 LLM 에 따른 성공률 최대 9%p 변동, 어려운 과제 과소평가·중간 난이도 과대평가, AAVE 사용자의 더 나쁜 성공률·보정 오차가 있다(저자 보고). 게재처는 ICLR 2026 과 ACL 2026(ACL Anthology 2026.acl-long.2192) 항목이 모두 검색되어 확정하지 못했다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. arXiv 2510.20808 과 Annual Reviews 게재 항목(Annual Review of Control, Robotics, and Autonomous Systems, 2026)이 확인된다. 추상화·근사로 생기는 현실 격차와 도메인 무작위화·real-to-sim·상태·행동 추상화·sim-real 공동 학습 대응이 초록과 맞는다. 저자 Aljalbout 외(NVIDIA 등). 권(9권) 표기는 검색 요약에서 확인되지 않았다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: SafeAgentBench README(raw)에 750개 과제·10가지 잠재 위험·3개 과제 유형, 17개 상위 동작, AI2-THOR 저수준 제어기, 실행·의미 두 관점 평가가 있다. 논문 초록 검색 결과도 같은 구성을 적는다. 같은 저자 자료라 독립 교차가 아니다. 가정 환경 조건."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README(raw)에 '가장 나은 기준 에이전트가 안전 과제 성공률 69%, 위험 과제 거부율은 5%'라는 문구가 있다(저자 보고). 검증 검색 결과 논문 초록에도 같은 69%·5% 문장이 있다. f13 의 10% 는 다른 지표로 확인되어 출처 충돌이 아니다(f13 메모)."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. 논문 초록은 '가장 안전 의식이 높은 기준 에이전트도 세부(detailed) 위험 과제 거부율 10%'와 '가장 나은 기준 에이전트의 위험 과제 거부율 5%'를 함께 적는다. 두 값은 기준 에이전트와 과제 범주가 다른 별개 지표이고, 판 차이나 출처 충돌이 아니다. 브리프의 '판 차이로 보이나 미확인' 해석과 '출처 충돌' 열린 질문은 성립하지 않는다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. Simula 페이지·arXiv 2508.02338 요약에 PAL Robotics 와 함께 개발, 실제 AMR·사람 시험의 비용·위험, VLM 으로 기능·안전 요구를 어기는 사람 행동 생성, 시뮬레이터 평가가 있다. 기준 방법 대비 우위는 저자 보고다. 로봇 주행·사람 상호작용 시험이라 분류 원문 9장의 로봇 자체 지능·제어 쪽이며, 방법 사례로만 쓴다(브리프 표기 적절)."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. 결정적 설정 LLM 5종, 8개 과제, 10회 실행, 정확도 변동 최대 15%, 최선–최악 격차 최대 70%, 어느 LLM 도 일관된 출력·정확도를 내지 못함(저자 보고). 이후 Eval4NLP 2025 에 제목을 바꿔 게재된 판이 검색된다('... in Hosted Environments')."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색에서 영문 arXiv 초록(2604.05427)으로 230개 벤치마크 과제, AI2-THOR 시뮬레이션 시나리오 30개, 실제 로봇 실험 평가를 확인했다. 브리프가 근거로 든 '한국어 번역 페이지 요약'보다 강한 근거다. 실기 시험 규모는 미확인. 기존 참고문헌 ref-417 재사용."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. 인더스트리뉴스 기사(idxno=56677)가 실재하고, FA저널·회사 게시물에도 같은 제목 기사가 있다. Unity 기반 xDT 가 군집 운반 로봇 인프라를 가상 모사하고 xMS 관제와 함께 쓰인다는 서술이 검색 요약과 맞는다. 회사 게시물과 기사는 같은 원천이라 독립이 아니다. 벤더 주장·추정 표시와 vendor_claim: true 가 적절하다. 기사 발행일 미확인."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 네 층 가상 시험 구성은 이 위키의 종합이고 한 번에 제시한 출처는 없다. 인용 출처는 모두 실재한다. 다만 교란 층의 '시작 시각을 정한 고장' 근거인 ARIAC 은 진공 도구 고장이 잡기 횟수로 발생하므로(f7), '시작 시각 또는 발생 조건을 정한 교란'으로 쓴다. ref-746 은 반복 층의 근거, ref-111 은 기록 원천 근거로만 쓴다(원문 미열람)."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. f2·f4 의 확인된 한계(장애물 없는 경로, 직선 운동학)에서 도출한 경계 판단이다. 로봇 쪽 주행·회피·파지를 '연계 대상:'으로 분리해 분류 원문 9장 경계를 지킨다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. f9·f15 의 저자 보고를 근거로 한 이 위키의 추론이다. 근거 조건이 소매 고객 대화·일반 NLP 과제이고 물류 관리자 지시는 미확인이라는 한계를 명시했다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 방향은 SafeAgentBench 초록·README 의 낮은 거부율과 RVSG 의 가상 시험 동기에서 도출했다. 5%·10% 는 충돌이 아니라 다른 지표이므로(f13), '출처 충돌이라 수치를 쓰지 않는다'는 전제를 고친다. 수치를 쓰면 두 값을 각각의 조건과 함께 쓴다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 분류 원문 7장의 구분(8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험)을 맞게 적용했다. 시험 결과를 현재 상태에 반영하지 않도록 분리하는 서술도 원문 구분과 맞는다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 분류 원문 SCM 질문과 연결되며, 창고 전용 데모 월드가 README 에 없다는 점(f3)은 확인했다. 창고 조건 실측 비교 부재는 기존 oq-052 와 같은 방향이다. ref-623 은 원문 미열람(재사용)."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 수치 없는 설명용 가정 사례이며 피킹 / 예외·성과 흐름 표기가 적절하다. 본문에서 가상 사례임을 밝힌다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 검색 범위 관찰(한국어 2회 포함 17회)이며 부재의 확인이 아니라고 명시했다. 검증 검색에서도 국내 자료는 다임리서치 기사·회사 게시물뿐이었다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f23: 창고 조건에서 최근접 배정과 전역 최적화 배정을 같은 조건으로 실측한 자료가 없다는 관찰은 기존 열린 질문 oq-052 와 같다. 새 질문으로 올리지 말고 oq-052 에 연결한다.",
+      "f23 의 분류 원문 질문 비교 설계는 단계 5 페이지 q5-01 답의 '분류 원문 질문과의 연결' 서술(ref-623·ref-400·ref-592)과 겹친다. 반복 서술 없이 q5-01 로 연결하고, 가상 현장에서 같은 지시 흐름·교란을 재생한다는 점만 더한다.",
+      "f16(SafeGate, ref-417)은 아이디어 2 5절 '처리 흐름과 핵심 구성 요소'가 이미 ref-417 로 다룬 SafeGate 게이트의 평가 구성 추가 정보다. 기존 각주를 재사용한다.",
+      "open_questions_new 둘째 항목(국내 디지털 트윈 사전 검증 대 시운전 비교)은 기존 oq-094(Open-RMF 시뮬레이션 검증 결과를 시운전 합격 기준으로 쓰는 문제)와 인접하다. 등록할 때 '관련 기존 질문: oq-094'를 병기한다.",
+      "ref-528(ARIAC challenges 페이지)은 ref-008(NIST ARIAC 문서 첫 페이지)과 같은 문서 사이트의 다른 페이지다. URL 이 달라 별도 id 로 두되 각주 기관 표기를 NIST 로 맞춘다.",
+      "새 질문 셋은 백로그의 q5-04(평가 자료 정답 형식), q5-10(승인 피로 실험)과 인접하지만 다른 질문이다(중복 아님)."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f7: [사실] → [추정]으로 강등하고 문장을 고친다. 'ARIAC 문서(2025 판 기준)는 컨베이어 고장·전압 시험기 고장·고우선순위 주문을 시작 시각(START_TIME)으로, 진공 도구 고장을 잡기 시도 횟수(GRASP_OCCURRENCE)로 발생시키는 민첩성 과제로 둔다'로 쓴다. 검증에서 원문 challenges.rst 를 열어 보니 진공 도구 고장은 시각 기반이 아니었다.",
+    "f18·f24: 교란 층 서술의 '시작 시각을 정한 고장 … 주입'을 '시작 시각 또는 발생 조건을 정한 교란 주입'으로 고친다. f7 교정과 맞추기 위해서다. 교란 주입을 부를 때는 용어집 항목 [장애 주입](../../glossary/fault-injection.md)(Fault Injection)을 첫 등장 시 링크한다.",
+    "f3: 월드 목록의 '병원'을 README 표기대로 '클리닉(Clinic World)'으로 고친다. rmf_demos README 의 월드 이름이 Clinic 이기 때문이다.",
+    "f4: 'VDA 5050 3.0.0 을 따르는'을 'README 가 VDA 5050 3.0.0 준수를 표명하는(저장소 자기 표명, 적합성 시험 결과 미확인)'으로 쓴다. 개인 저장소이고 README 에 작성자·소속이 없다는 점을 불확실성에 적는다.",
+    "f12·f13: 출처 충돌로 서술하지 않는다. 논문 초록과 README 가 함께 적은 두 지표로 제시한다. 가장 나은 기준 에이전트의 위험 과제 전체 거부율 5%와 안전 과제 성공률 69%, 가장 안전 의식이 높은 기준 에이전트의 세부(detailed) 위험 과제 거부율 10%다(모두 저자 보고, 가정 환경). 검증 검색에서 두 값이 같은 초록에 별개 지표로 함께 있는 것을 확인했다.",
+    "open_questions_new 첫째 항목(SafeAgentBench 거부율 5% 대 10% 출처 충돌)은 등록하지 않는다. 두 값은 기준 에이전트와 과제 범주가 다른 별개 지표이며 충돌이 아니다.",
+    "f21: 근거 발췌의 '출처 충돌(f12·f13)이 있어 수치 없이 방향만 쓴다'는 전제를 빼고, 수치를 쓸 때는 5%(가장 나은 기준 에이전트, 위험 과제)와 10%(가장 안전 의식이 높은 기준 에이전트, 세부 위험 과제)를 조건과 함께 쓴다. 문장은 [추정]을 유지한다.",
+    "f9: 게재처를 'ICLR 2026'으로 단정하지 말고 'arXiv 2601.17087(2026-01), 게재처 미확인(ICLR 2026·ACL 2026 목록이 모두 검색됨)'으로 쓴다. 수치는 '(저자 보고, 원문 미열람)'을 병기한다.",
+    "f10: 게재 정보를 'arXiv 2510.20808(2025-10), Annual Review of Control, Robotics, and Autonomous Systems 2026 게재'로 쓰고, 권(9권)은 검증에서 확인되지 않았으므로 '권 미확인'으로 둔다.",
+    "f15: '(저자 보고, 원문 미열람)'과 함께 'Eval4NLP 2025 게재판은 제목이 Non-Determinism of \"Deterministic\" LLM System Settings in Hosted Environments'라는 점을 각주나 불확실성에 적는다. 수치는 arXiv 판 기준이다.",
+    "f16: 근거 표기의 '한국어 번역 페이지 검색 요약'을 'arXiv 2604.05427 초록 검색 요약'으로 고친다. 230개 과제·AI2-THOR 시나리오 30개·실제 로봇 실험은 유지하고 실기 시험 규모는 미확인으로 둔다. 기존 각주 ref-417 을 재사용한다.",
+    "f17: 본문에서 [추정]에 '벤더 주장'을 병기하고 '챗봇 지시 시험에 쓴 사례가 아님'을 유지한다. 22. 시뮬레이션·예측용 디지털 트윈 반영 제안 문안에도 같은 표기를 쓴다.",
+    "f14·f19: RVSG 와 현실 격차 서술에서 로봇 쪽 주행·회피·파지 시험은 '연계 대상:'으로 표시하고, ROP 쪽 시험은 지시 해석·배정·일정·예외 처리 결정에 한정한다(분류 원문 9장 로봇 자체 지능·제어 경계).",
+    "f22: 가상 현장 시험은 22. 시뮬레이션·예측용 디지털 트윈과 23. 시험·형식 검증·벤치마크의 기능으로, 초기 상태는 8. 실시간 세계 상태·데이터 일관성의 현재 상태 스냅숏이나 고정 시험 상태로 쓰는 구분을 그대로 옮기고 두 영역을 섞지 않는다.",
+    "f23: 창고 조건 실측 비교 부재는 새 질문 대신 열린 질문 oq-052 로 연결하고, 분류 원문 질문 비교 설계의 기존 서술은 단계 5 페이지 [q5-01 답](#q5-01)으로 연결해 반복하지 않는다.",
+    "open_questions_new 둘째 항목(국내 디지털 트윈 사전 검증 대 시운전 비교)은 등록하되 질문 끝에 '(관련 기존 질문: oq-094)'를 붙인다.",
+    "모든 각주 정의: 원문을 열지 않은 출처(ref-111, ref-417, ref-623, ref-738, ref-740, ref-741, ref-743, ref-744, ref-746, ref-747)는 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다. github_raw 로 연 ref-406, ref-104, ref-528, ref-739, ref-407, ref-742, ref-745 는 표시 없이 둔다. ref-031 은 기존 각주 줄을 그대로 재사용한다(입력 원문 텍스트로 열람).",
+    "ref-528 각주의 기관을 'NIST (usnistgov/ARIAC_docs)'로 두고, ref-008(ARIAC 문서 첫 페이지)과 같은 문서 사이트의 challenges 페이지임을 제목에 드러낸다. URL 이 달라 병합하지 않는다.",
+    "단계 5 페이지 2절: q5-02 상태를 '답함'(답한 실행 2026-09-25-99, 답 위치 [답](#q5-02))으로 바꾼다. 3절에 '### q5-02 … {#q5-02}' 소제목을 신설한다. 새 질문 셋은 q5-13·q5-14·q5-15 로 2절 표와 5절 표에 '열림'으로 넣는다(제기 근거 f23·f20·f15, 실행 2026-09-25-99).",
+    "단계 5 페이지 4절 남은 불확실성에 다음을 적는다. 네 층 가상 시험 구성은 이 위키의 종합이고 근거가 소매·항공 대화, 가상 AGV, 병원·사무실·제조 데모, 제조 키팅 조건이며 물류 지시 조건이 아니다. 교차 확인은 0건이다. vda5050-sim 은 개인 저장소의 자기 표명이다.",
+    "단계 5 페이지 6절: 세 완료 조건 행을 '미충족 · 미승인'으로 두고 첫 행 근거 칸에 '평가 지표(실행 2026-09-25-98)와 검증 절차 소절이 추정 중심으로 실림(실행 2026-09-25-99)'을 적는다. 아래 줄은 '다음 단계로 전환: 아니오(가설 판정표 q5-03·실험 계획 미작성, 막힌 질문 q5-03~q5-05·q5-07~q5-15 열림, 앞 단계 3·4 완료 미승인)'로 쓴다. track_updates.stage_transition 은 넣지 않는다. 트랙 개요의 현재 단계 표기(단계 3)는 바꾸지 않는다.",
+    "아이디어 2 6절: '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절을 신설하고 f18~f21 을 [추정]으로 싣는다. 근거 사실은 f1·f2·f4·f7(강등 반영)·f8·f9·f10·f15 다. 기존 '평가 지표' 소절과 링크로 잇고, 가설 판정(q5-03)과 실험 계획은 미조사라고 적는다. 도식은 출처 그림을 옮기지 말고 Mermaid 로 직접 그린다.",
+    "세부영역 반영 제안(23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 13. 작업 배정 — MRTA)은 해당 페이지를 직접 고치지 않고 트랙 로그의 '세부영역 반영 제안'으로만 남긴다. 교차 규칙에 따라 모의 사용자·LLM 비결정성(f8·f9·f15·f20)은 27. AI·학습·적응과 모델 운영 연결로도 로그 제안에 명시한다. f7 은 강등된 태그로 적는다.",
+    "용어 후보 '현실 격차'·'사용자 시뮬레이터'·'pass^k 지표'는 신규 등록한다. 용어집의 기존 항목 디지털 트윈·장애 주입·회귀 시험과 연결한다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. GitHub 원문은 검증에서 다시 열었고 ref-031 은 입력 원문 텍스트로 확인했다. 확인 24건, 미확인 1건(f7), 교차 확인 0건. 강등: f7 사실 → 추정(ARIAC 진공 도구 고장은 시작 시각이 아니라 잡기 시도 횟수로 발생). SafeAgentBench 의 5% 와 10% 는 같은 초록에 함께 있는 별개 지표다(가장 나은 기준 에이전트의 위험 과제 거부율 대 가장 안전 의식이 높은 기준 에이전트의 세부 위험 과제 거부율). 출처 충돌이 아니므로 해당 열린 질문은 등록하지 않는다. 원문 미열람 출처: ref-111, ref-417, ref-623, ref-738, ref-740, ref-741, ref-743, ref-744, ref-746, ref-747. 원문을 연 출처: ref-406, ref-104, ref-528, ref-739, ref-407, ref-742, ref-745(github_raw), ref-031(입력 원문 텍스트). 브리프 출처 표시 불일치: ref-031 은 fetched_via 가 github_raw 인데 fetch_url 이 null 이고, summary 는 입력 원문 텍스트라고 적었다. 실제 경로는 inbox 로 본다. 검증 검색 8회(리서치 17회와 합쳐 25/40), 열람 7회. 주의: q5-02 의 네 층 가상 시험 구성(지시·실행·교란·반복), ROP 시험 경계, 모의 사용자 보정과 반복 시행, 위험 지시 포함은 이 위키의 종합(추정)이다. 근거는 소매·항공 대화, 개인 저장소의 가상 AGV, 호텔·클리닉·제조 데모, 제조 키팅 조건이며 물류 창고 지시를 가상 현장에서 시험한 공개 연구나 국내 연구는 찾지 못했다. vda5050-sim 의 3.0.0 준수는 저장소의 자기 표명이다. 트랙 정의(current_stage 1), 트랙 개요 상태 줄(단계 3), 이번 지정 단계(5)가 서로 달라 트랙 데이터 확인이 필요하다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 없음(변경 제안 없음, 업무 분해·배정 설계 초안 v0.8 유지). 새 질문 3건은 백로그와 중복되지 않고 단계 태그(단계 5)가 맞는다. 질문–finding 대응: rationale 의 'q5-02 답'과 answered_question_ids 가 일치하고, 강등 뒤에도 남은 finding 이 q5-02 에 답한다. 단계 완료 조건: 미충족(부족: 가설 판정표 q5-03, 사용자에게 제안하는 실험 계획. 검증 절차는 추정 중심으로 이번에 처음 실림). 단계 전환: 미승인(막힌 질문 q5-03·q5-04·q5-05·q5-07~q5-12와 이번 새 질문 열림, 앞 단계 3·4 완료 미승인).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
