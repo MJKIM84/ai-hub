@@ -7,3 +7,5 @@
 - 2026-09-25 23:01:40 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 23:01:40 KST [대상 선정] 결과: 성공 · 소요 0초 · track · 13. 작업 배정 — MRTA
 - 2026-09-25 23:01:41 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-85/prompts/research.md (624,227자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 23:07:17 KST [리서치 에이전트] 호출 완료(시도 1): 턴 23 · 5분 36초 · 비용 $5.5671 · subtype success
+- 2026-09-25 23:07:17 KST [리서치 에이전트] 스키마 불일치(시도 1) 1건: finding f23: sources 에 없는 출처 id ['ref-810']
