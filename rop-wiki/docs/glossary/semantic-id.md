@@ -11,7 +11,7 @@ confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
 sources: [ref-247, ref-245]
-version: 1
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 의미 식별자
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-AAS 요소의 의미를 외부 사전(ECLASS·IEC CDD 등)의 개념 기술이나 IDTA 자체 식별자로 가리키는 식별자이다. [추정][^ref-247][^ref-245]
+AAS 요소의 의미를 외부 사전(ECLASS·IEC CDD 등)의 개념 기술이나 IDTA 자체 식별자로 가리키는 식별자이다. [추정]
 
 ## 설명
 
-IDTA 02047 템플릿에서는 제조사명·최대 적재 질량 같은 일부 속성만 ECLASS IRDI 를 쓰고, 속도 속성에는 IDTA 자체 식별자를 쓴다. 고정은 능력 단위가 아니라 속성 단위다.
+외부 사전을 가리킬 때 쓰는 식별자 형식은 [국제 등록 데이터 식별자(IRDI)](irdi.md)를 본다.
 
 ## 관련 영역
 
@@ -39,7 +39,5 @@ IDTA 02047 템플릿에서는 제조사명·최대 적재 질량 같은 일부 �
 
 ## 출처
 
-[^ref-247]: IDTA(Industrial Digital Twin Association), Specification of the Asset Administration Shell Part 3a: Data Specification – IEC 61360 (IDTA-01003-a-3-0-2), 2024-07, https://industrialdigitaltwin.org/wp-content/uploads/2024/07/IDTA-01003-a-3-0-2_SpecificationAssetAdministrationShell_Part3a_DataSpecification_IEC613601.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-245]: IDTA (admin-shell-io/submodel-templates), IDTA 02047-1-0 Template_TechnicalDataForAGV.json, 미확인, https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json, 접근일 2026-09-25
 
 - 참고문헌 페이지: [ref-247](../references/ref-247.md), [ref-245](../references/ref-245.md)

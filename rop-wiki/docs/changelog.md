@@ -28,6 +28,16 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-08 답함(3절 {#q1-08} 신설), q1-09 부분 답 소제목 추가, 4·5·6·7·8·9절 갱신, 상태 줄 열린 질문 1건·답한 질문 8건, 후속 질문 2건(q4-13·q2-06) |
+| 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | MassRobotics 행에 화물 최대값 형식·보고 전용 구조·지원 작업·부착 장비 부재 보강, IDTA 02047 행에 특수 능력·ECLASS 식별자 사용 범위 메모, 빠진 정보 요약·출처·이력 갱신 |
+| 2026-09-25-35 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 범위 능력의 의미 식별자 미확인·특수 능력 자유 텍스트(IDTA 02047)와 MassRobotics 화물 최대 중량·충전기 유형 보강, ref-245 각주의 원문 미열람 표기 제거 |
+| 2026-09-25-35 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-08 답함, q1-09 부분 답, 후속 질문 2건(q4-13·q2-06), 비교표 MassRobotics·IDTA 02047 행 보강, 온톨로지 변경 없음(v0.3 유지) |
+| 2026-09-25-35 | 생성 | [docs/references/ref-391.md](references/ref-391.md) | 참고문헌 ref-391 등록: What Is the MassRobotics AMR Interoperability Standard? |
+| 2026-09-25-35 | 생성 | [docs/references/ref-392.md](references/ref-392.md) | 참고문헌 ref-392 등록: IRDI - ECLASS Technischer Support |
+| 2026-09-25-35 | 생성 | [docs/glossary/irdi.md](glossary/irdi.md) | 용어집 항목 국제 등록 데이터 식별자 |
+| 2026-09-25-35 | 갱신 | [docs/glossary/semantic-id.md](glossary/semantic-id.md) | 용어집 항목 의미 식별자 |
+| 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-34 | 갱신 | [docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 영역 심화: 섹션 3~11 신규 작성(4·6·8·11절은 주제 페이지로 분리), 2차 수정 지시 4건 반영(9절 경계 칸, 10절 태그, 5절 시작 조건·제약 칸) |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s6.md](topics/2026/2026-09-25-area14-s6.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "6. 대표 접근법과 기술" 절(1,504자)을 옮겼다 |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s4.md](topics/2026/2026-09-25-area14-s4.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 |

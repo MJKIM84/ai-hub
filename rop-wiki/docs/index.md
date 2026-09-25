@@ -68,7 +68,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 40 | q1-07 — VDA 5050 3.0에서 팩트시트(유형 명세·적재 명세·지원 action)의 필드가 2.0 대비 어떻게 바뀌었으며, 적재 제약을 어떤 필드로 기술하는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-07)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 41 | q1-08 — MassRobotics AMR 상호운용 표준의 setup·status 메시지 스키마에는 로봇 능력(적재량, 지원 작업, 부착 장비)을 기술하는 필드가 있는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-08)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 23 | q1-04 — 자연어 지시에서 장소·대상 화물·긴급도·기한 같은 상황 정보를 뽑아내는 기존 방법은 무엇이고, 빠진 정보는 어떻게 되묻는가? ([답](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-04)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 22 | q2-01 — 공간 그래프를 표현하는 기존 표준(예: BIM·IFC, 실내 공간 표준)은 무엇이 있는가? ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-01)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->

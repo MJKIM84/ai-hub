@@ -326,9 +326,9 @@
       "question": "MassRobotics AMR 상호운용 표준의 setup·status 메시지 스키마에는 로봇 능력(적재량, 지원 작업, 부착 장비)을 기술하는 필드가 있는가?",
       "stage": 1,
       "origin": "f13",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-35",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-08",
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-02"
     },
@@ -419,7 +419,7 @@
       "question": "ECLASS·IEC CDD 에 이동로봇의 범위 능력(이동·계단·적재·도어 조작·충전)과 그 속성을 기술하는 항목이 있는가, 있으면 능력 온톨로지의 의미 식별자로 쓸 수 있는가?",
       "stage": 1,
       "origin": "f30",
-      "status": "열림",
+      "status": "조사 중",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-25",
@@ -512,6 +512,28 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-23"
+    },
+    {
+      "id": "q4-13",
+      "question": "MassRobotics 식별 보고의 화물 최대 중량(문자열)·최대 부피(객체) 값을 VDA 5050 팩트시트 적재 세트의 수치 필드와 같은 단위·형식으로 정규화해 화물 요구와 비교하는 어댑터 규칙을 어떻게 둘 것인가? (q1-08 에서 파생)",
+      "stage": 4,
+      "origin": "f6",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-35"
+    },
+    {
+      "id": "q2-06",
+      "question": "제조사는 IDTA 02047 의 특수 능력(SpecialCapabilities) 같은 자유 텍스트 항목이나 매뉴얼에 계단·도어 조작·충전 같은 범위 능력을 실제로 어떻게 적는가? (q1-09 에서 파생)",
+      "stage": 2,
+      "origin": "f8",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-35"
     }
   ]
 }
