@@ -1,0 +1,44 @@
+{
+  "run_id": "2026-09-25-75",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f5(ref-224)는 단계 4 페이지 q4-02 절에서 반복 서술 없이 q4-01 절을 참조하는 한 문장으로만 남아 1차 지시대로 처리됨",
+      "공간 그래프 스키마 초안은 온톨로지 변경이 없는데도 pages 에 들어 있으나, 1차 required_fixes 가 6절 근거 보강을 지시했으므로 허용(ontology_version '1.0' 유지, 개념·관계 표 불변 확인)"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(web_fetch_available: false, fetch_mode mirror_only)에서 검증됐다. 확인 19건, 미확인 0건, 교차 확인 0건. 강등: 없음(f1 의 scan-vs-BIM 명칭, f14 의 '막힘이 관제 신호로 올라온다', f15 의 '그래프를 고치지 않는다'는 별도 [추정] 문장으로 분리됨). 원문 미열람 출처: ref-651, ref-652, ref-653, ref-654, ref-655, ref-160, ref-221, ref-224(검색 결과 일치로 실재 확인, 각주에 원문 미열람 표기). 원문 확인 출처: ref-031, ref-270, ref-569, ref-643 아님·ref-644, ref-649, ref-650. 주의: q4-02 의 답은 도면–현장 차이를 지속성별 세 갈래(구조 변경·반정적 배치·임시 장애물)로 나눈 이 위키의 종합 [추정]이며 이를 제시한 단일 출처가 없다. scan-vs-BIM·국내 Scan-to-BIM 연구는 건설·시설 분야이고 물류 적용은 미확인이다. SLAM·변화 탐지·비용 지도는 로봇 쪽 연계 대상이다. 같은 저자 그룹(ref-221·ref-650)과 같은 프로젝트(ref-649·ref-644) 출처는 독립 확인으로 보지 않았다. 정정 요청 없음. oq-022 는 해결로 바꾸지 않았다. 온톨로지 변경 승인: 없음 / 거부: 없음(공간 그래프 스키마 초안 v1.0 유지, 6절 근거 보강만). 단계 완료 조건: 미충족(부족: 도면–현장 정합 절차 초안 — q4-02 는 답했으나 q4-03 미답). 단계 전환: 미승인(막힌 질문 q4-03·q4-04·q4-05·q4-07·q4-08·q4-09·q4-10·q4-11). / 2차 통과. 드리프트 없음, 1차 수정 지시 18건 모두 이행 확인, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고: (1) 단계 4 페이지 H1 아래 단계 상태 줄의 '답한 질문: 1건'은 2절 표 기준 2건이어야 하나 차등 갱신 패치 범위(H2 절) 밖이라 스토리텔러가 고치지 못했다 — 형식 검증 항목이므로 퍼블리셔가 반영 시 '답한 질문: 2건'으로 맞추도록 pipeline 담당에게 요청한다(열린 질문 8건은 맞음). (2) 아이디어 페이지 5절의 기존 '내비게이션 지도 변환 보정' 소절 끝 문장은 q4-02 가 아직 조사되지 않았다고 적고 있어 이번 실행 뒤에는 낡은 서술이 되었다 — 바로 뒤 새 소절이 q4-02 답을 싣고 있으므로 다음 갱신 실행에서 고친다. (3) 용어집 신규 '스캔 대 BIM 비교(Scan-vs-BIM)'는 명칭이 근거 출처에서 확인되지 않았다는 단서를 설명에 담았다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

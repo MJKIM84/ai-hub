@@ -1509,6 +1509,46 @@
       "section": "6. 대표 접근법과 기술",
       "summary": "시운전에서 도면 기반 지도의 좌표 변환 오차를 대응 경유점(최소 4쌍 권장)으로 확인하는 절차([사실], f5, ref-153)와 이를 노드 허용 편차와 비교해 도착 판정 전에 확인하는 단계([추정], f20), 사전 지도 작성 주행을 줄인 연구(IFC 기반 지도 생성 [사실] f10 ref-647, 연계 대상: CAD 기반 가상 지도 위치추정 f9 ref-628).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-75",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "도면–현장 차이 탐지 방법(scan-vs-BIM 재측량 대조, BIM 기반 다중 세션 정렬·변화 탐지 — 연계 대상)과 지속성별 반영 경로(구조 변경·반정적 배치·임시 장애물, 추정). 근거 ref-651·ref-221·ref-653·ref-649·ref-031·ref-569.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-75",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "변화 탐지 계산·SLAM·비용 지도는 로봇·제조사 쪽 연계 대상이고, 탐지된 차이를 구역 집합(새 zoneSetId)·차선 폐쇄·지도 판으로 반영하고 도면 변경 이력을 관리하는 것은 ROP 쪽이라는 경계(추정). 근거 ref-031·ref-569·ref-270.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-75",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "시운전 전 재측량으로 도면과 현장을 대조하는 방법(Bosché 2010 scan-vs-BIM, 국내 노후 건축물 Scan-to-BIM 연구의 저자 보고 오차율)과 기준 지도 정렬 도구 SLAM2REF(연계 대상). 근거 ref-651·ref-655·ref-650.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-75",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 24,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "현장 변화에 따른 지도 판(mapVersion) 갱신·사전 적재 후 활성화와 구역 집합 교체(내용 불변, 새 zoneSetId) 규칙, 임시 적치 대응을 판 갱신과 구역·차선 처리로 나누는 흐름(추정). 근거 ref-031.",
+      "status": "제안"
     }
   ]
 }

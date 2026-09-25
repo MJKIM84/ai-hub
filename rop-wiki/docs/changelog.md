@@ -28,6 +28,23 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-02 답함(3절 소제목 신설), 후속 질문 q4-11·q5-07, 4·5·6·7·8절 갱신. H1 아래 상태 줄(패치 범위 밖)은 열린 질문 8건·답한 질문 2건으로 바뀌어야 한다 |
+| 2026-09-25-75 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '도면–현장 차이 탐지와 반영' 소절 신설(q4-02, 실행 2026-09-25-75, 추정 중심) |
+| 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 6절 정렬 정보·도면–현장 차이·지도 버전 항목에 근거 보강(f12·f13·f15·f16, 실행 2026-09-25-75). 개념·관계 변경 없음, 초안 버전 v1.0 유지 |
+| 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절 살아있는 산출물에 실행 2026-09-25-75(단계 4, q4-02) 반영 내용 한 단락 추가. 상태 줄(현재 단계 단계 4 유지, 마지막 트랙 실행 2026-09-25)은 변경 없음 |
+| 2026-09-25-75 | 요약 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | 건축 도면 자동 인식 단계 4: q4-02 답함(도면–현장 차이의 지속성별 탐지·반영 경로와 ROP 경계, 추정 중심), 후속 질문 q4-11·q5-07, 스키마 초안 변경 없음(v1.0) |
+| 2026-09-25-75 | 생성 | [docs/references/ref-649.md](references/ref-649.md) | 참고문헌 ref-649 등록: nav2_costmap_2d — include/nav2_costmap_2d/obstacle_layer.hpp |
+| 2026-09-25-75 | 생성 | [docs/references/ref-650.md](references/ref-650.md) | 참고문헌 ref-650 등록: SLAM2REF — README (연계 논문 Construction Robotics 8(2), 2024-07… |
+| 2026-09-25-75 | 생성 | [docs/references/ref-651.md](references/ref-651.md) | 참고문헌 ref-651 등록: Automated recognition of 3D CAD model objects in laser scans… |
+| 2026-09-25-75 | 생성 | [docs/references/ref-652.md](references/ref-652.md) | 참고문헌 ref-652 등록: Safe and Robust Map Updating for Long-Term Operations in Dyn… |
+| 2026-09-25-75 | 생성 | [docs/references/ref-653.md](references/ref-653.md) | 참고문헌 ref-653 등록: Dynamic Map Update of Non-static Facility Logistics Environm… |
+| 2026-09-25-75 | 생성 | [docs/references/ref-654.md](references/ref-654.md) | 참고문헌 ref-654 등록: POV-SLAM: Probabilistic Object-Aware Variational SLAM in Sem… |
+| 2026-09-25-75 | 생성 | [docs/references/ref-655.md](references/ref-655.md) | 참고문헌 ref-655 등록: 노후건축물에서 모바일기기를 이용한 Scan-to-BIM 역설계 도면생성 방안 |
+| 2026-09-25-75 | 생성 | [docs/glossary/scan-vs-bim.md](glossary/scan-vs-bim.md) | 용어집 항목 스캔 대 BIM 비교 |
+| 2026-09-25-75 | 생성 | [docs/glossary/semi-static-object.md](glossary/semi-static-object.md) | 용어집 항목 반정적 객체 |
+| 2026-09-25-75 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-73 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
 | 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |
