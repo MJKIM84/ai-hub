@@ -24,6 +24,10 @@
 #   실행 폴더에 아무것도 쓰지 않는다(커밋 뒤 미커밋 로그가 남지 않도록).
 set -euo pipefail
 
+# 스크립트 전체를 한 중괄호 묶음으로 둔다: bash 가 실행 전에 끝까지 읽어 두므로, 실행 중에 이 파일을 고쳐도 도는 실행이 깨지지 않는다
+# (bash 는 스크립트를 명령 단위로 읽어 가며 실행한다 — 운영 전환 검증 실행 1이 실행 중 수정으로 문법 오류를 냈다).
+{
+
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 PY="${PYTHON:-python3}"
@@ -321,7 +325,7 @@ elif should_run storytell || should_run verify2; then
           park "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)"
         fi
       done
-      end_step "$( [ "$ff" -gt 0 ] && echo "형식 수정 ${ff}회 후 통과" || echo 통과 )" "$(grep -o '자동 분리 [0-9]*건\|패치 적용 [0-9]*건' "$RD/log.md" | tail -n 2 | tr '\n' ' ')"
+      end_step "$( [ "$ff" -gt 0 ] && echo "형식 수정 ${ff}회 후 통과" || echo 통과 )" "$(cat "$RD/checks/pages_note.txt" 2>/dev/null)"
       if [ "$STEP" = "storytell" ]; then say "완료(--step storytell)"; exit 0; fi
     fi
     story_done=0
@@ -385,3 +389,4 @@ if should_run publish; then
   say "== 완료: $RUN_ID ($SEL_TYPE) — $(jget "$RD/summary.json" end_state) · 소요 $(jget "$RD/summary.json" duration_sec)초 · 커밋 $(jget "$RD/summary.json" commit 없음) · 로그 docs/logs/daily/$DATE.md"
 fi
 exit 0
+}

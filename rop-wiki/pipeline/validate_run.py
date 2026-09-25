@@ -209,6 +209,8 @@ def stage_pages(rd: Path, settings: dict, run_id: str) -> int:
     if errors:
         md += ["- 오류:"] + [f"    - {e}" for e in errors]
     runs.write_text(rd / "format_check.md", "\n".join(md) + "\n")
+    note = " · ".join(x for x in ((f"패치 적용 {len(patched)}건" if patched else ""), (f"자동 분리 {len(splits)}건" if splits else "")) if x)
+    runs.write_text(rd / "checks" / "pages_note.txt", note)
     _log(rd, settings, f"원고 형식 검사: {'통과' if not errors else f'오류 {len(errors)}건'}"
          + (f" · 패치 적용 {len(patched)}건" if patched else "") + (f" · 자동 분리 {len(splits)}건" if splits else ""))
     for e in errors[:20]:
