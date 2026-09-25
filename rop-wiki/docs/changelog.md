@@ -63,6 +63,33 @@ version: 1
 | 2026-09-25-05 | 생성 | [docs/glossary/panoptic-symbol-spotting.md](glossary/panoptic-symbol-spotting.md) | 용어집 항목 파놉틱 심볼 스포팅 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-01 답함(분해 접근 여섯 유형·접근별 내용·사람에게 남는 일), 후속 질문 q1-05, 완료 조건 미충족, 출처 17건(2차 재실행에서 내용 변경 없음) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0 → v0.1: 개념 로봇 팀(Coalition) 확정 추가(f9), 거부된 제안 3건을 6절 미해결 모델링 질문으로(2차: 6절 일곱 접근 범위 한정, Lang2LTL 서술 수정, PDDL·LTL 풀어쓰기) |
+| 2026-09-25-04 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절 선행 연구 쪽 작성(분해 결과 형태 여섯 유형, 사람에게 남는 일, 물류 적용 한계), 제품 사례 미조사 명시(2차: 표의 PDDL·LTL 풀어쓰기, 둘째·셋째 항목에 '이 위키의 정리' 표시) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 상태 줄 마지막 트랙 실행 2026-09-25, 6절 초안 버전 v0.1 반영(2차 재실행에서 내용 변경 없음) |
+| 2026-09-25-04 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-01 답함(자연어 지시 분해 접근 여섯 유형), 후속 질문 q1-05, 업무 분해·배정 설계 초안 v0.1(로봇 팀 추가) |
+| 2026-09-25-04 | 생성 | [docs/references/ref-087.md](references/ref-087.md) | 참고문헌 ref-087 등록: SayCan (google-research/saycan README) |
+| 2026-09-25-04 | 생성 | [docs/references/ref-088.md](references/ref-088.md) | 참고문헌 ref-088 등록: Do As I Can, Not As I Say: Grounding Language in Robotic Aff… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-053.md](references/ref-053.md) | 참고문헌 ref-053 등록: progprompt-vh — ProgPrompt: Generating Situated Robot Task P… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-054.md](references/ref-054.md) | 참고문헌 ref-054 등록: ProgPrompt: Generating Situated Robot Task Plans using Large… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-055.md](references/ref-055.md) | 참고문헌 ref-055 등록: Lang2LTL — Code for paper Lang2LTL: Grounding Complex Natura… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-056.md](references/ref-056.md) | 참고문헌 ref-056 등록: Grounding Complex Natural Language Commands for Temporal Tas… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-057.md](references/ref-057.md) | 참고문헌 ref-057 등록: Understanding Natural Language Commands for Robotic Navigati… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-058.md](references/ref-058.md) | 참고문헌 ref-058 등록: A Survey of Robotic Language Grounding: Tradeoffs between Sy… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-059.md](references/ref-059.md) | 참고문헌 ref-059 등록: DART-LLM: Dependency-Aware Multi-Robot Task Decomposition an… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-061.md](references/ref-061.md) | 참고문헌 ref-061 등록: BTGenBot: Behavior Tree Generation for Robotic Tasks with Li… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-089.md](references/ref-089.md) | 참고문헌 ref-089 등록: SMART-LLM: Smart Multi-Agent Robot Task Planning using Large… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-090.md](references/ref-090.md) | 참고문헌 ref-090 등록: SMART-LLM: Smart Multi-Agent Robot Task Planning using Large… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-091.md](references/ref-091.md) | 참고문헌 ref-091 등록: llm-pddl — LLM+P: Empowering Large Language Models with Opti… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-092.md](references/ref-092.md) | 참고문헌 ref-092 등록: LLM+P: Empowering Large Language Models with Optimal Plannin… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-093.md](references/ref-093.md) | 참고문헌 ref-093 등록: Language Models as Zero-Shot Planners: Extracting Actionable… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-094.md](references/ref-094.md) | 참고문헌 ref-094 등록: language-planner — Official Code for "Language Models as Zer… |
+| 2026-09-25-04 | 생성 | [docs/references/ref-095.md](references/ref-095.md) | 참고문헌 ref-095 등록: Code as Policies: Language Model Programs for Embodied Contr… |
+| 2026-09-25-04 | 생성 | [docs/glossary/task-decomposition.md](glossary/task-decomposition.md) | 용어집 항목 작업 분해 |
+| 2026-09-25-04 | 생성 | [docs/glossary/behavior-tree.md](glossary/behavior-tree.md) | 용어집 항목 행동 트리 |
+| 2026-09-25-04 | 생성 | [docs/glossary/linear-temporal-logic.md](glossary/linear-temporal-logic.md) | 용어집 항목 선형 시간 논리 |
+| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재. 2차 수정: 4절 끝 문장 태그·각주, 약어 첫 등장 풀어 쓰기 |
 | 2026-09-25-03 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건 |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-area07-s6.md](topics/2026/2026-09-25-area07-s6.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "6. 대표 접근법과 기술" 절(775자)을 옮겼다 |

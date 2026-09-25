@@ -99,6 +99,46 @@
       "section": "8. 대표 연구와 자료",
       "summary": "도면 해석(교차 규칙상 6. 지도·공간·위치 모델에 적용되는 방법): 다중 작업 신경망(DeepFloorplan), 자기회귀 그래프 예측(Raster-to-Graph), 검출기·LLM·사람 검수를 잇는 반자동 주석 구축(DoorDet, 저자 의견), VLM 평면도 파싱(DeFazio 외 2024). 6. 지도·공간·위치 모델 페이지와 양쪽 연결. 근거 f4·f9·f15·f16.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-04",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "학습 기반 배차의 한 갈래로 LLM 기반 분해·팀 구성·할당 파이프라인을 소개: SMART-LLM(분해→팀 구성→할당을 프로그램형 few-shot 프롬프트로 수행, 할당 최적화는 README 기준 미확인 [추정]), DART-LLM(하위 작업 의존 DAG와 배정 모듈). 27. AI·학습·적응과 모델 운영과 양쪽 연결. 근거 ref-089, ref-090, ref-059.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-04",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "8. 대표 연구와 자료",
+      "summary": "SMART-LLM(Kannan 외 2023, 공식 README와 논문, 4개 난이도 범주 벤치마크), DART-LLM(2024 프리프린트)을 대표 연구로 등록. 근거 ref-089, ref-090, ref-059.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-04",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 출력을 실행 전에 접지·점검하는 방법: 기술 가치 함수(SayCan), 고전 계획기에 PDDL 넘김(LLM+P), LTL 식 변환(Lang2LTL). 형식 명세 경유 구조가 오해석 방지와 이어진다는 [추정]. 적용 대상 13. 작업 배정 — MRTA와 양쪽 연결(교차 규칙: 학습 기반 배차). 센서 인식·제어는 연계 대상. 근거 ref-087, ref-088, ref-091, ref-092, ref-055, ref-056.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-04",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "Cohen 외(IJCAI-24) 로봇 언어 접지 서베이(형식 표현–임베딩 스펙트럼, 장단점 평가는 [의견])와 Huang 외(ICML 2022), SayCan, LLM+P, Lang2LTL을 대표 자료로 등록하고 13. 작업 배정 — MRTA 페이지와 연결. 근거 ref-058, ref-093, ref-087, ref-091, ref-055.",
+      "status": "제안"
     }
   ]
 }

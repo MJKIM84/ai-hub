@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-09-25-04",
+  "stage": "second",
+  "verdict": "수정 후 재검증",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "docs/ideas/nl-task-chatbot.md 3절: PDDL 첫 등장이 표 안의 '[PDDL](../glossary/pddl.md)'뿐이고, 용어집 표기 '계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)'로 풀어 쓰지 않았다(1차 용어 지시 미이행). 같은 표의 'LTL 식'도 첫 등장에서 '선형 시간 논리(Linear Temporal Logic, LTL)'로 풀어 쓰지 않았다",
+      "docs/tracks/nl-task-chatbot/task-model-draft.md 6절: PDDL·LTL을 첫 등장에서 풀어 쓰지 않았고 용어집 링크가 없다"
+    ]
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [
+    {
+      "id": "corr-002",
+      "reason": "분류 원문의 세부영역 정의(7. 화물·재고·자산 식별과 추적의 '무엇을 연구하는가' 문장)를 바꾸라는 요청이다. 분류 원문의 명칭·번호·정의·질문은 정정 대상이 아니다(공통 규칙 1항). 1차 판정과 같다."
+    }
+  ],
+  "required_fixes": [
+    "task-model-draft.md 6절 '허용 동작 목록' 항목: '조사한 LLM 기반 분해 접근은 사람이 미리 정한 허용 동작·가용 동작·기술 목록 안에서 분해한다'를 'Huang 외, SayCan, ProgPrompt, Code as Policies, LLM+P, Lang2LTL, SMART-LLM 일곱 접근은 사람이 미리 정한 허용 동작·가용 동작·기술 목록 안에서 분해하는 것으로 보인다(이 위키의 정리)'로 범위를 한정하고 [추정]을 유지한다. 이유: 1차 f14 수정 지시('모두' 대신 일곱 접근으로 한정)가 이 페이지에는 이행되지 않았다. BTGenBot·DART-LLM은 이 공통점의 근거가 아니다.",
+    "task-model-draft.md 6절 첫 항목(작업의 단위 크기)의 추가 문장: '실행 단위는 사람이 미리 정해 둔다는 정리가 나왔다'를 '조사한 일곱 LLM 기반 접근에서는 실행 단위를 사람이 미리 정해 둔다는 정리가 나왔다'로 한정한다. 이유: f14 범위 한정 지시와 같다.",
+    "task-model-draft.md 6절 '형식 작업 명세' 항목: 'LLM+P는 자연어 문제를 PDDL로, Lang2LTL은 명령을 LTL 식으로 옮겨 계획기·검사기에 넘긴다. [사실]'을 'LLM+P는 자연어 문제를 PDDL 문제 파일로 바꿔 고전 계획기에 넘기고, Lang2LTL은 명령을 LTL 식으로 옮긴다. [사실]'로 고친다. 같은 문장의 PDDL은 첫 등장이므로 '[계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)](../../glossary/pddl.md)'로, LTL은 '선형 시간 논리(Linear Temporal Logic, LTL)'로 쓴다. 이유: f7은 LTL 식을 검사기에 넘긴다고 하지 않는다(검사 연결은 f17의 [추정]). PDDL 표기는 1차 용어 지시를 따른다.",
+    "docs/ideas/nl-task-chatbot.md 3절 표: '[PDDL](../glossary/pddl.md) 문제 파일, LTL 식'을 '[계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)](../glossary/pddl.md) 문제 파일, 선형 시간 논리(Linear Temporal Logic, LTL) 식'으로 고친다. 이유: 이 페이지의 첫 등장이며 1차 용어 지시 미이행이다.",
+    "docs/ideas/nl-task-chatbot.md 3절 '무엇을 자동화하고 무엇을 사람에게 남기는가'의 둘째 항목(f17, 형식 명세 경유 구조)과 셋째 항목(f15, 평가 환경) 끝의 태그 앞에 '(이 위키의 정리)'를 붙인다. 이유: 1차 지시는 f13·f14·f15·f17을 페이지에서 위키의 정리(추론)로 밝히라고 했다. 단계 1 페이지는 f17에 이를 밝혔으나 아이디어 페이지의 두 항목에는 표시가 없다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인 / 2차 수정 후 재검증. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 17건, 미확인 0건, 교차 확인 0건(각 접근의 README와 논문은 같은 저자 계열이라 독립 출처가 아니다). 강등: 없음. 원문 미열람 출처: ref-054, ref-056, ref-057, ref-058, ref-059, ref-061, ref-063, ref-065, ref-066, ref-070(재부여 후 id). 주의: ProgPrompt 설명의 근거는 원문을 열지 못한 논문 ref-054이며, 공식 README(ref-053)에는 설치·실행 안내만 있다. 1차에서 참고문헌 id 충돌 7건을 ref-062~ref-068로 재부여하도록 지시했다. 1차가 놓친 SayCan 출처 2건(브리프 ref-051·ref-052, 기존 VDA 5050 출처와 충돌)은 퍼블리셔 사전 검사에 따라 ref-069·ref-070으로 추가 재부여됐다. 주장·태그는 바뀌지 않았고 각주·프런트매터·reference_updates에 일관되게 반영됐다. pipeline 담당에게 next_ref_id 산정 오류 확인을 요청한다. 조사한 연구의 평가 환경은 가정·주방 시뮬레이터, 내비게이션, 건설 기계였다. 물류 현장 지시를 다룬 LLM 분해 연구는 이번 검색 범위에서 확인되지 않았으나 부재가 확인된 것은 아니다. 국내 자료는 찾지 못했다. 정정 요청: corr-002 불인정(분류 원문 정의는 정정 대상이 아니다). 온톨로지 변경 승인: 로봇 팀 (Coalition)(f9). 거부: 허용 동작 목록, 형식 작업 명세, 작업 / 선행 의존한다 / 작업 — 6절 미해결 모델링 질문으로 옮겼다. q1-01 답함 인정. 새 질문 1건(q1-05) 등록, 2건(q2-02, q4-02와 중복) 제외. 단계 완료 조건: 미충족(부족: 제품 사례 미조사로 아이디어 2의 3절 비교 미완, 지시 분해 유형 목록이 업무 분해·배정 설계 초안에 미반영). 단계 전환: 미승인(막힌 질문 q1-02, q1-03, q1-04, q1-05). / 2차 수정 후 재검증. 드리프트 3건 처리 지시: 업무 분해·배정 설계 초안 6절에서 f14의 범위 한정이 이행되지 않은 2곳과, Lang2LTL이 검사기에 넘긴다는 f7 밖의 서술 1곳이다. 이 밖에 용어 표기 2건(아이디어 페이지·초안의 PDDL·LTL)과 아이디어 페이지의 추론 표시 누락 1건을 지시했다. [분류원문] 보존, 섹션 순서 준수, 링크 유효.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [
+      "분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? — q2-02 와 중복",
+      "LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? — q4-02 와 중복"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}
