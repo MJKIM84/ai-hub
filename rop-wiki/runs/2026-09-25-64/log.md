@@ -7,3 +7,5 @@
 - 2026-09-25 15:52:02 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 15:52:02 KST [대상 선정] 결과: 성공 · 소요 0초 · area_deep_dive · 26. 사이버보안·접근권한·개인정보
 - 2026-09-25 15:52:07 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-64/prompts/research.md (45,380자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 15:58:35 KST [리서치 에이전트] 호출 완료(시도 1): 턴 34 · 6분 28초 · 비용 $2.3304 · subtype success
+- 2026-09-25 15:58:35 KST [리서치 에이전트] 스키마 불일치(시도 1) 1건: finding f27: sources 에 없는 출처 id ['ref-012']
