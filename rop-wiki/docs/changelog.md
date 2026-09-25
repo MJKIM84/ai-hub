@@ -28,6 +28,32 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-14 | 갱신 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 영역 심화: 3~11절 신규 작성(성과 지표 표준, 흐름 법칙·병목 탐지·프로세스 마이닝, 가상 시나리오, ROP 경계, 연결 7개 영역, 열린 질문 4건+기존 2건), task_state.json 은 기존 ref-111 재사용 |
+| 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s8.md](topics/2026/2026-09-25-area04-s8.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "8. 대표 연구와 자료" 절(1,579자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
+| 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s4.md](topics/2026/2026-09-25-area04-s4.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "4. 핵심 개념과 용어" 절(1,517자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
+| 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s6.md](topics/2026/2026-09-25-area04-s6.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "6. 대표 접근법과 기술" 절(1,238자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
+| 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s7.md](topics/2026/2026-09-25-area04-s7.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,187자)을 옮겼다. 2차 수정: task_state 행은 기존 ref-111 재사용, 나머지 각주 id 를 브리프 id 로 원복 |
+| 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s11.md](topics/2026/2026-09-25-area04-s11.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "11. 열린 질문" 절(970자)을 옮겼다(2차 수정 없음) |
+| 2026-09-25-14 | 요약 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 4. 성과·경제성·프로세스 개선: 3~11절 신규 작성(ISO 22400·SCOR·WERC 지표, 리틀의 법칙·병목 탐지·프로세스 마이닝, ROP 계산 지표와 주문·재무 지표의 경계, 열린 질문 4건), task_state.json 은 기존 ref-111 재사용 |
+| 2026-09-25-14 | 생성 | [docs/references/ref-115.md](references/ref-115.md) | 참고문헌 ref-115 등록: Throughput bottleneck detection in manufacturing: a systemat… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-139.md](references/ref-139.md) | 참고문헌 ref-139 등록: ISO 22400-2:2014 - Automation systems and integration — Key… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-140.md](references/ref-140.md) | 참고문헌 ref-140 등록: SCOR Model — Performance: Reliability RL.1.1 Perfect Custome… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-141.md](references/ref-141.md) | 참고문헌 ref-141 등록: WERC DC Measures Survey - 2025 |
+| 2026-09-25-14 | 생성 | [docs/references/ref-142.md](references/ref-142.md) | 참고문헌 ref-142 등록: Overall Equipment Effectiveness: consistency of ISO standard… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-143.md](references/ref-143.md) | 참고문헌 ref-143 등록: Little’s Law – A Practical Approach to Understanding Product… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-144.md](references/ref-144.md) | 참고문헌 ref-144 등록: Robotized and Automated Warehouse Systems: Review and Recent… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-145.md](references/ref-145.md) | 참고문헌 ref-145 등록: Analytical models for collaborative autonomous mobile robot… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-146.md](references/ref-146.md) | 참고문헌 ref-146 등록: The role of energy consumption in robotic mobile fulfillment… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-147.md](references/ref-147.md) | 참고문헌 ref-147 등록: pm4py — Official public repository for PM4Py (Process Mining… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-148.md](references/ref-148.md) | 참고문헌 ref-148 등록: rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json |
+| 2026-09-25-14 | 생성 | [docs/references/ref-149.md](references/ref-149.md) | 참고문헌 ref-149 등록: Material Movement Analysis for Warehouse Business Process Im… |
+| 2026-09-25-14 | 생성 | [docs/references/ref-150.md](references/ref-150.md) | 참고문헌 ref-150 등록: 오토스토어, 물류 자동화 시스템의 경제적 효과 연구 보고서 발표 |
+| 2026-09-25-14 | 생성 | [docs/references/ref-151.md](references/ref-151.md) | 참고문헌 ref-151 등록: 화주기업과 물류기업의 공동 핵심성과지표 관리방법에 대한 연구 |
+| 2026-09-25-14 | 생성 | [docs/glossary/overall-equipment-effectiveness.md](glossary/overall-equipment-effectiveness.md) | 용어집 항목 종합설비효율 |
+| 2026-09-25-14 | 생성 | [docs/glossary/perfect-order-fulfillment.md](glossary/perfect-order-fulfillment.md) | 용어집 항목 완전 주문 이행률 |
+| 2026-09-25-14 | 생성 | [docs/glossary/littles-law.md](glossary/littles-law.md) | 용어집 항목 리틀의 법칙 |
+| 2026-09-25-14 | 생성 | [docs/glossary/process-mining.md](glossary/process-mining.md) | 용어집 항목 프로세스 마이닝 |
+| 2026-09-25-14 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-10 | 갱신 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s8.md](topics/2026/2026-09-25-area03-s8.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약 문장 각주에 ref-097·ref-103 추가 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s6.md](topics/2026/2026-09-25-area03-s6.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 드리프트 문장 삭제, 태그 없는 주장 3문장에 태그·각주 |
