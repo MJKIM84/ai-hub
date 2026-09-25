@@ -30,3 +30,6 @@
 - 2026-09-25 16:52:48 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
 - 2026-09-25 16:52:48 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
 - 2026-09-25 16:52:48 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 16:52:48 KST [형식 검증] 원고 형식 검사: 통과 · 패치 적용 3건
+- 2026-09-25 16:52:48 KST [형식 검증] 결과: 통과 · 소요 2분 41초 · 패치 적용 3건
+- 2026-09-25 16:52:49 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-70/prompts/verification2.md (686,885자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
