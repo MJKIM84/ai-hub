@@ -446,9 +446,9 @@
         5
       ],
       "url": "https://github.com/CaSkade-Automation/CaSkMan",
-      "summary": "제조 설비의 능력·스킬·스킬 인터페이스·속성을 기술하고 VDI 3682·VDI 2860·DIN 8580·ISA 88·IEC 61360 을 잇는 OWL 정렬 온톨로지.",
+      "summary": "제조 기계의 능력·스킬을 모델링하는 OWL 온톨로지로, 능력–스킬 실현 관계와 ISA 88 상태 기계, REST·OPC UA 스킬 인터페이스를 둔다.",
       "ref_id": "ref-231",
-      "run_id": "2026-09-25-15",
+      "run_id": "2026-09-25-16",
       "date": "2026-09-25"
     },
     {
@@ -547,6 +547,89 @@
       "summary": "도크 위치를 파라미터나 도크 데이터베이스 YAML 로 정의하고 검출기의 검출 자세로 보정하는 ROS 2 도킹 서버. 정밀 도킹은 로봇 자체 지능·제어 쪽 연계 대상이다.",
       "ref_id": "ref-216",
       "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02020 Capability Description (AAS 서브모델 1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/blob/main/published/Capability%20Description/1/0/IDTA%2002020_Template_Capability_Description.json",
+      "summary": "능력을 구현 독립 명세로 기술하고 속성·속성 제약(전제·불변·사후조건)·전이 제약과 스킬 구현 관계(CapabilityRealizedBy), 일반화·구성 관계를 두는 AAS 서브모델 템플릿이다.",
+      "ref_id": "ref-243",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02047 Technical Data for Automated Guided Vehicles (1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        9
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json",
+      "summary": "무인운반차의 최대 적재 질량, 등판·측경사 각, 속도·가동 시간의 명세값·운용값, 정확도, 환경 조건을 속성으로 두는 AAS 서브모델 템플릿이다.",
+      "ref_id": "ref-245",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "AAS Part 3a: Data Specification – IEC 61360 (IDTA-01003-a 3.0.2)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2024/07/IDTA-01003-a-3-0-2_SpecificationAssetAdministrationShell_Part3a_DataSpecification_IEC613601.pdf",
+      "summary": "AAS 요소의 의미를 ECLASS·IEC CDD 같은 IEC 61360 기반 사전의 개념 기술로 정하는 데이터 명세다(인용 판 3.0.2, 최신판 3.1.1 있음, 원문 미열람).",
+      "ref_id": "ref-247",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 22166-202:2025 서비스 로봇 소프트웨어 모듈 정보 모델",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://www.iso.org/standard/84589.html",
+      "summary": "서비스 로봇 소프트웨어 모듈의 인터페이스·속성·구성·실행 관련 정보를 구조화해 기술하게 하는 정보 모델 요구사항 표준이다(원문 미열람).",
+      "ref_id": "ref-248",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+      "summary": "서비스 로봇 소프트웨어 모듈의 정보 모델을 다루는 한국산업표준으로, ISO 22166-202 대응 여부·제정일은 미확인이다(원문 미열람).",
+      "ref_id": "ref-138",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SkiROS2",
+      "org": "RVMI lab, Aalborg University",
+      "kind": "오픈소스",
+      "related_areas": [
+        5
+      ],
+      "url": "https://github.com/RVMI/skiros2",
+      "summary": "스킬을 행동 트리로 조합하고 스킬마다 전제·유지·사후조건을 두는 ROS 기반 스킬 플랫폼이다(로봇 내부 실행 쪽 연계 대상, 스킬 조건 표현 사례).",
+      "ref_id": "ref-250",
+      "run_id": "2026-09-25-16",
       "date": "2026-09-25"
     }
   ]

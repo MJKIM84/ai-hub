@@ -11,7 +11,7 @@
 | f3 | 예 | 예 | 아니오 | 유지 | 확인: 원문 스키마의 actionParameters 에 min/max/범위 필드가 없고, action 정의 안에 전제조건·오류 블록도 없음. [추정] 태그와 '부재의 확정 아님' 단서는 그대로 둔다. |
 | f4 | 예 | 예 | 아니오 | 유지 | 확인: 명세 원문 표 4 의 pick 파라미터가 일치하고, FINISHED 정의('Load has entered … reports new load state', drop 은 'Load has left…')도 원문과 일치함. ref-031 의 직접 인용은 페이지 전체에서 1회로 제한한다. |
 | f5 | 예 | 예 | 아니오 | 유지 | 확인: state.schema(main)의 errorLevel 은 WARNING·URGENT·CRITICAL·FATAL 넷이고 설명도 일치함. errorDescription·errorHint 와 번역 필드, action 상태 RETRIABLE('Actions that failed, but can be retried')도 확인함. |
-| f6 | 예 | 예 | 아니오 | 유지 | 확인: IDTA 02020 README 원문에서 능력 정의, 속성 예, 속성 제약(전제·불변·사후조건), 전이 제약, 스킬에 의한 구현이 일치함. ref-126·ref-127 은 발행 주체가 같아 독립한 교차 확인이 아님. |
+| f6 | 예 | 예 | 아니오 | 유지 | 확인: IDTA 02020 README 원문에서 능력 정의, 속성 예, 속성 제약(전제·불변·사후조건), 전이 제약, 스킬에 의한 구현이 일치함. ref-318·ref-319 은 발행 주체가 같아 독립한 교차 확인이 아님. |
 | f7 | 예 | 예 | 아니오 | 유지 | 확인: 템플릿 JSON 에 기술한 요소와 한정자 Required·Offered·NotAssigned, 제약 유형 4종, 전이 제약이 있고 모든 요소에 semanticId 가 붙어 있음. 기존 페이지가 ref-037 을 근거로 쓴 'ConditionContainer·realizedBy'는 템플릿에서 확인되지 않아 표기가 충돌함. |
 | f8 | 예 | 예 | 아니오 | 유지 | 확인: identityReport 의 maxSpeed·maxRunTime·chargerType·cargoMaxVolume·cargoMaxWeight·cargoType(자유 서술)와 statusReport 의 operationalState 9종·batteryPercentage·loadPercentageStillAvailable·errorCodes(문자열 배열)가 일치함. q1-08 상태는 이번 실행에서 바꾸지 않는다. |
 | f9 | 예 | 예 | 아니오 | 유지 | 확인: MaxLoadMass, 적재·무적재 등판·측경사 각, SpeedMax…AsSpecified·AsOperated, MaxRunTime AsSpecified·AsOperated, PositioningAccuracy, SuitableForOutdoorUse, RequiredEnvironmentalConditions, InterfacesForAttachments 가 모두 있음. ECLASS IRDI 는 일부 속성에만 있음. |
@@ -48,7 +48,7 @@
 |---|---|---|
 | 분류 적합성 | 예 | — |
 | 범위 경계 | 예 | — |
-| 중복·모순 | 아니오 | IDTA 02020 요소 이름 충돌: 기존 단계 1 페이지 3절과 비교표 AAS 행은 'ConditionContainer·realizedBy'(ref-037, 제3자)로 적었고, IDTA 공식 템플릿(f7·f22)에는 ConstraintSet·CapabilityRealizedBy 가 있다., 기존 단계 1 페이지 q1-03 부분 답의 '완료 확인 방법 미확인' [추정]이 f13 과 충돌한다., 기존 단계 1 페이지의 'VDA 5050 3.0.0 새 오류 등급 CRITICAL·URGENT' [추정]이 f5 와 겹치고, 온톨로지 초안 오류 등급 값도 갱신해야 한다., 새 질문 1(action 파라미터 범위를 IDTA 02020 PropertyRange 로 보완)은 백로그 q4-06 에 포함된다., 참고문헌 id 충돌 가능성: 실행 2026-09-25-15 브리프가 ref-125~ref-139 를 다른 출처에 배정했다(예: 그쪽 ref-127 = MassRobotics JSON, 이번 ref-127 = IDTA 02020 템플릿)., 새 열린 질문(KS B 7321-2)은 기존 oq-004 와 주제가 가깝다. 대상 표준이 다르므로 별도 등록을 허용하되 두 질문을 서로 연결한다. |
+| 중복·모순 | 아니오 | IDTA 02020 요소 이름 충돌: 기존 단계 1 페이지 3절과 비교표 AAS 행은 'ConditionContainer·realizedBy'(ref-037, 제3자)로 적었고, IDTA 공식 템플릿(f7·f22)에는 ConstraintSet·CapabilityRealizedBy 가 있다., 기존 단계 1 페이지 q1-03 부분 답의 '완료 확인 방법 미확인' [추정]이 f13 과 충돌한다., 기존 단계 1 페이지의 'VDA 5050 3.0.0 새 오류 등급 CRITICAL·URGENT' [추정]이 f5 와 겹치고, 온톨로지 초안 오류 등급 값도 갱신해야 한다., 새 질문 1(action 파라미터 범위를 IDTA 02020 PropertyRange 로 보완)은 백로그 q4-06 에 포함된다., 참고문헌 id 충돌 가능성: 실행 2026-09-25-15 브리프가 ref-228~ref-139 를 다른 출처에 배정했다(예: 그쪽 ref-319 = MassRobotics JSON, 이번 ref-319 = IDTA 02020 템플릿)., 새 열린 질문(KS B 7321-2)은 기존 oq-004 와 주제가 가깝다. 대상 표준이 다르므로 별도 등록을 허용하되 두 질문을 서로 연결한다. |
 | 용어 일관성 | 아니오 | '자산 관리 셸'(용어 후보·트랙 설정)과 기존 단계 1 페이지의 '자산관리셸' 표기가 다르다. 갱신 페이지는 '자산 관리 셸'로 통일하고, 논문 제목 인용은 원제 그대로 둔다., 용어 후보 '자산 관리 셸' 정의의 '디지털 트윈 표현 체계'는 근거 finding 이 뒷받침하지 않는다. f6·f7·f9·f29 범위로 줄인다., 용어 후보 '의미 식별자' 정의는 f30 강등에 맞춰, ECLASS IRDI 가 일부 속성에만 쓰이고 나머지는 IDTA 자체 식별자임을 반영한다., 용어집 '능력·스킬·서비스 모델' 항목에 따라 CSS·IDTA 의 capability 는 온톨로지 초안에서 '기능(Capability)'으로 부른다. |
 | 인용 길이·저작권 | 예 | — |
 | 정정 요청 반영 | — | — |
@@ -67,7 +67,7 @@
 - f29: IDTA-01003-a 3.0.2(2024-07)를 인용했고 최신판 3.1.1 이 있음을 명시한다.
 - f33: [의견]에 주체를 밝혀 'RCO 논문(Naqvi 외, 2025) 저자는 … 라고 주장한다'로 쓴다.
 - f10·f11: SkiROS2 와 OPC UA Robotics 의 모션 장치·안전 정지 유형은 '스킬 조건 표현 사례', '능력 기술 유무 판단' 용도로만 서술한다. 로봇 자체 지능·제어는 연계 대상이다.
-- 원문 미열람 표기: ref-025, ref-036, ref-041, ref-132~ref-137 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. 원문을 연 ref-031, ref-040, ref-051, ref-125~ref-131, ref-138 의 각주에서는 '(원문 미열람)'을 뺀다.
+- 원문 미열람 표기: ref-025, ref-036, ref-041, ref-322~ref-325 의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. 원문을 연 ref-031, ref-040, ref-051, ref-228~ref-321, ref-326 의 각주에서는 '(원문 미열람)'을 뺀다.
 - 직접 인용: ref-031 은 페이지 전체에서 1회만 직접 인용하고(f4 또는 f16), 나머지는 재서술한다.
 - 온톨로지 초안 v0.1 → v0.2 는 승인한 변경만 반영한다. (1) 오류: 등급을 3.0.0 값(WARNING·URGENT·CRITICAL·FATAL)으로 고치고 2.0.0 값은 판 표기와 함께 남긴다. 해결 힌트(errorHint)를 더하고, 재시도 가능 여부는 'action 상태 RETRIABLE 에서 온 값'이라고 밝혀 더한다(f5, 확정). (2) 개념 '스킬 인터페이스'(f19·f20·f21, 확정): 속성은 프로토콜(OPC UA·REST)·상태 기계·호출 방법으로 한정하고 VDA 5050 action·Open-RMF 동작은 넣지 않는다. (3) 관계 '스킬 / 노출된다 / 스킬 인터페이스'(f19·f20, 확정). (4) 관계 '기능 / 일반화된다 / 기능'(f31, 확정). 6절의 '스킬 상태 기계·실행 인터페이스 출처 미확정' 항목은 해소됐다고 고친다.
 - 온톨로지 초안에서 거부한 두 건은 표에 넣지 않고 6절 미해결 모델링 질문으로 둔다. (a) 제약의 적용 시점 구분(f6·f10): 실행 조건과의 경계 질문에 합친다. (b) 기능의 의미 식별자 속성과 AsSpecified·AsOperated 값 메모(f29·f30·f14): 근거가 속성 단위와 추정뿐이다.
@@ -75,11 +75,11 @@
 - 열린 질문: KS B 7321-2 질문을 oq-004 와 함께 언급해 서로 연결한다.
 - 단계 페이지 6절: 두 완료 조건은 '미충족', 검증 판정은 '미충족 · 미승인', 아래 줄은 '다음 단계로 전환: 아니오(비교표 학술 온톨로지 행의 다섯 정보 항목 미조사, ROP용 능력 개념 요구 목록 초안 미반영, 막힌 질문 q1-03·q1-06·q1-07·q1-08)'로 적는다. 상태 줄의 질문 수는 2절 표와 맞춘다(답함 4건).
 - 세부영역 반영 제안(5. 로봇 능력·작업 온톨로지, 9. 로봇·제조사 관제 연동, 28. 표준·상호운용성·다사업자 거버넌스)은 해당 페이지를 고치지 않고 area_reflection_proposals 와 트랙 로그에만 남긴다.
-- 참고문헌: reference_updates 에는 이번 브리프의 id 를 그대로 쓰고, changelog_entry 에 'ref-125~ref-138 은 2026-09-25-15 브리프와 id 가 충돌할 수 있어 퍼블리셔 확인이 필요하다'를 남긴다.
+- 참고문헌: reference_updates 에는 이번 브리프의 id 를 그대로 쓰고, changelog_entry 에 'ref-228~ref-326 은 2026-09-25-15 브리프와 id 가 충돌할 수 있어 퍼블리셔 확인이 필요하다'를 남긴다.
 
 ## 검증 노트
 
-판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 11건은 검증 단계에서 다시 열어 대조했다. 확인 34건, 미확인 1건(f30), 교차 확인 0건. 강등: f30 사실 → 추정(ECLASS IRDI 는 일부 속성에만 있고 속도 속성은 IDTA 자체 식별자를 쓴다). 원문 미열람 출처: ref-025, ref-036, ref-041, ref-132, ref-133, ref-134, ref-135, ref-136, ref-137. 주의: 모든 사실은 발행 주체 한 곳의 자료에 기댄다. q1-04 결론의 연결 방식 3분류(f26)와 q1-05 결론의 대응 방식 4분류(f35)는 이 위키의 [추정] 분류다. q1-03 은 산업 규격·서브모델만 대조해 부분 답으로 처리했다. IDTA 02020 요소 이름은 공식 템플릿(ConstraintSet·CapabilityRealizedBy)과 기존 제3자 논문 표기(ConditionContainer·realizedBy)가 달라 두 표기를 함께 제시한다. ref-125~ref-138 은 실행 2026-09-25-15 브리프와 id 가 충돌할 수 있다. 정정 요청 없음. 검증 검색 7회(리서치와 합쳐 22/40). 온톨로지 변경 승인: 오류 수정(f5), 개념 스킬 인터페이스(f19·f20·f21), 관계 스킬 / 노출된다 / 스킬 인터페이스(f19·f20), 관계 기능 / 일반화된다 / 기능(f31) — v0.1 → v0.2. 거부: 제약의 적용 시점 구분(f6·f10), 기능의 의미 식별자·능력 출처 값 메모(f29·f30·f14) — 둘 다 6절 질문으로 둔다. 새 질문 중복: action 파라미터 범위 보완 질문은 q4-06 과 중복이다. 단계 완료 조건: 미충족(부족: 비교표의 IEEE 1872 계열·KnowRob·SOMA·SSN/SOSA 행 다섯 정보 항목, ROP용 능력 개념 요구 목록 초안 미반영). 단계 전환: 미승인(막힌 질문 q1-03·q1-06·q1-07·q1-08).
+판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 11건은 검증 단계에서 다시 열어 대조했다. 확인 34건, 미확인 1건(f30), 교차 확인 0건. 강등: f30 사실 → 추정(ECLASS IRDI 는 일부 속성에만 있고 속도 속성은 IDTA 자체 식별자를 쓴다). 원문 미열람 출처: ref-025, ref-036, ref-041, ref-322, ref-236, ref-323, ref-324, ref-138, ref-325. 주의: 모든 사실은 발행 주체 한 곳의 자료에 기댄다. q1-04 결론의 연결 방식 3분류(f26)와 q1-05 결론의 대응 방식 4분류(f35)는 이 위키의 [추정] 분류다. q1-03 은 산업 규격·서브모델만 대조해 부분 답으로 처리했다. IDTA 02020 요소 이름은 공식 템플릿(ConstraintSet·CapabilityRealizedBy)과 기존 제3자 논문 표기(ConditionContainer·realizedBy)가 달라 두 표기를 함께 제시한다. ref-228~ref-326 은 실행 2026-09-25-15 브리프와 id 가 충돌할 수 있다. 정정 요청 없음. 검증 검색 7회(리서치와 합쳐 22/40). 온톨로지 변경 승인: 오류 수정(f5), 개념 스킬 인터페이스(f19·f20·f21), 관계 스킬 / 노출된다 / 스킬 인터페이스(f19·f20), 관계 기능 / 일반화된다 / 기능(f31) — v0.1 → v0.2. 거부: 제약의 적용 시점 구분(f6·f10), 기능의 의미 식별자·능력 출처 값 메모(f29·f30·f14) — 둘 다 6절 질문으로 둔다. 새 질문 중복: action 파라미터 범위 보완 질문은 q4-06 과 중복이다. 단계 완료 조건: 미충족(부족: 비교표의 IEEE 1872 계열·KnowRob·SOMA·SSN/SOSA 행 다섯 정보 항목, ROP용 능력 개념 요구 목록 초안 미반영). 단계 전환: 미승인(막힌 질문 q1-03·q1-06·q1-07·q1-08).
 
 ## 트랙 추가 검증
 

@@ -99,8 +99,8 @@
       "claim": "IDTA 02020 능력 기술(Capability Description) 1.0 서브모델은 능력을 물리·가상 세계에 효과를 내는 기능의 구현 독립 명세로 정의하고, 속성(최대 속도·공차·온도 범위 등)과 두 종류의 제약 — 속성 제약(전제조건·불변조건·사후조건)과 능력 사이 순서·병행을 정하는 전이 제약 — 을 두며, 능력은 스킬로 구현된다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-318",
-        "ref-319"
+        "ref-242",
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -114,7 +114,7 @@
       "claim": "IDTA 02020 템플릿 JSON 은 CapabilitySet → CapabilityContainer 아래에 Capability(한정자 Required·Offered·NotAssigned), PropertySet(Property·Range 등), CapabilityRelations(CapabilityRealizedBy, ComposedOfSet, GeneralizedBySet), ConstraintSet(BasicConstraint·CustomConstraint·OCLConstraint·OperationConstraint, 전이 제약 컨테이너)을 두고 요소마다 semanticId 를 붙인다.",
       "tag": "사실",
       "source_ids": [
-        "ref-319"
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -142,7 +142,7 @@
       "claim": "IDTA 02047 무인운반차(AGV) 기술 데이터 1.0 템플릿은 최대 적재 질량, 적재·무적재 시 최대 등판·측경사 각, 최대 속도의 명세값(AsSpecified)과 운용값(AsOperated), 가동 시간 명세·운용값, 위치추정·정위치 정확도, 실외 사용 적합 여부와 요구 환경 조건, 부착 장비 인터페이스를 속성으로 두고 다수 속성에 ECLASS IRDI 를 semanticId 로 붙인다.",
       "tag": "사실",
       "source_ids": [
-        "ref-321"
+        "ref-245"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -156,7 +156,7 @@
       "claim": "SkiROS2 는 스킬을 행동 트리로 조합하는 ROS 기반 플랫폼으로, 스킬마다 실행 전 전제조건(pre-condition)·실행 중 유지조건(hold-condition)·실행 후 사후조건(post-condition)을 두고, 의미 데이터베이스 형태의 세계 모델로 스킬 파라미터를 자동 추론한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-326"
+        "ref-250"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -170,7 +170,7 @@
       "claim": "OPC UA for Robotics 공식 노드셋 문서는 모션 장치 시스템·컨트롤러·모션 장치·축·동력 전달계·부하(LoadType)·안전 상태(비상정지·보호정지) 유형과, 프로그램을 이름·노드로 적재하고 시작·정지하는 작업 제어(TaskControlType)와 운영 상태 기계를 정의하며, 목록에서 능력·스킬 유형은 확인되지 않았다.",
       "tag": "사실",
       "source_ids": [
-        "ref-320"
+        "ref-244"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -202,10 +202,10 @@
         "ref-228",
         "ref-031",
         "ref-051",
-        "ref-319",
-        "ref-321",
+        "ref-243",
+        "ref-245",
         "ref-230",
-        "ref-326"
+        "ref-250"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -219,7 +219,7 @@
       "claim": "IDTA 02047 이 속도·가동 시간을 명세값(AsSpecified)과 운용값(AsOperated)으로 나눠 두는 것은 RCO 가 구분한 광고 능력과 운용 능력에 대응하는 표현으로 보여, 능력 온톨로지의 '능력 출처 구분' 속성을 산업 서브모델의 값 쌍으로 채울 수 있을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-321",
+        "ref-245",
         "ref-041"
       ],
       "cross_checked": false,
@@ -236,7 +236,7 @@
       "source_ids": [
         "ref-228",
         "ref-230",
-        "ref-321",
+        "ref-245",
         "ref-236"
       ],
       "cross_checked": false,
@@ -323,7 +323,7 @@
       "claim": "Sidorenko 외(Procedia Manufacturing 55, 2021)는 스킬을 유한 상태 기계로 모델링해 OPC UA 로 노출하고, I4.0 언어의 '스킬 실행' 상호작용 프로토콜 메시지와 상호작용 상태 기계를 자산관리셸(AAS)에 표현하는 방법을 제시했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-322"
+        "ref-246"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -338,8 +338,8 @@
       "claim": "IDTA 02020 1.0 은 능력과 스킬 구현 사이를 CapabilityRealizedBy 관계 요소로만 잇고, README 는 스킬의 실행 인터페이스(명령·상태)를 이 서브모델에서 정하지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-319",
-        "ref-318"
+        "ref-243",
+        "ref-242"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -367,7 +367,7 @@
       "claim": "ISO 22166-202:2025 는 서비스 로봇 소프트웨어 모듈의 정보 모델 요구사항을 정하며, 설계·개발과 실행 시점에 쓰이는 인터페이스·속성·구성·실행 관련 정보를 구조화해 기술하게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-324"
+        "ref-248"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -383,7 +383,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-138",
-        "ref-324"
+        "ref-248"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -403,10 +403,10 @@
         "ref-040",
         "ref-036",
         "ref-231",
-        "ref-322",
+        "ref-246",
         "ref-230",
-        "ref-320",
-        "ref-319"
+        "ref-244",
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -449,7 +449,7 @@
       "claim": "IDTA 의 AAS 명세 Part 3a 는 IEC 61360 데이터 명세를 두어, 속성의 의미를 ECLASS·IEC 공통 데이터 사전(CDD) 같은 IEC 61360 기반 사전의 개념 기술을 가리키는 semanticId 로 정하게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-323"
+        "ref-247"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -464,7 +464,7 @@
       "claim": "IDTA 02047 템플릿은 제조사명·최대 적재 질량·속도 같은 속성에 ECLASS IRDI(0173-1#02-…)를 semanticId 로 붙여, 제조사가 쓰는 속성 이름과 무관하게 속성의 의미를 외부 사전 항목으로 고정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-321"
+        "ref-245"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -478,7 +478,7 @@
       "claim": "IDTA 02020 템플릿은 능력 사이에 일반화(CapabilityGeneralizedBy, 구체 능력→일반 능력)·구성(CapabilityComposedOf) 관계와 속성 사이 동일성(SameProperty) 관계를 두어, 제조사별 구체 능력을 공통 상위 능력에 연결할 수 있게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-319"
+        "ref-243"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -492,7 +492,7 @@
       "claim": "Dussard 외(2023)는 로봇의 구성 요소와 저수준 능력으로부터 에이전트의 능력을 추론하는 온톨로지 방법을 제안해, 로봇이 할 수 있는 일을 구성 요소 기반으로 일반화해 판단하게 했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-325"
+        "ref-249"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -539,11 +539,11 @@
         "ref-025",
         "ref-041",
         "ref-031",
-        "ref-323",
-        "ref-321",
-        "ref-319",
+        "ref-247",
+        "ref-245",
+        "ref-243",
         "ref-231",
-        "ref-325",
+        "ref-249",
         "ref-230",
         "ref-040"
       ],
@@ -662,7 +662,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-318",
+      "id": "ref-242",
       "org": "IDTA (admin-shell-io/submodel-templates)",
       "title": "Capability Description 1.0 — README (IDTA 02020 Submodel Capability Description)",
       "published": null,
@@ -677,7 +677,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-319",
+      "id": "ref-243",
       "org": "IDTA (admin-shell-io/submodel-templates)",
       "title": "IDTA 02020_Template_Capability_Description.json",
       "published": null,
@@ -722,7 +722,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-320",
+      "id": "ref-244",
       "org": "OPC Foundation (UA-Nodeset GitHub)",
       "title": "UA-Nodeset Robotics — Opc.Ua.Robotics.Nodeset2.documentation.csv",
       "published": null,
@@ -737,7 +737,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-321",
+      "id": "ref-245",
       "org": "IDTA (admin-shell-io/submodel-templates)",
       "title": "IDTA 02047-1-0 Template_TechnicalDataForAGV.json",
       "published": null,
@@ -752,7 +752,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-322",
+      "id": "ref-246",
       "org": "Sidorenko, A., Volkmann, M., Motsch, W., Wagner, A., & Ruskowski, M.",
       "title": "An OPC UA Model of the Skill Execution Interaction Protocol for the Active Asset Administration Shell",
       "published": "2021",
@@ -782,7 +782,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-323",
+      "id": "ref-247",
       "org": "IDTA(Industrial Digital Twin Association)",
       "title": "Specification of the Asset Administration Shell Part 3a: Data Specification – IEC 61360 (IDTA-01003-a-3-0-2)",
       "published": "2024-07",
@@ -797,7 +797,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-324",
+      "id": "ref-248",
       "org": "ISO",
       "title": "ISO 22166-202:2025 - Robotics — Modularity for service robots — Part 202: Information model for software modules",
       "published": "2025",
@@ -827,7 +827,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-325",
+      "id": "ref-249",
       "org": "Dussard, B. 외",
       "title": "Ontological Component-based Description of Robot Capabilities",
       "published": "2023-06",
@@ -842,7 +842,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-326",
+      "id": "ref-250",
       "org": "RVMI lab, Aalborg University (SkiROS2 GitHub)",
       "title": "SkiROS2 — README (skill-based robot control platform)",
       "published": null,
@@ -961,7 +961,7 @@
       "f12·f19·f21·f24·f27·f29·f32·f33 원문 미열람(검색 요약 범위)",
       "f25 KS B 7321-2 와 ISO 22166-202 의 부합화 여부·제정일 미확인",
       "q1-03: IEEE 1872 계열·KnowRob·SOMA·SSN/SOSA 의 다섯 정보 항목별 충족 정도는 이번에도 원문 대조 못 함(SOMA README 는 열었으나 하위 온톨로지 설명 없음)",
-      "ref-236 저자 미확인, ref-228~ref-321·ref-138·ref-326 발행일 미확인",
+      "ref-236 저자 미확인, ref-228~ref-245·ref-138·ref-250 발행일 미확인",
       "oq-005(VDA 5050 3.0.0 정확한 발행일) 미해결"
     ],
     "scope_violations": [
@@ -972,7 +972,7 @@
       "queries": 15,
       "sources": 14
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. GitHub 공식 저장소 원문 11건을 raw.githubusercontent.com 으로 열었다(재사용 ref-031 VDA 5050 명세, ref-051 state.schema, ref-040 PerformAction 원본 / 신규 ref-228 factsheet.schema, ref-318·ref-319 IDTA 02020 README·템플릿, ref-231 CaSkMan, ref-230 MassRobotics 스키마, ref-320 OPC UA Robotics 노드셋 CSV, ref-321 IDTA 02047 템플릿, ref-326 SkiROS2). 논문·ISO·KS·IDTA PDF 등 9건은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium). 교차 확인 0건. 검색 15회/40, 신규 출처 14건/20(ref-228~ref-326, next_ref_id 기준), 재사용 6건(ref-025, ref-031, ref-036, ref-040, ref-041, ref-051). 질문 선택: target.json 지정 q1-03·q1-04·q1-05. q1-03 은 원문을 연 산업 규격·서브모델·오픈소스 기준으로 다섯 항목 대응을 답했으나 학술 온톨로지(CORA·KnowRob·SSN)는 항목별 대조를 못 해 종합 신뢰도 medium 으로 봄. 참고: f8(MassRobotics 식별 보고의 cargoMaxWeight·cargoMaxVolume·maxSpeed 등)은 이번 대상이 아닌 q1-08 의 답 근거가 되므로 다음 트랙 실행에서 q1-08 답으로 쓰도록 제안한다. f5 는 온톨로지 초안 오류 개념의 '3.0 등급 제외' 메모와 단계 1 페이지의 '3.0.0 새 오류 등급 CRITICAL·URGENT(검색 요약)' 서술을 main 스키마 원문으로 보강한다(3.0.0 은 WARNING·URGENT·CRITICAL·FATAL 넷). 한국 자료: KS B 7321-2(ref-138) 존재만 확인, VDA 5050 국내 적용은 벤더 뉴스뿐이라 넣지 않음. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성·22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 후속 질문 4건, 온톨로지 변경 제안 6건, 일반 열린 질문 1건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. GitHub 공식 저장소 원문 11건을 raw.githubusercontent.com 으로 열었다(재사용 ref-031 VDA 5050 명세, ref-051 state.schema, ref-040 PerformAction 원본 / 신규 ref-228 factsheet.schema, ref-242·ref-243 IDTA 02020 README·템플릿, ref-231 CaSkMan, ref-230 MassRobotics 스키마, ref-244 OPC UA Robotics 노드셋 CSV, ref-245 IDTA 02047 템플릿, ref-250 SkiROS2). 논문·ISO·KS·IDTA PDF 등 9건은 검색 요약만 봐서 원문 미열람(신뢰도 상한 medium). 교차 확인 0건. 검색 15회/40, 신규 출처 14건/20(ref-228~ref-250, next_ref_id 기준), 재사용 6건(ref-025, ref-031, ref-036, ref-040, ref-041, ref-051). 질문 선택: target.json 지정 q1-03·q1-04·q1-05. q1-03 은 원문을 연 산업 규격·서브모델·오픈소스 기준으로 다섯 항목 대응을 답했으나 학술 온톨로지(CORA·KnowRob·SSN)는 항목별 대조를 못 해 종합 신뢰도 medium 으로 봄. 참고: f8(MassRobotics 식별 보고의 cargoMaxWeight·cargoMaxVolume·maxSpeed 등)은 이번 대상이 아닌 q1-08 의 답 근거가 되므로 다음 트랙 실행에서 q1-08 답으로 쓰도록 제안한다. f5 는 온톨로지 초안 오류 개념의 '3.0 등급 제외' 메모와 단계 1 페이지의 '3.0.0 새 오류 등급 CRITICAL·URGENT(검색 요약)' 서술을 main 스키마 원문으로 보강한다(3.0.0 은 WARNING·URGENT·CRITICAL·FATAL 넷). 한국 자료: KS B 7321-2(ref-138) 존재만 확인, VDA 5050 국내 적용은 벤더 뉴스뿐이라 넣지 않음. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성·22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 후속 질문 4건, 온톨로지 변경 제안 6건, 일반 열린 질문 1건."
   },
   "track": {
     "slug": "manual-capability-ontology",

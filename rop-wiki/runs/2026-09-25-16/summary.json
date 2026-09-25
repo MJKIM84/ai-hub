@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-16",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "manual-capability-ontology",
+    "stage": 1,
+    "question_ids": [
+      "q1-03",
+      "q1-04",
+      "q1-05"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 5,
+  "new_sources": 9,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2663.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-04·q1-05 답함, q1-03 부분 답을 공식 저장소 원문 근거로 갱신, 온톨로지 초안 v0.1 → v0.2, 비교표 산업 규격 행 보강·후보 밖 3행 추가, 새 질문 3건. ref-228·ref-230·ref-231·ref-236·ref-138 은 기존 참고문헌과 같은 출처로 재사용했고, 신규 id 는 ref-243~ref-250 이다 | run 2026-09-25-16",
+  "notes": [
+    "참고문헌 생성: references/ref-243.md",
+    "참고문헌 생성: references/ref-244.md",
+    "참고문헌 생성: references/ref-245.md",
+    "참고문헌 생성: references/ref-246.md",
+    "참고문헌 생성: references/ref-247.md",
+    "참고문헌 생성: references/ref-248.md",
+    "참고문헌 생성: references/ref-249.md",
+    "참고문헌 생성: references/ref-250.md",
+    "용어집 갱신: glossary/asset-administration-shell.md",
+    "용어집 생성: glossary/vda-5050-factsheet.md",
+    "용어집 생성: glossary/semantic-id.md",
+    "온톨로지 초안 버전 v0.1 → v0.2 (버전 이력 추가)"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 5,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 8,
+    "standards": 7,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 10,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:49:45 KST",
+  "usage": {
+    "input_tokens": 70,
+    "cache_creation_input_tokens": 1790895,
+    "cache_read_input_tokens": 8075277,
+    "output_tokens": 322470,
+    "cost_usd": 23.2728,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.7306,
+        "output_tokens": 49825,
+        "cache_read_input_tokens": 5446427,
+        "cache_creation_input_tokens": 263571
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.501,
+        "output_tokens": 48084,
+        "cache_read_input_tokens": 2330221,
+        "cache_creation_input_tokens": 347089
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 8.2575,
+        "output_tokens": 202304,
+        "cache_read_input_tokens": 126037,
+        "cache_creation_input_tokens": 523276
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 5.699,
+        "output_tokens": 21265,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 655400
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 11,
+  "cross_checked_findings": 0
+}

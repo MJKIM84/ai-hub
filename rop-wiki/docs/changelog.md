@@ -47,6 +47,26 @@ version: 1
 | 2026-09-25-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-04·q1-05 답함, q1-03 부분 답을 원문 근거로 교체, q1-02 의 IDTA 02020 표기·VDA 5050 3.0.0 오류 등급 보강, 후속 질문 3건, 완료 조건 미충족, 상태 줄 갱신. 2차: 4절 출처 표기 정정, ref-242 → ref-229, 기존 참고문헌 각주 줄을 색인 문자열로 통일 |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.1 → v0.2: 개념 오류 수정(f5), 개념 스킬 인터페이스 추가(f19·f20·f21), 관계 2건 추가(f19·f20, f31), 거부 2건은 6절 질문, H1·도입문 버전 갱신. 2차: ref-242 → ref-229, ref-231 각주 줄을 색인 문자열로 통일 |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | VDA 5050·MassRobotics·OPC UA Robotics·AAS·Open-RMF 행을 원문 근거로 보강, 후보 밖 3행(IDTA 02047, SkiROS2, CaSkMan) 추가, 빠진 정보 요약 갱신, 상태 줄 갱신. 2차: ref-242 → ref-229, ref-230·ref-231 각주 줄을 색인 문자열로 통일 |
+| 2026-09-25-16 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 3절 선행 연구와 4절 필요한 표준을 단계 1 실행 2026-09-25-16 근거로 채움. 2차: 범위 능력(충전·적재)과 표준 항목의 대응을 [추정]으로 분리, ref-242 → ref-229, 기존 참고문헌 각주 줄을 색인 문자열로 통일 |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 6. 살아있는 산출물 링크: 온톨로지 초안 v0.2, 비교표 보강, 백로그 수치 갱신(상태 줄은 값 변화 없음). 2차 변경 없음 |
+| 2026-09-25-16 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-04·q1-05 답함, q1-03 부분 답을 공식 저장소 원문 근거로 갱신, 온톨로지 초안 v0.1 → v0.2, 비교표 산업 규격 행 보강·후보 밖 3행 추가, 새 질문 3건. ref-228·ref-230·ref-231·ref-236·ref-138 은 기존 참고문헌과 같은 출처로 재사용했고, 신규 id 는 ref-243~ref-250 이다 |
+| 2026-09-25-16 | 생성 | [docs/references/ref-243.md](references/ref-243.md) | 참고문헌 ref-243 등록: IDTA 02020_Template_Capability_Description.json |
+| 2026-09-25-16 | 생성 | [docs/references/ref-244.md](references/ref-244.md) | 참고문헌 ref-244 등록: UA-Nodeset Robotics — Opc.Ua.Robotics.Nodeset2.documentation… |
+| 2026-09-25-16 | 생성 | [docs/references/ref-245.md](references/ref-245.md) | 참고문헌 ref-245 등록: IDTA 02047-1-0 Template_TechnicalDataForAGV.json |
+| 2026-09-25-16 | 생성 | [docs/references/ref-246.md](references/ref-246.md) | 참고문헌 ref-246 등록: An OPC UA Model of the Skill Execution Interaction Protocol… |
+| 2026-09-25-16 | 생성 | [docs/references/ref-247.md](references/ref-247.md) | 참고문헌 ref-247 등록: Specification of the Asset Administration Shell Part 3a: Dat… |
+| 2026-09-25-16 | 생성 | [docs/references/ref-248.md](references/ref-248.md) | 참고문헌 ref-248 등록: ISO 22166-202:2025 - Robotics — Modularity for service robot… |
+| 2026-09-25-16 | 생성 | [docs/references/ref-249.md](references/ref-249.md) | 참고문헌 ref-249 등록: Ontological Component-based Description of Robot Capabilitie… |
+| 2026-09-25-16 | 생성 | [docs/references/ref-250.md](references/ref-250.md) | 참고문헌 ref-250 등록: SkiROS2 — README (skill-based robot control platform) |
+| 2026-09-25-16 | 갱신 | [docs/glossary/asset-administration-shell.md](glossary/asset-administration-shell.md) | 용어집 항목 자산 관리 셸 |
+| 2026-09-25-16 | 생성 | [docs/glossary/vda-5050-factsheet.md](glossary/vda-5050-factsheet.md) | 용어집 항목 VDA 5050 팩트시트 |
+| 2026-09-25-16 | 생성 | [docs/glossary/semantic-id.md](glossary/semantic-id.md) | 용어집 항목 의미 식별자 |
+| 2026-09-25-16 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 10건 갱신 |
+| 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-15 | 갱신 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s7.md](topics/2026/2026-09-25-area05-s7.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,658자)을 옮겼다 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s6.md](topics/2026/2026-09-25-area05-s6.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "6. 대표 접근법과 기술" 절(1,396자)을 옮겼다 |

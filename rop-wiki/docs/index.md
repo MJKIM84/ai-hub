@@ -68,7 +68,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 39 | q1-02 — 산업 상호운용 규격은 로봇 기능을 어떤 형식으로 기술하는가? (후보: VDA 5050의 팩트시트, MassRobotics AMR 상호운용 표준, OPC UA Robotics, Asset Administration Shell의 능력·스킬·서비스 모델, Open-RMF Fleet Adapter의 기능 기술) ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-02)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q1-05 — 제조사마다 같은 이름의 기능('운반', '도킹', '리프트')이 다른 의미를 갖는 문제를 기존 모델은 어떻게 다루는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 21 | q1-01 — 자연어 지시를 작업 단위로 분해하는 기존 접근은 무엇이 있는가? ([답](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-01)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 20 | q1-03 — 충전 위치·작업대처럼 로봇 운영에 쓰는 시설을 도면에서 인식하거나 도면 밖 정보로 보완한 사례가 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-03)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
