@@ -5203,6 +5203,207 @@
       "action": "갱신",
       "page": "docs/tracks/nl-task-chatbot/log.md",
       "summary": "트랙 로그 항목 추가(단계 2)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/stage-2-data-and-standards.md",
+      "summary": "q2-02 답함(3절 q2-02 소제목 신설: BIM·벡터 CAD·래스터 입력별 정보 항목과 빠지는 정보, 입력 형식별 비교표), 2절 표에 q2-08·q2-09 추가, 4·5·6·7·8·9절 갱신. 2차 수정: 비교표 문 행 래스터 칸에 (추정) 표시, 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정. H1 아래 단계 상태 줄은 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔 쪽 갱신 필요"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "summary": "초안 v0.4 → v0.5: 문 BIM 대응 클래스 IfcDoor(f1), 계단 BIM 대응 클래스 IfcStair(f3), 엘리베이터 유형 값 ELEVATOR 확정(f4), 평면도 길이 단위·축척 정보 속성(f12) 반영, 6절에 거부된 변경과 프록시·충전 위치 질문 추가. 2차 수정: 7절 끝 각주 정의를 직접 보내 [^ref-432] 기관을 Noardo 외로 고침(버전 이력 자동 영역은 그대로 유지). H1 의 '(v0.4)' 표기는 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔가 '(v0.5)'로 맞춰야 한다"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/ideas/floorplan-recognition.md",
+      "summary": "4절에 '입력 형식별 정보 항목' 소절(q2-02, 실행 2026-09-25-36) 신설, 4절 머리말과 q2-01 소절의 'q2-02 미조사' 문장을 갱신. 2차 수정: 비교표 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/index.md",
+      "summary": "6. 살아있는 산출물 링크 갱신(스키마 초안 v0.5, 아이디어 4절 입력 형식별 정보 항목, 백로그 q2-02 답함·후속 질문 2건). H1 아래 트랙 상태 줄(현재 단계 단계 2, 마지막 트랙 실행)은 H2 밖이라 patches 로 바꾸지 못했다"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "요약",
+      "page": "docs/tracks/floorplan-recognition/stage-2-data-and-standards.md",
+      "summary": "건축 도면 자동 인식 단계 2: q2-02 답함(도면 입력 형식별 정보 항목), 공간 그래프 스키마 초안 v0.4 → v0.5, 후속 질문 2건(q2-08·q2-09), 1차 조건부 승인 수정 17건·2차 수정 3건 이행",
+      "index_updates": {
+        "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 2: 도면 입력 형식(BIM·벡터 CAD·래스터 스캔)별로 담기는 정보와 빠지는 정보 정리(q2-02), 공간 그래프 스키마 초안 v0.5",
+        "category_recent": "2026-09-25 — 건축 도면 자동 인식 단계 2: 6. 지도·공간·위치 모델 관련 도면 입력 형식별 정보 항목(q2-02) 확인, 스키마 초안 v0.5(실행 2026-09-25-36)",
+        "area_recent": "2026-09-25 — 건축 도면 자동 인식 단계 2: 도면 입력 형식별 공간 정보와 국내 CAD 레이어 표준을 7. 관련 표준·프레임워크·오픈소스 절에 반영하도록 제안(실행 2026-09-25-36)"
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-419.md",
+      "summary": "참고문헌 ref-419 등록: IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-420.md",
+      "summary": "참고문헌 ref-420 등록: IFC 4.3 — IfcStair (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-421.md",
+      "summary": "참고문헌 ref-421 등록: IFC 4.3 — IfcTransportElementTypeEnum (개발 브랜치 ifc4.3-main 원본…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-422.md",
+      "summary": "참고문헌 ref-422 등록: IFC 4.3 — IfcWall (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-423.md",
+      "summary": "참고문헌 ref-423 등록: IFC 4.3 — IfcBuildingStorey (개발 브랜치 ifc4.3-main 원본, 게시판 IFC…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-424.md",
+      "summary": "참고문헌 ref-424 등록: ezdxf documentation — Concepts: Blocks (docs/source/concepts…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-425.md",
+      "summary": "참고문헌 ref-425 등록: ezdxf documentation — Concepts: Layers (docs/source/concepts…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-426.md",
+      "summary": "참고문헌 ref-426 등록: ezdxf documentation — Concepts: DXF Units (docs/source/conce…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-427.md",
+      "summary": "참고문헌 ref-427 등록: ISO 13567-1:2017 - Technical product documentation — Organiz…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-428.md",
+      "summary": "참고문헌 ref-428 등록: AIA CAD Layer Guidelines, Layer Name Format (NCS V5)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-429.md",
+      "summary": "참고문헌 ref-429 등록: KS F 1542(2020 확인) CAD 도면 작성을 위한 레이어 원칙과 기준"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-430.md",
+      "summary": "참고문헌 ref-430 등록: 건설CALS 전자도면 작성표준"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-431.md",
+      "summary": "참고문헌 ref-431 등록: 건축 표준 캐드 레이어의 실무적용 실태 분석 연구"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-432.md",
+      "summary": "참고문헌 ref-432 등록: An Inspection of IFC Models from Practice"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-433.md",
+      "summary": "참고문헌 ref-433 등록: Text-Aided Multi-Modal Panoptic Symbol Spotting for CAD Floo…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-434.md",
+      "summary": "참고문헌 ref-434 등록: ArchCAD-400k: A Large-Scale CAD drawings Dataset and New Bas…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-435.md",
+      "summary": "참고문헌 ref-435 등록: Raster Image-Based House-Type Recognition and Three-Dimensio…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/references/ref-436.md",
+      "summary": "참고문헌 ref-436 등록: 건설산업 BIM 시행지침 정책정보 상세보기"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/glossary/drawing-exchange-format.md",
+      "summary": "용어집 항목 도면 교환 형식"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "생성",
+      "page": "docs/glossary/block-reference.md",
+      "summary": "용어집 항목 블록 참조"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/standards/index.md",
+      "summary": "표준·프레임워크 5건 추가·갱신"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/question-backlog.md",
+      "summary": "백로그 항목 3건 갱신"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-36",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/log.md",
+      "summary": "트랙 로그 항목 추가(단계 2)"
     }
   ]
 }

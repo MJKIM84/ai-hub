@@ -28,7 +28,7 @@
       "claim": "IFC 4.3 문서는 IfcDoor 를 사람·물품·차량의 통제된 출입에 주로 쓰는 건축 요소로 정의하고, 전체 높이·폭(OverallHeight·OverallWidth)과 여닫는 방식(OperationType: 단일·양방향 스윙, 회전문 등) 속성을 두며, 문은 IfcRelFillsElement 로 벽의 개구부(IfcOpeningElement)를 채운다.",
       "tag": "사실",
       "source_ids": [
-        "ref-738"
+        "ref-419"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -42,7 +42,7 @@
       "claim": "IFC 4.3 문서는 IfcWall 을 건축물을 둘러싸거나 나누는 수직 구조로 정의하고, 문·창문 같은 개구부를 IfcRelVoidsElement 로 벽에 붙는 IfcOpeningElement 로 표현하며, 벽은 층·건물·대지에 공간적으로 포함된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-741"
+        "ref-422"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -56,7 +56,7 @@
       "claim": "IFC 4.3 문서는 IfcStair 를 다른 층으로 걸어서 오갈 수 있게 하는 수평 단(계단·참)의 연속으로 정의하고, 계단참(IfcStairFlight)·참 슬래브(IfcSlab LANDING)·난간(IfcRailing)으로 분해할 수 있으며, 기본 공간 컨테이너는 IfcBuildingStorey 이고 여러 층에 걸치면 IfcBuilding 에 포함한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-739"
+        "ref-420"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -70,7 +70,7 @@
       "claim": "IFC 4.3 의 운송 요소 유형 열거(IfcTransportElementTypeEnum)는 ELEVATOR(사람·물품을 수직으로 옮기는 승강기), ESCALATOR, MOVINGWALKWAY, CRANEWAY, HAULINGGEAR, LIFTINGGEAR 와 USERDEFINED·NOTDEFINED 값을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-740"
+        "ref-421"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -84,7 +84,7 @@
       "claim": "IFC 4.3 문서는 IfcBuildingStorey 를 연속한 두 바닥(또는 바닥과 지붕) 사이 공간의 수평 집합으로 정의하며, 층 기준 고도 속성 Elevation 은 IFC4.3.0.0 에서 폐기 예정(deprecated)으로 두고 속성 세트의 ElevationOfSSLRelative 또는 ElevationOfFFLRelative 사용을 권한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-742"
+        "ref-423"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -98,9 +98,9 @@
       "claim": "IFC 4.3 입력에는 벽·문·계단·엘리베이터·층이 유형이 붙은 객체와 층 포함 관계로 들어 있지만, 문이 어느 두 공간을 잇는지는 문→개구부→벽의 채움·보이드 관계와 공간 경계(IfcRelSpaceBoundary)를 거쳐 도출해야 하고 계단·엘리베이터가 잇는 층도 직접 속성이 아니라 포함 관계·형상에서 도출해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-738",
-        "ref-741",
-        "ref-739",
+        "ref-419",
+        "ref-422",
+        "ref-420",
         "ref-334",
         "ref-156"
       ],
@@ -117,7 +117,7 @@
       "claim": "실무에서 만든 IFC 모델을 표준 정의와 대조한 연구(Applied Sciences, 2021)는 IFC 가 예정하지 않은 요소를 담는 IfcBuildingElementProxy 가 유효한 IFC 엔터티가 있는 요소의 대체로 잘못 쓰일 수 있다고 보고 모델마다 그 사용을 점검·채점했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-751"
+        "ref-432"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -132,9 +132,9 @@
       "claim": "BIM 입력에서 엘리베이터·문·계단이 IfcTransportElement(ELEVATOR)·IfcDoor·IfcStair 로 담긴다는 것은 스키마의 가능성이고, 실무 모델에서는 이들이 IfcBuildingElementProxy 로 내보내져 유형 정보가 빠질 수 있으므로 인식 전에 클래스 사용을 점검해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-751",
-        "ref-740",
-        "ref-738"
+        "ref-432",
+        "ref-421",
+        "ref-419"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -165,7 +165,7 @@
       "claim": "DXF 형식에서 블록(block)은 여러 번 배치할 수 있는 엔터티 묶음이고 각 배치는 블록 참조(INSERT 엔터티)로 위치·회전·축척을 가지며, 블록 참조에는 태그가 붙은 속성 텍스트(ATTRIB)를 달아 메타데이터를 실을 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-743"
+        "ref-424"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -179,7 +179,7 @@
       "claim": "DXF 형식에서 레이어는 객체를 논리적 묶음으로 나누고 보이기·선택·색상·선 종류를 제어하는 수단이며, 벽·가구·주석 같은 레이어 구분은 사용 관례로 예시될 뿐 형식 자체가 정한 의미는 아니다.",
       "tag": "사실",
       "source_ids": [
-        "ref-744"
+        "ref-425"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -193,7 +193,7 @@
       "claim": "DXF 의 길이·좌표 값은 그 자체로 단위가 없고, 모델 공간의 단위는 선택 헤더 변수 $INSUNITS 로 주어지며 $MEASUREMENT 는 미터법·야드파운드법 선 종류·해치 패턴 선택에만 관계한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-745"
+        "ref-426"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -207,7 +207,7 @@
       "claim": "ISO 13567-1:2017 은 CAD 파일의 레이어 구조화 원칙을 정하고, 레이어 이름을 책임 주체(설계 분야)·요소(분류 체계 코드)·표현 등 고정 길이 필드로 이루어진 문자열로 구성하게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-746"
+        "ref-427"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -222,7 +222,7 @@
       "claim": "미국 국가 CAD 표준(NCS)이 채택한 AIA CAD 레이어 형식은 하이픈으로 나눈 필드(분야 지정자·주 그룹 등)로 레이어 이름을 짓고, 건축 분야의 문 레이어를 A-DOOR, 벽 레이어를 A-WALL 같은 이름으로 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-747"
+        "ref-428"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -237,8 +237,8 @@
       "claim": "국내에서는 국토교통부 건설CALS 체계의 '건설CALS 전자도면 작성표준'이 전자도면의 도면분류·파일명·선·색상·레이어·심벌을 정하며(V1.0 2004-08 공고, V1.1 2006-12 개정), 레이어 부문은 KS F 1542 'CAD 도면 작성을 위한 레이어 원칙과 기준'(2020 확인)으로 국가표준화되어 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-749",
-        "ref-748"
+        "ref-430",
+        "ref-429"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -253,7 +253,7 @@
       "claim": "신동철(대한건축학회 논문집 계획계 25(11), 2009)은 국내 건축 표준 CAD 레이어의 실무 적용 실태를 분석했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-750"
+        "ref-431"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -268,7 +268,7 @@
       "claim": "ArchCAD-400K 프로젝트 페이지는 체계적으로 보관된 CAD 도면의 고유 속성인 레이어·블록 계층을 이용해 구조 인식형 자동 라벨링을 하고, 전문가 보정을 래스터가 아닌 벡터 공간에서 직접 한다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-753"
+        "ref-434"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -298,7 +298,7 @@
       "claim": "2026년 프리프린트(arXiv 2607.12678)는 CAD 평면도의 텍스트 주석이 유형과 등급·치수 같은 속성을 압축 코드(예: 'FM B 1321')로 담는 다층 의미 구조를 가져, 이를 선 요소 단위 심볼 스포팅에 결합하는 것이 과제라고 보고 텍스트를 함께 쓰는 다중 모달 방법을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-752"
+        "ref-433"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -328,14 +328,14 @@
       "claim": "벡터 CAD 입력에서 벽·문·계단·엘리베이터는 선·폴리라인·블록 참조·텍스트로 들어 있고 그 의미는 형식이 아니라 프로젝트의 레이어·블록 이름 관례(ISO 13567, NCS, KS F 1542 같은 명명 표준을 따를 수도 있음)와 텍스트 주석에서 읽어야 하며, 길이 단위도 선택 헤더에 기대므로, 표준을 따르지 않은 도면에서는 요소 의미와 축척을 인식으로 복원해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-743",
-        "ref-744",
-        "ref-745",
-        "ref-746",
-        "ref-747",
-        "ref-748",
-        "ref-752",
-        "ref-753"
+        "ref-424",
+        "ref-425",
+        "ref-426",
+        "ref-427",
+        "ref-428",
+        "ref-429",
+        "ref-433",
+        "ref-434"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -366,7 +366,7 @@
       "claim": "래스터 기반 주택 평면 인식·3D 재구성 연구(Buildings 15(7), 2025)는 YOLOv8 과 Shi–Tomasi 모서리 검출로 치수선 끝점을 찾고 사전학습 다중 모달 OCR(OFA-OCR)로 치수 숫자를 읽어 축척을 계산했으며, 축척 계산 정확도가 95%를 넘었다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-754"
+        "ref-435"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -402,7 +402,7 @@
         "ref-069",
         "ref-070",
         "ref-074",
-        "ref-754"
+        "ref-435"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -419,8 +419,8 @@
       "source_ids": [
         "ref-214",
         "ref-215",
-        "ref-746",
-        "ref-747",
+        "ref-427",
+        "ref-428",
         "ref-063",
         "ref-073"
       ],
@@ -453,8 +453,8 @@
       "tag": "추정",
       "source_ids": [
         "ref-156",
-        "ref-742",
-        "ref-752",
+        "ref-423",
+        "ref-433",
         "ref-074"
       ],
       "cross_checked": false,
@@ -470,7 +470,7 @@
       "claim": "국토교통부는 2022-07 BIM 성과품의 작성·납품과 활용의 방법·절차를 제시하는 '건설산업 BIM 시행지침'을 발표했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-755"
+        "ref-436"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -485,14 +485,14 @@
       "claim": "q2-02 에 대해 종합하면, BIM(IFC) 입력은 벽·문(폭·여닫는 방식)·계단·엘리베이터·층을 유형 객체로 담아 가장 정보가 많지만 연결은 도출해야 하고 실무 모델은 프록시 오분류가 있을 수 있으며, 벡터 CAD 는 기하는 정확하나 의미·단위가 레이어·블록·텍스트 관례에 기대고, 래스터 스캔은 의미·축척을 모두 인식으로 복원해야 하며, 충전 위치는 세 형식 모두 표준 표현이 확인되지 않은 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-738",
-        "ref-739",
-        "ref-740",
-        "ref-751",
-        "ref-744",
-        "ref-745",
-        "ref-752",
-        "ref-754",
+        "ref-419",
+        "ref-420",
+        "ref-421",
+        "ref-432",
+        "ref-425",
+        "ref-426",
+        "ref-433",
+        "ref-435",
         "ref-214"
       ],
       "cross_checked": false,
@@ -506,7 +506,7 @@
   ],
   "sources": [
     {
-      "id": "ref-738",
+      "id": "ref-419",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -521,7 +521,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-739",
+      "id": "ref-420",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcStair (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -536,7 +536,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-740",
+      "id": "ref-421",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcTransportElementTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -551,7 +551,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-741",
+      "id": "ref-422",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcWall (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -566,7 +566,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-742",
+      "id": "ref-423",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcBuildingStorey (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -581,7 +581,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-743",
+      "id": "ref-424",
       "org": "Moitzi, M. (mozman/ezdxf GitHub)",
       "title": "ezdxf documentation — Concepts: Blocks (docs/source/concepts/blocks.rst)",
       "published": null,
@@ -596,7 +596,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-744",
+      "id": "ref-425",
       "org": "Moitzi, M. (mozman/ezdxf GitHub)",
       "title": "ezdxf documentation — Concepts: Layers (docs/source/concepts/layers.rst)",
       "published": null,
@@ -611,7 +611,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-745",
+      "id": "ref-426",
       "org": "Moitzi, M. (mozman/ezdxf GitHub)",
       "title": "ezdxf documentation — Concepts: DXF Units (docs/source/concepts/units.rst)",
       "published": null,
@@ -626,7 +626,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-746",
+      "id": "ref-427",
       "org": "ISO",
       "title": "ISO 13567-1:2017 - Technical product documentation — Organization and naming of layers for CAD — Part 1: Overview and principles",
       "published": "2017",
@@ -641,7 +641,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-747",
+      "id": "ref-428",
       "org": "National Institute of Building Sciences (United States National CAD Standard)",
       "title": "AIA CAD Layer Guidelines, Layer Name Format (NCS V5)",
       "published": null,
@@ -656,7 +656,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-748",
+      "id": "ref-429",
       "org": "국가표준인증통합정보시스템(KSSN)",
       "title": "KS F 1542(2020 확인) CAD 도면 작성을 위한 레이어 원칙과 기준",
       "published": "2020-12",
@@ -671,7 +671,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-749",
+      "id": "ref-430",
       "org": "국토교통부 건설사업정보시스템(CALS)",
       "title": "건설CALS 전자도면 작성표준",
       "published": null,
@@ -686,7 +686,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-750",
+      "id": "ref-431",
       "org": "신동철(대한건축학회 논문집 계획계)",
       "title": "건축 표준 캐드 레이어의 실무적용 실태 분석 연구",
       "published": "2009-11",
@@ -701,7 +701,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-751",
+      "id": "ref-432",
       "org": "Applied Sciences(MDPI) 게재 논문 저자(미확인)",
       "title": "An Inspection of IFC Models from Practice",
       "published": "2021",
@@ -716,7 +716,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-752",
+      "id": "ref-433",
       "org": "arXiv 2607.12678 저자(미확인)",
       "title": "Text-Aided Multi-Modal Panoptic Symbol Spotting for CAD Floor Plan Drawings",
       "published": "2026-07",
@@ -731,7 +731,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-753",
+      "id": "ref-434",
       "org": "ArchiAI Lab (ArchCAD-400K 프로젝트)",
       "title": "ArchCAD-400k: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting — project page",
       "published": null,
@@ -746,7 +746,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-754",
+      "id": "ref-435",
       "org": "Buildings(MDPI) 게재 논문 저자(미확인)",
       "title": "Raster Image-Based House-Type Recognition and Three-Dimensional Reconstruction Technology",
       "published": "2025",
@@ -761,7 +761,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-755",
+      "id": "ref-436",
       "org": "국토교통부",
       "title": "건설산업 BIM 시행지침 정책정보 상세보기",
       "published": "2022-07",
@@ -1066,7 +1066,7 @@
       "f10~f12 DXF 근거는 Autodesk 공식 DXF 참조가 아닌 오픈소스 라이브러리(ezdxf) 문서 기준",
       "f13~f15 ISO 13567·NCS·KS F 1542 는 유료·미열람이라 문·계단·승강기·충전 위치 레이어 코드의 유무를 확인하지 못함",
       "f16 국내 표준 CAD 레이어 실무 적용 실태의 분석 결과(사용 비율 등) 미확인",
-      "f19·f23 성능 수치는 저자 보고 단일 출처, ref-751·ref-752·ref-754 저자 목록 미확인",
+      "f19·f23 성능 수치는 저자 보고 단일 출처, ref-432·ref-433·ref-435 저자 목록 미확인",
       "f24 AI Hub·CubiCasa5K 전체 클래스 목록 미확인(q2-04 범위)",
       "f3 IfcStair 가 잇는 두 층을 가리키는 전용 속성의 존재는 열람 범위에서 확인하지 못함",
       "공공공사 BIM 의무화 확대 일정은 벤더 요약에만 있어 finding 으로 내지 않음"
@@ -1078,7 +1078,7 @@
       "queries": 16,
       "sources": 18
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 9건을 열었다(ref-738~ref-742 IFC 4.3 개발 브랜치 IfcDoor·IfcStair·IfcTransportElementTypeEnum·IfcWall·IfcBuildingStorey, ref-743~ref-745 ezdxf 문서 blocks·layers·units, ref-753 ArchCAD-400K 프로젝트 페이지). 나머지 신규 9건과 재사용 13건은 원문 미열람이라 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 16회/40, 신규 출처 18건/20(ref-738~ref-755, 예약 구간 안), 재사용 13건. 질문 선택: target.json 지정 q2-02 1건. q2-02 는 BIM·벡터 CAD·래스터 입력별로 담기는 정보와 빠지는 정보(연결 도출 필요, 프록시 오분류 가능성, 레이어·단위 관례 의존, 축척 부재, 충전 위치 표준 표현 부재)로 답했으며 종합(f30)은 추정이다. 한국 자료: 건설CALS 전자도면 작성표준(ref-749), KS F 1542(ref-748), 신동철 2009(ref-750), 국토교통부 BIM 시행지침(ref-755), AI Hub(ref-074 재사용). 교차 규칙: 도면 해석 AI 연구(f17·f19·f23)는 27. AI·학습·적응과 모델 운영과 6. 지도·공간·위치 모델 양쪽 반영을 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 일반 열린 질문 신규 없음(새 질문은 모두 트랙 전용). 후속 질문 3건, 온톨로지 변경 제안 4건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 9건을 열었다(ref-419~ref-423 IFC 4.3 개발 브랜치 IfcDoor·IfcStair·IfcTransportElementTypeEnum·IfcWall·IfcBuildingStorey, ref-424~ref-426 ezdxf 문서 blocks·layers·units, ref-434 ArchCAD-400K 프로젝트 페이지). 나머지 신규 9건과 재사용 13건은 원문 미열람이라 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 16회/40, 신규 출처 18건/20(ref-419~ref-436, 예약 구간 안), 재사용 13건. 질문 선택: target.json 지정 q2-02 1건. q2-02 는 BIM·벡터 CAD·래스터 입력별로 담기는 정보와 빠지는 정보(연결 도출 필요, 프록시 오분류 가능성, 레이어·단위 관례 의존, 축척 부재, 충전 위치 표준 표현 부재)로 답했으며 종합(f30)은 추정이다. 한국 자료: 건설CALS 전자도면 작성표준(ref-430), KS F 1542(ref-429), 신동철 2009(ref-431), 국토교통부 BIM 시행지침(ref-436), AI Hub(ref-074 재사용). 교차 규칙: 도면 해석 AI 연구(f17·f19·f23)는 27. AI·학습·적응과 모델 운영과 6. 지도·공간·위치 모델 양쪽 반영을 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 일반 열린 질문 신규 없음(새 질문은 모두 트랙 전용). 후속 질문 3건, 온톨로지 변경 제안 4건."
   },
   "track": {
     "slug": "floorplan-recognition",

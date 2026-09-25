@@ -53,6 +53,34 @@ version: 1
 | 2026-09-25-37 | 생성 | [docs/references/ref-418.md](references/ref-418.md) | 참고문헌 ref-418 등록: Mecalux integrates generative AI into Easy WMS |
 | 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-02 답함(3절 q2-02 소제목 신설: BIM·벡터 CAD·래스터 입력별 정보 항목과 빠지는 정보, 입력 형식별 비교표), 2절 표에 q2-08·q2-09 추가, 4·5·6·7·8·9절 갱신. 2차 수정: 비교표 문 행 래스터 칸에 (추정) 표시, 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정. H1 아래 단계 상태 줄은 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔 쪽 갱신 필요 |
+| 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.4 → v0.5: 문 BIM 대응 클래스 IfcDoor(f1), 계단 BIM 대응 클래스 IfcStair(f3), 엘리베이터 유형 값 ELEVATOR 확정(f4), 평면도 길이 단위·축척 정보 속성(f12) 반영, 6절에 거부된 변경과 프록시·충전 위치 질문 추가. 2차 수정: 7절 끝 각주 정의를 직접 보내 `[^ref-432]` 기관을 Noardo 외로 고침(버전 이력 자동 영역은 그대로 유지). H1 의 '(v0.4)' 표기는 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔가 '(v0.5)'로 맞춰야 한다 |
+| 2026-09-25-36 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 4절에 '입력 형식별 정보 항목' 소절(q2-02, 실행 2026-09-25-36) 신설, 4절 머리말과 q2-01 소절의 'q2-02 미조사' 문장을 갱신. 2차 수정: 비교표 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정 |
+| 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크 갱신(스키마 초안 v0.5, 아이디어 4절 입력 형식별 정보 항목, 백로그 q2-02 답함·후속 질문 2건). H1 아래 트랙 상태 줄(현재 단계 단계 2, 마지막 트랙 실행)은 H2 밖이라 patches 로 바꾸지 못했다 |
+| 2026-09-25-36 | 요약 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | 건축 도면 자동 인식 단계 2: q2-02 답함(도면 입력 형식별 정보 항목), 공간 그래프 스키마 초안 v0.4 → v0.5, 후속 질문 2건(q2-08·q2-09), 1차 조건부 승인 수정 17건·2차 수정 3건 이행 |
+| 2026-09-25-36 | 생성 | [docs/references/ref-419.md](references/ref-419.md) | 참고문헌 ref-419 등록: IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-420.md](references/ref-420.md) | 참고문헌 ref-420 등록: IFC 4.3 — IfcStair (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-421.md](references/ref-421.md) | 참고문헌 ref-421 등록: IFC 4.3 — IfcTransportElementTypeEnum (개발 브랜치 ifc4.3-main 원본… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-422.md](references/ref-422.md) | 참고문헌 ref-422 등록: IFC 4.3 — IfcWall (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-423.md](references/ref-423.md) | 참고문헌 ref-423 등록: IFC 4.3 — IfcBuildingStorey (개발 브랜치 ifc4.3-main 원본, 게시판 IFC… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-424.md](references/ref-424.md) | 참고문헌 ref-424 등록: ezdxf documentation — Concepts: Blocks (docs/source/concepts… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-425.md](references/ref-425.md) | 참고문헌 ref-425 등록: ezdxf documentation — Concepts: Layers (docs/source/concepts… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-426.md](references/ref-426.md) | 참고문헌 ref-426 등록: ezdxf documentation — Concepts: DXF Units (docs/source/conce… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-427.md](references/ref-427.md) | 참고문헌 ref-427 등록: ISO 13567-1:2017 - Technical product documentation — Organiz… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-428.md](references/ref-428.md) | 참고문헌 ref-428 등록: AIA CAD Layer Guidelines, Layer Name Format (NCS V5) |
+| 2026-09-25-36 | 생성 | [docs/references/ref-429.md](references/ref-429.md) | 참고문헌 ref-429 등록: KS F 1542(2020 확인) CAD 도면 작성을 위한 레이어 원칙과 기준 |
+| 2026-09-25-36 | 생성 | [docs/references/ref-430.md](references/ref-430.md) | 참고문헌 ref-430 등록: 건설CALS 전자도면 작성표준 |
+| 2026-09-25-36 | 생성 | [docs/references/ref-431.md](references/ref-431.md) | 참고문헌 ref-431 등록: 건축 표준 캐드 레이어의 실무적용 실태 분석 연구 |
+| 2026-09-25-36 | 생성 | [docs/references/ref-432.md](references/ref-432.md) | 참고문헌 ref-432 등록: An Inspection of IFC Models from Practice |
+| 2026-09-25-36 | 생성 | [docs/references/ref-433.md](references/ref-433.md) | 참고문헌 ref-433 등록: Text-Aided Multi-Modal Panoptic Symbol Spotting for CAD Floo… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-434.md](references/ref-434.md) | 참고문헌 ref-434 등록: ArchCAD-400k: A Large-Scale CAD drawings Dataset and New Bas… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-435.md](references/ref-435.md) | 참고문헌 ref-435 등록: Raster Image-Based House-Type Recognition and Three-Dimensio… |
+| 2026-09-25-36 | 생성 | [docs/references/ref-436.md](references/ref-436.md) | 참고문헌 ref-436 등록: 건설산업 BIM 시행지침 정책정보 상세보기 |
+| 2026-09-25-36 | 생성 | [docs/glossary/drawing-exchange-format.md](glossary/drawing-exchange-format.md) | 용어집 항목 도면 교환 형식 |
+| 2026-09-25-36 | 생성 | [docs/glossary/block-reference.md](glossary/block-reference.md) | 용어집 항목 블록 참조 |
+| 2026-09-25-36 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-08 답함(3절 {#q1-08} 신설), q1-09 부분 답 소제목 추가, 4·5·6·7·8·9절 갱신, 상태 줄 열린 질문 1건·답한 질문 8건, 후속 질문 2건(q4-13·q2-06) |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | MassRobotics 행에 화물 최대값 형식·보고 전용 구조·지원 작업·부착 장비 부재 보강, IDTA 02047 행에 특수 능력·ECLASS 식별자 사용 범위 메모, 빠진 정보 요약·출처·이력 갱신 |
 | 2026-09-25-35 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 범위 능력의 의미 식별자 미확인·특수 능력 자유 텍스트(IDTA 02047)와 MassRobotics 화물 최대 중량·충전기 유형 보강, ref-245 각주의 원문 미열람 표기 제거 |

@@ -801,6 +801,46 @@
       "section": "6. 대표 접근법과 기술",
       "summary": "LLM 지시 해석이 뽑는 인자와 접지 방법: DELIVER 는 픽업·배송 위치 추출(화물·기한 추출은 요약 범위에서 미확인, f10), SayPlan 은 3D 장면 그래프 의미 탐색으로 계획을 접지(f11, 저자 보고), SafeGate 는 안전 속성 추출·결정적 게이트(f12). 적용 대상인 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 양쪽 연결.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "도면 입력 형식별로 담기는 공간 정보와 빠지는 정보: IFC 4.3 의 IfcDoor·IfcStair·IfcTransportElement(ELEVATOR)·IfcBuildingStorey(ref-419~ref-423), DXF 좌표 무단위와 $INSUNITS(ezdxf 문서 기준, ref-426), 래스터 축척 메타데이터 사례(ref-069·ref-070, 일반화는 추정), 국내 CAD 레이어 표준(KS F 1542 ref-429, 건설CALS 전자도면 작성표준 ref-430), 충전 위치 표준 표현 부재(추정), BIM 기반 지도의 한계(연계 대상, ref-081).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "8. 대표 연구와 자료",
+      "summary": "교차 규칙(도면 해석은 6. 지도·공간·위치 모델에 적용)에 따라 ArchCAD-400K 레이어·블록 기반 자동 라벨링(ref-434), CAD 텍스트 결합 심볼 스포팅 프리프린트(ref-433, 2026-07-14), 래스터 치수 문자 인식 축척 계산(ref-435, 저자 보고 95% 초과)을 27. AI·학습·적응과 모델 운영 페이지와 함께 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "CAD 레이어 명명 표준 ISO 13567-1:2017(ref-427), 미국 NCS AIA 레이어 형식(V5 기준, V6 판 있음, ref-428), KS F 1542(ref-429)와 건설CALS/EC 전자도면 작성표준(한국건설기술연구원 공고, ref-430)을 따로 기재(파생 관계 미확인), 실무 IFC 모델의 IfcBuildingElementProxy 오용 점검(Noardo 외 2021, ref-432), 국토교통부 건설산업 BIM 시행지침(2022-07, ref-436).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "도면 해석 AI 방법으로 CAD 레이어·블록 계층을 이용한 자동 라벨링(ArchCAD-400K, ref-434), 텍스트 주석 유형·속성을 결합한 다중 모달 심볼 스포팅(arXiv 2607.12678, ref-433), YOLOv8·OFA-OCR 기반 래스터 축척 인식(ref-435)을 적용 대상 6. 지도·공간·위치 모델과 양쪽 연결.",
+      "status": "제안"
     }
   ]
 }
