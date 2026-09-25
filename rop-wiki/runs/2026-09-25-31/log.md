@@ -18,3 +18,24 @@
 - 2026-09-25 12:32:51 KST [형식 검증] 1차 검증 산출물 검사: 통과
 - 2026-09-25 12:32:51 KST [1차 검증] 결과: 조건부 승인 · 소요 2분 39초 · 신뢰도 medium
 - 2026-09-25 12:32:51 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-31/prompts/storyteller.md (267,219자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 12:39:06 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 6분 15초 · 비용 $2.2889 · subtype success
+- 2026-09-25 12:39:06 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-31/pages.json
+- 2026-09-25 12:39:06 KST [스토리텔러] 결과: 성공 · 소요 6분 15초 · 페이지 1개
+- 2026-09-25 12:40:04 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-31 (영역 심화)
+- 2026-09-25 12:40:04 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 12:40:04 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 12:40:04 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-593→ref-306
+- 2026-09-25 12:40:04 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 6개, 반영 전 사전 검사 포함)
+- 2026-09-25 12:40:04 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-31/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 12:40:05 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 12:40:06 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 12:40:06 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 1건 (파일 572개 검사)
+- topics/2026/2026-09-25-area12-s6.md: 깨진 링크 11-distributed-systems-communication-and-computing.md
+
+- 2026-09-25 12:40:06 KST [형식 검증] 원고 형식 검사: 오류 3건 · 자동 분리 5건
+- 2026-09-25 12:40:06 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 12:40:06 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-25 12:40:06 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area12-s6.md: 깨진 링크 11-distributed-systems-communication-and-computing.md
+- 2026-09-25 12:40:06 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-25-31/format_check.md)
+- 2026-09-25 12:40:06 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-31/prompts/storyteller-formatfix1.md (355,207자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)

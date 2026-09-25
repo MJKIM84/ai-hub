@@ -250,7 +250,7 @@
       "claim": "MQTT 5.0 의 QoS 2(정확히 한 번)는 네 단계 확인 교환으로 프로토콜 상대 사이의 정확히 한 번 전달을 보장하며, 수신 측은 PUBCOMP 를 보낼 때까지 원 PUBLISH 의 패킷 식별자를 기억해 확인 응답 손실로 다시 온 중복 PUBLISH 를 버린다.",
       "tag": "사실",
       "source_ids": [
-        "ref-593"
+        "ref-306"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -265,7 +265,7 @@
       "claim": "MQTT QoS 보장은 클라이언트–브로커 같은 프로토콜 상대 사이에만 적용되므로, 관제가 응답 시간 초과 뒤 새 메시지로 주문을 다시 보내는 경우의 중복은 QoS 가 아니라 VDA 5050 의 주문 id·주문 갱신 id 같은 응용 계층 식별자로 걸러야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-593",
+        "ref-306",
         "ref-031"
       ],
       "cross_checked": false,
@@ -703,7 +703,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-593",
+      "id": "ref-306",
       "org": "OASIS",
       "title": "MQTT Version 5.0 (OASIS Standard)",
       "published": null,

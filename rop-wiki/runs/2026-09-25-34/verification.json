@@ -1,0 +1,255 @@
+{
+  "run_id": "2026-09-25-34",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): EJOR 182(2) 481-501, 2007. 검색 요약에 'most labour-intensive and costly activity for almost every warehouse', 'as much as 55% of the total warehouse operating expense' 가 있다. 55% 는 문헌 검토가 인용한 추정치이고 독립 교차 확인이 없으므로 '2007년 문헌 검토가 추정한 값'으로 출처를 밝혀 서술해야 한다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): EJOR 277(2) 396-411(2019). 검색 요약에 time-critical picking orders·few order lines, 자동화(로봇·자동 피킹 작업대)와 dynamic order processing·batching·zoning·sorting 이 있다. 단일 조사 논문의 정리로 서술한다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): EJOR 262(2) 550-562(2017). 요약에 배치·순서와 랙 순서 결합, 'more than halve the fleet of robots compared to simple decision rules' 가 있다. 로봇 대수 절감은 저자 계산 실험 결과이며 독립 재현은 미확인 — 본문에서 '저자 계산 실험' 조건을 반드시 유지한다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): arXiv 2108.09056(2021-08). 요약에 시뮬레이티드 어닐링·빔 탐색, 탐욕 정책 대비 3분의 1·독립 스케줄링 대비 5분의 1 넘는 랙 방문 절감이 있다. 검색 결과상 2023년 저널 게재판이 있는 것으로 보이나 게재지·판은 미확인 — 기준일을 프리프린트 2021-08 로 명시한다. 수치는 저자 실험 결과."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): EURO Journal on Transportation and Logistics(2019). 요약에 put wall 수동 통합, 빈 도착 순서 최적화, 주문 완료 시간 최소화로 포장자 유휴 감소가 있다. '단일 기계 스케줄링과 가까운 문제' 표현은 브리프 발췌에만 있고 검증 검색 요약에서는 확인하지 못했다 — 서술하면 원문 미열람 조건을 둔다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): Jiang & Huang, Transportation Research Part E 158(2022). 요약에 수동 피킹(예비 구역)과 로봇 부품-작업자 분류(전방 구역)를 배송 요구로 동기화하는 DDIS 문제, 가변 이웃 탐색, makespan·전방 구역 면적 감소가 있다. 수치 없이 저자 실험 결과로 서술한다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, KCI 검색 결과 일치). 검색 요약에 따르면 이 연구는 실제 운영 중인 편의점 물류센터 레이아웃을 기준으로 했고, 배치 피킹이 분배·포장 시간을 줄였지만 총 주문 처리 시간은 피킹 시간이 결정한다고 보고한다. 브리프 주장에는 이 두 맥락이 빠져 있다 — 본문에 함께 적어야 맥락 이탈이 되지 않는다(required_fixes)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): DBpia·KCI 에 같은 제목의 대한산업공학회지 논문이 있다. 연구가 있다는 사실만 확인했고 결과 수치는 미확인이다. 18. 사람–로봇 협업·운영 인터페이스와 겹치므로 포장 공정 동기화의 사례로만 쓴다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): Robotics and Autonomous Systems(2017). 요약에 시간·순서 제약 분류, 동기화·선후(SP)와 시간창(TW) 차원, 차량 경로·스케줄링 문제와의 관계가 있다. '잡숍 스케줄링' 이라는 특정 표현은 검증 검색 요약에서 확인하지 못했다 — '스케줄링 문제'로 쓴다(required_fixes)."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람, 검색 결과 일치): arXiv 2202.10449. 검색 결과상 저자는 Kedia, K., Jenamani, R. K., Hazra, A., & Chakrabarti, P. P.(IIT Kharagpur)이다. 브리프 ref-691 의 기관 '저자(미확인)'를 저자명으로 고친다. 프리프린트이고 makespan 최적성은 저자 주장이다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: f9·f10 에서 추론한 것이다. 발췌의 인용구 'task assignment, temporal ordering, and collision-free routing become tightly coupled' 는 ref-691·ref-685 어디에서 나온 문장인지 확인하지 못했다(다른 논문의 요약일 수 있음). 직접 인용으로 쓰지 않고 이 위키의 추론으로만 서술한다. 원문 미열람."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(raw.githubusercontent.com 원본 열람): B2MML-Common.xsd V0701, Copyright 2023 MESA International. Dependency1Type 값 11개와 설명이 주장과 일치한다. 기존 ref-117 재사용. 창고 물류 적용 사례는 없음(oq-013 열림 유지)."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): task_request.json 에 unix_millis_earliest_start_time·unix_millis_request_time·priority('must match a priority schema supported by a fleet')·category·description·labels·requester·fleet_name 이 있다. 마감 시각과 선후·의존 필드는 없다. 기존 ref-125 재사용. 발행일 미확인, 확인일 기준."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): task.md 의 BidNotice→BidProposal(비용)→DispatchRequest, 평가 방식 설정 가능('fastest to finish, lowest cost, etc'), Dispatcher.hpp 의 기본값 QuickestFinishEvaluator. 같은 기관 자료라 독립 교차는 아니다. ref-678 은 2026-09-25-33 브리프의 ref-656 과 같은 URL(task.html)이다 — 중복 등록 주의(duplication)."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): task.md 'ChargeBattery tasks are optimally injected into a robot's schedule'(로봇마다 전용 충전 위치가 있다는 가정), TaskPlanner.hpp 의 greedy 'Optimality is not guaranteed' / A* 'guarantees optimality but may take longer', 배정별 earliest_start_time·deployment_time. 같은 기관 자료."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): BinaryPriorityScheme.hpp 에 'binary prioritization scheme by generating either high or low Priority objects', make_low_priority 'In the current implementation this returns a nullptr.' 가 있다. 비용 반영 방식은 미확인."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): task_new.md 'a task is typically made up of a series or combination of phases as its building blocks', 요청 예시에 unix_millis_earliest_start_time 이 있다. 기존 ref-110 재사용."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원본 열람): scheduling.md 에 'start + size == end', no_overlap 'all intervals are disjoint', 선택 구간(존재 리터럴)을 no overlap·cumulative 가 무시한다는 설명, 시작·끝 식의 선형 부등식으로 선후를 표현하는 방법이 있다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 전제가 되는 f13·f16 은 원본으로 확인했다. Open-RMF 가 우선순위로 기존 배정을 재계획하는지는 확인하지 않았으므로 '따로 정해야 할 것으로 보인다'는 추정 표현을 유지한다(oq-019 연결, 해결 아님)."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 기존 참고문헌 ref-134(MSOM 2010). 이번 검증에서 다시 검색하지 않았다. 원문 미열람. 연구가 있다는 사실만 서술하고 결과는 쓰지 않는다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 기존 참고문헌 ref-133(Networks 2025). 이번 검증에서 다시 검색하지 않았다. 원문 미열람. 연구가 있다는 사실만 서술한다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 시드 ref-006 과 용어집 '다중 에이전트 픽업·배송' 정의에 일치한다. 원문 미열람. '연속 재계획이 되는 상황'은 MAPD 의 온라인 조건을 풀어 쓴 것으로 허용한다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 전제(f13 선후 필드 부재, f14 플릿 입찰, f12 상위 계층 의존 유형)는 원본으로 확인했다. 이종 플릿 선후 조율을 ROP 직접 범위로 본 것은 분류 원문 9장('인터페이스와 실행 보장')과 맞는 추론이다. 공개 구현 부재는 검색 범위에서 관찰한 것이다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지, '연계 대상: ' 표시 적절(분류 원문 9장 상위 업무 시스템·거점 간 운송). 브리프는 source_unopened: false 로 적었지만 근거 ref-688 은 원문 미열람이다 — 브리프 표시 누락(verification_note 에 기록)."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 분류 원문 SCM 질문에 대한 답으로, f3·f5·f7 에서 추론했다. f7 의 '총 처리시간은 피킹이 결정' 맥락을 함께 적어야 과장되지 않는다. 로봇 운반을 포함한 국내 현장 검증은 없다. 원문 미열람."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-678(Tasks in RMF (task), https://osrf.github.io/ros2multirobotbook/task.html)은 2026-09-25-33 브리프의 ref-656 과 같은 URL 의 같은 문서다 — 참고문헌 중복 등록 위험",
+      "f14·f15 는 2026-09-25-33(13. 작업 배정 — MRTA) 브리프 f7·f8 과 같은 Open-RMF 입찰·TaskPlanner·충전 삽입 내용이다. 14. 작업 순서·스케줄링 페이지에서는 순서·일정 관점만 쓰고 배정 설명은 13. 작업 배정 — MRTA 연결로 처리한다",
+      "f12 는 oq-013·2. 공정·워크플로 모델링(2026-09-25-09)에서 이미 쓴 ref-117 내용과 같다 — 기존 각주 ref-117 재사용",
+      "f8 작업자 스케줄링은 18. 사람–로봇 협업·운영 인터페이스와 겹친다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": [
+      "f11 발췌의 영문 인용구는 출처를 확인하지 못했으므로 본문에 직접 인용하지 않는다(위반 예방 지시)"
+    ]
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f1: 55% 는 '2007년 문헌 검토(ref-682)가 제시한 추정치'로 출처와 기준일을 밝혀 쓰고 일반 사실로 단정하지 않는다 — 핵심 수치이지만 단일 출처이고 독립 교차 확인이 없다.",
+    "f3·f4·f6: 로봇 대수 절반 넘게 감소, 랙 방문 3분의 1·5분의 1 감소, makespan·면적 감소는 모두 '저자 계산 실험(원문 미열람, 독립 재현 미확인)' 조건을 붙여 서술하고 일반화하지 않는다 — 단일 출처 성능 수치다.",
+    "f4: 기준일을 'arXiv 프리프린트 2021-08'로 명시한다 — 이후 저널 게재판이 있는 것으로 보이나 게재지·판은 미확인이다.",
+    "f7: 대상이 편의점 물류센터 레이아웃이었다는 점과 '총 주문 처리 시간은 피킹 시간이 결정했다'는 보고를 함께 적는다 — 빼면 결과가 과장된다(맥락 이탈 방지).",
+    "f9: '잡숍 스케줄링'을 '스케줄링 문제'로 바꾼다 — 검증 검색 요약에서 이 표현을 확인하지 못했다.",
+    "f11: 발췌의 영문 구절을 직접 인용하거나 ref-691·ref-685 의 문장으로 제시하지 않는다. 이 위키의 추론([추정])으로만 쓴다 — 인용구의 출처를 확인하지 못했다.",
+    "ref-691: reference_updates 와 각주의 기관을 'Kedia, K., Jenamani, R. K., Hazra, A., & Chakrabarti, P. P.'로 고친다 — 검색 결과로 저자를 확인했다.",
+    "ref-678: 2026-09-25-33 의 ref-656 이 참고문헌에 등록돼 있으면 ref-678 대신 ref-656 을 각주로 쓰고 ref-678 은 reference_updates 에 넣지 않는다. 등록돼 있지 않으면 ref-678 로 등록하고 changelog_entry 에 같은 URL 의 중복 가능성을 적는다 — 같은 문서(task.html)다.",
+    "f14·f15: 14. 작업 순서·스케줄링 페이지에서는 플릿 내 일정 계획(TaskPlanner 의 순서·시작 시각, 충전 작업 삽입)을 중심으로 쓰고, 입찰 기반 배정 설명은 짧게 줄여 10절에서 13. 작업 배정 — MRTA 로 연결한다 — 2026-09-25-33 과 중복된다.",
+    "f8: 18. 사람–로봇 협업·운영 인터페이스의 내용이므로 5절 포장 시나리오 사례로만 짧게 쓰고 결과 수치는 '미확인'으로 둔다.",
+    "모든 각주 정의: 원문을 열지 못한 출처(ref-006, ref-133, ref-134, ref-682~ref-691)는 접근일 뒤에 ' (원문 미열람)'을 붙이고, 해당 reference_updates 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.",
+    "f12·f13·f17·f20·f21·f22: 새 각주를 만들지 않고 기존 ref-117·ref-125·ref-110·ref-134·ref-133·ref-006 을 재사용한다.",
+    "oq-013·oq-019: 해결로 바꾸지 않는다 — f12·f13·f16·f19 가 근거를 더했지만 창고 적용 사례와 재정렬 설계는 확인되지 않았다.",
+    "페이지 신뢰도(confidence)는 medium 으로 둔다 — 원문 미열람 출처가 섞여 있고 교차 확인은 0건이다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(raw.githubusercontent.com 만 열림)에서 검증됐다. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음(성능 수치 f3·f4·f6 과 f1 의 55% 는 '저자 보고·단일 출처'로 표시하라고 지시). 원문 미열람 출처: ref-006, ref-133, ref-134, ref-682, ref-683, ref-684, ref-685, ref-686, ref-687, ref-688, ref-689, ref-690, ref-691(검색 결과 일치로 실재 확인). 원문 확인 출처: ref-110, ref-117, ref-125, ref-678, ref-679, ref-680, ref-681, ref-692(raw.githubusercontent.com). 브리프 출처 원문 미열람 표시 누락: f24 가 원문 미열람 출처 ref-688 에 기대는데 source_unopened: false 로 적혀 있다. ref-691 의 저자는 Kedia 외로 확인됐다. ref-678 은 2026-09-25-33 의 ref-656 과 같은 문서다. oq-013·oq-019 는 해결로 인정하지 않는다. 정정 요청 없음. 검증 검색 10회(리서치 19회와 합쳐 29/30). 주의: 피킹·포장 순서 최적화의 효과 수치는 모두 저자 계산 실험이나 시뮬레이션 결과이며 원문을 열지 못했다. 국내 연구(f7)는 편의점 물류센터 조건이고, 총 처리시간은 피킹 시간이 결정했다고 보고한다. Open-RMF 관련 주장은 같은 기관 자료라 서로 독립된 교차 확인이 아니다.",
+  "retry_reason": null
+}
