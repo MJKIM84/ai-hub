@@ -139,6 +139,76 @@
       "section": "8. 대표 연구와 자료",
       "summary": "Cohen 외(IJCAI-24) 로봇 언어 접지 서베이(형식 표현–임베딩 스펙트럼, 장단점 평가는 [의견])와 Huang 외(ICML 2022), SayCan, LLM+P, Lang2LTL을 대표 자료로 등록하고 13. 작업 배정 — MRTA 페이지와 연결. 근거 ref-058, ref-093, ref-087, ref-091, ref-055.",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "입력 형식별 도면→로봇 지도 생성 접근: 래스터 평면도는 사람이 축척·요소를 주석하는 배경(Open-RMF traffic-editor, f1), 벡터 CAD는 구조 레이어 분리·AreaGraph 위상 분할로 계층형 지도 생성(osmAG, f7), BIM/IFC는 점유 격자 지도(f11)·위상·거리 지도와 하이퍼그래프(f13·f14) 생성. 형식별 자동화 수준 종합(f19)은 [추정].",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "Open-RMF traffic-editor(평면도 배경 주석, 측정 축척, 층 기준점 정렬, is_charger, f1·f2), osmAG-from-cad(DXF→osmAG, f8), ifc2indoorgml(IFC→IndoorGML, f15), Ogm2Pgbm(격자 지도→포즈 그래프 지도, f12). 관제 연동의 층 이름·미터 좌표 요건(f3).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "8. 대표 연구와 자료",
+      "summary": "도면 기준 지도 정합·도면 해석 연구로 Boniardi 외 2017·2019(f5·f6), Vega-Torres 외(f11, BIM 과 현실의 편차 지적), Shaheer 외 A-Graph·S-Graph 도면–현장 편차 추정(f17, 35cm·15도는 단일 출처 실험 조건), BIRS(f13), Palacz 외(f14), 국내 BIM–건설로봇 문헌고찰(f18). 위치추정·SLAM 자체는 로봇 자체 지능·제어 연계 대상으로만 적는다.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "연계 대상: 도면·BIM 기준 위치추정과 SLAM 은 로봇 자체 지능·제어 쪽. 이종 제조사를 연결하는 ROP는 도면에서 만든 층별 지도·공간 그래프의 좌표·층 이름 정렬과 버전 관리를 맡는 경계가 될 것으로 보인다([추정], f22).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "현장 시운전에서 평면도를 배경으로 벽·문·승강기·차선·충전 정점을 사람이 주석하고 측정으로 축척을 맞추는 방식(Open-RMF traffic-editor, f1·f2). 제품 쪽 평면도 PNG 업로드·축척 요건은 [추정] 벤더 주장(MiR Fleet, 유통사 게재본, f4). 운영 요소가 사람 주석으로 남는 점(f20, [추정]).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 21,
+      "section": "8. 대표 연구와 자료",
+      "summary": "전문가의 지도 작성 노동을 줄이려는 평면도 기반 위치추정 동기(Boniardi 외 2019, f6)와 국내 문헌고찰의 현장 검증·지표 보고 부족(f18, 건설로봇 대상).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 1,
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "공간 정보 교환 형식 후보로 IFC(BIRS 가 BIM–ROS 교환 형식으로 사용, f13), IndoorGML(IFC 에서 자동 생성 도구 존재, f15), OSM 형식 osmAG(f7). IFC·IndoorGML 은 발행 기관 자료로 확인하지 않음.",
+      "status": "제안"
     }
   ]
 }

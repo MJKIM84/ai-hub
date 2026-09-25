@@ -78,6 +78,35 @@ version: 1
 | 2026-09-25-13 | 갱신 | [docs/glossary/isa-95.md](glossary/isa-95.md) | 용어집 항목 작업 지시 |
 | 2026-09-25-13 | 생성 | [docs/glossary/waveless-order-release.md](glossary/waveless-order-release.md) | 용어집 항목 웨이브리스 출고 지시 |
 | 2026-09-25-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-02 답함(3절 {#q1-02} 소제목 추가), 새 질문 q1-06, 4·5·6·7·8·9절 갱신, H1 아래 상태 줄을 답한 질문 2건·완료 조건 충족으로 갱신, 6절 검증 판정 '충족 · 미승인'(2차 확정), 국내 사례 미발견 문장에서 ref-226 각주 분리 |
+| 2026-09-25-11 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절: 입력 형식별 도면→로봇 지도 연구·오픈소스 도구 비교표 추가, '제품 사례' 소절을 벤더 주장 병기로 채움, 한계에 남는 수작업·제품 근거 한계·국내 문헌고찰 추가(국내 물류 사례 미발견 문장은 ref-226 각주와 분리). 프런트매터 sources 에서 ref-080 제외 |
+| 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.1 → v0.2: H1 (v0.2), 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도'(f1·f2·f3)·'평면도'(f1·f8·f11) 확정, 문 속성 제안과 f17·f20 은 6절 질문으로(Palacz 외 하이퍼엣지 서술 삭제) |
+| 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 초안 v0.2, 아이디어 3절 제품 사례 반영, 백로그 수치(후속 질문 4건, q1-01·q1-02 답함) 갱신. 상태 줄은 변경 없음(현재 단계·마지막 트랙 실행 동일) |
+| 2026-09-25-11 | 요약 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 건축 도면 자동 인식 단계 1: q1-02 답함(래스터·벡터 CAD·BIM/IFC 입력별 도면→로봇 지도 연구·도구·제품 사례), 공간 그래프 스키마 초안 v0.1 → v0.2, 새 질문 q1-06, 참고문헌 id 재부여 |
+| 2026-09-25-11 | 생성 | [docs/references/ref-079.md](references/ref-079.md) | 참고문헌 ref-079 등록: Traffic Editor - Programming Multiple Robots with ROS 2 |
+| 2026-09-25-11 | 생성 | [docs/references/ref-080.md](references/ref-080.md) | 참고문헌 ref-080 등록: Navigation Maps (integration_nav-maps) - Programming Multipl… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-081.md](references/ref-081.md) | 참고문헌 ref-081 등록: Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-082.md](references/ref-082.md) | 참고문헌 ref-082 등록: Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization fo… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-083.md](references/ref-083.md) | 참고문헌 ref-083 등록: Generation of Indoor Open Street Maps for Robot Navigation f… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-084.md](references/ref-084.md) | 참고문헌 ref-084 등록: osmAG-from-cad — README (CAD-to-osmAG pipeline) |
+| 2026-09-25-11 | 생성 | [docs/references/ref-085.md](references/ref-085.md) | 참고문헌 ref-085 등록: Intuitive BIM-aided robotic navigation and assets localizati… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-086.md](references/ref-086.md) | 참고문헌 ref-086 등록: Indoor Robot Navigation Using Graph Models Based on BIM/IFC |
+| 2026-09-25-11 | 생성 | [docs/references/ref-120.md](references/ref-120.md) | 참고문헌 ref-120 등록: Robot Localization in Floor Plans Using a Room Layout Edge E… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-220.md](references/ref-220.md) | 참고문헌 ref-220 등록: IMDF from Floor Plan & CAD Conversion Services |
+| 2026-09-25-11 | 생성 | [docs/references/ref-221.md](references/ref-221.md) | 참고문헌 ref-221 등록: BIM-SLAM: Integrating BIM Models in Multi-session SLAM for L… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-222.md](references/ref-222.md) | 참고문헌 ref-222 등록: Universal Fleet Control Software for AGVs & AMRs |
+| 2026-09-25-11 | 생성 | [docs/references/ref-223.md](references/ref-223.md) | 참고문헌 ref-223 등록: Robust LiDAR-based localization in architectural floor plans |
+| 2026-09-25-11 | 생성 | [docs/references/ref-224.md](references/ref-224.md) | 참고문헌 ref-224 등록: Tightly Coupled SLAM with Imprecise Architectural Plans |
+| 2026-09-25-11 | 생성 | [docs/references/ref-225.md](references/ref-225.md) | 참고문헌 ref-225 등록: IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-226.md](references/ref-226.md) | 참고문헌 ref-226 등록: BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 1… |
+| 2026-09-25-11 | 생성 | [docs/references/ref-227.md](references/ref-227.md) | 참고문헌 ref-227 등록: MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk… |
+| 2026-09-25-11 | 생성 | [docs/glossary/occupancy-grid-map.md](glossary/occupancy-grid-map.md) | 용어집 항목 점유 격자 지도 |
+| 2026-09-25-11 | 생성 | [docs/glossary/ifc.md](glossary/ifc.md) | 용어집 항목 산업 기초 클래스 |
+| 2026-09-25-11 | 생성 | [docs/glossary/indoorgml.md](glossary/indoorgml.md) | 용어집 항목 IndoorGML |
+| 2026-09-25-11 | 생성 | [docs/glossary/topological-map.md](glossary/topological-map.md) | 용어집 항목 위상 지도 |
+| 2026-09-25-11 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-10 | 갱신 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s8.md](topics/2026/2026-09-25-area03-s8.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약 문장 각주에 ref-097·ref-103 추가 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s6.md](topics/2026/2026-09-25-area03-s6.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 드리프트 문장 삭제, 태그 없는 주장 3문장에 태그·각주 |

@@ -182,6 +182,7 @@ nav:
     - glossary/index.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
+    - IndoorGML (IndoorGML): glossary/indoorgml.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
@@ -202,6 +203,7 @@ nav:
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
+    - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
@@ -210,9 +212,11 @@ nav:
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
+    - 위상 지도 (Topological Map): glossary/topological-map.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
+    - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
@@ -310,6 +314,16 @@ nav:
     - 'ref-077 — DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models': references/ref-077.md
     - ? ref-078 — Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans
       : references/ref-078.md
+    - ref-079 — Traffic Editor - Programming Multiple Robots with ROS 2: references/ref-079.md
+    - ref-080 — Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2: references/ref-080.md
+    - ? 'ref-081 — Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments'
+      : references/ref-081.md
+    - ? ref-082 — Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments)
+      : references/ref-082.md
+    - ref-083 — Generation of Indoor Open Street Maps for Robot Navigation from CAD Files: references/ref-083.md
+    - ref-084 — osmAG-from-cad — README (CAD-to-osmAG pipeline): references/ref-084.md
+    - ref-085 — Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces: references/ref-085.md
+    - ref-086 — Indoor Robot Navigation Using Graph Models Based on BIM/IFC: references/ref-086.md
     - ref-087 — SayCan (google-research/saycan README): references/ref-087.md
     - 'ref-088 — Do As I Can, Not As I Say: Grounding Language in Robotic Affordances': references/ref-088.md
     - 'ref-089 — SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models (GitHub README)': references/ref-089.md
@@ -345,6 +359,7 @@ nav:
     - ref-118 — B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd: references/ref-118.md
     - ? 'ref-119 — IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management'
       : references/ref-119.md
+    - ref-120 — Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network: references/ref-120.md
     - ref-121 — The complexity of soundness in workflow nets: references/ref-121.md
     - ref-122 — OCEL (Object-Centric Event Log) 2.0 Specification: references/ref-122.md
     - ref-123 — SCOR Model — Fulfill F1.3 Pick Product: references/ref-123.md
@@ -379,6 +394,14 @@ nav:
     - 'ref-149 — Material Movement Analysis for Warehouse Business Process Improvement with Process Mining: A Case Study': references/ref-149.md
     - ref-150 — 오토스토어, 물류 자동화 시스템의 경제적 효과 연구 보고서 발표: references/ref-150.md
     - ref-151 — 화주기업과 물류기업의 공동 핵심성과지표 관리방법에 대한 연구: references/ref-151.md
+    - ref-220 — IMDF from Floor Plan & CAD Conversion Services: references/ref-220.md
+    - 'ref-221 — BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR': references/ref-221.md
+    - ref-222 — Universal Fleet Control Software for AGVs & AMRs: references/ref-222.md
+    - ref-223 — Robust LiDAR-based localization in architectural floor plans: references/ref-223.md
+    - ref-224 — Tightly Coupled SLAM with Imprecise Architectural Plans: references/ref-224.md
+    - 'ref-225 — IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC': references/ref-225.md
+    - ref-226 — BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218): references/ref-226.md
+    - ref-227 — MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본: references/ref-227.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

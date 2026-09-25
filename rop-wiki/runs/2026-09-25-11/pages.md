@@ -4,9 +4,9 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md | draft | q1-02 답함(3절 {#q1-02} 소제목 추가), 새 질문 q1-06, 4·5·6·7·8·9절 갱신, 완료 조건 충족(1차 예비)·전환 미승인. H1 아래 단계 상태 줄은 H2 밖이라 패치로 못 바꿈 — '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 2건 · 완료 조건: 충족 · 마지막 실행: 2026-09-25' 로 교체 필요 |
-| update | docs/ideas/floorplan-recognition.md | draft | 3절: 입력 형식별 도면→로봇 지도 연구·오픈소스 도구 비교표 추가, '제품 사례' 소절을 벤더 주장 병기로 채움, 한계에 남는 수작업·제품 근거 한계·국내 문헌고찰 추가 |
-| update | docs/tracks/floorplan-recognition/space-graph-schema-draft.md | draft | 초안 v0.1 → v0.2: 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도'(f1·f2·f3)·'평면도'(f1·f8·f11) 확정, 문 속성 제안과 f17·f20 은 6절 질문으로. H1 '(v0.1)' 은 H2 밖이라 패치 불가 — '(v0.2)' 로 교체 필요 |
+| update | docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md | draft | q1-02 답함(3절 {#q1-02} 소제목 추가), 새 질문 q1-06, 4·5·6·7·8·9절 갱신, H1 아래 상태 줄을 답한 질문 2건·완료 조건 충족으로 갱신, 6절 검증 판정 '충족 · 미승인'(2차 확정), 국내 사례 미발견 문장에서 ref-226 각주 분리 |
+| update | docs/ideas/floorplan-recognition.md | draft | 3절: 입력 형식별 도면→로봇 지도 연구·오픈소스 도구 비교표 추가, '제품 사례' 소절을 벤더 주장 병기로 채움, 한계에 남는 수작업·제품 근거 한계·국내 문헌고찰 추가(국내 물류 사례 미발견 문장은 ref-226 각주와 분리). 프런트매터 sources 에서 ref-080 제외 |
+| update | docs/tracks/floorplan-recognition/space-graph-schema-draft.md | draft | 초안 v0.1 → v0.2: H1 (v0.2), 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도'(f1·f2·f3)·'평면도'(f1·f8·f11) 확정, 문 속성 제안과 f17·f20 은 6절 질문으로(Palacz 외 하이퍼엣지 서술 삭제) |
 | update | docs/tracks/floorplan-recognition/index.md | draft | 6. 살아있는 산출물 링크: 초안 v0.2, 아이디어 3절 제품 사례 반영, 백로그 수치(후속 질문 4건, q1-01·q1-02 답함) 갱신. 상태 줄은 변경 없음(현재 단계·마지막 트랙 실행 동일) |
 
 ## 변경 이력·색인
@@ -22,7 +22,7 @@
 |---|---|---|---|---|---|
 | new | 점유 격자 지도 | Occupancy Grid Map (OGM) | 공간을 일정 크기 칸으로 나누고 칸마다 점유·빈 공간·미지 여부를 적어 로봇 위치추정과 경로계획에 쓰는 지도 표현이다. | 6 | ref-081, ref-082 |
 | new | 산업 기초 클래스 | Industry Foundation Classes (IFC) | IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식이다. | 6, 28 | ref-085, ref-086 |
-| new | IndoorGML | IndoorGML | IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되는 실내 공간 정보 표준이다. | 6, 28 | ref-130 |
+| new | IndoorGML | IndoorGML | IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되는 실내 공간 정보 표준이다. | 6, 28 | ref-225 |
 | new | 위상 지도 | Topological Map | 정확한 좌표 대신 방·구역 같은 장소를 노드로, 통로·문 같은 연결을 엣지로 두어 공간의 연결 관계를 표현하는 지도이다. | 6, 15 | ref-083, ref-084, ref-085 |
 
 ## 참고문헌 갱신
@@ -38,14 +38,14 @@
 | ref-085 | Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D. | Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces | 논문 | medium | https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full |
 | ref-086 | Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E. | Indoor Robot Navigation Using Graph Models Based on BIM/IFC | 논문 | medium | https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC |
 | ref-120 | Boniardi, F., Valada, A., Mohan, R., Caselitz, T., & Burgard, W. | Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network | 논문 | medium | https://arxiv.org/abs/1903.01804 |
-| ref-125 | Pointr | IMDF from Floor Plan & CAD Conversion Services | 벤더 문서 | low | https://www.pointr.tech/technology/imdf |
-| ref-126 | Vega Torres, M. A., Braun, A., & Borrmann, A. | BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR | 논문 | medium | https://arxiv.org/abs/2408.15870 |
-| ref-127 | Navitec Systems | Universal Fleet Control Software for AGVs & AMRs | 벤더 문서 | low | https://navitecsystems.com/universal-fleet-control/ |
-| ref-128 | Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W. | Robust LiDAR-based localization in architectural floor plans | 논문 | medium | http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf |
-| ref-129 | Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H. | Tightly Coupled SLAM with Imprecise Architectural Plans | 논문 | medium | https://arxiv.org/abs/2408.01737 |
-| ref-130 | Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S. | IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC | 논문 | medium | https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/ |
-| ref-131 | 박근홍, 박병준, 이슬기(한국산학기술학회논문지) | BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218) | 논문 | medium | https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295 |
-| ref-132 | Mobile Industrial Robots(MiR) | MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본 | 벤더 문서 | low | https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330 |
+| ref-220 | Pointr | IMDF from Floor Plan & CAD Conversion Services | 벤더 문서 | low | https://www.pointr.tech/technology/imdf |
+| ref-221 | Vega Torres, M. A., Braun, A., & Borrmann, A. | BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR | 논문 | medium | https://arxiv.org/abs/2408.15870 |
+| ref-222 | Navitec Systems | Universal Fleet Control Software for AGVs & AMRs | 벤더 문서 | low | https://navitecsystems.com/universal-fleet-control/ |
+| ref-223 | Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W. | Robust LiDAR-based localization in architectural floor plans | 논문 | medium | http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf |
+| ref-224 | Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H. | Tightly Coupled SLAM with Imprecise Architectural Plans | 논문 | medium | https://arxiv.org/abs/2408.01737 |
+| ref-225 | Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S. | IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC | 논문 | medium | https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/ |
+| ref-226 | 박근홍, 박병준, 이슬기(한국산학기술학회논문지) | BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218) | 논문 | medium | https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295 |
+| ref-227 | Mobile Industrial Robots(MiR) | MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본 | 벤더 문서 | low | https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330 |
 
 ## 열린 질문 갱신
 
@@ -63,29 +63,29 @@
 |---|---|---|---|---|---|
 | osmAG-from-cad (CAD-to-osmAG 파이프라인) | 오픈소스 | Zhang, J. (jiajiezhang7 GitHub) | 6 | ref-084 | https://github.com/jiajiezhang7/osmAG-from-cad |
 | Ogm2Pgbm | 오픈소스 | Vega-Torres, M. A. (MigVega GitHub) | 6 | ref-082 | https://github.com/MigVega/Ogm2Pgbm |
-| ifc2indoorgml | 오픈소스 | Diakité, A. A. 외 | 6, 28 | ref-130 | https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/ |
+| ifc2indoorgml | 오픈소스 | Diakité, A. A. 외 | 6, 28 | ref-225 | https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/ |
 
 ## 추가 조사 요청
 
-- IFC·IndoorGML 표준 구조(IFC의 스키마 성격, IndoorGML의 셀 공간·연결 그래프 구조와 발행 기관 OGC 여부)를 buildingSMART·OGC 공식 저장소 미러로 확인해 용어집 정의와 28. 표준·상호운용성·다사업자 거버넌스 반영 근거로 쓸 수 있게 해 달라(1차 검증 지시로 이번 정의에서 뺐다).
-- 참고문헌 id 충돌: 1차 검증이 지시한 매핑 ref-087→ref-119, ref-089→ref-121, ref-090→ref-122, ref-091→ref-123, ref-092→ref-124 는 입력 docs/references/index.md 에 이미 있는 ref-119(IEC 62264-3)·ref-121(Blondin 외)·ref-122(OCEL 2.0)·ref-123(SCOR F1.3)·ref-124(스마트물류센터 인증제 안내)와 겹친다. 그래서 충돌하지 않는 지시값(ref-088→ref-120, ref-093→ref-125, ref-094→ref-126, ref-095→ref-127)은 그대로 쓰고, 충돌하는 다섯 건은 ref-087→ref-128, ref-089→ref-129, ref-090→ref-130, ref-091→ref-131, ref-092→ref-132 로 바꿨다. 퍼블리셔는 ref-120·ref-125~ref-132 가 다른 실행에서 이미 쓰였는지 다시 확인해 달라(pipeline/publish 담당).
-- patches 로는 H2 밖의 줄을 바꿀 수 없다. (1) 단계 1 페이지 H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 2건 · 완료 조건: 충족 · 마지막 실행: 2026-09-25' 로, (2) 공간 그래프 스키마 초안 H1 을 '# 공간 그래프 스키마 초안 (v0.2)' 로 바꾸는 처리를 퍼블리셔 패치 적용 단계에 넣어 달라(pipeline 담당). 넣지 못하면 두 줄이 이전 값으로 남는다.
+- IFC·IndoorGML 표준 구조(IFC의 스키마 성격과 발행 기관, IndoorGML의 셀 공간·연결 그래프 구조와 발행 기관)를 공식 저장소 미러로 확인해 용어집 정의와 28. 표준·상호운용성·다사업자 거버넌스 반영 근거로 쓸 수 있게 해 달라(1차·2차 검증 지시로 이번 정의·설명에서 뺐다).
+- 참고문헌 id 충돌: 1차 검증이 지시한 매핑 ref-212→ref-119, ref-214→ref-121, ref-215→ref-122, ref-216→ref-123, ref-138→ref-124 는 입력 docs/references/index.md 에 이미 있는 ref-119(IEC 62264-3)·ref-121(Blondin 외)·ref-122(OCEL 2.0)·ref-123(SCOR F1.3)·ref-124(스마트물류센터 인증제 안내)와 겹친다. 그래서 충돌하지 않는 지시값(ref-213→ref-120, ref-217→ref-220, ref-218→ref-221, ref-219→ref-222)은 그대로 쓰고, 충돌하는 다섯 건은 ref-212→ref-223, ref-214→ref-224, ref-215→ref-225, ref-216→ref-226, ref-138→ref-227 로 바꿨다. 퍼블리셔는 ref-120·ref-220~ref-227 가 다른 실행에서 이미 쓰였는지 게시 직전에 다시 확인해 달라(pipeline/publish 담당).
 - q1-06: 물류 로봇 관제 제품(OTTO, ABB, SEER, Kollmorgen NDC8 등)의 공개 매뉴얼·API 문서에서 CAD·BIM 가져오기와 문·승강기·충전 위치 자동 추출 기능 여부를 확인해 아이디어 3. 건축 도면 자동 인식 3절 제품 사례의 벤더 주장 편중을 보강해야 한다.
 - q1-02 연구 근거의 독립 교차 확인: 같은 저자 계열이 아닌 출처(예: 다른 그룹의 BIM→점유 격자 지도 연구)로 입력 형식별 자동화 범위(f19)를 확인해야 [추정]을 올릴 수 있다.
+- Palacz 외(ICAISC 2019)가 IfcSpace를 노드, IfcDoor를 하이퍼엣지로 표현하는지 원문으로 확인해 달라. 확인되면 공간 그래프 스키마 초안 6절 문 통과 조건 질문(q3-02)의 근거로 쓸 수 있다(2차 검증 지시로 이번에는 뺐다).
 
 ## 이행한 수정 지시
 
-- 참고문헌 id 재부여 — 지시 매핑 가운데 ref-120·ref-125·ref-126·ref-127 은 그대로 쓰고, 지시값 ref-119·ref-121·ref-122·ref-123·ref-124 는 입력 참고문헌 색인에 이미 다른 출처가 있어(지시의 전제 '최대 ref-109, ref-110~118' 과 다름) 기존 각주가 덮어써지지 않도록 ref-128·ref-129·ref-130·ref-131·ref-132 로 바꿨다. 단계 1 페이지·아이디어 페이지·초안의 본문 각주, 프런트매터 sources, reference_updates 를 모두 같은 매핑으로 맞췄고 ref-087~ref-095 는 어디에도 쓰지 않았으며, 퍼블리셔 재확인 요청을 additional_research_requests 에 적었다.
-- 원문 미열람 표시 — ref-079·ref-080·ref-082·ref-084 를 뺀 ref-081·ref-083·ref-085·ref-086·ref-120·ref-125~ref-132 의 모든 각주 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.
-- ref-090(재부여 ref-130) 기관 표기를 'Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.' 로 고쳤다(각주·reference_updates).
-- ref-089(재부여 ref-129) 기관 표기를 Shaheer 외 7인으로 고치고, 각주 제목과 본문에 'arXiv 2024-08 제출, 2025-06 개정' 을 적었다.
-- ref-094(재부여 ref-126) 기관 표기를 'Vega Torres, M. A., Braun, A., & Borrmann, A.' 로 고치고, 단계 1 페이지 3절·4절과 아이디어 페이지 비교표 설명에 Vega-Torres 외·Ogm2Pgbm·BIM-SLAM 이 같은 TUM 저자 그룹 근거임을 적었다.
-- ref-091(재부여 ref-131) 기관 표기를 '박근홍, 박병준, 이슬기(한국산학기술학회논문지)' 로, 서지에 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218 을 넣고 URL 을 KCI 논문 페이지(ART003269295)로 바꿨다.
+- 참고문헌 id 재부여 — 지시 매핑 가운데 ref-120·ref-220·ref-221·ref-222 은 그대로 쓰고, 지시값 ref-119·ref-121·ref-122·ref-123·ref-124 는 입력 참고문헌 색인에 이미 다른 출처가 있어(지시의 전제 '최대 ref-109, ref-110~118' 과 다름) 기존 각주가 덮어써지지 않도록 ref-223·ref-224·ref-225·ref-226·ref-227 로 바꿨다. 단계 1 페이지·아이디어 페이지·초안의 본문 각주, 프런트매터 sources, reference_updates 를 모두 같은 매핑으로 맞췄고 ref-212~ref-219 는 어디에도 쓰지 않았으며, 퍼블리셔 재확인 요청을 additional_research_requests 에 적었다.
+- 원문 미열람 표시 — ref-079·ref-080·ref-082·ref-084 를 뺀 ref-081·ref-083·ref-085·ref-086·ref-120·ref-220~ref-227 의 모든 각주 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.
+- ref-215(재부여 ref-225) 기관 표기를 'Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.' 로 고쳤다(각주·reference_updates).
+- ref-214(재부여 ref-224) 기관 표기를 Shaheer 외 7인으로 고치고, 각주 제목과 본문에 'arXiv 2024-08 제출, 2025-06 개정' 을 적었다.
+- ref-218(재부여 ref-221) 기관 표기를 'Vega Torres, M. A., Braun, A., & Borrmann, A.' 로 고치고, 단계 1 페이지 3절·4절과 아이디어 페이지 비교표 설명에 Vega-Torres 외·Ogm2Pgbm·BIM-SLAM 이 같은 TUM 저자 그룹 근거임을 적었다.
+- ref-216(재부여 ref-226) 기관 표기를 '박근홍, 박병준, 이슬기(한국산학기술학회논문지)' 로, 서지에 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218 을 넣고 URL 을 KCI 논문 페이지(ART003269295)로 바꿨다.
 - f16 — 단계 1 페이지 3절에서 [사실] 문장을 'BIM 에서 세션 데이터(포즈 그래프 지도·기술자) 생성, 다중 세션 앵커링 정렬, BIM 에 없는 새 요소 재구성' 범위로 줄이고, URDF 건물 월드·점유 격자 지도 생성은 '검색 요약 기준이며 미확인' 을 붙인 [추정] 문장으로 분리했다. 아이디어 비교표에도 확인 범위만 넣었다.
 - f2 — [사실] 문장에는 레이어 축척·이동·회전 변환과 is_charger 정점 동작만 두고, '충전 위치는 사람이 주석하는 항목' 이라는 해석은 f20 문단의 [추정] 문장으로 옮겼다.
 - f19 — 'IfcSpace·IfcDoor 같은 의미 클래스 덕분에' 구절 바로 뒤에 [^ref-086] 을 달고 문장 전체는 [추정]을 유지했다.
 - f5·f6·f11·f12·f16·f17 — 단계 1 페이지와 아이디어 페이지에서 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개하고, 위치추정·SLAM 자체는 분류 원문 9장의 로봇 자체 지능·제어 연계 대상이라고 짧게 적었다(f22 문단은 '연계 대상:' 으로 시작). 세부영역 반영 제안의 요약도 같은 표현으로 썼다.
-- f4·f9·f10 — 단계 1 페이지 3절과 아이디어 페이지 '제품 사례' 소절에서 모두 '[추정] 벤더 주장' 으로 쓰고, ref-132 는 본문과 각주 제목에 '유통사(jk.de) 게재본' 임을 밝혔으며, Pointr 는 사람용 실내 지도이고 로봇 지도 사례가 아님을 유지했다.
+- f4·f9·f10 — 단계 1 페이지 3절과 아이디어 페이지 '제품 사례' 소절에서 모두 '[추정] 벤더 주장' 으로 쓰고, ref-227 는 본문과 각주 제목에 '유통사(jk.de) 게재본' 임을 밝혔으며, Pointr 는 사람용 실내 지도이고 로봇 지도 사례가 아님을 유지했다.
 - f17 — 35cm·15도 수치를 '시뮬레이션·실제 데이터셋 실험 조건의 단일 출처 수치' 로 조건과 함께 적었다(단계 1 페이지 3절, 4절 불확실성).
 - f1 — 시뮬레이션 월드 생성은 22. 시뮬레이션·예측용 디지털 트윈 링크로만 연결하고 8. 실시간 세계 상태·데이터 일관성과 구분한다고 적었다.
 - 용어 IFC·IndoorGML — 정의를 'IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식', 'IFC 데이터에서 자동 생성하는 도구의 대상이 되는 실내 공간 정보 표준' 으로 줄이고 OGC·스키마 구조 서술을 뺐으며, 표준 구조 확인을 additional_research_requests 로 넘겼다.
@@ -100,13 +100,20 @@
 - 아이디어 3절 — '아직 조사되지 않음(q1-02)' 을 제품 사례(MiR Fleet·Navitec·Pointr, 벤더 주장 병기)로 바꾸고, 오픈소스 도구(traffic-editor·osmAG-from-cad·Ogm2Pgbm·ifc2indoorgml)는 비교표의 '구분' 열에 도구로 구분했으며, 표는 검증된 finding 으로 직접 만들었다.
 - 세부영역 반영 — 6. 지도·공간·위치 모델, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스 페이지는 고치지 않고 area_reflection_proposals 로만 냈으며, 28. 표준·상호운용성·다사업자 거버넌스 제안에 'IFC·IndoorGML 을 발행 기관 자료로 확인하지 않음' 을 병기했다.
 - 단계 1 페이지 6절 — 완료 조건 1·2 를 충족(1차 예비 판정, 2차에서 확정)·미승인으로, 표 아래를 '다음 단계로 전환: 아니오(막힌 질문 q1-03·q1-04·q1-05·q1-06)' 로 썼고 단계 상태는 진행 중이며 stage_transition 은 넣지 않았다. H1 아래 상태 줄은 H2 밖이라 패치로 못 바꿔 값('진행 중 · 열린 질문 4건 · 답한 질문 2건 · 완료 조건 충족')을 diff_summary 와 additional_research_requests 에 적어 퍼블리셔 처리를 요청했다.
+- 2차: 단계 1 페이지 상태 줄 — 페이지 전체 content 로 보내면서 H1 아래 줄을 '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 2건 · 완료 조건: 충족 · 마지막 실행: 2026-09-25' 로 고쳤고, 퍼블리셔 처리 요청은 additional_research_requests 에서 뺐다.
+- 2차: 공간 그래프 스키마 초안 — 페이지 전체 content 로 보내면서 H1 을 '# 공간 그래프 스키마 초안 (v0.2)' 로 고쳐 프런트매터 ontology_version '0.2'·track_updates.ontology_draft_version "0.2" 와 맞췄다(page-status 자동 영역은 손대지 않음).
+- 2차: 초안 6절 '문 통과 조건' 항목 — Palacz 외 [사실] 문장에서 '검색 요약 기준으로 문을 하이퍼엣지로 표현한다' 를 삭제했고, 원문 확인 요청을 additional_research_requests 에 적었다.
+- 2차: 국내 사례 문장 — 단계 1 페이지 4절과 아이디어 페이지 3절 '한계' 에서 '대상이 건설로봇' 부분만 [사실][^ref-226] 로 두고, '물류 분야의 국내 도면 활용 사례는 이번 검색 범위에서 찾지 못했다(부재 확인 아님)' 는 별도 문장으로 나눠 ref-226 각주를 달지 않았다.
+- 2차: 아이디어 페이지 프런트매터 sources 에서 ref-080 을 뺐다.
+- 2차: glossary_updates 'ifc' description 에서 '발행 기관(buildingSMART)' 을 빼고 '표준 구조는 발행 기관 자료로 확인하지 않았다' 로 썼다(IndoorGML 추가 조사 요청에서도 buildingSMART·OGC 이름을 뺐다).
+- 2차: 단계 1 페이지 6절 두 행의 검증 판정을 '충족 · 미승인' 으로 확정하고 표 아래 줄은 그대로 두었으며, track_updates.overview_progress·log_entry 의 완료 조건 표기를 '충족(2차 확정)' 으로 맞췄다. outline 의 6절 요약도 같게 고쳤다.
 
 ## 트랙 갱신
 
 - 단계 페이지: docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md
 - 온톨로지 초안 버전: 0.2
-- 트랙 로그 항목: 답한 질문: q1-02(f1~f22; 입력 형식별 도면→로봇 지도 연구·오픈소스 도구·제품 사례, 제품은 벤더 주장 3건) / 새 질문: q1-06(단계 1, 근거 f21). 중복으로 등록하지 않은 2건은 q2-01·q2-03(f19), q4-02(f17)에 연결 / 온톨로지 변경: v0.1 → v0.2(2026-09-25, 근거 실행 2026-09-25-11): 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도' 속성 축척·도면 대비 변환 추가·확정(f1·f2·f3), '평면도' 형식 값 후보 추가·확정(f1·f8·f11). 거부: 문 속성 추가(f13·f14 → 6절 질문, q3-02) / 완료 조건 평가: 충족(1차 예비 판정, 2차에서 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 4건, 21. 온보딩·설정·현장 시운전 2건, 28. 표준·상호운용성·다사업자 거버넌스 1건 / 다음 실행 제안: q1-03(충전 위치·작업대 인식·보완 사례), q1-06, q1-04. 참고: 참고문헌 id 는 ref-120·ref-125~ref-132 로 재부여(검증 지시 매핑 중 5건이 기존 id 와 충돌)
-- 개요 진행 현황: 단계 1 진행 중 — 열린 질문 4, 답함 2, 완료 조건 충족(1차 예비 판정, 2차에서 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06)
+- 트랙 로그 항목: 답한 질문: q1-02(f1~f22; 입력 형식별 도면→로봇 지도 연구·오픈소스 도구·제품 사례, 제품은 벤더 주장 3건) / 새 질문: q1-06(단계 1, 근거 f21). 중복으로 등록하지 않은 2건은 q2-01·q2-03(f19), q4-02(f17)에 연결 / 온톨로지 변경: v0.1 → v0.2(2026-09-25, 근거 실행 2026-09-25-11): 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도' 속성 축척·도면 대비 변환 추가·확정(f1·f2·f3), '평면도' 형식 값 후보 추가·확정(f1·f8·f11). 거부: 문 속성 추가(f13·f14 → 6절 질문, q3-02) / 완료 조건 평가: 충족(2차 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 4건, 21. 온보딩·설정·현장 시운전 2건, 28. 표준·상호운용성·다사업자 거버넌스 1건 / 다음 실행 제안: q1-03(충전 위치·작업대 인식·보완 사례), q1-06, q1-04. 참고: 참고문헌 id 는 ref-120·ref-220~ref-227 로 재부여(검증 지시 매핑 중 5건이 기존 id 와 충돌)
+- 개요 진행 현황: 단계 1 진행 중 — 열린 질문 4, 답함 2, 완료 조건 충족(2차 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06)
 
 ### 백로그 갱신
 
