@@ -155,6 +155,11 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 12. 명령·작업 실행의 신뢰성 — 대표 연구와 자료: topics/2026/2026-09-25-area12-s8.md
+      - 12. 명령·작업 실행의 신뢰성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area12-s7.md
+      - 12. 명령·작업 실행의 신뢰성 — 대표 접근법과 기술: topics/2026/2026-09-25-area12-s6.md
+      - 12. 명령·작업 실행의 신뢰성 — 핵심 개념과 용어: topics/2026/2026-09-25-area12-s4.md
+      - 12. 명령·작업 실행의 신뢰성 — 열린 질문: topics/2026/2026-09-25-area12-s11.md
       - 11. 분산 시스템·통신·컴퓨팅 구조 — 대표 연구와 자료: topics/2026/2026-09-25-area11-s8.md
       - 11. 분산 시스템·통신·컴퓨팅 구조 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area11-s7.md
       - 11. 분산 시스템·통신·컴퓨팅 구조 — 대표 접근법과 기술: topics/2026/2026-09-25-area11-s6.md
@@ -229,6 +234,7 @@ nav:
     - 계획 도메인 정의 언어 (Planning Domain Definition Language (PDDL)): glossary/pddl.md
     - 공간 그래프 (Space Graph): glossary/space-graph.md
     - 공급망 운영 참조 모델 (SCOR): glossary/scor.md
+    - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
     - 구조화 출력 (Structured Output): glossary/structured-output.md
     - 글로벌 개별 자산 식별자 (Global Individual Asset Identifier (GIAI)): glossary/giai.md
     - 글로벌 반환형 자산 식별자 (Global Returnable Asset Identifier (GRAI)): glossary/grai.md
@@ -249,10 +255,12 @@ nav:
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
+    - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
+    - 사가 (Saga): glossary/saga.md
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
@@ -657,6 +665,19 @@ nav:
     - 'ref-360 — DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning': references/ref-360.md
     - ref-361 — Robot Tasks with Fuzzy Time Requirements from Natural Language Instructions: references/ref-361.md
     - ref-362 — Introducing Structured Outputs in the API: references/ref-362.md
+    - ref-363 — Actions (ROS 2 Design): references/ref-363.md
+    - 'ref-364 — Managed nodes (ROS 2 Design: node_lifecycle)': references/ref-364.md
+    - ref-365 — rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.json: references/ref-365.md
+    - ref-366 — rmf_task — rmf_task/include/rmf_task/Task.hpp: references/ref-366.md
+    - ref-367 — The Idempotency-Key HTTP Header Field (draft-ietf-httpapi-idempotency-key-header): references/ref-367.md
+    - 'ref-368 — OPC 10000-10 UA Part 10: Programs - 4.2.4 Program states': references/ref-368.md
+    - 'ref-369 — ISA-TR88.00.02-2022, Machine and Unit States: An implementation example of ISA-88.00.01': references/ref-369.md
+    - 'ref-370 — Behavior Trees in Robotics and AI: An Introduction': references/ref-370.md
+    - ref-371 — BehaviorTree.CPP — include/behaviortree_cpp/decorators/retry_node.h: references/ref-371.md
+    - ref-372 — BehaviorTree.CPP — include/behaviortree_cpp/decorators/timeout_node.h: references/ref-372.md
+    - ref-373 — Sagas: references/ref-373.md
+    - 'ref-374 — Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2': references/ref-374.md
+    - 'ref-375 — Benchmarking Message Brokers for IoT Edge Computing: A Comprehensive Performance Study': references/ref-375.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

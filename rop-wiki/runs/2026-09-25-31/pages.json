@@ -5,7 +5,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "3. 왜 중요한가",
       "budget_chars": 650,
-      "summary": "무선 전송 불확실성과 재시작 때문에 응답이 끊긴 명령을 다시 보낼 때 중복 실행이나 작업 유실이 생길 수 있다. [추정][^ref-031][^ref-600]",
+      "summary": "무선 전송 불확실성과 재시작 때문에 응답이 끊긴 명령을 다시 보낼 때 중복 실행이나 작업 유실이 생길 수 있다. [추정][^ref-031][^ref-374]",
       "planned_findings": [
         "f4",
         "f14",
@@ -16,7 +16,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "4. 핵심 개념과 용어",
       "budget_chars": 900,
-      "summary": "VDA 5050 주문 id·주문 갱신 id, ROS 2 목표 id, 멱등성 키, 마지막 유언, deadline·liveliness, 작업 백업, 사가를 정리한다. [사실][^ref-031][^ref-588]",
+      "summary": "대표 규격마다 명령을 구분하는 식별자와 상태 값을 따로 정한다: VDA 5050 은 주문 id·주문 갱신 id 를, ROS 2 액션은 클라이언트가 만든 UUID 목표 id 를 쓴다. [사실][^ref-031][^ref-363]",
       "planned_findings": [
         "f1",
         "f8",
@@ -31,7 +31,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
       "budget_chars": 900,
-      "summary": "적치 운반 주문의 응답이 끊겨 다시 보낼 때 같은 id 재전송은 로봇이 무시하지만 새 요청으로 보내면 중복될 수 있다. [추정][^ref-031][^ref-592]",
+      "summary": "적치 운반 주문의 응답이 끊겨 다시 보낼 때 같은 id 재전송은 로봇이 무시하지만 새 요청으로 보내면 중복될 수 있다. [추정][^ref-031][^ref-367]",
       "planned_findings": [
         "f3",
         "f4",
@@ -46,7 +46,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "6. 대표 접근법과 기술",
       "budget_chars": 1800,
-      "summary": "식별자 기반 중복 무시, 요청 단위 멱등성 키, 상태 기계, 시간 초과 감지, 재시도·취소·보상, 상태 백업·복원의 여섯 기법을 정리한다. [추정][^ref-031][^ref-591]",
+      "summary": "명령 실행 신뢰성의 기법은 식별자로 중복 거르기, 요청 단위 멱등성 키, 상태 기계, 시간 초과 감지, 재시도·취소·보상, 상태 저장과 재시작 복원으로 나눌 수 있다. [추정][^ref-031][^ref-366]",
       "planned_findings": [
         "f1",
         "f2",
@@ -55,7 +55,6 @@
         "f7",
         "f8",
         "f9",
-        "f10",
         "f11",
         "f12",
         "f13",
@@ -78,7 +77,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "budget_chars": 700,
-      "summary": "VDA 5050, ROS 2 액션·QoS·관리형 노드, Open-RMF, MQTT 5.0, IETF 초안, OPC UA Programs, PackML, ISA-95 Job Control, BehaviorTree.CPP 를 표로 정리한다. [사실][^ref-031]",
+      "summary": "명령 식별자·상태·재시도·끊김 감지를 정한 표준과 공개 구현을 표로 정리한다.",
       "planned_findings": [
         "f1",
         "f8",
@@ -96,7 +95,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 550,
-      "summary": "행동 트리 입문서, 사가 논문, 브로커 신뢰성 비교 연구(저자 보고값), Open-RMF 재시작 이슈를 소개한다. [사실][^ref-596][^ref-599]",
+      "summary": "이 영역의 학술 자료는 실행 구조(행동 트리·사가)와 메시지 전달 신뢰성 측정이 중심이며, 사가를 물류 로봇에 적용한 사례는 찾지 못했다. [추정][^ref-370][^ref-373]",
       "planned_findings": [
         "f24",
         "f25",
@@ -108,7 +107,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
       "budget_chars": 600,
-      "summary": "ROP 는 명령 식별자·상태 기계·시간 초과·재시작 복원·상위 요청 중복 판별을, 로봇 내부 재시도·정지 방식은 제조사가 맡는 쪽으로 보인다. [추정][^ref-031][^ref-591]",
+      "summary": "ROP 는 명령 식별자와 작업 상태를 관리하고 로봇 내부 동작 복구는 제조사에 맡기는 쪽에 가깝다. [추정][^ref-031][^ref-366]",
       "planned_findings": [
         "f28",
         "f29",
@@ -120,7 +119,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "budget_chars": 550,
-      "summary": "1. 주문·업무 시스템 연계, 2. 공정·워크플로 모델링, 9. 로봇·제조사 관제 연동, 11. 분산 시스템·통신·컴퓨팅 구조, 19. 모니터링·이상 탐지·원인 분석, 20. 예외 복구·재계획·업무 연속성과 연결한다. [추정][^ref-130]",
+      "summary": "명령 신뢰성은 상위 요청, 로봇·통신, 실패 뒤 처리 쪽 영역에 걸쳐 있다. [추정][^ref-031][^ref-130]",
       "planned_findings": [
         "f22",
         "f31",
@@ -134,7 +133,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "section": "11. 열린 질문",
       "budget_chars": 600,
-      "summary": "기존 열린 질문 세 건과 멱등성 키 보존 기간, VDA 5050 재부팅 뒤 주문 처리, Open-RMF 작업 백업 반영 여부의 새 질문 세 건을 둔다.",
+      "summary": "기존 열린 질문 세 건과 새 질문 세 건(멱등성 키 보존 기간, VDA 5050 재부팅 뒤 주문 처리, Open-RMF 작업 백업 반영 여부)을 둔다.",
       "planned_findings": [
         "f4",
         "f14",
@@ -147,7 +146,7 @@
       "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행"
+      "diff_summary": "섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area12-s6.md",
@@ -199,7 +198,7 @@
         1
       ],
       "sources": [
-        "ref-592"
+        "ref-367"
       ]
     },
     {
@@ -214,7 +213,7 @@
         20
       ],
       "sources": [
-        "ref-599"
+        "ref-373"
       ]
     },
     {
@@ -244,7 +243,7 @@
         24
       ],
       "sources": [
-        "ref-589"
+        "ref-364"
       ]
     }
   ],
@@ -385,7 +384,7 @@
       ]
     },
     {
-      "id": "ref-588",
+      "id": "ref-363",
       "org": "ROS 2 Design",
       "title": "Actions (ROS 2 Design)",
       "published": null,
@@ -400,7 +399,7 @@
       ]
     },
     {
-      "id": "ref-589",
+      "id": "ref-364",
       "org": "ROS 2 Design",
       "title": "Managed nodes (ROS 2 Design: node_lifecycle)",
       "published": null,
@@ -415,7 +414,7 @@
       ]
     },
     {
-      "id": "ref-590",
+      "id": "ref-365",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.json",
       "published": null,
@@ -430,7 +429,7 @@
       ]
     },
     {
-      "id": "ref-591",
+      "id": "ref-366",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_task — rmf_task/include/rmf_task/Task.hpp",
       "published": null,
@@ -445,7 +444,7 @@
       ]
     },
     {
-      "id": "ref-592",
+      "id": "ref-367",
       "org": "IETF HTTPAPI Working Group (Jena, J., & Dalal, S.)",
       "title": "The Idempotency-Key HTTP Header Field (draft-ietf-httpapi-idempotency-key-header)",
       "published": null,
@@ -460,7 +459,7 @@
       ]
     },
     {
-      "id": "ref-594",
+      "id": "ref-368",
       "org": "OPC Foundation",
       "title": "OPC 10000-10 UA Part 10: Programs - 4.2.4 Program states",
       "published": null,
@@ -475,7 +474,7 @@
       ]
     },
     {
-      "id": "ref-595",
+      "id": "ref-369",
       "org": "ISA",
       "title": "ISA-TR88.00.02-2022, Machine and Unit States: An implementation example of ISA-88.00.01",
       "published": "2022",
@@ -490,7 +489,7 @@
       ]
     },
     {
-      "id": "ref-596",
+      "id": "ref-370",
       "org": "Colledanchise, M., & Ögren, P.",
       "title": "Behavior Trees in Robotics and AI: An Introduction",
       "published": "2017-09",
@@ -505,7 +504,7 @@
       ]
     },
     {
-      "id": "ref-597",
+      "id": "ref-371",
       "org": "BehaviorTree.CPP (BehaviorTree GitHub)",
       "title": "BehaviorTree.CPP — include/behaviortree_cpp/decorators/retry_node.h",
       "published": null,
@@ -520,7 +519,7 @@
       ]
     },
     {
-      "id": "ref-598",
+      "id": "ref-372",
       "org": "BehaviorTree.CPP (BehaviorTree GitHub)",
       "title": "BehaviorTree.CPP — include/behaviortree_cpp/decorators/timeout_node.h",
       "published": null,
@@ -535,7 +534,7 @@
       ]
     },
     {
-      "id": "ref-599",
+      "id": "ref-373",
       "org": "Garcia-Molina, H., & Salem, K.",
       "title": "Sagas",
       "published": "1987",
@@ -550,7 +549,7 @@
       ]
     },
     {
-      "id": "ref-600",
+      "id": "ref-374",
       "org": "Open Robotics (open-rmf/rmf_ros2 GitHub)",
       "title": "Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2",
       "published": null,
@@ -565,7 +564,7 @@
       ]
     },
     {
-      "id": "ref-601",
+      "id": "ref-375",
       "org": "Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.",
       "title": "Benchmarking Message Brokers for IoT Edge Computing: A Comprehensive Performance Study",
       "published": "2026-03-23",
@@ -660,11 +659,11 @@
   "fixes_applied": [
     "f21 강등 — 6절 상태 기계 문단과 7절 표 PackML 행을 [추정]으로 쓰고 'ISA 원문 미열람, 상태 목록은 발행 기관 자료로 미확인'과 2015판·2022판을 병기했다.",
     "f27 강등 — 8절 브로커 비교 연구 항목을 [추정]으로 쓰고 '저자 보고값(MQTT 브로커 5종, MTTF 30초·MTTR 5초 장애 모델)이며 원문 미열람'을 병기했다.",
-    "ref-601 — reference_updates 와 각주의 기관을 'Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.'로, 발행일을 2026-03-23 으로 고쳤다.",
-    "ref-306 — 새 참고문헌으로 등록하지 않고 f16·f17 문장의 각주를 기존 ref-306(OASIS, MQTT Version 5.0)으로 바꿨으며 reference_updates 에서 ref-306 을 뺐다.",
+    "ref-375 — reference_updates 와 각주의 기관을 'Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.'로, 발행일을 2026-03-23 으로 고쳤다.",
+    "ref-306 — 새 참고문헌으로 등록하지 않고 f16·f17 문장의 각주를 기존 ref-306(OASIS, MQTT Version 5.0)으로 썼으며 새 항목을 만들지 않았다(reference_updates 에는 기존 ref-306 을 cited_by 갱신용으로만 넣었다).",
     "f9 — 6절 멱등성 키 문단에 가장 이른 시작 시각(unix_millis_earliest_start_time)을 넣고 작업 요청의 필수 필드가 category·description 뿐이라고 썼다.",
     "f20 — 6절 상태 기계 문단과 7절 표에 OPC UA Part 10 의 판(v1.04 참조 페이지 기준)을 적었다.",
-    "각주 — ref-129, ref-306, ref-594, ref-595, ref-596, ref-599, ref-600, ref-601 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-111 은 기존 참고문헌 행(high, 원문 미열람 표시 없음)을 그대로 재사용했다.",
+    "각주 — ref-129, ref-306, ref-368, ref-369, ref-370, ref-373, ref-374, ref-375 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-111 은 기존 참고문헌 행을 그대로 재사용했다.",
     "인용 — 페이지 전체에서 출처 원문 직접 인용을 쓰지 않고 ref-031 을 포함한 모든 출처를 요약·재서술했다.",
     "f16·f27 — 6절에서 MQTT 전달 보장을 중복 판단의 입력으로만 짧게 쓰고 8절 브로커 연구도 입력으로만 참고한다고 밝혔으며, 6절과 10절에서 11. 분산 시스템·통신·컴퓨팅 구조로 연결했다.",
     "f30 — 5절 제약 칸과 6절 시간 초과 문단에 '상태 미수신 시 관제 대응 규정을 명세 발췌 범위에서 찾지 못함(부재 확정 아님)' 단서를 유지했다.",
@@ -682,7 +681,7 @@
         9
       ],
       "summary": "클라이언트가 UUID 로 만드는 목표 id, 진행·종료 목표 상태, 결과 캐시를 정한 ROS 2 설계 문서다.",
-      "ref_id": "ref-588"
+      "ref_id": "ref-363"
     },
     {
       "name": "ROS 2 관리형 노드 수명주기(Managed nodes)",
@@ -694,7 +693,7 @@
         24
       ],
       "summary": "네 주 상태와 전이 상태로 감독 도구가 준비 확인·운영 중 재시작·교체를 제어하게 하는 ROS 2 설계 문서다.",
-      "ref_id": "ref-589"
+      "ref_id": "ref-364"
     },
     {
       "name": "Open-RMF rmf_task",
@@ -706,7 +705,7 @@
         20
       ],
       "summary": "실행 중 작업의 백업과 취소·강제 종료·건너뛰기·되감기를 정한 Open-RMF 작업 라이브러리다.",
-      "ref_id": "ref-591"
+      "ref_id": "ref-366"
     },
     {
       "name": "IETF Idempotency-Key HTTP 헤더 초안(draft-ietf-httpapi-idempotency-key-header)",
@@ -718,7 +717,7 @@
         1
       ],
       "summary": "RFC 가 아닌 인터넷 초안으로, 클라이언트 생성 멱등성 키로 요청 재시도를 식별하고 키 재사용 금지·만료 정책·오류 코드를 제안한다.",
-      "ref_id": "ref-592"
+      "ref_id": "ref-367"
     },
     {
       "name": "OPC UA Part 10: Programs (v1.04)",
@@ -729,7 +728,7 @@
         12
       ],
       "summary": "Halted·Ready·Running·Suspended 프로그램 상태 기계와 전이를 정한다(원문 미열람).",
-      "ref_id": "ref-594"
+      "ref_id": "ref-368"
     },
     {
       "name": "ISA-TR88.00.02 Machine and Unit States (PackML)",
@@ -740,7 +739,7 @@
         12
       ],
       "summary": "PackML 로 알려진 기계·유닛 상태 모델 기술보고서(2015판·2022판). 원문 유료·미열람이며 상태 목록은 발행 기관 자료로 미확인이다.",
-      "ref_id": "ref-595"
+      "ref_id": "ref-369"
     },
     {
       "name": "BehaviorTree.CPP",
@@ -751,7 +750,7 @@
         12
       ],
       "summary": "재시도(RetryNode)·시간 초과(TimeoutNode) 데코레이터를 제공하는 행동 트리 라이브러리다.",
-      "ref_id": "ref-597"
+      "ref_id": "ref-371"
     }
   ]
 }

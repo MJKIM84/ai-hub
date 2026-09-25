@@ -1107,6 +1107,101 @@
       "ref_id": "ref-356",
       "run_id": "2026-09-25-30",
       "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 액션 설계(Actions)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        12,
+        9
+      ],
+      "url": "https://design.ros2.org/articles/actions.html",
+      "summary": "클라이언트가 UUID 로 만드는 목표 id, 진행·종료 목표 상태, 결과 캐시를 정한 ROS 2 설계 문서다.",
+      "ref_id": "ref-363",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 관리형 노드 수명주기(Managed nodes)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        12,
+        24
+      ],
+      "url": "https://design.ros2.org/articles/node_lifecycle.html",
+      "summary": "네 주 상태와 전이 상태로 감독 도구가 준비 확인·운영 중 재시작·교체를 제어하게 하는 ROS 2 설계 문서다.",
+      "ref_id": "ref-364",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_task",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp",
+      "summary": "실행 중 작업의 백업과 취소·강제 종료·건너뛰기·되감기를 정한 Open-RMF 작업 라이브러리다.",
+      "ref_id": "ref-366",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IETF Idempotency-Key HTTP 헤더 초안(draft-ietf-httpapi-idempotency-key-header)",
+      "org": "IETF HTTPAPI Working Group",
+      "kind": "표준",
+      "related_areas": [
+        12,
+        1
+      ],
+      "url": "https://github.com/ietf-wg-httpapi/idempotency/blob/main/draft-ietf-httpapi-idempotency-key-header.md",
+      "summary": "RFC 가 아닌 인터넷 초안으로, 클라이언트 생성 멱등성 키로 요청 재시도를 식별하고 키 재사용 금지·만료 정책·오류 코드를 제안한다.",
+      "ref_id": "ref-367",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC UA Part 10: Programs (v1.04)",
+      "org": "OPC Foundation",
+      "kind": "표준",
+      "related_areas": [
+        12
+      ],
+      "url": "https://reference.opcfoundation.org/Core/Part10/v104/docs/4.2.4",
+      "summary": "Halted·Ready·Running·Suspended 프로그램 상태 기계와 전이를 정한다(원문 미열람).",
+      "ref_id": "ref-368",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISA-TR88.00.02 Machine and Unit States (PackML)",
+      "org": "ISA",
+      "kind": "표준",
+      "related_areas": [
+        12
+      ],
+      "url": "https://www.isa.org/products/isa-tr88-00-02-2022-machine-and-unit-states-an-imp",
+      "summary": "PackML 로 알려진 기계·유닛 상태 모델 기술보고서(2015판·2022판). 원문 유료·미열람이며 상태 목록은 발행 기관 자료로 미확인이다.",
+      "ref_id": "ref-369",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BehaviorTree.CPP",
+      "org": "BehaviorTree (GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12
+      ],
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP/blob/master/include/behaviortree_cpp/decorators/retry_node.h",
+      "summary": "재시도(RetryNode)·시간 초과(TimeoutNode) 데코레이터를 제공하는 행동 트리 라이브러리다.",
+      "ref_id": "ref-371",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
     }
   ]
 }

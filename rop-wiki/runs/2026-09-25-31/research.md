@@ -49,8 +49,8 @@
 | f13 | [사실] | Open-RMF rmf_task 라이브러리의 실행 중 작업(Task::Active)은 순서 번호가 붙은 문자열 형태의 백업을 만들 수 있고, 취소(cancel)는 로봇을 짐 없는 상태로 되돌리게 하며, 강제 종료(kill)는 취소보다 우선해 로봇을 안전한 유휴 상태로 되돌리게 하고, 단계 건너뛰기(skip)·되감기(rewind)를 제공한다. | ref-591 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f14 | [사실] | Open-RMF 저장소 이슈 #224 는 플릿 어댑터가 재시작되면 배정된 작업이 사라진다고 지적하고, 작업 로그와 백업을 SQLite 데이터베이스에 저장해 복구하는 기능이 별도 풀 리퀘스트로 제안되었다고 적는다. | ref-600 | 아니오 | medium | 2026-09-25 | 예외·성과 | 원문 미열람 |
 | f15 | [사실] | IETF HTTPAPI 작업반의 Idempotency-Key 헤더 초안(RFC 가 아닌 인터넷 초안)은 클라이언트가 만든 고유 키로 서버가 같은 요청의 재시도를 알아보게 하며, 키를 다른 내용의 요청에 재사용하면 안 되고, 서버는 키 만료 정책을 공개해야 하며, 원 요청이 처리 중일 때의 재요청에는 409, 다른 내용으로 재사용한 요청에는 422 를 돌려주도록 제안한다. | ref-592 | 아니오 | medium | 2025-10-15 | — | — |
-| f16 | [사실] | MQTT 5.0 의 QoS 2(정확히 한 번)는 네 단계 확인 교환으로 프로토콜 상대 사이의 정확히 한 번 전달을 보장하며, 수신 측은 PUBCOMP 를 보낼 때까지 원 PUBLISH 의 패킷 식별자를 기억해 확인 응답 손실로 다시 온 중복 PUBLISH 를 버린다. | ref-593 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
-| f17 | [추정] | MQTT QoS 보장은 클라이언트–브로커 같은 프로토콜 상대 사이에만 적용되므로, 관제가 응답 시간 초과 뒤 새 메시지로 주문을 다시 보내는 경우의 중복은 QoS 가 아니라 VDA 5050 의 주문 id·주문 갱신 id 같은 응용 계층 식별자로 걸러야 할 것으로 보인다. | ref-593, ref-031 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
+| f16 | [사실] | MQTT 5.0 의 QoS 2(정확히 한 번)는 네 단계 확인 교환으로 프로토콜 상대 사이의 정확히 한 번 전달을 보장하며, 수신 측은 PUBCOMP 를 보낼 때까지 원 PUBLISH 의 패킷 식별자를 기억해 확인 응답 손실로 다시 온 중복 PUBLISH 를 버린다. | ref-306 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
+| f17 | [추정] | MQTT QoS 보장은 클라이언트–브로커 같은 프로토콜 상대 사이에만 적용되므로, 관제가 응답 시간 초과 뒤 새 메시지로 주문을 다시 보내는 경우의 중복은 QoS 가 아니라 VDA 5050 의 주문 id·주문 갱신 id 같은 응용 계층 식별자로 걸러야 할 것으로 보인다. | ref-306, ref-031 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
 | f18 | [사실] | ROS 2 의 서비스 품질(QoS) 정책은 신뢰(reliable)·최선 노력(best effort) 전달, 늦게 참여한 구독자를 위해 발행자가 샘플을 보존하는 transient local 지속성, 메시지 사이 최대 간격을 정하는 deadline, 임대 기간(lease duration) 안에 살아 있음을 알리지 않으면 활성 상실로 보는 liveliness 와, 그 위반을 알리는 QoS 이벤트를 둔다. | ref-282 | 아니오 | medium | 2026-09-25 | — | — |
 | f19 | [사실] | ROS 2 관리형 노드(managed node) 설계는 Unconfigured·Inactive·Active·Finalized 네 주 상태와 전이 상태를 두어, 감독 도구가 모든 구성요소가 올바르게 준비되었는지 확인한 뒤 실행을 허용하고 노드를 운영 중에 재시작·교체할 수 있게 한다. | ref-589 | 아니오 | medium | 2026-09-25 | — | — |
 | f20 | [사실] | OPC UA Part 10(Programs)의 프로그램 상태 기계는 Halted·Ready·Running·Suspended 상태를 두며, Suspended 는 멈춘 지점에서 기능을 재개할 수 있는 상태이고, Halted 는 초기 상태이자 실패 또는 완료를 나타내는 종료 상태가 될 수 있다. | ref-594 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
@@ -119,7 +119,7 @@
 | ref-590 | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/dispatch_task_request.json | 아니오 |
 | ref-591 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/Task.hpp | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp | 아니오 |
 | ref-592 | IETF HTTPAPI Working Group (Jena, J., & Dalal, S.) | The Idempotency-Key HTTP Header Field (draft-ietf-httpapi-idempotency-key-header) | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/ietf-wg-httpapi/idempotency/blob/main/draft-ietf-httpapi-idempotency-key-header.md | 아니오 |
-| ref-593 | OASIS | MQTT Version 5.0 (OASIS Standard) | 미확인 | 표준 | medium | 2026-09-25 | https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html | 예 |
+| ref-306 | OASIS | MQTT Version 5.0 (OASIS Standard) | 미확인 | 표준 | medium | 2026-09-25 | https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html | 예 |
 | ref-594 | OPC Foundation | OPC 10000-10 UA Part 10: Programs - 4.2.4 Program states | 미확인 | 표준 | medium | 2026-09-25 | https://reference.opcfoundation.org/Core/Part10/v104/docs/4.2.4 | 예 |
 | ref-595 | ISA | ISA-TR88.00.02-2022, Machine and Unit States: An implementation example of ISA-88.00.01 | 2022 | 표준 | medium | 2026-09-25 | https://www.isa.org/products/isa-tr88-00-02-2022-machine-and-unit-states-an-imp | 예 |
 | ref-596 | Colledanchise, M., & Ögren, P. | Behavior Trees in Robotics and AI: An Introduction | 2017-09 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1709.00084 | 예 |
@@ -144,7 +144,7 @@
 - **ref-590**: Open-RMF 작업 파견 요청 스키마. type 과 task_request 참조만 필수로 두며 요청자 측 식별자·멱등성 키 필드가 없다.
 - **ref-591**: Open-RMF 작업 라이브러리의 작업 인터페이스 헤더. 실행 중 작업의 백업(순서 번호 포함), 중단·취소·강제 종료·단계 건너뛰기·되감기의 뜻을 주석으로 정한다.
 - **ref-592**: 작업반 공식 저장소의 인터넷 초안 편집본(RFC 아님). 클라이언트가 만든 멱등성 키로 재시도를 식별하고, 키 재사용 금지·만료 정책·409/422/400 오류 처리를 제안한다. 검색 요약상 최신 게시판은 -07(2025-10-15).
-- **ref-593**: 원문 미열람. MQTT 5.0 명세. QoS 0·1·2 전달 보장, 패킷 식별자와 PUBREC·PUBREL·PUBCOMP 교환에 의한 중복 PUBLISH 식별을 정한다.
+- **ref-306**: 원문 미열람. MQTT 5.0 명세. QoS 0·1·2 전달 보장, 패킷 식별자와 PUBREC·PUBREL·PUBCOMP 교환에 의한 중복 PUBLISH 식별을 정한다.
 - **ref-594**: 원문 미열람. OPC UA 프로그램 상태 기계(Halted·Ready·Running·Suspended)와 Start·Suspend·Resume·Halt 전이를 정한다.
 - **ref-595**: 원문 미열람. PackML 로 알려진 기계·유닛 상태 모델 기술보고서. 17개 상태와 운전 모드를 정한다(유료 원문).
 - **ref-596**: 원문 미열람. 로봇·AI 에서 행동 트리의 구조, 모듈성·반응성, 설계 원칙을 소개하는 입문서(프리프린트, 이후 책으로 출간).

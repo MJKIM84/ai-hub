@@ -3,15 +3,15 @@ title: "메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transpo
 type: glossary
 term_ko: 메시지 큐잉 원격 측정 전송
 term_en: Message Queuing Telemetry Transport (MQTT)
-definition: 브로커를 거쳐 토픽 단위로 메시지를 발행·구독하는 경량 메시징 프로토콜로, VDA 5050이 관제와 이동로봇 사이 통신에 쓴다.
-related_areas: [9, 11]
+definition: MQTT 클라이언트가 예기치 않게 끊기면 브로커가 대신 발행하도록 미리 등록해 둔 메시지로, VDA 5050 은 이를 로봇 연결 끊김(CONNECTION_BROKEN) 알림에 쓴다.
+related_areas: [9, 11, 12]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-031]
-version: 1
+sources: [ref-031, ref-306]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 메시지 큐잉 원격 측정 전송
@@ -26,7 +26,7 @@ version: 1
 
 ## 한 줄 정의
 
-브로커를 거쳐 토픽 단위로 메시지를 발행·구독하는 경량 메시징 프로토콜로, VDA 5050이 관제와 이동로봇 사이 통신에 쓴다. [추정][^ref-031]
+MQTT 클라이언트가 예기치 않게 끊기면 브로커가 대신 발행하도록 미리 등록해 둔 메시지로, VDA 5050 은 이를 로봇 연결 끊김(CONNECTION_BROKEN) 알림에 쓴다. [추정][^ref-031][^ref-306]
 
 ## 설명
 
@@ -42,3 +42,4 @@ VDA 5050 3.0.0은 최소 3.1.1판을 요구하고, 로봇이 연결 시 설정�
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
 
 - 참고문헌 페이지: [ref-031](../references/ref-031.md)
+[^ref-306]: OASIS, MQTT Version 5.0, 2019-03, https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html, 접근일 2026-09-25 (원문 미열람)

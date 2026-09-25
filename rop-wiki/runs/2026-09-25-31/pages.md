@@ -4,7 +4,7 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md | draft | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행 |
+| update | docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md | draft | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |
 | create | docs/topics/2026/2026-09-25-area12-s6.md | draft | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "6. 대표 접근법과 기술" 절(3,046자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area12-s7.md | draft | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area12-s4.md | draft | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "4. 핵심 개념과 용어" 절(1,163자)을 옮겼다 |
@@ -98,10 +98,10 @@
 - f21 강등 — 6절 상태 기계 문단과 7절 표 PackML 행을 [추정]으로 쓰고 'ISA 원문 미열람, 상태 목록은 발행 기관 자료로 미확인'과 2015판·2022판을 병기했다.
 - f27 강등 — 8절 브로커 비교 연구 항목을 [추정]으로 쓰고 '저자 보고값(MQTT 브로커 5종, MTTF 30초·MTTR 5초 장애 모델)이며 원문 미열람'을 병기했다.
 - ref-601 — reference_updates 와 각주의 기관을 'Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.'로, 발행일을 2026-03-23 으로 고쳤다.
-- ref-593 — 새 참고문헌으로 등록하지 않고 f16·f17 문장의 각주를 기존 ref-306(OASIS, MQTT Version 5.0)으로 바꿨으며 reference_updates 에서 ref-593 을 뺐다.
+- ref-306 — 새 참고문헌으로 등록하지 않고 f16·f17 문장의 각주를 기존 ref-306(OASIS, MQTT Version 5.0)으로 썼으며 새 항목을 만들지 않았다(reference_updates 에는 기존 ref-306 을 cited_by 갱신용으로만 넣었다).
 - f9 — 6절 멱등성 키 문단에 가장 이른 시작 시각(unix_millis_earliest_start_time)을 넣고 작업 요청의 필수 필드가 category·description 뿐이라고 썼다.
 - f20 — 6절 상태 기계 문단과 7절 표에 OPC UA Part 10 의 판(v1.04 참조 페이지 기준)을 적었다.
-- 각주 — ref-129, ref-306, ref-594, ref-595, ref-596, ref-599, ref-600, ref-601 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-111 은 기존 참고문헌 행(high, 원문 미열람 표시 없음)을 그대로 재사용했다.
+- 각주 — ref-129, ref-306, ref-594, ref-595, ref-596, ref-599, ref-600, ref-601 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-111 은 기존 참고문헌 행을 그대로 재사용했다.
 - 인용 — 페이지 전체에서 출처 원문 직접 인용을 쓰지 않고 ref-031 을 포함한 모든 출처를 요약·재서술했다.
 - f16·f27 — 6절에서 MQTT 전달 보장을 중복 판단의 입력으로만 짧게 쓰고 8절 브로커 연구도 입력으로만 참고한다고 밝혔으며, 6절과 10절에서 11. 분산 시스템·통신·컴퓨팅 구조로 연결했다.
 - f30 — 5절 제약 칸과 6절 시간 초과 문단에 '상태 미수신 시 관제 대응 규정을 명세 발췌 범위에서 찾지 못함(부재 확정 아님)' 단서를 유지했다.

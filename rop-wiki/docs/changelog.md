@@ -30,6 +30,31 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-32 | 갱신 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
 | 2026-09-25-32 | 요약 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
+| 2026-09-25-31 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |
+| 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s6.md](topics/2026/2026-09-25-area12-s6.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "6. 대표 접근법과 기술" 절(3,046자)을 옮겼다 |
+| 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s7.md](topics/2026/2026-09-25-area12-s7.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다 |
+| 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s4.md](topics/2026/2026-09-25-area12-s4.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "4. 핵심 개념과 용어" 절(1,163자)을 옮겼다 |
+| 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s11.md](topics/2026/2026-09-25-area12-s11.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "11. 열린 질문" 절(1,032자)을 옮겼다 |
+| 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s8.md](topics/2026/2026-09-25-area12-s8.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "8. 대표 연구와 자료" 절(735자)을 옮겼다 |
+| 2026-09-25-31 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 12. 명령·작업 실행의 신뢰성: 섹션 3~11 신규 작성(주문 갱신 id 중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 조건부 승인 수정 11건 이행 |
+| 2026-09-25-31 | 생성 | [docs/references/ref-363.md](references/ref-363.md) | 참고문헌 ref-363 등록: Actions (ROS 2 Design) |
+| 2026-09-25-31 | 생성 | [docs/references/ref-364.md](references/ref-364.md) | 참고문헌 ref-364 등록: Managed nodes (ROS 2 Design: node_lifecycle) |
+| 2026-09-25-31 | 생성 | [docs/references/ref-365.md](references/ref-365.md) | 참고문헌 ref-365 등록: rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.js… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-366.md](references/ref-366.md) | 참고문헌 ref-366 등록: rmf_task — rmf_task/include/rmf_task/Task.hpp |
+| 2026-09-25-31 | 생성 | [docs/references/ref-367.md](references/ref-367.md) | 참고문헌 ref-367 등록: The Idempotency-Key HTTP Header Field (draft-ietf-httpapi-id… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-368.md](references/ref-368.md) | 참고문헌 ref-368 등록: OPC 10000-10 UA Part 10: Programs - 4.2.4 Program states |
+| 2026-09-25-31 | 생성 | [docs/references/ref-369.md](references/ref-369.md) | 참고문헌 ref-369 등록: ISA-TR88.00.02-2022, Machine and Unit States: An implementat… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-370.md](references/ref-370.md) | 참고문헌 ref-370 등록: Behavior Trees in Robotics and AI: An Introduction |
+| 2026-09-25-31 | 생성 | [docs/references/ref-371.md](references/ref-371.md) | 참고문헌 ref-371 등록: BehaviorTree.CPP — include/behaviortree_cpp/decorators/retry… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-372.md](references/ref-372.md) | 참고문헌 ref-372 등록: BehaviorTree.CPP — include/behaviortree_cpp/decorators/timeo… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-373.md](references/ref-373.md) | 참고문헌 ref-373 등록: Sagas |
+| 2026-09-25-31 | 생성 | [docs/references/ref-374.md](references/ref-374.md) | 참고문헌 ref-374 등록: Task recovery when fleet adapter get restarted · Issue #224… |
+| 2026-09-25-31 | 생성 | [docs/references/ref-375.md](references/ref-375.md) | 참고문헌 ref-375 등록: Benchmarking Message Brokers for IoT Edge Computing: A Compr… |
+| 2026-09-25-31 | 생성 | [docs/glossary/idempotency-key.md](glossary/idempotency-key.md) | 용어집 항목 멱등성 키 |
+| 2026-09-25-31 | 생성 | [docs/glossary/saga.md](glossary/saga.md) | 용어집 항목 사가 |
+| 2026-09-25-31 | 갱신 | [docs/glossary/mqtt.md](glossary/mqtt.md) | 용어집 항목 마지막 유언 메시지 |
+| 2026-09-25-31 | 생성 | [docs/glossary/managed-node.md](glossary/managed-node.md) | 용어집 항목 관리형 노드 |
+| 2026-09-25-31 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 상태 줄·2절·4절·5절(q3-07, q4-07)·6절·7절·8절·9절 갱신 |
 | 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | v0.2 → v0.3: 상황 개념에 속성 '값 출처' 추가·확정, 6절에 추론 값 확인 근거와 모호 시간 표현 질문 추가 |
 | 2026-09-25-30 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절에 '상황 정보 추출과 되묻기' 소절 추가(q1-04, 실행 2026-09-25-30) |

@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-09-25-31",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 12,
+    "area_name": "12. 명령·작업 실행의 신뢰성",
+    "category": "C. 연결·실행 기반"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 12,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1356.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 12. 명령·작업 실행의 신뢰성 | 섹션 3~11 신규 작성(주문 갱신 id 중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 조건부 승인 수정 11건 이행 | run 2026-09-25-31",
+  "notes": [
+    "참고문헌 생성: references/ref-363.md",
+    "참고문헌 생성: references/ref-364.md",
+    "참고문헌 생성: references/ref-365.md",
+    "참고문헌 생성: references/ref-366.md",
+    "참고문헌 생성: references/ref-367.md",
+    "참고문헌 생성: references/ref-368.md",
+    "참고문헌 생성: references/ref-369.md",
+    "참고문헌 생성: references/ref-370.md",
+    "참고문헌 생성: references/ref-371.md",
+    "참고문헌 생성: references/ref-372.md",
+    "참고문헌 생성: references/ref-373.md",
+    "참고문헌 생성: references/ref-374.md",
+    "참고문헌 생성: references/ref-375.md",
+    "용어집 생성: glossary/idempotency-key.md",
+    "용어집 생성: glossary/saga.md",
+    "용어집 '마지막 유언 메시지' (Last Will (MQTT)) 은 기존 페이지 glossary/mqtt.md 와 같은 용어로 보고 갱신했다(중복 생성 방지)",
+    "용어집 갱신: glossary/mqtt.md",
+    "용어집 생성: glossary/managed-node.md"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 7,
+    "open_questions": 3,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 12:45:46 KST",
+  "usage": {
+    "input_tokens": 72,
+    "cache_creation_input_tokens": 879269,
+    "cache_read_input_tokens": 5496627,
+    "output_tokens": 141359,
+    "cost_usd": 11.727,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.1184,
+        "output_tokens": 36777,
+        "cache_read_input_tokens": 4156586,
+        "cache_creation_input_tokens": 135299
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.3406,
+        "output_tokens": 15291,
+        "cache_read_input_tokens": 1117563,
+        "cache_creation_input_tokens": 195301
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.6266,
+        "output_tokens": 80895,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 372942
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 1.5567,
+        "output_tokens": 7404,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 174168
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-25-area12-s6.md",
+        "chars": 3046
+      },
+      {
+        "from": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-25-area12-s7.md",
+        "chars": 1355
+      },
+      {
+        "from": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-25-area12-s4.md",
+        "chars": 1163
+      },
+      {
+        "from": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-25-area12-s11.md",
+        "chars": 1032
+      },
+      {
+        "from": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-25-area12-s8.md",
+        "chars": 735
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 13,
+  "cross_checked_findings": 0
+}
