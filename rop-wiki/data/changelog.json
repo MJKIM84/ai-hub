@@ -7722,6 +7722,102 @@
       "action": "갱신",
       "page": "docs/standards/index.md",
       "summary": "표준·프레임워크 7건 추가·갱신"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md",
+      "summary": "q3-02 답함(3절 소제목 신설), 후속 질문 2건(q3-09·q4-08), 4·5·6·7·8·9절 갱신, 상태 줄 답한 질문 2건, 6절 검증 판정·막힌 질문(q3-09) 갱신, ref-079 원문 열람 표기 정정"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "summary": "v0.6 → v0.7: 개념 '경유점'·'주행 차선' 추가·확정, '공용 자원' 속성 '상호 배제 여부' 추가·확정, 다이어그램에 두 개념 추가(연결선 없음), 6절 질문 4건 추가, H1 버전 표기 v0.7, ref-212 각주 원문 미열람 표기"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/ideas/floorplan-recognition.md",
+      "summary": "5절 '핵심 구성 요소' 소절 첫 작성(q3-02: 공간 그래프 두 층위·자원 예약 단위·통과 조건 분리·경로망 초안, 모두 추정과 근거 사실), 새 각주 4건, 4절 ref-212 각주 원문 미열람 표기"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/index.md",
+      "summary": "H1 아래 트랙 상태 줄의 현재 단계를 단계 3. 구현 가설 설계로 갱신, 6. 살아있는 산출물 링크 갱신(스키마 초안 v0.7, 아이디어 5절 핵심 구성 요소, 백로그 후속 질문 17건·q3-02 답함)"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "요약",
+      "page": "docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md",
+      "summary": "건축 도면 자동 인식 단계 3: q3-02 답함(공간 그래프 구역·차선 두 층위, 공용 자원 예약 단위, 로봇별 통행 가능 여부 분리 — 모두 추정), 공간 그래프 스키마 초안 v0.6 → v0.7(경유점·주행 차선 추가, 공용 자원 확정), 후속 질문 2건",
+      "index_updates": {
+        "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 3: q3-02 답함(공간 그래프를 구역 수준·차선 수준 두 층위로 두는 구현 가설, 추정), 공간 그래프 스키마 초안 v0.7",
+        "category_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 트랙 건축 도면 자동 인식 단계 3에서 공간 그래프의 노드·엣지 단위(구역 수준·차선 수준)와 관제 형식의 경유점·차선 속성 정리, 6절 반영 제안",
+        "area_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 트랙 건축 도면 자동 인식 q3-02(공간 그래프 두 층위, 공간 세분화 연구)를 6. 대표 접근법과 기술·8. 대표 연구와 자료에 반영 제안"
+      }
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "생성",
+      "page": "docs/references/ref-640.md",
+      "summary": "참고문헌 ref-640 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "생성",
+      "page": "docs/references/ref-641.md",
+      "summary": "참고문헌 ref-641 등록: Optimized Directed Roadmap Graph for Multi-Agent Path Findin…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "생성",
+      "page": "docs/references/ref-642.md",
+      "summary": "참고문헌 ref-642 등록: An Indoor Space Subspacing Framework for Implementing a 3D H…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "생성",
+      "page": "docs/references/ref-643.md",
+      "summary": "참고문헌 ref-643 등록: Task and Motion Planning in Hierarchical 3D Scene Graphs (IS…"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/glossary/open-rmf.md",
+      "summary": "용어집 항목 상호 배제 그룹"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "생성",
+      "page": "docs/glossary/indoor-space-subspacing.md",
+      "summary": "용어집 항목 공간 세분화"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/question-backlog.md",
+      "summary": "백로그 항목 3건 갱신"
+    },
+    {
+      "date": "2026-09-25",
+      "run_id": "2026-09-25-58",
+      "action": "갱신",
+      "page": "docs/tracks/floorplan-recognition/log.md",
+      "summary": "트랙 로그 항목 추가(단계 3)"
     }
   ]
 }

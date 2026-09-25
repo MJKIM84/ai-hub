@@ -5,7 +5,7 @@
       "path": "docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md",
       "section": "3. 조사 결과 (q3-02 추가)",
       "budget_chars": 4200,
-      "summary": "공간 그래프는 구역 수준 노드와 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조여야 배정·경로·자원 예약에 함께 쓰일 것으로 보인다. [추정][^ref-536][^ref-079][^ref-413][^ref-694]",
+      "summary": "공간 그래프는 구역 수준 노드와 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조여야 배정·경로·자원 예약에 함께 쓰일 것으로 보인다. [추정][^ref-536][^ref-079][^ref-413][^ref-642]",
       "planned_findings": [
         "f1",
         "f2",
@@ -132,7 +132,7 @@
         28
       ],
       "sources": [
-        "ref-694"
+        "ref-642"
       ]
     }
   ],
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "id": "ref-690",
+      "id": "ref-640",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.msg",
       "published": null,
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "id": "ref-693",
+      "id": "ref-641",
       "org": "Henkel, C., & Toussaint, M.",
       "title": "Optimized Directed Roadmap Graph for Multi-Agent Path Finding Using Stochastic Gradient Descent",
       "published": "2020-03",
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "id": "ref-694",
+      "id": "ref-642",
       "org": "Claridades, A. R. C., Choi, H.-S., & Lee, J.",
       "title": "An Indoor Space Subspacing Framework for Implementing a 3D Hierarchical Network-Based Topological Data Model",
       "published": "2022",
@@ -237,7 +237,7 @@
       ]
     },
     {
-      "id": "ref-695",
+      "id": "ref-643",
       "org": "Ray, A., Bradley, C., Carlone, L., & Roy, N.",
       "title": "Task and Motion Planning in Hierarchical 3D Scene Graphs (ISRR 2024)",
       "published": "2024-03",
@@ -363,9 +363,9 @@
     "f2: 문구 수정 — 단계 3 페이지 3절 q3-02 '관제 형식의 경유점·차선 속성' 소절에서 문은 차선 이벤트(DoorOpen·DoorClose)와 문 속성(DoorProperties)으로, 승강기는 차선 이벤트(LiftSessionBegin 등)와 경유점의 승강기 안 여부 속성(in_lift, LiftProperties)으로 표현한다고 고쳐 [사실]을 유지했다.",
     "f4: 그래프 개수를 '기본 9개 그래프, 9개 플릿'으로 쓰고 문은 '정점 사이에 따로 추가한다'까지만 썼다(단계 3 페이지 3절, 아이디어 페이지 5절).",
     "f3: '같은 상호 배제 그룹에 속한 경유점·차선은 한 번에 로봇 한 대만 점유한다'까지만 [사실]로 쓰고, 점유 예약 표현이라는 해석은 f15 의 [추정] 문장에만 넣었다.",
-    "f13: [추정]으로 강등하고 '연계 대상:' 표시를 유지했다. 장면 그래프의 장소·방 층과 층 사이 포함 관계 설명은 [^ref-347]로, ref-695 는 계층형 3D 장면 그래프로 희소한 계획 문제를 만들어 대규모 환경의 작업·동작 계획을 확장한 연구라는 문장에만 달았다.",
-    "ref-695: reference_updates 의 기관을 'Ray, A., Bradley, C., Carlone, L., & Roy, N.'으로, 제목에 'ISRR 2024'를 병기하고 발행일 2024-03, 각주 접근일 뒤 ' (원문 미열람)'을 붙였다.",
-    "ref-693·ref-694·ref-695·ref-212·ref-268: 이번 실행이 새로 쓴 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다(ref-347 도 같게 처리). 아이디어 페이지의 기존 ref-212·ref-268 정의는 중복 정의를 피하려 새로 쓰지 않았다.",
+    "f13: [추정]으로 강등하고 '연계 대상:' 표시를 유지했다. 장면 그래프의 장소·방 층과 층 사이 포함 관계 설명은 [^ref-347]로, ref-643 는 계층형 3D 장면 그래프로 희소한 계획 문제를 만들어 대규모 환경의 작업·동작 계획을 확장한 연구라는 문장에만 달았다.",
+    "ref-643: reference_updates 의 기관을 'Ray, A., Bradley, C., Carlone, L., & Roy, N.'으로, 제목에 'ISRR 2024'를 병기하고 발행일 2024-03, 각주 접근일 뒤 ' (원문 미열람)'을 붙였다.",
+    "ref-641·ref-642·ref-643·ref-212·ref-268: 이번 실행이 새로 쓴 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다(ref-347 도 같게 처리). 아이디어 페이지의 기존 ref-212·ref-268 정의는 중복 정의를 피하려 새로 쓰지 않았다.",
     "f12: '산업용 AGV 대상'은 어느 페이지에도 쓰지 않았다.",
     "f9·f15: 'RELEASE 구역'을 '해제 구역'으로 바꾸고 단계 3 페이지 첫 등장에 '해제 구역(RELEASE)'으로 영문을 병기하며 용어집 항목에 링크했다(아이디어 페이지 첫 등장도 '해제 구역(RELEASE)').",
     "인용: ref-031 의 영어 원문 직접 인용은 한 곳도 두지 않고 f8·f10 모두 한국어로 재서술했다(출처당 1회 이하 충족). ref-536 의 상호 배제 그룹 문구도 재서술했다.",

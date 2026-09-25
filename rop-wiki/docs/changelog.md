@@ -55,6 +55,19 @@ version: 1
 | 2026-09-25-59 | 생성 | [docs/glossary/runtime-verification.md](glossary/runtime-verification.md) | 용어집 항목 런타임 검증 |
 | 2026-09-25-59 | 생성 | [docs/glossary/model-checking.md](glossary/model-checking.md) | 용어집 항목 모델 검사 |
 | 2026-09-25-59 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
+| 2026-09-25-58 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-02 답함(3절 소제목 신설), 후속 질문 2건(q3-09·q4-08), 4·5·6·7·8·9절 갱신, 상태 줄 답한 질문 2건, 6절 검증 판정·막힌 질문(q3-09) 갱신, ref-079 원문 열람 표기 정정 |
+| 2026-09-25-58 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v0.6 → v0.7: 개념 '경유점'·'주행 차선' 추가·확정, '공용 자원' 속성 '상호 배제 여부' 추가·확정, 다이어그램에 두 개념 추가(연결선 없음), 6절 질문 4건 추가, H1 버전 표기 v0.7, ref-212 각주 원문 미열람 표기 |
+| 2026-09-25-58 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 '핵심 구성 요소' 소절 첫 작성(q3-02: 공간 그래프 두 층위·자원 예약 단위·통과 조건 분리·경로망 초안, 모두 추정과 근거 사실), 새 각주 4건, 4절 ref-212 각주 원문 미열람 표기 |
+| 2026-09-25-58 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | H1 아래 트랙 상태 줄의 현재 단계를 단계 3. 구현 가설 설계로 갱신, 6. 살아있는 산출물 링크 갱신(스키마 초안 v0.7, 아이디어 5절 핵심 구성 요소, 백로그 후속 질문 17건·q3-02 답함) |
+| 2026-09-25-58 | 요약 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | 건축 도면 자동 인식 단계 3: q3-02 답함(공간 그래프 구역·차선 두 층위, 공용 자원 예약 단위, 로봇별 통행 가능 여부 분리 — 모두 추정), 공간 그래프 스키마 초안 v0.6 → v0.7(경유점·주행 차선 추가, 공용 자원 확정), 후속 질문 2건 |
+| 2026-09-25-58 | 생성 | [docs/references/ref-640.md](references/ref-640.md) | 참고문헌 ref-640 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.… |
+| 2026-09-25-58 | 생성 | [docs/references/ref-641.md](references/ref-641.md) | 참고문헌 ref-641 등록: Optimized Directed Roadmap Graph for Multi-Agent Path Findin… |
+| 2026-09-25-58 | 생성 | [docs/references/ref-642.md](references/ref-642.md) | 참고문헌 ref-642 등록: An Indoor Space Subspacing Framework for Implementing a 3D H… |
+| 2026-09-25-58 | 생성 | [docs/references/ref-643.md](references/ref-643.md) | 참고문헌 ref-643 등록: Task and Motion Planning in Hierarchical 3D Scene Graphs (IS… |
+| 2026-09-25-58 | 갱신 | [docs/glossary/open-rmf.md](glossary/open-rmf.md) | 용어집 항목 상호 배제 그룹 |
+| 2026-09-25-58 | 생성 | [docs/glossary/indoor-space-subspacing.md](glossary/indoor-space-subspacing.md) | 용어집 항목 공간 세분화 |
+| 2026-09-25-58 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-58 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-01 답함, q2-02·q2-03 부분 답, 후속 질문 2건(q2-07·q6-07), 완료 조건 미충족·전환 아니오, 출처 14건, 이력 추가. H1 아래 단계 상태 줄을 고쳐야 해 patches 대신 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 매트릭스 9/64칸 채움(페이로드·액세서리 문서 행 추가), 공개 문서 샘플 4건, 출처·이력 갱신. H1 아래 산출 단계 상태 줄을 고쳐야 해 전체 content 로 보냄 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.3 → v0.4: 근거 문서 속성 '문서 유형'·'이용 조건' 추가와 확정(f3·f17), 속성 '정보 형태'는 6절 질문에 합침. H1 버전 표기를 고쳐야 해 전체 content 로 보냄 |

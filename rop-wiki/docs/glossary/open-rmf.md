@@ -3,15 +3,15 @@ title: "오픈 RMF (Open-RMF)"
 type: glossary
 term_ko: 오픈 RMF
 term_en: Open-RMF (Open Robotics Middleware Framework)
-definition: Open-RMF 에서 한 요청자가 세션 id 로 승강기 제어권을 받아 세션 종료 요청을 보낼 때까지 점유하는 단위이다.
-related_areas: [9, 10, 13, 15, 16]
+definition: Open-RMF 주행 그래프에서 한 번에 로봇 한 대만 점유할 수 있도록 묶은 경유점·차선의 집합이다.
+related_areas: [6, 9, 10, 13, 15, 16]
 tags: [오픈소스, ROS 2, 다중 로봇, 설비 연동]
 status: published
 created: 2026-09-24
 updated: 2026-09-25
 sources: [ref-004, ref-286, ref-312, ref-536]
-version: 5
-confidence: medium
+version: 6
+confidence: low
 ---
 
 [홈](../index.md) › [용어집](index.md) › 오픈 RMF
@@ -26,17 +26,11 @@ confidence: medium
 
 ## 한 줄 정의
 
-Open-RMF 에서 한 요청자가 세션 id 로 승강기 제어권을 받아 세션 종료 요청을 보낼 때까지 점유하는 단위이다. [추정][^ref-312][^ref-286]
+Open-RMF 주행 그래프에서 한 번에 로봇 한 대만 점유할 수 있도록 묶은 경유점·차선의 집합이다. [추정][^ref-536]
 
 ## 설명
 
-분류 원문은 C. 연결·실행 기반을 설명하며 Open-RMF를 로봇 연결과 시설 연결을 함께 보는 사례로 인용한다.
-
-Open-RMF도 제조사별 Fleet Adapter와 건물 설비 인터페이스를 통해 로봇·문·승강기 등을 연결한다. **로봇 연결과 시설 연결을 함께 보는 것**이 필요하다. [4] [분류원문][^ref-004]
-
-원문 12장은 Open Robotics의 문서 "Programming Multiple Robots with ROS 2"의 RMF Core 개요를 작업·교통 조율, Fleet Adapter, 설비 연동 구조의 참고 자료로 든다. [사실][^ref-004] 문서의 기준 버전과 갱신일, 지원 로봇 범위, 조율 성능, 대규모 물류센터 적용 사례는 이번 구축에서 확인하지 않았다(미확인). 따라서 이 위키는 Open-RMF의 성능에 관한 주장을 싣지 않는다.
-
-ROP 맥락에서 Open-RMF는 9. 로봇·제조사 관제 연동, 10. 설비·건물 시스템 연동, 15. 다중 로봇 경로·교통 관리 — MAPF가 한 구조 안에서 어떻게 맞물리는지 보여 주는 참조 구현이다. [추정] 로봇 쪽 연결을 맡는 부품은 [플릿 어댑터](fleet-adapter.md)에서 따로 다룬다. ROP가 Open-RMF를 구성 요소로 채택할지 구조만 참고할지는 제품 전략의 문제이며 이 위키에서는 정하지 않는다.
+rmf_traffic 그래프 정의에서 경유점과 차선이 상호 배제 그룹을 속성으로 가지며, 같은 그룹의 요소는 한 번에 로봇 한 대만 점유한다(2026-09-25 확인).
 
 ## 관련 영역
 
@@ -49,9 +43,7 @@ ROP 맥락에서 Open-RMF는 9. 로봇·제조사 관제 연동, 10. 설비·건
 
 ## 출처
 
-[^ref-004]: Open Robotics, RMF Core Overview — Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/rmf-core.html, 접근일 2026-09-24 (원문 미열람)
 
 - [ref-004](../references/ref-004.md)
 - [표준·프레임워크 목록](../standards/index.md)
-[^ref-312]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg, 접근일 2026-09-25
-[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25
+[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-09-25
