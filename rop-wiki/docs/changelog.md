@@ -28,6 +28,32 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-10 | 갱신 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
+| 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s8.md](topics/2026/2026-09-25-area03-s8.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약 문장 각주에 ref-097·ref-103 추가 |
+| 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s6.md](topics/2026/2026-09-25-area03-s6.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 드리프트 문장 삭제, 태그 없는 주장 3문장에 태그·각주 |
+| 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s7.md](topics/2026/2026-09-25-area03-s7.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 없음, ref-107 인용 페이지) |
+| 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s11.md](topics/2026/2026-09-25-area03-s11.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "11. 열린 질문" 절을 옮겼다(2차 수정 없음) |
+| 2026-09-25-10 | 요약 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3. 처리능력·거점·설비 계획: 영역 심화로 3~11절 초안을 썼다(1차 조건부 승인 수정 13건, 2차 수정 지시 8건 이행) |
+| 2026-09-25-10 | 생성 | [docs/references/ref-096.md](references/ref-096.md) | 참고문헌 ref-096 등록: Estimating performance in a Robotic Mobile Fulfillment Syste… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-097.md](references/ref-097.md) | 참고문헌 ref-097 등록: Inventory allocation in robotic mobile fulfillment systems |
+| 2026-09-25-10 | 생성 | [docs/references/ref-098.md](references/ref-098.md) | 참고문헌 ref-098 등록: Evaluating battery charging and swapping strategies in a rob… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-099.md](references/ref-099.md) | 참고문헌 ref-099 등록: A review of design and control of automated guided vehicle s… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-100.md](references/ref-100.md) | 참고문헌 ref-100 등록: Survey of research in the design and control of automated gu… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-101.md](references/ref-101.md) | 참고문헌 ref-101 등록: RAWSim-O: A simulation framework for Robotic Mobile Fulfillm… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-102.md](references/ref-102.md) | 참고문헌 ref-102 등록: Simulation-Driven Approach for Dimensioning AMR Fleets in Di… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-060.md](references/ref-060.md) | 참고문헌 ref-060 등록: Feasibility of autonomous medication delivery robots conside… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-103.md](references/ref-103.md) | 참고문헌 ref-103 등록: The Path Planning Problem of Robotic Delivery in Multi-Floor… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-104.md](references/ref-104.md) | 참고문헌 ref-104 등록: rmf_demos — Demonstrations of Open-RMF (README) |
+| 2026-09-25-10 | 생성 | [docs/references/ref-105.md](references/ref-105.md) | 참고문헌 ref-105 등록: fleet_adapter_template — fleet_adapter_template/config.yaml |
+| 2026-09-25-10 | 생성 | [docs/references/ref-106.md](references/ref-106.md) | 참고문헌 ref-106 등록: 인증스마트물류센터 |
+| 2026-09-25-10 | 생성 | [docs/references/ref-107.md](references/ref-107.md) | 참고문헌 ref-107 등록: 물류시설의 개발 및 운영에 관한 법률 |
+| 2026-09-25-10 | 생성 | [docs/references/ref-108.md](references/ref-108.md) | 참고문헌 ref-108 등록: AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템… |
+| 2026-09-25-10 | 생성 | [docs/references/ref-109.md](references/ref-109.md) | 참고문헌 ref-109 등록: A Page-Rank-like Approach to Optimal Placement of Charging S… |
+| 2026-09-25-10 | 생성 | [docs/glossary/fleet-sizing.md](glossary/fleet-sizing.md) | 용어집 항목 차량 소요대수 산정 |
+| 2026-09-25-10 | 생성 | [docs/glossary/robotic-mobile-fulfillment-system.md](glossary/robotic-mobile-fulfillment-system.md) | 용어집 항목 로봇 이동형 풀필먼트 시스템 |
+| 2026-09-25-10 | 생성 | [docs/glossary/semi-open-queueing-network.md](glossary/semi-open-queueing-network.md) | 용어집 항목 반개방형 대기행렬 네트워크 |
+| 2026-09-25-10 | 생성 | [docs/glossary/discrete-event-simulation.md](glossary/discrete-event-simulation.md) | 용어집 항목 이산 사건 시뮬레이션 |
+| 2026-09-25-10 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-07 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가, 발행 시점 문장에 태그·각주. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
 | 2026-09-25-07 | 생성 | [docs/topics/2026/2026-09-25-area07-s7.md](topics/2026/2026-09-25-area07-s7.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,570자)을 옮겼다 |
 | 2026-09-25-07 | 요약 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 7. 화물·재고·자산 식별과 추적: corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 |

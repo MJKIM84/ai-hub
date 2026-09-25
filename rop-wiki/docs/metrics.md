@@ -22,7 +22,7 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
+| [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -38,7 +38,7 @@ version: 1
 |---|---|---|---|---|
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | seed | — | 2026-09-24 | 1 |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | seed | — | 2026-09-24 | 1 |
-| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | seed | — | 2026-09-24 | 1 |
+| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | 2026-09-25 | 2 |
 | [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | seed | — | 2026-09-24 | 1 |
 
 **B. 공통 정보·환경 모델**
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 7회 중 최종 통과 7회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 7
-- 2차 검증 판정: 통과 7
+- 실행 8회 중 최종 통과 8회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 8
+- 2차 검증 판정: 통과 8
 
 ### 반려·보류 건수
 
@@ -110,17 +110,17 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 29 |
-| 오픈소스 문서 | 27 |
+| 논문 | 39 |
+| 오픈소스 문서 | 30 |
 | 표준 | 24 |
-| 정부·연구기관 | 4 |
+| 정부·연구기관 | 6 |
 | 기사 | 1 |
 
-신뢰도: medium 66건, high 18건, low 1건
+신뢰도: medium 78건, high 21건, low 1건
 
 ### 물류 흐름 매트릭스 채움률
 
-- 6/42 칸 (14%) — [흐름 매트릭스](flow-matrix.md)
+- 14/42 칸 (33%) — [흐름 매트릭스](flow-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
@@ -128,7 +128,7 @@ version: 1
 |---|---|---|---|
 | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-24 | 1 | seed |
 | [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-24 | 1 | seed |
-| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-24 | 1 | seed |
 | [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-24 | 1 | seed |
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-24 | 1 | seed |
+| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->

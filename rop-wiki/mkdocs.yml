@@ -157,6 +157,10 @@ nav:
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
       - 7. 화물·재고·자산 식별과 추적 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area07-s7.md
       - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
+      - 3. 처리능력·거점·설비 계획 — 대표 연구와 자료: topics/2026/2026-09-25-area03-s8.md
+      - 3. 처리능력·거점·설비 계획 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area03-s7.md
+      - 3. 처리능력·거점·설비 계획 — 대표 접근법과 기술: topics/2026/2026-09-25-area03-s6.md
+      - 3. 처리능력·거점·설비 계획 — 열린 질문: topics/2026/2026-09-25-area03-s11.md
   - 용어집:
     - glossary/index.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
@@ -173,17 +177,21 @@ nav:
     - 다중 에이전트 픽업·배송 (Multi-Agent Pickup and Delivery): glossary/multi-agent-pickup-and-delivery.md
     - 디지털 트윈 (Digital Twin): glossary/digital-twin.md
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
+    - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
+    - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
+    - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
+    - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
@@ -253,6 +261,8 @@ nav:
     - ref-057 — Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation: references/ref-057.md
     - 'ref-058 — A Survey of Robotic Language Grounding: Tradeoffs between Symbols and Embeddings': references/ref-058.md
     - 'ref-059 — DART-LLM: Dependency-Aware Multi-Robot Task Decomposition and Execution using Large Language Models': references/ref-059.md
+    - ? ref-060 — Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments
+      : references/ref-060.md
     - 'ref-061 — BTGenBot: Behavior Tree Generation for Robotic Tasks with Lightweight LLMs': references/ref-061.md
     - 'ref-062 — CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis)': references/ref-062.md
     - 'ref-063 — CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis': references/ref-063.md
@@ -283,6 +293,20 @@ nav:
     - 'ref-093 — Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents': references/ref-093.md
     - ref-094 — language-planner — Official Code for "Language Models as Zero-Shot Planners" (GitHub README): references/ref-094.md
     - 'ref-095 — Code as Policies: Language Model Programs for Embodied Control (google-research/code_as_policies README)': references/ref-095.md
+    - ref-096 — Estimating performance in a Robotic Mobile Fulfillment System: references/ref-096.md
+    - ref-097 — Inventory allocation in robotic mobile fulfillment systems: references/ref-097.md
+    - ref-098 — Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system: references/ref-098.md
+    - ref-099 — A review of design and control of automated guided vehicle systems: references/ref-099.md
+    - ref-100 — Survey of research in the design and control of automated guided vehicle systems: references/ref-100.md
+    - 'ref-101 — RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)': references/ref-101.md
+    - ref-102 — Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics: references/ref-102.md
+    - ref-103 — The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments: references/ref-103.md
+    - ref-104 — rmf_demos — Demonstrations of Open-RMF (README): references/ref-104.md
+    - ref-105 — fleet_adapter_template — fleet_adapter_template/config.yaml: references/ref-105.md
+    - ref-106 — 인증스마트물류센터: references/ref-106.md
+    - ref-107 — 물류시설의 개발 및 운영에 관한 법률: references/ref-107.md
+    - ref-108 — AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템을 중심으로 -: references/ref-108.md
+    - ref-109 — A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse: references/ref-109.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

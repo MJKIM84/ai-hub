@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-10",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 3,
+    "area_name": "3. 처리능력·거점·설비 계획",
+    "category": "A. 업무·공급망 설계"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 4,
+  "pages_updated": 1,
+  "new_sources": 15,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 28,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1281.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 3. 처리능력·거점·설비 계획 | 영역 심화로 3~11절 초안을 썼다(1차 조건부 승인 수정 13건, 2차 수정 지시 8건 이행) | run 2026-09-25-10",
+  "notes": [
+    "참고문헌 생성: references/ref-096.md",
+    "참고문헌 생성: references/ref-097.md",
+    "참고문헌 생성: references/ref-098.md",
+    "참고문헌 생성: references/ref-099.md",
+    "참고문헌 생성: references/ref-100.md",
+    "참고문헌 생성: references/ref-101.md",
+    "참고문헌 생성: references/ref-102.md",
+    "참고문헌 생성: references/ref-060.md",
+    "참고문헌 생성: references/ref-103.md",
+    "참고문헌 생성: references/ref-104.md",
+    "참고문헌 생성: references/ref-105.md",
+    "참고문헌 생성: references/ref-106.md",
+    "참고문헌 생성: references/ref-107.md",
+    "참고문헌 생성: references/ref-108.md",
+    "참고문헌 생성: references/ref-109.md",
+    "용어집 생성: glossary/fleet-sizing.md",
+    "용어집 생성: glossary/robotic-mobile-fulfillment-system.md",
+    "용어집 생성: glossary/semi-open-queueing-network.md",
+    "용어집 생성: glossary/discrete-event-simulation.md"
+  ],
+  "counts": {
+    "create": 4,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 15,
+    "standards": 2,
+    "open_questions": 4,
+    "flow_cells": 8,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 10:55:01 KST",
+  "usage": {
+    "input_tokens": 54,
+    "cache_creation_input_tokens": 828837,
+    "cache_read_input_tokens": 3744167,
+    "output_tokens": 147727,
+    "cost_usd": 11.1584,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.912,
+        "output_tokens": 44653,
+        "cache_read_input_tokens": 3141293,
+        "cache_creation_input_tokens": 209126
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6317,
+        "output_tokens": 13085,
+        "cache_read_input_tokens": 304248,
+        "cache_creation_input_tokens": 156358
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 3.1089,
+        "output_tokens": 72724,
+        "cache_read_input_tokens": 126034,
+        "cache_creation_input_tokens": 203647
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.4211,
+        "output_tokens": 16273,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 258147
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 4,
+  "cross_checked_findings": 1
+}
