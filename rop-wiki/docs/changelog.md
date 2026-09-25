@@ -28,6 +28,24 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05. 2차 수정: 4절 결론 데이터셋 항목에 ref-540·ref-544 각주와 원문 미열람 표기, 6절 첫 행 검증 판정 '충족 · 미승인' |
+| 2026-09-25-62 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록 |
+| 2026-09-25-62 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-03 답함(지시–정답 공개 데이터셋·지표 비교, 필요한 쌍 구조·물류 데이터 공백·배정 정답 부재는 추정), 새 질문 q5-04·q5-05, 아이디어 2 4절 평가 데이터 소절 추가, 초안 변경 없음 |
+| 2026-09-25-62 | 생성 | [docs/references/ref-539.md](references/ref-539.md) | 참고문헌 ref-539 등록: ALFRED — A Benchmark for Interpreting Grounded Instructions… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-540.md](references/ref-540.md) | 참고문헌 ref-540 등록: ALFRED: A Benchmark for Interpreting Grounded Instructions f… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-541.md](references/ref-541.md) | 참고문헌 ref-541 등록: LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-542.md](references/ref-542.md) | 참고문헌 ref-542 등록: LoTa-Bench: Benchmarking Language-oriented Task Planners for… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-543.md](references/ref-543.md) | 참고문헌 ref-543 등록: TEACh: Task-driven Embodied Agents that Chat (GitHub README) |
+| 2026-09-25-62 | 생성 | [docs/references/ref-544.md](references/ref-544.md) | 참고문헌 ref-544 등록: LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocat… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-545.md](references/ref-545.md) | 참고문헌 ref-545 등록: nlu-benchmark — 2017-06-custom-intent-engines (README) |
+| 2026-09-25-62 | 생성 | [docs/references/ref-546.md](references/ref-546.md) | 참고문헌 ref-546 등록: 일상생활 작업 및 명령 수행 데이터(임무수행 명령어) |
+| 2026-09-25-62 | 생성 | [docs/references/ref-547.md](references/ref-547.md) | 참고문헌 ref-547 등록: OpenBench: A New Benchmark and Baseline for Semantic Navigat… |
+| 2026-09-25-62 | 생성 | [docs/references/ref-548.md](references/ref-548.md) | 참고문헌 ref-548 등록: An LLM- Interface for Robot Mission Specification in Logisti… |
+| 2026-09-25-62 | 생성 | [docs/glossary/goal-condition.md](glossary/goal-condition.md) | 용어집 항목 목표 조건 |
+| 2026-09-25-62 | 생성 | [docs/glossary/signal-temporal-logic.md](glossary/signal-temporal-logic.md) | 용어집 항목 신호 시간 논리 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-60 | 갱신 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
 | 2026-09-25-60 | 요약 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-59 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 영역 심화: 3~11절 신규 작성(4·6·7·10·11절은 주제 페이지로 분리), 2차 수정: 9절 f8 태그 분리, 3절 첫 문장 범위 정정, 10절 요약 의견 주체 표시, 3·9절 약어 풀이 |
