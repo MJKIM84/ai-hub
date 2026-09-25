@@ -130,11 +130,17 @@ def all_pages(refresh: bool = False) -> list[tuple[str, dict]]:
 _FOOT_REF_TEXT = re.compile(r"(?<!`)\[\^([^\]\s]+)\](?!:)")
 
 
+_TAG_PAREN_TEXT = re.compile(r"(\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])\(")
+
+
 def neutralize_footnotes(s) -> str:
     """에이전트 산출물의 자유 텍스트(검증 노트·수정 지시·로그 항목 등)를 로그·자동 영역에 옮길 때 쓴다.
     그 텍스트 안의 각주 참조 표기 `[^ref-013]` 는 옮겨 간 페이지에 정의가 없어 check_links 의 '정의 없는 각주'
     오류가 되므로 인라인 코드로 감싸 글자 그대로 보이게 한다(인라인 코드 안은 각주 검사·렌더 대상이 아니다)."""
-    return _FOOT_REF_TEXT.sub(lambda m: f"`[^{m.group(1)}]`", str(s if s is not None else ""))
+    out = _FOOT_REF_TEXT.sub(lambda m: f"`[^{m.group(1)}]`", str(s if s is not None else ""))
+    # 사실 표기 태그 바로 뒤 괄호(`[사실](근거 ref-186 …)`)는 마크다운 링크로 읽혀 깨진 링크가 된다(3부 배치 세부영역 8 게시 실패).
+    # 옮겨 온 에이전트 문장에서는 태그와 괄호 사이를 띄운다
+    return _TAG_PAREN_TEXT.sub(lambda m: f"{m.group(1)} (", out)
 
 
 def _esc(s) -> str:
