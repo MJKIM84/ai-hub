@@ -71,6 +71,18 @@ version: 1
 | 2026-09-25-45 | 생성 | [docs/references/ref-201.md](references/ref-201.md) | 참고문헌 ref-201 등록: From Capability Models to Automated Planning: An AAS-Native… |
 | 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-03 답함(3절 소제목 신설: VDA 5050 지도 배포·구역 집합, LIF, Open-RMF, Nav2 격자 지도, 제조사 PNG 평면도, 수용 형식 3분류), 상태 줄·4·5·6·8·9절 갱신, 후속 질문 q4-07·q3-06 |
+| 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v0.5 → v0.6: 층별 지도에 교환 형식(후보) 속성 추가(f1·f5·f7·f8), H1 버전 표기 오류(v0.4) 수정, 6절에 지도 판 근거 보강·VDA 5050 구역 집합·공용 자원 목록 형식·층·장소 식별자 대응 질문 추가 |
+| 2026-09-25-44 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 4절: '관제·ROP 수용 형식' 소절 신설(이 위키가 구성한 비교표, 3분류 종합 [추정], VDA 5050 구역 집합·경로망 설정, Nav2 격자 지도, building.yaml), 첫 단락과 q2-01 소절의 q2-03 안내 문구 갱신 |
+| 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 스키마 초안 v0.6, 아이디어 페이지 4절 관제 수용 형식(q2-03), 백로그 수치 갱신 |
+| 2026-09-25-44 | 요약 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | 건축 도면 자동 인식 단계 2: q2-03 답함(관제·ROP 수용 형식: 격자 지도·레이아웃 교환·구역 집합), 공간 그래프 스키마 초안 v0.5 → v0.6, 후속 질문 q4-07·q3-06 등록 |
+| 2026-09-25-44 | 생성 | [docs/references/ref-440.md](references/ref-440.md) | 참고문헌 ref-440 등록: nav2_map_server — README |
+| 2026-09-25-44 | 생성 | [docs/references/ref-441.md](references/ref-441.md) | 참고문헌 ref-441 등록: rmf_traffic_editor — README |
+| 2026-09-25-44 | 생성 | [docs/references/ref-442.md](references/ref-442.md) | 참고문헌 ref-442 등록: VDA5050/VDA5050 — json_schemas/zoneSet.schema |
+| 2026-09-25-44 | 생성 | [docs/glossary/zone-set.md](glossary/zone-set.md) | 용어집 항목 구역 집합 |
+| 2026-09-25-44 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-42 | 갱신 | [docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정. 2차: 5절 제약 칸의 ASTM F3499-21 서술을 시험 방법의 존재로 고침 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s11.md](topics/2026/2026-09-25-area17-s11.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "11. 열린 질문" 절(1,494자)을 옮겼다 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s8.md](topics/2026/2026-09-25-area17-s8.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "8. 대표 연구와 자료" 절(1,462자)을 옮겼다 |

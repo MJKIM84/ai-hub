@@ -935,6 +935,36 @@
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "summary": "IEC 61360-7:2024 교차 도메인 사전(EN IEC 61360-7:2026 병기), IEC CDD 확인 도메인에 로봇 도메인이 없다는 추정(CDD 트리 미조회), IDTA 02003 제품 분류 항목의 ECLASS·IEC CDD 참조(ref-437, ref-183, ref-438)",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-44",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "주제 페이지로 분리된 7절(area06-s7)에 로봇 관제가 받는 지도·구역·레이아웃 형식을 더한다: VDA 5050 3.0.0 의 지도 식별(mapId·mapVersion)과 downloadMap·enableMap·deleteMap 배포, 구역 집합(zoneSet, 10종 유형) [사실][^ref-031][^ref-442]; VDMA LIF 레이아웃 교환 [사실][^ref-046]; Nav2 map_server 격자 지도 YAML(로봇 쪽 입력, 연계 대상) [사실][^ref-440]; Open-RMF .building.yaml 과 주행 그래프 파일 생성 [사실][^ref-441]; 수용 형식 3분류와 공용 자원 목록 전용 형식 부재는 이 위키의 추정 [추정].",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-44",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "기존 경계 표 문장과 각주(ref-031, ref-153)를 재사용해, 로봇 자체 지능·제어 행의 'ROP가 직접 맡는 것'에 도면 기반 결과를 제조사·관제 수용 형식(레이아웃·구역·공용 자원 설정)으로 변환·전달하는 일을 지도 판 관리와 함께 적는 것을 제안한다. 격자 지도 생성·위치추정은 연계 대상으로 유지하며 f14 를 새 문장으로 반복하지 않는다 [추정].",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-44",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 3.0.0 의 지도 식별·배포 동작과 구역 집합(zoneSet) 스키마 [사실][^ref-031][^ref-442], 이번에 읽은 명세 범위(6.3절)에서는 지도 파일 내용 형식이 정해지지 않은 것으로 보인다는 관찰(부재 확정 아님) [추정][^ref-031], VDMA LIF 레이아웃 교환과 판·발행일 충돌(oq-025) [사실][^ref-046][^ref-031]을 반영한다.",
+      "status": "제안"
     }
   ]
 }
