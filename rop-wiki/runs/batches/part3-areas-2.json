@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-areas-2",
   "date": "2026-09-25",
-  "updated": "2026-09-25 02:51:07",
+  "updated": "2026-09-25 02:54:59",
   "concurrency": 3,
   "items": [
     {
@@ -125,13 +125,18 @@
         "area": 6,
         "label": "세부영역 6 영역 심화"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-17",
           "started": "2026-09-25 02:18:36",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 02:54:01",
+          "published_at": "2026-09-25 02:54:56",
+          "cost_usd": 17.7918,
+          "duration_sec": 2153.0,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-17"
@@ -144,17 +149,27 @@
         "area": 8,
         "label": "세부영역 8 영역 심화"
       },
-      "status": "퍼블리셔 진행",
+      "status": "에이전트 단계 진행",
       "attempts": [
         {
           "run_id": "2026-09-25-18",
           "started": "2026-09-25 02:20:50",
           "agents_exit": 0,
-          "publish_exit": null,
-          "agents_done": "2026-09-25 02:51:07"
+          "publish_exit": 4,
+          "agents_done": "2026-09-25 02:51:07",
+          "published_at": "2026-09-25 02:52:52",
+          "cost_usd": 16.3089,
+          "duration_sec": 1838.0,
+          "end_state": "중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 2건 (파일 372개 검사))"
+        },
+        {
+          "run_id": "2026-09-25-24",
+          "started": "2026-09-25 02:52:54",
+          "agents_exit": null,
+          "publish_exit": null
         }
       ],
-      "run_id": "2026-09-25-18"
+      "run_id": "2026-09-25-24"
     },
     {
       "index": 6,
@@ -183,9 +198,16 @@
         "area": 10,
         "label": "세부영역 10 영역 심화"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-25",
+          "started": "2026-09-25 02:54:59",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-25"
     },
     {
       "index": 8,
