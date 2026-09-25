@@ -8,7 +8,8 @@
   python3 pipeline/run_batch.py --plan plan.yaml [--concurrency 4] [--allow-no-fetch] [--max-attempts 3] [--dry-run]
 
 plan.yaml: 항목 목록. 각 항목 키: run_type(필수), area, track, stage, question_ids, max_questions, category, topic, group, label,
-  resume(이미 만든 실행 id — 에이전트 단계가 끝나기를 기다렸다가 게시만 한다. 배치를 다시 띄울 때 쓴다).
+  resume(이미 만든 실행 id — 에이전트 단계가 끝나기를 기다렸다가 게시만 한다. 배치를 다시 띄울 때 쓴다),
+  continue(멈추거나 호출 오류로 보류된 실행 id — 있는 산출물부터 이어서 2차 검증까지 하고 게시한다).
 퍼블리셔가 실패하면 게시만 한 번 다시 하고, 그래도 실패하면 항목을 새로 실행한다.
 결과: runs/batches/<batch_id>.json (항목별 실행 id·상태·시도 횟수·비용·소요 시간) 과 표준 출력 요약.
 한 항목이 max_attempts 번 연속 실패(보류·중단)하면 보류로 기록하고 다음 항목으로 넘어간다. 전체 배치는 멈추지 않는다.
@@ -153,16 +154,24 @@ class Batch:
         res = self.results[idx]
         if it.get("resume") and not res["attempts"]:
             return self._adopt(idx, str(it["resume"]))
-        rid = reserve_run_id(self.day, self.settings)
-        shutil.copy(self.probe_file, ROOT / "runs" / rid / "probe.json")
-        att = {"run_id": rid, "started": _now(), "agents_exit": None, "publish_exit": None}
+        cont = str(it["continue"]) if it.get("continue") and not res["attempts"] else None
+        if cont:
+            # continue: 멈춘(또는 호출 오류로 보류된) 실행을 있는 산출물부터 이어서 2차 검증까지 한다(run_daily.sh --resume)
+            rid = cont
+        else:
+            rid = reserve_run_id(self.day, self.settings)
+            shutil.copy(self.probe_file, ROOT / "runs" / rid / "probe.json")
+        att = {"run_id": rid, "started": _now(), "agents_exit": None, "publish_exit": None, "continued": bool(cont)}
         with self.lock:
             res["attempts"].append(att)
             res["run_id"] = rid
             res["status"] = "에이전트 단계 진행"
         self.save()
-        cmd = ["bash", "pipeline/run_daily.sh", "--date", self.day, "--run-id", rid, "--skip-probe", "--until", "verify2",
-               *item_args(it)]
+        if cont:
+            cmd = ["bash", "pipeline/run_daily.sh", "--resume", rid, "--skip-probe", "--until", "verify2"]
+        else:
+            cmd = ["bash", "pipeline/run_daily.sh", "--date", self.day, "--run-id", rid, "--skip-probe", "--until", "verify2",
+                   *item_args(it)]
         if self.args.allow_no_fetch:
             cmd.append("--allow-no-fetch")
         say(f"[{idx}] {res['label']} → {rid} 시작")

@@ -1,0 +1,128 @@
+{
+  "run_id": "2026-09-25-43",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 2,
+    "question_ids": [
+      "q2-02"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": null,
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 5,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": false,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 7,
+    "sources": 5
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1034.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 2 | q2-02 답함(작업·배정 결과 표현 형식 비교), 업무 분해·배정 설계 초안 v0.4 → v0.5, 후속 질문 q3-08·q3-09 | run 2026-09-25-43",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 13:26:35 KST",
+  "usage": {
+    "input_tokens": 46,
+    "cache_creation_input_tokens": 1024615,
+    "cache_read_input_tokens": 6288101,
+    "output_tokens": 109713,
+    "cost_usd": 12.1351,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.7155,
+        "output_tokens": 25047,
+        "cache_read_input_tokens": 5221739,
+        "cache_creation_input_tokens": 364461
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.7814,
+        "output_tokens": 16003,
+        "cache_read_input_tokens": 983058,
+        "cache_creation_input_tokens": 385162
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 3.5535,
+        "output_tokens": 67671,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 273433
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": false,
+    "errors": [
+      "퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다",
+      "퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:",
+      "퍼블리셔 사전 검사: - ideas/nl-task-chatbot.md: 깨진 링크 ../glossary/hierarchical-task-network.md"
+    ],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 7,
+  "cross_checked_findings": 0,
+  "park_reason": "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)"
+}
