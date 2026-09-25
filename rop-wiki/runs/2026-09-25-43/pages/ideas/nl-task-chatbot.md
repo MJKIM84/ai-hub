@@ -8,7 +8,7 @@ status: draft
 created: 2026-09-25
 updated: 2026-09-25
 version: 7
-sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-164, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-350, ref-351, ref-352, ref-353, ref-354, ref-355, ref-356, ref-357, ref-358, ref-359, ref-360, ref-362, ref-015, ref-031, ref-125, ref-130, ref-228, ref-411, ref-413, ref-418, ref-111, ref-114, ref-116, ref-230, ref-569, ref-570, ref-571, ref-572, ref-573]
+sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-164, ref-166, ref-167, ref-168, ref-169, ref-170, ref-171, ref-172, ref-174, ref-175, ref-176, ref-177, ref-178, ref-179, ref-180, ref-181, ref-242, ref-272, ref-275, ref-276, ref-277, ref-278, ref-279, ref-280, ref-350, ref-351, ref-352, ref-353, ref-354, ref-355, ref-356, ref-357, ref-358, ref-359, ref-360, ref-362, ref-015, ref-031, ref-125, ref-130, ref-228, ref-411, ref-413, ref-418, ref-111, ref-114, ref-116, ref-230, ref-599, ref-600, ref-601, ref-602, ref-603]
 confidence: low
 last_run: 2026-09-25
 ---
@@ -244,9 +244,9 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 
 ### 작업·배정 결과를 표현하는 표준·형식
 
-이번에 확인한 로봇 관제·업무·워크플로·계획 형식은 작업 단계, 배정 대상, 진행 상태, 분해·순서 구조를 나눠 담지만, 지시 원문과 상황 값의 출처·배정 근거·사용자 확인 여부를 함께 담는 형식은 찾지 못했다(이 위키의 대응이며 검색 범위의 결과로, 부재의 확인은 아니다). [추정][^ref-569][^ref-111][^ref-031][^ref-130][^ref-573][^ref-570][^ref-572][^ref-571] 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-02)에 있다.
+이번에 확인한 로봇 관제·업무·워크플로·계획 형식은 작업 단계, 배정 대상, 진행 상태, 분해·순서 구조를 나눠 담지만, 지시 원문과 상황 값의 출처·배정 근거·사용자 확인 여부를 함께 담는 형식은 찾지 못했다(이 위키의 대응이며 검색 범위의 결과로, 부재의 확인은 아니다). [추정][^ref-599][^ref-111][^ref-031][^ref-130][^ref-603][^ref-600][^ref-602][^ref-601] 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-02)에 있다.
 
-아래 비교표는 각 형식의 공식 파일에서 확인한 필드를 업무 분해·배정 설계 초안의 개념에 대응시켜 이 위키가 직접 구성한 것이며, 원 명세의 표를 옮긴 것이 아니다. [추정][^ref-569][^ref-111][^ref-031][^ref-230][^ref-130][^ref-573][^ref-570][^ref-572][^ref-571]
+아래 비교표는 각 형식의 공식 파일에서 확인한 필드를 업무 분해·배정 설계 초안의 개념에 대응시켜 이 위키가 직접 구성한 것이며, 원 명세의 표를 옮긴 것이 아니다. [추정][^ref-599][^ref-111][^ref-031][^ref-230][^ref-130][^ref-603][^ref-600][^ref-602][^ref-601]
 
 | 형식 | 분해·순서 구조 | 배정 대상 지정·결과 | 진행 상태 | 배정 근거·확인 여부 |
 |---|---|---|---|---|
@@ -261,10 +261,10 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 
 - Open-RMF 작업 상태 스키마는 배정 결과를 플릿 그룹과 로봇 이름으로 된 assigned_to 로, 배정·발송 과정을 디스패치 상태(dispatch)로, 진행을 상태 값과 단계별 상태·예상 소요 시간으로 표현한다(확인일 2026-09-25 기준). [사실][^ref-111] 이 디스패치 상태는 초안의 배치(Dispatch)·배정(Assignment) 개념과 같은 것으로 보지 않는다.
 - VDA 5050 3.0.0 은 주문의 이동로봇 배정을 관제의 최소 기능으로 두지만, 주문은 로봇 한 대의 노드–간선 구간이고 업무·작업 수준의 구조나 배정 근거를 담는 메시지는 두지 않는다. [사실][^ref-031]
-- BPMN 2.0.2 명세는 사람 수행자(HumanPerformer)와 그 특수화인 잠재 담당자(PotentialOwner), 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다(발행 기관 원문 미열람, 구현 문서 요약 기준). [추정][^ref-573] Corradini 외(2023)는 BPMN 2.0 협업 다이어그램으로 다중 로봇 시스템의 협력 행동을 모델링·설정·실행하는 틀을 제안했다. [사실][^ref-114]
-- HDDL(Höller 외, arXiv 2019-11 공개, AAAI 2020 발표)은 PDDL 을 확장해 복합 작업의 분해 방법과 하위 작업 순서를 기술하는 계층적 작업 네트워크(Hierarchical Task Network, HTN) 계획 언어다. [사실][^ref-572]
+- BPMN 2.0.2 명세는 사람 수행자(HumanPerformer)와 그 특수화인 잠재 담당자(PotentialOwner), 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다(발행 기관 원문 미열람, 구현 문서 요약 기준). [추정][^ref-603] Corradini 외(2023)는 BPMN 2.0 협업 다이어그램으로 다중 로봇 시스템의 협력 행동을 모델링·설정·실행하는 틀을 제안했다. [사실][^ref-114]
+- HDDL(Höller 외, arXiv 2019-11 공개, AAAI 2020 발표)은 PDDL 을 확장해 복합 작업의 분해 방법과 하위 작업 순서를 기술하는 계층적 작업 네트워크(Hierarchical Task Network, HTN) 계획 언어다. [사실][^ref-602]
 - Filippone 외(2026-03, 프리프린트)의 평가에 따르면 로봇 임무 기술에는 표준이나 널리 합의된 형식이 없고 행동 트리·상태 기계·계층적 작업 네트워크·BPMN 이 정도를 달리하며 쓰인다. [의견][^ref-116]
-- 확인한 형식 가운데 서로 다른 로봇·플릿의 작업(작업 요청) 사이 선행 의존을 필드로 표현하는 것은 없었고, ROP 는 지시 원문·상황 값의 출처·배정 근거·확인 여부를 자체 작업 모델에 두고 외부 형식으로 옮겨야 할 것으로 보인다(이 위키의 추론, 열린 질문 [oq-049](../open-questions.md) 관련). [추정][^ref-569][^ref-111][^ref-031][^ref-130]
+- 확인한 형식 가운데 서로 다른 로봇·플릿의 작업(작업 요청) 사이 선행 의존을 필드로 표현하는 것은 없었고, ROP 는 지시 원문·상황 값의 출처·배정 근거·확인 여부를 자체 작업 모델에 두고 외부 형식으로 옮겨야 할 것으로 보인다(이 위키의 추론, 열린 질문 [oq-049](../open-questions.md) 관련). [추정][^ref-599][^ref-111][^ref-031][^ref-130]
 
 검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 진행 상태(외부 표현 원천 후보)와 배정(외부 표현이 배정 대상만 담는다는 메모) 개념으로 반영되었다(v0.5).
 
@@ -272,11 +272,11 @@ LLM이 직접 배정하는 LTAA 연구는 TEACh 건설 작업에서 전통 기�
 [^ref-114]: Corradini, F., Pettinari, S., Re, B., Rossi, L., & Tiezzi, F., A BPMN-driven framework for Multi-Robot System development, 2023, https://www.sciencedirect.com/science/article/abs/pii/S0921889022002111, 접근일 2026-09-25 (원문 미열람)
 [^ref-116]: Filippone, G., Pettinari, S., & Pelliccione, P., Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis, 2026-03, https://arxiv.org/abs/2603.15427, 접근일 2026-09-25 (원문 미열람)
 [^ref-230]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25
-[^ref-569]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json, 접근일 2026-09-25
-[^ref-570]: CNCF Serverless Workflow (serverlessworkflow/specification GitHub), Serverless Workflow Specification — dsl.md (DSL 1.0), 미확인, https://github.com/serverlessworkflow/specification/blob/main/dsl.md, 접근일 2026-09-25
-[^ref-571]: BehaviorTree.CPP (BehaviorTree GitHub), BehaviorTree.CPP — README, 미확인, https://github.com/BehaviorTree/BehaviorTree.CPP, 접근일 2026-09-25
-[^ref-572]: Höller, D., Behnke, G., Bercher, P., Biundo, S., Fiorino, H., Pellier, D., & Alford, R., HDDL – A Language to Describe Hierarchical Planning Problems, 2019-11, https://arxiv.org/abs/1911.05499, 접근일 2026-09-25 (원문 미열람)
-[^ref-573]: OMG(Object Management Group), Business Process Model and Notation (BPMN), Version 2.0.2, 2014-01, https://www.omg.org/spec/BPMN/2.0.2/PDF, 접근일 2026-09-25 (원문 미열람)
+[^ref-599]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json, 접근일 2026-09-25
+[^ref-600]: CNCF Serverless Workflow (serverlessworkflow/specification GitHub), Serverless Workflow Specification — dsl.md (DSL 1.0), 미확인, https://github.com/serverlessworkflow/specification/blob/main/dsl.md, 접근일 2026-09-25
+[^ref-601]: BehaviorTree.CPP (BehaviorTree GitHub), BehaviorTree.CPP — README, 미확인, https://github.com/BehaviorTree/BehaviorTree.CPP, 접근일 2026-09-25
+[^ref-602]: Höller, D., Behnke, G., Bercher, P., Biundo, S., Fiorino, H., Pellier, D., & Alford, R., HDDL – A Language to Describe Hierarchical Planning Problems, 2019-11, https://arxiv.org/abs/1911.05499, 접근일 2026-09-25 (원문 미열람)
+[^ref-603]: OMG(Object Management Group), Business Process Model and Notation (BPMN), Version 2.0.2, 2014-01, https://www.omg.org/spec/BPMN/2.0.2/PDF, 접근일 2026-09-25 (원문 미열람)
 
 ## 5. 구현 가설
 

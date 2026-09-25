@@ -6,7 +6,7 @@
 
 | finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
 |---|---|---|---|---|---|
-| f1 | 예 | 예 | 아니오 | 유지 | 확인: ref-948 원본을 github_raw로 다시 열었다. 필수 필드는 phases(최소 1개)뿐이고, phase는 activity 필수·on_cancel 선택이며 'use a Sequence activity' 문구가 있다. 발행일은 미확인, 확인일 2026-09-25 기준. |
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: ref-569 원본을 github_raw로 다시 열었다. 필수 필드는 phases(최소 1개)뿐이고, phase는 activity 필수·on_cancel 선택이며 'use a Sequence activity' 문구가 있다. 발행일은 미확인, 확인일 2026-09-25 기준. |
 | f2 | 예 | 예 | 아니오 | 유지 | 확인: ref-111 원본을 다시 열었다. 필수는 booking뿐이다. assigned_to는 group·name 필수이고, dispatch status 값은 queued/selected/dispatched/failed_to_assign/canceled_in_flight 5종이다. status는 uninitialized, blocked, error, failed, queued, standby, underway, delayed, skipped, canceled, killed, completed의 12종이다. 브리프가 '등'으로 줄인 것은 원문과 맞다. 추가로 event_state에 같은 phase 안 사건 사이 의존(deps) 배열이 있다(f3·f16·f17 관련). |
 | f3 | 예 | 예 | 아니오 | 유지 | 추정 유지. 배정 근거·확인 여부 필드가 없다는 점은 원본으로 확인했다. 다만 task_state.json에는 작업 내부 사건 사이 의존(event_state.deps)이 있으므로, '선행 의존 필드 없음'은 서로 다른 작업 사이에 한정해 써야 한다(수정 지시). |
 | f4 | 예 | 예 | 아니오 | 유지 | 확인: 입력 원문 텍스트 data/source_texts/ref-031.txt(VDA 5050 3.0.0)에서 5.3 'Assignment of orders to the mobile robots'와 6.1.1 'An order message does not necessarily describe the full transport order'를 확인했다. 브리프 sources의 ref-031은 fetched_via가 github_raw인데 fetch_url은 null이고 발췌에는 inbox로 적혀 있다. 실제 경로는 inbox다. |
@@ -21,7 +21,7 @@
 | f13 | 예 | 예 | 아니오 | 유지 | 확인: README 원본에서 XML 기반 DSL의 실행 시 적재, 정적 링크·플러그인 노드, 비동기 Action을 first-class로 두는 점을 확인했다. |
 | f14 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람): 검증 검색에서 arXiv 1911.05499(2019-11-13), PDDL2.1 STRIPS 부분의 확장, 기본 HTN 계획 한정, AAAI 2020 발표를 확인했다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 리서치 검색 요약에만 있다. |
 | f15 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람): 검증 검색에서 저자 Filippone·Pettinari·Pelliccione(GSSI), arXiv 2603.15427, 'no standard or widely accepted formalism' 문구, BT·상태 기계·HTN·BPMN 비교를 확인했다. [의견]이므로 누구의 평가인지 밝혀 쓴다. |
-| f16 | 예 | 예 | 아니오 | 유지 | 추정 유지(이 위키의 대응). 다만 BPMN을 '분해·순서 구조'로만 분류하면 f9의 수행자 지정(자원 배정 식)을 빠뜨린다. 또 Open-RMF 작업 상태의 작업 내부 사건 의존(deps)을 고려해 표현을 고쳐야 한다(수정 지시). 브리프는 source_unopened를 false로 적었지만, 근거에 원문 미열람 출처 ref-951·ref-952가 섞여 있다. |
+| f16 | 예 | 예 | 아니오 | 유지 | 추정 유지(이 위키의 대응). 다만 BPMN을 '분해·순서 구조'로만 분류하면 f9의 수행자 지정(자원 배정 식)을 빠뜨린다. 또 Open-RMF 작업 상태의 작업 내부 사건 의존(deps)을 고려해 표현을 고쳐야 한다(수정 지시). 브리프는 source_unopened를 false로 적었지만, 근거에 원문 미열람 출처 ref-572·ref-952가 섞여 있다. |
 | f17 | 예 | 예 | 아니오 | 유지 | 추정 유지. waitForTrigger–trigger 동작은 원문으로 확인했다. 이를 플릿 사이 선후 집행에 쓴 사례는 확인되지 않았다. oq-049는 해결로 바꾸지 않는다. '작업 사이'라는 한정을 유지한다. |
 | f18 | 예 | 예 | 아니오 | 유지 | 추정 유지. assigned_to(f2)와 EquipmentActuals(f7)는 원문으로 확인했다. 배정 근거 기록을 권고한 출처는 없으며 oq-052와 연결된다. |
 
@@ -44,7 +44,7 @@
 - f2 용어: Open-RMF dispatch는 '디스패치 상태(dispatch)'로 원어를 병기한다. 업무 분해·배정 설계 초안의 '배치(Dispatch)'나 '배정(Assignment)' 개념과 같은 것으로 쓰지 않는다.
 - f15: [의견] 문장에 'Filippone 외(2026-03, 프리프린트)의 평가'임을 문장 안에 밝힌다.
 - f14: 날짜는 'arXiv 2019-11 공개, AAAI 2020 발표'로 적는다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 원문 미열람 검색 요약 기준임을 병기한다.
-- 원문 미열람 표시: ref-114, ref-116, ref-253, ref-951, ref-952의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, 신규 출처(ref-951·ref-952)의 reference_updates에 source_unopened: true를 넣는다. ref-031·ref-111·ref-130·ref-230·ref-948·ref-949·ref-950은 원문 열람 출처이므로 표시하지 않는다.
+- 원문 미열람 표시: ref-114, ref-116, ref-253, ref-572, ref-952의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, 신규 출처(ref-572·ref-573)의 reference_updates에 source_unopened: true를 넣는다. ref-031·ref-111·ref-130·ref-230·ref-569·ref-570·ref-950은 원문 열람 출처이므로 표시하지 않는다.
 - 온톨로지 변경 '진행 상태 (Progress)' 수정을 승인한다. 속성 '상태 값'에 외부 표현 원천 후보(Open-RMF 작업 상태 status 값, Open-RMF 디스패치 상태 값, ISA-95 작업 응답 JobState·실제 시작·종료 시각)를 근거 f2·f7 각주와 함께 적는다. 행 상태는 초안 → 확정으로 바꾼다. 초안의 네 값(접수·실행·완료·취소)과의 대응 규칙은 6절 미해결 모델링 질문에 새 항목으로 둔다.
 - 온톨로지 변경 '배정 (Assignment)' 수정(메모)을 승인하되 표현을 고친다. 'Open-RMF 작업 상태는 assigned_to(그룹·이름)로 배정 대상만 기록하고 배정 근거·산출 방식·확인 여부 필드는 확인되지 않았다 [추정]; VDA 5050 3.0.0은 주문의 로봇 배정을 관제의 기능으로 둘 뿐 배정 근거를 담는 메시지를 두지 않는다 [사실][^ref-031]'로 쓴다. '로봇 토픽으로 배정 대상을 표현' 문구는 f4에 없으므로 쓰지 않는다. 행 상태는 확정을 유지한다.
 - 초안 버전: 승인한 변경이 있으므로 ontology_version을 '0.4' → '0.5'로 올린다. H1 '(v0.5)', page-status 표기, 프런트매터, pages.json track_updates.ontology_draft_version 네 곳을 같은 값으로 맞추고, 1절 버전 설명에 v0.5를 더한다.
@@ -56,7 +56,7 @@
 
 ## 검증 노트
 
-판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 6건(ref-948, ref-111, ref-230, ref-949, ref-950, ref-130)은 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 확인했다. 확인 17건, 미확인 1건(f9), 교차 확인 0건. 강등: f9 사실 → 추정(BPMN 수행자 정의 문구를 발행 기관 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다). 원문 미열람 출처: ref-114, ref-116, ref-253, ref-951, ref-952. 주의: 표준·형식의 필드는 각 공식 파일 하나에 기댄 관찰이고, '초안 대비 빠진 항목(배정 근거·지시 원문·상황 값 출처·확인 여부)'은 이 위키의 대응 추론이다(부재의 확인이 아님). 검증 열람에서 Open-RMF 작업 상태 스키마에 작업 내부 사건 사이 의존(event_state.deps)이 있음을 확인했으므로, 선행 의존 부재 서술은 서로 다른 작업 사이로 한정한다. 브리프 기록 오류도 있다. ref-031은 fetched_via가 github_raw로 적혀 있으나 실제로는 입력 원문 텍스트(inbox)로 확인했다. ref-253은 fetched: false인데 fetch_url이 적혀 있다. f16은 원문 미열람 출처를 포함하는데 source_unopened가 false로 적혀 있다. 검증 검색 4회(리서치 7회 포함 11/40). 정정 요청 없음. 열린 질문 해결 인정 없음(oq-049·oq-052·oq-014·oq-020은 관련만 표시). 온톨로지 변경 승인: 진행 상태 (Progress) 수정 — 상태 값의 외부 표현 원천 후보(f2·f7), 초안 → 확정 / 배정 (Assignment) 수정 — 외부 표현이 배정 대상만 담는다는 메모(f2·f4, [추정] f3·f18), VDA 5050 '로봇 토픽' 표현은 제외, 확정 유지. 이에 따라 v0.4 → v0.5. 거부: 없음. 새 질문 2건(단계 3, f16·f17) 등록, 중복 없음. 단계 완료 조건: 미충족(부족: 평가 데이터 q2-03 미조사, 작업 모델 정보 항목 가운데 작업 요구의 적재물 속성과 업무 완료 조건 미확정). 단계 전환: 미승인(막힌 질문 q2-03·q2-04·q2-05·q2-06).
+판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 6건(ref-569, ref-111, ref-230, ref-570, ref-571, ref-130)은 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 확인했다. 확인 17건, 미확인 1건(f9), 교차 확인 0건. 강등: f9 사실 → 추정(BPMN 수행자 정의 문구를 발행 기관 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다). 원문 미열람 출처: ref-114, ref-116, ref-253, ref-572, ref-573. 주의: 표준·형식의 필드는 각 공식 파일 하나에 기댄 관찰이고, '초안 대비 빠진 항목(배정 근거·지시 원문·상황 값 출처·확인 여부)'은 이 위키의 대응 추론이다(부재의 확인이 아님). 검증 열람에서 Open-RMF 작업 상태 스키마에 작업 내부 사건 사이 의존(event_state.deps)이 있음을 확인했으므로, 선행 의존 부재 서술은 서로 다른 작업 사이로 한정한다. 브리프 기록 오류도 있다. ref-031은 fetched_via가 github_raw로 적혀 있으나 실제로는 입력 원문 텍스트(inbox)로 확인했다. ref-253은 fetched: false인데 fetch_url이 적혀 있다. f16은 원문 미열람 출처를 포함하는데 source_unopened가 false로 적혀 있다. 검증 검색 4회(리서치 7회 포함 11/40). 정정 요청 없음. 열린 질문 해결 인정 없음(oq-049·oq-052·oq-014·oq-020은 관련만 표시). 온톨로지 변경 승인: 진행 상태 (Progress) 수정 — 상태 값의 외부 표현 원천 후보(f2·f7), 초안 → 확정 / 배정 (Assignment) 수정 — 외부 표현이 배정 대상만 담는다는 메모(f2·f4, [추정] f3·f18), VDA 5050 '로봇 토픽' 표현은 제외, 확정 유지. 이에 따라 v0.4 → v0.5. 거부: 없음. 새 질문 2건(단계 3, f16·f17) 등록, 중복 없음. 단계 완료 조건: 미충족(부족: 평가 데이터 q2-03 미조사, 작업 모델 정보 항목 가운데 작업 요구의 적재물 속성과 업무 완료 조건 미확정). 단계 전환: 미승인(막힌 질문 q2-03·q2-04·q2-05·q2-06).
 
 ## 트랙 추가 검증
 

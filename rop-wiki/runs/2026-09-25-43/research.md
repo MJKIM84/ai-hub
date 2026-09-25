@@ -31,23 +31,23 @@
 
 | id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
 |---|---|---|---|---|---|---|---|---|
-| f1 | [사실] | Open-RMF 복합(compose) 작업 기술 스키마는 순서가 있는 단계(phases) 배열을 유일한 필수 필드로 두고, 각 단계는 활동(activity: 범주와 플릿이 지원하는 스키마에 맞는 기술)을 필수로, 취소 시 실행할 활동 목록(on_cancel)을 선택으로 두며, 한 단계 안의 여러 활동은 Sequence 활동으로 묶게 한다. | ref-948 | 아니오 | medium | 2026-09-25 | — | — |
+| f1 | [사실] | Open-RMF 복합(compose) 작업 기술 스키마는 순서가 있는 단계(phases) 배열을 유일한 필수 필드로 두고, 각 단계는 활동(activity: 범주와 플릿이 지원하는 스키마에 맞는 기술)을 필수로, 취소 시 실행할 활동 목록(on_cancel)을 선택으로 두며, 한 단계 안의 여러 활동은 Sequence 활동으로 묶게 한다. | ref-569 | 아니오 | medium | 2026-09-25 | — | — |
 | f2 | [사실] | Open-RMF 작업 상태 스키마는 예약 정보(booking)만 필수로 두고, 배정 결과를 로봇 그룹(플릿)과 이름으로 된 assigned_to 필드로, 배정 과정을 queued·selected·dispatched·failed_to_assign·canceled_in_flight 값의 dispatch 상태로, 진행을 uninitialized·blocked·queued·underway·delayed·completed·canceled·failed 등의 status 값과 단계별 상태·예상 소요 시간으로 표현한다. | ref-111 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
-| f3 | [추정] | 이번에 연 Open-RMF 복합 작업·작업 상태 스키마에서는 배정 결과가 '어느 로봇인가'만 기록되고 배정 근거(선택 이유·산출 방식)·사용자 확인 여부·다른 작업과의 선행 의존을 담는 필드는 확인되지 않아, 이 항목은 ROP 의 작업 모델이 따로 보유해야 할 것으로 보인다. | ref-948, ref-111 | 아니오 | low | 2026-09-25 | — | — |
+| f3 | [추정] | 이번에 연 Open-RMF 복합 작업·작업 상태 스키마에서는 배정 결과가 '어느 로봇인가'만 기록되고 배정 근거(선택 이유·산출 방식)·사용자 확인 여부·다른 작업과의 선행 의존을 담는 필드는 확인되지 않아, 이 항목은 ROP 의 작업 모델이 따로 보유해야 할 것으로 보인다. | ref-569, ref-111 | 아니오 | low | 2026-09-25 | — | — |
 | f4 | [사실] | VDA 5050 3.0.0 은 관제의 최소 기능으로 주문의 이동로봇 배정을 두지만, 주문 자체는 로봇 한 대가 지나갈 노드–간선 그래프 구간이며 전체 운반 작업은 orderId·orderUpdateId 로 이어진 여러 하위 주문으로 나뉠 수 있어, 업무·작업 수준의 구조나 배정 근거를 담는 메시지는 두지 않는다. | ref-031 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
 | f5 | [사실] | VDA 5050 3.0.0 의 사전 정의 동작 waitForTrigger 는 이동로봇이 관제(FLEET_CONTROL)나 로봇 자체 입력(LOCAL)의 트리거를 기다리게 하고, 관제는 제3 시스템에서 기다리던 과정이 끝났다는 정보를 받으면 순간 동작 trigger 로 이를 풀며, 시간 초과 처리와 주문 취소는 관제가 맡는다. | ref-031 | 아니오 | medium | 2026-09-25 | 완료·인계 | — |
 | f6 | [사실] | MassRobotics AMR 상호운용 표준의 JSON 스키마는 로봇이 내보내는 식별 보고와 상태 보고만 정의하고 로봇에 작업을 보내는 메시지는 두지 않으며, 상태 보고에 운용 상태(navigating, idle, charging, waitingHumanEvent 등)와 목적지(destinations)·단기 경로를 담는다. | ref-230, ref-253 | 아니오 | medium | 2026-09-25 | — | — |
 | f7 | [사실] | OPC UA for ISA-95 작업 제어 노드셋의 작업 응답 데이터형은 작업 응답 id·연결된 작업 지시 id·실제 시작·종료 시각·작업 상태와 인원·설비·물리 자산·자재의 실적(Actuals)을 두고, 설비 데이터형의 ID 는 설비 클래스 또는 개별 설비를 가리킬 수 있다. | ref-130 | 아니오 | medium | 2024-01-31 | 완료·인계 | — |
 | f8 | [추정] | 이번에 연 ISA-95 작업 제어 노드셋의 작업 지시·작업 응답 데이터형에서는 작업 지시 사이의 선행·의존 관계를 담는 필드가 확인되지 않았다. | ref-130 | 아니오 | low | 2026-09-25 | — | — |
-| f9 | [사실] | OMG BPMN 2.0.2 명세는 활동을 수행하거나 책임지는 자원을 수행자(Performer, 10.3.2절)로 정의하고, 사람 수행자(HumanPerformer)와 잠재 담당자(PotentialOwner) 같은 특수화와 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다. | ref-952 | 아니오 | medium | 2014-01 | 수행 자원 | 원문 미열람 |
+| f9 | [사실] | OMG BPMN 2.0.2 명세는 활동을 수행하거나 책임지는 자원을 수행자(Performer, 10.3.2절)로 정의하고, 사람 수행자(HumanPerformer)와 잠재 담당자(PotentialOwner) 같은 특수화와 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다. | ref-573 | 아니오 | medium | 2014-01 | 수행 자원 | 원문 미열람 |
 | f10 | [사실] | Corradini 외(2023)는 BPMN 2.0 협업 다이어그램으로 다중 로봇 시스템의 협력 행동을 모델링·설정·실행하는 틀을 제안했다. | ref-114 | 아니오 | medium | 2023 | — | 원문 미열람 |
-| f11 | [사실] | CNCF 의 Serverless Workflow(Open Workflow Specification) DSL 1.0.x 는 YAML·JSON 으로 워크플로를 기술하며 call·do(순차)·fork(병렬)·switch·wait·emit·listen·raise·try·set·run 같은 작업 유형과 시간 초과·일정(cron·every·after) 표현을 둔다. | ref-949 | 아니오 | medium | 2026-09-25 | — | — |
-| f12 | [추정] | 이번에 연 Serverless Workflow DSL 문서에서는 작업을 특정 수행자·자원에 배정하거나 우선순위·기한을 표현하는 개념이 확인되지 않았다. | ref-949 | 아니오 | low | 2026-09-25 | — | — |
-| f13 | [사실] | BehaviorTree.CPP 는 행동 트리를 실행 시 불러오는 XML 기반 도메인 특화 언어로 정의하고, 사용자 정의 노드를 정적으로 링크하거나 플러그인으로 불러오며, 비동기 동작을 기본으로 지원한다. | ref-950 | 아니오 | medium | 2026-09-25 | — | — |
-| f14 | [사실] | HDDL(Höller 외, AAAI 2020)은 PDDL 을 확장해 기본 작업·복합 작업과 복합 작업을 하위 작업 네트워크로 나누는 분해 방법, 하위 작업의 부분·전체 순서를 기술하는 계층적 작업 네트워크(HTN) 계획 언어로, 2020년 국제 계획 경진대회 계층 계획 부문의 공통 언어로 만들어졌다. | ref-951 | 아니오 | medium | 2019-11 | — | 원문 미열람 |
+| f11 | [사실] | CNCF 의 Serverless Workflow(Open Workflow Specification) DSL 1.0.x 는 YAML·JSON 으로 워크플로를 기술하며 call·do(순차)·fork(병렬)·switch·wait·emit·listen·raise·try·set·run 같은 작업 유형과 시간 초과·일정(cron·every·after) 표현을 둔다. | ref-570 | 아니오 | medium | 2026-09-25 | — | — |
+| f12 | [추정] | 이번에 연 Serverless Workflow DSL 문서에서는 작업을 특정 수행자·자원에 배정하거나 우선순위·기한을 표현하는 개념이 확인되지 않았다. | ref-570 | 아니오 | low | 2026-09-25 | — | — |
+| f13 | [사실] | BehaviorTree.CPP 는 행동 트리를 실행 시 불러오는 XML 기반 도메인 특화 언어로 정의하고, 사용자 정의 노드를 정적으로 링크하거나 플러그인으로 불러오며, 비동기 동작을 기본으로 지원한다. | ref-571 | 아니오 | medium | 2026-09-25 | — | — |
+| f14 | [사실] | HDDL(Höller 외, AAAI 2020)은 PDDL 을 확장해 기본 작업·복합 작업과 복합 작업을 하위 작업 네트워크로 나누는 분해 방법, 하위 작업의 부분·전체 순서를 기술하는 계층적 작업 네트워크(HTN) 계획 언어로, 2020년 국제 계획 경진대회 계층 계획 부문의 공통 언어로 만들어졌다. | ref-572 | 아니오 | medium | 2019-11 | — | 원문 미열람 |
 | f15 | [의견] | Filippone 외(2026)는 단일·다중 로봇 시스템의 임무 기술에 표준이나 널리 합의된 형식이 없고, 행동 트리·상태 기계·계층적 작업 네트워크·BPMN 이 정도를 달리하며 쓰인다고 평가한다. | ref-116 | 아니오 | medium | 2026-03 | — | 원문 미열람 |
-| f16 | [추정] | q2-02 에 대해 이번에 확인한 형식을 업무 분해·배정 설계 초안과 대조하면, 로봇 관제 형식(Open-RMF, VDA 5050)은 작업 단계·배정 결과·진행 상태를, 업무 형식(ISA-95 작업 지시·응답)은 기한·우선순위·자원 요구·실적을, 워크플로 형식(BPMN, Serverless Workflow)과 계획 언어(HDDL, 행동 트리)는 분해·순서 구조를 담지만, 지시 원문과 상황 값의 출처, 배정 근거·산출 방식, 사용자 확인 여부를 함께 담는 형식은 찾지 못해 ROP 는 이 항목을 자체 작업 모델에 두고 외부 형식으로 옮겨야 할 것으로 보인다. | ref-948, ref-111, ref-031, ref-130, ref-952, ref-949, ref-951, ref-950 | 아니오 | low | 2026-09-25 | — | — |
-| f17 | [추정] | 확인한 형식 가운데 서로 다른 로봇·플릿 작업 사이의 선행 의존을 필드로 표현하는 것은 없었고, VDA 5050 의 waitForTrigger–trigger 처럼 관제가 다른 과정의 완료를 받아 로봇을 풀어 주는 동작이 플릿 사이 동기화 수단으로 쓰일 수 있어 보이나, 그 집행은 관제(ROP) 몫으로 남는다. | ref-031, ref-948, ref-130 | 아니오 | low | 2026-09-25 | 피킹 / 제약 | — |
+| f16 | [추정] | q2-02 에 대해 이번에 확인한 형식을 업무 분해·배정 설계 초안과 대조하면, 로봇 관제 형식(Open-RMF, VDA 5050)은 작업 단계·배정 결과·진행 상태를, 업무 형식(ISA-95 작업 지시·응답)은 기한·우선순위·자원 요구·실적을, 워크플로 형식(BPMN, Serverless Workflow)과 계획 언어(HDDL, 행동 트리)는 분해·순서 구조를 담지만, 지시 원문과 상황 값의 출처, 배정 근거·산출 방식, 사용자 확인 여부를 함께 담는 형식은 찾지 못해 ROP 는 이 항목을 자체 작업 모델에 두고 외부 형식으로 옮겨야 할 것으로 보인다. | ref-569, ref-111, ref-031, ref-130, ref-573, ref-570, ref-572, ref-571 | 아니오 | low | 2026-09-25 | — | — |
+| f17 | [추정] | 확인한 형식 가운데 서로 다른 로봇·플릿 작업 사이의 선행 의존을 필드로 표현하는 것은 없었고, VDA 5050 의 waitForTrigger–trigger 처럼 관제가 다른 과정의 완료를 받아 로봇을 풀어 주는 동작이 플릿 사이 동기화 수단으로 쓰일 수 있어 보이나, 그 집행은 관제(ROP) 몫으로 남는다. | ref-031, ref-569, ref-130 | 아니오 | low | 2026-09-25 | 피킹 / 제약 | — |
 | f18 | [추정] | 분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, 표준 형식의 배정 결과(Open-RMF assigned_to·dispatch 상태, ISA-95 설비 실적)는 누가 맡았는지만 남기므로, 최근접 배정과 다른 배정 기준의 전체 효과를 사후에 비교하려면 ROP 가 배정 근거·목적함수 값을 별도로 기록해야 할 것으로 보인다. | ref-111, ref-130 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
 
 ### 근거 발췌
@@ -82,11 +82,11 @@
 | ref-253 | MassRobotics | MassRobotics-AMR/AMR_Interop_Standard — README | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/MassRobotics-AMR/AMR_Interop_Standard | 예 |
 | ref-114 | Corradini, F., Pettinari, S., Re, B., Rossi, L., & Tiezzi, F. | A BPMN-driven framework for Multi-Robot System development | 2023 | 논문 | medium | 2026-09-25 | https://www.sciencedirect.com/science/article/abs/pii/S0921889022002111 | 예 |
 | ref-116 | Filippone, G., Pettinari, S., & Pelliccione, P. | Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis | 2026-03 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2603.15427 | 예 |
-| ref-948 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json | 아니오 |
-| ref-949 | CNCF Serverless Workflow (serverlessworkflow/specification GitHub) | Serverless Workflow Specification — dsl.md (DSL 1.0) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/serverlessworkflow/specification/blob/main/dsl.md | 아니오 |
-| ref-950 | BehaviorTree.CPP (BehaviorTree GitHub) | BehaviorTree.CPP — README | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/BehaviorTree/BehaviorTree.CPP | 아니오 |
-| ref-951 | Höller, D., Behnke, G., Bercher, P., Biundo, S., Fiorino, H., Pellier, D., & Alford, R. | HDDL – A Language to Describe Hierarchical Planning Problems | 2019-11 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1911.05499 | 예 |
-| ref-952 | OMG(Object Management Group) | Business Process Model and Notation (BPMN), Version 2.0.2 | 2014-01 | 표준 | medium | 2026-09-25 | https://www.omg.org/spec/BPMN/2.0.2/PDF | 예 |
+| ref-569 | Open Robotics (open-rmf) | rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compose.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/task_description__compose.json | 아니오 |
+| ref-570 | CNCF Serverless Workflow (serverlessworkflow/specification GitHub) | Serverless Workflow Specification — dsl.md (DSL 1.0) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/serverlessworkflow/specification/blob/main/dsl.md | 아니오 |
+| ref-571 | BehaviorTree.CPP (BehaviorTree GitHub) | BehaviorTree.CPP — README | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/BehaviorTree/BehaviorTree.CPP | 아니오 |
+| ref-572 | Höller, D., Behnke, G., Bercher, P., Biundo, S., Fiorino, H., Pellier, D., & Alford, R. | HDDL – A Language to Describe Hierarchical Planning Problems | 2019-11 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1911.05499 | 예 |
+| ref-573 | OMG(Object Management Group) | Business Process Model and Notation (BPMN), Version 2.0.2 | 2014-01 | 표준 | medium | 2026-09-25 | https://www.omg.org/spec/BPMN/2.0.2/PDF | 예 |
 
 ### 출처 요약
 
@@ -97,11 +97,11 @@
 - **ref-253**: MassRobotics AMR 상호운용 표준 저장소 README. 위치·속도·상태·작업 가용성 등 정보 공유를 목적으로 적는다.
 - **ref-114**: 원문 미열람. BPMN 2.0 협업 다이어그램으로 다중 로봇 시스템의 협력 행동을 모델링·설정·실행하는 틀을 제안한 논문.
 - **ref-116**: 원문 미열람. 행동 트리·상태 기계·계층적 작업 네트워크·BPMN 등 로봇 임무 기술 형식을 비교한 프리프린트.
-- **ref-948**: Open-RMF 복합 작업 기술 스키마. 순서가 있는 단계 배열, 단계별 활동과 취소 시 활동을 원문으로 확인했다.
-- **ref-949**: 플랫폼 중립 워크플로 기술 DSL 문서. YAML·JSON 형식, 작업 유형(순차·병렬·분기·대기·이벤트·오류 처리), 시간 초과·일정 표현을 원문으로 확인했다.
-- **ref-950**: 행동 트리 C++ 라이브러리 README. XML 기반 트리 정의의 실행 시 적재, 플러그인 노드, 비동기 동작 지원을 원문으로 확인했다.
-- **ref-951**: 원문 미열람. PDDL 을 확장해 계층적 작업 네트워크 계획 문제(기본·복합 작업, 분해 방법, 순서)를 기술하는 HDDL 을 제안한 논문(AAAI 2020 발표, 저자 목록은 검색 기록 기준).
-- **ref-952**: 원문 미열람. OMG BPMN 2.0.2 명세 PDF. 활동 수행 자원(Performer, 10.3.2절)과 사람 수행자·자원 배정 식을 정의한다(검색 요약 기준).
+- **ref-569**: Open-RMF 복합 작업 기술 스키마. 순서가 있는 단계 배열, 단계별 활동과 취소 시 활동을 원문으로 확인했다.
+- **ref-570**: 플랫폼 중립 워크플로 기술 DSL 문서. YAML·JSON 형식, 작업 유형(순차·병렬·분기·대기·이벤트·오류 처리), 시간 초과·일정 표현을 원문으로 확인했다.
+- **ref-571**: 행동 트리 C++ 라이브러리 README. XML 기반 트리 정의의 실행 시 적재, 플러그인 노드, 비동기 동작 지원을 원문으로 확인했다.
+- **ref-572**: 원문 미열람. PDDL 을 확장해 계층적 작업 네트워크 계획 문제(기본·복합 작업, 분해 방법, 순서)를 기술하는 HDDL 을 제안한 논문(AAAI 2020 발표, 저자 목록은 검색 기록 기준).
+- **ref-573**: 원문 미열람. OMG BPMN 2.0.2 명세 PDF. 활동 수행 자원(Performer, 10.3.2절)과 사람 수행자·자원 배정 식을 정의한다(검색 요약 기준).
 
 ## 페이지 제안
 
@@ -145,7 +145,7 @@
     - 한국어 검색 2회에서 로봇 작업·임무 기술 형식을 정한 KS 표준이나 국내 연구를 찾지 못함
 - 범위 경계 위반 의심:
     - 없음
-- 한계: web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: 신규 ref-948(Open-RMF 복합 작업)·ref-949(Serverless Workflow DSL)·ref-950(BehaviorTree.CPP README)는 github_raw, 재사용 ref-111·ref-130·ref-230·ref-253 은 github_raw, ref-031 은 입력 원문 텍스트(inbox). 신규 ref-951(HDDL)·ref-952(BPMN 2.0.2 PDF)와 재사용 ref-114·ref-116 은 원문 미열람(신뢰도 상한 medium). 검색 7회/40, 신규 출처 5건/20(ref-948~ref-952, 예약 구간 안), 재사용 7건. 교차 확인 0건. 질문 선택: target.json 지정 q2-02 1건. q2-02 는 로봇 관제·업무·워크플로·계획 언어 형식의 필드 관찰로 답했으나, 초안 대비 빠진 항목(f16)은 이 위키의 대응 추론이라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 2회에서 KS 로봇 작업 지시·임무 기술 표준을 찾지 못함(KS B ISO 8373·10218 등 용어·안전 표준만 확인되어 넣지 않음). 교차 규칙: 이번 finding 은 LLM 방법이 아니라 표현 형식이라 27. AI·학습·적응과 모델 운영 반영은 제안하지 않았다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 플릿 사이 선후는 기존 oq-049, 배정 비교 실측은 oq-052 와 겹친다. 용어 후보 2건(f14 근거). 트랙 glossary_targets 가운데 용어집에 없는 '사람 확인 루프'는 이번 finding 근거가 없어 내지 않았다. 후속 질문 2건. 온톨로지 변경 제안 2건.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: 신규 ref-569(Open-RMF 복합 작업)·ref-570(Serverless Workflow DSL)·ref-571(BehaviorTree.CPP README)는 github_raw, 재사용 ref-111·ref-130·ref-230·ref-253 은 github_raw, ref-031 은 입력 원문 텍스트(inbox). 신규 ref-572(HDDL)·ref-573(BPMN 2.0.2 PDF)와 재사용 ref-114·ref-116 은 원문 미열람(신뢰도 상한 medium). 검색 7회/40, 신규 출처 5건/20(ref-569~ref-573, 예약 구간 안), 재사용 7건. 교차 확인 0건. 질문 선택: target.json 지정 q2-02 1건. q2-02 는 로봇 관제·업무·워크플로·계획 언어 형식의 필드 관찰로 답했으나, 초안 대비 빠진 항목(f16)은 이 위키의 대응 추론이라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 2회에서 KS 로봇 작업 지시·임무 기술 표준을 찾지 못함(KS B ISO 8373·10218 등 용어·안전 표준만 확인되어 넣지 않음). 교차 규칙: 이번 finding 은 LLM 방법이 아니라 표현 형식이라 27. AI·학습·적응과 모델 운영 반영은 제안하지 않았다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음: 플릿 사이 선후는 기존 oq-049, 배정 비교 실측은 oq-052 와 겹친다. 용어 후보 2건(f14 근거). 트랙 glossary_targets 가운데 용어집에 없는 '사람 확인 루프'는 이번 finding 근거가 없어 내지 않았다. 후속 질문 2건. 온톨로지 변경 제안 2건.
 
 ## 트랙 블록
 
