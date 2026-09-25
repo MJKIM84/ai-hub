@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-002, ref-031, ref-096, ref-097, ref-098, ref-099, ref-100, ref-101, ref-102, ref-060, ref-103]
+sources: [ref-002, ref-031, ref-110, ref-111, ref-112, ref-113, ref-114, ref-115, ref-116, ref-117, ref-118]
 last_run: 2026-09-25
 version: 2
 ---
@@ -60,20 +60,20 @@ ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 
 
 | 항목 | 내용 |
 |---|---|
-| 시작 조건 | 상위 시스템이 출하 우선순위를 바꾸며 진행 중인 작업 지시를 변경·취소한다. B2MML 거래 동사에는 CHANGE·CANCEL이 있다. [사실][^ref-101] 이 변경·취소는 그 동사에 대응하는 것으로 보인다. [추정][^ref-101] 국내 벤더 설명으로는 WES가 WMS 작업 지시를 바탕으로 작업 순서를 조정하는 자리다. [추정] 벤더 주장[^ref-103] |
+| 시작 조건 | 상위 시스템이 출하 우선순위를 바꾸며 진행 중인 작업 지시를 변경·취소한다. B2MML 거래 동사에는 CHANGE·CANCEL이 있다. [사실][^ref-115] 이 변경·취소는 그 동사에 대응하는 것으로 보인다. [추정][^ref-115] 국내 벤더 설명으로는 WES가 WMS 작업 지시를 바탕으로 작업 순서를 조정하는 자리다. [추정] 벤더 주장[^ref-118] |
 | 작업 대상 | 피킹 중인 주문의 화물(박스·토트)과 그 화물을 실었거나 실으러 가는 로봇 |
-| 수행 자원 | 연구에서는 주문 배정(주문을 작업대에), 작업 생성, 로봇 작업 배정, 경로 계획을 서로 다른 결정으로 나눈다. [사실][^ref-060] Open-RMF는 작업을 가장 적합한 플릿 또는 특정 로봇에 맡길 수 있다. [사실][^ref-099] |
+| 수행 자원 | 연구에서는 주문 배정(주문을 작업대에), 작업 생성, 로봇 작업 배정, 경로 계획을 서로 다른 결정으로 나눈다. [사실][^ref-117] Open-RMF는 작업을 가장 적합한 플릿 또는 특정 로봇에 맡길 수 있다. [사실][^ref-113] |
 | 제약 | VDA 5050에서 진행 중 주문은 같은 orderId의 주문 갱신으로만 연장되고 이미 공개된(base) 구간은 바뀌지 않으며, 다른 orderId의 새 주문은 OTHER_ORDER_ACTIVE 오류로 거부된다. [사실][^ref-031] |
-| 완료·인계 | 로봇 쪽 결과는 Open-RMF 작업 상태(canceled·completed 등)로 보고되고 [사실][^ref-098], 상위 쪽 결과 보고 단위는 작업 응답이다. [사실][^ref-102] |
-| 예외·성과 | cancelOrder를 받은 로봇은 가능한 한 빨리 멈추고 예정 동작을 FAILED로 보고한다. [사실][^ref-031] 이미 화물을 싣거나 옮긴 뒤라면 되돌림 작업이 더 생길 수 있어 번역이 일대일이 아닐 것으로 보인다. [추정][^ref-101][^ref-102][^ref-031][^ref-097] 처리량·시간·비용 영향은 미확인이다. |
+| 완료·인계 | 로봇 쪽 결과는 Open-RMF 작업 상태(canceled·completed 등)로 보고되고 [사실][^ref-112], 상위 쪽 결과 보고 단위는 작업 응답이다. [사실][^ref-116] |
+| 예외·성과 | cancelOrder를 받은 로봇은 가능한 한 빨리 멈추고 예정 동작을 FAILED로 보고한다. [사실][^ref-031] 이미 화물을 싣거나 옮긴 뒤라면 되돌림 작업이 더 생길 수 있어 번역이 일대일이 아닐 것으로 보인다. [추정][^ref-115][^ref-116][^ref-031][^ref-111] 처리량·시간·비용 영향은 미확인이다. |
 
-다음은 설명을 위한 가상의 시나리오이며 현장 수치는 넣지 않았다. 출하 마감이 당겨진 주문이 생겨 상위 시스템이 기존 피킹 작업 지시를 바꾸거나 취소한다. ROP는 이 지시를 받아 아직 공개되지 않은 경로를 갱신할지, 취소 후 다시 지시할지를 정해야 한다. [추정][^ref-031][^ref-096][^ref-097]
+다음은 설명을 위한 가상의 시나리오이며 현장 수치는 넣지 않았다. 출하 마감이 당겨진 주문이 생겨 상위 시스템이 기존 피킹 작업 지시를 바꾸거나 취소한다. ROP는 이 지시를 받아 아직 공개되지 않은 경로를 갱신할지, 취소 후 다시 지시할지를 정해야 한다. [추정][^ref-031][^ref-110][^ref-111]
 
 이 영역이 맡는 칸은 시작 조건(상위 지시 수신), 예외·성과(취소·변경의 번역), 완료·인계(결과를 작업 응답으로 되돌리기)다. 누가 되돌림 작업과 재고 반영 규칙을 정하는지는 11절의 열린 질문으로 남긴다.
 
 ## 6. 대표 접근법과 기술
 
-진행 중인 로봇 작업을 바꾸는 방법은 로봇 인터페이스가 허용하는 갱신·취소·요청 시점 지정과, 상위 지시를 그 수단으로 옮기는 번역으로 나뉜다. [추정][^ref-031][^ref-096][^ref-097]
+진행 중인 로봇 작업을 바꾸는 방법은 로봇 인터페이스가 허용하는 갱신·취소·요청 시점 지정과, 상위 지시를 그 수단으로 옮기는 번역으로 나뉜다. [추정][^ref-031][^ref-110][^ref-111]
 
 자세한 내용은 주제 페이지 [1. 주문·업무 시스템 연계 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area01-s6.md)에 있다.
 
@@ -83,10 +83,10 @@ ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 
 
 | 이름 | 유형 | 이 영역과의 관계 | 출처 |
 |---|---|---|---|
-| [ISA-95](../../glossary/isa-95.md) · B2MML | 표준 | ISA-95 데이터 모델의 XML 구현과 거래 동사(CHANGE·CANCEL 등, Version 0701 기준) | [^ref-100][^ref-101] |
-| OPC UA for ISA-95 Part 4: Job Control (OPC 10031-4) | 표준 | 작업 지시 수신 객체의 Store·Update·Abort 등의 메서드. 온라인 참조 v2.00 기준, 원문 미열람 | [^ref-102] |
+| [ISA-95](../../glossary/isa-95.md) · B2MML | 표준 | ISA-95 데이터 모델의 XML 구현과 거래 동사(CHANGE·CANCEL 등, Version 0701 기준) | [^ref-114][^ref-115] |
+| OPC UA for ISA-95 Part 4: Job Control (OPC 10031-4) | 표준 | 작업 지시 수신 객체의 Store·Update·Abort 등의 메서드. 온라인 참조 v2.00 기준, 원문 미열람 | [^ref-116] |
 | [VDA 5050](../../glossary/vda-5050.md) 3.0.0 | 표준 | 상위 관제–이동로봇의 주문 갱신·취소·거부. 외부 IT 시스템 인터페이스는 범위 밖 | [^ref-031] |
-| [Open-RMF](../../glossary/open-rmf.md) 작업 API(rmf_api_msgs) | 오픈소스 | 작업 요청·취소 요청·작업 상태 JSON 스키마와 작업 전달 방식 | [^ref-096][^ref-097][^ref-098][^ref-099] |
+| [Open-RMF](../../glossary/open-rmf.md) 작업 API(rmf_api_msgs) | 오픈소스 | 작업 요청·취소 요청·작업 상태 JSON 스키마와 작업 전달 방식 | [^ref-110][^ref-111][^ref-112][^ref-113] |
 
 ## 8. 대표 연구와 자료
 
@@ -98,9 +98,9 @@ ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 
 
 | 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |
 |---|---|---|
-| 상위 업무 시스템 | 작업 지시를 받아 로봇 작업(주문·작업 요청)으로 바꾸고 진행·완료·취소 결과를 작업 응답으로 되돌린다. [추정][^ref-102][^ref-060][^ref-031] | 분류 원문 9장 표의 외부 연계 항목: "수요예측, 구매, 재무, 전사 재고정책" |
+| 상위 업무 시스템 | 작업 지시를 받아 로봇 작업(주문·작업 요청)으로 바꾸고 진행·완료·취소 결과를 작업 응답으로 되돌린다. [추정][^ref-116][^ref-117][^ref-031] | 분류 원문 9장 표의 외부 연계 항목: "수요예측, 구매, 재무, 전사 재고정책" |
 
-표의 따옴표 안 문구는 분류 원문 9장 표의 셀이며 전체 경계는 [범위 경계](../../about/scope-boundary.md)에 있다. 이와 별도로, 주문을 작업대·웨이브에 배정하고 재고를 할당하는 결정은 WMS·WES 등 상위 시스템 몫이고 ROP는 그 경계에 서는 것으로 보이나, 이는 원문 9장 표의 항목이 아니라 이번 조사의 추정이다(연계 대상). [추정][^ref-102][^ref-060][^ref-031] VDA 5050은 외부 IT 시스템 인터페이스를 범위 밖으로 둔다. [사실][^ref-031] 따라서 상위 연계는 ROP 쪽에서 설계해야 할 것으로 보인다. [추정][^ref-031]
+표의 따옴표 안 문구는 분류 원문 9장 표의 셀이며 전체 경계는 [범위 경계](../../about/scope-boundary.md)에 있다. 이와 별도로, 주문을 작업대·웨이브에 배정하고 재고를 할당하는 결정은 WMS·WES 등 상위 시스템 몫이고 ROP는 그 경계에 서는 것으로 보이나, 이는 원문 9장 표의 항목이 아니라 이번 조사의 추정이다(연계 대상). [추정][^ref-116][^ref-117][^ref-031] VDA 5050은 외부 IT 시스템 인터페이스를 범위 밖으로 둔다. [사실][^ref-031] 따라서 상위 연계는 ROP 쪽에서 설계해야 할 것으로 보인다. [추정][^ref-031]
 
 다만 이 경계는 고정되지 않는다. 분류 원문은 다음과 같이 적는다.
 
@@ -148,12 +148,12 @@ flowchart LR
 
 [^ref-002]: ISA, Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems, 2025, https://www.isa.org/news-press-releases/2025/april/update-to-isa-95-standard-addresses-integration-of, 접근일 2026-09-24
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
-[^ref-096]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25
-[^ref-097]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/cancel_task_request.json, 접근일 2026-09-25
-[^ref-098]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-09-25
-[^ref-099]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25
-[^ref-100]: MESA International, MESAInternational/B2MML-BatchML — README, 미확인, https://github.com/MESAInternational/B2MML-BatchML, 접근일 2026-09-25
-[^ref-101]: MESA International, B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd, 미확인, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd, 접근일 2026-09-25
-[^ref-102]: OPC Foundation / ISA, OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4), 미확인, https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/, 접근일 2026-09-25 (원문 미열람)
-[^ref-060]: Merschformann, M. 외, Decision Rules for Robotic Mobile Fulfillment Systems, 2018-01, https://arxiv.org/abs/1801.06703, 접근일 2026-09-25 (원문 미열람)
-[^ref-103]: 씨메스(CMES Robotics), 물류 자동화 시스템을 이해하는 첫 걸음 : WES · WCS · WMS, 무엇이 다를까요?, 미확인, https://blog.cmesrobotics.ai/wes-wcs-wms, 접근일 2026-09-25 (원문 미열람)
+[^ref-110]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25
+[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/cancel_task_request.json, 접근일 2026-09-25
+[^ref-112]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-09-25
+[^ref-113]: Open Robotics, Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/task_new.html, 접근일 2026-09-25
+[^ref-114]: MESA International, MESAInternational/B2MML-BatchML — README, 미확인, https://github.com/MESAInternational/B2MML-BatchML, 접근일 2026-09-25
+[^ref-115]: MESA International, B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd, 미확인, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd, 접근일 2026-09-25
+[^ref-116]: OPC Foundation / ISA, OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4), 미확인, https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/, 접근일 2026-09-25 (원문 미열람)
+[^ref-117]: Merschformann, M. 외, Decision Rules for Robotic Mobile Fulfillment Systems, 2018-01, https://arxiv.org/abs/1801.06703, 접근일 2026-09-25 (원문 미열람)
+[^ref-118]: 씨메스(CMES Robotics), 물류 자동화 시스템을 이해하는 첫 걸음 : WES · WCS · WMS, 무엇이 다를까요?, 미확인, https://blog.cmesrobotics.ai/wes-wcs-wms, 접근일 2026-09-25 (원문 미열람)
