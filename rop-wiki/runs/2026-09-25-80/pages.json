@@ -1,0 +1,793 @@
+{
+  "run_id": "2026-09-25-80",
+  "outline": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 900,
+      "summary": "q5-01 답함, 백로그의 q5-04~q5-08 과 새 질문 q5-09·q5-10 을 열림 행으로 더했다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 5200,
+      "summary": "요소별 인식 정확도와 지도 품질은 요소 인식, 구조·그래프, 지도·정렬과 주행의 세 층으로 나눠 재는 구성이 근거가 가장 많은 것으로 보이며 이는 이 위키의 종합이다. [추정][^ref-718][^ref-720][^ref-721]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "인식·구조 지표는 선례가 있으나 세 층 구성과 운영 허용치 변환은 추정이다. [추정][^ref-718][^ref-031]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f6",
+        "f19",
+        "f20",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 500,
+      "summary": "합격 임계값 도출(q5-09)과 경로 차이 시험 세트 구성(q5-10) 2건.",
+      "planned_findings": [
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 500,
+      "summary": "평가 지표 소절만 실렸고 검증 절차·가설 판정표·실험 계획이 없어 세 조건 모두 미충족.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "section": "6. 검증 방법",
+      "budget_chars": 1600,
+      "summary": "도입 문장을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 평가 지표 소절(세 층 지표, 추정)과 ROP·연계 대상 경계를 둔다. [추정][^ref-718][^ref-721]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f6",
+        "f7",
+        "f10",
+        "f19",
+        "f20",
+        "f21",
+        "f23",
+        "f24"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q5-01 답함(3절 신설), 2절에 q5-04~q5-10 행 추가, 4·5·6·8·9절 갱신, 상태 줄 갱신(seed 페이지 전체를 content 로 보냄). 2차 수정: 6절 첫 완료 조건을 한 행·미충족으로 되돌림, 4절 결론의 '클래스별' 삭제"
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절 전체 교체: 도입 단락을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 '평가 지표 (q5-01)' 소절(세 층 지표·운영 허용치 변환·경로 차이 정의·ROP 경계, 추정 중심)을 더함, 근거 공백 문장에 태그·각주 추가",
+      "patches": [
+        {
+          "section": "6. 검증 방법",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-031",
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-109",
+              "ref-120",
+              "ref-220",
+              "ref-221",
+              "ref-222",
+              "ref-223",
+              "ref-224",
+              "ref-225",
+              "ref-226",
+              "ref-227",
+              "ref-046",
+              "ref-212",
+              "ref-213",
+              "ref-214",
+              "ref-215",
+              "ref-216",
+              "ref-217",
+              "ref-218",
+              "ref-219",
+              "ref-241",
+              "ref-105",
+              "ref-163",
+              "ref-265",
+              "ref-267",
+              "ref-268",
+              "ref-271",
+              "ref-274",
+              "ref-156",
+              "ref-157",
+              "ref-158",
+              "ref-331",
+              "ref-332",
+              "ref-333",
+              "ref-334",
+              "ref-335",
+              "ref-336",
+              "ref-338",
+              "ref-339",
+              "ref-340",
+              "ref-341",
+              "ref-342",
+              "ref-345",
+              "ref-419",
+              "ref-420",
+              "ref-421",
+              "ref-422",
+              "ref-423",
+              "ref-424",
+              "ref-425",
+              "ref-426",
+              "ref-427",
+              "ref-428",
+              "ref-429",
+              "ref-430",
+              "ref-432",
+              "ref-433",
+              "ref-434",
+              "ref-435",
+              "ref-436",
+              "ref-440",
+              "ref-441",
+              "ref-442",
+              "ref-456",
+              "ref-457",
+              "ref-458",
+              "ref-459",
+              "ref-462",
+              "ref-463",
+              "ref-536",
+              "ref-413",
+              "ref-641",
+              "ref-642",
+              "ref-228",
+              "ref-572",
+              "ref-573",
+              "ref-574",
+              "ref-229",
+              "ref-038",
+              "ref-575",
+              "ref-576",
+              "ref-315",
+              "ref-314",
+              "ref-283",
+              "ref-348",
+              "ref-461",
+              "ref-406",
+              "ref-629",
+              "ref-632",
+              "ref-153",
+              "ref-644",
+              "ref-645",
+              "ref-648",
+              "ref-270",
+              "ref-651",
+              "ref-653",
+              "ref-649",
+              "ref-569",
+              "ref-230",
+              "ref-346",
+              "ref-667",
+              "ref-286",
+              "ref-668",
+              "ref-670",
+              "ref-159",
+              "ref-162",
+              "ref-671",
+              "ref-672",
+              "ref-673",
+              "ref-687",
+              "ref-688",
+              "ref-689",
+              "ref-690",
+              "ref-692",
+              "ref-693",
+              "ref-472",
+              "ref-470",
+              "ref-718",
+              "ref-720",
+              "ref-721",
+              "ref-723",
+              "ref-724",
+              "ref-725",
+              "ref-726",
+              "ref-628",
+              "ref-722",
+              "ref-728",
+              "ref-729"
+            ]
+          },
+          "content": "\n이 절의 앞 두 소절('가설 3 판정의 비교 기준 후보', '측정 대상 후보: 반복 작업 목록')은 [단계 5. 검증 방법과 가설 판정](../tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) 조사 전의 선행 근거로 [q1-04 답](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04)(실행 2026-09-25-22)에서 확인한 것이고, '평가 지표' 소절은 단계 5의 [q5-01 답](../tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01)(실행 2026-09-25-80)의 요약이다. 검증 절차(현장 모델링 시간 단축 측정)는 q5-02 이후 실행이 채운다.\n\n### 가설 3 판정의 비교 기준 후보\n\n- EU CORDIS 기사는 FP7 과제 PAN-Robots의 반자동 3D 지도 작성·경로망 자동 설계 시스템이 AGV 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전한다. 과제 측 보고값이며 비교 조건·측정 방법은 미확인이다(기준일 2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인). [추정][^ref-265] 비교 조건 확인은 후속 질문 q5-04로 넘겼다.\n- 기준 시간 자료를 독립적으로 측정한 연구는 이번 검색 범위(리서치 25회, 검증 11회)에서 찾지 못했다. 부재가 확인된 것은 아니다. [추정][^ref-217][^ref-265][^ref-271]\n- 벤더 수치(OTTO Motors 내부 시험 50%, ScaliRo 프로젝트당 수 인일)는 측정 조건이 공개되지 않아 가설 3 판정 근거로 쓰지 않는다.\n\n### 측정 대상 후보: 반복 작업 목록\n\n확인한 자료에서 새 현장·새 제조사마다 반복되는 작업은 층마다의 지도 작성 주행, 픽업·하역·충전 위치 지정, 경로망 설계, 제조사 지도와 공통 지도의 좌표 대응, 제조사·관제 형식별 레이아웃 재입력으로 정리되며, 이 가운데 위치 지정·경로망 초안·좌표 대응이 도면 기반 자동 생성이 줄일 후보로 보인다. [추정][^ref-217][^ref-079][^ref-105][^ref-046][^ref-274][^ref-268][^ref-163] 연계 대상: 로봇 쪽 SLAM 지도 작성 주행은 분류 원문 9장의 연계 대상이므로, ROP 쪽 측정 대상은 공용 자원 등록, 좌표·층 이름 정렬, 레이아웃 전달·버전 관리 같은 설정 작업이 될 것으로 보인다. [추정][^ref-105][^ref-046]\n\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-163]: 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템, 2026, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003305667, 접근일 2026-09-25 (원문 미열람)\n\n### 평가 지표 (q5-01, 2026-09-25 기준)\n\n확인한 자료를 이 위키가 묶으면, 도면 인식과 생성 지도의 품질은 요소 인식, 공간 구조·그래프, 지도·정렬과 주행의 세 층으로 나누어 재는 구성이 근거가 가장 많은 것으로 보이며, 세 층을 한 번에 제시한 단일 출처는 없다. [추정][^ref-718][^ref-067][^ref-070][^ref-720][^ref-721][^ref-725][^ref-628][^ref-153] 이 소절은 [q5-01 답](../tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01)(실행 2026-09-25-80)의 요약이며, 문장별 상세는 단계 페이지에 있다.\n\n아래 표는 검증된 발견 사항으로 이 위키가 구성한 종합([추정])이며 출처의 표를 옮긴 것이 아니다.\n\n| 층 | 지표 후보 | 측정 주체 | 근거 |\n|---|---|---|---|\n| 1. 요소 인식 | 클래스별 정밀도·재현율·F1(IoU 0.5 초과 또는 거리 임계값 매칭), 벡터 CAD 는 파놉틱 품질, 미터 단위 모서리·문 중심 거리와 각도 오차 | ROP 쪽 | [^ref-718][^ref-067] |\n| 2. 구조·그래프 | 방 IoU, 공간 그래프의 엣지 F1·그래프 편집 거리(문·승강기 연결 포함) | ROP 쪽 | [^ref-070][^ref-720] |\n| 3. 지도·정렬 | 기준 지도 대비 지도 정확도, 목적지 대응점 잔차, 경로 차이, 도착 인정 판정 | ROP 쪽 | [^ref-153][^ref-031] |\n| 3. 주행 | 주행 성공률, SPL, 경로 이탈, 좁은 통로 통과, 그 지도 위 위치추정 오차 | 연계 대상(제조사·통합자 시험 결과 수용) | [^ref-721][^ref-725][^ref-726][^ref-628] |\n\n**근거**\n\n- Floor-SP(2019-08)는 평면도 재구성을 모서리·방·각도 세 수준의 정밀도·재현율·F1 로 평가하며, 모서리는 정답과 10픽셀 안, 각도는 모서리가 맞고 5° 미만 차이, 방은 IoU 가 임계값을 넘을 때 맞은 것으로 본다. [사실][^ref-718]\n- FloorPlanCAD(2021-05) 계열은 파놉틱 품질을 분할 품질과 인식 품질의 곱으로 정의하고, 의미 라벨이 같고 IoU 가 0.5 를 넘으면 예측 심볼을 정답과 매칭한다. [사실][^ref-067]\n- SSIG(ICCV Workshops 2023)는 평면도 구조 유사도를 IoU 와 방 연결 그래프의 그래프 편집 거리의 가중합으로 정의하고, 시험한 세 쌍 조합의 38% 넘게에서 두 지표의 순위가 반대였다고 보고한다. [사실][^ref-720]\n- 연계 대상: ISO 18646-2:2024 는 이동 서비스 로봇의 주행 성능을 자세 정확도·반복성, 장애물 감지·회피, 경로 이탈, 좁은 통로 통과, 지도 작성 정확도로 측정한다(시험 절차 세부 미확인). [사실][^ref-721] ASTM F3244(2021 개정)와 NIST 의 AGV 경로 추종 시험도 같은 로봇 쪽 주행 시험이다. [사실][^ref-723][^ref-724]\n- 경로 길이 가중 성공률(SPL)은 에피소드마다 성공 여부에 최단 경로 길이/max(실제 경로 길이, 최단 경로 길이)를 곱한 평균이다. [사실][^ref-725]\n\n**구현 가설(추정)**\n\n- 확인한 인식 지표는 이미지 픽셀 기준 임계값을 쓰므로, 축척으로 미터 단위로 바꾸고 임계값은 VDA 5050 노드 허용 편차 같은 운영 허용치에 맞춰 정해야 할 것으로 보인다. [추정][^ref-718][^ref-067][^ref-031][^ref-153]\n- '경로 차이'는 같은 출발–도착 쌍에서 도면 기반 지도와 기준 지도의 경로를 비교해 길이 비율과 지나는 공간·문·승강기 순서를 함께 재는 방식으로 정의할 수 있을 것으로 보인다. [추정][^ref-725][^ref-720]\n- 주행 시험 자체는 로봇·제조사 쪽 성능이므로 ROP 쪽 지표는 도면 인식·공간 그래프·좌표 정렬 품질과 도착 인정 판정에 한정하고, 주행 시험 결과는 제조사·통합자 시험을 받아 쓰는 경계가 될 것으로 보인다. [추정][^ref-721][^ref-723][^ref-724][^ref-031]\n\n확인한 인식 지표는 주거 평면도 기준이며 물류센터 도면에 적용한 평가는 이번 검색 범위에서 찾지 못했다(부재 확인 아님). [추정][^ref-722][^ref-729][^ref-728] 검증 절차(현장 모델링 시간 단축 측정, q5-02)와 가설 판정(q5-03)은 아직 조사하지 않았고, 합격 임계값 도출(q5-09)과 경로 차이 시험 세트 구성(q5-10)은 후속 질문으로 남는다.\n\n[^ref-718]: Chen, J., Liu, C., Wu, J., & Furukawa, Y., Floor-SP: Inverse CAD for Floorplans by Sequential Room-wise Shortest Path, 2019-08, https://arxiv.org/abs/1908.06702, 접근일 2026-09-25 (원문 미열람)\n[^ref-720]: van Engelenburg, C. 외 (caspervanengelenburg GitHub), ssig — README (SSIG: A Visually-Guided Graph Edit Distance for Floor Plan Similarity, ICCVW 2023), 2023, https://github.com/caspervanengelenburg/ssig, 접근일 2026-09-25\n[^ref-721]: ISO, ISO 18646-2:2024 - Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation, 2024-01, https://www.iso.org/standard/82643.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-723]: ASTM International, F3244 Standard Test Method for Navigation: Defined Area, 2021, https://store.astm.org/f3244-21.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-724]: Bostelman, R. V., Hong, T. H., & Cheok, G. S. (NIST), Navigation Performance Evaluation for Automated Guided Vehicles, 2015, https://www.nist.gov/publications/navigation-performance-evaluation-automated-guided-vehicles, 접근일 2026-09-25 (원문 미열람)\n[^ref-725]: Anderson, P. 외, On Evaluation of Embodied Navigation Agents, 2018-07, https://arxiv.org/abs/1807.06757, 접근일 2026-09-25 (원문 미열람)\n[^ref-726]: Kästner, L. 외, Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments, 2022-06, https://arxiv.org/abs/2206.05728, 접근일 2026-09-25 (원문 미열람)\n[^ref-628]: Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing), Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization, 2026, https://link.springer.com/article/10.1007/s12541-026-01598-2, 접근일 2026-09-25 (원문 미열람)\n[^ref-722]: KISTI ScienceON(정부 R&D 보고서), 이동/조작/HRI/통신성능 등 서비스로봇 성능평가 및 표준화 기술개발, 미확인, https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201800040065, 접근일 2026-09-25 (원문 미열람)\n[^ref-728]: Francis, A. 외, Long-Range Indoor Navigation with PRM-RL, 2019-02, https://arxiv.org/abs/1902.09458, 접근일 2026-09-25 (원문 미열람)\n[^ref-729]: HKUST Aerial Robotics Group (HKUST-Aerial-Robotics GitHub), SLABIM — README (SLABIM: A SLAM-BIM Coupled Dataset in HKUST Main Building), 2025-01-28, https://github.com/HKUST-Aerial-Robotics/SLABIM, 접근일 2026-09-25\n"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절에 실행 2026-09-25-80(단계 5, q5-01) 산출물 요약 단락 추가",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "append",
+          "content": "\n실행 2026-09-25-80(단계 5, q5-01)에서는 [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md) 3절에 요소 인식·구조·그래프·지도·정렬과 주행의 세 층 평가 지표(추정 종합, 주행 지표는 연계 대상)를 싣고, [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md) 6절에 '평가 지표' 소절을 더했다. [공간 그래프 스키마 초안](space-graph-schema-draft.md)은 변경이 없어 v1.2 를 유지했다. [질문 백로그](question-backlog.md)에는 q5-01 답함과 후속 질문 q5-09·q5-10 이 반영된다. 검증 절차(q5-02)·가설 판정표(q5-03)·실험 계획이 없어 단계 5 완료 조건은 미충족이다.\n"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 5 | q5-01 답함(요소 인식·구조·그래프·지도·정렬과 주행 세 층 평가 지표, 추정 종합), 후속 질문 2건, 1차 조건부 승인 수정 12건·2차 수정 4건 이행 | run 2026-09-25-80",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 5: q5-01 답함 — 도면 인식·지도 품질을 요소 인식·구조·그래프·지도·정렬 세 층으로 재는 지표 구성(추정)과 주행 시험 표준(연계 대상) 정리",
+    "category_recent": "2026-09-25 — 6. 지도·공간·위치 모델(건축 도면 자동 인식 트랙 단계 5): 도면 기반 지도의 품질 지표와 목적지 잔차를 노드 허용 편차로 판정하는 방법(추정) 정리, 세부영역 반영 제안",
+    "area_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 트랙 건축 도면 자동 인식 단계 5(q5-01)에서 지도 품질 지표(SLABIM 정답 자세, CAD 지도 위치추정 오차, 상대 지표의 한계)를 확인해 6·8절 반영을 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "success-weighted-by-path-length",
+      "term_ko": "경로 길이 가중 성공률",
+      "term_en": "Success weighted by Path Length (SPL)",
+      "definition": "내비게이션 에피소드마다 성공 여부에 최단 경로 길이를 실제 경로 길이(최단보다 짧으면 최단)로 나눈 비율을 곱해 평균한 지표로, 도착 여부와 경로 효율을 함께 잰다.",
+      "description": "Anderson 외(2018)의 작업반 권고가 주 지표로 제안했다. 로봇 주행 성능 지표이므로 ROP 에서는 제조사·통합자 시험 결과를 받아 쓰는 연계 대상으로 본다.",
+      "related_areas": [
+        23,
+        6
+      ],
+      "sources": [
+        "ref-725"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "panoptic-quality",
+      "term_ko": "파놉틱 품질",
+      "term_en": "Panoptic Quality (PQ)",
+      "definition": "매칭된 인스턴스의 평균 IoU(분할 품질)와 TP/(TP+0.5FP+0.5FN)(인식 품질)의 곱으로, 요소를 맞게 찾았는지와 모양을 정확히 잡았는지를 함께 재는 지표다.",
+      "description": "FloorPlanCAD 계열의 파놉틱 심볼 스포팅은 의미 라벨이 같고 IoU 가 0.5 를 넘으면 예측 심볼을 정답과 매칭한다.",
+      "related_areas": [
+        27,
+        6
+      ],
+      "sources": [
+        "ref-067"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "graph-edit-distance",
+      "term_ko": "그래프 편집 거리",
+      "term_en": "Graph Edit Distance (GED)",
+      "definition": "한 그래프를 다른 그래프로 바꾸는 노드·엣지 추가·삭제·치환의 최소 비용으로, 평면도 방 연결 그래프의 구조 차이를 재는 데 쓴다.",
+      "description": "SSIG 는 평면도 구조 유사도를 IoU 와 방 연결 그래프의 GED 가중합으로 정의한다.",
+      "related_areas": [
+        6,
+        27,
+        23
+      ],
+      "sources": [
+        "ref-720"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-718",
+      "org": "Chen, J., Liu, C., Wu, J., & Furukawa, Y.",
+      "title": "Floor-SP: Inverse CAD for Floorplans by Sequential Room-wise Shortest Path",
+      "published": "2019-08",
+      "url": "https://arxiv.org/abs/1908.06702",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 3D 스캔에서 평면도를 재구성하고 모서리·방·각도 정밀도·재현율로 평가하는 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-719",
+      "org": "Stekovic, S., Rad, M., Fraundorfer, F., & Lepetit, V.",
+      "title": "MonteFloor: Extending MCTS for Reconstructing Accurate Large-Scale Floor Plans",
+      "published": "2021-03",
+      "url": "https://arxiv.org/abs/2103.11161",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 대규모 평면도 재구성 연구로 방·모서리·각도 지표로 평가한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-720",
+      "org": "van Engelenburg, C. 외 (caspervanengelenburg GitHub)",
+      "title": "ssig — README (SSIG: A Visually-Guided Graph Edit Distance for Floor Plan Similarity, ICCVW 2023)",
+      "published": "2023",
+      "url": "https://github.com/caspervanengelenburg/ssig",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "평면도 구조 유사도를 IoU 와 그래프 편집 거리의 가중합으로 정의한 지표의 공식 저장소.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-721",
+      "org": "ISO",
+      "title": "ISO 18646-2:2024 - Robotics — Performance criteria and related test methods for service robots — Part 2: Navigation",
+      "published": "2024-01",
+      "url": "https://www.iso.org/standard/82643.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이동 서비스 로봇의 주행 성능(자세 정확도, 장애물, 경로 이탈, 좁은 통로, 지도 작성 정확도) 시험 방법 표준 2판.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-722",
+      "org": "KISTI ScienceON(정부 R&D 보고서)",
+      "title": "이동/조작/HRI/통신성능 등 서비스로봇 성능평가 및 표준화 기술개발",
+      "published": null,
+      "url": "https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO201800040065",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 서비스로봇의 위치인식·지도작성·주행경로 성능평가 기술과 표준화를 다룬 국내 R&D 보고서.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-723",
+      "org": "ASTM International",
+      "title": "F3244 Standard Test Method for Navigation: Defined Area",
+      "published": "2021",
+      "url": "https://store.astm.org/f3244-21.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. A-UGV 가 여유가 제한된 정의 영역을 지나는 능력을 시험하는 시험법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-724",
+      "org": "Bostelman, R. V., Hong, T. H., & Cheok, G. S. (NIST)",
+      "title": "Navigation Performance Evaluation for Automated Guided Vehicles",
+      "published": "2015",
+      "url": "https://www.nist.gov/publications/navigation-performance-evaluation-automated-guided-vehicles",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 다중 카메라 기준값 측정으로 AGV 경로 추종 성능을 평가하는 시험 절차와 지표를 제시한 NIST 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-725",
+      "org": "Anderson, P. 외",
+      "title": "On Evaluation of Embodied Navigation Agents",
+      "published": "2018-07",
+      "url": "https://arxiv.org/abs/1807.06757",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 내비게이션 연구의 평가 방법 합의 권고. 경로 길이 가중 성공률(SPL)을 주 지표로 제안.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-726",
+      "org": "Kästner, L. 외",
+      "title": "Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments",
+      "published": "2022-06",
+      "url": "https://arxiv.org/abs/2206.05728",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ROS 내비게이션 방식을 성공률·충돌·경로 길이·시간 등으로 비교하는 벤치마크.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-727",
+      "org": "Filatov, A. 외",
+      "title": "2D SLAM Quality Evaluation Methods",
+      "published": "2017-08",
+      "url": "https://arxiv.org/abs/1708.02354",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 같은 데이터 시퀀스의 여러 SLAM 결과를 2D 지도 분석으로 비교하는 세 상대 지표를 제시한 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-728",
+      "org": "Francis, A. 외",
+      "title": "Long-Range Indoor Navigation with PRM-RL",
+      "published": "2019-02",
+      "url": "https://arxiv.org/abs/1902.09458",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 평면도와 SLAM 지도로 만든 경로망에서 장거리 실내 주행을 평가한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-729",
+      "org": "HKUST Aerial Robotics Group (HKUST-Aerial-Robotics GitHub)",
+      "title": "SLABIM — README (SLABIM: A SLAM-BIM Coupled Dataset in HKUST Main Building)",
+      "published": "2025-01-28",
+      "url": "https://github.com/HKUST-Aerial-Robotics/SLABIM",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "설계 BIM 과 SLAM 센서 데이터를 묶은 데이터셋. 라이다–BIM 정합, BIM 위 자세 추적, 의미 지도 작성 과제와 BIM 좌표 정답 자세 제공(README 기준 ICRA 2025 채택 2025-01-28).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-063",
+      "org": "Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.",
+      "title": "CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis",
+      "published": "2019-04",
+      "url": "https://arxiv.org/abs/1904.01920",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 5,000장 평면도 데이터셋과 다중 과제 모델, 클래스별 IoU·정확도 평가.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-067",
+      "org": "Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P.",
+      "title": "FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting",
+      "published": "2021-05",
+      "url": "https://arxiv.org/abs/2105.07147",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 벡터 CAD 파놉틱 심볼 스포팅 데이터셋과 파놉틱 품질 지표.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-070",
+      "org": "Hu, S. 외",
+      "title": "Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer)",
+      "published": "2024",
+      "url": "https://github.com/SizheHu/Raster-to-Graph",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "래스터 평면도를 벽 구조 그래프로 바꾸는 방법의 공식 저장소. 엣지 F1 로 성능 보고.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-065",
+      "org": "Liu, C., Wu, J., Kohli, P., & Furukawa, Y.",
+      "title": "FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation)",
+      "published": "2017",
+      "url": "https://github.com/art-programmer/FloorplanTransformation",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "래스터 평면도의 벡터 변환 방법 공식 저장소. 약 90% 정밀도·재현율을 보고.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-628",
+      "org": "Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing)",
+      "title": "Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization",
+      "published": "2026",
+      "url": "https://link.springer.com/article/10.1007/s12541-026-01598-2",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 2D 건축 CAD 도면으로 가상 점유 격자 지도를 만들어 위치추정에 쓰고 SLAM 지도와 오차를 비교한 국내 저자 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 공식 명세. 노드 통과 조건(허용 편차)과 지도 규약 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-153",
+      "org": "Open Robotics",
+      "title": "Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람(이번 실행). 로봇 지도–RMF 좌표 변환을 층별 대응점으로 추정하고 MSE 를 기록하는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "ISO 18646-2:2024 의 지도 작성 정확도 시험은 무엇을 어떤 기준점과 절차로 측정하며, KS 로 부합화되어 국내 물류 로봇 시험에 쓰이는가?",
+      "areas": [
+        23,
+        6
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "출하",
+      "item": "제약",
+      "link": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "출하",
+      "item": "완료·인계",
+      "link": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 5 페이지 3절·4절: ISO 18646-2:2024 의 지도 작성 정확도·경로 이탈 시험 절차(기준점, 측정 방법)와 KS B ISO 18646-2 부합화 여부 — 원문 미열람으로 세부가 미확인이다",
+    "단계 5 페이지 3절: Floor-SP 와 MonteFloor 가 각각 쓰는 모서리·방·각도 매칭 규칙(방 IoU 임계값 수치 포함)을 논문별로 구분해 확인 — 이번에는 문구 출처가 구분되지 않아 교차 확인으로 보지 않았다",
+    "단계 5 q5-02: 현장 모델링 시간 단축을 수작업 대비 소요 시간·수정 횟수로 측정한 연구·사례 — 완료 조건 '평가 지표와 검증 절차' 행을 채우는 데 필요하다",
+    "단계 5 q5-03: 단계 1~4 결과로 가설 1~3 을 판정할 기준과 근거 — 가설 판정표 작성에 필요하다",
+    "국내 R&D 보고서 ref-722 의 발행일과 세부 지표(위치인식·지도작성 성능 지표 정의)",
+    "물류센터·창고 평면도에 인식 지표를 적용한 평가나 도면 기반 지도로 한 물류 로봇 주행 평가 사례 — 확인한 지표는 주거 평면도·대학·사무 건물 기준이다"
+  ],
+  "fixes_applied": [
+    "f1: '가장 가까운 하나만 참 양성으로 센다' 구절 삭제 — 단계 5 페이지 3절 요소 인식 지표에서 모서리 10픽셀·각도 5° 기준을 Floor-SP(ref-718) 기준으로 적고 방 IoU 는 수치 없이 '임계값'으로 두었으며, MonteFloor(ref-719)는 같은 세 수준 지표로 평가한다는 문장만 남겼다(아이디어 페이지 6절도 같음)",
+    "f8: '2021 개정에서 통신 장애와 경로 위 장애물을 더했다'를 '시험에 쓸 장애 유형으로 장애물과 통신 장애 두 가지를 둔다'로 고쳐 단계 5 페이지 3절에 실었다",
+    "f12: 세 지표가 같은 데이터 시퀀스의 여러 SLAM 결과를 비교할 때만 쓰는 상대 지표이며 기준 지도 없이 절대 품질을 판정하는 지표가 아니라는 한계를 같은 항목에 병기했다",
+    "f7·f8·f9·f11·f13: 단계 5 페이지 3절에서 각 항목을 '연계 대상: '으로 시작하고, 주행 시험 소절 머리에 로봇 자체 지능·제어 경계의 연계 대상임을 밝힌 뒤 ROP 는 제조사·통합자 시험 결과를 받아 쓴다는 f23 문장으로 연결했다",
+    "f19: 세 층 지표 표에서 주행 성공률·SPL·경로 이탈·좁은 통로 통과(와 위치추정 오차)를 '3. 주행 — 연계 대상(제조사·통합자 시험 결과 수용)' 행으로 분리하고, ROP 쪽 측정은 '3. 지도·정렬' 행(기준 지도 대비 지도 정확도·목적지 대응점 잔차·경로 차이·도착 인정 판정)으로 구분했으며 Mermaid 도식에도 같은 구분을 반영했다(아이디어 페이지 6절 표도 같음)",
+    "f20: '문 폭 대비 차체 여유' 예시를 삭제하고 운영 허용치 예시는 VDA 5050 노드 허용 편차만 두었다(단계 5 페이지 3절·시나리오 제약 칸, 아이디어 페이지 6절)",
+    "f22: '다음은 설명을 위한 가상의 시나리오이다. 수치는 넣지 않았다.'로 시작하고 완료·인계 칸 문장에 '이 가정 사례에서는'을 넣어 가정 사례임을 밝혔으며 수치는 쓰지 않았다",
+    "f15·f17: 새 각주를 만들지 않고 기존 ref-628·ref-153 각주 정의 줄을 재사용하고 접근일 뒤에 ' (원문 미열람)'을 붙였다",
+    "각주: ref-718·ref-719·ref-721·ref-722·ref-723·ref-724·ref-725·ref-726·ref-727·ref-728·ref-063·ref-067·ref-628·ref-153 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-720·ref-729·ref-070·ref-065(와 inbox 원문 ref-031)에는 미열람 표기를 붙이지 않았다",
+    "ref-729: 본문에 'README 기준 ICRA 2025 채택 2025-01-28'로 기준일을 적고 각주 정의와 reference_updates 의 발행일을 2025-01-28 로 두었다",
+    "단계 5 페이지 2절: 백로그의 q5-04~q5-08 을 제기 근거(백로그 origin 과 origin_run_id: f2·f21·f14·f8·f19)와 함께 '열림' 행으로 더하고, 새 질문 q5-09·q5-10 행까지 포함해 상태 줄을 '열린 질문: 9건 · 답한 질문: 1건'으로 맞췄다",
+    "새 질문 1(q5-09, 합격 임계값의 운영 허용치 도출)의 질문 끝에 '(관련: q4-12, q5-08)'을 병기해 단계 5 페이지 2·5절과 backlog_updates 에 실었다",
+    "2차: 단계 5 페이지 6절 완료 조건 첫 두 행을 트랙 개요 5절 문구 그대로 한 행('평가 지표와 검증 절차가 … \"6. 검증 방법\" 절에 실림')으로 합치고, 충족 여부 '미충족', 근거 '평가 지표 소절만 실림(실행 2026-09-25-80, 추정 중심), 검증 절차(q5-02) 미조사', 검증 판정 '미충족 · 미승인'으로 고쳤다",
+    "2차: 단계 5 페이지 4절 결론 첫 항목에서 '클래스별'을 빼 '정밀도·재현율·F1(IoU 또는 거리 임계값 매칭)'으로 고치고 [사실] 태그와 각주는 유지했다",
+    "2차: 아이디어 페이지 6절 patch 를 절 전체 replace 로 바꾸고, 첫 단락을 '앞 두 소절은 q1-04 답(실행 2026-09-25-22)의 선행 근거이고 평가 지표 소절은 q5-01 답(실행 2026-09-25-80)의 요약이며, 검증 절차는 q5-02 이후 실행이 채운다'는 내용으로 고쳤다(두 기존 소절과 각주는 그대로 유지)",
+    "2차: 아이디어 페이지 6절 '평가 지표' 소절의 '확인한 인식 지표는 주거 평면도 기준이며 … 찾지 못했다(부재 확인 아님)' 문장 끝에 [추정][^ref-722][^ref-729][^ref-728] 을 붙이고, 세 각주 정의를 소절 끝에 더하고 patch frontmatter 의 sources 에 ref-722·ref-728·ref-729 를 추가했다"
+  ],
+  "standards_updates": [
+    {
+      "name": "ISO 18646-2:2024 서비스 로봇 성능 기준과 시험 방법 — Part 2: 주행",
+      "kind": "표준",
+      "org": "ISO",
+      "url": "https://www.iso.org/standard/82643.html",
+      "related_areas": [
+        23,
+        6
+      ],
+      "summary": "이동 서비스 로봇의 주행 성능을 자세 정확도·반복성, 장애물 감지·회피, 경로 이탈, 좁은 통로 통과, 지도 작성 정확도로 측정하는 시험 방법 표준 2판(2024-01). 안전 요구사항 검증에는 쓰지 않는다(원문 미열람).",
+      "ref_id": "ref-721"
+    },
+    {
+      "name": "ASTM F3244 Standard Test Method for Navigation: Defined Area",
+      "kind": "표준",
+      "org": "ASTM International",
+      "url": "https://store.astm.org/f3244-21.html",
+      "related_areas": [
+        23
+      ],
+      "summary": "A-UGV 가 여유가 제한된 정의 영역을 지나는 능력을 물리 경계·가상 경계·바닥 표시로 만든 시험 영역에서 시험하며, 장애 유형으로 장애물과 통신 장애를 둔다(2021 개정, 원문 미열람).",
+      "ref_id": "ref-723"
+    },
+    {
+      "name": "SSIG (평면도 구조 유사도 지표)",
+      "kind": "오픈소스",
+      "org": "van Engelenburg, C. 외 (caspervanengelenburg GitHub)",
+      "url": "https://github.com/caspervanengelenburg/ssig",
+      "related_areas": [
+        6,
+        27,
+        23
+      ],
+      "summary": "평면도 구조 유사도를 IoU 와 방 연결 그래프의 그래프 편집 거리 가중합으로 정의한 지표의 공식 저장소(ICCV Workshops 2023).",
+      "ref_id": "ref-720"
+    },
+    {
+      "name": "SLABIM (SLAM–BIM 결합 데이터셋)",
+      "kind": "오픈소스",
+      "org": "HKUST Aerial Robotics Group",
+      "url": "https://github.com/HKUST-Aerial-Robotics/SLABIM",
+      "related_areas": [
+        6,
+        23
+      ],
+      "summary": "설계 BIM 과 SLAM 센서 데이터를 묶어 라이다–BIM 정합, BIM 위 자세 추적, 의미 지도 작성 과제와 BIM 좌표 정답 자세를 제공하는 데이터셋(README 기준 ICRA 2025 채택).",
+      "ref_id": "ref-729"
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md",
+    "ontology_draft_version": "1.2",
+    "backlog_updates": [
+      {
+        "id": "q5-01",
+        "status": "답함",
+        "answer_link": "docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01"
+      },
+      {
+        "id": "q5-09",
+        "status": "열림",
+        "answer_link": null,
+        "question": "요소 검출 F1·위치 오차·목적지 잔차·도착 성공률 같은 지도 품질 지표의 합격 임계값을 이미지 픽셀 기준이 아니라 물류 로봇의 노드 허용 편차(VDA 5050 allowedDeviationXY)·문 폭 대비 차체 여유 같은 운영 허용치에서 어떻게 도출하는가? (q5-01 에서 파생) (관련: q4-12, q5-08)",
+        "stage": 5,
+        "origin": "f20"
+      },
+      {
+        "id": "q5-10",
+        "status": "열림",
+        "answer_link": null,
+        "question": "도면 기반 지도와 기준 지도(측량 또는 현장 SLAM 지도)에서 같은 출발–도착 쌍으로 경로 차이(길이 비율, 지나는 공간·문·승강기 순서)를 재는 시험 세트를 물류센터에서 어떻게 구성하는가(쌍 선택, 층간 이동 포함, 제조사별 반복)? (q5-01 에서 파생)",
+        "stage": 5,
+        "origin": "f21"
+      }
+    ],
+    "log_entry": "답한 질문: q5-01(f1~f24, 세 층 지표 구성은 추정 종합) / 새 질문: q5-09(f20, 관련 q4-12·q5-08), q5-10(f21) / 온톨로지 변경: 없음(평가 지표는 공간 그래프 스키마의 개념·관계가 아니라 검증 방법이어서 제안 없음, v1.2 유지) / 완료 조건 평가: 미충족(부족: 검증 절차 q5-02 미조사, 가설 판정표 q5-03 없음, 실험 계획 없음; 평가 지표 소절만 아이디어 3. 건축 도면 자동 인식 6절에 추정 중심으로 실음) / 세부영역 반영 제안: 23. 시험·형식 검증·벤치마크 1건, 6. 지도·공간·위치 모델 2건, 27. AI·학습·적응과 모델 운영 1건(총 4건) / 다음 실행 제안: q5-02, q5-03",
+    "overview_progress": "단계 5 진행 중 — 열린 질문 9, 답함 1, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 23,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "연계 대상으로 주행 성능 시험 표준·시험법(ISO 18646-2:2024 의 자세 정확도·장애물·경로 이탈·좁은 통로·지도 작성 정확도, ASTM F3244 정의 영역 시험, NIST AGV 경로 추종 시험)과 내비게이션 지표(SPL, Arena-Bench 성공률·경로 길이 등)를 소개하고, 도면 기반 지도의 세 층 품질 지표(요소 인식·구조·그래프·지도·정렬, 추정)와 ROP 는 주행 시험 결과를 받아 쓴다는 경계(추정)를 반영 (근거 f7·f8·f9·f10·f11·f19·f23, 실행 2026-09-25-80)"
+    },
+    {
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "도면 기반 지도의 품질을 목적지 대응점 잔차가 VDA 5050 노드 허용 편차 안에 드는지로 판정하고 픽셀 기준 인식 임계값을 미터·운영 허용치로 옮기는 방법(추정), Open-RMF 층별 MSE 기록을 반영 (근거 f16·f17·f20·f22, 실행 2026-09-25-80). oq-077 근거 보강"
+    },
+    {
+      "area_no": 6,
+      "section": "8. 대표 연구와 자료",
+      "summary": "지도 품질 평가 자료로 SLABIM(BIM 좌표 정답 자세 데이터셋), 연계 대상 Lee·Woo·Shin(2026, CAD 지도 위 위치추정 RMSE), Filatov 외(2017, 같은 시퀀스 비교용 상대 지표라는 한계 병기)를 추가 (근거 f12·f14·f15, 실행 2026-09-25-80)"
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "도면 해석 모델의 평가 지표: 모서리·방·각도 정밀도·재현율·F1(Floor-SP), 파놉틱 품질(FloorPlanCAD), 클래스별 IoU(CubiCasa5K), 엣지 F1(Raster-to-Graph), IoU·그래프 편집 거리 가중합(SSIG). 분류 원문 8장 교차 규칙에 따라 적용 대상 6. 지도·공간·위치 모델과 양쪽 연결 (근거 f1·f2·f3·f4·f6, 실행 2026-09-25-80)"
+    }
+  ]
+}

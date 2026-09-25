@@ -28,6 +28,28 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-01 답함(3절 신설), 2절에 q5-04~q5-10 행 추가, 4·5·6·8·9절 갱신, 상태 줄 갱신(seed 페이지 전체를 content 로 보냄). 2차 수정: 6절 첫 완료 조건을 한 행·미충족으로 되돌림, 4절 결론의 '클래스별' 삭제 |
+| 2026-09-25-80 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: 도입 단락을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 '평가 지표 (q5-01)' 소절(세 층 지표·운영 허용치 변환·경로 차이 정의·ROP 경계, 추정 중심)을 더함, 근거 공백 문장에 태그·각주 추가 |
+| 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-80(단계 5, q5-01) 산출물 요약 단락 추가 |
+| 2026-09-25-80 | 요약 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | 건축 도면 자동 인식 단계 5: q5-01 답함(요소 인식·구조·그래프·지도·정렬과 주행 세 층 평가 지표, 추정 종합), 후속 질문 2건, 1차 조건부 승인 수정 12건·2차 수정 4건 이행 |
+| 2026-09-25-80 | 생성 | [docs/references/ref-718.md](references/ref-718.md) | 참고문헌 ref-718 등록: Floor-SP: Inverse CAD for Floorplans by Sequential Room-wise… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-719.md](references/ref-719.md) | 참고문헌 ref-719 등록: MonteFloor: Extending MCTS for Reconstructing Accurate Large… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-720.md](references/ref-720.md) | 참고문헌 ref-720 등록: ssig — README (SSIG: A Visually-Guided Graph Edit Distance f… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-721.md](references/ref-721.md) | 참고문헌 ref-721 등록: ISO 18646-2:2024 - Robotics — Performance criteria and relat… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-722.md](references/ref-722.md) | 참고문헌 ref-722 등록: 이동/조작/HRI/통신성능 등 서비스로봇 성능평가 및 표준화 기술개발 |
+| 2026-09-25-80 | 생성 | [docs/references/ref-723.md](references/ref-723.md) | 참고문헌 ref-723 등록: F3244 Standard Test Method for Navigation: Defined Area |
+| 2026-09-25-80 | 생성 | [docs/references/ref-724.md](references/ref-724.md) | 참고문헌 ref-724 등록: Navigation Performance Evaluation for Automated Guided Vehic… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-725.md](references/ref-725.md) | 참고문헌 ref-725 등록: On Evaluation of Embodied Navigation Agents |
+| 2026-09-25-80 | 생성 | [docs/references/ref-726.md](references/ref-726.md) | 참고문헌 ref-726 등록: Arena-Bench: A Benchmarking Suite for Obstacle Avoidance App… |
+| 2026-09-25-80 | 생성 | [docs/references/ref-727.md](references/ref-727.md) | 참고문헌 ref-727 등록: 2D SLAM Quality Evaluation Methods |
+| 2026-09-25-80 | 생성 | [docs/references/ref-728.md](references/ref-728.md) | 참고문헌 ref-728 등록: Long-Range Indoor Navigation with PRM-RL |
+| 2026-09-25-80 | 생성 | [docs/references/ref-729.md](references/ref-729.md) | 참고문헌 ref-729 등록: SLABIM — README (SLABIM: A SLAM-BIM Coupled Dataset in HKUST… |
+| 2026-09-25-80 | 생성 | [docs/glossary/success-weighted-by-path-length.md](glossary/success-weighted-by-path-length.md) | 용어집 항목 경로 길이 가중 성공률 |
+| 2026-09-25-80 | 생성 | [docs/glossary/panoptic-quality.md](glossary/panoptic-quality.md) | 용어집 항목 파놉틱 품질 |
+| 2026-09-25-80 | 생성 | [docs/glossary/graph-edit-distance.md](glossary/graph-edit-distance.md) | 용어집 항목 그래프 편집 거리 |
+| 2026-09-25-80 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 질문 표를 백로그 문구와 맞춤, 후속 질문 3건, 완료 조건 미충족·전환 아니오, 상태 줄 진행 중. 2차 수정: OWASP 발행일 표기 정정, 2절 표 백로그 일치(상태 줄이 H2 밖이라 전체 content 로 보냄) |
 | 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절에 사용자 확인 질문의 q4-01 답 링크와 속성 후보를 질문으로 덧붙임(개념 추가 미반영, 초안 v0.8 유지). 2차 수정: MCP 풀어쓰기·용어집 링크, 사람 참여 루프 용어집 링크 |
 | 2026-09-25-79 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '오해석 방지 확인 절차' 소절 추가(q4-01, 실행 2026-09-25-79), 머리 문장의 '확인 절차 미조사' 서술을 실행 기준과 함께 갱신, 명령 권한·제한 운영 기준 미조사 명시. 2차 수정: MCP 첫 등장 풀어쓰기·용어집 링크 |
