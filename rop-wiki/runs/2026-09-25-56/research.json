@@ -95,7 +95,7 @@
       "claim": "Kritzinger 외(2018)는 제조 분야 문헌을 디지털 모델·디지털 섀도·디지털 트윈으로 구분해 분류했고, 가장 높은 단계인 디지털 트윈을 다룬 문헌은 드물고 모델·섀도 문헌이 더 많다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-663"
+        "ref-291"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -110,7 +110,7 @@
       "claim": "분류 원문의 구분(8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험)에 문헌의 모델·섀도·트윈 구분을 맞추면, '디지털 트윈'이라는 이름이 실시간 동기화 수준을 가리키는 경우와 시나리오 실험 기능을 가리키는 경우가 섞여 쓰이므로 이 위키는 용도(현재 표현/미래 실험)로 나눠 적는 것이 맞아 보인다.",
       "tag": "의견",
       "source_ids": [
-        "ref-663",
+        "ref-291",
         "ref-664"
       ],
       "cross_checked": false,
@@ -186,7 +186,7 @@
       "claim": "Open-RMF 문서는 Gazebo·Ignition 물리 시뮬레이터를 ROS 2 와 연결해 시뮬레이션에 쓴 코드를 수정 없이 실제 시스템에서도 실행하고, 시나리오 반복·예외 상황 탐색·장시간 검증을 현장 배치 전에 할 수 있다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-667"
+        "ref-406"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -200,7 +200,7 @@
       "claim": "Open-RMF 의 building_map_generator 는 traffic_editor 로 주석한 .building.yaml 에서 Gazebo·Ignition 월드(바닥·벽 메시)와 플릿 어댑터용 주행 그래프를 함께 생성하므로, 레이아웃이 바뀌면 주석을 고쳐 시뮬레이션 월드를 다시 만들 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-667"
+        "ref-406"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -214,7 +214,7 @@
       "claim": "Open-RMF 시뮬레이션은 로봇용 slotcar 플러그인(레일식 주행과 가감속), 문·승강기 플러그인, 작업셀 적재·하역을 흉내 내는 TeleportDispenser·TeleportIngestor, Menge 기반 보행자 군중 시뮬레이션(CrowdSim), 배터리·충전기 동작 전환 도구를 제공한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-667",
+        "ref-406",
         "ref-668"
       ],
       "cross_checked": false,
@@ -229,7 +229,7 @@
       "claim": "연계 대상: Open-RMF 시뮬레이션의 로봇 모델은 레일식 주행을 흉내 내는 단순화 모델이므로, 센서 인식·로컬 회피 같은 로봇 자체 거동의 충실도는 제조사·물리 시뮬레이터 쪽에 맡기고 ROP 시뮬레이션은 플릿 조율·설비 상호작용을 실험하는 데 초점이 맞는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-667",
+        "ref-406",
         "ref-668"
       ],
       "cross_checked": false,
@@ -258,7 +258,7 @@
       "claim": "RAWSim-O 는 로봇 이동형 풀필먼트 시스템(RMFS)의 이산 사건 시뮬레이션 프레임워크로, 운영 중 생기는 여러 결정 문제의 효과를 연구하고 새 결정 방법을 끼워 넣을 수 있게 하며 2D·3D 화면과 로봇 위치 히트맵을 제공한다(C#, GPL v3).",
       "tag": "사실",
       "source_ids": [
-        "ref-669"
+        "ref-101"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -393,7 +393,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-398",
-        "ref-669",
+        "ref-101",
         "ref-666",
         "ref-664"
       ],
@@ -426,11 +426,11 @@
       "tag": "추정",
       "source_ids": [
         "ref-241",
-        "ref-667"
+        "ref-406"
       ],
       "cross_checked": false,
       "confidence": "low",
-      "evidence_excerpt": "계획 입력용 자동 생성(ref-241)과, 주석한 평면도에서 시뮬레이션 월드를 만드는 Open-RMF 흐름(ref-667)이 모두 실험용 모델의 초기값 생성 단계",
+      "evidence_excerpt": "계획 입력용 자동 생성(ref-241)과, 주석한 평면도에서 시뮬레이션 월드를 만드는 Open-RMF 흐름(ref-406)이 모두 실험용 모델의 초기값 생성 단계",
       "as_of": "2023",
       "flow_step": null,
       "flow_item": null,
@@ -441,7 +441,7 @@
       "claim": "ROP 가 직접 맡을 시뮬레이션 몫은 자신의 작업 배정·교통·충전 정책과 설비 요청(문·승강기)을 시뮬레이션된 플릿·설비에 대해 그대로 실행해 보는 것으로 보이며, Open-RMF 처럼 같은 코드를 시뮬레이션과 실제에 쓰는 구조가 그 근거가 된다.",
       "tag": "추정",
       "source_ids": [
-        "ref-667",
+        "ref-406",
         "ref-668"
       ],
       "cross_checked": false,
@@ -472,7 +472,7 @@
       "claim": "Open-RMF 시뮬레이션이 강조하는 시나리오 반복·예외 상황 탐색은 23. 시험·형식 검증·벤치마크의 회귀·장애 시험과 환경을 공유하므로, 22. 시뮬레이션·예측용 디지털 트윈은 운영 정책·수요 변화의 효과 예측, 23. 시험·형식 검증·벤치마크는 변경 후 동작 확인이라는 목적으로 나누는 것이 분류 원문 정의에 맞아 보인다.",
       "tag": "의견",
       "source_ids": [
-        "ref-667"
+        "ref-406"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -544,7 +544,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-663",
+      "id": "ref-291",
       "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
       "title": "Digital Twin in manufacturing: A categorical literature review and classification",
       "published": "2018",
@@ -604,7 +604,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-667",
+      "id": "ref-406",
       "org": "Open Robotics",
       "title": "Simulation - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -634,7 +634,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-669",
+      "id": "ref-101",
       "org": "Merschformann, M. (merschformann GitHub)",
       "title": "RAWSim-O — A simulation framework for Robotic Mobile Fulfillment Systems (README)",
       "published": null,
@@ -831,6 +831,6 @@
       "queries": 23,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 ref-667(Open-RMF 시뮬레이션 장, 미러 목록 경로), ref-668(rmf_simulation), ref-669(RAWSim-O), ref-670(OFacT) 4건이며 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 23회/30, 신규 출처 15건/15(ref-659~ref-673, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 23247-1 정의 원문, 물류 디지털 트윈 대규모 사례(Ashrafian·Pedersen 2023), 데이터 기반 시뮬레이션 모델 자동 생성 검토 논문은 출처로 넣지 않음. 재사용 4건: ref-398·ref-402·ref-267(2026-09-25-55 브리프 값 사용), ref-241(입력에 참고문헌 목록 값이 없어 검색으로 확인한 값으로 기재). 트랙 반영 제안 1건(2026-09-25-19, floorplan-recognition 단계 1, 8절)은 f26(사실)·f27(추정)으로 조사해 반영을 제안. 교차 확인은 f2 1건뿐. 한국 자료: KS X ISO 23247(ref-659), 국표원 발표 기사(ref-662), 국내 연구(ref-402), CJ대한통운 보도자료(ref-672, 벤더 주장). 한국어 검색에서 나온 업체 블로그는 출처로 쓰지 않음. 27. AI·학습·적응과 모델 운영 연결은 f23·f24 벤더 주장뿐이라 교차 규칙 대상(5·21·6·13·19)에 직접 해당하는 근거는 없음. 정정 요청 없음, 대상 영역 열린 질문 0건, 해결 제안 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처는 ref-406(Open-RMF 시뮬레이션 장, 미러 목록 경로), ref-668(rmf_simulation), ref-101(RAWSim-O), ref-670(OFacT) 4건이며 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 23회/30, 신규 출처 15건/15(ref-659~ref-673, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 23247-1 정의 원문, 물류 디지털 트윈 대규모 사례(Ashrafian·Pedersen 2023), 데이터 기반 시뮬레이션 모델 자동 생성 검토 논문은 출처로 넣지 않음. 재사용 4건: ref-398·ref-402·ref-267(2026-09-25-55 브리프 값 사용), ref-241(입력에 참고문헌 목록 값이 없어 검색으로 확인한 값으로 기재). 트랙 반영 제안 1건(2026-09-25-19, floorplan-recognition 단계 1, 8절)은 f26(사실)·f27(추정)으로 조사해 반영을 제안. 교차 확인은 f2 1건뿐. 한국 자료: KS X ISO 23247(ref-659), 국표원 발표 기사(ref-662), 국내 연구(ref-402), CJ대한통운 보도자료(ref-672, 벤더 주장). 한국어 검색에서 나온 업체 블로그는 출처로 쓰지 않음. 27. AI·학습·적응과 모델 운영 연결은 f23·f24 벤더 주장뿐이라 교차 규칙 대상(5·21·6·13·19)에 직접 해당하는 근거는 없음. 정정 요청 없음, 대상 영역 열린 질문 0건, 해결 제안 없음."
   }
 }
