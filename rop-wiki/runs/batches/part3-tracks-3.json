@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 03:31:37",
+  "updated": "2026-09-25 03:34:42",
   "concurrency": 3,
   "items": [
     {
@@ -136,13 +136,18 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #5 q2-01"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-28",
           "started": "2026-09-25 03:10:24",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 03:33:08",
+          "published_at": "2026-09-25 03:34:40",
+          "cost_usd": 14.7142,
+          "duration_sec": 1414.5,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-28"
@@ -205,9 +210,16 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #6 q2-02"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-36",
+          "started": "2026-09-25 03:34:42",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-36"
     },
     {
       "index": 8,
