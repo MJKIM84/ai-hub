@@ -28,6 +28,32 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-34 | 갱신 | [docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 영역 심화: 섹션 3~11 신규 작성(4·6·8·11절은 주제 페이지로 분리), 2차 수정 지시 4건 반영(9절 경계 칸, 10절 태그, 5절 시작 조건·제약 칸) |
+| 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s6.md](topics/2026/2026-09-25-area14-s6.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "6. 대표 접근법과 기술" 절(1,504자)을 옮겼다 |
+| 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s4.md](topics/2026/2026-09-25-area14-s4.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 |
+| 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s8.md](topics/2026/2026-09-25-area14-s8.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "8. 대표 연구와 자료" 절(904자)을 옮겼다 |
+| 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s11.md](topics/2026/2026-09-25-area14-s11.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "11. 열린 질문" 절(865자)을 옮겼다 |
+| 2026-09-25-34 | 요약 | [docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 14. 작업 순서·스케줄링: 영역 심화로 3~11절 초안 작성(신규 출처 15건, 재사용 6건). ref-376 은 2026-09-25-33 브리프의 ref-656 과 같은 URL(task.html)이라 중복 등록 가능성 있음 |
+| 2026-09-25-34 | 생성 | [docs/references/ref-376.md](references/ref-376.md) | 참고문헌 ref-376 등록: Tasks in RMF (task) - Programming Multiple Robots with ROS 2 |
+| 2026-09-25-34 | 생성 | [docs/references/ref-377.md](references/ref-377.md) | 참고문헌 ref-377 등록: rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp |
+| 2026-09-25-34 | 생성 | [docs/references/ref-378.md](references/ref-378.md) | 참고문헌 ref-378 등록: rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hp… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-379.md](references/ref-379.md) | 참고문헌 ref-379 등록: OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipe… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-380.md](references/ref-380.md) | 참고문헌 ref-380 등록: Design and control of warehouse order picking: A literature… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-381.md](references/ref-381.md) | 참고문헌 ref-381 등록: Parts-to-picker based order processing in a rack-moving mobi… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-382.md](references/ref-382.md) | 참고문헌 ref-382 등록: Warehousing in the e-commerce era: A survey |
+| 2026-09-25-34 | 생성 | [docs/references/ref-383.md](references/ref-383.md) | 참고문헌 ref-383 등록: A taxonomy for task allocation problems with temporal and or… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-384.md](references/ref-384.md) | 참고문헌 ref-384 등록: Joint order assignment and picking station scheduling in KIV… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-385.md](references/ref-385.md) | 참고문헌 ref-385 등록: Manual order consolidation with put walls: the batched order… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-386.md](references/ref-386.md) | 참고문헌 ref-386 등록: Intralogistics synchronization in robotic forward-reserve wa… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-387.md](references/ref-387.md) | 참고문헌 ref-387 등록: 물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구 |
+| 2026-09-25-34 | 생성 | [docs/references/ref-388.md](references/ref-388.md) | 참고문헌 ref-388 등록: 복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링 |
+| 2026-09-25-34 | 생성 | [docs/references/ref-389.md](references/ref-389.md) | 참고문헌 ref-389 등록: Optimal Multi-Agent Path Finding for Precedence Constrained… |
+| 2026-09-25-34 | 생성 | [docs/references/ref-390.md](references/ref-390.md) | 참고문헌 ref-390 등록: rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hp… |
+| 2026-09-25-34 | 생성 | [docs/glossary/order-batching.md](glossary/order-batching.md) | 용어집 항목 주문 배치 |
+| 2026-09-25-34 | 생성 | [docs/glossary/precedence-constraint.md](glossary/precedence-constraint.md) | 용어집 항목 선후 제약 |
+| 2026-09-25-34 | 생성 | [docs/glossary/time-window.md](glossary/time-window.md) | 용어집 항목 시간창 |
+| 2026-09-25-34 | 생성 | [docs/glossary/put-wall.md](glossary/put-wall.md) | 용어집 항목 풋월 |
+| 2026-09-25-34 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-32 | 갱신 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
 | 2026-09-25-32 | 요약 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
 | 2026-09-25-31 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |

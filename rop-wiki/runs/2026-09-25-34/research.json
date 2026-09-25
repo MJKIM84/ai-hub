@@ -32,7 +32,7 @@
       "claim": "주문 피킹은 대부분 창고에서 가장 노동집약적이고 비용이 큰 활동으로 알려져 있으며, 그 비용은 창고 운영비의 최대 55% 로 추정되고, 배치·구역화·경로·보관 배정이 주요 설계·통제 결정 문제로 다뤄진다.",
       "tag": "사실",
       "source_ids": [
-        "ref-682"
+        "ref-380"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -47,7 +47,7 @@
       "claim": "이커머스 창고는 주문 줄이 적은 시간 임박 주문을 대량으로 처리해야 하며, 로봇·자동 피킹 작업대 같은 자동화와 함께 동적 주문 처리·배치·구역화·분류 시스템 같은 조직 적응이 쓰인다고 조사 논문이 정리한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-684"
+        "ref-382"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -62,7 +62,7 @@
       "claim": "로봇이 선반(랙)을 작업대로 옮기는 부품-작업자 방식 창고에서 작업대의 주문 배치·순서와 그에 맞물린 랙 도착 순서를 함께 정하는 문제가 연구되었고, 저자 계산 실험에서 최적화된 주문 처리는 현장에서 흔한 단순 규칙보다 필요한 로봇 대수를 절반 넘게 줄였다.",
       "tag": "사실",
       "source_ids": [
-        "ref-683"
+        "ref-381"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -77,7 +77,7 @@
       "claim": "작업대가 여럿인 KIVA 방식 창고에서 주문을 작업대에 할당하고 작업대별 주문·랙 처리 순서를 함께 정하는 모델이 제안되었고, 저자 실험에서 랙 방문 수를 규칙 기반 탐욕 정책보다 3분의 1 넘게, 작업대별 독립 스케줄링보다 5분의 1 넘게 줄였다.",
       "tag": "사실",
       "source_ids": [
-        "ref-686"
+        "ref-384"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -92,7 +92,7 @@
       "claim": "배치·구역 피킹 뒤에는 고객 주문별 통합이 필요하며, 풋월(put wall) 수동 통합에서 자동창고의 빈 방출 순서를 최적화해 주문 완료 시간을 줄이고 포장 작업자의 유휴 대기를 줄이는 문제가 단일 기계 스케줄링과 가까운 문제로 정식화되었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-687"
+        "ref-385"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -107,7 +107,7 @@
       "claim": "로봇 전방-예비(forward-reserve) 창고에서 배송 요구를 조건으로 수동 피킹과 로봇 분류 작업을 동기화하는 문제가 제안되었고, 저자 실험에서 작업 완료 시간(makespan)과 전방 구역 면적이 줄었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-688"
+        "ref-386"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -122,7 +122,7 @@
       "claim": "국내 연구(신희철 외, 2024)는 물류센터 피킹 스케줄링을 분배·포장까지 포함한 주문 처리 전체 관점에서 다루었고, 배치 피킹이 오더 피킹보다 분배·포장 작업시간 절감에 긍정적 영향을 준다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-689"
+        "ref-387"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -137,7 +137,7 @@
       "claim": "국내 대한산업공학회지에 복수 포장대와 피킹-패킹 전환 정책(작업자가 피킹과 포장 사이를 옮겨 가는 정책)을 운영하는 물류센터의 작업자 스케줄링을 다룬 연구(2025)가 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-690"
+        "ref-388"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -152,7 +152,7 @@
       "claim": "Nunes 외(2017)는 시간·순서 제약이 있는 다중 로봇 작업 배정(MRTA/TOC)의 분류를 제안했으며, 시간 제약은 작업이 실행되어야 하는 시간창으로 표현되고 이 문제군은 차량 경로 문제·잡숍 스케줄링과 관련된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-685"
+        "ref-383"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -167,7 +167,7 @@
       "claim": "선후 제약 다중 에이전트 경로 찾기(PC-MAPF)는 작업 사이에 'ti 가 끝나야 tj 가 시작한다'는 선후 제약을 두는 확장으로, 여러 로봇의 협업 픽업이나 입력 자원이 먼저 도착해야 하는 창고 조립 작업에서 생기며, PC-CBS 가 작업 완료 시간 최적 해를 찾는다고 제안된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-691"
+        "ref-389"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -182,8 +182,8 @@
       "claim": "작업 간 선후 의존이 있으면 배정·시간 순서·충돌 없는 경로가 서로 강하게 얽히므로, 14. 작업 순서·스케줄링은 13. 작업 배정 — MRTA와 15. 다중 로봇 경로·교통 관리 — MAPF와 분리해 풀기 어려운 경우가 생길 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-691",
-        "ref-685"
+        "ref-389",
+        "ref-383"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -226,8 +226,8 @@
       "claim": "Open-RMF 에서는 디스패처가 새 작업 요청을 BidNotice 로 모든 플릿 어댑터에 알리고, 처리할 수 있는 플릿이 비용을 담은 BidProposal 을 보내면 이를 비교해 낙찰 플릿에 DispatchRequest 를 보내며, 평가 방식(가장 빨리 끝내기·최소 비용 등)은 설정할 수 있고 기본값은 QuickestFinishEvaluator 이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-678",
-        "ref-680"
+        "ref-376",
+        "ref-378"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -241,8 +241,8 @@
       "claim": "Open-RMF 플릿 어댑터는 rmf_task 의 TaskPlanner 로 새 요청을 로봇 일정에 어떻게 넣을지 정하며, 배터리가 모자라면 충전 작업을 일정에 끼워 넣고, 탐욕 방식(빠르나 최적 보장 없음)과 A* 기반 방식(최적 보장, 더 오래 걸림) 중에서 고를 수 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-678",
-        "ref-679"
+        "ref-376",
+        "ref-377"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -256,7 +256,7 @@
       "claim": "Open-RMF rmf_task 의 BinaryPriorityScheme 은 요청에 높음·낮음 두 단계 우선순위만 부여하며, 현재 구현에서 낮음 우선순위는 빈 값(nullptr)으로 반환된다.",
       "tag": "사실",
       "source_ids": [
-        "ref-692"
+        "ref-390"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -284,7 +284,7 @@
       "claim": "제약 프로그래밍 해법기 OR-Tools CP-SAT 은 작업을 시작·길이·끝이 'start + size == end' 로 묶인 구간 변수로 두고, 공용 자원의 겹침 금지(NoOverlap), 실행 여부를 리터럴로 정하는 선택 구간, 시작·끝 사이 선형 부등식으로 쓰는 선후 관계로 스케줄링 문제를 표현한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-681"
+        "ref-379"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -299,7 +299,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-125",
-        "ref-692"
+        "ref-390"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -358,7 +358,7 @@
       "claim": "Open-RMF 의 배정은 플릿 단위 입찰과 플릿 안 일정 계획으로 이루어지고 요청 스키마에 작업 간 선후 필드가 없으므로, 제조사가 다른 플릿 사이의 선후·동기화(예: 피킹 로봇 완료 뒤 운반 로봇 출발)는 ROP 가 작업 흐름 수준에서 관리해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-678",
+        "ref-376",
         "ref-125",
         "ref-117"
       ],
@@ -375,7 +375,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-125",
-        "ref-688"
+        "ref-386"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -390,9 +390,9 @@
       "claim": "분류 원문 질문에 대해, 연구들은 피킹 작업대의 주문·랙 순서를 정할 때 뒤 공정(통합·포장)의 주문 완료 시간과 작업자 대기를 목적에 넣는 방식으로 피킹·운반·포장의 대기를 줄이려 하므로, ROP 의 순서 결정도 포장대 도착 순서를 기준 제약으로 삼는 형태가 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-687",
-        "ref-683",
-        "ref-689"
+        "ref-385",
+        "ref-381",
+        "ref-387"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -495,7 +495,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-678",
+      "id": "ref-376",
       "org": "Open Robotics",
       "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -510,7 +510,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-679",
+      "id": "ref-377",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
       "published": null,
@@ -525,7 +525,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-680",
+      "id": "ref-378",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp",
       "published": null,
@@ -540,7 +540,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-681",
+      "id": "ref-379",
       "org": "Google (google/or-tools GitHub)",
       "title": "OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver)",
       "published": null,
@@ -555,7 +555,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-682",
+      "id": "ref-380",
       "org": "de Koster, R., Le-Duc, T., & Roodbergen, K. J.",
       "title": "Design and control of warehouse order picking: A literature review",
       "published": "2007",
@@ -570,7 +570,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-683",
+      "id": "ref-381",
       "org": "Boysen, N., Briskorn, D., & Emde, S.",
       "title": "Parts-to-picker based order processing in a rack-moving mobile robots environment",
       "published": "2017",
@@ -585,7 +585,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-684",
+      "id": "ref-382",
       "org": "Boysen, N., de Koster, R., & Weidinger, F.",
       "title": "Warehousing in the e-commerce era: A survey",
       "published": "2019",
@@ -600,7 +600,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-685",
+      "id": "ref-383",
       "org": "Nunes, E., Manner, M., Mitiche, H., & Gini, M.",
       "title": "A taxonomy for task allocation problems with temporal and ordering constraints",
       "published": "2017",
@@ -615,7 +615,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-686",
+      "id": "ref-384",
       "org": "Yang, X., Hua, G., Zhang, L., Cheng, T. C. E., & Choi, T. M.",
       "title": "Joint order assignment and picking station scheduling in KIVA warehouses with multiple stations",
       "published": "2021-08",
@@ -630,7 +630,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-687",
+      "id": "ref-385",
       "org": "Boysen, N., Stephan, K., & Weidinger, F.",
       "title": "Manual order consolidation with put walls: the batched order bin sequencing problem",
       "published": "2019",
@@ -645,7 +645,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-688",
+      "id": "ref-386",
       "org": "Jiang, M., & Huang, G. Q.",
       "title": "Intralogistics synchronization in robotic forward-reserve warehouses for e-commerce last-mile delivery",
       "published": "2022",
@@ -660,7 +660,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-689",
+      "id": "ref-387",
       "org": "신희철, 이강현, 방선호, 신광섭(한국빅데이터학회 학회지)",
       "title": "물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구",
       "published": "2024",
@@ -675,7 +675,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-690",
+      "id": "ref-388",
       "org": "Tran Bo Tao Huong, 이광헌, 홍순도(대한산업공학회지)",
       "title": "복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링",
       "published": "2025",
@@ -690,7 +690,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-691",
+      "id": "ref-389",
       "org": "arXiv 2202.10449 저자(미확인)",
       "title": "Optimal Multi-Agent Path Finding for Precedence Constrained Planning Tasks",
       "published": "2022-02",
@@ -705,7 +705,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-692",
+      "id": "ref-390",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp",
       "published": null,
@@ -786,6 +786,6 @@
       "queries": 19,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-110·ref-117·ref-125, 신규 ref-678·ref-679·ref-680·ref-681·ref-692. rmf-core.md(ref-004)도 열었으나 배정 관련 내용이 없어 쓰지 않았다. priority_description_Binary.json 은 404 로 열지 못했다. 나머지 신규 10건(ref-682~ref-691)과 재사용 ref-006·ref-133·ref-134 는 원문 미열람이라 신뢰도 상한 medium. 모든 finding 신뢰도 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 15건/15(ref-678~ref-692, 예약 구간 안), 재사용 6건. 신규 출처 예산 도달로 Ulusoy·Bilge 의 기계·AGV 동시 스케줄링 고전 연구(검증된 URL 미확보)와 주문 배치 분류 검토(EJOR 2023, 저자 미확인)는 넣지 않았다. 한국어 검색 3회에서 국내 학술 자료 2건(ref-689·ref-690)을 찾았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음(강화학습 기반 배치·순서 연구가 검색에 보였으나 출처로 넣지 않음). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 기존 oq-013(의존 유형 창고 적용)·oq-019(출고 우선순위의 Open-RMF 반영)는 관련 근거(f12, f13·f16·f19)가 늘었으나 해결되지 않았다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-110·ref-117·ref-125, 신규 ref-376·ref-377·ref-378·ref-379·ref-390. rmf-core.md(ref-004)도 열었으나 배정 관련 내용이 없어 쓰지 않았다. priority_description_Binary.json 은 404 로 열지 못했다. 나머지 신규 10건(ref-380~ref-389)과 재사용 ref-006·ref-133·ref-134 는 원문 미열람이라 신뢰도 상한 medium. 모든 finding 신뢰도 medium 이하, 교차 확인 0건. 검색 19회/30, 신규 출처 15건/15(ref-376~ref-390, 예약 구간 안), 재사용 6건. 신규 출처 예산 도달로 Ulusoy·Bilge 의 기계·AGV 동시 스케줄링 고전 연구(검증된 URL 미확보)와 주문 배치 분류 검토(EJOR 2023, 저자 미확인)는 넣지 않았다. 한국어 검색 3회에서 국내 학술 자료 2건(ref-387·ref-388)을 찾았다. 27. AI·학습·적응과 모델 운영 관련 finding 없음(강화학습 기반 배치·순서 연구가 검색에 보였으나 출처로 넣지 않음). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 기존 oq-013(의존 유형 창고 적용)·oq-019(출고 우선순위의 Open-RMF 반영)는 관련 근거(f12, f13·f16·f19)가 늘었으나 해결되지 않았다."
   }
 }

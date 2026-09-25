@@ -155,6 +155,10 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 14. 작업 순서·스케줄링 — 대표 연구와 자료: topics/2026/2026-09-25-area14-s8.md
+      - 14. 작업 순서·스케줄링 — 대표 접근법과 기술: topics/2026/2026-09-25-area14-s6.md
+      - 14. 작업 순서·스케줄링 — 핵심 개념과 용어: topics/2026/2026-09-25-area14-s4.md
+      - 14. 작업 순서·스케줄링 — 열린 질문: topics/2026/2026-09-25-area14-s11.md
       - 12. 명령·작업 실행의 신뢰성 — 대표 연구와 자료: topics/2026/2026-09-25-area12-s8.md
       - 12. 명령·작업 실행의 신뢰성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area12-s7.md
       - 12. 명령·작업 실행의 신뢰성 — 대표 접근법과 기술: topics/2026/2026-09-25-area12-s6.md
@@ -264,9 +268,11 @@ nav:
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
+    - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
     - 스킬 (Skill): glossary/skill.md
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
+    - 시간창 (Time Window): glossary/time-window.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
@@ -288,6 +294,7 @@ nav:
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
     - 정보 나이 (Age of Information (AoI)): glossary/age-of-information.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
+    - 주문 배치 (Order Batching): glossary/order-batching.md
     - 지도 정합 (Map Alignment): glossary/map-alignment.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
@@ -296,6 +303,7 @@ nav:
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
     - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
+    - 풋월 (Put Wall): glossary/put-wall.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
@@ -678,6 +686,21 @@ nav:
     - ref-373 — Sagas: references/ref-373.md
     - 'ref-374 — Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2': references/ref-374.md
     - 'ref-375 — Benchmarking Message Brokers for IoT Edge Computing: A Comprehensive Performance Study': references/ref-375.md
+    - ref-376 — Tasks in RMF (task) - Programming Multiple Robots with ROS 2: references/ref-376.md
+    - ref-377 — rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp: references/ref-377.md
+    - ref-378 — rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hpp: references/ref-378.md
+    - ref-379 — OR-Tools — ortools/sat/docs/scheduling.md (Scheduling recipes for the CP-SAT solver): references/ref-379.md
+    - 'ref-380 — Design and control of warehouse order picking: A literature review': references/ref-380.md
+    - ref-381 — Parts-to-picker based order processing in a rack-moving mobile robots environment: references/ref-381.md
+    - 'ref-382 — Warehousing in the e-commerce era: A survey': references/ref-382.md
+    - ref-383 — A taxonomy for task allocation problems with temporal and ordering constraints: references/ref-383.md
+    - ref-384 — Joint order assignment and picking station scheduling in KIVA warehouses with multiple stations: references/ref-384.md
+    - 'ref-385 — Manual order consolidation with put walls: the batched order bin sequencing problem': references/ref-385.md
+    - ref-386 — Intralogistics synchronization in robotic forward-reserve warehouses for e-commerce last-mile delivery: references/ref-386.md
+    - ref-387 — 물류센터 생산성 향상을 위한 피킹스케줄링 문제에 관한 연구: references/ref-387.md
+    - ref-388 — 복수 포장대와 피킹-패킹 전환 정책을 운영하는 물류센터에서의 작업자 스케줄링: references/ref-388.md
+    - ref-389 — Optimal Multi-Agent Path Finding for Precedence Constrained Planning Tasks: references/ref-389.md
+    - ref-390 — rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp: references/ref-390.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md

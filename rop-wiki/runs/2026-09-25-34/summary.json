@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-34",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 14,
+    "area_name": "14. 작업 순서·스케줄링",
+    "category": "D. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 4,
+  "pages_updated": 1,
+  "new_sources": 15,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 19,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1209.4,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 14. 작업 순서·스케줄링 | 영역 심화로 3~11절 초안 작성(신규 출처 15건, 재사용 6건). ref-376 은 2026-09-25-33 브리프의 ref-656 과 같은 URL(task.html)이라 중복 등록 가능성 있음 | run 2026-09-25-34",
+  "notes": [
+    "참고문헌 생성: references/ref-376.md",
+    "참고문헌 생성: references/ref-377.md",
+    "참고문헌 생성: references/ref-378.md",
+    "참고문헌 생성: references/ref-379.md",
+    "참고문헌 생성: references/ref-380.md",
+    "참고문헌 생성: references/ref-381.md",
+    "참고문헌 생성: references/ref-382.md",
+    "참고문헌 생성: references/ref-383.md",
+    "참고문헌 생성: references/ref-384.md",
+    "참고문헌 생성: references/ref-385.md",
+    "참고문헌 생성: references/ref-386.md",
+    "참고문헌 생성: references/ref-387.md",
+    "참고문헌 생성: references/ref-388.md",
+    "참고문헌 생성: references/ref-389.md",
+    "참고문헌 생성: references/ref-390.md",
+    "용어집 생성: glossary/order-batching.md",
+    "용어집 생성: glossary/precedence-constraint.md",
+    "용어집 생성: glossary/time-window.md",
+    "용어집 생성: glossary/put-wall.md"
+  ],
+  "counts": {
+    "create": 4,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 15,
+    "standards": 2,
+    "open_questions": 3,
+    "flow_cells": 11,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 12:50:30 KST",
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 1018000,
+    "cache_read_input_tokens": 4014039,
+    "output_tokens": 133241,
+    "cost_usd": 12.5118,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.9056,
+        "output_tokens": 31070,
+        "cache_read_input_tokens": 2717858,
+        "cache_creation_input_tokens": 148083
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1161,
+        "output_tokens": 14012,
+        "cache_read_input_tokens": 997549,
+        "cache_creation_input_tokens": 167566
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.442,
+        "output_tokens": 73942,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 367239
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.9634,
+        "output_tokens": 13225,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 333553
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 8,
+  "cross_checked_findings": 0
+}
