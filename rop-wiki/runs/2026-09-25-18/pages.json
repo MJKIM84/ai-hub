@@ -8,6 +8,7 @@
       "summary": "확인한 로봇·설비 인터페이스는 시각과 주기 발행 장치만 주고 대상별 허용 경과 시간은 정하지 않으므로, 이 위키는 ROP가 그 판단 규칙을 가져야 할 것으로 본다. [추정][^ref-031][^ref-184]",
       "planned_findings": [
         "f1",
+        "f6",
         "f8",
         "f13",
         "f20",
@@ -46,7 +47,8 @@
         "f13",
         "f14",
         "f16",
-        "f22"
+        "f22",
+        "f31"
       ]
     },
     {
@@ -150,43 +152,43 @@
       "path": "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 섹션 3~11 신규 작성(분량 초과 절은 주제 페이지로 분리하고 요약·링크를 남김), 페이지 상태 자동 영역 표식 추가, 프런트매터 related_areas·tags·sources·confidence 채움"
+      "diff_summary": "영역 심화: 섹션 3~11 신규 작성(분량 초과 절은 주제 페이지로 분리하고 요약·링크를 남김), 페이지 상태 자동 영역 표식 추가, 프런트매터 채움. 2차 수정: 3절 DoorState 사실·추정 분리, 5절 수행 자원 칸 범위 판단 분리, 7절 요약 문장이 주제 페이지 표를 가리키도록 수정"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,700자)을 옮겼다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절을 옮겼다. 2차 수정: 비교표 Open-RMF 행 출처 칸에서 인용 없는 ref-004 제거"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s6.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"6. 대표 접근법과 기술\" 절(1,644자)을 옮겼다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"6. 대표 접근법과 기술\" 절을 옮겼다. 2차 수정: Perpetua 적용 범위 [의견] 문장에서 출처 각주 제거"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s4.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"4. 핵심 개념과 용어\" 절(1,467자)을 옮겼다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"4. 핵심 개념과 용어\" 절을 옮겼다"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s11.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"11. 열린 질문\" 절(1,104자)을 옮겼다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"11. 열린 질문\" 절을 옮겼다"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s8.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"8. 대표 연구와 자료\" 절(1,046자)을 옮겼다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"8. 대표 연구와 자료\" 절을 옮겼다"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area08-s10.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(860자)을 옮겼다. 본문 연결 목록의 링크 8개를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다"
+      "diff_summary": "자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절을 옮겼다. 연결 목록 링크를 주제 페이지 위치 기준 경로로 고쳤다"
     }
   ],
   "changelog_entry": "2026-09-25 | 8. 실시간 세계 상태·데이터 일관성 | 영역 심화: 섹션 3~11 신규 작성(시각·품질 표시, 오래된 상태 처리, 정정 이력, 22. 시뮬레이션·예측용 디지털 트윈과의 구분), 신규 출처 15건 인용, 열린 질문 4건 제기 | run 2026-09-25-18",
@@ -285,7 +287,10 @@
       "accessed": "2026-09-25",
       "summary": "VDA 5050 공식 명세(main 은 3.0.0 판). 상태 발행 조건(사건 발생 시와 최소 30초마다), connection 토픽과 last will, 토픽별 MQTT QoS 를 확인했다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -299,7 +304,10 @@
       "accessed": "2026-09-25",
       "summary": "CBV 2.0 어휘의 온톨로지 원본. 오류 사유 어휘 did_not_occur·incorrect_data 를 확인했다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md"
       ]
     },
     {
@@ -313,7 +321,11 @@
       "accessed": "2026-09-25",
       "summary": "EPCIS 2.0 온톨로지 원본. eventTime·recordTime·eventTimeZoneOffset 과 오류 선언(declarationTime·reason·correctiveEventIDs) 정의를 확인했다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -327,7 +339,9 @@
       "accessed": "2026-09-25",
       "summary": "VDA 5050 상태 메시지 JSON 스키마(main). 시각 형식, 마지막 노드, 위치추정 여부·품질·편차 범위, 지도 id, 적재물, 운전·안전 상태 필드를 확인했다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -341,7 +355,8 @@
       "accessed": "2026-09-25",
       "summary": "Open-RMF API 로봇 상태 JSON 스키마. 시각(unix_millis_time), 위치, 상태 7종, 문제 목록, 배터리 충전 상태를 정의한다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md"
       ]
     },
     {
@@ -356,7 +371,10 @@
       "summary": "원문 미열람. OPC UA 데이터 값 구조(값, SourceTimestamp, ServerTimestamp, StatusCode)와 시각·품질의 의미를 정의한 공식 온라인 참조.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md"
       ]
     },
     {
@@ -370,7 +388,11 @@
       "accessed": "2026-09-25",
       "summary": "ROS 2 QoS 정책(History·Reliability·Durability·Deadline·Lifespan·Liveliness·Lease Duration)과 QoS 이벤트를 설명하는 공식 문서(Jazzy 판, ros2_documentation 저장소 원본으로 열람).",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -384,7 +406,10 @@
       "accessed": "2026-09-25",
       "summary": "Open-RMF 문 연동 문서(mdBook 원본). 문 노드의 상태 발행, 문 어댑터의 요청 감독과 직접 요청 되돌림을 설명한다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -398,7 +423,10 @@
       "accessed": "2026-09-25",
       "summary": "Open-RMF 승강기 연동 문서(mdBook 원본). 승강기 노드의 상태 발행과 승강기 어댑터의 내부·목표 상태 추적, 요청 중계를 설명한다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -412,7 +440,8 @@
       "accessed": "2026-09-25",
       "summary": "Open-RMF 문 상태 메시지 정의. 시각(door_time), 문 이름, 현재 모드 세 필드를 둔다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md"
       ]
     },
     {
@@ -426,7 +455,8 @@
       "accessed": "2026-09-25",
       "summary": "Open-RMF 승강기 상태 메시지 정의. 시각, 이용 가능·현재·목적 층, 문·운행 상태, 운영 모드, 세션 id 를 둔다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md"
       ]
     },
     {
@@ -440,7 +470,11 @@
       "accessed": "2026-09-25",
       "summary": "MQTT 기반 산업 데이터 사양 Sparkplug 의 운영 동작 장. 연결 끊김·NDEATH 시 STALE 표시, 순번으로 순서 역전 감지, 재정렬 대기와 재탄생 요청, 호스트 STATE 메시지를 규정한다.",
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -455,7 +489,9 @@
       "summary": "원문 미열람. 시각 표시된 상태 갱신의 신선도 지표인 정보 나이(AoI)의 정의와 설계·최적화 연구를 정리한 서베이(IEEE JSAC 39(5)).",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s8.md"
       ]
     },
     {
@@ -470,7 +506,9 @@
       "summary": "원문 미열람. ISO 23247 제조 디지털 트윈 프레임워크의 정의(동기화된 디지털 표현)와 관측 가능한 제조 요소를 해설한 NIST 발표 자료. 계층 구조 서술은 이번 실행에서 확인하지 못했다.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s7.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -485,7 +523,10 @@
       "summary": "원문 미열람. 제조 디지털 트윈 문헌을 데이터 통합 수준에 따라 디지털 모델·디지털 섀도·디지털 트윈으로 분류한 IFAC-PapersOnLine 논문.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s4.md",
+        "docs/topics/2026/2026-09-25-area08-s8.md",
+        "docs/topics/2026/2026-09-25-area08-s10.md"
       ]
     },
     {
@@ -500,7 +541,8 @@
       "summary": "원문 미열람. 한 소매업체 37개 매장의 재고 기록 약 37만 건을 분석해 기록 부정확성의 정도와 요인을 밝힌 Management Science 54(4) 논문(소매 매장 조건).",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s8.md"
       ]
     },
     {
@@ -531,7 +573,9 @@
       "summary": "원문 미열람. RFID 판독 스트림의 누락 판독을 적응형 슬라이딩 윈도(WSTD)로 줄이고 SMURF 와 비교한 논문(Sensors 12(4)). 저자 목록 일부 미확인.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md"
+        "docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md",
+        "docs/topics/2026/2026-09-25-area08-s6.md",
+        "docs/topics/2026/2026-09-25-area08-s8.md"
       ]
     },
     {
@@ -746,7 +790,7 @@
     "전반: 교차 확인 0건 — VDA 5050·Open-RMF·Sparkplug·EPCIS 주장에 발행 주체와 독립된 두 번째 출처가 필요하다.",
     "8절: Toris·Chernova(ICRA 2017) 시간 지속성 모델 등 출처 상한으로 넣지 못한 자료의 URL 확인.",
     "다음 실행 후보: 10. 설비·건물 시스템 연동 페이지에 f6·f7·f8(문·승강기 상태 메시지와 어댑터 감독) 반영.",
-    "pipeline 담당: 자동 분리 시 세부영역 페이지 기준 상대 링크(같은 대분류 파일명, ../<대분류 slug>/…)를 주제 페이지 위치 기준(../../categories/…)으로 다시 써 주는 처리가 필요하다 — 이번 실행의 10절 분리 페이지에서 링크 8개가 깨졌다."
+    "pipeline 담당: 자동 분리 시 세부영역 페이지 기준 상대 링크(같은 대분류 파일명, ../<대분류 slug>/…)를 주제 페이지 위치 기준(../../categories/…)으로 다시 써 주는 처리와, 분리 페이지를 포함한 reference_updates cited_by 자동 산출이 필요하다."
   ],
   "fixes_applied": [
     "f26 계층 구분 삭제 — 7절 ISO 23247 행에서 '장치 통신 계층/디지털 트윈 계층' 부분을 빼고 'NIST 해설에 따르면 ISO 23247 은 …로 정의한다'로 쓰고 표준 원문과 NIST 해설 모두 원문 미열람임을 적었으며 태그를 [추정]으로 강등했다.",
@@ -765,6 +809,12 @@
     "f9 기준 — 4절·6절·7절에 ROS 2 QoS 가 Jazzy 판 문서 기준(2026-09-25 확인)임을 밝혔고, ref-182~ref-188 과 VDA 5050 계열(ref-031·ref-051) 각주의 발행일을 '미확인'으로 두었다.",
     "용어집 — '디지털 섀도' 정의에 Kritzinger 외(2018)의 분류임을 밝히고 설명에 기존 '디지털 트윈' 용어 페이지 링크를 두었으며 기존 '디지털 트윈' 정의는 바꾸지 않았다.",
     "분량 초과 자동 분리: 8. 실시간 세계 상태·데이터 일관성 본문 10,331자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,649자",
-    "형식 검증 재작성: docs/topics/2026/2026-09-25-area08-s10.md 3절 연결 목록의 깨진 링크 8개(세부영역 페이지 기준 상대 경로)를 주제 페이지 위치 기준 경로 ../../categories/<대분류 slug>/<파일>.md 로 고쳤다. 세부영역 페이지 프런트매터 sources 를 남은 본문의 각주 정의 17건과 일치시키고, reference_updates 의 cited_by 를 실제 인용 페이지로 맞췄다. 주장·태그·각주 내용은 바꾸지 않았다."
+    "형식 검증 재작성: docs/topics/2026/2026-09-25-area08-s10.md 3절 연결 목록의 깨진 링크 8개(세부영역 페이지 기준 상대 경로)를 주제 페이지 위치 기준 경로 ../../categories/<대분류 slug>/<파일>.md 로 고쳤다. 세부영역 페이지 프런트매터 sources 를 남은 본문의 각주 정의 17건과 일치시키고, reference_updates 의 cited_by 를 실제 인용 페이지로 맞췄다. 주장·태그·각주 내용은 바꾸지 않았다.",
+    "2차: 3절 DoorState 분리 — 둘째 단락을 'Open-RMF 의 문 상태 메시지(DoorState)는 시각·문 이름·현재 모드 세 필드만 둔다. [사실][^ref-186]'과 '이번에 연 Open-RMF 문·승강기 연동 문서 범위에서는 … 찾지 못했다. [추정][^ref-184][^ref-185]' 두 문장으로 나눴다.",
+    "2차: 5절 수행 자원 칸 — '문·승강기는 Open-RMF 구성에서 어댑터가 요청을 감독한다. [사실][^ref-184][^ref-185]'에서 범위 판단을 떼어 '이 위키는 설비 자체 제어를 연계 대상으로 본다. [추정][^ref-184][^ref-185]'로 따로 썼다.",
+    "2차: 7절 요약 문장 — 세부영역 페이지의 '아래 표는 …'을 '아래 링크한 주제 페이지의 표가 이번에 확인한 범위를 정리한다'로 고쳐 주제 페이지를 가리키게 했다.",
+    "2차: 분리 페이지 s7 Open-RMF 행 — 인용 주장이 없는 ref-004 를 출처 칸에서 뺐다(각주 정의·프런트매터 sources 에도 없음을 유지).",
+    "2차: 분리 페이지 s6 — Perpetua 적용 범위 [의견] 문장에서 [^ref-193] 각주를 뗐다(앞 [사실] 문장의 ref-193 인용은 유지).",
+    "2차: cited_by — reference_updates 22건의 cited_by 를 세부영역 페이지와 분리 주제 페이지 s4·s6·s7·s8·s10·s11 의 실제 각주 인용에 맞춰 다시 채웠다(예: ref-031 은 세부영역 페이지·s6·s7·s10)."
   ]
 }

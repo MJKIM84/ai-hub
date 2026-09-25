@@ -1,0 +1,122 @@
+{
+  "run_id": "2026-09-25-18",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 8,
+    "area_name": "8. 실시간 세계 상태·데이터 일관성",
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 15,
+  "parked": false,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": false,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 18,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1836.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 2건 (파일 390개 검사))",
+  "changelog_entry": "2026-09-25 | 8. 실시간 세계 상태·데이터 일관성 | 영역 심화: 섹션 3~11 신규 작성(시각·품질 표시, 오래된 상태 처리, 정정 이력, 22. 시뮬레이션·예측용 디지털 트윈과의 구분), 신규 출처 15건 인용, 열린 질문 4건 제기 | run 2026-09-25-18",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:51:39 KST",
+  "usage": {
+    "input_tokens": 62,
+    "cache_creation_input_tokens": 1229793,
+    "cache_read_input_tokens": 5015598,
+    "output_tokens": 226581,
+    "cost_usd": 16.3089,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.5703,
+        "output_tokens": 34720,
+        "cache_read_input_tokens": 3388020,
+        "cache_creation_input_tokens": 202861
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.4393,
+        "output_tokens": 18539,
+        "cache_read_input_tokens": 1328949,
+        "cache_creation_input_tokens": 186331
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 7.5206,
+        "output_tokens": 158651,
+        "cache_read_input_tokens": 126037,
+        "cache_creation_input_tokens": 540298
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.694,
+        "output_tokens": 13679,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 298744
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 12,
+  "cross_checked_findings": 0
+}

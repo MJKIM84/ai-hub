@@ -73,3 +73,47 @@
 - 2026-09-25 11:44:22 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
 - 2026-09-25 11:44:22 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 1분 41초 · required_fixes 참고
 - 2026-09-25 11:44:22 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-18/prompts/storyteller-retry1.md (287,702자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 11:50:34 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 6분 12초 · 비용 $2.5645 · subtype success
+- 2026-09-25 11:50:34 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-18/pages.json
+- 2026-09-25 11:50:34 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 6분 12초 · 페이지 7개
+- 2026-09-25 11:50:34 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-18 (영역 심화)
+- 2026-09-25 11:50:35 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:50:35 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 11:50:35 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:50:35 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-18/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:50:36 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:50:37 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:50:37 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:50:37 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 11:50:37 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-25 11:50:37 KST [형식 검증] 결과: 통과 · 소요 3초
+- 2026-09-25 11:50:37 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-18/prompts/verification2-retry1.md (249,697자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:51:07 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 29초 · 비용 $1.3094 · subtype success
+- 2026-09-25 11:51:07 KST [내용 검증 에이전트] 저장: runs/2026-09-25-18/verification2.json
+- 2026-09-25 11:51:07 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-25 11:51:07 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 30초 · 신뢰도 low
+- 2026-09-25 11:51:07 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-18 resume=2026-09-25-18 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 11:51:07 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 11:51:08 KST [준비] 결과: 성공 · 소요 1초 · 건너뜀
+- 2026-09-25 11:51:08 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 11:51:08 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-18 (영역 심화)
+- 2026-09-25 11:51:08 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:51:08 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 low)
+- 2026-09-25 11:51:08 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:51:09 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-18/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:51:09 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:51:11 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:51:27 KST [퍼블리셔] 원복: 5단계 반영 뒤 링크 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:51:27 KST [퍼블리셔] 실패: 5단계 반영 뒤 링크·각주 검사 실패:
+[check_links] 오류 2건 (파일 390개 검사)
+- logs/daily/2026-09-25.md: 깨진 링크 ref-186
+- logs/daily/2026-09-25.md: 깨진 링크 ref-184·ref-185
+
+- 2026-09-25 11:51:27 KST [퍼블리셔] 결과: 실패 · 소요 18초 · 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 2건 (파일 390개 검사)
+- 2026-09-25 11:51:27 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 2건 (파일 390개 검사)))
+- 2026-09-25 11:51:39 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 2건 (파일 390개 검사)))
+- 2026-09-25 11:52:00 KST [퍼블리셔] --log-only: 사이트 빌드 실패(로그 페이지 반영은 유지): documentation to directory: /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'logs/daily/2026-09-25.md' contains an unrecognized relative link 'ref-186', it was left as is.
+WARNING -  Doc file 'logs/daily/2026-09-25.md' contains an unrecognized relative link 'ref-184·ref-185', it was left as is.
+
+- 2026-09-25 11:52:00 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 8. 실시간 세계 상태·데이터 일관성 — 생성 6/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
