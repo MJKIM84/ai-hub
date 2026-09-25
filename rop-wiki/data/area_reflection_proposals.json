@@ -381,6 +381,86 @@
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "summary": "공통 참조 어휘(IEEE 1872-2015의 목적), 의미 식별자(AAS Part 3a IEC 61360, 인용 판 3.0.2·최신 3.1.1, IDTA 02047 의 일부 속성 ECLASS IRDI), 서비스 로봇 모듈 정보 모델(ISO 22166-202:2025, KS B 7321-2 — 부합화 미확인)을 반영한다(f24·f25·f27·f29·f30·f35).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 기반 배정의 두 방식: LLM이 분해와 배정을 함께 맡는 방식(COHERENT, LTAA, SMART-LLM)과 LLM이 의존 그래프·정식화를 만들고 선형계획(LiP-LLM)·정수계획(PIP-LLM)·makespan 최소화(FLEET)·MILP(Peng 외) 해법이 배정·일정을 맡는 방식. SCM 질문 '가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가?'와 연결해 LLM은 해석·정식화, 전체 최적 배정은 해법기가 맡는 분담의 선행 근거로 제시([추정], 창고 비교 연구 없음). 수치는 저자 보고값 조건 병기.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "8. 대표 연구와 자료",
+      "summary": "LaMMA-P(ref-164), LiP-LLM(ref-166), PIP-LLM(ref-181), FLEET(ref-242), Peng 외(ref-167), COHERENT(ref-169), LTAA(ref-168, 출처 충돌 병기), IMR-LLM(ref-170).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "교차 규칙(학습 기반 배차)에 따라 27. AI·학습·적응과 모델 운영과 연결: LLM 기반 배정 방법은 27. AI·학습·적응과 모델 운영의 연구 방법이 이 영역에 적용된 것이다.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 13,
+      "section": "11. 열린 질문",
+      "summary": "LTAA의 LLM 배정 비교 우위에 관한 출처 충돌, 창고 현장에서 최근접 배정과 LLM·최적화 배정을 비교한 연구 부재(q3-05와 연결).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 다중 로봇 서베이의 네 층 분류(상위 작업 배정·중간 동작 계획·저수준 동작 생성·사람 개입)와 과제(수학적 추론 한계·환각·지연·벤치마크 부족), 사람이 정한 도구·함수 목록 안에서 명령·코드를 생성하는 LLM 에이전트(ChatGPT for Robotics, ROSA, RAI, 한국전자기술연구원 사례)와 연 문서 범위에서 실행 전 확인·권한 장치 설명이 없다는 관찰([추정]).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "LLM 다중 로봇 서베이(ref-165), ChatGPT for Robotics(ref-174)와 PromptCraft(ref-173), ROSA(ref-171·ref-172), RAI(ref-175), 한국전자기술연구원 초록(ref-180).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 27,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "교차 규칙에 따라 적용 대상 13. 작업 배정 — MRTA(학습 기반 배차)와 연결: LLM 직접 배정과 LLM 정식화 + 최적화 배정 연구.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 1,
+      "area_no": 18,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "로봇 운영 제품의 자연어·음성 인터페이스: InOrbit RobOps Copilot(2024 질의·설명, 2026 미션 실행), Formant F3, 다임리서치 다비스(개발 계획). 모두 [추정] 벤더 주장이며 미션 정의 방식과 실행 전 확인·승인 절차는 미확인(q1-03에서 조사).",
+      "status": "제안"
     }
   ]
 }

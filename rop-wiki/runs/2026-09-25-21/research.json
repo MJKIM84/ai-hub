@@ -28,7 +28,7 @@
       "claim": "LaMMA-P(ICRA 2025)는 LLM이 상위 지시를 하위 작업으로 분해하고 이종 로봇 팀의 능력에 따라 하위 작업을 로봇에 배정하며, 계획 생성은 고전 휴리스틱 탐색 계획기 Fast Downward가 PDDL로 맡는 구조다.",
       "tag": "사실",
       "source_ids": [
-        "ref-288"
+        "ref-164"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -42,7 +42,7 @@
       "claim": "LaMMA-P 저자들은 AI2-THOR 기반 가정 작업 벤치마크 MAT-THOR(두 복잡도 수준)에서 기존 LM 기반 다중 에이전트 계획기보다 성공률이 105%, 효율이 36% 높았다고 보고했다(저자 보고값, 독립 재현 미확인).",
       "tag": "사실",
       "source_ids": [
-        "ref-288"
+        "ref-164"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -56,7 +56,7 @@
       "claim": "LiP-LLM(IEEE RA-L 게재)은 LLM이 기술(skill) 목록과 기술 사이 선후 의존 그래프를 만들고 로봇에 대한 작업 배정은 선형계획(Linear Programming)으로 푸는 3단계 구조를 쓴다.",
       "tag": "사실",
       "source_ids": [
-        "ref-290"
+        "ref-166"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -71,7 +71,7 @@
       "claim": "LiP-LLM 저자들은 LLM 기반 배정이 추적 한계로 배정에 어려움을 겪은 반면 선형계획 배정은 배정 실패가 거의 없었고, 의존 그래프 덕분에 병렬 실행되는 작업이 늘었다고 보고했다(저자 보고, 실험 조건 미확인).",
       "tag": "사실",
       "source_ids": [
-        "ref-290"
+        "ref-166"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -86,7 +86,7 @@
       "claim": "Peng 외(2025)는 로컬 LLM과 도메인 지식 베이스로 자연어 작업 기술을 MILP 모델로, 다시 실행 코드로 바꾸는 2단계 정식화 틀을 제안하고, 항공기 외피 제조 작업에서 시공간 제약 추출 평균 정확도 82%, MILP 코드 생성 평균 정확도 90%를 보고했다(저자 보고값, 제조 생산 제약 대상).",
       "tag": "사실",
       "source_ids": [
-        "ref-291"
+        "ref-167"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -101,7 +101,7 @@
       "claim": "IMR-LLM(ICRA 2026)은 산업용 다중 로봇 작업에서 LLM이 선언 그래프(disjunctive graph) 구성을 돕고 결정적 해법으로 상위 작업 계획을 구한 뒤, 공정 트리(process tree)로 LLM이 저수준 실행 프로그램을 생성하게 하며, 세 복잡도 수준의 IMR-Bench를 만들었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-294"
+        "ref-170"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -116,7 +116,7 @@
       "claim": "PIP-LLM(2025)은 자연어 명령을 팀 수준 PDDL 문제로 바꿔 로봇 배정을 떼어 낸 팀 계획을 얻고, 이를 하위 작업 의존 그래프로 옮긴 뒤 하위 작업마다 로봇 능력·사용자 제약을 지키며 이동 비용과 작업 부하를 최적화하는 정수계획(Integer Programming) 배정 문제를 푼다.",
       "tag": "사실",
       "source_ids": [
-        "ref-305"
+        "ref-181"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -131,7 +131,7 @@
       "claim": "FLEET(2025)는 LLM 앞단이 소요 시간·선후관계를 담은 작업 그래프와 능력을 고려한 로봇–작업 적합도 행렬을 만들고, 형식적 뒷단이 makespan 최소화 문제를 풀어 이종 로봇 팀의 일정을 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-306"
+        "ref-242"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -146,7 +146,7 @@
       "claim": "COHERENT는 중앙 작업 배정자 LLM이 작업을 하위 작업으로 분해해 쿼드로터·로봇 개·로봇 개에 장착된 로봇 팔에 배정하고, 각 로봇 실행자의 자기 성찰 피드백으로 계획을 고치는 제안–실행–피드백–조정(PEFA) 반복을 쓰며, 5개 환경 100개 장기 작업 벤치마크(OmniGibson 기반)로 평가한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-293"
+        "ref-169"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -160,7 +160,7 @@
       "claim": "LangGraph 기반 작업 배정 에이전트(LTAA) 연구의 초록은 TEACh 데이터셋의 건설 작업으로 LLM 배정을 동적 계획법·Q-러닝·DQN과 비교해 로봇 전문화가 강한 설정(Heavy Excels)에서 작업 완료율 77%로 전통 기법을 앞섰다고 보고하지만, 1차 검증(실행 2026-09-25-12)이 본 2차 요약은 동적 계획법의 완료율이 더 높다고 적어 비교 우위는 확정되지 않는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-292"
+        "ref-168"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -175,7 +175,7 @@
       "claim": "LLM 기반 다중 로봇 시스템 서베이(Autonomous Robots 게재)는 LLM의 적용을 상위 작업 배정, 중간 수준 동작 계획, 저수준 동작 생성, 사람 개입의 네 층으로 분류하고, 수학적 추론 한계·환각·지연·벤치마크 부족을 과제로 든다.",
       "tag": "사실",
       "source_ids": [
-        "ref-289"
+        "ref-165"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,8 +190,8 @@
       "claim": "Microsoft의 ChatGPT for Robotics 연구는 프롬프트 설계 원칙과 사람이 만든 고수준 함수 라이브러리를 결합해 ChatGPT가 여러 로봇 작업·시뮬레이터·형태에 맞춰 코드를 합성하게 했고, 프롬프트 사례를 공유하는 PromptCraft 저장소와 AirSim 기반 시뮬레이터를 공개했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-298",
-        "ref-297"
+        "ref-174",
+        "ref-173"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -206,8 +206,8 @@
       "claim": "NASA JPL의 ROSA는 LangChain 기반 에이전트로 ROS 1(Noetic)·ROS 2(Humble·Iron·Jazzy) 시스템을 자연어로 조회·진단·조작하며, 개발자는 tools 또는 tool_packages 파라미터로 LangChain 도구 함수를 넘겨 에이전트가 쓸 수 있는 행동을 정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-295",
-        "ref-296"
+        "ref-171",
+        "ref-172"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -221,8 +221,8 @@
       "claim": "이번에 연 ROSA의 README와 Custom Agents 위키에는 LLM이 고른 로봇 조작 도구를 실행 전에 사람이 확인하거나 권한을 제한하는 장치 설명이 없고, 예시는 이동 명령을 확인 절차 없이 바로 호출한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-295",
-        "ref-296"
+        "ref-171",
+        "ref-172"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -236,7 +236,7 @@
       "claim": "Robotec.ai의 RAI는 ROS 2(Jazzy·Humble)용 에이전트 프레임워크로 음성 인식(rai_asr)·음성 합성(rai_tts)·인식(rai_perception)·시뮬레이션 연동(rai_sim)·벤치마크(rai_bench) 패키지를 Apache 2.0 라이선스로 공개하며, README에는 안전·사람 승인·도구 제한 설명이 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-299"
+        "ref-175"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -250,7 +250,7 @@
       "claim": "한국전자기술연구원 연구진은 LangChain 에이전트의 도구를 ROS 2 토픽·서비스 인터페이스로 정의해 자연어 명령을 ROS 2 로봇 제어 명령으로 바꾸고 로봇별 위치·상태를 실시간 모니터링하는 다중 로봇 관제 시스템을 구현했다고 발표했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-304"
+        "ref-180"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -265,7 +265,7 @@
       "claim": "InOrbit은 2024년 Automate에서 RobOps Copilot을 LLM으로 로봇 운영 데이터에 대해 사용자가 선호하는 언어로 질문하고 설명·분석을 받아 최적화 판단을 돕는 도구로 발표했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-300"
+        "ref-176"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -281,7 +281,7 @@
       "claim": "InOrbit은 2026년 Automate에서 RobOps Copilot을 운영자가 음성을 포함한 자연어로 로봇 동작 정의, 실시간 데이터 조회, 성능 분석, 로봇 미션 실행, 보고서 생성을 하는 에이전트형 AI 계층으로 소개했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-301"
+        "ref-177"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -297,7 +297,7 @@
       "claim": "Formant는 2025년 F3를 자연어 인터페이스가 답·시각화·로봇 직접 제어로 응답하고 상시 에이전트 계층이 플릿을 감시·분석·권고하며 자율 AI 에이전트가 다단계 조사를 하는 로봇 운영 플랫폼으로 발표했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-302"
+        "ref-178"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -313,7 +313,7 @@
       "claim": "국내 로봇 통합관제 기업 다임리서치는 다기종 로봇 통합관제 xMS 운영 데이터를 바탕으로 자연어 질의응답과 장애 원인·대응 방안 제시를 하는 온프레미스 AI 에이전트 '다비스(DARVIS)'를 개발 중이며 2027년 상반기 1.0 출시를 계획한다고 밝혔다.",
       "tag": "추정",
       "source_ids": [
-        "ref-303"
+        "ref-179"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -330,19 +330,19 @@
       "tag": "추정",
       "source_ids": [
         "ref-089",
-        "ref-293",
-        "ref-292",
-        "ref-288",
-        "ref-290",
-        "ref-305",
-        "ref-306",
-        "ref-291",
-        "ref-294",
+        "ref-169",
+        "ref-168",
+        "ref-164",
+        "ref-166",
+        "ref-181",
+        "ref-242",
+        "ref-167",
+        "ref-170",
         "ref-091",
-        "ref-298",
-        "ref-295",
-        "ref-299",
-        "ref-304"
+        "ref-174",
+        "ref-171",
+        "ref-175",
+        "ref-180"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -356,10 +356,10 @@
       "claim": "확인한 제품 자료에서 LLM의 역할은 운영 데이터 질의·설명·진단(InOrbit 2024, 다임리서치)에서 자연어 미션 실행·제어(InOrbit 2026, Formant)로 넓어지는 흐름이 보이지만, 공개 자료에서는 미션이 미리 정의된 것을 호출하는지 지시를 새로 분해하는지와 실행 전 확인·권한 장치가 확인되지 않는다.",
       "tag": "추정",
       "source_ids": [
-        "ref-300",
-        "ref-301",
-        "ref-302",
-        "ref-303"
+        "ref-176",
+        "ref-177",
+        "ref-178",
+        "ref-179"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -374,12 +374,12 @@
       "claim": "이번에 확인한 LLM 다중 로봇 배정 연구의 평가 환경은 가정 작업 시뮬레이터(MAT-THOR, OmniGibson), 건설 작업(LTAA), 항공기 외피 제조(Peng 외), 산업 조립 벤치마크(IMR-Bench)였고, 물류 창고 작업을 명시한 것은 PIP-LLM에 관한 검색 요약의 창고 작업 언급뿐이었다.",
       "tag": "추정",
       "source_ids": [
-        "ref-288",
-        "ref-293",
-        "ref-292",
-        "ref-291",
-        "ref-294",
-        "ref-305"
+        "ref-164",
+        "ref-169",
+        "ref-168",
+        "ref-167",
+        "ref-170",
+        "ref-181"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -394,10 +394,10 @@
       "claim": "분류 원문의 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, PIP-LLM·FLEET·Peng 외처럼 LLM 뒤에 이동 비용·작업 부하·makespan을 목적함수로 둔 최적화 배정을 붙인 연구는 배정을 LLM의 개별 판단이 아니라 전체 목적의 최적화 문제로 다루므로, 13. 작업 배정 — MRTA에서 LLM은 지시 해석·정식화를, 전체 최적 배정은 해법기를 맡기는 분담의 선행 근거가 될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-305",
-        "ref-306",
-        "ref-291",
-        "ref-290"
+        "ref-181",
+        "ref-242",
+        "ref-167",
+        "ref-166"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -440,7 +440,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-288",
+      "id": "ref-164",
       "org": "TASL Lab (LaMMA-P 저자)",
       "title": "LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner (GitHub README)",
       "published": null,
@@ -455,7 +455,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-289",
+      "id": "ref-165",
       "org": "Autonomous Robots 게재 서베이(arXiv 2502.03814) 저자",
       "title": "Large Language Models for Multi-Robot Systems: A Survey",
       "published": "2025-02",
@@ -470,7 +470,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-290",
+      "id": "ref-166",
       "org": "Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T.",
       "title": "LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning",
       "published": "2024-10",
@@ -485,7 +485,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-291",
+      "id": "ref-167",
       "org": "Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L.",
       "title": "Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models",
       "published": "2025-03",
@@ -500,7 +500,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-292",
+      "id": "ref-168",
       "org": "Kaitha, S., & Yu, S. 외(arXiv 2512.02810)",
       "title": "Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms",
       "published": "2025-12",
@@ -515,7 +515,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-293",
+      "id": "ref-169",
       "org": "SHAILAB-IPEC (COHERENT 저자)",
       "title": "COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (GitHub README)",
       "published": null,
@@ -530,7 +530,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-294",
+      "id": "ref-170",
       "org": "Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R.",
       "title": "IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models",
       "published": "2026-03",
@@ -545,7 +545,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-295",
+      "id": "ref-171",
       "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
       "title": "ROSA — ROS Agent (GitHub README)",
       "published": null,
@@ -560,7 +560,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-296",
+      "id": "ref-172",
       "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
       "title": "Custom Agents · nasa-jpl/rosa Wiki",
       "published": null,
@@ -575,7 +575,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-297",
+      "id": "ref-173",
       "org": "Microsoft",
       "title": "PromptCraft-Robotics (GitHub README)",
       "published": null,
@@ -590,7 +590,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-298",
+      "id": "ref-174",
       "org": "Vemprala, S., Bonatti, R., Bucker, A., & Kapoor, A. (Microsoft)",
       "title": "ChatGPT for Robotics: Design Principles and Model Abilities",
       "published": "2023-07",
@@ -605,7 +605,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-299",
+      "id": "ref-175",
       "org": "Robotec.ai (RobotecAI)",
       "title": "RAI — vendor agnostic agentic framework for Physical AI robotics (GitHub README)",
       "published": null,
@@ -620,7 +620,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-300",
+      "id": "ref-176",
       "org": "InOrbit.AI",
       "title": "InOrbit Unveils RobOps Copilot for AI-Powered Robot Optimization at Automate 2024",
       "published": "2024-05",
@@ -635,7 +635,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-301",
+      "id": "ref-177",
       "org": "InOrbit.AI (RoboticsTomorrow 게재 보도자료)",
       "title": "InOrbit.AI Demonstrates the Future of Multi-Vendor Robot Orchestration and Physical AI at Automate 2026",
       "published": "2026-06-22",
@@ -650,7 +650,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-302",
+      "id": "ref-178",
       "org": "Formant (Business Wire 보도자료)",
       "title": "Formant F3 Brings Generative AI and Agentic Reasoning to Robot Ops",
       "published": "2025-06-30",
@@ -665,7 +665,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-303",
+      "id": "ref-179",
       "org": "와우테일",
       "title": "다임리서치, 중기부-인텔 '인지니어스' 글로벌 협업 기업 선정",
       "published": "2026-08-27",
@@ -680,7 +680,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-304",
+      "id": "ref-180",
       "org": "이종록, 황정훈, 박민철(한국전자기술연구원)",
       "title": "LLM 기반 로봇관제시스템의 Agent AI 구축",
       "published": null,
@@ -695,7 +695,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-305",
+      "id": "ref-181",
       "org": "arXiv 2510.22784 저자(미확인)",
       "title": "PIP-LLM: Integrating PDDL-Integer Programming with LLMs for Coordinating Multi-Robot Teams Using Natural Language",
       "published": "2025-10",
@@ -710,7 +710,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-306",
+      "id": "ref-242",
       "org": "arXiv 2510.07417 저자(미확인)",
       "title": "FLEET: Formal Language-Grounded Scheduling for Heterogeneous Robot Teams",
       "published": "2025-10",
@@ -813,7 +813,7 @@
       "f7 PIP-LLM 의 창고 작업 적용은 일반 검색 요약에만 있고 논문 요약에서 확인하지 못함",
       "f14·f15 확인·권한 장치 부재는 연 문서 범위의 관찰이며 부재 확인 아님",
       "f16 한국전자기술연구원 초록의 학술대회 이름·발표일 미확인",
-      "ref-305·ref-306 저자 목록 미확인, ref-290·ref-292 저자 표기는 이전 검증 기록 기준",
+      "ref-181·ref-242 저자 목록 미확인, ref-166·ref-168 저자 표기는 이전 검증 기록 기준",
       "LaMMA-P 논문(arXiv 2409.20560)의 여섯 모듈 이름은 이번 실행에서 확인하지 못해 넣지 않음",
       "대한산업공학회 2023 추계 '제조 물류 로봇에서의 LLM을 활용한 로봇 협업 인터페이스 구축'(DBpia)은 서지만 확인되고 내용을 보지 못해 넣지 않음",
       "DELIVER(arXiv 2508.19114)는 검색 목록에만 나와 넣지 않음"
@@ -823,7 +823,7 @@
       "queries": 17,
       "sources": 19
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 6건을 열었다(ref-288 LaMMA-P, ref-293 COHERENT, ref-295 ROSA README, ref-296 ROSA 위키, ref-297 PromptCraft, ref-299 RAI). 논문·보도자료·기사·초록 13건과 재사용 2건(ref-089, ref-091; f21 종합에만 사용)은 원문 미열람(신뢰도 상한 medium, 벤더·기사 low). 검색 17회/40, 신규 출처 19건/20(ref-288~ref-306, 이 실행에 예약된 구간 안). 교차 확인 0건. 질문 선택: target.json 지정 q1-02 1건. 같은 질문을 다룬 보류 실행 2026-09-25-12 의 검증 지적을 반영했다: 기존 id 와 충돌하던 출처 번호를 예약 구간으로 새로 부여, 미사용 출처(DART-LLM ref-059) 제외, LTAA 를 [추정]으로 강등하고 상충 요약을 출처 충돌 열린 질문으로 올림, 수치마다 저자 보고값·평가 조건 명시, IMR-LLM 방법 서술은 원문 미열람 arXiv 출처로만 근거, 제품 사례는 모두 vendor_claim, '과업' 대신 '작업' 용어 사용, 운영 제품 미션 실행의 확인 장치 질문은 q1-03 과 중복이라 새 질문으로 올리지 않고 f22 에 남김. 새로 더한 연구: PIP-LLM(정수계획 배정), FLEET(makespan 최소화). 한국 자료: 한국전자기술연구원 초록(ref-304), 다임리서치 기사(ref-303). 교차 규칙: LLM 기반 배정 finding 은 13. 작업 배정 — MRTA 와 27. AI·학습·적응과 모델 운영 양쪽에 반영 제안했다. 범위: ROSA·RAI·ChatGPT for Robotics 의 저수준 제어 연동은 LLM 담당 범위 설명으로만 썼다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 백로그 참고: q1-05 와 q1-06 은 같은 질문의 중복 등록으로 보여 정리가 필요하다. 후속 질문 2건, 온톨로지 변경 제안 1건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 6건을 열었다(ref-164 LaMMA-P, ref-169 COHERENT, ref-171 ROSA README, ref-172 ROSA 위키, ref-173 PromptCraft, ref-175 RAI). 논문·보도자료·기사·초록 13건과 재사용 2건(ref-089, ref-091; f21 종합에만 사용)은 원문 미열람(신뢰도 상한 medium, 벤더·기사 low). 검색 17회/40, 신규 출처 19건/20(ref-164~ref-242, 이 실행에 예약된 구간 안). 교차 확인 0건. 질문 선택: target.json 지정 q1-02 1건. 같은 질문을 다룬 보류 실행 2026-09-25-12 의 검증 지적을 반영했다: 기존 id 와 충돌하던 출처 번호를 예약 구간으로 새로 부여, 미사용 출처(DART-LLM ref-059) 제외, LTAA 를 [추정]으로 강등하고 상충 요약을 출처 충돌 열린 질문으로 올림, 수치마다 저자 보고값·평가 조건 명시, IMR-LLM 방법 서술은 원문 미열람 arXiv 출처로만 근거, 제품 사례는 모두 vendor_claim, '과업' 대신 '작업' 용어 사용, 운영 제품 미션 실행의 확인 장치 질문은 q1-03 과 중복이라 새 질문으로 올리지 않고 f22 에 남김. 새로 더한 연구: PIP-LLM(정수계획 배정), FLEET(makespan 최소화). 한국 자료: 한국전자기술연구원 초록(ref-180), 다임리서치 기사(ref-179). 교차 규칙: LLM 기반 배정 finding 은 13. 작업 배정 — MRTA 와 27. AI·학습·적응과 모델 운영 양쪽에 반영 제안했다. 범위: ROSA·RAI·ChatGPT for Robotics 의 저수준 제어 연동은 LLM 담당 범위 설명으로만 썼다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 백로그 참고: q1-05 와 q1-06 은 같은 질문의 중복 등록으로 보여 정리가 필요하다. 후속 질문 2건, 온톨로지 변경 제안 1건."
   },
   "track": {
     "slug": "nl-task-chatbot",

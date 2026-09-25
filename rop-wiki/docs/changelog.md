@@ -28,6 +28,35 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-02 답함(3절 q1-02 소제목 추가), 2·4·5·6·7·8·9절 갱신, 후속 질문 q3-05·q3-06, 상태 줄 '답한 질문: 2건'으로 갱신(2차 수정 지시로 전체 content 전송) |
+| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.1 → v0.2: 배정 개념에 속성 '배정 산출 방식' 추가·확정(f3·f5·f7·f8·f9), '규칙' 값은 6절 질문으로. H1 버전 표기를 바꿔야 해서 전체 content 로 보냄(2차 재실행에서 변경 없음) |
+| 2026-09-25-21 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절 갱신: LLM 담당 범위와 LLM·최적화 결합 선행 연구, 제품 사례 소절(공개 에이전트 프레임워크, 로봇 운영 제품 — 벤더 주장) 작성, q1-03 미조사 명시. 2차: LTAA 문장에 저자 보고값 병기, 평가 환경 문장에 '건설 기계 시나리오' 복원과 ref-168 각주 추가 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 살아있는 산출물 링크 갱신(초안 v0.2, 아이디어 2 3절 제품 사례 작성). 상태 줄은 값 변화 없음 |
+| 2026-09-25-21 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-02 답함(LLM 담당 범위 세 방식, LLM 정식화와 최적화 배정 연구, 로봇 운영 제품 사례는 벤더 주장), 업무 분해·배정 설계 초안 v0.1 → v0.2, 새 질문 2건 |
+| 2026-09-25-21 | 생성 | [docs/references/ref-164.md](references/ref-164.md) | 참고문헌 ref-164 등록: LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocat… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-165.md](references/ref-165.md) | 참고문헌 ref-165 등록: Large Language Models for Multi-Robot Systems: A Survey |
+| 2026-09-25-21 | 생성 | [docs/references/ref-166.md](references/ref-166.md) | 참고문헌 ref-166 등록: LiP-LLM: Integrating Linear Programming and dependency graph… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-167.md](references/ref-167.md) | 참고문헌 ref-167 등록: Automatic MILP Model Construction for Multi-Robot Task Alloc… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-168.md](references/ref-168.md) | 참고문헌 ref-168 등록: Phase-Adaptive LLM Framework with Multi-Stage Validation for… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-169.md](references/ref-169.md) | 참고문헌 ref-169 등록: COHERENT: Collaboration of Heterogeneous Multi-Robot System… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-170.md](references/ref-170.md) | 참고문헌 ref-170 등록: IMR-LLM: Industrial Multi-Robot Task Planning and Program Ge… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-171.md](references/ref-171.md) | 참고문헌 ref-171 등록: ROSA — ROS Agent (GitHub README) |
+| 2026-09-25-21 | 생성 | [docs/references/ref-172.md](references/ref-172.md) | 참고문헌 ref-172 등록: Custom Agents · nasa-jpl/rosa Wiki |
+| 2026-09-25-21 | 생성 | [docs/references/ref-173.md](references/ref-173.md) | 참고문헌 ref-173 등록: PromptCraft-Robotics (GitHub README) |
+| 2026-09-25-21 | 생성 | [docs/references/ref-174.md](references/ref-174.md) | 참고문헌 ref-174 등록: ChatGPT for Robotics: Design Principles and Model Abilities |
+| 2026-09-25-21 | 생성 | [docs/references/ref-175.md](references/ref-175.md) | 참고문헌 ref-175 등록: RAI — vendor agnostic agentic framework for Physical AI robo… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-176.md](references/ref-176.md) | 참고문헌 ref-176 등록: InOrbit Unveils RobOps Copilot for AI-Powered Robot Optimiza… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-177.md](references/ref-177.md) | 참고문헌 ref-177 등록: InOrbit.AI Demonstrates the Future of Multi-Vendor Robot Orc… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-178.md](references/ref-178.md) | 참고문헌 ref-178 등록: Formant F3 Brings Generative AI and Agentic Reasoning to Rob… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-179.md](references/ref-179.md) | 참고문헌 ref-179 등록: 다임리서치, 중기부-인텔 '인지니어스' 글로벌 협업 기업 선정 |
+| 2026-09-25-21 | 생성 | [docs/references/ref-180.md](references/ref-180.md) | 참고문헌 ref-180 등록: LLM 기반 로봇관제시스템의 Agent AI 구축 |
+| 2026-09-25-21 | 생성 | [docs/references/ref-181.md](references/ref-181.md) | 참고문헌 ref-181 등록: PIP-LLM: Integrating PDDL-Integer Programming with LLMs for… |
+| 2026-09-25-21 | 생성 | [docs/references/ref-242.md](references/ref-242.md) | 참고문헌 ref-242 등록: FLEET: Formal Language-Grounded Scheduling for Heterogeneous… |
+| 2026-09-25-21 | 생성 | [docs/glossary/llm-agent.md](glossary/llm-agent.md) | 용어집 항목 LLM 에이전트 |
+| 2026-09-25-21 | 생성 | [docs/glossary/milp.md](glossary/milp.md) | 용어집 항목 혼합 정수 계획 |
+| 2026-09-25-21 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설), 상태 줄 열린 3·답함 3으로 갱신, 4절 결론·불확실성, 5절 q2-06 등록·중복 폐기 기록, 6절 전환 아니오(q1-04·q1-05·q1-06), 7·8·9절 갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.2 → v0.3: 개념 '작업 스테이션' 추가(확정), '충전 위치' 접근 지점 속성 추가·확정, '엘리베이터' BIM 대응 클래스 속성 추가·확정, 다이어그램에 작업 스테이션 노드, 6절 질문 4건 추가·q1-03 항목 근거 보강 |
 | 2026-09-25-19 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 운영 시설(충전소·작업 스테이션) 보완 사례 소절 추가, 4절에 단계 2 전 선행 근거(IFC 4.3·VDMA LIF·VDA 5050 시설 표현) 작성 |
