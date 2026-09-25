@@ -10,7 +10,7 @@
 #   bash pipeline/run_daily.sh --run-type track --track manual-capability-ontology --stage 1 --question-ids q1-01,q1-02
 #   bash pipeline/run_daily.sh --resume 2026-09-24-01              # 있는 산출물부터 이어서(보류 폴더면 되돌려 재투입)
 #   bash pipeline/run_daily.sh --resume 2026-09-24-01 --step publish   # 단일 단계만
-# 옵션: --date D --run-type T --area N --track S --stage N --question-ids a,b --resume ID --run-id ID
+# 옵션: --date D --run-type T --area N --track S --stage N --question-ids a,b --category A~G --resume ID --run-id ID --until verify2
 #       --step {prepare|select|research|verify1|storytell|verify2|publish|log} --skip-probe --allow-no-fetch --no-build --no-commit
 #       (--skip-probe: 드라이런용. 기존 probe.json 재사용, 없으면 WebSearch 점검을 생략(미점검으로 기록)하고 WebFetch 는 curl 참고값만 쓴다.
 #        --allow-no-fetch(또는 환경변수 ROP_ALLOW_NO_FETCH=1): 페이지 열람 도구가 없을 때 중단하지 않고 원문 미열람 모드로 진행(사용자 override).
@@ -36,7 +36,7 @@ usage() {
 # ---------------------------------------------------------------------------------------------
 # 옵션
 # ---------------------------------------------------------------------------------------------
-DATE=""; RUN_TYPE=""; AREA=""; TRACK=""; STAGE=""; QIDS=""; RESUME=""; STEP=""; RUN_ID_OPT=""
+DATE=""; RUN_TYPE=""; AREA=""; TRACK=""; STAGE=""; QIDS=""; RESUME=""; STEP=""; RUN_ID_OPT=""; CATEGORY=""; UNTIL=""; MAXQ=""
 SKIP_PROBE=0; NO_BUILD=0; NO_COMMIT=0; ALLOW_NO_FETCH=0; ALLOW_NO_FETCH_SRC=""
 if [ "${ROP_ALLOW_NO_FETCH:-0}" = "1" ]; then ALLOW_NO_FETCH=1; ALLOW_NO_FETCH_SRC="ROP_ALLOW_NO_FETCH=1"; fi
 while [ $# -gt 0 ]; do
@@ -47,6 +47,9 @@ while [ $# -gt 0 ]; do
     --track) TRACK="$2"; shift 2;;
     --stage) STAGE="$2"; shift 2;;
     --question-ids) QIDS="$2"; shift 2;;
+    --category) CATEGORY="$2"; shift 2;;
+    --max-questions) MAXQ="$2"; shift 2;;
+    --until) UNTIL="$2"; shift 2;;
     --resume) RESUME="$2"; shift 2;;
     --run-id) RUN_ID_OPT="$2"; shift 2;;
     --step) STEP="$2"; shift 2;;
@@ -59,6 +62,7 @@ while [ $# -gt 0 ]; do
   esac
 done
 case "$STEP" in ""|prepare|select|research|verify1|storytell|verify2|publish|log) ;; *) echo "[run_daily] --step 값 오류: $STEP"; exit 2;; esac
+case "$UNTIL" in ""|verify2) ;; *) echo "[run_daily] --until 값 오류: $UNTIL (verify2 만 지원)"; exit 2;; esac
 if [ -n "$STEP" ] && [ "$STEP" != "prepare" ] && [ "$STEP" != "select" ] && [ -z "$RESUME" ] && [ -z "$RUN_ID_OPT" ]; then
   echo "[run_daily] --step $STEP 은 --resume <run_id> (또는 --run-id) 와 함께 쓴다"; exit 2
 fi
@@ -183,7 +187,13 @@ if [ "$NEEDS_PROBE" = 1 ]; then
   elif [ "$WS" != "true" ] && [ "$WEB_TOOLS_REQUIRED" = "true" ]; then
     abort "웹 검색(WebSearch) 도구를 쓸 수 없다(web_tools_required)"
   fi
-  if [ "$WF" != "true" ]; then
+  FM="$(jget "$RD/probe.json" fetch_mode none)"
+  if [ "$WF" != "true" ] && [ "$FM" = "mirror_only" ]; then
+    # 부분 열람(운영 전환 1-1, DECISIONS D-003): 일반 페이지는 막혔지만 에이전트 WebFetch 로 공식 저장소 원문(raw.githubusercontent.com)과
+    # inbox/sources 원문 텍스트는 연다. 도구가 동작하므로 중단하지 않고, 출처별 fetched 표시로 신뢰도 상한을 코드가 강제한다.
+    rlog "부분 열람 모드: 일반 웹 페이지 열람은 차단, GitHub 공식 저장소 원문(raw.githubusercontent.com)과 inbox 원문만 열람 — 출처별 원문 열람 표시·신뢰도 상한 적용" "준비"
+    PROBE_NOTE="$PROBE_NOTE · 부분 열람 모드(fetch_mode: mirror_only)"
+  elif [ "$WF" != "true" ]; then
     SRC=""
     if [ "$ALLOW_NO_FETCH" = 1 ]; then SRC="$ALLOW_NO_FETCH_SRC"
     elif [ "$WEB_TOOLS_REQUIRED" != "true" ]; then SRC="settings.web_tools_required: false"
@@ -212,7 +222,8 @@ if should_run select; then
     end_step "건너뜀" "재개(기존 target.json)"
   else
     "$PY" pipeline/select_target.py --date "$DATE" --run-id "$RUN_ID" \
-      ${RUN_TYPE:+--run-type "$RUN_TYPE"} ${AREA:+--area "$AREA"} ${TRACK:+--track "$TRACK"} ${STAGE:+--stage "$STAGE"} ${QIDS:+--question-ids "$QIDS"}
+      ${RUN_TYPE:+--run-type "$RUN_TYPE"} ${AREA:+--area "$AREA"} ${TRACK:+--track "$TRACK"} ${STAGE:+--stage "$STAGE"} ${QIDS:+--question-ids "$QIDS"} \
+      ${CATEGORY:+--category "$CATEGORY"} ${MAXQ:+--max-questions "$MAXQ"}
     end_step "성공" "$(jget "$RD/target.json" run_type) · $(jget "$RD/target.json" target.area_name 없음)"
   fi
   if [ "$STEP" = "select" ]; then say "완료(--step select): $RD/target.json"; exit 0; fi
@@ -239,6 +250,7 @@ elif should_run research || should_run verify1; then
       if ! "$PY" pipeline/agent_runner.py run --role researcher --run-id "$RUN_ID" --retry "$attempt"; then
         park "리서치 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
       fi
+      "$PY" pipeline/validate_run.py "$RUN_ID" --stage research >/dev/null || true   # 원문 열람 여부 확정·신뢰도 상한(코드, 1-1)
       BUDGET_NOTE="$("$PY" "$LIB" budget-check --run-id "$RUN_ID")"
       rlog "예산 점검: $BUDGET_NOTE" "리서치"
       end_step "$( [ "$attempt" -gt 0 ] && echo "재시도 ${attempt}회 후 성공" || echo 성공 )" "$BUDGET_NOTE"
@@ -249,6 +261,7 @@ elif should_run research || should_run verify1; then
     if ! "$PY" pipeline/agent_runner.py run --role verifier --stage first --run-id "$RUN_ID" --retry "$attempt"; then
       park "내용 검증 에이전트(1차) 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
     fi
+    "$PY" pipeline/validate_run.py "$RUN_ID" --stage verification1 >/dev/null || rlog "1차 검증 산출물 교차 검사 경고: runs/$RUN_ID/checks/verification1.json" "1차 검증"
     V1="$(jget "$RD/verification.json" verdict "")"
     case "$V1" in
       승인|"조건부 승인")
@@ -294,6 +307,21 @@ elif should_run storytell || should_run verify2; then
         park "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
       fi
       end_step "$( [ "$attempt2" -gt 0 ] && echo "재시도 ${attempt2}회 후 성공" || echo 성공 )" "페이지 $(jget "$RD/pages.json" pages | "$PY" -c 'import json,sys; print(len(json.load(sys.stdin)))')개"
+      # 형식 검증(코드, 운영 전환 1-2·1-3): 패치 적용 → 분량 초과 절 자동 분리 → 형식 검사 → 퍼블리셔 2~4단계 사전 검사.
+      # 실패하면 오류 목록을 붙여 스토리텔러에 형식 수정만 요청한다(최대 max_retries). 그래도 실패하면 보류.
+      begin_step "형식 검증"
+      ff=0
+      while ! "$PY" pipeline/validate_run.py "$RUN_ID" --stage pages; do
+        if [ "$ff" -ge "$MAX_RETRIES" ]; then
+          park "형식 검증 실패가 형식 수정 재작성 ${MAX_RETRIES}회 뒤에도 남음(runs/$RUN_ID/format_check.md)"
+        fi
+        ff=$((ff + 1))
+        rlog "형식 검증 실패 → 스토리텔러 형식 수정 재작성 ${ff}/${MAX_RETRIES} (runs/$RUN_ID/format_check.md)" "형식 검증"
+        if ! "$PY" pipeline/agent_runner.py run --role storyteller --run-id "$RUN_ID" --retry "$attempt2" --format-fix "$ff"; then
+          park "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)"
+        fi
+      done
+      end_step "$( [ "$ff" -gt 0 ] && echo "형식 수정 ${ff}회 후 통과" || echo 통과 )" "$(grep -o '자동 분리 [0-9]*건\|패치 적용 [0-9]*건' "$RD/log.md" | tail -n 2 | tr '\n' ' ')"
       if [ "$STEP" = "storytell" ]; then say "완료(--step storytell)"; exit 0; fi
     fi
     story_done=0
@@ -301,6 +329,7 @@ elif should_run storytell || should_run verify2; then
     if ! "$PY" pipeline/agent_runner.py run --role verifier --stage second --run-id "$RUN_ID" --retry "$attempt2"; then
       park "내용 검증 에이전트(2차) 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
     fi
+    "$PY" pipeline/validate_run.py "$RUN_ID" --stage verification2 >/dev/null || rlog "2차 검증 산출물 교차 검사 경고: runs/$RUN_ID/checks/verification2.json" "2차 검증"
     V2="$(jget "$RD/verification2.json" verdict "")"
     REASON="$(jget "$RD/verification2.json" retry_reason)"
     case "$V2" in
@@ -324,6 +353,11 @@ elif should_run storytell || should_run verify2; then
     esac
   done
   if [ "$STEP" = "verify2" ]; then say "완료(--step verify2): $V2"; exit 0; fi
+fi
+if [ "$UNTIL" = "verify2" ]; then
+  # 배치 실행(pipeline/run_batch.py): 에이전트 단계는 병렬로, 퍼블리셔는 하나씩 따로 부른다(--resume <id> --step publish)
+  say "완료(--until verify2): 2차 검증까지 끝났다. 퍼블리셔는 'bash pipeline/run_daily.sh --resume $RUN_ID --step publish'"
+  exit 0
 fi
 
 # ---------------------------------------------------------------------------------------------

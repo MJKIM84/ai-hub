@@ -1,0 +1,78 @@
+# 중점 연구 트랙 정의 — 자연어 업무 지시 챗봇 (확장 아이디어 2, 2026-09-25 편입)
+# 형식은 첫 트랙(config/tracks/manual-capability-ontology.yaml)과 같다(빌드 사양서 8.2 "트랙 정의 파일 형식" + 구축자 추가 필드).
+# 트랙은 분류를 바꾸지 않으며, 이 파일은 세부영역을 추가·병합하지 않는다. 세부영역은 데이터로는 번호로 적지만 페이지에서는 번호와 이름을 함께 쓴다.
+slug: nl-task-chatbot
+name: "자연어 업무 지시 챗봇"
+status: active                     # active | paused | done
+primary_area: 13                   # 13. 작업 배정 — MRTA
+related_areas: [14, 18, 27, 1, 2, 5, 6, 8, 12, 16, 19, 20, 23, 25, 26]
+# 중심(●): 13. 작업 배정 — MRTA, 14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영
+# 함께 필요(○): 1. 주문·업무 시스템 연계, 2. 공정·워크플로 모델링, 5. 로봇 능력·작업 온톨로지, 6. 지도·공간·위치 모델,
+#   8. 실시간 세계 상태·데이터 일관성, 12. 명령·작업 실행의 신뢰성, 16. 공용 자원·충전·에너지 최적화, 19. 모니터링·이상 탐지·원인 분석,
+#   20. 예외 복구·재계획·업무 연속성, 23. 시험·형식 검증·벤치마크, 25. 안전·위험 관리, 26. 사이버보안·접근권한·개인정보 (근거는 idea_area_notes)
+current_stage: 1
+stages: 5
+runs_per_week: null                # 비우면 settings.track_runs_per_week(트랙 전체의 주당 횟수)를 따르고, 트랙 사이 배분은 settings.track_weights 가 정한다
+budget: {max_sources_per_run: 20, max_search_queries: 40}
+
+stage_names:
+  1: "선행 연구·제품 사례 조사"
+  2: "필요한 데이터와 표준 조사"
+  3: "구현 가설 설계"
+  4: "오해석 방지와 확인 절차"
+  5: "검증 방법과 가설 판정"
+stage_pages:
+  1: stage-1-prior-work-and-products.md
+  2: stage-2-data-and-standards.md
+  3: stage-3-implementation-hypothesis.md
+  4: stage-4-misinterpretation-safeguards.md
+  5: stage-5-verification-and-hypotheses.md
+
+order: 2                           # 트랙 표시 순서
+research_goals:
+  - "자연어 지시(상황과 처리할 일)를 ROP가 실행할 수 있는 작업 단위로 파악·분해하는 방법을 밝힌다."
+  - "분해한 작업을 로봇 기능 온톨로지 질의로 적합한 로봇에 배정·배치하는 연결 방법을 밝힌다."
+  - "LLM의 잘못된 해석이 로봇 배정과 실행으로 이어지지 않게 하는 확인 절차와 권한 경계를 정한다."
+  - "작업 진행 관리와 스케줄링 결정을 LLM과 최적화 엔진 사이에 어떻게 나눌지 정한다."
+  - "해석·분해 정확도와 배정 적합성을 검증하는 지표와 절차를 정한다."
+draft_page: task-model-draft.md
+draft_title: "업무 분해·배정 설계 초안"
+draft_template: track-draft.md
+draft_versions: task_model_versions.json
+draft_version_label: "초안 버전"
+stage_artifacts:
+  3: [experiments.md]
+  5: [experiments.md]
+idea_no: 2
+idea_name: "자연어 업무 지시 챗봇"
+idea_definition: "사용자가 채팅으로 상황과 처리할 일을 입력하면 AI가 업무를 파악·분해하고, 온톨로지로 적합한 로봇을 찾아 배정·배치한 뒤 작업 진행과 스케줄링을 자동으로 관리"
+idea_page: docs/ideas/nl-task-chatbot.md
+idea_areas:
+  primary: [13, 14, 18, 27]
+  related: [1, 2, 5, 6, 8, 12, 16, 19, 20, 23, 25, 26]
+idea_area_notes:
+  13: "중심 영역. '온톨로지로 적합한 로봇을 찾아 배정'하는 일이 이 영역의 배정 문제다"
+  14: "중심 영역. '작업 진행과 스케줄링을 자동으로 관리'하는 일이 이 영역의 순서·시간 제약·긴급 작업 삽입 문제다"
+  18: "중심 영역. 채팅은 작업자·관리자가 일을 지시하고 확인·승인하는 운영 인터페이스다"
+  27: "중심 영역. 27번 정의의 LLM 에이전트와, AI가 만든 작업 계획을 실행에 쓰는 기준을 묻는 이 영역의 질문이 해석과 오해석 방지 단계에 그대로 걸린다"
+  1: "채팅 지시는 업무 시스템의 주문·요청과 나란히 들어오는 업무 요청이므로 변경·취소·완료 반영 규칙을 함께 본다"
+  2: "분해 결과가 들어갈 작업 단계·선후관계·완료 조건의 틀을 이 영역이 정의한다"
+  5: "'온톨로지로 적합한 로봇을 찾는' 질의의 대상이다(아이디어 1의 산출물)"
+  6: "지시 속 장소 표현(예: 층·구역 이름)을 공간 노드로 해석한다(아이디어 3의 산출물)"
+  8: "배정 시점의 로봇 위치·배터리·가용 상태를 현재 상태로 확인한다"
+  12: "배정 뒤 명령의 접수·실행·완료·취소 상태와 같은 지시의 중복 처리 방지가 필요하다"
+  16: "배치할 때 승강기·충전기 같은 공용 자원 예약을 함께 정한다"
+  19: "'작업 진행 관리'에서 지연·이상을 탐지하고 원인을 설명한다"
+  20: "진행 중 고장·지시 변경 때 재배정·재계획을 한다"
+  23: "해석·배정 결과를 지시 시나리오 시험과 모델·프롬프트 변경 뒤 회귀시험으로 검증한다"
+  25: "오해석이 위험한 동작으로 이어지지 않게 안전 조건을 확인 절차에 넣는다"
+  26: "채팅 사용자가 어느 로봇·구역에 어떤 작업까지 지시할 수 있는지(명령 권한)와 대화 기록 보호를 정한다"
+glossary_targets:
+  - "작업 분해(task decomposition)"
+  - "LLM 에이전트(LLM agent)"
+  - "구조화 출력(structured output)"
+  - "의도 인식(intent recognition)"
+  - "슬롯 채우기(slot filling)"
+  - "사람 확인 루프(human-in-the-loop)"
+  - "혼합 정수 계획(Mixed Integer Linear Programming, MILP)"
+  - "환각(hallucination)"

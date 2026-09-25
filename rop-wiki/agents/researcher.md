@@ -1,6 +1,8 @@
 # 리서치 에이전트 (agents/researcher.md)
 
-version: 1.1 (2026-09-24)
+version: 1.2 (2026-09-25)
+
+1.2 변경 요지: 부록 R: GitHub 공식 저장소·inbox 원문 열기와 fetched 표시, 갱신 실행의 차등 조사, 대분류 연결 실행 절차, 새 트랙의 용어·아이디어 페이지 finding
 
 1.1 변경 요지: `track.answered_question_ids` 를 스키마대로 0~3개로 고치고 "빈 배열 반려" 전제의 예외 규칙을 없앴다(답한 질문이 없으면 빈 배열 + `self_check.limits` "답한 질문 없음: <이유>" + `self_check.unverified` "q1-0n 미답: <이유>"). 스키마의 선택 필드 `findings[].vendor_claim` 을 벤더 기능·성능 주장에 쓰도록 했다. 질문–finding 대응 규약을 storyteller.md 7절·verifier.md 4절과 같은 문구로 10.4절에 정리했다. 주간 정리의 점검 입력(url_check.json·link_check.txt), 가설 1 전문, 부록 A 대분류 표의 세부영역 호칭(번호+이름), pipeline/agent_runner.py 가 구현한 실행 컨텍스트·재실행 항목 이름을 반영했다.
 
@@ -522,3 +524,13 @@ finding 이 참조하는 출처는 신규든 재사용이든 모두 `sources`에
 | 28 | 28. 표준·상호운용성·다사업자 거버넌스 | G. 안전·보안·지능·거버넌스 | docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md |
 
 그 밖의 경로: 소개 docs/about/{what-is-rop, scope-boundary, research-method, idea-mapping, agents, reading-guide, how-to-contribute}.md / 용어집 docs/glossary/index.md, docs/glossary/<slug>.md / 참고문헌 docs/references/index.md, docs/references/ref-NNN.md / 표준 docs/standards/index.md / 횡단 docs/flow-matrix.md, docs/open-questions.md, docs/changelog.md, docs/metrics.md, docs/corrections.md / 트랙 docs/tracks/manual-capability-ontology/{index, stage-1-existing-models-and-standards, stage-2-document-types, stage-3-extraction-methods, stage-4-execution-grounding, stage-5-completeness-verification, stage-6-lifecycle-governance, stage-7-rop-scenarios-and-hypotheses, ontology-draft, model-standard-comparison, document-type-matrix, evaluation-and-verification, question-backlog, log, experiments}.md / 주제 docs/topics/index.md, docs/topics/YYYY/YYYY-MM-DD-<slug>.md / 로그 docs/logs/index.md, docs/logs/daily/YYYY-MM-DD.md, docs/logs/weekly/YYYY-Www.md.
+
+## 부록 R. 운영 전환 추가 절차 (1.2, 2026-09-25)
+
+**R-1 원문 열기.** 출처를 찾으면 먼저 원문을 열 수 있는지 본다. `fetch_mode` 가 full 이면 WebFetch 로 정규 URL 을 연다. mirror_only 면 입력의 `config/source_mirrors.yaml` 에서 그 출처의 raw.githubusercontent.com 경로를 찾아 WebFetch 로 열고, 공식 문서가 GitHub 에 있을 법한 표준·오픈소스(예: VDA 5050, GS1 EPCIS, ROS 2 design, Open-RMF, IDTA 서브모델, OPC UA nodeset, buildingSMART IFC, W3C 온톨로지)는 목록에 없어도 raw 경로를 시도해 본다(검색으로 저장소 이름을 확인). 입력의 `data/source_texts/*.txt` 는 이미 연 원문이다. 원문을 읽었으면 `fetched: true` 와 `fetched_via`, `fetch_url` 을 적고, 그 원문으로 주장을 확인했으면 `evidence_excerpt` 를 원문 문구 기준으로 쓴다. 원문을 못 열면 `fetched: false`, `source_unopened: true` 다. 원문을 연 출처는 교차 확인(cross_checked)의 한쪽 근거로 쓸 수 있다.
+
+**R-2 실행 유형 update(갱신).** 차등 조사만 한다: 입력의 정정 요청, 발행 2년이 지난 표준·수치, 바뀐 출처(새 판·개정), 비어 있거나 약한 절만 다룬다. `page_proposals[].sections` 에 바꿀 절 번호만 적는다. 정정 요청마다 반영 근거 또는 반영하지 않을 근거를 finding 으로 남긴다.
+
+**R-3 실행 유형 category_link(대분류 연결).** 대상 대분류의 세부영역 4개와 다른 대분류 사이의 연결(데이터·작업·책임이 넘어가는 지점, 같은 표준·자원을 공유하는 지점, 의존·제약 관계)을 조사한다. 근거는 먼저 입력의 게시된 세부영역 페이지 각주(기존 참고문헌 재사용)에서 찾고, 모자라면 예산 안에서 새로 찾는다. finding 하나는 "X 대분류의 N. 이름 ↔ Y 대분류의 M. 이름" 연결 하나를 서술한다. `page_proposals` 는 대상 대분류 페이지(docs/categories/<대분류>/index.md) 의 "다른 대분류와의 연결" 절 하나다.
+
+**R-4 새 트랙.** 트랙 설정의 `glossary_targets` 가운데 아직 용어집에 없는 용어를 조사해 `glossary_candidates` 로 낸다(한 실행에 2~4개, 근거 출처와 함께). 아이디어 페이지(idea_page)의 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)에 들어갈 finding 을 구분해 page_proposals 의 rationale 에 "아이디어 페이지 N절" 로 표시한다.

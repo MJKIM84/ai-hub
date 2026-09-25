@@ -328,26 +328,33 @@ class Publisher:
 
     # --- 1. 스키마 검증 -----------------------------------------------------------------
     def step1_schema(self) -> None:
+        pre = bool(getattr(self.args, "precheck", False))   # 2차 검증 전 형식 사전 검사(validate_run.py): verification2.json 없음
         missing = [n for n, d in (("research.json", self.research), ("verification.json", self.v1),
-                                  ("verification2.json", self.v2), ("pages.json", self.pages)) if d is None]
+                                  ("verification2.json", self.v2), ("pages.json", self.pages)) if d is None
+                   and not (pre and n == "verification2.json")]
         if missing:
             raise PublishError(f"1단계 스키마 검증: 산출물 없음 {missing}")
         errs = []
         for kind, data, label in (("research", self.research, "research.json"), ("verification", self.v1, "verification.json"),
                                   ("verification", self.v2, "verification2.json"), ("pages", self.pages, "pages.json")):
+            if data is None and pre:
+                continue
             errs += [f"{label} {e}" for e in runs.validate(kind, data)]
         if errs:
             raise PublishError("1단계 스키마 검증 실패:\n" + "\n".join(f"  - {e}" for e in errs[:40]))
         errs += [f"research.json {e}" for e in runs.semantic_checks("research", self.research, self.run_type, self.track_cfg)]
         errs += [f"verification.json {e}" for e in runs.semantic_checks("verification", self.v1, self.run_type, self.track_cfg, self.research)]
-        errs += [f"verification2.json {e}" for e in runs.semantic_checks("verification", self.v2, self.run_type, self.track_cfg, self.research)]
+        if self.v2 is not None:
+            errs += [f"verification2.json {e}" for e in runs.semantic_checks("verification", self.v2, self.run_type, self.track_cfg, self.research)]
         errs += [f"pages.json {e}" for e in runs.semantic_checks("pages", self.pages, self.run_type, self.track_cfg)]
         for f, label in ((self.v1, "verification.json"), (self.v2, "verification2.json"), (self.pages, "pages.json")):
+            if f is None:
+                continue
             if f.get("run_id") != self.run_id:
                 errs.append(f"{label}: run_id {f.get('run_id')!r} 가 {self.run_id!r} 와 다르다")
         if self.v1.get("stage") != "first":
             errs.append("verification.json 의 stage 가 first 가 아니다")
-        if self.v2.get("stage") != "second":
+        if self.v2 is not None and self.v2.get("stage") != "second":
             errs.append("verification2.json 의 stage 가 second 가 아니다")
         if self.research.get("run_id") != self.run_id:
             errs.append(f"research.json: run_id {self.research.get('run_id')!r} 가 {self.run_id!r} 와 다르다")
@@ -359,6 +366,63 @@ class Publisher:
             raise PublishError("1단계 스키마 밖 검사 실패:\n" + "\n".join(f"  - {e}" for e in errs[:40]))
         render_run_md.render_run(self.rd)  # 사람이 읽는 research.md·verification.md·verification2.md·pages.md 를 최신으로
         self.info("1단계 스키마 검증 통과 (research, verification, verification2, pages)")
+
+    # --- 1c. 참고문헌 id 재배정(배치 실행) --------------------------------------------------------
+    @staticmethod
+    def _norm_url(u) -> str:
+        u = str(u or "").strip()
+        u = re.sub(r"^https?://", "", u, flags=re.I)
+        u = re.sub(r"^www\.", "", u, flags=re.I)
+        return u.rstrip("/").lower()
+
+    def remap_reference_ids(self) -> dict:
+        """병렬로 조사한 실행들이 같은 '다음 참고문헌 id'를 받았을 수 있다(배치 실행, run_batch.py). 반영 직전에 이번 실행의 새 출처 id 가
+        이미 다른 URL 에 쓰였으면 다음 빈 번호로 옮기고, 같은 URL 이 이미 다른 id 로 등록돼 있으면 그 id 를 재사용한다(공통 규칙 10 "기존 각주
+        재사용"). pages/ 원고·pages.json·research.json·verification*.json 의 id 를 함께 바꾼다. 반환: {옛 id: 새 id}."""
+        existing: dict[str, str] = {}
+        for pth in (paths.DOCS / "references").glob("ref-*.md"):
+            try:
+                meta, _ = fm.read(pth)
+                existing[pth.stem] = self._norm_url(meta.get("url"))
+            except Exception:
+                continue
+        run_refs: dict[str, str] = {}
+        for s in (self.research or {}).get("sources", []):
+            if s.get("id"):
+                run_refs[s["id"]] = self._norm_url(s.get("url"))
+        for r in self.pages.get("reference_updates") or []:
+            if r.get("id"):
+                run_refs.setdefault(r["id"], self._norm_url(r.get("url")))
+        mapping = compute_ref_mapping(existing, run_refs)
+        if not mapping:
+            return {}
+        pat = re.compile(r"\bref-(\d{3,})\b")
+        def sub(text: str) -> str:
+            return pat.sub(lambda m: mapping.get(m.group(0), m.group(0)), text)
+        targets = [self.rd / "pages.json", self.rd / "research.json", self.rd / "verification.json", self.rd / "verification2.json"]
+        targets += [pth for pth in (self.rd / "pages").rglob("*.md")] if (self.rd / "pages").is_dir() else []
+        for pth in targets:
+            if pth.is_file():
+                txt = pth.read_text(encoding="utf-8")
+                new = sub(txt)
+                if new != txt:
+                    pth.write_text(new, encoding="utf-8")
+        self.research = runs.read_json(self.rd / "research.json", None)
+        self.v1 = runs.read_json(self.rd / "verification.json", None)
+        self.v2 = runs.read_json(self.rd / "verification2.json", None)
+        self.pages = runs.read_json(self.rd / "pages.json", None)
+        # 재사용으로 id 가 기존 것과 같아진 reference_updates 항목은 등록할 필요가 없다(같은 URL 이면 _apply_references 가 건너뛴다)
+        seen: set = set()
+        uniq = []
+        for r in self.pages.get("reference_updates") or []:
+            if r.get("id") in seen:
+                continue
+            seen.add(r.get("id"))
+            uniq.append(r)
+        self.pages["reference_updates"] = uniq
+        runs.write_json(self.rd / "pages.json", self.pages)
+        self.info("참고문헌 id 재배정(병렬 실행 충돌·중복 URL): " + ", ".join(f"{a}→{b}" for a, b in mapping.items()))
+        return mapping
 
     # --- 1b. 판정 확인(1단계의 일부) ------------------------------------------------------------
     def step1b_verdicts(self) -> None:
@@ -429,8 +493,13 @@ class Publisher:
             self.info("2단계 전 표기 정규화: 바꿀 것 없음")
 
     def step2_frontmatter(self) -> None:
-        self.normalize_tag_parens()
+        # 태그 뒤 괄호 같은 형식 오류는 스토리텔러 직후 형식 검증(pipeline/validate_run.py)이 잡아 재작성을 요청한다.
+        # 퍼블리셔는 사후 보정을 하지 않고 검사만 한다(운영 전환 1-2).
         errs = []
+        for pg in self.pages.get("pages", []):
+            text = self.page_src(pg).read_text(encoding="utf-8") if self.page_src(pg).is_file() else ""
+            if self._TAG_PAREN.search(text):
+                errs.append(f"{self.page_rel(pg)}: 사실 표기 태그 바로 뒤에 여는 괄호가 있다(형식 검증을 거치지 않은 산출물)")
         for pg in self.pages.get("pages", []):
             rel = self.page_rel(pg)
             text = self.page_src(pg).read_text(encoding="utf-8")
@@ -793,10 +862,15 @@ class Publisher:
             rel = f"references/{rid}.md"
             pub = r.get("published")
             pub_s = str(pub) if pub not in (None, "") else "미확인"
-            unopened = bool(r.get("source_unopened"))
+            src_r = next((s for s in (self.research or {}).get("sources", []) if s.get("id") == rid), {}) or {}
+            fetched = bool(src_r.get("fetched") or r.get("fetched"))
+            fetched_via = src_r.get("fetched_via") or r.get("fetched_via")
+            fetch_url = src_r.get("fetch_url") or r.get("fetch_url")
+            unopened = bool(r.get("source_unopened")) and not fetched
             meta = {"title": f"{rid} — {r['title']}", "type": "reference", "ref_id": rid, "ref_title": r["title"], "org": r["org"],
                     "published": pub_s, "url": r["url"], "source_type": r["type"], "reliability": r["reliability"],
                     "url_verified": not unopened, "accessed": r["accessed"], "related_areas": [], "tags": [],
+                    "fetched": fetched, "fetched_via": fetched_via if fetched else None, "fetch_url": fetch_url if fetched else None,
                     "status": "published", "created": self.date, "updated": self.date, "version": 1}
             note = ("원문 미열람(페이지 열람이 차단된 환경에서 검색 결과의 기관·제목·URL 일치로 실재를 확인했다). 신뢰도는 medium 이 상한이다."
                     if unopened else "내용 검증 에이전트가 출처 실재성과 주장 뒷받침 여부를 확인했다.")
@@ -806,7 +880,7 @@ class Publisher:
                 "## 서지 정보", "", "| 항목 | 값 |", "|---|---|",
                 f"| id | {rid} |", f"| 기관 | {r['org']} |", f"| 제목 | {r['title']} |", f"| 발행일 | {pub_s} |",
                 f"| URL | <{r['url']}> |", f"| 유형 | {r['type']} |", f"| 신뢰도 | {r['reliability']} |",
-                f"| 원문 열람 | {'미확인 — 원문 미열람' if unopened else '확인'} |", f"| 접근일 | {r['accessed']}{' (원문 미열람)' if unopened else ''} |", "",
+                f"| 원문 열람 | {('열람(' + str(fetched_via) + (', ' + str(fetch_url) if fetch_url else '') + ')') if fetched else '원문 미열람'} |", f"| 접근일 | {r['accessed']}{' (원문 미열람)' if unopened else ''} |", "",
                 "## 요약", "", r.get("summary", ""), "", f"등록 실행: {self.run_id} · 검증: 1차 {self.v1.get('verdict')} / 2차 {self.v2.get('verdict')}", "",
                 "## 인용된 페이지", "",
                 f"이 출처를 프런트매터 `sources` 또는 각주 `[^{rid}]` 로 인용했거나 이 페이지로 링크한 페이지의 목록이다. 퍼블리셔가 docs 전체를 스캔해 자동으로 갱신한다.", "",
@@ -929,9 +1003,27 @@ class Publisher:
 
     def _apply_corrections(self) -> None:
         ids = list(dict.fromkeys((self.v1.get("corrections_applied") or []) + (self.v2.get("corrections_applied") or [])))
-        if not ids:
+        rejected: dict = {}
+        for v in (self.v1, self.v2):
+            for r in (v or {}).get("corrections_rejected") or []:
+                if r.get("id") and r.get("id") not in ids:
+                    rejected[r["id"]] = r.get("reason") or "사유 미기재"
+        if not ids and not rejected:
             return
         text = runs.read_text(runs.INBOX_CORRECTIONS, "")
+        known_all = {c["id"]: c for c in runs.parse_corrections(text)}
+        # 1-6: 검증 에이전트가 반영하지 않기로 판정한 정정 요청은 사유와 함께 rejected 로 바꾸고 변경 이력에 남긴다
+        for cid, reason in rejected.items():
+            c = known_all.get(cid)
+            if not c:
+                self.notes.append(f"거절한 정정 요청 {cid} 가 inbox/corrections.md 에 없다")
+                continue
+            text = runs.update_correction_block(text, cid, "rejected", self.run_id, _short(f"거절: {reason}", 300))
+            self._changelog_item("정정", c["page"] or primary_page(self.pages), f"정정 요청 {cid} 거절: {_short(reason, 80)}")
+            self.counts["corrections"] += 1
+        if not ids:
+            runs.write_text(runs.INBOX_CORRECTIONS, text)
+            return
         known = {c["id"]: c for c in runs.parse_corrections(text)}
         fixes = "; ".join((self.pages.get("fixes_applied") or [])[:3])
         for cid in ids:
@@ -1386,6 +1478,30 @@ class Publisher:
             reasons.append(f"{f.name}: {d.get('verdict')} — {_short(d.get('retry_reason') or '; '.join(d.get('required_fixes') or []), 160)}")
         return len(files), reasons
 
+    def usage_totals(self) -> dict:
+        """이 실행의 모델 호출 토큰·비용 합계(runs/<id>/usage.json + probe.json 의 점검 호출). 운영 전환 1-5."""
+        u = runs.read_json(self.rd / "usage.json", {}) or {}
+        calls = list(u.get("calls") or [])
+        probe = runs.read_json(self.rd / "probe.json", {}) or {}
+        for k in ("web_search", "web_fetch", "web_fetch_mirror"):
+            pu = ((probe.get("details") or {}).get(k) or {}).get("usage")
+            if pu:
+                calls.append(dict(pu, step=f"probe-{k}"))
+        tot = {k: sum(int(c.get(k) or 0) for c in calls) for k in
+               ("input_tokens", "cache_creation_input_tokens", "cache_read_input_tokens", "output_tokens")}
+        tot["cost_usd"] = round(sum(float(c.get("cost_usd") or 0) for c in calls), 4)
+        tot["calls"] = len(calls)
+        by_step: dict = {}
+        for c in calls:
+            key = re.sub(r"(-retry\d+|-formatfix\d+|-schema-retry)+$", "", str(c.get("step") or "?"))
+            b = by_step.setdefault(key, {"calls": 0, "cost_usd": 0.0, "output_tokens": 0, "cache_read_input_tokens": 0, "cache_creation_input_tokens": 0})
+            b["calls"] += 1
+            b["cost_usd"] = round(b["cost_usd"] + float(c.get("cost_usd") or 0), 4)
+            for k in ("output_tokens", "cache_read_input_tokens", "cache_creation_input_tokens"):
+                b[k] += int(c.get(k) or 0)
+        tot["by_step"] = by_step
+        return tot
+
     def summary_data(self, end_state: str, published: bool) -> dict:
         t = self.target.get("target") or {}
         tgt = {"area_no": t.get("area_no"), "area_name": t.get("area_name"), "category": t.get("category")}
@@ -1415,6 +1531,10 @@ class Publisher:
             "first_retries": r1, "second_retries": r2, "end_state": end_state,
             "changelog_entry": (self.pages or {}).get("changelog_entry"), "notes": self.notes,
             "counts": self.counts, "updated_at": runs.now_str(self.settings),
+            "usage": self.usage_totals(),
+            "format_check": runs.read_json(self.rd / "checks" / "pages.json", None),
+            "fetched_sources": sum(1 for s in (self.research or {}).get("sources", []) if s.get("fetched")),
+            "cross_checked_findings": sum(1 for f in (self.research or {}).get("findings", []) if f.get("cross_checked")),
         }
         if self.mode == "log_only" and not self.committed and prev.get("commit"):
             # 로그만 다시 쓰는 호출이 아직 커밋하지 않았으면 이전 커밋 기록을 유지한다(커밋하면 commit_run 이 새 해시로 바꾼다)
@@ -1428,6 +1548,16 @@ class Publisher:
         if not parked and prev.get("park_reason") and not data.get("resumed_from_park_reason"):
             data["resumed_from_park_reason"] = prev["park_reason"]
         return data
+
+    def usage_table(self) -> str:
+        u = self.usage_totals()
+        if not u.get("calls"):
+            return "기록 없음"
+        rows = ["| 단계 | 호출 | 캐시 쓰기 토큰 | 캐시 읽기 토큰 | 출력 토큰 | 비용(USD) |", "|---|---|---|---|---|---|"]
+        for step, b in u["by_step"].items():
+            rows.append(f"| {step} | {b['calls']} | {b['cache_creation_input_tokens']:,} | {b['cache_read_input_tokens']:,} | {b['output_tokens']:,} | {b['cost_usd']:.2f} |")
+        rows.append(f"| **합계** | {u['calls']} | {u['cache_creation_input_tokens']:,} | {u['cache_read_input_tokens']:,} | {u['output_tokens']:,} | **{u['cost_usd']:.2f}** |")
+        return "\n".join(rows)
 
     def daily_block(self, end_state: str) -> str:
         t = self.target.get("target") or {}
@@ -1443,6 +1573,8 @@ class Publisher:
             target_cell = f"[{t.get('area_name')}]({paths.rel_link(log_rel, paths.area_rel_path(int(t['area_no'])))})"
             if self.target.get("topic"):
                 target_cell += f" · 주제: {self.target['topic']}"
+        elif rt == "category_link" and t.get("category_letter"):
+            target_cell = f"[{t.get('category')}]({paths.rel_link(log_rel, paths.category_index_rel(t['category_letter']))}) · 다른 대분류와의 연결 절"
         elif not self.target:
             target_cell = "미선정(대상 선정 전에 중단)"
         else:
@@ -1470,11 +1602,7 @@ class Publisher:
         for pg in (self.pages or {}).get("pages", []):
             kind = "폐기" if pg.get("status") == "deprecated" else ("생성" if pg.get("action") == "create" else "갱신")
             title = self._title_of(pg["path"])
-            # 반영되지 않은 실행(보류·중단·원복)이면 새 페이지가 docs 에 없으므로 링크 대신 경로 글자만 적는다(깨진 링크 방지)
-            if (paths.ROOT / pg["path"]).exists():
-                page_cell = f"[{_esc(title)}]({paths.rel_link(log_rel, paths.docs_rel(pg['path']))})"
-            else:
-                page_cell = f"{_esc(title)} (`{pg['path']}`, 미반영)"
+            page_cell = daily_log_page_cell(log_rel, pg["path"], title)
             pages_rows.append(f"| {kind} | {page_cell} | {_esc(pg.get('diff_summary', ''))} |")
         side = ", ".join(f"{k} {v}건" for k, v in (("용어집", self.counts["glossary"]), ("참고문헌", self.counts["references"]), ("표준", self.counts["standards"]),
                                                  ("열린 질문", self.counts["open_questions"]), ("흐름 매트릭스 칸", self.counts["flow_cells"]),
@@ -1595,6 +1723,7 @@ class Publisher:
             "### 신규 출처 수", "", src_line, "",
             "### 반려·보류 사유", "", park, "",
             "### 예산 사용량", "", budget_table, "",
+            "### 모델 호출 토큰·비용", "", self.usage_table(), "",
             "### 다음 실행 메모", "", next_notes, "",
         ]))
 
@@ -1684,9 +1813,17 @@ class Publisher:
         return ok
 
     def step9_notify(self) -> None:
-        notify = str(self.settings.get("notify") or "none")
-        if notify != "none":
-            self.info(f"9단계 알림({notify}): 자리만 있음 — 발송은 구현되지 않았다 [가정]")
+        """9단계 알림(1-6): config/ops.yaml 의 notify 설정대로 슬랙·이메일을 보낸다. enabled: false(기본)면 보내지 않는다.
+        커밋 뒤라 실행 폴더에는 쓰지 않고 표준 출력만 남긴다."""
+        try:
+            from lib import notify as N
+            summ = runs.read_summary(self.rd)
+            res = N.send(summ, f"docs/logs/daily/{self.date}.md")
+            print(f"[publish] 9단계 알림: {res.get('status')} — {res.get('detail', '')}")
+        except ImportError:
+            print("[publish] 9단계 알림: lib/notify.py 없음 — 건너뜀")
+        except Exception as e:  # noqa: BLE001 — 알림 실패는 게시를 되돌리지 않는다
+            print(f"[publish] 9단계 알림 실패(게시는 유지): {e}")
         self.drop_backup()
 
     # --- 실행 ---------------------------------------------------------------------------------
@@ -1694,7 +1831,10 @@ class Publisher:
         self.info(f"퍼블리셔 시작: {self.run_id} ({self.run_type_label()})")
         try:
             self.step1_schema()
-            self.step1b_verdicts()
+            if getattr(self.args, "precheck", False):
+                self.info("사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다")
+            else:
+                self.step1b_verdicts()
             if self.args.check_only:
                 errs = self.check_only_anchor_errors()
                 if errs:
@@ -1702,6 +1842,8 @@ class Publisher:
                                        + "\n".join(f"  - {e}" for e in errs[:40]))
                 self.info("--check-only: 1단계(스키마·판정 확인)와 pages.json 링크 필드 앵커 대조까지 확인했다(반영하지 않음)")
                 return 0
+            if not (self.args.dry_run or self.args.check_only):
+                self.remap_reference_ids()
             self.step2_frontmatter()
             self.step3_protect()
             self.step4_links()
@@ -1812,6 +1954,34 @@ def primary_page(pages: dict) -> str:
     return pages["pages"][0]["path"] if pages.get("pages") else "docs/"
 
 
+def daily_log_page_cell(log_rel: str, repo_path: str, title: str) -> str:
+    """일일 로그 '생성·갱신 페이지' 표의 페이지 칸. 반영되지 않은 실행(보류·중단·원복)이면 새 페이지가 docs 에 없으므로
+    링크 대신 경로 글자와 '미반영'을 적는다(드라이런 1 회귀: 깨진 링크로 check_links 실패)."""
+    if (paths.ROOT / repo_path).exists():
+        return f"[{_esc(title)}]({paths.rel_link(log_rel, paths.docs_rel(repo_path))})"
+    return f"{_esc(title)} (`{repo_path}`, 미반영)"
+
+
+def compute_ref_mapping(existing: dict, run_refs: dict) -> dict:
+    """참고문헌 id 재배정 규칙(순수 함수). existing: {docs 에 있는 id: 정규화 URL}, run_refs: {이번 실행의 id: 정규화 URL}.
+    같은 URL 이 이미 다른 id 로 있으면 그 id 로, 같은 id 가 이미 다른 URL 에 쓰였으면 다음 빈 번호로 옮긴다."""
+    by_url = {u: i for i, u in existing.items() if u}
+    used = set(existing) | set(run_refs)
+    mapping: dict = {}
+
+    def nxt():
+        n = max([int(x.split("-")[1]) for x in used if re.match(r"^ref-\d+$", x)] or [0]) + 1
+        nid = f"ref-{n:03d}"
+        used.add(nid)
+        return nid
+    for rid, url in run_refs.items():
+        if url and url in by_url and by_url[url] != rid:
+            mapping[rid] = by_url[url]
+        elif rid in existing and existing[rid] and url and existing[rid] != url:
+            mapping[rid] = nxt()
+    return mapping
+
+
 def _esc(s) -> str:
     return neutralize_footnotes(s).replace("|", "\\|").replace("\n", " ")
 
@@ -1841,10 +2011,20 @@ def main(argv=None) -> int:
     ap.add_argument("run_id")
     ap.add_argument("--check-only", action="store_true", help="1단계(스키마·판정 확인)만 확인")
     ap.add_argument("--dry-run", action="store_true", help="1~4단계만 실행하고 docs 를 되돌린다")
+    ap.add_argument("--precheck", action="store_true", help="2차 검증 전 형식 사전 검사: 판정 확인 없이 2~4단계만 검사하고 되돌린다(validate_run.py 가 쓴다)")
     ap.add_argument("--log-only", action="store_true", help="보류·중단된 실행의 일일 로그·summary.json 만 쓴다")
     ap.add_argument("--no-build", action="store_true", help="6단계 사이트 빌드(와 8단계 재빌드)를 건너뛴다")
     ap.add_argument("--no-commit", action="store_true", help="7단계 커밋(과 커밋 해시 기록 커밋)을 건너뛴다")
     args = ap.parse_args(argv)
+    if args.precheck:
+        args.dry_run = True   # 사전 검사는 1~4단계 뒤 되돌린다(일일 로그·커밋 없음)
+    # 퍼블리셔는 docs·data 를 스냅숏·반영·복원하고 git 커밋을 한다. 배치 실행(run_batch.py)에서 여러 실행이 동시에 끝나도
+    # 한 번에 하나만 돌도록 전역 잠금을 건다(사전 검사·로그 전용 모드 포함). 잠금은 프로세스가 끝나면 풀린다.
+    import fcntl
+    lock_path = paths.ROOT / "runs" / ".cache" / "publish.lock"
+    lock_path.parent.mkdir(parents=True, exist_ok=True)
+    _lock_fh = open(lock_path, "w")
+    fcntl.flock(_lock_fh, fcntl.LOCK_EX)
     try:
         settings = runs.load_settings()
     except Exception as e:

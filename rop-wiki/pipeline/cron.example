@@ -1,16 +1,40 @@
-# ROP 연구 위키 — cron 등록 예시 (빌드 사양서 0장 scheduler: cron, run_time: "06:00 Asia/Seoul"; 9장 단계 4)
+# ROP 연구 위키 — 운영 서버 cron 등록 예시 (빌드 사양서 0장 scheduler: cron, run_time: "06:00 Asia/Seoul"; 9장 단계 4)
 #
-# 등록: bash pipeline/install_cron.sh        (이 파일의 자리표시자를 실제 경로로 바꿔 crontab 에 마커 주석과 함께 넣는다.
-#                                             시각과 CRON_TZ 는 config/settings.yaml 의 run_time·timezone 에서 읽는다. 0장 run_time 을 바꾸면 다시 등록한다)
-# 해제: bash pipeline/uninstall_cron.sh      (마커 주석 사이의 줄만 지운다)
-# 손으로 넣으려면 `crontab -e` 에서 아래 세 줄을 붙여 넣고 /ABSOLUTE/PATH/TO/rop-wiki 를 위키 루트의 절대 경로로,
-# PATH 를 claude·mkdocs·python3 가 있는 경로로 바꾼다(cron 은 로그인 셸의 PATH 를 쓰지 않는다).
+# 등록은 손으로 하지 말고 스크립트를 쓴다(기본은 꺼져 있다 — config/ops.yaml 의 cron.enabled: false):
+#   python3 pipeline/lib/notify.py --enable cron      # 등록 허용 스위치를 켠다
+#   bash pipeline/install_cron.sh --dry-run            # 등록할 블록을 미리 본다
+#   bash pipeline/install_cron.sh                      # crontab 맨 끝에 마커 주석 블록으로 넣는다(있으면 그 블록만 바꾼다)
+#   bash pipeline/uninstall_cron.sh                    # 마커 주석 사이의 줄만 지운다
+#   crontab -l                                         # 확인. 실행 기록은 runs/cron.log(5MB 넘으면 cron.log.1 로 순환)
+# 시각은 config/settings.yaml 의 run_time·timezone 에서 읽는다. run_time 을 바꾸면 install_cron.sh 를 다시 실행한다.
 #
-# - CRON_TZ 는 cronie(대부분의 리눅스 배포판) 가 지원하는 시간대 지정이다. 지원하지 않는 cron 이면 이 줄을 지우고
-#   서버 시간대에 맞춰 시각을 바꾸거나(예: UTC 서버면 "0 21 * * *" = 전날 21:00 UTC = 06:00 KST) TZ=Asia/Seoul 로 바꿔 본다.
-# - 실행 결과와 오류는 runs/cron.log 에 누적된다. 실행별 상세 로그는 runs/<DATE>-<NN>/log.md, 일일 로그는 docs/logs/daily/<DATE>.md.
-# - 같은 날 두 번 실행되면 실행 id 가 <DATE>-02 로 붙는다(재실행이 필요하면 bash pipeline/run_daily.sh --resume <run_id>).
+# 등록되는 블록의 구성(아래 예시):
+# - flock -n -E 75 <위키>/runs/.lock : 앞 실행이 끝나지 않았으면 이번 실행을 건너뛴다(두 실행이 겹치지 않는다). 잠금은 프로세스가
+#   끝나면 커널이 풀어 준다. 건너뛰면 두 번째 명령(cron_wrapper.sh --lock-busy)이 cron.log 에 "건너뜀"을 남긴다.
+# - pipeline/cron_wrapper.sh : cron.log 순환 → 환경 파일(~/.config/rop-wiki/env, 있으면) 읽기 → run_daily.sh(4시간 상한)
+#   → (deploy.enabled·gh-deploy 이면) deploy_site.sh --yes → 종료 코드 기록.
+# - PATH : cron 은 로그인 셸의 PATH 를 쓰지 않으므로 claude·mkdocs·python3·git 이 있는 디렉터리를 넣는다(install_cron.sh 가 command -v 로 찾는다).
+# - 시간대 : CRON_TZ 는 cronie(RHEL·Fedora·Arch 등)만 지원한다. Debian·Ubuntu 기본 cron 은 CRON_TZ 를 무시하고 서버 시간대로 해석하므로
+#   install_cron.sh 는 cron 데몬을 보고 자동으로 고른다(tz_mode auto): 지원하면 아래 1번, 아니면 2번처럼 서버 시간대로 환산해 넣는다.
+#   (예: UTC 서버면 06:00 KST = 전날 21:00 UTC → "0 21 * * *")
+# - 이 블록 뒤에 다른 cron 항목을 두지 않는다(CRON_TZ·PATH 줄은 그 뒤 줄에도 적용된다). install_cron.sh 는 블록을 언제나 맨 끝에 둔다.
+#
+# 환경 파일 ~/.config/rop-wiki/env (선택, chmod 600, 셸 "이름=값" 형식. 형식과 예시는 deploy/README.md 5절):
+#   ROP_SLACK_WEBHOOK_URL=https://hooks.slack.com/services/…     # notify.channel slack_webhook/both
+#   ROP_SMTP_USERNAME=… / ROP_SMTP_PASSWORD=…                    # notify.channel email/both
+#   CLAUDE_CODE_OAUTH_TOKEN=… (또는 ANTHROPIC_API_KEY=…)            # 헤드리스 claude -p 인증(로그인 세션이 없는 서버)
+#   ROP_ALLOW_NO_FETCH=1                                         # 페이지 열람이 막힌 환경에서만(원문 미열람 모드 override)
 
+# 1) cronie(CRON_TZ 지원) — /ABSOLUTE/PATH/TO/rop-wiki 를 위키 루트의 절대 경로로 바꾼다
+# rop-wiki:begin (pipeline/install_cron.sh 가 관리한다. 손으로 고치지 말고 install/uninstall_cron.sh 를 쓴다)
 CRON_TZ=Asia/Seoul
-PATH=/usr/local/bin:/usr/bin:/bin:/opt/node22/bin
-0 6 * * * cd /ABSOLUTE/PATH/TO/rop-wiki && /usr/bin/env bash pipeline/run_daily.sh >> runs/cron.log 2>&1
+PATH=/opt/node22/bin:/usr/local/bin:/usr/bin:/bin
+0 6 * * * /usr/bin/flock -n -E 75 /ABSOLUTE/PATH/TO/rop-wiki/runs/.lock /bin/bash /ABSOLUTE/PATH/TO/rop-wiki/pipeline/cron_wrapper.sh; [ $? -ne 75 ] || /bin/bash /ABSOLUTE/PATH/TO/rop-wiki/pipeline/cron_wrapper.sh --lock-busy
+# rop-wiki:end
+
+# 2) Debian·Ubuntu cron(CRON_TZ 미지원), 서버 시간대 UTC — 06:00 Asia/Seoul 을 21:00 UTC 로 환산
+# PATH=/opt/node22/bin:/usr/local/bin:/usr/bin:/bin
+# 0 21 * * * /usr/bin/flock -n -E 75 /ABSOLUTE/PATH/TO/rop-wiki/runs/.lock /bin/bash /ABSOLUTE/PATH/TO/rop-wiki/pipeline/cron_wrapper.sh; [ $? -ne 75 ] || /bin/bash /ABSOLUTE/PATH/TO/rop-wiki/pipeline/cron_wrapper.sh --lock-busy
+#
+# 같은 날 두 번 실행되면 실행 id 가 <DATE>-02 로 붙는다(재실행이 필요하면 bash pipeline/run_daily.sh --resume <run_id>).
+# 손으로 실행할 때도 cron 과 겹치지 않게 하려면: flock -n runs/.lock bash pipeline/run_daily.sh

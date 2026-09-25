@@ -40,7 +40,7 @@ from lib import paths, runs  # noqa: E402
 from lib.render import load_backlog, load_flow_matrix, load_open_questions  # noqa: E402
 from lib.source import load_source  # noqa: E402
 
-DEFAULT_PRECEDENCE = ["track_day", "monthly_recheck", "weekly_review", "priority", "cycle1", "cycle2"]
+DEFAULT_PRECEDENCE = ["track_day", "monthly_recheck", "weekly_review", "priority", "cycle1", "category_link", "cycle2"]
 OPEN_STATES = ("열림", "조사 중")
 
 
@@ -194,11 +194,42 @@ def pick_track(settings: dict, tracks: list[tuple[str, dict]], history: list[dic
             raise SystemExit(f"[select_target] 트랙 정의 없음: config/tracks/{override}.yaml")
         return override, cfg
     slugs = [s for s, _ in tracks]
-    last = next((h["track"] for h in reversed(history) if h.get("run_type") == "track" and h.get("track") in slugs), None)
-    if last is None or len(slugs) == 1:
+    if len(slugs) == 1:
         return tracks[0]
-    idx = (slugs.index(last) + 1) % len(slugs)
-    return tracks[idx]
+    # 가중 순환(운영 전환 2-4): 트랙별 게시된 트랙 실행 수 / 가중치(settings.track_weights, 기본 1)가 가장 작은 트랙.
+    # 같으면 가장 오래전에 실행한 트랙, 그것도 같으면 settings.tracks 순서.
+    weights = settings.get("track_weights") or {}
+    def w(slug):
+        try:
+            return max(float(weights.get(slug, 1)), 0.01)
+        except (TypeError, ValueError):
+            return 1.0
+    counts = {s: sum(1 for h in history if h.get("run_type") == "track" and h.get("track") == s and covered(h)) for s in slugs}
+    last_idx = {s: max((i for i, h in enumerate(history) if h.get("run_type") == "track" and h.get("track") == s), default=-1) for s in slugs}
+    best = min(slugs, key=lambda s: (counts[s] / w(s), last_idx[s], slugs.index(s)))
+    return tracks[slugs.index(best)]
+
+
+def category_target(letter: str) -> dict:
+    src = load_source()
+    cat = next(c for c in src.categories if c.letter == letter)
+    return {"area_no": None, "area_name": None, "category": cat.title, "category_letter": letter}
+
+
+def category_link_pick(statuses: dict[int, dict]) -> str | None:
+    """대분류 연결 자동 선정: 소속 세부영역 4개가 모두 seed 가 아니고, 대분류 페이지가 아직 seed(다른 대분류와의 연결 절 비어 있음)인
+    가장 앞 대분류. 해당 없으면 None."""
+    from lib import frontmatter as _fm
+    for letter in "ABCDEFG":
+        if any(str((statuses.get(n) or {}).get("status")) == "seed" for n in paths.area_nos_of(letter)):
+            continue
+        try:
+            meta, _ = _fm.read(paths.ROOT / paths.category_repo_path(letter))
+        except Exception:
+            continue
+        if str(meta.get("status")) == "seed":
+            return letter
+    return None
 
 
 def _prio_rank(v) -> int:
@@ -450,7 +481,8 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
             if added:
                 runs.write_json(bp, bdata)
                 notes.append(f"사용자 지정 트랙 질문 백로그 등록: {', '.join(r['id'] for r in added)}")
-        qids, unmatched, qwhy = pick_track_questions(slug, cfg, priority, stage, override.get("question_ids"))
+        qids, unmatched, qwhy = pick_track_questions(slug, cfg, priority, stage, override.get("question_ids"),
+                                                     max_n=int(override.get("max_questions") or 3))
         names = cfg.get("stage_names") or {}
         track_block = {"slug": slug, "name": cfg.get("name"), "stage": stage, "stages": int(cfg.get("stages") or 7),
                        "stage_name": names.get(stage) or names.get(str(stage)) or "", "question_ids": qids,
@@ -458,10 +490,15 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
         area_no = int(override.get("area") or cfg.get("primary_area") or 5)
         why = f"트랙 실행일({runs.weekday_name(day)}, track_days 앞 {rpw}개) → 트랙 {slug} 단계 {stage}, 질문 {', '.join(qids) or '없음'} ({qwhy})"
 
+    category_letter: str | None = None
     if forced:
         run_type = forced
         if forced == "track":
             do_track()
+        elif forced == "category_link":
+            category_letter = str(override.get("category") or category_link_pick(statuses) or "").upper() or None
+            if not category_letter:
+                raise SystemExit("[select_target] 대분류 연결: --category 가 없고 자동 선정할 대분류도 없다")
         elif forced in ("weekly_review", "monthly_recheck"):
             area_no = int(override["area"]) if override.get("area") else None
         else:
@@ -509,6 +546,12 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
                     area_no = no
                     why = f"1주기: status seed 인 최저 번호 영역 → {run_type}"
                     break
+            if rule == "category_link":
+                letter = category_link_pick(statuses)
+                if letter:
+                    run_type, category_letter = "category_link", letter
+                    why = f"소속 세부영역 4개가 모두 채워졌고 대분류 페이지의 '다른 대분류와의 연결' 절이 비어 있는 대분류 {letter} → 대분류 연결"
+                    break
             if rule == "cycle2":
                 scores = cycle2_scores(statuses, rotation, priority, history, day, excluded)
                 if scores:
@@ -526,7 +569,12 @@ def select(day: str, run_id: str, settings: dict, rotation: dict, priority: dict
     budget = runs.budget_for(settings, run_type, track_cfg)
     corrections, cn = corrections_for(run_type, rotation, budget)
     notes += cn
-    target = area_target(area_no) if area_no else {"area_no": None, "area_name": None, "category": None}
+    if category_letter:
+        target = category_target(category_letter)
+    else:
+        target = area_target(area_no) if area_no else {"area_no": None, "area_name": None, "category": None}
+        if area_no:
+            target = dict(target, category_letter=paths.category_letter_of(int(area_no)))
     return {
         "run_id": run_id, "date": day, "weekday": runs.weekday_name(day), "run_number": run_number,
         "run_type": run_type, "forced": bool(forced), "target": target, "topic": topic, "track": track_block,
@@ -548,6 +596,8 @@ def main(argv=None) -> int:
     ap.add_argument("--stage", type=int, help="트랙 단계")
     ap.add_argument("--question-ids", help="쉼표로 구분한 백로그 질문 id (예 q1-01,q1-02)")
     ap.add_argument("--topic", help="주제 제목(run_type topic 지정 시)")
+    ap.add_argument("--category", help="대분류 문자 A~G(run_type category_link 지정 시)")
+    ap.add_argument("--max-questions", type=int, help="트랙 실행에서 고를 백로그 질문 수 상한(기본 3, 8.2 의 1~3개)")
     ap.add_argument("--out", help="출력 경로(기본 runs/<run_id>/target.json)")
     ap.add_argument("--stdout", action="store_true", help="파일에 쓰지 않고 표준 출력에만 낸다")
     ap.add_argument("--no-side-effects", action="store_true", help="data/open_questions.json 에 검토 요청을 등록하지 않는다")
@@ -566,6 +616,7 @@ def main(argv=None) -> int:
     run_id = args.run_id or runs.new_run_id(day, settings)
     history = load_history(settings)
     override = {"run_type": args.run_type, "area": args.area, "track": args.track, "stage": args.stage, "topic": args.topic,
+                "category": args.category, "max_questions": args.max_questions,
                 "question_ids": [q.strip() for q in args.question_ids.split(",")] if args.question_ids else None}
     target = select(day, run_id, settings, rotation, priority, history, override, side_effects=not (args.stdout or args.no_side_effects))
     text = json.dumps(target, ensure_ascii=False, indent=2)

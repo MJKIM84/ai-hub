@@ -321,6 +321,28 @@
           }
         }
       ]
+    },
+    "corrections_rejected": {
+      "type": "array",
+      "description": "이번 실행 입력의 정정 요청 가운데 반영하지 않기로 판정한 것과 사유(6.2 항목 11). 퍼블리셔가 inbox/corrections.md 의 상태를 rejected 로 바꾸고 사유를 처리 메모에 남긴다",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "reason"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^corr-\\d{3,}$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
     }
   },
   "required": [

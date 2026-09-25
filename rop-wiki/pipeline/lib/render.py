@@ -18,7 +18,9 @@ refresh_all_auto_regions() 는 docs 전체를 순회해 마커가 있는 페이�
 - runs/<run_id>/summary.json : {run_id,date,run_type,target,verdict_first,verdict_second,pages_created,
                                 pages_updated,new_sources,parked,budget_used,duration_sec}
 - config/tracks/<slug>.yaml : slug,name,status,current_stage,stages,
-                              stage_names{n: 이름}, stage_pages{n: 파일명}(선택 [가정])
+                              stage_names{n: 이름}, stage_pages{n: 파일명}(선택 [가정]),
+                              order(트랙 표시 순서), draft_page·draft_title·draft_versions(살아있는 초안 페이지와 버전 이력 원천),
+                              idea_no·idea_name·idea_page·idea_areas{primary,related}·idea_area_notes{n: 근거}(확장 아이디어 매핑) [가정]
 """
 from __future__ import annotations
 
@@ -80,12 +82,8 @@ def load_track_config(slug: str) -> dict | None:
 
 
 def track_slugs() -> list[str]:
-    slugs: list[str] = []
-    if (CONFIG / "tracks").is_dir():
-        slugs += [p.stem for p in sorted((CONFIG / "tracks").glob("*.yaml"))]
-    if (DOCS / "tracks").is_dir():
-        slugs += [p.name for p in sorted((DOCS / "tracks").iterdir()) if p.is_dir() and p.name not in slugs]
-    return slugs
+    """트랙 slug 목록. 트랙 정의의 order 순(첫 트랙이 맨 앞), 정의 없는 docs/tracks/<slug>/ 는 뒤에 slug 순(paths.ordered_track_slugs)."""
+    return paths.ordered_track_slugs()
 
 
 def load_run_summaries() -> list[dict]:
@@ -708,9 +706,10 @@ def render_track_recent_runs(slug: str, page_rel: str | None = None, n: int = 5)
 
 
 def render_ontology_version_history(slug: str, page_rel: str | None = None) -> str | None:
-    """온톨로지 초안 버전 이력. data/tracks/<slug>/ontology_versions.json
-    ({"items":[{"version","date","changes","run_id"}]}) 이 있을 때만 렌더링한다. [가정]"""
-    items = _load_json(DATA / "tracks" / slug / "ontology_versions.json", {}).get("items")
+    """살아있는 초안(첫 트랙은 온톨로지 초안)의 버전 이력. 원천은 트랙 정의의 draft_versions
+    (없으면 data/tracks/<slug>/ontology_versions.json, {"items":[{"version","date","changes","run_id"}]}) 이며
+    파일이 있을 때만 렌더링한다. 키 이름(ontology-version-history)은 첫 트랙과의 호환을 위해 모든 트랙의 초안에 그대로 쓴다. [가정]"""
+    items = _load_json(paths.track_draft_versions(slug), {}).get("items")
     if not items:
         return None
     rows = [[str(it.get("version", "")), str(it.get("date", "")), it.get("changes", ""), it.get("run_id", "")]
@@ -759,6 +758,238 @@ def render_track_log(slug: str, page_rel: str | None = None) -> str:
             lines.append(f"| {head} | {_esc(e.get(key) or fallback.get(key) or '없음')} |")
         blocks.append("\n".join(lines))
     return "\n\n".join(blocks)
+
+
+# --- 확장 아이디어·세부영역의 관련 연구 트랙 ------------------------------------------------------
+
+IDEA_MARKS = {"primary": "●", "related": "○"}
+IDEA_ROLE_LABELS = {"primary": "중심 영역", "related": "함께 필요한 영역"}
+
+
+def _int_list(v) -> list[int]:
+    if v is None:
+        return []
+    if isinstance(v, (int, str)):
+        v = [v]
+    return [int(x) for x in v if str(x).strip().isdigit()]
+
+
+def idea_mapping(slug: str, cfg: dict | None = None) -> dict[int, str]:
+    """트랙 정의의 아이디어 매핑 {영역 번호: "primary" | "related"}. idea_areas 가 없으면 빈 dict."""
+    cfg = (load_track_config(slug) or {}) if cfg is None else cfg
+    ia = cfg.get("idea_areas") or {}
+    out: dict[int, str] = {}
+    for n in _int_list(ia.get("related")):
+        out[n] = "related"
+    for n in _int_list(ia.get("primary")):
+        out[n] = "primary"
+    return out
+
+
+def idea_label(cfg: dict) -> str:
+    """아이디어 호칭: "아이디어 n. 이름"."""
+    n, name = cfg.get("idea_no"), cfg.get("idea_name")
+    if n and name:
+        return f"아이디어 {n}. {name}"
+    return str(name or cfg.get("name") or "")
+
+
+def _idea_rel(cfg: dict) -> str | None:
+    return paths.idea_page_rel(cfg)
+
+
+def idea_tracks() -> list[tuple[str, dict]]:
+    """아이디어 페이지(idea_page)를 가진 트랙 (slug, 정의) 목록. 트랙 순서."""
+    out = []
+    for slug in track_slugs():
+        cfg = load_track_config(slug) or {}
+        if cfg.get("idea_page"):
+            out.append((slug, cfg))
+    return out
+
+
+def area_track_links(no: int) -> list[tuple[str, dict, str]]:
+    """세부영역 no 와 연결된 트랙 (slug, 정의, 역할) 목록. 역할은 "primary"(primary_area 이거나 아이디어 매핑 ●) 또는
+    "related"(related_areas 에 있거나 아이디어 매핑 ○)."""
+    no = int(no)
+    out = []
+    for slug in track_slugs():
+        cfg = load_track_config(slug)
+        if not cfg:
+            continue
+        mapping = idea_mapping(slug, cfg)
+        prim = _int_list(cfg.get("primary_area"))
+        if no in prim or mapping.get(no) == "primary":
+            role = "primary"
+        elif no in _int_list(cfg.get("related_areas")) or mapping.get(no) == "related":
+            role = "related"
+        else:
+            continue
+        out.append((slug, cfg, role))
+    return out
+
+
+def render_area_tracks(no: int, page_rel: str | None = None) -> str:
+    """세부영역 페이지 머리의 "관련 연구 트랙" 안내(auto:area-tracks). 연결된 트랙이 없으면 빈 문자열."""
+    no = int(no)
+    page_rel = page_rel or paths.area_rel_path(no)
+    links = area_track_links(no)
+    if not links:
+        return ""
+    lines = ['!!! note "관련 연구 트랙"',
+             f"    이 세부영역을 가로지르는 중점 연구 트랙과 확장 아이디어다. 트랙은 분류를 바꾸지 않으며, 트랙에서 확인된 사실은"
+             f" 이 페이지에 반영하도록 제안된다. 전체 매핑은 {_link(page_rel, paths.IDEAS_INDEX, '확장 아이디어 연결 구조')}에 있다.",
+             ""]
+    for slug, cfg, role in links:
+        name = cfg.get("name") or _title_of(f"tracks/{slug}/index.md")
+        item = f"    - {_link(page_rel, f'tracks/{slug}/index.md', str(name))} — {IDEA_ROLE_LABELS[role]}({IDEA_MARKS[role]})"
+        st = str(cfg.get("status") or "")
+        if st and st != "active":
+            item += f", 트랙 상태 {st}"
+        irel = _idea_rel(cfg)
+        if irel:
+            item += f" · 확장 아이디어: {_link(page_rel, irel, idea_label(cfg))}"
+        lines.append(item)
+    return "\n".join(lines)
+
+
+def render_idea_area_map(page_rel: str = paths.IDEAS_INDEX) -> str:
+    """28개 세부영역 × 확장 아이디어 매핑표(auto:idea-area-map). 칸: ● 중심 영역 / ○ 함께 필요한 영역 / 빈칸."""
+    tracks = idea_tracks()
+    if not tracks:
+        return "아이디어 매핑이 없다(config/tracks/*.yaml 의 idea_page·idea_areas 없음)."
+    maps = [idea_mapping(slug, cfg) for slug, cfg in tracks]
+    header = ["대분류", "세부 연구영역"] + [_link(page_rel, _idea_rel(cfg), idea_label(cfg)) for _, cfg in tracks]
+    rows = []
+    for no in paths.AREA_NOS:
+        letter = paths.category_letter_of(no)
+        rows.append([_link(page_rel, paths.category_index_rel(letter), category_label(letter)), area_link(page_rel, no)]
+                    + [IDEA_MARKS.get(m.get(no, ""), "") for m in maps])
+    lines = [_table(header, rows), "", "● 중심 영역 · ○ 함께 필요한 영역 · 빈칸은 직접 연결 없음. 영역 수:", ""]
+    for (slug, cfg), m in zip(tracks, maps):
+        p = sum(1 for v in m.values() if v == "primary")
+        r = sum(1 for v in m.values() if v == "related")
+        lines.append(f"- {idea_label(cfg)}: ● {p}개 · ○ {r}개 · 합계 {p + r}개 영역 "
+                     f"({_link(page_rel, f'tracks/{slug}/index.md', '트랙 개요')})")
+    return "\n".join(lines)
+
+
+def render_idea_areas(slug: str, page_rel: str | None = None) -> str:
+    """아이디어 페이지 "2. 관련 세부 연구영역"(auto:idea-areas): 매핑표 기준 중심·함께 필요한 영역 목록과 근거."""
+    cfg = load_track_config(slug) or {}
+    page_rel = page_rel or (_idea_rel(cfg) or paths.IDEAS_INDEX)
+    m = idea_mapping(slug, cfg)
+    if not m:
+        return "매핑이 없다(트랙 정의의 idea_areas 없음)."
+    notes = cfg.get("idea_area_notes") or {}
+    parts = []
+    for role in ("primary", "related"):
+        nos = sorted(n for n, r in m.items() if r == role)
+        if not nos:
+            continue
+        parts += [f"**{IDEA_ROLE_LABELS[role]}({IDEA_MARKS[role]})**", ""]
+        for n in nos:
+            note = notes.get(n) or notes.get(str(n))
+            parts.append(f"- {area_link(page_rel, n)}" + (f" — {note}" if note else ""))
+        parts.append("")
+    parts.append(f"매핑 전체와 다른 아이디어와의 비교는 {_link(page_rel, paths.IDEAS_INDEX, '확장 아이디어 연결 구조')}의 매핑표에 있다.")
+    return "\n".join(parts)
+
+
+BACKLOG_STATUS_ORDER = ["열림", "조사 중", "답함", "보류", "폐기"]
+
+
+def render_idea_backlog(slug: str, page_rel: str | None = None) -> str:
+    """아이디어 페이지 "7. 미해결 질문 백로그"(auto:idea-backlog): 트랙 백로그를 상태(열림 → 조사 중 → 답함 → 보류 → 폐기) 순으로."""
+    cfg = load_track_config(slug) or {}
+    page_rel = page_rel or (_idea_rel(cfg) or paths.IDEAS_INDEX)
+    items = load_backlog(slug)
+    backlog_rel = f"tracks/{slug}/question-backlog.md"
+    if not items:
+        return f"백로그가 비어 있다({_link(page_rel, backlog_rel, '질문 백로그')})."
+    c = Counter(b.get("status", "") for b in items)
+    summary = " · ".join(f"{k} {c[k]}건" for k in BACKLOG_STATUS_ORDER if c.get(k))
+    others = [k for k in c if k not in BACKLOG_STATUS_ORDER]
+    if others:
+        summary += " · " + " · ".join(f"{k} {c[k]}건" for k in others)
+
+    def key(b):
+        st = b.get("status", "")
+        rank = BACKLOG_STATUS_ORDER.index(st) if st in BACKLOG_STATUS_ORDER else len(BACKLOG_STATUS_ORDER)
+        return (rank, int(b.get("stage") or 0) if str(b.get("stage")).isdigit() else 0, str(b.get("id")))
+
+    rows = []
+    for b in sorted(items, key=key):
+        st = b.get("stage")
+        label = _stage_label(slug, int(st), cfg) if str(st).isdigit() else str(st or "")
+        sf = _stage_file(slug, int(st), cfg) if str(st).isdigit() else None
+        rows.append([b.get("status", ""), b.get("id", ""), b.get("question", ""),
+                     _link(page_rel, sf, label) if sf else label, b.get("origin", ""),
+                     _link(page_rel, b.get("answer_link"), "답") if b.get("answer_link") else "—"])
+    head = (f"원천: {_link(page_rel, backlog_rel, '질문 백로그')}"
+            f"({_link(page_rel, f'tracks/{slug}/index.md', str(cfg.get('name') or slug))} 트랙) · {summary}")
+    return head + "\n\n" + _table(["상태", "id", "질문", "단계", "제기 근거", "답"], rows)
+
+
+# --- 페이지 상태 줄(단일 원천: 프런트매터) -------------------------------------------------------
+
+def render_page_status(page_rel: str, meta: dict) -> str:
+    """본문 상태 줄(auto:page-status). 프런트매터의 status·confidence·version·updated·last_run 에서 한 줄을 만든다.
+    초안 페이지(ontology_version 이 있는 페이지)는 앞에 초안 버전을 붙인다. 라벨은 트랙 정의의 draft_version_label
+    (없으면 "온톨로지 버전"). deprecated 면 replaced_by 링크를 덧붙인다. [가정]"""
+    parts = []
+    ov = meta.get("ontology_version")
+    if ov not in (None, ""):
+        slug = _slug_from(page_rel, meta)
+        label = (load_track_config(slug) or {}).get("draft_version_label") if slug else None
+        parts.append(f"{label or '온톨로지 버전'}: v{ov}")
+    parts += [f"페이지 상태: {meta.get('status') or '미상'}",
+              f"신뢰도: {meta.get('confidence') or '미부여'}",
+              f"페이지 버전: {meta.get('version') if meta.get('version') not in (None, '') else '미상'}",
+              f"마지막 갱신: {meta.get('updated') or '미상'}",
+              f"마지막 실행: {meta.get('last_run') or '없음'}"]
+    if meta.get("status") == "deprecated" and meta.get("replaced_by"):
+        parts.append(f"대체 페이지: {_link(page_rel, str(meta['replaced_by']))}")
+    return "> " + " · ".join(parts)
+
+
+_STATUS_WORDS = "|".join(re.escape(s) for s in fm.STATUS_VALUES)
+_PAGE_STATUS_TEXT = re.compile(r"페이지\s*상태\s*[:：]")
+_STATUS_LINE = re.compile(r"^\s*(?:>\s*)*(?:\*\*)?상태(?:\*\*)?\s*[:：]\s*(?:\*\*)?\s*`?(?:" + _STATUS_WORDS + r")\b")
+_FENCE_LINE = re.compile(r"^\s*(```|~~~)")
+_INLINE_CODE = re.compile(r"`[^`\n]*`")
+
+
+def status_line_violations(body: str) -> list[str]:
+    """본문(프런트매터 제외)에서 auto:page-status 영역 밖에 손으로 쓴 페이지 상태 줄을 찾는다.
+    잡는 것: "페이지 상태:"가 들어 있는 줄, 그리고 "상태:" 또는 "> 상태:"로 시작하고 값이 페이지 상태 값
+    (seed|draft|verified|published|needs_update|deprecated)인 줄. 코드 펜스 안과 인라인 코드 안은 보지 않는다.
+    돌려주는 값: "본문 <n>행: <줄>" 목록(비어 있으면 통과). check_frontmatter 와 스토리텔러 산출물 검사가 같은 규칙을 쓴다."""
+    out: list[str] = []
+    start, end = ar.start_marker("page-status"), ar.end_marker("page-status")
+    in_region = False
+    fence = None
+    for n, line in enumerate(body.split("\n"), 1):
+        if start in line:
+            in_region = end not in line.split(start, 1)[1]
+            continue
+        if in_region:
+            if end in line:
+                in_region = False
+            continue
+        m = _FENCE_LINE.match(line)
+        if m:
+            if fence is None:
+                fence = m.group(1)
+            elif m.group(1) == fence:
+                fence = None
+            continue
+        if fence:
+            continue
+        text = _INLINE_CODE.sub("", line)
+        if _PAGE_STATUS_TEXT.search(text) or _STATUS_LINE.match(text):
+            out.append(f"본문 {n}행: {line.strip()[:120]}")
+    return out
 
 
 # --- 전체 갱신 -----------------------------------------------------------------------
@@ -829,6 +1060,19 @@ def render_for(key: str, page_rel: str, meta: dict) -> str | None:
         return render_topics_index(page_rel)
     if key == "logs-index":
         return render_logs_index(page_rel)
+    if key == "area-tracks":
+        no = meta.get("area_no")
+        return render_area_tracks(int(no), page_rel) if str(no).isdigit() else None
+    if key == "idea-area-map":
+        return render_idea_area_map(page_rel)
+    if key == "idea-areas":
+        slug = _slug_from(page_rel, meta)
+        return render_idea_areas(slug, page_rel) if slug else None
+    if key == "idea-backlog":
+        slug = _slug_from(page_rel, meta)
+        return render_idea_backlog(slug, page_rel) if slug else None
+    if key == "page-status":
+        return render_page_status(page_rel, meta)
     return None
 
 

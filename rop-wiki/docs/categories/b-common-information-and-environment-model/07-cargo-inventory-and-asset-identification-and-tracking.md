@@ -22,7 +22,8 @@ version: 2
     [B. 공통 정보·환경 모델](index.md) — 핵심 질문:
     로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? [분류원문]
 
-> 상태: draft · 신뢰도: medium · 갱신일: 2026-09-25 · 마지막 실행: 2026-09-25
+<!-- auto:page-status:start -->
+<!-- auto:page-status:end -->
 
 ## 1. 한 줄 정의
 

@@ -55,15 +55,16 @@ EXPERIMENTS_DIR = ROOT / "experiments"
 RUN_ID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-\d{2}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-RUN_TYPES = ["area_deep_dive", "topic", "update", "weekly_review", "monthly_recheck", "track"]
+RUN_TYPES = ["area_deep_dive", "topic", "update", "weekly_review", "monthly_recheck", "track", "category_link"]
 RUN_TYPE_KO = {
     "area_deep_dive": "영역 심화", "topic": "주제 조사", "update": "갱신",
     "weekly_review": "주간 정리", "monthly_recheck": "월간 재검증", "track": "트랙 실행",
+    "category_link": "대분류 연결",
 }
 # 일일 로그 "단계별 결과와 소요 시간" 표의 행 순서. "링크·출처 점검"은 주간 정리(7.1)에서 run_daily.sh 가 리서치 전에 수행하는 단계이며
 # 실행되지 않은 날은 표에 행을 두지 않는다(OPTIONAL_STEPS)
-STEP_NAMES = ["준비", "대상 선정", "링크·출처 점검", "리서치", "1차 검증", "스토리텔러", "2차 검증", "퍼블리셔"]
-OPTIONAL_STEPS = {"링크·출처 점검"}
+STEP_NAMES = ["준비", "대상 선정", "링크·출처 점검", "리서치", "1차 검증", "스토리텔러", "형식 검증", "2차 검증", "퍼블리셔"]
+OPTIONAL_STEPS = {"링크·출처 점검", "형식 검증"}
 ROLES = ["researcher", "verifier", "storyteller"]
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
@@ -591,11 +592,9 @@ def load_schema(kind: str) -> dict:
 
 
 def returned_pages_schema(schema: dict) -> dict:
-    """스토리텔러 반환값용 변형: 루트 + pages[] 모든 항목에 content 필수 (schemas/pages.schema.json $defs/returned 와 동치)."""
+    """스토리텔러 반환값용 변형. 페이지마다 content(전체 페이지) 또는 patches(차등 갱신: 바꿀 절만) 가운데 하나가 있어야 한다 —
+    JSON Schema 의 anyOf 는 CLI 제약으로 쓰지 않고 semantic_checks("pages", returned=True) 가 검사한다(운영 전환 1-5)."""
     s = copy.deepcopy(schema)
-    req = s["properties"]["pages"]["items"].setdefault("required", [])
-    if "content" not in req:
-        req.append("content")
     s.pop("$defs", None)
     return s
 
@@ -665,7 +664,7 @@ def _stages_of(track_cfg: dict | None) -> int | None:
 
 
 def semantic_checks(kind: str, data: dict, run_type: str | None = None, track_cfg: dict | None = None,
-                    research: dict | None = None) -> list[str]:
+                    research: dict | None = None, returned: bool = False) -> list[str]:
     """JSON Schema 로 표현할 수 없는 검사. 오류 문자열 목록(비어 있으면 통과)."""
     errs: list[str] = []
     stages = _stages_of(track_cfg)
@@ -733,6 +732,14 @@ def semantic_checks(kind: str, data: dict, run_type: str | None = None, track_cf
                     errs.append(f"claim_checks: finding {c.get('finding_id')} 가 research.json 에 없다")
 
     elif kind == "pages":
+        for i, pg in enumerate(data.get("pages", [])):
+            has_c, has_p = pg.get("content") is not None, bool(pg.get("patches"))
+            if returned and not (has_c or has_p):
+                errs.append(f"pages[{i}] {pg.get('path')}: content(전체 페이지)와 patches(바꿀 절) 가 모두 없다")
+            if has_c and has_p:
+                errs.append(f"pages[{i}] {pg.get('path')}: content 와 patches 를 함께 보냈다(하나만)")
+            if has_p and pg.get("action") == "create":
+                errs.append(f"pages[{i}] {pg.get('path')}: 새 페이지(action create)는 patches 가 아니라 content 로 보낸다")
         tu = data.get("track_updates")
         arp = data.get("area_reflection_proposals")
         if is_track and tu is None:

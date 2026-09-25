@@ -22,6 +22,15 @@ AUTO_KEYS: list[str] = [
     # 파이프라인 추가 키 [가정]: 트랙 로그 페이지(docs/tracks/<slug>/log.md)의 "실행 기록" 절. 원천은 data/tracks/<slug>/log.json 이고
     # 퍼블리셔가 트랙 실행마다 항목을 더한 뒤 refresh_all_auto_regions() 가 최신순으로 다시 만든다(사양서 4.6 트랙 로그 갱신 주체: 퍼블리셔)
     "track-log",
+    # 확장 아이디어·다중 트랙 추가 키 [가정]
+    # - area-tracks: 세부영역 페이지 머리(소속 대분류 admonition 아래)의 "관련 연구 트랙" 안내. 원천은 config/tracks/*.yaml 의
+    #   primary_area·related_areas·idea_areas. 연결된 트랙이 없으면 빈 영역
+    # - idea-area-map: 확장 아이디어 색인(docs/ideas/index.md)의 28개 세부영역 × 아이디어 매핑표(●/○). 원천은 트랙 정의의 idea_areas
+    # - idea-areas: 아이디어 페이지 "2. 관련 세부 연구영역"의 매핑 목록(●/○와 근거). 원천은 idea_areas·idea_area_notes
+    # - idea-backlog: 아이디어 페이지 "7. 미해결 질문 백로그". 원천은 data/tracks/<slug>/backlog.json(열림·조사 중·답함 …)
+    # - page-status: 본문 상태 줄의 단일 원천. 프런트매터(status·confidence·version·updated·last_run)에서 한 줄을 만든다.
+    #   본문에 손으로 쓴 상태 줄("페이지 상태:", "> 상태: draft …")은 check_frontmatter 가 오류로 본다
+    "area-tracks", "idea-area-map", "idea-areas", "idea-backlog", "page-status",
 ]
 
 _START = "<!-- auto:{key}:start -->"

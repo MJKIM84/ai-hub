@@ -19,10 +19,13 @@ from .paths import DOCS, MKDOCS_YML
 
 SITE_NAME = "ROP 연구 위키"
 SITE_DESCRIPTION = "SCM 관점의 로봇 오케스트레이션 플랫폼 연구"
+TRACKS_LABEL = "중점 연구 트랙"
+IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
 
 MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 이 생성한다. 손으로 고치지 말 것.
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
+# 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 site_name: {site_name}
 site_description: {site_description}
@@ -126,7 +129,8 @@ def _track_children(slug: str) -> list:
     rel_dir = f"tracks/{slug}"
     d = DOCS / rel_dir
     stage_files = sorted((p.name for p in d.glob("stage-*.md")), key=_stage_no)
-    order = ["index.md", *stage_files, *paths.TRACK_PAGE_ORDER[1:]]
+    # 초안 페이지는 트랙 정의의 draft_page(없으면 ontology-draft.md) 자리에 온다
+    order = ["index.md", *stage_files, *paths.track_page_order(slug)[1:]]
     known = set(order)
     extras = sorted(p.name for p in d.glob("*.md") if p.name not in known)
     children = []
@@ -160,19 +164,30 @@ def build_nav() -> list:
                     if _exists(paths.area_rel_path(no))]
         nav.append(_section_with_index(_title(idx), idx, children))
 
-    # 4. 중점 연구 트랙
+    # 4. 중점 연구 트랙 — 트랙 정의의 order 순(첫 트랙이 맨 앞, 이어서 추가된 트랙). 정의 없는 폴더는 뒤에 slug 순
     tracks_dir = DOCS / "tracks"
     track_items = []
     if tracks_dir.is_dir():
-        for d in sorted(p for p in tracks_dir.iterdir() if p.is_dir()):
-            idx = f"tracks/{d.name}/index.md"
-            children = _track_children(d.name)
+        for slug in paths.ordered_track_slugs():
+            if not (tracks_dir / slug).is_dir():
+                continue
+            idx = f"tracks/{slug}/index.md"
+            children = _track_children(slug)
             if _exists(idx):
                 track_items.append(_section_with_index(_title(idx), idx, children))
             elif children:
-                track_items.append({d.name: children})
+                track_items.append({slug: children})
     if track_items:
-        nav.append({"중점 연구 트랙": track_items})
+        nav.append({TRACKS_LABEL: track_items})
+
+    # 4-1. 확장 아이디어 (4.8 목록 밖의 구축자 추가 섹션 [가정]) — 색인 → 트랙 순서대로 아이디어 페이지 → 나머지 파일명순
+    ideas = [r for r in paths.idea_page_rels() if _exists(r)]
+    known = set(ideas) | {paths.IDEAS_INDEX}
+    ideas += [r for r in _md_files(paths.IDEAS_DIR) if r not in known]
+    if _exists(paths.IDEAS_INDEX):
+        nav.append(_section_with_index(IDEAS_LABEL, paths.IDEAS_INDEX, [_page(r) for r in ideas]))
+    elif ideas:
+        nav.append({IDEAS_LABEL: [_page(r) for r in ideas]})
 
     # 5. 주제 (연도별 하위, 최신 우선)
     topics_dir = DOCS / "topics"

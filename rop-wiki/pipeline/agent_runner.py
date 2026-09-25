@@ -27,6 +27,7 @@ CLI 호출(실험으로 확인한 형식):
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import shutil
@@ -57,7 +58,8 @@ TEMPLATES_BY_RUN_TYPE = {
     "update": ["area.md", "topic.md"],
     "monthly_recheck": ["area.md", "topic.md", "reference.md"],
     "weekly_review": [],
-    "track": ["track-stage.md", "ontology-draft.md", "track-overview.md", "topic.md"],
+    "track": ["track-stage.md", "track-overview.md", "topic.md"],   # 트랙 초안 문서 템플릿은 트랙 설정(draft_template)에서 더한다
+    "category_link": ["category.md"],
 }
 # 페이지 프런트매터 type → 템플릿 파일(2차 검증의 "템플릿 섹션 순서 준수" 검사용 기준 템플릿). track 은 subtype 으로 나뉜다.
 # type log 는 일일 로그(daily-log.md)가 기준이지만 주간 정리 페이지(docs/logs/weekly/, tags weekly_review)도 type log 이므로
@@ -136,12 +138,29 @@ def render_inputs(inputs) -> str:
     return "\n".join(parts) + "\n"
 
 
-def build_prompt(role: str, context: dict, inputs, extra_sections: dict | None = None) -> str:
+SYSTEM_CACHE_DIR = ROOT / "runs" / ".cache" / "system"
+
+
+def system_prompt_file(role: str) -> tuple[Path, str]:
+    """공통 규칙 + 역할 규칙(고정 텍스트)을 시스템 프롬프트 파일로 만든다(운영 전환 1-5 비용).
+    내용이 같으면 같은 파일을 다시 쓰므로 호출 사이에 프롬프트 캐시가 적중한다(실험: 두 번째 호출 캐시 쓰기 5.6만 → 0 토큰).
+    반환: (파일 경로, sha256 앞 12자리)."""
     shared = runs.read_text(runs.AGENTS_DIR / "shared-rules.md")
     role_text = runs.read_text(runs.AGENTS_DIR / ROLE_FILES[role])
     if not shared or not role_text:
         raise AgentError("agents/shared-rules.md 또는 역할 파일이 없다")
-    parts = [shared.rstrip("\n"), "", "---", "", role_text.rstrip("\n"), "", "---", "",
+    text = shared.rstrip("\n") + "\n\n---\n\n" + role_text.rstrip("\n") + "\n"
+    sha = hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
+    SYSTEM_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    path = SYSTEM_CACHE_DIR / f"{role}-{sha}.md"
+    if not path.is_file():
+        path.write_text(text, encoding="utf-8")
+    return path, sha
+
+
+def build_prompt(role: str, context: dict, inputs, extra_sections: dict | None = None) -> str:
+    """사용자 메시지(stdin): 실행 컨텍스트 + 입력 + 추가 절. 공통 규칙과 역할 규칙은 system_prompt_file() 로 시스템 프롬프트에 붙는다."""
+    parts = [f"(너의 규칙은 시스템 프롬프트의 agents/shared-rules.md 와 agents/{ROLE_FILES[role]} 이다. 아래는 이번 실행의 컨텍스트와 입력이다.)", "",
              render_context(context), render_inputs(inputs)]
     for title, body in (extra_sections or {}).items():
         body = body if isinstance(body, str) else json.dumps(body, ensure_ascii=False, indent=2)
@@ -153,9 +172,11 @@ def build_prompt(role: str, context: dict, inputs, extra_sections: dict | None =
 # --- CLI 호출 ---------------------------------------------------------------------------
 
 def claude_cmd(settings: dict, role: str | None, schema: dict | None, max_turns: int | None = None,
-               tools: list[str] | None = None) -> list[str]:
+               tools: list[str] | None = None, system_file: Path | None = None) -> list[str]:
     cmd = [str(settings.get("claude_bin") or "claude"), "-p", "--output-format", "json",
            "--permission-mode", "dontAsk", "--no-session-persistence"]
+    if system_file is not None:
+        cmd += ["--append-system-prompt-file", str(system_file)]
     if schema is not None:
         cmd += ["--json-schema", json.dumps(schema, ensure_ascii=False)]
     if tools is None:
@@ -248,6 +269,27 @@ def _usage_summary(env: dict) -> dict:
     }
 
 
+def record_usage(rd: Path | None, step: str, role: str | None, env: dict, attempt: int = 1) -> dict:
+    """호출 한 번의 토큰·비용을 runs/<run_id>/usage.json 에 누적한다(운영 전환 1-5). 일일 로그와 summary.json 이 합계를 쓴다."""
+    u = env.get("usage") or {}
+    row = {"step": step, "role": role, "attempt": attempt, "input_tokens": u.get("input_tokens") or 0,
+           "cache_creation_input_tokens": u.get("cache_creation_input_tokens") or 0,
+           "cache_read_input_tokens": u.get("cache_read_input_tokens") or 0, "output_tokens": u.get("output_tokens") or 0,
+           "cost_usd": round(float(env.get("total_cost_usd") or 0), 4), "seconds": env.get("_elapsed_sec"),
+           "num_turns": env.get("num_turns"), "models": list((env.get("modelUsage") or {}).keys())}
+    if rd is not None:
+        path = Path(rd) / "usage.json"
+        data = runs.read_json(path, {"calls": []}) or {"calls": []}
+        data.setdefault("calls", []).append(row)
+        tot = {k: sum(int(c.get(k) or 0) for c in data["calls"]) for k in
+               ("input_tokens", "cache_creation_input_tokens", "cache_read_input_tokens", "output_tokens")}
+        tot["cost_usd"] = round(sum(float(c.get("cost_usd") or 0) for c in data["calls"]), 4)
+        tot["calls"] = len(data["calls"])
+        data["total"] = tot
+        runs.write_json(path, data)
+    return row
+
+
 # --- run_agent -----------------------------------------------------------------------------
 
 def run_agent(role: str, context: dict, inputs, schema_path, out_dir, settings: dict,
@@ -274,14 +316,15 @@ def run_agent(role: str, context: dict, inputs, schema_path, out_dir, settings: 
     checks = checks or {}
 
     prompt = build_prompt(role, context, inputs, extra_sections)
+    sys_file, sys_sha = system_prompt_file(role)
     prompt_path = prompts / f"{step}.md"
     prompt_path.write_text(prompt, encoding="utf-8")
     if log:
-        log.log(f"프롬프트 저장: {prompt_path.relative_to(ROOT)} ({len(prompt):,}자)", step=ROLE_KO[role])
+        log.log(f"프롬프트 저장: {prompt_path.relative_to(ROOT)} ({len(prompt):,}자, 규칙은 시스템 프롬프트 {sys_file.name})", step=ROLE_KO[role])
     if dry_run:
         return {"_dry_run": True, "_prompt": str(prompt_path), "_prompt_chars": len(prompt)}
 
-    cmd = claude_cmd(settings, role, cli_sch)
+    cmd = claude_cmd(settings, role, cli_sch, system_file=sys_file)
     errors_prev: list[str] = []
     for attempt in (1, 2):
         this_prompt = prompt
@@ -303,8 +346,9 @@ def run_agent(role: str, context: dict, inputs, schema_path, out_dir, settings: 
             errors_prev = [str(e)]
             continue
         runs.write_json(prompts / f"{this_step}.response.json", {k: v for k, v in env.items() if k != "_stderr"})
+        record_usage(out_dir, this_step, role, env, attempt)
         meta = {"role": role, "step": this_step, "cmd": [c if not c.startswith("{") else "<json-schema>" for c in cmd],
-                "prompt_chars": len(this_prompt), **_usage_summary(env)}
+                "prompt_chars": len(this_prompt), "system_prompt": sys_file.name, "system_sha": sys_sha, **_usage_summary(env)}
         runs.write_json(prompts / f"{this_step}.meta.json", meta)
         if log:
             log.log(f"호출 완료(시도 {attempt}): 턴 {env.get('num_turns')} · {runs.fmt_duration(elapsed)} · 비용 ${env.get('total_cost_usd') or 0:.4f} · subtype {env.get('subtype')}", step=ROLE_KO[role])
@@ -320,7 +364,8 @@ def run_agent(role: str, context: dict, inputs, schema_path, out_dir, settings: 
             else:
                 errs += runs.validate(kind, data, returned=(role == "storyteller"))
                 if not errs:
-                    errs += runs.semantic_checks(kind, data, checks.get("run_type"), checks.get("track_cfg"), checks.get("research"))
+                    errs += runs.semantic_checks(kind, data, checks.get("run_type"), checks.get("track_cfg"), checks.get("research"),
+                                                 returned=(role == "storyteller"))
         if not errs:
             return data
         (prompts / f"{this_step}.errors.txt").write_text("\n".join(errs) + "\n", encoding="utf-8")
@@ -346,7 +391,8 @@ def probe_web_search(settings: dict, timeout: int = 240) -> dict:
         data = extract_output(env)
         ok = bool(isinstance(data, dict) and data.get("searched") is True and not env.get("is_error"))
         return {"available": ok, "detail": (data.get("note") if isinstance(data, dict) else None) or str(env.get("result"))[:200],
-                "elapsed_sec": round(elapsed, 1), "num_turns": env.get("num_turns")}
+                "elapsed_sec": round(elapsed, 1), "num_turns": env.get("num_turns"),
+                "usage": record_usage(None, "probe-search", None, env)}
     except AgentError as e:
         return {"available": False, "detail": str(e)[:400]}
 
@@ -370,7 +416,8 @@ def probe_web_fetch_tool(settings: dict, url: str, timeout: int = 240) -> dict:
         data = extract_output(env)
         ok = bool(isinstance(data, dict) and data.get("fetched") is True and not env.get("is_error"))
         return {"available": ok, "detail": (data.get("note") if isinstance(data, dict) else None) or str(env.get("result"))[:200],
-                "elapsed_sec": round(elapsed, 1), "num_turns": env.get("num_turns"), "method": "claude -p --tools WebFetch"}
+                "elapsed_sec": round(elapsed, 1), "num_turns": env.get("num_turns"), "method": "claude -p --tools WebFetch",
+                "usage": record_usage(None, "probe-fetch", None, env)}
     except AgentError as e:
         return {"available": False, "detail": str(e)[:400], "method": "claude -p --tools WebFetch"}
 
@@ -420,11 +467,23 @@ def probe(settings: dict, url: str | None = None, skip_search: bool = False, ski
         fetch = {"available": bool(curl.get("available")), "detail": "건너뜀(--skip-fetch): WebFetch 도구 점검을 생략하고 curl 참고값을 썼다", "method": "curl(참고값)"}
     else:
         fetch = probe_web_fetch_tool(settings, url)
+    # 일반 페이지 열람이 막혀도 공식 저장소 원문(raw.githubusercontent.com)은 열릴 수 있다(DECISIONS D-002). 에이전트 도구로 한 번 확인한다.
+    murl = str(settings.get("web_fetch_mirror_probe_url") or "")
+    if fetch.get("available") or not murl:
+        mirror = {"available": bool(fetch.get("available")), "detail": "일반 열람 가능 또는 미러 점검 URL 없음"}
+    elif skip_fetch:
+        mc = probe_web_fetch(murl)
+        mirror = {"available": bool(mc.get("available")), "detail": "건너뜀(--skip-fetch): curl 참고값", "method": "curl(참고값)"}
+    else:
+        mirror = probe_web_fetch_tool(settings, murl)
+    mode = "full" if fetch.get("available") else ("mirror_only" if mirror.get("available") else "none")
     return {
         "web_search_available": bool(search.get("available")) if not skip_search else None,
         "web_fetch_available": bool(fetch.get("available")),
-        "probe_url": url, "checked_at": runs.now_str(settings),
-        "details": {"web_search": search, "web_fetch": fetch, "web_fetch_curl": curl},
+        "web_fetch_mirror_available": bool(mirror.get("available")),
+        "fetch_mode": mode,
+        "probe_url": url, "mirror_probe_url": murl or None, "checked_at": runs.now_str(settings),
+        "details": {"web_search": search, "web_fetch": fetch, "web_fetch_mirror": mirror, "web_fetch_curl": curl},
     }
 
 
@@ -565,11 +624,78 @@ def _track_inputs(slug: str, stage_no: int | None) -> list[tuple[str, str]]:
             _add(inputs, p.relative_to(ROOT).as_posix())
             break
     _add(inputs, f"data/tracks/{slug}/backlog.json")
-    _add(inputs, f"docs/tracks/{slug}/ontology-draft.md")
-    for fn in STAGE_ARTIFACT_PAGES.get(stage_no, []):
+    # 트랙마다 자기 초안 문서(draft_page, 기본 ontology-draft.md)와 아이디어 페이지(idea_page)를 가진다(운영 전환 2부)
+    draft = str(cfg.get("draft_page") or "ontology-draft.md")
+    _add(inputs, f"docs/tracks/{slug}/{draft}")
+    idea = cfg.get("idea_page")
+    if idea:
+        _add(inputs, idea if str(idea).startswith("docs/") else f"docs/ideas/{idea}")
+    arts = cfg.get("stage_artifacts")
+    if isinstance(arts, dict):
+        stage_files = arts.get(stage_no) or arts.get(str(stage_no)) or []
+    elif slug == "manual-capability-ontology":
+        stage_files = STAGE_ARTIFACT_PAGES.get(stage_no, [])
+    else:
+        stage_files = []
+    for fn in stage_files:
         _add(inputs, f"docs/tracks/{slug}/{fn}")
+    tpl = cfg.get("draft_template")
+    _add(inputs, f"templates/{tpl}" if tpl else "templates/ontology-draft.md")
     inputs += _experiment_inputs()
     return inputs
+
+
+def _source_inputs(role: str, target_json: dict, rd: Path) -> list[tuple[str, str]]:
+    """원문 열람 입력(운영 전환 1-1): GitHub 공식 저장소 원문 경로 목록과, 사람이 inbox/sources 로 넣은 원문 텍스트 가운데
+    이번 대상과 관련된 것. 리서치·1차 검증에만 넣는다."""
+    out: list[tuple[str, str]] = []
+    _add(out, "config/source_mirrors.yaml")
+    try:
+        from lib import sources as S
+    except ImportError:
+        return out
+    t = target_json.get("target") or {}
+    kw = [str(x) for x in (t.get("area_name"), t.get("category"), target_json.get("topic")) if x]
+    tr = target_json.get("track") or {}
+    if tr.get("slug"):
+        kw.append(str(tr["slug"]).replace("-", " "))
+    refs: list[str] = []
+    rp = _target_page_rel(target_json)
+    if rp and (ROOT / rp).is_file():
+        try:
+            meta, _ = fm.read(ROOT / rp)
+            refs = [str(x) for x in (meta.get("sources") or [])]
+        except Exception:  # noqa: BLE001
+            pass
+    if role == "verifier":
+        r = runs.read_json(rd / "research.json", {}) or {}
+        refs += [s.get("id") for s in r.get("sources", []) if s.get("id")]
+    try:
+        texts = S.select_texts_for_prompt(refs, kw, 120_000)
+    except Exception:  # noqa: BLE001
+        texts = []
+    for ref_id, text in texts:
+        out.append((f"data/source_texts/{ref_id}.txt (원문 텍스트, fetched_via=inbox 또는 github_raw)", text))
+    return out
+
+
+def _category_link_inputs(target_json: dict) -> list[tuple[str, str]]:
+    """대분류 연결 실행: 대상 대분류 페이지와 소속 세부영역 전문, 다른 대분류 페이지와 그 세부영역 요약."""
+    out: list[tuple[str, str]] = []
+    letter = (target_json.get("target") or {}).get("category_letter")
+    if not letter:
+        return out
+    _add(out, paths.category_repo_path(letter))
+    for n in paths.area_nos_of(letter):
+        _add(out, paths.area_repo_path(n))
+    for other in "ABCDEFG":
+        if other == letter:
+            continue
+        _add(out, paths.category_repo_path(other))
+        for n in paths.area_nos_of(other):
+            out.append((f"{paths.area_repo_path(n)} (요약)", runs.area_summary(n)))
+    _add(out, "docs/ideas/index.md")
+    return out
 
 
 def _weekly_inputs(run_id: str, day: str, settings: dict) -> list[tuple[str, str]]:
@@ -651,6 +777,9 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
                       f" · 중심 세부영역: {t.get('area_name')} ({t.get('category')})")
         if tr.get("user_questions"):
             ctx["사용자 지정 트랙 질문(백로그 미등록)"] = "; ".join(tr["user_questions"])
+    elif rt == "category_link":
+        ctx["대상"] = (f"대분류 {t.get('category')} 페이지의 '다른 대분류와의 연결' 절(대분류 연결 실행). 게시된 세부영역 페이지를 근거로 "
+                      "다른 대분류와의 연결을 조사·서술한다. 스토리텔러는 그 절만 patches 로 바꾼다")
     elif t.get("area_name"):
         ctx["대상"] = f"{t.get('area_name')} ({t.get('category')})"
         if target_json.get("topic"):
@@ -666,10 +795,17 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
     budget = target_json.get("budget") or runs.budget_for(settings, rt, track_cfg)
     ctx["예산"] = dict(budget)
     wf = (probe_json or {}).get("web_fetch_available")
-    note = f"web_fetch_available: {'true' if wf else 'false'}" + ("" if wf else " (페이지 열람이 차단된 환경: 공통 규칙 0절 6항)") \
-        if wf is not None else "없음"
+    mode = (probe_json or {}).get("fetch_mode") or ("full" if wf else "none")
+    note = f"web_fetch_available: {'true' if wf else 'false'} · fetch_mode: {mode}" if wf is not None else "없음"
+    if mode == "mirror_only":
+        note += (" (일반 웹 페이지 열람은 네트워크 정책으로 막혀 있다. raw.githubusercontent.com 은 열린다: 공식 문서가 GitHub 에 있는 출처는 "
+                 "입력의 config/source_mirrors.yaml 경로를 WebFetch 로 열어 원문을 읽고 sources[].fetched=true, fetched_via=github_raw, "
+                 "fetch_url 을 적는다. 입력에 원문 텍스트(data/source_texts)가 있는 출처는 fetched_via=inbox. 그 밖의 출처는 fetched=false 이며 "
+                 "코드가 신뢰도 상한(medium)을 강제한다 — 공통 규칙 0절 6항)")
+    elif mode == "none":
+        note += " (페이지 열람이 차단된 환경: 공통 규칙 0절 6항. 입력의 원문 텍스트(data/source_texts)만 fetched_via=inbox 로 쓸 수 있다)"
     if wf is False and (probe_json or {}).get("web_fetch_override"):
-        note += " · 페이지 열람 불가 — 원문 미열람 모드(사용자 override: " + str(probe_json.get("web_fetch_override_source") or "사용자") + ")"
+        note += " · 원문 미열람 모드(사용자 override: " + str(probe_json.get("web_fetch_override_source") or "사용자") + ")"
     ctx["환경 알림"] = note
     if role in ("researcher", "storyteller") or (role == "verifier" and (stage or "first") == "first"):
         arp = area_reflection_items(target_json, str(target_json.get("run_id") or ""))
@@ -689,7 +825,7 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
 
 
 def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stage: str | None, retry: int,
-                 track_cfg: dict | None, rd: Path) -> list[tuple[str, str]]:
+                 track_cfg: dict | None, rd: Path, format_fix: int = 0) -> list[tuple[str, str]]:
     inputs: list[tuple[str, str]] = []
     rt = target_json.get("run_type")
     rel_run = f"runs/{run_id}"
@@ -721,6 +857,9 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
 
     if role == "researcher":
         common_context_pages()
+        inputs.extend(_source_inputs(role, target_json, rd))
+        if rt == "category_link":
+            inputs.extend(_category_link_inputs(target_json))
         if rt == "weekly_review":
             inputs.extend(_weekly_inputs(run_id, target_json.get("date", run_id[:10]), settings))
         if rt == "monthly_recheck":
@@ -750,6 +889,9 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         if retry and (rd / "verification.json").is_file():
             _add(inputs, f"{rel_run}/verification.json")
         _add(inputs, "_source/ROP_SCM_연구분야_분류.md")
+        inputs.extend(_source_inputs(role, target_json, rd))
+        if rt == "category_link":
+            inputs.extend(_category_link_inputs(target_json))
         if rt == "weekly_review":
             inputs.extend(_weekly_inputs(run_id, target_json.get("date", run_id[:10]), settings))
         if is_track:
@@ -814,6 +956,10 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
                 _add(inputs, pg)
         for tpl in TEMPLATES_BY_RUN_TYPE.get(rt, []):
             _add(inputs, f"templates/{tpl}")
+        if rt == "category_link":
+            letter = t.get("category_letter")
+            if letter:
+                _add(inputs, paths.category_repo_path(letter))
         for rel in ("docs/glossary/index.md", "docs/references/index.md", "docs/standards/index.md", "docs/open-questions.md"):
             _add(inputs, rel)
         _add(inputs, f"{rel_run}/docs_tree.txt")
@@ -822,7 +968,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             inputs.extend(_weekly_inputs(run_id, target_json.get("date", run_id[:10]), settings))
         if is_track:
             inputs.extend(_track_inputs(slug, stage_no))
-        if retry:
+        if retry or format_fix:
             pages_json = runs.read_json(rd / "pages.json", None)
             if pages_json is not None:
                 _add(inputs, f"{rel_run}/pages.json", json.dumps(pages_json, ensure_ascii=False, indent=2))
@@ -831,7 +977,8 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
                     p = rd / "pages" / rel
                     if p.is_file():
                         inputs.append((f"{rel_run}/pages/{rel}", p.read_text(encoding="utf-8")))
-            _add(inputs, f"{rel_run}/verification2.json")
+            if retry:
+                _add(inputs, f"{rel_run}/verification2.json")
     return inputs
 
 
@@ -866,6 +1013,16 @@ def _fix_section(verification2: dict) -> str:
     if tc:
         lines.append(f"- 트랙 검사(track_checks): {json.dumps(tc, ensure_ascii=False)}")
     lines.append("\n이전 초안(runs/<run_id>/pages.json, pages/)과 2차 판정(verification2.json)은 입력에 있다. storyteller.md 9절대로 이행하고 모든 페이지의 content 를 포함한 전체 pages.json 을 다시 반환한다.")
+    return "\n".join(lines)
+
+
+def _format_fix_section(rd: Path) -> str:
+    rep = runs.read_json(rd / "checks" / "pages.json", {}) or {}
+    errs = rep.get("errors") or []
+    lines = ["직전 원고(runs/<run_id>/pages.json, pages/)가 코드 형식 검증(pipeline/validate_run.py)을 통과하지 못했다. "
+             "내용(주장·태그·각주·판정)은 바꾸지 말고 아래 형식 오류만 고친 전체 pages.json 을 다시 반환한다. "
+             "차등 갱신 실행이면 patches 로, 아니면 content 로 보낸다.", ""]
+    lines += [f"- {e}" for e in errs[:60]] or ["- (오류 목록 없음)"]
     return "\n".join(lines)
 
 
@@ -916,8 +1073,11 @@ def cmd_run(args) -> int:
     stage = args.stage if args.role == "verifier" else None
     retry = int(args.retry or 0)
     context = build_context(args.role, target_json, settings, probe_json, stage, retry, track_cfg)
-    inputs = build_inputs(args.role, args.run_id, target_json, settings, stage, retry, track_cfg, rd)
+    format_fix = int(getattr(args, "format_fix", 0) or 0)
+    inputs = build_inputs(args.role, args.run_id, target_json, settings, stage, retry, track_cfg, rd, format_fix)
     extra: dict = {}
+    if format_fix and args.role == "storyteller":
+        extra["형식 검증 오류 (재작성)"] = _format_fix_section(rd)
     if retry and args.role == "researcher":
         v = runs.read_json(rd / "verification.json", None)
         if v:
@@ -928,7 +1088,7 @@ def cmd_run(args) -> int:
             extra["수정 지시"] = _fix_section(v2)
     base = {"researcher": "research", "verifier": "verification1" if (stage or "first") == "first" else "verification2",
             "storyteller": "storyteller"}[args.role]
-    step = base + (f"-retry{retry}" if retry else "")
+    step = base + (f"-retry{retry}" if retry else "") + (f"-formatfix{format_fix}" if format_fix else "")
     checks = {"run_type": rt, "track_cfg": track_cfg, "research": runs.read_json(rd / "research.json", None) if args.role != "researcher" else None}
     schema_path = runs.SCHEMA_DIR / runs._SCHEMA_FILES[ROLE_KIND[args.role]]
     try:
@@ -973,6 +1133,7 @@ def main(argv=None) -> int:
     p.add_argument("--run-id", required=True)
     p.add_argument("--stage", choices=["first", "second"], default=None, help="검증 단계(verifier)")
     p.add_argument("--retry", type=int, default=0, help="재실행 회차(0 = 첫 실행)")
+    p.add_argument("--format-fix", type=int, default=0, help="형식 검증 오류 수정 재작성 회차(스토리텔러, 0 = 아님)")
     p.add_argument("--web-fetch-available", choices=["true", "false"], default=None, help="probe.json 대신 쓸 값")
     p.add_argument("--dry-run", action="store_true", help="프롬프트만 저장하고 호출하지 않는다")
     p.set_defaults(func=cmd_run)

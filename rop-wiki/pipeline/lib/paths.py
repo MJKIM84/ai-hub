@@ -83,6 +83,15 @@ TRACK_PAGE_ORDER: list[str] = [
     "evaluation-and-verification.md", "question-backlog.md", "log.md", "experiments.md",
 ]
 
+# 트랙마다 자기 살아있는 초안 페이지를 config/tracks/<slug>.yaml 의 draft_page 로 선언한다 [가정].
+# 선언이 없으면 첫 트랙의 규약(ontology-draft.md · ontology_versions.json)을 쓴다.
+DEFAULT_DRAFT_PAGE: str = "ontology-draft.md"
+DEFAULT_DRAFT_VERSIONS: str = "ontology_versions.json"
+
+# 확장 아이디어 섹션(docs/ideas/). 색인 다음에 트랙 정의의 idea_page 가 트랙 순서(order)대로 온다 [가정]
+IDEAS_DIR: str = "ideas"
+IDEAS_INDEX: str = "ideas/index.md"
+
 # 물류 흐름 매트릭스 축 (원문 11장)
 FLOW_STEPS: list[str] = ["입고", "적치", "보충", "피킹", "포장", "출하", "반품"]
 FLOW_ITEMS: list[str] = ["시작 조건", "작업 대상", "수행 자원", "제약", "완료·인계", "예외·성과"]
@@ -153,6 +162,87 @@ def track_config(slug: str) -> Path:
 
 def track_backlog(slug: str) -> Path:
     return DATA / "tracks" / slug / "backlog.json"
+
+
+# --- 트랙 정의 읽기(여러 트랙 공통) ---------------------------------------------------------
+
+def read_track_config(slug: str) -> dict:
+    """config/tracks/<slug>.yaml 을 읽는다. 없거나 깨졌으면 빈 dict."""
+    import yaml  # 지연 import: paths 는 가벼운 모듈로 둔다
+    p = track_config(slug)
+    if not p.is_file():
+        return {}
+    try:
+        data = yaml.safe_load(p.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def _order_key(slug: str, cfg: dict) -> tuple:
+    try:
+        order = int(cfg.get("order"))
+    except (TypeError, ValueError):
+        order = 10_000
+    return (order, slug)
+
+
+def ordered_track_slugs() -> list[str]:
+    """트랙 slug 목록. config/tracks/*.yaml 을 order 값(없으면 뒤로), 같으면 slug 순으로 정렬하고,
+    정의 파일 없이 docs/tracks/<slug>/ 만 있는 트랙을 그 뒤에 slug 순으로 붙인다.
+    첫 트랙(manual-capability-ontology)은 order: 1 이라 언제나 맨 앞이다 [가정]."""
+    slugs: list[str] = []
+    d = CONFIG / "tracks"
+    if d.is_dir():
+        pairs = [(p.stem, read_track_config(p.stem)) for p in d.glob("*.yaml")]
+        slugs = [s for s, _ in sorted(pairs, key=lambda x: _order_key(*x))]
+    t = DOCS / "tracks"
+    if t.is_dir():
+        slugs += [p.name for p in sorted(t.iterdir()) if p.is_dir() and p.name not in slugs]
+    return slugs
+
+
+def track_draft_page(slug: str, cfg: dict | None = None) -> str:
+    """트랙의 살아있는 초안 페이지 파일명(docs/tracks/<slug>/ 아래). yaml 의 draft_page, 없으면 ontology-draft.md."""
+    cfg = read_track_config(slug) if cfg is None else cfg
+    return str(cfg.get("draft_page") or DEFAULT_DRAFT_PAGE)
+
+
+def track_draft_rel(slug: str, cfg: dict | None = None) -> str:
+    """초안 페이지의 docs 기준 경로."""
+    return f"tracks/{slug}/{track_draft_page(slug, cfg)}"
+
+
+def track_draft_versions(slug: str, cfg: dict | None = None) -> Path:
+    """초안 버전 이력 원천 데이터(data/tracks/<slug>/<draft_versions>). 없으면 ontology_versions.json."""
+    cfg = read_track_config(slug) if cfg is None else cfg
+    return DATA / "tracks" / slug / str(cfg.get("draft_versions") or DEFAULT_DRAFT_VERSIONS)
+
+
+def track_page_order(slug: str, cfg: dict | None = None) -> list[str]:
+    """트랙 하위 페이지 순서(사양서 4.8: 개요 → 단계 → 초안 → 비교표·매트릭스·평가 절차 → 질문 백로그 → 로그 → 실험).
+    TRACK_PAGE_ORDER 의 ontology-draft.md 자리를 그 트랙의 draft_page 로 바꾼 목록이다(첫 트랙은 TRACK_PAGE_ORDER 그대로)."""
+    draft = track_draft_page(slug, cfg)
+    return [draft if n == DEFAULT_DRAFT_PAGE else n for n in TRACK_PAGE_ORDER]
+
+
+def idea_page_rels() -> list[str]:
+    """확장 아이디어 페이지(docs 기준 경로) 목록. 트랙 순서대로 각 트랙 정의의 idea_page 를 모은다(색인 제외)."""
+    out: list[str] = []
+    for slug in ordered_track_slugs():
+        rel = idea_page_rel(read_track_config(slug))
+        if rel and rel not in out:
+            out.append(rel)
+    return out
+
+
+def idea_page_rel(cfg: dict) -> str | None:
+    """트랙 정의의 idea_page("docs/ideas/x.md", "ideas/x.md", "x.md" 모두 허용)를 docs 기준 경로로."""
+    page = (cfg or {}).get("idea_page")
+    if not page:
+        return None
+    rel = docs_rel(str(page))
+    return rel if "/" in rel else f"{IDEAS_DIR}/{rel}"
 
 
 # --- 경로 변환 도우미 ---------------------------------------------------------------
