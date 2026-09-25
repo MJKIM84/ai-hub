@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-536, ref-640, ref-414, ref-413, ref-641, ref-642, ref-643, ref-105, ref-348, ref-419, ref-228, ref-569, ref-570, ref-571, ref-572, ref-573, ref-574, ref-229, ref-038, ref-575, ref-576, ref-577, ref-315, ref-314, ref-578, ref-283, ref-406, ref-645, ref-646, ref-647, ref-648, ref-649, ref-644, ref-081]
+sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-536, ref-640, ref-414, ref-413, ref-641, ref-642, ref-643, ref-105, ref-348, ref-419, ref-228, ref-569, ref-570, ref-571, ref-572, ref-573, ref-574, ref-229, ref-038, ref-575, ref-576, ref-577, ref-315, ref-314, ref-578, ref-283, ref-406, ref-629, ref-630, ref-631, ref-632, ref-633, ref-628, ref-081]
 last_run: 2026-09-25
 version: 5
 ---
@@ -245,7 +245,7 @@ flowchart LR
 
 ### q3-04 시뮬레이션 초기값으로 쓰기 위해 더 필요한 정보 {#q3-04}
 
-확인한 자료를 이 위키가 묶으면, 도면에서 만든 층별 지도를 시뮬레이션 초기값으로 쓰려면 평면 형상 외에 (1) 3차원·층 정보(벽 높이, 바닥, 층 고도), (2) 설비 동작 정보(문 구동 유형·동작 범위, 승강기 칸 치수·운행 층), (3) 로봇 모델(운동 파라미터·차체·배터리), (4) 운영 요소(스폰 위치, 충전소, 적재·하역 작업셀), (5) 업무 부하(주문 흐름, 초기 재고), (6) 운영 중 예측이라면 현재 상태가 더 필요한 것으로 보인다. [추정][^ref-079][^ref-406][^ref-105][^ref-228][^ref-645][^ref-648] 이 여섯 묶음을 제시한 단일 출처는 확인하지 못했고, 아래 소절의 확인 사실을 이 위키가 종합한 것이다.
+확인한 자료를 이 위키가 묶으면, 도면에서 만든 층별 지도를 시뮬레이션 초기값으로 쓰려면 평면 형상 외에 (1) 3차원·층 정보(벽 높이, 바닥, 층 고도), (2) 설비 동작 정보(문 구동 유형·동작 범위, 승강기 칸 치수·운행 층), (3) 로봇 모델(운동 파라미터·차체·배터리), (4) 운영 요소(스폰 위치, 충전소, 적재·하역 작업셀), (5) 업무 부하(주문 흐름, 초기 재고), (6) 운영 중 예측이라면 현재 상태가 더 필요한 것으로 보인다. [추정][^ref-079][^ref-406][^ref-105][^ref-228][^ref-629][^ref-632] 이 여섯 묶음을 제시한 단일 출처는 확인하지 못했고, 아래 소절의 확인 사실을 이 위키가 종합한 것이다.
 
 #### Open-RMF 시뮬레이션 월드가 요구하는 주석과 플러그인 (2026-09-25 확인)
 
@@ -261,18 +261,18 @@ flowchart LR
 
 #### 업무 부하 입력과 입력 준비 부담
 
-- 창고 저장 위치 배정 시뮬레이션 SLAPStack 의 README 는 블록 적재 창고의 사용 사례를 창고 레이아웃, 도착 시각을 가진 입고·출고 주문 흐름, 시작 시점의 SKU별 초기 충전 수준의 세 요소로 정의하며, 초기 충전 수준은 README 가 WEPAStacks 사용 사례에 한정해 적는다. 레이아웃 CSV 격자 코드는 주행 경로·출고 지점·입고 지점·통로·경계·저장 위치를 나타내며, 레이아웃 코드에는 충전 설비·차량 사양이 없다(설정 위치는 README 에서 미확인, 발행일 미확인). [사실][^ref-645]
-- SISO 의 핵심 제조 시뮬레이션 데이터(Core Manufacturing Simulation Data, CMSD) 표준은 시뮬레이션과 다른 정보 시스템 사이 데이터 교환을 위한 중립 정보 모델로, 레이아웃·자원·주문·재고·일정·달력·분포 같은 엔터티를 두며 UML 판(SISO-STD-008-2010)과 XML 판(SISO-STD-008-01-2012)으로 발행되었다. 제조 분야 대상이며 물류 적용은 미확인이다. [사실][^ref-647]
-- Skoogh·Johansson(2007)의 실증 연구는 [이산 사건 시뮬레이션](../../glossary/discrete-event-simulation.md) 프로젝트에서 입력 데이터 관련 활동이 평균 전체 프로젝트 시간의 31%를 차지한다고 보고했다(제조 시뮬레이션 대상, 표본 규모 미확인, 2007 발행). [사실][^ref-646]
+- 창고 저장 위치 배정 시뮬레이션 SLAPStack 의 README 는 블록 적재 창고의 사용 사례를 창고 레이아웃, 도착 시각을 가진 입고·출고 주문 흐름, 시작 시점의 SKU별 초기 충전 수준의 세 요소로 정의하며, 초기 충전 수준은 README 가 WEPAStacks 사용 사례에 한정해 적는다. 레이아웃 CSV 격자 코드는 주행 경로·출고 지점·입고 지점·통로·경계·저장 위치를 나타내며, 레이아웃 코드에는 충전 설비·차량 사양이 없다(설정 위치는 README 에서 미확인, 발행일 미확인). [사실][^ref-629]
+- SISO 의 핵심 제조 시뮬레이션 데이터(Core Manufacturing Simulation Data, CMSD) 표준은 시뮬레이션과 다른 정보 시스템 사이 데이터 교환을 위한 중립 정보 모델로, 레이아웃·자원·주문·재고·일정·달력·분포 같은 엔터티를 두며 UML 판(SISO-STD-008-2010)과 XML 판(SISO-STD-008-01-2012)으로 발행되었다. 제조 분야 대상이며 물류 적용은 미확인이다. [사실][^ref-631]
+- Skoogh·Johansson(2007)의 실증 연구는 [이산 사건 시뮬레이션](../../glossary/discrete-event-simulation.md) 프로젝트에서 입력 데이터 관련 활동이 평균 전체 프로젝트 시간의 31%를 차지한다고 보고했다(제조 시뮬레이션 대상, 표본 규모 미확인, 2007 발행). [사실][^ref-630]
 
 #### 현재 상태로 초기화
 
-- IFAC 2024 논문은 운영 결정을 돕는 시뮬레이션 기반 [디지털 트윈](../../glossary/digital-twin.md)은 실제 시스템의 부하 상태와 빠르고 정확하게 동기화해야 한다고 보고, 창고 관리 시스템(SAP EWM)을 쓰는 배송 센터 예에서 실제 상태로 초기화한 모델이 빈 상태에서 시작하는 기준 모델보다 과도 구간을 크게 줄인다고 보고했다(저자 미확인). [사실][^ref-648]
+- IFAC 2024 논문은 운영 결정을 돕는 시뮬레이션 기반 [디지털 트윈](../../glossary/digital-twin.md)은 실제 시스템의 부하 상태와 빠르고 정확하게 동기화해야 한다고 보고, 창고 관리 시스템(SAP EWM)을 쓰는 배송 센터 예에서 실제 상태로 초기화한 모델이 빈 상태에서 시작하는 기준 모델보다 과도 구간을 크게 줄인다고 보고했다(저자 미확인). [사실][^ref-632]
 
 #### 도면·BIM 기반 가상 환경 연구
 
-- 연계 대상: Lee·Woo·Shin(IJPEM, 2026)은 2D 건축 CAD 도면으로 3D 가상 환경을 만든 뒤 2D 점유 격자 지도를 자동 생성해 센서 주행 없이 AMCL 위치추정에 쓰고, 가상 지도의 평균 이동 오차 0.17±0.06 m, 회전 오차 3.59°±1.78°, 궤적 일관성 오차 0.10±0.08 m 로 SLAM 기반 지도와 비슷했다고 보고했다(저자 보고 단일 출처, 시험 환경 규모 미확인). [사실][^ref-644] 위치추정 자체는 분류 원문 9장의 로봇 자체 지능·제어 쪽 연계 대상이며, 여기서는 도면에서 가상 지도를 만드는 근거로만 읽는다.
-- 4D BIM 과 로봇 작업 계획을 잇는 연구(arXiv 2402.03602, 2024-02, ITcon 2025 게재판 있음)는 4D BIM 모델을 건설 로봇 작업의 시뮬레이션 월드로 변환하는 흐름을 다룬 것으로 보이며, 상태 속성별 SDF 분할·FBX 내보내기·URDF→SDF 변환 같은 세부는 원문 미열람으로 미확인이다. 건설 로봇 대상이며 물류 적용은 미확인이다. [추정][^ref-649]
+- 연계 대상: Lee·Woo·Shin(IJPEM, 2026)은 2D 건축 CAD 도면으로 3D 가상 환경을 만든 뒤 2D 점유 격자 지도를 자동 생성해 센서 주행 없이 AMCL 위치추정에 쓰고, 가상 지도의 평균 이동 오차 0.17±0.06 m, 회전 오차 3.59°±1.78°, 궤적 일관성 오차 0.10±0.08 m 로 SLAM 기반 지도와 비슷했다고 보고했다(저자 보고 단일 출처, 시험 환경 규모 미확인). [사실][^ref-628] 위치추정 자체는 분류 원문 9장의 로봇 자체 지능·제어 쪽 연계 대상이며, 여기서는 도면에서 가상 지도를 만드는 근거로만 읽는다.
+- 4D BIM 과 로봇 작업 계획을 잇는 연구(arXiv 2402.03602, 2024-02, ITcon 2025 게재판 있음)는 4D BIM 모델을 건설 로봇 작업의 시뮬레이션 월드로 변환하는 흐름을 다룬 것으로 보이며, 상태 속성별 SDF 분할·FBX 내보내기·URDF→SDF 변환 같은 세부는 원문 미열람으로 미확인이다. 건설 로봇 대상이며 물류 적용은 미확인이다. [추정][^ref-633]
 - Vega-Torres 외는 BIM 에서 자동 생성한 2D 점유 격자 지도가 구조 요소만 담으며, 가구·잡동사니와 설계–시공 편차 때문에 BIM 이 현실을 정확히 나타낸다는 가정이 성립하지 않는다고 지적했다(2023-08). [사실][^ref-081]
 
 #### 종합: 여섯 묶음, 도면이 채우는 몫, 두 가지 초기화
@@ -285,17 +285,17 @@ flowchart LR
 | 설비 동작 | 문·승강기·계단의 위치 | 문·승강기 동작 파라미터는 설비 자료 | [^ref-079][^ref-406] |
 | 로봇 모델 | 없음 | 제조사 자료(플릿 설정·팩트시트) | [^ref-105][^ref-228][^ref-406] |
 | 운영 요소 | 없음(q3-01 의 사람 주석 지점) | 스폰·충전소·작업셀 주석 | [^ref-079] |
-| 업무 부하 | 없음 | 창고 관리 시스템의 주문 흐름·초기 재고 | [^ref-645] |
-| 현재 상태 | 없음 | 운영 중 현재 상태(운영 예측용일 때) | [^ref-648] |
+| 업무 부하 | 없음 | 창고 관리 시스템의 주문 흐름·초기 재고 | [^ref-629] |
+| 현재 상태 | 없음 | 운영 중 현재 상태(운영 예측용일 때) | [^ref-632] |
 
-- 여섯 묶음 가운데 도면 인식이 직접 채울 수 있는 것은 평면 형상과 문·승강기·계단의 위치 정도이고, 층 고도·벽 높이는 층 정보나 BIM 에서, 문·승강기 동작 파라미터와 로봇 모델은 설비·제조사 자료에서, 주문 흐름·초기 재고는 창고 관리 시스템에서 와야 하며, 가구·랙 같은 비구조 요소는 도면 기반 결과에 빠질 수 있는 것으로 보인다. [추정][^ref-079][^ref-406][^ref-645][^ref-081][^ref-644]
+- 여섯 묶음 가운데 도면 인식이 직접 채울 수 있는 것은 평면 형상과 문·승강기·계단의 위치 정도이고, 층 고도·벽 높이는 층 정보나 BIM 에서, 문·승강기 동작 파라미터와 로봇 모델은 설비·제조사 자료에서, 주문 흐름·초기 재고는 창고 관리 시스템에서 와야 하며, 가구·랙 같은 비구조 요소는 도면 기반 결과에 빠질 수 있는 것으로 보인다. [추정][^ref-079][^ref-406][^ref-629][^ref-081][^ref-628]
 - 분류 원문 7장은 두 영역을 다음과 같이 구분한다.
 
 8번의 실시간 모델이 **현재 상태를 표현**한다면, 22번은 그 모델을 이용해 **가정한 미래를 실험**한다. 구분해두면 디지털 트윈이라는 이름 아래 서로 다른 기능이 섞이지 않는다. [분류원문]
 
-- 이 구분에 따라, 설계·도입 검토용 시뮬레이션은 도면 기반 정적 초기값과 가정한 수요로 시작하고, 운영 중 예측용 시뮬레이션은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태(로봇 위치·배터리, 대기 작업, 재고)로 초기화하는 것으로 나누어야 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 초기값 요구가 섞이지 않을 것으로 보인다. [추정][^ref-648][^ref-406]
-- 출하 성수기 병목(‘성수기 주문량이 늘면 어디가 먼저 막힐까?’)을 도면 기반 시뮬레이션으로 보려면 층별 지도만으로는 부족하고, 출고 주문 흐름과 초기 재고, 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다. [추정][^ref-645][^ref-406][^ref-105][^ref-647]
-- 시뮬레이션 입력 데이터 관련 활동이 프로젝트 시간의 큰 몫을 차지한다는 보고(제조 대상, 2007)와 레이아웃 외 입력이 따로 정의되는 사례를 보면, 도면 기반 자동 생성은 입력 준비 가운데 레이아웃 부분만 줄이고, 주문·자원·재고 데이터를 중립 구조로 잇는 일은 별도 과제로 남을 것으로 보인다. 도면 자동화가 줄이는 몫을 측정한 자료는 찾지 못했다. [추정][^ref-646][^ref-647][^ref-645]
+- 이 구분에 따라, 설계·도입 검토용 시뮬레이션은 도면 기반 정적 초기값과 가정한 수요로 시작하고, 운영 중 예측용 시뮬레이션은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태(로봇 위치·배터리, 대기 작업, 재고)로 초기화하는 것으로 나누어야 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 초기값 요구가 섞이지 않을 것으로 보인다. [추정][^ref-632][^ref-406]
+- 출하 성수기 병목(‘성수기 주문량이 늘면 어디가 먼저 막힐까?’)을 도면 기반 시뮬레이션으로 보려면 층별 지도만으로는 부족하고, 출고 주문 흐름과 초기 재고, 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다. [추정][^ref-629][^ref-406][^ref-105][^ref-631]
+- 시뮬레이션 입력 데이터 관련 활동이 프로젝트 시간의 큰 몫을 차지한다는 보고(제조 대상, 2007)와 레이아웃 외 입력이 따로 정의되는 사례를 보면, 도면 기반 자동 생성은 입력 준비 가운데 레이아웃 부분만 줄이고, 주문·자원·재고 데이터를 중립 구조로 잇는 일은 별도 과제로 남을 것으로 보인다. 도면 자동화가 줄이는 몫을 측정한 자료는 찾지 못했다. [추정][^ref-630][^ref-631][^ref-629]
 - q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’을 시뮬레이션에서 재현하려면 그 구역 노드와 경유점이 층 고도를 가진 층에 속하고 승강기 칸·운행 층과 이어져 있어야 하며, 대기장에 스폰하거나 도착하는 로봇이 같은 이름으로 참조되어야 할 것으로 보인다. [추정][^ref-079][^ref-406]
 - 주문 흐름·초기 재고 자체는 상위 업무 시스템(창고 관리 시스템) 쪽 정보이며, ROP 와 시뮬레이션은 이를 입력으로 받는 쪽이다.
 
@@ -321,12 +321,12 @@ flowchart LR
 
 | 항목 | 내용 |
 |---|---|
-| 시작 조건 | 설계·도입 검토에서는 가정한 출고 주문 흐름과 초기 재고로 시작하고, 운영 중 예측이라면 현재 상태로 초기화해야 할 것으로 보인다. [추정][^ref-645][^ref-648] |
+| 시작 조건 | 설계·도입 검토에서는 가정한 출고 주문 흐름과 초기 재고로 시작하고, 운영 중 예측이라면 현재 상태로 초기화해야 할 것으로 보인다. [추정][^ref-629][^ref-632] |
 | 작업 대상 | 해당 없음 |
 | 수행 자원 | 로봇은 slotcar 같은 플러그인과 운동 파라미터로, 문·승강기는 설비 플러그인으로 재현된다. [사실][^ref-406] 로봇 파라미터는 플릿 설정과 팩트시트가 원천이 된다. [사실][^ref-105][^ref-228] |
-| 제약 | 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다. [추정][^ref-645][^ref-406][^ref-105][^ref-647] |
+| 제약 | 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다. [추정][^ref-629][^ref-406][^ref-105][^ref-631] |
 | 완료·인계 | ‘3층 출하 대기장’ 도착을 재현하려면 그 구역 노드가 층 고도를 가진 층에 속하고 승강기와 이어지며 로봇이 같은 이름으로 참조되어야 할 것으로 보인다. [추정][^ref-079][^ref-406] |
-| 예외·성과 | 병목이 어디서 먼저 생기는지 보려면 층별 지도만으로는 부족할 것으로 보이며, 입력 준비 부담 가운데 레이아웃 외 부분은 남을 것으로 보인다. [추정][^ref-645][^ref-646][^ref-647] |
+| 예외·성과 | 병목이 어디서 먼저 생기는지 보려면 층별 지도만으로는 부족할 것으로 보이며, 입력 준비 부담 가운데 레이아웃 외 부분은 남을 것으로 보인다. [추정][^ref-629][^ref-630][^ref-631] |
 
 이 시나리오에서 도면이 기여하는 것은 층별 지도와 설비 위치이고, 수요·자원·현재 상태는 다른 원천에서 온다.
 
@@ -364,16 +364,16 @@ flowchart LR
 - 적재 전 검증 형상(q3-07), 인식·벡터화 중간 산출물 형식(q3-08), 구역 수준 노드와 플릿별 경유점의 포함 관계 규칙(q3-09), 로봇 능력 속성 값의 획득과 단위 맞춤(q3-10), 통행 가능 판정의 오류 측정(q5-05)은 정해지지 않았다. 국내 물류 현장의 도면 처리 흐름 사례는 찾지 못했다([열린 질문](../../open-questions.md) oq-022).
 
 **결론(실행 2026-09-25-70, q3-04)**
-- 도면에서 만든 층별 지도를 시뮬레이션 초기값으로 쓰려면 3차원·층 정보, 설비 동작, 로봇 모델, 운영 요소, 업무 부하, 운영 중 예측이라면 현재 상태가 더 필요한 것으로 보인다. [추정][^ref-079][^ref-406][^ref-105][^ref-228][^ref-645][^ref-648]
-- 도면 인식이 직접 채우는 것은 평면 형상과 문·승강기·계단 위치 정도이고 나머지는 BIM·설비·제조사 자료와 창고 관리 시스템에서 와야 할 것으로 보인다. [추정][^ref-079][^ref-406][^ref-645][^ref-081][^ref-644]
-- 설계·도입 검토용 초기화(도면 기반 정적 초기값과 가정한 수요)와 운영 중 예측용 초기화(현재 상태)는 나누어야 할 것으로 보인다. [추정][^ref-648][^ref-406]
+- 도면에서 만든 층별 지도를 시뮬레이션 초기값으로 쓰려면 3차원·층 정보, 설비 동작, 로봇 모델, 운영 요소, 업무 부하, 운영 중 예측이라면 현재 상태가 더 필요한 것으로 보인다. [추정][^ref-079][^ref-406][^ref-105][^ref-228][^ref-629][^ref-632]
+- 도면 인식이 직접 채우는 것은 평면 형상과 문·승강기·계단 위치 정도이고 나머지는 BIM·설비·제조사 자료와 창고 관리 시스템에서 와야 할 것으로 보인다. [추정][^ref-079][^ref-406][^ref-629][^ref-081][^ref-628]
+- 설계·도입 검토용 초기화(도면 기반 정적 초기값과 가정한 수요)와 운영 중 예측용 초기화(현재 상태)는 나누어야 할 것으로 보인다. [추정][^ref-632][^ref-406]
 - 공간 그래프 스키마 초안을 v0.8 → v0.9로 올렸다(실행 2026-09-25-70): 층 '높이 기준'에 층 고도 값 후보 병기, 문 '여닫는 방식' 값 후보에 Open-RMF 문 유형 추가와 '동작 범위' 속성 추가, 엘리베이터 '칸 치수' 속성 추가. 검증이 거부한 변경은 없었다.
 
 **남은 불확실성(실행 2026-09-25-70)**
 - q3-04 의 여섯 묶음, 도면이 채우는 몫, 두 가지 초기화 구분은 모두 이 위키의 종합(추정)이며 이를 제시한 단일 출처가 없고, 교차 확인된 finding 도 없다.
 - 입력 데이터 관련 활동 31%는 제조 시뮬레이션 대상 2007 조사이며 표본 규모와 물류 적용은 미확인이다. CMSD 도 제조 대상이고 물류 적용은 미확인이다.
 - 도면 기반 가상 지도의 위치추정 오차 수치는 저자 보고 단일 출처이고, 4D BIM–시뮬레이션 변환 세부는 원문 미열람으로 미확인이다.
-- 이번 실행에서 ref-441·ref-081·ref-644·ref-646·ref-647·ref-648·ref-649 는 원문을 열지 못했다.
+- 이번 실행에서 ref-441·ref-081·ref-628·ref-630·ref-631·ref-632·ref-633 는 원문을 열지 못했다.
 - slotcar 같은 단순화 모델의 예측 오차는 [열린 질문](../../open-questions.md) oq-086 에서 다루며 풀리지 않았다. 국내 물류센터에서 도면 기반 시뮬레이션 월드를 만든 사례는 찾지 못했다.
 
 ## 5. 이 단계가 낳은 후속 질문
@@ -500,12 +500,12 @@ q5-06 은 [열린 질문](../../open-questions.md) oq-084(물류센터 디지털
 [^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-09-25
 
 [^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-09-25
-[^ref-645]: Rinciog, A. 외 (malerinc/slapstack GitHub), slapstack — README (SLAPStack: storage location assignment simulation for block-stacking warehouses), 미확인, https://github.com/malerinc/slapstack, 접근일 2026-09-25
-[^ref-646]: Skoogh, A., & Johansson, B., Time-consumption analysis of input data activities in discrete event simulation projects, 2007, https://www.researchgate.net/publication/235719405_TIME-CONSUMPTION_ANALYSIS_OF_INPUT_DATA_ACTIVITIES_IN_DISCRETE_EVENT_SIMULATION_PROJECTS, 접근일 2026-09-25 (원문 미열람)
-[^ref-647]: Lee, Y.-T. T. (NIST, Journal of Research of NIST), A Journey in Standard Development: The Core Manufacturing Simulation Data (CMSD) Information Model, 2015, https://pmc.ncbi.nlm.nih.gov/articles/PMC4730674/, 접근일 2026-09-25 (원문 미열람)
-[^ref-648]: IFAC-PapersOnLine 게재 논문 저자(미확인), Initialization of Simulation-Based Digital Twins for Internal Transport Systems, 2024, https://www.sciencedirect.com/science/article/pii/S2405896324015374, 접근일 2026-09-25 (원문 미열람)
-[^ref-649]: Oyediran, H., Turner, W., Kim, K., & Barrows, M., Integration of 4D BIM and Robot Task Planning: Creation and Flow of Construction-Related Information for Action-Level Simulation of Indoor Wall Frame Installation (ITcon 2025 게재판 있음), 2024-02, https://arxiv.org/abs/2402.03602, 접근일 2026-09-25 (원문 미열람)
-[^ref-644]: Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing), Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization, 2026, https://link.springer.com/article/10.1007/s12541-026-01598-2, 접근일 2026-09-25 (원문 미열람)
+[^ref-629]: Rinciog, A. 외 (malerinc/slapstack GitHub), slapstack — README (SLAPStack: storage location assignment simulation for block-stacking warehouses), 미확인, https://github.com/malerinc/slapstack, 접근일 2026-09-25
+[^ref-630]: Skoogh, A., & Johansson, B., Time-consumption analysis of input data activities in discrete event simulation projects, 2007, https://www.researchgate.net/publication/235719405_TIME-CONSUMPTION_ANALYSIS_OF_INPUT_DATA_ACTIVITIES_IN_DISCRETE_EVENT_SIMULATION_PROJECTS, 접근일 2026-09-25 (원문 미열람)
+[^ref-631]: Lee, Y.-T. T. (NIST, Journal of Research of NIST), A Journey in Standard Development: The Core Manufacturing Simulation Data (CMSD) Information Model, 2015, https://pmc.ncbi.nlm.nih.gov/articles/PMC4730674/, 접근일 2026-09-25 (원문 미열람)
+[^ref-632]: IFAC-PapersOnLine 게재 논문 저자(미확인), Initialization of Simulation-Based Digital Twins for Internal Transport Systems, 2024, https://www.sciencedirect.com/science/article/pii/S2405896324015374, 접근일 2026-09-25 (원문 미열람)
+[^ref-633]: Oyediran, H., Turner, W., Kim, K., & Barrows, M., Integration of 4D BIM and Robot Task Planning: Creation and Flow of Construction-Related Information for Action-Level Simulation of Indoor Wall Frame Installation (ITcon 2025 게재판 있음), 2024-02, https://arxiv.org/abs/2402.03602, 접근일 2026-09-25 (원문 미열람)
+[^ref-628]: Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing), Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization, 2026, https://link.springer.com/article/10.1007/s12541-026-01598-2, 접근일 2026-09-25 (원문 미열람)
 [^ref-081]: Vega-Torres, M. A. 외, Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments, 2023-08, https://arxiv.org/abs/2308.05443, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력

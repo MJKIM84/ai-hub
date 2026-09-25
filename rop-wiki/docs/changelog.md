@@ -28,6 +28,21 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 q3-04 소절 신설), 2절 질문 목록 갱신과 q3-11 추가, 4·5·7절 추가, 6절 시뮬레이션 초기값 행 충족·전환 미승인, 8절 출처 추가, 9절 이력 행 추가 |
+| 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.8 → v0.9: 층 '높이 기준'에 층 고도 값 후보 병기, 문 '여닫는 방식' 값 후보(Open-RMF 문 유형)와 '동작 범위' 속성 추가, 엘리베이터 '칸 치수' 속성 추가, 6절 질문 3건 추가, H1 버전 표기(v0.7) 오류를 v0.9로 수정 |
+| 2026-09-25-70 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 '핵심 구성 요소'에 '시뮬레이션 초기값' 소절 신설(설계·도입 검토용과 운영 중 예측용 초기화 구분), '아직 조사되지 않은 구성 요소'에서 q3-04 제거, 새 각주 3건 |
+| 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 스키마 초안 현재 버전 v0.9와 실행 2026-09-25-70 변경, 아이디어 페이지 5절 시뮬레이션 초기값, 백로그 후속 질문 21건·q3-04 답함 반영 |
+| 2026-09-25-70 | 요약 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | 건축 도면 자동 인식 단계 3: q3-04 답함(시뮬레이션 초기값에 더 필요한 정보 여섯 묶음, 종합은 추정), 공간 그래프 스키마 초안 v0.8 → v0.9, 후속 질문 2건 |
+| 2026-09-25-70 | 생성 | [docs/references/ref-628.md](references/ref-628.md) | 참고문헌 ref-628 등록: Digital Twin-based Sensor-Free Virtual Mapping for Autonomou… |
+| 2026-09-25-70 | 생성 | [docs/references/ref-629.md](references/ref-629.md) | 참고문헌 ref-629 등록: slapstack — README (SLAPStack: storage location assignment s… |
+| 2026-09-25-70 | 생성 | [docs/references/ref-630.md](references/ref-630.md) | 참고문헌 ref-630 등록: Time-consumption analysis of input data activities in discre… |
+| 2026-09-25-70 | 생성 | [docs/references/ref-631.md](references/ref-631.md) | 참고문헌 ref-631 등록: A Journey in Standard Development: The Core Manufacturing Si… |
+| 2026-09-25-70 | 생성 | [docs/references/ref-632.md](references/ref-632.md) | 참고문헌 ref-632 등록: Initialization of Simulation-Based Digital Twins for Interna… |
+| 2026-09-25-70 | 생성 | [docs/references/ref-633.md](references/ref-633.md) | 참고문헌 ref-633 등록: Integration of 4D BIM and Robot Task Planning: Creation and… |
+| 2026-09-25-70 | 생성 | [docs/glossary/core-manufacturing-simulation-data.md](glossary/core-manufacturing-simulation-data.md) | 용어집 항목 핵심 제조 시뮬레이션 데이터 |
+| 2026-09-25-70 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-68 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s6.md](topics/2026/2026-09-25-area27-s6.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(1,218자)을 옮겼다 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s7.md](topics/2026/2026-09-25-area27-s7.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-618 각주를 떼어 안내 문장으로 바꿨다 |

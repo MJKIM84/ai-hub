@@ -116,7 +116,7 @@
       "claim": "창고 저장 위치 배정 시뮬레이션 SLAPStack 은 사용 사례 하나를 창고 레이아웃, 도착 시각을 가진 입고·출고 주문 흐름, 시작 시점의 SKU별 재고(초기 충전 수준)의 세 요소로 정의하고, 레이아웃 파일(CSV 격자 코드: 주행 경로·입고·출고 지점·통로·경계·저장 위치)에는 충전 설비와 차량 사양을 두지 않고 별도 파라미터로 설정한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-645"
+        "ref-629"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -130,7 +130,7 @@
       "claim": "SISO 의 핵심 제조 시뮬레이션 데이터(Core Manufacturing Simulation Data, CMSD) 표준은 시뮬레이션과 다른 정보 시스템 사이 데이터 교환을 위한 중립 정보 모델로, 레이아웃·자원·주문·재고·일정·달력·분포 같은 엔터티를 두며 UML 판(SISO-STD-008-2010)과 XML 판(SISO-STD-008-01-2012)으로 발행되었다.",
       "tag": "사실",
       "source_ids": [
-        "ref-647"
+        "ref-631"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -145,7 +145,7 @@
       "claim": "Skoogh·Johansson 의 실증 연구는 이산 사건 시뮬레이션 프로젝트에서 입력 데이터 수집이 평균적으로 전체 프로젝트 시간의 31% 를 차지한다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-646"
+        "ref-630"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -160,7 +160,7 @@
       "claim": "IFAC 2024 논문은 운영 결정을 돕는 시뮬레이션 기반 디지털 트윈은 실제 시스템의 부하 상태와 빠르고 정확하게 동기화해야 한다고 보고, 창고 관리 시스템(SAP EWM)을 쓰는 배송 센터 예에서 실제 상태로 초기화한 모델이 빈 상태에서 시작하는 기준 모델보다 과도 구간을 크게 줄인다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-648"
+        "ref-632"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -175,7 +175,7 @@
       "claim": "연계 대상: Lee·Woo·Shin(IJPEM, 2026)은 2D 건축 CAD 도면으로 3D 가상 환경을 만든 뒤 2D 점유 격자 지도를 자동 생성해 센서 주행 없이 AMCL 위치추정에 쓰고, 가상 지도의 평균 이동 오차 0.17±0.06 m, 회전 오차 3.59°±1.78°, 궤적 일관성 오차 0.10±0.08 m 로 SLAM 기반 지도와 비슷했다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-644"
+        "ref-628"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -190,7 +190,7 @@
       "claim": "4D BIM 과 로봇 작업 계획을 잇는 연구(arXiv 2402.03602)는 BIM 요소를 FBX 로 내보낸 뒤 상태 속성에 따라 이미 시공된 요소는 현장 환경 SDF 하나로 묶고 로봇이 시공할 요소는 개별 SDF 로 바꾸며, 로봇 URDF 도 SDF 로 바꿔 Gazebo 시뮬레이션에 넣는다(건설 로봇 대상).",
       "tag": "사실",
       "source_ids": [
-        "ref-649"
+        "ref-633"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -224,8 +224,8 @@
         "ref-406",
         "ref-105",
         "ref-228",
-        "ref-645",
-        "ref-648"
+        "ref-629",
+        "ref-632"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -241,9 +241,9 @@
       "source_ids": [
         "ref-079",
         "ref-406",
-        "ref-645",
+        "ref-629",
         "ref-081",
-        "ref-644"
+        "ref-628"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -257,7 +257,7 @@
       "claim": "분류 원문 7장의 구분에 따라, 설계·도입 검토용 시뮬레이션은 도면 기반 정적 초기값과 가정한 수요로 시작하고, 운영 중 예측용 시뮬레이션은 8. 실시간 세계 상태·데이터 일관성이 표현하는 현재 상태(로봇 위치·배터리, 대기 작업, 재고)로 초기화하는 것으로 나누어야 22. 시뮬레이션·예측용 디지털 트윈의 초기값 요구가 섞이지 않을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-648",
+        "ref-632",
         "ref-406"
       ],
       "cross_checked": false,
@@ -272,10 +272,10 @@
       "claim": "출하 성수기 병목(‘성수기 주문량이 늘면 어디가 먼저 막힐까?’)을 도면 기반 시뮬레이션으로 보려면 층별 지도만으로는 부족하고, 출고 주문 흐름과 초기 재고, 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-645",
+        "ref-629",
         "ref-406",
         "ref-105",
-        "ref-647"
+        "ref-631"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -289,9 +289,9 @@
       "claim": "시뮬레이션 입력 데이터 수집이 프로젝트 시간의 큰 몫을 차지한다는 보고와 레이아웃 외 입력이 따로 정의되는 사례를 보면, 도면 기반 자동 생성은 입력 준비 가운데 레이아웃 부분만 줄이고, 주문·자원·재고 데이터를 중립 구조로 잇는 일은 별도 과제로 남을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-646",
-        "ref-647",
-        "ref-645"
+        "ref-630",
+        "ref-631",
+        "ref-629"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -408,7 +408,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-644",
+      "id": "ref-628",
       "org": "Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing)",
       "title": "Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization",
       "published": "2026",
@@ -423,7 +423,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-645",
+      "id": "ref-629",
       "org": "Rinciog, A. 외 (malerinc/slapstack GitHub)",
       "title": "slapstack — README (SLAPStack: storage location assignment simulation for block-stacking warehouses)",
       "published": null,
@@ -438,7 +438,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-646",
+      "id": "ref-630",
       "org": "Skoogh, A., & Johansson, B.",
       "title": "Time-consumption analysis of input data activities in discrete event simulation projects",
       "published": "2007",
@@ -453,7 +453,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-647",
+      "id": "ref-631",
       "org": "NIST (Journal of Research of the National Institute of Standards and Technology)",
       "title": "A Journey in Standard Development: The Core Manufacturing Simulation Data (CMSD) Information Model",
       "published": null,
@@ -468,7 +468,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-648",
+      "id": "ref-632",
       "org": "IFAC-PapersOnLine 게재 논문 저자(미확인)",
       "title": "Initialization of Simulation-Based Digital Twins for Internal Transport Systems",
       "published": "2024",
@@ -483,7 +483,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-649",
+      "id": "ref-633",
       "org": "arXiv 2402.03602 저자(미확인)",
       "title": "Integration of 4D BIM and Robot Task Planning: Creation and Flow of Construction-Related Information for Action-Level Simulation of Indoor Wall Frame Installation",
       "published": "2024-02",
@@ -578,7 +578,7 @@
     "cross_checked_count": 0,
     "unverified": [
       "모든 finding 교차 확인 없음: f1 의 두 출처는 같은 Open Robotics 자료이고 나머지는 단일 출처",
-      "f8·f9·f10·f11·f12 원문 미열람(검색 요약 범위), ref-648·ref-649 저자 미확인, ref-647 발행일 미확인",
+      "f8·f9·f10·f11·f12 원문 미열람(검색 요약 범위), ref-632·ref-633 저자 미확인, ref-631 발행일 미확인",
       "f9 의 31% 는 제조 시뮬레이션 대상 조사이며 표본 규모·물류 적용 미확인",
       "f11 위치추정 오차 수치는 저자 보고 단일 출처, 시험 환경 규모 미확인",
       "f14~f19 는 이 위키의 종합이며 시뮬레이션 초기값 요구를 여섯 묶음으로 제시한 단일 출처는 찾지 못함",
@@ -595,7 +595,7 @@
       "queries": 16,
       "sources": 6
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-406(simulation.md)·ref-079(traffic-editor.md), 신규 ref-645(SLAPStack README). PMC(CMSD) 열람은 프록시가 거부했다. 나머지 신규 5건과 재사용 ref-441·ref-105·ref-228·ref-081 은 원문 미열람이라 신뢰도 상한 medium, 모든 출처·finding 에 high 없음. 검색 16회/40, 신규 출처 6건/20(ref-644~ref-649, 예약 구간 안), 재사용 6건. 질문 선택: target.json 지정 q3-04 1건. q3-04 는 시뮬레이션 초기값에 더 필요한 정보를 여섯 묶음(3차원·층, 설비 동작, 로봇 모델, 운영 요소, 업무 부하, 현재 상태)으로 답했으나 핵심 종합(f14~f19)이 추정이라 종합 신뢰도 low. 한국 자료: 한국정밀공학회 학술지 IJPEM 게재 국내 저자 연구(ref-644). 한국어 검색 1회는 기사·업체 소개만 나와 쓰지 않았다. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f16 에서 원문 구분(현재 상태 표현 대 가정한 미래 실험)대로 나눴다. 온톨로지 변경 제안 3건(층 고도, 문 구동 유형, 엘리베이터 칸 치수). 후속 질문 2건. 일반 열린 질문 1건. 정정 요청 없음. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 3건(갱신 상한과 별도). 실험 계획 작성은 스토리텔러 몫이라 이번 브리프에서 다루지 않았다."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-406(simulation.md)·ref-079(traffic-editor.md), 신규 ref-629(SLAPStack README). PMC(CMSD) 열람은 프록시가 거부했다. 나머지 신규 5건과 재사용 ref-441·ref-105·ref-228·ref-081 은 원문 미열람이라 신뢰도 상한 medium, 모든 출처·finding 에 high 없음. 검색 16회/40, 신규 출처 6건/20(ref-628~ref-633, 예약 구간 안), 재사용 6건. 질문 선택: target.json 지정 q3-04 1건. q3-04 는 시뮬레이션 초기값에 더 필요한 정보를 여섯 묶음(3차원·층, 설비 동작, 로봇 모델, 운영 요소, 업무 부하, 현재 상태)으로 답했으나 핵심 종합(f14~f19)이 추정이라 종합 신뢰도 low. 한국 자료: 한국정밀공학회 학술지 IJPEM 게재 국내 저자 연구(ref-628). 한국어 검색 1회는 기사·업체 소개만 나와 쓰지 않았다. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f16 에서 원문 구분(현재 상태 표현 대 가정한 미래 실험)대로 나눴다. 온톨로지 변경 제안 3건(층 고도, 문 구동 유형, 엘리베이터 칸 치수). 후속 질문 2건. 일반 열린 질문 1건. 정정 요청 없음. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 3건(갱신 상한과 별도). 실험 계획 작성은 스토리텔러 몫이라 이번 브리프에서 다루지 않았다."
   },
   "track": {
     "slug": "floorplan-recognition",
