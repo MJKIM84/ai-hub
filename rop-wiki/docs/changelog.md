@@ -78,6 +78,32 @@ version: 1
 | 2026-09-25-84 | 생성 | [docs/glossary/grade-certainty-of-evidence.md](glossary/grade-certainty-of-evidence.md) | 용어집 항목 근거 확실성 등급 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-03 답함(명령 권한·감사 추적), 후속 질문 3건(q4-17·q4-18·q5-17), 결론·완료 조건·출처·이력 갱신. 2차: 단계 상태 줄을 열린 질문 15건·답한 질문 3건으로 맞추고 q4-03 시나리오 예외·성과 칸 문구를 배정 최적성 손실로 고침(전체 content) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.8 → v0.9: 개념 '명령 권한' 추가(확정, 속성 구성·기본 거부는 후보), 지시 개념 입력자를 인증된 사용자 식별로 정리, 다이어그램·6절 질문 갱신. 2차: H1 을 (v0.9)로 맞춤(전체 content) |
+| 2026-09-25-83 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '명령 권한과 감사 추적' 소절 신설(q4-03, 실행 2026-09-25-83, 신뢰도 low) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 초안 v0.9(명령 권한 추가), 아이디어 5절 명령 권한 소절(q4-03) 반영 |
+| 2026-09-25-83 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-03 답함(명령 권한·감사 추적), 업무 분해·배정 설계 초안 v0.8 → v0.9(개념 '명령 권한' 추가, 지시 입력자 정리), 후속 질문 3건 |
+| 2026-09-25-83 | 생성 | [docs/references/ref-762.md](references/ref-762.md) | 참고문헌 ref-762 등록: rmf-web — packages/api-server/README.md |
+| 2026-09-25-83 | 생성 | [docs/references/ref-763.md](references/ref-763.md) | 참고문헌 ref-763 등록: Specification 2025-06-18 — Basic: Authorization (docs/specif… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-764.md](references/ref-764.md) | 참고문헌 ref-764 등록: Article 12: Record-Keeping \| EU Artificial Intelligence Act |
+| 2026-09-25-83 | 생성 | [docs/references/ref-765.md](references/ref-765.md) | 참고문헌 ref-765 등록: Article 19: Automatically Generated Logs \| EU Artificial Int… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-766.md](references/ref-766.md) | 참고문헌 ref-766 등록: 개인정보의 안전성 확보조치 기준 |
+| 2026-09-25-83 | 생성 | [docs/references/ref-767.md](references/ref-767.md) | 참고문헌 ref-767 등록: IEC 62443-3-3:2013 Industrial communication networks — Netwo… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-768.md](references/ref-768.md) | 참고문헌 ref-768 등록: Guide to Attribute Based Access Control (ABAC) Definition an… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-769.md](references/ref-769.md) | 참고문헌 ref-769 등록: Progent: Programmable Privilege Control for LLM Agents |
+| 2026-09-25-83 | 생성 | [docs/references/ref-770.md](references/ref-770.md) | 참고문헌 ref-770 등록: Authenticated Delegation and Authorized AI Agents |
+| 2026-09-25-83 | 생성 | [docs/references/ref-771.md](references/ref-771.md) | 참고문헌 ref-771 등록: Contextual Agent Security: A Policy for Every Purpose |
+| 2026-09-25-83 | 생성 | [docs/references/ref-772.md](references/ref-772.md) | 참고문헌 ref-772 등록: AgentGuard: An Attribute-Based Access Control Framework for… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-773.md](references/ref-773.md) | 참고문헌 ref-773 등록: MiniScope: A Least-Privilege Framework for Authorizing Tool-… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-774.md](references/ref-774.md) | 참고문헌 ref-774 등록: MiR Fleet |
+| 2026-09-25-83 | 생성 | [docs/references/ref-775.md](references/ref-775.md) | 참고문헌 ref-775 등록: MiR Fleet Enterprise includes scalability, cybersecurity fea… |
+| 2026-09-25-83 | 생성 | [docs/references/ref-776.md](references/ref-776.md) | 참고문헌 ref-776 등록: From Agent Traces to Trust: A Survey of Evidence Tracing and… |
+| 2026-09-25-83 | 생성 | [docs/glossary/role-based-access-control.md](glossary/role-based-access-control.md) | 용어집 항목 역할 기반 접근 통제 |
+| 2026-09-25-83 | 생성 | [docs/glossary/attribute-based-access-control.md](glossary/attribute-based-access-control.md) | 용어집 항목 속성 기반 접근 통제 |
+| 2026-09-25-83 | 생성 | [docs/glossary/confused-deputy.md](glossary/confused-deputy.md) | 용어집 항목 혼란된 대리인 |
+| 2026-09-25-83 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 소제목 신설, 측정 구성 추정 중심), 후속 질문 q5-12·q5-13, 4·5·6·7·8·9절 갱신 |
 | 2026-09-25-82 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '검증 절차: 현장 모델링 시간 단축 측정' 소절 추가(q5-02, 추정 중심), 절 첫 문단과 평가 지표 소절 끝의 미조사 문장을 새 소절과 맞춤 |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-82(단계 5, q5-02) 진행 문단 추가 |

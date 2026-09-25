@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-031, ref-350, ref-356, ref-417, ref-418, ref-656, ref-711, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-620, ref-717, ref-748, ref-749, ref-750, ref-751, ref-752, ref-753, ref-754, ref-755, ref-756, ref-757, ref-758, ref-759, ref-760, ref-761, ref-362, ref-459, ref-236, ref-416, ref-125, ref-579, ref-763, ref-764, ref-765, ref-766, ref-767, ref-768, ref-769, ref-770, ref-771, ref-772, ref-773, ref-774, ref-775, ref-776, ref-777]
+sources: [ref-031, ref-350, ref-356, ref-417, ref-418, ref-656, ref-711, ref-695, ref-696, ref-697, ref-698, ref-699, ref-700, ref-701, ref-702, ref-703, ref-713, ref-714, ref-715, ref-716, ref-620, ref-717, ref-748, ref-749, ref-750, ref-751, ref-752, ref-753, ref-754, ref-755, ref-756, ref-757, ref-758, ref-759, ref-760, ref-761, ref-362, ref-459, ref-236, ref-416, ref-125, ref-579, ref-762, ref-763, ref-764, ref-765, ref-766, ref-767, ref-768, ref-769, ref-770, ref-771, ref-772, ref-773, ref-774, ref-775, ref-776]
 last_run: 2026-09-25
 version: 4
 ---
@@ -235,43 +235,43 @@ flowchart LR
 
 ### q4-03 채팅 사용자별 명령 권한과 지시·확인의 감사 기록 {#q4-03}
 
-확인한 자료를 이 위키가 묶으면, 명령 권한은 LLM 의 판단이 아니라 ROP 의 결정적 인가 계층이 집행하고(완전한 중재), 챗봇은 인증된 채팅 사용자의 권한 맥락으로만 작업 요청을 내며, 권한은 사용자 역할·그룹, 동작(작업 종류·취소·우선순위 변경), 자원 그룹(로봇·플릿·구역), 환경 조건(교대조·시간대)을 대조하는 기본 거부 규칙으로 두는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-695][^ref-763][^ref-579][^ref-769][^ref-764][^ref-771][^ref-770][^ref-772] 근거는 LLM 보안 지침, 에이전트 권한 연구, 로봇 미들웨어 접근 통제, 속성 기반 접근 통제 정의이며, 물류 챗봇의 명령 권한·감사 기록을 직접 다룬 출처는 찾지 못해 신뢰도가 낮다. 이 답은 [q4-01 답](#q4-01)의 제약 게이트가 대조하는 권한의 내용을 다룬다.
+확인한 자료를 이 위키가 묶으면, 명령 권한은 LLM 의 판단이 아니라 ROP 의 결정적 인가 계층이 집행하고(완전한 중재), 챗봇은 인증된 채팅 사용자의 권한 맥락으로만 작업 요청을 내며, 권한은 사용자 역할·그룹, 동작(작업 종류·취소·우선순위 변경), 자원 그룹(로봇·플릿·구역), 환경 조건(교대조·시간대)을 대조하는 기본 거부 규칙으로 두는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-695][^ref-762][^ref-579][^ref-768][^ref-763][^ref-770][^ref-769][^ref-771] 근거는 LLM 보안 지침, 에이전트 권한 연구, 로봇 미들웨어 접근 통제, 속성 기반 접근 통제 정의이며, 물류 챗봇의 명령 권한·감사 기록을 직접 다룬 출처는 찾지 못해 신뢰도가 낮다. 이 답은 [q4-01 답](#q4-01)의 제약 게이트가 대조하는 권한의 내용을 다룬다.
 
 #### 로봇 관제 쪽 규격·구현의 권한 표현
 
 - ROS 2 설계 문서의 SROS 2 접근 통제 정책은 [인클레이브](../../glossary/enclave.md)(enclave)와 노드별 프로필 단위로 토픽 발행·구독, 서비스 요청·응답, 액션 호출·실행 권한을 허용·거부로 적고, 기본 거부이며 거부 권한이 허용 권한보다 우선한다. 문서에는 접근 감사·로그 서술이 없다(발행일 미확인, 확인일 2026-09-25 기준). [사실][^ref-579]
-- Open-RMF 웹 API 서버(rmf-web api-server) README 는 OpenID Connect JWT 로 사용자를 식별하고, 역할(role)·동작(action, 예: task_submit)·인가 그룹(authorization group)의 조합으로 사용자가 어떤 자원에 어떤 동작을 할 수 있는지 정하며, 관리자는 모든 그룹에 모든 동작 권한을 가진다고 설명한다(발행일 미확인, 확인일 2026-09-25 기준). [사실][^ref-763] 이번에 연 README 범위에서는 사용자 동작의 [감사 추적(Audit Trail)](../../glossary/audit-trail.md) 기능 설명이 확인되지 않았다(저장소 전체의 부재 확인은 아님). [추정][^ref-763]
+- Open-RMF 웹 API 서버(rmf-web api-server) README 는 OpenID Connect JWT 로 사용자를 식별하고, 역할(role)·동작(action, 예: task_submit)·인가 그룹(authorization group)의 조합으로 사용자가 어떤 자원에 어떤 동작을 할 수 있는지 정하며, 관리자는 모든 그룹에 모든 동작 권한을 가진다고 설명한다(발행일 미확인, 확인일 2026-09-25 기준). [사실][^ref-762] 이번에 연 README 범위에서는 사용자 동작의 [감사 추적(Audit Trail)](../../glossary/audit-trail.md) 기능 설명이 확인되지 않았다(저장소 전체의 부재 확인은 아님). [추정][^ref-762]
 - Open-RMF 작업 요청 스키마의 requester 는 요청한 주체를 가리키는 선택 식별자 문자열일 뿐 인증 필드가 없고, fleet_name 으로 작업을 수행할 수 있는 플릿을 지정하면 그 플릿만 입찰한다(확인일 2026-09-25 기준). [사실][^ref-125]
 - VDA 5050 3.0.0(공식 저장소 main 판, 확인일 2026-09-25)은 사이버보안 조치와 운영자·통합자·제조사·관제 공급자 사이 책임 배분을 범위에서 제외하고, 프로토콜 보안은 브로커 설정에서 다루며, 인증서 갱신 절에서 순간 동작(instantAction)의 발신자를 검증할 수 없다고 적는다. [사실][^ref-031] 로봇·제조사 관제 쪽 인증·통신 보안 구현은 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상으로 본다. [추정][^ref-031]
-- MiR 는 MiR Fleet(Enterprise)이 사용자 그룹 단위 권한과 개인별 로그인, 단일 로그인(SSO), 역할 기반 접근 권한, 감사 로깅을 제공하고 IEC 62443-4-2(SL-C 3)를 고려해 설계되었다고 밝힌다. 이 기능을 전한 기사는 벤더 발표를 옮긴 것이라 독립 확인이 아니다. [추정] 벤더 주장[^ref-775][^ref-776]
+- MiR 는 MiR Fleet(Enterprise)이 사용자 그룹 단위 권한과 개인별 로그인, 단일 로그인(SSO), 역할 기반 접근 권한, 감사 로깅을 제공하고 IEC 62443-4-2(SL-C 3)를 고려해 설계되었다고 밝힌다. 이 기능을 전한 기사는 벤더 발표를 옮긴 것이라 독립 확인이 아니다. [추정] 벤더 주장[^ref-774][^ref-775]
 
 #### LLM 에이전트 설계 지침·도구 규격
 
 - OWASP LLM06:2025 [과도한 에이전시](../../glossary/excessive-agency.md) 항목(문서 안 발행일 미확인)은 사용자 대신 한 행동을 그 사용자의 권한 맥락과 최소 권한으로 하위 시스템에서 실행하고, 허용 여부를 LLM 이 판단하게 하지 말고 하위 시스템에서 인가를 집행(완전한 중재)하며, 확장 활동 로깅·감시와 빈도 제한을 두라고 권고한다. [사실][^ref-695]
-- [모델 컨텍스트 프로토콜](../../glossary/model-context-protocol.md) 명세(2025-06-18판) 인가 절은 인가를 선택 사항으로 두고, HTTP 전송은 OAuth 2.1 일부를 따르도록 권고(SHOULD)한다. 서버가 자신을 대상으로 발급된 토큰인지 확인하는 것과 받은 토큰을 상위 API 로 그대로 넘기지 않는 것(token passthrough 금지)은 필수(MUST)이며, 혼란된 대리인(confused deputy) 위험을 경고한다. [사실][^ref-764]
+- [모델 컨텍스트 프로토콜](../../glossary/model-context-protocol.md) 명세(2025-06-18판) 인가 절은 인가를 선택 사항으로 두고, HTTP 전송은 OAuth 2.1 일부를 따르도록 권고(SHOULD)한다. 서버가 자신을 대상으로 발급된 토큰인지 확인하는 것과 받은 토큰을 상위 API 로 그대로 넘기지 않는 것(token passthrough 금지)은 필수(MUST)이며, 혼란된 대리인(confused deputy) 위험을 경고한다. [사실][^ref-763]
 - 같은 명세(2025-06-18판)의 도구 절은 서버가 도구 입력 검증·접근 통제·호출 빈도 제한을 두게 하고, 클라이언트가 민감한 작업에 사용자 확인을 묻고 도구 사용을 감사 목적으로 기록하도록 권고(SHOULD)하며, 신뢰하지 않는 서버의 도구 주석(annotations)은 신뢰하지 말라고 요구(MUST)한다. [사실][^ref-696]
 
 #### 접근 통제 모델과 에이전트 권한 연구
 
-- NIST SP 800-162(2014-01 판 기준, 원문 미열람)는 속성 기반 접근 통제(Attribute-Based Access Control, ABAC)를 주체·객체·요청 동작의 속성과 시간·위치 같은 환경 조건을 정책에 대조해 허용 여부를 정하는 방식으로 정의한다. [사실][^ref-769]
-- Progent 는 도구 이름과 인자에 대한 기호 규칙으로 된 권한 정책 언어로 LLM 에이전트의 도구 호출을 실행 시점에 결정적으로 허용·차단하고 차단 시 대체 동작과 정책 갱신을 두는 것으로 보인다. 공격 성공률 수치는 요약마다 달라, 0%로 낮췄다는 요약과 AgentDojo 39.9% → 1.0%, ASB 70.3% → 3.9% 라는 요약이 있으며, 모두 저자 보고값이고 판 차이는 미확인이다(원문 미열람). [추정][^ref-770]
-- Conseca(Tsai·Bagdasarian, HotOS 2025, 원문 미열람)는 사용자 과제를 받으면 신뢰할 수 있는 맥락만으로 그 과제에 맞춘 즉시(just-in-time) 보안 정책을 만들고, 계획기가 낸 각 동작을 실행 전에 그 정책으로 결정적으로 판정한다. [사실][^ref-772]
-- MiniScope(arXiv 2512.11147) 저자들은 LLM 이 보안 정책을 생성하는 방식은 엄격한 보장이 없다고 보고 도구 호출 에이전트의 최소 권한 틀을 제안한 것으로 보인다(제3자 요약 기준, 원문 미열람, 방법·평가 조건 미확인). [추정][^ref-774]
-- AgentGuard(arXiv 2605.28071)는 도구 사용 LLM 에이전트용 속성 기반 접근 통제 틀로, 클라이언트–서버 구조로 도구 호출을 판정하고 감사 기능을 두는 것으로 보인다(세부 미확인, 원문 미열람). [추정][^ref-773]
-- South 외(arXiv 2501.09674, 원문 미열람)는 사용자가 AI 에이전트에 위임 자격 증명(에이전트 식별, 맥락별 범위를 제한한 위임 권한, 사용자 메타데이터, 서명)을 발급해 제3자가 에이전트가 어느 사용자를 대신해 어떤 권한으로 행동하는지 검증하게 하는, OAuth 2.0·OpenID Connect 확장 기반 인증된 위임 틀을 제안했다. [사실][^ref-771]
+- NIST SP 800-162(2014-01 판 기준, 원문 미열람)는 속성 기반 접근 통제(Attribute-Based Access Control, ABAC)를 주체·객체·요청 동작의 속성과 시간·위치 같은 환경 조건을 정책에 대조해 허용 여부를 정하는 방식으로 정의한다. [사실][^ref-768]
+- Progent 는 도구 이름과 인자에 대한 기호 규칙으로 된 권한 정책 언어로 LLM 에이전트의 도구 호출을 실행 시점에 결정적으로 허용·차단하고 차단 시 대체 동작과 정책 갱신을 두는 것으로 보인다. 공격 성공률 수치는 요약마다 달라, 0%로 낮췄다는 요약과 AgentDojo 39.9% → 1.0%, ASB 70.3% → 3.9% 라는 요약이 있으며, 모두 저자 보고값이고 판 차이는 미확인이다(원문 미열람). [추정][^ref-769]
+- Conseca(Tsai·Bagdasarian, HotOS 2025, 원문 미열람)는 사용자 과제를 받으면 신뢰할 수 있는 맥락만으로 그 과제에 맞춘 즉시(just-in-time) 보안 정책을 만들고, 계획기가 낸 각 동작을 실행 전에 그 정책으로 결정적으로 판정한다. [사실][^ref-771]
+- MiniScope(arXiv 2512.11147) 저자들은 LLM 이 보안 정책을 생성하는 방식은 엄격한 보장이 없다고 보고 도구 호출 에이전트의 최소 권한 틀을 제안한 것으로 보인다(제3자 요약 기준, 원문 미열람, 방법·평가 조건 미확인). [추정][^ref-773]
+- AgentGuard(arXiv 2605.28071)는 도구 사용 LLM 에이전트용 속성 기반 접근 통제 틀로, 클라이언트–서버 구조로 도구 호출을 판정하고 감사 기능을 두는 것으로 보인다(세부 미확인, 원문 미열람). [추정][^ref-772]
+- South 외(arXiv 2501.09674, 원문 미열람)는 사용자가 AI 에이전트에 위임 자격 증명(에이전트 식별, 맥락별 범위를 제한한 위임 권한, 사용자 메타데이터, 서명)을 발급해 제3자가 에이전트가 어느 사용자를 대신해 어떤 권한으로 행동하는지 검증하게 하는, OAuth 2.0·OpenID Connect 확장 기반 인증된 위임 틀을 제안했다. [사실][^ref-770]
 
 #### 감사 기록에 대한 요구
 
-- IEC 62443-3-3(2013-08 판)의 사용 통제 요구(FR 2)는 인증된 주체가 인가된 동작만 하도록 하는 인가 집행(SR 2.1), 감사 가능 사건 기록(SR 2.8), 타임스탬프(SR 2.11), 특정 사용자가 특정 동작을 했는지 판별하는 부인 방지(SR 2.12)를 두는 것으로 보인다. SR 번호·내용은 제3자 요약 기준이며 발행 기관 원문은 미확인이다(2013-08 판). [추정][^ref-768]
-- LLM 에이전트의 증거 추적·실행 출처 서베이(arXiv 2606.04990)는 도구 호출 출처를 어떤 도구를 골랐는지, 어떤 인자를 넘겼는지, 무엇이 반환되었는지, 그 결과가 뒤의 추론·행동에 어떻게 영향을 주었는지의 기록으로 설명하는 것으로 보인다. 네 요소 정의는 서베이 요약 기준이며 원문 미확인이다. [추정][^ref-777]
-- EU AI Act 제12조는 고위험 AI 시스템이 수명 동안 사건 기록(로그)을 자동으로 남길 수 있게 요구하고, 제19조·제26조 제6항은 공급자와 배포자가 자기 관리 아래의 로그를 법에 달리 정함이 없으면 최소 6개월 보관하게 하는 것으로 보인다. 제3자 조문 게재본 기준이며 EUR-Lex 원문과 물류 로봇 배정 AI 의 고위험 해당 여부는 미확인이다. [추정][^ref-765][^ref-766]
-- 개인정보의 안전성 확보조치 기준(개인정보보호위원회 고시)은 개인정보처리시스템 접근권한을 업무에 필요한 최소 범위로 개인정보취급자별 계정에 차등 부여하고, 권한 부여·변경·말소 내역을 최소 3년 보관하도록 정한다. 원문 미열람이며 인용한 고시 URL 이 현행판인지와 현행 조문 번호는 미확인이다. [사실][^ref-767]
-- 같은 고시가 접속기록을 1년 이상(5만 명 이상 정보주체 또는 고유식별·민감정보 처리 시 2년 이상) 보관하도록 정한다는 요약도 있으나, 이번 검증에서는 확인하지 못했다(미확인). [추정][^ref-767]
-- 채팅 지시 기록에 작업자 이름·사번 같은 개인 식별 정보가 담기면 챗봇·ROP 가 개인정보처리시스템으로 보아 접근권한 기록·접속기록 보관 기준을 적용받을 수 있어 보이나, 공식 해석은 확인하지 못해 [열린 질문](../../open-questions.md)으로 올렸다. [추정][^ref-767]
+- IEC 62443-3-3(2013-08 판)의 사용 통제 요구(FR 2)는 인증된 주체가 인가된 동작만 하도록 하는 인가 집행(SR 2.1), 감사 가능 사건 기록(SR 2.8), 타임스탬프(SR 2.11), 특정 사용자가 특정 동작을 했는지 판별하는 부인 방지(SR 2.12)를 두는 것으로 보인다. SR 번호·내용은 제3자 요약 기준이며 발행 기관 원문은 미확인이다(2013-08 판). [추정][^ref-767]
+- LLM 에이전트의 증거 추적·실행 출처 서베이(arXiv 2606.04990)는 도구 호출 출처를 어떤 도구를 골랐는지, 어떤 인자를 넘겼는지, 무엇이 반환되었는지, 그 결과가 뒤의 추론·행동에 어떻게 영향을 주었는지의 기록으로 설명하는 것으로 보인다. 네 요소 정의는 서베이 요약 기준이며 원문 미확인이다. [추정][^ref-776]
+- EU AI Act 제12조는 고위험 AI 시스템이 수명 동안 사건 기록(로그)을 자동으로 남길 수 있게 요구하고, 제19조·제26조 제6항은 공급자와 배포자가 자기 관리 아래의 로그를 법에 달리 정함이 없으면 최소 6개월 보관하게 하는 것으로 보인다. 제3자 조문 게재본 기준이며 EUR-Lex 원문과 물류 로봇 배정 AI 의 고위험 해당 여부는 미확인이다. [추정][^ref-764][^ref-765]
+- 개인정보의 안전성 확보조치 기준(개인정보보호위원회 고시)은 개인정보처리시스템 접근권한을 업무에 필요한 최소 범위로 개인정보취급자별 계정에 차등 부여하고, 권한 부여·변경·말소 내역을 최소 3년 보관하도록 정한다. 원문 미열람이며 인용한 고시 URL 이 현행판인지와 현행 조문 번호는 미확인이다. [사실][^ref-766]
+- 같은 고시가 접속기록을 1년 이상(5만 명 이상 정보주체 또는 고유식별·민감정보 처리 시 2년 이상) 보관하도록 정한다는 요약도 있으나, 이번 검증에서는 확인하지 못했다(미확인). [추정][^ref-766]
+- 채팅 지시 기록에 작업자 이름·사번 같은 개인 식별 정보가 담기면 챗봇·ROP 가 개인정보처리시스템으로 보아 접근권한 기록·접속기록 보관 기준을 적용받을 수 있어 보이나, 공식 해석은 확인하지 못해 [열린 질문](../../open-questions.md)으로 올렸다. [추정][^ref-766]
 
 #### 권한 규칙과 감사 추적의 구성 (이 위키의 종합)
 
-아래 두 표는 위 근거를 이 위키가 대응시켜 구성한 가설이며, 출처의 표를 옮긴 것이 아니다. [추정][^ref-763][^ref-769][^ref-579][^ref-695]
+아래 두 표는 위 근거를 이 위키가 대응시켜 구성한 가설이며, 출처의 표를 옮긴 것이 아니다. [추정][^ref-762][^ref-768][^ref-579][^ref-695]
 
 | 권한 규칙 구성 요소 | 예 | 근거 사례 |
 |---|---|---|
@@ -282,7 +282,7 @@ flowchart LR
 | 효과 | 허용·거부, 기본 거부 | SROS 2 기본 거부(로봇 미들웨어 참고 근거) |
 | 집행 위치 | LLM 이 아닌 ROP 인가 계층(완전한 중재) | OWASP LLM06:2025 |
 
-감사 추적은 지시마다 아래 항목을 타임스탬프와 함께 잇는 형태로 두는 것이 선택지로 보인다. 기록 항목의 근거 가운데 IEC 62443-3-3 과 도구 호출 출처 서베이는 [추정] 근거다. [추정][^ref-696][^ref-768][^ref-777][^ref-125][^ref-031]
+감사 추적은 지시마다 아래 항목을 타임스탬프와 함께 잇는 형태로 두는 것이 선택지로 보인다. 기록 항목의 근거 가운데 IEC 62443-3-3 과 도구 호출 출처 서베이는 [추정] 근거다. [추정][^ref-696][^ref-767][^ref-776][^ref-125][^ref-031]
 
 | 기록 항목 | 대응 근거 |
 |---|---|
@@ -294,14 +294,14 @@ flowchart LR
 | 로봇·관제 쪽 결과·오류 | VDA 5050 오류 보고 |
 | 타임스탬프 | SR 2.11(제3자 요약) |
 
-- 보관 기간은 적용 법규의 최소 기준(미확인 포함)을 따르는 것이 선택지로 보이며, 여기서는 수치를 정하지 않는다. [추정][^ref-765][^ref-767]
-- Open-RMF 작업 요청의 requester 는 인증되지 않은 선택 문자열이고 VDA 5050 은 사이버보안을 범위에서 빼므로, 채팅 사용자 신원과 권한 판정은 로봇 관제 인터페이스가 아니라 ROP 경계에서 묶어 두고 작업 요청 id 와 연결해 보관해야 할 것으로 보인다. [추정][^ref-125][^ref-031][^ref-763] 로봇·제조사 관제 쪽 인증·권한 구현은 연계 대상이다.
+- 보관 기간은 적용 법규의 최소 기준(미확인 포함)을 따르는 것이 선택지로 보이며, 여기서는 수치를 정하지 않는다. [추정][^ref-764][^ref-766]
+- Open-RMF 작업 요청의 requester 는 인증되지 않은 선택 문자열이고 VDA 5050 은 사이버보안을 범위에서 빼므로, 채팅 사용자 신원과 권한 판정은 로봇 관제 인터페이스가 아니라 ROP 경계에서 묶어 두고 작업 요청 id 와 연결해 보관해야 할 것으로 보인다. [추정][^ref-125][^ref-031][^ref-762] 로봇·제조사 관제 쪽 인증·권한 구현은 연계 대상이다.
 
 #### 분류 원문 질문과의 연결
 
 > 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]
 
-사용자 권한이 지시할 수 있는 플릿·구역을 제한하면 가장 가까운 로봇이 후보에서 빠질 수 있으므로, 권한은 Open-RMF fleet_name 처럼 배정 전 후보를 거르는 제약으로 넘기고 후보 가운데 선택 기준은 디스패처가 지키는 분담이 선택지로 보인다. 권한 제약이 배정 최적성에 주는 손실을 잰 자료는 찾지 못했다. [추정][^ref-125][^ref-763][^ref-769]
+사용자 권한이 지시할 수 있는 플릿·구역을 제한하면 가장 가까운 로봇이 후보에서 빠질 수 있으므로, 권한은 Open-RMF fleet_name 처럼 배정 전 후보를 거르는 제약으로 넘기고 후보 가운데 선택 기준은 디스패처가 지키는 분담이 선택지로 보인다. 권한 제약이 배정 최적성에 주는 손실을 잰 자료는 찾지 못했다. [추정][^ref-125][^ref-762][^ref-768]
 
 #### 설명용 시나리오
 
@@ -313,16 +313,16 @@ flowchart LR
 
 | 항목 | 내용 |
 |---|---|
-| 시작 조건 | 피킹 구역 관리자가 채팅으로 자기 구역 로봇에 토트 운반을 지시한다(설명용 가정 사례). [추정][^ref-763][^ref-769][^ref-695] |
+| 시작 조건 | 피킹 구역 관리자가 채팅으로 자기 구역 로봇에 토트 운반을 지시한다(설명용 가정 사례). [추정][^ref-762][^ref-768][^ref-695] |
 | 작업 대상 | 피킹이 끝난 토트(설명용 가정) |
-| 수행 자원 | 챗봇은 인증된 사용자의 권한 맥락으로 작업 요청만 내고, 권한이 허용한 플릿·구역으로 배정 후보를 거른 뒤 후보 가운데 선택은 디스패처가 맡는 분담이 선택지로 보인다. [추정][^ref-125][^ref-763][^ref-769] |
-| 제약 | 다른 구역 플릿 지시·다른 사람의 진행 작업 취소·출입 제한 구역 진입은 상위 역할 권한이나 승인이 있어야 허용하는 흐름이 가능해 보인다(설명용 가정 사례). [추정][^ref-763][^ref-769][^ref-695] |
+| 수행 자원 | 챗봇은 인증된 사용자의 권한 맥락으로 작업 요청만 내고, 권한이 허용한 플릿·구역으로 배정 후보를 거른 뒤 후보 가운데 선택은 디스패처가 맡는 분담이 선택지로 보인다. [추정][^ref-125][^ref-762][^ref-768] |
+| 제약 | 다른 구역 플릿 지시·다른 사람의 진행 작업 취소·출입 제한 구역 진입은 상위 역할 권한이나 승인이 있어야 허용하는 흐름이 가능해 보인다(설명용 가정 사례). [추정][^ref-762][^ref-768][^ref-695] |
 | 완료·인계 | 해당 없음 |
-| 예외·성과 | 거부한 지시도 판정 사유와 함께 감사 추적에 남기는 흐름이 가능해 보인다. [추정][^ref-763][^ref-769][^ref-695] 권한 제약이 배정 최적성에 주는 손실을 잰 자료는 찾지 못했다. [추정][^ref-125][^ref-763][^ref-769] |
+| 예외·성과 | 거부한 지시도 판정 사유와 함께 감사 추적에 남기는 흐름이 가능해 보인다. [추정][^ref-762][^ref-768][^ref-695] 권한 제약이 배정 최적성에 주는 손실을 잰 자료는 찾지 못했다. [추정][^ref-125][^ref-762][^ref-768] |
 
 #### 근거 공백
 
-이번 검색 범위(한국어 3회 포함 15회)에서는 물류 창고 로봇에 채팅으로 지시하는 사용자의 명령 권한·감사 기록을 다룬 연구나 국내 사례를 찾지 못했고, 확인한 에이전트 권한 연구의 평가 환경은 웹·업무 도구 에이전트 벤치마크였다(부재 확인 아님). [추정][^ref-770][^ref-772][^ref-773]
+이번 검색 범위(한국어 3회 포함 15회)에서는 물류 창고 로봇에 채팅으로 지시하는 사용자의 명령 권한·감사 기록을 다룬 연구나 국내 사례를 찾지 못했고, 확인한 에이전트 권한 연구의 평가 환경은 웹·업무 도구 에이전트 벤치마크였다(부재 확인 아님). [추정][^ref-769][^ref-771][^ref-772]
 
 ## 4. 결론과 남은 불확실성
 
@@ -333,8 +333,8 @@ flowchart LR
 - JSON Schema 검증 어휘는 자료형·허용 값·수치 범위·필수 속성 같은 구조를 검사하고 [사실][^ref-748] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다. [사실][^ref-031]
 - 실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고 각각 놓치는 오류가 있어 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-748][^ref-760][^ref-752][^ref-416][^ref-713][^ref-031]
 - 개별 지시의 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 가져오는 구분이 분류 원문 7장과 맞는 것으로 보인다. [추정][^ref-416][^ref-757]
-- 로봇 관제 쪽 구현은 명령 권한을 역할·동작·인가 그룹(Open-RMF 웹 API 서버)이나 인클레이브·노드별 허용·거부 규칙(SROS 2, 기본 거부)으로 표현하고, OWASP LLM06:2025 는 허용 여부를 LLM 이 아니라 하위 시스템에서 사용자 권한 맥락으로 집행하라고 권고한다. [사실][^ref-763][^ref-579][^ref-695]
-- 명령 권한은 ROP 의 결정적 인가 계층이 역할·동작·자원 그룹·환경 조건을 대조하는 기본 거부 규칙으로 집행하고, 채팅 사용자 신원과 권한 판정은 ROP 경계에서 작업 요청 id 와 연결해 감사 추적으로 남기는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-695][^ref-763][^ref-769][^ref-125][^ref-031]
+- 로봇 관제 쪽 구현은 명령 권한을 역할·동작·인가 그룹(Open-RMF 웹 API 서버)이나 인클레이브·노드별 허용·거부 규칙(SROS 2, 기본 거부)으로 표현하고, OWASP LLM06:2025 는 허용 여부를 LLM 이 아니라 하위 시스템에서 사용자 권한 맥락으로 집행하라고 권고한다. [사실][^ref-762][^ref-579][^ref-695]
+- 명령 권한은 ROP 의 결정적 인가 계층이 역할·동작·자원 그룹·환경 조건을 대조하는 기본 거부 규칙으로 집행하고, 채팅 사용자 신원과 권한 판정은 ROP 경계에서 작업 요청 id 와 연결해 감사 추적으로 남기는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-695][^ref-762][^ref-768][^ref-125][^ref-031]
 
 **남은 불확실성**
 - 다섯 겹 확인 절차와 방법별 포착·놓침 분담을 한 번에 제시한 단일 출처가 없고, 근거가 물류 플릿 조건이 아니다.
@@ -439,21 +439,21 @@ flowchart LR
 
 [^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25
 [^ref-579]: Open Robotics (ros2/design GitHub), ROS 2 Access Control Policies (design.ros2.org articles/ros2_access_control_policies), 미확인, https://design.ros2.org/articles/ros2_access_control_policies.html, 접근일 2026-09-25
-[^ref-763]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-09-25
-[^ref-764]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Basic: Authorization (docs/specification/2025-06-18/basic/authorization.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/basic/authorization.mdx, 접근일 2026-09-25
-[^ref-765]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 12: Record-Keeping — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/12/, 접근일 2026-09-25 (원문 미열람)
-[^ref-766]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 19: Automatically Generated Logs — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/19/, 접근일 2026-09-25 (원문 미열람)
-[^ref-767]: 국가법령정보센터(개인정보보호위원회 고시), 개인정보의 안전성 확보조치 기준, 미확인, https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=010202&admRulSeq=2100000229672, 접근일 2026-09-25 (원문 미열람)
-[^ref-768]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-25 (원문 미열람)
-[^ref-769]: NIST, Guide to Attribute Based Access Control (ABAC) Definition and Considerations (NIST SP 800-162), 2014-01, https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-770]: Shi, T. 외(Progent 저자, 소속 미확인), Progent: Programmable Privilege Control for LLM Agents, 2025-04, https://arxiv.org/abs/2504.11703, 접근일 2026-09-25 (원문 미열람)
-[^ref-771]: South, T., Marro, S., Hardjono, T., Mahari, R., Whitney, C. D., Greenwood, D., Chan, A., & Pentland, A., Authenticated Delegation and Authorized AI Agents, 2025-01, https://arxiv.org/abs/2501.09674, 접근일 2026-09-25 (원문 미열람)
-[^ref-772]: Tsai, L., & Bagdasarian, E.(Google, HotOS 2025), Contextual Agent Security: A Policy for Every Purpose, 2025-01, https://arxiv.org/abs/2501.17070, 접근일 2026-09-25 (원문 미열람)
-[^ref-773]: Luo, J. 외(Fudan University·Shanghai Innovation Institute), AgentGuard: An Attribute-Based Access Control Framework for Tool-Use LLM-Based Agent, 2026-05, https://arxiv.org/abs/2605.28071, 접근일 2026-09-25 (원문 미열람)
-[^ref-774]: Zhu, J., Tseng, K., Vernik, G., Huang, X., Patil, S. G., Fang, V., & Popa, R. A.(arXiv 2512.11147), MiniScope: A Least-Privilege Framework for Authorizing Tool-Calling Agents, 2025-12, https://arxiv.org/abs/2512.11147, 접근일 2026-09-25 (원문 미열람)
-[^ref-775]: Mobile Industrial Robots(MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-25 (원문 미열람)
-[^ref-776]: Automated Warehouse, MiR Fleet Enterprise includes scalability, cybersecurity features for mobile robots, 미확인, https://www.automatedwarehouseonline.com/mir-fleet-enterprise-includes-scalability-cybersecurity-features-mobile-robots/, 접근일 2026-09-25 (원문 미열람)
-[^ref-777]: Wang, Y. 외(arXiv 2606.04990), From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents, 2026-06, https://arxiv.org/abs/2606.04990, 접근일 2026-09-25 (원문 미열람)
+[^ref-762]: Open Robotics (open-rmf), rmf-web — packages/api-server/README.md, 미확인, https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md, 접근일 2026-09-25
+[^ref-763]: Model Context Protocol (modelcontextprotocol GitHub), Specification 2025-06-18 — Basic: Authorization (docs/specification/2025-06-18/basic/authorization.mdx), 2025-06-18, https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/basic/authorization.mdx, 접근일 2026-09-25
+[^ref-764]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 12: Record-Keeping — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/12/, 접근일 2026-09-25 (원문 미열람)
+[^ref-765]: Future of Life Institute (artificialintelligenceact.eu, EU 규정 2024/1689 조문 게재본), Article 19: Automatically Generated Logs — EU Artificial Intelligence Act, 2024, https://artificialintelligenceact.eu/article/19/, 접근일 2026-09-25 (원문 미열람)
+[^ref-766]: 국가법령정보센터(개인정보보호위원회 고시), 개인정보의 안전성 확보조치 기준, 미확인, https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=010202&admRulSeq=2100000229672, 접근일 2026-09-25 (원문 미열람)
+[^ref-767]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-25 (원문 미열람)
+[^ref-768]: NIST, Guide to Attribute Based Access Control (ABAC) Definition and Considerations (NIST SP 800-162), 2014-01, https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-769]: Shi, T. 외(Progent 저자, 소속 미확인), Progent: Programmable Privilege Control for LLM Agents, 2025-04, https://arxiv.org/abs/2504.11703, 접근일 2026-09-25 (원문 미열람)
+[^ref-770]: South, T., Marro, S., Hardjono, T., Mahari, R., Whitney, C. D., Greenwood, D., Chan, A., & Pentland, A., Authenticated Delegation and Authorized AI Agents, 2025-01, https://arxiv.org/abs/2501.09674, 접근일 2026-09-25 (원문 미열람)
+[^ref-771]: Tsai, L., & Bagdasarian, E.(Google, HotOS 2025), Contextual Agent Security: A Policy for Every Purpose, 2025-01, https://arxiv.org/abs/2501.17070, 접근일 2026-09-25 (원문 미열람)
+[^ref-772]: Luo, J. 외(Fudan University·Shanghai Innovation Institute), AgentGuard: An Attribute-Based Access Control Framework for Tool-Use LLM-Based Agent, 2026-05, https://arxiv.org/abs/2605.28071, 접근일 2026-09-25 (원문 미열람)
+[^ref-773]: Zhu, J., Tseng, K., Vernik, G., Huang, X., Patil, S. G., Fang, V., & Popa, R. A.(arXiv 2512.11147), MiniScope: A Least-Privilege Framework for Authorizing Tool-Calling Agents, 2025-12, https://arxiv.org/abs/2512.11147, 접근일 2026-09-25 (원문 미열람)
+[^ref-774]: Mobile Industrial Robots(MiR), MiR Fleet, 미확인, https://mobile-industrial-robots.com/products/software/mir-fleet, 접근일 2026-09-25 (원문 미열람)
+[^ref-775]: Automated Warehouse, MiR Fleet Enterprise includes scalability, cybersecurity features for mobile robots, 미확인, https://www.automatedwarehouseonline.com/mir-fleet-enterprise-includes-scalability-cybersecurity-features-mobile-robots/, 접근일 2026-09-25 (원문 미열람)
+[^ref-776]: Wang, Y. 외(arXiv 2606.04990), From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents, 2026-06, https://arxiv.org/abs/2606.04990, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

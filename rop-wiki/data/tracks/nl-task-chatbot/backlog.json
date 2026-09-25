@@ -135,9 +135,9 @@
       "question": "채팅 사용자별 명령 권한(어느 로봇·구역·작업까지 지시할 수 있는가)과 지시·확인의 감사 기록은 어떻게 두는가?",
       "stage": 4,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-83",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-03",
       "created": "2026-09-25"
     },
     {
@@ -641,6 +641,39 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-81"
+    },
+    {
+      "id": "q4-17",
+      "question": "교대 인계·부재 대리처럼 채팅 사용자가 다른 사람의 권한을 대신 쓰거나, 비상 시 권한 밖 지시를 먼저 실행하고 사후 검토하는 예외(긴급 권한)를 둘 때 위임 범위·유효 시간·사후 감사 기록을 어떻게 정하는가? (q4-03 에서 파생) (관련: q4-13)",
+      "stage": 4,
+      "origin": "f21",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-83"
+    },
+    {
+      "id": "q4-18",
+      "question": "채팅 지시 감사 기록을 Open-RMF 작업 요청 id·VDA 5050 orderId 와 어떤 키로 연결하고, 개인정보 보관 기준과 EU AI Act 로그 보관 기준이 함께 걸릴 때 보관 기간·접근 권한·위변조 방지(해시 연쇄 등)를 어떻게 정하는가? (q4-03 에서 파생)",
+      "stage": 4,
+      "origin": "f22",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-83"
+    },
+    {
+      "id": "q5-17",
+      "question": "권한 밖 지시와 프롬프트 주입이 섞인 물류 지시 시험 세트로, LLM 단의 거절과 ROP 인가 계층의 결정적 거부가 각각 권한 밖 작업 요청을 얼마나 막는지와 정상 지시의 오거부율을 어떻게 재는가? (q4-03 에서 파생) (관련: q5-13)",
+      "stage": 5,
+      "origin": "f6",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-83"
     }
   ]
 }
