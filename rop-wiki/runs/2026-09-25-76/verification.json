@@ -25,7 +25,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: ref-744 raw README 재열람. 'optimal least squares estimators for the group of nonreflective similarity transformation matrices', O(n), nudged.analysis.mse 확인. README 는 JavaScript 2.x 기준이며 Python 판 존재만 언급 — Open-RMF 가 쓰는 Python 판과의 구현 동일성 미확인 표기 유지."
+      "note": "확인: ref-668 raw README 재열람. 'optimal least squares estimators for the group of nonreflective similarity transformation matrices', O(n), nudged.analysis.mse 확인. README 는 JavaScript 2.x 기준이며 Python 판 존재만 언급 — Open-RMF 가 쓰는 Python 판과의 구현 동일성 미확인 표기 유지."
     },
     {
       "finding_id": "f4",
@@ -73,7 +73,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: ref-346(Level.msg)·ref-743(Lift.msg) raw 재열람. Level: name·elevation·images·places·doors·nav_graphs(+wall_graph). Lift: string[] levels, ref_x·ref_y·ref_yaw(층 정렬용 칸 기준 방향), width·depth. 두 출처는 같은 저장소라 독립 교차 확인 아님(브리프 표기와 일치)."
+      "note": "확인: ref-346(Level.msg)·ref-667(Lift.msg) raw 재열람. Level: name·elevation·images·places·doors·nav_graphs(+wall_graph). Lift: string[] levels, ref_x·ref_y·ref_yaw(층 정렬용 칸 기준 방향), width·depth. 두 출처는 같은 저장소라 독립 교차 확인 아님(브리프 표기와 일치)."
     },
     {
       "finding_id": "f10",
@@ -200,7 +200,7 @@
     "ok": true,
     "overlaps": [
       "f12 는 6. 지도·공간·위치 모델 5절의 GLN 문장([사실][^ref-162])과 같은 주장 — 기존 각주 ref-162 재사용",
-      "f7(ISO 21423 CCS 원점, ref-746 FDIS 미리보기)은 6. 지도·공간·위치 모델 11절·oq-027 의 ISO 21423 문장(ref-159)과 겹침 — oq-027 은 해결로 바꾸지 않고 근거 보강만",
+      "f7(ISO 21423 CCS 원점, ref-670 FDIS 미리보기)은 6. 지도·공간·위치 모델 11절·oq-027 의 ISO 21423 문장(ref-159)과 겹침 — oq-027 은 해결로 바꾸지 않고 근거 보강만",
       "f1·f5·f6 은 단계 4 페이지 q4-01 절의 기존 문장(ref-153·ref-079·ref-031)과 같은 사실 — 기존 각주 재사용, 새 문장은 층별·플릿별 설정과 목적지 이름 부분만",
       "온톨로지 제안 '좌표계 정렬'은 실행 2026-09-25-72 에서 거부된 층별 지도 속성 '로봇 지도 좌표계 변환'과 같은 대상이고, 기존 개념 '층간 정렬 기준점'·용어집 '지도 정합(Map Alignment)'과 범위가 겹침"
     ]
@@ -229,11 +229,11 @@
     "온톨로지 변경 '좌표계 정렬 (Coordinate Alignment)' 개념 추가는 반영하지 않고 6절 '정렬 정보를 층별 지도 속성으로 둘지 별도 개념으로 둘지' 항목의 근거 보강으로 둔다 — 근거: 플릿 어댑터 설정이 층 키 아래 플릿별 대응점을 두어 층당 여러 변환이 생길 수 있음(f1·f2)은 별도 개념 쪽 논거이나, VDA 5050 은 관제와 로봇이 공유하는 프로젝트 고유 좌표계를 쓰므로 로봇별 변환 기록 근거가 아니고(f6), 기존 개념 '층간 정렬 기준점'·용어집 '지도 정합'과 범위 관계가 정해지지 않았다.",
     "단계 4 페이지 6절: 완료 조건 2행(도면–현장 정합 절차 초안)은 두 페이지 반영 시 '충족(1차 예비, 2차 확인)'으로, 검증 판정 칸은 '충족 · 미승인'으로 적고, 아래 줄은 '다음 단계로 전환: 아니오(막힌 질문 q4-04·q4-05·q4-07·q4-08·q4-09·q4-10·q4-11 및 이번 새 질문)'로 둔다. 상태 줄은 '진행 중'. track_updates.stage_transition 은 넣지 않는다.",
     "q4-03: 백로그·단계 페이지 2절에서 '답함'(답한 실행 2026-09-25-76, 답 위치 #q4-03), 3절 소제목 '### q4-03 … {#q4-03}'을 둔다. 답의 핵심 종합(f18~f23)은 [추정]이므로 절 첫 문단에 종합 신뢰도 low 를 밝힌다.",
-    "원문 미열람 출처(ref-745·ref-746·ref-747·ref-748·ref-749·ref-750·ref-338·ref-162·ref-345·ref-224)의 각주 정의에는 접근일 뒤 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. raw 로 연 출처(ref-153·ref-105·ref-079·ref-230·ref-346·ref-286·ref-743·ref-744)와 입력 원문 ref-031 에는 붙이지 않는다.",
+    "원문 미열람 출처(ref-669·ref-670·ref-671·ref-672·ref-673·ref-679·ref-338·ref-162·ref-345·ref-224)의 각주 정의에는 접근일 뒤 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. raw 로 연 출처(ref-153·ref-105·ref-079·ref-230·ref-346·ref-286·ref-667·ref-668)와 입력 원문 ref-031 에는 붙이지 않는다.",
     "세부영역 반영 제안(6. 지도·공간·위치 모델, 21. 온보딩·설정·현장 시운전, 10. 설비·건물 시스템 연동)은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 반영 제안으로만 남긴다. oq-027·oq-045·oq-029 는 해결로 바꾸지 않는다."
   ],
   "confidence": "low",
-  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 22건, 미확인 1건(f11 일부 절), 교차 확인 0건. 강등: f11 사실 → 일부 절(같은 순번 여러 Level)만 추정 분리. 원문 미열람 출처: ref-745, ref-746, ref-747, ref-748, ref-749, ref-750, ref-338, ref-162, ref-345, ref-224. 주의: q4-03 답의 핵심인 좌표 정렬 절차 초안·층/목적지 대응표·목적지별 잔차 합격 기준(f18~f23)은 이 위키의 종합 추정이며 단일 출처가 없다. ISO 21423 공통 좌표계 정의는 FDIS 미리보기 검색 요약 기준이고, 국내 작업규정 조문의 판은 미확인이다. 브리프 표기 오류: ref-031 은 입력 원문 텍스트로 열었으나 fetched_via 가 github_raw, fetch_url 이 null 로 적혔다(실제는 inbox). 검증 검색 8회(리서치 16회 포함 누계 24/40), raw 원문 재열람 8건. 온톨로지 변경 승인: 층(Floor) 속성 '시스템별 층 식별자(별칭)'(f6·f9·f10·f11, MassRobotics planarDatum 제외) / 거부: 개념 '좌표계 정렬'(f1·f2·f5·f6·f8 — 6절 정렬 정보 질문 근거 보강으로 이동). 단계 완료 조건: 충족(예비 — 보정 항목 목록 기존 충족, 도면–현장 정합 절차 초안은 q4-02·q4-03 답을 스키마 초안 6절과 아이디어 3. 건축 도면 자동 인식 5절에 반영하는 조건으로, 2차에서 확정). 단계 전환: 미승인(막힌 질문 q4-04·q4-05·q4-07·q4-08·q4-09·q4-10·q4-11 과 이번 새 질문 2건이 열림).",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 22건, 미확인 1건(f11 일부 절), 교차 확인 0건. 강등: f11 사실 → 일부 절(같은 순번 여러 Level)만 추정 분리. 원문 미열람 출처: ref-669, ref-670, ref-671, ref-672, ref-673, ref-679, ref-338, ref-162, ref-345, ref-224. 주의: q4-03 답의 핵심인 좌표 정렬 절차 초안·층/목적지 대응표·목적지별 잔차 합격 기준(f18~f23)은 이 위키의 종합 추정이며 단일 출처가 없다. ISO 21423 공통 좌표계 정의는 FDIS 미리보기 검색 요약 기준이고, 국내 작업규정 조문의 판은 미확인이다. 브리프 표기 오류: ref-031 은 입력 원문 텍스트로 열었으나 fetched_via 가 github_raw, fetch_url 이 null 로 적혔다(실제는 inbox). 검증 검색 8회(리서치 16회 포함 누계 24/40), raw 원문 재열람 8건. 온톨로지 변경 승인: 층(Floor) 속성 '시스템별 층 식별자(별칭)'(f6·f9·f10·f11, MassRobotics planarDatum 제외) / 거부: 개념 '좌표계 정렬'(f1·f2·f5·f6·f8 — 6절 정렬 정보 질문 근거 보강으로 이동). 단계 완료 조건: 충족(예비 — 보정 항목 목록 기존 충족, 도면–현장 정합 절차 초안은 q4-02·q4-03 답을 스키마 초안 6절과 아이디어 3. 건축 도면 자동 인식 5절에 반영하는 조건으로, 2차에서 확정). 단계 전환: 미승인(막힌 질문 q4-04·q4-05·q4-07·q4-08·q4-09·q4-10·q4-11 과 이번 새 질문 2건이 열림).",
   "retry_reason": null,
   "track_checks": {
     "standard_sources_ok": true,

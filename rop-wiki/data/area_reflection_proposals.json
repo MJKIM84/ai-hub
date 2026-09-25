@@ -1599,6 +1599,66 @@
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "summary": "온톨로지 기반 실행 가능성 판정(ReasonerOutput, f7)이 후보 없음의 원인을 SHACL 검증 보고 같은 제약 단위 형식(f8, 편집자 초안 기준)으로 13. 작업 배정 — MRTA 에 돌려주는 연결과, 제조사 광고 능력과 측정 운용 능력을 함께 표현하는 RCO(f21, oq-024 관련).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "층별·플릿별 대응 경유점(최소 4쌍 권장)으로 유사 변환을 최소제곱 추정하고 변환 오차 추정값을 확인하는 방법(사실, ref-153·ref-105·ref-668·ref-669)과 traffic-editor 의 층–기준층 변환(기준점 2쌍 이상, ref-079)이 서로 다른 변환이라는 점, 정합 절차 초안과 목적지 대응점별 잔차 판정(추정).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "ISO/FDIS 21423 공통 좌표계 원점 정의(FDIS 미리보기 검색 요약 기준, 발행판 미확인, ref-670·ref-159), MassRobotics location 의 planarDatum(층 필드 없음, ref-230), IMDF 층 순번·약칭(ref-338), Open-RMF Level·Lift 층 이름(ref-346·ref-667), nudged 라이브러리(ref-668).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "공통 좌표계 원점·층 대응표·목적지 대응표·제조사별 변환과 잔차 확인은 ROP, 제조사 지도 작성·위치추정과 격자 지도–도면 자동 정합 알고리즘은 로봇 쪽 연계 대상(시운전 보조 도구 후보), GLN·WMS 로케이션 코드 부여는 상위 업무 시스템 연계 대상이라는 경계(추정).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 6,
+      "section": "11. 열린 질문",
+      "summary": "oq-027(ISO 21423 CCS)·oq-045(지도 층 이름–승강기 층 이름)·oq-029(GLN·WMS 로케이션–경유점)의 근거 보강. 모두 해결 아님.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "시운전에서 층별 대응점 4쌍 이상과 목적지 대응점별 잔차로 정렬을 합격 판정하는 방법(추정), 국내 실내공간정보 구축 작업규정의 기준점 선정(2018 제정판 기준 검색, 현행 미확인), 격자 지도–도면 자동 정합 연구(Carpin 2008, Kakuma 외 2017 대략적 정렬, Hou 외 2019). oq-077 근거 보강.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 4,
+      "area_no": 10,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "Open-RMF 승강기 상태의 층이 주석 없는 문자열(ref-286)이고 승강기 메시지는 운행 층을 층 이름 목록으로 두므로(ref-667), 지도 층 이름과의 층 대응표가 필요할 것으로 보인다(추정, oq-045).",
+      "status": "제안"
     }
   ]
 }
