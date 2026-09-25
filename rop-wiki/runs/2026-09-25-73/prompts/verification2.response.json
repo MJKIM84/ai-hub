@@ -1,0 +1,133 @@
+{
+  "duration_api_ms": 44806,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.2485868,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 142546,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 4649,
+    "output_tokens_details": {
+      "thinking_tokens": 3161
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 142546,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4649,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 142546,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 142546
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 4649,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 142546,
+      "webSearchRequests": 0,
+      "costUSD": 1.2485868,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3161,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-73\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(mirror_only). 확인 45건, 미확인 0건, 교차 확인 0건. 강등: 없음. 다만 f11·f23·f33·f35는 해석 부분을 [추정]으로 나누었고, f7·f16의 ISO 21423 문구에는 발행 여부 미확인 단서를 붙였다. 원문 열람 출처: ref-031·ref-405·ref-010·ref-679는 raw.githubusercontent.com으로 열었고, ref-004·ref-009는 입력 원문 텍스트로 확인했다. 원문 미열람 출처: 위 6건을 뺀 재사용 출처 전부. ref-677은 검색 결과로만 확인했다. 주의: 연결 대부분은 게시된 A~F 대분류 페이지와 25~28 세부영역 페이지의 주장을 다시 인용한 것이다. 연결마다 단일 출처이거나 발행 주체가 같은 출처라서 교차 확인된 연결은 없다. f19~f21·f35·f37·f42는 다른 대분류 페이지가 '근거 없음'으로 둔 연결을 보강할 후보다. f20은 게시 전 트랙 추정을 다시 인용한 것이다. ref-315와 ref-709는 같은 보도자료를 가리킨다(id 통합은 additional_research_requests로 넘겼다). 한국어 검색은 하지 않았고, 국내 근거는 기존 KS·정부 출처를 재사용했다. 정정 요청 없음. / 2차 통과. 드리프트 없음. 1차 수정 지시 14건은 모두 이행됐다: 절 이름 정본, 번호+이름 표기, ISO 21423 단서, f11·f23·f33·f35 태그 분리, OTTO 벤더 주장 병기, f20·f21 단서, 세이프틱스 업체 자료 명시, 원문 미열람 각주 표기, 교차 규칙 링크, 22. 시뮬레이션·예측용 디지털 트윈과 8. 실시간 세계 상태·데이터 일관성의 구분, C·E 보강 후보 표시, 열린 질문 등록. [분류원문]을 보존했고, 섹션 순서를 지켰으며, 자동 영역은 바뀌지 않았다. 링크는 docs_tree 기준으로 유효하다. 사소한 표기 의견: 12. 명령·작업 실행의 신뢰성 연결의 'ROP는 … 운영 조율을 맡는다' 문장은 뒤 문장과 함께 [추정] 태그 하나로 묶여 있어, 단독으로 읽으면 단정처럼 보인다. 다음 갱신 때 '맡는 것으로 보인다'처럼 표현을 완화하기를 권한다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-73",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(mirror_only). 확인 45건, 미확인 0건, 교차 확인 0건. 강등: 없음. 다만 f11·f23·f33·f35는 해석 부분을 [추정]으로 나누었고, f7·f16의 ISO 21423 문구에는 발행 여부 미확인 단서를 붙였다. 원문 열람 출처: ref-031·ref-405·ref-010·ref-679는 raw.githubusercontent.com으로 열었고, ref-004·ref-009는 입력 원문 텍스트로 확인했다. 원문 미열람 출처: 위 6건을 뺀 재사용 출처 전부. ref-677은 검색 결과로만 확인했다. 주의: 연결 대부분은 게시된 A~F 대분류 페이지와 25~28 세부영역 페이지의 주장을 다시 인용한 것이다. 연결마다 단일 출처이거나 발행 주체가 같은 출처라서 교차 확인된 연결은 없다. f19~f21·f35·f37·f42는 다른 대분류 페이지가 '근거 없음'으로 둔 연결을 보강할 후보다. f20은 게시 전 트랙 추정을 다시 인용한 것이다. ref-315와 ref-709는 같은 보도자료를 가리킨다(id 통합은 additional_research_requests로 넘겼다). 한국어 검색은 하지 않았고, 국내 근거는 기존 KS·정부 출처를 재사용했다. 정정 요청 없음. / 2차 통과. 드리프트 없음. 1차 수정 지시 14건은 모두 이행됐다: 절 이름 정본, 번호+이름 표기, ISO 21423 단서, f11·f23·f33·f35 태그 분리, OTTO 벤더 주장 병기, f20·f21 단서, 세이프틱스 업체 자료 명시, 원문 미열람 각주 표기, 교차 규칙 링크, 22. 시뮬레이션·예측용 디지털 트윈과 8. 실시간 세계 상태·데이터 일관성의 구분, C·E 보강 후보 표시, 열린 질문 등록. [분류원문]을 보존했고, 섹션 순서를 지켰으며, 자동 영역은 바뀌지 않았다. 링크는 docs_tree 기준으로 유효하다. 사소한 표기 의견: 12. 명령·작업 실행의 신뢰성 연결의 'ROP는 … 운영 조율을 맡는다' 문장은 뒤 문장과 함께 [추정] 태그 하나로 묶여 있어, 단독으로 읽으면 단정처럼 보인다. 다음 갱신 때 '맡는 것으로 보인다'처럼 표현을 완화하기를 권한다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 33929,
+  "type": "result",
+  "duration_ms": 44951,
+  "uuid": "37085330-dda4-4a24-8433-ad293c2e7c3e",
+  "ttft_stream_ms": 2213,
+  "time_to_request_ms": 112,
+  "first_content_frame_ms": 2214,
+  "time_to_request_from_spawn_ms": 11205191,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790324301134.241,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 47.0
+}

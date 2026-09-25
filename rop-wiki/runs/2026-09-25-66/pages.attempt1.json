@@ -1,0 +1,797 @@
+{
+  "run_id": "2026-09-25-66",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 1400,
+      "summary": "q3-01 을 답함으로 바꾸고, 앞 단계에서 이 단계로 올라온 q3-05~q3-10 과 이번 실행의 q3-11 을 표에 더한다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 6500,
+      "summary": "확인한 자료로는 순서·시각·충전 삽입 같은 스케줄링 결정은 결정적 최적화·계획 해법이 맡고 LLM 은 문제 인스턴스화와 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-675][^ref-377][^ref-681]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26",
+        "f27"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 1400,
+      "summary": "분담 가설은 이 위키의 종합이며 근거가 물류 플릿이 아닌 조건이라 신뢰도가 낮다. [추정][^ref-675][^ref-377]",
+      "planned_findings": [
+        "f22",
+        "f24",
+        "f27"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 600,
+      "summary": "후속 질문 2건(q3-11, q4-08)을 올리고 중복 1건은 제외한다.",
+      "planned_findings": [
+        "f16",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 700,
+      "summary": "세 완료 조건 모두 미충족, 다음 단계로 전환하지 않는다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "section": "7. 관련 세부영역",
+      "budget_chars": 900,
+      "summary": "13·14·27·20 세부영역에 반영 제안을 낸다.",
+      "planned_findings": []
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q3-01 답함(3절 #q3-01 신설: 오케스트레이션 도구의 스케줄링 위치, LLM 직접 생성의 한계·반례, LLM+해법기 결합, 루프 밖 규칙 합성, 분담 종합, 출하 시나리오), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건 미충족, 상태 줄 갱신(H1 아래 상태 줄 갱신이 필요해 전체 content 로 보냄)"
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(H1 버전 표기 갱신이 필요해 전체 content 로 보냄)"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 처리 흐름(q3-02)·되묻기(q3-03)·지시 변경(q3-04)은 미조사임을 명시",
+      "patches": [
+        {
+          "section": "5. 구현 가설",
+          "action": "replace",
+          "content": "이 절은 [단계 3. 구현 가설 설계](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md)와 [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md)의 결과를 싣는다. 지금까지는 q3-01 의 답인 스케줄링 결정의 분담만 실었고(실행 2026-09-25-66), 처리 흐름 전체와 단계별 입력·출력(q3-02), 온톨로지 질의 결과에 따른 되묻기(q3-03), 지시 변경 반영(q3-04), 확인 절차(단계 4)는 아직 조사되지 않았다. 다른 아이디어와의 연결 구조(구축자 제안)는 [확장 아이디어 연결 구조](index.md)에 있다.\n\n### 스케줄링 결정의 분담\n\n확인한 자료로는 순서·시각·충전 삽입 같은 스케줄링 결정은 결정적 최적화·계획 해법이 맡고, LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-675][^ref-677][^ref-377][^ref-679][^ref-681][^ref-687] 이는 이 위키의 종합이며, 근거가 작업장·프로젝트·운영과학 일반·건설·항만·여행 계획 조건이고 이종 제조사 창고 플릿 비교 자료는 검색 범위에서 찾지 못해 신뢰도가 낮다. 자세한 근거는 [단계 3 조사 결과](../tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01)에 있다.\n\n- **LLM 직접 생성의 한계**: ConstraintBench 저자들은 10개 운영과학 영역 200개 과제에서 6개 모델을 평가해 가장 좋은 모델의 실행 가능 해 비율이 65.0%였고, 실행 가능성과 최적성(솔버 기준 0.1% 이내)을 함께 만족한 비율은 어느 모델도 30.5%를 넘지 못했다고 보고했다(저자 보고값, 원문 미열람). [사실][^ref-675] SCHEDBench 저자들은 같은 스케줄링 문제를 의미가 같은 다른 문장 표현으로 주면 실행 가능 비율이 떨어지고 제약 위반이 달라진다고 보고했다. [사실][^ref-677] 자원 제약 프로젝트 스케줄링에서 여러 제약이 함께 걸리면 실행 가능성이 급락한다는 보고도 있는 것으로 보인다(저자 보고, 검증 미재확인). [추정][^ref-676]\n- **정식화와 해법기의 결합**: OptiMUS 는 LLM 이 정식화한 모델을 MIP·LP 해법기로 푼다. [사실][^ref-679] LAPPI 는 LLM 이 대화로 선호를 후보·점수·제약으로 바꿔 최적화 문제를 인스턴스화하고 풀이는 해법기에 맡긴다. [사실][^ref-681] 다중 로봇 연구 LiP-LLM·PIP-LLM·FLEET·Peng 외도 LLM 이 정식화하고 결정적 해법이 배정·일정을 푼다. [사실][^ref-166][^ref-181][^ref-242][^ref-167]\n- **오케스트레이션 도구의 위치**: Open-RMF rmf_task 의 작업 계획기는 요청된 시작 시각을 지키며 작업이 가장 빨리 끝나도록 로봇별 작업 순서를 정하고, 탐욕 방식과 A* 기반 방식 가운데 하나로 푼다. [사실][^ref-404][^ref-377] rmf_task 는 배터리 같은 자원 제약을 고려해 충전 작업을 일정에 자동으로 끼워 넣는다. [사실][^ref-404]\n- **반례**: 미세 조정한 LLM 이 작업장 스케줄링에서 규칙·초기 신경망 방법을 앞섰다는 보고와 LLM 두 개가 건설 로봇 스케줄을 직접 만든 연구가 있으나, 비교 대상이 정확 해법기가 아니거나 확인되지 않아 해법기 대체의 근거로는 약한 것으로 보인다. [추정][^ref-678][^ref-689][^ref-675]\n- **동적 재스케줄링**: LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·검증을 거쳐 반영하며 실시간 재계산은 해법이 맡는 구조가 선택지로 보인다. [추정][^ref-683][^ref-684][^ref-404]\n- **설명 역할**: 스케줄링 시스템이 낸 결과를 사람에게 설명하는 텍스트를 LLM 으로 생성하는 연구가 있다. [사실][^ref-687]\n\n이 결과 가운데 검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 일정 개념에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용)으로 반영되었다(v0.6). 이 분담은 트랙 개요의 가설 3과 같은 방향이지만, 가설 판정은 단계 5에서 한다.",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-675",
+              "ref-676",
+              "ref-677",
+              "ref-678",
+              "ref-679",
+              "ref-681",
+              "ref-683",
+              "ref-684",
+              "ref-687",
+              "ref-689"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 3 | q3-01 답함(스케줄링은 결정적 해법, LLM 은 인스턴스화·설명 분담 가설, 신뢰도 low), 업무 분해·배정 설계 초안 v0.5 → v0.6(일정 산출 방식), 아이디어 2 5절에 분담 소절, 후속 질문 2건 | run 2026-09-25-66",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 3. 구현 가설 설계: q3-01 답함 — 스케줄링 결정은 결정적 최적화·계획 해법, LLM 은 문제 인스턴스화와 결과 설명을 맡는 분담 가설(신뢰도 low), 업무 분해·배정 설계 초안 v0.6",
+    "category_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 자연어 업무 지시 챗봇 트랙 단계 3에서 rmf_task 작업 계획기와 LLM 직접 스케줄 생성의 한계를 조사하고 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링 반영 제안",
+    "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 3(q3-01)에서 TaskPlanner 탐욕·A* 선택, LLM 정식화+해법기 배정 분담, 분류 원문 질문과의 연결을 6. 대표 접근법과 기술 반영 제안으로 냄"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "job-shop-scheduling-problem",
+      "term_ko": "작업장 스케줄링 문제",
+      "term_en": "Job Shop Scheduling Problem (JSSP)",
+      "definition": "여러 작업이 정해진 순서로 여러 기계를 거칠 때 기계별 작업 순서를 정해 전체 완료 시간 같은 목표를 최소화하는 대표적 조합 최적화 스케줄링 문제이다.",
+      "description": "LLM 이 스케줄을 직접 만드는 연구(Starjob 등)의 평가 대상으로 쓰인다.",
+      "related_areas": [
+        14,
+        27
+      ],
+      "sources": [
+        "ref-678"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "resource-constrained-project-scheduling-problem",
+      "term_ko": "자원 제약 프로젝트 스케줄링 문제",
+      "term_en": "Resource-Constrained Project Scheduling Problem (RCPSP)",
+      "definition": "선후 관계가 있는 활동들을 한정된 자원 용량 안에서 시작 시각을 정해 배치하는 스케줄링 문제로, 실행 가능한 일정을 찾는 것 자체가 어려운 NP-난해 문제이다.",
+      "description": "R-ConstraintBench·SCHEDBench 가 LLM 의 제약 만족을 평가하는 문제 유형으로 쓴다.",
+      "related_areas": [
+        14,
+        27
+      ],
+      "sources": [
+        "ref-676"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "llm-modulo-framework",
+      "term_ko": "LLM-모듈로 프레임워크",
+      "term_en": "LLM-Modulo Framework",
+      "definition": "LLM 을 계획의 후보를 내는 생성기로 두고 외부 모델 기반 검증기·비평자가 후보를 검사해 되먹임하는 LLM–기호 시스템 결합 구조이다.",
+      "description": "Kambhampati 외(ICML 2024 입장 논문)가 제안했다. 입장 논문의 주장이므로 [의견]으로 인용한다.",
+      "related_areas": [
+        27,
+        14
+      ],
+      "sources": [
+        "ref-674"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-674",
+      "org": "Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S., Saldyt, L., & Murthy, A.",
+      "title": "LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.01817",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ICML 2024 입장 논문. LLM 단독 계획·자기 검증의 한계를 주장하고 외부 검증기와 결합하는 LLM-Modulo 틀을 제안.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-675",
+      "org": "ConstraintBench 저자(arXiv 2602.22465, 저자 미확인)",
+      "title": "ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization",
+      "published": "2026-02",
+      "url": "https://arxiv.org/abs/2602.22465",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 10개 운영과학 영역에서 LLM 직접 풀이의 실행 가능성·최적성을 솔버 정답과 비교한 벤치마크.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-676",
+      "org": "Jain, R. 외(R-ConstraintBench 저자)",
+      "title": "R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling",
+      "published": "2025-08",
+      "url": "https://arxiv.org/abs/2508.15204",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자원 제약 프로젝트 스케줄링에서 제약을 늘려 가며 LLM 실행 가능성을 평가.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-677",
+      "org": "SCHEDBench 저자(arXiv 2608.00991, 저자 미확인)",
+      "title": "SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.00991",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 1,132개 스케줄링 사례로 LLM 직접 스케줄 생성이 문장 표현 변화에 얼마나 흔들리는지 평가.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-678",
+      "org": "Starjob 저자(arXiv 2503.01877, 저자 미확인)",
+      "title": "Starjob: Dataset for LLM-Driven Job Shop Scheduling",
+      "published": "2025-03",
+      "url": "https://arxiv.org/abs/2503.01877",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업장 스케줄링 13만 사례 자연어 데이터셋과 미세 조정 Llama 8B 의 직접 스케줄 생성 결과.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-679",
+      "org": "teshnizi (OptiMUS 공식 저장소)",
+      "title": "OptiMUS — Optimization Modeling Using mip Solvers and large language models (GitHub README)",
+      "published": null,
+      "url": "https://github.com/teshnizi/OptiMUS",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "LLM 이 자연어 문제를 MIP 모델로 정식화하고 해법기로 푸는 OptiMUS 의 판별 구성(v1~v3)과 NLP4LP 데이터셋 안내.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-680",
+      "org": "AhmadiTeshnizi, A. 외(OptiMUS 저자)",
+      "title": "OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale",
+      "published": "2024-07",
+      "url": "https://arxiv.org/abs/2407.19633",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LaTeX 모델→gurobipy 코드→실행으로 최적해를 내는 OptiMUS-0.3 과 오류 검사 모듈.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md"
+      ]
+    },
+    {
+      "id": "ref-681",
+      "org": "Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026)",
+      "title": "LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.14138",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 대화로 최적화 문제를 인스턴스화하고 해법기가 푸는 대화형 최적화(IEEE Access 2026 게재 기록).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-682",
+      "org": "DynaSchedBench 저자(arXiv 2605.27566, 저자 미확인)",
+      "title": "DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents",
+      "published": "2026-05",
+      "url": "https://arxiv.org/abs/2605.27566",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 동적 유연 작업장 스케줄링에서 LLM 스케줄러의 관측 정보 수준별 성능과 도구 탐색 비용을 평가.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-683",
+      "org": "RACE-Sched 저자(arXiv 2605.29262, 저자 미확인)",
+      "title": "Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling",
+      "published": "2026-05",
+      "url": "https://arxiv.org/abs/2605.29262",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 실시간 휴리스틱 디스패치와 LLM 규칙 합성을 분리한 비동기 이중 흐름 스케줄링 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-684",
+      "org": "Li, J., & Li, C.(소속 미확인)",
+      "title": "LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.09343",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 시뮬레이션 사건 기록으로 LLM 에이전트가 생산·AGV 스케줄링 휴리스틱 코드를 개선하는 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-685",
+      "org": "Hu, J., Li, J., Lin, W., Jia, P., Ji, Y., & Lai, J.",
+      "title": "PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.14417",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 가상 전문가 팀이 컨테이너 터미널 차량 디스패칭 시스템의 이전(모델·코드 작성·디버깅)을 자동화.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-686",
+      "org": "Wang, Y., & Li, K.",
+      "title": "Large Language Models in Operations Research: Methods, Applications, and Challenges",
+      "published": "2025-09",
+      "url": "https://arxiv.org/abs/2509.18180",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 운영과학의 LLM 적용을 자동 모델링·보조 최적화·직접 풀이로 분류한 서베이.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-687",
+      "org": "Powell, C. 외(University of Strathclyde)",
+      "title": "Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models",
+      "published": "2025",
+      "url": "https://link.springer.com/article/10.1007/s10844-025-00940-w",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Journal of Intelligent Information Systems 게재. 스케줄링 시스템 출력의 설명문을 LLM 으로 생성.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-377",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "TaskPlanner API 헤더. 탐욕·A* 풀이 옵션, 비용 계산기 기본값, 마무리 작업 요청 생성기, plan 함수를 정의.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-689",
+      "org": "Saha, S., Das, S., Duan, H., & Liu, X.-Y.",
+      "title": "Hybrid LLM-based Intelligent Framework for Robot Task Scheduling",
+      "published": "2026-05",
+      "url": "https://arxiv.org/abs/2605.15486",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 생성·감독 LLM 두 개로 건설 로봇 작업 스케줄을 직접 만드는 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-404",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — README",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "rmf_task 의 작업 배정·순서 계획(TaskPlanner)과 충전 작업 자동 삽입을 소개하는 README.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-376",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "디스패처–플릿 어댑터 입찰 기반 작업 배정 설명. 이번 실행의 검증에서 공식 미러(src/task.md) 원문으로 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 명세 원문(입력 원문 텍스트). 범위·관제 기능·주문·동작을 규정.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-091",
+      "org": "Cranial-XIX (LLM+P 저자)",
+      "title": "llm-pddl — LLM+P: Empowering Large Language Models with Optimal Planning Proficiency (GitHub README)",
+      "published": null,
+      "url": "https://github.com/Cranial-XIX/llm-pddl",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "LLM+P 공식 저장소 README. Fast Downward 계획기, 7개 도메인, 비교 방법 구성.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-092",
+      "org": "Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P.",
+      "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+      "published": "2023-04",
+      "url": "https://arxiv.org/abs/2304.11477",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 PDDL 을 만들고 고전 계획기가 푸는 LLM+P 와 LLM-as-Planner 비교.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md"
+      ]
+    },
+    {
+      "id": "ref-166",
+      "org": "Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T.",
+      "title": "LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21040",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 의존 그래프 + 선형계획 배정.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-167",
+      "org": "Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L.",
+      "title": "Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models",
+      "published": "2025-03",
+      "url": "https://arxiv.org/abs/2503.13813",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자연어 작업 기술을 MILP 모델·코드로 바꾸는 다중 로봇 배정·스케줄링.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-181",
+      "org": "Shi, G., Wu, Y., Kumar, V., & Sukhatme, G. S.",
+      "title": "PIP-LLM: Integrating PDDL-Integer Programming with LLMs for Coordinating Multi-Robot Teams Using Natural Language",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.22784",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 팀 수준 PDDL 계획 뒤 정수계획으로 로봇 배정.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-242",
+      "org": "Rivera, C., Byrd, G., Booker, M., Kemp, B., Gaines, A., Holmes, E., Uplinger, J., de Melo, C. M., & Handelman, D.(JHU APL·JHU·DEVCOM ARL)",
+      "title": "FLEET: Formal Language-Grounded Scheduling for Heterogeneous Robot Teams",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.07417",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 작업 그래프·적합도 행렬 + makespan 최소화 형식적 뒷단.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "창고 이동로봇 플릿의 재배정·재스케줄링 주기에서 LLM 추론 지연이 허용되는 한계를 측정했거나, LLM 을 결정 루프 밖에 둔 운영 사례가 있는가?",
+      "areas": [
+        14,
+        27
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "출하",
+      "item": "시작 조건",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
+      "title": "단계 3. 구현 가설 설계"
+    },
+    {
+      "step": "출하",
+      "item": "작업 대상",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
+      "title": "단계 3. 구현 가설 설계"
+    },
+    {
+      "step": "출하",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
+      "title": "단계 3. 구현 가설 설계"
+    },
+    {
+      "step": "출하",
+      "item": "제약",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
+      "title": "단계 3. 구현 가설 설계"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
+      "title": "단계 3. 구현 가설 설계"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 3 페이지 3절(q3-01): ConstraintBench(ref-675) 원문에서 영역별 실행 가능 비율(검색 요약 간 0.8~85.0% 대 0.8~83.3% 불일치)과 해법 최적값 대비 비율(89~96%)을 확인할 필요가 있다 — 이번 페이지에서는 수치를 쓰지 않았다.",
+    "단계 3 페이지 3절: R-ConstraintBench(ref-676)의 결론(복합 제약에서 실행 가능성 급락, 병목은 제약 상호작용)과 LLM+P 논문(ref-092)의 결과 구절을 원문으로 재확인해야 [사실]로 쓸 수 있다.",
+    "단계 3 페이지 3절·4절: SCHEDBench 의 평가 모델 수와 가장 민감한 변형 유형, DynaSchedBench 수치(1.66%·0.65%)의 지표 정의, Starjob 의 정확 해법기(OR-Tools 등) 비교 여부가 미확인이다.",
+    "단계 3 페이지 3절: rmf_task 의 재배정 기능 문서와 BinaryPriorityCostCalculator 의 비용 정의를 공식 저장소에서 확인할 필요가 있다(동적 재스케줄링 분담 근거).",
+    "아이디어 2 5절 완료 조건: 처리 흐름 전체와 단계별 입력·출력(q3-02)을 조사해야 단계 3 완료 조건을 채울 수 있다.",
+    "실험 페이지(단계 3 완료 조건): 사용자에게 제안할 실험 계획(예: 창고 시나리오에서 LLM 인스턴스화+해법기와 LLM 직접 스케줄 비교)의 근거가 되는 finding 이 브리프에 없어 이번에 계획을 쓰지 않았다(q5-05 와 연계)."
+  ],
+  "fixes_applied": [
+    "f2 '(예: 충전)' 제거 — 단계 3 페이지의 TaskPlanner.hpp(ref-377) 문장에서 충전 예시를 빼고 '마무리 작업'으로만 썼으며, 충전 작업 자동 삽입은 README(ref-404) 각주만 단 별도 문장으로 옮겼다(아이디어 페이지·시나리오도 같음).",
+    "f4 분리 — 관제 최소 기능·충전 주문의 운반 주문 중단·교통 관리 로직 범위 제외는 [사실][^ref-031], '배정·일정 결정 로직은 관제 구현에 맡겨진 것으로 보인다'는 별도 [추정][^ref-031] 문장으로 나누고, 13. 작업 배정 — MRTA 페이지의 '배정 알고리즘을 규정하지 않는다'와 어긋나지 않게 썼다.",
+    "f6 강등 — LLM+P 결과 문장을 [추정]으로 쓰고 'LLM+P 논문 저자 보고, 원문 미열람'을 병기했다.",
+    "f8 수치 정리 — 영역별 비율 수치를 쓰지 않고 '편차가 크다고 보고되었으나 수치는 검색 요약마다 달라 미확인'으로 썼으며, 89~96% 는 삭제하고 30.5% 에 '솔버 기준 0.1% 이내', '6개 모델·200개 과제, 저자 보고값'을 병기했다.",
+    "f9 강등 — R-ConstraintBench 문장을 [추정]으로 쓰고 '저자 보고, 원문 미열람·검증 미재확인'을 병기했다.",
+    "f10 — '13개 LLM'과 '제약 순서 바꾸기에 가장 민감'을 본문에서 빼고 '평가한 모델 수와 가장 민감한 변형 유형은 미확인'으로 표시했다.",
+    "f12 — '참된 최적화기보다 정교한 휴리스틱처럼 동작' 구절을 뺐고, 1.66% 대 0.65%·약 3배 토큰 비용은 저자 보고값으로 두되 '지표 정의 미확인'을 병기했다.",
+    "f13 — '샌드박스 시험·원자적 갱신 배포'를 빼고 'LLM 이 규칙을 합성·검증·진화시킨다'로 줄였으며 '규칙을 운영에 반영하는 방식의 세부는 미확인'을 적었다.",
+    "f14 — 본문과 각주·참고문헌 항목의 저자 소속을 '소속 미확인'으로 바꿨다.",
+    "f15 — README(ref-679)가 확인하는 v1~v3 구성과 MIP·LP 해법기 사용을 [사실][^ref-679] 문장으로, Gurobi 파이썬 API 코드와 오류 검사 모듈은 ref-680(원문 미열람) 요약 기준임을 밝힌 별도 문장으로 구분했다.",
+    "f16·ref-681 — 본문 표기를 'Kuroki 외, IEEE Access 2026'으로 쓰고 각주 정의와 reference_updates 의 기관을 'Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026)'로 고쳤다.",
+    "f18 — 문장 앞에 '연계 대상:'을 붙이고 방법 사례로만 서술했으며 디버거의 검사 방식 세부를 미확인으로 표시했다.",
+    "f19 — '63권 1287–1337쪽'을 본문에서 뺐고 참고문헌 요약에서도 권·쪽수를 뺐다.",
+    "f20 — '건설 로봇 사례로' 시작하고 분류 원문 9장의 업종별 조건 연계 대상이어서 방법 사례로만 다룬다고 밝혔다.",
+    "f24 — 'rmf_task 의 재배정'을 쓰지 않고 [추정] 문장 안에서 '충전 삽입 등'으로만 쓰며 '재배정 기능은 문서에서 확인하지 않았다'를 덧붙였다.",
+    "인용 — ref-377·ref-404 는 페이지에서 직접 인용 없이 모두 재서술했다.",
+    "각주 — 원문 미열람 19개 출처의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-679·ref-377·ref-404·ref-091·ref-031·ref-376 은 원문 열람 출처(source_unopened: false, 각주 표시 없음)로 두었다.",
+    "온톨로지 — 업무 분해·배정 설계 초안의 일정(Schedule) 개념에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용)을 더하고 상태를 초안 → 확정, 초안 버전을 0.5 → 0.6(프런트매터·H1·ontology_draft_version)으로 올렸으며, 'LLM 직접 생성' 값은 넣지 않고 6절 질문(관련 f11·f20·f23)으로 두었다.",
+    "초안 6절 — '일정을 누가 계산하는가' 질문에 q3-01 답([추정], 신뢰도 low)과 단계 3 페이지 링크를 연결하되 물류 플릿 근거가 없어 해결로 닫지 않는다고 적었다.",
+    "새 질문 3(ConstraintBench 방식 물류 측정)은 q5-05 중복이므로 backlog_updates 에 넣지 않고 단계 3 페이지 5절에 제외 사유만 적었다.",
+    "q3-01 — 백로그와 단계 페이지 2절에서 답함(답한 실행 2026-09-25-66, 답 위치 #q3-01, 3절 '### q3-01 … {#q3-01}')으로 처리했고, 6절 완료 조건 세 항목을 모두 '미충족'으로, 표 아래 줄을 '다음 단계로 전환: 아니오(아이디어 2 5절 처리 흐름·구성 요소 미작성, 실험 계획 없음, 열린 질문 q3-02~q3-10)'로 썼다.",
+    "트랙 개요 — 현재 단계(단계 1. 선행 연구·제품 사례 조사)를 바꾸지 않았고, 마지막 트랙 실행이 이미 2026-09-25 로 되어 있어 개요 페이지는 내용 변경이 없으므로 pages 에 넣지 않았다(overview_progress 에 CLI 지정 단계 3 실행임을 적음).",
+    "docs/ideas/nl-task-chatbot.md: 각주 정의 12개를 참고문헌에서 만들어 붙임: ref-404, ref-675, ref-676, ref-677, ref-678, ref-679, ref-681, ref-683, ref-684, ref-687, ref-377, ref-689"
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md",
+    "ontology_draft_version": "0.6",
+    "backlog_updates": [
+      {
+        "id": "q3-01",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01"
+      },
+      {
+        "id": "q3-11",
+        "status": "열림",
+        "answer_link": null,
+        "question": "채팅 지시에서 LLM 이 뽑은 기한·우선순위·선호(목적 가중치)를 rmf_task 비용 계산기나 MILP 목적함수·제약으로 넘기는 인터페이스는 어떤 형식으로 두고, LAPPI 처럼 사용자가 결과를 보고 가중치를 고치는 반복을 어떻게 설계하는가? (q3-01 에서 파생)",
+        "stage": 3,
+        "origin": "f16"
+      },
+      {
+        "id": "q4-08",
+        "status": "열림",
+        "answer_link": null,
+        "question": "RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생)",
+        "stage": 4,
+        "origin": "f13"
+      }
+    ],
+    "log_entry": "답한 질문: q3-01(단계 3. 구현 가설 설계 3절 #q3-01, 근거 f1~f27, 신뢰도 low — 스케줄링 결정은 결정적 최적화·계획 해법, LLM 은 문제 인스턴스화·결과 설명을 맡는 분담 가설) / 새 질문: q3-11(f16), q4-08(f13); ConstraintBench 방식 물류 측정 질문은 q5-05(및 q3-05)와 중복으로 제외 / 온톨로지 변경: v0.5 → v0.6: 개념 '일정 (Schedule)'에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용) 추가, 초안 → 확정(f1·f2·f13·f14·f15·f21, 근거 실행 2026-09-25-66); 값 후보 'LLM 직접 생성' 거부 → 6절 질문(관련 f11·f20·f23) / 완료 조건 평가: 미충족(부족: 아이디어 2 5절 처리 흐름·핵심 구성 요소·다른 아이디어와의 연결, 실험 페이지 실험 계획; 열린 질문 q3-02~q3-11) / 세부영역 반영 제안: 14. 작업 순서·스케줄링, 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영(2건), 20. 예외 복구·재계획·업무 연속성 — 5건 / 다음 실행 제안: q3-02, q3-03, q3-04. 참고: 이번 실행은 CLI 지정 단계 3 실행이며 트랙 개요의 현재 단계는 단계 1 유지. 백로그 중복 q3-09/q3-10, q5-05/q5-06 정리 필요.",
+    "overview_progress": "단계 3 진행 중 — 열린 질문 10, 답함 1, 완료 조건 미충족 (CLI 지정 단계 3 실행, 트랙 개요의 현재 단계 표시는 단계 1 유지)"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 14,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "rmf_task 작업 계획기의 순서 계획(요청 시작 시각 준수, 탐욕·A* 선택)과 README 기준 충전 작업 자동 삽입(f1·f2), LLM 직접 스케줄 생성의 실행 가능성 한계 벤치마크(ConstraintBench 65.0%·30.5% 조건 병기 f8, SCHEDBench 표현 민감성 f10, DynaSchedBench f12, R-ConstraintBench [추정] f9), LLM 을 결정 루프 밖에 두고 규칙을 합성하는 RACE-Sched(f13)와 분담 가설(f22·f24 [추정]). 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에 연결한다."
+    },
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "TaskPlanner 의 탐욕(최적성 미보장)·A*(최적성 보장) 선택과 기본 비용 계산기 BinaryPriorityCostCalculator(f2), LLM 정식화+선형·정수계획·MILP·makespan 최소화 해법 배정 분담(f21), 분류 원문 질문 '가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가?'와 목적함수 기반 해법의 비교 가능성([추정] f25, 30.5% 조건 병기)."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM-모듈로 틀(Kambhampati 외, [의견] f7), LLM 을 해법기가 아니라 정식화·인스턴스화 인터페이스로 쓰는 OptiMUS(f15)·LAPPI(f16, Kuroki 외), 스케줄링 결과의 설명문을 LLM 으로 생성하는 연구(f19). 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링과 함께 연결한다."
+    },
+    {
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "운영과학 LLM 적용 서베이(Wang·Li, 자동 모델링·보조 최적화·직접 풀이의 세 경로, f17)와 LLM 직접 풀이 벤치마크 ConstraintBench(f8)·SCHEDBench(f10)를 대표 자료 후보로 제안한다(원문 미열람)."
+    },
+    {
+      "area_no": 20,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "동적 재스케줄링에서 LLM 추론 지연 때문에 LLM 을 결정 루프 밖에 두고 규칙·정책을 만들어 시뮬레이션·검증 뒤 반영하는 구조(RACE-Sched f13, Li·Li f14, 종합 f24 [추정])가 14. 작업 순서·스케줄링·27. AI·학습·적응과 모델 운영과 이어진다. 시뮬레이션은 정책 검증 도구로만 다룬다."
+    }
+  ]
+}

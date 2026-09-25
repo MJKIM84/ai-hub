@@ -1,0 +1,518 @@
+{
+  "run_id": "2026-09-25-04",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 3800,
+      "summary": "조사한 연구는 분해 결과의 형태에 따라 여섯 유형으로 묶을 수 있다는 것이 이 위키의 정리다. [추정][^ref-057] 조사한 일곱 LLM 기반 접근은 사람이 미리 정한 실행 단위 안에서 분해한다. [추정][^ref-089]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "q1-01 은 답했으나 제품 사례·국내 자료·물류 적용 사례는 확인되지 않았다. [추정][^ref-089]",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "section": "2. 개념 목록 표",
+      "budget_chars": 400,
+      "summary": "검증이 승인한 로봇 팀 개념을 확정 상태로 더했다. [사실][^ref-089]",
+      "planned_findings": [
+        "f9"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "section": "6. 미해결 모델링 질문",
+      "budget_chars": 1400,
+      "summary": "검증이 승인하지 않은 허용 동작 목록·형식 작업 명세·선행 의존 관계를 질문으로 두었다. [추정][^ref-093]",
+      "planned_findings": [
+        "f2",
+        "f4",
+        "f6",
+        "f7",
+        "f10",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "3. 선행 연구·제품 사례",
+      "budget_chars": 1600,
+      "summary": "선행 연구 쪽만 정리했고 제품 사례는 아직 조사되지 않았다. [추정][^ref-089]",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-01 답함(분해 접근 여섯 유형·접근별 내용·사람에게 남는 일), 후속 질문 q1-05, 완료 조건 미충족, 출처 17건(2차 재실행에서 내용 변경 없음)"
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "초안 v0 → v0.1: 개념 로봇 팀(Coalition) 확정 추가(f9), 거부된 제안 3건을 6절 미해결 모델링 질문으로(2차: 6절 일곱 접근 범위 한정, Lang2LTL 서술 수정, PDDL·LTL 풀어쓰기)"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절 선행 연구 쪽 작성(분해 결과 형태 여섯 유형, 사람에게 남는 일, 물류 적용 한계), 제품 사례 미조사 명시(2차: 표의 PDDL·LTL 풀어쓰기, 둘째·셋째 항목에 '이 위키의 정리' 표시)"
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "상태 줄 마지막 트랙 실행 2026-09-25, 6절 초안 버전 v0.1 반영(2차 재실행에서 내용 변경 없음)"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 1 | q1-01 답함(자연어 지시 분해 접근 여섯 유형), 후속 질문 q1-05, 업무 분해·배정 설계 초안 v0.1(로봇 팀 추가) | run 2026-09-25-04",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 1: 자연어 지시를 작업으로 분해하는 기존 접근을 여섯 유형으로 정리(q1-01 답함), 업무 분해·배정 설계 초안 v0.1",
+    "category_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 자연어 업무 지시 챗봇 트랙이 LLM 기반 분해·팀 구성·할당 연구(SMART-LLM, DART-LLM)를 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "task-decomposition",
+      "term_ko": "작업 분해",
+      "term_en": "Task Decomposition",
+      "definition": "상위 지시나 목표를 로봇이 실행할 수 있는 하위 작업·동작의 순서나 구조로 나누는 일이다.",
+      "related_areas": [
+        13,
+        14,
+        2,
+        27
+      ],
+      "sources": [
+        "ref-093",
+        "ref-089"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "behavior-tree",
+      "term_ko": "행동 트리",
+      "term_en": "Behavior Tree",
+      "definition": "로봇 동작과 조건 확인을 트리 노드로 조합해 실행 구조를 표현하는 형식이다.",
+      "related_areas": [
+        12,
+        27,
+        13
+      ],
+      "sources": [
+        "ref-061"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "linear-temporal-logic",
+      "term_ko": "선형 시간 논리",
+      "term_en": "Linear Temporal Logic (LTL)",
+      "definition": "작업의 순서·시간 제약을 명확한 의미로 기술하는 형식 논리이다.",
+      "related_areas": [
+        27,
+        23,
+        13
+      ],
+      "sources": [
+        "ref-055",
+        "ref-056"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-087",
+      "org": "Google Research",
+      "title": "SayCan (google-research/saycan README)",
+      "published": null,
+      "url": "https://github.com/google-research/google-research/blob/master/saycan/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "SayCan 공식 코드 README. LLM 이 상위 행동을 제안하고 가치 함수가 실제 실행 가능성으로 접지하는 구조를 설명.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-088",
+      "org": "Ahn, M. 외(Google)",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "published": "2022-04",
+      "url": "https://arxiv.org/abs/2204.01691",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 의 과업 접지(Say)와 학습된 어포던스 가치 함수(Can)를 결합한 SayCan 논문(프리프린트).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-053",
+      "org": "NVIDIA Research (NVlabs)",
+      "title": "progprompt-vh — ProgPrompt: Generating Situated Robot Task Plans using Large Language Models (GitHub README)",
+      "published": null,
+      "url": "https://github.com/NVlabs/progprompt-vh",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ProgPrompt 공식 코드 저장소 README. 설치·실행 안내를 담으며, 이 위키에서는 공식 코드 저장소 링크로만 인용한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-054",
+      "org": "Singh, I. 외",
+      "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.11302",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 가용 동작·객체의 프로그램형 명세와 예시 프로그램으로 LLM 이 실행 가능한 로봇 계획 프로그램을 생성하고 assertion 으로 점검하게 한 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-055",
+      "org": "Brown University H2R Lab",
+      "title": "Lang2LTL — Code for paper Lang2LTL: Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments (GitHub README)",
+      "published": null,
+      "url": "https://github.com/h2r/Lang2LTL",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Lang2LTL 공식 코드 README. 지칭 표현 인식, 랜드마크 접지, LTL 로의 lifted 번역 모듈을 설명.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-056",
+      "org": "Liu, J. X. 외",
+      "title": "Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments",
+      "published": "2023-02",
+      "url": "https://arxiv.org/abs/2302.11649",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 사전학습 LLM 으로 내비게이션 명령을 LTL 명세로 접지하는 Lang2LTL 을 제안한 논문(CoRL 2023).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-057",
+      "org": "Tellex, S. 외",
+      "title": "Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation",
+      "published": "2011-08",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/7979",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AAAI 2011 논문. 명령의 조합적 의미 구조로 확률 그래프 모델(G3)을 만들어 내비게이션·이동 조작 명령을 계획으로 접지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-058",
+      "org": "Cohen, V., Liu, J. X., Mooney, R., Tellex, S., & Watkins, D.",
+      "title": "A Survey of Robotic Language Grounding: Tradeoffs between Symbols and Embeddings",
+      "published": "2024-08",
+      "url": "https://www.ijcai.org/proceedings/2024/885",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IJCAI-24 서베이. 로봇 언어 접지 연구를 형식 표현–임베딩 스펙트럼으로 정리하고 장단점을 비교.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-059",
+      "org": "Wang, Y. 외(DART-LLM 저자)",
+      "title": "DART-LLM: Dependency-Aware Multi-Robot Task Decomposition and Execution using Large Language Models",
+      "published": "2024-11",
+      "url": "https://arxiv.org/abs/2411.09022",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 하위 작업 의존을 DAG 로 표현해 자연어 지시를 다중 로봇(건설 기계) 작업으로 분해·배정·실행하는 프레임워크 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-061",
+      "org": "Izzo, R. A., Bardaro, G., & Matteucci, M. (Politecnico di Milano AIRLab)",
+      "title": "BTGenBot: Behavior Tree Generation for Robotic Tasks with Lightweight LLMs",
+      "published": "2024-03",
+      "url": "https://arxiv.org/abs/2403.12761",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 경량 LLM(7B 이하)을 미세조정해 과업 기술에서 XML 행동 트리를 생성하고 시뮬레이션·실제 로봇으로 평가한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-089",
+      "org": "SMARTlab-Purdue (Purdue University)",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models (GitHub README)",
+      "published": null,
+      "url": "https://github.com/SMARTlab-Purdue/SMART-LLM",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "SMART-LLM 공식 저장소 README. 작업 분해·팀 구성·작업 할당을 프로그램형 few-shot 프롬프트로 수행하고 AI2-THOR 로 검증하며 4개 범주 벤치마크 데이터를 제공한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-090",
+      "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+      "published": "2023-09",
+      "url": "https://arxiv.org/abs/2309.10062",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 상위 지시를 LLM 으로 다중 로봇 작업 계획(분해·팀 구성·할당)으로 바꾸는 프레임워크와 벤치마크를 제안한 논문(IROS 2024 게재).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-091",
+      "org": "Cranial-XIX (LLM+P 저자)",
+      "title": "llm-pddl — LLM+P: Empowering Large Language Models with Optimal Planning Proficiency (GitHub README)",
+      "published": null,
+      "url": "https://github.com/Cranial-XIX/llm-pddl",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "LLM+P 공식 코드 저장소 README. 자연어 문제를 PDDL 로 바꿔 fast-downward 계획기로 푸는 코드와 도메인을 안내한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-092",
+      "org": "Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P.",
+      "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+      "published": "2023-04",
+      "url": "https://arxiv.org/abs/2304.11477",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자연어 계획 문제를 PDDL 로 바꿔 고전 계획기로 계획을 찾고 다시 자연어로 옮기는 LLM+P 를 제안한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md"
+      ]
+    },
+    {
+      "id": "ref-093",
+      "org": "Huang, W., Abbeel, P., Pathak, D., & Mordatch, I.",
+      "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+      "published": "2022-07",
+      "url": "https://proceedings.mlr.press/v162/huang22a.html",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ICML 2022(PMLR 162) 논문. 언어모델이 상위 과업을 중간 단계 계획으로 분해하고 이를 허용 동작으로 옮기는 절차를 제안.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-094",
+      "org": "Huang, W. (language-planner 공식 저장소)",
+      "title": "language-planner — Official Code for \"Language Models as Zero-Shot Planners\" (GitHub README)",
+      "published": null,
+      "url": "https://github.com/huangwl18/language-planner",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Huang 외(2022)의 공식 코드 저장소 README. 상위 과업과 가용 동작으로 LLM 을 프롬프트해 VirtualHome 허용 동작 단계로 분해하는 방법을 안내.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-095",
+      "org": "Google Research",
+      "title": "Code as Policies: Language Model Programs for Embodied Control (google-research/code_as_policies README)",
+      "published": null,
+      "url": "https://github.com/google-research/google-research/blob/master/code_as_policies/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Code as Policies 공식 코드 README. 코드 생성 LLM 이 자연어 명령에서 인식 API·제어 기본 동작을 조합한 정책 코드를 쓰고 계층적 코드 생성을 쓰는 방법을 설명.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "단계 1 q1-02·q1-03: LLM 을 로봇 작업 계획·배정에 쓴 제품 사례와 채팅·음성 지시 운영 인터페이스 제품의 확인·승인 방식 — 아이디어 2 3절 제품 사례와 단계 1 완료 조건에 필요",
+    "단계 1 q1-04: 자연어 지시에서 장소·화물·긴급도·기한을 뽑고 빠진 정보를 되묻는 방법 — 단계 1 남은 시작 질문",
+    "단계 1 q1-05: 물류·창고 현장 지시를 다룬 LLM 작업 분해 연구(예: 검색에 제목만 보인 산업 다중 로봇 연구의 내용 확인) — 물류 적용 한계 판단에 필요",
+    "국내(한국) 연구기관·학회의 자연어 지시 작업 분해 연구 — 한국 자료 우선 규칙",
+    "SMART-LLM 논문 본문의 할당 방식(최적화 사용 여부) 원문 확인 — 13. 작업 배정 — MRTA 반영 제안의 근거 보강",
+    "각 접근(SayCan, LLM+P, Lang2LTL 등)의 독립 출처 교차 확인 — 현재 논문과 README 가 같은 저자 계열이라 교차 확인 0건",
+    "next_ref_id 산정 오류(브리프 ref-079~ref-086 가 기존 참고문헌과 충돌) 확인 — pipeline 담당 요청. 1차 검증은 ref-085·ref-086 충돌을 놓쳐 퍼블리셔 사전 검사에서 ref-087·ref-088 으로 추가 재부여했다"
+  ],
+  "fixes_applied": [
+    "참고문헌 id 재부여 — ref-079→ref-089, ref-080→ref-090, ref-046→ref-091, ref-081→ref-092, ref-082→ref-093, ref-083→ref-094, ref-084→ref-095 로 모든 페이지 각주·프런트매터 sources·reference_updates 에 일관되게 적용했다.",
+    "f4 근거 — ProgPrompt 설명의 각주를 ref-054(원문 미열람)로 하고 ref-053 은 공식 코드 저장소 공개 사실에만 달았으며, f13·f14 의 ProgPrompt 근거도 ref-054 로 적었다.",
+    "f14 범위 한정 — 단계 1 3절·아이디어 3절에서 'Huang 외, SayCan, ProgPrompt, Code as Policies, LLM+P, Lang2LTL, SMART-LLM 일곱 접근은'으로 한정해 [추정]으로 썼다.",
+    "f16 한정 — '공식 저장소 README 기준으로 확인되지 않으며 논문 본문의 할당 세부는 미확인이다'로 고쳐 [추정]으로 썼다.",
+    "f13·f14·f15·f17 — 모두 '이 위키의 정리(추론)'임을 밝히고 [추정] 유지, f15 에 '이번 검색 범위, 부재의 확인은 아님'을 남기고 IMR-LLM 은 본문에 쓰지 않았다.",
+    "f12 — [의견] 태그를 유지하고 '서베이 저자들(Cohen 외, IJCAI-24)의 평가'로 밝혔다.",
+    "f3·f7·f8 수치 — 101개 과업·약 두 배, 21개 환경·52개 명령, 9개 과업을 본문에서 뺐고 f8 은 '70억 파라미터 이하'만 썼다.",
+    "f5 기준일 — Code as Policies 문장에 '확인일 2026-09-25 기준 공식 README'로 적었다.",
+    "f1 흐름 — flow_matrix_updates 를 빈 배열로 두어 출하·시작 조건 칸을 넣지 않았다.",
+    "원문 미열람 표시 — 논문 출처(ref-054, 056, 057, 058, 059, 061, 063, 065, 066, 070) 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, README 7건(ref-053, 055, 062, 064, 067, 068, 069)은 미열람 표시를 하지 않았다.",
+    "직접 인용 — 모든 출처를 재서술만 했고 ref-058 을 포함해 직접 인용을 두지 않았다.",
+    "용어 — PDDL 을 '계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)'로 쓰고 glossary/pddl.md 에 링크했으며, 행동 트리·선형 시간 논리 정의를 지시 문구대로 줄여 glossary_updates 에 냈다.",
+    "온톨로지 변경 — 로봇 팀(Coalition)만 2절에 '확정'으로 추가하고 H1·프런트매터 ontology_version·track_updates.ontology_draft_version 을 0.1 로 맞췄으며(상태 표식은 auto 영역이라 퍼블리셔 갱신), 허용 동작 목록·형식 작업 명세·선행 의존 관계는 6절 미해결 모델링 질문으로 두었다.",
+    "q2-02 중복 질문 — backlog_updates 에 넣지 않고 단계 1 5절에 중복으로 제외했다고만 적었다.",
+    "q4-02 중복 질문 — backlog_updates 에 넣지 않았다.",
+    "q1-05 — 지시한 문장으로 줄여 단계 1 질문(근거 f15)으로 백로그와 단계 1 2절·5절에 등록했다.",
+    "단계 1 페이지 — q1-01 답함(#q1-01, 소제목 {#q1-01}), 6절 두 조건 '미충족', 검증 판정 '미충족 · 미승인', 전환 줄을 지시 문구대로 썼고 트랙 개요 상태 줄을 '현재 단계: 단계 1. 선행 연구·제품 사례 조사 · 마지막 트랙 실행: 2026-09-25'로 고쳤다.",
+    "아이디어 2 3절 — 선행 연구 쪽만 쓰고 제품 사례(q1-02·q1-03)는 아직 조사되지 않았음을 절 머리와 '제품 사례' 소제목에 밝혔다.",
+    "세부영역 반영 — 13. 작업 배정 — MRTA·27. AI·학습·적응과 모델 운영 페이지는 고치지 않고 area_reflection_proposals 로만 냈고, 27 제안에 13 과의 양쪽 연결을 밝혔으며 가치 함수·제어 기본 동작·객체 검출은 접지 방식 설명으로만 쓰고 센서 인식·파지·모터 제어는 연계 대상으로 짧게 두었다.",
+    "형식 검증: 퍼블리셔 사전 검사가 지적한 참고문헌 id 충돌을 고쳤다 — ref-085(SayCan README)→ref-087, ref-086(SayCan 논문)→ref-088 으로 단계 1 페이지·아이디어 2 3절 패치의 각주·각주 정의·프런트매터 sources, reference_updates, area_reflection_proposals 에 일관되게 적용했다. 주장·태그·판정은 바꾸지 않았다.",
+    "2차: 업무 분해·배정 설계 초안 6절 '허용 동작 목록' 항목 — 'Huang 외, SayCan, ProgPrompt, Code as Policies, LLM+P, Lang2LTL, SMART-LLM 일곱 접근은 사람이 미리 정한 허용 동작·가용 동작·기술 목록 안에서 분해하는 것으로 보인다(이 위키의 정리)'로 범위를 한정하고 [추정]을 유지했다.",
+    "2차: 업무 분해·배정 설계 초안 6절 첫 항목 — '조사한 일곱 LLM 기반 접근에서는 실행 단위를 사람이 미리 정해 둔다는 정리가 나왔다'로 한정했다.",
+    "2차: 업무 분해·배정 설계 초안 6절 '형식 작업 명세' 항목 — 'LLM+P는 자연어 문제를 PDDL 문제 파일로 바꿔 고전 계획기에 넘기고, Lang2LTL은 명령을 LTL 식으로 옮긴다. [사실]'로 고쳤고, PDDL 은 '[계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)](../../glossary/pddl.md)', LTL 은 '선형 시간 논리(Linear Temporal Logic, LTL)'로 풀어 썼다.",
+    "2차: 아이디어 2 3절 표 — '[계획 도메인 정의 언어(Planning Domain Definition Language, PDDL)](../glossary/pddl.md) 문제 파일, 선형 시간 논리(Linear Temporal Logic, LTL) 식'으로 고쳤다.",
+    "2차: 아이디어 2 3절 '무엇을 자동화하고 무엇을 사람에게 남기는가'의 둘째 항목(형식 명세 경유 구조)과 셋째 항목(평가 환경) 끝 태그 앞에 '(이 위키의 정리)'를 붙였다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md",
+    "ontology_draft_version": "0.1",
+    "backlog_updates": [
+      {
+        "id": "q1-01",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-01"
+      },
+      {
+        "id": "q1-05",
+        "status": "열림",
+        "answer_link": null,
+        "question": "물류·창고 현장 지시를 다룬 LLM 작업 분해 연구가 있는가, 가정용 시뮬레이터 결과를 물류 지시로 옮길 때 무엇이 달라지는가?",
+        "stage": 1,
+        "origin": "f15"
+      }
+    ],
+    "log_entry": "답한 질문: q1-01(f1~f17) / 새 질문: q1-05(f15); 중복 2건(q2-02, q4-02와 겹침) 제외 / 온톨로지 변경: v0 → v0.1: 개념 '로봇 팀 (Coalition)' 추가(f9, 실행 2026-09-25-04). 거부 3건(허용 동작 목록, 형식 작업 명세, 작업 / 선행 의존한다 / 작업)은 6절 미해결 모델링 질문으로 / 완료 조건 평가: 미충족(부족: 제품 사례 미조사로 아이디어 2 3절 비교 미완, 지시 분해 유형 목록 초안 미반영) / 세부영역 반영 제안: 13. 작업 배정 — MRTA 2건, 27. AI·학습·적응과 모델 운영 2건 / 다음 실행 제안: q1-02, q1-03",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 4, 답함 1, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "학습 기반 배차의 한 갈래로 LLM 기반 분해·팀 구성·할당 파이프라인을 소개: SMART-LLM(분해→팀 구성→할당을 프로그램형 few-shot 프롬프트로 수행, 할당 최적화는 README 기준 미확인 [추정]), DART-LLM(하위 작업 의존 DAG와 배정 모듈). 27. AI·학습·적응과 모델 운영과 양쪽 연결. 근거 ref-089, ref-090, ref-059."
+    },
+    {
+      "area_no": 13,
+      "section": "8. 대표 연구와 자료",
+      "summary": "SMART-LLM(Kannan 외 2023, 공식 README와 논문, 4개 난이도 범주 벤치마크), DART-LLM(2024 프리프린트)을 대표 연구로 등록. 근거 ref-089, ref-090, ref-059."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 출력을 실행 전에 접지·점검하는 방법: 기술 가치 함수(SayCan), 고전 계획기에 PDDL 넘김(LLM+P), LTL 식 변환(Lang2LTL). 형식 명세 경유 구조가 오해석 방지와 이어진다는 [추정]. 적용 대상 13. 작업 배정 — MRTA와 양쪽 연결(교차 규칙: 학습 기반 배차). 센서 인식·제어는 연계 대상. 근거 ref-087, ref-088, ref-091, ref-092, ref-055, ref-056."
+    },
+    {
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "Cohen 외(IJCAI-24) 로봇 언어 접지 서베이(형식 표현–임베딩 스펙트럼, 장단점 평가는 [의견])와 Huang 외(ICML 2022), SayCan, LLM+P, Lang2LTL을 대표 자료로 등록하고 13. 작업 배정 — MRTA 페이지와 연결. 근거 ref-058, ref-093, ref-087, ref-091, ref-055."
+    }
+  ]
+}

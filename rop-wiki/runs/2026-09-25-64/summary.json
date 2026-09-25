@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-09-25-64",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 26,
+    "area_name": "26. 사이버보안·접근권한·개인정보",
+    "category": "G. 안전·보안·지능·거버넌스"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "377d94b",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2756.3,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 26. 사이버보안·접근권한·개인정보 | 영역 심화: 3~11절 첫 작성(SROS 2·Open-RMF·VDA 5050·MQTT 접근 제어, 로봇 안전·EU·한국 개인영상 규정, 출하·입고 시나리오, 새 열린 질문 5건) | run 2026-09-25-64",
+  "notes": [
+    "참고문헌 생성: references/ref-579.md",
+    "참고문헌 생성: references/ref-580.md",
+    "참고문헌 생성: references/ref-581.md",
+    "참고문헌 생성: references/ref-582.md",
+    "참고문헌 생성: references/ref-583.md",
+    "참고문헌 생성: references/ref-584.md",
+    "참고문헌 생성: references/ref-585.md",
+    "참고문헌 생성: references/ref-587.md",
+    "참고문헌 생성: references/ref-588.md",
+    "참고문헌 생성: references/ref-589.md",
+    "참고문헌 생성: references/ref-590.md",
+    "참고문헌 생성: references/ref-591.md",
+    "용어집 생성: glossary/zones-and-conduits.md",
+    "용어집 '권한 파일' (Permissions File (DDS-Security)) 은 기존 페이지 glossary/dds-security.md 와 같은 용어로 보고 갱신했다(중복 생성 방지)",
+    "용어집 갱신: glossary/dds-security.md",
+    "용어집 생성: glossary/mobile-video-information-processing-device.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 12,
+    "standards": 5,
+    "open_questions": 5,
+    "flow_cells": 10,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 16:37:59 KST",
+  "usage": {
+    "input_tokens": 78,
+    "cache_creation_input_tokens": 1019457,
+    "cache_read_input_tokens": 4182157,
+    "output_tokens": 267650,
+    "cost_usd": 16.0324,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 5.1785,
+        "output_tokens": 88876,
+        "cache_read_input_tokens": 2591772,
+        "cache_creation_input_tokens": 204026
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1373,
+        "output_tokens": 21468,
+        "cache_read_input_tokens": 1228733,
+        "cache_creation_input_tokens": 134201
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 6.5844,
+        "output_tokens": 145568,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 454400
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.0475,
+        "output_tokens": 10746,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 225271
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 7,
+  "cross_checked_findings": 0
+}

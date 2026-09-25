@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-09-25-30",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 1,
+    "question_ids": [
+      "q1-04"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "12060c8",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 22,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1259.5,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 1 | q1-04 답함(상황 정보 추출과 빠진 정보 처리 세 방식), 업무 분해·배정 설계 초안 v0.2 → v0.3(상황 개념에 값 출처), 새 질문 q3-07·q4-07 | run 2026-09-25-30",
+  "notes": [
+    "참고문헌 생성: references/ref-350.md",
+    "참고문헌 생성: references/ref-351.md",
+    "참고문헌 생성: references/ref-352.md",
+    "참고문헌 생성: references/ref-353.md",
+    "참고문헌 생성: references/ref-354.md",
+    "참고문헌 생성: references/ref-355.md",
+    "참고문헌 생성: references/ref-356.md",
+    "참고문헌 생성: references/ref-357.md",
+    "참고문헌 생성: references/ref-358.md",
+    "참고문헌 생성: references/ref-359.md",
+    "참고문헌 생성: references/ref-360.md",
+    "참고문헌 생성: references/ref-361.md",
+    "참고문헌 생성: references/ref-362.md",
+    "용어집 생성: glossary/intent-recognition.md",
+    "용어집 생성: glossary/slot-filling.md",
+    "용어집 생성: glossary/structured-output.md",
+    "용어집 생성: glossary/hallucination.md",
+    "온톨로지 초안 버전 v0.2 → v0.3 (버전 이력 추가)"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 1,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 3,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 12:39:21 KST",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 1152458,
+    "cache_read_input_tokens": 7845316,
+    "output_tokens": 133071,
+    "cost_usd": 14.2983,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.71,
+        "output_tokens": 27088,
+        "cache_read_input_tokens": 6535671,
+        "cache_creation_input_tokens": 285355
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.2052,
+        "output_tokens": 20317,
+        "cache_read_input_tokens": 1150187,
+        "cache_creation_input_tokens": 293421
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 3.3519,
+        "output_tokens": 74941,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 230054
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 2.9465,
+        "output_tokens": 9733,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 342069
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 5,
+  "cross_checked_findings": 0
+}

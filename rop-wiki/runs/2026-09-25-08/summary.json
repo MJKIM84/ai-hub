@@ -1,0 +1,122 @@
+{
+  "run_id": "2026-09-25-08",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 1,
+    "area_name": "1. 주문·업무 시스템 연계",
+    "category": "A. 업무·공급망 설계"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 9,
+  "parked": false,
+  "published": false,
+  "committed": true,
+  "commit": "ac7267a",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 7,
+    "sources": 9
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1369.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 6초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 2 warnings in strict mode!)",
+  "changelog_entry": "2026-09-25 | 1. 주문·업무 시스템 연계 | 영역 심화: 3~11절 초안 작성(ISA-95·B2MML·OPC UA Job Control·VDA 5050·Open-RMF의 변경·취소 처리와 번역 경계), 2차 수정 반영 | run 2026-09-25-08",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 10:57:50 KST",
+  "usage": {
+    "input_tokens": 88,
+    "cache_creation_input_tokens": 911872,
+    "cache_read_input_tokens": 7129539,
+    "output_tokens": 138611,
+    "cost_usd": 12.3677,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 5.1916,
+        "output_tokens": 50313,
+        "cache_read_input_tokens": 5965205,
+        "cache_creation_input_tokens": 290955
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1937,
+        "output_tokens": 14453,
+        "cache_read_input_tokens": 865708,
+        "cache_creation_input_tokens": 196235
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 2.7582,
+        "output_tokens": 62094,
+        "cache_read_input_tokens": 126034,
+        "cache_creation_input_tokens": 186384
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.1395,
+        "output_tokens": 10759,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 236739
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 7,
+  "cross_checked_findings": 0
+}

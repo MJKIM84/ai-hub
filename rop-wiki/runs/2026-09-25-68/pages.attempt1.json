@@ -1,0 +1,746 @@
+{
+  "run_id": "2026-09-25-68",
+  "outline": [
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 750,
+      "summary": "AI가 만든 계획·해석을 실행에 쓰는 기준은 접지·형식 검증·사람 확인·안전 판정·승인된 모델 버전의 겹 구조로 정리될 수 있어 보인다. [추정][^ref-088] 한국 인공지능 기본법(2026-01-22 시행)과 EU AI Act가 고영향·고위험 AI에 별도 책무를 둔다. [사실][^ref-737]",
+      "planned_findings": [
+        "f20",
+        "f16",
+        "f4",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 650,
+      "summary": "과제·세계 접지, PDDL, 등각 예측, LLM 에이전트, AI 관리 시스템, 모델 레지스트리를 정리한다. [사실][^ref-351]",
+      "planned_findings": [
+        "f6",
+        "f7",
+        "f8",
+        "f11",
+        "f2",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 900,
+      "summary": "피킹 자연어 지시 해석과 출하 마감 시간대의 학습 배차 모델 교체를 가상 시나리오로 보인다. [추정][^ref-092]",
+      "planned_findings": [
+        "f21",
+        "f22",
+        "f19",
+        "f23",
+        "f8",
+        "f15",
+        "f4"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1100,
+      "summary": "LLM 계획의 접지·형식 검증, 필요할 때 되묻기, 실행 전 안전 판정, 학습 기반 배차, 모델 운영 관리를 다룬다. [사실][^ref-088]",
+      "planned_findings": [
+        "f6",
+        "f7",
+        "f12",
+        "f9",
+        "f8",
+        "f11",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, MLflow 모델 레지스트리, LoTa-Bench, AmbiK와 관련 법(한국 인공지능 기본법, EU AI Act)을 정리한다. [사실][^ref-735]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f18",
+        "f10",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 800,
+      "summary": "SayCan, LLM+P, KnowNo, Code as Policies, Lang2LTL, AmbiK, Learning to Ask, LoTa-Bench, SafeGate, RTAW, Sculley 외, ML Test Score. [사실][^ref-351]",
+      "planned_findings": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 600,
+      "summary": "ROP는 AI 출력의 채택 기준·검증·사람 확인·기록·모델 버전 승인을 맡고, 저수준 정책·파지 학습과 수요예측은 연계 대상이다. [추정][^ref-735]",
+      "planned_findings": [
+        "f23",
+        "f24",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 700,
+      "summary": "교차 규칙에 따라 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전(매뉴얼 해석), 6. 지도·공간·위치 모델(도면 해석), 13. 작업 배정 — MRTA(학습 기반 배차), 19. 모니터링·이상 탐지·원인 분석(장애 분석)과 18·23·24·25·28 영역을 연결한다. [추정][^ref-743]",
+      "planned_findings": [
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 450,
+      "summary": "oq-030을 열림으로 유지하고, 고영향 인공지능 해당 여부, EU AI Act 안전 구성요소 해당 여부, 등각 예측 재보정 주기를 새로 올린다.",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f8"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area27-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"6. 대표 접근법과 기술\" 절(1,218자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area27-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,001자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area27-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"8. 대표 연구와 자료\" 절(969자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area27-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(760자)을 옮겼다. 본문 링크를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area27-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"4. 핵심 개념과 용어\" 절(754자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 27. AI·학습·적응과 모델 운영 | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법, 출처 19건 원문 미열람) | run 2026-09-25-68",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 27. AI·학습·적응과 모델 운영: 3~11절 첫 작성(LLM 계획 접지·형식 검증·되묻기·실행 전 안전 판정, 학습 기반 배차, 모델 레지스트리, NIST AI RMF·ISO/IEC 42001·한국 인공지능 기본법)",
+    "category_recent": "2026-09-25 — 27. AI·학습·적응과 모델 운영: 영역 심화 초안 작성, 교차 규칙에 따라 5. 로봇 능력·작업 온톨로지, 6. 지도·공간·위치 모델, 13. 작업 배정 — MRTA, 19. 모니터링·이상 탐지·원인 분석, 21. 온보딩·설정·현장 시운전과 연결",
+    "area_recent": "2026-09-25 — 27. AI·학습·적응과 모델 운영: 3~11절 신규 작성(신뢰도 medium, 원문 미열람 출처 19건)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "conformal-prediction",
+      "term_ko": "등각 예측",
+      "term_en": "Conformal Prediction",
+      "definition": "보정 데이터로 예측 집합의 크기를 정해, 정답이 집합에 들어갈 확률을 사용자가 정한 수준 이상으로 통계적으로 보장하는 불확실성 정량화 방법이다.",
+      "description": "KnowNo는 등각 예측으로 LLM 계획기의 불확실성을 보정해 필요할 때 사람에게 도움을 요청하게 한다(저자 보고).",
+      "related_areas": [
+        27,
+        18
+      ],
+      "sources": [
+        "ref-351"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "artificial-intelligence-management-system",
+      "term_ko": "AI 관리 시스템",
+      "term_en": "Artificial Intelligence Management System (AIMS)",
+      "definition": "조직이 AI 의 책임 있는 개발·제공·사용을 위한 정책·목표·프로세스를 세우고 운영하는 관리 체계로, ISO/IEC 42001 이 요구사항을 정한다.",
+      "related_areas": [
+        27,
+        28
+      ],
+      "sources": [
+        "ref-735"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "high-impact-ai",
+      "term_ko": "고영향 인공지능",
+      "term_en": "High-impact AI (Korea AI Basic Act)",
+      "definition": "한국 인공지능 기본법에서 사람의 생명·안전·기본권에 중대한 영향을 미칠 수 있어 별도 책무가 부과되는 영역의 AI 시스템이다.",
+      "description": "법과 시행령은 2026-01-22 시행되었다. 개정 법률의 시행일과 고영향 영역 목록은 미확인이다.",
+      "related_areas": [
+        27,
+        25,
+        28
+      ],
+      "sources": [
+        "ref-737"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "model-registry",
+      "term_ko": "모델 레지스트리",
+      "term_en": "Model Registry",
+      "definition": "학습된 모델의 버전·별칭·태그·계보를 한곳에서 관리해 어떤 버전을 운영에 쓰는지 정하고 교체·되돌림을 추적하게 하는 저장소다.",
+      "related_areas": [
+        27,
+        24
+      ],
+      "sources": [
+        "ref-746"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-734",
+      "org": "NIST",
+      "title": "NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence",
+      "published": "2023-01-26",
+      "url": "https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. NIST AI RMF 1.0(NIST AI 100-1) 발표문. 네 기능 Govern·Map·Measure·Manage.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md"
+      ]
+    },
+    {
+      "id": "ref-735",
+      "org": "ISO/IEC",
+      "title": "ISO/IEC 42001:2023 - AI management systems",
+      "published": "2023",
+      "url": "https://www.iso.org/standard/42001",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AI 관리 시스템(AIMS)의 수립·실행·유지·개선 요구사항 표준 소개 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md"
+      ]
+    },
+    {
+      "id": "ref-736",
+      "org": "ISO/IEC",
+      "title": "ISO/IEC 23894:2023 - AI — Guidance on risk management",
+      "published": "2023-02",
+      "url": "https://www.iso.org/standard/77304.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ISO 31000 을 AI 에 적용한 위험관리 지침 소개 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md"
+      ]
+    },
+    {
+      "id": "ref-737",
+      "org": "국가법령정보센터(과학기술정보통신부)",
+      "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+      "published": null,
+      "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=268543",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 한국 인공지능 기본법 법령 본문. 고영향 인공지능 정의와 사업자 책무, 2026-01-22 시행(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md"
+      ]
+    },
+    {
+      "id": "ref-738",
+      "org": "European Commission",
+      "title": "AI Act | Shaping Europe's digital future",
+      "published": null,
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Regulation (EU) 2024/1689(AI Act)의 위험 기반 규제와 고위험 AI 분류 안내 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    },
+    {
+      "id": "ref-088",
+      "org": "Ahn, M. 외",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "published": "2022-04",
+      "url": "https://arxiv.org/abs/2204.01691",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. SayCan: LLM 과제 접지와 기술 가치 함수의 세계 접지를 결합한 로봇 계획.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-092",
+      "org": "Liu, B. 외",
+      "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+      "published": "2023-04",
+      "url": "https://arxiv.org/abs/2304.11477",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자연어를 PDDL 로 바꿔 고전 계획기로 푸는 LLM+P 프레임워크(기존 id 재사용).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-351",
+      "org": "Ren, A. Z. 외",
+      "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.01928",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. KnowNo: 등각 예측으로 LLM 계획기의 불확실성을 보정해 필요할 때 사람에게 묻는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    },
+    {
+      "id": "ref-742",
+      "org": "Liang, J. 외",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.07753",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 코드 생성 LLM 이 인식·제어 API 를 조합한 로봇 정책 코드를 쓰는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-743",
+      "org": "Agrawal, A. 외",
+      "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.05738",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 창고 다중 로봇 작업 배정의 주의 기반 강화학습(ICRA 2023).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    },
+    {
+      "id": "ref-744",
+      "org": "Sculley, D. 외",
+      "title": "Hidden Technical Debt in Machine Learning Systems",
+      "published": "2015",
+      "url": "https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ML 시스템 고유의 기술 부채와 위험 요인(NeurIPS 2015).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-745",
+      "org": "Breck, E. 외 (Google Research)",
+      "title": "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction",
+      "published": "2017",
+      "url": "https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 28개 시험·감시 항목으로 ML 운영 준비도를 점수화하는 기준표(IEEE Big Data 2017).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-746",
+      "org": "MLflow (Linux Foundation 오픈소스 프로젝트)",
+      "title": "ML Model Registry | MLflow AI Platform",
+      "published": null,
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 모델 버전·별칭·태그·계보를 관리하는 MLflow 모델 레지스트리 공식 문서.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    },
+    {
+      "id": "ref-747",
+      "org": "머니투데이",
+      "title": "포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI'",
+      "published": "2026-09-19",
+      "url": "https://www.mt.co.kr/industry/2026/09/19/2026091818023697394",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 국내 물류기업의 로봇·AI 적용 사례 기사(한진 적재량 예측 등, 기업 발표 전달).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md"
+      ]
+    },
+    {
+      "id": "ref-354",
+      "org": "cog-model (AmbiK 저자)",
+      "title": "AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment)",
+      "published": null,
+      "url": "https://github.com/cog-model/AmbiK-dataset",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 모호 작업 데이터셋 AmbiK 공식 저장소 README.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-359",
+      "org": "Wang, W. 외",
+      "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.00557",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 불명확 지시 벤치마크 NoisyToolBench 와 Ask-when-Needed(arXiv 2024-09, 학회 게재판 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s4.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-056",
+      "org": "Liu, J. X. 외",
+      "title": "Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments",
+      "published": "2023-02",
+      "url": "https://arxiv.org/abs/2302.11649",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Lang2LTL: 자연어 명령을 LTL 로 바꿔 접지하는 방법과 말뭉치.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md"
+      ]
+    },
+    {
+      "id": "ref-541",
+      "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+      "title": "LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README)",
+      "published": null,
+      "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 언어 기반 작업 계획기 자동 평가 벤치마크 LoTa-Bench 공식 저장소.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s7.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    },
+    {
+      "id": "ref-417",
+      "org": "arXiv (SafeGate 저자, 저자명 미확인)",
+      "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
+      "published": "2026-04",
+      "url": "https://arxiv.org/abs/2604.05427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 명령의 실행 전 안전 판정(승인·거부·보류)과 작업 안전 계약 SafeGate.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "docs/topics/2026/2026-09-25-area27-s6.md",
+        "docs/topics/2026/2026-09-25-area27-s8.md",
+        "docs/topics/2026/2026-09-25-area27-s10.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "물류 현장 로봇의 작업 계획·배정에 쓰는 AI 가 한국 인공지능 기본법의 고영향 인공지능 영역에 해당하는가, 해당하면 ROP 사업자와 현장 운영사 중 누가 책무를 지는가?",
+      "areas": [
+        27,
+        28
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "LLM 이나 학습 모델이 ROP 의 정지·경로·구역 결정에 관여할 때 EU AI Act 가 말하는 제품 안전 구성요소로 볼 수 있는가?",
+      "areas": [
+        27,
+        25
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "KnowNo 의 등각 예측 보장은 보정 데이터와 운영 분포가 같다는 조건에 기대는데, 물류 지시 분포가 계절·고객에 따라 바뀔 때 보정을 얼마나 자주 다시 해야 하는가?",
+      "areas": [
+        27,
+        18
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "출하",
+      "item": "시작 조건",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "출하",
+      "item": "수행 자원",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+      "title": "27. AI·학습·적응과 모델 운영"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "NIST AI RMF 1.0 (NIST AI 100-1)",
+      "kind": "프레임워크",
+      "org": "NIST",
+      "url": "https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial",
+      "related_areas": [
+        27,
+        25
+      ],
+      "summary": "2023-01-26 발표된 자율 적용 AI 위험관리 프레임워크. 네 기능 Govern·Map·Measure·Manage(원문 미열람).",
+      "ref_id": "ref-734"
+    },
+    {
+      "name": "ISO/IEC 42001:2023 AI 관리 시스템",
+      "kind": "표준",
+      "org": "ISO/IEC",
+      "url": "https://www.iso.org/standard/42001",
+      "related_areas": [
+        27,
+        28
+      ],
+      "summary": "AI 시스템을 개발·제공·사용하는 조직의 AI 관리 시스템(AIMS) 수립·실행·유지·지속 개선 요구사항(원문 미열람).",
+      "ref_id": "ref-735"
+    },
+    {
+      "name": "ISO/IEC 23894:2023 AI 위험관리 지침",
+      "kind": "표준",
+      "org": "ISO/IEC",
+      "url": "https://www.iso.org/standard/77304.html",
+      "related_areas": [
+        27,
+        25
+      ],
+      "summary": "ISO 31000 을 AI 에 적용해 위험 평가·처리·감시·검토·기록을 AI 활동에 통합하도록 안내하는 지침(원문 미열람).",
+      "ref_id": "ref-736"
+    },
+    {
+      "name": "MLflow 모델 레지스트리",
+      "kind": "오픈소스",
+      "org": "MLflow (Linux Foundation 오픈소스 프로젝트)",
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "related_areas": [
+        27,
+        24
+      ],
+      "summary": "등록 모델의 버전·별칭·태그·계보를 관리하고 별칭 재지정으로 운영 모델을 교체하게 하는 기능(원문 미열람).",
+      "ref_id": "ref-746"
+    },
+    {
+      "name": "LoTa-Bench",
+      "kind": "오픈소스",
+      "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+      "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+      "related_areas": [
+        27,
+        23
+      ],
+      "summary": "언어 기반 작업 계획기 성능을 시뮬레이터 성공률로 자동 정량화하는 벤치마크.",
+      "ref_id": "ref-541"
+    },
+    {
+      "name": "AmbiK 데이터셋",
+      "kind": "오픈소스",
+      "org": "cog-model (AmbiK 저자)",
+      "url": "https://github.com/cog-model/AmbiK-dataset",
+      "related_areas": [
+        27,
+        18
+      ],
+      "summary": "모호한 작업·모호하지 않은 짝 1000쌍(보정 100, 시험 900)으로 LLM 의 모호성 탐지·되묻기를 평가하는 데이터셋(주방 환경).",
+      "ref_id": "ref-354"
+    }
+  ],
+  "additional_research_requests": [
+    "11절: oq-030 LTAA(arXiv 2512.02810)의 LLM 배정 완료율 77% 주장과 동적 계획법 우위 요약 가운데 어느 쪽이 원문 결과인지 원문 확인이 필요하다(출처 충돌 해소).",
+    "3·7절: 한국 인공지능 기본법 개정 법률의 시행일(2026-07-21 언급)과 고영향 인공지능 영역 목록을 법령 원문으로 확인해야 기준일을 갱신할 수 있다.",
+    "3·7절: EU AI Act 고위험 의무의 적용 시점이 개정(AI Omnibus)으로 바뀌었는지 공식 자료로 확인해야 한다.",
+    "6·8절: 트랙 반영 제안 가운데 도면 해석(2026-09-25-05·36·54), 매뉴얼 추출(2026-09-25-57), LLM 다중 로봇 서베이·ROSA·RAI·ChatGPT for Robotics(2026-09-25-21), Cohen 외·Huang 외(-04), LMCR·구조화 출력(-30), DELIVER·SayPlan(-37)은 이번 브리프에 검증된 finding 이 없어 본문에 넣지 못했다. 다음 해당 영역 실행에서 재확인이 필요하다.",
+    "3·6절: 한 줄 정의의 수요·고장 예측(예: 로봇 고장 예측 사례)과 19. 모니터링·이상 탐지·원인 분석에 적용되는 장애 분석 AI 자료가 브리프에 없어 쓰지 못했다.",
+    "전 절: 사실 주장이 모두 단일 출처·원문 미열람이다. 핵심 주장(SayCan, KnowNo, RTAW 수치, ISO/IEC 42001)을 원문 열람 또는 독립 출처로 교차 확인해야 신뢰도를 올릴 수 있다."
+  ],
+  "fixes_applied": [
+    "f7·f20·f21 각주 ref-092 → ref-092 — 3·4·5·6·8절의 LLM+P 인용을 모두 [^ref-092]로 바꾸고 각주 정의를 ref-092 로 두었으며, reference_updates 에 ref-092 을 등록하지 않았다(ref-092 는 cited_by 갱신용으로만 넣음).",
+    "f1 '거버넌스가 나머지 세 기능을 가로지른다' 삭제 — 7절 표의 NIST AI RMF 행에 발표일·자율 적용·네 기능만 [사실]로 남겼다.",
+    "f6 '곱해' → '결합해' — 4절 용어와 6절·8절 SayCan 서술을 '결합해'로 썼다.",
+    "f8 '필요할 때'·'저자 보고' — 4·5·6·8절의 KnowNo 서술을 '필요할 때 사람에게 도움을 요청'으로 쓰고 저자 보고 한정을 붙였다.",
+    "f14 '승인·거부·보류(defer)'와 물류 적용 [추정] — 6·8절에 판정 결과를 승인·거부·보류(defer)로 쓰고, 물류 적용 가능성은 별도 [추정] 문장으로 분리했다.",
+    "f16 위험 요인 목록 축소, f22 문구 변경 — 3절에 '경계 침식, 얽힘, 숨은 피드백 루프, 선언되지 않은 소비자, 데이터 의존성 등'으로 쓰고, 5절 출하 시나리오의 '외부 세계 변화'를 '데이터 의존성·숨은 피드백 루프 같은 ML 고유 위험'으로 바꿨다.",
+    "f17 '1급 관심사' 삭제 — 6·8절에 '28개 시험·감시 항목으로 운영 준비도를 점수화하는 기준표'로만 썼다.",
+    "f4 기준일 2026-01-22와 미확인 표시 — 3절과 7절에 기준일 2026-01-22를 적고 개정 법률 시행일·고영향 영역 목록을 '미확인'으로 두었다.",
+    "f5 적용 시점 미확정 문구와 요건 서술 — 3·7절에 '안전 구성요소이거나 제품 자체이고 제3자 적합성 평가 대상'으로 쓰고 '적용 시점은 개정(AI Omnibus) 논의로 이 페이지에서 확정하지 않는다'를 덧붙였다.",
+    "f11 기준일 — 6·8절에 'arXiv 2024-09, 학회 게재판은 미확인'으로 적었다.",
+    "f19 [추정]·벤더 주장, ROP 몫 한정 — 5절에서 '[추정] 벤더 주장'으로 표기하고 ROP 몫을 입출고 시간·접안·현장 상·하차 작업 동기화로, 간선 배차·운송계획을 분류 원문 9장 거점 간 운송의 연계 대상으로 적었으며 9절 표에도 같은 행을 두었다.",
+    "f15 한정어와 13절 연결 — 6·8절 RTAW 수치에 '저자 보고, 시뮬레이션 창고 조건, 단일 출처'를 붙이고 10절에 13. 작업 배정 — MRTA 를 연결했다.",
+    "f21·f22 가상 시나리오 명시 — 5절 첫머리에 설명용 가상 시나리오임과 수치를 넣지 않았음, 출처 환경(가정·주방·벤치마크, 시뮬레이션 창고)이 물류 현장과 다르다는 한계를 적었다.",
+    "10절 교차 규칙 연결 — 5. 로봇 능력·작업 온톨로지, 21. 온보딩·설정·현장 시운전, 6. 지도·공간·위치 모델, 13. 작업 배정 — MRTA, 19. 모니터링·이상 탐지·원인 분석을 번호와 이름으로 연결하고, 도면 해석·매뉴얼 추출은 '다음 실행에서 반영 예정인 트랙 제안'으로만 적었다.",
+    "11절 — oq-030 을 열림 상태로 유지하고(이번 실행 미조사 명시) open_questions_new 3건을 11절과 open_question_updates 에 new 로 등록했다.",
+    "모든 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 모든 항목에 source_unopened: true 를 넣었다.",
+    "트랙 반영 제안 가운데 브리프가 다루지 않은 항목(2026-09-25-05·21·36·54·57, -04 의 Cohen 외·Huang 외, -30 의 LMCR·구조화 출력, -37 의 DELIVER·SayPlan)은 본문에 넣지 않고 additional_research_requests 에 재확인 요청으로만 남겼다.",
+    "분량 초과 자동 분리: 27. AI·학습·적응과 모델 운영 본문 8,004자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,936자",
+    "형식 검증: docs/topics/2026/2026-09-25-area27-s10.md 3절의 세부영역 링크 10건을 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 주장·태그·각주는 바꾸지 않았다."
+  ]
+}

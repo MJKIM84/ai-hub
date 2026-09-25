@@ -1,0 +1,756 @@
+{
+  "run_id": "2026-09-25-31",
+  "outline": [
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "무선 전송 불확실성과 재시작 때문에 응답이 끊긴 명령을 다시 보낼 때 중복 실행이나 작업 유실이 생길 수 있다. [추정][^ref-031][^ref-374]",
+      "planned_findings": [
+        "f4",
+        "f14",
+        "f32"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "대표 규격마다 명령을 구분하는 식별자와 상태 값을 따로 정한다: VDA 5050 은 주문 id·주문 갱신 id 를, ROS 2 액션은 클라이언트가 만든 UUID 목표 id 를 쓴다. [사실][^ref-031][^ref-363]",
+      "planned_findings": [
+        "f1",
+        "f8",
+        "f15",
+        "f5",
+        "f18",
+        "f13",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 900,
+      "summary": "적치 운반 주문의 응답이 끊겨 다시 보낼 때 같은 id 재전송은 로봇이 무시하지만 새 요청으로 보내면 중복될 수 있다. [추정][^ref-031][^ref-367]",
+      "planned_findings": [
+        "f3",
+        "f4",
+        "f10",
+        "f12",
+        "f29",
+        "f30",
+        "f32"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1800,
+      "summary": "명령 실행 신뢰성의 기법은 식별자로 중복 거르기, 요청 단위 멱등성 키, 상태 기계, 시간 초과 감지, 재시도·취소·보상, 상태 저장과 재시작 복원으로 나눌 수 있다. [추정][^ref-031][^ref-366]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f23",
+        "f25",
+        "f26",
+        "f30",
+        "f31"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 700,
+      "summary": "명령 식별자·상태·재시도·끊김 감지를 정한 표준과 공개 구현을 표로 정리한다.",
+      "planned_findings": [
+        "f1",
+        "f8",
+        "f9",
+        "f13",
+        "f16",
+        "f15",
+        "f20",
+        "f21",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 550,
+      "summary": "이 영역의 학술 자료는 실행 구조(행동 트리·사가)와 메시지 전달 신뢰성 측정이 중심이며, 사가를 물류 로봇에 적용한 사례는 찾지 못했다. [추정][^ref-370][^ref-373]",
+      "planned_findings": [
+        "f24",
+        "f25",
+        "f27",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 600,
+      "summary": "ROP 는 명령 식별자와 작업 상태를 관리하고 로봇 내부 동작 복구는 제조사에 맡기는 쪽에 가깝다. [추정][^ref-031][^ref-366]",
+      "planned_findings": [
+        "f28",
+        "f29",
+        "f17",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 550,
+      "summary": "명령 신뢰성은 상위 요청, 로봇·통신, 실패 뒤 처리 쪽 영역에 걸쳐 있다. [추정][^ref-031][^ref-130]",
+      "planned_findings": [
+        "f22",
+        "f31",
+        "f16",
+        "f27",
+        "f12",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 600,
+      "summary": "기존 열린 질문 세 건과 새 질문 세 건(멱등성 키 보존 기간, VDA 5050 재부팅 뒤 주문 처리, Open-RMF 작업 백업 반영 여부)을 둔다.",
+      "planned_findings": [
+        "f4",
+        "f14",
+        "f15"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area12-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 12. 명령·작업 실행의 신뢰성 의 \"6. 대표 접근법과 기술\" 절(3,046자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area12-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 12. 명령·작업 실행의 신뢰성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,355자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area12-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 12. 명령·작업 실행의 신뢰성 의 \"4. 핵심 개념과 용어\" 절(1,163자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area12-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 12. 명령·작업 실행의 신뢰성 의 \"11. 열린 질문\" 절(1,032자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area12-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 12. 명령·작업 실행의 신뢰성 의 \"8. 대표 연구와 자료\" 절(735자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 12. 명령·작업 실행의 신뢰성 | 섹션 3~11 신규 작성(주문 갱신 id 중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 조건부 승인 수정 11건 이행 | run 2026-09-25-31",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 12. 명령·작업 실행의 신뢰성: 영역 심화 초안 작성(VDA 5050 주문 갱신 id 중복 무시, 멱등성 키, 작업 상태 기계, 시간 초과, 재시작 복원, 적치 재전송 시나리오)",
+    "category_recent": "2026-09-25 — 12. 명령·작업 실행의 신뢰성: 섹션 3~11 신규 작성, 1. 주문·업무 시스템 연계·9. 로봇·제조사 관제 연동·11. 분산 시스템·통신·컴퓨팅 구조·20. 예외 복구·재계획·업무 연속성과 연결",
+    "area_recent": "2026-09-25 — 12. 명령·작업 실행의 신뢰성: 섹션 3~11 신규 작성, 조건부 승인 수정 11건 이행, 새 열린 질문 3건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "idempotency-key",
+      "term_ko": "멱등성 키",
+      "term_en": "Idempotency Key",
+      "definition": "클라이언트가 요청마다 만든 고유 값으로, 서버가 같은 요청의 재시도를 알아보고 한 번만 처리하게 하는 데 쓰인다.",
+      "description": "IETF HTTPAPI 작업반의 Idempotency-Key 헤더 초안(RFC 아님)은 키를 다른 내용의 요청에 재사용하지 않게 하고, 서버가 키 만료 정책을 공개하며, 처리 중 재요청에는 409, 다른 내용으로 재사용한 요청에는 422 를 돌려주도록 제안한다.",
+      "related_areas": [
+        12,
+        1
+      ],
+      "sources": [
+        "ref-367"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "saga",
+      "term_ko": "사가",
+      "term_en": "Saga",
+      "definition": "오래 걸리는 작업을 작은 단계의 순서로 나누고 단계마다 보상 동작을 두어, 전부 완료되거나 부분 실행을 보상하게 하는 트랜잭션 구성 방식이다.",
+      "description": "Garcia-Molina·Salem(1987)이 제안했으며, 보상은 의미상의 되돌림이지 처음 상태 복원을 보장하지 않는다.",
+      "related_areas": [
+        12,
+        20
+      ],
+      "sources": [
+        "ref-373"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "mqtt-last-will",
+      "term_ko": "마지막 유언 메시지",
+      "term_en": "Last Will (MQTT)",
+      "definition": "MQTT 클라이언트가 예기치 않게 끊기면 브로커가 대신 발행하도록 미리 등록해 둔 메시지로, VDA 5050 은 이를 로봇 연결 끊김(CONNECTION_BROKEN) 알림에 쓴다.",
+      "related_areas": [
+        12,
+        9,
+        11
+      ],
+      "sources": [
+        "ref-031",
+        "ref-306"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "managed-node",
+      "term_ko": "관리형 노드",
+      "term_en": "Managed Node (ROS 2 Lifecycle Node)",
+      "definition": "Unconfigured·Inactive·Active·Finalized 상태와 전이를 가져 감독 도구가 준비 확인·재시작·교체를 제어할 수 있는 ROS 2 노드이다.",
+      "related_areas": [
+        12,
+        24
+      ],
+      "sources": [
+        "ref-364"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세(main 3.0.0). 주문 갱신 id 중복·구버전 처리, 기반 실행 가정, MQTT QoS, 마지막 유언, cancelOrder, RETRIABLE·retry·skipRetry, 30초 상태 주기를 원문으로 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 상태 스키마. 상태 값, 시작·종료 시각, 취소·강제 종료·중단 요청 기록을 담는다(검증 단계에서 원문 확인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-125",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 요청 스키마. 요청 시각·가장 이른 시작 시각·우선순위·범주·설명·라벨·요청자·플릿 이름 필드를 두며 필수 필드는 category·description 이고 요청자 측 식별자 필드는 없다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-126",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/cancel_task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 취소 요청 스키마. type·task_id 필수, labels 선택을 원문으로 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-127",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/interrupt_task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 중단 요청 스키마. type·task_id 필수, labels 선택, 재개 요청으로 다시 진행함을 원문으로 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-129",
+      "org": "MESA International",
+      "title": "B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd",
+      "published": "2023",
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. B2MML 거래 프로파일 스키마(이번 실행에서 다시 열지 않음). CHANGE·CANCEL 등 거래 동사.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-130",
+      "org": "OPC Foundation",
+      "title": "UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv)",
+      "published": "2024-01-31",
+      "url": "https://github.com/OPCFoundation/UA-Nodeset/tree/latest/ISA95-JOBCONTROL",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "OPC UA for ISA-95 Job Control 노드셋. documentation.csv 에서 작업 지시 수신 객체 메서드(Store~RevokeStart)를 확인했고, 상태 기계 상태 이름과 반환 코드는 열람 범위에서 확인하지 못했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-282",
+      "org": "Open Robotics (ROS 2 Documentation)",
+      "title": "Quality of Service settings — ROS 2 Documentation: Jazzy",
+      "published": null,
+      "url": "https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 QoS 정책 문서. 신뢰·최선 노력, transient local, deadline, liveliness·lease duration, QoS 이벤트를 문서 원본(ros2_documentation jazzy 브랜치)으로 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-306",
+      "org": "OASIS",
+      "title": "MQTT Version 5.0",
+      "published": "2019-03",
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MQTT 5.0 명세. QoS 0·1·2 전달 보장과 패킷 식별자·PUBREC·PUBREL·PUBCOMP 교환에 의한 중복 PUBLISH 식별을 정한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-363",
+      "org": "ROS 2 Design",
+      "title": "Actions (ROS 2 Design)",
+      "published": null,
+      "url": "https://design.ros2.org/articles/actions.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 액션 설계 문서. 목표 상태(ACCEPTED·EXECUTING·CANCELING·SUCCEEDED·ABORTED·CANCELED), 클라이언트의 UUID 목표 id 생성, 취소 정책, 결과 캐시·만료를 정한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-364",
+      "org": "ROS 2 Design",
+      "title": "Managed nodes (ROS 2 Design: node_lifecycle)",
+      "published": null,
+      "url": "https://design.ros2.org/articles/node_lifecycle.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 관리형 노드 수명주기 설계. 네 주 상태와 여섯 전이 상태, 감독 도구에 의한 준비 확인과 운영 중 재시작·교체 목적을 정한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-365",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/dispatch_task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 파견 요청 스키마. type 과 task_request 참조만 필수로 두며 요청자 측 식별자·멱등성 키 필드가 없다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-366",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — rmf_task/include/rmf_task/Task.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 라이브러리의 작업 인터페이스 헤더. 실행 중 작업의 백업(순서 번호 포함), 중단·취소·강제 종료·단계 건너뛰기·되감기의 뜻을 주석으로 정한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-367",
+      "org": "IETF HTTPAPI Working Group (Jena, J., & Dalal, S.)",
+      "title": "The Idempotency-Key HTTP Header Field (draft-ietf-httpapi-idempotency-key-header)",
+      "published": null,
+      "url": "https://github.com/ietf-wg-httpapi/idempotency/blob/main/draft-ietf-httpapi-idempotency-key-header.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "작업반 공식 저장소의 인터넷 초안 편집본(RFC 아님). 클라이언트가 만든 멱등성 키로 재시도를 식별하고, 키 재사용 금지·만료 정책·409/422/400 오류 처리를 제안한다. 검색 요약상 최신 게시판은 -07(2025-10-15).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-368",
+      "org": "OPC Foundation",
+      "title": "OPC 10000-10 UA Part 10: Programs - 4.2.4 Program states",
+      "published": null,
+      "url": "https://reference.opcfoundation.org/Core/Part10/v104/docs/4.2.4",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. OPC UA 프로그램 상태 기계(Halted·Ready·Running·Suspended)와 Start·Suspend·Resume·Halt 전이를 정한다(v1.04 참조 페이지).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-369",
+      "org": "ISA",
+      "title": "ISA-TR88.00.02-2022, Machine and Unit States: An implementation example of ISA-88.00.01",
+      "published": "2022",
+      "url": "https://www.isa.org/products/isa-tr88-00-02-2022-machine-and-unit-states-an-imp",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. PackML 로 알려진 기계·유닛 상태 모델 기술보고서(유료 원문, 2015판·2022판). 17개 상태 목록은 발행 기관 자료로 확인하지 못했다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-370",
+      "org": "Colledanchise, M., & Ögren, P.",
+      "title": "Behavior Trees in Robotics and AI: An Introduction",
+      "published": "2017-09",
+      "url": "https://arxiv.org/abs/1709.00084",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 로봇·AI 에서 행동 트리의 구조, 모듈성·반응성, 설계 원칙을 소개하는 입문서(프리프린트, 이후 책으로 출간).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-371",
+      "org": "BehaviorTree.CPP (BehaviorTree GitHub)",
+      "title": "BehaviorTree.CPP — include/behaviortree_cpp/decorators/retry_node.h",
+      "published": null,
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP/blob/master/include/behaviortree_cpp/decorators/retry_node.h",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "행동 트리 라이브러리의 재시도 데코레이터 헤더. 실패한 자식을 num_attempts 횟수까지 다시 실행한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-372",
+      "org": "BehaviorTree.CPP (BehaviorTree GitHub)",
+      "title": "BehaviorTree.CPP — include/behaviortree_cpp/decorators/timeout_node.h",
+      "published": null,
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP/blob/master/include/behaviortree_cpp/decorators/timeout_node.h",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "행동 트리 라이브러리의 시간 초과 데코레이터 헤더. 정해진 시간보다 오래 실행 중인 자식을 중단하고 FAILURE 를 돌려준다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-373",
+      "org": "Garcia-Molina, H., & Salem, K.",
+      "title": "Sagas",
+      "published": "1987",
+      "url": "https://dl.acm.org/doi/10.1145/38713.38742",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 오래 걸리는 트랜잭션을 작은 트랜잭션과 보상 트랜잭션의 순서로 나누는 사가 개념을 제안한 ACM SIGMOD 1987 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-374",
+      "org": "Open Robotics (open-rmf/rmf_ros2 GitHub)",
+      "title": "Task recovery when fleet adapter get restarted · Issue #224 · open-rmf/rmf_ros2",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/issues/224",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 플릿 어댑터 재시작 시 배정 작업이 사라지는 문제와 SQLite 기반 작업 백업 제안을 다룬 프로젝트 이슈.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    },
+    {
+      "id": "ref-375",
+      "org": "Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.",
+      "title": "Benchmarking Message Brokers for IoT Edge Computing: A Comprehensive Performance Study",
+      "published": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.21600",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IoT 엣지용 MQTT 브로커 5종의 성능·신뢰성을 QoS 수준과 네트워크 장애 조건(MTTF 30초·MTTR 5초)에서 비교한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "상위 시스템 요청의 중복을 판별하는 키(멱등성 키나 상위 요청 id)를 ROP 가 얼마 동안 보존해야 하는가, 운반 작업의 재전송 가능 기간에 맞춘 만료 기준을 정한 표준이나 사례가 있는가?",
+      "areas": [
+        12,
+        1
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "VDA 5050 로봇이 재부팅되면 받아 둔 주문을 유지하는지에 대한 규정이 명세에서 확인되지 않는데, 제조사 구현이나 공개 사례는 재부팅 뒤 주문·동작 상태를 어떻게 복원하거나 폐기하는가?",
+      "areas": [
+        12,
+        9
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "Open-RMF 플릿 어댑터 재시작 시 작업 유실을 막는 작업 백업·복원 기능(SQLite 저장 제안)이 현재 배포판에 반영되었는가, 반영되었다면 복원 뒤 로봇의 실제 위치·적재 상태와 어떻게 대조하는가?",
+      "areas": [
+        12,
+        20
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "적치",
+      "item": "시작 조건",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    },
+    {
+      "step": "적치",
+      "item": "작업 대상",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    },
+    {
+      "step": "적치",
+      "item": "수행 자원",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    },
+    {
+      "step": "적치",
+      "item": "제약",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    },
+    {
+      "step": "적치",
+      "item": "완료·인계",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    },
+    {
+      "step": "적치",
+      "item": "예외·성과",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "12. 명령·작업 실행의 신뢰성"
+    }
+  ],
+  "additional_research_requests": [
+    "5절·6절: Open-RMF 서버(rmf-web API 서버·작업 파견기)가 같은 내용의 중복 파견 요청을 거르는지와 작업 id 부여 방식(task_dispatch_response.json 은 404 로 열지 못함)을 소스 코드로 확인해야 한다. 재전송 시 별개 작업 생성 여부가 현재 추정이다.",
+    "6절·11절: VDA 5050 로봇의 재부팅 뒤 주문 유지·폐기 규정과 상태 미수신 시 관제 대응 규정의 존재 여부를 명세 전체로 확인해야 한다(현재 발췌 범위에서 찾지 못함, 부재 확정 아님).",
+    "7절: ISA-95 Job Control 상태 기계 상태 이름과 Store 메서드의 중복 id 반환 코드(부속서 B.2), PackML 17개 상태를 발행 기관 자료로 확인해야 한다.",
+    "3절·5절: 명령 중복·재시작 복원을 다룬 한국 현장·학술 자료가 없다. 국내 물류센터 WMS–로봇 관제 연동에서 재전송·중복 처리 사례를 찾아야 한다.",
+    "전반: 모든 사실 주장이 단일 발행 주체 자료이고 교차 확인이 0건이다. 주문 갱신 id 중복 무시 규칙과 결과 캐시 같은 핵심 주장을 독립 출처(구현 문서·논문)로 교차 확인해야 한다."
+  ],
+  "fixes_applied": [
+    "f21 강등 — 6절 상태 기계 문단과 7절 표 PackML 행을 [추정]으로 쓰고 'ISA 원문 미열람, 상태 목록은 발행 기관 자료로 미확인'과 2015판·2022판을 병기했다.",
+    "f27 강등 — 8절 브로커 비교 연구 항목을 [추정]으로 쓰고 '저자 보고값(MQTT 브로커 5종, MTTF 30초·MTTR 5초 장애 모델)이며 원문 미열람'을 병기했다.",
+    "ref-375 — reference_updates 와 각주의 기관을 'Paul, T. C., Lertpongrujikorn, P., Nguyen, H. D., & Amini Salehi, M.'로, 발행일을 2026-03-23 으로 고쳤다.",
+    "ref-306 — 새 참고문헌으로 등록하지 않고 f16·f17 문장의 각주를 기존 ref-306(OASIS, MQTT Version 5.0)으로 썼으며 새 항목을 만들지 않았다(reference_updates 에는 기존 ref-306 을 cited_by 갱신용으로만 넣었다).",
+    "f9 — 6절 멱등성 키 문단에 가장 이른 시작 시각(unix_millis_earliest_start_time)을 넣고 작업 요청의 필수 필드가 category·description 뿐이라고 썼다.",
+    "f20 — 6절 상태 기계 문단과 7절 표에 OPC UA Part 10 의 판(v1.04 참조 페이지 기준)을 적었다.",
+    "각주 — ref-129, ref-306, ref-368, ref-369, ref-370, ref-373, ref-374, ref-375 의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-111 은 기존 참고문헌 행을 그대로 재사용했다.",
+    "인용 — 페이지 전체에서 출처 원문 직접 인용을 쓰지 않고 ref-031 을 포함한 모든 출처를 요약·재서술했다.",
+    "f16·f27 — 6절에서 MQTT 전달 보장을 중복 판단의 입력으로만 짧게 쓰고 8절 브로커 연구도 입력으로만 참고한다고 밝혔으며, 6절과 10절에서 11. 분산 시스템·통신·컴퓨팅 구조로 연결했다.",
+    "f30 — 5절 제약 칸과 6절 시간 초과 문단에 '상태 미수신 시 관제 대응 규정을 명세 발췌 범위에서 찾지 못함(부재 확정 아님)' 단서를 유지했다.",
+    "f31 — PackML 부분을 [추정] 근거로만 써서 6절 상태 대응 규칙 문장을 [추정]으로 두고 [사실]로 쓰지 않았다.",
+    "분량 초과 자동 분리: 12. 명령·작업 실행의 신뢰성 본문 10,392자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,780자"
+  ],
+  "standards_updates": [
+    {
+      "name": "ROS 2 액션 설계(Actions)",
+      "kind": "프레임워크",
+      "org": "ROS 2 Design",
+      "url": "https://design.ros2.org/articles/actions.html",
+      "related_areas": [
+        12,
+        9
+      ],
+      "summary": "클라이언트가 UUID 로 만드는 목표 id, 진행·종료 목표 상태, 결과 캐시를 정한 ROS 2 설계 문서다.",
+      "ref_id": "ref-363"
+    },
+    {
+      "name": "ROS 2 관리형 노드 수명주기(Managed nodes)",
+      "kind": "프레임워크",
+      "org": "ROS 2 Design",
+      "url": "https://design.ros2.org/articles/node_lifecycle.html",
+      "related_areas": [
+        12,
+        24
+      ],
+      "summary": "네 주 상태와 전이 상태로 감독 도구가 준비 확인·운영 중 재시작·교체를 제어하게 하는 ROS 2 설계 문서다.",
+      "ref_id": "ref-364"
+    },
+    {
+      "name": "Open-RMF rmf_task",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp",
+      "related_areas": [
+        12,
+        20
+      ],
+      "summary": "실행 중 작업의 백업과 취소·강제 종료·건너뛰기·되감기를 정한 Open-RMF 작업 라이브러리다.",
+      "ref_id": "ref-366"
+    },
+    {
+      "name": "IETF Idempotency-Key HTTP 헤더 초안(draft-ietf-httpapi-idempotency-key-header)",
+      "kind": "표준",
+      "org": "IETF HTTPAPI Working Group",
+      "url": "https://github.com/ietf-wg-httpapi/idempotency/blob/main/draft-ietf-httpapi-idempotency-key-header.md",
+      "related_areas": [
+        12,
+        1
+      ],
+      "summary": "RFC 가 아닌 인터넷 초안으로, 클라이언트 생성 멱등성 키로 요청 재시도를 식별하고 키 재사용 금지·만료 정책·오류 코드를 제안한다.",
+      "ref_id": "ref-367"
+    },
+    {
+      "name": "OPC UA Part 10: Programs (v1.04)",
+      "kind": "표준",
+      "org": "OPC Foundation",
+      "url": "https://reference.opcfoundation.org/Core/Part10/v104/docs/4.2.4",
+      "related_areas": [
+        12
+      ],
+      "summary": "Halted·Ready·Running·Suspended 프로그램 상태 기계와 전이를 정한다(원문 미열람).",
+      "ref_id": "ref-368"
+    },
+    {
+      "name": "ISA-TR88.00.02 Machine and Unit States (PackML)",
+      "kind": "표준",
+      "org": "ISA",
+      "url": "https://www.isa.org/products/isa-tr88-00-02-2022-machine-and-unit-states-an-imp",
+      "related_areas": [
+        12
+      ],
+      "summary": "PackML 로 알려진 기계·유닛 상태 모델 기술보고서(2015판·2022판). 원문 유료·미열람이며 상태 목록은 발행 기관 자료로 미확인이다.",
+      "ref_id": "ref-369"
+    },
+    {
+      "name": "BehaviorTree.CPP",
+      "kind": "오픈소스",
+      "org": "BehaviorTree (GitHub)",
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP/blob/master/include/behaviortree_cpp/decorators/retry_node.h",
+      "related_areas": [
+        12
+      ],
+      "summary": "재시도(RetryNode)·시간 초과(TimeoutNode) 데코레이터를 제공하는 행동 트리 라이브러리다.",
+      "ref_id": "ref-371"
+    }
+  ]
+}

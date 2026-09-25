@@ -1,0 +1,76 @@
+# 1차 검증(브리프) 2026-09-25-51
+
+**판정: 조건부 승인** · 신뢰도: low
+
+## 주장별 검증
+
+| finding | 출처 실재 | 주장 뒷받침 | 교차 확인 | 태그 처분 | 메모 |
+|---|---|---|---|---|---|
+| f1 | 예 | 예 | 아니오 | 유지 | 확인: ref-600 raw 원문을 다시 열었다(github_raw). 루트 필수 필드는 phases 하나다. phases 는 'in the order that they should be performed' 순서로 나열하고, activity 는 'must match an activity description supported by one of the fleets' 조건이며, activity 안에서 category·description 이 필수다. on_cancel 은 선택이고 category·detail 은 운영자 표시용이다. 발행일은 미확인이며 기준일은 확인일 2026-09-25 다. 단일 출처다. |
+| f2 | 예 | 예 | 아니오 | 유지 | 확인: ref-111 raw 원문을 다시 열었다. 필수 필드는 booking 하나다. assigned_to 는 {group, name}, dispatch.status 는 queued·selected·dispatched·failed_to_assign·canceled_in_flight 다. status 12개 값, 작업·단계 수준의 estimate_millis 와 unix_millis 시작·종료 시각이 모두 원문과 일치한다. 같은 URL 이 이전 실행에서 ref-111(실행 2026-09-25-43)과 ref-505(실행 2026-09-25-48)로 쓰였다. |
+| f3 | 예 | 예 | 아니오 | 유지 | 확인: task_state 의 deps 는 event_state 안에서 같은 단계의 사건 id 만 가리킨다. 작업 사이 의존 필드와 배정 근거 필드는 없다. compose 에는 phases·activity·on_cancel·category·detail 외 필드가 없다. 연 문서 범위의 부재 관찰이므로 [추정]을 유지한다. |
+| f4 | 예 | 예 | 아니오 | 유지 | 확인(data/source_texts/ref-031.txt): 5.3 첫 항목 'Assignment of orders to the mobile robots', 6.1.1 의 node-edge-graph segment 와 sub-orders, 2절 범위 제외 항목 'external IT systems' 를 원문에서 확인했다. 다만 마지막 절 '업무·작업 수준 구조나 배정 근거를 담는 메시지는 두지 않는다'는 명세 문장이 아니라 읽은 범위에서의 부재 관찰이다. 서술할 때 그 점을 드러내야 한다(required_fixes). |
+| f5 | 예 | 예 | 아니오 | 유지 | 확인(ref-031 원문 표 4): waitForTrigger 의 triggerType 배열(FLEET_CONTROL·LOCAL), 'Fleet control is responsible for handling the timeout and shall cancel the order if necessary', trigger 순간 동작의 제3 시스템 완료 정보를 모두 원문에서 확인했다. VDA 5050 의 fleet control 을 곧바로 ROP 로 읽지 않도록 서술을 조정한다(required_fixes). |
+| f6 | 예 | 예 | 아니오 | 유지 | 확인: ref-230 raw 원문을 다시 열었다. 메시지 유형은 identityReport·statusReport 두 가지뿐이고 작업 전송 메시지는 없다. operationalState 9개 값을 확인했다. destinations 는 예측 도착 UTC 시각이 붙은 predictedLocation 배열(최대 10개)이고, path 설명은 'Short term path of AGV ~10 sec' 다. 같은 URL 이 이전에 ref-230·ref-507 로 쓰였다. |
+| f7 | 예 | 예 | 아니오 | 유지 | 확인: ref-130 NodeSet2.xml 을 raw 로 열었다. 모델 발행일 2024-01-31(모델 2.0.0), Priority 설명 'Higher numbers have higher priority', 작업 응답의 실적(Actuals) 구조를 확인했다. 설비 ID 설명 문구는 이번 열람 응답에서 물리 자산 데이터형의 같은 형식 문구('Physical Asset Class or Physical Asset')로만 확인했고, 설비 데이터형 문구는 글자 단위로 대조하지 못했다(부분 확인). |
+| f8 | 예 | 예 | 아니오 | 유지 | 확인: 작업 지시·작업 응답에 선후·의존 필드가 없다. 상태는 StateText·StateNumber·BrowsePath 로만 나타내며 상태 값 목록은 확인하지 못했다. 연 문서 범위의 부재 관찰이다. 기존 위키 주장(실행 2026-09-25-49 f7, ref-117 B2MML Dependency1Type, oq-013)과는 문서가 다르므로 모순은 아니다. 다만 ISA-95 계열 전체에 의존 표현이 없다고 일반화하지 않는다. |
+| f9 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람): 검증 검색에서 HumanPerformer 의 특수화인 PotentialOwner, ResourceRole 에 자원을 배정하는 ResourceAssignmentExpression 을 OMG BPMN 2.0 명세 체계로 확인했다. 브리프 주장은 'BPMN 2.0 명세'라고 적었지만 출처는 2.0.2(2014-01)다. 판 표기를 2.0.2 로 맞춘다. 절 번호는 미확인이다. |
+| f10 | 예 | 예 | 아니오 | 유지 | 확인: ref-606 README 를 raw 로 다시 열었다. 'FaMe is a BPMN-driven framework for Multi-Robot System development' 와 인용 서지(Corradini, Pettinari, Re, Rossi, Tiezzi, RAS vol. 160, 104322)가 있다. README 는 연도를 2022 로 적는데 학술지 권호 연도는 2023 이다. 기준일은 '2023(README 표기 2022)'로 적는다. 협업 다이어그램·실행 환경 세부는 미확인이다. |
+| f11 | 예 | 예 | 아니오 | 유지 | 확인: ref-602 dsl.md 를 raw 로 열었다. 작업 유형 12종(Call·Do·Emit·For·Fork·Listen·Raise·Run·Set·Switch·Try·Wait), 시간 초과 시 실행을 중단하고 timeout 오류(상태 408)를 내는 규칙, 일정 키워드 every·cron·after·on, 예시 코드의 DSL 1.0.3 을 확인했다. 발행일은 미확인이며 기준일은 확인일 2026-09-25 다. |
+| f12 | 예 | 예 | 아니오 | 유지 | 확인: 이번 열람 응답에도 수행자·자원 배정, 우선순위, 기한 개념이 없다. 연 문서 범위의 부재 관찰이므로 [추정]을 유지한다. |
+| f13 | 예 | 예 | 아니오 | 유지 | 확인: ref-603 README 를 raw 로 열었다. XML 기반 DSL 을 실행 시 불러오는 방식, 정적 링크와 플러그인, 비동기 Action, 상태 전이를 기록·재생하는 logging/profiling 기반 네 가지 모두 원문과 일치한다. 오픈소스 프로젝트가 자기 문서 구조를 설명한 것이며 성능 주장이 아니다. |
+| f14 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람): 검증 검색에서 저자 7명, AAAI 2020(34권 9883–9891쪽, DOI 10.1609/aaai.v34i06.6542), IPC 2020 첫 계층 계획 부문의 표준 입력 언어라는 점을 확인했다. AAAI 게재판 제목은 'HDDL: An Extension to PDDL for Expressing Hierarchical Planning Problems' 로, 브리프의 arXiv 판 제목(ref-604)과 다르다. 기준일은 arXiv 2019-11, 게재 2020 이다. |
+| f15 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람, 표준 본문은 유료): 검증 검색에서 IEEE SA 페이지와 IEEE Xplore(document 10557559)를 확인했다. 작업 지식의 표현·추론·교환을 위한 온톨로지, 계층적 계획기·설계자의 작업 지식 표현, 구현 지침 P1872.1.1 이 일치한다. 발행일은 2024-06-18 이다. 발행 기관 소개 자료가 근거이므로 [사실]을 유지하되 본문 미열람을 병기한다. |
+| f16 | 예 | 예 | 아니오 | 유지 | 확인(원문 미열람): 검증 검색에서 저자 Filippone·Pettinari·Pelliccione(GSSI), 네 형식(행동 트리, 상태 기계, HTN, BPMN)의 제어 구조·임무 개념·표현력·도구 지원 비교와 전문가 검증을 확인했다. 판은 v1 2026-03, v2 2026-08-17 이다. 초록은 '단일·다중 로봇 임무 기술에 표준이나 널리 합의된 형식이 없다'고 적는다. 이 문장을 본문에 쓰면 저자 평가로 [의견]을 붙인다. |
+| f17 | 예 | 예 | 아니오 | 유지 | 확인: f1~f15 의 필드 관찰을 초안 개념에 대응시킨 이 위키의 추론이며, 단일 출처가 없다는 점이 명시되어 있다. [추정]과 신뢰도 low 를 유지한다. 인용한 ref-608(IEEE 1872.1)은 본문 미열람이라 대조하지 못했다는 단서를 반드시 함께 쓴다. f18 의 범위 조정에 맞춰 '순서 구조'는 워크플로·계획 형식이 담는 항목으로 둔다. |
+| f18 | 예 | 아니오 | 아니오 | 강등 | 주장 범위 축소. '확인한 형식 가운데 서로 다른 로봇·플릿 작업 사이의 선행 의존을 필드로 표현하는 것은 없었다'는 일반화가 과하다. 같은 브리프의 BPMN(순서 흐름, 수행자 지정 f9), Serverless Workflow(do 순차·fork f11), HDDL(하위 작업의 부분·전체 순서 f14)은 작업 사이 순서를 표현한다. 다만 그 작업을 제조사가 다른 로봇·플릿에 묶는 필드는 확인되지 않았다. 기존 위키도 B2MML Dependency1Type 이 실행 의존을 표현한다고 적는다(실행 2026-09-25-49 f7, oq-013). 주장은 로봇 관제·보고 형식(Open-RMF, VDA 5050, MassRobotics)과 ISA-95 작업 제어 노드셋으로 좁힌다. waitForTrigger 를 플릿 사이 선후 집행에 쓴 사례는 미확인이다. |
+| f19 | 예 | 예 | 아니오 | 유지 | 확인: assigned_to{group,name}, dispatch 상태, 작업 응답의 설비 실적에는 선택 이유·비용 값 필드가 없다(f2·f3·f7 원문 확인). 이 위키의 추론이며 [추정]을 유지한다. 13. 작업 배정 — MRTA 의 SCM 질문과 기존 oq-052(비교 실측)에 연결한다. |
+
+## 항목별 결과
+
+| 항목 | 결과 | 내용 |
+|---|---|---|
+| 분류 적합성 | 예 | — |
+| 범위 경계 | 예 | — |
+| 중복·모순 | 아니오 | 브리프 전체가 실행 2026-09-25-43(같은 질문 q2-02, 1차 조건부 승인 / 2차 통과, 생성·갱신 0/0)의 f1~f18 과 거의 같다. 이번 실행이 사실상 반영 재시도라는 점을 트랙 로그와 changelog 에 남겨야 한다., 출처 URL 중복 가능성: ref-111(task_state.json)는 ref-111(실행 2026-09-25-43)·ref-505(실행 2026-09-25-48)와 같은 URL이다. ref-600 은 ref-569(실행 2026-09-25-43; 실행 2026-09-25-30 의 ref-569 와도 id 충돌), ref-230 은 ref-230·ref-507, ref-602 는 ref-570, ref-603 은 ref-571, ref-604 는 ref-572 와 같은 URL이다. ref-605 는 ref-573(URL 끝에 /PDF 가 붙어 다름), ref-116 은 ref-116 과 같다. 입력 참고문헌 목록(요약)에는 없으므로 퍼블리셔가 URL로 병합해야 한다., f18(플릿 사이 선행 의존)은 기존 열린 질문 oq-049 와, f19(배정 근거 기록)는 oq-052·oq-053 과, f7·f8(ISA-95 작업 지시·응답)은 oq-020 과, f8·f18 의 선후 의존 부재 관찰은 기존 위키의 B2MML Dependency1Type 주장(ref-117, oq-013)과 겹친다. 문서가 달라 모순은 아니지만 함께 제시해야 한다., 새 질문 1(BPMN·Serverless Workflow·HDDL 채택 대 자체 스키마 변환)은 백로그 q2-04(중간 표현을 작업 모델·VDA 5050·Open-RMF 로 옮기기)와 인접하지만, 채택 결정과 배정 근거·확인 여부의 보존 위치를 묻는 점이 달라 중복으로 보지 않았다. |
+| 용어 일관성 | 예 | — |
+| 인용 길이·저작권 | 아니오 | ref-031 의 영어 원문 구절이 f4('Assignment of orders to the mobile robots', 'The core of a transport order is a node-edge-graph segment', 'split up into many sub-orders')와 f5('Fleet control is responsible for handling the timeout…')에 여러 번 나온다. 페이지에서는 출처당 직접 인용 1회만 허용된다., ref-111·ref-600(f1 의 'in the order that they should be performed', 'must match an activity description supported by one of the fleets') 등 스키마 설명문 구절도 페이지에서는 재서술해야 한다. |
+| 정정 요청 반영 | — | — |
+
+## 수정 지시(required_fixes)
+
+- f18: 주장 범위를 줄인다. '확인한 로봇 관제·보고 형식(Open-RMF 복합 작업·작업 상태, VDA 5050, MassRobotics)과 ISA-95 작업 제어 노드셋에서는 제조사가 다른 로봇·플릿의 작업 사이 선행 의존을 담는 필드를 찾지 못했다'로 고친다. 워크플로·계획 형식(BPMN 순서 흐름, Serverless Workflow do·fork, HDDL 하위 작업 순서)은 작업 사이 순서를 표현하지만 수행 플릿에 묶는 필드는 확인되지 않았다고 병기하고, 기존 B2MML Dependency1Type 주장(ref-117, oq-013)으로 연결한다. [추정]을 유지하고 oq-049 를 해결로 바꾸지 않는다. 이유: 같은 브리프의 f9·f11·f14 가 순서 표현을 보여 준다.
+- f4: 마지막 절 '업무·작업 수준의 구조나 배정 근거를 담는 메시지는 두지 않는다'는 '이번에 읽은 3.0.0 명세 범위에서 그런 메시지는 확인되지 않았다'는 부재 관찰로 쓰고 [추정]을 붙인다. 앞부분(5.3 배정 기능, 6.1.1 노드–간선 그래프·하위 주문, 2절 외부 IT 시스템 제외)은 [사실]로 둔다.
+- f5·f18: VDA 5050 의 'fleet control(관제)'을 곧바로 ROP 로 쓰지 않는다. 'ROP 가 VDA 5050 관제 역할을 맡는 구성에서는 ROP 몫'처럼 조건을 붙이고, 제조사 관제에 맡기는 구성(9. 로봇·제조사 관제 연동)도 있을 수 있음을 밝힌다. 이유: 분류 원문 9장은 경계가 제품 전략에 따라 이동할 수 있다고 적는다.
+- f9: 본문의 판 표기를 'OMG BPMN 2.0.2 명세(2014-01)'로 맞추고, 각주 ref-605 의 접근일 뒤에 ' (원문 미열람)'을 붙인다.
+- f10: 기준일을 '2023(Robotics and Autonomous Systems 160권 104322; README 표기 2022)'로 적는다. 협업 다이어그램·실행 환경 세부는 '미확인'으로 둔다.
+- f14: 각주 ref-604 는 arXiv 판 제목을 그대로 쓰고, 본문에는 'AAAI 2020 게재판(제목 HDDL: An Extension to PDDL for Expressing Hierarchical Planning Problems)'을 병기한다. 원문 미열람을 표시한다.
+- f15: IEEE 1872.1-2024 의 발행일을 2024-06-18(IEEE SA 발행 기관 소개 기준)로 적는다. '표준 본문(유료) 미열람, 작업 분해·배정·의존 표현 방식은 미확인'을 같은 문장이나 바로 뒤 문장에 둔다. 5. 로봇 능력·작업 온톨로지 반영 제안도 같은 단서를 단다.
+- f16: 논문의 '임무 기술에 표준이나 널리 합의된 형식이 없다'는 평가를 쓰려면 저자 평가로 [의견]을 붙인다. 판 표기는 'v1 2026-03, v2 2026-08-17'로 한다.
+- f7: 설비 데이터형 ID 가 '설비 클래스 또는 개별 설비'를 가리킨다는 구절은 이번 검증에서 물리 자산 데이터형의 같은 형식 문구로만 확인했다. 본문에 쓸 때는 '설비·물리 자산 데이터형의 ID 는 클래스 또는 개별 대상을 가리킬 수 있다' 수준으로 쓴다.
+- 인용: ref-031·ref-111·ref-600 을 포함해 페이지에서 출처당 영어 원문 직접 인용은 1회 이하로 두고, 나머지 evidence 구절은 한국어로 재서술한다.
+- 원문 미열람 표시: ref-604·ref-605·ref-116·ref-608 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. ref-031·ref-130·ref-111·ref-600·ref-230·ref-602·ref-603·ref-606 은 원문을 연 출처로 둔다.
+- 참고문헌 id: reference_updates 에는 브리프 id(ref-111~ref-608)를 쓴다. changelog_entry 에 '같은 URL 이 이전 실행에서 ref-111·ref-505(task_state.json), ref-569(compose), ref-230·ref-507(MassRobotics JSON), ref-570(dsl.md), ref-571(BehaviorTree.CPP), ref-572(HDDL), ref-116(Filippone 외)로 쓰였을 수 있어 퍼블리셔 URL 병합 확인이 필요하다'를 남긴다.
+- 온톨로지 초안(업무 분해·배정 설계 초안): 두 변경을 모두 승인하고 v0.4 → v0.5 로 올린다(H1·상태 줄 표식·프런트매터 ontology_version·track_updates 네 곳을 같게 맞춘다). (1) 진행 상태(Progress)에 외부 표현 원천 메모를 더한다. Open-RMF status 12개 값 가운데 대표 값, dispatch 5개 값(canceled_in_flight 포함), ISA-95 작업 응답의 JobState·실제 시작·종료 시각이다(f2·f7). 상태는 초안 → 확정이며, 초안의 네 값(접수·실행·완료·취소)과의 대응 규칙은 6절 질문으로 둔다. (2) 배정(Assignment)에 외부 표현 대응 메모를 더한다. Open-RMF assigned_to(group·name)·dispatch 상태와 VDA 5050 의 주문 수신 로봇이다(f2·f4). 상태는 확정 유지다. '선택 근거·배정 산출 방식·확인 여부 필드가 외부 형식에 없어 작업 모델이 보유한다'는 부분(f3·f19)은 속성 정의가 아니라 [추정] 메모로만 적는다.
+- 6절 미해결 모델링 질문에 둘을 더한다. 플릿 사이 작업 선행 의존의 표현·집행 위치(f18, oq-049)와 IEEE 1872.1-2024 작업 개념과의 대응(f15, 본문 미열람)이다. 기존의 '작업 / 선행 의존한다 / 작업' 관계 질문과 합쳐 중복을 피한다.
+- 단계 2 페이지 2절: q2-02 를 '답함', 답한 실행 2026-09-25-51, 답 위치 #q2-02 로 바꾼다. 3절에 '### q2-02 … {#q2-02}' 소제목을 둔다. 6절 완료 조건 두 행은 모두 '미충족', 검증 판정 칸은 '미충족 · 미승인'으로 둔다. 아래 줄은 '다음 단계로 전환: 아니오(아이디어 2 4절 평가 데이터(q2-03) 미조사, 작업 모델 정보 항목 일부만 반영(작업 요구 적재물 속성·완료 조건 미확정), 열린 질문 q2-03·q2-04·q2-05·q2-06)'로 쓴다. 상태 줄의 열린·답한 질문 수를 2절 표와 맞춘다.
+- 새 질문 3건을 백로그에 등록한다. q3-08(형식 채택 대 자체 스키마, 단계 3, origin f17), q3-09(Open-RMF 단계와 waitForTrigger 조합의 플릿 사이 선후 집행, 단계 3, origin f18), q2-07(IEEE 1872.1-2024 개념 대응, 단계 2, origin f15)이다. q3-09 문장에는 'ROP 가 관제 역할을 맡는 경우' 조건을 반영한다.
+- 아이디어 2. 자연어 업무 지시 챗봇 4절: '작업·배정 결과를 표현하는 표준·형식' 소절의 비교표는 이 위키가 구성한 표임을 [추정]과 함께 밝힌다. 표·그림은 출처에서 복제하지 않는다. 평가 데이터(q2-03)는 미조사임을 적는다.
+- 세부영역 13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링, 5. 로봇 능력·작업 온톨로지는 직접 고치지 않는다. area_reflection_proposals 로만 낸다. 14. 작업 순서·스케줄링 제안의 f18 은 위 범위 축소판으로 쓴다.
+
+## 검증 노트
+
+판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. 다만 fetch_mode mirror_only 로 raw.githubusercontent.com 은 열려, ref-111·ref-600·ref-230·ref-602·ref-603·ref-606·ref-130 을 다시 열어 확인했고, ref-031 은 입력 원문 텍스트로 대조했다. 확인 18건, 미확인 1건(f18), 교차 확인 0건. 강등: f18 주장 범위 축소(BPMN·Serverless Workflow·HDDL 은 작업 사이 순서를 표현하므로 로봇 관제·보고 형식과 ISA-95 작업 제어 노드셋으로 한정. 태그는 추정 유지). 원문 미열람 출처: ref-604(HDDL), ref-605(BPMN 2.0.2), ref-116(Filippone 외), ref-608(IEEE 1872.1-2024, 본문 유료). 주의: 형식별 필드 관찰은 각 공식 파일 하나에 기대고, q2-02 의 핵심 답(초안 대비 빠진 항목 f17, 플릿 사이 선후 f18, 배정 근거 기록 f19)은 이 위키의 추론(신뢰도 low)이다. f3·f8·f12 는 연 문서 범위의 부재 관찰이며 부재의 확인이 아니다. IEEE 1872.1 은 본문을 보지 못해 작업 모델과 대조하지 않았다. 브리프 표기 문제: ref-031 의 fetched_via 가 github_raw 로 적혔으나 실제 근거는 입력 원문 텍스트(inbox)이고 fetch_url 은 null 이다. 이 브리프는 같은 질문을 다룬 실행 2026-09-25-43(생성·갱신 0/0)을 다시 조사한 것이다. ref-111~ref-116 가운데 여러 건이 이전 실행 id(ref-111·ref-505·ref-569·ref-230·ref-507·ref-570·ref-571·ref-572·ref-116)와 같은 URL 이라 퍼블리셔 병합 확인이 필요하다. 한국 자료: 로봇 작업·임무 기술 형식을 정한 KS 표준·국내 연구는 찾지 못했다(검색 범위의 관찰). 검증 검색 4회(리서치 7회 포함 11/40), 원문 재열람 7건. 정정 요청 없음. 온톨로지 변경 승인: 진행 상태(Progress) 수정(외부 표현 원천 메모, f2·f7, 초안 → 확정), 배정(Assignment) 수정(외부 표현 대응 메모, f2·f4, 확정 유지; f3·f19 의 필드 부재 부분은 [추정] 메모로만), 초안 v0.4 → v0.5 / 거부: 없음. 새 질문 3건 등록(단계 3: f17·f18, 단계 2: f15), 백로그 중복 없음. 단계 완료 조건: 미충족(부족: 아이디어 2 4절의 평가 데이터(q2-03) 미조사, 작업 모델 정보 항목 일부만 반영(작업 요구 적재물 속성·완료 조건 미확정)). 단계 전환: 미승인(막힌 질문 q2-03·q2-04·q2-05·q2-06).
+
+## 트랙 추가 검증
+
+| 항목 | 결과 |
+|---|---|
+| 표준 출처(발행 기관 자료) | 예 |
+| 벤더 주장 표기 | 예 |
+| 온톨로지 변경 근거 | 예 |
+| 백로그 중복 질문 | — |
+| 단계 태그 문제 | — |
+| 완전성 표현 | 예 |
+| 단계 완료 판정 | 미충족 |
+| 단계 전환 승인 | 아니오 |

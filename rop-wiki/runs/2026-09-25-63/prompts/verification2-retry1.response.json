@@ -1,0 +1,133 @@
+{
+  "duration_api_ms": 22876,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.8149308,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 93304,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 2663,
+    "output_tokens_details": {
+      "thinking_tokens": 1146
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 93304,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2663,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 93304,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 93304
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 2663,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 93304,
+      "webSearchRequests": 0,
+      "costUSD": 0.8149308,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1146,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-63\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과(재검증 1회). 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 공식 GitHub 원문으로 확인한 출처는 VDA 5050 명세·상태 스키마(ref-031)와 RMF Core(ref-004)뿐이다. 확인 19건, 미확인 2건, 교차 확인 4건이다(f6·f7·f8·f9. 두 번째 출처는 검증 중 검색으로 확인했고 페이지 각주는 단일이다). 강등: f2 사실 → 추정(비상정지 필드명·값이 3.0.0 스키마와 다름), f12 사실 → 추정(구체 표현 미확인). 원문 미열람 출처: ref-470, ref-472, ref-572, ref-573, ref-574, ref-417, ref-576, ref-577, ref-578, ref-579, ref-580, ref-581. 주의: ISO 3691-4, ISO 10218-2:2025, ISO 12100, R15.08-2 등 표준은 발행 기관의 소개·발표 자료를 기준으로 했고 본문은 열람하지 않았다. STPA 연구 두 편과 SafeGate·Belzile 연구는 물류 현장이 아니라 실험실·가정·건설 현장을 대상으로 했다. 이동식 협동로봇 KS 번호(oq-070)와 유형 C에 대응하는 국내 기준(oq-064)은 확인하지 못했다. 2차 재검증에서는 직전 2차 수정 지시 3건이 모두 이행됐음을 확인했다. 첫째, 분리 페이지 s6의 '운영 조율 수단' 문장을 [사실]과 [추정] 두 문장으로 나눴다. 둘째, 분리 페이지 s7 표의 VDA 5050 행에서 태그를 나눠 강등된 f2 부분을 [추정]으로 표시했다. 셋째, 9절 마지막 문장을 추정형 어미로 고쳤다. 1차 수정 지시 16건도 모두 이행됐다. 드리프트는 없고, [분류원문]은 보존됐으며, 섹션 순서를 지켰고, 링크는 유효하다. 참고(수정 지시 아님, 다음 갱신에서 정리 권장): 자동 분리가 남긴 11절 요약에서 oq-064·oq-070 두 항목이 한 줄로 이어졌다. 10절은 '11절의 oq-092·oq-093'을 가리키지만 두 질문은 분리 페이지 s11에만 있다. 11절과 s11에서 열린 질문 문장 끝에 [사실] 태그가 붙어 있다. 9절 업종별 조건 연계 칸은 f12의 범위 메모에 기댄 ref-576 각주를 쓴다. 정정 요청은 없다. 2차 검증에서는 도구를 쓰지 않았다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-63",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과(재검증 1회). 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 공식 GitHub 원문으로 확인한 출처는 VDA 5050 명세·상태 스키마(ref-031)와 RMF Core(ref-004)뿐이다. 확인 19건, 미확인 2건, 교차 확인 4건이다(f6·f7·f8·f9. 두 번째 출처는 검증 중 검색으로 확인했고 페이지 각주는 단일이다). 강등: f2 사실 → 추정(비상정지 필드명·값이 3.0.0 스키마와 다름), f12 사실 → 추정(구체 표현 미확인). 원문 미열람 출처: ref-470, ref-472, ref-572, ref-573, ref-574, ref-417, ref-576, ref-577, ref-578, ref-579, ref-580, ref-581. 주의: ISO 3691-4, ISO 10218-2:2025, ISO 12100, R15.08-2 등 표준은 발행 기관의 소개·발표 자료를 기준으로 했고 본문은 열람하지 않았다. STPA 연구 두 편과 SafeGate·Belzile 연구는 물류 현장이 아니라 실험실·가정·건설 현장을 대상으로 했다. 이동식 협동로봇 KS 번호(oq-070)와 유형 C에 대응하는 국내 기준(oq-064)은 확인하지 못했다. 2차 재검증에서는 직전 2차 수정 지시 3건이 모두 이행됐음을 확인했다. 첫째, 분리 페이지 s6의 '운영 조율 수단' 문장을 [사실]과 [추정] 두 문장으로 나눴다. 둘째, 분리 페이지 s7 표의 VDA 5050 행에서 태그를 나눠 강등된 f2 부분을 [추정]으로 표시했다. 셋째, 9절 마지막 문장을 추정형 어미로 고쳤다. 1차 수정 지시 16건도 모두 이행됐다. 드리프트는 없고, [분류원문]은 보존됐으며, 섹션 순서를 지켰고, 링크는 유효하다. 참고(수정 지시 아님, 다음 갱신에서 정리 권장): 자동 분리가 남긴 11절 요약에서 oq-064·oq-070 두 항목이 한 줄로 이어졌다. 10절은 '11절의 oq-092·oq-093'을 가리키지만 두 질문은 분리 페이지 s11에만 있다. 11절과 s11에서 열린 질문 문장 끝에 [사실] 태그가 붙어 있다. 9절 업종별 조건 연계 칸은 f12의 범위 메모에 기댄 ref-576 각주를 쓴다. 정정 요청은 없다. 2차 검증에서는 도구를 쓰지 않았다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 12419,
+  "type": "result",
+  "duration_ms": 23018,
+  "uuid": "ddc3f805-12fd-4bfb-b132-92f661fb4583",
+  "ttft_stream_ms": 1544,
+  "time_to_request_ms": 122,
+  "first_content_frame_ms": 1545,
+  "time_to_request_from_spawn_ms": 7809616,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790320905411.2651,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 25.0
+}

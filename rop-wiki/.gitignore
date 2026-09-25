@@ -1,0 +1,17 @@
+# 빌드 산출물
+site/
+# 파이썬
+__pycache__/
+*.pyc
+.pytest_cache/
+# 편집기·OS
+.DS_Store
+# runs/ 는 실행 산출물이지만 재현을 위해 커밋한다. runs/**/prompts/ 도 남긴다(무시하지 않음).
+
+# 실행 캐시(시스템 프롬프트 파일 등)와 잠금 파일
+runs/.cache/
+runs/.lock
+runs/cron.log*
+
+# 배치 실행기의 실행별 표준 출력(실시간으로 계속 바뀐다). 같은 내용은 runs/<id>/log.md 에 커밋되고, 배치 결과는 runs/batches/<batch_id>.json 에 남는다
+runs/batches/*.log

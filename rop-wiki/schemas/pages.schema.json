@@ -1,0 +1,751 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rop-wiki.invalid/schemas/pages.schema.json",
+  "title": "pages.json — 스토리텔러 페이지 산출물",
+  "description": "사양서 부록 B.3. 스토리텔러가 반환하는 페이지 목록과 색인·용어집·참고문헌·열린 질문·흐름 매트릭스 갱신 내용. 에이전트가 반환하는 원본은 pages[].content(프런트매터 포함 페이지 전체 마크다운)를 담고, 스크립트가 runs/<run_id>/pages/ 에 풀어낸 뒤 content 를 뺀 사본을 저장하므로 이 루트 스키마에서 content 는 선택 필드다. 에이전트 반환값은 $defs/returned(루트 + pages[] 모든 항목에 content 필수)로 검사한다. track_updates 와 area_reflection_proposals 는 트랙 실행에만 넣는다. standards_updates 는 선택이다 [가정].",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "실행 id",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
+    },
+    "pages": {
+      "type": "array",
+      "description": "생성·갱신 페이지 목록",
+      "items": {
+        "type": "object",
+        "description": "페이지 하나",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "docs/ 기준 페이지 경로(.md)",
+            "pattern": "^docs/[A-Za-z0-9_./-]+\\.md$"
+          },
+          "action": {
+            "type": "string",
+            "description": "생성인지 갱신인지",
+            "enum": [
+              "create",
+              "update"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "description": "페이지 상태(5.2). 스토리텔러 산출은 보통 draft, 2차 검증 통과 후 퍼블리셔가 published 로 바꾼다",
+            "enum": [
+              "seed",
+              "draft",
+              "verified",
+              "published",
+              "needs_update",
+              "deprecated"
+            ]
+          },
+          "diff_summary": {
+            "type": "string",
+            "description": "무엇이 바뀌었는지 한 줄",
+            "minLength": 1
+          },
+          "content": {
+            "type": "string",
+            "description": "선택(저장 사본 호환). 프런트매터(--- 로 시작)를 포함한 페이지 전체 마크다운. 에이전트 반환값에는 필수이며 agent_runner 가 $defs/returned 로 검사한 뒤 runs/<run_id>/pages/ 로 풀어내고 저장 사본에서는 제거한다",
+            "pattern": "^---\\r?\\n"
+          },
+          "patches": {
+            "type": "array",
+            "description": "차등 갱신(갱신·대분류 연결 실행): 전체 content 대신 바꿀 절만 보낸다. 코드가 현재 페이지에 적용해 전체 페이지를 만든다. content 와 함께 쓰지 않는다",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "section",
+                "action",
+                "content"
+              ],
+              "properties": {
+                "section": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "바꿀 H2 절 제목 전체(예: '6. 대표 접근법과 기술', '다른 대분류와의 연결')"
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "replace",
+                    "append"
+                  ],
+                  "description": "replace: 절 본문 전체를 바꾼다 / append: 절 본문 끝에 덧붙인다"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "절 본문(제목 줄 제외) 마크다운"
+                },
+                "frontmatter": {
+                  "type": "object",
+                  "description": "(선택) 바꿀 프런트매터 필드"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "path",
+          "action",
+          "status",
+          "diff_summary"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "changelog_entry": {
+      "type": "string",
+      "description": "변경 이력 한 줄. 형식: 'YYYY-MM-DD | <대상 이름> | <한 줄 요약> | run <run_id>' [가정: 형식 강제]",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2} \\| .+ \\| .+ \\| run \\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
+    },
+    "index_updates": {
+      "type": "object",
+      "description": "색인·최근 업데이트 갱신 문구(반영은 퍼블리셔)",
+      "properties": {
+        "home_recent": {
+          "type": "string",
+          "description": "홈 '최근 업데이트'에 넣을 한 줄"
+        },
+        "category_recent": {
+          "type": "string",
+          "description": "대분류 페이지 '최근 업데이트'에 넣을 한 줄"
+        },
+        "area_recent": {
+          "type": "string",
+          "description": "선택. 세부영역 페이지 '12. 최근 업데이트'에 넣을 한 줄 [가정]"
+        }
+      },
+      "required": [
+        "home_recent",
+        "category_recent"
+      ],
+      "additionalProperties": false
+    },
+    "glossary_updates": {
+      "type": "array",
+      "description": "용어집 갱신 항목",
+      "items": {
+        "type": "object",
+        "description": "용어집 항목(4.7 필드: 용어 한/영, 한 줄 정의, 설명, 관련 영역, 출처) [가정: 예시가 빈 배열이라 4.7에서 구성]",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "선택. 신규인지 갱신인지(기본 new) [가정]",
+            "enum": [
+              "new",
+              "update"
+            ]
+          },
+          "slug": {
+            "type": "string",
+            "description": "선택. docs/glossary/<slug>.md 의 slug. 비우면 퍼블리셔가 term_en 에서 만든다 [가정]",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "term_ko": {
+            "type": "string",
+            "description": "용어(한글)",
+            "minLength": 1
+          },
+          "term_en": {
+            "type": "string",
+            "description": "용어(영문)",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "description": "한 줄 정의",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "description": "선택. 설명"
+          },
+          "related_areas": {
+            "type": "array",
+            "description": "선택. 관련 세부영역 번호",
+            "items": {
+              "type": "integer",
+              "description": "세부영역 번호",
+              "minimum": 1,
+              "maximum": 28
+            },
+            "uniqueItems": true
+          },
+          "sources": {
+            "type": "array",
+            "description": "선택. 출처 id",
+            "items": {
+              "type": "string",
+              "description": "출처 id",
+              "pattern": "^ref-\\d{3,}$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "term_ko",
+          "term_en",
+          "definition"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reference_updates": {
+      "type": "array",
+      "description": "참고문헌 갱신 항목 [가정: 예시가 빈 배열이라 research.json sources 와 4.7 필드로 구성]",
+      "items": {
+        "type": "object",
+        "description": "참고문헌 항목(4.7 필드). 검증이 확인한 research.json sources 항목을 그대로 옮긴다",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "참고문헌 id",
+            "pattern": "^ref-\\d{3,}$"
+          },
+          "org": {
+            "type": "string",
+            "description": "기관(또는 저자)",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "description": "제목",
+            "minLength": 1
+          },
+          "published": {
+            "description": "발행일. 확인할 수 없으면 null",
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}(-\\d{2}){0,2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "type": "string",
+            "description": "URL",
+            "pattern": "^https?://\\S+$",
+            "format": "uri"
+          },
+          "type": {
+            "type": "string",
+            "description": "출처 유형 7종",
+            "enum": [
+              "표준",
+              "논문",
+              "오픈소스 문서",
+              "정부·연구기관",
+              "업계 보고서",
+              "벤더 문서",
+              "기사"
+            ]
+          },
+          "reliability": {
+            "type": "string",
+            "description": "신뢰도",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "accessed": {
+            "type": "string",
+            "description": "접근일",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "summary": {
+            "type": "string",
+            "description": "한두 문장 요약",
+            "minLength": 1
+          },
+          "source_unopened": {
+            "type": "boolean",
+            "description": "선택. 원문 미열람 [가정]"
+          },
+          "cited_by": {
+            "type": "array",
+            "description": "선택. 이번 실행에서 이 출처를 인용한 페이지 [가정]",
+            "items": {
+              "type": "string",
+              "description": "인용한 페이지 경로",
+              "pattern": "^docs/[A-Za-z0-9_./-]+\\.md$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "org",
+          "title",
+          "published",
+          "url",
+          "type",
+          "reliability",
+          "accessed",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "open_question_updates": {
+      "type": "array",
+      "description": "열린 질문 갱신 항목. 트랙 전용 질문은 track_updates.backlog_updates 에 두고 여기에는 넣지 않는다",
+      "items": {
+        "type": "object",
+        "description": "열린 질문 갱신 항목 [가정: 예시가 빈 배열이라 4.7 필드와 data/open_questions.json 형식으로 구성]",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "new = 새 질문(id 는 퍼블리셔가 부여), update = 기존 질문 상태 변경",
+            "enum": [
+              "new",
+              "update"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "description": "열린 질문 id. update 일 때 필수",
+            "pattern": "^oq-\\d{3,}$"
+          },
+          "question": {
+            "type": "string",
+            "description": "질문 문장",
+            "minLength": 1
+          },
+          "areas": {
+            "type": "array",
+            "description": "관련 세부영역 번호",
+            "items": {
+              "type": "integer",
+              "description": "세부영역 번호",
+              "minimum": 1,
+              "maximum": 28
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "status": {
+            "type": "string",
+            "description": "상태(4.7)",
+            "enum": [
+              "열림",
+              "조사 중",
+              "해결",
+              "보류"
+            ]
+          },
+          "link": {
+            "description": "해결·답이 실린 페이지 경로(#앵커 허용). 없으면 null",
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^docs/[A-Za-z0-9_./-]+\\.md(#\\S+)?$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "action",
+          "question",
+          "areas",
+          "status",
+          "link"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "action": {
+                  "const": "update"
+                }
+              },
+              "required": [
+                "action"
+              ]
+            },
+            "then": {
+              "required": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "flow_matrix_updates": {
+      "type": "array",
+      "description": "물류 흐름 매트릭스 갱신(시나리오가 다룬 칸)",
+      "items": {
+        "type": "object",
+        "description": "흐름 매트릭스 칸 갱신 하나",
+        "properties": {
+          "step": {
+            "type": "string",
+            "description": "물류 흐름 단계",
+            "enum": [
+              "입고",
+              "적치",
+              "보충",
+              "피킹",
+              "포장",
+              "출하",
+              "반품"
+            ]
+          },
+          "item": {
+            "type": "string",
+            "description": "여섯 항목",
+            "enum": [
+              "시작 조건",
+              "작업 대상",
+              "수행 자원",
+              "제약",
+              "완료·인계",
+              "예외·성과"
+            ]
+          },
+          "link": {
+            "type": "string",
+            "description": "그 칸을 다룬 페이지 경로(#앵커 허용)",
+            "pattern": "^docs/[A-Za-z0-9_./-]+\\.md(#\\S+)?$"
+          },
+          "title": {
+            "type": "string",
+            "description": "선택. 링크 표시 제목 [가정]",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "step",
+          "item",
+          "link"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "additional_research_requests": {
+      "type": "array",
+      "description": "브리프에 없어 본문에 넣지 못한 사실에 대한 추가 조사 요청",
+      "items": {
+        "type": "string",
+        "description": "추가 조사 요청",
+        "minLength": 1
+      }
+    },
+    "fixes_applied": {
+      "type": "array",
+      "description": "1차 검증 조건부 승인의 required_fixes 를 이행했음을 항목별로 표시",
+      "items": {
+        "type": "string",
+        "description": "이행한 수정 지시",
+        "minLength": 1
+      }
+    },
+    "track_updates": {
+      "type": "object",
+      "description": "트랙 실행 갱신 블록. 트랙 실행에만 넣는다(pages.json 에는 run_type 이 없으므로 이 조건은 퍼블리셔 스크립트가 target.json/research.json 의 run_type 으로 검사한다)",
+      "properties": {
+        "stage_page": {
+          "type": "string",
+          "description": "갱신한 단계 페이지 경로(docs/tracks/<slug>/stage-<단계>-….md). 단계 번호의 상한은 config/tracks/<slug>.yaml 의 stages 로 스크립트가 검사한다",
+          "pattern": "^docs/tracks/[a-z0-9-]+/stage-[1-9][0-9]?-[a-z0-9-]+\\.md$"
+        },
+        "ontology_draft_version": {
+          "type": "string",
+          "description": "온톨로지 초안 버전(문자열). v0 시드는 \"0\", 검증이 승인한 변경을 반영할 때마다 \"0.1\", \"0.2\", … 로 올린다(ontology-draft.md 프런트매터 ontology_version 과 같은 값, templates/ontology-draft.md 의 표기). 변경이 없으면 현재 버전을 그대로 쓴다(첫 트랙 실행에서 변경이 없으면 \"0\") [가정]",
+          "pattern": "^\\d+(\\.\\d+)?$"
+        },
+        "backlog_updates": {
+          "type": "array",
+          "description": "질문 백로그 갱신(답한 질문의 상태와 링크, 새 질문 등록). 8.2 백로그 항목 형식의 '답한 실행 id'(data/tracks/<slug>/backlog.json 의 answered_run_id)는 별도 필드 없이 status 가 답함으로 바뀌는 항목에 이 파일의 run_id 를 퍼블리셔가 채우고, 이미 답함인 항목의 값은 유지한다 [가정]",
+          "items": {
+            "type": "object",
+            "description": "백로그 항목 갱신 하나. 새 질문은 question·stage·origin 을 함께 넣는다",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "백로그 질문 id q<단계>-<두자리>(단계는 1 이상, 상한은 트랙 정의의 stages)",
+                "pattern": "^q[1-9][0-9]?-\\d{2}$"
+              },
+              "status": {
+                "type": "string",
+                "description": "백로그 상태(8.2)",
+                "enum": [
+                  "열림",
+                  "조사 중",
+                  "답함",
+                  "보류",
+                  "폐기"
+                ]
+              },
+              "answer_link": {
+                "description": "답이 실린 페이지 경로(앵커 허용). 없으면 null",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^docs/[A-Za-z0-9_./-]+\\.md(#\\S+)?$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "question": {
+                "type": "string",
+                "description": "선택. 새 질문일 때 질문 문장 [가정]",
+                "minLength": 1
+              },
+              "stage": {
+                "type": "integer",
+                "description": "선택. 새 질문일 때 단계(1 이상, 상한은 트랙 정의의 stages 로 스크립트가 검사) [가정]",
+                "minimum": 1
+              },
+              "origin": {
+                "type": "string",
+                "description": "선택. 새 질문일 때 제기 근거(8.2 항목 형식 그대로: finding id 또는 '사용자'). finding id 는 실행마다 f1 부터 다시 시작하므로, 퍼블리셔가 data/tracks/<slug>/backlog.json 에 저장할 때 이 파일의 run_id 를 origin_run_id 로 함께 기록한다(pipeline 담당 요청). '앞 단계로 되돌아온 질문'은 별도 origin 값이 아니라 origin_run_id 실행의 단계보다 stage 가 작은 항목으로 퍼블리셔가 표시한다 [가정]",
+                "pattern": "^(f[0-9]+|사용자)$"
+              }
+            },
+            "required": [
+              "id",
+              "status",
+              "answer_link"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "log_entry": {
+          "type": "string",
+          "description": "트랙 로그에 넣을 실행 기록(답한 질문, 새 질문, 온톨로지 변경, 완료 조건 평가, 세부영역 반영 제안, 다음 실행 제안)",
+          "minLength": 1
+        },
+        "overview_progress": {
+          "type": "string",
+          "description": "트랙 개요 '단계 진행 현황'에 반영할 내용",
+          "minLength": 1
+        },
+        "stage_transition": {
+          "type": "object",
+          "description": "선택. 단계 전환 [가정]",
+          "properties": {
+            "to_stage": {
+              "type": "integer",
+              "description": "전환할 단계(1 이상, 상한은 config/tracks/<slug>.yaml 의 stages 로 스크립트가 검사)",
+              "minimum": 1
+            },
+            "reason": {
+              "type": "string",
+              "description": "전환 사유(검증의 stage_transition_approved 가 true 일 때만)",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "to_stage",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "stage_page",
+        "ontology_draft_version",
+        "backlog_updates",
+        "log_entry",
+        "overview_progress"
+      ],
+      "additionalProperties": false
+    },
+    "area_reflection_proposals": {
+      "type": "array",
+      "description": "트랙 결과를 세부영역 페이지에 반영할 제안. 트랙 실행에만 넣는다",
+      "items": {
+        "type": "object",
+        "description": "세부영역 반영 제안 하나(반영은 다음 해당 영역 실행에서)",
+        "properties": {
+          "area_no": {
+            "type": "integer",
+            "description": "반영할 세부영역 번호",
+            "minimum": 1,
+            "maximum": 28
+          },
+          "section": {
+            "type": "string",
+            "description": "반영할 절. 세부영역 페이지 H2 문자열(사양서 5.4, templates/area.md, pipeline/checks/protect_source.py AREA_SECTIONS 와 글자 단위로 같음. 괄호 설명 포함) 13개 중 분류원문 1·2절과 자동 12절을 뺀 10개 [가정]",
+            "enum": [
+              "3. 왜 중요한가",
+              "4. 핵심 개념과 용어",
+              "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+              "6. 대표 접근법과 기술",
+              "7. 관련 표준·프레임워크·오픈소스",
+              "8. 대표 연구와 자료",
+              "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+              "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+              "11. 열린 질문",
+              "13. 참고 자료 (각주)"
+            ]
+          },
+          "summary": {
+            "type": "string",
+            "description": "반영할 내용 요약",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "area_no",
+          "section",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "standards_updates": {
+      "type": "array",
+      "description": "선택. 표준·프레임워크 목록(docs/standards/index.md) 갱신 항목 [가정]",
+      "items": {
+        "type": "object",
+        "description": "표준·프레임워크 목록 갱신 항목 하나",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "표준·프레임워크·오픈소스·평가 프로그램 이름",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "description": "종류",
+            "enum": [
+              "표준",
+              "오픈소스",
+              "평가 프로그램",
+              "프레임워크"
+            ]
+          },
+          "org": {
+            "type": "string",
+            "description": "발행·운영 기관",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "description": "URL",
+            "pattern": "^https?://\\S+$",
+            "format": "uri"
+          },
+          "related_areas": {
+            "type": "array",
+            "description": "관련 세부영역 번호",
+            "items": {
+              "type": "integer",
+              "description": "세부영역 번호",
+              "minimum": 1,
+              "maximum": 28
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "summary": {
+            "type": "string",
+            "description": "한두 문장 요약",
+            "minLength": 1
+          },
+          "ref_id": {
+            "type": "string",
+            "description": "선택. 대응하는 참고문헌 id [가정]",
+            "pattern": "^ref-\\d{3,}$"
+          }
+        },
+        "required": [
+          "name",
+          "kind",
+          "org",
+          "url",
+          "related_areas",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "outline": {
+      "type": "array",
+      "description": "본문을 쓰기 전에 세운 절별 목차와 글자 예산(1-3). 세부영역 페이지는 3~11절 각각을 적는다. summary 는 그 절이 분량 초과로 주제 페이지로 분리될 때 원 페이지에 남길 1~2문장 요약이다",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "section",
+          "budget_chars",
+          "summary"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "budget_chars": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "summary": {
+            "type": "string"
+          },
+          "planned_findings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "pages",
+    "changelog_entry",
+    "index_updates",
+    "glossary_updates",
+    "reference_updates",
+    "open_question_updates",
+    "flow_matrix_updates",
+    "additional_research_requests",
+    "fixes_applied"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "returned": {
+      "description": "에이전트 반환값용 변형. 루트 스키마 전체에 더해 pages[] 모든 항목에 content 를 요구한다. agent_runner 는 스토리텔러 반환값을 이 변형으로 검사하고(예: Draft202012Validator(schema).evolve(schema=schema['$defs']['returned'])), 불일치는 스키마 불일치와 같이 처리한다(7.3). 저장 사본(runs/<run_id>/pages.json)은 루트 스키마로 검사한다 [가정]",
+      "allOf": [
+        {
+          "$ref": "#"
+        },
+        {
+          "properties": {
+            "pages": {
+              "items": {
+                "required": [
+                  "content"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

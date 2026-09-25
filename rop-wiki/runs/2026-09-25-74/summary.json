@@ -1,0 +1,144 @@
+{
+  "run_id": "2026-09-25-74",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 3,
+    "question_ids": [
+      "q3-03"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "0b120e4",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2176.4,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 3 | q3-03 답함(후보 없음·후보 여럿일 때 되묻기 범위, 신뢰도 low), 새 질문 3건, 초안 v0.7 유지 | run 2026-09-25-74",
+  "notes": [
+    "참고문헌 생성: references/ref-656.md",
+    "참고문헌 생성: references/ref-657.md",
+    "참고문헌 생성: references/ref-658.md",
+    "참고문헌 생성: references/ref-659.md",
+    "참고문헌 생성: references/ref-660.md",
+    "참고문헌 생성: references/ref-661.md",
+    "참고문헌 생성: references/ref-662.md",
+    "참고문헌 생성: references/ref-663.md",
+    "참고문헌 생성: references/ref-664.md",
+    "참고문헌 생성: references/ref-665.md",
+    "참고문헌 생성: references/ref-666.md",
+    "용어집 생성: glossary/contrastive-explanation.md",
+    "용어집 생성: glossary/irreducible-infeasible-subset.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 11,
+    "standards": 2,
+    "open_questions": 1,
+    "flow_cells": 5,
+    "backlog": 4,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 18:04:45 KST",
+  "usage": {
+    "input_tokens": 56,
+    "cache_creation_input_tokens": 1766371,
+    "cache_read_input_tokens": 7990184,
+    "output_tokens": 261794,
+    "cost_usd": 21.7116,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.3041,
+        "output_tokens": 38020,
+        "cache_read_input_tokens": 5583761,
+        "cache_creation_input_tokens": 368623
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.2805,
+        "output_tokens": 22897,
+        "cache_read_input_tokens": 1880569,
+        "cache_creation_input_tokens": 403264
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 8.2167,
+        "output_tokens": 193359,
+        "cache_read_input_tokens": 429416,
+        "cache_creation_input_tokens": 532949
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 3.8256,
+        "output_tokens": 6526,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 459976
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/task-model-draft.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 11,
+  "cross_checked_findings": 0
+}

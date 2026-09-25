@@ -1,0 +1,73 @@
+{
+  "run_id": "2026-09-24-02",
+  "pages": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "질문 q1-02 답함, 조사 결과·후속 질문 갱신"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "개념 '실행 인터페이스' 추가([가설]), 버전 0.1"
+    }
+  ],
+  "changelog_entry": "2026-09-24 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-02 답함, 온톨로지 초안 0.1 | run 2026-09-24-02",
+  "index_updates": {
+    "home_recent": "2026-09-24 — 매뉴얼 기반 로봇 기능 온톨로지: 단계 1 질문 1건 답함",
+    "category_recent": "2026-09-24 — 5. 로봇 능력·작업 온톨로지: 트랙 단계 1 결과 반영 제안"
+  },
+  "glossary_updates": [],
+  "reference_updates": [],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "IEEE 1872 CORA 의 개념 목록을 발행 기관 요약 자료로 확인"
+  ],
+  "fixes_applied": [],
+  "track_updates": {
+    "stage_page": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+    "ontology_draft_version": "0.1",
+    "backlog_updates": [
+      {
+        "id": "q1-02",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-01"
+      },
+      {
+        "id": "q1-07",
+        "status": "열림",
+        "answer_link": null,
+        "question": "Fleet Adapter 가 기술하는 기능 항목은 문서화된 스키마가 있는가?",
+        "stage": 1,
+        "origin": "f1"
+      }
+    ],
+    "log_entry": "답한 질문: q1-02 / 새 질문: q1-07 / 온톨로지 변경: 개념 '실행 인터페이스' 추가(0.1) / 완료 조건: 미충족(비교표 미작성) / 세부영역 반영 제안: 9. 로봇·제조사 관제 연동 1건 / 다음 실행: q1-01, q1-03",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 6, 답함 1, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 9,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "Open-RMF Fleet Adapter 의 기능 기술 방식을 어댑터 사례로 추가한다."
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "Open-RMF",
+      "kind": "오픈소스",
+      "org": "Open Robotics",
+      "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+      "related_areas": [
+        5,
+        9,
+        10
+      ],
+      "summary": "제조사별 Fleet Adapter 와 설비 인터페이스로 로봇·문·승강기를 연결하는 오픈소스 프레임워크이다.",
+      "ref_id": "ref-004"
+    }
+  ]
+}

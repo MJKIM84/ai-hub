@@ -1,0 +1,133 @@
+{
+  "duration_api_ms": 25338,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.9885187999999999,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 114325,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 2934,
+    "output_tokens_details": {
+      "thinking_tokens": 1462
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 114325,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2934,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 114325,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 114325
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 2934,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 114325,
+      "webSearchRequests": 0,
+      "costUSD": 0.9885187999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1462,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-64\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). ref-009, ref-010, ref-031, ref-610~ref-613 은 raw.githubusercontent.com 과 입력의 원문 텍스트로 직접 확인했다. 확인 27건, 미확인 3건(f11, f13, f20), 교차 확인 6건(f14, f15, f16, f17, f19, f21). 강등: f11 사실 → 추정, f20 사실 → 추정. 삭제: f13(벤더 주장, 출처 미확인). 원문 미열람 출처: ref-555, ref-471, ref-615, ref-616, ref-617, ref-618, ref-619, ref-620, ref-621, ref-622, ref-623, ref-624. 주의: 접근 제어의 기술 근거(SROS 2, Open-RMF, VDA 5050, Mosquitto)는 각각 공식 문서 한 건씩이다. 규제 주장(EU 기계 규정, CRA, 개인정보 보호법)은 검색 요약을 기준으로 했다. EU 기계 규정 부속서 III 1.1.9 의 적용일이 CRA 에 맞춰 연기되는지는 확정되지 않아 열린 질문으로 올렸다. ROP 가 직접 맡는 범위(9절)와 외부 유지보수 권한(분류 원문 질문)에 대한 답은 모두 이 위키의 [추정]이다. oq-043, oq-056, oq-082 는 해결로 인정하지 않는다. 정정 요청 없음. / 2차 통과. 재검증 결과, 직전 2차 수정 지시 3건이 모두 이행됐다. 첫째, 7절 첫 문장을 [의견]으로 바꾸고 ref-031 각주를 뺐다(세부영역 페이지와 분리 페이지 모두). 둘째, 8절의 학술 논문 서술을 'IEC 62443 구역·도관 논문(ref-618) 한 건, 물류 로봇 보안을 직접 다룬 학술 연구는 확인하지 못함'으로 바로잡았다. 셋째, NIST SP 800-82 Rev. 3 행과 ref-615 요약에서 '산업용 IoT'를 뺐다. 1차 수정 지시 15건도 계속 반영돼 있다. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과). 흐름 매트릭스는 출하 6칸·입고 4칸으로 시나리오 표와 맞는다. 범위 경계 위반 없음. 참고: 4절 등 연결 문장에 붙은 [의견]은 이 위키의 정리임을 문장에 밝히면 더 명확하다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-64",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). ref-009, ref-010, ref-031, ref-610~ref-613 은 raw.githubusercontent.com 과 입력의 원문 텍스트로 직접 확인했다. 확인 27건, 미확인 3건(f11, f13, f20), 교차 확인 6건(f14, f15, f16, f17, f19, f21). 강등: f11 사실 → 추정, f20 사실 → 추정. 삭제: f13(벤더 주장, 출처 미확인). 원문 미열람 출처: ref-555, ref-471, ref-615, ref-616, ref-617, ref-618, ref-619, ref-620, ref-621, ref-622, ref-623, ref-624. 주의: 접근 제어의 기술 근거(SROS 2, Open-RMF, VDA 5050, Mosquitto)는 각각 공식 문서 한 건씩이다. 규제 주장(EU 기계 규정, CRA, 개인정보 보호법)은 검색 요약을 기준으로 했다. EU 기계 규정 부속서 III 1.1.9 의 적용일이 CRA 에 맞춰 연기되는지는 확정되지 않아 열린 질문으로 올렸다. ROP 가 직접 맡는 범위(9절)와 외부 유지보수 권한(분류 원문 질문)에 대한 답은 모두 이 위키의 [추정]이다. oq-043, oq-056, oq-082 는 해결로 인정하지 않는다. 정정 요청 없음. / 2차 통과. 재검증 결과, 직전 2차 수정 지시 3건이 모두 이행됐다. 첫째, 7절 첫 문장을 [의견]으로 바꾸고 ref-031 각주를 뺐다(세부영역 페이지와 분리 페이지 모두). 둘째, 8절의 학술 논문 서술을 'IEC 62443 구역·도관 논문(ref-618) 한 건, 물류 로봇 보안을 직접 다룬 학술 연구는 확인하지 못함'으로 바로잡았다. 셋째, NIST SP 800-82 Rev. 3 행과 ref-615 요약에서 '산업용 IoT'를 뺐다. 1차 수정 지시 15건도 계속 반영돼 있다. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과). 흐름 매트릭스는 출하 6칸·입고 4칸으로 시나리오 표와 맞는다. 범위 경계 위반 없음. 참고: 4절 등 연결 문장에 붙은 [의견]은 이 위키의 정리임을 문장에 밝히면 더 명확하다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 15498,
+  "type": "result",
+  "duration_ms": 25444,
+  "uuid": "0af41076-4ce5-433e-96c2-be6888ef0a05",
+  "ttft_stream_ms": 1639,
+  "time_to_request_ms": 74,
+  "first_content_frame_ms": 1640,
+  "time_to_request_from_spawn_ms": 8633646,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790321729797.885,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 27.3
+}

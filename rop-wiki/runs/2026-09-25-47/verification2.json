@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-09-25-47",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 통과(재검증). 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증했다. GitHub 공식 저장소 원문(IDTA 02047 템플릿 JSON·README, 저장소 README)은 raw 경로로 열어 대조했다. 확인 10건, 미확인 0건, 교차 확인 0건이다. 모든 사실이 발행 기관 한 곳의 자료에 기댄다. 강등: f2 사실 → 추정. 원문 미열람 출처: ref-198, ref-183, ref-182, ref-184, ref-185, ref-437, ref-438. 정정: 1차 노트가 ref-243 을 원문 미열람 출처에 넣은 것은 잘못이었다. ref-243 은 실행 2026-09-25-35 에서 원문을 열었으며, 재검증에서 각주 표시와 reference_updates 가 원문 열람 상태로 되돌려진 것을 확인했다. 주의: 템플릿 JSON 은 DecelerationMax 에서 잘려 충전·배터리 요소를 원문으로 확인하지 못했다. oq-060 은 해소하지 않았다. IDTA 02003 은 1.2 판, IEC 61360-7 은 2024 판 기준이며, 더 새 판(2.0.1, EN IEC 61360-7:2026)이 있다. 새 참고문헌 id ref-437~ref-439 는 현재 docs 트리(ref-436 까지)의 id 와 겹치지 않는다. ref-228 각주의 미열람 표시와 참고문헌 목록의 원문 열람 '예'가 서로 맞지 않는 문제는 이번 실행 이전부터 있던 것이므로 다음 갱신 때 정리한다. 정정 요청: 없음. 온톨로지 변경 승인: 없음 / 거부: 없음. 온톨로지는 v0.3 을 유지한다. 백로그 중복: 없음(q4-15 는 단계 4 에 새로 등록). 단계 완료 조건: 미충족(부족: 모델·표준 비교표의 미조사 칸, ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건 미반영). 단계 전환: 미승인(막힌 질문 q1-09). q1-09 는 네 번의 실행이 같은 네트워크 제약에 막혔다. 사용자가 ECLASS·IEC CDD 조회 결과를 inbox/sources 로 넣어 줄지, 사유와 재개 조건을 적어 보류할지 결정해야 한다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 13건과 직전 2차 수정 지시 3건(ref-243 각주 표시 복원, reference_updates 의 ref-243 source_unopened false 와 summary 수정, fixes_applied·additional_research_requests 정리)이 모두 이행됐다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "run_id": "2026-09-25-04",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 1,
+    "question_ids": [
+      "q1-01"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 17,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "0474854",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 17
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2015.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 1 | q1-01 답함(자연어 지시 분해 접근 여섯 유형), 후속 질문 q1-05, 업무 분해·배정 설계 초안 v0.1(로봇 팀 추가) | run 2026-09-25-04",
+  "notes": [
+    "참고문헌 생성: references/ref-087.md",
+    "참고문헌 생성: references/ref-088.md",
+    "참고문헌 생성: references/ref-053.md",
+    "참고문헌 생성: references/ref-054.md",
+    "참고문헌 생성: references/ref-055.md",
+    "참고문헌 생성: references/ref-056.md",
+    "참고문헌 생성: references/ref-057.md",
+    "참고문헌 생성: references/ref-058.md",
+    "참고문헌 생성: references/ref-059.md",
+    "참고문헌 생성: references/ref-061.md",
+    "참고문헌 생성: references/ref-089.md",
+    "참고문헌 생성: references/ref-090.md",
+    "참고문헌 생성: references/ref-091.md",
+    "참고문헌 생성: references/ref-092.md",
+    "참고문헌 생성: references/ref-093.md",
+    "참고문헌 생성: references/ref-094.md",
+    "참고문헌 생성: references/ref-095.md",
+    "용어집 생성: glossary/task-decomposition.md",
+    "용어집 생성: glossary/behavior-tree.md",
+    "용어집 생성: glossary/linear-temporal-logic.md",
+    "온톨로지 초안 버전 v0 → v0.1 (버전 이력 추가)",
+    "거절한 정정 요청 corr-002 가 inbox/corrections.md 에 없다"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 17,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 5,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 10:52:48 KST",
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 1315221,
+    "cache_read_input_tokens": 3552343,
+    "output_tokens": 253774,
+    "cost_usd": 17.0401,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.5477,
+        "output_tokens": 26568,
+        "cache_read_input_tokens": 2412756,
+        "cache_creation_input_tokens": 133559
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.9474,
+        "output_tokens": 18782,
+        "cache_read_input_tokens": 722963,
+        "cache_creation_input_tokens": 151062
+      },
+      "storyteller": {
+        "calls": 4,
+        "cost_usd": 8.8029,
+        "output_tokens": 193596,
+        "cache_read_input_tokens": 252068,
+        "cache_creation_input_tokens": 610059
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 3.5994,
+        "output_tokens": 14055,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 410974
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0656,
+        "output_tokens": 262,
+        "cache_read_input_tokens": 3302,
+        "cache_creation_input_tokens": 4560
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0339,
+        "output_tokens": 254,
+        "cache_read_input_tokens": 3375,
+        "cache_creation_input_tokens": 3511
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.0432,
+        "output_tokens": 257,
+        "cache_read_input_tokens": 5571,
+        "cache_creation_input_tokens": 1496
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 7,
+  "cross_checked_findings": 0
+}

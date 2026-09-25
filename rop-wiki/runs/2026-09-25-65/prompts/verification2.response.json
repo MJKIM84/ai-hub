@@ -1,0 +1,143 @@
+{
+  "duration_api_ms": 64109,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.7138468,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 446291,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 6414,
+    "output_tokens_details": {
+      "thinking_tokens": 4520
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 446291,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 6414,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 446291,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 446291
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 6414,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 446291,
+      "webSearchRequests": 0,
+      "costUSD": 3.7138468,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4520,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-65\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(raw.githubusercontent.com 만 열림)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-079, ref-348, ref-413, ref-419, ref-461, ref-647, ref-648, ref-649, ref-650, ref-229, ref-038, ref-653, ref-654, ref-655, ref-315, ref-314, ref-658. 브리프 기록 불일치: ref-229 은 sources 에 미열람(fetched false)으로 적혔으나 자체 한계 문구는 raw 로 열었다고 적음, ref-031 은 fetched_via 가 inbox 여야 함. 주의: q3-03 의 답(요구–제공 능력 매칭, 로봇 능력 또는 설비 연동 선택 조건, 로봇별 통행 가능 부분 그래프와 현재 상태 층 분리)은 확인된 사실을 이 위키가 묶은 추정이며 이를 제시한 단일 출처는 없다. 모든 핵심 사실은 발행 주체 한 곳의 자료다. f5 는 Graph.hpp 파일 범위로 한정해 읽어야 한다. KS B 7317 의 단차·틈새 수치는 미확인이다. 온톨로지 변경 승인: 문 속성 자동 구동 여부·장애인 접근 가능(f8), 계단 속성 단 높이·디딤판 길이·단 수(f9) / 거부: 개념 '통과 요구 조건'(f8·f9·f11·f14 → 6절 미해결 모델링 질문). 단계 완료 조건: 미충족(부족: 아이디어 3 5절 핵심 구성 요소 중 시뮬레이션 초기값, 사용자에게 제안하는 실험 계획). 단계 전환: 미승인(막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09·q3-10 열림). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 16건 이행 확인(f5 파일 범위, f7 동적 엣지, f9 사실·추정 분리, f11 사람 대상 명시, f19 환경 조건·저자, ref-655 발행일, ref-658 저자, ref-031 열람 경로, 원문 미열람 표기, 기존 문장 재사용, 용어집 링크, 통과 가능성 정의, 승인 변경 2건 반영·거부 1건 6절 이동, 10. 설비·건물 시스템 연동 반영 제안, 6절 전환 표기). 퍼블리셔 확인 사항: 패치로 고칠 수 없는 H2 밖 표기 두 곳을 코드가 맞춰야 한다 — 공간 그래프 스키마 초안 H1 '(v0.7)' → '(v0.8)'(프런트매터 ontology_version 0.8·JSON 과 일치시킴), 단계 3 페이지 H1 아래 단계 상태 줄 '답한 질문: 2건' → '3건'(열린 질문 7건은 그대로 맞음). 맞추지 못하면 사용자 결정 항목에 올린다. 이전 실행이 쓴 절(스키마 초안 7절 끝, 아이디어 페이지 3·4절)의 ref-079·ref-413·ref-419 각주에는 이번 실행의 원문 미열람 표기가 없어 페이지 사이 표기가 다르다(다음 갱신 실행에서 통일).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-65",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(raw.githubusercontent.com 만 열림)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-079, ref-348, ref-413, ref-419, ref-461, ref-647, ref-648, ref-649, ref-650, ref-229, ref-038, ref-653, ref-654, ref-655, ref-315, ref-314, ref-658. 브리프 기록 불일치: ref-229 은 sources 에 미열람(fetched false)으로 적혔으나 자체 한계 문구는 raw 로 열었다고 적음, ref-031 은 fetched_via 가 inbox 여야 함. 주의: q3-03 의 답(요구–제공 능력 매칭, 로봇 능력 또는 설비 연동 선택 조건, 로봇별 통행 가능 부분 그래프와 현재 상태 층 분리)은 확인된 사실을 이 위키가 묶은 추정이며 이를 제시한 단일 출처는 없다. 모든 핵심 사실은 발행 주체 한 곳의 자료다. f5 는 Graph.hpp 파일 범위로 한정해 읽어야 한다. KS B 7317 의 단차·틈새 수치는 미확인이다. 온톨로지 변경 승인: 문 속성 자동 구동 여부·장애인 접근 가능(f8), 계단 속성 단 높이·디딤판 길이·단 수(f9) / 거부: 개념 '통과 요구 조건'(f8·f9·f11·f14 → 6절 미해결 모델링 질문). 단계 완료 조건: 미충족(부족: 아이디어 3 5절 핵심 구성 요소 중 시뮬레이션 초기값, 사용자에게 제안하는 실험 계획). 단계 전환: 미승인(막힌 질문 q3-04·q3-05·q3-06·q3-07·q3-08·q3-09·q3-10 열림). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 16건 이행 확인(f5 파일 범위, f7 동적 엣지, f9 사실·추정 분리, f11 사람 대상 명시, f19 환경 조건·저자, ref-655 발행일, ref-658 저자, ref-031 열람 경로, 원문 미열람 표기, 기존 문장 재사용, 용어집 링크, 통과 가능성 정의, 승인 변경 2건 반영·거부 1건 6절 이동, 10. 설비·건물 시스템 연동 반영 제안, 6절 전환 표기). 퍼블리셔 확인 사항: 패치로 고칠 수 없는 H2 밖 표기 두 곳을 코드가 맞춰야 한다 — 공간 그래프 스키마 초안 H1 '(v0.7)' → '(v0.8)'(프런트매터 ontology_version 0.8·JSON 과 일치시킴), 단계 3 페이지 H1 아래 단계 상태 줄 '답한 질문: 2건' → '3건'(열린 질문 7건은 그대로 맞음). 맞추지 못하면 사용자 결정 항목에 올린다. 이전 실행이 쓴 절(스키마 초안 7절 끝, 아이디어 페이지 3·4절)의 ref-079·ref-413·ref-419 각주에는 이번 실행의 원문 미열람 표기가 없어 페이지 사이 표기가 다르다(다음 갱신 실행에서 통일).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 50478,
+  "type": "result",
+  "duration_ms": 64290,
+  "uuid": "b3c2e541-acca-439d-8a56-589ad9fee72f",
+  "ttft_stream_ms": 6163,
+  "time_to_request_ms": 86,
+  "first_content_frame_ms": 6163,
+  "time_to_request_from_spawn_ms": 7792619,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790320888677.0505,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 66.3
+}

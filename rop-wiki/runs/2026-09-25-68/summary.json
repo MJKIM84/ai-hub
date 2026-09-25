@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-09-25-68",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 27,
+    "area_name": "27. AI·학습·적응과 모델 운영",
+    "category": "G. 안전·보안·지능·거버넌스"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "2f8a546",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 12,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2095.8,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 27. AI·학습·적응과 모델 운영 | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법, 출처 19건 원문 미열람) | run 2026-09-25-68",
+  "notes": [
+    "참고문헌 생성: references/ref-617.md",
+    "참고문헌 생성: references/ref-618.md",
+    "참고문헌 생성: references/ref-619.md",
+    "참고문헌 생성: references/ref-620.md",
+    "참고문헌 생성: references/ref-621.md",
+    "참고문헌 생성: references/ref-622.md",
+    "참고문헌 생성: references/ref-623.md",
+    "참고문헌 생성: references/ref-624.md",
+    "참고문헌 생성: references/ref-625.md",
+    "참고문헌 생성: references/ref-626.md",
+    "참고문헌 생성: references/ref-627.md",
+    "용어집 생성: glossary/conformal-prediction.md",
+    "용어집 생성: glossary/artificial-intelligence-management-system.md",
+    "용어집 생성: glossary/high-impact-ai.md",
+    "용어집 생성: glossary/model-registry.md",
+    "세부영역 반영 제안 17건을 반영으로 표시했다(27. AI·학습·적응과 모델 운영, 실행 2026-09-25-68)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 11,
+    "standards": 6,
+    "open_questions": 3,
+    "flow_cells": 7,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 16:50:43 KST",
+  "usage": {
+    "input_tokens": 60,
+    "cache_creation_input_tokens": 885693,
+    "cache_read_input_tokens": 2852543,
+    "output_tokens": 207495,
+    "cost_usd": 13.0259,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 3.0824,
+        "output_tokens": 53478,
+        "cache_read_input_tokens": 1384630,
+        "cache_creation_input_tokens": 124009
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.9033,
+        "output_tokens": 18892,
+        "cache_read_input_tokens": 1106261,
+        "cache_creation_input_tokens": 109555
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 6.0791,
+        "output_tokens": 124377,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 444217
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.8764,
+        "output_tokens": 9756,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 206353
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 0,
+  "cross_checked_findings": 0
+}

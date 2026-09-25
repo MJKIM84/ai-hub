@@ -1,0 +1,799 @@
+{
+  "run_id": "2026-09-25-99",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "3. 조사 결과 (q5-02 소제목 추가)",
+      "budget_chars": 5200,
+      "summary": "확인한 자료를 이 위키가 묶으면 가상 현장 시험은 지시·실행·교란·반복의 네 층 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-738][^ref-407][^ref-406][^ref-528]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 2200,
+      "summary": "가상 현장 시험의 부품은 공개 자료로 확인되지만 네 층 구성은 이 위키의 종합이며 물류 지시 조건 근거가 없다. [추정][^ref-738][^ref-407]",
+      "planned_findings": [
+        "f18",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "6. 검증 방법 (검증 절차 소절 추가)",
+      "budget_chars": 2600,
+      "summary": "가상 현장·가상 로봇 시나리오 시험을 네 층으로 두고 ROP 쪽 결정만 재는 구성이 선택지로 보인다. [추정][^ref-738][^ref-407][^ref-406]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f15",
+        "f18",
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "section": "6. 살아있는 산출물 링크",
+      "budget_chars": 400,
+      "summary": "아이디어 2 항목에 q5-02 답(검증 절차 소절)을 반영하고 초안 변경 없음 목록에 실행 2026-09-25-99 를 더한다."
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q5-02 답함(3절 {#q5-02} 소제목 신설: 네 층 가상 시험 구성·한계), 후속 질문 q5-13~q5-15, 2·4·5·6·8·9절 갱신, 7절에 22. 시뮬레이션·예측용 디지털 트윈 추가. 2차: 단계 상태 줄을 열린 질문 12건·답한 질문 2건으로 고치고 SafeAgentBench 10% 출처 문장을 README·초록으로 나눠 고침(상태 줄 때문에 전체 content 로 보냄)"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절에 '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절 신설(네 층 구성 표·Mermaid 도식, f18~f21 추정, 근거 f1·f2·f4·f7(강등)·f8·f9·f10·f15), 새 각주 11건(2차 재실행에서 변경 없음)",
+      "patches": [
+        {
+          "section": "6. 검증 방법",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-592",
+              "ref-593",
+              "ref-594",
+              "ref-595",
+              "ref-596",
+              "ref-598",
+              "ref-611",
+              "ref-612",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-417",
+              "ref-586",
+              "ref-674",
+              "ref-675",
+              "ref-676",
+              "ref-711",
+              "ref-677",
+              "ref-712",
+              "ref-678",
+              "ref-656",
+              "ref-657",
+              "ref-039",
+              "ref-658",
+              "ref-659",
+              "ref-660",
+              "ref-661",
+              "ref-662",
+              "ref-663",
+              "ref-664",
+              "ref-041",
+              "ref-126",
+              "ref-127",
+              "ref-680",
+              "ref-537",
+              "ref-681",
+              "ref-682",
+              "ref-683",
+              "ref-684",
+              "ref-373",
+              "ref-685",
+              "ref-695",
+              "ref-696",
+              "ref-697",
+              "ref-698",
+              "ref-699",
+              "ref-700",
+              "ref-701",
+              "ref-702",
+              "ref-703",
+              "ref-713",
+              "ref-714",
+              "ref-715",
+              "ref-716",
+              "ref-717",
+              "ref-730",
+              "ref-731",
+              "ref-732",
+              "ref-733",
+              "ref-734",
+              "ref-623",
+              "ref-735",
+              "ref-736",
+              "ref-737",
+              "ref-406",
+              "ref-528",
+              "ref-738",
+              "ref-739",
+              "ref-740",
+              "ref-741",
+              "ref-407",
+              "ref-743",
+              "ref-744",
+              "ref-745",
+              "ref-746"
+            ]
+          },
+          "content": "\n### 검증 절차: 가상 현장·가상 로봇 시나리오 시험\n\n이 절 머리와 평가 지표 소절 끝의 '검증 절차(q5-02)는 아직 조사되지 않았다'는 서술은 실행 2026-09-25-98 기준이며, 실행 2026-09-25-99 에서 [단계 5 의 q5-02](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02)에 답했다. 가설 판정(q5-03)과 사용자에게 제안하는 실험 계획은 아직 조사되지 않았다. 이 시험이 산출하는 지표는 위 [평가 지표](#평가-지표) 소절의 네 층 지표다.\n\n확인한 자료를 이 위키가 묶으면, 가상 현장 시험은 지시 층·실행 층·교란 층·반복 층의 네 층으로 구성하는 것이 근거가 가장 많은 것으로 보인다. [추정][^ref-738][^ref-407][^ref-406][^ref-528][^ref-031][^ref-746] 네 층을 한 번에 제시한 출처는 없고, 근거 조건이 소매·항공 대화, 개인 저장소의 가상 AGV, 호텔·클리닉·제조 데모, 제조 키팅이라 물류 지시 조건이 아니어서 신뢰도가 낮다.\n\n| 층 | 하는 일 | 근거 사례 |\n|---|---|---|\n| 지시 층 | LLM 모의 관리자가 시나리오별 목표로 지시하고 끝 상태를 목표 상태와 비교해 채점 | τ-bench |\n| 실행 층 | ROP 를 VDA 5050 가상 로봇이나 Open-RMF 시뮬레이션(문·승강기·워크셀)에 표준 인터페이스로 연결 | vda5050-sim, Open-RMF 시뮬레이션 |\n| 교란 층 | 시작 시각 또는 발생 조건을 정한 교란(고장·통신 손실·비상정지·긴급 주문) 주입 | ARIAC, vda5050-sim |\n| 반복 층 | 같은 시나리오를 여러 번 돌려 pass^k 와 평가 지표를 작업 상태 기록에서 산출 | τ-bench, Atil 외 |\n\n```mermaid\nflowchart LR\n  simuser[LLM 모의 관리자] -->|채팅 지시| chatbot[챗봇]\n  chatbot -->|작업 요청| rop[ROP 배정·일정]\n  rop -->|표준 인터페이스| virt[가상 로봇·가상 현장]\n  fault[교란 주입] --> virt\n  virt -->|상태 보고| rop\n  rop -->|작업 상태 기록| score[끝 상태 채점과 반복 시행 분포]\n  simuser -.->|목표 상태| score\n```\n\n- **가상 현장의 모사 범위**: Open-RMF 공식 도서의 시뮬레이션 장은 문·여러 층 승강기·워크셀을 모사해 다중 플릿을 시험하게 하지만, slotcar 로봇은 장애물 없는 경로를 가정하고 개별 주행보다 교통 관리 시험을 우선한다(확인일 2026-09-25). [사실][^ref-406]\n- **가상 로봇**: vda5050-sim 은 README 가 VDA 5050 3.0.0 준수를 표명하는(저장소 자기 표명, 적합성 시험 결과 미확인) 가상 플릿에 로봇별 확률로 연결 끊김·오류·비상정지 등을 주입하지만 이동은 노드 사이 직선 운동학뿐이다(개인 저장소). [사실][^ref-407]\n- **교란 주입**: [장애 주입](../glossary/fault-injection.md)(Fault Injection)의 예로, ARIAC 문서(2025 판 기준)는 컨베이어 고장·전압 시험기 고장·고우선순위 주문을 시작 시각(START_TIME)으로, 진공 도구 고장을 잡기 시도 횟수(GRASP_OCCURRENCE)로 발생시킨다(제조 키팅 조건). [추정][^ref-528]\n- **모의 사용자와 채점**: τ-bench 는 LLM 이 모사한 사용자와 에이전트의 대화 끝 데이터베이스 상태를 목표 상태와 비교해 채점하고 pass^k 로 일관성을 잰다. [사실][^ref-738][^ref-739] Lost in Simulation(arXiv 2601.17087, 게재처 미확인) 저자들은 모의 사용자 LLM 에 따라 성공률이 최대 9%p 달라지고 난이도별 체계적 보정 오차가 있다고 보고했다(소매 과제, 저자 보고, 원문 미열람). [사실][^ref-740]\n- **비결정성과 현실 격차**: 결정적으로 설정한 LLM 도 반복 실행에서 정확도가 최대 15% 달라졌다는 보고가 있고(arXiv 판 기준, 저자 보고, 원문 미열람) [사실][^ref-746], 시뮬레이션의 추상화·근사 때문에 현실 격차를 피할 수 없다는 리뷰가 있다(Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인, 원문 미열람). [사실][^ref-741]\n- **시험 경계**: 확인한 가상 로봇이 직선 운동학이나 장애물 없는 경로를 가정하므로 가상 현장 시험은 지시 해석·배정·일정·예외 처리 같은 ROP 쪽 결정을 재는 데 한정되는 것으로 보인다. [추정][^ref-407][^ref-406][^ref-741][^ref-743] 연계 대상: 로봇 쪽 주행·회피·파지 성능과 현실 격차는 제조사 시험과 실기 시험으로 따로 확인해야 할 것으로 보인다.\n- **보정과 반복**: 모의 관리자 시험 결과는 실제 관리자 소수 표본의 시험으로 보정하고, 챗봇 쪽과 모의 사용자 쪽 모두 반복 시행 분포로 보고해야 할 것으로 보인다(근거 조건은 소매 대화·일반 NLP 과제). [추정][^ref-740][^ref-746][^ref-738]\n- **위험 지시 포함**: SafeAgentBench 에서 가장 나은 기준 에이전트의 위험 과제 거부율은 5%, 가장 안전 의식이 높은 기준 에이전트의 세부 위험 과제 거부율은 10%로 보고되었으므로(가정 환경, 저자 보고) [사실][^ref-745][^ref-744], 시나리오 집합에 위험·권한 밖·수행 불가 지시를 의도적으로 넣어 게이트가 멈추는 비율을 재야 할 것으로 보이며, 이를 실제 위험 없이 할 수 있는 것이 가상 시험의 장점으로 보인다. [추정][^ref-745][^ref-744][^ref-743]\n\n가설 판정(q5-03)과 사용자에게 제안하는 실험 계획은 아직 없다.\n\n[^ref-406]: Open Robotics, Simulation - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/simulation.html, 접근일 2026-09-25\n[^ref-528]: NIST (usnistgov/ARIAC_docs), ARIAC documentation — Challenges (ref-008 ARIAC 문서와 같은 문서 사이트의 challenges 페이지), 미확인, https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html, 접근일 2026-09-25\n[^ref-738]: Yao, S. 외(Sierra, τ-bench 저자), τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains, 2024-06, https://arxiv.org/abs/2406.12045, 접근일 2026-09-25 (원문 미열람)\n[^ref-739]: sierra-research (tau-bench GitHub), tau-bench — README, 미확인, https://github.com/sierra-research/tau-bench, 접근일 2026-09-25\n[^ref-740]: Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인), Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations, 2026-01, https://arxiv.org/abs/2601.17087, 접근일 2026-09-25 (원문 미열람)\n[^ref-741]: Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington), The Reality Gap in Robotics: Challenges, Solutions, and Best Practices (Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인), 2025-10, https://arxiv.org/abs/2510.20808, 접근일 2026-09-25 (원문 미열람)\n[^ref-407]: gpue (vda5050-sim GitHub, 개인 저장소), vda5050-sim — Standards-compliant VDA5050 (v3.0.0) robot fleet simulator (README), 미확인, https://github.com/gpue/vda5050-sim, 접근일 2026-09-25\n[^ref-743]: Wu, J., Lu, C., Arrieta, A., & Ali, S. 외(Simula Research Laboratory·Mondragon University·PAL Robotics), Vision Language Model-based Testing of Industrial Autonomous Mobile Robots, 2025-08, https://arxiv.org/abs/2508.02338, 접근일 2026-09-25 (원문 미열람)\n[^ref-744]: Yin, S. 외(SafeAgentBench 저자), SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents, 2024-12, https://arxiv.org/abs/2412.13178, 접근일 2026-09-25 (원문 미열람)\n[^ref-745]: shengyin1224 (SafeAgentBench 공식 저장소), SafeAgentBench — README, 미확인, https://github.com/shengyin1224/SafeAgentBench, 접근일 2026-09-25\n[^ref-746]: Atil, B. 외, Non-Determinism of \"Deterministic\" LLM Settings (Eval4NLP 2025 게재판 제목: Non-Determinism of \"Deterministic\" LLM System Settings in Hosted Environments, 수치는 arXiv 판 기준), 2024-08, https://arxiv.org/abs/2408.04667, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "2차: '6. 살아있는 산출물 링크' 절만 갱신 — 아이디어 2 항목에 q5-02 답(검증 절차 소절) 반영과 실행 2026-09-25-99 의 지정 질문 처리 서술 추가, 초안 변경 없음 실행 목록에 2026-09-25-99 추가(현재 단계 표기·상태 줄은 그대로)",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-98, 2026-09-25-99 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표는 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 실행 2026-09-25-99 에서 CLI 로 지정된 질문으로 q5-02 에 답해 6절에 검증 절차 소절(지시·실행·교란·반복 네 층 가상 시험 구성, 신뢰도 low)을 더했다. 가설 판정(q5-03)은 아직 조사하지 않았다. 실행 2026-09-25-79, 2026-09-25-98, 2026-09-25-99 는 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 5 | q5-02 답함(가상 현장·가상 로봇 네 층 시험 구성과 한계, 추정 중심), 아이디어 2 6절 검증 절차 소절 신설, 트랙 개요 6절 갱신, 후속 질문 3건 | run 2026-09-25-99",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: q5-02(가상 현장·가상 로봇으로 지시 시나리오를 시험하는 방법과 한계) 답함, 지시·실행·교란·반복 네 층 시험 구성(추정)과 후속 질문 3건",
+    "category_recent": "2026-09-25 — D. 계획·최적화: 트랙 자연어 업무 지시 챗봇 단계 5 q5-02 답함, 13. 작업 배정 — MRTA 에 가상 현장에서 최근접 배정 기준선과 ROP 배정을 같은 지시 흐름·교란으로 비교하는 설계 반영 제안",
+    "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 5 q5-02 답함, '6. 대표 접근법과 기술' 절에 가상 현장 비교 설계(창고 레이아웃 자체 구축 필요) 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "user-simulator",
+      "term_ko": "사용자 시뮬레이터",
+      "term_en": "User Simulator",
+      "definition": "대화형 에이전트를 평가할 때 목표와 정보를 가진 사용자를 규칙이나 LLM 으로 모사해 에이전트와 대화하게 하는 구성 요소다.",
+      "description": "τ-bench 는 LLM 모의 사용자와 에이전트의 대화 끝 상태를 목표 상태와 비교해 채점한다. 모의 사용자 LLM 에 따라 성공률이 달라지고 체계적 보정 오차가 있다는 저자 보고가 있다. 관련 용어: 장애 주입(fault-injection), 회귀 시험(regression-testing).",
+      "related_areas": [
+        23,
+        27,
+        18
+      ],
+      "sources": [
+        "ref-738",
+        "ref-739",
+        "ref-740"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "pass-k",
+      "term_ko": "pass^k 지표",
+      "term_en": "pass^k",
+      "definition": "같은 과제를 독립적으로 k번 시행했을 때 모든 시행이 성공할 확률을 추정해 에이전트 행동의 일관성을 재는 지표다.",
+      "description": "τ-bench 가 제안했다. LLM 출력의 비결정성 때문에 모델·프롬프트 변경 뒤 회귀 시험(regression-testing)에서 반복 시행 분포로 보고할 때 쓸 수 있다.",
+      "related_areas": [
+        23,
+        27
+      ],
+      "sources": [
+        "ref-738",
+        "ref-739"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "reality-gap",
+      "term_ko": "현실 격차",
+      "term_en": "Reality Gap (Sim-to-Real Gap)",
+      "definition": "시뮬레이션의 추상화·근사 때문에 생기는 시뮬레이션과 실제 환경 사이의 동역학·인식·구동 차이로, 시뮬레이션 결과를 현실로 옮기는 것을 어렵게 한다.",
+      "description": "대응으로 도메인 무작위화·real-to-sim·상태·행동 추상화·시뮬레이션–실제 공동 학습이 정리되어 있다. 관련 용어: 디지털 트윈(digital-twin), 장애 주입(fault-injection).",
+      "related_areas": [
+        22,
+        23
+      ],
+      "sources": [
+        "ref-741"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 명세. 무선망 메시지 손실 전제와 주요 토픽의 QoS 0 규정을 입력 원문 텍스트로 확인.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Open-RMF 작업 상태 스키마(재사용). 시험 기록 원천 근거.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-417",
+      "org": "Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab)",
+      "title": "Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems",
+      "published": "2026-04",
+      "url": "https://arxiv.org/abs/2604.05427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. SafeGate 실행 전 게이트(재사용). 230개 벤치마크 과제·AI2-THOR 시나리오 30개·실제 로봇 실험 평가(초록 검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-623",
+      "org": "Agrawal, A. 외",
+      "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.05738",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 창고 배정 총 이동 지연 지표와 탐욕 기준선(재사용).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-406",
+      "org": "Open Robotics",
+      "title": "Simulation - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 다중 플릿 시뮬레이션(Gazebo·Ignition, slotcar, 문·승강기·워크셀·군중) 설명과 slotcar 의 장애물 없는 경로 가정.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-104",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_demos — README",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 데모 월드(호텔·사무실·공항 터미널·클리닉·캠퍼스·제조·물류)와 작업 디스패치 스크립트·대시보드. 창고 전용 월드는 없음.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-528",
+      "org": "NIST (usnistgov/ARIAC_docs)",
+      "title": "ARIAC documentation — Challenges (ref-008 ARIAC 문서와 같은 문서 사이트의 challenges 페이지)",
+      "published": null,
+      "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "ARIAC(2025 판 기준) 민첩성 과제: 컨베이어·전압 시험기 고장과 고우선순위 주문은 시작 시각(START_TIME), 진공 도구 고장은 잡기 시도 횟수(GRASP_OCCURRENCE)로 발생.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-738",
+      "org": "Yao, S. 외(Sierra, τ-bench 저자)",
+      "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "published": "2024-06",
+      "url": "https://arxiv.org/abs/2406.12045",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 모의 사용자와 에이전트 대화, 끝 데이터베이스 상태와 목표 상태 비교 채점, pass^k 지표 제안.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-739",
+      "org": "sierra-research (tau-bench GitHub)",
+      "title": "tau-bench — README",
+      "published": null,
+      "url": "https://github.com/sierra-research/tau-bench",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "τ-bench 공식 저장소 README. 항공·소매 도메인, 모의 사용자 전략, pass^1~4, 자동 오류 식별의 LLM 한계 경고.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-740",
+      "org": "Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인)",
+      "title": "Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations",
+      "published": "2026-01",
+      "url": "https://arxiv.org/abs/2601.17087",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. τ-bench 소매 과제에서 LLM 모의 사용자와 실제 사용자 비교, 성공률 변동과 체계적 보정 오차 보고. 게재처는 ICLR 2026·ACL 2026 목록이 모두 검색되어 미확인.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-741",
+      "org": "Aljalbout, E. 외(University of Zurich·NVIDIA·University of Washington)",
+      "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best Practices",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.20808",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 현실 격차의 원인·대응·평가를 정리한 리뷰(Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-407",
+      "org": "gpue (vda5050-sim GitHub)",
+      "title": "vda5050-sim — Standards-compliant VDA5050 (v3.0.0) robot fleet simulator (README)",
+      "published": null,
+      "url": "https://github.com/gpue/vda5050-sim",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 준수를 표명하는 개인 저장소의 가상 로봇 플릿 시뮬레이터(적합성 시험 결과 미확인). 장애 주입(연결 끊김·오류·비상정지 등), 직선 운동학 한계.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-742",
+      "org": "coatyio (vda-5050-lib.js GitHub)",
+      "title": "vda-5050-lib.js — Universal VDA 5050 library for Node.js and browsers (README)",
+      "published": null,
+      "url": "https://github.com/coatyio/vda-5050-lib.js",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 라이브러리의 가상 AGV 어댑터를 시뮬레이션·통합 시험·목업 용도로 제공.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-743",
+      "org": "Wu, J., Lu, C., Arrieta, A., & Ali, S. 외(Simula Research Laboratory·Mondragon University·PAL Robotics)",
+      "title": "Vision Language Model-based Testing of Industrial Autonomous Mobile Robots",
+      "published": "2025-08",
+      "url": "https://arxiv.org/abs/2508.02338",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. VLM 으로 요구 위반 사람 행동 시나리오를 생성해 산업용 AMR 을 시뮬레이션에서 시험(RVSG).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-744",
+      "org": "Yin, S. 외(SafeAgentBench 저자)",
+      "title": "SafeAgentBench: A Benchmark for Safe Task Planning of Embodied LLM Agents",
+      "published": "2024-12",
+      "url": "https://arxiv.org/abs/2412.13178",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AI2-THOR 기반 750개 과제 안전 계획 벤치마크. 초록은 가장 나은 기준 에이전트의 위험 과제 거부율 5%와 가장 안전 의식이 높은 기준 에이전트의 세부 위험 과제 거부율 10%를 별개 지표로 적는다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-745",
+      "org": "shengyin1224 (SafeAgentBench 공식 저장소)",
+      "title": "SafeAgentBench — README",
+      "published": null,
+      "url": "https://github.com/shengyin1224/SafeAgentBench",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "SafeAgentBench 구성(AI2-THOR, 750개 과제, 10가지 위험, 17개 동작, 실행·의미 평가)과 가장 나은 기준 에이전트의 안전 과제 성공률 69%·위험 과제 거부율 5%.",
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-746",
+      "org": "Atil, B. 외",
+      "title": "Non-Determinism of \"Deterministic\" LLM Settings",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.04667",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 결정적 설정 LLM 5종의 반복 실행 정확도 변동을 측정. Eval4NLP 2025 게재판 제목은 Non-Determinism of \"Deterministic\" LLM System Settings in Hosted Environments.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-747",
+      "org": "인더스트리뉴스",
+      "title": "다임리서치, 가상검증 기술로 물류자동화 실현",
+      "published": null,
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=56677",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 국내 관제 기업 다임리서치의 디지털 트윈 가상검증(xDT)·통합관제(xMS) 소개 기사(벤더 주장 중심).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "국내 물류센터 로봇 관제 도입에서 디지털 트윈·가상 로봇으로 관제 소프트웨어를 사전 검증한 결과를 실제 시운전 결과와 비교해 공개한 사례가 있는가? (관련 기존 질문: oq-094)",
+      "areas": [
+        22,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "완료·인계",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "vda5050-sim (VDA 5050 가상 로봇 플릿 시뮬레이터)",
+      "kind": "오픈소스",
+      "org": "gpue (vda5050-sim GitHub, 개인 저장소)",
+      "url": "https://github.com/gpue/vda5050-sim",
+      "related_areas": [
+        23,
+        22,
+        9
+      ],
+      "summary": "README 가 VDA 5050 3.0.0 준수를 표명하는 가상 로봇 플릿을 MQTT·NATS 로 띄우고 로봇별 확률로 연결 끊김·오류·비상정지 등을 주입한다. 이동은 노드 사이 직선 운동학뿐이며 적합성 시험 결과는 미확인이다.",
+      "ref_id": "ref-407"
+    },
+    {
+      "name": "vda-5050-lib.js (가상 AGV 어댑터 포함 VDA 5050 라이브러리)",
+      "kind": "오픈소스",
+      "org": "coatyio",
+      "url": "https://github.com/coatyio/vda-5050-lib.js",
+      "related_areas": [
+        23,
+        9
+      ],
+      "summary": "간선을 따라 주행하고 기본 동작을 수행하는 가상 AGV 어댑터를 시뮬레이션·통합 시험·목업 용도로 제공한다.",
+      "ref_id": "ref-742"
+    },
+    {
+      "name": "τ-bench (도구–에이전트–사용자 상호작용 벤치마크)",
+      "kind": "평가 프로그램",
+      "org": "sierra-research",
+      "url": "https://github.com/sierra-research/tau-bench",
+      "related_areas": [
+        23,
+        27,
+        18
+      ],
+      "summary": "LLM 모의 사용자와 에이전트의 대화 끝 데이터베이스 상태를 목표 상태와 비교해 채점하고 pass^k 로 일관성을 잰다(항공·소매 도메인).",
+      "ref_id": "ref-739"
+    },
+    {
+      "name": "SafeAgentBench (LLM 체화 에이전트 안전 계획 벤치마크)",
+      "kind": "평가 프로그램",
+      "org": "SafeAgentBench 저자(shengyin1224 공식 저장소)",
+      "url": "https://github.com/shengyin1224/SafeAgentBench",
+      "related_areas": [
+        23,
+        25,
+        27
+      ],
+      "summary": "AI2-THOR 에서 10가지 위험 유형 750개 과제로 실행 기반·의미 기반 두 관점의 안전 계획을 평가한다(가정 환경).",
+      "ref_id": "ref-745"
+    }
+  ],
+  "additional_research_requests": [
+    "q5-03(가설 1~3 판정): 단계 1~4 결과로 가설을 판정할 근거 정리가 필요하다(단계 5 완료 조건의 가설 판정표).",
+    "단계 5 완료 조건의 '사용자에게 제안하는 실험 계획': 가상 현장 시험(네 층)을 실험 계획 E5-xx 로 옮길 때 필요한 공개 창고 레이아웃·지시 시나리오 자료가 필요하다.",
+    "트랙 정의 current_stage(1), 트랙 개요 상태 줄(단계 3), 이번 지정 단계(5)가 서로 다르다. 트랙 데이터 확인이 필요하다(검증 노트 지적).",
+    "아이디어 2 페이지 끝의 기존 [^ref-111] 정의 줄에는 이번 실행 기준 원문 미열람 표시가 없다. 이번 패치는 아이디어 페이지에서 ref-111 을 인용하지 않았으며, 기존 줄 정비는 다음 갱신에서 판단한다.",
+    "백로그 중복 등록 정리(q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q1-05·q1-06)가 필요하다(브리프 참고)."
+  ],
+  "fixes_applied": [
+    "f7 강등 — 단계 5 페이지 3절 교란 층과 아이디어 6절에서 ARIAC 문장을 [추정]으로 쓰고 '컨베이어·전압 시험기 고장·고우선순위 주문은 START_TIME, 진공 도구 고장은 GRASP_OCCURRENCE' 로 고쳤다.",
+    "f18·f24 교란 층 표현 — 네 층 표·설명용 시나리오·아이디어 6절에서 '시작 시각 또는 발생 조건을 정한 교란 주입'으로 쓰고, 교란 주입 첫 등장 시 용어집 장애 주입(Fault Injection) 페이지를 링크했다.",
+    "f3 — 월드 목록의 '병원'을 README 표기대로 '클리닉(Clinic World)'으로 고쳤다.",
+    "f4 — 'README 가 VDA 5050 3.0.0 준수를 표명하는(저장소 자기 표명, 적합성 시험 결과 미확인)'으로 쓰고, 개인 저장소·README 에 작성자·소속 없음을 4절 불확실성에 적었다.",
+    "f12·f13 — 출처 충돌로 쓰지 않고 69%·5%(가장 나은 기준 에이전트)와 10%(가장 안전 의식이 높은 기준 에이전트, 세부 위험 과제)를 별개 지표로 함께 제시했다(저자 보고, 가정 환경).",
+    "SafeAgentBench 거부율 출처 충돌 열린 질문은 open_question_updates 에 등록하지 않았다.",
+    "f21 — '출처 충돌이라 수치 없이'라는 전제를 빼고 5%·10% 를 각각의 조건과 함께 참조했으며 문장은 [추정]을 유지했다.",
+    "f9 — 'arXiv 2601.17087(2026-01), 게재처 미확인(ICLR 2026·ACL 2026 목록이 모두 검색됨)'으로 쓰고 수치에 '(저자 보고, 원문 미열람)'을 병기했다(각주 기관 표기도 게재처 미확인으로 고침).",
+    "f10 — 'arXiv 2510.20808(2025-10), Annual Review of Control, Robotics, and Autonomous Systems 2026 게재, 권 미확인'으로 본문·각주·참고문헌 요약을 고쳤다.",
+    "f15 — '(저자 보고, 원문 미열람)'을 병기하고 Eval4NLP 2025 게재판 제목을 각주와 4절 불확실성에 적었으며 수치는 arXiv 판 기준임을 밝혔다.",
+    "f16 — 근거를 'arXiv 2604.05427 초록 검색 요약 기준'으로 고치고 230개 과제·시나리오 30개·실기 실험은 유지, 실기 규모 미확인을 적었으며 기존 각주 ref-417 을 재사용했다.",
+    "f17 — 본문에서 '[추정] 벤더 주장'과 '챗봇 지시 시험에 쓴 사례 아님'을 유지하고, 22. 시뮬레이션·예측용 디지털 트윈 반영 제안 문안에도 벤더 주장 표기를 넣었다.",
+    "f14·f19 — RVSG 와 시험 경계 서술에서 로봇 쪽 주행·회피·파지 시험을 '연계 대상:'으로 표시하고 ROP 쪽 시험을 지시 해석·배정·일정·예외 처리 결정에 한정했다.",
+    "f22 — 가상 현장 시험은 22. 시뮬레이션·예측용 디지털 트윈과 23. 시험·형식 검증·벤치마크의 기능, 초기 상태는 8. 실시간 세계 상태·데이터 일관성의 스냅숏이나 고정 시험 상태로 쓰되 결과를 현재 상태에 반영하지 않는 구분을 그대로 옮겼다.",
+    "f23 — 비교 설계는 q5-01 답(#q5-01)으로 연결해 반복하지 않고 같은 지시 흐름·교란 재생과 창고 레이아웃 자체 구축 필요만 더했으며, 창고 실측 비교 부재는 oq-052 로 연결했다(새 질문 미등록).",
+    "국내 디지털 트윈 사전 검증 대 시운전 비교 질문을 '(관련 기존 질문: oq-094)'를 붙여 open_question_updates 에 new 로 등록했다.",
+    "각주 — 단계 5 페이지 8절을 다시 써 ref-111·ref-417·ref-623·ref-738·ref-740·ref-741·ref-743·ref-744·ref-746·ref-747 에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었으며, github_raw 로 연 ref-406·ref-104·ref-528·ref-739·ref-407·ref-742·ref-745 는 표시 없이, ref-031 은 기존 각주 줄을 그대로 썼다.",
+    "ref-528 — 각주·참고문헌의 기관을 'NIST (usnistgov/ARIAC_docs)'로 두고 제목에 ref-008 ARIAC 문서와 같은 문서 사이트의 challenges 페이지임을 밝혔다(별도 id 유지).",
+    "단계 5 페이지 2절 — q5-02 를 답함(2026-09-25-99, #q5-02)으로 바꾸고 3절에 '### q5-02 … {#q5-02}' 소제목을 신설했으며, q5-13·q5-14·q5-15 를 2절·5절 표에 열림으로 넣었다(제기 근거 f23·f20·f15, 실행 2026-09-25-99).",
+    "단계 5 페이지 4절 — 네 층 구성이 이 위키의 종합이며 근거가 소매·항공 대화, 가상 AGV, 호텔·클리닉·제조 데모, 제조 키팅 조건이라 물류 지시 조건이 아님, 교차 확인 0건, vda5050-sim 은 개인 저장소 자기 표명임을 남은 불확실성에 적었다.",
+    "단계 5 페이지 6절 — 세 행을 '미충족 · 미승인'으로, 첫 행 근거를 지시 문구대로 쓰고, 전환 줄을 '아니오(가설 판정표 q5-03·실험 계획 미작성, 막힌 질문 q5-03~q5-05·q5-07~q5-15 열림, 앞 단계 3·4 완료 미승인)'로 썼다. stage_transition 은 넣지 않았고 트랙 개요의 현재 단계 표기는 고치지 않았다.",
+    "아이디어 2 6절 — '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절을 신설해 f18~f21 을 [추정]으로 싣고 근거 f1·f2·f4·f7(강등 반영)·f8·f9·f10·f15 를 두었으며, 평가 지표 소절과 링크로 잇고 가설 판정·실험 계획이 미조사임을 적었다. 도식은 Mermaid 로 직접 그렸다.",
+    "세부영역 반영 제안 — 23·22·13 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그 '세부영역 반영 제안'으로만 냈으며, 모의 사용자·LLM 비결정성(f8·f9·f15·f20)은 27. AI·학습·적응과 모델 운영 연결로도 명시하고 f7 은 [추정]으로 적었다.",
+    "용어 — 현실 격차·사용자 시뮬레이터·pass^k 지표를 glossary_updates 에 new 로 내고 설명에 디지털 트윈·장애 주입·회귀 시험과의 연결을 적었다.",
+    "2차: 단계 5 페이지 상태 줄 — H1 아래 줄을 '열린 질문: 12건 · 답한 질문: 2건'으로 고쳤고, 이 줄은 절 패치로 보낼 수 없어 단계 5 페이지를 patches 대신 전체 content 로 보냈다.",
+    "2차: 트랙 개요 6절 — docs/tracks/nl-task-chatbot/index.md 를 pages 에 넣어 '6. 살아있는 산출물 링크' 절만 replace 패치로 고쳤다. 아이디어 2 항목의 q5-02 미조사 문장을 지시 문구(검증 절차 소절 추가, 가설 판정 q5-03 미조사)로 바꾸고, 지정 질문으로 뒤 단계를 다룬 실행에 2026-09-25-99 를 더했으며, 초안 변경 없음 실행 목록에 2026-09-25-99 를 더했다. 현재 단계 표기(단계 3)와 H1 아래 상태 줄은 두었다.",
+    "2차: SafeAgentBench 문장 — 단계 5 페이지 q5-02 '위험 지시 시험과 시나리오 생성' 둘째 항목 첫 문장을 '공식 README 는 가장 나은 기준 에이전트의 안전 과제 성공률 69%·위험 과제 거부율 5%를 적고, 논문 초록은 이와 함께 가장 안전 의식이 높은 기준 에이전트의 세부(detailed) 위험 과제 거부율 10%를 적는다'로 바꿨고 태그 [사실]과 각주 ref-745·ref-744 은 유지했다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+    "ontology_draft_version": "0.8",
+    "backlog_updates": [
+      {
+        "id": "q5-02",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02"
+      },
+      {
+        "id": "q5-13",
+        "status": "열림",
+        "answer_link": null,
+        "question": "가상 현장 시험에 쓸 창고 레이아웃(피킹 구역·도크·승강기·충전기)과 지시 시나리오 집합(정상·교란·위험·권한 밖 지시)을 q5-04 의 지시–정답 쌍과 어떻게 묶어 구성하고, 시나리오 수와 교란 조합의 범위를 어떤 기준으로 정하는가? (q5-02 에서 파생)",
+        "stage": 5,
+        "origin": "f23"
+      },
+      {
+        "id": "q5-14",
+        "status": "열림",
+        "answer_link": null,
+        "question": "LLM 모의 관리자로 얻은 챗봇 성과를 실제 관제 요원·현장 관리자 소수 표본의 시험으로 보정하려면 표본 규모와 비교 지표(성공률, 되묻기 횟수, 오배정)를 어떻게 정하는가? (q5-02 에서 파생) (관련: q5-10)",
+        "stage": 5,
+        "origin": "f20"
+      },
+      {
+        "id": "q5-15",
+        "status": "열림",
+        "answer_link": null,
+        "question": "LLM 비결정성을 고려해 모델·프롬프트 변경 뒤 회귀 시험에서 같은 시나리오를 몇 번 반복하고(pass^k 의 k), 어떤 분포 차이를 합격·불합격 기준으로 삼는가? (q5-02 에서 파생)",
+        "stage": 5,
+        "origin": "f15"
+      }
+    ],
+    "log_entry": "답한 질문: q5-02(가상 현장·가상 로봇으로 지시 시나리오를 시험하는 방법과 한계; f1~f25, f7 사실 → 추정 강등) / 새 질문: q5-13(f23), q5-14(f20), q5-15(f15) / 온톨로지 변경: 없음(업무 분해·배정 설계 초안 v0.8 유지 — 가상 현장 시험 절차는 작업 모델의 개념·관계가 아니라 검증 방법) / 완료 조건 평가: 미충족(부족: 가설 판정표 q5-03, 사용자에게 제안하는 실험 계획; 검증 절차는 추정 중심으로 처음 실림; 앞 단계 3·4 완료 미승인) / 세부영역 반영 제안: 23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영 4건(모두 6. 대표 접근법과 기술; f7 은 [추정], f17 은 [추정] 벤더 주장) / 다음 실행 제안: q5-03(가설 판정), 이어서 실험 계획 제안, 또는 트랙 현재 단계 3 의 열린 질문(q3-05~q3-15)",
+    "overview_progress": "단계 5 진행 중(트랙 현재 단계는 단계 3 유지) — 열린 질문 12, 답함 2, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 23,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "지시 시나리오 시험의 네 층 구성(추정): 표준 인터페이스 가상 로봇(vda5050-sim, 자기 표명·직선 운동학)과 시작 시각 또는 발생 조건을 정한 장애 주입(ARIAC, [추정]), LLM 모의 사용자 대화와 끝 상태 채점·pass^k(τ-bench), 모의 사용자의 체계적 보정 오차(Lost in Simulation), 위험 지시 시험(SafeAgentBench 5%·10% 별개 지표), 시나리오 생성 시험(RVSG, 로봇 쪽은 연계 대상), LLM 비결정성에 따른 반복 시행(Atil 외). 교차 규칙에 따라 모의 사용자·비결정성은 27. AI·학습·적응과 모델 운영과 연결."
+    },
+    {
+      "area_no": 22,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "Open-RMF 다중 플릿 시뮬레이션의 모사 범위(문·승강기·워크셀·군중)와 slotcar 의 장애물 없는 경로 가정, 창고 전용 데모 월드 부재, 현실 격차 리뷰(Aljalbout 외, 권 미확인), 국내 관제 디지털 트윈 xDT([추정] 벤더 주장, 챗봇 지시 시험 사례 아님). 지시 시나리오 재현은 가정한 미래 실험이며 초기 상태는 8. 실시간 세계 상태·데이터 일관성의 스냅숏에서 받되 결과를 현재 상태에 반영하지 않는 구분."
+    },
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "가상 현장에서 같은 지시 흐름과 같은 교란을 최근접 배정 기준선과 ROP 배정(해법기 기반)에 똑같이 재생해 총 이동 지연·납기 지연을 비교하는 설계(추정). 공개 데모에 창고 레이아웃이 없어 자체 구축 필요, 창고 실측 비교 부재는 oq-052. 27. AI·학습·적응과 모델 운영과 양쪽 연결."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 기반 챗봇 평가 방법: LLM 모의 사용자와 끝 상태 채점·pass^k(τ-bench), 모의 사용자가 실제 사용자 성과를 체계적으로 틀리게 추정한다는 보고(Lost in Simulation, 게재처 미확인), 결정적 설정에서도 LLM 정확도가 반복 실행마다 달라진다는 보고(Atil 외, arXiv 판 기준). 모의 관리자 결과의 실제 표본 보정과 반복 분포 보고는 추정. 적용 대상 13. 작업 배정 — MRTA·23. 시험·형식 검증·벤치마크와 연결."
+    }
+  ]
+}

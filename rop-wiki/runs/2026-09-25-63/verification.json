@@ -1,0 +1,223 @@
+{
+  "run_id": "2026-09-25-63",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "retry_reason": null,
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw.githubusercontent.com 의 VDA5050_EN.md(3.0.0)를 열어 Scope 문장이 발췌와 글자 단위로 같음을 확인. 발행일은 원문에 없어 미확인 유지. 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 원문(VDA5050_EN.md)으로 startPause/stopPause 와 pauseAllowed 의미를 확인했다. 그러나 3.0.0 공식 state.schema(raw 열람)의 비상정지 필드 이름은 activeEmergencyStop 이고 값은 MANUAL·REMOTE·NONE 뿐이다. 브리프의 'eStop: AUTOACK·MANUAL·REMOTE·NONE' 은 이전 판 표기로 보여 발췌가 원문과 다르다. operatingMode 에는 AUTOMATIC·MANUAL 말고도 STARTUP·SEMIAUTOMATIC·INTERVENED·SERVICE·TEACH_IN 값이 있다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: data/source_texts/ref-004.txt(github_raw 원문)의 Traffic deconfliction·Negotiation 절과 일치한다. 긴급 작업은 제3자 심판이 높은 우선순위 참여자를 택하도록 구현해 협상을 강제하는 방식이다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. 이슈 #658 은 2025-04-04 에 올라왔고 불리언 비상 신호와 fleet_names 제안 내용이 일치한다. 검색 요약에 rmf_fleet_adapter 변경 이력의 '플릿 이름별 화재경보 분리 옵션' 언급이 있어 '현재' 표현은 이슈 작성 시점 기준으로 한정해야 한다. 구현 여부는 미확인."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(ISO 83545 소개). 적용 대상 예시(AGV·AMR 등), 운용 구역 조건의 영향, 부속서 A 운용 구역 준비, 부속서 B 위험 목록이 스니펫과 일치한다. 개정 초안(ISO/CD 3691-4, 88615)이 진행 중이다. 직전 반려 사유(벤더 문서 근거)는 해소됐다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. A3 발표문에서 통합·구성·맞춤화 요구, 시스템 통합자 대상, Part 3(사용자) 예정, 2023-10 발행을 확인했다. Business Wire·Design World 보도로도 같은 내용이 확인된다(브리프 각주는 단일)."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치. ISO 73934 소개와 A3 FAQ·ScienceDirect 비교 논문 등에서 2025-02 발행, 2011년판 대체, ISO/TS 15066 통합, 사이버보안 요구 추가를 확인했다. \"'로봇 응용' 강조\" 부분은 스니펫에서 확인하지 못해 삭제를 지시한다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(korea.kr newsId=148935814, 2024-11-03). 경향신문·아주경제 등 보도로 2024-11-01 활용 가능, 특구 실증, 종전 작업공간 분리·안전펜스 필요를 확인했다. KS 번호는 확인하지 못했다(oq-070 유지)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(국가법령정보센터·LBOX 법령). 1.8m 이상 울타리와 KS·국제 기준 부합 인정 시 생략 조항을 확인했다. 기준일은 링크 시행본 2023-07-01 이다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(arXiv 2604.05427, 2026-04-07, Obi, I. 외, Byung-Cheol Min 교신). ISO 13482 기반 속성 추출, 결정적 판정(승인·거부), 불변 조건·가드·중단 조건 계약, 230개 작업·30개 AI2-THOR 시나리오·실로봇 평가가 일치한다. '사람에게 확인 요청(defer)'은 스니펫에 없어 삭제를 지시한다(삭제 뒤 남는 주장은 뒷받침됨). 저자 보고 평가다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(KSSN K001010113282). KS B ISO/TS 15066 은 2017-02-28 제정(IDT)이고 2022-10-12 확인판(K001010139581)이 있다. 발행일은 미확인이 아니라 2017-02-28 로 고친다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 원문 미열람. 논문 실재(Belzile, B. 외, ETS, ICAR 워크숍)는 확인했다. 그러나 스니펫은 표준·방법론 검토 뒤 건설 현장 이동 로봇 배치용 위험성평가를 제안하고 현장 전문가가 검증했다고만 말한다. '정량 지표' 와 '건설 현장 사례로 검증', ISO/TS 15066·R15.08 검토라는 구체 표현은 스니펫에서 확인하지 못했다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(IEEE Xplore 8910126, HAL hal-02014905). 중앙집중·계층·수정 계층 제어 구조별로 STPA 로 위험 시나리오와 원인 요인을 도출한 내용이 일치한다. 저자는 Bensaci, C.·Zennir, Y.·Pomorski, D. 이고 발행은 2018-12(EECS 2018 학회)다. 대상은 화학 분석 실험실의 다중 로봇이며 물류 현장이 아니다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(RESS 2023, S0951832023000534). STPA 와 확률 페트리 넷 결합, 몬테카를로 시뮬레이션으로 충돌 빈도 정량화가 일치한다. 사례는 석유·가스 분야 소형 분석 실험실의 화학물질 운반이며 물류 현장이 아니다. 저자 미확인."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람, 검색 결과 일치(iTeh CEN 카탈로그 URL 과 제목 일치). 3단계 방법(본질적 안전 설계 → 방호·보완 보호 조치 → 사용 정보)의 우선순위를 확인했다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 이 위키의 종합 [추정]이며 근거 f5·f6·f7·f13 이 살아 있다. 근거 출처가 모두 원문 미열람이다. 'R15.08-1' 은 이번 브리프 출처가 아니다(ref-472 발표문 안의 언급)."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: [추정] 종합이며 f1·f3·f4 근거가 유지된다. f2 는 강등됐으므로 안전 상태 항목은 필드 값 열거 없이 쓴다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: '연계 대상:' 표시가 분류 원문 9장('로봇 자체 지능·제어'·'시설·설비 제어')과 맞는 [추정]이다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 피킹 / 예외·성과 시나리오의 [추정]이다. fieldViolation·stopPause·AUTOMATIC 은 3.0.0 원문·스키마에 있다. 설명용 적용이며 수치는 없다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 출하 / 예외·성과 [추정]이다. 근거 f4 는 이슈 작성 시점 기준이다(원문 미열람)."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 연결 종합 [추정]이다. 교차 규칙에 따라 SafeGate 를 27. AI·학습·적응과 모델 운영과 적용 대상 영역에 함께 연결한다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "10절의 24. 자산·소프트웨어 수명주기 관리 연결은 이 브리프에 finding 이 없고 2026-09-25-61 브리프(f27 [의견], f21·f17 관련 열린 질문)에 기댄다 — 태그 붙은 주장 없이 연결 문장으로만 쓴다"
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "f7 의 '협동 운전 요구'는 용어집 collaborative-application '협동 적용 (Collaborative Application)'과 표기가 다르다 — 본문에서는 '협동 적용'으로 맞춘다",
+      "용어 후보 '운용 구역 (Operating Zone, ISO 3691-4)'은 기존 용어 operating-mode '운용 모드 (VDA 5050 operatingMode)'와 다른 개념이므로 신규 등록하되 정의에서 운용 모드와 구분한다",
+      "3단계 위험 감소 방법의 세 번째 단계는 기존 용어 information-for-use '사용 정보'와 같은 표기를 쓰고 링크한다"
+    ]
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f2: [사실] → [추정]으로 강등하고 'eStop: AUTOACK·MANUAL·REMOTE·NONE' 필드명·값 열거를 본문에서 삭제한다. '안전 상태(safetyState)로 비상정지 상태와 보호 필드 침범 여부(fieldViolation)를 보고한다'로만 쓴다 — VDA 5050 3.0.0 공식 state.schema 의 필드는 activeEmergencyStop(MANUAL·REMOTE·NONE)이어서 브리프 발췌가 원문과 다르다.",
+    "f2: operatingMode 는 'AUTOMATIC·MANUAL 두 값'처럼 읽히지 않게 '자동(AUTOMATIC)·수동(MANUAL) 등의 운용 모드'로 쓴다 — 원문에는 다른 값도 있다.",
+    "open_questions_new 첫 항목: 'VDA 5050 eStop REMOTE' 를 'VDA 5050 의 원격(REMOTE) 비상정지'로 고친다 — f2 필드명 오류와 같은 이유다.",
+    "f12: [사실] → [추정]으로 강등하고 '정량 지표로 평가하는 틀'·'ISO/TS 15066·ANSI/RIA R15.08 등 검토'·'건설 현장 사례로 검증'을 '관련 표준·방법론을 검토해 건설 현장 이동 로봇 배치용 위험성평가를 제안하고 현장 전문가 검증을 거쳤다고 저자가 보고한다'로 줄인다 — 원문 미열람이고 스니펫이 구체 표현을 담지 않는다.",
+    "f10: '사람에게 확인 요청(defer)'을 삭제하고 '실행 승인 또는 거부'로 쓴다 — 확인한 검색 요약에 없다. 'ISO 13482 는 개인 돌봄 로봇 표준, 평가는 저자 보고, 물류 현장 대상 아님' 병기는 유지한다.",
+    "f7: \"'로봇 시스템' 대신 … '로봇 응용'을 강조\" 부분을 삭제하고 '협동 운전 요구'를 용어집 표기 '협동 적용'으로 바꾼다 — 앞부분은 발행 기관 소개와 독립 해설로 확인됐으나 이 부분은 확인하지 못했다.",
+    "f4·f20: '현재 비상 신호 메시지는 … 불리언'을 '이슈 작성 시점(2025-04-04) 기준'으로 한정하고, 이후 구현 여부는 미확인으로 둔다 — 검색 요약에 rmf_fleet_adapter 의 플릿 이름별 분리 옵션 언급이 있다.",
+    "f13·f14: 6절·8절에서 두 연구의 대상이 화학 분석 실험실의 다중 로봇이며 물류 현장이 아님을 병기한다 — 방법론 근거로만 쓴다.",
+    "ref-417: 기관 칸을 'Obi, I. 외(arXiv)'로, 발행일을 2026-04 로 고친다.",
+    "ref-564: 기관 칸을 'Bensaci, C., Zennir, Y., Pomorski, D. (IEEE Xplore)'로, 발행일을 2018-12(EECS 2018 학회)로 고친다.",
+    "ref-567: 발행일을 2025-04-04(이슈 작성일)로 고친다.",
+    "ref-568: 발행일을 2017-02-28 로 고치고 2022-10-12 확인판이 있음을 각주 제목 뒤 괄호에 적는다. 7절에서는 ISO/TS 15066 내용이 ISO 10218-2:2025 에 통합됐다는 f7 과 함께 제시한다.",
+    "각주: 원문을 열지 않은 ref-470·ref-472·ref-560·ref-561·ref-562·ref-417·ref-563·ref-564·ref-565·ref-566·ref-567·ref-568 의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. ref-031·ref-004 는 github_raw 로 열었으므로 붙이지 않는다.",
+    "10절: 24. 자산·소프트웨어 수명주기 관리 연결은 태그·각주가 붙은 주장 없이 링크와 연결 문장으로만 쓴다 — 이 브리프에 근거 finding 이 없다.",
+    "10절·6절: SafeGate(f10) 내용은 이 페이지 6절에 두고, 27. AI·학습·적응과 모델 운영 링크를 함께 건다 — 공통 규칙 5(교차 규칙)이다.",
+    "11절: oq-064·oq-070 은 해결로 바꾸지 않고 열림으로 유지한다 — KS 번호와 유형 C 대응 기준을 확인하지 못했다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. VDA 5050 명세·상태 스키마(ref-031)와 RMF Core(ref-004)만 공식 GitHub 원문으로 확인했다. 확인 19건, 미확인 2건, 교차 확인 4건(f6·f7·f8·f9. 두 번째 출처는 검증 중 검색으로 확인했고 페이지 각주는 단일). 강등: f2 사실 → 추정(비상정지 필드명·값이 3.0.0 스키마와 다름), f12 사실 → 추정(구체 표현 미확인). 원문 미열람 출처: ref-470, ref-472, ref-560, ref-561, ref-562, ref-417, ref-563, ref-564, ref-565, ref-566, ref-567, ref-568. 주의: 표준(ISO 3691-4, ISO 10218-2:2025, ISO 12100, R15.08-2)은 발행 기관 소개·발표 자료 기준이며 본문은 열람하지 않았다. STPA 연구 두 편과 SafeGate·Belzile 연구는 물류 현장이 아닌 실험실·가정·건설 현장 대상이다. 이동식 협동로봇 KS 번호(oq-070)와 유형 C 대응 국내 기준(oq-064)은 미확인이다. 직전 반려 사유(벤더 문서 근거 [사실])는 해소됐다. 미사용 출처 없음, 정정 요청 없음. 검증 검색 13회(리서치 11회와 합쳐 24/30)."
+}

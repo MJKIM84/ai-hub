@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-09-25-39",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "11절 oq-032 는 해결로 바꾸지 않고 f11 을 부분 근거로 연결했다 — 1차 지시대로다",
+      "기존 참고문헌 id(ref-004·ref-005·ref-006·ref-031·ref-079·ref-253·ref-267·ref-268)를 재사용했고, 용어는 기존 용어 페이지(mapf, lifelong-mapf, multi-agent-pickup-and-delivery, roadmap, vda-5050, release-zone, open-rmf, multi-fleet-orchestration)에 링크했다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": []
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 29건, 미확인 1건, 교차 확인 0건. 강등: 없음(삭제: f24 — ref-198 실재 미확인). 원문 미열람 출처: ref-005, ref-006, ref-253, ref-267, ref-268, ref-186, ref-187, ref-188, ref-189, ref-190, ref-192, ref-193, ref-194, ref-195, ref-196, ref-199. 원문 확인: ref-004·ref-031(입력 원문 텍스트), ref-079·ref-191·ref-197·ref-253 README(검증자가 raw.githubusercontent.com 으로 열람). 주의: 알고리즘·표준 내용은 모두 단일 발행 주체 자료이고, 성능·순위 수치(PIBT, WPPL, SILLM, 경로망 생성 1.2~23.4%)는 저자·팀이 스스로 보고한 값이다. 서로 다른 제조사 로봇의 통로 양보 규칙을 정한 공통 표준은 찾지 못했으며(부재가 확정된 것은 아니다), 양보 구조와 ROP 직접 범위는 이 위키의 추정이다. f19(대형 AGV 공장)·f21(컨테이너 터미널)은 물류센터와 조건이 다르다. 트랙 반영 제안 2건(floorplan-recognition 2026-09-25-22)은 f22·f23 으로 반영하되, ref-267 의 '수작업 설계' 서술은 미확인이라 뺐다. oq-032 는 해결 불인정(f11 부분 근거). 정정 요청 없음. / 2차 통과. 드리프트 1건 처리: 분리 페이지 s6 의 SIPP 가정 한계 문장을 [사실]에서 이 위키의 [추정]으로 고친 것을 재검증에서 확인했다. 1차 수정 지시 14건 이행 확인, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고: 자동 분리 뒤 세부영역 페이지 프런트매터 sources 에는 분리 페이지로 옮겨 간 ref-253·ref-268·ref-191·ref-193·ref-194·ref-197 가 남아 있고, reference_updates 의 cited_by 는 분리 페이지를 일부만 적었다. 5절 시나리오의 시작 조건 칸은 설명용 가정이다.",
+  "retry_reason": null
+}

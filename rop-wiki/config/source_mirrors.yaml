@@ -1,0 +1,515 @@
+# 원문 미러 목록 — 공식 문서의 원문(또는 공식 산출물)이 GitHub 에 있는 출처
+#
+# 쓰는 곳: pipeline/lib/sources.py mirror_for(url), pipeline/checks/check_urls.py(정본 URL 이 정책 차단일 때 미러 확인),
+#          에이전트 프롬프트(원문 열람 경로 안내). 파이썬 표준 라이브러리 + pyyaml 로 읽는다.
+#
+# 항목 필드
+#   name      사람이 읽는 이름
+#   match     정본 페이지 URL 접두어 또는 호스트(문자열 하나 또는 목록). 비교할 때 scheme·www.·끝 슬래시·#조각은 무시한다.
+#             여러 항목이 맞으면 더 긴(구체적인) match 의 raw_urls 가 앞에 온다.
+#   raw_urls  raw.githubusercontent.com 경로. 첫 번째가 대표 원문이다.
+#   repo      GitHub 저장소(owner/name), ref 는 브랜치·태그
+#   relation  original          = 정본 페이지와 같은 문서의 원본(같은 글을 만드는 소스). 열면 '원문 열람'으로 인정한다
+#             official_artifact = 같은 기관이 낸 공식 산출물(스키마·온톨로지·노드셋·다른 판). 정본 페이지 본문은 아니다
+#             related           = 제3자 구현이거나 인용 문서가 설명하는 대상(논문의 온톨로지 파일 등)
+#   note      주의 사항
+#
+# 규칙: 여기에 넣는 raw URL 은 넣기 전에 실제로 받아서 200 과 내용(300바이트 이상)을 확인한다(verified_at).
+#       차단 여부는 이 파일에 적지 않는다. 열리는지는 실행할 때 check_urls.py 가 확인한다(네트워크 정책은 바뀔 수 있다).
+#       github.com/<owner>/<repo>/blob/<ref>/<path> 형식의 URL 은 이 파일에 없어도 mirror_for 가 raw 경로로 바꿔 준다.
+
+version: 1
+verified_at: '2026-09-25'
+mirrors:
+- name: VDA 5050 최신판 명세(GitHub 공식 저장소)
+  match: https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md
+  raw_urls:
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/README.md
+  repo: VDA5050/VDA5050
+  ref: main
+  relation: original
+  note: 공식 저장소 main 브랜치의 명세 원문(마크다운). 현재 main 은 3.0.0 판이다.
+- name: VDA 5050 저장소
+  match: https://github.com/VDA5050/VDA5050
+  raw_urls:
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/README.md
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/order.schema
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/factsheet.schema
+  repo: VDA5050/VDA5050
+  ref: main
+  relation: original
+  note: 공식 저장소 README·명세·JSON 스키마.
+- name: VDA 5050 2.0.0 (VDA 게시 PDF)
+  match: https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf
+  raw_urls:
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/2.0.0/VDA5050_EN_V1.md
+  repo: VDA5050/VDA5050
+  ref: 2.0.0
+  relation: official_artifact
+  note: 공식 저장소 2.0.0 태그의 마크다운 명세. 머리말에 'RELEASE CANDIDATE, FOR REVIEW' 문구가 남아 있어 VDA 게시 PDF 와 글자 단위로 같다고 확인하지 못했다.
+- name: VDA 5050 3.0.0 태그
+  match: https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN
+  raw_urls:
+  - https://raw.githubusercontent.com/VDA5050/VDA5050/3.0.0/VDA5050_EN.md
+  repo: VDA5050/VDA5050
+  ref: 3.0.0
+  relation: related
+  note: 보도자료가 알리는 3.0.0 판 명세 원문(공식 저장소 3.0.0 태그). 보도자료 본문은 아니다.
+- name: GS1 EPCIS·CBV 연결 데이터 모델
+  match: https://ref.gs1.org/epcis
+  raw_urls:
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/README.md
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/Ontology/EPCIS.ttl
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/Ontology/CBV.ttl
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/Ontology/README.md
+  repo: gs1/EPCIS
+  ref: master
+  relation: official_artifact
+  note: GS1 공식 EPCIS 저장소의 온톨로지(Turtle) 원본. 저장소 README 는 '초안이며 바뀔 수 있다'고 적고 있어 ref.gs1.org 게시판과 판이 다를 수 있다.
+- name: GS1 CBV 표준
+  match:
+  - https://ref.gs1.org/standards/cbv
+  - https://ref.gs1.org/cbv
+  raw_urls:
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/Ontology/CBV.ttl
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-LD-Context/cbv-context-bizstep.jsonld
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/README.md
+  repo: gs1/EPCIS
+  ref: master
+  relation: official_artifact
+  note: CBV 어휘의 기계가독 산출물(온톨로지·JSON-LD 컨텍스트). CBV 표준 문서 본문은 아니다.
+- name: GS1 EPCIS 표준
+  match: https://ref.gs1.org/standards/epcis
+  raw_urls:
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/README.md
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/REST%20Bindings/openapi.yaml
+  - https://raw.githubusercontent.com/gs1/EPCIS/master/JSON-Schema/EPCIS-JSON-Schema-root.json
+  repo: gs1/EPCIS
+  ref: master
+  relation: official_artifact
+  note: EPCIS 2.0 의 JSON 스키마·REST 바인딩(OpenAPI) 원본. 표준 문서 본문은 아니다.
+- name: 'ROS 2 Design: ros2_dds_security'
+  match: https://design.ros2.org/articles/ros2_dds_security.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/180_ros2_dds_security.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: ros2_threat_model'
+  match: https://design.ros2.org/articles/ros2_threat_model.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/183_ros2_threat_model.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: ros2_access_control_policies'
+  match: https://design.ros2.org/articles/ros2_access_control_policies.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/181_ros2_access_control_policies.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: ros2_security_enclaves'
+  match: https://design.ros2.org/articles/ros2_security_enclaves.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/182_ros2_security_enclaves.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: node_lifecycle'
+  match: https://design.ros2.org/articles/node_lifecycle.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/node_lifecycle.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: qos'
+  match: https://design.ros2.org/articles/qos.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/qos.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: actions'
+  match: https://design.ros2.org/articles/actions.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/actions.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: 'ROS 2 Design: ros_on_dds'
+  match: https://design.ros2.org/articles/ros_on_dds.html
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/articles/020_ros_with_dds.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: original
+  note: design.ros2.org 를 만드는 Jekyll 원본(gh-pages 브랜치). 문서 머리의 permalink 가 이 URL 과 같다.
+- name: ROS 2 Design 사이트
+  match: https://design.ros2.org
+  raw_urls:
+  - https://raw.githubusercontent.com/ros2/design/gh-pages/README.md
+  repo: ros2/design
+  ref: gh-pages
+  relation: related
+  note: 사이트 저장소 README. 개별 글은 articles/ 아래 원본을 쓴다.
+- name: 'Programming Multiple Robots with ROS 2: rmf-core'
+  match: https://osrf.github.io/ros2multirobotbook/rmf-core.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_workcells'
+  match: https://osrf.github.io/ros2multirobotbook/integration_workcells.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_workcells.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: task_types'
+  match: https://osrf.github.io/ros2multirobotbook/task_types.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_types.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_fleets_action_tutorial'
+  match: https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_action_tutorial.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: intro'
+  match: https://osrf.github.io/ros2multirobotbook/intro.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/intro.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration'
+  match: https://osrf.github.io/ros2multirobotbook/integration.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_fleets'
+  match: https://osrf.github.io/ros2multirobotbook/integration_fleets.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_doors'
+  match: https://osrf.github.io/ros2multirobotbook/integration_doors.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_doors.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_lifts'
+  match: https://osrf.github.io/ros2multirobotbook/integration_lifts.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_lifts.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_nav-maps'
+  match: https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_nav-maps.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: traffic-editor'
+  match: https://osrf.github.io/ros2multirobotbook/traffic-editor.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: task'
+  match: https://osrf.github.io/ros2multirobotbook/task.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: task_new'
+  match: https://osrf.github.io/ros2multirobotbook/task_new.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task_new.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: security'
+  match: https://osrf.github.io/ros2multirobotbook/security.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/security.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: simulation'
+  match: https://osrf.github.io/ros2multirobotbook/simulation.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/simulation.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: 'Programming Multiple Robots with ROS 2: integration_fleets_adapter_tutorial'
+  match: https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_adapter_tutorial.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: mdBook 원본(src/<장>.md). osrf.github.io/ros2multirobotbook 의 같은 이름 .html 로 빌드된다.
+- name: Programming Multiple Robots with ROS 2 (책 전체)
+  match: https://osrf.github.io/ros2multirobotbook
+  raw_urls:
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/SUMMARY.md
+  - https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/README.md
+  repo: osrf/ros2multirobotbook
+  ref: master
+  relation: original
+  note: 책 목차(SUMMARY.md). 개별 장은 src/<장>.md.
+- name: IDTA 서브모델 템플릿 목록
+  match: https://github.com/admin-shell-io/submodel-templates
+  raw_urls:
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/README.md
+  repo: admin-shell-io/submodel-templates
+  ref: main
+  relation: related
+  note: IDTA 공식 서브모델 템플릿 저장소 README. IDTA 사이트(industrialdigitaltwin.org) 쪽 정본 URL 은 열람을 확인하지 못해 match 에 넣지 않았다.
+- name: IDTA 02020 Capability Description
+  match: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description
+  raw_urls:
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/IDTA%2002020_Submodel_Capability_Description.pdf
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/IDTA%2002020_Template_Capability_Description.json
+  repo: admin-shell-io/submodel-templates
+  ref: main
+  relation: official_artifact
+  note: IDTA 공식 저장소의 능력 기술(Capability Description) 서브모델 명세 PDF·템플릿 JSON.
+- name: IDTA 02047 Technical Data for AGV
+  match: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles
+  raw_urls:
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/README.md
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Submodel_Technical%20Data%20for%20AGV%20.pdf
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json
+  repo: admin-shell-io/submodel-templates
+  ref: main
+  relation: official_artifact
+  note: IDTA 공식 저장소의 무인운반차(AGV) 기술 데이터 서브모델 명세 PDF·템플릿 JSON.
+- name: IDTA 02045 Data Model for Asset Location
+  match: https://github.com/admin-shell-io/submodel-templates/tree/main/published/Data%20Model%20for%20Asset%20Location
+  raw_urls:
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Data%20Model%20for%20Asset%20Location/1/0/README.md
+  - https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Data%20Model%20for%20Asset%20Location/1/0/IDTA%2002045-1-0_Submodel_Data%20Model%20for%20Asset%20Location.pdf
+  repo: admin-shell-io/submodel-templates
+  ref: main
+  relation: official_artifact
+  note: IDTA 공식 저장소의 자산 위치 데이터 모델 서브모델 명세.
+- name: OPC UA for Robotics (OPC 40010-1) 노드셋
+  match:
+  - https://reference.opcfoundation.org/specs/OPC-40010-1
+  - https://reference.opcfoundation.org/Robotics
+  raw_urls:
+  - https://raw.githubusercontent.com/OPCFoundation/UA-Nodeset/latest/Robotics/Opc.Ua.Robotics.NodeSet2.xml
+  - https://raw.githubusercontent.com/OPCFoundation/UA-Nodeset/latest/Robotics/Opc.Ua.Robotics.Nodeset2.documentation.csv
+  - https://raw.githubusercontent.com/OPCFoundation/UA-Nodeset/latest/Robotics/Opc.Ua.Robotics.NodeIds.csv
+  repo: OPCFoundation/UA-Nodeset
+  ref: latest
+  relation: official_artifact
+  note: OPC Foundation 공식 노드셋(정보 모델의 기계가독 정의). 명세 본문은 아니다.
+- name: MassRobotics AMR 상호운용성 표준
+  match:
+  - https://www.massrobotics.org/autonomous-mobile-robot-standards-published-by-massrobotics
+  - https://www.massrobotics.org/project/amrinteroperability
+  - https://github.com/MassRobotics-AMR/AMR_Interop_Standard
+  raw_urls:
+  - https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/README.md
+  - https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/AMR_Interop_Standard.pdf
+  - https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/AMR_Interop_Standard.json
+  repo: MassRobotics-AMR/AMR_Interop_Standard
+  ref: main
+  relation: official_artifact
+  note: MassRobotics 공식 저장소의 표준 본문 PDF·JSON 스키마·README. 인용한 발표 페이지(보도문) 본문은 아니다.
+- name: W3C SSN/SOSA
+  match: https://www.w3.org/TR/vocab-ssn
+  raw_urls:
+  - https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/index.html
+  - https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/integrated/sosa.ttl
+  - https://raw.githubusercontent.com/w3c/sdw/gh-pages/ssn/integrated/ssn.ttl
+  repo: w3c/sdw
+  ref: gh-pages
+  relation: official_artifact
+  note: W3C·OGC 작업반 저장소의 편집자 초안(respec 원본)과 온톨로지 파일. /TR 게시판(권고안)과 문구가 다를 수 있다.
+- name: IEEE 1872.2 AuR 온톨로지(OWL)
+  match:
+  - https://standards.ieee.org/standard/1872_2-2021.html
+  - https://standards.ieee.org/standard/1872_2-2021
+  - https://standards.ieee.org/ieee/1872.2
+  raw_urls:
+  - https://raw.githubusercontent.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2/main/AuR_IEEE1872-2.ttl
+  - https://raw.githubusercontent.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2/main/README.md
+  repo: hsu-aut/IndustrialStandard-ODP-IEEE1872-2
+  ref: main
+  relation: related
+  note: 헬무트 슈미트 대학(HSU) 자동화 연구실이 공개한 IEEE 1872.2 AuR 온톨로지 OWL 구현(제3자). IEEE 표준 문서 본문이 아니다.
+- name: KnowRob
+  match:
+  - https://ai.uni-bremen.de/papers/beetz18knowrob.pdf
+  - https://www.knowrob.org
+  raw_urls:
+  - https://raw.githubusercontent.com/knowrob/knowrob/dev/README.md
+  - https://raw.githubusercontent.com/knowrob/knowrob/dev/owl/knowrob.owl
+  repo: knowrob/knowrob
+  ref: dev
+  relation: related
+  note: KnowRob 공식 저장소의 README·온톨로지. 논문 본문이 아니다.
+- name: SOMA
+  match:
+  - https://arxiv.org/abs/2011.11972
+  - https://arxiv.org/pdf/2011.11972
+  - https://ease-crc.github.io/soma
+  raw_urls:
+  - https://raw.githubusercontent.com/ease-crc/soma/master/README.md
+  - https://raw.githubusercontent.com/ease-crc/soma/master/owl/SOMA.owl
+  - https://raw.githubusercontent.com/ease-crc/soma/master/owl/SOMA-ACT.owl
+  repo: ease-crc/soma
+  ref: master
+  relation: related
+  note: SOMA 공식 저장소의 README·OWL 파일. 논문 본문이 아니다.
+- name: 'NIST ARIAC 문서: challenges'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/challenges.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: 'NIST ARIAC 문서: scoring'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/scoring.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/scoring.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: 'NIST ARIAC 문서: scenario'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/scenario.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/scenario.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: 'NIST ARIAC 문서: api'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/api.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/api.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: 'NIST ARIAC 문서: sensors'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/sensors.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/sensors.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: 'NIST ARIAC 문서: startup'
+  match: https://pages.nist.gov/ARIAC_docs/en/latest/pages/startup.html
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/startup.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트의 Sphinx 원본(reStructuredText).
+- name: NIST ARIAC 문서
+  match:
+  - https://pages.nist.gov/ARIAC_docs/en/latest
+  - https://pages.nist.gov/ARIAC_docs
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/index.rst
+  repo: usnistgov/ARIAC_docs
+  ref: main
+  relation: original
+  note: ARIAC 문서 사이트 첫 페이지의 Sphinx 원본(docs/index.rst). 현재 내용은 ARIAC 2025 기준이다.
+- name: NIST ARIAC 소스
+  match: https://github.com/usnistgov/ARIAC
+  raw_urls:
+  - https://raw.githubusercontent.com/usnistgov/ARIAC/ariac2025/README.md
+  repo: usnistgov/ARIAC
+  ref: ariac2025
+  relation: original
+  note: ARIAC 시뮬레이터 저장소 README(기본 브랜치 ariac2025).
+- name: buildingSMART IFC 4.3
+  match:
+  - https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3
+  - https://ifc43-docs.standards.buildingsmart.org
+  raw_urls:
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/content/introduction.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/content/scope.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcDoor.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcStair.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcWall.md
+  - https://raw.githubusercontent.com/buildingSMART/IFC4.3.x-development/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md
+  repo: buildingSMART/IFC4.3.x-development
+  ref: ifc4.3-main
+  relation: official_artifact
+  note: IFC 4.3 문서의 마크다운 원본(개발 브랜치). 게시된 IFC 4.3 ADD2 판과 문구가 다를 수 있다.
+- name: OGC IndoorGML 2.0 Part 1 (22-045r5)
+  match:
+  - https://docs.ogc.org/is/22-045r5/22-045r5.html
+  - https://docs.ogc.org/is/22-045r5/22-045r5.pdf
+  raw_urls:
+  - https://raw.githubusercontent.com/opengeospatial/IndoorGML-SWG/master/IndoorGML2/Archive/IndoorGML-22-045r5/22-045r5.html
+  - https://raw.githubusercontent.com/opengeospatial/IndoorGML-SWG/master/IndoorGML2/Archive/IndoorGML-22-045r5/22-045r5.pdf
+  repo: opengeospatial/IndoorGML-SWG
+  ref: master
+  relation: original
+  note: OGC IndoorGML 표준 작업반(SWG) 저장소에 보관된 같은 문서 번호(22-045r5)의 HTML·PDF.
+- name: OGC IndoorGML
+  match:
+  - https://www.ogc.org/standards/indoorgml
+  - https://www.indoorgml.net
+  raw_urls:
+  - https://raw.githubusercontent.com/opengeospatial/IndoorGML-SWG/master/README.md
+  - https://raw.githubusercontent.com/opengeospatial/IndoorGML-SWG/master/26-042.html
+  - https://raw.githubusercontent.com/opengeospatial/IndoorGML-SWG/master/26-043.html
+  repo: opengeospatial/IndoorGML-SWG
+  ref: master
+  relation: related
+  note: IndoorGML SWG 저장소 README 와 2.0 Part 2 인코딩 초안(26-042 XML, 26-043 JSON).

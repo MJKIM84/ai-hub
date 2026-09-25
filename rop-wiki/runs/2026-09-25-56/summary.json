@@ -1,0 +1,139 @@
+{
+  "run_id": "2026-09-25-56",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 22,
+    "area_name": "22. 시뮬레이션·예측용 디지털 트윈",
+    "category": "F. 도입·검증·유지관리"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 12,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "6b89a0d",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 23,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2532.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 22. 시뮬레이션·예측용 디지털 트윈 | 영역 심화: 3~11절 신규 작성(1차 조건부 승인 수정 16건·2차 수정 11건 반영, 트랙 floorplan-recognition 반영 제안 8절 반영) | run 2026-09-25-56",
+  "notes": [
+    "참고문헌 생성: references/ref-516.md",
+    "참고문헌 생성: references/ref-517.md",
+    "참고문헌 생성: references/ref-518.md",
+    "참고문헌 생성: references/ref-519.md",
+    "참고문헌 생성: references/ref-520.md",
+    "참고문헌 생성: references/ref-521.md",
+    "참고문헌 생성: references/ref-522.md",
+    "참고문헌 생성: references/ref-523.md",
+    "참고문헌 생성: references/ref-524.md",
+    "참고문헌 생성: references/ref-525.md",
+    "참고문헌 생성: references/ref-526.md",
+    "참고문헌 생성: references/ref-527.md",
+    "용어집 생성: glossary/digital-thread.md",
+    "용어집 생성: glossary/digital-twin-composition.md",
+    "용어집 생성: glossary/verification-and-validation-of-simulation-models.md",
+    "세부영역 반영 제안 1건을 반영으로 표시했다(22. 시뮬레이션·예측용 디지털 트윈, 실행 2026-09-25-56)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 12,
+    "standards": 4,
+    "open_questions": 3,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 15:45:01 KST",
+  "usage": {
+    "input_tokens": 48,
+    "cache_creation_input_tokens": 833260,
+    "cache_read_input_tokens": 2059664,
+    "output_tokens": 227595,
+    "cost_usd": 12.4384,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.0776,
+        "output_tokens": 33355,
+        "cache_read_input_tokens": 1004685,
+        "cache_creation_input_tokens": 79900
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.0149,
+        "output_tokens": 39296,
+        "cache_read_input_tokens": 693327,
+        "cache_creation_input_tokens": 112570
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 6.1817,
+        "output_tokens": 137012,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 425451
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.0795,
+        "output_tokens": 16940,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 213780
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 4,
+  "cross_checked_findings": 1
+}

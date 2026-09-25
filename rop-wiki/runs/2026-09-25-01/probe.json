@@ -1,0 +1,28 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": false,
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "checked_at": "2026-09-25 01:02:22 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "GS1 EPCIS is a standard for capturing and sharing supply chain visibility event data, and version 2.0 adds JSON and API support.",
+      "elapsed_sec": 15.4,
+      "num_turns": 3
+    },
+    "web_fetch": {
+      "available": false,
+      "detail": "WebFetch failed with error: proxy refused the connection.",
+      "elapsed_sec": 7.1,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch"
+    },
+    "web_fetch_curl": {
+      "available": false,
+      "status": 0,
+      "detail": "curl: (56) CONNECT tunnel failed, response 403"
+    }
+  },
+  "web_fetch_override": true,
+  "web_fetch_override_source": "--allow-no-fetch"
+}

@@ -1,0 +1,454 @@
+{
+  "run_id": "2026-09-25-29",
+  "outline": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/index.md",
+      "section": "다른 대분류와의 연결",
+      "budget_chars": 4200,
+      "summary": "A. 업무·공급망 설계의 네 세부영역이 B~G 여섯 대분류의 세부영역으로 넘어가는 지점을 연결 22건으로 정리한다. 예를 들어 VDA 5050은 외부 IT 시스템 인터페이스를 범위에서 빼므로 상위 주문을 로봇 작업 요청으로 번역하는 계층이 넘겨받는 지점이 될 것으로 보인다. [추정][^ref-031]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/index.md",
+      "section": "참고 자료",
+      "budget_chars": 0,
+      "summary": "연결 절에서 쓴 각주 23건의 정의를 기존 ref-002 줄 뒤에 덧붙인다(원문 미열람 출처 12건 표시)."
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "'다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 연결 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가",
+      "patches": [
+        {
+          "section": "다른 대분류와의 연결",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-002",
+              "ref-023",
+              "ref-031",
+              "ref-044",
+              "ref-049",
+              "ref-060",
+              "ref-098",
+              "ref-101",
+              "ref-102",
+              "ref-103",
+              "ref-104",
+              "ref-105",
+              "ref-111",
+              "ref-115",
+              "ref-121",
+              "ref-125",
+              "ref-129",
+              "ref-130",
+              "ref-132",
+              "ref-133",
+              "ref-134",
+              "ref-146",
+              "ref-148",
+              "ref-149"
+            ]
+          },
+          "content": "A. 업무·공급망 설계가 정한 업무는 다른 여섯 대분류의 세부영역으로 넘어가 실행되고 측정된다. 예를 들어 VDA 5050 은 외부 IT 시스템과의 인터페이스를 범위에서 제외하므로, 상위 주문을 로봇 작업 요청으로 번역하는 계층이 넘겨받는 지점이 될 것으로 보인다. [추정][^ref-031][^ref-125]\n\n아래 연결은 게시된 1~4 세부영역 페이지에서 검증된 주장을 근거로 한다. 연결 상대 세부영역은 대부분 아직 심화 조사 전이라, 상대편에 관한 서술도 A. 업무·공급망 설계 쪽 근거에 기댄다. 확인일은 2026-09-25이고, 출처별 발행일은 참고 자료 절의 각주에 있다.\n\n```mermaid\nflowchart LR\n  a1[\"1. 주문·업무 시스템 연계\"]\n  a2[\"2. 공정·워크플로 모델링\"]\n  a3[\"3. 처리능력·거점·설비 계획\"]\n  a4[\"4. 성과·경제성·프로세스 개선\"]\n  b7[\"7. 화물·재고·자산 식별과 추적\"]\n  b8[\"8. 실시간 세계 상태·데이터 일관성\"]\n  c9[\"9. 로봇·제조사 관제 연동\"]\n  c10[\"10. 설비·건물 시스템 연동\"]\n  c12[\"12. 명령·작업 실행의 신뢰성\"]\n  d13[\"13. 작업 배정 — MRTA\"]\n  d14[\"14. 작업 순서·스케줄링\"]\n  d16[\"16. 공용 자원·충전·에너지 최적화\"]\n  e17[\"17. 로봇 간 협업·물리적 인계\"]\n  e19[\"19. 모니터링·이상 탐지·원인 분석\"]\n  e20[\"20. 예외 복구·재계획·업무 연속성\"]\n  f22[\"22. 시뮬레이션·예측용 디지털 트윈\"]\n  f23[\"23. 시험·형식 검증·벤치마크\"]\n  g28[\"28. 표준·상호운용성·다사업자 거버넌스\"]\n  a1 --> c9\n  a1 --> c12\n  a1 --> d13\n  a1 --> d14\n  a1 --> e20\n  a1 --> g28\n  a2 --> b7\n  a2 --> c12\n  a2 --> e17\n  a2 --> f23\n  a3 --> c10\n  a3 --> d13\n  a3 --> d16\n  a3 --> f22\n  a4 --> b8\n  a4 --> d16\n  a4 --> e19\n  a4 --> f22\n```\n\n### [B. 공통 정보·환경 모델](../b-common-information-and-environment-model/index.md)\n\n- **[2. 공정·워크플로 모델링](02-process-and-workflow-modeling.md) ↔ [7. 화물·재고·자산 식별과 추적](../b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)** — '운반 완료'와 '인수 확인·재고 반영 완료'를 잇는 신호가 여기서 나온다. GS1 핵심 업무 어휘(Core Business Vocabulary, CBV)는 객체가 위치에 도착하는 arriving, 수령자 재고에 추가되는 receiving, 점유·소유가 바뀌는 accepting 을 서로 다른 업무 단계로 정의한다. [사실][^ref-044] VDA 5050 은 drop 동작의 완료를 적재물이 로봇을 떠나고 로봇이 새 적재 상태를 보고한 때로 정의한다. [사실][^ref-031] 로봇 완료 신호는 arriving 수준의 물리적 인도에 가까우므로, 공정 모델의 '인수 확인·재고 반영 완료' 조건은 7. 화물·재고·자산 식별과 추적이 다루는 식별자와 receiving·accepting 이벤트에 기대야 할 것으로 보인다. [추정][^ref-044][^ref-031][^ref-049] 이 구성을 적용한 표준·사례는 확인하지 못했다([열린 질문](../../open-questions.md) oq-001, oq-012).\n- **[4. 성과·경제성·프로세스 개선](04-performance-economics-and-process-improvement.md) ↔ [8. 실시간 세계 상태·데이터 일관성](../b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)** — Open-RMF 로봇 상태 스키마는 상태 값(idle·charging·working·error 등), 0~1 범위의 배터리, 현재 작업 id, 운영자가 대응할 문제 목록, 위치, 기록 시각을 담는다. [사실][^ref-148] 이 필드들은 가동률·충전 시간·오류 시간 같은 성과 지표를 계산하는 원천이 될 것으로 보이며, 이 연결은 현재 상태를 표현하는 8. 실시간 세계 상태·데이터 일관성 쪽에 속한다. [추정][^ref-148]\n\n### [C. 연결·실행 기반](../c-connectivity-and-execution-foundation/index.md)\n\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)** — VDA 5050 3.0.0 명세는 관제 시스템과 이동로봇 사이 통신에 해당하지 않는 인터페이스, 곧 주변 설비·인프라·외부 IT 시스템과의 인터페이스를 범위에서 뺀다. [사실][^ref-031] 이처럼 로봇 인터페이스가 상위 시스템 연동을 범위 밖에 두므로, 상위 주문을 로봇 작업 요청(Open-RMF 작업 요청 등)으로 번역하는 계층이 두 대분류가 넘겨받는 지점이 될 것으로 보인다. [추정][^ref-031][^ref-125] 이 번역 계층을 규정한 표준은 확인하지 못했다.\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md)·[2. 공정·워크플로 모델링](02-process-and-workflow-modeling.md) ↔ [12. 명령·작업 실행의 신뢰성](../c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)** — 상위 쪽 변경·취소 명령이 로봇 쪽 실행 상태와 만나는 지점이다. B2MML 거래 프로파일은 CHANGE·CANCEL 등의 거래 동사를 정의한다. [사실][^ref-129] OPC UA for ISA-95 Job Control 은 Update·Pause·Resume·Abort·Cancel 등의 작업 지시 메서드를 정의한다. [사실][^ref-130] 로봇 쪽 VDA 5050 은 주문을 수행하는 중에 다른 주문을 받으면 로봇이 OTHER_ORDER_ACTIVE 오류를 경고(WARNING) 수준으로 보고하게 한다. 취소할 수 없는 동작은 주문 취소(cancelOrder) 뒤에도 실행 중(RUNNING)을 거쳐 완료(FINISHED) 또는 실패(FAILED)로 보고하게 한다. [사실][^ref-031] Open-RMF 작업 상태 스키마는 queued·underway·completed·canceled·killed·failed 등의 상태 값, 시작·종료 시각, 소요 시간 추정, 취소·강제 종료·중단 요청 기록을 담는다. [사실][^ref-111] 이 기록은 두 세부영역이 상위 시스템에 되돌려 줄 결과의 원천이 될 것으로 보인다. [추정][^ref-111]\n- **[3. 처리능력·거점·설비 계획](03-capacity-site-and-facility-planning.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)** — Open-RMF 데모의 호텔 환경은 승강기 2대, 여러 문, 3개 플릿(로봇 4대)이 다층 건물에서 함께 일하는 구성을 보이고, 공간과 승강기·문 같은 건물 설비를 공유하는 로봇의 교통 관리를 설명한다. [사실][^ref-104] 병원 약품 배송 로봇 사례에서는 승강기 가동률이 높을수록 배송 실패가 많고 배송 시간이 길었다. [사실][^ref-060] 다층 호텔의 배송 로봇 연구는 승강기를 경로 계획 안의 대기·운행 시간으로 모델링했다. [사실][^ref-103] 두 사례는 병원·호텔이며 물류센터 적용 여부는 미확인이다([열린 질문](../../open-questions.md) oq-010). 3. 처리능력·거점·설비 계획은 승강기를 처리능력의 제약 입력으로만 받는다. 승강기 제어 자체는 분류 원문 9장의 시설·설비 제어 경계에 따라 연계 대상이며, ROP 는 10. 설비·건물 시스템 연동을 통해 작업 요청·예약·상태 확인을 맡는다.\n\n### [D. 계획·최적화](../d-planning-and-optimization/index.md)\n\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md) ↔ [14. 작업 순서·스케줄링](../d-planning-and-optimization/14-task-sequencing-and-scheduling.md)** — 웨이브·웨이브리스 출고 지시 정책 연구(Gallien·Weber, 2010)와 동적으로 도착하는 주문의 피킹 재최적화 연구(Lorenz 외, 2025)는 상위 시스템의 출고 지시·우선순위 변경이 작업 순서 결정 문제로 넘어가는 지점을 다루는 것으로 보인다. [추정][^ref-134][^ref-133]\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md) ↔ [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md)** — 작업자가 피킹하고 자율이동로봇(Autonomous Mobile Robot, AMR)이 운반하는 동적 주문 피킹 연구(2025)는 AMR 가용성에 따른 개입 전략을 다룬다. 이 연구는 주문 변경과 로봇 배정이 맞물리는 사례가 될 것으로 보인다. [추정][^ref-132]\n- **[3. 처리능력·거점·설비 계획](03-capacity-site-and-facility-planning.md) ↔ [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md)** — Open-RMF 플릿 어댑터 템플릿 설정은 배터리가 recharge_threshold(예시값 0.10) 아래로 내려간 로봇에게 작업을 맡기지 않게 한다. 또 충전 목표(recharge_soc), 로봇별 충전기, 작업 종료 후 동작(park·charge·nothing)을 둔다. [사실][^ref-105]\n- **[3. 처리능력·거점·설비 계획](03-capacity-site-and-facility-planning.md) ↔ [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)** — AMR 물류센터 시뮬레이션 연구(2025)에서는 충전기가 부족하면 큰 지연이, 남으면 불필요한 비용이 생겼다. [사실][^ref-102] 로봇 이동형 풀필먼트 시스템(Robotic Mobile Fulfillment System, RMFS)의 충전·배터리 교환 전략을 비교한 연구(2018)도 있다. [사실][^ref-098]\n- **[4. 성과·경제성·프로세스 개선](04-performance-economics-and-process-improvement.md) ↔ [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)** — Omega(2024)에 실린 연구는 RMFS 에서 동적 우선순위 규칙이 선착순보다 에너지 소비를 3.41% 줄이고 처리량을 26.07% 높였다고 보고했다. 이 수치는 모델·시뮬레이션 조건의 저자 보고값이며 현장 실측이 아니다. [사실][^ref-146]\n\n### [E. 협업·현장 운영](../e-collaboration-and-field-operations/index.md)\n\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md) ↔ [20. 예외 복구·재계획·업무 연속성](../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)** — 상위 시스템의 취소(CANCEL)가 로봇이 화물을 이미 실은 뒤에 오거나, 취소할 수 없는 동작이 끝까지 수행될 수 있다. 이 경우 되돌림 작업과 재고 반영이 복구·재계획 과제로 넘어갈 것으로 보인다. [추정][^ref-031][^ref-129] 되돌림 규칙을 정한 표준·사례는 확인하지 못했다([열린 질문](../../open-questions.md) oq-021).\n- **[2. 공정·워크플로 모델링](02-process-and-workflow-modeling.md) ↔ [17. 로봇 간 협업·물리적 인계](../e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)** — 공정 모델이 완료 조건으로 삼을 수 있는 인계 확인 신호가 여기에 있다. Open-RMF 배송 작업에서 로봇은 하역 지점의 워크셀(workcell)에 IngestorRequest 를 보내고, IngestorResult 를 받을 때까지 이를 반복한다. [사실][^ref-023] IngestorResult 는 시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다. [사실][^ref-049]\n- **[4. 성과·경제성·프로세스 개선](04-performance-economics-and-process-improvement.md) ↔ [19. 모니터링·이상 탐지·원인 분석](../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md)** — 제조 처리량의 병목 탐지 방법을 검토한 문헌(2023)과 창고 이벤트 로그에 프로세스 마이닝을 적용한 사례(2015)가 있다. 이를 로봇 상태 기록에 적용하면 성과 분석과 이상·원인 분석이 같은 로그를 공유할 것으로 보인다. [추정][^ref-115][^ref-149][^ref-148] 이런 적용 연구는 확인하지 못했다([열린 질문](../../open-questions.md) oq-018).\n\n### [F. 도입·검증·유지관리](../f-deployment-verification-and-maintenance/index.md)\n\n- **[2. 공정·워크플로 모델링](02-process-and-workflow-modeling.md) ↔ [23. 시험·형식 검증·벤치마크](../f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)** — 워크플로 넷의 건전성(soundness) 판정 복잡도를 다룬 연구(2022)가 있다. 따라서 공정 모델의 형식적 설계 점검은 형식 검증과 이어질 것으로 보인다. [추정][^ref-121] 물류 로봇 공정에 적용한 사례는 확인하지 못했다.\n- **[3. 처리능력·거점·설비 계획](03-capacity-site-and-facility-planning.md) ↔ [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)** — RAWSim-O 는 RMFS 운영의 여러 결정 문제가 미치는 효과를 연구하기 위한 이산 사건 시뮬레이션이다. [사실][^ref-101] 이런 도구는 증차·증설처럼 가정한 미래를 실험하는 데 쓰일 것으로 보인다. [추정][^ref-101]\n- **[4. 성과·경제성·프로세스 개선](04-performance-economics-and-process-improvement.md) ↔ [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)** — 우선순위 정책이나 충전 대안을 운영 전에 비교하는 일은 가정한 미래를 실험하는 22. 시뮬레이션·예측용 디지털 트윈 쪽 일이다. 이 일은 현재 상태를 표현하는 8. 실시간 세계 상태·데이터 일관성과 역할을 나눠 연결될 것으로 보인다. [추정][^ref-146][^ref-102]\n\n### [G. 안전·보안·지능·거버넌스](../g-safety-security-intelligence-and-governance/index.md)\n\n- **[1. 주문·업무 시스템 연계](01-order-and-business-system-integration.md) ↔ [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)** — ISA-95 계열의 작업 지시 동사·메서드와 VDA 5050·Open-RMF 의 주문·작업 요청을 잇는 표준 매핑은 이번 조사 범위에서 확인되지 않았다. 그래서 번역 규칙을 누가 소유하고 누가 변경을 승인하는지가 상호운용성 거버넌스 과제로 넘어갈 것으로 보인다. [추정][^ref-129][^ref-130][^ref-031][^ref-125] 관련 질문은 [열린 질문](../../open-questions.md) oq-020 이다.\n\n### 아직 다루지 않은 연결\n\n11. 분산 시스템·통신·컴퓨팅 구조, 21. 온보딩·설정·현장 시운전, 24. 자산·소프트웨어 수명주기 관리, 25. 안전·위험 관리, 26. 사이버보안·접근권한·개인정보, 27. AI·학습·적응과 모델 운영과의 연결은 검증된 근거가 아직 없어 싣지 않았다. 해당 세부영역의 조사가 게시되면 보강한다."
+        },
+        {
+          "section": "참고 자료",
+          "action": "append",
+          "content": "\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25\n[^ref-049]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg, 접근일 2026-09-25\n[^ref-060]: Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments, 2026, https://doi.org/10.1177/20552076261437181, 접근일 2026-09-25 (원문 미열람)\n[^ref-098]: Zou, B., Gong, Y., de Koster, R., & Xu, X., Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system, 2018, https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901, 접근일 2026-09-25 (원문 미열람)\n[^ref-101]: Merschformann, M. (RAWSim-O GitHub), RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README), 미확인, https://github.com/merschformann/RAWSim-O, 접근일 2026-09-25\n[^ref-102]: Springer(FAIM 2025 발표 논문, 저자 미확인), Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics, 2025, https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69, 접근일 2026-09-25 (원문 미열람)\n[^ref-103]: PMC 게재 논문(저자 미확인), The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments, 미확인, https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/, 접근일 2026-09-25 (원문 미열람)\n[^ref-104]: Open Robotics (open-rmf), rmf_demos — Demonstrations of Open-RMF (README), 미확인, https://github.com/open-rmf/rmf_demos, 접근일 2026-09-25\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-111]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json, 접근일 2026-09-25\n[^ref-115]: Production & Manufacturing Research 게재 논문(저자 미확인, Chalmers 공개본), Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes, 2023, https://www.tandfonline.com/doi/full/10.1080/21693277.2023.2283031, 접근일 2026-09-25 (원문 미열람)\n[^ref-121]: Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022), The complexity of soundness in workflow nets, 2022, https://arxiv.org/abs/2201.05588, 접근일 2026-09-25 (원문 미열람)\n[^ref-125]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json, 접근일 2026-09-25 (원문 미열람)\n[^ref-129]: MESA International, B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd, 2023, https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd, 접근일 2026-09-25\n[^ref-130]: OPC Foundation, UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv), 2024-01-31, https://github.com/OPCFoundation/UA-Nodeset/tree/latest/ISA95-JOBCONTROL, 접근일 2026-09-25\n[^ref-132]: Yu, S., & Srinivas, S., Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations, 2025, https://www.sciencedirect.com/science/article/abs/pii/S1366554525001231, 접근일 2026-09-25 (원문 미열람)\n[^ref-133]: Lorenz, Otto, & Gendreau (Networks, Wiley), Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?, 2025, https://onlinelibrary.wiley.com/doi/full/10.1002/net.22281, 접근일 2026-09-25 (원문 미열람)\n[^ref-134]: Gallien, J., & Weber, T. G., To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter, 2010, https://pubsonline.informs.org/doi/abs/10.1287/msom.1100.0291, 접근일 2026-09-25 (원문 미열람)\n[^ref-146]: Omega 게재 논문(저자 미확인), The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority, 2024, https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336, 접근일 2026-09-25 (원문 미열람)\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-09-25\n[^ref-149]: Springer(학술대회 발표 논문, 저자 미확인), Material Movement Analysis for Warehouse Business Process Improvement with Process Mining: A Case Study, 2015, https://link.springer.com/chapter/10.1007/978-3-319-19509-4_9, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | A. 업무·공급망 설계 | 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 연결 22건 중 추정 9건) | run 2026-09-25-29",
+  "index_updates": {
+    "home_recent": "2026-09-25 — A. 업무·공급망 설계: 다른 대분류와의 연결 절을 새로 썼다(B. 공통 정보·환경 모델 ~ G. 안전·보안·지능·거버넌스, 연결 22건)",
+    "category_recent": "2026-09-25 — A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성. 1~4 세부영역이 7·8·9·10·12·13·14·16·17·19·20·22·23·28 세부영역과 이어지는 지점을 근거 각주와 함께 정리"
+  },
+  "glossary_updates": [],
+  "reference_updates": [
+    {
+      "id": "ref-023",
+      "org": "Open Robotics",
+      "title": "Workcells - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 워크셀(디스펜서·인제스터) 연동 장. 배송 작업의 요청–결과 반복을 mdBook 원본으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세(main 3.0.0). 범위 제외, OTHER_ORDER_ACTIVE, 취소 불가 동작, drop 완료 정의를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-044",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "CBV 온톨로지 원본. arriving·receiving·accepting·loading·unloading 업무 단계 정의를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-049",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "IngestorResult 메시지 정의. 시각·요청 id·워크셀 id·상태 세 값을 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-060",
+      "org": "Lee, Y. 외(Digital Health)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026",
+      "url": "https://doi.org/10.1177/20552076261437181",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 병원 약품 배송 로봇의 승강기 가동률과 배송 실패·시간 관계를 관찰한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-098",
+      "org": "Zou, B., Gong, Y., de Koster, R., & Xu, X.",
+      "title": "Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system",
+      "published": "2018",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 의 충전·배터리 교환 전략을 대기행렬 모델로 비교한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-101",
+      "org": "Merschformann, M. (RAWSim-O GitHub)",
+      "title": "RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)",
+      "published": null,
+      "url": "https://github.com/merschformann/RAWSim-O",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "RMFS 용 이산 사건 시뮬레이션 프레임워크 README를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-102",
+      "org": "Springer(FAIM 2025 발표 논문, 저자 미확인)",
+      "title": "Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics",
+      "published": "2025",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 유통 물류센터 팔레트 이동 데이터로 AMR 플릿·충전기 규모를 시뮬레이션한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-103",
+      "org": "PMC 게재 논문(저자 미확인)",
+      "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+      "published": null,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 다층 호텔 배송 로봇 경로 계획에서 승강기 대기·운행 시간을 모델링한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-104",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_demos — Demonstrations of Open-RMF (README)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 데모 README. 호텔·클리닉·공항 환경의 다중 플릿·승강기·문 공유를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 플릿 어댑터 템플릿 설정. 충전 임계값·충전 목표·충전기·작업 종료 후 동작을 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 상태 스키마. 상태 값, 시작·종료 시각, 추정 시간, 취소·강제 종료·중단 기록을 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-115",
+      "org": "Production & Manufacturing Research 게재 논문(저자 미확인, Chalmers 공개본)",
+      "title": "Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes",
+      "published": "2023",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/21693277.2023.2283031",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 제조 처리량 병목 탐지 방법의 체계적 문헌 검토.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-121",
+      "org": "Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022)",
+      "title": "The complexity of soundness in workflow nets",
+      "published": "2022",
+      "url": "https://arxiv.org/abs/2201.05588",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 워크플로 넷 건전성 판정의 계산 복잡도 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-125",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Open-RMF 작업 요청 스키마(이번 실행에서 다시 열지 않음).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-129",
+      "org": "MESA International",
+      "title": "B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd",
+      "published": "2023",
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "B2MML 거래 프로파일 스키마. TransactionVerb1Type 의 동사(CHANGE, CANCEL 등)를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-130",
+      "org": "OPC Foundation",
+      "title": "UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv)",
+      "published": "2024-01-31",
+      "url": "https://github.com/OPCFoundation/UA-Nodeset/tree/latest/ISA95-JOBCONTROL",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "OPC UA for ISA-95 Job Control 노드셋 문서. 작업 지시 수신 객체의 메서드(Store~Clear)를 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-132",
+      "org": "Yu, S., & Srinivas, S.",
+      "title": "Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations",
+      "published": "2025",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1366554525001231",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업자 피킹·AMR 운반 협업의 동적 주문 피킹과 개입 전략 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-133",
+      "org": "Lorenz, Otto, & Gendreau (Networks, Wiley)",
+      "title": "Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization?",
+      "published": "2025",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/net.22281",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 동적으로 도착하는 주문에서 피킹 재최적화 효과를 다룬 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-134",
+      "org": "Gallien, J., & Weber, T. G.",
+      "title": "To Wave or Not to Wave? Order Release Policies for Warehouses with an Automated Sorter",
+      "published": "2010",
+      "url": "https://pubsonline.informs.org/doi/abs/10.1287/msom.1100.0291",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 웨이브·웨이브리스 출고 지시 정책 비교 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-146",
+      "org": "Omega 게재 논문(저자 미확인)",
+      "title": "The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority",
+      "published": "2024",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 에너지 소비와 동적 우선순위 운영 정책의 성과 평가 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-148",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 로봇 상태 스키마. 상태 값·배터리·작업 id·문제 목록·위치·시각을 원문으로 확인.",
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    },
+    {
+      "id": "ref-149",
+      "org": "Springer(학술대회 발표 논문, 저자 미확인)",
+      "title": "Material Movement Analysis for Warehouse Business Process Improvement with Process Mining: A Case Study",
+      "published": "2015",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-19509-4_9",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 창고 자재 이동 이벤트 로그에 프로세스 마이닝을 적용한 사례 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/index.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "다른 대분류와의 연결 절: 11. 분산 시스템·통신·컴퓨팅 구조와의 연결(클라우드 WMS 단절 시 현장 운영)은 2026-09-25-27 브리프가 게시되면 검증된 근거로 보강한다.",
+    "다른 대분류와의 연결 절: 21. 온보딩·설정·현장 시운전, 24. 자산·소프트웨어 수명주기 관리, 25. 안전·위험 관리, 26. 사이버보안·접근권한·개인정보, 27. AI·학습·적응과 모델 운영과 1~4 세부영역 사이의 연결을 뒷받침하는 검증된 사실이 필요하다(현재 게시 페이지에 근거 없음).",
+    "연결 상대 세부영역(대부분 seed)이 심화된 뒤, 상대편 페이지의 검증된 주장으로 연결 서술을 양방향으로 재확인할 필요가 있다.",
+    "ref-102·ref-098·ref-146·ref-060·ref-103 등 원문 미열람 출처의 원문 확인이 필요하다(신뢰도 medium 상한 해소)."
+  ],
+  "fixes_applied": [
+    "섹션 제목 — patches 의 section 을 대분류 H2 그대로 '다른 대분류와의 연결'(번호 없음)로 썼고, 다른 원문 절은 건드리지 않았다(참고 자료 절은 13번 지시에 따라 끝에 각주 정의만 append).",
+    "f10 호칭 — '7번'을 '7. 화물·재고·자산 식별과 추적'으로 썼고, 대분류는 문자+이름(예 'B. 공통 정보·환경 모델'), 세부영역은 번호+이름으로만 썼다.",
+    "f11 — IngestorResult 문장을 '시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다'로 고쳤다.",
+    "f13 — 충전기 부족·과잉 문장에는 [^ref-102]만, 충전·배터리 교환 전략 비교 문장에는 [^ref-098]만 달아 두 문장으로 나눴다.",
+    "f16 — 병원 사례 문장에 [^ref-060], 호텔 사례 문장에 [^ref-103]을 따로 달고 '물류센터 적용 여부는 미확인'(oq-010)을 유지했으며, 승강기는 3. 처리능력·거점·설비 계획의 제약 입력으로만 쓰고 승강기 제어는 분류 원문 9장 경계에 따른 연계 대상으로 짧게 두었다.",
+    "f20 — 3.41%·26.07% 문장에 '모델·시뮬레이션 조건의 저자 보고값이며 현장 실측이 아니다'를 함께 썼다.",
+    "f5·f17·f18 — 스키마·README 내용만 [사실]로 쓰고, '상위 시스템에 되돌릴 결과의 원천', '가정한 미래를 실험하는 도구', '성과 지표의 원천' 해석은 별도 문장의 [추정]으로 분리했다.",
+    "[추정] finding(f2·f6·f7·f8·f10·f12·f19·f21·f22) — 모두 '~것으로 보인다' 문형과 [추정] 태그로 썼고, f22 는 '이번 조사 범위에서 확인되지 않았다'로 쓰고 oq-020 을 연결했다.",
+    "f21 — 22. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)과 8. 실시간 세계 상태·데이터 일관성(현재 상태를 표현)의 구분 문장을 유지했고, f18 은 B. 공통 정보·환경 모델의 8. 실시간 세계 상태·데이터 일관성 연결로만 썼다.",
+    "원문 미열람 각주 — ref-125·ref-132·ref-133·ref-134·ref-121·ref-102·ref-098·ref-060·ref-103·ref-115·ref-149·ref-146 각주 정의 끝에 ' (원문 미열람)'을 붙이고 reference_updates 에서 source_unopened: true 로 두었으며, 원문을 연 출처 11건에는 붙이지 않았다.",
+    "직접 인용 — ref-031 의 영문 구절(f1·f3·f9)을 옮기지 않고 모두 한국어로 요약·재서술했다(식별자 값 OTHER_ORDER_ACTIVE·RUNNING 등만 표기).",
+    "연결 범위 — 11·21·24·25·26·27 세부영역과의 연결은 쓰지 않고 '아직 다루지 않은 연결'로 근거 없음만 밝혔으며, G. 안전·보안·지능·거버넌스 연결은 f22(28. 표준·상호운용성·다사업자 거버넌스)만 썼다.",
+    "링크·각주 — 대분류·세부영역 링크를 index.md 기준 상대 경로(.md 포함, 같은 대분류는 파일명)로 썼고, 각주 정의 23건은 '참고 자료' 절 끝에 append 패치로 덧붙여 기존 ref-002 문장·각주는 바꾸지 않았다."
+  ]
+}

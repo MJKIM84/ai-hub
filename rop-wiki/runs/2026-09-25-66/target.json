@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-09-25-66",
+  "date": "2026-09-25",
+  "weekday": "Fri",
+  "run_number": 66,
+  "run_type": "track",
+  "forced": true,
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "category_letter": "D"
+  },
+  "topic": null,
+  "track": {
+    "slug": "nl-task-chatbot",
+    "name": "자연어 업무 지시 챗봇",
+    "stage": 3,
+    "stages": 5,
+    "stage_name": "구현 가설 설계",
+    "question_ids": [
+      "q3-01"
+    ],
+    "user_questions": [],
+    "runs_per_week": 3,
+    "question_rationale": "CLI 지정 질문 id"
+  },
+  "corrections": [],
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "priority_reason": null,
+  "priority_questions": [],
+  "excluded_areas": [],
+  "lifted_areas": [],
+  "deferred": {
+    "monthly_recheck": false,
+    "weekly_review": true
+  },
+  "selection_rationale": "CLI 지정 run_type=track, area=13; 트랙 실행일(Fri, track_days 앞 3개) → 트랙 nl-task-chatbot 단계 3, 질문 q3-01 (CLI 지정 질문 id)"
+}

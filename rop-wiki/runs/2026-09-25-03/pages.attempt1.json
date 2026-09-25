@@ -1,0 +1,451 @@
+{
+  "run_id": "2026-09-25-03",
+  "outline": [
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "1. 세 줄 요약",
+      "budget_chars": 330,
+      "summary": "EPCIS·CBV의 위치·끝점 필드 정의, ROP의 이벤트 조립 역할(추정), 매핑 부재(추정)를 세 줄로 요약한다.",
+      "planned_findings": [
+        "f5",
+        "f3",
+        "f17",
+        "f18",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "2. 배경",
+      "budget_chars": 260,
+      "summary": "7. 화물·재고·자산 식별과 추적의 원문 질문과 oq-001에서 출발했고, 인터페이스 보고는 기존 주제 페이지가 다룬다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "3. 본문",
+      "budget_chars": 1400,
+      "summary": "EPCIS 2.0은 readPoint·bizLocation·source/destination을 따로 정의하고 CBV의 loading은 운송 수단 적재로 정의된다. [사실][^ref-045][^ref-044] 로봇 완료 신호는 개체 식별이 약해 WMS 식별자와 결합하는 구조가 필요해 보인다. [추정][^ref-049][^ref-022]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "4. 현장 시나리오",
+      "budget_chars": 450,
+      "summary": "출하 단계에서 로봇이 팔레트를 출하 대기 구역 하역 설비에 내려놓을 때 완료 신호와 SSCC를 결합해 인계 이벤트를 만드는 가상 시나리오. [추정][^ref-045][^ref-049]",
+      "planned_findings": [
+        "f2",
+        "f13",
+        "f14",
+        "f17",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "5. ROP 관점의 시사점",
+      "budget_chars": 330,
+      "summary": "이벤트 조립과 보류 규칙은 직접 범위, 판독·설비 제어·EPCIS 저장소는 연계 범위로 본다. [추정][^ref-045][^ref-022]",
+      "planned_findings": [
+        "f17",
+        "f19",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "6. 연결되는 연구영역",
+      "budget_chars": 250,
+      "summary": "7. 화물·재고·자산 식별과 추적을 중심으로 1·9·10·17·20번 영역과 연결한다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "section": "7. 열린 질문",
+      "budget_chars": 400,
+      "summary": "oq-001·oq-002·oq-003은 열림 유지, 시설 내 bizStep 표현과 3.0.0 loadId 규정에 대한 새 질문 2건.",
+      "planned_findings": [
+        "f16",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 700,
+      "summary": "EPCIS의 readPoint·bizLocation 구분과 CBV loading 정의의 한계를 더하고 새 주제 페이지로 연결한다. [사실][^ref-045] [추정][^ref-044]",
+      "planned_findings": [
+        "f5",
+        "f6",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 650,
+      "summary": "EPCIS·CBV 행의 열람 표시를 공식 저장소 확인과 ISO/IEC 판 미열람으로 나누고 국내 오픈소스 Oliot EPCIS 행을 더한다. [사실][^ref-050]",
+      "planned_findings": [
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 600,
+      "summary": "기존 질문 3건을 열림으로 유지하고 새 질문 2건을 더한다.",
+      "planned_findings": [
+        "f16",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재"
+    },
+    {
+      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가, 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area07-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 화물·재고·자산 식별과 추적 의 \"6. 대표 접근법과 기술\" 절(775자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 7. 화물·재고·자산 식별과 추적 | 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성, 영역 페이지 4·6·7·11절 갱신(Oliot EPCIS 행, 새 열린 질문 2건) | run 2026-09-25-03",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 주제 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성(readPoint·bizLocation·source/destination 구분, CBV loading 정의 한계, 매핑 미확인)",
+    "category_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: EPCIS 인계 이벤트 설계 주제 페이지 신규, 6·7·11절 갱신(국내 오픈소스 Oliot EPCIS, 새 열린 질문 2건)",
+    "area_recent": "2026-09-25 — 7. 화물·재고·자산 식별과 추적: 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 링크, 7절 Oliot EPCIS 행, 11절 새 질문 2건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "read-point",
+      "term_ko": "판독 지점",
+      "term_en": "Read Point (EPCIS readPoint)",
+      "definition": "EPCIS 이벤트가 일어난 지점을 나타내는 선택 필드이다.",
+      "description": "GS1 구현 가이드라인은 출입구를 readPoint, 그 너머 방을 bizLocation으로 비유한다(원문 미열람, 추정).",
+      "related_areas": [
+        7,
+        17
+      ],
+      "sources": [
+        "ref-045",
+        "ref-015"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "business-location",
+      "term_ko": "업무 위치",
+      "term_en": "Business Location (EPCIS bizLocation)",
+      "definition": "EPCIS 이벤트 뒤 다른 이벤트가 반박할 때까지 객체가 있다고 보는 업무상 위치를 나타내는 선택 필드이다.",
+      "related_areas": [
+        7,
+        6
+      ],
+      "sources": [
+        "ref-045"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "association-event",
+      "term_ko": "연결 이벤트",
+      "term_en": "AssociationEvent",
+      "definition": "물리 객체를 상위 객체나 특정 물리 위치와 연결하거나 연결을 해제한 사실을 기록하는 EPCIS 2.0 이벤트 유형이다.",
+      "related_areas": [
+        7
+      ],
+      "sources": [
+        "ref-045"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-044",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "GS1 공식 저장소(초안 저장소)의 CBV 2.0 온톨로지(Turtle). 업무 단계·처분 상태·source/destination 유형의 정의 문구를 담는다. ref.gs1.org 비준판과의 문구 일치는 미확인이며, 발행일 2021-09-30은 온톨로지 수정일이다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-045",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/EPCIS.ttl (EPCIS ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/EPCIS.ttl",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "GS1 공식 저장소(초안 저장소)의 EPCIS 2.0 온톨로지(Turtle). 이벤트 유형과 readPoint·bizLocation·parentID·sourceList·destinationList 정의를 담는다. ref.gs1.org 비준판과의 문구 일치는 미확인이며, 발행일 2021-09-30은 온톨로지 수정일이다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-047",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequest.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 적재 워크셀 요청 메시지 정의. 요청 id, 대상 워크셀, 운반체 유형, 품목 목록을 담는다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-048",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequestItem.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 적재 요청 품목 메시지 정의. 유형 id, 수량, 구획 이름 세 필드만 둔다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-049",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 하역 워크셀 결과 메시지 정의. 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-050",
+      "org": "Auto-ID Labs Korea(세종대학교), Byun, J.",
+      "title": "Oliot EPCIS for GS1 EPCIS/CBV 2.0.0 (GitHub JaewookByun/epcis README)",
+      "published": null,
+      "url": "https://github.com/JaewookByun/epcis",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "국내 Auto-ID Labs Korea가 2014년부터 개발·유지하는 GS1 EPCIS 오픈소스 구현의 저장소 README. 2세대는 EPCIS/CBV 2.0을 지원한다. 프로젝트의 자기 서술이다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-015",
+      "org": "GS1",
+      "title": "EPCIS and CBV Implementation Guideline",
+      "published": null,
+      "url": "https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. EPCIS·CBV 적용 방법을 설명하는 GS1 구현 가이드라인. source/destination으로 소유·점유 이전 맥락을 표현하는 방법 포함.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-022",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "title": "VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control",
+      "published": "2022-01",
+      "url": "https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AGV·AMR과 상위 관제 간 통신 권고안. order·state 메시지, pick/drop action, 적재물(loads) 보고 필드를 정의. 이번 실행은 VDA 게시 PDF가 아니라 공식 저장소 2.0.0 태그 마크다운(RELEASE CANDIDATE 문구 포함)으로 내용을 대조했다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-023",
+      "org": "Open Robotics",
+      "title": "Workcells - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF의 적재(dispenser)·하역(ingestor) 워크셀 연동과 요청·결과 메시지 흐름을 설명하는 공식 문서. 이번 실행은 입력 원문 텍스트로 읽었다.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md",
+        "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(현재 main은 3.0.0판). pick·drop 동작 정의를 확인했다. state 메시지 load 절(loadId 설정 주체)은 글자 단위 대조 미확인.",
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "CBV의 loading·unloading이 운송 수단 적재로 정의되어 있을 때 시설 안 로봇의 적재·운반·하역은 어떤 업무 단계(bizStep) 값이나 사용자 정의 어휘로 기록해야 하는가?",
+      "areas": [
+        7,
+        17
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "VDA 5050 3.0.0에서 관제가 loadId를 정할 때 SSCC 같은 GS1 키를 그대로 쓰도록 권고하거나 제약하는 규정이 있는가, 로봇이 판독한 식별자와 다르면 어떻게 보고하는가?",
+      "areas": [
+        7,
+        9
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "출하",
+      "item": "시작 조건",
+      "link": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md#4-현장-시나리오",
+      "title": "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
+    },
+    {
+      "step": "출하",
+      "item": "작업 대상",
+      "link": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md#4-현장-시나리오",
+      "title": "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
+    },
+    {
+      "step": "출하",
+      "item": "수행 자원",
+      "link": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md#4-현장-시나리오",
+      "title": "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
+    },
+    {
+      "step": "출하",
+      "item": "완료·인계",
+      "link": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md#4-현장-시나리오",
+      "title": "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md#4-현장-시나리오",
+      "title": "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "Oliot EPCIS (GS1 EPCIS/CBV 2.0 오픈소스 구현)",
+      "kind": "오픈소스",
+      "org": "Auto-ID Labs Korea(세종대학교)",
+      "url": "https://github.com/JaewookByun/epcis",
+      "related_areas": [
+        7
+      ],
+      "summary": "2014년부터 개발·유지되는 국내 GS1 EPCIS 오픈소스 구현. 2세대는 EPCIS/CBV 2.0 표준 개발 과정에 맞춰 새로 개발되었다(프로젝트 자기 서술).",
+      "ref_id": "ref-050"
+    }
+  ],
+  "additional_research_requests": [
+    "주제 페이지 3절·7. 화물·재고·자산 식별과 추적 6절: CBV 2.0 업무 단계(bizStep) 전체 목록과 GS1의 시설 내 운반 표현 권고 — 시설 안 로봇 운반에 쓸 표준 값이 있는지 확인이 필요하다.",
+    "주제 페이지 3절: VDA 5050 3.0.0 state 메시지 load 절(loadId 설정 주체, loads 빈 배열·생략 규정)의 원문 글자 단위 확인 — f12가 추정으로 강등되었다.",
+    "EPCIS 2.0 JSON 스키마의 이벤트 유형별 하위 스키마 필수 항목 — f9 삭제로 이벤트 필수 필드를 본문에 쓰지 못했다.",
+    "GS1 EPCIS and CBV Implementation Guideline 원문 — 출하 이벤트에서 bizLocation 처리 안내를 확인해야 f6을 사실로 쓸 수 있다.",
+    "oq-002: 국내 물류센터에서 로봇 작업 결과와 EPCIS 이벤트를 연결한 운영 사례.",
+    "GS1 온톨로지 파일(ref-044·ref-045)과 ref.gs1.org 비준판 문구의 일치 여부 확인."
+  ],
+  "fixes_applied": [
+    "f9 제외 — 주제 페이지·7. 화물·재고·자산 식별과 추적 페이지 어디에도 EPCIS 공통 필수 항목 주장을 넣지 않았다.",
+    "ref-046 제외 — 주제 페이지 각주·프런트매터 sources와 reference_updates에서 뺐다.",
+    "f6 강등 — 주제 페이지 3절과 영역 페이지 6절에서 [추정]으로 쓰고 출입구 = readPoint, 그 너머 방 = bizLocation 비유만 남겼으며 출하 이벤트 bizLocation 생략 안내는 삭제했다.",
+    "f12 강등 — 주제 페이지 3절에서 [추정]으로 쓰고 문장에 '3.0.0 원문의 해당 절 글자 단위 대조 미확인'을 병기했다.",
+    "f20 — 주제 페이지 3절에서 [추정]을 유지하고 같은 문장에 전제 문구가 원문 대조 미확인임을 밝혔으며 SSCC를 loadId로 내려보내는 설계는 '가능성으로 생각할 수 있다'로만 썼다.",
+    "f11 — 파라미터 구절을 '2.0.0(공식 저장소 태그)에서는 lhd·loadId·height가 선택 파라미터이고 stationType·loadType은 선택 표시가 없으며, 3.0.0에서는 모두 선택이다'로 고치고 FINISHED 정의는 [사실]로 두었다.",
+    "ref-022 각주 — 기존 각주 정의를 그대로 쓰고 접근일 뒤 ' (원문 미열람)'을 유지했으며 reference_updates에서 source_unopened: true로 두었다.",
+    "ref-015 각주 — 두 페이지 모두 ' (원문 미열람)'을 유지하고 reference_updates에서 source_unopened: true로 두었다.",
+    "ref-044·ref-045 — 각주 제목 괄호와 reference_updates 요약에 초안 저장소 파일·비준판 문구 일치 미확인·발행일은 온톨로지 수정일임을 적고, 주제 페이지 3절과 영역 페이지 7절 본문에도 밝혔다.",
+    "영역 페이지 7절 — EPCIS·CBV 행의 출처 칸을 'GS1 공식 저장소 온톨로지 파일 확인(ref-044·ref-045), ISO/IEC 판(ref-011·ref-012)은 원문 미열람'으로 나눠 표시했다.",
+    "주제 페이지 — f10·f11·f13·f14·f15는 3절 '로봇·설비 신호의 식별 수준'의 짧은 두 단락으로 줄이고 2절에서 기존 주제 페이지 '로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인'으로 링크했다.",
+    "직접 인용 — 두 페이지 모두 출처 원문을 직접 인용하지 않고 ref-045 발췌(f5·f7·f8)를 포함해 전부 재서술했다.",
+    "oq-001 — 영역 페이지 11절과 주제 페이지 7절 모두 '열림'으로 두고 open_question_updates에 상태 변경을 내지 않아 두 곳이 같다.",
+    "oq-002 — 해결로 바꾸지 않고 영역 페이지 11절과 주제 페이지 7절에서 Oliot EPCIS를 관련 자료로만 연결하며 로봇 작업 결과 연결 사례가 아님을 적었다.",
+    "f16 — 주제 페이지 3절과 영역 페이지 6절에서 staging_outbound가 운송 픽업 대기 구역으로의 이동(출하 준비)이라 시설 안 일반 운반에 쓰기 어렵다는 점을 함께 적고 시설 내 운반 표현은 [추정]으로만 두었다.",
+    "분량 초과 자동 분리: 7. 화물·재고·자산 식별과 추적 본문 4,602자 > 기준 4,000자 → 1개 절을 주제 페이지로 옮김, 남은 본문 3,954자"
+  ]
+}

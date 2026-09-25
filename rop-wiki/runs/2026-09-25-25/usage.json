@@ -1,0 +1,135 @@
+{
+  "calls": [
+    {
+      "step": "research",
+      "role": "researcher",
+      "attempt": 1,
+      "input_tokens": 52,
+      "cache_creation_input_tokens": 139489,
+      "cache_read_input_tokens": 4893956,
+      "output_tokens": 36334,
+      "cost_usd": 3.4348,
+      "seconds": 458.4,
+      "num_turns": 39,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-4-5-20251001"
+      ]
+    },
+    {
+      "step": "research-schema-retry",
+      "role": "researcher",
+      "attempt": 2,
+      "input_tokens": 24,
+      "cache_creation_input_tokens": 161329,
+      "cache_read_input_tokens": 2051031,
+      "output_tokens": 42002,
+      "cost_usd": 2.9158,
+      "seconds": 373.6,
+      "num_turns": 24,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-4-5-20251001"
+      ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 8,
+      "cache_creation_input_tokens": 187804,
+      "cache_read_input_tokens": 826640,
+      "output_tokens": 18464,
+      "cost_usd": 2.2709,
+      "seconds": 192.1,
+      "num_turns": 16,
+      "models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 136886,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 36163,
+      "cost_usd": 1.831,
+      "seconds": 280.1,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-formatfix1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 179950,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 42430,
+      "cost_usd": 2.3008,
+      "seconds": 277.3,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 145741,
+      "cache_read_input_tokens": 76154,
+      "output_tokens": 9208,
+      "cost_usd": 1.3653,
+      "seconds": 88.0,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 191286,
+      "cache_read_input_tokens": 63020,
+      "output_tokens": 45158,
+      "cost_usd": 2.4461,
+      "seconds": 303.3,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "step": "verification2-retry1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 157794,
+      "cache_read_input_tokens": 76154,
+      "output_tokens": 3453,
+      "cost_usd": 1.3467,
+      "seconds": 32.8,
+      "num_turns": 2,
+      "models": [
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 94,
+    "cache_creation_input_tokens": 1300279,
+    "cache_read_input_tokens": 8112995,
+    "output_tokens": 233212,
+    "cost_usd": 17.9114,
+    "calls": 8
+  }
+}

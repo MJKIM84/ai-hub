@@ -1,0 +1,152 @@
+{
+  "run_id": "2026-09-25-81",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 4,
+    "question_ids": [
+      "q4-02"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "89cd702",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 25,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1964.2,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 | run 2026-09-25-81",
+  "notes": [
+    "참고문헌 생성: references/ref-748.md",
+    "참고문헌 생성: references/ref-749.md",
+    "참고문헌 생성: references/ref-750.md",
+    "참고문헌 생성: references/ref-751.md",
+    "참고문헌 생성: references/ref-752.md",
+    "참고문헌 생성: references/ref-753.md",
+    "참고문헌 생성: references/ref-754.md",
+    "참고문헌 생성: references/ref-755.md",
+    "참고문헌 생성: references/ref-756.md",
+    "참고문헌 생성: references/ref-757.md",
+    "참고문헌 생성: references/ref-758.md",
+    "참고문헌 생성: references/ref-759.md",
+    "참고문헌 생성: references/ref-760.md",
+    "참고문헌 생성: references/ref-761.md",
+    "용어집 생성: glossary/constrained-decoding.md",
+    "용어집 생성: glossary/json-schema.md",
+    "용어집 생성: glossary/latent-failure.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 14,
+    "standards": 3,
+    "open_questions": 1,
+    "flow_cells": 5,
+    "backlog": 4,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 22:19:57 KST",
+  "usage": {
+    "input_tokens": 54,
+    "cache_creation_input_tokens": 3122478,
+    "cache_read_input_tokens": 6758559,
+    "output_tokens": 168301,
+    "cost_usd": 30.6083,
+    "calls": 12,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.3429,
+        "output_tokens": 32811,
+        "cache_read_input_tokens": 4979290,
+        "cache_creation_input_tokens": 389882
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.1857,
+        "output_tokens": 17092,
+        "cache_read_input_tokens": 1480634,
+        "cache_creation_input_tokens": 407142
+      },
+      "storyteller": {
+        "calls": 4,
+        "cost_usd": 8.0115,
+        "output_tokens": 96318,
+        "cache_read_input_tokens": 126042,
+        "cache_creation_input_tokens": 757486
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 12.9835,
+        "output_tokens": 21088,
+        "cache_read_input_tokens": 152309,
+        "cache_creation_input_tokens": 1566409
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md (8개 절)",
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/task-model-draft.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 4,
+  "cross_checked_findings": 0,
+  "resumed_from_park_reason": "스토리텔러 에이전트 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)",
+  "resumed_at": "2026-09-25 22:09:10 KST"
+}

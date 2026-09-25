@@ -1,0 +1,2821 @@
+{
+  "items": [
+    {
+      "name": "GS1 EPCIS 2.0 (ISO/IEC 19987:2024)",
+      "org": "ISO/IEC · GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://www.iso.org/standard/85557.html",
+      "summary": "EPCIS 2.0 을 국제표준으로 발행한 판. 기업 내·기업 간 가시성 이벤트 데이터의 생성·공유가 목표다(원문 미열람).",
+      "ref_id": "ref-011",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "GS1 CBV (Core Business Vocabulary)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://ref.gs1.org/standards/cbv/",
+      "summary": "EPCIS 이벤트에 채울 업무 단계·인계 유형 등 어휘 요소와 표준 값을 정의한다. ISO/IEC 19988:2024 로도 발행되었다(원문 미열람).",
+      "ref_id": "ref-014",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SSCC (Serial Shipping Container Code)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://www.gs1.org/standards/id-keys/sscc",
+      "summary": "케이스·팔레트·소포 등 물류 단위를 식별하는 18자리 GS1 키(원문 미열람).",
+      "ref_id": "ref-016",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "GS1 Logistic Label Guideline",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://www.gs1.org/docs/tl/GS1_Logistic_Label_Guideline.pdf",
+      "summary": "SSCC 를 필수로 담고 GS1-128 로 표시하는 물류 라벨 규칙(원문 미열람).",
+      "ref_id": "ref-018",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "GRAI (Global Returnable Asset Identifier)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://www.gs1.org/standards/id-keys/grai",
+      "summary": "팔레트·상자·트레이·케그 같은 재사용 운반구를 식별하는 GS1 키(원문 미열람).",
+      "ref_id": "ref-019",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "GIAI (Global Individual Asset Identifier)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://support.gs1.org/support/solutions/articles/43000734294-which-gs1-identification-key-should-be-used-for-individual-assets-used-to-transport-goods-",
+      "summary": "컨테이너·트럭·트레일러 같은 개별 운송 자산을 식별하는 GS1 키(원문 미열람).",
+      "ref_id": "ref-020",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "EPC Tag Data Standard (1.11판)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        7
+      ],
+      "url": "https://www.gs1.org/sites/default/files/docs/epc/GS1_EPC_TDS_i1_11.pdf",
+      "summary": "GS1 키를 UHF RFID 태그에 싣는 EPC 인코딩(SSCC-96, GRAI-96 등)을 정의한다. 1.11판 기준이며 최신판 재확인 필요(원문 미열람).",
+      "ref_id": "ref-021",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "VDA 5050 (2.0.0)",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "kind": "표준",
+      "related_areas": [
+        7,
+        9
+      ],
+      "url": "https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf",
+      "summary": "AGV·AMR 과 상위 관제 사이의 통신 권고안. state 메시지로 적재물의 loadId·loadType·loadPosition 을 보고한다(원문 미열람).",
+      "ref_id": "ref-022",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OpenEPCIS",
+      "org": "OpenEPCIS",
+      "kind": "오픈소스",
+      "related_areas": [
+        7
+      ],
+      "url": "https://openepcis.io/docs/epcis/",
+      "summary": "GS1 적합 오픈코어 EPCIS 구현 프로젝트. 문서가 EPCIS 2.0 이벤트 유형과 1.2 대비 변경점을 설명한다(원문 미열람).",
+      "ref_id": "ref-013",
+      "run_id": "2026-09-25-01",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEEE 1872-2015 Standard Ontologies for Robotics and Automation (CORA)",
+      "org": "IEEE",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://ieeexplore.ieee.org/document/7084073/",
+      "summary": "로봇·자동화의 일반 개념·관계·공리를 정한 핵심 온톨로지 CORA와 보조 온톨로지(CORAX, POS, RPARTS)를 규정한다(2015). 원문 미열람.",
+      "ref_id": "ref-025",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEEE 1872.2-2021 Standard for Autonomous Robotics (AuR) Ontology",
+      "org": "IEEE",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://standards.ieee.org/standard/1872_2-2021.html",
+      "summary": "CORA를 확장해 자율 로봇의 설계 패턴·시스템 아키텍처를 표현하는 온톨로지 표준(2022년 발행). 원문 미열람.",
+      "ref_id": "ref-026",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "W3C/OGC Semantic Sensor Network Ontology (SSN/SOSA)",
+      "org": "W3C / OGC",
+      "kind": "표준",
+      "related_areas": [
+        5
+      ],
+      "url": "https://www.w3.org/TR/vocab-ssn/",
+      "summary": "센서·액추에이터·샘플러와 관측·작동·샘플링, 시스템 능력·운용 범위를 표현하는 W3C 권고안(2017-10-19). 원문 미열람.",
+      "ref_id": "ref-030",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "VDA 5050 (3.0.0)",
+      "org": "VDA(Verband der Automobilindustrie)",
+      "kind": "표준",
+      "related_areas": [
+        9,
+        28
+      ],
+      "url": "https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN",
+      "summary": "2026년에 발행된 VDA 5050 3.0.0판(발행 2026-03, 보도자료 2026-04). 자율도 높은 이동로봇 통합을 위해 인터페이스를 확장했다. 확장 기능 목록은 미확인. 원문 미열람.",
+      "ref_id": "ref-032",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "MassRobotics AMR Interoperability Standard (1.0)",
+      "org": "MassRobotics",
+      "kind": "표준",
+      "related_areas": [
+        9,
+        28
+      ],
+      "url": "https://www.massrobotics.org/autonomous-mobile-robot-standards-published-by-massrobotics/",
+      "summary": "setup·status 메시지로 제조사·모델, 위치·속도·방향, 상태, 작업·가용 상태를 공유하게 하는 AMR 상호운용 표준 1.0(2021-05). 원문 미열람.",
+      "ref_id": "ref-033",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC UA for Robotics Part 1: Vertical Integration (OPC 40010-1)",
+      "org": "OPC Foundation / VDMA",
+      "kind": "표준",
+      "related_areas": [
+        9,
+        28
+      ],
+      "url": "https://reference.opcfoundation.org/specs/OPC-40010-1",
+      "summary": "모션 장치 시스템의 자산 관리·상태 감시 데이터를 상위 시스템에 제공하는 OPC UA 동반 규격. 판·발행일 미확인. 원문 미열람.",
+      "ref_id": "ref-034",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Information Model for Capabilities, Skills & Services (CSS)",
+      "org": "Plattform Industrie 4.0",
+      "kind": "프레임워크",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.html",
+      "summary": "능력(구현 독립 기능 명세)·스킬(실행 가능한 구현)·서비스를 구분하는 정보 모델 토론 문서(2022-11). 원문 미열람.",
+      "ref_id": "ref-035",
+      "run_id": "2026-09-25-02",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Oliot EPCIS (GS1 EPCIS/CBV 2.0 오픈소스 구현)",
+      "org": "Auto-ID Labs Korea(세종대학교)",
+      "kind": "오픈소스",
+      "related_areas": [
+        7
+      ],
+      "url": "https://github.com/JaewookByun/epcis",
+      "summary": "2014년부터 개발·유지되는 국내 GS1 EPCIS 오픈소스 구현. 2세대는 EPCIS/CBV 2.0 표준 개발 과정에 맞춰 새로 개발되었다(프로젝트 자기 서술).",
+      "ref_id": "ref-050",
+      "run_id": "2026-09-25-03",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "RAWSim-O",
+      "org": "Merschformann, M. (RAWSim-O GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        3,
+        22
+      ],
+      "url": "https://github.com/merschformann/RAWSim-O",
+      "summary": "로봇 이동형 풀필먼트 시스템(RMFS) 운영의 여러 결정 문제를 연구하는 이산 사건 시뮬레이션 프레임워크다. 라이선스는 GPL v3 이상이다.",
+      "ref_id": "ref-101",
+      "run_id": "2026-09-25-10",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "스마트물류센터 인증제",
+      "org": "한국교통연구원(인증스마트물류센터)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        3,
+        4
+      ],
+      "url": "https://cslc.koti.re.kr/",
+      "summary": "원문 미열람. 「물류시설의 개발 및 운영에 관한 법률」 제21조의4에 근거해 물류센터 기능영역·기반영역의 첨단화·자동화 수준을 평가하고 5개 등급으로 인증하는 제도다.",
+      "ref_id": "ref-106",
+      "run_id": "2026-09-25-10",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BPMN 2.0 (ISO/IEC 19510:2013)",
+      "org": "OMG(Object Management Group) · ISO/IEC",
+      "kind": "표준",
+      "related_areas": [
+        2,
+        12
+      ],
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "summary": "업무 프로세스 표기법. ISO/IEC 19510:2013 은 OMG BPMN 2.0.1 을 PAS 절차로 채택한 것이다(원문 미열람).",
+      "ref_id": "ref-112",
+      "run_id": "2026-09-25-09",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC 62264-3:2016 (ISA-95 Part 3) 제조 운영 관리 활동 모델",
+      "org": "IEC / ISO",
+      "kind": "표준",
+      "related_areas": [
+        1,
+        2
+      ],
+      "url": "https://www.iso.org/standard/67480.html",
+      "summary": "수준 4와 수준 2 사이 제조 운영 관리를 생산·유지보수·품질·재고 운영 관리 네 활동 모델로 정의한다(원문 미열람).",
+      "ref_id": "ref-119",
+      "run_id": "2026-09-25-09",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "B2MML (Business To Manufacturing Markup Language, 판 0701)",
+      "org": "MESA International",
+      "kind": "표준",
+      "related_areas": [
+        1,
+        2,
+        14
+      ],
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd",
+      "summary": "ISA-95 데이터 모델의 XML 스키마 구현으로, 운영 세그먼트 의존 유형과 자재 사용 유형을 정의한다(2023).",
+      "ref_id": "ref-117",
+      "run_id": "2026-09-25-09",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OCEL 2.0 (Object-Centric Event Log)",
+      "org": "arXiv:2403.01975 저자(미확인)",
+      "kind": "표준",
+      "related_areas": [
+        2,
+        4,
+        19
+      ],
+      "url": "https://arxiv.org/abs/2403.01975",
+      "summary": "이벤트와 여러 객체 사이 관계·한정자·변하는 객체 속성을 담는 이벤트 로그 교환 표준으로 SQLite·XML·JSON 형식을 둔다(2024-03, 원문 미열람).",
+      "ref_id": "ref-122",
+      "run_id": "2026-09-25-09",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 22400-2:2014 제조 운영 관리 KPI 정의",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        4
+      ],
+      "url": "https://www.iso.org/standard/54497.html",
+      "summary": "제조 운영 관리용 KPI(처리율, OEE, 가용성, 품질률 등)를 공식·구성 요소·시간 특성·단위와 함께 정의한 국제표준(2014판, 원문 미열람).",
+      "ref_id": "ref-139",
+      "run_id": "2026-09-25-14",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "WERC DC Measures",
+      "org": "WERC(Warehousing Education and Research Council)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        4
+      ],
+      "url": "https://wercmetrics.werc.org/WERC-DC-Measures-Survey-2025.pdf",
+      "summary": "물류센터 운영 지표(정시 출하, 용량 사용률, 피킹 정확도, 입고–적치 소요 시간 등)를 조사하는 협회 연례 벤치마크(2025년판, 원문 미열람).",
+      "ref_id": "ref-141",
+      "run_id": "2026-09-25-14",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "PM4Py",
+      "org": "Process Intelligence Solutions",
+      "kind": "오픈소스",
+      "related_areas": [
+        4,
+        2,
+        19
+      ],
+      "url": "https://github.com/process-intelligence-solutions/pm4py",
+      "summary": "프로세스 발견 등 알고리즘을 제공하고 OCEL을 선택 기능으로 두는 파이썬 프로세스 마이닝 라이브러리. 공개판 AGPL-3.0, 상용 라이선스 별도.",
+      "ref_id": "ref-147",
+      "run_id": "2026-09-25-14",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC UA for ISA-95 Part 4: Job Control (OPC 10031-4, 노드셋 2.0.0)",
+      "org": "OPC Foundation / ISA",
+      "kind": "표준",
+      "related_areas": [
+        1,
+        2,
+        28
+      ],
+      "url": "https://github.com/OPCFoundation/UA-Nodeset/tree/latest/ISA95-JOBCONTROL",
+      "summary": "ISA-95 작업 지시를 하위 실행 계층에 저장·시작·갱신·일시정지·재개·중단·취소·삭제하는 메서드와 작업 지시·작업 응답 데이터형을 OPC UA 로 정의한 동반 규격이다(노드셋 판 2.0.0, 2024-01-31).",
+      "ref_id": "ref-130",
+      "run_id": "2026-09-25-13",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "osmAG-from-cad (CAD-to-osmAG 파이프라인)",
+      "org": "Zhang, J. (jiajiezhang7 GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6
+      ],
+      "url": "https://github.com/jiajiezhang7/osmAG-from-cad",
+      "summary": "DXF 건축 도면을 AreaGraph 위상 분할을 거쳐 OSM XML 형식의 계층형 실내 지도(osmAG)로 만드는 오픈소스 파이프라인이다. DWG는 외부 변환기가 필요하다.",
+      "ref_id": "ref-084",
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Ogm2Pgbm",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6
+      ],
+      "url": "https://github.com/MigVega/Ogm2Pgbm",
+      "summary": "점군이나 BIM/CAD에서 만든 점유 격자 지도를 Cartographer·SLAM Toolbox용 포즈 그래프 지도로 바꾸는 오픈소스 코드다.",
+      "ref_id": "ref-082",
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ifc2indoorgml",
+      "org": "Diakité, A. A. 외",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/",
+      "summary": "IFC 데이터에서 IndoorGML 실내 공간 모델을 자동 생성하는 오픈소스 도구다(ISPRS Archives 2022, 원문 미열람).",
+      "ref_id": "ref-225",
+      "run_id": "2026-09-25-11",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02020 Capability Description 1.0",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+      "summary": "능력을 속성·속성 제약·전이 제약·스킬로 기술하고 요구 능력과 제공 능력의 비교를 목적으로 하는 자산관리셸 서브모델(원문 미열람).",
+      "ref_id": "ref-229",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles",
+      "summary": "여러 제조사·유형의 무인운반차를 한 환경에서 운영하기 위한 제조사 독립 기술 데이터 자산관리셸 서브모델(원문 미열람, 세부 필드 미확인).",
+      "ref_id": "ref-234",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "CaSkMan",
+      "org": "CaSkade-Automation (GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        5
+      ],
+      "url": "https://github.com/CaSkade-Automation/CaSkMan",
+      "summary": "제조 기계의 능력·스킬을 모델링하는 OWL 온톨로지로, 능력–스킬 실현 관계와 ISA 88 상태 기계, REST·OPC UA 스킬 인터페이스를 둔다.",
+      "ref_id": "ref-231",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SOMA (Socio-physical Model of Activities)",
+      "org": "EASE CRC",
+      "kind": "오픈소스",
+      "related_areas": [
+        5
+      ],
+      "url": "https://github.com/ease-crc/soma",
+      "summary": "DUL 상위 온톨로지를 확장해 로봇 에이전트의 활동을 표현하는 OWL 온톨로지.",
+      "ref_id": "ref-233",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEEE 1872.2 AuR 온톨로지 OWL 구현(IndustrialStandard-ODP-IEEE1872-2)",
+      "org": "Helmut Schmidt University, Institute of Automation Technology",
+      "kind": "오픈소스",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2",
+      "summary": "IEEE 1872.2 AuR 온톨로지의 제3자 OWL 구현으로, SUMO 는 제외하고 DUL 만 포함한다.",
+      "ref_id": "ref-232",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 22166-201:2024 서비스 로봇 모듈 공통 정보 모델",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://www.iso.org/standard/82334.html",
+      "summary": "서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위한 모듈 공통 정보 모델의 구조와 속성 의미를 정한 국제표준(원문 미열람).",
+      "ref_id": "ref-240",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B 7321-2 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+      "summary": "KSSN 에 등록된 서비스 로봇 소프트웨어 모듈 정보 모델 국가표준. 제정일·내용 미확인(원문 미열람).",
+      "ref_id": "ref-138",
+      "run_id": "2026-09-25-15",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "VDMA LIF (Layout Interchange Format)",
+      "org": "VDMA",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        6,
+        9
+      ],
+      "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+      "summary": "무인운반 차량 통합사업자가 엣지·노드·스테이션으로 된 주행 레이아웃을 상위 관제에 넘기기 위한 구속력 없는 교환 형식. 판·발행일은 출처마다 달라 열린 질문으로 두었다.",
+      "ref_id": "ref-046",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IFC 4.3 (Industry Foundation Classes, 개발 저장소 ifc4.3-main)",
+      "org": "buildingSMART",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md",
+      "summary": "BIM 교환 형식. 개발 원본에서 IfcTransportElement 가 엘리베이터 등 운송 요소를 담고, 확인한 콘센트·전기기기 유형 열거에는 로봇 충전 설비 값이 없다. 게시판 IFC 4.3 ADD2와 문구가 다를 수 있다.",
+      "ref_id": "ref-213",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Nav2 Docking Framework (nav2_docking)",
+      "org": "ROS Navigation (Open Navigation)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16,
+        6
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md",
+      "summary": "도크 위치를 파라미터나 도크 데이터베이스 YAML 로 정의하고 검출기의 검출 자세로 보정하는 ROS 2 도킹 서버. 정밀 도킹은 로봇 자체 지능·제어 쪽 연계 대상이다.",
+      "ref_id": "ref-216",
+      "run_id": "2026-09-25-19",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02020 Capability Description (AAS 서브모델 1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/blob/main/published/Capability%20Description/1/0/IDTA%2002020_Template_Capability_Description.json",
+      "summary": "능력을 구현 독립 명세로 기술하고 속성·속성 제약(전제·불변·사후조건)·전이 제약과 스킬 구현 관계(CapabilityRealizedBy), 일반화·구성 관계를 두는 AAS 서브모델 템플릿이다.",
+      "ref_id": "ref-243",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02047 Technical Data for Automated Guided Vehicles (1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        9
+      ],
+      "url": "https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json",
+      "summary": "무인운반차의 최대 적재 질량, 등판·측경사 각, 속도·가동 시간의 명세값·운용값, 정확도, 환경 조건을 속성으로 두는 AAS 서브모델 템플릿이다.",
+      "ref_id": "ref-245",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "AAS Part 3a: Data Specification – IEC 61360 (IDTA-01003-a 3.0.2)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2024/07/IDTA-01003-a-3-0-2_SpecificationAssetAdministrationShell_Part3a_DataSpecification_IEC613601.pdf",
+      "summary": "AAS 요소의 의미를 ECLASS·IEC CDD 같은 IEC 61360 기반 사전의 개념 기술로 정하는 데이터 명세다(인용 판 3.0.2, 최신판 3.1.1 있음, 원문 미열람).",
+      "ref_id": "ref-247",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 22166-202:2025 서비스 로봇 소프트웨어 모듈 정보 모델",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://www.iso.org/standard/84589.html",
+      "summary": "서비스 로봇 소프트웨어 모듈의 인터페이스·속성·구성·실행 관련 정보를 구조화해 기술하게 하는 정보 모델 요구사항 표준이다(원문 미열람).",
+      "ref_id": "ref-248",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+      "summary": "서비스 로봇 소프트웨어 모듈의 정보 모델을 다루는 한국산업표준으로, ISO 22166-202 대응 여부·제정일은 미확인이다(원문 미열람).",
+      "ref_id": "ref-138",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SkiROS2",
+      "org": "RVMI lab, Aalborg University",
+      "kind": "오픈소스",
+      "related_areas": [
+        5
+      ],
+      "url": "https://github.com/RVMI/skiros2",
+      "summary": "스킬을 행동 트리로 조합하고 스킬마다 전제·유지·사후조건을 두는 ROS 기반 스킬 플랫폼이다(로봇 내부 실행 쪽 연계 대상, 스킬 조건 표현 사례).",
+      "ref_id": "ref-250",
+      "run_id": "2026-09-25-16",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "LIF (Layout Interchange Format) 1.0.0",
+      "org": "VDMA",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        9,
+        28
+      ],
+      "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+      "summary": "무인운반차 통합사가 간선·노드·스테이션 주행 레이아웃을 제3자 중앙 관제에 넘기는 교환 형식(README 기준 1.0.0, 2023-09). VDA 5050 3.0.0 은 VDMA 2024-03 판을 인용한다.",
+      "ref_id": "ref-046",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 21423 Industrial mobile robots — Communications and interoperability",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        9,
+        28
+      ],
+      "url": "https://www.iso.org/standard/86749.html",
+      "summary": "서로 다른 공급사의 산업용 AMR 시스템과 플릿 관리자 사이 상호운용 통신 규격. 2026-09-25 검색 결과상 FDIS 단계로 발행 여부 미확인(원문 미열람).",
+      "ref_id": "ref-159",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IFC 4.3 (IfcSpace)",
+      "org": "buildingSMART International",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md",
+      "summary": "건물 안 기능 공간을 IfcSpace 로 정의하고 건물 층에 집합 관계로 연결하는 BIM 데이터 스키마(개발 브랜치 원본 기준).",
+      "ref_id": "ref-156",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OGC IndoorGML 2.0",
+      "org": "OGC",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/opengeospatial/IndoorGML-SWG",
+      "summary": "실내 공간 분할·쌍대 그래프·주제 레이어로 실내 공간을 표현하는 표준. Part 1 개념 모델 공개, Part 2 인코딩은 초안 작업 중.",
+      "ref_id": "ref-157",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 19164:2024 Indoor feature model",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.iso.org/standard/83153.html",
+      "summary": "실내 지물의 의미 분류 체계와 속성·연관을 정하며 기하·위상 기술은 범위 밖인 국제표준(원문 미열람).",
+      "ref_id": "ref-158",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "GS1 GLN (Global Location Number)",
+      "org": "GS1",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        7
+      ],
+      "url": "https://www.gs1.org/standards/id-keys/gln/physical-location",
+      "summary": "물리적 위치와 하위 위치(도크 문·보관 위치 등)를 식별하는 GS1 식별 키. 확장 요소는 조직 내부나 거래 당사자 간 합의로만 쓴다(원문 미열람).",
+      "ref_id": "ref-162",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "REP 105 Coordinate Frames for Mobile Platforms",
+      "org": "ROS (ros-infrastructure/rep)",
+      "kind": "프레임워크",
+      "related_areas": [
+        6,
+        9
+      ],
+      "url": "https://www.ros.org/reps/rep-0105.html",
+      "summary": "ROS 이동로봇의 base_link·odom·map·earth 좌표계 의미와 연속성·드리프트 특성을 정한 규약.",
+      "ref_id": "ref-155",
+      "run_id": "2026-09-25-17",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROSA (ROS Agent)",
+      "org": "NASA Jet Propulsion Laboratory",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        18
+      ],
+      "url": "https://github.com/nasa-jpl/rosa",
+      "summary": "ROS 1·ROS 2 시스템을 자연어로 조회·진단·조작하는 LangChain 기반 에이전트로, 개발자가 넘긴 도구 함수 목록 안에서 행동한다.",
+      "ref_id": "ref-171",
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "RAI",
+      "org": "Robotec.ai",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        18
+      ],
+      "url": "https://github.com/RobotecAI/rai",
+      "summary": "ROS 2(Jazzy·Humble)용 에이전트 프레임워크로 음성·인식·시뮬레이션·벤치마크 패키지를 Apache 2.0 라이선스로 공개한다.",
+      "ref_id": "ref-175",
+      "run_id": "2026-09-25-21",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "free_fleet (Open-RMF 플릿 어댑터)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9
+      ],
+      "url": "https://github.com/open-rmf/free_fleet",
+      "summary": "fleet_adapter_template 기반 Python 플릿 어댑터로, 제조사 관제를 거치지 않고 로봇의 Nav2·Nav1 내비게이션 스택에 zenoh 로 직접 접속한다(Nav1 은 시뮬레이션·ROS 1 Noetic 에서만 시험).",
+      "ref_id": "ref-256",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ros_amr_interop (VDA5050 커넥터·MassRobotics 송신 노드)",
+      "org": "InOrbit",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        28
+      ],
+      "url": "https://github.com/inorbit-ai/ros_amr_interop",
+      "summary": "ROS 2 로봇을 MQTT 기반 VDA 5050 관제에 연결하는 커넥터(ROS 2 Galactic)와 MassRobotics 상호운용 수신기로 데이터를 보내는 송신 노드(Foxy·Galactic)를 제공한다(README 기준, 확인일 2026-09-25).",
+      "ref_id": "ref-255",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF fleet_adapter_template",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9
+      ],
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "summary": "제조사 관제 접속 정보, RMF–로봇 지도 좌표 대응점, 속도·차체 한계, 배터리, 작업 능력(task_capabilities)을 플릿 단위로 적는 플릿 어댑터 템플릿이다.",
+      "ref_id": "ref-105",
+      "run_id": "2026-09-25-20",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SLAM Toolbox",
+      "org": "Macenski, S. (SteveMacenski GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        21
+      ],
+      "url": "https://github.com/SteveMacenski/slam_toolbox",
+      "summary": "ROS 2용 평생 지도 작성·위치추정 오픈소스. 저장한 포즈 그래프에서 이어 작성·지도 병합·수동 그래프 편집을 제공한다. SLAM 은 로봇 자체 지능·제어 쪽 연계 대상이다.",
+      "ref_id": "ref-270",
+      "run_id": "2026-09-25-22",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 QoS 정책 (Deadline·Lifespan·Liveliness, Jazzy 문서)",
+      "org": "Open Robotics (ROS 2 Documentation)",
+      "kind": "오픈소스",
+      "related_areas": [
+        8,
+        11
+      ],
+      "url": "https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+      "summary": "메시지 발행 간격·수명·생존성을 정책으로 두고 기한 초과·생존성 변화를 이벤트로 알리는 ROS 2 통신 품질 설정이다.",
+      "ref_id": "ref-282",
+      "run_id": "2026-09-25-24",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Eclipse Sparkplug (Chapter 5 Operational Behavior)",
+      "org": "Eclipse Foundation",
+      "kind": "표준",
+      "related_areas": [
+        8,
+        11,
+        19
+      ],
+      "url": "https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc",
+      "summary": "MQTT 기반 산업 데이터 사양으로, 연결 상실 시 측정값을 STALE 로 표시하고 순번으로 순서 역전을 감지해 재탄생 요청으로 상태를 다시 받게 한다.",
+      "ref_id": "ref-287",
+      "run_id": "2026-09-25-24",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC UA Part 4: Services (7.11 DataValue)",
+      "org": "OPC Foundation",
+      "kind": "표준",
+      "related_areas": [
+        8,
+        11
+      ],
+      "url": "https://reference.opcfoundation.org/specs/OPC-10000-4/7.11",
+      "summary": "값과 함께 원천 시각·서버 시각·Good·Uncertain·Bad 상태 코드를 담는 OPC UA 데이터 값 구조를 정의한다. 원문 미열람, 판 미확인.",
+      "ref_id": "ref-288",
+      "run_id": "2026-09-25-24",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 23247 제조 디지털 트윈 프레임워크",
+      "org": "ISO (NIST 해설 경유)",
+      "kind": "표준",
+      "related_areas": [
+        8,
+        22
+      ],
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417",
+      "summary": "제조 디지털 트윈을 관측 가능한 제조 요소와 동기화된 목적 적합 디지털 표현으로 정의하고 참조 구조를 둔다. 표준·해설 원문 미열람.",
+      "ref_id": "ref-290",
+      "run_id": "2026-09-25-24",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 설계 문서 — ROS on DDS · QoS 정책",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://design.ros2.org/articles/qos.html",
+      "summary": "ROS 2 의 DDS 기반 분산 발견(중앙 마스터 없음)과 불안정한 무선망을 전제한 QoS 정책·프로파일을 설명하는 설계 문서.",
+      "ref_id": "ref-298",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "rmw_zenoh (Zenoh 기반 ROS 2 미들웨어)",
+      "org": "ROS 2 (ros2/rmw_zenoh)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://github.com/ros2/rmw_zenoh",
+      "summary": "Zenoh 라우터를 거친 가십 발견, 멀티캐스트 기본 비활성, 호스트 간 라우터 연결 설정을 제공하는 ROS 2 미들웨어 구현.",
+      "ref_id": "ref-299",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KubeEdge",
+      "org": "KubeEdge (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        20
+      ],
+      "url": "https://github.com/kubeedge/kubeedge",
+      "summary": "쿠버네티스를 엣지로 확장하며 클라우드–엣지 단절 중에도 엣지 노드와 애플리케이션이 자율 동작하도록 설계된 오픈소스.",
+      "ref_id": "ref-300",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf-web (대시보드·API 서버)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://github.com/open-rmf/rmf-web",
+      "summary": "ROS 2 기반 RMF 와 웹 클라이언트 사이를 잇는 API 서버와 대시보드. 기본 비영속 데이터베이스, 설정으로 영속 저장소 지정.",
+      "ref_id": "ref-302",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "MQTT Version 5.0",
+      "org": "OASIS",
+      "kind": "표준",
+      "related_areas": [
+        11,
+        9
+      ],
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+      "summary": "세션 만료·메시지 만료·유언 지연 간격과 공유 구독을 정의한 메시징 표준(원문 미열람).",
+      "ref_id": "ref-306",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "NIST SP 500-325 Fog Computing Conceptual Model",
+      "org": "NIST",
+      "kind": "프레임워크",
+      "related_areas": [
+        11
+      ],
+      "url": "https://csrc.nist.gov/pubs/sp/500/325/final",
+      "summary": "클라우드와 말단 장치 사이의 지연 인식 포그 계층을 제시한 개념 모델(원문 미열람).",
+      "ref_id": "ref-303",
+      "run_id": "2026-09-25-27",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법",
+      "org": "산업통상자원부 국가기술표준원",
+      "kind": "표준",
+      "related_areas": [
+        10,
+        25
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010135682",
+      "summary": "2021년 11월 제정된 국가표준으로, 이동 로봇의 엘리베이터 탑승 안전 요구사항과 평가 방법을 정한다(원문 미열람, 본문 조항 미확인).",
+      "ref_id": "ref-314",
+      "run_id": "2026-09-25-25",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 승강기·문 메시지(rmf_internal_msgs의 rmf_lift_msgs·rmf_door_msgs)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        10,
+        12,
+        16
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+      "summary": "승강기 요청·상태(세션·모드·층·문 상태)와 자동문 모드를 정의하는 Open-RMF 메시지로, 문·승강기 어댑터가 이를 주고받는다.",
+      "ref_id": "ref-286",
+      "run_id": "2026-09-25-25",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KnowRob (하이브리드 지식 베이스)",
+      "org": "KnowRob (knowrob GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        5
+      ],
+      "url": "https://github.com/knowrob/knowrob",
+      "summary": "RDF·RDFS·OWL 어휘의 맥락화된 트리플로 지식을 표현하고 여러 추론기의 결과를 결합하는 로봇용 하이브리드 지식 베이스. 현재 dev 브랜치는 C++ 구현이며 Prolog 는 선택 지원이다(확인일 2026-09-25).",
+      "ref_id": "ref-326",
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEEE1872-owl (CORA 공개 OWL 번역, 제3자)",
+      "org": "srfiorini (IEEE1872-owl GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://github.com/srfiorini/IEEE1872-owl/blob/master/cora-bare.owl",
+      "summary": "IEEE 1872-2015 CORA 의 개념·관계만 분리한 제3자 수작업 OWL 번역. 로봇·로봇 시스템 분류와 부품·자율성 수준 속성을 둔다. IEEE 표준 본문이 아니다.",
+      "ref_id": "ref-330",
+      "run_id": "2026-09-25-23",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "CityGML 3.0 Part 1: Conceptual Model (OGC 20-010)",
+      "org": "OGC",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://docs.ogc.org/is/20-010/20-010.html",
+      "summary": "공간·공간 경계 개념과 건물 모듈의 방(BuildingRoom)·층(Storey)·문(DoorSurface) 표현을 정한 도시·건물 모델 개념 표준(2021, 원문 미열람).",
+      "ref_id": "ref-339",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IMDF (Indoor Mapping Data Format) 1.0.0",
+      "org": "OGC / Apple",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://docs.ogc.org/cs/20-094/",
+      "summary": "층·공간 단위·출입구·편의시설을 사람 길안내용으로 모델링하는 OGC 커뮤니티 표준(2021-02-23, 원문 미열람).",
+      "ref_id": "ref-338",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BOT (Building Topology Ontology) 0.3.2",
+      "org": "W3C Linked Building Data Community Group",
+      "kind": "프레임워크",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/w3c-lbd-cg/bot/blob/master/bot.ttl",
+      "summary": "건물의 대지·건물·층·공간·요소와 포함·인접 관계를 RDF 로 기술하는 최소 온톨로지. W3C 권고안이 아닌 커뮤니티 그룹 사양이다.",
+      "ref_id": "ref-336",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ifcOWL",
+      "org": "buildingSMART",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/buildingsmart-community/ifcOWL",
+      "summary": "IFC 스키마를 RDF·TTL 온톨로지로 제공한다. README 의 대상 판은 IFC2X3~IFC4_ADD2 이며 IFC 4.3 은 목록에 없다(2026-09-25 확인).",
+      "ref_id": "ref-342",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Brick Schema",
+      "org": "Brick Consortium",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        10
+      ],
+      "url": "https://docs.brickschema.org/brick/relationships.html",
+      "summary": "건물 설비·센서 메타데이터 온톨로지로, 건물·층·방 위치를 hasPart·isPartOf 계층으로 표현한다(원문 미열람).",
+      "ref_id": "ref-341",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 16739-1:2024 (IFC 4.3)",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.iso.org/standard/84123.html",
+      "summary": "IFC 4.3 을 국제표준화한 판으로 교량·도로·철도·항만 같은 기반시설 정보를 더했다(원문 미열람).",
+      "ref_id": "ref-335",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Rasa 폼(Forms, Rasa 3.x)",
+      "org": "Rasa Technologies",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/forms.mdx",
+      "summary": "오픈소스 대화 프레임워크 Rasa 의 폼 기능. 필수 슬롯을 정해 두고 비어 있는 슬롯을 사용자에게 차례로 묻고 검증한다(확인일 2026-09-25 기준).",
+      "ref_id": "ref-356",
+      "run_id": "2026-09-25-30",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 액션 설계(Actions)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        12,
+        9
+      ],
+      "url": "https://design.ros2.org/articles/actions.html",
+      "summary": "클라이언트가 UUID 로 만드는 목표 id, 진행·종료 목표 상태, 결과 캐시를 정한 ROS 2 설계 문서다.",
+      "ref_id": "ref-363",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 관리형 노드 수명주기(Managed nodes)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        12,
+        24
+      ],
+      "url": "https://design.ros2.org/articles/node_lifecycle.html",
+      "summary": "네 주 상태와 전이 상태로 감독 도구가 준비 확인·운영 중 재시작·교체를 제어하게 하는 ROS 2 설계 문서다.",
+      "ref_id": "ref-364",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_task",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/Task.hpp",
+      "summary": "실행 중 작업의 백업과 취소·강제 종료·건너뛰기·되감기를 정한 Open-RMF 작업 라이브러리다.",
+      "ref_id": "ref-366",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IETF Idempotency-Key HTTP 헤더 초안(draft-ietf-httpapi-idempotency-key-header)",
+      "org": "IETF HTTPAPI Working Group",
+      "kind": "표준",
+      "related_areas": [
+        12,
+        1
+      ],
+      "url": "https://github.com/ietf-wg-httpapi/idempotency/blob/main/draft-ietf-httpapi-idempotency-key-header.md",
+      "summary": "RFC 가 아닌 인터넷 초안으로, 클라이언트 생성 멱등성 키로 요청 재시도를 식별하고 키 재사용 금지·만료 정책·오류 코드를 제안한다.",
+      "ref_id": "ref-367",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC UA Part 10: Programs (v1.04)",
+      "org": "OPC Foundation",
+      "kind": "표준",
+      "related_areas": [
+        12
+      ],
+      "url": "https://reference.opcfoundation.org/Core/Part10/v104/docs/4.2.4",
+      "summary": "Halted·Ready·Running·Suspended 프로그램 상태 기계와 전이를 정한다(원문 미열람).",
+      "ref_id": "ref-368",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISA-TR88.00.02 Machine and Unit States (PackML)",
+      "org": "ISA",
+      "kind": "표준",
+      "related_areas": [
+        12
+      ],
+      "url": "https://www.isa.org/products/isa-tr88-00-02-2022-machine-and-unit-states-an-imp",
+      "summary": "PackML 로 알려진 기계·유닛 상태 모델 기술보고서(2015판·2022판). 원문 유료·미열람이며 상태 목록은 발행 기관 자료로 미확인이다.",
+      "ref_id": "ref-369",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BehaviorTree.CPP",
+      "org": "BehaviorTree (GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12
+      ],
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP/blob/master/include/behaviortree_cpp/decorators/retry_node.h",
+      "summary": "재시도(RetryNode)·시간 초과(TimeoutNode) 데코레이터를 제공하는 행동 트리 라이브러리다.",
+      "ref_id": "ref-371",
+      "run_id": "2026-09-25-31",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OR-Tools CP-SAT (스케줄링 레시피)",
+      "org": "Google",
+      "kind": "오픈소스",
+      "related_areas": [
+        14
+      ],
+      "url": "https://github.com/google/or-tools/blob/stable/ortools/sat/docs/scheduling.md",
+      "summary": "구간 변수·겹침 금지·선택 구간·선후 부등식으로 스케줄링 문제를 표현하는 제약 프로그래밍 해법기의 공식 문서다.",
+      "ref_id": "ref-379",
+      "run_id": "2026-09-25-34",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_task (TaskPlanner·BinaryPriorityScheme)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        14,
+        13,
+        16
+      ],
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "summary": "플릿 안에서 요청을 로봇 일정에 넣고 충전 작업을 끼워 넣는 작업 계획기와 높음·낮음 두 단계 우선순위 체계를 제공한다.",
+      "ref_id": "ref-377",
+      "run_id": "2026-09-25-34",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "rmf_task (Open-RMF 작업 계획기 TaskPlanner)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        13,
+        14,
+        16
+      ],
+      "url": "https://github.com/open-rmf/rmf_task",
+      "summary": "로봇 간 작업 배정과 순서를 최단 완료 기준으로 풀고 배터리 제약에 따라 충전 작업을 일정에 자동 삽입하는 Open-RMF 라이브러리다.",
+      "ref_id": "ref-404",
+      "run_id": "2026-09-25-33",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 13567-1:2017 CAD 레이어 구성·명명 — Part 1: 개요와 원칙",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.iso.org/standard/70181.html",
+      "summary": "CAD 파일의 레이어 구조화 원칙과 책임 주체·요소·표현 등 고정 길이 필드로 된 레이어 이름 체계를 정한다(원문 미열람).",
+      "ref_id": "ref-427",
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "미국 국가 CAD 표준(NCS) AIA CAD 레이어 이름 형식(V5, V6 판 있음)",
+      "org": "National Institute of Building Sciences",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.nationalcadstandard.org/ncs5/pdfs/ncs5_clg_lnf.pdf",
+      "summary": "하이픈으로 나눈 분야 지정자·주 그룹 등 필드로 레이어 이름을 짓는 형식이며 A-DOOR·A-WALL 같은 이름을 둔다(V5 문서 기준, 원문 미열람).",
+      "ref_id": "ref-428",
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS F 1542 CAD 도면 작성을 위한 레이어 원칙과 기준",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010129900",
+      "summary": "CAD 도면의 레이어 원칙과 기준을 정한 국가표준(2020-12-21 확인, 원문 미열람).",
+      "ref_id": "ref-429",
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "건설CALS/EC 전자도면 작성표준(V1.1, KCCS-0001-2006)",
+      "org": "한국건설기술연구원(건설CALS 체계)",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.calspia.go.kr/portal/intro/introStandard02.do",
+      "summary": "건설사업 전자도면의 도면분류·파일명·선·색상·레이어·심벌을 정한 표준(V1.0 2004-08, V1.1 2006-12-26 공고, 원문 미열람).",
+      "ref_id": "ref-430",
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ezdxf (DXF 읽기·쓰기 라이브러리)",
+      "org": "Moitzi, M. (mozman/ezdxf GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6
+      ],
+      "url": "https://github.com/mozman/ezdxf/blob/master/docs/source/concepts/blocks.rst",
+      "summary": "DXF 도면의 블록·레이어·단위를 다루는 오픈소스 라이브러리이며, 그 문서가 DXF 형식 개념을 설명한다(Autodesk 공식 참조 아님).",
+      "ref_id": "ref-424",
+      "run_id": "2026-09-25-36",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ECLASS (제품·서비스 분류·속성 사전, Release 15.0·16.0)",
+      "org": "ECLASS e.V.",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://eclass.eu/en/eclass-standard/releases",
+      "summary": "4단계 계층 8자리 코드와 IRDI 로 제품 분류 클래스·속성을 식별하는 사전 표준. Release 15.0 에서 로봇 그룹 27-38-01 을 재구성했고 16.0 은 2025-11-28 발행됐다. 이동로봇 범위 능력 항목은 미확인.",
+      "ref_id": "ref-185",
+      "run_id": "2026-09-25-41",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC 공통 데이터 사전(IEC CDD)",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/",
+      "summary": "IEC 61360 기반 온라인 데이터 사전으로, 안내 페이지 기준 IEC 61987·62683·63213 제품 도메인과 IEC 62720 단위 도메인을 제공한다. 로봇 도메인은 안내 페이지에 없다(데이터베이스 미조회).",
+      "ref_id": "ref-183",
+      "run_id": "2026-09-25-41",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "rmf_traffic (Open-RMF 교통 스케줄링·협상 패키지)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        15,
+        9
+      ],
+      "url": "https://github.com/open-rmf/rmf_traffic",
+      "summary": "여러 에이전트 사이 이동로봇 교통을 스케줄링하고 협상하는 알고리즘과 자료구조를 제공하는 Open-RMF 패키지다.",
+      "ref_id": "ref-197",
+      "run_id": "2026-09-25-39",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF Traffic Editor",
+      "org": "Open Robotics",
+      "kind": "오픈소스",
+      "related_areas": [
+        15,
+        6,
+        21
+      ],
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "summary": "플릿별 경로망 그래프와 차선(양방향·방향 제약)·경유점(대기 지점·주차·충전소) 속성을 편집하는 Open-RMF 도구다.",
+      "ref_id": "ref-079",
+      "run_id": "2026-09-25-39",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "MAPF-LRR2023 (League of Robot Runners 2023 팀 해법 WPPL)",
+      "org": "DiligentPanda (Team Pikachu, GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        15,
+        23
+      ],
+      "url": "https://github.com/DiligentPanda/MAPF-LRR2023",
+      "summary": "PIBT·LNS·창 단위 계획을 결합한 지속형 MAPF 해법 WPPL 의 공개 저장소이며, 대회 우승은 팀 자기 보고다.",
+      "ref_id": "ref-191",
+      "run_id": "2026-09-25-39",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SEMI E84 Enhanced Carrier Handoff Parallel I/O Interface",
+      "org": "SEMI",
+      "kind": "표준",
+      "related_areas": [
+        17,
+        10
+      ],
+      "url": "https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface",
+      "summary": "반도체 업종에서 자동 반송 시스템(AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 표준. 물류센터 적용 근거는 아니며 참고 사례로만 다룬다(원문 미열람).",
+      "ref_id": "ref-202",
+      "run_id": "2026-09-25-42",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ASTM F3499-21 A-UGV 도킹 성능 시험 방법",
+      "org": "ASTM International",
+      "kind": "표준",
+      "related_areas": [
+        17,
+        23
+      ],
+      "url": "https://www.astm.org/f3499-21.html",
+      "summary": "A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법(원문 미열람).",
+      "ref_id": "ref-204",
+      "run_id": "2026-09-25-42",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ANSI/A3 R15.08-2-2023 Industrial Mobile Robots — Safety Requirements — Part 2",
+      "org": "ANSI / A3",
+      "kind": "표준",
+      "related_areas": [
+        25,
+        17
+      ],
+      "url": "https://webstore.ansi.org/standards/ria/ansia3r15082023",
+      "summary": "산업용 이동로봇과 플릿의 현장 통합 안전 요구사항을 정하고 모바일 매니퓰레이터(IMR 유형 C)를 다룬다(원문 미열람).",
+      "ref_id": "ref-210",
+      "run_id": "2026-09-25-42",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B ISO 10218-2 산업용 로봇의 안전 — 제2부: 로봇 시스템 및 통합",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        25,
+        17
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010083660",
+      "summary": "로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준. 판·확인 연도와 이동식 로봇 적용 조항 미확인(원문 미열람).",
+      "ref_id": "ref-211",
+      "run_id": "2026-09-25-42",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 디스펜서·인제스터 메시지(rmf_internal_msgs의 rmf_dispenser_msgs)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        17,
+        10
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg",
+      "summary": "워크셀 인계의 요청(요청 id, 대상 워크셀, 품목 목록)과 결과(ACKNOWLEDGED·SUCCESS·FAILED) 메시지 정의.",
+      "ref_id": "ref-499",
+      "run_id": "2026-09-25-42",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_traffic (교통 그래프·뮤텍스 그룹)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16,
+        15
+      ],
+      "url": "https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+      "summary": "Open-RMF 교통 그래프 헤더로, 같은 뮤텍스 그룹의 경유점·차선을 한 번에 한 로봇만 점유하게 하고 충전 경유점·주차·대기 지점을 정의한다.",
+      "ref_id": "ref-536",
+      "run_id": "2026-09-25-40",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_reservation (실험적 예약 라이브러리)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16
+      ],
+      "url": "https://github.com/open-rmf/rmf_reservation",
+      "summary": "충전기 같은 자원을 시간 범위 안에서 로봇에 배정하는 실험적 제약 자원 스케줄링 라이브러리로 소개된다(원문 미열람, 배포판 포함 여부 미확인).",
+      "ref_id": "ref-538",
+      "run_id": "2026-09-25-40",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 3691-4:2023 무인 산업용 트럭과 그 시스템의 안전 요구·검증",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        25
+      ],
+      "url": "https://www.iso.org/standard/83545.html",
+      "summary": "무인 산업용 트럭과 그 시스템(차량, 제어 시스템, 하역 장치, 배터리 충전소, 적재물 인계 스테이션)의 안전 요구를 정한 제2판(2020판 대체). 원문 미열람.",
+      "ref_id": "ref-470",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 10218-1·10218-2:2025 산업용 로봇 안전(협동 적용 통합)",
+      "org": "ISO (A3 해설 경유)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        25
+      ],
+      "url": "https://www.automate.org/robotics/blogs/updated-iso-10218-faq",
+      "summary": "협동 적용 안전 요구를 본문에 넣어 ISO/TS 15066 내용을 흡수하고 기능 안전을 명확히 하며 사이버보안 요구를 더한 개정판. A3 해설 기준, ISO 원문 미열람.",
+      "ref_id": "ref-471",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ANSI/A3 R15.08-2 산업용 이동로봇 시스템·적용 안전 표준",
+      "org": "A3(Association for Advancing Automation)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        25
+      ],
+      "url": "https://www.automate.org/robotics/news/ansi-a3-r15-08-2-safety-standard-for-industrial-mobile-robot-systems-and-applications-now-available",
+      "summary": "IMR 또는 IMR 플릿을 현장에 통합·설정하는 안전 요구(2023-10). 원문 미열람.",
+      "ref_id": "ref-472",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "고정식·이동식 산업용 로봇의 협동작업 안전 가이드",
+      "org": "고용노동부·한국산업안전보건공단",
+      "kind": "프레임워크",
+      "related_areas": [
+        18,
+        25
+      ],
+      "url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20230700065",
+      "summary": "감지기 활용 충돌방지 조치, 작업자 이동·작업 방법, 점검표, 이동식 로봇 예시를 제시한 2023-07 안전 가이드. 원문 미열람.",
+      "ref_id": "ref-473",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "이동식 협동로봇 안전기준 KS(표준 번호 미확인)",
+      "org": "중소벤처기업부 발표(대구 이동식 협동로봇 규제자유특구)",
+      "kind": "표준",
+      "related_areas": [
+        18,
+        25
+      ],
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156658517",
+      "summary": "규제자유특구 실증을 거쳐 2024-11 제정된 이동식 협동로봇 안전기준 한국산업표준. 번호·본문 미확인.",
+      "ref_id": "ref-475",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_demos",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "summary": "웹 대시보드 작업 제출·상태 감시와 비상 경보 시 로봇의 가장 가까운 주차 위치 이동을 보여 주는 Open-RMF 데모.",
+      "ref_id": "ref-104",
+      "run_id": "2026-09-25-46",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC 61360-7:2024 교차 도메인 개념 데이터 사전(General items)",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        5
+      ],
+      "url": "https://webstore.iec.ch/en/publication/72956",
+      "summary": "IEC CDD 에 게시된 교차 도메인 데이터 사전으로 국가·언어 코드, IP 코드, 선택된 AAS 참조 같은 일반 항목을 정한다(2024판, 유럽 채택판 EN IEC 61360-7:2026 있음, 원문 미열람).",
+      "ref_id": "ref-437",
+      "run_id": "2026-09-25-47",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02003 Generic Frame for Technical Data for Industrial Equipment in Manufacturing (1.2)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28
+      ],
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2022/10/IDTA-02003-1-2_Submodel_TechnicalData.pdf",
+      "summary": "기술 데이터 AAS 서브모델 일반 틀. 제품 분류 항목으로 제품을 ECLASS·IEC CDD 같은 분류 체계의 제품 클래스에 연결하게 한다(1.2 판 기준, 저장소에 2.0.1 판 있음, 원문 미열람).",
+      "ref_id": "ref-438",
+      "run_id": "2026-09-25-47",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Nav2 map_server (ROS 2 지도 서버, 점유 격자 지도 YAML 형식)",
+      "org": "ROS Navigation (ros-navigation/navigation2)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        9
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_map_server/README.md",
+      "summary": "ROS 1 내비게이션과 같은 YAML 메타데이터와 이미지 한 쌍으로 된 점유 격자 지도를 읽고 저장하는 ROS 2 Nav2 지도 서버. 로봇 쪽 내비게이션 스택의 입력 형식이다.",
+      "ref_id": "ref-440",
+      "run_id": "2026-09-25-44",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 diagnostics",
+      "org": "ROS (ros/diagnostics GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19
+      ],
+      "url": "https://github.com/ros/diagnostics/blob/ros2/README.md",
+      "summary": "하드웨어 드라이버가 /diagnostics 토픽에 진단 정보를 발행하게 하고 발행 도우미·집계·원격 로깅 패키지를 제공한다. ROP 에서는 로봇 내부 진단으로 연계 대상이다.",
+      "ref_id": "ref-445",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ros2_tracing",
+      "org": "ROS 2 (ros2/ros2_tracing GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        11
+      ],
+      "url": "https://github.com/ros2/ros2_tracing",
+      "summary": "LTTng 기반으로 ROS 2 핵심 패키지에 추적 지점을 넣는 저오버헤드 추적 프레임워크. 로봇 내부 계측 도구로 연계 대상이다.",
+      "ref_id": "ref-446",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OpenTelemetry Specification",
+      "org": "OpenTelemetry (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        11
+      ],
+      "url": "https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md",
+      "summary": "추적·지표·로그·배기지 신호와 스팬, TraceId·SpanId 문맥 전파를 정의한 관측 명세.",
+      "ref_id": "ref-447",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 작업 상태 스키마(rmf_api_msgs task_state)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        12,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "summary": "작업·단계·이벤트 상태 토큰(blocked·delayed·error 등), 완료 예상 시간, 중단 기록, 배정 상태를 담는 JSON 스키마.",
+      "ref_id": "ref-111",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF 경보 메시지(rmf_task_msgs Alert)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        18,
+        20
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg",
+      "summary": "심각도 등급(INFO·WARNING·ERROR), 운영자 응답 목록, 관련 작업 id 를 담는 경보 메시지 정의.",
+      "ref_id": "ref-448",
+      "run_id": "2026-09-25-48",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IFCtoLBD (IFC → 링크드 빌딩 데이터 변환기, 판 2.54.0)",
+      "org": "Oraskari, J. (jyrkioraskari GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        28,
+        6
+      ],
+      "url": "https://github.com/jyrkioraskari/IFCtoLBD",
+      "summary": "IFC STEP·XML·JSON 을 BOT 등 링크드 빌딩 데이터 RDF(Turtle·JSON-LD·ICDD)로 변환하고 SHACL 검증을 지원하는 오픈소스 도구(Apache 2.0).",
+      "ref_id": "ref-456",
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SHACL (Shapes Constraint Language)",
+      "org": "W3C",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        6,
+        5
+      ],
+      "url": "https://www.w3.org/TR/shacl/",
+      "summary": "RDF 데이터 그래프를 형상 그래프의 조건으로 검증해 sh:conforms 와 위반 결과를 담은 검증 보고서를 내는 W3C 권고안(2017). 이 위키는 편집자 초안으로 확인했다.",
+      "ref_id": "ref-459",
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDS (Information Delivery Specification)",
+      "org": "buildingSMART",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        6
+      ],
+      "url": "https://github.com/buildingSMART/IDS",
+      "summary": "IFC 기반 정보 요구사항을 컴퓨터가 해석할 수 있게 정의하는 XML 기반 표준(XSD·XML 예시 제공, 판 번호 미확인).",
+      "ref_id": "ref-464",
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "RMF Site Editor (rmf_site)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        21,
+        6
+      ],
+      "url": "https://github.com/open-rmf/rmf_site",
+      "summary": "대규모 Open-RMF 배치 현장을 시각화·편집하는 실험적 도구로, 프로젝트에서 시뮬레이션과 주행 그래프를 생성할 수 있다고 설명한다.",
+      "ref_id": "ref-482",
+      "run_id": "2026-09-25-52",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 22301:2019 업무 연속성 관리 시스템 요구사항(개정 1:2024 별도)",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        20
+      ],
+      "url": "https://www.iso.org/standard/75106.html",
+      "summary": "교란 사건 대비·복구를 위한 BCMS 의 수립·운영·점검·개선 요구사항. ROP 에는 현장 제한 운영·수동 전환 계획의 참조 틀(연계 대상)이다. 원문 미열람.",
+      "ref_id": "ref-486",
+      "run_id": "2026-09-25-50",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "기업재난관리표준·재해경감 우수기업 인증제",
+      "org": "행정안전부",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        20
+      ],
+      "url": "https://www.mois.go.kr/frt/sub/a06/b10/disasterMitigationCompanies/screen.do",
+      "summary": "「재해경감을 위한 기업의 자율활동 지원에 관한 법률」에 따른 기업재난관리표준 고시와 문서평가·현장평가를 거치는 재해경감 우수기업 인증. 원문 미열람.",
+      "ref_id": "ref-487",
+      "run_id": "2026-09-25-50",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "중소규모 사업장 기능연속성계획(BCP) 수립 가이드(2022)",
+      "org": "고용노동부",
+      "kind": "프레임워크",
+      "related_areas": [
+        20
+      ],
+      "url": "https://www.moel.go.kr/news/notice/noticeView.do?bbs_seq=20220301591",
+      "summary": "오미크론 확산기에 안내한 감염병 대응 권고 가이드로 7단계 BCP 수립 절차를 담는다. 원문 미열람.",
+      "ref_id": "ref-488",
+      "run_id": "2026-09-25-50",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "보상 트랜잭션 패턴(Compensating Transaction pattern)",
+      "org": "Microsoft (Azure Architecture Center)",
+      "kind": "프레임워크",
+      "related_areas": [
+        20,
+        1,
+        12
+      ],
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction",
+      "summary": "실패한 다단계 작업의 완료 단계를 업무 규칙에 맞춰 보정하는 설계 패턴. 멱등 단계·진행 기록·사람 참여를 권한다.",
+      "ref_id": "ref-489",
+      "run_id": "2026-09-25-50",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_ros2 플릿 어댑터(RobotUpdateHandle)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        20,
+        9,
+        12
+      ],
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp",
+      "summary": "작업 중단·재개·취소·강제 종료·재계획 요청·작업 수락 중지·이슈 생성 API(헤더 문서 주석 기준).",
+      "ref_id": "ref-537",
+      "run_id": "2026-09-25-50",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEEE 1872.1-2024 Standard for Robot Task Representation",
+      "org": "IEEE Standards Association",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        28,
+        14
+      ],
+      "url": "https://standards.ieee.org/ieee/1872.1/6993/",
+      "summary": "로봇·자동화 분야 작업 지식의 표현·추론·교환을 위한 온톨로지 표준(2024-06-18 발행, 본문 원문 미열람). 구현 지침 P1872.1.1 이 개발 중이다.",
+      "ref_id": "ref-504",
+      "run_id": "2026-09-25-51",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Serverless Workflow (Open Workflow Specification) DSL",
+      "org": "CNCF Serverless Workflow",
+      "kind": "오픈소스",
+      "related_areas": [
+        2,
+        14
+      ],
+      "url": "https://github.com/serverlessworkflow/specification/blob/main/dsl.md",
+      "summary": "순차·병렬 등 12개 작업 유형, 시간 초과, 일정 표현을 정의하는 워크플로 기술 언어. 수행자 배정·우선순위·기한 개념은 연 문서 범위에서 확인되지 않았다.",
+      "ref_id": "ref-496",
+      "run_id": "2026-09-25-51",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "HDDL (Hierarchical Domain Definition Language)",
+      "org": "Höller 외(IPC 2020 계층 계획 부문)",
+      "kind": "프레임워크",
+      "related_areas": [
+        14,
+        13
+      ],
+      "url": "https://arxiv.org/abs/1911.05499",
+      "summary": "PDDL 을 확장해 작업과 분해 방법, 하위 작업의 부분·전체 순서를 기술하는 계층적 작업 네트워크 계획 언어(원문 미열람).",
+      "ref_id": "ref-501",
+      "run_id": "2026-09-25-51",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "FaMe (BPMN 기반 다중 로봇 시스템 개발 틀)",
+      "org": "Pettinari, S. (UNICAM PROS)",
+      "kind": "오픈소스",
+      "related_areas": [
+        2,
+        13
+      ],
+      "url": "https://github.com/SaraPettinari/fame",
+      "summary": "다중 로봇의 협력을 BPMN 모델로 조직하는 개발 틀(Corradini 외, Robotics and Autonomous Systems 160권 104322). 협업 다이어그램·실행 환경 세부는 미확인.",
+      "ref_id": "ref-503",
+      "run_id": "2026-09-25-51",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 20607:2019 기계 안전 — 설명서 일반 작성 원칙",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        21,
+        25
+      ],
+      "url": "https://www.iso.org/standard/68519.html",
+      "summary": "기계 제조사가 설명서의 안전 관련 부분을 작성할 때의 요구사항을 정하고 ISO 12100:2010 6.4.5 를 구체화한다(원문 미열람).",
+      "ref_id": "ref-509",
+      "run_id": "2026-09-25-57",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC/IEEE 82079-1:2019 제품 사용 정보 작성 — Part 1: 원칙과 일반 요구사항",
+      "org": "IEC / IEEE / ISO",
+      "kind": "표준",
+      "related_areas": [
+        5,
+        21
+      ],
+      "url": "https://www.iso.org/standard/71620.html",
+      "summary": "모든 종류 제품의 사용 정보 작성 원칙·요구사항과 정보 관리 과정·실증적 평가 방법을 정한다(2012 초판 대체, 원문 미열람).",
+      "ref_id": "ref-510",
+      "run_id": "2026-09-25-57",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OmniDocBench (PDF 문서 파싱 벤치마크)",
+      "org": "OpenDataLab",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        23
+      ],
+      "url": "https://github.com/opendatalab/OmniDocBench",
+      "summary": "1,651개 PDF 페이지에서 텍스트·표·수식·읽기 순서를 나눠 평가하는 벤치마크로, 문서 유형에 매뉴얼을 명시하지 않는다.",
+      "ref_id": "ref-513",
+      "run_id": "2026-09-25-57",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 23247-6:2026 제조 디지털 트윈 프레임워크 — 제6부: 디지털 트윈 결합",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        22,
+        28
+      ],
+      "url": "https://www.iso.org/standard/87426.html",
+      "summary": "여러 디지털 트윈을 목적에 따라 골라 결합하는 방법을 정한 ISO 23247 제6부. 국가기술표준원은 2026-07-28 한국(ETRI) 제안으로 발간됐다고 알렸다(원문 미열람).",
+      "ref_id": "ref-518",
+      "run_id": "2026-09-25-56",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS X ISO 23247 제조를 위한 디지털 트윈 프레임워크(제1부 개요 및 일반 원리 등)",
+      "org": "국가표준인증종합정보센터(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        22,
+        28
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010140724",
+      "summary": "ISO 23247 을 국내에 부합화한 KS 시리즈. 제1부 개요 및 일반 원리, 제2부 참조 구조, 제4부 정보 교환 등으로 나뉜다(제3부·제정일 미확인, 원문 미열람).",
+      "ref_id": "ref-516",
+      "run_id": "2026-09-25-56",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_simulation (시뮬레이션 플러그인)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        23,
+        24
+      ],
+      "url": "https://github.com/open-rmf/rmf_simulation",
+      "summary": "Gazebo 에서 slotcar 로봇, 문·승강기, 디스펜서·인제스터, 군중, 충전 전환을 재현하는 플러그인 저장소. Gazebo Classic 지원은 Gazebo 11 지원 종료까지만 보장하고 Fortress 를 지원한다.",
+      "ref_id": "ref-523",
+      "run_id": "2026-09-25-56",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OFacT (Open Factory Twin)",
+      "org": "OpenFactoryTwin (Fraunhofer ISST, HSBI, FH Dortmund)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        8
+      ],
+      "url": "https://github.com/OpenFactoryTwin/ofact",
+      "summary": "생산·물류용 오픈소스 디지털 트윈 프레임워크. 상태 모델·에이전트 제어, 데이터 통합·시뮬레이션, 시나리오·KPI 계획 서비스로 구성(Apache 2.0).",
+      "ref_id": "ref-524",
+      "run_id": "2026-09-25-56",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "League of Robot Runners",
+      "org": "League of Robot Runners (Amazon Robotics 후원)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23,
+        15
+      ],
+      "url": "https://idm-lab.org/bib/abstracts/Koen24p.html",
+      "summary": "창고 물류 같은 응용을 겨냥해 로봇 동역학·지속형 계획·작업 배정·실시간 실행을 다루는 다중 로봇 조율 대회. MAPF 벤치마크 인스턴스 개발과 최신 성과 추적을 목표로 한다.",
+      "ref_id": "ref-603",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ASTM F45 위원회(무인 자동 유도 산업 차량)",
+      "org": "ASTM International (NIST 참여)",
+      "kind": "표준",
+      "related_areas": [
+        23,
+        25
+      ],
+      "url": "https://www.nist.gov/programs-projects/astm-committee-f45-driverless-automatic-guided-industrial-vehicles",
+      "summary": "무인 자동 유도 산업 차량의 용어·권고 관행·시험 방법을 개발하는 위원회로 환경 영향, 도킹·주행, 물체 감지·보호, 통신·통합 분과를 둔다. ROP 에게는 연계 대상이다.",
+      "ref_id": "ref-605",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B ISO 18646-1 서비스 로봇 성능 기준 및 시험방법 — 제1부: 바퀴형 로봇의 이동능력",
+      "org": "국가표준인증종합정보센터(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        23
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010113281",
+      "summary": "서비스 로봇의 성능 기준과 시험 방법을 KS 로 부합화한 시리즈의 제1부(2022 확인). 제3부 조작 등이 있고 제2부 내용은 미확인이다.",
+      "ref_id": "ref-606",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "한국로봇산업진흥원 로봇 시험평가",
+      "org": "한국로봇산업진흥원(KIRIA)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23
+      ],
+      "url": "https://kiria.org/rp/kiria/tva/inr/page.dn",
+      "summary": "KS·ISO·IEC·CISPR 등 표준 시험 방법을 적용하고 경사 노면·특수 노면·계단·주행 내구 같은 로봇 주행 성능 시험을 수행한다.",
+      "ref_id": "ref-607",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ros2_fault_injection",
+      "org": "reeceholland (GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23
+      ],
+      "url": "https://github.com/reeceholland/ros2_fault_injection",
+      "summary": "ROS 2 토픽·서비스·좌표 변환에 장애를 주입하고 YAML 시나리오 단정으로 합격·불합격을 내 CI 에 넘기는 틀(README 기준, 성숙도·라이선스 미확인).",
+      "ref_id": "ref-601",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROSMonitoring",
+      "org": "University of Liverpool Autonomy and Verification",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        12,
+        19
+      ],
+      "url": "https://github.com/autonomy-and-verification-uol/ROSMonitoring",
+      "summary": "ROS 1·ROS 2 토픽·서비스를 감시해 외부 판정기로 위반을 판정하고 기록하거나 걸러 내는 런타임 검증 틀.",
+      "ref_id": "ref-602",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "LSMART (Lifelong Scalable Multi-Agent Realistic Testbed)",
+      "org": "Yan, J. 외(arXiv 2602.15721)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        15
+      ],
+      "url": "https://arxiv.org/abs/2602.15721",
+      "summary": "AGV 플릿 관리 시스템 안에서 임의의 MAPF 알고리즘을 현실적으로 평가하는 오픈소스 시뮬레이터(프리프린트).",
+      "ref_id": "ref-604",
+      "run_id": "2026-09-25-59",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IDTA 02007 Nameplate for Software in Manufacturing (Software Nameplate 1.0)",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "kind": "표준",
+      "related_areas": [
+        24,
+        28
+      ],
+      "url": "https://github.com/admin-shell-io/id/blob/master/idta/SoftwareNameplate/1/0/README.md",
+      "summary": "자산관리셸 서브모델로 소프트웨어 제품과 설치 인스턴스의 버전·설치 정보를 업데이트·패치·라이선스·감사 목적으로 통일해 표현한다.",
+      "ref_id": "ref-550",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 17359:2018 기계 상태 감시·진단 일반 지침",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        24,
+        19
+      ],
+      "url": "https://www.iso.org/standard/71194.html",
+      "summary": "기계의 상태 감시 프로그램 수립 일반 절차 지침이며 상태 감시·진단 표준군의 상위 문서다(원문 미열람).",
+      "ref_id": "ref-551",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 55000:2024 자산 관리 — 용어·개요·원칙",
+      "org": "ISO (ISO/TC 251)",
+      "kind": "표준",
+      "related_areas": [
+        24
+      ],
+      "url": "https://www.iso.org/standard/83053.html",
+      "summary": "자산 관리의 용어·개요·원칙을 정한 제2판(2024-07)으로 2014판을 대체하며 모든 유형의 자산에 적용된다(원문 미열람).",
+      "ref_id": "ref-552",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC TR 62443-2-3:2015 IACS 환경의 패치 관리",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        24,
+        26
+      ],
+      "url": "https://webstore.iec.ch/en/publication/22811",
+      "summary": "산업 제어 시스템 패치 관리 프로그램의 자산 소유자·공급자 요구와 패치 정보 교환 형식을 정의한다(원문 미열람).",
+      "ref_id": "ref-554",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "REP 2000 ROS 2 Releases and Target Platforms",
+      "org": "Open Robotics (ROS REP)",
+      "kind": "프레임워크",
+      "related_areas": [
+        24
+      ],
+      "url": "https://www.ros.org/reps/rep-2000.html",
+      "summary": "ROS 2 배포판별 출시·지원 종료 일정과 장기 지원판 5년·비장기 지원판 1.5년 지원 정책을 정한다.",
+      "ref_id": "ref-549",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "rmf_simulation (Open-RMF 시뮬레이션 플러그인)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        24
+      ],
+      "url": "https://github.com/open-rmf/rmf_simulation",
+      "summary": "Open-RMF 시뮬레이션 플러그인 저장소로 Gazebo Classic 11과 Gazebo Fortress 를 지원 대상으로 적는다(원문 미열람).",
+      "ref_id": "ref-523",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "협동로봇 설치 작업장 안전인증",
+      "org": "한국로봇사용자협회",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        25,
+        24
+      ],
+      "url": "https://www.korua.or.kr/inspect/inspectInfo.do",
+      "summary": "협동운전 산업용 로봇 시스템의 ISO 10218-2 준수를 심사하고 발급일로부터 2년 주기로 정기 심사한다(원문 미열람).",
+      "ref_id": "ref-558",
+      "run_id": "2026-09-25-61",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 12100:2010 기계 안전 — 설계 일반 원칙 — 위험성평가와 위험 감소",
+      "org": "ISO (CEN EN ISO 12100:2010)",
+      "kind": "표준",
+      "related_areas": [
+        25
+      ],
+      "url": "https://standards.iteh.ai/catalog/standards/cen/74a41162-9d84-4410-a8a3-606630770ab9/en-iso-12100-2010",
+      "summary": "기계 설계의 위험성평가와 3단계 위험 감소(본질적 안전 설계 → 방호·보완 보호 조치 → 사용 정보) 일반 원칙이다. 원문 미열람.",
+      "ref_id": "ref-566",
+      "run_id": "2026-09-25-63",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KS B ISO/TS 15066 로봇 및 로봇 장치 — 협동로봇",
+      "org": "국가기술표준원(KSSN)",
+      "kind": "표준",
+      "related_areas": [
+        25,
+        18
+      ],
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010113282",
+      "summary": "ISO/TS 15066 을 부합화한 국내 협동로봇 규격(2017-02-28 제정, 2022-10-12 확인판 있음). 그 내용은 ISO 10218-2:2025 에 통합됐다. 원문 미열람.",
+      "ref_id": "ref-568",
+      "run_id": "2026-09-25-63",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Nav2 Route Server (nav2_route)",
+      "org": "ROS Navigation (ros-navigation/navigation2)",
+      "kind": "오픈소스",
+      "related_areas": [
+        15,
+        6
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_route/README.md",
+      "summary": "GeoJSON 경로 그래프의 노드·방향 엣지에 메타데이터를 달고 벌점·의미·동적 엣지 채점기로 엣지 비용을 계산하며, 엣지 진입·이탈과 노드 도달 때 문 열기 같은 동작을 실행하게 하는 경로 서버.",
+      "ref_id": "ref-570",
+      "run_id": "2026-09-25-65",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "NIST SP 800-82 Rev. 3 Guide to Operational Technology (OT) Security",
+      "org": "NIST",
+      "kind": "프레임워크",
+      "related_areas": [
+        26,
+        10
+      ],
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "summary": "2023-09 발행 OT 보안 지침. 범위를 건물 자동화·물리적 출입통제까지 넓히고 SP 800-53 Rev. 5 OT 오버레이를 제공한다(원문 미열람).",
+      "ref_id": "ref-582",
+      "run_id": "2026-09-25-64",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Eclipse Mosquitto (MQTT 브로커, mosquitto.conf ACL·인증서 인증)",
+      "org": "Eclipse Foundation",
+      "kind": "오픈소스",
+      "related_areas": [
+        26,
+        9,
+        11
+      ],
+      "url": "https://mosquitto.org/man/mosquitto-conf-5.html",
+      "summary": "토픽별 ACL과 pattern 치환, 인증서 CN을 사용자 이름으로 쓰는 클라이언트 인증을 제공하는 MQTT 브로커.",
+      "ref_id": "ref-581",
+      "run_id": "2026-09-25-64",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SROS 2 접근 제어 정책(ROS 2 Access Control Policies)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        26,
+        11
+      ],
+      "url": "https://design.ros2.org/articles/ros2_access_control_policies.html",
+      "summary": "인클레이브·프로파일·권한 XML 정책으로 토픽·서비스·액션별 허용·거부를 정하고 DDS 권한 파일로 변환하는 설계 문서.",
+      "ref_id": "ref-579",
+      "run_id": "2026-09-25-64",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ROS 2 보안 인클레이브(ROS 2 Security Enclaves)",
+      "org": "ROS 2 Design",
+      "kind": "프레임워크",
+      "related_areas": [
+        26,
+        10,
+        11
+      ],
+      "url": "https://design.ros2.org/articles/ros2_security_enclaves.html",
+      "summary": "인증서·키·거버넌스·권한 파일을 묶은 보안 신원과 그 적용 범위(프로세스·사용자·장치·군집)를 정의한 설계 문서.",
+      "ref_id": "ref-580",
+      "run_id": "2026-09-25-64",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KISA 로봇 보안취약점 점검 체크리스트 해설서",
+      "org": "한국인터넷진흥원(KISA)",
+      "kind": "프레임워크",
+      "related_areas": [
+        26
+      ],
+      "url": "https://kisa.or.kr/2060205/form?lang_type=KO&page=&postSeq=36",
+      "summary": "로봇 보안 취약점 점검 항목을 안내하는 국내 해설서(원문 미열람, 항목 수·범주 미확인).",
+      "ref_id": "ref-590",
+      "run_id": "2026-09-25-64",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "NIST AI RMF 1.0 (NIST AI 100-1)",
+      "org": "NIST",
+      "kind": "프레임워크",
+      "related_areas": [
+        27,
+        25
+      ],
+      "url": "https://nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial",
+      "summary": "2023-01-26 발표된 자율 적용 AI 위험관리 프레임워크. 네 기능 Govern·Map·Measure·Manage(원문 미열람).",
+      "ref_id": "ref-617",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO/IEC 42001:2023 AI 관리 시스템",
+      "org": "ISO/IEC",
+      "kind": "표준",
+      "related_areas": [
+        27,
+        28
+      ],
+      "url": "https://www.iso.org/standard/42001",
+      "summary": "AI 시스템을 개발·제공·사용하는 조직의 AI 관리 시스템(AIMS) 수립·실행·유지·지속 개선 요구사항(원문 미열람).",
+      "ref_id": "ref-618",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO/IEC 23894:2023 AI 위험관리 지침",
+      "org": "ISO/IEC",
+      "kind": "표준",
+      "related_areas": [
+        27,
+        25
+      ],
+      "url": "https://www.iso.org/standard/77304.html",
+      "summary": "ISO 31000 을 AI 에 적용해 위험 평가·처리·감시·검토·기록을 AI 활동에 통합하도록 안내하는 지침(원문 미열람).",
+      "ref_id": "ref-619",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "MLflow 모델 레지스트리",
+      "org": "MLflow (Linux Foundation 오픈소스 프로젝트)",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        24
+      ],
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "summary": "등록 모델의 버전·별칭·태그·계보를 관리하고 별칭 재지정으로 운영 모델을 교체하게 하는 기능(원문 미열람).",
+      "ref_id": "ref-626",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "LoTa-Bench",
+      "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        23
+      ],
+      "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+      "summary": "언어 기반 작업 계획기 성능을 시뮬레이터 성공률로 자동 정량화하는 벤치마크.",
+      "ref_id": "ref-541",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "AmbiK 데이터셋",
+      "org": "cog-model (AmbiK 저자)",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        18
+      ],
+      "url": "https://github.com/cog-model/AmbiK-dataset",
+      "summary": "모호한 작업·모호하지 않은 짝 1000쌍(보정 100, 시험 900)으로 LLM 의 모호성 탐지·되묻기를 평가하는 데이터셋(주방 환경).",
+      "ref_id": "ref-354",
+      "run_id": "2026-09-25-68",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SISO CMSD (Core Manufacturing Simulation Data, SISO-STD-008-2010·SISO-STD-008-01-2012)",
+      "org": "SISO(Simulation Interoperability Standards Organization)",
+      "kind": "표준",
+      "related_areas": [
+        22,
+        28
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4730674/",
+      "summary": "제조 분야 시뮬레이션과 정보 시스템 사이 데이터 교환을 위한 중립 정보 모델로 레이아웃·자원·주문·재고·일정 엔터티를 둔다. 물류 적용은 미확인이다.",
+      "ref_id": "ref-631",
+      "run_id": "2026-09-25-70",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SLAPStack (블록 적재 창고 저장 위치 배정 시뮬레이션)",
+      "org": "Rinciog, A. 외 (malerinc/slapstack GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        22,
+        3
+      ],
+      "url": "https://github.com/malerinc/slapstack",
+      "summary": "창고 시뮬레이션 사용 사례를 레이아웃·주문 흐름·초기 충전 수준으로 정의하고 레이아웃을 CSV 격자 코드로 표현한다.",
+      "ref_id": "ref-629",
+      "run_id": "2026-09-25-70",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Semantic Versioning 2.0.0",
+      "org": "Semantic Versioning (semver.org)",
+      "kind": "프레임워크",
+      "related_areas": [
+        28,
+        24
+      ],
+      "url": "https://semver.org/spec/v2.0.0.html",
+      "summary": "공개 API 선언과 MAJOR·MINOR·PATCH 증가 규칙, 폐기 절차를 정한 버전 관리 명세.",
+      "ref_id": "ref-635",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IETF RFC 9745 The Deprecation HTTP Response Header Field",
+      "org": "IETF",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        1
+      ],
+      "url": "https://www.rfc-editor.org/info/rfc9745/",
+      "summary": "자원의 폐기(예정)를 알리는 Deprecation 헤더. Sunset 헤더와 함께 쓰일 때 Sunset 시각은 Deprecation 시각보다 이르면 안 된다(원문 미열람).",
+      "ref_id": "ref-706",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IEC 62443-3-3:2013 시스템 보안 요구사항과 보안 수준",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        26
+      ],
+      "url": "https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf",
+      "summary": "감사 대상 이벤트 기록·타임스탬프·감사 정보 보호와 중앙 관리 시스템 전체 감사 추적 강화 요구(원문 미열람).",
+      "ref_id": "ref-707",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO/IEC 20000-1:2018 서비스 관리 시스템 요구사항",
+      "org": "ISO/IEC",
+      "kind": "표준",
+      "related_areas": [
+        28
+      ],
+      "url": "https://www.iso.org/standard/70636.html",
+      "summary": "서비스 관리 시스템의 수립·실행·유지·지속 개선 요구사항. 서비스 수준 관리를 관계·합의 프로세스에 포함(원문 미열람).",
+      "ref_id": "ref-708",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "KOROS 1148-8:2025 서비스 로봇을 위한 모듈 — 제2-8부: 소프트웨어 모듈용 정보모델 상호운용성 시험 절차",
+      "org": "한국지능형로봇표준포럼(KOROS)",
+      "kind": "표준",
+      "related_areas": [
+        28,
+        23
+      ],
+      "url": "http://www.koros.or.kr/bbs/board.php?bo_table=notice27&wr_id=223",
+      "summary": "서비스 로봇 소프트웨어 모듈 정보모델의 상호운용성 시험 절차 단체표준(게시일 2025-06-04, 시험 항목 미확인, 원문 미열람).",
+      "ref_id": "ref-710",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OPC Foundation 인증 프로그램(적합성 시험 도구 CTT·독립 시험소 인증)",
+      "org": "OPC Foundation",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        28,
+        23
+      ],
+      "url": "https://opcfoundation.org/certification/how-to-certify/",
+      "summary": "자체 인증 또는 재단이 인정한 독립 시험소 인증을 거쳐 통과 제품에 인증 로고를 주는 프로그램(원문 미열람).",
+      "ref_id": "ref-705",
+      "run_id": "2026-09-25-69",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Nav2 costmap_2d (비용 지도·비용 지도 필터: 금지 구역·속도 제한)",
+      "org": "ROS Navigation (ros-navigation/navigation2)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        15
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/README.md",
+      "summary": "Nav2 의 비용 지도 패키지로, 필터 마스크를 적용하는 비용 지도 필터로 금지 구역·속도 제한 구역을 표현하고 로봇 외형에 따른 인플레이션을 적용한다. 로봇 쪽 내비게이션 스택 기능이며 ROP 에서는 연계 대상이다.",
+      "ref_id": "ref-644",
+      "run_id": "2026-09-25-72",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SLAM2REF (라이다 데이터의 기준 지도 다중 세션 정렬 도구)",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        21
+      ],
+      "url": "https://github.com/MigVega/SLAM2REF",
+      "summary": "포즈 그래프 다중 세션 앵커링으로 라이다 데이터를 BIM·지상 레이저 스캔 같은 기준 지도에 정렬하고 갱신된 지도를 얻는 도구다. 로봇 쪽 연계 대상 기술이다.",
+      "ref_id": "ref-650",
+      "run_id": "2026-09-25-75",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Open-RMF rmf_task_ros2 디스패처·입찰 경매자(평가기)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        13,
+        9
+      ],
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp",
+      "summary": "작업 입찰을 받아 평가기로 플릿을 고르고, 입찰이 없으면 배정 상태를 FailedToAssign 으로 기록하는 Open-RMF 디스패처. 기본 평가기 표현은 디스패처 코드(QuickestFinish)와 헤더 문서(LeastFleetDiffCost)가 다르다.",
+      "ref_id": "ref-656",
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Rasa 폴백·사람 인계(Fallback and Human Handoff, Rasa 3.x)",
+      "org": "Rasa Technologies",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://github.com/RasaHQ/rasa/blob/main/docs/docs/fallback-handoff.mdx",
+      "summary": "의도 분류 신뢰도 문턱 아래의 폴백, 두 단계 폴백(의도 확인·재진술), 최종 폴백과 선택 구성인 사람 인계를 설명하는 Rasa 문서.",
+      "ref_id": "ref-658",
+      "run_id": "2026-09-25-74",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "nudged (2D 유사 변환 추정 라이브러리)",
+      "org": "Palonen, A. (axelpale/nudged GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        21
+      ],
+      "url": "https://github.com/axelpale/nudged",
+      "summary": "2D 점 집합에서 반사 없는 유사 변환(이동·축척·회전)을 최소제곱으로 추정하는 라이브러리. Open-RMF 플릿 어댑터 튜토리얼이 로봇–RMF 좌표 변환 추정에 쓰며, README 는 JavaScript 판 기준이라 Python 판과의 구현 동일성은 미확인이다.",
+      "ref_id": "ref-668",
+      "run_id": "2026-09-25-76",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Rasa CALM 대화 복구 패턴(rasa-calm-demo patterns.yml)",
+      "org": "Rasa Technologies",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://github.com/RasaHQ/rasa-calm-demo/blob/main/data/flows/patterns.yml",
+      "summary": "Rasa CALM 공식 데모의 대화 복구 패턴 정의. 슬롯 값 수정 확인(pattern_correction)과 흐름 취소 메타 흐름(pattern_cancel_flow)을 업무 흐름과 분리해 둔다. 제품 기본 동작과 같은지는 미확인.",
+      "ref_id": "ref-685",
+      "run_id": "2026-09-25-77",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IfcDiff (IfcOpenShell IFC 모델 비교 도구, v0.8.0 문서)",
+      "org": "IfcOpenShell",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        24
+      ],
+      "url": "https://docs.ifcopenshell.org/ifcdiff.html",
+      "summary": "두 IFC 모델을 GlobalId 기준으로 비교해 추가·삭제·변경 요소 목록을 JSON 으로 낸다. 같은 요소의 GlobalId 가 두 모델에서 같다고 가정한다.",
+      "ref_id": "ref-687",
+      "run_id": "2026-09-25-78",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BS EN ISO 19650 Guidance Part C: 공통 데이터 환경(Edition 1)",
+      "org": "UK BIM Framework",
+      "kind": "프레임워크",
+      "related_areas": [
+        6,
+        24,
+        28
+      ],
+      "url": "https://ukbimframework.org/wp-content/uploads/2020/09/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf",
+      "summary": "ISO 19650 공통 데이터 환경의 워크플로우 지침으로, 정보 컨테이너 메타데이터에 상태·개정 코드를 둔다(영국 국가 부속서 기준, 원문 미열람).",
+      "ref_id": "ref-689",
+      "run_id": "2026-09-25-78",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "OWASP Top 10 for LLM Applications 2025 (LLM06 Excessive Agency)",
+      "org": "OWASP",
+      "kind": "프레임워크",
+      "related_areas": [
+        27,
+        26,
+        18
+      ],
+      "url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM06_ExcessiveAgency.md",
+      "summary": "LLM 애플리케이션 보안 위험 목록. 과도한 에이전시 항목은 과도한 기능·권한·자율성을 원인으로 들고 영향이 큰 행동 전 사람 승인·최소 권한·완전한 중재를 대응으로 제시한다.",
+      "ref_id": "ref-695",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Model Context Protocol 명세 2025-06-18 (Server Features: Tools)",
+      "org": "Model Context Protocol (modelcontextprotocol GitHub)",
+      "kind": "표준",
+      "related_areas": [
+        27,
+        26,
+        18
+      ],
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/server/tools.mdx",
+      "summary": "LLM 이 도구를 호출하는 프로토콜의 도구 명세. 호출을 거부할 수 있는 사람 참여, 민감 작업 확인, 호출 전 입력 표시, 접근 통제·감사 기록을 권고한다.",
+      "ref_id": "ref-696",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "LangChain Human-in-the-loop 미들웨어",
+      "org": "LangChain",
+      "kind": "오픈소스",
+      "related_areas": [
+        18,
+        27
+      ],
+      "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+      "summary": "설정한 도구 호출에서 에이전트 실행을 멈추고 사람이 승인·인자 수정·거부·직접 응답으로 결정하게 하는 미들웨어. 체크포인터로 중단 상태를 보존한다.",
+      "ref_id": "ref-697",
+      "run_id": "2026-09-25-79",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 18646-2:2024 서비스 로봇 성능 기준과 시험 방법 — Part 2: 주행",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        23,
+        6
+      ],
+      "url": "https://www.iso.org/standard/82643.html",
+      "summary": "이동 서비스 로봇의 주행 성능을 자세 정확도·반복성, 장애물 감지·회피, 경로 이탈, 좁은 통로 통과, 지도 작성 정확도로 측정하는 시험 방법 표준 2판(2024-01). 안전 요구사항 검증에는 쓰지 않는다(원문 미열람).",
+      "ref_id": "ref-721",
+      "run_id": "2026-09-25-80",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ASTM F3244 Standard Test Method for Navigation: Defined Area",
+      "org": "ASTM International",
+      "kind": "표준",
+      "related_areas": [
+        23
+      ],
+      "url": "https://store.astm.org/f3244-21.html",
+      "summary": "A-UGV 가 여유가 제한된 정의 영역을 지나는 능력을 물리 경계·가상 경계·바닥 표시로 만든 시험 영역에서 시험하며, 장애 유형으로 장애물과 통신 장애를 둔다(2021 개정, 원문 미열람).",
+      "ref_id": "ref-723",
+      "run_id": "2026-09-25-80",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SSIG (평면도 구조 유사도 지표)",
+      "org": "van Engelenburg, C. 외 (caspervanengelenburg GitHub)",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        27,
+        23
+      ],
+      "url": "https://github.com/caspervanengelenburg/ssig",
+      "summary": "평면도 구조 유사도를 IoU 와 방 연결 그래프의 그래프 편집 거리 가중합으로 정의한 지표의 공식 저장소(ICCV Workshops 2023).",
+      "ref_id": "ref-720",
+      "run_id": "2026-09-25-80",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SLABIM (SLAM–BIM 결합 데이터셋)",
+      "org": "HKUST Aerial Robotics Group",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        23
+      ],
+      "url": "https://github.com/HKUST-Aerial-Robotics/SLABIM",
+      "summary": "설계 BIM 과 SLAM 센서 데이터를 묶어 라이다–BIM 정합, BIM 위 자세 추적, 의미 지도 작성 과제와 BIM 좌표 정답 자세를 제공하는 데이터셋(README 기준 ICRA 2025 채택).",
+      "ref_id": "ref-729",
+      "run_id": "2026-09-25-80",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "vda5050-sim (VDA 5050 가상 로봇 플릿 시뮬레이터)",
+      "org": "gpue (vda5050-sim GitHub, 개인 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        22,
+        9
+      ],
+      "url": "https://github.com/gpue/vda5050-sim",
+      "summary": "README 가 VDA 5050 3.0.0 준수를 표명하는 가상 로봇 플릿을 MQTT·NATS 로 띄우고 로봇별 확률로 연결 끊김·오류·비상정지 등을 주입한다. 이동은 노드 사이 직선 운동학뿐이며 적합성 시험 결과는 미확인이다.",
+      "ref_id": "ref-407",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "vda-5050-lib.js (가상 AGV 어댑터 포함 VDA 5050 라이브러리)",
+      "org": "coatyio",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        9
+      ],
+      "url": "https://github.com/coatyio/vda-5050-lib.js",
+      "summary": "간선을 따라 주행하고 기본 동작을 수행하는 가상 AGV 어댑터를 시뮬레이션·통합 시험·목업 용도로 제공한다.",
+      "ref_id": "ref-742",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "τ-bench (도구–에이전트–사용자 상호작용 벤치마크)",
+      "org": "sierra-research",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23,
+        27,
+        18
+      ],
+      "url": "https://github.com/sierra-research/tau-bench",
+      "summary": "LLM 모의 사용자와 에이전트의 대화 끝 데이터베이스 상태를 목표 상태와 비교해 채점하고 pass^k 로 일관성을 잰다(항공·소매 도메인).",
+      "ref_id": "ref-739",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "SafeAgentBench (LLM 체화 에이전트 안전 계획 벤치마크)",
+      "org": "SafeAgentBench 저자(shengyin1224 공식 저장소)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        23,
+        25,
+        27
+      ],
+      "url": "https://github.com/shengyin1224/SafeAgentBench",
+      "summary": "AI2-THOR 에서 10가지 위험 유형 750개 과제로 실행 기반·의미 기반 두 관점의 안전 계획을 평가한다(가정 환경).",
+      "ref_id": "ref-745",
+      "run_id": "2026-09-25-99",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "JSON Schema Validation (json-schema-spec, main 브랜치 차기판 초안)",
+      "org": "JSON Schema (json-schema-org)",
+      "kind": "표준",
+      "related_areas": [
+        27,
+        12
+      ],
+      "url": "https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md",
+      "summary": "JSON 인스턴스의 자료형·허용 값·수치 범위·패턴·필수 속성·조건부 필수 속성·크기 제한을 검사하는 검증 어휘. 게시된 2020-12 판과 문구 차이는 미확인.",
+      "ref_id": "ref-748",
+      "run_id": "2026-09-25-81",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "VAL (PDDL 계획 검증 도구)",
+      "org": "KCL-Planning",
+      "kind": "오픈소스",
+      "related_areas": [
+        23,
+        27
+      ],
+      "url": "https://github.com/KCL-Planning/VAL",
+      "summary": "AI 계획의 계획과 계획 모델(PDDL, 연속 효과·파생 술어 포함)을 다루는 계획 검증 도구. 실패 보고 형식은 README 에서 미확인.",
+      "ref_id": "ref-751",
+      "run_id": "2026-09-25-81",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "JSONSchemaBench",
+      "org": "guidance-ai",
+      "kind": "오픈소스",
+      "related_areas": [
+        27,
+        23
+      ],
+      "url": "https://github.com/guidance-ai/jsonschemabench",
+      "summary": "실제 JSON 스키마 약 1만 개로 제약 디코딩·구조화 출력 엔진의 효율·범위·품질을 평가하는 벤치마크.",
+      "ref_id": "ref-749",
+      "run_id": "2026-09-25-81",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Model Context Protocol 명세 2025-06-18 (Basic: Authorization)",
+      "org": "Model Context Protocol (modelcontextprotocol GitHub)",
+      "kind": "표준",
+      "related_areas": [
+        26,
+        27
+      ],
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2025-06-18/basic/authorization.mdx",
+      "summary": "MCP 의 인가 절. HTTP 전송에서 OAuth 2.1 일부를 따르도록 권고하고, 토큰 대상 검증과 토큰 전달 금지를 필수로 두며 혼란된 대리인 위험을 경고한다.",
+      "ref_id": "ref-763",
+      "run_id": "2026-09-25-83",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "NIST SP 800-162 속성 기반 접근 통제(ABAC) 정의와 고려 사항",
+      "org": "NIST",
+      "kind": "프레임워크",
+      "related_areas": [
+        26
+      ],
+      "url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-162.pdf",
+      "summary": "주체·객체·요청 동작 속성과 환경 조건을 정책과 대조해 허용 여부를 정하는 ABAC 의 정의와 고려 사항(2014-01 판, 원문 미열람).",
+      "ref_id": "ref-768",
+      "run_id": "2026-09-25-83",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "RobotFleet (LLM·MILP 작업 배정기를 둔 중앙 다중 로봇 계획 틀)",
+      "org": "therohangupta (RobotFleet 공식 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        13,
+        27
+      ],
+      "url": "https://github.com/therohangupta/robot-fleet",
+      "summary": "LLM 기반 추론과 MILP 두 작업 배정기를 바꿔 끼울 수 있는 오픈소스 다중 로봇 계획 틀이다. README 에는 두 배정기의 비교 결과가 없다.",
+      "ref_id": "ref-778",
+      "run_id": "2026-09-25-86",
+      "date": "2026-09-25"
+    }
+  ]
+}

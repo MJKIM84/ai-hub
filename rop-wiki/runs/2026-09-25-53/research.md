@@ -1,0 +1,142 @@
+# 리서치 브리프 2026-09-25-53
+
+| 항목 | 값 |
+|---|---|
+| 실행 id | 2026-09-25-53 |
+| 날짜 | 2026-09-25 |
+| 실행 유형 | track (트랙 실행) |
+| 대상 영역 | 5. 로봇 능력·작업 온톨로지 |
+| 대분류 | B. 공통 정보·환경 모델 |
+
+트랙 실행: 트랙 `manual-capability-ontology` · 단계 1 · 답한 질문 —
+
+## 갭(비어 있거나 약한 섹션)
+
+- 단계 1 질문 q1-09 조사 중(실행 2026-09-25-35·41·45·47 부분 답) — target.json 지정(사용자 지정 0건, 되돌아온 질문 0건, 현재 단계 열린 질문 1건 중 오래된 순)
+- q1-09 핵심 미확인: ECLASS 콘텐츠 데이터베이스·IEC CDD 트리에 이동로봇 분류 클래스와 범위 능력(이동·계단·적재·도어 조작·충전) 항목이 있는지
+- oq-060 출처 충돌: IDTA 02047 템플릿 JSON 열람 절단과 명세 PDF 검색 요약의 충전 요소 — 템플릿 원문 근거 없음
+- IDTA 02047 템플릿의 ECLASS 분류 클래스 코드(0173-1#01-…)가 어느 블록에 쓰이는지 원문 인용 기준으로 정리되지 않음
+- IDTA 02003 제품 분류 항목의 의미 식별자와 최신판(2.0.1) 반영 여부 미확인
+- 완료 조건: ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건이 온톨로지 초안 6절 질문으로 남아 있음, 모델·표준 비교표 미조사 칸 잔존
+
+## 조사 질문
+
+1. 같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? [분류원문]
+2. q1-09 ECLASS·IEC CDD 에 이동로봇의 범위 능력(이동·계단·적재·도어 조작·충전)과 그 속성을 기술하는 항목이 있는가, 있으면 능력 온톨로지의 의미 식별자로 쓸 수 있는가?
+3. IDTA 02047 템플릿 JSON 원문에서 ECLASS 분류 클래스 코드(0173-1#01-…)는 어느 요소에 붙으며, 무인운반차·이동로봇 자체를 가리키는 클래스가 있는가? (단계 1 페이지 3절 q1-09 겨냥)
+4. IDTA 공식 저장소에 이동로봇·스킬·충전을 다루는 다른 게시 서브모델 템플릿이 있는가? (q1-09 의미 식별자 원천 후보, 16. 공용 자원·충전·에너지 최적화 연결)
+5. AAS 기술 데이터 틀(IDTA 02003·ZVEI Technical Data)의 제품 분류 항목은 어떤 의미 식별자를 쓰며 최신판 2.0.1 에서 바뀌었는가? (제품 분류 층 식별자 추정 보강)
+6. ECLASS·IEC CDD 에 무인운반차(FTF)·자율이동로봇 클래스나 ISO 22166 계열 속성이 등록되었다는 공개 자료가 있는가(영·독 검색)?
+7. 국내 자료에 ECLASS 기반 물류로봇 분류·속성 사전이나 AAS 의미 식별자 적용을 다룬 것이 있는가? (한국 자료 우선 규칙)
+
+## 발견 사항
+
+| id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
+|---|---|---|---|---|---|---|---|---|
+| f1 | [사실] | IDTA 02047 무인운반차 기술 데이터 1.0 템플릿 JSON 에서 ECLASS 분류 클래스 코드(0173-1#01-…)는 GeneralInformation(0173-1#02-ABK161#002/0173-1#01-AHX838#002), 제품 이미지(0173-1#02-ABM220#001/0173-1#01-AHY911#001), SpecificDescriptions(0173-1#02-ABM221#001/0173-1#01-AHY912#001) 같은 일반 블록의 복합 의미 식별자에만 나타나고, 무인운반차·이동로봇 자체를 가리키는 클래스 코드로 쓰인 곳은 열람 범위에서 확인되지 않았다. | ref-245 | 아니오 | medium | 2026-09-25 | — | — |
+| f2 | [추정] | 다섯 번째 실행에서도 IDTA 02047 템플릿 JSON 열람 응답은 최상위 GeneralInformation·SpecificDescriptions 뒤 TechnicalParameters 의 DecelerationMax 에서 잘려 Charg·Battery·Energy·VDA5050 문자열이 보이지 않았으므로, 템플릿 원문으로는 충전 요소 유무를 판정할 수 없고 oq-060 출처 충돌은 이번에도 해소되지 않는 것으로 보인다. | ref-245, ref-198 | 아니오 | low | 2026-09-25 | — | — |
+| f3 | [사실] | IDTA 공식 서브모델 템플릿 저장소 README 의 게시 목록에서 기술 데이터·능력·AGV·배터리 관련 게시 템플릿은 Technical Data 1.1·2.0.1, Capability Description 1.0, Technical Data for Automated Guided Vehicles 1.0 과 Digital Battery Passport Part 1~7 이며, 로봇·스킬·충전·모바일을 이름에 둔 게시 템플릿은 목록에서 확인되지 않았다. | ref-439 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
+| f4 | [추정] | IDTA 공식 저장소에 배터리 관련 템플릿이 Digital Battery Passport 계열로 게시되어 있지만, 그것이 이동로봇의 범위 능력 '충전'(충전 장치 요구·충전 조건)을 기술하는지는 확인하지 않았으므로, 충전 속성의 의미 식별자 원천 후보일 뿐인 것으로 보인다. | ref-439 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f5 | [사실] | IDTA 02003 기술 데이터 일반 틀 2.0.1 README 는 2.0 의 GitHub 이슈 6건을 고친 버그 수정판으로 예시값 한정자·ProductImages→ProductImage 이름 변경·TechnicalPropertyAreas 카디널리티·의미 식별자 구분을 다루며, 제품 분류 항목·ECLASS·IEC CDD 에 관한 변경은 적지 않는다. | ref-659 | 아니오 | medium | 2026-09-25 | — | — |
+| f6 | [사실] | ZVEI 기술 데이터 서브모델 1.1 명세에서 제품 분류 항목(ProductClassificationItem)은 https://admin-shell.io/ZVEI/TechnicalData/ProductClassificationItem/1/1 의미 식별자를 가진 요소 모음으로 제품을 특정 분류 체계·속성 사전의 제품 클래스와 연결하며, 분류 체계 이름(ProductClassificationSystem)은 …/ProductClassificationSystem/1/1 식별자를 가진다. | ref-660, ref-438 | 아니오 | medium | 2020-11 | — | 원문 미열람 |
+| f7 | [추정] | 다섯 번째 실행의 영·독·한 검색에서도 ECLASS 에 무인운반차(FTF)·자율이동로봇을 가리키는 분류 클래스 코드나 IEC CDD 에 로봇 도메인·ISO 22166 계열 속성이 등록됐다는 공개 자료는 나오지 않아, 웹 검색만으로는 q1-09 의 항목 존재 여부를 판정할 수 없는 것으로 보인다(데이터베이스 미조회, 부재 확정 아님). | ref-184, ref-185, ref-183 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
+| f8 | [추정] | IDTA 02047 템플릿의 ECLASS 분류 클래스 코드가 일반 블록에만 붙고(f1) 제품 분류 항목이 분류 체계·클래스를 값으로 지정하게 하는 구조(f6)를 보면, 분류 원문 질문(누가 이 화물을 취급할 수 있는가)에 쓰일 로봇 제품 클래스는 템플릿이 고정하지 않고 제조사가 인스턴스 값으로 채우는 것이어서, ROP 는 제품 클래스 값이 없거나 제조사마다 다를 때를 대비한 자체 분류를 가져야 할 것으로 보인다. | ref-245, ref-660 | 아니오 | low | 2026-09-25 | 적치 / 수행 자원 | — |
+
+### 근거 발췌
+
+- **f1**: 원문 JSON 줄 인용: "0173-1#02-ABM220#001/0173-1#01-AHY911#001", "0173-1#02-ABM221#001/0173-1#01-AHY912#001" 등 6줄. 같은 블록에 https://api.eclass-cdp.com/ 형식 식별자도 병기. 열람 응답은 DecelerationMax 에서 절단되어 그 뒤 요소는 대상 밖(확인일 2026-09-25)
+- **f2**: 열람 응답: 'Last visible idShort: DecelerationMax', 'The content appears truncated'. 명세 PDF 검색 요약(ref-198, 원문 미열람)은 EnergyAndCommunication/Battery 묶음을 전함 — 한쪽을 고르지 않음
+- **f3**: README 표 기준: Digital Battery Passport Part 4: Technical Data 1.0.1 (published/Digital%20Battery%20Passport/4_Technical%20Data/1/0/1) 등. 'No templates matching Robot, Charging, Skill, or Mobile' (열람 요약, 확인일 2026-09-25, 목록 기준의 부재 관찰)
+- **f4**: 게시 목록에 Digital Battery Passport Part 1~7(명판·인계 문서·탄소 발자국·기술 데이터·제품 상태·물질 구성·순환성) 존재. 각 템플릿 본문은 미열람
+- **f5**: README: 'ready for productive use', ProductImages 를 ProductImage 로 개명, TechnicalPropertyAreas SML 카디널리티 0..1 로 수정. ProductClassifications·ECLASS·IEC CDD 언급 없음(발행일 미확인, 확인일 기준)
+- **f6**: 검색 요약: ProductClassificationItem 'single product classification by association with a product class in a particular classification system or property dictionary'. ZVEI 1.1 과 IDTA 02003-1-2 는 승계 관계라 독립 출처 아님
+- **f7**: 검색어: 'fahrerloses Transportfahrzeug' ECLASS IRDI, 'automated guided vehicle' 0173-1#01, 'cdd.iec.ch robot ISO 22166', ECLASS 16.0 Robotik. 결과는 ECLASS 기술 명세 페이지·특허·기사뿐(발행일 미확인, 확인일 기준)
+- **f8**: f1(템플릿 원문)과 f6(검색 요약)을 대응시킨 이 위키의 추론
+
+## 출처
+
+| id | 기관 | 제목 | 발행일 | 유형 | 신뢰도 | 접근일 | URL | 원문 미열람 |
+|---|---|---|---|---|---|---|---|---|
+| ref-245 | IDTA (admin-shell-io/submodel-templates) | IDTA 02047-1-0 Template_TechnicalDataForAGV.json | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json | 아니오 |
+| ref-439 | IDTA (admin-shell-io/submodel-templates) | admin-shell-io/submodel-templates — README (published Submodel Templates list) | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/admin-shell-io/submodel-templates | 예 |
+| ref-659 | IDTA (admin-shell-io/submodel-templates) | Generic Frame for Technical Data for Industrial Equipment in Manufacturing 2.0.1 — README (published/Technical_Data/2/0/1) | 미확인 | 표준 | medium | 2026-09-25 | https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical_Data/2/0/1/README.md | 아니오 |
+| ref-660 | ZVEI / Plattform Industrie 4.0 | Submodel Templates of the Asset Administration Shell — ZVEI Technical Data Version 1.1 | 2020-11 | 표준 | medium | 2026-09-25 | https://www.zvei.org/fileadmin/user_upload/Presse_und_Medien/Publikationen/2020/Dezember/Submodel_Templates_of_the_Asset_Administration_Shell/201117_I40_ZVEI_SG2_Submodel_Spec_ZVEI_Technical_Data_Version_1_1.pdf | 예 |
+| ref-438 | IDTA(Industrial Digital Twin Association) | IDTA 02003-1-2 Generic Frame for Technical Data for Industrial Equipment in Manufacturing | 미확인 | 표준 | medium | 2026-09-25 | https://industrialdigitaltwin.org/wp-content/uploads/2022/10/IDTA-02003-1-2_Submodel_TechnicalData.pdf | 예 |
+| ref-198 | IDTA(Industrial Digital Twin Association) | IDTA 02047-1-0 Technical Data for AGV in Intralogistics | 2025-03 | 표준 | medium | 2026-09-25 | https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf | 예 |
+| ref-183 | IEC TC 3 | Common Data Dictionary – CDD – TC 3 | 미확인 | 표준 | medium | 2026-09-25 | https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/ | 예 |
+| ref-184 | ECLASS e.V. | Classification Class - ECLASS Technischer Support | 미확인 | 표준 | medium | 2026-09-25 | https://eclass.eu/support/technical-specification/structure-and-elements/classification-class | 예 |
+| ref-185 | ECLASS e.V. | The latest ECLASS Release | 미확인 | 표준 | medium | 2026-09-25 | https://eclass.eu/en/eclass-standard/releases | 예 |
+
+### 출처 요약
+
+- **ref-245**: IDTA 02047 무인운반차 기술 데이터 1.0 서브모델 템플릿 JSON. 이번 열람도 DecelerationMax 에서 절단.
+- **ref-439**: IDTA 공식 서브모델 템플릿 저장소 README 의 게시 템플릿 목록.
+- **ref-659**: IDTA 02003 기술 데이터 일반 틀 2.0.1 버그 수정판의 변경 요약 README.
+- **ref-660**: 원문 미열람. ZVEI 기술 데이터 서브모델 1.1 명세(IDTA 02003 의 전신)로, 제품 분류 항목과 분류 체계 이름 요소의 의미 식별자를 정의한다(검색 요약 기준).
+- **ref-438**: 원문 미열람. IDTA 02003 1.2 기술 데이터 일반 틀. 제품 분류 항목으로 ECLASS·IEC CDD 제품 클래스를 가리킨다.
+- **ref-198**: 원문 미열람. IDTA 02047 1.0 명세 PDF. 검색 요약상 EnergyAndCommunication/Battery 묶음과 충전 관련 요소를 둔다.
+- **ref-183**: 원문 미열람. IEC TC 3 의 IEC CDD 안내 페이지(제품 온톨로지 도메인 목록).
+- **ref-184**: 원문 미열람. ECLASS 분류 클래스 구조(4단계 8자리 코드, IRDI) 설명.
+- **ref-185**: 원문 미열람. ECLASS 최신 판(16.0) 안내.
+
+## 페이지 제안
+
+| 동작 | 경로 | 섹션 | 이유 |
+|---|---|---|---|
+| update | docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md | 3, 4, 5, 8, 9 | q1-09 부분 답: f1·f2·f3·f4·f5·f6·f7·f8 — 3절 q1-09 '(부분 답)'에 '실행 2026-09-25-53 보강' 소절 추가: IDTA 02047 템플릿의 ECLASS 분류 클래스 코드가 일반 블록 복합 식별자에만 쓰임(f1, 원문 인용), 템플릿 열람 다섯 번째 절단(f2, oq-060 해소 아님), IDTA 게시 템플릿 목록에 로봇·스킬·충전 템플릿 없음과 Digital Battery Passport 존재(f3·f4), IDTA 02003 2.0.1 변경 범위(f5), 제품 분류 항목 의미 식별자(f6), 웹 검색으로 판정 불가(f7), 제품 클래스는 인스턴스 값이라 ROP 자체 분류 필요(f8) / 4절 불확실성: 다섯 실행이 같은 벽에 막혔음을 적고, 사용자 결정(ECLASS·CDD 조회 결과를 inbox/sources 로 제공하거나 q1-09 를 재개 조건과 함께 보류) 필요 / 5절 후속 질문 / 8절 출처(ref-659·ref-660) / 9절 이력. q1-09 는 조사 중 유지 |
+| update | docs/tracks/manual-capability-ontology/model-standard-comparison.md | 4, 8 | 트랙 산출물 갱신: IDTA 02047 행 종류 칸의 ECLASS 분류 클래스 코드 메모에 AHY911(제품 이미지)·AHY912(SpecificDescriptions) 복합 식별자 추가(f1), 상태 칸에 실행 2026-09-25-53 재열람도 절단(f2) |
+| update | docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md | 7 | 트랙 manual-capability-ontology 단계 1 반영 제안 (f3, f6): IDTA 게시 템플릿 목록에 이동로봇 능력·충전 전용 템플릿이 없고 Digital Battery Passport 계열이 있음, 기술 데이터 제품 분류 항목의 의미 식별자 |
+| update | docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md | 7 | 트랙 manual-capability-ontology 단계 1 반영 제안 (f3, f4): IDTA Digital Battery Passport 계열 템플릿이 배터리 속성의 의미 식별자 원천 후보(본문 미열람, 추정) |
+
+## 용어 후보
+
+- 없음
+
+## 열린 질문
+
+새로 생긴 질문:
+
+- 없음
+
+해결 제안(판정은 검증 에이전트):
+
+- 없음
+
+## 자체 점검
+
+- 출처 수: 9 · 교차 확인: 0
+- 예산 사용량: 검색 8회 · 신규 출처 2건
+- 미확인 항목:
+    - q1-09 부분 답: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리를 네트워크 정책(mirror_only)으로 열지 못해 이동로봇 분류 클래스·범위 능력 항목 존재 여부 미확인(다섯 번째 실행)
+    - f1: 열람 도구가 인용한 JSON 줄 기준이며 절단 뒤 요소(EnergyAndCommunication 등)의 식별자는 대상 밖. AHX838·AHY911·AHY912 클래스의 ECLASS 명칭 미확인
+    - f2: oq-060 출처 충돌 미해소 — 템플릿 원문으로 충전 요소 확인 불가
+    - f4: Digital Battery Passport 템플릿 본문 미열람, 충전 능력과의 관련성 미확인
+    - f6: ZVEI 1.1 명세 원문 미열람(검색 요약 기준), IDTA 02003 2.0.1 템플릿의 해당 식별자는 미확인
+    - ref-659 발행일 미확인
+    - 모든 finding 교차 확인 없음
+- 범위 경계 위반 의심:
+    - 없음
+- 한계: 답한 질문 없음: q1-09 의 핵심(ECLASS·IEC CDD 에 이동로봇 범위 능력 항목이 있는가)은 ECLASS·CDD 데이터베이스가 네트워크 정책(fetch_mode mirror_only)으로 열리지 않고 영·독·한 검색 8회에서도 해당 클래스·항목이 나오지 않아 판정 불가 — 부분 답 f1~f8 만 냄. 다섯 실행(2026-09-25-35·41·45·47·53)이 같은 벽에 막혔으므로 추가 트랙 실행으로 풀리지 않을 가능성이 높다: 사용자가 eclass.eu 콘텐츠 검색과 cdd.iec.ch 에서 'AGV·FTF·autonomous mobile robot' 조회 결과를 inbox/sources 로 넣어 주거나, q1-09 를 사유와 재개 조건(원문 조회 가능 시)을 적어 '보류'로 돌리는 판단이 필요해 보인다(판단은 검증·사용자 몫). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-245(템플릿 JSON, 다시 DecelerationMax 에서 절단)·ref-439(저장소 README), 신규 ref-659(IDTA 02003 2.0.1 README). 신규 ref-660 과 재사용 ref-438·ref-198·ref-183·ref-184·ref-185 는 원문 미열람(신뢰도 상한 medium). 검색 8회/40, 신규 출처 2건/20(ref-659·ref-660, 예약 구간 안). 한국어 검색 1회는 인증기관 소개·대학 e-class 사이트뿐이라 출처로 넣지 않음. 온톨로지 변경 없음: 능력 단위 의미 식별자를 뒷받침할 사전 항목이 여전히 없고 충전 요소는 출처 충돌(oq-060) 상태라 초안 6절 '기능의 의미 식별자 속성'·충전 조건 질문을 유지함. 후속 질문 1건(f4 근거, 단계 4). 용어 후보 없음: 트랙 glossary_targets 가운데 미등록 용어(로봇 능력 온톨로지, 역량 질문, SPARQL, 온톨로지 학습)에 대한 이번 근거 없음. 27. AI·학습·적응과 모델 운영, 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음(충전 요소 충돌은 기존 oq-060).
+
+## 트랙 블록
+
+- 트랙: manual-capability-ontology · 단계: 1
+- 답한 질문 id: —
+
+### 새 질문
+
+| 제안 id | 질문 | 보낼 단계 | 근거 finding |
+|---|---|---|---|
+| — | IDTA Digital Battery Passport 계열 템플릿(특히 Part 4 기술 데이터)의 배터리 요소를 IDTA 02047 배터리 정보·VDA 5050 batteryCharging 과 대응시켜 범위 능력 '충전'의 배터리 속성 의미 식별자로 재사용할 수 있는가? (q1-09 에서 파생) | 4 | f4 |
+
+### 온톨로지 초안 변경 제안
+
+- 없음
+
+### 단계 완료 조건 자체 평가
+
+- 충족 여부(자체 평가): 미충족
+- 못 채운 조건:
+    - q1-09 부분 답: ECLASS·IEC CDD 직접 조회 필요(다섯 번째 실행에서도 불가), IDTA 02047 충전 요소 출처 충돌(oq-060) 미해소
+    - ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건이 온톨로지 초안에 미반영(6절 질문)
+    - 모델·표준 비교표의 PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행과 후보 밖 행의 '미조사' 칸 잔존

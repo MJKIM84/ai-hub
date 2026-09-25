@@ -1,0 +1,815 @@
+{
+  "run_id": "2026-09-25-86",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "3. 조사 결과 (q5-03)",
+      "budget_chars": 6500,
+      "summary": "확인한 근거 평가 체계를 이 위키가 묶으면 가설을 하위 주장으로 나눠 GRADE 식으로 확실성을 낮춰 매기고 TRL 을 보조 축으로 두는 절차가 선택지로 보이며, 이를 적용하면 가설 1~3은 모두 잠정 부분 지지다. [추정][^ref-807][^ref-809]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "section": "3. 가설과 판정 상태",
+      "budget_chars": 1800,
+      "summary": "가설 1~3 판정 칸을 부분 지지(잠정)로 적고 판정 규칙(이 위키의 종합)을 한 단락으로 둔다. [추정][^ref-807][^ref-809]",
+      "planned_findings": [
+        "f17",
+        "f18",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "6. 검증 방법",
+      "budget_chars": 2200,
+      "summary": "가설 판정 절차 소절: 확실성 평가·TRL 보조 축·판정 값 규칙·잠정 판정 요약·필요 실험. [추정][^ref-807][^ref-809]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/experiments.md",
+      "section": "제안된 실험 계획",
+      "budget_chars": 1800,
+      "summary": "E5-01~E5-03 을 제안(사용자 수행 대기)으로 싣는다. [추정][^ref-746][^ref-592][^ref-734]",
+      "planned_findings": [
+        "f21",
+        "f22"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q5-03 답함(판정 절차·판정 값 규칙·가설별 근거·잠정 판정표·필요 실험), 2절에 q5-16~q5-19 추가, 후속 질문 2건(q5-19, q3-16), 완료 조건 현황·상태 줄 갱신"
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절 가설 판정 칸을 부분 지지(잠정)로 갱신(단계 5 · 실행 2026-09-25-86), 판정 규칙 단락·변경 기록 추가, 6절에 실행 기록 추가, 8절에 판정 근거 각주",
+      "patches": [
+        {
+          "section": "3. 가설과 판정 상태",
+          "action": "replace",
+          "frontmatter": {
+            "confidence": "low",
+            "sources": [
+              "ref-807",
+              "ref-809",
+              "ref-166",
+              "ref-779",
+              "ref-674",
+              "ref-677",
+              "ref-168",
+              "ref-236",
+              "ref-746",
+              "ref-041",
+              "ref-592",
+              "ref-594",
+              "ref-611",
+              "ref-612"
+            ],
+            "last_run": "2026-09-25"
+          },
+          "content": "| 가설 | 내용 | 판정 | 근거(단계·실행 id) |\n|---|---|---|---|\n| 가설 1 | 자연어 지시를 정해진 작업 모델([업무 분해·배정 설계 초안](task-model-draft.md))로 먼저 구조화하면, LLM이 로봇 명령을 직접 만드는 방식보다 잘못된 배정이 줄어든다. [가설] | 부분 지지(잠정) | 단계 5 · 실행 2026-09-25-86 · 확실성 낮음 ([단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md#q5-03)) |\n| 가설 2 | 적합한 로봇의 선택을 LLM의 판단 대신 온톨로지 질의(능력·제약 대조)에 맡기면 배정 근거를 설명하고 재현할 수 있다. [가설] | 부분 지지(잠정) | 단계 5 · 실행 2026-09-25-86 · 확실성 매우 낮음~낮음 ([단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md#q5-03)) |\n| 가설 3 | 스케줄링 결정은 최적화 엔진이 맡고 LLM은 지시 해석·확인 대화·진행 설명을 맡는 분담이 운영을 더 안정적으로 만든다. [가설] | 부분 지지(잠정) | 단계 5 · 실행 2026-09-25-86 · 확실성 낮음 ([단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md#q5-03)) |\n\n판정 값은 지지 / 부분 지지 / 기각 / 미판정 네 가지다. 구축 시점에는 모두 미판정이었으며, 판정은 [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md)에서 내용 검증 에이전트의 승인을 받은 결과만 적는다. 가설은 `[사실]`로 승격되기 전까지 `[가설]` 태그를 유지한다. 가설 문장은 아이디어 정의에서 구축자가 도출한 것이다. [가정]\n\n위 판정은 이 위키의 판정 규칙을 적용한 잠정 결과다. 판정 규칙은 가설을 하위 주장으로 나누고 GRADE 식으로 근거 확실성을 낮춰 매긴 뒤, 핵심 하위 주장 모두에 물류 조건의 직접 근거가 있고 확실성이 중간 이상이면 지지, 일부 하위 주장만 근거가 있거나 가설이 성립하지 않는 조건이 확인되면 부분 지지, 핵심 하위 주장에 직접 반대 근거가 있으면 기각, 직접 근거가 없으면 미판정으로 가르는 것이다(이 위키의 종합, 판정 규칙을 직접 정한 출처는 없음). [추정][^ref-807][^ref-809]\n\n- 가설 1: 구조화·분해 뒤 결정적 해법·검사를 거친 방식이 LLM 직접 배정·직접 코드 생성보다 실패가 적었다는 비교가 있으나, 비교 형태가 작업 모델 구조화와 같지 않고 LLM 직접 배정이 높은 정답률을 보인 반례가 있으며 물류 조건 근거가 없다(이 위키의 종합). [추정][^ref-166][^ref-779][^ref-674][^ref-677][^ref-168]\n- 가설 2: 설명 가능성 하위 주장은 직접 근거가 없어 미판정이고, 부분 지지는 재현성 쪽 간접 근거(온톨로지 판정을 배정기 독립 제약으로 쓰는 구조, LLM 반복 출력 불일치 보고)에만 기댄다. 선언 능력과 운용 능력이 다를 수 있다는 반대 방향 근거도 있다(이 위키의 종합). [추정][^ref-236][^ref-746][^ref-041]\n- 가설 3: LLM 직접 스케줄링의 실행 가능성·일관성 한계와 LLM 지연 근거가 있으나, LLM 이 루프 밖에서 설계한 규칙이 롤링 MILP 를 앞선 반례(제조·AGV 시뮬레이션 조건, 저자 보고, 롤링 MILP 는 AGV 운송 하위 문제의 추상화, 물류 창고 적용 미확인)가 있어 '최적화 엔진'의 해석에 따라 판정 방향이 갈린다(이 위키의 종합). [추정][^ref-592][^ref-594][^ref-611][^ref-612]\n\n판정 변경 기록\n\n- 2026-09-25 · 실행 2026-09-25-86: 가설 1~3 미판정 → 부분 지지(잠정). 이 위키의 판정 규칙(추정)을 비물류 조건의 단일 출처 저자 보고 근거에 적용한 잠정 결과이며, 가설 2 의 설명 가능성 하위 주장은 미판정이다."
+        },
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "append",
+          "content": "\n- 실행 2026-09-25-86 에서 CLI 로 지정된 질문으로 단계 5 의 q5-03 에 답해 3절에 잠정 가설 판정(가설 1~3 모두 부분 지지(잠정), 이 위키의 종합, 신뢰도 low)을 싣고, [실험](experiments.md)에 제안 실험 E5-01~E5-03(사용자 수행 대기)을, [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) 6절에 '가설 판정 절차' 소절을 더했다. [업무 분해·배정 설계 초안](task-model-draft.md)은 변경 없이 v0.9 를 유지했다. 단계 3·4 완료와 단계 전환이 승인되지 않아 현재 단계는 단계 3 으로 둔다."
+        },
+        {
+          "section": "8. 참고 자료",
+          "action": "replace",
+          "content": "아래는 3. 가설과 판정 상태의 잠정 판정 근거 각주다. 트랙 실행의 나머지 출처는 각 단계 페이지의 출처 절에 있으며, 판정의 자세한 근거는 [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md#q5-03)에 있다.\n\n[^ref-807]: Cochrane, Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence, 미확인, https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14, 접근일 2026-09-25 (원문 미열람)\n[^ref-809]: NASA ESTO, Definition Of Technology Readiness Levels, 미확인, https://esto.nasa.gov/files/trl_definitions.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-166]: Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T., LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)\n[^ref-779]: Garrabé, É., Teixeira, P., Khoramshahi, M., & Doncieux, S., Enhancing Robustness in Language-Driven Robotics: A Modular Approach to Failure Reduction, 2024-11, https://arxiv.org/abs/2411.05474, 접근일 2026-09-25 (원문 미열람)\n[^ref-674]: Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH), Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins, 2026-06, https://arxiv.org/abs/2606.08214, 접근일 2026-09-25 (원문 미열람)\n[^ref-677]: CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재), LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning, 2025-11, https://arxiv.org/abs/2511.22354, 접근일 2026-09-25 (원문 미열람)\n[^ref-168]: Kaitha, S., & Yu, S. 외(arXiv 2512.02810), Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms, 2025-12, https://arxiv.org/abs/2512.02810, 접근일 2026-09-25 (원문 미열람)\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-746]: Atil, B. 외, Non-Determinism of \"Deterministic\" LLM Settings, 2024-08, https://arxiv.org/abs/2408.04667, 접근일 2026-09-25 (원문 미열람)\n[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\n[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)\n[^ref-594]: SCHEDBench 저자(arXiv 2608.00991, 저자 미확인), SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling, 2026-08, https://arxiv.org/abs/2608.00991, 접근일 2026-09-25 (원문 미열람)\n[^ref-611]: RACE-Sched 저자(arXiv 2605.29262, 저자 미확인), Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling, 2026-05, https://arxiv.org/abs/2605.29262, 접근일 2026-09-25 (원문 미열람)\n[^ref-612]: Li, J., & Li, C.(소속 미확인), LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling, 2026-08, https://arxiv.org/abs/2608.09343, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절에 '가설 판정 절차' 소절 추가(확실성 평가·TRL 보조 축·판정 값 규칙·잠정 판정 요약·필요 실험, 추정 중심)",
+      "patches": [
+        {
+          "section": "6. 검증 방법",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-592",
+              "ref-593",
+              "ref-594",
+              "ref-595",
+              "ref-596",
+              "ref-598",
+              "ref-611",
+              "ref-612",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-417",
+              "ref-586",
+              "ref-674",
+              "ref-675",
+              "ref-676",
+              "ref-711",
+              "ref-677",
+              "ref-712",
+              "ref-678",
+              "ref-656",
+              "ref-657",
+              "ref-039",
+              "ref-658",
+              "ref-659",
+              "ref-660",
+              "ref-661",
+              "ref-662",
+              "ref-663",
+              "ref-664",
+              "ref-041",
+              "ref-126",
+              "ref-127",
+              "ref-680",
+              "ref-537",
+              "ref-681",
+              "ref-682",
+              "ref-683",
+              "ref-684",
+              "ref-373",
+              "ref-685",
+              "ref-695",
+              "ref-696",
+              "ref-697",
+              "ref-698",
+              "ref-699",
+              "ref-700",
+              "ref-701",
+              "ref-702",
+              "ref-703",
+              "ref-713",
+              "ref-714",
+              "ref-715",
+              "ref-716",
+              "ref-717",
+              "ref-730",
+              "ref-731",
+              "ref-732",
+              "ref-733",
+              "ref-734",
+              "ref-623",
+              "ref-735",
+              "ref-736",
+              "ref-737",
+              "ref-406",
+              "ref-528",
+              "ref-738",
+              "ref-739",
+              "ref-740",
+              "ref-741",
+              "ref-407",
+              "ref-743",
+              "ref-744",
+              "ref-745",
+              "ref-746",
+              "ref-416",
+              "ref-459",
+              "ref-748",
+              "ref-752",
+              "ref-753",
+              "ref-756",
+              "ref-757",
+              "ref-759",
+              "ref-760",
+              "ref-761",
+              "ref-579",
+              "ref-762",
+              "ref-763",
+              "ref-764",
+              "ref-766",
+              "ref-767",
+              "ref-768",
+              "ref-769",
+              "ref-770",
+              "ref-771",
+              "ref-776",
+              "ref-807",
+              "ref-809",
+              "ref-779",
+              "ref-400"
+            ],
+            "last_run": "2026-09-25"
+          },
+          "content": "\n### 가설 판정 절차\n\n이 절 머리와 위 소절들의 '가설 판정(q5-03)은 아직 조사되지 않았다'는 서술은 실행 2026-09-25-99 기준이며, 실행 2026-09-25-86 에서 [단계 5 의 q5-03](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03)에 답했다. 이 소절의 절차·규칙·잠정 판정은 모두 이 위키의 종합이며 판정 규칙을 직접 정한 출처는 없다.\n\n확인한 근거 평가 체계를 이 위키가 묶으면, 각 가설을 하위 주장으로 나누고 하위 주장마다 근거의 확실성을 GRADE 식 영역(비직접성·비정밀성·비뚤림)으로 낮춰 매긴 뒤 판정 값으로 모으고 기술 성숙도(TRL)를 보조 축으로 병기하는 절차가 선택지로 보인다(이 위키의 종합). [추정][^ref-807][^ref-809]\n\n- **근거 확실성**: GRADE 접근법은 근거의 확실성을 결과별로 높음·중간·낮음·매우 낮음 네 수준으로 매기고, 다섯 영역에서 심각한 우려가 있으면 한 단계, 매우 심각하면 두 단계 낮춘다(발행일 미확인, 원문 미열람). [사실][^ref-807]\n- **성숙도 축**: NASA 의 TRL 정의는 TRL 4 를 실험실 환경 검증, TRL 5 를 관련 환경 검증으로 두어 둘을 구분한다(발행일 미확인, 원문 미열람). [사실][^ref-809] 세 가설의 근거가 된 구성은 확인한 범위에서 시뮬레이션·실험실 검증 수준에 머물러 관련 환경(물류 현장 모사) 검증 전 단계로 보이며, 이 대응은 공식 평가가 아니라 설명용이다(이 위키의 종합). [추정][^ref-809][^ref-674][^ref-677]\n\n| 판정 값 | 조건 |\n|---|---|\n| 지지 | 핵심 하위 주장 모두에 물류 조건의 직접 근거가 있고 확실성이 중간 이상 |\n| 부분 지지 | 일부 하위 주장만 근거가 있거나, 가설이 성립하지 않는 조건이 확인됨 |\n| 기각 | 핵심 하위 주장에 직접 반대 근거가 있음 |\n| 미판정 | 핵심 하위 주장에 직접 근거가 없음 |\n\n위 규칙은 이 위키의 종합이며, 판정 값 네 가지는 [트랙 개요](../tracks/nl-task-chatbot/index.md)의 '3. 가설과 판정 상태' 값을 따른다. [추정][^ref-807][^ref-809]\n\n| 가설 | 잠정 판정 | 확실성 | 판정을 막는 것 |\n|---|---|---|---|\n| 가설 1(작업 모델 구조화) | 부분 지지(잠정) | 낮음 | 비교 형태가 작업 모델 구조화와 같지 않음, LLM 직접 배정의 반례, 물류 조건 근거 없음 |\n| 가설 2(온톨로지 질의) | 부분 지지(잠정) | 매우 낮음~낮음 | 설명 가능성 하위 주장은 직접 근거가 없어 미판정, 재현성 쪽 간접 근거에만 기댐 |\n| 가설 3(스케줄링 분담) | 부분 지지(잠정) | 낮음 | LLM 이 루프 밖에서 설계한 규칙이 롤링 MILP 를 앞선 반례, 물류 운영 안정성 자료 없음 |\n\n위 표는 이 위키가 판정 규칙(추정)을 적용한 잠정 결과이며, 근거가 가정·조작·산업 셀·운영과학 일반·제조 AGV 시뮬레이션 조건의 단일 출처 저자 보고이고 물류 창고 조건의 직접 근거는 없다. [추정][^ref-166][^ref-779][^ref-677][^ref-168][^ref-236][^ref-746][^ref-041][^ref-592][^ref-612] 가설 3 의 반례는 제조·AGV 시뮬레이션 조건의 저자 보고이며 롤링 MILP 는 AGV 운송 하위 문제의 추상화이고 물류 창고 적용은 미확인이다. [사실][^ref-612]\n\n- **필요한 실험**: 판정을 부분 지지에서 옮기려면 같은 물류 지시 세트로 작업 모델 경유 대 LLM 직접 명령 생성의 오배정률(가설 1), 온톨로지 질의 대 LLM 선택의 반복 시행 일치율과 근거 추적 가능성(가설 2), 해법기·검증된 규칙 대 LLM 직접 스케줄의 실행 가능성·납기 지연·재스케줄 뒤 시작 시각 편차(가설 3)를 재는 사용자 실험이 필요할 것으로 보인다(이 위키의 종합). [추정][^ref-746][^ref-592][^ref-734] 가설 3 실험에는 최근접 배정 기준선을 함께 두는 설계가 가능해 보인다(설명용 가정). [추정][^ref-400][^ref-592] 계획 후보 E5-01~E5-03 은 [실험](../tracks/nl-task-chatbot/experiments.md)에 제안(사용자 수행 대기)으로 실었다.\n\n[^ref-807]: Cochrane, Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence, 미확인, https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14, 접근일 2026-09-25 (원문 미열람)\n[^ref-809]: NASA ESTO, Definition Of Technology Readiness Levels, 미확인, https://esto.nasa.gov/files/trl_definitions.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-779]: Garrabé, É., Teixeira, P., Khoramshahi, M., & Doncieux, S., Enhancing Robustness in Language-Driven Robotics: A Modular Approach to Failure Reduction, 2024-11, https://arxiv.org/abs/2411.05474, 접근일 2026-09-25 (원문 미열람)\n[^ref-400]: International Journal of Planning and Scheduling 게재 논문(저자 미확인), Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors, 2019, https://www.inderscience.com/info/inarticle.php?artid=103016, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/experiments.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "'제안된 실험 계획' 절에 E5-01~E5-03 을 제안(사용자 수행 대기)으로 추가",
+      "patches": [
+        {
+          "section": "제안된 실험 계획",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-746",
+              "ref-592",
+              "ref-734",
+              "ref-400"
+            ],
+            "last_run": "2026-09-25"
+          },
+          "content": "아래 계획은 [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md#q5-03)의 잠정 가설 판정(가설 1~3 모두 부분 지지(잠정))을 옮기는 데 필요한 사용자 실험 후보다. 결과나 수치가 아니라 제안이며, 계획의 근거는 이 위키의 종합이다. [추정][^ref-746][^ref-592][^ref-734] 측정 지표는 [q5-01 답](stage-5-verification-and-hypotheses.md#q5-01)의 네 층 지표를, 시험 구성은 [q5-02 답](stage-5-verification-and-hypotheses.md#q5-02)의 가상 현장 네 층(지시·실행·교란·반복)을 쓰는 안이다.\n\n### E5-01 작업 모델 경유 대 LLM 직접 명령 생성의 오배정률 (가설 1)\n\n- 목적: 자연어 지시를 작업 모델로 먼저 구조화하면 LLM 이 로봇 명령을 직접 만드는 방식보다 잘못된 배정이 줄어드는지 본다.\n- 방법: 같은 물류 지시 세트를 (가) 작업 모델([업무 분해·배정 설계 초안](task-model-draft.md))로 구조화한 뒤 결정적 능력 질의·배정기에 넘기는 경로와 (나) LLM 이 로봇 명령을 직접 만드는 경로에 똑같이 준다.\n- 측정 지표와 조건: 오배정률(능력·제약 위반 배정, 정답 배정과 다른 배정)을 같은 지시로 여러 번 반복해 분포로 보고한다. [추정][^ref-746][^ref-592]\n- 필요한 자료: 화물·로케이션·기한·배정 로봇을 정답에 담은 물류 지시–정답 쌍(q5-04), 가상 현장·가상 로봇\n- 제안한 실행 id: 2026-09-25-86\n- 상태: 제안(사용자 수행 대기)\n\n### E5-02 온톨로지 질의 대 LLM 로봇 선택의 반복 일치율·근거 추적 (가설 2)\n\n- 목적: 로봇 선택을 온톨로지 질의(능력·제약 대조)에 맡기면 LLM 선택보다 배정 근거를 설명·재현할 수 있는지 본다.\n- 방법: 같은 작업 요구로 온톨로지 질의와 LLM 선택을 각각 반복 시행한다.\n- 측정 지표와 조건: 반복 시행 사이 선택 결과의 일치율, 선택 근거를 능력·제약 항목으로 되짚을 수 있는 비율. 결정적으로 설정한 LLM 도 반복 실행에서 결과가 달라질 수 있다는 보고가 있어 반복 횟수를 함께 적는다. [추정][^ref-746]\n- 필요한 자료: 로봇 능력 정보(선언 능력과 측정한 운용 능력을 구분), 작업 요구 세트\n- 제안한 실행 id: 2026-09-25-86\n- 상태: 제안(사용자 수행 대기)\n\n### E5-03 해법기·검증된 규칙 대 LLM 직접 스케줄 (가설 3, 최근접 기준선 포함)\n\n- 목적: 스케줄링을 결정적 구성 요소(해법기 또는 검증을 거친 규칙 실행기)에 두는 분담이 LLM 직접 스케줄보다 운영을 안정적으로 만드는지 본다.\n- 방법: 같은 피킹 운반 지시 흐름과 교란을 최근접 배정 기준선, 해법기·검증된 규칙, LLM 직접 스케줄 세 방식에 똑같이 재생한다. [추정][^ref-400][^ref-592]\n- 측정 지표와 조건: 실행 가능 비율, 납기 지연, 재스케줄 뒤 작업 시작 시각 편차. [추정][^ref-592][^ref-734] 최근접 기준선 대비 대기·지연 차이로 분류 원문 13. 작업 배정 — MRTA 의 SCM 관점 질문도 함께 본다. [추정][^ref-400]\n- 필요한 자료: 창고 레이아웃(피킹 구역·도크)과 지시 흐름(자체 구축), 교란 시나리오\n- 제안한 실행 id: 2026-09-25-86\n- 상태: 제안(사용자 수행 대기)\n\n결과는 `experiments/<날짜>-<이름>/`에 넣고 `README.md` 머리에 트랙(`nl-task-chatbot`), 단계(5), 답하려는 질문 id(q5-03)와 계획 번호를 적는다.\n\n[^ref-746]: Atil, B. 외, Non-Determinism of \"Deterministic\" LLM Settings, 2024-08, https://arxiv.org/abs/2408.04667, 접근일 2026-09-25 (원문 미열람)\n[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)\n[^ref-734]: Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46), Dynamic rescheduling that simultaneously considers efficiency and stability, 2004, https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950, 접근일 2026-09-25 (원문 미열람)\n[^ref-400]: International Journal of Planning and Scheduling 게재 논문(저자 미확인), Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors, 2019, https://www.inderscience.com/info/inarticle.php?artid=103016, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 5 | q5-03 답함: 가설 판정 절차·규칙과 잠정 판정(가설 1~3 부분 지지(잠정)), 실험 계획 E5-01~E5-03 제안 | run 2026-09-25-86",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: q5-03 답함, 가설 1~3 잠정 부분 지지 판정표와 제안 실험 E5-01~E5-03(이 위키의 종합, 신뢰도 low)",
+    "category_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: 13. 작업 배정 — MRTA 관련 LLM 직접 배정 대 해법기 배정 근거로 가설 1~3 잠정 부분 지지 판정(반영 제안)",
+    "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 5 에서 LLM 직접 배정 대 해법기 배정 비교와 최근접 기준선 실험을 6. 대표 접근법과 기술 반영 제안으로 냄"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "ablation-study",
+      "term_ko": "절제 실험",
+      "term_en": "Ablation Study",
+      "definition": "시스템의 한 구성 요소를 빼거나 다른 것으로 바꿔 성능 변화를 재어 그 구성 요소의 기여를 확인하는 실험이다.",
+      "description": "LLM 기반 로봇 계획 연구에서 기호 검증기를 같은 방식으로 프롬프트한 LLM 으로 바꾸면 성공률이 크게 떨어졌다는 보고가 절제 실험의 예다(산업용 로봇 셀 조건, 저자 보고).",
+      "related_areas": [
+        23,
+        27
+      ],
+      "sources": [
+        "ref-674"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-807",
+      "org": "Cochrane",
+      "title": "Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence",
+      "published": null,
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. GRADE 로 결과별 근거 확실성을 네 수준으로 매기고 다섯 영역으로 낮추는 방법(실행 2026-09-25-84 의 ref-807 과 같은 URL).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-809",
+      "org": "NASA ESTO",
+      "title": "Definition Of Technology Readiness Levels",
+      "published": null,
+      "url": "https://esto.nasa.gov/files/trl_definitions.pdf",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. TRL 1~9 정의, TRL 4 실험실 검증과 TRL 5 관련 환경 검증 구분(실행 2026-09-25-84 의 ref-809 와 같은 URL).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-777",
+      "org": "Gupta, R. 외(RobotFleet 저자, arXiv 2510.10379)",
+      "title": "RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.10379",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 기반 계획과 LLM·MILP 배정기를 모듈로 둔 중앙 다중 로봇 계획 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-778",
+      "org": "therohangupta (RobotFleet 공식 저장소)",
+      "title": "robot-fleet — RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning (GitHub README)",
+      "published": null,
+      "url": "https://github.com/therohangupta/robot-fleet",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "README 원문 열람. 배정기로 LLM 기반 추론과 MILP 를 제공하고 선언적 세계 상태를 유지하며, 평가 결과는 README 에 없음.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-779",
+      "org": "Garrabé, É., Teixeira, P., Khoramshahi, M., & Doncieux, S.",
+      "title": "Enhancing Robustness in Language-Driven Robotics: A Modular Approach to Failure Reduction",
+      "published": "2024-11",
+      "url": "https://arxiv.org/abs/2411.05474",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 기대 결과 모듈과 피드백을 둔 모듈형 구조가 GPT-4o code-as-policies 기준선보다 조작 과제 성공률이 높았다는 보고.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-780",
+      "org": "강건(대한산업공학회 추계학술대회 논문집)",
+      "title": "제조 물류 로봇에서의 대규모 언어 모델(LLM)을 활용한 로봇 협업 인터페이스 구축",
+      "published": "2023-11",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11609734",
+      "type": "논문",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 제조 물류 로봇에 LLM 협업 인터페이스를 구축한 국내 학술대회 논문(서지만 확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-166",
+      "org": "Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T.",
+      "title": "LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21040",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 기술 목록·의존 그래프를 만들고 선형계획이 배정하는 다중 로봇 계획.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-674",
+      "org": "Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH)",
+      "title": "Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.08214",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 언어 이해만 LLM 에 맡기고 검증·순서·실행을 결정적으로 둔 구조와 기호 검증기 절제 실험.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-592",
+      "org": "ConstraintBench 저자(arXiv 2602.22465, 저자 미확인)",
+      "title": "ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization",
+      "published": "2026-02",
+      "url": "https://arxiv.org/abs/2602.22465",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 제약 최적화를 직접 풀 때 실행 가능성·최적성을 평가한 벤치마크.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/experiments.md"
+      ]
+    },
+    {
+      "id": "ref-594",
+      "org": "SCHEDBench 저자(arXiv 2608.00991, 저자 미확인)",
+      "title": "SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.00991",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 문장 표현 변화에 따른 LLM 스케줄링 제약 충실도 평가.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md"
+      ]
+    },
+    {
+      "id": "ref-611",
+      "org": "RACE-Sched 저자(arXiv 2605.29262, 저자 미확인)",
+      "title": "Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling",
+      "published": "2026-05",
+      "url": "https://arxiv.org/abs/2605.29262",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 실시간 디스패치는 기호 휴리스틱, LLM 은 비동기 장기 추론을 맡는 구조.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md"
+      ]
+    },
+    {
+      "id": "ref-612",
+      "org": "Li, J., & Li, C.(소속 미확인)",
+      "title": "LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.09343",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 시뮬레이션 추적으로 AGV·생산 스케줄링 정책을 설계하고 롤링 MILP 등과 비교.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-236",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+      "published": "2026-08-11",
+      "url": "https://doi.org/10.3390/electronics15163562",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 온톨로지 기반 실행 가능성 판정을 배정기 독립 제약으로 쓰는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-041",
+      "org": "Naqvi, M. R. 외(Scientific Reports)",
+      "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+      "published": "2025-10-02",
+      "url": "https://www.nature.com/articles/s41598-025-16649-3",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 광고 능력과 운용 능력을 함께 표현·비교하는 로봇 능력 온톨로지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-746",
+      "org": "Atil, B. 외",
+      "title": "Non-Determinism of \"Deterministic\" LLM Settings",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.04667",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 결정적 설정 LLM 의 반복 실행 정확도 변동 보고.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/experiments.md"
+      ]
+    },
+    {
+      "id": "ref-359",
+      "org": "Wang, W. 외",
+      "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.00557",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 불명확한 지시에서 LLM 에이전트가 빠진 인자를 지어내는 경향과 되묻기 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    },
+    {
+      "id": "ref-677",
+      "org": "CoMuRoS 저자(arXiv 2511.22354, Frontiers in Robotics and AI 게재)",
+      "title": "LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning",
+      "published": "2025-11",
+      "url": "https://arxiv.org/abs/2511.22354",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업 관리자 LLM 이 해석·배정·재계획을 맡는 이종 로봇 팀 구조.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-168",
+      "org": "Kaitha, S., & Yu, S. 외(arXiv 2512.02810)",
+      "title": "Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.02810",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건설 로봇 LLM 배정과 전통 최적화 비교(2차 요약 충돌, oq-030).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-734",
+      "org": "Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46)",
+      "title": "Dynamic rescheduling that simultaneously considers efficiency and stability",
+      "published": "2004",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 재스케줄링의 효율(makespan·지연)과 안정성(시작 시각 편차)을 함께 다룸.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/experiments.md"
+      ]
+    },
+    {
+      "id": "ref-400",
+      "org": "International Journal of Planning and Scheduling 게재 논문(저자 미확인)",
+      "title": "Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors",
+      "published": "2019",
+      "url": "https://www.inderscience.com/info/inarticle.php?artid=103016",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 조합 최적화 배차와 무작위·최근접 규칙의 작업 대기 시간 비교.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md",
+        "docs/tracks/nl-task-chatbot/experiments.md"
+      ]
+    },
+    {
+      "id": "ref-377",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이번 실행에서 다시 열지 않음. 로봇별 작업 순서를 정하는 결정적 작업 계획기.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 5 페이지 3절 q5-03 가설 3 근거: RobotFleet 논문(arXiv 2510.10379)의 LLM 배정기 대 MILP 배정기 비교 결과 수치 — README 에 없고 논문 원문 미열람이라 본문에 넣지 못했다",
+    "단계 5 페이지 3절 q5-03 가설 1 근거: Garrabé 외(arXiv 2411.05474)의 모듈형 구조 대 code-as-policies 성공률 수치 — 검색 요약에 수치가 없어 '높았다'로만 썼다",
+    "단계 5 페이지 3절 q5-03 근거 공백: 국내 학술대회 논문(강건, 2023-11, DBpia NODE11609734)의 초록·결과 — 서지만 확인되어 판정 근거로 쓰지 못했다",
+    "q5-19: 가설별 하위 주장을 q5-01 지표와 문턱으로 조작적으로 정의한 선행 사례 — 판정 규칙이 이 위키의 종합(추정)에 머물러 있다",
+    "단계 5 페이지 상태 줄은 차등 갱신(patches)으로 고칠 수 없는 H1 아래 줄이어서 이 페이지만 전체 content 로 보냈다. 단계 페이지 상태 줄을 자동 영역으로 두거나 패치 대상으로 허용할지 pipeline 담당의 판단을 요청한다"
+  ],
+  "fixes_applied": [
+    "트랙 개요 3절 판정 기재 — 가설 1~3 판정 칸을 '부분 지지(잠정)'으로, 근거 칸을 '단계 5 · 실행 2026-09-25-86 · 확실성 낮음'(가설 2는 '확실성 매우 낮음~낮음')과 단계 페이지 링크로 고쳤고, 가설 문장의 [가설] 태그는 그대로 두었다",
+    "f16·f17·f18·f19·f20·f21·f22·f24 추정 유지 — 단계 페이지 3·4절, 아이디어 페이지 6절, 트랙 개요 3절, 실험 페이지에서 모두 [추정]으로 두고 '이 위키의 종합'을 병기했다",
+    "f19 설명 가능성 — 단계 페이지 잠정 판정표·가설 2 서술, 트랙 개요 3절, 아이디어 페이지 판정표에 '설명 가능성 하위 주장은 직접 근거가 없어 미판정이고 부분 지지는 재현성 쪽 간접 근거에만 기댄다'를 적었다",
+    "f6 분리 — CoMuRoS 정답률 0.91 은 [사실](저자 보고)로, LTAA 는 두 2차 요약을 모두 제시한 [추정] 문장으로 나누고 oq-030 에 연결했다",
+    "f13 조건 병기 — 단계 페이지 가설 3 반례·판정 서술, 트랙 개요 3절, 아이디어 페이지, 13. 작업 배정 — MRTA 반영 제안에 '제조·AGV 시뮬레이션 조건, 저자 보고, 롤링 MILP 는 AGV 운송 하위 문제의 추상화, 물류 창고 적용 미확인'을 적었다",
+    "f4 연계 대상 — Garrabé 외 문장 뒤에 조작 과제의 접지·재시도를 '연계 대상(로봇 자체 지능·제어)'으로 밝히고 구조 비교의 근거로만 쓴다고 적었다",
+    "f15 독립성 — RobotFleet 논문과 README 는 같은 저자라 독립 교차가 아니며 LLM 대 MILP 비교 결과는 미확인이라고 본문과 남은 불확실성에 적었다",
+    "각주 원문 미열람 — ref-778 를 뺀 이번 브리프 출처(ref-807·812·813·815·816 과 재사용 출처)의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true(ref-778 는 false)를 넣었다",
+    "experiments.md 제안된 실험 계획 — E5-01~E5-03 을 '제안(사용자 수행 대기)' 상태로 싣고 결과·수치 없이 f21·f22 근거를 [추정]으로 두었으며, E5-03 에 최근접 배정 기준선을 넣었고 H2 제목은 그대로 두었다",
+    "단계 5 페이지 6절 — 세 완료 조건의 검증 판정 칸을 모두 '미승인'으로 두고 전환 줄을 지시 문구대로(이번 새 질문 id q5-19 를 괄호로 병기) 썼으며, 상태 줄을 진행 중·미충족으로 두고 2절 표에 q5-16~q5-18(과 새 질문 q5-19)을 넣어 열린 질문 15건·답한 질문 3건으로 맞췄다",
+    "트랙 개요 상태 줄 — 현재 단계 '단계 3. 구현 가설 설계', 마지막 트랙 실행 2026-09-25 를 그대로 유지했고 track_updates.stage_transition 은 넣지 않았다",
+    "업무 분해·배정 설계 초안 — 온톨로지 변경이 없어 pages 에 넣지 않았고 ontology_draft_version 은 '0.9' 를 유지했다"
+  ],
+  "standards_updates": [
+    {
+      "name": "RobotFleet (LLM·MILP 작업 배정기를 둔 중앙 다중 로봇 계획 틀)",
+      "kind": "오픈소스",
+      "org": "therohangupta (RobotFleet 공식 저장소)",
+      "url": "https://github.com/therohangupta/robot-fleet",
+      "related_areas": [
+        13,
+        27
+      ],
+      "summary": "LLM 기반 추론과 MILP 두 작업 배정기를 바꿔 끼울 수 있는 오픈소스 다중 로봇 계획 틀이다. README 에는 두 배정기의 비교 결과가 없다.",
+      "ref_id": "ref-778"
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+    "ontology_draft_version": "0.9",
+    "backlog_updates": [
+      {
+        "id": "q5-03",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03"
+      },
+      {
+        "id": "q5-19",
+        "status": "열림",
+        "answer_link": null,
+        "question": "가설 판정표에서 '잘못된 배정'(가설 1), '설명·재현 가능'(가설 2), '운영 안정성'(가설 3)을 q5-01 의 어떤 지표와 문턱으로 조작적으로 정의해야 지지·부분 지지·기각을 가를 수 있는가? (q5-03 에서 파생)",
+        "stage": 5,
+        "origin": "f17"
+      },
+      {
+        "id": "q3-16",
+        "status": "열림",
+        "answer_link": null,
+        "question": "LLM 이 루프 밖에서 설계한 규칙이 롤링 MILP 를 앞선 보고를 고려할 때, 가설 3 의 '최적화 엔진'을 해법기로 한정할지 검증을 거친 결정적 규칙 실행기까지 넓힐지, 그에 따라 스케줄링 분담 설계를 어떻게 바꾸는가? (q5-03 에서 파생) (관련: q4-08)",
+        "stage": 3,
+        "origin": "f13"
+      }
+    ],
+    "log_entry": "답한 질문: q5-03(판정 절차·판정 값 규칙·가설별 근거·잠정 판정표: 가설 1~3 모두 부분 지지(잠정), 이 위키의 종합, 신뢰도 low) / 새 질문: q5-19(단계 5, f17), q3-16(단계 3, f13) / 온톨로지 변경: 없음(업무 분해·배정 설계 초안 v0.9 유지, 가설 판정은 작업 모델의 개념·관계가 아니라 검증 방법) / 완료 조건 평가: 미충족(부족: 평가 지표·검증 절차 조건 미충족 유지, 가설 판정표·실험 계획은 잠정으로 실었으나 검증 판정 전, 앞 단계 3·4 완료 미승인) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 23. 시험·형식 검증·벤치마크, 27. AI·학습·적응과 모델 운영 3건(모두 6. 대표 접근법과 기술) / 다음 실행 제안: 현재 단계 3 의 q3-16·q3-05, 또는 단계 5 의 q5-19·q5-05",
+    "overview_progress": "단계 3 진행 중(현재 단계 유지, 단계 전환 미승인) — 이번 실행은 지정 질문으로 단계 5 의 q5-03 답함; 단계 5 열린 질문 15, 답함 3, 완료 조건 미충족; 트랙 개요 3절에 가설 1~3 부분 지지(잠정) 기재, 실험 E5-01~E5-03 제안"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 직접 배정 대 해법기 배정 비교 근거(LiP-LLM 선형계획 배정의 배정 실패 거의 없음, 시뮬레이션 과제·저자 보고; RobotFleet 은 LLM·MILP 배정기를 두나 같은 저자 자료이고 비교 결과 미확인)와 반례(CoMuRoS 정답률 최대 0.91, 실험실 텍스트 벤치마크; LTAA 는 2차 요약 충돌 oq-030), LLM 설계 규칙이 롤링 MILP 를 앞선 보고(제조·AGV 시뮬레이션 조건, 저자 보고, 롤링 MILP 는 AGV 운송 하위 문제의 추상화, 물류 창고 적용 미확인), 최근접 배정 기준선을 둔 판정 실험 설계(추정). 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽 연결"
+    },
+    {
+      "area_no": 23,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "GRADE 식 확실성 평가(결과별 네 수준, 다섯 영역 하향)와 TRL 4·5 구분을 보조 축으로 써서 기술 가설을 하위 주장별로 판정하는 방법과 판정 값 규칙(지지·부분 지지·기각·미판정) — 이 위키의 종합(추정), 판정 규칙을 직접 정한 출처 없음"
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "모듈형 접지 구조가 직접 코드 생성 기준선보다 조작 과제 성공률이 높았다는 보고(원인: 접지 부족·개루프 실행, 로봇 자체 지능·제어는 연계 대상), 기호 검증기를 LLM 으로 바꾼 절제 실험의 성공률 급락(98.1%→3.8%, 산업 셀·저자 보고), 결정적 설정 LLM 의 반복 정확도 변동(최대 15%), LLM 이 루프 밖에서 설계한 스케줄링 규칙(제조·AGV 시뮬레이션). 적용 대상 13. 작업 배정 — MRTA 와 함께 연결"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "run_id": "2026-09-25-45",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "manual-capability-ontology",
+    "stage": 1,
+    "question_ids": [
+      "q1-09"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 2,
+  "new_sources": 3,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "494289b",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 12,
+    "sources": 3
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 969.9,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-09 부분 답 보강(IDTA 02047 충전 요소 출처 충돌 병기, ECLASS 16.0 규모, ECLASS-in-AAS 지침, AAS 능력 모델→PDDL 선례, 두 층 의미 식별자 추정), 새 질문 q4-14, 온톨로지 변경 없음 | run 2026-09-25-45",
+  "notes": [
+    "참고문헌 생성: references/ref-198.md",
+    "참고문헌 생성: references/ref-200.md",
+    "참고문헌 생성: references/ref-201.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 2,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 3,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 2,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 14:15:40 KST",
+  "usage": {
+    "input_tokens": 46,
+    "cache_creation_input_tokens": 1596485,
+    "cache_read_input_tokens": 6444115,
+    "output_tokens": 93338,
+    "cost_usd": 16.6557,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.028,
+        "output_tokens": 15075,
+        "cache_read_input_tokens": 4761340,
+        "cache_creation_input_tokens": 406558
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.1759,
+        "output_tokens": 15546,
+        "cache_read_input_tokens": 1523317,
+        "cache_creation_input_tokens": 425268
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 3.8553,
+        "output_tokens": 56738,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 338496
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 3.5118,
+        "output_tokens": 4987,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 424604
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": null,
+  "fetched_sources": 1,
+  "cross_checked_findings": 0
+}

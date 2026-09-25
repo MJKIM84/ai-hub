@@ -1,0 +1,141 @@
+{
+  "run_id": "2026-09-25-77",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 3,
+    "question_ids": [
+      "q3-04"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 7,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "fd09130",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 11
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2801.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 3 | q3-04 답함(지시 변경 반영: 변경 유형별 조작·변경 허용 상태·사건 기반 재스케줄링·보상 작업), 업무 분해·배정 설계 초안 v0.7 → v0.8, 후속 질문 3건 | run 2026-09-25-77",
+  "notes": [
+    "참고문헌 생성: references/ref-680.md",
+    "참고문헌 생성: references/ref-681.md",
+    "참고문헌 생성: references/ref-682.md",
+    "참고문헌 생성: references/ref-683.md",
+    "참고문헌 생성: references/ref-684.md",
+    "참고문헌 생성: references/ref-685.md",
+    "참고문헌 생성: references/ref-686.md",
+    "용어집 생성: glossary/event-driven-rescheduling.md",
+    "용어집 생성: glossary/frozen-horizon.md",
+    "온톨로지 초안 버전 v0.7 → v0.8 (버전 이력 추가)"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 7,
+    "standards": 1,
+    "open_questions": 0,
+    "flow_cells": 6,
+    "backlog": 4,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 18:53:37 KST",
+  "usage": {
+    "input_tokens": 84,
+    "cache_creation_input_tokens": 3209563,
+    "cache_read_input_tokens": 13428042,
+    "output_tokens": 298714,
+    "cost_usd": 35.0935,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.4642,
+        "output_tokens": 35049,
+        "cache_read_input_tokens": 11118395,
+        "cache_creation_input_tokens": 383628
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.2509,
+        "output_tokens": 19601,
+        "cache_read_input_tokens": 1947995,
+        "cache_creation_input_tokens": 403864
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 15.5673,
+        "output_tokens": 228198,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 1370699
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 8.7264,
+        "output_tokens": 14874,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 1049813
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 10,
+  "cross_checked_findings": 0
+}

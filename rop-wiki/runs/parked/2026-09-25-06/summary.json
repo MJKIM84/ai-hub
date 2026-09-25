@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-09-25-06",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "manual-capability-ontology",
+    "stage": 1,
+    "question_ids": [
+      "q1-03",
+      "q1-04",
+      "q1-05"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "수정 후 재검증",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 12,
+  "parked": true,
+  "published": false,
+  "committed": true,
+  "commit": "7600a1a",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 11,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2674.0,
+  "first_retries": 0,
+  "second_retries": 2,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-04·q1-05 답함, q1-03 부분 답을 공식 저장소 원문 기준으로 보강, 온톨로지 초안 v0.1 → v0.2, 모델·표준 비교표 3행 확인·후보 밖 2행 추가, 새 출처 ref-136~ref-146 | run 2026-09-25-06",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:04:47 KST",
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 2106037,
+    "cache_read_input_tokens": 4289615,
+    "output_tokens": 347581,
+    "cost_usd": 25.4487,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.0908,
+        "output_tokens": 36212,
+        "cache_read_input_tokens": 2833796,
+        "cache_creation_input_tokens": 172579
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.0326,
+        "output_tokens": 24019,
+        "cache_read_input_tokens": 1026058,
+        "cache_creation_input_tokens": 252945
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 11.094,
+        "output_tokens": 265764,
+        "cache_read_input_tokens": 189051,
+        "cache_creation_input_tokens": 717617
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 8.0886,
+        "output_tokens": 20813,
+        "cache_read_input_tokens": 228462,
+        "cache_creation_input_tokens": 953329
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0656,
+        "output_tokens": 262,
+        "cache_read_input_tokens": 3302,
+        "cache_creation_input_tokens": 4560
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0339,
+        "output_tokens": 254,
+        "cache_read_input_tokens": 3375,
+        "cache_creation_input_tokens": 3511
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.0432,
+        "output_tokens": 257,
+        "cache_read_input_tokens": 5571,
+        "cache_creation_input_tokens": 1496
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 8,
+  "cross_checked_findings": 0,
+  "park_reason": "2차 검증 수정 후 재검증가 재작성 2회 뒤에도 이어짐: required_fixes 참고"
+}

@@ -1,0 +1,218 @@
+{
+  "run_id": "2026-09-25-75",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(Edinburgh Research Explorer·ScienceDirect)로 Bosché, Advanced Engineering Informatics 24(1), 107-118, 2010-01 확인. ICP 기반 정합, CAD 객체 인식, as-built 자세·치수 계산, 철골 구조 현장 실험은 스니펫과 일치. 다만 '이 개념은 scan-vs-BIM 으로 불린다'는 이 출처 스니펫에 나타나지 않아 별도 [추정] 문장으로 분리하도록 지시."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. KCI 검색 결과로 윤동희 외, 설비공학 논문집 36(5), 251-261 확인. 어린이집 3개소 평균 오차율 2.21%·5.99%·2.75%와 비교 기준(최종 BIM 결과의 실 폭·깊이 대 기존 건축도면)은 검증 검색 스니펫에서 재확인. '좁은 공간 고속 촬영·장애물 미제거 시 오차 증가' 부분은 검증 검색에서 재확인되지 않아 '저자 보고(검색 요약 기준)' 병기 지시. 단일 출처 수치이며 물류 시설이 아닌 노후 건축물 대상."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(IAARC ISARC 2023 proceedings pp.521-528, arXiv 2408.15870)로 세 단계(BIM 기반 세션 데이터 생성, 다중 세션 앵커링, BIM 에 없는 새 요소 식별·재구성) 확인. f4 와 같은 TUM 저자 그룹이라 독립 확인 아님."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "raw.githubusercontent.com 으로 README 열람 확인: 'pose-graph multi-session anchoring to align your LiDAR data with a reference map', TLS 기준 최대 3 cm 6-DoF 자세, 'update a digital twin of a facility', Construction Robotics 8(2), 2024-07, DOI 10.1007/s41693-024-00126-w. 3 cm 는 저자 측 보고. README 의 '디지털 트윈 갱신'은 현재 상태 갱신 문맥이다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 실행 2026-09-25-72 에서 검증된 finding 의 재인용이며 단계 4 페이지 3절(q4-01)에 같은 문장이 이미 있다. 기존 각주 ref-224 재사용, 본문 반복 대신 참조."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(Springer, Semantic Scholar)로 KI 2017, 2017-09 게재, 저자 Shaik, N., Liebig, T., Kirsch, C., Müller, H. 확인. 팔레트 임시 적치로 시설 물류 환경이 정적이지 않음, 로봇별 변화 감지·임시 지도·선 특징으로 병합은 스니펫과 일치."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(MDPI, PubMed)로 Stefanini·Ciancolini·Settimi·Pallottino, Sensors 23(13) 6066, 2023-06-30 확인. 자세 불확실성 고려, 사람·로봇 같은 동적 장애물의 일시 변화에 강건, 창고 물품 배치 변화를 모사한 100개 환경 변형 시험(시뮬레이션)은 스니펫과 일치."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(arXiv 2307.00488, RSS 2023)로 4개월 간격 두 궤적 연결, 팔레트·상자, 가동 중인 100m×80m Clearpath Robotics 시설(TorWIC 확장) 확인."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 출처는 참고문헌 색인에 이미 있는 ref-160(6. 지도·공간·위치 모델 페이지에서 재사용 중). 이번 검증에서 내용을 다시 검색하지 않았으며 리서치 스니펫 범위로 판단."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "raw README 열람 확인: 평생 지도 작성의 지도 정제·갱신, 'true lifelong' 노드 제거는 highly experimental, 위치추정 모드의 순환 스캔 버퍼와 'the underlying map is not affected'. 발행일 미확인, 확인일 2026-09-25."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "raw 헤더 열람 확인: 'Takes in laser and pointcloud data to populate into 2D costmap', marking_buffers_·clearing_buffers_, raytraceFreespace. ref-644 와 같은 Nav2 프로젝트라 독립 확인 아님. '정적 지도와 별도로 실행 중에 반영'은 층 구조 README(ref-644)에 기댄 해석이다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "입력 원문 텍스트(data/source_texts/ref-031.txt)로 확인: 5.3 '(Temporary) changes in the environment, such as freeing certain areas or changing the maximum speed', BLOCKED 구역, 6.4.2 같은 zoneSetId 내용 불변·새 zoneSetId 사용, mapId 당 활성 구역 집합 하나. 명세 3.0.0, 발행일 미확인(oq-005)."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "입력 원문 텍스트로 확인: 6.3.1 mapId·mapVersion 식별, 미리 적재 후 enableMap 활성화, 표 10 TEACH_IN 은 운영자 매핑 등 교시 중이며 관제는 주문·동작을 보내지 않는다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "입력 원문 텍스트 6.4.5 로 확인: NODE_UNREACHABLE, level CRITICAL, 관제가 진행 방법 결정, 로봇은 재시도하지 않음. 문장 끝 '현장의 예기치 않은 막힘이 관제 쪽 신호로 올라온다'는 명세에 없는 해석이라 [추정]으로 분리 지시."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "raw .msg 열람 확인: fleet_name(string), open_lanes(uint64[]), close_lanes(uint64[]). '그래프 자체를 고치지 않고'는 이 메시지 정의에 나타나지 않아 [추정]으로 분리하거나 삭제하도록 지시."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합 [추정]. 근거 finding 들은 모두 확인됨. 세 갈래 분류를 제시한 단일 출처 없음, 신뢰도 low 유지."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합 [추정]. 경계 서술(변화 탐지 계산은 로봇·제조사 연계 대상, 구역 집합·차선 폐쇄·지도 판 반영은 관제 쪽)은 분류 원문 9장과 맞는다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "설명용 가정 사례 [추정]. 지속 시간 등 판정 기준은 근거 없음으로 명시되어 있어 수치를 넣지 않는 조건으로 유지."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 범위 관찰 [추정], 부재 확인 아님. 원문 미열람 출처에 기댄 종합이다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f5 는 단계 4 페이지 3절(q4-01)과 공간 그래프 스키마 초안 6절에 이미 실린 Shaheer 외(ref-224) 문장과 같다 — 기존 각주 재사용, q4-02 절에서는 반복 서술 대신 짧게 참조",
+      "f10(slam_toolbox)·f11(Nav2 비용 지도)은 단계 4 페이지 q4-01 의 ref-270·ref-644 문장과 출처가 겹친다(다른 측면) — 기존 각주 재사용",
+      "f12·f13 의 구역 집합·지도 판 규칙은 스키마 초안 6절(VDA 5050 구역 집합·지도 버전 항목)과 아이디어 페이지 4절에 일부 이미 있다 — 기존 ref-031 각주 재사용",
+      "f9(ref-160)는 6. 지도·공간·위치 모델 페이지 8·9절에 이미 인용된 출처다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f1: 'Bosché(2010)는 … 제안했다' 부분은 [사실]로 두되 '이 개념은 scan-vs-BIM 으로 불린다'는 별도 문장으로 떼어 [추정]으로 표기한다 — ref-651 스니펫에 이 명칭이 나타나지 않는다. 연구 대상이 건설 시공 품질 관리이며 물류 적용은 미확인임을 함께 적는다.",
+    "f2: 오차율 수치 문장에 '저자 보고, 단일 출처(원문 미열람)'와 비교 기준(BIM 결과의 실 폭·깊이 대 기존 건축도면)을 적고, '좁은 공간 고속 촬영·장애물 미제거 시 오차 증가' 부분에는 '검색 요약 기준' 을 병기한다 — 검증 검색에서 이 조건 부분은 재확인되지 않았다.",
+    "f14: 문장 끝 '현장의 예기치 않은 막힘이 관제 쪽 신호로 올라온다'를 별도 문장으로 떼어 [추정]으로 표기한다 — 명세 6.4.5 에 없는 해석이다.",
+    "f15: '그래프 자체를 고치지 않고 요청으로 반영한다'를 삭제하거나 별도 [추정] 문장으로 둔다 — LaneRequest.msg 는 fleet_name·open_lanes·close_lanes 세 필드만 정의하고 그래프 수정 여부를 말하지 않는다.",
+    "f3·f4: 두 출처(ref-221, ref-650)가 같은 TUM 저자 그룹(Vega-Torres·Braun·Borrmann)임을 본문 또는 4절 불확실성에 적고 독립 교차 확인으로 쓰지 않는다. f11 의 ref-649·ref-644 도 같은 Nav2 프로젝트임을 적는다.",
+    "f4: README 의 '시설 디지털 트윈 갱신'은 현재 상태를 표현하는 지도 갱신으로만 옮기고, 22. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)의 근거로 연결하지 않는다 — 분류 원문 7장의 8. 실시간 세계 상태·데이터 일관성과 22 구분.",
+    "f3~f11: '연계 대상:' 표기를 유지하고 SLAM·다중 세션 정렬·변화 탐지·비용 지도를 ROP 직접 범위처럼 서술하지 않는다(분류 원문 9장 '로봇 자체 지능·제어').",
+    "f16~f19: 모두 [추정]으로 두고 '이 위키의 종합이며 단일 출처 없음'을 밝히며, f18 은 '다음은 설명을 위한 가상의 시나리오이다'로 시작하고 지속 시간 같은 수치를 넣지 않는다. f16 의 세 갈래를 mermaid 로 그릴 때 '이 위키의 추정 구조'임을 도식 아래에 적는다.",
+    "인용: 한 페이지 안에서 ref-270(f10)과 ref-031(f12) 각각 직접 인용은 1회만 쓰고 나머지는 재서술한다 — f10 excerpt 에는 같은 출처의 인용 구절이 두 개 있다.",
+    "각주: 원문을 열지 않은 ref-651·ref-652·ref-653·ref-654·ref-655·ref-160·ref-221·ref-224 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다(web_fetch_available: false 환경). ref-031·ref-270·ref-569·ref-644·ref-649·ref-650 는 원문을 연 출처로 둔다.",
+    "ref-653: 참고문헌 항목의 기관 칸 'Shaik, N. 외 (KI 2017, 저자 목록 미확인)'을 'Shaik, N., Liebig, T., Kirsch, C., & Müller, H. (KI 2017)'로, 발행일을 2017-09 로 고친다 — 검증 검색(Semantic Scholar·Springer) 결과.",
+    "ref-651: 참고문헌 항목의 발행일을 2010-01 로, 제목 뒤 서지를 'Advanced Engineering Informatics 24(1), 107-118'로 보강한다 — 검증 검색 결과.",
+    "ref-650: 참고문헌 항목에 연계 논문 'Construction Robotics 8(2), 2024-07, DOI 10.1007/s41693-024-00126-w'를 병기한다(발행일은 README 이므로 미확인 유지) — raw README 열람 결과.",
+    "ref-224·ref-270·ref-644·ref-031·ref-160·ref-221·ref-569 는 기존 참고문헌 id 이므로 각주 정의를 기존 시드 문자열 그대로 재사용하고 새 id 를 만들지 않는다.",
+    "단계 페이지 6절: 완료 조건 두 번째 행(도면–현장 정합 절차 초안)은 '미충족'으로 두고 아래 줄을 '다음 단계로 전환: 아니오(도면–현장 정합 절차 초안 없음 — q4-03 미답; 막힌 질문 q4-03·q4-04·q4-05·q4-07·q4-08·q4-09·q4-10)'로 쓴다. 트랙 개요 상태 줄의 현재 단계는 '단계 4. 지도 변환 보정과 현장 정합'을 유지한다.",
+    "q4-02: 백로그·단계 페이지 2절에서 '답함'(답한 실행 2026-09-25-75, 답 위치 #q4-02)으로 바꾸고 3절에 '### q4-02 … {#q4-02}' 소제목을 둔다. 새 질문 두 건은 단계 4·단계 5 태그 그대로 백로그에 등록하고 origin 은 각각 f17·f8 로 둔다.",
+    "oq-022 는 해결로 바꾸지 않는다 — 국내 물류센터 도면–현장 차이 확인 사례는 이번에도 찾지 못했다(f19).",
+    "공간 그래프 스키마 초안: 온톨로지 변경이 없으므로 ontology_version '1.0' 을 유지하고, 6절 '정렬 정보·도면–현장 차이·지도 버전' 항목에 근거 보강으로 f12(새 zoneSetId 교체)·f13(mapVersion)·f15(차선 폐쇄 요청)·f16(추정)만 덧붙인다. 개념·관계 표는 바꾸지 않는다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(web_fetch_available: false, fetch_mode mirror_only)에서 검증됐다. 확인 19건, 미확인 0건, 교차 확인 0건. 강등: 없음(f1 의 명칭 부분, f14·f15 의 해석 부분은 [추정] 문장으로 분리 지시). 원문 미열람 출처: ref-651, ref-652, ref-653, ref-654, ref-655, ref-160, ref-221, ref-224(검색 결과 일치로 실재 확인). 원문 확인 출처: ref-031(입력 원문 텍스트), ref-270·ref-569·ref-649·ref-650(raw.githubusercontent.com 검증 열람), ref-644(리서치 열람). 주의: q4-02 의 답은 도면–현장 차이를 지속성별 세 갈래(구조 변경·반정적 배치·임시 장애물)로 나눈 이 위키의 종합 [추정]이며 이를 제시한 단일 출처가 없다. scan-vs-BIM·국내 Scan-to-BIM 연구는 건설·시설 분야이고 물류 적용은 미확인이다. SLAM·변화 탐지·비용 지도는 로봇 쪽 연계 대상이다. 같은 저자 그룹(ref-221·ref-650)과 같은 프로젝트(ref-649·ref-644) 출처는 독립 확인으로 보지 않았다. 브리프 메타데이터 주의: ref-031 의 fetched_via 가 github_raw 로 적혔으나 self_check.limits 는 입력 원문 텍스트(inbox)라고 적어 서로 다르다(원문 열람 자체는 입력 원문으로 확인됨). 신규 출처 id ref-649~ref-655 는 과거 브리프(실행 2026-09-25-36)가 쓴 임시 id 구간과 겹치므로 퍼블리셔 병합 시 기존 URL 대조가 필요하다. 검증 검색 9회(리서치 17회와 합쳐 26/40), 열람 4회. 정정 요청 없음. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 미충족(부족: 도면–현장 정합 절차 초안 — q4-02 는 이번에 답했으나 q4-03 미답). 단계 전환: 미승인(막힌 질문 q4-03·q4-04·q4-05·q4-07·q4-08·q4-09·q4-10).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

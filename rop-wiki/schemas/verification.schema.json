@@ -1,0 +1,446 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rop-wiki.invalid/schemas/verification.schema.json",
+  "title": "verification.json — 내용 검증 에이전트 판정",
+  "description": "사양서 부록 B.2. 1차(브리프) 검증과 2차(서술) 검증이 같은 형식을 쓴다. stage 가 first 면 verdict 는 승인|조건부 승인|반려, second 면 통과|수정 후 재검증|불통과. track_checks 는 트랙 실행에만 넣는다. 페이지의 confidence 와 검증 노트 문구는 이 파일에서 확정된다.",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "실행 id",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
+    },
+    "stage": {
+      "type": "string",
+      "description": "first = 1차 브리프 검증, second = 2차 서술 검증",
+      "enum": [
+        "first",
+        "second"
+      ]
+    },
+    "verdict": {
+      "type": "string",
+      "description": "판정. stage 에 따라 허용 값이 다르다(if/then)",
+      "enum": [
+        "승인",
+        "조건부 승인",
+        "반려",
+        "통과",
+        "수정 후 재검증",
+        "불통과"
+      ]
+    },
+    "claim_checks": {
+      "type": "array",
+      "description": "주장별 검증 결과. 2차 검증은 브리프 밖 주장(드리프트)만 다루므로 비어 있을 수 있다",
+      "items": {
+        "type": "object",
+        "description": "주장 검증 결과 하나",
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "description": "검증한 finding id (research.json findings[].id)",
+            "pattern": "^f[0-9]+$"
+          },
+          "source_exists": {
+            "type": "boolean",
+            "description": "출처 실재성: URL 을 열어 기관·제목·발행일이 일치하는가(원문 미열람이면 검색 결과 일치로 대신하고 note 에 남긴다)"
+          },
+          "supports_claim": {
+            "type": "boolean",
+            "description": "출처가 실제로 그 주장을 뒷받침하는가"
+          },
+          "cross_checked": {
+            "type": "boolean",
+            "description": "핵심 수치·사례가 독립 출처 2개 이상으로 확인됐는가"
+          },
+          "tag_decision": {
+            "type": "string",
+            "description": "태그 처분",
+            "enum": [
+              "유지",
+              "강등",
+              "삭제",
+              "열린 질문 이동"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "description": "검증 메모(강등·삭제 이유, 원문 미열람 표시 등)"
+          }
+        },
+        "required": [
+          "finding_id",
+          "source_exists",
+          "supports_claim",
+          "cross_checked",
+          "tag_decision",
+          "note"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "category_fit": {
+      "type": "object",
+      "description": "분류 적합성",
+      "properties": {
+        "ok": {
+          "type": "boolean",
+          "description": "부록 A 정의에 맞는 영역인가"
+        },
+        "reassign_to": {
+          "description": "다른 영역이면 재배치할 세부영역 번호, 아니면 null [가정: 번호]",
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 28
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "ok",
+        "reassign_to"
+      ],
+      "additionalProperties": false
+    },
+    "scope_boundary": {
+      "type": "object",
+      "description": "범위 경계(부록 A 9장)",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        },
+        "issues": {
+          "type": "array",
+          "description": "외부 연계 영역을 ROP 직접 범위처럼 서술한 항목",
+          "items": {
+            "type": "string",
+            "description": "문제 항목",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "ok",
+        "issues"
+      ],
+      "additionalProperties": false
+    },
+    "duplication": {
+      "type": "object",
+      "description": "중복·모순",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        },
+        "overlaps": {
+          "type": "array",
+          "description": "중복·모순 목록",
+          "items": {
+            "type": "string",
+            "description": "겹치거나 충돌하는 기존 페이지·주장",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "ok",
+        "overlaps"
+      ],
+      "additionalProperties": false
+    },
+    "terminology": {
+      "type": "object",
+      "description": "용어 일관성",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        },
+        "conflicts": {
+          "type": "array",
+          "description": "용어 충돌 목록",
+          "items": {
+            "type": "string",
+            "description": "용어집과 충돌하는 항목",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "ok",
+        "conflicts"
+      ],
+      "additionalProperties": false
+    },
+    "quotation_check": {
+      "type": "object",
+      "description": "인용 길이·저작권 검사",
+      "properties": {
+        "ok": {
+          "type": "boolean",
+          "description": "인용 길이·저작권(5.3) 준수"
+        },
+        "issues": {
+          "type": "array",
+          "description": "선택. 위반 항목 [가정]",
+          "items": {
+            "type": "string",
+            "description": "위반 항목",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "ok"
+      ],
+      "additionalProperties": false
+    },
+    "corrections_applied": {
+      "type": "array",
+      "description": "inbox/corrections.md 의 정정 요청 중 이번 실행에서 반영 확인한 id",
+      "items": {
+        "type": "string",
+        "description": "반영한 정정 요청 id",
+        "pattern": "^corr-\\d{3,}$"
+      }
+    },
+    "required_fixes": {
+      "type": "array",
+      "description": "조건부 승인·수정 후 재검증일 때 이행할 수정 목록",
+      "items": {
+        "type": "string",
+        "description": "수정 지시 하나",
+        "minLength": 1
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "description": "페이지에 부여할 신뢰도(5.2). web_fetch_available: false 환경에서는 medium 상한",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "verification_note": {
+      "type": "string",
+      "description": "페이지 '검증 노트' 절에 실을 문구(판정, 확인·미확인 건수, 강등된 주장, 주의)"
+    },
+    "retry_reason": {
+      "description": "반려·불통과일 때 재작업 사유(재조사 사유와 보강할 질문). 그 외에는 null",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "track_checks": {
+      "type": "object",
+      "description": "트랙 실행 추가 검증(6.2 항목 12~17). 트랙 실행에만 넣는다(verification.json 에는 run_type 이 없으므로 이 조건은 퍼블리셔 스크립트가 target.json/research.json 의 run_type 으로 검사한다)",
+      "properties": {
+        "standard_sources_ok": {
+          "type": "boolean",
+          "description": "표준·규격 주장이 발행 기관 자료를 근거로 하는가(원문 미열람 표시 포함)"
+        },
+        "vendor_claims_tagged": {
+          "type": "boolean",
+          "description": "제조사 문서의 기능·성능이 [추정] '벤더 주장'으로 표기됐는가(research.json findings[].vendor_claim: true 또는 evidence_excerpt 첫머리 '벤더 주장: ' 표시, 교차 확인 전 [사실] 없음)"
+        },
+        "ontology_changes_grounded": {
+          "type": "boolean",
+          "description": "온톨로지 변경마다 근거 finding id 가 있고 기존 개념·관계와 충돌하지 않는가"
+        },
+        "backlog_duplicates": {
+          "type": "array",
+          "description": "백로그와 중복인 새 질문 목록(6.2 항목 15 전반)",
+          "items": {
+            "type": "string",
+            "description": "중복으로 판정한 새 질문(문장 또는 기존 백로그 id)",
+            "minLength": 1
+          }
+        },
+        "stage_tag_issues": {
+          "type": "array",
+          "description": "선택. 6.2 항목 15 후반 '단계 태그가 맞는지'의 결과: 단계 태그가 질문 내용과 맞지 않는 새 질문 목록(문장과 맞는 단계 번호). 문제가 없으면 빈 배열이거나 생략한다 [가정]",
+          "items": {
+            "type": "string",
+            "description": "단계 태그가 잘못된 새 질문(문장 또는 제안 id)과 맞는 단계",
+            "minLength": 1
+          }
+        },
+        "completeness_wording_ok": {
+          "type": "boolean",
+          "description": "'빠짐없이·완전·모든 기능' 표현이 측정 근거 없이 쓰이지 않았는가"
+        },
+        "stage_complete": {
+          "type": "boolean",
+          "description": "단계 완료 조건 충족 최종 판정"
+        },
+        "stage_transition_approved": {
+          "type": "boolean",
+          "description": "다음 단계 전환 승인. true 면 stage_complete 도 true 여야 한다"
+        }
+      },
+      "required": [
+        "standard_sources_ok",
+        "vendor_claims_tagged",
+        "ontology_changes_grounded",
+        "backlog_duplicates",
+        "completeness_wording_ok",
+        "stage_complete",
+        "stage_transition_approved"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "stage_transition_approved": {
+                "const": true
+              }
+            },
+            "required": [
+              "stage_transition_approved"
+            ]
+          },
+          "then": {
+            "properties": {
+              "stage_complete": {
+                "const": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    "corrections_rejected": {
+      "type": "array",
+      "description": "이번 실행 입력의 정정 요청 가운데 반영하지 않기로 판정한 것과 사유(6.2 항목 11). 퍼블리셔가 inbox/corrections.md 의 상태를 rejected 로 바꾸고 사유를 처리 메모에 남긴다",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "reason"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^corr-\\d{3,}$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "stage",
+    "verdict",
+    "claim_checks",
+    "category_fit",
+    "scope_boundary",
+    "duplication",
+    "terminology",
+    "quotation_check",
+    "corrections_applied",
+    "required_fixes",
+    "confidence",
+    "verification_note",
+    "retry_reason"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "stage": {
+            "const": "first"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "승인",
+              "조건부 승인",
+              "반려"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "stage": {
+            "const": "second"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "통과",
+              "수정 후 재검증",
+              "불통과"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "반려",
+              "불통과"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "retry_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "조건부 승인",
+              "수정 후 재검증"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "required_fixes": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

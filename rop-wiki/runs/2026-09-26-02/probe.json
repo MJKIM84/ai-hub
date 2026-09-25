@@ -1,0 +1,83 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": false,
+  "web_fetch_mirror_available": true,
+  "fetch_mode": "mirror_only",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-26 00:31:35 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "EPCIS is GS1's standard for capturing and sharing supply chain visibility event data; the latest version is EPCIS 2.0, published in June 2022.",
+      "elapsed_sec": 13.9,
+      "num_turns": 3,
+      "usage": {
+        "step": "probe-search",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1292,
+        "cache_read_input_tokens": 6604,
+        "output_tokens": 205,
+        "cost_usd": 0.0392,
+        "seconds": 13.9,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch": {
+      "available": false,
+      "detail": "WebFetch failed with error: proxy refused the connection.",
+      "elapsed_sec": 7.2,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 6886,
+        "output_tokens": 232,
+        "cost_usd": 0.006,
+        "seconds": 7.2,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5"
+        ]
+      }
+    },
+    "web_fetch_mirror": {
+      "available": true,
+      "detail": "The fetch worked; the page title is \"Interface for the Communication between Mobile Robots and a Fleet Control\" (VDA 5050 v3.0.0).",
+      "elapsed_sec": 9.9,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 295,
+        "cache_read_input_tokens": 6794,
+        "output_tokens": 324,
+        "cost_usd": 0.0352,
+        "seconds": 9.9,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch_curl": {
+      "available": false,
+      "status": 0,
+      "detail": "curl: (56) CONNECT tunnel failed, response 403"
+    }
+  }
+}

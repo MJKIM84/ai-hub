@@ -1,0 +1,374 @@
+{
+  "run_id": "2026-09-26-02",
+  "outline": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 300,
+      "summary": "ISO 22400-2:2014 는 현행판이며 개정 1(2017-04, 에너지 관리 KPI)이 있고 개정판 ISO/DIS 22400-2 는 2024-09-17 FDIS 등록 승인 단계이나 새 판 발행은 확인되지 않았다(확인일 2026-09-26). [사실][^ref-812][^ref-811][^ref-139]",
+      "planned_findings": [
+        "f2",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 150,
+      "summary": "분량 기준 초과로 절 본문을 주제 페이지 2026-09-26-area04-s10 으로 옮기고 요약 한 문장과 링크만 남긴다(내용 변경 없음).",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 1300,
+      "summary": "A3 FAQ 설명에 따르면 ISO/TS 15066:2016 의 협동 적용 요구사항 대부분이 ISO 10218-2:2025 에 통합되었고, ISO 3691-4·ISO 12100 은 차기판이 개발 중이나 대체 판 발행은 확인되지 않았다(확인일 2026-09-26). [사실][^ref-471][^ref-560]",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "월간 재검증: 7절 끝에 ISO 22400-2 판 상태(개정 1:2017, ISO/DIS 22400-2 FDIS 등록 승인, 새 판 미발행) 덧붙임, 분량 기준 초과로 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김",
+      "patches": [
+        {
+          "section": "7. 관련 표준·프레임워크·오픈소스",
+          "action": "append",
+          "content": "\n### 재검증(2026-09-26, 실행 2026-09-26-02)\n\nISO 22400-2:2014 는 현행판이며 에너지 관리 KPI 를 더한 개정 1(ISO 22400-2:2014/Amd 1:2017, 2017-04)이 있고, 개정판 ISO/DIS 22400-2 가 2024-09-17 FDIS 등록 승인 단계로 표시돼 있으나 새 판 발행은 확인되지 않았다(확인일 2026-09-26). [사실][^ref-812][^ref-811][^ref-139]\n"
+        },
+        {
+          "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+          "action": "replace",
+          "content": "\n이 영역은 다른 영역이 만든 기록과 모델을 성과 판단에 쓰므로 데이터 원천과 실험 도구 양쪽에 연결된다.\n\n자세한 내용은 주제 페이지 [4. 성과·경제성·프로세스 개선 — 다른 연구영역과의 연결](../../topics/2026/2026-09-26-area04-s10.md)에 있다.\n"
+        }
+      ]
+    },
+    {
+      "path": "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "월간 재검증: 7절 끝에 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태 덧붙임",
+      "patches": [
+        {
+          "section": "7. 관련 표준·프레임워크·오픈소스",
+          "action": "append",
+          "content": "\n### 재검증(2026-09-26, 실행 2026-09-26-02)\n\n- A3(미국 로봇 안전 표준 개발 단체) FAQ 설명에 따르면 ISO/TS 15066:2016 의 [협동 적용(Collaborative Application)](../../glossary/collaborative-application.md) 요구사항 대부분은 협동이 로봇 단독이 아닌 적용의 문제라는 이유로 ISO 10218-2:2025 에 통합되었다. [사실][^ref-471][^ref-560]\n- ISO 목록에서 ISO/TS 15066:2016 은 폐지되지 않고 2022 년 확인된 판으로 남아 있으며, 이를 대체할 ISO/AWI 15066-1(Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data)이 개발 초기 단계에 있다(기준일 2026-09-26). [사실][^ref-814][^ref-813]\n- 국가표준 목록에서 KS B ISO 10218-2 는 '2017 확인', KS B ISO/TS 15066 은 '2022 확인' 판으로 검색되고 ISO 10218-2:2025 를 부합화한 KS 는 확인되지 않아 국내 KS 는 아직 구판(ISO 10218-2:2011·ISO/TS 15066:2016) 기준일 가능성이 있으나, 이는 검색 범위 내 미발견이며 부재 확인이 아니다(확인일 2026-09-26). [추정][^ref-825][^ref-568][^ref-211]\n- ISO 3691-4 는 2023 판이 현행이며, 확인일 2026-09-26 ISO 프로젝트 페이지(ISO/CD 3691-4) 표기 기준으로 차기판(제2판 초안)이 위원회 검토 단계에 있다. [사실][^ref-819][^ref-470]\n- ISO 12100:2010 은 개정이 진행 중이며, 독일 DIN 이 ISO/DIS 12100:2024 기반 개정 초안(DIN EN ISO 12100, 2025-01)을 게시했다. [사실][^ref-820][^ref-566]\n- 시험인증기관 Intertek 블로그(2025-12-11)의 전망에 따르면 ISO 12100 개정판은 2026 년 FDIS 단계 도달이 예상되며, 2027-01-20 부터 적용되는 EU 기계 규정 2023/1230 에 맞춰 EN ISO 문안을 정렬하는 것으로 보인다. [추정][^ref-821][^ref-555]\n\n국내 KS 의 새 판 부합 여부는 [열린 질문](../../open-questions.md)에 올렸다.\n"
+        }
+      ]
+    },
+    {
+      "path": "docs/topics/2026/2026-09-26-area04-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "분리: 4. 성과·경제성·프로세스 개선 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-26-area25-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 25. 안전·위험 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,130자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-26 | 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리) | ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 | run 2026-09-26-02",
+  "index_updates": {
+    "home_recent": "2026-09-26 — 월간 재검증: 4. 성과·경제성·프로세스 개선의 ISO 22400-2, 25. 안전·위험 관리의 ISO/TS 15066·ISO 10218-2:2025·ISO 3691-4·ISO 12100 판 상태를 확인일 기준으로 덧붙임",
+    "category_recent": "2026-09-26 — 4. 성과·경제성·프로세스 개선(A. 업무·공급망 설계), 25. 안전·위험 관리(G. 안전·보안·지능·거버넌스): 인용 표준의 판 상태 재검증 결과를 7절에 덧붙임",
+    "area_recent": "2026-09-26 — 월간 재검증: 7. 관련 표준·프레임워크·오픈소스 절에 인용 표준의 판 상태(개정·차기판 진행, 대체 판 미발행)를 덧붙임"
+  },
+  "glossary_updates": [],
+  "reference_updates": [
+    {
+      "id": "ref-139",
+      "org": "ISO",
+      "title": "ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+      "published": "2014",
+      "url": "https://www.iso.org/standard/54497.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. 재검증 대상: 제조 운영 관리 KPI 정의 표준 2014 판. 개정 1:2017 있음, 개정판 ISO/DIS 22400-2 진행 중(확인일 2026-09-26).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md"
+      ]
+    },
+    {
+      "id": "ref-811",
+      "org": "ISO",
+      "title": "ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+      "published": null,
+      "url": "https://www.iso.org/standard/87563.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 22400-2 개정판 프로젝트 페이지. 검색 요약상 2024-09-17 FDIS 등록 승인, 2014 판 대체 예정.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md"
+      ]
+    },
+    {
+      "id": "ref-812",
+      "org": "ISO",
+      "title": "ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management",
+      "published": "2017-04",
+      "url": "https://www.iso.org/standard/68295.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 22400-2:2014 의 에너지 관리 KPI 개정 1.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md"
+      ]
+    },
+    {
+      "id": "ref-471",
+      "org": "A3(Association for Advancing Automation)",
+      "title": "Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs)",
+      "published": null,
+      "url": "https://www.automate.org/robotics/blogs/updated-iso-10218-faq",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 10218:2025 개정 FAQ, ISO/TS 15066 요구사항의 10218-2 통합 설명.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-560",
+      "org": "ISO",
+      "title": "ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells",
+      "published": "2025-02",
+      "url": "https://www.iso.org/standard/73934.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. 산업용 로봇 적용·셀 안전 요구 2025 판.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-813",
+      "org": "ISO",
+      "title": "ISO/AWI 15066-1 - Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data",
+      "published": null,
+      "url": "https://www.iso.org/standard/91522.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO/TS 15066:2016 을 대체할 협동 안전 표준의 예비 작업 항목(AWI).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-814",
+      "org": "ISO",
+      "title": "ISO/TS 15066:2016 - Robots and robotic devices — Collaborative robots",
+      "published": "2016",
+      "url": "https://www.iso.org/standard/62996.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. 협동로봇 기술 사양. 검색 요약상 2022 확인, 폐지되지 않음.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-825",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "title": "KS B ISO 10218-2(2017 확인) 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
+      "published": null,
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010116494",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. KS B ISO 10218-2 의 2017 확인 판 상세 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-568",
+      "org": "한국표준정보망(KSSN, 국가기술표준원)",
+      "title": "KS B ISO/TS 15066 로봇 및 로봇 장치 - 협동로봇 (2022-10-12 확인판 있음)",
+      "published": "2017-02-28",
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010113282",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO/TS 15066 부합 KS.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-211",
+      "org": "국가표준인증통합정보시스템(KSSN)",
+      "title": "KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
+      "published": null,
+      "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010083660",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 10218-2 부합 KS.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-470",
+      "org": "ISO",
+      "title": "ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+      "published": "2023-06",
+      "url": "https://www.iso.org/standard/83545.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. 무인 산업용 트럭 안전 요구 2023 판.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-819",
+      "org": "ISO",
+      "title": "ISO/CD 3691-4 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+      "published": null,
+      "url": "https://www.iso.org/standard/88615.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 3691-4 차기판 위원회 초안 프로젝트 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-566",
+      "org": "CEN (iTeh Standards 카탈로그)",
+      "title": "EN ISO 12100:2010 - Safety of machinery - General principles for design - Risk assessment and risk reduction",
+      "published": "2010",
+      "url": "https://standards.iteh.ai/catalog/standards/cen/74a41162-9d84-4410-a8a3-606630770ab9/en-iso-12100-2010",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. 재검증 대상: 위험성평가 기본 표준 2010 판.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-820",
+      "org": "DIN Media",
+      "title": "DIN EN ISO 12100 - 2025-01 (Draft standard)",
+      "published": "2025-01",
+      "url": "https://www.dinmedia.de/en/draft-standard/din-en-iso-12100/386233502",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO/DIS 12100:2024 기반 EN ISO 12100 개정 초안의 독일 게시본.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-821",
+      "org": "Intertek",
+      "title": "Machines Got Smarter, Now ISO 12100 has to Catch Up",
+      "published": "2025-12-11",
+      "url": "https://www.intertek.com/blog/2025/12-11-machines-and-iso-12100/",
+      "type": "업계 보고서",
+      "reliability": "low",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. ISO 12100 개정 진행과 EU 기계 규정 정렬을 설명하는 시험인증기관 블로그.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    },
+    {
+      "id": "ref-555",
+      "org": "European Union (EUR-Lex)",
+      "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery",
+      "published": "2023-06",
+      "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-26",
+      "summary": "원문 미열람. EU 기계 규정.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "ISO 10218-2:2025 발행 뒤 국내 KS B ISO 10218-2 와 KS B ISO/TS 15066 은 새 판으로 부합 개정되었거나 개정 예고되었는가, 국내 협동로봇 설치 작업장 안전인증은 어느 판을 기준으로 하는가? (관련 기존 질문: oq-070, oq-092)",
+      "areas": [
+        25,
+        18
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "예산으로 미룸: 주제 페이지 docs/topics/2026/2026-09-25-area04-s4.md·2026-09-25-area04-s7.md 에 ISO 22400-2 판 상태(f2·f3) 반영 — 하루 갱신 상한 2건 초과",
+    "예산으로 미룸: 이번 갱신 대상 밖 페이지의 재검증 반영 — ref-022(VDA 5050 2.0.0, 9. 로봇·제조사 관제 연동 등), ref-345·ref-679(6. 지도·공간·위치 모델), ref-637(28. 표준·상호운용성·다사업자 거버넌스), ref-030(5. 로봇 능력·작업 온톨로지·트랙 비교표), ref-486(20. 예외 복구·재계획·업무 연속성, 4.1 요구사항·4.2 주석 구분 문구로), ref-509·ref-510(트랙 문서 유형 매트릭스)",
+    "25. 안전·위험 관리 7절: ISO 3691-4 차기판의 실제 단계(ISO OBP 에 ISO/DIS 3691-4 제2판 항목이 보임) 확인 필요 — 이번 문장은 ISO/CD 표기 기준으로 한정했음",
+    "ISO 20607 개정판이 ISO/FDIS 20607(iso.org/standard/90501) 단계인지, 발행되었는지 확인 필요(브리프에 없는 출처라 본문 미반영)",
+    "ISO 12100 개정판의 FDIS·발행 시점을 ISO 공식 페이지로 확인 필요(현재는 업계 블로그 전망뿐)",
+    "산업 디지털 전환 및 인공지능 활용 촉진법의 시행일과 데이터 공동 생성 조문 번호·내용을 법령정보센터 원문으로 확인 필요(oq-122)",
+    "pipeline 담당 요청: 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크를 새 위치(docs/topics/YYYY/) 기준으로 다시 쓰지 않아 깨진 링크가 생겼다 — 이번에는 스토리텔러가 분리를 직접 수행해 우회함"
+  ],
+  "fixes_applied": [
+    "갱신 범위 — 4. 성과·경제성·프로세스 개선과 25. 안전·위험 관리 두 페이지만 patches 로 보냈고, 주제 페이지 2026-09-25-area04-s4·s7 과 표준 목록은 건드리지 않았으며 주제 페이지 반영은 changelog_entry 의 다음 실행 후보에 적었다.",
+    "append 로 보내기 — 두 페이지 모두 7. 관련 표준·프레임워크·오픈소스 절에 action append 로 '재검증(2026-09-26, 실행 2026-09-26-02)' 소제목과 판 상태만 덧붙였고 기존 문장은 지우지 않았다(10절 replace 는 분량 분리로 기존 문장을 주제 페이지로 옮긴 것이며 삭제가 아니다).",
+    "needs_update·deprecated 지시 없음 — 두 페이지 status 를 draft 로 두고 patches 에 frontmatter 상태 변경을 넣지 않았다.",
+    "f2·f3 — 4. 성과·경제성·프로세스 개선 7절 재검증 소제목 아래에 지시된 문장을 [사실][^ref-812][^ref-811][^ref-139]로 썼다.",
+    "f4 — 25. 안전·위험 관리 7절에서 'A3(미국 로봇 안전 표준 개발 단체) FAQ 설명에 따르면'으로 주체를 밝히고 용어집 '협동 적용(Collaborative Application)'을 링크해 [사실][^ref-471][^ref-560]로 썼다.",
+    "f5 — ISO/AWI 15066-1 제목을 'Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data'로 적고, ISO/TS 15066:2016 이 폐지되지 않은 2022 확인판이라는 점과 기준일 2026-09-26 을 함께 남겼다.",
+    "f6 — KS 구판 기준 가능성을 [추정]으로 두고 같은 문장에 '검색 범위 내 미발견이며 부재 확인이 아니다'를 밝혔다.",
+    "f7 — ISO 3691-4 차기판 단계를 '확인일 2026-09-26 ISO 프로젝트 페이지(ISO/CD 3691-4) 표기 기준'으로 한정해 썼다.",
+    "f8·f9 — f8 은 기준일 2025-01(DIN 초안 게시)로 [사실][^ref-820][^ref-566], f9 는 '시험인증기관 Intertek 블로그(2025-12-11)의 전망'으로 주체를 밝혀 [추정][^ref-821][^ref-555]로 썼다.",
+    "f10 — 갱신 대상 페이지가 아니므로 본문에 넣지 않고 changelog_entry 다음 실행 후보에 4.1 요구사항·4.2 주석을 구분한 정정 문구로 남겼다.",
+    "갱신 대상 밖 재검증 결과 — f1·f14·f16·f17·f19·f20 등은 본문에 넣지 않고 changelog_entry 에 출처 id 와 처분만 적었다.",
+    "f17 — 페이지 본문에는 인용하지 않았고, changelog_entry 에서 '2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음'으로 부재를 한정했다.",
+    "oq-122 — open_question_updates 에 해결 갱신을 넣지 않아 열림으로 유지했다.",
+    "새 열린 질문 — 질문 끝에 '(관련 기존 질문: oq-070, oq-092)'를 덧붙이고 areas 를 [25, 18]로 등록했다.",
+    "각주·참고문헌 — 이번 실행 인용 출처는 모두 원문 미열람이므로 reference_updates 각 항목에 source_unopened: true 를 넣었고, 신규 출처는 페이지에 실제 인용한 ref-811·ref-812·ref-813·ref-814·ref-819·ref-820·ref-821·ref-825 만 등록했다.",
+    "형식 수정 — 자동 분리된 docs/topics/2026/2026-09-26-area04-s10.md 의 깨진 링크 7개(세부영역 페이지 상대 경로)를 ../../categories/<대분류 slug>/<파일>.md 로 고쳐 이 페이지를 content 로 직접 보내고, 4. 성과·경제성·프로세스 개선 10절은 같은 요약 문장과 주제 페이지 링크로 replace 해 코드가 다시 분리하지 않게 했다. 주장·태그·각주는 바꾸지 않았다.",
+    "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md: 각주 정의 2개를 참고문헌에서 만들어 붙임: ref-811, ref-812",
+    "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md: 각주 정의 10개를 참고문헌에서 만들어 붙임: ref-211, ref-471, ref-555, ref-568, ref-813, ref-814, ref-819, ref-820, ref-821, ref-825",
+    "분량 초과 자동 분리: 25. 안전·위험 관리 본문 4,734자 > 기준 4,000자 → 1개 절을 주제 페이지로 옮김, 남은 본문 3,740자",
+    "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md: 참조가 없는 각주 정의를 뺐다"
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "duration_api_ms": 134179,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.4184004,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 249826,
+    "cache_read_input_tokens": 63022,
+    "output_tokens": 20359,
+    "output_tokens_details": {
+      "thinking_tokens": 633
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 249826,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 20359,
+        "cache_read_input_tokens": 63022,
+        "cache_creation_input_tokens": 249826,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 249826
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 20359,
+      "cacheReadInputTokens": 63022,
+      "cacheCreationInputTokens": 249826,
+      "webSearchRequests": 0,
+      "costUSD": 2.4184004,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 633,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-26-01\",\"outline\":[{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"1. 이번 주 다룬 영역\",\"budget_chars\":4500,\"summary\":\"이번 주 실행 90회를 유형별로 정리한다(영역 심화 30, 트랙 49, 대분류 연결 8, 주제 조사 1, 갱신 1, 주간 정리 1). 보류 4회, 퍼블리셔 중단 4회는 id 로 적는다.\",\"planned_findings\":[]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"2. 새로 확인된 사실\",\"budget_chars\":1500,\"summary\":\"이번 주 [사실]로 게시된 주장이 실린 페이지를 안내하고, 교차 확인이 적다는 공통 한계를 적는다.\",\"planned_findings\":[]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"3. 강등·폐기된 주장\",\"budget_chars\":3500,\"summary\":\"게시된 실행의 검증 노트에 기록된 강등·삭제를 실행 id 와 finding id 로 모으고, ref-709 deprecated(대체 ref-315)를 적는다.\",\"planned_findings\":[\"f5\"]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"4. 열린 질문 변동\",\"budget_chars\":900,\"summary\":\"oq-001~oq-121 이 새로 열렸고 해결·보류는 없다. 산업 디지털 전환 촉진법 제명 변경 질문을 새로 올린다.\",\"planned_findings\":[\"f4\"]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"5. 다음 주 후보\",\"budget_chars\":1200,\"summary\":\"참고문헌 정리 후보(ref-584·ref-707·ref-767, ref-172 미러 등록)와 보류 실행 재처리, 운영 메모를 적는다.\",\"planned_findings\":[\"f1\",\"f6\"]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"6. 링크·출처 유효성 점검\",\"budget_chars\":1800,\"summary\":\"url_check 건수와 오류 3건의 점검 결과, link_check 통과를 적는다.\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\"]},{\"path\":\"docs/logs/weekly/2026-W39.md\",\"section\":\"7. 용어집 정리\",\"budget_chars\":500,\"summary\":\"용어 205개 가운데 draft 10개를 적고 이번 주 용어 추가 제안은 없다.\",\"planned_findings\":[]}],\"pages\":[{\"path\":\"docs/logs/weekly/2026-W39.md\",\"action\":\"create\",\"status\":\"draft\",\"diff_summary\":\"2026-W39 주간 정리 신규 작성(실행 90회 정리, 링크·출처 점검 3건, 참고문헌 중복 2묶음)\",\"content\":\"---\\ntitle: \\\"2026-W39 주간 정리\\\"\\ntype: log\\nstatus: draft\\ncreated: 2026-09-26\\nupdated: 2026-09-26\\nversion: 1\\ntags: [weekly_review]\\nsources: [ref-172, ref-412, ref-637, ref-315, ref-709, ref-584, ref-707, ref-767]\\n---\\n\\n[홈](../../index.md) › [로그](../index.md) › 2026-W39 주간 정리\\n\\n# 2026-W39 주간 정리\\n\\n이 페이지는 2026-W39(2026-09-21 ~ 2026-09-27)에 돈 실행 90회의 산출물(runs/)과 실행 2026-09-26-01 의 점검 결과를 정리한다. 새 조사는 하지 않았다. 참고문헌 상태를 점검한 결과만 태그와 각주를 붙여 적는다.\\n\\n## 1. 이번 주 다룬 영역\\n\\n실행 90회의 유형별 건수다. 영역 심화 30회, 트랙 49회, 대분류 연결 8회, 주제 조사 1회, 갱신 1회, 주간 정리 1회다. 82회가 게시됐고, 4회는 보류(runs/parked/), 4회는 퍼블리셔 단계에서 중단됐다.\\n\\n**영역 심화(area_deep_dive)** — 28개 세부영역 모두 이번 주에 게시된 심화 실행이 하나 이상 있다.\\n\\n| 실행 id | 대상 | 판정(1차 / 2차) | 신뢰도 | 결과 |\\n|---|---|---|---|---|\\n| 2026-09-25-01 | [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-08 | 1. 주문·업무 시스템 연계 | 조건부 승인 / 통과 | medium | 중단(사이트 빌드 실패). 2026-09-25-13 에서 게시 |\\n| 2026-09-25-09 | [2. 공정·워크플로 모델링](../../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-10 | [3. 처리능력·거점·설비 계획](../../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-13 | [1. 주문·업무 시스템 연계](../../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-14 | [4. 성과·경제성·프로세스 개선](../../categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-15 | [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-17 | [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-18 | 8. 실시간 세계 상태·데이터 일관성 | 조건부 승인 / 통과 | low | 중단(내부 링크·각주 검사 실패). 2026-09-25-24 에서 게시 |\\n| 2026-09-25-20 | [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-24 | [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 조건부 승인 / 통과 | low | 게시 |\\n| 2026-09-25-25 | [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-27 | [11. 분산 시스템·통신·컴퓨팅 구조](../../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 조건부 승인 / 통과 | low | 게시 |\\n| 2026-09-25-31 | [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-33 | [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-34 | [14. 작업 순서·스케줄링](../../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-39 | [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-40 | [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-42 | [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-46 | [18. 사람–로봇 협업·운영 인터페이스](../../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-48 | [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 조건부 승인 / 통과 | low | 게시 |\\n| 2026-09-25-50 | [20. 예외 복구·재계획·업무 연속성](../../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-52 | [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-56 | [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-59 | [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-61 | [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-63 | [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-64 | [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-68 | [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 조건부 승인 / 통과 | medium | 게시 |\\n| 2026-09-25-69 | [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 조건부 승인 / 통과 | medium | 게시 |\\n\\n**주제 조사·갱신** — 2026-09-25-03(주제 조사, 7. 화물·재고·자산 식별과 추적, [EPCIS 이벤트 설계 주제 페이지](../../topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md))과 2026-09-25-07(갱신, 7. 화물·재고·자산 식별과 추적)이 모두 조건부 승인 / 통과, 신뢰도 medium 으로 게시됐다.\\n\\n**대분류 연결(category_link)** — 일곱 대분류의 \\\"다른 대분류와의 연결\\\" 절이 모두 채워졌다. 판정은 모두 조건부 승인 / 통과, 신뢰도 medium 이다.\\n\\n| 실행 id | 대상 | 결과 |\\n|---|---|---|\\n| 2026-09-25-29 | [A. 업무·공급망 설계](../../categories/a-business-supply-chain-design/index.md) | 게시 |\\n| 2026-09-25-32 | [B. 공통 정보·환경 모델](../../categories/b-common-information-and-environment-model/index.md) | 게시 |\\n| 2026-09-25-38 | [C. 연결·실행 기반](../../categories/c-connectivity-and-execution-foundation/index.md) | 게시 |\\n| 2026-09-25-49 | D. 계획·최적화 | 중단(내부 링크·각주 검사 실패). 2026-09-25-55 에서 게시 |\\n| 2026-09-25-55 | [D. 계획·최적화](../../categories/d-planning-and-optimization/index.md) | 게시 |\\n| 2026-09-25-60 | [E. 협업·현장 운영](../../categories/e-collaboration-and-field-operations/index.md) | 게시 |\\n| 2026-09-25-67 | [F. 도입·검증·유지관리](../../categories/f-deployment-verification-and-maintenance/index.md) | 게시 |\\n| 2026-09-25-73 | [G. 안전·보안·지능·거버넌스](../../categories/g-safety-security-intelligence-and-governance/index.md) | 게시 |\\n\\n**트랙(track)** — 세 트랙에서 49회가 돌았다. 판정은 모두 1차 조건부 승인이다.\\n\\n| 트랙 | 실행 id(단계, 질문) | 결과 |\\n|---|---|---|\\n| [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) | 2026-09-25-02(단계 1, q1-01~q1-03), -06(단계 1, q1-03~q1-05), -16(단계 1, q1-03~q1-05), -23(단계 1, q1-03·q1-06·q1-07), -35(단계 1, q1-08·q1-09), -41·-45·-47·-53(단계 1, q1-09), -57(단계 2, q2-01~q2-03) | 10회 중 9회 게시, 2026-09-25-06 보류. 신뢰도는 -57 만 low, 나머지 medium |\\n| [자연어 업무 지시 챗봇](../../tracks/nl-task-chatbot/index.md) | 단계 1: -04(q1-01), -12·-21(q1-02), -26(q1-03), -30(q1-04) / 단계 2: -37(q2-01), -43·-51(q2-02), -62(q2-03) / 단계 3: -66(q3-01), -71(q3-02), -74(q3-03), -77(q3-04) / 단계 4: -79(q4-01), -81(q4-02), -83(q4-03), -85(q4-04) / 단계 5: -86(q5-03), -98(q5-01), -99(q5-02), -100(q5-03) | 21회 중 18회 게시, -12·-100 보류, -43 중단(-51 에서 게시). 신뢰도는 -04·-21 medium, 나머지 low |\\n| [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) | 단계 1: -05(q1-01), -11(q1-02), -19(q1-03), -22(q1-04) / 단계 2: -28(q2-01), -36(q2-02), -44(q2-03) / 단계 3: -54(q3-01), -58(q3-02), -65(q3-03), -70(q3-04) / 단계 4: -72(q4-01), -75(q4-02), -76(q4-03), -78(q4-04) / 단계 5: -80(q5-01), -82(q5-02), -84(q5-03) | 18회 모두 게시. 신뢰도는 단계 1·2 medium, 단계 3 이후 low |\\n\\n**주간 정리** — 2026-09-25-87(주간 정리, 대상 전체)은 판정 없이 보류됐다.\\n\\n**운영 기록(보류·중단 실행)**\\n\\n- 보류(runs/parked/): 2026-09-25-06, 2026-09-25-12(2차 수정 후 재검증, 재실행 상한 도달), 2026-09-25-87, 2026-09-25-100.\\n- 퍼블리셔 중단: 2026-09-25-08(사이트 빌드 실패), 2026-09-25-18, 2026-09-25-43, 2026-09-25-49(내부 링크·각주 검사 실패).\\n\\n## 2. 새로 확인된 사실\\n\\n이번 주 `[사실]` 로 게시된 주장은 1절 표에 링크한 세부영역 28개 페이지, 대분류 7개 페이지, 주제 페이지, 세 트랙의 단계 페이지에 있다. 주장별 확인·미확인 건수는 각 실행의 검증 노트에 있다.\\n\\n모든 실행이 일반 웹 원문을 열 수 없는 환경(fetch_mode mirror_only)에서 검증됐다. 원문은 GitHub 공식 저장소(raw.githubusercontent.com)와 입력으로 넣은 원문 텍스트만 열었다. 그래서 대부분의 `[사실]` 은 발행 주체 한 곳의 자료에 기대며 독립 출처로 교차 확인되지 않았다. 검증 노트에 교차 확인이 기록된 실행은 2026-09-25-09, -20, -26, -42, -56, -63, -64, -79, -80 뿐이다.\\n\\n이번 실행(2026-09-26-01)에서 새로 확인한 사실은 참고문헌 상태에 관한 것뿐이며 6절에 적는다.\\n\\n## 3. 강등·폐기된 주장\\n\\n게시된 실행의 검증 노트에 기록된 강등·삭제다. finding id 는 실행마다 f1 부터 다시 매기므로 실행 id 와 함께 읽는다. 보류·중단된 실행의 처분은 게시되지 않았으므로 넣지 않았다.\\n\\n| 실행 id | 변경 | 페이지 |\\n|---|---|---|\\n| 2026-09-25-01 | f6·f17 사실 → 추정, f18 삭제 | 7. 화물·재고·자산 식별과 추적 |\\n| 2026-09-25-02 | f10·f12·f17 사실 → 추정, f16 열린 질문 이동 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\\n| 2026-09-25-03 | f6·f12 사실 → 추정, f9 삭제 | EPCIS 이벤트 설계 주제 페이지 |\\n| 2026-09-25-05 | f6 사실 → 추정 | 건축 도면 자동 인식 단계 1 |\\n| 2026-09-25-09 | f15 확인 범위로 축소, f16 일부 삭제, f20 삭제 | 2. 공정·워크플로 모델링 |\\n| 2026-09-25-10 | f6·f11 사실 → 추정 | 3. 처리능력·거점·설비 계획 |\\n| 2026-09-25-11 | f16 일부 추정 | 건축 도면 자동 인식 단계 1 |\\n| 2026-09-25-14 | f6 사실 → 추정 | 4. 성과·경제성·프로세스 개선 |\\n| 2026-09-25-16 | f30 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\\n| 2026-09-25-20 | f4 연동 경로 열거 삭제 | 9. 로봇·제조사 관제 연동 |\\n| 2026-09-25-22 | f2 사실 → 추정, f4 비교 절 삭제, f12·f13 추론 절 추정 분리, f15 절 삭제, f10 삭제 | 건축 도면 자동 인식 단계 1 |\\n| 2026-09-25-25 | f14·f18·f22 사실 → 추정, f17 수치 삭제 | 10. 설비·건물 시스템 연동 |\\n| 2026-09-25-27 | f13·f14 사실 → 추정, f3 구절 삭제 | 11. 분산 시스템·통신·컴퓨팅 구조 |\\n| 2026-09-25-30 | f3 부분 강등 | 자연어 업무 지시 챗봇 단계 1 |\\n| 2026-09-25-31 | f21·f27 사실 → 추정 | 12. 명령·작업 실행의 신뢰성 |\\n| 2026-09-25-32 | f19 부분 수정, f22 사실 → 추정 | B. 공통 정보·환경 모델 |\\n| 2026-09-25-33 | f16 사실 → 추정 | 13. 작업 배정 — MRTA |\\n| 2026-09-25-36 | f22·f24 사실 → 추정 | 건축 도면 자동 인식 단계 2 |\\n| 2026-09-25-37 | f10 뒤 절 사실 → 추정 | 자연어 업무 지시 챗봇 단계 2 |\\n| 2026-09-25-38 | f31 사실 → 추정 | C. 연결·실행 기반 |\\n| 2026-09-25-39 | f24 삭제 | 15. 다중 로봇 경로·교통 관리 — MAPF |\\n| 2026-09-25-41 | f8 추정 → 의견 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\\n| 2026-09-25-42 | f23 사실 → 추정 | 17. 로봇 간 협업·물리적 인계 |\\n| 2026-09-25-45 | f1 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\\n| 2026-09-25-46 | f7·f15·f20 사실 → 추정 | 18. 사람–로봇 협업·운영 인터페이스 |\\n| 2026-09-25-47 | f2 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\\n| 2026-09-25-48 | f15·f17·f20 사실 → 추정 | 19. 모니터링·이상 탐지·원인 분석 |\\n| 2026-09-25-52 | f2 사실 → 추정 | 21. 온보딩·설정·현장 시운전 |\\n| 2026-09-25-55 | f21 일부 문구 삭제 | D. 계획·최적화 |\\n| 2026-09-25-56 | f21 추정 → 의견 | 22. 시뮬레이션·예측용 디지털 트윈 |\\n| 2026-09-25-57 | f7 축소, f8 해석 부분 추정 분리 | 매뉴얼 기반 로봇 기능 온톨로지 단계 2 |\\n| 2026-09-25-58 | f13 사실 → 추정 | 건축 도면 자동 인식 단계 3 |\\n| 2026-09-25-60 | f5·f16·f17·f20·f21·f29·f30 연결 해석 부분 추정 분리 | E. 협업·현장 운영 |\\n| 2026-09-25-61 | f13 일부 삭제, f17 적용 해석 추정 분리, f19 사실 → 추정 | 24. 자산·소프트웨어 수명주기 관리 |\\n| 2026-09-25-62 | f11 일부 사실 → 추정 | 자연어 업무 지시 챗봇 단계 2 |\\n| 2026-09-25-63 | f2·f12 사실 → 추정 | 25. 안전·위험 관리 |\\n| 2026-09-25-64 | f11·f20 사실 → 추정, f13 삭제 | 26. 사이버보안·접근권한·개인정보 |\\n| 2026-09-25-66 | f6·f9 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\\n| 2026-09-25-67 | f6·f18 사실 → 추정 | F. 도입·검증·유지관리 |\\n| 2026-09-25-69 | f12 사실 → 추정 | 28. 표준·상호운용성·다사업자 거버넌스 |\\n| 2026-09-25-70 | f12 사실 → 추정 | 건축 도면 자동 인식 단계 3 |\\n| 2026-09-25-71 | f8 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\\n| 2026-09-25-72 | f7·f10·f14 일부 추정 | 건축 도면 자동 인식 단계 4 |\\n| 2026-09-25-74 | f18 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\\n| 2026-09-25-76 | f11 일부 절 삭제 | 건축 도면 자동 인식 단계 4 |\\n| 2026-09-25-77 | f17 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\\n| 2026-09-25-78 | f7 사실 → 추정 | 건축 도면 자동 인식 단계 4 |\\n| 2026-09-25-79 | f13·f14 사실 → 추정 | 자연어 업무 지시 챗봇 단계 4 |\\n| 2026-09-25-81 | f15 사실 → 추정 | 자연어 업무 지시 챗봇 단계 4 |\\n| 2026-09-25-82 | f2·f7·f10 사실 → 추정 | 건축 도면 자동 인식 단계 5 |\\n| 2026-09-25-83 | f10·f12·f15·f17 사실 → 추정, f19 일부 추정 | 자연어 업무 지시 챗봇 단계 4 |\\n| 2026-09-25-84 | f2·f8·f11~f14·f18~f20 해석 부분 사실 → 추정 | 건축 도면 자동 인식 단계 5 |\\n| 2026-09-25-86 | f6 가운데 LTAA 부분 사실 → 추정 | 자연어 업무 지시 챗봇 단계 5 |\\n| 2026-09-25-98 | f11 정의 부분 추정 분리 | 자연어 업무 지시 챗봇 단계 5 |\\n| 2026-09-25-99 | f7 사실 → 추정 | 자연어 업무 지시 챗봇 단계 5 |\\n\\n**참고문헌 폐기** — [ref-709](../../references/ref-709.md)를 deprecated 로 바꾸고 대체 항목을 [ref-315](../../references/ref-315.md)로 지정했다. 두 항목은 호스트만 다르고(www.korea.kr/briefing 과 korea.kr/news) 같은 보도자료 id(newsId=156480155)와 같은 제목을 가리킨다. [사실][^ref-315][^ref-709] ref-709 를 인용한 기존 페이지의 각주는 이번 실행에서 고치지 않았다.\\n\\n## 4. 열린 질문 변동\\n\\n- 새로 열림: [열린 질문](../../open-questions.md)의 oq-001 ~ oq-121(121건). 이번 주 해결·보류로 바뀐 질문은 없다.\\n- 이번 실행에서 새로 올리는 질문(다음 순번 id, 관련 영역 28. 표준·상호운용성·다사업자 거버넌스): 산업 디지털 전환 촉진법의 제명이 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 바뀌어 시행되었는가, 바뀌었다면 데이터 공동 생성 규정의 조문 번호와 내용도 달라졌는가? (관련 기존 질문: oq-109) 근거는 6절의 ref-637 점검 결과다.[^ref-637]\\n- 트랙 백로그의 열린 질문은 매뉴얼 기반 로봇 기능 온톨로지 45건, 자연어 업무 지시 챗봇 48건, 건축 도면 자동 인식 35건이다(열린 질문 페이지 기준).\\n- 운영 메모: 보류·중단된 실행이 제안한 질문(2026-09-25-06 의 제조사별 동작 이름 공통 사전, 2026-09-25-49 의 VDA 5050 우선·벌점 구역 가중치와 배터리 건강 상태 필드)은 열린 질문 목록에 등록되지 않았다.\\n\\n## 5. 다음 주 후보\\n\\n- 참고문헌 정리: ref-584·ref-707·ref-767 은 모두 IEC 62443-3-3:2013 을 가리키므로 대표 출처 하나로 합칠 후보다. [사실][^ref-584][^ref-707][^ref-767] 다만 ref-584 는 IEC 원판이 아니라 CSA 채택판(CAN/CSA IEC 62443-3-3-2017) 판매 페이지이므로 합칠 때 채택판 구분을 남긴다.\\n- 미러 등록: ref-172 의 GitHub 위키 원문 경로(raw.githubusercontent.com/wiki/nasa-jpl/rosa/Custom-Agents.md)를 config/source_mirrors.yaml 에 등록할 후보다(6절).\\n- ref-709 를 인용한 페이지(28. 표준·상호운용성·다사업자 거버넌스 등)의 각주를 ref-315 로 바꾸는 갱신.\\n- ref-637 제명 변경 여부 확인(4절의 새 질문).\\n- 보류 실행 재처리: 2026-09-25-06, 2026-09-25-12, 2026-09-25-87, 2026-09-25-100.\\n- 신뢰도 low 로 게시된 세부영역(8. 실시간 세계 상태·데이터 일관성, 11. 분산 시스템·통신·컴퓨팅 구조, 19. 모니터링·이상 탐지·원인 분석)의 주제 조사 후보.\\n\\n운영 메모(파이프라인 담당 확인용):\\n\\n- 보류 실행 2026-09-25-100 은 run_id 가 스키마 패턴(끝 두 자리)에 맞지 않아 2026-09-25-00 으로 기록됐다.\\n- 그 브리프의 ref-748~ref-750 은 현재 참고문헌 목록의 같은 id(JSON Schema 계열)와 다른 문헌을 가리키므로, 재게시할 때 id 를 다시 부여해야 한다.\\n- 참고문헌 번호 ref-781~ref-791 이 비어 있다.\\n\\n## 6. 링크·출처 유효성 점검\\n\\n**url_check 결과**: 정책 차단 797건, 미러 열림 144건, 오류 2건, 미러 오류 1건이다. 정책 차단은 이 환경의 네트워크 정책 때문이며 링크 오류가 아니다. 오류·미러 오류 3건만 점검했다.\\n\\n| 출처 | url_check 결과 | 점검 결과 | 조치 |\\n|---|---|---|---|\\n| [ref-172](../../references/ref-172.md) | 오류(미러 없음) | 아래 1 | 다음 실행에서 미러 등록 |\\n| [ref-412](../../references/ref-412.md) | 미러 오류 | 아래 2 | 조치 없음 |\\n| [ref-637](../../references/ref-637.md) | 오류 | 아래 3 | URL 교정, needs_update |\\n\\n1. ref-172(ROSA 위키 Custom Agents)의 정규 URL 은 미러가 없어 오류로 기록됐다. GitHub 위키 원문 경로는 2026-09-26 기준 열리며, 내용이 ROSA 를 다른 로봇에 맞게 도구·프롬프트로 사용자 정의하는 안내로 등록 제목과 일치한다. [사실][^ref-172]\\n2. ref-412(Open-RMF rmf_ros2 place.json)는 2026-09-26 에 raw 경로가 열렸고 스키마 제목 'Place Description' 이 등록 제목과 일치한다. [사실][^ref-412] url_check 의 미러 오류는 일시적 실패로 보인다. [추정][^ref-412]\\n3. ref-637 의 등록 URL 은 한글 경로가 퍼센트 인코딩되지 않은 형태여서 점검 스크립트에서 오류가 났다. 같은 경로를 인코딩한 URL 이 검색 결과에 '산업디지털전환촉진법' 제목으로 나타나 문서 자체는 존재한다. [사실][^ref-637] 검색 결과에 제명 '산업 디지털 전환 및 인공지능 활용 촉진법' 이 나타나고 같은 제명 변경을 담은 개정안 발의 보도가 있어, 이 법률의 제명·현행 판이 바뀌었을 가능성이 있다. 시행 여부는 확인하지 못했다. [추정][^ref-637] 이번 실행에서는 URL 만 인코딩 형태로 바꾸고 제목·법률 번호·발행일은 유지했다. 현행 판 링크 병기와 제목 교체는 하지 않았다.\\n\\n**참고문헌 중복 의심**: ref-315·ref-709(3절에서 ref-709 deprecated 처리)와 ref-584·ref-707·ref-767(5절 후보)이다.\\n\\n**내부 링크·각주**: link_check 는 통과했다(파일 1240개, 경고 0건). 추가 조치는 없다.\\n\\n운영 메모: 표준 목록(docs/standards/index.md)에 같은 표준·오픈소스가 판 표기만 달리해 두 번 이상 실린 항목이 있다(IDTA 02020 Capability Description, IDTA 02047, KS B 7321-2, LIF, Open-RMF rmf_task, rmf_simulation 등). 다음 주간 정리에서 정리할 후보다.\\n\\n## 7. 용어집 정리\\n\\n용어집에는 205개 용어가 있다. 이번 주 브리프에서 새 용어 후보는 없었다. 용어 목록에서 뜻이 충돌하는 중복 용어는 찾지 못했다.\\n\\n상태가 draft 로 남은 용어는 10개다: ariac, digital-twin, epcis, fleet-adapter, lifelong-mapf, mapf, mrta, multi-agent-pickup-and-delivery, scor, wes-wcs-wms-mes-tms. 다음 해당 영역 실행에서 검증을 거쳐 게시할 후보다.\\n\\n[^ref-172]: NASA Jet Propulsion Laboratory (nasa-jpl), Custom Agents · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/Custom-Agents, 접근일 2026-09-26\\n[^ref-412]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/place.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/place.json, 접근일 2026-09-26\\n[^ref-637]: 국가법령정보센터(산업통상자원부), 산업 디지털 전환 촉진법 (법률 제18692호), 2022-01-04, https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104), 접근일 2026-09-26 (원문 미열람)\\n[^ref-315]: 산업통상자원부 국가기술표준원(대한민국 정책브리핑), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11, https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)\\n[^ref-709]: 대한민국 정책브리핑(산업통상자원부 국가기술표준원), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://korea.kr/news/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)\\n[^ref-584]: CSA / IEC (ANSI Webstore), CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08), 2013-08, https://webstore.ansi.org/standards/csa/csaiec624432017-2442576, 접근일 2026-09-26 (원문 미열람)\\n[^ref-707]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample), 2013-08, https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf, 접근일 2026-09-26 (원문 미열람)\\n[^ref-767]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-26 (원문 미열람)\\n\"},{\"path\":\"docs/references/ref-637.md\",\"action\":\"update\",\"status\":\"needs_update\",\"diff_summary\":\"URL 을 퍼센트 인코딩 형태로 교정, 제명 변경 가능성을 [추정]·원문 미열람으로 병기, needs_update\",\"patches\":[{\"section\":\"각주 형식\",\"action\":\"replace\",\"frontmatter\":{\"status\":\"needs_update\"},\"content\":\"`[^ref-637]: 국가법령정보센터(산업통상자원부), 산업 디지털 전환 촉진법 (법률 제18692호), 2022-01-04, https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104), 접근일 2026-09-26 (원문 미열람)`\\n\\n등록 URL 을 퍼센트 인코딩 형태로 바꿨다. 이전 URL 은 한글 경로가 인코딩되지 않아 점검 스크립트에서 오류가 났다. 인코딩한 URL 은 검색 결과에 '산업디지털전환촉진법' 제목으로 나타나 문서 자체는 존재한다. [사실][^ref-637]\\n\\n검색 결과에 제명 '산업 디지털 전환 및 인공지능 활용 촉진법' 의 국가법령정보센터 페이지와 제명 변경 개정안 보도가 나타나, 이 법률의 제명·현행 판이 바뀌었을 가능성이 있다. 다만 시행 여부와 조문은 원문으로 확인하지 못했다(2026-09-26 기준). [추정][^ref-637] 이 항목의 제목·법률 번호·발행일은 바꾸지 않았고, 확인되면 다시 갱신한다. 관련 질문은 [열린 질문](../open-questions.md)에 있다.\"}]},{\"path\":\"docs/references/ref-709.md\",\"action\":\"update\",\"status\":\"deprecated\",\"diff_summary\":\"ref-315 와 같은 보도자료를 가리키는 중복 항목으로 deprecated 처리, 대체 페이지 ref-315(프런트매터 replaced_by 추가)\",\"patches\":[{\"section\":\"각주 형식\",\"action\":\"replace\",\"frontmatter\":{\"status\":\"deprecated\",\"replaced_by\":\"ref-315.md\"},\"content\":\"> 대체 페이지: [ref-315](ref-315.md)\\n\\n`[^ref-709]: 대한민국 정책브리핑(산업통상자원부 국가기술표준원), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://korea.kr/news/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)`\\n\\n이 항목은 [ref-315](ref-315.md)와 호스트만 다르고(www.korea.kr/briefing 과 korea.kr/news) 같은 보도자료 id(newsId=156480155)와 같은 제목을 가리키는 중복 참고문헌이다. [사실][^ref-709] 새로 인용할 때는 ref-315 를 쓴다. 이 항목을 인용한 기존 페이지의 각주는 아직 바꾸지 않았다.\"}]}],\"changelog_entry\":\"2026-09-26 | 주간 정리 2026-W39 | 이번 주 실행 90회 정리, ref-637 URL 인코딩 교정·needs_update, ref-709 deprecated(대체 ref-315), 참고문헌 중복 후보 기록 | run 2026-09-26-01\",\"index_updates\":{\"home_recent\":\"2026-09-26 — 주간 정리 2026-W39: 실행 90회(게시 82, 보류 4, 중단 4) 정리, 세부영역 28개 심화와 대분류 연결 7개 완료, 참고문헌 점검 3건(ref-637 URL 교정, ref-709 중복 폐기)\",\"category_recent\":\"2026-09-26 — 주간 정리 2026-W39: 이번 주 세부영역 심화·대분류 연결 결과 정리, 28. 표준·상호운용성·다사업자 거버넌스가 인용하는 ref-637 은 재확인 대상(needs_update)\"},\"glossary_updates\":[],\"reference_updates\":[{\"id\":\"ref-172\",\"org\":\"NASA Jet Propulsion Laboratory (nasa-jpl)\",\"title\":\"Custom Agents · nasa-jpl/rosa Wiki\",\"published\":null,\"url\":\"https://github.com/nasa-jpl/rosa/wiki/Custom-Agents\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"ROSA 를 다른 로봇에 맞게 새 클래스·인스턴스를 만들고 도구·프롬프트로 사용자 정의하는 방법을 설명하는 공식 위키 문서. GitHub 위키 raw 경로로 원문을 열었다.\",\"source_unopened\":false,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]},{\"id\":\"ref-412\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_ros2 — rmf_fleet_adapter/schemas/place.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/place.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"로봇이 갈 수 있는 장소(경유점, 선택적 방향)를 기술하는 Open-RMF 작업 설명 JSON 스키마.\",\"source_unopened\":false,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]},{\"id\":\"ref-637\",\"org\":\"국가법령정보센터(산업통상자원부)\",\"title\":\"산업 디지털 전환 촉진법 (법률 제18692호)\",\"published\":\"2022-01-04\",\"url\":\"https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104)\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 2022-01-04 공포된 산업 디지털 전환 촉진법 제정 법률 본문(국가법령정보센터). URL 을 퍼센트 인코딩 형태로 교정했고, 제명 변경 여부는 미확인이다.\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\",\"docs/references/ref-637.md\"]},{\"id\":\"ref-315\",\"org\":\"산업통상자원부 국가기술표준원(대한민국 정책브리핑)\",\"title\":\"국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다\",\"published\":\"2021-11\",\"url\":\"https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. KS B 7317 제정을 알리는 국가기술표준원 보도자료. ref-709 의 대체 항목.\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]},{\"id\":\"ref-709\",\"org\":\"대한민국 정책브리핑(산업통상자원부 국가기술표준원)\",\"title\":\"국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다\",\"published\":\"2021-11-11\",\"url\":\"https://korea.kr/news/pressReleaseView.do?newsId=156480155\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ref-315 와 같은 보도자료 id 를 가리키는 다른 경로의 URL. 중복으로 deprecated, 대체 ref-315.\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\",\"docs/references/ref-709.md\"]},{\"id\":\"ref-584\",\"org\":\"CSA / IEC (ANSI Webstore)\",\"title\":\"CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)\",\"published\":\"2013-08\",\"url\":\"https://webstore.ansi.org/standards/csa/csaiec624432017-2442576\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. IEC 62443-3-3:2013 의 캐나다 채택판 판매 페이지(IEC 원판과 구분).\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]},{\"id\":\"ref-707\",\"org\":\"IEC\",\"title\":\"IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample)\",\"published\":\"2013-08\",\"url\":\"https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. IEC 62443-3-3:2013 의 iTeh 샘플 PDF.\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]},{\"id\":\"ref-767\",\"org\":\"IEC\",\"title\":\"IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels\",\"published\":\"2013-08\",\"url\":\"https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. IEC 62443-3-3:2013 의 iTeh 카탈로그 페이지.\",\"source_unopened\":true,\"cited_by\":[\"docs/logs/weekly/2026-W39.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"산업 디지털 전환 촉진법의 제명이 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 바뀌어 시행되었는가, 바뀌었다면 데이터 공동 생성 규정의 조문 번호와 내용도 달라졌는가? (관련 기존 질문: oq-109)\",\"areas\":[28],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[],\"additional_research_requests\":[\"ref-637: '산업 디지털 전환 및 인공지능 활용 촉진법' 으로의 제명 변경 여부와 시행일, 데이터 공동 생성 규정의 조문 변화를 국가법령정보센터 원문으로 확인해야 한다. 확인되면 ref-637 의 현행 판 링크 병기와 28. 표준·상호운용성·다사업자 거버넌스 페이지의 제명 표기를 재확인한다.\",\"ref-584·ref-707·ref-767 을 IEC 62443-3-3:2013 대표 출처 하나로 정리하는 갱신(ref-584 는 CSA 채택판이라 구분 유지). 이번 실행은 갱신 상한으로 미뤘다.\",\"ref-172 의 GitHub 위키 raw 경로(raw.githubusercontent.com/wiki/nasa-jpl/rosa/Custom-Agents.md)를 config/source_mirrors.yaml 에 등록하도록 pipeline 담당에게 요청한다.\",\"ref-709 를 인용한 페이지(28. 표준·상호운용성·다사업자 거버넌스 등)의 각주를 ref-315 로 바꾸는 갱신. 이번 실행은 갱신 상한으로 미뤘다.\",\"ref-709 프런트매터 replaced_by 값의 형식(페이지 기준 상대 경로 'ref-315.md' 로 넣었다)이 validate_run.py 가 기대하는 형식과 다르면 pipeline 담당이 형식을 알려 주어야 한다.\"],\"fixes_applied\":[\"docs/references/ref-637.md(f3·f4) — 각주 형식 절에서 URL 만 지시한 퍼센트 인코딩 형태로 바꿨다. 제목·법률 번호·발행일 2022-01-04 는 유지했고 status 는 needs_update 로 두었다. 제명 변경은 [추정]·원문 미열람으로만 적었고, 현행 판 링크 병기와 제목 교체는 하지 않았다. reference_updates 의 url 도 같은 값으로 냈다.\",\"docs/references/ref-709.md(f5) — status 를 deprecated 로 바꾸고 '> 대체 페이지: [ref-315](ref-315.md)' 줄을 두었으며, 형식 검증 요구에 따라 프런트매터 replaced_by 에 ref-315.md 를 넣었다. 페이지는 지우지 않았고 ref-709 를 인용한 다른 페이지의 각주는 고치지 않았다.\",\"f1·f6 — 주간 정리 5절에 다음 실행 후보로만 적었고, ref-584 는 CSA 채택판(CAN/CSA IEC 62443-3-3-2017)이라 IEC 원판과 구분해 정리해야 한다는 점을 함께 적었다. ref-584·ref-707·ref-767 참고문헌 페이지와 config/source_mirrors.yaml 은 고치지 않았다.\",\"f2 — 주간 정리 6절에서 '오늘 raw 경로가 열리고 제목이 일치한다'를 [사실], '미러 오류는 일시적 실패로 보인다'를 [추정]으로 나눠 썼다. ref-412 참고문헌 페이지는 고치지 않았다.\",\"각주·참고문헌 표시 — ref-637·ref-315·ref-709·ref-584·ref-707·ref-767 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙였다. reference_updates 의 ref-637·ref-709(및 나머지 미열람 네 건)에 source_unopened: true 를 넣었다. ref-172·ref-412 에는 이 표시를 붙이지 않았다.\",\"주간 정리 6절 — url_check 건수(정책 차단 797건은 네트워크 정책이며 링크 오류가 아님, 미러 열림 144건, 오류 2건, 미러 오류 1건), 세 건의 점검 결과, link_check 통과(파일 1240개, 경고 0건)를 적었다. 3절 끝에 ref-709 deprecated(대체 ref-315)를 적었다.\",\"주간 정리 4절 — 새 열린 질문(산업 디지털 전환 촉진법 제명 변경, 관련 영역 28. 표준·상호운용성·다사업자 거버넌스, 근거 f4, 종류 일반)을 다음 순번 id 로 등록하도록 적었다. 질문 끝에 '(관련 기존 질문: oq-109)'를 붙였고, open_question_updates 에 new 로 냈다.\",\"주간 정리 1·5절 — 1절 운영 기록에 보류 실행(2026-09-25-06, -12, -87, -100)과 퍼블리셔 중단 실행(2026-09-25-08, -18, -43, -49)을 id 로 적었다. 5절에는 2026-09-25-100 의 run_id 기록 문제, ref-748~ref-750 id 재부여 필요, ref-781~ref-791 공백을 사실 태그 없는 운영 메모로 적었다.\"]}",
+  "structured_output": {
+    "run_id": "2026-09-26-01",
+    "outline": [
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "1. 이번 주 다룬 영역",
+        "budget_chars": 4500,
+        "summary": "이번 주 실행 90회를 유형별로 정리한다(영역 심화 30, 트랙 49, 대분류 연결 8, 주제 조사 1, 갱신 1, 주간 정리 1). 보류 4회, 퍼블리셔 중단 4회는 id 로 적는다.",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "2. 새로 확인된 사실",
+        "budget_chars": 1500,
+        "summary": "이번 주 [사실]로 게시된 주장이 실린 페이지를 안내하고, 교차 확인이 적다는 공통 한계를 적는다.",
+        "planned_findings": []
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "3. 강등·폐기된 주장",
+        "budget_chars": 3500,
+        "summary": "게시된 실행의 검증 노트에 기록된 강등·삭제를 실행 id 와 finding id 로 모으고, ref-709 deprecated(대체 ref-315)를 적는다.",
+        "planned_findings": [
+          "f5"
+        ]
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "4. 열린 질문 변동",
+        "budget_chars": 900,
+        "summary": "oq-001~oq-121 이 새로 열렸고 해결·보류는 없다. 산업 디지털 전환 촉진법 제명 변경 질문을 새로 올린다.",
+        "planned_findings": [
+          "f4"
+        ]
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "5. 다음 주 후보",
+        "budget_chars": 1200,
+        "summary": "참고문헌 정리 후보(ref-584·ref-707·ref-767, ref-172 미러 등록)와 보류 실행 재처리, 운영 메모를 적는다.",
+        "planned_findings": [
+          "f1",
+          "f6"
+        ]
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "6. 링크·출처 유효성 점검",
+        "budget_chars": 1800,
+        "summary": "url_check 건수와 오류 3건의 점검 결과, link_check 통과를 적는다.",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6"
+        ]
+      },
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "section": "7. 용어집 정리",
+        "budget_chars": 500,
+        "summary": "용어 205개 가운데 draft 10개를 적고 이번 주 용어 추가 제안은 없다.",
+        "planned_findings": []
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/logs/weekly/2026-W39.md",
+        "action": "create",
+        "status": "draft",
+        "diff_summary": "2026-W39 주간 정리 신규 작성(실행 90회 정리, 링크·출처 점검 3건, 참고문헌 중복 2묶음)",
+        "content": "---\ntitle: \"2026-W39 주간 정리\"\ntype: log\nstatus: draft\ncreated: 2026-09-26\nupdated: 2026-09-26\nversion: 1\ntags: [weekly_review]\nsources: [ref-172, ref-412, ref-637, ref-315, ref-709, ref-584, ref-707, ref-767]\n---\n\n[홈](../../index.md) › [로그](../index.md) › 2026-W39 주간 정리\n\n# 2026-W39 주간 정리\n\n이 페이지는 2026-W39(2026-09-21 ~ 2026-09-27)에 돈 실행 90회의 산출물(runs/)과 실행 2026-09-26-01 의 점검 결과를 정리한다. 새 조사는 하지 않았다. 참고문헌 상태를 점검한 결과만 태그와 각주를 붙여 적는다.\n\n## 1. 이번 주 다룬 영역\n\n실행 90회의 유형별 건수다. 영역 심화 30회, 트랙 49회, 대분류 연결 8회, 주제 조사 1회, 갱신 1회, 주간 정리 1회다. 82회가 게시됐고, 4회는 보류(runs/parked/), 4회는 퍼블리셔 단계에서 중단됐다.\n\n**영역 심화(area_deep_dive)** — 28개 세부영역 모두 이번 주에 게시된 심화 실행이 하나 이상 있다.\n\n| 실행 id | 대상 | 판정(1차 / 2차) | 신뢰도 | 결과 |\n|---|---|---|---|---|\n| 2026-09-25-01 | [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-08 | 1. 주문·업무 시스템 연계 | 조건부 승인 / 통과 | medium | 중단(사이트 빌드 실패). 2026-09-25-13 에서 게시 |\n| 2026-09-25-09 | [2. 공정·워크플로 모델링](../../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-10 | [3. 처리능력·거점·설비 계획](../../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-13 | [1. 주문·업무 시스템 연계](../../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-14 | [4. 성과·경제성·프로세스 개선](../../categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-15 | [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-17 | [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-18 | 8. 실시간 세계 상태·데이터 일관성 | 조건부 승인 / 통과 | low | 중단(내부 링크·각주 검사 실패). 2026-09-25-24 에서 게시 |\n| 2026-09-25-20 | [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-24 | [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 조건부 승인 / 통과 | low | 게시 |\n| 2026-09-25-25 | [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-27 | [11. 분산 시스템·통신·컴퓨팅 구조](../../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 조건부 승인 / 통과 | low | 게시 |\n| 2026-09-25-31 | [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-33 | [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-34 | [14. 작업 순서·스케줄링](../../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-39 | [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-40 | [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-42 | [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-46 | [18. 사람–로봇 협업·운영 인터페이스](../../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-48 | [19. 모니터링·이상 탐지·원인 분석](../../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 조건부 승인 / 통과 | low | 게시 |\n| 2026-09-25-50 | [20. 예외 복구·재계획·업무 연속성](../../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-52 | [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-56 | [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-59 | [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-61 | [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-63 | [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-64 | [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-68 | [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 조건부 승인 / 통과 | medium | 게시 |\n| 2026-09-25-69 | [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 조건부 승인 / 통과 | medium | 게시 |\n\n**주제 조사·갱신** — 2026-09-25-03(주제 조사, 7. 화물·재고·자산 식별과 추적, [EPCIS 이벤트 설계 주제 페이지](../../topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md))과 2026-09-25-07(갱신, 7. 화물·재고·자산 식별과 추적)이 모두 조건부 승인 / 통과, 신뢰도 medium 으로 게시됐다.\n\n**대분류 연결(category_link)** — 일곱 대분류의 \"다른 대분류와의 연결\" 절이 모두 채워졌다. 판정은 모두 조건부 승인 / 통과, 신뢰도 medium 이다.\n\n| 실행 id | 대상 | 결과 |\n|---|---|---|\n| 2026-09-25-29 | [A. 업무·공급망 설계](../../categories/a-business-supply-chain-design/index.md) | 게시 |\n| 2026-09-25-32 | [B. 공통 정보·환경 모델](../../categories/b-common-information-and-environment-model/index.md) | 게시 |\n| 2026-09-25-38 | [C. 연결·실행 기반](../../categories/c-connectivity-and-execution-foundation/index.md) | 게시 |\n| 2026-09-25-49 | D. 계획·최적화 | 중단(내부 링크·각주 검사 실패). 2026-09-25-55 에서 게시 |\n| 2026-09-25-55 | [D. 계획·최적화](../../categories/d-planning-and-optimization/index.md) | 게시 |\n| 2026-09-25-60 | [E. 협업·현장 운영](../../categories/e-collaboration-and-field-operations/index.md) | 게시 |\n| 2026-09-25-67 | [F. 도입·검증·유지관리](../../categories/f-deployment-verification-and-maintenance/index.md) | 게시 |\n| 2026-09-25-73 | [G. 안전·보안·지능·거버넌스](../../categories/g-safety-security-intelligence-and-governance/index.md) | 게시 |\n\n**트랙(track)** — 세 트랙에서 49회가 돌았다. 판정은 모두 1차 조건부 승인이다.\n\n| 트랙 | 실행 id(단계, 질문) | 결과 |\n|---|---|---|\n| [매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) | 2026-09-25-02(단계 1, q1-01~q1-03), -06(단계 1, q1-03~q1-05), -16(단계 1, q1-03~q1-05), -23(단계 1, q1-03·q1-06·q1-07), -35(단계 1, q1-08·q1-09), -41·-45·-47·-53(단계 1, q1-09), -57(단계 2, q2-01~q2-03) | 10회 중 9회 게시, 2026-09-25-06 보류. 신뢰도는 -57 만 low, 나머지 medium |\n| [자연어 업무 지시 챗봇](../../tracks/nl-task-chatbot/index.md) | 단계 1: -04(q1-01), -12·-21(q1-02), -26(q1-03), -30(q1-04) / 단계 2: -37(q2-01), -43·-51(q2-02), -62(q2-03) / 단계 3: -66(q3-01), -71(q3-02), -74(q3-03), -77(q3-04) / 단계 4: -79(q4-01), -81(q4-02), -83(q4-03), -85(q4-04) / 단계 5: -86(q5-03), -98(q5-01), -99(q5-02), -100(q5-03) | 21회 중 18회 게시, -12·-100 보류, -43 중단(-51 에서 게시). 신뢰도는 -04·-21 medium, 나머지 low |\n| [건축 도면 자동 인식](../../tracks/floorplan-recognition/index.md) | 단계 1: -05(q1-01), -11(q1-02), -19(q1-03), -22(q1-04) / 단계 2: -28(q2-01), -36(q2-02), -44(q2-03) / 단계 3: -54(q3-01), -58(q3-02), -65(q3-03), -70(q3-04) / 단계 4: -72(q4-01), -75(q4-02), -76(q4-03), -78(q4-04) / 단계 5: -80(q5-01), -82(q5-02), -84(q5-03) | 18회 모두 게시. 신뢰도는 단계 1·2 medium, 단계 3 이후 low |\n\n**주간 정리** — 2026-09-25-87(주간 정리, 대상 전체)은 판정 없이 보류됐다.\n\n**운영 기록(보류·중단 실행)**\n\n- 보류(runs/parked/): 2026-09-25-06, 2026-09-25-12(2차 수정 후 재검증, 재실행 상한 도달), 2026-09-25-87, 2026-09-25-100.\n- 퍼블리셔 중단: 2026-09-25-08(사이트 빌드 실패), 2026-09-25-18, 2026-09-25-43, 2026-09-25-49(내부 링크·각주 검사 실패).\n\n## 2. 새로 확인된 사실\n\n이번 주 `[사실]` 로 게시된 주장은 1절 표에 링크한 세부영역 28개 페이지, 대분류 7개 페이지, 주제 페이지, 세 트랙의 단계 페이지에 있다. 주장별 확인·미확인 건수는 각 실행의 검증 노트에 있다.\n\n모든 실행이 일반 웹 원문을 열 수 없는 환경(fetch_mode mirror_only)에서 검증됐다. 원문은 GitHub 공식 저장소(raw.githubusercontent.com)와 입력으로 넣은 원문 텍스트만 열었다. 그래서 대부분의 `[사실]` 은 발행 주체 한 곳의 자료에 기대며 독립 출처로 교차 확인되지 않았다. 검증 노트에 교차 확인이 기록된 실행은 2026-09-25-09, -20, -26, -42, -56, -63, -64, -79, -80 뿐이다.\n\n이번 실행(2026-09-26-01)에서 새로 확인한 사실은 참고문헌 상태에 관한 것뿐이며 6절에 적는다.\n\n## 3. 강등·폐기된 주장\n\n게시된 실행의 검증 노트에 기록된 강등·삭제다. finding id 는 실행마다 f1 부터 다시 매기므로 실행 id 와 함께 읽는다. 보류·중단된 실행의 처분은 게시되지 않았으므로 넣지 않았다.\n\n| 실행 id | 변경 | 페이지 |\n|---|---|---|\n| 2026-09-25-01 | f6·f17 사실 → 추정, f18 삭제 | 7. 화물·재고·자산 식별과 추적 |\n| 2026-09-25-02 | f10·f12·f17 사실 → 추정, f16 열린 질문 이동 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\n| 2026-09-25-03 | f6·f12 사실 → 추정, f9 삭제 | EPCIS 이벤트 설계 주제 페이지 |\n| 2026-09-25-05 | f6 사실 → 추정 | 건축 도면 자동 인식 단계 1 |\n| 2026-09-25-09 | f15 확인 범위로 축소, f16 일부 삭제, f20 삭제 | 2. 공정·워크플로 모델링 |\n| 2026-09-25-10 | f6·f11 사실 → 추정 | 3. 처리능력·거점·설비 계획 |\n| 2026-09-25-11 | f16 일부 추정 | 건축 도면 자동 인식 단계 1 |\n| 2026-09-25-14 | f6 사실 → 추정 | 4. 성과·경제성·프로세스 개선 |\n| 2026-09-25-16 | f30 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\n| 2026-09-25-20 | f4 연동 경로 열거 삭제 | 9. 로봇·제조사 관제 연동 |\n| 2026-09-25-22 | f2 사실 → 추정, f4 비교 절 삭제, f12·f13 추론 절 추정 분리, f15 절 삭제, f10 삭제 | 건축 도면 자동 인식 단계 1 |\n| 2026-09-25-25 | f14·f18·f22 사실 → 추정, f17 수치 삭제 | 10. 설비·건물 시스템 연동 |\n| 2026-09-25-27 | f13·f14 사실 → 추정, f3 구절 삭제 | 11. 분산 시스템·통신·컴퓨팅 구조 |\n| 2026-09-25-30 | f3 부분 강등 | 자연어 업무 지시 챗봇 단계 1 |\n| 2026-09-25-31 | f21·f27 사실 → 추정 | 12. 명령·작업 실행의 신뢰성 |\n| 2026-09-25-32 | f19 부분 수정, f22 사실 → 추정 | B. 공통 정보·환경 모델 |\n| 2026-09-25-33 | f16 사실 → 추정 | 13. 작업 배정 — MRTA |\n| 2026-09-25-36 | f22·f24 사실 → 추정 | 건축 도면 자동 인식 단계 2 |\n| 2026-09-25-37 | f10 뒤 절 사실 → 추정 | 자연어 업무 지시 챗봇 단계 2 |\n| 2026-09-25-38 | f31 사실 → 추정 | C. 연결·실행 기반 |\n| 2026-09-25-39 | f24 삭제 | 15. 다중 로봇 경로·교통 관리 — MAPF |\n| 2026-09-25-41 | f8 추정 → 의견 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\n| 2026-09-25-42 | f23 사실 → 추정 | 17. 로봇 간 협업·물리적 인계 |\n| 2026-09-25-45 | f1 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\n| 2026-09-25-46 | f7·f15·f20 사실 → 추정 | 18. 사람–로봇 협업·운영 인터페이스 |\n| 2026-09-25-47 | f2 사실 → 추정 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 |\n| 2026-09-25-48 | f15·f17·f20 사실 → 추정 | 19. 모니터링·이상 탐지·원인 분석 |\n| 2026-09-25-52 | f2 사실 → 추정 | 21. 온보딩·설정·현장 시운전 |\n| 2026-09-25-55 | f21 일부 문구 삭제 | D. 계획·최적화 |\n| 2026-09-25-56 | f21 추정 → 의견 | 22. 시뮬레이션·예측용 디지털 트윈 |\n| 2026-09-25-57 | f7 축소, f8 해석 부분 추정 분리 | 매뉴얼 기반 로봇 기능 온톨로지 단계 2 |\n| 2026-09-25-58 | f13 사실 → 추정 | 건축 도면 자동 인식 단계 3 |\n| 2026-09-25-60 | f5·f16·f17·f20·f21·f29·f30 연결 해석 부분 추정 분리 | E. 협업·현장 운영 |\n| 2026-09-25-61 | f13 일부 삭제, f17 적용 해석 추정 분리, f19 사실 → 추정 | 24. 자산·소프트웨어 수명주기 관리 |\n| 2026-09-25-62 | f11 일부 사실 → 추정 | 자연어 업무 지시 챗봇 단계 2 |\n| 2026-09-25-63 | f2·f12 사실 → 추정 | 25. 안전·위험 관리 |\n| 2026-09-25-64 | f11·f20 사실 → 추정, f13 삭제 | 26. 사이버보안·접근권한·개인정보 |\n| 2026-09-25-66 | f6·f9 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\n| 2026-09-25-67 | f6·f18 사실 → 추정 | F. 도입·검증·유지관리 |\n| 2026-09-25-69 | f12 사실 → 추정 | 28. 표준·상호운용성·다사업자 거버넌스 |\n| 2026-09-25-70 | f12 사실 → 추정 | 건축 도면 자동 인식 단계 3 |\n| 2026-09-25-71 | f8 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\n| 2026-09-25-72 | f7·f10·f14 일부 추정 | 건축 도면 자동 인식 단계 4 |\n| 2026-09-25-74 | f18 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\n| 2026-09-25-76 | f11 일부 절 삭제 | 건축 도면 자동 인식 단계 4 |\n| 2026-09-25-77 | f17 사실 → 추정 | 자연어 업무 지시 챗봇 단계 3 |\n| 2026-09-25-78 | f7 사실 → 추정 | 건축 도면 자동 인식 단계 4 |\n| 2026-09-25-79 | f13·f14 사실 → 추정 | 자연어 업무 지시 챗봇 단계 4 |\n| 2026-09-25-81 | f15 사실 → 추정 | 자연어 업무 지시 챗봇 단계 4 |\n| 2026-09-25-82 | f2·f7·f10 사실 → 추정 | 건축 도면 자동 인식 단계 5 |\n| 2026-09-25-83 | f10·f12·f15·f17 사실 → 추정, f19 일부 추정 | 자연어 업무 지시 챗봇 단계 4 |\n| 2026-09-25-84 | f2·f8·f11~f14·f18~f20 해석 부분 사실 → 추정 | 건축 도면 자동 인식 단계 5 |\n| 2026-09-25-86 | f6 가운데 LTAA 부분 사실 → 추정 | 자연어 업무 지시 챗봇 단계 5 |\n| 2026-09-25-98 | f11 정의 부분 추정 분리 | 자연어 업무 지시 챗봇 단계 5 |\n| 2026-09-25-99 | f7 사실 → 추정 | 자연어 업무 지시 챗봇 단계 5 |\n\n**참고문헌 폐기** — [ref-709](../../references/ref-709.md)를 deprecated 로 바꾸고 대체 항목을 [ref-315](../../references/ref-315.md)로 지정했다. 두 항목은 호스트만 다르고(www.korea.kr/briefing 과 korea.kr/news) 같은 보도자료 id(newsId=156480155)와 같은 제목을 가리킨다. [사실][^ref-315][^ref-709] ref-709 를 인용한 기존 페이지의 각주는 이번 실행에서 고치지 않았다.\n\n## 4. 열린 질문 변동\n\n- 새로 열림: [열린 질문](../../open-questions.md)의 oq-001 ~ oq-121(121건). 이번 주 해결·보류로 바뀐 질문은 없다.\n- 이번 실행에서 새로 올리는 질문(다음 순번 id, 관련 영역 28. 표준·상호운용성·다사업자 거버넌스): 산업 디지털 전환 촉진법의 제명이 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 바뀌어 시행되었는가, 바뀌었다면 데이터 공동 생성 규정의 조문 번호와 내용도 달라졌는가? (관련 기존 질문: oq-109) 근거는 6절의 ref-637 점검 결과다.[^ref-637]\n- 트랙 백로그의 열린 질문은 매뉴얼 기반 로봇 기능 온톨로지 45건, 자연어 업무 지시 챗봇 48건, 건축 도면 자동 인식 35건이다(열린 질문 페이지 기준).\n- 운영 메모: 보류·중단된 실행이 제안한 질문(2026-09-25-06 의 제조사별 동작 이름 공통 사전, 2026-09-25-49 의 VDA 5050 우선·벌점 구역 가중치와 배터리 건강 상태 필드)은 열린 질문 목록에 등록되지 않았다.\n\n## 5. 다음 주 후보\n\n- 참고문헌 정리: ref-584·ref-707·ref-767 은 모두 IEC 62443-3-3:2013 을 가리키므로 대표 출처 하나로 합칠 후보다. [사실][^ref-584][^ref-707][^ref-767] 다만 ref-584 는 IEC 원판이 아니라 CSA 채택판(CAN/CSA IEC 62443-3-3-2017) 판매 페이지이므로 합칠 때 채택판 구분을 남긴다.\n- 미러 등록: ref-172 의 GitHub 위키 원문 경로(raw.githubusercontent.com/wiki/nasa-jpl/rosa/Custom-Agents.md)를 config/source_mirrors.yaml 에 등록할 후보다(6절).\n- ref-709 를 인용한 페이지(28. 표준·상호운용성·다사업자 거버넌스 등)의 각주를 ref-315 로 바꾸는 갱신.\n- ref-637 제명 변경 여부 확인(4절의 새 질문).\n- 보류 실행 재처리: 2026-09-25-06, 2026-09-25-12, 2026-09-25-87, 2026-09-25-100.\n- 신뢰도 low 로 게시된 세부영역(8. 실시간 세계 상태·데이터 일관성, 11. 분산 시스템·통신·컴퓨팅 구조, 19. 모니터링·이상 탐지·원인 분석)의 주제 조사 후보.\n\n운영 메모(파이프라인 담당 확인용):\n\n- 보류 실행 2026-09-25-100 은 run_id 가 스키마 패턴(끝 두 자리)에 맞지 않아 2026-09-25-00 으로 기록됐다.\n- 그 브리프의 ref-748~ref-750 은 현재 참고문헌 목록의 같은 id(JSON Schema 계열)와 다른 문헌을 가리키므로, 재게시할 때 id 를 다시 부여해야 한다.\n- 참고문헌 번호 ref-781~ref-791 이 비어 있다.\n\n## 6. 링크·출처 유효성 점검\n\n**url_check 결과**: 정책 차단 797건, 미러 열림 144건, 오류 2건, 미러 오류 1건이다. 정책 차단은 이 환경의 네트워크 정책 때문이며 링크 오류가 아니다. 오류·미러 오류 3건만 점검했다.\n\n| 출처 | url_check 결과 | 점검 결과 | 조치 |\n|---|---|---|---|\n| [ref-172](../../references/ref-172.md) | 오류(미러 없음) | 아래 1 | 다음 실행에서 미러 등록 |\n| [ref-412](../../references/ref-412.md) | 미러 오류 | 아래 2 | 조치 없음 |\n| [ref-637](../../references/ref-637.md) | 오류 | 아래 3 | URL 교정, needs_update |\n\n1. ref-172(ROSA 위키 Custom Agents)의 정규 URL 은 미러가 없어 오류로 기록됐다. GitHub 위키 원문 경로는 2026-09-26 기준 열리며, 내용이 ROSA 를 다른 로봇에 맞게 도구·프롬프트로 사용자 정의하는 안내로 등록 제목과 일치한다. [사실][^ref-172]\n2. ref-412(Open-RMF rmf_ros2 place.json)는 2026-09-26 에 raw 경로가 열렸고 스키마 제목 'Place Description' 이 등록 제목과 일치한다. [사실][^ref-412] url_check 의 미러 오류는 일시적 실패로 보인다. [추정][^ref-412]\n3. ref-637 의 등록 URL 은 한글 경로가 퍼센트 인코딩되지 않은 형태여서 점검 스크립트에서 오류가 났다. 같은 경로를 인코딩한 URL 이 검색 결과에 '산업디지털전환촉진법' 제목으로 나타나 문서 자체는 존재한다. [사실][^ref-637] 검색 결과에 제명 '산업 디지털 전환 및 인공지능 활용 촉진법' 이 나타나고 같은 제명 변경을 담은 개정안 발의 보도가 있어, 이 법률의 제명·현행 판이 바뀌었을 가능성이 있다. 시행 여부는 확인하지 못했다. [추정][^ref-637] 이번 실행에서는 URL 만 인코딩 형태로 바꾸고 제목·법률 번호·발행일은 유지했다. 현행 판 링크 병기와 제목 교체는 하지 않았다.\n\n**참고문헌 중복 의심**: ref-315·ref-709(3절에서 ref-709 deprecated 처리)와 ref-584·ref-707·ref-767(5절 후보)이다.\n\n**내부 링크·각주**: link_check 는 통과했다(파일 1240개, 경고 0건). 추가 조치는 없다.\n\n운영 메모: 표준 목록(docs/standards/index.md)에 같은 표준·오픈소스가 판 표기만 달리해 두 번 이상 실린 항목이 있다(IDTA 02020 Capability Description, IDTA 02047, KS B 7321-2, LIF, Open-RMF rmf_task, rmf_simulation 등). 다음 주간 정리에서 정리할 후보다.\n\n## 7. 용어집 정리\n\n용어집에는 205개 용어가 있다. 이번 주 브리프에서 새 용어 후보는 없었다. 용어 목록에서 뜻이 충돌하는 중복 용어는 찾지 못했다.\n\n상태가 draft 로 남은 용어는 10개다: ariac, digital-twin, epcis, fleet-adapter, lifelong-mapf, mapf, mrta, multi-agent-pickup-and-delivery, scor, wes-wcs-wms-mes-tms. 다음 해당 영역 실행에서 검증을 거쳐 게시할 후보다.\n\n[^ref-172]: NASA Jet Propulsion Laboratory (nasa-jpl), Custom Agents · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/Custom-Agents, 접근일 2026-09-26\n[^ref-412]: Open Robotics (open-rmf), rmf_ros2 — rmf_fleet_adapter/schemas/place.json, 미확인, https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/place.json, 접근일 2026-09-26\n[^ref-637]: 국가법령정보센터(산업통상자원부), 산업 디지털 전환 촉진법 (법률 제18692호), 2022-01-04, https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104), 접근일 2026-09-26 (원문 미열람)\n[^ref-315]: 산업통상자원부 국가기술표준원(대한민국 정책브리핑), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11, https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)\n[^ref-709]: 대한민국 정책브리핑(산업통상자원부 국가기술표준원), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://korea.kr/news/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)\n[^ref-584]: CSA / IEC (ANSI Webstore), CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08), 2013-08, https://webstore.ansi.org/standards/csa/csaiec624432017-2442576, 접근일 2026-09-26 (원문 미열람)\n[^ref-707]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample), 2013-08, https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf, 접근일 2026-09-26 (원문 미열람)\n[^ref-767]: IEC, IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels, 2013-08, https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013, 접근일 2026-09-26 (원문 미열람)\n"
+      },
+      {
+        "path": "docs/references/ref-637.md",
+        "action": "update",
+        "status": "needs_update",
+        "diff_summary": "URL 을 퍼센트 인코딩 형태로 교정, 제명 변경 가능성을 [추정]·원문 미열람으로 병기, needs_update",
+        "patches": [
+          {
+            "section": "각주 형식",
+            "action": "replace",
+            "frontmatter": {
+              "status": "needs_update"
+            },
+            "content": "`[^ref-637]: 국가법령정보센터(산업통상자원부), 산업 디지털 전환 촉진법 (법률 제18692호), 2022-01-04, https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104), 접근일 2026-09-26 (원문 미열람)`\n\n등록 URL 을 퍼센트 인코딩 형태로 바꿨다. 이전 URL 은 한글 경로가 인코딩되지 않아 점검 스크립트에서 오류가 났다. 인코딩한 URL 은 검색 결과에 '산업디지털전환촉진법' 제목으로 나타나 문서 자체는 존재한다. [사실][^ref-637]\n\n검색 결과에 제명 '산업 디지털 전환 및 인공지능 활용 촉진법' 의 국가법령정보센터 페이지와 제명 변경 개정안 보도가 나타나, 이 법률의 제명·현행 판이 바뀌었을 가능성이 있다. 다만 시행 여부와 조문은 원문으로 확인하지 못했다(2026-09-26 기준). [추정][^ref-637] 이 항목의 제목·법률 번호·발행일은 바꾸지 않았고, 확인되면 다시 갱신한다. 관련 질문은 [열린 질문](../open-questions.md)에 있다."
+          }
+        ]
+      },
+      {
+        "path": "docs/references/ref-709.md",
+        "action": "update",
+        "status": "deprecated",
+        "diff_summary": "ref-315 와 같은 보도자료를 가리키는 중복 항목으로 deprecated 처리, 대체 페이지 ref-315(프런트매터 replaced_by 추가)",
+        "patches": [
+          {
+            "section": "각주 형식",
+            "action": "replace",
+            "frontmatter": {
+              "status": "deprecated",
+              "replaced_by": "ref-315.md"
+            },
+            "content": "> 대체 페이지: [ref-315](ref-315.md)\n\n`[^ref-709]: 대한민국 정책브리핑(산업통상자원부 국가기술표준원), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://korea.kr/news/pressReleaseView.do?newsId=156480155, 접근일 2026-09-26 (원문 미열람)`\n\n이 항목은 [ref-315](ref-315.md)와 호스트만 다르고(www.korea.kr/briefing 과 korea.kr/news) 같은 보도자료 id(newsId=156480155)와 같은 제목을 가리키는 중복 참고문헌이다. [사실][^ref-709] 새로 인용할 때는 ref-315 를 쓴다. 이 항목을 인용한 기존 페이지의 각주는 아직 바꾸지 않았다."
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-09-26 | 주간 정리 2026-W39 | 이번 주 실행 90회 정리, ref-637 URL 인코딩 교정·needs_update, ref-709 deprecated(대체 ref-315), 참고문헌 중복 후보 기록 | run 2026-09-26-01",
+    "index_updates": {
+      "home_recent": "2026-09-26 — 주간 정리 2026-W39: 실행 90회(게시 82, 보류 4, 중단 4) 정리, 세부영역 28개 심화와 대분류 연결 7개 완료, 참고문헌 점검 3건(ref-637 URL 교정, ref-709 중복 폐기)",
+      "category_recent": "2026-09-26 — 주간 정리 2026-W39: 이번 주 세부영역 심화·대분류 연결 결과 정리, 28. 표준·상호운용성·다사업자 거버넌스가 인용하는 ref-637 은 재확인 대상(needs_update)"
+    },
+    "glossary_updates": [],
+    "reference_updates": [
+      {
+        "id": "ref-172",
+        "org": "NASA Jet Propulsion Laboratory (nasa-jpl)",
+        "title": "Custom Agents · nasa-jpl/rosa Wiki",
+        "published": null,
+        "url": "https://github.com/nasa-jpl/rosa/wiki/Custom-Agents",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "ROSA 를 다른 로봇에 맞게 새 클래스·인스턴스를 만들고 도구·프롬프트로 사용자 정의하는 방법을 설명하는 공식 위키 문서. GitHub 위키 raw 경로로 원문을 열었다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      },
+      {
+        "id": "ref-412",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_ros2 — rmf_fleet_adapter/schemas/place.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/schemas/place.json",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "로봇이 갈 수 있는 장소(경유점, 선택적 방향)를 기술하는 Open-RMF 작업 설명 JSON 스키마.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      },
+      {
+        "id": "ref-637",
+        "org": "국가법령정보센터(산업통상자원부)",
+        "title": "산업 디지털 전환 촉진법 (법률 제18692호)",
+        "published": "2022-01-04",
+        "url": "https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%82%B0%EC%97%85%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98%EC%B4%89%EC%A7%84%EB%B2%95/(18692,20220104)",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 2022-01-04 공포된 산업 디지털 전환 촉진법 제정 법률 본문(국가법령정보센터). URL 을 퍼센트 인코딩 형태로 교정했고, 제명 변경 여부는 미확인이다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md",
+          "docs/references/ref-637.md"
+        ]
+      },
+      {
+        "id": "ref-315",
+        "org": "산업통상자원부 국가기술표준원(대한민국 정책브리핑)",
+        "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
+        "published": "2021-11",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. KS B 7317 제정을 알리는 국가기술표준원 보도자료. ref-709 의 대체 항목.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      },
+      {
+        "id": "ref-709",
+        "org": "대한민국 정책브리핑(산업통상자원부 국가기술표준원)",
+        "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
+        "published": "2021-11-11",
+        "url": "https://korea.kr/news/pressReleaseView.do?newsId=156480155",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ref-315 와 같은 보도자료 id 를 가리키는 다른 경로의 URL. 중복으로 deprecated, 대체 ref-315.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md",
+          "docs/references/ref-709.md"
+        ]
+      },
+      {
+        "id": "ref-584",
+        "org": "CSA / IEC (ANSI Webstore)",
+        "title": "CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)",
+        "published": "2013-08",
+        "url": "https://webstore.ansi.org/standards/csa/csaiec624432017-2442576",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. IEC 62443-3-3:2013 의 캐나다 채택판 판매 페이지(IEC 원판과 구분).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      },
+      {
+        "id": "ref-707",
+        "org": "IEC",
+        "title": "IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels (sample)",
+        "published": "2013-08",
+        "url": "https://cdn.standards.iteh.ai/samples/19488/7c0b753be32e46fc986c23c32efbdbe8/IEC-62443-3-3-2013.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. IEC 62443-3-3:2013 의 iTeh 샘플 PDF.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      },
+      {
+        "id": "ref-767",
+        "org": "IEC",
+        "title": "IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels",
+        "published": "2013-08",
+        "url": "https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. IEC 62443-3-3:2013 의 iTeh 카탈로그 페이지.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/logs/weekly/2026-W39.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "산업 디지털 전환 촉진법의 제명이 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 바뀌어 시행되었는가, 바뀌었다면 데이터 공동 생성 규정의 조문 번호와 내용도 달라졌는가? (관련 기존 질문: oq-109)",
+        "areas": [
+          28
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [],
+    "additional_research_requests": [
+      "ref-637: '산업 디지털 전환 및 인공지능 활용 촉진법' 으로의 제명 변경 여부와 시행일, 데이터 공동 생성 규정의 조문 변화를 국가법령정보센터 원문으로 확인해야 한다. 확인되면 ref-637 의 현행 판 링크 병기와 28. 표준·상호운용성·다사업자 거버넌스 페이지의 제명 표기를 재확인한다.",
+      "ref-584·ref-707·ref-767 을 IEC 62443-3-3:2013 대표 출처 하나로 정리하는 갱신(ref-584 는 CSA 채택판이라 구분 유지). 이번 실행은 갱신 상한으로 미뤘다.",
+      "ref-172 의 GitHub 위키 raw 경로(raw.githubusercontent.com/wiki/nasa-jpl/rosa/Custom-Agents.md)를 config/source_mirrors.yaml 에 등록하도록 pipeline 담당에게 요청한다.",
+      "ref-709 를 인용한 페이지(28. 표준·상호운용성·다사업자 거버넌스 등)의 각주를 ref-315 로 바꾸는 갱신. 이번 실행은 갱신 상한으로 미뤘다.",
+      "ref-709 프런트매터 replaced_by 값의 형식(페이지 기준 상대 경로 'ref-315.md' 로 넣었다)이 validate_run.py 가 기대하는 형식과 다르면 pipeline 담당이 형식을 알려 주어야 한다."
+    ],
+    "fixes_applied": [
+      "docs/references/ref-637.md(f3·f4) — 각주 형식 절에서 URL 만 지시한 퍼센트 인코딩 형태로 바꿨다. 제목·법률 번호·발행일 2022-01-04 는 유지했고 status 는 needs_update 로 두었다. 제명 변경은 [추정]·원문 미열람으로만 적었고, 현행 판 링크 병기와 제목 교체는 하지 않았다. reference_updates 의 url 도 같은 값으로 냈다.",
+      "docs/references/ref-709.md(f5) — status 를 deprecated 로 바꾸고 '> 대체 페이지: [ref-315](ref-315.md)' 줄을 두었으며, 형식 검증 요구에 따라 프런트매터 replaced_by 에 ref-315.md 를 넣었다. 페이지는 지우지 않았고 ref-709 를 인용한 다른 페이지의 각주는 고치지 않았다.",
+      "f1·f6 — 주간 정리 5절에 다음 실행 후보로만 적었고, ref-584 는 CSA 채택판(CAN/CSA IEC 62443-3-3-2017)이라 IEC 원판과 구분해 정리해야 한다는 점을 함께 적었다. ref-584·ref-707·ref-767 참고문헌 페이지와 config/source_mirrors.yaml 은 고치지 않았다.",
+      "f2 — 주간 정리 6절에서 '오늘 raw 경로가 열리고 제목이 일치한다'를 [사실], '미러 오류는 일시적 실패로 보인다'를 [추정]으로 나눠 썼다. ref-412 참고문헌 페이지는 고치지 않았다.",
+      "각주·참고문헌 표시 — ref-637·ref-315·ref-709·ref-584·ref-707·ref-767 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙였다. reference_updates 의 ref-637·ref-709(및 나머지 미열람 네 건)에 source_unopened: true 를 넣었다. ref-172·ref-412 에는 이 표시를 붙이지 않았다.",
+      "주간 정리 6절 — url_check 건수(정책 차단 797건은 네트워크 정책이며 링크 오류가 아님, 미러 열림 144건, 오류 2건, 미러 오류 1건), 세 건의 점검 결과, link_check 통과(파일 1240개, 경고 0건)를 적었다. 3절 끝에 ref-709 deprecated(대체 ref-315)를 적었다.",
+      "주간 정리 4절 — 새 열린 질문(산업 디지털 전환 촉진법 제명 변경, 관련 영역 28. 표준·상호운용성·다사업자 거버넌스, 근거 f4, 종류 일반)을 다음 순번 id 로 등록하도록 적었다. 질문 끝에 '(관련 기존 질문: oq-109)'를 붙였고, open_question_updates 에 new 로 냈다.",
+      "주간 정리 1·5절 — 1절 운영 기록에 보류 실행(2026-09-25-06, -12, -87, -100)과 퍼블리셔 중단 실행(2026-09-25-08, -18, -43, -49)을 id 로 적었다. 5절에는 2026-09-25-100 의 run_id 기록 문제, ref-748~ref-750 id 재부여 필요, ref-781~ref-791 공백을 사실 태그 없는 운영 메모로 적었다."
+    ]
+  },
+  "ttft_ms": 7455,
+  "type": "result",
+  "duration_ms": 134351,
+  "uuid": "e5c77675-c764-45d2-b423-5b1c565cc851",
+  "ttft_stream_ms": 1012,
+  "time_to_request_ms": 82,
+  "first_content_frame_ms": 1013,
+  "time_to_request_from_spawn_ms": 7596713,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790349148426.5452,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 136.5
+}

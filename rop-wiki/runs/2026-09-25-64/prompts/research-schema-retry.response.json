@@ -1,0 +1,955 @@
+{
+  "duration_api_ms": 569602,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.8480802,
+  "usage": {
+    "input_tokens": 20,
+    "cache_creation_input_tokens": 122649,
+    "cache_read_input_tokens": 1206721,
+    "output_tokens": 52957,
+    "output_tokens_details": {
+      "thinking_tokens": 10933
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 122649,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 19873,
+        "cache_read_input_tokens": 143406,
+        "cache_creation_input_tokens": 53076,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 53076
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 322739,
+      "outputTokens": 12717,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.566324,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 20,
+      "outputTokens": 52957,
+      "cacheReadInputTokens": 1206721,
+      "cacheCreationInputTokens": 122649,
+      "webSearchRequests": 0,
+      "costUSD": 2.2817562000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 10933,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 30,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-64\",\"date\":\"2026-09-25\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":26,\"area_name\":\"26. 사이버보안·접근권한·개인정보\",\"category\":\"G. 안전·보안·지능·거버넌스\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음(인증·접근 제어·인클레이브·보안 구역과 도관·이동형 영상정보처리기기)\",\"섹션 5. 현장 시나리오 비어 있음(물류 흐름 단계 명시 필요)\",\"섹션 6. 대표 접근법과 기술 비어 있음(SROS 2 권한, MQTT 접근 제어, 대시보드 역할 인증, 인증서 교체)\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 비어 있음\",\"섹션 11. 열린 질문 비어 있음(대상 영역에 걸린 열린 질문 oq-043, oq-056, oq-082 반영 필요)\"],\"research_questions\":[\"외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가? [분류원문]\",\"ROS 2(SROS 2), Open-RMF, VDA 5050, MQTT 브로커는 장비 인증·통신 보호·명령 권한을 어떤 구조로 제공하거나 구현자에게 맡기는가? (섹션 4·6·7 겨냥)\",\"산업 보안 표준·규제(IEC 62443, NIST SP 800-82, ISO 10218-1:2025, EU 기계 규정, EU 사이버 복원력법)는 로봇·관제 시스템에 무엇을 요구하는가? (섹션 3·7 겨냥)\",\"물류 로봇·관제 소프트웨어에서 공개된 실제 취약점 사례는 무엇이며 어떤 영향을 보고했는가? (섹션 3·8 겨냥)\",\"로봇 카메라 영상과 작업자 데이터 보호에 적용되는 한국 법규·가이드(개인정보 보호법 이동형 영상정보처리기기, 근로자 감시 설비, KISA 로봇 보안 자료)는 무엇인가? (섹션 5·9 겨냥, 한국 자료 우선)\",\"대상 영역 열린 질문 oq-043(출입통제 연동 권한), oq-056(SROS 2 인클레이브 단위), oq-082(관제 보고값 위조 검증)에 답할 근거가 있는가? (섹션 10·11 겨냥)\",\"고객별 격리와 원격 접속 중개 가운데 ROP가 직접 맡을 부분과 제조사·IT 조직에 맡길 부분은 어떻게 나뉘는가? (섹션 9 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"ROS 2 보안은 DDS-Security 의 다섯 플러그인 가운데 인증·접근 제어·암호 세 가지만 쓰며, 참여자마다 도메인 보호 방식을 정한 서명된 거버넌스 파일과 참여자 권한을 담은 서명된 권한 파일을 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-009\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"인증 플러그인은 PKI 로 참여자 신원을 확인하고, 접근 제어 플러그인은 참여자의 DDS 기능 제한을 정의·집행한다. 권한 파일은 \\\"A signed XML document containing the permissions of the domain participant\\\". 로깅·데이터 태깅은 규격 준수에 필요하지 않아 쓰지 않는다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"SROS 2 접근 제어 정책은 XML 로 인클레이브·프로파일·권한 규칙을 계층적으로 적고, 토픽(발행·구독)·서비스(요청·응답)·액션(호출·실행)마다 허용·거부를 명시하며, 거부가 같은 대상의 허용보다 우선하고 XSLT 로 DDS 권한 파일로 변환된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-610\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"privileges must be explicitly qualified as allowed\\\"; 거부된 권한은 같은 범위의 허용 권한을 누른다. 변환 과정은 XInclude 확장 → 스키마 검증 → 프로파일별 가지치기 → XSLT 변환이며, 권한은 거부 우선으로 정렬된다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f3\",\"claim\":\"SROS 2 인클레이브는 인증서·키·거버넌스·권한 파일을 묶은 하나의 보안 신원이며, 한 컨텍스트를 공유하는 노드들은 한 인클레이브의 권한으로 합쳐지고, 인클레이브를 적용하는 범위는 운영체제 프로세스·사용자·장치·군집 단위로 고를 수 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-611\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"DDS Security 1.1 에서 참여자는 보안 신원 하나만 쓸 수 있어 같은 컨텍스트의 노드 권한이 한 인클레이브로 통합된다. 배포 시 인클레이브 적용 범위를 조절해 모델 충실도를 정한다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"Open-RMF 보안 구성은 ROS 2 부분을 SROS 2(키스토어·인클레이브·서명된 권한)로 보호하고, 웹 대시보드는 TLS 와 Keycloak 기반 OpenID Connect 사용자 인증으로 보호하며, API 서버가 역할마다 보안이 적용된 ROS 2 노드를 하나씩 두고 사용자의 ID 토큰에 따라 접근을 준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-612\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"The api server runs a secured ROS 2 node per each role and provides access to them based on the id token of each user.\\\" 키스토어의 private 디렉터리(CA 키)는 배포 전에 제거한다. generate_policy·generate_artifacts 도구로 정책과 산출물을 만든다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f5\",\"claim\":\"ROS 2 로봇 시스템 위협 모델(초안)은 보안이 꺼져 있으면 어떤 노드든 어떤 토픽에나 발행할 수 있어 구성요소 신원 위조·명령 가로채기가 가능하고, 기본 자격증명의 SSH 같은 원격 접속이 권한 상승 경로가 되며, 카메라 영상·로그가 보호해야 할 민감 자산이고 빌드 팜·서드파티 구성요소를 통한 공급망 위협이 있다고 정리한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-010\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"TurtleBot 3·MARA 를 예로 든 초안 문서. 보안 미적용 시 \\\"any node can publish to any topic\\\". 완화책: SROS 활성화, 권한 파일, TPM 에 자격증명 보관, 바이너리 서명, 설정 변경·자격증명 사용 감사. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f6\",\"claim\":\"VDA 5050 3.0.0 명세는 보안 통신·데이터 보호의 메커니즘을 규정하지 않고 MQTT 프로토콜 보안을 브로커 설정에 맡기며, 운영자·시스템 통합자·차량 제조사·플릿 제어 제공자 사이의 안전·보안 책임도 배분하지 않는다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Cybersecurity Measures: Mechanisms, technologies, or processes for secure communication or data protection are not specified.\\\" 프로토콜 보안은 브로커 설정에서 고려해야 하나 이 지침은 다루지 않는다. 데이터 보호 요구도 없다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"VDA 5050 3.0.0 의 즉시 동작 updateCertificate 는 서비스(MQTT)와 로봇별 개인 키·공개 인증서(선택적으로 루트 인증서)의 내려받기 링크를 받아 인증서를 설치·활성화하며, 명령 발신자를 검증할 수 없으므로 내려받기도 TLS 로 보호하고 활성화 전 인증서 체인을 확인하도록 권고한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"매개변수 service, keyDownloadLink, certificateDownloadLink, certificateAuthorityDownloadLink(선택). 상태 RUNNING(내려받기·설치 중) → FINISHED(활성) 또는 FAILED. 체인 검증 권고. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"VDA 5050 3.0.0 에서 RELEASE 유형 구역은 플릿 제어가 진입을 허가한 뒤에만 로봇이 들어갈 수 있고, 로봇은 requestType ACCESS 인 zoneRequest 로 허가를 요청해 responses 토픽으로 승인을 받는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"RELEASE 구역: 로봇은 플릿 제어로부터 접근 허가를 받은 뒤에만 진입할 수 있다. 요청은 zoneRequest(requestType ACCESS), 승인은 responses 토픽. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"Eclipse Mosquitto MQTT 브로커는 ACL 파일로 토픽마다 read·write·readwrite·deny 접근을 정하고 pattern 규칙에서 클라이언트 id(%c)·사용자 이름(%u)을 치환할 수 있으며, require_certificate 와 use_identity_as_username 을 함께 켜면 클라이언트 인증서의 일반 이름(CN)을 접근 제어용 사용자 이름으로 쓴다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-613\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"형식 topic [read|write|readwrite|deny] <topic>, pattern ... 에서 %c·%u 치환. require_certificate 가 참이면 유효한 인증서가 있어야 접속되고, use_identity_as_username 이면 인증서 CN 이 사용자 이름이 된다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f10\",\"claim\":\"VDA 5050 이 보안을 브로커 설정에 맡기므로, 로봇별 인증서(updateCertificate)의 CN 을 사용자 이름으로 쓰고 제조사·일련번호가 들어간 토픽 경로에 pattern ACL 을 걸면 로봇마다 자기 토픽만 읽고 쓰게 제한하는 구성이 가능해 보이나, 이를 규정한 공개 표준 구성은 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-613\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f6·f7·f9 의 조합에서 도출한 구성안이며 원문이 직접 권고한 것은 아니다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f11\",\"claim\":\"IEC 62443-3-3 은 IEC 62443-1-1 의 7개 기본 요구(식별·인증 제어, 사용 제어, 시스템 무결성, 데이터 기밀성, 데이터 흐름 제한, 사건 적시 대응, 자원 가용성)에 딸린 제어 시스템 기술 요구와 제어 시스템 능력 보안 수준을 정의한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-617\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 판매 목록 소개: IEC 62443-3-3:2013 채택판(2013-08 초판)으로, 7개 기본 요구에 연관된 시스템 요구와 보안 수준을 정의한다. 보안 수준은 1~4 로 엄격해진다(검색 요약 기준).\",\"as_of\":\"2013-08\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f12\",\"claim\":\"IEC 62443 의 보안 구역(zone)은 기능·논리·물리적 관계에 따라 묶여 공통 보안 요구를 공유하는 시스템·구성요소 집합이고, 도관(conduit)은 두 개 이상의 구역을 잇는 통신 채널의 묶음으로 구역 경계에서 통신을 제한·여과하는 역할을 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-618\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 구역과 도관 개념을 다룬 논문의 검색 요약: 위험 평가에 따라 IACS 부분마다 보안 수준이 다를 수 있고, 구역 간 통신은 도관을 통한다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f13\",\"claim\":\"MiR 는 자사 AMR 이 암호화 통신·접근 제어·보안 부팅을 쓰고 MiR Fleet Enterprise 가 IEC 62443-4-2(SL-C 3)에 맞춰 설계됐다고 밝힌다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-619\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: MiR Fleet Enterprise is built to align with IEC 62443 Part 4-2 (SL-C 3). 독립 인증 문서는 확인하지 못했다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true,\"vendor_claim\":true},{\"id\":\"f14\",\"claim\":\"미국 CISA 의 ICS 권고 ICSA-21-280-02 는 Alias Robotics 가 보고한 MiR 차량·MiR Fleet 소프트웨어의 복수 취약점(부적절한 접근 제어, 중요 기능 인증 누락, 민감 데이터 암호화 누락 등)을 공지했고, 악용되면 권한 상승·데이터 유출·로봇 제어·서비스 거부가 가능하다고 했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-616\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: 취약점 유형은 improper access control, missing authentication for critical function, missing encryption of sensitive data 등이며 영향은 privilege escalation, data exfiltration, control of the robot, DoS. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f15\",\"claim\":\"2025년 개정 ISO 10218-1 은 산업용 로봇 안전에 적용되는 범위에서 사이버보안 요구를 포함한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-614\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: The 2025 revision of ISO 10218-1 includes requirements for cybersecurity to the extent that it applies to industrial robot safety. 조항 내용은 미확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f16\",\"claim\":\"EU 기계 규정 (EU) 2023/1230 은 부속서 III 1.1.9 에서 기계의 안전 기능이 우발적·악의적 손상(corruption)으로부터 보호되도록 설계할 것을 요구하며, 이 규정은 2027-01-20 부터 적용된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-759\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: 안전 관련 제어 시스템·소프트웨어는 우발적 고장과 의도적 사이버 공격 모두에 대해 보호되어야 한다(Annex III 1.1.9). 적용일은 이전 브리프 값 (재인용: 2026-09-25-61)\",\"as_of\":\"2023-06\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f17\",\"claim\":\"EU 사이버 복원력법(Cyber Resilience Act)은 다른 기기·네트워크와 데이터 연결이 있는 하드웨어·소프트웨어 '디지털 요소가 있는 제품'에 적용되며, 제14조 보고 의무는 2026-09-11 부터, 필수 사이버보안 요구·취약점 처리 등 나머지 주요 의무는 2027-12-11 부터 적용된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-624\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: reporting obligations set out in Article 14 apply from 11 September 2026; 나머지 의무는 11 December 2027 부터. 보고 의무는 이미 시장에 나온 제품에도 적용된다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"NIST SP 800-82 Rev. 3(2023-09)은 제목을 운영 기술(OT) 보안 지침으로 바꾸고 범위를 건물 자동화·물리적 출입통제·산업용 IoT 로 넓혔으며, NIST SP 800-53 Rev. 5 통제 목록에 대한 OT 오버레이를 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-615\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: OT 개요·위협·취약점과 권장 대응책, 위험 관리·접근 제어·사고 대응·네트워크 분할(구역·DMZ)·원격 접속 패턴을 다룬다.\",\"as_of\":\"2023-09\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f19\",\"claim\":\"개인정보 보호법 제25조의2는 업무 목적으로 이동형 영상정보처리기기를 운영하는 자가 공개된 장소에서 사람 또는 관련 사물의 영상을 촬영하는 것을 원칙적으로 제한하되, 촬영 사실을 명확히 표시해 정보주체가 거부하지 않은 경우 등을 허용하고, 촬영 시 불빛·소리·안내판 등으로 촬영 사실을 알리도록 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-620\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: 목욕실·화장실 등 사생활 침해 우려가 큰 장소 촬영 금지, 제15조제1항 해당 또는 촬영 사실 표시 후 거부 의사가 없는 경우 등 허용, 대통령령에 따라 불빛·소리·안내판 등으로 표시. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f20\",\"claim\":\"개인정보보호위원회의 '이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서'는 자율주행차·배달로봇 등이 촬영 영상을 AI 개발에 쓰려면 기기 외부에 촬영 사실을 표시하고, 공개된 장소의 불특정 다수 영상은 원칙적으로 가명처리 후 활용하며, 원본 활용은 규제샌드박스 실증특례로 안전조치를 지킬 때만 가능하다고 안내한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-621\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: 차량이나 로봇 외부에 촬영 사실과 구체적 내용 표시, 얼굴 모자이크 등 가명처리 후 활용, 원본은 실증특례 조건부. 안내서 발행일은 미확인. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f21\",\"claim\":\"근로자참여 및 협력증진에 관한 법률은 '사업장 내 근로자 감시 설비의 설치'를 노사협의회의 협의 사항으로 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-622\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 요약: 제20조 제1항 제14호 '사업장 내 근로자 감시 설비의 설치'가 노사협의회 협의 사항이다. 조항 번호는 판에 따라 다를 수 있어 원문 확인 필요. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f22\",\"claim\":\"한국인터넷진흥원(KISA)은 지식플랫폼에 '로봇 보안취약점 점검 체크리스트 해설서'를 게시해 로봇 보안 취약점 점검 항목을 안내한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-623\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문 미열람. 검색 결과로 게시물 존재와 제목만 확인했다. 항목 수·범주는 검색 요약끼리 달라 넣지 않았다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f23\",\"claim\":\"분류 원문 질문 '외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가?'에 대해, 확인한 자료로는 사용자 역할(OIDC ID 토큰의 역할), ROS 2 인클레이브별 토픽·서비스·액션 허용·거부, MQTT 클라이언트별 토픽 ACL 의 세 층에서 권한을 표현할 수 있으나, 로봇·명령 단위 유지보수 권한 매트릭스를 규정한 공개 표준은 찾지 못했고 VDA 5050 은 이를 구현자에게 맡긴다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-612\",\"ref-610\",\"ref-613\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f4·f6·f9 를 종합한 이 위키의 판단이다. 부재는 검색 범위의 관찰이다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f24\",\"claim\":\"출하 마감 시간대에 제조사 원격 유지보수 엔지니어가 로봇 한 대의 진단 접속을 요청하면, 기본 자격증명·인증 없는 원격 접속이 권한 상승·로봇 제어로 이어질 수 있으므로 ROP 는 대상 로봇·진단 명령만 허용하고 이동 명령은 막으며 세션을 감사 기록으로 남기는 제약이 필요해 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-010\",\"ref-616\",\"ref-612\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f5(원격 접속 위협)·f14(실제 취약점 영향)·f4(역할 기반 접근)에서 도출한 시나리오다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f25\",\"claim\":\"입고 도크에서 카메라를 단 AMR 이 작업자를 촬영하는 경우, 물류센터 내부가 개인정보 보호법 제25조의2의 '공개된 장소'인지는 불분명하고 근로자 감시 설비로서 노사협의회 협의 대상이 될 수 있어, 영상 수집·보관·학습 활용 조건이 입고 작업의 제약으로 작용할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-620\",\"ref-622\",\"ref-010\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f19·f21 의 규정과 f5(카메라 영상은 민감 자산)를 물류 현장에 적용한 추정이며 공식 해석은 확인하지 못했다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"입고\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f26\",\"claim\":\"ROP 가 직접 맡을 보안 몫은 누가 어느 로봇·설비에 어떤 명령을 내릴 수 있는지의 권한 정책, 외부 유지보수 접속의 중개·감사 기록, 고객별 작업·데이터 격리, 영상 데이터 접근 정책, 로봇 인증서 교체(updateCertificate) 같은 보안 명령의 조율로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-612\",\"ref-010\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"분류 원문 9장의 경계(로봇 자체 제어는 제조사, ROP 는 인터페이스와 실행 보장)에 f4·f6·f7 을 대입한 추정이다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f27\",\"claim\":\"연계 대상: 로봇 내부 보안(보안 부팅, 펌웨어 서명, 자격증명 보관, 안전 PLC 설정 보호)과 로봇 안전 기능의 사이버보안 설계는 제조사 몫이고, 네트워크 분할 장비·사용자 신원 제공자는 현장 IT·OT 조직 몫이며, ROP 는 그 결과와 인터페이스를 받아 쓰는 쪽으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-010\",\"ref-616\",\"ref-614\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f5(TPM·바이너리 서명 완화책), f14(제조사 제품 취약점), f15(로봇 안전 표준의 사이버보안 요구)를 경계 판단에 쓴 추정이다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f28\",\"claim\":\"26. 사이버보안·접근권한·개인정보는 로봇 안전 기능의 사이버보안(25. 안전·위험 관리), 규격이 비워 둔 보안 책임 배분(28. 표준·상호운용성·다사업자 거버넌스), 운영자 역할 인증(18. 사람–로봇 협업·운영 인터페이스), 영상의 AI 학습 활용(27. AI·학습·적응과 모델 운영)과 맞물리는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-614\",\"ref-031\",\"ref-612\",\"ref-621\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f15·f6·f4·f20 을 연결 근거로 쓴 추정. 10. 설비·건물 시스템 연동(oq-043·oq-056), 13. 작업 배정 — MRTA(oq-082), 24. 자산·소프트웨어 수명주기 관리(패치)와의 연결은 기존 열린 질문·페이지에 근거. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f29\",\"claim\":\"확인한 VDA 5050·SROS 2·Open-RMF 문서는 고객(화주)별 작업·데이터 격리를 규정하지 않아, 공유 창고에서 고객별 격리는 인클레이브 범위나 대시보드 역할 같은 일반 수단을 ROP 가 조합해 설계해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\",\"ref-611\",\"ref-612\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"세 문서를 읽은 범위에서 테넌트·고객 격리 개념을 찾지 못했다는 관찰이며 부재 확인은 아니다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"제약\"},{\"id\":\"f30\",\"claim\":\"oq-082 와 관련해, DDS 인증은 메시지를 보낸 참여자의 신원을 확인해 구성요소 위조를 막지만 위치·배터리 같은 보고값 내용의 참·거짓은 검증하지 않으므로, 오염된 보고값 검증은 인증과 별도의 타당성 검사가 필요해 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-009\",\"ref-010\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1(인증은 신원 확인)과 f5(신원 위조 위협)에서 도출. 보고값 타당성 검사 기준을 다룬 공개 자료는 이번에 확인하지 못했다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"예외·성과\"}],\"sources\":[{\"id\":\"ref-009\",\"org\":\"Open Robotics (ROS 2 Design)\",\"title\":\"ROS 2 DDS-Security integration\",\"published\":null,\"url\":\"https://design.ros2.org/articles/ros2_dds_security.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"ROS 2 가 쓰는 DDS-Security 플러그인(인증·접근 제어·암호)과 서명된 거버넌스·권한 파일 구조.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/design/gh-pages/articles/180_ros2_dds_security.md\"},{\"id\":\"ref-010\",\"org\":\"Open Robotics (ROS 2 Design)\",\"title\":\"ROS 2 Robotic Systems Threat Model\",\"published\":null,\"url\":\"https://design.ros2.org/articles/ros2_threat_model.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"ROS 2 로봇 시스템 위협 모델 초안. 통신 위조, 물리 접근, 공급망, 데이터 프라이버시, 원격 접속 위협과 완화책.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/design/gh-pages/articles/183_ros2_threat_model.md\"},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 이번 실행에서는 보안 범위 제외 문구, updateCertificate 즉시 동작, RELEASE 구역 접근 허가를 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-759\",\"org\":\"European Union (EUR-Lex)\",\"title\":\"Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery\",\"published\":\"2023-06\",\"url\":\"https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EU 기계 규정. 2027-01-20 적용, 부속서 III 1.1.9 손상(corruption)으로부터의 보호 요구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-610\",\"org\":\"Open Robotics (ROS 2 Design)\",\"title\":\"ROS 2 Access Control Policies\",\"published\":null,\"url\":\"https://design.ros2.org/articles/ros2_access_control_policies.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"SROS 2 접근 제어 정책의 XML 구조(인클레이브·프로파일·권한), 토픽·서비스·액션별 허용·거부와 DDS 권한 파일로의 변환 과정.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/design/gh-pages/articles/181_ros2_access_control_policies.md\"},{\"id\":\"ref-611\",\"org\":\"Open Robotics (ROS 2 Design)\",\"title\":\"ROS 2 Security Enclaves\",\"published\":null,\"url\":\"https://design.ros2.org/articles/ros2_security_enclaves.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"SROS 2 인클레이브의 정의와 컨텍스트·프로세스와의 대응, 인클레이브 적용 범위 선택 근거.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/design/gh-pages/articles/182_ros2_security_enclaves.md\"},{\"id\":\"ref-612\",\"org\":\"Open Robotics (osrf/ros2multirobotbook)\",\"title\":\"Programming Multiple Robots with ROS 2 — Security\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/security.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 보안 구성: SROS 2 키스토어·인클레이브·권한 생성 도구, 대시보드의 TLS·Keycloak OIDC 인증과 역할별 보안 노드.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/security.md\"},{\"id\":\"ref-613\",\"org\":\"Eclipse Foundation (Eclipse Mosquitto)\",\"title\":\"mosquitto.conf man page\",\"published\":null,\"url\":\"https://mosquitto.org/man/mosquitto-conf-5.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Mosquitto 브로커 설정 문서. ACL 파일의 토픽별 접근·pattern 치환(%c, %u), 인증서 기반 인증(require_certificate, use_identity_as_username). 공식 저장소의 man 페이지 원본(XML)으로 읽었다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/eclipse-mosquitto/mosquitto/master/man/mosquitto.conf.5.xml\"},{\"id\":\"ref-614\",\"org\":\"Association for Advancing Automation (A3)\",\"title\":\"Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs)\",\"published\":null,\"url\":\"https://www.automate.org/robotics/blogs/updated-iso-10218-faq\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ISO 10218 2025 개정 FAQ. 로봇 안전에 적용되는 범위의 사이버보안 요구 포함을 설명.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-615\",\"org\":\"NIST\",\"title\":\"NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security\",\"published\":\"2023-09\",\"url\":\"https://csrc.nist.gov/pubs/sp/800/82/r3/final\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. OT 보안 지침 3판. 범위를 건물 자동화·물리적 출입통제·산업용 IoT 로 넓히고 SP 800-53 Rev. 5 OT 오버레이 제공.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-616\",\"org\":\"CISA\",\"title\":\"Mobile Industrial Robots Vehicles and MiR Fleet Software (ICSA-21-280-02)\",\"published\":null,\"url\":\"https://www.cisa.gov/news-events/ics-advisories/icsa-21-280-02\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MiR 차량·MiR Fleet 소프트웨어 복수 취약점에 대한 미국 CISA ICS 권고.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-617\",\"org\":\"CSA / IEC (ANSI Webstore)\",\"title\":\"CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)\",\"published\":\"2013-08\",\"url\":\"https://webstore.ansi.org/standards/csa/csaiec624432017-2442576\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. IEC 62443-3-3 의 판매 목록 소개. 7개 기본 요구에 연관된 시스템 보안 요구와 보안 수준.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-618\",\"org\":\"MDPI (Journal of Cybersecurity and Privacy)\",\"title\":\"Security Aspects of Zones and Conduits in IEC 62443\",\"published\":null,\"url\":\"https://www.mdpi.com/2624-800X/6/2/52\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. IEC 62443 의 보안 구역과 도관 개념의 보안 측면을 다룬 논문.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-619\",\"org\":\"Mobile Industrial Robots (MiR)\",\"title\":\"AMRs and Cybersecurity | Secure Robotics at MiR\",\"published\":null,\"url\":\"https://mobile-industrial-robots.com/blog/amrs-and-cybersecurity\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MiR 의 AMR 보안 소개 글. MiR Fleet Enterprise 의 IEC 62443-4-2 정렬 주장.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-620\",\"org\":\"법제처 국가법령정보센터\",\"title\":\"개인정보 보호법\",\"published\":null,\"url\":\"https://www.law.go.kr/lsEfInfoP.do?lsiSeq=195062\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 개인정보 보호법 본문. 제25조의2 이동형 영상정보처리기기의 운영 제한.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-621\",\"org\":\"김·장 법률사무소\",\"title\":\"'이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서' 관련 인사이트\",\"published\":null,\"url\":\"https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=30477\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 개인정보보호위원회 이동형 영상정보처리기기 안내서의 촬영 표시·가명처리·원본 활용 기준 해설.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-622\",\"org\":\"법제처 국가법령정보센터\",\"title\":\"근로자참여 및 협력증진에 관한 법률\",\"published\":null,\"url\":\"https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=105636\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 노사협의회 협의 사항에 '사업장 내 근로자 감시 설비의 설치'를 두는 법률.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-623\",\"org\":\"한국인터넷진흥원(KISA)\",\"title\":\"로봇 보안취약점 점검 체크리스트 해설서\",\"published\":null,\"url\":\"https://kisa.or.kr/2060205/form?lang_type=KO&page=&postSeq=36\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. KISA 지식플랫폼의 로봇 보안취약점 점검 체크리스트 해설서 게시물.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-624\",\"org\":\"European Commission (Shaping Europe's digital future)\",\"title\":\"The Cyber Resilience Act - Summary of the legislative text\",\"published\":null,\"url\":\"https://digital-strategy.ec.europa.eu/en/policies/cra-summary\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EU 사이버 복원력법 요약. 적용 대상과 보고 의무(2026-09-11)·주요 의무(2027-12-11) 적용일.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"seed 페이지 3~11절 첫 작성. 3절 왜 중요한가: f14(실제 AMR 취약점과 영향), f15·f16·f17(로봇 안전·기계·제품 규제가 사이버보안을 요구), f5(위협 모델) / 4절 핵심 개념: f1(인증·접근 제어·권한 파일), f3(인클레이브), f11(62443 기본 요구·보안 수준), f12(구역·도관), f19(이동형 영상정보처리기기) / 5절 현장 시나리오: f24(출하·제약, 원격 유지보수), f25(입고·제약, 카메라 영상과 작업자) / 6절 대표 접근법: f2(SROS 2 권한), f4(Open-RMF 역할 인증), f7(인증서 교체), f8(RELEASE 구역 허가), f9·f10(MQTT ACL), f13(벤더 주장 병기) / 7절 표준·오픈소스: f6(VDA 5050 보안 범위 제외), f11·f12, f15~f18, f19~f22(한국 법규·KISA) / 8절 대표 연구와 자료: f5, f14, f18, f22 / 9절 경계: f26(ROP 직접), f27('연계 대상'), f23(분류 원문 질문 — 추정) / 10절 연결: f28(25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영), f30(13. 작업 배정 — MRTA, oq-082), 기존 oq-043·oq-056(10. 설비·건물 시스템 연동) / 11절: 기존 oq-043·oq-056·oq-082 와 open_questions_new 4건, f29(고객별 격리).\"}],\"glossary_candidates\":[{\"term_ko\":\"보안 구역과 도관\",\"term_en\":\"Zones and Conduits (IEC 62443)\",\"definition\":\"공통 보안 요구를 공유하는 시스템 묶음(구역)과 구역 사이 통신 채널 묶음(도관)으로 산업 제어 시스템을 나눠 보호하는 IEC 62443 의 구조다.\"},{\"term_ko\":\"보안 수준\",\"term_en\":\"Security Level (SL, IEC 62443)\",\"definition\":\"IEC 62443 에서 우발적 위반(SL 1)부터 자원을 갖춘 숙련 공격자(SL 4)까지 막아야 할 위협 수준에 따라 요구의 엄격함을 나눈 등급이다.\"},{\"term_ko\":\"권한 파일\",\"term_en\":\"Permissions File (DDS-Security)\",\"definition\":\"DDS 참여자가 어떤 토픽을 발행·구독할 수 있는지 등 권한을 적고 권한 인증기관이 서명한 XML 문서다.\"},{\"term_ko\":\"이동형 영상정보처리기기\",\"term_en\":\"Mobile Video Information Processing Device\",\"definition\":\"사람이 몸에 착용하거나 이동 가능한 물체에 부착해 영상을 촬영하는 장치로, 개인정보 보호법 제25조의2가 업무 목적 운영을 제한한다.\"}],\"open_questions_new\":[\"물류센터 내부처럼 공개되지 않은 작업장에서 카메라를 단 로봇이 작업자를 촬영할 때 개인정보 보호법 제25조의2와 근로자 감시 설비 협의 가운데 무엇이 적용되는지 공식 해석이 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 18. 사람–로봇 협업·운영 인터페이스 | 근거: f25 | 종류: 일반\",\"외부 유지보수 계정의 권한을 로봇·명령 단위로 나눈 매트릭스(예: 진단은 허용, 이동은 불허)를 공개한 로봇 관제·ROP 구성이나 표준이 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 9. 로봇·제조사 관제 연동 | 근거: f23 | 종류: 일반\",\"여러 화주가 로봇 플릿을 공유하는 창고에서 고객별 작업·데이터 격리를 오케스트레이션 수준에서 규정한 표준이나 공개 설계가 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f29 | 종류: 일반\",\"ISO 10218-1:2025 의 사이버보안 요구는 어느 조항에서 무엇(접근 제한·원격 접속·로그 등)을 요구하며 로봇 관제 연동에 어떤 조건을 주는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 25. 안전·위험 관리 | 근거: f15 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":19,\"cross_checked_count\":0,\"unverified\":[\"모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)\",\"f11 IEC 62443-3-3 은 판매 목록 소개만 확인, 표준 원문 미열람\",\"f14 CISA 권고 발행일·영향 제품 판 미확인(검색 요약 기준)\",\"f15 ISO 10218-1:2025 사이버보안 조항 내용 미확인\",\"f19 제25조의2 시행일 미확인\",\"f20 안내서 발행일 미확인(법률사무소 해설 경유)\",\"f21 근로자참여법 조항 번호는 판에 따라 다를 수 있음\",\"f22 KISA 해설서의 항목 수·범주는 검색 요약끼리 달라 넣지 않음\",\"oq-043·oq-056·oq-082 는 부분 근거만 확보(f3·f30)해 해결 제안하지 않음\",\"CISA 원격 접속 지침(2023·2025)은 문서 귀속을 확인하지 못해 넣지 않음\"],\"scope_violations\":[\"f27: 로봇 내부 보안·안전 PLC·네트워크 장비는 분류 원문 9장 '로봇 자체 지능·제어'·'시설·설비 제어' 쪽이라 '연계 대상:'으로 표시\",\"f13: 제조사 관제 제품의 보안 인증 주장은 벤더 주장으로만 제안\"],\"budget_used\":{\"queries\":16,\"sources\":15},\"limits\":\"재실행 1회차. 반려 사유 1(스키마 불일치: finding f27 이 sources 에 없는 ref-012 를 참조): 직전 반환값(research.json)이 이번 입력에 포함되지 않아 형식만 고칠 수 없었으므로 같은 대상·예산 안에서 브리프 전체를 다시 작성했고, 모든 findings[].source_ids 가 sources[].id 에 있는지 확인했다. ref-012 는 쓰지 않았으며 f27 은 ref-010·ref-616·ref-614 를 근거로 한다(관련 finding: f27). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-009·ref-010·ref-031, 신규 ref-610·ref-611·ref-612·ref-613. 나머지는 검색 요약 기준(원문 미열람, 신뢰도 상한 medium). 재사용 ref-009·ref-010 은 참고문헌 목록 요약이 입력에 없어 제목·기관을 원문 기준으로 적었다(같은 URL 이면 퍼블리셔가 기존 항목으로 합친다). 재사용 ref-031·ref-759 는 2026-09-25-61 브리프 값. 검색 16회/30, 신규 출처 15건/15(ref-610~ref-624, 예약 구간 안) — 신규 출처 예산에 도달해 The Robot Report(ISO 10218 교차 확인용), 비잔틴 로봇 연구 논문, KISA 로봇 보안모델 보도, 멀티테넌트 로보틱스 벤더 자료는 출처로 넣지 않았다. 교차 확인 0건. 한국 자료: 개인정보 보호법 제25조의2(ref-620), 개인정보위 안내서 해설(ref-621), 근로자참여법(ref-622), KISA 해설서(ref-623). 교차 규칙: 영상의 AI 학습 활용(f20)은 27. AI·학습·적응과 모델 운영과 연결 제안(f28). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-25-64",
+    "date": "2026-09-25",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 26,
+      "area_name": "26. 사이버보안·접근권한·개인정보",
+      "category": "G. 안전·보안·지능·거버넌스"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음(인증·접근 제어·인클레이브·보안 구역과 도관·이동형 영상정보처리기기)",
+      "섹션 5. 현장 시나리오 비어 있음(물류 흐름 단계 명시 필요)",
+      "섹션 6. 대표 접근법과 기술 비어 있음(SROS 2 권한, MQTT 접근 제어, 대시보드 역할 인증, 인증서 교체)",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 비어 있음",
+      "섹션 11. 열린 질문 비어 있음(대상 영역에 걸린 열린 질문 oq-043, oq-056, oq-082 반영 필요)"
+    ],
+    "research_questions": [
+      "외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가? [분류원문]",
+      "ROS 2(SROS 2), Open-RMF, VDA 5050, MQTT 브로커는 장비 인증·통신 보호·명령 권한을 어떤 구조로 제공하거나 구현자에게 맡기는가? (섹션 4·6·7 겨냥)",
+      "산업 보안 표준·규제(IEC 62443, NIST SP 800-82, ISO 10218-1:2025, EU 기계 규정, EU 사이버 복원력법)는 로봇·관제 시스템에 무엇을 요구하는가? (섹션 3·7 겨냥)",
+      "물류 로봇·관제 소프트웨어에서 공개된 실제 취약점 사례는 무엇이며 어떤 영향을 보고했는가? (섹션 3·8 겨냥)",
+      "로봇 카메라 영상과 작업자 데이터 보호에 적용되는 한국 법규·가이드(개인정보 보호법 이동형 영상정보처리기기, 근로자 감시 설비, KISA 로봇 보안 자료)는 무엇인가? (섹션 5·9 겨냥, 한국 자료 우선)",
+      "대상 영역 열린 질문 oq-043(출입통제 연동 권한), oq-056(SROS 2 인클레이브 단위), oq-082(관제 보고값 위조 검증)에 답할 근거가 있는가? (섹션 10·11 겨냥)",
+      "고객별 격리와 원격 접속 중개 가운데 ROP가 직접 맡을 부분과 제조사·IT 조직에 맡길 부분은 어떻게 나뉘는가? (섹션 9 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "ROS 2 보안은 DDS-Security 의 다섯 플러그인 가운데 인증·접근 제어·암호 세 가지만 쓰며, 참여자마다 도메인 보호 방식을 정한 서명된 거버넌스 파일과 참여자 권한을 담은 서명된 권한 파일을 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-009"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "인증 플러그인은 PKI 로 참여자 신원을 확인하고, 접근 제어 플러그인은 참여자의 DDS 기능 제한을 정의·집행한다. 권한 파일은 \"A signed XML document containing the permissions of the domain participant\". 로깅·데이터 태깅은 규격 준수에 필요하지 않아 쓰지 않는다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "SROS 2 접근 제어 정책은 XML 로 인클레이브·프로파일·권한 규칙을 계층적으로 적고, 토픽(발행·구독)·서비스(요청·응답)·액션(호출·실행)마다 허용·거부를 명시하며, 거부가 같은 대상의 허용보다 우선하고 XSLT 로 DDS 권한 파일로 변환된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-610"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"privileges must be explicitly qualified as allowed\"; 거부된 권한은 같은 범위의 허용 권한을 누른다. 변환 과정은 XInclude 확장 → 스키마 검증 → 프로파일별 가지치기 → XSLT 변환이며, 권한은 거부 우선으로 정렬된다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f3",
+        "claim": "SROS 2 인클레이브는 인증서·키·거버넌스·권한 파일을 묶은 하나의 보안 신원이며, 한 컨텍스트를 공유하는 노드들은 한 인클레이브의 권한으로 합쳐지고, 인클레이브를 적용하는 범위는 운영체제 프로세스·사용자·장치·군집 단위로 고를 수 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-611"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "DDS Security 1.1 에서 참여자는 보안 신원 하나만 쓸 수 있어 같은 컨텍스트의 노드 권한이 한 인클레이브로 통합된다. 배포 시 인클레이브 적용 범위를 조절해 모델 충실도를 정한다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "Open-RMF 보안 구성은 ROS 2 부분을 SROS 2(키스토어·인클레이브·서명된 권한)로 보호하고, 웹 대시보드는 TLS 와 Keycloak 기반 OpenID Connect 사용자 인증으로 보호하며, API 서버가 역할마다 보안이 적용된 ROS 2 노드를 하나씩 두고 사용자의 ID 토큰에 따라 접근을 준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-612"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"The api server runs a secured ROS 2 node per each role and provides access to them based on the id token of each user.\" 키스토어의 private 디렉터리(CA 키)는 배포 전에 제거한다. generate_policy·generate_artifacts 도구로 정책과 산출물을 만든다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f5",
+        "claim": "ROS 2 로봇 시스템 위협 모델(초안)은 보안이 꺼져 있으면 어떤 노드든 어떤 토픽에나 발행할 수 있어 구성요소 신원 위조·명령 가로채기가 가능하고, 기본 자격증명의 SSH 같은 원격 접속이 권한 상승 경로가 되며, 카메라 영상·로그가 보호해야 할 민감 자산이고 빌드 팜·서드파티 구성요소를 통한 공급망 위협이 있다고 정리한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-010"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "TurtleBot 3·MARA 를 예로 든 초안 문서. 보안 미적용 시 \"any node can publish to any topic\". 완화책: SROS 활성화, 권한 파일, TPM 에 자격증명 보관, 바이너리 서명, 설정 변경·자격증명 사용 감사. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f6",
+        "claim": "VDA 5050 3.0.0 명세는 보안 통신·데이터 보호의 메커니즘을 규정하지 않고 MQTT 프로토콜 보안을 브로커 설정에 맡기며, 운영자·시스템 통합자·차량 제조사·플릿 제어 제공자 사이의 안전·보안 책임도 배분하지 않는다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Cybersecurity Measures: Mechanisms, technologies, or processes for secure communication or data protection are not specified.\" 프로토콜 보안은 브로커 설정에서 고려해야 하나 이 지침은 다루지 않는다. 데이터 보호 요구도 없다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "VDA 5050 3.0.0 의 즉시 동작 updateCertificate 는 서비스(MQTT)와 로봇별 개인 키·공개 인증서(선택적으로 루트 인증서)의 내려받기 링크를 받아 인증서를 설치·활성화하며, 명령 발신자를 검증할 수 없으므로 내려받기도 TLS 로 보호하고 활성화 전 인증서 체인을 확인하도록 권고한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "매개변수 service, keyDownloadLink, certificateDownloadLink, certificateAuthorityDownloadLink(선택). 상태 RUNNING(내려받기·설치 중) → FINISHED(활성) 또는 FAILED. 체인 검증 권고. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "VDA 5050 3.0.0 에서 RELEASE 유형 구역은 플릿 제어가 진입을 허가한 뒤에만 로봇이 들어갈 수 있고, 로봇은 requestType ACCESS 인 zoneRequest 로 허가를 요청해 responses 토픽으로 승인을 받는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "RELEASE 구역: 로봇은 플릿 제어로부터 접근 허가를 받은 뒤에만 진입할 수 있다. 요청은 zoneRequest(requestType ACCESS), 승인은 responses 토픽. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "Eclipse Mosquitto MQTT 브로커는 ACL 파일로 토픽마다 read·write·readwrite·deny 접근을 정하고 pattern 규칙에서 클라이언트 id(%c)·사용자 이름(%u)을 치환할 수 있으며, require_certificate 와 use_identity_as_username 을 함께 켜면 클라이언트 인증서의 일반 이름(CN)을 접근 제어용 사용자 이름으로 쓴다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-613"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "형식 topic [read|write|readwrite|deny] <topic>, pattern ... 에서 %c·%u 치환. require_certificate 가 참이면 유효한 인증서가 있어야 접속되고, use_identity_as_username 이면 인증서 CN 이 사용자 이름이 된다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f10",
+        "claim": "VDA 5050 이 보안을 브로커 설정에 맡기므로, 로봇별 인증서(updateCertificate)의 CN 을 사용자 이름으로 쓰고 제조사·일련번호가 들어간 토픽 경로에 pattern ACL 을 걸면 로봇마다 자기 토픽만 읽고 쓰게 제한하는 구성이 가능해 보이나, 이를 규정한 공개 표준 구성은 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-613"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f6·f7·f9 의 조합에서 도출한 구성안이며 원문이 직접 권고한 것은 아니다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f11",
+        "claim": "IEC 62443-3-3 은 IEC 62443-1-1 의 7개 기본 요구(식별·인증 제어, 사용 제어, 시스템 무결성, 데이터 기밀성, 데이터 흐름 제한, 사건 적시 대응, 자원 가용성)에 딸린 제어 시스템 기술 요구와 제어 시스템 능력 보안 수준을 정의한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-617"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 판매 목록 소개: IEC 62443-3-3:2013 채택판(2013-08 초판)으로, 7개 기본 요구에 연관된 시스템 요구와 보안 수준을 정의한다. 보안 수준은 1~4 로 엄격해진다(검색 요약 기준).",
+        "as_of": "2013-08",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f12",
+        "claim": "IEC 62443 의 보안 구역(zone)은 기능·논리·물리적 관계에 따라 묶여 공통 보안 요구를 공유하는 시스템·구성요소 집합이고, 도관(conduit)은 두 개 이상의 구역을 잇는 통신 채널의 묶음으로 구역 경계에서 통신을 제한·여과하는 역할을 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-618"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 구역과 도관 개념을 다룬 논문의 검색 요약: 위험 평가에 따라 IACS 부분마다 보안 수준이 다를 수 있고, 구역 간 통신은 도관을 통한다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f13",
+        "claim": "MiR 는 자사 AMR 이 암호화 통신·접근 제어·보안 부팅을 쓰고 MiR Fleet Enterprise 가 IEC 62443-4-2(SL-C 3)에 맞춰 설계됐다고 밝힌다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-619"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: MiR Fleet Enterprise is built to align with IEC 62443 Part 4-2 (SL-C 3). 독립 인증 문서는 확인하지 못했다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true,
+        "vendor_claim": true
+      },
+      {
+        "id": "f14",
+        "claim": "미국 CISA 의 ICS 권고 ICSA-21-280-02 는 Alias Robotics 가 보고한 MiR 차량·MiR Fleet 소프트웨어의 복수 취약점(부적절한 접근 제어, 중요 기능 인증 누락, 민감 데이터 암호화 누락 등)을 공지했고, 악용되면 권한 상승·데이터 유출·로봇 제어·서비스 거부가 가능하다고 했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-616"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: 취약점 유형은 improper access control, missing authentication for critical function, missing encryption of sensitive data 등이며 영향은 privilege escalation, data exfiltration, control of the robot, DoS. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f15",
+        "claim": "2025년 개정 ISO 10218-1 은 산업용 로봇 안전에 적용되는 범위에서 사이버보안 요구를 포함한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-614"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: The 2025 revision of ISO 10218-1 includes requirements for cybersecurity to the extent that it applies to industrial robot safety. 조항 내용은 미확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f16",
+        "claim": "EU 기계 규정 (EU) 2023/1230 은 부속서 III 1.1.9 에서 기계의 안전 기능이 우발적·악의적 손상(corruption)으로부터 보호되도록 설계할 것을 요구하며, 이 규정은 2027-01-20 부터 적용된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-759"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: 안전 관련 제어 시스템·소프트웨어는 우발적 고장과 의도적 사이버 공격 모두에 대해 보호되어야 한다(Annex III 1.1.9). 적용일은 이전 브리프 값 (재인용: 2026-09-25-61)",
+        "as_of": "2023-06",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f17",
+        "claim": "EU 사이버 복원력법(Cyber Resilience Act)은 다른 기기·네트워크와 데이터 연결이 있는 하드웨어·소프트웨어 '디지털 요소가 있는 제품'에 적용되며, 제14조 보고 의무는 2026-09-11 부터, 필수 사이버보안 요구·취약점 처리 등 나머지 주요 의무는 2027-12-11 부터 적용된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-624"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: reporting obligations set out in Article 14 apply from 11 September 2026; 나머지 의무는 11 December 2027 부터. 보고 의무는 이미 시장에 나온 제품에도 적용된다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "NIST SP 800-82 Rev. 3(2023-09)은 제목을 운영 기술(OT) 보안 지침으로 바꾸고 범위를 건물 자동화·물리적 출입통제·산업용 IoT 로 넓혔으며, NIST SP 800-53 Rev. 5 통제 목록에 대한 OT 오버레이를 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-615"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: OT 개요·위협·취약점과 권장 대응책, 위험 관리·접근 제어·사고 대응·네트워크 분할(구역·DMZ)·원격 접속 패턴을 다룬다.",
+        "as_of": "2023-09",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f19",
+        "claim": "개인정보 보호법 제25조의2는 업무 목적으로 이동형 영상정보처리기기를 운영하는 자가 공개된 장소에서 사람 또는 관련 사물의 영상을 촬영하는 것을 원칙적으로 제한하되, 촬영 사실을 명확히 표시해 정보주체가 거부하지 않은 경우 등을 허용하고, 촬영 시 불빛·소리·안내판 등으로 촬영 사실을 알리도록 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-620"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: 목욕실·화장실 등 사생활 침해 우려가 큰 장소 촬영 금지, 제15조제1항 해당 또는 촬영 사실 표시 후 거부 의사가 없는 경우 등 허용, 대통령령에 따라 불빛·소리·안내판 등으로 표시. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f20",
+        "claim": "개인정보보호위원회의 '이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서'는 자율주행차·배달로봇 등이 촬영 영상을 AI 개발에 쓰려면 기기 외부에 촬영 사실을 표시하고, 공개된 장소의 불특정 다수 영상은 원칙적으로 가명처리 후 활용하며, 원본 활용은 규제샌드박스 실증특례로 안전조치를 지킬 때만 가능하다고 안내한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-621"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: 차량이나 로봇 외부에 촬영 사실과 구체적 내용 표시, 얼굴 모자이크 등 가명처리 후 활용, 원본은 실증특례 조건부. 안내서 발행일은 미확인. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f21",
+        "claim": "근로자참여 및 협력증진에 관한 법률은 '사업장 내 근로자 감시 설비의 설치'를 노사협의회의 협의 사항으로 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-622"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 요약: 제20조 제1항 제14호 '사업장 내 근로자 감시 설비의 설치'가 노사협의회 협의 사항이다. 조항 번호는 판에 따라 다를 수 있어 원문 확인 필요. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f22",
+        "claim": "한국인터넷진흥원(KISA)은 지식플랫폼에 '로봇 보안취약점 점검 체크리스트 해설서'를 게시해 로봇 보안 취약점 점검 항목을 안내한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-623"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문 미열람. 검색 결과로 게시물 존재와 제목만 확인했다. 항목 수·범주는 검색 요약끼리 달라 넣지 않았다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f23",
+        "claim": "분류 원문 질문 '외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가?'에 대해, 확인한 자료로는 사용자 역할(OIDC ID 토큰의 역할), ROS 2 인클레이브별 토픽·서비스·액션 허용·거부, MQTT 클라이언트별 토픽 ACL 의 세 층에서 권한을 표현할 수 있으나, 로봇·명령 단위 유지보수 권한 매트릭스를 규정한 공개 표준은 찾지 못했고 VDA 5050 은 이를 구현자에게 맡긴다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-612",
+          "ref-610",
+          "ref-613",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f4·f6·f9 를 종합한 이 위키의 판단이다. 부재는 검색 범위의 관찰이다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f24",
+        "claim": "출하 마감 시간대에 제조사 원격 유지보수 엔지니어가 로봇 한 대의 진단 접속을 요청하면, 기본 자격증명·인증 없는 원격 접속이 권한 상승·로봇 제어로 이어질 수 있으므로 ROP 는 대상 로봇·진단 명령만 허용하고 이동 명령은 막으며 세션을 감사 기록으로 남기는 제약이 필요해 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-010",
+          "ref-616",
+          "ref-612"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f5(원격 접속 위협)·f14(실제 취약점 영향)·f4(역할 기반 접근)에서 도출한 시나리오다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f25",
+        "claim": "입고 도크에서 카메라를 단 AMR 이 작업자를 촬영하는 경우, 물류센터 내부가 개인정보 보호법 제25조의2의 '공개된 장소'인지는 불분명하고 근로자 감시 설비로서 노사협의회 협의 대상이 될 수 있어, 영상 수집·보관·학습 활용 조건이 입고 작업의 제약으로 작용할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-620",
+          "ref-622",
+          "ref-010"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f19·f21 의 규정과 f5(카메라 영상은 민감 자산)를 물류 현장에 적용한 추정이며 공식 해석은 확인하지 못했다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": "입고",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f26",
+        "claim": "ROP 가 직접 맡을 보안 몫은 누가 어느 로봇·설비에 어떤 명령을 내릴 수 있는지의 권한 정책, 외부 유지보수 접속의 중개·감사 기록, 고객별 작업·데이터 격리, 영상 데이터 접근 정책, 로봇 인증서 교체(updateCertificate) 같은 보안 명령의 조율로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-612",
+          "ref-010"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "분류 원문 9장의 경계(로봇 자체 제어는 제조사, ROP 는 인터페이스와 실행 보장)에 f4·f6·f7 을 대입한 추정이다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f27",
+        "claim": "연계 대상: 로봇 내부 보안(보안 부팅, 펌웨어 서명, 자격증명 보관, 안전 PLC 설정 보호)과 로봇 안전 기능의 사이버보안 설계는 제조사 몫이고, 네트워크 분할 장비·사용자 신원 제공자는 현장 IT·OT 조직 몫이며, ROP 는 그 결과와 인터페이스를 받아 쓰는 쪽으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-010",
+          "ref-616",
+          "ref-614"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f5(TPM·바이너리 서명 완화책), f14(제조사 제품 취약점), f15(로봇 안전 표준의 사이버보안 요구)를 경계 판단에 쓴 추정이다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f28",
+        "claim": "26. 사이버보안·접근권한·개인정보는 로봇 안전 기능의 사이버보안(25. 안전·위험 관리), 규격이 비워 둔 보안 책임 배분(28. 표준·상호운용성·다사업자 거버넌스), 운영자 역할 인증(18. 사람–로봇 협업·운영 인터페이스), 영상의 AI 학습 활용(27. AI·학습·적응과 모델 운영)과 맞물리는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-614",
+          "ref-031",
+          "ref-612",
+          "ref-621"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f15·f6·f4·f20 을 연결 근거로 쓴 추정. 10. 설비·건물 시스템 연동(oq-043·oq-056), 13. 작업 배정 — MRTA(oq-082), 24. 자산·소프트웨어 수명주기 관리(패치)와의 연결은 기존 열린 질문·페이지에 근거. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f29",
+        "claim": "확인한 VDA 5050·SROS 2·Open-RMF 문서는 고객(화주)별 작업·데이터 격리를 규정하지 않아, 공유 창고에서 고객별 격리는 인클레이브 범위나 대시보드 역할 같은 일반 수단을 ROP 가 조합해 설계해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031",
+          "ref-611",
+          "ref-612"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "세 문서를 읽은 범위에서 테넌트·고객 격리 개념을 찾지 못했다는 관찰이며 부재 확인은 아니다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f30",
+        "claim": "oq-082 와 관련해, DDS 인증은 메시지를 보낸 참여자의 신원을 확인해 구성요소 위조를 막지만 위치·배터리 같은 보고값 내용의 참·거짓은 검증하지 않으므로, 오염된 보고값 검증은 인증과 별도의 타당성 검사가 필요해 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-009",
+          "ref-010"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1(인증은 신원 확인)과 f5(신원 위조 위협)에서 도출. 보고값 타당성 검사 기준을 다룬 공개 자료는 이번에 확인하지 못했다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "예외·성과"
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-009",
+        "org": "Open Robotics (ROS 2 Design)",
+        "title": "ROS 2 DDS-Security integration",
+        "published": null,
+        "url": "https://design.ros2.org/articles/ros2_dds_security.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "ROS 2 가 쓰는 DDS-Security 플러그인(인증·접근 제어·암호)과 서명된 거버넌스·권한 파일 구조.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/design/gh-pages/articles/180_ros2_dds_security.md"
+      },
+      {
+        "id": "ref-010",
+        "org": "Open Robotics (ROS 2 Design)",
+        "title": "ROS 2 Robotic Systems Threat Model",
+        "published": null,
+        "url": "https://design.ros2.org/articles/ros2_threat_model.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "ROS 2 로봇 시스템 위협 모델 초안. 통신 위조, 물리 접근, 공급망, 데이터 프라이버시, 원격 접속 위협과 완화책.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/design/gh-pages/articles/183_ros2_threat_model.md"
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 3.0.0 명세 원문. 이번 실행에서는 보안 범위 제외 문구, updateCertificate 즉시 동작, RELEASE 구역 접근 허가를 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-759",
+        "org": "European Union (EUR-Lex)",
+        "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery",
+        "published": "2023-06",
+        "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EU 기계 규정. 2027-01-20 적용, 부속서 III 1.1.9 손상(corruption)으로부터의 보호 요구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-610",
+        "org": "Open Robotics (ROS 2 Design)",
+        "title": "ROS 2 Access Control Policies",
+        "published": null,
+        "url": "https://design.ros2.org/articles/ros2_access_control_policies.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "SROS 2 접근 제어 정책의 XML 구조(인클레이브·프로파일·권한), 토픽·서비스·액션별 허용·거부와 DDS 권한 파일로의 변환 과정.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/design/gh-pages/articles/181_ros2_access_control_policies.md"
+      },
+      {
+        "id": "ref-611",
+        "org": "Open Robotics (ROS 2 Design)",
+        "title": "ROS 2 Security Enclaves",
+        "published": null,
+        "url": "https://design.ros2.org/articles/ros2_security_enclaves.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "SROS 2 인클레이브의 정의와 컨텍스트·프로세스와의 대응, 인클레이브 적용 범위 선택 근거.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/design/gh-pages/articles/182_ros2_security_enclaves.md"
+      },
+      {
+        "id": "ref-612",
+        "org": "Open Robotics (osrf/ros2multirobotbook)",
+        "title": "Programming Multiple Robots with ROS 2 — Security",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/security.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 보안 구성: SROS 2 키스토어·인클레이브·권한 생성 도구, 대시보드의 TLS·Keycloak OIDC 인증과 역할별 보안 노드.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/security.md"
+      },
+      {
+        "id": "ref-613",
+        "org": "Eclipse Foundation (Eclipse Mosquitto)",
+        "title": "mosquitto.conf man page",
+        "published": null,
+        "url": "https://mosquitto.org/man/mosquitto-conf-5.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Mosquitto 브로커 설정 문서. ACL 파일의 토픽별 접근·pattern 치환(%c, %u), 인증서 기반 인증(require_certificate, use_identity_as_username). 공식 저장소의 man 페이지 원본(XML)으로 읽었다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/eclipse-mosquitto/mosquitto/master/man/mosquitto.conf.5.xml"
+      },
+      {
+        "id": "ref-614",
+        "org": "Association for Advancing Automation (A3)",
+        "title": "Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs)",
+        "published": null,
+        "url": "https://www.automate.org/robotics/blogs/updated-iso-10218-faq",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ISO 10218 2025 개정 FAQ. 로봇 안전에 적용되는 범위의 사이버보안 요구 포함을 설명.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-615",
+        "org": "NIST",
+        "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+        "published": "2023-09",
+        "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. OT 보안 지침 3판. 범위를 건물 자동화·물리적 출입통제·산업용 IoT 로 넓히고 SP 800-53 Rev. 5 OT 오버레이 제공.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-616",
+        "org": "CISA",
+        "title": "Mobile Industrial Robots Vehicles and MiR Fleet Software (ICSA-21-280-02)",
+        "published": null,
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-21-280-02",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MiR 차량·MiR Fleet 소프트웨어 복수 취약점에 대한 미국 CISA ICS 권고.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-617",
+        "org": "CSA / IEC (ANSI Webstore)",
+        "title": "CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)",
+        "published": "2013-08",
+        "url": "https://webstore.ansi.org/standards/csa/csaiec624432017-2442576",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. IEC 62443-3-3 의 판매 목록 소개. 7개 기본 요구에 연관된 시스템 보안 요구와 보안 수준.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-618",
+        "org": "MDPI (Journal of Cybersecurity and Privacy)",
+        "title": "Security Aspects of Zones and Conduits in IEC 62443",
+        "published": null,
+        "url": "https://www.mdpi.com/2624-800X/6/2/52",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. IEC 62443 의 보안 구역과 도관 개념의 보안 측면을 다룬 논문.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-619",
+        "org": "Mobile Industrial Robots (MiR)",
+        "title": "AMRs and Cybersecurity | Secure Robotics at MiR",
+        "published": null,
+        "url": "https://mobile-industrial-robots.com/blog/amrs-and-cybersecurity",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MiR 의 AMR 보안 소개 글. MiR Fleet Enterprise 의 IEC 62443-4-2 정렬 주장.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-620",
+        "org": "법제처 국가법령정보센터",
+        "title": "개인정보 보호법",
+        "published": null,
+        "url": "https://www.law.go.kr/lsEfInfoP.do?lsiSeq=195062",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 개인정보 보호법 본문. 제25조의2 이동형 영상정보처리기기의 운영 제한.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-621",
+        "org": "김·장 법률사무소",
+        "title": "'이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서' 관련 인사이트",
+        "published": null,
+        "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=30477",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 개인정보보호위원회 이동형 영상정보처리기기 안내서의 촬영 표시·가명처리·원본 활용 기준 해설.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-622",
+        "org": "법제처 국가법령정보센터",
+        "title": "근로자참여 및 협력증진에 관한 법률",
+        "published": null,
+        "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=105636",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 노사협의회 협의 사항에 '사업장 내 근로자 감시 설비의 설치'를 두는 법률.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-623",
+        "org": "한국인터넷진흥원(KISA)",
+        "title": "로봇 보안취약점 점검 체크리스트 해설서",
+        "published": null,
+        "url": "https://kisa.or.kr/2060205/form?lang_type=KO&page=&postSeq=36",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. KISA 지식플랫폼의 로봇 보안취약점 점검 체크리스트 해설서 게시물.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-624",
+        "org": "European Commission (Shaping Europe's digital future)",
+        "title": "The Cyber Resilience Act - Summary of the legislative text",
+        "published": null,
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-summary",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EU 사이버 복원력법 요약. 적용 대상과 보고 의무(2026-09-11)·주요 의무(2027-12-11) 적용일.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "seed 페이지 3~11절 첫 작성. 3절 왜 중요한가: f14(실제 AMR 취약점과 영향), f15·f16·f17(로봇 안전·기계·제품 규제가 사이버보안을 요구), f5(위협 모델) / 4절 핵심 개념: f1(인증·접근 제어·권한 파일), f3(인클레이브), f11(62443 기본 요구·보안 수준), f12(구역·도관), f19(이동형 영상정보처리기기) / 5절 현장 시나리오: f24(출하·제약, 원격 유지보수), f25(입고·제약, 카메라 영상과 작업자) / 6절 대표 접근법: f2(SROS 2 권한), f4(Open-RMF 역할 인증), f7(인증서 교체), f8(RELEASE 구역 허가), f9·f10(MQTT ACL), f13(벤더 주장 병기) / 7절 표준·오픈소스: f6(VDA 5050 보안 범위 제외), f11·f12, f15~f18, f19~f22(한국 법규·KISA) / 8절 대표 연구와 자료: f5, f14, f18, f22 / 9절 경계: f26(ROP 직접), f27('연계 대상'), f23(분류 원문 질문 — 추정) / 10절 연결: f28(25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스, 18. 사람–로봇 협업·운영 인터페이스, 27. AI·학습·적응과 모델 운영), f30(13. 작업 배정 — MRTA, oq-082), 기존 oq-043·oq-056(10. 설비·건물 시스템 연동) / 11절: 기존 oq-043·oq-056·oq-082 와 open_questions_new 4건, f29(고객별 격리)."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "보안 구역과 도관",
+        "term_en": "Zones and Conduits (IEC 62443)",
+        "definition": "공통 보안 요구를 공유하는 시스템 묶음(구역)과 구역 사이 통신 채널 묶음(도관)으로 산업 제어 시스템을 나눠 보호하는 IEC 62443 의 구조다."
+      },
+      {
+        "term_ko": "보안 수준",
+        "term_en": "Security Level (SL, IEC 62443)",
+        "definition": "IEC 62443 에서 우발적 위반(SL 1)부터 자원을 갖춘 숙련 공격자(SL 4)까지 막아야 할 위협 수준에 따라 요구의 엄격함을 나눈 등급이다."
+      },
+      {
+        "term_ko": "권한 파일",
+        "term_en": "Permissions File (DDS-Security)",
+        "definition": "DDS 참여자가 어떤 토픽을 발행·구독할 수 있는지 등 권한을 적고 권한 인증기관이 서명한 XML 문서다."
+      },
+      {
+        "term_ko": "이동형 영상정보처리기기",
+        "term_en": "Mobile Video Information Processing Device",
+        "definition": "사람이 몸에 착용하거나 이동 가능한 물체에 부착해 영상을 촬영하는 장치로, 개인정보 보호법 제25조의2가 업무 목적 운영을 제한한다."
+      }
+    ],
+    "open_questions_new": [
+      "물류센터 내부처럼 공개되지 않은 작업장에서 카메라를 단 로봇이 작업자를 촬영할 때 개인정보 보호법 제25조의2와 근로자 감시 설비 협의 가운데 무엇이 적용되는지 공식 해석이 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 18. 사람–로봇 협업·운영 인터페이스 | 근거: f25 | 종류: 일반",
+      "외부 유지보수 계정의 권한을 로봇·명령 단위로 나눈 매트릭스(예: 진단은 허용, 이동은 불허)를 공개한 로봇 관제·ROP 구성이나 표준이 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 9. 로봇·제조사 관제 연동 | 근거: f23 | 종류: 일반",
+      "여러 화주가 로봇 플릿을 공유하는 창고에서 고객별 작업·데이터 격리를 오케스트레이션 수준에서 규정한 표준이나 공개 설계가 있는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 28. 표준·상호운용성·다사업자 거버넌스 | 근거: f29 | 종류: 일반",
+      "ISO 10218-1:2025 의 사이버보안 요구는 어느 조항에서 무엇(접근 제한·원격 접속·로그 등)을 요구하며 로봇 관제 연동에 어떤 조건을 주는가? | 관련 영역: 26. 사이버보안·접근권한·개인정보, 25. 안전·위험 관리 | 근거: f15 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 19,
+      "cross_checked_count": 0,
+      "unverified": [
+        "모든 finding 교차 확인 없음(단일 출처 또는 이 위키의 종합)",
+        "f11 IEC 62443-3-3 은 판매 목록 소개만 확인, 표준 원문 미열람",
+        "f14 CISA 권고 발행일·영향 제품 판 미확인(검색 요약 기준)",
+        "f15 ISO 10218-1:2025 사이버보안 조항 내용 미확인",
+        "f19 제25조의2 시행일 미확인",
+        "f20 안내서 발행일 미확인(법률사무소 해설 경유)",
+        "f21 근로자참여법 조항 번호는 판에 따라 다를 수 있음",
+        "f22 KISA 해설서의 항목 수·범주는 검색 요약끼리 달라 넣지 않음",
+        "oq-043·oq-056·oq-082 는 부분 근거만 확보(f3·f30)해 해결 제안하지 않음",
+        "CISA 원격 접속 지침(2023·2025)은 문서 귀속을 확인하지 못해 넣지 않음"
+      ],
+      "scope_violations": [
+        "f27: 로봇 내부 보안·안전 PLC·네트워크 장비는 분류 원문 9장 '로봇 자체 지능·제어'·'시설·설비 제어' 쪽이라 '연계 대상:'으로 표시",
+        "f13: 제조사 관제 제품의 보안 인증 주장은 벤더 주장으로만 제안"
+      ],
+      "budget_used": {
+        "queries": 16,
+        "sources": 15
+      },
+      "limits": "재실행 1회차. 반려 사유 1(스키마 불일치: finding f27 이 sources 에 없는 ref-012 를 참조): 직전 반환값(research.json)이 이번 입력에 포함되지 않아 형식만 고칠 수 없었으므로 같은 대상·예산 안에서 브리프 전체를 다시 작성했고, 모든 findings[].source_ids 가 sources[].id 에 있는지 확인했다. ref-012 는 쓰지 않았으며 f27 은 ref-010·ref-616·ref-614 를 근거로 한다(관련 finding: f27). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-009·ref-010·ref-031, 신규 ref-610·ref-611·ref-612·ref-613. 나머지는 검색 요약 기준(원문 미열람, 신뢰도 상한 medium). 재사용 ref-009·ref-010 은 참고문헌 목록 요약이 입력에 없어 제목·기관을 원문 기준으로 적었다(같은 URL 이면 퍼블리셔가 기존 항목으로 합친다). 재사용 ref-031·ref-759 는 2026-09-25-61 브리프 값. 검색 16회/30, 신규 출처 15건/15(ref-610~ref-624, 예약 구간 안) — 신규 출처 예산에 도달해 The Robot Report(ISO 10218 교차 확인용), 비잔틴 로봇 연구 논문, KISA 로봇 보안모델 보도, 멀티테넌트 로보틱스 벤더 자료는 출처로 넣지 않았다. 교차 확인 0건. 한국 자료: 개인정보 보호법 제25조의2(ref-620), 개인정보위 안내서 해설(ref-621), 근로자참여법(ref-622), KISA 해설서(ref-623). 교차 규칙: 영상의 AI 학습 활용(f20)은 27. AI·학습·적응과 모델 운영과 연결 제안(f28). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음."
+    }
+  },
+  "ttft_ms": 11889,
+  "type": "result",
+  "duration_ms": 462670,
+  "uuid": "de9b3a11-0e72-4933-8125-d77470fd7a94",
+  "ttft_stream_ms": 822,
+  "time_to_request_ms": 66,
+  "first_content_frame_ms": 822,
+  "time_to_request_from_spawn_ms": 6419236,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790319515428.5312,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 464.5
+}

@@ -1,0 +1,133 @@
+{
+  "duration_api_ms": 23490,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.3745707999999999,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 163399,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 2607,
+    "output_tokens_details": {
+      "thinking_tokens": 1248
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 163399,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2607,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 163399,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 163399
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 2607,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 163399,
+      "webSearchRequests": 0,
+      "costUSD": 1.3745707999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1248,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-17\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 공식 저장소만 열림). 확인 32건, 미확인 0건, 교차 확인 0건. 강등: 없음(f13 은 기존 [추정] 유지, f1 은 3.0.0 필드명 positionInitialized → localized 정정 조건부 유지). 원문 미열람 출처: ref-063, ref-064, ref-065, ref-066, ref-067, ref-069, ref-070, ref-071, ref-073, ref-074, ref-076, ref-078, ref-159, ref-161, ref-162, ref-163, ref-164, ref-165, ref-224. 주의: 규격 필드 비교는 발행 주체 한 곳의 원문을 기준으로 했다. 제조사 지도와 업무 장소를 잇는 대응 규칙(f18), 지도 판 동기화(f20), 신뢰도 수용 기준(f22), ROP 경계(f32)는 이 위키의 추론이다. ISO 21423 은 최종 발행이 확인되지 않았고(검색상 FDIS 단계) 공통 좌표계의 기준점 개수는 미확인이다. LIF 는 README 판(1.0.0, 2023-09)보다 새 판(VDMA 2024-03)이 VDA 5050 3.0.0 에 인용돼 있다. 평면도 인식 자료(f25~f30)는 이전 트랙 실행의 재인용이다. / 2차 통과. 드리프트 없음(재검증: 직전 2차 지시 2건 이행 확인 — 분리 페이지 7절 표 GS1 GLN 행이 [사실] 식별 문장과 [추정] 대응 문장으로 나뉘었고, 3절 MassRobotics 부재 문장에 '스키마 파일 기준, 부재 확정 아님' 한정이 붙었다). 1차 수정 지시 14건 이행 유지. [분류원문] 보존, 섹션 순서 준수(형식 검증 코드 통과), 링크 유효. 참고: 분리 주제 페이지의 9. 검증 노트는 코드가 만든 고정 문구라 판정·건수를 담지 않는다. 용어집 ifc.md·indoorgml.md 링크 대상은 docs_tree.txt 에 없지만 용어집 색인에는 있어 목록이 갱신 전인 것으로 보고, 형식 검증 통과에 맡긴다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-17",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 공식 저장소만 열림). 확인 32건, 미확인 0건, 교차 확인 0건. 강등: 없음(f13 은 기존 [추정] 유지, f1 은 3.0.0 필드명 positionInitialized → localized 정정 조건부 유지). 원문 미열람 출처: ref-063, ref-064, ref-065, ref-066, ref-067, ref-069, ref-070, ref-071, ref-073, ref-074, ref-076, ref-078, ref-159, ref-161, ref-162, ref-163, ref-164, ref-165, ref-224. 주의: 규격 필드 비교는 발행 주체 한 곳의 원문을 기준으로 했다. 제조사 지도와 업무 장소를 잇는 대응 규칙(f18), 지도 판 동기화(f20), 신뢰도 수용 기준(f22), ROP 경계(f32)는 이 위키의 추론이다. ISO 21423 은 최종 발행이 확인되지 않았고(검색상 FDIS 단계) 공통 좌표계의 기준점 개수는 미확인이다. LIF 는 README 판(1.0.0, 2023-09)보다 새 판(VDMA 2024-03)이 VDA 5050 3.0.0 에 인용돼 있다. 평면도 인식 자료(f25~f30)는 이전 트랙 실행의 재인용이다. / 2차 통과. 드리프트 없음(재검증: 직전 2차 지시 2건 이행 확인 — 분리 페이지 7절 표 GS1 GLN 행이 [사실] 식별 문장과 [추정] 대응 문장으로 나뉘었고, 3절 MassRobotics 부재 문장에 '스키마 파일 기준, 부재 확정 아님' 한정이 붙었다). 1차 수정 지시 14건 이행 유지. [분류원문] 보존, 섹션 순서 준수(형식 검증 코드 통과), 링크 유효. 참고: 분리 주제 페이지의 9. 검증 노트는 코드가 만든 고정 문구라 판정·건수를 담지 않는다. 용어집 ifc.md·indoorgml.md 링크 대상은 docs_tree.txt 에 없지만 용어집 색인에는 있어 목록이 갱신 전인 것으로 보고, 형식 검증 통과에 맡긴다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 14287,
+  "type": "result",
+  "duration_ms": 23603,
+  "uuid": "dc932aa0-8465-4107-a1b1-34bbc12dd916",
+  "ttft_stream_ms": 2613,
+  "time_to_request_ms": 79,
+  "first_content_frame_ms": 2613,
+  "time_to_request_from_spawn_ms": 8962287,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790304815745.5479,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 25.2
+}

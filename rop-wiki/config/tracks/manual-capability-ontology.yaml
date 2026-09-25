@@ -1,0 +1,97 @@
+# 중점 연구 트랙 정의 — 매뉴얼 기반 로봇 기능 온톨로지 (빌드 사양서 8.1 · 8.2)
+# 형식은 8.2 "트랙 정의 파일 형식" 그대로다. 트랙은 분류를 바꾸지 않으며, 이 파일은 세부영역을 추가·병합하지 않는다.
+# 퍼블리셔(pipeline/lib/render.py)는 slug, name, status, current_stage, stages 를 읽어 홈의 트랙 현황과
+# 트랙 개요의 단계 진행 현황을 만든다. 대상 선정 스크립트는 runs_per_week 와 budget 을 읽는다.
+slug: manual-capability-ontology
+name: "매뉴얼 기반 로봇 기능 온톨로지"
+status: active                     # active | paused | done
+primary_area: 5                    # 5. 로봇 능력·작업 온톨로지
+related_areas: [9, 21, 23, 24, 27, 8, 12, 13, 25, 28, 10, 16]
+# 9. 로봇·제조사 관제 연동, 21. 온보딩·설정·현장 시운전, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리(분류 원문 10장 매핑),
+# 27. AI·학습·적응과 모델 운영(분류 원문 8장 교차 규칙),
+# 8. 실시간 세계 상태·데이터 일관성, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스(활용처 추가 연결, 구축자 제안),
+# 10. 설비·건물 시스템 연동, 16. 공용 자원·충전·에너지 최적화(확장 아이디어 1의 범위 능력 "도어 조작"·"충전"으로 추가 연결, 2026-09-25 [가정])
+current_stage: 1
+stages: 7
+runs_per_week: null                # 비우면 settings.track_runs_per_week(트랙 전체의 주당 횟수)를 따르고, 트랙 사이 배분은 settings.track_weights 가 정한다
+budget: {max_sources_per_run: 20, max_search_queries: 40}
+
+# --- 아래는 구축자가 추가한 필드 [가정] ------------------------------------------------------
+# stage_names: 단계 번호 → 단계 이름(사양서 8.1 의 "단계 n. <이름>" 제목에서 이름 부분). 표시할 때는 "단계 1. 기존 능력 표현 모델과 표준 조사"처럼 번호와 이름을 함께 쓴다.
+stage_names:
+  1: "기존 능력 표현 모델과 표준 조사"
+  2: "로봇 문서 유형과 정보 구조 조사"
+  3: "비정형 문서에서 온톨로지를 추출하는 방법 조사"
+  4: "온톨로지를 실행에 연결하는 방법 조사"
+  5: "완전성과 정확성을 검증하는 방법 조사"
+  6: "변경 관리·운영·거버넌스 조사"
+  7: "ROP 활용 시나리오 종합과 가설 판정"
+# stage_pages: 단계 번호 → 단계 페이지 파일명(docs/tracks/manual-capability-ontology/ 아래, 사양서 3장 경로 규약)
+stage_pages:
+  1: stage-1-existing-models-and-standards.md
+  2: stage-2-document-types.md
+  3: stage-3-extraction-methods.md
+  4: stage-4-execution-grounding.md
+  5: stage-5-completeness-verification.md
+  6: stage-6-lifecycle-governance.md
+  7: stage-7-rop-scenarios-and-hypotheses.md
+# 퍼블리셔가 단계 상태·완료 조건 판정을 기록하려면 render.py 가 읽는 선택 키를 쓴다 [가정]:
+#   stage_status: {1: "진행 중"}        # 대기 | 진행 중 | 완료 | 재개. 없으면 current_stage 기준으로 계산한다
+#   stage_completion: {1: false}       # 내용 검증 에이전트의 stage_complete 판정. 없으면 current_stage 앞 단계만 충족으로 본다
+
+# --- 다중 트랙·확장 아이디어 편입 때 더한 필드 (2026-09-25) [가정] ------------------------------------
+order: 1                           # 트랙 표시 순서(홈 트랙 현황·내비게이션·아이디어 매핑표). 첫 트랙이 맨 앞
+research_goals:                    # 트랙 개요 "2. 연구 목표"와 같은 문장. 1~3은 사양서 8.1, 4~5는 확장 아이디어 1 편입으로 추가
+  - "비정형 문서에서 로봇의 기능·실행 조건·제약·인터페이스 정보를 온톨로지로 구조화하는 방법을 밝힌다."
+  - "그 온톨로지를 ROP의 온보딩·작업 배정·실행·검증에 연결하는 방법을 밝힌다."
+  - "\"빠짐없이\"를 측정하고 검증하는 방법을 정한다."
+  - "작업 할당 질의: 작업을 할당할 때 수행 가능한 로봇을 온톨로지 질의로 찾는 방법과 질의 형식을 밝힌다."
+  - "신규 로봇 온보딩 시 능력 정의 초안 자동 생성: 새 로봇의 매뉴얼·SDK 문서에서 능력 정의 초안을 자동으로 만드는 방법과 사람 검토 지점을 밝힌다."
+scope_capabilities: [이동, 계단, 적재, 도어 조작, 충전]   # 확장 아이디어 1이 우선 다루는 능력(아이디어 정의 문구 그대로)
+# 살아있는 초안 문서. 트랙마다 자기 초안을 선언한다(pipeline/lib/paths.py track_draft_page·track_draft_versions, agent_runner 입력)
+draft_page: ontology-draft.md
+draft_title: "능력 온톨로지 초안"
+draft_template: ontology-draft.md          # templates/ 아래 파일명
+draft_versions: ontology_versions.json     # data/tracks/<slug>/ 아래 버전 이력 원천(auto:ontology-version-history)
+draft_version_label: "온톨로지 버전"         # auto:page-status 줄의 초안 버전 라벨
+# 단계가 만드는 산출물 페이지(docs/tracks/<slug>/ 아래). 트랙 실행의 입력에 더해진다
+stage_artifacts:
+  1: [model-standard-comparison.md]
+  2: [document-type-matrix.md]
+  3: [experiments.md]
+  5: [evaluation-and-verification.md, experiments.md]
+  7: [experiments.md]
+# 확장 아이디어 1 (docs/ideas/). 정의 문구는 사용자 요청 원문 그대로다
+idea_no: 1
+idea_name: "로봇 기능 온톨로지"
+idea_definition: "로봇 매뉴얼·SDK 문서에서 로봇별 능력(이동·계단·적재·도어 조작·충전)과 제약을 추출해 온톨로지로 정리. 작업 할당 시 수행 가능한 로봇을 질의로 찾고, 신규 로봇 온보딩 시 능력 정의 초안을 자동 생성"
+idea_page: docs/ideas/robot-capability-ontology.md
+# 28개 세부영역 × 아이디어 매핑(docs/ideas/index.md 매핑표·세부영역 페이지 "관련 연구 트랙"의 원천). primary = ● 중심 영역, related = ○ 함께 필요한 영역.
+# 매핑 근거는 idea_area_notes 와 결정 기록에 있다. 매핑은 연결을 더할 뿐 분류를 바꾸지 않는다
+idea_areas:
+  primary: [5]
+  related: [8, 9, 10, 12, 13, 16, 21, 23, 24, 25, 27, 28]
+idea_area_notes:
+  5: "분류 원문 10장이 매뉴얼 기반 로봇 온톨로지의 중심 연구영역으로 둔다. 능력·제약을 공통 모델로 표현하는 일 자체다"
+  8: "능력의 실행 조건(배터리·적재량·문 상태)을 실행 시점에 판단하는 쪽이다(기존 트랙의 활용처 연결)"
+  9: "분류 원문 10장의 함께 필요한 영역(어댑터). SDK 문서의 능력 기술을 실제 명령·상태로 잇는다"
+  10: "범위 능력 '도어 조작'. 로봇이 문·승강기를 직접 다루는지 설비 연동으로 여는지의 경계가 능력 정의에 들어간다"
+  12: "능력과 명령의 연결. 할당한 작업이 실행 단계에서 확실히 수행되는지와 이어진다(기존 트랙의 활용처 연결)"
+  13: "연구 목표 4 '작업 할당 질의'. 수행 가능한 로봇을 질의로 찾는 결과가 배정의 입력이다"
+  16: "범위 능력 '충전'. 충전 능력·조건이 충전기 배분과 충전 시점 계획의 입력이 된다"
+  21: "분류 원문 10장의 함께 필요한 영역(온보딩)이며 연구 목표 5 '능력 정의 초안 자동 생성'의 적용처다"
+  23: "분류 원문 10장의 함께 필요한 영역(검증). 추출한 능력과 질의 결과를 시험으로 확인한다"
+  24: "분류 원문 10장의 함께 필요한 영역(버전 관리). 문서·펌웨어 개정에 따라 능력 정의가 바뀐다"
+  25: "문서에 적힌 안전 제약을 능력의 제약으로 담는다(기존 트랙의 활용처 연결)"
+  27: "분류 원문 8장의 교차 규칙: 매뉴얼 해석은 이 영역의 방법이 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 것이다"
+  28: "능력 기술 표준과 제조사·ROP 사이의 책임(기존 트랙의 활용처 연결)"
+# 용어집에 더할 핵심 용어(리서치·스토리텔러가 근거와 함께 용어집 항목을 제안한다) [가정]
+glossary_targets:
+  - "로봇 능력 온톨로지(robot capability ontology)"
+  - "능력·스킬·서비스 모델(Capabilities, Skills and Services, CSS)"
+  - "역량 질문(competency question)"
+  - "SPARQL"
+  - "능력 기반 작업 배정(capability-based task allocation)"
+  - "온톨로지 학습(ontology learning)"
+  - "자산 관리 셸(Asset Administration Shell)"
+  - "VDA 5050 팩트시트(factsheet)"

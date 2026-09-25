@@ -1,0 +1,723 @@
+{
+  "run_id": "2026-09-25-09",
+  "outline": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "로봇 완료 신호는 물리적 인도만 나타내고 재고 반영·점유 변경은 다른 규격이 정의하므로, 공정 모델은 '운반 완료'와 '인수 확인·재고 반영 완료'를 다른 단계로 두어야 할 것으로 보인다. [추정][^ref-044] SCOR 이행도 배송 증빙·고객 인수 단계로 끝난다. [사실][^ref-123]",
+      "planned_findings": [
+        "f14",
+        "f15",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 750,
+      "summary": "BPMN, ISA-95 세그먼트 의존, Open-RMF 작업·단계, CBV의 arriving·receiving·accepting, 워크플로 넷, OCEL 2.0 이 이 영역의 기본 용어다. [사실][^ref-112]",
+      "planned_findings": [
+        "f1",
+        "f6",
+        "f9",
+        "f13",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 1100,
+      "summary": "입고 → 적치 가상 시나리오에서 로봇의 drop 완료·하역 결과는 물리적 인도까지만 나타내고, 입고 완료는 WMS 인수 확인이 따로 필요할 것으로 보인다. [추정][^ref-044]",
+      "planned_findings": [
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f3",
+        "f8",
+        "f10",
+        "f15",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 900,
+      "summary": "이 위키는 관련 접근법을 업무 프로세스 표기, 세그먼트 의존, 로봇 작업 단계 구성, 형식적 설계 점검의 네 갈래로 정리한다. [의견]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "BPMN(ISO/IEC 19510), IEC 62264-3, B2MML, Open-RMF, VDA 5050, GS1 CBV, SCOR, OCEL 2.0 이 관련 표준이다. [사실][^ref-117]",
+      "planned_findings": [
+        "f1",
+        "f4",
+        "f5",
+        "f9",
+        "f10",
+        "f11",
+        "f13",
+        "f15",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 450,
+      "summary": "BPMN 기반 다중 로봇 실행 프레임워크 FaMe, 로봇 임무 기술 형식 비교, 워크플로 넷 건전성 복잡도, OCEL 2.0 명세가 대표 자료다. [사실][^ref-114]",
+      "planned_findings": [
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 500,
+      "summary": "ROP는 업무 단계와 로봇 작업 단위 사이의 순서·대기·완료 조건을 맡고, 재고 확정과 로봇 내부 동작 흐름은 연계 대상으로 보인다. [추정][^ref-044]",
+      "planned_findings": [
+        "f22",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 550,
+      "summary": "1. 주문·업무 시스템 연계, 4. 성과·경제성·프로세스 개선, 7. 화물·재고·자산 식별과 추적, 9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 14. 작업 순서·스케줄링, 19. 모니터링·이상 탐지·원인 분석, 23. 시험·형식 검증·벤치마크와 이어진다.",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f24",
+        "f13",
+        "f14",
+        "f11",
+        "f12",
+        "f2",
+        "f10",
+        "f6",
+        "f8",
+        "f17",
+        "f18",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 450,
+      "summary": "로봇 완료와 WMS 입고 확정의 국내 분리 관행, 세그먼트 의존의 창고 적용, 업무 프로세스와 로봇 작업 상태의 동기화 매핑이 열린 질문이다.",
+      "planned_findings": [
+        "f14",
+        "f8",
+        "f22"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오), 페이지 상태 자동 영역 추가. 2차 수정: 5절 태그 강등 2건·예외 칸 태그 추가, 6절 요약 [의견], 프런트매터 sources 정리"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"4. 핵심 개념과 용어\" 절을 옮겼다. 2차 수정: ref-120 각주와 건전성의 교착·라이브락 문장을 빼고 ref-121 근거 문장으로 줄였다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"6. 대표 접근법과 기술\" 절을 옮겼다. 2차 수정: 첫 문장을 [의견] 정리로 바꾸고 ref-120 문장을 ref-121 근거 문장으로 줄였다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,105자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"8. 대표 연구와 자료\" 절(870자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"11. 열린 질문\" 절(815자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area02-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 2. 공정·워크플로 모델링 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절을 옮겼다(링크는 주제 페이지 위치 기준). 2차 수정: 7번 항목 [추정] 강등, 12번 항목 두 주장 분리, 1번 항목 ref-119 추가"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 2. 공정·워크플로 모델링 | 영역 심화 3~11절 초안 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오, 1차 조건부 승인 수정 13건과 2차 수정 지시 9건 반영) | run 2026-09-25-09",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 2. 공정·워크플로 모델링: 영역 심화 초안 작성. 로봇의 운반 완료와 인수 확인·재고 반영 완료를 서로 다른 단계로 표현하는 표준(BPMN, ISA-95/B2MML, Open-RMF, GS1 CBV)을 정리했다",
+    "category_recent": "2026-09-25 — 2. 공정·워크플로 모델링: 3~11절 초안 작성(작업 단계·선후관계·완료 조건 표현 표준, 입고 → 적치·출하 시나리오)",
+    "area_recent": "2026-09-25 — 2. 공정·워크플로 모델링: 영역 심화 초안(3~11절) 작성, 새 열린 질문 3건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "bpmn",
+      "term_ko": "비즈니스 프로세스 모델 및 표기법",
+      "term_en": "Business Process Model and Notation (BPMN)",
+      "definition": "OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPMN 2.0.1을 PAS 절차로 국제표준화한 것이다.",
+      "description": "업무 분석가부터 구현 개발자·운영 관리자까지 이해할 수 있는 표기를 목표로 한다. 이 위키에서는 로봇 운반 단계와 인수 확인 대기 단계를 나눠 표현하는 후보 표기법으로 다룬다.",
+      "related_areas": [
+        2,
+        12
+      ],
+      "sources": [
+        "ref-112"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "workflow-net",
+      "term_ko": "워크플로 넷",
+      "term_en": "Workflow Net (WF-net)",
+      "definition": "워크플로를 모델링·분석하는 표준적 방법 가운데 하나로 쓰이는 페트리 넷의 한 부류이다.",
+      "description": "워크플로 넷의 건전성(soundness) 판정은 그 계산 복잡도까지 다뤄지는 연구 대상이다.",
+      "related_areas": [
+        2,
+        23
+      ],
+      "sources": [
+        "ref-121"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "ocel",
+      "term_ko": "객체 중심 이벤트 로그",
+      "term_en": "Object-Centric Event Log (OCEL)",
+      "definition": "이벤트와 여러 객체 사이 관계, 관계의 한정자, 시간에 따라 바뀌는 객체 속성을 기록하는 이벤트 로그 교환 표준이며, 2.0판은 SQLite·XML·JSON 형식을 둔다.",
+      "related_areas": [
+        2,
+        4,
+        19
+      ],
+      "sources": [
+        "ref-122"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "b2mml",
+      "term_ko": "B2MML",
+      "term_en": "Business To Manufacturing Markup Language (B2MML)",
+      "definition": "MESA International이 ISA-95(IEC 62264)의 데이터 모델을 XML 스키마로 구현한 교환 형식이다.",
+      "description": "판 0701(2023)은 ANSI/ISA-95.00.02-2018과 ANSI/ISA-95.00.05-2018을 기반으로 하며, 운영 세그먼트 의존 유형과 자재 사용 유형을 정의한다.",
+      "related_areas": [
+        1,
+        2,
+        14
+      ],
+      "sources": [
+        "ref-117",
+        "ref-118"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-023",
+      "org": "Open Robotics",
+      "title": "Workcells - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 의 적재(dispenser)·하역(ingestor) 워크셀 연동과 요청·결과 메시지 흐름을 설명하는 공식 문서. 이번 실행은 입력 원문 텍스트로 확인한 재인용.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(현재 main 은 3.0.0 판). pick·drop 동작 정의와 파라미터. 이번 실행은 입력 원문 텍스트로 확인한 재인용.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-044",
+      "org": "GS1",
+      "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+      "published": "2021-09-30",
+      "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "GS1 공식 EPCIS 저장소의 CBV 2.0 온톨로지(Turtle). 업무 단계(arriving·receiving·accepting·storing 등)·처분 상태의 정의 문구를 담는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-049",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 하역 워크셀 결과 메시지 정의. 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-110",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업을 단계(phase)로 구성하는 방식, 배송·Compose 작업 유형, 자동으로 더해지는 필수 단계, 작업 요청 API 를 설명하는 공식 문서(mdBook 원본).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF API 의 작업 상태 JSON 스키마. 작업 상태 12개 값, 완료·진행·대기 단계, 단계별 이벤트와 소요 시간 추정을 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s8.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-112",
+      "org": "OMG(Object Management Group)",
+      "title": "About the Business Process Model And Notation Specification Version 2.0",
+      "published": null,
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BPMN 2.0 명세의 OMG 공식 소개 페이지. ISO/IEC 19510:2013 은 OMG BPMN 2.0.1 을 PAS 절차로 채택한 것이다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md"
+      ]
+    },
+    {
+      "id": "ref-113",
+      "org": "Camunda",
+      "title": "Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)",
+      "published": null,
+      "url": "https://docs.camunda.io/docs/components/concepts/messages/",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "BPMN 엔진 Camunda 8 의 메시지 상관(메시지 이름·상관 키 구독, TTL 버퍼링, 버퍼 보관 중 같은 메시지 ID 중복 거부) 동작을 설명하는 공식 문서의 저장소 원본. 벤더 주장.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-114",
+      "org": "Corradini, F., Pettinari, S., Re, B., Rossi, L., & Tiezzi, F.",
+      "title": "A BPMN-driven framework for Multi-Robot System development",
+      "published": "2023",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0921889022002111",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BPMN 모델링 지침으로 다중 로봇 임무를 기술하고 로봇별 실행 프로세스로 분할해 ROS 2 연동 BPMN 엔진으로 분산 실행하는 FaMe 프레임워크 논문(Robotics and Autonomous Systems 160, 104322).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-area02-s8.md"
+      ]
+    },
+    {
+      "id": "ref-116",
+      "org": "Filippone, G., Pettinari, S., & Pelliccione, P.",
+      "title": "Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis",
+      "published": "2026-03",
+      "url": "https://arxiv.org/abs/2603.15427",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 행동 트리·상태 기계·HTN·BPMN 을 로봇 임무 기술 형식으로 임무 수준에서 비교한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s8.md"
+      ]
+    },
+    {
+      "id": "ref-117",
+      "org": "MESA International",
+      "title": "B2MML-BatchML — Schema/B2MML-Common.xsd",
+      "published": "2023",
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ISA-95 의 XML 구현 B2MML(판 0701) 공통 스키마. 세그먼트 의존 유형·자재 사용 유형 등 열거값을 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-118",
+      "org": "MESA International",
+      "title": "B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd",
+      "published": null,
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-OperationsDefinition.xsd",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "B2MML 운영 정의 스키마. 운영 세그먼트와 SegmentDependency·DependentOperationsSegmentID 요소, 자재 명세를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md"
+      ]
+    },
+    {
+      "id": "ref-119",
+      "org": "IEC / ISO",
+      "title": "IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management",
+      "published": "2016",
+      "url": "https://www.iso.org/standard/67480.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 수준 3 제조 운영 관리를 생산·유지보수·품질·재고 운영 관리 네 활동 모델로 정의한 ISA-95 Part 3 국제판의 ISO 소개 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-121",
+      "org": "Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022)",
+      "title": "The complexity of soundness in workflow nets",
+      "published": "2022",
+      "url": "https://arxiv.org/abs/2201.05588",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 워크플로 넷이 워크플로 모델링·분석의 표준적 방법임을 전제로 건전성 판정의 계산 복잡도를 다룬 논문(ACM/IEEE LICS 2022).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s6.md",
+        "docs/topics/2026/2026-09-25-area02-s8.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-122",
+      "org": "arXiv:2403.01975 저자(미확인)",
+      "title": "OCEL (Object-Centric Event Log) 2.0 Specification",
+      "published": "2024-03",
+      "url": "https://arxiv.org/abs/2403.01975",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이벤트–객체·객체–객체 관계와 한정자, 변하는 객체 속성을 담는 객체 중심 이벤트 로그 표준 OCEL 2.0 명세.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/topics/2026/2026-09-25-area02-s4.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md",
+        "docs/topics/2026/2026-09-25-area02-s8.md",
+        "docs/topics/2026/2026-09-25-area02-s10.md"
+      ]
+    },
+    {
+      "id": "ref-123",
+      "org": "ASCM",
+      "title": "SCOR Model — Fulfill F1.3 Pick Product",
+      "published": null,
+      "url": "https://scor.ascm.org/processes/fulfill/F1.3",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. SCOR Digital Standard 의 Fulfill 프로세스 단계 정의 페이지. 확인된 단계는 F1.3 Pick Product 와 F1.11 Obtain Proof of Delivery or Customer Acceptance.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md",
+        "docs/topics/2026/2026-09-25-area02-s7.md"
+      ]
+    },
+    {
+      "id": "ref-124",
+      "org": "국가물류통합정보센터(국토교통부)",
+      "title": "스마트물류센터 인증제 안내",
+      "published": null,
+      "url": "https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 물류처리 과정별 자동화 수준(기능영역)과 시설 구조적 성능·정보시스템 등(기반영역)으로 물류센터를 평가해 1~5등급을 주는 국내 인증제 안내.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "국내 물류센터는 로봇의 운반 완료와 WMS의 입고·인수 확정을 별도 단계로 두는가, 그렇다면 두 단계를 잇는 식별 키와 확정 대기 시간 기준은 무엇인가?",
+      "areas": [
+        2,
+        1
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "ISA-95 세그먼트 의존 유형(B2MML DependencyType)을 입고·적치·피킹·출하 같은 창고 물류 작업의 선후관계 표현에 적용한 사례나 확장이 있는가?",
+      "areas": [
+        2,
+        14
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "업무 프로세스 모델(BPMN 등)의 단계 상태와 로봇 작업 상태(Open-RMF 작업 상태, VDA 5050 동작 상태)를 동기화하는 표준 매핑이나 공개 구현이 있는가?",
+      "areas": [
+        2,
+        9,
+        12
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "입고",
+      "item": "시작 조건",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "입고",
+      "item": "작업 대상",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "입고",
+      "item": "수행 자원",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "입고",
+      "item": "제약",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "입고",
+      "item": "완료·인계",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "입고",
+      "item": "예외·성과",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "적치",
+      "item": "제약",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "출하",
+      "item": "작업 대상",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    },
+    {
+      "step": "출하",
+      "item": "완료·인계",
+      "link": "docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "2. 공정·워크플로 모델링"
+    }
+  ],
+  "additional_research_requests": [
+    "6·8절: 장크트갈렌 대학 Alexandria 저장소의 경험 보고(Autonomous Mobile Robots with Business Process Management Systems at the Edge, 원래 ref-115)의 실재·저자·발행일 확인 — 1차 검증에서 실재 미확인으로 삭제(f20)되어 BPMS 를 로봇 안·밖에 두는 구성 비교를 싣지 못했다.",
+    "3·5·7절: SCOR Fulfill 의 F1.4 Pack Product, F1.5 Stage Product, F2.3·F2.4·F2.12 단계 번호와 명칭을 scor.ascm.org 원문 또는 독립 출처로 확인 — 1차 검증에서 미확인이라 F1.3·F1.11 만 실었다.",
+    "4·6절: ref-120(Soundness of workflow nets, Formal Aspects of Computing 2011)의 실재와 저자 확인, 워크플로 넷 건전성이 교착·라이브락 부재를 보장한다는 정의의 확인 — 2차 검증 지시로 ref-120 과 교착·라이브락 서술을 모든 출력에서 뺐다.",
+    "6절: BPMN 2.0.x 명세 원문(OMG formal)에서 수신 작업·메시지 이벤트·게이트웨이의 실행 의미 확인 — 현재 메시지 대기 동작은 벤더 문서(Camunda)에만 기대고 있다.",
+    "6·7절: ISA-88 절차 모델(절차·단위 절차·운영·단계)과 PackML 의 공식 원문 출처 — 이번 실행은 신규 출처 상한으로 넣지 못했다.",
+    "3·5절: 국내 물류센터에서 로봇 운반 완료와 WMS 입고·인수 확정을 분리해 운영하는 사례, 국내 BPMN·물류 로봇 공정 모델링 학술 자료 — 한국 자료는 스마트물류센터 인증 안내 1건뿐이다.",
+    "5절 예외·성과: 인수 확인 지연·하역 실패가 처리량·시간·비용에 주는 영향의 출처 있는 수치 — 현재 미확인으로 두었다.",
+    "퍼블리셔 확인: 이전 브리프(2026-09-25-04·05·06)가 ref-110~ref-118 을 다른 출처에 부여했을 수 있어 참고문헌 id 충돌 여부 점검이 필요하다.",
+    "파이프라인 담당 요청: 분량 자동 분리 코드가 세부영역 절을 주제 페이지로 옮길 때 상대 링크를 새 위치 기준으로 다시 쓰지 않아 10절 분리 페이지에서 링크가 깨졌다. 분리 시 링크 경로 재작성이 필요하다."
+  ],
+  "fixes_applied": [
+    "f1: ISO/IEC 19510:2013 표기 — 4절과 7절 표, 각주에서 'ISO/IEC 19510:2013은 OMG BPMN 2.0.1을 공개 규격(PAS) 절차로 국제표준화(채택)한 것'으로 적고 '2.0.2가 2013년판'이라는 표현은 쓰지 않았다(2.0.2 발행일은 싣지 않음).",
+    "f2: 6절 BPMN 메시지 대기 문단과 10절 12. 명령·작업 실행의 신뢰성 항목에서 [추정]과 '벤더 주장'을 유지하고, 중복 거부를 '같은 이름·상관 키·메시지 ID의 메시지가 아직 버퍼에 있는 동안'으로 조건을 붙여 썼다.",
+    "f6: 4절 운영 세그먼트 의존 항목과 6절 ISA-95·B2MML 소절에서 '운영 세그먼트가 SegmentDependency 요소와 DependentOperationsSegmentID 요소를 둔다'로 고쳐 부모-자식 관계를 단정하지 않았다.",
+    "f15: 3절·5절(출하 시나리오 완료·인계)·7절 SCOR 행에서 F1.3 Pick Product와 F1.11 Obtain Proof of Delivery or Customer Acceptance(B2C 이행의 마지막 단계)만 [사실]로 쓰고 F1.4·F1.5·F2.3·F2.4·F2.12는 본문에서 뺐다.",
+    "f16: 4절·6절·8절·10절에서 '워크플로 넷은 워크플로를 모델링·분석하는 표준적 방법 가운데 하나'를 [사실]로 두고 ref-064만 각주로 달았으며, '건전성이 교착·라이브락 부재를 보장한다'는 [추정]으로 강등하고 ref-120 각주에 '(원문 미열람)'을 유지했다.",
+    "f20: 6·8절에 넣지 않았고 ref-058은 본문 각주와 reference_updates에서 뺐으며, 장크트갈렌 경험 보고의 실재·서지 확인을 additional_research_requests에 넘겼다.",
+    "f21: 8절에서 '전문가 검증' 부분을 빼고 네 형식을 임무 수준에서 비교했다는 내용만 썼으며, ref-116 기관 칸을 각주와 reference_updates 모두 'Filippone, G., Pettinari, S., & Pelliccione, P.'로 등록했다.",
+    "ref-121: reference_updates와 13절 각주의 기관 칸을 'Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022)'로 등록했다.",
+    "f23: 3절에서 '성과관리 체계'를 빼고 기반영역을 '시설의 구조적 성능·정보시스템 도입 수준 등'으로 썼으며 reference_updates 요약도 같게 고쳤다.",
+    "f3·f8·f14·f18·f22·f24: 모두 [추정]을 유지하고 3·5·6·8·9절의 해당 문장 안에 '이 구성을 적용한 표준·사례는 확인하지 못했다'(또는 같은 뜻의 한계)를 붙였으며, f22·f24는 9절 표의 '연계 대상:' 칸에 WMS·MES 재고 확정과 로봇 내부 행동 트리·상태 기계로만 짧게 썼다.",
+    "각주: ref-112·ref-114·ref-116·ref-119·ref-120·ref-121·ref-122·ref-123·ref-124 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates에 source_unopened: true를 넣었으며, ref-023·ref-031에는 붙이지 않고 요약의 '원문 미열람.' 머리말도 지웠다.",
+    "5절 현장 시나리오: 입고 → 적치 시나리오의 완료·인계(f11·f12·f13·f14·f3)와 제약(f8), 출하 시나리오의 완료·인계(f15의 F1.11만)를 흐름 단계명과 여섯 항목 문자열 그대로 표기하고, 설명용 가상 시나리오임을 밝히고 수치는 넣지 않았다(처리량 영향은 미확인으로 둠).",
+    "10절: 1. 주문·업무 시스템 연계, 4. 성과·경제성·프로세스 개선, 7. 화물·재고·자산 식별과 추적, 9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 14. 작업 순서·스케줄링, 23. 시험·형식 검증·벤치마크를 번호와 이름으로 연결하고, f18에 따라 19. 모니터링·이상 탐지·원인 분석도 연결했으며 프런트매터 related_areas를 [1, 4, 7, 9, 12, 14, 19, 23]으로 맞췄다.",
+    "분량 초과 자동 분리: 2. 공정·워크플로 모델링 본문 8,781자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,565자",
+    "형식 검증 재작성: docs/topics/2026/2026-09-25-area02-s10.md 본문의 세부영역 링크 8개(세부영역 폴더 기준 상대 경로라 깨짐)를 주제 페이지 위치 기준 '../../categories/<대분류 slug>/<파일>.md' 경로로 고쳤다. 내용·태그·각주는 바꾸지 않았고, 이미 분리된 결과(세부영역 본문 3,565자)를 그대로 보내 재분리가 일어나지 않게 했다.",
+    "2차: 세부영역 페이지 5절 시나리오 1 표 아래 'CBV로 보면 arriving에 가깝다' 문장을 [추정]으로 바꾸고 각주를 [^ref-031][^ref-049][^ref-044]로 달았다.",
+    "2차: 분리 페이지 2026-09-25-area02-s10.md 의 7. 화물·재고·자산 식별과 추적 항목 'CBV의 arriving·receiving·accepting 구분이 두 완료를 잇는 기준이 된다'를 [추정]으로 바꿨다.",
+    "2차: 세부영역 페이지 6절 요약 문장과 분리 페이지 2026-09-25-area02-s6.md 의 1. 세 줄 요약 첫 줄·3. 본문 첫 문장을 '이 위키는 이 영역의 관련 접근법을 … 네 갈래로 정리한다'로 다시 쓰고 '두 완료를 나눠 표현하는 방법' 표현을 없앴으며 태그를 [의견]으로 바꿨다(태그 뒤 괄호 없음).",
+    "2차: 세부영역 페이지 5절 시나리오 2 아래 '출하에서도 로봇 작업 완료와 고객 인수 사이에 업무 단계가 남는다'를 [추정]으로 바꾸고 각주를 [^ref-031][^ref-123]으로 달았다.",
+    "2차: ref-120 을 모든 출력에서 뺐다 — s4·s6 의 [^ref-120] 각주·각주 정의·프런트매터 sources, reference_updates 의 ref-120 항목을 지우고, s4·s6 의 교착·라이브락 문장을 ref-121 근거의 '워크플로 넷의 건전성(soundness) 판정은 그 계산 복잡도까지 다뤄지는 연구 대상이다. [사실]'로 줄였으며, 용어집 workflow-net description 에서도 교착·라이브락 문구를 뺐다.",
+    "2차: 세부영역 페이지 프런트매터 sources 에서 ref-114·ref-120·ref-122 를 뺐다(본문·13절 각주와 일치).",
+    "2차: 분리 페이지 2026-09-25-area02-s10.md 의 12. 명령·작업 실행의 신뢰성 항목을 '메시지 상관·버퍼 보관 중 중복 거부 … [추정] 벤더 주장[^ref-113]'과 'Open-RMF 작업 상태 12개 값 … [사실][^ref-111]' 두 주장으로 나눴다.",
+    "2차: 분리 페이지 2026-09-25-area02-s10.md 의 1. 주문·업무 시스템 연계 항목 각주에 [^ref-119]를 더하고 프런트매터 sources 와 8. 출처에 ref-119 를 넣었으며 reference_updates 의 ref-119 cited_by 에 이 페이지를 더했다.",
+    "2차: 세부영역 페이지 5절 시나리오 1 예외·성과 칸의 '인수 확인이 오지 않거나 하역이 실패하면 공정은 대기하거나 예외로 분기해야 한다.' 뒤에 [추정][^ref-044][^ref-119]를 붙였다."
+  ],
+  "standards_updates": [
+    {
+      "name": "BPMN 2.0 (ISO/IEC 19510:2013)",
+      "kind": "표준",
+      "org": "OMG(Object Management Group) · ISO/IEC",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "related_areas": [
+        2,
+        12
+      ],
+      "summary": "업무 프로세스 표기법. ISO/IEC 19510:2013 은 OMG BPMN 2.0.1 을 PAS 절차로 채택한 것이다(원문 미열람).",
+      "ref_id": "ref-112"
+    },
+    {
+      "name": "IEC 62264-3:2016 (ISA-95 Part 3) 제조 운영 관리 활동 모델",
+      "kind": "표준",
+      "org": "IEC / ISO",
+      "url": "https://www.iso.org/standard/67480.html",
+      "related_areas": [
+        1,
+        2
+      ],
+      "summary": "수준 4와 수준 2 사이 제조 운영 관리를 생산·유지보수·품질·재고 운영 관리 네 활동 모델로 정의한다(원문 미열람).",
+      "ref_id": "ref-119"
+    },
+    {
+      "name": "B2MML (Business To Manufacturing Markup Language, 판 0701)",
+      "kind": "표준",
+      "org": "MESA International",
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-Common.xsd",
+      "related_areas": [
+        1,
+        2,
+        14
+      ],
+      "summary": "ISA-95 데이터 모델의 XML 스키마 구현으로, 운영 세그먼트 의존 유형과 자재 사용 유형을 정의한다(2023).",
+      "ref_id": "ref-117"
+    },
+    {
+      "name": "OCEL 2.0 (Object-Centric Event Log)",
+      "kind": "표준",
+      "org": "arXiv:2403.01975 저자(미확인)",
+      "url": "https://arxiv.org/abs/2403.01975",
+      "related_areas": [
+        2,
+        4,
+        19
+      ],
+      "summary": "이벤트와 여러 객체 사이 관계·한정자·변하는 객체 속성을 담는 이벤트 로그 교환 표준으로 SQLite·XML·JSON 형식을 둔다(2024-03, 원문 미열람).",
+      "ref_id": "ref-122"
+    }
+  ]
+}

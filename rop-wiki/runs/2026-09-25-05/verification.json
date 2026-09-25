@@ -1,0 +1,237 @@
+{
+  "run_id": "2026-09-25-05",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-079 README 원문(github_raw)에 '5000 samples … over 80 floorplan object categories', 다각형 주석 문구 있음. ref-080 는 원문 미열람(검색 결과 일치). 두 출처가 같은 저자 계열이라 독립 교차 아님."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 요약에 핀란드 부동산 마케팅 자료, Rooms·Icons·Structural components(walls, railings, staircase 등), 이미지별 SVG 주석이 나타남. ref-080 단일 출처, 신뢰도 medium 상한."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-081 README 원문에 LIFULL 래스터 이미지 공유 불가, 벡터 주석 공개, '100,000+ vector-graphics representation' 문구 있음. 벽·문·방 유형·아이콘 요소 구성은 README 요약에서 직접 보이지 않아 논문 기준으로 본다. README 의 '약 90% 정밀도·재현율'은 저자 주장이므로 본문에 쓰려면 [추정]·저자 주장 병기가 필요하다(이번 claim 에는 없음)."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-046 README 원문에 ICCV 2019 제목, R2V·R3D, wall·door&window·room types 라벨 있음. 815장은 README 에 없고 검색 요약(DeepFloorplan arXiv 1908.11025)에서 확인. 같은 저자 계열이라 독립 교차 아님."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-082 프로젝트 페이지 원문(github_raw)에 11,602(2021-08)→15,663(2021-11)장, 35개 범주, CC BY-NC 4.0, 주거·상업 건물, ICCV 2021, 'shutdown in early 2022' 있음. ref-083 원문 미열람. 같은 저자라 독립 교차 아님. 참고: 제3자 카드(ref-084) 검색 요약은 '30 object categories'로 적어 범주 수 표기가 다르다(thing 30 + stuff 5 로 보이나 미확인)."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 근거가 제3자 재배포 카드(ref-084, 원문 미열람) 검색 요약이다. 설비 범주 elevator·escalator 는 검색 요약에서 확인되나, '벽과 주차 구역은 stuff 범주' 부분은 근거 발췌(wall·parking 이 주석 요소의 약 27%)가 뒷받침하지 않는다. 공식 프로젝트 페이지 원문(ref-082)에는 범주 목록이 없다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 요약에 413,062 chunks·5,538 drawings·27 categories(기둥·보 같은 구조 요소, 문·창문 같은 비구조 요소)·주거 14%·대형 공공·상업 시설 다수, 비상업 용도 제한·승인제 접근이 나타남. NeurIPS 2025 포스터 확인. '도면 기호' 범주는 스니펫에 나타나지 않음(수정 지시)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-085 README 원문에 954장, 70,873 rects·954 slabs, px/m 축척, JSON, 요청 양식 배포, MIT, Automation in Construction 156, 105132(2023) 있음. '칠레 주거 건물 프로젝트' 출처는 README 에서 명시적으로 확인되지 않음(수정 지시로 삭제 또는 미확인 표시)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-086 README 원문에 Computer Graphics Forum(EG 2024), 9,804/500/500, 512×512, LIFULL HOME'S 데이터 이용 승인 필요, 벽·방 유형·문 주석, Google Form 신청 있음."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-053 README 원문에 17,000건, 공개 부동산 매물 출처, 벽·문·창문·방·발코니 벡터, via_door 54.2%·adjacency 35.2%·direct 7.6%·via_window 3.0%, 미터 좌표, 13,053/1,632/1,632, CC BY 4.0·MIT 있음. README 는 모든 평면도가 남아시아 시장 출처라고도 적는다(이번 claim 에는 없음)."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-054 README 원문에 5.3K 평면도·18.9K 아파트, 스위스, ECCV 2024, 방=노드·연결 유형=엣지, 생성용 벤치마크 있음. 근거 발췌의 '계단 영역 범주' 언급은 README 에서 확인되지 않음(claim 에는 없으니 본문에 쓰지 않는다)."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 결과에 122장 스캔 평면도, 출처·양식별 4개 묶음, 방·벽·문·창문 등 구조 요소와 구조 관계 주석이 나타남. 발행: International Journal on Document Analysis and Recognition 18(1), 2015 — 브리프의 published null 을 2015 로 고친다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): AI Hub 검색 결과에 평면도·입면도·단면도·구조도, YOLOv5 객체 인식, DeepLabV3+ 구조 인식(출입문·창호·벽체) 세그멘테이션이 나타남. 같은 페이지에 공간 인식(거실·침실·주방) DeepLabV3+ 모델도 있다. 규모 수치(48,033장 등)는 claim 에 없으므로 본문에 쓰지 않는다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 결과에 MDA-Unet·MACU-Net 기반 분할, 재구성 단계의 벡터화·3D 모델 생성, 2024-08 arXiv 가 나타남. 대상 요소(벽·창문·계단·난간)는 이번 검증 스니펫에 직접 나오지 않아 리서치 스니펫에 기댄다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 결과에 공개 데이터셋 희소성 문장, 검출→LLM 분류→사람 검수 3단계가 나타남. [의견]의 주체가 DoorDet 저자로 명시돼 있다. Neural Computing and Applications 게재본은 2026 년 발행으로 보인다(arXiv 2025-08 기준일 유지)."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(원문 미열람): 검색 결과에 지도 파싱 과제, 아홉 단계 행동 과제 성공률 0.96 이 나타난다. 0.96 은 GPT-4o, 조밀 라벨 지도 조건의 값이므로 조건 병기를 지시한다. 단일 출처 수치다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: f2·f4·f6·f7·f8·f10 대조 추론으로 [추정] 적정. f6 강등에 따라 FloorPlanCAD 엘리베이터 범주는 제3자 카드 근거임을 본문에 드러낸다. CubiCasa5K·AI Hub 전체 클래스 목록 미확인이 한계로 적혀 있다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 부재 추정으로 [추정] 적정. '칠레'는 f8 과 같은 이유로 미확인이다(수정 지시)."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: FloorPlanCAD CC BY-NC 4.0(ref-082 원문), ArchCAD-400K 비상업 제한(검색 결과 확인), LIFULL 승인 조건(ref-081·ref-086 원문)에서 도출한 추론. [추정] 적정."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: f9·f10·f11 의 그래프 정의를 초안 v0 관계에 대응시킨 추론. [추정] 적정."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: MLSTRUCT-FP px/m(ref-085 원문), ResPlan 미터 좌표(ref-053 원문), Raster-to-Graph 512×512(ref-086 원문)에서 도출한 추론. [추정] 적정."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "참고문헌 id 충돌: 브리프의 ref-079·ref-080·ref-081·ref-082·ref-083·ref-084 이 docs/references/index.md 에 이미 다른 출처(GS1 CBV.ttl·EPCIS.ttl, Open-RMF 메시지 정의, Oliot EPCIS)로 등록돼 있다. 브리프 2026-09-25-04 도 ref-079~ref-059·ref-061 을 다른 출처에 썼다.",
+      "새 트랙 질문 '그래프 출력형 평면도 인식을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하려면 무엇이 더 필요한가?'가 백로그 q3-02(노드·엣지 단위와 통과 조건)와 같은 뜻이다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [
+    {
+      "id": "corr-002",
+      "reason": "문제 문장은 분류 원문의 7. 화물·재고·자산 식별과 추적 한 줄 정의([분류원문])이며 분류 원문의 명칭·번호·정의·질문은 정정 대상이 아니다. 식별 수단 서술이 필요하면 해당 페이지 4·6절 본문에 출처와 함께 다룬다."
+    }
+  ],
+  "required_fixes": [
+    "참고문헌 id: ref-079~ref-060 17건 가운데 ref-079·ref-080·ref-081·ref-082·ref-083·ref-084 은 기존 참고문헌 페이지(GS1·Open-RMF·Oliot 출처)와 id 가 겹친다 — 각주와 reference_updates 가 기존 ref 페이지를 덮어쓰면 안 된다. 퍼블리셔가 새 id 를 재부여하고(브리프 2026-09-25-04 의 ref-079~ref-061 사용분과도 겹치지 않게), 스토리텔러는 그 재부여 결과로 각주·프런트매터 sources·reference_updates 를 통일한다. 재부여 전에는 게시하지 않는다.",
+    "모든 출처: 각주 정의의 접근일 뒤에 원문을 연 출처(ref-079·ref-046·ref-081·ref-082·ref-085·ref-086·ref-053·ref-054)는 표시 없이 두고, 원문 미열람 출처(ref-080·ref-083·ref-084·ref-055·ref-056·ref-057·ref-058·ref-059·ref-060)는 ' (원문 미열람)'을 붙이며 reference_updates 에 source_unopened: true 를 넣는다.",
+    "f6: [사실] → [추정]으로 강등하고 근거가 제3자 재배포 데이터셋 카드(ref-084)임을 밝힌다. '벽과 주차 구역은 stuff 범주' 부분은 근거가 없으므로 삭제한다. FloorPlanCAD 범주 수는 공식 프로젝트 페이지(ref-082)의 35개만 쓴다.",
+    "f7: 범주 예시에서 '도면 기호'를 뺀다(검색 요약에 없음). 기둥·보(구조 요소), 문·창문(비구조 요소)만 예로 든다.",
+    "f8: '칠레 주거 건물 프로젝트에서 온'을 삭제하거나 '출처 국가 미확인'으로 바꾼다 — ref-085 README 원문에서 확인되지 않는다.",
+    "f18: 국가 목록의 '칠레'를 f8 과 같은 이유로 빼거나 미확인으로 표시한다.",
+    "f12: ref-057 의 발행일을 2015(International Journal on Document Analysis and Recognition 18권 1호)로 적는다.",
+    "f16: 성공률 0.96 에 조건(GPT-4o, 연구진이 라벨을 조밀하게 덧붙인 평면도, 최대 아홉 단계 이동 과제)을 병기하고 단일 출처 수치임을 남긴다.",
+    "f3: README 의 '약 90% 정밀도·재현율'을 본문에 쓴다면 [추정]과 '저자 주장'을 병기한다. 브리프 claim 밖이므로 쓰지 않는 것을 기본으로 한다.",
+    "f11·f13: 근거 발췌에만 있는 MSD 계단 범주 언급과 AI Hub 규모 수치(48,033장·2,653,998건·304,462건)는 claim 에 없고 원문 확인도 안 됐으므로 본문에 쓰지 않는다.",
+    "온톨로지: '에스컬레이터 (Escalator)' 개념 추가는 반영하지 않고 공간 그래프 스키마 초안 6절 미해결 모델링 질문으로 둔다 — 근거 f6 이 제3자 카드 단일 출처라 [추정]으로 강등됐고, '대부분 로봇이 이용할 수 없다'는 근거가 없다.",
+    "온톨로지: 승인한 변경만 반영한다 — 창문(f2·f4·f10)·난간(f2·f14) 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드'(f10) 추가, 공간 노드 속성 '방 유형' 수정(f3·f4·f9·f10). 이 네 행은 상태 '확정'으로 두고, 시드 개념 벽(f2·f4·f8)·문(f4·f10)·계단(f2·f14)을 '확정'으로 바꾼다. 엘리베이터·충전 위치와 그 밖의 시드 행은 '초안' 유지. 초안 버전은 '0' → '0.1'.",
+    "새 트랙 질문 '그래프 출력형 평면도 인식을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하려면 무엇이 더 필요한가?'는 q3-02 와 중복이다 — backlog_updates 에 넣지 않고 단계 3 페이지에서 q3-02 의 관련 근거(f20)로만 연결한다.",
+    "단계 1 페이지 6절: 완료 조건 1(아이디어 3 페이지 3절 비교)은 제품 사례(q1-02)가 없어 '미충족', 완료 조건 2(인식 대상 요소 목록 반영)는 이번 온톨로지 반영으로 '충족'으로 적고, 표 아래 줄은 '다음 단계로 전환: 아니오(완료 조건 1 미충족; 막힌 질문 q1-02·q1-03·q1-04)'로 쓴다.",
+    "아이디어 3 페이지 3절: 선행 연구·데이터셋 비교를 싣되 제품 사례는 '아직 조사되지 않음(q1-02)'으로 명시하고, 표·그림은 원문을 복제하지 않고 브리프 finding 으로 직접 만든다.",
+    "세부영역 반영 제안(6. 지도·공간·위치 모델, 27. AI·학습·적응과 모델 운영)은 트랙 로그의 area_reflection_proposals 로만 남기고 세부영역 페이지를 직접 고치지 않는다. f16(VLM 이동 계획)은 도면 해석 방법으로만 쓰고 로컬 주행·경로 실행은 로봇 쪽 연계 대상임을 짧게 밝힌다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 경유 공식 저장소 README 8건만 원문 확인). 확인 20건, 미확인 1건, 교차 확인 0건(데이터셋마다 저자 계열 1차 출처만 있음). 강등: f6 사실 → 추정(제3자 데이터셋 카드 근거, stuff 범주 부분 근거 없음). 원문 미열람 출처: ref-080, ref-083, ref-084, ref-055, ref-056, ref-057, ref-058, ref-059, ref-060. 주의: 브리프의 ref-079·ref-080·ref-081~ref-084 이 기존 참고문헌 id 와 겹쳐 퍼블리셔 재부여가 필요하다. 엘리베이터 범주의 존재는 벡터 CAD 데이터셋에서만, 그것도 제3자 카드와 검색 요약으로만 확인됐고, 물류센터·충전 위치 라벨 데이터셋은 찾지 못했다(부재가 확인된 것은 아님). 공개 데이터셋 다수가 비상업 라이선스이거나 승인제로 접근한다. corr-002 불인정: 분류 원문 정의는 정정 대상이 아니다. corr-001 은 이번 실행 대상 페이지가 아니므로 다음 7. 화물·재고·자산 식별과 추적 갱신 실행으로 넘긴다. 검증 검색 13회(리서치 25회와 합쳐 38/40). 온톨로지 변경 승인: 창문(f2·f4·f10), 난간(f2·f14), 공간 노드 / 인접한다(문 없이) / 공간 노드(f10), 공간 노드 속성 방 유형(f3·f4·f9·f10); 시드 개념 확정: 벽(f2·f4·f8), 문(f4·f10), 계단(f2·f14) / 거부: 에스컬레이터(f6 — 강등된 단일 제3자 출처). 새 질문 중복 1건(q3-02). 단계 완료 조건: 미충족(부족: 아이디어 3 페이지 3절의 제품 사례 비교, q1-02). 단계 전환: 미승인(완료 조건 1 미충족, 막힌 질문 q1-02·q1-03·q1-04).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [
+      "그래프 출력형 평면도 인식(구조 그래프, 방 연결 그래프)을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하려면 무엇이 더 필요한가? (q3-02 와 중복)"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

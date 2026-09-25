@@ -1,0 +1,244 @@
+{
+  "run_id": "2026-09-25-59",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증자가 raw.githubusercontent.com 의 challenges.rst 원문을 열어 Conveyor·Voltage Tester·Vacuum Tool Malfunction, High Priority Order 네 과제를 확인했다. 원문 페이지 자체에는 연도 표기가 없다. ARIAC 2025 기준이라는 근거는 미러 목록의 설명(현재 문서 = ARIAC 2025)이므로 기준일은 '문서 main 브랜치, 2026-09-25 확인'으로 적는다. 단일 출처다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: scoring.rst 원문을 열었다. 기본 점수 식, 가점(시간·검사 속도·고우선 주문·센서 비용·분류), 감점(정상 셀 낙하, 허용되지 않은 표면 위 물체, AGV·로봇 충돌, 센서 예산 초과), 시행당 5회 가운데 상위 2회 평균, 실행 80%·심사 20% 조합이 모두 원문과 맞는다. 단일 출처다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: ref-528·ref-529 원문 내용에서 이끌어 낸 추론이며 물류 현장 적용은 검증되지 않았다고 스스로 밝혔다. low 신뢰도가 적절하다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 예산(30회 중 남은 8회)을 다른 출처에 써서 재검색하지 못했다. 서지(ACM Computing Surveys 52(5), 2019, arXiv 1807.00048)는 널리 알려진 논문과 맞는다. 다만 '시험·시뮬레이션만으로 불충분'이라는 요지는 리서치 검색 요약 기준이며 검증자가 원문으로 확인하지 못했다. 영어 직접 인용은 쓰지 않고 재서술한다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(Springer, ACM DL, Zenodo 아티팩트)에서 저자 셋, FM 2026 LNCS 16556, 창고 AGV 산업 사례 연구, 전이 시스템 인코딩 세 가지, BDD 기호 분석을 확인했다. '합성·실제 레이아웃 평가'는 검증자가 본 검색 결과에 나타나지 않아 리서치 검색 요약에만 기댄다. 같은 논문의 색인들이므로 교차 확인으로 보지 않는다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 예산 부족으로 재검색하지 못했다. 서지(IEEE ICST 2020, pp.96–107)는 알려진 논문과 맞는다. 12가지 실무, 9가지 어려움, 3개 주제, '첫 연구'라는 서술은 리서치 검색 요약 기준이다. '첫 연구'는 논문 저자들의 자기 규정이라고 밝혀 쓴다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README 원문을 열었다. *_raw 프록시 구조, 편향·잡음·지연·누락, 명령 정지·재생, 서비스 강제 실패, TF 손상, YAML 단정, 헤드리스 실행기 종료 코드(0/1), 캠페인 실행기가 원문과 맞는다. 개인 프로젝트 README 의 기능 설명이므로 'README 기준'으로 한정해 서술한다. 성숙도와 라이선스는 미확인이다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: 지원 메시지 유형(Odometry, LaserScan, JointState, Imu, TFMessage, Twist, PointCloud2, Trigger)이 원문과 맞는다. '연계 대상' 표기가 적절하다. Twist 는 속도 명령이므로 '센서 신호' 목록에 넣지 않도록 서술에 유의한다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README 원문을 열었다. 감시 노드 생성, 판정기 블록이 있으면 WebSocket 판정기 사용(온라인), 없으면 기록만(오프라인), 기록 또는 걸러 내기, 형식 비종속, ROS1·ROS2 토픽·서비스 지원이 원문과 맞는다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: simulation.md 원문을 열었다. 같은 코드를 실제 시스템에서 수정 없이 실행, 반복 가능한 시나리오로 버그 수정 확인, 드물지만 심각한 예외 상황, 장시간 시뮬레이션이 배치 전 신뢰를 높인다는 네 문장을 모두 확인했다. 직접 인용은 이 출처에서 1회만 쓴다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검증 검색 예산 부족으로 재검색하지 못했다. 서지(SoCS 2019, arXiv 1906.08291)는 알려진 논문과 맞는다. 내용은 리서치 검색 요약(초록) 기준이다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(idm-lab.org 초록과 PDF, ICAPS 2024 시연 목록, UCI ICS, pathfinding.ai)에서 대회 목표(MAPF 핵심 과제 식별, 벤치마크 인스턴스 개발, 알고리즘 성능 평가, 최신 성과 추적)와 격자 환경, 계획·스케줄링 트랙을 확인했다. 'Amazon Robotics 후원'은 리서치 검색 요약 기준이다. 주최 측 자료이므로 독립 교차 확인은 아니다. ref-603 저자는 미확인이다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(arXiv html·pdf 목록)에서 LSMART, FMS 안의 MAPF 평가용 오픈소스 시뮬레이터, pebble motion·완전 실행·통신 가정 비판, 호출 정책·실패 정책 모듈을 확인했다. 저자(Jingtian Yan 외 7인)와 제출일 2026-02-17 을 확인했으므로 ref-604 서지를 고친다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(ISO 소개 페이지, ANSI 블로그)에서 범위(무인 산업용 차량과 그 시스템의 안전 요구사항과 검증 수단, 예로 AGV·AMR)를 확인했다. '사람 감지 시험·안정성 시험·Annex E 검증 절차' 세부는 검증자 검색으로 확인하지 못했다. 브리프도 미확인으로 적었으므로 본문에서 뺀다(수정 지시). 유료 표준이다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(NIST 과제 페이지와 행사 페이지, ASTM 보도자료)에서 F45 분과 F45.01 환경 영향, F45.02 도킹·주행, F45.03 물체 감지·보호, F45.04 통신·통합, F45.91 용어와 NIST 참여(위원장 NIST 소속)를 확인했다. F3244 등 개별 시험 방법은 미확인이다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. KSSN 검색 결과에서 제1부(바퀴형 로봇의 이동능력, 2022 확인)와 제3부(조작, K001010144227)가 있음을 확인했다. '제2부 주행'은 검증자 검색에 나타나지 않아 미확인이다. 기준일은 '2022 확인'이다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에서 KIRIA 시험평가 페이지가 로봇 주행 성능에 대해 경사노면·특수노면·계단·주행내구 시험을 제공한다고 확인했다. 'KS·ISO·IEC·CISPR' 적용 목록은 리서치 검색 요약 기준이다. 관련 기사(2022 삼성전자 서비스 로봇 ISO 기반 시험평가)는 다른 사실을 다루므로 교차 확인으로 세지 않는다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 벤더 주장이며 추정 유지. 검색 결과에서 OTTO 보도자료와 재게시(automate.org, NAiSE, control.com)를 확인했다. 대상 기종은 OTTO 100·600·1200·1500, 파트너는 Idealworks·NAiSE·SYNAOS, 발표 시기는 2026년 4월이다. 재게시와 파트너 사이트는 독립 출처가 아니다. 인증의 시험 항목은 미확인이다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: 공식 적합성 절차를 '찾지 못함'은 부재가 확인된 것이 아니라고 브리프가 밝혔다. oq-055 는 부분 근거일 뿐 해결이 아니다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "의견 유지: 분류 원문 정의(22. 시뮬레이션·예측용 디지털 트윈은 효과 예측, 23. 시험·형식 검증·벤치마크는 시험·검증)에 맞는 목적 구분이다. 누구의 의견인지('구축자 의견')를 밝혀야 한다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: ref-528·ref-601·ref-406 원문 확인 내용을 합친 추론이다. 물류 현장 적용 사례를 찾지 못했다는 한계를 본문에 함께 적는다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: 가상 구성안(피킹, 완료·인계)이다. 수치 없이, 가상임을 본문에 밝혀야 한다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지: 원문을 연 ref-601·ref-602·ref-406 과 원문 미열람 ref-609 을 섞은 추론이다. 브리프의 source_unopened: false 표기와 달리 ref-609 에 기댄 부분은 원문 미열람이다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지, 연계 대상 표기 적절. 근거 네 출처 모두 원문 미열람(검색 결과 기준)이다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "ref-528·ref-529(ARIAC 문서의 challenges·scoring 개별 페이지)은 기존 ref-008(NIST ARIAC Documentation, 분류 원문 12장 8번)과 같은 문서 묶음의 하위 페이지다. 새 id 는 유지하되, ARIAC 일반 소개 문장에는 ref-008 을 재사용한다.",
+      "ref-406(Open-RMF simulation 장)은 2026-09-25-56 에서 재사용한 출처다. 새 id 를 만들지 않는다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "참고 자료 절과 reference_updates: 원문을 열지 못한 ref-599·ref-600·ref-186·ref-603·ref-604·ref-470·ref-605·ref-606·ref-607·ref-608·ref-609 의 각주 정의에서 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 항목에 source_unopened: true 를 넣는다 — 이 출처들은 검색 결과로만 실재를 확인했다. 원문을 연 ref-528·ref-529·ref-601·ref-602·ref-406 에는 붙이지 않는다.",
+    "ref-604: 기관 칸을 'Yan, J., Zhang, Y., Liu, Z., Zhang, H., Jiang, H., Chen, J., Smith, S. F., & Li, J.'로, 발행일을 2026-02-17 로 고친다 — 검증 검색 결과(arXiv 2602.15721)로 저자와 제출일을 확인했다.",
+    "ref-608: 발행일을 2026-04 로 적는다 — 검색 결과상 OTTO 발표가 2026년 4월이다. f18 은 [추정]과 '벤더 주장' 병기를 유지한다. 본문에는 대상 기종(OTTO 100·600·1200·1500)과 파트너 세 곳만 쓰고, 인증 시험 항목은 '미확인'으로 둔다.",
+    "f14(7·9절): 'ISO 3691-4:2023 은 AGV·AMR 을 포함한 무인 산업용 차량과 그 시스템의 안전 요구사항과 검증 수단을 정한다'까지만 [사실]로 쓴다. '사람 감지 시험·안정성 시험·부속서의 검증 절차' 부분은 빼거나 '세부 미확인'으로 표기한다 — 검증자와 리서치 모두 이 세부를 확인하지 못했다.",
+    "f15(7절): 분과 구성과 NIST 참여만 쓰고 F3244 등 개별 ASTM 시험 방법은 본문에 쓰지 않는다 — 개별 시험 방법 내용이 미확인이다.",
+    "f16(7절): 기준일을 'KS B ISO 18646-1, 2022 확인'으로 적는다. 다른 부는 '제3부 조작 등'으로만 쓰고 '제2부 주행'은 미확인으로 둔다 — 검증 검색에서 제1부·제3부만 확인됐다.",
+    "f1·f2(6·7·8절): 기준일을 'ARIAC 문서 main 브랜치, 2026-09-25 확인(ARIAC 2025 기준)'으로 적는다. ARIAC 자체를 소개하는 문장에는 기존 각주 [^ref-008]을 재사용한다 — challenges·scoring 원문 페이지에는 연도 표기가 없고, ARIAC 는 분류 원문 12장 8번 참고문헌으로 이미 등록돼 있다.",
+    "f4(3·8절): 원문 영어 구절 'testing and simulation alone are insufficient'를 직접 인용하지 않고 한국어로 재서술한다 — 원문을 열지 못해 인용 문구를 대조할 수 없다.",
+    "f6(3·8절): '첫 연구'는 '저자들이 로봇 시스템 시험에 초점을 둔 첫 연구로 소개했다'처럼 저자의 자기 규정으로 쓴다 — 순위 표현이 단일 출처에만 기댄다.",
+    "f7(6·7절): 기능 서술을 'README 기준'으로 한정한다. 개인 주도 프로젝트여서 성숙도·라이선스가 미확인이라는 점을 한 번 밝힌다.",
+    "f8(9절): 센서 신호 장애 예시에서 Twist(속도 명령)를 센서로 분류하지 않는다 — 원문은 Twist 를 명령 조작 대상으로 둔다.",
+    "f20(10절): [의견] 문장에 '구축자 의견'임을 밝힌다 — 의견 주체를 표시해야 한다.",
+    "f22(5절): '가상 시나리오'임을 문장 안에 밝히고 수치를 넣지 않는다. 흐름 단계 '피킹', 항목 '완료·인계'를 명시한다 — 실제 사례로 읽히지 않게 한다.",
+    "f19·f21·f23·f24(9·11절): [추정] 태그를 유지하고 '~해야 한다'는 단정 대신 '~로 보인다' 수준으로 쓴다. f23 의 교착 검증 부분 각주(ref-609)는 원문 미열람 표기를 따른다.",
+    "11절 열린 질문: oq-055(f18·f19)와 oq-058(f13)은 부분 근거만 적고 [열림]을 유지한다. oq-063·oq-077 은 이번 실행에서 조사하지 않았으므로 상태를 바꾸지 않는다. open_questions_new 3건은 형식대로 등록한다.",
+    "용어집: 새 용어 후보(장애 주입, 회귀 시험, 런타임 검증, 모델 검사)는 등록할 수 있다. 본문에서는 기존 용어집 표기인 '교착 (Deadlock)', '적합성 시험 (Conformance Test)', '다중 에이전트 경로 찾기 (MAPF)', '플릿 관리 시스템 (FMS)', '산업 자동화용 민첩 로봇 경진대회 (ARIAC)'를 그대로 쓴다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 0건. 강등: 없음(태그는 모두 유지하되 f14·f15·f16 은 확인되지 않은 세부를 빼도록 지시했다). 원문 미열람 출처: ref-599, ref-600, ref-186, ref-603, ref-604, ref-470, ref-605, ref-606, ref-607, ref-608, ref-609. 원문을 연 출처는 GitHub 미러를 통한 ref-528, ref-529, ref-601, ref-602, ref-406 이다. 주의: 모든 주장이 단일 출처에 기댄다. ref-599·ref-600·ref-186 는 검증 검색 예산(리서치 22회 사용, 남은 8회)을 다른 출처에 써서 검증자가 다시 검색하지 못했고, 서지만 대조했다. 9절의 ROP 직접 범위와 연계 범위 구분, 분류 원문 질문에 대한 답(f21)은 추정이다. 물류 오케스트레이션 소프트웨어의 회귀 시험·장애 주입 현장 사례와 VDA 5050 공식 적합성 절차는 확인되지 않았다. oq-055·oq-058 은 부분 근거만 있고, oq-063·oq-077 은 이번에 다루지 않았다. 정정 요청 없음.",
+  "retry_reason": null
+}

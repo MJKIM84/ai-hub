@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-09-25-54",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f1·f2·f4·f7·f8·f9 는 1차 지시대로 기존 각주(ref-084·ref-070·ref-434·ref-077·ref-441·ref-225)를 재사용해 처리 흐름 맥락으로만 요약했다 — 중복 서술 문제 없음",
+      "standards_updates 의 SHACL 항목은 용어집 shacl 과 같은 대상이다 — 표준 목록에 같은 항목이 이미 있으면 퍼블리셔가 기존 항목에 ref-459 만 더하도록 합친다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 18건, 미확인 0건, 교차 확인 0건. 강등: 없음. f9 뒷부분은 [추정]으로 분리했고, f14·f15 의 확인되지 않은 세부는 '미확인'으로 표기했다. 원문 미열람 출처: ref-079, ref-077, ref-225, ref-457, ref-458, ref-460, ref-461, ref-462, ref-463. 원문을 연 출처는 ref-084·ref-070·ref-434·ref-441·ref-456·ref-464 의 GitHub 원본과 ref-459 의 W3C 편집자 초안이다. 주의: q3-01 의 결론(처리 흐름의 네 단계 구분, 사람 검토 네 지점, 장소 이름의 사람 확인)은 확인한 도구·연구를 이 위키가 묶은 추정이다. 검토 지점별 효과를 측정한 자료는 찾지 못했다. FloorplanVLM·Sketch2BIM·ArchCAD-400K 의 성능·비용 수치는 저자가 보고한 단일 출처다. SHACL 은 권고안이 아니라 편집자 초안으로 확인했다. 새 질문 가운데 가설 판정 지표 질문은 q5-02 와 중복이어서 등록하지 않았다. 온톨로지 변경 승인: 없음(제안 없음, v0.6 유지) / 거부: 없음. 단계 완료 조건: 미충족. 처리 흐름 하위 항목은 이번에 충족됐다. 부족한 것은 아이디어 3. 건축 도면 자동 인식 5절의 핵심 구성 요소와 다른 아이디어와의 연결, 공간 그래프 스키마 초안의 단계 3 근거 갱신, 실험 페이지의 실험 계획이다. 막힌 질문은 q3-02·q3-03·q3-04·q3-05·q3-06 이다. 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 있음). CLI 지정 실행이므로 트랙의 현재 단계 표기(단계 1)는 바꾸지 않는다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증 결과, 직전 2차 수정 지시 3건이 모두 이행됐다. 단계 3 페이지 상태 줄은 '진행 중 · 열린 질문 7건 · 답한 질문 1건 · 완료 조건 미충족 · 마지막 실행 2026-09-25'이며 2절 표와 일치한다. 6절 첫 행 검증 판정은 '충족 · 전환 미승인'이다. 전환 줄에는 핵심 구성 요소가 들어갔다. 프런트매터 sources 와 8절 각주 정의(16건)가 일치하고, related_areas 는 7절 목록과 같다. 사소한 표기 의견: 단계 페이지에서 IoU·BIM·RDF 같은 약어를 첫 등장 때 풀어 쓰지 않았다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [
+      "처리 단계마다 사람이 고친 요소 수와 검토 시간을 기록해 가설 1(인식만으로 대부분 추출)과 가설 3(현장 모델링 시간 단축)을 판정하는 지표로 쓸 수 있는가? (q3-01 에서 파생) — q5-02 와 중복"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

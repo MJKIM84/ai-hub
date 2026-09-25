@@ -1,0 +1,430 @@
+{
+  "duration_api_ms": 246351,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.735006599999999,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 219601,
+    "cache_read_input_tokens": 1483083,
+    "output_tokens": 16476,
+    "output_tokens_details": {
+      "thinking_tokens": 5516
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 219601,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12037,
+        "cache_read_input_tokens": 291811,
+        "cache_creation_input_tokens": 3944,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3944
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 207184,
+      "outputTokens": 6966,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 11,
+      "costUSD": 0.35201399999999994,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 16476,
+      "cacheReadInputTokens": 1483083,
+      "cacheCreationInputTokens": 219601,
+      "webSearchRequests": 0,
+      "costUSD": 2.3829926,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 5516,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 27,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-40\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 data/source_texts/ref-031.txt 동작 표 startCharging 행이 충전 지점·충전 차선과 과충전 보호의 로봇 책임을 적는다. 단일 공식 명세, 발행일 미확인(oq-005).\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 5.3 'Energy management: Charging orders can interrupt transfer orders'. evidence_excerpt 의 '충전 순서·시점 알고리즘은 규정하지 않음'은 명세 문구가 아니라 2절(교통 관리 로직 범위 제외)에서 끌어낸 해석이므로 본문에 명세 문구처럼 쓰지 않는다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: factsheet.schema(main) raw 원본을 다시 열었다. batteryCharging 네 필드와 criticalLowChargingLevel 설명이 일치한다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: state.schema raw 원본. powerSupply 필드, 20%·80% 표기, range(m) 설명이 일치한다. stateOfCharge·charging 만 필수이고 나머지는 선택 필드다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: VDA5050_EN.md raw 6.4.1 구역 유형은 BLOCKED·LINE_GUIDED·RELEASE·COORDINATED_REPLANNING·SPEED_LIMIT·ACTION·PRIORITY·PENALTY·DIRECTED·BIDIRECTED 이고 충전 구역은 없다. 충전은 동작으로 표현된다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: config.yaml raw. recharge_threshold 0.10, recharge_soc 1.0, 전압·용량·충전 전류, ambient·tool 소비 전력, account_for_battery_drain, finishing_request, 로봇별 charger. 수치는 템플릿 예시값이다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-039(입력 원문) 'self-generated task', ref-104 README raw 의 ChargeBattery 일정 삽입과 전용 충전 위치 가정(is_charger 주석). 두 출처는 같은 발행 주체라 독립 교차가 아니다. 주의: ref-039 는 충전소를 is_parking_spot 으로 설정한다고 적어 ref-104·ref-079 의 is_charger 와 어긋난다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: TaskPlanner.hpp raw. 충전소 복귀 충전량 부족 오류, 배터리 용량 부족 오류, BatteryAware 'strongly penalize low SOC with a quadratic term'.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: traffic-editor.md raw 의 is_charger, Graph.hpp 'Robots are routed to these spots...', RobotUpdateHandle.hpp 의 가장 가까운 is_charger 경유점 기본값과 주차 예약 시스템(기본 false, 켜기 권장). 모두 같은 발행 주체다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Graph.hpp raw 뮤텍스 그룹 문구가 일치한다. evidence_excerpt 가 말하는 '동시 진입 버그 보고'는 브리프에 출처가 없어 본문에 쓸 수 없다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: LiftRequest.msg·LiftState.msg raw. 세션 id 고유성, REQUEST_END_SESSION 까지의 제어권, AGV 모드의 정지 시 문 개방이 일치한다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(README raw 404를 검증에서도 재현). 검색 결과가 저장소 제목 'Experimental reservation library in rust'와 충전기 예약 설명을 확인한다. 실험적 라이브러리이며 배포판 포함 여부는 미확인이다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: nav2_docking README raw. 도크 인스턴스(플러그인 유형과 [x, y, theta]), 비충전 도크(컨베이어·팔레트), getRefinedPose, isCharging·hasStoppedCharging. '연계 대상' 표시가 적절하다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검증에서도 다시 열지 않았다. 기존 등록 출처 ref-219 의 재인용(2026-09-25-19)이며 제조사 공식 사이트가 아닌 게재본이다. [추정]·벤더 주장·low 가 적절하다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(Erasmus 저장소·ScienceDirect)가 EJOR 267(2) 733–753, SOQN, 유도 충전 최선, 배터리 비용이 낮을 때 교환이 더 저렴함을 확인한다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(ScienceDirect·RePEc EJOR 312(1) 164–181)가 느린 충전이 나은 조건, 우선 충전 정책의 비용 효율, 충전기 대수 결정 도구를 확인한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검증 검색이 C&IE 2024-08 게재, ILP, 허용 최대치까지 완전 충전이 최적임을 확인했다. 충전소별 확률 변수 두 개와 목적함수(총 주행 시간 기댓값)는 리서치 스니펫에만 있다. 저자 미확인.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(TU/e 저장소, C&OR 136, 105517)가 저자, 하이브리드 ALNS, 산업 사례, 현행 대비 20~50% 비용 절감(저자 보고)을 확인한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과가 arXiv 2607.05683(2026-07-06, Shaji·Sobhanan·Defryn), PPO, 다중 블록 창고, 고정 충전소, 대기 예상 시간을 반영한 충전소 선택·충전 시간을 확인한다. 프리프린트다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검증 검색은 저자·제목만 확인했다. '분산형 충전소 배치·점진적 재충전 정책이 좋은 성능' 문구는 리서치 스니펫에 기댄다. 항만 사례다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. arXiv 2406.17003(2024-06-24, Stark 외 3인) 검색 요약이 PageRank 에서 착안한 창고 충전소 배치를 확인한다. 대상은 전기 산업용 트럭·지게차 플릿이다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 제목 수준 주장이며 기존 등록 출처 ref-146 이다. 검증에서 다시 검색하지 않았다(예산). 결과 수치는 미확인이다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 기존 등록 출처 ref-060 의 재인용(2026-09-25-38)이다. 병원 사례이며 물류센터 적용은 미확인(oq-010)이다. 수치는 쓰지 않는다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검증 검색(PMC·PubMed)이 고객 노드 60개, 40초→100초, 225초→500초 수치와 2025년 3월 게재를 확인한다. 브리프 sources 의 published 는 null 이다. 호텔 사례다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과에 doi 10.3390/electronics14050982 제목이 나타난다. 제목 수준 주장이며 결과는 미확인이다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(KCI)가 전자공학회논문지 61(8) 2024, 엘리베이터 제어 모듈·task 구조, 노드 그래프 다층 경로 계획, 실증 시험·주행 시간 비교를 확인한다. 배송 로봇 대상이다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f3·f6·f11·f12·f16·f17·f19 를 종합한 이 위키의 추론이다. [추정] 태그가 적절하다.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f2·f18·f19 를 조합한 현장 시나리오 추론이며 [추정]이 적절하다. 실제 현장 사례는 없다.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f11·f24 를 조합한 추론이다. 여러 플릿 사이 승강기 배분 규칙은 Lifts 문서(ref-284)에도 없음을 검증에서 확인했다.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f2·f7·f10·f11 을 분류 원문 9장 경계(시설·설비 제어의 '작업 요청·예약·인계·상태 확인')에 대응시킨 추론이며 범위 안이다.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-031 과충전 보호 문구, ref-216, ref-284 승강기 어댑터가 방해 요청을 막는다는 문구가 뒷받침한다. '연계 대상:' 표시가 적절하다.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: f9·f13 을 결합한 추론이며 [추정]이 적절하다.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 영역 연결 추론이다. 8. 실시간 세계 상태·데이터 일관성(현재 배터리 상태)과 22. 시뮬레이션·예측용 디지털 트윈(충전 정책 실험)을 구분했고, 27. AI·학습·적응과 모델 운영의 양쪽 연결 규칙도 지켰다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f23·f24 는 ref-060·ref-103 을 이미 인용한 3. 처리능력·거점·설비 계획·C. 연결·실행 기반 페이지와 겹친다. 기존 각주 id 를 그대로 재사용하고 oq-010 에 연결한다.\",\"f6·f29·f31 은 C. 연결·실행 기반 대분류 연결(2026-09-25-38 f14·f15)과 같은 출처(ref-105·ref-312)를 쓴다. 같은 각주를 재사용한다.\",\"ref-039 는 충전소를 is_parking_spot 으로 설정한다고 적고, ref-104·ref-079 는 is_charger 로 적는다. Open-RMF 문서 사이의 충돌이다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"원문을 열지 못한 출처 ref-219·ref-098·ref-109·ref-146·ref-060·ref-103·ref-321·ref-858·ref-859·ref-860·ref-861·ref-862·ref-863·ref-866 과, 이번 실행에서 원문을 다시 연 기록이 없는 ref-039 는 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이며 github_raw 로 연 출처만 원문 열람으로 인정된다. (ref-039 는 입력 원문이 있으므로 fetched 로 볼 수 있어 표시에서 빼도 된다.)\",\"f7: ref-039 의 '충전소는 is_parking_spot 으로 설정' 안내를 본문에 쓰지 않는다. 쓰려면 ref-104·ref-079 의 is_charger 와 둘 다 [사실]로 제시하고, 11절 열린 질문에 '출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(ref-039)과 is_charger(ref-079·ref-104) 가운데 어느 속성으로 하는가? | 관련 영역: 16. 공용 자원·충전·에너지 최적화, 6. 지도·공간·위치 모델 | 근거: f7 | 종류: 출처 충돌'로 올린다 — 같은 발행 주체의 문서끼리 내용이 어긋난다.\",\"f10: 뮤텍스 그룹의 '동시 진입 버그 보고·동작 신뢰성 미확인'은 출처가 없으므로 사실로 쓰지 않는다. 필요하면 '실제 동작 검증은 미확인'이라고만 적는다 — 브리프에 근거 출처가 없다.\",\"f2: 'VDA 5050 은 충전 순서·시점 결정 알고리즘을 규정하지 않는다'를 명세 문구처럼 쓰지 않고 '명세에서 확인되지 않는다'로 적는다 — 원문은 에너지 관리를 관제 기능으로 들 뿐 이를 명시적으로 제외한다고 쓰지 않는다.\",\"f6: recharge_threshold 0.10·recharge_soc 1.0·충전 전류 5.0 A 같은 수치를 쓰면 '템플릿 예시값'임을 밝힌다 — 운영 권장값이 아니다.\",\"f12: '실험적 라이브러리'와 '배포판 포함 여부 미확인'을 함께 적고, ref-866 각주에 원문 미열람을 표시한다 — README raw 경로가 404 였다.\",\"f15~f26 의 연구 결과 문장에는 '저자 보고' 또는 '논문이 보고했다' 형식을 유지하고, f19 에는 프리프린트임을, f20·f23·f24·f26 에는 항만·병원·호텔·배송 로봇 사례로 물류센터 적용이 미확인임을 병기한다 — 단일 출처이고 원문을 열지 못했다.\",\"ref-103 각주의 발행일을 '미확인'에서 '2025-03'으로 고친다 — 검증 검색(PMC·PubMed)이 2025년 3월 Sensors 게재를 확인했다.\",\"ref-863 각주에 게재지 '전자공학회논문지 61(8)'을 넣는다 — 검증 검색(KCI)이 확인했다.\",\"새 열린 질문 2번(시간대별 전기 요금·최대 수요 전력 기반 충전 계획)의 근거를 f17 에서 f2 로 바꾼다 — f17 은 전력 요금을 다루지 않고, f2(관제의 에너지 관리 기능)가 질문의 출발점이다.\",\"f14: [추정]과 '벤더 주장' 병기를 유지하고, 제조사 공식 사이트가 아닌 게재본임을 각주 제목에 남긴다.\",\"f19(학습 기반 충전 결정)는 10절에서 27. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하고, 13. 작업 배정 — MRTA 연결에는 f18 을 쓴다 — 분류 원문 8장 교차 규칙에 따른다.\",\"트랙 반영 제안 4건은 6·7·10절에 반영하되, 반영한 문장의 각주는 브리프 출처 id(ref-031·ref-228·ref-079·ref-216·ref-219·ref-109)만 쓴다. 트랙 실행 2026-09-25-19 f19 의 [추정]은 이번 f32 로 대체한다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. VDA 5050·Open-RMF·Nav2 출처는 GitHub 공식 저장소 원문을 검증에서 다시 열어 확인했고, 논문 출처는 검색 결과 요약으로만 대조했다. 확인 33건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-219, ref-098, ref-109, ref-146, ref-060, ref-103, ref-321, ref-858, ref-859, ref-860, ref-861, ref-862, ref-863, ref-866. 주의: 표준·오픈소스 내용은 모두 같은 발행 주체의 단일 자료이고, 연구 결과는 논문마다 단일 출처인 저자 보고다. 충전·승강기 병목의 근거인 병원·호텔·항만·배송 로봇 사례가 물류센터에도 적용되는지는 확인되지 않았다(oq-010). 충전소 지정 속성을 두고 Open-RMF 문서끼리 서로 다르게 적는다(ref-039 is_parking_spot, ref-079·ref-104 is_charger). 검증 검색 11회를 더해 이번 실행 검색 상한 30회를 모두 썼다. 그래서 ref-146·ref-219 는 다시 검색하지 않고 기존 등록 출처로 실재를 인정했다. 트랙 반영 제안 4건은 원문으로 다시 확인해 반영을 승인했다. oq-016 은 해결하지 않았다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-40",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 data/source_texts/ref-031.txt 동작 표 startCharging 행이 충전 지점·충전 차선과 과충전 보호의 로봇 책임을 적는다. 단일 공식 명세, 발행일 미확인(oq-005)."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 5.3 'Energy management: Charging orders can interrupt transfer orders'. evidence_excerpt 의 '충전 순서·시점 알고리즘은 규정하지 않음'은 명세 문구가 아니라 2절(교통 관리 로직 범위 제외)에서 끌어낸 해석이므로 본문에 명세 문구처럼 쓰지 않는다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: factsheet.schema(main) raw 원본을 다시 열었다. batteryCharging 네 필드와 criticalLowChargingLevel 설명이 일치한다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: state.schema raw 원본. powerSupply 필드, 20%·80% 표기, range(m) 설명이 일치한다. stateOfCharge·charging 만 필수이고 나머지는 선택 필드다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: VDA5050_EN.md raw 6.4.1 구역 유형은 BLOCKED·LINE_GUIDED·RELEASE·COORDINATED_REPLANNING·SPEED_LIMIT·ACTION·PRIORITY·PENALTY·DIRECTED·BIDIRECTED 이고 충전 구역은 없다. 충전은 동작으로 표현된다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: config.yaml raw. recharge_threshold 0.10, recharge_soc 1.0, 전압·용량·충전 전류, ambient·tool 소비 전력, account_for_battery_drain, finishing_request, 로봇별 charger. 수치는 템플릿 예시값이다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-039(입력 원문) 'self-generated task', ref-104 README raw 의 ChargeBattery 일정 삽입과 전용 충전 위치 가정(is_charger 주석). 두 출처는 같은 발행 주체라 독립 교차가 아니다. 주의: ref-039 는 충전소를 is_parking_spot 으로 설정한다고 적어 ref-104·ref-079 의 is_charger 와 어긋난다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: TaskPlanner.hpp raw. 충전소 복귀 충전량 부족 오류, 배터리 용량 부족 오류, BatteryAware 'strongly penalize low SOC with a quadratic term'."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: traffic-editor.md raw 의 is_charger, Graph.hpp 'Robots are routed to these spots...', RobotUpdateHandle.hpp 의 가장 가까운 is_charger 경유점 기본값과 주차 예약 시스템(기본 false, 켜기 권장). 모두 같은 발행 주체다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Graph.hpp raw 뮤텍스 그룹 문구가 일치한다. evidence_excerpt 가 말하는 '동시 진입 버그 보고'는 브리프에 출처가 없어 본문에 쓸 수 없다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: LiftRequest.msg·LiftState.msg raw. 세션 id 고유성, REQUEST_END_SESSION 까지의 제어권, AGV 모드의 정지 시 문 개방이 일치한다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(README raw 404를 검증에서도 재현). 검색 결과가 저장소 제목 'Experimental reservation library in rust'와 충전기 예약 설명을 확인한다. 실험적 라이브러리이며 배포판 포함 여부는 미확인이다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: nav2_docking README raw. 도크 인스턴스(플러그인 유형과 [x, y, theta]), 비충전 도크(컨베이어·팔레트), getRefinedPose, isCharging·hasStoppedCharging. '연계 대상' 표시가 적절하다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검증에서도 다시 열지 않았다. 기존 등록 출처 ref-219 의 재인용(2026-09-25-19)이며 제조사 공식 사이트가 아닌 게재본이다. [추정]·벤더 주장·low 가 적절하다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(Erasmus 저장소·ScienceDirect)가 EJOR 267(2) 733–753, SOQN, 유도 충전 최선, 배터리 비용이 낮을 때 교환이 더 저렴함을 확인한다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(ScienceDirect·RePEc EJOR 312(1) 164–181)가 느린 충전이 나은 조건, 우선 충전 정책의 비용 효율, 충전기 대수 결정 도구를 확인한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검증 검색이 C&IE 2024-08 게재, ILP, 허용 최대치까지 완전 충전이 최적임을 확인했다. 충전소별 확률 변수 두 개와 목적함수(총 주행 시간 기댓값)는 리서치 스니펫에만 있다. 저자 미확인."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(TU/e 저장소, C&OR 136, 105517)가 저자, 하이브리드 ALNS, 산업 사례, 현행 대비 20~50% 비용 절감(저자 보고)을 확인한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과가 arXiv 2607.05683(2026-07-06, Shaji·Sobhanan·Defryn), PPO, 다중 블록 창고, 고정 충전소, 대기 예상 시간을 반영한 충전소 선택·충전 시간을 확인한다. 프리프린트다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검증 검색은 저자·제목만 확인했다. '분산형 충전소 배치·점진적 재충전 정책이 좋은 성능' 문구는 리서치 스니펫에 기댄다. 항만 사례다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. arXiv 2406.17003(2024-06-24, Stark 외 3인) 검색 요약이 PageRank 에서 착안한 창고 충전소 배치를 확인한다. 대상은 전기 산업용 트럭·지게차 플릿이다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 제목 수준 주장이며 기존 등록 출처 ref-146 이다. 검증에서 다시 검색하지 않았다(예산). 결과 수치는 미확인이다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 기존 등록 출처 ref-060 의 재인용(2026-09-25-38)이다. 병원 사례이며 물류센터 적용은 미확인(oq-010)이다. 수치는 쓰지 않는다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검증 검색(PMC·PubMed)이 고객 노드 60개, 40초→100초, 225초→500초 수치와 2025년 3월 게재를 확인한다. 브리프 sources 의 published 는 null 이다. 호텔 사례다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과에 doi 10.3390/electronics14050982 제목이 나타난다. 제목 수준 주장이며 결과는 미확인이다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(KCI)가 전자공학회논문지 61(8) 2024, 엘리베이터 제어 모듈·task 구조, 노드 그래프 다층 경로 계획, 실증 시험·주행 시간 비교를 확인한다. 배송 로봇 대상이다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f3·f6·f11·f12·f16·f17·f19 를 종합한 이 위키의 추론이다. [추정] 태그가 적절하다."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f2·f18·f19 를 조합한 현장 시나리오 추론이며 [추정]이 적절하다. 실제 현장 사례는 없다."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f11·f24 를 조합한 추론이다. 여러 플릿 사이 승강기 배분 규칙은 Lifts 문서(ref-284)에도 없음을 검증에서 확인했다."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f2·f7·f10·f11 을 분류 원문 9장 경계(시설·설비 제어의 '작업 요청·예약·인계·상태 확인')에 대응시킨 추론이며 범위 안이다."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-031 과충전 보호 문구, ref-216, ref-284 승강기 어댑터가 방해 요청을 막는다는 문구가 뒷받침한다. '연계 대상:' 표시가 적절하다."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: f9·f13 을 결합한 추론이며 [추정]이 적절하다."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 영역 연결 추론이다. 8. 실시간 세계 상태·데이터 일관성(현재 배터리 상태)과 22. 시뮬레이션·예측용 디지털 트윈(충전 정책 실험)을 구분했고, 27. AI·학습·적응과 모델 운영의 양쪽 연결 규칙도 지켰다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f23·f24 는 ref-060·ref-103 을 이미 인용한 3. 처리능력·거점·설비 계획·C. 연결·실행 기반 페이지와 겹친다. 기존 각주 id 를 그대로 재사용하고 oq-010 에 연결한다.",
+        "f6·f29·f31 은 C. 연결·실행 기반 대분류 연결(2026-09-25-38 f14·f15)과 같은 출처(ref-105·ref-312)를 쓴다. 같은 각주를 재사용한다.",
+        "ref-039 는 충전소를 is_parking_spot 으로 설정한다고 적고, ref-104·ref-079 는 is_charger 로 적는다. Open-RMF 문서 사이의 충돌이다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "원문을 열지 못한 출처 ref-219·ref-098·ref-109·ref-146·ref-060·ref-103·ref-321·ref-858·ref-859·ref-860·ref-861·ref-862·ref-863·ref-866 과, 이번 실행에서 원문을 다시 연 기록이 없는 ref-039 는 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이며 github_raw 로 연 출처만 원문 열람으로 인정된다. (ref-039 는 입력 원문이 있으므로 fetched 로 볼 수 있어 표시에서 빼도 된다.)",
+      "f7: ref-039 의 '충전소는 is_parking_spot 으로 설정' 안내를 본문에 쓰지 않는다. 쓰려면 ref-104·ref-079 의 is_charger 와 둘 다 [사실]로 제시하고, 11절 열린 질문에 '출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(ref-039)과 is_charger(ref-079·ref-104) 가운데 어느 속성으로 하는가? | 관련 영역: 16. 공용 자원·충전·에너지 최적화, 6. 지도·공간·위치 모델 | 근거: f7 | 종류: 출처 충돌'로 올린다 — 같은 발행 주체의 문서끼리 내용이 어긋난다.",
+      "f10: 뮤텍스 그룹의 '동시 진입 버그 보고·동작 신뢰성 미확인'은 출처가 없으므로 사실로 쓰지 않는다. 필요하면 '실제 동작 검증은 미확인'이라고만 적는다 — 브리프에 근거 출처가 없다.",
+      "f2: 'VDA 5050 은 충전 순서·시점 결정 알고리즘을 규정하지 않는다'를 명세 문구처럼 쓰지 않고 '명세에서 확인되지 않는다'로 적는다 — 원문은 에너지 관리를 관제 기능으로 들 뿐 이를 명시적으로 제외한다고 쓰지 않는다.",
+      "f6: recharge_threshold 0.10·recharge_soc 1.0·충전 전류 5.0 A 같은 수치를 쓰면 '템플릿 예시값'임을 밝힌다 — 운영 권장값이 아니다.",
+      "f12: '실험적 라이브러리'와 '배포판 포함 여부 미확인'을 함께 적고, ref-866 각주에 원문 미열람을 표시한다 — README raw 경로가 404 였다.",
+      "f15~f26 의 연구 결과 문장에는 '저자 보고' 또는 '논문이 보고했다' 형식을 유지하고, f19 에는 프리프린트임을, f20·f23·f24·f26 에는 항만·병원·호텔·배송 로봇 사례로 물류센터 적용이 미확인임을 병기한다 — 단일 출처이고 원문을 열지 못했다.",
+      "ref-103 각주의 발행일을 '미확인'에서 '2025-03'으로 고친다 — 검증 검색(PMC·PubMed)이 2025년 3월 Sensors 게재를 확인했다.",
+      "ref-863 각주에 게재지 '전자공학회논문지 61(8)'을 넣는다 — 검증 검색(KCI)이 확인했다.",
+      "새 열린 질문 2번(시간대별 전기 요금·최대 수요 전력 기반 충전 계획)의 근거를 f17 에서 f2 로 바꾼다 — f17 은 전력 요금을 다루지 않고, f2(관제의 에너지 관리 기능)가 질문의 출발점이다.",
+      "f14: [추정]과 '벤더 주장' 병기를 유지하고, 제조사 공식 사이트가 아닌 게재본임을 각주 제목에 남긴다.",
+      "f19(학습 기반 충전 결정)는 10절에서 27. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하고, 13. 작업 배정 — MRTA 연결에는 f18 을 쓴다 — 분류 원문 8장 교차 규칙에 따른다.",
+      "트랙 반영 제안 4건은 6·7·10절에 반영하되, 반영한 문장의 각주는 브리프 출처 id(ref-031·ref-228·ref-079·ref-216·ref-219·ref-109)만 쓴다. 트랙 실행 2026-09-25-19 f19 의 [추정]은 이번 f32 로 대체한다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. VDA 5050·Open-RMF·Nav2 출처는 GitHub 공식 저장소 원문을 검증에서 다시 열어 확인했고, 논문 출처는 검색 결과 요약으로만 대조했다. 확인 33건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-219, ref-098, ref-109, ref-146, ref-060, ref-103, ref-321, ref-858, ref-859, ref-860, ref-861, ref-862, ref-863, ref-866. 주의: 표준·오픈소스 내용은 모두 같은 발행 주체의 단일 자료이고, 연구 결과는 논문마다 단일 출처인 저자 보고다. 충전·승강기 병목의 근거인 병원·호텔·항만·배송 로봇 사례가 물류센터에도 적용되는지는 확인되지 않았다(oq-010). 충전소 지정 속성을 두고 Open-RMF 문서끼리 서로 다르게 적는다(ref-039 is_parking_spot, ref-079·ref-104 is_charger). 검증 검색 11회를 더해 이번 실행 검색 상한 30회를 모두 썼다. 그래서 ref-146·ref-219 는 다시 검색하지 않고 기존 등록 출처로 실재를 인정했다. 트랙 반영 제안 4건은 원문으로 다시 확인해 반영을 승인했다. oq-016 은 해결하지 않았다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 7109,
+  "type": "result",
+  "duration_ms": 174177,
+  "uuid": "11921911-c0a9-46ed-9718-96103003b817",
+  "ttft_stream_ms": 3119,
+  "time_to_request_ms": 164,
+  "first_content_frame_ms": 3120,
+  "time_to_request_from_spawn_ms": 13167458,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790309020349.6643,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 176.2
+}

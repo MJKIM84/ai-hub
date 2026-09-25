@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-09-25-81",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. ref-748·ref-749·ref-751 은 GitHub 원문으로, ref-031 은 입력 원문 텍스트로 확인했고 나머지는 검색 결과로 대조했다. 확인 25건, 미확인 1건(f15), 교차 확인 0건. 강등: f15 사실 → 추정(스니펫에서 '최대 17%'·'여섯 LLM' 미확인). 원문 미열람 출처: ref-750, ref-752~ref-761, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713. 브리프 출처 표시 불일치: ref-031 은 fetched_via 가 github_raw 인데 fetch_url 이 null 이고, 한계 항목에는 inbox 로 적혀 있다. 실제 열람 경로는 입력 원문 텍스트(inbox)로 본다. 주의: q4-02 의 방법별 포착·놓침 분담(f21·f22)과 피킹 시나리오(f24)는 이 위키가 묶은 종합이다. 근거 환경도 가정·주방 시뮬레이터, 도구 호출, 건설, 제조 셀, 가상 분류 라인이라 물류 플릿 조건이 아니다. 수치는 모두 원문을 열지 못한 저자 보고값이다. 이번 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정 질문(q4-02)으로 단계 4 를 다뤘다. 온톨로지 변경 승인: 없음 / 거부: 개념 '검증 기록'(f4·f5·f17·f21, 초안 v0.8 유지). 단계 완료 조건: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04). 단계 전환: 미승인(막힌 질문 q4-03~q4-16 열림, q4-09·q4-10 중복 정리 필요). / 2차 통과(재검증). 드리프트 없음. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 직전 2차 수정 지시 7건을 모두 이행한 것을 확인했다. 트랙 개요 6절은 게시본 v14 기준으로 실행 98·99 서술을 유지한 채 실행 81 만 덧붙였다(version 15). 아이디어 2 페이지는 게시본 v15 에 5절 소절만 더했다(version 16, 6절 유지). 아이디어·초안 프런트매터 sources 누락을 보완했고, 새 단계 5 질문은 q5-16 으로 재번호했다. [^ref-757] 발행일은 2026-04 로 고쳤고, 6절 전환 줄은 q4-03~q4-16 으로 맞췄다. 재검증에서 새로 찾은 차단 문제는 없다. 참고 사항 두 가지: 아이디어 페이지 '검증 방법별로 잡는 오류' 소절의 VDA 5050 문장은 연계 대상 문구가 [사실] 문장 안에 함께 있다(단계 4 페이지에서는 [추정] 문장으로 분리돼 있다). 사람 확인을 q4-01 로 잇는 문장은 주장이 아닌 연결 문장으로 본다. 단계 4 페이지 상태 줄('열린 질문: 13건 · 답한 질문: 1건')은 H2 절 밖이라 패치로 고칠 수 없다. 퍼블리셔가 열린 질문 14건·답한 질문 2건으로 갱신해야 한다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

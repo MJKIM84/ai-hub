@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-20",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 9,
+    "area_name": "9. 로봇·제조사 관제 연동",
+    "category": "C. 연결·실행 기반"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "0d16f39",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1940.9,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 9. 로봇·제조사 관제 연동 | 영역 심화: 3~11절 신규 작성(제어 수준·어댑터 API·VDA 5050 3.0.0·MassRobotics·출하 시나리오), 트랙 반영 제안 1건 반영 | run 2026-09-25-20",
+  "notes": [
+    "참고문헌 생성: references/ref-251.md",
+    "참고문헌 생성: references/ref-252.md",
+    "참고문헌 생성: references/ref-253.md",
+    "참고문헌 생성: references/ref-254.md",
+    "참고문헌 생성: references/ref-255.md",
+    "참고문헌 생성: references/ref-256.md",
+    "참고문헌 생성: references/ref-257.md",
+    "참고문헌 생성: references/ref-258.md",
+    "참고문헌 생성: references/ref-259.md",
+    "참고문헌 생성: references/ref-260.md",
+    "참고문헌 생성: references/ref-261.md",
+    "참고문헌 생성: references/ref-262.md",
+    "참고문헌 생성: references/ref-263.md",
+    "참고문헌 생성: references/ref-264.md",
+    "용어집 갱신: glossary/vda-5050.md",
+    "용어집 생성: glossary/fleet-management-system.md",
+    "용어집 생성: glossary/multi-fleet-orchestration.md",
+    "용어집 생성: glossary/mqtt.md",
+    "세부영역 반영 제안 3건을 반영으로 표시했다(9. 로봇·제조사 관제 연동, 실행 2026-09-25-20)"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 14,
+    "standards": 3,
+    "open_questions": 3,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:58:50 KST",
+  "usage": {
+    "input_tokens": 62,
+    "cache_creation_input_tokens": 1120556,
+    "cache_read_input_tokens": 4065200,
+    "output_tokens": 233954,
+    "cost_usd": 15.2538,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.8883,
+        "output_tokens": 41830,
+        "cache_read_input_tokens": 2636767,
+        "cache_creation_input_tokens": 128258
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.7019,
+        "output_tokens": 29288,
+        "cache_read_input_tokens": 1066781,
+        "cache_creation_input_tokens": 206524
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 6.8093,
+        "output_tokens": 146141,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 481084
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.7696,
+        "output_tokens": 15703,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 303131
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 10,
+  "cross_checked_findings": 1
+}

@@ -1,0 +1,842 @@
+{
+  "run_id": "2026-09-25-11",
+  "outline": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 900,
+      "summary": "q1-02 를 답함(실행 2026-09-25-11, 답 위치 #q1-02)으로 바꾸고 새 질문 q1-06(근거 f21)을 더한다.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 4200,
+      "summary": "건축 도면에서 로봇 지도를 만드는 사례는 래스터 이미지(사람 주석 배경·위치추정 기준), 벡터 CAD(구조 레이어 분리·위상 분할), BIM/IFC(격자 지도·위상 그래프·IndoorGML 생성)로 나뉘는 것으로 보인다. [추정][^ref-079][^ref-084][^ref-081]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 1500,
+      "summary": "q1-02 결론(입력 형식별 자동화 범위)과 제품 근거가 벤더 주장 3건뿐이라는 불확실성을 더한다. [추정][^ref-132][^ref-127][^ref-125]",
+      "planned_findings": [
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 900,
+      "summary": "q1-06(근거 f21)을 등록하고 중복 판정된 두 질문은 q2-01·q2-03, q4-02 로 연결만 한다.",
+      "planned_findings": [
+        "f17",
+        "f19",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 600,
+      "summary": "완료 조건 1·2 충족(1차 예비), 단계 전환 미승인.",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "section": "3. 선행 연구·제품 사례",
+      "budget_chars": 3000,
+      "summary": "제품 사례 소절을 벤더 주장 병기로 채우고, 입력 형식별 도면→로봇 지도 연구·오픈소스 도구 비교표를 더한다. [추정] 벤더 주장[^ref-132]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "section": "2. 개념 목록 표",
+      "budget_chars": 1500,
+      "summary": "층간 정렬 기준점 추가, 층별 지도·평면도 확정(v0.2). [사실][^ref-079][^ref-080]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f8",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "section": "6. 미해결 모델링 질문",
+      "budget_chars": 900,
+      "summary": "문 속성 추가 제안(f13·f14)과 도면–현장 편차 근거(f17·f20)를 질문으로 둔다.",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f17",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/index.md",
+      "section": "6. 살아있는 산출물 링크",
+      "budget_chars": 600,
+      "summary": "초안 v0.2, 아이디어 3절 제품 사례 반영, 백로그 수치를 갱신한다.",
+      "planned_findings": []
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-02 답함(3절 {#q1-02} 소제목 추가), 새 질문 q1-06, 4·5·6·7·8·9절 갱신, 완료 조건 충족(1차 예비)·전환 미승인. H1 아래 단계 상태 줄은 H2 밖이라 패치로 못 바꿈 — '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 2건 · 완료 조건: 충족 · 마지막 실행: 2026-09-25' 로 교체 필요",
+      "patches": [
+        {
+          "section": "2. 질문 목록",
+          "action": "replace",
+          "frontmatter": {
+            "related_areas": [
+              6,
+              27,
+              21,
+              22,
+              28
+            ],
+            "confidence": "medium",
+            "last_run": "2026-09-25",
+            "sources": [
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-080",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-120",
+              "ref-125",
+              "ref-126",
+              "ref-127",
+              "ref-128",
+              "ref-129",
+              "ref-130",
+              "ref-131",
+              "ref-132"
+            ]
+          },
+          "content": "이 단계의 시작 질문 4개다. q1-01은 사용자 요청의 시작 질문 문구 그대로이고, 나머지는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \"조사 중\"은 이 표에서 \"열림\"으로 표시하고 \"폐기\"는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커 또는 주제 페이지 링크를 적는다. 제기 근거 칸에는 finding id 또는 \"사용자\"만 쓴다.\n\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\n|---|---|---|---|---|---|\n| q1-01 | 평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-05 | [3절 q1-01](#q1-01) |\n| q1-02 | 건축 도면(CAD·BIM·스캔 이미지)에서 로봇용 지도나 공간 모델을 자동으로 만드는 연구·제품 사례는 무엇이 있고, 입력 형식마다 무엇을 자동화하는가? | 답함 | 사용자 | 2026-09-25-11 | [3절 q1-02](#q1-02) |\n| q1-03 | 충전 위치·작업대처럼 로봇 운영에 쓰는 시설을 도면에서 인식하거나 도면 밖 정보로 보완한 사례가 있는가? | 열림 | 사용자 | | |\n| q1-04 | 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? | 열림 | 사용자 | | |\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 열림 | f18, 실행 2026-09-25-05 | | |\n| q1-06 | 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? | 열림 | f21, 실행 2026-09-25-11 | | |"
+        },
+        {
+          "section": "3. 조사 결과",
+          "action": "append",
+          "content": "\n### q1-02 건축 도면에서 로봇용 지도·공간 모델을 자동으로 만드는 연구·제품 사례 {#q1-02}\n\n이번 실행(2026-09-25-11)에서 확인한 사례를 입력 형식에 따라 래스터 평면도 이미지, 벡터 CAD 도면, BIM(Building Information Modeling)/IFC(Industry Foundation Classes) 모델로 나누고, 도면–현장 차이, 입력 형식별 종합, 제품 쪽 근거, ROP 범위 경계를 이어서 정리한다. 사례마다 저자 계열의 1차 출처만 있어 교차 확인된 항목은 없다. 원문을 연 출처는 Open-RMF 문서 두 건과 GitHub 저장소 README 두 건이고, 나머지는 검색 요약 범위다. 입력 형식별 비교표는 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \"3. 선행 연구·제품 사례\" 절에 있다.\n\n#### 래스터 평면도 이미지: 사람이 주석하는 배경과 위치추정 기준\n\nOpen-RMF의 교통 편집기(traffic-editor)는 평면도 이미지를 배경 캔버스로 들여와 사람이 벽·문·승강기·주행 차선을 정점 클릭으로 주석하게 한다. 축척은 기본값(1픽셀=5cm)에서 시작해 두 점 사이 실제 거리를 입력하는 측정으로 맞추고, 여러 층은 층 사이에 수직으로 겹치는 기준점(fiducial)으로 정렬한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-079]\n\n같은 도구에서는 주석 결과로부터 building_map_generator가 시뮬레이션 월드를 자동 생성한다. [사실][^ref-079] 이 기능은 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)과 이어지는 지점으로만 다루며, 현재 상태를 표현하는 8. 실시간 세계 상태·데이터 일관성과는 구분한다.\n\n같은 문서는 로봇 지도를 레이어로 평면도 위에 올려 축척·이동·회전 변환으로 두 지도를 맞추게 하고, 주행 차선 위 정점에 is_charger 속성을 켜면 플릿 어댑터(rmf_fleet_adapter)가 그 지점을 충전소로 다룬다. [사실][^ref-079]\n\nOpen-RMF 통합 문서는 로봇 경로 지도의 경유점마다 층 이름(B1·L1 등)과 층 안의 미터 단위 (x, y) 좌표를 요구하고, 지도 데이터가 텍스트로 주어지면 건물 구조와의 좌표계·정렬을 화면 캡처로 점검하라고 권한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-080]\n\nMiR Fleet Enterprise 문서(1.2판, 2025-01, 제조사 공식 사이트가 아닌 유통사 게재본)는 CAD에서 만든 평면도를 PNG로 올려 지도로 쓸 수 있고, 올릴 때 축척은 1m당 20픽셀이어야 하며 X-Y 위치와 회전을 조정할 수 있다고 설명한다. [추정] 벤더 주장[^ref-132]\n\nBoniardi 외(IROS 2017)는 건축 CAD 평면도를 2D 라이다 위치추정의 기준 지도로 쓰면서, 벽 근처 가구·장비가 도면 요소를 가리는 문제를 포즈 그래프를 도면에 맞추는 제약과 GICP 기반 스캔–지도 정합으로 다뤘다. [사실][^ref-128] Boniardi 외(IROS 2019, arXiv 2019-03)는 단안 카메라 영상에서 합성곱 신경망(Convolutional Neural Network, CNN)으로 방 배치 경계를 추출해 입자 필터로 건축 평면도와 맞추는 방법을 제안했고, 같은 센서로 수집한 지도를 전문가가 만들어야 하는 설치 부담을 줄이는 것을 동기로 들었다. [사실][^ref-120] 두 연구는 이 위키에서 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개한다. 위치추정 자체는 분류 원문 9장의 로봇 자체 지능·제어 쪽 연계 대상이다. 학습 모델로 도면을 해석하는 방법이므로 [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)과도 연결한다.\n\n#### 벡터 CAD 도면: 구조 레이어 분리와 위상 분할\n\nZhang 외(2025-07 프리프린트)는 건축 CAD 파일에서 구조 레이어를 분리하고 AreaGraph 기반 위상 분할로 이동 가능 공간의 계층 그래프를 만들며, CAD 문자로 방 이름을 붙이고 여러 층을 하나로 합친 계층형 위상·거리 지도(osmAG, OpenStreetMap 형식)를 자동 생성해 위치추정·경로계획·주행 제어에 썼다. [사실][^ref-083][^ref-084] 두 출처는 같은 저자의 논문과 저장소라 독립 교차 확인이 아니다.\n\nosmAG-from-cad 공식 저장소는 DXF를 기본 입력으로 받아 DXF→SVG→PNG→AreaGraph 분할→osmAG.osm 순으로 처리한다. DWG는 외부 변환기(ODA File Converter)가 필요하고, 문자 기반 방 이름 붙이기는 기본으로 꺼져 있으며, 실험에 쓴 캠퍼스 CAD 도면은 비공개 기관 자료라 공개하지 않는다(발행일 미확인, 2026-09-25 확인). [사실][^ref-084]\n\nNavitec Systems는 자사 플릿 관제가 실제 CAD 파일을 화면에 렌더링해 시각화하고, 지도 작성·경로·스테이션 계획을 서비스로 제공한다고 소개한다. CAD에서 경로·설비를 자동 추출하는지는 미확인이다. [추정] 벤더 주장[^ref-127]\n\nPointr는 MapScale이 DWG·DXF·벡터 PDF·GeoJSON 도면을 사람용 실내 지도 형식(IMDF)으로 수작업 없이 변환하고 경로를 자동 생성한다고 소개한다. 이는 사람 길안내용 지도이며 로봇 지도 생성 사례가 아니다. [추정] 벤더 주장[^ref-125]\n\n#### BIM/IFC 모델: 점유 격자 지도·위상 그래프·IndoorGML 생성\n\nVega-Torres 외(ECPPM 2022, arXiv 2023-08)는 여러 층의 복잡한 BIM(IFC) 모델에서 구조 요소만 담은 2D 점유 격자 지도(Occupancy Grid Map)를 자동 생성했다. 이들은 BIM에서 뽑은 격자 지도로 위치추정을 하는 기존 연구들이 BIM이 현실을 정확히 나타낸다고 가정하지만, 가구·잡동사니와 설계(as-planned)–시공(as-built) 편차 때문에 그렇지 않다고 지적했다. [사실][^ref-081]\n\nOgm2Pgbm 공식 저장소는 지상 레이저 스캐너(TLS) 점군이나 BIM/CAD 모델에서 만든 점유 격자 지도를 Cartographer(.pbstream)·SLAM Toolbox(.posegraph)용 포즈 그래프 지도로 바꾸며, 입력 격자 지도에서 장애물 내부를 모두 검게 칠하는 사람의 정리 작업을 요구한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-082]\n\nBIM-SLAM(Vega Torres·Braun·Borrmann, arXiv 2024-08)은 BIM 모델에서 세션 데이터(포즈 그래프 지도·기술자)를 만들고 다중 세션 앵커링으로 실측 데이터를 정렬하며, BIM에 없는 새 요소를 재구성한다. [사실][^ref-126] IFC로 로봇이 질의할 수 있는 URDF 건물 월드를 만들고 BIM에서 점유 격자 지도를 생성한다는 내용은 검색 요약 기준이며 미확인이다. [추정][^ref-126] Vega-Torres 외, Ogm2Pgbm, BIM-SLAM은 같은 뮌헨공대(TUM) 저자 그룹의 근거여서 서로 독립 출처가 아니다.\n\nBraga 외(Frontiers in Robotics and AI, 2025-03-26)의 BIRS는 IFC를 BIM과 ROS 사이 교환 형식으로 삼아 Dynamo 스크립트로 IFC 클래스·파라미터를 XML로 뽑고 Python으로 ROS 형식으로 옮겨 위상·거리 지도를 만들며, 통행 조건을 가중치로 담은 방향 하이퍼그래프에서 경로를 계획하고 건설 현장에서 실험했다. [사실][^ref-085]\n\nPalacz 외(ICAISC 2019)는 IFC 모델에서 건물 배치의 하이퍼그래프를 만들고 방 크기·문 방향·문 유형을 속성으로 붙여, 공간 통과와 문 열기에 드는 비용을 고려한 수정 최단 경로 탐색으로 실내 로봇 경로를 계획했다. [사실][^ref-086]\n\nifc2indoorgml(ISPRS Archives XLIII-B4-2022)은 IFC 데이터에서 실내 공간 표준 IndoorGML 모델을 자동 생성하는 오픈소스 도구이며, 저자들은 IndoorGML이 개념은 탄탄하나 실용 도구가 부족해 만들기 어렵다는 점을 개발 동기로 든다. [사실][^ref-130]\n\n국내 체계적 문헌고찰(한국산학기술학회논문지, 2025)은 2020~2025년 BIM–건설로봇 통합 문헌 1,356편을 분석해 연구가 시뮬레이션에 치우치고 BIM–로봇 연계는 단방향 IFC 변환이 다수이며, 실시간 양방향 연계·설계–제어 종단 간 흐름·현장 검증과 지표 보고가 부족하다고 정리했다. 대상은 건설로봇이며 물류 로봇이 아니다. [사실][^ref-131]\n\n#### 도면–현장 차이를 함께 추정하는 연구\n\nShaheer 외(arXiv 2024-08 제출, 2025-06 개정)는 건축 도면에서 만든 계층 그래프(A-Graph)와 3D 라이다로 온라인 추정한 상황 그래프(S-Graph)를 결합해, 로봇 위치와 함께 도면(as-planned)과 현장(as-built)의 전역 정렬·구조 편차를 실시간으로 추정했다. [사실][^ref-129] 이 연구가 보고한 최대 35cm·15도 편차까지의 견고성은 시뮬레이션·실제 데이터셋 실험 조건의 단일 출처 수치다. [사실][^ref-129] 이 연구도 도면–현장 정합 방법으로만 다루며, SLAM 자체는 로봇 자체 지능·제어 쪽 연계 대상이다.\n\n#### 입력 형식별 종합과 남는 수작업\n\n확인한 사례를 입력 형식별로 보면, 래스터 평면도 이미지는 사람이 축척을 맞추고 요소를 주석하는 배경(traffic-editor, MiR Fleet)이나 위치추정 기준(Boniardi 외)으로 쓰이고, 벡터 CAD는 구조 레이어 분리와 위상 분할까지 자동화되며(osmAG), BIM/IFC는 IfcSpace·IfcDoor 같은 의미 클래스 덕분에[^ref-086] 점유 격자 지도·위상 그래프·IndoorGML 생성이 자동화되는 것으로 보인다. 이 분류를 제시한 단일 출처는 없고, q1-01의 래스터 이미지 자동 인식을 로봇 지도까지 이은 공개 사례는 이번에 찾지 못했다. [추정][^ref-079][^ref-132][^ref-128][^ref-083][^ref-084][^ref-081][^ref-085][^ref-130]\n\n확인한 사례 범위에서는 도면과 현장의 차이(설계–시공 편차, 가구·장비)와 주행 차선·충전 위치 같은 로봇 운영 요소가 자동 생성 결과에 담기지 않고 위치추정 쪽 보정이나 사람의 주석으로 남는 것으로 보인다. traffic-editor의 is_charger처럼 충전 위치도 도면 인식이 아니라 사람이 주석하는 항목으로 두는 것으로 읽힌다. [추정][^ref-079][^ref-081][^ref-128][^ref-129][^ref-082]\n\n이번에 확인한 제품 쪽 근거(MiR Fleet, Navitec, Pointr)는 도면 가져오기·시각화·사람용 지도 변환에 관한 벤더 설명뿐이고, 물류 로봇 관제 제품이 도면에서 문·승강기·충전 위치를 자동 추출해 지도와 공용 자원 목록을 만든다는 공개 근거는 찾지 못했다. 검색 범위 안의 부재이며 부재가 확인된 것은 아니다(후속 질문 q1-06). [추정][^ref-132][^ref-127][^ref-125]\n\n#### ROP 범위 경계\n\n연계 대상: 도면·BIM을 기준으로 한 로봇 위치추정과 SLAM(Boniardi 외, Ogm2Pgbm, A-Graph·S-Graph 계열)은 분류 원문 9장의 로봇 자체 지능·제어 쪽이므로, 이종 제조사를 연결하는 ROP는 도면에서 만든 층별 지도·공간 그래프의 좌표·층 이름 정렬과 버전 관리를 맡고 로컬 지도 생성·위치추정은 제조사 쪽에 맡기는 경계가 될 것으로 보인다. [추정][^ref-128][^ref-082][^ref-129][^ref-080]\n"
+        },
+        {
+          "section": "4. 결론과 남은 불확실성",
+          "action": "replace",
+          "content": "**결론**\n- q1-01의 답으로 래스터 평면도 데이터셋·모델(CubiCasa5K, Raster-to-Vector·DeepFloorplan, MLSTRUCT-FP, CVC-FP), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan, MSD), 국내 AI Hub 건축 도면 데이터를 확인했다. [사실][^ref-062][^ref-064][^ref-065][^ref-066][^ref-069][^ref-070][^ref-071][^ref-072][^ref-073][^ref-074][^ref-075]\n- 계단은 CubiCasa5K와 Kratochvila 외(2024)에서 인식 대상으로 확인됐다. [사실][^ref-063][^ref-078]\n- 벽·문·창문은 확인한 자료 대부분에서 기본 인식 대상인 것으로 보인다(여러 자료의 범주 기술을 대조한 종합 판단). [추정][^ref-063][^ref-064][^ref-078]\n- 방 연결을 그래프로 내는 자료가 있어 공간 그래프 스키마 초안의 '공간 노드–문–공간 노드' 구조와 출력 형태가 가깝다. [추정][^ref-070][^ref-071][^ref-072]\n- q1-02의 답으로, Open-RMF traffic-editor는 평면도 이미지를 배경으로 사람이 벽·문·승강기·차선을 주석하고 측정으로 축척을, 기준점으로 층을 맞추게 하며, 관제 연동에는 경유점마다 층 이름과 미터 좌표가 필요하다. [사실][^ref-079][^ref-080]\n- 벡터 CAD(osmAG-from-cad)와 BIM/IFC(점유 격자 지도 생성, BIRS, ifc2indoorgml)에서 로봇용 위상·거리 지도나 실내 공간 모델을 자동 생성하는 연구·오픈소스 도구가 있다. [사실][^ref-084][^ref-081][^ref-085][^ref-130]\n- 입력 형식이 구조화될수록(래스터 → 벡터 CAD → BIM/IFC) 자동화 범위가 넓어지는 것으로 보인다. [추정][^ref-079][^ref-084][^ref-081][^ref-086]\n\n**남은 불확실성**\n- 엘리베이터 범주는 벡터 CAD 데이터셋에서만, 그것도 제3자 데이터셋 카드와 검색 요약으로만 확인됐다. CubiCasa5K·AI Hub 데이터의 전체 클래스 목록은 미확인이다(후속 질문 q2-04). [추정][^ref-068][^ref-073]\n- 물류센터·창고 평면도와 충전 위치 라벨을 담은 데이터셋은 찾지 못했으며 부재가 확인된 것은 아니다(후속 질문 q1-05). [추정][^ref-063][^ref-074]\n- 다수 데이터셋이 비상업 라이선스이거나 승인제로 접근하므로 상용 적용 전 라이선스 검토가 필요할 것으로 보인다. CubiCasa5K·AI Hub 데이터의 상업 이용 조건은 미확인이다. [추정][^ref-066][^ref-073]\n- 축척 정보가 없는 데이터셋이 있어 로봇 지도 좌표로 옮길 때 축척 복원 방법이 필요하다(후속 질문 q4-05). [추정][^ref-070]\n- 교차 확인된 항목은 없고, 원문을 열지 못한 출처(ref-063, ref-067, ref-068, ref-073, ref-074, ref-075, ref-076, ref-077, ref-078)에 기댄 내용은 검색 요약 범위다.\n- q1-02의 제품 쪽 근거는 벤더 주장 3건(MiR Fleet, Navitec, Pointr)뿐이고, 도면에서 문·승강기·충전 위치를 자동 추출하는 물류 로봇 관제 제품의 공개 근거가 없다는 것은 검색 범위 기준이다(후속 질문 q1-06). [추정][^ref-132][^ref-127][^ref-125]\n- q1-02의 연구 근거도 저자 계열 1차 출처뿐이고, Vega-Torres 외·Ogm2Pgbm·BIM-SLAM은 같은 TUM 저자 그룹이다. BIM-SLAM의 URDF 건물 월드·점유 격자 지도 생성은 미확인이고, A-Graph·S-Graph 연구의 35cm·15도 수치는 단일 출처다. 원문을 열지 못한 출처(ref-081, ref-083, ref-085, ref-086, ref-120, ref-125~ref-132)에 기댄 내용은 검색 요약 범위다.\n- 물류 분야의 국내 도면 활용 사례는 찾지 못했다. 국내 문헌고찰은 건설로봇 대상이다(열린 질문으로 올림). [사실][^ref-131]\n- 온톨로지 변경: [공간 그래프 스키마 초안](space-graph-schema-draft.md)을 v0에서 v0.1로 올렸다(창문·난간 개념, 문 없는 인접 관계, 공간 노드의 방 유형 속성 추가, 벽·문·계단·공간 노드 확정). 에스컬레이터는 근거가 강등된 제3자 단일 출처라 반영하지 않고 초안 6절 질문으로 두었다.\n- 온톨로지 변경(실행 2026-09-25-11): 초안을 v0.1에서 v0.2로 올렸다(층간 정렬 기준점 추가, 층별 지도·평면도 확정). 문에 통과 방향·문 유형·통과 비용 속성을 더하는 제안은 통과 조건을 엣지에 둘지 문 속성에 둘지(q3-02)가 미결이어서 반영하지 않고 초안 6절 질문으로 두었다."
+        },
+        {
+          "section": "5. 이 단계가 낳은 후속 질문",
+          "action": "replace",
+          "content": "| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q1-05 | 물류센터·창고 평면도(랙·도크·충전 구역 포함)를 대상으로 한 공개 평면도 인식 데이터셋이나 모델이 있는가, 없으면 주거·상업 데이터셋으로 학습한 모델이 물류 시설 도면에 얼마나 옮겨지는가? | 단계 1. 선행 연구·제품 사례 조사 | f18 (실행 2026-09-25-05) | 열림 |\n| q2-04 | AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가? | [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md) | f17 (실행 2026-09-25-05) | 열림 |\n| q4-05 | 축척 정보가 없는 래스터 평면도의 인식 결과를 로봇 지도 좌표(미터)로 옮기기 위해 축척을 어떻게 복원하는가(치수 문자 OCR, 문 폭 등 기준 요소, 현장 측정)? | [단계 4. 지도 변환 보정과 현장 정합](stage-4-map-conversion-and-site-alignment.md) | f21 (실행 2026-09-25-05) | 열림 |\n| q1-06 | 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? | 단계 1. 선행 연구·제품 사례 조사 | f21 (실행 2026-09-25-11) | 열림 |\n\n그래프 출력형 평면도 인식을 층 간 연결(엘리베이터·계단)과 통과 조건을 갖춘 공간 그래프로 확장하는 질문(근거 f20)은 기존 질문 q3-02와 같은 뜻이어서 새로 등록하지 않았다. f20은 [단계 3. 구현 가설 설계](stage-3-implementation-hypothesis.md)의 q3-02 관련 근거로 연결한다.\n\n실행 2026-09-25-11에서 제기된 공간 그래프 교환 형식 질문(근거 f19)은 기존 q2-01·q2-03과 같은 뜻이어서 새로 등록하지 않았다. IndoorGML(ifc2indoorgml이 IFC에서 생성), osmAG(OSM XML), Open-RMF traffic-editor 주석 결과가 [단계 2. 필요한 데이터와 표준 조사](stage-2-data-and-standards.md)의 q2-01·q2-03 조사 후보다.\n\n도면(as-planned)과 현장(as-built)의 구조 편차 추정 방법을 지도 정합 절차에 넣는 질문(근거 f17)은 기존 q4-02와 같은 뜻이어서 새로 등록하지 않았다. f17(A-Graph·S-Graph 결합 연구)은 [단계 4. 지도 변환 보정과 현장 정합](stage-4-map-conversion-and-site-alignment.md)의 q4-02 관련 근거로 연결한다."
+        },
+        {
+          "section": "6. 완료 조건 충족 현황",
+          "action": "replace",
+          "content": "충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 선행 연구·데이터셋·제품 사례 비교가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 \"3. 선행 연구·제품 사례\" 절에 실림 | 충족 | 데이터셋 비교(실행 2026-09-25-05)에 이어 도면→로봇 지도 연구·오픈소스 도구 비교와 제품 사례가 실렸다(실행 2026-09-25-11). 제품 쪽 근거는 벤더 주장 3건뿐이다 | 충족(1차 예비 판정, 2차에서 확정) · 미승인 |\n| 인식 대상 요소 목록이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에 반영됨 | 충족 | 초안 v0.1에 창문·난간 추가, 벽·문·계단 확정(실행 2026-09-25-05). v0.2에서 층간 정렬 기준점 추가(실행 2026-09-25-11) | 충족(1차 예비 판정, 2차에서 확정) · 미승인 |\n\n다음 단계로 전환: 아니오(막힌 질문 q1-03·q1-04·q1-05·q1-06)"
+        },
+        {
+          "section": "7. 관련 세부영역",
+          "action": "replace",
+          "content": "이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 \"세부영역 반영 제안\"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 프런트매터 `related_areas`는 아래 목록과 같다.\n\n- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 분류 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 실행 2026-09-25-11의 반영 제안: 6. 대표 접근법과 기술, 7. 관련 표준·프레임워크·오픈소스, 8. 대표 연구와 자료, 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\n- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 분류 원문 8장의 교차 규칙: 도면 해석은 이 영역의 방법이 6. 지도·공간·위치 모델에 적용되는 것이다\n- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 분류 원문 10장의 함께 필요한 영역(시운전). '현장 모델링 시간을 줄이는' 적용처다. 실행 2026-09-25-11의 반영 제안: 6. 대표 접근법과 기술, 8. 대표 연구와 자료\n- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — Open-RMF traffic-editor 주석 결과에서 시뮬레이션 월드를 생성하는 연결 지점(이번 실행의 반영 제안은 없음)\n- [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 공간 정보 교환 형식(IFC·IndoorGML·osmAG). 실행 2026-09-25-11의 반영 제안: 7. 관련 표준·프레임워크·오픈소스(IFC·IndoorGML은 발행 기관 자료로 확인하지 않음)"
+        },
+        {
+          "section": "8. 출처",
+          "action": "replace",
+          "content": "[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-080]: Open Robotics, Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html, 접근일 2026-09-25\n[^ref-081]: Vega-Torres, M. A. 외, Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments, 2023-08, https://arxiv.org/abs/2308.05443, 접근일 2026-09-25 (원문 미열람)\n[^ref-082]: Vega-Torres, M. A. (MigVega GitHub), Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments), 미확인, https://github.com/MigVega/Ogm2Pgbm, 접근일 2026-09-25\n[^ref-083]: Zhang, J. 외, Generation of Indoor Open Street Maps for Robot Navigation from CAD Files, 2025-07, https://arxiv.org/abs/2507.00552, 접근일 2026-09-25 (원문 미열람)\n[^ref-084]: Zhang, J. (jiajiezhang7 GitHub), osmAG-from-cad — README (CAD-to-osmAG pipeline), 미확인, https://github.com/jiajiezhang7/osmAG-from-cad, 접근일 2026-09-25\n[^ref-085]: Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D., Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces, 2025-03-26, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full, 접근일 2026-09-25 (원문 미열람)\n[^ref-086]: Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E., Indoor Robot Navigation Using Graph Models Based on BIM/IFC, 2019, https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC, 접근일 2026-09-25 (원문 미열람)\n[^ref-120]: Boniardi, F., Valada, A., Mohan, R., Caselitz, T., & Burgard, W., Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network, 2019-03, https://arxiv.org/abs/1903.01804, 접근일 2026-09-25 (원문 미열람)\n[^ref-125]: Pointr, IMDF from Floor Plan & CAD Conversion Services, 미확인, https://www.pointr.tech/technology/imdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-126]: Vega Torres, M. A., Braun, A., & Borrmann, A., BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR, 2024-08, https://arxiv.org/abs/2408.15870, 접근일 2026-09-25 (원문 미열람)\n[^ref-127]: Navitec Systems, Universal Fleet Control Software for AGVs & AMRs, 미확인, https://navitecsystems.com/universal-fleet-control/, 접근일 2026-09-25 (원문 미열람)\n[^ref-128]: Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W., Robust LiDAR-based localization in architectural floor plans, 2017, http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-129]: Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans (arXiv 2024-08 제출, 2025-06 개정), 2024-08, https://arxiv.org/abs/2408.01737, 접근일 2026-09-25 (원문 미열람)\n[^ref-130]: Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S., IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC, 2022, https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/, 접근일 2026-09-25 (원문 미열람)\n[^ref-131]: 박근홍, 박병준, 이슬기(한국산학기술학회논문지), BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218), 2025, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295, 접근일 2026-09-25 (원문 미열람)\n[^ref-132]: Mobile Industrial Robots(MiR), MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본, 2025-01, https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330, 접근일 2026-09-25 (원문 미열람)"
+        },
+        {
+          "section": "9. 이력",
+          "action": "replace",
+          "content": "실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-11 | q1-02 | q1-06 | v0.1 → v0.2 | 3 |\n| 2026-09-25 | 2026-09-25-05 | q1-01 | q1-05, q2-04, q4-05 | v0 → v0.1 | 2 |\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q1-01~q1-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [공간 그래프 스키마 초안](space-graph-schema-draft.md)에서 생성) | 1 |"
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절: 입력 형식별 도면→로봇 지도 연구·오픈소스 도구 비교표 추가, '제품 사례' 소절을 벤더 주장 병기로 채움, 한계에 남는 수작업·제품 근거 한계·국내 문헌고찰 추가",
+      "patches": [
+        {
+          "section": "3. 선행 연구·제품 사례",
+          "action": "replace",
+          "frontmatter": {
+            "last_run": "2026-09-25",
+            "confidence": "medium",
+            "sources": [
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-080",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-120",
+              "ref-125",
+              "ref-126",
+              "ref-127",
+              "ref-128",
+              "ref-129",
+              "ref-130",
+              "ref-131",
+              "ref-132"
+            ]
+          },
+          "content": "평면도에서 벽·문·창문·계단을 인식하는 공개 데이터셋은 래스터 이미지, 벡터 CAD, 그래프 출력형으로 나뉘며, 엘리베이터 범주는 벡터 CAD 쪽에서만 제3자 자료로 확인됐다. [추정][^ref-068][^ref-073] 도면에서 로봇용 지도를 만드는 사례는 래스터 이미지는 사람이 주석하는 배경, 벡터 CAD는 위상 분할 자동화, BIM/IFC는 격자 지도·위상 그래프·IndoorGML 자동 생성으로 나뉘는 것으로 보이며, 제품 쪽 근거는 벤더 주장뿐이다. [추정][^ref-079][^ref-084][^ref-081][^ref-132] 이 절은 [단계 1. 선행 연구·제품 사례 조사](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-01)의 실행 2026-09-25-05 결과와 [q1-02 답](../tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-02)(실행 2026-09-25-11)이며, 문장별 태그와 상세는 그 단계 페이지에 있다.\n\n### 공개 데이터셋 비교 (2026-09-25 기준)\n\n아래 표는 검증된 발견 사항으로 직접 만든 것이며 출처의 표를 옮긴 것이 아니다. 각 행의 내용은 근거 열 출처에서 확인한 사실이고, FloorPlanCAD의 엘리베이터 칸만 제3자 카드에 기댄 추정이다. \"미확인\"은 이번 실행에서 확인하지 못했다는 뜻이다.\n\n| 자료 | 입력 형식 | 규모 | 주요 인식 요소 | 엘리베이터·계단 | 접근 조건 | 근거 |\n|---|---|---|---|---|---|---|\n| CubiCasa5K | 래스터 이미지, 주석 SVG | 5,000장, 80여 범주 | 방, 창문·문 등 아이콘, 벽·난간·계단 등 | 계단 있음, 엘리베이터 미확인 | 미확인 | [^ref-062][^ref-063] |\n| Raster-to-Vector(R2V) | 래스터 → 벡터 | 벡터 표현 10만 건 이상 공개 | 벽·문(개구부)·방 유형·아이콘 | 미확인 | 원 이미지 비공개(LIFULL 라이선스) | [^ref-065] |\n| DeepFloorplan(R2V·R3D) | 래스터, 픽셀 주석 | R2V 815장 | 벽·문·창문·방 유형 | 미확인 | 미확인 | [^ref-064] |\n| MLSTRUCT-FP | 래스터 + JSON | 954장, 벽 사각형 70,873개 | 벽·슬래브·축척(px/m) | 미확인 | 요청 양식으로 제공 | [^ref-069] |\n| CVC-FP | 스캔 평면도 | 122장 | 요소와 공간·기능 관계 | 미확인 | 미확인 | [^ref-075] |\n| FloorPlanCAD | 벡터 CAD(SVG) | 15,663장, 35개 범주 | 선 단위 범주 주석 | 엘리베이터·에스컬레이터 범주(제3자 카드 근거, 추정) | 주석 CC BY-NC 4.0, 2022년 초 종료 | [^ref-066][^ref-067][^ref-068] |\n| ArchCAD-400K | 벡터 CAD 조각 | 도면 5,538장 → 413,062조각, 27개 범주 | 기둥·보, 문·창문 | 미확인 | 비상업 용도 제한 | [^ref-073] |\n| Raster-to-Graph | 래스터 → 구조 그래프 | 1만 장 이상 | 벽 교차점·선분, 방 유형·문 | 미확인 | LIFULL 이용 신청 | [^ref-070] |\n| ResPlan | 벡터 + 그래프 | 17,000건 | 벽·문·창문·방·발코니, 방 연결 엣지 4유형 | 미확인 | CC BY 4.0 | [^ref-071] |\n| MSD(생성 벤치마크) | 그래프 | 5,300여 장 | 방 노드·연결 엣지 | 미확인 | 미확인 | [^ref-072] |\n| AI Hub 건축 도면 데이터 | 평면도·입면도·단면도·구조도 | 미확인 | 벽체·창문 객체, 출입문·창호·벽체 분할, 도면 문자 | 미확인 | 미확인 | [^ref-074] |\n\n### 관련 모델과 로봇 적용 연구\n\n- Kratochvila 외(2024)는 다세대 래스터 평면도에서 벽·창문·계단·난간을 분할하고 벡터화해 3D 모델을 만드는 방법을 제안했다. [사실][^ref-078]\n- DoorDet(2025) 저자들은 세분화된 문 검출용 공개 데이터셋이 드물다고 보고 객체 검출기·대규모 언어 모델(Large Language Model, LLM)·사람 검수를 잇는 반자동 구축 절차를 제안했다. [의견][^ref-077]\n- DeFazio 외(2024)는 라벨을 덧붙인 평면도를 시각-언어 모델(Vision-Language Model, VLM)로 해석해 문 통과를 포함한 이동 계획을 만드는 지도 파싱을 제안했고, GPT-4o·조밀 라벨 평면도·최대 아홉 단계 과제 조건에서 성공률 0.96을 보고했다(단일 출처). [사실][^ref-076] 이 위키는 이를 도면 해석 방법으로만 다루며, 로컬 주행·경로 실행은 로봇 쪽 연계 대상이다.\n\n### 도면에서 로봇용 지도·공간 모델을 만드는 연구와 도구 (2026-09-25 기준)\n\n아래 표는 q1-02에서 검증된 발견 사항으로 직접 만든 것이며 출처의 표를 옮긴 것이 아니다. \"미확인\"은 이번 실행에서 확인하지 못했다는 뜻이다. 위치추정·SLAM을 쓰는 연구는 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개하며, 위치추정 자체는 로봇 자체 지능·제어 쪽 연계 대상이다. Vega-Torres 외, Ogm2Pgbm, BIM-SLAM은 같은 TUM 저자 그룹의 근거다.\n\n| 입력 형식 | 사례 | 구분 | 자동화하는 것 | 사람에게 남는 것 | 근거 |\n|---|---|---|---|---|---|\n| 래스터 평면도 이미지 | Open-RMF traffic-editor | 오픈소스 도구 | 주석 결과에서 시뮬레이션 월드 생성 | 벽·문·승강기·차선 주석, 측정으로 축척 맞춤, 층 기준점, 충전 정점(is_charger) 지정 | [^ref-079] |\n| 건축 CAD 평면도 | Boniardi 외(2017) | 연구 | 도면을 기준 지도로 한 스캔–도면 정합 | 미확인 | [^ref-128] |\n| 건축 평면도 + 카메라 영상 | Boniardi 외(2019) | 연구 | CNN 방 배치 경계 추출과 평면도 정합 | 미확인 | [^ref-120] |\n| 벡터 CAD(DXF, DWG는 외부 변환) | osmAG(Zhang 외 2025, osmAG-from-cad) | 연구·오픈소스 도구 | 구조 레이어 분리, AreaGraph 위상 분할, 층 병합, OSM 형식 계층 지도 생성 | DWG 변환, 문자 기반 방 이름(기본 꺼짐) | [^ref-083][^ref-084] |\n| BIM(IFC) | Vega-Torres 외(2022·2023) | 연구 | 구조 요소만 담은 2D 점유 격자 지도 생성 | 가구·설계–시공 편차는 담기지 않음 | [^ref-081] |\n| BIM/CAD 기반 격자 지도 | Ogm2Pgbm | 오픈소스 도구 | 포즈 그래프 지도로 변환 | 장애물 내부 채우기 정리 | [^ref-082] |\n| BIM + 실측 데이터 | BIM-SLAM(2024) | 연구 | BIM에서 세션 데이터 생성, 다중 세션 앵커링 정렬 | 미확인 | [^ref-126] |\n| BIM(IFC) | BIRS(Braga 외 2025) | 연구 | 위상·거리 지도, 방향 하이퍼그래프 경로계획 | 미확인 | [^ref-085] |\n| BIM(IFC) | Palacz 외(2019) | 연구 | 하이퍼그래프와 방 크기·문 방향·문 유형 속성, 통과 비용 경로 탐색 | 미확인 | [^ref-086] |\n| BIM(IFC) | ifc2indoorgml(2022) | 오픈소스 도구 | IndoorGML 모델 자동 생성 | 미확인 | [^ref-130] |\n| 건축 도면 + 3D 라이다 | A-Graph·S-Graph 결합(Shaheer 외) | 연구 | 도면–현장 전역 정렬·구조 편차 실시간 추정 | 미확인 | [^ref-129] |\n\n### 제품 사례\n\n- MiR Fleet Enterprise 문서(1.2판, 2025-01, 제조사 공식 사이트가 아닌 유통사 게재본)는 CAD에서 만든 평면도를 PNG로 올려 지도로 쓸 수 있고, 축척은 1m당 20픽셀이어야 하며 X-Y 위치와 회전을 조정할 수 있다고 설명한다. [추정] 벤더 주장[^ref-132]\n- Navitec Systems는 자사 플릿 관제가 실제 CAD 파일을 렌더링해 시각화하고 지도 작성·경로·스테이션 계획을 서비스로 제공한다고 소개한다. CAD에서 경로·설비를 자동 추출하는지는 미확인이다. [추정] 벤더 주장[^ref-127]\n- Pointr는 MapScale이 DWG·DXF·벡터 PDF·GeoJSON 도면을 사람용 실내 지도 형식(IMDF)으로 수작업 없이 변환하고 경로를 자동 생성한다고 소개한다. 사람 길안내용 지도이며 로봇 지도 사례가 아니다. [추정] 벤더 주장[^ref-125]\n- 물류 로봇 관제 제품이 도면에서 문·승강기·충전 위치를 자동 추출해 지도와 공용 자원 목록을 만든다는 공개 근거는 이번 검색 범위에서 찾지 못했다(부재 확인은 아님, 후속 질문 q1-06). [추정][^ref-132][^ref-127][^ref-125]\n\n### 한계\n\n- 물류센터·창고 평면도와 충전 위치를 라벨로 담은 데이터셋은 이번 검색 범위에서 찾지 못했다(부재 확인은 아님). [추정][^ref-063][^ref-069][^ref-070][^ref-072][^ref-073][^ref-074]\n- 비상업 라이선스·승인제 접근이 많아 상용 ROP에 쓰려면 라이선스 검토가 필요할 것으로 보인다. [추정][^ref-066][^ref-073][^ref-065][^ref-070]\n- 확인한 사례 범위에서는 도면–현장 차이(설계–시공 편차, 가구·장비)와 주행 차선·충전 위치 같은 로봇 운영 요소가 자동 생성 결과에 담기지 않고 위치추정 쪽 보정이나 사람의 주석으로 남는 것으로 보인다. [추정][^ref-079][^ref-081][^ref-128][^ref-129][^ref-082]\n- 국내 체계적 문헌고찰(2025)은 BIM–건설로봇 연계가 단방향 IFC 변환이 다수이고 현장 검증과 지표 보고가 부족하다고 정리했다. 건설로봇 대상이며 물류 분야 국내 사례는 찾지 못했다. [사실][^ref-131]\n\n[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-09-25\n[^ref-063]: Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J., CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis, 2019-04, https://arxiv.org/abs/1904.01920, 접근일 2026-09-25 (원문 미열람)\n[^ref-064]: Zeng, Z., Li, X., Yu, Y. K., & Fu, C.-W., DeepFloorplan — README (Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention), 2019, https://github.com/zlzeng/DeepFloorplan, 접근일 2026-09-25\n[^ref-065]: Liu, C., Wu, J., Kohli, P., & Furukawa, Y., FloorplanTransformation — README (Raster-to-Vector: Revisiting Floorplan Transformation), 2017, https://github.com/art-programmer/FloorplanTransformation, 접근일 2026-09-25\n[^ref-066]: FloorPlanCAD 프로젝트(Fan, Z. 외), FloorPlanCAD Dataset — project page (floorplancad.github.io index.md), 2021, https://floorplancad.github.io/, 접근일 2026-09-25\n[^ref-067]: Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P., FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting, 2021-05, https://arxiv.org/abs/2105.07147, 접근일 2026-09-25 (원문 미열람)\n[^ref-068]: Voxel51 (Hugging Face), Voxel51/FloorPlanCAD · Datasets at Hugging Face, 미확인, https://huggingface.co/datasets/Voxel51/FloorPlanCAD, 접근일 2026-09-25 (원문 미열람)\n[^ref-069]: Pizarro, P. N., Hitschfeld, N., & Sipiran, I. (MLSTRUCT), MLStructFP — README (Large-scale multi-unit floor plan dataset for architectural plan analysis and recognition), 2023, https://github.com/MLSTRUCT/MLStructFP, 접근일 2026-09-25\n[^ref-070]: Hu, S. 외, Raster-to-Graph — README (Raster-to-Graph: Floorplan Recognition via Autoregressive Graph Prediction with an Attention Transformer), 2024, https://github.com/SizheHu/Raster-to-Graph, 접근일 2026-09-25\n[^ref-071]: Agour, M. 외 (ResPlan), ResPlan — README (ResPlan: A Large-Scale Vector-Graph Dataset of 17,000 Residential Floor Plans), 2025-08, https://github.com/m-agour/ResPlan, 접근일 2026-09-25\n[^ref-072]: van Engelenburg, C. 외 (MSD), msd — README (MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes), 2024, https://github.com/caspervanengelenburg/msd, 접근일 2026-09-25\n[^ref-073]: Luo, R. 외, ArchCAD-400K: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting, 2025-03, https://arxiv.org/abs/2503.22346, 접근일 2026-09-25 (원문 미열람)\n[^ref-074]: 한국지능정보사회진흥원(AI Hub), 건축 도면 데이터, 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71465, 접근일 2026-09-25 (원문 미열람)\n[^ref-075]: de las Heras, L.-P., Terrades, O. R., Robles, S., & Sánchez, G., CVC-FP and SGT: a new database for structural floor plan analysis and its groundtruthing tool, 2015, https://www.researchgate.net/publication/270597635_CVC-FP_and_SGT_a_new_database_for_structural_floor_plan_analysis_and_its_groundtruthing_tool, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\n[^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)\n[^ref-078]: Kratochvila, L., de Jong, G., Arkesteijn, M., Zemcik, T., Bilik, S., Horak, K., & Rellermeyer, J. S., Multi-Unit Floor Plan Recognition and Reconstruction Using Improved Semantic Segmentation of Raster-Wise Floor Plans, 2024-08, https://arxiv.org/abs/2408.01526, 접근일 2026-09-25 (원문 미열람)\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-081]: Vega-Torres, M. A. 외, Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments, 2023-08, https://arxiv.org/abs/2308.05443, 접근일 2026-09-25 (원문 미열람)\n[^ref-082]: Vega-Torres, M. A. (MigVega GitHub), Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments), 미확인, https://github.com/MigVega/Ogm2Pgbm, 접근일 2026-09-25\n[^ref-083]: Zhang, J. 외, Generation of Indoor Open Street Maps for Robot Navigation from CAD Files, 2025-07, https://arxiv.org/abs/2507.00552, 접근일 2026-09-25 (원문 미열람)\n[^ref-084]: Zhang, J. (jiajiezhang7 GitHub), osmAG-from-cad — README (CAD-to-osmAG pipeline), 미확인, https://github.com/jiajiezhang7/osmAG-from-cad, 접근일 2026-09-25\n[^ref-085]: Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D., Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces, 2025-03-26, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full, 접근일 2026-09-25 (원문 미열람)\n[^ref-086]: Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E., Indoor Robot Navigation Using Graph Models Based on BIM/IFC, 2019, https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC, 접근일 2026-09-25 (원문 미열람)\n[^ref-120]: Boniardi, F., Valada, A., Mohan, R., Caselitz, T., & Burgard, W., Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network, 2019-03, https://arxiv.org/abs/1903.01804, 접근일 2026-09-25 (원문 미열람)\n[^ref-125]: Pointr, IMDF from Floor Plan & CAD Conversion Services, 미확인, https://www.pointr.tech/technology/imdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-126]: Vega Torres, M. A., Braun, A., & Borrmann, A., BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR, 2024-08, https://arxiv.org/abs/2408.15870, 접근일 2026-09-25 (원문 미열람)\n[^ref-127]: Navitec Systems, Universal Fleet Control Software for AGVs & AMRs, 미확인, https://navitecsystems.com/universal-fleet-control/, 접근일 2026-09-25 (원문 미열람)\n[^ref-128]: Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W., Robust LiDAR-based localization in architectural floor plans, 2017, http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-129]: Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans (arXiv 2024-08 제출, 2025-06 개정), 2024-08, https://arxiv.org/abs/2408.01737, 접근일 2026-09-25 (원문 미열람)\n[^ref-130]: Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S., IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC, 2022, https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/, 접근일 2026-09-25 (원문 미열람)\n[^ref-131]: 박근홍, 박병준, 이슬기(한국산학기술학회논문지), BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218), 2025, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295, 접근일 2026-09-25 (원문 미열람)\n[^ref-132]: Mobile Industrial Robots(MiR), MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본, 2025-01, https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "초안 v0.1 → v0.2: 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도'(f1·f2·f3)·'평면도'(f1·f8·f11) 확정, 문 속성 제안과 f17·f20 은 6절 질문으로. H1 '(v0.1)' 은 H2 밖이라 패치 불가 — '(v0.2)' 로 교체 필요",
+      "patches": [
+        {
+          "section": "2. 개념 목록 표",
+          "action": "replace",
+          "frontmatter": {
+            "ontology_version": "0.2",
+            "last_run": "2026-09-25",
+            "confidence": "medium",
+            "sources": [
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-078",
+              "ref-079",
+              "ref-080",
+              "ref-081",
+              "ref-082",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-128",
+              "ref-129"
+            ]
+          },
+          "content": "| 개념 | 정의 | 주요 속성 | 근거 출처 | 상태 |\n|---|---|---|---|---|\n| 평면도(Floor Plan) | 인식의 입력이 되는 층별 건축 도면. 모든 인식 요소의 근거 도면이 된다. 아이디어 정의 기반 [가정] | 도면 이름, 형식(값 후보: 래스터 이미지, 벡터 CAD(DXF·DWG), BIM 모델(IFC) — 단계 2에서 확정), 층, 버전 | 확장 아이디어 3의 정의 문구; 속성 '형식' 값 후보는 finding f1·f8·f11 (실행 2026-09-25-11)[^ref-079][^ref-084][^ref-081] | 확정 |\n| 층(Floor) | 건물의 한 층. 층별 지도와 공간 노드의 묶음 단위다. 아이디어 정의 기반 [가정] | 층 이름, 높이 기준(단계 4에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 공간 노드(Space Node) | 로봇이 머물거나 지나가는 공간 단위(방·구역·통로 등). 공간 그래프의 노드다. 아이디어 정의 기반 [가정] | 종류, 층, 경계, 이름·별칭, 방 유형(부엌·침실·복도 등, 데이터셋마다 분류 체계가 다름) | 확장 아이디어 3의 정의 문구; 속성 '방 유형'은 finding f3·f4·f9·f10 (실행 2026-09-25-05)[^ref-065][^ref-064][^ref-070][^ref-071] | 확정 |\n| 벽(Wall) | 공간 노드의 경계를 이루고 통과할 수 없는 요소. 아이디어 정의 기반 [가정] | 위치, 두께(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구; finding f2·f4·f8 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-069] | 확정 |\n| 문(Door) | 두 공간 노드를 잇는 통과 지점. 아이디어 정의 기반 [가정] | 위치, 폭, 여닫는 방식·연동 여부(10. 설비·건물 시스템 연동) | 확장 아이디어 3의 정의 문구; finding f4·f10 (실행 2026-09-25-05)[^ref-064][^ref-071] | 확정 |\n| 창문(Window) | 공간 노드의 경계에 놓이는 개구부. 여러 평면도 인식 데이터셋의 인식 대상이며, ResPlan은 창문을 통한 방 연결(via_window)을 엣지 유형으로 둔다. 이 초안에서는 문과 달리 로봇이 지나는 연결로 쓰지 않는 경계 요소로 구분한다. | 위치 | finding f2·f4·f10 (실행 2026-09-25-05)[^ref-063][^ref-064][^ref-071] | 확정 |\n| 난간(Railing) | 벽처럼 경계를 이루는 요소로 CubiCasa5K와 Kratochvila 외(2024)의 인식 대상이다. 벽과 같은 개념으로 묶을지는 6절 질문으로 둔다. | 위치 | finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\n| 엘리베이터(Elevator) | 서로 다른 층의 공간 노드를 잇는 수직 이동 설비. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 운행 층, 연동 여부 | 확장 아이디어 3의 정의 문구 | 초안 |\n| 계단(Stairs) | 서로 다른 층의 공간 노드를 잇는 수직 이동 경로. 로봇의 계단 능력이 있어야 지날 수 있다. 아이디어 정의 기반 [가정] | 위치, 잇는 층 | 확장 아이디어 3의 정의 문구; finding f2·f14 (실행 2026-09-25-05)[^ref-063][^ref-078] | 확정 |\n| 충전 위치(Charging Location) | 로봇이 충전하는 자리. 공용 자원이다. 아이디어 정의 기반 [가정] | 위치, 수(단계 1·2에서 확정) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 공용 자원(Shared Resource) | 여러 로봇이 나눠 쓰는 시설. 엘리베이터와 충전 위치가 시드 인스턴스다. 아이디어 정의 기반 [가정] | 종류, 위치(공간 노드), 수용량·예약 조건(16. 공용 자원·충전·에너지 최적화) | 확장 아이디어 3의 정의 문구 | 초안 |\n| 층별 지도(Floor Map) | 한 층의 인식 결과로 자동 생성한 지도. 로봇 내비게이션 지도로 바꾸려면 보정이 필요하다(단계 4). 아이디어 정의 기반 [가정] | 층, 좌표계, 축척(미터당 픽셀), 도면 대비 변환(이동·회전), 생성 시각, 보정 이력 | 확장 아이디어 3의 정의 문구; 속성 '축척'·'도면 대비 변환'은 finding f1·f2·f3 (실행 2026-09-25-11)[^ref-079][^ref-080]. 층 이름은 '층' 개념의 속성이며 관계 '층별 지도 / 층에서 생성된다'로 잇는다 | 확정 |\n| 층간 정렬 기준점(Alignment Fiducial) | 여러 층 도면에서 수직으로 겹칠 것으로 기대되는 지점. 층 사이 축척과 정렬(좌표 변환)을 맞추는 데 쓴다(Open-RMF traffic-editor). 관제 쪽은 경유점마다 층 이름과 층 안의 미터 좌표를 요구한다. | 층, 도면 위 위치 | finding f1·f3 (실행 2026-09-25-11)[^ref-079][^ref-080] | 확정 |\n\n개념은 번호나 코드로 부르지 않고 이름으로 부른다. 상태 값은 초안(시드) / 제안(검증 승인 전) / 확정(검증 승인) / 폐기(이유 병기)이며, 폐기한 개념은 표에서 지우지 않고 상태만 바꾼다. 속성의 \"(단계 n에서 확정)\"은 그 단계의 조사 결과로 정한다는 뜻이다. v0.1(실행 2026-09-25-05)의 추가·확정은 내용 검증 에이전트가 승인한 변경만 반영한 것이다. v0.2(실행 2026-09-25-11)에서는 검증이 승인한 대로 층간 정렬 기준점을 추가하고 층별 지도·평면도를 확정했으며, 벤더 주장(MiR Fleet 축척 요건)과 추정(입력 형식별 자동화 수준 종합)은 근거 칸에 넣지 않았다. 문에 통과 방향·문 유형·통과 비용 속성을 더하는 제안은 반영하지 않고 6절 질문으로 두었다."
+        },
+        {
+          "section": "3. 관계 목록 표",
+          "action": "replace",
+          "content": "| 주어 | 관계 | 목적어 | 근거 |\n|---|---|---|---|\n| 평면도 | 층을 나타낸다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 층 | 공간 노드를 포함한다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 벽 | 공간 노드의 경계를 이룬다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 문 | 두 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 공간 노드 | 인접한다(문 없이) | 공간 노드 | finding f10 (실행 2026-09-25-05)[^ref-071] — 문을 거치지 않고 경계를 맞대거나 개방되어 이어진 공간 사이 관계. ResPlan의 adjacency·direct 엣지에 대응하며 '문 / 두 공간 노드를 잇는다'와 구분한다 |\n| 엘리베이터·계단 | 서로 다른 층의 공간 노드를 잇는다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 충전 위치 | 공간 노드에 놓인다 | 공간 노드 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 엘리베이터·충전 위치 | 공용 자원이다 | 공용 자원 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 층별 지도 | 층에서 생성된다 | 층 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n| 모든 인식 요소 | 근거 평면도를 가리킨다 | 평면도 | 확장 아이디어 3의 정의 문구 — 아이디어 정의 기반 [가정] |\n\n관계의 방향은 주어에서 목적어로 읽는다. 카디널리티는 정하지 않았으며 6절의 미해결 질문으로 둔다. 창문·난간과 공간 노드 사이의 관계는 아직 승인된 근거가 없어 표에 넣지 않았다(6절). 층간 정렬 기준점과 층·층별 지도 사이의 관계도 승인된 관계가 없어 넣지 않았다(6절)."
+        },
+        {
+          "section": "4. 다이어그램",
+          "action": "replace",
+          "content": "```mermaid\nflowchart LR\n  plan[\"평면도\"] -->|\"나타낸다\"| floor[\"층\"]\n  floor -->|\"포함한다\"| node[\"공간 노드\"]\n  wall[\"벽\"] -->|\"경계를 이룬다\"| node\n  door[\"문\"] -->|\"두 노드를 잇는다\"| node\n  node -->|\"인접한다(문 없이)\"| node\n  elev[\"엘리베이터\"] -->|\"층 사이를 잇는다\"| node\n  stairs[\"계단\"] -->|\"층 사이를 잇는다\"| node\n  charge[\"충전 위치\"] -->|\"놓인다\"| node\n  elev -->|\"이다\"| res[\"공용 자원\"]\n  charge -->|\"이다\"| res\n  fmap[\"층별 지도\"] -->|\"생성된다\"| floor\n  window[\"창문\"]\n  railing[\"난간\"]\n  fiducial[\"층간 정렬 기준점\"]\n```\n\n도식은 2절의 개념과 3절의 관계만 그렸다. 창문·난간·층간 정렬 기준점은 개념으로만 확정했고 관계가 정해지지 않아 연결선 없이 두었다."
+        },
+        {
+          "section": "6. 미해결 모델링 질문",
+          "action": "append",
+          "content": "- 문 통과 조건을 어디에 둘지 정해지지 않았다. BIRS는 통행 조건을 가중치로 담은 방향 하이퍼그래프에서 경로를 계획했다. [사실][^ref-085] Palacz 외는 방 크기·문 방향·문 유형을 하이퍼그래프 속성으로 두고 공간 통과·문 열기 비용을 고려했으며, 검색 요약 기준으로 문을 하이퍼엣지로 표현한다. [사실][^ref-086] 통과 조건을 엣지에 둘지 문 속성에 둘지 정해지기 전까지 문 개념에 통과 방향·문 유형·통과 비용 속성을 더하지 않았다(v0.2, 실행 2026-09-25-11). — 관련: q3-02\n- 층간 정렬 기준점을 층·층별 지도와 어떤 관계로 잇는지(어느 층 쌍의 변환을 정하는지) 정해지지 않았다. — 관련: q4-03\n- 위 q4-02·q4-03 항목의 근거 보강: 건축 도면에서 만든 그래프와 라이다로 추정한 그래프를 결합해 도면(as-planned)과 현장(as-built)의 전역 정렬·구조 편차를 실시간 추정하는 연구가 있다(arXiv 2024-08 제출, 2025-06 개정). [사실][^ref-129] 확인한 사례 범위에서는 도면–현장 차이와 주행 차선·충전 위치가 자동 생성 결과에 담기지 않고 위치추정 쪽 보정이나 사람 주석으로 남는 것으로 보인다. [추정][^ref-079][^ref-081][^ref-128][^ref-129][^ref-082] 도면–현장 편차는 새 개념으로 넣지 않았다. — 관련: q4-02, q4-03\n- 평면도 형식(래스터 이미지, 벡터 CAD, BIM 모델)마다 자동화 수준이 다를 것으로 보이나 입력 형식별 종합은 추정이어서 개념 근거 칸에 넣지 않았다. [추정][^ref-079][^ref-084][^ref-081] — 관련: q2-02\n\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-080]: Open Robotics, Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html, 접근일 2026-09-25\n[^ref-081]: Vega-Torres, M. A. 외, Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments, 2023-08, https://arxiv.org/abs/2308.05443, 접근일 2026-09-25 (원문 미열람)\n[^ref-082]: Vega-Torres, M. A. (MigVega GitHub), Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments), 미확인, https://github.com/MigVega/Ogm2Pgbm, 접근일 2026-09-25\n[^ref-084]: Zhang, J. (jiajiezhang7 GitHub), osmAG-from-cad — README (CAD-to-osmAG pipeline), 미확인, https://github.com/jiajiezhang7/osmAG-from-cad, 접근일 2026-09-25\n[^ref-085]: Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D., Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces, 2025-03-26, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full, 접근일 2026-09-25 (원문 미열람)\n[^ref-086]: Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E., Indoor Robot Navigation Using Graph Models Based on BIM/IFC, 2019, https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC, 접근일 2026-09-25 (원문 미열람)\n[^ref-128]: Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W., Robust LiDAR-based localization in architectural floor plans, 2017, http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-129]: Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans (arXiv 2024-08 제출, 2025-06 개정), 2024-08, https://arxiv.org/abs/2408.01737, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6. 살아있는 산출물 링크: 초안 v0.2, 아이디어 3절 제품 사례 반영, 백로그 수치(후속 질문 4건, q1-01·q1-02 답함) 갱신. 상태 줄은 변경 없음(현재 단계·마지막 트랙 실행 동일)",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "frontmatter": {
+            "last_run": "2026-09-25"
+          },
+          "content": "- [공간 그래프 스키마 초안](space-graph-schema-draft.md) — 현재 버전 v0.2. 실행 2026-09-25-05에서 창문·난간 개념과 문 없는 인접 관계를 더하고 공간 노드에 방 유형 속성을 넣었으며 벽·문·계단·공간 노드를 확정했다. 실행 2026-09-25-11에서 층간 정렬 기준점을 더하고 층별 지도(축척·도면 대비 변환)와 평면도(형식 값 후보)를 확정했으며, 문 속성 추가 제안은 미해결 질문으로 두었다.\n- [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md) — 확장 아이디어 페이지. 3절(선행 연구·제품 사례)에 공개 데이터셋 비교(실행 2026-09-25-05)와 도면→로봇 지도 연구·오픈소스 도구 비교, 제품 사례(벤더 주장 병기, 실행 2026-09-25-11)가 실렸다. 4~6절은 단계 2·3·4·5 실행이 채운다.\n- [질문 백로그](question-backlog.md) — 시작 질문 18건과 후속 질문 4건(실행 2026-09-25-05의 3건, 실행 2026-09-25-11의 1건). q1-01·q1-02 답함. 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 1 | q1-02 답함(래스터·벡터 CAD·BIM/IFC 입력별 도면→로봇 지도 연구·도구·제품 사례), 공간 그래프 스키마 초안 v0.1 → v0.2, 새 질문 q1-06, 참고문헌 id 재부여 | run 2026-09-25-11",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 1: q1-02 답함(래스터·벡터 CAD·BIM/IFC 입력별 도면→로봇 지도 생성 연구·오픈소스 도구·제품 사례, 제품은 벤더 주장), 공간 그래프 스키마 초안 v0.2",
+    "category_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 건축 도면 자동 인식 트랙 단계 1에서 도면→로봇 지도 생성 사례를 조사하고 6~9절 반영을 제안(실행 2026-09-25-11)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "occupancy-grid-map",
+      "term_ko": "점유 격자 지도",
+      "term_en": "Occupancy Grid Map (OGM)",
+      "definition": "공간을 일정 크기 칸으로 나누고 칸마다 점유·빈 공간·미지 여부를 적어 로봇 위치추정과 경로계획에 쓰는 지도 표현이다.",
+      "description": "BIM(IFC) 모델에서 구조 요소만 담은 2D 점유 격자 지도를 자동 생성하는 연구가 있고, 이런 격자 지도를 포즈 그래프 지도로 바꾸는 오픈소스 도구(Ogm2Pgbm)가 있다.",
+      "related_areas": [
+        6
+      ],
+      "sources": [
+        "ref-081",
+        "ref-082"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "ifc",
+      "term_ko": "산업 기초 클래스",
+      "term_en": "Industry Foundation Classes (IFC)",
+      "definition": "IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식이다.",
+      "description": "BIM에서 로봇용 위상·거리 지도나 하이퍼그래프를 만드는 연구가 IFC를 입력·교환 형식으로 쓴다. 표준 구조는 발행 기관(buildingSMART) 자료로 확인하지 않았다.",
+      "related_areas": [
+        6,
+        28
+      ],
+      "sources": [
+        "ref-085",
+        "ref-086"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "indoorgml",
+      "term_ko": "IndoorGML",
+      "term_en": "IndoorGML",
+      "definition": "IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되는 실내 공간 정보 표준이다.",
+      "description": "표준의 구조와 발행 기관 내용은 발행 기관 자료로 확인하지 않았다.",
+      "related_areas": [
+        6,
+        28
+      ],
+      "sources": [
+        "ref-130"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "topological-map",
+      "term_ko": "위상 지도",
+      "term_en": "Topological Map",
+      "definition": "정확한 좌표 대신 방·구역 같은 장소를 노드로, 통로·문 같은 연결을 엣지로 두어 공간의 연결 관계를 표현하는 지도이다.",
+      "description": "건축 CAD에서 위상 분할로 계층형 위상·거리 지도(osmAG)를 만들거나 IFC에서 위상·거리 지도를 만드는 연구가 있다.",
+      "related_areas": [
+        6,
+        15
+      ],
+      "sources": [
+        "ref-083",
+        "ref-084",
+        "ref-085"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-079",
+      "org": "Open Robotics",
+      "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF traffic-editor 사용 설명. 평면도 이미지를 배경으로 벽·문·승강기·차선·충전 정점을 주석하고, 측정으로 축척을 맞추며, 기준점으로 층을 정렬하고, 시뮬레이션 월드를 생성하는 방법을 설명한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-080",
+      "org": "Open Robotics",
+      "title": "Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 통합 시 로봇 경로 지도 데이터 요건(경유점의 층 이름, 층 안 미터 좌표)과 건물 구조와의 정렬 점검 방법을 안내하는 문서.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-081",
+      "org": "Vega-Torres, M. A. 외",
+      "title": "Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments",
+      "published": "2023-08",
+      "url": "https://arxiv.org/abs/2308.05443",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BIM(IFC) 모델에서 2D 점유 격자 지도를 자동 생성하고 포즈 그래프 지도로 바꿔 설계–시공 편차가 있는 환경에서 라이다 위치추정을 견고하게 하는 방법(ECPPM 2022 발표, arXiv 게재).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-082",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "title": "Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments)",
+      "published": null,
+      "url": "https://github.com/MigVega/Ogm2Pgbm",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "점군이나 BIM/CAD에서 만든 점유 격자 지도를 Cartographer·SLAM Toolbox용 포즈 그래프 지도로 바꾸는 오픈소스 코드의 공식 README.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-083",
+      "org": "Zhang, J. 외",
+      "title": "Generation of Indoor Open Street Maps for Robot Navigation from CAD Files",
+      "published": "2025-07",
+      "url": "https://arxiv.org/abs/2507.00552",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건축 CAD 파일에서 구조 레이어 분리와 AreaGraph 위상 분할로 계층형 실내 지도(osmAG)를 자동 생성하고 로봇 위치추정·경로계획에 쓴 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-084",
+      "org": "Zhang, J. (jiajiezhang7 GitHub)",
+      "title": "osmAG-from-cad — README (CAD-to-osmAG pipeline)",
+      "published": null,
+      "url": "https://github.com/jiajiezhang7/osmAG-from-cad",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "DXF 도면을 SVG·PNG를 거쳐 AreaGraph로 분할해 osmAG(OSM XML)로 만드는 파이프라인의 공식 저장소 README. DWG 변환 조건과 도면 데이터 비공개를 밝힌다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-085",
+      "org": "Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D.",
+      "title": "Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces",
+      "published": "2025-03-26",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IFC에서 추출한 건물 정보로 ROS용 위상·거리 지도와 하이퍼그래프 경로계획을 만들고 UWB로 장비 위치를 찾는 건설 현장 로봇 플랫폼 논문(Frontiers in Robotics and AI).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-086",
+      "org": "Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E.",
+      "title": "Indoor Robot Navigation Using Graph Models Based on BIM/IFC",
+      "published": "2019",
+      "url": "https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IFC에서 건물 배치 하이퍼그래프를 만들고 문 방향·유형 등 속성과 통과 비용으로 실내 로봇 경로를 계획한 ICAISC 2019 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-120",
+      "org": "Boniardi, F., Valada, A., Mohan, R., Caselitz, T., & Burgard, W.",
+      "title": "Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network",
+      "published": "2019-03",
+      "url": "https://arxiv.org/abs/1903.01804",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 단안 카메라 영상에서 방 배치 경계를 CNN으로 추출해 입자 필터로 건축 평면도와 맞추는 위치추정 방법(IROS 2019). 브리프 id ref-134 에서 재부여.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-125",
+      "org": "Pointr",
+      "title": "IMDF from Floor Plan & CAD Conversion Services",
+      "published": null,
+      "url": "https://www.pointr.tech/technology/imdf",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. CAD 도면을 사람용 실내 지도 형식 IMDF로 변환하는 MapScale 서비스 소개(지원 형식·자동 경로 생성). 브리프 id ref-139 에서 재부여.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-126",
+      "org": "Vega Torres, M. A., Braun, A., & Borrmann, A.",
+      "title": "BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.15870",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BIM에서 세션 데이터(포즈 그래프 지도·기술자)를 만들고 다중 세션 앵커링으로 실측 데이터와 정렬하는 프리프린트(TUM). 브리프 id ref-140 에서 재부여.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-127",
+      "org": "Navitec Systems",
+      "title": "Universal Fleet Control Software for AGVs & AMRs",
+      "published": null,
+      "url": "https://navitecsystems.com/universal-fleet-control/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AGV·AMR 플릿 관제 제품 소개. CAD 파일 렌더링 시각화, 경로 계획, 외부 설비 연동을 설명한다. 브리프 id ref-141 에서 재부여.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-128",
+      "org": "Boniardi, F., Caselitz, T., Kümmerle, R., & Burgard, W.",
+      "title": "Robust LiDAR-based localization in architectural floor plans",
+      "published": "2017",
+      "url": "http://ais.informatik.uni-freiburg.de/publications/papers/boniardi17iros.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건축 CAD 평면도를 기준 지도로 2D 라이다 위치추정을 하며 가구 가림 문제를 포즈 그래프 SLAM과 GICP 정합으로 다룬 IROS 2017 논문. 브리프 id ref-133 에서 재부여(검증 지시의 ref-119 는 기존 참고문헌과 충돌).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-129",
+      "org": "Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.",
+      "title": "Tightly Coupled SLAM with Imprecise Architectural Plans",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.01737",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건축 도면에서 만든 A-Graph와 라이다 S-Graph를 결합해 위치추정과 함께 도면–현장 구조 편차를 실시간 추정하는 SLAM 프리프린트(arXiv 2024-08 제출, 2025-06 개정). 브리프 id ref-135 에서 재부여(검증 지시의 ref-121 은 기존 참고문헌과 충돌).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md"
+      ]
+    },
+    {
+      "id": "ref-130",
+      "org": "Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.",
+      "title": "IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC",
+      "published": "2022",
+      "url": "https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IFC에서 IndoorGML 실내 공간 모델을 자동 생성하는 오픈소스 도구를 소개한 ISPRS Archives XLIII-B4-2022(pp. 295–301) 논문. 브리프 id ref-136 에서 재부여(검증 지시의 ref-122 는 기존 참고문헌과 충돌).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-131",
+      "org": "박근홍, 박병준, 이슬기(한국산학기술학회논문지)",
+      "title": "BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218)",
+      "published": "2025",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 2020~2025년 BIM–건설로봇 통합 문헌 1,356편을 PRISMA·LDA로 분석해 연구 주제와 한계(단방향 IFC 변환, 현장 검증 부족)를 정리한 국내 문헌고찰. 브리프 id ref-137 에서 재부여(검증 지시의 ref-123 은 기존 참고문헌과 충돌).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-132",
+      "org": "Mobile Industrial Robots(MiR)",
+      "title": "MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본",
+      "published": "2025-01",
+      "url": "https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MiR Fleet Enterprise 사용 문서(제조사 공식 사이트가 아닌 유통사 사이트 게재본). 평면도 PNG 업로드·축척·배치 조정 기능을 설명한다. 브리프 id ref-138 에서 재부여(검증 지시의 ref-124 는 기존 참고문헌과 충돌).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "국내 물류센터에서 설계 도면(CAD·BIM)을 로봇 지도 작성이나 시운전에 실제로 활용한 사례가 있는가, 있다면 도면–현장 차이를 어떻게 확인했는가?",
+      "areas": [
+        6,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [],
+  "standards_updates": [
+    {
+      "name": "osmAG-from-cad (CAD-to-osmAG 파이프라인)",
+      "kind": "오픈소스",
+      "org": "Zhang, J. (jiajiezhang7 GitHub)",
+      "url": "https://github.com/jiajiezhang7/osmAG-from-cad",
+      "related_areas": [
+        6
+      ],
+      "summary": "DXF 건축 도면을 AreaGraph 위상 분할을 거쳐 OSM XML 형식의 계층형 실내 지도(osmAG)로 만드는 오픈소스 파이프라인이다. DWG는 외부 변환기가 필요하다.",
+      "ref_id": "ref-084"
+    },
+    {
+      "name": "Ogm2Pgbm",
+      "kind": "오픈소스",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "url": "https://github.com/MigVega/Ogm2Pgbm",
+      "related_areas": [
+        6
+      ],
+      "summary": "점군이나 BIM/CAD에서 만든 점유 격자 지도를 Cartographer·SLAM Toolbox용 포즈 그래프 지도로 바꾸는 오픈소스 코드다.",
+      "ref_id": "ref-082"
+    },
+    {
+      "name": "ifc2indoorgml",
+      "kind": "오픈소스",
+      "org": "Diakité, A. A. 외",
+      "url": "https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/",
+      "related_areas": [
+        6,
+        28
+      ],
+      "summary": "IFC 데이터에서 IndoorGML 실내 공간 모델을 자동 생성하는 오픈소스 도구다(ISPRS Archives 2022, 원문 미열람).",
+      "ref_id": "ref-130"
+    }
+  ],
+  "additional_research_requests": [
+    "IFC·IndoorGML 표준 구조(IFC의 스키마 성격, IndoorGML의 셀 공간·연결 그래프 구조와 발행 기관 OGC 여부)를 buildingSMART·OGC 공식 저장소 미러로 확인해 용어집 정의와 28. 표준·상호운용성·다사업자 거버넌스 반영 근거로 쓸 수 있게 해 달라(1차 검증 지시로 이번 정의에서 뺐다).",
+    "참고문헌 id 충돌: 1차 검증이 지시한 매핑 ref-133→ref-119, ref-135→ref-121, ref-136→ref-122, ref-137→ref-123, ref-138→ref-124 는 입력 docs/references/index.md 에 이미 있는 ref-119(IEC 62264-3)·ref-121(Blondin 외)·ref-122(OCEL 2.0)·ref-123(SCOR F1.3)·ref-124(스마트물류센터 인증제 안내)와 겹친다. 그래서 충돌하지 않는 지시값(ref-134→ref-120, ref-139→ref-125, ref-140→ref-126, ref-141→ref-127)은 그대로 쓰고, 충돌하는 다섯 건은 ref-133→ref-128, ref-135→ref-129, ref-136→ref-130, ref-137→ref-131, ref-138→ref-132 로 바꿨다. 퍼블리셔는 ref-120·ref-125~ref-132 가 다른 실행에서 이미 쓰였는지 다시 확인해 달라(pipeline/publish 담당).",
+    "patches 로는 H2 밖의 줄을 바꿀 수 없다. (1) 단계 1 페이지 H1 아래 상태 줄을 '> 단계 상태: 진행 중 · 열린 질문: 4건 · 답한 질문: 2건 · 완료 조건: 충족 · 마지막 실행: 2026-09-25' 로, (2) 공간 그래프 스키마 초안 H1 을 '# 공간 그래프 스키마 초안 (v0.2)' 로 바꾸는 처리를 퍼블리셔 패치 적용 단계에 넣어 달라(pipeline 담당). 넣지 못하면 두 줄이 이전 값으로 남는다.",
+    "q1-06: 물류 로봇 관제 제품(OTTO, ABB, SEER, Kollmorgen NDC8 등)의 공개 매뉴얼·API 문서에서 CAD·BIM 가져오기와 문·승강기·충전 위치 자동 추출 기능 여부를 확인해 아이디어 3. 건축 도면 자동 인식 3절 제품 사례의 벤더 주장 편중을 보강해야 한다.",
+    "q1-02 연구 근거의 독립 교차 확인: 같은 저자 계열이 아닌 출처(예: 다른 그룹의 BIM→점유 격자 지도 연구)로 입력 형식별 자동화 범위(f19)를 확인해야 [추정]을 올릴 수 있다."
+  ],
+  "fixes_applied": [
+    "참고문헌 id 재부여 — 지시 매핑 가운데 ref-120·ref-125·ref-126·ref-127 은 그대로 쓰고, 지시값 ref-119·ref-121·ref-122·ref-123·ref-124 는 입력 참고문헌 색인에 이미 다른 출처가 있어(지시의 전제 '최대 ref-109, ref-110~118' 과 다름) 기존 각주가 덮어써지지 않도록 ref-128·ref-129·ref-130·ref-131·ref-132 로 바꿨다. 단계 1 페이지·아이디어 페이지·초안의 본문 각주, 프런트매터 sources, reference_updates 를 모두 같은 매핑으로 맞췄고 ref-133~ref-141 는 어디에도 쓰지 않았으며, 퍼블리셔 재확인 요청을 additional_research_requests 에 적었다.",
+    "원문 미열람 표시 — ref-079·ref-080·ref-082·ref-084 를 뺀 ref-081·ref-083·ref-085·ref-086·ref-120·ref-125~ref-132 의 모든 각주 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣었다.",
+    "ref-136(재부여 ref-130) 기관 표기를 'Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.' 로 고쳤다(각주·reference_updates).",
+    "ref-135(재부여 ref-129) 기관 표기를 Shaheer 외 7인으로 고치고, 각주 제목과 본문에 'arXiv 2024-08 제출, 2025-06 개정' 을 적었다.",
+    "ref-140(재부여 ref-126) 기관 표기를 'Vega Torres, M. A., Braun, A., & Borrmann, A.' 로 고치고, 단계 1 페이지 3절·4절과 아이디어 페이지 비교표 설명에 Vega-Torres 외·Ogm2Pgbm·BIM-SLAM 이 같은 TUM 저자 그룹 근거임을 적었다.",
+    "ref-137(재부여 ref-131) 기관 표기를 '박근홍, 박병준, 이슬기(한국산학기술학회논문지)' 로, 서지에 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218 을 넣고 URL 을 KCI 논문 페이지(ART003269295)로 바꿨다.",
+    "f16 — 단계 1 페이지 3절에서 [사실] 문장을 'BIM 에서 세션 데이터(포즈 그래프 지도·기술자) 생성, 다중 세션 앵커링 정렬, BIM 에 없는 새 요소 재구성' 범위로 줄이고, URDF 건물 월드·점유 격자 지도 생성은 '검색 요약 기준이며 미확인' 을 붙인 [추정] 문장으로 분리했다. 아이디어 비교표에도 확인 범위만 넣었다.",
+    "f2 — [사실] 문장에는 레이어 축척·이동·회전 변환과 is_charger 정점 동작만 두고, '충전 위치는 사람이 주석하는 항목' 이라는 해석은 f20 문단의 [추정] 문장으로 옮겼다.",
+    "f19 — 'IfcSpace·IfcDoor 같은 의미 클래스 덕분에' 구절 바로 뒤에 [^ref-086] 을 달고 문장 전체는 [추정]을 유지했다.",
+    "f5·f6·f11·f12·f16·f17 — 단계 1 페이지와 아이디어 페이지에서 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개하고, 위치추정·SLAM 자체는 분류 원문 9장의 로봇 자체 지능·제어 연계 대상이라고 짧게 적었다(f22 문단은 '연계 대상:' 으로 시작). 세부영역 반영 제안의 요약도 같은 표현으로 썼다.",
+    "f4·f9·f10 — 단계 1 페이지 3절과 아이디어 페이지 '제품 사례' 소절에서 모두 '[추정] 벤더 주장' 으로 쓰고, ref-132 는 본문과 각주 제목에 '유통사(jk.de) 게재본' 임을 밝혔으며, Pointr 는 사람용 실내 지도이고 로봇 지도 사례가 아님을 유지했다.",
+    "f17 — 35cm·15도 수치를 '시뮬레이션·실제 데이터셋 실험 조건의 단일 출처 수치' 로 조건과 함께 적었다(단계 1 페이지 3절, 4절 불확실성).",
+    "f1 — 시뮬레이션 월드 생성은 22. 시뮬레이션·예측용 디지털 트윈 링크로만 연결하고 8. 실시간 세계 상태·데이터 일관성과 구분한다고 적었다.",
+    "용어 IFC·IndoorGML — 정의를 'IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식', 'IFC 데이터에서 자동 생성하는 도구의 대상이 되는 실내 공간 정보 표준' 으로 줄이고 OGC·스키마 구조 서술을 뺐으며, 표준 구조 확인을 additional_research_requests 로 넘겼다.",
+    "용어 점유 격자 지도·위상 지도 — sources 에 점유 격자 지도는 ref-081·ref-082(f11·f12), 위상 지도는 ref-083·ref-084·ref-085(f7·f13)를 달았다.",
+    "온톨로지 반영 — 초안을 v0.2 로 올렸다(프런트매터 ontology_version 패치, track_updates.ontology_draft_version \"0.2\"). (1) '층간 정렬 기준점' 개념 추가(근거 f1·f3, 확정), (2) '층별 지도' 속성에 축척(미터당 픽셀)·도면 대비 변환(이동·회전) 추가, 근거 f1·f2·f3, 초안 → 확정, f4 제외, 층 이름은 추가하지 않고 기존 관계로 대신함을 적음, (3) '평면도' 형식 값 후보를 근거 f1·f8·f11 로 적고 '단계 2에서 확정' 유지, 초안 → 확정, f19 제외. H1 '(v0.2)' 는 H2 밖이라 패치로 못 바꿔 퍼블리셔 처리를 요청했다.",
+    "문 속성 추가 제안 — 초안 2절에 반영하지 않고 6절 미해결 질문에 f13·f14 근거([^ref-085][^ref-086])와 q3-02 를 달아 두었다.",
+    "f17·f20 — 초안 6절에 q4-02·q4-03 항목의 근거 보강 항목으로 연결했고 새 개념은 넣지 않았다.",
+    "공간 그래프 교환 형식 질문(단계 2) — backlog_updates 에 넣지 않고, 단계 1 페이지 5절 아래 문장으로 IndoorGML·osmAG(OSM XML)·'Open-RMF traffic-editor 주석 결과' 가 q2-01·q2-03 의 조사 후보임을 적었다(building.yaml 표기는 쓰지 않음).",
+    "as-planned/as-built 편차 질문(단계 4) — backlog_updates 에 넣지 않고 단계 1 페이지 5절 아래에 f17 을 q4-02 관련 근거로 연결만 했다.",
+    "물류 로봇 관제 제품 질문 — q1-06(단계 1, origin 'f21')으로 등록하고 단계 1 페이지 2절·5절 표에 넣었다.",
+    "q1-02 — 3절에 '### q1-02 … {#q1-02}' 소제목으로 답을 쓰고, 2절 표를 답함·2026-09-25-11·#q1-02 로 바꿨으며 backlog_updates 에 답함과 answer_link 를 냈다. 4절 남은 불확실성에 제품 근거가 벤더 주장 3건뿐이고 공개 근거 부재는 검색 범위 기준임을 적었다.",
+    "아이디어 3절 — '아직 조사되지 않음(q1-02)' 을 제품 사례(MiR Fleet·Navitec·Pointr, 벤더 주장 병기)로 바꾸고, 오픈소스 도구(traffic-editor·osmAG-from-cad·Ogm2Pgbm·ifc2indoorgml)는 비교표의 '구분' 열에 도구로 구분했으며, 표는 검증된 finding 으로 직접 만들었다.",
+    "세부영역 반영 — 6. 지도·공간·위치 모델, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스 페이지는 고치지 않고 area_reflection_proposals 로만 냈으며, 28. 표준·상호운용성·다사업자 거버넌스 제안에 'IFC·IndoorGML 을 발행 기관 자료로 확인하지 않음' 을 병기했다.",
+    "단계 1 페이지 6절 — 완료 조건 1·2 를 충족(1차 예비 판정, 2차에서 확정)·미승인으로, 표 아래를 '다음 단계로 전환: 아니오(막힌 질문 q1-03·q1-04·q1-05·q1-06)' 로 썼고 단계 상태는 진행 중이며 stage_transition 은 넣지 않았다. H1 아래 상태 줄은 H2 밖이라 패치로 못 바꿔 값('진행 중 · 열린 질문 4건 · 답한 질문 2건 · 완료 조건 충족')을 diff_summary 와 additional_research_requests 에 적어 퍼블리셔 처리를 요청했다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md",
+    "ontology_draft_version": "0.2",
+    "backlog_updates": [
+      {
+        "id": "q1-02",
+        "status": "답함",
+        "answer_link": "docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-02"
+      },
+      {
+        "id": "q1-06",
+        "status": "열림",
+        "answer_link": null,
+        "question": "물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가?",
+        "stage": 1,
+        "origin": "f21"
+      }
+    ],
+    "log_entry": "답한 질문: q1-02(f1~f22; 입력 형식별 도면→로봇 지도 연구·오픈소스 도구·제품 사례, 제품은 벤더 주장 3건) / 새 질문: q1-06(단계 1, 근거 f21). 중복으로 등록하지 않은 2건은 q2-01·q2-03(f19), q4-02(f17)에 연결 / 온톨로지 변경: v0.1 → v0.2(2026-09-25, 근거 실행 2026-09-25-11): 개념 '층간 정렬 기준점' 추가(f1·f3), '층별 지도' 속성 축척·도면 대비 변환 추가·확정(f1·f2·f3), '평면도' 형식 값 후보 추가·확정(f1·f8·f11). 거부: 문 속성 추가(f13·f14 → 6절 질문, q3-02) / 완료 조건 평가: 충족(1차 예비 판정, 2차에서 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 4건, 21. 온보딩·설정·현장 시운전 2건, 28. 표준·상호운용성·다사업자 거버넌스 1건 / 다음 실행 제안: q1-03(충전 위치·작업대 인식·보완 사례), q1-06, q1-04. 참고: 참고문헌 id 는 ref-120·ref-125~ref-132 로 재부여(검증 지시 매핑 중 5건이 기존 id 와 충돌)",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 4, 답함 2, 완료 조건 충족(1차 예비 판정, 2차에서 확정), 단계 전환 미승인(막힌 질문 q1-03·q1-04·q1-05·q1-06)"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "입력 형식별 도면→로봇 지도 생성 접근: 래스터 평면도는 사람이 축척·요소를 주석하는 배경(Open-RMF traffic-editor, f1), 벡터 CAD는 구조 레이어 분리·AreaGraph 위상 분할로 계층형 지도 생성(osmAG, f7), BIM/IFC는 점유 격자 지도(f11)·위상·거리 지도와 하이퍼그래프(f13·f14) 생성. 형식별 자동화 수준 종합(f19)은 [추정]."
+    },
+    {
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "Open-RMF traffic-editor(평면도 배경 주석, 측정 축척, 층 기준점 정렬, is_charger, f1·f2), osmAG-from-cad(DXF→osmAG, f8), ifc2indoorgml(IFC→IndoorGML, f15), Ogm2Pgbm(격자 지도→포즈 그래프 지도, f12). 관제 연동의 층 이름·미터 좌표 요건(f3)."
+    },
+    {
+      "area_no": 6,
+      "section": "8. 대표 연구와 자료",
+      "summary": "도면 기준 지도 정합·도면 해석 연구로 Boniardi 외 2017·2019(f5·f6), Vega-Torres 외(f11, BIM 과 현실의 편차 지적), Shaheer 외 A-Graph·S-Graph 도면–현장 편차 추정(f17, 35cm·15도는 단일 출처 실험 조건), BIRS(f13), Palacz 외(f14), 국내 BIM–건설로봇 문헌고찰(f18). 위치추정·SLAM 자체는 로봇 자체 지능·제어 연계 대상으로만 적는다."
+    },
+    {
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "연계 대상: 도면·BIM 기준 위치추정과 SLAM 은 로봇 자체 지능·제어 쪽. 이종 제조사를 연결하는 ROP는 도면에서 만든 층별 지도·공간 그래프의 좌표·층 이름 정렬과 버전 관리를 맡는 경계가 될 것으로 보인다([추정], f22)."
+    },
+    {
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "현장 시운전에서 평면도를 배경으로 벽·문·승강기·차선·충전 정점을 사람이 주석하고 측정으로 축척을 맞추는 방식(Open-RMF traffic-editor, f1·f2). 제품 쪽 평면도 PNG 업로드·축척 요건은 [추정] 벤더 주장(MiR Fleet, 유통사 게재본, f4). 운영 요소가 사람 주석으로 남는 점(f20, [추정])."
+    },
+    {
+      "area_no": 21,
+      "section": "8. 대표 연구와 자료",
+      "summary": "전문가의 지도 작성 노동을 줄이려는 평면도 기반 위치추정 동기(Boniardi 외 2019, f6)와 국내 문헌고찰의 현장 검증·지표 보고 부족(f18, 건설로봇 대상)."
+    },
+    {
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "공간 정보 교환 형식 후보로 IFC(BIRS 가 BIM–ROS 교환 형식으로 사용, f13), IndoorGML(IFC 에서 자동 생성 도구 존재, f15), OSM 형식 osmAG(f7). IFC·IndoorGML 은 발행 기관 자료로 확인하지 않음."
+    }
+  ]
+}

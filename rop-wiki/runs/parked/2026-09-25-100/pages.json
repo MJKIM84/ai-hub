@@ -1,0 +1,515 @@
+{
+  "run_id": "2026-09-25-00",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 600,
+      "summary": "q5-03 을 답함(실행 2026-09-25-100, 답 위치 #q5-03)으로 바꾸고 새 질문 q5-16~q5-18 을 등록한다.",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "3. 조사 결과 — q5-03",
+      "budget_chars": 4500,
+      "summary": "세 가설 모두 ROP 자체 실험 근거가 없어 판정은 미판정으로 두고, 문헌 근거 수준은 가설 1·3 부분 지지, 가설 2 근거 부족으로 나눠 적는 것이 맞아 보인다. [추정][^ref-748][^ref-674][^ref-166][^ref-592][^ref-237]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "가설 판정은 전 가설 미판정이며 판정에는 통제 비교 실험이 필요해 보인다. [추정][^ref-749][^ref-592]",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "5·6·9절",
+      "budget_chars": 900,
+      "summary": "후속 질문 3건, 완료 조건 미충족·미승인, 이력 행 추가.",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "section": "3. 가설과 판정 상태",
+      "budget_chars": 900,
+      "summary": "판정은 전 가설 미판정을 유지하고 근거 칸에 문헌 근거 수준을 적는다. [추정][^ref-748][^ref-674]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f8",
+        "f14",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/experiments.md",
+      "section": "제안된 실험 계획",
+      "budget_chars": 2000,
+      "summary": "가설 1~3 판정용 통제 비교 실험 E5-01~E5-03 을 제안한다. [추정][^ref-748][^ref-749][^ref-592]",
+      "planned_findings": [
+        "f13",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "6. 검증 방법 — 가설 판정",
+      "budget_chars": 1800,
+      "summary": "가설 판정 소절: 전 가설 미판정, 문헌 근거 수준 가설 1·3 부분 지지, 가설 2 근거 부족. [추정][^ref-748][^ref-166][^ref-592][^ref-237]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f8",
+        "f10",
+        "f11",
+        "f13",
+        "f14",
+        "f16"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q5-03 답함(가설 1~3 문헌 근거 수준과 판정 방법, 전 가설 미판정), 후속 질문 3건(q5-16~q5-18), 상태 줄·완료 조건·이력 갱신, 실행 2026-09-25-99 기준 서술 보정(상태 줄 갱신이 필요해 content 로 보냄, 내용은 직전 원고와 같음)"
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절 가설 판정표 근거 칸에 문헌 근거 수준 기록(판정은 전 가설 미판정 유지), 6절 아이디어·실험 산출물 설명 갱신, 8절 각주 정의 추가",
+      "patches": [
+        {
+          "section": "3. 가설과 판정 상태",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-748",
+              "ref-674",
+              "ref-166",
+              "ref-592",
+              "ref-237"
+            ]
+          },
+          "content": "| 가설 | 내용 | 판정 | 근거(단계·실행 id) |\n|---|---|---|---|\n| 가설 1 | 자연어 지시를 정해진 작업 모델([업무 분해·배정 설계 초안](task-model-draft.md))로 먼저 구조화하면, LLM이 로봇 명령을 직접 만드는 방식보다 잘못된 배정이 줄어든다. [가설] | 미판정 | [단계 5](stage-5-verification-and-hypotheses.md#q5-03), 실행 2026-09-25-100 — 문헌 근거 수준: 부분 지지(방향; 근거 f1·f3, 비물류 조건) [추정][^ref-748][^ref-674] |\n| 가설 2 | 적합한 로봇의 선택을 LLM의 판단 대신 온톨로지 질의(능력·제약 대조)에 맡기면 배정 근거를 설명하고 재현할 수 있다. [가설] | 미판정 | [단계 5](stage-5-verification-and-hypotheses.md#q5-03), 실행 2026-09-25-100 — 문헌 근거 수준: 근거 부족(온톨로지 질의 대 LLM 판단 배정의 직접 비교 없음; f8 재현성은 수작업 대비) [추정][^ref-237] |\n| 가설 3 | 스케줄링 결정은 최적화 엔진이 맡고 LLM은 지시 해석·확인 대화·진행 설명을 맡는 분담이 운영을 더 안정적으로 만든다. [가설] | 미판정 | [단계 5](stage-5-verification-and-hypotheses.md#q5-03), 실행 2026-09-25-100 — 문헌 근거 수준: 부분 지지(실행 가능성 측면만; 근거 f2·f4, 운영 안정성 미측정 f15) [추정][^ref-166][^ref-592] |\n\n판정 값은 지지 / 부분 지지 / 기각 / 미판정 네 가지다. 구축 시점에는 모두 미판정이며, 판정은 [단계 5. 검증 방법과 가설 판정](stage-5-verification-and-hypotheses.md)에서 내용 검증 에이전트의 승인을 받은 결과만 적는다. 가설은 `[사실]`로 승격되기 전까지 `[가설]` 태그를 유지한다. 가설 문장은 아이디어 정의에서 구축자가 도출한 것이다. [가정]\n\n- 2026-09-25 · 실행 2026-09-25-100: q5-03 에 답했다. ROP 자체 실험 근거가 없어 판정은 세 가설 모두 미판정을 유지하고, 근거 칸에 문헌 근거 수준(비물류·실험실·운영과학 일반 조건, 저자 보고·원문 미열람)을 더했다. 판정용 통제 비교 실험 계획은 [실험](experiments.md) 페이지의 E5-01~E5-03 에 있다."
+        },
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-98, 2026-09-25-99, 2026-09-25-100 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표와 2026-09-25-100 의 가설 판정 방법은 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 실행 2026-09-25-99 에서 CLI 로 지정된 질문으로 q5-02 에 답해 6절에 검증 절차 소절(지시·실행·교란·반복 네 층 가상 시험 구성, 신뢰도 low)을 더했다. 가설 판정(q5-03)은 아직 조사하지 않았다는 이 서술은 실행 2026-09-25-99 기준이며, 실행 2026-09-25-100 에서 CLI 로 지정된 q5-03 에 답해 6절에 '가설 판정' 소절(전 가설 미판정, 문헌 근거 수준은 가설 1·3 부분 지지·가설 2 근거 부족, 신뢰도 low)을 더했다. 실행 2026-09-25-79, 2026-09-25-98, 2026-09-25-99, 2026-09-25-100 은 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 실행 2026-09-25-100 에서 가설 1~3 판정용 통제 비교 실험 계획 E5-01~E5-03 을 제안했다(상태: 제안). 사용자 실험 결과는 아직 없다."
+        },
+        {
+          "section": "8. 참고 자료",
+          "action": "replace",
+          "content": "이 페이지의 각주는 3절 가설 판정표의 문헌 근거 수준에 쓴 출처다. 그 밖의 트랙 출처는 각 단계 페이지의 출처 절에 있다.\n\n[^ref-748]: arXiv 2508.19074 저자(미확인), An LLM-powered Natural-to-Robotic Language Translation Framework with Correctness Guarantees, 2025-08, https://arxiv.org/abs/2508.19074, 접근일 2026-09-25 (원문 미열람)\n[^ref-674]: Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH), Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins, 2026-06, https://arxiv.org/abs/2606.08214, 접근일 2026-09-25 (원문 미열람)\n[^ref-237]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)\n[^ref-166]: Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T., LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)\n[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/experiments.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "'제안된 실험 계획' 절에 가설 1~3 판정용 통제 비교 실험 계획 E5-01~E5-03 제안(상태: 제안)",
+      "patches": [
+        {
+          "section": "제안된 실험 계획",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-748",
+              "ref-674",
+              "ref-749",
+              "ref-592",
+              "ref-594",
+              "ref-236",
+              "ref-237",
+              "ref-746",
+              "ref-740"
+            ]
+          },
+          "content": "아래 세 계획은 실행 2026-09-25-100 에서 [단계 5 의 q5-03 답](stage-5-verification-and-hypotheses.md#q5-03)을 근거로 제안한 가설 판정용 통제 비교다. 세 가설 모두 두 방식의 비교를 주장하므로, 같은 지시 집합·같은 가상 현장·같은 교란에서 비교군을 나란히 재는 설계가 필요해 보인다. [추정][^ref-748][^ref-749][^ref-592][^ref-236][^ref-746][^ref-740] 이 설계는 이 위키의 추론이며, 목표 수치와 표본 규모는 근거가 없어 정하지 않았다. 가상 현장·가상 로봇 구성은 [q5-02 답](stage-5-verification-and-hypotheses.md#q5-02)의 네 층 시험을 따른다. 결과는 `experiments/<날짜>-<이름>/`에 넣는다.\n\n### E5-01 가설 1 판정: 작업 모델 구조화 뒤 배정 대 LLM 직접 명령 생성\n\n- 목적: 가설 1(작업 모델로 먼저 구조화하면 LLM 이 로봇 명령을 직접 만드는 방식보다 잘못된 배정이 줄어든다)의 ROP 실험 판정 근거를 얻는다.\n- 방법: 같은 물류 지시 집합을 (가) [업무 분해·배정 설계 초안](task-model-draft.md)의 작업 모델로 구조화한 뒤 결정적 검사와 배정을 거치는 방식과 (나) LLM 이 로봇 명령을 직접 만드는 방식에 똑같이 넣는다. 구조화 중간 표현과 컴파일러 검증을 둔 쪽이 LLM 직접 생성 기준선보다 성공률이 높았다는 보고(로봇 프로그램 생성 조건)와 결정적 검증기를 LLM 비평자로 바꾸면 성공률이 크게 떨어졌다는 보고(산업용 로봇 셀 조건)를 물류 배정으로 옮긴 설계다. [추정][^ref-748][^ref-674] 비교군 (나)를 어느 인터페이스 수준으로 둘지는 [질문 백로그](question-backlog.md)의 q5-16 에서 정한다.\n- 측정 지표와 조건: 오배정률, 실행 가능 배정 비율, 같은 시나리오 반복 시 시행 분포(pass^k). [추정][^ref-748][^ref-746] 같은 지시·같은 교란·같은 초기 상태.\n- 필요한 자료: 물류 지시–정답 쌍(q5-04), 창고 레이아웃과 시나리오 집합(q5-13), 가상 로봇 플릿.\n- 제안한 실행 id: 2026-09-25-100\n- 상태: 제안\n\n### E5-02 가설 2 판정: 온톨로지 질의 배정 대 LLM 판단 배정\n\n- 목적: 가설 2(온톨로지 질의에 맡기면 배정 근거를 설명·재현할 수 있다)의 ROP 실험 판정 근거를 얻는다. 온톨로지 질의 배정과 LLM 판단 배정을 같은 조건에서 비교한 문헌 근거는 찾지 못했다(재현성 보고는 수작업 배정 대비). [추정][^ref-237][^ref-236]\n- 방법: 같은 작업 요구 집합을 (가) 로봇 능력·제약 대조로 실행 가능성을 판정한 뒤 배정하는 방식과 (나) LLM 이 로봇을 판단해 고르는 방식에 여러 번 반복해 넣는다.\n- 측정 지표와 조건: 같은 입력 반복 시 배정 일치율, 배정 근거가 능력·제약으로 추적되는 비율. [추정][^ref-236][^ref-746] 설명 가능성의 측정 정의는 q5-17 에서 정한다.\n- 필요한 자료: 로봇 능력·제약 정보(아이디어 1 의 로봇 기능 온톨로지 또는 대리 원천), 작업 요구 집합.\n- 제안한 실행 id: 2026-09-25-100\n- 상태: 제안\n\n### E5-03 가설 3 판정과 분류 원문 질문: 해법기 일정 대 LLM 일정 대 최근접 기준선\n\n- 목적: 가설 3(스케줄링은 최적화 엔진, LLM 은 해석·확인·설명을 맡는 분담이 운영을 더 안정적으로 만든다)의 ROP 실험 판정 근거를 얻고, 13. 작업 배정 — MRTA 의 SCM 관점 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)을 같은 실험에서 함께 잰다.\n- 방법: 같은 지시 흐름과 같은 교란을 (가) 해법기 배정·일정, (나) LLM 배정·일정, (다) 최근접 배정 기준선에 똑같이 재생한다. 배정기를 바꿔 끼우는 구조와 해법기 기준값 비교에서 도출한 설계다. [추정][^ref-749][^ref-592]\n- 측정 지표와 조건: 실행 가능 비율, 해법기 기준값 대비 최적성 간격, 재스케줄 뒤 시작 시각 편차, 반복 시행 분산, 문장 표현 바꿔 쓰기에 대한 민감도. [추정][^ref-592][^ref-594][^ref-746] '운영 안정성'은 문헌에서 직접 측정되지 않아 q5-18 에서 정의를 정한 뒤 판정한다.\n- 필요한 자료: 해법기 기준값(q5-05, q5-12), 창고 레이아웃과 교란 조합(q5-13).\n- 제안한 실행 id: 2026-09-25-100\n- 상태: 제안\n\n### 세 계획의 공통 조건\n\n- LLM 모의 관리자로 지시를 넣는 경우, 모의 사용자가 실제 사용자 성과를 체계적으로 틀리게 추정할 수 있다는 보고가 있어 실제 관리자 소수 표본으로 보정하는 편이 맞아 보인다(q5-14). [추정][^ref-740]\n- 결과는 '문헌 근거 수준'과 구분되는 'ROP 실험 판정'의 근거로 쓰며, `[사용자 실험]` 태그로 반영된 뒤 내용 검증 에이전트가 판정한다.\n\n[^ref-748]: arXiv 2508.19074 저자(미확인), An LLM-powered Natural-to-Robotic Language Translation Framework with Correctness Guarantees, 2025-08, https://arxiv.org/abs/2508.19074, 접근일 2026-09-25 (원문 미열람)\n[^ref-674]: Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.(KTH), Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins, 2026-06, https://arxiv.org/abs/2606.08214, 접근일 2026-09-25 (원문 미열람)\n[^ref-749]: Gupta, R. 외(RobotFleet 저자, arXiv 2510.10379), RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning, 2025-10, https://arxiv.org/abs/2510.10379, 접근일 2026-09-25 (원문 미열람)\n[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)\n[^ref-594]: SCHEDBench 저자(arXiv 2608.00991, 저자 미확인), SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling, 2026-08, https://arxiv.org/abs/2608.00991, 접근일 2026-09-25 (원문 미열람)\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-237]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)\n[^ref-746]: Atil, B. 외, Non-Determinism of \"Deterministic\" LLM Settings (Eval4NLP 2025 게재판 제목: Non-Determinism of \"Deterministic\" LLM System Settings in Hosted Environments, 수치는 arXiv 판 기준), 2024-08, https://arxiv.org/abs/2408.04667, 접근일 2026-09-25 (원문 미열람)\n[^ref-740]: Lost in Simulation 저자(arXiv 2601.17087, 게재처 미확인), Lost in Simulation: LLM-Simulated Users are Unreliable Proxies for Human Users in Agentic Evaluations, 2026-01, https://arxiv.org/abs/2601.17087, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절에 '가설 판정' 소절 추가(전 가설 미판정, 문헌 근거 수준 가설 1·3 부분 지지·가설 2 근거 부족), 실행 2026-09-25-99 기준 서술 보정",
+      "patches": [
+        {
+          "section": "6. 검증 방법",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-592",
+              "ref-593",
+              "ref-594",
+              "ref-595",
+              "ref-596",
+              "ref-598",
+              "ref-611",
+              "ref-612",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-417",
+              "ref-586",
+              "ref-674",
+              "ref-675",
+              "ref-676",
+              "ref-711",
+              "ref-677",
+              "ref-712",
+              "ref-678",
+              "ref-656",
+              "ref-657",
+              "ref-039",
+              "ref-658",
+              "ref-659",
+              "ref-660",
+              "ref-661",
+              "ref-662",
+              "ref-663",
+              "ref-664",
+              "ref-041",
+              "ref-126",
+              "ref-127",
+              "ref-680",
+              "ref-537",
+              "ref-681",
+              "ref-682",
+              "ref-683",
+              "ref-684",
+              "ref-373",
+              "ref-685",
+              "ref-695",
+              "ref-696",
+              "ref-697",
+              "ref-698",
+              "ref-699",
+              "ref-700",
+              "ref-701",
+              "ref-702",
+              "ref-703",
+              "ref-713",
+              "ref-714",
+              "ref-715",
+              "ref-716",
+              "ref-717",
+              "ref-730",
+              "ref-731",
+              "ref-732",
+              "ref-733",
+              "ref-734",
+              "ref-623",
+              "ref-735",
+              "ref-736",
+              "ref-737",
+              "ref-406",
+              "ref-528",
+              "ref-738",
+              "ref-739",
+              "ref-740",
+              "ref-741",
+              "ref-407",
+              "ref-743",
+              "ref-744",
+              "ref-745",
+              "ref-746",
+              "ref-748",
+              "ref-749",
+              "ref-237"
+            ]
+          },
+          "content": "### 가설 판정\n\n이 절 머리와 평가 지표·검증 절차 소절 끝의 '가설 판정(q5-03)은 아직 조사되지 않았다'·'사용자에게 제안하는 실험 계획도 아직 없다'는 서술은 실행 2026-09-25-99 기준이며, 실행 2026-09-25-100 에서 [단계 5 의 q5-03](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03)에 답했다. 판정표는 [트랙 개요](../tracks/nl-task-chatbot/index.md)의 3절에, 판정용 실험 계획 E5-01~E5-03 은 [실험](../tracks/nl-task-chatbot/experiments.md) 페이지에 있다.\n\n확인한 자료로는 세 가설 모두 ROP 자체 실험 근거가 없어 판정은 '미판정'으로 두고, 문헌 근거 수준만 가설 1·3은 부분 지지, 가설 2는 근거 부족으로 나눠 적는 것이 맞아 보인다. [추정][^ref-748][^ref-674][^ref-166][^ref-592][^ref-237] 근거가 로봇 프로그램 생성·산업용 로봇 셀·조립 시스템·운영과학 일반 조건이고 물류 창고 조건의 비교가 없으며, 수치는 모두 저자 보고·원문 미열람이어서 신뢰도가 낮다.\n\n| 가설 | 문헌 근거 수준 | ROP 실험 판정 |\n|---|---|---|\n| 가설 1(작업 모델 구조화 대 LLM 직접 명령 생성) | 부분 지지(방향; 비물류 조건) | 미판정 |\n| 가설 2(온톨로지 질의 대 LLM 판단 배정) | 근거 부족(직접 비교 없음; 재현성 보고는 수작업 대비) | 미판정 |\n| 가설 3(해법기 일정 대 LLM 일정) | 부분 지지(실행 가능성 측면만; 운영 안정성 미측정) | 미판정 |\n\n위 표는 이 위키의 종합이며 판정 값은 검증 승인 전이다. [추정][^ref-748][^ref-674][^ref-237][^ref-166][^ref-592]\n\n- **가설 1**: NRTrans 는 자연어 과제와 로봇 제어 프로그램 사이에 로봇 스킬 언어(Robot Skill Language, RSL)를 두고 컴파일러 검증과 오류 피드백 루프를 거치게 해, 25개 과제·5개 LLM 평가에서 ProgPrompt 기준선보다 평균 성공률을 53.6% 높였다고 저자들이 보고했다(2025-08, 원문 미열람). [사실][^ref-748] 로봇 제어 프로그램 생성 자체는 로봇 자체 지능·제어 쪽 연계 대상이며 여기서는 구조화 중간 표현의 사례로만 쓴다. 기호 검증기를 LLM 비평자로 바꾸면 성공률이 98.1%에서 3.8%로 떨어졌다는 보고도 있다(52개 명령 부분집합, 저자 보고, 원문 미열람). [사실][^ref-674]\n- **가설 2**: 능력 온톨로지(CAPILANO) 기반 자동 배정이 수작업 배정보다 시간이 덜 들고 재현 가능한 결과를 낸다는 보고가 있으나(2022, 라인리스 모바일 조립 조건), 비교 대상이 수작업 배정이어서 온톨로지 배정과 LLM 판단 배정을 비교한 근거가 아니다. [추정][^ref-237] 대조적 설명 연구(CE-MRS)도 온톨로지 기반 배정 설명을 잰 것이 아니어서 설명 가능성을 직접 잰 자료는 찾지 못했다. [추정][^ref-662][^ref-237]\n- **가설 3**: LiP-LLM 저자들은 선형계획 배정은 배정 실패가 거의 없었다고 보고했고(실험 조건 미확인) [사실][^ref-166], ConstraintBench 저자들은 가장 좋은 모델의 실행 가능 해 비율이 65.0%, 실행 가능성과 최적성을 함께 만족한 비율은 30.5% 이하였다고 보고했다(운영과학 일반 조건). [사실][^ref-592] '운영 안정성'은 직접 측정한 자료가 없어 판정 전에 일정 안정성·실행 가능 비율 분산 같은 지표로 정의해야 할 것으로 보인다. [추정][^ref-594][^ref-746]\n- **반례**: CoMuRoS 는 LLM 작업 관리자가 배정까지 맡는 구조로 정답률 최대 0.91을 보고했으나, 결정적 배정기와 같은 조건의 비교는 확인되지 않았다(실험실 조건, 저자 보고). [사실][^ref-677] LLM 직접 배정 연구 LTAA 는 요약 간 출처 충돌이 해소되지 않아 반례로 쓸 수 있는지 확정되지 않았다([열린 질문](../open-questions.md) oq-030). [추정][^ref-168]\n- **판정 방법**: 판정에는 같은 지시 집합·같은 가상 현장·같은 교란에서 비교군을 나란히 재는 통제 비교가 필요해 보이며, 가설 3 실험에 최근접 배정 기준선을 세 번째 비교군으로 넣으면 13. 작업 배정 — MRTA 의 SCM 관점 질문(1절 인용)도 같은 실험에서 함께 잴 수 있어 보인다. [추정][^ref-748][^ref-749][^ref-592][^ref-236][^ref-746][^ref-740]\n\n[^ref-748]: arXiv 2508.19074 저자(미확인), An LLM-powered Natural-to-Robotic Language Translation Framework with Correctness Guarantees, 2025-08, https://arxiv.org/abs/2508.19074, 접근일 2026-09-25 (원문 미열람)\n[^ref-749]: Gupta, R. 외(RobotFleet 저자, arXiv 2510.10379), RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning, 2025-10, https://arxiv.org/abs/2510.10379, 접근일 2026-09-25 (원문 미열람)\n[^ref-237]: Kluge-Wilkes, A. 외(RWTH Aachen WZL), Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems, 2022, https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 5 | q5-03 답함(가설 1~3 전 가설 미판정, 문헌 근거 수준 가설 1·3 부분 지지·가설 2 근거 부족), 실험 계획 E5-01~E5-03 제안, 새 질문 3건(실제 실행 id 2026-09-25-100) | run 2026-09-25-00",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: q5-03 가설 판정 방법 정리(전 가설 미판정, 문헌 근거 수준 가설 1·3 부분 지지·가설 2 근거 부족), 판정용 실험 계획 3건 제안(실행 2026-09-25-100)",
+    "category_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 5 에서 LLM 배정기 대 해법기 비교 근거와 최근접 배정 기준선을 넣은 판정 실험 설계를 정리하고 6절 반영을 제안(실행 2026-09-25-100)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "robot-skill-language",
+      "term_ko": "로봇 스킬 언어",
+      "term_en": "Robot Skill Language (RSL)",
+      "definition": "NRTrans 저자들이 제안한 언어로, 자연어 과제와 로봇 제어 프로그램 사이에 두는 작은 고수준 언어이며 컴파일러가 LLM 이 생성한 프로그램을 검사한 뒤에만 제어 프로그램으로 변환한다.",
+      "description": "일반 용어가 아니라 특정 연구(arXiv 2508.19074, 2025-08, 원문 미열람)가 제안한 언어다. 이 위키에서는 구조화 중간 표현과 컴파일러 검증의 사례로 쓴다.",
+      "related_areas": [
+        27,
+        13
+      ],
+      "sources": [
+        "ref-748"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-748",
+      "org": "arXiv 2508.19074 저자(미확인)",
+      "title": "An LLM-powered Natural-to-Robotic Language Translation Framework with Correctness Guarantees",
+      "published": "2025-08",
+      "url": "https://arxiv.org/abs/2508.19074",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. NRTrans: 로봇 스킬 언어(RSL)와 컴파일러·디버거로 LLM 생성 로봇 프로그램의 정확성을 보장하고 ProgPrompt 대비 성공률 향상을 보고.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/index.md",
+        "docs/tracks/nl-task-chatbot/experiments.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-749",
+      "org": "Gupta, R. 외(RobotFleet 저자, arXiv 2510.10379)",
+      "title": "RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.10379",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 계획기 3종과 LLM·MILP 배정기를 바꿔 끼우는 다중 로봇 작업 계획 프레임워크.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/tracks/nl-task-chatbot/experiments.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-750",
+      "org": "therohangupta (RobotFleet 공식 저장소)",
+      "title": "robot-fleet — RobotFleet: An Open-Source Framework for Centralized Multi-Robot Task Planning (GitHub README)",
+      "published": null,
+      "url": "https://github.com/therohangupta/robot-fleet",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "README 가 배정 방식(LLM 기반 추론, MILP)과 계획기(Monolithic Prompt, Big DAG, Per-Goal DAG)를 제시. 비교 결과는 README 에 없음.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 5 페이지 q5-03 가설 3 근거: RobotFleet 논문(ref-749) 원문의 MILP 배정기 대 LLM 배정기 유휴 시간 비교 결과 — 검색 요약에서 확인되지 않아 본문에서 뺐다. 원문 열람으로 확인이 필요하다.",
+    "단계 5 페이지 q5-03 가설 2 근거: Electronics(2026-08-11) ReasonerOutput 논문(ref-236)의 실험 결과 — 실험 구성만 확인되어 결과는 미확인으로 두었다.",
+    "가설 2 판정: 온톨로지 질의 배정과 LLM 판단 배정을 같은 조건에서 비교하거나 온톨로지 기반 배정 근거의 설명 가능성을 직접 잰 자료(q5-17 과 연결).",
+    "가설 3 판정: '운영 안정성'을 직접 잰 LLM 대 해법기 스케줄 비교 자료(q5-18 과 연결)와 물류 창고 조건 비교 실측(oq-052).",
+    "ref-748 NRTrans 의 저자 목록과 원문 수치 확인(검색 요약의 '2B 모델 92%'는 확인되지 않아 쓰지 않았다).",
+    "run_id 불일치(pipeline 담당·사용자 결정 필요, 형식 검증 반복 실패 원인): 실제 실행 id 는 2026-09-25-100 이다. 스토리텔러의 구조화 출력 스키마가 run_id 패턴 ^\\d{4}-\\d{2}-\\d{2}-\\d{2}$ 와 changelog_entry 의 'run \\d{4}-\\d{2}-\\d{2}-\\d{2}$' 로 세 자리 실행 번호를 거부하므로 pages.json 의 run_id 는 2026-09-25-00 으로만 반환할 수 있다. research.json·verification.json 도 같은 이유로 2026-09-25-00 이며 스토리텔러의 입력이라 고칠 수 없다. 이번 재작성(2회째)에서도 같은 제약이라 퍼블리셔 사전 검사는 같은 오류로 다시 실패할 것이다. 해결책: (1) schemas/ 의 run_id·changelog 패턴을 \\d{2,} 로 넓히고 세 에이전트를 다시 돌리거나, (2) 퍼블리셔가 스키마 패턴으로 잘린 run_id 를 target.json 의 run_id(2026-09-25-100)로 대응시키게 하거나, (3) 실행 번호를 두 자리 범위(예: 2026-09-26-01)로 다시 매겨 실행한다. 스토리텔러 재실행만으로는 해소되지 않으므로 재시도 대신 보류를 권한다. 페이지 본문의 실행 id 는 모두 2026-09-25-100 으로 적었다."
+  ],
+  "fixes_applied": [
+    "실행 id — 페이지(단계 5 질문 목록·이력·완료 조건 근거, 트랙 개요 판정표·6절, 실험 계획, 아이디어 6절)에 쓰는 실행 id 를 모두 2026-09-25-100 으로 적었고, JSON 의 run_id·changelog_entry 는 스키마 패턴 때문에 2026-09-25-00 으로 두고 additional_research_requests·log_entry 에 대응 필요를 적었다.",
+    "f1 — '2B 모델 92%'를 쓰지 않고 25개 과제·5개 LLM·ProgPrompt 대비 +53.6% 를 저자 보고·원문 미열람과 함께 [사실]로 썼으며, 로봇 제어 프로그램 생성은 로봇 자체 지능·제어 쪽 연계 대상이고 구조화 중간 표현·컴파일러 검증의 사례로만 쓴다고 단계 5 와 아이디어 페이지에 밝혔다.",
+    "f6 — RobotFleet 의 배정기 교체 구조(LLM 기반 추론 / 능력 제약 아래 최대 작업 부하 최소화 MILP, 계획기 세 종)만 [사실][^ref-749][^ref-750]로 쓰고 유휴 시간 비교 결과는 본문·판정 근거에서 뺐으며, 비교 결과가 README 에 없고 논문 원문은 미열람임을 밝혔다.",
+    "f7 — '일관되게 작동했다'를 삭제하고 실험 구성(4개 시나리오·3개 플릿 구성·4개 배정기, 3개 규모별 200개 무작위 사례 절제 실험)만 [사실]로, 결과는 미확인(원문 미열람)으로 썼다.",
+    "f8 — ROMEO 방법 서술을 삭제하고, 시간 절감·재현 가능성이 수작업 배정 대비이며 온톨로지 배정과 LLM 판단 배정을 비교한 근거가 아님을 같은 문단에 밝혔다(검증 처분 강등에 따라 [추정]으로 표기).",
+    "f10 — CoMuRoS 문장에 '결정적 배정기와 같은 조건의 비교는 확인되지 않았다(실험실 조건, 저자 보고)'를 병기했다(단계 5·아이디어 페이지).",
+    "f12 — [의견] 문장에 의견 주체를 'Kambhampati 외의 입장 논문(2024-02)'으로 밝혔다.",
+    "f14·트랙 개요 판정표 — 판정 칸은 세 가설 모두 '미판정'을 유지하고, 근거 칸에 '단계 5, 실행 2026-09-25-100'과 문헌 근거 수준(가설 1 부분 지지(방향; 근거 f1·f3, 비물류 조건), 가설 2 근거 부족(직접 비교 없음; f8 재현성은 수작업 대비), 가설 3 부분 지지(실행 가능성 측면만; 근거 f2·f4, 운영 안정성 미측정 f15))을 [추정]과 각주로 적었으며, '세 가설 모두 방향은 지지된다'는 문장은 쓰지 않고 [가설] 태그는 그대로 두었다.",
+    "단계 5 페이지 2·3절 — q5-03 을 답함(2026-09-25-100, #q5-03)으로 바꾸고 3절에 `### q5-03 … {#q5-03}` 소제목으로 가설별 지지 근거, 반례(f10·f11), 통제 비교 설계(f13), 문헌/ROP 실험 판정 분리(f14), 안정성 정의 공백(f15), 분류 원문 질문 결합(f16)을 썼고, q5-01 소절 끝 서술과 4절의 '가설 판정 미조사' 서술을 실행 2026-09-25-99 기준으로 보정했다.",
+    "단계 5 페이지 5절·backlog_updates — 새 질문 3건을 q5-16(f13)·q5-17(f14)·q5-18(f15)로 단계 5 에 등록하고 5절 표·2절 표에 추가했다.",
+    "단계 5 페이지 6절 — 검증 판정 칸을 모두 '미충족 · 미승인'으로 두고 아래 줄을 지시 문구 그대로 '다음 단계로 전환: 아니오(…)'로 썼으며, 상태 줄을 2절 표와 맞춰 열린 질문 14건·답한 질문 3건으로 고쳤다.",
+    "실험 페이지 — '제안된 실험 계획' 절의 '현재 제안된 실험 없음'을 E5-01~E5-03(목적·방법·측정 지표와 조건·필요한 자료·제안한 실행 id 2026-09-25-100·상태 제안, f13·f15·f16 근거 [추정])으로 교체했고 목표 수치·표본 규모는 넣지 않았으며, 트랙 개요 6절의 '현재 제안된 실험은 없다'도 고쳤다.",
+    "트랙 개요 — 상태 줄은 패치 대상에서 빼 '현재 단계: 단계 3. 구현 가설 설계 · 마지막 트랙 실행: 2026-09-25'를 유지했고, 6절 아이디어 페이지 설명에 q5-03 답 사실을 덧붙였다.",
+    "아이디어 2 페이지 6절 — '가설 판정' 소절을 판정표 지시와 같은 문구 수준으로 썼고(근거 f1·f2·f3·f4, 반례 f10·f11, 가설 2 근거 부족 명시), 6절 머리와 소절 끝의 미조사 서술을 실행 2026-09-25-99 기준으로 보정했으며 f6 유휴 시간·f7 결과 서술은 넣지 않았다.",
+    "세부영역 반영 제안 — 13. 작업 배정 — MRTA 와 27. AI·학습·적응과 모델 운영 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그 제안으로만 남겼으며, 13 쪽은 f6 구조만·f7 실험 구성만, 27 쪽은 f12 를 [의견]·의견 주체와 함께 적고 두 영역을 서로 연결하도록 했다.",
+    "용어 후보 — 로봇 스킬 언어(Robot Skill Language, RSL)를 NRTrans 저자들이 제안한 언어로 정의하고 sources 에 ref-748 을 달았다.",
+    "각주·참고문헌 — ref-748·ref-749 와 재사용 논문 출처의 각주 정의에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-748·ref-749 에 source_unopened: true 를 넣었으며, ref-750 은 원문 열람이라 표시하지 않았다.",
+    "업무 분해·배정 설계 초안은 pages 에 넣지 않고 ontology_draft_version 을 0.8 로 유지했으며, oq-030 은 해결로 바꾸지 않았다(open_question_updates 없음).",
+    "형식 검증(run_id 불일치): pages.json 의 run_id 를 2026-09-25-100 으로 고쳐 반환하려 했으나 구조화 출력 스키마가 run_id·changelog_entry 의 세 자리 실행 번호를 거부해 반영하지 못했다(2026-09-25-00 유지). research.json·verification.json 은 입력이라 고칠 수 없다. 주장·태그·각주·판정과 페이지 내용은 바꾸지 않았고, 스키마 패턴 확장 또는 퍼블리셔의 run_id 대응이 필요함을 additional_research_requests 에 적었다.",
+    "형식 검증 재작성 2회째(run_id 불일치 재발): 같은 스키마 제약 때문에 run_id 는 여전히 2026-09-25-00 으로만 반환할 수 있어 이 오류는 스토리텔러 쪽에서 고칠 수 없다. 페이지 내용·주장·태그·각주·판정은 직전 원고와 같게 다시 보냈다(단계 5 페이지는 H2 밖의 상태 줄을 갱신해야 해서 content 로, 나머지 세 페이지는 patches 로). 스키마 패턴 확장, 퍼블리셔의 run_id 대응, 두 자리 실행 번호로 다시 실행하는 방안 가운데 하나를 고르도록 additional_research_requests 에 적었고, 재시도 대신 보류를 권한다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+    "ontology_draft_version": "0.8",
+    "backlog_updates": [
+      {
+        "id": "q5-03",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-03"
+      },
+      {
+        "id": "q5-16",
+        "status": "열림",
+        "answer_link": null,
+        "question": "가설 1 판정 실험의 비교군 'LLM 이 로봇 명령을 직접 만드는 방식'을 어느 인터페이스 수준(VDA 5050 주문, Open-RMF 작업 요청, 로봇 도구 호출)으로 정의하고, 두 방식의 오배정을 같은 기준으로 어떻게 판정하는가? (q5-03 에서 파생)",
+        "stage": 5,
+        "origin": "f13"
+      },
+      {
+        "id": "q5-17",
+        "status": "열림",
+        "answer_link": null,
+        "question": "가설 2의 '배정 근거 설명 가능성'을 배정 근거가 온톨로지의 능력·제약으로 추적되는 비율이나 사람 평가자의 이해도 같은 측정 지표로 어떻게 정의하고, 재현성은 같은 입력 반복 시 배정 일치율로 재도 되는가? (q5-03 에서 파생)",
+        "stage": 5,
+        "origin": "f14"
+      },
+      {
+        "id": "q5-18",
+        "status": "열림",
+        "answer_link": null,
+        "question": "가설 3의 '운영이 더 안정적'을 일정 안정성(재스케줄 뒤 시작 시각 편차), 실행 가능 비율의 반복 시행 분산, 표현 바꿔 쓰기에 대한 민감도 가운데 무엇으로 정의해 판정하는가? (q5-03 에서 파생) (관련: q5-15)",
+        "stage": 5,
+        "origin": "f15"
+      }
+    ],
+    "log_entry": "실행 id: 2026-09-25-100(JSON run_id 는 스키마 패턴 때문에 2026-09-25-00, 퍼블리셔 run_id 대응 필요 — 형식 검증 재작성 2회째에도 해소 불가, 보류 권고) / 답한 질문: q5-03(가설 1~3 전 가설 미판정; 문헌 근거 수준 가설 1 부분 지지(f1·f3), 가설 2 근거 부족(f8 은 수작업 대비), 가설 3 부분 지지(실행 가능성 측면만, f2·f4; 운영 안정성 미측정 f15); 반례 f10·f11; 통제 비교 설계 f13·f16) / 새 질문: q5-16(f13), q5-17(f14), q5-18(f15) / 온톨로지 변경: 없음(업무 분해·배정 설계 초안 v0.8 유지 — 가설 판정 방법은 작업 모델의 개념·관계가 아니라 검증 방법) / 완료 조건 평가: 미충족(부족: 가설 판정표는 전 가설 미판정, 막힌 질문 q5-04·q5-05·q5-07~q5-18 열림, 앞 단계 3·4 완료 미승인; 실험 계획 E5-01~E5-03 은 이번 실행에서 제안) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영 2건(모두 '6. 대표 접근법과 기술') / 다음 실행 제안: q5-04·q5-05(판정 실험의 정답과 해법기 기준값) 또는 단계 3·4 완료 조건(q3-12, q4-03, q4-04)",
+    "overview_progress": "단계 5 진행 중(트랙 현재 단계는 단계 3, 단계 전환 미승인) — 열린 질문 14, 답함 3, 완료 조건 미충족(가설 판정표 전 가설 미판정, 실험 계획 E5-01~E5-03 제안)"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "트랙 자연어 업무 지시 챗봇 단계 5(실행 2026-09-25-100): LiP-LLM 저자들이 LLM 배정은 추적 한계로 어려움을 겪고 선형계획 배정은 실패가 거의 없었다고 보고(저자 보고, 원문 미열람); RobotFleet 는 LLM 기반 추론 배정기와 능력 제약 아래 최대 작업 부하를 최소화하는 MILP 배정기를 바꿔 끼우는 구조(구조만, 비교 결과 미확인); ReasonerOutput 논문의 실험 구성(결과 미확인); CoMuRoS 는 LLM 배정 정답률 최대 0.91이나 결정적 배정기와 같은 조건 비교 미확인; 최근접 배정 기준선을 세 번째 비교군으로 둔 판정 실험 설계([추정]). 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 서로 연결한다."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "트랙 자연어 업무 지시 챗봇 단계 5(실행 2026-09-25-100): NRTrans 는 로봇 스킬 언어(RSL)와 컴파일러 검증 루프로 ProgPrompt 대비 평균 성공률 +53.6% 를 보고(저자 보고, 원문 미열람); SDI 구조에서 기호 검증기를 LLM 비평자로 바꾸면 성공률 98.1%→3.8%(52개 명령 부분집합, 저자 보고); Kambhampati 외의 입장 논문(2024-02)은 LLM 이 외부 검증기와 결합한 LLM-모듈로 틀에서 계획을 도울 수 있다고 주장한다([의견]). 적용 대상 영역 13. 작업 배정 — MRTA 와 서로 연결한다."
+    }
+  ]
+}

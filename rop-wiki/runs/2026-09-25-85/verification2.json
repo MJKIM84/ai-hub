@@ -1,0 +1,43 @@
+{
+  "run_id": "2026-09-25-85",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 23건, 미확인 0건, 교차 확인 0건. 강등: 없음. 원문 미열람 출처: ref-350, ref-352, ref-353, ref-355, ref-356, ref-620, ref-656, ref-658, ref-663, ref-664, ref-695, ref-696, ref-697, ref-713, ref-714, ref-715, ref-717(브리프 기준. ref-658·ref-695·ref-696 은 1차 검증에서 GitHub 원문으로 주장을 확인함). ref-031 은 입력 원문 텍스트로 확인했다. 주의: 이번 재실행은 신규 검색을 하지 않고 기존 참고문헌만 다시 썼다. q4-04 의 전환 기준(되묻기·사람 승인·실행 보류)은 이 위키의 종합이고 물류 조건 근거가 없으며, 모든 finding 이 단일 출처라 신뢰도는 low 다. 온톨로지 변경 승인: 없음 / 거부: 없음(초안 v0.9 유지, q4-04 답을 초안 6절 '사용자 확인' 질문에 연결만 함). 새 질문: q4-19(보류 시간 한계, 단계 4, origin f19)를 등록했다. 불확실성 점수와 규칙 병행을 비교하는 질문은 q4-07·q5-08 과 중복이라 넣지 않았다. 단계 완료 조건: 미충족(부족: 실행 전 검증 단계·명령 권한·제한 운영 기준 초안이 추정 근거이고 검증 승인 상태로 반영되지 않음). 단계 전환: 미승인(완료 조건 미충족, 막힌 질문 q4-05~q4-19. q4-09·q4-10 중복 정리가 필요함). 2차: 드리프트 없음. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 15건은 모두 이행됐다. f22 사례는 베이스 불변과 맞게 고쳤고, 로봇 쪽 실행은 연계 대상이라는 범위 문장, INVALID·INTERVENED 한정, q4-01 연결에 의한 중복 방지, 각주 '(원문 미열람)' 표시도 반영됐다. 남은 문제: 단계 4 페이지 H1 아래 상태 줄의 '답한 질문: 3건'이 2절 표(답함 4건)와 맞지 않는다. 이 줄은 H2 절 밖이라 차등 갱신 패치로 고칠 수 없으므로, 게시할 때 퍼블리셔가 '답한 질문: 4건'으로 갱신해야 한다(pages.json additional_research_requests 참조). 아이디어 페이지의 기존 절에 있는 ref-350·ref-695~697 등 중복 각주 정의에는 '(원문 미열람)' 표시가 없다. 이번 패치 범위 밖이어서 다음 갱신 때 정리할 대상으로 남긴다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [
+      "물류 지시 시나리오에서 불확실성 점수만으로 되묻기를 정하는 방식과 필수 슬롯·영향 작업 규칙을 함께 쓰는 방식을 비교해 되묻기 횟수·승인 요청 수·오배정·보류 지연을 어떻게 재는가? (q4-07·q5-08 과 중복)"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

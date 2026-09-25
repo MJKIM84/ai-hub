@@ -1,0 +1,968 @@
+{
+  "run_id": "2026-09-25-33",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화"
+  },
+  "gaps": [
+    "섹션 3. 왜 중요한가 비어 있음",
+    "섹션 4. 핵심 개념과 용어 비어 있음(MRTA 분류 체계·배정 방식 용어 없음)",
+    "섹션 5. 현장 시나리오 비어 있음(물류 흐름 단계 미지정)",
+    "섹션 6. 대표 접근법과 기술 비어 있음(트랙 반영 제안 3건 대기: LLM 기반 분해·배정, LLM+해법기 분담)",
+    "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음",
+    "섹션 8. 대표 연구와 자료 비어 있음(트랙 반영 제안 2건 대기)",
+    "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 비어 있음",
+    "섹션 10. 다른 연구영역과의 연결 비어 있음(트랙 반영 제안: 27. AI·학습·적응과 모델 운영 연결)",
+    "섹션 11. 열린 질문 비어 있음(oq-024, oq-030 관련, 트랙 반영 제안 1건)",
+    "섹션 13. 참고 자료 각주 없음"
+  ],
+  "research_questions": [
+    "가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]",
+    "MRTA 문제는 어떤 기준(로봇·작업의 단일/다중, 즉시/시간 확장 배정, 작업 간 의존)으로 분류되며, 각 유형은 어떤 최적화 문제에 대응하는가? (섹션 4·6 겨냥)",
+    "중앙 최적화, 시장 기반 경매, 분산 합의, 규칙(최근접 등), 학습 기반 배정은 각각 어떻게 동작하며 창고 로봇 운영에서 어떤 결과가 보고되었는가? (섹션 6·8 겨냥, 교차 규칙: 학습 기반 배차는 27. AI·학습·적응과 모델 운영)",
+    "Open-RMF·VDA 5050 같은 오픈소스·표준은 작업 배정을 어느 구성요소의 책임으로 두고 배터리·충전 제약을 어떻게 배정에 반영하는가? (섹션 7·9 겨냥)",
+    "LLM 기반 배정(분해·팀 구성·배정)과 LLM이 정식화하고 해법기가 배정하는 방식의 대표 연구는 무엇이며, LTAA 결과의 출처 충돌(oq-030)은 해소되는가? (트랙 반영 제안, 섹션 6·8·11)",
+    "로봇 능력(적재·장착 장비)과 실제 운용 능력의 차이는 배정 후보를 어떻게 거르는가? (oq-024, 5. 로봇 능력·작업 온톨로지 연결, 섹션 10)",
+    "국내 물류센터·국책 과제에서 다중 로봇 작업 배정 규칙이나 기술을 다룬 자료가 있는가? (한국 자료 우선, 섹션 5·8)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Gerkey와 Matarić(2004)는 MRTA 문제를 단일 작업 로봇(ST)/다중 작업 로봇(MT), 단일 로봇 작업(SR)/다중 로봇 작업(MR), 즉시 배정(IA)/시간 확장 배정(TA)의 세 축으로 분류하는 도메인 독립 분류 체계를 제시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-393"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: taxonomy classifies approaches according to number of agents and tasks, and type of assignment (instantaneous or time-extended). IJRR 23(9), 939-954. 원문 미열람.",
+      "as_of": "2004-09",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f2",
+      "claim": "Gerkey와 Matarić의 분류에서 ST-SR-IA(단일 작업 로봇·단일 로봇 작업·즉시 배정) 문제는 조합 최적화의 최적 배정 문제(optimal assignment problem)의 한 사례로, 헝가리안 방법 같은 다항 시간 해법으로 최적해를 구할 수 있는 유형이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-393"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 'The ST-SR-IA allocation problem is an instance of the optimal assignment problem (OAP)'; 헝가리안 방법은 O(|V|^3). 원문 미열람.",
+      "as_of": "2004-09",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "Korsah·Stentz·Dias(2013)의 iTax 분류는 작업이 독립이라고 본 기존 분류가 다루지 못한 효용·제약의 상호 의존을 더해, 같은 로봇 일정 안의 의존(ID)과 서로 다른 로봇 일정 사이의 의존(XD, 선후 제약 등)을 구분하고 각 범주를 조합 최적화·운영과학 모델에 대응시킨다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-394"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: iTax 'explicitly takes into consideration the issues of interrelated utilities and constraints'; Intra-schedule(ID)·Cross-schedule(XD) Dependencies. IJRR 32(12), 1495-1512. 원문 미열람.",
+      "as_of": "2013",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "Aziz 외(AAMAS 2021)는 작업마다 최소 로봇 수가 필요한 ST-MR-IA 설정에서 총예산·작업 예산·로봇 예산 제약 아래 완료 작업 수를 최대화하는 배정의 계산 복잡도를 분석하고 근사 알고리즘과 근사 하한을 제시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-397"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: each task requires at least a certain number of robots, each robot works on at most one task; budget constraints of three kinds; approximation algorithms and lower bounds. 원문 미열람.",
+      "as_of": "2021-05",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f5",
+      "claim": "Dias 외(2006)는 로봇들이 작업을 경매·입찰로 사고파는 시장 기반(market-based) 다중 로봇 조율 연구를 탐사·지도 작성·로봇 축구 등 여러 응용에 걸쳐 정리한 서베이를 IEEE 회보 다중 로봇 조율 특집호에 냈다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-396"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: market-based approaches 'successfully implemented in a variety of domains ranging from mapping and exploration to robot soccer'. 기술 보고서 CMU-RI-TR-05-16 을 거쳐 2006-07 게재. 원문 미열람.",
+      "as_of": "2006-07",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f6",
+      "claim": "Choi·Brunet·How(2009)의 합의 기반 경매 알고리즘(CBAA)과 다중 배정용 합의 기반 번들 알고리즘(CBBA)은 시장 기반 작업 선택과 국소 통신 합의로 낙찰가 충돌을 풀며, 점수 체계 가정 아래 충돌 없는 배정으로 수렴하고 로봇 간 상황 인식 불일치와 통신망 변화에 강건하다고 증명·보고한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-395"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 'guarantee convergence to a conflict-free assignment'; robust to 'inconsistencies in the situational awareness across the fleet and variations in the communication network topology'. IEEE T-RO 25(4). 원문 미열람.",
+      "as_of": "2009",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "Open-RMF 는 작업 요청이 오면 디스패처가 모든 플릿 어댑터에 입찰 공고(BidNotice)를 보내고, 처리할 수 있는 플릿 어댑터가 비용을 담은 입찰(BidProposal)을 내면 디스패처가 가장 빨리 끝나는 것·가장 비용이 낮은 것 같은 설정 기준으로 비교해 작업을 준다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-376"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "mdBook 원본(task.md): 'If a fleet adapter is able to process that request, it submits a rmf_task_msgs/BidProposal'; 기준 예 'fastest to finish, lowest cost'. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f8",
+      "claim": "Open-RMF 의 rmf_task TaskPlanner 는 요청된 시작 시각을 고려해 작업이 가장 짧은 시간 안에 끝나도록 로봇들 사이 작업 배정과 순서를 정하고, 배터리 같은 자원 제약을 반영해 필요하면 충전 작업을 로봇 일정에 자동으로 끼워 넣는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-404",
+        "ref-376"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README 원본: 'solves the problem of optimal allocation of tasks among available robots'; 'automatically injects recharging tasks in the robot's task itinerary when needed'. 두 출처 모두 Open Robotics 라 독립 교차 아님. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f9",
+      "claim": "Open-RMF 플릿 어댑터 템플릿 설정은 배터리가 recharge_threshold(예 0.10) 아래인 로봇은 작업하지 않게 하고 충전 목표(recharge_soc), 로봇별 충전기, 작업 종료 후 동작(park·charge·nothing)을 두어 배정 후보를 배터리 상태로 제한한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-105"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "config.yaml: 'recharge_threshold: 0.10 # Battery level below which robots in this fleet will not operate'. 이번 실행에서 다시 열지 않음. (재인용: 2026-09-25-29)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "VDA 5050 명세는 '이동로봇에 대한 주문 배정'을 관제 시스템(fleet control)의 최소 기능으로 두고, 로봇은 크기·적재 장착부 같은 물리 특성을 팩트시트로 알리지만, 배정 알고리즘 자체는 정하지 않고 관제–로봇 통신만 규정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "명세 원본(main): 관제 최소 기능에 'Assignment of orders to the mobile robots'; 'The mobile robot shall communicate this information via the topic factsheet'. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f11",
+      "claim": "Ma 외(2017)의 다중 에이전트 픽업·배송(MAPD) 알고리즘 토큰 패싱(TP)에서는 토큰을 받은 에이전트가 픽업 위치가 자기 위치에서 가장 가까운 미배정 작업을 스스로 맡고 충돌 없는 경로를 계획하며, 작업 교환을 더한 변형(TPTS)도 제시된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-006"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약(후속 연구의 TP 설명): 'the agent with the token assigns itself to the task whose pickup vertex is closest to its current location'. 원문 미열람.",
+      "as_of": "2017",
+      "flow_step": null,
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f12",
+      "claim": "AGV 배차 연구에서 최근접 차량 우선(NVF) 규칙은 요청 위치까지 가장 가까운 유휴 차량을 보내는 방식인데, 순차적 최근접 배정이 전체 이동 시간을 줄이는 배정 조합을 놓칠 수 있어, 앞으로의 운반 요청까지 고려한 조합 최적화 배차가 무작위·최근접 규칙보다 효율적이라는 결과가 공장 현장 조건에서 보고되었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-400"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: nearest vehicle/shortest travel time rule 'may not adopt a combination of sequential AGV assignments that leads to shorter total vehicle travel time'. 작업장(shop floor) 조건, 저자 보고. 원문 미열람.",
+      "as_of": "2019",
+      "flow_step": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f13",
+      "claim": "Merschformann 외(2019)는 로봇 이동형 풀필먼트 시스템(RMFS) 이산 사건 시뮬레이션에서 피킹 주문을 작업대에 배정하는 규칙은 단위 처리량에 큰 영향을 주었지만 보충 주문 배정·선반 선택·선반 보관 위치 규칙은 그렇지 않았다고 보고하고, 규칙 코드를 RAWSim-O 로 공개했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-398",
+        "ref-101"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 'decision rules for pick order assignment have a strong impact on the unit throughput rate, but this is not the case for replenishment order assignment, pod selection and pod storage'. 시뮬레이션 조건, 같은 저자 계열이라 독립 교차 아님. 원문 미열람.",
+      "as_of": "2019",
+      "flow_step": "피킹",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f14",
+      "claim": "국내 자동물류센터 설계 최적화 연구는 자동창고(ASRS)와 AGV 를 포함한 시뮬레이션에서 빈 상태가 된 AGV 가 가장 가까운 화물을 회수하는 최근접 규칙(Closest Rule)을 운영 규칙으로 두고 반응표면 메타모델로 설계 요인을 최적화했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-402"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: '공차상태가 된 AGV는 반드시 지근거리의 Load를 회수하도록 하여(Closest Rule) 차량의 효율성을 높이는'. 저자·발행연도 미확인. 원문 미열람.",
+      "as_of": "2026-09-25",
+      "flow_step": "적치",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "국내 과제 보고서 '클라우드에 연결된 개별 로봇 및 로봇그룹의 작업 계획 기술 개발'은 클라우드·클라우드렛 환경에서 개별·다중 로봇의 작업 수립·할당·재조정·학습 기술을 개발해 제조·물류 분야에서 실증하는 것을 목표로 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-401"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: '클라우드 기반 개별/다중 로봇 로컬 작업관리, 수립, 할당, 재조정, 학습, 맥락추론 기술개발'; 제조/물류 산업 실증. 수행기관·발행연도 미확인. 원문 미열람. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f16",
+      "claim": "Meseguer Valenzuela와 Blanes Noguera(2025)의 이동로봇 플릿 작업 배정 문헌 검토는 52편을 휴리스틱, 메타휴리스틱, 정확해·매스휴리스틱, 시장 기반, 인공지능(주로 강화학습) 다섯 계열로 묶고, 연구 대부분이 중앙집중·시뮬레이션 기반이며 30대 미만 플릿 실험이 많다고 지적한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-152"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약(제3자 요약 포함): 1440건에서 52편 선별; 'overwhelmingly centralized and simulation-based, with most experiments using fleets of fewer than 30 robots'. 원문 미열람.",
+      "as_of": "2025-01",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f17",
+      "claim": "Wang과 Gombolay의 ScheduleNet(이종 그래프 어텐션 네트워크)은 시간 제약 네트워크에 로봇·근접 노드를 더한 이종 그래프로 다중 로봇 배정·일정 정책을 학습하며, 작은 문제에서 모방 학습으로 훈련해 더 큰 미학습 문제에 일반화되었다고 저자들이 보고한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-399"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 'end-to-end trainable via imitation learning on small-scale problems, and generalizes to large, unseen problems'. RSS 2020 발표 후 Autonomous Robots 게재. 성능 우위는 저자 보고. 원문 미열람. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "2026년 프리프린트는 AMR 플릿의 배터리 열화를 고려한 작업 배정, 작업 순서, 충전 방식 선택, 공용 충전기 조율을 함께 푸는 틀을 제안하며, 플릿 수준 주문제가 배정·충전기 순서를 정하고 로봇 수준 부문제가 배터리 일정을 최적화하는 2단계 방법을 쓴다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-403"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 'jointly addresses battery-degradation-aware task assignment, service sequencing, charging-mode selection, and shared-charger coordination'. 저자 미확인 프리프린트. 원문 미열람.",
+      "as_of": "2026-03",
+      "flow_step": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f19",
+      "claim": "SMART-LLM(Kannan 외 2023)은 LLM 에 프로그램 형식의 few-shot 프롬프트를 주어 지시를 하위 작업으로 분해하고, 로봇 팀을 구성한 뒤 하위 작업을 배정하는 다중 로봇 작업 계획 파이프라인이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-090",
+        "ref-089"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "논문·공식 README 는 같은 저자 계열이라 독립 교차 아님. 배정의 최적성 보장은 README 기준 미확인. 원문 미열람. (재인용: 2026-09-25-04)",
+      "as_of": "2023-09",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f20",
+      "claim": "DART-LLM(2024)은 LLM 으로 하위 작업 사이 의존 관계를 방향 비순환 그래프(DAG)로 만들고 이를 바탕으로 다중 로봇에 작업을 배정·실행하는 프리프린트이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-059"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Dependency-Aware Multi-Robot Task Decomposition and Execution. arXiv 2411.09022 프리프린트. 원문 미열람. (재인용: 2026-09-25-04)",
+      "as_of": "2024-11",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f21",
+      "claim": "LLM 이 의존 그래프나 수리 정식화를 만들고 배정·일정은 해법기가 푸는 연구로 선형계획을 쓰는 LiP-LLM, PDDL 과 정수계획을 결합한 PIP-LLM, 형식 언어로 이종 로봇 팀 일정을 정하는 FLEET, MRTA·스케줄링용 MILP 모델을 LLM 으로 자동 구성하는 Peng 외(2025)가 있다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-166",
+        "ref-181",
+        "ref-242",
+        "ref-167"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제목·초록 수준 확인: LiP-LLM(arXiv 2410.21040), PIP-LLM(2510.22784), FLEET(2510.07417, makespan 최소화), Peng 외(2503.13813). 모두 프리프린트, 원문 미열람. (재인용: 2026-09-25-21)",
+      "as_of": "2025-10",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f22",
+      "claim": "LTAA(arXiv 2512.02810)는 LangGraph 기반 LLM 작업 배정 에이전트로 단계 적응 배정 전략·다단계 검증·계층적 재시도를 두고 건설 로봇 시나리오에서 동적 계획법·강화학습과 비교한 연구이지만, 완료율 비교 결과에 관한 출처 충돌(oq-030)은 이번 검색에서도 해소되지 않았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-168"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약(arXiv 목록): 'LangGraph-based Task Allocation Agent (LTAA) ... phase-adaptive allocation strategies, multi-stage validation with hierarchical retries'. 수치 결과는 확인 못함. 원문 미열람.",
+      "as_of": "2025-12",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f23",
+      "claim": "능력 온톨로지로 이종 로봇·자원의 작업 수행 가능성을 추론해 배정 후보를 정하는 연구가 있다(이종 다중 로봇 배정의 의미 기반 가능성 추론 2026, 라인리스 이동 조립 시스템의 온톨로지 기반 배정 2022).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-236",
+        "ref-237"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제목 수준 확인: Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation(Electronics 2026); Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems(RWTH, 2022). 원문 미열람.",
+      "as_of": "2026-08",
+      "flow_step": null,
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f24",
+      "claim": "작업자가 피킹하고 AMR 이 운반하는 동적 주문 피킹 연구(Yu & Srinivas 2025)는 AMR 가용성에 따른 개입 전략을 다루어, 주문 변동과 로봇 배정이 맞물리는 피킹 단계의 사례가 된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-132"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies. 설정 요약 수준, 원문 미열람. (재인용: 2026-09-25-29)",
+      "as_of": "2025",
+      "flow_step": "피킹",
+      "flow_item": "수행 자원",
+      "source_unopened": true
+    },
+    {
+      "id": "f25",
+      "claim": "분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)에 대해, 최근접 배정은 MAPD 토큰 패싱·AGV 최근접 규칙·국내 물류센터 시뮬레이션에서 기본 규칙으로 쓰일 만큼 단순하지만, 앞으로의 요청을 고려한 조합 최적화가 총 이동을 줄이고 RMFS 에서는 배정 규칙 선택이 처리량을 크게 바꾼다는 보고가 있어, 최근접이 전체 최적이라는 보장은 없고 창고 현장에서 둘을 직접 비교한 실측 자료는 이번 검색에서 찾지 못한 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-006",
+        "ref-400",
+        "ref-402",
+        "ref-398"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f11·f12·f13·f14 를 SCM 질문에 대응시킨 이 위키의 정리. f12 는 공장 작업장, f13 은 시뮬레이션 조건. 창고 현장 비교 연구 부재는 검색 범위의 관찰.",
+      "as_of": "2026-09-25",
+      "flow_step": "피킹",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f26",
+      "claim": "Open-RMF 디스패처가 여러 플릿 어댑터의 입찰을 비교하고 VDA 5050 이 주문 배정을 관제의 기능으로 두는 구조로 보아, 이종 제조사를 잇는 ROP 는 어느 플릿·로봇에 작업을 줄지의 배정 결정과 기준(비용·완료 시각)을 직접 맡고, 플릿 내부 경로·주행은 제조사 관제나 로봇에 맡기는 분담이 가능할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-376",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f7·f10 과 분류 원문 9장 경계(이종 제조사를 연결하는 ROP 는 인터페이스와 실행 보장 담당)를 대응시킨 추론. 두 수준 배정의 최적성 손실을 측정한 자료는 확인하지 못함.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f27",
+      "claim": "연계 대상: VDA 5050 은 관제–이동로봇 통신과 무관한 외부 IT 시스템 인터페이스를 범위에서 제외하므로, 배정의 입력이 되는 주문·납기·재고 제약은 WMS 등 상위 업무 시스템에서 오고 그 정책(수요예측·전사 재고정책)은 ROP 밖의 연계 대상이다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "명세 원본: 'Interfaces unrelated to the communication between a fleet control system and mobile robots are excluded, such as interfaces to ... external IT systems.' 이를 분류 원문 9장 상위 업무 시스템 경계에 대응시킨 추론. (재인용: 2026-09-25-29)",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f28",
+      "claim": "LLM 기반 배정 연구들을 보면 LLM 이 지시 해석·분해·정식화를 맡고 전체 최적 배정은 선형·정수계획 해법기가 맡는 분담이 제안되고 있으나, 창고 물류 조건에서 LLM 배정·해법기 배정·최근접 규칙을 비교한 연구는 이번 검색에서 확인되지 않았다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-166",
+        "ref-181",
+        "ref-167",
+        "ref-090"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f19·f21 을 분류 원문 질문과 대응시킨 추론(트랙 nl-task-chatbot 반영 제안 2026-09-25-21 내용 확인). 수치는 모두 저자 보고, 건설·가정·시뮬레이션 조건.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-393",
+      "org": "Gerkey, B. P., & Matarić, M. J.",
+      "title": "A Formal Analysis and Taxonomy of Task Allocation in Multi-Robot Systems",
+      "published": "2004-09",
+      "url": "https://journals.sagepub.com/doi/10.1177/0278364904045564",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ST/MT·SR/MR·IA/TA 세 축의 MRTA 분류와 ST-SR-IA 를 최적 배정 문제로 보는 분석을 제시한 IJRR 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-394",
+      "org": "Korsah, G. A., Stentz, A., & Dias, M. B.",
+      "title": "A comprehensive taxonomy for multi-robot task allocation",
+      "published": "2013",
+      "url": "https://journals.sagepub.com/doi/10.1177/0278364913496484",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업 간 상호 의존(ID·XD 등)을 더한 iTax 분류와 운영과학 모델 대응을 제시한 IJRR 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-395",
+      "org": "Choi, H.-L., Brunet, L., & How, J. P.",
+      "title": "Consensus-Based Decentralized Auctions for Robust Task Allocation",
+      "published": "2009",
+      "url": "https://dl.acm.org/doi/10.1109/tro.2009.2022423",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 분산 경매와 합의로 충돌 없는 배정에 수렴하는 CBAA·CBBA 를 제안한 IEEE T-RO 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-396",
+      "org": "Dias, M. B., Zlot, R., Kalra, N., & Stentz, A.",
+      "title": "Market-Based Multirobot Coordination: A Survey and Analysis",
+      "published": "2006-07",
+      "url": "https://www.ri.cmu.edu/pub_files/2006/7/01677943-1.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 시장 기반(경매) 다중 로봇 조율 연구를 정리한 Proceedings of the IEEE 서베이.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-397",
+      "org": "Aziz, H., Chan, H., Cseh, Á., Li, B., Ramezani, F., & Wang, C.",
+      "title": "Multi-Robot Task Allocation—Complexity and Approximation",
+      "published": "2021-05",
+      "url": "https://arxiv.org/abs/2103.12370",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 예산 제약이 있는 ST-MR-IA 배정의 계산 복잡도와 근사 알고리즘을 다룬 AAMAS 2021 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-398",
+      "org": "Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.",
+      "title": "Decision rules for robotic mobile fulfillment systems",
+      "published": "2019",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214716019300946",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 의 주문 배정·선반 선택·보관 규칙을 시뮬레이션으로 비교한 Operations Research Perspectives 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-399",
+      "org": "Wang, Z., & Gombolay, M.",
+      "title": "Heterogeneous graph attention networks for scalable multi-robot scheduling with temporospatial constraints",
+      "published": null,
+      "url": "https://link.springer.com/article/10.1007/s10514-021-09997-2",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이종 그래프 어텐션 네트워크(ScheduleNet)로 다중 로봇 배정·일정 정책을 모방 학습하는 Autonomous Robots 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-400",
+      "org": "International Journal of Planning and Scheduling 게재 논문(저자 미확인)",
+      "title": "Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors",
+      "published": "2019",
+      "url": "https://www.inderscience.com/info/inarticle.php?artid=103016",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 앞으로의 운반 요청을 고려한 조합 최적화 AGV 배차를 무작위·최근접 규칙과 비교한 논문(IJPS 3(1)).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-376",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 의 작업 입찰(BidNotice·BidProposal)·디스패처 선택 기준·TaskPlanner 비용 계산과 충전 작업 삽입을 설명한 장. mdBook 원본으로 확인.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/task.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-401",
+      "org": "KISTI ScienceON 수록 국가R&D 과제 보고서(수행기관 미확인)",
+      "title": "클라우드에 연결된 개별 로봇 및 로봇그룹의 작업 계획 기술 개발",
+      "published": null,
+      "url": "https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400003952",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 클라우드 기반 개별·다중 로봇 작업 수립·할당·재조정·학습 기술을 제조·물류에서 실증하는 국내 과제 보고서.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-402",
+      "org": "KISTI ScienceON 수록 논문(저자 미확인)",
+      "title": "시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화",
+      "published": null,
+      "url": "https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO200634515151716",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ASRS·AGV 자동물류센터를 시뮬레이션·반응표면 메타모델로 최적화하며 AGV 최근접 회수 규칙을 쓴 국내 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-403",
+      "org": "arXiv 2603.22731 저자(미확인)",
+      "title": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots",
+      "published": "2026-03",
+      "url": "https://arxiv.org/abs/2603.22731",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AMR 플릿의 배터리 열화 고려 작업 배정·충전·공용 충전기 조율을 2단계로 푸는 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-404",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — README",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "로봇 간 최적 작업 배정·순서를 푸는 TaskPlanner API 와 배터리 제약에 따른 충전 작업 자동 삽입을 설명한 README. 원본으로 확인.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_task/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-006",
+      "org": "Ma, H., Li, J., Kumar, T. K. S., & Koenig, S.",
+      "title": "Lifelong Multi-Agent Path Finding for Online Pickup and Delivery Tasks",
+      "published": "2017",
+      "url": "https://arxiv.org/abs/1705.10868",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MAPD 문제와 토큰 패싱(TP)·작업 교환 토큰 패싱(TPTS) 알고리즘을 제시한 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세(main 3.0.0). 관제 최소 기능(주문 배정), 팩트시트, 범위 제외를 원문으로 확인.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Open-RMF 플릿 어댑터 템플릿 설정(충전 임계값·충전 목표·충전기·작업 종료 후 동작). 이번 실행에서 다시 열지 않음.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-152",
+      "org": "Meseguer Valenzuela, A., & Blanes Noguera, F.",
+      "title": "Task Allocation in Mobile Robot Fleets: A review",
+      "published": "2025-01",
+      "url": "https://arxiv.org/abs/2501.08726",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이동로봇 플릿 작업 배정 연구 52편을 알고리즘 계열별로 정리한 체계적 문헌 검토.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-101",
+      "org": "Merschformann, M. (RAWSim-O GitHub)",
+      "title": "RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)",
+      "published": null,
+      "url": "https://github.com/merschformann/RAWSim-O",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 운영 결정 문제의 효과를 연구하는 이산 사건 시뮬레이션 프레임워크 README. 이번 실행에서 다시 열지 않음.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-132",
+      "org": "Yu, S., & Srinivas, S.",
+      "title": "Collaborative Human–Robot Teaming for Dynamic Order Picking: Interventionist strategies for improving warehouse intralogistics operations",
+      "published": "2025",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1366554525001231",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 작업자 피킹·AMR 운반 협업의 동적 주문 피킹과 개입 전략 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-089",
+      "org": "SMARTlab-Purdue (Purdue University)",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models (GitHub README)",
+      "published": null,
+      "url": "https://github.com/SMARTlab-Purdue/SMART-LLM",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. SMART-LLM 공식 코드 README(분해·팀 구성·배정 파이프라인). 이번 실행에서 다시 열지 않음.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-090",
+      "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+      "published": "2023-09",
+      "url": "https://arxiv.org/abs/2309.10062",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 으로 작업 분해·팀 구성·배정을 수행하는 다중 로봇 작업 계획 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-059",
+      "org": "Wang, Y. 외(DART-LLM 저자)",
+      "title": "DART-LLM: Dependency-Aware Multi-Robot Task Decomposition and Execution using Large Language Models",
+      "published": "2024-11",
+      "url": "https://arxiv.org/abs/2411.09022",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 하위 작업 의존 DAG 를 LLM 으로 만들어 다중 로봇 분해·실행을 하는 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-166",
+      "org": "Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T.",
+      "title": "LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21040",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 이 만든 의존 그래프를 선형계획으로 풀어 다중 로봇 작업을 배정하는 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-181",
+      "org": "Shi, G., Wu, Y., Kumar, V., & Sukhatme, G. S.",
+      "title": "PIP-LLM: Integrating PDDL-Integer Programming with LLMs for Coordinating Multi-Robot Teams Using Natural Language",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.22784",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. PDDL 계획과 정수계획을 LLM 과 결합해 다중 로봇 팀을 조율하는 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-242",
+      "org": "Rivera, C., Byrd, G., Booker, M., Kemp, B., Gaines, A., Holmes, E., Uplinger, J., de Melo, C. M., & Handelman, D.(JHU APL·JHU·DEVCOM ARL)",
+      "title": "FLEET: Formal Language-Grounded Scheduling for Heterogeneous Robot Teams",
+      "published": "2025-10",
+      "url": "https://arxiv.org/abs/2510.07417",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 형식 언어에 접지한 이종 로봇 팀 일정 계획(makespan 최소화) 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-167",
+      "org": "Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L.",
+      "title": "Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models",
+      "published": "2025-03",
+      "url": "https://arxiv.org/abs/2503.13813",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 으로 MRTA·스케줄링 MILP 모델을 자동 구성하는 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-168",
+      "org": "Kaitha, S., & Yu, S. 외(arXiv 2512.02810)",
+      "title": "Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.02810",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LangGraph 기반 LLM 배정 에이전트(LTAA)를 건설 로봇 시나리오에서 동적 계획법·강화학습과 비교한 프리프린트.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-236",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+      "published": "2026-08-11",
+      "url": "https://doi.org/10.3390/electronics15163562",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이종 다중 로봇 배정에서 의미 기반으로 작업 수행 가능성을 추론하는 논문.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-237",
+      "org": "Kluge-Wilkes, A. 외(RWTH Aachen WZL)",
+      "title": "Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems",
+      "published": "2022",
+      "url": "https://www.techrxiv.org/users/685235/articles/679210-ontology-based-task-allocation-for-heterogeneous-resources-in-line-less-mobile-assembly-systems",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 라인리스 이동 조립 시스템에서 온톨로지로 이종 자원에 작업을 배정하는 연구.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md",
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "rationale": "섹션 3(왜 중요한가): f12·f13·f25 — 배정 규칙이 총 이동·처리량을 바꾸고 최근접이 전체 최적을 보장하지 않음 / 섹션 4(핵심 개념): f1·f2(ST/MT·SR/MR·IA/TA, 최적 배정 문제), f3(ID·XD 의존), f4(다중 로봇 작업·예산) / 섹션 5(현장 시나리오): 피킹 f13·f24·f25, 적치 f14, 배터리 제약 f9·f18 / 섹션 6(대표 접근법): 중앙 최적화 f2·f12, 시장·경매 f5·f6·f7, 규칙 f11·f14, 학습 기반 배차 f17(27. AI·학습·적응과 모델 운영 교차 규칙), LLM 기반 f19·f20·f21·f22·f28(트랙 nl-task-chatbot 반영 제안 2026-09-25-04·2026-09-25-21 두 건 반영), 문헌 동향 f16 / 섹션 7(표준·오픈소스): Open-RMF 입찰·TaskPlanner f7·f8·f9, VDA 5050 관제 기능 f10 / 섹션 8(대표 연구): f1·f3·f4·f5·f6·f11·f13·f16·f17·f18, 국내 f14·f15, LLM f19~f22(반영 제안 SMART-LLM·DART-LLM·LiP-LLM·PIP-LLM·FLEET·Peng 외·LTAA; COHERENT·LaMMA-P·IMR-LLM 은 이번에 재확인하지 않아 제외) / 섹션 9(직접 범위·연계): f26(배정 결정은 ROP, 플릿 내부 주행은 제조사), f27(연계 대상: 상위 업무 시스템) / 섹션 10(연결): 5. 로봇 능력·작업 온톨로지 f23·oq-024, 14. 작업 순서·스케줄링 f3·f8, 15. 다중 로봇 경로·교통 관리 — MAPF f11, 16. 공용 자원·충전·에너지 최적화 f8·f9·f18, 9. 로봇·제조사 관제 연동 f7·f10·f26, 27. AI·학습·적응과 모델 운영 f17·f19~f22(트랙 반영 제안 2026-09-25-21) / 섹션 11(열린 질문): oq-030(LTAA 출처 충돌, f22 로 미해소), oq-024, 새 질문 3건(트랙 반영 제안의 창고 비교 연구 부재 포함)"
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "헝가리안 방법",
+      "term_en": "Hungarian Method",
+      "definition": "작업과 수행자 사이 일대일 배정에서 총비용을 최소로 하는 최적 배정 문제를 다항 시간에 푸는 고전 알고리즘이다."
+    },
+    {
+      "term_ko": "시장 기반 작업 배정",
+      "term_en": "Market-based Task Allocation",
+      "definition": "로봇이 작업에 대한 비용·효용을 입찰하고 경매로 낙찰자를 정해 작업을 나누는 배정 방식이다."
+    },
+    {
+      "term_ko": "합의 기반 번들 알고리즘",
+      "term_en": "Consensus-Based Bundle Algorithm (CBBA)",
+      "definition": "각 로봇이 작업 묶음에 입찰하고 이웃과의 국소 통신 합의로 낙찰 충돌을 풀어 중앙 없이 충돌 없는 배정에 이르는 분산 배정 알고리즘이다."
+    },
+    {
+      "term_ko": "최근접 차량 우선 규칙",
+      "term_en": "Nearest Vehicle First (NVF) Rule",
+      "definition": "운반 요청이 생기면 요청 위치까지 이동 거리가 가장 짧은 유휴 차량·로봇에 작업을 맡기는 배차 규칙이다."
+    }
+  ],
+  "open_questions_new": [
+    "국내외 물류센터에서 최근접 배정 규칙과 전역 최적화(또는 LLM 기반) 배정을 같은 조건에서 비교해 총 이동거리·처리량·납기 준수를 실측한 자료가 있는가? | 관련 영역: 13. 작업 배정 — MRTA, 4. 성과·경제성·프로세스 개선 | 근거: f25 | 종류: 일반",
+    "ROP 가 플릿 단위로 작업을 입찰·배정하고 제조사 관제가 플릿 안에서 다시 로봇을 고르는 두 수준 배정에서 전체 최적성이 얼마나 손실되며, 이를 줄이려면 제조사 관제가 어떤 비용·상태 정보를 내야 하는가? | 관련 영역: 13. 작업 배정 — MRTA, 9. 로봇·제조사 관제 연동 | 근거: f26 | 종류: 일반",
+    "출하 마감·납기 같은 상위 업무 제약을 배정 목적함수(완료 시각 최소화, 비용 최소화)와 어떻게 결합하는지 정한 공개 설계나 창고 사례가 있는가? | 관련 영역: 13. 작업 배정 — MRTA, 14. 작업 순서·스케줄링, 1. 주문·업무 시스템 연계 | 근거: f7 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 29,
+    "cross_checked_count": 0,
+    "unverified": [
+      "모든 finding 교차 확인 없음: 대부분 단일 출처이거나 같은 저자·기관 계열 출처",
+      "f2 헝가리안 방법 적용은 Gerkey 원문이 아닌 검색 요약(관련 문헌)에 기댐",
+      "f11 토큰 패싱의 최근접 픽업 선택은 후속 연구의 설명 요약에 기댐(ref-006 원문 미열람)",
+      "f14 ref-402 저자·발행연도 미확인, f15 ref-401 수행기관·발행연도 미확인",
+      "ref-399 발행 연도(Autonomous Robots 게재년) 미확인, ref-400·ref-403 저자 미확인",
+      "oq-030 LTAA 완료율 출처 충돌 미해소(원문 미열람, 검색 요약에 수치 없음)",
+      "트랙 반영 제안 가운데 COHERENT(ref-169)·LaMMA-P(ref-164)·IMR-LLM(ref-170)은 이번에 재확인하지 않아 finding 에 넣지 않음",
+      "f19~f21 LLM 연구 내용은 제목·이전 브리프 요약 수준(재인용)"
+    ],
+    "scope_violations": [
+      "f27 은 상위 업무 시스템(외부 연계 영역)에 관한 내용이라 '연계 대상: '으로 표시함",
+      "f18 배터리 열화 모델링은 16. 공용 자원·충전·에너지 최적화와 겹치며 13. 작업 배정 — MRTA 에서는 배정 결합 부분만 다루도록 제안"
+    ],
+    "budget_used": {
+      "queries": 20,
+      "sources": 13
+    },
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 3건을 열었다(ref-376 Open-RMF task 장, ref-404 rmf_task README, 재사용 ref-031 VDA 5050 명세). 논문·보고서 등 나머지는 원문 미열람으로 신뢰도 상한 medium 이며, 재사용 출처 중 이번에 열지 않은 것(ref-105, ref-101 등)도 medium 으로 적었다. 검색 20회/30, 신규 출처 13건/15(ref-393~ref-404, 예약 구간 안), 재사용 16건. 교차 확인 0건. 트랙 반영 제안 6건 중 섹션 6·8·10·11 제안은 f19~f22·f28 과 열린 질문으로 반영 근거를 냈고, LTAA 출처 충돌(oq-030)은 해소하지 못해 열린 질문으로 유지한다. 한국 자료: 국내 과제 보고서(ref-401)와 자동물류센터 시뮬레이션 논문(ref-402)을 찾았으나 국내 물류센터의 실제 배정 규칙 운영 사례는 찾지 못했다. 교차 규칙: 학습 기반 배차(f17)와 LLM 배정(f19~f22)은 27. AI·학습·적응과 모델 운영과 양쪽 연결을 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 구분: 시뮬레이션 결과(f13·f14)는 설계·평가 도구로만 서술. 정정 요청 없음. 해결된 열린 질문 없음."
+  }
+}

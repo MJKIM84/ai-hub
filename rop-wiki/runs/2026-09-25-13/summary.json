@@ -1,0 +1,146 @@
+{
+  "run_id": "2026-09-25-13",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 1,
+    "area_name": "1. 주문·업무 시스템 연계",
+    "category": "A. 업무·공급망 설계"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "22f66be",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 20,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1346.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 1. 주문·업무 시스템 연계 | 3~11절 신규 작성: 로봇 인터페이스의 주문 갱신·취소·일시정지·되감기, ISA-95 작업 지시·B2MML 거래 동사, 동적 주문 피킹 연구, 피킹 → 출하 시나리오, ROP 경계, 새 열린 질문 3건(2차 수정: 각주 ref-110·ref-111 정정, 사실·추정 분리) | run 2026-09-25-13",
+  "notes": [
+    "참고문헌 생성: references/ref-125.md",
+    "참고문헌 생성: references/ref-126.md",
+    "참고문헌 생성: references/ref-127.md",
+    "참고문헌 생성: references/ref-128.md",
+    "참고문헌 생성: references/ref-129.md",
+    "참고문헌 생성: references/ref-130.md",
+    "참고문헌 생성: references/ref-131.md",
+    "참고문헌 생성: references/ref-132.md",
+    "참고문헌 생성: references/ref-133.md",
+    "참고문헌 생성: references/ref-134.md",
+    "참고문헌 생성: references/ref-135.md",
+    "참고문헌 생성: references/ref-136.md",
+    "참고문헌 생성: references/ref-137.md",
+    "용어집 '작업 지시' (Job Order (ISA-95)) 은 기존 페이지 glossary/isa-95.md 와 같은 용어로 보고 갱신했다(중복 생성 방지)",
+    "용어집 갱신: glossary/isa-95.md",
+    "용어집 생성: glossary/waveless-order-release.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 13,
+    "standards": 1,
+    "open_questions": 3,
+    "flow_cells": 8,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:20:32 KST",
+  "usage": {
+    "input_tokens": 76,
+    "cache_creation_input_tokens": 887432,
+    "cache_read_input_tokens": 6459778,
+    "output_tokens": 145209,
+    "cost_usd": 12.1968,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.5992,
+        "output_tokens": 31657,
+        "cache_read_input_tokens": 5197713,
+        "cache_creation_input_tokens": 167412
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.7017,
+        "output_tokens": 19058,
+        "cache_read_input_tokens": 963439,
+        "cache_creation_input_tokens": 232771
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 3.5141,
+        "output_tokens": 75570,
+        "cache_read_input_tokens": 126034,
+        "cache_creation_input_tokens": 247192
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.2971,
+        "output_tokens": 17932,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 238498
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-25-area01-s3.md",
+        "chars": 717
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 9,
+  "cross_checked_findings": 0
+}

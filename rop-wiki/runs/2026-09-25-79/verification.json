@@ -1,0 +1,269 @@
+{
+  "run_id": "2026-09-25-79",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw.githubusercontent.com 으로 LLM06_ExcessiveAgency.md 열람. 세 원인(excessive functionality·permissions·autonomy), 'require a human to approve high-impact actions before they are taken', 최소 권한, complete mediation 모두 원문에 있음. 발행일 2024-11 은 문서 내 표기 미확인(2025판 기준). 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: tools.mdx(2025-06-18) 열람. 'there SHOULD always be a human in the loop with the ability to deny tool invocations', 민감 작업 확인 프롬프트, 호출 전 입력 표시, 감사용 도구 사용 기록이 원문에 있음. 기준일 2025-06-18(명세 판)."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: human-in-the-loop.mdx 열람. approve·edit·reject·respond 네 결정 유형, interrupt_on 설정, 체크포인터 필수가 원문에 있음. 발행일 미확인(확인일 2026-09-25 기준). 용어는 용어집 '사람 참여 루프'로 맞출 것."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ltl_safety README 열람 — lang2ltl 기반 자연어→LTL, precond 모듈, VirtualHome·Spot 실험 확인. '위반 이유 설명·재프롬프트'는 README 에 없고 원문 미열람 논문(ref-698) 요약에 기댄다. ref-698·ref-699 은 같은 저자라 독립 교차 아님."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "README(ref-701) 열람: 의미 그래프·규칙집·후보 계획 입력, Clearpath Jackal 확인. 수치는 README 에 없고 arXiv 초록(원문 미열람, 검색 결과) 기준 '92% → 2.5% 미만'으로 표기되어 브리프의 '3% 미만'과 다름 — 초록 문구대로 고칠 것. 저자는 Ravichandran, Robey, Kumar, Pappas, Hassani(RA-L 2026-02 채택 표기)로 확인됨. ref-700·ref-701 는 같은 저자 쌍."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검색 결과 일치). arXiv 2503.06892 실재, 프롬프트 건전성·불변·전제·사후 조건 추론기로 지시·계획·배정 출력 검사, 유해 작업 수용 90.5% 감소(저자 보고) 확인. '621개' 수치는 검증 검색 스니펫에서 재확인하지 못함 — 미확인 표시 필요. 저자 미확인."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-71 승인·게시된 주장, ref-417). 원문 미열람. ISO 13482 는 개인 돌봄 로봇 표준이라 물류 적용 미확인 문구를 본문에 유지할 것."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-71, ref-711). 원문 미열람. 기존 게시 문장과 같은 주장이므로 기존 각주 ref-711 재사용."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(ref-356, 기존 게시). 원문 미열람 표시 유지. 확인일 2026-09-25 기준."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 텍스트 data/source_texts/ref-031.txt 의 6.1.2(base cannot be changed, 관제는 베이스 실행을 가정, 취소 절차도 unreliable)와 6.1.4.3(수행 불가 동작 주문은 버퍼에 넣지 않고 INVALID_ORDER_ACTION·WARNING 보고)과 일치. 로봇 쪽 거절은 연계 대상으로 서술할 것. 브리프 sources[] 는 fetched_via 를 github_raw 로, self_check 는 inbox 로 적어 불일치(verification_note 기록)."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(실행 2026-09-25-74 에서 원문 열람·게시된 주장, ref-656). 이번 실행 재열람 안 함."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: CHI2025 저장소 README 열람 — 248명, 위험도가 다른 6개 과제, 계획 품질·실행 단계 참여, 'users can easily mistrust the LLM agents with plans that seem plausible' 확인. README 표현은 신뢰의 잘못된 보정(mistrust)이므로 '잘못 신뢰'를 '그럴듯한 계획에 대한 신뢰가 잘못 보정됨'으로 옮길 것. '시뮬레이션 환경'은 README 에서 확인되지 않음. ref-713 논문 원문 미열람. 물류·로봇 조건 아님."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: arXiv 2604.04918(2026-04-06 공개) 실재는 검색 결과로 확인했으나(원문 미열람) '최종 공격 성공률이 상당히 남음', '보인 뒤 멈추게 하는 데 영향이 작음'은 검증 검색 스니펫에 나타나지 않고 브리프도 요약마다 다르다고 적음. 저자 미확인."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 검색 결과(원문 미열람)로 제14조 제4항 (b)호의 자동화 편향 인식 요구가 조문 게재본과 법학 논문(2502.10036) 양쪽에서 확인되어 교차 확인은 인정하나, 근거가 발행 기관(EU 공식 관보 EUR-Lex) 원문이 아닌 제3자 게재본이므로 규제 주장 규칙(4절 항목 12)에 따라 강등. 물류 배정 AI 의 고위험 해당 여부 미확인."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(국가법령정보센터 검색 결과 일치, 발행 기관 자료). 제34조 고영향 인공지능 사업자 책무에 위험관리방안·설명 방안·이용자 보호 방안·사람의 관리·감독이 포함됨을 검색 결과로 확인. 시행일 2026-01-22, 시행령 세부는 미확인. 고영향 해당 여부는 oq-105."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(ISCA 아카이브 검색 결과 일치). 저자는 Sagawa, H., Mitamura, T., & Nyberg, E. 로 확인 — 출처 기관 칸 정정 필요. INTERSPEECH 2004-ICSLP(2004-10). 결과 우열은 브리프가 넣지 않았으므로 그대로 둔다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(ref-418, 기존 게시). 벤더 문서, vendor_claim: true, [추정] 유지. WMS 제품 기능이라 ROP 연계 대상 사례로만 쓸 것."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "재인용(ref-350, 기존 게시 주장과 같은 문장). 기존 각주 재사용."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합([추정], low). 구성 요소 각각은 f1~f11·f18 로 뒷받침되나 다섯 겹을 제시한 단일 출처는 없음을 본문에 밝힐 것. f13 강등 반영(f19 근거에서 f13 은 쓰지 않음 확인)."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. VDA 5050 베이스 불변·취소 불신(ref-031 원문 확인), LangChain 체크포인터(ref-697 확인), 원자적 반영(ref-711)을 대응시킨 추론."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 근거 가운데 f13·f14 가 강등되었으므로 '보고·규정'을 사실처럼 단정하지 말고 추정 근거임을 밝힐 것. 근거 조건은 일상 비서·컴퓨터 사용 에이전트."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 영향이 큰 작업 예시(위험 구역 진입·적재 화물 취소·일괄 정지)는 출처가 없는 설명용 예시이므로 '이 위키가 든 예시'로 밝힐 것. Sagawa(f16) 결과 우열은 미확인."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 분류 원문 SCM 질문을 다루는 finding."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "설명용 가정 사례로 표시되어 있음. 수치 없음. 피킹 단계 시나리오."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 범위 관찰(부재 확인 아님) 문구 유지. 한국어 검색 3회."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f7·f8·f9·f11·f17·f18 은 이미 게시된 주장(아이디어 2 5절, 업무 분해·배정 설계 초안 6절)과 같다 — 기존 각주 ref-417·ref-711·ref-356·ref-656·ref-418·ref-350 재사용",
+      "개념 '사용자 확인' 제안은 초안 6절 '사용자 확인을 별도 개념으로 둘지, 배정의 속성(확인 여부)으로 둘지' 질문, 배정 속성 '확인 여부', 거부된 '검증 기록' 제안(실행 2026-09-25-71)과 겹친다",
+      "아이디어 2 5절 머리의 '확인 절차(단계 4)는 아직 조사되지 않았다' 문장은 이번 q4-01 답과 충돌하므로 실행 기준을 밝혀 갱신해야 한다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f5: RoboGuard 수치를 '92% 넘음 → 3% 미만'에서 arXiv 초록 문구대로 '92% → 2.5% 미만(저자 보고값, 원문 미열람)'으로 고친다 — 검증 검색 결과의 초록 요약이 2.5% 미만으로 적는다.",
+    "ref-700: 각주의 기관 칸을 'Ravichandran, Z., Robey, A., Kumar, V., Pappas, G. J., & Hassani, H.'로 고치고 'IEEE RA-L 2026 채택 표기'를 병기한다 — 검색 결과로 저자가 확인되었다.",
+    "ref-717: 각주의 기관 칸을 'Sagawa, H., Mitamura, T., & Nyberg, E. (INTERSPEECH 2004-ICSLP)'로 고친다 — 검색 결과로 저자가 확인되었다.",
+    "f6: SafePlan 의 '621개 지시 벤치마크'는 '(검증 미재확인)'을 붙이거나 빼고, 90.5% 는 저자 보고값·원문 미열람임을 병기한다 — 검증 검색 스니펫에서 621 을 재확인하지 못했다.",
+    "f13: [사실] → [추정]으로 강등하고 '저자 미확인, 원문 미열람, 조건별 수치 미확인'을 병기한다 — 주장 내용이 검색 결과에서 확인되지 않았다.",
+    "f14: [사실] → [추정]으로 강등하고 'EU 공식 관보(EUR-Lex) 원문 미확인, 제3자 조문 게재본·법학 논문 기준'을 병기한다 — 규제 주장의 근거가 발행 기관 자료가 아니다.",
+    "f12: '그럴듯해 보이는 계획을 쉽게 잘못 신뢰했다'를 '그럴듯해 보이는 계획에 대해 사용자의 신뢰가 잘못 보정되기 쉬웠다'로 재서술하고, 확인되지 않은 '시뮬레이션 환경' 표현은 뺀다 — README 는 'mistrust'라고만 적는다.",
+    "f21: 근거로 든 사람 승인 한계(f13)와 규정(f14)이 [추정]으로 강등되었음을 문장에 반영해 '보고·요구'를 단정하지 않는다.",
+    "f22: 영향이 큰 작업 예시 목록(위험 구역 진입·적재 화물 취소·일괄 정지)을 '이 위키가 든 설명용 예시(출처 없음)'로 밝힌다.",
+    "f19: '다섯 겹을 한 번에 제시한 단일 출처는 찾지 못했고 근거 조건이 가정·실험실 로봇·소프트웨어 에이전트·로봇 관제 규격'이라는 한계를 본문에 함께 적고, mermaid 흐름도는 직접 그린다.",
+    "f4·f5·f7: 로봇 쪽 안전 모듈·가드레일·보호 정지 같은 안전 기능 자체는 로봇·통합자 쪽 '연계 대상'으로 짧게 쓰고 ROP 는 작업·배정 수준의 제약 대조만 맡는 것으로 서술한다 — 분류 원문 9장 '로봇 자체 지능·제어' 경계.",
+    "f10: VDA 5050 로봇의 주문 거절은 로봇 쪽 기능(연계 대상)으로 쓰고, ROP 는 거절 오류를 받아 확인 절차의 마지막 결과로 처리하는 쪽만 서술한다.",
+    "f17: Mecalux 사례는 [추정]과 '벤더 주장'을 유지하고 상위 업무 시스템(WMS) 제품 기능인 연계 대상 사례로만 쓴다.",
+    "f7: SafeGate 의 판정 기준 ISO 13482 는 개인 돌봄 로봇 표준이라 물류 적용이 미확인임을 본문에 유지한다.",
+    "f3·용어: LangChain 'Human-in-the-Loop'는 용어집 표기 [사람 참여 루프(Human-in-the-Loop, HITL)](../../glossary/human-in-the-loop.md)로 맞추고, MCP 는 용어집 '모델 컨텍스트 프로토콜'로 링크한다.",
+    "용어집: glossary_candidates 3건(과도한 에이전시, 자동화 편향, 명시적 확인·암시적 확인)은 신규 등록하되 '자동화 편향' 정의에 EU AI Act 인용을 넣을 때는 f14 강등(원문 미확인)을 반영한다.",
+    "온톨로지: track.ontology_changes 의 개념 '사용자 확인 (Confirmation)' 추가는 반영하지 않고 업무 분해·배정 설계 초안 6절 미해결 모델링 질문('사용자 확인을 별도 개념으로 둘지 …' 항목)에 q4-01 답(f2·f3·f19·f20) 링크와 속성 후보(확인 대상·확인 방식·응답·확인자·시각·보여 준 입력 요약)를 질문으로 덧붙인다 — 배정 속성 '확인 여부'와 거부된 '검증 기록'과의 경계가 정해지지 않았고 결정 근거 f19 가 추정이다. 초안 버전은 v0.8 그대로 두고 초안 페이지는 6절 갱신만 한다.",
+    "아이디어 2 5절: '확인 절차(단계 4)는 아직 조사되지 않았다'는 머리 문장을 실행 기준과 함께 갱신하고, 새 소절 '오해석 방지 확인 절차'에 명령 권한(q4-03)·제한 운영 기준(q4-04)은 미조사임을 명시한다.",
+    "단계 4 페이지 6절: 완료 조건은 '미충족', '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-02~q4-12)'로 쓰고, 상태 줄의 단계 상태는 '진행 중'으로 둔다.",
+    "참고문헌: 각주 정의의 접근일 뒤에 원문을 열지 않은 출처(ref-698·ref-700·ref-702·ref-713~ref-717 과 재사용 ref-350·ref-356·ref-417·ref-418·ref-656·ref-711)에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-695·ref-696·ref-697·ref-699·ref-701·ref-703·ref-031 은 원문 열람으로 둔다.",
+    "세부영역 반영 제안 4건(13·18·26·27)은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 반영 제안으로만 남기며, 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스 양쪽 연결을 적는다.",
+    "신뢰도: 단계 4 페이지와 아이디어 소절의 q4-01 종합 신뢰도는 low 로 쓴다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(web_fetch_available: false, fetch_mode mirror_only)에서 검증됐다. 확인 24건, 미확인 1건(f13), 교차 확인 1건(f14). 강등: f13 사실 → 추정(주장 내용 검색 결과 미확인), f14 사실 → 추정(EU 공식 관보 원문이 아닌 제3자 게재본 근거). 원문 미열람 출처: ref-698, ref-700, ref-702, ref-713, ref-714, ref-715, ref-716, ref-620, ref-717, ref-350, ref-356, ref-417, ref-418, ref-656, ref-711(검증에서 raw 원문으로 재확인한 것은 ref-695·ref-696·ref-697·ref-699·ref-701·ref-703, ref-031 은 입력 원문 텍스트). 주의: q4-01 의 답인 다섯 겹 확인 절차·확인 시점·사람 확인 한정·차등 확인(f19~f24)은 이 위키의 종합([추정])이며 근거가 가정·실험실 로봇, 일상 비서·컴퓨터 사용 에이전트, 로봇 관제 규격 조건이고 물류 창고 로봇 채팅 지시의 확인 절차 평가 연구·국내 사례는 찾지 못했다. RoboGuard 수치는 초록 기준 92% → 2.5% 미만으로 정정한다. 브리프 sources[] 의 ref-031 fetched_via(github_raw)와 self_check(inbox) 표기가 어긋난다. 신규 id ref-695~ref-717 은 이전 실행 브리프가 다른 문서에 쓴 번호와 겹치므로 퍼블리셔의 URL 기준 병합을 확인해야 한다. 이번 실행은 단계 3 완료가 승인되지 않은 상태에서 CLI 지정으로 단계 4 질문을 다뤘다. 검증 검색 6회(리서치 18회와 합쳐 24/40). 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 개념 '사용자 확인 (Confirmation)'(f2·f3·f16·f19) — 배정 속성 '확인 여부'·거부된 '검증 기록'과 경계 미정, 결정 근거가 추정이라 초안 6절 질문으로 둔다. 단계 완료 조건: 미충족(부족: 명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 확인 절차 초안이 초안 6절·아이디어 2 5절에 아직 반영 전). 단계 전환: 미승인(막힌 질문 q4-02~q4-12 열림, q4-09·q4-10 중복 정리 필요).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": false,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

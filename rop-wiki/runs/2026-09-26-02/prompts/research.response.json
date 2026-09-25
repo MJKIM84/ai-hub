@@ -1,0 +1,1070 @@
+{
+  "duration_api_ms": 347471,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.163355999999999,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 334725,
+    "cache_read_input_tokens": 2431420,
+    "output_tokens": 28354,
+    "output_tokens_details": {
+      "thinking_tokens": 8614
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 334725,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 23197,
+        "cache_read_input_tokens": 405090,
+        "cache_creation_input_tokens": 3469,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3469
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 28354,
+      "cacheReadInputTokens": 2431420,
+      "cacheCreationInputTokens": 334725,
+      "webSearchRequests": 0,
+      "costUSD": 3.73122,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8614,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 199781,
+      "outputTokens": 8471,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 19,
+      "costUSD": 0.4321360000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 24,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-26-02\",\"date\":\"2026-09-26\",\"run_type\":\"monthly_recheck\",\"target\":{\"area_no\":null,\"area_name\":null,\"category\":null},\"gaps\":[\"target.json 이 재검증 대상 목록을 주지 않아(CLI 지정 monthly_recheck) 참고문헌 목록에서 발행 2년이 지난 표준·규정을 골라 재검증 대상으로 삼음\",\"ref-022 VDA 5050 2.0.0(2022-01): 3.0.0 판과의 관계 재확인 필요\",\"ref-139 ISO 22400-2:2014: 개정(Amd)·후속판 여부 미기록(4. 성과·경제성·프로세스 개선 7절 인용)\",\"ref-568 KS B ISO/TS 15066·ref-211 KS B ISO 10218-2: ISO 10218-2:2025 통합 이후 상태 미기록\",\"ref-470 ISO 3691-4:2023, ref-566 ISO 12100:2010: 개정 진행 여부 미기록\",\"ref-486 ISO 22301:2019: 개정 1:2024 내용 미기록\",\"ref-030 W3C SSN(2017): 2023 Edition 초안 존재 여부 미기록\",\"ref-345 실내공간정보 구축 작업규정(2018)과 ref-679(2021 고시)의 판 관계 미정리\",\"ref-637 산업 디지털 전환 촉진법 제명 변경(oq-122) 미확인\",\"ref-509 ISO 20607:2019·ref-510 IEC/IEEE 82079-1:2019 개정 진행 여부 미기록\"],\"research_questions\":[\"재검증 대상 ref-022 VDA 5050 2.0.0(2022-01): 현행판 여부\",\"재검증 대상 ref-139 ISO 22400-2:2014: 개정·후속판 여부(4. 성과·경제성·프로세스 개선 인용)\",\"재검증 대상 ref-568 KS B ISO/TS 15066(ISO/TS 15066:2016 부합)·ref-211 KS B ISO 10218-2: ISO 10218-2:2025 발행 뒤 상태\",\"재검증 대상 ref-470 ISO 3691-4:2023: 개정 진행 여부\",\"재검증 대상 ref-566 ISO 12100:2010: 개정 진행 여부\",\"재검증 대상 ref-486 ISO 22301:2019: 개정 1:2024 반영\",\"재검증 대상 ref-502 BPMN 2.0.2(2014-01)·ref-119 IEC 62264-3:2016: 현행판 여부(2. 공정·워크플로 모델링 인용)\",\"재검증 대상 ref-767 IEC 62443-3-3:2013: 현행판 여부\",\"재검증 대상 ref-030 W3C SSN(2017-10-19): 후속판 여부\",\"재검증 대상 ref-345 실내공간정보 구축 작업규정(2018-03-05): 현행 고시 여부\",\"재검증 대상 ref-314 KS B 7317(2021-11): 개정 여부\",\"재검증 대상 ref-637 산업 디지털 전환 촉진법(2022-01-04): 제명 변경·시행 여부(oq-122)\",\"재검증 대상 ref-509 ISO 20607:2019·ref-510 IEC/IEEE 82079-1:2019: 개정 진행 여부\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"VDA 5050 공식 저장소 main 브랜치의 최신 게시판은 3.0.0 이므로, ref-022 가 가리키는 VDA 5050 2.0.0(2022-01)은 현행판이 아니라 이전 판으로 대체됨 상태다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-052\",\"ref-032\",\"ref-022\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README 원문(github_raw): \\\"The main branch contains the latest published version of VDA 5050 (currently version 3.0.0)\\\". 향후 3.0.1·3.1.0·4.0.0 계획도 언급. 3.0 발행 보도자료는 ref-032(같은 VDA 계열로 독립 출처 아님). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"ISO 22400-2:2014 에는 에너지 관리용 KPI 를 더한 개정 1(ISO 22400-2:2014/Amd 1:2017)이 2017-04 에 발행돼 있어, 4. 성과·경제성·프로세스 개선이 인용하는 ISO 22400-2:2014 는 개정 1과 함께 읽어야 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-812\",\"ref-139\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: Amendment 1: Key performance indicators for energy management, Published 2017-04, stage 60.60. 원문 미열람.\",\"as_of\":\"2017-04\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"ISO 22400-2 는 개정판 ISO/DIS 22400-2 가 진행 중이며 2024-09-17 FDIS 등록이 승인돼 ISO 22400-2:2014 를 대체할 예정으로 표시돼 있으나, 새 판의 발행은 이번 실행에서 확인하지 못했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-811\",\"ref-139\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: ISO/DIS 22400-2 is expected to replace ISO 22400-2:2014; DIS approved for registration as FDIS on 2024-09-17. 원문 미열람, 발행 여부 미확인.\",\"as_of\":\"2024-09-17\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"ISO/TS 15066:2016 의 협동 적용 요구사항 대부분은 협동이 로봇 단독이 아닌 적용의 문제라는 이유로 ISO 10218-2:2025 에 통합되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-471\",\"ref-560\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: most of the requirements of ISO/TS 15066 have been incorporated into ISO 10218-2:2025 because human-robot collaboration relates to the application. A3 FAQ 원문 미열람.\",\"as_of\":\"2025-02\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"ISO 목록에서 ISO/TS 15066:2016 은 폐지되지 않고 2022 년 확인된 판으로 남아 있으며, 이를 대체할 ISO/AWI 15066-1(Collaborative Safety)이 개발 초기 단계에 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-814\",\"ref-813\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: ISO/TS 15066:2016 last reviewed and confirmed in 2022 … not withdrawn; ISO/AWI 15066-1 in development that will replace it. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f6\",\"claim\":\"국가표준 목록에서 KS B ISO 10218-2 는 '2017 확인', KS B ISO/TS 15066 은 '2022 확인' 판으로 검색되고 ISO 10218-2:2025 를 부합화한 KS 는 이번 검색에서 확인되지 않아, 국내 KS 는 아직 구판(ISO 10218-2:2011·ISO/TS 15066:2016) 기준일 가능성이 있다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-825\",\"ref-568\",\"ref-211\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 결과 제목: 'KS B ISO 10218-2(2017 확인) … 제2부: 로봇 시스템 및 통합', 'KS B ISO TS 15066(2022 확인)'. 부재 확인이 아니라 검색 범위 내 미발견.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f7\",\"claim\":\"ISO 3691-4 는 2023 판이 현행이지만 차기판(ISO/CD 3691-4, 제2판 초안)이 위원회 검토 단계에 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-819\",\"ref-470\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: ISO/CD 3691-4 Industrial trucks — … Part 4 (iso.org/standard/88615); ISO 3691-4:2023 is expected to be replaced; a draft is being reviewed by the committee. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f8\",\"claim\":\"ISO 12100:2010 은 개정이 진행 중이며, 독일 DIN 이 개정 초안(DIN EN ISO 12100, 2025-01, ISO/DIS 12100:2024 기반)을 게시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-820\",\"ref-566\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: DIN EN ISO 12100 - 2025-01 draft standard; revision titled 'Safety of machinery … (ISO/DIS 12100:2024)'. 원문 미열람.\",\"as_of\":\"2025-01\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"ISO 12100 개정판은 2026 년 FDIS 단계 도달이 예상되며 2027-01-20 부터 적용되는 EU 기계 규정 2023/1230 에 맞춰 EN ISO 문안을 정렬하는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-821\",\"ref-555\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약(업계 블로그): ISO/DIS 12100 Ed.2 in second enquiry … could reach FDIS in 2026; ISO/TC 199 and CEN/TC 114 under Vienna Agreement to align with Machinery Regulation applying 20 January 2027. 원문 미열람.\",\"as_of\":\"2025-12-11\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f10\",\"claim\":\"ISO 22301:2019 에는 2024-02 발행된 개정 1(기후 행동 변경)이 있어, 조직 상황(4.1)과 이해관계자(4.2) 조항에서 기후 변화의 관련성 검토를 요구한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-822\",\"ref-486\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: ISO 22301:2019/Amd 1:2024 Climate action changes, published February 2024; modifies Clause 4.1 and 4.2. 원문 미열람.\",\"as_of\":\"2024-02\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f11\",\"claim\":\"OMG BPMN 은 2014-01 발행된 2.0.2 판이 여전히 최신판으로 보이며, 이번 검색에서 그 뒤의 새 판은 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-502\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: The latest version is BPMN 2.0.2, published in January 2014; OMG 이슈 트래커에 2.0.2 대상 이슈가 2025-08 까지 있으나 BPMN 2.1 발행 정보 없음. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f12\",\"claim\":\"IEC 62264-3 은 2016 발행 제2판이 최신으로 검색되며, 이번 실행에서 그 뒤의 새 판은 확인되지 않아 2. 공정·워크플로 모델링의 인용은 유효한 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-119\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: IEC 62264-3:2016 second edition cancels and replaces the 2007 first edition; 후속판 개발 정보는 검색 결과에서 확인되지 않음. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f13\",\"claim\":\"IEC 62443-3-3 은 2013-08 발행 제1판이 현행으로 검색되며, 개정판 진행 상태는 이번 실행에서 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-767\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약: IEC 62443-3-3 currently exists as Edition 1.0, published in August 2013; Edition 2 초안 상태 정보 없음. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f14\",\"claim\":\"W3C 는 SSN 온톨로지의 후속판 'Semantic Sensor Network Ontology - 2023 Edition' 을 공개 작업 초안(Working Draft)으로 냈고 아직 권고안이 아니므로, 현행 권고안은 ref-030 의 2017 판이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-817\",\"ref-818\",\"ref-030\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"작업반 저장소 README 원문(github_raw): 2023 edition 은 Public Working Draft 로 표시. W3C 뉴스: First Public Working Draft … inappropriate to cite this document as other than a work in progress. 두 출처 모두 W3C 계열.\",\"as_of\":\"2025\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"IEC/IEEE 82079-1 은 2019 판(제2판)이 현행이며 차기판이 위원회 초안(IEC/IEEE CD 82079-1) 단계에 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-823\",\"ref-510\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약: IEC/IEEE CD 82079-1 (iso.org/standard/87206); a draft is being reviewed by the committee for a new edition; 2019 Ed.2 가 최신 판매판. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f16\",\"claim\":\"ISO 20607:2019 는 디지털 사용 설명서를 반영하는 개정(ISO/DIS 20607)이 진행돼 2025-05-03 국제 투표가 끝났고 EN 채택 기한이 2026-01-20 으로 알려졌으나, 새 판 발행은 이번 실행에서 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-824\",\"ref-509\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약(업계 뉴스): ISO/DIS 20607 … Close of Voting … ended on 3 May 2025; deadline for adoption by CEN/CENELEC 20 January 2026; 개정 초점은 디지털 사용 설명서. 원문 미열람.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f17\",\"claim\":\"ref-345 는 실내공간정보 구축 작업규정의 2018-03-05 판을 가리키고, 같은 규정의 고시 제2021-1445호(2021-12-24) 판이 ref-679 로 따로 등록돼 있어 ref-345 는 구판이며, 2021 판 이후 개정 고시는 이번 검색에서 확인되지 않았다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-345\",\"ref-679\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"참고문헌 목록 대조: ref-345 발행 2018-03-05, ref-679 '고시 제2021-1445호, 2021-12-24'. 검색 결과에서도 법령정보센터 최신 경로가 (2021-1445,20211224). 원문 미열람.\",\"as_of\":\"2021-12-24\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"KS B 7317(2021-11 제정)은 이번 검색에서 개정 기록이 확인되지 않았고 현행 표준으로 검색된다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-314\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 결과: KSSN 표준 상세 페이지(K001010135682)가 같은 제목으로 검색되고, 2026 년 기사들이 이 표준에 따른 엘리베이터 탑승 로봇 안전성 평가를 언급. 개정 여부는 원문 미열람으로 미확인.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f19\",\"claim\":\"국가법령정보센터에 '산업 디지털 전환 및 인공지능 활용 촉진법' 제명의 법령 제정·개정문 페이지가 존재해, ref-637 이 가리키는 산업 디지털 전환 촉진법의 제명이 바뀐 것으로 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-815\",\"ref-637\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 결과 제목: '법령 > 제정·개정문 > 산업 디지털 전환 및 인공지능 활용 촉진법 | 국가법령정보센터'(lsiSeq=281883). 원문 미열람, 조문 내용 미확인.\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f20\",\"claim\":\"제명이 바뀐 '산업 디지털 전환 및 인공지능 활용 촉진법' 은 2026-07-01 부터 시행된 것으로 보도됐으나, 데이터 공동 생성 규정의 조문 번호·내용 변화는 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-816\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사 검색 요약: 「산업 디지털 전환 및 인공지능 활용 촉진법」은 2026년 7월 1일부터 시행; 기존 산업 디지털 전환 촉진법을 개정해 AI 활용을 포함. 원문 미열람. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-26\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true}],\"sources\":[{\"id\":\"ref-022\",\"org\":\"VDA(Verband der Automobilindustrie)\",\"title\":\"VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control\",\"published\":\"2022-01\",\"url\":\"https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 재검증 대상: VDA 5050 2.0.0 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-032\",\"org\":\"VDA(Verband der Automobilindustrie)\",\"title\":\"Version 3.0 of VDA 5050 released\",\"published\":\"2026-04\",\"url\":\"https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. VDA 5050 3.0 발행 보도자료.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-052\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — README.md\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/README.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-26\",\"summary\":\"공식 저장소 README. main 브랜치가 최신 게시판(현재 3.0.0)이라고 밝히고 향후 판 계획을 적는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/README.md\"},{\"id\":\"ref-139\",\"org\":\"ISO\",\"title\":\"ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions\",\"published\":\"2014\",\"url\":\"https://www.iso.org/standard/54497.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 재검증 대상: 제조 운영 관리 KPI 정의 표준 2014 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-811\",\"org\":\"ISO\",\"title\":\"ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions\",\"published\":null,\"url\":\"https://www.iso.org/standard/87563.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 22400-2 개정판 프로젝트 페이지. 검색 요약상 2024-09-17 FDIS 등록 승인, 2014 판 대체 예정.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-812\",\"org\":\"ISO\",\"title\":\"ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management\",\"published\":\"2017-04\",\"url\":\"https://www.iso.org/standard/68295.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 22400-2:2014 의 에너지 관리 KPI 개정 1.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-471\",\"org\":\"A3(Association for Advancing Automation)\",\"title\":\"Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs)\",\"published\":null,\"url\":\"https://www.automate.org/robotics/blogs/updated-iso-10218-faq\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 10218:2025 개정 FAQ, ISO/TS 15066 요구사항의 10218-2 통합 설명.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-560\",\"org\":\"ISO\",\"title\":\"ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells\",\"published\":\"2025-02\",\"url\":\"https://www.iso.org/standard/73934.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 산업용 로봇 적용·셀 안전 요구 2025 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-813\",\"org\":\"ISO\",\"title\":\"ISO/AWI 15066-1 - Collaborative Safety\",\"published\":null,\"url\":\"https://www.iso.org/standard/91522.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO/TS 15066:2016 을 대체할 협동 안전 표준의 예비 작업 항목(AWI).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-814\",\"org\":\"ISO\",\"title\":\"ISO/TS 15066:2016 - Robots and robotic devices — Collaborative robots\",\"published\":\"2016\",\"url\":\"https://www.iso.org/standard/62996.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 협동로봇 기술 사양. 검색 요약상 2022 확인, 폐지되지 않음.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-825\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B ISO 10218-2(2017 확인) 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010116494\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. KS B ISO 10218-2 의 2017 확인 판 상세 페이지.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-568\",\"org\":\"한국표준정보망(KSSN, 국가기술표준원)\",\"title\":\"KS B ISO/TS 15066 로봇 및 로봇 장치 - 협동로봇 (2022-10-12 확인판 있음)\",\"published\":\"2017-02-28\",\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010113282\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO/TS 15066 부합 KS.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-211\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010083660\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 10218-2 부합 KS.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-470\",\"org\":\"ISO\",\"title\":\"ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems\",\"published\":\"2023-06\",\"url\":\"https://www.iso.org/standard/83545.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 무인 산업용 트럭 안전 요구 2023 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-819\",\"org\":\"ISO\",\"title\":\"ISO/CD 3691-4 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems\",\"published\":null,\"url\":\"https://www.iso.org/standard/88615.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 3691-4 차기판 위원회 초안 프로젝트 페이지.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-566\",\"org\":\"CEN (iTeh Standards 카탈로그)\",\"title\":\"EN ISO 12100:2010 - Safety of machinery - General principles for design - Risk assessment and risk reduction\",\"published\":\"2010\",\"url\":\"https://standards.iteh.ai/catalog/standards/cen/74a41162-9d84-4410-a8a3-606630770ab9/en-iso-12100-2010\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 재검증 대상: 위험성평가 기본 표준 2010 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-820\",\"org\":\"DIN Media\",\"title\":\"DIN EN ISO 12100 - 2025-01 (Draft standard)\",\"published\":\"2025-01\",\"url\":\"https://www.dinmedia.de/en/draft-standard/din-en-iso-12100/386233502\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO/DIS 12100:2024 기반 EN ISO 12100 개정 초안의 독일 게시본.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-821\",\"org\":\"Intertek\",\"title\":\"Machines Got Smarter, Now ISO 12100 has to Catch Up\",\"published\":\"2025-12-11\",\"url\":\"https://www.intertek.com/blog/2025/12-11-machines-and-iso-12100/\",\"type\":\"업계 보고서\",\"reliability\":\"low\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 12100 개정 진행과 EU 기계 규정 정렬을 설명하는 시험인증기관 블로그.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-555\",\"org\":\"European Union (EUR-Lex)\",\"title\":\"Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery\",\"published\":\"2023-06\",\"url\":\"https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. EU 기계 규정.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-486\",\"org\":\"ISO\",\"title\":\"ISO 22301:2019 - Security and resilience — Business continuity management systems — Requirements\",\"published\":\"2019\",\"url\":\"https://www.iso.org/standard/75106.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 업무 연속성 관리 시스템 요구사항.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-822\",\"org\":\"ISO\",\"title\":\"ISO 22301:2019/Amd 1:2024 - Security and resilience — Business continuity management systems — Requirements — Amendment 1: Climate action changes\",\"published\":\"2024-02\",\"url\":\"https://www.iso.org/standard/88412.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO 22301 기후 행동 개정 1, 4.1·4.2 조항 수정.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-502\",\"org\":\"OMG(Object Management Group)\",\"title\":\"Business Process Model and Notation (BPMN), Version 2.0.2\",\"published\":\"2014-01\",\"url\":\"https://www.omg.org/spec/BPMN/2.0.2/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. BPMN 2.0.2 명세.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-119\",\"org\":\"IEC / ISO\",\"title\":\"IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management\",\"published\":\"2016\",\"url\":\"https://www.iso.org/standard/67480.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 제조 운영 관리 활동 모델 제2판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-767\",\"org\":\"IEC\",\"title\":\"IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels\",\"published\":\"2013-08\",\"url\":\"https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 시스템 보안 요구사항과 보안 수준 제1판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-030\",\"org\":\"W3C / OGC\",\"title\":\"Semantic Sensor Network Ontology\",\"published\":\"2017-10-19\",\"url\":\"https://www.w3.org/TR/vocab-ssn/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. SSN/SOSA 2017 권고안.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-817\",\"org\":\"W3C\",\"title\":\"First Public Working Draft: Semantic Sensor Network Ontology - 2023 Edition\",\"published\":\"2025\",\"url\":\"https://www.w3.org/news/2025/first-public-working-draft-semantic-sensor-network-ontology-2023-edition/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. SSN 2023 Edition 첫 공개 작업 초안 발행 공지.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-818\",\"org\":\"W3C Spatial Data on the Web WG (w3c/sdw-sosa-ssn GitHub)\",\"title\":\"sdw-sosa-ssn — README (Repository of the Spatial Data on the Web Working Group for the SOSA/SSN vocabulary)\",\"published\":null,\"url\":\"https://github.com/w3c/sdw-sosa-ssn\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-26\",\"summary\":\"작업반 저장소 README. SSN 2023 Edition 을 편집자 초안·공개 작업 초안 상태로 안내하며 2017 판과의 변경 목록은 싣지 않는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/w3c/sdw-sosa-ssn/gh-pages/README.md\"},{\"id\":\"ref-510\",\"org\":\"IEC / IEEE / ISO\",\"title\":\"IEC/IEEE 82079-1:2019 - Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements\",\"published\":\"2019\",\"url\":\"https://www.iso.org/standard/71620.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 제품 사용 정보 작성 원칙 2019 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-823\",\"org\":\"IEC / IEEE / ISO\",\"title\":\"IEC/IEEE CD 82079-1 - Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements\",\"published\":null,\"url\":\"https://www.iso.org/standard/87206.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. IEC/IEEE 82079-1 차기판 위원회 초안 프로젝트 페이지.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-509\",\"org\":\"ISO\",\"title\":\"ISO 20607:2019 - Safety of machinery — Instruction handbook — General drafting principles\",\"published\":\"2019\",\"url\":\"https://www.iso.org/standard/68519.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 기계 설명서 작성 원칙 2019 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-824\",\"org\":\"IBF Solutions\",\"title\":\"New EN ISO 20607 – Instruction handbook for machinery\",\"published\":null,\"url\":\"https://www.ibf-solutions.com/en/seminars-and-news/news/new-en-iso-20607-instruction-handbook-for-machinery\",\"type\":\"업계 보고서\",\"reliability\":\"low\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. ISO/DIS 20607 개정 진행(투표 종료 2025-05-03, EN 채택 기한 2026-01-20)을 전하는 기계 안전 컨설팅사 뉴스.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-345\",\"org\":\"국토교통부(법제처 국가법령정보센터)\",\"title\":\"실내공간정보 구축 작업규정\",\"published\":\"2018-03-05\",\"url\":\"https://law.go.kr/admRulLsInfoP.do?admRulSeq=2100000116559\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 실내공간정보 구축 작업규정 2018 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-679\",\"org\":\"국토교통부(법제처 국가법령정보센터)\",\"title\":\"실내공간정보구축작업규정 (고시 제2021-1445호, 2021-12-24)\",\"published\":\"2021-12-24\",\"url\":\"https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EC%8B%A4%EB%82%B4%EA%B3%B5%EA%B0%84%EC%A0%95%EB%B3%B4%EA%B5%AC%EC%B6%95%EC%9E%91%EC%97%85%EA%B7%9C%EC%A0%95/(2021-1445,20211224)\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 실내공간정보 구축 작업규정 2021 고시 판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-314\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법\",\"published\":\"2021-11\",\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010135682\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 이동 로봇 엘리베이터 탑승 안전 KS.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-637\",\"org\":\"국가법령정보센터(산업통상자원부)\",\"title\":\"산업 디지털 전환 촉진법 (법률 제18692호)\",\"published\":\"2022-01-04\",\"url\":\"https://www.law.go.kr/법령/산업디지털전환촉진법/(18692,20220104)\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 산업 디지털 전환 촉진법 제정판.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-815\",\"org\":\"국가법령정보센터\",\"title\":\"법령 > 제정·개정문 > 산업 디지털 전환 및 인공지능 활용 촉진법\",\"published\":null,\"url\":\"https://law.go.kr/lsInfoP.do?lsiSeq=281883&viewCls=lsRvsDocInfoR\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 제명이 바뀐 산업 디지털 전환 및 인공지능 활용 촉진법의 제정·개정문 페이지(검색 결과 제목·URL 로 존재 확인).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-816\",\"org\":\"폴리뉴스\",\"title\":\"[입법이 산업을 바꾼다] 공장이 AI를 쓰기 시작했다…'산업 AI법' 시행이 제조업을 바꾼다\",\"published\":null,\"url\":\"https://www.polinews.co.kr/news/articleView.html?idxno=743929\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-26\",\"summary\":\"원문 미열람. 산업 디지털 전환 및 인공지능 활용 촉진법이 2026-07-01 시행됐다고 전하는 기사.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md\",\"sections\":[\"4\",\"7\"],\"rationale\":\"needs_update 제안 (f2·f3): ISO 22400-2:2014 인용에 개정 1:2017(에너지 관리 KPI, ref-812)과 진행 중인 개정판 ISO/DIS 22400-2(2024-09-17 FDIS 등록 승인, ref-811)를 병기하고 기준일을 갱신한다. 4·7절은 주제 페이지로 분리돼 있으므로 해당 주제 페이지(2026-09-25-area04-s4, 2026-09-25-area04-s7)와 표준 목록의 ISO 22400-2 항목도 함께 고친다. 다음 실행 후보: 2. 공정·워크플로 모델링의 BPMN 2.0.2(f11)·IEC 62264-3:2016(f12)은 유효로 판정해 수정 불필요.\"},{\"action\":\"update\",\"path\":\"docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md\",\"sections\":[\"7\"],\"rationale\":\"needs_update 제안 (f4·f5·f6·f7·f8·f9): ISO/TS 15066 요구사항의 ISO 10218-2:2025 통합과 ISO/AWI 15066-1 개발, KS B ISO/TS 15066·KS B ISO 10218-2 의 구판 기준 가능성, ISO 3691-4 차기판(CD)·ISO 12100 개정 초안 진행을 반영. 다음 실행 후보: ref-022 needs_update(3.0.0 으로 대체됨, f1), ref-345 deprecated 제안(대체 출처: ref-679, f17), ref-637 needs_update(제명 변경 f19·f20, 28. 표준·상호운용성·다사업자 거버넌스 표기 재확인), ref-030 SSN 에 2023 Edition 초안 병기(f14, 5. 로봇 능력·작업 온톨로지와 트랙 manual-capability-ontology 비교표), ref-486 에 개정 1:2024 병기(f10, 20. 예외 복구·재계획·업무 연속성), ref-509·ref-510 개정 진행 병기(f15·f16, 트랙 매뉴얼 문서 유형), ref-767 IEC 62443-3-3·ref-314 KS B 7317 유효(f13·f18).\"}],\"glossary_candidates\":[],\"open_questions_new\":[\"ISO 10218-2:2025 발행 뒤 국내 KS B ISO 10218-2 와 KS B ISO/TS 15066 은 새 판으로 부합 개정되었거나 개정 예고되었는가, 국내 협동로봇 설치 작업장 안전인증은 어느 판을 기준으로 하는가? | 관련 영역: 25. 안전·위험 관리, 18. 사람–로봇 협업·운영 인터페이스 | 근거: f6 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":38,\"cross_checked_count\":0,\"unverified\":[\"f3 ISO 22400-2 개정판의 발행 여부 미확인(FDIS 등록 승인까지만)\",\"f6 KS B ISO 10218-2·KS B ISO/TS 15066 의 2025 판 부합 여부 미확인(검색 범위 내 미발견)\",\"f9 ISO 12100 FDIS 시점은 업계 블로그 요약뿐\",\"f13 IEC 62443-3-3 개정판 진행 상태 미확인\",\"f16 ISO 20607 새 판 발행 여부 미확인\",\"f18 KS B 7317 개정 여부 미확인\",\"f20 산업 디지털 전환 및 인공지능 활용 촉진법 시행일은 기사 1건뿐, 데이터 공동 생성 조문 번호·내용 미확인(oq-122 부분 답)\",\"MassRobotics AMR 상호운용 표준(ref-033) 판 정보는 공식 저장소 README 에 없어 재검증하지 못함\"],\"scope_violations\":[],\"budget_used\":{\"queries\":20,\"sources\":15},\"limits\":\"월간 재검증: target.json 이 재검증 대상을 지정하지 않아 참고문헌 목록에서 발행 2년이 지난 표준·규정 중 세부영역 페이지 인용과 연관된 것을 골랐다(전수 재검증 아님). web_fetch_available: false · fetch_mode mirror_only 로 github_raw 원문은 2건(ref-052 VDA 5050 README, ref-818 SOSA/SSN 작업반 README)만 열었고 나머지는 검색 결과 요약 범위만 사용해 신뢰도 상한 medium. 교차 확인 0건(같은 발행 기관 계열 출처뿐이거나 단일 출처). 판정 요약: 대체됨 — ref-022(3.0.0), ref-345(2021 고시 ref-679); 개정·후속 진행 — ref-139(Amd1·DIS), ref-568(10218-2:2025 통합·AWI 15066-1), ref-470(CD), ref-566(DIS), ref-486(Amd1:2024), ref-030(2023 Edition WD), ref-509·ref-510(DIS·CD), ref-637(제명 변경); 유효 — ref-502, ref-119, ref-767, ref-314(모두 추정 수준). oq-122 는 제명 변경·시행은 확인했으나 조문 변화가 미확인이라 해결로 올리지 않았다. 페이지 제안은 갱신 상한 2건에 맞추고 나머지는 rationale 에 다음 실행 후보로 남겼다. 입력의 대상 세부영역 페이지는 1~4번만 주어져 25. 안전·위험 관리 등 나머지 페이지의 인용 문장은 직접 대조하지 못했다. 신규 출처 15건(ref-811~ref-825) 상한 도달.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-26-02",
+    "date": "2026-09-26",
+    "run_type": "monthly_recheck",
+    "target": {
+      "area_no": null,
+      "area_name": null,
+      "category": null
+    },
+    "gaps": [
+      "target.json 이 재검증 대상 목록을 주지 않아(CLI 지정 monthly_recheck) 참고문헌 목록에서 발행 2년이 지난 표준·규정을 골라 재검증 대상으로 삼음",
+      "ref-022 VDA 5050 2.0.0(2022-01): 3.0.0 판과의 관계 재확인 필요",
+      "ref-139 ISO 22400-2:2014: 개정(Amd)·후속판 여부 미기록(4. 성과·경제성·프로세스 개선 7절 인용)",
+      "ref-568 KS B ISO/TS 15066·ref-211 KS B ISO 10218-2: ISO 10218-2:2025 통합 이후 상태 미기록",
+      "ref-470 ISO 3691-4:2023, ref-566 ISO 12100:2010: 개정 진행 여부 미기록",
+      "ref-486 ISO 22301:2019: 개정 1:2024 내용 미기록",
+      "ref-030 W3C SSN(2017): 2023 Edition 초안 존재 여부 미기록",
+      "ref-345 실내공간정보 구축 작업규정(2018)과 ref-679(2021 고시)의 판 관계 미정리",
+      "ref-637 산업 디지털 전환 촉진법 제명 변경(oq-122) 미확인",
+      "ref-509 ISO 20607:2019·ref-510 IEC/IEEE 82079-1:2019 개정 진행 여부 미기록"
+    ],
+    "research_questions": [
+      "재검증 대상 ref-022 VDA 5050 2.0.0(2022-01): 현행판 여부",
+      "재검증 대상 ref-139 ISO 22400-2:2014: 개정·후속판 여부(4. 성과·경제성·프로세스 개선 인용)",
+      "재검증 대상 ref-568 KS B ISO/TS 15066(ISO/TS 15066:2016 부합)·ref-211 KS B ISO 10218-2: ISO 10218-2:2025 발행 뒤 상태",
+      "재검증 대상 ref-470 ISO 3691-4:2023: 개정 진행 여부",
+      "재검증 대상 ref-566 ISO 12100:2010: 개정 진행 여부",
+      "재검증 대상 ref-486 ISO 22301:2019: 개정 1:2024 반영",
+      "재검증 대상 ref-502 BPMN 2.0.2(2014-01)·ref-119 IEC 62264-3:2016: 현행판 여부(2. 공정·워크플로 모델링 인용)",
+      "재검증 대상 ref-767 IEC 62443-3-3:2013: 현행판 여부",
+      "재검증 대상 ref-030 W3C SSN(2017-10-19): 후속판 여부",
+      "재검증 대상 ref-345 실내공간정보 구축 작업규정(2018-03-05): 현행 고시 여부",
+      "재검증 대상 ref-314 KS B 7317(2021-11): 개정 여부",
+      "재검증 대상 ref-637 산업 디지털 전환 촉진법(2022-01-04): 제명 변경·시행 여부(oq-122)",
+      "재검증 대상 ref-509 ISO 20607:2019·ref-510 IEC/IEEE 82079-1:2019: 개정 진행 여부"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "VDA 5050 공식 저장소 main 브랜치의 최신 게시판은 3.0.0 이므로, ref-022 가 가리키는 VDA 5050 2.0.0(2022-01)은 현행판이 아니라 이전 판으로 대체됨 상태다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-052",
+          "ref-032",
+          "ref-022"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README 원문(github_raw): \"The main branch contains the latest published version of VDA 5050 (currently version 3.0.0)\". 향후 3.0.1·3.1.0·4.0.0 계획도 언급. 3.0 발행 보도자료는 ref-032(같은 VDA 계열로 독립 출처 아님). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "ISO 22400-2:2014 에는 에너지 관리용 KPI 를 더한 개정 1(ISO 22400-2:2014/Amd 1:2017)이 2017-04 에 발행돼 있어, 4. 성과·경제성·프로세스 개선이 인용하는 ISO 22400-2:2014 는 개정 1과 함께 읽어야 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-812",
+          "ref-139"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: Amendment 1: Key performance indicators for energy management, Published 2017-04, stage 60.60. 원문 미열람.",
+        "as_of": "2017-04",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "ISO 22400-2 는 개정판 ISO/DIS 22400-2 가 진행 중이며 2024-09-17 FDIS 등록이 승인돼 ISO 22400-2:2014 를 대체할 예정으로 표시돼 있으나, 새 판의 발행은 이번 실행에서 확인하지 못했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-811",
+          "ref-139"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: ISO/DIS 22400-2 is expected to replace ISO 22400-2:2014; DIS approved for registration as FDIS on 2024-09-17. 원문 미열람, 발행 여부 미확인.",
+        "as_of": "2024-09-17",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "ISO/TS 15066:2016 의 협동 적용 요구사항 대부분은 협동이 로봇 단독이 아닌 적용의 문제라는 이유로 ISO 10218-2:2025 에 통합되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-471",
+          "ref-560"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: most of the requirements of ISO/TS 15066 have been incorporated into ISO 10218-2:2025 because human-robot collaboration relates to the application. A3 FAQ 원문 미열람.",
+        "as_of": "2025-02",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "ISO 목록에서 ISO/TS 15066:2016 은 폐지되지 않고 2022 년 확인된 판으로 남아 있으며, 이를 대체할 ISO/AWI 15066-1(Collaborative Safety)이 개발 초기 단계에 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-814",
+          "ref-813"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: ISO/TS 15066:2016 last reviewed and confirmed in 2022 … not withdrawn; ISO/AWI 15066-1 in development that will replace it. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f6",
+        "claim": "국가표준 목록에서 KS B ISO 10218-2 는 '2017 확인', KS B ISO/TS 15066 은 '2022 확인' 판으로 검색되고 ISO 10218-2:2025 를 부합화한 KS 는 이번 검색에서 확인되지 않아, 국내 KS 는 아직 구판(ISO 10218-2:2011·ISO/TS 15066:2016) 기준일 가능성이 있다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-825",
+          "ref-568",
+          "ref-211"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 결과 제목: 'KS B ISO 10218-2(2017 확인) … 제2부: 로봇 시스템 및 통합', 'KS B ISO TS 15066(2022 확인)'. 부재 확인이 아니라 검색 범위 내 미발견.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f7",
+        "claim": "ISO 3691-4 는 2023 판이 현행이지만 차기판(ISO/CD 3691-4, 제2판 초안)이 위원회 검토 단계에 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-819",
+          "ref-470"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: ISO/CD 3691-4 Industrial trucks — … Part 4 (iso.org/standard/88615); ISO 3691-4:2023 is expected to be replaced; a draft is being reviewed by the committee. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f8",
+        "claim": "ISO 12100:2010 은 개정이 진행 중이며, 독일 DIN 이 개정 초안(DIN EN ISO 12100, 2025-01, ISO/DIS 12100:2024 기반)을 게시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-820",
+          "ref-566"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: DIN EN ISO 12100 - 2025-01 draft standard; revision titled 'Safety of machinery … (ISO/DIS 12100:2024)'. 원문 미열람.",
+        "as_of": "2025-01",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "ISO 12100 개정판은 2026 년 FDIS 단계 도달이 예상되며 2027-01-20 부터 적용되는 EU 기계 규정 2023/1230 에 맞춰 EN ISO 문안을 정렬하는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-821",
+          "ref-555"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약(업계 블로그): ISO/DIS 12100 Ed.2 in second enquiry … could reach FDIS in 2026; ISO/TC 199 and CEN/TC 114 under Vienna Agreement to align with Machinery Regulation applying 20 January 2027. 원문 미열람.",
+        "as_of": "2025-12-11",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f10",
+        "claim": "ISO 22301:2019 에는 2024-02 발행된 개정 1(기후 행동 변경)이 있어, 조직 상황(4.1)과 이해관계자(4.2) 조항에서 기후 변화의 관련성 검토를 요구한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-822",
+          "ref-486"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: ISO 22301:2019/Amd 1:2024 Climate action changes, published February 2024; modifies Clause 4.1 and 4.2. 원문 미열람.",
+        "as_of": "2024-02",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f11",
+        "claim": "OMG BPMN 은 2014-01 발행된 2.0.2 판이 여전히 최신판으로 보이며, 이번 검색에서 그 뒤의 새 판은 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-502"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: The latest version is BPMN 2.0.2, published in January 2014; OMG 이슈 트래커에 2.0.2 대상 이슈가 2025-08 까지 있으나 BPMN 2.1 발행 정보 없음. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f12",
+        "claim": "IEC 62264-3 은 2016 발행 제2판이 최신으로 검색되며, 이번 실행에서 그 뒤의 새 판은 확인되지 않아 2. 공정·워크플로 모델링의 인용은 유효한 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-119"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: IEC 62264-3:2016 second edition cancels and replaces the 2007 first edition; 후속판 개발 정보는 검색 결과에서 확인되지 않음. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f13",
+        "claim": "IEC 62443-3-3 은 2013-08 발행 제1판이 현행으로 검색되며, 개정판 진행 상태는 이번 실행에서 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-767"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약: IEC 62443-3-3 currently exists as Edition 1.0, published in August 2013; Edition 2 초안 상태 정보 없음. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f14",
+        "claim": "W3C 는 SSN 온톨로지의 후속판 'Semantic Sensor Network Ontology - 2023 Edition' 을 공개 작업 초안(Working Draft)으로 냈고 아직 권고안이 아니므로, 현행 권고안은 ref-030 의 2017 판이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-817",
+          "ref-818",
+          "ref-030"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "작업반 저장소 README 원문(github_raw): 2023 edition 은 Public Working Draft 로 표시. W3C 뉴스: First Public Working Draft … inappropriate to cite this document as other than a work in progress. 두 출처 모두 W3C 계열.",
+        "as_of": "2025",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "IEC/IEEE 82079-1 은 2019 판(제2판)이 현행이며 차기판이 위원회 초안(IEC/IEEE CD 82079-1) 단계에 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-823",
+          "ref-510"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약: IEC/IEEE CD 82079-1 (iso.org/standard/87206); a draft is being reviewed by the committee for a new edition; 2019 Ed.2 가 최신 판매판. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f16",
+        "claim": "ISO 20607:2019 는 디지털 사용 설명서를 반영하는 개정(ISO/DIS 20607)이 진행돼 2025-05-03 국제 투표가 끝났고 EN 채택 기한이 2026-01-20 으로 알려졌으나, 새 판 발행은 이번 실행에서 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-824",
+          "ref-509"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약(업계 뉴스): ISO/DIS 20607 … Close of Voting … ended on 3 May 2025; deadline for adoption by CEN/CENELEC 20 January 2026; 개정 초점은 디지털 사용 설명서. 원문 미열람.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f17",
+        "claim": "ref-345 는 실내공간정보 구축 작업규정의 2018-03-05 판을 가리키고, 같은 규정의 고시 제2021-1445호(2021-12-24) 판이 ref-679 로 따로 등록돼 있어 ref-345 는 구판이며, 2021 판 이후 개정 고시는 이번 검색에서 확인되지 않았다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-345",
+          "ref-679"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "참고문헌 목록 대조: ref-345 발행 2018-03-05, ref-679 '고시 제2021-1445호, 2021-12-24'. 검색 결과에서도 법령정보센터 최신 경로가 (2021-1445,20211224). 원문 미열람.",
+        "as_of": "2021-12-24",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "KS B 7317(2021-11 제정)은 이번 검색에서 개정 기록이 확인되지 않았고 현행 표준으로 검색된다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-314"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 결과: KSSN 표준 상세 페이지(K001010135682)가 같은 제목으로 검색되고, 2026 년 기사들이 이 표준에 따른 엘리베이터 탑승 로봇 안전성 평가를 언급. 개정 여부는 원문 미열람으로 미확인.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f19",
+        "claim": "국가법령정보센터에 '산업 디지털 전환 및 인공지능 활용 촉진법' 제명의 법령 제정·개정문 페이지가 존재해, ref-637 이 가리키는 산업 디지털 전환 촉진법의 제명이 바뀐 것으로 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-815",
+          "ref-637"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 결과 제목: '법령 > 제정·개정문 > 산업 디지털 전환 및 인공지능 활용 촉진법 | 국가법령정보센터'(lsiSeq=281883). 원문 미열람, 조문 내용 미확인.",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f20",
+        "claim": "제명이 바뀐 '산업 디지털 전환 및 인공지능 활용 촉진법' 은 2026-07-01 부터 시행된 것으로 보도됐으나, 데이터 공동 생성 규정의 조문 번호·내용 변화는 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-816"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사 검색 요약: 「산업 디지털 전환 및 인공지능 활용 촉진법」은 2026년 7월 1일부터 시행; 기존 산업 디지털 전환 촉진법을 개정해 AI 활용을 포함. 원문 미열람. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-26",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-022",
+        "org": "VDA(Verband der Automobilindustrie)",
+        "title": "VDA 5050 Version 2.0.0 — Interface for the communication between automated guided vehicles (AGV) and a master control",
+        "published": "2022-01",
+        "url": "https://www.vda.de/dam/jcr:f0c9c019-1506-4dee-998a-e92723fbf025/EN-VDA5050-V2_0_0.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 재검증 대상: VDA 5050 2.0.0 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-032",
+        "org": "VDA(Verband der Automobilindustrie)",
+        "title": "Version 3.0 of VDA 5050 released",
+        "published": "2026-04",
+        "url": "https://www.vda.de/en/press/press-releases/2026/260421_PM_VDA_5050_EN",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. VDA 5050 3.0 발행 보도자료.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-052",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — README.md",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/README.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-26",
+        "summary": "공식 저장소 README. main 브랜치가 최신 게시판(현재 3.0.0)이라고 밝히고 향후 판 계획을 적는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/README.md"
+      },
+      {
+        "id": "ref-139",
+        "org": "ISO",
+        "title": "ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+        "published": "2014",
+        "url": "https://www.iso.org/standard/54497.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 재검증 대상: 제조 운영 관리 KPI 정의 표준 2014 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-811",
+        "org": "ISO",
+        "title": "ISO/DIS 22400-2 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions",
+        "published": null,
+        "url": "https://www.iso.org/standard/87563.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 22400-2 개정판 프로젝트 페이지. 검색 요약상 2024-09-17 FDIS 등록 승인, 2014 판 대체 예정.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-812",
+        "org": "ISO",
+        "title": "ISO 22400-2:2014/Amd 1:2017 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions — Amendment 1: Key performance indicators for energy management",
+        "published": "2017-04",
+        "url": "https://www.iso.org/standard/68295.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 22400-2:2014 의 에너지 관리 KPI 개정 1.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-471",
+        "org": "A3(Association for Advancing Automation)",
+        "title": "Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs)",
+        "published": null,
+        "url": "https://www.automate.org/robotics/blogs/updated-iso-10218-faq",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 10218:2025 개정 FAQ, ISO/TS 15066 요구사항의 10218-2 통합 설명.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-560",
+        "org": "ISO",
+        "title": "ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells",
+        "published": "2025-02",
+        "url": "https://www.iso.org/standard/73934.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 산업용 로봇 적용·셀 안전 요구 2025 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-813",
+        "org": "ISO",
+        "title": "ISO/AWI 15066-1 - Collaborative Safety",
+        "published": null,
+        "url": "https://www.iso.org/standard/91522.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO/TS 15066:2016 을 대체할 협동 안전 표준의 예비 작업 항목(AWI).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-814",
+        "org": "ISO",
+        "title": "ISO/TS 15066:2016 - Robots and robotic devices — Collaborative robots",
+        "published": "2016",
+        "url": "https://www.iso.org/standard/62996.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 협동로봇 기술 사양. 검색 요약상 2022 확인, 폐지되지 않음.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-825",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B ISO 10218-2(2017 확인) 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010116494",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. KS B ISO 10218-2 의 2017 확인 판 상세 페이지.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-568",
+        "org": "한국표준정보망(KSSN, 국가기술표준원)",
+        "title": "KS B ISO/TS 15066 로봇 및 로봇 장치 - 협동로봇 (2022-10-12 확인판 있음)",
+        "published": "2017-02-28",
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010113282",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO/TS 15066 부합 KS.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-211",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010083660",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 10218-2 부합 KS.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-470",
+        "org": "ISO",
+        "title": "ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+        "published": "2023-06",
+        "url": "https://www.iso.org/standard/83545.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 무인 산업용 트럭 안전 요구 2023 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-819",
+        "org": "ISO",
+        "title": "ISO/CD 3691-4 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+        "published": null,
+        "url": "https://www.iso.org/standard/88615.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 3691-4 차기판 위원회 초안 프로젝트 페이지.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-566",
+        "org": "CEN (iTeh Standards 카탈로그)",
+        "title": "EN ISO 12100:2010 - Safety of machinery - General principles for design - Risk assessment and risk reduction",
+        "published": "2010",
+        "url": "https://standards.iteh.ai/catalog/standards/cen/74a41162-9d84-4410-a8a3-606630770ab9/en-iso-12100-2010",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 재검증 대상: 위험성평가 기본 표준 2010 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-820",
+        "org": "DIN Media",
+        "title": "DIN EN ISO 12100 - 2025-01 (Draft standard)",
+        "published": "2025-01",
+        "url": "https://www.dinmedia.de/en/draft-standard/din-en-iso-12100/386233502",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO/DIS 12100:2024 기반 EN ISO 12100 개정 초안의 독일 게시본.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-821",
+        "org": "Intertek",
+        "title": "Machines Got Smarter, Now ISO 12100 has to Catch Up",
+        "published": "2025-12-11",
+        "url": "https://www.intertek.com/blog/2025/12-11-machines-and-iso-12100/",
+        "type": "업계 보고서",
+        "reliability": "low",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 12100 개정 진행과 EU 기계 규정 정렬을 설명하는 시험인증기관 블로그.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-555",
+        "org": "European Union (EUR-Lex)",
+        "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery",
+        "published": "2023-06",
+        "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. EU 기계 규정.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-486",
+        "org": "ISO",
+        "title": "ISO 22301:2019 - Security and resilience — Business continuity management systems — Requirements",
+        "published": "2019",
+        "url": "https://www.iso.org/standard/75106.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 업무 연속성 관리 시스템 요구사항.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-822",
+        "org": "ISO",
+        "title": "ISO 22301:2019/Amd 1:2024 - Security and resilience — Business continuity management systems — Requirements — Amendment 1: Climate action changes",
+        "published": "2024-02",
+        "url": "https://www.iso.org/standard/88412.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO 22301 기후 행동 개정 1, 4.1·4.2 조항 수정.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-502",
+        "org": "OMG(Object Management Group)",
+        "title": "Business Process Model and Notation (BPMN), Version 2.0.2",
+        "published": "2014-01",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. BPMN 2.0.2 명세.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-119",
+        "org": "IEC / ISO",
+        "title": "IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management",
+        "published": "2016",
+        "url": "https://www.iso.org/standard/67480.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 제조 운영 관리 활동 모델 제2판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-767",
+        "org": "IEC",
+        "title": "IEC 62443-3-3:2013 Industrial communication networks — Network and system security — Part 3-3: System security requirements and security levels",
+        "published": "2013-08",
+        "url": "https://standards.iteh.ai/catalog/standards/iec/c32e05fe-78a2-467e-a24d-0fc422289f55/iec-62443-3-3-2013",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 시스템 보안 요구사항과 보안 수준 제1판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-030",
+        "org": "W3C / OGC",
+        "title": "Semantic Sensor Network Ontology",
+        "published": "2017-10-19",
+        "url": "https://www.w3.org/TR/vocab-ssn/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. SSN/SOSA 2017 권고안.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-817",
+        "org": "W3C",
+        "title": "First Public Working Draft: Semantic Sensor Network Ontology - 2023 Edition",
+        "published": "2025",
+        "url": "https://www.w3.org/news/2025/first-public-working-draft-semantic-sensor-network-ontology-2023-edition/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. SSN 2023 Edition 첫 공개 작업 초안 발행 공지.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-818",
+        "org": "W3C Spatial Data on the Web WG (w3c/sdw-sosa-ssn GitHub)",
+        "title": "sdw-sosa-ssn — README (Repository of the Spatial Data on the Web Working Group for the SOSA/SSN vocabulary)",
+        "published": null,
+        "url": "https://github.com/w3c/sdw-sosa-ssn",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-26",
+        "summary": "작업반 저장소 README. SSN 2023 Edition 을 편집자 초안·공개 작업 초안 상태로 안내하며 2017 판과의 변경 목록은 싣지 않는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/w3c/sdw-sosa-ssn/gh-pages/README.md"
+      },
+      {
+        "id": "ref-510",
+        "org": "IEC / IEEE / ISO",
+        "title": "IEC/IEEE 82079-1:2019 - Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements",
+        "published": "2019",
+        "url": "https://www.iso.org/standard/71620.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 제품 사용 정보 작성 원칙 2019 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-823",
+        "org": "IEC / IEEE / ISO",
+        "title": "IEC/IEEE CD 82079-1 - Preparation of information for use (instructions for use) of products — Part 1: Principles and general requirements",
+        "published": null,
+        "url": "https://www.iso.org/standard/87206.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. IEC/IEEE 82079-1 차기판 위원회 초안 프로젝트 페이지.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-509",
+        "org": "ISO",
+        "title": "ISO 20607:2019 - Safety of machinery — Instruction handbook — General drafting principles",
+        "published": "2019",
+        "url": "https://www.iso.org/standard/68519.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 기계 설명서 작성 원칙 2019 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-824",
+        "org": "IBF Solutions",
+        "title": "New EN ISO 20607 – Instruction handbook for machinery",
+        "published": null,
+        "url": "https://www.ibf-solutions.com/en/seminars-and-news/news/new-en-iso-20607-instruction-handbook-for-machinery",
+        "type": "업계 보고서",
+        "reliability": "low",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. ISO/DIS 20607 개정 진행(투표 종료 2025-05-03, EN 채택 기한 2026-01-20)을 전하는 기계 안전 컨설팅사 뉴스.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-345",
+        "org": "국토교통부(법제처 국가법령정보센터)",
+        "title": "실내공간정보 구축 작업규정",
+        "published": "2018-03-05",
+        "url": "https://law.go.kr/admRulLsInfoP.do?admRulSeq=2100000116559",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 실내공간정보 구축 작업규정 2018 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-679",
+        "org": "국토교통부(법제처 국가법령정보센터)",
+        "title": "실내공간정보구축작업규정 (고시 제2021-1445호, 2021-12-24)",
+        "published": "2021-12-24",
+        "url": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EC%8B%A4%EB%82%B4%EA%B3%B5%EA%B0%84%EC%A0%95%EB%B3%B4%EA%B5%AC%EC%B6%95%EC%9E%91%EC%97%85%EA%B7%9C%EC%A0%95/(2021-1445,20211224)",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 실내공간정보 구축 작업규정 2021 고시 판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-314",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법",
+        "published": "2021-11",
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010135682",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 이동 로봇 엘리베이터 탑승 안전 KS.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-637",
+        "org": "국가법령정보센터(산업통상자원부)",
+        "title": "산업 디지털 전환 촉진법 (법률 제18692호)",
+        "published": "2022-01-04",
+        "url": "https://www.law.go.kr/법령/산업디지털전환촉진법/(18692,20220104)",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 산업 디지털 전환 촉진법 제정판.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-815",
+        "org": "국가법령정보센터",
+        "title": "법령 > 제정·개정문 > 산업 디지털 전환 및 인공지능 활용 촉진법",
+        "published": null,
+        "url": "https://law.go.kr/lsInfoP.do?lsiSeq=281883&viewCls=lsRvsDocInfoR",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 제명이 바뀐 산업 디지털 전환 및 인공지능 활용 촉진법의 제정·개정문 페이지(검색 결과 제목·URL 로 존재 확인).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-816",
+        "org": "폴리뉴스",
+        "title": "[입법이 산업을 바꾼다] 공장이 AI를 쓰기 시작했다…'산업 AI법' 시행이 제조업을 바꾼다",
+        "published": null,
+        "url": "https://www.polinews.co.kr/news/articleView.html?idxno=743929",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-26",
+        "summary": "원문 미열람. 산업 디지털 전환 및 인공지능 활용 촉진법이 2026-07-01 시행됐다고 전하는 기사.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md",
+        "sections": [
+          "4",
+          "7"
+        ],
+        "rationale": "needs_update 제안 (f2·f3): ISO 22400-2:2014 인용에 개정 1:2017(에너지 관리 KPI, ref-812)과 진행 중인 개정판 ISO/DIS 22400-2(2024-09-17 FDIS 등록 승인, ref-811)를 병기하고 기준일을 갱신한다. 4·7절은 주제 페이지로 분리돼 있으므로 해당 주제 페이지(2026-09-25-area04-s4, 2026-09-25-area04-s7)와 표준 목록의 ISO 22400-2 항목도 함께 고친다. 다음 실행 후보: 2. 공정·워크플로 모델링의 BPMN 2.0.2(f11)·IEC 62264-3:2016(f12)은 유효로 판정해 수정 불필요."
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md",
+        "sections": [
+          "7"
+        ],
+        "rationale": "needs_update 제안 (f4·f5·f6·f7·f8·f9): ISO/TS 15066 요구사항의 ISO 10218-2:2025 통합과 ISO/AWI 15066-1 개발, KS B ISO/TS 15066·KS B ISO 10218-2 의 구판 기준 가능성, ISO 3691-4 차기판(CD)·ISO 12100 개정 초안 진행을 반영. 다음 실행 후보: ref-022 needs_update(3.0.0 으로 대체됨, f1), ref-345 deprecated 제안(대체 출처: ref-679, f17), ref-637 needs_update(제명 변경 f19·f20, 28. 표준·상호운용성·다사업자 거버넌스 표기 재확인), ref-030 SSN 에 2023 Edition 초안 병기(f14, 5. 로봇 능력·작업 온톨로지와 트랙 manual-capability-ontology 비교표), ref-486 에 개정 1:2024 병기(f10, 20. 예외 복구·재계획·업무 연속성), ref-509·ref-510 개정 진행 병기(f15·f16, 트랙 매뉴얼 문서 유형), ref-767 IEC 62443-3-3·ref-314 KS B 7317 유효(f13·f18)."
+      }
+    ],
+    "glossary_candidates": [],
+    "open_questions_new": [
+      "ISO 10218-2:2025 발행 뒤 국내 KS B ISO 10218-2 와 KS B ISO/TS 15066 은 새 판으로 부합 개정되었거나 개정 예고되었는가, 국내 협동로봇 설치 작업장 안전인증은 어느 판을 기준으로 하는가? | 관련 영역: 25. 안전·위험 관리, 18. 사람–로봇 협업·운영 인터페이스 | 근거: f6 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 38,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f3 ISO 22400-2 개정판의 발행 여부 미확인(FDIS 등록 승인까지만)",
+        "f6 KS B ISO 10218-2·KS B ISO/TS 15066 의 2025 판 부합 여부 미확인(검색 범위 내 미발견)",
+        "f9 ISO 12100 FDIS 시점은 업계 블로그 요약뿐",
+        "f13 IEC 62443-3-3 개정판 진행 상태 미확인",
+        "f16 ISO 20607 새 판 발행 여부 미확인",
+        "f18 KS B 7317 개정 여부 미확인",
+        "f20 산업 디지털 전환 및 인공지능 활용 촉진법 시행일은 기사 1건뿐, 데이터 공동 생성 조문 번호·내용 미확인(oq-122 부분 답)",
+        "MassRobotics AMR 상호운용 표준(ref-033) 판 정보는 공식 저장소 README 에 없어 재검증하지 못함"
+      ],
+      "scope_violations": [],
+      "budget_used": {
+        "queries": 20,
+        "sources": 15
+      },
+      "limits": "월간 재검증: target.json 이 재검증 대상을 지정하지 않아 참고문헌 목록에서 발행 2년이 지난 표준·규정 중 세부영역 페이지 인용과 연관된 것을 골랐다(전수 재검증 아님). web_fetch_available: false · fetch_mode mirror_only 로 github_raw 원문은 2건(ref-052 VDA 5050 README, ref-818 SOSA/SSN 작업반 README)만 열었고 나머지는 검색 결과 요약 범위만 사용해 신뢰도 상한 medium. 교차 확인 0건(같은 발행 기관 계열 출처뿐이거나 단일 출처). 판정 요약: 대체됨 — ref-022(3.0.0), ref-345(2021 고시 ref-679); 개정·후속 진행 — ref-139(Amd1·DIS), ref-568(10218-2:2025 통합·AWI 15066-1), ref-470(CD), ref-566(DIS), ref-486(Amd1:2024), ref-030(2023 Edition WD), ref-509·ref-510(DIS·CD), ref-637(제명 변경); 유효 — ref-502, ref-119, ref-767, ref-314(모두 추정 수준). oq-122 는 제명 변경·시행은 확인했으나 조문 변화가 미확인이라 해결로 올리지 않았다. 페이지 제안은 갱신 상한 2건에 맞추고 나머지는 rationale 에 다음 실행 후보로 남겼다. 입력의 대상 세부영역 페이지는 1~4번만 주어져 25. 안전·위험 관리 등 나머지 페이지의 인용 문장은 직접 대조하지 못했다. 신규 출처 15건(ref-811~ref-825) 상한 도달."
+    }
+  },
+  "ttft_ms": 20536,
+  "type": "result",
+  "duration_ms": 273680,
+  "uuid": "07e0ced9-b757-4b7d-892a-0fdf48b819dd",
+  "ttft_stream_ms": 3977,
+  "time_to_request_ms": 119,
+  "first_content_frame_ms": 3977,
+  "time_to_request_from_spawn_ms": 8748856,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790350300473.5334,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 275.8
+}

@@ -1,0 +1,669 @@
+{
+  "batch_id": "part3-tracks",
+  "date": "2026-09-25",
+  "updated": "2026-09-25 01:53:00",
+  "concurrency": 3,
+  "items": [
+    {
+      "index": 0,
+      "label": "트랙2 자연어 작업 챗봇 #1",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #1"
+      },
+      "status": "게시",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-04",
+          "started": "2026-09-25 01:19:12",
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 01:52:32",
+          "published_at": "2026-09-25 01:52:59",
+          "cost_usd": 17.0401,
+          "duration_sec": 2015.2,
+          "end_state": "게시 완료"
+        }
+      ],
+      "run_id": "2026-09-25-04"
+    },
+    {
+      "index": 1,
+      "label": "트랙3 도면 인식 #1",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #1"
+      },
+      "status": "게시",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-05",
+          "started": "2026-09-25 01:19:42",
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 01:52:04",
+          "published_at": "2026-09-25 01:52:28",
+          "cost_usd": 18.0372,
+          "duration_sec": 1954.9,
+          "end_state": "게시 완료"
+        }
+      ],
+      "run_id": "2026-09-25-05"
+    },
+    {
+      "index": 2,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #1",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #1"
+      },
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-06",
+          "started": "2026-09-25 01:20:12",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-06"
+    },
+    {
+      "index": 3,
+      "label": "트랙2 자연어 작업 챗봇 #2",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #2"
+      },
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-12",
+          "started": "2026-09-25 01:53:00",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-12"
+    },
+    {
+      "index": 4,
+      "label": "트랙3 도면 인식 #2",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #2"
+      },
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-11",
+          "started": "2026-09-25 01:52:30",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-11"
+    },
+    {
+      "index": 5,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #2",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #2"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 6,
+      "label": "트랙2 자연어 작업 챗봇 #3",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #3"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 7,
+      "label": "트랙3 도면 인식 #3",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #3"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 8,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #3",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #3"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 9,
+      "label": "트랙2 자연어 작업 챗봇 #4",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #4"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 10,
+      "label": "트랙3 도면 인식 #4",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #4"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 11,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #4",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #4"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 12,
+      "label": "트랙2 자연어 작업 챗봇 #5",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #5"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 13,
+      "label": "트랙3 도면 인식 #5",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #5"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 14,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #5",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #5"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 15,
+      "label": "트랙2 자연어 작업 챗봇 #6",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #6"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 16,
+      "label": "트랙3 도면 인식 #6",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #6"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 17,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #6",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #6"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 18,
+      "label": "트랙2 자연어 작업 챗봇 #7",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #7"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 19,
+      "label": "트랙3 도면 인식 #7",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #7"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 20,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #7",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #7"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 21,
+      "label": "트랙2 자연어 작업 챗봇 #8",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #8"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 22,
+      "label": "트랙3 도면 인식 #8",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #8"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 23,
+      "label": "트랙1 매뉴얼 능력 온톨로지 #8",
+      "item": {
+        "run_type": "track",
+        "track": "manual-capability-ontology",
+        "max_questions": 3,
+        "group": "t1",
+        "label": "트랙1 매뉴얼 능력 온톨로지 #8"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 24,
+      "label": "트랙2 자연어 작업 챗봇 #9",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #9"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 25,
+      "label": "트랙3 도면 인식 #9",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #9"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 26,
+      "label": "트랙2 자연어 작업 챗봇 #10",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #10"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 27,
+      "label": "트랙3 도면 인식 #10",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #10"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 28,
+      "label": "트랙2 자연어 작업 챗봇 #11",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #11"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 29,
+      "label": "트랙3 도면 인식 #11",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #11"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 30,
+      "label": "트랙2 자연어 작업 챗봇 #12",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #12"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 31,
+      "label": "트랙3 도면 인식 #12",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #12"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 32,
+      "label": "트랙2 자연어 작업 챗봇 #13",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #13"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 33,
+      "label": "트랙3 도면 인식 #13",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #13"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 34,
+      "label": "트랙2 자연어 작업 챗봇 #14",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #14"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 35,
+      "label": "트랙3 도면 인식 #14",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #14"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 36,
+      "label": "트랙2 자연어 작업 챗봇 #15",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #15"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 37,
+      "label": "트랙3 도면 인식 #15",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #15"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 38,
+      "label": "트랙2 자연어 작업 챗봇 #16",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #16"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 39,
+      "label": "트랙3 도면 인식 #16",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #16"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 40,
+      "label": "트랙2 자연어 작업 챗봇 #17",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #17"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 41,
+      "label": "트랙3 도면 인식 #17",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #17"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 42,
+      "label": "트랙2 자연어 작업 챗봇 #18",
+      "item": {
+        "run_type": "track",
+        "track": "nl-task-chatbot",
+        "max_questions": 1,
+        "group": "t2",
+        "label": "트랙2 자연어 작업 챗봇 #18"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    },
+    {
+      "index": 43,
+      "label": "트랙3 도면 인식 #18",
+      "item": {
+        "run_type": "track",
+        "track": "floorplan-recognition",
+        "max_questions": 1,
+        "group": "t3",
+        "label": "트랙3 도면 인식 #18"
+      },
+      "status": "대기",
+      "attempts": [],
+      "run_id": null
+    }
+  ]
+}

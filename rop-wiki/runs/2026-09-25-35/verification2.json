@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-09-25-35",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. GitHub 공식 저장소 원문(ref-230 MassRobotics 스키마, ref-245 IDTA 02047 템플릿, ref-243·ref-229 IDTA 02020 템플릿·README)은 검증자가 raw 경로로 직접 열어 대조했다. 확인 12건, 미확인 0건, 교차 확인 0건(모든 핵심 사실이 발행 기관 한 곳의 산출물에 기댐). 강등: 없음. 원문 미열람 출처: ref-391, ref-392, ref-247, ref-228(이번 실행에서 다시 열지 않음). 브리프 finding 표시 누락: f9·f12 는 미열람 출처(ref-392·ref-247)에 기대는데 source_unopened: false 로 적혔다. 주의: IDTA 02047 의 MaxLateralInclination 식별자는 열람 도구가 처음에는 ECLASS IRDI 로 답했다가 원문 인용에서 IDTA 자체 식별자로 확인됐다. '주행 방식' 요소의 식별자는 확인하지 못해 본문 예시에서 뺐고, 남은 불확실성에만 적었다. f3·f10 은 필드 목록 기준의 부재 관찰이며 부재를 확정한 것이 아니다. ECLASS 데이터베이스와 IEC CDD 는 조회하지 못해 q1-09 는 부분 답이다. 한국 자료는 찾지 못했다. 정정 요청은 없다. 온톨로지 변경 승인: 없음 / 거부: 없음(변경 제안이 없어 v0.3 유지). 백로그 중복: 없음. 단계 태그 문제: 없음. 단계 완료 조건: 미충족(부족: ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건 미반영, 비교표 일부 행에 미조사 칸 잔존). 단계 전환: 미승인(막힌 질문 q1-09). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 12건 이행 확인: q1-08 답함과 {#q1-08} 소제목, q1-09 부분 답(백로그 조사 중·2절 열림·명시 id 없음), f7 예시 제한, f9 위치 표현, f4 서술 범위, 비교표 MassRobotics·IDTA 02047 행, 6절과 상태 줄(열린 질문 1건·답한 질문 8건), 세부영역 반영 제안 3건, 새 질문 q4-13(단계 4, f6)·q2-06(단계 2, f8), 용어 IRDI 등록과 의미 식별자 링크, 온톨로지 초안 미변경. 표기 의견(수정 지시 아님): 아이디어 1 페이지의 ref-228 각주에는 ' (원문 미열람)'이 붙지 않아 단계 페이지·비교표와 표기가 다르다. ref-228 은 이전 실행에서 원문을 연 출처이므로, reference_updates 의 source_unopened: true 가 참고문헌 목록의 신뢰도를 낮추지 않게 퍼블리셔 담당이 확인하기를 권한다. 트랙 개요 페이지는 pages 에 없지만, 상태 줄의 현재 단계(단계 1)와 마지막 트랙 실행(2026-09-25)이 이번 판정과 맞아 고칠 내용이 없다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-09-25-72",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(mirror_only: raw.githubusercontent.com 원본 7건과 입력 원문 텍스트 1건은 직접 확인). 확인 17건, 미확인 3건(f7·f10·f14 부분 불일치), 교차 확인 0건. 강등: f7 사실 → 일부 추정(창문·문·가구 제외 부분), f10 사실 → 일부 추정(흑백 지도 세부), f14 사실 → 일부 추정(거울·금속 반사 부분). 원문 미열람 출처: ref-081, ref-628, ref-224, ref-645, ref-646, ref-647, ref-648. 주의: q4-01 의 답(보정 여섯 묶음, 용도별 지도 분리, ROP 경계, 분류 원문 질문 연결)은 이 위키의 종합 [추정]이며 이를 제시한 단일 출처가 없다. 위치추정·SLAM·비용 지도 인플레이션은 로봇 쪽 연계 대상이다. 브리프의 ref-031 은 fetched_via github_raw·fetch_url null 로 기록됐으나 실제 근거는 입력 원문 텍스트(inbox)다. f9·f16 은 이전 실행 확인분을 재사용했다. 온톨로지 변경 승인: 층별 지도 속성 '내비게이션 지도 메타데이터(Nav2 YAML: 해상도·원점·점유/빈 임계값)'(f1) / 거부: 층별 지도 속성 '로봇 지도 좌표계 변환'(f5 — 6절 정렬 정보 질문 q4-03 을 근거 없이 결정하므로 6절 근거 보강으로 둠). 단계 완료 조건: 미충족(보정 항목 목록은 공간 그래프 스키마 초안 6절·아이디어 3. 건축 도면 자동 인식 5절에 반영됨을 2차에서 확인; 부족: 도면–현장 정합 절차 초안 없음; 막힌 질문 q4-02·q4-03·q4-04·q4-05·q4-07·q4-08·q4-09·q4-10). 단계 전환: 미승인(완료 조건 미충족·막힌 질문 있음). / 2차 통과. 재검증: 직전 2차 수정 지시 2건 모두 이행 확인(시나리오 제약 칸의 비용 지도 필터 문장을 Nav2 로 한정, 6절 완료 조건 첫 행 '충족(2차 확인)'·둘째 행 '미충족 · 미승인' 유지, 전환 줄·상태 줄 '진행 중' 유지). 드리프트 없음, 1차 수정 지시 이행 유지, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고(이전 지시에 없던 사소한 사항, 수정 지시 아님): 단계 4 페이지 6절 '다음 단계로 전환: 아니오(…)' 줄의 막힌 질문 목록에 이번에 새로 연 q4-09·q4-10 이 빠져 있으나 전환 미승인 결론에는 영향이 없다. 3절 종합 표의 '맡는 쪽(추정)' 열은 표현 보정 전체를 로봇 쪽으로 두어 f19 보다 넓게 읽힐 수 있다([추정] 표).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

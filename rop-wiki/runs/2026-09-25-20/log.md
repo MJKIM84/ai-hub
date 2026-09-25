@@ -1,0 +1,117 @@
+# 실행 로그 2026-09-25-20
+
+- 2026-09-25 11:26:28 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-20 resume=없음 step=전체 run_type=area_deep_dive area=9 track=자동)
+- 2026-09-25 11:26:28 KST [준비] 웹 도구 점검 생략(--skip-probe): 기존 probe.json 사용
+- 2026-09-25 11:26:29 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: false
+- 2026-09-25 11:26:29 KST [준비] 부분 열람 모드: 일반 웹 페이지 열람은 차단, GitHub 공식 저장소 원문(raw.githubusercontent.com)과 inbox 원문만 열람 — 출처별 원문 열람 표시·신뢰도 상한 적용
+- 2026-09-25 11:26:29 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
+- 2026-09-25 11:26:29 KST [대상 선정] 결과: 성공 · 소요 0초 · area_deep_dive · 9. 로봇·제조사 관제 연동
+- 2026-09-25 11:26:29 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/research.md (140,978자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 11:33:38 KST [리서치 에이전트] 호출 완료(시도 1): 턴 35 · 7분 9초 · 비용 $2.8883 · subtype success
+- 2026-09-25 11:33:38 KST [리서치 에이전트] 저장: runs/2026-09-25-20/research.json
+- 2026-09-25 11:33:39 KST [형식 검증] 리서치 산출물 검사: 출처 23건 중 원문 열람 10건 · 신뢰도 상한 적용 2건
+- 2026-09-25 11:33:39 KST [형식 검증]   - 출처 ref-261: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/README.md)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 11:33:39 KST [형식 검증]   - 출처 ref-261: 원문 미열람이라 신뢰도 high → medium
+- 2026-09-25 11:33:39 KST [리서치] 예산 점검: 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:33:39 KST [리서치] 결과: 성공 · 소요 7분 10초 · 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:33:39 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/verification1.md (301,538자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:37:56 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 22 · 4분 17초 · 비용 $2.7019 · subtype success
+- 2026-09-25 11:37:56 KST [내용 검증 에이전트] 저장: runs/2026-09-25-20/verification.json
+- 2026-09-25 11:37:56 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-25 11:37:56 KST [1차 검증] 결과: 조건부 승인 · 소요 4분 17초 · 신뢰도 medium
+- 2026-09-25 11:37:56 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/storyteller.md (203,199자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 11:44:11 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 6분 15초 · 비용 $1.9855 · subtype success
+- 2026-09-25 11:44:11 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-20/pages.json
+- 2026-09-25 11:44:11 KST [스토리텔러] 결과: 성공 · 소요 6분 15초 · 페이지 1개
+- 2026-09-25 11:44:12 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-20 (영역 심화)
+- 2026-09-25 11:44:12 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:44:12 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 11:44:12 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:44:12 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-20/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:44:13 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:44:13 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:44:13 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 9건 (파일 351개 검사)
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/06-map-space-and-location-model.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 10-facility-and-building-system-integration.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 11-distributed-systems-communication-and-computing.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 12-command-and-task-execution-reliability.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/13-task-allocation-mrta.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md
+- topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md
+
+- 2026-09-25 11:44:13 KST [형식 검증] 원고 형식 검사: 오류 11건 · 자동 분리 6건
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../b-common-information-and-environment-model/06-map-space-and-location-model.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 10-facility-and-building-system-integration.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 11-distributed-systems-communication-and-computing.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 12-command-and-task-execution-reliability.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/13-task-allocation-mrta.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md
+- 2026-09-25 11:44:13 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area09-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md
+- 2026-09-25 11:44:13 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-25-20/format_check.md)
+- 2026-09-25 11:44:13 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/storyteller-formatfix1.md (281,026자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 11:49:29 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 16초 · 비용 $2.3451 · subtype success
+- 2026-09-25 11:49:29 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-20/pages.json
+- 2026-09-25 11:50:08 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-20 (영역 심화)
+- 2026-09-25 11:50:08 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:50:08 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 11:50:08 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:50:08 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-20/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:50:09 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:50:10 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:50:10 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:50:10 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 11:50:10 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-25 11:50:10 KST [형식 검증] 결과: 형식 수정 1회 후 통과 · 소요 5분 59초
+- 2026-09-25 11:50:11 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/verification2.md (240,977자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:52:11 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 2분 0초 · 비용 $1.4404 · subtype success
+- 2026-09-25 11:52:11 KST [내용 검증 에이전트] 저장: runs/2026-09-25-20/verification2.json
+- 2026-09-25 11:52:11 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-25 11:52:11 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
+- 2026-09-25 11:52:11 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 2분 0초 · required_fixes 참고
+- 2026-09-25 11:52:11 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/storyteller-retry1.md (299,148자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 11:57:38 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 27초 · 비용 $2.4787 · subtype success
+- 2026-09-25 11:57:38 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-20/pages.json
+- 2026-09-25 11:57:39 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 5분 28초 · 페이지 7개
+- 2026-09-25 11:57:43 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-20 (영역 심화)
+- 2026-09-25 11:57:43 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:57:43 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 11:57:43 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-260→ref-153
+- 2026-09-25 11:57:43 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:57:43 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-20/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:57:44 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:57:45 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:57:45 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:57:45 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 11:57:45 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-25 11:57:45 KST [형식 검증] 결과: 통과 · 소요 6초
+- 2026-09-25 11:57:46 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-20/prompts/verification2-retry1.md (256,768자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:58:14 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 28초 · 비용 $1.3292 · subtype success
+- 2026-09-25 11:58:14 KST [내용 검증 에이전트] 저장: runs/2026-09-25-20/verification2.json
+- 2026-09-25 11:58:14 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-25 11:58:14 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 29초 · 신뢰도 medium
+- 2026-09-25 11:58:14 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-20 resume=2026-09-25-20 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 11:58:15 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 11:58:15 KST [준비] 결과: 성공 · 소요 1초 · 건너뜀
+- 2026-09-25 11:58:15 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 11:58:15 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-20 (영역 심화)
+- 2026-09-25 11:58:15 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:58:15 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 11:58:16 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-258→ref-251, ref-259→ref-252, ref-261→ref-253, ref-262→ref-254, ref-263→ref-255, ref-264→ref-256, ref-265→ref-257, ref-266→ref-258, ref-267→ref-259, ref-268→ref-260, ref-269→ref-261, ref-270→ref-262, ref-271→ref-263, ref-272→ref-264
+- 2026-09-25 11:58:16 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:58:16 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-20/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:58:17 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:58:18 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 11:58:37 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 6/갱신 1/폐기 0, 용어 4, 참고문헌 14, 표준 3, 열린 질문 3, 매트릭스 칸 5, 백로그 0, 정정 0; auto 영역 갱신 39개 페이지, mkdocs.yml 갱신
+- 2026-09-25 11:58:50 KST [퍼블리셔] 6단계 사이트 빌드 성공 ('mkdocs build --strict', 13초)
+- 2026-09-25 11:58:50 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 게시 완료)
+- 2026-09-25 11:59:18 KST [퍼블리셔] 8단계 확정 로그 반영 뒤 사이트 재빌드 성공
+- 2026-09-25 11:59:18 KST [퍼블리셔] 퍼블리셔 완료: 생성 6/갱신 1 · 1분 3초
+- 2026-09-25 11:59:18 KST [퍼블리셔] 결과: 성공 · 소요 1분 3초 · 게시 완료
+- 2026-09-25 11:59:18 KST [퍼블리셔] 7단계 커밋: run(2026-09-25): 영역 심화 9. 로봇·제조사 관제 연동 — 생성 6/갱신 1 (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

@@ -1,0 +1,744 @@
+{
+  "duration_api_ms": 211794,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.752896,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 143513,
+    "cache_read_input_tokens": 63020,
+    "output_tokens": 29609,
+    "output_tokens_details": {
+      "thinking_tokens": 6447
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 143513,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 29609,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 143513,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 143513
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 29609,
+      "cacheReadInputTokens": 63020,
+      "cacheCreationInputTokens": 143513,
+      "webSearchRequests": 0,
+      "costUSD": 1.752896,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6447,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-32\",\"outline\":[{\"path\":\"docs/categories/b-common-information-and-environment-model/index.md\",\"section\":\"다른 대분류와의 연결\",\"budget_chars\":5200,\"summary\":\"B. 공통 정보·환경 모델의 5~8 세부영역이 정한 능력·지도·식별·상태 모델은 A·C·D·E·F·G 대분류의 세부영역이 입력과 기준 어휘로 쓴다. 예를 들어 VDA 5050 팩트시트와 Open-RMF 어댑터 설정의 능력 선언은 9. 로봇·제조사 관제 연동으로 넘어간다. [사실][^ref-228][^ref-105]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\",\"f27\"]},{\"path\":\"docs/categories/b-common-information-and-environment-model/index.md\",\"section\":\"참고 자료\",\"budget_chars\":0,\"summary\":\"다른 대분류와의 연결 절에서 새로 쓴 각주 33건의 정의를 기존 ref-003 각주 뒤에 덧붙인다.\",\"planned_findings\":[]}],\"pages\":[{\"path\":\"docs/categories/b-common-information-and-environment-model/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가\",\"patches\":[{\"section\":\"다른 대분류와의 연결\",\"action\":\"replace\",\"frontmatter\":{\"sources\":[\"ref-003\",\"ref-162\",\"ref-031\",\"ref-044\",\"ref-148\",\"ref-228\",\"ref-105\",\"ref-040\",\"ref-153\",\"ref-051\",\"ref-286\",\"ref-079\",\"ref-023\",\"ref-049\",\"ref-285\",\"ref-284\",\"ref-282\",\"ref-287\",\"ref-236\",\"ref-041\",\"ref-014\",\"ref-015\",\"ref-024\",\"ref-238\",\"ref-239\",\"ref-080\",\"ref-224\",\"ref-291\",\"ref-290\",\"ref-076\",\"ref-234\",\"ref-240\",\"ref-138\",\"ref-159\"]},\"content\":\"이 절은 B. 공통 정보·환경 모델의 게시된 세부영역 페이지(5. 로봇 능력·작업 온톨로지, 6. 지도·공간·위치 모델, 7. 화물·재고·자산 식별과 추적, 8. 실시간 세계 상태·데이터 일관성)의 검증된 주장과 각주를 근거로, 이 대분류의 모델이 다른 대분류의 어느 세부영역과 무엇으로 이어지는지 정리한다. 연결 상대 세부영역 가운데 상당수는 아직 본문이 없으므로, 연결의 근거는 이 대분류 쪽 자료에 기댄다.\\n\\n```mermaid\\ngraph LR\\n  B5[\\\"5. 로봇 능력·작업 온톨로지\\\"]\\n  B6[\\\"6. 지도·공간·위치 모델\\\"]\\n  B7[\\\"7. 화물·재고·자산 식별과 추적\\\"]\\n  B8[\\\"8. 실시간 세계 상태·데이터 일관성\\\"]\\n  CatA[\\\"A. 업무·공급망 설계\\\"]\\n  CatC[\\\"C. 연결·실행 기반\\\"]\\n  CatD[\\\"D. 계획·최적화\\\"]\\n  CatE[\\\"E. 협업·현장 운영\\\"]\\n  CatF[\\\"F. 도입·검증·유지관리\\\"]\\n  CatG[\\\"G. 안전·보안·지능·거버넌스\\\"]\\n  B5 --> CatC\\n  B5 --> CatD\\n  B5 --> CatF\\n  B5 --> CatG\\n  B6 --> CatA\\n  B6 --> CatC\\n  B6 --> CatD\\n  B6 --> CatF\\n  B6 --> CatG\\n  B7 --> CatA\\n  B7 --> CatC\\n  B7 --> CatE\\n  B8 --> CatA\\n  B8 --> CatC\\n  B8 --> CatE\\n  B8 --> CatF\\n  B8 --> CatG\\n```\\n\\n### [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md)\\n\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [1. 주문·업무 시스템 연계](../a-business-supply-chain-design/01-order-and-business-system-integration.md): GS1 GLN 은 도크 문·보관 위치 같은 하위 위치를 식별할 수 있고 GLN 확장 요소는 조직 내부나 거래 당사자 간 합의로만 쓰므로, 업무 위치와 로봇 지도 장소의 대응은 ROP 쪽 대응 계층이 맡게 될 것으로 보인다. [추정][^ref-162][^ref-031] 국내 사례는 [열린 질문](../../open-questions.md) oq-029 에서 다룬다.\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [2. 공정·워크플로 모델링](../a-business-supply-chain-design/02-process-and-workflow-modeling.md): GS1 CBV 는 도착(arriving)·입고(receiving)·인수(accepting)를 서로 다른 업무 단계로 정의하고, VDA 5050 은 하역(drop) 완료를 적재물이 로봇을 떠나 로봇이 새 적재 상태를 보고한 때로 정의한다. [사실][^ref-044][^ref-031] 같은 연결은 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 페이지의 다른 대분류와의 연결 절에도 같은 각주로 실려 있다.\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [4. 성과·경제성·프로세스 개선](../a-business-supply-chain-design/04-performance-economics-and-process-improvement.md): Open-RMF 로봇 상태 스키마는 상태(idle·charging·working·error 등), 배터리, 현재 작업 id, 문제 목록, 위치, 기록 시각을 담는다. [사실][^ref-148] 이 필드들은 가동률·충전·오류 시간 지표의 원천이 될 것으로 보인다. [추정][^ref-148] 이 연결도 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 페이지와 같은 각주를 쓴다.\\n\\n### [C. 연결·실행 기반](../c-connectivity-and-execution-foundation/index.md)\\n\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): VDA 5050 팩트시트는 적재 명세(loadSets: 적재 유형·최대 중량·처리 높이·픽·드롭 소요 시간)와 지원 동작(mobileRobotActions)을 선언하고, Open-RMF 플릿 어댑터 템플릿 설정은 수행 가능한 작업 유형(task_capabilities)과 동작 이름(actions)을 선언한다. [사실][^ref-228][^ref-105] 두 자료는 서로 다른 인터페이스의 사례다.\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [12. 명령·작업 실행의 신뢰성](../c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md): 팩트시트에서 선언한 동작 이름(actionType)이 명령과 완료 보고에 그대로 쓰이고 Open-RMF 어댑터가 로봇 API 의 완료 확인 뒤 완료를 알리므로, 능력 선언이 실행 확인의 기준 어휘가 될 것으로 보인다. [추정][^ref-228][^ref-040]\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): Open-RMF 플릿 어댑터는 로봇 좌표계가 RMF 와 다르면 같은 위치를 가리키는 좌표 쌍으로 회전·축척·이동 변환을 추정하며(대응점 4개 이상 권장), 템플릿 설정은 층별 reference_coordinates 로 이 좌표 쌍을 둔다. [사실][^ref-153][^ref-105] 이 작업은 용어집의 [지도 정합](../../glossary/map-alignment.md)에 해당한다. VDA 5050 상태 스키마는 위치추정 품질(localizationScore), 편차 범위(deviationRange), 지도 식별자(mapId)를 두며, 편차를 추정할 수 없는 로봇은 편차 범위를 생략할 수 있다. [사실][^ref-051] 그래서 위치 신뢰도 보고가 제조사 구현에 따라 달라질 수 있다. [추정][^ref-051] 수용 기준은 열린 질문 oq-028 에서 다룬다.\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 승강기 상태는 층을 층 이름 문자열(available_floors, current_floor, destination_floor)로 나타내므로, 지도의 층 이름과 승강기의 층 이름을 맞추는 대응이 두 대분류 사이에 필요할 것으로 보인다. [추정][^ref-286][^ref-079] 이 대응 규칙은 새 열린 질문으로 올렸고, 공통 좌표계 대응(oq-027)·업무 위치 대응(oq-029)과 함께 본다.\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): VDA 5050 상태 스키마의 적재물 목록(loads)은 로봇이 취급 중인 적재물을 담되 적재 상태를 판단할 수 없는 로봇은 생략할 수 있고, 적재물 식별 번호(loadId)는 바코드·RFID 같은 식별 값이며 아직 식별하지 않았으면 비워 둔다. [사실][^ref-051]\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 배송 작업에서 로봇은 픽업 지점 워크셀에서 DispenserResult 를, 하역 지점 워크셀에서 IngestorResult 를 받을 때까지 요청을 되풀이한다. [사실][^ref-023] IngestorResult 는 시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다. [사실][^ref-049]\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 문·승강기 상태 메시지는 시각 필드(door_time, lift_time)를 담고, 승강기 어댑터는 적절하다고 판단한 요청만 승강기에 전달한다. [사실][^ref-285][^ref-286][^ref-284] 상태 발행 주기나 오래됨 판정 규칙은 이번에 연 승강기 연동 문서 범위에서는 찾지 못했다. [추정][^ref-284]\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [11. 분산 시스템·통신·컴퓨팅 구조](../c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md): ROS 2 QoS 의 기한·생존성 정책, Sparkplug 의 노드 종료(NDEATH) 뒤 지표 STALE 표시, VDA 5050 의 MQTT 유언을 통한 연결 끊김 통지처럼 통신 계층에도 상태의 오래됨을 알리는 장치가 있다. [사실][^ref-282][^ref-287][^ref-031] 세 출처는 각각 한 장치만 다룬다.\\n\\n### [D. 계획·최적화](../d-planning-and-optimization/index.md)\\n\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md): 이종 다중 로봇 작업 배정에서 온톨로지 기반 실행 가능성 판정 결과를 배정기와 독립된 입력으로 넘기는 연구가 있다(2026-08 발행). [사실][^ref-236] 제조사가 광고한 능력과 운용 중 관측된 능력을 온톨로지로 구분해 통합하는 연구도 있어, 배정 기준을 어느 값으로 둘지가 두 대분류 사이의 쟁점이 될 것으로 보인다(열린 질문 oq-024). [추정][^ref-041]\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [15. 다중 로봇 경로·교통 관리 — MAPF](../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md): Open-RMF traffic-editor 로 주석한 차선·경유점 그래프는 building_map_generator 로 주행 그래프(navigation graph)로 내보내져 플릿 어댑터의 경로 계획에 쓰인다. [사실][^ref-079]\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md): traffic-editor 는 주차 위치·충전기 위치·승강기·문·층을 지도에 주석하게 하므로, 공용 자원의 위치 정보가 지도 모델에서 나온다. [사실][^ref-079]\\n\\n### [E. 협업·현장 운영](../e-collaboration-and-field-operations/index.md)\\n\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [17. 로봇 간 협업·물리적 인계](../e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md): 설비의 인수 결과에는 화물 식별자·인계 당사자가 없고 EPCIS 는 소유·점유·위치 이전을 출발지·도착지(source/destination)로 표현하므로, 물리적 인계 확인은 7. 화물·재고·자산 식별과 추적의 식별·인계 기록과 결합해야 할 것으로 보인다(열린 질문 oq-001). [추정][^ref-049][^ref-014][^ref-015]\\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [20. 예외 복구·재계획·업무 연속성](../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md): 팔레트 RFID 태그 판독성이 제품·포장·태그 위치·적재 패턴에 따라 달라진다는 2009년 실험 보고가 있어, 판독 실패 때 인계 보류·재스캔·사람 확인 규칙이 복구 과제로 넘어갈 것으로 보인다(열린 질문 oq-003). [추정][^ref-024]\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [19. 모니터링·이상 탐지·원인 분석](../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md): 로봇 상태의 문제 목록·오류 상태와 설비 상태의 시각 정보를 한 세계 상태에 모으면, 지연 원인이 로봇인지 문인지 구분하는 분석이 같은 상태 기록을 쓰게 될 것으로 보인다. [추정][^ref-148][^ref-285]\\n\\n### [F. 도입·검증·유지관리](../f-deployment-verification-and-maintenance/index.md)\\n\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md): 매뉴얼·로봇 기술 파일을 해석해 능력 모델 초안을 만드는 일은 새 로봇 등록 때 필요한 작업이 될 것으로 보이며, 이는 분류 원문 8장의 매뉴얼 해석 교차 규칙과 같은 방향이다. [추정][^ref-238][^ref-239] 온보딩 현장에 적용한 사례는 아직 확인하지 못했다.\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md): 도면에서 만든 지도에는 대기 위치 같은 운영 요소와 도면–현장 편차가 자동으로 담기지 않아, 시운전 때 사람의 주석·정렬 단계가 남는 것으로 보인다(열린 질문 oq-022). [추정][^ref-079][^ref-080][^ref-224]\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md): 제조 분야를 대상으로 한 분류 자료는 현장 상태가 한 방향으로 자동 반영되는 [디지털 섀도](../../glossary/digital-shadow.md)와 디지털 트윈을 구분하므로, 8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현을, 22. 시뮬레이션·예측용 디지털 트윈은 그 표현을 복제해 가정한 미래를 실험하는 쪽을 맡는 것이 분류 원문의 구분과 맞을 것으로 보인다. [추정][^ref-291][^ref-290] 근거 자료가 물류가 아닌 제조 대상이라는 한계가 있다.\\n\\n### [G. 안전·보안·지능·거버넌스](../g-safety-security-intelligence-and-governance/index.md)\\n\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md): 대규모 언어 모델(Large Language Model, LLM)로 능력 온톨로지를 생성하는 연구(2024-04)와 로봇 기술 파일(URDF)에서 로봇 온톨로지를 LLM 으로 채우는 연구(2026-06)가 있다. [사실][^ref-238][^ref-239] 매뉴얼 해석의 적용 대상은 위 21. 온보딩·설정·현장 시운전 연결과 함께 본다.\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md): 비전 언어 모델로 평면도 지도를 해석하는 연구(2024-09)가 있어, 분류 원문 8장 교차 규칙의 도면 해석이 두 대분류를 잇는다. [사실][^ref-076]\\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md): 무인운반차 기술 데이터 서브모델 IDTA 02047, 서비스 로봇 모듈 공통 정보 모델 ISO 22166-201(2024-02), 국내 KS B 7321-2 같은 제조사 독립 정보 모델 표준이 있다. [사실][^ref-234][^ref-240][^ref-138] KS 부합화 여부는 열린 질문 oq-004·oq-026 에서 다룬다.\\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md): ISO 21423 은 산업용 이동로봇의 통신·상호운용성을 다루는 표준이다. [사실][^ref-159] 그 공통 좌표계가 제조사 지도 식별자와 어떻게 대응하는지는 아직 확인되지 않았다(열린 질문 oq-027).\\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md): Open-RMF 승강기 상태의 운영 모드에 사람·AGV·화재·오프라인·비상이 있으므로, 탑승 확정 전에 최신 모드를 확인하는 규칙이 안전 조건과 맞물릴 것으로 보인다. [추정][^ref-286] 여기서 ROP 는 상태를 확인하는 범위만 맡고, 설비 안전 제어 자체는 분류 원문 9장 시설·설비 제어 경계의 연계 대상이다.\\n\\n### 아직 다루지 않은 연결\\n\\n14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와 이 대분류 세부영역 사이의 연결은 게시 페이지에 검증된 근거가 없어 싣지 않았다. 이 연결은 해당 세부영역 조사가 진행되면 보강한다.\"},{\"section\":\"참고 자료\",\"action\":\"append\",\"content\":\"[^ref-162]: GS1, Identifying a physical location - GLN, 미확인, https://www.gs1.org/standards/id-keys/gln/physical-location, 접근일 2026-09-25 (원문 미열람)\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25 (원문 미열람)\\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-09-25 (원문 미열람)\\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\\n[^ref-040]: Open Robotics, PerformAction Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html, 접근일 2026-09-25\\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25\\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\\n[^ref-049]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg, 접근일 2026-09-25\\n[^ref-285]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorState.msg, 접근일 2026-09-25\\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\\n[^ref-282]: Open Robotics (ROS 2 Documentation), Quality of Service settings — ROS 2 Documentation: Jazzy, 미확인, https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-287]: Eclipse Foundation (eclipse-sparkplug GitHub), Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc), 미확인, https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc, 접근일 2026-09-25\\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\\n[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\\n[^ref-014]: GS1, Core Business Vocabulary (CBV) Standard, 미확인, https://ref.gs1.org/standards/cbv/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-015]: GS1, EPCIS and CBV Implementation Guideline, 미확인, https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf, 접근일 2026-09-25 (원문 미열람)\\n[^ref-024]: Singh, J. 외, RFID tag readability issues with palletized loads of consumer goods, 2009, https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864, 접근일 2026-09-25 (원문 미열람)\\n[^ref-238]: Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies, 2024-04, https://arxiv.org/abs/2404.17524, 접근일 2026-09-25 (원문 미열람)\\n[^ref-239]: Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF, 2026-06, https://arxiv.org/abs/2606.17073, 접근일 2026-09-25 (원문 미열람)\\n[^ref-080]: Open Robotics, Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-224]: Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans, 2024-08, https://arxiv.org/abs/2408.01737, 접근일 2026-09-25 (원문 미열람)\\n[^ref-291]: Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W., Digital Twin in manufacturing: A categorical literature review and classification, 2018, https://www.sciencedirect.com/science/article/pii/S2405896318316021, 접근일 2026-09-25 (원문 미열람)\\n[^ref-290]: NIST, DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH, 미확인, https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417, 접근일 2026-09-25 (원문 미열람)\\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\\n[^ref-234]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25 (원문 미열람)\\n[^ref-240]: ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules, 2024-02, https://www.iso.org/standard/82334.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-138]: 국가표준인증통합정보시스템(KSSN), KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010147546, 접근일 2026-09-25 (원문 미열람)\\n[^ref-159]: ISO, ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability, 미확인, https://www.iso.org/standard/86749.html, 접근일 2026-09-25 (원문 미열람)\"}]}],\"changelog_entry\":\"2026-09-25 | B. 공통 정보·환경 모델 | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) | run 2026-09-25-32\",\"index_updates\":{\"home_recent\":\"2026-09-25 — B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 작성(5~8 세부영역과 A·C·D·E·F·G 대분류의 연결 27건)\",\"category_recent\":\"2026-09-25 — B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 작성(능력 선언·지도 정합·적재물 식별·상태 오래됨 판정이 다른 대분류로 이어지는 방식, 추정 11건 포함)\"},\"glossary_updates\":[],\"reference_updates\":[{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 팩트시트 JSON 스키마. 적재 명세(loadSets)·지원 동작(mobileRobotActions)을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-105\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"fleet_adapter_template — fleet_adapter_template/config.yaml\",\"published\":null,\"url\":\"https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 플릿 어댑터 템플릿 설정. task_capabilities·actions·층별 reference_coordinates 를 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-040\",\"org\":\"Open Robotics\",\"title\":\"PerformAction Tutorial - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"입력 원문 텍스트로 확인. Open-RMF 사용자 정의 동작 수행과 완료 통지(execution.finished()) 튜토리얼.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-153\",\"org\":\"Open Robotics\",\"title\":\"Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"플릿 어댑터 튜토리얼 원본. 로봇–RMF 좌표 변환(좌표 쌍, 대응점 4개 이상 권장)을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 상태 JSON 스키마. loads·loadId·localizationScore·deviationRange·mapId 설명을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-079\",\"org\":\"Open Robotics\",\"title\":\"Traffic Editor - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"traffic-editor 장 원본. 차선·경유점·주차·충전기·승강기·문·층 주석과 주행 그래프 내보내기를 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-023\",\"org\":\"Open Robotics\",\"title\":\"Workcells - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_workcells.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"워크셀 연동 장 원본. 배송 작업의 디스펜서·인제스터 요청–결과 반복을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-049\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"IngestorResult 메시지 정의(시각·요청 id·워크셀 id·상태). 검증자가 원본을 열어 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-285\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorState.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 문 상태 메시지 정의. door_time·door_name·current_mode 필드를 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-286\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 승강기 상태 메시지 정의. 시각·층 이름·운영 모드 등을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-284\",\"org\":\"Open Robotics\",\"title\":\"Lifts (integration_lifts) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_lifts.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"승강기 연동 장 원본. 승강기 어댑터가 요청을 걸러 전달하는 구조를 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-287\",\"org\":\"Eclipse Foundation (eclipse-sparkplug GitHub)\",\"title\":\"Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc)\",\"published\":null,\"url\":\"https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"Sparkplug 명세 5장 원본. 노드 종료 뒤 지표를 STALE 로 표시하는 규정을 원문으로 확인했다.\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"입력 원문 텍스트로 확인. VDA 5050 공식 명세(main 3.0.0).\",\"source_unopened\":false,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-162\",\"org\":\"GS1\",\"title\":\"Identifying a physical location - GLN\",\"published\":null,\"url\":\"https://www.gs1.org/standards/id-keys/gln/physical-location\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. GLN 으로 물리적 위치와 하위 위치를 식별하는 GS1 안내.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-044\",\"org\":\"GS1\",\"title\":\"gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)\",\"published\":\"2021-09-30\",\"url\":\"https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이번 실행에서 다시 열지 않았다. CBV 온톨로지 원본.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-148\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이번 실행에서 다시 열지 않았다. Open-RMF 로봇 상태 스키마.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-282\",\"org\":\"Open Robotics (ROS 2 Documentation)\",\"title\":\"Quality of Service settings — ROS 2 Documentation: Jazzy\",\"published\":null,\"url\":\"https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ROS 2 QoS 정책(기한·수명·생존성) 설명.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-236\",\"org\":\"Electronics(MDPI) 게재 논문(저자 미확인)\",\"title\":\"Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation\",\"published\":\"2026-08-11\",\"url\":\"https://doi.org/10.3390/electronics15163562\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이종 다중 로봇 작업 배정을 위한 의미 기반 실행 가능성 판정 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-041\",\"org\":\"Naqvi, M. R. 외(Scientific Reports)\",\"title\":\"Ontology-driven integration of advertised and operational capabilities in robots\",\"published\":\"2025-10-02\",\"url\":\"https://www.nature.com/articles/s41598-025-16649-3\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제조사가 광고한 능력과 운용 중 관측된 능력을 온톨로지로 통합하는 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-014\",\"org\":\"GS1\",\"title\":\"Core Business Vocabulary (CBV) Standard\",\"published\":null,\"url\":\"https://ref.gs1.org/standards/cbv/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EPCIS 이벤트의 업무 단계·source/destination 유형 등 표준 어휘.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-015\",\"org\":\"GS1\",\"title\":\"EPCIS and CBV Implementation Guideline\",\"published\":null,\"url\":\"https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EPCIS·CBV 구현 안내(인계 맥락 표현 포함).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-024\",\"org\":\"Singh, J. 외\",\"title\":\"RFID tag readability issues with palletized loads of consumer goods\",\"published\":\"2009\",\"url\":\"https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 팔레트 적재 소비재의 RFID 태그 판독성 실험 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-238\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"On the Use of Large Language Models to Generate Capability Ontologies\",\"published\":\"2024-04\",\"url\":\"https://arxiv.org/abs/2404.17524\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LLM 으로 능력 온톨로지를 생성하고 검사하는 방법을 다룬 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-239\",\"org\":\"Dussard, B., & Sarthou, G. (LAAS-CNRS)\",\"title\":\"Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF\",\"published\":\"2026-06\",\"url\":\"https://arxiv.org/abs/2606.17073\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. URDF 로봇 기술 파일에서 LLM 으로 로봇 온톨로지를 자동으로 채우는 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-080\",\"org\":\"Open Robotics\",\"title\":\"Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이번 실행에서 다시 열지 않았다. Open-RMF 주행 지도 연동 장.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-224\",\"org\":\"Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.\",\"title\":\"Tightly Coupled SLAM with Imprecise Architectural Plans\",\"published\":\"2024-08\",\"url\":\"https://arxiv.org/abs/2408.01737\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 부정확한 건축 도면을 SLAM 과 결합하는 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-291\",\"org\":\"Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.\",\"title\":\"Digital Twin in manufacturing: A categorical literature review and classification\",\"published\":\"2018\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S2405896318316021\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제조 분야 디지털 모델·디지털 섀도·디지털 트윈 분류 문헌 검토.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-290\",\"org\":\"NIST\",\"title\":\"DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH\",\"published\":null,\"url\":\"https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제조 디지털 트윈 표준화 접근을 다룬 NIST 자료.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-076\",\"org\":\"DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.\",\"title\":\"Vision Language Models Can Parse Floor Plan Maps\",\"published\":\"2024-09\",\"url\":\"https://arxiv.org/abs/2409.12842\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 비전 언어 모델의 평면도 지도 해석 능력을 다룬 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-234\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"title\":\"IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 무인운반차 기술 데이터 AAS 서브모델 템플릿.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-240\",\"org\":\"ISO\",\"title\":\"ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules\",\"published\":\"2024-02\",\"url\":\"https://www.iso.org/standard/82334.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 서비스 로봇 모듈의 공통 정보 모델 국제표준.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-138\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010147546\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 서비스 로봇 소프트웨어 모듈 정보 모델 KS 표준.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]},{\"id\":\"ref-159\",\"org\":\"ISO\",\"title\":\"ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability\",\"published\":null,\"url\":\"https://www.iso.org/standard/86749.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 이동로봇의 통신·상호운용성 국제표준.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/b-common-information-and-environment-model/index.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"로봇 지도의 층(level) 이름과 승강기 상태의 층 이름(Open-RMF available_floors 등)을 서로 대응시키는 규칙을 정한 표준이나 공개 구현이 있는가?\",\"areas\":[6,10],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[],\"additional_research_requests\":[\"다른 대분류와의 연결 절: 14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와 B. 공통 정보·환경 모델 세부영역(5~8) 사이의 연결을 뒷받침할 검증된 근거가 없어 싣지 못했다. 해당 세부영역 심화 뒤 대분류 연결을 다시 조사해야 한다.\",\"다른 대분류와의 연결 절: 연결 27건 가운데 11건이 추론([추정])이다. 두 대분류 사이 규칙을 정한 표준·공개 구현(예: 적재·하역 완료 신호와 EPCIS 인계 이벤트 매핑, 지도 층 이름과 승강기 층 이름 대응)을 조사하면 태그를 보강할 수 있다.\",\"다른 대분류와의 연결 절: 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분 근거가 제조 대상 자료(Kritzinger 외 2018, NIST)뿐이다. 물류·창고 로봇 대상 자료가 필요하다.\"],\"fixes_applied\":[\"패치 대상 — section 은 번호 없는 '다른 대분류와의 연결'(replace)로 하고, 새 각주 정의는 '참고 자료' 절 끝에 append 했으며, 다른 절·auto 마커(category-area-table, category-recent)와 기존 [^ref-003] 각주는 보내지 않아 손대지 않았다.\",\"f19 — '요청 id·워크셀 id·상태만' 구절을 쓰지 않고 C. 연결·실행 기반 항목에 'IngestorResult 는 시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다 [사실][^ref-049]'로 적었고, 워크셀 요청–결과 반복 문장은 [사실][^ref-023] 로 유지했다.\",\"f22 — 문·승강기 시각 필드와 승강기 어댑터의 선별 전달은 [사실][^ref-285][^ref-286][^ref-284] 로 두고, 발행 주기·오래됨 규칙 부분은 '이번에 연 승강기 연동 문서 범위에서는 찾지 못했다'는 별도 문장 [추정][^ref-284] 로 나눴다.\",\"f9 — localizationScore·deviationRange·mapId 필드 정의를 [사실][^ref-051] 로, '위치 신뢰도 보고가 제조사 구현에 따라 달라질 수 있다'를 별도 문장 [추정][^ref-051] 로 나눴다.\",\"f23 — '장치는 통신 계층에 있다'는 일반화 대신 'ROS 2 QoS 의 기한·생존성 정책, Sparkplug 의 NDEATH 뒤 STALE 표시, VDA 5050 의 MQTT 유언을 통한 연결 끊김 통지처럼 통신 계층에도 오래됨을 알리는 장치가 있다'는 사례 서술로 좁히고 세 출처가 각각 한 장치만 다룬다고 밝혔다.\",\"f26 — 로봇 상태 스키마 필드 나열은 [사실][^ref-148], '가동률·충전·오류 시간 지표의 원천이 될 것'은 별도 문장 [추정][^ref-148] 로 나눴다.\",\"f17·f26 — 같은 각주(ref-044·ref-031, ref-148)를 재사용하고 A. 업무·공급망 설계 페이지 서술과 같은 내용으로 적었으며, 두 항목에 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 링크를 두었다.\",\"번호만 쓴 호칭 — f20 의 '7번'을 '7. 화물·재고·자산 식별과 추적'으로, f25 의 '8번·22번'을 '8. 실시간 세계 상태·데이터 일관성'·'22. 시뮬레이션·예측용 디지털 트윈'으로 썼고, Mermaid 노드 표시 이름도 번호와 이름으로 적었다.\",\"인용 — ref-051 을 포함한 모든 출처의 원문 구절을 직접 인용하지 않고 한국어로 재서술했다(f9·f18 모두 재서술).\",\"f25 — 8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험으로 나누는 구분을 유지하고, 근거 자료가 제조 대상임을 문장에 밝혔으며 용어집 [디지털 섀도](../../glossary/digital-shadow.md)를 링크했다.\",\"f24 — 승강기 운영 모드 확인은 ROP 가 상태를 확인하는 범위로만 쓰고, 설비 안전 제어는 분류 원문 9장 시설·설비 제어 경계의 연계 대상이라는 문장을 덧붙였다.\",\"각주 — 새 각주 33건을 '기관, 제목, 발행일, URL, 접근일 YYYY-MM-DD' 형식으로 참고 자료 절에 넣고, 지정된 원문 미열람 출처 20건에 ' (원문 미열람)'을 붙였으며 ref-040·ref-031·ref-049 와 원본 확인 출처에는 붙이지 않았다. 프런트매터 sources 에 ref-003 과 새 각주 id 를 모두 넣었다.\",\"열린 질문 — 새 질문을 '로봇 지도의 층(level) 이름과 승강기 상태의 층 이름(Open-RMF available_floors 등)을 서로 대응시키는 규칙을 정한 표준이나 공개 구현이 있는가?'로 좁혀 관련 영역 6. 지도·공간·위치 모델, 10. 설비·건물 시스템 연동으로 등록했고, 본문 6 ↔ 10 항목에서 oq-027·oq-029 와 함께 언급했다.\",\"'아직 다루지 않은 연결' 문단 — 14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와의 연결은 검증된 근거가 없어 싣지 않았다고 번호와 이름으로 적었다.\"]}",
+  "structured_output": {
+    "run_id": "2026-09-25-32",
+    "outline": [
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/index.md",
+        "section": "다른 대분류와의 연결",
+        "budget_chars": 5200,
+        "summary": "B. 공통 정보·환경 모델의 5~8 세부영역이 정한 능력·지도·식별·상태 모델은 A·C·D·E·F·G 대분류의 세부영역이 입력과 기준 어휘로 쓴다. 예를 들어 VDA 5050 팩트시트와 Open-RMF 어댑터 설정의 능력 선언은 9. 로봇·제조사 관제 연동으로 넘어간다. [사실][^ref-228][^ref-105]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26",
+          "f27"
+        ]
+      },
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/index.md",
+        "section": "참고 자료",
+        "budget_chars": 0,
+        "summary": "다른 대분류와의 연결 절에서 새로 쓴 각주 33건의 정의를 기존 ref-003 각주 뒤에 덧붙인다.",
+        "planned_findings": []
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/b-common-information-and-environment-model/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가",
+        "patches": [
+          {
+            "section": "다른 대분류와의 연결",
+            "action": "replace",
+            "frontmatter": {
+              "sources": [
+                "ref-003",
+                "ref-162",
+                "ref-031",
+                "ref-044",
+                "ref-148",
+                "ref-228",
+                "ref-105",
+                "ref-040",
+                "ref-153",
+                "ref-051",
+                "ref-286",
+                "ref-079",
+                "ref-023",
+                "ref-049",
+                "ref-285",
+                "ref-284",
+                "ref-282",
+                "ref-287",
+                "ref-236",
+                "ref-041",
+                "ref-014",
+                "ref-015",
+                "ref-024",
+                "ref-238",
+                "ref-239",
+                "ref-080",
+                "ref-224",
+                "ref-291",
+                "ref-290",
+                "ref-076",
+                "ref-234",
+                "ref-240",
+                "ref-138",
+                "ref-159"
+              ]
+            },
+            "content": "이 절은 B. 공통 정보·환경 모델의 게시된 세부영역 페이지(5. 로봇 능력·작업 온톨로지, 6. 지도·공간·위치 모델, 7. 화물·재고·자산 식별과 추적, 8. 실시간 세계 상태·데이터 일관성)의 검증된 주장과 각주를 근거로, 이 대분류의 모델이 다른 대분류의 어느 세부영역과 무엇으로 이어지는지 정리한다. 연결 상대 세부영역 가운데 상당수는 아직 본문이 없으므로, 연결의 근거는 이 대분류 쪽 자료에 기댄다.\n\n```mermaid\ngraph LR\n  B5[\"5. 로봇 능력·작업 온톨로지\"]\n  B6[\"6. 지도·공간·위치 모델\"]\n  B7[\"7. 화물·재고·자산 식별과 추적\"]\n  B8[\"8. 실시간 세계 상태·데이터 일관성\"]\n  CatA[\"A. 업무·공급망 설계\"]\n  CatC[\"C. 연결·실행 기반\"]\n  CatD[\"D. 계획·최적화\"]\n  CatE[\"E. 협업·현장 운영\"]\n  CatF[\"F. 도입·검증·유지관리\"]\n  CatG[\"G. 안전·보안·지능·거버넌스\"]\n  B5 --> CatC\n  B5 --> CatD\n  B5 --> CatF\n  B5 --> CatG\n  B6 --> CatA\n  B6 --> CatC\n  B6 --> CatD\n  B6 --> CatF\n  B6 --> CatG\n  B7 --> CatA\n  B7 --> CatC\n  B7 --> CatE\n  B8 --> CatA\n  B8 --> CatC\n  B8 --> CatE\n  B8 --> CatF\n  B8 --> CatG\n```\n\n### [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md)\n\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [1. 주문·업무 시스템 연계](../a-business-supply-chain-design/01-order-and-business-system-integration.md): GS1 GLN 은 도크 문·보관 위치 같은 하위 위치를 식별할 수 있고 GLN 확장 요소는 조직 내부나 거래 당사자 간 합의로만 쓰므로, 업무 위치와 로봇 지도 장소의 대응은 ROP 쪽 대응 계층이 맡게 될 것으로 보인다. [추정][^ref-162][^ref-031] 국내 사례는 [열린 질문](../../open-questions.md) oq-029 에서 다룬다.\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [2. 공정·워크플로 모델링](../a-business-supply-chain-design/02-process-and-workflow-modeling.md): GS1 CBV 는 도착(arriving)·입고(receiving)·인수(accepting)를 서로 다른 업무 단계로 정의하고, VDA 5050 은 하역(drop) 완료를 적재물이 로봇을 떠나 로봇이 새 적재 상태를 보고한 때로 정의한다. [사실][^ref-044][^ref-031] 같은 연결은 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 페이지의 다른 대분류와의 연결 절에도 같은 각주로 실려 있다.\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [4. 성과·경제성·프로세스 개선](../a-business-supply-chain-design/04-performance-economics-and-process-improvement.md): Open-RMF 로봇 상태 스키마는 상태(idle·charging·working·error 등), 배터리, 현재 작업 id, 문제 목록, 위치, 기록 시각을 담는다. [사실][^ref-148] 이 필드들은 가동률·충전·오류 시간 지표의 원천이 될 것으로 보인다. [추정][^ref-148] 이 연결도 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 페이지와 같은 각주를 쓴다.\n\n### [C. 연결·실행 기반](../c-connectivity-and-execution-foundation/index.md)\n\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): VDA 5050 팩트시트는 적재 명세(loadSets: 적재 유형·최대 중량·처리 높이·픽·드롭 소요 시간)와 지원 동작(mobileRobotActions)을 선언하고, Open-RMF 플릿 어댑터 템플릿 설정은 수행 가능한 작업 유형(task_capabilities)과 동작 이름(actions)을 선언한다. [사실][^ref-228][^ref-105] 두 자료는 서로 다른 인터페이스의 사례다.\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [12. 명령·작업 실행의 신뢰성](../c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md): 팩트시트에서 선언한 동작 이름(actionType)이 명령과 완료 보고에 그대로 쓰이고 Open-RMF 어댑터가 로봇 API 의 완료 확인 뒤 완료를 알리므로, 능력 선언이 실행 확인의 기준 어휘가 될 것으로 보인다. [추정][^ref-228][^ref-040]\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): Open-RMF 플릿 어댑터는 로봇 좌표계가 RMF 와 다르면 같은 위치를 가리키는 좌표 쌍으로 회전·축척·이동 변환을 추정하며(대응점 4개 이상 권장), 템플릿 설정은 층별 reference_coordinates 로 이 좌표 쌍을 둔다. [사실][^ref-153][^ref-105] 이 작업은 용어집의 [지도 정합](../../glossary/map-alignment.md)에 해당한다. VDA 5050 상태 스키마는 위치추정 품질(localizationScore), 편차 범위(deviationRange), 지도 식별자(mapId)를 두며, 편차를 추정할 수 없는 로봇은 편차 범위를 생략할 수 있다. [사실][^ref-051] 그래서 위치 신뢰도 보고가 제조사 구현에 따라 달라질 수 있다. [추정][^ref-051] 수용 기준은 열린 질문 oq-028 에서 다룬다.\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 승강기 상태는 층을 층 이름 문자열(available_floors, current_floor, destination_floor)로 나타내므로, 지도의 층 이름과 승강기의 층 이름을 맞추는 대응이 두 대분류 사이에 필요할 것으로 보인다. [추정][^ref-286][^ref-079] 이 대응 규칙은 새 열린 질문으로 올렸고, 공통 좌표계 대응(oq-027)·업무 위치 대응(oq-029)과 함께 본다.\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [9. 로봇·제조사 관제 연동](../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md): VDA 5050 상태 스키마의 적재물 목록(loads)은 로봇이 취급 중인 적재물을 담되 적재 상태를 판단할 수 없는 로봇은 생략할 수 있고, 적재물 식별 번호(loadId)는 바코드·RFID 같은 식별 값이며 아직 식별하지 않았으면 비워 둔다. [사실][^ref-051]\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 배송 작업에서 로봇은 픽업 지점 워크셀에서 DispenserResult 를, 하역 지점 워크셀에서 IngestorResult 를 받을 때까지 요청을 되풀이한다. [사실][^ref-023] IngestorResult 는 시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다. [사실][^ref-049]\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md): Open-RMF 문·승강기 상태 메시지는 시각 필드(door_time, lift_time)를 담고, 승강기 어댑터는 적절하다고 판단한 요청만 승강기에 전달한다. [사실][^ref-285][^ref-286][^ref-284] 상태 발행 주기나 오래됨 판정 규칙은 이번에 연 승강기 연동 문서 범위에서는 찾지 못했다. [추정][^ref-284]\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [11. 분산 시스템·통신·컴퓨팅 구조](../c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md): ROS 2 QoS 의 기한·생존성 정책, Sparkplug 의 노드 종료(NDEATH) 뒤 지표 STALE 표시, VDA 5050 의 MQTT 유언을 통한 연결 끊김 통지처럼 통신 계층에도 상태의 오래됨을 알리는 장치가 있다. [사실][^ref-282][^ref-287][^ref-031] 세 출처는 각각 한 장치만 다룬다.\n\n### [D. 계획·최적화](../d-planning-and-optimization/index.md)\n\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md): 이종 다중 로봇 작업 배정에서 온톨로지 기반 실행 가능성 판정 결과를 배정기와 독립된 입력으로 넘기는 연구가 있다(2026-08 발행). [사실][^ref-236] 제조사가 광고한 능력과 운용 중 관측된 능력을 온톨로지로 구분해 통합하는 연구도 있어, 배정 기준을 어느 값으로 둘지가 두 대분류 사이의 쟁점이 될 것으로 보인다(열린 질문 oq-024). [추정][^ref-041]\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [15. 다중 로봇 경로·교통 관리 — MAPF](../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md): Open-RMF traffic-editor 로 주석한 차선·경유점 그래프는 building_map_generator 로 주행 그래프(navigation graph)로 내보내져 플릿 어댑터의 경로 계획에 쓰인다. [사실][^ref-079]\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md): traffic-editor 는 주차 위치·충전기 위치·승강기·문·층을 지도에 주석하게 하므로, 공용 자원의 위치 정보가 지도 모델에서 나온다. [사실][^ref-079]\n\n### [E. 협업·현장 운영](../e-collaboration-and-field-operations/index.md)\n\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [17. 로봇 간 협업·물리적 인계](../e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md): 설비의 인수 결과에는 화물 식별자·인계 당사자가 없고 EPCIS 는 소유·점유·위치 이전을 출발지·도착지(source/destination)로 표현하므로, 물리적 인계 확인은 7. 화물·재고·자산 식별과 추적의 식별·인계 기록과 결합해야 할 것으로 보인다(열린 질문 oq-001). [추정][^ref-049][^ref-014][^ref-015]\n- [7. 화물·재고·자산 식별과 추적](07-cargo-inventory-and-asset-identification-and-tracking.md) ↔ [20. 예외 복구·재계획·업무 연속성](../e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md): 팔레트 RFID 태그 판독성이 제품·포장·태그 위치·적재 패턴에 따라 달라진다는 2009년 실험 보고가 있어, 판독 실패 때 인계 보류·재스캔·사람 확인 규칙이 복구 과제로 넘어갈 것으로 보인다(열린 질문 oq-003). [추정][^ref-024]\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [19. 모니터링·이상 탐지·원인 분석](../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md): 로봇 상태의 문제 목록·오류 상태와 설비 상태의 시각 정보를 한 세계 상태에 모으면, 지연 원인이 로봇인지 문인지 구분하는 분석이 같은 상태 기록을 쓰게 될 것으로 보인다. [추정][^ref-148][^ref-285]\n\n### [F. 도입·검증·유지관리](../f-deployment-verification-and-maintenance/index.md)\n\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md): 매뉴얼·로봇 기술 파일을 해석해 능력 모델 초안을 만드는 일은 새 로봇 등록 때 필요한 작업이 될 것으로 보이며, 이는 분류 원문 8장의 매뉴얼 해석 교차 규칙과 같은 방향이다. [추정][^ref-238][^ref-239] 온보딩 현장에 적용한 사례는 아직 확인하지 못했다.\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [21. 온보딩·설정·현장 시운전](../f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md): 도면에서 만든 지도에는 대기 위치 같은 운영 요소와 도면–현장 편차가 자동으로 담기지 않아, 시운전 때 사람의 주석·정렬 단계가 남는 것으로 보인다(열린 질문 oq-022). [추정][^ref-079][^ref-080][^ref-224]\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [22. 시뮬레이션·예측용 디지털 트윈](../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md): 제조 분야를 대상으로 한 분류 자료는 현장 상태가 한 방향으로 자동 반영되는 [디지털 섀도](../../glossary/digital-shadow.md)와 디지털 트윈을 구분하므로, 8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현을, 22. 시뮬레이션·예측용 디지털 트윈은 그 표현을 복제해 가정한 미래를 실험하는 쪽을 맡는 것이 분류 원문의 구분과 맞을 것으로 보인다. [추정][^ref-291][^ref-290] 근거 자료가 물류가 아닌 제조 대상이라는 한계가 있다.\n\n### [G. 안전·보안·지능·거버넌스](../g-safety-security-intelligence-and-governance/index.md)\n\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md): 대규모 언어 모델(Large Language Model, LLM)로 능력 온톨로지를 생성하는 연구(2024-04)와 로봇 기술 파일(URDF)에서 로봇 온톨로지를 LLM 으로 채우는 연구(2026-06)가 있다. [사실][^ref-238][^ref-239] 매뉴얼 해석의 적용 대상은 위 21. 온보딩·설정·현장 시운전 연결과 함께 본다.\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [27. AI·학습·적응과 모델 운영](../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md): 비전 언어 모델로 평면도 지도를 해석하는 연구(2024-09)가 있어, 분류 원문 8장 교차 규칙의 도면 해석이 두 대분류를 잇는다. [사실][^ref-076]\n- [5. 로봇 능력·작업 온톨로지](05-robot-capability-and-task-ontology.md) ↔ [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md): 무인운반차 기술 데이터 서브모델 IDTA 02047, 서비스 로봇 모듈 공통 정보 모델 ISO 22166-201(2024-02), 국내 KS B 7321-2 같은 제조사 독립 정보 모델 표준이 있다. [사실][^ref-234][^ref-240][^ref-138] KS 부합화 여부는 열린 질문 oq-004·oq-026 에서 다룬다.\n- [6. 지도·공간·위치 모델](06-map-space-and-location-model.md) ↔ [28. 표준·상호운용성·다사업자 거버넌스](../g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md): ISO 21423 은 산업용 이동로봇의 통신·상호운용성을 다루는 표준이다. [사실][^ref-159] 그 공통 좌표계가 제조사 지도 식별자와 어떻게 대응하는지는 아직 확인되지 않았다(열린 질문 oq-027).\n- [8. 실시간 세계 상태·데이터 일관성](08-real-time-world-state-and-data-consistency.md) ↔ [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md): Open-RMF 승강기 상태의 운영 모드에 사람·AGV·화재·오프라인·비상이 있으므로, 탑승 확정 전에 최신 모드를 확인하는 규칙이 안전 조건과 맞물릴 것으로 보인다. [추정][^ref-286] 여기서 ROP 는 상태를 확인하는 범위만 맡고, 설비 안전 제어 자체는 분류 원문 9장 시설·설비 제어 경계의 연계 대상이다.\n\n### 아직 다루지 않은 연결\n\n14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와 이 대분류 세부영역 사이의 연결은 게시 페이지에 검증된 근거가 없어 싣지 않았다. 이 연결은 해당 세부영역 조사가 진행되면 보강한다."
+          },
+          {
+            "section": "참고 자료",
+            "action": "append",
+            "content": "[^ref-162]: GS1, Identifying a physical location - GLN, 미확인, https://www.gs1.org/standards/id-keys/gln/physical-location, 접근일 2026-09-25 (원문 미열람)\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25 (원문 미열람)\n[^ref-148]: Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json, 미확인, https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json, 접근일 2026-09-25 (원문 미열람)\n[^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25\n[^ref-105]: Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml, 미확인, https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml, 접근일 2026-09-25\n[^ref-040]: Open Robotics, PerformAction Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html, 접근일 2026-09-25\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\n[^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25\n[^ref-286]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg, 접근일 2026-09-25\n[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-25\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\n[^ref-049]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg, 접근일 2026-09-25\n[^ref-285]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorState.msg, 접근일 2026-09-25\n[^ref-284]: Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_lifts.html, 접근일 2026-09-25\n[^ref-282]: Open Robotics (ROS 2 Documentation), Quality of Service settings — ROS 2 Documentation: Jazzy, 미확인, https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-287]: Eclipse Foundation (eclipse-sparkplug GitHub), Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc), 미확인, https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc, 접근일 2026-09-25\n[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)\n[^ref-014]: GS1, Core Business Vocabulary (CBV) Standard, 미확인, https://ref.gs1.org/standards/cbv/, 접근일 2026-09-25 (원문 미열람)\n[^ref-015]: GS1, EPCIS and CBV Implementation Guideline, 미확인, https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-024]: Singh, J. 외, RFID tag readability issues with palletized loads of consumer goods, 2009, https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864, 접근일 2026-09-25 (원문 미열람)\n[^ref-238]: Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies, 2024-04, https://arxiv.org/abs/2404.17524, 접근일 2026-09-25 (원문 미열람)\n[^ref-239]: Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF, 2026-06, https://arxiv.org/abs/2606.17073, 접근일 2026-09-25 (원문 미열람)\n[^ref-080]: Open Robotics, Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-224]: Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans, 2024-08, https://arxiv.org/abs/2408.01737, 접근일 2026-09-25 (원문 미열람)\n[^ref-291]: Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W., Digital Twin in manufacturing: A categorical literature review and classification, 2018, https://www.sciencedirect.com/science/article/pii/S2405896318316021, 접근일 2026-09-25 (원문 미열람)\n[^ref-290]: NIST, DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH, 미확인, https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417, 접근일 2026-09-25 (원문 미열람)\n[^ref-076]: DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps, 2024-09, https://arxiv.org/abs/2409.12842, 접근일 2026-09-25 (원문 미열람)\n[^ref-234]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25 (원문 미열람)\n[^ref-240]: ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules, 2024-02, https://www.iso.org/standard/82334.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-138]: 국가표준인증통합정보시스템(KSSN), KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010147546, 접근일 2026-09-25 (원문 미열람)\n[^ref-159]: ISO, ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability, 미확인, https://www.iso.org/standard/86749.html, 접근일 2026-09-25 (원문 미열람)"
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-09-25 | B. 공통 정보·환경 모델 | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) | run 2026-09-25-32",
+    "index_updates": {
+      "home_recent": "2026-09-25 — B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 작성(5~8 세부영역과 A·C·D·E·F·G 대분류의 연결 27건)",
+      "category_recent": "2026-09-25 — B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 작성(능력 선언·지도 정합·적재물 식별·상태 오래됨 판정이 다른 대분류로 이어지는 방식, 추정 11건 포함)"
+    },
+    "glossary_updates": [],
+    "reference_updates": [
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 팩트시트 JSON 스키마. 적재 명세(loadSets)·지원 동작(mobileRobotActions)을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-105",
+        "org": "Open Robotics (open-rmf)",
+        "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+        "published": null,
+        "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 플릿 어댑터 템플릿 설정. task_capabilities·actions·층별 reference_coordinates 를 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-040",
+        "org": "Open Robotics",
+        "title": "PerformAction Tutorial - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_action_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "입력 원문 텍스트로 확인. Open-RMF 사용자 정의 동작 수행과 완료 통지(execution.finished()) 튜토리얼.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-153",
+        "org": "Open Robotics",
+        "title": "Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "플릿 어댑터 튜토리얼 원본. 로봇–RMF 좌표 변환(좌표 쌍, 대응점 4개 이상 권장)을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 상태 JSON 스키마. loads·loadId·localizationScore·deviationRange·mapId 설명을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-079",
+        "org": "Open Robotics",
+        "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "traffic-editor 장 원본. 차선·경유점·주차·충전기·승강기·문·층 주석과 주행 그래프 내보내기를 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-023",
+        "org": "Open Robotics",
+        "title": "Workcells - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "워크셀 연동 장 원본. 배송 작업의 디스펜서·인제스터 요청–결과 반복을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-049",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_ingestor_msgs/msg/IngestorResult.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_ingestor_msgs/msg/IngestorResult.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "IngestorResult 메시지 정의(시각·요청 id·워크셀 id·상태). 검증자가 원본을 열어 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-285",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorState.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 문 상태 메시지 정의. door_time·door_name·current_mode 필드를 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-286",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 승강기 상태 메시지 정의. 시각·층 이름·운영 모드 등을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-284",
+        "org": "Open Robotics",
+        "title": "Lifts (integration_lifts) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_lifts.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "승강기 연동 장 원본. 승강기 어댑터가 요청을 걸러 전달하는 구조를 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-287",
+        "org": "Eclipse Foundation (eclipse-sparkplug GitHub)",
+        "title": "Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc)",
+        "published": null,
+        "url": "https://github.com/eclipse-sparkplug/sparkplug/blob/master/specification/src/main/asciidoc/chapters/Sparkplug_5_Operational_Behavior.adoc",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "Sparkplug 명세 5장 원본. 노드 종료 뒤 지표를 STALE 로 표시하는 규정을 원문으로 확인했다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "입력 원문 텍스트로 확인. VDA 5050 공식 명세(main 3.0.0).",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-162",
+        "org": "GS1",
+        "title": "Identifying a physical location - GLN",
+        "published": null,
+        "url": "https://www.gs1.org/standards/id-keys/gln/physical-location",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. GLN 으로 물리적 위치와 하위 위치를 식별하는 GS1 안내.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-044",
+        "org": "GS1",
+        "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+        "published": "2021-09-30",
+        "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이번 실행에서 다시 열지 않았다. CBV 온톨로지 원본.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-148",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/robot_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이번 실행에서 다시 열지 않았다. Open-RMF 로봇 상태 스키마.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-282",
+        "org": "Open Robotics (ROS 2 Documentation)",
+        "title": "Quality of Service settings — ROS 2 Documentation: Jazzy",
+        "published": null,
+        "url": "https://docs.ros.org/en/jazzy/Concepts/Intermediate/About-Quality-of-Service-Settings.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ROS 2 QoS 정책(기한·수명·생존성) 설명.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-236",
+        "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+        "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+        "published": "2026-08-11",
+        "url": "https://doi.org/10.3390/electronics15163562",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이종 다중 로봇 작업 배정을 위한 의미 기반 실행 가능성 판정 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-041",
+        "org": "Naqvi, M. R. 외(Scientific Reports)",
+        "title": "Ontology-driven integration of advertised and operational capabilities in robots",
+        "published": "2025-10-02",
+        "url": "https://www.nature.com/articles/s41598-025-16649-3",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제조사가 광고한 능력과 운용 중 관측된 능력을 온톨로지로 통합하는 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-014",
+        "org": "GS1",
+        "title": "Core Business Vocabulary (CBV) Standard",
+        "published": null,
+        "url": "https://ref.gs1.org/standards/cbv/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EPCIS 이벤트의 업무 단계·source/destination 유형 등 표준 어휘.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-015",
+        "org": "GS1",
+        "title": "EPCIS and CBV Implementation Guideline",
+        "published": null,
+        "url": "https://www.gs1.org/docs/epc/EPCIS_Guideline.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EPCIS·CBV 구현 안내(인계 맥락 표현 포함).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-024",
+        "org": "Singh, J. 외",
+        "title": "RFID tag readability issues with palletized loads of consumer goods",
+        "published": "2009",
+        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/pts.864",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 팔레트 적재 소비재의 RFID 태그 판독성 실험 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-238",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "On the Use of Large Language Models to Generate Capability Ontologies",
+        "published": "2024-04",
+        "url": "https://arxiv.org/abs/2404.17524",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LLM 으로 능력 온톨로지를 생성하고 검사하는 방법을 다룬 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-239",
+        "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
+        "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.17073",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. URDF 로봇 기술 파일에서 LLM 으로 로봇 온톨로지를 자동으로 채우는 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-080",
+        "org": "Open Robotics",
+        "title": "Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이번 실행에서 다시 열지 않았다. Open-RMF 주행 지도 연동 장.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-224",
+        "org": "Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.",
+        "title": "Tightly Coupled SLAM with Imprecise Architectural Plans",
+        "published": "2024-08",
+        "url": "https://arxiv.org/abs/2408.01737",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 부정확한 건축 도면을 SLAM 과 결합하는 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-291",
+        "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
+        "title": "Digital Twin in manufacturing: A categorical literature review and classification",
+        "published": "2018",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2405896318316021",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제조 분야 디지털 모델·디지털 섀도·디지털 트윈 분류 문헌 검토.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-290",
+        "org": "NIST",
+        "title": "DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH",
+        "published": null,
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957417",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제조 디지털 트윈 표준화 접근을 다룬 NIST 자료.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-076",
+        "org": "DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S.",
+        "title": "Vision Language Models Can Parse Floor Plan Maps",
+        "published": "2024-09",
+        "url": "https://arxiv.org/abs/2409.12842",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 비전 언어 모델의 평면도 지도 해석 능력을 다룬 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-234",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "title": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 무인운반차 기술 데이터 AAS 서브모델 템플릿.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-240",
+        "org": "ISO",
+        "title": "ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules",
+        "published": "2024-02",
+        "url": "https://www.iso.org/standard/82334.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 서비스 로봇 모듈의 공통 정보 모델 국제표준.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-138",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010147546",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 서비스 로봇 소프트웨어 모듈 정보 모델 KS 표준.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      },
+      {
+        "id": "ref-159",
+        "org": "ISO",
+        "title": "ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability",
+        "published": null,
+        "url": "https://www.iso.org/standard/86749.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 이동로봇의 통신·상호운용성 국제표준.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/b-common-information-and-environment-model/index.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "로봇 지도의 층(level) 이름과 승강기 상태의 층 이름(Open-RMF available_floors 등)을 서로 대응시키는 규칙을 정한 표준이나 공개 구현이 있는가?",
+        "areas": [
+          6,
+          10
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [],
+    "additional_research_requests": [
+      "다른 대분류와의 연결 절: 14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와 B. 공통 정보·환경 모델 세부영역(5~8) 사이의 연결을 뒷받침할 검증된 근거가 없어 싣지 못했다. 해당 세부영역 심화 뒤 대분류 연결을 다시 조사해야 한다.",
+      "다른 대분류와의 연결 절: 연결 27건 가운데 11건이 추론([추정])이다. 두 대분류 사이 규칙을 정한 표준·공개 구현(예: 적재·하역 완료 신호와 EPCIS 인계 이벤트 매핑, 지도 층 이름과 승강기 층 이름 대응)을 조사하면 태그를 보강할 수 있다.",
+      "다른 대분류와의 연결 절: 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분 근거가 제조 대상 자료(Kritzinger 외 2018, NIST)뿐이다. 물류·창고 로봇 대상 자료가 필요하다."
+    ],
+    "fixes_applied": [
+      "패치 대상 — section 은 번호 없는 '다른 대분류와의 연결'(replace)로 하고, 새 각주 정의는 '참고 자료' 절 끝에 append 했으며, 다른 절·auto 마커(category-area-table, category-recent)와 기존 [^ref-003] 각주는 보내지 않아 손대지 않았다.",
+      "f19 — '요청 id·워크셀 id·상태만' 구절을 쓰지 않고 C. 연결·실행 기반 항목에 'IngestorResult 는 시각, 요청 id, 워크셀 id, 상태(ACKNOWLEDGED·SUCCESS·FAILED)를 담는다 [사실][^ref-049]'로 적었고, 워크셀 요청–결과 반복 문장은 [사실][^ref-023] 로 유지했다.",
+      "f22 — 문·승강기 시각 필드와 승강기 어댑터의 선별 전달은 [사실][^ref-285][^ref-286][^ref-284] 로 두고, 발행 주기·오래됨 규칙 부분은 '이번에 연 승강기 연동 문서 범위에서는 찾지 못했다'는 별도 문장 [추정][^ref-284] 로 나눴다.",
+      "f9 — localizationScore·deviationRange·mapId 필드 정의를 [사실][^ref-051] 로, '위치 신뢰도 보고가 제조사 구현에 따라 달라질 수 있다'를 별도 문장 [추정][^ref-051] 로 나눴다.",
+      "f23 — '장치는 통신 계층에 있다'는 일반화 대신 'ROS 2 QoS 의 기한·생존성 정책, Sparkplug 의 NDEATH 뒤 STALE 표시, VDA 5050 의 MQTT 유언을 통한 연결 끊김 통지처럼 통신 계층에도 오래됨을 알리는 장치가 있다'는 사례 서술로 좁히고 세 출처가 각각 한 장치만 다룬다고 밝혔다.",
+      "f26 — 로봇 상태 스키마 필드 나열은 [사실][^ref-148], '가동률·충전·오류 시간 지표의 원천이 될 것'은 별도 문장 [추정][^ref-148] 로 나눴다.",
+      "f17·f26 — 같은 각주(ref-044·ref-031, ref-148)를 재사용하고 A. 업무·공급망 설계 페이지 서술과 같은 내용으로 적었으며, 두 항목에 [A. 업무·공급망 설계](../a-business-supply-chain-design/index.md) 링크를 두었다.",
+      "번호만 쓴 호칭 — f20 의 '7번'을 '7. 화물·재고·자산 식별과 추적'으로, f25 의 '8번·22번'을 '8. 실시간 세계 상태·데이터 일관성'·'22. 시뮬레이션·예측용 디지털 트윈'으로 썼고, Mermaid 노드 표시 이름도 번호와 이름으로 적었다.",
+      "인용 — ref-051 을 포함한 모든 출처의 원문 구절을 직접 인용하지 않고 한국어로 재서술했다(f9·f18 모두 재서술).",
+      "f25 — 8. 실시간 세계 상태·데이터 일관성은 현재 상태 표현, 22. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험으로 나누는 구분을 유지하고, 근거 자료가 제조 대상임을 문장에 밝혔으며 용어집 [디지털 섀도](../../glossary/digital-shadow.md)를 링크했다.",
+      "f24 — 승강기 운영 모드 확인은 ROP 가 상태를 확인하는 범위로만 쓰고, 설비 안전 제어는 분류 원문 9장 시설·설비 제어 경계의 연계 대상이라는 문장을 덧붙였다.",
+      "각주 — 새 각주 33건을 '기관, 제목, 발행일, URL, 접근일 YYYY-MM-DD' 형식으로 참고 자료 절에 넣고, 지정된 원문 미열람 출처 20건에 ' (원문 미열람)'을 붙였으며 ref-040·ref-031·ref-049 와 원본 확인 출처에는 붙이지 않았다. 프런트매터 sources 에 ref-003 과 새 각주 id 를 모두 넣었다.",
+      "열린 질문 — 새 질문을 '로봇 지도의 층(level) 이름과 승강기 상태의 층 이름(Open-RMF available_floors 등)을 서로 대응시키는 규칙을 정한 표준이나 공개 구현이 있는가?'로 좁혀 관련 영역 6. 지도·공간·위치 모델, 10. 설비·건물 시스템 연동으로 등록했고, 본문 6 ↔ 10 항목에서 oq-027·oq-029 와 함께 언급했다.",
+      "'아직 다루지 않은 연결' 문단 — 14. 작업 순서·스케줄링, 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 26. 사이버보안·접근권한·개인정보 와의 연결은 검증된 근거가 없어 싣지 않았다고 번호와 이름으로 적었다."
+    ]
+  },
+  "ttft_ms": 58536,
+  "type": "result",
+  "duration_ms": 211926,
+  "uuid": "9f470324-daf3-433c-9c60-945dcf13331a",
+  "ttft_stream_ms": 2107,
+  "time_to_request_ms": 99,
+  "first_content_frame_ms": 2107,
+  "time_to_request_from_spawn_ms": 11157045,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790307010286.339,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 213.7
+}

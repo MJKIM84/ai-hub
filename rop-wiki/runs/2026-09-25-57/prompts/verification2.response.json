@@ -1,0 +1,148 @@
+{
+  "duration_api_ms": 70311,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.6049507999999997,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 304764,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 7580,
+    "output_tokens_details": {
+      "thinking_tokens": 5201
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 304764,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 7580,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 304764,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 304764
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 7580,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 304764,
+      "webSearchRequests": 0,
+      "costUSD": 2.6049507999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 5201,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-57\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f8(VDA 5050 팩트시트 필수 블록)·f10(Open-RMF PerformAction)은 기존 각주 ref-228·ref-040 을 그대로 재사용했고, 새 사실로 중복 서술하지 않고 '정보 형태 사례'로만 인용했다\",\"형태별 추출 정확도 측정 질문은 1차 판정대로 backlog_updates 에 넣지 않고 q2-02 의 남은 부분(q3-01 과 함께)으로만 적었다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 만 열람 가능). 확인 19건, 미확인 1건(f7 부분 지지), 교차 확인 0건. 강등: f7(다운로드 페이지·API 참조 서술 삭제, 벤더 주장으로 축소). 태그 분리: f8 의 '표준화된 대응물' 해석은 [추정]. 원문 미열람 출처: ref-723, ref-724, ref-725, ref-726, ref-728, ref-729, ref-230(ref-228 은 검증에서 main 스키마를 열어 필수 블록 확인). 주의: 핵심 결론(f9·f13·f16·f20)은 이 위키의 종합 추정이고, 제조사 문서 근거는 모두 벤더 주장이다. 오류 코드표·치수도·도면·사용자 매뉴얼 유형과 AMR 공개 매뉴얼, 포털 매뉴얼 이용 약관은 확인되지 않았다. 형태별 추출 난이도를 로봇 문서에서 측정한 자료는 찾지 못했다(부재 확정 아님). 온톨로지 변경 승인: 근거 문서에 속성 '문서 유형'·'이용 조건' 추가(f3·f17), 시드 개념 확정: 근거 문서(f3·f17), v0.3 → v0.4 / 거부: 근거 문서 속성 '정보 형태'(f16, 6절 '근거 문서의 단위와 버전' 질문에 합침). 새 질문: q2-07(f20, 단계 2), q6-07(f19, 단계 6) 등록, 1건 중복(형태별 추출 정확도 측정 → q2-02·q3-01)은 등록하지 않음. 답한 질문: q2-01(신뢰도 low). 부분 답: q2-02, q2-03. 단계 완료 조건: 미충족(부족: 문서 유형 매트릭스 64칸 가운데 9칸만 채움, 사용자 매뉴얼·오류 코드표·치수도·도면 행 미조사, 공개 문서 샘플 목록에 AMR 샘플·매뉴얼 이용 조건 없음). 단계 전환: 미승인(막힌 질문 q2-02·q2-03·q2-04·q2-05·q2-06·q2-07). 정정 요청 없음. / 2차 통과. 드리프트 없음, 1차 수정 지시 16건 모두 이행 확인(f2 열거 삭제, f7 축소, f8 분리, f9·f13·f16 추론 명시, f20 표현, 벤더 주장 병기, 원문 미열람 각주, 온톨로지 v0.4 네 곳 일치, 단계 전환 표기 '아니오'·'진행 중'·'미충족', 트랙 개요 현재 단계 유지), [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고(수정 지시 대상 아님): 단계 2 페이지 상태 줄은 '진행 중'인데 트랙 정의 current_stage 는 1 이고 트랙 개요 자동 표는 단계 2 를 '대기'로 둔다. 단계 1 전환 승인 기록이 없는 상태에서 CLI 지정으로 단계 2 를 실행했으므로 현재 단계 표기와 단계 1 완료 판정은 사용자 확인이 필요하다. 문서 유형 매트릭스의 행 '페이로드·액세서리 문서' 추가는 갱신 규칙([가정])에 따라 근거 finding(f3·f5·f9)을 달고 더한 것이다. Kinova 의 펌웨어·API 판별 다운로드를 '릴리스 노트' 유형으로 분류한 것은 이 위키의 해석이다. 아이디어 페이지 4절 끝의 온톨로지 v0.4 연결 문장은 태그 없는 연결 문장이다. 표준 목록에서 OmniDocBench 의 관련 영역에 23. 시험·형식 검증·벤치마크를 더한 것은 브리프 밖의 연결 제안이다.\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":true,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[\"로봇 매뉴얼의 형태별(문장·파라미터 표·그림·코드 예제) 추출 정확도를 범용 문서 파싱 벤치마크와 비교해 측정할 수 있는 공개 데이터셋이나 평가 방법이 있는가? (q2-02 에서 파생) — q2-02·q3-01 과 중복\"],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-57",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f8(VDA 5050 팩트시트 필수 블록)·f10(Open-RMF PerformAction)은 기존 각주 ref-228·ref-040 을 그대로 재사용했고, 새 사실로 중복 서술하지 않고 '정보 형태 사례'로만 인용했다",
+        "형태별 추출 정확도 측정 질문은 1차 판정대로 backlog_updates 에 넣지 않고 q2-02 의 남은 부분(q3-01 과 함께)으로만 적었다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 만 열람 가능). 확인 19건, 미확인 1건(f7 부분 지지), 교차 확인 0건. 강등: f7(다운로드 페이지·API 참조 서술 삭제, 벤더 주장으로 축소). 태그 분리: f8 의 '표준화된 대응물' 해석은 [추정]. 원문 미열람 출처: ref-723, ref-724, ref-725, ref-726, ref-728, ref-729, ref-230(ref-228 은 검증에서 main 스키마를 열어 필수 블록 확인). 주의: 핵심 결론(f9·f13·f16·f20)은 이 위키의 종합 추정이고, 제조사 문서 근거는 모두 벤더 주장이다. 오류 코드표·치수도·도면·사용자 매뉴얼 유형과 AMR 공개 매뉴얼, 포털 매뉴얼 이용 약관은 확인되지 않았다. 형태별 추출 난이도를 로봇 문서에서 측정한 자료는 찾지 못했다(부재 확정 아님). 온톨로지 변경 승인: 근거 문서에 속성 '문서 유형'·'이용 조건' 추가(f3·f17), 시드 개념 확정: 근거 문서(f3·f17), v0.3 → v0.4 / 거부: 근거 문서 속성 '정보 형태'(f16, 6절 '근거 문서의 단위와 버전' 질문에 합침). 새 질문: q2-07(f20, 단계 2), q6-07(f19, 단계 6) 등록, 1건 중복(형태별 추출 정확도 측정 → q2-02·q3-01)은 등록하지 않음. 답한 질문: q2-01(신뢰도 low). 부분 답: q2-02, q2-03. 단계 완료 조건: 미충족(부족: 문서 유형 매트릭스 64칸 가운데 9칸만 채움, 사용자 매뉴얼·오류 코드표·치수도·도면 행 미조사, 공개 문서 샘플 목록에 AMR 샘플·매뉴얼 이용 조건 없음). 단계 전환: 미승인(막힌 질문 q2-02·q2-03·q2-04·q2-05·q2-06·q2-07). 정정 요청 없음. / 2차 통과. 드리프트 없음, 1차 수정 지시 16건 모두 이행 확인(f2 열거 삭제, f7 축소, f8 분리, f9·f13·f16 추론 명시, f20 표현, 벤더 주장 병기, 원문 미열람 각주, 온톨로지 v0.4 네 곳 일치, 단계 전환 표기 '아니오'·'진행 중'·'미충족', 트랙 개요 현재 단계 유지), [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고(수정 지시 대상 아님): 단계 2 페이지 상태 줄은 '진행 중'인데 트랙 정의 current_stage 는 1 이고 트랙 개요 자동 표는 단계 2 를 '대기'로 둔다. 단계 1 전환 승인 기록이 없는 상태에서 CLI 지정으로 단계 2 를 실행했으므로 현재 단계 표기와 단계 1 완료 판정은 사용자 확인이 필요하다. 문서 유형 매트릭스의 행 '페이로드·액세서리 문서' 추가는 갱신 규칙([가정])에 따라 근거 finding(f3·f5·f9)을 달고 더한 것이다. Kinova 의 펌웨어·API 판별 다운로드를 '릴리스 노트' 유형으로 분류한 것은 이 위키의 해석이다. 아이디어 페이지 4절 끝의 온톨로지 v0.4 연결 문장은 태그 없는 연결 문장이다. 표준 목록에서 OmniDocBench 의 관련 영역에 23. 시험·형식 검증·벤치마크를 더한 것은 브리프 밖의 연결 제안이다.",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": true,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [
+        "로봇 매뉴얼의 형태별(문장·파라미터 표·그림·코드 예제) 추출 정확도를 범용 문서 파싱 벤치마크와 비교해 측정할 수 있는 공개 데이터셋이나 평가 방법이 있는가? (q2-02 에서 파생) — q2-02·q3-01 과 중복"
+      ],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 53314,
+  "type": "result",
+  "duration_ms": 70456,
+  "uuid": "e114478b-0c59-44f4-a72c-d642d963d481",
+  "ttft_stream_ms": 4346,
+  "time_to_request_ms": 85,
+  "first_content_frame_ms": 4346,
+  "time_to_request_from_spawn_ms": 4685552,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790317781545.1484,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 72.4
+}

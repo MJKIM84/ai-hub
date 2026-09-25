@@ -1,0 +1,135 @@
+{
+  "duration_api_ms": 35638,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.9030348,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 101317,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 3863,
+    "output_tokens_details": {
+      "thinking_tokens": 2241
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 101317,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3863,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 101317,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 101317
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 3863,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 101317,
+      "webSearchRequests": 0,
+      "costUSD": 0.9030348,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2241,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-60\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"A. 업무·공급망 설계, B. 공통 정보·환경 모델, C. 연결·실행 기반, D. 계획·최적화 페이지의 '다른 대분류와의 연결' 절과 겹치는 연결에는 상호 참조 링크를 달았고 같은 각주 id를 썼다. 모순은 없다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 1차 결과: 확인 31건, 미확인 0건, 교차 확인 0건. 강등: f5·f16·f17·f20·f21·f29·f30은 [사실]에서 연구 내용 [사실]과 연결 해석 [추정]으로 나눴다. 원문 미열람 출처: ref-007, ref-044, ref-104, ref-111, ref-188, ref-202, ref-203, ref-204, ref-209, ref-210, ref-230, ref-283, ref-313, ref-351, ref-353, ref-394, ref-417, ref-449, ref-451, ref-467, ref-468, ref-469, ref-470, ref-473, ref-475, ref-476, ref-483, ref-484, ref-489, ref-492, ref-537. ref-008은 이번 실행의 열람 출처가 아니며, 검증자가 공식 저장소 scenario.rst로 내용을 확인했다. 주의: 연결 서술 대부분은 게시된 17~20 세부영역 페이지의 단일 출처 주장을 다시 쓴 것이다. 22~28 세부영역은 seed 상태이다. 20. 예외 복구·재계획·업무 연속성과 22. 시뮬레이션·예측용 디지털 트윈의 연결(oq-081)은 근거가 없다. 21·24·26, 5·6과의 연결도 근거가 없다. 정정 요청은 없다. / 2차 통과. 드리프트는 없다. 1차 수정 지시 14건을 모두 이행했다. 분리 태그, f13 범위 맥락 병기, 인용 0회, 원문 미열람 표기, ref-007 재사용, f24 기준일 분리, f28 미확인 병기, 범위 경계 문구, 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분, 상호 참조, 번호와 이름 함께 쓰기가 모두 반영됐다. [분류원문]은 보존됐고 섹션 순서를 지켰으며 링크는 유효하다(형식 검증 통과). 참고 사항 두 가지가 있다. (1) f23 뒤 범위 문장([추정])은 분류 원문 9장에 근거한 경계 서술이다. 각주 ref-104는 데모 흐름만 뒷받침한다. (2) reference_updates가 ref-044·ref-104·ref-111·ref-230·ref-283·ref-313·ref-449·ref-489·ref-537에 source_unopened: true를 넣었다. 이 표시는 이번 실행 기준이다. 이전 실행에서 연 기록(참고문헌 색인 '예')을 퍼블리셔가 '아니오'로 덮어쓰지 않도록 병합 규칙 확인을 요청한다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-60",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "A. 업무·공급망 설계, B. 공통 정보·환경 모델, C. 연결·실행 기반, D. 계획·최적화 페이지의 '다른 대분류와의 연결' 절과 겹치는 연결에는 상호 참조 링크를 달았고 같은 각주 id를 썼다. 모순은 없다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 1차 결과: 확인 31건, 미확인 0건, 교차 확인 0건. 강등: f5·f16·f17·f20·f21·f29·f30은 [사실]에서 연구 내용 [사실]과 연결 해석 [추정]으로 나눴다. 원문 미열람 출처: ref-007, ref-044, ref-104, ref-111, ref-188, ref-202, ref-203, ref-204, ref-209, ref-210, ref-230, ref-283, ref-313, ref-351, ref-353, ref-394, ref-417, ref-449, ref-451, ref-467, ref-468, ref-469, ref-470, ref-473, ref-475, ref-476, ref-483, ref-484, ref-489, ref-492, ref-537. ref-008은 이번 실행의 열람 출처가 아니며, 검증자가 공식 저장소 scenario.rst로 내용을 확인했다. 주의: 연결 서술 대부분은 게시된 17~20 세부영역 페이지의 단일 출처 주장을 다시 쓴 것이다. 22~28 세부영역은 seed 상태이다. 20. 예외 복구·재계획·업무 연속성과 22. 시뮬레이션·예측용 디지털 트윈의 연결(oq-081)은 근거가 없다. 21·24·26, 5·6과의 연결도 근거가 없다. 정정 요청은 없다. / 2차 통과. 드리프트는 없다. 1차 수정 지시 14건을 모두 이행했다. 분리 태그, f13 범위 맥락 병기, 인용 0회, 원문 미열람 표기, ref-007 재사용, f24 기준일 분리, f28 미확인 병기, 범위 경계 문구, 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분, 상호 참조, 번호와 이름 함께 쓰기가 모두 반영됐다. [분류원문]은 보존됐고 섹션 순서를 지켰으며 링크는 유효하다(형식 검증 통과). 참고 사항 두 가지가 있다. (1) f23 뒤 범위 문장([추정])은 분류 원문 9장에 근거한 경계 서술이다. 각주 ref-104는 데모 흐름만 뒷받침한다. (2) reference_updates가 ref-044·ref-104·ref-111·ref-230·ref-283·ref-313·ref-449·ref-489·ref-537에 source_unopened: true를 넣었다. 이 표시는 이번 실행 기준이다. 이전 실행에서 연 기록(참고문헌 색인 '예')을 퍼블리셔가 '아니오'로 덮어쓰지 않도록 병합 규칙 확인을 요청한다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 23680,
+  "type": "result",
+  "duration_ms": 35732,
+  "uuid": "a9f20471-dbd3-452b-a7fd-394da212494d",
+  "ttft_stream_ms": 1780,
+  "time_to_request_ms": 73,
+  "first_content_frame_ms": 1781,
+  "time_to_request_from_spawn_ms": 4729545,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790317825688.3855,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 37.4
+}

@@ -1,0 +1,209 @@
+{
+  "run_id": "2026-09-25-62",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-539 README를 github_raw로 다시 열었다. 설명 문장, AI2-THOR 2.1.0, 목표 기술과 단계별 지시를 확인했다. 논문 검색 요약에는 'AI2-THOR 2.0'으로 나오므로 버전은 'README 기준 2.1.0'으로 적는다. 발행일 미확인이며 기준일은 확인일 2026-09-25다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-540 원문 미열람): 검증 검색 요약과 CVF 공개 PDF 목록에서 25,743개 지시, 8,055개 전문가 시연, PDDL 계획기로 만든 시연을 확인했다. ref-539 README에도 같은 두 수치가 있다. 다만 두 출처는 같은 저자 계열이라 독립 교차 확인은 아니다. 저자 보고값으로 적는다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "부분 확인: ref-541 README를 다시 열어 '가정 서비스 에이전트 작업 계획 성능의 자동 정량화', ALFRED·AI2-THOR와 Watch-And-Help 확장·VirtualHome 두 쌍, ICLR 2024를 확인했다. 성공률 지표는 README 열람 요약에서 명시적으로 확인되지 않았다. 따라서 그 부분은 원문 미열람 논문 ref-542에 기댄다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "부분 확인: ref-543 README를 다시 열어 Commander/Driver(논문 표기 Follower), AI2-THOR, EDH·TfD 추론, 라이선스(코드 MIT, 이미지 Apache 2.0, 데이터 CDLA-Sharing 1.0)를 확인했다. TATC는 README 열람 요약에 나오지 않았다. TATC를 포함한 세 벤치마크는 논문(arXiv 2110.00534, 브리프 출처 미등록) 검색 요약에서만 확인된다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-089 README를 다시 열어 '작업 복잡도가 다른 네 범주의 상위 지시'와 data/final_test에 작업, 가용 로봇, 작업 후 환경 최종 상태가 있다는 설명을 확인했다. 파일 구조에 관한 진술이다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-090 원문 미열람): 검증 검색 요약에서 SR·TCR·GCR·RU·Exe 정의, 36개 과제(Elemental·Simple·Compound·Complex)를 확인했다. GCR은 정답 최종 상태 조건과 달성 상태의 차이, RU는 전이 수와 정답 전이 수의 비교다. 저자 논문 단일 출처다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-544 원문 미열람): 검증 검색 요약에서 70개 작업, 5개 평면도, 복합 30·복잡 20·모호 20, 작업마다 자연어 지시·정답 PDDL 도메인·목표 조건을 확인했다. ref-164 README는 '두 복잡도 수준'이라고만 적어 표현이 다르다(모호 지시를 별도 범주로 본 것으로 보임). 두 표현을 병기한다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-354 README를 다시 열어 1000쌍, 보정 100·시험 900(절반판 400), 환경 설명·지시 변형·모호성 유형·명확화 Q&A·계획·모호성 발생 지점 필드, 라이선스 미기재를 확인했다. 기존 페이지의 AmbiK 서술(1000쌍, 2000개 작업)과 충돌하지 않는다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-359 원문 미열람): 검증 검색 요약에서 ToolBench 정상 표본 200건을 사람이 수동으로 '오염'시킨 NoisyToolBench, 항목 구성(불완전 질의·API·물어야 할 질문·답·기대 함수 호출), ToolEvaluator의 정확도·상호작용 효율 측정을 확인했다. 저자 보고다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-545 README를 다시 열어 의도 7개, 의도당 2000개 이상 크라우드소싱 질의, 슬롯별 precision·recall(의도 분류가 아닌 슬롯 채우기 중심)을 확인했다. 발행 2017-06은 디렉터리 이름 기준이다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 불일치(ref-056 원문 미열람): 47개 템플릿·2,125개 고유 LTL 식·약 5만 개 영어 발화 말뭉치는 검증 검색 요약(arXiv html, OpenReview)에서 확인했다. OSM 평가 자료는 요약에 '21개 새 OSM 지역'으로 나와 브리프의 '22개 환경'과 다르다. '1만 개 이상 명령'은 확인하지 못했다(판 차이 가능). 말뭉치 부분만 [사실]로 두고, OSM 평가 자료 부분은 [추정]·미확인으로 강등한다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-546 원문 미열람): 검증 검색에서 같은 URL(dataSetSn=71547)과 제목을 확인했다. 자연어 명령에 대한 행동 순서 예측과 1인칭 이미지에서 상호작용 객체 위치 파악이라는 구축 목적 문장도 확인했다. 구축 기관·규모·정답 형식·발행일은 미확인이다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-547 원문 미열람): 검증 검색에서 arXiv 2502.09238, 주거 지역 실외 라스트마일 배송 항법 벤치마크, OPEN 시스템(OSM, 배송 지시 이해에 LLM, 위치추정에 VLM), 코드·벤치마크 공개를 확인했다. '연계 대상:' 표시가 적절하다(분류 원문 9장 업종별 조건·실외 차량)."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-548 원문 미열람): 검증 검색에서 같은 DiVA URL·제목과 '구문상 유효한 STL 식을 일관되게 만들지 못한다'는 결론을 확인했다. 기관은 Högskolan Väst(University West) 저장소로 확인했다. 저자·발행일·학위 수준·평가 규모는 미확인이다. 단일 학위논문이므로 신뢰도 low를 유지한다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 이 위키의 종합이며 [추정]을 유지한다. 구성 근거인 ALFRED PDDL 목표 조건, SMART-LLM 최종 상태·전이 수, MAT-THOR 정답 PDDL·목표 조건, AmbiK 명확화 Q&A, Lang2LTL 발화–LTL 쌍은 모두 검증에서 확인했다(f11은 말뭉치 부분만)."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검색 범위의 관찰이며 부재의 확인이 아니라고 명시되어 [추정]을 유지한다. 기존 페이지(아이디어 2 3절 '물류 적용 공백', q1-04 답)와 같은 방향이다. flow_step '피킹'·flow_item '시작 조건'은 근거가 약하므로 흐름 매트릭스에 채우지 않는다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: SMART-LLM의 RU(전이 수 비교)와 GCR(최종 상태 조건) 정의를 검증 검색으로 확인했다. 배정 최적성(이동거리·납기)을 정답으로 둔다는 서술은 요약에서 보이지 않았다. 이 위키의 추론이므로 [추정]을 유지한다. 열린 질문 oq-052와 이어진다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Snips 슬롯별 precision·recall(README 확인), SMART-LLM GCR·Exe(검색 확인)를 대응시킨 이 위키의 추론이다. LoTa-Bench 성공률은 원문 미열람 논문에 기대므로 [추정]을 유지한다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "open_questions_new 1건(국내 물류센터 지시–정답 공개 데이터셋)은 트랙 백로그 q1-06(물류·창고 현장 지시를 대상으로 한 LLM 작업 분해 연구나 지시–작업 데이터셋이 있는가)과 뜻이 겹친다. 트랙 전용 질문 범위이므로 일반 열린 질문으로 등록하지 않는다.",
+      "f8(AmbiK)·f9(NoisyToolBench)는 단계 1 페이지 q1-04 답과 아이디어 2 3절의 AmbiK·Ask-when-Needed 서술과 대상이 같다. 모순은 없으며 기존 각주 ref-354·ref-359를 재사용했다.",
+      "f16은 아이디어 2 3절 '물류 적용 공백' 문장(실행 2026-09-25-30)과 같은 방향의 관찰이다. 중복 서술하지 말고 평가 데이터 관점으로만 쓴다.",
+      "f17은 13. 작업 배정 — MRTA의 열린 질문 oq-052(최근접 대 전역 최적화 배정 실측 비교)와 이어진다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f11: 말뭉치 부분('47개 LTL 식 템플릿에서 나온 2,125개 고유 LTL 식에 약 5만 개 영어 발화를 대응시킨 말뭉치', 저자 보고)만 [사실]로 쓴다. OSM 평가 자료 부분은 삭제하거나 '실제 OSM 지역 평가 자료(지역 수는 요약에 따라 21·22개로 다르고 명령 수는 미확인)'로 [추정] 처리한다. 이유: 검증 검색 요약은 21개 지역이라 적고 '1만 개 이상 명령'은 확인되지 않았다.",
+    "f4: README(ref-543) 근거로는 Commander와 수행 역할(README 표기 Driver, 논문 표기 Follower), AI2-THOR, EDH·TfD, 세 라이선스만 쓴다. TATC는 README에서 확인되지 않았으므로 '논문은 TATC를 더해 세 벤치마크를 둔다고 알려져 있으나 이 위키는 원문으로 확인하지 못했다(미확인)'로 쓰거나 뺀다.",
+    "f3: '성공률로 계획기를 비교한다' 부분에는 원문 미열람 논문 ref-542 각주를 단다. README(ref-541)는 자동 정량화와 두 데이터셋·시뮬레이터 쌍의 근거로만 쓴다.",
+    "f1: AI2-THOR 버전은 'README 기준 2.1.0'으로 적는다. 이유: 논문 요약에는 2.0으로 나온다.",
+    "f7: README(ref-164)의 '두 복잡도 수준' 표현과 논문(ref-544, 원문 미열람)의 '복합 30·복잡 20·모호 지시 20' 구성을 함께 적고, 70개 작업·5개 평면도가 저자 보고임을 같은 문장에 밝힌다.",
+    "f2·f6·f7·f9·f11: 수치를 쓸 때마다 같은 문장에 '저자 보고, 원문 미열람'을 적는다. f2는 README와 논문이 같은 저자 계열이라 독립 교차 확인이 아님을 적는다.",
+    "f12: AI Hub 데이터는 '구축 기관·규모·정답 형식·발행일 미확인'을 병기한다. 가정(일상생활) 환경이며 물류 지시 데이터가 아님을 적는다.",
+    "f14: '저자·발행일·평가 자료 규모 미확인, 학위논문 단일 출처'를 같은 문장에 적는다. 학위 수준(학사·석사)은 쓰지 않는다.",
+    "f13: '연계 대상:' 표시를 유지한다. ROP가 실외 배송 항법을 맡는 것처럼 쓰지 않고 평가 자료 사례로만 쓴다.",
+    "f15·f16·f17·f18: [추정]을 유지하고 '이 위키의 정리(추론)'임을 밝힌다. f16은 '부재의 확인이 아님'을 유지한다. f16의 flow_step·flow_item(피킹/시작 조건)은 flow_matrix_updates에 넣지 않는다.",
+    "원문 미열람 표시: ref-540·ref-542·ref-544·ref-546·ref-547·ref-548과 재사용 ref-090·ref-359·ref-056의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates에 source_unopened: true를 넣는다. ref-548 각주의 기관 자리는 'Högskolan Väst (DiVA 학위논문, 저자 미확인)', 발행일 자리는 '미확인'으로 둔다.",
+    "open_questions_new 1건(국내 물류센터 지시–정답 공개 데이터셋)은 트랙 백로그 q1-06과 뜻이 겹치는 트랙 전용 질문이므로 open_question_updates에 넣지 않는다. 국내 물류 지시 데이터셋을 찾지 못했다는 점은 단계 2 페이지 4절 남은 불확실성에 f16 근거로 적고 q1-06에 연결한다.",
+    "단계 2 페이지 2절: q2-03을 '답함', 답한 실행 id 2026-09-25-62, 답 위치 #q2-03으로 바꾼다. 3절 소제목 '### q2-03 … {#q2-03}'을 신설한다. 상태 줄의 열린 질문·답한 질문 수를 표와 맞춘다.",
+    "단계 2 페이지 6절: 완료 조건 첫 항목은 평가 데이터 소절 반영으로 충족으로 적을 수 있다. 둘째 항목(작업 요구 적재물 속성·완료 조건 미확정)은 '미충족', 검증 판정 칸은 두 항목 모두 '미충족 · 미승인'으로 둔다. 아래 줄은 '다음 단계로 전환: 아니오(작업 모델 정보 항목 일부만 반영 — 작업 요구 적재물 속성·완료 조건 미확정, 열린 질문 q2-04·q2-05·q2-06·q2-07)'로 쓴다.",
+    "아이디어 2 페이지 4절: 도입 문단과 두 소절 끝의 '평가 데이터(q2-03)는 아직 조사하지 않았다' 문장을 새 소절 '해석·분해 평가 데이터' 안내로 바꾼다. 새 소절의 비교표는 README·논문의 표를 옮기지 말고 이 위키가 구성한 것임을 밝힌다. 6절(검증 방법) 지표는 단계 5에서 다룸을 적는다.",
+    "13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영, 23. 시험·형식 검증·벤치마크는 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals로만 낸다. 교차 규칙에 따라 13과 27에 서로 연결을 표시한다.",
+    "새 질문 두 건은 단계 5로 등록한다. 'MILP 해법기로 정답 배정 생성' 질문은 q3-05·q5-01과 인접하지만 정답 생성 방법을 묻는 점이 달라 등록하되, 질문 문장 끝에 '(관련: q3-05, q5-01)'을 붙인다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증했다(fetch_mode mirror_only). GitHub 공식 저장소 README 7건(ref-539·ref-541·ref-543·ref-545·ref-089·ref-164·ref-354)은 raw 경로로 다시 열어 확인했고, 나머지는 검색 결과 일치로 확인했다. 확인 17건, 미확인 1건(f11), 교차 확인 0건. 강등: f11의 OSM 평가 자료 부분을 사실에서 추정으로 내렸다(요약에는 21개 지역으로 나오고 1만 개 명령은 미확인). 말뭉치 수치(47개 템플릿, 2,125개 식, 약 5만 개 발화)는 사실로 유지한다. 원문 미열람 출처: ref-540, ref-542, ref-544, ref-546, ref-547, ref-548, ref-090, ref-359, ref-056. 주의: 데이터셋 수치(ALFRED 25,743·8,055, SMART-LLM 36개, MAT-THOR 70개, NoisyToolBench 200건)는 모두 저자 보고값이다. TEACh의 TATC 벤치마크와 LoTa-Bench의 성공률 지표는 README에서 확인되지 않아 논문(원문 미열람)에 기댄다. q2-03의 핵심 결론(필요한 지시–정답 쌍 구조, 물류 지시 데이터셋 공백, 배정 최적성 정답 부재, 두 층 평가)은 모두 이 위키의 추론([추정])이다. 확인한 데이터셋은 가정·주방·도구 호출·실외 배송 환경이며 물류 창고 지시 데이터셋은 검색 범위에서 찾지 못했다(부재 확인 아님). 일반 열린 질문 1건은 트랙 백로그 q1-06과 겹쳐 등록하지 않는다. 백로그의 q3-09와 q3-10, q1-05와 q1-06이 사실상 같은 질문이므로 정리가 필요하다(백로그 담당 확인 요청). 검증 검색 9회를 썼다(리서치 17회 포함 26/40). 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 없음(변경 제안 없음). 새 질문 2건(단계 5)을 등록한다. 단계 완료 조건: 미충족(부족: 업무 분해·배정 설계 초안의 작업 요구 적재물 속성·업무 완료 조건 미확정. 아이디어 2 4절 조건은 이번 반영으로 채워질 수 있음). 단계 전환: 미승인(막힌 질문 q2-04·q2-05·q2-06·q2-07).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "run_id": "2026-09-25-08",
+  "pages": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성(상위 지시의 변경·취소를 로봇 작업으로 옮기는 ISA-95·B2MML·OPC UA Job Control·VDA 5050·Open-RMF 정리), 13절 각주 11건, 페이지 상태 자동 영역 추가. 2차 수정: 5절 시작 조건·9절 마지막 문장을 사실/추정으로 나눔"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area01-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 1. 주문·업무 시스템 연계 의 \"6. 대표 접근법과 기술\" 절을 옮겼다(2차 수정 대상 아님, 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area01-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 1. 주문·업무 시스템 연계 의 \"4. 핵심 개념과 용어\" 절을 옮겼다(2차 수정 대상 아님, 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area01-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 1. 주문·업무 시스템 연계 의 \"3. 왜 중요한가\" 절을 옮겼다. 2차 수정: [의견]에 '구축자 의견' 병기"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area01-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 1. 주문·업무 시스템 연계 의 \"8. 대표 연구와 자료\" 절을 옮겼다. 2차 수정: [의견]에 '구축자 의견' 병기"
+    }
+  ],
+  "outline": [
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 550,
+      "summary": "VDA 5050은 외부 IT 시스템(예: WMS·ERP)과의 인터페이스를 범위 밖으로 두므로 상위 지시를 로봇 작업으로 옮기는 번역 계층이 필요하다. [사실][^ref-031]",
+      "planned_findings": [
+        "f4",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 750,
+      "summary": "상위 쪽 작업 지시·작업 응답·B2MML 거래 동사와 로봇 쪽 작업 상태를 나란히 정의한다. [사실][^ref-116]",
+      "planned_findings": [
+        "f11",
+        "f9",
+        "f10",
+        "f7",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 1000,
+      "summary": "피킹 → 출하 단계에서 출고 우선순위 변경으로 진행 중 로봇 작업을 갱신·취소하는 가상 시나리오. cancelOrder 는 정지만 규정한다. [사실][^ref-031]",
+      "planned_findings": [
+        "f10",
+        "f14",
+        "f13",
+        "f8",
+        "f1",
+        "f3",
+        "f7",
+        "f11",
+        "f2",
+        "f17",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1100,
+      "summary": "진행 중 작업 변경 수단은 주문 갱신, 취소 후 재지시, 요청 시점 우선순위 지정이며 상위 지시의 번역은 일대일이 아닐 것으로 보인다. [추정][^ref-031]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f6",
+        "f5",
+        "f8",
+        "f12",
+        "f17",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 400,
+      "summary": "B2MML, OPC UA for ISA-95 Job Control, VDA 5050 3.0.0, Open-RMF 작업 API 네 가지를 비교한다. [사실][^ref-114]",
+      "planned_findings": [
+        "f9",
+        "f10",
+        "f12",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 400,
+      "summary": "RMFS 운영 의사결정을 주문 배정·작업 생성·작업 배정·경로 계획으로 나눈 연구가 대표 자료다. [사실][^ref-117]",
+      "planned_findings": [
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 700,
+      "summary": "ROP는 작업 지시를 로봇 작업으로 바꾸고 결과를 작업 응답으로 되돌리는 경계에 서는 것으로 보이며, 경계는 제품 전략에 따라 이동할 수 있다. [추정][^ref-116]",
+      "planned_findings": [
+        "f18",
+        "f4"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 550,
+      "summary": "2. 공정·워크플로 모델링, 9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 14. 작업 순서·스케줄링, 20. 예외 복구·재계획·업무 연속성, 28. 표준·상호운용성·다사업자 거버넌스와 연결한다.",
+      "planned_findings": [
+        "f11",
+        "f1",
+        "f8",
+        "f3",
+        "f6",
+        "f13",
+        "f16",
+        "f2",
+        "f17",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 300,
+      "summary": "표준 매핑 존재 여부와 되돌림·재고 반영 책임을 열린 질문으로 둔다.",
+      "planned_findings": [
+        "f15",
+        "f17"
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 1. 주문·업무 시스템 연계 | 영역 심화: 3~11절 초안 작성(ISA-95·B2MML·OPC UA Job Control·VDA 5050·Open-RMF의 변경·취소 처리와 번역 경계), 2차 수정 반영 | run 2026-09-25-08",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 1. 주문·업무 시스템 연계: 영역 심화 초안 작성(상위 지시의 변경·취소를 로봇 작업으로 옮기는 표준·인터페이스 정리)",
+    "category_recent": "2026-09-25 — 1. 주문·업무 시스템 연계: 3~11절 초안 작성(작업 지시·작업 응답, VDA 5050 주문 갱신·취소, Open-RMF 작업 API)",
+    "area_recent": "2026-09-25 — 1. 주문·업무 시스템 연계: 3~11절 신규 작성, 피킹 → 출하 우선순위 변경 시나리오"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "job-order",
+      "term_ko": "작업 지시",
+      "term_en": "Job Order (ISA-95)",
+      "definition": "ISA-95 운영 관리 활동 모델에서 실행할 작업 단위의 요청으로, 작업 요청(work request)을 이루는 구성 요소이다.",
+      "description": "작업 일정(work schedule)은 하나 이상의 작업 요청으로, 작업 요청은 하나 이상의 작업 지시로 이루어진다. 용어집의 기업–제어 시스템 통합 표준(ISA-95) 항목과 연결한다. 근거 출처는 원문 미열람이다.",
+      "related_areas": [
+        1,
+        2
+      ],
+      "sources": [
+        "ref-116"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "job-response",
+      "term_ko": "작업 응답",
+      "term_en": "Job Response (ISA-95)",
+      "definition": "ISA-95 에서 작업 지시에 대해 수행된 작업을 보고하는 정보이다.",
+      "description": "작업 지시와 함께 요청–응답 순환을 이룬다. 용어집의 기업–제어 시스템 통합 표준(ISA-95) 항목과 연결한다. 근거 출처는 원문 미열람이다.",
+      "related_areas": [
+        1,
+        2
+      ],
+      "sources": [
+        "ref-116"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "b2mml",
+      "term_ko": "B2MML",
+      "term_en": "Business To Manufacturing Markup Language (B2MML)",
+      "definition": "MESA International 이 공개한 ISA-95(IEC/ISO 62264) 데이터 모델의 XML 스키마 구현이다.",
+      "description": "ERP·공급망 시스템과 제조 실행·제어 시스템의 통합에 쓰이며, 거래 프로파일 스키마(Version 0701)에 NOTIFY·GET·PROCESS·CHANGE·CANCEL·CONFIRM·SYNC 계열 거래 동사를 정의한다.",
+      "related_areas": [
+        1,
+        28
+      ],
+      "sources": [
+        "ref-114",
+        "ref-115"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세의 GitHub 저장소 본문(현재 main 은 3.0.0 판). 주문 갱신·cancelOrder·주문 거부 오류 유형과 명세 범위를 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-110",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 요청 JSON 스키마. category·description 필수, 우선순위·가장 이른 시작 시각·요청자·라벨·허용 플릿 선택 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-111",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/cancel_task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 취소 요청 JSON 스키마. type·task_id 필수, labels 선택.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-112",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 상태 JSON 스키마. 상태 값 12종과 배정 로봇·예상 시간·단계·중단·취소·강제 종료 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-113",
+      "org": "Open Robotics",
+      "title": "Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 에 작업을 보내는 방법(dispatch_task_request, robot_task_request)과 취소 요청 스키마 위치를 안내하는 공식 문서.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-114",
+      "org": "MESA International",
+      "title": "MESAInternational/B2MML-BatchML — README",
+      "published": null,
+      "url": "https://github.com/MESAInternational/B2MML-BatchML",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ISA-95(IEC/ISO 62264) 데이터 모델을 XML 스키마로 구현한 B2MML·BatchML 공식 저장소 README.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-115",
+      "org": "MESA International",
+      "title": "B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd",
+      "published": null,
+      "url": "https://github.com/MESAInternational/B2MML-BatchML/blob/master/Schema/B2MML-TransactionProfile.xsd",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "B2MML 메시지의 거래 동사(NOTIFY·GET·PROCESS·CHANGE·CANCEL·CONFIRM·SYNC 계열)를 정의하는 공식 스키마 파일. 파일 머리 표기는 Version 0701(저작권 표기 2023).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-116",
+      "org": "OPC Foundation / ISA",
+      "title": "OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4)",
+      "published": null,
+      "url": "https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ISA-95 작업 지시·작업 응답 모델과 작업 지시 수신 객체의 Store·StoreAndStart·Update·Abort·Pause·Resume 등의 메서드를 정의한 OPC UA 동반 규격의 공식 온라인 참조(v2.00).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-117",
+      "org": "Merschformann, M. 외",
+      "title": "Decision Rules for Robotic Mobile Fulfillment Systems",
+      "published": "2018-01",
+      "url": "https://arxiv.org/abs/1801.06703",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 의 운영 의사결정을 주문 배정·작업 생성·작업 배정·경로 계획으로 나누고 결정 규칙을 시뮬레이션으로 비교한 프리프린트.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    },
+    {
+      "id": "ref-118",
+      "org": "씨메스(CMES Robotics)",
+      "title": "물류 자동화 시스템을 이해하는 첫 걸음 : WES · WCS · WMS, 무엇이 다를까요?",
+      "published": null,
+      "url": "https://blog.cmesrobotics.ai/wes-wcs-wms",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 국내 로봇 기업이 WMS·WES·WCS 의 역할 차이와 로봇·설비 연동을 설명한 블로그 글.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "ISA-95 작업 지시·작업 응답(B2MML, OPC UA for ISA-95 Job Control)을 VDA 5050 주문·상태나 Open-RMF 작업 요청·상태로 옮기는 표준 매핑이나 공개 구현이 있는가?",
+      "areas": [
+        1,
+        9,
+        28
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇이 이미 화물을 싣거나 옮긴 뒤 상위 시스템이 주문을 취소·변경하면 되돌림 작업과 재고 반영을 누가 어떤 규칙으로 정하는가(국내 물류센터 사례 포함)?",
+      "areas": [
+        1,
+        20
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "출하",
+      "item": "시작 조건",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "피킹",
+      "item": "완료·인계",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "1. 주문·업무 시스템 연계"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "B2MML (Business To Manufacturing Markup Language, 거래 프로파일 Version 0701)",
+      "kind": "표준",
+      "org": "MESA International",
+      "url": "https://github.com/MESAInternational/B2MML-BatchML",
+      "related_areas": [
+        1,
+        28
+      ],
+      "summary": "ISA-95(IEC/ISO 62264) 데이터 모델의 XML 스키마 구현. 거래 프로파일 스키마에 NOTIFY·GET·PROCESS·CHANGE·CANCEL·CONFIRM·SYNC 계열 거래 동사를 정의한다.",
+      "ref_id": "ref-114"
+    },
+    {
+      "name": "OPC UA for ISA-95 Part 4: Job Control (OPC 10031-4)",
+      "kind": "표준",
+      "org": "OPC Foundation / ISA",
+      "url": "https://reference.opcfoundation.org/ISA95JOBCONTROL/v200/docs/",
+      "related_areas": [
+        1,
+        2
+      ],
+      "summary": "ISA-95 작업 지시·작업 응답을 OPC UA로 주고받는 동반 규격. 작업 지시 수신 객체에 Store·StoreAndStart·Update·Abort 등의 메서드를 둔다(온라인 참조 v2.00 기준, 원문 미열람).",
+      "ref_id": "ref-116"
+    }
+  ],
+  "additional_research_requests": [
+    "3·8절: ERP·TMS·MES 와 로봇 작업을 연계한 실제 사례와 SCOR 관점 자료가 없어 '왜 중요한가'와 '대표 연구와 자료'의 근거가 얇다 — 학술·표준·정부 자료 조사 필요.",
+    "6절: VDA 5050 3.0.0 주문 메시지에 우선순위 필드가 있는지 미확인 — 명세·json_schemas 확인 필요.",
+    "5절 예외·성과: 진행 중 작업 취소·재지시가 처리량·시간·비용에 주는 영향의 출처 있는 수치가 없다.",
+    "3·9절: 국내 물류센터의 WMS·WES·WCS 와 로봇 연동 역할 분담에 대한 공공기관·학술 자료(현재 벤더 블로그 1건뿐) 조사 필요.",
+    "7절: OPC 10031-4 원문 열람과 v1.00/v2.00 판별 차이 확인 필요(현재 검색 요약 기준).",
+    "참고문헌 id ref-110~ref-118 은 이전 브리프가 다른 출처에 쓴 적이 있어 퍼블리셔의 등록 시 충돌 확인 필요(1차 검증 지적).",
+    "퍼블리셔 담당: 자동 분리 주제 페이지의 9. 검증 노트가 1차 판정·건수 형식이 아닌 한 줄 문구로 생성된다(2차 검증 지적)."
+  ],
+  "fixes_applied": [
+    "f5 '최早 시작 시각' 오기 — 6절에서 '가장 이른 시작 시각(unix_millis_earliest_start_time)'으로 썼다.",
+    "f4 문구 — 3절과 7절에서 '외부 IT 시스템(예: WMS·ERP)과의 인터페이스는 범위 밖으로 둔다'로 고쳐 썼다.",
+    "f2·f3 단서 — '요약 도구 경유'·'글자 단위 일치 미확인' 단서를 옮기지 않았고, 6절에서 ORDER_UPDATE_FOLLOWING_CANCEL 을 '취소 뒤 갱신을 거부하는' 오류로 설명하며 '주문 거부·취소 관련 오류 유형'으로 묶어 썼다.",
+    "f12 메서드 목록 — 6·7절에서 'Store·StoreAndStart·Update·Abort·Pause·Resume 등의 메서드'로 쓰고 '온라인 참조 v2.00 기준, 판별 차이 미확인'을 명시했다.",
+    "f10 기준 판 — 4·7절과 reference_updates 에 'Version 0701(저작권 표기 2023)' 기준을 적었다.",
+    "f14 — 4·5절에서 '[추정] 벤더 주장' 을 병기하고 우선순위 자동 재정렬 세부를 빼고 WMS(창고 업무 관리)–WES(WMS 작업 지시를 바탕으로 장비·작업 순서 조정)–WCS(장비 실시간 제어) 역할 구분까지만 썼다.",
+    "f18 — 9절에서 [추정]으로만 쓰고, 작업대 배정·재고 할당을 원문 9장 표의 외부 연계 열이 아닌 표 아래 추정 문장으로 분리했으며, 원문 2장 'WES·WCS·FMS·ROP의 책임은 겹칠 수 있다'와 9장 '경계는 제품 전략에 따라 이동할 수 있다' 문단을 [분류원문]으로 함께 제시했다.",
+    "f15·f16·f17 — [추정]을 유지하고 3절에서 '이번 검색 범위에서 확인되지 않았고, 이는 부재가 확인된 것은 아니다'로 썼으며 단정 표현을 쓰지 않았다.",
+    "각주 — ref-116·ref-117·ref-118 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 세 항목에 source_unopened: true 를 넣었으며, ref-031·ref-110~ref-115 에는 붙이지 않았다.",
+    "5절 — 흐름 단계 '피킹 → 출하'를 명시하고 출하 우선순위 변경(f14·f16)과 피킹 중 취소(f17)를 시작 조건·제약·완료·인계·예외·성과 칸에 넣었으며, 첫 서술 문장에서 수치 없는 설명용 가상 시나리오임을 밝혔다.",
+    "용어집 — '작업 지시(Job Order)'·'작업 응답(Job Response)'을 glossary_updates 에 내며 설명에 ISA-95 용어집 항목과의 연결을 적고 sources 를 ref-116 로 두었다(원문 미열람 명시).",
+    "2차: 5절 시작 조건 칸 — 'B2MML로는 CHANGE·CANCEL 동사에 해당한다. [사실]'을 'B2MML 거래 동사에는 CHANGE·CANCEL이 있다. [사실][^ref-115] 이 변경·취소는 그 동사에 대응하는 것으로 보인다. [추정][^ref-115]'로 나눴다.",
+    "2차: 9절 — 마지막 문장을 'VDA 5050은 외부 IT 시스템 인터페이스를 범위 밖으로 둔다. [사실][^ref-031]'과 '따라서 상위 연계는 ROP 쪽에서 설계해야 할 것으로 보인다. [추정][^ref-031]'으로 나눴다.",
+    "2차: 주제 페이지 docs/topics/2026/2026-09-25-area01-s3.md 3. 본문 — '… 서로 다른 이야기를 하게 된다(구축자 의견). [의견]'으로 의견 주체를 병기했다.",
+    "2차: 주제 페이지 docs/topics/2026/2026-09-25-area01-s8.md 3. 본문 — '… 구분하는 출발점으로 쓸 수 있다(구축자 의견). [의견]'으로 의견 주체를 병기했다."
+  ]
+}

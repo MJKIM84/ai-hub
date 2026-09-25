@@ -1,0 +1,802 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rop-wiki.invalid/schemas/research.schema.json",
+  "title": "research.json — 리서치 에이전트 조사 브리프",
+  "description": "사양서 부록 B.1. 리서치 에이전트가 한 실행에서 반환하는 조사 브리프. run_type 이 track 이면 track 블록이 필수이고, 그 외 실행에서는 track 블록을 넣지 않는다. findings[].source_ids 는 sources[].id 를 가리켜야 하며(참조 무결성은 스크립트가 검사), [사실] 태그 finding 은 출처가 1개 이상이어야 한다. 벤더의 기능·성능 주장은 findings[].vendor_claim: true 로 표시하고 교차 확인 전에는 [사실] 을 붙이지 않는다(5.3, 8.1). 트랙 단계 번호의 상한은 스키마가 고정하지 않고 config/tracks/<slug>.yaml 의 stages 로 스크립트가 검사한다.",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "실행 id. YYYY-MM-DD-NN (같은 날 두 번째 실행은 -02)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
+    },
+    "date": {
+      "type": "string",
+      "description": "실행 날짜 (Asia/Seoul)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "run_type": {
+      "type": "string",
+      "description": "실행 유형. track 은 6.1 '트랙 실행'(사양서 부록 B 예시에는 없고 공통 규약으로 추가) [가정] category_link 은 대분류 페이지의 '다른 대분류와의 연결' 절을 채우는 실행(운영 전환 작업에서 추가) [가정]",
+      "enum": [
+        "area_deep_dive",
+        "topic",
+        "update",
+        "weekly_review",
+        "monthly_recheck",
+        "track",
+        "category_link"
+      ]
+    },
+    "target": {
+      "type": "object",
+      "description": "조사 대상. target.json 의 대상과 같아야 한다",
+      "properties": {
+        "area_no": {
+          "description": "대상 세부영역 번호 1~28. 주간 정리·월간 재검증처럼 특정 영역이 없는 실행만 null 허용 [가정]",
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 28
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "area_name": {
+          "description": "대상 세부영역의 원문 명칭 ('7. 화물·재고·자산 식별과 추적'). 번호와 이름을 함께 쓴다. 영역이 없는 실행만 null",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "1. 주문·업무 시스템 연계",
+                "2. 공정·워크플로 모델링",
+                "3. 처리능력·거점·설비 계획",
+                "4. 성과·경제성·프로세스 개선",
+                "5. 로봇 능력·작업 온톨로지",
+                "6. 지도·공간·위치 모델",
+                "7. 화물·재고·자산 식별과 추적",
+                "8. 실시간 세계 상태·데이터 일관성",
+                "9. 로봇·제조사 관제 연동",
+                "10. 설비·건물 시스템 연동",
+                "11. 분산 시스템·통신·컴퓨팅 구조",
+                "12. 명령·작업 실행의 신뢰성",
+                "13. 작업 배정 — MRTA",
+                "14. 작업 순서·스케줄링",
+                "15. 다중 로봇 경로·교통 관리 — MAPF",
+                "16. 공용 자원·충전·에너지 최적화",
+                "17. 로봇 간 협업·물리적 인계",
+                "18. 사람–로봇 협업·운영 인터페이스",
+                "19. 모니터링·이상 탐지·원인 분석",
+                "20. 예외 복구·재계획·업무 연속성",
+                "21. 온보딩·설정·현장 시운전",
+                "22. 시뮬레이션·예측용 디지털 트윈",
+                "23. 시험·형식 검증·벤치마크",
+                "24. 자산·소프트웨어 수명주기 관리",
+                "25. 안전·위험 관리",
+                "26. 사이버보안·접근권한·개인정보",
+                "27. AI·학습·적응과 모델 운영",
+                "28. 표준·상호운용성·다사업자 거버넌스"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "category": {
+          "description": "소속 대분류의 원문 명칭 ('B. 공통 정보·환경 모델'). 영역이 없는 실행만 null",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "A. 업무·공급망 설계",
+                "B. 공통 정보·환경 모델",
+                "C. 연결·실행 기반",
+                "D. 계획·최적화",
+                "E. 협업·현장 운영",
+                "F. 도입·검증·유지관리",
+                "G. 안전·보안·지능·거버넌스"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "area_no",
+        "area_name",
+        "category"
+      ],
+      "additionalProperties": false
+    },
+    "gaps": {
+      "type": "array",
+      "description": "대상 페이지에서 비어 있거나 약한 섹션(갭) 목록",
+      "items": {
+        "type": "string",
+        "description": "비어 있거나 약한 섹션 하나",
+        "minLength": 1
+      }
+    },
+    "research_questions": {
+      "type": "array",
+      "description": "조사 질문. 일반 실행은 5~7개(원문 'SCM 관점의 질문' 최소 1개 포함)가 프롬프트 규칙이며 스키마는 개수를 강제하지 않는다 [가정]",
+      "items": {
+        "type": "string",
+        "description": "조사 질문 하나",
+        "minLength": 1
+      }
+    },
+    "findings": {
+      "type": "array",
+      "description": "발견 사항 목록",
+      "items": {
+        "type": "object",
+        "description": "발견 사항 하나",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "finding id. f1, f2, … 실행 안에서 유일해야 한다(유일성은 스크립트가 검사)",
+            "pattern": "^f[0-9]+$"
+          },
+          "claim": {
+            "type": "string",
+            "description": "주장 한 문장",
+            "minLength": 1
+          },
+          "tag": {
+            "type": "string",
+            "description": "사실 표기 태그(5.3). [가설]·[사용자 실험]은 페이지 태그이며 finding 태그가 아니다",
+            "enum": [
+              "사실",
+              "추정",
+              "의견"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "description": "근거 출처 id 목록 (sources[].id 참조)",
+            "items": {
+              "type": "string",
+              "description": "출처 id",
+              "pattern": "^ref-\\d{3,}$"
+            },
+            "uniqueItems": true
+          },
+          "cross_checked": {
+            "type": "boolean",
+            "description": "독립 출처 2개 이상으로 교차 확인했는가"
+          },
+          "confidence": {
+            "type": "string",
+            "description": "신뢰도(5.2 기준). web_fetch_available: false 환경에서는 high 를 주지 않는다",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "evidence_excerpt": {
+            "type": "string",
+            "description": "짧은 근거 발췌. 출처당 직접 인용은 1회, 짧은 구절만(5.3) [가정: 500자 상한]",
+            "maxLength": 500
+          },
+          "as_of": {
+            "type": "string",
+            "description": "기준일(발행일 또는 확인일). YYYY, YYYY-MM, YYYY-MM-DD 허용 [가정]",
+            "pattern": "^\\d{4}(-\\d{2}){0,2}$"
+          },
+          "flow_step": {
+            "description": "해당하는 물류 흐름 단계(부록 A 11장). 해당 없으면 null",
+            "oneOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "입고",
+                  "적치",
+                  "보충",
+                  "피킹",
+                  "포장",
+                  "출하",
+                  "반품"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "flow_item": {
+            "description": "해당하는 여섯 항목(부록 A 11장). 해당 없으면 null",
+            "oneOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "시작 조건",
+                  "작업 대상",
+                  "수행 자원",
+                  "제약",
+                  "완료·인계",
+                  "예외·성과"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_unopened": {
+            "type": "boolean",
+            "description": "선택. true 면 출처 원문을 직접 열지 못했음(원문 미열람). web_fetch_available: false 환경이나 유료 표준 원문일 때 표시 [가정]"
+          },
+          "vendor_claim": {
+            "type": "boolean",
+            "description": "선택. true 면 벤더(제조사·솔루션 업체) 문서에서 가져온 기능·성능 주장이다(5.3 '벤더 주장' 병기, 8.1 트랙 출처 규칙, 6.2 항목 13). 교차 확인(cross_checked: true) 전에는 tag 를 사실 로 둘 수 없다(if/then). 스토리텔러는 이 값이 true 인 주장에 '벤더 주장'을 병기한다. evidence_excerpt 첫머리 '벤더 주장: ' 규약(agents/researcher.md)과 함께 써도 된다. 해당 없으면 필드를 넣지 않는다 [가정]"
+          }
+        },
+        "required": [
+          "id",
+          "claim",
+          "tag",
+          "source_ids",
+          "cross_checked",
+          "confidence",
+          "evidence_excerpt",
+          "as_of",
+          "flow_step",
+          "flow_item"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "tag": {
+                  "const": "사실"
+                }
+              },
+              "required": [
+                "tag"
+              ]
+            },
+            "then": {
+              "properties": {
+                "source_ids": {
+                  "minItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "vendor_claim": {
+                  "const": true
+                },
+                "cross_checked": {
+                  "const": false
+                }
+              },
+              "required": [
+                "vendor_claim",
+                "cross_checked"
+              ]
+            },
+            "then": {
+              "properties": {
+                "tag": {
+                  "enum": [
+                    "추정",
+                    "의견"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "이번 실행에서 쓴 출처 목록(기존 참고문헌 재사용 포함)",
+      "items": {
+        "type": "object",
+        "description": "출처 하나",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "출처 id. ref-001~ref-010 은 부록 A 12장 1~10번에 대응하며 새 출처는 ref-011 부터",
+            "pattern": "^ref-\\d{3,}$"
+          },
+          "org": {
+            "type": "string",
+            "description": "기관(또는 저자)",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "description": "제목",
+            "minLength": 1
+          },
+          "published": {
+            "description": "발행일. YYYY / YYYY-MM / YYYY-MM-DD. 확인할 수 없으면 null [가정]",
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}(-\\d{2}){0,2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "type": "string",
+            "description": "URL (http/https)",
+            "pattern": "^https?://\\S+$",
+            "format": "uri"
+          },
+          "type": {
+            "type": "string",
+            "description": "출처 유형 7종(6.1 탐색 순서)",
+            "enum": [
+              "표준",
+              "논문",
+              "오픈소스 문서",
+              "정부·연구기관",
+              "업계 보고서",
+              "벤더 문서",
+              "기사"
+            ]
+          },
+          "reliability": {
+            "type": "string",
+            "description": "출처 신뢰도",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "accessed": {
+            "type": "string",
+            "description": "접근일",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "summary": {
+            "type": "string",
+            "description": "한두 문장 요약",
+            "minLength": 1
+          },
+          "source_unopened": {
+            "type": "boolean",
+            "description": "선택. 원문 미열람 여부. web_fetch_available: false 환경에서는 모든 출처에 true [가정]"
+          },
+          "fetched": {
+            "type": "boolean",
+            "description": "이번 실행에서 원문(본문)을 실제로 열어 읽었으면 true. WebFetch 로 연 페이지, raw.githubusercontent.com 공식 저장소 원문, inbox/sources 로 들어온 원문 텍스트가 해당한다. 검색 결과 요약만 봤으면 false. 코드가 이 값으로 신뢰도 상한을 강제한다(pipeline/lib/sources.py apply_fetch_caps)"
+          },
+          "fetched_via": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "webfetch",
+              "github_raw",
+              "inbox",
+              null
+            ],
+            "description": "원문을 연 경로. fetched false 면 null"
+          },
+          "fetch_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "원문을 실제로 연 URL(정규 URL 과 다를 때, 예: raw.githubusercontent.com 경로). 없으면 null"
+          }
+        },
+        "required": [
+          "id",
+          "org",
+          "title",
+          "published",
+          "url",
+          "type",
+          "reliability",
+          "accessed",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "page_proposals": {
+      "type": "array",
+      "description": "페이지 제안 목록",
+      "items": {
+        "type": "object",
+        "description": "페이지 제안 하나",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "신규 주제 페이지인지 기존 페이지 갱신인지",
+            "enum": [
+              "new",
+              "update"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "description": "docs/ 기준 페이지 경로(.md)",
+            "pattern": "^docs/[A-Za-z0-9_./-]+\\.md$"
+          },
+          "sections": {
+            "type": "array",
+            "description": "채울 섹션 목록(템플릿 5.4 기준)",
+            "items": {
+              "type": "string",
+              "description": "섹션 번호('6') 또는 번호와 제목('6. 대표 접근법과 기술')",
+              "pattern": "^[0-9]{1,2}(\\. .+)?$"
+            }
+          },
+          "rationale": {
+            "type": "string",
+            "description": "제안 이유",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "action",
+          "path",
+          "sections",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "glossary_candidates": {
+      "type": "array",
+      "description": "용어집 후보",
+      "items": {
+        "type": "object",
+        "description": "용어 후보 하나",
+        "properties": {
+          "term_ko": {
+            "type": "string",
+            "description": "용어(한글)",
+            "minLength": 1
+          },
+          "term_en": {
+            "type": "string",
+            "description": "용어(영문)",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "description": "한 줄 정의",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "term_ko",
+          "term_en",
+          "definition"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "open_questions_new": {
+      "type": "array",
+      "description": "새로 생긴 열린 질문(문장). id 는 퍼블리셔가 oq-NNN 으로 부여",
+      "items": {
+        "type": "string",
+        "description": "새로 생긴 열린 질문 문장",
+        "minLength": 1
+      }
+    },
+    "open_questions_resolved": {
+      "type": "array",
+      "description": "이번 조사로 해결됐다고 제안하는 열린 질문 id (해결 판정은 검증 에이전트)",
+      "items": {
+        "type": "string",
+        "description": "해결된 열린 질문 id",
+        "pattern": "^oq-\\d{3,}$"
+      }
+    },
+    "self_check": {
+      "type": "object",
+      "description": "자체 점검(6.1 절차 6)",
+      "properties": {
+        "source_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "출처 수"
+        },
+        "cross_checked_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "교차 확인된 finding 수"
+        },
+        "unverified": {
+          "type": "array",
+          "description": "확인하지 못한 항목",
+          "items": {
+            "type": "string",
+            "description": "미확인 항목",
+            "minLength": 1
+          }
+        },
+        "scope_violations": {
+          "type": "array",
+          "description": "부록 A 9장 기준 범위 경계 위반 여부",
+          "items": {
+            "type": "string",
+            "description": "범위 경계 위반 의심 항목",
+            "minLength": 1
+          }
+        },
+        "budget_used": {
+          "type": "object",
+          "description": "예산 사용량(0장 daily_budget 대비)",
+          "properties": {
+            "queries": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "검색 횟수"
+            },
+            "sources": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "신규 출처 수"
+            }
+          },
+          "required": [
+            "queries",
+            "sources"
+          ],
+          "additionalProperties": false
+        },
+        "limits": {
+          "type": "string",
+          "description": "한계·주의 사항 서술"
+        }
+      },
+      "required": [
+        "source_count",
+        "cross_checked_count",
+        "unverified",
+        "scope_violations",
+        "budget_used",
+        "limits"
+      ],
+      "additionalProperties": false
+    },
+    "track": {
+      "type": "object",
+      "description": "트랙 실행 블록. run_type 이 track 일 때만 넣는다",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "description": "트랙 slug (config/tracks/<slug>.yaml)",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "stage": {
+          "type": "integer",
+          "description": "현재 단계 번호(1 이상). 상한은 config/tracks/<slug>.yaml 의 stages 이며 스키마가 아니라 스크립트가 검사한다 [가정]",
+          "minimum": 1
+        },
+        "answered_question_ids": {
+          "type": "array",
+          "description": "이번 실행에서 답한 백로그 질문 id. 8.2 '트랙 실행 1회의 필수 결과' (1)과 6.1 트랙 실행 규칙의 '1~3개'가 목표이며 상한 3개는 스키마가 강제한다(4개 이상은 예산 규칙 위반). 0개는 예산 도달·출처 부재로 답을 하나도 못 낸 부분 결과(6.0 규칙 9, 7.3 '예산 초과 → 부분 결과로 진행')일 때만 허용하며, 그때는 self_check.limits 에 '답한 질문 없음: <이유>' 를 남기고 미답 질문은 self_check.unverified 에 'q1-03 미답: <이유>' 로 적는다. 부분 결과가 아닌 0개는 검증 에이전트가 반려한다 [가정]",
+          "items": {
+            "type": "string",
+            "description": "답한 백로그 질문 id",
+            "pattern": "^q[1-9][0-9]?-\\d{2}$"
+          },
+          "uniqueItems": true,
+          "minItems": 0,
+          "maxItems": 3
+        },
+        "new_questions": {
+          "type": "array",
+          "description": "새 후속 질문. 없으면 빈 배열로 두고 8.2 (2)의 '없음'과 이유는 self_check.limits 에 '후속 질문 없음: <이유>' 로 남긴다(stage_completion_self_assessment.missing 은 완료 조건 전용이라 쓰지 않는다)",
+          "items": {
+            "type": "object",
+            "description": "새 질문 하나",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "선택. 제안 id q<단계>-<두자리>(단계는 1 이상, 상한은 트랙 정의의 stages). 비우면 스토리텔러가 부여하고 퍼블리셔가 유일성을 검사 [가정]",
+                "pattern": "^q[1-9][0-9]?-\\d{2}$"
+              },
+              "question": {
+                "type": "string",
+                "description": "후속 질문",
+                "minLength": 1
+              },
+              "stage": {
+                "type": "integer",
+                "description": "보낼 단계(뒤 단계에서 앞 단계 질문이 생기면 앞 단계 번호). 1 이상이며 상한(config/tracks/<slug>.yaml 의 stages)은 스크립트가 검사한다",
+                "minimum": 1
+              },
+              "rationale_finding_id": {
+                "type": "string",
+                "description": "제기 근거 finding id",
+                "pattern": "^f[0-9]+$"
+              }
+            },
+            "required": [
+              "question",
+              "stage",
+              "rationale_finding_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "ontology_changes": {
+          "type": "array",
+          "description": "온톨로지 초안 변경 제안(반영 여부는 검증 에이전트가 판정)",
+          "items": {
+            "type": "object",
+            "description": "온톨로지 초안 변경 제안 하나",
+            "properties": {
+              "op": {
+                "type": "string",
+                "description": "변경 종류",
+                "enum": [
+                  "add",
+                  "modify",
+                  "remove"
+                ]
+              },
+              "kind": {
+                "type": "string",
+                "description": "개념인지 관계인지",
+                "enum": [
+                  "concept",
+                  "relation"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "description": "개념 이름 또는 관계 표현('로봇 은 기능 을 가진다')",
+                "minLength": 1
+              },
+              "evidence_finding_ids": {
+                "type": "array",
+                "description": "근거 finding id (1개 이상 필수, 8.1 트랙 출처 규칙)",
+                "items": {
+                  "type": "string",
+                  "description": "근거 finding id",
+                  "pattern": "^f[0-9]+$"
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "description": {
+                "type": "string",
+                "description": "선택. 변경 내용 설명(정의·속성·주어/목적어 등) [가정]"
+              }
+            },
+            "required": [
+              "op",
+              "kind",
+              "name",
+              "evidence_finding_ids"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "stage_completion_self_assessment": {
+          "type": "object",
+          "description": "단계 완료 조건 자체 평가(최종 판정은 검증 에이전트)",
+          "properties": {
+            "met": {
+              "type": "boolean",
+              "description": "완료 조건을 모두 채웠다고 보는가(자체 평가)"
+            },
+            "missing": {
+              "type": "array",
+              "description": "못 채운 완료 조건 목록",
+              "items": {
+                "type": "string",
+                "description": "아직 못 채운 완료 조건",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "met",
+            "missing"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "slug",
+        "stage",
+        "answered_question_ids",
+        "new_questions",
+        "ontology_changes",
+        "stage_completion_self_assessment"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "run_id",
+    "date",
+    "run_type",
+    "target",
+    "gaps",
+    "research_questions",
+    "findings",
+    "sources",
+    "page_proposals",
+    "glossary_candidates",
+    "open_questions_new",
+    "open_questions_resolved",
+    "self_check"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "run_type": {
+            "const": "track"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "track"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "track"
+          ]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "run_type": {
+            "enum": [
+              "area_deep_dive",
+              "topic",
+              "update",
+              "track"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "target": {
+            "properties": {
+              "area_no": {
+                "type": "integer"
+              },
+              "area_name": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

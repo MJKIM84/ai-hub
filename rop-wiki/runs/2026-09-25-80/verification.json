@@ -1,0 +1,255 @@
+{
+  "run_id": "2026-09-25-80",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과로 Floor-SP(arXiv 1908.06702)가 모서리 10픽셀 안 정답 있으면 성공, 각도는 모서리가 맞고 5° 미만이면 성공으로 정의함을 확인(방은 다른 방과 겹치지 않고 IoU 0.7 초과, Floor-SP 기준). '가장 가까운 하나만 참 양성으로 센다'는 이번 검증 검색에서 확인되지 않아 required_fixes 로 삭제 지시. MonteFloor 는 실재(arXiv 2103.11161) 확인했으나 같은 지표 문구의 출처 구분은 안 되므로 교차 확인 아님."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람. FloorPlanCAD(ICCV 2021, arXiv 2105.07147) 검색 결과와 후속 논문(ArchCAD-400K 등) 요약이 PQ=SQ×RQ, 같은 의미 라벨·IoU>0.5 매칭을 같은 문구로 전함. 발행 2021-05."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 기존 참고문헌 ref-063 재사용(실재 이전 실행에서 확인). 검색 스니펫 범위의 주장이며 단일 출처."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "raw.githubusercontent.com 으로 README 열람 확인: 논문 96.1 과 저장소 96.2 차이는 Prec·Recall 을 계산 전에 소수 한 자리로 반올림했는지 여부. 저자 보고."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "README 열람 확인: 'around 90% precision and recall'(저자 보고). 요소 유형별 수치 없음. 기존 ref-065 재사용."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "README 열람 확인: SSIG 는 IoU 와 GED 의 가중합, 무작위 평면도 세 쌍의 38% 넘게에서 IoU 와 GED 가 상반(ICCV Workshops 2023)."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. ISO 소개 페이지(iso.org/standard/82643) 검색 결과로 측정 항목 5가지, 실내 환경 한정(부속서 A 실외 적용 가능), 안전 요구사항 검증에 비적용, 2019 판을 기술 개정한 2판임 확인. 재판매 사이트는 독립 출처가 아니어서 교차 확인 아님. 시험 절차 세부 미확인."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. ASTM 스토어·iTeh 요약으로 정의 영역 통과 능력 시험, 물리 경계·가상 경계·바닥 표시 세 방식, 장애 유형 두 가지(장애물·통신 장애) 확인. '2021 개정에서 더했다'는 이번 검색 요약에서 확인되지 않아 required_fixes 로 표현 수정 지시."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. NIST 출판물 페이지·Semantic Scholar 검색 결과로 TePRA 2015(2015-05), 기준값 측정 비교와 ASTM F45 권고 시험 절차·지표 확인. 연계 대상(로봇 주행 성능 시험)으로 서술해야 함."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "원문 미열람. SPL 정의식이 Anderson 외(2018)로 귀속되어 여러 후속 논문·요약에서 같은 식으로 확인됨."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. arXiv 2206.05728 검색 결과로 성공률(충돌 2회 미만), 경로 길이·시간·이격 거리·저크 지표 확인. '시간 초과 없음' 조건은 판에 따라 요약이 달라 저자 판 기준임을 유지. 장애물 회피 벤치마크라 연계 대상으로 서술."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. arXiv 1708.02354 실재 확인, 세 지표(점유 셀 비율·모서리 수·닫힌 영역 수)는 인용 문헌 요약에서도 같은 이름으로 확인. 요약은 이 지표가 같은 데이터 시퀀스의 여러 SLAM 결과를 비교할 때만 쓰는 상대 지표라고 적으므로 그 한계를 병기하도록 지시. 신뢰도 low 유지."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. arXiv 1902.09458 검색 결과로 평면도 지도와 SLAM 지도로 경로망을 만들어 평가하고 SLAM 지도 사용이 sim2real 격차를 좁힌다고 보고함 확인(저자 보고). 강화학습 주행 자체는 로봇 쪽이라 '연계 대상: ' 표시 필요."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "README 열람 확인: 세 과제(라이다–BIM 정합, BIM 위 자세 추적, 의미 지도 작성: floor·wall·door·column), pose_*_to_bim.txt 정답 자세는 수동 초기값과 국소 점군 정렬로 조정. README 는 ICRA 2025 채택(2025-01-28)을 적음."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 기존 ref-628 재사용(실행 2026-09-25-70·72 에서 같은 논문 확인). 같은 연구의 기존 서술과 겹치므로 기존 각주 재사용. '연계 대상: ' 표시 유지."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "입력 원문 텍스트(data/source_texts/ref-031.txt) 6.6.2 절에서 확인. 명세는 노드 통과 판단을 로봇이 하되 그 요건으로 허용 편차를 둔다고 적음. 기준일은 명세 3.0.0(발행일 미확인, oq-005)."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(이번 실행). 기존 ref-153 재사용, 같은 주장이 단계 4 페이지·스키마 초안 6절에 이미 있으므로 기존 문장·각주를 재사용."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. ScienceON 보고서(TRKO201800040065) 실재 확인. 검증 검색 요약은 위치·경로 정확도와 장애물 회피 성능 측정 방법을 전하며 브리프 스니펫과 방향이 일치. 발행일·세부 지표 미확인."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합([추정], low). 근거 finding 들은 유지됨. 3층의 주행 지표(주행 성공률·SPL·경로 이탈·좁은 통로)는 f23 경계와 맞게 제조사·통합자 시험 결과를 받아 쓰는 연계 대상으로 표시하도록 지시."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합([추정], low). '문 폭 대비 차체 여유'는 인용 출처 어디에도 근거가 없어 삭제하거나 구축자 의견으로 분리하도록 지시."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합([추정], low). 같은 쌍 경로 차이 지표는 출처에서 확인되지 않았다는 한계가 브리프에 명시됨."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "설명용 가정 사례([추정]). 수치 없음, 가정 사례임을 본문에 밝힐 것."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "이 위키의 종합([추정]). 분류 원문 9장 '로봇 자체 지능·제어' 경계 적용과 일치."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 범위 관찰([추정]), 부재 확인 아님을 유지."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": [
+      "f7·f8·f9·f11·f13: 주행 성능 시험·장애물 회피·강화학습 주행은 로봇 자체 지능·제어 쪽이므로 본문에서 '연계 대상'으로 짧게 다루고 ROP 는 결과를 받아 쓰는 쪽으로만 서술(편집으로 해결)",
+      "f19: 3층(지도·주행) 지표 가운데 주행 성공률·SPL·경로 이탈·좁은 통로 통과를 ROP 측정 지표처럼 나열 — f23 경계와 맞게 연계 대상 표시 필요"
+    ]
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f15 는 실행 2026-09-25-70·72 에서 쓴 Lee·Woo·Shin(IJPEM 2026) 주장과 같다 — 기존 각주 ref-628 재사용",
+      "f17 은 단계 4 페이지 q4-01·q4-03 과 스키마 초안 6절의 Open-RMF 층별 변환·MSE 서술(ref-153)과 같다 — 기존 문장·각주 재사용",
+      "f16 의 allowedDeviationXY 는 q4-12·아이디어 페이지 정합 절차 초안 4단계와 이어진다 — 새 주장이 아니라 근거 연결로 처리",
+      "새 질문 1(합격 임계값의 운영 허용치 도출)은 q4-12(목적지별 잔차와 노드 허용 편차)·q5-08(판 교체 뒤 재검증 합격 기준)과 부분적으로 겹치나 범위(모든 지도 품질 지표)가 넓어 중복으로 보지 않음"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f1: '가장 가까운 하나만 참 양성으로 센다' 구절을 삭제한다 — 검증 검색에서 Floor-SP 정의로 확인되지 않았다. 모서리 10픽셀·각도 5° 기준은 Floor-SP(ref-718) 기준으로 적고, 방 IoU 임계값은 수치 없이 '임계값'으로 둔다.",
+    "f8: '2021 개정에서 통신 장애와 경로 위 장애물을 더했다'를 '시험에 쓸 장애 유형으로 장애물과 통신 장애 두 가지를 둔다'로 고친다 — 개정 시점에 추가됐다는 점은 검증 검색 요약에서 확인되지 않았다.",
+    "f12: 세 지표가 같은 데이터 시퀀스에서 여러 SLAM 결과를 비교할 때만 쓰는 상대 지표라는 한계를 함께 적는다 — 기준 지도 없이 절대 품질을 판정하는 지표로 읽히지 않게 하기 위함.",
+    "f7·f8·f9·f11·f13: 단계 5 페이지 3절에서 이 finding 들을 '연계 대상: '으로 시작하거나 연계 대상임을 밝히고, ROP 는 제조사·통합자의 시험 결과를 받아 쓰는 쪽(f23)이라고 연결한다 — 분류 원문 9장 '로봇 자체 지능·제어' 경계.",
+    "f19: 세 층 지표 표·도식에서 3층의 주행 성공률·SPL·경로 이탈·좁은 통로 통과에 '연계 대상(제조사·통합자 시험 결과 수용)' 표시를 붙이고, ROP 쪽 측정은 기준 지도 대비 지도 정확도·목적지 대응점 잔차·경로 차이·도착 인정 판정으로 구분한다 — f23 과의 불일치 해소.",
+    "f20: '문 폭 대비 차체 여유' 예시를 삭제한다 — 인용 출처(ref-718·ref-067·ref-031·ref-153) 어디에도 근거가 없다. 운영 허용치 예시는 VDA 5050 노드 허용 편차(f16)만 둔다.",
+    "f22: 설명용 가상 시나리오임을 문장 안에 밝히고 수치를 넣지 않는다.",
+    "f15·f17: 새 각주를 만들지 않고 기존 ref-628·ref-153 각주 정의 줄을 그대로 재사용한다(접근일 뒤 ' (원문 미열람)' 표기 포함).",
+    "각주: 원문을 열지 못한 출처(ref-718·ref-719·ref-721·ref-722·ref-723·ref-724·ref-725·ref-726·ref-727·ref-728·ref-063·ref-067·ref-628·ref-153)의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-720·ref-729·ref-070·ref-065 는 이번 실행에서 raw 로 열었으므로 미열람 표기를 붙이지 않는다.",
+    "ref-729: 발행일은 README 가 적은 ICRA 2025 채택(2025-01-28) 기준으로 기준일을 적는다(브리프 as_of 2025-02 와 한 달 차이).",
+    "단계 5 페이지 2절: 백로그에 있는 단계 5 질문 q5-04~q5-08 을 표에 '열림' 행으로 더하고(제기 근거는 백로그의 origin 값), 상태 줄의 열린 질문·답한 질문 수를 2절 표와 맞춘다.",
+    "새 질문 1(합격 임계값의 운영 허용치 도출)은 백로그에 올리되 질문 끝에 '(관련: q4-12, q5-08)'을 병기한다 — 부분적으로 겹치는 기존 질문과의 관계를 밝히기 위함."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 24건, 미확인 0건, 교차 확인 2건(f2 파놉틱 품질 정의, f10 SPL 정의). 강등: 없음(f1·f8 은 확인되지 않은 구절 삭제·수정, f19·f20 은 경계·근거 없는 예시 정리 지시). 원문 미열람 출처: ref-718, ref-719, ref-721, ref-722, ref-723, ref-724, ref-725, ref-726, ref-727, ref-728, ref-063, ref-067, ref-628, ref-153(raw 로 연 것은 ref-720·ref-729·ref-070·ref-065, 입력 원문은 ref-031). 주의: q5-01 의 답인 세 층 지표 구성(f19)·임계값 변환(f20)·경로 차이 정의(f21)는 이 위키의 종합이며 이를 제시한 단일 출처는 없다. 확인한 인식 지표는 주거 평면도·이미지 픽셀 기준이고 물류센터 도면에 적용한 평가는 찾지 못했다. 주행 시험 표준(ISO 18646-2:2024, ASTM F3244-21, NIST AGV 시험)은 로봇·제조사 쪽 연계 대상이다. 브리프 기록 메모: ref-031 은 입력 원문 텍스트로 열었는데 fetched_via 가 github_raw·fetch_url 이 null 로 적혀 있어 inbox 로 기록해야 맞다. 검증 검색 10회(리서치 17회와 합쳐 27/40). 정정 요청 없음. 온톨로지 변경 승인: 없음(제안 없음) / 거부: 없음. 단계 완료 조건: 미충족(부족: 평가 지표·검증 절차의 아이디어 3. 건축 도면 자동 인식 6절 반영은 이번 실행에서 예정되나 검증 절차(q5-02) 미조사, 가설 판정표(q5-03) 없음, 실험 계획 없음). 단계 전환: 미승인(막힌 질문 q5-02·q5-03·q5-04·q5-05·q5-06·q5-07·q5-08 과 이번 새 질문 2건이 열림).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

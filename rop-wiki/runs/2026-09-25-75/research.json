@@ -1,0 +1,656 @@
+{
+  "run_id": "2026-09-25-75",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 6,
+    "area_name": "6. 지도·공간·위치 모델",
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "gaps": [
+    "단계 4 질문 q4-02 열림(target.json 지정, CLI 지정 질문 id). 단계 4 페이지 3절에 q4-02 소제목 없음",
+    "완료 조건: 도면–현장 정합 절차 초안이 공간 그래프 스키마 초안 6절과 아이디어 3. 건축 도면 자동 인식 5절에 없음(q4-02·q4-03 미답) — 이번 실행은 그 가운데 차이 탐지·반영(q4-02) 부분만 다룸",
+    "단계 4 페이지 3절 q4-01 답은 도면–현장 편차를 '연계 대상(로봇 쪽)'으로만 두고 차이를 찾는 방법·반영 경로를 비워 둠",
+    "공간 그래프 스키마 초안 6절: 도면–현장 차이를 층별 지도 속성으로 둘지 별도 개념으로 둘지 미해결(근거 부족)",
+    "6. 지도·공간·위치 모델 11절 oq-022(국내 물류센터 도면 활용 사례와 도면–현장 차이 확인) 미해결"
+  ],
+  "research_questions": [
+    "제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [분류원문]",
+    "q4-02 도면과 현장의 차이(개보수, 가구·랙 배치, 임시 장애물)를 어떻게 찾아 지도에 반영하는가?",
+    "설계 도면·BIM(as-planned)과 현장(as-built)의 구조 편차를 레이저 스캔·라이다로 찾는 방법(scan-vs-BIM, 도면 기반 다중 세션 정렬)은 무엇을 자동화하는가? (단계 4 페이지 3절, 국내 연구 포함)",
+    "팔레트·랙·가구처럼 옮겨지는 반정적(semi-static) 요소의 변화를 물류 현장 로봇 지도에서 탐지·갱신하는 연구와 오픈소스 도구는 무엇인가? (9절 경계 겨냥: 로봇 쪽 연계 대상 여부)",
+    "임시 장애물과 일시적 통행 제한은 로봇 쪽 비용 지도와 관제 인터페이스(VDA 5050 구역 집합·지도 판, Open-RMF 차선 폐쇄)에서 어떻게 반영되는가? (15. 다중 로봇 경로·교통 관리 — MAPF, 24. 자산·소프트웨어 수명주기 관리 연결)",
+    "변화의 지속성(구조 변경·반정적 배치·임시 장애물)에 따라 ROP 가 직접 맡을 반영 경로와 로봇·제조사에 맡길 부분은 어떻게 나뉘는가?"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Bosché(2010)는 설계 3D CAD·BIM 모델(as-planned)을 현장 레이저 스캔 점군(as-built)에 정합한 뒤 모델 객체를 점군에서 자동 인식하고 시공된 치수를 계산해 치수 적합성을 관리하는 방법을 제안했으며, 이 개념은 scan-vs-BIM 으로 불린다(건설 현장 대상).",
+      "tag": "사실",
+      "source_ids": [
+        "ref-651"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 설계 3D 모델을 스캔 점군과 ICP 기반으로 정합하고, 모델 객체의 as-built 자세·치수를 계산해 치수 적합성 관리에 쓴다. 건설 시공 품질 관리 대상 연구다.",
+      "as_of": "2010",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f2",
+      "claim": "국내 연구(설비공학 논문집 36(5), 2024)는 노후 건축물에서 모바일 기기로 Scan-to-BIM 역설계 도면을 만들어 기존 건축도면과 비교했고, 어린이집 3개소의 평균 오차율이 2.21%·5.99%·2.75%였으며 좁은 공간에서 빠르게 스캔하거나 표면 장애물을 치우지 않으면 오차가 크게 늘었다고 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-655"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 요약: 어린이집 3개소 평균 오차율 2.21%, 5.99%, 2.75%. 좁은 공간 고속 촬영·장애물 미제거 시 오차 증가. 비교 기준(기존 도면 대 에너지 모델)의 세부는 원문 미열람으로 미확인.",
+      "as_of": "2024",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f3",
+      "claim": "연계 대상: BIM-SLAM(Vega Torres 외)은 BIM 에서 세션 데이터(포즈 그래프 지도·기술자)를 만들고 실제 3D 라이다 세션을 다중 세션 앵커링으로 정렬한 뒤, BIM 에 없는 새 요소를 양(+)의 변화로 탐지·분할해 BIM 옆에 재구성하는 3단계 틀을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-221"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 세 단계는 BIM 에서 세션 데이터 생성, 새 세션과 기준 BIM 정렬, 양의 변화 탐지와 새 요소 분할이다(ISARC 2023, arXiv 2024-08).",
+      "as_of": "2024-08",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f4",
+      "claim": "연계 대상: SLAM2REF 공식 저장소 README 는 포즈 그래프 다중 세션 앵커링으로 라이다 데이터를 기준 지도나 다른 세션에 정렬하고, 시설 디지털 트윈 갱신 등에 쓸 수 있도록 기준 지도와 정렬된 갱신 지도를 얻는다고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-650"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README: \"pose-graph multi-session anchoring to align your LiDAR data with a reference map or with another session\". 정밀 지상 레이저 스캔을 기준으로 하면 최대 3 cm 정확도라고 적음(저자 측 보고). Construction Robotics 8(2), 2024 논문 인용.",
+      "as_of": "2024",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "연계 대상: Shaheer 외는 건축 도면에서 만든 그래프와 라이다로 추정한 상황 그래프를 결합해 도면과 현장의 전역 정렬과 구조 편차를 실시간으로 추정하는 방법을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-224"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "도면(as-planned)–현장(as-built) 전역 정렬과 구조 편차의 실시간 추정(arXiv 2024-08 제출). (재인용: 2026-09-25-72)",
+      "as_of": "2024-08",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f6",
+      "claim": "연계 대상: Shaik 외(KI 2017)는 팔레트 등이 임시로 적치되어 물류 시설 환경이 정적이지 않다고 보고, 여러 로봇이 현재 지도와 비교해 변화를 감지해 임시 지도를 만들고 위치추정 정보와 지도의 선 특징으로 현재 지도에 병합하는 실시간 지도 갱신 방법을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-653"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: facility logistics environments are not static because pallets and other obstacles are stored temporarily. 각 로봇이 라이다로 변화를 감지해 임시 지도를 만들고 현재 지도에 병합.",
+      "as_of": "2017",
+      "flow_step": "적치",
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f7",
+      "claim": "연계 대상: Stefanini 외(Sensors 23(13), 2023)는 로봇 자세 추정의 불확실성을 고려하고 사람·다른 로봇 같은 동적 장애물의 일시적 변화에는 강건한 라이다 점유 격자 지도 갱신 알고리즘을 제안하고, 창고의 물품 배치가 시간에 따라 바뀌는 상황을 모사해 시험했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-652"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: safe Lidar-based occupancy grid map-updating, robust to temporary changes from dynamic obstacles; 창고 물품 배치 변화 모사로 시험(2023-06-30 게재).",
+      "as_of": "2023-06",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f8",
+      "claim": "연계 대상: POV-SLAM(RSS 2023)은 반정적 객체의 객체 수준 변화를 추적·재구성하는 객체 인식 인자 그래프 SLAM 이며, 가동 중인 100m×80m 공장·창고에서 4개월 간격으로 수집해 팔레트·상자 위치가 바뀐 실제 창고 데이터셋으로 평가했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-654"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: 같은 경로를 4개월 간격으로 수집한 두 궤적을 이어 장면 변화를 만들었고, 지게차 같은 동적 객체와 팔레트·상자 같은 반정적 객체가 포함된다.",
+      "as_of": "2023-07",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f9",
+      "claim": "연계 대상: Prakhya 외(2025-01)는 핸드헬드·로봇 탑재 라이다로 반복 수집한 3D 지도에서 시간에 따른 환경 변화를 탐지해 지도를 갱신하는 평생 3D 지도 작성 틀을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-160"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "검색 요약: lifelong mapping 은 시간에 따른 환경 변화를 탐지하고 지도를 갱신하며, 물품이 운반되는 창고 같은 환경에서 최신 지도 유지가 필요하다고 설명.",
+      "as_of": "2025-01",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "연계 대상: slam_toolbox 공식 README 는 평생 지도 작성으로 지도를 시간에 따라 정제·갱신할 수 있으나 노드 제거를 지원하는 '진정한 평생' 지도 작성은 매우 실험적인 구현이라고 적고, 위치추정 모드에서는 최근 스캔을 순환 버퍼에 두었다가 만료되면 지우며 바탕 지도는 바뀌지 않는다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-270"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "README: 위치추정 모드는 \"maintains a rolling buffer of recent scans in the pose-graph\", 만료된 스캔은 제거되고 \"the underlying map is not affected\". 노드 제거는 'highly experimental'.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f11",
+      "claim": "연계 대상: Nav2 비용 지도의 장애물 층(ObstacleLayer)은 레이저·점군 관측을 받아 2D 비용 지도에 장애물을 표시(marking)하고 광선 추적으로 빈 공간을 지우는(clearing) 관측 버퍼를 따로 두어, 임시 장애물을 정적 지도와 별도로 실행 중에 반영한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-649",
+        "ref-644"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "헤더 주석: \"Takes in laser and pointcloud data to populate into 2D costmap\", marking_buffers_·clearing_buffers_ 를 따로 두고 광선 추적으로 빈 공간을 지움. README 는 비용 지도가 센서 관측으로 층을 갱신한다고 적음(같은 Nav2 프로젝트, 독립 확인 아님).",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f12",
+      "claim": "VDA 5050 3.0.0 은 특정 구역 개방이나 최대 속도 변경 같은 환경의 (일시적) 변경을 관제 기능으로 두고, 진입 금지(BLOCKED) 구역을 정의하며, 구역 집합의 내용은 바꿀 수 없어 변경이 필요하면 새 zoneSetId 로 참조해야 하고 지도(mapId)마다 활성 구역 집합은 하나라고 규정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "명세 5.3: \"(Temporary) changes in the environment, such as freeing certain areas or changing the maximum speed\". 6.4.2: 같은 zoneSetId 의 내용은 바뀌지 않으며 변경 시 새 zoneSetId 를 쓴다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f13",
+      "claim": "VDA 5050 3.0.0 은 지도를 mapId 와 mapVersion 의 조합으로 식별해 판 갱신을 mapVersion 으로 나타내고 새 판을 미리 내려받은 뒤 관제가 활성화하게 하며, 운용 모드 TEACH_IN 은 운영자가 지도 작성을 하는 동안 관제가 주문·동작을 보내지 않는 모드로 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.3.1: map version 은 이전 판의 갱신을 나타내며 지도는 미리 적재한 뒤 enableMap 으로 활성화. 6.6.6 TEACH_IN: 운영자가 매핑 등 교시를 하는 동안 관제는 주문·동작을 보내지 않음.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null
+    },
+    {
+      "id": "f14",
+      "claim": "VDA 5050 3.0.0 에서 로봇이 주문 실행 중 노드에 도달할 수 없음을 알게 되면 NODE_UNREACHABLE 오류(CRITICAL)를 보고하고 다시 시도하지 않은 채 관제의 결정을 기다리므로, 현장의 예기치 않은 막힘이 관제 쪽 신호로 올라온다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "6.4.5: 노드에 도달할 수 없으면 'NODE_UNREACHABLE' 오류를 level 'CRITICAL' 로 보고하고, 관제가 진행 방법을 결정하며 로봇은 다시 시도하지 않는다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f15",
+      "claim": "Open-RMF 의 차선 요청 메시지(LaneRequest)는 플릿 이름과 열 차선·닫을 차선 번호 목록만 담아, 실행 중 차선 폐쇄·개방을 그래프 자체를 고치지 않고 요청으로 반영한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-569"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "메시지 필드: fleet_name(string), open_lanes(uint64[]), close_lanes(uint64[]).",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f16",
+      "claim": "확인한 자료를 이 위키가 묶으면, 도면–현장 차이는 지속성에 따라 (1) 개보수 같은 구조 변경은 재측량(scan-vs-BIM)이나 도면 기반 다중 세션 정렬로 찾아 도면·지도 판을 갱신하고, (2) 랙·팔레트·가구 같은 반정적 배치 변화는 반복 주행 데이터의 변화 탐지·지도 갱신과 관제의 구역·차선 규칙으로 반영하며, (3) 임시 장애물은 정적 지도에 넣지 않고 로봇 쪽 비용 지도가 실행 중에 처리하는 세 갈래로 나뉘는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-651",
+        "ref-221",
+        "ref-224",
+        "ref-653",
+        "ref-652",
+        "ref-654",
+        "ref-649",
+        "ref-031",
+        "ref-569"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 종합이며 세 갈래 분류를 제시한 단일 출처는 찾지 못함. 근거: scan-vs-BIM(f1), BIM 기반 변화 탐지(f3·f5), 반정적 지도 갱신(f6~f8), 비용 지도 장애물 층(f11), 관제 구역·차선(f12·f15).",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f17",
+      "claim": "차이를 찾는 경로는 시운전 전 재측량과 도면 대조, 시운전·운영 중 반복 주행 데이터의 다중 세션 정렬·변화 탐지, 운영 중 로봇이 보고하는 도달 불가 같은 예외 신호로 나뉘며, 이종 제조사를 연결하는 ROP 는 변화 탐지 계산은 로봇·제조사에 맡기고 탐지된 차이를 구역 집합·차선 폐쇄·지도 판으로 반영하고 도면 변경 이력을 관리하는 쪽을 맡는 경계가 될 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-651",
+        "ref-650",
+        "ref-221",
+        "ref-031",
+        "ref-569",
+        "ref-270"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "이 위키의 종합. SLAM·변화 탐지·비용 지도는 분류 원문 9장 '로봇 자체 지능·제어' 연계 대상이고, VDA 5050 구역 집합·지도 판과 Open-RMF 차선 폐쇄는 관제 쪽 인터페이스다.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": false
+    },
+    {
+      "id": "f18",
+      "claim": "‘3층 출하 대기장’에 팔레트가 임시로 쌓여 로봇이 도달 불가를 보고하면, 짧은 막힘은 새 구역 집합의 진입 금지 구역이나 차선 폐쇄로 처리하고, 배치가 오래 유지되면 지도 판을 올리고 대기장 경유점과 제조사 지도 대응을 다시 확인하는 흐름이 필요할 것으로 보인다(설명용 가정 사례).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-031",
+        "ref-569",
+        "ref-653"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "근거: NODE_UNREACHABLE 보고(f14), 구역 집합 교체 규칙(f12), 지도 판(f13), 차선 폐쇄(f15), 물류 시설의 팔레트 임시 적치(f6). 판정 기준(지속 시간 등)은 근거 없음.",
+      "as_of": "2026-09-25",
+      "flow_step": "출하",
+      "flow_item": "예외·성과",
+      "source_unopened": false
+    },
+    {
+      "id": "f19",
+      "claim": "이번에 확인한 도면–현장 차이 탐지 연구는 건설 품질 관리(scan-vs-BIM)와 단일 로봇·단일 플릿 SLAM 지도 갱신이 대부분이고, 여러 제조사 로봇 지도에 같은 현장 변화를 일관되게 반영하는 절차나 국내 물류센터 사례는 검색 범위에서 찾지 못했다(부재 확인 아님).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-651",
+        "ref-655",
+        "ref-652",
+        "ref-653",
+        "ref-654"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "검색 17회(한국어 4회 포함) 범위의 관찰. 국내 자료는 노후 건축물 Scan-to-BIM 연구(f2)만 확인.",
+      "as_of": "2026-09-25",
+      "flow_step": null,
+      "flow_item": null,
+      "source_unopened": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 명세. 관제 기능(일시적 환경 변경), 구역 집합·진입 금지 구역, 지도 식별·판(mapId·mapVersion), 운용 모드, NODE_UNREACHABLE 오류 규정.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-160",
+      "org": "Prakhya, S. M., Yang, L., & Liu, Z.",
+      "title": "Lifelong 3D Mapping Framework for Hand-held & Robot-mounted LiDAR Mapping Systems",
+      "published": "2025-01",
+      "url": "https://arxiv.org/abs/2501.18110",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 반복 수집한 라이다 3D 지도에서 변화를 탐지해 지도를 갱신하는 평생 지도 작성 틀.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-221",
+      "org": "Vega Torres, M. A., Braun, A., & Borrmann, A.",
+      "title": "BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.15870",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BIM 에서 세션 데이터를 만들고 실제 라이다 세션을 정렬한 뒤 BIM 에 없는 새 요소를 탐지·재구성하는 틀.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-224",
+      "org": "Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.",
+      "title": "Tightly Coupled SLAM with Imprecise Architectural Plans",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.01737",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건축 도면 그래프와 라이다 상황 그래프를 결합해 도면–현장 정렬과 구조 편차를 실시간 추정.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-270",
+      "org": "Macenski, S. (SteveMacenski GitHub)",
+      "title": "slam_toolbox — README (Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS)",
+      "published": null,
+      "url": "https://github.com/SteveMacenski/slam_toolbox",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "평생 지도 작성·지도 병합·위치추정 모드(순환 스캔 버퍼, 바탕 지도 불변)와 실험적 노드 제거 기능 설명.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/SteveMacenski/slam_toolbox/ros2/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-569",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "플릿 이름과 열 차선·닫을 차선 번호 목록으로 실행 중 차선 폐쇄·개방을 요청하는 메시지 정의.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_internal_msgs/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-644",
+      "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+      "title": "nav2_costmap_2d — README",
+      "published": null,
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "비용 지도가 여러 층으로 이루어지고 센서 관측으로 층을 갱신하며, 필터 마스크로 금지 구역·속도 제한을 표현한다고 설명.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ros-navigation/navigation2/main/nav2_costmap_2d/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-649",
+      "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+      "title": "nav2_costmap_2d — include/nav2_costmap_2d/obstacle_layer.hpp",
+      "published": null,
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/include/nav2_costmap_2d/obstacle_layer.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Nav2 장애물 층 헤더. 레이저·점군 관측으로 2D 비용 지도에 장애물을 표시하고 광선 추적으로 빈 공간을 지우며, 표시·삭제용 관측 버퍼를 따로 둔다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ros-navigation/navigation2/main/nav2_costmap_2d/include/nav2_costmap_2d/obstacle_layer.hpp",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-650",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "title": "SLAM2REF — README",
+      "published": null,
+      "url": "https://github.com/MigVega/SLAM2REF",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "포즈 그래프 다중 세션 앵커링으로 라이다 데이터를 기준 지도(예: BIM·지상 레이저 스캔)에 정렬하고 갱신·정렬된 지도를 얻는 도구. Construction Robotics 8(2), 2024 논문 연계.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/MigVega/SLAM2REF/main/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-651",
+      "org": "Bosché, F. (Advanced Engineering Informatics)",
+      "title": "Automated recognition of 3D CAD model objects in laser scans and calculation of as-built dimensions for dimensional compliance control in construction",
+      "published": "2010",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1474034609000482",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 설계 3D CAD 모델을 현장 레이저 스캔에 정합해 객체를 인식하고 시공 치수를 계산하는 scan-vs-BIM 방법(건설 품질 관리).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-652",
+      "org": "Stefanini, E., Ciancolini, E., Settimi, A., & Pallottino, L.",
+      "title": "Safe and Robust Map Updating for Long-Term Operations in Dynamic Environments",
+      "published": "2023-06-30",
+      "url": "https://www.mdpi.com/1424-8220/23/13/6066",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자세 불확실성을 고려하고 일시적 동적 장애물에 강건한 라이다 점유 격자 지도 갱신 알고리즘, 창고 물품 배치 변화 모사로 시험(Sensors 23(13), 6066).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-653",
+      "org": "Shaik, N. 외 (KI 2017, 저자 목록 미확인)",
+      "title": "Dynamic Map Update of Non-static Facility Logistics Environment with a Multi-robot System",
+      "published": "2017",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-67190-1_19",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 팔레트 임시 적치로 변하는 물류 시설에서 여러 로봇이 변화를 감지해 임시 지도를 만들고 현재 지도에 병합하는 실시간 지도 갱신.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-654",
+      "org": "Qian, J. 외 (RSS 2023)",
+      "title": "POV-SLAM: Probabilistic Object-Aware Variational SLAM in Semi-Static Environments",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.00488",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 반정적 객체의 객체 수준 변화를 추적하는 SLAM 과 4개월 간격 실제 창고 데이터셋.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-655",
+      "org": "윤동희, 백주미, 심지수, 이동근, 송두삼(설비공학 논문집 36(5), 251-261)",
+      "title": "노후건축물에서 모바일기기를 이용한 Scan-to-BIM 역설계 도면생성 방안",
+      "published": "2024",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003077202",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 모바일 기기 스캔으로 노후 건축물 도면을 역설계해 기존 도면과 비교한 국내 연구(어린이집 3개소).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "sections": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "rationale": "q4-02 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12·f13·f14·f15·f16·f17·f18·f19 (신뢰도 low) — 2절 q4-02 상태 답함, 3절 q4-02 소제목 신설({#q4-02}): 재측량·도면 대조(scan-vs-BIM f1, 국내 노후 건축물 Scan-to-BIM f2), 도면·BIM 기반 다중 세션 정렬·변화 탐지(f3·f4·f5 연계 대상), 반정적 배치 변화의 지도 갱신(f6·f7·f8·f9·f10 연계 대상), 임시 장애물의 실행 중 처리(f11 연계 대상), 관제 쪽 반영 수단(구역 집합·지도 판·도달 불가 신호 f12·f13·f14, 차선 폐쇄 f15), 종합: 지속성별 세 갈래(f16, mermaid 도식 권장)·탐지 경로와 ROP 경계(f17)·‘3층 출하 대기장’ 시나리오(f18)·근거 공백(f19) / 4절 결론·불확실성 / 5절 후속 질문 / 6절 완료 조건 현황(정합 절차 초안은 q4-03 미답으로 미충족) / 8절 출처 / 9절 이력"
+    },
+    {
+      "action": "update",
+      "path": "docs/ideas/floorplan-recognition.md",
+      "sections": [
+        "5"
+      ],
+      "rationale": "아이디어 페이지 5절(트랙 산출물): '도면–현장 차이 탐지와 반영' 소절 신설 — 근거 f1·f3·f6·f11·f12·f14·f15, 구현 가설 f16·f17(추정), 좌표 정렬과 층·목적지 이름 맞춤(q4-03)은 아직 조사되지 않음을 명시"
+    },
+    {
+      "action": "update",
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 산출물 갱신(온톨로지 변경 없음): 6절 '도면–현장 차이·지도 버전을 층별 지도 속성으로 둘지 별도 개념으로 둘지' 항목의 근거 보강 — 지속성별 세 갈래(f16 추정), 구역 집합은 내용 불변·새 zoneSetId 로 교체(f12), 지도 판(f13), 차선 폐쇄는 그래프 수정이 아닌 요청(f15)"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md",
+      "sections": [
+        "6",
+        "9"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 4 반영 제안 (f1, f3, f16, f17): 6절(주제 페이지 area06-s6)에 도면–현장 차이 탐지 방법(scan-vs-BIM, BIM 기반 다중 세션 변화 탐지)과 지속성별 반영 경로(추정), 9절에 변화 탐지 계산은 연계 대상이고 구역·차선·지도 판 반영은 ROP 쪽이라는 경계(추정)"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 4 반영 제안 (f12, f13, f18): 현장 변화에 따른 지도 판(mapVersion) 갱신과 구역 집합 교체(새 zoneSetId) 규칙"
+    },
+    {
+      "action": "update",
+      "path": "docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md",
+      "sections": [
+        "6"
+      ],
+      "rationale": "트랙 floorplan-recognition 단계 4 반영 제안 (f1, f2, f4): 시운전 전 재측량으로 도면과 현장을 대조하는 방법(scan-vs-BIM, 국내 노후 건축물 Scan-to-BIM 연구)과 기준 지도 정렬 도구"
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "스캔 대 BIM 비교",
+      "term_en": "Scan-vs-BIM",
+      "definition": "설계 BIM·3D 모델을 현장 레이저 스캔 점군에 정합해 모델 객체의 시공 상태와 설계 대비 편차를 찾는 방법이다."
+    },
+    {
+      "term_ko": "반정적 객체",
+      "term_en": "Semi-static Object",
+      "definition": "팔레트·랙·가구처럼 로봇이 관측하는 동안은 움직이지 않지만 시간이 지나면 위치가 바뀌거나 나타나고 사라져 정적 지도를 낡게 만드는 물체다."
+    }
+  ],
+  "open_questions_new": [],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 14,
+    "cross_checked_count": 0,
+    "unverified": [
+      "모든 finding 교차 확인 없음: 방법마다 단일 연구 또는 같은 저자 그룹·같은 프로젝트 출처(f3·f4 는 같은 TUM 그룹, f11 의 두 출처는 같은 Nav2 프로젝트)",
+      "f2 오차율의 비교 기준(기존 건축도면 대 에너지 모델)과 측정 방법은 검색 요약 간 표현이 달라 미확인, 신뢰도 low",
+      "f1·f3·f5~f9 원문 미열람(검색 요약 범위), ref-653 저자 목록 미확인",
+      "f4 SLAM2REF 의 3 cm 정확도는 저자 측 보고",
+      "f16~f19 는 이 위키의 종합이며 도면–현장 차이를 지속성별로 나누어 반영 경로를 제시한 단일 출처는 찾지 못함",
+      "Nav2 문서 사이트(docs.nav2.org) 원본 raw 경로 2회 404 로 장애물 층 파라미터 설명은 헤더 주석 기준"
+    ],
+    "scope_violations": [
+      "f3~f11: SLAM·다중 세션 정렬·변화 탐지·비용 지도 장애물 층은 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이라 '연계 대상: '으로 표시하고 차이 탐지 방법의 근거로만 씀",
+      "f1·f2: scan-vs-BIM·역설계는 건설·시설 관리 영역 연구라 물류 적용은 미확인으로 f19 에 명시"
+    ],
+    "budget_used": {
+      "queries": 17,
+      "sources": 7
+    },
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: ref-031(입력 원문 텍스트, inbox), raw.githubusercontent.com 으로 재사용 ref-270(slam_toolbox README)·ref-569(LaneRequest.msg)·ref-644(nav2_costmap_2d README), 신규 ref-649(obstacle_layer.hpp)·ref-650(SLAM2REF README). 나머지 신규 5건과 재사용 ref-160·ref-221·ref-224 는 원문 미열람이라 신뢰도 상한 medium, high 는 주지 않았다. 검색 17회/40(한국어 4회), 신규 출처 7건/20(ref-649~ref-655, 예약 구간 안), 재사용 7건. 질문 선택: target.json 지정 q4-02 1건. q4-02 는 차이 탐지 방법(재측량 대조, 다중 세션 변화 탐지, 운영 중 예외 신호)과 지속성별 반영 경로로 답했으나 핵심 종합(f16~f18)이 추정이라 종합 신뢰도 low. 한국 자료: 노후 건축물 Scan-to-BIM 국내 연구(ref-655) 1건, 국내 물류센터 도면–현장 차이 확인 사례는 찾지 못해 oq-022 는 해결로 올리지 않았다. 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈: 임시 장애물·차선 폐쇄는 현재 상태 쪽으로만 서술했고 22 관련 주장은 없음(f4 의 디지털 트윈 갱신은 README 문구 인용). 온톨로지 변경 없음: 도면–현장 차이를 층별 지도 속성으로 둘지 별도 개념으로 둘지는 스키마 초안 6절의 미해결 질문이며, 이번 finding 은 방법·경로에 관한 것으로 개념 결정을 뒷받침하지 않아 6절 근거 보강으로만 제안했다. 후속 질문 2건. 일반 열린 질문 신규 없음(새 질문은 트랙 전용). 정정 요청 없음. 페이지 제안: 트랙 산출물 3건, 세부영역 반영 제안 3건(갱신 상한과 별도)."
+  },
+  "track": {
+    "slug": "floorplan-recognition",
+    "stage": 4,
+    "answered_question_ids": [
+      "q4-02"
+    ],
+    "new_questions": [
+      {
+        "question": "로봇이 보고한 도달 불가(VDA 5050 NODE_UNREACHABLE)나 제조사 SLAM 의 변화 탐지 결과를 임시 막힘과 반정적 배치 변화로 가르고, 구역 집합·차선 폐쇄로 처리할지 지도 판을 올릴지 정하는 기준(지속 시간, 반복 횟수, 여러 로봇의 일치)은 무엇인가? (q4-02 에서 파생)",
+        "stage": 4,
+        "rationale_finding_id": "f17"
+      },
+      {
+        "question": "도면–현장 차이 탐지 방법(재측량 대조, 다중 세션 변화 탐지)의 성능을 물류 현장에서 놓친 변화·잘못 탐지한 변화와 지도 갱신 지연으로 측정하려면 어떤 지표와 시험 절차가 필요한가? (q4-02 에서 파생)",
+        "stage": 5,
+        "rationale_finding_id": "f8"
+      }
+    ],
+    "ontology_changes": [],
+    "stage_completion_self_assessment": {
+      "met": false,
+      "missing": [
+        "도면–현장 정합 절차 초안이 공간 그래프 스키마 초안 6절과 아이디어 3. 건축 도면 자동 인식 5절에 아직 없음(이번 q4-02 제안은 검증 승인 전이며 좌표 정렬·이름 맞춤 q4-03 미답)",
+        "열린 질문 q4-03·q4-04·q4-05·q4-07·q4-08·q4-09·q4-10"
+      ]
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-42",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 17,
+    "area_name": "17. 로봇 간 협업·물리적 인계",
+    "category": "E. 협업·현장 운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "c544754",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 21,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2031.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 17. 로봇 간 협업·물리적 인계 | 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 | run 2026-09-25-42",
+  "notes": [
+    "참고문헌 생성: references/ref-202.md",
+    "참고문헌 생성: references/ref-203.md",
+    "참고문헌 생성: references/ref-204.md",
+    "참고문헌 생성: references/ref-205.md",
+    "참고문헌 생성: references/ref-206.md",
+    "참고문헌 생성: references/ref-207.md",
+    "참고문헌 생성: references/ref-208.md",
+    "참고문헌 생성: references/ref-209.md",
+    "참고문헌 생성: references/ref-210.md",
+    "참고문헌 생성: references/ref-211.md",
+    "참고문헌 생성: references/ref-497.md",
+    "참고문헌 생성: references/ref-498.md",
+    "참고문헌 생성: references/ref-499.md",
+    "용어집 생성: glossary/mobile-manipulator.md",
+    "용어집 생성: glossary/cooperative-object-transport.md",
+    "용어집 생성: glossary/collaborative-perception.md",
+    "용어집 생성: glossary/cross-schedule-dependency.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 5,
+    "open_questions": 4,
+    "flow_cells": 7,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 14:24:01 KST",
+  "usage": {
+    "input_tokens": 56,
+    "cache_creation_input_tokens": 1365562,
+    "cache_read_input_tokens": 4166671,
+    "output_tokens": 209246,
+    "cost_usd": 16.8349,
+    "calls": 12,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.1199,
+        "output_tokens": 34642,
+        "cache_read_input_tokens": 2329181,
+        "cache_creation_input_tokens": 173743
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.5851,
+        "output_tokens": 14710,
+        "cache_read_input_tokens": 1475838,
+        "cache_creation_input_tokens": 215413
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 8.3455,
+        "output_tokens": 148666,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 666788
+      },
+      "verification2": {
+        "calls": 4,
+        "cost_usd": 2.6997,
+        "output_tokens": 10236,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 308059
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 8,
+  "cross_checked_findings": 1,
+  "resumed_from_park_reason": "내용 검증 에이전트(2차) 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)",
+  "resumed_at": "2026-09-25 14:13:34 KST"
+}

@@ -1,0 +1,142 @@
+{
+  "run_id": "2026-09-25-37",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 2,
+    "question_ids": [
+      "q2-01"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 9,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "408bae2",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 9,
+    "sources": 9
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1517.8,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 2 | q2-01 답함(로봇 인터페이스·업무 시스템 필드와 정보 항목 원천 대응), 초안 v0.3 → v0.4, 후속 질문 2건 | run 2026-09-25-37",
+  "notes": [
+    "참고문헌 생성: references/ref-410.md",
+    "참고문헌 생성: references/ref-411.md",
+    "참고문헌 생성: references/ref-412.md",
+    "참고문헌 생성: references/ref-413.md",
+    "참고문헌 생성: references/ref-414.md",
+    "참고문헌 생성: references/ref-415.md",
+    "참고문헌 생성: references/ref-416.md",
+    "참고문헌 생성: references/ref-417.md",
+    "참고문헌 생성: references/ref-418.md",
+    "새 질문 제외(검증 판정): 로봇 인터페이스에 기한 필드가 없을 때 작업 모델이 보유한 기한을 가장 이른 시작 시각·우선순위·배정 순서로…",
+    "온톨로지 초안 버전 v0.3 → v0.4 (버전 이력 추가)"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 9,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 3,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 13:05:24 KST",
+  "usage": {
+    "input_tokens": 48,
+    "cache_creation_input_tokens": 1837224,
+    "cache_read_input_tokens": 4718245,
+    "output_tokens": 161252,
+    "cost_usd": 19.4441,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.7114,
+        "output_tokens": 27344,
+        "cache_read_input_tokens": 3111017,
+        "cache_creation_input_tokens": 276868
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.5856,
+        "output_tokens": 17867,
+        "cache_read_input_tokens": 1308596,
+        "cache_creation_input_tokens": 345585
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 6.615,
+        "output_tokens": 101722,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 569419
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 5.4474,
+        "output_tokens": 13327,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 643793
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 9,
+  "cross_checked_findings": 0
+}

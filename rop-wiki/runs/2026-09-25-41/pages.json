@@ -1,0 +1,413 @@
+{
+  "run_id": "2026-09-25-41",
+  "outline": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 2200,
+      "summary": "q1-09 부분 답에 실행 2026-09-25-41 보강을 덧붙인다: ECLASS 15.0 로봇 그룹 27-38-01 재구성과 전문가 그룹 'Robotic'[사실][^ref-182], IEC CDD 안내 도메인에 로봇 도메인이 없다는 관찰(안내 페이지 기준)[추정][^ref-183].",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 700,
+      "summary": "ECLASS·IEC CDD 에서 이동로봇 범위 능력 항목은 이번 검색 범위에서 확인되지 않았으나 부재 확정이 아니다[추정][^ref-182][^ref-183].",
+      "planned_findings": [
+        "f3",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 400,
+      "summary": "단계 6 으로 보내는 후속 질문 q6-06(자체 의미 식별자 네임스페이스·등록 제안 책임)을 더한다.",
+      "planned_findings": [
+        "f8"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 600,
+      "summary": "두 완료 조건 모두 미충족·미승인, 전환 아니오(막힌 질문 q1-09).",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "9. 이력",
+      "budget_chars": 150,
+      "summary": "실행 2026-09-25-41 행 추가(답한 질문 없음, 새 질문 q6-06, 온톨로지 변경 없음, 버전 6).",
+      "planned_findings": []
+    },
+    {
+      "path": "docs/ideas/robot-capability-ontology.md",
+      "section": "4. 필요한 데이터와 표준",
+      "budget_chars": 900,
+      "summary": "범위 능력의 의미 식별자 소절에 ECLASS·IEC CDD 항목 미확인[추정][^ref-182][^ref-183]과 ECLASS 분류를 semanticId 로 쓰는 제조 공정 사례[사실][^ref-037], 구축자 의견을 보강한다.",
+      "planned_findings": [
+        "f3",
+        "f5",
+        "f6",
+        "f8"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-09 부분 답에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 조사) 추가, 결론·불확실성 추가, 후속 질문 q6-06, 완료 조건 판정 미충족·미승인, 세부영역 반영 제안, 출처 5건, 이력 행 추가",
+      "patches": [
+        {
+          "section": "3. 조사 결과",
+          "action": "append",
+          "content": "#### 실행 2026-09-25-41 보강\n\n실행 2026-09-25-41은 ECLASS·IEC CDD 자료를 한국어·영어로 다시 검색했으나, ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리는 네트워크 정책으로 열지 못해 질문의 핵심(범위 능력 항목의 존재 여부)은 여전히 미확인이다. 이번 실행에서 원문을 연 출처는 IDTA 02047 README 하나이고, 나머지는 검색 결과로 기관·제목·URL 을 확인한 원문 미열람 자료다. 교차 확인은 없으며, 모든 사실이 발행 기관 한 곳의 자료에 기댄다. 한국어 검색에서는 ECLASS 기반 물류로봇 분류·속성 사전을 다룬 국내 자료를 찾지 못했다.\n\n**ECLASS 의 로봇 관련 작업.** ECLASS e.V. 는 Release 15.0 에서 그룹 27-38-01 '로봇(Roboter)'의 클래스를 재구성하고 산업용 로봇 구조에 속성을 추가했으며, 새로 만든 전문가 그룹 'Robotic'이 2024-04-30 첫 회의를 열었다고 알렸다(Release 15.0 발행 2024-11-30(검색 결과 기준), 확인일 2026-09-25). [사실][^ref-182] ECLASS Release 16.0 은 2025-11-28 발행되었고 새 분류 클래스 137개를 포함한다. [사실][^ref-185] 16.0 에 이동로봇 클래스가 들어 있는지는 미확인이다.\n\n**ECLASS 분류 구조.** ECLASS 는 4단계 계층의 8자리 코드로 제품 클래스를 분류하며, 각 분류 클래스는 고유 식별자(International Registration Data Identifier, IRDI)·우선 명칭·코드를 갖는다(확인일 2026-09-25). [사실][^ref-184][^ref-392] IRDI 의 코드 공간 01 이 분류 클래스를 뜻한다는 점은 위 부분 답에 적은 것과 같다.\n\n**이동로봇 클래스와 범위 능력 항목.** 이번 한·영 검색 범위에서는 ECLASS 에 무인운반차·자율이동로봇 자체를 가리키는 분류 클래스나 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목을 확인하지 못했고, 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다(데이터베이스를 직접 조회하지 못한 검색 결과 기준의 관찰이며 부재 확정이 아니다). [추정][^ref-182][^ref-184]\n\n**IEC CDD.** IEC TC 3 의 공통 데이터 사전(Common Data Dictionary, CDD) 안내 페이지는 제품 온톨로지 도메인으로 IEC 61987(공정 자동화), IEC 62683(저압 개폐장치·제어장치), IEC 63213(전기·전자기량 측정 장비)과 단위 도메인 IEC 62720 을 든다(확인일 2026-09-25). [사실][^ref-183] 안내에 든 도메인에 로봇 도메인이 없어 IEC CDD 에서 이동로봇 범위 능력을 가리키는 항목을 가져올 가능성은 낮아 보이지만, 이는 IEC TC 3 안내 페이지에 든 도메인 기준이며 CDD 데이터베이스는 조회하지 못했다. [추정][^ref-183]\n\n**능력의 의미 식별자를 ECLASS 분류로 가리키는 방법.** Vieira da Silva 외(2023-07 프리프린트)는 DIN 8580·VDI 2860 공정 유형을 능력의 의미 식별자(semanticId)로 해당 ECLASS 분류를 써서 나타낼 수 있다고 적어 능력 단위 의미 식별자를 ECLASS 분류 클래스로 가리키는 방법을 제시하며, 그 대상은 제조 공정 유형이고 이동로봇 범위 능력 사례는 아니다(제3자 논문, 원문 미열람). [사실][^ref-037]\n\n**IDTA 02047 README.** IDTA 02047 무인운반차 기술 데이터 1.0 README 는 이 서브모델을 IDTA 가 처음 공식 발행한 1.0 판(AAS 메타모델 3.0 호환)으로 소개하며, ECLASS 분류 클래스·IEC CDD 나 충전·계단·도어·리프트 같은 능력을 언급하지 않는다(발행일 표기 없음, 확인일 2026-09-25, README 기준의 부재 관찰). [사실][^ref-234]\n\n**시사점.** 구축자 의견으로는 IDTA 02020·02047 이 능력 단위 사전을 지정하지 않고 ECLASS·IEC CDD 에서도 이동로봇 범위 능력 항목이 확인되지 않았으므로, ROP 는 당분간 범위 능력의 의미 식별자를 자체 네임스페이스로 정하고 ECLASS 클래스가 생기면 대응시키는 방식을 택하는 것이 현실적이라고 보며, 다만 근거가 된 ECLASS·IEC CDD 항목 부재는 검색 결과·안내 페이지 기준의 관찰이고 부재가 확정된 것은 아니다. [의견][^ref-182][^ref-183][^ref-037] 이 의견은 어느 출처도 권고하지 않은 규범적 판단이며, 네임스페이스·버전 규칙과 등록 제안 책임은 후속 질문 q6-06 으로 보냈다."
+        },
+        {
+          "section": "4. 결론과 남은 불확실성",
+          "action": "append",
+          "content": "\n**실행 2026-09-25-41 결론과 남은 불확실성**\n\n- 결론: ECLASS 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보이며, 무인운반차·자율이동로봇 클래스나 범위 능력 항목은 이번 검색 범위에서 확인되지 않았다(부재 확정 아님). [추정][^ref-182][^ref-184]\n- 결론: IEC TC 3 안내 페이지에 든 CDD 도메인에는 로봇 도메인이 없다(안내 페이지 기준, CDD 데이터베이스 미조회). [추정][^ref-183]\n- 온톨로지 변경 없음(v0.3 유지): 능력 단위 의미 식별자를 뒷받침할 사전 항목을 확인하지 못해 초안 6절의 '기능의 의미 식별자 속성' 질문을 그대로 두었다. 이번 ECLASS 분류 참조 방법(제조 공정 대상)과 구축자 의견은 그 질문의 근거 보강 후보로만 트랙 로그에 남긴다.\n- 불확실성: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리를 조회하지 못했다. ECLASS 공지·기술 명세 페이지와 IEC TC 3 페이지는 원문 미열람이며 발행일이 미확인이다. Release 15.0 발행일(2024-11-30)은 검색 결과 기준이다.\n- 불확실성: 검증 검색 결과는 CDD 레지스트리 범위가 모든 ISO·IEC 도메인으로 확장되고 있다고 적어, 안내 페이지 목록만으로 로봇 도메인의 부재를 일반화할 수 없다.\n- 불확실성: IDTA 02020 명세 PDF 는 압축 바이너리라 ECLASS 참조 규정을 읽지 못했다."
+        },
+        {
+          "section": "5. 이 단계가 낳은 후속 질문",
+          "action": "replace",
+          "content": "| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q1-07 | VDA 5050 3.0에서 팩트시트(유형 명세·적재 명세·지원 action)의 필드가 2.0 대비 어떻게 바뀌었으며, 적재 제약을 어떤 필드로 기술하는가? | 단계 1. 기존 능력 표현 모델과 표준 조사 | f12 (실행 2026-09-25-02) | 답함 |\n| q1-08 | MassRobotics AMR 상호운용 표준의 setup·status 메시지 스키마에는 로봇 능력(적재량, 지원 작업, 부착 장비)을 기술하는 필드가 있는가? | 단계 1. 기존 능력 표현 모델과 표준 조사 | f13 (실행 2026-09-25-02) | 답함 |\n| q4-06 | IDTA 02020 능력 서브모델의 속성·제약(ConditionContainer)과 VDA 5050 팩트시트의 적재 명세·지원 action 을 서로 매핑할 수 있는가, 매핑하면 무엇이 남는가? | 단계 4. 온톨로지를 실행에 연결하는 방법 조사 | f17 (실행 2026-09-25-02) | 열림 |\n| q5-05 | 제조사 매뉴얼에서 추출한 광고 능력과 현장 시험으로 확인한 운용 능력의 차이를 어떤 지표로 측정하고 온톨로지에 함께 기록할 것인가? | 단계 5. 완전성과 정확성을 검증하는 방법 조사 | f27 (실행 2026-09-25-02) | 열림 |\n| q1-09 | ECLASS·IEC CDD 에 이동로봇의 범위 능력(이동·계단·적재·도어 조작·충전)과 그 속성을 기술하는 항목이 있는가, 있으면 능력 온톨로지의 의미 식별자로 쓸 수 있는가? | 단계 1. 기존 능력 표현 모델과 표준 조사 | f30 (실행 2026-09-25-16) | 열림 |\n| q4-09 | CSS 참조 모델의 스킬 상태 기계(SkillType·SkillStateMachine)와 VDA 5050 action 상태(WAITING~FAILED·RETRIABLE), Open-RMF execute_action 완료 신호를 하나의 스킬 실행 상태 모델로 대응시킬 수 있는가? | 단계 4. 온톨로지를 실행에 연결하는 방법 조사 | f26 (실행 2026-09-25-16) | 열림 |\n| q5-07 | 서로 다른 제조사가 정의한 사용자 정의 action(예: 도킹·리프트)이 같은 동작인지를 파라미터·완료 정의·효과 비교로 판정하는 시험 절차를 어떻게 둘 것인가? | 단계 5. 완전성과 정확성을 검증하는 방법 조사 | f35 (실행 2026-09-25-16) | 열림 |\n| q6-05 | VDA 5050 2.x 와 3.0.0 팩트시트를 함께 받는 현장에서 판마다 다른 필드 이름(maxWeight→maximumWeight 등)을 능력 온톨로지의 판 무관 속성으로 정규화하고, 판이 바뀔 때 능력 정의를 어떻게 재검증하는가? (q1-07 에서 파생) | 단계 6. 변경 관리·운영·거버넌스 조사 | f6 (실행 2026-09-25-23) | 열림 |\n| q4-13 | MassRobotics 식별 보고의 화물 최대 중량(문자열)·최대 부피(객체) 값을 VDA 5050 팩트시트 적재 세트의 수치 필드와 같은 단위·형식으로 정규화해 화물 요구와 비교하는 어댑터 규칙을 어떻게 둘 것인가? (q1-08 에서 파생) | 단계 4. 온톨로지를 실행에 연결하는 방법 조사 | f6 (실행 2026-09-25-35) | 열림 |\n| q2-06 | 제조사는 IDTA 02047 의 특수 능력(SpecialCapabilities) 같은 자유 텍스트 항목이나 매뉴얼에 계단·도어 조작·충전 같은 범위 능력을 실제로 어떻게 적는가? (q1-09 에서 파생) | 단계 2. 로봇 문서 유형과 정보 구조 조사 | f8 (실행 2026-09-25-35) | 열림 |\n| q6-06 | ECLASS 에 이동로봇 범위 능력(이동·계단·적재·도어 조작·충전) 클래스·속성이 없을 때 ROP 는 자체 의미 식별자를 어떤 네임스페이스·버전 규칙으로 두고, ECLASS 변경 요청(전문가 그룹 'Robotic' 등)으로 등록을 제안하는 책임은 누가 지는가? (q1-09 에서 파생) | 단계 6. 변경 관리·운영·거버넌스 조사 | f8 (실행 2026-09-25-41) | 열림 |\n\n같은 질문은 [질문 백로그](question-backlog.md)에 등록된다(백로그 반영은 퍼블리셔가 한다). 실행 2026-09-25-16에서 함께 제안된 \"VDA 5050 팩트시트의 action 파라미터 범위를 IDTA 02020 범위 속성으로 보완할 수 있는가\" 질문은 q4-06 과 중복이라 등록하지 않았다. 실행 2026-09-25-23에서 제안된 \"작업 요구를 요구 능력 속성으로 표현해 로봇 적재 세트와 비교하는 규칙의 질의·규칙 형식\" 질문은 q4-07 과 중복이라 등록하지 않았다. 백로그에 중복 등록된 q1-10(q1-09 와 같은 질문), q4-11(q4-09 와 같은 질문), q5-08(q5-07 과 같은 질문)은 실행 2026-09-25-23에서 폐기했다. 실행 2026-09-25-35의 새 질문 2건(q4-13, q2-06)은 1차 검증에서 백로그 중복이 없다고 판정됐다. 실행 2026-09-25-41의 새 질문 q6-06 은 1차 검증에서 q6-02·q6-03 과 초점이 달라 중복이 아니라고 판정됐다."
+        },
+        {
+          "section": "6. 완료 조건 충족 현황",
+          "action": "replace",
+          "content": "완료 조건은 트랙 정의의 문장을 옮기되 파일명은 페이지 링크로 바꾸고, 조건이 여러 항목이면 행을 나눴다. 트랙 정의의 문장은 아래 인용 블록에 그대로 두었고, [트랙 개요](index.md)의 단계 진행 현황 표에도 같은 조건이 링크를 붙인 형태로 있다. 충족 여부는 리서치 에이전트의 자체 평가와 1차 검증의 지시를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n> 완료 조건: 모델·표준 비교표(`model-standard-comparison.md`) 작성, ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 반영됨.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 모델·표준 비교표([model-standard-comparison.md](model-standard-comparison.md)) 작성 | 미충족 | [모델·표준 비교표](model-standard-comparison.md)의 후보 10행과 후보 밖 5행 모두에 조사 결과가 있으나, PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행과 후보 밖 RCO·이종 자율 로봇 능력·스킬 모델 행에는 \"미조사\" 칸이 남아 있다(실행 2026-09-25-41 리서치 자체 평가와 1차 검증 기준). 학술 온톨로지 행은 실행 2026-09-25-23에서, MassRobotics 행의 일부 칸은 실행 2026-09-25-35에서 채웠고, 실행 2026-09-25-41에서는 비교표를 바꾸지 않았다 | 미충족 · 미승인 |\n| ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 반영됨 | 미충족 | 초안은 실었으나 일부만 개념에 반영: 아홉 후보 가운데 요구·제공 한정자, 실행 상태, 부착 인터페이스·적재 취급 장치 위치만 [능력 온톨로지 초안](ontology-draft.md) v0.3에 반영됐고 구성 버전·운용 구역·환경 조건·충전 조건은 6절 질문으로 남았다. 실행 2026-09-25-35·2026-09-25-41에서는 온톨로지 변경이 없다 | 미충족 · 미승인 |\n\n다음 단계로 전환: 아니오(요구 목록 일부 미반영, 막힌 질문 q1-09)"
+        },
+        {
+          "section": "7. 관련 세부영역",
+          "action": "append",
+          "content": "\n실행 2026-09-25-41에서는 [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)의 \"7. 관련 표준·프레임워크·오픈소스\" 절에 ECLASS Release 15.0 의 로봇 그룹 27-38-01 재구성과 전문가 그룹 'Robotic', Release 16.0 발행, IEC CDD 안내 도메인과 그 안에 로봇 도메인이 없다는 추정(안내 페이지 기준)의 반영을 제안했고, [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)의 같은 절에 ECLASS·IEC CDD 에서 이동로봇 범위 능력 항목이 확인되지 않았다는 추정의 반영을 제안했다."
+        },
+        {
+          "section": "8. 출처",
+          "action": "append",
+          "content": "[^ref-234]: IDTA(Industrial Digital Twin Association), IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles, 접근일 2026-09-25\n[^ref-182]: ECLASS e.V., Neuer Content für ECLASS Release 15.0, 미확인, https://eclass.eu/aktuelles/news/neuer-content-fuer-eclass-release-150, 접근일 2026-09-25 (원문 미열람)\n[^ref-183]: IEC TC 3, Common Data Dictionary – CDD – TC 3, 미확인, https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/, 접근일 2026-09-25 (원문 미열람)\n[^ref-184]: ECLASS e.V., Classification Class - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/classification-class, 접근일 2026-09-25 (원문 미열람)\n[^ref-185]: ECLASS e.V., The latest ECLASS Release, 미확인, https://eclass.eu/en/eclass-standard/releases, 접근일 2026-09-25 (원문 미열람)",
+          "frontmatter": {
+            "sources": [
+              "ref-022",
+              "ref-025",
+              "ref-026",
+              "ref-027",
+              "ref-028",
+              "ref-029",
+              "ref-030",
+              "ref-031",
+              "ref-032",
+              "ref-033",
+              "ref-034",
+              "ref-035",
+              "ref-036",
+              "ref-037",
+              "ref-038",
+              "ref-039",
+              "ref-040",
+              "ref-041",
+              "ref-042",
+              "ref-043",
+              "ref-051",
+              "ref-228",
+              "ref-229",
+              "ref-243",
+              "ref-231",
+              "ref-230",
+              "ref-244",
+              "ref-245",
+              "ref-246",
+              "ref-236",
+              "ref-247",
+              "ref-248",
+              "ref-138",
+              "ref-249",
+              "ref-250",
+              "ref-323",
+              "ref-329",
+              "ref-235",
+              "ref-324",
+              "ref-325",
+              "ref-330",
+              "ref-326",
+              "ref-327",
+              "ref-328",
+              "ref-391",
+              "ref-392",
+              "ref-234",
+              "ref-182",
+              "ref-183",
+              "ref-184",
+              "ref-185"
+            ],
+            "last_run": "2026-09-25"
+          }
+        },
+        {
+          "section": "9. 이력",
+          "action": "replace",
+          "content": "실행 id는 트랙 실행의 id(YYYY-MM-DD-NN)이며, 구축 시드 항목은 [트랙 로그](log.md)와 같은 표기 `build-2026-09-24`를 쓴다. 이 값은 실행 id가 아니라 위키 구축 시점을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 온톨로지 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-41 | 없음(q1-09 부분 답 보강) | q6-06 | 없음(v0.3 유지) | 6 |\n| 2026-09-25 | 2026-09-25-35 | q1-08(q1-09 부분 답) | q4-13, q2-06 | 없음(v0.3 유지) | 5 |\n| 2026-09-25 | 2026-09-25-23 | q1-03, q1-06, q1-07 | q6-05(중복 q1-10·q4-11·q5-08 폐기) | v0.2 → v0.3 | 4 |\n| 2026-09-25 | 2026-09-25-16 | q1-04, q1-05(q1-03 부분 답 갱신) | q1-09, q4-09, q5-07 | v0.1 → v0.2 | 3 |\n| 2026-09-25 | 2026-09-25-02 | q1-01, q1-02(q1-03 부분 답) | q1-07, q1-08, q4-06, q5-05 | v0 → v0.1 | 2 |\n| 2026-09-24 | build-2026-09-24(구축 시드, 파이프라인 실행 아님) | 없음 | 시드 q1-01~q1-06(6건, 구축 시 [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [능력 온톨로지 초안](ontology-draft.md)에서 생성) | 1 |"
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/robot-capability-ontology.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "4절 범위 능력의 의미 식별자 소절에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 항목 미확인, ECLASS 분류 semanticId 방법, 구축자 의견) 추가",
+      "patches": [
+        {
+          "section": "4. 필요한 데이터와 표준",
+          "action": "append",
+          "content": "\n**범위 능력의 의미 식별자 보강(실행 2026-09-25-41).** 근거 문장 전체는 [단계 1의 q1-09 부분 답](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#3-조사-결과)의 \"실행 2026-09-25-41 보강\"에 있다. 이번 한·영 검색 범위에서는 ECLASS 에 무인운반차·자율이동로봇 자체를 가리키는 분류 클래스나 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목을 확인하지 못했고, 최근 판 공지에 드러난 로봇 관련 작업은 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다(검색 결과 기준, 부재 확정 아님). [추정][^ref-182][^ref-184] IEC CDD 안내에 든 도메인에 로봇 도메인이 없어 IEC CDD 에서 이동로봇 범위 능력 항목을 가져올 가능성은 낮아 보이지만, 이는 IEC TC 3 안내 페이지에 든 도메인 기준이며 CDD 데이터베이스는 조회하지 못했다. [추정][^ref-183] Vieira da Silva 외(2023-07 프리프린트)는 DIN 8580·VDI 2860 공정 유형을 능력의 의미 식별자로 해당 ECLASS 분류를 써서 나타낼 수 있다고 적으며, 그 대상은 제조 공정 유형이고 이동로봇 범위 능력 사례는 아니다. [사실][^ref-037] 구축자 의견으로는 ROP 가 당분간 범위 능력의 의미 식별자를 자체 네임스페이스로 정하고 ECLASS 클래스가 생기면 대응시키는 방식이 현실적이라고 보며, 다만 근거가 된 ECLASS·IEC CDD 항목 부재는 검색 결과·안내 페이지 기준의 관찰이고 부재가 확정된 것은 아니다. [의견][^ref-182][^ref-183][^ref-037] 네임스페이스·버전 규칙과 등록 제안 책임은 트랙 질문 q6-06 으로 남아 있다.\n\n[^ref-182]: ECLASS e.V., Neuer Content für ECLASS Release 15.0, 미확인, https://eclass.eu/aktuelles/news/neuer-content-fuer-eclass-release-150, 접근일 2026-09-25 (원문 미열람)\n[^ref-183]: IEC TC 3, Common Data Dictionary – CDD – TC 3, 미확인, https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/, 접근일 2026-09-25 (원문 미열람)\n[^ref-184]: ECLASS e.V., Classification Class - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/classification-class, 접근일 2026-09-25 (원문 미열람)\n[^ref-037]: Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A., Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies, 2023-07, https://arxiv.org/abs/2307.00827, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-09 부분 답 보강(ECLASS·IEC CDD 조사, 이동로봇 범위 능력 항목 미확인), 후속 질문 q6-06, 온톨로지 변경 없음(v0.3) | run 2026-09-25-41",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(ECLASS 로봇 그룹·IEC CDD 도메인 조사, 이동로봇 범위 능력 항목은 미확인), 후속 질문 1건",
+    "category_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: 5. 로봇 능력·작업 온톨로지의 범위 능력 의미 식별자 조사(ECLASS·IEC CDD), 핵심은 미확인으로 q1-09 조사 중 유지",
+    "area_recent": "2026-09-25 — 5. 로봇 능력·작업 온톨로지: 트랙 단계 1 실행에서 ECLASS·IEC CDD 에 이동로봇 범위 능력 항목이 확인되지 않았다는 관찰(부재 확정 아님)을 7. 관련 표준·프레임워크·오픈소스 절 반영 제안으로 냄"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "eclass",
+      "term_ko": "ECLASS",
+      "term_en": "ECLASS",
+      "definition": "ECLASS e.V. 가 관리하는 제품·서비스 분류·속성 사전 표준으로, 4단계 계층의 8자리 코드와 IRDI 로 분류 클래스와 속성을 식별한다.",
+      "description": "각 분류 클래스는 고유 식별자(IRDI)·우선 명칭·코드를 가지며, IRDI 의 코드 공간 01 은 분류 클래스를 뜻한다.",
+      "related_areas": [
+        5,
+        28
+      ],
+      "sources": [
+        "ref-184",
+        "ref-392"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "iec-common-data-dictionary",
+      "term_ko": "IEC 공통 데이터 사전",
+      "term_en": "IEC Common Data Dictionary (IEC CDD)",
+      "definition": "IEC 61360 기반 IEC 온라인 데이터 사전으로, 공정 자동화·저압 개폐장치·측정 장비 등 도메인별 제품 온톨로지와 측정 단위를 제공한다.",
+      "related_areas": [
+        28,
+        5
+      ],
+      "sources": [
+        "ref-183"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-182",
+      "org": "ECLASS e.V.",
+      "title": "Neuer Content für ECLASS Release 15.0",
+      "published": null,
+      "url": "https://eclass.eu/aktuelles/news/neuer-content-fuer-eclass-release-150",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ECLASS Release 15.0 의 새 콘텐츠 공지로, 로봇 그룹 27-38-01 클래스 재구성·속성 추가와 전문가 그룹 'Robotic' 신설을 알린다(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-183",
+      "org": "IEC TC 3",
+      "title": "Common Data Dictionary – CDD – TC 3",
+      "published": null,
+      "url": "https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IEC 공통 데이터 사전의 도메인(IEC 61987, IEC 62683, IEC 62720, IEC 63213)과 역할을 설명하는 IEC TC 3 페이지(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-184",
+      "org": "ECLASS e.V.",
+      "title": "Classification Class - ECLASS Technischer Support",
+      "published": null,
+      "url": "https://eclass.eu/support/technical-specification/structure-and-elements/classification-class",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ECLASS 분류 클래스의 구조(4단계 계층, IRDI·우선 명칭·코드)를 설명하는 기술 명세 페이지(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-185",
+      "org": "ECLASS e.V.",
+      "title": "The latest ECLASS Release",
+      "published": null,
+      "url": "https://eclass.eu/en/eclass-standard/releases",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ECLASS 최신 판 안내 페이지로 Release 16.0(2025-11-28)의 새 클래스 수 등을 알린다(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md"
+      ]
+    },
+    {
+      "id": "ref-234",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "title": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "IDTA 02047 무인운반차 기술 데이터 서브모델 1.0 README. 실행 2026-09-25-41에서 원본을 열어 1.0 판 표기(AAS 메타모델 3.0 호환)와 ECLASS·IEC CDD·능력 언급 부재를 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md"
+      ]
+    },
+    {
+      "id": "ref-037",
+      "org": "Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A.",
+      "title": "Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies",
+      "published": "2023-07",
+      "url": "https://arxiv.org/abs/2307.00827",
+      "type": "논문",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. AAS 능력·스킬 서브모델과 온톨로지 사이 매핑을 다룬 프리프린트로, 제조 공정 유형을 능력의 semanticId 로 ECLASS 분류를 써서 나타낼 수 있다고 적는다(검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-392",
+      "org": "ECLASS e.V.",
+      "title": "IRDI - ECLASS Technischer Support",
+      "published": null,
+      "url": "https://eclass.eu/support/technical-specification/structure-and-elements/irdi",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ECLASS 식별자 IRDI 의 구조(기관 식별자 0173, 코드 공간 01 = 분류 클래스 등)를 설명하는 기술 명세 페이지.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "standards_updates": [
+    {
+      "name": "ECLASS (제품·서비스 분류·속성 사전, Release 15.0·16.0)",
+      "kind": "표준",
+      "org": "ECLASS e.V.",
+      "url": "https://eclass.eu/en/eclass-standard/releases",
+      "related_areas": [
+        5,
+        28
+      ],
+      "summary": "4단계 계층 8자리 코드와 IRDI 로 제품 분류 클래스·속성을 식별하는 사전 표준. Release 15.0 에서 로봇 그룹 27-38-01 을 재구성했고 16.0 은 2025-11-28 발행됐다. 이동로봇 범위 능력 항목은 미확인.",
+      "ref_id": "ref-185"
+    },
+    {
+      "name": "IEC 공통 데이터 사전(IEC CDD)",
+      "kind": "표준",
+      "org": "IEC",
+      "url": "https://tc3.iec.ch/tc-activity/common-data-dictionary-cdd/",
+      "related_areas": [
+        28,
+        5
+      ],
+      "summary": "IEC 61360 기반 온라인 데이터 사전으로, 안내 페이지 기준 IEC 61987·62683·63213 제품 도메인과 IEC 62720 단위 도메인을 제공한다. 로봇 도메인은 안내 페이지에 없다(데이터베이스 미조회).",
+      "ref_id": "ref-183"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 1 q1-09 핵심: ECLASS 콘텐츠 데이터베이스(15.0·16.0)를 직접 조회해 무인운반차·자율이동로봇 분류 클래스와 이동·계단·적재·도어 조작·충전 속성의 존재 여부를 확인해야 한다(원문 열람 가능한 환경 또는 inbox/sources 원문 필요).",
+    "단계 1 q1-09: IEC CDD 트리(cdd.iec.ch)에 로봇 관련 클래스가 다른 도메인 아래 있는지 확인해야 한다(안내 페이지 목록만으로는 부재를 일반화할 수 없다).",
+    "IDTA 02020 명세 PDF 의 ECLASS 참조 규정(능력 의미 식별자를 외부 사전으로 두는 규칙)을 읽어야 한다(이번 실행은 압축 바이너리라 읽지 못함).",
+    "ref-182(ECLASS 15.0 공지)·ref-185(릴리스 페이지)의 게시일과 15.0 발행일(2024-11-30)을 원문으로 확인해야 한다."
+  ],
+  "fixes_applied": [
+    "f8 [추정]→[의견] 강등 — 단계 1 페이지 3절 '시사점'과 아이디어 페이지 4절 보강 문단 모두 '구축자 의견으로는'으로 시작하고 [의견] 태그를 붙였으며, 같은 문장 안에 ECLASS·IEC CDD 항목 부재가 검색 결과·안내 페이지 기준 관찰이라 부재 확정이 아니라는 한정을 두었다.",
+    "f1 기준일 — 단계 1 페이지 3절 문장에 'Release 15.0 발행 2024-11-30(검색 결과 기준), 확인일 2026-09-25'를 적었다.",
+    "f5 한정 — 단계 1 페이지 3절·4절과 아이디어 페이지 문장에 'IEC TC 3 안내 페이지에 든 도메인 기준이며 CDD 데이터베이스는 조회하지 못했다'를 병기했다.",
+    "f6 한정 — 두 페이지 모두 이 방법이 DIN 8580·VDI 2860 제조 공정 유형 대상이며 이동로봇 범위 능력 사례가 아님을 같은 문장에 적었다.",
+    "ref-234 표시 — 단계 1 페이지 각주 정의에 ' (원문 미열람)'을 붙이지 않았고 reference_updates 의 ref-234 를 source_unopened: false 로 두었다.",
+    "ref-182·889·890·891·037·392 — 새로 둔 각주 정의에 ' (원문 미열람)'을 붙였고 reference_updates 에서 source_unopened: true 로 두었다. ref-243·ref-245 는 이번 실행 문장의 각주로 쓰지 않았다.",
+    "ref-182·ref-185 발행일 — 각주 발행일 자리를 '미확인'으로 두고 JSON published 는 null 로 두었으며, 15.0 발행일 2024-11-30 은 본문 기준일로만 썼다.",
+    "q1-09 상태 — 2절 표는 '열림'·답한 실행 id·답 위치 빈칸 그대로 두었고(패치하지 않음), 3절 소제목 '(부분 답)'을 유지하고 {#q1-09} 를 붙이지 않았으며, f1~f9 는 기존 소제목 아래 '#### 실행 2026-09-25-41 보강'으로 덧붙였다. 상단 상태 줄(열린 질문 1건·답한 질문 8건·완료 조건 미충족·마지막 실행 2026-09-25)은 바꾸지 않았다. 백로그는 q1-09 를 '조사 중', answer_link null 로 냈다.",
+    "6절 — 두 완료 조건의 검증 판정 칸을 '미충족 · 미승인'으로 두고 아래 줄을 '다음 단계로 전환: 아니오(요구 목록 일부 미반영, 막힌 질문 q1-09)'로 유지했으며 track_updates.stage_transition 은 넣지 않았다.",
+    "세부영역 반영 제안(28. 표준·상호운용성·다사업자 거버넌스 7절) — 근거를 f4·f5 로 적고 로봇 도메인 부재가 추정임을 summary 에 밝혔으며, 세부영역 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그로만 남겼다.",
+    "용어집 'IEC 공통 데이터 사전' — 정의에서 운영 주체 서술을 빼고 지시된 문장으로 썼으며, 'ECLASS' 는 f2 근거(ref-184·ref-392)로 등록했다.",
+    "backlog_updates — 새 질문을 q6-06, stage 6, origin 'f8' 로 등록했다.",
+    "온톨로지 초안 — ontology-draft.md 를 pages 에 넣지 않고 ontology_draft_version 을 '0.3'으로 유지했으며, f6·f8 은 트랙 로그에 6절 '기능의 의미 식별자 속성' 질문의 근거 보강 후보로만 적었다.",
+    "2차: 용어집 'ECLASS'(slug eclass) description 에서 출처가 뒷받침하지 않는 구절 'AAS 서브모델은 속성의 의미 식별자로 ECLASS IRDI 를 쓸 수 있다'를 빼고, f2·ref-184·ref-392 범위 안의 내용(분류 클래스의 IRDI·우선 명칭·코드, 코드 공간 01 = 분류 클래스)만 남겼다. sources 는 ref-184·ref-392 그대로 두었다."
+  ],
+  "area_reflection_proposals": [
+    {
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "ECLASS Release 15.0 이 로봇 그룹 27-38-01 클래스를 재구성·속성 추가하고 전문가 그룹 'Robotic'이 2024-04-30 첫 회의를 열었으며(15.0 발행 2024-11-30, 검색 결과 기준) Release 16.0 이 2025-11-28 발행됐다는 사실(f1·f9), IEC TC 3 CDD 안내 페이지의 도메인(IEC 61987·62683·63213, 단위 62720)과 그 안에 로봇 도메인이 없다는 추정(안내 페이지 기준, 데이터베이스 미조회, f4·f5)을 반영 제안한다."
+    },
+    {
+      "area_no": 5,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "ECLASS·IEC CDD 에서 이동로봇 범위 능력(이동·계단·적재·도어 조작·충전)을 능력 단위로 가리키는 항목이 이번 검색 범위에서 확인되지 않았다는 추정(부재 확정 아님, f3·f5)과, 제조 공정 유형을 능력 semanticId 로 ECLASS 분류를 써서 나타내는 제3자 논문 사례(f6)를 반영 제안한다."
+    }
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+    "ontology_draft_version": "0.3",
+    "backlog_updates": [
+      {
+        "id": "q1-09",
+        "status": "조사 중",
+        "answer_link": null
+      },
+      {
+        "id": "q6-06",
+        "status": "열림",
+        "answer_link": null,
+        "question": "ECLASS 에 이동로봇 범위 능력(이동·계단·적재·도어 조작·충전) 클래스·속성이 없을 때 ROP 는 자체 의미 식별자를 어떤 네임스페이스·버전 규칙으로 두고, ECLASS 변경 요청(전문가 그룹 'Robotic' 등)으로 등록을 제안하는 책임은 누가 지는가? (q1-09 에서 파생)",
+        "stage": 6,
+        "origin": "f8"
+      }
+    ],
+    "log_entry": "답한 질문: 없음(q1-09 는 ECLASS 데이터베이스·IEC CDD 트리를 네트워크 정책으로 조회하지 못해 핵심인 범위 능력 항목 존재 여부가 미확인 — 부분 답 f1~f9 로 보강, 백로그 조사 중 유지) / 새 질문: q6-06(단계 6. 변경 관리·운영·거버넌스 조사, 근거 f8) / 온톨로지 변경: 없음(v0.3 유지). f6(ECLASS 분류를 능력 semanticId 로 쓰는 제조 공정 사례)·f8(자체 네임스페이스 방식, 구축자 의견)은 초안 6절 '기능의 의미 식별자 속성' 질문의 근거 보강 후보 / 완료 조건 평가: 미충족(부족: ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건 미반영, 모델·표준 비교표 일부 행 '미조사' 칸 잔존, 막힌 질문 q1-09) / 세부영역 반영 제안: 28. 표준·상호운용성·다사업자 거버넌스 1건(7절, f1·f9·f4·f5), 5. 로봇 능력·작업 온톨로지 1건(7절, f3·f5·f6) / 다음 실행 제안: q1-09(ECLASS·IEC CDD 원문 조회가 가능할 때 재개), 그 전에는 비교표 '미조사' 칸 보강과 요구 목록 미반영 항목(구성 버전·운용 구역·환경 조건·충전 조건) 근거 조사",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 1(q1-09 조사 중), 답함 8, 완료 조건 미충족. 답한 질문 없음(ECLASS·IEC CDD 데이터베이스 미조회로 q1-09 핵심 미확인), 후속 질문 q6-06 등록, 온톨로지 v0.3 유지"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "run_id": "2026-09-25-58",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw.githubusercontent.com 의 Graph.hpp 를 열었다. Waypoint 접근자 map_name·location·holding_point·passthrough_point·parking_spot·charger·in_lift·mutex_group 을 확인했다(merge_radius 도 있다). 단일 출처이며 발행일은 미확인, 확인일은 2026-09-25다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Lane 이벤트 8종(DoorOpen·DoorClose·LiftSessionBegin·LiftDoorOpen·LiftSessionEnd·LiftMove·Dock·Wait), Lane::Properties 의 speed_limit, 상호 배제 그룹을 원문에서 확인했다. 다만 승강기는 차선 이벤트만으로 표현되지 않는다. 경유점의 in_lift 속성(LiftProperties: 이름·위치·방향·치수)으로도 표현되므로 '그래프 노드가 아니라 차선 이벤트로' 는 과장이다. 문구 수정을 조건으로 유지한다(required_fixes)."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 상호 배제 그룹 인용문이 원문과 글자 단위로 같다. '좁은 구역·공용 자원의 점유 예약을 표현한다' 는 부분은 출처의 용도 해석이므로 서술에서는 '묶음 단위로 한 번에 한 대만 점유' 까지만 사실로 쓴다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: traffic-editor.md 원본(github_raw)에서 차선 속성 bidirectional·graph_idx·orientation, 승강기 칸 안 경유점을 층마다 두고 차선으로 잇는 방식, 정점 사이에 따로 두는 문을 확인했다. 원문은 '기본 9개 그래프(9개 플릿)' 라고 적으며 '최대 9개' 는 과장이다. 페이지에서는 '기본 9개' 로 써야 한다. 차선이 문을 '지나게 한다' 는 공간 관계는 원문에 명시돼 있지 않다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: GraphNode.msg(x·y·name·params)와 GraphEdge.msg(v1_idx·v2_idx·params·edge_type BIDIRECTIONAL=0/UNIDIRECTIONAL=1)를 원문에서 열었다. 두 출처는 같은 발행 주체(Open Robotics)이므로 독립 교차 확인이 아니다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: integration_nav-maps.md 원본에서 층 이름(B1·L1 등), 층 안 미터 좌표, 'is this a charger?' 같은 플래그, 양방향·단방향 구분, 구간 속도 제한을 확인했다. 기존 실행 2026-09-25-11 의 검증된 문장과 같은 출처(ref-080)이므로 기존 각주를 재사용한다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: main 브랜치 order.schema 에서 nodePosition(x·y·mapId 필수, theta·allowedDeviationXY·allowedDeviationTheta 선택)과 edge 속성을 확인했다. edge 속성은 maximumSpeed·maximumMobileRobotHeight·minimumLoadHandlingDeviceHeight·orientation·orientationType·direction·reachOrientationBeforeEntering·maxRotationSpeed·trajectory·length·corridor·actions 다. main 은 3.0.0 판이며 발행일은 미확인이다(oq-005)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 data/source_texts/ref-031.txt 의 6.1.1 절에서 전체 그래프를 관제가 보유하고, 통행 제한을 로봇에 전달하지 않으며, 허용된 엣지만 주문에 넣는다는 문장을 확인했다. 기존 페이지와 모순되지 않는다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 6.4.3 절(zoneRequests requestType ACCESS, responses 토픽, GRANTED·QUEUED·REVOKED·REJECTED, leaseExpiry)과 6.4.2 절(구역 집합은 mapId 하나에 연결)을 원문에서 확인했다. 용어집의 '해제 구역(Release Zone)' 으로 표기를 맞춰야 한다(terminology)."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 6.2.3.1 표의 startCharging 설명과 범위(instant yes·node yes·edge no)를 원문에서 확인했다. 주행 중 충전 차선을 언급하면서도 edge 동작 범위는 아니라는 점을 서술에 섞지 않는다. 실행 2026-09-25-19 의 검증된 문장과 일치한다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검색 결과 일치). ISPRS IJGI 11(2), 76, 2022 와 저자 Claridades·Choi·Lee 가 검색 결과와 일치한다. 세분화(subspacing)로 위계·위상 관계를 표현한다는 내용은 스니펫 범위에서 확인했다. '표본 자료에서 여러 상세 수준 네트워크를 생성' 은 브리프 초록 요약 기준이며 이번 검색 스니펫에는 나타나지 않았다. 신뢰도 상한은 medium 이다. Jiyeong Lee 의 서울시립대 소속은 검색 결과와 일치한다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검색 결과 일치). arXiv 2003.12924, SAC 2020 이다. SGD 로 정점 위치·엣지 방향 최적화, 벽에 나란한 엣지, 두 차선 도로·회전교차로 같은 패턴을 스니펫에서 확인했다. evidence 의 '산업용 AGV 대상' 은 이번 스니펫에서 확인하지 못해 서술하지 않는다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 원문 미열람(검색 결과 일치). arXiv 2403.08094 의 스니펫은 계층형 3D 장면 그래프에서 희소한 문제 인스턴스를 만들어 대규모 환경의 작업·동작 계획을 확장한다는 점만 보여 준다. 메시·객체·장소·방 층과 층 사이 포함 관계 설명은 이 논문이 아니라 Hydra 설명 스니펫에서 온 것이다(브리프 self_check 도 인정). 층 구조는 기존 검증 출처 ref-347(Hughes 외 2023)의 검증된 문장을 재사용한다. ref-643 저자는 Ray, A., Bradley, C., Carlone, L., & Roy, N. 으로 확인했다(v2 2024-11-08, ISRR 2024). 연계 대상 표시는 적절하다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 이 위키의 종합이며 두 층위 구조를 제시한 단일 출처가 없다는 점이 evidence 에 명시돼 있다. 근거 가운데 ref-642·ref-643 는 원문 미열람이고, f13 이 강등됐으므로 ref-643 는 '계층 그래프로 계획을 희소화한다' 는 범위로만 쓴다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. f2·f3·f4·f9·f10 을 묶은 이 위키의 판단이며, 자원 예약 단위를 명시한 출처가 없다는 점이 표시돼 있다. 승강기 표현에는 경유점 in_lift 도 포함하도록 f2 수정과 맞춘다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 확인한 엣지 속성(f7), 관제 보유 통행 제한(f8), 플릿별 그래프(f4)에서 도출했다. 능력 대조 규칙은 q3-03 범위로 넘긴다는 표시가 적절하다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 분류 원문 SCM 관점의 질문을 다룬다. ref-212 는 제3자 LIF 스키마이고 이번 실행에서 원문 미열람이므로 각주에 (원문 미열람)을 유지한다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. ref-641(f12, 검색 확인)과 ref-268(재사용, 원문 미열람)에서 도출했다. 15. 다중 로봇 경로·교통 관리 — MAPF 와 연결한다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f6 은 실행 2026-09-25-11 의 검증 문장(경유점마다 층 이름·미터 좌표, ref-080)과 겹친다. 기존 각주 ref-080 을 재사용한다.",
+      "f4 의 승강기 칸 경유점·문 배치는 기존 traffic-editor 문장(ref-079)과 겹친다. 기존 각주를 재사용한다.",
+      "f10 은 실행 2026-09-25-19 의 startCharging 문장(ref-031)과 같은 내용이다. 모순은 없다.",
+      "f1(Graph.hpp 의 charger 속성)과 f6('is this a charger?' 플래그)은 열린 질문 oq-069(충전소 지정이 is_parking_spot 인가 is_charger 인가)에 관련된다. 해결 제안은 없으므로 oq-069 는 열림을 유지한다.",
+      "f13 의 장면 그래프 층 구조 설명은 기존 참고문헌 ref-347(Hughes 외 2023)의 검증 문장과 겹친다."
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "f9·f15 와 페이지 제안의 'RELEASE 구역' 은 용어집 '해제 구역 (Release Zone)' 으로 표기한다(첫 등장 시 '해제 구역(RELEASE)').",
+      "용어 후보 '상호 배제 그룹'·'공간 세분화' 는 용어집에 없는 신규 용어이며 충돌하지 않는다. 공간 세분화 정의는 f11 범위로 한정한다."
+    ]
+  },
+  "quotation_check": {
+    "ok": false,
+    "issues": [
+      "ref-031 에서 직접 인용이 두 번 계획돼 있다(f8 evidence 의 'The full graph ... is held by fleet control', f10 evidence 의 'Charging can be done on a charging spot ...'). 출처당 1회 규칙에 따라 페이지에서는 한 곳만 인용하거나 둘 다 요약·재서술한다."
+    ]
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f2: '문·승강기를 그래프 노드가 아니라 차선 이벤트로 표현한다' 를 '문은 차선 이벤트(DoorOpen·DoorClose)와 문 속성(DoorProperties)으로, 승강기는 차선 이벤트(LiftSessionBegin 등)와 경유점의 승강기 안 여부 속성(in_lift, LiftProperties)으로 표현한다' 로 고쳐 [사실]을 유지한다. 이유: Graph.hpp 원문에서 승강기는 경유점 속성으로도 표현된다.",
+    "f4: 그래프 개수를 쓸 때는 '최대 9개' 가 아니라 '기본 9개 그래프(9개 플릿)' 로 쓴다. '차선이 문을 지나게 한다' 는 원문에 없으므로 '문은 정점 사이에 따로 추가한다' 까지만 쓴다. 이유: traffic-editor.md 원문의 표현이다.",
+    "f3: 상호 배제 그룹은 '같은 그룹에 속한 경유점·차선은 한 번에 로봇 한 대만 점유한다' 까지만 [사실]로 쓰고, '공용 자원 점유 예약을 표현한다' 는 해석은 f15 의 [추정] 문장에서만 쓴다.",
+    "f13: [사실] → [추정]으로 강등하고 '연계 대상:' 표시를 유지한다. 장면 그래프의 층(장소·방)과 층 사이 포함 관계 설명은 기존 참고문헌 ref-347 의 검증된 문장을 재사용해 각주를 [^ref-347]로 달고, ref-643 는 '계층형 3D 장면 그래프로 희소한 계획 문제를 만들어 대규모 환경의 작업·동작 계획을 확장했다' 에만 쓴다. 이유: ref-643 검색 결과에 층 구조 설명이 없다.",
+    "ref-643: 참고문헌 등록 시 기관 칸을 'Ray, A., Bradley, C., Carlone, L., & Roy, N.' 으로 적고 제목에 'ISRR 2024' 를 병기한다. 발행일은 2024-03, 접근일 뒤 ' (원문 미열람)' 을 붙인다. 이유: 검증 검색에서 저자를 확인했다.",
+    "ref-641·ref-642·ref-643·ref-212·ref-268: 페이지 각주 정의의 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣는다.",
+    "f12: '산업용 AGV 대상' 은 확인하지 못했으므로 쓰지 않는다.",
+    "f9·f15: 'RELEASE 구역' 을 용어집 표기 '해제 구역' 으로 바꾼다(첫 등장만 '해제 구역(RELEASE)' 로 영문을 병기한다).",
+    "인용: ref-031 의 영어 원문 직접 인용은 한 곳(f8 또는 f10)만 두고 나머지는 한국어로 재서술한다.",
+    "온톨로지 초안(공간 그래프 스키마 초안) 반영: 개념 '경유점 (Waypoint)'(f1·f5·f6·f7)과 '주행 차선 (Lane)'(f2·f4·f5·f7)을 상태 '확정' 으로 추가한다. 정의는 좌표 경유점과 두 경유점을 잇는 주행 엣지로만 쓰고, 속성은 finding 이 확인한 것만 넣는다. 경유점은 층·지도 식별자·미터 좌표, 대기 가능·통과 전용·주차·충전 여부, 허용 편차, 승강기 안 여부다. 주행 차선은 방향(양방향·단방향), 속도 제한, 로봇 최대 높이·적재장치 최소 높이, 주행 방향 제약, 이벤트(문·승강기·도킹·대기), 상호 배제 그룹, 플릿 그래프 번호다.",
+    "온톨로지 초안: '공용 자원' 의 수정 가운데 속성 '상호 배제 여부(Open-RMF 상호 배제 그룹 근거)' 추가만 승인한다(f3·f9·f10). 행 상태를 '초안' → '확정' 으로 바꾼다. 속성 '점유 요소(자원이 걸친 경유점·차선·구역)' 는 f15 추정에 기대므로 반영하지 않고 6절 미해결 모델링 질문(q3-02 관련)으로 둔다.",
+    "온톨로지 초안: 관계 행은 추가하지 않는다. 브리프 ontology_changes 에 관계 변경이 없으므로 '공간 노드 / 포함한다 / 경유점', '주행 차선 / 두 경유점을 잇는다' 는 3절에 넣지 않는다. 경유점·주행 차선과 공간 노드의 관계, 경유점을 공간 노드와 다른 개념으로 둘지는 6절 질문으로 두고 f14 를 [추정] 근거로 단다. 4절 다이어그램에는 두 개념을 연결선 없이 추가한다.",
+    "온톨로지 초안 버전을 0.6 → 0.7 로 올린다. H1·프런트매터 ontology_version·track_updates.ontology_draft_version 을 같은 값으로 맞춘다.",
+    "단계 3 페이지 6절: 완료 조건 '공간 그래프 스키마 초안이 근거 finding 과 함께 갱신됨' 은 이번 실행의 승인 변경(f1·f2·f3·f4·f5·f6·f7 근거)으로 충족 후보가 된다. 단계 전환은 미승인(아니오)으로 둔다. 이유: 핵심 구성 요소 중 q3-03·q3-04 미답, 다른 아이디어와의 연결 근거 없음, 실험 계획 없음, 막힌 질문 q3-03~q3-08."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 확인 17건, 미확인 1건, 교차 확인 0건. 강등: f13 사실 → 추정. 원문 미열람 출처: ref-641, ref-642, ref-643, ref-212, ref-268. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(raw.githubusercontent.com 만 열림). ref-536·ref-640·ref-414·ref-413·ref-079·ref-080 은 GitHub 원본을, ref-031 은 입력 원문 텍스트를 직접 열어 확인했다. 주의: q3-02 의 답(구역 수준·차선 수준 두 층위, 공용 자원 예약 단위, 로봇별 통행 가능 여부 분리)은 모두 이 위키의 추정이며 이를 제시한 단일 출처가 없다. 관제 형식 사실은 발행 주체마다 한 곳의 자료뿐이라 교차 확인되지 않았다. 브리프 표기 주의: ref-031 의 fetched_via 가 github_raw 로 적혀 있지만 fetch_url 이 없고, 한계 항목은 입력 원문(inbox)으로 적어 서로 맞지 않는다. 정정 요청 없음. 온톨로지 변경 승인: 경유점(f1·f5·f6·f7) 추가, 주행 차선(f2·f4·f5·f7) 추가, 시드 개념 확정: 공용 자원(f3·f9·f10, 속성 '상호 배제 여부'만). 거부: 공용 자원 속성 '점유 요소'(f15 추정 → 6절 질문). 단계 완료 조건: 미충족(부족: 아이디어 3 5절 핵심 구성 요소 중 능력 대조·시뮬레이션 초기값, 다른 아이디어와의 연결, 실험 계획). 막힌 질문: q3-03, q3-04, q3-05, q3-06, q3-07, q3-08. 단계 전환: 미승인(완료 조건 미충족·막힌 질문 있음).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

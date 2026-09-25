@@ -1,0 +1,373 @@
+{
+  "duration_api_ms": 235247,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.2561230000000005,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 420951,
+    "cache_read_input_tokens": 1534450,
+    "output_tokens": 19412,
+    "output_tokens_details": {
+      "thinking_tokens": 8497
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 420951,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11970,
+        "cache_read_input_tokens": 493680,
+        "cache_creation_input_tokens": 3425,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3425
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 93358,
+      "outputTokens": 3999,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 8,
+      "costUSD": 0.19335300000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 19412,
+      "cacheReadInputTokens": 1534450,
+      "cacheCreationInputTokens": 420951,
+      "webSearchRequests": 0,
+      "costUSD": 4.06277,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8497,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 13,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-78\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(data/source_texts/ref-031.txt) 6.3.1절에서 mapId·mapVersion 조합 식별, 주문 수락 전 지도 보유 확인과 UNKNOWN_MAP_ID(WARNING), 관제 책임 문장을 대조했다. 단일 출처(명세 한 곳). 명세 3.0.0 발행일 미확인(oq-005). 브리프 sources[ref-031]은 fetched_via가 github_raw인데 fetch_url이 null이고 self_check.limits는 inbox라고 적어 표시가 서로 맞지 않는다(원문 열람 자체는 입력 원문으로 인정).\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 6.3.1·6.3.3~6.3.5절과 표 4(downloadMap 선택 파라미터 mapHash, enableMap 시 같은 mapId의 다른 판 DISABLED, DUPLICATE_MAP WARNING, 'The mobile robot itself shall not delete maps', deleteMap)를 원문과 대조했다. 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 6.4.2절(zoneSet은 mapId로 단일 지도에 연결, mapVersion 비참조, 내용 불변·새 zoneSetId, 신규 DISABLED, enableZoneSet, mapId당 활성 하나)을 원문과 대조했다. 구역 집합 불변·새 zoneSetId·mapId당 활성 하나는 기존 단계 4 페이지 q4-02 절(실행 2026-09-25-75)에 이미 실려 있어 중복된다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 6.3.4절(주문 nodePosition의 mapId에 맞는 지도 활성화 보장은 관제 몫, 새 지도의 특정 위치에는 initializePosition 사용)과 표 4의 initializePosition 파라미터(x·y·theta·mapId·lastNodeId)를 원문과 대조했다. initializePosition은 기존 q4-03 절에도 있다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 에이전트가 raw.githubusercontent.com의 BuildingMap.msg를 직접 열어 필드가 string name, Level[] levels, Lift[] lifts 세 개뿐임을 확인했다. 메시지 한 파일의 관찰일 뿐이며 building.yaml·주행 그래프 파일의 판 표기는 미확인이다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 에이전트가 raw.githubusercontent.com의 continua-systems lif-schema.json을 열어, 레이아웃 객체에 필수 필드 layoutVersion(정수 문자열 권장)과 layoutId·layoutLevelId 등이 있음을 확인했다. VDMA 공식 산출물이 아닌 제3자 스키마라는 한정은 유지해야 한다. 브리프는 원문 미열람(source_unopened: true)으로 적었으므로 페이지 각주 표시는 브리프를 따른다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 검색 결과 기준(원문 미열람): UK BIM Framework Guidance Part C(2020-09, Edition 1)는 CDE 워크플로우에서 상태·개정 메타데이터를 다루며, 상태·개정 코드는 영국 국가 부속서(BS EN ISO 19650-2) 기준으로 예시된다. 이 범위만 뒷받침된다. 상태 목록(작업 중·공유·발행·보관)은 벤더 블로그(ref-746, 벤더 문서)에만 기대며, ISO 19650 발행 기관 자료는 열람하지 못했다. 표준 주장인데 근거가 발행 기관 자료가 아니므로 강등한다. Part C는 Edition 1 기준이며 이후 판 여부는 미확인이다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): koreascience 게재본의 제목·저자(이일곤·김현민·안준상·최재웅)가 일치하고, 요약에 ISO 19650 CDE 워크플로우·정보 컨테이너(고유 ID·메타데이터)를 다루며 영국 국가 부속서를 참고한다고 나온다. '2023-12-06 게재 승인'은 검색 결과에서 확인하지 못했고, 게재지도 미확인이다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증 에이전트가 IfcOpenShell v0.8.0의 ifcdiff.rst(raw)를 열어 Added·Deleted·Changed 출력, 기본 파일 diff.json, GlobalId 일관성 가정 문장, 선택 비교 항목(type·property·container·aggregate·classification)을 확인했다. 오픈소스 도구 문서이며 단일 출처다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): arXiv 2312.14931의 저자는 Han Liu·Ge Gao·Ming Gu이고, 요약은 IFC 그래프 구조의 등가 변환 때문에 판 비교·증분 저장이 어렵다고 보며 정규화 파일을 Git 류 도구에 쓸 수 있다고 적는다. 검색 요약상 EG-ICE 2023(511-520) 발표본이다. 출처 항목의 저자와 게재처를 보완해야 한다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): Automation in Construction 155(2023)에 실린 Esser·Vilgertshofer·Borrmann 논문이다. 객체 네트워크를 그래프로, 변경을 그래프 변환(패치)으로 표현해 객체 수준에서 동기화·병합한다는 요약이 확인된다. 발행 월(2023-11)은 권호 기준 추정이다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): 요약에 '자세 추정이 틀리면 지도 갱신이 오류를 낳는다', '자세 추정 불확실성을 고려한 안전한 라이다 점유 격자 지도 갱신', '길을 잃어도 자세를 복구해 갱신을 이어 간다'는 내용이 있다. '위치추정 성능 기반 안전장치'라는 표현은 요약 문구와 정확히 같지 않아 문장을 다듬어야 한다. 기존 단계 4 페이지 q4-02 절에 같은 논문을 다른 측면으로 쓴 문장이 있다. 연계 대상 표시는 적절하다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): ISO 3691-4:2023 페이지 요약에 '운용 구역의 상태가 무인 산업용 트럭의 안전 운행에 큰 영향을 주며 위험을 없애기 위한 운용 구역 준비는 부속서 A에 규정한다'는 내용이 있다. 발행 기관 자료의 요약이다. 검색 결과에 ISO/CD 3691-4(개정 진행)가 보이므로 2023판 기준임을 명시해야 한다. 변경 뒤 재검증 조문은 미확인이다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): A3 발표문에 R15.08-2가 IMR·IMR 플릿을 현장에 통합·설정·맞춤화할 때의 요구사항을 정하고 '반복 과정으로서의 위험성평가'를 강조한다는 내용이 있다. 발행 기관 안내문이다. 검색 결과에 후속 파트 ANSI/A3 R15.08-3-2026이 보이며, 이 파트의 내용은 이번 브리프 범위 밖이다. 지도 변경 시 재평가 조문은 미확인이다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(검색 결과 일치, 원문 미열람): NODE Robotics 제품 페이지 요약이 업로드·편집·유지·배포와 Live Maps 병합을 설명한다. vendor_claim: true, 태그 추정, '벤더 주장' 병기가 모두 되어 있어 적절하다. 독립 확인은 없다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 실행 2026-09-25-76에서 검증한 ref-153 문장의 재인용이다. 기존 단계 4 페이지 q4-03 절과 같은 주장이므로 새 문장을 만들지 말고 기존 문장과 각주를 재사용한다. 이번 실행에서는 다시 열지 않았다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 종합이며 추정 태그와 low 신뢰도가 적절하다. 구성 사실(f1·f3·f5·f6·f7·f9·f16)은 확인됐다. 다만 f7이 강등됐으므로 CDE 상태·개정 코드 부분은 추정 근거로 읽어야 한다. 이 종합은 판 대응표를 별도 개념으로 둘 것을 시사하므로, 층별 지도 속성으로 두자는 온톨로지 제안 2와 방향이 다르다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 종합(추정·low)이다. IfcDiff 출력(f9)과 IFC 판 비교 연구(f10·f11)를 재검증 범위 산정에 쓴 사례는 없다는 한정이 있어 적절하다. 핵심 결론이지만 단일 출처가 없다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 추정이다. 근거 규칙(사전 적재, 다운로드와 활성화 분리, mapId당 한 판 활성, 로봇의 지도 자체 삭제 금지)은 원문으로 확인했다. '명세는 되돌림 절차를 따로 정하지 않는다'는 부분은 이번에 읽은 6.3절 범위의 관찰이며 명세 전체에 대한 부재 확정은 아니다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 추정이다. 근거 f5(판 필드 부재)는 검증 에이전트가 직접 확인했고, f6(layoutVersion)도 제3자 스키마에서 확인했다. 결론은 추정으로만 쓴다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이 위키의 추정이다. 보호 영역·안전 기능의 재검증을 로봇·통합자 쪽 연계 대상으로 한정한 범위 처리가 적절하다. 변경 분류 기준을 정한 조문은 미확인이다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"설명용 가정 사례이며 추정이다. 근거인 관제의 지도 활성화 책임(f1·f4)과 층별 좌표 변환(f16)은 확인됐다. 물류 흐름은 출하, 항목은 완료·인계다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 범위의 관찰이며 부재 확정이 아니라는 한정이 있다. 검색 횟수를 정정해야 한다: 이 finding은 '한국어 2회'라고 적고 self_check.limits는 '한국어 3회'라고 적는다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"f1·f2·f3(mapId·mapVersion 식별, 새 판 사전 적재 후 활성화, 구역 집합 불변·새 zoneSetId·mapId당 활성 하나)가 단계 4 페이지 q4-02 절의 VDA 5050 문장(실행 2026-09-25-75)과 겹친다\",\"f4의 initializePosition이 단계 4 페이지 q4-03 절의 VDA 5050 문장과 겹친다\",\"f16이 단계 4 페이지 q4-03 절의 ref-153 문장(층별 대응 경유점 4쌍, 변환 오차 기록)과 같은 주장이다\",\"f12(Stefanini 외)가 단계 4 페이지 q4-02 절의 같은 논문 문장과 겹친다(다른 측면)\",\"온톨로지 제안 '층별 지도 / 판 식별자(후보)'는 실행 2026-09-25-44에서 반영하지 않은 '지도 판' 속성 제안과 같은 대상이다. 공간 그래프 스키마 초안 6절의 '정렬 정보·도면–현장 차이·지도 버전' 미해결 질문과 충돌한다\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"용어 후보 '정보 컨테이너(Information Container)'의 정의(파일·시스템·응용 저장소에서 꺼낼 수 있는 이름 붙은 지속적 정보 묶음)를 뒷받침하는 finding이 없다\",\"용어 후보 '공통 데이터 환경'의 정의에 finding에 없는 '단일 정보원'·'합의된 절차로 모으고 관리·배포' 문구가 있고, 상태 목록 근거(f7)는 추정으로 강등됐다\"]},\"quotation_check\":{\"ok\":false,\"issues\":[\"ref-031에서 직접 인용이 f1·f2·f3 세 곳의 evidence_excerpt에 있다. 페이지에서는 ref-031 직접 인용을 1회 이하로 줄이고 나머지는 재서술해야 한다\"]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f7: [사실] → [추정]으로 강등한다. 문장을 '영국 BIM Framework 지침 Part C(2020-09, ISO 19650-2 영국 국가 부속서 기준)는 CDE 정보 컨테이너 메타데이터에 상태·개정 코드를 두며, 작업 중·공유·발행·보관 상태 목록은 BIM 소프트웨어 업체 블로그(ref-746, 벤더 문서) 요약 기준이다'의 범위로 줄인다. 이유: ISO 19650 발행 기관 자료를 열지 못했고 상태 목록은 벤더 블로그에만 기댄다.\",\"f1~f4: 단계 4 페이지 q4-04 절에서 기존 q4-02·q4-03 절의 VDA 5050 문장(mapId·mapVersion 식별, 사전 적재·활성화, 구역 집합 불변·새 zoneSetId, initializePosition)을 다시 쓰지 않는다. 앞 절로 링크하고 새 사실(UNKNOWN_MAP_ID 경고와 관제 책임, mapHash, enableMap 시 다른 판 비활성화, DUPLICATE_MAP, 로봇의 지도 자체 삭제 금지와 deleteMap, zoneSet의 mapVersion 비참조, 신규 zoneSet DISABLED)만 더한다. 각주는 기존 ref-031을 재사용하고 발행일 미확인(oq-005)을 표기한다. 이유: 중복 방지.\",\"ref-031: 페이지 전체에서 직접 인용은 1회 이하로 두고 나머지는 재서술한다. 이유: 인용 규칙상 출처당 1회만 허용된다.\",\"f16: 새 문장을 만들지 않고 단계 4 페이지 q4-03 절의 ref-153 기존 문장을 참조한다. 이유: 같은 주장이다.\",\"f12: 문장을 '연계 대상: Stefanini 외(Sensors 23(13), 2023-06-30)는 자세 추정이 틀리면 지도 갱신이 오류를 낳는다고 보고, 자세 추정 불확실성을 고려한 안전한 라이다 점유 격자 지도 갱신을 제안했다'로 고친다. 이유: '위치추정 성능 기반 안전장치'는 검색 요약 문구와 정확히 일치하지 않는다.\",\"f10: 출처 ref-748 각주의 기관을 'Liu, H., Gao, G., & Gu, M. (EG-ICE 2023, 511-520)'로 보완하고 arXiv 프리프린트(2023-12)임을 적는다. 이유: 검색 결과에서 저자와 게재처를 확인했다.\",\"f8: '2023-12-06 게재 승인'을 쓰지 않고 발행 연도 2023, 게재지 미확인으로만 적는다. 이유: 게재 승인일은 검색 결과에서 확인되지 않았다.\",\"f13: 'ISO 3691-4:2023 판 기준'을, f14: 'ANSI/A3 R15.08-2-2023 기준'을 본문에 명시한다. 개정·후속 파트(ISO/CD 3691-4 진행, R15.08-3-2026)의 내용은 미확인이라고만 적는다. 이유: 새 판·후속 파트가 있어 최신성을 표시해야 한다.\",\"f15: [추정]에 '벤더 주장'과 '원문 미열람'을 유지한다. 판 식별 근거나 결론의 근거로 쓰지 않는다. 이유: 벤더 문서이고 독립 확인이 없다.\",\"f23: 검색 횟수 표기를 '검색 13회(한국어 3회)'로 self_check와 맞추거나, 횟수를 빼고 '이번 검색 범위'로만 쓴다. 이유: finding과 self_check의 수치가 다르다.\",\"각주: 원문을 열지 못한 새 출처(ref-745~ref-752 브리프 id)와 재사용 ref-212·ref-652의 각주 정의에는 접근일 뒤 ' (원문 미열람)'을 붙이고, reference_updates에 source_unopened: true를 넣는다. 원문을 연 ref-743(IfcDiff)·ref-744(BuildingMap.msg)는 표시하지 않는다. 재사용 ref-153은 기존 참고문헌 표기를 따른다.\",\"온톨로지 변경 '평면도(Floor Plan) modify'를 승인한다(f7·f9). 기존 속성 '버전'에 값 후보 '상태·개정 코드(영국 BIM Framework 지침, ISO 19650-2 영국 국가 부속서 기준, 후보)'를 병기하고, IFC 입력은 요소 GlobalId로 판 사이 요소를 대응시킬 수 있다는 메모(IfcDiff의 GlobalId 일관성 가정)를 둔다. 상태를 확정으로 유지하고 ontology_version을 1.1 → 1.2로 올린다. 세부 코드 값(S0~S7, P01·C01)은 넣지 않는다.\",\"온톨로지 변경 '층별 지도(Floor Map) modify — 판 식별자(후보)'는 반영하지 않고, 6절 '정렬 정보·도면–현장 차이·지도 버전' 항목의 근거 보강으로 둔다(f1·f3·f5·f6, 판 대응표 추정 f17). 이유: 실행 2026-09-25-44에서 반영하지 않은 '지도 판' 속성과 같은 대상이고, 이번 종합(f17)은 판 대응표를 별도 개념으로 두는 쪽을 가리켜 6절 질문을 근거 없이 결정하게 된다.\",\"track.answered_question_ids: q4-04를 답함으로 두되, 단계 페이지 3절 q4-04 소제목({#q4-04})에 판 식별·배포 규칙은 사실, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 이 위키의 종합(추정·low)임을 명시한다.\",\"백로그: q4-14는 q4-13과 같은 질문(planarDatum 수식어만 다름)이므로 backlog_updates에서 상태를 폐기(중복, q4-13으로 대체)로 바꾸고 단계 페이지 2절 표에서는 뺀다. 이유: q1-07·q2-05·q4-06 선례와 같다.\",\"용어집: '정보 컨테이너'는 신규 등록하지 않는다(근거 finding 없음). '공통 데이터 환경'은 정의를 'ISO 19650 정보 관리에서 도면·모델 같은 정보 컨테이너를 상태·개정 메타데이터와 함께 관리하는 환경(영국 국가 부속서 기반 지침 기준)'의 범위로 줄이고 '단일 정보원' 문구를 뺀다.\",\"단계 페이지 6절: 완료 조건 두 항목은 기존 판정(충족)을 유지한다. '다음 단계로 전환: 아니오(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13)'로 적고, track_updates.stage_transition은 넣지 않는다. 트랙 개요의 현재 단계는 '단계 4. 지도 변환 보정과 현장 정합'을 유지한다.\",\"f22: 시나리오 표 머리에 '다음은 설명을 위한 가상의 시나리오이다'를 두고, 물류 흐름 단계 '출하', 채우는 항목 '완료·인계'만 f22 근거로 채운다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 23건, 미확인 0건, 교차 확인 0건. 강등: f7 사실 → 추정(ISO 19650 발행 기관 자료 미열람, 상태 목록은 벤더 블로그). 원문 미열람 출처: ref-745, ref-746, ref-747, ref-748, ref-749, ref-750, ref-751, ref-752(브리프 id), ref-652, ref-153(이번 실행 기준). ref-212는 브리프에 미열람으로 적혔으나 검증 에이전트가 raw 원문에서 layoutVersion을 확인했다. ref-743·ref-744는 검증 에이전트가 raw 원문으로 다시 확인했다. 브리프 표시 불일치: ref-031의 fetched_via가 github_raw이고 fetch_url이 null인데 한계 항목은 inbox로 적었다(입력 원문으로 열람은 인정). 주의: 로봇 쪽 지도 판 식별·배포 규칙(VDA 5050 mapId·mapVersion, 사전 적재·활성화·삭제, 구역 집합과 판)과 IfcDiff·BuildingMap 관찰은 확인된 사실이다. 판 대응표, 차이 기반 재검증 범위, 배포 순서, 안전 재검토 구분은 이 위키의 종합 추정이며 단일 출처가 없다. ISO 3691-4는 2023판, R15.08-2는 2023판 기준이다. 개정·후속 파트(ISO/CD 3691-4, R15.08-3-2026)가 있으나 내용은 미확인이다. 온톨로지 변경 승인: 평면도 '버전' 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모(f7·f9) → v1.2. 거부: 층별 지도 '판 식별자(후보)'(f1·f3·f5·f6) → 6절 지도 버전 항목 근거 보강(실행 2026-09-25-44 거부와 같은 대상, f17은 별도 대응표를 시사). 백로그 q4-14는 q4-13 중복으로 폐기 지시. 단계 완료 조건: 충족(보정 항목 목록과 도면–현장 정합 절차 초안이 기존 페이지에 반영됨). 단계 전환: 미승인(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":false,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":true,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-78",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(data/source_texts/ref-031.txt) 6.3.1절에서 mapId·mapVersion 조합 식별, 주문 수락 전 지도 보유 확인과 UNKNOWN_MAP_ID(WARNING), 관제 책임 문장을 대조했다. 단일 출처(명세 한 곳). 명세 3.0.0 발행일 미확인(oq-005). 브리프 sources[ref-031]은 fetched_via가 github_raw인데 fetch_url이 null이고 self_check.limits는 inbox라고 적어 표시가 서로 맞지 않는다(원문 열람 자체는 입력 원문으로 인정)."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 6.3.1·6.3.3~6.3.5절과 표 4(downloadMap 선택 파라미터 mapHash, enableMap 시 같은 mapId의 다른 판 DISABLED, DUPLICATE_MAP WARNING, 'The mobile robot itself shall not delete maps', deleteMap)를 원문과 대조했다. 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 6.4.2절(zoneSet은 mapId로 단일 지도에 연결, mapVersion 비참조, 내용 불변·새 zoneSetId, 신규 DISABLED, enableZoneSet, mapId당 활성 하나)을 원문과 대조했다. 구역 집합 불변·새 zoneSetId·mapId당 활성 하나는 기존 단계 4 페이지 q4-02 절(실행 2026-09-25-75)에 이미 실려 있어 중복된다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 6.3.4절(주문 nodePosition의 mapId에 맞는 지도 활성화 보장은 관제 몫, 새 지도의 특정 위치에는 initializePosition 사용)과 표 4의 initializePosition 파라미터(x·y·theta·mapId·lastNodeId)를 원문과 대조했다. initializePosition은 기존 q4-03 절에도 있다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 에이전트가 raw.githubusercontent.com의 BuildingMap.msg를 직접 열어 필드가 string name, Level[] levels, Lift[] lifts 세 개뿐임을 확인했다. 메시지 한 파일의 관찰일 뿐이며 building.yaml·주행 그래프 파일의 판 표기는 미확인이다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 에이전트가 raw.githubusercontent.com의 continua-systems lif-schema.json을 열어, 레이아웃 객체에 필수 필드 layoutVersion(정수 문자열 권장)과 layoutId·layoutLevelId 등이 있음을 확인했다. VDMA 공식 산출물이 아닌 제3자 스키마라는 한정은 유지해야 한다. 브리프는 원문 미열람(source_unopened: true)으로 적었으므로 페이지 각주 표시는 브리프를 따른다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 검색 결과 기준(원문 미열람): UK BIM Framework Guidance Part C(2020-09, Edition 1)는 CDE 워크플로우에서 상태·개정 메타데이터를 다루며, 상태·개정 코드는 영국 국가 부속서(BS EN ISO 19650-2) 기준으로 예시된다. 이 범위만 뒷받침된다. 상태 목록(작업 중·공유·발행·보관)은 벤더 블로그(ref-746, 벤더 문서)에만 기대며, ISO 19650 발행 기관 자료는 열람하지 못했다. 표준 주장인데 근거가 발행 기관 자료가 아니므로 강등한다. Part C는 Edition 1 기준이며 이후 판 여부는 미확인이다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): koreascience 게재본의 제목·저자(이일곤·김현민·안준상·최재웅)가 일치하고, 요약에 ISO 19650 CDE 워크플로우·정보 컨테이너(고유 ID·메타데이터)를 다루며 영국 국가 부속서를 참고한다고 나온다. '2023-12-06 게재 승인'은 검색 결과에서 확인하지 못했고, 게재지도 미확인이다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증 에이전트가 IfcOpenShell v0.8.0의 ifcdiff.rst(raw)를 열어 Added·Deleted·Changed 출력, 기본 파일 diff.json, GlobalId 일관성 가정 문장, 선택 비교 항목(type·property·container·aggregate·classification)을 확인했다. 오픈소스 도구 문서이며 단일 출처다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): arXiv 2312.14931의 저자는 Han Liu·Ge Gao·Ming Gu이고, 요약은 IFC 그래프 구조의 등가 변환 때문에 판 비교·증분 저장이 어렵다고 보며 정규화 파일을 Git 류 도구에 쓸 수 있다고 적는다. 검색 요약상 EG-ICE 2023(511-520) 발표본이다. 출처 항목의 저자와 게재처를 보완해야 한다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): Automation in Construction 155(2023)에 실린 Esser·Vilgertshofer·Borrmann 논문이다. 객체 네트워크를 그래프로, 변경을 그래프 변환(패치)으로 표현해 객체 수준에서 동기화·병합한다는 요약이 확인된다. 발행 월(2023-11)은 권호 기준 추정이다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): 요약에 '자세 추정이 틀리면 지도 갱신이 오류를 낳는다', '자세 추정 불확실성을 고려한 안전한 라이다 점유 격자 지도 갱신', '길을 잃어도 자세를 복구해 갱신을 이어 간다'는 내용이 있다. '위치추정 성능 기반 안전장치'라는 표현은 요약 문구와 정확히 같지 않아 문장을 다듬어야 한다. 기존 단계 4 페이지 q4-02 절에 같은 논문을 다른 측면으로 쓴 문장이 있다. 연계 대상 표시는 적절하다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): ISO 3691-4:2023 페이지 요약에 '운용 구역의 상태가 무인 산업용 트럭의 안전 운행에 큰 영향을 주며 위험을 없애기 위한 운용 구역 준비는 부속서 A에 규정한다'는 내용이 있다. 발행 기관 자료의 요약이다. 검색 결과에 ISO/CD 3691-4(개정 진행)가 보이므로 2023판 기준임을 명시해야 한다. 변경 뒤 재검증 조문은 미확인이다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): A3 발표문에 R15.08-2가 IMR·IMR 플릿을 현장에 통합·설정·맞춤화할 때의 요구사항을 정하고 '반복 과정으로서의 위험성평가'를 강조한다는 내용이 있다. 발행 기관 안내문이다. 검색 결과에 후속 파트 ANSI/A3 R15.08-3-2026이 보이며, 이 파트의 내용은 이번 브리프 범위 밖이다. 지도 변경 시 재평가 조문은 미확인이다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(검색 결과 일치, 원문 미열람): NODE Robotics 제품 페이지 요약이 업로드·편집·유지·배포와 Live Maps 병합을 설명한다. vendor_claim: true, 태그 추정, '벤더 주장' 병기가 모두 되어 있어 적절하다. 독립 확인은 없다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 실행 2026-09-25-76에서 검증한 ref-153 문장의 재인용이다. 기존 단계 4 페이지 q4-03 절과 같은 주장이므로 새 문장을 만들지 말고 기존 문장과 각주를 재사용한다. 이번 실행에서는 다시 열지 않았다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 종합이며 추정 태그와 low 신뢰도가 적절하다. 구성 사실(f1·f3·f5·f6·f7·f9·f16)은 확인됐다. 다만 f7이 강등됐으므로 CDE 상태·개정 코드 부분은 추정 근거로 읽어야 한다. 이 종합은 판 대응표를 별도 개념으로 둘 것을 시사하므로, 층별 지도 속성으로 두자는 온톨로지 제안 2와 방향이 다르다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 종합(추정·low)이다. IfcDiff 출력(f9)과 IFC 판 비교 연구(f10·f11)를 재검증 범위 산정에 쓴 사례는 없다는 한정이 있어 적절하다. 핵심 결론이지만 단일 출처가 없다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 추정이다. 근거 규칙(사전 적재, 다운로드와 활성화 분리, mapId당 한 판 활성, 로봇의 지도 자체 삭제 금지)은 원문으로 확인했다. '명세는 되돌림 절차를 따로 정하지 않는다'는 부분은 이번에 읽은 6.3절 범위의 관찰이며 명세 전체에 대한 부재 확정은 아니다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 추정이다. 근거 f5(판 필드 부재)는 검증 에이전트가 직접 확인했고, f6(layoutVersion)도 제3자 스키마에서 확인했다. 결론은 추정으로만 쓴다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이 위키의 추정이다. 보호 영역·안전 기능의 재검증을 로봇·통합자 쪽 연계 대상으로 한정한 범위 처리가 적절하다. 변경 분류 기준을 정한 조문은 미확인이다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "설명용 가정 사례이며 추정이다. 근거인 관제의 지도 활성화 책임(f1·f4)과 층별 좌표 변환(f16)은 확인됐다. 물류 흐름은 출하, 항목은 완료·인계다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 범위의 관찰이며 부재 확정이 아니라는 한정이 있다. 검색 횟수를 정정해야 한다: 이 finding은 '한국어 2회'라고 적고 self_check.limits는 '한국어 3회'라고 적는다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "f1·f2·f3(mapId·mapVersion 식별, 새 판 사전 적재 후 활성화, 구역 집합 불변·새 zoneSetId·mapId당 활성 하나)가 단계 4 페이지 q4-02 절의 VDA 5050 문장(실행 2026-09-25-75)과 겹친다",
+        "f4의 initializePosition이 단계 4 페이지 q4-03 절의 VDA 5050 문장과 겹친다",
+        "f16이 단계 4 페이지 q4-03 절의 ref-153 문장(층별 대응 경유점 4쌍, 변환 오차 기록)과 같은 주장이다",
+        "f12(Stefanini 외)가 단계 4 페이지 q4-02 절의 같은 논문 문장과 겹친다(다른 측면)",
+        "온톨로지 제안 '층별 지도 / 판 식별자(후보)'는 실행 2026-09-25-44에서 반영하지 않은 '지도 판' 속성 제안과 같은 대상이다. 공간 그래프 스키마 초안 6절의 '정렬 정보·도면–현장 차이·지도 버전' 미해결 질문과 충돌한다"
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "용어 후보 '정보 컨테이너(Information Container)'의 정의(파일·시스템·응용 저장소에서 꺼낼 수 있는 이름 붙은 지속적 정보 묶음)를 뒷받침하는 finding이 없다",
+        "용어 후보 '공통 데이터 환경'의 정의에 finding에 없는 '단일 정보원'·'합의된 절차로 모으고 관리·배포' 문구가 있고, 상태 목록 근거(f7)는 추정으로 강등됐다"
+      ]
+    },
+    "quotation_check": {
+      "ok": false,
+      "issues": [
+        "ref-031에서 직접 인용이 f1·f2·f3 세 곳의 evidence_excerpt에 있다. 페이지에서는 ref-031 직접 인용을 1회 이하로 줄이고 나머지는 재서술해야 한다"
+      ]
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f7: [사실] → [추정]으로 강등한다. 문장을 '영국 BIM Framework 지침 Part C(2020-09, ISO 19650-2 영국 국가 부속서 기준)는 CDE 정보 컨테이너 메타데이터에 상태·개정 코드를 두며, 작업 중·공유·발행·보관 상태 목록은 BIM 소프트웨어 업체 블로그(ref-746, 벤더 문서) 요약 기준이다'의 범위로 줄인다. 이유: ISO 19650 발행 기관 자료를 열지 못했고 상태 목록은 벤더 블로그에만 기댄다.",
+      "f1~f4: 단계 4 페이지 q4-04 절에서 기존 q4-02·q4-03 절의 VDA 5050 문장(mapId·mapVersion 식별, 사전 적재·활성화, 구역 집합 불변·새 zoneSetId, initializePosition)을 다시 쓰지 않는다. 앞 절로 링크하고 새 사실(UNKNOWN_MAP_ID 경고와 관제 책임, mapHash, enableMap 시 다른 판 비활성화, DUPLICATE_MAP, 로봇의 지도 자체 삭제 금지와 deleteMap, zoneSet의 mapVersion 비참조, 신규 zoneSet DISABLED)만 더한다. 각주는 기존 ref-031을 재사용하고 발행일 미확인(oq-005)을 표기한다. 이유: 중복 방지.",
+      "ref-031: 페이지 전체에서 직접 인용은 1회 이하로 두고 나머지는 재서술한다. 이유: 인용 규칙상 출처당 1회만 허용된다.",
+      "f16: 새 문장을 만들지 않고 단계 4 페이지 q4-03 절의 ref-153 기존 문장을 참조한다. 이유: 같은 주장이다.",
+      "f12: 문장을 '연계 대상: Stefanini 외(Sensors 23(13), 2023-06-30)는 자세 추정이 틀리면 지도 갱신이 오류를 낳는다고 보고, 자세 추정 불확실성을 고려한 안전한 라이다 점유 격자 지도 갱신을 제안했다'로 고친다. 이유: '위치추정 성능 기반 안전장치'는 검색 요약 문구와 정확히 일치하지 않는다.",
+      "f10: 출처 ref-748 각주의 기관을 'Liu, H., Gao, G., & Gu, M. (EG-ICE 2023, 511-520)'로 보완하고 arXiv 프리프린트(2023-12)임을 적는다. 이유: 검색 결과에서 저자와 게재처를 확인했다.",
+      "f8: '2023-12-06 게재 승인'을 쓰지 않고 발행 연도 2023, 게재지 미확인으로만 적는다. 이유: 게재 승인일은 검색 결과에서 확인되지 않았다.",
+      "f13: 'ISO 3691-4:2023 판 기준'을, f14: 'ANSI/A3 R15.08-2-2023 기준'을 본문에 명시한다. 개정·후속 파트(ISO/CD 3691-4 진행, R15.08-3-2026)의 내용은 미확인이라고만 적는다. 이유: 새 판·후속 파트가 있어 최신성을 표시해야 한다.",
+      "f15: [추정]에 '벤더 주장'과 '원문 미열람'을 유지한다. 판 식별 근거나 결론의 근거로 쓰지 않는다. 이유: 벤더 문서이고 독립 확인이 없다.",
+      "f23: 검색 횟수 표기를 '검색 13회(한국어 3회)'로 self_check와 맞추거나, 횟수를 빼고 '이번 검색 범위'로만 쓴다. 이유: finding과 self_check의 수치가 다르다.",
+      "각주: 원문을 열지 못한 새 출처(ref-745~ref-752 브리프 id)와 재사용 ref-212·ref-652의 각주 정의에는 접근일 뒤 ' (원문 미열람)'을 붙이고, reference_updates에 source_unopened: true를 넣는다. 원문을 연 ref-743(IfcDiff)·ref-744(BuildingMap.msg)는 표시하지 않는다. 재사용 ref-153은 기존 참고문헌 표기를 따른다.",
+      "온톨로지 변경 '평면도(Floor Plan) modify'를 승인한다(f7·f9). 기존 속성 '버전'에 값 후보 '상태·개정 코드(영국 BIM Framework 지침, ISO 19650-2 영국 국가 부속서 기준, 후보)'를 병기하고, IFC 입력은 요소 GlobalId로 판 사이 요소를 대응시킬 수 있다는 메모(IfcDiff의 GlobalId 일관성 가정)를 둔다. 상태를 확정으로 유지하고 ontology_version을 1.1 → 1.2로 올린다. 세부 코드 값(S0~S7, P01·C01)은 넣지 않는다.",
+      "온톨로지 변경 '층별 지도(Floor Map) modify — 판 식별자(후보)'는 반영하지 않고, 6절 '정렬 정보·도면–현장 차이·지도 버전' 항목의 근거 보강으로 둔다(f1·f3·f5·f6, 판 대응표 추정 f17). 이유: 실행 2026-09-25-44에서 반영하지 않은 '지도 판' 속성과 같은 대상이고, 이번 종합(f17)은 판 대응표를 별도 개념으로 두는 쪽을 가리켜 6절 질문을 근거 없이 결정하게 된다.",
+      "track.answered_question_ids: q4-04를 답함으로 두되, 단계 페이지 3절 q4-04 소제목({#q4-04})에 판 식별·배포 규칙은 사실, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 이 위키의 종합(추정·low)임을 명시한다.",
+      "백로그: q4-14는 q4-13과 같은 질문(planarDatum 수식어만 다름)이므로 backlog_updates에서 상태를 폐기(중복, q4-13으로 대체)로 바꾸고 단계 페이지 2절 표에서는 뺀다. 이유: q1-07·q2-05·q4-06 선례와 같다.",
+      "용어집: '정보 컨테이너'는 신규 등록하지 않는다(근거 finding 없음). '공통 데이터 환경'은 정의를 'ISO 19650 정보 관리에서 도면·모델 같은 정보 컨테이너를 상태·개정 메타데이터와 함께 관리하는 환경(영국 국가 부속서 기반 지침 기준)'의 범위로 줄이고 '단일 정보원' 문구를 뺀다.",
+      "단계 페이지 6절: 완료 조건 두 항목은 기존 판정(충족)을 유지한다. '다음 단계로 전환: 아니오(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13)'로 적고, track_updates.stage_transition은 넣지 않는다. 트랙 개요의 현재 단계는 '단계 4. 지도 변환 보정과 현장 정합'을 유지한다.",
+      "f22: 시나리오 표 머리에 '다음은 설명을 위한 가상의 시나리오이다'를 두고, 물류 흐름 단계 '출하', 채우는 항목 '완료·인계'만 f22 근거로 채운다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 23건, 미확인 0건, 교차 확인 0건. 강등: f7 사실 → 추정(ISO 19650 발행 기관 자료 미열람, 상태 목록은 벤더 블로그). 원문 미열람 출처: ref-745, ref-746, ref-747, ref-748, ref-749, ref-750, ref-751, ref-752(브리프 id), ref-652, ref-153(이번 실행 기준). ref-212는 브리프에 미열람으로 적혔으나 검증 에이전트가 raw 원문에서 layoutVersion을 확인했다. ref-743·ref-744는 검증 에이전트가 raw 원문으로 다시 확인했다. 브리프 표시 불일치: ref-031의 fetched_via가 github_raw이고 fetch_url이 null인데 한계 항목은 inbox로 적었다(입력 원문으로 열람은 인정). 주의: 로봇 쪽 지도 판 식별·배포 규칙(VDA 5050 mapId·mapVersion, 사전 적재·활성화·삭제, 구역 집합과 판)과 IfcDiff·BuildingMap 관찰은 확인된 사실이다. 판 대응표, 차이 기반 재검증 범위, 배포 순서, 안전 재검토 구분은 이 위키의 종합 추정이며 단일 출처가 없다. ISO 3691-4는 2023판, R15.08-2는 2023판 기준이다. 개정·후속 파트(ISO/CD 3691-4, R15.08-3-2026)가 있으나 내용은 미확인이다. 온톨로지 변경 승인: 평면도 '버전' 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모(f7·f9) → v1.2. 거부: 층별 지도 '판 식별자(후보)'(f1·f3·f5·f6) → 6절 지도 버전 항목 근거 보강(실행 2026-09-25-44 거부와 같은 대상, f17은 별도 대응표를 시사). 백로그 q4-14는 q4-13 중복으로 폐기 지시. 단계 완료 조건: 충족(보정 항목 목록과 도면–현장 정합 절차 초안이 기존 페이지에 반영됨). 단계 전환: 미승인(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": false,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": true,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 59247,
+  "type": "result",
+  "duration_ms": 200718,
+  "uuid": "e5f17ee2-d81d-4b7c-8dd0-be4d4b8526f4",
+  "ttft_stream_ms": 5819,
+  "time_to_request_ms": 86,
+  "first_content_frame_ms": 5819,
+  "time_to_request_from_spawn_ms": 15912237,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790329008409.6277,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 202.5
+}

@@ -1,0 +1,138 @@
+{
+  "run_id": "2026-09-25-63",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 25,
+    "area_name": "25. 안전·위험 관리",
+    "category": "G. 안전·보안·지능·거버넌스"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 9,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "222918e",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 11,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2253.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 25. 안전·위험 관리 | 영역 심화: 3~11절 첫 작성(표준별 책임 분담, 정지·재개·비상 대응, STPA 위험 분석, SafeGate 트랙 반영) | run 2026-09-25-63",
+  "notes": [
+    "참고문헌 생성: references/ref-560.md",
+    "참고문헌 생성: references/ref-561.md",
+    "참고문헌 생성: references/ref-562.md",
+    "참고문헌 생성: references/ref-563.md",
+    "참고문헌 생성: references/ref-564.md",
+    "참고문헌 생성: references/ref-565.md",
+    "참고문헌 생성: references/ref-566.md",
+    "참고문헌 생성: references/ref-567.md",
+    "참고문헌 생성: references/ref-568.md",
+    "용어집 생성: glossary/risk-assessment.md",
+    "용어집 '3단계 위험 감소 방법' (Three-Step Method (ISO 12100)) 은 기존 페이지 glossary/risk-assessment.md 와 같은 용어로 보고 갱신했다(중복 생성 방지)",
+    "용어집 갱신: glossary/risk-assessment.md",
+    "용어집 생성: glossary/operating-zone.md",
+    "용어집 생성: glossary/stpa.md",
+    "세부영역 반영 제안 1건을 반영으로 표시했다(25. 안전·위험 관리, 실행 2026-09-25-63)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 9,
+    "standards": 2,
+    "open_questions": 3,
+    "flow_cells": 9,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 16:24:05 KST",
+  "usage": {
+    "input_tokens": 68,
+    "cache_creation_input_tokens": 825192,
+    "cache_read_input_tokens": 3239694,
+    "output_tokens": 198142,
+    "cost_usd": 12.579,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 3.4554,
+        "output_tokens": 52290,
+        "cache_read_input_tokens": 1899363,
+        "cache_creation_input_tokens": 131503
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.8101,
+        "output_tokens": 21786,
+        "cache_read_input_tokens": 978679,
+        "cache_creation_input_tokens": 104758
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 5.4823,
+        "output_tokens": 110751,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 403671
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.7465,
+        "output_tokens": 12323,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 183701
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 2,
+  "cross_checked_findings": 0
+}

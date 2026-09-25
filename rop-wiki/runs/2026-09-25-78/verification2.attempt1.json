@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-09-25-78",
+  "stage": "second",
+  "verdict": "수정 후 재검증",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "단계 4 페이지(docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) H1 아래 상태 줄의 '답한 질문: 3건'을 '답한 질문: 4건'으로 고친다 — 이번 실행으로 q4-04가 답함이 되어 2절 표(답함 4건)·overview_progress(답함 4)와 어긋난다. 절 밖이라 patches로 못 바꾼다면 페이지 머리를 포함한 전체 페이지 갱신으로 보내고, 이 수정을 퍼블리셔 요청으로 additional_research_requests에 넣지 않는다(그 필드는 추가 조사 요청용이다).",
+    "공간 그래프 스키마 초안(docs/tracks/floorplan-recognition/space-graph-schema-draft.md) H1의 '(v1.1)'을 '(v1.2)'로 고친다 — 프런트매터 ontology_version '1.2'와 track_updates.ontology_draft_version '1.2'가 이미 올라가 H1·프런트매터·JSON의 버전 표기가 서로 달라진다(실행 2026-09-25-44·70에서도 H1 버전 표기 오류를 같은 실행 안에서 고쳤다). additional_research_requests의 해당 요청 문장은 지운다.",
+    "단계 4 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13·q4-15)'로 고친다 — 이번 실행에서 단계 4 태그로 새로 등록된 열린 질문 q4-15도 10절 기준의 막힌 질문이며, 직전 실행(2026-09-25-76)도 새 질문을 이 목록에 넣었다. log_entry의 '단계 전환 미승인(막힌 질문 …)' 목록에도 q4-15를 더한다.",
+    "단계 4 페이지 7절: 프런트매터 related_areas에 23과 25를 더했으므로 '프런트매터 related_areas는 아래 목록과 같다'가 맞도록 글머리 목록에 [23. 시험·형식 검증·벤치마크]와 [25. 안전·위험 관리] 항목을 한 줄씩 더한다(내용은 이번 실행 문단의 f18·f21 기반 연결 설명 범위로, 새 사실 없이). 또는 그 문장을 목록과 맞게 고친다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 수정 후 재검증. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 23건, 미확인 0건, 교차 확인 0건. 강등: f7 사실 → 추정(ISO 19650 발행 기관 자료 미열람, 상태 목록은 벤더 블로그). 원문 미열람 출처: ref-745, ref-746, ref-747, ref-748, ref-749, ref-472, ref-470, ref-752, ref-212, ref-652, ref-153. 주의: 로봇 쪽 지도 판 식별·배포 규칙(VDA 5050 3.0.0)과 IfcDiff·BuildingMap 관찰은 확인된 사실이고, 판 대응표·차이 기반 재검증 범위·배포 순서·안전 재검토 구분은 이 위키의 종합 추정이며 단일 출처가 없다. ISO 3691-4는 2023판, R15.08-2는 2023판 기준이다. 온톨로지 변경 승인: 평면도 '버전' 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모(f7·f9) → v1.2. 거부: 층별 지도 '판 식별자(후보)'(f1·f3·f5·f6) → 6절 지도 버전 항목 근거 보강. 백로그 q4-14는 q4-13 중복으로 폐기. 단계 완료 조건: 충족. 단계 전환: 미승인(막힌 질문 q4-05·q4-07·q4-08·q4-09·q4-10·q4-11·q4-12·q4-13·q4-15). / 2차 수정 후 재검증. 드리프트 없음, 1차 수정 지시 18건 이행 확인, [분류원문] 보존, 태그·각주·원문 미열람 표시 유지. 남은 지적은 필드 불일치 4건(단계 페이지 상태 줄 답한 질문 수, 스키마 초안 H1 버전 표기, 막힌 질문 목록의 q4-15 누락, 7절 관련 세부영역 목록과 프런트매터 불일치).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": false,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": true,
+    "stage_transition_approved": false
+  }
+}

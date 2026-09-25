@@ -1,0 +1,147 @@
+{
+  "run_id": "2026-09-25-33",
+  "date": "2026-09-25",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 5,
+  "pages_updated": 1,
+  "new_sources": 12,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "ce045a5",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 20,
+    "sources": 13
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1701.1,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 13. 작업 배정 — MRTA | 영역 심화: 3~11절 신규 작성(분류 체계·시장 기반·최근접 규칙·Open-RMF 입찰·LLM 기반 배정), 트랙 반영 제안 반영 | run 2026-09-25-33",
+  "notes": [
+    "참고문헌 생성: references/ref-393.md",
+    "참고문헌 생성: references/ref-394.md",
+    "참고문헌 생성: references/ref-395.md",
+    "참고문헌 생성: references/ref-396.md",
+    "참고문헌 생성: references/ref-397.md",
+    "참고문헌 생성: references/ref-398.md",
+    "참고문헌 생성: references/ref-399.md",
+    "참고문헌 생성: references/ref-400.md",
+    "참고문헌 생성: references/ref-401.md",
+    "참고문헌 생성: references/ref-402.md",
+    "참고문헌 생성: references/ref-403.md",
+    "참고문헌 생성: references/ref-404.md",
+    "용어집 생성: glossary/hungarian-method.md",
+    "용어집 생성: glossary/market-based-task-allocation.md",
+    "용어집 생성: glossary/consensus-based-bundle-algorithm.md",
+    "용어집 생성: glossary/nearest-vehicle-first-rule.md",
+    "세부영역 반영 제안 7건을 반영으로 표시했다(13. 작업 배정 — MRTA, 실행 2026-09-25-33)"
+  ],
+  "counts": {
+    "create": 5,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 12,
+    "standards": 1,
+    "open_questions": 3,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 12:55:13 KST",
+  "usage": {
+    "input_tokens": 50,
+    "cache_creation_input_tokens": 1309199,
+    "cache_read_input_tokens": 3133115,
+    "output_tokens": 202063,
+    "cost_usd": 15.968,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.6045,
+        "output_tokens": 33746,
+        "cache_read_input_tokens": 1607479,
+        "cache_creation_input_tokens": 136092
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.4538,
+        "output_tokens": 14853,
+        "cache_read_input_tokens": 1163984,
+        "cache_creation_input_tokens": 208136
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 7.6202,
+        "output_tokens": 138668,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 601124
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 3.2048,
+        "output_tokens": 13804,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 362288
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-25-area13-s4.md",
+        "chars": 759
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 3,
+  "cross_checked_findings": 0
+}

@@ -1,0 +1,153 @@
+{
+  "run_id": "2026-09-25-21",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 작업 배정 — MRTA",
+    "category": "D. 계획·최적화",
+    "slug": "nl-task-chatbot",
+    "stage": 1,
+    "question_ids": [
+      "q1-02"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 4,
+  "new_sources": 19,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "ed7b356",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 19
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1493.7,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 1 | q1-02 답함(LLM 담당 범위 세 방식, LLM 정식화와 최적화 배정 연구, 로봇 운영 제품 사례는 벤더 주장), 업무 분해·배정 설계 초안 v0.1 → v0.2, 새 질문 2건 | run 2026-09-25-21",
+  "notes": [
+    "참고문헌 생성: references/ref-164.md",
+    "참고문헌 생성: references/ref-165.md",
+    "참고문헌 생성: references/ref-166.md",
+    "참고문헌 생성: references/ref-167.md",
+    "참고문헌 생성: references/ref-168.md",
+    "참고문헌 생성: references/ref-169.md",
+    "참고문헌 생성: references/ref-170.md",
+    "참고문헌 생성: references/ref-171.md",
+    "참고문헌 생성: references/ref-172.md",
+    "참고문헌 생성: references/ref-173.md",
+    "참고문헌 생성: references/ref-174.md",
+    "참고문헌 생성: references/ref-175.md",
+    "참고문헌 생성: references/ref-176.md",
+    "참고문헌 생성: references/ref-177.md",
+    "참고문헌 생성: references/ref-178.md",
+    "참고문헌 생성: references/ref-179.md",
+    "참고문헌 생성: references/ref-180.md",
+    "참고문헌 생성: references/ref-181.md",
+    "참고문헌 생성: references/ref-242.md",
+    "용어집 생성: glossary/llm-agent.md",
+    "용어집 생성: glossary/milp.md",
+    "온톨로지 초안 버전 v0.1 → v0.2 (버전 이력 추가)"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 4,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 19,
+    "standards": 2,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 3,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 11:57:17 KST",
+  "usage": {
+    "input_tokens": 44,
+    "cache_creation_input_tokens": 1402334,
+    "cache_read_input_tokens": 3209976,
+    "output_tokens": 185687,
+    "cost_usd": 16.3728,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.9432,
+        "output_tokens": 27960,
+        "cache_read_input_tokens": 1653911,
+        "cache_creation_input_tokens": 204913
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.8302,
+        "output_tokens": 18440,
+        "cache_read_input_tokens": 1257433,
+        "cache_creation_input_tokens": 234222
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 6.1942,
+        "output_tokens": 123634,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 462038
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 4.3205,
+        "output_tokens": 14661,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 499602
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/ideas/nl-task-chatbot.md (1개 절)",
+      "docs/tracks/nl-task-chatbot/index.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 6,
+  "cross_checked_findings": 0
+}

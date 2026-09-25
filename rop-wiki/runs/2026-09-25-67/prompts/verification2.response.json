@@ -1,0 +1,135 @@
+{
+  "duration_api_ms": 42599,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.0199748,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 114172,
+    "cache_read_input_tokens": 76154,
+    "output_tokens": 4568,
+    "output_tokens_details": {
+      "thinking_tokens": 2874
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 114172,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4568,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 114172,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 114172
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 4568,
+      "cacheReadInputTokens": 76154,
+      "cacheCreationInputTokens": 114172,
+      "webSearchRequests": 0,
+      "costUSD": 1.0199748,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2874,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-67\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"A·B·C·D·E 대분류 페이지와 같은 주장(f1·f2·f5·f16·f21·f25·f26·f29·f30·f33·f34·f38)은 기존 ref id 각주를 재사용했고, 각 대분류 페이지의 '다른 대분류와의 연결' 절로 상호 참조 링크를 두었다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 46건, 미확인 2건, 교차 확인 0건. 강등: f6 사실 → 추정(IDTA 02020 README 에 시운전 언급 없음), f18 사실 → 추정(팩트시트의 '지속적 호환성 평가' 문장 미확인, 설정 지원만 확인). 원문 미열람 출처: ref-101, ref-121, ref-186, ref-204, ref-217, ref-229, ref-241, ref-265, ref-267, ref-291, ref-364, ref-398, ref-403, ref-407, ref-408, ref-465, ref-466, ref-470, ref-493, ref-516, ref-518, ref-521, ref-539, ref-541, ref-553, ref-554, ref-559, ref-601, ref-602, ref-604, ref-606, ref-607, ref-608, ref-609. 주의: 모든 연결은 단일 출처이거나 같은 발행 주체(VDA 명세·스키마)에 근거한다. G. 안전·보안·지능·거버넌스 쪽 연결은 F. 도입·검증·유지관리 쪽 근거에 기댄다. 정정 요청은 없다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 14항목이 모두 이행됐다. 절 제목은 번호 없는 정본 제목을 썼다. f6·f18 은 강등했고 f19·f31·f40 의 사실과 해석을 나눴다. ref-031 직접 인용은 1회만 남겼다. f15 는 powerSupply 로 고쳤다. f27 에 '벤더 주장'을 병기했다. f3·f28·f41·f42 는 '연계 대상'으로 표시했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분을 유지했다. 27. AI·학습·적응과 모델 운영 연결은 교차 규칙에 따라 양쪽으로 링크했다. 미열람 각주 34건에 표시를 달았다. 근거 미확보 연결 5건을 명시했다. 사소한 의견(수정 불요): ① 참고문헌 목록은 ref-101·ref-364·ref-601·ref-602 를 원문 열람 '예'로 적지만, 이번 페이지 각주는 1차 지시대로 '(원문 미열람)'이다. 퍼블리셔가 기존 참고문헌 페이지의 열람 표시를 덮어쓰지 않도록 확인이 필요하다. ② G 항목에서 f43 문장의 '두 세부영역'은 23. 시험·형식 검증·벤치마크와 28. 표준·상호운용성·다사업자 거버넌스를 가리킨다. ③ B 항목 끝의 B 페이지 보강 안내 문장은 위키 내부 상태 서술이라 태그를 달지 않았다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-67",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "A·B·C·D·E 대분류 페이지와 같은 주장(f1·f2·f5·f16·f21·f25·f26·f29·f30·f33·f34·f38)은 기존 ref id 각주를 재사용했고, 각 대분류 페이지의 '다른 대분류와의 연결' 절로 상호 참조 링크를 두었다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 46건, 미확인 2건, 교차 확인 0건. 강등: f6 사실 → 추정(IDTA 02020 README 에 시운전 언급 없음), f18 사실 → 추정(팩트시트의 '지속적 호환성 평가' 문장 미확인, 설정 지원만 확인). 원문 미열람 출처: ref-101, ref-121, ref-186, ref-204, ref-217, ref-229, ref-241, ref-265, ref-267, ref-291, ref-364, ref-398, ref-403, ref-407, ref-408, ref-465, ref-466, ref-470, ref-493, ref-516, ref-518, ref-521, ref-539, ref-541, ref-553, ref-554, ref-559, ref-601, ref-602, ref-604, ref-606, ref-607, ref-608, ref-609. 주의: 모든 연결은 단일 출처이거나 같은 발행 주체(VDA 명세·스키마)에 근거한다. G. 안전·보안·지능·거버넌스 쪽 연결은 F. 도입·검증·유지관리 쪽 근거에 기댄다. 정정 요청은 없다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 1차 수정 지시 14항목이 모두 이행됐다. 절 제목은 번호 없는 정본 제목을 썼다. f6·f18 은 강등했고 f19·f31·f40 의 사실과 해석을 나눴다. ref-031 직접 인용은 1회만 남겼다. f15 는 powerSupply 로 고쳤다. f27 에 '벤더 주장'을 병기했다. f3·f28·f41·f42 는 '연계 대상'으로 표시했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분을 유지했다. 27. AI·학습·적응과 모델 운영 연결은 교차 규칙에 따라 양쪽으로 링크했다. 미열람 각주 34건에 표시를 달았다. 근거 미확보 연결 5건을 명시했다. 사소한 의견(수정 불요): ① 참고문헌 목록은 ref-101·ref-364·ref-601·ref-602 를 원문 열람 '예'로 적지만, 이번 페이지 각주는 1차 지시대로 '(원문 미열람)'이다. 퍼블리셔가 기존 참고문헌 페이지의 열람 표시를 덮어쓰지 않도록 확인이 필요하다. ② G 항목에서 f43 문장의 '두 세부영역'은 23. 시험·형식 검증·벤치마크와 28. 표준·상호운용성·다사업자 거버넌스를 가리킨다. ③ B 항목 끝의 B 페이지 보강 안내 문장은 위키 내부 상태 서술이라 태그를 달지 않았다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 29944,
+  "type": "result",
+  "duration_ms": 42702,
+  "uuid": "93fc5179-198c-438d-9b9d-2211ab667616",
+  "ttft_stream_ms": 1776,
+  "time_to_request_ms": 78,
+  "first_content_frame_ms": 1776,
+  "time_to_request_from_spawn_ms": 7533258,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790320629360.894,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 44.4
+}

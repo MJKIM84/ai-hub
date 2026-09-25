@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-09-25-55",
+  "date": "2026-09-25",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "D. 계획·최적화"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 1,
+  "new_sources": 2,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "85596aa",
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 7,
+    "sources": 2
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1447.9,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | D. 계획·최적화 | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) | run 2026-09-25-55",
+  "notes": [
+    "참고문헌 생성: references/ref-493.md",
+    "참고문헌 생성: references/ref-494.md",
+    "용어집 생성: glossary/fleet-control-level.md",
+    "용어집 '기반·호라이즌' (Base / Horizon (VDA 5050)) 은 기존 페이지 glossary/vda-5050.md 와 같은 용어로 보고 갱신했다(중복 생성 방지)",
+    "용어집 갱신: glossary/vda-5050.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 2,
+    "standards": 0,
+    "open_questions": 2,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 15:19:50 KST",
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 645463,
+    "cache_read_input_tokens": 2300784,
+    "output_tokens": 95533,
+    "cost_usd": 7.9303,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.777,
+        "output_tokens": 37825,
+        "cache_read_input_tokens": 1766665,
+        "cache_creation_input_tokens": 178844
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.4295,
+        "output_tokens": 18815,
+        "cache_read_input_tokens": 374661,
+        "cache_creation_input_tokens": 233413
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 1.6125,
+        "output_tokens": 33729,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 115660
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 1.0266,
+        "output_tokens": 4172,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 115987
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/d-planning-and-optimization/index.md (2개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 11,
+  "cross_checked_findings": 0
+}

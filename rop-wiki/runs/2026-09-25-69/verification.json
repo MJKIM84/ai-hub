@@ -1,0 +1,295 @@
+{
+  "run_id": "2026-09-25-69",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문(data/source_texts/ref-031) 0 Foreword 에 VDA·VDMA 공동 개발과 KIT IFL 의 개발 주도·이슈 검토·공식 GitHub 저장소 관리가 있고, 2 Scope 에 'optional and non-binding' 이 있다. ref-634 README 도 raw 로 열어 확인. 두 출처 모두 VDA 측 문서라 독립 교차 확인은 아니다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-031 5.3·5.4절(관제: 주문 배정, 경로 계산, 교착 탐지·해소, 교통 제어 / 로봇: 위치 추정, 경로·동작 실행, 상태 지속 전송)과 2 Scope 의 안전 요구·교통 관리 로직 제외 문구와 일치. 5.3절이 교착 해소를 관제 기능으로 두면서 2절이 그 알고리즘을 범위 밖으로 둔 점은 서술에서 구분해야 한다(수정 지시). 단일 출처."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw README 에서 'the PDF on the VDA website is valid' 와 'no legal entitlement to support, maintenance, troubleshooting' 문구 확인. 발행일 미확인."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw README 에 월례 VDA 5050 회의에서 논의하는 이슈의 'VD(M)A in progress' 표시, 수용 이슈의 마일스톤, V3.0.1 오타·수정 / V3.1.0 비파괴·하위 호환 / V4.0.0 현재 미계획이 있다. 단일 출처."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-031 1 Introduction 의 의미적 버전 규칙(Major 파괴적 변경·새 필수 필드, Minor 선택 매개변수, Patch 오타)과 raw state.schema 헤더 version 설명 'Version of the protocol [Major].[Minor].[Patch]' 확인. ref-031·ref-051 은 같은 기관 문서라 독립 아님."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw semver.md 에서 공개 API 선언 요구, MAJOR·MINOR·PATCH 정의, FAQ 의 폐기 절차(폐기 표시를 담은 부 버전 발행 후 주 버전에서 제거) 확인. 발행일 미확인."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(검증 환경 차단). 검색 결과에 RFC Editor 의 RFC 9745 페이지가 있고 'Sunset 시각은 Deprecation 시각보다 이르면 안 된다(MUST NOT be earlier)' 문구가 스니펫에 나타난다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: f5·f6·f7 종합 설계안이며 적용 사례 없음을 스스로 밝혔다. 근거 출처 가운데 ref-706 은 원문 미열람."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증 단계에서 raw AMR_Interop_Standard.json 을 열어 identityReport(필수 uuid·timestamp·manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope)와 statusReport(필수 uuid·timestamp·operationalState·location) 두 메시지만 있고 명령·작업 배정 메시지가 없음을 확인(statusReport 의 destinations 는 예상 위치). 브리프는 ref-253 를 fetched false 로 적었으므로 페이지 표시는 원문 미열람을 유지한다. 판·발행일은 README·스키마에 없어 미확인."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 검증 단계에서 raw README 를 열어 'location, speed, direction, health, tasking / availability and other performance' 공유 목적 문구 확인. 판(1.0 등)·발행일은 README 에 없어 미확인."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 ref-004 의 Fleet Adapters 절과 네 제어 범주 표. 다만 원문은 인터페이스 없음(No Interface)을 'Not compatible'로 두고 RMF 환경에서 동작하지 않는다고 적으므로, '네 수준에 맞춰 통합한다'는 표현은 고쳐야 한다(수정 지시). '표준화 없이'는 원문의 '플릿 능력을 가정하지 않는다' 로 바꾼다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. ref-704 헌장은 원문 미열람이며 검색 결과로 PMC 의 프로젝트 운영·TGC 의 PMC 감독은 확인된다. ref-639 README 는 raw 로 열어 확인했는데, TGC 문서는 TGC 승인·OSRF 이사회 비준, 저장소 목록·작업반 헌장은 해당 PMC 비준으로 나뉘어 있어 '해당 기구의 승인과 이사회 비준'은 과잉 일반화다. '2024-04-15 운영 시작'은 인용한 두 출처(ref-639·ref-704)에 없고 다른 검색 결과(Open Robotics 발표 등)에만 나타난다. 두 출처 모두 OSRA 측 문서라 독립 아님."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에 OPC Foundation 'How to Certify' 페이지가 있고, 스니펫들이 CTT 로 하는 자체 시험(self-testing)·독립 인증 시험소 인증·통과 제품 인증 로고를 확인한다. '인증서' 발급은 스니펫에 직접 나타나지 않으므로 서술은 '인증 로고' 중심으로 한다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 검증 단계에서 raw README 를 다시 열어 인증·적합성 시험 언급이 없음을 확인했다. ref-407·ref-408·ref-608 은 이전 실행(2026-09-25-67)에서 재사용한 출처이며, 이번 검증에서는 검증 예산을 모두 써서 다시 확인하지 못했다(원문 미열람). '부재 확정 아님' 단서 유지."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정]·벤더 주장·vendor_claim true 표시가 규칙에 맞다. ref-608 은 이전 실행에서 재사용한 벤더 보도자료이며, 이번 검증에서는 예산 소진으로 다시 확인하지 못했다(원문 미열람)."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에 KOROS 제·개정 현황 게시물(같은 URL·제목)이 있고, 스니펫에 게시일 2025-06-04 가 나온다. 시험 항목은 미확인이다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과에 EUR-Lex 의 Regulation (EU) 2023/2854 가 있고, 2024-01-11 발효와 처리 서비스 전환 규정은 스니펫으로 확인했다. 대부분 조항의 적용 개시일(2025-09-12)과 연결 제품 설계 의무 대상(2026-09-12 이후 출시 제품)은 EUR-Lex 가 아닌 스니펫에만 나와 이번 finding 에서 뺐다. 발효와 적용 시점이 다르다는 점은 서술에 남긴다(수정 지시)."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(국가법령정보센터 URL, 해설 기사)의 스니펫이 공동 생성 시 각자 사용·수익 권리, 약정 우선을 뒷받침한다. 최신성: 이 법은 2025-05-27 일부개정(법률 제20964호)된 판이 검색된다. ref-637 은 제18692호(2022-01-04 공포, 2022-07 시행) 판이므로 기준 판을 적고, 개정 뒤 조문이 같은지는 미확인으로 남긴다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 법 해석과 계약 사례가 확인되지 않았음을 밝혔다. 근거 출처는 모두 원문 미열람이다. 법 해석은 ROP 직접 범위가 아니므로 계약 과제로만 서술한다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(ISO 페이지, ANSI 블로그 등)에서 산업용 로봇 적용·로봇 셀 범위와 '통합자가 합리적으로 예견할 수 있는' 위험을 다룬다는 문구를 확인했다. 물류 이동로봇 플릿에 적용되는지는 미확인이다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 공식 기준을 확인하지 못했음을 밝혔다. 참고로 ref-031 2 Scope 는 '운영자·통합자·차량 제조사·관제 제공자 사이 책임을 배분하지 않는다(Operational Responsibilities)'고 명시하는데, 브리프는 이 문구를 finding 으로 올리지 않았다. 다음 실행에서 보강할 후보다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 검색 결과(iTeh 샘플 URL과 같은 문서, 벤더 해설)에서 SR 2.8 감사 대상 이벤트와 RE 1 중앙 관리 시스템 전체 감사 추적, SR 2.11 타임스탬프, SR 3.9 감사 정보 보호를 확인했다. 기준판은 2013-08 이다(EN IEC 62443-3-3:2019 는 유럽 채택판)."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. ISO 페이지 스니펫에서 서비스 관리 시스템의 수립·실행·유지·지속 개선 요구가, 해설 스니펫에서 서비스 수준 관리가 관계·합의 요구에 들어 있음이 확인된다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: f22·f23 을 종합한 추정이며 공개 SLA 수치를 넣지 않았다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람. 정책브리핑 보도자료(같은 URL·제목)와 여러 기사 스니펫에서 2021-11-11 발표, 행정안전부와의 협력, 속도 제어·보호 정지·높낮이차와 틈새 극복·추락과 넘어짐 방지 요구를 확인했다. KS 번호는 미확인이다."
+    },
+    {
+      "finding_id": "f26",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. UNSUPPORTED_PARAMETER 가 CRITICAL 수준이고 오류 필드를 참조로 보고한다는 점은 ref-031 6.1.4.2·6.6.5.4 에서 확인했다. 헤더 version 으로 판 차이를 감지한다는 부분은 추론이다."
+    },
+    {
+      "finding_id": "f27",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 필수 필드는 raw MassRobotics 스키마 identityReport 와 ref-051 헤더 manufacturer·serialNumber 에서 확인했다."
+    },
+    {
+      "finding_id": "f28",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. '연계 대상:' 표시가 분류 원문 9장 로봇 자체 지능·제어 경계와 맞다."
+    },
+    {
+      "finding_id": "f29",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 ref-031 머리에 'Version 3.0.0' 과 발행자 VDA 만 있고 발행일이 없다. oq-005 는 해소되지 않았다."
+    },
+    {
+      "finding_id": "f30",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 연결 대상 세부영역을 번호와 이름으로 적었다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f29 는 oq-005(VDA 5050 3.0.0 발행일 출처 충돌)와 겹친다. 해결로 보지 않고 oq-005 를 열린 채로 둔다",
+      "f14 는 oq-055(VDA 5050 공식 적합성 시험 유무)와 겹친다. 해결 제안 없이 유지",
+      "f4·f26 은 oq-091(2.x·3.0.0 판 혼재 운영)과 관련된다. 해결 아님",
+      "f21 은 oq-096(통합자 위험성평가 수행 주체)과 관련된다. 해결 아님",
+      "트랙 반영 제안 2026-09-25-02 의 'VDA 5050 3.0.0 발행 2026-03 [사실]'은 f29(원문에 발행일 없음)·oq-005 와 충돌한다. 발행일을 사실로 싣지 않는다"
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "f11 의 '연동 수준(전체 제어·신호등·읽기 전용·인터페이스 없음)'은 용어집 fleet-control-level '플릿 제어 수준'과 표기가 다르다"
+    ]
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f12: [사실] → [추정]으로 강등한다. '2024-04-15 운영 시작'은 인용 출처 ref-639·ref-704 에 없으므로 본문에서 뺀다. 개정 절차는 'TGC 문서는 TGC 승인·OSRF 이사회 비준, 저장소 목록·작업반 헌장은 해당 PMC 비준'으로 나눠 쓴다 — 원문(ref-639 README)이 두 경로를 구분하고 있어 현재 문장은 과잉 일반화다.",
+    "f11: '네 수준에 맞춰 통합한다'를 '전체 제어·신호등·읽기 전용 세 수준으로 통합하고, 인터페이스 없음은 RMF 와 호환되지 않는다'로 고친다. '표준화 없이'는 '플릿 능력을 가정하지 않고'로 바꾼다. 수준 명칭은 용어집 '플릿 제어 수준'으로 표기한다 — ref-004 원문이 No Interface 를 'Not compatible'로 두고 있다.",
+    "f2: 7절·9절에서 '관제가 교착 탐지·해소 기능을 맡되, 교통 조율 알고리즘 자체는 VDA 5050 범위 밖'으로 두 문장을 구분해 쓴다 — ref-031 은 5.3절과 2절에서 이 둘을 따로 다룬다.",
+    "f17: 본문에 발효일(2024-01-11)만 [사실]로 쓰고 '주요 조항의 적용 개시일은 미확인'을 덧붙인다 — 적용 개시일은 EUR-Lex 가 아닌 검색 요약에서만 확인됐다.",
+    "f18: 기준 판을 '법률 제18692호(2022-01-04 공포) 기준'으로 적고, '2025-05-27 일부개정 판에서 같은 조문인지는 미확인'을 덧붙인다 — 더 새로운 개정판이 검색된다.",
+    "f16: 기준일을 '2025'에서 '2025-06-04(KOROS 게시일, 원문 미열람)'로 고친다.",
+    "f13: '인증서'라는 표현을 빼고 '인증 로고'만 쓴다 — 스니펫에서 확인된 범위다.",
+    "f15: 본문에 [추정]과 '벤더 주장'을 함께 적어 유지한다. 인증의 시험 항목과 주체가 미확인이라는 문구도 유지한다.",
+    "f8·f14·f19·f21·f24·f26·f27·f28·f30: [추정] 태그를 유지하고 [사실]로 올리지 않는다. f21 은 9절에서 '공식 기준은 확인되지 않았다'는 단서를 그대로 둔다.",
+    "모든 각주 정의: fetched false 인 출처(ref-407·ref-408·ref-608·ref-253·ref-636·ref-637·ref-638·ref-704·ref-705·ref-706·ref-560·ref-707·ref-708·ref-709·ref-710)는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.",
+    "7절(트랙 반영 제안): 이번 실행에서 확인한 f1·f2·f4·f5·f29(VDA 5050)와 f9·f10(MassRobotics)만 반영한다. 2026-09-25-02 제안의 'VDA 5050 3.0.0 발행 2026-03'과 'MassRobotics 1.0' 판 표기는 싣지 않고 oq-005 로 남긴다. 나머지 10건(2026-09-25-11·16·19·28·35·36·41·44·47·53·54)은 이번 페이지에 반영하지 않는다 — 이번 실행에서 재확인하지 않았다.",
+    "glossary_candidates '산업데이터': 정의를 '산업 활동 과정에서 생성·활용되는 데이터(산업디지털전환촉진법의 용어)'로 줄인다. 사용·수익 권리는 정의 문장에서 빼고 f18 본문에서 다룬다 — 용어 정의와 권리 규정은 조문이 다르다.",
+    "glossary_candidates '서비스 수준 협약': 정의에서 '미달 시 처리 방식'을 뺀다 — 브리프의 어느 finding 도 이를 뒷받침하지 않는다.",
+    "11절: oq-005·oq-055·oq-091·oq-096·oq-041·oq-026 은 해결로 바꾸지 않고 열린 질문으로 유지한다. open_questions_new 4건은 그대로 등록한다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 29건, 미확인 1건, 교차 확인 0건. 강등: f12 사실 → 추정(인용 출처에 없는 날짜, 개정 절차의 과잉 일반화). 원문 미열람 출처: ref-407, ref-408, ref-608, ref-253(검증 단계에서 raw 스키마와 README 를 열어 f9·f10 을 확인했으나 브리프 표시는 미열람), ref-636, ref-637, ref-638, ref-704, ref-705, ref-706, ref-560, ref-707, ref-708, ref-709, ref-710. 브리프 표시 불일치: self_check.limits 는 ref-253 를 열었다고 적었지만 sources[] 에는 fetched false 로 되어 있다. 원문을 연 출처는 ref-004, ref-031, ref-051, ref-634, ref-635, ref-639 이다. 주의: 핵심 수치·사실은 모두 단일 기관 출처라 독립 교차 확인이 없다. 9절의 책임 분담(f21)과 데이터 권리 적용(f19)은 추정이다. VDA 5050 명세 자체가 운영 주체 간 책임을 배분하지 않는다고 적고 있다(ref-031 2 Scope). 이 문구는 다음 실행에서 finding 으로 보강할 후보다. 산업디지털전환촉진법은 2025-05-27 개정판이 있어 조문을 다시 확인해야 한다. 트랙 반영 제안 12건 가운데 VDA 5050·MassRobotics 관련만 반영하고 10건은 보류한다. 검증 검색 12회로 회당 상한 30회에 도달해 ref-608·ref-407·ref-408 은 다시 확인하지 못했다. 정정 요청 없음. 해결 인정한 열린 질문 없음.",
+  "retry_reason": null
+}

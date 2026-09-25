@@ -1,0 +1,50 @@
+{
+  "run_id": "2026-09-24-01",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(열람 차단 환경). 검색 결과의 기관·제목·URL 이 GS1 공식 참조 페이지와 일치한다. 발행일은 미확인이라 기준일을 확인일로 둔 것을 유지한다. 단일 출처이므로 신뢰도 medium."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "열린 질문 이동",
+      "note": "원문 미열람. 출처가 화물 인계 범위를 직접 다루지 않아 주장 근거가 약하다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "required_fixes": [
+    "f2 는 본문에 넣지 말고 열린 질문으로 옮긴다.",
+    "f1 의 각주에 접근일을 남긴다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 1건, 미확인 1건(열린 질문 이동). 원문 미열람 출처 2건(열람 차단 환경, 검색 결과 일치로 확인).",
+  "retry_reason": null
+}

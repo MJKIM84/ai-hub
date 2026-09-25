@@ -1,0 +1,625 @@
+{
+  "run_id": "2026-09-25-72",
+  "outline": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "section": "2. 질문 목록",
+      "budget_chars": 900,
+      "summary": "q4-01 을 답함(실행 2026-09-25-72)으로 바꾸고 다른 실행이 이 단계로 보낸 q4-05·q4-07·q4-08 과 새 후속 질문 q4-09·q4-10 을 표에 더한다."
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 5200,
+      "summary": "인식 결과를 로봇 내비게이션 지도로 바꿀 때의 보정은 좌표·축척, 층 정렬, 제조사 좌표계 변환과 오차 확인, 표현 보정, 도면–현장 편차, 운영 규칙 층의 여섯 묶음으로 나뉘는 것으로 보인다. [추정][^ref-440][^ref-079][^ref-153]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 1300,
+      "summary": "q4-01 의 결론(여섯 묶음, 용도별 지도 분리, ROP 경계)은 모두 이 위키의 종합 [추정]이며 종합 신뢰도는 low 이다. [추정][^ref-153][^ref-644]"
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 500,
+      "summary": "용도별 지도 분리 규칙(q4-09, f18)과 운영 규칙의 한 벌 정의·내보내기(q4-10, f12) 두 질문을 단계 4 로 올린다."
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 600,
+      "summary": "보정 항목 목록 반영은 충족(2차 확인), 도면–현장 정합 절차 초안은 미충족이라 단계 완료 조건은 미충족이고 전환은 승인되지 않았다."
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "section": "2. 개념 목록 표 / 6. 미해결 모델링 질문",
+      "budget_chars": 1200,
+      "summary": "층별 지도에 내비게이션 지도 메타데이터 속성을 더해 v1.0 으로 올리고, 좌표계 변환 속성은 6절 근거 보강으로 둔다. [사실][^ref-440][^ref-153]"
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "section": "5. 구현 가설",
+      "budget_chars": 1500,
+      "summary": "내비게이션 지도 변환 보정 소절을 더하고 도면–현장 정합 절차가 아직 조사되지 않았음을 밝힌다. [추정][^ref-079][^ref-153][^ref-644]"
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q4-01 답함(보정 여섯 묶음·용도별 지도·ROP 경계, 추정), 후속 질문 2건(q4-09·q4-10), 완료 조건 첫 행 충족(2차 확인)·둘째 행 미충족, 상태 줄 진행 중; 2차: 시나리오 제약 칸 비용 지도 필터 문장을 Nav2 로 한정"
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "v0.9 → v1.0: 층별 지도 교환 형식(후보)의 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터' 추가(f1); 거부된 '로봇 지도 좌표계 변환'은 6절 정렬 정보 질문 근거 보강(f5); 6절에 보정 항목·용도별 지도·운영 규칙 마스크 질문 추가"
+    },
+    {
+      "path": "docs/tracks/floorplan-recognition/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "상태 줄 갱신(현재 단계 단계 4, 마지막 트랙 실행 2026-09-25), 6절 산출물 링크에 스키마 초안 v1.0·q4-01 답·후속 질문 2건 반영"
+    },
+    {
+      "path": "docs/ideas/floorplan-recognition.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "5절 끝에 '내비게이션 지도 변환 보정' 소절 추가(q4-01, 추정), 도면–현장 정합 절차 미조사 명시, 새 각주 5건 정의",
+      "patches": [
+        {
+          "section": "5. 구현 가설",
+          "action": "append",
+          "frontmatter": {
+            "sources": [
+              "ref-031",
+              "ref-062",
+              "ref-063",
+              "ref-064",
+              "ref-065",
+              "ref-066",
+              "ref-067",
+              "ref-068",
+              "ref-069",
+              "ref-070",
+              "ref-071",
+              "ref-072",
+              "ref-073",
+              "ref-074",
+              "ref-075",
+              "ref-076",
+              "ref-077",
+              "ref-078",
+              "ref-079",
+              "ref-081",
+              "ref-082",
+              "ref-083",
+              "ref-084",
+              "ref-085",
+              "ref-086",
+              "ref-109",
+              "ref-120",
+              "ref-220",
+              "ref-221",
+              "ref-222",
+              "ref-223",
+              "ref-224",
+              "ref-225",
+              "ref-226",
+              "ref-227",
+              "ref-046",
+              "ref-212",
+              "ref-213",
+              "ref-214",
+              "ref-215",
+              "ref-216",
+              "ref-217",
+              "ref-218",
+              "ref-219",
+              "ref-241",
+              "ref-105",
+              "ref-163",
+              "ref-265",
+              "ref-267",
+              "ref-268",
+              "ref-271",
+              "ref-274",
+              "ref-156",
+              "ref-157",
+              "ref-158",
+              "ref-331",
+              "ref-332",
+              "ref-333",
+              "ref-334",
+              "ref-335",
+              "ref-336",
+              "ref-338",
+              "ref-339",
+              "ref-340",
+              "ref-341",
+              "ref-342",
+              "ref-345",
+              "ref-419",
+              "ref-420",
+              "ref-421",
+              "ref-422",
+              "ref-423",
+              "ref-424",
+              "ref-425",
+              "ref-426",
+              "ref-427",
+              "ref-428",
+              "ref-429",
+              "ref-430",
+              "ref-432",
+              "ref-433",
+              "ref-434",
+              "ref-435",
+              "ref-436",
+              "ref-440",
+              "ref-441",
+              "ref-442",
+              "ref-456",
+              "ref-457",
+              "ref-458",
+              "ref-459",
+              "ref-462",
+              "ref-463",
+              "ref-536",
+              "ref-413",
+              "ref-641",
+              "ref-642",
+              "ref-228",
+              "ref-572",
+              "ref-573",
+              "ref-574",
+              "ref-229",
+              "ref-038",
+              "ref-575",
+              "ref-576",
+              "ref-315",
+              "ref-314",
+              "ref-283",
+              "ref-348",
+              "ref-461",
+              "ref-406",
+              "ref-629",
+              "ref-632",
+              "ref-153",
+              "ref-644",
+              "ref-645",
+              "ref-648",
+              "ref-270"
+            ]
+          },
+          "content": "\n### 내비게이션 지도 변환 보정 (2026-09-25 기준)\n\n확인한 자료를 이 위키가 묶으면, 인식 결과를 로봇 내비게이션 지도로 바꿀 때의 보정은 좌표·축척 보정, 층 정렬과 층 고도, 제조사·플릿별 로봇 지도 좌표계와의 변환과 변환 오차 확인, 표현 보정(장애물 내부 채움, 점유 임계값, 유리처럼 센서가 잘 못 보는 요소), 도면에 없는 가구·랙과 설계–시공 편차 반영, 금지 구역·속도 제한 같은 운영 규칙 층 추가의 여섯 묶음으로 나뉘는 것으로 보인다. 이 묶음을 제시한 단일 출처는 확인하지 못했다. [추정][^ref-440][^ref-079][^ref-153][^ref-031][^ref-082][^ref-081][^ref-648][^ref-644][^ref-224] 이 소절은 [q4-01 답](../tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01)(실행 2026-09-25-72)의 요약이며, 문장별 상세는 단계 페이지에 있다.\n\n**근거**\n\n- Open-RMF traffic-editor 는 평면도 이미지의 픽셀 좌표로 편집하고 지도 생성 단계에서 세로축을 뒤집어 직교 좌표로 바꾸며, 실제 거리(미터)를 넣은 측정선으로 층 축척을 정하고 층마다 고도를 둔다. 여러 층에서 수직으로 겹칠 기준점 쌍으로 층 사이 이동·회전·축척 변환도 구한다(발행일 미확인, 2026-09-25 확인). [사실][^ref-079]\n- Nav2 지도 서버의 점유 격자 지도 YAML 메타데이터는 이미지 파일, 해상도, 원점, 색 반전 여부, 점유·빈 공간 판정 임계값을 담는다. [사실][^ref-440]\n- Open-RMF 플릿 어댑터 튜토리얼은 로봇이 RMF 와 같은 좌표계를 쓰지 않을 때 층마다 대응 경유점 쌍(최소 4쌍 권장)으로 회전·축척·이동 변환을 추정하고 변환 오차를 계산하게 한다. [사실][^ref-153]\n- 연계 대상: Ogm2Pgbm README 는 BIM·CAD 기반 격자 지도를 변환하기 전에 장애물 내부를 완전히 검게 채우라고 요구한다. [사실][^ref-082]\n- 연계 대상: BIM 에서 만든 점유 격자 지도로 위치추정을 할 때 가구·잡동사니와 설계–시공 편차가 정확도에 크게 영향을 준다는 연구가 있다(2023-08). [사실][^ref-081]\n- 연계 대상: Nav2 비용 지도는 필터 마스크로 금지 구역·속도 제한 구역을 표현하고 로봇 외형에 따른 인플레이션을 적용한다. [사실][^ref-644] 필터 마스크는 일반 지도와 같은 래스터와 YAML 메타데이터로 배포된다. [사실][^ref-645]\n- 연계 대상: slam_toolbox 는 저장한 포즈 그래프 지도를 계속 정제·확장하고 부분 지도를 합치는 기능을 제공한다. [사실][^ref-270]\n\n**구현 가설(추정)**\n\n- 도면 한 장에서 경로 계획용 지도, 위치추정용 지도, 운영 규칙 마스크를 따로 만들어야 할 것으로 보이며, 유리벽처럼 도면에는 벽이지만 라이다가 잘 못 보는 요소는 용도별로 다르게 다뤄야 할 것으로 보인다. [추정][^ref-644][^ref-645][^ref-648][^ref-081]\n- 이종 제조사를 연결하는 ROP 는 도면 좌표·축척·층 정렬, 제조사 지도 좌표계와의 변환과 오차 확인, 운영 규칙의 공통 정의와 판 관리를 맡고, 장애물 채움·인플레이션·SLAM 재정합·위치추정 지도 갱신은 로봇·제조사 쪽 연계 대상으로 두는 경계가 될 것으로 보인다. [추정][^ref-153][^ref-031][^ref-644][^ref-270][^ref-082]\n\n검증이 승인한 변경(층별 지도 교환 형식(후보)의 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터')은 [공간 그래프 스키마 초안](../tracks/floorplan-recognition/space-graph-schema-draft.md) v1.0에 반영했다. 도면–현장 정합 절차(q4-02 도면–현장 차이 탐지, q4-03 좌표 정렬과 층·목적지 이름 맞춤)는 아직 조사되지 않았으며 단계 4 후속 실행이 채운다.\n\n[^ref-153]: Open Robotics, Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html, 접근일 2026-09-25\n[^ref-644]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_costmap_2d — README, 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/README.md, 접근일 2026-09-25\n[^ref-645]: Open Navigation (Nav2 documentation), Navigating with Keepout Zones — Nav2 documentation, 미확인, https://docs.nav2.org/tutorials/docs/navigation2_with_keepout_filter.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-648]: Tibebu, H., Roche, J., De Silva, V., & Kondoz, A. (Loughborough University London, Sensors 21(7), 2263), LiDAR-Based Glass Detection for Improved Occupancy Grid Mapping, 2021-04, https://www.mdpi.com/1424-8220/21/7/2263, 접근일 2026-09-25 (원문 미열람)\n[^ref-270]: Macenski, S. (SteveMacenski GitHub), slam_toolbox — README (Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS), 미확인, https://github.com/SteveMacenski/slam_toolbox, 접근일 2026-09-25\n"
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 건축 도면 자동 인식 단계 4 | q4-01 답함(내비게이션 지도 변환 보정 여섯 묶음·용도별 지도·ROP 경계, 추정), 공간 그래프 스키마 초안 v1.0, 후속 질문 2건 | run 2026-09-25-72",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 건축 도면 자동 인식 단계 4: q4-01(도면 인식 결과를 로봇 내비게이션 지도로 바꿀 때의 보정) 답함, 공간 그래프 스키마 초안 v1.0 (실행 2026-09-25-72)",
+    "category_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 트랙 건축 도면 자동 인식 단계 4에서 내비게이션 지도 변환 보정 여섯 묶음과 ROP·로봇 쪽 경계를 추정으로 정리, 세부영역 반영 제안 3건 (실행 2026-09-25-72)",
+    "area_recent": "2026-09-25 — 6. 지도·공간·위치 모델: 트랙 건축 도면 자동 인식 단계 4 q4-01 답(내비게이션 지도 변환 보정), 6절·9절 반영 제안 (실행 2026-09-25-72)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "costmap",
+      "term_ko": "비용 지도",
+      "term_en": "Costmap",
+      "definition": "로봇 경로 계획을 위해 점유 격자 지도 위에 장애물, 로봇 외형에 따른 여유(인플레이션), 필터 마스크로 적용한 금지 구역·속도 제한 같은 비용을 칸마다 매긴 격자 지도다.",
+      "description": "Nav2 의 costmap_2d 패키지가 대표 구현이다. 점유 격자 지도가 칸의 점유 여부를 나타낸다면 비용 지도는 그 위에 통과 비용을 매긴다. 비용 지도 생성과 인플레이션은 로봇 쪽 내비게이션 스택 기능이며 ROP 에서는 연계 대상이다.",
+      "related_areas": [
+        6,
+        15
+      ],
+      "sources": [
+        "ref-644"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "filter-mask",
+      "term_ko": "필터 마스크",
+      "term_en": "Filter Mask (Nav2 costmap filter)",
+      "definition": "Nav2 에서 금지 구역·속도 제한처럼 공간별 동작 규칙을 표시하는 별도 래스터 지도로, 일반 지도와 같은 이미지+YAML 형식으로 배포되어 비용 지도 필터로 비용 지도에 적용된다.",
+      "related_areas": [
+        6,
+        15,
+        16
+      ],
+      "sources": [
+        "ref-644",
+        "ref-645"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-440",
+      "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+      "title": "nav2_map_server — README",
+      "published": null,
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_map_server/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Nav2 지도 서버가 읽는 점유 격자 지도 YAML 메타데이터(image, resolution, origin, negate, occupied_thresh, free_thresh)와 지도 입출력.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-079",
+      "org": "Open Robotics",
+      "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "평면도 배경 위 주석 편집기. 측정선으로 축척 설정, 층 고도, 층간 기준점으로 이동·회전·축척 변환, 픽셀 좌표에서 직교 좌표로의 축 반전.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-153",
+      "org": "Open Robotics",
+      "title": "Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "플릿 어댑터에서 RMF 좌표와 로봇 좌표 사이 회전·축척·이동 변환을 대응 경유점(최소 4쌍 권장)으로 추정하고 변환 오차를 계산하는 방법.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-080",
+      "org": "Open Robotics",
+      "title": "Navigation Maps (integration_nav-maps) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_nav-maps.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "RMF 주행 지도 요건: 경유점의 층 이름과 층 안 미터 좌표, 좌표계·건물 구조 정렬 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 3.0.0 명세. 6.3 지도 절의 좌표계 규약(프로젝트 고유 좌표계, mapId, 오른손 좌표계, 미터·라디안)과 노드 허용 편차. 이번 실행의 근거는 입력 원문 텍스트다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-082",
+      "org": "Vega-Torres, M. A. (MigVega GitHub)",
+      "title": "Ogm2Pgbm — README (Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments)",
+      "published": null,
+      "url": "https://github.com/MigVega/Ogm2Pgbm",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "BIM·CAD 기반 격자 지도를 포즈 그래프 지도로 바꾸는 도구. 장애물 내부 채움 요건과 골격화·커버리지 경로·광선 추적 처리.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-081",
+      "org": "Vega-Torres, M. A. 외",
+      "title": "Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments",
+      "published": "2023-08",
+      "url": "https://arxiv.org/abs/2308.05443",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BIM 기반 점유 격자 지도의 편차 문제와 의미 기반 요소 제외, 포즈 그래프 지도 생성.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-628",
+      "org": "Lee, H.-C., Woo, H.-M., & Shin, S. (International Journal of Precision Engineering and Manufacturing)",
+      "title": "Digital Twin-based Sensor-Free Virtual Mapping for Autonomous Mobile Robot Localization",
+      "published": "2026",
+      "url": "https://link.springer.com/article/10.1007/s12541-026-01598-2",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 2D 건축 CAD 도면에서 3D 가상 환경과 2D 점유 격자 지도를 자동 생성해 AMCL 위치추정 성능을 SLAM 지도와 비교한 국내 저자 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md"
+      ]
+    },
+    {
+      "id": "ref-224",
+      "org": "Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.",
+      "title": "Tightly Coupled SLAM with Imprecise Architectural Plans",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.01737",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 건축 도면 그래프와 라이다 그래프를 결합해 도면–현장 정렬과 구조 편차를 추정하는 SLAM.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-270",
+      "org": "Macenski, S. (SteveMacenski GitHub)",
+      "title": "slam_toolbox — README (Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS)",
+      "published": null,
+      "url": "https://github.com/SteveMacenski/slam_toolbox",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "직렬화 포즈 그래프의 계속 지도 작성·위치추정 모드·부분 지도 병합·시작 자세 초기화를 제공하는 ROS SLAM 도구.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-644",
+      "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+      "title": "nav2_costmap_2d — README",
+      "published": null,
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Nav2 비용 지도 패키지. 필터 마스크를 적용하는 비용 지도 필터(금지 구역·속도 제한)와 로봇 외형 기반 인플레이션.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-645",
+      "org": "Open Navigation (Nav2 documentation)",
+      "title": "Navigating with Keepout Zones — Nav2 documentation",
+      "published": null,
+      "url": "https://docs.nav2.org/tutorials/docs/navigation2_with_keepout_filter.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 필터 마스크를 일반 Nav2 2D 지도와 같은 래스터+YAML 로 배포하고 금지 구역·선호 차선을 표시하는 튜토리얼.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    },
+    {
+      "id": "ref-646",
+      "org": "IEEE 학술대회 논문 저자(미확인)",
+      "title": "BIM-to-Robot Mapping: Constructing IFC-Referenced Occupancy Grids and Semantic Metadata for Rule-Based Navigation",
+      "published": null,
+      "url": "https://ieeexplore.ieee.org/document/11019519/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. BIM 에서 점유 격자 지도와 의미 대응 사전을 만들고 방화 구획·금지 구역을 경로 비용으로 부호화하는 규칙 기반 내비게이션 틀.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md"
+      ]
+    },
+    {
+      "id": "ref-647",
+      "org": "Construction Robotics(Springer) 게재 논문 저자(미확인)",
+      "title": "Improving autonomous robotic navigation using IFC files",
+      "published": "2023",
+      "url": "https://link.springer.com/article/10.1007/s41693-023-00112-8",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. IFC 에서 의미별 장애물 지도·시뮬레이션 환경·경유점을 자동 생성해 사전 지도 작성 주행 없이 쓰는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md"
+      ]
+    },
+    {
+      "id": "ref-648",
+      "org": "Tibebu, H., Roche, J., De Silva, V., & Kondoz, A. (Loughborough University London, Sensors 21(7), 2263)",
+      "title": "LiDAR-Based Glass Detection for Improved Occupancy Grid Mapping",
+      "published": "2021-04",
+      "url": "https://www.mdpi.com/1424-8220/21/7/2263",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 유리가 라이다에 잘 보이지 않는 문제와 유리 검출로 점유 격자 지도를 개선하는 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+        "docs/tracks/floorplan-recognition/space-graph-schema-draft.md",
+        "docs/ideas/floorplan-recognition.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [
+    {
+      "step": "출하",
+      "item": "수행 자원",
+      "link": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01",
+      "title": "단계 4. 지도 변환 보정과 현장 정합"
+    },
+    {
+      "step": "출하",
+      "item": "제약",
+      "link": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01",
+      "title": "단계 4. 지도 변환 보정과 현장 정합"
+    },
+    {
+      "step": "출하",
+      "item": "완료·인계",
+      "link": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01",
+      "title": "단계 4. 지도 변환 보정과 현장 정합"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01",
+      "title": "단계 4. 지도 변환 보정과 현장 정합"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "Nav2 costmap_2d (비용 지도·비용 지도 필터: 금지 구역·속도 제한)",
+      "kind": "오픈소스",
+      "org": "ROS Navigation (ros-navigation/navigation2)",
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_costmap_2d/README.md",
+      "related_areas": [
+        6,
+        15
+      ],
+      "summary": "Nav2 의 비용 지도 패키지로, 필터 마스크를 적용하는 비용 지도 필터로 금지 구역·속도 제한 구역을 표현하고 로봇 외형에 따른 인플레이션을 적용한다. 로봇 쪽 내비게이션 스택 기능이며 ROP 에서는 연계 대상이다.",
+      "ref_id": "ref-644"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 4 페이지 3절 q4-01: 보정 여섯 묶음(추정)을 교차 확인할 독립 출처 — 도면·BIM 에서 로봇 내비게이션 지도로 가는 변환 절차를 정리한 문헌이나 제조사 중립 가이드가 필요하다(현재 교차 확인 0건).",
+    "단계 4 페이지 3절: ref-081(arXiv 2308.05443) 원문에서 창문·문·가구를 요소 유형 의미로 지도에서 제외했는지 확인 — 현재 검색 요약 기준이라 [추정]으로 강등됐다.",
+    "단계 4 페이지 3절: 거울·광택 금속 면 같은 유리 외 반사면이 라이다 점유 격자 지도에 주는 영향을 다룬 출처 — ref-648 스니펫은 유리만 뒷받침한다.",
+    "단계 4 페이지 3절: ref-647 원문에서 진입 불가 공간을 장애물로 칠한 흑백 점유 지도 로드 방식을 확인 — 검색 요약에 없어 본문에서 뺐다.",
+    "단계 4 페이지 3절 시나리오 제약 칸: VDA 5050 로봇·Open-RMF 플릿 어댑터 로봇이 금지 구역·속도 제한을 어떤 방식(VDA 5050 구역 집합, 제조사 내비게이션 스택 등)으로 적용하는지에 대한 근거 — 현재는 Nav2 로 한정해 적었다.",
+    "단계 4 q4-02·q4-03: 도면–현장 정합 절차 초안(차이 탐지, 좌표 정렬 합격 기준, 층·목적지 이름 대응)의 근거 — 완료 조건을 채우는 데 필요하다. 국내 물류센터 사례(oq-022) 우선."
+  ],
+  "fixes_applied": [
+    "f7 분리 — 단계 4 페이지 3절에서 BIM 추출 점유 격자 지도·AMCL 연구의 가정과 가구·설계–시공 편차 영향은 [사실]로, 창문·문·가구 제외 부분은 '검색 요약 기준'을 밝힌 [추정] 문장으로 따로 썼다.",
+    "f10 흑백 점유 지도 부분 — 단계 4 페이지에서 흑백 점유 지도로 불러온다는 부분을 빼고, IFC→의미별 장애물 지도·시뮬레이션 환경·JSON·경유점 생성과 사전 지도 작성 주행 불필요만 [사실]로 썼다.",
+    "f14 축소와 ref-648 정정 — 유리가 라이다에 잘 보이지 않아 점유 격자 지도 작성을 어렵게 한다는 주장만 [사실]로 쓰고 거울·금속·반사 잡음은 뺐으며, ref-648 기관을 Tibebu 외(Loughborough University London, Sensors 21(7), 2263), 발행일을 2021-04 로 각주와 reference_updates 에 반영했다.",
+    "f7·f8·f16 연계 대상 — 세 문장 앞에 '연계 대상:'을 붙이고, 3절 머리에 위치추정·SLAM 은 분류 원문 9장 '로봇 자체 지능·제어' 쪽이며 지도 형식·좌표·판 관리 관점으로만 다룬다고 밝혔다.",
+    "f8 의 78% 개선 — 본문 어디에도 쓰지 않았다.",
+    "f12 연계 대상과 f19 경계 — 비용 지도 인플레이션·필터 적용이 로봇 쪽 내비게이션 스택 기능(연계 대상)임을 밝히고, ROP 쪽을 규칙의 공통 정의와 판 관리로 한정한 f19 문장은 [추정]으로 유지했다.",
+    "f17·f18 근거 요약 — 강등된 창문 제외·흑백 지도·거울 세부를 사실처럼 인용하지 않고 '유리처럼 센서가 잘 못 보는 요소', '의미 정보로 요소를 거른 연구가 있다는 검색 요약' 수준으로 낮췄으며, 두 종합에 [추정]과 '이 위키의 종합, 단일 출처 없음'을 유지했다.",
+    "온톨로지 승인 — 공간 그래프 스키마 초안 층별 지도 행의 '교환 형식(후보)' Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터(해상도·원점·점유/빈 공간 임계값)'를 더하고 근거 칸에 'finding f1 (실행 2026-09-25-72)[^ref-440]'을 적었으며 상태는 확정을 유지했다.",
+    "온톨로지 거부 — '로봇 지도 좌표계 변환' 속성은 표에 넣지 않고 6절의 정렬 정보 항목에 근거 보강으로 f5 문장을 [사실][^ref-153]으로 적었다.",
+    "버전 1.0 — ontology_version 을 '1.0'으로 하고 H1 (v1.0), 프런트매터, track_updates.ontology_draft_version 을 같게 맞췄으며(auto 상태 줄은 퍼블리셔가 채운다), 2절 변경 설명 문단에 v1.0 의 승인·거부 내용을 한 문장씩 더했다.",
+    "단계 4 페이지 6절 — 두 행 모두 충족 여부 '미충족', 검증 판정 '미충족 · 미승인'으로 쓰고 표 아래 줄을 '다음 단계로 전환: 아니오(도면–현장 정합 절차 초안 없음; 막힌 질문 q4-02·q4-03·q4-04·q4-05·q4-07·q4-08)'로, 상태 줄 단계 상태를 '진행 중'으로 두었다.",
+    "단계 4 페이지 2절·3절·4절 — q4-01 을 답함(2026-09-25-72, #q4-01)으로 바꾸고 3절에 '### q4-01 … {#q4-01}' 소제목을 두었으며 4절에 핵심 결론이 [추정]이고 종합 신뢰도 low 임을 밝혔다.",
+    "각주 원문 미열람 — ref-081·ref-628·ref-224·ref-645·ref-646·ref-647·ref-648 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, 원문을 연 ref-440·ref-079·ref-153·ref-080·ref-082·ref-270·ref-644·ref-031 에는 붙이지 않았다.",
+    "ref-646·ref-647 — 기관 칸을 저자 미확인으로 두고 ref-646 발행일을 각주 '미확인', JSON null 로 두었다.",
+    "세부영역 반영 제안 — 6. 지도·공간·위치 모델과 21. 온보딩·설정·현장 시운전 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그 '세부영역 반영 제안'으로만 냈으며, 6절 제안에서 f5 는 기존 6절 문장의 ref-153 각주 재사용으로 적었다.",
+    "용어집 — '필터 마스크' 정의에 sources ref-644·ref-645 를 달고, '비용 지도'는 점유 격자 지도 위에 비용을 매긴 격자로 설명하며 금지 구역은 필터 마스크 적용으로 표현했다.",
+    "새 질문 — q4-09(origin f18)·q4-10(origin f12)을 stage 4 로 backlog_updates 에 등록하고 단계 페이지 2절·5절에도 같은 근거로 적었다.",
+    "2차: 시나리오 제약 칸 드리프트 — 단계 4 페이지 3절 '현장 시나리오: 3층 출하 대기장 도착 판정' 표의 제약 칸 문장을 'Nav2 를 쓰는 로봇에서는 금지 구역·속도 제한이 로봇 쪽 비용 지도 필터로 적용된다. [사실][^ref-644]'로 Nav2 에 한정했다.",
+    "2차: 완료 조건 첫 행 — 단계 4 페이지 6절 표 첫 행(보정 항목 목록의 반영)의 충족 여부를 '충족', 근거를 '두 페이지에 반영됨(q4-01 답, 종합은 추정)', 검증 판정을 '충족(2차 확인)'으로 고쳤고, 둘째 행 '미충족 · 미승인', 표 아래 '다음 단계로 전환: 아니오(…)' 줄, 상태 줄의 '완료 조건: 미충족'·'진행 중'은 그대로 두었다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md",
+    "ontology_draft_version": "1.0",
+    "backlog_updates": [
+      {
+        "id": "q4-01",
+        "status": "답함",
+        "answer_link": "docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01"
+      },
+      {
+        "id": "q4-09",
+        "status": "열림",
+        "answer_link": null,
+        "question": "도면 한 장에서 경로 계획용 지도, 위치추정용 지도, 운영 규칙 마스크를 따로 만들 때 유리벽·창문·문·가구 같은 요소를 어느 지도에 어떻게 넣을지 정하는 규칙은 무엇이며, 그 규칙이 맞는지 시운전에서 어떻게 확인하는가? (q4-01 에서 파생)",
+        "stage": 4,
+        "origin": "f18"
+      },
+      {
+        "id": "q4-10",
+        "status": "열림",
+        "answer_link": null,
+        "question": "금지 구역·속도 제한 같은 운영 규칙을 도면 기반 공간 그래프에서 한 벌로 정의해 Nav2 필터 마스크와 VDA 5050 구역 집합처럼 형식이 다른 대상으로 내보낼 수 있는가, 내보낼 때 무엇이 빠지는가? (q4-01 에서 파생)",
+        "stage": 4,
+        "origin": "f12"
+      }
+    ],
+    "log_entry": "답한 질문: q4-01(보정 여섯 묶음·용도별 지도·ROP 경계, 핵심 종합은 추정, 신뢰도 low) / 새 질문: q4-09(f18), q4-10(f12) / 온톨로지 변경: v0.9 → v1.0: 층별 지도 교환 형식(후보)의 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터(해상도·원점·점유/빈 공간 임계값)' 추가(f1); 거부: 층별 지도 속성 '로봇 지도 좌표계 변환'(f5 → 6절 정렬 정보 질문 근거 보강, q4-03). 버전 이력 행: 1.0 / 2026-09-25 / v0.9 → v1.0: 층별 지도 '내비게이션 지도 메타데이터' 추가(f1); 거부: '로봇 지도 좌표계 변환'(f5 → 6절 질문); H1 버전 표기 v1.0 / 2026-09-25-72 / 완료 조건 평가: 미충족(보정 항목 목록의 스키마 초안 6절·아이디어 5절 반영은 충족(2차 확인); 부족: 도면–현장 정합 절차 초안 없음; 막힌 질문 q4-02·q4-03·q4-04·q4-05·q4-07·q4-08) / 세부영역 반영 제안: 6. 지도·공간·위치 모델 2건(6. 대표 접근법과 기술, 9. ROP가 직접 맡는 것과 외부와 연계하는 것), 21. 온보딩·설정·현장 시운전 1건(6. 대표 접근법과 기술) / 다음 실행 제안: q4-03, q4-02",
+    "overview_progress": "단계 4 진행 중 — 열린 질문 8, 답함 1, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "도면 기반 지도를 로봇 내비게이션 지도로 쓰기 전 보정 여섯 묶음(좌표·축척, 층 정렬, 제조사 좌표계 변환과 오차, 표현 보정, 도면–현장 편차, 운영 규칙 층, [추정], f17)과 traffic-editor 의 측정선 축척·세로축 반전·층 기준점 정렬([사실], f2·f3, ref-079). 대응점 기반 좌표 변환·오차 확인(f5)은 기존 6절 문장과 같으므로 새 문장 없이 기존 ref-153 각주를 재사용한다."
+    },
+    {
+      "area_no": 6,
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "summary": "보정 가운데 도면 좌표·축척·층 정렬, 제조사 지도 좌표계 변환과 오차 확인, 금지 구역·속도 제한 규칙의 공통 정의와 판 관리는 ROP 쪽, 장애물 채움·비용 지도 인플레이션·SLAM 재정합·위치추정 지도 갱신은 로봇·제조사 쪽 연계 대상이라는 경계([추정], f19, ref-153·ref-031·ref-644·ref-270·ref-082)."
+    },
+    {
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "시운전에서 도면 기반 지도의 좌표 변환 오차를 대응 경유점(최소 4쌍 권장)으로 확인하는 절차([사실], f5, ref-153)와 이를 노드 허용 편차와 비교해 도착 판정 전에 확인하는 단계([추정], f20), 사전 지도 작성 주행을 줄인 연구(IFC 기반 지도 생성 [사실] f10 ref-647, 연계 대상: CAD 기반 가상 지도 위치추정 f9 ref-628)."
+    }
+  ]
+}

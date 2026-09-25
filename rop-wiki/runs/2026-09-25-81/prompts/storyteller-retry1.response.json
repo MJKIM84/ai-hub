@@ -1,0 +1,1203 @@
+{
+  "duration_api_ms": 314766,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.7128204,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 471041,
+    "cache_read_input_tokens": 63022,
+    "output_tokens": 46594,
+    "output_tokens_details": {
+      "thinking_tokens": 2928
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 471041,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 46594,
+        "cache_read_input_tokens": 63022,
+        "cache_creation_input_tokens": 471041,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 471041
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 46594,
+      "cacheReadInputTokens": 63022,
+      "cacheCreationInputTokens": 471041,
+      "webSearchRequests": 0,
+      "costUSD": 4.7128204,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2928,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-81\",\"outline\":[{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"2. 질문 목록\",\"budget_chars\":2600,\"summary\":\"q4-02 를 답함(실행 2026-09-25-81)으로 바꾸고 후속 질문 q4-15·q4-16 을 더한다.\"},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"3. 조사 결과\",\"budget_chars\":5200,\"summary\":\"실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고, 로봇 관제 쪽 거절(연계 대상)이 마지막으로 잡는 분담으로 보인다. [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-713][^ref-031]\",\"planned_findings\":[\"f1\",\"f2\",\"f3\",\"f4\",\"f5\",\"f6\",\"f7\",\"f8\",\"f9\",\"f10\",\"f11\",\"f12\",\"f13\",\"f14\",\"f15\",\"f16\",\"f17\",\"f18\",\"f19\",\"f20\",\"f21\",\"f22\",\"f23\",\"f24\",\"f25\",\"f26\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"4. 결론과 남은 불확실성\",\"budget_chars\":1900,\"summary\":\"한 방법만으로는 해석 오류를 걸러내기 어렵고 방법별 분담은 이 위키의 종합(신뢰도 low)이다. [추정][^ref-362][^ref-777][^ref-713]\",\"planned_findings\":[\"f1\",\"f4\",\"f21\",\"f22\",\"f23\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"5. 이 단계가 낳은 후속 질문\",\"budget_chars\":1300,\"summary\":\"q4-15·q4-16·q5-16 세 질문을 더한다.\",\"planned_findings\":[\"f21\",\"f22\",\"f23\"]},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"6. 완료 조건 충족 현황\",\"budget_chars\":700,\"summary\":\"세 조건 모두 미충족 · 미승인, 전환 아니오(열린 질문 q4-03~q4-16).\"},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"7. 관련 세부영역\",\"budget_chars\":1300,\"summary\":\"23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 8. 실시간 세계 상태·데이터 일관성을 더한다.\"},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"8. 출처\",\"budget_chars\":0,\"summary\":\"새 각주 정의 18개 추가(ref-782 발행일 2026-04).\"},{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"section\":\"9. 이력\",\"budget_chars\":400,\"summary\":\"실행 2026-09-25-81 행 추가.\"},{\"path\":\"docs/ideas/nl-task-chatbot.md\",\"section\":\"5. 구현 가설\",\"budget_chars\":1500,\"summary\":\"'검증 방법별로 잡는 오류' 소절을 덧붙인다. [추정][^ref-773][^ref-785][^ref-416][^ref-713][^ref-031]\",\"planned_findings\":[\"f1\",\"f4\",\"f5\",\"f9\",\"f11\",\"f13\",\"f15\",\"f17\",\"f20\",\"f21\",\"f22\",\"f23\"]},{\"path\":\"docs/tracks/nl-task-chatbot/task-model-draft.md\",\"section\":\"6. 미해결 모델링 질문\",\"budget_chars\":900,\"summary\":\"'검증 기록' 질문에 q4-02 답을 연결하고 재제안 미반영 사유를 적는다(v0.8 유지).\",\"planned_findings\":[\"f4\",\"f5\",\"f21\",\"f22\"]},{\"path\":\"docs/tracks/nl-task-chatbot/index.md\",\"section\":\"6. 살아있는 산출물 링크\",\"budget_chars\":3000,\"summary\":\"게시본(v14) 6절을 유지하고 실행 2026-09-25-81 결과만 덧붙인다.\"}],\"pages\":[{\"path\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-782 발행일 2026-04), 이력 행 추가\",\"patches\":[{\"section\":\"2. 질문 목록\",\"action\":\"replace\",\"frontmatter\":{\"related_areas\":[27,18,25,26,12,13,23,22,8],\"sources\":[\"ref-031\",\"ref-350\",\"ref-356\",\"ref-417\",\"ref-418\",\"ref-656\",\"ref-711\",\"ref-695\",\"ref-696\",\"ref-697\",\"ref-698\",\"ref-699\",\"ref-700\",\"ref-701\",\"ref-702\",\"ref-703\",\"ref-713\",\"ref-714\",\"ref-715\",\"ref-716\",\"ref-620\",\"ref-717\",\"ref-773\",\"ref-774\",\"ref-775\",\"ref-776\",\"ref-777\",\"ref-778\",\"ref-779\",\"ref-780\",\"ref-781\",\"ref-782\",\"ref-783\",\"ref-784\",\"ref-785\",\"ref-786\",\"ref-362\",\"ref-459\",\"ref-236\",\"ref-416\"],\"version\":3},\"content\":\"이 단계의 시작 질문 4개(q4-01~q4-04)와 앞 단계 실행에서 이 단계로 보낸 질문(q4-05~q4-12), 실행 2026-09-25-79 의 후속 질문(q4-13·q4-14), 실행 2026-09-25-81 의 후속 질문(q4-15·q4-16)이다. q4-01은 사용자 요청의 시작 질문 문구 그대로이고, q4-02~q4-04는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 질문 문구와 상태, 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \\\"조사 중\\\"은 이 표에서 \\\"열림\\\"으로 표시하고 \\\"폐기\\\"는 표에서 빼고 백로그에만 남긴다. 제기 근거 칸에는 finding id 또는 \\\"사용자\\\"만 쓰고, finding 이 나온 실행 id 는 백로그에 있다. q4-09와 q4-10은 같은 질문이 백로그에 두 번 등록된 것이어서 백로그 정리가 필요하다.\\n\\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\\n|---|---|---|---|---|---|\\n| q4-01 | LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-79 | [q4-01 답](#q4-01) |\\n| q4-02 | 해석 결과를 실행 전에 검증하는 방법(스키마 검증, 온톨로지 제약 대조, 사람 확인, 모의 실행)에는 무엇이 있고 각각 어떤 오류를 잡는가? | 답함 | 사용자 | 2026-09-25-81 | [q4-02 답](#q4-02) |\\n| q4-03 | 채팅 사용자별 명령 권한(어느 로봇·구역·작업까지 지시할 수 있는가)과 지시·확인의 감사 기록은 어떻게 두는가? | 열림 | 사용자 | | |\\n| q4-04 | 해석의 불확실성이 클 때 되묻기·사람 승인·실행 보류 같은 제한 운영으로 넘기는 기준은 무엇인가? | 열림 | 사용자 | | |\\n| q4-05 | LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때, 허용 동작 대응(Huang 외)·assertion(ProgPrompt)·계획기 검사(LLM+P) 같은 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? (q1-01 에서 파생) | 열림 | f14 | | |\\n| q4-06 | 작업자 음성 피킹의 체크 디지트·스캔처럼 동작 하나하나를 현장에서 확인받는 방식과, 자연어 지시의 해석 결과(작업·대상·로봇)를 배정 전에 요약해 확인받는 방식을 함께 둘 때 각각 어떤 오류를 잡고 확인 부담은 얼마나 늘어나는가? (q1-03 에서 파생) | 열림 | f9 | | |\\n| q4-07 | 필수 슬롯 누락은 규칙(스키마)으로 검사하고 지시의 모호성은 KnowNo·CLARA 같은 불확실성 추정으로 판단하는 식으로 두 방식을 나눠 쓸 때, 가정용 벤치마크(AmbiK)에서 보고된 모호성 탐지의 낮은 구분 성능이 물류 지시(화물·장소·기한)에서도 나타나는가, 되묻기 횟수와 오배정은 어떻게 달라지는가? (q1-04 에서 파생) | 열림 | f11 | | |\\n| q4-08 | RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생) | 열림 | f13 | | |\\n| q4-09 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) (관련: q4-03) | 열림 | f20 | | |\\n| q4-10 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) | 열림 | f20 | | |\\n| q4-11 | 배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생) | 열림 | f22 | | |\\n| q4-12 | 화물을 이미 실었거나 옮긴 작업을 채팅으로 취소할 때 되돌림 보상 작업의 생성·실행을 누가 승인하고, 지시 변경 요약 확인(무엇을 취소하고 무엇이 영향받는가)은 어떤 형식으로 보여 주는가? (q3-04 에서 파생) (관련: oq-021, q4-11) | 열림 | f23 | | |\\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (q4-01 에서 파생) (관련: q4-04) | 열림 | f22 | | |\\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? (q4-01 에서 파생) | 열림 | f5 | | |\\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생) | 열림 | f22 | | |\\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104) | 열림 | f23 | | |\"},{\"section\":\"3. 조사 결과\",\"action\":\"append\",\"content\":\"실행 2026-09-25-81 이 q4-02 에 답했다. 이 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 단계 4 를 다뤘다.\\n\\n### q4-02 해석 결과를 실행 전에 검증하는 방법과 각 방법이 잡는 오류 {#q4-02}\\n\\n확인한 자료를 이 위키가 묶으면, 스키마 검증은 형식·필수 항목 누락·허용 값 밖 오류를, 온톨로지·제약 대조는 능력 불일치·필수 정보 누락·안전 불변 조건 위반을, 계획 검증기·형식 논리 검증은 전제 조건 위반·순서 오류·빠진 단계·중복 행동을, 모의 실행은 실행 불가 동작·잠재 실패·물리적 불가능을, 사람 확인은 형식·제약은 맞지만 사용자 의도와 다른 해석을 주로 잡고, 로봇 관제 쪽 거절(연계 대상)은 형식·능력·경로·지도·운용 모드 오류를 마지막으로 잡는 분담으로 정리되는 것으로 보인다. [추정][^ref-773][^ref-362][^ref-459][^ref-785][^ref-702][^ref-777][^ref-778][^ref-416][^ref-781][^ref-782][^ref-713][^ref-031] 다섯 방법을 같은 조건에서 비교한 단일 출처는 찾지 못했고 근거 환경이 물류 플릿 조건이 아니어서 신뢰도가 낮다. 이 방법들은 [q4-01 답](#q4-01)의 다섯 겹 확인 절차 가운데 해석 게이트·제약 게이트·사람 확인·마지막 거절에 들어가는 검사 수단에 해당한다.\\n\\n아래 표는 각 출처의 보고를 이 위키가 대응시켜 구성한 것이다. [추정][^ref-773][^ref-362][^ref-785][^ref-777][^ref-786][^ref-416][^ref-781][^ref-713][^ref-031]\\n\\n| 방법 | 주로 잡는 오류 | 놓칠 수 있는 오류 | 맡는 쪽 |\\n|---|---|---|---|\\n| 스키마 검증 | 형식, 필수 항목 누락, 허용 값 밖 | 형식은 맞지만 값이 틀린 해석(존재하는 다른 도크 번호 등) | ROP(해석 게이트) |\\n| 온톨로지·제약 대조 | 능력 불일치, 필수 정보 누락, 안전 불변 조건 위반 | 온톨로지·명세 자체가 틀린 경우 | ROP(제약 게이트) |\\n| 계획 검증기·형식 논리 검증 | 전제 조건 위반, 순서 오류, 빠진 단계, 중복 행동 | 명세가 틀리거나 LLM 이 명세를 잘못 옮긴 경우 | ROP(제약 게이트) |\\n| 모의 실행 | 실행 불가 동작, 잠재 실패, 물리적 불가능 | 모델 충실도 밖의 상황 | ROP(가정한 미래를 실험하는 기능) |\\n| 사람 확인 | 형식·제약은 맞지만 사용자 의도와 다른 해석 | 그럴듯한 계획에 대한 잘못된 신뢰 | 사람 |\\n| 로봇 관제 쪽 거절 — 연계 대상(로봇 쪽 기능) | 형식, 쓸 수 없는 선택 필드, 수행 불가 동작, 도달 불가 노드, 모르는 지도, 주문을 받지 않는 운용 모드 | 미확인 | 로봇(ROP 는 오류를 받아 처리하는 쪽만) |\\n\\n위 표는 출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다. 출처의 표를 옮긴 것이 아니다.\\n\\n#### 스키마 검증\\n\\n- JSON Schema 검증 어휘(json-schema-spec 저장소 main 브랜치의 차기판 초안, 발행일 미확인, 확인일 2026-09-25 기준)는 인스턴스의 자료형, 허용 값(enum·const), 수치 범위, 문자열 패턴, 필수 속성(required), 조건부 필수 속성(dependentRequired), 배열·객체 크기 제한을 검사한다. 게시된 2020-12 판과의 문구 차이는 미확인이다. [사실][^ref-773]\\n- OpenAI 는 구조화 출력이 모델 출력을 개발자가 준 JSON 스키마에 맞추도록 보장한다고 설명하면서도, 모델이 JSON 객체의 값 안에서는 여전히 실수할 수 있다고 밝힌다(2024-08 발표). [추정] 벤더 주장[^ref-362]\\n- JSONSchemaBench 는 실제 JSON 스키마 약 1만 개로 제약 디코딩(constrained decoding) 프레임워크를 효율·범위(지원하는 스키마 기능)·품질(과제 정확도에 주는 영향) 세 측면에서 평가하는 벤치마크다(2025-01). [사실][^ref-774][^ref-775] 평가 대상 여섯 프레임워크(Guidance·Outlines·Llamacpp·XGrammar·OpenAI·Gemini) 목록은 원문을 열지 못한 논문 요약 기준이며, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\\n\\n#### 온톨로지·제약 대조\\n\\n- W3C SHACL(2017 권고안, 이번 실행에서는 원문 미열람)은 검증 결과를 적합 여부와 결과 목록으로 된 검증 보고로 내고, 결과마다 초점 노드·속성 경로·문제 값·사람이 읽는 메시지·심각도를 담을 수 있다. [사실][^ref-459]\\n- Köcher·da Silva·Fay(IEEE INDIN 2021, 원문 미열람)는 온톨로지로 기술한 기계 스킬에 SHACL 제약을 걸어, 실행에 필요한 필수 정보가 빠진 잘못 모델링된 스킬을 가려내 수정 대상으로 표시하는 방법을 제시했다. [사실][^ref-785]\\n- Electronics(2026-08-11, 원문 미열람) 논문은 이종 로봇 배정에서 플릿 구성과 물품의 적재 상태가 실행 가능성에 영향을 준다고 보고, 온톨로지 기반 판정 결과(ReasonerOutput)가 여러 배정기에서 공통 실행 가능성 제약으로 작동했다고 보고했다(저자 보고). [사실][^ref-236]\\n- [q4-01 답](#q4-01)에서 본 SafePlan 은 LLM 이 만든 지시·작업 계획·작업 배정 결과를 프롬프트 건전성 추론기와 불변·전제·사후 조건 추론기로 각각 검사한다. [사실][^ref-702]\\n\\n#### 계획 검증기·형식 논리 검증\\n\\n- Guan 외(NeurIPS 2023)는 LLM 이 PDDL 도메인 모델을 만들고 건전한 도메인 독립 계획기로 계획하되, LLM 이 처음부터 완전한 모델을 만들지 못하는 문제를 PDDL 검증기와 사람의 교정 피드백으로 다뤘고, 교정한 모델로 48개 계획 과제를 풀었다고 보고했다(저자 보고, 원문 미열람, 48개 과제 조건). [사실][^ref-777]\\n- KCL-Planning 의 VAL 저장소는 PDDL 계획과 계획 모델(연속 효과·파생 술어·시간 지정 초기 리터럴 포함)을 다루는 계획 검증 도구를 공개한다(발행일 미확인, 확인일 2026-09-25 기준). 검증 실패 시 보고 형식은 README 에서 확인하지 못했다. [사실][^ref-776]\\n- VerifyLLM(2025-07)은 과제 기술을 선형 시간 논리(LTL) 식으로 옮긴 뒤 LLM 이 행동 순서를 슬라이딩 윈도로 분석해 실행 전에 위치 오류·빠진 전제 행동·중복 행동을 찾아 재정렬·추가·삭제로 고친다(저자 보고, 원문 미열람, 가정 환경 평가). [사실][^ref-778]\\n- SELP(2024-09)는 자연어 명령에서 여러 LTL 식을 뽑아 동치인 식끼리 묶는 동치 투표와, LTL 식을 뷔히 오토마톤으로 바꿔 명세와 어긋나는 토큰을 가리는 제약 디코딩을 쓰며, 저자들은 드론 항법에서 안전율 10.8%, 로봇 조작에서 20.4% 개선을 보고했다(저자 보고, 원문 미열람, 드론 항법·로봇 조작 조건). [사실][^ref-786]\\n\\n#### 모의 실행\\n\\n- SayPlan(2023-07)은 LLM 이 만든 초기 계획을 장면 그래프 시뮬레이터의 피드백으로 반복 검증·수정해 환경의 술어·제약과 맞지 않는 실행 불가 동작을 고치며, 저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건, 원문 미열람). [사실][^ref-416]\\n- CAPE(ICRA 2024)는 동작을 실행할 수 없을 때 전제 조건 오류 정보를 LLM 에 다시 주어 교정 동작을 얻으며, VirtualHome 에서 사람 주석 계획 정확도를 SayCan 대비 28.89% 에서 49.63% 로 높였다고 보고했다(저자 보고, 원문 미열람, VirtualHome·Spot 로봇 조건). [사실][^ref-780]\\n- SIMMER(2026-06)는 실행을 즉시 멈추지 않지만 목표 달성을 조용히 해치는 잠재 실패(latent failure)를 주방 기호 세계 모델(동작 77개·객체 262개)로 평가하며, 저자들은 오류 없는 계획이 20% 미만, 잠재 실패를 포함한 계획이 29~56% 였고 반사실적 예견 시뮬레이션으로 잠재 실패를 최대 72% 줄였다고 보고한 것으로 보인다. 동료심사 전 프리프린트의 저자 보고이며 원문 미열람, 평가한 모델 수는 미확인이다. [추정][^ref-781]\\n- Lee 외(Applied Sciences 16(8), 2026-04, 원문 미열람)는 LLM 이 만든 로봇 프로그램이 공간적으로 일관되지 않은 명령과 동역학적으로 불가능한 동작 같은 물리적 환각에 취약하다고 보고, 구조화된 중간 작업 표현으로 공간 접지·로봇 선택·실행 전 동역학 검증을 거친 뒤 제조사별 코드를 만드는 디지털 트윈 통합 검증 틀을 제안했다. [사실][^ref-782] 실행 전 동역학 검증·동작 스케일링은 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이며, ROP 쪽 검증은 로봇 선택·공간 접지 수준으로 보는 것이 맞아 보인다. [추정][^ref-782]\\n- Ko·Lin(2026-09, 프리프린트, 원문 미열람)의 제안–검증–결정 흐름은 로컬 LLM 이 운영자 의도를 구조화 요구로 바꾸고 후보 전략을 낸 뒤 의미 검사·시뮬레이션 실행·운영 제약 검사를 거쳐 사람이 결정하게 하며, 잘못된 입력의 올바른 거부 7/8, 자율 전략 성공 3/10 을 보고했다(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록). [사실][^ref-784]\\n- Deng 외(2025-06, 원문 미열람)는 건설 현장 다중 로봇 배정을 정수계획으로 풀고 LLM 이 자연어 상황 서술에서 최적화 제약·파라미터를 갱신하며 디지털 트윈이 현장과 동기화되는 틀을 제안했고, 상위 LLM 들이 제약·파라미터 추출에서 97% 넘는 정확도를 보였다고 보고했다(저자 보고, 건설 사례라 업종별 조건이며 방법 근거로만 쓴다). [사실][^ref-783]\\n- 개별 지시의 실행 전 모의 실행은 가정한 미래를 실험하는 기능이므로 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)에 속하고, 그 초기 상태는 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태에서 가져오되 모의 실행 결과를 현재 상태처럼 반영하지 않도록 구분해야 할 것으로 보인다. [추정][^ref-416][^ref-782][^ref-784][^ref-783]\\n\\n#### 사람 확인과 LLM 판정자\\n\\n- Hariharan 외(NeurIPS 2025 워크숍)는 판정자 LLM 이 행동 순서를 비평하고 계획자 LLM 이 고치는 반복 검증으로 불필요한 행동·모순·빠진 단계를 찾아 재현율 최대 90%, 정밀도 100% 를 보고했다(저자 보고, 원문 미열람, TEACh 수동 주석 행동 조건). [사실][^ref-779]\\n- 사람 확인이 잡는 오류와 그 한계는 새로 서술하지 않고 [q4-01 답](#q4-01)의 사람 승인의 한계 서술로 연결한다.[^ref-713][^ref-697]\\n\\n#### 로봇 관제 쪽 마지막 거절 (연계 대상)\\n\\n- VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25)은 로봇이 주문을 받기 전 형식 오류(VALIDATION_FAILURE), 쓸 수 없는 선택 필드(UNSUPPORTED_PARAMETER), 수행할 수 없는 동작(INVALID_ORDER_ACTION), 도달할 수 없는 노드(NO_ROUTE_TO_TARGET), 모르는 지도(UNKNOWN_MAP_ID), 범위 밖 시작 노드(START_NODE_OUT_OF_RANGE), 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE)를 서로 다른 오류 유형으로 보고하고 주문을 내부 버퍼에 받지 않게 한다. 오류 수준은 UNSUPPORTED_PARAMETER 만 CRITICAL 이고 나머지는 WARNING 이다. [사실][^ref-031]\\n- 주문 거절은 로봇 쪽 기능인 연계 대상이며, ROP 는 이 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는 것으로 본다. [추정][^ref-031]\\n\\n#### 방법별로 놓치는 오류 (이 위키의 종합)\\n\\n- 스키마 검증은 형식은 맞지만 값이 틀린 해석을, 제약 대조와 계획 검증은 온톨로지·명세 자체가 틀리거나 LLM 이 명세를 잘못 옮긴 경우를, 모의 실행은 모델 충실도 밖의 상황을, 사람 확인은 그럴듯한 계획에 대한 잘못된 신뢰를 놓칠 수 있어, 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다. '존재하는 다른 도크 번호'는 설명용 예시다. [추정][^ref-362][^ref-777][^ref-786][^ref-781][^ref-713]\\n\\n#### 설명용 시나리오\\n\\n다음은 설명을 위한 가상의 시나리오이다(설명용 가정 사례, 현장 수치 없음).\\n\\n**물류 흐름 단계:** 피킹\\n\\n**시나리오:** 피킹 구역 관리자의 운반 지시를 검증 방법별로 거르기\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 관리자가 채팅으로 '피킹 끝난 토트를 10시 전까지 2번 도크로'라고 지시한다. 스키마 검증은 기한 슬롯 누락 같은 형식 오류를 잡을 수 있어 보인다. [추정][^ref-773] |\\n| 작업 대상 | 피킹이 끝난 토트(설명용 가정) |\\n| 수행 자원 | 온톨로지 제약 대조는 토트를 운반할 수 없는 로봇 후보를 거를 수 있어 보인다. [추정][^ref-785] 배정 결과를 배치 전에 모의 실행이나 최적화 모델의 제약 검사로 확인하면 최근접 배정이 뒤이은 요청의 대기·충돌을 키우는지 드러낼 수 있어 보이나, 물류 플릿에서 잰 자료는 찾지 못했다. [추정][^ref-783][^ref-784][^ref-416] |\\n| 제약 | 모의 실행은 도착 예정 시각의 도크 점유·경로 차단을 잡을 수 있어 보인다. [추정][^ref-416] |\\n| 완료·인계 | 해당 없음 |\\n| 예외·성과 | 관리자가 실제로 뜻한 도크가 3번이면 사람 확인이, 모르는 지도·도달 불가 노드는 로봇 관제 쪽 거절(연계 대상)이 잡을 수 있어 보인다. [추정][^ref-713][^ref-031] |\\n\\n한 지시에서도 오류 종류마다 잡는 방법이 달라, 확인 절차는 여러 검사를 겹쳐 두는 구성이 선택지로 보인다. [추정][^ref-773][^ref-785][^ref-416][^ref-713][^ref-031]\\n\\n#### 분류 원문 질문과의 연결\\n\\n> 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]\\n\\n배정 결과를 배치 전에 모의 실행이나 최적화 모델의 제약 검사로 확인하면 최근접 배정이 뒤이은 요청의 대기·충돌을 키우는지 실행 전에 드러낼 수 있어 보이나, 이를 물류 플릿에서 잰 자료는 찾지 못했다([열린 질문](../../open-questions.md) oq-052 와 같은 방향). [추정][^ref-783][^ref-784][^ref-416]\\n\\n#### 근거 공백\\n\\n이번에 확인한 실행 전 검증 근거의 평가 환경은 가정·주방 시뮬레이터, 도구 호출 JSON 스키마, 건설 현장, 다품종 소량 생산 셀, 가상 분류 라인이었고, 물류 창고 로봇에 채팅으로 준 지시의 검증 방법을 비교한 연구와 국내 연구·사례는 한국어 검색 2회를 포함한 검색 범위에서 찾지 못했다(부재의 확인은 아님). [추정][^ref-778][^ref-781][^ref-782][^ref-783][^ref-784]\"},{\"section\":\"4. 결론과 남은 불확실성\",\"action\":\"replace\",\"content\":\"**결론**\\n- 에이전트 설계 지침과 도구 규격(OWASP 과도한 에이전시 항목, MCP 도구 명세, LangChain 사람 참여 미들웨어)은 영향이 큰 행동 전 사람 승인·호출 전 입력 표시·승인·수정·거부 결정을 요구하거나 제공한다. [사실][^ref-695][^ref-696][^ref-697]\\n- LLM 로봇 계획·배정 출력을 형식 논리·결정적 판정으로 거르는 가드레일 연구(Safety Chip, RoboGuard, SafePlan, SafeGate)가 있으며, 그중 SafePlan 은 배정 결과까지 검사한다. [사실][^ref-698][^ref-700][^ref-702][^ref-417]\\n- 확인 절차는 다섯 겹(해석 게이트, 제약 게이트, 사람 확인, 검증 뒤 반영, 마지막 거절)으로 두고, 확인은 배치(베이스 해제) 전에 끝내며, 사람 확인은 영향이 크거나 불확실한 작업에 한정하는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-356][^ref-695][^ref-711][^ref-031][^ref-656]\\n- JSON Schema 검증 어휘는 자료형·허용 값·수치 범위·필수 속성 같은 구조를 검사하고 [사실][^ref-773] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다. [사실][^ref-031]\\n- 실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고 각각 놓치는 오류가 있어 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-713][^ref-031]\\n- 개별 지시의 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 가져오는 구분이 분류 원문 7장과 맞는 것으로 보인다. [추정][^ref-416][^ref-782]\\n\\n**남은 불확실성**\\n- 다섯 겹 확인 절차와 방법별 포착·놓침 분담을 한 번에 제시한 단일 출처가 없고, 근거가 물류 플릿 조건이 아니다.\\n- RoboGuard 수치(92% → 2.5% 미만)와 SafePlan 수치(90.5%, 621개)는 원문 미열람 저자 보고값이며 SafePlan 저자는 미확인이다.\\n- q4-02 근거 수치(SELP, CAPE, Guan 외, Hariharan 외, SIMMER, Ko·Lin, Deng 외)는 모두 원문 미열람 저자 보고값이다. SIMMER 는 동료심사 전 프리프린트이며 평가한 모델 수는 미확인이고, Ko·Lin 의 거부·성공 수치는 검증에서 다시 확인하지 못했다.\\n- JSONSchemaBench 의 여섯 프레임워크 목록은 원문 미열람 논문 요약 기준이고, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\\n- JSON Schema 는 main 브랜치 차기판 초안 기준이며 게시된 2020-12 판과의 문구 차이는 미확인이다. VAL 의 검증 실패 보고 형식도 미확인이다. VerifyLLM·SELP 의 저자 목록은 미확인이다.\\n- OWASP 문서의 발행일(2024-11)은 문서 안에서 확인하지 못했다.\\n- 감독 전략 비교 연구의 내용과 조건별 수치, Sagawa 외 비교의 우열은 미확인이다.\\n- EU AI Act 제14조는 공식 관보 원문을 확인하지 못했고, 인공지능기본법 제34조의 시행령 세부와 물류 배정 AI 의 고영향 해당 여부(oq-105)는 미확인이다.\\n- 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다.\\n- [업무 분해·배정 설계 초안](task-model-draft.md)은 v0.8 그대로다. 제안된 개념 '사용자 확인'(실행 2026-09-25-79)과 결정적 검사만 담도록 경계를 좁혀 다시 제안된 개념 '검증 기록'(실행 2026-09-25-81)은 서로의 경계와 배정 속성 '확인 여부'와의 경계가 정해지지 않았고 근거에 추정·원문 미열람이 섞여 초안 6절의 질문으로 두었다.\"},{\"section\":\"5. 이 단계가 낳은 후속 질문\",\"action\":\"replace\",\"content\":\"| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\\n|---|---|---|---|---|\\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (관련: q4-04) | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-79) | 열림 |\\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? | 단계 4. 오해석 방지와 확인 절차 | f5(실행 2026-09-25-79) | 열림 |\\n| q5-10 | 물류 지시 시나리오에서 관제 요원의 승인 지연 시간·거부율·수정률을 재어 승인 피로와 자동화 편향이 나타나는지, 확인 요약에 결정적 검사 결과를 함께 보이면 잘못된 지시를 멈추는 비율이 달라지는지를 어떤 실험으로 측정하는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-79) | 열림 |\\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-81) | 열림 |\\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (관련: oq-104) | 단계 4. 오해석 방지와 확인 절차 | f23(실행 2026-09-25-81) | 열림 |\\n| q5-16 | 물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-81) | 열림 |\"},{\"section\":\"6. 완료 조건 충족 현황\",\"action\":\"replace\",\"content\":\"충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\\n\\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\\n|---|---|---|---|\\n| 실행 전 검증 단계를 담은 확인 절차 초안이 [업무 분해·배정 설계 초안](task-model-draft.md)의 미해결 모델링 질문과 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)의 \\\"5. 구현 가설\\\" 절에 반영됨 | 미충족 | [q4-01 답](#q4-01)의 다섯 겹 확인 절차와 [q4-02 답](#q4-02)의 검증 방법별 포착 오류를 초안 6절 질문과 아이디어 5절 소절로 반영했으나 2차 검증 전이고 근거가 추정(신뢰도 low)이다 | 미충족 · 미승인 |\\n| 명령 권한을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | q4-03 미조사 | 미충족 · 미승인 |\\n| 제한 운영 기준을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | q4-04 미조사 | 미충족 · 미승인 |\\n\\n다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)\"},{\"section\":\"7. 관련 세부영역\",\"action\":\"replace\",\"content\":\"이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 \\\"세부영역 반영 제안\\\"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 교차 규칙에 따라 LLM 가드레일·확인 절차와 LLM 출력 검증은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스 양쪽에 연결한다. 프런트매터 `related_areas`는 아래 목록과 같다.\\n\\n- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — LLM 로봇 계획의 형식 논리 가드레일과 사람의 관리·감독 규정(실행 2026-09-25-79), 구조화 출력·제약 디코딩의 범위와 한계·LTL 제약 디코딩·판정자 LLM 과 방법별로 놓치는 오류(실행 2026-09-25-81)를 6. 대표 접근법과 기술에 반영 제안\\n- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 배정 출력의 실행 전 검사와 디스패처·로봇 쪽 마지막 거절, 실행 가능성 판정·불변 조건 추론·정수계획 배정과 배치 전 모의 실행으로 최근접 배정의 영향을 드러내는 가능성을 6. 대표 접근법과 기술에 반영 제안\\n- [18. 사람–로봇 협업·운영 인터페이스](../../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) — 승인·수정·거부 확인 인터페이스와 사람 승인의 한계, 명시적·암시적 확인을 6. 대표 접근법과 기술에 반영 제안\\n- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — LLM 계획의 실행 전 검증 방법(PDDL 계획 검증기, LTL 기반 검증, 제약 디코딩 벤치마크, 잠재 실패 벤치마크, LLM 판정자)을 6. 대표 접근법과 기술에 반영 제안\\n- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 개별 지시·계획의 실행 전 모의 실행(장면 그래프 시뮬레이터, 디지털 트윈 검증)을 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 받는다는 구분과 함께 6. 대표 접근법과 기술에 반영 제안\\n- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — 모의 실행의 초기 상태가 되는 현재 상태를 표현한다(이번 실행 반영 제안 없음, 22. 시뮬레이션·예측용 디지털 트윈 제안에 구분을 함께 적음)\\n- [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) — 과도한 에이전시의 원인과 최소 권한·완전한 중재, 도구 명세의 접근 통제·감사 기록을 6. 대표 접근법과 기술에 반영 제안(실행 2026-09-25-79)\\n- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 오해석이 위험한 동작으로 이어지지 않게 안전 조건을 확인 절차에 넣는다(이번 실행 반영 제안 없음)\\n- [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 베이스 해제 뒤 변경 불가·취소 불신이 확인 시점을 정한다(이번 실행 반영 제안 없음)\"},{\"section\":\"8. 출처\",\"action\":\"append\",\"content\":\"[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\\n[^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\\n[^ref-774]: guidance-ai (JSONSchemaBench GitHub), jsonschemabench — README (JSONSchemaBench), 미확인, https://github.com/guidance-ai/jsonschemabench, 접근일 2026-09-25\\n[^ref-775]: Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868), JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models, 2025-01, https://arxiv.org/abs/2501.10868, 접근일 2026-09-25 (원문 미열람)\\n[^ref-776]: KCL-Planning (VAL GitHub), VAL — The plan validation system (README), 미확인, https://github.com/KCL-Planning/VAL, 접근일 2026-09-25\\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\\n[^ref-778]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\\n[^ref-779]: Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G., Plan Verification for LLM-Based Embodied Task Completion Agents, 2025-09, https://arxiv.org/abs/2509.02761, 접근일 2026-09-25 (원문 미열람)\\n[^ref-780]: Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D., CAPE: Corrective Actions from Precondition Errors using Large Language Models, 2022-11, https://arxiv.org/abs/2211.09935, 접근일 2026-09-25 (원문 미열람)\\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\\n[^ref-782]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\\n[^ref-783]: Deng, M., Fu, B., Li, L., & Wang, X., Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction, 2025-06, https://arxiv.org/abs/2506.18178, 접근일 2026-09-25 (원문 미열람)\\n[^ref-784]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-786]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)\"},{\"section\":\"9. 이력\",\"action\":\"replace\",\"content\":\"실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\\n\\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\\n|---|---|---|---|---|---|\\n| 2026-09-25 | 2026-09-25-81 | q4-02 | q4-15, q4-16, q5-16 | 없음(v0.8 유지, 개념 '검증 기록' 재제안은 초안 6절 질문) | 3 |\\n| 2026-09-25 | 2026-09-25-79 | q4-01 | q4-13, q4-14, q5-10 | 없음(v0.8 유지, 개념 '사용자 확인' 제안은 초안 6절 질문) | 2 |\\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q4-01~q4-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [업무 분해·배정 설계 초안](task-model-draft.md)에서 생성) | 1 |\"}]},{\"path\":\"docs/ideas/nl-task-chatbot.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16\",\"patches\":[{\"section\":\"5. 구현 가설\",\"action\":\"append\",\"frontmatter\":{\"version\":16,\"sources\":[\"ref-054\",\"ref-055\",\"ref-057\",\"ref-058\",\"ref-059\",\"ref-061\",\"ref-089\",\"ref-090\",\"ref-091\",\"ref-093\",\"ref-094\",\"ref-095\",\"ref-087\",\"ref-164\",\"ref-166\",\"ref-167\",\"ref-168\",\"ref-169\",\"ref-170\",\"ref-171\",\"ref-172\",\"ref-174\",\"ref-175\",\"ref-176\",\"ref-177\",\"ref-178\",\"ref-179\",\"ref-180\",\"ref-181\",\"ref-242\",\"ref-272\",\"ref-275\",\"ref-276\",\"ref-277\",\"ref-278\",\"ref-279\",\"ref-280\",\"ref-350\",\"ref-351\",\"ref-352\",\"ref-353\",\"ref-354\",\"ref-355\",\"ref-356\",\"ref-357\",\"ref-358\",\"ref-359\",\"ref-360\",\"ref-362\",\"ref-015\",\"ref-031\",\"ref-125\",\"ref-130\",\"ref-228\",\"ref-411\",\"ref-413\",\"ref-418\",\"ref-111\",\"ref-495\",\"ref-230\",\"ref-496\",\"ref-500\",\"ref-501\",\"ref-502\",\"ref-116\",\"ref-504\",\"ref-539\",\"ref-540\",\"ref-541\",\"ref-542\",\"ref-543\",\"ref-544\",\"ref-545\",\"ref-546\",\"ref-547\",\"ref-548\",\"ref-056\",\"ref-404\",\"ref-377\",\"ref-592\",\"ref-593\",\"ref-594\",\"ref-595\",\"ref-596\",\"ref-598\",\"ref-611\",\"ref-612\",\"ref-615\",\"ref-616\",\"ref-376\",\"ref-236\",\"ref-417\",\"ref-586\",\"ref-674\",\"ref-675\",\"ref-676\",\"ref-711\",\"ref-677\",\"ref-712\",\"ref-678\",\"ref-656\",\"ref-657\",\"ref-039\",\"ref-658\",\"ref-659\",\"ref-660\",\"ref-661\",\"ref-662\",\"ref-663\",\"ref-664\",\"ref-041\",\"ref-126\",\"ref-127\",\"ref-680\",\"ref-537\",\"ref-681\",\"ref-682\",\"ref-683\",\"ref-684\",\"ref-373\",\"ref-685\",\"ref-695\",\"ref-696\",\"ref-697\",\"ref-698\",\"ref-699\",\"ref-700\",\"ref-701\",\"ref-702\",\"ref-703\",\"ref-713\",\"ref-714\",\"ref-715\",\"ref-716\",\"ref-717\",\"ref-730\",\"ref-731\",\"ref-732\",\"ref-733\",\"ref-734\",\"ref-623\",\"ref-735\",\"ref-736\",\"ref-737\",\"ref-406\",\"ref-528\",\"ref-738\",\"ref-739\",\"ref-740\",\"ref-741\",\"ref-407\",\"ref-743\",\"ref-744\",\"ref-745\",\"ref-746\",\"ref-416\",\"ref-459\",\"ref-773\",\"ref-777\",\"ref-778\",\"ref-781\",\"ref-782\",\"ref-784\",\"ref-785\",\"ref-786\"]},\"content\":\"### 검증 방법별로 잡는 오류\\n\\n실행 2026-09-25-81 에서 [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02)의 q4-02 에 답했다. 확인한 자료를 이 위키가 묶으면 실행 전 검증 방법은 서로 다른 오류를 잡고 각각 놓치는 오류도 있어, 위 다섯 겹 확인 절차에서 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다. [추정][^ref-773][^ref-362][^ref-785][^ref-777][^ref-786][^ref-416][^ref-781][^ref-713][^ref-031] 다섯 방법을 같은 조건에서 비교한 출처는 찾지 못했고 근거가 물류 플릿 조건이 아니어서 신뢰도가 낮다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다.\\n\\n| 방법 | 주로 잡는 오류 | 놓칠 수 있는 오류 |\\n|---|---|---|\\n| 스키마 검증 | 형식, 필수 항목 누락, 허용 값 밖 | 형식은 맞지만 값이 틀린 해석 |\\n| 온톨로지·제약 대조 | 능력 불일치, 필수 정보 누락, 안전 불변 조건 위반 | 온톨로지·명세 자체의 오류 |\\n| 계획 검증기·형식 논리 검증 | 전제 조건 위반, 순서 오류, 빠진 단계, 중복 행동 | 명세 오류, LLM 의 명세 번역 오류 |\\n| 모의 실행 | 실행 불가 동작, 잠재 실패, 물리적 불가능 | 모델 충실도 밖의 상황 |\\n| 사람 확인 | 사용자 의도와 다른 해석 | 그럴듯한 계획에 대한 잘못된 신뢰 |\\n| 로봇 관제 쪽 거절 — 연계 대상(로봇 쪽 기능) | 형식, 수행 불가 동작, 도달 불가 노드, 모르는 지도, 운용 모드 | 미확인 |\\n\\n위 표는 출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다.\\n\\n- **근거 사례**: JSON Schema 검증 어휘(main 브랜치 차기판 초안, 확인일 2026-09-25 기준)는 자료형·허용 값·수치 범위·필수 속성 등을 검사한다. [사실][^ref-773] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고하며, 이 거절은 로봇 쪽 기능인 연계 대상이다. [사실][^ref-031] SHACL 검증 보고는 결과마다 초점 노드·속성 경로·메시지·심각도를 담을 수 있다. [사실][^ref-459] 계획 검증은 PDDL 검증기와 사람의 교정 피드백(Guan 외, 저자 보고, 원문 미열람) [사실][^ref-777]과 LTL 기반 실행 전 검증(VerifyLLM, 원문 미열람) [사실][^ref-778]으로, 모의 실행은 장면 그래프 시뮬레이터 피드백(SayPlan, 원문 미열람) [사실][^ref-416]으로 확인된다. 잠재 실패를 포함한 계획이 29~56% 였다는 SIMMER 의 보고는 동료심사 전 프리프린트의 원문 미열람 저자 보고다. [추정][^ref-781]\\n- **8·22 구분**: 개별 지시의 모의 실행은 가정한 미래를 실험하는 [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 기능이고, 초기 상태는 [8. 실시간 세계 상태·데이터 일관성](../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)의 현재 상태에서 가져오되 결과를 현재 상태처럼 반영하지 않도록 구분해야 할 것으로 보인다. [추정][^ref-416][^ref-782][^ref-784]\\n- **사람 확인**: 사람 확인의 한계는 위 '오해석 방지 확인 절차' 소절의 서술과 같다.[^ref-713][^ref-697]\\n\\n이번 실행에서 다시 제안된 개념 '검증 기록'은 검증이 반영하지 않아 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md) 6절의 질문으로 남았다(초안 v0.8 유지).\\n\\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\\n[^ref-778]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\\n[^ref-782]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\\n[^ref-784]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-786]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)\"}]},{\"path\":\"docs/tracks/nl-task-chatbot/task-model-draft.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가\",\"patches\":[{\"section\":\"6. 미해결 모델링 질문\",\"action\":\"append\",\"frontmatter\":{\"version\":12,\"sources\":[\"ref-031\",\"ref-054\",\"ref-055\",\"ref-059\",\"ref-089\",\"ref-090\",\"ref-091\",\"ref-093\",\"ref-125\",\"ref-130\",\"ref-166\",\"ref-167\",\"ref-169\",\"ref-181\",\"ref-242\",\"ref-350\",\"ref-352\",\"ref-356\",\"ref-357\",\"ref-358\",\"ref-359\",\"ref-361\",\"ref-411\",\"ref-412\",\"ref-413\",\"ref-414\",\"ref-111\",\"ref-495\",\"ref-230\",\"ref-496\",\"ref-501\",\"ref-502\",\"ref-504\",\"ref-404\",\"ref-377\",\"ref-596\",\"ref-597\",\"ref-611\",\"ref-612\",\"ref-592\",\"ref-594\",\"ref-595\",\"ref-598\",\"ref-615\",\"ref-616\",\"ref-376\",\"ref-236\",\"ref-674\",\"ref-711\",\"ref-656\",\"ref-039\",\"ref-126\",\"ref-681\",\"ref-683\",\"ref-684\",\"ref-373\",\"ref-685\",\"ref-677\",\"ref-696\",\"ref-697\",\"ref-717\",\"ref-773\",\"ref-785\",\"ref-777\",\"ref-416\",\"ref-781\",\"ref-713\",\"ref-459\"]},\"content\":\"- 위 '검증 기록(Verification Record)을 개념으로 둘 것인가' 항목에 대해 실행 2026-09-25-81 에서 [q4-02 답](stage-4-misinterpretation-safeguards.md#q4-02)이 나왔다. 확인한 자료를 이 위키가 묶으면 실행 전 검증 방법은 스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인으로 나뉘어 서로 다른 오류를 잡고 각각 놓치는 오류도 있는 것으로 보인다. [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-781][^ref-713] W3C SHACL 검증 보고는 결과마다 초점 노드·속성 경로·문제 값·메시지·심각도를 담을 수 있고(원문 미열람) [사실][^ref-459] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다(확인일 2026-09-25). [사실][^ref-031] 이를 근거로 개념 '검증 기록'을 결정적 검사만 담도록 경계를 좁혀(속성 후보: 검증 방법, 결과(적합 / 위반), 위반 위치·사유, 검사 시각) 다시 제안했으나(근거 f4·f5·f17·f21, 실행 2026-09-25-81) 검증이 반영하지 않았다. 방법별 분담은 이 위키의 종합([추정])이고 SHACL·제안–검증–결정 흐름 근거는 원문 미열람이며, 사람 확인을 위 '사용자 확인' 질문처럼 따로 둘지 정해지지 않았는데 이 제안이 그 경계를 먼저 정하게 되고, 로봇 관제 쪽 거절을 ROP 의 검증 방법 값으로 두는 것은 연계 대상 경계와 맞지 않기 때문이다. 초안은 v0.8 을 유지하고 이 항목을 미해결 모델링 질문으로 둔다. — 관련: q4-02, q4-01, q4-13, q4-15\\n\\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-713]: He, G., Demartini, G., & Gadiraju, U., Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant, 2025-04, https://dl.acm.org/doi/10.1145/3706598.3713218, 접근일 2026-09-25 (원문 미열람)\\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\"}]},{\"path\":\"docs/tracks/nl-task-chatbot/index.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"게시본(v14) 6절을 유지한 채 실행 2026-09-25-81(q4-02 답, 초안 변경 없음)만 덧붙임, version 15\",\"patches\":[{\"section\":\"6. 살아있는 산출물 링크\",\"action\":\"replace\",\"frontmatter\":{\"version\":15},\"content\":\"- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-81, 2026-09-25-98, 2026-09-25-99 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인', 2026-09-25-81 에서 다시 제안된 개념 '검증 기록'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표는 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.\\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했고, 실행 2026-09-25-81 에서는 q4-02 에 답해 '검증 방법별로 잡는 오류' 소절(신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 실행 2026-09-25-99 에서 CLI 로 지정된 질문으로 q5-02 에 답해 6절에 검증 절차 소절(지시·실행·교란·반복 네 층 가상 시험 구성, 신뢰도 low)을 더했다. 가설 판정(q5-03)은 아직 조사하지 않았다. 실행 2026-09-25-79, 2026-09-25-81, 2026-09-25-98, 2026-09-25-99 는 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.\\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\\n- [트랙 로그](log.md) — 실행별 기록\\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.\"}]}],\"changelog_entry\":\"2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 | run 2026-09-25-81\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 자연어 업무 지시 챗봇 단계 4: q4-02 답함, 실행 전 검증 방법별로 잡는 오류와 놓치는 오류 정리(신뢰도 low)\",\"category_recent\":\"2026-09-25 — 13. 작업 배정 — MRTA: 자연어 업무 지시 챗봇 트랙 단계 4 에서 배정 결과의 실행 전 검증(제약 대조·모의 실행) 근거 정리, 세부영역 반영 제안\",\"area_recent\":\"2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 q4-02 답(배정 결과의 실행 전 검증 방법), 6. 대표 접근법과 기술 반영 제안\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"constrained-decoding\",\"term_ko\":\"제약 디코딩\",\"term_en\":\"Constrained Decoding\",\"definition\":\"언어 모델이 토큰을 생성할 때 스키마·문법·오토마톤에 맞지 않는 토큰을 가려, 출력이 정해진 형식이나 명세를 벗어나지 않게 하는 생성 방식이다.\",\"related_areas\":[27,23],\"sources\":[\"ref-774\",\"ref-786\"]},{\"action\":\"new\",\"slug\":\"json-schema\",\"term_ko\":\"JSON 스키마\",\"term_en\":\"JSON Schema\",\"definition\":\"JSON 데이터의 자료형·허용 값·필수 속성·수치 범위 같은 구조 제약을 기술하고 인스턴스가 이를 따르는지 검증하는 명세다.\",\"related_areas\":[27,12],\"sources\":[\"ref-773\"]},{\"action\":\"new\",\"slug\":\"latent-failure\",\"term_ko\":\"잠재 실패\",\"term_en\":\"Latent Failure\",\"definition\":\"계획 실행을 즉시 멈추지는 않지만 목표 달성을 조용히 해치고 때로 되돌릴 수 없는 결과로 이어지는 계획 오류다.\",\"related_areas\":[23,22,27],\"sources\":[\"ref-781\"]}],\"reference_updates\":[{\"id\":\"ref-773\",\"org\":\"JSON Schema (json-schema-org/json-schema-spec GitHub)\",\"title\":\"json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON)\",\"published\":null,\"url\":\"https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"JSON Schema 검증 어휘의 원본(main 브랜치, 차기판 초안). type·enum·const·수치 범위·pattern·required·dependentRequired 등 구조 검증 키워드를 정의한다. 게시된 2020-12 판과 문구가 다를 수 있다.\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-774\",\"org\":\"guidance-ai (JSONSchemaBench GitHub)\",\"title\":\"jsonschemabench — README (JSONSchemaBench)\",\"published\":null,\"url\":\"https://github.com/guidance-ai/jsonschemabench\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"실제 JSON 스키마 약 1만 개로 구조화 출력 엔진의 효율·범위·품질을 재는 벤치마크의 공식 README.\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-775\",\"org\":\"Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868)\",\"title\":\"JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models\",\"published\":\"2025-01\",\"url\":\"https://arxiv.org/abs/2501.10868\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제약 디코딩 프레임워크 여섯 개(Guidance, Outlines, Llamacpp, XGrammar, OpenAI, Gemini)를 1만 개 스키마로 효율·범위·품질 측면에서 평가한 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-776\",\"org\":\"KCL-Planning (VAL GitHub)\",\"title\":\"VAL — The plan validation system (README)\",\"published\":null,\"url\":\"https://github.com/KCL-Planning/VAL\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"PDDL 계획과 계획 모델을 검증하는 도구 모음의 공식 저장소 README. 연속 효과·파생 술어 등 지원 기능을 언급하며 실패 보고 형식은 README 에 없다.\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-777\",\"org\":\"Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S.\",\"title\":\"Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning\",\"published\":\"2023-05\",\"url\":\"https://arxiv.org/abs/2305.14909\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LLM 이 PDDL 도메인 모델을 만들고 PDDL 검증기·사람의 교정 피드백으로 고친 뒤 도메인 독립 계획기로 계획하는 방법(NeurIPS 2023).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-778\",\"org\":\"VerifyLLM 저자(arXiv 2507.05118)\",\"title\":\"VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots\",\"published\":\"2025-07\",\"url\":\"https://arxiv.org/abs/2507.05118\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 과제 기술을 LTL 로 옮기고 LLM 이 행동 순서를 분석해 위치 오류·빠진 전제 행동·중복 행동을 실행 전에 찾아 고치는 틀.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-779\",\"org\":\"Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G.\",\"title\":\"Plan Verification for LLM-Based Embodied Task Completion Agents\",\"published\":\"2025-09\",\"url\":\"https://arxiv.org/abs/2509.02761\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 판정자 LLM 과 계획자 LLM 의 반복 검증으로 불필요한 행동·모순·빠진 단계를 고치는 틀, TEACh 에서 평가(NeurIPS 2025 워크숍).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-780\",\"org\":\"Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D.\",\"title\":\"CAPE: Corrective Actions from Precondition Errors using Large Language Models\",\"published\":\"2022-11\",\"url\":\"https://arxiv.org/abs/2211.09935\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 전제 조건 오류 정보를 LLM 에 재프롬프트해 교정 동작을 얻는 방법, VirtualHome 과 Spot 로봇에서 평가(ICRA 2024).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-781\",\"org\":\"Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University)\",\"title\":\"SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model\",\"published\":\"2026-06\",\"url\":\"https://arxiv.org/abs/2606.14574\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 주방 기호 세계 모델로 LLM 계획의 잠재 실패를 평가하는 벤치마크와 반사실적 예견 시뮬레이션의 효과(동료심사 전 프리프린트).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-782\",\"org\":\"Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T.\",\"title\":\"LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems\",\"published\":\"2026-04\",\"url\":\"https://doi.org/10.3390/app16083883\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이종 로봇 제어 코드 생성에서 물리적 환각을 막으려 중간 작업 표현·로봇 선택·실행 전 동역학 검증을 디지털 트윈으로 수행하는 틀(Applied Sciences 16(8), 3883).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-783\",\"org\":\"Deng, M., Fu, B., Li, L., & Wang, X.\",\"title\":\"Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction\",\"published\":\"2025-06\",\"url\":\"https://arxiv.org/abs/2506.18178\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 정수계획 배정, LLM 의 자연어 기반 제약 갱신, 디지털 트윈 동기화를 결합한 건설 다중 로봇 배정 틀.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-784\",\"org\":\"Ko, T.-H., & Lin, C.-T.(National Central University)\",\"title\":\"Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin\",\"published\":\"2026-09\",\"url\":\"https://arxiv.org/abs/2609.29061\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로컬 LLM·디지털 트윈·사람 결정을 잇는 제안–검증–결정 흐름으로 의미·시뮬레이션 실행·운영 제약을 검사하고 추적 기록을 남기는 다중 라인 작업 조정 시스템.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-785\",\"org\":\"Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University)\",\"title\":\"Constraint Checking of Skills using SHACL\",\"published\":\"2021-07\",\"url\":\"https://ieeexplore.ieee.org/abstract/document/9557549/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 온톨로지로 기술한 기계 스킬에 SHACL 제약을 걸어 실행에 필요한 필수 정보 누락을 검사하는 방법(IEEE INDIN 2021).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-786\",\"org\":\"SELP 저자(arXiv 2409.19471)\",\"title\":\"SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models\",\"published\":\"2024-09\",\"url\":\"https://arxiv.org/abs/2409.19471\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LTL 동치 투표, 뷔히 오토마톤 기반 제약 디코딩, 도메인 미세 조정으로 안전한 로봇 계획을 생성하는 방법.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 3.0.0 명세 원문(공식 저장소 main 브랜치, 입력 원문 텍스트로 열람). 주문 거절 사유와 오류 유형 표를 정의한다.\",\"source_unopened\":false,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-362\",\"org\":\"OpenAI\",\"title\":\"Introducing Structured Outputs in the API\",\"published\":\"2024-08\",\"url\":\"https://openai.com/index/introducing-structured-outputs-in-the-api/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 모델 출력을 JSON 스키마에 맞추는 구조화 출력 기능 발표. 값 안의 실수는 막지 못한다고 언급.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-416\",\"org\":\"Rana, K. 외\",\"title\":\"SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning\",\"published\":\"2023-07\",\"url\":\"https://arxiv.org/abs/2307.06135\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 3D 장면 그래프 기반 LLM 계획과 장면 그래프 시뮬레이터 피드백을 이용한 반복 재계획.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-459\",\"org\":\"W3C RDF Data Shapes Working Group\",\"title\":\"Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음)\",\"published\":\"2017\",\"url\":\"https://www.w3.org/TR/shacl/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. RDF 그래프를 형상 제약으로 검증하고 검증 보고를 내는 W3C 표준(이번 실행에서는 다시 열지 않음).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]},{\"id\":\"ref-236\",\"org\":\"Electronics(MDPI) 게재 논문(저자 미확인)\",\"title\":\"Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation\",\"published\":\"2026-08-11\",\"url\":\"https://doi.org/10.3390/electronics15163562\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 온톨로지 기반 실행 가능성 판정 결과를 배정기 독립 출력(ReasonerOutput)으로 정형화한 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-702\",\"org\":\"SafePlan 저자(arXiv 2503.06892, 저자 미확인)\",\"title\":\"SafePlan: Leveraging Formal Logic and Chain-of-Thought Reasoning for Enhanced Safety in LLM-based Robotic Task Planning\",\"published\":\"2025-03\",\"url\":\"https://arxiv.org/abs/2503.06892\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 지시·계획·배정 결과를 건전성·불변·전제·사후 조건 추론기로 검사하는 LLM 로봇 계획 안전 틀.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\"]},{\"id\":\"ref-697\",\"org\":\"LangChain (langchain-ai/docs GitHub)\",\"title\":\"Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx)\",\"published\":null,\"url\":\"https://docs.langchain.com/oss/python/langchain/human-in-the-loop\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 도구 호출 전 에이전트를 멈추고 사람이 승인·수정·거부·직접 응답을 고르게 하는 미들웨어(이번 실행에서는 다시 열지 않음).\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\"]},{\"id\":\"ref-713\",\"org\":\"He, G., Demartini, G., & Gadiraju, U.\",\"title\":\"Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant\",\"published\":\"2025-04\",\"url\":\"https://dl.acm.org/doi/10.1145/3706598.3713218\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 계획 후 실행 LLM 에이전트에서 사용자 신뢰와 팀 성과를 조사한 CHI 2025 사용자 연구.\",\"source_unopened\":true,\"cited_by\":[\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"docs/ideas/nl-task-chatbot.md\",\"docs/tracks/nl-task-chatbot/task-model-draft.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"국내 물류센터 로봇 관제에서 작업 지시나 배정 결과를 배치 전에 시뮬레이션(디지털 트윈)으로 모의 실행해 확인하는 운영 사례나 연구가 있는가?\",\"areas\":[22,13],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[{\"step\":\"피킹\",\"item\":\"시작 조건\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"작업 대상\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"수행 자원\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"제약\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"},{\"step\":\"피킹\",\"item\":\"예외·성과\",\"link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\",\"title\":\"단계 4. 오해석 방지와 확인 절차\"}],\"additional_research_requests\":[\"단계 4 페이지 H1 아래 상태 줄('열린 질문: 13건 · 답한 질문: 1건')은 H2 절 밖이라 patches 로 바꿀 수 없다. 이번 실행 뒤 값은 열린 질문 14건·답한 질문 2건이므로 퍼블리셔(또는 pipeline 담당)가 상태 줄을 갱신하도록 요청한다.\",\"패치 적용 기준판 확인 요청: 이전 초안에서 트랙 개요·아이디어 페이지 패치가 실행 2026-09-25-98·99 반영 전 판(개요 v13, 아이디어 v13)에 적용되었다. 이번 패치는 게시본(개요 v14, 아이디어 v15)에 적용되어야 하며 프런트매터 version 을 각각 15·16 으로 명시했다.\",\"트랙 개요 상태 줄(현재 단계: 단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 config/tracks/nl-task-chatbot.yaml 의 current_stage 확인이 필요하다(1차 검증 노트). 개요 상태 줄은 값이 바뀌지 않아 이번 실행에서 고치지 않았다.\",\"q4-02 3절 '모의 실행': SIMMER 가 평가한 모델 수와 '오류 없는 계획' 비율의 정확한 값을 원문으로 확인해야 한다(검증에서 '최대 17%'·'여섯 LLM' 미확인).\",\"q4-02 3절 '계획 검증기': VAL 이 검증 실패 때 내는 보고 형식(위반 위치·수리 조언)을 원문으로 확인하면 초안 6절 '검증 기록'의 위반 위치·사유 속성 근거가 된다.\",\"q4-02 3절 '스키마 검증': 게시된 JSON Schema 2020-12 판과 main 브랜치 초안의 검증 키워드 문구 차이를 확인해야 한다.\",\"백로그 중복 정리 필요: q4-09·q4-10, q3-12·q3-13, q3-09·q3-10, q5-05·q5-06, q1-05·q1-06.\"],\"fixes_applied\":[\"f15 강등 — 단계 4 페이지 q4-02 '모의 실행'의 SIMMER 문장을 [추정]으로 쓰고 수치를 '오류 없는 계획 20% 미만, 잠재 실패 포함 계획 29~56%, 최대 72% 감소, 동작 77개·객체 262개'로 고쳤으며 '최대 17%'·'여섯 LLM'은 쓰지 않고 모델 수는 미확인으로, '동료심사 전 프리프린트의 저자 보고'를 병기했다(아이디어 페이지도 [추정]).\",\"f17 — Ko·Lin 문장의 '올바른 거부 7/8, 자율 전략 성공 3/10' 뒤에 '(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록)'을 붙였다.\",\"f13 — SayPlan 문장을 '저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건)'로 저자 보고임을 밝혀 썼다.\",\"f16 — 발행일을 2026-04 로 적고(본문·reference_updates published), 실행 전 동역학 검증·동작 스케일링은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며 ROP 쪽은 로봇 선택·공간 접지 수준의 검증으로 본다는 [추정] 문장을 더했다.\",\"f4 — 로봇의 주문 거절은 연계 대상이고 ROP 는 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는다고 [추정]으로 서술하고, 오류 수준을 원문 Table 9 대로 'UNSUPPORTED_PARAMETER 만 CRITICAL, 나머지 WARNING'으로 적었다.\",\"f21·f24 — 방법별 표의 '로봇 관제 쪽 거절' 행에 '연계 대상(로봇 쪽 기능)'을 표시하고 표 아래에 '출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다'를 적었으며(아이디어 페이지 표도 같음), f24 시나리오는 '설명용 가정 사례, 현장 수치 없음'으로 밝혔다.\",\"f3 — 여섯 프레임워크 목록이 원문 미열람 논문(ref-775) 요약 기준이고 README(ref-774)와 논문은 같은 저자 그룹이라 독립 교차가 아님을 본문과 4절 불확실성에 적었다.\",\"f12·f14·f9·f11·f19 — 각 수치·결과 뒤에 '(저자 보고, 원문 미열람)'과 평가 조건(드론 항법·로봇 조작 / VirtualHome·Spot / 48개 과제 / 가정 환경 / TEACh)을 유지했다.\",\"f20 — 새로 서술하지 않고 '사람 확인과 LLM 판정자' 소절에서 [q4-01 답](#q4-01)의 사람 승인 한계 서술로 연결하는 한 문장과 기존 각주 ref-713·ref-697 만 두었다.\",\"온톨로지 변경 '검증 기록' 미반영 — 초안 2절은 고치지 않고 6절에 q4-02 답(f21·f22) 연결과 미반영 사유(추정·원문 미열람 근거, '사용자 확인' 경계 미결정, 로봇 관제 거절의 연계 대상 경계)를 질문으로 덧붙였으며 초안 v0.8 과 ontology_draft_version '0.8'을 유지했다.\",\"reference_updates — 원문 미열람 출처(ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713)에 source_unopened: true 를 두었고, ref-773·ref-774·ref-776 은 github_raw 로 연 원문이라 false 로 두었으며 각주 정의 줄의 접근일 뒤에 ' (원문 미열람)'을 붙였다.\",\"ref-031 — 단계 4 페이지의 기존 각주 정의 줄을 그대로 재사용하고 새로 정의하지 않았으며 reference_updates 에서 입력 원문 텍스트 열람으로 표시했다.\",\"6절·2절 — 완료 조건 세 행을 모두 '미충족 · 미승인'으로 두고 '다음 단계로 전환: 아니오(…)'로 적었으며, 2절 q4-02 를 '답함', 답 위치 [q4-02 답](#q4-02), 3절 소제목을 '### q4-02 … {#q4-02}' 형식으로 두었다.\",\"세부영역 반영 제안 — 13·23·22·27 세부영역 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그로만 남겼으며, 22. 시뮬레이션·예측용 디지털 트윈 제안에 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 받는다는 f23 구분을 함께 적었다.\",\"2차: 트랙 개요 6절 — 게시본(v14) 6절을 기준으로 다시 써 실행 2026-09-25-98·99 서술(초안 변경 없음 목록, 6절 평가 지표·검증 절차 소절, 뒤 단계를 다뤘다는 문장)을 유지하고 실행 2026-09-25-81(q4-02 답, '검증 방법별로 잡는 오류' 소절, '검증 기록' 재제안의 초안 6절 질문)만 덧붙였으며 프런트매터 version 을 15 로 명시했다.\",\"2차: 아이디어 2 페이지 — 5절 append 패치를 게시본(v15)에 적용하도록 하고 6절·auto 영역은 보내지 않아 게시본 그대로 두었으며 프런트매터 version 을 16 으로 명시했다.\",\"2차: 아이디어 2 페이지 프런트매터 sources — 게시본 목록(ref-730~ref-746 포함)을 유지하고 없던 ref-416, ref-459, ref-773, ref-777, ref-778, ref-781, ref-782, ref-784, ref-785, ref-786 을 더했다(ref-362·ref-713·ref-031·ref-697 은 이미 있음).\",\"2차: 업무 분해·배정 설계 초안 프런트매터 sources 에 ref-773, ref-785, ref-777, ref-416, ref-781, ref-713, ref-459 를 더했다.\",\"2차: 새 단계 5 질문 id 를 q5-11 에서 q5-16 으로 고쳤다(backlog_updates, 단계 4 페이지 5절 표, 9절 이력 행, log_entry).\",\"2차: 단계 4 페이지 8절(append 로 각주 정의를 직접 넣음)과 아이디어 2 페이지(5절 소절 끝 각주 정의)의 [^ref-782] 발행일을 2026-04 로 고쳤다.\",\"2차: 단계 4 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)'로 고쳤다.\"],\"track_updates\":{\"stage_page\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md\",\"ontology_draft_version\":\"0.8\",\"backlog_updates\":[{\"id\":\"q4-02\",\"status\":\"답함\",\"answer_link\":\"docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02\"},{\"id\":\"q4-15\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생)\",\"stage\":4,\"origin\":\"f22\"},{\"id\":\"q4-16\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104)\",\"stage\":4,\"origin\":\"f23\"},{\"id\":\"q5-16\",\"status\":\"열림\",\"answer_link\":null,\"question\":\"물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? (q4-02 에서 파생)\",\"stage\":5,\"origin\":\"f21\"}],\"log_entry\":\"답한 질문: q4-02(실행 전 검증 방법별 포착·놓침 오류, 신뢰도 low; 근거 f1~f26) / 새 질문: q4-15(f22), q4-16(f23), q5-16(f21) / 온톨로지 변경: 없음(v0.8 유지; 개념 '검증 기록' 재제안(f4·f5·f17·f21)은 검증 거부 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계 미결정, 로봇 관제 거절의 연계 대상 경계 불일치 — 초안 6절 질문으로 둠) / 완료 조건 평가: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04; 열린 질문 q4-03~q4-16) / 세부영역 반영 제안: 4건 — 13. 작업 배정 — MRTA(6. 대표 접근법과 기술: 실행 가능성 판정·불변 조건 추론·정수계획 배정과 배치 전 모의 실행, f7·f8·f18·f21·f25), 23. 시험·형식 검증·벤치마크(6절: PDDL 계획 검증기·LTL 검증·제약 디코딩 벤치마크·잠재 실패 벤치마크·LLM 판정자, f3·f10·f11·f12·f15·f19), 22. 시뮬레이션·예측용 디지털 트윈(6절: 개별 지시의 실행 전 모의 실행과 8. 실시간 세계 상태·데이터 일관성에서 초기 상태를 받는 구분, f13·f16·f17·f23), 27. AI·학습·적응과 모델 운영(6절: 구조화 출력·제약 디코딩의 범위와 한계, LTL 제약 디코딩, 판정자 LLM, 방법별로 놓치는 오류, f2·f3·f12·f19·f22) / 다음 실행 제안: q4-03(명령 권한·감사 기록), q4-04(제한 운영 기준); 백로그 중복(q4-09·q4-10 등) 정리\",\"overview_progress\":\"단계 4 질문 q4-02 답함(단계 3 완료·전환 미승인 상태에서 지정 질문으로 다룸, 현재 단계 표기는 단계 3 유지) — 단계 4 열린 질문 14, 답함 2, 완료 조건 미충족\"},\"area_reflection_proposals\":[{\"area_no\":13,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"배정 결과의 실행 전 검사: 온톨로지 기반 실행 가능성 판정(ref-236), 불변·전제·사후 조건 추론기(SafePlan, ref-702), 정수계획 배정과 LLM 의 자연어 기반 제약 갱신(건설 사례, ref-783), 배치 전 모의 실행·제약 검사로 최근접 배정의 대기·충돌 영향을 드러낼 가능성([추정], 물류 실측 없음, oq-052). 27. AI·학습·적응과 모델 운영과 양쪽 연결. 근거 f7·f8·f18·f21·f25(실행 2026-09-25-81).\"},{\"area_no\":23,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"LLM 계획의 실행 전 검증 방법: PDDL 계획 검증기(VAL, ref-776), LTL 기반 실행 전 검증(VerifyLLM, ref-778), LTL 동치 투표·제약 디코딩(SELP, ref-786), 제약 디코딩 벤치마크(JSONSchemaBench, ref-774·ref-775), 잠재 실패 벤치마크(SIMMER, 프리프린트 [추정], ref-781), 판정자 LLM 반복 검증(ref-779). 수치는 원문 미열람 저자 보고. 근거 f3·f10·f11·f12·f15·f19(실행 2026-09-25-81).\"},{\"area_no\":22,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"개별 지시·계획의 실행 전 모의 실행: 장면 그래프 시뮬레이터 피드백(SayPlan, ref-416), 디지털 트윈 통합 검증(ref-782, 동역학 검증은 연계 대상), 제안–검증–결정 흐름의 시뮬레이션 실행 검사(ref-784). 모의 실행은 가정한 미래를 실험하는 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성의 현재 상태에서 받되 결과를 현재 상태처럼 반영하지 않는다는 구분([추정])을 함께 적는다. 근거 f13·f16·f17·f23(실행 2026-09-25-81).\"},{\"area_no\":27,\"section\":\"6. 대표 접근법과 기술\",\"summary\":\"LLM 출력 검증 방법: 구조화 출력의 스키마 준수와 값 오류 한계([추정] 벤더 주장, ref-362), 제약 디코딩 벤치마크(ref-774·ref-775), LTL 제약 디코딩(ref-786), 판정자 LLM(ref-779), 방법별로 놓치는 오류([추정] 이 위키의 종합). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 함께 연결. 근거 f2·f3·f12·f19·f22(실행 2026-09-25-81).\"}],\"standards_updates\":[{\"name\":\"JSON Schema Validation (json-schema-spec, main 브랜치 차기판 초안)\",\"kind\":\"표준\",\"org\":\"JSON Schema (json-schema-org)\",\"url\":\"https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md\",\"related_areas\":[27,12],\"summary\":\"JSON 인스턴스의 자료형·허용 값·수치 범위·패턴·필수 속성·조건부 필수 속성·크기 제한을 검사하는 검증 어휘. 게시된 2020-12 판과 문구 차이는 미확인.\",\"ref_id\":\"ref-773\"},{\"name\":\"VAL (PDDL 계획 검증 도구)\",\"kind\":\"오픈소스\",\"org\":\"KCL-Planning\",\"url\":\"https://github.com/KCL-Planning/VAL\",\"related_areas\":[23,27],\"summary\":\"AI 계획의 계획과 계획 모델(PDDL, 연속 효과·파생 술어 포함)을 다루는 계획 검증 도구. 실패 보고 형식은 README 에서 미확인.\",\"ref_id\":\"ref-776\"},{\"name\":\"JSONSchemaBench\",\"kind\":\"오픈소스\",\"org\":\"guidance-ai\",\"url\":\"https://github.com/guidance-ai/jsonschemabench\",\"related_areas\":[27,23],\"summary\":\"실제 JSON 스키마 약 1만 개로 제약 디코딩·구조화 출력 엔진의 효율·범위·품질을 평가하는 벤치마크.\",\"ref_id\":\"ref-774\"}]}",
+  "structured_output": {
+    "run_id": "2026-09-25-81",
+    "outline": [
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "2. 질문 목록",
+        "budget_chars": 2600,
+        "summary": "q4-02 를 답함(실행 2026-09-25-81)으로 바꾸고 후속 질문 q4-15·q4-16 을 더한다."
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "3. 조사 결과",
+        "budget_chars": 5200,
+        "summary": "실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고, 로봇 관제 쪽 거절(연계 대상)이 마지막으로 잡는 분담으로 보인다. [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-713][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f6",
+          "f7",
+          "f8",
+          "f9",
+          "f10",
+          "f11",
+          "f12",
+          "f13",
+          "f14",
+          "f15",
+          "f16",
+          "f17",
+          "f18",
+          "f19",
+          "f20",
+          "f21",
+          "f22",
+          "f23",
+          "f24",
+          "f25",
+          "f26"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "4. 결론과 남은 불확실성",
+        "budget_chars": 1900,
+        "summary": "한 방법만으로는 해석 오류를 걸러내기 어렵고 방법별 분담은 이 위키의 종합(신뢰도 low)이다. [추정][^ref-362][^ref-777][^ref-713]",
+        "planned_findings": [
+          "f1",
+          "f4",
+          "f21",
+          "f22",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "5. 이 단계가 낳은 후속 질문",
+        "budget_chars": 1300,
+        "summary": "q4-15·q4-16·q5-16 세 질문을 더한다.",
+        "planned_findings": [
+          "f21",
+          "f22",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "6. 완료 조건 충족 현황",
+        "budget_chars": 700,
+        "summary": "세 조건 모두 미충족 · 미승인, 전환 아니오(열린 질문 q4-03~q4-16)."
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "7. 관련 세부영역",
+        "budget_chars": 1300,
+        "summary": "23. 시험·형식 검증·벤치마크, 22. 시뮬레이션·예측용 디지털 트윈, 8. 실시간 세계 상태·데이터 일관성을 더한다."
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "8. 출처",
+        "budget_chars": 0,
+        "summary": "새 각주 정의 18개 추가(ref-782 발행일 2026-04)."
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "section": "9. 이력",
+        "budget_chars": 400,
+        "summary": "실행 2026-09-25-81 행 추가."
+      },
+      {
+        "path": "docs/ideas/nl-task-chatbot.md",
+        "section": "5. 구현 가설",
+        "budget_chars": 1500,
+        "summary": "'검증 방법별로 잡는 오류' 소절을 덧붙인다. [추정][^ref-773][^ref-785][^ref-416][^ref-713][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f4",
+          "f5",
+          "f9",
+          "f11",
+          "f13",
+          "f15",
+          "f17",
+          "f20",
+          "f21",
+          "f22",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "section": "6. 미해결 모델링 질문",
+        "budget_chars": 900,
+        "summary": "'검증 기록' 질문에 q4-02 답을 연결하고 재제안 미반영 사유를 적는다(v0.8 유지).",
+        "planned_findings": [
+          "f4",
+          "f5",
+          "f21",
+          "f22"
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/index.md",
+        "section": "6. 살아있는 산출물 링크",
+        "budget_chars": 3000,
+        "summary": "게시본(v14) 6절을 유지하고 실행 2026-09-25-81 결과만 덧붙인다."
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-782 발행일 2026-04), 이력 행 추가",
+        "patches": [
+          {
+            "section": "2. 질문 목록",
+            "action": "replace",
+            "frontmatter": {
+              "related_areas": [
+                27,
+                18,
+                25,
+                26,
+                12,
+                13,
+                23,
+                22,
+                8
+              ],
+              "sources": [
+                "ref-031",
+                "ref-350",
+                "ref-356",
+                "ref-417",
+                "ref-418",
+                "ref-656",
+                "ref-711",
+                "ref-695",
+                "ref-696",
+                "ref-697",
+                "ref-698",
+                "ref-699",
+                "ref-700",
+                "ref-701",
+                "ref-702",
+                "ref-703",
+                "ref-713",
+                "ref-714",
+                "ref-715",
+                "ref-716",
+                "ref-620",
+                "ref-717",
+                "ref-773",
+                "ref-774",
+                "ref-775",
+                "ref-776",
+                "ref-777",
+                "ref-778",
+                "ref-779",
+                "ref-780",
+                "ref-781",
+                "ref-782",
+                "ref-783",
+                "ref-784",
+                "ref-785",
+                "ref-786",
+                "ref-362",
+                "ref-459",
+                "ref-236",
+                "ref-416"
+              ],
+              "version": 3
+            },
+            "content": "이 단계의 시작 질문 4개(q4-01~q4-04)와 앞 단계 실행에서 이 단계로 보낸 질문(q4-05~q4-12), 실행 2026-09-25-79 의 후속 질문(q4-13·q4-14), 실행 2026-09-25-81 의 후속 질문(q4-15·q4-16)이다. q4-01은 사용자 요청의 시작 질문 문구 그대로이고, q4-02~q4-04는 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 질문 문구와 상태, 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 \"조사 중\"은 이 표에서 \"열림\"으로 표시하고 \"폐기\"는 표에서 빼고 백로그에만 남긴다. 제기 근거 칸에는 finding id 또는 \"사용자\"만 쓰고, finding 이 나온 실행 id 는 백로그에 있다. q4-09와 q4-10은 같은 질문이 백로그에 두 번 등록된 것이어서 백로그 정리가 필요하다.\n\n| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |\n|---|---|---|---|---|---|\n| q4-01 | LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가? | 답함 | 사용자 | 2026-09-25-79 | [q4-01 답](#q4-01) |\n| q4-02 | 해석 결과를 실행 전에 검증하는 방법(스키마 검증, 온톨로지 제약 대조, 사람 확인, 모의 실행)에는 무엇이 있고 각각 어떤 오류를 잡는가? | 답함 | 사용자 | 2026-09-25-81 | [q4-02 답](#q4-02) |\n| q4-03 | 채팅 사용자별 명령 권한(어느 로봇·구역·작업까지 지시할 수 있는가)과 지시·확인의 감사 기록은 어떻게 두는가? | 열림 | 사용자 | | |\n| q4-04 | 해석의 불확실성이 클 때 되묻기·사람 승인·실행 보류 같은 제한 운영으로 넘기는 기준은 무엇인가? | 열림 | 사용자 | | |\n| q4-05 | LLM 이 허용 동작 목록에 없는 동작이나 존재하지 않는 대상을 분해 결과에 넣을 때, 허용 동작 대응(Huang 외)·assertion(ProgPrompt)·계획기 검사(LLM+P) 같은 기존 장치는 각각 어떤 오류를 걸러내고 무엇을 놓치는가? (q1-01 에서 파생) | 열림 | f14 | | |\n| q4-06 | 작업자 음성 피킹의 체크 디지트·스캔처럼 동작 하나하나를 현장에서 확인받는 방식과, 자연어 지시의 해석 결과(작업·대상·로봇)를 배정 전에 요약해 확인받는 방식을 함께 둘 때 각각 어떤 오류를 잡고 확인 부담은 얼마나 늘어나는가? (q1-03 에서 파생) | 열림 | f9 | | |\n| q4-07 | 필수 슬롯 누락은 규칙(스키마)으로 검사하고 지시의 모호성은 KnowNo·CLARA 같은 불확실성 추정으로 판단하는 식으로 두 방식을 나눠 쓸 때, 가정용 벤치마크(AmbiK)에서 보고된 모호성 탐지의 낮은 구분 성능이 물류 지시(화물·장소·기한)에서도 나타나는가, 되묻기 횟수와 오배정은 어떻게 달라지는가? (q1-04 에서 파생) | 열림 | f11 | | |\n| q4-08 | RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생) | 열림 | f13 | | |\n| q4-09 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) (관련: q4-03) | 열림 | f20 | | |\n| q4-10 | 채팅 LLM 에 노출할 도구를 작업 요청 제출 같은 상위 도구로 한정할 때, 어떤 도구 목록과 사용자별 권한을 두어야 능력 질의·배정·검증 게이트를 우회하지 않는가? (q3-02 에서 파생) | 열림 | f20 | | |\n| q4-11 | 배정 실패 원인(능력 부재·일시적 가용 불가·제약 조합 불능·해석 오류)마다 챗봇이 사용자에게 제시할 완화 선택지(기한 완화, 장소·대상 변경, 사람 작업자 처리 전환, 대기)를 어떤 목록으로 두고, 사람 처리 전환이나 기한 완화는 누가 승인하는가? (q3-03 에서 파생) | 열림 | f22 | | |\n| q4-12 | 화물을 이미 실었거나 옮긴 작업을 채팅으로 취소할 때 되돌림 보상 작업의 생성·실행을 누가 승인하고, 지시 변경 요약 확인(무엇을 취소하고 무엇이 영향받는가)은 어떤 형식으로 보여 주는가? (q3-04 에서 파생) (관련: oq-021, q4-11) | 열림 | f23 | | |\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (q4-01 에서 파생) (관련: q4-04) | 열림 | f22 | | |\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? (q4-01 에서 파생) | 열림 | f5 | | |\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생) | 열림 | f22 | | |\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104) | 열림 | f23 | | |"
+          },
+          {
+            "section": "3. 조사 결과",
+            "action": "append",
+            "content": "실행 2026-09-25-81 이 q4-02 에 답했다. 이 실행도 단계 3 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 단계 4 를 다뤘다.\n\n### q4-02 해석 결과를 실행 전에 검증하는 방법과 각 방법이 잡는 오류 {#q4-02}\n\n확인한 자료를 이 위키가 묶으면, 스키마 검증은 형식·필수 항목 누락·허용 값 밖 오류를, 온톨로지·제약 대조는 능력 불일치·필수 정보 누락·안전 불변 조건 위반을, 계획 검증기·형식 논리 검증은 전제 조건 위반·순서 오류·빠진 단계·중복 행동을, 모의 실행은 실행 불가 동작·잠재 실패·물리적 불가능을, 사람 확인은 형식·제약은 맞지만 사용자 의도와 다른 해석을 주로 잡고, 로봇 관제 쪽 거절(연계 대상)은 형식·능력·경로·지도·운용 모드 오류를 마지막으로 잡는 분담으로 정리되는 것으로 보인다. [추정][^ref-773][^ref-362][^ref-459][^ref-785][^ref-702][^ref-777][^ref-778][^ref-416][^ref-781][^ref-782][^ref-713][^ref-031] 다섯 방법을 같은 조건에서 비교한 단일 출처는 찾지 못했고 근거 환경이 물류 플릿 조건이 아니어서 신뢰도가 낮다. 이 방법들은 [q4-01 답](#q4-01)의 다섯 겹 확인 절차 가운데 해석 게이트·제약 게이트·사람 확인·마지막 거절에 들어가는 검사 수단에 해당한다.\n\n아래 표는 각 출처의 보고를 이 위키가 대응시켜 구성한 것이다. [추정][^ref-773][^ref-362][^ref-785][^ref-777][^ref-786][^ref-416][^ref-781][^ref-713][^ref-031]\n\n| 방법 | 주로 잡는 오류 | 놓칠 수 있는 오류 | 맡는 쪽 |\n|---|---|---|---|\n| 스키마 검증 | 형식, 필수 항목 누락, 허용 값 밖 | 형식은 맞지만 값이 틀린 해석(존재하는 다른 도크 번호 등) | ROP(해석 게이트) |\n| 온톨로지·제약 대조 | 능력 불일치, 필수 정보 누락, 안전 불변 조건 위반 | 온톨로지·명세 자체가 틀린 경우 | ROP(제약 게이트) |\n| 계획 검증기·형식 논리 검증 | 전제 조건 위반, 순서 오류, 빠진 단계, 중복 행동 | 명세가 틀리거나 LLM 이 명세를 잘못 옮긴 경우 | ROP(제약 게이트) |\n| 모의 실행 | 실행 불가 동작, 잠재 실패, 물리적 불가능 | 모델 충실도 밖의 상황 | ROP(가정한 미래를 실험하는 기능) |\n| 사람 확인 | 형식·제약은 맞지만 사용자 의도와 다른 해석 | 그럴듯한 계획에 대한 잘못된 신뢰 | 사람 |\n| 로봇 관제 쪽 거절 — 연계 대상(로봇 쪽 기능) | 형식, 쓸 수 없는 선택 필드, 수행 불가 동작, 도달 불가 노드, 모르는 지도, 주문을 받지 않는 운용 모드 | 미확인 | 로봇(ROP 는 오류를 받아 처리하는 쪽만) |\n\n위 표는 출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다. 출처의 표를 옮긴 것이 아니다.\n\n#### 스키마 검증\n\n- JSON Schema 검증 어휘(json-schema-spec 저장소 main 브랜치의 차기판 초안, 발행일 미확인, 확인일 2026-09-25 기준)는 인스턴스의 자료형, 허용 값(enum·const), 수치 범위, 문자열 패턴, 필수 속성(required), 조건부 필수 속성(dependentRequired), 배열·객체 크기 제한을 검사한다. 게시된 2020-12 판과의 문구 차이는 미확인이다. [사실][^ref-773]\n- OpenAI 는 구조화 출력이 모델 출력을 개발자가 준 JSON 스키마에 맞추도록 보장한다고 설명하면서도, 모델이 JSON 객체의 값 안에서는 여전히 실수할 수 있다고 밝힌다(2024-08 발표). [추정] 벤더 주장[^ref-362]\n- JSONSchemaBench 는 실제 JSON 스키마 약 1만 개로 제약 디코딩(constrained decoding) 프레임워크를 효율·범위(지원하는 스키마 기능)·품질(과제 정확도에 주는 영향) 세 측면에서 평가하는 벤치마크다(2025-01). [사실][^ref-774][^ref-775] 평가 대상 여섯 프레임워크(Guidance·Outlines·Llamacpp·XGrammar·OpenAI·Gemini) 목록은 원문을 열지 못한 논문 요약 기준이며, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\n\n#### 온톨로지·제약 대조\n\n- W3C SHACL(2017 권고안, 이번 실행에서는 원문 미열람)은 검증 결과를 적합 여부와 결과 목록으로 된 검증 보고로 내고, 결과마다 초점 노드·속성 경로·문제 값·사람이 읽는 메시지·심각도를 담을 수 있다. [사실][^ref-459]\n- Köcher·da Silva·Fay(IEEE INDIN 2021, 원문 미열람)는 온톨로지로 기술한 기계 스킬에 SHACL 제약을 걸어, 실행에 필요한 필수 정보가 빠진 잘못 모델링된 스킬을 가려내 수정 대상으로 표시하는 방법을 제시했다. [사실][^ref-785]\n- Electronics(2026-08-11, 원문 미열람) 논문은 이종 로봇 배정에서 플릿 구성과 물품의 적재 상태가 실행 가능성에 영향을 준다고 보고, 온톨로지 기반 판정 결과(ReasonerOutput)가 여러 배정기에서 공통 실행 가능성 제약으로 작동했다고 보고했다(저자 보고). [사실][^ref-236]\n- [q4-01 답](#q4-01)에서 본 SafePlan 은 LLM 이 만든 지시·작업 계획·작업 배정 결과를 프롬프트 건전성 추론기와 불변·전제·사후 조건 추론기로 각각 검사한다. [사실][^ref-702]\n\n#### 계획 검증기·형식 논리 검증\n\n- Guan 외(NeurIPS 2023)는 LLM 이 PDDL 도메인 모델을 만들고 건전한 도메인 독립 계획기로 계획하되, LLM 이 처음부터 완전한 모델을 만들지 못하는 문제를 PDDL 검증기와 사람의 교정 피드백으로 다뤘고, 교정한 모델로 48개 계획 과제를 풀었다고 보고했다(저자 보고, 원문 미열람, 48개 과제 조건). [사실][^ref-777]\n- KCL-Planning 의 VAL 저장소는 PDDL 계획과 계획 모델(연속 효과·파생 술어·시간 지정 초기 리터럴 포함)을 다루는 계획 검증 도구를 공개한다(발행일 미확인, 확인일 2026-09-25 기준). 검증 실패 시 보고 형식은 README 에서 확인하지 못했다. [사실][^ref-776]\n- VerifyLLM(2025-07)은 과제 기술을 선형 시간 논리(LTL) 식으로 옮긴 뒤 LLM 이 행동 순서를 슬라이딩 윈도로 분석해 실행 전에 위치 오류·빠진 전제 행동·중복 행동을 찾아 재정렬·추가·삭제로 고친다(저자 보고, 원문 미열람, 가정 환경 평가). [사실][^ref-778]\n- SELP(2024-09)는 자연어 명령에서 여러 LTL 식을 뽑아 동치인 식끼리 묶는 동치 투표와, LTL 식을 뷔히 오토마톤으로 바꿔 명세와 어긋나는 토큰을 가리는 제약 디코딩을 쓰며, 저자들은 드론 항법에서 안전율 10.8%, 로봇 조작에서 20.4% 개선을 보고했다(저자 보고, 원문 미열람, 드론 항법·로봇 조작 조건). [사실][^ref-786]\n\n#### 모의 실행\n\n- SayPlan(2023-07)은 LLM 이 만든 초기 계획을 장면 그래프 시뮬레이터의 피드백으로 반복 검증·수정해 환경의 술어·제약과 맞지 않는 실행 불가 동작을 고치며, 저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건, 원문 미열람). [사실][^ref-416]\n- CAPE(ICRA 2024)는 동작을 실행할 수 없을 때 전제 조건 오류 정보를 LLM 에 다시 주어 교정 동작을 얻으며, VirtualHome 에서 사람 주석 계획 정확도를 SayCan 대비 28.89% 에서 49.63% 로 높였다고 보고했다(저자 보고, 원문 미열람, VirtualHome·Spot 로봇 조건). [사실][^ref-780]\n- SIMMER(2026-06)는 실행을 즉시 멈추지 않지만 목표 달성을 조용히 해치는 잠재 실패(latent failure)를 주방 기호 세계 모델(동작 77개·객체 262개)로 평가하며, 저자들은 오류 없는 계획이 20% 미만, 잠재 실패를 포함한 계획이 29~56% 였고 반사실적 예견 시뮬레이션으로 잠재 실패를 최대 72% 줄였다고 보고한 것으로 보인다. 동료심사 전 프리프린트의 저자 보고이며 원문 미열람, 평가한 모델 수는 미확인이다. [추정][^ref-781]\n- Lee 외(Applied Sciences 16(8), 2026-04, 원문 미열람)는 LLM 이 만든 로봇 프로그램이 공간적으로 일관되지 않은 명령과 동역학적으로 불가능한 동작 같은 물리적 환각에 취약하다고 보고, 구조화된 중간 작업 표현으로 공간 접지·로봇 선택·실행 전 동역학 검증을 거친 뒤 제조사별 코드를 만드는 디지털 트윈 통합 검증 틀을 제안했다. [사실][^ref-782] 실행 전 동역학 검증·동작 스케일링은 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이며, ROP 쪽 검증은 로봇 선택·공간 접지 수준으로 보는 것이 맞아 보인다. [추정][^ref-782]\n- Ko·Lin(2026-09, 프리프린트, 원문 미열람)의 제안–검증–결정 흐름은 로컬 LLM 이 운영자 의도를 구조화 요구로 바꾸고 후보 전략을 낸 뒤 의미 검사·시뮬레이션 실행·운영 제약 검사를 거쳐 사람이 결정하게 하며, 잘못된 입력의 올바른 거부 7/8, 자율 전략 성공 3/10 을 보고했다(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록). [사실][^ref-784]\n- Deng 외(2025-06, 원문 미열람)는 건설 현장 다중 로봇 배정을 정수계획으로 풀고 LLM 이 자연어 상황 서술에서 최적화 제약·파라미터를 갱신하며 디지털 트윈이 현장과 동기화되는 틀을 제안했고, 상위 LLM 들이 제약·파라미터 추출에서 97% 넘는 정확도를 보였다고 보고했다(저자 보고, 건설 사례라 업종별 조건이며 방법 근거로만 쓴다). [사실][^ref-783]\n- 개별 지시의 실행 전 모의 실행은 가정한 미래를 실험하는 기능이므로 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)에 속하고, 그 초기 상태는 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태에서 가져오되 모의 실행 결과를 현재 상태처럼 반영하지 않도록 구분해야 할 것으로 보인다. [추정][^ref-416][^ref-782][^ref-784][^ref-783]\n\n#### 사람 확인과 LLM 판정자\n\n- Hariharan 외(NeurIPS 2025 워크숍)는 판정자 LLM 이 행동 순서를 비평하고 계획자 LLM 이 고치는 반복 검증으로 불필요한 행동·모순·빠진 단계를 찾아 재현율 최대 90%, 정밀도 100% 를 보고했다(저자 보고, 원문 미열람, TEACh 수동 주석 행동 조건). [사실][^ref-779]\n- 사람 확인이 잡는 오류와 그 한계는 새로 서술하지 않고 [q4-01 답](#q4-01)의 사람 승인의 한계 서술로 연결한다.[^ref-713][^ref-697]\n\n#### 로봇 관제 쪽 마지막 거절 (연계 대상)\n\n- VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25)은 로봇이 주문을 받기 전 형식 오류(VALIDATION_FAILURE), 쓸 수 없는 선택 필드(UNSUPPORTED_PARAMETER), 수행할 수 없는 동작(INVALID_ORDER_ACTION), 도달할 수 없는 노드(NO_ROUTE_TO_TARGET), 모르는 지도(UNKNOWN_MAP_ID), 범위 밖 시작 노드(START_NODE_OUT_OF_RANGE), 주문을 받지 않는 운용 모드(MOBILE_ROBOT_NOT_AVAILABLE)를 서로 다른 오류 유형으로 보고하고 주문을 내부 버퍼에 받지 않게 한다. 오류 수준은 UNSUPPORTED_PARAMETER 만 CRITICAL 이고 나머지는 WARNING 이다. [사실][^ref-031]\n- 주문 거절은 로봇 쪽 기능인 연계 대상이며, ROP 는 이 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는 것으로 본다. [추정][^ref-031]\n\n#### 방법별로 놓치는 오류 (이 위키의 종합)\n\n- 스키마 검증은 형식은 맞지만 값이 틀린 해석을, 제약 대조와 계획 검증은 온톨로지·명세 자체가 틀리거나 LLM 이 명세를 잘못 옮긴 경우를, 모의 실행은 모델 충실도 밖의 상황을, 사람 확인은 그럴듯한 계획에 대한 잘못된 신뢰를 놓칠 수 있어, 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다. '존재하는 다른 도크 번호'는 설명용 예시다. [추정][^ref-362][^ref-777][^ref-786][^ref-781][^ref-713]\n\n#### 설명용 시나리오\n\n다음은 설명을 위한 가상의 시나리오이다(설명용 가정 사례, 현장 수치 없음).\n\n**물류 흐름 단계:** 피킹\n\n**시나리오:** 피킹 구역 관리자의 운반 지시를 검증 방법별로 거르기\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 관리자가 채팅으로 '피킹 끝난 토트를 10시 전까지 2번 도크로'라고 지시한다. 스키마 검증은 기한 슬롯 누락 같은 형식 오류를 잡을 수 있어 보인다. [추정][^ref-773] |\n| 작업 대상 | 피킹이 끝난 토트(설명용 가정) |\n| 수행 자원 | 온톨로지 제약 대조는 토트를 운반할 수 없는 로봇 후보를 거를 수 있어 보인다. [추정][^ref-785] 배정 결과를 배치 전에 모의 실행이나 최적화 모델의 제약 검사로 확인하면 최근접 배정이 뒤이은 요청의 대기·충돌을 키우는지 드러낼 수 있어 보이나, 물류 플릿에서 잰 자료는 찾지 못했다. [추정][^ref-783][^ref-784][^ref-416] |\n| 제약 | 모의 실행은 도착 예정 시각의 도크 점유·경로 차단을 잡을 수 있어 보인다. [추정][^ref-416] |\n| 완료·인계 | 해당 없음 |\n| 예외·성과 | 관리자가 실제로 뜻한 도크가 3번이면 사람 확인이, 모르는 지도·도달 불가 노드는 로봇 관제 쪽 거절(연계 대상)이 잡을 수 있어 보인다. [추정][^ref-713][^ref-031] |\n\n한 지시에서도 오류 종류마다 잡는 방법이 달라, 확인 절차는 여러 검사를 겹쳐 두는 구성이 선택지로 보인다. [추정][^ref-773][^ref-785][^ref-416][^ref-713][^ref-031]\n\n#### 분류 원문 질문과의 연결\n\n> 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]\n\n배정 결과를 배치 전에 모의 실행이나 최적화 모델의 제약 검사로 확인하면 최근접 배정이 뒤이은 요청의 대기·충돌을 키우는지 실행 전에 드러낼 수 있어 보이나, 이를 물류 플릿에서 잰 자료는 찾지 못했다([열린 질문](../../open-questions.md) oq-052 와 같은 방향). [추정][^ref-783][^ref-784][^ref-416]\n\n#### 근거 공백\n\n이번에 확인한 실행 전 검증 근거의 평가 환경은 가정·주방 시뮬레이터, 도구 호출 JSON 스키마, 건설 현장, 다품종 소량 생산 셀, 가상 분류 라인이었고, 물류 창고 로봇에 채팅으로 준 지시의 검증 방법을 비교한 연구와 국내 연구·사례는 한국어 검색 2회를 포함한 검색 범위에서 찾지 못했다(부재의 확인은 아님). [추정][^ref-778][^ref-781][^ref-782][^ref-783][^ref-784]"
+          },
+          {
+            "section": "4. 결론과 남은 불확실성",
+            "action": "replace",
+            "content": "**결론**\n- 에이전트 설계 지침과 도구 규격(OWASP 과도한 에이전시 항목, MCP 도구 명세, LangChain 사람 참여 미들웨어)은 영향이 큰 행동 전 사람 승인·호출 전 입력 표시·승인·수정·거부 결정을 요구하거나 제공한다. [사실][^ref-695][^ref-696][^ref-697]\n- LLM 로봇 계획·배정 출력을 형식 논리·결정적 판정으로 거르는 가드레일 연구(Safety Chip, RoboGuard, SafePlan, SafeGate)가 있으며, 그중 SafePlan 은 배정 결과까지 검사한다. [사실][^ref-698][^ref-700][^ref-702][^ref-417]\n- 확인 절차는 다섯 겹(해석 게이트, 제약 게이트, 사람 확인, 검증 뒤 반영, 마지막 거절)으로 두고, 확인은 배치(베이스 해제) 전에 끝내며, 사람 확인은 영향이 크거나 불확실한 작업에 한정하는 구성이 선택지로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-356][^ref-695][^ref-711][^ref-031][^ref-656]\n- JSON Schema 검증 어휘는 자료형·허용 값·수치 범위·필수 속성 같은 구조를 검사하고 [사실][^ref-773] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다. [사실][^ref-031]\n- 실행 전 검증 방법(스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인)은 서로 다른 오류를 잡고 각각 놓치는 오류가 있어 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다(이 위키의 종합, 신뢰도 low). [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-713][^ref-031]\n- 개별 지시의 모의 실행은 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 가져오는 구분이 분류 원문 7장과 맞는 것으로 보인다. [추정][^ref-416][^ref-782]\n\n**남은 불확실성**\n- 다섯 겹 확인 절차와 방법별 포착·놓침 분담을 한 번에 제시한 단일 출처가 없고, 근거가 물류 플릿 조건이 아니다.\n- RoboGuard 수치(92% → 2.5% 미만)와 SafePlan 수치(90.5%, 621개)는 원문 미열람 저자 보고값이며 SafePlan 저자는 미확인이다.\n- q4-02 근거 수치(SELP, CAPE, Guan 외, Hariharan 외, SIMMER, Ko·Lin, Deng 외)는 모두 원문 미열람 저자 보고값이다. SIMMER 는 동료심사 전 프리프린트이며 평가한 모델 수는 미확인이고, Ko·Lin 의 거부·성공 수치는 검증에서 다시 확인하지 못했다.\n- JSONSchemaBench 의 여섯 프레임워크 목록은 원문 미열람 논문 요약 기준이고, README 와 논문은 같은 저자 그룹이라 독립 교차 확인이 아니다.\n- JSON Schema 는 main 브랜치 차기판 초안 기준이며 게시된 2020-12 판과의 문구 차이는 미확인이다. VAL 의 검증 실패 보고 형식도 미확인이다. VerifyLLM·SELP 의 저자 목록은 미확인이다.\n- OWASP 문서의 발행일(2024-11)은 문서 안에서 확인하지 못했다.\n- 감독 전략 비교 연구의 내용과 조건별 수치, Sagawa 외 비교의 우열은 미확인이다.\n- EU AI Act 제14조는 공식 관보 원문을 확인하지 못했고, 인공지능기본법 제34조의 시행령 세부와 물류 배정 AI 의 고영향 해당 여부(oq-105)는 미확인이다.\n- 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다.\n- [업무 분해·배정 설계 초안](task-model-draft.md)은 v0.8 그대로다. 제안된 개념 '사용자 확인'(실행 2026-09-25-79)과 결정적 검사만 담도록 경계를 좁혀 다시 제안된 개념 '검증 기록'(실행 2026-09-25-81)은 서로의 경계와 배정 속성 '확인 여부'와의 경계가 정해지지 않았고 근거에 추정·원문 미열람이 섞여 초안 6절의 질문으로 두었다."
+          },
+          {
+            "section": "5. 이 단계가 낳은 후속 질문",
+            "action": "replace",
+            "content": "| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |\n|---|---|---|---|---|\n| q4-13 | 물류 지시에서 사람의 명시적 확인이 필요한 영향이 큰 작업(위험 구역 진입, 적재 화물 취소·되돌림, 일괄 정지, 다른 사람의 진행 작업 우선순위 변경 등)과 암시적 확인으로 충분한 일상 작업을 어떤 기준으로 가르고, 그 기준 목록은 누가 정하고 갱신하는가? (관련: q4-04) | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-79) | 열림 |\n| q4-14 | 현장 안전·권한 규칙(금지 구역, 시간대 제한, 적재 제한)을 Safety Chip·RoboGuard 처럼 시간 논리 제약으로 옮겨 작업·배정 수준에서 대조하려면, 규칙을 공간 그래프·로봇 기능 온톨로지의 어떤 개념으로 표현해야 하는가? | 단계 4. 오해석 방지와 확인 절차 | f5(실행 2026-09-25-79) | 열림 |\n| q5-10 | 물류 지시 시나리오에서 관제 요원의 승인 지연 시간·거부율·수정률을 재어 승인 피로와 자동화 편향이 나타나는지, 확인 요약에 결정적 검사 결과를 함께 보이면 잘못된 지시를 멈추는 비율이 달라지는지를 어떤 실험으로 측정하는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-79) | 열림 |\n| q4-15 | 해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? | 단계 4. 오해석 방지와 확인 절차 | f22(실행 2026-09-25-81) | 열림 |\n| q4-16 | 배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (관련: oq-104) | 단계 4. 오해석 방지와 확인 절차 | f23(실행 2026-09-25-81) | 열림 |\n| q5-16 | 물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? | 단계 5. 검증 방법과 가설 판정 | f21(실행 2026-09-25-81) | 열림 |"
+          },
+          {
+            "section": "6. 완료 조건 충족 현황",
+            "action": "replace",
+            "content": "충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.\n\n| 완료 조건 | 충족 여부 | 근거 | 검증 판정 |\n|---|---|---|---|\n| 실행 전 검증 단계를 담은 확인 절차 초안이 [업무 분해·배정 설계 초안](task-model-draft.md)의 미해결 모델링 질문과 [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md)의 \"5. 구현 가설\" 절에 반영됨 | 미충족 | [q4-01 답](#q4-01)의 다섯 겹 확인 절차와 [q4-02 답](#q4-02)의 검증 방법별 포착 오류를 초안 6절 질문과 아이디어 5절 소절로 반영했으나 2차 검증 전이고 근거가 추정(신뢰도 low)이다 | 미충족 · 미승인 |\n| 명령 권한을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | q4-03 미조사 | 미충족 · 미승인 |\n| 제한 운영 기준을 담은 확인 절차 초안이 같은 두 곳에 반영됨 | 미충족 | q4-04 미조사 | 미충족 · 미승인 |\n\n다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)"
+          },
+          {
+            "section": "7. 관련 세부영역",
+            "action": "replace",
+            "content": "이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 \"세부영역 반영 제안\"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 교차 규칙에 따라 LLM 가드레일·확인 절차와 LLM 출력 검증은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스 양쪽에 연결한다. 프런트매터 `related_areas`는 아래 목록과 같다.\n\n- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — LLM 로봇 계획의 형식 논리 가드레일과 사람의 관리·감독 규정(실행 2026-09-25-79), 구조화 출력·제약 디코딩의 범위와 한계·LTL 제약 디코딩·판정자 LLM 과 방법별로 놓치는 오류(실행 2026-09-25-81)를 6. 대표 접근법과 기술에 반영 제안\n- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 배정 출력의 실행 전 검사와 디스패처·로봇 쪽 마지막 거절, 실행 가능성 판정·불변 조건 추론·정수계획 배정과 배치 전 모의 실행으로 최근접 배정의 영향을 드러내는 가능성을 6. 대표 접근법과 기술에 반영 제안\n- [18. 사람–로봇 협업·운영 인터페이스](../../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) — 승인·수정·거부 확인 인터페이스와 사람 승인의 한계, 명시적·암시적 확인을 6. 대표 접근법과 기술에 반영 제안\n- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — LLM 계획의 실행 전 검증 방법(PDDL 계획 검증기, LTL 기반 검증, 제약 디코딩 벤치마크, 잠재 실패 벤치마크, LLM 판정자)을 6. 대표 접근법과 기술에 반영 제안\n- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 개별 지시·계획의 실행 전 모의 실행(장면 그래프 시뮬레이터, 디지털 트윈 검증)을 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 받는다는 구분과 함께 6. 대표 접근법과 기술에 반영 제안\n- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — 모의 실행의 초기 상태가 되는 현재 상태를 표현한다(이번 실행 반영 제안 없음, 22. 시뮬레이션·예측용 디지털 트윈 제안에 구분을 함께 적음)\n- [26. 사이버보안·접근권한·개인정보](../../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) — 과도한 에이전시의 원인과 최소 권한·완전한 중재, 도구 명세의 접근 통제·감사 기록을 6. 대표 접근법과 기술에 반영 제안(실행 2026-09-25-79)\n- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 오해석이 위험한 동작으로 이어지지 않게 안전 조건을 확인 절차에 넣는다(이번 실행 반영 제안 없음)\n- [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 베이스 해제 뒤 변경 불가·취소 불신이 확인 시점을 정한다(이번 실행 반영 제안 없음)"
+          },
+          {
+            "section": "8. 출처",
+            "action": "append",
+            "content": "[^ref-236]: Electronics(MDPI) 게재 논문(저자 미확인), Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation, 2026-08-11, https://doi.org/10.3390/electronics15163562, 접근일 2026-09-25 (원문 미열람)\n[^ref-362]: OpenAI, Introducing Structured Outputs in the API, 2024-08, https://openai.com/index/introducing-structured-outputs-in-the-api/, 접근일 2026-09-25 (원문 미열람)\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\n[^ref-774]: guidance-ai (JSONSchemaBench GitHub), jsonschemabench — README (JSONSchemaBench), 미확인, https://github.com/guidance-ai/jsonschemabench, 접근일 2026-09-25\n[^ref-775]: Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868), JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models, 2025-01, https://arxiv.org/abs/2501.10868, 접근일 2026-09-25 (원문 미열람)\n[^ref-776]: KCL-Planning (VAL GitHub), VAL — The plan validation system (README), 미확인, https://github.com/KCL-Planning/VAL, 접근일 2026-09-25\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\n[^ref-778]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\n[^ref-779]: Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G., Plan Verification for LLM-Based Embodied Task Completion Agents, 2025-09, https://arxiv.org/abs/2509.02761, 접근일 2026-09-25 (원문 미열람)\n[^ref-780]: Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D., CAPE: Corrective Actions from Precondition Errors using Large Language Models, 2022-11, https://arxiv.org/abs/2211.09935, 접근일 2026-09-25 (원문 미열람)\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\n[^ref-782]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\n[^ref-783]: Deng, M., Fu, B., Li, L., & Wang, X., Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction, 2025-06, https://arxiv.org/abs/2506.18178, 접근일 2026-09-25 (원문 미열람)\n[^ref-784]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\n[^ref-786]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)"
+          },
+          {
+            "section": "9. 이력",
+            "action": "replace",
+            "content": "실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.\n\n| 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |\n|---|---|---|---|---|---|\n| 2026-09-25 | 2026-09-25-81 | q4-02 | q4-15, q4-16, q5-16 | 없음(v0.8 유지, 개념 '검증 기록' 재제안은 초안 6절 질문) | 3 |\n| 2026-09-25 | 2026-09-25-79 | q4-01 | q4-13, q4-14, q5-10 | 없음(v0.8 유지, 개념 '사용자 확인' 제안은 초안 6절 질문) | 2 |\n| 2026-09-25 | build-2026-09-25(트랙 시드, 파이프라인 실행 아님) | 없음 | 시드 q4-01~q4-04(4건, [질문 백로그](question-backlog.md)에 등록) | 없음(v0 시드는 [업무 분해·배정 설계 초안](task-model-draft.md)에서 생성) | 1 |"
+          }
+        ]
+      },
+      {
+        "path": "docs/ideas/nl-task-chatbot.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16",
+        "patches": [
+          {
+            "section": "5. 구현 가설",
+            "action": "append",
+            "frontmatter": {
+              "version": 16,
+              "sources": [
+                "ref-054",
+                "ref-055",
+                "ref-057",
+                "ref-058",
+                "ref-059",
+                "ref-061",
+                "ref-089",
+                "ref-090",
+                "ref-091",
+                "ref-093",
+                "ref-094",
+                "ref-095",
+                "ref-087",
+                "ref-164",
+                "ref-166",
+                "ref-167",
+                "ref-168",
+                "ref-169",
+                "ref-170",
+                "ref-171",
+                "ref-172",
+                "ref-174",
+                "ref-175",
+                "ref-176",
+                "ref-177",
+                "ref-178",
+                "ref-179",
+                "ref-180",
+                "ref-181",
+                "ref-242",
+                "ref-272",
+                "ref-275",
+                "ref-276",
+                "ref-277",
+                "ref-278",
+                "ref-279",
+                "ref-280",
+                "ref-350",
+                "ref-351",
+                "ref-352",
+                "ref-353",
+                "ref-354",
+                "ref-355",
+                "ref-356",
+                "ref-357",
+                "ref-358",
+                "ref-359",
+                "ref-360",
+                "ref-362",
+                "ref-015",
+                "ref-031",
+                "ref-125",
+                "ref-130",
+                "ref-228",
+                "ref-411",
+                "ref-413",
+                "ref-418",
+                "ref-111",
+                "ref-495",
+                "ref-230",
+                "ref-496",
+                "ref-500",
+                "ref-501",
+                "ref-502",
+                "ref-116",
+                "ref-504",
+                "ref-539",
+                "ref-540",
+                "ref-541",
+                "ref-542",
+                "ref-543",
+                "ref-544",
+                "ref-545",
+                "ref-546",
+                "ref-547",
+                "ref-548",
+                "ref-056",
+                "ref-404",
+                "ref-377",
+                "ref-592",
+                "ref-593",
+                "ref-594",
+                "ref-595",
+                "ref-596",
+                "ref-598",
+                "ref-611",
+                "ref-612",
+                "ref-615",
+                "ref-616",
+                "ref-376",
+                "ref-236",
+                "ref-417",
+                "ref-586",
+                "ref-674",
+                "ref-675",
+                "ref-676",
+                "ref-711",
+                "ref-677",
+                "ref-712",
+                "ref-678",
+                "ref-656",
+                "ref-657",
+                "ref-039",
+                "ref-658",
+                "ref-659",
+                "ref-660",
+                "ref-661",
+                "ref-662",
+                "ref-663",
+                "ref-664",
+                "ref-041",
+                "ref-126",
+                "ref-127",
+                "ref-680",
+                "ref-537",
+                "ref-681",
+                "ref-682",
+                "ref-683",
+                "ref-684",
+                "ref-373",
+                "ref-685",
+                "ref-695",
+                "ref-696",
+                "ref-697",
+                "ref-698",
+                "ref-699",
+                "ref-700",
+                "ref-701",
+                "ref-702",
+                "ref-703",
+                "ref-713",
+                "ref-714",
+                "ref-715",
+                "ref-716",
+                "ref-717",
+                "ref-730",
+                "ref-731",
+                "ref-732",
+                "ref-733",
+                "ref-734",
+                "ref-623",
+                "ref-735",
+                "ref-736",
+                "ref-737",
+                "ref-406",
+                "ref-528",
+                "ref-738",
+                "ref-739",
+                "ref-740",
+                "ref-741",
+                "ref-407",
+                "ref-743",
+                "ref-744",
+                "ref-745",
+                "ref-746",
+                "ref-416",
+                "ref-459",
+                "ref-773",
+                "ref-777",
+                "ref-778",
+                "ref-781",
+                "ref-782",
+                "ref-784",
+                "ref-785",
+                "ref-786"
+              ]
+            },
+            "content": "### 검증 방법별로 잡는 오류\n\n실행 2026-09-25-81 에서 [단계 4. 오해석 방지와 확인 절차](../tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02)의 q4-02 에 답했다. 확인한 자료를 이 위키가 묶으면 실행 전 검증 방법은 서로 다른 오류를 잡고 각각 놓치는 오류도 있어, 위 다섯 겹 확인 절차에서 한 방법만으로는 해석 오류를 걸러내기 어려운 것으로 보인다. [추정][^ref-773][^ref-362][^ref-785][^ref-777][^ref-786][^ref-416][^ref-781][^ref-713][^ref-031] 다섯 방법을 같은 조건에서 비교한 출처는 찾지 못했고 근거가 물류 플릿 조건이 아니어서 신뢰도가 낮다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다.\n\n| 방법 | 주로 잡는 오류 | 놓칠 수 있는 오류 |\n|---|---|---|\n| 스키마 검증 | 형식, 필수 항목 누락, 허용 값 밖 | 형식은 맞지만 값이 틀린 해석 |\n| 온톨로지·제약 대조 | 능력 불일치, 필수 정보 누락, 안전 불변 조건 위반 | 온톨로지·명세 자체의 오류 |\n| 계획 검증기·형식 논리 검증 | 전제 조건 위반, 순서 오류, 빠진 단계, 중복 행동 | 명세 오류, LLM 의 명세 번역 오류 |\n| 모의 실행 | 실행 불가 동작, 잠재 실패, 물리적 불가능 | 모델 충실도 밖의 상황 |\n| 사람 확인 | 사용자 의도와 다른 해석 | 그럴듯한 계획에 대한 잘못된 신뢰 |\n| 로봇 관제 쪽 거절 — 연계 대상(로봇 쪽 기능) | 형식, 수행 불가 동작, 도달 불가 노드, 모르는 지도, 운용 모드 | 미확인 |\n\n위 표는 출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다.\n\n- **근거 사례**: JSON Schema 검증 어휘(main 브랜치 차기판 초안, 확인일 2026-09-25 기준)는 자료형·허용 값·수치 범위·필수 속성 등을 검사한다. [사실][^ref-773] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고하며, 이 거절은 로봇 쪽 기능인 연계 대상이다. [사실][^ref-031] SHACL 검증 보고는 결과마다 초점 노드·속성 경로·메시지·심각도를 담을 수 있다. [사실][^ref-459] 계획 검증은 PDDL 검증기와 사람의 교정 피드백(Guan 외, 저자 보고, 원문 미열람) [사실][^ref-777]과 LTL 기반 실행 전 검증(VerifyLLM, 원문 미열람) [사실][^ref-778]으로, 모의 실행은 장면 그래프 시뮬레이터 피드백(SayPlan, 원문 미열람) [사실][^ref-416]으로 확인된다. 잠재 실패를 포함한 계획이 29~56% 였다는 SIMMER 의 보고는 동료심사 전 프리프린트의 원문 미열람 저자 보고다. [추정][^ref-781]\n- **8·22 구분**: 개별 지시의 모의 실행은 가정한 미래를 실험하는 [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 기능이고, 초기 상태는 [8. 실시간 세계 상태·데이터 일관성](../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)의 현재 상태에서 가져오되 결과를 현재 상태처럼 반영하지 않도록 구분해야 할 것으로 보인다. [추정][^ref-416][^ref-782][^ref-784]\n- **사람 확인**: 사람 확인의 한계는 위 '오해석 방지 확인 절차' 소절의 서술과 같다.[^ref-713][^ref-697]\n\n이번 실행에서 다시 제안된 개념 '검증 기록'은 검증이 반영하지 않아 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md) 6절의 질문으로 남았다(초안 v0.8 유지).\n\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\n[^ref-778]: VerifyLLM 저자(arXiv 2507.05118), VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots, 2025-07, https://arxiv.org/abs/2507.05118, 접근일 2026-09-25 (원문 미열람)\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\n[^ref-782]: Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T., LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems, 2026-04, https://doi.org/10.3390/app16083883, 접근일 2026-09-25 (원문 미열람)\n[^ref-784]: Ko, T.-H., & Lin, C.-T.(National Central University), Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin, 2026-09, https://arxiv.org/abs/2609.29061, 접근일 2026-09-25 (원문 미열람)\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)\n[^ref-786]: SELP 저자(arXiv 2409.19471), SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models, 2024-09, https://arxiv.org/abs/2409.19471, 접근일 2026-09-25 (원문 미열람)"
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/task-model-draft.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가",
+        "patches": [
+          {
+            "section": "6. 미해결 모델링 질문",
+            "action": "append",
+            "frontmatter": {
+              "version": 12,
+              "sources": [
+                "ref-031",
+                "ref-054",
+                "ref-055",
+                "ref-059",
+                "ref-089",
+                "ref-090",
+                "ref-091",
+                "ref-093",
+                "ref-125",
+                "ref-130",
+                "ref-166",
+                "ref-167",
+                "ref-169",
+                "ref-181",
+                "ref-242",
+                "ref-350",
+                "ref-352",
+                "ref-356",
+                "ref-357",
+                "ref-358",
+                "ref-359",
+                "ref-361",
+                "ref-411",
+                "ref-412",
+                "ref-413",
+                "ref-414",
+                "ref-111",
+                "ref-495",
+                "ref-230",
+                "ref-496",
+                "ref-501",
+                "ref-502",
+                "ref-504",
+                "ref-404",
+                "ref-377",
+                "ref-596",
+                "ref-597",
+                "ref-611",
+                "ref-612",
+                "ref-592",
+                "ref-594",
+                "ref-595",
+                "ref-598",
+                "ref-615",
+                "ref-616",
+                "ref-376",
+                "ref-236",
+                "ref-674",
+                "ref-711",
+                "ref-656",
+                "ref-039",
+                "ref-126",
+                "ref-681",
+                "ref-683",
+                "ref-684",
+                "ref-373",
+                "ref-685",
+                "ref-677",
+                "ref-696",
+                "ref-697",
+                "ref-717",
+                "ref-773",
+                "ref-785",
+                "ref-777",
+                "ref-416",
+                "ref-781",
+                "ref-713",
+                "ref-459"
+              ]
+            },
+            "content": "- 위 '검증 기록(Verification Record)을 개념으로 둘 것인가' 항목에 대해 실행 2026-09-25-81 에서 [q4-02 답](stage-4-misinterpretation-safeguards.md#q4-02)이 나왔다. 확인한 자료를 이 위키가 묶으면 실행 전 검증 방법은 스키마 검증, 온톨로지·제약 대조, 계획 검증기·형식 논리 검증, 모의 실행, 사람 확인으로 나뉘어 서로 다른 오류를 잡고 각각 놓치는 오류도 있는 것으로 보인다. [추정][^ref-773][^ref-785][^ref-777][^ref-416][^ref-781][^ref-713] W3C SHACL 검증 보고는 결과마다 초점 노드·속성 경로·문제 값·메시지·심각도를 담을 수 있고(원문 미열람) [사실][^ref-459] VDA 5050 3.0.0 은 로봇의 주문 거절 사유를 서로 다른 오류 유형으로 보고한다(확인일 2026-09-25). [사실][^ref-031] 이를 근거로 개념 '검증 기록'을 결정적 검사만 담도록 경계를 좁혀(속성 후보: 검증 방법, 결과(적합 / 위반), 위반 위치·사유, 검사 시각) 다시 제안했으나(근거 f4·f5·f17·f21, 실행 2026-09-25-81) 검증이 반영하지 않았다. 방법별 분담은 이 위키의 종합([추정])이고 SHACL·제안–검증–결정 흐름 근거는 원문 미열람이며, 사람 확인을 위 '사용자 확인' 질문처럼 따로 둘지 정해지지 않았는데 이 제안이 그 경계를 먼저 정하게 되고, 로봇 관제 쪽 거절을 ROP 의 검증 방법 값으로 두는 것은 연계 대상 경계와 맞지 않기 때문이다. 초안은 v0.8 을 유지하고 이 항목을 미해결 모델링 질문으로 둔다. — 관련: q4-02, q4-01, q4-13, q4-15\n\n[^ref-416]: Rana, K. 외, SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning, 2023-07, https://arxiv.org/abs/2307.06135, 접근일 2026-09-25 (원문 미열람)\n[^ref-459]: W3C RDF Data Shapes Working Group, Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음), 2017, https://www.w3.org/TR/shacl/, 접근일 2026-09-25 (원문 미열람)\n[^ref-713]: He, G., Demartini, G., & Gadiraju, U., Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant, 2025-04, https://dl.acm.org/doi/10.1145/3706598.3713218, 접근일 2026-09-25 (원문 미열람)\n[^ref-773]: JSON Schema (json-schema-org/json-schema-spec GitHub), json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON), 미확인, https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md, 접근일 2026-09-25\n[^ref-777]: Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S., Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning, 2023-05, https://arxiv.org/abs/2305.14909, 접근일 2026-09-25 (원문 미열람)\n[^ref-781]: Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University), SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model, 2026-06, https://arxiv.org/abs/2606.14574, 접근일 2026-09-25 (원문 미열람)\n[^ref-785]: Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University), Constraint Checking of Skills using SHACL, 2021-07, https://ieeexplore.ieee.org/abstract/document/9557549/, 접근일 2026-09-25 (원문 미열람)"
+          }
+        ]
+      },
+      {
+        "path": "docs/tracks/nl-task-chatbot/index.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "게시본(v14) 6절을 유지한 채 실행 2026-09-25-81(q4-02 답, 초안 변경 없음)만 덧붙임, version 15",
+        "patches": [
+          {
+            "section": "6. 살아있는 산출물 링크",
+            "action": "replace",
+            "frontmatter": {
+              "version": 15
+            },
+            "content": "- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-81, 2026-09-25-98, 2026-09-25-99 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인', 2026-09-25-81 에서 다시 제안된 개념 '검증 기록'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표는 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했고, 실행 2026-09-25-81 에서는 q4-02 에 답해 '검증 방법별로 잡는 오류' 소절(신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 실행 2026-09-25-99 에서 CLI 로 지정된 질문으로 q5-02 에 답해 6절에 검증 절차 소절(지시·실행·교란·반복 네 층 가상 시험 구성, 신뢰도 low)을 더했다. 가설 판정(q5-03)은 아직 조사하지 않았다. 실행 2026-09-25-79, 2026-09-25-81, 2026-09-25-98, 2026-09-25-99 는 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+          }
+        ]
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 4 | q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 | run 2026-09-25-81",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 4: q4-02 답함, 실행 전 검증 방법별로 잡는 오류와 놓치는 오류 정리(신뢰도 low)",
+      "category_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 자연어 업무 지시 챗봇 트랙 단계 4 에서 배정 결과의 실행 전 검증(제약 대조·모의 실행) 근거 정리, 세부영역 반영 제안",
+      "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 q4-02 답(배정 결과의 실행 전 검증 방법), 6. 대표 접근법과 기술 반영 제안"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "constrained-decoding",
+        "term_ko": "제약 디코딩",
+        "term_en": "Constrained Decoding",
+        "definition": "언어 모델이 토큰을 생성할 때 스키마·문법·오토마톤에 맞지 않는 토큰을 가려, 출력이 정해진 형식이나 명세를 벗어나지 않게 하는 생성 방식이다.",
+        "related_areas": [
+          27,
+          23
+        ],
+        "sources": [
+          "ref-774",
+          "ref-786"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "json-schema",
+        "term_ko": "JSON 스키마",
+        "term_en": "JSON Schema",
+        "definition": "JSON 데이터의 자료형·허용 값·필수 속성·수치 범위 같은 구조 제약을 기술하고 인스턴스가 이를 따르는지 검증하는 명세다.",
+        "related_areas": [
+          27,
+          12
+        ],
+        "sources": [
+          "ref-773"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "latent-failure",
+        "term_ko": "잠재 실패",
+        "term_en": "Latent Failure",
+        "definition": "계획 실행을 즉시 멈추지는 않지만 목표 달성을 조용히 해치고 때로 되돌릴 수 없는 결과로 이어지는 계획 오류다.",
+        "related_areas": [
+          23,
+          22,
+          27
+        ],
+        "sources": [
+          "ref-781"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-773",
+        "org": "JSON Schema (json-schema-org/json-schema-spec GitHub)",
+        "title": "json-schema-spec — specs/jsonschema-validation.md (JSON Schema Validation: A Vocabulary for Structural Validation of JSON)",
+        "published": null,
+        "url": "https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "JSON Schema 검증 어휘의 원본(main 브랜치, 차기판 초안). type·enum·const·수치 범위·pattern·required·dependentRequired 등 구조 검증 키워드를 정의한다. 게시된 2020-12 판과 문구가 다를 수 있다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-774",
+        "org": "guidance-ai (JSONSchemaBench GitHub)",
+        "title": "jsonschemabench — README (JSONSchemaBench)",
+        "published": null,
+        "url": "https://github.com/guidance-ai/jsonschemabench",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "실제 JSON 스키마 약 1만 개로 구조화 출력 엔진의 효율·범위·품질을 재는 벤치마크의 공식 README.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-775",
+        "org": "Geng, S. 외(JSONSchemaBench 저자, arXiv 2501.10868)",
+        "title": "JSONSchemaBench: A Rigorous Benchmark of Structured Outputs for Language Models",
+        "published": "2025-01",
+        "url": "https://arxiv.org/abs/2501.10868",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제약 디코딩 프레임워크 여섯 개(Guidance, Outlines, Llamacpp, XGrammar, OpenAI, Gemini)를 1만 개 스키마로 효율·범위·품질 측면에서 평가한 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-776",
+        "org": "KCL-Planning (VAL GitHub)",
+        "title": "VAL — The plan validation system (README)",
+        "published": null,
+        "url": "https://github.com/KCL-Planning/VAL",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "PDDL 계획과 계획 모델을 검증하는 도구 모음의 공식 저장소 README. 연속 효과·파생 술어 등 지원 기능을 언급하며 실패 보고 형식은 README 에 없다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-777",
+        "org": "Guan, L., Valmeekam, K., Sreedharan, S., & Kambhampati, S.",
+        "title": "Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning",
+        "published": "2023-05",
+        "url": "https://arxiv.org/abs/2305.14909",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LLM 이 PDDL 도메인 모델을 만들고 PDDL 검증기·사람의 교정 피드백으로 고친 뒤 도메인 독립 계획기로 계획하는 방법(NeurIPS 2023).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-778",
+        "org": "VerifyLLM 저자(arXiv 2507.05118)",
+        "title": "VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots",
+        "published": "2025-07",
+        "url": "https://arxiv.org/abs/2507.05118",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 과제 기술을 LTL 로 옮기고 LLM 이 행동 순서를 분석해 위치 오류·빠진 전제 행동·중복 행동을 실행 전에 찾아 고치는 틀.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-779",
+        "org": "Hariharan, A., Dongre, V., Hakkani-Tür, D., & Tur, G.",
+        "title": "Plan Verification for LLM-Based Embodied Task Completion Agents",
+        "published": "2025-09",
+        "url": "https://arxiv.org/abs/2509.02761",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 판정자 LLM 과 계획자 LLM 의 반복 검증으로 불필요한 행동·모순·빠진 단계를 고치는 틀, TEACh 에서 평가(NeurIPS 2025 워크숍).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-780",
+        "org": "Raman, S. S., Cohen, V., Idrees, I., Rosen, E., Mooney, R., Tellex, S., & Paulius, D.",
+        "title": "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
+        "published": "2022-11",
+        "url": "https://arxiv.org/abs/2211.09935",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 전제 조건 오류 정보를 LLM 에 재프롬프트해 교정 동작을 얻는 방법, VirtualHome 과 Spot 로봇에서 평가(ICRA 2024).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-781",
+        "org": "Lu, X., Zhang, R. H., & Zhang, R.(Pennsylvania State University)",
+        "title": "SIMMER: Benchmarking Latent Failures in LLM Executable Planning with a World Model",
+        "published": "2026-06",
+        "url": "https://arxiv.org/abs/2606.14574",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 주방 기호 세계 모델로 LLM 계획의 잠재 실패를 평가하는 벤치마크와 반사실적 예견 시뮬레이션의 효과(동료심사 전 프리프린트).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-782",
+        "org": "Lee, Y.-H., Nam, T., Cho, D.-S., & Kim, W.-T.",
+        "title": "LLM-Based Adaptive Control Code Generation Framework with Digital Twin-Integrated Verification for Heterogeneous Robot Systems",
+        "published": "2026-04",
+        "url": "https://doi.org/10.3390/app16083883",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이종 로봇 제어 코드 생성에서 물리적 환각을 막으려 중간 작업 표현·로봇 선택·실행 전 동역학 검증을 디지털 트윈으로 수행하는 틀(Applied Sciences 16(8), 3883).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-783",
+        "org": "Deng, M., Fu, B., Li, L., & Wang, X.",
+        "title": "Integrating LLMs and Digital Twins for Adaptive Multi-Robot Task Allocation in Construction",
+        "published": "2025-06",
+        "url": "https://arxiv.org/abs/2506.18178",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 정수계획 배정, LLM 의 자연어 기반 제약 갱신, 디지털 트윈 동기화를 결합한 건설 다중 로봇 배정 틀.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-784",
+        "org": "Ko, T.-H., & Lin, C.-T.(National Central University)",
+        "title": "Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin",
+        "published": "2026-09",
+        "url": "https://arxiv.org/abs/2609.29061",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로컬 LLM·디지털 트윈·사람 결정을 잇는 제안–검증–결정 흐름으로 의미·시뮬레이션 실행·운영 제약을 검사하고 추적 기록을 남기는 다중 라인 작업 조정 시스템.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-785",
+        "org": "Köcher, A., da Silva, L. M. V., & Fay, A.(Helmut Schmidt University)",
+        "title": "Constraint Checking of Skills using SHACL",
+        "published": "2021-07",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9557549/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 온톨로지로 기술한 기계 스킬에 SHACL 제약을 걸어 실행에 필요한 필수 정보 누락을 검사하는 방법(IEEE INDIN 2021).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-786",
+        "org": "SELP 저자(arXiv 2409.19471)",
+        "title": "SELP: Generating Safe and Efficient Task Plans for Robot Agents with Large Language Models",
+        "published": "2024-09",
+        "url": "https://arxiv.org/abs/2409.19471",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LTL 동치 투표, 뷔히 오토마톤 기반 제약 디코딩, 도메인 미세 조정으로 안전한 로봇 계획을 생성하는 방법.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 3.0.0 명세 원문(공식 저장소 main 브랜치, 입력 원문 텍스트로 열람). 주문 거절 사유와 오류 유형 표를 정의한다.",
+        "source_unopened": false,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-362",
+        "org": "OpenAI",
+        "title": "Introducing Structured Outputs in the API",
+        "published": "2024-08",
+        "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 모델 출력을 JSON 스키마에 맞추는 구조화 출력 기능 발표. 값 안의 실수는 막지 못한다고 언급.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-416",
+        "org": "Rana, K. 외",
+        "title": "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning",
+        "published": "2023-07",
+        "url": "https://arxiv.org/abs/2307.06135",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 3D 장면 그래프 기반 LLM 계획과 장면 그래프 시뮬레이터 피드백을 이용한 반복 재계획.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-459",
+        "org": "W3C RDF Data Shapes Working Group",
+        "title": "Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자 초안으로 확인, 권고안(2017) 본문과 문구가 다를 수 있음)",
+        "published": "2017",
+        "url": "https://www.w3.org/TR/shacl/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. RDF 그래프를 형상 제약으로 검증하고 검증 보고를 내는 W3C 표준(이번 실행에서는 다시 열지 않음).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      },
+      {
+        "id": "ref-236",
+        "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+        "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+        "published": "2026-08-11",
+        "url": "https://doi.org/10.3390/electronics15163562",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 온톨로지 기반 실행 가능성 판정 결과를 배정기 독립 출력(ReasonerOutput)으로 정형화한 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-702",
+        "org": "SafePlan 저자(arXiv 2503.06892, 저자 미확인)",
+        "title": "SafePlan: Leveraging Formal Logic and Chain-of-Thought Reasoning for Enhanced Safety in LLM-based Robotic Task Planning",
+        "published": "2025-03",
+        "url": "https://arxiv.org/abs/2503.06892",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 지시·계획·배정 결과를 건전성·불변·전제·사후 조건 추론기로 검사하는 LLM 로봇 계획 안전 틀.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md"
+        ]
+      },
+      {
+        "id": "ref-697",
+        "org": "LangChain (langchain-ai/docs GitHub)",
+        "title": "Human-in-the-loop — LangChain docs (src/oss/langchain/human-in-the-loop.mdx)",
+        "published": null,
+        "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 도구 호출 전 에이전트를 멈추고 사람이 승인·수정·거부·직접 응답을 고르게 하는 미들웨어(이번 실행에서는 다시 열지 않음).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md"
+        ]
+      },
+      {
+        "id": "ref-713",
+        "org": "He, G., Demartini, G., & Gadiraju, U.",
+        "title": "Plan-Then-Execute: An Empirical Study of User Trust and Team Performance When Using LLM Agents As A Daily Assistant",
+        "published": "2025-04",
+        "url": "https://dl.acm.org/doi/10.1145/3706598.3713218",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 계획 후 실행 LLM 에이전트에서 사용자 신뢰와 팀 성과를 조사한 CHI 2025 사용자 연구.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+          "docs/ideas/nl-task-chatbot.md",
+          "docs/tracks/nl-task-chatbot/task-model-draft.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "국내 물류센터 로봇 관제에서 작업 지시나 배정 결과를 배치 전에 시뮬레이션(디지털 트윈)으로 모의 실행해 확인하는 운영 사례나 연구가 있는가?",
+        "areas": [
+          22,
+          13
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [
+      {
+        "step": "피킹",
+        "item": "시작 조건",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "작업 대상",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "수행 자원",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "제약",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      },
+      {
+        "step": "피킹",
+        "item": "예외·성과",
+        "link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02",
+        "title": "단계 4. 오해석 방지와 확인 절차"
+      }
+    ],
+    "additional_research_requests": [
+      "단계 4 페이지 H1 아래 상태 줄('열린 질문: 13건 · 답한 질문: 1건')은 H2 절 밖이라 patches 로 바꿀 수 없다. 이번 실행 뒤 값은 열린 질문 14건·답한 질문 2건이므로 퍼블리셔(또는 pipeline 담당)가 상태 줄을 갱신하도록 요청한다.",
+      "패치 적용 기준판 확인 요청: 이전 초안에서 트랙 개요·아이디어 페이지 패치가 실행 2026-09-25-98·99 반영 전 판(개요 v13, 아이디어 v13)에 적용되었다. 이번 패치는 게시본(개요 v14, 아이디어 v15)에 적용되어야 하며 프런트매터 version 을 각각 15·16 으로 명시했다.",
+      "트랙 개요 상태 줄(현재 단계: 단계 3)과 자동 진행 표(단계 1)의 현재 단계 표기가 서로 달라 config/tracks/nl-task-chatbot.yaml 의 current_stage 확인이 필요하다(1차 검증 노트). 개요 상태 줄은 값이 바뀌지 않아 이번 실행에서 고치지 않았다.",
+      "q4-02 3절 '모의 실행': SIMMER 가 평가한 모델 수와 '오류 없는 계획' 비율의 정확한 값을 원문으로 확인해야 한다(검증에서 '최대 17%'·'여섯 LLM' 미확인).",
+      "q4-02 3절 '계획 검증기': VAL 이 검증 실패 때 내는 보고 형식(위반 위치·수리 조언)을 원문으로 확인하면 초안 6절 '검증 기록'의 위반 위치·사유 속성 근거가 된다.",
+      "q4-02 3절 '스키마 검증': 게시된 JSON Schema 2020-12 판과 main 브랜치 초안의 검증 키워드 문구 차이를 확인해야 한다.",
+      "백로그 중복 정리 필요: q4-09·q4-10, q3-12·q3-13, q3-09·q3-10, q5-05·q5-06, q1-05·q1-06."
+    ],
+    "fixes_applied": [
+      "f15 강등 — 단계 4 페이지 q4-02 '모의 실행'의 SIMMER 문장을 [추정]으로 쓰고 수치를 '오류 없는 계획 20% 미만, 잠재 실패 포함 계획 29~56%, 최대 72% 감소, 동작 77개·객체 262개'로 고쳤으며 '최대 17%'·'여섯 LLM'은 쓰지 않고 모델 수는 미확인으로, '동료심사 전 프리프린트의 저자 보고'를 병기했다(아이디어 페이지도 [추정]).",
+      "f17 — Ko·Lin 문장의 '올바른 거부 7/8, 자율 전략 성공 3/10' 뒤에 '(저자 보고값, 검증 미재확인, 가상 분류 라인 30개 고정 시험 기록)'을 붙였다.",
+      "f13 — SayPlan 문장을 '저자들은 거의 완전한 실행 가능성(near-perfect executability)을 보고했다(사무실·가정 3D 장면 그래프 조건)'로 저자 보고임을 밝혀 썼다.",
+      "f16 — 발행일을 2026-04 로 적고(본문·reference_updates published), 실행 전 동역학 검증·동작 스케일링은 분류 원문 9장 로봇 자체 지능·제어 경계의 연계 대상이며 ROP 쪽은 로봇 선택·공간 접지 수준의 검증으로 본다는 [추정] 문장을 더했다.",
+      "f4 — 로봇의 주문 거절은 연계 대상이고 ROP 는 오류 유형을 받아 확인 절차의 마지막 결과로 처리하는 쪽만 맡는다고 [추정]으로 서술하고, 오류 수준을 원문 Table 9 대로 'UNSUPPORTED_PARAMETER 만 CRITICAL, 나머지 WARNING'으로 적었다.",
+      "f21·f24 — 방법별 표의 '로봇 관제 쪽 거절' 행에 '연계 대상(로봇 쪽 기능)'을 표시하고 표 아래에 '출처별 보고를 이 위키가 대응시킨 종합이며 같은 조건에서 비교한 출처는 없다'를 적었으며(아이디어 페이지 표도 같음), f24 시나리오는 '설명용 가정 사례, 현장 수치 없음'으로 밝혔다.",
+      "f3 — 여섯 프레임워크 목록이 원문 미열람 논문(ref-775) 요약 기준이고 README(ref-774)와 논문은 같은 저자 그룹이라 독립 교차가 아님을 본문과 4절 불확실성에 적었다.",
+      "f12·f14·f9·f11·f19 — 각 수치·결과 뒤에 '(저자 보고, 원문 미열람)'과 평가 조건(드론 항법·로봇 조작 / VirtualHome·Spot / 48개 과제 / 가정 환경 / TEACh)을 유지했다.",
+      "f20 — 새로 서술하지 않고 '사람 확인과 LLM 판정자' 소절에서 [q4-01 답](#q4-01)의 사람 승인 한계 서술로 연결하는 한 문장과 기존 각주 ref-713·ref-697 만 두었다.",
+      "온톨로지 변경 '검증 기록' 미반영 — 초안 2절은 고치지 않고 6절에 q4-02 답(f21·f22) 연결과 미반영 사유(추정·원문 미열람 근거, '사용자 확인' 경계 미결정, 로봇 관제 거절의 연계 대상 경계)를 질문으로 덧붙였으며 초안 v0.8 과 ontology_draft_version '0.8'을 유지했다.",
+      "reference_updates — 원문 미열람 출처(ref-775, ref-777~ref-786, ref-362, ref-416, ref-459, ref-236, ref-702, ref-697, ref-713)에 source_unopened: true 를 두었고, ref-773·ref-774·ref-776 은 github_raw 로 연 원문이라 false 로 두었으며 각주 정의 줄의 접근일 뒤에 ' (원문 미열람)'을 붙였다.",
+      "ref-031 — 단계 4 페이지의 기존 각주 정의 줄을 그대로 재사용하고 새로 정의하지 않았으며 reference_updates 에서 입력 원문 텍스트 열람으로 표시했다.",
+      "6절·2절 — 완료 조건 세 행을 모두 '미충족 · 미승인'으로 두고 '다음 단계로 전환: 아니오(…)'로 적었으며, 2절 q4-02 를 '답함', 답 위치 [q4-02 답](#q4-02), 3절 소제목을 '### q4-02 … {#q4-02}' 형식으로 두었다.",
+      "세부영역 반영 제안 — 13·23·22·27 세부영역 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그로만 남겼으며, 22. 시뮬레이션·예측용 디지털 트윈 제안에 초기 상태는 8. 실시간 세계 상태·데이터 일관성에서 받는다는 f23 구분을 함께 적었다.",
+      "2차: 트랙 개요 6절 — 게시본(v14) 6절을 기준으로 다시 써 실행 2026-09-25-98·99 서술(초안 변경 없음 목록, 6절 평가 지표·검증 절차 소절, 뒤 단계를 다뤘다는 문장)을 유지하고 실행 2026-09-25-81(q4-02 답, '검증 방법별로 잡는 오류' 소절, '검증 기록' 재제안의 초안 6절 질문)만 덧붙였으며 프런트매터 version 을 15 로 명시했다.",
+      "2차: 아이디어 2 페이지 — 5절 append 패치를 게시본(v15)에 적용하도록 하고 6절·auto 영역은 보내지 않아 게시본 그대로 두었으며 프런트매터 version 을 16 으로 명시했다.",
+      "2차: 아이디어 2 페이지 프런트매터 sources — 게시본 목록(ref-730~ref-746 포함)을 유지하고 없던 ref-416, ref-459, ref-773, ref-777, ref-778, ref-781, ref-782, ref-784, ref-785, ref-786 을 더했다(ref-362·ref-713·ref-031·ref-697 은 이미 있음).",
+      "2차: 업무 분해·배정 설계 초안 프런트매터 sources 에 ref-773, ref-785, ref-777, ref-416, ref-781, ref-713, ref-459 를 더했다.",
+      "2차: 새 단계 5 질문 id 를 q5-11 에서 q5-16 으로 고쳤다(backlog_updates, 단계 4 페이지 5절 표, 9절 이력 행, log_entry).",
+      "2차: 단계 4 페이지 8절(append 로 각주 정의를 직접 넣음)과 아이디어 2 페이지(5절 소절 끝 각주 정의)의 [^ref-782] 발행일을 2026-04 로 고쳤다.",
+      "2차: 단계 4 페이지 6절 아래 줄을 '다음 단계로 전환: 아니오(명령 권한 q4-03·제한 운영 기준 q4-04 미조사, 열린 질문 q4-03~q4-16)'로 고쳤다."
+    ],
+    "track_updates": {
+      "stage_page": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md",
+      "ontology_draft_version": "0.8",
+      "backlog_updates": [
+        {
+          "id": "q4-02",
+          "status": "답함",
+          "answer_link": "docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md#q4-02"
+        },
+        {
+          "id": "q4-15",
+          "status": "열림",
+          "answer_link": null,
+          "question": "해석 결과가 스키마·온톨로지 제약·모의 실행을 모두 통과했지만 사용자 의도와 다른 경우(예: 존재하는 다른 도크를 가리킨 해석)를 사람 확인 외에 해석 되말하기나 SELP 식 동치 투표 같은 방법으로 얼마나 잡을 수 있으며, 그 결과를 사람 확인 대상 선정(q4-13)에 어떻게 쓰는가? (q4-02 에서 파생)",
+          "stage": 4,
+          "origin": "f22"
+        },
+        {
+          "id": "q4-16",
+          "status": "열림",
+          "answer_link": null,
+          "question": "배치 전 모의 실행에 허용할 시간 예산(배치 지연 한계) 안에서 무엇을 모의할지(경로 점유, 도크·승강기 예약, 충전 여유), 모의 실행의 초기 상태를 8. 실시간 세계 상태·데이터 일관성의 어느 시점 상태로 잡는지는 어떻게 정하는가? (q4-02 에서 파생) (관련: oq-104)",
+          "stage": 4,
+          "origin": "f23"
+        },
+        {
+          "id": "q5-16",
+          "status": "열림",
+          "answer_link": null,
+          "question": "물류 지시에 오류(기한 누락, 없는 도크, 운반 불가 화물, 뜻과 다른 도크, 점유된 경로)를 주입한 시험 세트로 스키마 검증·온톨로지 제약 대조·계획 검증·모의 실행·사람 확인 각각의 오류 포착률과 확인 비용을 어떻게 재는가? (q4-02 에서 파생)",
+          "stage": 5,
+          "origin": "f21"
+        }
+      ],
+      "log_entry": "답한 질문: q4-02(실행 전 검증 방법별 포착·놓침 오류, 신뢰도 low; 근거 f1~f26) / 새 질문: q4-15(f22), q4-16(f23), q5-16(f21) / 온톨로지 변경: 없음(v0.8 유지; 개념 '검증 기록' 재제안(f4·f5·f17·f21)은 검증 거부 — 근거에 추정·원문 미열람이 섞였고 '사용자 확인'·배정 '확인 여부'와의 경계 미결정, 로봇 관제 거절의 연계 대상 경계 불일치 — 초안 6절 질문으로 둠) / 완료 조건 평가: 미충족(부족: 확인 절차 초안의 검증 승인 반영, 명령 권한 q4-03, 제한 운영 기준 q4-04; 열린 질문 q4-03~q4-16) / 세부영역 반영 제안: 4건 — 13. 작업 배정 — MRTA(6. 대표 접근법과 기술: 실행 가능성 판정·불변 조건 추론·정수계획 배정과 배치 전 모의 실행, f7·f8·f18·f21·f25), 23. 시험·형식 검증·벤치마크(6절: PDDL 계획 검증기·LTL 검증·제약 디코딩 벤치마크·잠재 실패 벤치마크·LLM 판정자, f3·f10·f11·f12·f15·f19), 22. 시뮬레이션·예측용 디지털 트윈(6절: 개별 지시의 실행 전 모의 실행과 8. 실시간 세계 상태·데이터 일관성에서 초기 상태를 받는 구분, f13·f16·f17·f23), 27. AI·학습·적응과 모델 운영(6절: 구조화 출력·제약 디코딩의 범위와 한계, LTL 제약 디코딩, 판정자 LLM, 방법별로 놓치는 오류, f2·f3·f12·f19·f22) / 다음 실행 제안: q4-03(명령 권한·감사 기록), q4-04(제한 운영 기준); 백로그 중복(q4-09·q4-10 등) 정리",
+      "overview_progress": "단계 4 질문 q4-02 답함(단계 3 완료·전환 미승인 상태에서 지정 질문으로 다룸, 현재 단계 표기는 단계 3 유지) — 단계 4 열린 질문 14, 답함 2, 완료 조건 미충족"
+    },
+    "area_reflection_proposals": [
+      {
+        "area_no": 13,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "배정 결과의 실행 전 검사: 온톨로지 기반 실행 가능성 판정(ref-236), 불변·전제·사후 조건 추론기(SafePlan, ref-702), 정수계획 배정과 LLM 의 자연어 기반 제약 갱신(건설 사례, ref-783), 배치 전 모의 실행·제약 검사로 최근접 배정의 대기·충돌 영향을 드러낼 가능성([추정], 물류 실측 없음, oq-052). 27. AI·학습·적응과 모델 운영과 양쪽 연결. 근거 f7·f8·f18·f21·f25(실행 2026-09-25-81)."
+      },
+      {
+        "area_no": 23,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "LLM 계획의 실행 전 검증 방법: PDDL 계획 검증기(VAL, ref-776), LTL 기반 실행 전 검증(VerifyLLM, ref-778), LTL 동치 투표·제약 디코딩(SELP, ref-786), 제약 디코딩 벤치마크(JSONSchemaBench, ref-774·ref-775), 잠재 실패 벤치마크(SIMMER, 프리프린트 [추정], ref-781), 판정자 LLM 반복 검증(ref-779). 수치는 원문 미열람 저자 보고. 근거 f3·f10·f11·f12·f15·f19(실행 2026-09-25-81)."
+      },
+      {
+        "area_no": 22,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "개별 지시·계획의 실행 전 모의 실행: 장면 그래프 시뮬레이터 피드백(SayPlan, ref-416), 디지털 트윈 통합 검증(ref-782, 동역학 검증은 연계 대상), 제안–검증–결정 흐름의 시뮬레이션 실행 검사(ref-784). 모의 실행은 가정한 미래를 실험하는 22. 시뮬레이션·예측용 디지털 트윈의 기능이고 초기 상태는 8. 실시간 세계 상태·데이터 일관성의 현재 상태에서 받되 결과를 현재 상태처럼 반영하지 않는다는 구분([추정])을 함께 적는다. 근거 f13·f16·f17·f23(실행 2026-09-25-81)."
+      },
+      {
+        "area_no": 27,
+        "section": "6. 대표 접근법과 기술",
+        "summary": "LLM 출력 검증 방법: 구조화 출력의 스키마 준수와 값 오류 한계([추정] 벤더 주장, ref-362), 제약 디코딩 벤치마크(ref-774·ref-775), LTL 제약 디코딩(ref-786), 판정자 LLM(ref-779), 방법별로 놓치는 오류([추정] 이 위키의 종합). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 함께 연결. 근거 f2·f3·f12·f19·f22(실행 2026-09-25-81)."
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "JSON Schema Validation (json-schema-spec, main 브랜치 차기판 초안)",
+        "kind": "표준",
+        "org": "JSON Schema (json-schema-org)",
+        "url": "https://github.com/json-schema-org/json-schema-spec/blob/main/specs/jsonschema-validation.md",
+        "related_areas": [
+          27,
+          12
+        ],
+        "summary": "JSON 인스턴스의 자료형·허용 값·수치 범위·패턴·필수 속성·조건부 필수 속성·크기 제한을 검사하는 검증 어휘. 게시된 2020-12 판과 문구 차이는 미확인.",
+        "ref_id": "ref-773"
+      },
+      {
+        "name": "VAL (PDDL 계획 검증 도구)",
+        "kind": "오픈소스",
+        "org": "KCL-Planning",
+        "url": "https://github.com/KCL-Planning/VAL",
+        "related_areas": [
+          23,
+          27
+        ],
+        "summary": "AI 계획의 계획과 계획 모델(PDDL, 연속 효과·파생 술어 포함)을 다루는 계획 검증 도구. 실패 보고 형식은 README 에서 미확인.",
+        "ref_id": "ref-776"
+      },
+      {
+        "name": "JSONSchemaBench",
+        "kind": "오픈소스",
+        "org": "guidance-ai",
+        "url": "https://github.com/guidance-ai/jsonschemabench",
+        "related_areas": [
+          27,
+          23
+        ],
+        "summary": "실제 JSON 스키마 약 1만 개로 제약 디코딩·구조화 출력 엔진의 효율·범위·품질을 평가하는 벤치마크.",
+        "ref_id": "ref-774"
+      }
+    ]
+  },
+  "ttft_ms": 33746,
+  "type": "result",
+  "duration_ms": 314920,
+  "uuid": "9411e046-f300-4f53-bde1-fd259de375de",
+  "ttft_stream_ms": 6365,
+  "time_to_request_ms": 79,
+  "first_content_frame_ms": 6366,
+  "time_to_request_from_spawn_ms": 298082,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790341849839.462,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 317.0
+}

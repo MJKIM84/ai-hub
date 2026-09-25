@@ -1,0 +1,46 @@
+{
+  "run_id": "2026-09-25-66",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "단계 3 페이지 3절의 Open-RMF 입찰(f3)·VDA 5050 관제 기능(f4)은 13. 작업 배정 — MRTA 페이지 5·7·9절과 같은 각주(ref-376·ref-031)를 재사용했고 기존 표현('배정 알고리즘 자체는 규정하지 않는다')과 충돌하지 않는다",
+      "새 질문 'ConstraintBench 방식 물류 측정'은 q5-05 와 중복이라 backlog_updates 에서 제외됨(1차 지시 이행)"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "low",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 25건, 미확인 2건, 교차 확인 0건. 강등: f6 사실 → 추정, f9 사실 → 추정. 원문 미열람 출처: ref-586, ref-592, ref-593, ref-594, ref-595, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-092, ref-166, ref-167, ref-181, ref-242. 주의: q3-01 의 결론(스케줄링 결정은 결정적 해법, LLM 은 인스턴스화·설명)은 이 위키의 종합([추정])이며 근거는 작업장·프로젝트·OR 일반·건설·항만·여행 계획 조건이고 이종 제조사 창고 플릿 비교 자료는 찾지 못했다. 온톨로지 변경 승인: 일정(Schedule) 속성 '일정 산출 방식'(f1·f2·f13·f14·f15·f21), 상태 초안 → 확정, v0.5 → v0.6 / 거부: 값 후보 'LLM 직접 생성'(근거 finding 미지정, 6절 질문으로). 단계 완료 조건: 미충족(부족: 아이디어 2 5절 처리 흐름·핵심 구성 요소·다른 아이디어와의 연결, 실험 페이지 실험 계획; 업무 분해·배정 설계 초안 v0.6 갱신 조건은 충족). 단계 전환: 미승인(막힌 질문 q3-02~q3-11 열림). / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증에서 직전 2차 수정 지시 5건(아이디어 페이지 ref-598 저자 표기·ref-612 소속 미확인, 단계 3 페이지 6절 초안 갱신 행 충족, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸 ConstraintBench 조건 병기)이 모두 이행된 것을 확인했다. 사소 의견(이전 지시에 없던 것, 게시 차단 사유 아님): 트랙 개요 6절 본문이 업무 분해·배정 설계 초안을 '현재 버전 v0.5'로 적고 있어 다음 트랙 실행에서 v0.6 으로 맞출 필요가 있다. 트랙 개요의 현재 단계 표시는 단계 1 유지(CLI 지정 단계 3 실행). 검증 검색 0회(2차, 도구 미사용).",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [
+      "ConstraintBench 처럼 해법기 최적해를 정답으로 두고 LLM 직접 스케줄의 실행 가능성·최적성 결합 비율을 재는 방식을 물류 창고 배정·스케줄링 시나리오로 옮기면, 제약 상호작용(충전·시간창·공용 자원)에 따라 결과가 어떻게 달라지는가? (q3-01 에서 파생) — q5-05 와 중복(제외 이행 확인)"
+    ],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

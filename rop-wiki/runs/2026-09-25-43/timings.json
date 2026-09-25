@@ -1,0 +1,116 @@
+{
+  "steps": [
+    {
+      "step": "준비",
+      "result": "성공",
+      "seconds": 1.0,
+      "note": "web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)",
+      "at": "2026-09-25 13:06:22 KST"
+    },
+    {
+      "step": "대상 선정",
+      "result": "성공",
+      "seconds": 0.0,
+      "note": "track · 13. 작업 배정 — MRTA",
+      "at": "2026-09-25 13:06:22 KST"
+    },
+    {
+      "step": "리서치",
+      "result": "성공",
+      "seconds": 300.0,
+      "note": "예산 안",
+      "at": "2026-09-25 13:11:24 KST"
+    },
+    {
+      "step": "1차 검증",
+      "result": "조건부 승인",
+      "seconds": 193.0,
+      "note": "신뢰도 low",
+      "at": "2026-09-25 13:14:37 KST"
+    },
+    {
+      "step": "스토리텔러",
+      "result": "성공",
+      "seconds": 484.0,
+      "note": "페이지 4개",
+      "at": "2026-09-25 13:22:42 KST"
+    },
+    {
+      "step": "형식 검증",
+      "result": "재시도 후 보류",
+      "seconds": 56.0,
+      "note": "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)",
+      "at": "2026-09-25 13:23:38 KST"
+    },
+    {
+      "step": "준비",
+      "result": "성공",
+      "seconds": 1.0,
+      "note": "web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)",
+      "at": "2026-09-25 14:13:55 KST"
+    },
+    {
+      "step": "대상 선정",
+      "result": "건너뜀",
+      "seconds": 0.0,
+      "note": "재개(기존 target.json)",
+      "at": "2026-09-25 14:13:55 KST"
+    },
+    {
+      "step": "2차 검증",
+      "result": "수정 후 재검증(재작성 1회차 진행)",
+      "seconds": 84.0,
+      "note": "required_fixes 참고",
+      "at": "2026-09-25 14:15:19 KST"
+    },
+    {
+      "step": "스토리텔러",
+      "result": "재시도 1회 후 성공",
+      "seconds": 458.0,
+      "note": "페이지 4개",
+      "at": "2026-09-25 14:22:57 KST"
+    },
+    {
+      "step": "형식 검증",
+      "result": "통과",
+      "seconds": 132.0,
+      "note": "패치 적용 2건",
+      "at": "2026-09-25 14:25:09 KST"
+    },
+    {
+      "step": "2차 검증",
+      "result": "재시도 1회 후 통과",
+      "seconds": 37.0,
+      "note": "신뢰도 low",
+      "at": "2026-09-25 14:25:46 KST"
+    },
+    {
+      "step": "준비",
+      "result": "성공",
+      "seconds": 1.0,
+      "note": "건너뜀",
+      "at": "2026-09-25 14:25:47 KST"
+    },
+    {
+      "step": "퍼블리셔",
+      "result": "실패",
+      "seconds": 43.3,
+      "note": "5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 749개 검사)",
+      "at": "2026-09-25 14:28:15 KST"
+    },
+    {
+      "step": "준비",
+      "result": "성공",
+      "seconds": 1.0,
+      "note": "건너뜀",
+      "at": "2026-09-25 14:30:11 KST"
+    },
+    {
+      "step": "퍼블리셔",
+      "result": "실패",
+      "seconds": 2.8,
+      "note": "4단계 내부 링크·각주 검사 실패: [check_links] 오류 1건 (파일 742개 검사)",
+      "at": "2026-09-25 14:30:14 KST"
+    }
+  ]
+}
