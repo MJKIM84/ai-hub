@@ -531,16 +531,39 @@ def _related_area_nos(target: dict, track_cfg: dict | None) -> list[int]:
     return seen
 
 
-def _previous_research(run_id: str, settings: dict, n: int = 7) -> list[tuple[str, str]]:
-    """최근 n회 실행의 research.md(6.1 입력, 공통 규칙 10). 보류된 실행(runs/parked/)도 포함하되 라벨에 "(보류)" 를 붙이고,
-    그 실행의 verification.md(반려 사유)를 함께 넣어 같은 영역이 반복 보류될 때 직전 조사·반려 사유를 재사용하게 한다."""
+def _same_target(d: Path, target_json: dict | None) -> bool:
+    if not target_json:
+        return True
+    t = runs.read_json(d / "target.json", {}) or {}
+    mine_t, mine_tr = target_json.get("target") or {}, (target_json.get("track") or {}).get("slug")
+    other_t, other_tr = t.get("target") or {}, (t.get("track") or {}).get("slug")
+    if mine_tr or other_tr:
+        return bool(mine_tr) and mine_tr == other_tr
+    if mine_t.get("area_no") is None or other_t.get("area_no") is None:   # 대분류 연결(category_link)은 대분류 단위로 본다
+        return bool(mine_t.get("category_letter")) and mine_t.get("category_letter") == other_t.get("category_letter") \
+            and mine_t.get("area_no") == other_t.get("area_no")
+    return mine_t.get("area_no") is not None and mine_t.get("area_no") == other_t.get("area_no")
+
+
+def _previous_research(run_id: str, settings: dict, n: int = 7, target_json: dict | None = None,
+                       n_other: int = 2) -> list[tuple[str, str]]:
+    """최근 실행의 research.md(6.1 입력, 공통 규칙 10). 보류된 실행(runs/parked/)도 포함하되 라벨에 "(보류)" 를 붙이고,
+    그 실행의 verification.md(반려 사유)를 함께 넣어 같은 영역이 반복 보류될 때 직전 조사·반려 사유를 재사용하게 한다.
+    대상이 같은 실행(같은 세부영역·같은 트랙·같은 대분류)을 최대 n회, 그 밖의 최근 실행을 최대 n_other 회 넣는다 — 배치로 여러 영역을
+    동시에 돌리면 '최근 7회'가 모두 다른 영역이라 입력만 커지고 중복 방지에 쓸모가 적다(3부 배치, 운영 전환 1-5 비용)."""
     out: list[tuple[str, str]] = []
     briefs = 0
+    others = 0
     ids = [i for i in runs.list_run_ids(settings, include_parked=True) if i < run_id]
     for rid in sorted(ids, reverse=True):
         d = runs.find_run_dir(rid, settings)
         if not d:
             continue
+        if not _same_target(d, target_json):
+            if others >= n_other:
+                continue
+            if (d / "research.md").is_file():
+                others += 1
         p = d / "research.md"
         if not p.is_file():
             continue
@@ -557,9 +580,10 @@ def _previous_research(run_id: str, settings: dict, n: int = 7) -> list[tuple[st
                 out.append((f"{rel}/verification.md (보류 실행의 반려 사유)", v.read_text(encoding="utf-8")))
         else:
             out.append((f"{rel}/research.md", p.read_text(encoding="utf-8")))
-        briefs += 1
-        if briefs >= n:
-            break
+        if _same_target(d, target_json):
+            briefs += 1
+            if briefs >= n:
+                break
     return out
 
 
@@ -861,7 +885,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         _add(inputs, "docs/open-questions.md")
         _add(inputs, "config/priority.yaml")
         _add(inputs, "inbox/corrections.md")
-        inputs.extend(_previous_research(run_id, settings))
+        inputs.extend(_previous_research(run_id, settings, target_json=target_json))
 
     if role == "researcher":
         common_context_pages()
@@ -893,7 +917,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
         _add(inputs, "docs/open-questions.md")
         _add(inputs, "inbox/corrections.md")
         _add(inputs, "config/priority.yaml")
-        inputs.extend(_previous_research(run_id, settings))
+        inputs.extend(_previous_research(run_id, settings, target_json=target_json))
         if retry and (rd / "verification.json").is_file():
             _add(inputs, f"{rel_run}/verification.json")
         _add(inputs, "_source/ROP_SCM_연구분야_분류.md")

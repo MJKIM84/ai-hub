@@ -8,7 +8,7 @@ status: draft
 created: 2026-09-25
 updated: 2026-09-25
 version: 3
-sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-125, ref-128, ref-129, ref-131, ref-132, ref-134, ref-135, ref-136, ref-138, ref-139, ref-140, ref-141, ref-142, ref-143]
+sources: [ref-054, ref-055, ref-057, ref-058, ref-059, ref-061, ref-089, ref-090, ref-091, ref-093, ref-094, ref-095, ref-087, ref-220, ref-223, ref-224, ref-226, ref-227, ref-229, ref-230, ref-231, ref-138, ref-233, ref-234, ref-235, ref-236, ref-237]
 confidence: medium
 last_run: 2026-09-25
 ---
@@ -88,7 +88,7 @@ last_run: 2026-09-25
 
 ### 선행 연구: LLM이 맡는 범위
 
-LLM을 로봇 작업 계획과 다중 로봇 배정에 쓴 연구는 LLM이 어디까지 맡는가에 따라 세 방식으로 나뉘는 것으로 보인다는 것이 이 위키의 정리(추론)이며, 이 3분류를 제시한 단일 출처는 확인하지 못했다. [추정][^ref-089][^ref-131][^ref-128][^ref-129][^ref-125][^ref-132][^ref-091][^ref-136][^ref-134][^ref-138][^ref-143]
+LLM을 로봇 작업 계획과 다중 로봇 배정에 쓴 연구는 LLM이 어디까지 맡는가에 따라 세 방식으로 나뉘는 것으로 보인다는 것이 이 위키의 정리(추론)이며, 이 3분류를 제시한 단일 출처는 확인하지 못했다. [추정][^ref-089][^ref-226][^ref-223][^ref-224][^ref-220][^ref-227][^ref-091][^ref-231][^ref-229][^ref-138][^ref-237]
 
 | 방식 | LLM이 맡는 일 | 결정적 구성 요소가 맡는 일 | 대표 사례 |
 |---|---|---|---|
@@ -98,11 +98,11 @@ LLM을 로봇 작업 계획과 다중 로봇 배정에 쓴 연구는 LLM이 어�
 
 LLM과 최적화 해법을 결합한 다중 로봇 연구는 다음과 같다. 연구에 실린 수치는 저자 보고값이며 독립 재현이 확인되지 않았다.
 
-- LiP-LLM은 LLM이 기술 목록과 기술 사이 선후 의존 그래프를 생성하고, 로봇에 대한 작업 배정은 선형계획으로 푼다. [사실][^ref-128]
-- Peng 외는 로컬 LLM과 도메인 지식 베이스로 자연어 작업 기술을 혼합 정수 선형 계획(Mixed Integer Linear Programming, MILP) 모델로 바꾸고 다시 실행 가능한 코드로 옮기는 2단계 자동 정식화 틀을 제안했다. [사실][^ref-129]
-- IMR-LLM은 산업용 다중 로봇 작업에서 LLM이 선언 그래프(disjunctive graph) 구성을 돕고 결정적 해법으로 상위 작업 계획을 구한 뒤, 공정 트리로 LLM이 저수준 실행 프로그램을 생성하게 한다. [사실][^ref-132]
-- LaMMA-P는 LLM이 하위 작업 분해와 로봇 배정을 맡고, 하위 작업별 PDDL 문제를 거쳐 고전 계획기(Fast Downward)가 계획을 생성한다. [사실][^ref-125]
-- COHERENT는 중앙 작업 배정자 LLM이 작업을 분해해 이종 로봇에 직접 배정하고, 로봇 실행자의 피드백으로 계획을 고친다. [사실][^ref-131]
+- LiP-LLM은 LLM이 기술 목록과 기술 사이 선후 의존 그래프를 생성하고, 로봇에 대한 작업 배정은 선형계획으로 푼다. [사실][^ref-223]
+- Peng 외는 로컬 LLM과 도메인 지식 베이스로 자연어 작업 기술을 혼합 정수 선형 계획(Mixed Integer Linear Programming, MILP) 모델로 바꾸고 다시 실행 가능한 코드로 옮기는 2단계 자동 정식화 틀을 제안했다. [사실][^ref-224]
+- IMR-LLM은 산업용 다중 로봇 작업에서 LLM이 선언 그래프(disjunctive graph) 구성을 돕고 결정적 해법으로 상위 작업 계획을 구한 뒤, 공정 트리로 LLM이 저수준 실행 프로그램을 생성하게 한다. [사실][^ref-227]
+- LaMMA-P는 LLM이 하위 작업 분해와 로봇 배정을 맡고, 하위 작업별 PDDL 문제를 거쳐 고전 계획기(Fast Downward)가 계획을 생성한다. [사실][^ref-220]
+- COHERENT는 중앙 작업 배정자 LLM이 작업을 분해해 이종 로봇에 직접 배정하고, 로봇 실행자의 피드백으로 계획을 고친다. [사실][^ref-226]
 
 ### 무엇을 자동화하고 무엇을 사람에게 남기는가
 
@@ -114,17 +114,17 @@ LLM과 최적화 해법을 결합한 다중 로봇 연구는 다음과 같다. �
 
 #### 공개 에이전트 프레임워크
 
-- NASA JPL의 ROSA는 LangChain 기반 에이전트로 ROS 1(Noetic)·ROS 2(Humble·Iron·Jazzy) 시스템을 자연어로 조회·진단·조작하며, 개발자는 LangChain 도구 함수를 추가해 에이전트가 쓸 수 있는 행동을 정한다(확인일 2026-09-25 기준). [사실][^ref-134][^ref-135] 이번에 연 두 문서에는 실행 전 사람 확인이나 권한 제한 장치에 대한 설명이 없었으나, 연 문서 범위의 관찰이며 부재의 확인은 아니다. [추정][^ref-134][^ref-135]
+- NASA JPL의 ROSA는 LangChain 기반 에이전트로 ROS 1(Noetic)·ROS 2(Humble·Iron·Jazzy) 시스템을 자연어로 조회·진단·조작하며, 개발자는 LangChain 도구 함수를 추가해 에이전트가 쓸 수 있는 행동을 정한다(확인일 2026-09-25 기준). [사실][^ref-229][^ref-230] 이번에 연 두 문서에는 실행 전 사람 확인이나 권한 제한 장치에 대한 설명이 없었으나, 연 문서 범위의 관찰이며 부재의 확인은 아니다. [추정][^ref-229][^ref-230]
 - Robotec.ai의 RAI는 ROS 2(Jazzy·Humble)용 제조사 무관 에이전트 프레임워크로, 다중 에이전트·음성 인식·음성 합성·인식 도구·시뮬레이션 연동·벤치마크 패키지를 Apache 2.0 라이선스로 공개한다(확인일 2026-09-25 기준). [사실][^ref-138]
-- 한국전자기술연구원 연구진은 LangChain 에이전트의 도구를 ROS 2 토픽·서비스 인터페이스로 정의해 자연어 명령을 ROS 2 로봇 제어 명령으로 바꾸고 로봇별 위치·상태를 실시간 모니터링하는 다중 로봇 관제 시스템을 구현했다고 국내 학술대회 초록으로 발표했다(학술대회 이름·발표일 미확인). [사실][^ref-143]
+- 한국전자기술연구원 연구진은 LangChain 에이전트의 도구를 ROS 2 토픽·서비스 인터페이스로 정의해 자연어 명령을 ROS 2 로봇 제어 명령으로 바꾸고 로봇별 위치·상태를 실시간 모니터링하는 다중 로봇 관제 시스템을 구현했다고 국내 학술대회 초록으로 발표했다(학술대회 이름·발표일 미확인). [사실][^ref-237]
 
 #### 로봇 운영 제품 (벤더 주장)
 
-- InOrbit은 2024년 5월 RobOps Copilot을 LLM으로 로봇 운영 데이터에 대해 사용자가 선호하는 언어로 질문하고 설명·분석을 받는 도구로 발표했으며, Microsoft Teams·Slack 같은 메신저에서 쓰게 했다고 밝혔다. [추정] 벤더 주장[^ref-139]
-- InOrbit은 2026년 6월 RobOps Copilot을 운영자가 음성을 포함한 자연어로 로봇 동작 정의, 실시간 데이터 조회, 성능 분석, 로봇 미션 실행, 보고서 생성을 하는 에이전트형 AI 계층으로 소개했다. [추정] 벤더 주장[^ref-140]
-- Formant는 2025-06-30에 F3를 자연어 질의응답·시각화를 제공하고 상시 에이전트가 플릿을 감시·분석·권고하는 로봇 운영 플랫폼으로 발표했다. [추정] 벤더 주장[^ref-141]
-- 국내 로봇 통합관제 기업 다임리서치는 통합관제 솔루션 xMS의 운영 데이터를 바탕으로 자연어 질문에 답하고 장애 원인과 대응 방안을 제시하는 온프레미스 AI 에이전트 다비스(DARVIS)를 개발 중이며 2027년 상반기 1.0 출시를 계획한다고 밝혔다(2026-08-27 기사 기준). [추정] 벤더 주장[^ref-142]
-- 확인한 제품 자료에서 LLM의 역할은 운영 데이터 질의·설명·진단에서 자연어로 미션을 실행하는 쪽으로 넓어지는 흐름이 보이지만, 공개 자료에서는 미션이 미리 정의된 것을 호출하는지 새로 분해하는지와 실행 전 확인·권한 장치가 확인되지 않는다. 부재의 확인은 아니다. [추정] 벤더 주장[^ref-139][^ref-140][^ref-141][^ref-142]
+- InOrbit은 2024년 5월 RobOps Copilot을 LLM으로 로봇 운영 데이터에 대해 사용자가 선호하는 언어로 질문하고 설명·분석을 받는 도구로 발표했으며, Microsoft Teams·Slack 같은 메신저에서 쓰게 했다고 밝혔다. [추정] 벤더 주장[^ref-233]
+- InOrbit은 2026년 6월 RobOps Copilot을 운영자가 음성을 포함한 자연어로 로봇 동작 정의, 실시간 데이터 조회, 성능 분석, 로봇 미션 실행, 보고서 생성을 하는 에이전트형 AI 계층으로 소개했다. [추정] 벤더 주장[^ref-234]
+- Formant는 2025-06-30에 F3를 자연어 질의응답·시각화를 제공하고 상시 에이전트가 플릿을 감시·분석·권고하는 로봇 운영 플랫폼으로 발표했다. [추정] 벤더 주장[^ref-235]
+- 국내 로봇 통합관제 기업 다임리서치는 통합관제 솔루션 xMS의 운영 데이터를 바탕으로 자연어 질문에 답하고 장애 원인과 대응 방안을 제시하는 온프레미스 AI 에이전트 다비스(DARVIS)를 개발 중이며 2027년 상반기 1.0 출시를 계획한다고 밝혔다(2026-08-27 기사 기준). [추정] 벤더 주장[^ref-236]
+- 확인한 제품 자료에서 LLM의 역할은 운영 데이터 질의·설명·진단에서 자연어로 미션을 실행하는 쪽으로 넓어지는 흐름이 보이지만, 공개 자료에서는 미션이 미리 정의된 것을 호출하는지 새로 분해하는지와 실행 전 확인·권한 장치가 확인되지 않는다. 부재의 확인은 아니다. [추정] 벤더 주장[^ref-233][^ref-234][^ref-235][^ref-236]
 
 채팅·음성 지시 제품의 확인·승인 방식(q1-03)은 단계 1의 다음 트랙 실행이 조사한다.
 
@@ -141,20 +141,20 @@ LLM과 최적화 해법을 결합한 다중 로봇 연구는 다음과 같다. �
 [^ref-094]: Huang, W. (language-planner 공식 저장소), language-planner — Official Code for "Language Models as Zero-Shot Planners" (GitHub README), 미확인, https://github.com/huangwl18/language-planner, 접근일 2026-09-25
 [^ref-095]: Google Research, Code as Policies: Language Model Programs for Embodied Control (google-research/code_as_policies README), 미확인, https://github.com/google-research/google-research/blob/master/code_as_policies/README.md, 접근일 2026-09-25
 [^ref-087]: Google Research, SayCan (google-research/saycan README), 미확인, https://github.com/google-research/google-research/blob/master/saycan/README.md, 접근일 2026-09-25
-[^ref-125]: TASL Lab (LaMMA-P 저자), LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner (GitHub README), 미확인, https://github.com/tasl-lab/LaMMA-P, 접근일 2026-09-25
-[^ref-128]: Obata, K. 외(Taniguchi 연구실), LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)
-[^ref-129]: Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L., Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models, 2025-03, https://arxiv.org/abs/2503.13813, 접근일 2026-09-25 (원문 미열람)
-[^ref-131]: SHAILAB-IPEC (COHERENT 저자), COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (GitHub README), 미확인, https://github.com/SHAILAB-IPEC/COHERENT, 접근일 2026-09-25
-[^ref-132]: Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R., IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models, 2026-03, https://arxiv.org/abs/2603.02669, 접근일 2026-09-25 (원문 미열람)
-[^ref-134]: NASA Jet Propulsion Laboratory (nasa-jpl), ROSA — ROS Agent (GitHub README), 미확인, https://github.com/nasa-jpl/rosa, 접근일 2026-09-25
-[^ref-135]: NASA Jet Propulsion Laboratory (nasa-jpl), Custom Agents · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/Custom-Agents, 접근일 2026-09-25
-[^ref-136]: Microsoft, PromptCraft-Robotics (GitHub README), 미확인, https://github.com/microsoft/PromptCraft-Robotics, 접근일 2026-09-25
+[^ref-220]: TASL Lab (LaMMA-P 저자), LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner (GitHub README), 미확인, https://github.com/tasl-lab/LaMMA-P, 접근일 2026-09-25
+[^ref-223]: Obata, K. 외(Taniguchi 연구실), LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)
+[^ref-224]: Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L., Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models, 2025-03, https://arxiv.org/abs/2503.13813, 접근일 2026-09-25 (원문 미열람)
+[^ref-226]: SHAILAB-IPEC (COHERENT 저자), COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (GitHub README), 미확인, https://github.com/SHAILAB-IPEC/COHERENT, 접근일 2026-09-25
+[^ref-227]: Su, X., Xu, J., van Kaick, O., Xu, K., & Hu, R., IMR-LLM: Industrial Multi-Robot Task Planning and Program Generation using Large Language Models, 2026-03, https://arxiv.org/abs/2603.02669, 접근일 2026-09-25 (원문 미열람)
+[^ref-229]: NASA Jet Propulsion Laboratory (nasa-jpl), ROSA — ROS Agent (GitHub README), 미확인, https://github.com/nasa-jpl/rosa, 접근일 2026-09-25
+[^ref-230]: NASA Jet Propulsion Laboratory (nasa-jpl), Custom Agents · nasa-jpl/rosa Wiki, 미확인, https://github.com/nasa-jpl/rosa/wiki/Custom-Agents, 접근일 2026-09-25
+[^ref-231]: Microsoft, PromptCraft-Robotics (GitHub README), 미확인, https://github.com/microsoft/PromptCraft-Robotics, 접근일 2026-09-25
 [^ref-138]: Robotec.ai (RobotecAI), RAI — vendor agnostic agentic framework for Physical AI robotics (GitHub README), 미확인, https://github.com/RobotecAI/rai, 접근일 2026-09-25
-[^ref-139]: InOrbit.AI (RoboticsTomorrow 게재 보도자료), InOrbit Unveils RobOps Copilot for AI-Powered Robot Optimization at Automate 2024, 2024-05-01, https://www.roboticstomorrow.com/news/2024/05/01/inorbit-unveils-robops-copilot-for-ai-powered-robot-optimization-at-automate-2024/22505/, 접근일 2026-09-25 (원문 미열람)
-[^ref-140]: InOrbit.AI (RoboticsTomorrow 게재 보도자료), InOrbit.AI Demonstrates the Future of Multi-Vendor Robot Orchestration and Physical AI at Automate 2026, 2026-06-22, https://www.roboticstomorrow.com/news/2026/06/22/inorbitai-demonstrates-the-future-of-multi-vendor-robot-orchestration-and-physical-ai-at-automate-2026/26757/, 접근일 2026-09-25 (원문 미열람)
-[^ref-141]: Formant (Business Wire 보도자료), Formant F3 Brings Generative AI and Agentic Reasoning to Robot Ops, 2025-06-30, https://www.businesswire.com/news/home/20250630008190/en/Formant-F3-Brings-Generative-AI-and-Agentic-Reasoning-to-Robot-Ops, 접근일 2026-09-25 (원문 미열람)
-[^ref-142]: 와우테일, 다임리서치, 중기부-인텔 '인지니어스' 글로벌 협업 기업 선정, 2026-08-27, https://wowtale.net/2026/08/27/263530/, 접근일 2026-09-25 (원문 미열람)
-[^ref-143]: 이종록, 황정훈, 박민철(한국전자기술연구원), LLM 기반 로봇관제시스템의 Agent AI 구축, 미확인, https://d2j16w31g89z0j.cloudfront.net/site/2026w/abs/0560-YDVVV.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-233]: InOrbit.AI (RoboticsTomorrow 게재 보도자료), InOrbit Unveils RobOps Copilot for AI-Powered Robot Optimization at Automate 2024, 2024-05-01, https://www.roboticstomorrow.com/news/2024/05/01/inorbit-unveils-robops-copilot-for-ai-powered-robot-optimization-at-automate-2024/22505/, 접근일 2026-09-25 (원문 미열람)
+[^ref-234]: InOrbit.AI (RoboticsTomorrow 게재 보도자료), InOrbit.AI Demonstrates the Future of Multi-Vendor Robot Orchestration and Physical AI at Automate 2026, 2026-06-22, https://www.roboticstomorrow.com/news/2026/06/22/inorbitai-demonstrates-the-future-of-multi-vendor-robot-orchestration-and-physical-ai-at-automate-2026/26757/, 접근일 2026-09-25 (원문 미열람)
+[^ref-235]: Formant (Business Wire 보도자료), Formant F3 Brings Generative AI and Agentic Reasoning to Robot Ops, 2025-06-30, https://www.businesswire.com/news/home/20250630008190/en/Formant-F3-Brings-Generative-AI-and-Agentic-Reasoning-to-Robot-Ops, 접근일 2026-09-25 (원문 미열람)
+[^ref-236]: 와우테일, 다임리서치, 중기부-인텔 '인지니어스' 글로벌 협업 기업 선정, 2026-08-27, https://wowtale.net/2026/08/27/263530/, 접근일 2026-09-25 (원문 미열람)
+[^ref-237]: 이종록, 황정훈, 박민철(한국전자기술연구원), LLM 기반 로봇관제시스템의 Agent AI 구축, 미확인, https://d2j16w31g89z0j.cloudfront.net/site/2026w/abs/0560-YDVVV.pdf, 접근일 2026-09-25 (원문 미열람)
 
 ## 4. 필요한 데이터와 표준
 

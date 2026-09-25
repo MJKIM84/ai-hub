@@ -235,6 +235,28 @@ class TestPublishHelpers(unittest.TestCase):
         self.assertEqual(cfg["stage_status"][5], "완료")
 
 
+class TestPreviousResearch(unittest.TestCase):
+    def test_same_target(self):
+        import agent_runner as A
+        def mk(td, name, t):
+            d = Path(td) / name
+            d.mkdir()
+            (d / "target.json").write_text(json.dumps(t, ensure_ascii=False), encoding="utf-8")
+            return d
+        area4 = {"target": {"area_no": 4, "category_letter": "A"}, "track": None}
+        with tempfile.TemporaryDirectory() as td:
+            same = mk(td, "a", {"target": {"area_no": 4, "category_letter": "A"}})
+            sibling = mk(td, "b", {"target": {"area_no": 1, "category_letter": "A"}})    # 같은 대분류의 다른 영역은 다른 대상
+            track = mk(td, "c", {"target": {"area_no": 5}, "track": {"slug": "x"}})
+            cat = mk(td, "d", {"target": {"area_no": None, "category_letter": "A"}})
+            self.assertTrue(A._same_target(same, area4))
+            self.assertFalse(A._same_target(sibling, area4))
+            self.assertFalse(A._same_target(track, area4))
+            self.assertFalse(A._same_target(cat, area4))
+            self.assertTrue(A._same_target(cat, {"target": {"area_no": None, "category_letter": "A"}}))
+            self.assertTrue(A._same_target(track, {"target": {"area_no": 13}, "track": {"slug": "x"}}))
+
+
 class TestSelection(unittest.TestCase):
     def test_weighted_track_pick(self):
         import select_target as S
