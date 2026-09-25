@@ -346,6 +346,10 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
         sec_name = re.sub(r"^\d+\.\s*", "", title)
         sec_name_short = re.sub(r"\s*\(.*\)\s*$", "", sec_name)
         slug = f"{day}-area{area_no:02d}-s{no}"
+        k = 2
+        while (paths.DOCS / "topics" / year / f"{slug}.md").exists():   # 같은 날 같은 절을 다시 분리하면 번호를 붙인다
+            slug = f"{day}-area{area_no:02d}-s{no}-{k}"
+            k += 1
         topic_repo = f"docs/topics/{year}/{slug}.md"
         topic_docs = f"topics/{year}/{slug}.md"
         link_from_area = paths.rel_link(area_docs_rel, topic_docs)

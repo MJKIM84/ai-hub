@@ -98,6 +98,21 @@ class TestValidate(unittest.TestCase):
         self.assertIn("긴 설명 문장 119번이다", t["content"])
         self.assertEqual(V.footnote_problems(fm.parse(new)[1]), [])
 
+    def test_split_name_collision_gets_suffix(self):
+        text = _area_page({"6. 대표 접근법과 기술": "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(250))})
+        taken = paths.DOCS / "topics" / "2099" / "2099-01-01-area07-s6.md"
+        taken.parent.mkdir(parents=True, exist_ok=True)
+        taken.write_text("x", encoding="utf-8")
+        try:
+            _, topics = V.split_oversized_area(paths.area_repo_path(7), text, 4000, [], "2099-01-01-01", "2099-01-01")
+        finally:
+            taken.unlink()
+            try:
+                taken.parent.rmdir()
+            except OSError:
+                pass
+        self.assertEqual(topics[0]["path"], "docs/topics/2099/2099-01-01-area07-s6-2.md")
+
     def test_small_area_not_split(self):
         text = AREA7.read_text(encoding="utf-8")
         new, topics = V.split_oversized_area(paths.area_repo_path(7), text, 100000, [], "r", "2026-09-26")
