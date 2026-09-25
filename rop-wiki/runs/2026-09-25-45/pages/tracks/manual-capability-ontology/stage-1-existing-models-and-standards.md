@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-182, ref-183, ref-184, ref-185, ref-437, ref-438, ref-439]
+sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-182, ref-183, ref-184, ref-185, ref-198, ref-200, ref-201]
 last_run: 2026-09-25
 version: 7
 ---
@@ -180,7 +180,7 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 **분류 클래스 코드의 위치.** IDTA 02047 템플릿에서 ECLASS 분류 클래스 코드 공간(0173-1#01-…) 식별자는 제조사명·제조사 제품 명칭 등 일반 정보 요소와 제품 이미지의 복합 semanticId(예: 0173-1#02-ABK161#002/0173-1#01-AHX838#002)에만 나타나고, 무인운반차·이동로봇 자체를 가리키는 클래스로 쓰인 곳은 확인되지 않았다. [사실][^ref-245] ECLASS IRDI 에서 코드 공간 01 은 분류 클래스를 뜻한다(원문 미열람, 검색 요약 기준). [사실][^ref-392]
 
-**범위 능력.** 이번에 연 IDTA 02047 템플릿 범위에서 범위 능력을 능력 단위로 가리키는 ECLASS 식별자는 확인되지 않았고, ECLASS 는 최대 적재 질량·실외 사용 적합 같은 속성 단위에만 쓰이며 충전·계단·도어 조작 속성은 템플릿에 없는 것으로 보인다(요소 목록 기준, 부재 확정 아님). [추정][^ref-245] 템플릿 JSON 열람 응답이 DecelerationMax 에서 잘려 충전 요소 유무는 미확인이며, 명세 PDF 검색 요약은 ChargingTimeAsSpecified·ChargingDeviceRequirements·BatteryInformation 요소를 전한다(실행 2026-09-25-45 병기, 두 출처가 충돌하며 한쪽을 고르지 않는다). [추정][^ref-245][^ref-437]
+**범위 능력.** 이번에 연 IDTA 02047 템플릿 범위에서 범위 능력을 능력 단위로 가리키는 ECLASS 식별자는 확인되지 않았고, ECLASS 는 최대 적재 질량·실외 사용 적합 같은 속성 단위에만 쓰이며 충전·계단·도어 조작 속성은 템플릿에 없는 것으로 보인다(요소 목록 기준, 부재 확정 아님). [추정][^ref-245] 템플릿 JSON 열람 응답이 DecelerationMax 에서 잘려 충전 요소 유무는 미확인이며, 명세 PDF 검색 요약은 ChargingTimeAsSpecified·ChargingDeviceRequirements·BatteryInformation 요소를 전한다(실행 2026-09-25-45 병기, 두 출처가 충돌하며 한쪽을 고르지 않는다). [추정][^ref-245][^ref-198]
 
 **IDTA 02020 의 능력 식별.** IDTA 02020 능력 기술 1.0 템플릿의 능력(Capability) 요소와 속성 요소는 IDTA 일반 템플릿 식별자(admin-shell.io/idta/CapabilityDescription/…)만 두고 특정 능력 사전을 가리키지 않으며, 속성 설명은 값의 의미를 valueId 로 정하게 하고, README 도 표준 능력 사전·분류 체계를 지정하지 않는다. [사실][^ref-243][^ref-229]
 
@@ -208,17 +208,17 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 실행 2026-09-25-45도 ECLASS 콘텐츠 데이터베이스와 IEC CDD 트리를 네트워크 정책으로 열지 못해 질문의 핵심(범위 능력 항목의 존재 여부)은 여전히 미확인이고, 이 질문은 열림으로 둔다. 이번 실행에서 원문을 연 출처는 공식 저장소의 IDTA 02047 템플릿 JSON 하나인데, 열람 응답이 TechnicalParameters 의 DecelerationMax 요소에서 잘려(열람 응답 절단) 템플릿 전체의 요소를 확인하지 못했다. 나머지 출처는 검색 결과로 기관·제목·URL 을 확인한 원문 미열람 자료이며, 교차 확인은 없다. 한국어 검색에서도 ECLASS 기반 물류로봇 사전을 다룬 국내 자료는 찾지 못했다.
 
-**IDTA 02047 명세의 대상.** IDTA 02047 무인운반차 기술 데이터 1.0 명세(2025-03)는 AGV 를 인트라로지스틱스의 무인 차량·로봇 전체를 가리키는 총칭으로 쓰며, 자율이동로봇이나 유도식 무인 지게차 같은 여러 무인 차량을 대상으로 한다(검색 요약 기준). [사실][^ref-437]
+**IDTA 02047 명세의 대상.** IDTA 02047 무인운반차 기술 데이터 1.0 명세(2025-03)는 AGV 를 인트라로지스틱스의 무인 차량·로봇 전체를 가리키는 총칭으로 쓰며, 자율이동로봇이나 유도식 무인 지게차 같은 여러 무인 차량을 대상으로 한다(검색 요약 기준). [사실][^ref-198]
 
-**충전 관련 요소.** IDTA 02047 명세는 제조사가 명시한 완전 방전에서 완전 충전까지의 충전 시간 속성(ChargingTimeAsSpecified), 충전 스테이션·인프라에 대한 무인운반차의 요구(전압 범위·최대 전류 등)를 담는 충전 장치 요구(ChargingDeviceRequirements), 배터리 종류·용량·최대 충전 횟수를 담는 배터리 정보(BatteryInformation) 요소를 두는 것으로 보이며, 충전 시간 속성에 붙는 ECLASS IRDI 는 미확인이다(IDTA 명세 PDF 검색 요약 기준, 원문 미열람). [추정][^ref-437]
+**충전 관련 요소.** IDTA 02047 명세는 제조사가 명시한 완전 방전에서 완전 충전까지의 충전 시간 속성(ChargingTimeAsSpecified), 충전 스테이션·인프라에 대한 무인운반차의 요구(전압 범위·최대 전류 등)를 담는 충전 장치 요구(ChargingDeviceRequirements), 배터리 종류·용량·최대 충전 횟수를 담는 배터리 정보(BatteryInformation) 요소를 두는 것으로 보이며, 충전 시간 속성에 붙는 ECLASS IRDI 는 미확인이다(IDTA 명세 PDF 검색 요약 기준, 원문 미열람). [추정][^ref-198]
 
-**이전 관찰과의 충돌.** 이번에 연 템플릿 JSON 은 열람 응답이 DecelerationMax 에서 잘려 충전·배터리 문자열이 보이지 않았으므로, 실행 2026-09-25-35 가 같은 방식으로 적은 '충전·계단·도어 조작 속성은 템플릿에 없는 것으로 보인다'는 관찰은 위 명세 요약과 어긋나며, 적어도 충전에 대해서는 같은 절단 한계에 기댄 것일 수 있다(확인일 2026-09-25). [추정][^ref-245][^ref-437] 두 출처 가운데 한쪽을 고르지 않고 [열린 질문](../../open-questions.md)에 출처 충돌로 올렸다. 계단·도어 조작에 대해서는 새 근거가 없다.
+**이전 관찰과의 충돌.** 이번에 연 템플릿 JSON 은 열람 응답이 DecelerationMax 에서 잘려 충전·배터리 문자열이 보이지 않았으므로, 실행 2026-09-25-35 가 같은 방식으로 적은 '충전·계단·도어 조작 속성은 템플릿에 없는 것으로 보인다'는 관찰은 위 명세 요약과 어긋나며, 적어도 충전에 대해서는 같은 절단 한계에 기댄 것일 수 있다(확인일 2026-09-25). [추정][^ref-245][^ref-198] 두 출처 가운데 한쪽을 고르지 않고 [열린 질문](../../open-questions.md)에 출처 충돌로 올렸다. 계단·도어 조작에 대해서는 새 근거가 없다.
 
-**ECLASS 를 AAS 에 싣는 지침.** IDTA·ECLASS 공동 지침 'How to transport ECLASS in the Asset Administration Shell'(1.0, 2024-10)은 ECLASS 를 AAS 의 의미로 쓸 때 ECLASS 요소를 AAS 안에서 교환하는 방법을 범위로 하며, 예시는 ECLASS 14.0 기준이다. [사실][^ref-438] 이 지침이 AAS 요소의 semanticId 가 로컬 개념 기술이나 ECLASS·IEC CDD 같은 전역 사전을 가리킬 수 있다고 설명한다는 부분은 검색 요약 기준이다. [사실][^ref-438]
+**ECLASS 를 AAS 에 싣는 지침.** IDTA·ECLASS 공동 지침 'How to transport ECLASS in the Asset Administration Shell'(1.0, 2024-10)은 ECLASS 를 AAS 의 의미로 쓸 때 ECLASS 요소를 AAS 안에서 교환하는 방법을 범위로 하며, 예시는 ECLASS 14.0 기준이다. [사실][^ref-200] 이 지침이 AAS 요소의 semanticId 가 로컬 개념 기술이나 ECLASS·IEC CDD 같은 전역 사전을 가리킬 수 있다고 설명한다는 부분은 검색 요약 기준이다. [사실][^ref-200]
 
-**AAS 능력 모델에서 계획 문제로.** Nabizada 외(arXiv 2606.02167, 2026-06, IEEE CASE 2026 채택(검색 결과 기준))는 VDI 3682 공정 기술, IEC 61360-1 의미 속성 한정, IDTA 02011 유형 계층, IDTA 02016 인스턴스 기술로 구조화한 AAS 능력 모델이 PDDL 계획 문제를 자동 생성하는 데 충분한 정보를 담는다고 보이고, PDDL 전용 서브모델 없이 자원 기능(능력)의 도메인 수준 기술에서 계획 요소를 도출했다. [사실][^ref-439] 이 연구는 생산 시스템 설계 대상이므로 물류 현장 적용 사례가 아니라 방법의 선례로만 쓴다.
+**AAS 능력 모델에서 계획 문제로.** Nabizada 외(arXiv 2606.02167, 2026-06, IEEE CASE 2026 채택(검색 결과 기준))는 VDI 3682 공정 기술, IEC 61360-1 의미 속성 한정, IDTA 02011 유형 계층, IDTA 02016 인스턴스 기술로 구조화한 AAS 능력 모델이 PDDL 계획 문제를 자동 생성하는 데 충분한 정보를 담는다고 보이고, PDDL 전용 서브모델 없이 자원 기능(능력)의 도메인 수준 기술에서 계획 요소를 도출했다. [사실][^ref-201] 이 연구는 생산 시스템 설계 대상이므로 물류 현장 적용 사례가 아니라 방법의 선례로만 쓴다.
 
-**두 층 의미 식별자.** 실행 2026-09-25-35 에서 원문으로 확인한 IDTA 02047 의 속성 단위 ECLASS IRDI 사용(최대 적재 질량 등)과 IDTA 02020 능력 요소가 IDTA 일반 식별자만 둔다는 관찰, 그리고 semanticId 가 ECLASS·IEC CDD·로컬 개념 기술을 가리킬 수 있다는 지침 설명(검색 요약 기준)을 대응시키면, ROP 의 의미 식별자는 능력 단위(자체 네임스페이스 또는 아직 확인되지 않은 사전 항목)와 속성 단위(ECLASS IRDI·IDTA 식별자)의 두 층으로 나뉠 것으로 보인다. [추정][^ref-245][^ref-243][^ref-438] 이 추정은 이 위키의 추론이며, 위 실행 2026-09-25-41 보강의 구축자 의견(자체 네임스페이스)을 새 결론이 아니라 근거 보강으로 뒷받침한다. 충전 시간 속성 자체의 IRDI 는 확인하지 못했다.
+**두 층 의미 식별자.** 실행 2026-09-25-35 에서 원문으로 확인한 IDTA 02047 의 속성 단위 ECLASS IRDI 사용(최대 적재 질량 등)과 IDTA 02020 능력 요소가 IDTA 일반 식별자만 둔다는 관찰, 그리고 semanticId 가 ECLASS·IEC CDD·로컬 개념 기술을 가리킬 수 있다는 지침 설명(검색 요약 기준)을 대응시키면, ROP 의 의미 식별자는 능력 단위(자체 네임스페이스 또는 아직 확인되지 않은 사전 항목)와 속성 단위(ECLASS IRDI·IDTA 식별자)의 두 층으로 나뉠 것으로 보인다. [추정][^ref-245][^ref-243][^ref-200] 이 추정은 이 위키의 추론이며, 위 실행 2026-09-25-41 보강의 구축자 의견(자체 네임스페이스)을 새 결론이 아니라 근거 보강으로 뒷받침한다. 충전 시간 속성 자체의 IRDI 는 확인하지 못했다.
 
 ## 4. 결론과 남은 불확실성
 
@@ -270,8 +270,8 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 **실행 2026-09-25-45 결론과 남은 불확실성**
 
-- 결론: IDTA 02047 명세는 AGV 를 인트라로지스틱스 무인 차량·로봇 전체의 총칭으로 쓴다(검색 요약 기준). [사실][^ref-437]
-- 결론: ROP 의 의미 식별자는 능력 단위(자체 네임스페이스 또는 미확인 사전 항목)와 속성 단위(ECLASS IRDI·IDTA 식별자)의 두 층으로 나뉠 것으로 보인다(이 위키의 추론). [추정][^ref-245][^ref-243][^ref-438]
+- 결론: IDTA 02047 명세는 AGV 를 인트라로지스틱스 무인 차량·로봇 전체의 총칭으로 쓴다(검색 요약 기준). [사실][^ref-198]
+- 결론: ROP 의 의미 식별자는 능력 단위(자체 네임스페이스 또는 미확인 사전 항목)와 속성 단위(ECLASS IRDI·IDTA 식별자)의 두 층으로 나뉠 것으로 보인다(이 위키의 추론). [추정][^ref-245][^ref-243][^ref-200]
 - 온톨로지 변경 없음(v0.3 유지): 능력 단위 의미 식별자 근거가 여전히 없고 충전 속성은 출처 충돌 상태라, 초안 6절의 '기능의 의미 식별자 속성'과 충전 조건 질문을 그대로 두었다.
 - 불확실성(출처 충돌): IDTA 02047 명세 PDF 검색 요약은 충전 시간·충전 장치 요구·배터리 정보 요소를 전하지만, 공식 저장소 템플릿 JSON 의 열람 응답은 DecelerationMax 에서 잘려 이 요소를 확인하지 못했다. 실행 2026-09-25-35·2026-09-25-41 의 템플릿 부재 관찰도 같은 절단 한계일 수 있다. 명세 PDF 원문과 충전 시간 속성의 ECLASS IRDI 는 미확인이다.
 - 불확실성: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리는 이번에도 조회하지 못했고, ECLASS 16.0 에 이동로봇 클래스가 있는지와 IEC CDD 에 ISO 22166 계열 속성이 등록됐는지는 미확인이다.
@@ -386,9 +386,9 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 [^ref-184]: ECLASS e.V., Classification Class - ECLASS Technischer Support, 미확인, https://eclass.eu/support/technical-specification/structure-and-elements/classification-class, 접근일 2026-09-25 (원문 미열람)
 [^ref-185]: ECLASS e.V., The latest ECLASS Release, 미확인, https://eclass.eu/en/eclass-standard/releases, 접근일 2026-09-25 (원문 미열람)
 
-[^ref-437]: IDTA(Industrial Digital Twin Association), IDTA 02047-1-0 Technical Data for AGV in Intralogistics, 2025-03, https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-438]: IDTA / ECLASS e.V., GUIDELINE How to transport ECLASS in the Asset Administration Shell (IDTA ECLASS Semantic Transport, 1.0), 2024-10, https://industrialdigitaltwin.org/wp-content/uploads/2024/10/2024-10_IDTA_ECLASS_Semantic_Transport_ECLASS_in_AAS_1.0.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-439]: Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A., From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation, 2026-06, https://arxiv.org/abs/2606.02167, 접근일 2026-09-25 (원문 미열람)
+[^ref-198]: IDTA(Industrial Digital Twin Association), IDTA 02047-1-0 Technical Data for AGV in Intralogistics, 2025-03, https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-200]: IDTA / ECLASS e.V., GUIDELINE How to transport ECLASS in the Asset Administration Shell (IDTA ECLASS Semantic Transport, 1.0), 2024-10, https://industrialdigitaltwin.org/wp-content/uploads/2024/10/2024-10_IDTA_ECLASS_Semantic_Transport_ECLASS_in_AAS_1.0.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-201]: Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A., From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation, 2026-06, https://arxiv.org/abs/2606.02167, 접근일 2026-09-25 (원문 미열람)
 
 ## 9. 이력
 

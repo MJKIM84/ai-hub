@@ -28,6 +28,14 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 실행 2026-09-25-45 보강(충전 요소 출처 충돌 병기, ECLASS 16.0 규모, ECLASS-in-AAS 지침, AAS 능력 모델→PDDL 선례, 두 층 식별자 추정), 후속 질문 q4-14, 완료 조건·이력·출처 갱신 |
+| 2026-09-25-45 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절: '충전 속성 템플릿에 없음' [추정] 뒤에 명세 PDF 검색 요약과의 출처 충돌 병기, 충전 요소·두 층 의미 식별자 보강 문단(실행 2026-09-25-45) 추가 |
+| 2026-09-25-45 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(IDTA 02047 충전 요소 출처 충돌 병기, ECLASS 16.0 규모, ECLASS-in-AAS 지침, AAS 능력 모델→PDDL 선례, 두 층 의미 식별자 추정), 새 질문 q4-14, 온톨로지 변경 없음 |
+| 2026-09-25-45 | 생성 | [docs/references/ref-198.md](references/ref-198.md) | 참고문헌 ref-198 등록: IDTA 02047-1-0 Technical Data for AGV in Intralogistics |
+| 2026-09-25-45 | 생성 | [docs/references/ref-200.md](references/ref-200.md) | 참고문헌 ref-200 등록: GUIDELINE How to transport ECLASS in the Asset Administratio… |
+| 2026-09-25-45 | 생성 | [docs/references/ref-201.md](references/ref-201.md) | 참고문헌 ref-201 등록: From Capability Models to Automated Planning: An AAS-Native… |
+| 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
+| 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 조사) 추가, 결론·불확실성 추가, 후속 질문 q6-06, 완료 조건 판정 미충족·미승인, 세부영역 반영 제안, 출처 5건, 이력 행 추가 |
 | 2026-09-25-41 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절 범위 능력의 의미 식별자 소절에 실행 2026-09-25-41 보강(ECLASS·IEC CDD 항목 미확인, ECLASS 분류 semanticId 방법, 구축자 의견) 추가 |
 | 2026-09-25-41 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(ECLASS·IEC CDD 조사, 이동로봇 범위 능력 항목 미확인), 후속 질문 q6-06, 온톨로지 변경 없음(v0.3) |
