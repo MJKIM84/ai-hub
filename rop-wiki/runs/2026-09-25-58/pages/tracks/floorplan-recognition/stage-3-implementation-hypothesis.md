@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-689, ref-690, ref-691, ref-692, ref-693, ref-694, ref-695]
+sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-536, ref-690, ref-414, ref-413, ref-693, ref-694, ref-695]
 last_run: 2026-09-25
 version: 3
 ---
@@ -111,17 +111,17 @@ flowchart LR
 
 ### q3-02 공간 그래프의 노드·엣지 단위와 층위 {#q3-02}
 
-확인한 관제 형식과 실내 공간 연구를 이 위키가 묶으면, 공간 그래프는 배정·장소 이름 해석에 쓰는 구역 수준 노드(방·구역·업무 장소)와 경로 계획·교통에 쓰는 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조여야 세 용도에 함께 쓰일 것으로 보인다. [추정][^ref-689][^ref-079][^ref-692][^ref-694] 관제 형식의 노드는 좌표 경유점이고 실내 공간 연구는 공간 단위를 여러 수준으로 둔다는 확인 사실에서 도출한 것이며, 두 층위를 묶는 구조를 제시한 단일 출처는 확인하지 못했다.
+확인한 관제 형식과 실내 공간 연구를 이 위키가 묶으면, 공간 그래프는 배정·장소 이름 해석에 쓰는 구역 수준 노드(방·구역·업무 장소)와 경로 계획·교통에 쓰는 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조여야 세 용도에 함께 쓰일 것으로 보인다. [추정][^ref-536][^ref-079][^ref-413][^ref-694] 관제 형식의 노드는 좌표 경유점이고 실내 공간 연구는 공간 단위를 여러 수준으로 둔다는 확인 사실에서 도출한 것이며, 두 층위를 묶는 구조를 제시한 단일 출처는 확인하지 못했다.
 
 #### 관제 형식의 경유점·차선 속성 (2026-09-25 확인)
 
-- Open-RMF 교통 계획 라이브러리 rmf_traffic 의 그래프 정의(Graph.hpp, 발행일 미확인)에서 경유점(Waypoint)은 지도 이름·위치와 함께 대기 지점·통과 전용 지점·주차 위치·충전소 여부, 상호 배제 그룹, 승강기 안 위치 여부를 속성으로 갖는다. [사실][^ref-689]
-- 같은 정의에서 차선(Lane)은 진입·진출 노드, 선택적 속도 제한, 상호 배제 그룹을 갖고, 문은 차선 이벤트(DoorOpen·DoorClose)와 문 속성(DoorProperties: 문 이름·시작·끝 위치·지도 이름)으로, 승강기는 차선 이벤트(LiftSessionBegin·LiftMove·LiftDoorOpen·LiftSessionEnd)와 경유점의 승강기 안 여부 속성(in_lift, LiftProperties: 승강기 이름·위치·방향·치수)으로 표현한다. 차선 이벤트에는 도킹(Dock)과 대기(Wait)도 있다. [사실][^ref-689]
-- 같은 상호 배제 그룹에 속한 경유점·차선은 한 번에 로봇 한 대만 점유한다. [사실][^ref-689]
+- Open-RMF 교통 계획 라이브러리 rmf_traffic 의 그래프 정의(Graph.hpp, 발행일 미확인)에서 경유점(Waypoint)은 지도 이름·위치와 함께 대기 지점·통과 전용 지점·주차 위치·충전소 여부, 상호 배제 그룹, 승강기 안 위치 여부를 속성으로 갖는다. [사실][^ref-536]
+- 같은 정의에서 차선(Lane)은 진입·진출 노드, 선택적 속도 제한, 상호 배제 그룹을 갖고, 문은 차선 이벤트(DoorOpen·DoorClose)와 문 속성(DoorProperties: 문 이름·시작·끝 위치·지도 이름)으로, 승강기는 차선 이벤트(LiftSessionBegin·LiftMove·LiftDoorOpen·LiftSessionEnd)와 경유점의 승강기 안 여부 속성(in_lift, LiftProperties: 승강기 이름·위치·방향·치수)으로 표현한다. 차선 이벤트에는 도킹(Dock)과 대기(Wait)도 있다. [사실][^ref-536]
+- 같은 상호 배제 그룹에 속한 경유점·차선은 한 번에 로봇 한 대만 점유한다. [사실][^ref-536]
 - Open-RMF traffic-editor 문서(발행일 미확인)는 차선에 양방향 여부·그래프 번호(graph_idx)·주행 방향 제약을 두고 플릿마다 자기 그래프로 허용 동작을 전달하며(기본 9개 그래프, 9개 플릿), 승강기는 층마다 칸 안에 경유점을 만들어 차선으로 잇고 문은 정점 사이에 따로 추가한다. [사실][^ref-079]
-- Open-RMF 건물 지도 메시지에서 그래프 노드(GraphNode)는 x·y·이름·파라미터 목록만, 그래프 간선(GraphEdge)은 두 꼭짓점 번호·파라미터 목록·양방향/단방향 유형만 가져 통과 조건은 일반 파라미터로 붙는다(발행일 미확인). 두 메시지 파일은 같은 발행 주체의 자료다. [사실][^ref-690][^ref-691]
+- Open-RMF 건물 지도 메시지에서 그래프 노드(GraphNode)는 x·y·이름·파라미터 목록만, 그래프 간선(GraphEdge)은 두 꼭짓점 번호·파라미터 목록·양방향/단방향 유형만 가져 통과 조건은 일반 파라미터로 붙는다(발행일 미확인). 두 메시지 파일은 같은 발행 주체의 자료다. [사실][^ref-690][^ref-414]
 - Open-RMF 주행 지도 통합 문서는 경유점마다 층 이름과 미터 좌표, 적재·하역 주차 지점이나 충전소 같은 특수 속성을 요구하고, 차선은 양방향·단방향과 구간 속도 제한을 가질 수 있다고 적는다. [사실][^ref-080]
-- VDA 5050 주문 JSON 스키마(공식 저장소 main 브랜치, 3.0.0 판, 발행일 미확인)에서 노드는 위치(x·y·mapId 필수, 방향·허용 편차 선택)와 동작 목록을, 엣지는 최대 속도·로봇 최대 높이·적재장치 최소 높이·방향과 방향 유형·주행 방향·회전 조건·궤적(NURBS)·길이·통로(corridor)·동작 목록을 통과 조건으로 갖는다. [사실][^ref-692]
+- VDA 5050 주문 JSON 스키마(공식 저장소 main 브랜치, 3.0.0 판, 발행일 미확인)에서 노드는 위치(x·y·mapId 필수, 방향·허용 편차 선택)와 동작 목록을, 엣지는 최대 속도·로봇 최대 높이·적재장치 최소 높이·방향과 방향 유형·주행 방향·회전 조건·궤적(NURBS)·길이·통로(corridor)·동작 목록을 통과 조건으로 갖는다. [사실][^ref-413]
 
 #### 공용 자원과 통행 제한이 표현되는 위치
 
@@ -142,8 +142,8 @@ flowchart LR
 | 층위 | 단위 | 주로 쓰는 곳 | 확인한 대응 예 |
 |---|---|---|---|
 | 구역 수준 | 방·구역·업무 장소(공간 노드) | 작업 배정, 장소 이름 해석 | 세분화 연구의 다수준 노드[^ref-694] |
-| 차선 수준 | 경유점·주행 차선 | 경로 계획, 교통 관리 | rmf_traffic 경유점·차선, VDA 5050 노드·엣지[^ref-689][^ref-692] |
-| 공용 자원 | 승강기·문·충전 위치·좁은 구역 | 자원 예약 | 차선 이벤트·경유점 속성, 상호 배제 그룹, 해제 구역[^ref-689][^ref-031] |
+| 차선 수준 | 경유점·주행 차선 | 경로 계획, 교통 관리 | rmf_traffic 경유점·차선, VDA 5050 노드·엣지[^ref-536][^ref-413] |
+| 공용 자원 | 승강기·문·충전 위치·좁은 구역 | 자원 예약 | 차선 이벤트·경유점 속성, 상호 배제 그룹, 해제 구역[^ref-536][^ref-031] |
 
 ```mermaid
 flowchart TB
@@ -160,9 +160,9 @@ flowchart TB
 
 도식은 위 종합(추정)을 그린 것이다.
 
-- 확인한 관제 형식에서 문·승강기는 차선 이벤트와 경유점 속성(승강기 안 여부·승강기 칸 경유점), 좁은 구역은 상호 배제 그룹이나 해제 구역 다각형, 충전은 노드 동작으로 흩어져 표현되므로, 자원 예약의 단위는 그래프 노드 하나가 아니라 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. 상호 배제 그룹은 이런 점유 예약을 그래프 요소 묶음 단위로 표현하는 예로 읽을 수 있다. [추정][^ref-689][^ref-079][^ref-031] 자원 예약 단위를 명시한 단일 출처는 확인하지 못했으며, 이 내용은 [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)와 이어진다.
-- 확인한 엣지 속성은 속도·높이·방향·통로·이벤트 같은 운동·설비 조건이고 계단 주행·문 조작 같은 로봇 능력 조건은 플릿별 그래프(Open-RMF)나 관제가 보유한 로봇별 통행 제한(VDA 5050)으로 처리되므로, 공간 그래프는 플릿 중립의 기본 그래프와 로봇별 통행 가능 여부를 분리해 두는 것이 맞아 보인다. [추정][^ref-692][^ref-031][^ref-079] 능력 대조 규칙은 q3-03에서 다룬다.
-- q3-01에 인용한 분류 원문 질문의 ‘3층 출하 대기장’은 구역 수준 노드 하나로 두고 이름·층을 붙인 뒤, 제조사 플릿마다 그 구역에 포함되는 경유점·스테이션을 대응시키는 방식이면 제조사별 지도 차이를 흡수할 수 있을 것으로 보인다. [추정][^ref-079][^ref-692][^ref-212]
+- 확인한 관제 형식에서 문·승강기는 차선 이벤트와 경유점 속성(승강기 안 여부·승강기 칸 경유점), 좁은 구역은 상호 배제 그룹이나 해제 구역 다각형, 충전은 노드 동작으로 흩어져 표현되므로, 자원 예약의 단위는 그래프 노드 하나가 아니라 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. 상호 배제 그룹은 이런 점유 예약을 그래프 요소 묶음 단위로 표현하는 예로 읽을 수 있다. [추정][^ref-536][^ref-079][^ref-031] 자원 예약 단위를 명시한 단일 출처는 확인하지 못했으며, 이 내용은 [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)와 이어진다.
+- 확인한 엣지 속성은 속도·높이·방향·통로·이벤트 같은 운동·설비 조건이고 계단 주행·문 조작 같은 로봇 능력 조건은 플릿별 그래프(Open-RMF)나 관제가 보유한 로봇별 통행 제한(VDA 5050)으로 처리되므로, 공간 그래프는 플릿 중립의 기본 그래프와 로봇별 통행 가능 여부를 분리해 두는 것이 맞아 보인다. [추정][^ref-413][^ref-031][^ref-079] 능력 대조 규칙은 q3-03에서 다룬다.
+- q3-01에 인용한 분류 원문 질문의 ‘3층 출하 대기장’은 구역 수준 노드 하나로 두고 이름·층을 붙인 뒤, 제조사 플릿마다 그 구역에 포함되는 경유점·스테이션을 대응시키는 방식이면 제조사별 지도 차이를 흡수할 수 있을 것으로 보인다. [추정][^ref-079][^ref-413][^ref-212]
 - 경로망의 정점 배치와 엣지 방향이 다중 로봇 충돌 회피와 경로망 품질을 좌우한다는 연구를 보면, 도면 인식으로 얻은 차선 수준 그래프는 최종 경로망이 아니라 경로망 자동 생성·최적화의 입력 초안으로 두는 것이 맞아 보인다. [추정][^ref-693][^ref-268] 이 관점은 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)와 이어진다.
 
 검증이 승인한 개념(경유점·주행 차선)과 공용 자원 속성(상호 배제 여부)은 [공간 그래프 스키마 초안](space-graph-schema-draft.md) v0.7에 반영했다. 공용 자원의 점유 요소 속성과 경유점·주행 차선–공간 노드 관계는 추정 근거여서 스키마 초안 6절 질문으로 두었다.
@@ -173,9 +173,9 @@ flowchart TB
 - 도면 처리 흐름은 입력 정리 → 인식·벡터화 → 공간 그래프 생성 → 온톨로지 적재로 나눌 수 있고 BIM 입력은 인식·벡터화를 건너뛸 수 있는 것으로 보인다. [추정][^ref-084][^ref-070][^ref-463][^ref-441][^ref-225][^ref-456][^ref-459]
 - 사람 검토는 입력 파라미터 확정, 불확실 요소 보정, 운영 요소·장소 이름 주석, 적재 전 검증 보고서 확인의 네 지점에 둘 수 있을 것으로 보인다. [추정][^ref-084][^ref-458][^ref-434][^ref-457][^ref-459]
 - 업무 장소 이름과 공간 노드의 연결은 공간 그래프 생성 뒤 사람 확인에 두어야 할 것으로 보인다. [추정][^ref-084][^ref-079][^ref-462]
-- 공간 그래프는 구역 수준 노드와 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조일 때 배정·경로·자원 예약에 함께 쓰일 것으로 보인다. [추정][^ref-689][^ref-079][^ref-692][^ref-694]
-- 자원 예약 단위는 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. [추정][^ref-689][^ref-079][^ref-031]
-- 로봇별 통행 가능 여부는 플릿 중립의 기본 그래프와 분리해 두는 것이 맞아 보인다. [추정][^ref-692][^ref-031][^ref-079]
+- 공간 그래프는 구역 수준 노드와 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조일 때 배정·경로·자원 예약에 함께 쓰일 것으로 보인다. [추정][^ref-536][^ref-079][^ref-413][^ref-694]
+- 자원 예약 단위는 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. [추정][^ref-536][^ref-079][^ref-031]
+- 로봇별 통행 가능 여부는 플릿 중립의 기본 그래프와 분리해 두는 것이 맞아 보인다. [추정][^ref-413][^ref-031][^ref-079]
 - 도면에서 얻은 차선 수준 그래프는 경로망 자동 생성·최적화의 입력 초안으로 두는 것이 맞아 보인다. [추정][^ref-693][^ref-268]
 - 공간 그래프 스키마 초안을 v0.6 → v0.7로 올렸다(실행 2026-09-25-58): 경유점·주행 차선 추가·확정, 공용 자원에 상호 배제 여부 속성 추가와 확정. 점유 요소 속성은 추정 근거라, 경유점·주행 차선과 공간 노드의 관계는 관계 변경 제안이 없어 반영하지 않았다. 실행 2026-09-25-54(q3-01)에서는 변경이 없었다.
 
@@ -253,10 +253,10 @@ flowchart TB
 [^ref-457]: Ratul, A. K., Acharjee, S., Park, S., & Sakib, M. N., Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to Convert Hand-Drawn Floor Plans to 3D BIM, 2025-10, https://arxiv.org/abs/2510.20838, 접근일 2026-09-25 (원문 미열람)
 [^ref-077]: DoorDet 저자(arXiv 2508.07714), DoorDet: Semi-Automated Multi-Class Door Detection Dataset via Object Detection and Large Language Models, 2025-08, https://arxiv.org/abs/2508.07714, 접근일 2026-09-25 (원문 미열람)
 
-[^ref-689]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-09-25
+[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-09-25
 [^ref-690]: Open Robotics (open-rmf), rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.msg, 미확인, https://github.com/open-rmf/rmf_building_map_msgs/blob/main/rmf_building_map_msgs/msg/GraphEdge.msg, 접근일 2026-09-25
-[^ref-691]: Open Robotics (open-rmf), rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphNode.msg, 미확인, https://github.com/open-rmf/rmf_building_map_msgs/blob/main/rmf_building_map_msgs/msg/GraphNode.msg, 접근일 2026-09-25
-[^ref-692]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/order.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/order.schema, 접근일 2026-09-25
+[^ref-414]: Open Robotics (open-rmf), rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphNode.msg, 미확인, https://github.com/open-rmf/rmf_building_map_msgs/blob/main/rmf_building_map_msgs/msg/GraphNode.msg, 접근일 2026-09-25
+[^ref-413]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/order.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/order.schema, 접근일 2026-09-25
 [^ref-693]: Henkel, C., & Toussaint, M., Optimized Directed Roadmap Graph for Multi-Agent Path Finding Using Stochastic Gradient Descent, 2020-03, https://arxiv.org/abs/2003.12924, 접근일 2026-09-25 (원문 미열람)
 [^ref-694]: Claridades, A. R. C., Choi, H.-S., & Lee, J., An Indoor Space Subspacing Framework for Implementing a 3D Hierarchical Network-Based Topological Data Model, 2022, https://doi.org/10.3390/ijgi11020076, 접근일 2026-09-25 (원문 미열람)
 [^ref-695]: Ray, A., Bradley, C., Carlone, L., & Roy, N., Task and Motion Planning in Hierarchical 3D Scene Graphs (ISRR 2024), 2024-03, https://arxiv.org/abs/2403.08094, 접근일 2026-09-25 (원문 미열람)

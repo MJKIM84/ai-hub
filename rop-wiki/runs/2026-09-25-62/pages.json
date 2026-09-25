@@ -1,0 +1,577 @@
+{
+  "run_id": "2026-09-25-62",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+      "section": "3. 조사 결과 — q2-03",
+      "budget_chars": 5200,
+      "summary": "확인한 공개 데이터셋은 지시에 목표 조건·최종 상태·형식 명세 같은 정답을 짝지우지만 환경이 가정·주방·도구 호출·내비게이션이었고, 물류 창고 지시 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). [추정][^ref-539][^ref-089][^ref-354][^ref-547]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "q2-03 의 핵심 결론(쌍 구조·물류 공백·배정 정답 부재·두 층 평가)은 이 위키의 추론이며 데이터셋 수치는 모두 저자 보고다. [추정][^ref-090][^ref-544]",
+      "planned_findings": [
+        "f15",
+        "f16",
+        "f17",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+      "section": "5·6·7·8·9절",
+      "budget_chars": 1200,
+      "summary": "후속 질문 q5-04·q5-05 등록, 완료 조건 첫 항목 충족·둘째 미충족, 세부영역 23 추가, 출처·이력 갱신.",
+      "planned_findings": [
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "4. 필요한 데이터와 표준",
+      "budget_chars": 2200,
+      "summary": "'해석·분해 평가 데이터' 소절 신설: 공개 데이터셋 비교표(이 위키 구성), 필요한 쌍 구조·물류 공백·배정 정답 부재(추정). [추정][^ref-539][^ref-089][^ref-354]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f5",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f15",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "section": "6. 살아있는 산출물 링크",
+      "budget_chars": 300,
+      "summary": "아이디어 2 4절에 q2-03 평가 데이터 소절이 실렸음을 반영하고 초안 변경 없음을 적는다.",
+      "planned_findings": []
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가",
+      "patches": [
+        {
+          "section": "4. 필요한 데이터와 표준",
+          "action": "replace",
+          "frontmatter": {
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056"
+            ]
+          },
+          "content": "이 절은 [단계 2. 필요한 데이터와 표준 조사](../tracks/nl-task-chatbot/stage-2-data-and-standards.md)의 결과를 싣는다. q2-01 의 답인 필요한 데이터 항목과 그 원천(실행 2026-09-25-37), q2-02 의 답인 작업·배정 결과를 표현하는 표준·형식 비교(실행 2026-09-25-51), q2-03 의 답인 해석·분해 평가 데이터(실행 2026-09-25-62)를 아래 세 소절에 실었다.\n\n### 필요한 데이터 항목과 원천\n\n로봇 관제 인터페이스는 작업 종류·장소·화물을 받지만 기한 필드는 없고, 기한·우선순위는 업무 시스템 작업 지시에 선택 필드로 있다. [사실][^ref-125][^ref-411][^ref-413][^ref-130] 로봇 기능 온톨로지와 공간 그래프는 아직 트랙 산출물이 없어, VDA 5050 팩트시트와 Open-RMF 건물 지도 그래프를 대리 원천으로 썼다. 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-01)에 있다.\n\n아래 표는 로봇 관제 인터페이스와 업무 시스템 표준의 필드를 채팅 지시의 여섯 정보 항목에 대응시켜 이 위키가 구성한 것이며, 이 대응을 제시한 단일 출처는 확인하지 못했다. [추정][^ref-125][^ref-411][^ref-413][^ref-228][^ref-130][^ref-015]\n\n| 정보 항목 | 로봇 인터페이스 쪽 필드 | 업무 시스템 쪽 필드 |\n|---|---|---|\n| 작업 종류 | Open-RMF 작업 범주, VDA 5050 동작 유형, 팩트시트 지원 동작 | 미확인 |\n| 장소 | 경유점 이름·번호(Open-RMF), 지도 id 가 있는 노드(VDA 5050) | 미확인 |\n| 대상 화물 | sku·수량(Open-RMF), 적재물 id·유형(VDA 5050), 팩트시트 적재 명세 | 자재 정의·로트(ISA-95), SSCC 같은 식별자(EPCIS) |\n| 기한 | 필드 없음 | 종료 시각(ISA-95) |\n| 우선순위 | 우선순위(Open-RMF 선택 필드), VDA 5050 주문 수준에는 없음 | 우선순위(ISA-95) |\n| 완료 조건 | 이번에 연 요청·주문 스키마에 필드 없음 | 미확인 |\n\n- Open-RMF 작업 요청은 작업 범주와 작업 기술만 필수로 두고 가장 이른 시작 시각·우선순위 등을 선택 필드로 두며 기한 필드가 없다. VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 주문에도 주문 수준의 기한·우선순위 필드가 없다. [사실][^ref-125][^ref-413]\n- OPC UA for ISA-95 작업 제어 노드셋(모델 발행일 2024-01-31)의 작업 지시는 작업 지시 id 만 필수이고 시작·종료 시각, 우선순위, 자재 요구 등은 선택이며, 자재 데이터형은 자재 정의 id·로트 id·수량·단위 등을 둔다(자재 클래스·하위 로트 id 도 있음, 모두 선택). [사실][^ref-130]\n- VDA 5050 3.0.0(공식 저장소 main 브랜치, 확인일 2026-09-25) 팩트시트는 적재 명세와 지원 동작 목록을 로봇이 선언하게 한다. [사실][^ref-228] 이번 실행은 이를 로봇 기능 온톨로지의 대리 원천으로 썼다.\n- 기한은 로봇 쪽에 필드가 없으므로 ROP 의 작업 모델이 보유하고 로봇에는 가장 이른 시작 시각·우선순위·배정 순서로 바꿔 넘겨야 할 것으로 보인다(열린 질문 [oq-019](../open-questions.md)와 같은 방향). [추정][^ref-125][^ref-413][^ref-130]\n- 대상 화물은 인터페이스마다 식별 단위(품목 코드·수량, 적재물 id, 자재·로트, SSCC)가 달라 어느 단위로 받을지와 대응을 정해야 할 것으로 보인다(열린 질문 [oq-007](../open-questions.md)·[oq-023](../open-questions.md)). [추정][^ref-411][^ref-031][^ref-130][^ref-015]\n- 상위 업무 시스템 쪽에서는 Mecalux 가 WMS 에 통합한 대화형 비서가 긴급 주문 출고나 통로 잠금 해제 같은 WMS 작업을 채팅 요청으로 실행하되 실행 전에 동작·영향 항목 요약을 보여 주고 확인을 받는다고 밝힌다. 이는 WMS 제품 기능이며 ROP 에게는 연계 대상의 사례다. [추정] 벤더 주장[^ref-418]\n- 완료 조건의 표현 원천(작업 상태 스키마, EPCIS 이벤트)은 아직 확인하지 않았다.\n\n검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 상황(장소 표현의 공간 노드 참조)과 업무(기한·우선순위 값 원천) 속성으로 반영되었다(v0.4).\n\n### 작업·배정 결과를 표현하는 표준·형식\n\n확인한 형식들은 작업의 분해·순서 구조, 배정 결과, 진행 상태, 기한·우선순위를 나누어 담지만, 지시 원문과 상황 값의 출처, 배정 근거·산출 방식, 사용자 확인 여부를 함께 담는 형식은 이번 조사 범위에서 찾지 못했다. [추정][^ref-111][^ref-495][^ref-031][^ref-130][^ref-502][^ref-496][^ref-501][^ref-500][^ref-504] 자세한 근거와 출처별 필드는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-02)에 있다.\n\n아래 표는 각 형식의 공식 파일·명세에서 관찰한 필드를 이 위키가 대응시켜 구성한 것이며, 출처의 표·그림을 옮긴 것이 아니다. \"확인되지 않음\"은 연 문서 범위의 부재 관찰이고, IEEE 1872.1-2024·BPMN 2.0.2·HDDL 은 원문을 열람하지 못했다. [추정][^ref-111][^ref-495][^ref-031][^ref-230][^ref-130][^ref-502][^ref-496][^ref-501][^ref-500][^ref-504]\n\n| 형식 | 담는 것 | 초안 대비 확인되지 않은 것 |\n|---|---|---|\n| Open-RMF 복합 작업·작업 상태 | 순서 있는 단계, 배정 결과(assigned_to), 배정 과정(dispatch)·진행(status) 상태, 시작·종료 시각 | 작업 사이 선행 의존, 배정 근거, 확인 여부 |\n| VDA 5050 3.0.0 | 로봇 한 대의 노드–간선 그래프 주문, 하위 주문, 관제의 주문 배정, waitForTrigger 대기 | 업무·작업 수준 구조, 배정 근거 |\n| MassRobotics AMR 상호운용 표준 | 로봇의 식별·상태 보고(작업 전송 메시지 없음) | 작업 표현 전반 |\n| OPC UA for ISA-95 작업 지시·응답 | 시작·종료 시각, 우선순위, 자원 요구, 실적, 작업 상태 | 작업 지시 사이 선후, 상태 값 목록(미확인) |\n| BPMN 2.0.2 | 사람 수행자·잠재 담당자, 자원 배정 식 | 로봇 배정 근거(미확인) |\n| Serverless Workflow DSL | 순차·병렬 작업, 시간 초과, 일정 | 수행자 배정, 우선순위·기한 |\n| HDDL | 작업과 분해 방법, 하위 작업의 부분·전체 순서 | 배정(미확인) |\n| BehaviorTree.CPP 행동 트리 XML | 트리 구조, 상태 전이 기록 | 배정(미확인) |\n| IEEE 1872.1-2024 | 작업 지식 표현 온톨로지(본문 미열람) | 미확인 |\n\n- Open-RMF 작업 상태 스키마는 배정 결과를 그룹·이름으로 된 assigned_to 로, 배정 과정을 queued·selected·dispatched·failed_to_assign·canceled_in_flight 의 dispatch 상태로 나타낸다(확인일 2026-09-25 기준). [사실][^ref-111] OPC UA for ISA-95 작업 응답(모델 발행일 2024-01-31)은 작업 상태와 실제 시작·종료 시각, 인원·설비·물리 자산·자재 실적을 둔다. [사실][^ref-130]\n- 초안 대비 빠진 항목(지시 원문·값 출처, 배정 근거·산출 방식, 확인 여부)은 ROP 가 자체 작업 모델에 두고 외부 형식으로 옮겨야 할 것으로 보인다. 이는 형식별 필드 관찰을 이 위키가 대응시킨 추론이며, IEEE 1872.1 은 본문을 열람하지 못해 대조하지 못했다. [추정][^ref-111][^ref-495][^ref-031][^ref-130][^ref-504]\n- 로봇·다중 로봇 임무 기술 형식으로 행동 트리, 상태 기계, 계층적 작업 네트워크, BPMN 네 가지를 제어 구조·임무 개념·표현력·도구 지원 측면에서 비교 분석한 연구(Filippone 외, arXiv v1 2026-03, v2 2026-08-17, 원문 미열람)가 있다. [사실][^ref-116]\n- 해석·분해의 정확도를 평가할 지시–정답 작업 쌍 데이터(q2-03)는 아래 \"해석·분해 평가 데이터\" 소절에 있다.\n\n검증이 승인한 부분은 [업무 분해·배정 설계 초안](../tracks/nl-task-chatbot/task-model-draft.md)의 진행 상태(외부 표현 원천 메모)와 배정(외부 표현 대응 메모)에 반영되었다(v0.5).\n\n### 해석·분해 평가 데이터\n\n확인한 공개 데이터셋은 지시에 목표 조건·최종 상태·형식 명세·의도와 슬롯 같은 정답을 짝지우지만 환경이 가정·주방·도구 호출·개인 비서·내비게이션이었고, 물류 창고 지시를 정답과 짝지은 데이터셋은 이번 검색 범위에서 찾지 못했다(이 위키의 정리(추론), 부재의 확인은 아님). [추정][^ref-539][^ref-543][^ref-089][^ref-544][^ref-354][^ref-545][^ref-547][^ref-548] 수치와 원문 열람 여부를 포함한 자세한 근거는 [단계 2 조사 결과](../tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-03)에 있다.\n\n아래 표는 각 데이터셋의 README·논문 요약에서 관찰한 형식을 이 위키가 구성한 비교표이며, README·논문의 표를 옮긴 것이 아니다. 논문에만 기댄 칸은 원문 미열람이다. [추정][^ref-539][^ref-540][^ref-541][^ref-542][^ref-543][^ref-089][^ref-090][^ref-164][^ref-544][^ref-354][^ref-359][^ref-545][^ref-056][^ref-546]\n\n| 데이터셋 | 환경 | 지시 형태 | 정답·평가 형태 |\n|---|---|---|---|\n| ALFRED | 가정(AI2-THOR) | 상위 목표 기술·단계별 지시 | PDDL 목표 조건과 전문가 시연(논문 기준) |\n| LoTa-Bench | 가정(ALFRED·AI2-THOR, Watch-And-Help 확장·VirtualHome) | 작업 지시 | 시뮬레이터 자동 정량화, 성공률(논문 기준) |\n| TEACh | 가정(AI2-THOR) | 지시자–수행자 대화 | 작업 완수 대화 세션(EDH·TfD) |\n| SMART-LLM 데이터셋 | 가정(AI2-THOR), 다중 로봇 | 네 범주 상위 지시 | 가용 로봇, 작업 후 최종 상태 |\n| MAT-THOR(LaMMA-P) | 가정(AI2-THOR), 다중 에이전트 | 자연어 지시(모호한 지시 포함, 논문 기준) | 정답 PDDL 도메인·목표 조건(논문 기준) |\n| AmbiK | 주방 | 모호·비모호 지시 쌍 | 모호성 유형, 명확화 질문·답, 작업 계획 |\n| NoisyToolBench | 도구 호출 API | 불완전 지시 | 정확도·되묻기 효율(ToolEvaluator, 논문 기준) |\n| Snips NLU 벤치마크 | 개인 비서 | 의도별 질의 | 슬롯별 정밀도·재현율 |\n| Lang2LTL 말뭉치 | 내비게이션 | 영어 발화 | LTL 식(논문 기준) |\n| AI Hub 일상생활 작업 및 명령 수행 데이터 | 3D 일상생활 공간 | 자연어 명령 | 행동 순서·객체 위치(정답 형식 미확인) |\n\n- 이 데이터셋들을 종합하면 해석·분해 평가용 지시–정답 쌍은 지시문, 초기 환경 상태, 정답 목표 조건·최종 상태 또는 형식 명세(PDDL·LTL), 선택적으로 정답 계획·전이 수, 모호 지시의 경우 모호성 유형과 명확화 질문·답을 담는 구조로 보인다(이 위키의 정리(추론)). [추정][^ref-540][^ref-541][^ref-090][^ref-544][^ref-354][^ref-056]\n- 물류에 가까운 자료는 실외 배송 항법 벤치마크(연계 대상)와 물류 AMR 임무 명세를 다룬 학위논문뿐이었고 공개 지시–정답 데이터셋 형태인지는 미확인이어서, ROP 는 화물·로케이션·기한·배정 로봇을 정답에 담은 물류 지시 평가 자료를 자체 구축해야 할 것으로 보인다(이 위키의 정리(추론), 부재의 확인은 아님). [추정][^ref-547][^ref-548] 위 3절의 물류 적용 공백과 같은 방향의 관찰이다.\n- 확인한 다중 로봇 벤치마크는 목표 상태 달성과 정답 전이 수 대비 로봇 활용도를 재지만 배정의 전체 최적성(이동거리·납기)을 정답으로 두지 않는 것으로 보여, 배정 적합성 평가에는 정답 배정이나 목적함수 기준값이 따로 필요할 것으로 보인다(이 위키의 정리(추론)). [추정][^ref-090][^ref-544]\n- 이 데이터를 쓰는 평가 지표(해석 정확도와 분해·배정 결과의 목표 달성도를 나눠 재는 방식 등)와 검증 절차는 6. 검증 방법 절에서 [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md)의 결과로 다룬다."
+        },
+        {
+          "section": "7. 미해결 질문 백로그",
+          "action": "append",
+          "content": "[^ref-539]: askforalfred (ALFRED 공식 저장소), ALFRED — A Benchmark for Interpreting Grounded Instructions for Everyday Tasks (GitHub README), 미확인, https://github.com/askforalfred/alfred, 접근일 2026-09-25\n[^ref-540]: Shridhar, M. 외, ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks, 2020, https://openaccess.thecvf.com/content_CVPR_2020/html/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-541]: lbaa2022 (LoTa-Bench 공식 저장소), LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README), 미확인, https://github.com/lbaa2022/LLMTaskPlanning, 접근일 2026-09-25\n[^ref-542]: LoTa-Bench 저자(arXiv 2402.08178), LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents, 2024-02, https://arxiv.org/abs/2402.08178, 접근일 2026-09-25 (원문 미열람)\n[^ref-543]: Amazon Alexa (alexa/teach GitHub), TEACh: Task-driven Embodied Agents that Chat (GitHub README), 미확인, https://github.com/alexa/teach, 접근일 2026-09-25\n[^ref-544]: Zhang, X. 외(LaMMA-P 저자), LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner, 2024-09, https://arxiv.org/abs/2409.20560, 접근일 2026-09-25 (원문 미열람)\n[^ref-545]: Snips (sonos/nlu-benchmark GitHub), nlu-benchmark — 2017-06-custom-intent-engines (README), 2017-06, https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines, 접근일 2026-09-25\n[^ref-546]: 한국지능정보사회진흥원(AI Hub), 일상생활 작업 및 명령 수행 데이터(임무수행 명령어), 미확인, https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71547, 접근일 2026-09-25 (원문 미열람)\n[^ref-547]: OpenBench 저자(arXiv 2502.09238), OpenBench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics, 2025-02, https://arxiv.org/abs/2502.09238, 접근일 2026-09-25 (원문 미열람)\n[^ref-548]: Högskolan Väst (DiVA 학위논문, 저자 미확인), An LLM- Interface for Robot Mission Specification in Logistics, 미확인, https://hv.diva-portal.org/smash/get/diva2:2080486/FULLTEXT01.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-056]: Liu, J. X. 외, Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments, 2023-02, https://arxiv.org/abs/2302.11649, 접근일 2026-09-25 (원문 미열람)"
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.5. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 실행 2026-09-25-26 과 2026-09-25-62 에서는 변경이 없었다. 트랙 실행이 근거 finding과 함께 갱신한다.\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님).\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 2 | q2-03 답함(지시–정답 공개 데이터셋·지표 비교, 필요한 쌍 구조·물류 데이터 공백·배정 정답 부재는 추정), 새 질문 q5-04·q5-05, 아이디어 2 4절 평가 데이터 소절 추가, 초안 변경 없음 | run 2026-09-25-62",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 2: q2-03 답함 — 해석·분해 평가용 지시–정답 공개 데이터셋(ALFRED·SMART-LLM·AmbiK 등) 비교, 물류 창고 지시 데이터셋은 검색 범위에서 찾지 못함(추정)",
+    "category_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 2: 13. 작업 배정 — MRTA 관련 LLM 다중 로봇 배정 평가 데이터셋(SMART-LLM, MAT-THOR)과 지표 정리, 배정 최적성을 정답으로 둔 자료는 확인되지 않음(추정)",
+    "area_recent": "2026-09-25 — 13. 작업 배정 — MRTA: 트랙 자연어 업무 지시 챗봇 단계 2(q2-03)에서 LLM 배정 평가 데이터셋·지표를 8. 대표 연구와 자료에 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "goal-condition",
+      "term_ko": "목표 조건",
+      "term_en": "Goal Condition",
+      "definition": "작업이 끝났을 때 환경이 만족해야 하는 상태 조건의 집합으로, 지시 수행 벤치마크에서 계획·실행 결과가 맞았는지를 판정하는 정답으로 쓰인다.",
+      "description": "ALFRED 는 작업별 PDDL 목표 조건으로 전문가 시연을 만들고, SMART-LLM 은 정답 최종 상태 조건 대비 목표 조건 재현율(GCR)로, MAT-THOR 는 작업마다 정답 목표 조건을 붙여 평가한다(논문 기준, 원문 미열람).",
+      "related_areas": [
+        23,
+        27,
+        13
+      ],
+      "sources": [
+        "ref-540",
+        "ref-090",
+        "ref-544"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "signal-temporal-logic",
+      "term_ko": "신호 시간 논리",
+      "term_en": "Signal Temporal Logic (STL)",
+      "definition": "연속 시간 신호에 대해 시간 구간이 붙은 조건(예: 10초 안에 도착)을 기술하는 형식 논리로, 로봇 임무 명세에 쓰인다.",
+      "description": "물류 AMR 임무 명세에 LLM 을 STL 번역 인터페이스로 쓴 학위논문은 구문상 유효한 STL 식을 일관되게 만들지 못하는 점을 병목으로 보고했다(원문 미열람).",
+      "related_areas": [
+        27,
+        23
+      ],
+      "sources": [
+        "ref-548"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-539",
+      "org": "askforalfred (ALFRED 공식 저장소)",
+      "title": "ALFRED — A Benchmark for Interpreting Grounded Instructions for Everyday Tasks (GitHub README)",
+      "published": null,
+      "url": "https://github.com/askforalfred/alfred",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ALFRED 공식 저장소 README. 자연어 지시와 1인칭 시각을 가정 작업 행동 순서로 대응시키는 벤치마크, AI2-THOR 2.1.0(README 기준), 목표 기술·단계별 지시.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-540",
+      "org": "Shridhar, M. 외",
+      "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+      "published": "2020",
+      "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.html",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. CVPR 2020 논문. 25,743개 지시·8,055개 전문가 시연, PDDL 목표 조건으로 고전 계획기가 시연 생성(검색 요약, 저자 보고).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-541",
+      "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+      "title": "LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README)",
+      "published": null,
+      "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "LoTa-Bench README. 가정 서비스 에이전트 작업 계획 성능 자동 정량화, ALFRED·AI2-THOR 와 Watch-And-Help 확장·VirtualHome.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-542",
+      "org": "LoTa-Bench 저자(arXiv 2402.08178)",
+      "title": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.08178",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ICLR 2024 논문. 언어 기반 작업 계획기의 자동 평가 벤치마크(성공률 지표).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-543",
+      "org": "Amazon Alexa (alexa/teach GitHub)",
+      "title": "TEACh: Task-driven Embodied Agents that Chat (GitHub README)",
+      "published": null,
+      "url": "https://github.com/alexa/teach",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "TEACh README. Commander/Driver 사람–사람 대화 세션, AI2-THOR, EDH·TfD, 데이터 CDLA-Sharing 1.0.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-544",
+      "org": "Zhang, X. 외(LaMMA-P 저자)",
+      "title": "LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.20560",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MAT-THOR 70개 작업(복합 30·복잡 20·모호 20), 5개 평면도, 작업마다 자연어 지시·정답 PDDL 도메인·목표 조건(검색 요약, 저자 보고).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-545",
+      "org": "Snips (sonos/nlu-benchmark GitHub)",
+      "title": "nlu-benchmark — 2017-06-custom-intent-engines (README)",
+      "published": "2017-06",
+      "url": "https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Snips NLU 벤치마크. 7개 의도, 의도당 2000개 이상 크라우드소싱 질의, 슬롯별 정밀도·재현율.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-546",
+      "org": "한국지능정보사회진흥원(AI Hub)",
+      "title": "일상생활 작업 및 명령 수행 데이터(임무수행 명령어)",
+      "published": null,
+      "url": "https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71547",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 3D 일상생활 공간에서 자연어 명령에 대한 행동 순서 예측과 객체 위치 파악을 위한 국내 공개 학습 데이터(검색 요약, 구축 기관·규모·정답 형식 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-547",
+      "org": "OpenBench 저자(arXiv 2502.09238)",
+      "title": "OpenBench: A New Benchmark and Baseline for Semantic Navigation in Smart Logistics",
+      "published": "2025-02",
+      "url": "https://arxiv.org/abs/2502.09238",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 실외 라스트마일 배송 로봇의 의미 기반 항법 벤치마크와 LLM·VLM·OSM 기반 기준 시스템.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-548",
+      "org": "Högskolan Väst (DiVA 학위논문, 저자 미확인)",
+      "title": "An LLM- Interface for Robot Mission Specification in Logistics",
+      "published": null,
+      "url": "https://hv.diva-portal.org/smash/get/diva2:2080486/FULLTEXT01.pdf",
+      "type": "논문",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 물류 AMR 임무 명세에서 LLM 을 STL 번역 인터페이스로 쓸 때의 신뢰성을 본 학위논문. 구문상 유효한 STL 생성이 병목이라고 보고.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-089",
+      "org": "SMARTlab-Purdue (Purdue University)",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models (GitHub README)",
+      "published": null,
+      "url": "https://github.com/SMARTlab-Purdue/SMART-LLM",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "SMART-LLM 공식 README. 네 범주 상위 지시의 다중 로봇 작업 계획 벤치마크 데이터셋, 시험 데이터에 작업·가용 로봇·최종 상태.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-090",
+      "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+      "published": "2023-09",
+      "url": "https://arxiv.org/abs/2309.10062",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. SMART-LLM 논문. 36개 지시 데이터셋과 SR·TCR·GCR·RU·Exe 지표(검색 요약, 저자 보고).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-164",
+      "org": "TASL Lab (LaMMA-P 저자)",
+      "title": "LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocation and Planning with LM-Driven PDDL Planner (GitHub README)",
+      "published": null,
+      "url": "https://github.com/tasl-lab/LaMMA-P",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "LaMMA-P README. AI2-THOR 기반 두 복잡도 수준의 가정 작업 벤치마크 MAT-THOR.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-354",
+      "org": "cog-model (AmbiK 저자)",
+      "title": "AmbiK-dataset — README (AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment)",
+      "published": null,
+      "url": "https://github.com/cog-model/AmbiK-dataset",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "AmbiK README. 모호·비모호 작업 1000쌍(보정 100·시험 900), 모호성 유형, 명확화 Q&A, 계획, 모호성 발생 지점 필드.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-359",
+      "org": "Wang, W. 외",
+      "title": "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+      "published": "2024-09",
+      "url": "https://arxiv.org/abs/2409.00557",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. NoisyToolBench(ToolBench 200건을 불완전하게 바꾼 벤치마크), Ask-when-Needed, ToolEvaluator.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-056",
+      "org": "Liu, J. X. 외",
+      "title": "Grounding Complex Natural Language Commands for Temporal Tasks in Unseen Environments",
+      "published": "2023-02",
+      "url": "https://arxiv.org/abs/2302.11649",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. Lang2LTL 논문. 발화–LTL 식 말뭉치(47개 템플릿·2,125개 식·약 5만 개 발화, 저자 보고)와 OSM 환경 접지 평가 자료(규모 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "additional_research_requests": [
+    "단계 2 페이지 3절 q2-03: TEACh 논문(arXiv 2110.00534)을 출처로 등록해 TATC 를 포함한 세 벤치마크 구성을 원문으로 확인할 필요가 있다(현재 README 에서 TATC 미확인).",
+    "단계 2 페이지 3절 q2-03: LoTa-Bench 의 성공률 지표와 SMART-LLM·ALFRED·MAT-THOR 데이터셋 수치는 논문 원문 미열람 저자 보고값이다. 원문 또는 독립 출처로 교차 확인이 필요하다.",
+    "단계 2 페이지 3절 q2-03: Lang2LTL OSM 평가 자료의 지역 수(21·22개)와 명령 수가 판마다 다르게 요약된다. 판별 수치 확인이 필요하다.",
+    "단계 2 페이지 3절 q2-03: AI Hub '일상생활 작업 및 명령 수행 데이터'의 구축 기관·규모·정답 형식·발행일과 Högskolan Väst 학위논문의 저자·발행일·평가 자료 규모 확인이 필요하다.",
+    "단계 5 준비: PlanBench 에 Logistics 도메인이 포함되는지 확인하면 물류 계획 평가 자료 후보를 판단할 수 있다(이번 실행에서 README 로 확인하지 못해 제외).",
+    "운영 참고: 단계 페이지 상태 줄(H1 아래)은 H2 절 밖이라 patches 로 바꿀 수 없어, 이번 실행은 단계 2 페이지만 전체 content 로 냈다. 상태 줄을 patches 로 갱신할 수단을 pipeline 담당에게 요청한다.",
+    "백로그 정리 요청: q3-09 와 q3-10, q1-05 와 q1-06 이 사실상 같은 질문으로 중복 등록되어 있다(1차 검증 지적). 백로그 담당의 폐기·병합 판단이 필요하다."
+  ],
+  "fixes_applied": [
+    "f11 — 단계 2 페이지 3절 q2-03 에서 말뭉치(47개 템플릿·2,125개 식·약 5만 개 발화)만 '저자 보고, 원문 미열람'과 함께 [사실]로 쓰고, OSM 평가 자료는 '지역 수는 요약에 따라 21·22개로 다르고 명령 수는 미확인'으로 [추정] 처리했다.",
+    "f4 — TEACh 문장을 README 근거(Commander 와 수행 역할 README 표기 Driver·논문 표기 Follower, AI2-THOR, EDH·TfD, 세 라이선스)로만 쓰고 TATC 는 README 에서 확인되지 않아 미확인이라고 적었다.",
+    "f3 — README(ref-541)는 자동 정량화와 두 데이터셋·시뮬레이터 쌍의 근거로만 쓰고, 성공률 비교 문장에는 원문 미열람 논문 ref-542 각주를 달았다(단계 페이지·아이디어 페이지 모두).",
+    "f1 — AI2-THOR 버전을 'README 기준 2.1.0'으로 적었다.",
+    "f7 — README(ref-164)의 '두 복잡도 수준' 표현과 논문(ref-544)의 '복합 30·복잡 20·모호 지시 20' 구성을 함께 적고, 70개 작업·5개 평면도가 저자 보고(원문 미열람)임을 같은 문장에 밝혔다.",
+    "f2·f6·f7·f9·f11 — 수치 문장마다 '저자 보고, 원문 미열람'을 적었고, f2 에는 README 와 논문이 같은 저자 계열이라 독립 교차 확인이 아님을 같은 문장에 적었다. 아이디어 페이지 비교표에는 수치를 넣지 않았다.",
+    "f12 — AI Hub 문장에 '구축 기관·규모·정답 형식·발행일 미확인'을 병기하고 가정(일상생활) 환경이며 물류 지시 데이터가 아님을 적었다.",
+    "f14 — 학위논문 문장에 '저자·발행일·평가 자료 규모 미확인, 학위논문 단일 출처'를 같은 문장에 적고 학위 수준은 쓰지 않았다.",
+    "f13 — '연계 대상:' 표시를 유지하고 실외 배송 항법은 분류 원문 9장 업종별 조건 경계에 속하는 평가 자료 사례로만 본다고 적었다.",
+    "f15·f16·f17·f18 — 모두 [추정]을 유지하고 '이 위키의 정리(추론)'임을 밝혔으며, f16 에는 '부재의 확인은 아님'을 유지했고 흐름 매트릭스 갱신(flow_matrix_updates)에 넣지 않았다.",
+    "원문 미열람 표시 — ref-540·542·544·546·547·548·090·359·056 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-548 각주의 기관 자리는 'Högskolan Väst (DiVA 학위논문, 저자 미확인)', 발행일 자리는 '미확인'으로 두었다.",
+    "open_questions_new 1건 — open_question_updates 에 넣지 않았고, 국내 물류 지시 데이터셋을 찾지 못한 점을 단계 2 페이지 4절 남은 불확실성에 f16 근거로 적어 트랙 백로그 q1-06 에 연결했다.",
+    "단계 2 페이지 2절 — q2-03 을 '답함', 답한 실행 id 2026-09-25-62, 답 위치 #q2-03 으로 바꾸고 3절에 '### q2-03 … {#q2-03}' 소제목을 신설했으며, 상태 줄을 열린 질문 4건·답한 질문 3건으로 맞췄다(상태 줄이 H2 절 밖이라 이 페이지는 전체 content 로 냈다).",
+    "단계 2 페이지 6절 — 첫 항목을 평가 데이터 소절 반영으로 '충족', 둘째 항목을 '미충족', 검증 판정 칸을 두 항목 모두 '미충족 · 미승인'으로 두고, 아래 줄을 지시 문구 그대로 '다음 단계로 전환: 아니오(작업 모델 정보 항목 일부만 반영 — 작업 요구 적재물 속성·완료 조건 미확정, 열린 질문 q2-04·q2-05·q2-06·q2-07)'로 썼다.",
+    "아이디어 2 페이지 4절 — 도입 문단과 q2-02 소절 끝의 'q2-03 은 아직 조사하지 않았다' 문장을 새 소절 '해석·분해 평가 데이터' 안내로 바꾸고, 새 소절 비교표가 README·논문의 표를 옮긴 것이 아니라 이 위키가 구성한 것임을 밝혔으며, 지표는 6. 검증 방법에서 단계 5 결과로 다룬다고 적었다.",
+    "13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영, 23. 시험·형식 검증·벤치마크 — 세부영역 페이지를 고치지 않고 area_reflection_proposals 로만 냈으며, 13 과 27 의 제안과 단계 페이지 7절에 서로 연결을 표시했다.",
+    "새 질문 두 건 — q5-04(f16), q5-05(f17)로 단계 5 에 등록하고, 정답 배정 생성 질문 문장 끝에 '(관련: q3-05, q5-01)'을 붙였다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md",
+    "ontology_draft_version": "0.5",
+    "backlog_updates": [
+      {
+        "id": "q2-03",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-03"
+      },
+      {
+        "id": "q5-04",
+        "status": "열림",
+        "answer_link": null,
+        "question": "물류 지시 평가 자료를 자체 구축할 때 지시–정답 쌍의 정답을 무엇(업무 분해·배정 설계 초안의 작업 모델 인스턴스, 최종 상태·목표 조건, 배정 결과)으로 두고, ALFRED 목표 조건·SMART-LLM 최종 상태·AmbiK 명확화 질문 형식을 화물·로케이션·기한 항목으로 어떻게 확장하는가? (q2-03 에서 파생)",
+        "stage": 5,
+        "origin": "f16"
+      },
+      {
+        "id": "q5-05",
+        "status": "열림",
+        "answer_link": null,
+        "question": "배정 적합성을 평가하려면 목표 상태 달성 외에 정답 배정이나 목적함수 기준값이 필요한데, 이를 최적화 해법기(MILP 등)로 생성해 LLM 배정 결과와 비교하는 정답으로 쓸 수 있는가? (q2-03 에서 파생) (관련: q3-05, q5-01)",
+        "stage": 5,
+        "origin": "f17"
+      }
+    ],
+    "log_entry": "답한 질문: q2-03(해석·분해 평가용 지시–정답 공개 데이터셋과 지표, f1~f18) / 새 질문: q5-04(f16), q5-05(f17, 관련 q3-05·q5-01) / 온톨로지 변경: 없음(평가 데이터는 업무 분해·배정 설계 초안의 개념·관계가 아니라 검증 자료, v0.5 유지) / 완료 조건 평가: 미충족(부족: 작업 요구 적재물 속성·업무 완료 조건 미확정; 아이디어 2 4절 평가 데이터 소절은 이번 반영으로 채움) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영, 23. 시험·형식 검증·벤치마크 3건 / 다음 실행 제안: q2-04, q2-05, q2-06, q2-07 / 백로그 정리 요청: q3-09·q3-10, q1-05·q1-06 중복(1차 검증 지적)",
+    "overview_progress": "단계 2 진행 중 — 열린 질문 4, 답함 3, 완료 조건 미충족"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "8. 대표 연구와 자료",
+      "summary": "LLM 다중 로봇 계획·배정 평가 데이터셋(SMART-LLM 네 범주 상위 지시와 가용 로봇·최종 상태, MAT-THOR 정답 PDDL·목표 조건)과 지표(목표 조건 재현율 GCR, 정답 전이 수 대비 로봇 활용도 RU, 논문 기준 저자 보고)를 추가하고, 이 벤치마크들이 배정의 전체 최적성(이동거리·납기)을 정답으로 두지 않는 것으로 보인다는 점(추정)을 분류 원문 질문·oq-052 와 연결한다. 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에 연결한다."
+    },
+    {
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "LLM 지시 해석·계획 평가 벤치마크(LoTa-Bench 자동 정량화, AmbiK 모호 지시 1000쌍, NoisyToolBench 불완전 지시, Lang2LTL 발화–LTL 말뭉치, Snips 의도·슬롯)와 해석 정확도·계획 목표 달성도를 나눠 재는 두 층 평가(추정)를 추가하고, 적용 대상 13. 작업 배정 — MRTA 와 18. 사람–로봇 협업·운영 인터페이스에 연결한다."
+    },
+    {
+      "area_no": 23,
+      "section": "8. 대표 연구와 자료",
+      "summary": "지시 수행 벤치마크(ALFRED 목표 조건·전문가 시연, LoTa-Bench 시뮬레이터 기반 자동 평가)와 시뮬레이터 최종 상태·목표 조건으로 판정하는 평가 방식을 추가하고, 물류 창고 지시를 정답과 짝지은 평가 자료를 검색 범위에서 찾지 못했다는 점(추정, 부재 확인 아님)을 적는다."
+    }
+  ],
+  "standards_updates": []
+}

@@ -43,21 +43,21 @@
 | f7 | [사실] | ros2_fault_injection 은 ROS 2 토픽을 *_raw 로 돌려 받아 편향·잡음·지연·누락·명령 정지 같은 장애를 넣어 다시 발행하고, 서비스 강제 실패와 좌표 변환 손상도 지원하며, YAML 시나리오의 단정(assertion)으로 합격·불합격을 내고 헤드리스 실행기가 종료 코드로 지속적 통합(CI)에 결과를 넘긴다. | ref-633 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f8 | [추정] | 연계 대상: ros2_fault_injection 이 기본으로 다루는 오도메트리·레이저 스캔·IMU 등 센서 신호 장애는 로봇 자체 인식·주행의 견고성 시험에 해당하고, ROP 쪽 장애 주입은 같은 프록시 방식을 관제 명령·상태 메시지와 설비 응답 수준에 적용하는 형태가 될 것으로 보인다. | ref-633 | 아니오 | low | 2026-09-25 | — | — |
 | f9 | [사실] | ROSMonitoring 은 YAML 설정으로 ROS 토픽·서비스를 관찰하는 감시 노드를 생성하며, 온라인 모드에서는 외부 판정기(oracle)의 판정을 받아 위반 메시지를 기록하거나 걸러 내고 오프라인 모드에서는 사건만 기록하는 명세 형식 비종속 런타임 검증 틀로 ROS 1·ROS 2 를 모두 지원한다. | ref-634 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
-| f10 | [사실] | Open-RMF 시뮬레이션 문서는 시뮬레이션에 쓴 코드를 실제 시스템에서 수정 없이 실행하므로 시뮬레이션의 반복 가능한 시나리오로 버그 수정을 확인하고, 드물지만 심각한 예외 상황과 장시간 운전을 배치 전에 시험할 수 있다고 설명한다. | ref-667 | 아니오 | medium | 2026-09-25 | — | — |
-| f11 | [사실] | Stern 외(2019)는 다중 에이전트 경로 찾기(MAPF) 논문마다 가정과 목적함수가 달라 기준선 비교가 어렵다는 문제를 들어 공통 용어를 정리하고 새 격자 기반 벤치마크를 소개했다. | ref-635 | 아니오 | medium | 2019 | — | 원문 미열람 |
+| f10 | [사실] | Open-RMF 시뮬레이션 문서는 시뮬레이션에 쓴 코드를 실제 시스템에서 수정 없이 실행하므로 시뮬레이션의 반복 가능한 시나리오로 버그 수정을 확인하고, 드물지만 심각한 예외 상황과 장시간 운전을 배치 전에 시험할 수 있다고 설명한다. | ref-406 | 아니오 | medium | 2026-09-25 | — | — |
+| f11 | [사실] | Stern 외(2019)는 다중 에이전트 경로 찾기(MAPF) 논문마다 가정과 목적함수가 달라 기준선 비교가 어렵다는 문제를 들어 공통 용어를 정리하고 새 격자 기반 벤치마크를 소개했다. | ref-186 | 아니오 | medium | 2019 | — | 원문 미열람 |
 | f12 | [사실] | League of Robot Runners 는 Amazon Robotics 가 후원하는 다중 로봇 조율 대회로, MAPF 의 핵심 과제를 찾고 벤치마크 인스턴스를 만들어 최신 성과를 추적하는 것을 목표로 하며 로봇 동역학·지속형 계획·작업 배정·실시간 실행을 창고 물류 같은 응용을 겨냥해 다룬다. | ref-636 | 아니오 | medium | 2024 | — | 원문 미열람 |
 | f13 | [사실] | LSMART(2026)는 기존 MAPF·지속형 MAPF 연구가 단순화한 운동 모델과 완전한 실행·통신을 가정한다는 한계를 들어, AGV 플릿 관리 시스템(FMS) 안에서 임의의 MAPF 알고리즘을 평가하는 오픈소스 시뮬레이터를 내고 언제 계획할지·어떻게 계획할지·계획 실패 시 어떻게 복구할지를 비교했다. | ref-637 | 아니오 | medium | 2026-02 | 예외·성과 | 원문 미열람 |
-| f14 | [사실] | 연계 대상: ISO 3691-4:2023 은 AGV·AMR 을 포함한 무인 산업용 차량과 그 시스템의 안전 요구사항과 검증 수단을 정하며, 사람 감지 시험·안정성 시험과 부속서의 검증 절차를 포함한다. | ref-638 | 아니오 | medium | 2023 | 제약 | 원문 미열람 |
+| f14 | [사실] | 연계 대상: ISO 3691-4:2023 은 AGV·AMR 을 포함한 무인 산업용 차량과 그 시스템의 안전 요구사항과 검증 수단을 정하며, 사람 감지 시험·안정성 시험과 부속서의 검증 절차를 포함한다. | ref-470 | 아니오 | medium | 2023 | 제약 | 원문 미열람 |
 | f15 | [사실] | 연계 대상: ASTM F45 위원회(무인 자동 유도 산업 차량)는 용어·권고 관행·시험 방법을 개발하며 환경 영향, 도킹·주행, 물체 감지·보호, 통신·통합 분과를 두고, NIST 가 이 표준 개발에 참여한다. | ref-639 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f16 | [사실] | 연계 대상: KS B ISO 18646 시리즈는 서비스 로봇의 성능 기준과 관련 시험 방법을 KS 로 부합화한 것으로, 제1부는 바퀴형 로봇의 이동 능력을 다루고 주행·조작 등을 다루는 다른 부가 함께 있다. | ref-640 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f17 | [사실] | 한국로봇산업진흥원은 로봇 시험평가에 KS·ISO·IEC·CISPR 등 표준 시험 방법을 적용하고, 경사 노면·특수 노면·계단·주행 내구 같은 로봇 주행 성능 시험을 수행한다. | ref-641 | 아니오 | medium | 2026-09-25 | — | 원문 미열람 |
 | f18 | [추정] | OTTO by Rockwell Automation 은 자사 AMR 이 Idealworks·NAiSE·SYNAOS 등 VDA 5050 대응 인트라로지스틱스 소프트웨어 업체들과 인증을 마쳤다고 발표했다. | ref-642 | 아니오 | low | 2026-09-25 | — | 원문 미열람, 벤더 주장 |
 | f19 | [추정] | oq-055 관련: 이번 조사에서 VDA 5050 공식 인증 기관이나 공식 적합성 시험 절차는 확인하지 못했고, 확인된 인증은 로봇 제조사와 관제 소프트웨어 업체 사이의 쌍별 연동 인증 형태여서, ROP 는 새 로봇 연동마다 자체 인수 시험을 두어야 할 것으로 보인다. | ref-642 | 아니오 | low | 2026-09-25 | 완료·인계 | 원문 미열람 |
-| f20 | [의견] | Open-RMF 시뮬레이션이 강조하는 시나리오 반복·예외 상황 탐색 환경은 22. 시뮬레이션·예측용 디지털 트윈과 공유되지만, 22. 시뮬레이션·예측용 디지털 트윈은 운영 정책·수요 변화의 효과 예측을, 23. 시험·형식 검증·벤치마크는 변경 후 동작 확인을 목적으로 나누는 것이 분류 원문 정의에 맞아 보인다. | ref-667 | 아니오 | low | 2026-09-25 | — | — |
-| f21 | [추정] | 분류 원문 질문 '업데이트 후 정상 상황뿐 아니라 장애 상황도 여전히 처리되는가?'에 대해, 확인한 자료로 보면 반복 가능한 시뮬레이션 시나리오에 장애 주입과 합격 판정 단정을 붙여 지속적 통합에서 매 변경마다 다시 돌리는 방식이 답이 될 것으로 보이나, 물류 오케스트레이션 소프트웨어에 이를 적용해 결과를 공개한 현장 사례는 찾지 못했다. | ref-629, ref-633, ref-667 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
+| f20 | [의견] | Open-RMF 시뮬레이션이 강조하는 시나리오 반복·예외 상황 탐색 환경은 22. 시뮬레이션·예측용 디지털 트윈과 공유되지만, 22. 시뮬레이션·예측용 디지털 트윈은 운영 정책·수요 변화의 효과 예측을, 23. 시험·형식 검증·벤치마크는 변경 후 동작 확인을 목적으로 나누는 것이 분류 원문 정의에 맞아 보인다. | ref-406 | 아니오 | low | 2026-09-25 | — | — |
+| f21 | [추정] | 분류 원문 질문 '업데이트 후 정상 상황뿐 아니라 장애 상황도 여전히 처리되는가?'에 대해, 확인한 자료로 보면 반복 가능한 시뮬레이션 시나리오에 장애 주입과 합격 판정 단정을 붙여 지속적 통합에서 매 변경마다 다시 돌리는 방식이 답이 될 것으로 보이나, 물류 오케스트레이션 소프트웨어에 이를 적용해 결과를 공개한 현장 사례는 찾지 못했다. | ref-629, ref-633, ref-406 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
 | f22 | [추정] | 시나리오 예시(가상): 피킹 단계에서 플릿 어댑터를 업데이트한 뒤, 운반 중인 로봇이 멈추는 장애를 주입하고 작업이 재배정되는지와 완료 확인 전에는 재고 변경이 확정되지 않는지를 단정으로 확인하는 회귀 시험을 구성할 수 있을 것으로 보인다. | ref-629, ref-633 | 아니오 | low | 2026-09-25 | 피킹 / 완료·인계 | — |
-| f23 | [추정] | ROP 가 직접 맡을 시험 몫은 작업 배정·교통 관리 논리의 교착·제약 위반 검증, 관제 인터페이스 적합성, 장애 주입 시 재배정·복구 동작의 회귀 시험, 운영 중 런타임 감시로 보인다. | ref-643, ref-633, ref-634, ref-667 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
-| f24 | [추정] | 연계 대상: 로봇 자체의 사람 감지·안정성 같은 안전 검증(ISO 3691-4)과 주행·도킹·이동 성능 시험(ASTM F45, KS B ISO 18646, 한국로봇산업진흥원 주행 성능 시험)은 제조사와 시험기관 영역이고, ROP 는 그 결과를 로봇 등록·배정 조건의 입력으로 받는 쪽으로 보인다. | ref-638, ref-639, ref-640, ref-641 | 아니오 | low | 2026-09-25 | 제약 | 원문 미열람 |
+| f23 | [추정] | ROP 가 직접 맡을 시험 몫은 작업 배정·교통 관리 논리의 교착·제약 위반 검증, 관제 인터페이스 적합성, 장애 주입 시 재배정·복구 동작의 회귀 시험, 운영 중 런타임 감시로 보인다. | ref-643, ref-633, ref-634, ref-406 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
+| f24 | [추정] | 연계 대상: 로봇 자체의 사람 감지·안정성 같은 안전 검증(ISO 3691-4)과 주행·도킹·이동 성능 시험(ASTM F45, KS B ISO 18646, 한국로봇산업진흥원 주행 성능 시험)은 제조사와 시험기관 영역이고, ROP 는 그 결과를 로봇 등록·배정 조건의 입력으로 받는 쪽으로 보인다. | ref-470, ref-639, ref-640, ref-641 | 아니오 | low | 2026-09-25 | 제약 | 원문 미열람 |
 
 ### 근거 발췌
 
@@ -96,16 +96,16 @@
 | ref-632 | Afzal, A., Le Goues, C., Hilton, M., & Timperley, C. S. | A Study on Challenges of Testing Robotic Systems | 2020 | 논문 | medium | 2026-09-25 | https://www.computer.org/csdl/proceedings-article/icst/2020/09159069/1m3oOVjQnIc | 예 |
 | ref-633 | reeceholland (ros2_fault_injection GitHub) | ros2_fault_injection — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/reeceholland/ros2_fault_injection | 아니오 |
 | ref-634 | University of Liverpool Autonomy and Verification (ROSMonitoring GitHub) | ROSMonitoring: a Runtime Verification Framework for ROS — README | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/autonomy-and-verification-uol/ROSMonitoring | 아니오 |
-| ref-635 | Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외 | Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks | 2019 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1906.08291 | 예 |
+| ref-186 | Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외 | Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks | 2019 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/1906.08291 | 예 |
 | ref-636 | IDM Lab (USC) 게재 초록, 저자 미확인 | The League of Robot Runners: Competition Goals, Designs, and Implementation [System Demonstration] | 2024 | 논문 | medium | 2026-09-25 | https://idm-lab.org/bib/abstracts/Koen24p.html | 예 |
 | ref-637 | arXiv 게재 논문(저자 미확인) | Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems | 2026-02 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2602.15721 | 예 |
-| ref-638 | ISO | ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems | 2023 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/83545.html | 예 |
+| ref-470 | ISO | ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems | 2023 | 표준 | medium | 2026-09-25 | https://www.iso.org/standard/83545.html | 예 |
 | ref-639 | NIST | ASTM Committee F45 on Driverless Automatic Guided Industrial Vehicles | 미확인 | 정부·연구기관 | medium | 2026-09-25 | https://www.nist.gov/programs-projects/astm-committee-f45-driverless-automatic-guided-industrial-vehicles | 예 |
 | ref-640 | 한국표준협회 KSSN(국가표준인증종합정보센터) | KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇의 이동능력 | 미확인 | 표준 | medium | 2026-09-25 | https://www.kssn.net/search/stddetail.do?itemNo=K001010113281 | 예 |
 | ref-641 | 한국로봇산업진흥원(KIRIA) | 시험평가 \| KIRIA 첨단로봇 실증지원 디지털 플랫폼 | 미확인 | 정부·연구기관 | medium | 2026-09-25 | https://kiria.org/rp/kiria/tva/inr/page.dn | 예 |
 | ref-642 | OTTO by Rockwell Automation | OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments | 미확인 | 벤더 문서 | low | 2026-09-25 | https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/ | 예 |
 | ref-643 | von Berg, B., Aichernig, B. K., & Wedenik, F. | BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper) | 2026-05 | 논문 | medium | 2026-09-25 | https://link.springer.com/chapter/10.1007/978-3-032-26204-2_16 | 예 |
-| ref-667 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/simulation.html | 아니오 |
+| ref-406 | Open Robotics | Simulation - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/simulation.html | 아니오 |
 
 ### 출처 요약
 
@@ -115,16 +115,16 @@
 - **ref-632**: 원문 미열람. 로봇 실무자 면담으로 시험 실무 12가지와 어려움 9가지를 도출한 질적 연구(IEEE ICST 2020).
 - **ref-633**: ROS 2 토픽·서비스·TF 에 장애를 주입하고 YAML 시나리오 단정으로 합격·불합격을 내는 C++ 틀. 개인 주도 프로젝트라 성숙도는 미확인. README 원문을 열어 읽었다.
 - **ref-634**: ROS 1·2 용 런타임 검증 틀. 감시 노드 생성, 외부 판정기 연동, 위반 기록·차단. README 원문을 열어 읽었다.
-- **ref-635**: 원문 미열람. MAPF 가정·목적의 공통 용어와 격자 기반 벤치마크를 제시한 논문(SoCS 2019).
+- **ref-186**: 원문 미열람. MAPF 가정·목적의 공통 용어와 격자 기반 벤치마크를 제시한 논문(SoCS 2019).
 - **ref-636**: 원문 미열람. Amazon Robotics 후원 다중 로봇 조율 대회의 목표·설계를 소개한 ICAPS 2024 시스템 시연 초록.
 - **ref-637**: 원문 미열람. AGV 플릿 관리 시스템 안에서 MAPF 알고리즘을 현실적으로 평가하는 오픈소스 시뮬레이터 LSMART 와 설계 선택 비교 연구(프리프린트).
-- **ref-638**: 원문 미열람. AGV·AMR 을 포함한 무인 산업용 차량의 안전 요구사항과 검증 수단을 정하는 표준의 ISO 소개 페이지.
+- **ref-470**: 원문 미열람. AGV·AMR 을 포함한 무인 산업용 차량의 안전 요구사항과 검증 수단을 정하는 표준의 ISO 소개 페이지.
 - **ref-639**: 원문 미열람. 무인 자동 유도 산업 차량의 용어·시험 방법을 개발하는 ASTM F45 위원회와 NIST 참여를 소개하는 과제 페이지.
 - **ref-640**: 원문 미열람. 서비스 로봇 성능 기준·시험 방법 KS 부합화 표준의 제1부 상세 페이지.
 - **ref-641**: 원문 미열람. 한국로봇산업진흥원의 표준 기반 로봇 시험평가와 주행 성능 시험 항목 안내 페이지.
 - **ref-642**: 원문 미열람. OTTO AMR 이 Idealworks·NAiSE·SYNAOS 등 VDA 5050 대응 소프트웨어 업체와 인증을 마쳤다는 보도자료(벤더 주장).
 - **ref-643**: 원문 미열람. 창고 AGV 시스템을 전이 시스템으로 인코딩해 BDD 기호 분석으로 교착을 회피하는 사례 연구(FM 2026).
-- **ref-667**: Open-RMF 시뮬레이션 장. 같은 코드를 시뮬레이션과 실제에 쓰는 구조, 반복 가능한 시나리오, 예외 상황·장시간 시험을 설명한다. 재사용 출처이며 이번 실행에서 미러 원문을 다시 열었다.
+- **ref-406**: Open-RMF 시뮬레이션 장. 같은 코드를 시뮬레이션과 실제에 쓰는 구조, 반복 가능한 시나리오, 예외 상황·장시간 시험을 설명한다. 재사용 출처이며 이번 실행에서 미러 원문을 다시 열었다.
 
 ## 페이지 제안
 
@@ -170,4 +170,4 @@
 - 범위 경계 위반 의심:
     - f8·f14·f15·f16·f24: 로봇 자체 센서 인식·주행 성능·차량 안전 시험은 분류 원문 9장 '로봇 자체 지능·제어' 쪽 외부 연계 영역이므로 '연계 대상:'으로 표시
     - f22: 가상 시나리오 구성안이며 실제 사례로 서술하지 않도록 claim 에 '시나리오 예시(가상)' 표기
-- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-629·ref-630(NIST ARIAC 2025 challenges·scoring, 미러 목록 경로), ref-633(ros2_fault_injection), ref-634(ROSMonitoring), ref-667(재사용, Open-RMF 시뮬레이션 장). 나머지 11건은 검색 요약 기준(신뢰도 상한 medium). IntelLabs scenario_execution README raw 경로는 main·jazzy 모두 404 라 출처로 넣지 않았다. League of Robot Runners Start-Kit README 는 열었으나 평가 지표가 없어 쓰지 않았다. 검색 22회/30, 신규 출처 15건/15(ref-629~ref-643, 예약 구간 안)로 신규 출처 예산에 도달해 Scenario Execution for Robotics(arXiv 2409.07080), Timed Rebeca 기반 ROS 2 다중 로봇 모델 검사(arXiv 2511.15227), KTL 로봇시험인증센터, arculus VDA 5050 적합성 시험 도구는 출처로 넣지 않았다. 재사용 1건: ref-667(2026-09-25-56 브리프 값 사용). 참고문헌 목록 전체 값이 입력에 없어 ref-007(NIST 협업 로봇 성능)·ref-008(NIST ARIAC)의 기존 값을 재사용하지 못하고 ARIAC 는 개별 페이지 URL 로 새 id 를 붙였다(퍼블리셔 대조 필요). 열린 질문: oq-055 는 f18·f19, oq-058 은 f13 이 부분 근거일 뿐 해결로 보지 않았고, oq-063·oq-077 은 이번에 조사하지 못했다. 한국 자료: KS B ISO 18646(ref-640), 한국로봇산업진흥원(ref-641). 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 섞지 않았고, 22. 시뮬레이션·예측용 디지털 트윈과의 목적 구분은 f20(의견)으로만 냈다. 정정 요청 없음.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-629·ref-630(NIST ARIAC 2025 challenges·scoring, 미러 목록 경로), ref-633(ros2_fault_injection), ref-634(ROSMonitoring), ref-406(재사용, Open-RMF 시뮬레이션 장). 나머지 11건은 검색 요약 기준(신뢰도 상한 medium). IntelLabs scenario_execution README raw 경로는 main·jazzy 모두 404 라 출처로 넣지 않았다. League of Robot Runners Start-Kit README 는 열었으나 평가 지표가 없어 쓰지 않았다. 검색 22회/30, 신규 출처 15건/15(ref-629~ref-643, 예약 구간 안)로 신규 출처 예산에 도달해 Scenario Execution for Robotics(arXiv 2409.07080), Timed Rebeca 기반 ROS 2 다중 로봇 모델 검사(arXiv 2511.15227), KTL 로봇시험인증센터, arculus VDA 5050 적합성 시험 도구는 출처로 넣지 않았다. 재사용 1건: ref-406(2026-09-25-56 브리프 값 사용). 참고문헌 목록 전체 값이 입력에 없어 ref-007(NIST 협업 로봇 성능)·ref-008(NIST ARIAC)의 기존 값을 재사용하지 못하고 ARIAC 는 개별 페이지 URL 로 새 id 를 붙였다(퍼블리셔 대조 필요). 열린 질문: oq-055 는 f18·f19, oq-058 은 f13 이 부분 근거일 뿐 해결로 보지 않았고, oq-063·oq-077 은 이번에 조사하지 못했다. 한국 자료: KS B ISO 18646(ref-640), 한국로봇산업진흥원(ref-641). 27. AI·학습·적응과 모델 운영 관련 finding 없음. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 섞지 않았고, 22. 시뮬레이션·예측용 디지털 트윈과의 목적 구분은 f20(의견)으로만 냈다. 정정 요청 없음.

@@ -33,7 +33,7 @@
       "claim": "VDA 5050 3.0.0 은 지도를 지도 식별자(mapId)와 지도 버전(mapVersion)의 조합으로 식별하고, 즉시 동작 downloadMap·enableMap·deleteMap 으로 지도 내려받기·활성화·삭제를 지시하며, 같은 mapId 에서는 한 번에 한 버전만 활성화되게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-749"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -47,7 +47,7 @@
       "claim": "VDA 5050 은 의미적 버전 체계를 써서 주 버전 변경은 새 필수 필드 도입 같은 호환성을 깨는 변경, 부 버전은 기능 추가, 수 버전은 작은 수정으로 규정하고, MQTT 토픽 경로에 주 버전(v3 등)을 넣는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-749"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -61,7 +61,7 @@
       "claim": "VDA 5050 3.0.0 에서 로봇이 사용할 수 없는 선택 필드가 담긴 주문을 받으면 오류 유형 UNSUPPORTED_PARAMETER 를 수준 CRITICAL 로 보고하도록 되어 있어, 판 차이로 생긴 미지원 기능이 실행 시점 오류로 드러난다.",
       "tag": "사실",
       "source_ids": [
-        "ref-749"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -89,7 +89,7 @@
       "claim": "VDA 5050 상태(state) 스키마는 전원 정보로 충전 상태(stateOfCharge), 원래 용량 대비 배터리 상태(batteryHealth), 충전 중 여부, 현재 충전 상태로 갈 수 있는 추정 거리(range)를, 지도 정보로 mapId·mapVersion·mapStatus 를 로봇이 보고하게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-750"
+        "ref-051"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -118,7 +118,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-228",
-        "ref-750",
+        "ref-051",
         "ref-230"
       ],
       "cross_checked": false,
@@ -133,7 +133,7 @@
       "claim": "ROS 2 관리형 노드 설계는 미구성·비활성·활성·종료의 네 주 상태와 구성·활성화·비활성화·정리·종료 전이를 두어, 실행 전에 구성 요소가 올바로 초기화됐는지 확인하고 실행 중 노드를 교체·재시작할 수 있게 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-751"
+        "ref-364"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -235,7 +235,7 @@
       "claim": "2026년 3월 arXiv 프리프린트 'Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots'는 작업 배정·서비스 순서·충전 여부·충전 모드·충전기 접근을 함께 최적화해 플릿 전체의 배터리 열화를 균형 있게 나누는 정식화를 제안했고, 급속 충전에 따른 사이클 열화와 높은 충전 상태로 대기할 때의 달력 열화를 근사 열화 지표로 반영했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-756"
+        "ref-403"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -340,7 +340,7 @@
       "claim": "분류 원문 질문 '제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까?'에 대해, 확인한 자료로는 로봇별 소프트웨어 버전(VDA 5050 팩트시트 versions, 소프트웨어 명판)을 그 로봇이 쓰이는 현장·기능과 연결해 두고, 규격 주 버전 변경·팩트시트 기능 선언 변화·안전 파라미터 변화·지도 버전 변화를 재검증 촉발 조건으로 삼는 방식이 가능해 보이지만, 이 영향 범위 산정을 규정한 공개 절차는 찾지 못했다.",
       "tag": "추정",
       "source_ids": [
-        "ref-749",
+        "ref-031",
         "ref-228",
         "ref-753",
         "ref-763"
@@ -358,9 +358,9 @@
       "claim": "ROP 가 직접 맡을 수명주기 관리 몫은 로봇·어댑터·지도·모델의 버전 목록 유지, 로봇이 보고하는 배터리 상태·오류를 배정·충전 계획에 반영, 업데이트를 운영 시간대·일부 로봇 단위로 나눠 배포하고 실패 시 복구를 조율, 지도 버전 활성화 시점 동기화로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-749",
-        "ref-750",
-        "ref-751",
+        "ref-031",
+        "ref-051",
+        "ref-364",
         "ref-760"
       ],
       "cross_checked": false,
@@ -376,7 +376,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-757",
-        "ref-750",
+        "ref-051",
         "ref-230"
       ],
       "cross_checked": false,
@@ -392,8 +392,8 @@
       "claim": "출하 마감 전 집중 시간대에 배터리 상태(batteryHealth)가 낮아진 로봇은 같은 충전 상태에서도 추정 도달 거리(range)가 짧아질 수 있어, 배터리 열화가 작업 배정·충전 계획의 제약으로 작용하는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-750",
-        "ref-756"
+        "ref-051",
+        "ref-403"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -408,7 +408,7 @@
       "claim": "적치 구역의 랙 배치가 바뀌면 플릿 제어가 새 mapVersion 을 로봇에 내려받게 한 뒤 enableMap 으로 전환해야 하고, 같은 mapId 에 한 버전만 활성화되므로 전환 시점과 진행 중 주문의 정리가 적치 작업 재개의 시작 조건이 되는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-749"
+        "ref-031"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -424,7 +424,7 @@
       "source_ids": [
         "ref-668",
         "ref-758",
-        "ref-756",
+        "ref-403",
         "ref-763"
       ],
       "cross_checked": false,
@@ -438,7 +438,7 @@
   ],
   "sources": [
     {
-      "id": "ref-749",
+      "id": "ref-031",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — VDA5050_EN.md (VDA 5050 Version 3.0.0)",
       "published": null,
@@ -453,7 +453,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-750",
+      "id": "ref-051",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — json_schemas/state.schema",
       "published": null,
@@ -468,7 +468,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-751",
+      "id": "ref-364",
       "org": "Open Robotics (ROS 2 Design)",
       "title": "Managed nodes (ROS 2 Design: node_lifecycle)",
       "published": null,
@@ -543,7 +543,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-756",
+      "id": "ref-403",
       "org": "arXiv (저자 미확인)",
       "title": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots",
       "published": "2026-03",
@@ -769,7 +769,7 @@
       "f17: EU 2023/1230 조문 원문 미열람, 제조사가 예정한 업데이트의 취급은 2차 해설에만 있어 finding 에서 제외",
       "f19: 원 매체와 SDR 과제 공식 자료 미확인",
       "f20·f21: 검색 요약 문장의 출처 귀속(세이프틱스/한국로봇사용자협회)을 원문으로 확인하지 못함",
-      "ref-756 저자, ref-749·ref-750·ref-753 발행일 미확인",
+      "ref-403 저자, ref-031·ref-051·ref-753 발행일 미확인",
       "f22: 펌웨어 변경 영향 범위 산정 공개 절차 찾지 못함"
     ],
     "scope_violations": [
@@ -780,6 +780,6 @@
       "queries": 17,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-749·ref-750·ref-751·ref-752·ref-753·ref-760 과 재사용 ref-228·ref-230. 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 17회/30, 신규 출처 15건/15(ref-749~ref-763, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 13374, ISO 10218-1:2025(사이버보안 요구 추가), CISA SBOM, ICAN-Deploy(카나리 배포 프리프린트)는 출처로 넣지 않음. 재사용 3건: ref-228·ref-230(2026-09-25-57 브리프 값), ref-668(2026-09-25-56 브리프 값, 이번에 다시 열지 않음). 교차 확인 0건. 한국 자료: 한국로봇사용자협회 안전인증(ref-762), 세이프틱스 가이드(ref-763, 의견), SDR 과제 보도(ref-761). 27. AI·학습·적응과 모델 운영 관련 finding 없음(모델 버전 관리는 일반 수명주기 관점으로만 다룸). 8·22 구분: f10 은 시뮬레이션 환경의 판 관리로만 서술. 정정 요청 없음, 대상 영역 열린 질문 0건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-031·ref-051·ref-364·ref-752·ref-753·ref-760 과 재사용 ref-228·ref-230. 나머지는 검색 요약 기준(신뢰도 상한 medium). 검색 17회/30, 신규 출처 15건/15(ref-031~ref-763, 예약 구간 안) — 신규 출처 예산에 도달해 ISO 13374, ISO 10218-1:2025(사이버보안 요구 추가), CISA SBOM, ICAN-Deploy(카나리 배포 프리프린트)는 출처로 넣지 않음. 재사용 3건: ref-228·ref-230(2026-09-25-57 브리프 값), ref-668(2026-09-25-56 브리프 값, 이번에 다시 열지 않음). 교차 확인 0건. 한국 자료: 한국로봇사용자협회 안전인증(ref-762), 세이프틱스 가이드(ref-763, 의견), SDR 과제 보도(ref-761). 27. AI·학습·적응과 모델 운영 관련 finding 없음(모델 버전 관리는 일반 수명주기 관점으로만 다룸). 8·22 구분: f10 은 시뮬레이션 환경의 판 관리로만 서술. 정정 요청 없음, 대상 영역 열린 질문 0건."
   }
 }
