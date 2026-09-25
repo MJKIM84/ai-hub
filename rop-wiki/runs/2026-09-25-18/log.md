@@ -117,3 +117,23 @@ WARNING -  Doc file 'logs/daily/2026-09-25.md' contains an unrecognized relative
 WARNING -  Doc file 'logs/daily/2026-09-25.md' contains an unrecognized relative link 'ref-184·ref-185', it was left as is.
 
 - 2026-09-25 11:52:00 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 8. 실시간 세계 상태·데이터 일관성 — 생성 6/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
+- 2026-09-25 11:52:16 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-18 resume=2026-09-25-18 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 11:52:16 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 11:52:16 KST [준비] 결과: 성공 · 소요 0초 · 건너뜀
+- 2026-09-25 11:52:17 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 11:52:17 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-18 (영역 심화)
+- 2026-09-25 11:52:17 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 11:52:17 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 low)
+- 2026-09-25 11:52:17 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 7개, 반영 전 사전 검사 포함)
+- 2026-09-25 11:52:17 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-18/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 11:52:18 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 11:52:18 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 11:52:18 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 2건 (파일 372개 검사)
+- logs/daily/2026-09-25.md: 깨진 링크 ref-186
+- logs/daily/2026-09-25.md: 깨진 링크 ref-184·ref-185
+
+- 2026-09-25 11:52:18 KST [퍼블리셔] 결과: 실패 · 소요 2초 · 4단계 내부 링크·각주 검사 실패: [check_links] 오류 2건 (파일 372개 검사)
+- 2026-09-25 11:52:18 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 2건 (파일 372개 검사)))
+- 2026-09-25 11:52:30 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 2건 (파일 372개 검사)))
+- 2026-09-25 11:52:52 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 8. 실시간 세계 상태·데이터 일관성 — 생성 0/갱신 0 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
