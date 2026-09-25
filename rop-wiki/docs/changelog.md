@@ -74,6 +74,23 @@ version: 1
 | 2026-09-25-52 | 생성 | [docs/glossary/plug-and-produce.md](glossary/plug-and-produce.md) | 용어집 항목 플러그 앤 프로듀스 |
 | 2026-09-25-52 | 생성 | [docs/glossary/identity-report.md](glossary/identity-report.md) | 용어집 항목 신원 보고 |
 | 2026-09-25-52 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-02 답함(3절 소제목 신설), 새 질문 q2-07·q3-08·q3-09, 4·6·7·8·9절과 상태 줄 갱신. 2차: q2-07 행 제기 근거 칸을 'f15' 로 정정 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.4 → v0.5: 진행 상태 외부 표현 원천 메모(초안 → 확정), 배정 외부 표현 대응 메모(확정 유지), 6절 질문 2건 추가·선행 의존 질문 보강(2차 변경 없음) |
+| 2026-09-25-51 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절에 '작업·배정 결과를 표현하는 표준·형식' 소절 신설(이 위키 구성 비교표, 초안 대비 빠진 항목, 임무 기술 형식 비교 연구), 평가 데이터(q2-03) 미조사 명시. 2차: ref-504 각주 발행일을 2024-06-18 로 정정(각주를 직접 넣으려 전체 content 로 보냄) |
+| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.5 와 아이디어 2 4절(q2-02 표준·형식 비교) 진행 상황 갱신(2차 변경 없음) |
+| 2026-09-25-51 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-02 답함(실행 2026-09-25-43 이 다룬 같은 질문의 반영 재시도), 업무 분해·배정 설계 초안 v0.4→v0.5(진행 상태·배정 외부 표현 메모), 새 질문 q2-07·q3-08·q3-09; 같은 URL 이 이전 실행에서 ref-111·ref-505(task_state.json), ref-569(compose), ref-230·ref-507(MassRobotics JSON), ref-570(dsl.md), ref-571(BehaviorTree.CPP), ref-572(HDDL), ref-116(Filippone 외)로 쓰였을 수 있어 퍼블리셔 URL 병합 확인이 필요하다 |
+| 2026-09-25-51 | 생성 | [docs/references/ref-495.md](references/ref-495.md) | 참고문헌 ref-495 등록: rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compo… |
+| 2026-09-25-51 | 생성 | [docs/references/ref-496.md](references/ref-496.md) | 참고문헌 ref-496 등록: Serverless Workflow Specification — dsl.md |
+| 2026-09-25-51 | 생성 | [docs/references/ref-500.md](references/ref-500.md) | 참고문헌 ref-500 등록: BehaviorTree.CPP — README |
+| 2026-09-25-51 | 생성 | [docs/references/ref-501.md](references/ref-501.md) | 참고문헌 ref-501 등록: HDDL – A Language to Describe Hierarchical Planning Problems |
+| 2026-09-25-51 | 생성 | [docs/references/ref-502.md](references/ref-502.md) | 참고문헌 ref-502 등록: Business Process Model and Notation (BPMN), Version 2.0.2 |
+| 2026-09-25-51 | 생성 | [docs/references/ref-503.md](references/ref-503.md) | 참고문헌 ref-503 등록: FaMe — a BPMN-driven framework for Multi-Robot System develo… |
+| 2026-09-25-51 | 생성 | [docs/references/ref-504.md](references/ref-504.md) | 참고문헌 ref-504 등록: IEEE 1872.1-2024 — IEEE Standard for Robot Task Representati… |
+| 2026-09-25-51 | 생성 | [docs/glossary/hierarchical-task-network.md](glossary/hierarchical-task-network.md) | 용어집 항목 계층적 작업 네트워크 |
+| 2026-09-25-51 | 생성 | [docs/glossary/hddl.md](glossary/hddl.md) | 용어집 항목 계층 도메인 정의 언어 |
+| 2026-09-25-51 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-50 | 갱신 | [docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 영역 추가. 2차 수정: 4·6·8절 정리 문장을 [의견]으로, 5절 완료·인계 칸 첫 문장을 [추정]으로 분리 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s6.md](topics/2026/2026-09-25-area20-s6.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 세 줄 요약과 3절 첫 문장을 [의견]으로 바꿈 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s4.md](topics/2026/2026-09-25-area20-s4.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 요약 문장을 [의견]으로, BCMS 항목에 ISO 22301:2019 기준(개정 1:2024 별도) 명시 |
