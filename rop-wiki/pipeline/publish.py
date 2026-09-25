@@ -465,7 +465,9 @@ class Publisher:
         for r in self.pages.get("reference_updates") or []:
             if r.get("id"):
                 run_refs.setdefault(r["id"], self._norm_url(r.get("url")))
-        mapping = compute_ref_mapping(existing, run_refs)
+        blocks = runs.read_json(runs.REF_BLOCK_FILE, {}) or {}
+        floor = max([int(v[1]) for k, v in blocks.items() if k != self.run_id] or [0])
+        mapping = compute_ref_mapping(existing, run_refs, floor)
         if not mapping:
             return {}
         pat = re.compile(r"\bref-(\d{3,})\b")
@@ -2066,15 +2068,16 @@ def merge_three(ours: str, base: str, theirs: str) -> tuple[bool, str]:
     return mp.returncode == 0, mp.stdout
 
 
-def compute_ref_mapping(existing: dict, run_refs: dict) -> dict:
+def compute_ref_mapping(existing: dict, run_refs: dict, floor: int = 0) -> dict:
     """참고문헌 id 재배정 규칙(순수 함수). existing: {docs 에 있는 id: 정규화 URL}, run_refs: {이번 실행의 id: 정규화 URL}.
-    같은 URL 이 이미 다른 id 로 있으면 그 id 로, 같은 id 가 이미 다른 URL 에 쓰였으면 다음 빈 번호로 옮긴다."""
+    같은 URL 이 이미 다른 id 로 있으면 그 id 로, 같은 id 가 이미 다른 URL 에 쓰였으면 다음 빈 번호로 옮긴다.
+    floor: 새 번호는 이 번호보다 크게 준다(다른 실행이 예약한 id 구간 끝, runs.reserve_reference_block)."""
     by_url = {u: i for i, u in existing.items() if u}
     used = set(existing) | set(run_refs)
     mapping: dict = {}
 
     def nxt():
-        n = max([int(x.split("-")[1]) for x in used if re.match(r"^ref-\d+$", x)] or [0]) + 1
+        n = max([int(x.split("-")[1]) for x in used if re.match(r"^ref-\d+$", x)] + [int(floor)]) + 1
         nid = f"ref-{n:03d}"
         used.add(nid)
         return nid

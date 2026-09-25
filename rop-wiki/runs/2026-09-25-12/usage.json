@@ -15,14 +15,30 @@
         "claude-opus-5-5",
         "claude-haiku-4-5-20251001"
       ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 8,
+      "cache_creation_input_tokens": 238628,
+      "cache_read_input_tokens": 972408,
+      "output_tokens": 18720,
+      "cost_usd": 2.7446,
+      "seconds": 194.4,
+      "num_turns": 18,
+      "models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5-5"
+      ]
     }
   ],
   "total": {
-    "input_tokens": 38,
-    "cache_creation_input_tokens": 259872,
-    "cache_read_input_tokens": 4921928,
-    "output_tokens": 48074,
-    "cost_usd": 4.5747,
-    "calls": 1
+    "input_tokens": 46,
+    "cache_creation_input_tokens": 498500,
+    "cache_read_input_tokens": 5894336,
+    "output_tokens": 66794,
+    "cost_usd": 7.3193,
+    "calls": 2
   }
 }

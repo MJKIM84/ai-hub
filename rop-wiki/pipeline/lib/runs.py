@@ -559,6 +559,30 @@ def next_reference_id() -> str:
     return f"ref-{(max(nums) + 1) if nums else 1:03d}"
 
 
+REF_BLOCK_FILE = ROOT / "runs" / ".cache" / "ref_id_blocks.json"
+
+
+def reserve_reference_block(run_id: str, size: int = 30) -> tuple[str, str]:
+    """이 실행 전용 참고문헌 id 구간을 예약한다(병렬 배치에서 두 실행이 같은 '다음 id'를 받아 게시 직전 번호가 바뀌고, 그 사이 다른 실행이
+    먼저 게시해 검증 에이전트가 엉뚱한 참고문헌과 대조하는 일을 막는다 — 3부 배치 트랙 1 첫 실행 보류). 같은 실행이 다시 부르면 같은 구간.
+    시작 번호 = max(게시된 최대 번호, 이미 예약된 구간 끝) + 1. 쓰지 않은 번호는 빈 번호로 남는다. 반환: (첫 id, 끝 id)."""
+    import fcntl
+    REF_BLOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(str(REF_BLOCK_FILE) + ".lock", "w") as lk:
+        fcntl.flock(lk, fcntl.LOCK_EX)
+        data = read_json(REF_BLOCK_FILE, {}) or {}
+        if run_id in data:
+            a, b = data[run_id]
+        else:
+            nums = [int(i.split("-")[1]) for i in existing_reference_ids()]
+            top = max(nums) if nums else 0
+            top = max([top] + [int(v[1]) for v in data.values()])
+            a, b = top + 1, top + size
+            data[run_id] = [a, b]
+            write_json(REF_BLOCK_FILE, data)
+    return f"ref-{a:03d}", f"ref-{b:03d}"
+
+
 # --- 예산 -----------------------------------------------------------------------------
 
 def budget_for(settings: dict, run_type: str, track_cfg: dict | None = None) -> dict:

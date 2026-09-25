@@ -1,0 +1,367 @@
+{
+  "duration_api_ms": 367219,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.3462418,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 261570,
+    "cache_read_input_tokens": 1571164,
+    "output_tokens": 35104,
+    "output_tokens_details": {
+      "thinking_tokens": 11663
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 261570,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 10979,
+        "cache_read_input_tokens": 309422,
+        "cache_creation_input_tokens": 28302,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 28302
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 124851,
+      "outputTokens": 4494,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 9,
+      "costUSD": 0.237321,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 35104,
+      "cacheReadInputTokens": 1571164,
+      "cacheCreationInputTokens": 261570,
+      "webSearchRequests": 0,
+      "costUSD": 3.1089208,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11663,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 16,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-11\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"retry_reason\":null,\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-079 원본(raw.githubusercontent.com traffic-editor.md)을 이번 검증에서 열어 확인: 평면도가 그림 바탕, 기본 축척 1px=5cm, distance 파라미터로 축척 갱신, fiducial로 층 사이 축척·정렬, building_map_generator로 3D 월드 생성 시 벽 메시 자동 생성. 단일 출처, 발행일 미확인(확인일 2026-09-25).\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 원본에서 layers 탭 Add로 로봇 지도를 넣고 축척·이동·회전 변환, is_charger가 차선 위 정점이면 rmf_fleet_adapter가 충전소로 취급함을 확인. 단 '충전 위치는 도면 인식이 아니라 사람이 주석하는 항목으로 둔다'는 해석은 원문 문구가 아니라 추론이므로 [사실] 문장에서 분리(수정 지시).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-080 원본(integration_nav-maps.md)에서 경유점의 level name(B1, L1, L2 등)과 층 안 미터 단위 (x, y), 스크린샷이 좌표계·건물 구조 정렬의 sanity-checking에 유용하다는 서술을 확인. 발행일 미확인.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 같은 PDF(MiR Fleet Enterprise Documentation 1.2, 2025-01, jk.de 유통사 게재본)와 '20 pixels to 1 m' 축척 요건을 확인. 벤더 문서, vendor_claim·[추정] 표시 적정. 제조사 공식 사이트 게재본이 아님을 각주에 유지.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색으로 저자(Boniardi, Caselitz, Kümmerle, Burgard)·IROS 2017·pp. 3318–3324·CAD 평면도 기반 2D 라이다 위치추정 확인. 포즈 그래프 SLAM·GICP 세부는 리서치 검색 요약 범위. 위치추정 자체는 로봇 자체 지능·제어 쪽 연계 대상.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색으로 저자 5인·IROS 2019·arXiv 1903.01804, 추출한 방 배치 경계를 입자 필터로 평면도와 정합, 기존 방식이 전문가의 수고로운 작업을 요구해 설치 용이성을 제한한다는 동기를 확인.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-084 README를 이번 검증에서 열어 인용 서지(arXiv 2507.00552, Zhang·Wu·Ma·Schwertfeger 2025)를 확인해 ref-083 실재 확인. 논문 방법 세부는 검색 요약 범위(ref-083 원문 미열람). 두 출처 같은 저자라 독립 교차 아님.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. README 원문에서 DXF→SVG+bounds.json→PNG→AreaGraph 분할→osmAG.osm, DWG는 ODA File Converter 필요·기본 재현 경로 밖, --with-text 문자 추출 기본 꺼짐, ShanghaiTech 캠퍼스 도면은 기관 데이터라 제외(ArchWeb 도면도 저작권으로 재배포 불가)를 확인. 발행일 미확인.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검증 예산). 검증 검색 예산이 소진되어 리서치 검색 결과의 기관·제목·URL 일치로만 판단. 벤더 주장이며 사람용 실내 지도(IMDF) 변환으로 로봇 지도 사례가 아님을 명시한 점 적정.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(검증 예산). 리서치 검색 결과 기준. 벤더 주장이며 CAD에서 경로·설비를 자동 추출하는지 미확인이라고 적은 점 적정.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 arXiv 2308.05443 제목과 ECPPM 2022 발표본(TUM) 존재 확인, Ogm2Pgbm README가 Vega Torres et al. 2022를 인용. 주장 세부는 리서치 검색 요약 범위. ref-082·ref-094와 같은 저자 그룹이라 독립 아님.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. README 원문에서 TLS·BIM/CAD 기반 점유 격자 지도를 Cartographer(.pbstream)·SLAM Toolbox(.posegraph) 포즈 그래프 지도로 변환, 장애물 안에 흰 빈틈이 없도록 채우는 준비 단계, Zenodo DOI 10.5281/zenodo.7330270 확인. README의 '78% 개선' 수치는 쓰지 않는다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 Braga 외, Frontiers in Robotics and AI 2025-03-26, BIM 기반 의미 내비게이션·UWB 비콘·건설 현장 검증 확인. Dynamo·XML·하이퍼그래프 경로계획 세부는 리서치 검색 요약 범위.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 IFC에서 추출한 하이퍼그래프, 방 크기·문 방향·문 유형 속성, 공간 통과·문 열기 비용을 고려한 수정 최단 경로 탐색, ICAISC 2019 확인. 검색 요약상 이 연구는 IfcSpace를 노드, IfcDoor를 하이퍼엣지로 둔다(온톨로지 판단에 참고).\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 ISPRS Archives XLIII-B4-2022 pp. 295–301, IFC에서 IndoorGML 자동 생성 확인. 저자는 Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., Zlatanova, S.로 브리프의 기관 표기(Biljecki, F. 외)가 제1저자와 다름(수정 지시). '실용 도구 부족' 동기는 리서치 검색 요약 범위.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 부분 강등. 검증 검색에서 저자(Vega Torres, Braun, Borrmann, TUM)·arXiv 2408.15870·BIM에서 세션 데이터(포즈 그래프 지도·기술자) 생성과 다중 세션 앵커링으로 실측 데이터 정렬, BIM에 없는 새 요소 재구성을 확인. 'IFC로 로봇이 질의할 수 있는 URDF 건물 월드'와 'BIM에서 점유 격자 지도 생성'은 검증 스니펫에서 확인되지 않음(원문 미열람).\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 저자(Shaheer, Millan-Romera, Bavle, Giberna, Sanchez-Lopez, Civera, Voos), as-planned/as-built 전역 정렬·구조 편차 실시간 추정, 35cm·15도 견고성(시뮬레이션·실제 데이터셋) 확인. arXiv 2024-08-03 제출, 2025-06-12 개정, 사라고사대 저장소에 게재본 있음. 수치는 단일 출처.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람). 검증 검색에서 한국산학기술학회논문지 26(11) 218-225, DOI 10.5762/KAIS.2025.26.11.218, 저자 박근홍·박병준·이슬기, 2020~2025 문헌 1,356편·PRISMA·LDA 확인. 한계(단방향 IFC 변환 다수 등) 서술은 리서치 검색 요약 범위. 건설로봇 대상.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(종합 분류). 'IfcSpace·IfcDoor 같은 의미 클래스' 구절은 인용된 출처(source_ids)에 근거가 없고 ref-086(f14)의 검색 요약에서만 확인되므로 각주를 보강해야 함(수정 지시). 입력 형식별 분류를 제시한 단일 출처 없음.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. f1·f2·f5·f11·f12·f17에서 도출한 추론이며 확인한 사례 범위에 한정됨을 명시해야 함.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 검색 범위 안의 부재이며 부재 확인이 아님을 브리프가 밝힘. 근거 벤더 출처 가운데 ref-093·ref-095는 검증 예산 소진으로 독립 확인하지 못함.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. '연계 대상: ' 표시와 분류 원문 9장 경계(로봇 자체 지능·제어) 대응 적정. f16 강등분(URDF·OGM)을 근거로 쓰지 않는다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"참고문헌 id 충돌: 브리프의 ref-087~ref-095 가 docs/references/index.md 에 이미 등록된 다른 출처(ref-087 SayCan README, ref-088 Ahn 외, ref-089 SMART-LLM README, ref-090 Kannan 외, ref-091 llm-pddl README, ref-092 LLM+P, ref-093 Huang 외, ref-094 language-planner README, ref-095 Code as Policies README)와 겹친다. 그대로 등록하면 기존 각주가 덮어써진다.\",\"f14(Palacz 외: 문을 IfcDoor 하이퍼엣지로 표현)와 온톨로지 변경 제안 '문 속성에 통과 방향·유형·비용 추가'가 공간 그래프 스키마 초안 6절의 미해결 질문(통과 조건을 엣지에 둘지 문 속성에 둘지, q3-02)과 겹친다.\",\"f1(측정으로 축척 설정)·f21 관련 축척 문제는 단계 1 페이지 4절과 초안 6절의 기존 추정(축척 복원, q4-05)과 같은 주제다 — 충돌은 아니며 연결만 한다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"참고문헌 id: ref-087~ref-095 는 기존 참고문헌(SayCan·SMART-LLM·LLM+P 등)과 충돌하므로 이 id 로 등록·인용하지 않는다 — 기존 목록 최대 ref-109 와 이전 브리프 2026-09-25-08 이 쓴 ref-110~ref-118 을 피해 ref-087→ref-119, ref-088→ref-120, ref-089→ref-121, ref-090→ref-122, ref-091→ref-123, ref-092→ref-124, ref-093→ref-125, ref-094→ref-126, ref-095→ref-127 로 바꾸고 본문 각주·프런트매터 sources·reference_updates 를 모두 같은 매핑으로 맞춘다(퍼블리셔가 id 충돌을 다시 확인해야 한다). ref-079~ref-086 은 그대로 쓴다.\",\"모든 출처 각주: 원문을 연 ref-079·ref-080·ref-082·ref-084 를 뺀 나머지(ref-081, ref-083, ref-085, ref-086 과 재부여한 ref-119~ref-127)는 각주 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.\",\"ref-090(재부여 ref-122) 기관 표기를 'Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.' 로 고친다 — 검증 검색에서 제1저자가 Diakité 로 확인됐다.\",\"ref-089(재부여 ref-121) 기관 표기를 'Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.' 로 고치고, 기준일에 arXiv 2024-08 제출·2025-06 개정판이 있음을 적는다.\",\"ref-094(재부여 ref-126) 기관 표기를 'Vega Torres, M. A., Braun, A., & Borrmann, A.' 로 고치고, f11·f12·f16 이 같은 저자 그룹(TUM) 근거임을 본문에 드러낸다.\",\"ref-091(재부여 ref-123) 기관 표기를 '박근홍, 박병준, 이슬기(한국산학기술학회논문지)' 로 고치고 서지에 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218 을 적는다 — dspace.kci.go.kr URL 은 검증에서 확인하지 못했으므로 검증 검색으로 확인한 KCI 논문 페이지 https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295 로 바꾼다.\",\"f16: [사실] 문장은 'BIM 모델에서 세션 데이터(포즈 그래프 지도·기술자)를 만들고 다중 세션 앵커링으로 실측 데이터를 정렬하며 BIM에 없는 새 요소를 재구성한다' 범위로 줄이고, 'IFC로 로봇이 질의할 수 있는 URDF 건물 월드'와 'BIM에서 점유 격자 지도 생성'은 [추정]으로 강등하고 '미확인(검색 요약 기준)'을 붙이거나 삭제한다 — 검증 검색 스니펫에서 확인되지 않았다.\",\"f2: [사실] 문장에는 레이어 변환(축척·이동·회전)과 is_charger 정점 속성의 동작만 두고, '충전 위치는 도면 인식이 아니라 사람이 주석하는 항목으로 둔다'는 해석은 f20 과 함께 [추정]으로 서술한다 — 원문 문구가 아니라 추론이다.\",\"f19: 'BIM/IFC는 IfcSpace·IfcDoor 같은 의미 클래스 덕분에' 구절에는 ref-086 각주를 더하고(f14 의 검색 요약이 IfcSpace 노드·IfcDoor 하이퍼엣지를 보여 준다), 문장 전체는 [추정]을 유지한다 — 현재 source_ids 에는 이 구절의 근거가 없다.\",\"f5·f6·f11·f12·f16·f17: 세부영역 6. 지도·공간·위치 모델 반영 제안과 단계 페이지에서 이 연구들을 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개하고, 위치추정·SLAM 자체는 분류 원문 9장의 '로봇 자체 지능·제어' 연계 대상으로 짧게 적는다(f22 와 같은 표현) — ROP 직접 기능처럼 쓰지 않는다.\",\"f4·f9·f10: 본문과 아이디어 페이지 3절 '제품 사례' 소절에서 [추정]에 '벤더 주장'을 병기하고, ref-092(재부여 ref-124)는 제조사 공식 사이트가 아닌 유통사 게재본임을 각주 또는 본문에 밝힌다. f9(Pointr)는 사람용 실내 지도이며 로봇 지도 사례가 아님을 유지한다.\",\"f17: 35cm·15도 수치는 '시뮬레이션·실제 데이터셋 실험 조건의 단일 출처 수치'로 조건과 함께 적는다.\",\"f1: 시뮬레이션 월드 생성은 22. 시뮬레이션·예측용 디지털 트윈 연결로만 적고 8. 실시간 세계 상태·데이터 일관성과 섞지 않는다.\",\"용어 후보 'IFC'·'IndoorGML': 정의에서 발행 기관 자료로 확인하지 않은 구조 서술(IndoorGML 의 '셀 공간과 경계·노드·엣지 연결 그래프', 'OGC 표준', IFC 의 '개방형 데이터 스키마')을 빼고, 이번 finding(f13·f14·f15)이 뒷받침하는 범위(IFC: IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식 / IndoorGML: IFC 에서 자동 생성 대상이 되는 실내 공간 정보 표준)로 줄인다. 표준 구조 확인은 additional_research_requests 로 넘긴다(buildingSMART·OGC 공식 저장소 미러로 확인 가능).\",\"용어 후보 '점유 격자 지도'·'위상 지도': 용어 페이지 출처에 근거 finding 의 각주(점유 격자 지도: f11·f12, 위상 지도: f7·f13)를 단다.\",\"온톨로지 초안(공간 그래프 스키마 초안) 반영: 승인한 변경만 반영하고 초안 버전을 '0.1' → '0.2' 로 올린다. (1) 개념 '층간 정렬 기준점(Alignment Fiducial)' 추가, 근거 f1·f3, 상태 확정. (2) '층별 지도' 속성에 '축척(미터당 픽셀)'·'도면 대비 변환(이동·회전)'을 더하고 근거 f1·f2·f3 으로 상태를 초안 → 확정(f4 는 벤더 주장이므로 근거 칸에서 뺀다). '층 이름'은 이미 '층' 개념의 속성이므로 층별 지도에 중복 추가하지 않고 기존 관계 '층별 지도 / 층에서 생성된다'로 대신한다. (3) '평면도' 속성 '형식'에 값 후보(래스터 이미지, 벡터 CAD(DXF·DWG), BIM 모델(IFC))를 근거 f1·f8·f11 로 적고 '(단계 2에서 확정)' 표시는 유지, 상태 초안 → 확정(f19 는 추정이므로 근거 칸에서 뺀다).\",\"온톨로지 변경 '문(Door) 속성에 통과 방향·문 유형·통과 비용 추가'(f13·f14)는 반영하지 않고 초안 6절 미해결 모델링 질문으로 둔다 — 통과 조건을 엣지에 둘지 문 속성에 둘지(q3-02)가 미결이고, Palacz 외는 문을 하이퍼엣지로 표현한다. 질문 문장에 f13·f14 각주를 단다.\",\"f17·f20 은 초안 6절 미해결 질문의 q4-02·q4-03 항목에 근거로 연결한다(새 개념으로 넣지 않는다).\",\"새 질문 '공간 그래프 교환 형식으로 IndoorGML, osmAG(OSM XML), Open-RMF building.yaml 가운데 …'(단계 2)는 q2-01·q2-03 과 같은 뜻이므로 backlog_updates 에 넣지 않는다 — 대신 단계 1 페이지 5절 아래 문장으로 IndoorGML·osmAG·Open-RMF 지도 형식이 q2-01·q2-03 의 조사 후보임을 적는다(Open-RMF building.yaml 이라는 파일 이름은 finding 에 없으므로 'Open-RMF traffic-editor 주석 결과'로 쓴다).\",\"새 질문 '도면(as-planned)과 현장(as-built)의 구조 편차를 추정하는 방법을 ROP 지도 정합 절차에 넣으려면 …'(단계 4)은 q4-02 와 같은 뜻이므로 backlog_updates 에 넣지 않는다 — f17 을 q4-02 의 관련 근거로 단계 1 페이지 5절 아래에 연결만 한다.\",\"새 질문 '물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 …'(단계 1, 근거 f21)은 등록하되(q1-02 의 제품 쪽 한계에서 파생, q1-03 과는 제품 공개 문서로 범위가 다름) origin 은 'f21' 로 둔다.\",\"단계 1 페이지 3절 q1-02 소제목은 '### q1-02 … {#q1-02}' 형식으로 두고, 2절 표와 백로그의 q1-02 를 '답함', 답 위치 '#q1-02', 답한 실행 id 2026-09-25-11 로 바꾼다. 결론에는 제품 쪽 근거가 벤더 주장 3건뿐(f4·f9·f10)이고 공개 근거 부재는 검색 범위 기준(f21)임을 남은 불확실성으로 적는다.\",\"아이디어 3. 건축 도면 자동 인식 3절: '제품 사례' 소절의 '아직 조사되지 않음(q1-02)'을 바꾸되, 제품(MiR Fleet·Navitec·Pointr)은 벤더 주장 병기, 오픈소스 도구(Open-RMF traffic-editor·osmAG-from-cad·Ogm2Pgbm·ifc2indoorgml)는 도구로 구분하고, 표를 만들면 검증된 finding 으로 직접 만든다(출처 표 복제 금지).\",\"세부영역 반영 제안(6. 지도·공간·위치 모델, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스)은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 area_reflection_proposals 로만 남긴다. 28. 표준·상호운용성·다사업자 거버넌스 제안(f7·f13·f15)에는 'IFC·IndoorGML 을 발행 기관 자료로 확인하지 않음'을 병기한다.\",\"단계 1 페이지 6절 완료 조건 표와 상태 줄: 완료 조건 1·2 는 이번 실행으로 충족(1차 예비 판정 — 2차에서 확정), 다음 단계 전환은 '아니오(막힌 질문 q1-03·q1-04·q1-05 와 이번에 등록하는 새 단계 1 질문)'로 적고 단계 상태는 '진행 중'을 유지한다. track_updates.stage_transition 은 넣지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 21건, 미확인 1건, 교차 확인 0건. 강등: f16 사실 → 부분 추정(URDF 건물 월드·점유 격자 지도 생성은 검증 스니펫에서 미확인). 원문 미열람 출처: ref-081, ref-083, ref-085, ref-086 과 ref-087~ref-095(기존 참고문헌과 id 충돌로 ref-119~ref-127 로 재부여 지시). 원문을 연 출처는 GitHub 원본 ref-079·ref-080·ref-082·ref-084 이며 검증에서도 다시 열어 확인했다. 검증 검색은 회당 상한 40회 가운데 남은 9회를 모두 써서 ref-093(Pointr)·ref-095(Navitec)는 리서치 검색 기록으로만 판단했다. 주의: 사례마다 저자 계열 1차 출처뿐이라 핵심 주장에 독립 교차 확인이 없고, f11·f12·f16 은 같은 TUM 저자 그룹 근거다. 제품 쪽 근거는 벤더 주장 3건(f4·f9·f10)뿐이며, 물류 로봇 관제 제품이 도면에서 문·승강기·충전 위치를 자동 추출한다는 공개 근거는 검색 범위에서 찾지 못했다(부재 확인 아님). 도면 기반 위치추정·SLAM 연구(f5·f6·f12·f16·f17)는 로봇 자체 지능·제어 쪽 연계 대상으로만 다룬다. q1-02 답함 인정(f1~f22, 종합 신뢰도 medium). 온톨로지 변경 승인: 층간 정렬 기준점 추가(f1·f3), 층별 지도 수정(f1·f2·f3), 평면도 수정(f1·f8·f11) / 거부: 문 속성 추가(f13·f14 — 통과 조건을 엣지에 둘지 문 속성에 둘지 q3-02 와 함께 6절 질문으로). 시드 개념 확정: 층별 지도(f1·f2·f3), 평면도(f1·f8·f11). 새 질문 3건 가운데 2건은 기존 q2-01·q2-03, q4-02 와 중복이라 등록하지 않는다. 단계 완료 조건: 충족(1차 예비 — 제품 사례 비교가 아이디어 3. 건축 도면 자동 인식 3절에 실리고 인식 대상 요소 목록은 이미 반영됨, 2차에서 확정). 단계 전환: 미승인(막힌 질문 q1-03·q1-04·q1-05 와 이번에 등록하는 새 단계 1 질문이 열림).\",\"track_checks\":{\"standard_sources_ok\":false,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":false,\"backlog_duplicates\":[\"공간 그래프 교환 형식으로 IndoorGML, osmAG(OSM XML), Open-RMF building.yaml 가운데 무엇을 기준으로 삼을 수 있고 서로 변환할 때 무엇이 빠지는가? (q2-01·q2-03 과 중복)\",\"도면(as-planned)과 현장(as-built)의 구조 편차를 추정하는 방법(A-Graph·S-Graph 결합 등)을 ROP 지도 정합 절차에 넣으려면 허용 편차 기준과 사람 확인 지점을 어떻게 두는가? (q4-02 와 중복)\"],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":true,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-11",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "retry_reason": null,
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-079 원본(raw.githubusercontent.com traffic-editor.md)을 이번 검증에서 열어 확인: 평면도가 그림 바탕, 기본 축척 1px=5cm, distance 파라미터로 축척 갱신, fiducial로 층 사이 축척·정렬, building_map_generator로 3D 월드 생성 시 벽 메시 자동 생성. 단일 출처, 발행일 미확인(확인일 2026-09-25)."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 원본에서 layers 탭 Add로 로봇 지도를 넣고 축척·이동·회전 변환, is_charger가 차선 위 정점이면 rmf_fleet_adapter가 충전소로 취급함을 확인. 단 '충전 위치는 도면 인식이 아니라 사람이 주석하는 항목으로 둔다'는 해석은 원문 문구가 아니라 추론이므로 [사실] 문장에서 분리(수정 지시)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-080 원본(integration_nav-maps.md)에서 경유점의 level name(B1, L1, L2 등)과 층 안 미터 단위 (x, y), 스크린샷이 좌표계·건물 구조 정렬의 sanity-checking에 유용하다는 서술을 확인. 발행일 미확인."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 같은 PDF(MiR Fleet Enterprise Documentation 1.2, 2025-01, jk.de 유통사 게재본)와 '20 pixels to 1 m' 축척 요건을 확인. 벤더 문서, vendor_claim·[추정] 표시 적정. 제조사 공식 사이트 게재본이 아님을 각주에 유지."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색으로 저자(Boniardi, Caselitz, Kümmerle, Burgard)·IROS 2017·pp. 3318–3324·CAD 평면도 기반 2D 라이다 위치추정 확인. 포즈 그래프 SLAM·GICP 세부는 리서치 검색 요약 범위. 위치추정 자체는 로봇 자체 지능·제어 쪽 연계 대상."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색으로 저자 5인·IROS 2019·arXiv 1903.01804, 추출한 방 배치 경계를 입자 필터로 평면도와 정합, 기존 방식이 전문가의 수고로운 작업을 요구해 설치 용이성을 제한한다는 동기를 확인."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-084 README를 이번 검증에서 열어 인용 서지(arXiv 2507.00552, Zhang·Wu·Ma·Schwertfeger 2025)를 확인해 ref-083 실재 확인. 논문 방법 세부는 검색 요약 범위(ref-083 원문 미열람). 두 출처 같은 저자라 독립 교차 아님."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. README 원문에서 DXF→SVG+bounds.json→PNG→AreaGraph 분할→osmAG.osm, DWG는 ODA File Converter 필요·기본 재현 경로 밖, --with-text 문자 추출 기본 꺼짐, ShanghaiTech 캠퍼스 도면은 기관 데이터라 제외(ArchWeb 도면도 저작권으로 재배포 불가)를 확인. 발행일 미확인."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검증 예산). 검증 검색 예산이 소진되어 리서치 검색 결과의 기관·제목·URL 일치로만 판단. 벤더 주장이며 사람용 실내 지도(IMDF) 변환으로 로봇 지도 사례가 아님을 명시한 점 적정."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(검증 예산). 리서치 검색 결과 기준. 벤더 주장이며 CAD에서 경로·설비를 자동 추출하는지 미확인이라고 적은 점 적정."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 arXiv 2308.05443 제목과 ECPPM 2022 발표본(TUM) 존재 확인, Ogm2Pgbm README가 Vega Torres et al. 2022를 인용. 주장 세부는 리서치 검색 요약 범위. ref-082·ref-094와 같은 저자 그룹이라 독립 아님."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. README 원문에서 TLS·BIM/CAD 기반 점유 격자 지도를 Cartographer(.pbstream)·SLAM Toolbox(.posegraph) 포즈 그래프 지도로 변환, 장애물 안에 흰 빈틈이 없도록 채우는 준비 단계, Zenodo DOI 10.5281/zenodo.7330270 확인. README의 '78% 개선' 수치는 쓰지 않는다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 Braga 외, Frontiers in Robotics and AI 2025-03-26, BIM 기반 의미 내비게이션·UWB 비콘·건설 현장 검증 확인. Dynamo·XML·하이퍼그래프 경로계획 세부는 리서치 검색 요약 범위."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 IFC에서 추출한 하이퍼그래프, 방 크기·문 방향·문 유형 속성, 공간 통과·문 열기 비용을 고려한 수정 최단 경로 탐색, ICAISC 2019 확인. 검색 요약상 이 연구는 IfcSpace를 노드, IfcDoor를 하이퍼엣지로 둔다(온톨로지 판단에 참고)."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 ISPRS Archives XLIII-B4-2022 pp. 295–301, IFC에서 IndoorGML 자동 생성 확인. 저자는 Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., Zlatanova, S.로 브리프의 기관 표기(Biljecki, F. 외)가 제1저자와 다름(수정 지시). '실용 도구 부족' 동기는 리서치 검색 요약 범위."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 부분 강등. 검증 검색에서 저자(Vega Torres, Braun, Borrmann, TUM)·arXiv 2408.15870·BIM에서 세션 데이터(포즈 그래프 지도·기술자) 생성과 다중 세션 앵커링으로 실측 데이터 정렬, BIM에 없는 새 요소 재구성을 확인. 'IFC로 로봇이 질의할 수 있는 URDF 건물 월드'와 'BIM에서 점유 격자 지도 생성'은 검증 스니펫에서 확인되지 않음(원문 미열람)."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 저자(Shaheer, Millan-Romera, Bavle, Giberna, Sanchez-Lopez, Civera, Voos), as-planned/as-built 전역 정렬·구조 편차 실시간 추정, 35cm·15도 견고성(시뮬레이션·실제 데이터셋) 확인. arXiv 2024-08-03 제출, 2025-06-12 개정, 사라고사대 저장소에 게재본 있음. 수치는 단일 출처."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람). 검증 검색에서 한국산학기술학회논문지 26(11) 218-225, DOI 10.5762/KAIS.2025.26.11.218, 저자 박근홍·박병준·이슬기, 2020~2025 문헌 1,356편·PRISMA·LDA 확인. 한계(단방향 IFC 변환 다수 등) 서술은 리서치 검색 요약 범위. 건설로봇 대상."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(종합 분류). 'IfcSpace·IfcDoor 같은 의미 클래스' 구절은 인용된 출처(source_ids)에 근거가 없고 ref-086(f14)의 검색 요약에서만 확인되므로 각주를 보강해야 함(수정 지시). 입력 형식별 분류를 제시한 단일 출처 없음."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. f1·f2·f5·f11·f12·f17에서 도출한 추론이며 확인한 사례 범위에 한정됨을 명시해야 함."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 검색 범위 안의 부재이며 부재 확인이 아님을 브리프가 밝힘. 근거 벤더 출처 가운데 ref-093·ref-095는 검증 예산 소진으로 독립 확인하지 못함."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. '연계 대상: ' 표시와 분류 원문 9장 경계(로봇 자체 지능·제어) 대응 적정. f16 강등분(URDF·OGM)을 근거로 쓰지 않는다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "참고문헌 id 충돌: 브리프의 ref-087~ref-095 가 docs/references/index.md 에 이미 등록된 다른 출처(ref-087 SayCan README, ref-088 Ahn 외, ref-089 SMART-LLM README, ref-090 Kannan 외, ref-091 llm-pddl README, ref-092 LLM+P, ref-093 Huang 외, ref-094 language-planner README, ref-095 Code as Policies README)와 겹친다. 그대로 등록하면 기존 각주가 덮어써진다.",
+        "f14(Palacz 외: 문을 IfcDoor 하이퍼엣지로 표현)와 온톨로지 변경 제안 '문 속성에 통과 방향·유형·비용 추가'가 공간 그래프 스키마 초안 6절의 미해결 질문(통과 조건을 엣지에 둘지 문 속성에 둘지, q3-02)과 겹친다.",
+        "f1(측정으로 축척 설정)·f21 관련 축척 문제는 단계 1 페이지 4절과 초안 6절의 기존 추정(축척 복원, q4-05)과 같은 주제다 — 충돌은 아니며 연결만 한다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "참고문헌 id: ref-087~ref-095 는 기존 참고문헌(SayCan·SMART-LLM·LLM+P 등)과 충돌하므로 이 id 로 등록·인용하지 않는다 — 기존 목록 최대 ref-109 와 이전 브리프 2026-09-25-08 이 쓴 ref-110~ref-118 을 피해 ref-087→ref-119, ref-088→ref-120, ref-089→ref-121, ref-090→ref-122, ref-091→ref-123, ref-092→ref-124, ref-093→ref-125, ref-094→ref-126, ref-095→ref-127 로 바꾸고 본문 각주·프런트매터 sources·reference_updates 를 모두 같은 매핑으로 맞춘다(퍼블리셔가 id 충돌을 다시 확인해야 한다). ref-079~ref-086 은 그대로 쓴다.",
+      "모든 출처 각주: 원문을 연 ref-079·ref-080·ref-082·ref-084 를 뺀 나머지(ref-081, ref-083, ref-085, ref-086 과 재부여한 ref-119~ref-127)는 각주 접근일 뒤에 ' (원문 미열람)' 을 붙이고 reference_updates 에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.",
+      "ref-090(재부여 ref-122) 기관 표기를 'Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S.' 로 고친다 — 검증 검색에서 제1저자가 Diakité 로 확인됐다.",
+      "ref-089(재부여 ref-121) 기관 표기를 'Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H.' 로 고치고, 기준일에 arXiv 2024-08 제출·2025-06 개정판이 있음을 적는다.",
+      "ref-094(재부여 ref-126) 기관 표기를 'Vega Torres, M. A., Braun, A., & Borrmann, A.' 로 고치고, f11·f12·f16 이 같은 저자 그룹(TUM) 근거임을 본문에 드러낸다.",
+      "ref-091(재부여 ref-123) 기관 표기를 '박근홍, 박병준, 이슬기(한국산학기술학회논문지)' 로 고치고 서지에 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218 을 적는다 — dspace.kci.go.kr URL 은 검증에서 확인하지 못했으므로 검증 검색으로 확인한 KCI 논문 페이지 https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003269295 로 바꾼다.",
+      "f16: [사실] 문장은 'BIM 모델에서 세션 데이터(포즈 그래프 지도·기술자)를 만들고 다중 세션 앵커링으로 실측 데이터를 정렬하며 BIM에 없는 새 요소를 재구성한다' 범위로 줄이고, 'IFC로 로봇이 질의할 수 있는 URDF 건물 월드'와 'BIM에서 점유 격자 지도 생성'은 [추정]으로 강등하고 '미확인(검색 요약 기준)'을 붙이거나 삭제한다 — 검증 검색 스니펫에서 확인되지 않았다.",
+      "f2: [사실] 문장에는 레이어 변환(축척·이동·회전)과 is_charger 정점 속성의 동작만 두고, '충전 위치는 도면 인식이 아니라 사람이 주석하는 항목으로 둔다'는 해석은 f20 과 함께 [추정]으로 서술한다 — 원문 문구가 아니라 추론이다.",
+      "f19: 'BIM/IFC는 IfcSpace·IfcDoor 같은 의미 클래스 덕분에' 구절에는 ref-086 각주를 더하고(f14 의 검색 요약이 IfcSpace 노드·IfcDoor 하이퍼엣지를 보여 준다), 문장 전체는 [추정]을 유지한다 — 현재 source_ids 에는 이 구절의 근거가 없다.",
+      "f5·f6·f11·f12·f16·f17: 세부영역 6. 지도·공간·위치 모델 반영 제안과 단계 페이지에서 이 연구들을 도면을 기준으로 한 지도 정합·도면 해석 방법으로만 소개하고, 위치추정·SLAM 자체는 분류 원문 9장의 '로봇 자체 지능·제어' 연계 대상으로 짧게 적는다(f22 와 같은 표현) — ROP 직접 기능처럼 쓰지 않는다.",
+      "f4·f9·f10: 본문과 아이디어 페이지 3절 '제품 사례' 소절에서 [추정]에 '벤더 주장'을 병기하고, ref-092(재부여 ref-124)는 제조사 공식 사이트가 아닌 유통사 게재본임을 각주 또는 본문에 밝힌다. f9(Pointr)는 사람용 실내 지도이며 로봇 지도 사례가 아님을 유지한다.",
+      "f17: 35cm·15도 수치는 '시뮬레이션·실제 데이터셋 실험 조건의 단일 출처 수치'로 조건과 함께 적는다.",
+      "f1: 시뮬레이션 월드 생성은 22. 시뮬레이션·예측용 디지털 트윈 연결로만 적고 8. 실시간 세계 상태·데이터 일관성과 섞지 않는다.",
+      "용어 후보 'IFC'·'IndoorGML': 정의에서 발행 기관 자료로 확인하지 않은 구조 서술(IndoorGML 의 '셀 공간과 경계·노드·엣지 연결 그래프', 'OGC 표준', IFC 의 '개방형 데이터 스키마')을 빼고, 이번 finding(f13·f14·f15)이 뒷받침하는 범위(IFC: IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식 / IndoorGML: IFC 에서 자동 생성 대상이 되는 실내 공간 정보 표준)로 줄인다. 표준 구조 확인은 additional_research_requests 로 넘긴다(buildingSMART·OGC 공식 저장소 미러로 확인 가능).",
+      "용어 후보 '점유 격자 지도'·'위상 지도': 용어 페이지 출처에 근거 finding 의 각주(점유 격자 지도: f11·f12, 위상 지도: f7·f13)를 단다.",
+      "온톨로지 초안(공간 그래프 스키마 초안) 반영: 승인한 변경만 반영하고 초안 버전을 '0.1' → '0.2' 로 올린다. (1) 개념 '층간 정렬 기준점(Alignment Fiducial)' 추가, 근거 f1·f3, 상태 확정. (2) '층별 지도' 속성에 '축척(미터당 픽셀)'·'도면 대비 변환(이동·회전)'을 더하고 근거 f1·f2·f3 으로 상태를 초안 → 확정(f4 는 벤더 주장이므로 근거 칸에서 뺀다). '층 이름'은 이미 '층' 개념의 속성이므로 층별 지도에 중복 추가하지 않고 기존 관계 '층별 지도 / 층에서 생성된다'로 대신한다. (3) '평면도' 속성 '형식'에 값 후보(래스터 이미지, 벡터 CAD(DXF·DWG), BIM 모델(IFC))를 근거 f1·f8·f11 로 적고 '(단계 2에서 확정)' 표시는 유지, 상태 초안 → 확정(f19 는 추정이므로 근거 칸에서 뺀다).",
+      "온톨로지 변경 '문(Door) 속성에 통과 방향·문 유형·통과 비용 추가'(f13·f14)는 반영하지 않고 초안 6절 미해결 모델링 질문으로 둔다 — 통과 조건을 엣지에 둘지 문 속성에 둘지(q3-02)가 미결이고, Palacz 외는 문을 하이퍼엣지로 표현한다. 질문 문장에 f13·f14 각주를 단다.",
+      "f17·f20 은 초안 6절 미해결 질문의 q4-02·q4-03 항목에 근거로 연결한다(새 개념으로 넣지 않는다).",
+      "새 질문 '공간 그래프 교환 형식으로 IndoorGML, osmAG(OSM XML), Open-RMF building.yaml 가운데 …'(단계 2)는 q2-01·q2-03 과 같은 뜻이므로 backlog_updates 에 넣지 않는다 — 대신 단계 1 페이지 5절 아래 문장으로 IndoorGML·osmAG·Open-RMF 지도 형식이 q2-01·q2-03 의 조사 후보임을 적는다(Open-RMF building.yaml 이라는 파일 이름은 finding 에 없으므로 'Open-RMF traffic-editor 주석 결과'로 쓴다).",
+      "새 질문 '도면(as-planned)과 현장(as-built)의 구조 편차를 추정하는 방법을 ROP 지도 정합 절차에 넣으려면 …'(단계 4)은 q4-02 와 같은 뜻이므로 backlog_updates 에 넣지 않는다 — f17 을 q4-02 의 관련 근거로 단계 1 페이지 5절 아래에 연결만 한다.",
+      "새 질문 '물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 …'(단계 1, 근거 f21)은 등록하되(q1-02 의 제품 쪽 한계에서 파생, q1-03 과는 제품 공개 문서로 범위가 다름) origin 은 'f21' 로 둔다.",
+      "단계 1 페이지 3절 q1-02 소제목은 '### q1-02 … {#q1-02}' 형식으로 두고, 2절 표와 백로그의 q1-02 를 '답함', 답 위치 '#q1-02', 답한 실행 id 2026-09-25-11 로 바꾼다. 결론에는 제품 쪽 근거가 벤더 주장 3건뿐(f4·f9·f10)이고 공개 근거 부재는 검색 범위 기준(f21)임을 남은 불확실성으로 적는다.",
+      "아이디어 3. 건축 도면 자동 인식 3절: '제품 사례' 소절의 '아직 조사되지 않음(q1-02)'을 바꾸되, 제품(MiR Fleet·Navitec·Pointr)은 벤더 주장 병기, 오픈소스 도구(Open-RMF traffic-editor·osmAG-from-cad·Ogm2Pgbm·ifc2indoorgml)는 도구로 구분하고, 표를 만들면 검증된 finding 으로 직접 만든다(출처 표 복제 금지).",
+      "세부영역 반영 제안(6. 지도·공간·위치 모델, 21. 온보딩·설정·현장 시운전, 28. 표준·상호운용성·다사업자 거버넌스)은 세부영역 페이지를 직접 고치지 않고 트랙 로그의 area_reflection_proposals 로만 남긴다. 28. 표준·상호운용성·다사업자 거버넌스 제안(f7·f13·f15)에는 'IFC·IndoorGML 을 발행 기관 자료로 확인하지 않음'을 병기한다.",
+      "단계 1 페이지 6절 완료 조건 표와 상태 줄: 완료 조건 1·2 는 이번 실행으로 충족(1차 예비 판정 — 2차에서 확정), 다음 단계 전환은 '아니오(막힌 질문 q1-03·q1-04·q1-05 와 이번에 등록하는 새 단계 1 질문)'로 적고 단계 상태는 '진행 중'을 유지한다. track_updates.stage_transition 은 넣지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. 확인 21건, 미확인 1건, 교차 확인 0건. 강등: f16 사실 → 부분 추정(URDF 건물 월드·점유 격자 지도 생성은 검증 스니펫에서 미확인). 원문 미열람 출처: ref-081, ref-083, ref-085, ref-086 과 ref-087~ref-095(기존 참고문헌과 id 충돌로 ref-119~ref-127 로 재부여 지시). 원문을 연 출처는 GitHub 원본 ref-079·ref-080·ref-082·ref-084 이며 검증에서도 다시 열어 확인했다. 검증 검색은 회당 상한 40회 가운데 남은 9회를 모두 써서 ref-093(Pointr)·ref-095(Navitec)는 리서치 검색 기록으로만 판단했다. 주의: 사례마다 저자 계열 1차 출처뿐이라 핵심 주장에 독립 교차 확인이 없고, f11·f12·f16 은 같은 TUM 저자 그룹 근거다. 제품 쪽 근거는 벤더 주장 3건(f4·f9·f10)뿐이며, 물류 로봇 관제 제품이 도면에서 문·승강기·충전 위치를 자동 추출한다는 공개 근거는 검색 범위에서 찾지 못했다(부재 확인 아님). 도면 기반 위치추정·SLAM 연구(f5·f6·f12·f16·f17)는 로봇 자체 지능·제어 쪽 연계 대상으로만 다룬다. q1-02 답함 인정(f1~f22, 종합 신뢰도 medium). 온톨로지 변경 승인: 층간 정렬 기준점 추가(f1·f3), 층별 지도 수정(f1·f2·f3), 평면도 수정(f1·f8·f11) / 거부: 문 속성 추가(f13·f14 — 통과 조건을 엣지에 둘지 문 속성에 둘지 q3-02 와 함께 6절 질문으로). 시드 개념 확정: 층별 지도(f1·f2·f3), 평면도(f1·f8·f11). 새 질문 3건 가운데 2건은 기존 q2-01·q2-03, q4-02 와 중복이라 등록하지 않는다. 단계 완료 조건: 충족(1차 예비 — 제품 사례 비교가 아이디어 3. 건축 도면 자동 인식 3절에 실리고 인식 대상 요소 목록은 이미 반영됨, 2차에서 확정). 단계 전환: 미승인(막힌 질문 q1-03·q1-04·q1-05 와 이번에 등록하는 새 단계 1 질문이 열림).",
+    "track_checks": {
+      "standard_sources_ok": false,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": false,
+      "backlog_duplicates": [
+        "공간 그래프 교환 형식으로 IndoorGML, osmAG(OSM XML), Open-RMF building.yaml 가운데 무엇을 기준으로 삼을 수 있고 서로 변환할 때 무엇이 빠지는가? (q2-01·q2-03 과 중복)",
+        "도면(as-planned)과 현장(as-built)의 구조 편차를 추정하는 방법(A-Graph·S-Graph 결합 등)을 ROP 지도 정합 절차에 넣으려면 허용 편차 기준과 사람 확인 지점을 어떻게 두는가? (q4-02 와 중복)"
+      ],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": true,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 56465,
+  "type": "result",
+  "duration_ms": 321852,
+  "uuid": "e6a5facd-59c3-42f7-9ecb-1f0dc76e285d",
+  "ttft_stream_ms": 3041,
+  "time_to_request_ms": 92,
+  "first_content_frame_ms": 3042,
+  "time_to_request_from_spawn_ms": 5706012,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790301559367.6804,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 323.7
+}

@@ -822,7 +822,10 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
         ctx["verification_stage"] = stage or "first"
         ctx["verifier_budget"] = dict(budget)
     if role == "researcher":
-        ctx["next_ref_id"] = runs.next_reference_id()
+        first, last = runs.reserve_reference_block(str(target_json.get("run_id") or ""))
+        ctx["next_ref_id"] = first
+        ctx["새 출처 id 구간"] = (f"{first} ~ {last} — 이 실행 전용으로 예약한 번호다(동시에 도는 다른 실행과 겹치지 않는다). 새 출처는 "
+                              f"{first} 부터 순서대로 쓰고 {last} 를 넘기지 않는다. 기존 출처는 참고문헌 목록의 id 를 그대로 쓴다")
     if retry:
         ctx["retry_count"] = retry
         ctx["max_retries"] = budget.get("max_retries", 2)

@@ -178,6 +178,26 @@ class TestPublishHelpers(unittest.TestCase):
         self.assertFalse(ok2)
         self.assertIn("<<<<<<<", merged2)
 
+    def test_ref_mapping_floor(self):
+        import publish
+        m = publish.compute_ref_mapping({"ref-001": "a.org"}, {"ref-001": "b.org"}, floor=150)
+        self.assertEqual(m["ref-001"], "ref-151")      # 다른 실행이 예약한 구간(~ref-150) 위로 옮긴다
+
+    def test_reserve_reference_block(self):
+        orig_file, orig_ids = runs.REF_BLOCK_FILE, runs.existing_reference_ids
+        with tempfile.TemporaryDirectory() as td:
+            runs.REF_BLOCK_FILE = Path(td) / "blocks.json"
+            runs.existing_reference_ids = lambda: ["ref-001", "ref-040"]
+            try:
+                a = runs.reserve_reference_block("r1", size=10)
+                b = runs.reserve_reference_block("r2", size=10)
+                again = runs.reserve_reference_block("r1", size=10)
+            finally:
+                runs.REF_BLOCK_FILE, runs.existing_reference_ids = orig_file, orig_ids
+        self.assertEqual(a, ("ref-041", "ref-050"))
+        self.assertEqual(b, ("ref-051", "ref-060"))     # 겹치지 않는다
+        self.assertEqual(again, a)                        # 같은 실행은 같은 구간
+
     def _transition(self, slug: str, from_stage: int, to_stage: int, stages: int):
         """퍼블리셔 단계 전환(_transition_stage)을 임시 복사한 트랙 설정에 적용하고 결과 설정을 돌려준다."""
         import yaml
