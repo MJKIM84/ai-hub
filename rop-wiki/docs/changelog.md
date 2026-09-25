@@ -54,6 +54,32 @@ version: 1
 | 2026-09-25-10 | 생성 | [docs/glossary/semi-open-queueing-network.md](glossary/semi-open-queueing-network.md) | 용어집 항목 반개방형 대기행렬 네트워크 |
 | 2026-09-25-10 | 생성 | [docs/glossary/discrete-event-simulation.md](glossary/discrete-event-simulation.md) | 용어집 항목 이산 사건 시뮬레이션 |
 | 2026-09-25-10 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-09 | 갱신 | [docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 섹션 3~11 신규 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오), 페이지 상태 자동 영역 추가. 2차 수정: 5절 태그 강등 2건·예외 칸 태그 추가, 6절 요약 [의견], 프런트매터 sources 정리 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s4.md](topics/2026/2026-09-25-area02-s4.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: ref-120 각주와 건전성의 교착·라이브락 문장을 빼고 ref-121 근거 문장으로 줄였다 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s6.md](topics/2026/2026-09-25-area02-s6.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 첫 문장을 [의견] 정리로 바꾸고 ref-120 문장을 ref-121 근거 문장으로 줄였다 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s7.md](topics/2026/2026-09-25-area02-s7.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,105자)을 옮겼다 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s8.md](topics/2026/2026-09-25-area02-s8.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "8. 대표 연구와 자료" 절(870자)을 옮겼다 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s11.md](topics/2026/2026-09-25-area02-s11.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "11. 열린 질문" 절(815자)을 옮겼다 |
+| 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s10.md](topics/2026/2026-09-25-area02-s10.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다(링크는 주제 페이지 위치 기준). 2차 수정: 7번 항목 [추정] 강등, 12번 항목 두 주장 분리, 1번 항목 ref-119 추가 |
+| 2026-09-25-09 | 요약 | [docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2. 공정·워크플로 모델링: 영역 심화 3~11절 초안 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오, 1차 조건부 승인 수정 13건과 2차 수정 지시 9건 반영) |
+| 2026-09-25-09 | 생성 | [docs/references/ref-110.md](references/ref-110.md) | 참고문헌 ref-110 등록: Tasks in RMF (task_new) - Programming Multiple Robots with R… |
+| 2026-09-25-09 | 생성 | [docs/references/ref-111.md](references/ref-111.md) | 참고문헌 ref-111 등록: rmf_api_msgs — rmf_api_msgs/schemas/task_state.json |
+| 2026-09-25-09 | 생성 | [docs/references/ref-112.md](references/ref-112.md) | 참고문헌 ref-112 등록: About the Business Process Model And Notation Specification… |
+| 2026-09-25-09 | 생성 | [docs/references/ref-113.md](references/ref-113.md) | 참고문헌 ref-113 등록: Messages \| Camunda 8 Docs (camunda-docs: docs/components/con… |
+| 2026-09-25-09 | 생성 | [docs/references/ref-114.md](references/ref-114.md) | 참고문헌 ref-114 등록: A BPMN-driven framework for Multi-Robot System development |
+| 2026-09-25-09 | 생성 | [docs/references/ref-116.md](references/ref-116.md) | 참고문헌 ref-116 등록: Formalisms for Robotic Mission Specification and Execution:… |
+| 2026-09-25-09 | 생성 | [docs/references/ref-117.md](references/ref-117.md) | 참고문헌 ref-117 등록: B2MML-BatchML — Schema/B2MML-Common.xsd |
+| 2026-09-25-09 | 생성 | [docs/references/ref-118.md](references/ref-118.md) | 참고문헌 ref-118 등록: B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd |
+| 2026-09-25-09 | 생성 | [docs/references/ref-119.md](references/ref-119.md) | 참고문헌 ref-119 등록: IEC 62264-3:2016 - Enterprise-control system integration — P… |
+| 2026-09-25-09 | 생성 | [docs/references/ref-121.md](references/ref-121.md) | 참고문헌 ref-121 등록: The complexity of soundness in workflow nets |
+| 2026-09-25-09 | 생성 | [docs/references/ref-122.md](references/ref-122.md) | 참고문헌 ref-122 등록: OCEL (Object-Centric Event Log) 2.0 Specification |
+| 2026-09-25-09 | 생성 | [docs/references/ref-123.md](references/ref-123.md) | 참고문헌 ref-123 등록: SCOR Model — Fulfill F1.3 Pick Product |
+| 2026-09-25-09 | 생성 | [docs/references/ref-124.md](references/ref-124.md) | 참고문헌 ref-124 등록: 스마트물류센터 인증제 안내 |
+| 2026-09-25-09 | 생성 | [docs/glossary/bpmn.md](glossary/bpmn.md) | 용어집 항목 비즈니스 프로세스 모델 및 표기법 |
+| 2026-09-25-09 | 생성 | [docs/glossary/workflow-net.md](glossary/workflow-net.md) | 용어집 항목 워크플로 넷 |
+| 2026-09-25-09 | 생성 | [docs/glossary/ocel.md](glossary/ocel.md) | 용어집 항목 객체 중심 이벤트 로그 |
+| 2026-09-25-09 | 생성 | [docs/glossary/b2mml.md](glossary/b2mml.md) | 용어집 항목 B2MML |
+| 2026-09-25-09 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-25-07 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가, 발행 시점 문장에 태그·각주. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
 | 2026-09-25-07 | 생성 | [docs/topics/2026/2026-09-25-area07-s7.md](topics/2026/2026-09-25-area07-s7.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,570자)을 옮겼다 |
 | 2026-09-25-07 | 요약 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 7. 화물·재고·자산 식별과 추적: corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 |

@@ -21,6 +21,12 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 다른 연구영역과의 연결](2026/2026-09-25-area02-s10.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 열린 질문](2026/2026-09-25-area02-s11.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 핵심 개념과 용어](2026/2026-09-25-area02-s4.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 대표 접근법과 기술](2026/2026-09-25-area02-s6.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 관련 표준·프레임워크·오픈소스](2026/2026-09-25-area02-s7.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
+| 2026-09-25 | [2. 공정·워크플로 모델링 — 대표 연구와 자료](2026/2026-09-25-area02-s8.md) | [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | published | medium | — |
 | 2026-09-25 | [3. 처리능력·거점·설비 계획 — 열린 질문](2026/2026-09-25-area03-s11.md) | [3. 처리능력·거점·설비 계획](../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | — |
 | 2026-09-25 | [3. 처리능력·거점·설비 계획 — 대표 접근법과 기술](2026/2026-09-25-area03-s6.md) | [3. 처리능력·거점·설비 계획](../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | — |
 | 2026-09-25 | [3. 처리능력·거점·설비 계획 — 관련 표준·프레임워크·오픈소스](2026/2026-09-25-area03-s7.md) | [3. 처리능력·거점·설비 계획](../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | published | medium | — |
