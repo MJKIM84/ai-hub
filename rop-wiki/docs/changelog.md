@@ -28,6 +28,16 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 '실행 2026-09-25-47 보강' 소절 추가, 4절 결론·불확실성 추가, 새 질문 q4-15, 6절 완료 조건 근거 갱신(미충족·미승인), 7절 반영 제안, 8절 출처(ref-437~439 추가, ref-243 각주는 기존 게시본 형태 유지), 9절 이력 |
+| 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | IDTA 02047 행 종류 칸에 서브모델 요소 묶음 구성(검색 요약 기준)·템플릿 최상위 구조·충전 요소 식별자 추정(출처 충돌 병기), 출처 칸에 ref-198 추가, 상태 문구에 명세 PDF 원문 미열람 추가, 출처·이력 갱신 |
+| 2026-09-25-47 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 '범위 능력 충전 요소의 묶음 위치와 세 층 의미 식별자(실행 2026-09-25-47)' 단락과 ref-438 각주 추가 |
+| 2026-09-25-47 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(IDTA 02047 묶음 구성·충전 요소 식별자 추정·IEC 61360-7·IDTA 02003 제품 분류 항목·세 층 의미 식별자 추정), 새 질문 q4-15, 비교표 IDTA 02047 행 보강, 온톨로지 변경 없음(v0.3) |
+| 2026-09-25-47 | 생성 | [docs/references/ref-439.md](references/ref-439.md) | 참고문헌 ref-439 등록: admin-shell-io/submodel-templates — README (published Submod… |
+| 2026-09-25-47 | 생성 | [docs/references/ref-437.md](references/ref-437.md) | 참고문헌 ref-437 등록: IEC 61360-7:2024 — Standard data element types with associat… |
+| 2026-09-25-47 | 생성 | [docs/references/ref-438.md](references/ref-438.md) | 참고문헌 ref-438 등록: IDTA 02003-1-2 Generic Frame for Technical Data for Industri… |
+| 2026-09-25-47 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
+| 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-46 | 갱신 | [docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가. 2차: 9절 시설·설비 제어 행을 [추정]으로 낮추고 Open-RMF 데모 내용을 따로 적음 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s6.md](topics/2026/2026-09-25-area18-s6.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "6. 대표 접근법과 기술" 절을 옮겼다. 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침. 2차: 운용 모드 소절 마지막 문장을 [사실]과 [추정]으로 나눔 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s7.md](topics/2026/2026-09-25-area18-s7.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,079자)을 옮겼다 |

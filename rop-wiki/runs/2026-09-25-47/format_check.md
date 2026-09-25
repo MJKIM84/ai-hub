@@ -1,9 +1,7 @@
 # 형식 검증 결과(pages)
 
-- 판정: 오류 1건
+- 판정: 통과
 - 차등 갱신 패치 적용:
     - docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md (7개 절)
     - docs/tracks/manual-capability-ontology/model-standard-comparison.md (3개 절)
     - docs/ideas/robot-capability-ontology.md (1개 절)
-- 오류:
-    - docs/tracks/manual-capability-ontology/model-standard-comparison.md: 사실 표기 태그 바로 뒤에 여는 괄호가 붙어 링크로 읽힌다: … 장치 요구·배터리 정보 요소의 IDTA 자체 식별자 [추정](출처 충돌 oq-060 병기) 추가, 출처 칸에 ref… (태그 뒤에는 각주만 붙이고 괄호 설명은 태그 앞에 쓴다)

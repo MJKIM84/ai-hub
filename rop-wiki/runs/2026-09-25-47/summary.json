@@ -1,0 +1,135 @@
+{
+  "run_id": "2026-09-25-47",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "manual-capability-ontology",
+    "stage": 1,
+    "question_ids": [
+      "q1-09"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 3,
+  "new_sources": 3,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 3
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1545.7,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-09 부분 답 보강(IDTA 02047 묶음 구성·충전 요소 식별자 추정·IEC 61360-7·IDTA 02003 제품 분류 항목·세 층 의미 식별자 추정), 새 질문 q4-15, 비교표 IDTA 02047 행 보강, 온톨로지 변경 없음(v0.3) | run 2026-09-25-47",
+  "notes": [
+    "참고문헌 생성: references/ref-439.md",
+    "참고문헌 생성: references/ref-437.md",
+    "참고문헌 생성: references/ref-438.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 3,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 3,
+    "standards": 2,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 2,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 14:44:54 KST",
+  "usage": {
+    "input_tokens": 72,
+    "cache_creation_input_tokens": 2563882,
+    "cache_read_input_tokens": 9680253,
+    "output_tokens": 168298,
+    "cost_usd": 26.4137,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.2477,
+        "output_tokens": 21304,
+        "cache_read_input_tokens": 8464555,
+        "cache_creation_input_tokens": 338129
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.1604,
+        "output_tokens": 14962,
+        "cache_read_input_tokens": 854046,
+        "cache_creation_input_tokens": 320214
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 11.1704,
+        "output_tokens": 121472,
+        "cache_read_input_tokens": 189060,
+        "cache_creation_input_tokens": 1087902
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 6.7505,
+        "output_tokens": 9568,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 816078
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md (7개 절)",
+      "docs/tracks/manual-capability-ontology/model-standard-comparison.md (3개 절)",
+      "docs/ideas/robot-capability-ontology.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 1,
+  "cross_checked_findings": 0
+}

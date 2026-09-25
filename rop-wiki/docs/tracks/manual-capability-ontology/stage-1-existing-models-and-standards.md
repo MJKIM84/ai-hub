@@ -9,9 +9,9 @@ status: published
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-182, ref-183, ref-184, ref-185, ref-198, ref-200, ref-201]
+sources: [ref-022, ref-025, ref-026, ref-027, ref-028, ref-029, ref-030, ref-031, ref-032, ref-033, ref-034, ref-035, ref-036, ref-037, ref-038, ref-039, ref-040, ref-041, ref-042, ref-043, ref-051, ref-228, ref-229, ref-243, ref-231, ref-230, ref-244, ref-245, ref-246, ref-236, ref-247, ref-248, ref-138, ref-249, ref-250, ref-323, ref-329, ref-235, ref-324, ref-325, ref-330, ref-326, ref-327, ref-328, ref-391, ref-392, ref-234, ref-182, ref-183, ref-184, ref-185, ref-198, ref-200, ref-201, ref-437, ref-438, ref-439]
 last_run: 2026-09-25
-version: 7
+version: 8
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [매뉴얼 기반 로봇 기능 온톨로지](index.md) › 단계 1. 기존 능력 표현 모델과 표준 조사
@@ -220,6 +220,26 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 **두 층 의미 식별자.** 실행 2026-09-25-35 에서 원문으로 확인한 IDTA 02047 의 속성 단위 ECLASS IRDI 사용(최대 적재 질량 등)과 IDTA 02020 능력 요소가 IDTA 일반 식별자만 둔다는 관찰, 그리고 semanticId 가 ECLASS·IEC CDD·로컬 개념 기술을 가리킬 수 있다는 지침 설명(검색 요약 기준)을 대응시키면, ROP 의 의미 식별자는 능력 단위(자체 네임스페이스 또는 아직 확인되지 않은 사전 항목)와 속성 단위(ECLASS IRDI·IDTA 식별자)의 두 층으로 나뉠 것으로 보인다. [추정][^ref-245][^ref-243][^ref-200] 이 추정은 이 위키의 추론이며, 위 실행 2026-09-25-41 보강의 구축자 의견(자체 네임스페이스)을 새 결론이 아니라 근거 보강으로 뒷받침한다. 충전 시간 속성 자체의 IRDI 는 확인하지 못했다.
 
+#### 실행 2026-09-25-47 보강
+
+실행 2026-09-25-47도 ECLASS 콘텐츠 데이터베이스와 IEC CDD 트리를 네트워크 정책으로 열지 못해, 네 번째 실행에서도 질문의 핵심(범위 능력 항목의 존재 여부)은 미확인이고 이 질문은 열림으로 둔다. 이번 실행에서 원문을 연 출처는 공식 저장소의 IDTA 02047 템플릿 JSON(열람 응답이 다시 잘림), IDTA 02047 README, 서브모델 템플릿 저장소 README 이며, 나머지는 검색 결과로 기관·제목·URL 을 확인한 원문 미열람 자료이고 교차 확인은 없다. 위 실행 2026-09-25-41 보강의 IDTA 02047 README 문장은 이번 실행에서 README 를 다시 열어 같은 내용을 확인했다(확인일 2026-09-25). [사실][^ref-234] 한국어 검색에서는 출처로 쓸 자료를 찾지 못했다.
+
+**IDTA 02047 명세의 묶음 구성.** 명세 PDF 검색 요약 기준(원문 미열람)으로, IDTA 02047 무인운반차 기술 데이터 1.0 명세(2025-03)는 정보를 TypeAndApplicationInformation, TechnicalParameters, VDA5050Factsheet, EnergyAndCommunication(하위 Battery), Safety, TemporaryTechnicalData 서브모델 요소 묶음으로 구조화한다. [사실][^ref-198] 공식 저장소 템플릿 JSON 의 최상위는 GeneralInformation·SpecificDescriptions 이고, TechnicalParameters 는 SpecificDescriptions 아래에 있다(열람 응답이 잘리기 전 범위, 확인일 2026-09-25). [사실][^ref-245]
+
+**충전·배터리 요소의 의미 식별자.** 명세 PDF 검색 요약 기준(원문 미열람)으로, 충전 장치 요구(ChargingDeviceRequirements, 전압 범위·최대 전류 등)와 배터리 정보(BatteryInformation, 배터리 종류·용량·최대 충전 횟수) 요소는 ECLASS IRDI 가 아니라 IDTA 자체 식별자(`https://admin-shell.io/idta/technicaldataagv/chargingdevicerequirements/1/0`, `…/batteryinformation/1/0`)를 의미 식별자로 가지는 것으로 보이며, 이 식별자 문자열은 검증 검색에서 다시 확인되지 않았다. [추정][^ref-198]
+
+**템플릿 열람 절단과 출처 충돌.** 이번에도 템플릿 JSON 열람 응답은 TechnicalParameters 의 DecelerationMax 에서 잘렸고, 명세상 충전·배터리 요소가 속한 EnergyAndCommunication 묶음은 TechnicalParameters 뒤에 나열되므로, 이전 실행들의 '템플릿에 충전 속성 없음' 관찰은 열람 절단에서 생긴 것일 가능성이 높아 보이지만 템플릿 원문으로 확인된 것은 아니다(묶음 순서는 검색 요약의 나열 순서에 기댄 추론, 확인일 2026-09-25). [추정][^ref-245][^ref-198] 위 세 단락은 [열린 질문](../../open-questions.md) oq-060(출처 충돌)의 근거 보강일 뿐 해소가 아니며, oq-060 은 열림으로 둔다.
+
+**게시된 판.** IDTA 공식 서브모델 템플릿 저장소 README 표 기준으로, 게시된 판은 Capability Description 1.0 과 Technical Data for Automated Guided Vehicles 1.0 이 하나씩이고, 기술 데이터 일반 틀(IDTA 02003)은 1.1 과 2.0.1 이 있다(저장소에는 README 표에 없는 published/Technical_Data/1/2 폴더의 PDF 도 있다(검증 검색 기준), 발행일 미확인, 확인일 2026-09-25). [사실][^ref-439]
+
+**IEC 61360-7 교차 도메인 사전.** IEC 61360-7:2024 는 IEC CDD 에 게시된 교차 도메인 데이터 사전 'IEC 61360-7 – General items'를 정하며, 국가·언어 코드, 외함 보호 등급(IP 코드) 같은 모든 데이터 사전에서 쓸 일반 항목과 선택된 AAS 에 대한 참조를 제공한다(기준일 2024, 유럽 채택판 EN IEC 61360-7:2026 이 있다). [사실][^ref-437]
+
+**IEC CDD·ECLASS 의 이동로봇 항목(재확인).** 네 번째 실행에서도 같은 관찰이다: IEC TC 3 안내 페이지의 CDD 도메인에 위 교차 도메인 사전을 합쳐도 확인된 도메인에 로봇 도메인은 없고 ISO 22166 계열 속성이 CDD 에 등록됐다는 자료도 나오지 않아, IEC CDD 에서 이동로봇 범위 능력 항목을 가져올 가능성은 낮아 보이지만, CDD 트리는 조회하지 못했고 CDD 범위가 모든 ISO·IEC 도메인으로 확장되고 있다는 기존 불확실성이 있어 부재 확정이 아니다. [추정][^ref-183][^ref-437] 영·독·한 검색에서도 ECLASS 에 무인운반차·자율이동로봇을 가리키는 분류 클래스 코드는 나오지 않았고, 드러난 로봇 관련 작업은 여전히 산업용 로봇 그룹 27-38-01 에 한정된 것으로 보인다(데이터베이스 미조회, 부재 확정 아님). [추정][^ref-182][^ref-184][^ref-185]
+
+**제품 분류 항목.** IDTA 02003 1.2 판 기준(원문 미열람, 검색 요약 기준)으로, 기술 데이터 일반 틀은 제품 분류 항목(ProductClassificationItem) 묶음으로 제품을 특정 분류 체계·속성 사전의 제품 클래스와 연결하게 하고, 분류 체계 이름(ProductClassificationSystem)의 예로 'ECLASS'와 'IEC CDD'를 든다. [사실][^ref-438] 더 새 판(2.0.1 등)의 해당 요소는 미확인이다.
+
+**세 층 의미 식별자.** 위 실행 2026-09-25-45 보강의 두 층 추정을 대체하지 않고 이 위키의 추론으로 세분하면, AAS 에서 의미 식별자는 제품 분류(IDTA 02003 제품 분류 항목의 ECLASS·IEC CDD 클래스), 능력(IDTA 02020 의 IDTA 일반 식별자), 속성(IDTA 02047 의 ECLASS IRDI 또는 IDTA 자체 식별자 — 충전·배터리 요소의 IDTA 자체 식별자 부분은 검색 요약 기준)의 서로 다른 층에 붙는 것으로 보여, ROP 가 범위 능력을 식별할 때 로봇 제품 클래스와 능력 식별자를 구분해 두어야 할 것으로 보인다. [추정][^ref-438][^ref-243][^ref-245][^ref-198]
+
 ## 4. 결론과 남은 불확실성
 
 **결론**
@@ -277,6 +297,16 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 - 불확실성: ECLASS 콘텐츠 데이터베이스(15.0·16.0)와 IEC CDD 트리는 이번에도 조회하지 못했고, ECLASS 16.0 에 이동로봇 클래스가 있는지와 IEC CDD 에 ISO 22166 계열 속성이 등록됐는지는 미확인이다.
 - 불확실성: ECLASS-in-AAS 지침과 Nabizada 외(2026) 프리프린트는 원문 미열람이며, 모든 발견이 발행 기관 한 곳의 자료에 기대 교차 확인이 없다.
 
+**실행 2026-09-25-47 결론과 남은 불확실성**
+
+- 결론: IDTA 02047 명세는 정보를 TypeAndApplicationInformation·TechnicalParameters·VDA5050Factsheet·EnergyAndCommunication(하위 Battery)·Safety·TemporaryTechnicalData 묶음으로 구조화한다(명세 PDF 검색 요약 기준). [사실][^ref-198]
+- 결론: IDTA 02003 1.2 판은 제품 분류 항목으로 제품을 ECLASS·IEC CDD 같은 분류 체계의 제품 클래스에 연결하게 한다. [사실][^ref-438]
+- 결론: 의미 식별자는 제품 분류·능력·속성의 세 층으로 나뉘는 것으로 보여 로봇 제품 클래스와 능력 식별자를 구분해 두어야 할 것으로 보인다(이 위키의 추론, 실행 2026-09-25-45 두 층 추정의 세분). [추정][^ref-438][^ref-243][^ref-245]
+- 온톨로지 변경 없음(v0.3 유지): 세 층 식별자는 추정이고 능력 단위 사전 항목 근거가 여전히 없으며 충전 요소는 출처 충돌(oq-060) 상태라, 초안 6절의 '기능의 의미 식별자 속성'과 충전 조건 질문을 그대로 두었다.
+- 불확실성(출처 충돌): 템플릿 JSON 은 이번 실행과 검증자 재열람 모두 DecelerationMax 에서 잘려 충전·배터리 요소를 원문으로 확인하지 못했다. 열람 절단 설명은 근거 보강일 뿐 oq-060 은 열림이다. 충전·배터리 요소의 IDTA 자체 식별자 문자열은 검증 검색에서 다시 확인되지 않았고, 충전 시간 속성의 ECLASS IRDI 도 미확인이다.
+- 불확실성: ECLASS 콘텐츠 데이터베이스와 IEC CDD 트리는 네 번째 실행에서도 조회하지 못했다. 사용자가 조회 결과를 inbox/sources 로 넣을지, q1-09 를 사유와 재개 조건을 적어 보류할지 결정이 필요하다.
+- 불확실성: IDTA 02003 은 1.2 판, IEC 61360-7 은 2024 판 기준이며 더 새 판(2.0.1, EN IEC 61360-7:2026)의 내용은 미확인이다. IEC 61360-7 제목의 부제는 검색 결과 표기 기준이다. 모든 발견이 발행 기관 한 곳의 자료에 기대 교차 확인이 없다.
+
 ## 5. 이 단계가 낳은 후속 질문
 
 | 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |
@@ -293,8 +323,9 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 | q2-06 | 제조사는 IDTA 02047 의 특수 능력(SpecialCapabilities) 같은 자유 텍스트 항목이나 매뉴얼에 계단·도어 조작·충전 같은 범위 능력을 실제로 어떻게 적는가? (q1-09 에서 파생) | 단계 2. 로봇 문서 유형과 정보 구조 조사 | f8 (실행 2026-09-25-35) | 열림 |
 | q6-06 | ECLASS 에 이동로봇 범위 능력(이동·계단·적재·도어 조작·충전) 클래스·속성이 없을 때 ROP 는 자체 의미 식별자를 어떤 네임스페이스·버전 규칙으로 두고, ECLASS 변경 요청(전문가 그룹 'Robotic' 등)으로 등록을 제안하는 책임은 누가 지는가? (q1-09 에서 파생) | 단계 6. 변경 관리·운영·거버넌스 조사 | f8 (실행 2026-09-25-41) | 열림 |
 | q4-14 | IDTA 02047 의 충전 관련 요소(충전 시간, 충전 장치 요구, 배터리 정보)를 VDA 5050 3.0.0 팩트시트의 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)과 대응시켜 범위 능력 '충전'의 판 무관 속성으로 정규화할 수 있는가? (q1-09 에서 파생) | 단계 4. 온톨로지를 실행에 연결하는 방법 조사 | f1 (실행 2026-09-25-45) | 열림 |
+| q4-15 | IDTA 02047 이 서브모델 안에 VDA5050Factsheet 묶음을 둘 때 VDA 5050 팩트시트의 어느 판·필드를 담으며, 팩트시트와 AAS 서브모델이 같은 능력 값(적재·충전 등)을 이중으로 가질 때 능력 온톨로지는 어느 쪽을 근거 문서로 삼고 불일치를 어떻게 처리하는가? (q1-09 에서 파생) | 단계 4. 온톨로지를 실행에 연결하는 방법 조사 | f1 (실행 2026-09-25-47) | 열림 |
 
-같은 질문은 [질문 백로그](question-backlog.md)에 등록된다(백로그 반영은 퍼블리셔가 한다). 실행 2026-09-25-16에서 함께 제안된 "VDA 5050 팩트시트의 action 파라미터 범위를 IDTA 02020 범위 속성으로 보완할 수 있는가" 질문은 q4-06 과 중복이라 등록하지 않았다. 실행 2026-09-25-23에서 제안된 "작업 요구를 요구 능력 속성으로 표현해 로봇 적재 세트와 비교하는 규칙의 질의·규칙 형식" 질문은 q4-07 과 중복이라 등록하지 않았다. 백로그에 중복 등록된 q1-10(q1-09 와 같은 질문), q4-11(q4-09 와 같은 질문), q5-08(q5-07 과 같은 질문)은 실행 2026-09-25-23에서 폐기했다. 실행 2026-09-25-35의 새 질문 2건(q4-13, q2-06)은 1차 검증에서 백로그 중복이 없다고 판정됐다. 실행 2026-09-25-41의 새 질문 q6-06 은 1차 검증에서 q6-02·q6-03 과 초점이 달라 중복이 아니라고 판정됐다. 실행 2026-09-25-45의 새 질문 q4-14 는 1차 검증에서 q4-06(IDTA 02020 대 팩트시트)·q4-13(MassRobotics 대 팩트시트)과 대상이 달라 중복이 아니라고 판정됐다.
+같은 질문은 [질문 백로그](question-backlog.md)에 등록된다(백로그 반영은 퍼블리셔가 한다). 실행 2026-09-25-16에서 함께 제안된 "VDA 5050 팩트시트의 action 파라미터 범위를 IDTA 02020 범위 속성으로 보완할 수 있는가" 질문은 q4-06 과 중복이라 등록하지 않았다. 실행 2026-09-25-23에서 제안된 "작업 요구를 요구 능력 속성으로 표현해 로봇 적재 세트와 비교하는 규칙의 질의·규칙 형식" 질문은 q4-07 과 중복이라 등록하지 않았다. 백로그에 중복 등록된 q1-10(q1-09 와 같은 질문), q4-11(q4-09 와 같은 질문), q5-08(q5-07 과 같은 질문)은 실행 2026-09-25-23에서 폐기했다. 실행 2026-09-25-35의 새 질문 2건(q4-13, q2-06)은 1차 검증에서 백로그 중복이 없다고 판정됐다. 실행 2026-09-25-41의 새 질문 q6-06 은 1차 검증에서 q6-02·q6-03 과 초점이 달라 중복이 아니라고 판정됐다. 실행 2026-09-25-45의 새 질문 q4-14 는 1차 검증에서 q4-06(IDTA 02020 대 팩트시트)·q4-13(MassRobotics 대 팩트시트)과 대상이 달라 중복이 아니라고 판정됐다. 실행 2026-09-25-47의 새 질문 q4-15 는 1차 검증에서 q4-02(문서 대 실제 API)·q4-06(IDTA 02020 대 팩트시트)·q4-14(충전 요소 정규화)와 초점이 달라 중복이 아니라고 판정됐다.
 
 ## 6. 완료 조건 충족 현황
 
@@ -304,8 +335,8 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
-| 모델·표준 비교표([model-standard-comparison.md](model-standard-comparison.md)) 작성 | 미충족 | [모델·표준 비교표](model-standard-comparison.md)의 후보 10행과 후보 밖 5행 모두에 조사 결과가 있으나, PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행과 후보 밖 RCO·이종 자율 로봇 능력·스킬 모델 행에는 "미조사" 칸이 남아 있다(실행 2026-09-25-45 리서치 자체 평가와 1차 검증 기준). 학술 온톨로지 행은 실행 2026-09-25-23에서, MassRobotics 행의 일부 칸은 실행 2026-09-25-35에서 채웠고, 실행 2026-09-25-41·2026-09-25-45에서는 비교표를 바꾸지 않았다 | 미충족 · 미승인 |
-| ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 반영됨 | 미충족 | 초안은 실었으나 일부만 개념에 반영: 아홉 후보 가운데 요구·제공 한정자, 실행 상태, 부착 인터페이스·적재 취급 장치 위치만 [능력 온톨로지 초안](ontology-draft.md) v0.3에 반영됐고 구성 버전·운용 구역·환경 조건·충전 조건은 6절 질문으로 남았다. 실행 2026-09-25-35·2026-09-25-41·2026-09-25-45에서는 온톨로지 변경이 없다 | 미충족 · 미승인 |
+| 모델·표준 비교표([model-standard-comparison.md](model-standard-comparison.md)) 작성 | 미충족 | [모델·표준 비교표](model-standard-comparison.md)의 후보 10행과 후보 밖 5행 모두에 조사 결과가 있으나, PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행과 후보 밖 RCO·이종 자율 로봇 능력·스킬 모델 행에는 "미조사" 칸이 남아 있다(실행 2026-09-25-47 리서치 자체 평가와 1차 검증 기준). 학술 온톨로지 행은 실행 2026-09-25-23에서, MassRobotics 행의 일부 칸은 실행 2026-09-25-35에서 채웠고, 실행 2026-09-25-47에서는 IDTA 02047 행의 종류·출처 칸만 보강해 미조사 칸은 그대로다 | 미충족 · 미승인 |
+| ROP용 능력 개념 요구 목록 초안이 온톨로지 초안에 반영됨 | 미충족 | 초안은 실었으나 일부만 개념에 반영: 아홉 후보 가운데 요구·제공 한정자, 실행 상태, 부착 인터페이스·적재 취급 장치 위치만 [능력 온톨로지 초안](ontology-draft.md) v0.3에 반영됐고 구성 버전·운용 구역·환경 조건·충전 조건은 6절 질문으로 남았다. 실행 2026-09-25-35·2026-09-25-41·2026-09-25-45·2026-09-25-47에서는 온톨로지 변경이 없다 | 미충족 · 미승인 |
 
 다음 단계로 전환: 아니오(모델·표준 비교표 미조사 칸 잔존, 요구 목록 일부 미반영, 막힌 질문 q1-09)
 
@@ -330,6 +361,8 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 실행 2026-09-25-41에서는 [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)의 "7. 관련 표준·프레임워크·오픈소스" 절에 ECLASS Release 15.0 의 로봇 그룹 27-38-01 재구성과 전문가 그룹 'Robotic', Release 16.0 발행, IEC CDD 안내 도메인과 그 안에 로봇 도메인이 없다는 추정(안내 페이지 기준)의 반영을 제안했고, [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)의 같은 절에 ECLASS·IEC CDD 에서 이동로봇 범위 능력 항목이 확인되지 않았다는 추정의 반영을 제안했다.
 
 실행 2026-09-25-45에서는 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)의 "7. 관련 표준·프레임워크·오픈소스" 절에 IDTA 02047 이 AGV 를 인트라로지스틱스 무인 차량·로봇의 총칭으로 쓴다는 점, 충전 관련 요소(명세 PDF 검색 요약 기준의 [추정], 템플릿 열람과 출처 충돌), IDTA·ECLASS 의 ECLASS-in-AAS 지침의 반영을 제안했고, [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)의 같은 절에 IDTA 02047 의 충전 시간·충전 장치 요구·배터리 정보 요소가 충전기 배분·충전 시점 계획의 입력 후보가 될 수 있다는 [추정]의 반영을 제안했다.
+
+실행 2026-09-25-47에서는 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)의 "7. 관련 표준·프레임워크·오픈소스" 절에 IDTA 02047 의 서브모델 요소 묶음(VDA5050Factsheet 포함, 검색 요약 기준)과 충전·배터리 요소의 IDTA 자체 식별자([추정]), IDTA 02003 제품 분류 항목으로 ECLASS·IEC CDD 제품 클래스를 가리키는 방법의 반영을 제안했고, [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)의 같은 절에 IDTA 02047 의 EnergyAndCommunication/Battery 묶음과 충전 장치 요구·배터리 정보 요소가 충전기 배분·충전 시점 계획의 입력 후보라는 [추정]의 반영을, [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)의 같은 절에 IEC 61360-7 교차 도메인 사전, IEC CDD 에 로봇 도메인이 확인되지 않는다는 추정, IDTA 02003 제품 분류 항목의 ECLASS·IEC CDD 참조의 반영을 제안했다.
 
 ## 8. 출처
 
@@ -390,12 +423,17 @@ MassRobotics AMR 상호운용 표준의 공식 JSON 스키마에서 적재량은
 [^ref-200]: IDTA / ECLASS e.V., GUIDELINE How to transport ECLASS in the Asset Administration Shell (IDTA ECLASS Semantic Transport, 1.0), 2024-10, https://industrialdigitaltwin.org/wp-content/uploads/2024/10/2024-10_IDTA_ECLASS_Semantic_Transport_ECLASS_in_AAS_1.0.pdf, 접근일 2026-09-25 (원문 미열람)
 [^ref-201]: Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A., From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation, 2026-06, https://arxiv.org/abs/2606.02167, 접근일 2026-09-25 (원문 미열람)
 
+[^ref-437]: IEC, IEC 61360-7:2024 — Standard data element types with associated classification scheme — Part 7: Data dictionary of cross-domain concepts, 2024, https://webstore.iec.ch/en/publication/72956, 접근일 2026-09-25 (원문 미열람)
+[^ref-438]: IDTA(Industrial Digital Twin Association), IDTA 02003-1-2 Generic Frame for Technical Data for Industrial Equipment in Manufacturing, 미확인, https://industrialdigitaltwin.org/wp-content/uploads/2022/10/IDTA-02003-1-2_Submodel_TechnicalData.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-439]: IDTA (admin-shell-io/submodel-templates), admin-shell-io/submodel-templates — README (published Submodel Templates list), 미확인, https://github.com/admin-shell-io/submodel-templates, 접근일 2026-09-25
+
 ## 9. 이력
 
 실행 id는 트랙 실행의 id(YYYY-MM-DD-NN)이며, 구축 시드 항목은 [트랙 로그](log.md)와 같은 표기 `build-2026-09-24`를 쓴다. 이 값은 실행 id가 아니라 위키 구축 시점을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.
 
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 온톨로지 변경 | 버전 |
 |---|---|---|---|---|---|
+| 2026-09-25 | 2026-09-25-47 | 없음(q1-09 부분 답 보강) | 새 질문 1건(q4-15) | 온톨로지 변경 없음(v0.3 유지) | 8 |
 | 2026-09-25 | 2026-09-25-45 | 없음(q1-09 부분 답 보강) | q4-14 | 없음(v0.3 유지) | 7 |
 | 2026-09-25 | 2026-09-25-41 | 없음(q1-09 부분 답 보강) | q6-06 | 없음(v0.3 유지) | 6 |
 | 2026-09-25 | 2026-09-25-35 | q1-08(q1-09 부분 답) | q4-13, q2-06 | 없음(v0.3 유지) | 5 |
