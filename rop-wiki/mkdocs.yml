@@ -155,6 +155,13 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 26. 사이버보안·접근권한·개인정보 — 대표 연구와 자료: topics/2026/2026-09-25-area26-s8.md
+      - 26. 사이버보안·접근권한·개인정보 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area26-s7.md
+      - 26. 사이버보안·접근권한·개인정보 — 대표 접근법과 기술: topics/2026/2026-09-25-area26-s6.md
+      - 26. 사이버보안·접근권한·개인정보 — 핵심 개념과 용어: topics/2026/2026-09-25-area26-s4.md
+      - 26. 사이버보안·접근권한·개인정보 — 왜 중요한가: topics/2026/2026-09-25-area26-s3.md
+      - 26. 사이버보안·접근권한·개인정보 — 열린 질문: topics/2026/2026-09-25-area26-s11.md
+      - 26. 사이버보안·접근권한·개인정보 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area26-s10.md
       - 25. 안전·위험 관리 — 대표 연구와 자료: topics/2026/2026-09-25-area25-s8.md
       - 25. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area25-s7.md
       - 25. 안전·위험 관리 — 대표 접근법과 기술: topics/2026/2026-09-25-area25-s6.md
@@ -344,6 +351,7 @@ nav:
     - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
+    - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
@@ -388,6 +396,7 @@ nav:
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
     - 의미 식별자 (Semantic ID (semanticId)): glossary/semantic-id.md
     - 이동 병목 탐지 (Shifting Bottleneck Detection (Active Period Method)): glossary/shifting-bottleneck-detection-active-period-method.md
+    - 이동형 영상정보처리기기 (Mobile Video Information Processing Device): glossary/mobile-video-information-processing-device.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
@@ -1059,6 +1068,19 @@ nav:
     - 'ref-576 — CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing': references/ref-576.md
     - ref-577 — Ontology-Guided Reasoning for Affordance-Based Explanations of Robot Navigation: references/ref-577.md
     - 'ref-578 — 로봇 친화형 건축물 인증 지표 개발: 초점집단면접(FGI)과 분석적 계층화 과정(AHP)의 활용': references/ref-578.md
+    - ref-579 — ROS 2 Access Control Policies: references/ref-579.md
+    - ref-580 — ROS 2 Security Enclaves: references/ref-580.md
+    - ref-581 — mosquitto.conf man page: references/ref-581.md
+    - ref-582 — NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security: references/ref-582.md
+    - ref-583 — Mobile Industrial Robots Vehicles and MiR Fleet Software (ICSA-21-280-02): references/ref-583.md
+    - ? 'ref-584 — CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)'
+      : references/ref-584.md
+    - ref-585 — Security Aspects of Zones and Conduits in IEC 62443: references/ref-585.md
+    - ref-587 — 개인정보 보호법: references/ref-587.md
+    - ref-588 — '이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서' 관련 인사이트: references/ref-588.md
+    - ref-589 — 근로자참여 및 협력증진에 관한 법률: references/ref-589.md
+    - ref-590 — 로봇 보안취약점 점검 체크리스트 해설서: references/ref-590.md
+    - ref-591 — The Cyber Resilience Act - Summary of the legislative text: references/ref-591.md
     - 'ref-599 — Formal Specification and Verification of Autonomous Robotic Systems: A Survey': references/ref-599.md
     - ref-600 — A Study on Challenges of Testing Robotic Systems: references/ref-600.md
     - ref-601 — ros2_fault_injection — README: references/ref-601.md

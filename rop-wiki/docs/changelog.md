@@ -50,6 +50,31 @@ version: 1
 | 2026-09-25-65 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-64 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | seed → draft: 3~11절 첫 작성(접근 제어 구조, 규제·한국 개인영상 규정, 출하·입고 시나리오, 경계·연결·열린 질문), 페이지 상태 자동 영역 추가, 13절 각주. 2차: 7절 첫 문장을 [의견]으로 바꾸고 ref-031 각주 제거, 8절 학술 자료 문장 수정 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s6.md](topics/2026/2026-09-25-area26-s6.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "6. 대표 접근법과 기술" 절(1,606자)을 옮겼다 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s7.md](topics/2026/2026-09-25-area26-s7.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: 첫 문장을 [의견]으로 바꾸고 ref-031 각주 제거, NIST 행에서 '산업용 IoT' 삭제 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s3.md](topics/2026/2026-09-25-area26-s3.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "3. 왜 중요한가" 절(1,078자)을 옮겼다 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s11.md](topics/2026/2026-09-25-area26-s11.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "11. 열린 질문" 절(1,016자)을 옮겼다 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s4.md](topics/2026/2026-09-25-area26-s4.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "4. 핵심 개념과 용어" 절(1,004자)을 옮겼다 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s10.md](topics/2026/2026-09-25-area26-s10.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(771자)을 옮겼다. 형식 재작성: 3절 세부영역 링크 9개를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
+| 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s8.md](topics/2026/2026-09-25-area26-s8.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차: 첫 문장의 학술 논문 성격 서술을 바로잡았다 |
+| 2026-09-25-64 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 26. 사이버보안·접근권한·개인정보: 영역 심화: 3~11절 첫 작성(SROS 2·Open-RMF·VDA 5050·MQTT 접근 제어, 로봇 안전·EU·한국 개인영상 규정, 출하·입고 시나리오, 새 열린 질문 5건) |
+| 2026-09-25-64 | 생성 | [docs/references/ref-579.md](references/ref-579.md) | 참고문헌 ref-579 등록: ROS 2 Access Control Policies |
+| 2026-09-25-64 | 생성 | [docs/references/ref-580.md](references/ref-580.md) | 참고문헌 ref-580 등록: ROS 2 Security Enclaves |
+| 2026-09-25-64 | 생성 | [docs/references/ref-581.md](references/ref-581.md) | 참고문헌 ref-581 등록: mosquitto.conf man page |
+| 2026-09-25-64 | 생성 | [docs/references/ref-582.md](references/ref-582.md) | 참고문헌 ref-582 등록: NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT)… |
+| 2026-09-25-64 | 생성 | [docs/references/ref-583.md](references/ref-583.md) | 참고문헌 ref-583 등록: Mobile Industrial Robots Vehicles and MiR Fleet Software (IC… |
+| 2026-09-25-64 | 생성 | [docs/references/ref-584.md](references/ref-584.md) | 참고문헌 ref-584 등록: CAN/CSA IEC 62443-3-3-2017 - Industrial communication networ… |
+| 2026-09-25-64 | 생성 | [docs/references/ref-585.md](references/ref-585.md) | 참고문헌 ref-585 등록: Security Aspects of Zones and Conduits in IEC 62443 |
+| 2026-09-25-64 | 생성 | [docs/references/ref-587.md](references/ref-587.md) | 참고문헌 ref-587 등록: 개인정보 보호법 |
+| 2026-09-25-64 | 생성 | [docs/references/ref-588.md](references/ref-588.md) | 참고문헌 ref-588 등록: '이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서' 관련 인사이트 |
+| 2026-09-25-64 | 생성 | [docs/references/ref-589.md](references/ref-589.md) | 참고문헌 ref-589 등록: 근로자참여 및 협력증진에 관한 법률 |
+| 2026-09-25-64 | 생성 | [docs/references/ref-590.md](references/ref-590.md) | 참고문헌 ref-590 등록: 로봇 보안취약점 점검 체크리스트 해설서 |
+| 2026-09-25-64 | 생성 | [docs/references/ref-591.md](references/ref-591.md) | 참고문헌 ref-591 등록: The Cyber Resilience Act - Summary of the legislative text |
+| 2026-09-25-64 | 생성 | [docs/glossary/zones-and-conduits.md](glossary/zones-and-conduits.md) | 용어집 항목 보안 구역과 도관 |
+| 2026-09-25-64 | 갱신 | [docs/glossary/dds-security.md](glossary/dds-security.md) | 용어집 항목 권한 파일 |
+| 2026-09-25-64 | 생성 | [docs/glossary/mobile-video-information-processing-device.md](glossary/mobile-video-information-processing-device.md) | 용어집 항목 이동형 영상정보처리기기 |
+| 2026-09-25-64 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-09-25-63 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed → draft: 3~11절 첫 작성(표준 책임 분담, 정지·재개·비상 대응, STPA, SafeGate 트랙 반영), 페이지 상태 자동 영역 추가, 각주 11건(3·6·7·8·11절 상세는 주제 페이지로 분리). 2차: 9절 마지막 문장 어미를 추정형으로 수정 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s6.md](topics/2026/2026-09-25-area25-s6.md) | 자동 분리: 25. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '운영 조율 수단' 문장을 [사실]·[추정] 두 문장으로 나눴다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s7.md](topics/2026/2026-09-25-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: VDA 5050 행의 관계 칸을 [사실]·[추정]으로 나눴다 |

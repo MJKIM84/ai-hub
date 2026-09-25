@@ -3,14 +3,14 @@ title: "DDS 보안 규격 (DDS-Security)"
 type: glossary
 term_ko: DDS 보안 규격
 term_en: DDS Security (DDS-Security)
-definition: DDS(Data Distribution Service)의 보안 규격으로, ROS 2가 인증·암호화·접근통제 구조의 기반으로 통합했다.
-related_areas: [26, 11, 28]
+definition: DDS 참여자의 권한을 담은 서명된 XML 문서로, ROS 2 보안에서 참여자마다 도메인 보호 방식을 정한 거버넌스 파일과 함께 둔다.
+related_areas: [11, 26, 28]
 tags: [보안, OMG, ROS 2, 접근 제어]
-status: draft
+status: published
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 sources: [ref-009, ref-010]
-version: 3
+version: 4
 confidence: medium
 ---
 
@@ -26,7 +26,7 @@ confidence: medium
 
 ## 한 줄 정의
 
-DDS(Data Distribution Service)의 보안 규격으로, ROS 2가 인증·암호화·접근통제 구조의 기반으로 통합했다. [사실][^ref-009]
+DDS 참여자의 권한을 담은 서명된 XML 문서로, ROS 2 보안에서 참여자마다 도메인 보호 방식을 정한 거버넌스 파일과 함께 둔다. [추정][^ref-009]
 
 ## 설명
 
