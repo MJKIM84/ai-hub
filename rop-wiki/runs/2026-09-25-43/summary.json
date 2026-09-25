@@ -13,7 +13,7 @@
     ]
   },
   "verdict_first": "조건부 승인",
-  "verdict_second": null,
+  "verdict_second": "통과",
   "confidence": "low",
   "pages_created": 0,
   "pages_updated": 0,
@@ -36,10 +36,10 @@
     "page_updates": 2,
     "max_retries": 2
   },
-  "duration_sec": 1034.0,
+  "duration_sec": 1790.3,
   "first_retries": 0,
-  "second_retries": 0,
-  "end_state": "재투입",
+  "second_retries": 1,
+  "end_state": "중단(퍼블리셔: 5단계 반영 뒤 링크·각주 검사 실패: [check_links] 오류 1건 (파일 749개 검사))",
   "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 2 | q2-02 답함(작업·배정 결과 표현 형식 비교), 업무 분해·배정 설계 초안 v0.4 → v0.5, 후속 질문 q3-08·q3-09 | run 2026-09-25-43",
   "notes": [],
   "counts": {
@@ -54,14 +54,14 @@
     "backlog": 0,
     "corrections": 0
   },
-  "updated_at": "2026-09-25 13:26:35 KST",
+  "updated_at": "2026-09-25 14:28:51 KST",
   "usage": {
-    "input_tokens": 46,
-    "cache_creation_input_tokens": 1024615,
-    "cache_read_input_tokens": 6288101,
-    "output_tokens": 109713,
-    "cost_usd": 12.1351,
-    "calls": 8,
+    "input_tokens": 52,
+    "cache_creation_input_tokens": 2066289,
+    "cache_read_input_tokens": 6503429,
+    "output_tokens": 177729,
+    "cost_usd": 21.8719,
+    "calls": 11,
     "by_step": {
       "research": {
         "calls": 1,
@@ -78,11 +78,18 @@
         "cache_creation_input_tokens": 385162
       },
       "storyteller": {
-        "calls": 3,
-        "cost_usd": 3.5535,
-        "output_tokens": 67671,
-        "cache_read_input_tokens": 63020,
-        "cache_creation_input_tokens": 273433
+        "calls": 4,
+        "cost_usd": 7.6906,
+        "output_tokens": 123643,
+        "cache_read_input_tokens": 126040,
+        "cache_creation_input_tokens": 649060
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 5.5997,
+        "output_tokens": 12044,
+        "cache_read_input_tokens": 152308,
+        "cache_creation_input_tokens": 666047
       },
       "probe-web_search": {
         "calls": 1,
@@ -109,12 +116,8 @@
   },
   "format_check": {
     "stage": "pages",
-    "ok": false,
-    "errors": [
-      "퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다",
-      "퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:",
-      "퍼블리셔 사전 검사: - ideas/nl-task-chatbot.md: 깨진 링크 ../glossary/hierarchical-task-network.md"
-    ],
+    "ok": true,
+    "errors": [],
     "patched": [
       "docs/ideas/nl-task-chatbot.md (1개 절)",
       "docs/tracks/nl-task-chatbot/index.md (1개 절)"
@@ -124,6 +127,6 @@
   },
   "fetched_sources": 7,
   "cross_checked_findings": 0,
-  "resumed_at": "2026-09-25 14:13:54 KST",
-  "resumed_from_park_reason": "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)"
+  "resumed_from_park_reason": "스토리텔러 형식 수정 재작성 실패(호출 오류 또는 스키마 불일치)",
+  "resumed_at": "2026-09-25 14:13:54 KST"
 }
