@@ -114,18 +114,30 @@ def stage_pages(rd: Path, settings: dict, run_id: str) -> int:
     day = str(target.get("date") or run_id[:10])
     limit = int(settings.get("area_body_char_limit") or 4000)
 
-    # ① 차등 갱신 패치 적용
+    # ① 차등 갱신 패치 적용 + 기계적 마무리(프런트매터 version·updated·status, 빠진 각주 정의)
+    research = runs.read_json(rd / "research.json", {}) or {}
+    run_refs = {s["id"]: s for s in research.get("sources", []) if s.get("id")}
+    for r in pages.get("reference_updates") or []:
+        if r.get("id"):
+            run_refs.setdefault(r["id"], r)
     for pg in pages.get("pages", []):
         if pg.get("patches"):
             cur = ROOT / pg["path"]
             if not cur.is_file():
                 errors.append(f"{pg['path']}: 패치를 적용할 현재 페이지가 없다(새 페이지는 content 로 보낸다)")
                 continue
+            prior = cur.read_text(encoding="utf-8")
             try:
-                new = V.apply_patches(cur.read_text(encoding="utf-8"), pg["patches"])
+                new = V.apply_patches(prior, pg["patches"])
             except ValueError as e:
                 errors.append(f"{pg['path']}: {e}")
                 continue
+            explicit = {}
+            for p in pg["patches"]:
+                explicit.update(p.get("frontmatter") or {})
+            new, done = V.complete_patched_page(new, prior, day, run_refs, explicit)
+            for d in done:
+                pages.setdefault("fixes_applied", []).append(f"{pg['path']}: {d}")
             _write_page(rd, pg["path"], new)
             patched.append(f"{pg['path']} ({len(pg['patches'])}개 절)")
             pg["_patched"] = True

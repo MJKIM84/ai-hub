@@ -190,3 +190,28 @@ python3 pipeline/render_run_md.py 2026-09-24-01                        # researc
 - 주간 정리(7.1)의 "링크·출처 유효성 점검"은 리서치 에이전트의 WebFetch 에 맡기지 않고 `run_daily.sh` 가 리서치 전에 `checks/check_links.py` 와 `checks/check_urls.py --json` 을 실행해 `runs/<id>/link_check.txt`·`url_check.json` 으로 남기고, 이를 리서치·1차 검증·스토리텔러 입력(`### runs/<id>/url_check.json (…)`)에 넣는다. 퍼블리셔는 일일 로그 "다음 실행 메모"에 URL 열림·오류·미확인 건수와 내부 링크 오류 건수를 옮긴다. 외부 접속이 막힌 환경에서는 전부 "미확인"으로 남는다(파일 결함이 아니므로 실행을 멈추지 않는다).
 - 페이지 열람(WebFetch) 불가 시에는 사양서 0장·7.3 원문대로 중단한다(`web_fetch_required: true`). 예외는 사용자 override(`--allow-no-fetch`, `ROP_ALLOW_NO_FETCH=1`, `web_fetch_required: false`)뿐이며, 이때 원문 미열람 모드(모든 출처 "원문 미열람", 신뢰도 medium 상한)로 진행하고 로그·일일 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다(4절). override 수단은 사양서에 없어 구축자가 정했다.
 - 용어집 반영은 새 파일을 만들기 전에 `docs/glossary/*.md` 의 `term_ko`·`term_en`(대소문자·공백·괄호 약어 무시)과 색인의 용어명을 대조해 같은 용어면 그 페이지를 갱신한다(예: term_en "Electronic Product Code Information Services" 는 `glossary/epcis.md` 갱신).
+
+## 10. 운영 전환 뒤 추가된 명령·옵션 (2026-09-25)
+
+```bash
+bash pipeline/run_daily.sh --run-type category_link --category C          # 대분류 C 의 "다른 대분류와의 연결" 절 채우기
+bash pipeline/run_daily.sh --run-type track --track nl-task-chatbot --max-questions 1   # 트랙 질문 수 상한(자동 선택에만)
+bash pipeline/run_daily.sh --run-type topic --area 7 --until verify2      # 2차 검증까지만(퍼블리셔 전 멈춤, 배치 실행기가 쓴다)
+python3 pipeline/validate_run.py <run_id> --stage pages                    # 스토리텔러 산출물 형식 검증(패치 적용·자동 분리·형식 검사·퍼블리셔 사전 검사)
+python3 pipeline/agent_runner.py run --role storyteller --run-id <id> --format-fix 1   # 형식 검증 오류만 고치게 다시 부른다
+python3 pipeline/publish.py <run_id> --precheck                            # 2차 검증 전 퍼블리셔 2~4단계 사전 검사(반영하지 않음)
+python3 pipeline/run_batch.py --plan runs/batches/plan.yaml --concurrency 5 [--probe-file probe.json] [--dry-run]
+```
+
+| 옵션·파일 | 뜻 |
+|---|---|
+| `--category A~G` | 대분류 연결 실행의 대상 대분류 |
+| `--max-questions N` | 트랙 실행의 자동 질문 선택 개수 상한(기본 3) |
+| `--until verify2` | 2차 검증까지 하고 끝낸다(exit 0). 이어서 `--resume <id> --step publish` |
+| 형식 검증 단계 | 스토리텔러 직후 `validate_run.py --stage pages`. 실패하면 `checks/pages.json` 의 오류를 붙여 스토리텔러를 `--format-fix N` 으로 다시 부르고, `max_retries` 를 넘기면 보류 |
+| `runs/<id>/usage.json` | 모델 호출별 토큰·비용과 합계. 일일 로그 "모델 호출 토큰·비용" 절의 원천 |
+| `runs/<id>/base.json` | 스토리텔러 호출 시각의 커밋. 동시 게시 3-way 병합의 기준 |
+| `runs/batches/<batch_id>.json` | 배치 항목별 실행 id·상태·시도·비용·소요 시간 |
+| `config/ops.yaml` | 알림·원격 배포·cron 스위치(모두 기본 꺼짐). `python3 pipeline/lib/notify.py --status` |
+
+배치 실행 규칙: 웹 도구 점검은 배치에서 한 번 하고 결과를 실행마다 복사한다. 에이전트 단계는 `--concurrency` 만큼 동시에, 퍼블리셔는 하나씩 부른다(`publish.py` 전역 잠금 `runs/.cache/publish.lock`). 같은 `group` 의 항목(같은 트랙)은 앞 항목이 게시된 뒤 시작한다. 한 항목이 `--max-attempts`(3)번 연속 보류·실패하면 보류로 기록하고 다음 항목으로 넘어간다.

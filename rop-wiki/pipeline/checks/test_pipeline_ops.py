@@ -65,6 +65,22 @@ class TestValidate(unittest.TestCase):
         with self.assertRaises(ValueError):
             V.apply_patches(AREA7.read_text(encoding="utf-8"), [{"section": "99. 없음", "action": "replace", "content": "x"}])
 
+    def test_complete_patched_page(self):
+        prior = AREA7.read_text(encoding="utf-8")
+        pv = int(fm.parse(prior)[0]["version"])
+        new = V.apply_patches(prior, [{"section": "11. 열린 질문", "action": "append", "content": "- 질문 [추정][^ref-777]"}])
+        ref = {"id": "ref-777", "org": "기관", "title": "제목", "published": None, "url": "https://example.org", "accessed": "2026-09-25",
+               "fetched": False}
+        out, notes = V.complete_patched_page(new, prior, "2026-09-30", {"ref-777": ref})
+        meta, body = fm.parse(out)
+        self.assertEqual(meta["version"], pv + 1)
+        self.assertEqual(str(meta["updated"]), "2026-09-30")
+        self.assertEqual(meta["status"], "draft")
+        self.assertIn("[^ref-777]: 기관, 제목, 미확인, https://example.org, 접근일 2026-09-25 (원문 미열람)", body)
+        self.assertFalse(V.footnote_problems(body))
+        out2, _ = V.complete_patched_page(new, prior, "2026-09-30", {"ref-777": ref}, {"status": "needs_update"})
+        self.assertEqual(fm.parse(out2)[0]["status"], fm.parse(new)[0]["status"])
+
     def test_split_oversized_area(self):
         long = "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(120))
         text = _area_page({"6. 대표 접근법과 기술": long})
@@ -73,7 +89,8 @@ class TestValidate(unittest.TestCase):
                                                "budget_chars": 800, "summary": "요약 문장이다. [사실][^ref-003]"}],
                                              "2026-09-25-99", "2026-09-26")
         self.assertEqual(len(topics), 1)
-        self.assertIn("요약 문장이다", new)
+        self.assertIn("긴 설명 문장 0번이다. [사실][^ref-003]\n\n자세한 내용은", new)   # 원 절에는 그 절 첫 문장(outline summary 가 아님)
+        self.assertNotIn("요약 문장이다", new)
         self.assertLessEqual(V.area_body_chars(fm.parse(new)[1]), 4000)
         t = topics[0]
         self.assertTrue(t["path"].startswith("docs/topics/2026/2026-09-26-area07-s6"))

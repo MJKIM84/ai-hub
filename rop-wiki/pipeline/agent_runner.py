@@ -778,7 +778,7 @@ def build_context(role: str, target_json: dict, settings: dict, probe_json: dict
     if rt == "track" and tr:
         cfg = track_cfg or {}
         ctx["대상"] = (f"트랙 {tr.get('slug')} ({cfg.get('name', '')}) · 현재 단계: {_stage_label(cfg, int(tr.get('stage') or 1))}"
-                      f" · 이번에 다룰 백로그 질문 id: {', '.join(tr.get('question_ids') or []) or '없음(현재 단계의 열린 질문에서 고른다)'}"
+                      f" · 이번에 다룰 백로그 질문 id: {', '.join(tr.get('question_ids') or []) or '없음 — 현재 단계에 열린 질문이 남지 않았다. 이번 실행은 현재 단계의 완료 조건(트랙 개요 5절·단계 페이지 6절)을 채우는 산출물 보강과 단계 완료·전환 판정에 집중한다'}"
                       f" · 중심 세부영역: {t.get('area_name')} ({t.get('category')})")
         if tr.get("user_questions"):
             ctx["사용자 지정 트랙 질문(백로그 미등록)"] = "; ".join(tr["user_questions"])

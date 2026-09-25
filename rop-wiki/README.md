@@ -193,7 +193,7 @@ python3 pipeline/render_run_md.py 2026-09-24-01                    # research.md
 
 정본: [`pipeline/RUN.md`](pipeline/RUN.md) 6절. 스케줄러는 cron이고 실행 시각은 매일 06:00 Asia/Seoul(사양서 0장 `run_time: "06:00 Asia/Seoul"`)이다. 예시 파일은 [`pipeline/cron.example`](pipeline/cron.example)이다.
 
-**현재 상태(2026-09-25).** 구축 컨테이너에 cron 을 설치해 `install_cron.sh` 등록, `crontab -l` 확인, `uninstall_cron.sh` 해제, 재등록까지 동작을 검증했고 등록 블록이 crontab 에 들어 있다. 다만 이 컨테이너는 cron 데몬이 돌지 않고 세션이 끝나면 사라지므로 운영용 등록이 아니다. 항상 켜진 운영 환경에서 `bash pipeline/install_cron.sh` 로 등록하고 `crontab -l` 로 확인한다. 어느 환경·스케줄러에 등록할지는 [완료 보고서](BUILD_REPORT.md) 3절의 사용자 결정 항목이다.
+**현재 상태(2026-09-25, 운영 전환 뒤).** cron 등록은 `config/ops.yaml` 의 `cron.enabled` 스위치로 막혀 있다(기본 false). 켜지 않으면 `install_cron.sh` 가 등록을 거부하고 미리 보기만 보여 준다. 이 컨테이너의 crontab 은 비어 있다(`no crontab for root`). 켜는 방법: `python3 pipeline/lib/notify.py --enable cron && bash pipeline/install_cron.sh`. 이 서버의 cron 은 `CRON_TZ` 를 지원하지 않아 06:00 Asia/Seoul 을 서버 시간대(UTC) 21:00 으로 바꿔 등록한다(`tz_mode: auto`). 등록 줄은 `flock` 으로 겹침 실행을 막고 `pipeline/cron_wrapper.sh`(로그 순환, 환경 파일 `~/.config/rop-wiki/env`, 4시간 제한)를 부른다. 아래 표와 블록은 처음 구축 때의 설명이고, 실제 블록은 `bash pipeline/install_cron.sh --dry-run` 출력이 정본이다.
 
 | 할 일 | 명령 | 설명 |
 |---|---|---|
@@ -217,6 +217,39 @@ PATH=/opt/node22/bin:/usr/local/bin:/usr/bin:/bin
 - `crontab` 명령이 없으면 `install_cron.sh`가 exit 1로 끝나며 등록할 명령 한 줄을 출력한다. 그 줄을 n8n·GitHub Actions 등 다른 스케줄러에 등록한다.
 - 같은 날 두 번 실행되면 실행 id가 `<DATE>-02`로 붙는다. 실패한 실행을 다시 하려면 새 실행이 아니라 `--resume <run_id>`를 쓴다.
 - 손으로 넣으려면 `crontab -e`에서 `cron.example`의 주석이 아닌 세 줄(`CRON_TZ`, `PATH`, 실행 줄)을 붙여 넣고 경로와 `PATH`를 바꾼다.
+
+## 5A. 운영 전환 기능 (2026-09-25)
+
+결정 기록은 [DECISIONS.md](DECISIONS.md), 사람이 검토할 가정은 [BUILD_ASSUMPTIONS.md](BUILD_ASSUMPTIONS.md) 에 있다.
+
+| 기능 | 어디 | 요점 |
+|---|---|---|
+| 원문 열람 모드 | `pipeline/agent_runner.py probe` → `runs/<id>/probe.json` 의 `fetch_mode` | `full`(일반 페이지 열림) / `mirror_only`(일반 페이지는 막히고 GitHub 공식 저장소 원문 `raw.githubusercontent.com` 과 inbox 원문만 열림, override 없이 진행) / `none`(열람 도구 없음, `--allow-no-fetch` 필요) |
+| 원문 미러 목록 | `config/source_mirrors.yaml` | 참고문헌 URL → 같은 문서의 GitHub raw 경로. 에이전트 시스템 프롬프트에 들어간다 |
+| 사람이 넣는 원문 | `inbox/sources/` → `python3 pipeline/ingest_sources.py` → `data/source_texts/` | PDF·HTML·텍스트를 넣으면 텍스트로 바꿔 리서치·1차 검증 입력에 넣는다. 그 출처는 `fetched_via: inbox` |
+| 출처별 열람 표시·신뢰도 상한 | `pipeline/validate_run.py --stage research`, `pipeline/lib/sources.py apply_fetch_caps` | 리서치 직후 코드가 `fetched` 를 확정하고, 원문을 못 연 출처와 그 출처만 쓴 주장을 medium 이하로 내린다. 참고문헌 페이지에 `fetched`·`fetched_via`·`url_status` |
+| 참고문헌 URL 점검 | `python3 pipeline/checks/check_urls.py` → `data/url_check.json` | 원 URL 과 미러를 모두 확인한다. 정책 차단·열림·실패를 구분해 기록 |
+| 단계별 형식 검증 | `pipeline/validate_run.py --stage research\|verification1\|verification2\|pages` | 에이전트 호출 직후 코드 검사. `pages` 가 실패하면 오류 목록을 붙여 스토리텔러에 형식 수정만 요청(`--format-fix N`), 최대 재시도 뒤 보류 |
+| 분량 초과 자동 분리 | `settings.area_body_char_limit`(4000) | 세부영역 본문(3~11절)이 넘치면 스토리텔러의 `outline` 에 따라 넘치는 절을 주제 페이지로 옮기고 요약·링크를 남긴다. 내용을 줄이지 않는다 |
+| 차등 갱신 | `pages.json` 의 `pages[].patches` | 기존 페이지 갱신은 바뀐 절만 `replace`/`append` 로 보낸다. 전체 재작성은 새 페이지만 |
+| 페이지 상태 단일 원천 | 프런트매터 `status` → `<!-- auto:page-status -->` | 본문에 손으로 쓴 상태 줄은 검사(`check_frontmatter.py`, 형식 검증)에서 실패한다 |
+| 호출별 토큰·비용 | `runs/<id>/usage.json`, 일일 로그 "모델 호출 토큰·비용" 절 | 역할별 입력·캐시 읽기·캐시 쓰기·출력 토큰과 비용, 실행 합계 |
+| 시스템 프롬프트 캐시 | `runs/.cache/system/<role>-<hash>.md` | 공통 규칙+역할 규칙(+미러 목록)을 `--append-system-prompt-file` 로 넘겨 반복 호출이 캐시를 읽는다 |
+| 정정 요청 거절 | `verification*.json` 의 `corrections_rejected[{id, reason}]` | 퍼블리셔가 `inbox/corrections.md` 상태를 `rejected`·처리 메모 "거절: 사유" 로 바꾸고 변경 이력에 남긴다 |
+| 대분류 연결 | 실행 유형 `category_link`, `--category A` | 소속 세부영역 4개가 모두 채워진 대분류의 "다른 대분류와의 연결" 절을 채운다(순환 규칙 cycle1 다음) |
+| 트랙 3개 | `config/tracks/*.yaml`, `settings.tracks`·`track_weights`·`track_runs_per_week: 3` | 화·목·토 트랙 실행, 실행 수÷가중치가 가장 작은 트랙부터 |
+| 배치 실행 | `python3 pipeline/run_batch.py --plan plan.yaml --concurrency 5` | 여러 대상을 7단계 그대로 처리. 에이전트 단계는 동시에, 퍼블리셔는 하나씩(전역 잠금). 같은 `group` 은 차례로. 3회 연속 실패 항목은 보류. 동시 게시로 같은 페이지가 바뀌면 3-way 병합(`runs/<id>/base.json`) |
+| 알림 | `config/ops.yaml notify`, `pipeline/lib/notify.py` | 슬랙 웹훅·이메일. 기본 꺼짐. `python3 pipeline/lib/notify.py --test --mock` 로 발송 없이 확인 |
+| 원격 배포 | `config/ops.yaml deploy`, `pipeline/deploy_site.sh`, `deploy/github-pages.yml` | 기본 꺼짐. Actions 워크플로는 `deploy/` 에 템플릿으로만 둔다 |
+
+켜는 방법(모두 기본 꺼짐):
+
+```bash
+python3 pipeline/lib/notify.py --enable cron && bash pipeline/install_cron.sh           # 운영 서버 cron 등록
+python3 pipeline/lib/notify.py --enable notify --channel slack_webhook                  # 실제 알림(비밀값은 ROP_SLACK_WEBHOOK_URL 또는 ~/.config/rop-wiki/env)
+python3 pipeline/lib/notify.py --enable deploy && bash pipeline/deploy_site.sh --yes     # 사이트 원격 배포(gh-pages). Actions 는 deploy/github-pages.yml 을 .github/workflows/ 로 복사
+sed -i 's/^git_push: false/git_push: true/' config/settings.yaml                        # 퍼블리셔 커밋 뒤 원격 푸시
+```
 
 ## 6. 검사 스크립트
 

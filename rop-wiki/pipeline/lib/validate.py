@@ -211,6 +211,59 @@ def apply_patches(current_text: str, patches: list[dict]) -> str:
     return fm.dumps(meta, new_body_text)
 
 
+def footnote_line(ref: dict) -> str:
+    """각주 정의 한 줄(publish._footnote_line 과 같은 형식)."""
+    pub = ref.get("published")
+    pub = str(pub) if pub not in (None, "", "미확인", "발행일 미확인") else "미확인"
+    unopened = ref.get("source_unopened") if "fetched" not in ref else not ref.get("fetched")
+    tail = " (원문 미열람)" if unopened else ""
+    return f"[^{ref['id']}]: {ref.get('org', '')}, {ref.get('title', '')}, {pub}, {ref.get('url', '')}, 접근일 {ref.get('accessed', '')}{tail}"
+
+
+def _ref_lookup(ref_id: str, run_refs: dict) -> dict | None:
+    if ref_id in run_refs:
+        return run_refs[ref_id]
+    pth = paths.DOCS / "references" / f"{ref_id}.md"
+    if not pth.is_file():
+        return None
+    meta, _ = fm.read(pth)
+    return {"id": ref_id, "org": meta.get("org", ""), "title": meta.get("ref_title") or meta.get("title", ""),
+            "published": meta.get("published"), "url": meta.get("url", ""), "accessed": meta.get("accessed", ""),
+            "fetched": bool(meta.get("fetched"))}
+
+
+def complete_patched_page(text: str, prior_text: str, day: str, run_refs: dict, explicit_fm: dict | None = None) -> tuple[str, list[str]]:
+    """차등 갱신 패치를 적용한 페이지의 기계적 마무리(판단이 필요 없는 부분, 운영 전환 1-5).
+    ① 프런트매터: version 을 기존 +1, updated 를 실행 날짜, status 를 draft 로(패치가 명시한 값은 그대로 둔다)
+    ② 본문에 참조만 있고 정의가 없는 각주([^ref-NNN])의 정의 줄을 이번 실행의 출처 또는 참고문헌 페이지에서 만들어 페이지 끝에 붙인다.
+    반환: (새 텍스트, 처리 메모)."""
+    notes: list[str] = []
+    explicit_fm = explicit_fm or {}
+    meta, body = fm.parse(text)
+    prior, _ = fm.parse(prior_text)
+    try:
+        pv = int(prior.get("version") or 0)
+    except (TypeError, ValueError):
+        pv = 0
+    if "version" not in explicit_fm:
+        meta["version"] = pv + 1
+    if "updated" not in explicit_fm:
+        meta["updated"] = day
+    if "status" not in explicit_fm:
+        meta["status"] = "draft"
+    scrub = _INLINE_CODE.sub("", _strip_code(body))
+    missing = sorted(set(FOOT_REF.findall(scrub)) - set(FOOT_DEF.findall(scrub)))
+    added = []
+    for rid in missing:
+        ref = _ref_lookup(rid, run_refs) if re.match(r"^ref-\d{3,}$", rid) else None
+        if ref:
+            added.append(footnote_line(dict(ref, id=rid)))
+    if added:
+        body = body.rstrip("\n") + "\n\n" + "\n".join(added) + "\n"
+        notes.append(f"각주 정의 {len(added)}개를 참고문헌에서 만들어 붙임: {', '.join(a.split(']')[0][2:] for a in added)}")
+    return fm.dumps(meta, body), notes
+
+
 # --- 분량 초과 절 자동 분리 -------------------------------------------------------------------
 
 def _first_sentence(text: str) -> str:
@@ -224,6 +277,24 @@ def _first_sentence(text: str) -> str:
         m = re.search(r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])?(?:\[\^[^\]]+\])*)", para, re.S)
         return (m.group(1) if m else para.split("\n")[0]).strip()
     return ""
+
+
+def _lead_sentences(text: str, max_sentences: int = 2, max_chars: int = 300) -> str:
+    """절 본문 첫 문단의 앞 문장들(태그·각주 포함, 최대 max_sentences 문장·max_chars 자)."""
+    first = _first_sentence(text)
+    if not first:
+        return ""
+    out = first
+    rest_src = _COMMENT.sub("", text).strip()
+    pos = rest_src.find(first)
+    if pos >= 0 and max_sentences > 1:
+        rest = rest_src[pos + len(first):]
+        para_end = re.search(r"\n\s*\n", rest)
+        rest = (rest[:para_end.start()] if para_end else rest).strip()
+        m = re.search(r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])?(?:\[\^[^\]]+\])*)", rest, re.S)
+        if m and len(out) + 1 + len(m.group(1)) <= max_chars:
+            out = out + " " + m.group(1).strip()
+    return out
 
 
 def _footnote_defs(body: str) -> dict[str, str]:
@@ -245,7 +316,7 @@ def _drop_unused_defs(body: str) -> str:
 def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: list[dict], run_id: str, day: str,
                          topic_template_h2: list[str] | None = None) -> tuple[str, list[dict]]:
     """세부영역 페이지의 3~11절 본문이 limit 을 넘으면, 큰 절부터(5·9절 제외) 주제 페이지로 옮기고 원 절에는
-    요약(outline 의 summary, 없으면 첫 문장)과 링크만 남긴다. 내용을 줄이거나 새로 쓰지 않는다.
+    요약(그 절의 첫 문장, 최대 두 문장)과 링크만 남긴다. 내용을 줄이거나 새로 쓰지 않는다.
     반환: (새 세부영역 페이지 텍스트, [{path(repo 기준), content, section, chars}])."""
     meta, body = fm.parse(area_text)
     if area_body_chars(body) <= limit:
@@ -278,7 +349,9 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
         topic_repo = f"docs/topics/{year}/{slug}.md"
         topic_docs = f"topics/{year}/{slug}.md"
         link_from_area = paths.rel_link(area_docs_rel, topic_docs)
-        summary = summaries.get(no) or _first_sentence(sec_body)
+        # 원 절에 남기는 요약은 그 절의 첫 문장(최대 두 문장, 300자) — 이미 쓴 독자용 본문이다. outline 의 summary 는 예산 계획용이라
+        # 편집 설명("…를 더하고 연결한다")이 섞일 수 있어 본문에 싣지 않는다(검증 실행 1의 2차 검증 지적). 첫 문장을 못 찾을 때만 쓴다.
+        summary = _lead_sentences(sec_body) or summaries.get(no) or ""
         t_title = f"{area_title} — {sec_name_short}"
         used_refs = sorted(set(FOOT_REF.findall(_INLINE_CODE.sub("", sec_body))))
         link_to_area = paths.rel_link(topic_docs, area_docs_rel)
