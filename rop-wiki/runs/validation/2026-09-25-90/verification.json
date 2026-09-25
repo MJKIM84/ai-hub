@@ -1,0 +1,173 @@
+{
+  "run_id": "2026-09-25-90",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "retry_reason": null,
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw.githubusercontent.com 3.0.0·2.1.0 태그 factsheet.schema 를 검증에서 직접 열어 최상위 properties 12개씩(agvGeometry·vehicleConfig → mobileRobotGeometry·mobileRobotConfiguration, 나머지 10개 동일)을 대조했다. 두 스키마는 같은 기관(VDA/VDMA)의 판별 산출물이라 독립 교차가 아니다. 발행일 미확인, 확인일 2026-09-25."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-044 원문 열람): loadSets 필드, loadDimensions 길이·폭 필수·높이 선택, loadPositions 가 비면 모든 적재 장치에 적용, maximumWeight(kg), 취급 높이·깊이(m)·기울기(rad), pickTime·dropTime(s)이 원문과 같다. 단, 단위 기재가 원문과 다르다: 스키마는 loadSets.maximumSpeed 의 단위를 m/s 가 아니라 'm/s^2' 로 적고(스키마 표기 오류로 보이나 원문 그대로임), maximumDeceleration 에는 단위가 없다. 필수 필드는 setName·loadType 뿐이다. 단위 표기를 고치는 조건으로 유지."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-045 원문 열람): 2.1.0 loadSets 필드 목록과 typeSpecification.maxLoadMass(kg)가 원문과 같다(스키마상 agvSpeedLimit 단위도 'm/s^2'). 다만 evidence_excerpt 의 '2.1.0 명세 본문도 6.15절에 maxWeight·agvSpeedLimit·pickTime 을 싣는다'는 검증 열람에서도 본문이 6.15.1 표 중간에서 잘려 확인하지 못했고 브리프의 ref-047 요약(잘림)과도 어긋난다 — 본문에 쓰지 않는다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지: 두 스키마 대조로 이름 변경 대응 관계는 확인했다. 설명문·단위의 의미 동일성은 미확인(단위 표기는 두 판 모두 속도 한계에 m/s^2 를 적어 서로는 같다). 후속 질문으로 넘긴 처리가 적절하다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 3.0.0 mobileRobotKinematics(DIFFERENTIAL·OMNIDIRECTIONAL·THREE_WHEEL), mobileRobotClass(FORKLIFT·CONVEYOR·TUGGER·CARRIER), maximumLoadMass 'Maximum loadable mass'(kg), supportedZones 존재 / 2.1.0 agvKinematic(DIFF·OMNI·THREEWHEEL), agvClass, maxLoadMass(kg), supportedZones 없음을 원문에서 확인."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: supportedZones 열거값 10개(BLOCKED, LINE_GUIDED, RELEASE, COORDINATED_REPLANNING, SPEED_LIMIT, ACTION, PRIORITY, PENALTY, DIRECTED, BIDIRECTED)가 원문과 같다. 2.1.0 에는 없음."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 3.0.0 mobileRobotActions 의 actionScopes(INSTANT·NODE·EDGE·ZONE), blockingTypes(NONE·SOFT·SINGLE·HARD), actionResult('Free text' 결과 설명), pauseAllowed(startPause), cancelAllowed(cancelOrder) / 2.1.0 agvActions 의 resultDescription, actionScopes 3종, blockingTypes 3종, pauseAllowed·cancelAllowed 없음을 원문에서 확인. 3.0.0 명세(ref-046)의 startPause 설명에서 pauseAllowed=true 인 action 만 일시정지된다는 문장도 확인."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 키 이름이 'batteryCharging '(끝 공백)이며 criticalLowChargingLevel(0–100%, 이하이면 관제가 충전소로 가는 주문만 보내야 함), 최저·최고 희망 충전량(%), minimumChargingTime(s)을 원문에서 확인. 2.1.0 vehicleConfig 는 versions·network 뿐이다. mobileRobotConfiguration 은 3.0.0 스키마 최상위 필수 항목이 아니다(선택)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(ref-046 원문 열람): 이동로봇 용어 사용, 5.2절의 'via the topic factsheet … defined in Section 7.10' 문장, 토픽 표에서 factsheet mandatory. 문서에 3.0.0 발행일 표기 없음 — oq-005 는 미해소."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 2.1.0 명세 6.15절 Topic \"factsheet\", 2.0.0 태그 문서의 7장 AGV Factsheet 와 6.5절 토픽 표의 factsheet(AGV → master control, mandatory)를 확인. 2.0.0 태그 인용 구절 자체는 검증 열람(잘림)에서 재확인하지 못했다. 2.0.0 태그 문서 머리의 'RELEASE CANDIDATE, FOR REVIEW' 표기를 확인했으므로 VDA 게시 PDF(ref-022)와 동일성 미확인 단서를 본문에 반드시 둔다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정]·low 유지: 2.0.0 태그 문서에서 vehicleConfig 가 언급되지 않음을 확인. 다만 검증 열람은 2.0.0 팩트시트 블록에 localizationParameters 도 있다고 보고해 브리프의 블록 목록과 다르다 — 블록 목록을 완결 목록처럼 쓰지 않는다. RC 문서이고 본문이 잘려 2.0.0 적재 세트 필드는 미확인."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정]·low 유지: f2 필드를 분류 원문 5. 로봇 능력·작업 온톨로지의 SCM 질문에 대응시킨 추론이며 근거 필드는 원문에서 확인됨. 값은 제조사 선언(광고 능력)이라는 단서를 유지한다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "사용자 실험(experiments/2026-09-25-vda5050-factsheet-field-diff/) 입력으로 존재 확인. 경로 수(132/144/104/92)는 재계산하지 않았다. 검증에서 2.0.0 태그 json_schemas/factsheet.schema 가 HTTP 404 임을 재확인했고, 실험이 보고한 최상위 필드·신규 필드(supportedZones, actionResult·pauseAllowed·cancelAllowed, batteryCharging 끝 공백)는 공식 스키마 원문과 일치했다. 페이지에서는 [추정]이 아니라 [사용자 실험]으로 표기하며 [사실] 승격은 하지 않는다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-046(3.0.0 태그 VDA5050_EN.md)은 기존 ref-031(main 브랜치 VDA5050_EN.md, 현재 main 은 3.0.0 판)과 같은 문서의 판 고정 URL이다 — 새 주장은 ref-046 으로 쓰되, ref-031 에 기댄 기존 '판 미확인' 문장을 대체·정리해야 한다",
+      "단계 1 페이지 3절 q1-02 의 '팩트시트 블록 … 판 미확인 [추정][^ref-031]' 문장과 q1-03 부분 답·4절 남은 불확실성의 'VDA 5050 팩트시트 … 판 미확인' 문장이 이번 finding(f1·f5·f7·f11)과 겹친다",
+      "모델·표준 비교표 VDA 5050 행의 파라미터 범위·적재·환경 제약 칸('판 미확인' [추정])과 5절 빠진 정보 요약이 f2·f6·f7 과 겹친다",
+      "온톨로지 초안 6절의 '실행 조건과 제약의 경계(배터리 잔량 포함)' 미해결 질문이 실행 조건 변경 제안(f8)과 충돌한다",
+      "온톨로지 초안의 기능(Capability) 정의(CSS 능력 = 구현 독립 명세)가 기능에 pauseAllowed·cancelAllowed·actionResult 를 붙이는 제안(f7)과 충돌한다"
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "용어집 'VDA 5050' 항목의 한 줄 정의('VDA 5050에서 차량이 자신의 기능 정보를 상위 관제에 미리 알리는 메시지(토픽)이다')가 표준 자체가 아니라 팩트시트를 설명한다 — 새 후보 'VDA 5050 팩트시트'와 뜻이 겹친다",
+      "3.0.0 은 AGV 대신 이동로봇(mobile robot) 용어를 쓴다(f9) — 페이지에서 '차량'·'AGV'를 판에 따라 구분해 써야 한다"
+    ]
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": [
+      "ref-044 에서 여러 finding(f2·f5·f7·f8)이 원문 구절을 발췌했다 — 페이지 직접 인용은 ref-044 당 1회로 제한하고 나머지는 재서술해야 한다"
+    ]
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f2: 단위 표기를 원문대로 고친다 — 적재 세트 maximumSpeed 는 스키마가 'm/s^2' 로 적고 있음(표기 오류로 보이나 원문 그대로)을 밝히고 m/s 로 바꿔 쓰지 않으며, maximumDeceleration 에는 단위가 없다고 적는다. loadSets 의 필수 필드는 setName·loadType 뿐임을 병기한다 — ref-044 원문과 브리프의 단위 기재가 다르다.",
+    "f3: '2.1.0 명세 본문 6.15절이 maxWeight·agvSpeedLimit·pickTime 을 싣는다'는 서술을 본문에 쓰지 않는다 — ref-047 열람 본문이 6.15.1 표 중간에서 잘려 확인되지 않았다.",
+    "f10·f11: 2.0.0 기준 서술에는 '공식 저장소 2.0.0 태그의 RELEASE CANDIDATE 문서 기준, VDA 게시 PDF(ref-022)와 동일성 미확인'을 병기하고, f11 의 블록 목록은 완결 목록으로 쓰지 않는다(검증 열람에서 localizationParameters 블록도 보였다).",
+    "f13: 페이지에서 [추정]이 아니라 [사용자 실험] 태그로 표기하고 실험 폴더(experiments/2026-09-25-vda5050-factsheet-field-diff/)를 근거로 밝힌다. [사실]로 올리지 않는다. 경로 수는 재계산하지 않았다는 단서를 남긴다.",
+    "q1-07: 답함으로 처리하되 3절 '### q1-07 … {#q1-07}' 본문과 4절에 '2.0.0 태그에는 팩트시트 스키마가 없어(404) 비교 기준은 2.1.0 이며, 2.0.0 의 적재 세트 필드는 미확인'을 명시한다.",
+    "단계 1 페이지 3절 q1-02 의 기존 '팩트시트 블록 … 판 미확인 [추정][^ref-031]' 문장은 2.0.0 기준 서술이므로 [사실]로 올리지 않는다. 대신 2.1.0·3.0.0 스키마 기준 문장을 새로 쓰고(판 명시, 각주 ref-044·ref-045), 3.0.0 명세 본문 인용에는 ref-031 대신 판 고정 ref-046 을 쓴다. q1-03 부분 답과 4절 불확실성의 'VDA 5050 팩트시트 … 판 미확인' 항목도 이에 맞게 갱신한다.",
+    "모델·표준 비교표 VDA 5050 행: 파라미터 범위·적재·환경 제약·완료 확인 방법 칸을 f2·f6·f7 근거로 고치되 판(3.0.0 스키마)을 명시하고, 오류의 의미 칸은 2.0.0 기준·ref-022 원문 미열람임을 유지한다. 상태 칸은 '확인(3.0.0 스키마 원문 열람, 오류 칸은 원문 미열람)'처럼 칸별 근거 차이를 드러낸다.",
+    "ref-044 원문 직접 인용은 페이지 전체에서 1회로 제한하고 f2·f5·f7·f8 의 나머지 발췌는 재서술한다.",
+    "온톨로지 변경 승인: '제약 (Constraint)' modify(f2)만 반영한다 — 주요 속성 후보에 적용 대상(적재 유형·적재 장치), 최소값·최대값, 단위를 더하고, 값은 제조사 선언(광고 능력)이라는 단서를 근거 칸에 둔다. 제약 행 상태를 '초안' → '확정'으로 바꾸고 온톨로지 버전을 0.1 → 0.2 로 올린다(H1·프런트매터·상태 줄·JSON 네 곳).",
+    "온톨로지 변경 거부: '기능 (Capability)' modify(f7)는 반영하지 않고 6절 미해결 모델링 질문으로 둔다 — pauseAllowed·cancelAllowed·actionResult 는 VDA 5050 실행 인터페이스(startPause·cancelOrder)의 action 속성이라 구현 독립 명세인 기능보다 스킬 쪽일 수 있어 기존 기능 정의와 충돌한다.",
+    "온톨로지 변경 거부: '실행 조건 (Execution Condition)' modify(f8)는 반영하지 않고 6절의 기존 '실행 조건과 제약의 경계' 질문에 criticalLowChargingLevel 을 사례로 덧붙인다 — 배터리 잔량을 실행 조건으로 둘지가 미해결 질문이므로 예시 추가가 그 질문을 선취한다.",
+    "용어집: 'VDA 5050 팩트시트'(VDA 5050 Factsheet)를 새 용어로 등록하고, 기존 'VDA 5050' 항목의 정의를 팩트시트 설명이 아니라 표준 자체(이동로봇과 상위 관제 사이의 통신 인터페이스 명세)를 설명하도록 glossary_updates action update 로 고친다 — 근거 f9·ref-046. 정의 문구는 이전 실행 2026-09-25-01 브리프의 VDA 5050 용어 후보 정의를 기준으로 하되 3.0.0 의 이동로봇 용어를 반영한다.",
+    "브리프 page_proposals 의 아이디어 페이지(docs/ideas/robot-capability-ontology.md) 4절 갱신은 트랙 페이지 갱신으로 세고, 적재(f2·f5)·충전(f8)·구역(f6) 근거만 쓰며 f12 는 [추정]으로 둔다.",
+    "세부영역 반영 제안(5. 로봇 능력·작업 온톨로지, 9. 로봇·제조사 관제 연동, 16. 공용 자원·충전·에너지 최적화)은 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals·트랙 로그로만 남긴다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐으며, VDA 5050 공식 GitHub 저장소 원문(raw.githubusercontent.com)만 열어 확인했다. 확인 13건, 미확인 0건, 교차 확인 0건(모든 출처가 같은 기관 VDA/VDMA 의 판별 산출물이라 독립 교차가 아님). 강등: 없음. 원문 미열람 출처: 없음(ref-044~ref-048 모두 검증에서 원문 열람. 다만 ref-047·ref-048 은 열람 본문이 잘렸고 ref-048 은 RELEASE CANDIDATE 문서). 주의: 3.0.0 스키마는 적재 세트 maximumSpeed 단위를 'm/s^2' 로 적고 있어 원문 그대로 옮겨야 한다. 2.0.0 태그에는 팩트시트 스키마가 없어(404, 검증에서 재확인) q1-07 의 '2.0 대비' 비교는 2.1.0 대비로 대신했고 2.0.0 적재 세트 필드는 미확인이다. VDA 5050 3.0.0 발행일은 여전히 미확인(oq-005 미해소). 한국어 검색을 하지 않았다(공통 규칙 8 미이행, 공식 스키마 대조 질문이라 영향은 작음). f13 은 [사용자 실험]으로 표기하며 승격하지 않는다. 용어집 'VDA 5050' 정의가 팩트시트를 설명하고 있어 갱신을 지시했다. 온톨로지 변경 승인: 제약 (Constraint) 속성 후보 추가(f2), 시드 개념 확정: 제약(f2), 버전 0.1 → 0.2 / 거부: 기능 (Capability) 속성 추가(f7, 기능·스킬 정의 충돌 — 6절 질문), 실행 조건 (Execution Condition) 예시 추가(f8, 실행 조건·제약 경계 미해결 질문 선취 — 6절 질문). 단계 완료 조건: 미충족(부족: 모델·표준 비교표의 다섯 정보 항목 열이 VDA 5050 행 외 대부분 미조사, ROP용 능력 개념 요구 목록 초안 미반영 — q1-06 미조사). 단계 전환: 미승인(막힌 질문 q1-03(조사 중), q1-04, q1-05, q1-06, q1-08).",
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": false,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "run_id": "2026-09-25-90",
+  "date": "2026-09-25",
+  "weekday": "Fri",
+  "run_number": 3,
+  "run_type": "track",
+  "forced": true,
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "category_letter": "B"
+  },
+  "topic": null,
+  "track": {
+    "slug": "manual-capability-ontology",
+    "name": "매뉴얼 기반 로봇 기능 온톨로지",
+    "stage": 1,
+    "stages": 7,
+    "stage_name": "기존 능력 표현 모델과 표준 조사",
+    "question_ids": [
+      "q1-07"
+    ],
+    "user_questions": [],
+    "runs_per_week": 3,
+    "question_rationale": "CLI 지정 질문 id"
+  },
+  "corrections": [],
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "priority_reason": null,
+  "priority_questions": [],
+  "excluded_areas": [],
+  "lifted_areas": [],
+  "deferred": {
+    "monthly_recheck": false,
+    "weekly_review": false
+  },
+  "selection_rationale": "CLI 지정 run_type=track, area=5; 트랙 실행일(Fri, track_days 앞 3개) → 트랙 manual-capability-ontology 단계 1, 질문 q1-07 (CLI 지정 질문 id)"
+}
