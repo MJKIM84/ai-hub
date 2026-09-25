@@ -155,6 +155,10 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 21. 온보딩·설정·현장 시운전 — 대표 연구와 자료: topics/2026/2026-09-25-area21-s8.md
+      - 21. 온보딩·설정·현장 시운전 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area21-s7.md
+      - 21. 온보딩·설정·현장 시운전 — 대표 접근법과 기술: topics/2026/2026-09-25-area21-s6.md
+      - 21. 온보딩·설정·현장 시운전 — 핵심 개념과 용어: topics/2026/2026-09-25-area21-s4.md
       - 19. 모니터링·이상 탐지·원인 분석 — 대표 연구와 자료: topics/2026/2026-09-25-area19-s8.md
       - 19. 모니터링·이상 탐지·원인 분석 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area19-s7.md
       - 19. 모니터링·이상 탐지·원인 분석 — 대표 접근법과 기술: topics/2026/2026-09-25-area19-s6.md
@@ -263,6 +267,7 @@ nav:
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
+    - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
@@ -319,6 +324,7 @@ nav:
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
     - 시간창 (Time Window): glossary/time-window.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
+    - 신원 보고 (Identity Report (MassRobotics identityReport)): glossary/identity-report.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
@@ -362,6 +368,7 @@ nav:
     - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
     - 풋월 (Put Wall): glossary/put-wall.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
+    - 플러그 앤 프로듀스 (Plug and Produce): glossary/plug-and-produce.md
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - 합의 기반 번들 알고리즘 (Consensus-Based Bundle Algorithm (CBBA)): glossary/consensus-based-bundle-algorithm.md
@@ -875,6 +882,8 @@ nav:
     - ref-462 — Generating Actionable Robot Knowledge Bases by Combining 3D Scene Graphs with Robot Ontologies: references/ref-462.md
     - 'ref-463 — FloorplanVLM: A Vision-Language Model for Floorplan Vectorization': references/ref-463.md
     - ref-464 — IDS — README (Information Delivery Specification): references/ref-464.md
+    - ref-465 — Toward a Method to Generate Capability Ontologies from Natural Language Descriptions: references/ref-465.md
+    - ref-466 — KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’: references/ref-466.md
     - ref-467 — Order batching and batch sequencing in an AMR-assisted picker-to-parts system: references/ref-467.md
     - 'ref-468 — Human-Robot Cooperation: Coordinating Autonomous Mobile Robots and Human Order Pickers': references/ref-468.md
     - ref-469 — Deploying pickers and robots in cobot-based collaborative order picking systems: references/ref-469.md
@@ -891,6 +900,8 @@ nav:
     - ? 'ref-479 — Mastering a robot workforce: review of single human multiple robots systems and their impact on occupational safety and health and system performance'
       : references/ref-479.md
     - ref-480 — "대형 물류센터 집품 작업, 로봇 6대로 효율화": references/ref-480.md
+    - ref-481 — Virtual commissioning with Siemens solutions reduces launch time by three weeks: references/ref-481.md
+    - ref-482 — rmf_site — README (RMF Site Editor): references/ref-482.md
     - 'ref-497 — Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review': references/ref-497.md
     - ref-498 — 유진로봇, 지능형 제조 물류시스템 공개: references/ref-498.md
     - ref-499 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg: references/ref-499.md

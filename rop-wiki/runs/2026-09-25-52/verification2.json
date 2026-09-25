@@ -1,0 +1,33 @@
+{
+  "run_id": "2026-09-25-52",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "1차에서 지적한 중복 id 병합 대상(ref-217·ref-265·ref-269·ref-079·ref-046·ref-470·ref-229, ref-153↔ref-105)은 additional_research_requests 에 퍼블리셔 확인 사항으로 남아 있다. 재검증에서 새로 생긴 중복은 없다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. GitHub 원문(ref-031, ref-228, ref-230, ref-153, ref-079, ref-482, ref-046, ref-229, ref-251, ref-004)은 직접 대조했고, 나머지는 검색 결과 일치로 확인했다. 확인 22건, 미확인 1건, 교차 확인 0건. 강등: f2 사실 → 추정(팩트시트 필수 절은 6개이고 mobileRobotConfiguration 은 선택 절이다). 원문 미열람 출처: ref-217, ref-269, ref-037, ref-465, ref-470, ref-466, ref-481, ref-265, ref-163. ref-251·ref-229 는 브리프에 미열람으로 표시돼 있지만 검증자가 GitHub 원문으로 실재를 확인했다. 주의: 모든 주장이 단일 출처에 기댄다. 설치 기간 단축 수치(PAN-Robots 6→2개월, Siemens 3주)는 과제·벤더 측 보고값이다. f21~f23 은 이 위키의 종합 추론이다. f10 의 Read Only 근거는 ref-004 다. LIF 기준일은 두 출처가 다르다(2023-09 대 VDMA 2024-03). oq-022 는 해결되지 않았다. 정정 요청 없음. / 2차 통과(재검증). 직전 2차 수정 지시 11건이 모두 이행돼 드리프트 9건을 처리했다. 10절 연결 문장 5건을 [추정]으로 고쳤고 '매뉴얼' 표현을 자연어 능력 설명으로 바로잡았다. 이 밖에 7절 요약을 강등했고, s8 의 평가 문장을 삭제했으며, 9절 표의 '운행 구역 설정'을 '레이아웃·지도 정합 설정'으로 바꾸고 추론 표시를 달았다. 프런트매터 sources 3건, 열린 질문의 '지도 정합' 표기, ref-004 요약도 정리됐다. 세부영역 페이지의 본문 각주 16개는 모두 정의돼 있고 프런트매터와 일치한다. [분류원문] 보존, 섹션 순서 준수, 링크 유효(docs_tree 대조). 3·5절의 [의견] 문장은 구축자 의견이다. 퍼블리셔 참고 사항은 두 가지다. 첫째, ref-004 는 cited_by 만 합치고 기존 참고문헌 값을 유지해야 한다. 둘째, 분리된 주제 페이지가 인용한 출처의 cited_by 는 자동 영역(reference-cited-pages)에서 보완돼야 한다.",
+  "retry_reason": null
+}

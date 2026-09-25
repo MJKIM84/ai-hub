@@ -146,7 +146,7 @@
       "claim": "Open-RMF 는 대규모 RMF 배치 현장을 시각화·편집하는 실험적 도구 RMF Site Editor(rmf_site)를 공개하며, 이 도구의 프로젝트에서 시뮬레이션과 주행 그래프를 생성할 수 있다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-643"
+        "ref-482"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -265,7 +265,7 @@
       "claim": "Vieira da Silva 외(arXiv 2406.07962, 2024)는 능력의 자연어 설명을 소수 예시 프롬프트에 넣어 LLM(Large Language Model, 대규모 언어 모델)으로 능력 온톨로지를 생성하고, 구문 검사·모순 검사·환각과 누락 요소 검사를 LLM 과 반복하는 방식으로 결과를 자동 검증하는 방법을 제안한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-637"
+        "ref-465"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -295,7 +295,7 @@
       "claim": "한국산업기술시험원(KTL)과 한국통합물류협회(KILA)는 2026-07-23 물류로봇·자동화 설비의 시험·인증과 표준화 협력 업무협약을 맺고, AMR·AGV·팔레타이징 로봇·모바일 매니퓰레이터·자율주행 지게차의 성능·안전성 검증을 KTL 테스트베드와 회원사 물류센터를 잇는 연구개발–시험평가–현장 실증 체계로 지원하겠다고 밝혔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-639"
+        "ref-466"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -310,7 +310,7 @@
       "claim": "Siemens 는 고객사례에서 IDC 가 가상 시운전(virtual commissioning)으로 코드를 시스템 설계와 대조 검증해 현장에서 큰 변경이 필요 없었고 가동 개시를 3주 앞당겼다고 설명한다.",
       "tag": "추정",
       "source_ids": [
-        "ref-640"
+        "ref-481"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -541,7 +541,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-637",
+      "id": "ref-465",
       "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
       "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
       "published": "2024-06",
@@ -571,7 +571,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-639",
+      "id": "ref-466",
       "org": "부산일보",
       "title": "KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’",
       "published": "2026-07-24",
@@ -586,7 +586,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-640",
+      "id": "ref-481",
       "org": "Siemens Digital Industries Software",
       "title": "Virtual commissioning with Siemens solutions reduces launch time by three weeks",
       "published": null,
@@ -631,7 +631,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-643",
+      "id": "ref-482",
       "org": "Open Robotics (open-rmf/rmf_site)",
       "title": "rmf_site — README (RMF Site Editor)",
       "published": null,
@@ -708,6 +708,6 @@
       "queries": 18,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-031·ref-230(재사용), ref-228·ref-079·ref-153·ref-229·ref-046·ref-643(신규). 그 밖의 신규 출처(ref-217~ref-163)와 재사용 ref-251 는 원문 미열람(신뢰도 상한 medium, 모든 finding medium 이하). 검색 18회/30, 신규 출처 15건/15(ref-228~ref-643, 예약 구간 안) — 신규 출처 상한 도달로 MiR·OTTO 벤더 문서, Boniardi 외 2019, 다중 AGV 경로망 자동 설계(IEEE T-ASE 2024), Rüdt 외 2025, 문서 해석 LLM(기술 매뉴얼 지식 추출) 논문은 추가하지 않았다. 입력의 참고문헌 목록이 요약본(0건 표시)이라 트랙 반영 제안이 인용한 ref-217·ref-265·ref-269 등의 서지 정보를 몰라 재사용하지 못하고, 같은 문헌(Beinschob 외 2017, PAN-Robots CORDIS, Heselden·Das 2024)을 새 id(ref-217·ref-265·ref-269)로 다시 적었다 — 같은 URL 이면 퍼블리셔가 기존 id 로 합쳐야 한다. ref-251 는 이전 브리프(2026-09-25-50) 값을 재인용. 트랙 반영 제안 6건 가운데 traffic-editor(f8), 플릿 어댑터 설정(f7), Beinschob 외(f11), Heselden·Das(f13), PAN-Robots(f12)는 이번 finding 으로 재확인했고, 나머지는 페이지 제안 rationale 에 다음 실행 후보로 적었다. 한국 자료: KTL–KILA 협약(f19, 기사), 한국로봇학회 논문(f14). 한국어 검색에서 나온 블로그·업체 홍보 글은 쓰지 않았다. 교차 규칙: 문서 해석 AI(f17)는 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 연구 방법으로 27. AI·학습·적응과 모델 운영 연결을 제안. 8. 실시간 세계 상태·데이터 일관성 관련 주장 없음, 22. 시뮬레이션·예측용 디지털 트윈은 가상 시운전(f20)·팩트시트의 시뮬레이션 용도(f2) 연결로만 제안. 정정 요청 없음. oq-022 는 해결하지 못함."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: ref-031·ref-230(재사용), ref-228·ref-079·ref-153·ref-229·ref-046·ref-482(신규). 그 밖의 신규 출처(ref-217~ref-163)와 재사용 ref-251 는 원문 미열람(신뢰도 상한 medium, 모든 finding medium 이하). 검색 18회/30, 신규 출처 15건/15(ref-228~ref-482, 예약 구간 안) — 신규 출처 상한 도달로 MiR·OTTO 벤더 문서, Boniardi 외 2019, 다중 AGV 경로망 자동 설계(IEEE T-ASE 2024), Rüdt 외 2025, 문서 해석 LLM(기술 매뉴얼 지식 추출) 논문은 추가하지 않았다. 입력의 참고문헌 목록이 요약본(0건 표시)이라 트랙 반영 제안이 인용한 ref-217·ref-265·ref-269 등의 서지 정보를 몰라 재사용하지 못하고, 같은 문헌(Beinschob 외 2017, PAN-Robots CORDIS, Heselden·Das 2024)을 새 id(ref-217·ref-265·ref-269)로 다시 적었다 — 같은 URL 이면 퍼블리셔가 기존 id 로 합쳐야 한다. ref-251 는 이전 브리프(2026-09-25-50) 값을 재인용. 트랙 반영 제안 6건 가운데 traffic-editor(f8), 플릿 어댑터 설정(f7), Beinschob 외(f11), Heselden·Das(f13), PAN-Robots(f12)는 이번 finding 으로 재확인했고, 나머지는 페이지 제안 rationale 에 다음 실행 후보로 적었다. 한국 자료: KTL–KILA 협약(f19, 기사), 한국로봇학회 논문(f14). 한국어 검색에서 나온 블로그·업체 홍보 글은 쓰지 않았다. 교차 규칙: 문서 해석 AI(f17)는 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 연구 방법으로 27. AI·학습·적응과 모델 운영 연결을 제안. 8. 실시간 세계 상태·데이터 일관성 관련 주장 없음, 22. 시뮬레이션·예측용 디지털 트윈은 가상 시운전(f20)·팩트시트의 시뮬레이션 용도(f2) 연결로만 제안. 정정 요청 없음. oq-022 는 해결하지 못함."
   }
 }

@@ -54,6 +54,20 @@ version: 1
 | 2026-09-25-53 | 생성 | [docs/references/ref-444.md](references/ref-444.md) | 참고문헌 ref-444 등록: Submodel Templates of the Asset Administration Shell — Gener… |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-52 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8절은 주제 페이지로 분리), 2차 수정: 10절 연결 문장 5건 태그·표현 정정, 7절 요약 강등, 9절 표 범위 정정, sources 정리 |
+| 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s6.md](topics/2026/2026-09-25-area21-s6.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 문서 해석 AI 문장을 자연어 능력 설명 기준 [추정]으로 정정 |
+| 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s7.md](topics/2026/2026-09-25-area21-s7.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 요약 문장 [추정]으로 강등 |
+| 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s4.md](topics/2026/2026-09-25-area21-s4.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "4. 핵심 개념과 용어" 절을 옮겼다 |
+| 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s8.md](topics/2026/2026-09-25-area21-s8.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: Beinschob 외 항목의 평가 문장 삭제 |
+| 2026-09-25-52 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 21. 온보딩·설정·현장 시운전: 영역 심화: 3~11절 신규 작성(표준 등록 메시지·어댑터 설정·평면도 주석·반자동 지도 작성·가상 시운전, 적치 시나리오) |
+| 2026-09-25-52 | 생성 | [docs/references/ref-465.md](references/ref-465.md) | 참고문헌 ref-465 등록: Toward a Method to Generate Capability Ontologies from Natur… |
+| 2026-09-25-52 | 생성 | [docs/references/ref-466.md](references/ref-466.md) | 참고문헌 ref-466 등록: KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’ |
+| 2026-09-25-52 | 생성 | [docs/references/ref-481.md](references/ref-481.md) | 참고문헌 ref-481 등록: Virtual commissioning with Siemens solutions reduces launch… |
+| 2026-09-25-52 | 생성 | [docs/references/ref-482.md](references/ref-482.md) | 참고문헌 ref-482 등록: rmf_site — README (RMF Site Editor) |
+| 2026-09-25-52 | 생성 | [docs/glossary/virtual-commissioning.md](glossary/virtual-commissioning.md) | 용어집 항목 가상 시운전 |
+| 2026-09-25-52 | 생성 | [docs/glossary/plug-and-produce.md](glossary/plug-and-produce.md) | 용어집 항목 플러그 앤 프로듀스 |
+| 2026-09-25-52 | 생성 | [docs/glossary/identity-report.md](glossary/identity-report.md) | 용어집 항목 신원 보고 |
+| 2026-09-25-52 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-48 | 갱신 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s4.md](topics/2026/2026-09-25-area19-s4.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "4. 핵심 개념과 용어" 절(1,482자)을 옮겼다 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s7.md](topics/2026/2026-09-25-area19-s7.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,413자)을 옮겼다 |
