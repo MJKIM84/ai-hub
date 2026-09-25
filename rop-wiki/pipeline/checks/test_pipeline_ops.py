@@ -307,6 +307,18 @@ class TestDailyLogLinks(unittest.TestCase):
         self.assertIn("(https://example.org/a.md)", out)
 
 
+class TestRunIds(unittest.TestCase):
+    def test_three_digit_run_numbers(self):
+        self.assertTrue(runs.RUN_ID_RE.match("2026-09-25-100"))
+        ids = ["2026-09-25-100", "2026-09-25-11", "2026-09-25-99", "2026-09-24-120"]
+        self.assertEqual(sorted(ids, key=runs.run_id_key), ["2026-09-24-120", "2026-09-25-11", "2026-09-25-99", "2026-09-25-100"])
+        import json as _j
+        for f in ("research", "pages", "verification"):
+            pat = _j.loads((paths.ROOT / "schemas" / f"{f}.schema.json").read_text(encoding="utf-8"))["properties"]["run_id"]["pattern"]
+            import re as _re
+            self.assertTrue(_re.match(pat, "2026-09-25-100"), f)
+
+
 class TestSelection(unittest.TestCase):
     def test_weighted_track_pick(self):
         import select_target as S

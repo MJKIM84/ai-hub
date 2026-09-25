@@ -86,7 +86,7 @@ def main(argv=None) -> int:
     settings = runs.load_settings()
     ids = list(args.run_ids)
     if args.since:
-        ids += [r for r in runs.list_run_ids(settings) if r >= args.since and r not in ids]
+        ids += [r for r in runs.list_run_ids(settings) if runs.run_id_key(r) >= runs.run_id_key(args.since) and r not in ids]
     rows = []
     for rid in ids:
         rd = runs.find_run_dir(rid, settings)

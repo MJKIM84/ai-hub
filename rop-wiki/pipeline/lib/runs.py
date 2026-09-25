@@ -52,7 +52,13 @@ TEMPLATES_DIR = ROOT / "templates"
 INBOX_CORRECTIONS = ROOT / "inbox" / "corrections.md"
 EXPERIMENTS_DIR = ROOT / "experiments"
 
-RUN_ID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-\d{2}$")
+RUN_ID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-\d{2,}$")
+
+
+def run_id_key(rid: str) -> tuple:
+    """실행 id 정렬 키(날짜, 번호). 같은 날 100번째 실행(…-100)이 …-11 앞에 오지 않게 번호를 정수로 비교한다."""
+    m = re.match(r"^(\d{4}-\d{2}-\d{2})-(\d+)$", str(rid))
+    return (m.group(1), int(m.group(2))) if m else (str(rid), 0)
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 RUN_TYPES = ["area_deep_dive", "topic", "update", "weekly_review", "monthly_recheck", "track", "category_link"]
@@ -217,7 +223,7 @@ def list_run_ids(settings: dict | None = None, include_parked: bool = True) -> l
         for p in parked_root(settings).iterdir():
             if p.is_dir() and RUN_ID_RE.match(p.name):
                 ids.add(p.name)
-    return sorted(ids)
+    return sorted(ids, key=run_id_key)
 
 
 def new_run_id(day: str, settings: dict | None = None) -> str:

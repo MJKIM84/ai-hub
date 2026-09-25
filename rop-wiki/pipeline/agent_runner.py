@@ -570,8 +570,8 @@ def _previous_research(run_id: str, settings: dict, n: int = 7, target_json: dic
     out: list[tuple[str, str]] = []
     briefs = 0
     others = 0
-    ids = [i for i in runs.list_run_ids(settings, include_parked=True) if i < run_id]
-    for rid in sorted(ids, reverse=True):
+    ids = [i for i in runs.list_run_ids(settings, include_parked=True) if runs.run_id_key(i) < runs.run_id_key(run_id)]
+    for rid in sorted(ids, key=runs.run_id_key, reverse=True):
         d = runs.find_run_dir(rid, settings)
         if not d:
             continue

@@ -8,7 +8,7 @@
     "run_id": {
       "type": "string",
       "description": "실행 id",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{2}$"
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
     },
     "pages": {
       "type": "array",
@@ -102,7 +102,7 @@
     "changelog_entry": {
       "type": "string",
       "description": "변경 이력 한 줄. 형식: 'YYYY-MM-DD | <대상 이름> | <한 줄 요약> | run <run_id>' [가정: 형식 강제]",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2} \\| .+ \\| .+ \\| run \\d{4}-\\d{2}-\\d{2}-\\d{2}$"
+      "pattern": "^\\d{4}-\\d{2}-\\d{2} \\| .+ \\| .+ \\| run \\d{4}-\\d{2}-\\d{2}-\\d{2,}$"
     },
     "index_updates": {
       "type": "object",

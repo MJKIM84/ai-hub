@@ -2050,7 +2050,7 @@ def pending_reflection(item: dict, area_no: int, run_id: str) -> bool:
     """이 실행이 반영할 세부영역 반영 제안인가: 대상 영역의 status 제안 항목 가운데 이 실행보다 앞선 실행이 낸 것.
     agent_runner.py(입력)와 퍼블리셔(반영 표시)가 같은 기준을 쓴다."""
     return (item.get("status") == "제안" and str(item.get("area_no")) == str(area_no)
-            and str(item.get("run_id") or "") < str(run_id))
+            and runs.run_id_key(str(item.get("run_id") or "")) < runs.run_id_key(str(run_id)))
 
 
 def primary_page(pages: dict) -> str:
