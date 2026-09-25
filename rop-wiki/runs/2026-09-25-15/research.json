@@ -34,7 +34,7 @@
       "claim": "VDA 5050 공식 저장소 main(3.0.0판)의 팩트시트 스키마는 헤더 항목과 함께 typeSpecification(로봇 등급·능력), physicalParameters, protocolLimits, protocolFeatures, mobileRobotGeometry, loadSpecification(적재 능력의 추상 명세)을 필수 블록으로 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-125"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -48,7 +48,7 @@
       "claim": "VDA 5050 3.0.0 팩트시트의 적재 명세 loadSets 는 적재 유형(loadType, 예 EPAL), 적재 치수, 최대 중량(maximumWeight), 최소·최대 적재 처리 높이, 픽·드롭 소요 시간(pickTime, dropTime)을 기술한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-125"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -62,7 +62,7 @@
       "claim": "VDA 5050 3.0.0 팩트시트의 지원 동작 목록(mobileRobotActions)은 동작마다 actionType, 자유 문장 설명(actionDescription), 허용 범위(actionScopes), 파라미터(key·valueDataType·isOptional), 일시정지 가능 여부(pauseAllowed), 취소 가능 여부(cancelAllowed)를 기술한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-125"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -76,7 +76,7 @@
       "claim": "VDA 5050 3.0.0 팩트시트의 동작 파라미터 기술에는 허용 값 범위나 실행 전제조건을 담는 구조화 필드가 없어, 그런 조건은 자유 문장 설명이나 적재 명세의 최소·최대 필드에 흩어져 기술될 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-125"
+        "ref-228"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -90,7 +90,7 @@
       "claim": "MassRobotics AMR 상호운용 표준 JSON 스키마는 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 설명(cargoType)·화물 최대 부피·최대 중량·제품 문서 링크를, 상태 보고에 운영 상태(navigating·idle·charging·waitingHumanEvent 등 9개 값)와 남은 적재 용량 비율을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-127"
+        "ref-230"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -104,8 +104,8 @@
       "claim": "VDA 5050 팩트시트의 loadType 과 MassRobotics 의 cargoType 은 모두 적재물 유형을 문자열로 적게 할 뿐 공통 어휘를 지정하지 않으므로, 제조사 간 화물 취급 가능 여부를 맞추려면 적재물 유형 사전이 별도로 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-125",
-        "ref-127"
+        "ref-228",
+        "ref-230"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -147,7 +147,7 @@
       "claim": "IDTA 02020 Capability Description 서브모델 1.0 은 능력을 속성(최대 속도·허용 오차·온도 범위 등), 전제조건·불변조건·사후조건 역할의 속성 제약과 순서·병렬 흐름을 정하는 전이 제약, 능력을 구현하는 스킬로 기술하며, 요구 능력과 제공 능력의 신뢰할 수 있는 비교를 목적으로 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-126"
+        "ref-229"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -162,8 +162,8 @@
       "claim": "능력(capability)은 구현과 무관한 기능 명세이고 스킬(skill)은 OPC UA 같은 호출 인터페이스를 가진 능력의 구현이라는 구분을 IDTA 02020 과 CaSkMan 온톨로지가 공통으로 쓰며, 두 자료 모두 Plattform Industrie 4.0 의 능력·스킬·서비스(CSS) 모델 계열이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-126",
-        "ref-128",
+        "ref-229",
+        "ref-231",
         "ref-035"
       ],
       "cross_checked": true,
@@ -178,7 +178,7 @@
       "claim": "CaSkMan 은 설비 구조, 추상 능력, 상태 기계를 가진 실행 스킬, 속성을 모델링하고 VDI 3682(공정 입출력), VDI 2860(취급 작업 분류), DIN 8580(제조 공정 분류), ISA 88(상태 기계), IEC 61360(속성 형식 기술)을 잇는 정렬 온톨로지이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-128"
+        "ref-231"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -192,7 +192,7 @@
       "claim": "IDTA 02047 Technical Data for AGV 1.0 은 여러 제조사·유형의 무인운반차를 한 생산 환경에서 운영하기 위해 제조사 독립적인 기술 데이터를 자산관리셸(AAS) 서브모델로 표준화하려는 명세이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-131"
+        "ref-234"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -207,7 +207,7 @@
       "claim": "W3C/OGC SSN 의 System Capabilities 모듈은 특정 조건(Condition) 아래 시스템의 정확도·범위 등 능력(SystemCapability), 정상 운용 범위(OperatingRange), 벗어나면 손상되는 생존 범위(SurvivalRange)를 hasSystemCapability·inCondition 관계로 기술한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-132"
+        "ref-235"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -221,7 +221,7 @@
       "claim": "SOMA 는 DUL(DOLCE+DnS Ultralite) 상위 온톨로지를 확장한 OWL 활동 온톨로지로, 로봇 에이전트의 의도·계획·움직임·물체와의 접촉 같은 활동 측면을 표현한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-130",
+        "ref-233",
         "ref-028"
       ],
       "cross_checked": false,
@@ -237,7 +237,7 @@
       "claim": "헬무트 슈미트 대학 연구실이 공개한 IEEE 1872.2 AuR 온톨로지 OWL 구현은 로봇이 제공하고 기능 실행으로 수행되는 기능(function), 로봇 간·물체와의 상호작용, 환경을 기술하며 IEEE 1872 를 DUL·SUMO 상위 온톨로지로 확장하는 제3자 구현이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-129",
+        "ref-232",
         "ref-026"
       ],
       "cross_checked": false,
@@ -358,7 +358,7 @@
       "claim": "Electronics(2026-08) 게재 연구는 로봇·작업·장소의 의미 모델과 선언적·절차적 혼합 추론으로 다축 능력 조건과 적재 상태에 따른 장소 도달 가능성을 판정하고, 결과를 배정 알고리즘과 무관한 공통 입력(ReasonerOutput)으로 넘기는 이종 다중 로봇 작업 배정용 실행 가능성 추론을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-133"
+        "ref-236"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -373,7 +373,7 @@
       "claim": "Kluge-Wilkes 외의 CAPILANO 는 이종 조립 자원과 그 결합 능력을 OWL 온톨로지로 기술하고 SPARQL 질의와 가용성을 고려한 연속 작업 배정(Python)을 하나의 틀로 묶어 라인리스 이동 조립 시스템에 적용했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-134"
+        "ref-237"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -388,7 +388,7 @@
       "claim": "Vieira da Silva 외(ETFA 2024)는 여러 LLM 과 프롬프트 기법으로 복잡도가 다른 능력 온톨로지를 생성하고, RDF 구문 검사·OWL 추론·SHACL 제약에 기반한 반자동 품질 검사로 복잡한 능력에서도 오류가 거의 없었다고 보고했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-135"
+        "ref-238"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -403,7 +403,7 @@
       "claim": "Dussard·Sarthou(ICSR 2026)는 URDF 로봇 기술 파일의 식별자를 LLM 으로 해석해 기존 온톨로지 개념으로 분류·채우고, 여러 질의의 다수결과 구문·스키마 수준 검증으로 신뢰성을 높이는 파이프라인을 제안했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-136"
+        "ref-239"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -418,7 +418,7 @@
       "claim": "ISO 22166-201:2024 는 서비스 로봇 모듈의 상호운용성·재사용성·조립 가능성을 위해 모듈 공통 정보 모델(CIM)의 구조와 속성·하위 클래스의 의미를 정한 국제표준이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-137"
+        "ref-240"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -448,9 +448,9 @@
       "claim": "같은 운반 로봇 가운데 어느 로봇이 특정 화물을 실제로 취급할 수 있는지는 적재 명세(적재 유형·최대 중량·처리 높이), 지원 동작, 현재 상태(남은 적재 용량·운영 상태), 적재 상태에서의 경로 통과 가능성을 함께 대조해야 판단할 수 있어 한 규격의 필드만으로는 결정되지 않을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-125",
-        "ref-127",
-        "ref-133"
+        "ref-228",
+        "ref-230",
+        "ref-236"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -464,10 +464,10 @@
       "claim": "기존 표준에서 능력 기술과 실행의 연결은 같은 인터페이스 안에서 선언한 동작 이름을 명령·완료 보고에 그대로 쓰는 방식(VDA 5050, Open-RMF)과, 별도 능력 모델을 상태 기계를 가진 스킬 인터페이스로 잇는 방식(IDTA 02020, CaSkMan)으로 나뉘는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-125",
+        "ref-228",
         "ref-040",
-        "ref-126",
-        "ref-128"
+        "ref-229",
+        "ref-231"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -481,8 +481,8 @@
       "claim": "매뉴얼·로봇 기술 파일에서 능력 온톨로지를 LLM 으로 만드는 연구들은 생성 결과를 기존 온톨로지 스키마·추론기·SHACL 같은 형식 검증에 통과시키는 절차를 공통으로 두는 것으로 보여, 문서 기반 능력 모델 구축에서도 생성과 검증을 분리한 구조가 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-135",
-        "ref-136"
+        "ref-238",
+        "ref-239"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -497,8 +497,8 @@
       "claim": "연계 대상: 파지·센서 인식·로컬 회피 같은 능력의 실제 구현과 성능 보장은 분류 원문 9장의 로봇 자체 지능·제어 쪽이며, 이종 제조사를 연결하는 ROP는 제조사가 선언한 능력·제약(팩트시트·능력 서브모델)을 공통 모델로 모아 작업 요구와 대조하고 실행 결과로 선언과 실제의 차이를 기록하는 쪽을 맡는 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-125",
-        "ref-126",
+        "ref-228",
+        "ref-229",
         "ref-041"
       ],
       "cross_checked": false,
@@ -526,7 +526,7 @@
   ],
   "sources": [
     {
-      "id": "ref-125",
+      "id": "ref-228",
       "org": "VDA / VDMA (VDA5050 GitHub)",
       "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
       "published": null,
@@ -541,7 +541,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-126",
+      "id": "ref-229",
       "org": "IDTA(Industrial Digital Twin Association)",
       "title": "IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)",
       "published": null,
@@ -556,7 +556,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-127",
+      "id": "ref-230",
       "org": "MassRobotics",
       "title": "MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json",
       "published": null,
@@ -571,7 +571,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-128",
+      "id": "ref-231",
       "org": "CaSkade-Automation (GitHub)",
       "title": "CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README)",
       "published": null,
@@ -586,7 +586,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-129",
+      "id": "ref-232",
       "org": "Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub)",
       "title": "IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation)",
       "published": null,
@@ -601,7 +601,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-130",
+      "id": "ref-233",
       "org": "EASE CRC (ease-crc/soma)",
       "title": "SOMA — README (Socio-physical Model of Activities)",
       "published": null,
@@ -616,7 +616,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-131",
+      "id": "ref-234",
       "org": "IDTA(Industrial Digital Twin Association)",
       "title": "IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates)",
       "published": null,
@@ -631,7 +631,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-132",
+      "id": "ref-235",
       "org": "W3C / OGC Spatial Data on the Web WG (w3c/sdw GitHub)",
       "title": "ssn/integrated/ssn-system.ttl (SSN System Capabilities module)",
       "published": null,
@@ -646,7 +646,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-133",
+      "id": "ref-236",
       "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
       "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
       "published": "2026-08-11",
@@ -661,7 +661,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-134",
+      "id": "ref-237",
       "org": "Kluge-Wilkes, A. 외(RWTH Aachen WZL)",
       "title": "Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems",
       "published": null,
@@ -676,7 +676,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-135",
+      "id": "ref-238",
       "org": "Vieira da Silva, L. M., Köcher, A. 외",
       "title": "On the Use of Large Language Models to Generate Capability Ontologies",
       "published": "2024-04",
@@ -691,7 +691,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-136",
+      "id": "ref-239",
       "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
       "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
       "published": "2026-06",
@@ -706,7 +706,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-137",
+      "id": "ref-240",
       "org": "ISO",
       "title": "ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules",
       "published": "2024",
@@ -982,7 +982,7 @@
     "unverified": [
       "f10 외 모든 finding 교차 확인 실패: 규격·연구마다 발행 주체 한 곳의 자료만 확인",
       "f10 의 두 출처(IDTA 02020, CaSkMan)는 발행 주체가 다르나 같은 CSS 계열 연구진이 관여해 독립성이 약할 수 있음",
-      "ref-133 저자 미확인, ref-134 발행 연도 미확인(2022~2023 추정이라 null)",
+      "ref-236 저자 미확인, ref-237 발행 연도 미확인(2022~2023 추정이라 null)",
       "ref-138 KS B 7321-2 제정일·ISO 22166 부합 여부·제1부 존재 여부 미확인",
       "f12 IDTA 02047 의 세부 필드(적재량·치수·속도)는 README 범위에서 미확인",
       "f13 SSN 은 작업반 저장소 편집본(ttl)이며 /TR 권고안(ref-030)과 글자 단위 일치 미확인",
@@ -998,6 +998,6 @@
       "queries": 19,
       "sources": 15
     },
-    "limits": "fetch_mode mirror_only(web_fetch_available: false). raw.githubusercontent.com 공식 원문 8건(ref-125 VDA 5050 factsheet.schema, ref-126 IDTA 02020 README, ref-127 MassRobotics JSON, ref-128 CaSkMan README, ref-129 HSU IEEE 1872.2 OWL README, ref-130 SOMA README, ref-131 IDTA 02047 README, ref-132 SSN ssn-system.ttl)과 재사용 2건(ref-040, ref-105)은 원문을 열었다. 논문·ISO·KSSN 과 재사용 논문·표준 10건은 원문 미열람이라 신뢰도 상한 medium. 검색 19회/30, 신규 출처 15건/15(ref-125~ref-152, next_ref_id 기준)로 신규 출처 상한에 도달했다. 재사용 12건. 주의: 이전 트랙 실행 2026-09-25-06 이 VDA 5050 팩트시트·IDTA 02020·MassRobotics·CaSkMan 등을 ref-044~ref-056 으로 제안했으나 참고문헌 목록의 해당 id 는 다른 출처(GS1·VDA state.schema 등)이므로 이번에 새 id 로 부여했다. 퍼블리셔가 중복 여부를 확인해야 한다. 트랙 반영 제안 3건은 모두 다루었다. IDTA 02020 은 IDTA 원문(f9)으로 근거를 대체했고 SSN 은 System Capabilities 모듈 파일로 확인했다(f13). CORA·1872.2·KnowRob·RCO·서베이·KCI 는 기존 출처를 제목 수준으로 재인용했다. 한국 자료: KS B 7321-2(표제만), 기존 KCI 1건. oq-004 는 IEEE 1872 계열·AAS 능력 서브모델의 KS 부합 여부를 확인하지 못해 해결로 제안하지 않았다(국내 모듈 정보 모델 KS 존재만 부분 근거). 27. AI·학습·적응과 모델 운영 관련 finding(f25·f26·f31)은 교차 규칙에 따라 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 연결하도록 제안했다. 8. 실시간 세계 상태·데이터 일관성은 상태 보고·운용 능력 연결로만 다루었고 22. 시뮬레이션·예측용 디지털 트윈과 섞지 않았다. 검색 결과로 확인하지 못한 국내 ETRI·한국로봇산업진흥원 자료와 벤더 관제 규격(CRCS 등)은 출처로 넣지 않았다."
+    "limits": "fetch_mode mirror_only(web_fetch_available: false). raw.githubusercontent.com 공식 원문 8건(ref-228 VDA 5050 factsheet.schema, ref-229 IDTA 02020 README, ref-230 MassRobotics JSON, ref-231 CaSkMan README, ref-232 HSU IEEE 1872.2 OWL README, ref-233 SOMA README, ref-234 IDTA 02047 README, ref-235 SSN ssn-system.ttl)과 재사용 2건(ref-040, ref-105)은 원문을 열었다. 논문·ISO·KSSN 과 재사용 논문·표준 10건은 원문 미열람이라 신뢰도 상한 medium. 검색 19회/30, 신규 출처 15건/15(ref-228~ref-152, next_ref_id 기준)로 신규 출처 상한에 도달했다. 재사용 12건. 주의: 이전 트랙 실행 2026-09-25-06 이 VDA 5050 팩트시트·IDTA 02020·MassRobotics·CaSkMan 등을 ref-044~ref-056 으로 제안했으나 참고문헌 목록의 해당 id 는 다른 출처(GS1·VDA state.schema 등)이므로 이번에 새 id 로 부여했다. 퍼블리셔가 중복 여부를 확인해야 한다. 트랙 반영 제안 3건은 모두 다루었다. IDTA 02020 은 IDTA 원문(f9)으로 근거를 대체했고 SSN 은 System Capabilities 모듈 파일로 확인했다(f13). CORA·1872.2·KnowRob·RCO·서베이·KCI 는 기존 출처를 제목 수준으로 재인용했다. 한국 자료: KS B 7321-2(표제만), 기존 KCI 1건. oq-004 는 IEEE 1872 계열·AAS 능력 서브모델의 KS 부합 여부를 확인하지 못해 해결로 제안하지 않았다(국내 모듈 정보 모델 KS 존재만 부분 근거). 27. AI·학습·적응과 모델 운영 관련 finding(f25·f26·f31)은 교차 규칙에 따라 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 연결하도록 제안했다. 8. 실시간 세계 상태·데이터 일관성은 상태 보고·운용 능력 연결로만 다루었고 22. 시뮬레이션·예측용 디지털 트윈과 섞지 않았다. 검색 결과로 확인하지 못한 국내 ETRI·한국로봇산업진흥원 자료와 벤더 관제 규격(CRCS 등)은 출처로 넣지 않았다."
   }
 }

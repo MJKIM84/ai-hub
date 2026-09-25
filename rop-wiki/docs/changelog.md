@@ -28,6 +28,32 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-15 | 갱신 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 |
+| 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s7.md](topics/2026/2026-09-25-area05-s7.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,658자)을 옮겼다 |
+| 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s6.md](topics/2026/2026-09-25-area05-s6.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "6. 대표 접근법과 기술" 절(1,396자)을 옮겼다 |
+| 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s4.md](topics/2026/2026-09-25-area05-s4.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "4. 핵심 개념과 용어" 절(1,115자)을 옮겼다 |
+| 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s8.md](topics/2026/2026-09-25-area05-s8.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "8. 대표 연구와 자료" 절(1,010자)을 옮겼다 |
+| 2026-09-25-15 | 요약 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 5. 로봇 능력·작업 온톨로지: 영역 심화: 3~11절 신규 작성(능력·스킬 구분, VDA 5050 팩트시트·MassRobotics·Open-RMF 능력 선언, IDTA 02020·CaSkMan·SSN·IEEE 1872 계열·ISO 22166-201·KS B 7321-2, 적치 시나리오, 열린 질문 2건 신규·oq-004 연결), 트랙 반영 제안 3건 반영 |
+| 2026-09-25-15 | 생성 | [docs/references/ref-228.md](references/ref-228.md) | 참고문헌 ref-228 등록: VDA5050/VDA5050 — json_schemas/factsheet.schema |
+| 2026-09-25-15 | 생성 | [docs/references/ref-229.md](references/ref-229.md) | 참고문헌 ref-229 등록: IDTA 02020 Capability Description 1.0 — README (admin-shell-… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-230.md](references/ref-230.md) | 참고문헌 ref-230 등록: MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-231.md](references/ref-231.md) | 참고문헌 ref-231 등록: CaSkMan - An OWL ontology to model capabilities and skills i… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-232.md](references/ref-232.md) | 참고문헌 ref-232 등록: IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-233.md](references/ref-233.md) | 참고문헌 ref-233 등록: SOMA — README (Socio-physical Model of Activities) |
+| 2026-09-25-15 | 생성 | [docs/references/ref-234.md](references/ref-234.md) | 참고문헌 ref-234 등록: IDTA 02047 Technical Data for Automated Guided Vehicles 1.0… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-235.md](references/ref-235.md) | 참고문헌 ref-235 등록: ssn/integrated/ssn-system.ttl (SSN System Capabilities modul… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-236.md](references/ref-236.md) | 참고문헌 ref-236 등록: Semantic Feasibility Reasoning for Heterogeneous Multi-Robot… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-237.md](references/ref-237.md) | 참고문헌 ref-237 등록: Ontology-based task allocation for heterogeneous resources i… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-238.md](references/ref-238.md) | 참고문헌 ref-238 등록: On the Use of Large Language Models to Generate Capability O… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-239.md](references/ref-239.md) | 참고문헌 ref-239 등록: Extracting Semantics: LLM-Guided Automatic Population of Rob… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-240.md](references/ref-240.md) | 참고문헌 ref-240 등록: ISO 22166-201:2024 - Robotics — Modularity for service robot… |
+| 2026-09-25-15 | 생성 | [docs/references/ref-138.md](references/ref-138.md) | 참고문헌 ref-138 등록: KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델 |
+| 2026-09-25-15 | 생성 | [docs/references/ref-152.md](references/ref-152.md) | 참고문헌 ref-152 등록: Task Allocation in Mobile Robot Fleets: A review |
+| 2026-09-25-15 | 생성 | [docs/glossary/skill.md](glossary/skill.md) | 용어집 항목 스킬 |
+| 2026-09-25-15 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 팩트시트 |
+| 2026-09-25-15 | 생성 | [docs/glossary/asset-administration-shell.md](glossary/asset-administration-shell.md) | 용어집 항목 자산관리셸 |
+| 2026-09-25-15 | 생성 | [docs/glossary/shacl.md](glossary/shacl.md) | 용어집 항목 형상 제약 언어 |
+| 2026-09-25-15 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-14 | 갱신 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 영역 심화: 3~11절 신규 작성(성과 지표 표준, 흐름 법칙·병목 탐지·프로세스 마이닝, 가상 시나리오, ROP 경계, 연결 7개 영역, 열린 질문 4건+기존 2건), task_state.json 은 기존 ref-111 재사용 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s8.md](topics/2026/2026-09-25-area04-s8.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "8. 대표 연구와 자료" 절(1,579자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s4.md](topics/2026/2026-09-25-area04-s4.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "4. 핵심 개념과 용어" 절(1,517자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |

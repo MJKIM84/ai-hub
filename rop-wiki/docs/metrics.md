@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
+| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 2 | 0 | 0 | 10 | 0 | 0 | 12 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -45,7 +45,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | seed | — | 2026-09-24 | 1 |
+| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | published | medium | 2026-09-25 | 2 |
 | [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | seed | — | 2026-09-24 | 1 |
 | [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | 2026-09-25 | 4 |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | seed | — | 2026-09-24 | 1 |
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 12회 중 최종 통과 12회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 12
-- 2차 검증 판정: 통과 12
+- 실행 13회 중 최종 통과 13회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 13
+- 2차 검증 판정: 통과 13
 
 ### 반려·보류 건수
 
@@ -110,27 +110,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 64 |
-| 오픈소스 문서 | 42 |
-| 표준 | 35 |
+| 논문 | 69 |
+| 오픈소스 문서 | 45 |
+| 표준 | 42 |
 | 정부·연구기관 | 7 |
 | 벤더 문서 | 4 |
 | 기사 | 3 |
 | 업계 보고서 | 2 |
 
-신뢰도: medium 120건, high 31건, low 6건
+신뢰도: medium 131건, high 35건, low 6건
 
 ### 물류 흐름 매트릭스 채움률
 
-- 23/42 칸 (55%) — [흐름 매트릭스](flow-matrix.md)
+- 27/42 칸 (64%) — [흐름 매트릭스](flow-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-24 | 1 | seed |
 | [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 2026-09-24 | 1 | seed |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 2026-09-24 | 1 | seed |
 | [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 2026-09-24 | 1 | seed |
 | [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 2026-09-24 | 1 | seed |
+| [11. 분산 시스템·통신·컴퓨팅 구조](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->

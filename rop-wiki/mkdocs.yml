@@ -157,6 +157,10 @@ nav:
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
       - 7. 화물·재고·자산 식별과 추적 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area07-s7.md
       - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
+      - 5. 로봇 능력·작업 온톨로지 — 대표 연구와 자료: topics/2026/2026-09-25-area05-s8.md
+      - 5. 로봇 능력·작업 온톨로지 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area05-s7.md
+      - 5. 로봇 능력·작업 온톨로지 — 대표 접근법과 기술: topics/2026/2026-09-25-area05-s6.md
+      - 5. 로봇 능력·작업 온톨로지 — 핵심 개념과 용어: topics/2026/2026-09-25-area05-s4.md
       - 4. 성과·경제성·프로세스 개선 — 대표 연구와 자료: topics/2026/2026-09-25-area04-s8.md
       - 4. 성과·경제성·프로세스 개선 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area04-s7.md
       - 4. 성과·경제성·프로세스 개선 — 대표 접근법과 기술: topics/2026/2026-09-25-area04-s6.md
@@ -206,6 +210,7 @@ nav:
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
+    - 스킬 (Skill): glossary/skill.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
@@ -214,6 +219,7 @@ nav:
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
+    - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
@@ -228,6 +234,7 @@ nav:
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
+    - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
   - 참고문헌:
     - references/index.md
     - ref-001 — SCOR Digital Standard: references/ref-001.md
@@ -379,6 +386,7 @@ nav:
     - ? 'ref-136 — Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector'
       : references/ref-136.md
     - ref-137 — 물류센터 관리시스템에 로봇 연동…"물류 자동화 새 표준 만든다": references/ref-137.md
+    - 'ref-138 — KS B 7321-2 로봇 — 서비스 로봇 모듈용 정보 모델 — 제2부: 소프트웨어 모듈용 정보 모델': references/ref-138.md
     - ? 'ref-139 — ISO 22400-2:2014 - Automation systems and integration — Key performance indicators (KPIs) for manufacturing operations management — Part 2: Definitions and descriptions'
       : references/ref-139.md
     - 'ref-140 — SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment': references/ref-140.md
@@ -394,6 +402,7 @@ nav:
     - 'ref-149 — Material Movement Analysis for Warehouse Business Process Improvement with Process Mining: A Case Study': references/ref-149.md
     - ref-150 — 오토스토어, 물류 자동화 시스템의 경제적 효과 연구 보고서 발표: references/ref-150.md
     - ref-151 — 화주기업과 물류기업의 공동 핵심성과지표 관리방법에 대한 연구: references/ref-151.md
+    - 'ref-152 — Task Allocation in Mobile Robot Fleets: A review': references/ref-152.md
     - ref-220 — IMDF from Floor Plan & CAD Conversion Services: references/ref-220.md
     - 'ref-221 — BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR': references/ref-221.md
     - ref-222 — Universal Fleet Control Software for AGVs & AMRs: references/ref-222.md
@@ -402,6 +411,19 @@ nav:
     - 'ref-225 — IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC': references/ref-225.md
     - ref-226 — BIM-건설로봇 통합 연구의 체계적 문헌고찰 (한국산학기술학회논문지 26(11), 218-225, DOI 10.5762/KAIS.2025.26.11.218): references/ref-226.md
     - ref-227 — MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본: references/ref-227.md
+    - ref-228 — VDA5050/VDA5050 — json_schemas/factsheet.schema: references/ref-228.md
+    - ref-229 — IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates): references/ref-229.md
+    - ref-230 — MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json: references/ref-230.md
+    - ref-231 — CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README): references/ref-231.md
+    - ref-232 — IndustrialStandard-ODP-IEEE1872-2 — README (IEEE 1872.2 AuR ontology OWL implementation): references/ref-232.md
+    - ref-233 — SOMA — README (Socio-physical Model of Activities): references/ref-233.md
+    - ref-234 — IDTA 02047 Technical Data for Automated Guided Vehicles 1.0 — README (admin-shell-io/submodel-templates): references/ref-234.md
+    - ref-235 — ssn/integrated/ssn-system.ttl (SSN System Capabilities module): references/ref-235.md
+    - ref-236 — Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation: references/ref-236.md
+    - ref-237 — Ontology-based task allocation for heterogeneous resources in Line-less Mobile Assembly Systems: references/ref-237.md
+    - ref-238 — On the Use of Large Language Models to Generate Capability Ontologies: references/ref-238.md
+    - 'ref-239 — Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF': references/ref-239.md
+    - 'ref-240 — ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules': references/ref-240.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md
