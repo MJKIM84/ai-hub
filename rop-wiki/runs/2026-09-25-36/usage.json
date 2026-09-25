@@ -1,0 +1,44 @@
+{
+  "calls": [
+    {
+      "step": "research",
+      "role": "researcher",
+      "attempt": 1,
+      "input_tokens": 38,
+      "cache_creation_input_tokens": 367280,
+      "cache_read_input_tokens": 7769585,
+      "output_tokens": 39237,
+      "cost_usd": 5.681,
+      "seconds": 435.1,
+      "num_turns": 27,
+      "models": [
+        "claude-opus-5-5",
+        "claude-haiku-4-5-20251001"
+      ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 12,
+      "cache_creation_input_tokens": 390872,
+      "cache_read_input_tokens": 2346787,
+      "output_tokens": 21576,
+      "cost_usd": 4.3221,
+      "seconds": 230.3,
+      "num_turns": 23,
+      "models": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-5-5"
+      ]
+    }
+  ],
+  "total": {
+    "input_tokens": 50,
+    "cache_creation_input_tokens": 758152,
+    "cache_read_input_tokens": 10116372,
+    "output_tokens": 60813,
+    "cost_usd": 10.0031,
+    "calls": 2
+  }
+}
