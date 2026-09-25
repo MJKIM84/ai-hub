@@ -28,6 +28,23 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-04 답함(3절 {#q4-04} 신설: 지도 판 식별·배포 규칙은 사실, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 추정), 후속 질문 q4-15·q5-08, q4-14 폐기로 2절 표에서 제외, 상태 줄 답한 질문 4건, 6절 막힌 질문에 q4-15 추가, 7절 목록에 23·25 추가, 4·5·8·9절 갱신. 머리 줄 수정 때문에 전체 페이지로 보냄 |
+| 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.1 → v1.2: 평면도 '버전' 속성에 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모 추가(f7·f9). 층별 지도 '판 식별자(후보)'는 반영하지 않고 6절 지도 버전 항목 근거 보강, 정합 절차 초안에 판 교체 시 재검증 단계 추가. H1 버전 표기를 (v1.2)로 맞추려고 전체 페이지로 보냄 |
+| 2026-09-25-78 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '도면·지도 판 관리와 재검증' 소절 신설(q4-04 요약, 정합 절차 초안 7단계 추가, 종합은 추정) |
+| 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 스키마 초안 현재 버전 v1.2 로 갱신, 실행 2026-09-25-78(q4-04) 요약 단락 추가. 상태 줄(현재 단계 4, 마지막 트랙 실행 2026-09-25)은 바뀌지 않음 |
+| 2026-09-25-78 | 요약 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | 건축 도면 자동 인식 단계 4: q4-04 답함(지도 판 식별·배포 규칙과 도면 개정 관리는 사실, 판 대응표·재검증 범위·배포 순서는 추정), 공간 그래프 스키마 초안 v1.1 → v1.2, 후속 질문 q4-15·q5-08, q4-14 중복 폐기 |
+| 2026-09-25-78 | 생성 | [docs/references/ref-687.md](references/ref-687.md) | 참고문헌 ref-687 등록: IfcDiff - IfcOpenShell documentation (src/ifcopenshell-pytho… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-688.md](references/ref-688.md) | 참고문헌 ref-688 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/BuildingMa… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-689.md](references/ref-689.md) | 참고문헌 ref-689 등록: Information management according to BS EN ISO 19650 Guidance… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-690.md](references/ref-690.md) | 참고문헌 ref-690 등록: Container Information States ISO 19650: WIP, Shared, Publish… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-691.md](references/ref-691.md) | 참고문헌 ref-691 등록: ISO 19650 기반의 한국형 공통데이터환경(CDE) 개발을 위한 CDE 워크플로우와 정보컨테이너 체계 수… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-692.md](references/ref-692.md) | 참고문헌 ref-692 등록: A Parallel IFC Normalization Algorithm for Incremental Stora… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-693.md](references/ref-693.md) | 참고문헌 ref-693 등록: Version control for asynchronous BIM collaboration: Model me… |
+| 2026-09-25-78 | 생성 | [docs/references/ref-694.md](references/ref-694.md) | 참고문헌 ref-694 등록: Real-time Robot Map Management for Mobile Fleets (NODE.maps) |
+| 2026-09-25-78 | 생성 | [docs/glossary/common-data-environment.md](glossary/common-data-environment.md) | 용어집 항목 공통 데이터 환경 |
+| 2026-09-25-78 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 소제목 {#q3-04} 신설, 변경 유형별 조작 표·도식, 출하 시나리오), 2절 질문 목록 갱신과 q3-15 추가, 4절 결론 추가, 후속 질문 3건, 6절 완료 조건 미충족·전환 아니오(q3-05~q3-15), 7절 반영 제안, 8절 각주 12건 추가, 9절 이력 행 추가. 2차 수정: 전문으로 보내 H1 아래 단계 상태 줄을 답한 질문 4건·열린 질문 10건으로 갱신, 전환 줄 막힌 질문 범위를 q3-05~q3-15 로 고침 |
 | 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.7 → v0.8: 지시 개념에 속성 '변경 유형'·'원 지시 참조', 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동' 추가, 두 개념 초안 → 확정; 6절에 q3-04 답 연결과 경계 규칙·보상 작업 승인 주체 질문 추가. 2차 수정: 전문으로 보내 H1 을 '(v0.8)' 로 고쳐 프런트매터·JSON 버전과 맞춤 |
 | 2026-09-25-77 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '지시 변경 반영' 소절 신설(q3-04, 실행 2026-09-25-77): 단계 3 시작 질문 4개가 모두 답해졌음과 다른 아이디어와의 연결은 여전히 구조 언급 수준(완료 조건 미충족)임을 명시, 새 각주 10건(2차 수정 대상 아님, 변경 없음) |
