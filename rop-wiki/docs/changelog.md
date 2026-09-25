@@ -47,6 +47,30 @@ version: 1
 | 2026-09-25-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-17 | 갱신 | [docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 가운데 브리프 근거가 있는 것(평면도 인식·데이터셋·traffic-editor·경로 지도 요건·9절 경계)만 반영 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s7.md](topics/2026/2026-09-25-area06-s7.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: GS1 GLN 행을 [사실] 식별 문장과 [추정] 대응 문장으로 나눔 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s6.md](topics/2026/2026-09-25-area06-s6.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "6. 대표 접근법과 기술" 절(1,863자)을 옮겼다. 형식 수정: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 위치 기준 경로로 고침 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s8.md](topics/2026/2026-09-25-area06-s8.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "8. 대표 연구와 자료" 절(1,701자)을 옮겼다 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s4.md](topics/2026/2026-09-25-area06-s4.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "4. 핵심 개념과 용어" 절(1,382자)을 옮겼다 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s10.md](topics/2026/2026-09-25-area06-s10.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,143자)을 옮겼다. 형식 수정: 세부영역 링크 11건을 주제 페이지 위치 기준 경로(../../categories/…)로 고침 |
+| 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s3.md](topics/2026/2026-09-25-area06-s3.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "3. 왜 중요한가" 절을 옮겼다. 2차 수정: MassRobotics 평면 기준 부재 문장에 '(스키마 파일 기준, 부재 확정 아님)' 한정 추가 |
+| 2026-09-25-17 | 요약 | [docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 6. 지도·공간·위치 모델: 영역 심화: 3~11절 신규 작성(좌표계 정렬·지도 판·위치 신뢰도·도면–현장 차이·평면도 인식), 트랙 반영 제안 가운데 브리프 근거가 있는 것만 반영 |
+| 2026-09-25-17 | 생성 | [docs/references/ref-154.md](references/ref-154.md) | 참고문헌 ref-154 등록: rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json |
+| 2026-09-25-17 | 생성 | [docs/references/ref-153.md](references/ref-153.md) | 참고문헌 ref-153 등록: Fleet Adapter Tutorial - Programming Multiple Robots with RO… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-155.md](references/ref-155.md) | 참고문헌 ref-155 등록: REP 105 -- Coordinate Frames for Mobile Platforms |
+| 2026-09-25-17 | 생성 | [docs/references/ref-156.md](references/ref-156.md) | 참고문헌 ref-156 등록: IFC 4.3 documentation — IfcSpace (IFC4.3.x-development) |
+| 2026-09-25-17 | 생성 | [docs/references/ref-157.md](references/ref-157.md) | 참고문헌 ref-157 등록: IndoorGML-SWG — README and OGC IndoorGML 2.0 Part 2a – XML E… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-158.md](references/ref-158.md) | 참고문헌 ref-158 등록: ISO 19164:2024 - Geographic information — Indoor feature mod… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-159.md](references/ref-159.md) | 참고문헌 ref-159 등록: ISO 21423 - Robotics — Industrial mobile robots — Communicat… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-160.md](references/ref-160.md) | 참고문헌 ref-160 등록: Lifelong 3D Mapping Framework for Hand-held & Robot-mounted… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-161.md](references/ref-161.md) | 참고문헌 ref-161 등록: Quantifying mobile robot localization safety for an EKF-base… |
+| 2026-09-25-17 | 생성 | [docs/references/ref-162.md](references/ref-162.md) | 참고문헌 ref-162 등록: Identifying a physical location - GLN |
+| 2026-09-25-17 | 생성 | [docs/references/ref-163.md](references/ref-163.md) | 참고문헌 ref-163 등록: 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 |
+| 2026-09-25-17 | 갱신 | [docs/glossary/indoorgml.md](glossary/indoorgml.md) | 용어집 항목 IndoorGML |
+| 2026-09-25-17 | 갱신 | [docs/glossary/ifc.md](glossary/ifc.md) | 용어집 항목 산업 기초 클래스 |
+| 2026-09-25-17 | 갱신 | [docs/glossary/layout-interchange-format.md](glossary/layout-interchange-format.md) | 용어집 항목 레이아웃 교환 형식 |
+| 2026-09-25-17 | 생성 | [docs/glossary/map-alignment.md](glossary/map-alignment.md) | 용어집 항목 지도 정합 |
+| 2026-09-25-17 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-04·q1-05 답함, q1-03 부분 답을 원문 근거로 교체, q1-02 의 IDTA 02020 표기·VDA 5050 3.0.0 오류 등급 보강, 후속 질문 3건, 완료 조건 미충족, 상태 줄 갱신. 2차: 4절 출처 표기 정정, ref-242 → ref-229, 기존 참고문헌 각주 줄을 색인 문자열로 통일 |
 | 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.1 → v0.2: 개념 오류 수정(f5), 개념 스킬 인터페이스 추가(f19·f20·f21), 관계 2건 추가(f19·f20, f31), 거부 2건은 6절 질문, H1·도입문 버전 갱신. 2차: ref-242 → ref-229, ref-231 각주 줄을 색인 문자열로 통일 |
 | 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | VDA 5050·MassRobotics·OPC UA Robotics·AAS·Open-RMF 행을 원문 근거로 보강, 후보 밖 3행(IDTA 02047, SkiROS2, CaSkMan) 추가, 빠진 정보 요약 갱신, 상태 줄 갱신. 2차: ref-242 → ref-229, ref-230·ref-231 각주 줄을 색인 문자열로 통일 |

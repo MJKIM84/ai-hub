@@ -3,15 +3,15 @@ title: "산업 기초 클래스 (Industry Foundation Classes (IFC))"
 type: glossary
 term_ko: 산업 기초 클래스
 term_en: Industry Foundation Classes (IFC)
-definition: IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식이다.
+definition: buildingSMART 의 BIM 데이터 스키마로, IFC 4.3 은 건물 안에서 특정 기능을 제공하는 경계 지어진 면적·체적을 IfcSpace 로 정의하고 건물 층(IfcBuildingStorey)에 집합 관계로 연결한다.
 related_areas: [6, 28]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-085, ref-086]
-version: 1
+sources: [ref-085, ref-086, ref-156]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 산업 기초 클래스
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-IfcSpace·IfcDoor 같은 클래스로 건물 요소를 담는 BIM 교환 형식이다. [추정][^ref-085][^ref-086]
+buildingSMART 의 BIM 데이터 스키마로, IFC 4.3 은 건물 안에서 특정 기능을 제공하는 경계 지어진 면적·체적을 IfcSpace 로 정의하고 건물 층(IfcBuildingStorey)에 집합 관계로 연결한다. [추정][^ref-156]
 
 ## 설명
 
-BIM에서 로봇용 위상·거리 지도나 하이퍼그래프를 만드는 연구가 IFC를 입력·교환 형식으로 쓴다. 표준 구조는 발행 기관 자료로 확인하지 않았다.
+IfcSpace 는 공간 바닥 높이(ElevationWithFlooring) 같은 속성을 둔다(IFC 4.3 개발 브랜치 원본 기준).
 
 ## 관련 영역
 
@@ -39,7 +39,6 @@ BIM에서 로봇용 위상·거리 지도나 하이퍼그래프를 만드는 연
 
 ## 출처
 
-[^ref-085]: Braga, R. G., Tahir, M. O., Karimi, S., Dah-Achinanon, U., Iordanova, I., & St-Onge, D., Intuitive BIM-aided robotic navigation and assets localization with semantic user interfaces, 2025-03-26, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1548684/full, 접근일 2026-09-25 (원문 미열람)
-[^ref-086]: Palacz, W., Ślusarczyk, G., Strug, B., & Grabska, E., Indoor Robot Navigation Using Graph Models Based on BIM/IFC, 2019, https://www.researchgate.net/publication/333410520_Indoor_Robot_Navigation_Using_Graph_Models_Based_on_BIMIFC, 접근일 2026-09-25 (원문 미열람)
 
 - 참고문헌 페이지: [ref-085](../references/ref-085.md), [ref-086](../references/ref-086.md)
+[^ref-156]: buildingSMART International, IFC 4.3 documentation — IfcSpace (IFC4.3.x-development), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md, 접근일 2026-09-25

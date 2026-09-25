@@ -5,12 +5,12 @@
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
 | update | docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md | draft | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 가운데 브리프 근거가 있는 것(평면도 인식·데이터셋·traffic-editor·경로 지도 요건·9절 경계)만 반영 |
-| create | docs/topics/2026/2026-09-25-area06-s7.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절(2,037자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area06-s7.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: GS1 GLN 행을 [사실] 식별 문장과 [추정] 대응 문장으로 나눔 |
 | create | docs/topics/2026/2026-09-25-area06-s6.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "6. 대표 접근법과 기술" 절(1,863자)을 옮겼다. 형식 수정: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 위치 기준 경로로 고침 |
 | create | docs/topics/2026/2026-09-25-area06-s8.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "8. 대표 연구와 자료" 절(1,701자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area06-s4.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "4. 핵심 개념과 용어" 절(1,382자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area06-s10.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,143자)을 옮겼다. 형식 수정: 세부영역 링크 11건을 주제 페이지 위치 기준 경로(../../categories/…)로 고침 |
-| create | docs/topics/2026/2026-09-25-area06-s3.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "3. 왜 중요한가" 절(912자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area06-s3.md | draft | 자동 분리: 6. 지도·공간·위치 모델 의 "3. 왜 중요한가" 절을 옮겼다. 2차 수정: MassRobotics 평면 기준 부재 문장에 '(스키마 파일 기준, 부재 확정 아님)' 한정 추가 |
 
 ## 변경 이력·색인
 
@@ -25,7 +25,7 @@
 |---|---|---|---|---|---|
 | update | IndoorGML | IndoorGML | 실내 공간을 셀 공간(CellSpace)과 그 경계, 공간 연결을 나타내는 노드·엣지의 쌍대 그래프, 의미별 주제 레이어로 표현하는 OGC 실내 공간 정보 표준이다. | 6, 28 | ref-158 |
 | update | 산업 기초 클래스 | Industry Foundation Classes (IFC) | buildingSMART 의 BIM 데이터 스키마로, IFC 4.3 은 건물 안에서 특정 기능을 제공하는 경계 지어진 면적·체적을 IfcSpace 로 정의하고 건물 층(IfcBuildingStorey)에 집합 관계로 연결한다. | 6, 28 | ref-157 |
-| new | 레이아웃 교환 형식 | Layout Interchange Format (LIF) | 무인운반차 통합사가 노드·간선·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 넘기기 위해 VDMA 가 정한 교환 형식이다. | 6, 9, 28 | ref-160, ref-031 |
+| new | 레이아웃 교환 형식 | Layout Interchange Format (LIF) | 무인운반차 통합사가 노드·간선·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 넘기기 위해 VDMA 가 정한 교환 형식이다. | 6, 9, 28 | ref-046, ref-031 |
 | new | 지도 정합 | Map Alignment | 서로 다른 로봇·도면의 지도 좌표계를 대응점으로 구한 회전·축척·이동 변환으로 공통 좌표계에 맞추는 일이다. | 6, 9, 21 | ref-154, ref-105, ref-079 |
 
 ## 참고문헌 갱신
@@ -45,7 +45,7 @@
 | ref-157 | buildingSMART International | IFC 4.3 documentation — IfcSpace (IFC4.3.x-development) | 표준 | high | https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md |
 | ref-158 | OGC IndoorGML SWG (opengeospatial/IndoorGML-SWG GitHub) | IndoorGML-SWG — README and OGC IndoorGML 2.0 Part 2a – XML Encoding (26-042, Candidate SWG Draft) | 표준 | medium | https://github.com/opengeospatial/IndoorGML-SWG |
 | ref-159 | ISO | ISO 19164:2024 - Geographic information — Indoor feature model | 표준 | medium | https://www.iso.org/standard/83153.html |
-| ref-160 | VDMA (Intralogistics-2X-LIF GitHub) | Layout-Interchange-Format — README (LIF – Layout Interchange Format, Version 1.0.0) | 표준 | medium | https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format |
+| ref-046 | VDMA (Intralogistics-2X-LIF GitHub) | Layout-Interchange-Format — README (LIF – Layout Interchange Format, Version 1.0.0) | 표준 | medium | https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format |
 | ref-161 | ISO | ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability | 표준 | medium | https://www.iso.org/standard/86749.html |
 | ref-162 | Prakhya, S. M., Yang, L., & Liu, Z. | Lifelong 3D Mapping Framework for Hand-held & Robot-mounted LiDAR Mapping Systems | 논문 | medium | https://arxiv.org/abs/2501.18110 |
 | ref-163 | Abdul Hafez, O., Joerger, M., & Spenko, M. | Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach | 논문 | medium | https://journals.sagepub.com/doi/10.1177/02783649241287797 |
@@ -88,7 +88,7 @@
 
 | 이름 | 종류 | 기관 | 관련 영역 | 참고문헌 | URL |
 |---|---|---|---|---|---|
-| LIF (Layout Interchange Format) 1.0.0 | 표준 | VDMA | 6, 9, 28 | ref-160 | https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format |
+| LIF (Layout Interchange Format) 1.0.0 | 표준 | VDMA | 6, 9, 28 | ref-046 | https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format |
 | ISO 21423 Industrial mobile robots — Communications and interoperability | 표준 | ISO | 6, 9, 28 | ref-161 | https://www.iso.org/standard/86749.html |
 | IFC 4.3 (IfcSpace) | 표준 | buildingSMART International | 6, 28 | ref-157 | https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md |
 | OGC IndoorGML 2.0 | 표준 | OGC | 6, 28 | ref-158 | https://github.com/opengeospatial/IndoorGML-SWG |
@@ -125,3 +125,5 @@
 - 9절 — f10·f19·f21·f23·f24 의 SLAM·위치추정·지도 작성 기술은 '연계 대상:'으로 표 오른쪽 열과 표 아래 한 단락에만 짧게 두었고, ROP 쪽 경계(f32)는 모두 [추정]으로 표기했다.
 - 분량 초과 자동 분리: 6. 지도·공간·위치 모델 본문 11,606자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,396자
 - 형식 검증 재작성: 분리 주제 페이지 2026-09-25-area06-s10.md 의 세부영역 링크 11건과 2026-09-25-area06-s6.md 의 27. AI·학습·적응과 모델 운영 링크 1건이 세부영역 페이지 기준 상대 경로로 남아 깨졌으므로, 주제 페이지 위치(docs/topics/2026/) 기준 ../../categories/<대분류 slug>/<파일>.md 경로로 고쳤다. 주장·태그·각주는 바꾸지 않았다.
+- 2차: GS1 GLN 행 분리 — docs/topics/2026/2026-09-25-area06-s7.md 3절 표의 GS1 GLN 행을 '물리적 위치와 하위 위치를 식별하는 업무 위치 식별자다. [사실][^ref-164]'와 '지도 위 장소와 대응시킬 업무 쪽 키가 될 것으로 보인다. [추정][^ref-164][^ref-031]' 두 문장으로 나눠 f18 추론을 [추정]으로 되돌렸다(ref-031 각주 정의는 이미 그 페이지에 있다).
+- 2차: MassRobotics 부재 한정 통일 — docs/topics/2026/2026-09-25-area06-s3.md 3절의 '평면 기준의 원점·좌표계를 정의하는 메시지는 스키마에 없다' 뒤에 '(스키마 파일 기준, 부재 확정 아님)'을 붙여 7절 표의 표기와 맞췄다.

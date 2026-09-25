@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 2 | 0 | 0 | 10 | 0 | 0 | 12 |
+| [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | 4 | 0 | 0 | 0 | 0 | 0 | 4 |
@@ -46,7 +46,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | published | medium | 2026-09-25 | 2 |
-| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | seed | — | 2026-09-24 | 1 |
+| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | published | medium | 2026-09-25 | 2 |
 | [7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | published | medium | 2026-09-25 | 4 |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | seed | — | 2026-09-24 | 1 |
 
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 16회 중 최종 통과 16회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 16
-- 2차 검증 판정: 통과 16
+- 실행 17회 중 최종 통과 17회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 17
+- 2차 검증 판정: 통과 17
 
 ### 반려·보류 건수
 
@@ -110,15 +110,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 74 |
-| 표준 | 51 |
-| 오픈소스 문서 | 48 |
+| 논문 | 77 |
+| 표준 | 56 |
+| 오픈소스 문서 | 51 |
 | 정부·연구기관 | 7 |
 | 벤더 문서 | 5 |
 | 기사 | 3 |
 | 업계 보고서 | 2 |
 
-신뢰도: medium 144건, high 39건, low 7건
+신뢰도: medium 151건, high 43건, low 7건
 
 ### 물류 흐름 매트릭스 채움률
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 2026-09-24 | 1 | seed |
 | [8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 2026-09-24 | 1 | seed |
 | [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 2026-09-24 | 1 | seed |
 | [10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 2026-09-24 | 1 | seed |
 | [11. 분산 시스템·통신·컴퓨팅 구조](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 2026-09-24 | 1 | seed |
+| [12. 명령·작업 실행의 신뢰성](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 2026-09-24 | 1 | seed |
 <!-- auto:metrics:end -->

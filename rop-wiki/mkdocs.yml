@@ -157,6 +157,12 @@ nav:
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
       - 7. 화물·재고·자산 식별과 추적 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area07-s7.md
       - 7. 화물·재고·자산 식별과 추적 — 대표 접근법과 기술: topics/2026/2026-09-25-area07-s6.md
+      - 6. 지도·공간·위치 모델 — 대표 연구와 자료: topics/2026/2026-09-25-area06-s8.md
+      - 6. 지도·공간·위치 모델 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area06-s7.md
+      - 6. 지도·공간·위치 모델 — 대표 접근법과 기술: topics/2026/2026-09-25-area06-s6.md
+      - 6. 지도·공간·위치 모델 — 핵심 개념과 용어: topics/2026/2026-09-25-area06-s4.md
+      - 6. 지도·공간·위치 모델 — 왜 중요한가: topics/2026/2026-09-25-area06-s3.md
+      - 6. 지도·공간·위치 모델 — 다른 연구영역과의 연결: topics/2026/2026-09-25-area06-s10.md
       - 5. 로봇 능력·작업 온톨로지 — 대표 연구와 자료: topics/2026/2026-09-25-area05-s8.md
       - 5. 로봇 능력·작업 온톨로지 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area05-s7.md
       - 5. 로봇 능력·작업 온톨로지 — 대표 접근법과 기술: topics/2026/2026-09-25-area05-s6.md
@@ -227,6 +233,7 @@ nav:
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 점유 격자 지도 (Occupancy Grid Map (OGM)): glossary/occupancy-grid-map.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
+    - 지도 정합 (Map Alignment): glossary/map-alignment.md
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
@@ -407,6 +414,17 @@ nav:
     - ref-150 — 오토스토어, 물류 자동화 시스템의 경제적 효과 연구 보고서 발표: references/ref-150.md
     - ref-151 — 화주기업과 물류기업의 공동 핵심성과지표 관리방법에 대한 연구: references/ref-151.md
     - 'ref-152 — Task Allocation in Mobile Robot Fleets: A review': references/ref-152.md
+    - ref-153 — Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2: references/ref-153.md
+    - ref-154 — rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json: references/ref-154.md
+    - ref-155 — REP 105 -- Coordinate Frames for Mobile Platforms: references/ref-155.md
+    - ref-156 — IFC 4.3 documentation — IfcSpace (IFC4.3.x-development): references/ref-156.md
+    - ref-157 — IndoorGML-SWG — README and OGC IndoorGML 2.0 Part 2a – XML Encoding (26-042, Candidate SWG Draft): references/ref-157.md
+    - ref-158 — ISO 19164:2024 - Geographic information — Indoor feature model: references/ref-158.md
+    - ref-159 — ISO 21423 - Robotics — Industrial mobile robots — Communications and interoperability: references/ref-159.md
+    - ref-160 — Lifelong 3D Mapping Framework for Hand-held & Robot-mounted LiDAR Mapping Systems: references/ref-160.md
+    - 'ref-161 — Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach': references/ref-161.md
+    - ref-162 — Identifying a physical location - GLN: references/ref-162.md
+    - ref-163 — 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템: references/ref-163.md
     - ref-212 — vdma-lif — schema/lif-schema.json (JSON parsers and models for the VDMA LIF, VDMA 공식 산출물이 아닌 제3자 스키마): references/ref-212.md
     - ref-213 — IFC 4.3 — IfcTransportElement (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-213.md
     - ref-214 — IFC 4.3 — IfcOutletTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-214.md

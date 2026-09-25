@@ -3,15 +3,15 @@ title: "IndoorGML (IndoorGML)"
 type: glossary
 term_ko: IndoorGML
 term_en: IndoorGML
-definition: IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되는 실내 공간 정보 표준이다.
+definition: 실내 공간을 셀 공간(CellSpace)과 그 경계, 공간 연결을 나타내는 노드·엣지의 쌍대 그래프, 의미별 주제 레이어로 표현하는 OGC 실내 공간 정보 표준이다.
 related_areas: [6, 28]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-225]
-version: 1
+sources: [ref-157, ref-225]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › IndoorGML
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되는 실내 공간 정보 표준이다. [추정][^ref-225]
+실내 공간을 셀 공간(CellSpace)과 그 경계, 공간 연결을 나타내는 노드·엣지의 쌍대 그래프, 의미별 주제 레이어로 표현하는 OGC 실내 공간 정보 표준이다. [추정][^ref-157]
 
 ## 설명
 
-표준의 구조와 발행 기관 내용은 발행 기관 자료로 확인하지 않았다.
+IndoorGML 2.0 은 Part 1 개념 모델이 공개됐고 Part 2 인코딩은 작업 중이며, Part 2a XML 인코딩 초안은 레이어 간 연결(InterLayerConnection)까지 GML 3.2.1 로 인코딩한다(2026-09-25 확인).
 
 ## 관련 영역
 
@@ -39,6 +39,6 @@ IFC 데이터에서 자동 생성하는 도구(ifc2indoorgml)의 대상이 되�
 
 ## 출처
 
-[^ref-225]: Diakité, A. A., Díaz-Vilariño, L., Biljecki, F., Isikdag, Ü., Simmons, S., Li, K., & Zlatanova, S., IFC2INDOORGML: An Open-Source Tool for Generating IndoorGML from IFC, 2022, https://isprs-archives.copernicus.org/articles/XLIII-B4-2022/295/2022/, 접근일 2026-09-25 (원문 미열람)
 
 - 참고문헌 페이지: [ref-225](../references/ref-225.md)
+[^ref-157]: OGC IndoorGML SWG (opengeospatial/IndoorGML-SWG GitHub), IndoorGML-SWG — README and OGC IndoorGML 2.0 Part 2a – XML Encoding (26-042, Candidate SWG Draft), 미확인, https://github.com/opengeospatial/IndoorGML-SWG, 접근일 2026-09-25

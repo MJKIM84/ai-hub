@@ -3,15 +3,15 @@ title: "레이아웃 교환 형식 (Layout Interchange Format (LIF))"
 type: glossary
 term_ko: 레이아웃 교환 형식
 term_en: Layout Interchange Format (LIF)
-definition: VDMA가 정한, 무인운반 차량 통합사업자가 노드·엣지·스테이션으로 된 주행 레이아웃을 상위 관제 시스템에 넘기기 위한 교환 형식이다.
-related_areas: [28, 6, 9, 16]
+definition: 무인운반차 통합사가 노드·간선·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 넘기기 위해 VDMA 가 정한 교환 형식이다.
+related_areas: [6, 9, 16, 28]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-046, ref-031]
-version: 1
+sources: [ref-031, ref-046]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 레이아웃 교환 형식
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-VDMA가 정한, 무인운반 차량 통합사업자가 노드·엣지·스테이션으로 된 주행 레이아웃을 상위 관제 시스템에 넘기기 위한 교환 형식이다. [추정][^ref-046][^ref-031]
+무인운반차 통합사가 노드·간선·스테이션으로 이루어진 주행 레이아웃을 제3자 중앙 관제 시스템에 넘기기 위해 VDMA 가 정한 교환 형식이다. [추정][^ref-046][^ref-031]
 
 ## 설명
 
-VDA 5050 3.0.0 명세는 도입 단계에서 LIF로 경로를 관제에 가져올 수 있다고 적는다. 판·발행일은 출처마다 달라 열린 질문으로 두었다. 스테이션 필드 구조는 제3자 스키마로만 확인했다.
+README 기준 판은 1.0.0(2023-09)이며 VDA 5050 인터페이스 정의의 영향을 받았다. VDA 5050 3.0.0 명세는 LIF 를 VDMA 2024-03 판으로 인용한다.
 
 ## 관련 영역
 
