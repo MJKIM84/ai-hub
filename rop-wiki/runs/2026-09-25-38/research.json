@@ -95,7 +95,7 @@
       "claim": "C. 연결·실행 기반의 10. 설비·건물 시스템 연동·11. 분산 시스템·통신·컴퓨팅 구조 ↔ A. 업무·공급망 설계의 3. 처리능력·거점·설비 계획: 국내에서 아파트 단지로 확장한 로봇 친화형 환경 인증 모델은 건축·시설 설계, 네트워크·시스템, 건축 운영 관리, 로봇 지원 분야의 28개 항목(총점 176점)으로 구성되어, 건물 설비·통신 기반이 로봇 운영 조건으로 평가되고 있다.",
       "tag": "사실",
       "source_ids": [
-        "ref-802"
+        "ref-409"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -379,7 +379,7 @@
       "claim": "C. 연결·실행 기반의 10. 설비·건물 시스템 연동 ↔ F. 도입·검증·유지관리의 22. 시뮬레이션·예측용 디지털 트윈·23. 시험·형식 검증·벤치마크: Open-RMF 문서는 traffic-editor 로 주석한 지도에서 문·승강기(여러 플릿 요청을 조율하는 lift_supervisor 포함)·워크셀(TeleportDispenser·TeleportIngestor)을 포함한 시뮬레이션 세계를 생성해 배치 전에 시험하는 흐름을 제시한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-799"
+        "ref-406"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -393,8 +393,8 @@
       "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동·12. 명령·작업 실행의 신뢰성 ↔ F. 도입·검증·유지관리의 23. 시험·형식 검증·벤치마크: 공개 오픈소스 가운데 VDA 5050 3.0.0 로봇 플릿 시뮬레이터(vda5050-sim)는 주문 수명주기·사전 정의 동작·교통 제어 의미를 명세와 대조하는 적합성 시험 묶음과 고장 주입을 두고, MQTT 기록 진단 도구(vda5050-lab)는 반복된 주문·갱신 id, 기반·호라이즌 연결, 재연결 뒤 연결 상태, 취소·동작 수명주기 불일치를 진단한다고 README 에 적는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-800",
-        "ref-801"
+        "ref-407",
+        "ref-408"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -440,7 +440,7 @@
       "tag": "사실",
       "source_ids": [
         "ref-009",
-        "ref-798"
+        "ref-405"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -454,7 +454,7 @@
       "claim": "C. 연결·실행 기반의 10. 설비·건물 시스템 연동 ↔ G. 안전·보안·지능·거버넌스의 26. 사이버보안·접근권한·개인정보: 로봇 관제가 문·승강기 어댑터에 요청을 보내는 구조에서는 어느 관제 구성요소가 어떤 설비 명령을 낼 수 있는지를 인클레이브·권한 파일 같은 접근통제 단위로 정해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-798",
+        "ref-405",
         "ref-283",
         "ref-284"
       ],
@@ -488,8 +488,8 @@
       "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ G. 안전·보안·지능·거버넌스의 28. 표준·상호운용성·다사업자 거버넌스: 확인한 VDA 5050 적합성 시험 도구가 제3자 오픈소스뿐이라, 어느 시험 결과를 연동 승인 기준으로 삼고 누가 연동 오류를 판정할지가 거버넌스 과제로 넘어갈 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-800",
-        "ref-801",
+        "ref-407",
+        "ref-408",
         "ref-031"
       ],
       "cross_checked": false,
@@ -1074,7 +1074,7 @@
       "fetch_url": null
     },
     {
-      "id": "ref-798",
+      "id": "ref-405",
       "org": "Open Robotics",
       "title": "Security - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -1089,7 +1089,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-799",
+      "id": "ref-406",
       "org": "Open Robotics",
       "title": "Simulation - Programming Multiple Robots with ROS 2",
       "published": null,
@@ -1104,7 +1104,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-800",
+      "id": "ref-407",
       "org": "gpue (GitHub)",
       "title": "vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS)",
       "published": null,
@@ -1119,7 +1119,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-801",
+      "id": "ref-408",
       "org": "ekusiadadus (GitHub)",
       "title": "vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces)",
       "published": null,
@@ -1134,7 +1134,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-802",
+      "id": "ref-409",
       "org": "한국 학술지 게재 논문(KCI, 저자 미확인)",
       "title": "아파트 단지의 로봇 친화형 환경 인증 모델 개발",
       "published": null,
@@ -1183,7 +1183,7 @@
       "모든 finding 교차 확인 없음: 연결마다 단일 발행 주체이거나 서로 다른 표준의 사례",
       "f24·f30 VDA 공식 적합성 시험 절차의 유무는 검색 1회로 확인하지 못함(부재 확정 아님)",
       "f31 대한승강기협회 단체표준 원문·발행일 미확인(기사만)",
-      "ref-802 저자·발행일 미확인, 원문 미열람",
+      "ref-409 저자·발행일 미확인, 원문 미열람",
       "f5 로봇 친화형 인증 모델은 공동주택 대상이며 물류센터 적용 여부 미확인"
     ],
     "scope_violations": [
@@ -1194,6 +1194,6 @@
       "queries": 2,
       "sources": 5
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-009·ref-364, 신규 ref-798·ref-799·ref-800·ref-801. 나머지 재사용 34건과 신규 ref-802 는 원문 미열람(신뢰도 상한 medium). 근거는 주로 게시된 9. 로봇·제조사 관제 연동 ~ 12. 명령·작업 실행의 신뢰성 페이지와 A. 업무·공급망 설계·B. 공통 정보·환경 모델 대분류 페이지의 검증된 주장·각주를 재사용했고(재인용 표시), F. 도입·검증·유지관리·G. 안전·보안·지능·거버넌스 쪽 보강에 신규 출처 5건(ref-798~ref-802, 예약 구간 안)을 더했다. 검색 2회/30(영어 1, 한국어 1), 신규 출처 5건/15. 교차 확인 0건. 연결 상대 D·E·F·G 대분류 세부영역이 대부분 seed 라 상대편 근거는 C. 연결·실행 기반 쪽 자료에 기댄다. 27. AI·학습·적응과 모델 운영과의 연결은 검증된 근거가 없어 finding 을 내지 않았다. 8. 실시간 세계 상태·데이터 일관성(현재 상태)과 22. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 섞지 않도록 f11·f12 는 8번에, f23 은 22·23번에 두었다. 정정 요청 없음. 새 열린 질문 2건, 해결 제안 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 재사용 ref-009·ref-364, 신규 ref-405·ref-406·ref-407·ref-408. 나머지 재사용 34건과 신규 ref-409 는 원문 미열람(신뢰도 상한 medium). 근거는 주로 게시된 9. 로봇·제조사 관제 연동 ~ 12. 명령·작업 실행의 신뢰성 페이지와 A. 업무·공급망 설계·B. 공통 정보·환경 모델 대분류 페이지의 검증된 주장·각주를 재사용했고(재인용 표시), F. 도입·검증·유지관리·G. 안전·보안·지능·거버넌스 쪽 보강에 신규 출처 5건(ref-405~ref-409, 예약 구간 안)을 더했다. 검색 2회/30(영어 1, 한국어 1), 신규 출처 5건/15. 교차 확인 0건. 연결 상대 D·E·F·G 대분류 세부영역이 대부분 seed 라 상대편 근거는 C. 연결·실행 기반 쪽 자료에 기댄다. 27. AI·학습·적응과 모델 운영과의 연결은 검증된 근거가 없어 finding 을 내지 않았다. 8. 실시간 세계 상태·데이터 일관성(현재 상태)과 22. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 섞지 않도록 f11·f12 는 8번에, f23 은 22·23번에 두었다. 정정 요청 없음. 새 열린 질문 2건, 해결 제안 없음."
   }
 }

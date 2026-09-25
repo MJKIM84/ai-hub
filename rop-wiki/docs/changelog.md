@@ -28,6 +28,15 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-38 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 아직 다루지 않은 연결), 참고 자료 절에 각주 정의 41건 덧붙임 |
+| 2026-09-25-38 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | C. 연결·실행 기반: 다른 대분류와의 연결 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 27. AI·학습·적응과 모델 운영은 근거 없음), 조건부 승인 수정 15건 이행 |
+| 2026-09-25-38 | 생성 | [docs/references/ref-405.md](references/ref-405.md) | 참고문헌 ref-405 등록: Security - Programming Multiple Robots with ROS 2 |
+| 2026-09-25-38 | 생성 | [docs/references/ref-406.md](references/ref-406.md) | 참고문헌 ref-406 등록: Simulation - Programming Multiple Robots with ROS 2 |
+| 2026-09-25-38 | 생성 | [docs/references/ref-407.md](references/ref-407.md) | 참고문헌 ref-407 등록: vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) r… |
+| 2026-09-25-38 | 생성 | [docs/references/ref-408.md](references/ref-408.md) | 참고문헌 ref-408 등록: vda5050-lab — README (Diagnose VDA 5050 order, reconnect, an… |
+| 2026-09-25-38 | 생성 | [docs/references/ref-409.md](references/ref-409.md) | 참고문헌 ref-409 등록: 아파트 단지의 로봇 친화형 환경 인증 모델 개발 (지적과 국토정보 53(1), 83-105) |
+| 2026-09-25-38 | 생성 | [docs/glossary/enclave.md](glossary/enclave.md) | 용어집 항목 인클레이브 |
+| 2026-09-25-38 | 생성 | [docs/glossary/conformance-test.md](glossary/conformance-test.md) | 용어집 항목 적합성 시험 |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-08 답함(3절 {#q1-08} 신설), q1-09 부분 답 소제목 추가, 4·5·6·7·8·9절 갱신, 상태 줄 열린 질문 1건·답한 질문 8건, 후속 질문 2건(q4-13·q2-06) |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | MassRobotics 행에 화물 최대값 형식·보고 전용 구조·지원 작업·부착 장비 부재 보강, IDTA 02047 행에 특수 능력·ECLASS 식별자 사용 범위 메모, 빠진 정보 요약·출처·이력 갱신 |
 | 2026-09-25-35 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 범위 능력의 의미 식별자 미확인·특수 능력 자유 텍스트(IDTA 02047)와 MassRobotics 화물 최대 중량·충전기 유형 보강, ref-245 각주의 원문 미열람 표기 제거 |
