@@ -132,6 +132,55 @@ class TestPublishHelpers(unittest.TestCase):
         self.assertEqual(m["ref-044"], "ref-048")      # id 충돌 → 다음 빈 번호
         self.assertNotIn("ref-047", m)
 
+    def test_merge_three_clean_and_conflict(self):
+        import publish
+        base = "# t\n\n## 1. a\n\n가\n\n## 2. b\n\n나\n\n## 3. c\n\n다\n"
+        ours = base.replace("가\n", "가 (이번 실행)\n")
+        theirs = base.replace("다\n", "다 (다른 실행)\n")
+        ok, merged = publish.merge_three(ours, base, theirs)
+        self.assertTrue(ok)
+        self.assertIn("가 (이번 실행)", merged)
+        self.assertIn("다 (다른 실행)", merged)
+        ok2, merged2 = publish.merge_three(base.replace("나\n", "나1\n"), base, base.replace("나\n", "나2\n"))
+        self.assertFalse(ok2)
+        self.assertIn("<<<<<<<", merged2)
+
+    def _transition(self, slug: str, from_stage: int, to_stage: int, stages: int):
+        """퍼블리셔 단계 전환(_transition_stage)을 임시 복사한 트랙 설정에 적용하고 결과 설정을 돌려준다."""
+        import yaml
+
+        import publish
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td) / f"{slug}.yaml"
+            tmp.write_text(paths.track_config(slug).read_text(encoding="utf-8"), encoding="utf-8")
+            pub = object.__new__(publish.Publisher)
+            pub.notes, changes = [], []
+            pub._changelog_item = lambda *a: changes.append(a)
+            orig = paths.track_config
+            paths.track_config = lambda s: tmp
+            try:
+                pub._transition_stage(slug, from_stage, to_stage, stages, "시험")
+            finally:
+                paths.track_config = orig
+            return yaml.safe_load(tmp.read_text(encoding="utf-8")), pub, changes
+
+    def test_stage_transition_advances_and_records(self):
+        cfg, pub, changes = self._transition("nl-task-chatbot", 1, 2, 5)
+        self.assertEqual(cfg["current_stage"], 2)
+        self.assertEqual(cfg["stage_status"][1], "완료")
+        self.assertEqual(cfg["stage_status"][2], "진행 중")
+        self.assertIs(cfg["stage_completion"][1], True)
+        self.assertNotEqual(cfg["status"], "done")
+        self.assertTrue(pub.stage_transition_done)
+        self.assertTrue(any("단계 1 → 단계 2" in n for n in pub.notes), pub.notes)
+        self.assertEqual(len(changes), 1)
+
+    def test_stage_transition_last_stage_marks_done(self):
+        cfg, _, _ = self._transition("floorplan-recognition", 5, 6, 5)
+        self.assertEqual(cfg["current_stage"], 5)
+        self.assertEqual(cfg["status"], "done")
+        self.assertEqual(cfg["stage_status"][5], "완료")
+
 
 class TestSelection(unittest.TestCase):
     def test_weighted_track_pick(self):

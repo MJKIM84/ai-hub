@@ -1058,6 +1058,15 @@ def save_output(role: str, stage: str | None, data: dict, rd: Path, run_id: str,
     return out
 
 
+def record_base(rd: Path) -> None:
+    """스토리텔러가 입력으로 읽는 위키 상태의 기준 커밋을 runs/<id>/base.json 에 남긴다. 배치로 여러 실행이 동시에 돌 때 퍼블리셔가
+    이 기준과 현재 페이지를 비교해 다른 실행이 먼저 바꾼 페이지를 3-way 병합한다(publish.py reconcile_concurrent_changes)."""
+    p = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "HEAD"], capture_output=True, text=True)
+    head = (p.stdout or "").strip()
+    if p.returncode == 0 and head:
+        runs.write_json(rd / "base.json", {"head": head, "recorded": time.strftime("%Y-%m-%d %H:%M:%S")})
+
+
 def cmd_run(args) -> int:
     settings = runs.load_settings()
     rd = runs.find_run_dir(args.run_id, settings)
@@ -1079,6 +1088,8 @@ def cmd_run(args) -> int:
     retry = int(args.retry or 0)
     context = build_context(args.role, target_json, settings, probe_json, stage, retry, track_cfg)
     format_fix = int(getattr(args, "format_fix", 0) or 0)
+    if args.role == "storyteller" and not args.dry_run:
+        record_base(rd)
     inputs = build_inputs(args.role, args.run_id, target_json, settings, stage, retry, track_cfg, rd, format_fix)
     extra: dict = {}
     if format_fix and args.role == "storyteller":

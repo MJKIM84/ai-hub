@@ -50,6 +50,7 @@ import shlex
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from datetime import date
 from pathlib import Path
@@ -374,6 +375,77 @@ class Publisher:
         u = re.sub(r"^https?://", "", u, flags=re.I)
         u = re.sub(r"^www\.", "", u, flags=re.I)
         return u.rstrip("/").lower()
+
+    def reconcile_concurrent_changes(self) -> list[str]:
+        """배치로 여러 실행이 동시에 돌면(run_batch.py) 이 실행의 스토리텔러가 읽은 뒤 다른 실행이 먼저 게시해 같은 페이지를 바꿨을 수 있다.
+        runs/<id>/base.json 의 기준 커밋(스토리텔러 호출 시각의 HEAD)과 현재 docs 페이지를 비교해 바뀐 페이지는 git merge-file 로 3-way
+        병합한다. 병합이 깨끗하면 병합본을 쓰고, 충돌이면 이 실행의 대상이 아닌 페이지는 이 실행의 변경을 빼고(현재 페이지 유지) 메모를 남기며,
+        대상 페이지면 PublishError(재시도로 새 기준에서 다시 쓴다). 같은 경로를 동시에 새로 만든 경우도 같은 원칙이다. 반환: 처리 메모 목록."""
+        base = runs.read_json(self.rd / "base.json", None) or {}
+        head = str(base.get("head") or "")
+        if not head:
+            return []
+        repo = runs.repo_root(self.settings)
+        prefix = ROOT.resolve().relative_to(repo).as_posix()
+        prefix = "" if prefix == "." else prefix + "/"
+        primary = set()
+        t = self.target.get("target") or {}
+        if t.get("area_no"):
+            primary.add(paths.docs_rel(paths.area_repo_path(int(t["area_no"]))))
+        if t.get("category_letter"):
+            primary.add(paths.docs_rel(paths.category_repo_path(str(t["category_letter"]))))
+        slug = (self.track or {}).get("slug") if isinstance(self.track, dict) else None
+        notes: list[str] = []
+        keep: list[dict] = []
+        changed = False
+        for pg in self.pages.get("pages", []):
+            rel = self.page_rel(pg)
+            src, dst = self.page_src(pg), self.page_dst(pg)
+            if not src.is_file():
+                keep.append(pg)
+                continue
+            shown = subprocess.run(["git", "-C", str(repo), "show", f"{head}:{prefix}docs/{rel}"], capture_output=True, text=True)
+            base_text = shown.stdout if shown.returncode == 0 else None
+            cur_text = dst.read_text(encoding="utf-8") if dst.is_file() else None
+            if cur_text == base_text:
+                keep.append(pg)
+                continue
+            ours = src.read_text(encoding="utf-8")
+            is_primary = rel in primary or (slug and rel.startswith(f"tracks/{slug}/"))
+            if cur_text is None:   # 기준 뒤에 지워진 페이지(드묾): 이 실행의 판을 그대로 둔다
+                keep.append(pg)
+                continue
+            if ours == cur_text:
+                notes.append(f"{rel}: 다른 실행이 같은 내용으로 먼저 게시 — 이 실행의 변경 없음으로 처리")
+                changed = True
+                continue
+            if base_text is None:   # 둘 다 새로 만듦
+                if is_primary:
+                    raise PublishError(f"동시 실행 충돌: {rel} 을 다른 실행이 먼저 만들었다(대상 페이지) — 다시 실행해 새 기준에서 쓴다")
+                notes.append(f"{rel}: 다른 실행이 먼저 같은 경로로 만들어 이 실행의 판을 반영하지 않았다(기존 페이지 유지)")
+                changed = True
+                continue
+            clean, merged = merge_three(ours, base_text, cur_text)
+            if clean:
+                src.write_text(merged, encoding="utf-8")
+                if pg.get("action") == "create":
+                    pg["action"] = "update"
+                notes.append(f"{rel}: 기준 뒤 다른 실행이 바꾼 내용과 3-way 병합(충돌 없음)")
+                changed = True
+                keep.append(pg)
+            elif is_primary:
+                raise PublishError(f"동시 실행 충돌: {rel} 을 다른 실행이 기준({head[:8]}) 뒤에 바꿔 병합 충돌 — 다시 실행해 새 기준에서 쓴다")
+            else:
+                notes.append(f"{rel}: 다른 실행의 변경과 병합 충돌 — 이 실행의 변경을 반영하지 않았다(현재 페이지 유지)")
+                changed = True
+        if changed:
+            self.pages["pages"] = keep
+            runs.write_json(self.rd / "pages.json", self.pages)
+            self.pages = runs.read_json(self.rd / "pages.json", None)
+        for n in notes:
+            self.notes.append(f"동시 실행 조정: {n}")
+            self.info(f"동시 실행 조정: {n}")
+        return notes
 
     def remap_reference_ids(self) -> dict:
         """병렬로 조사한 실행들이 같은 '다음 참고문헌 id'를 받았을 수 있다(배치 실행, run_batch.py). 반영 직전에 이번 실행의 새 출처 id 가
@@ -1843,6 +1915,7 @@ class Publisher:
                 self.info("--check-only: 1단계(스키마·판정 확인)와 pages.json 링크 필드 앵커 대조까지 확인했다(반영하지 않음)")
                 return 0
             if not (self.args.dry_run or self.args.check_only):
+                self.reconcile_concurrent_changes()
                 self.remap_reference_ids()
             self.step2_frontmatter()
             self.step3_protect()
@@ -1967,6 +2040,18 @@ def daily_log_page_cell(log_rel: str, repo_path: str, title: str) -> str:
     if (paths.ROOT / repo_path).exists():
         return f"[{_esc(title)}]({paths.rel_link(log_rel, paths.docs_rel(repo_path))})"
     return f"{_esc(title)} (`{repo_path}`, 미반영)"
+
+
+def merge_three(ours: str, base: str, theirs: str) -> tuple[bool, str]:
+    """git merge-file 로 3-way 병합. (충돌 없음 여부, 병합본). 충돌이면 병합본에 충돌 표시가 들어 있으므로 쓰지 않는다."""
+    with tempfile.TemporaryDirectory() as td:
+        fo, fb, ft = (Path(td) / n for n in ("ours", "base", "theirs"))
+        fo.write_text(ours, encoding="utf-8")
+        fb.write_text(base, encoding="utf-8")
+        ft.write_text(theirs, encoding="utf-8")
+        mp = subprocess.run(["git", "merge-file", "-p", "-L", "이번 실행", "-L", "기준", "-L", "현재", str(fo), str(fb), str(ft)],
+                            capture_output=True, text=True)
+    return mp.returncode == 0, mp.stdout
 
 
 def compute_ref_mapping(existing: dict, run_refs: dict) -> dict:
