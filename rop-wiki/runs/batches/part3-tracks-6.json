@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-6",
   "date": "2026-09-25",
-  "updated": "2026-09-25 14:01:39",
+  "updated": "2026-09-25 14:25:59",
   "concurrency": 2,
   "items": [
     {
@@ -139,14 +139,19 @@
         "group": "t2",
         "label": "트랙2 자연어 작업 챗봇 #15 q4-04"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-85",
           "started": "2026-09-25 14:01:39",
-          "agents_exit": null,
-          "publish_exit": null,
-          "continued": false
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": false,
+          "agents_done": "2026-09-25 14:20:07",
+          "published_at": "2026-09-25 14:25:57",
+          "cost_usd": 22.0548,
+          "duration_sec": 1292.4,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-85"
@@ -164,9 +169,17 @@
         "group": "t2",
         "label": "트랙2 자연어 작업 챗봇 #18 q5-03"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-86",
+          "started": "2026-09-25 14:25:59",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
+        }
+      ],
+      "run_id": "2026-09-25-86"
     }
   ]
 }
