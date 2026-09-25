@@ -30,6 +30,26 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
 | 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
+| 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설), 후속 질문 q3-10·q5-05, 4·5·6·8·9절 갱신, 7절 반영 제안 추가. H1 아래 단계 상태 줄(답한 질문 2건 → 3건)은 H2 절 밖이라 패치로 보낼 수 없으므로 코드에서 맞춰야 한다 |
+| 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.7 → v0.8: 문에 자동 구동 여부·장애인 접근 가능 속성(f8), 계단에 단 높이·디딤판 길이·단 수 속성(f9) 추가(두 행 확정 유지). 개념 '통과 요구 조건'은 6절 질문으로. H1 의 (v0.7) 표기는 H2 절 밖이라 패치로 보낼 수 없어 프런트매터 ontology_version 0.8 에 맞춰 코드가 (v0.8)로 바꿔야 한다 |
+| 2026-09-25-65 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절: 핵심 구성 요소에 '능력 대조' 소절 신설, '다른 아이디어와의 연결' 작성(아이디어 1·13. 작업 배정 — MRTA 연결, 추정), 새 각주 정의 추가 |
+| 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절 살아있는 산출물 링크: 스키마 초안 v0.8, 아이디어 페이지 5절 능력 대조·다른 아이디어와의 연결, 백로그 후속 질문 수와 답한 질문(q3-03) 갱신. 상태 줄은 단계·날짜 변동이 없어 그대로 |
+| 2026-09-25-65 | 요약 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | 건축 도면 자동 인식 단계 3: q3-03 답함(요구–제공 능력 매칭·설비 연동 선택 조건·로봇별 통행 가능 부분 그래프, 추정), 공간 그래프 스키마 초안 v0.7 → v0.8, 후속 질문 q3-10·q5-05 |
+| 2026-09-25-65 | 생성 | [docs/references/ref-569.md](references/ref-569.md) | 참고문헌 ref-569 등록: rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg |
+| 2026-09-25-65 | 생성 | [docs/references/ref-570.md](references/ref-570.md) | 참고문헌 ref-570 등록: nav2_route — README (Nav2 Route Server) |
+| 2026-09-25-65 | 생성 | [docs/references/ref-571.md](references/ref-571.md) | 참고문헌 ref-571 등록: Generation of skill-specific maps from graph world models fo… |
+| 2026-09-25-65 | 생성 | [docs/references/ref-572.md](references/ref-572.md) | 참고문헌 ref-572 등록: Semantic Path Planning for Heterogeneous Robots from Buildin… |
+| 2026-09-25-65 | 생성 | [docs/references/ref-573.md](references/ref-573.md) | 참고문헌 ref-573 등록: Pset_DoorCommon - IFC 4.3.2 Documentation |
+| 2026-09-25-65 | 생성 | [docs/references/ref-574.md](references/ref-574.md) | 참고문헌 ref-574 등록: Pset_StairCommon - IFC4.3.2.0 Documentation |
+| 2026-09-25-65 | 생성 | [docs/references/ref-575.md](references/ref-575.md) | 참고문헌 ref-575 등록: On realizing autonomous transport services in multi story bu… |
+| 2026-09-25-65 | 생성 | [docs/references/ref-576.md](references/ref-576.md) | 참고문헌 ref-576 등록: CHORAL: Traversal-Aware Planning for Safe and Efficient Hete… |
+| 2026-09-25-65 | 생성 | [docs/references/ref-577.md](references/ref-577.md) | 참고문헌 ref-577 등록: Ontology-Guided Reasoning for Affordance-Based Explanations… |
+| 2026-09-25-65 | 생성 | [docs/references/ref-578.md](references/ref-578.md) | 참고문헌 ref-578 등록: 로봇 친화형 건축물 인증 지표 개발: 초점집단면접(FGI)과 분석적 계층화 과정(AHP)의 활용 |
+| 2026-09-25-65 | 생성 | [docs/glossary/traversability.md](glossary/traversability.md) | 용어집 항목 통과 가능성 |
+| 2026-09-25-65 | 생성 | [docs/glossary/lane-closure.md](glossary/lane-closure.md) | 용어집 항목 차선 폐쇄 |
+| 2026-09-25-65 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-63 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed → draft: 3~11절 첫 작성(표준 책임 분담, 정지·재개·비상 대응, STPA, SafeGate 트랙 반영), 페이지 상태 자동 영역 추가, 각주 11건(3·6·7·8·11절 상세는 주제 페이지로 분리). 2차: 9절 마지막 문장 어미를 추정형으로 수정 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s6.md](topics/2026/2026-09-25-area25-s6.md) | 자동 분리: 25. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '운영 조율 수단' 문장을 [사실]·[추정] 두 문장으로 나눴다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s7.md](topics/2026/2026-09-25-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: VDA 5050 행의 관계 칸을 [사실]·[추정]으로 나눴다 |

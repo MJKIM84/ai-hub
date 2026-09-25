@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-536, ref-640, ref-414, ref-413, ref-641, ref-642, ref-643, ref-105, ref-348, ref-419, ref-228, ref-645, ref-646, ref-647, ref-648, ref-649, ref-650, ref-229, ref-038, ref-653, ref-654, ref-655, ref-315, ref-314, ref-658, ref-283]
+sources: [ref-084, ref-070, ref-463, ref-460, ref-441, ref-079, ref-225, ref-456, ref-459, ref-464, ref-462, ref-461, ref-434, ref-458, ref-457, ref-077, ref-031, ref-080, ref-212, ref-268, ref-347, ref-536, ref-640, ref-414, ref-413, ref-641, ref-642, ref-643, ref-105, ref-348, ref-419, ref-228, ref-569, ref-570, ref-571, ref-572, ref-573, ref-574, ref-229, ref-038, ref-575, ref-576, ref-577, ref-315, ref-314, ref-578, ref-283]
 last_run: 2026-09-25
 version: 4
 ---
@@ -170,7 +170,7 @@ flowchart TB
 
 ### q3-03 로봇 능력과 공간 요소의 통과 조건 대조 {#q3-03}
 
-확인한 자료를 이 위키가 묶으면, "이 로봇이 이 경로를 갈 수 있는가"는 공간 요소가 요구하는 통과 조건(문 폭·자동 구동 여부, 계단 단 높이, 승강기 칸 면적·통과 폭, 차선 높이 제한)을 로봇의 제공 능력 속성(폭·높이, 오를 수 있는 최대 단 높이, 문 조작·승강기 이용 가능 여부)과 맞추는 [능력 매칭](../../glossary/capability-matchmaking.md), 곧 [요구 능력·제공 능력](../../glossary/required-and-provided-capability.md)의 대조로 판단할 수 있을 것으로 보인다. [추정][^ref-649][^ref-650][^ref-461][^ref-348][^ref-229][^ref-228][^ref-413] 로봇 경로의 통과 가능성을 이렇게 정의한 단일 출처는 확인하지 못했고, 아래 소절의 확인 사실을 이 위키가 종합한 것이다.
+확인한 자료를 이 위키가 묶으면, "이 로봇이 이 경로를 갈 수 있는가"는 공간 요소가 요구하는 통과 조건(문 폭·자동 구동 여부, 계단 단 높이, 승강기 칸 면적·통과 폭, 차선 높이 제한)을 로봇의 제공 능력 속성(폭·높이, 오를 수 있는 최대 단 높이, 문 조작·승강기 이용 가능 여부)과 맞추는 [능력 매칭](../../glossary/capability-matchmaking.md), 곧 [요구 능력·제공 능력](../../glossary/required-and-provided-capability.md)의 대조로 판단할 수 있을 것으로 보인다. [추정][^ref-573][^ref-574][^ref-461][^ref-348][^ref-229][^ref-228][^ref-413] 로봇 경로의 통과 가능성을 이렇게 정의한 단일 출처는 확인하지 못했고, 아래 소절의 확인 사실을 이 위키가 종합한 것이다.
 
 #### 관제 인터페이스가 로봇별 통행 가능 여부를 표현하는 방식 (2026-09-25 확인)
 
@@ -178,14 +178,14 @@ flowchart TB
 - q3-02 에서 본 관제 보유 통행 제한에 더해, VDA 5050 3.0.0 명세는 도입 단계에서 경로를 로봇 크기 비율에 따라 특정 로봇 그룹으로 제한할 수 있다고 적고, 관제의 경로 계산이 로봇마다 크기·기동성 같은 물리적 특성의 한계를 고려한다고 규정한다. [사실][^ref-031] 같은 명세에서 로봇이 수행할 수 없는 동작(최대 들어올림 높이 초과 등)이 든 주문은 INVALID_ORDER_ACTION 으로 거부된다. [사실][^ref-031]
 - VDA 5050 주문 스키마의 엣지 통과 조건(로봇 최대 높이·적재장치 최소 높이·최대 속도 등)과 팩트시트의 물리 파라미터(높이·폭·길이·속도)는 같은 단위(미터·m/s)의 값이어서, 관제 쪽에서 둘을 비교해 로봇별 통행 가능 엣지를 거를 수 있을 것으로 보인다. [추정][^ref-413][^ref-228] 두 값을 비교하는 규칙은 명세에 없으며 이 비교는 이 위키의 추론이다.
 - Open-RMF 플릿 어댑터 템플릿 설정(config.yaml, 발행일 미확인)은 속도·가속 한계, 차체 반경(footprint)·근접 반경(vicinity), 후진 가능 여부, 배터리, 수행 가능 작업 유형, 동작 목록을 두지만 문·승강기 이용 능력 필드는 두지 않는다. [사실][^ref-105] 플릿마다 자기 주행 그래프로 허용 동작을 전달하는 구조는 q3-02 에 정리했다.
-- Open-RMF rmf_traffic 의 Graph.hpp 파일에 정의된 차선 속성에는 로봇별·플릿별 차선 필터나 차선 폐쇄 상태가 없고, 실행 중 차선 폐쇄·개방은 플릿 이름과 열 차선·닫을 차선 번호 목록을 담는 별도 메시지(LaneRequest)로 요청한다. 두 파일은 같은 발행 주체(Open Robotics)의 자료라 독립 교차 확인이 아니다. [사실][^ref-536][^ref-645]
+- Open-RMF rmf_traffic 의 Graph.hpp 파일에 정의된 차선 속성에는 로봇별·플릿별 차선 필터나 차선 폐쇄 상태가 없고, 실행 중 차선 폐쇄·개방은 플릿 이름과 열 차선·닫을 차선 번호 목록을 담는 별도 메시지(LaneRequest)로 요청한다. 두 파일은 같은 발행 주체(Open Robotics)의 자료라 독립 교차 확인이 아니다. [사실][^ref-536][^ref-569]
 - Open-RMF 에서 문은 traffic-editor 로 주행 그래프에 이름과 함께 그려야 하고, 문 여닫기는 로봇이 아니라 문 어댑터가 DoorRequest 를 받아 진행 중인 로봇 작업을 방해하지 않을 때만 문 노드에 지시하며, 문 노드는 DoorState 를 낸다. [사실][^ref-283]
-- Nav2 경로 서버(Route Server)는 GeoJSON 경로 그래프의 노드·방향 엣지에 임의 메타데이터를 달고, 벌점·의미 분류 채점기와 외부 요청 값에 따라 막힌 엣지를 닫고 다시 여는 동적 엣지 채점기로 엣지 비용을 계산하며, 엣지 진입·이탈이나 노드 도달 때 문 열기 같은 동작을 실행하게 한다. [사실][^ref-646]
+- Nav2 경로 서버(Route Server)는 GeoJSON 경로 그래프의 노드·방향 엣지에 임의 메타데이터를 달고, 벌점·의미 분류 채점기와 외부 요청 값에 따라 막힌 엣지를 닫고 다시 여는 동적 엣지 채점기로 엣지 비용을 계산하며, 엣지 진입·이탈이나 노드 도달 때 문 열기 같은 동작을 실행하게 한다. [사실][^ref-570]
 
 #### 공간 요소의 통과 조건 속성
 
-- IFC 4.3.2 의 문 공통 속성 세트(Pset_DoorCommon)는 자동 구동 장치가 있는지(HasDrive)와 지역 건축 기준상 장애인 접근 가능 여부(HandicapAccessible)를 속성으로 두며, IfcDoor 자체는 전체 폭(OverallWidth)을 갖는다(발행일 미확인, 2026-09-25 확인, 속성 정의는 공식 문서 검색 요약 기준). [사실][^ref-649][^ref-419]
-- IFC 4.3.2 의 계단 공통 속성 세트(Pset_StairCommon)는 단 높이(RiserHeight), 디딤판 길이(TreadLength), 단 수(NumberOfRiser)를 속성으로 둔다(공식 문서 검색 요약 기준). [사실][^ref-650] 이 속성들로 계단의 통과 난이도를 수치로 담을 수 있을 것으로 보인다. [추정][^ref-650]
+- IFC 4.3.2 의 문 공통 속성 세트(Pset_DoorCommon)는 자동 구동 장치가 있는지(HasDrive)와 지역 건축 기준상 장애인 접근 가능 여부(HandicapAccessible)를 속성으로 두며, IfcDoor 자체는 전체 폭(OverallWidth)을 갖는다(발행일 미확인, 2026-09-25 확인, 속성 정의는 공식 문서 검색 요약 기준). [사실][^ref-573][^ref-419]
+- IFC 4.3.2 의 계단 공통 속성 세트(Pset_StairCommon)는 단 높이(RiserHeight), 디딤판 길이(TreadLength), 단 수(NumberOfRiser)를 속성으로 둔다(공식 문서 검색 요약 기준). [사실][^ref-574] 이 속성들로 계단의 통과 난이도를 수치로 담을 수 있을 것으로 보인다. [추정][^ref-574]
 - 교통약자(사람)의 실내 길찾기를 위한 IndoorGML 확장 연구(2020)는 경사로에 경사, 엘리베이터에 면적·통과 폭 속성을 두고 이 값을 사전 정한 임계값으로 통과 가능·어려움·불가의 세 단계로 나눠 경로 계획에 썼으며, 이동 주체에 따라 경로가 크게 달라짐을 보였다. 이 연구의 대상은 로봇이 아니라 사람이다. [사실][^ref-348]
 
 #### 로봇 능력의 표현
@@ -196,19 +196,19 @@ flowchart TB
 
 #### 능력별 지도·경로를 만드는 연구
 
-- de Vos 외(2024-02)는 BIM 에서 건물 요소의 3D 형상과 의미(재질·요소 유형 등)를 뽑아 RDF 그래프 세계 모델에 저장하고, 요청한 로봇의 스킬에 맞춘 지도를 SPARQL 질의로 생성하는 방법을 제안했다(예: 유리가 아닌 요소만 골라 지도 생성). [사실][^ref-647]
-- Omer 외(RoboCup 2024 심포지엄 논문집, 2025)는 건물 디지털 트윈의 의미·거리 정보로 연결 그래프에 가중치를 주고 A* 로 경로를 구해, 주행 능력이 서로 다른 로봇마다 로봇별 지도·경로를 만드는 의미 기반 경로 계획을 제안했다. [사실][^ref-648]
-- 연계 대상: CHORAL(2026-01)은 의미 지도에서 플랫폼마다 통과 능력을 반영한 경로를 먼저 구하고 이를 이종 차량 경로 문제에 넣어 점검 작업 배정과 경로를 함께 계산하는 틀을 제안했다(점검 임무 대상, 환경 조건 미확인). [사실][^ref-654] 여기서는 능력별 경로를 배정에 넣는 구조의 사례로만 읽는다.
+- de Vos 외(2024-02)는 BIM 에서 건물 요소의 3D 형상과 의미(재질·요소 유형 등)를 뽑아 RDF 그래프 세계 모델에 저장하고, 요청한 로봇의 스킬에 맞춘 지도를 SPARQL 질의로 생성하는 방법을 제안했다(예: 유리가 아닌 요소만 골라 지도 생성). [사실][^ref-571]
+- Omer 외(RoboCup 2024 심포지엄 논문집, 2025)는 건물 디지털 트윈의 의미·거리 정보로 연결 그래프에 가중치를 주고 A* 로 경로를 구해, 주행 능력이 서로 다른 로봇마다 로봇별 지도·경로를 만드는 의미 기반 경로 계획을 제안했다. [사실][^ref-572]
+- 연계 대상: CHORAL(2026-01)은 의미 지도에서 플랫폼마다 통과 능력을 반영한 경로를 먼저 구하고 이를 이종 차량 경로 문제에 넣어 점검 작업 배정과 경로를 함께 계산하는 틀을 제안했다(점검 임무 대상, 환경 조건 미확인). [사실][^ref-576] 여기서는 능력별 경로를 배정에 넣는 구조의 사례로만 읽는다.
 
 #### 문·승강기 통과: 로봇 조작과 설비 연동
 
-- 연계 대상: Schulze 외(2025-02-25)는 7자유도 팔을 단 이동 로봇이 닫힌 문을 스스로 열고 사람용 인터페이스로 승강기를 조작해 층을 옮기는 운반 서비스를 요양 시설과 대학 건물에서 현장 시험했다. [사실][^ref-653] 팔로 문을 열고 버튼을 누르는 조작은 분류 원문 9장의 로봇 자체 지능·제어(파지·관절 제어) 쪽 연계 대상이다.
+- 연계 대상: Schulze 외(2025-02-25)는 7자유도 팔을 단 이동 로봇이 닫힌 문을 스스로 열고 사람용 인터페이스로 승강기를 조작해 층을 옮기는 운반 서비스를 요양 시설과 대학 건물에서 현장 시험했다. [사실][^ref-575] 팔로 문을 열고 버튼을 누르는 조작은 분류 원문 9장의 로봇 자체 지능·제어(파지·관절 제어) 쪽 연계 대상이다.
 - 국가기술표준원은 2021-11-11 로봇의 엘리베이터 탑승 안전 요구사항과 실내 배송 로봇에 관한 KS 제정을 알리며, 로봇이 건물 안을 이동하려면 속도 제어, 위험 상황의 보호 정지, 높낮이 차·틈새 극복, 추락·넘어짐 방지 기준이 필요하다고 밝혔고, 관련 표준으로 KS B 7317(이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법)이 등재되어 있다. [사실][^ref-315][^ref-314] 단차·틈새의 수치 기준은 미확인이며, 승강기 안전 제어 자체는 분류 원문 9장의 시설·설비 제어 쪽 연계 대상이다.
-- 국내 연구(지적과 국토정보 52(2), 2022)는 업무 시설을 대상으로 초점집단면접과 계층화 분석으로 로봇 친화형 건축물 인증 지표 23개 평가 항목의 상대 중요도를 정했으며, 요구사항을 운영 시설·시스템의 적정성과 건축·로봇 운영 시스템·네트워크의 적정성으로 나눴다(세부 항목 미확인). [사실][^ref-658]
+- 국내 연구(지적과 국토정보 52(2), 2022)는 업무 시설을 대상으로 초점집단면접과 계층화 분석으로 로봇 친화형 건축물 인증 지표 23개 평가 항목의 상대 중요도를 정했으며, 요구사항을 운영 시설·시스템의 적정성과 건축·로봇 운영 시스템·네트워크의 적정성으로 나눴다(세부 항목 미확인). [사실][^ref-578]
 
 #### 정적 능력 대조와 현재 상태
 
-- Halilovic 외(2026-06)는 주변 개체의 어포던스(affordance)와 그 상태, 정성적 공간 관계를 지역 어포던스 온톨로지로 표현하고 가상의 상태 변화를 평가해, 경로가 막힌 이유와 무엇이 바뀌면 계속 갈 수 있는지를 설명하는 방법을 제안했다. [사실][^ref-655]
+- Halilovic 외(2026-06)는 주변 개체의 어포던스(affordance)와 그 상태, 정성적 공간 관계를 지역 어포던스 온톨로지로 표현하고 가상의 상태 변화를 평가해, 경로가 막힌 이유와 무엇이 바뀌면 계속 갈 수 있는지를 설명하는 방법을 제안했다. [사실][^ref-577]
 
 #### 종합: 요구–제공 능력 매칭, 설비 연동 선택 조건, 로봇별 통행 가능 부분 그래프
 
@@ -216,14 +216,14 @@ flowchart TB
 
 | 공간 요소 | 공간 쪽 요구 조건(확인한 속성) | 대조할 로봇 제공 능력 | 근거 |
 |---|---|---|---|
-| 문 | 전체 폭, 자동 구동 여부 | 로봇 폭, 문 조작 가능 여부 또는 설비 연동 | [^ref-419][^ref-649][^ref-228] |
-| 계단 | 단 높이·디딤판 길이·단 수 | 오를 수 있는 최대 단 높이 | [^ref-650][^ref-461] |
+| 문 | 전체 폭, 자동 구동 여부 | 로봇 폭, 문 조작 가능 여부 또는 설비 연동 | [^ref-419][^ref-573][^ref-228] |
+| 계단 | 단 높이·디딤판 길이·단 수 | 오를 수 있는 최대 단 높이 | [^ref-574][^ref-461] |
 | 승강기 | 칸 면적·통과 폭(사람 대상 연구의 속성) | 로봇 폭·길이, 승강기 이용 가능 여부 또는 설비 연동 | [^ref-348][^ref-228][^ref-315] |
 | 주행 차선 | 로봇 최대 높이·최대 속도 | 로봇 높이·속도 | [^ref-413][^ref-228] |
 
-- 문·승강기 통과는 로봇 쪽 능력(팔로 문 열기·버튼 조작)으로도, 건물 쪽 연동(문 어댑터·자동 구동 문, 승강기 연동)으로도 충족될 수 있으므로, 능력 대조 규칙은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두어야 할 것으로 보이며, 로봇 쪽 조작 기술 자체는 연계 대상이다. [추정][^ref-283][^ref-649][^ref-653][^ref-315] 설비 연동은 [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)과 이어진다.
-- q3-02 에서 로봇별 통행 가능 여부를 플릿 중립의 기본 그래프와 분리해 두자고 정리한 것을, 이번 확인은 두 가지로 넓힌다. 확인한 관제 인터페이스에 계단·문·승강기 능력 필드가 없으므로 ROP 는 매뉴얼 등에서 얻은 로봇별 능력 속성을 따로 두고 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프를 파생해야 하며, 차선 폐쇄·문 상태 같은 현재 상태는 이와 분리한 별도 층으로 두어야 할 것으로 보인다. [추정][^ref-228][^ref-105][^ref-031][^ref-079][^ref-645][^ref-646] 현재 상태 층은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)의 몫이고, 능력 속성은 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)와 [매뉴얼 기반 로봇 기능 온톨로지](../manual-capability-ontology/index.md) 트랙과 이어진다.
-- q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’에 어느 로봇을 보낼 수 있는지는 그 구역 노드까지 승강기 엣지를 포함한 경로가 그 로봇의 통행 가능 부분 그래프 안에 있는지로 걸러 낸 뒤 작업 배정 후보로 넘기는 방식이 될 것으로 보이며, 능력별 경로를 먼저 구해 배정 문제에 넣는 연구가 이 구조의 예다. [추정][^ref-654][^ref-648][^ref-031] 배정 자체는 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md)에서 다룬다.
+- 문·승강기 통과는 로봇 쪽 능력(팔로 문 열기·버튼 조작)으로도, 건물 쪽 연동(문 어댑터·자동 구동 문, 승강기 연동)으로도 충족될 수 있으므로, 능력 대조 규칙은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두어야 할 것으로 보이며, 로봇 쪽 조작 기술 자체는 연계 대상이다. [추정][^ref-283][^ref-573][^ref-575][^ref-315] 설비 연동은 [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)과 이어진다.
+- q3-02 에서 로봇별 통행 가능 여부를 플릿 중립의 기본 그래프와 분리해 두자고 정리한 것을, 이번 확인은 두 가지로 넓힌다. 확인한 관제 인터페이스에 계단·문·승강기 능력 필드가 없으므로 ROP 는 매뉴얼 등에서 얻은 로봇별 능력 속성을 따로 두고 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프를 파생해야 하며, 차선 폐쇄·문 상태 같은 현재 상태는 이와 분리한 별도 층으로 두어야 할 것으로 보인다. [추정][^ref-228][^ref-105][^ref-031][^ref-079][^ref-569][^ref-570] 현재 상태 층은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)의 몫이고, 능력 속성은 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)와 [매뉴얼 기반 로봇 기능 온톨로지](../manual-capability-ontology/index.md) 트랙과 이어진다.
+- q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’에 어느 로봇을 보낼 수 있는지는 그 구역 노드까지 승강기 엣지를 포함한 경로가 그 로봇의 통행 가능 부분 그래프 안에 있는지로 걸러 낸 뒤 작업 배정 후보로 넘기는 방식이 될 것으로 보이며, 능력별 경로를 먼저 구해 배정 문제에 넣는 연구가 이 구조의 예다. [추정][^ref-576][^ref-572][^ref-031] 배정 자체는 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md)에서 다룬다.
 
 ```mermaid
 flowchart LR
@@ -250,11 +250,11 @@ flowchart LR
 - 업무 장소 이름과 공간 노드의 연결은 공간 그래프 생성 뒤 사람 확인에 두어야 할 것으로 보인다. [추정][^ref-084][^ref-079][^ref-462]
 - 공간 그래프는 구역 수준 노드와 차선 수준 경유점·차선을 서로 다른 층위로 두고 포함 관계로 잇는 구조일 때 배정·경로·자원 예약에 함께 쓰일 것으로 보인다. [추정][^ref-536][^ref-079][^ref-413][^ref-642]
 - 자원 예약 단위는 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. [추정][^ref-536][^ref-079][^ref-031]
-- 로봇별 통행 가능 여부는 플릿 중립의 기본 그래프와 분리해 두고(q3-02), 매뉴얼 등에서 얻은 로봇별 능력 속성으로 로봇별 통행 가능 부분 그래프를 파생하며 차선 폐쇄·문 상태 같은 현재 상태는 별도 층으로 두는 것이 맞아 보인다(q3-03). [추정][^ref-413][^ref-031][^ref-079][^ref-228][^ref-105][^ref-645]
+- 로봇별 통행 가능 여부는 플릿 중립의 기본 그래프와 분리해 두고(q3-02), 매뉴얼 등에서 얻은 로봇별 능력 속성으로 로봇별 통행 가능 부분 그래프를 파생하며 차선 폐쇄·문 상태 같은 현재 상태는 별도 층으로 두는 것이 맞아 보인다(q3-03). [추정][^ref-413][^ref-031][^ref-079][^ref-228][^ref-105][^ref-569]
 - 도면에서 얻은 차선 수준 그래프는 경로망 자동 생성·최적화의 입력 초안으로 두는 것이 맞아 보인다. [추정][^ref-641][^ref-268]
-- "이 로봇이 이 경로를 갈 수 있는가"는 공간 요소의 통과 조건과 로봇 제공 능력 속성을 맞추는 요구–제공 능력 매칭으로 판단할 수 있을 것으로 보인다. [추정][^ref-649][^ref-650][^ref-461][^ref-348][^ref-229][^ref-228][^ref-413]
-- 문·승강기 통과 조건은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두는 것이 맞아 보이며, 로봇 쪽 조작 기술은 연계 대상이다. [추정][^ref-283][^ref-649][^ref-653][^ref-315]
-- 배정 후보는 목적지까지의 경로가 로봇별 통행 가능 부분 그래프 안에 있는지로 먼저 거르는 방식이 될 것으로 보인다. [추정][^ref-654][^ref-648][^ref-031]
+- "이 로봇이 이 경로를 갈 수 있는가"는 공간 요소의 통과 조건과 로봇 제공 능력 속성을 맞추는 요구–제공 능력 매칭으로 판단할 수 있을 것으로 보인다. [추정][^ref-573][^ref-574][^ref-461][^ref-348][^ref-229][^ref-228][^ref-413]
+- 문·승강기 통과 조건은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두는 것이 맞아 보이며, 로봇 쪽 조작 기술은 연계 대상이다. [추정][^ref-283][^ref-573][^ref-575][^ref-315]
+- 배정 후보는 목적지까지의 경로가 로봇별 통행 가능 부분 그래프 안에 있는지로 먼저 거르는 방식이 될 것으로 보인다. [추정][^ref-576][^ref-572][^ref-031]
 - 공간 그래프 스키마 초안을 v0.6 → v0.7로 올렸다(실행 2026-09-25-58): 경유점·주행 차선 추가·확정, 공용 자원에 상호 배제 여부 속성 추가와 확정. 점유 요소 속성은 추정 근거라, 경유점·주행 차선과 공간 노드의 관계는 관계 변경 제안이 없어 반영하지 않았다. 실행 2026-09-25-54(q3-01)에서는 변경이 없었다.
 - 공간 그래프 스키마 초안을 v0.7 → v0.8로 올렸다(실행 2026-09-25-65): 문에 자동 구동 여부·장애인 접근 가능 속성, 계단에 단 높이·디딤판 길이·단 수 속성을 더했다. 개념 '통과 요구 조건'은 검증이 승인하지 않아 스키마 초안 6절 질문으로 두었다.
 
@@ -267,7 +267,7 @@ flowchart LR
 - 사람 대상 연구(교통약자 IndoorGML 확장)의 임계값 판정과 제조 공정용 능력 기술(IDTA 02020)을 로봇 공간 통과로 옮길 수 있는지는 확인되지 않았다.
 - 충전 능력은 이번 실행에서 새 근거를 찾지 못했고, 매뉴얼 기반 로봇 기능 온톨로지 트랙의 능력 개념과의 이름 대응도 확인하지 못했다.
 - 충전소·스테이션 같은 운영 요소를 자동으로 채우는 근거는 확인한 흐름에서 찾지 못했다.
-- FloorplanVLM·Sketch2BIM·ArchCAD-400K의 성능·비용 수치는 저자 보고 단일 출처이며, 실행 2026-09-25-54에서 ref-079·ref-077·ref-225·ref-457·ref-458·ref-460·ref-461·ref-462·ref-696은 원문을 열지 못했다. 실행 2026-09-25-58에서는 ref-641·ref-642·ref-643·ref-212·ref-268·ref-347의 원문을 열지 못했다. 실행 2026-09-25-65에서는 ref-079·ref-348·ref-413·ref-419·ref-461·ref-647·ref-648·ref-649·ref-650·ref-229·ref-038·ref-653·ref-654·ref-655·ref-315·ref-314·ref-658의 원문을 열지 못했다.
+- FloorplanVLM·Sketch2BIM·ArchCAD-400K의 성능·비용 수치는 저자 보고 단일 출처이며, 실행 2026-09-25-54에서 ref-079·ref-077·ref-225·ref-457·ref-458·ref-460·ref-461·ref-462·ref-696은 원문을 열지 못했다. 실행 2026-09-25-58에서는 ref-641·ref-642·ref-643·ref-212·ref-268·ref-347의 원문을 열지 못했다. 실행 2026-09-25-65에서는 ref-079·ref-348·ref-413·ref-419·ref-461·ref-571·ref-572·ref-573·ref-574·ref-229·ref-038·ref-575·ref-576·ref-577·ref-315·ref-314·ref-658의 원문을 열지 못했다.
 - SHACL은 권고안이 아니라 편집자 초안으로 확인했고, IDS의 판 번호와 검사 범위는 미확인이다.
 - IndoorGML 2.0 JSON 인코딩 초안의 노드·엣지·레이어 간 연결 속성은 확인하지 못했다.
 - rmf_traffic 의 충전소 속성과 주행 지도 문서의 충전소 플래그를 확인했지만, 충전소 지정 속성 이름을 둘러싼 출처 충돌([열린 질문](../../open-questions.md) oq-069)은 풀리지 않았다.
@@ -365,20 +365,20 @@ flowchart LR
 [^ref-348]: ISPRS International Journal of Geo-Information(MDPI) 게재 논문 저자(미확인), Data Model for IndoorGML Extension to Support Indoor Navigation of People with Mobility Disabilities, 2020, https://www.mdpi.com/2220-9964/9/2/66, 접근일 2026-09-25 (원문 미열람)
 [^ref-419]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcDoor.md, 접근일 2026-09-25 (원문 미열람)
 [^ref-228]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
-[^ref-645]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-09-25
-[^ref-646]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_route — README (Nav2 Route Server), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_route/README.md, 접근일 2026-09-25
-[^ref-647]: de Vos, K., van den Brandt, G., Senden, J., Pauwels, P., van de Molengraft, R., & Torta, E., Generation of skill-specific maps from graph world models for robotic systems, 2024-02, https://arxiv.org/abs/2402.18174, 접근일 2026-09-25 (원문 미열람)
-[^ref-648]: Omer 외(Omer, de Vos, Pauwels, Torta, Monteriù; RoboCup 2024 심포지엄 논문집), Semantic Path Planning for Heterogeneous Robots from Building Digital Twin Data, 2025, https://link.springer.com/chapter/10.1007/978-3-031-85859-8_5, 접근일 2026-09-25 (원문 미열람)
-[^ref-649]: buildingSMART International, Pset_DoorCommon - IFC 4.3.2 Documentation, 미확인, https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_DoorCommon.htm, 접근일 2026-09-25 (원문 미열람)
-[^ref-650]: buildingSMART International, Pset_StairCommon - IFC4.3.2.0 Documentation, 미확인, https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_StairCommon.htm, 접근일 2026-09-25 (원문 미열람)
+[^ref-569]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg, 접근일 2026-09-25
+[^ref-570]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_route — README (Nav2 Route Server), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_route/README.md, 접근일 2026-09-25
+[^ref-571]: de Vos, K., van den Brandt, G., Senden, J., Pauwels, P., van de Molengraft, R., & Torta, E., Generation of skill-specific maps from graph world models for robotic systems, 2024-02, https://arxiv.org/abs/2402.18174, 접근일 2026-09-25 (원문 미열람)
+[^ref-572]: Omer 외(Omer, de Vos, Pauwels, Torta, Monteriù; RoboCup 2024 심포지엄 논문집), Semantic Path Planning for Heterogeneous Robots from Building Digital Twin Data, 2025, https://link.springer.com/chapter/10.1007/978-3-031-85859-8_5, 접근일 2026-09-25 (원문 미열람)
+[^ref-573]: buildingSMART International, Pset_DoorCommon - IFC 4.3.2 Documentation, 미확인, https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_DoorCommon.htm, 접근일 2026-09-25 (원문 미열람)
+[^ref-574]: buildingSMART International, Pset_StairCommon - IFC4.3.2.0 Documentation, 미확인, https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_StairCommon.htm, 접근일 2026-09-25 (원문 미열람)
 [^ref-229]: IDTA (admin-shell-io/submodel-templates GitHub), IDTA 02020 Capability Description — README (Submodel Template, Version 1.0), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description, 접근일 2026-09-25 (원문 미열람)
 [^ref-038]: Vieira da Silva, L. M. 외, A Capability and Skill Model for Heterogeneous Autonomous Robots, 2022-09, https://arxiv.org/abs/2209.10900, 접근일 2026-09-25 (원문 미열람)
-[^ref-653]: Schulze, P. R., Müller, S., Müller, T., & Gross, H.-M. (TU Ilmenau), On realizing autonomous transport services in multi story buildings with doors and elevators, 2025-02-25, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1546894/full, 접근일 2026-09-25 (원문 미열람)
-[^ref-654]: Morilla-Cabello, D., & Montijano, E., CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing, 2026-01, https://arxiv.org/abs/2601.10340, 접근일 2026-09-25 (원문 미열람)
-[^ref-655]: Halilovic, A., Hasic, V., & Krivic, S., Ontology-Guided Reasoning for Affordance-Based Explanations of Robot Navigation, 2026-06, https://arxiv.org/abs/2606.00117, 접근일 2026-09-25 (원문 미열람)
+[^ref-575]: Schulze, P. R., Müller, S., Müller, T., & Gross, H.-M. (TU Ilmenau), On realizing autonomous transport services in multi story buildings with doors and elevators, 2025-02-25, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1546894/full, 접근일 2026-09-25 (원문 미열람)
+[^ref-576]: Morilla-Cabello, D., & Montijano, E., CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing, 2026-01, https://arxiv.org/abs/2601.10340, 접근일 2026-09-25 (원문 미열람)
+[^ref-577]: Halilovic, A., Hasic, V., & Krivic, S., Ontology-Guided Reasoning for Affordance-Based Explanations of Robot Navigation, 2026-06, https://arxiv.org/abs/2606.00117, 접근일 2026-09-25 (원문 미열람)
 [^ref-315]: 산업통상자원부 국가기술표준원(대한민국 정책브리핑), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다, 2021-11-11, https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155, 접근일 2026-09-25 (원문 미열람)
 [^ref-314]: 국가표준인증통합정보시스템(KSSN), KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010135682, 접근일 2026-09-25 (원문 미열람)
-[^ref-658]: 이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34), 로봇 친화형 건축물 인증 지표 개발: 초점집단면접(FGI)과 분석적 계층화 과정(AHP)의 활용, 2022, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002903574, 접근일 2026-09-25 (원문 미열람)
+[^ref-578]: 이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34), 로봇 친화형 건축물 인증 지표 개발: 초점집단면접(FGI)과 분석적 계층화 과정(AHP)의 활용, 2022, https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002903574, 접근일 2026-09-25 (원문 미열람)
 [^ref-283]: Open Robotics, Doors (integration_doors) - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_doors.html, 접근일 2026-09-25
 
 ## 9. 이력

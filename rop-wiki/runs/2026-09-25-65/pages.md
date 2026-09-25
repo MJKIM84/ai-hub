@@ -20,7 +20,7 @@
 
 | 동작 | 용어(한글) | 용어(영문) | 한 줄 정의 | 관련 영역 | 출처 |
 |---|---|---|---|---|---|
-| new | 통과 가능성 | Traversability | 특정 로봇이 공간 그래프의 구역·차선·문·계단·승강기를 지나갈 수 있는지를 로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다. | 6, 5, 8, 13 | ref-649, ref-650, ref-461, ref-651 |
+| new | 통과 가능성 | Traversability | 특정 로봇이 공간 그래프의 구역·차선·문·계단·승강기를 지나갈 수 있는지를 로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다. | 6, 5, 8, 13 | ref-649, ref-650, ref-461, ref-229 |
 | new | 차선 폐쇄 | Lane Closure | 관제가 실행 중에 주행 그래프의 특정 차선을 일시적으로 쓰지 못하게 닫는 조치로, Open-RMF 에서는 플릿 이름과 닫을 차선 번호 목록을 담은 요청 메시지(LaneRequest)로 한다. | 15, 8, 6 | ref-645 |
 
 ## 참고문헌 갱신
@@ -35,22 +35,22 @@
 | ref-419 | buildingSMART (IFC4.3.x-development GitHub) | IFC 4.3 — IfcDoor (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음) | 표준 | medium | https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcDoor.md |
 | ref-461 | Buildings(MDPI) 게재 논문 저자(Concordia University, 목록 미확인) | Ontology for BIM-Based Robotic Navigation and Inspection Tasks | 논문 | medium | https://www.mdpi.com/2075-5309/14/8/2274 |
 | ref-536 | Open Robotics (open-rmf) | rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp | 오픈소스 문서 | medium | https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp |
-| ref-644 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/factsheet.schema | 표준 | medium | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema |
+| ref-228 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/factsheet.schema | 표준 | medium | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema |
 | ref-645 | Open Robotics (open-rmf) | rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg | 오픈소스 문서 | medium | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg |
 | ref-646 | ROS Navigation (ros-navigation/navigation2 GitHub) | nav2_route — README (Nav2 Route Server) | 오픈소스 문서 | medium | https://github.com/ros-navigation/navigation2/blob/main/nav2_route/README.md |
 | ref-647 | de Vos, K., van den Brandt, G., Senden, J., Pauwels, P., van de Molengraft, R., & Torta, E. | Generation of skill-specific maps from graph world models for robotic systems | 논문 | medium | https://arxiv.org/abs/2402.18174 |
 | ref-648 | Omer 외(Omer, de Vos, Pauwels, Torta, Monteriù; RoboCup 2024 심포지엄 논문집) | Semantic Path Planning for Heterogeneous Robots from Building Digital Twin Data | 논문 | medium | https://link.springer.com/chapter/10.1007/978-3-031-85859-8_5 |
 | ref-649 | buildingSMART International | Pset_DoorCommon - IFC 4.3.2 Documentation | 표준 | medium | https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_DoorCommon.htm |
 | ref-650 | buildingSMART International | Pset_StairCommon - IFC4.3.2.0 Documentation | 표준 | medium | https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/Pset_StairCommon.htm |
-| ref-651 | IDTA (admin-shell-io/submodel-templates GitHub) | IDTA 02020 Capability Description — README (Submodel Template, Version 1.0) | 표준 | medium | https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description |
-| ref-652 | Vieira da Silva, L. M. 외 | A Capability and Skill Model for Heterogeneous Autonomous Robots | 논문 | medium | https://arxiv.org/abs/2209.10900 |
+| ref-229 | IDTA (admin-shell-io/submodel-templates GitHub) | IDTA 02020 Capability Description — README (Submodel Template, Version 1.0) | 표준 | medium | https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description |
+| ref-038 | Vieira da Silva, L. M. 외 | A Capability and Skill Model for Heterogeneous Autonomous Robots | 논문 | medium | https://arxiv.org/abs/2209.10900 |
 | ref-653 | Schulze, P. R., Müller, S., Müller, T., & Gross, H.-M. (TU Ilmenau) | On realizing autonomous transport services in multi story buildings with doors and elevators | 논문 | medium | https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1546894/full |
 | ref-654 | Morilla-Cabello, D., & Montijano, E. | CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing | 논문 | medium | https://arxiv.org/abs/2601.10340 |
 | ref-655 | Halilovic, A., Hasic, V., & Krivic, S. | Ontology-Guided Reasoning for Affordance-Based Explanations of Robot Navigation | 논문 | medium | https://arxiv.org/abs/2606.00117 |
-| ref-656 | 산업통상자원부 국가기술표준원(대한민국 정책브리핑) | 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 | 정부·연구기관 | medium | https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155 |
-| ref-657 | 국가표준인증통합정보시스템(KSSN) | KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | medium | https://www.kssn.net/search/stddetail.do?itemNo=K001010135682 |
+| ref-315 | 산업통상자원부 국가기술표준원(대한민국 정책브리핑) | 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 | 정부·연구기관 | medium | https://www.korea.kr/briefing/pressReleaseView.do?newsId=156480155 |
+| ref-314 | 국가표준인증통합정보시스템(KSSN) | KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 | 표준 | medium | https://www.kssn.net/search/stddetail.do?itemNo=K001010135682 |
 | ref-658 | 이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34) | 로봇 친화형 건축물 인증 지표 개발: 초점집단면접(FGI)과 분석적 계층화 과정(AHP)의 활용 | 논문 | medium | https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002903574 |
-| ref-659 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | medium | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
+| ref-283 | Open Robotics | Doors (integration_doors) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | medium | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
 
 ## 열린 질문 갱신
 
@@ -86,7 +86,7 @@
 - ref-655 발행일 — 본문 'Halilovic 외(2026-06)', 각주 발행일, reference_updates published 를 모두 2026-06 으로 고쳤다.
 - ref-658 기관 — 단계 3 페이지 각주와 reference_updates org 를 '이관용, 구한민, 이윤서, 정민승, 윤동근, 김갑성(지적과 국토정보 52(2), 17-34)'로 고쳤다.
 - ref-031 열람 경로 — reference_updates 에는 fetched_via 필드가 없으므로 summary 에 '입력 원문 텍스트(inbox, data/source_texts)로 열람'을 적고 source_unopened false 로 두었다.
-- 원문 미열람 표기 — 이번 실행이 쓴 각주 정의(단계 3 페이지 8절 전체 교체, 아이디어 페이지 5절, 스키마 초안 6절 추가분)의 ref-079·ref-348·ref-413·ref-419·ref-461·ref-647~ref-658 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다(ref-651 포함). 스키마 초안 7절 끝과 아이디어 페이지 3·4절에 있는 이전 실행의 ref-079·ref-413·ref-419 정의는 이번 패치 범위 밖(자동 영역 인접 절·미변경 절)이라 고치지 않았다.
+- 원문 미열람 표기 — 이번 실행이 쓴 각주 정의(단계 3 페이지 8절 전체 교체, 아이디어 페이지 5절, 스키마 초안 6절 추가분)의 ref-079·ref-348·ref-413·ref-419·ref-461·ref-647~ref-658 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다(ref-229 포함). 스키마 초안 7절 끝과 아이디어 페이지 3·4절에 있는 이전 실행의 ref-079·ref-413·ref-419 정의는 이번 패치 범위 밖(자동 영역 인접 절·미변경 절)이라 고치지 않았다.
 - 기존 문장 재사용 — f2 의 관제 보유 통행 제한, f4 의 graph_idx 플릿별 그래프, f10 의 OBRNIT 네 개념 묶음, f23 의 기본 그래프 분리는 q3-01·q3-02 문장을 가리키고 새로 쓰지 않았으며, 도입 단계 로봇 그룹별 경로 제한·INVALID_ORDER_ACTION·플릿 설정의 문·승강기 필드 부재·OBRNIT 최대 단 높이만 덧붙였다. 4절 결론은 기존 분리 문장을 확장하는 형태로 바꿨다.
 - f21 용어 — 단계 3 페이지(../../glossary/…)와 아이디어 페이지(../glossary/…)에서 '요구 능력·제공 능력'과 '능력 매칭' 용어집 항목에 링크해 같은 용어로 썼다.
 - 용어 '통과 가능성' 정의 — '로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다'로 고쳐 glossary_updates 에 냈다.
@@ -114,7 +114,7 @@
 
 | 세부영역 번호 | 절 | 요약 |
 |---|---|---|
-| 5 | 6. 대표 접근법과 기술 | 로봇 능력 속성(최대 단 높이·폭·높이·문 조작·승강기 이용)을 공간 요소의 통과 조건과 요구–제공 능력 매칭으로 대조하는 접근(추정, f21)과, VDA 5050 팩트시트·Open-RMF 플릿 설정에 계단·문·승강기 능력 필드가 없다는 사실(f1·f4, ref-644·ref-105), IDTA 02020 요구·제공 능력(f14)·이종 로봇 능력 모델(f15). |
+| 5 | 6. 대표 접근법과 기술 | 로봇 능력 속성(최대 단 높이·폭·높이·문 조작·승강기 이용)을 공간 요소의 통과 조건과 요구–제공 능력 매칭으로 대조하는 접근(추정, f21)과, VDA 5050 팩트시트·Open-RMF 플릿 설정에 계단·문·승강기 능력 필드가 없다는 사실(f1·f4, ref-228·ref-105), IDTA 02020 요구·제공 능력(f14)·이종 로봇 능력 모델(f15). |
 | 6 | 6. 대표 접근법과 기술 | BIM·건물 디지털 트윈에서 로봇 스킬별 지도·경로를 만드는 연구(f12·f13), Nav2 경로 서버의 엣지 메타데이터·동적 엣지 폐쇄(f7), IFC 문·계단 속성 세트(f8·f9), 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프 파생(추정, f23). |
 | 10 | 6. 대표 접근법과 기술 | 문·승강기 통과를 설비 연동(Open-RMF 문 어댑터 DoorRequest·DoorState, IFC 자동 구동 문 HasDrive)으로 충족하는 방식(f6·f8), 로봇 조작과 설비 연동의 선택 조건(추정, f22). KS B 7317 은 표준명·2021-11-11 제정 사실만 [사실]로 쓰고 단차·틈새 수치는 '미확인'으로 두며, 승강기 탑승 안전 제어 자체는 '연계 대상'으로 짧게 적는다(f17). |
 | 13 | 6. 대표 접근법과 기술 | 능력별 통행 가능 경로를 먼저 구해 배정 후보를 거르거나 이종 차량 경로·배정 문제에 넣는 접근(연계 대상 사례 CHORAL, 점검 임무 대상·환경 조건 미확인, f19)과 ‘3층 출하 대기장’ 배정 후보를 로봇별 통행 가능 부분 그래프로 거르는 방식(추정, f24). |
