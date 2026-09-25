@@ -220,7 +220,7 @@ PATH=/opt/node22/bin:/usr/local/bin:/usr/bin:/bin
 
 ## 5A. 운영 전환 기능 (2026-09-25)
 
-결정 기록은 [DECISIONS.md](DECISIONS.md), 사람이 검토할 가정은 [BUILD_ASSUMPTIONS.md](BUILD_ASSUMPTIONS.md) 에 있다.
+결정 기록은 [DECISIONS.md](DECISIONS.md), 사람이 검토할 가정은 [BUILD_ASSUMPTIONS.md](BUILD_ASSUMPTIONS.md), 결과 보고는 [OPERATIONS_REPORT.md](OPERATIONS_REPORT.md) 에 있다.
 
 | 기능 | 어디 | 요점 |
 |---|---|---|
