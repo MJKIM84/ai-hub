@@ -1,0 +1,122 @@
+{
+  "run_id": "2026-09-26-01",
+  "date": "2026-09-26",
+  "run_type": "weekly_review",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": null
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 1,
+  "pages_updated": 2,
+  "new_sources": 0,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 2,
+    "sources": 0
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1458.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-26 | 주간 정리 2026-W39 | 이번 주 실행 90회 정리, ref-637 URL 인코딩 표기·needs_update, ref-709 deprecated(대체 ref-315), 참고문헌 중복 후보 기록 | run 2026-09-26-01",
+  "notes": [],
+  "counts": {
+    "create": 1,
+    "update": 1,
+    "deprecate": 1,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-26 00:28:16 KST",
+  "usage": {
+    "input_tokens": 40,
+    "cache_creation_input_tokens": 2056089,
+    "cache_read_input_tokens": 2154144,
+    "output_tokens": 153333,
+    "cost_usd": 20.0899,
+    "calls": 12,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.2348,
+        "output_tokens": 9480,
+        "cache_read_input_tokens": 962951,
+        "cache_creation_input_tokens": 225775
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.2763,
+        "output_tokens": 8178,
+        "cache_read_input_tokens": 703489,
+        "cache_creation_input_tokens": 240419
+      },
+      "storyteller": {
+        "calls": 5,
+        "cost_usd": 12.4289,
+        "output_tokens": 123637,
+        "cache_read_input_tokens": 315110,
+        "cache_creation_input_tokens": 1236643
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 3.0583,
+        "output_tokens": 10719,
+        "cache_read_input_tokens": 152310,
+        "cache_creation_input_tokens": 351674
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0504,
+        "output_tokens": 771,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1280
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0071,
+        "output_tokens": 284,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.0341,
+        "output_tokens": 264,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 298
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 2,
+  "cross_checked_findings": 0
+}

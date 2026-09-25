@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-09-25
+기준일: 2026-09-26
 
 ### 영역별 페이지 상태 분포
 
@@ -97,9 +97,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 86회 중 최종 통과 86회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 86
-- 2차 검증 판정: 통과 86
+- 실행 87회 중 최종 통과 87회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 87
+- 2차 검증 판정: 통과 87
 
 ### 반려·보류 건수
 
@@ -128,9 +128,9 @@ version: 1
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 0 | published |
-| [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-25 | 0 | published |
-| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-25 | 0 | published |
-| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-25 | 0 | published |
-| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-25 | 0 | published |
+| [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 2026-09-25 | 1 | published |
+| [2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2026-09-25 | 1 | published |
+| [3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 2026-09-25 | 1 | published |
+| [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 2026-09-25 | 1 | published |
+| [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 2026-09-25 | 1 | published |
 <!-- auto:metrics:end -->

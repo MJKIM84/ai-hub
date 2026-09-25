@@ -16,6 +16,15 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-09-26
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-09-26-01 | 생성 | [docs/logs/weekly/2026-W39.md](logs/weekly/2026-W39.md) | 2026-W39 주간 정리 신규 작성(실행 90회 정리, 링크·출처 점검 3건, 참고문헌 중복 2묶음) |
+| 2026-09-26-01 | 갱신 | [docs/references/ref-637.md](references/ref-637.md) | 각주 형식 절에 퍼센트 인코딩 URL 을 적고 제명 변경 가능성을 [추정]·원문 미열람으로 병기, needs_update (등록 URL 교체는 pipeline 담당 요청) |
+| 2026-09-26-01 | 폐기 | [docs/references/ref-709.md](references/ref-709.md) | ref-315 와 같은 보도자료를 가리키는 중복 항목으로 deprecated 처리, 대체 페이지 ref-315(프런트매터 replaced_by 추가) |
+| 2026-09-26-01 | 요약 | [docs/logs/weekly/2026-W39.md](logs/weekly/2026-W39.md) | 주간 정리 2026-W39: 이번 주 실행 90회 정리, ref-637 URL 인코딩 표기·needs_update, ref-709 deprecated(대체 ref-315), 참고문헌 중복 후보 기록 |
+
 ### 2026-09-25
 
 | 실행 id | 동작 | 페이지 | 요약 |
