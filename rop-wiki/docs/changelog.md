@@ -28,6 +28,31 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-46 | 갱신 | [docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가. 2차: 9절 시설·설비 제어 행을 [추정]으로 낮추고 Open-RMF 데모 내용을 따로 적음 |
+| 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s6.md](topics/2026/2026-09-25-area18-s6.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "6. 대표 접근법과 기술" 절을 옮겼다. 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침. 2차: 운용 모드 소절 마지막 문장을 [사실]과 [추정]으로 나눔 |
+| 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s7.md](topics/2026/2026-09-25-area18-s7.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,079자)을 옮겼다 |
+| 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s4.md](topics/2026/2026-09-25-area18-s4.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "4. 핵심 개념과 용어" 절(897자)을 옮겼다 |
+| 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s8.md](topics/2026/2026-09-25-area18-s8.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "8. 대표 연구와 자료" 절(750자)을 옮겼다 |
+| 2026-09-25-46 | 요약 | [docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 18. 사람–로봇 협업·운영 인터페이스: 3~11절 신규 작성: 협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 반영 제안 6건 검토 |
+| 2026-09-25-46 | 생성 | [docs/references/ref-467.md](references/ref-467.md) | 참고문헌 ref-467 등록: Order batching and batch sequencing in an AMR-assisted picke… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-468.md](references/ref-468.md) | 참고문헌 ref-468 등록: Human-Robot Cooperation: Coordinating Autonomous Mobile Robo… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-469.md](references/ref-469.md) | 참고문헌 ref-469 등록: Deploying pickers and robots in cobot-based collaborative or… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-470.md](references/ref-470.md) | 참고문헌 ref-470 등록: ISO 3691-4:2023 - Industrial trucks — Safety requirements an… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-471.md](references/ref-471.md) | 참고문헌 ref-471 등록: Updated ISO 10218 \| Answers to Frequently Asked Questions (F… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-472.md](references/ref-472.md) | 참고문헌 ref-472 등록: ANSI/A3 R15.08-2 Safety Standard for Industrial Mobile Robot… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-473.md](references/ref-473.md) | 참고문헌 ref-473 등록: 고정식 이동식 산업용 로봇의 협동작업 안전 가이드 배포 |
+| 2026-09-25-46 | 생성 | [docs/references/ref-474.md](references/ref-474.md) | 참고문헌 ref-474 등록: '이동식 산업용 로봇' 안전 가이드 어떤 내용 담고 있나? |
+| 2026-09-25-46 | 생성 | [docs/references/ref-475.md](references/ref-475.md) | 참고문헌 ref-475 등록: ｢대구 이동식 협동로봇 규제자유특구｣ 산업표준 제정으로, 이동식 협동로봇 상용화 길 열렸다! |
+| 2026-09-25-46 | 생성 | [docs/references/ref-476.md](references/ref-476.md) | 참고문헌 ref-476 등록: Explainable AI for Robot Failures: Generating Explanations t… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-477.md](references/ref-477.md) | 참고문헌 ref-477 등록: Situation awareness-based agent transparency and human-auton… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-478.md](references/ref-478.md) | 참고문헌 ref-478 등록: Fan-out: measuring human control of multiple robots |
+| 2026-09-25-46 | 생성 | [docs/references/ref-479.md](references/ref-479.md) | 참고문헌 ref-479 등록: Mastering a robot workforce: review of single human multiple… |
+| 2026-09-25-46 | 생성 | [docs/references/ref-480.md](references/ref-480.md) | 참고문헌 ref-480 등록: "대형 물류센터 집품 작업, 로봇 6대로 효율화" |
+| 2026-09-25-46 | 생성 | [docs/glossary/fan-out.md](glossary/fan-out.md) | 용어집 항목 팬아웃 |
+| 2026-09-25-46 | 생성 | [docs/glossary/operating-mode.md](glossary/operating-mode.md) | 용어집 항목 운용 모드 |
+| 2026-09-25-46 | 생성 | [docs/glossary/situation-awareness-based-agent-transparency.md](glossary/situation-awareness-based-agent-transparency.md) | 용어집 항목 상황 인식 기반 에이전트 투명성 |
+| 2026-09-25-46 | 생성 | [docs/glossary/collaborative-application.md](glossary/collaborative-application.md) | 용어집 항목 협동 적용 |
+| 2026-09-25-46 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-25-45 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 실행 2026-09-25-45 보강(충전 요소 출처 충돌 병기, ECLASS 16.0 규모, ECLASS-in-AAS 지침, AAS 능력 모델→PDDL 선례, 두 층 식별자 추정), 후속 질문 q4-14, 완료 조건·이력·출처 갱신 |
 | 2026-09-25-45 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절: '충전 속성 템플릿에 없음' [추정] 뒤에 명세 PDF 검색 요약과의 출처 충돌 병기, 충전 요소·두 층 의미 식별자 보강 문단(실행 2026-09-25-45) 추가 |
 | 2026-09-25-45 | 요약 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-09 부분 답 보강(IDTA 02047 충전 요소 출처 충돌 병기, ECLASS 16.0 규모, ECLASS-in-AAS 지침, AAS 능력 모델→PDDL 선례, 두 층 의미 식별자 추정), 새 질문 q4-14, 온톨로지 변경 없음 |

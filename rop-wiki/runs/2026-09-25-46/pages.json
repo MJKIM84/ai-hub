@@ -155,13 +155,13 @@
       "path": "docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가"
+      "diff_summary": "영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가. 2차: 9절 시설·설비 제어 행을 [추정]으로 낮추고 Open-RMF 데모 내용을 따로 적음"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area18-s6.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 \"6. 대표 접근법과 기술\" 절(1,787자)을 옮겼다"
+      "diff_summary": "자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 \"6. 대표 접근법과 기술\" 절을 옮겼다. 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침. 2차: 운용 모드 소절 마지막 문장을 [사실]과 [추정]으로 나눔"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area18-s7.md",
@@ -307,7 +307,8 @@
       "summary": "원문 미열람. 무인 산업용 트럭(AGV·AMR)과 그 시스템의 안전 요구·검증 표준 제2판 소개 페이지.",
       "source_unopened": true,
       "cited_by": [
-        "docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md"
+        "docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md",
+        "docs/topics/2026/2026-09-25-area18-s6.md"
       ]
     },
     {
@@ -822,8 +823,10 @@
     "7절: ANSI/A3 R15.08-3(사용자 책임) 발행 여부 확인이 필요하다.",
     "8절: Rey-Becerra·Wischniewski(2025)의 분석 건수(44건/35건)와 설계·평가 점검표 제시 여부를 원문으로 확인해야 한다.",
     "8·11절: Yang 외(2026) 모델이 교대조 단위 인원·로봇 수 결정을 다루는지(oq-009 해결 여부) 원문 확인이 필요하다.",
+    "9절: 시설 비상 경보를 받았을 때 오케스트레이션 계층(ROP)이 맡는 역할을 정한 표준·사례가 필요하다(현재는 Open-RMF 데모 기능만 근거).",
     "6·8절: 트랙 반영 제안 가운데 이번 브리프에 없는 자료(Formant F3, 다임리서치 다비스, Amazon Proteus 2026-06 발표, Locus Aila 사례 ref-280, CLARA ref-352, KnowNo ref-350, 작업 지향 대화 서베이 ref-357)는 브리프에 없어 넣지 못했다. 다음 실행에서 재확인 후 반영을 검토한다.",
-    "5절: 국내 물류센터의 피커 유휴·로봇 대기 실측 자료가 필요하다."
+    "5절: 국내 물류센터의 피커 유휴·로봇 대기 실측 자료가 필요하다.",
+    "퍼블리셔 담당 요청: 사전 검사에서 보고된 logs/daily/2026-09-25.md 의 깨진 링크 ../glossary/hierarchical-task-network.md 는 이번 스토리텔러 산출 페이지가 아니라 일일 로그(퍼블리셔 생성)에 있으므로 이 출력으로 고칠 수 없다. 용어집 항목 생성 또는 로그 링크 제거가 필요하다."
   ],
   "fixes_applied": [
     "f7 운용 모드 설명 교정 — 'SEMIAUTOMATIC 운영자 HMI 실행 확인'과 'INTERVENED 새 주문 불수신'을 본문·용어집에서 빼고, 6절에 명세 표 10·11 그대로(SEMIAUTOMATIC 관제 제어·속도 HMI·조향 자동, INTERVENED 운영자 HMI 제어·복귀 뒤 실행될 주문 수신·즉시 동작은 cancelOrder 만, MANUAL 주문·동작 불가)를 [사실][^ref-031]로 썼다.",
@@ -842,6 +845,9 @@
     "10절 — f24~f28 을 27. AI·학습·적응과 모델 운영과 연결했다(6절 본문에도 링크).",
     "각주 — fetched:false 출처 전부의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-302·ref-104 는 붙이지 않았다.",
     "ref-477·ref-471·ref-474 발행일 — 각주 발행일을 '미확인'으로 적고 2017 추정은 쓰지 않았다.",
-    "분량 초과 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 본문 7,496자 > 기준 4,000자 → 4개 절을 주제 페이지로 옮김, 남은 본문 3,795자"
+    "분량 초과 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 본문 7,496자 > 기준 4,000자 → 4개 절을 주제 페이지로 옮김, 남은 본문 3,795자",
+    "형식 검증 재작성: docs/topics/2026/2026-09-25-area18-s6.md 의 깨진 링크 ../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md 를 주제 페이지 기준 경로 ../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md 로 고쳤다. 세부영역 페이지 4절 첫 항목의 빠진 목록 기호('- ')를 보정했다. 주장·태그·각주는 바꾸지 않았다. logs/daily/2026-09-25.md 의 깨진 링크는 스토리텔러 산출물이 아니어서 고치지 못했다(additional_research_requests 에 기록).",
+    "2차: 세부영역 페이지 9절 '시설·설비 제어' 행 — 'ROP가 직접 맡는 것' 칸을 '시설 비상 경보 상태를 받아 작업 흐름에 반영하는 것으로 보인다. [추정][^ref-104]'로 낮추고, Open-RMF 데모 내용은 '(Open-RMF 데모는 경보 시 로봇을 가장 가까운 주차 위치로 보낸다) [사실][^ref-104]'로 따로 적었으며 '멈추고'를 삭제했다.",
+    "2차: 주제 페이지 docs/topics/2026/2026-09-25-area18-s6.md 3절 '운용 모드·일시정지·비상정지 보고' 소절 마지막 문장을 '안전 상태와 일시정지는 로봇이 보고하는 값이다. [사실][^ref-051]'과 '운영 인터페이스는 이를 받아 사람에게 보여 주는 쪽이 될 것으로 보인다. [추정][^ref-051][^ref-470]'으로 나눴고, ref-470 각주 정의와 프런트매터 sources 를 그 페이지에 더했다."
   ]
 }

@@ -155,6 +155,10 @@ nav:
     - '2026':
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
       - 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가: topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md
+      - 18. 사람–로봇 협업·운영 인터페이스 — 대표 연구와 자료: topics/2026/2026-09-25-area18-s8.md
+      - 18. 사람–로봇 협업·운영 인터페이스 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area18-s7.md
+      - 18. 사람–로봇 협업·운영 인터페이스 — 대표 접근법과 기술: topics/2026/2026-09-25-area18-s6.md
+      - 18. 사람–로봇 협업·운영 인터페이스 — 핵심 개념과 용어: topics/2026/2026-09-25-area18-s4.md
       - 17. 로봇 간 협업·물리적 인계 — 대표 연구와 자료: topics/2026/2026-09-25-area17-s8.md
       - 17. 로봇 간 협업·물리적 인계 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area17-s7.md
       - 17. 로봇 간 협업·물리적 인계 — 대표 접근법과 기술: topics/2026/2026-09-25-area17-s6.md
@@ -296,6 +300,7 @@ nav:
     - 사가 (Saga): glossary/saga.md
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
+    - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
     - 스케줄 간 의존 (Cross-schedule Dependency (XD)): glossary/cross-schedule-dependency.md
@@ -313,6 +318,7 @@ nav:
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability): glossary/required-and-provided-capability.md
     - 우선순위 상속·되돌림 (Priority Inheritance with Backtracking (PIBT)): glossary/priority-inheritance-with-backtracking.md
+    - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
@@ -339,6 +345,7 @@ nav:
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
+    - 팬아웃 (Fan-out (human-robot team)): glossary/fan-out.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
     - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
     - 풋월 (Put Wall): glossary/put-wall.md
@@ -353,6 +360,7 @@ nav:
     - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
     - 협동 운반 (Cooperative Object Transport): glossary/cooperative-object-transport.md
     - 협동 인지 (Collaborative Perception): glossary/collaborative-perception.md
+    - 협동 적용 (Collaborative Application): glossary/collaborative-application.md
     - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
     - 혼합 정수 계획 (Mixed Integer Linear Programming (MILP)): glossary/milp.md
     - 환각 (Hallucination): glossary/hallucination.md
@@ -823,6 +831,22 @@ nav:
     - 'ref-434 — ArchCAD-400k: A Large-Scale CAD drawings Dataset and New Baseline for Panoptic Symbol Spotting — project page': references/ref-434.md
     - ref-435 — Raster Image-Based House-Type Recognition and Three-Dimensional Reconstruction Technology: references/ref-435.md
     - ref-436 — 건설산업 BIM 시행지침 정책정보 상세보기: references/ref-436.md
+    - ref-467 — Order batching and batch sequencing in an AMR-assisted picker-to-parts system: references/ref-467.md
+    - 'ref-468 — Human-Robot Cooperation: Coordinating Autonomous Mobile Robots and Human Order Pickers': references/ref-468.md
+    - ref-469 — Deploying pickers and robots in cobot-based collaborative order picking systems: references/ref-469.md
+    - ? 'ref-470 — ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems'
+      : references/ref-470.md
+    - ref-471 — Updated ISO 10218 | Answers to Frequently Asked Questions (FAQs): references/ref-471.md
+    - ref-472 — ANSI/A3 R15.08-2 Safety Standard for Industrial Mobile Robot Systems and Applications Now Available: references/ref-472.md
+    - ref-473 — 고정식 이동식 산업용 로봇의 협동작업 안전 가이드 배포: references/ref-473.md
+    - ref-474 — '이동식 산업용 로봇' 안전 가이드 어떤 내용 담고 있나?: references/ref-474.md
+    - ref-475 — ｢대구 이동식 협동로봇 규제자유특구｣ 산업표준 제정으로, 이동식 협동로봇 상용화 길 열렸다!: references/ref-475.md
+    - 'ref-476 — Explainable AI for Robot Failures: Generating Explanations that Improve User Assistance in Fault Recovery': references/ref-476.md
+    - ref-477 — Situation awareness-based agent transparency and human-autonomy teaming effectiveness: references/ref-477.md
+    - 'ref-478 — Fan-out: measuring human control of multiple robots': references/ref-478.md
+    - ? 'ref-479 — Mastering a robot workforce: review of single human multiple robots systems and their impact on occupational safety and health and system performance'
+      : references/ref-479.md
+    - ref-480 — "대형 물류센터 집품 작업, 로봇 6대로 효율화": references/ref-480.md
     - 'ref-497 — Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review': references/ref-497.md
     - ref-498 — 유진로봇, 지능형 제조 물류시스템 공개: references/ref-498.md
     - ref-499 — rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg: references/ref-499.md
