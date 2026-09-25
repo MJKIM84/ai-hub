@@ -1,0 +1,500 @@
+{
+  "run_id": "2026-09-25-23",
+  "outline": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 16000,
+      "summary": "q1-03 은 학술 온톨로지 행 원문 대조를 더해 답함으로, q1-06 은 요구·제공 능력 비교와 요구 목록 초안으로, q1-07 은 2.1.0 태그 대 main 팩트시트 스키마 대조로 답했다. [추정][^ref-349][^ref-235][^ref-228]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 3500,
+      "summary": "적재 제약은 산업 규격에만 있고 전제·완료·오류는 SOMA, 범위·환경은 SSN 이 일부 담는다. [추정][^ref-349][^ref-235][^ref-228]",
+      "planned_findings": [
+        "f17",
+        "f18",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "section": "6. 완료 조건 충족 현황",
+      "budget_chars": 900,
+      "summary": "비교표는 채워졌으나 요구 목록은 일부만 반영돼 단계 전환은 미승인이다.",
+      "planned_findings": [
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+      "section": "2. 개념 목록 표 / 6. 미해결 모델링 질문",
+      "budget_chars": 4000,
+      "summary": "v0.3: 기능 한정자(요구/제공), 실행 상태 개념, 장착 장비 속성 2건·확정. 거부 3건은 6절 질문. [추정][^ref-229][^ref-349][^ref-245]",
+      "planned_findings": [
+        "f10",
+        "f19",
+        "f20",
+        "f22",
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+      "section": "4. 비교표 / 5. 빠진 정보 요약",
+      "budget_chars": 5000,
+      "summary": "학술 온톨로지 행의 다섯 정보 항목을 채우고 VDA 5050 2.x 기준을 2.1.0 태그로 밝혔다. [추정][^ref-355][^ref-350][^ref-349][^ref-235]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f5",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q1-03·q1-06·q1-07 답함(3절 소제목·앵커), q1-02 팩트시트 문장 판별 정리, KnowRob 판 구분 병기, 4·5·6·7·8·9절과 상태 줄 갱신, 후속 질문 q6-05. 상태 줄이 H2 밖이라 patches 대신 전체 content 로 보냄"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/ontology-draft.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "v0.2 → v0.3: 기능 한정자(요구/제공), 개념 실행 상태 추가, 장착 장비 속성 2건·확정, 다이어그램 갱신, 6절에 요구 목록 초안·거부된 변경 3건 질문. H1 버전 표기가 H2 밖이라 전체 content 로 보냄"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "학술 온톨로지 행(IEEE 1872 CORA, IEEE 1872.2, KnowRob·SOMA, SSN/SOSA) 다섯 정보 항목 채움, VDA 5050 행에 2.1.0 태그 기준·3.0.0 필드 변화 반영, 빠진 정보 요약 갱신, 상태 줄 갱신(H2 밖이라 전체 content)"
+    },
+    {
+      "path": "docs/tracks/manual-capability-ontology/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6. 살아있는 산출물 링크: 온톨로지 초안 v0.3, 비교표 학술 온톨로지 행 채움, 백로그 수치 갱신",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [능력 온톨로지 초안](ontology-draft.md) — 현재 버전 v0.3. v0 시드(개념 8개·관계 6개)에 단계 1 실행 2026-09-25-02(v0.1: 개념 효과·스킬·오류, 관계 기능 / 구현된다 / 스킬, 기능의 능력 출처 구분 속성), 실행 2026-09-25-16(v0.2: 오류 수정, 개념 스킬 인터페이스, 관계 스킬 / 노출된다 / 스킬 인터페이스·기능 / 일반화된다 / 기능), 실행 2026-09-25-23(v0.3: 기능 속성 한정자(요구 / 제공), 개념 실행 상태, 장착 장비 속성 부착 인터페이스·적재 취급 장치 위치와 장착 장비 확정, ROP용 능력 개념 요구 목록 초안 수록)에서 검증 승인된 변경을 반영했다.\n- [모델·표준 비교표](model-standard-comparison.md) — 단계 1 산출물. 실행 2026-09-25-02에서 초안 작성, 실행 2026-09-25-16에서 산업 규격·서브모델·오픈소스 행을 공식 저장소 원문으로 보강하고 후보 밖 3행을 더했으며, 실행 2026-09-25-23에서 학술 온톨로지 행의 다섯 정보 항목을 제3자 구현·작업반 편집본·공식 저장소 원문으로 채웠다(KnowRob 칸은 README 범위에서 판정 불가, PDDL 행은 검색 요약 수준).\n- [문서 유형 매트릭스](document-type-matrix.md) — 단계 2 산출물. 빈 틀(단계 2 실행에서 채운다).\n- [평가 지표와 검증 절차](evaluation-and-verification.md) — 단계 5 산출물. 빈 틀(단계 5 실행에서 채운다).\n- [질문 백로그](question-backlog.md) — 열림 39건 · 답한 질문 7건 · 폐기 3건(실행 2026-09-25-23 반영 기준. 최신 수치는 백로그 페이지의 자동 표를 따른다)\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다.\n- [아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md) — 확장 아이디어 페이지(문제 정의, 관련 세부 연구영역, 선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법, 미해결 질문 백로그). 3~6절은 이 트랙의 실행이 채우며, 실행 2026-09-25-16에서 3·4절을 채우고 실행 2026-09-25-23에서 능력 매칭 연구와 충전·적재·장착 장비 표현을 더했다."
+        }
+      ]
+    },
+    {
+      "path": "docs/ideas/robot-capability-ontology.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3절에 능력 매칭 선행 연구, 4절에 충전·적재·장착 장비 표현(실행 2026-09-25-23) 추가",
+      "patches": [
+        {
+          "section": "3. 선행 연구·제품 사례",
+          "action": "append",
+          "content": "\n**능력 매칭 연구(실행 2026-09-25-23).** 근거 문장 전체는 [단계 1의 q1-06 답](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-06)에 있다. IDTA 02020 능력 기술 1.0 README 는 이 서브모델이 공정·제품 쪽 요구 능력과 자원 쪽 제공 능력을 비교해 생산 계획·오케스트레이션을 돕는다고 설명한다. [사실][^ref-229] Järvenpää 외(IJCIM 36(1), 2023, 온라인 2022-06-07)는 제품과 자원의 온톨로지 기술과 SPIN 규칙으로 결합 자원의 결합 능력 파라미터를 추론하고 제품 특성을 자원(조합)의 능력 파라미터와 비교해 가능한 자원 조합을 찾는, 능력 매칭을 위한 의미 규칙(SPIN)을 제시했다. [사실][^ref-352] Köcher·Vieira da Silva·Fay(arXiv 2312.08801, 2023-12, AAAI 2024 CAIPI 워크숍)는 의미 능력 모델과 SMT 로 제품 생산이나 자율 로봇 임무 수행에 필요한 개별 능력의 순서를 자동으로 찾는 공정 계획 방법을 제안했다. [사실][^ref-353] 두 연구는 제조 공정 계획 연구이므로 물류 현장 적용 사례가 아니라 방법의 선례로만 참고한다.\n\n작업 할당 질의가 분류 원문 질문(같은 운반 로봇 중 누가 이 화물을 실제로 취급할 수 있는가)에 답하려면 작업 요구를 화물 치수·중량 같은 요구 능력 속성으로 표현하고 로봇의 적재 세트 같은 제공 능력 속성과 비교하는 규칙이 필요할 것으로 보이며, 제조 분야의 능력 매칭 연구가 이 비교를 의미 규칙으로 구현한 선례가 된다. [추정][^ref-229][^ref-352][^ref-228][^ref-236] 물류 이동로봇 대상의 능력 매칭 규칙은 찾지 못했고, 질의 형식은 트랙 질문 q4-07 로 남아 있다."
+        },
+        {
+          "section": "4. 필요한 데이터와 표준",
+          "action": "append",
+          "content": "\n**범위 능력 '충전'·'적재'와 장착 장비(실행 2026-09-25-23).** 근거 문장 전체는 [단계 1의 q1-07 답](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-07)과 [q1-06 답](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-06)에 있다. VDA 5050 main(3.0.0) 팩트시트 스키마는 공식 저장소 2.1.0 태그 스키마에 없던 구성 블록의 충전 설정 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)을 더했다. [사실][^ref-348][^ref-228] 범위 능력 '적재'를 판별하는 필드는 적재 명세의 적재 세트에 있으며, 3.0.0 은 maximumWeight, minimum/maximumLoadhandlingHeight·Depth·Tilt, 적재 시 maximumSpeed·maximumAcceleration·maximumDeceleration, pickTime·dropTime 을, 2.1.0 태그는 같은 구조를 maxWeight·agvSpeedLimit 같은 2.x 이름으로 두고, 로봇 전체 최대 적재 질량은 유형 명세(maxLoadMass→maximumLoadMass)에 둔다. [사실][^ref-348][^ref-228] 3.0.0 팩트시트는 적재 취급 장치 식별자 목록(loadPositions), 지원 구역 유형(supportedZones), 하드웨어·소프트웨어 버전 키-값을 로봇 선언의 일부로 두고, IDTA 02047 템플릿은 부착 장비 인터페이스(InterfacesForAttachments)를 속성으로 둔다. [사실][^ref-228][^ref-245] 이 가운데 적재 취급 장치 위치와 부착 인터페이스는 [능력 온톨로지 초안](../tracks/manual-capability-ontology/ontology-draft.md) v0.3의 장착 장비 속성으로 반영됐고, 충전 조건·운용 구역은 초안 6절 질문으로 남았다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-03·q1-06·q1-07 답함, 비교표 학술 온톨로지 행 채움, 온톨로지 초안 v0.2 → v0.3, 후속 질문 q6-05 등록·중복 백로그 3건 폐기 | run 2026-09-25-23",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1: q1-03·q1-06·q1-07 답함, 모델·표준 비교표 학술 온톨로지 행 완성, 능력 온톨로지 초안 v0.3(요구·제공 한정자, 실행 상태, 장착 장비 속성)",
+    "category_recent": "2026-09-25 — 매뉴얼 기반 로봇 기능 온톨로지 단계 1(중심 영역 5. 로봇 능력·작업 온톨로지): 학술 온톨로지가 다섯 정보 항목을 담는 정도, VDA 5050 팩트시트 2.x(2.1.0 태그)→3.0.0 필드 변화, ROP용 능력 개념 요구 목록 초안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "capability-matchmaking",
+      "term_ko": "능력 매칭",
+      "term_en": "Capability Matchmaking",
+      "definition": "제품·작업이 요구하는 특성을 자원(로봇·설비)이 제공하는 능력의 파라미터와 비교해 수행 가능한 자원이나 자원 조합을 찾는 일이다.",
+      "description": "제조 분야에서는 제품·자원 온톨로지와 SPIN 규칙으로 결합 자원의 결합 능력을 추론하고 제품 요구와 비교하는 방법이 제시됐다. 물류 이동로봇 대상의 능력 매칭 규칙은 이 위키에서 아직 확인하지 못했다.",
+      "related_areas": [
+        5,
+        13
+      ],
+      "sources": [
+        "ref-352",
+        "ref-229"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "required-and-provided-capability",
+      "term_ko": "요구 능력·제공 능력",
+      "term_en": "Required Capability / Provided (Offered) Capability",
+      "definition": "공정·작업 쪽이 필요로 하는 능력과 자원 쪽이 내놓는 능력을 구분한 표현으로, 둘을 비교해 작업을 맡을 자원을 정한다. 이 위키의 온톨로지 초안에서는 capability 를 기능으로 부르므로 요구·제공 한정자에 해당한다.",
+      "description": "IDTA 02020 능력 기술 1.0 README 는 요구 능력과 제공 능력의 비교가 생산 계획·오케스트레이션을 돕는다고 설명한다. 능력 온톨로지 초안 v0.3 은 기능에 한정자(요구 / 제공) 속성을 두었다.",
+      "related_areas": [
+        5,
+        13,
+        28
+      ],
+      "sources": [
+        "ref-229",
+        "ref-352"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "capability-based-task-allocation",
+      "term_ko": "능력 기반 작업 배정",
+      "term_en": "Capability-based Task Allocation",
+      "definition": "로봇이 선언하거나 관측된 능력·제약과 작업의 요구 조건을 대조해 수행 가능한 로봇에게 작업을 배정하는 방식이다.",
+      "related_areas": [
+        13,
+        5
+      ],
+      "sources": [
+        "ref-229",
+        "ref-352",
+        "ref-236"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-348",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 (tag 2.1.0) — json_schemas/factsheet.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/2.1.0/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 저장소 2.1.0 태그의 팩트시트 JSON 스키마('AGV Factsheet'). agvGeometry·agvActions·vehicleConfig 등 2.x 필드 이름과 적재 세트 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-354",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 (tag 2.0.0) — VDA5050_EN_V1.md",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/2.0.0/VDA5050_EN_V1.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "공식 저장소 2.0.0 태그의 명세 마크다운. 머리말에 RELEASE CANDIDATE 표기가 있어 VDA 게시 PDF 와 같다고 확인하지 못했다. 팩트시트 블록 구성 설명을 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-349",
+      "org": "EASE CRC (ease-crc/soma)",
+      "title": "SOMA — owl/SOMA-ACT.owl",
+      "published": null,
+      "url": "https://github.com/ease-crc/soma/blob/master/owl/SOMA-ACT.owl",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "SOMA 공식 저장소의 활동 모듈 OWL 파일. 작업·행동 클래스, 실행 상태 영역 6상태, 요구 초기 상황·기대 종료 상황 관계, 기대 불일치 상황 클래스를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md"
+      ]
+    },
+    {
+      "id": "ref-350",
+      "org": "Helmut Schmidt University, Institute of Automation Technology (hsu-aut GitHub)",
+      "title": "IndustrialStandard-ODP-IEEE1872-2 — AuR_IEEE1872-2.ttl",
+      "published": null,
+      "url": "https://github.com/hsu-aut/IndustrialStandard-ODP-IEEE1872-2/blob/main/AuR_IEEE1872-2.ttl",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "IEEE 1872.2 AuR 온톨로지의 제3자 OWL 구현 파일. 기능·기능 실행·행동·상호작용·환경 기술 클래스를 둔다. IEEE 표준 본문이 아니다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-355",
+      "org": "srfiorini (IEEE1872-owl GitHub)",
+      "title": "IEEE1872-owl — cora-bare.owl (OWL specification of CORA)",
+      "published": null,
+      "url": "https://github.com/srfiorini/IEEE1872-owl/blob/master/cora-bare.owl",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "IEEE 1872-2015 CORA 의 개념·관계만 분리한 수작업 OWL 번역(제3자). 로봇·로봇 시스템 분류와 robotPart·equippedWith(로봇 환경이 로봇 시스템을 갖춤)·자율성 수준 속성을 둔다. IEEE 표준 본문이 아니다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md"
+      ]
+    },
+    {
+      "id": "ref-351",
+      "org": "KnowRob (knowrob GitHub)",
+      "title": "knowrob — README (dev branch)",
+      "published": null,
+      "url": "https://github.com/knowrob/knowrob",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "KnowRob 공식 저장소 README. RDF·OWL 기반 하이브리드 지식 베이스, 추론기 앙상블, 저장 백엔드, 온톨로지 기반 데이터 접근을 설명한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md"
+      ]
+    },
+    {
+      "id": "ref-352",
+      "org": "Järvenpää, E., Siltala, N., Hylli, O., Nylund, H., & Lanz, M.",
+      "title": "Semantic rules for capability matchmaking in the context of manufacturing system design and reconfiguration",
+      "published": "2023",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/0951192X.2022.2081361",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 제품·자원 온톨로지와 SPIN 규칙으로 결합 능력 파라미터를 추론하고 제품 요구와 자원 능력을 비교하는 능력 매칭 의미 규칙(IJCIM 36(1) 128-154, 온라인 2022-06-07).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-353",
+      "org": "Köcher, A., Vieira da Silva, L. M., & Fay, A.",
+      "title": "Automated Process Planning Based on a Semantic Capability Model and SMT",
+      "published": "2023-12",
+      "url": "https://arxiv.org/abs/2312.08801",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 의미 능력 모델과 SMT 로 제품 생산·자율 로봇 임무에 필요한 능력 순서를 찾는 공정 계획 프리프린트(AAAI 2024 CAIPI 워크숍).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-245",
+      "org": "IDTA (admin-shell-io/submodel-templates)",
+      "title": "IDTA 02047-1-0 Template_TechnicalDataForAGV.json",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/blob/main/published/Technical%20Data%20for%20Automated%20Guided%20Vehicles/1/0/IDTA%2002047-1-0%20Template_TechnicalDataForAGV.json",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이번 실행에서는 다시 열지 않았다(2026-09-25-16 실행에서 원문 확인). 무인운반차 기술 데이터 서브모델 템플릿으로 적재 질량·명세값·운용값·부착 인터페이스 속성을 정의한다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/tracks/manual-capability-ontology/ontology-draft.md",
+        "docs/tracks/manual-capability-ontology/model-standard-comparison.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    },
+    {
+      "id": "ref-236",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation",
+      "published": "2026-08-11",
+      "url": "https://doi.org/10.3390/electronics15163562",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 로봇·작업·장소의 의미 모델과 혼합 추론으로 이종 로봇의 수행 가능성과 적재 상태별 장소 도달 가능성을 판정하는 방법을 제안한 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+        "docs/ideas/robot-capability-ontology.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [],
+  "standards_updates": [
+    {
+      "name": "KnowRob (하이브리드 지식 베이스)",
+      "kind": "오픈소스",
+      "org": "KnowRob (knowrob GitHub)",
+      "url": "https://github.com/knowrob/knowrob",
+      "related_areas": [
+        5
+      ],
+      "summary": "RDF·RDFS·OWL 어휘의 맥락화된 트리플로 지식을 표현하고 여러 추론기의 결과를 결합하는 로봇용 하이브리드 지식 베이스. 현재 dev 브랜치는 C++ 구현이며 Prolog 는 선택 지원이다(확인일 2026-09-25).",
+      "ref_id": "ref-351"
+    },
+    {
+      "name": "IEEE1872-owl (CORA 공개 OWL 번역, 제3자)",
+      "kind": "오픈소스",
+      "org": "srfiorini (IEEE1872-owl GitHub)",
+      "url": "https://github.com/srfiorini/IEEE1872-owl/blob/master/cora-bare.owl",
+      "related_areas": [
+        5,
+        28
+      ],
+      "summary": "IEEE 1872-2015 CORA 의 개념·관계만 분리한 제3자 수작업 OWL 번역. 로봇·로봇 시스템 분류와 부품·자율성 수준 속성을 둔다. IEEE 표준 본문이 아니다.",
+      "ref_id": "ref-355"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 1 페이지 3절 q1-03 과 비교표 KnowRob 칸: KnowRob 자체가 전제조건·파라미터 범위·실패를 어떻게 표현하는지는 README 만으로 판정할 수 없다. KnowRob 이 쓰는 온톨로지 파일(또는 SOMA·DUL 연결 문서)을 원문으로 확인할 필요가 있다.",
+    "비교표 PDDL 행: 전제조건·효과 외 파라미터 범위·완료 확인·오류 표현은 검색 요약 수준이다. PDDL 원 명세 또는 공개 문서 원문 대조가 필요하다.",
+    "비교표 SSN/SOSA·SOMA 행: SOSA 핵심 모듈(Actuation·Procedure)과 SOMA 의 다른 모듈(SOMA-OBJ 등)을 열지 않아 부재 관찰이 확정되지 않았다. 해당 파일 원문 대조가 필요하다.",
+    "단계 1 페이지 q1-07: 2.x 비교가 2.1.0 태그 기준이다. VDA 5050 2.0.0 게시판(PDF)의 팩트시트 필드와 2.1.0 태그 스키마가 필드 단위로 같은지, localizationParameters 블록이 게시판에 있는지 확인이 필요하다.",
+    "IEEE 1872-2015·1872.2-2021 표준 원문과 제3자 OWL 구현·번역의 차이는 미확인이다. 공식 요약·공개 초안으로 확인할 수 있는지 조사가 필요하다.",
+    "능력 매칭 논문 2건(Järvenpää 외 2023, Köcher 외 2023)은 원문 미열람이다. 원문 열람으로 규칙 형식과 결합 능력 추론 방식을 확인하면 q4-07 답에 쓸 수 있다.",
+    "다음 단계 1 실행: q1-08(MassRobotics 식별 보고 필드)은 실행 2026-09-25-16 의 원문 확인 finding 으로 답할 수 있다. q1-09(ECLASS·IEC CDD 범위 능력 항목) 조사가 단계 전환의 막힌 질문으로 남아 있다.",
+    "파이프라인 담당 요청(조사 아님): 트랙 단계 페이지·온톨로지 초안·비교표의 상태 줄과 H1 버전 표기는 첫 H2 앞에 있어 patches 로 갱신할 수 없다. 이번 실행은 그 세 페이지를 전체 content 로 보냈다. patches 가 H2 앞 머리 영역을 다룰 수 있게 하거나 상태 줄을 자동 영역으로 바꾸는 처리가 필요하다."
+  ],
+  "fixes_applied": [
+    "q1-03·q1-06·q1-07 답함 처리 — 단계 페이지 2절 표 상태를 답함(실행 2026-09-25-23, 앵커)으로 바꾸고, 3절 q1-03 소제목에서 '(부분 답)'을 빼 '### q1-03 … {#q1-03}'으로, q1-06·q1-07 소제목에 {#q1-06}·{#q1-07}을 붙였으며, 4절 남은 불확실성에 KnowRob 판정이 README 범위에 그친다는 점과 PDDL 행이 검색 요약 수준이라는 점을 남겼다.",
+    "q1-07 2.x 기준 명시 — q1-07 답 첫 단락에 '2.x'가 공식 저장소 2.1.0 태그 스키마 기준이고 2.0.0 태그에는 팩트시트 스키마가 없으며 명세는 RELEASE CANDIDATE 표기라 2.0.0 게시판과 대조하지 못했음을 적고, f3·f4 를 '확인된 이름 변경'·'확인된 추가 필드'로 쓰고 완결 목록이 아니라고 밝혔다(4절·비교표에도 같은 표기).",
+    "q1-02 절 팩트시트 문장 교체 — '[추정][^ref-031]' 블록 구성 문장을 2.1.0 태그 구성([사실][^ref-348])과 3.0.0 main 구성([사실][^ref-228])으로 판을 나눠 바꿔 쓰고, 2.0.0 RC 문서의 localizationParameters 는 [추정]으로 병기했다.",
+    "f15·f14 문구 수정 — 단계 페이지 q1-03 학술 온톨로지 단락, 비교표 CORA 행, 아이디어 페이지에서 '부품·장착 관계'를 '부품 관계(robotPart)와 로봇 환경이 로봇 시스템을 갖춘다는 관계(equippedWith)'로 쓰고, equippedWith 를 로봇–장착 장비 관계로 설명하지 않았다.",
+    "f16 판 구분 — 단계 페이지 q1-01 절에 'KnowRob 2.0(2018 논문)은 Prolog 구현'(ref-027) 기존 문장을 그대로 두고 '현재 dev 브랜치는 C++ 구현, Prolog 선택 지원'(ref-351, 확인일 2026-09-25) 문장과 판 차이 설명을 더했다. 비교표 KnowRob·SOMA 행 종류 칸에도 두 판을 병기했다.",
+    "f20 문구 수정 — 단계 페이지 q1-06 답과 아이디어 페이지 3절에서 '능력 매칭을 위한 의미 규칙(SPIN)을 제시했다'로 쓰고 기준일을 2023(IJCIM 36(1), 온라인 2022-06-07)으로 적었다.",
+    "ref-229 각주 유지 — 단계 페이지·온톨로지 초안·비교표의 ref-229 각주는 기존 줄을 그대로 쓰고 reference_updates 에 ref-229 를 넣지 않았다.",
+    "원문 미열람 표기 — ref-245·ref-236·ref-352·ref-353 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고(ref-245 는 단계 페이지·온톨로지 초안·비교표에서 추가) reference_updates 에 source_unopened: true 로 두었으며, ref-348·ref-354·ref-235·ref-349·ref-350·ref-355·ref-351·ref-228 에는 붙이지 않았다.",
+    "제3자 구현·RC 표시 유지 — ref-350·ref-355 는 본문과 비교표 칸에 '제3자 OWL 구현·번역이며 IEEE 표준 본문이 아님'을, ref-354 는 'RELEASE CANDIDATE 표기 문서'임을 적었다.",
+    "온톨로지 초안 승인 변경 3건 반영·v0.3 — (1) 기능 속성에 한정자(요구 / 제공)(f19·f20)를 더하고 작업 요구 메모는 [추정]으로 두었고, (2) 새 개념 실행 상태를 확정으로 넣되 관계는 넣지 않았으며, (3) 장착 장비에 부착 인터페이스(f23)·적재 취급 장치 위치(f22)를 더해 초안 → 확정으로 바꿨다. H1·프런트매터 ontology_version·track_updates.ontology_draft_version 을 0.3 으로 맞추고 4절 다이어그램에 실행 상태 노드와 도식 아래 문장을 고쳤다.",
+    "온톨로지 초안 6절 질문 3건 — (a) 로봇 펌웨어 버전 → 구성 버전(f22, q6-02 몫), (b) 제약 종류에 운용 구역·환경 조건·충전 조건(f8·f22, 실행 조건–제약 경계와 충돌), (c) '로봇 / 장착 장비를 갖춘다'와 CORA equippedWith 의 대응(f14, 정의역 RoboticEnvironment·치역 RoboticSystem 불일치)을 6절 질문으로 두었다.",
+    "ROP용 능력 개념 요구 목록 수록 — 온톨로지 초안 6절에 '[추정] ROP용 능력 개념 요구 목록 초안(실행 2026-09-25-23, f24)'과 아홉 후보 표를 싣고 항목마다 v0.3 반영(요구·제공 한정자, 실행 상태, 부착 인터페이스·적재 취급 장치 위치)·미반영 — 6절 질문(구성 버전, 운용 구역·환경 조건, 충전 조건)·변경 제안 없음(속성 값·범위, 전제·사후조건, 결합 능력)을 표시했다.",
+    "새 질문 처리 — f25 질문은 q4-07 과 중복이라 backlog_updates 에 넣지 않고 단계 페이지 5절 표 아래에 중복 사유를 적었으며, f6 질문은 q6-05(단계 6. 변경 관리·운영·거버넌스 조사, 근거 f6)로 등록했다.",
+    "백로그 정리 — backlog_updates 에서 q1-10·q4-11·q5-08 을 폐기로 바꾸고, 단계 페이지 2절 표에 q1-10 을 두지 않고(표 아래에 폐기 사유 기재) 5절 아래에도 폐기 사실을 적었다.",
+    "6절·상태 줄 — 비교표 조건은 충족(KnowRob 칸 'README 범위에서 판정 불가 — SOMA 행 참조'), 요구 목록 조건은 미충족(초안은 실었으나 일부만 개념에 반영)으로 적고 전환 줄을 '아니오(요구 목록 일부 미반영, 막힌 질문 q1-08·q1-09)'로 썼으며, 상태 줄을 열린 질문 2건·답한 질문 7건으로 백로그와 맞췄다.",
+    "모델·표준 비교표 — IEEE 1872 CORA(f14·f15), IEEE 1872.2(f12·f13), KnowRob·SOMA(f10·f11·f16·f17), W3C SSN/SOSA(f8·f9) 행을 채우고 상태를 '확인(제3자 구현/편집본 원문 열람)'으로 적었으며, 부재 관찰은 태그 바로 뒤 괄호 금지 규칙(부록 R-4)에 따라 '없음(열람 파일 기준, 부재 확정 아님) [추정]' 형식으로 적고, VDA 5050 행에 2.x 기준이 2.1.0 태그임을 밝혔다.",
+    "용어집 — '요구 능력·제공 능력' 정의 끝에 '이 위키의 온톨로지 초안에서는 capability 를 기능으로 부르므로 요구·제공 한정자에 해당한다'를 더했다.",
+    "docs/ideas/robot-capability-ontology.md: 각주 정의 3개를 참고문헌에서 만들어 붙임: ref-348, ref-352, ref-353"
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md",
+    "ontology_draft_version": "0.3",
+    "backlog_updates": [
+      {
+        "id": "q1-03",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-03"
+      },
+      {
+        "id": "q1-06",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-06"
+      },
+      {
+        "id": "q1-07",
+        "status": "답함",
+        "answer_link": "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-07"
+      },
+      {
+        "id": "q6-05",
+        "status": "열림",
+        "answer_link": null,
+        "question": "VDA 5050 2.x 와 3.0.0 팩트시트를 함께 받는 현장에서 판마다 다른 필드 이름(maxWeight→maximumWeight 등)을 능력 온톨로지의 판 무관 속성으로 정규화하고, 판이 바뀔 때 능력 정의를 어떻게 재검증하는가? (q1-07 에서 파생)",
+        "stage": 6,
+        "origin": "f6"
+      },
+      {
+        "id": "q1-10",
+        "status": "폐기",
+        "answer_link": null
+      },
+      {
+        "id": "q4-11",
+        "status": "폐기",
+        "answer_link": null
+      },
+      {
+        "id": "q5-08",
+        "status": "폐기",
+        "answer_link": null
+      }
+    ],
+    "log_entry": "답한 질문: q1-03(학술 온톨로지 행 원문 대조 f8~f18), q1-06(요구·제공 능력 비교와 요구 목록 초안 f19~f25), q1-07(VDA 5050 2.1.0 태그 대 main 팩트시트 필드 대조 f1~f7) / 새 질문: q6-05(f6, 단계 6. 변경 관리·운영·거버넌스 조사). f25 질문은 q4-07 과 중복이라 등록하지 않음. 중복 등록된 q1-10·q4-11·q5-08 폐기 / 온톨로지 변경: v0.2 → v0.3: 기능 속성 '한정자(요구 / 제공)' 추가(f19·f20), 개념 '실행 상태' 추가(f10), 장착 장비 속성 '부착 인터페이스'(f23)·'적재 취급 장치 위치'(f22) 추가와 장착 장비 초안 → 확정. 거부(6절 질문): 로봇 구성 버전(f22), 제약 종류 값 추가(f8·f22), CORA equippedWith 대응 메모(f14). ROP용 능력 개념 요구 목록 초안(f24) 6절 수록 / 완료 조건 평가: 미충족(부족: ROP용 능력 개념 요구 목록 초안의 일부만 온톨로지 초안에 반영. 비교표는 이번 실행으로 모든 후보 행이 채워짐) / 세부영역 반영 제안: 5. 로봇 능력·작업 온톨로지 3건(4·7·8절), 9. 로봇·제조사 관제 연동 1건(7절), 16. 공용 자원·충전·에너지 최적화 1건(7절) / 다음 실행 제안: q1-08(실행 2026-09-25-16 의 MassRobotics 식별 보고 확인 결과로 답 가능), q1-09",
+    "overview_progress": "단계 1 진행 중 — 열린 질문 2, 답함 7, 완료 조건 미충족(ROP용 능력 개념 요구 목록 초안 일부만 온톨로지 초안 v0.3 에 반영, 막힌 질문 q1-08·q1-09)"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 5,
+      "section": "4. 핵심 개념과 용어",
+      "summary": "요구 능력·제공 능력의 구분과 능력 매칭(IDTA 02020 README 의 요구·제공 능력 비교, Järvenpää 외 2023 의 SPIN 능력 매칭 규칙). 이 위키 온톨로지 초안에서는 기능의 한정자(요구 / 제공)로 표현한다. 분류 원문 SCM 질문과 요구–제공 속성 비교 규칙의 연결은 [추정]으로 둔다(실행 2026-09-25-23, f19·f20·f25)."
+    },
+    {
+      "area_no": 5,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "학술 온톨로지가 다섯 정보 항목을 담는 정도: SOMA-ACT 는 전제·완료·오류(실행 상태 6종, 요구 초기·기대 종료 상황), SSN System Capabilities 는 범위·환경 조건을 일부 담고, CORA 제3자 OWL 번역·IEEE 1872.2 제3자 구현은 담지 않으며, 적재 제약은 VDA 5050 적재 세트 같은 산업 규격에만 있다(열람 파일 기준, 실행 2026-09-25-23, f8~f15·f18)."
+    },
+    {
+      "area_no": 5,
+      "section": "8. 대표 연구와 자료",
+      "summary": "능력 매칭 연구: Järvenpää 외(IJCIM 36(1), 2023)의 결합 능력 추론·능력 매칭 SPIN 규칙, Köcher·Vieira da Silva·Fay(arXiv 2312.08801)의 의미 능력 모델+SMT 공정 계획. 제조 공정 연구이므로 방법 선례로만 소개(원문 미열람, 실행 2026-09-25-23, f20·f21)."
+    },
+    {
+      "area_no": 9,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 팩트시트 2.x(공식 저장소 2.1.0 태그)와 3.0.0(main)의 확인된 필드 이름 변화(agvGeometry→mobileRobotGeometry, maxWeight→maximumWeight 등)와 추가 필드(ZONE 범위, 필수 pauseAllowed·cancelAllowed, supportedZones, batteryCharging). 어댑터가 두 판을 함께 받으려면 필드 이름 대응표로 정규화가 필요할 것으로 보인다([추정], 실행 2026-09-25-23, f3~f6)."
+    },
+    {
+      "area_no": 16,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "VDA 5050 3.0.0(main) 팩트시트 구성 블록의 충전 설정 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)이 로봇 선언의 일부로 추가돼 충전 시점 계획의 입력이 될 수 있다(실행 2026-09-25-23, f4·f22)."
+    }
+  ]
+}

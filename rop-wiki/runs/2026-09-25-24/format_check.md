@@ -1,23 +1,3 @@
 # 형식 검증 결과(pages)
 
-- 판정: 오류 11건
-- 분량 초과 자동 분리:
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-09-25-area08-s7.md (1,454자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "4. 핵심 개념과 용어" → docs/topics/2026/2026-09-25-area08-s4.md (1,436자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "6. 대표 접근법과 기술" → docs/topics/2026/2026-09-25-area08-s6.md (1,386자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "8. 대표 연구와 자료" → docs/topics/2026/2026-09-25-area08-s8.md (1,250자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-09-25-area08-s10.md (1,091자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "11. 열린 질문" → docs/topics/2026/2026-09-25-area08-s11.md (1,060자)
-    - docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md "3. 왜 중요한가" → docs/topics/2026/2026-09-25-area08-s3.md (694자)
-- 오류:
-    - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
-    - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 07-cargo-inventory-and-asset-identification-and-tracking.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 06-map-space-and-location-model.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md
-    - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area08-s10.md: 깨진 링크 05-robot-capability-and-task-ontology.md
+- 판정: 통과

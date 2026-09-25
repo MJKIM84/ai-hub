@@ -1,0 +1,686 @@
+{
+  "run_id": "2026-09-25-27",
+  "outline": [
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "판매사 조사 주장으로는 연결 중단이 자동화 자산 정지의 한 원인으로 보고되며[추정][^ref-480], 국내에서는 와이파이 간섭·지연 대응으로 이음5G가 도입되었다[추정] 벤더 주장[^ref-478].",
+      "planned_findings": [
+        "f20",
+        "f19",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 750,
+      "summary": "포그 컴퓨팅[사실][^ref-474], CAP 정리[사실][^ref-481], QoS[사실][^ref-469], 베이스·호라이즌[사실][^ref-031], MQTT 5.0 세션·유언[사실][^ref-477], DDS 분산 발견[사실][^ref-468]을 정리한다.",
+      "planned_findings": [
+        "f11",
+        "f15",
+        "f5",
+        "f1",
+        "f16",
+        "f4"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 900,
+      "summary": "피킹 운반 중 외부망이 끊기면 현장 서버의 관제로 이미 받은 주문은 이어 가되 WMS 재고 확정은 재연결 뒤 맞춰야 할 것으로 보인다[추정][^ref-481].",
+      "planned_findings": [
+        "f22",
+        "f1",
+        "f2",
+        "f17",
+        "f18",
+        "f7"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1300,
+      "summary": "분산 발견·라우터 연결[사실][^ref-470], 손실 전제 메시지 설계[사실][^ref-031], 엣지 단절 중 운영[사실][^ref-471], 계산 이전 선례[추정][^ref-475], 관제 이중화·다거점[추정][^ref-227]을 다룬다.",
+      "planned_findings": [
+        "f4",
+        "f6",
+        "f7",
+        "f2",
+        "f3",
+        "f9",
+        "f10",
+        "f12",
+        "f13",
+        "f14",
+        "f21",
+        "f8",
+        "f25",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "VDA 5050, ROS 2 DDS·QoS, rmw_zenoh, Open-RMF free_fleet·rmf-web, KubeEdge, MQTT 5.0, NIST SP 500-325, 3GPP MEC·시간 민감 통신, DDS 보안 규격을 표로 정리한다[사실][^ref-031].",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f11",
+        "f16",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 550,
+      "summary": "NIST 포그 모델[사실][^ref-474], CAP 증명[사실][^ref-481], 클라우드 로보틱스 서베이[사실][^ref-476], FogROS2[추정][^ref-475], 인프라 기반 AMR[추정][^ref-479], ETRI 초저지연 논문[사실][^ref-482].",
+      "planned_findings": [
+        "f11",
+        "f15",
+        "f12",
+        "f13",
+        "f14",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 600,
+      "summary": "ROP는 통신 품질 요구·연결 감시·재연결 뒤 상태 재구성을 맡고 무선망 구축과 로봇 탑재 주행·회피는 연계 대상으로 두는 것으로 보인다[추정][^ref-031].",
+      "planned_findings": [
+        "f24",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 650,
+      "summary": "9. 로봇·제조사 관제 연동, 12. 명령·작업 실행의 신뢰성, 8. 실시간 세계 상태·데이터 일관성, 1. 주문·업무 시스템 연계, 20. 예외 복구·재계획·업무 연속성, 26. 사이버보안·접근권한·개인정보, 3. 처리능력·거점·설비 계획, 27. AI·학습·적응과 모델 운영과 잇는다[추정][^ref-031].",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f7",
+        "f17",
+        "f20",
+        "f22",
+        "f25",
+        "f12"
+      ]
+    },
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 450,
+      "summary": "외부망 단절 운영 기준, 관제 통신의 허용 지연·손실률, 다거점 역할 분담 사례를 새 열린 질문으로 올린다.",
+      "planned_findings": [
+        "f22",
+        "f3",
+        "f25"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area11-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 \"6. 대표 접근법과 기술\" 절(2,039자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area11-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 \"4. 핵심 개념과 용어\" 절(1,171자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area11-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 \"8. 대표 연구와 자료\" 절(855자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area11-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(769자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area11-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(737자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 11. 분산 시스템·통신·컴퓨팅 구조 | 섹션 3~11 신규 작성(외부망 단절 운영 범위 추론, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 1차 조건부 승인 수정 16건 이행 | run 2026-09-25-27",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 11. 분산 시스템·통신·컴퓨팅 구조: 외부망이 끊겨도 현장에서 어디까지 운영하는가를 VDA 5050·ROS 2·엣지 플랫폼 문서로 정리(신뢰도 low, 핵심 답은 추정)",
+    "category_recent": "2026-09-25 — 11. 분산 시스템·통신·컴퓨팅 구조: 섹션 3~11 신규 작성(통신 손실 전제 설계, 엣지 단절 운영, 층별 역할 분담, 피킹 시나리오)",
+    "area_recent": "2026-09-25 — 11. 분산 시스템·통신·컴퓨팅 구조: 섹션 3~11 신규 작성, 새 열린 질문 3건 (실행 2026-09-25-27)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "fog-computing",
+      "term_ko": "포그 컴퓨팅",
+      "term_en": "Fog Computing",
+      "definition": "클라우드와 말단 장치 사이에 계산·저장·네트워크 자원을 계층으로 두어 지연에 민감한 분산 애플리케이션을 현장 가까이에서 처리하게 하는 컴퓨팅 모델이다.",
+      "description": "NIST SP 500-325(2018-03)가 개념 모델을 제시했다(원문 미열람).",
+      "related_areas": [
+        11
+      ],
+      "sources": [
+        "ref-474"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "cap-theorem",
+      "term_ko": "CAP 정리",
+      "term_en": "CAP Theorem",
+      "definition": "네트워크 분할이 일어날 수 있는 분산 서비스는 일관성과 가용성을 동시에 완전히 보장할 수 없다는 정리이다.",
+      "description": "Gilbert·Lynch(2002)가 비동기 네트워크 모델에서 증명했다(원문 미열람).",
+      "related_areas": [
+        11,
+        8
+      ],
+      "sources": [
+        "ref-481"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "private-5g-network",
+      "term_ko": "5G 특화망(이음5G)",
+      "term_en": "Private 5G Network (e-Um 5G)",
+      "definition": "이동통신사가 아닌 기업·기관이 건물·공장 같은 특정 구역 단위로 5G 주파수를 할당받아 직접 구축해 쓰는 국내 5G 통신망이다.",
+      "description": "국내 물류센터 적용 사례로 CJ대한통운 이천 2풀필먼트센터 발표(2023-04, 벤더 주장)가 있다.",
+      "related_areas": [
+        11
+      ],
+      "sources": [
+        "ref-478"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "base-horizon-vda-5050",
+      "term_ko": "베이스·호라이즌",
+      "term_en": "Base / Horizon (VDA 5050)",
+      "definition": "VDA 5050 주문에서 관제가 이미 해제해 로봇이 주행해도 되는 경로(베이스)와 계획만 되어 있고 아직 해제되지 않은 경로(호라이즌)를 구분하는 개념이다.",
+      "description": "VDA 5050 3.0.0 기준 로봇은 브로커와 연결이 끊겨도 해제된 노드까지 주문을 수행한다. 용어집의 VDA 5050 항목과 상호 링크한다.",
+      "related_areas": [
+        11,
+        9,
+        12
+      ],
+      "sources": [
+        "ref-031"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 공식 명세 본문(main 은 3.0.0 판). 연결 끊김 시 해제된 노드까지 수행, 베이스·호라이즌, 토픽별 MQTT QoS, last will, 무선망 전제를 담는다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-256",
+      "org": "Open Robotics (open-rmf)",
+      "title": "free_fleet — README (A free fleet management system)",
+      "published": null,
+      "url": "https://github.com/open-rmf/free_fleet",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 무료 플릿 관리 시스템 README. Zenoh 통신 계층, 로봇별 zenoh-bridge-ros2dds 네임스페이스, 라우터 배치, 도메인 분리를 설명한다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-227",
+      "org": "Mobile Industrial Robots(MiR)",
+      "title": "MiR Fleet Enterprise Documentation Version 1.2 (en) — 유통사(jk.de) 게재본",
+      "published": "2025-01",
+      "url": "https://jk.de/media/a2/50/ce/1738939330/mir_fleet_enterprise_documentation_1.2_en.pdf?ts=1738939330",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MiR 플릿 관리 소프트웨어 Fleet Enterprise 문서(유통사 게재본). 선택적 이중화와 클라우드·가상 환경 배치를 소개한다(벤더 주장).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-468",
+      "org": "ROS 2 Design",
+      "title": "ROS on DDS",
+      "published": null,
+      "url": "https://design.ros2.org/articles/ros_on_dds.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 가 DDS 를 미들웨어로 채택한 이유를 설명하는 설계 문서. 중앙 마스터 없는 분산 발견과 QoS 조정으로 불안정한 무선망에 대응하는 점을 다룬다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-469",
+      "org": "ROS 2 Design",
+      "title": "ROS 2 Quality of Service policies",
+      "published": null,
+      "url": "https://design.ros2.org/articles/qos.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "ROS 2 QoS 정책(이력·깊이·신뢰성·지속성)과 센서 데이터·서비스·파라미터용 프로파일을 설명하는 설계 문서.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-470",
+      "org": "ROS 2 (ros2/rmw_zenoh GitHub)",
+      "title": "rmw_zenoh — README (A ROS 2 RMW implementation based on Zenoh)",
+      "published": null,
+      "url": "https://github.com/ros2/rmw_zenoh",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Zenoh 기반 ROS 2 미들웨어 구현의 README. 라우터 기반 발견과 가십, 멀티캐스트 기본 비활성, 호스트 간 라우터 연결 설정을 설명한다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-471",
+      "org": "KubeEdge (CNCF, kubeedge GitHub)",
+      "title": "KubeEdge — README",
+      "published": null,
+      "url": "https://github.com/kubeedge/kubeedge",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "쿠버네티스를 엣지로 확장하는 오픈소스 README. 클라우드·엣지 구성요소와 클라우드–엣지 단절 시 엣지 자율 동작을 설명한다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-472",
+      "org": "Microsoft",
+      "title": "Operate Azure IoT Edge devices offline",
+      "published": "2026-03-02",
+      "url": "https://learn.microsoft.com/en-us/azure/iot-edge/offline-capabilities",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Azure IoT Edge 장치의 오프라인 동작(메시지 보관·로컬 인증·로컬 통신, 메시지 수명 기본값, 재연결 동기화)을 설명하는 제품 문서(MicrosoftDocs/azure-docs 저장소 원본).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-473",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf-web — README",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf-web",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 웹 대시보드·API 서버 저장소 README. API 서버와 RMF(ROS 2)의 연결, 기본 비영속 데이터베이스, 어댑터 엔드포인트 설정을 설명한다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-474",
+      "org": "NIST",
+      "title": "NIST Special Publication (SP) 500-325, Fog Computing Conceptual Model",
+      "published": "2018-03",
+      "url": "https://csrc.nist.gov/pubs/sp/500/325/final",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 포그·미스트 컴퓨팅의 개념 모델과 클라우드 기반 IoT 모델과의 관계를 제시한 NIST 특별간행물.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-475",
+      "org": "Ichnowski, J., Chen, K. 외(UC Berkeley AUTOLAB)",
+      "title": "FogROS2: An Adaptive Platform for Cloud and Fog Robotics Using ROS 2",
+      "published": "2022-05",
+      "url": "https://arxiv.org/abs/2205.09778",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. ROS 2 노드를 클라우드·포그로 넘기는 오픈소스 플랫폼 FogROS2 와 SLAM·파지·동작 계획 지연 개선 결과(저자 보고값)를 보고한 논문(ICRA 2023).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-476",
+      "org": "Kehoe, B., Patil, S., Abbeel, P., & Goldberg, K.",
+      "title": "A Survey of Research on Cloud Robotics and Automation",
+      "published": "2015",
+      "url": "https://escholarship.org/uc/item/3t04p9m1",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 클라우드가 로봇·자동화에 주는 네 가지 이점과 과제를 정리한 서베이(IEEE Transactions on Automation Science and Engineering).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-477",
+      "org": "OASIS",
+      "title": "MQTT Version 5.0",
+      "published": "2019-03",
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. MQTT 5.0 OASIS 표준. 세션 만료·메시지 만료·유언 지연 간격, 공유 구독 등을 정의한다.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-478",
+      "org": "CJ대한통운",
+      "title": "CJ대한통운, 물류센터 최초 5G 개통 … 속도 1000배 빨라진다",
+      "published": "2023-04",
+      "url": "https://www.cjlogistics.com/ko/newsroom/news/NR_00001046",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. CJ대한통운이 CJ올리브네트웍스와 이천 2풀필먼트센터에 5G 특화망 이음5G 를 구축했다고 알린 보도자료. 와이파이 간섭·지연 문제와 로봇·설비 확대 계획을 적는다(벤더 주장).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-479",
+      "org": "Brorsson, E. 외",
+      "title": "Infrastructure-based Autonomous Mobile Robots for Internal Logistics -- Challenges and Future Perspectives",
+      "published": "2025-12",
+      "url": "https://arxiv.org/abs/2512.15215",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 인프라 장착 센서·클라우드 컴퓨팅·로봇 탑재 지능을 결합한 공장 내 물류 AMR 참조 구조와 과제를 정리한 프리프린트(제출일 2025-12-17, Brorsson 외 14명).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-480",
+      "org": "FreightWaves",
+      "title": "Warehouses face $100K-hour downtime risk as cloud outages mount",
+      "published": null,
+      "url": "https://www.freightwaves.com/news/warehouses-face-100k-hour-downtime-risk-hybrid-wms",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 하이브리드 WMS 판매사 Synergy Logistics 의 창고 운영 중단·클라우드 의존 조사 보고서(판매사 조사 주장)를 전한 기사.",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-481",
+      "org": "Gilbert, S., & Lynch, N.",
+      "title": "Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services",
+      "published": "2002-06",
+      "url": "https://dl.acm.org/doi/10.1145/564585.564601",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 분산 서비스가 일관성·가용성·분할 내성을 동시에 만족할 수 없음을 증명한 논문(ACM SIGACT News 33(2)).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-482",
+      "org": "ETRI Journal 게재 논문(Jun 외, 한국전자통신연구원 발행)",
+      "title": "Ultra-low-latency services in 5G systems: A perspective from 3GPP standards",
+      "published": "2020",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.4218/etrij.2020-0200",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 공장 자동화 등 초저지연 서비스 요구와 3GPP 의 MEC·시간 민감 통신 표준화 현황(2020년 기준)을 정리한 논문(ETRI Journal 42(5) 721-733).",
+      "cited_by": [
+        "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md"
+      ],
+      "source_unopened": true
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "외부망이 끊겨 클라우드 WMS 와 단절된 동안 현장 ROP 가 이미 받은 주문·작업을 어디까지 계속 실행하고, 재연결 뒤 재고·완료 기록을 어떻게 맞추는지 정한 국내 물류센터 운영 기준이나 사례가 있는가?",
+      "areas": [
+        11,
+        1,
+        20
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "물류센터 로봇 관제 통신(와이파이·5G 특화망)에서 명령·상태 메시지의 허용 지연·손실률·로밍 중단 시간을 정한 표준이나 공개 측정 자료가 있는가?",
+      "areas": [
+        11,
+        9
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "여러 거점의 로봇 운영을 한곳에서 관리할 때 거점별 현장 서버와 중앙 클라우드 사이 역할 분담과 데이터 동기화를 공개한 오픈소스 구성이나 사례가 있는가?",
+      "areas": [
+        11,
+        3
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    },
+    {
+      "step": "피킹",
+      "item": "완료·인계",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "11. 분산 시스템·통신·컴퓨팅 구조"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "ROS 2 설계 문서 — ROS on DDS · QoS 정책",
+      "kind": "프레임워크",
+      "org": "ROS 2 Design",
+      "url": "https://design.ros2.org/articles/qos.html",
+      "related_areas": [
+        11,
+        9
+      ],
+      "summary": "ROS 2 의 DDS 기반 분산 발견(중앙 마스터 없음)과 불안정한 무선망을 전제한 QoS 정책·프로파일을 설명하는 설계 문서.",
+      "ref_id": "ref-469"
+    },
+    {
+      "name": "rmw_zenoh (Zenoh 기반 ROS 2 미들웨어)",
+      "kind": "오픈소스",
+      "org": "ROS 2 (ros2/rmw_zenoh)",
+      "url": "https://github.com/ros2/rmw_zenoh",
+      "related_areas": [
+        11,
+        9
+      ],
+      "summary": "Zenoh 라우터를 거친 가십 발견, 멀티캐스트 기본 비활성, 호스트 간 라우터 연결 설정을 제공하는 ROS 2 미들웨어 구현.",
+      "ref_id": "ref-470"
+    },
+    {
+      "name": "KubeEdge",
+      "kind": "오픈소스",
+      "org": "KubeEdge (CNCF)",
+      "url": "https://github.com/kubeedge/kubeedge",
+      "related_areas": [
+        11,
+        20
+      ],
+      "summary": "쿠버네티스를 엣지로 확장하며 클라우드–엣지 단절 중에도 엣지 노드와 애플리케이션이 자율 동작하도록 설계된 오픈소스.",
+      "ref_id": "ref-471"
+    },
+    {
+      "name": "Open-RMF rmf-web (대시보드·API 서버)",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf-web",
+      "related_areas": [
+        11,
+        9
+      ],
+      "summary": "ROS 2 기반 RMF 와 웹 클라이언트 사이를 잇는 API 서버와 대시보드. 기본 비영속 데이터베이스, 설정으로 영속 저장소 지정.",
+      "ref_id": "ref-473"
+    },
+    {
+      "name": "MQTT Version 5.0",
+      "kind": "표준",
+      "org": "OASIS",
+      "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html",
+      "related_areas": [
+        11,
+        9
+      ],
+      "summary": "세션 만료·메시지 만료·유언 지연 간격과 공유 구독을 정의한 메시징 표준(원문 미열람).",
+      "ref_id": "ref-477"
+    },
+    {
+      "name": "NIST SP 500-325 Fog Computing Conceptual Model",
+      "kind": "프레임워크",
+      "org": "NIST",
+      "url": "https://csrc.nist.gov/pubs/sp/500/325/final",
+      "related_areas": [
+        11
+      ],
+      "summary": "클라우드와 말단 장치 사이의 지연 인식 포그 계층을 제시한 개념 모델(원문 미열람).",
+      "ref_id": "ref-474"
+    }
+  ],
+  "additional_research_requests": [
+    "5절·9절: 외부망 단절 중 물류센터 운영 범위(주문 지속·재고 확정·재연결 후 대사)를 정한 공개 운영 기준이나 국내 사례 — 현재 답(f22)이 추론뿐이다.",
+    "5절 제약: 3GPP TS 22.104 등 AGV·이동로봇 통신의 허용 지연·가용성 요구값 원문 — 리서치가 확인했으나 출처 상한으로 넣지 못했다.",
+    "5절·6절: VDA 5050 3.0.0 이 MQTT 5 세션 만료·메시지 만료를 쓰는지, 재연결 뒤 상태 재구성 절차를 규정하는지 — f17 추정을 사실로 확인할 근거가 없다.",
+    "8절: FogROS2 실험 조건(네트워크·클라우드 사양)과 Tanwani 외 포그 로보틱스 논문 원문 — 수치가 저자 보고값에 머문다.",
+    "6절: MiR Fleet Enterprise·HoST 등 관제 서버 이중화 방식(능동·대기 등)의 원문 확인 — 현재 벤더 주장 검색 요약뿐이다.",
+    "6절·10절: Open-RMF 또는 다른 오픈소스의 다거점 운영 공개 사례와 거점 간 WAN 장애 처리 자료.",
+    "3절: 창고 운영 중단 통계의 독립 출처(판매사 조사가 아닌 것)와 FreightWaves 기사의 비용 하한·발행일."
+  ],
+  "fixes_applied": [
+    "f3 메시지 크기 상한 구절 삭제 — 6절 '손실을 전제한 메시지 설계'에서 [추정]을 유지하고 '브로커 위치·허용 지연·대역폭·무선랜 요건 규정은 찾지 못했다(전문 대조 아님)'로만 썼다.",
+    "f3·f17 30초 표현 수정 — 5절 서술에서 '사건 발생 시와 적어도 30초마다(최대 간격 30초)'로 썼고 '최소 30초' 표현은 어디에도 쓰지 않았다.",
+    "f13 강등 — 6절·8절에서 [추정]으로 쓰고 '저자 보고값, 실험 조건 미확인'을 병기했으며 쿠버네티스·UDP 보안 통신·H.264 구절을 넣지 않았다.",
+    "f14 강등 — 6절·8절에서 [추정]으로 쓰고 '인프라 장착 센서·클라우드 컴퓨팅·로봇 탑재 지능을 결합한 참조 구조를 제시했다'까지만 썼으며 무선 TSN·on-premise 구절을 뺐다.",
+    "ref-479 기관 수정 — 각주와 reference_updates 의 기관을 'Brorsson, E. 외'로 고쳤다.",
+    "f20 비용 수정 — 3절에서 '시간당 최대 10만 달러, 하한 미확인'으로 쓰고 하이브리드 WMS 판매사 Synergy Logistics 의 조사 주장임을 유지했다.",
+    "f25 표현 수정 — 6절에서 'ROS 2 기반 RMF와 웹 클라이언트 사이의 별도 서비스인 rmf-web API 서버'로 썼고 별도 기계 배치 표현을 쓰지 않았다.",
+    "f23 범위 표시 — 6절 층별 역할 분담·도식과 9절 표에서 로봇 탑재부의 실시간 주행·회피를 분류 원문 9장 '로봇 자체 지능·제어'의 연계 대상으로 표시했다.",
+    "f13·f14·f19 범위 — 6절에 계산 이전을 '계산 배치 선례로만 참고'한다고 밝히고, 9절 표·주석에서 계산 이전은 연계 대상, 이음5G 무선망 구축은 통신 기반 연계 대상으로만 두었다.",
+    "10절 26. 사이버보안·접근권한·개인정보 연결 — f13 을 빼고 용어집 'DDS 보안 규격' 링크와 ref-009 각주로만 연결했다.",
+    "10절 8. 실시간 세계 상태·데이터 일관성 연결 — 이전 실행 finding 을 인용하지 않고 f17(재연결 뒤 상태 재구성) 근거의 연결 문장만 두었다.",
+    "10절 27. AI·학습·적응과 모델 운영 연결 — 연결 한 줄만 두고 내용은 그 페이지에서 다룬다고 적었으며 본문에 풀어 쓰지 않았다.",
+    "원문 미열람 각주 — ref-227, ref-474~ref-482 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
+    "벤더 주장 병기 — f10(Azure IoT Edge, 6절), f19(이음5G, 3절), f21(MiR 이중화, 6절)을 '[추정] 벤더 주장' 으로 썼다.",
+    "ref-031 직접 인용 1회 — 5절 서술의 'fulfills the order up to the last released node' 한 구절만 원문 인용하고 나머지 VDA 5050 내용은 재서술했다.",
+    "기준일 명시 — f18 은 '2020년 논문 기준'(5절·7절·8절), f1·f2 는 'VDA 5050 3.0.0(main, 확인일 2026-09-25) 기준'(4절·5절·6절·7절)으로 본문에 밝혔다.",
+    "분량 초과 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 본문 8,611자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,711자"
+  ]
+}

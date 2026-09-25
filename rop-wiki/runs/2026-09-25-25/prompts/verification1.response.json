@@ -1,0 +1,375 @@
+{
+  "duration_api_ms": 243415,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.270906,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 187804,
+    "cache_read_input_tokens": 826640,
+    "output_tokens": 18464,
+    "output_tokens_details": {
+      "thinking_tokens": 9110
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 187804,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 14308,
+        "cache_read_input_tokens": 255380,
+        "cache_creation_input_tokens": 8578,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 8578
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 111024,
+      "outputTokens": 6562,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 9,
+      "costUSD": 0.23383400000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 18464,
+      "cacheReadInputTokens": 826640,
+      "cacheCreationInputTokens": 187804,
+      "webSearchRequests": 0,
+      "costUSD": 2.0370719999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9110,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 16,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-25\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-408 원문(github_raw integration_doors.md)을 검증 단계에서 다시 열어 문 어댑터의 상태 감독자 역할, adapter_door_requests 토픽, 적절할 때만 전달한다는 문장을 확인했다. 단일 발행 주체(Open Robotics). 발행일 미확인.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-412 DoorMode.msg 원문(github_raw)에 MODE_CLOSED·MOVING·OPEN·OFFLINE·UNKNOWN 다섯 값이 있다. 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-409 원문(github_raw integration_lifts.md)에서 'only relaying the instructions to the lift node if it is deemed appropriate', 직접 요청은 'negated'되고 승강기 노드는 OPC 같은 프로토콜로 제어기와 통신한다는 내용을 확인했다. 단일 출처.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-411 LiftRequest.msg 원문(github_raw)에 session_id, REQUEST_END_SESSION·AGV_MODE·HUMAN_MODE, destination_floor, DOOR_CLOSED·DOOR_OPEN과 AGV 모드·사람 모드 주석이 있다. 단일 출처.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-410 LiftState.msg 원문(github_raw)에 층·문 상태·운행 상태·모드(설정 가능한 HUMAN·AGV, 읽기만 가능한 FIRE·OFFLINE·EMERGENCY, UNKNOWN)·session_id 가 있다. 단일 출처. 같은 URL 이 실행 2026-09-25-24 에서 ref-382 로 제안됐다(중복 id 가능성, 검증 노트 참조).\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-023 원문(data/source_texts, github_raw)에서 디스펜서·인제스터의 요청·결과·상태 메시지, perform_deliveries, 배송 4단계를 확인했다. 원문은 두 유형을 'sample workcells'라 부르므로 예시 구현으로 서술해야 한다. ref-047·ref-049 는 이번 실행에서 원문 미열람(재사용)이다. 세 출처 모두 Open Robotics 라 독립 교차가 아니다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-031 원문 2장 Scope 에서 'interfaces to peripheral equipment, infrastructure components, or external IT systems' 제외 문장을 확인했다(3.0.0 판). 발행일 미확인(oq-005 출처 충돌 관련).\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"핵심은 확인: 5.3 관제 기능 목록에 'Communication with peripheral systems such as doors, gates, elevators, etc.'가 있다. 다만 '설비 연동 책임을 관제 쪽에 둔다'는 해석은 과장이다. 같은 명세 Scope 는 운영자·통합사·제조사·관제 제공자 사이 책임을 배분하지 않는다고 적는다. 이 구절 삭제를 지시한다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-031 6.4.1·6.4.3 에서 RELEASE 구역, zoneRequests(ACCESS), responses 토픽의 GRANTED·QUEUED·REVOKED·REJECTED, releaseLossBehavior STOP·CONTINUE·EVACUATE, leaseExpiry 만료를 확인했다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-031 표 6 의 ACTION 구역 entryActions·duringActions·exitActions 를 확인했다. 명세는 이 구역을 문·승강기 연동에 쓰라고 규정하지 않는다(브리프도 적었다). 연동 수단으로 서술하지 않게 지시한다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 결과 일치(원문 미열람): KSSN 상세(ref-413)의 표제와 정책브리핑 보도자료(ref-414)가 검색됐다. 2021-11 제정과 행정안전부 협력은 스니펫에 있다. ZDNet(2021-11-11)·전기신문·KDI 도 같은 보도자료를 옮긴 것이라 독립 교차가 아니다. 일부 기사는 표제를 '시험 방법'으로 적지만 KSSN 표제는 '평가 방법'이다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 결과 일치(원문 미열람): 보도자료 스니펫에 속도 제어·보호 정지·높낮이 차·틈새 극복·추락·넘어짐 방지 기준 필요 문구가 있다. 보도자료의 설명일 뿐 KS B 7317 본문의 조항 구성은 미확인이다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 결과 일치(원문 미열람): ref-415(건설기술신문) 표제가 검색됐고, 이뉴스투데이·매일일보도 같은 단체표준 제정을 전한다. 협회 보도자료에서 나온 기사들이라 독립 교차가 아니다. 표준 번호·제정일은 미확인이다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 뒷받침(원문 미열람). ref-416 스니펫에서 23곳 단체 24명 협의체와 프로토콜(안)·시나리오(안) 협의를 확인했다. 과제명은 별도 기사(대한경제)에서 확인했지만 이 기사에서 협회는 주관기관이 아니라 공동연구기관이다. 'API 로 실시간 정보를 주고받는' 구절은 어느 스니펫에서도 확인하지 못했다. 사실 → 추정으로 강등하고 해당 구절 삭제를 지시한다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 결과 일치(원문 미열람): dev.kone.com Service Robot API 페이지가 검색됐다. 로봇이 KONE 승강기로 층간 이동한다는 스니펫과 호출·서비스 정보 API 목록 페이지가 있다. [추정] 벤더 주장으로 유지한다. 메시지 구조·인증은 미확인이다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검색 결과 일치(원문 미열람): ref-418(한국경제 2022-03) 표제가 검색됐다. 여러 기사가 클라우드 기반이라 별도 장비 없이 연결된다는 문구를 싣지만 모두 회사 보도자료가 원천이라 독립 교차가 아니다. [추정] 벤더 주장으로 유지한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 뒷받침(원문 미열람). '1년여 만에 60여 곳 참여'는 스니펫에서 확인했다. '배송로봇 40여 대 운행'은 이번 검증 검색 스니펫에 없다. 스니펫에는 '30여 개 현장 상용화', 세브란스병원 로봇 10대가 나온다. [추정] 벤더 주장은 유지하고 '배송로봇 40여 대' 수치를 삭제하게 한다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 뒷받침(원문 미열람). MDPI Electronics 14(5) 982(2025)의 실재와, 승강기 선택을 최적화하는 그래프 기반 다층 경로계획이라는 점은 확인했다. 이번 검증 검색 스니펫은 승강기 선택 기준을 총 경로 길이 최소화로 설명한다. 반면 브리프 스니펫은 대기 시간 감소를 적어 요약끼리 어긋난다. '승강기 대기 시간을 경로계획에 넣었다'는 확정할 수 없어 사실 → 추정으로 강등하고 해당 구절 삭제를 지시한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람, 재사용 ref-060, 참고문헌 목록에 있음): 논문 표제와 주장이 같다. 결과 수치는 쓰지 않는다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람, 재사용 ref-103): PMC 논문이 검색됐고 DOI 10.3390/s25061783(Sensors 2025)로 확인했다. 참고문헌의 발행일 '미확인'을 2025 로 갱신할 수 있다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람, 재사용 ref-163, 참고문헌 목록에 있음): 논문 표제가 주장과 같다. 연동 방식 세부는 미확인이다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 뒷받침(원문 미열람). 국토교통부 페이지 제목('올해 로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발부터 착수, … UAM·자율주행차 친화형 건축 기술개발 등도 순차 추진')은 검색 결과와 일치한다. '로봇이 승강기 등을 이용해 건물 안을 이동할 수 있게 하는'은 제목에 없는 부연이라 삭제를 지시하고, 사실 → 추정으로 강등한다. 발행일 미확인. 2025-05-28 스마트+빌딩 착수 보도와 같은 문서인지도 미확인이다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 추론 근거인 f6(ref-023)·f9(ref-031)가 원문으로 확인됐다. [추정] 유지. 분류 원문 SCM 질문에 대한 추정 수준의 답이며 정량 근거는 없다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 세션 점유(f4·f5)는 원문으로 확인했다. 병원·호텔 연구(ref-060·ref-103)는 원문 미열람이다. [추정] 유지. 물류센터 정량 자료가 없다는 점(oq-010)을 함께 적어야 한다. 브리프 표시 source_unopened:false 는 원문 미열람 출처가 섞인 것과 맞지 않는다(브리프 누락, 검증 노트 기록).\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: LiftState 모드, DoorMode 값은 원문으로 확인했다. 복구 규칙은 20. 예외 복구·재계획·업무 연속성으로 연결만 한다. [추정] 유지.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: '연계 대상:' 표기가 분류 원문 9장 '시설·설비 제어' 경계와 맞는다. f1·f3·f7·f8 근거는 원문으로 확인했다. [추정] 유지.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"ref-408·ref-409·ref-410 은 실행 2026-09-25-24(8. 실시간 세계 상태·데이터 일관성)가 ref-379·ref-380·ref-382 로 제안한 출처와 URL 이 같다. 둘 다 아직 참고문헌 목록에 없어 브리프 id 를 쓰지만, 퍼블리셔가 등록할 때 같은 URL 의 id 가 이중 등록되지 않게 확인해야 한다\",\"f1·f3·f5 는 실행 2026-09-25-24 의 f6·f7(문·승강기 어댑터와 LiftState)과 같은 내용이며 서로 충돌하지 않는다\",\"브리프 limits 는 실행 2026-09-25-20 의 출처(ref-258~)가 참고문헌 목록에 없다고 적지만, ref-258~ref-264(Franke 외 ref-259 포함)는 목록에 있다. 이번 브리프는 이 출처를 인용하지 않았으므로 페이지에 새로 넣지 않는다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f8: '설비 연동 책임을 로봇이 아니라 관제 쪽에 둔다' 구절을 삭제한다. 'VDA 5050 3.0.0 은 문·게이트·승강기 같은 주변 시스템과의 통신을 관제 시스템의 최소 기능 목록에 넣는다'만 [사실][^ref-031]로 쓴다. 명세 Scope 가 운영 책임 배분을 다루지 않는다고 적으므로 9절에서도 VDA 5050 이 책임을 배분한다고 쓰지 않는다.\",\"f14: [사실] → [추정]으로 강등하고 'API 로 실시간 정보를 주고받는' 구절을 삭제한다. 스니펫에서 확인되지 않았다.\",\"f17: [추정] '벤더 주장' 병기를 유지한다. '배송로봇 40여 대 운행' 수치는 삭제한다. 검증 검색 스니펫에서 확인되지 않았다.\",\"f18: [사실] → [추정]으로 강등하고 '층간 이동과 승강기 대기 시간을 경로계획에 함께 넣었다' 구절을 삭제한다. 승강기 선택 기준에 대한 검색 요약들이 서로 달라(경로 길이 대 대기 시간) 확정할 수 없다. 남는 문장은 '승강기 선택을 최적화하는 그래프 기반 다층 경로계획 방법을 제안했다'이다.\",\"f22: [사실] → [추정]으로 강등하고 '로봇이 승강기 등을 이용해 건물 안을 이동할 수 있게 하는' 구절을 삭제한다. 보도자료 제목만 확인됐다. 발행일은 '미확인'으로 둔다.\",\"f10: 동작 구역(ACTION zone)을 문·승강기 연동 수단으로 서술하지 않는다. 명세에 그런 규정이 없다. 4·6절에서는 구역 진입·통과·이탈 시 action 을 수행하게 하는 장치로만 쓴다.\",\"f6: Open-RMF 문서가 디스펜서·인제스터를 'sample' 작업대로 부르므로 표준 규격이 아니라 예시 구현으로 서술한다.\",\"f11·f12: KS B 7317 은 로봇 자체의 탑승 안전 요구사항이다. 25. 안전·위험 관리 연결과 제약 조건으로만 서술하고 ROP 직접 범위처럼 쓰지 않는다. f12 는 보도자료의 설명이며 표준 본문 조항은 미확인이라고 밝힌다.\",\"f15·f16·f17: 모든 문장에 [추정]과 '벤더 주장'을 병기한다. f16·f17 은 기사 출처이며 회사 발표에 기댄다고 적는다.\",\"9절: 승강기·자동문·컨베이어·PLC 제어와 설비 안전 제어는 f26 처럼 '연계 대상'으로 짧게 다룬다. ROP 쪽은 작업 요청·점유 예약·상태 확인·완료 확인으로 한정한다. f26 은 [추정]을 유지한다.\",\"원문 미열람 표기: ref-047·ref-049·ref-060·ref-103·ref-163·ref-413·ref-414·ref-415·ref-416·ref-417·ref-418·ref-419·ref-420·ref-421 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-023·ref-031·ref-408~ref-412 는 github_raw 로 원문을 열었으므로 붙이지 않는다.\",\"인용: 출처당 직접 인용은 1회만 한다. ref-031 은 f7~f10 발췌 가운데 하나만 짧게 직접 인용하고 나머지는 재서술한다. ref-408·ref-409 도 각각 1회를 넘지 않는다.\",\"ref-103: reference_updates 의 발행일을 2025 로 갱신한다(Sensors, DOI 10.3390/s25061783, 검증 검색에서 확인).\",\"11절: 기존 oq-010 을 연결하고 open_questions_new 3건을 네 필드 형식 그대로 올린다. f24 의 승강기 대기 영향은 물류센터 정량 자료가 없다는 점을 oq-010 과 함께 적는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 22건, 미확인 4건, 교차 확인 0건. 강등: f14 사실 → 추정, f18 사실 → 추정, f22 사실 → 추정, f17 추정 유지·수치(배송로봇 40여 대) 삭제. 원문 미열람 출처: ref-047, ref-049, ref-060, ref-103, ref-163, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-419, ref-420, ref-421. github_raw 로 원문을 확인한 출처: ref-023, ref-031, ref-408, ref-409, ref-410, ref-411, ref-412. 주의: Open-RMF 설비 메시지와 VDA 5050 3.0.0 구역 규정은 각각 발행 주체 한 곳의 원문에 기댄다. 국내 표준·제조사 API 는 기사·보도자료 스니펫 범위에서만 확인했고 벤더 주장은 독립 확인이 없다. 분류 원문 질문(컨베이어 준비와 로봇 도착 맞추기)에는 추정 수준의 답(f23)만 있다. VDA 5050 명세는 운영 책임을 배분하지 않는다. ref-408·ref-409·ref-410 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 와 URL 이 같으므로 퍼블리셔가 이중 등록을 확인해야 한다. 브리프 표시 누락: f24 는 원문 미열람 출처(ref-060·ref-103)에 기대는데 source_unopened:false 로 적혀 있다. 정정 요청 없음. 검증 검색 9회(리서치 11회 포함 합계 20/30).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-25",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-408 원문(github_raw integration_doors.md)을 검증 단계에서 다시 열어 문 어댑터의 상태 감독자 역할, adapter_door_requests 토픽, 적절할 때만 전달한다는 문장을 확인했다. 단일 발행 주체(Open Robotics). 발행일 미확인."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-412 DoorMode.msg 원문(github_raw)에 MODE_CLOSED·MOVING·OPEN·OFFLINE·UNKNOWN 다섯 값이 있다. 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-409 원문(github_raw integration_lifts.md)에서 'only relaying the instructions to the lift node if it is deemed appropriate', 직접 요청은 'negated'되고 승강기 노드는 OPC 같은 프로토콜로 제어기와 통신한다는 내용을 확인했다. 단일 출처."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-411 LiftRequest.msg 원문(github_raw)에 session_id, REQUEST_END_SESSION·AGV_MODE·HUMAN_MODE, destination_floor, DOOR_CLOSED·DOOR_OPEN과 AGV 모드·사람 모드 주석이 있다. 단일 출처."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-410 LiftState.msg 원문(github_raw)에 층·문 상태·운행 상태·모드(설정 가능한 HUMAN·AGV, 읽기만 가능한 FIRE·OFFLINE·EMERGENCY, UNKNOWN)·session_id 가 있다. 단일 출처. 같은 URL 이 실행 2026-09-25-24 에서 ref-382 로 제안됐다(중복 id 가능성, 검증 노트 참조)."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-023 원문(data/source_texts, github_raw)에서 디스펜서·인제스터의 요청·결과·상태 메시지, perform_deliveries, 배송 4단계를 확인했다. 원문은 두 유형을 'sample workcells'라 부르므로 예시 구현으로 서술해야 한다. ref-047·ref-049 는 이번 실행에서 원문 미열람(재사용)이다. 세 출처 모두 Open Robotics 라 독립 교차가 아니다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-031 원문 2장 Scope 에서 'interfaces to peripheral equipment, infrastructure components, or external IT systems' 제외 문장을 확인했다(3.0.0 판). 발행일 미확인(oq-005 출처 충돌 관련)."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "핵심은 확인: 5.3 관제 기능 목록에 'Communication with peripheral systems such as doors, gates, elevators, etc.'가 있다. 다만 '설비 연동 책임을 관제 쪽에 둔다'는 해석은 과장이다. 같은 명세 Scope 는 운영자·통합사·제조사·관제 제공자 사이 책임을 배분하지 않는다고 적는다. 이 구절 삭제를 지시한다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-031 6.4.1·6.4.3 에서 RELEASE 구역, zoneRequests(ACCESS), responses 토픽의 GRANTED·QUEUED·REVOKED·REJECTED, releaseLossBehavior STOP·CONTINUE·EVACUATE, leaseExpiry 만료를 확인했다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-031 표 6 의 ACTION 구역 entryActions·duringActions·exitActions 를 확인했다. 명세는 이 구역을 문·승강기 연동에 쓰라고 규정하지 않는다(브리프도 적었다). 연동 수단으로 서술하지 않게 지시한다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 결과 일치(원문 미열람): KSSN 상세(ref-413)의 표제와 정책브리핑 보도자료(ref-414)가 검색됐다. 2021-11 제정과 행정안전부 협력은 스니펫에 있다. ZDNet(2021-11-11)·전기신문·KDI 도 같은 보도자료를 옮긴 것이라 독립 교차가 아니다. 일부 기사는 표제를 '시험 방법'으로 적지만 KSSN 표제는 '평가 방법'이다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 결과 일치(원문 미열람): 보도자료 스니펫에 속도 제어·보호 정지·높낮이 차·틈새 극복·추락·넘어짐 방지 기준 필요 문구가 있다. 보도자료의 설명일 뿐 KS B 7317 본문의 조항 구성은 미확인이다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 결과 일치(원문 미열람): ref-415(건설기술신문) 표제가 검색됐고, 이뉴스투데이·매일일보도 같은 단체표준 제정을 전한다. 협회 보도자료에서 나온 기사들이라 독립 교차가 아니다. 표준 번호·제정일은 미확인이다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 뒷받침(원문 미열람). ref-416 스니펫에서 23곳 단체 24명 협의체와 프로토콜(안)·시나리오(안) 협의를 확인했다. 과제명은 별도 기사(대한경제)에서 확인했지만 이 기사에서 협회는 주관기관이 아니라 공동연구기관이다. 'API 로 실시간 정보를 주고받는' 구절은 어느 스니펫에서도 확인하지 못했다. 사실 → 추정으로 강등하고 해당 구절 삭제를 지시한다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 결과 일치(원문 미열람): dev.kone.com Service Robot API 페이지가 검색됐다. 로봇이 KONE 승강기로 층간 이동한다는 스니펫과 호출·서비스 정보 API 목록 페이지가 있다. [추정] 벤더 주장으로 유지한다. 메시지 구조·인증은 미확인이다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검색 결과 일치(원문 미열람): ref-418(한국경제 2022-03) 표제가 검색됐다. 여러 기사가 클라우드 기반이라 별도 장비 없이 연결된다는 문구를 싣지만 모두 회사 보도자료가 원천이라 독립 교차가 아니다. [추정] 벤더 주장으로 유지한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 뒷받침(원문 미열람). '1년여 만에 60여 곳 참여'는 스니펫에서 확인했다. '배송로봇 40여 대 운행'은 이번 검증 검색 스니펫에 없다. 스니펫에는 '30여 개 현장 상용화', 세브란스병원 로봇 10대가 나온다. [추정] 벤더 주장은 유지하고 '배송로봇 40여 대' 수치를 삭제하게 한다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 뒷받침(원문 미열람). MDPI Electronics 14(5) 982(2025)의 실재와, 승강기 선택을 최적화하는 그래프 기반 다층 경로계획이라는 점은 확인했다. 이번 검증 검색 스니펫은 승강기 선택 기준을 총 경로 길이 최소화로 설명한다. 반면 브리프 스니펫은 대기 시간 감소를 적어 요약끼리 어긋난다. '승강기 대기 시간을 경로계획에 넣었다'는 확정할 수 없어 사실 → 추정으로 강등하고 해당 구절 삭제를 지시한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람, 재사용 ref-060, 참고문헌 목록에 있음): 논문 표제와 주장이 같다. 결과 수치는 쓰지 않는다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람, 재사용 ref-103): PMC 논문이 검색됐고 DOI 10.3390/s25061783(Sensors 2025)로 확인했다. 참고문헌의 발행일 '미확인'을 2025 로 갱신할 수 있다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람, 재사용 ref-163, 참고문헌 목록에 있음): 논문 표제가 주장과 같다. 연동 방식 세부는 미확인이다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 뒷받침(원문 미열람). 국토교통부 페이지 제목('올해 로봇 친화형 건축물 설계·시공 및 운영·관리 핵심기술 개발부터 착수, … UAM·자율주행차 친화형 건축 기술개발 등도 순차 추진')은 검색 결과와 일치한다. '로봇이 승강기 등을 이용해 건물 안을 이동할 수 있게 하는'은 제목에 없는 부연이라 삭제를 지시하고, 사실 → 추정으로 강등한다. 발행일 미확인. 2025-05-28 스마트+빌딩 착수 보도와 같은 문서인지도 미확인이다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 추론 근거인 f6(ref-023)·f9(ref-031)가 원문으로 확인됐다. [추정] 유지. 분류 원문 SCM 질문에 대한 추정 수준의 답이며 정량 근거는 없다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 세션 점유(f4·f5)는 원문으로 확인했다. 병원·호텔 연구(ref-060·ref-103)는 원문 미열람이다. [추정] 유지. 물류센터 정량 자료가 없다는 점(oq-010)을 함께 적어야 한다. 브리프 표시 source_unopened:false 는 원문 미열람 출처가 섞인 것과 맞지 않는다(브리프 누락, 검증 노트 기록)."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: LiftState 모드, DoorMode 값은 원문으로 확인했다. 복구 규칙은 20. 예외 복구·재계획·업무 연속성으로 연결만 한다. [추정] 유지."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: '연계 대상:' 표기가 분류 원문 9장 '시설·설비 제어' 경계와 맞는다. f1·f3·f7·f8 근거는 원문으로 확인했다. [추정] 유지."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "ref-408·ref-409·ref-410 은 실행 2026-09-25-24(8. 실시간 세계 상태·데이터 일관성)가 ref-379·ref-380·ref-382 로 제안한 출처와 URL 이 같다. 둘 다 아직 참고문헌 목록에 없어 브리프 id 를 쓰지만, 퍼블리셔가 등록할 때 같은 URL 의 id 가 이중 등록되지 않게 확인해야 한다",
+        "f1·f3·f5 는 실행 2026-09-25-24 의 f6·f7(문·승강기 어댑터와 LiftState)과 같은 내용이며 서로 충돌하지 않는다",
+        "브리프 limits 는 실행 2026-09-25-20 의 출처(ref-258~)가 참고문헌 목록에 없다고 적지만, ref-258~ref-264(Franke 외 ref-259 포함)는 목록에 있다. 이번 브리프는 이 출처를 인용하지 않았으므로 페이지에 새로 넣지 않는다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f8: '설비 연동 책임을 로봇이 아니라 관제 쪽에 둔다' 구절을 삭제한다. 'VDA 5050 3.0.0 은 문·게이트·승강기 같은 주변 시스템과의 통신을 관제 시스템의 최소 기능 목록에 넣는다'만 [사실][^ref-031]로 쓴다. 명세 Scope 가 운영 책임 배분을 다루지 않는다고 적으므로 9절에서도 VDA 5050 이 책임을 배분한다고 쓰지 않는다.",
+      "f14: [사실] → [추정]으로 강등하고 'API 로 실시간 정보를 주고받는' 구절을 삭제한다. 스니펫에서 확인되지 않았다.",
+      "f17: [추정] '벤더 주장' 병기를 유지한다. '배송로봇 40여 대 운행' 수치는 삭제한다. 검증 검색 스니펫에서 확인되지 않았다.",
+      "f18: [사실] → [추정]으로 강등하고 '층간 이동과 승강기 대기 시간을 경로계획에 함께 넣었다' 구절을 삭제한다. 승강기 선택 기준에 대한 검색 요약들이 서로 달라(경로 길이 대 대기 시간) 확정할 수 없다. 남는 문장은 '승강기 선택을 최적화하는 그래프 기반 다층 경로계획 방법을 제안했다'이다.",
+      "f22: [사실] → [추정]으로 강등하고 '로봇이 승강기 등을 이용해 건물 안을 이동할 수 있게 하는' 구절을 삭제한다. 보도자료 제목만 확인됐다. 발행일은 '미확인'으로 둔다.",
+      "f10: 동작 구역(ACTION zone)을 문·승강기 연동 수단으로 서술하지 않는다. 명세에 그런 규정이 없다. 4·6절에서는 구역 진입·통과·이탈 시 action 을 수행하게 하는 장치로만 쓴다.",
+      "f6: Open-RMF 문서가 디스펜서·인제스터를 'sample' 작업대로 부르므로 표준 규격이 아니라 예시 구현으로 서술한다.",
+      "f11·f12: KS B 7317 은 로봇 자체의 탑승 안전 요구사항이다. 25. 안전·위험 관리 연결과 제약 조건으로만 서술하고 ROP 직접 범위처럼 쓰지 않는다. f12 는 보도자료의 설명이며 표준 본문 조항은 미확인이라고 밝힌다.",
+      "f15·f16·f17: 모든 문장에 [추정]과 '벤더 주장'을 병기한다. f16·f17 은 기사 출처이며 회사 발표에 기댄다고 적는다.",
+      "9절: 승강기·자동문·컨베이어·PLC 제어와 설비 안전 제어는 f26 처럼 '연계 대상'으로 짧게 다룬다. ROP 쪽은 작업 요청·점유 예약·상태 확인·완료 확인으로 한정한다. f26 은 [추정]을 유지한다.",
+      "원문 미열람 표기: ref-047·ref-049·ref-060·ref-103·ref-163·ref-413·ref-414·ref-415·ref-416·ref-417·ref-418·ref-419·ref-420·ref-421 의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-023·ref-031·ref-408~ref-412 는 github_raw 로 원문을 열었으므로 붙이지 않는다.",
+      "인용: 출처당 직접 인용은 1회만 한다. ref-031 은 f7~f10 발췌 가운데 하나만 짧게 직접 인용하고 나머지는 재서술한다. ref-408·ref-409 도 각각 1회를 넘지 않는다.",
+      "ref-103: reference_updates 의 발행일을 2025 로 갱신한다(Sensors, DOI 10.3390/s25061783, 검증 검색에서 확인).",
+      "11절: 기존 oq-010 을 연결하고 open_questions_new 3건을 네 필드 형식 그대로 올린다. f24 의 승강기 대기 영향은 물류센터 정량 자료가 없다는 점을 oq-010 과 함께 적는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 22건, 미확인 4건, 교차 확인 0건. 강등: f14 사실 → 추정, f18 사실 → 추정, f22 사실 → 추정, f17 추정 유지·수치(배송로봇 40여 대) 삭제. 원문 미열람 출처: ref-047, ref-049, ref-060, ref-103, ref-163, ref-413, ref-414, ref-415, ref-416, ref-417, ref-418, ref-419, ref-420, ref-421. github_raw 로 원문을 확인한 출처: ref-023, ref-031, ref-408, ref-409, ref-410, ref-411, ref-412. 주의: Open-RMF 설비 메시지와 VDA 5050 3.0.0 구역 규정은 각각 발행 주체 한 곳의 원문에 기댄다. 국내 표준·제조사 API 는 기사·보도자료 스니펫 범위에서만 확인했고 벤더 주장은 독립 확인이 없다. 분류 원문 질문(컨베이어 준비와 로봇 도착 맞추기)에는 추정 수준의 답(f23)만 있다. VDA 5050 명세는 운영 책임을 배분하지 않는다. ref-408·ref-409·ref-410 은 실행 2026-09-25-24 의 ref-379·ref-380·ref-382 와 URL 이 같으므로 퍼블리셔가 이중 등록을 확인해야 한다. 브리프 표시 누락: f24 는 원문 미열람 출처(ref-060·ref-103)에 기대는데 source_unopened:false 로 적혀 있다. 정정 요청 없음. 검증 검색 9회(리서치 11회 포함 합계 20/30).",
+    "retry_reason": null
+  },
+  "ttft_ms": 10123,
+  "type": "result",
+  "duration_ms": 190415,
+  "uuid": "81b4b4fb-ad9b-48aa-a1e0-db627e5bb881",
+  "ttft_stream_ms": 3269,
+  "time_to_request_ms": 108,
+  "first_content_frame_ms": 3269,
+  "time_to_request_from_spawn_ms": 9880387,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790305733659.325,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 192.1
+}
