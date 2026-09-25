@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 04:06:21",
+  "updated": "2026-09-25 04:11:55",
   "concurrency": 3,
   "items": [
     {
@@ -220,13 +220,18 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #6 q2-02"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-36",
           "started": "2026-09-25 03:34:42",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 04:07:02",
+          "published_at": "2026-09-25 04:09:07",
+          "cost_usd": 25.7305,
+          "duration_sec": 2007.8,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-36"
@@ -241,13 +246,18 @@
         "group": "t1",
         "label": "트랙1 매뉴얼 능력 온톨로지 #4"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-41",
           "started": "2026-09-25 03:53:10",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 04:09:48",
+          "published_at": "2026-09-25 04:11:54",
+          "cost_usd": 22.0314,
+          "duration_sec": 1064.2,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-41"
@@ -294,9 +304,16 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #7 q2-03"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-44",
+          "started": "2026-09-25 04:09:08",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-44"
     },
     {
       "index": 11,
@@ -308,9 +325,16 @@
         "group": "t1",
         "label": "트랙1 매뉴얼 능력 온톨로지 #5"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-45",
+          "started": "2026-09-25 04:11:55",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-45"
     },
     {
       "index": 12,

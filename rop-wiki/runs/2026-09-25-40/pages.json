@@ -1,0 +1,848 @@
+{
+  "run_id": "2026-09-25-40",
+  "outline": [
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "로봇마다 같은 충전 임계값으로만 충전을 시작하면 충전 수요가 겹칠 수 있어 충전 시점·충전기 선택·공용 자원 점유를 조율 계층이 함께 맡아야 할 것으로 보인다. [추정][^ref-228][^ref-105]",
+      "planned_findings": [
+        "f27",
+        "f23",
+        "f24",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "충전 상태, 임계 저충전 수준, 충전 임계값·목표, 충전 방식, 뮤텍스 그룹, 승강기 세션이 이 영역의 기본 용어다. [사실][^ref-051][^ref-228]",
+      "planned_findings": [
+        "f3",
+        "f4",
+        "f6",
+        "f10",
+        "f11",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+      "budget_chars": 1100,
+      "summary": "피킹 성수기에 충전 요청과 층간 출하 운반이 겹치는 가상 시나리오로 충전 작업 삽입·승강기 세션 점유·처리량 손실을 보인다. [추정][^ref-862]",
+      "planned_findings": [
+        "f7",
+        "f3",
+        "f11",
+        "f13",
+        "f2",
+        "f28",
+        "f29",
+        "f31"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "Open-RMF 는 충전량이 부족한 로봇의 일정에 충전 작업을 끼워 넣고, 공용 자원은 뮤텍스 그룹·승강기 세션·예약으로 배분한다. [사실][^ref-104][^ref-864]",
+      "planned_findings": [
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f32"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 1000,
+      "summary": "VDA 5050 은 충전을 startCharging·stopCharging 동작으로 표현하고 팩트시트 batteryCharging·상태 powerSupply 로 배터리 선언과 상태를 담는다. [사실][^ref-031][^ref-228]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f8",
+        "f10",
+        "f11",
+        "f12",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1200,
+      "summary": "충전 방식 비교(Zou 외 2018), 배터리 관리 정책(Chen 외 2024), 운반·충전 동시 배정(Dang 외 2021), 승강기 병목 연구가 대표 자료다. [사실][^ref-098][^ref-861]",
+      "planned_findings": [
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f24",
+        "f25",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+      "budget_chars": 650,
+      "summary": "ROP 는 여러 제조사 로봇에 걸친 공용 자원 예약·배분과 충전 시점 결정을 맡고, 과충전 보호·정밀 도킹·승강기 운행 제어는 연계 대상으로 보인다. [추정][^ref-031][^ref-216]",
+      "planned_findings": [
+        "f30",
+        "f31",
+        "f1"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 800,
+      "summary": "13. 작업 배정 — MRTA, 15. 다중 로봇 경로·교통 관리 — MAPF, 10. 설비·건물 시스템 연동, 3. 처리능력·거점·설비 계획 등 여덟 영역과 이어지는 것으로 보인다. [추정][^ref-862]",
+      "planned_findings": [
+        "f33",
+        "f18",
+        "f19",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 800,
+      "summary": "충전·대기 시간의 OEE 손실 분류(oq-016), 물류센터 승강기 병목 자료(oq-010), 충전기 공통 규격·전기 요금 기반 충전·승강기 배분 규칙·충전 하한 기준·충전소 지정 속성 충돌이 남아 있다.",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f7",
+        "f11"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(트랙 반영 제안 4건을 6·7·10절에 반영, 1차 수정 지시 13건 이행), 상태 자동 영역 마커 추가"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area16-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 공용 자원·충전·에너지 최적화 의 \"6. 대표 접근법과 기술\" 절(1,873자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area16-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 공용 자원·충전·에너지 최적화 의 \"8. 대표 연구와 자료\" 절(1,578자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area16-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 공용 자원·충전·에너지 최적화 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,278자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area16-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 공용 자원·충전·에너지 최적화 의 \"11. 열린 질문\" 절(1,189자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-25-area16-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 공용 자원·충전·에너지 최적화 의 \"4. 핵심 개념과 용어\" 절(988자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 16. 공용 자원·충전·에너지 최적화 | 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 4건 반영, 1차 수정 지시 13건 이행 | run 2026-09-25-40",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 16. 공용 자원·충전·에너지 최적화: 영역 심화로 3~11절 신규 작성(충전 임계값·충전 작업 삽입·뮤텍스 그룹·승강기 세션, 충전 정책 연구, 트랙 반영 제안 4건 반영)",
+    "category_recent": "2026-09-25 — 16. 공용 자원·충전·에너지 최적화: 영역 심화로 3~11절 신규 작성, 새 열린 질문 5건",
+    "area_recent": "2026-09-25 — 16. 공용 자원·충전·에너지 최적화: 3~11절 신규 작성(VDA 5050 충전 동작·batteryCharging, Open-RMF 충전 작업 삽입·뮤텍스 그룹·승강기 세션, 충전 정책 연구), 트랙 반영 제안 4건 반영"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "state-of-charge",
+      "term_ko": "충전 상태",
+      "term_en": "State of Charge (SOC)",
+      "definition": "배터리에 남은 충전량을 전체 용량 대비 비율(%)로 나타낸 값으로, VDA 5050 상태 메시지의 stateOfCharge 와 Open-RMF 배터리 갱신이 이 값을 쓴다.",
+      "description": "VDA 5050 상태 메시지의 powerSupply 는 충전 상태 외에 충전 중 여부·전압·전류·건강 상태·주행 가능 거리를 담으며, 좋음·나쁨만 아는 로봇은 80%·20%로 보고한다.",
+      "related_areas": [
+        16,
+        8,
+        9
+      ],
+      "sources": [
+        "ref-051",
+        "ref-865"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "mutex-group",
+      "term_ko": "뮤텍스 그룹",
+      "term_en": "Mutex Group (Open-RMF)",
+      "definition": "Open-RMF 교통 그래프에서 같은 그룹에 묶인 경유점·차선을 한 번에 한 로봇만 점유하도록 하는 상호 배제 단위이다.",
+      "related_areas": [
+        16,
+        15
+      ],
+      "sources": [
+        "ref-864"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "lift-session",
+      "term_ko": "승강기 세션",
+      "term_en": "Lift Session (Open-RMF)",
+      "definition": "Open-RMF 에서 한 요청자가 세션 id 로 승강기 제어권을 받아 세션 종료 요청을 보낼 때까지 점유하는 단위이다.",
+      "related_areas": [
+        16,
+        10
+      ],
+      "sources": [
+        "ref-312",
+        "ref-286"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "battery-swapping",
+      "term_ko": "배터리 교환",
+      "term_en": "Battery Swapping",
+      "definition": "방전된 로봇 배터리를 충전기에 꽂아 기다리는 대신 충전된 배터리로 바꿔 끼워 로봇을 곧바로 다시 운행하게 하는 충전 방식이다.",
+      "related_areas": [
+        16,
+        3
+      ],
+      "sources": [
+        "ref-098"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 최신판(main, 3.0.0) 명세 원문. 이번 실행은 startCharging·stopCharging 동작, 관제의 에너지 관리 기능, 구역 유형을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-039",
+      "org": "Open Robotics",
+      "title": "Currently supported Tasks - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/task_types.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 지원 작업 유형 문서. 충전 작업이 플릿 어댑터가 스스로 만드는 작업이라는 서술과, 충전소를 is_parking_spot 으로 설정한다는 안내(다른 문서의 is_charger 와 충돌)를 담는다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-051",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 상태 메시지 JSON 스키마. 이번 실행은 powerSupply 항목을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-060",
+      "org": "Lee, Y. 외(Digital Health)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026",
+      "url": "https://doi.org/10.1177/20552076261437181",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 병원 약품 배송 로봇의 승강기 이용과 배송 실패·시간의 관계를 다룬 논문.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-079",
+      "org": "Open Robotics",
+      "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 교통 편집기 문서. 이번 실행은 is_charger·dock_name·대기 지점 속성과 승강기를 공유 자원으로 보는 서술을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-098",
+      "org": "Zou, B., Gong, Y., de Koster, R., & Xu, X.",
+      "title": "Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system",
+      "published": "2018",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221717310901",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 에서 플러그인·교환·유도 충전 전략을 반개방형 대기행렬 네트워크와 시뮬레이션으로 비교한 EJOR 논문.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-103",
+      "org": "PMC 게재 논문(저자 미확인)",
+      "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+      "published": "2025-03",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 다층 호텔 배송 로봇 경로 계획에서 승강기 대기·운행 시간을 모델링한 Sensors 게재 논문(2025년 3월, 검증 검색 확인).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-104",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_demos — Demonstrations of Open-RMF (README)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_demos",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 데모 README. 이번 실행은 충전 작업의 일정 삽입과 로봇별 전용 충전 위치 가정을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "플릿 어댑터 설정 템플릿. 이번 실행은 충전 임계값·충전 목표·배터리·전력 소비·작업 종료 동작·로봇별 충전기 항목을 원문으로 확인했다(수치는 예시값).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-109",
+      "org": "Stark, H.-G. 외",
+      "title": "A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse",
+      "published": "2024-06",
+      "url": "https://arxiv.org/abs/2406.17003",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 창고 충전소 배치를 PageRank 와 비슷한 방법으로 최적화한 프리프린트.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-146",
+      "org": "Omega 게재 논문(저자 미확인)",
+      "title": "The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority",
+      "published": "2024",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305048324001336",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. RMFS 성능 평가에 에너지 소비를 넣고 동적 우선순위 운영 정책을 다룬 논문(제목 기준).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-216",
+      "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+      "title": "nav2_docking — README (Open Navigation's Nav2 Docking Framework)",
+      "published": null,
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "Nav2 도킹 프레임워크 README. 이번 실행은 도크 데이터베이스, 충전·비충전 도크 플러그인, 센서 보정, 충전 확인 함수를 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-219",
+      "org": "Mobile Industrial Robots(MiR) (ManualsLib 게재본)",
+      "title": "MiR Charge 24V Operating Manual — Setting charging station markers on the map (제조사 공식 사이트가 아닌 매뉴얼 게재 사이트 사본)",
+      "published": null,
+      "url": "https://www.manualslib.com/manual/1941068/Mir-Mir-Charge-24v.html?page=23",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 이번 실행에서 다시 열지 않았다. 지도에 충전 스테이션 마커를 설정하는 매뉴얼 절.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-228",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "VDA 5050 팩트시트 JSON 스키마. 이번 실행은 batteryCharging 네 항목을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-284",
+      "org": "Open Robotics",
+      "title": "Lifts (integration_lifts) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_lifts.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 승강기 연동 문서. 이번 실행은 승강기 어댑터의 역할을 원문으로 확인했다(여러 플릿 사이 배분 규칙은 문서에 없음).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-286",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftState.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "승강기 상태 메시지. 이번 실행은 제어권을 받은 세션 id 기록과 운영 모드를 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-312",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_lift_msgs/msg/LiftRequest.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "승강기 요청 메시지. 이번 실행은 세션 id, 요청 유형, AGV 모드의 문 동작을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-321",
+      "org": "Electronics(MDPI) 게재 논문(저자 미확인)",
+      "title": "Efficient Graph-Based Multi-Story Path Planning with Optimized Elevator Selection for Indoor Delivery Robots",
+      "published": "2025",
+      "url": "https://doi.org/10.3390/electronics14050982",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 실내 배송 로봇의 다층 경로 계획에서 승강기 선택을 최적화한 논문.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-377",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 작업 계획기 헤더. 이번 실행은 충전량 부족 오류 구분과 배터리 우선 비용 설정을 원문으로 확인했다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-858",
+      "org": "Computers & Industrial Engineering 게재 논문(저자 미확인)",
+      "title": "Optimal recharge sequencing in multi-AGV systems: A mixed ILP approach",
+      "published": "2024-08",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360835224006314",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 충전소 사용 중·대기 확률을 확률 변수로 둔 다중 AGV 충전 순서 최적화(혼합 정수 선형 계획) 논문.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-859",
+      "org": "arXiv 2607.05683 저자(미확인)",
+      "title": "Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers",
+      "published": "2026-07",
+      "url": "https://arxiv.org/abs/2607.05683",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 다중 블록 창고에서 PPO 기반 강화학습으로 충전소 선택과 충전 시간을 학습하는 프리프린트.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-860",
+      "org": "Ma, N., Zhou, C., & Stephen, A.",
+      "title": "Simulation model and performance evaluation of battery-powered AGV systems in automated container terminals",
+      "published": "2020",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1569190X2030085X",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자동화 컨테이너 터미널의 충전소 배치와 배터리 AGV 충전 정책을 시뮬레이션으로 평가한 논문(Simulation Modelling Practice and Theory 106).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-861",
+      "org": "Chen, W., Gong, Y., Chen, Q., & Wang, H.",
+      "title": "Does battery management matter? Performance evaluation and operating policies in a self-climbing robotic warehouse",
+      "published": "2024-01",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0377221723004770",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 자가 등반 로봇 창고에서 충전 기술·충전 정책·충전기 대수를 반개방형 대기행렬 네트워크로 분석한 EJOR 312(1) 논문.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-862",
+      "org": "Dang, Q.-V., Singh, N., Adan, I., Martagan, T., & van de Sande, D.",
+      "title": "Scheduling heterogeneous multi-load AGVs with battery constraints",
+      "published": "2021-12",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0305054821002586",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 운반·충전 요청을 함께 배정·순서화하고 부분 충전 시간을 정하는 MILP·적응형 대규모 이웃 탐색 논문(Computers & Operations Research).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-863",
+      "org": "박재범, 조성준, 김준식, 유범재(전자공학회논문지 61(8))",
+      "title": "배송 로봇의 다층, 다중 배송을 위한 효율적인 경로 계획 및 엘리베이터 층간 이동 시스템",
+      "published": "2024",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003107904",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 서버 기반 엘리베이터 제어 모듈과 노드 그래프 기반 다층·다중 목적지 경로 계획을 제안하고 실증 시험한 국내 논문(전자공학회논문지 61(8), 검증 검색 확인).",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-864",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "Open-RMF 교통 그래프 헤더. 경유점·차선의 뮤텍스 그룹(한 번에 한 로봇만 점유), 충전 경유점·주차 지점·대기 지점, 문·승강기 문 차선 조건을 정의한다. 이번 실행에서 원본을 열었다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-865",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_ros2 — rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/include/rmf_fleet_adapter/agv/RobotUpdateHandle.hpp",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-25",
+      "summary": "플릿 어댑터 로봇 갱신 인터페이스 헤더. 로봇별 충전 경유점 지정, 주차 예약 시스템 사용 설정, 배터리 충전 상태 갱신, 승강기 세션 정보를 다룬다. 이번 실행에서 원본을 열었다.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-866",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_reservation — Experimental reservation library in rust (GitHub)",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_reservation",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 충전기 같은 자원을 시간 범위 안에서 정해진 시간 동안 로봇에 배정하는 실험적 제약 자원 스케줄링 라이브러리(검색 요약 기준). README raw 경로는 404, 배포판 포함 여부 미확인.",
+      "cited_by": [
+        "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md"
+      ],
+      "source_unopened": true
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "Open-RMF rmf_traffic (교통 그래프·뮤텍스 그룹)",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp",
+      "related_areas": [
+        16,
+        15
+      ],
+      "summary": "Open-RMF 교통 그래프 헤더로, 같은 뮤텍스 그룹의 경유점·차선을 한 번에 한 로봇만 점유하게 하고 충전 경유점·주차·대기 지점을 정의한다.",
+      "ref_id": "ref-864"
+    },
+    {
+      "name": "Open-RMF rmf_reservation (실험적 예약 라이브러리)",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf_reservation",
+      "related_areas": [
+        16
+      ],
+      "summary": "충전기 같은 자원을 시간 범위 안에서 로봇에 배정하는 실험적 제약 자원 스케줄링 라이브러리로 소개된다(원문 미열람, 배포판 포함 여부 미확인).",
+      "ref_id": "ref-866"
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "제조사가 다른 이동로봇이 같은 충전기를 함께 쓸 수 있게 하는 충전 커넥터·충전 통신의 공통 규격이나 공개 사례가 있는가?",
+      "areas": [
+        16,
+        28
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "물류센터 로봇의 충전 시점을 시간대별 전기 요금이나 최대 수요 전력 기준으로 계획한 연구나 국내 사례가 있는가?",
+      "areas": [
+        16,
+        4
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "여러 제조사 플릿이 한 승강기를 함께 쓸 때 세션 순서·최대 점유 시간·목적층 묶음을 정하는 배분 규칙을 공개한 표준이나 구현이 있는가?",
+      "areas": [
+        16,
+        10
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "충전 하한을 제조사가 팩트시트로 선언한 값(criticalLowChargingLevel)과 ROP 운영 설정(recharge_threshold) 가운데 어느 것으로 삼고, 둘이 다르면 어떻게 조정하는가?",
+      "areas": [
+        16,
+        5
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot(지원 작업 문서)과 is_charger(교통 편집기 문서·데모 README) 가운데 어느 속성으로 하는가?",
+      "areas": [
+        16,
+        6
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "피킹",
+      "item": "완료·인계",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "시작 조건",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "작업 대상",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "수행 자원",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "제약",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "완료·인계",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    },
+    {
+      "step": "출하",
+      "item": "예외·성과",
+      "link": "docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+      "title": "16. 공용 자원·충전·에너지 최적화"
+    }
+  ],
+  "additional_research_requests": [
+    "11절 oq-016: 이동로봇 플릿의 충전·대기·교통 정체 시간을 OEE 손실로 분류한 정의나 사례가 필요하다 — 이번 브리프에 근거가 없어 해결하지 못했다.",
+    "3·5절: 국내 물류센터의 충전 대기·승강기 대기가 처리량에 주는 영향을 정량화한 자료가 필요하다 — 현재 근거는 병원·호텔·항만·배송 로봇 사례뿐이다(oq-010).",
+    "6·7절: rmf_reservation README 원문과 배포판 포함 여부 확인이 필요하다 — 원문 미열람(404)이라 실험적 라이브러리로만 적었다.",
+    "6절: 뮤텍스 그룹의 실제 동작 신뢰성(동시 진입 문제 보고)의 출처 확인이 필요하다 — 브리프에 출처가 없어 '실제 동작 검증은 미확인'으로만 적었다.",
+    "8절: ref-858 저자, ref-146·ref-321 의 결과 수치, 논문 원문 대조가 필요하다 — 모두 검색 요약·제목 수준이다.",
+    "11절: 시간대별 전기 요금·최대 수요 전력 기반 로봇 충전 계획의 학술·국내 출처가 필요하다.",
+    "4·6절: 배터리 교환 방식을 쓰는 국내 물류 로봇 사례가 있으면 현장 시나리오 보강에 필요하다."
+  ],
+  "fixes_applied": [
+    "원문 미열람 표시 — ref-219·ref-098·ref-109·ref-146·ref-060·ref-103·ref-321·ref-858·ref-859·ref-860·ref-861·ref-862·ref-863·ref-866 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었다. ref-039 는 브리프가 github_raw 로 열었다고 기록했고 지시가 제외를 허용하므로 표시하지 않았다.",
+    "f7 is_parking_spot 충돌 — 6절 '충전소 위치 정보의 출처'에 ref-039(is_parking_spot)와 ref-079·ref-104(is_charger)를 모두 [사실]로 제시하고, 11절과 open_question_updates 에 '출처 충돌: Open-RMF 문서는 충전소 지정을 is_parking_spot 과 is_charger 가운데 어느 속성으로 하는가?'(관련 영역 16·6)를 올렸다.",
+    "f10 — 동시 진입 버그 보고는 쓰지 않고 6절 뮤텍스 그룹 문장에 '실제 동작 검증은 미확인'만 적었다.",
+    "f2 — 7절 VDA 5050 관제 기능 행에 '충전 순서·시점 결정 방법은 명세에서 확인되지 않는다'로 적고 명세 문구처럼 쓰지 않았다.",
+    "f6 — 4절과 6절·7절에서 0.10·1.0·5.0 A 등 수치를 템플릿 예시값이며 운영 권장값이 아니라고 밝혔다.",
+    "f12 — 6·7절에 '실험적 라이브러리'와 '배포판 포함 여부는 미확인'을 함께 적고 ref-866 각주에 원문 미열람을 표시했다.",
+    "f15~f26 — 연구 결과 문장을 '보고했다'·'저자 보고' 형식으로 쓰고, f19 에 프리프린트, f20(항만)·f23(병원)·f24(호텔)·f26(배송 로봇)에 물류센터 적용 미확인을 병기했다(3·6·8절).",
+    "ref-103 — 각주 발행일을 2025-03 으로 쓰고 reference_updates 의 published 도 2025-03 으로 고쳤다.",
+    "ref-863 — 각주 기관 표기에 '전자공학회논문지 61(8)'을 넣고 reference_updates 의 org·summary 에도 반영했다.",
+    "새 열린 질문 2번(전기 요금·최대 수요 전력) — 근거를 f2 로 바꿔 11절에서 ref-031(관제의 에너지 관리) 각주를 달았다.",
+    "f14 — 6절에서 [추정] 벤더 주장 병기를 유지하고 ref-219 각주 제목에 제조사 공식 사이트가 아닌 게재본임을 남겼다.",
+    "f19·f18 — 10절에서 f19 를 27. AI·학습·적응과 모델 운영 연결에, f18 을 13. 작업 배정 — MRTA 연결에 쓰고, 6절에도 27. AI·학습·적응과 모델 운영 링크를 두었다.",
+    "트랙 반영 제안 4건 — 6절(충전소 위치 정보 출처: ref-079·ref-216·ref-219), 7절(VDA 5050 startCharging·stopCharging·구역 유형 ref-031, batteryCharging ref-228, Nav2 도킹 ref-216), 10절(Stark 외 2024 ref-109 → 3. 처리능력·거점·설비 계획)에 반영했고, 트랙 실행 2026-09-25-19 f19 의 [추정] 대신 이번 f32 를 썼다.",
+    "분량 초과 자동 분리: 16. 공용 자원·충전·에너지 최적화 본문 9,913자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,779자"
+  ]
+}

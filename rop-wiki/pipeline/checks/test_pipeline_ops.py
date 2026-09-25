@@ -205,7 +205,7 @@ class TestPublishHelpers(unittest.TestCase):
         self.assertEqual(a, ("ref-041", "ref-050"))
         self.assertEqual(b, ("ref-051", "ref-060"))     # 겹치지 않는다
         self.assertEqual(again, a)                        # 같은 실행은 같은 구간
-        self.assertEqual(c, ("ref-061", "ref-070"))     # 풀린 구간 뒤가 아니라 남은 예약(r2) 뒤
+        self.assertEqual(c, ("ref-041", "ref-050"))     # 첫 맞춤: 풀린 구간(r1)을 다시 쓰고, 남은 예약(r2 51~60)과는 겹치지 않는다
 
     def test_compact_ref_mapping(self):
         import publish
