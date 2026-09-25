@@ -374,7 +374,8 @@ class Publisher:
         u = str(u or "").strip()
         u = re.sub(r"^https?://", "", u, flags=re.I)
         u = re.sub(r"^www\.", "", u, flags=re.I)
-        return u.rstrip("/").lower()
+        from urllib.parse import unquote
+        return unquote(u).rstrip("/").lower()   # 퍼센트 인코딩만 다른 같은 URL 은 같은 출처(3부 주간 정리의 ref-637 URL 교정)
 
     def reconcile_concurrent_changes(self) -> list[str]:
         """배치로 여러 실행이 동시에 돌면(run_batch.py) 이 실행의 스토리텔러가 읽은 뒤 다른 실행이 먼저 게시해 같은 페이지를 바꿨을 수 있다.
@@ -526,7 +527,7 @@ class Publisher:
                     meta, _ = fm.read(p)
                 except Exception:
                     continue
-                if str(meta.get("url", "")).rstrip("/") != str(r.get("url", "")).rstrip("/"):
+                if self._norm_url(meta.get("url")) != self._norm_url(r.get("url")):
                     errs.append(f"참고문헌 id 충돌: {rid} 는 이미 다른 출처({meta.get('url')})에 쓰였다. 브리프의 출처 id 를 다음 번호로 다시 부여해야 한다")
         for pg in self.pages.get("pages", []):
             if pg.get("status") == "deprecated":
@@ -937,7 +938,7 @@ class Publisher:
             dst = paths.DOCS / "references" / f"{rid}.md"
             if dst.is_file():
                 meta, _ = fm.read(dst)
-                same = (str(meta.get("url", "")).rstrip("/") == str(r.get("url", "")).rstrip("/"))
+                same = (self._norm_url(meta.get("url")) == self._norm_url(r.get("url")))
                 if not same:
                     raise PublishError(f"참고문헌 id 충돌: {rid} 는 이미 다른 출처({meta.get('url')})에 쓰였다. 브리프의 출처 id 를 다음 번호로 다시 부여해야 한다")
                 continue  # 기존 참고문헌: 인용된 페이지 목록은 auto 영역이 다시 만든다
