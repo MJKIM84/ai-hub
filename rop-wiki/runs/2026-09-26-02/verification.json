@@ -1,0 +1,214 @@
+{
+  "run_id": "2026-09-26-02",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "retry_reason": null,
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-052 README 를 raw.githubusercontent.com 으로 직접 열어 'main 브랜치가 최신 게시판(현재 3.0.0)' 문구와 3.0.1·3.1.0·4.0.0 계획을 확인. ref-022(VDA PDF)·ref-032(보도자료)는 원문 미열람, 같은 VDA 계열이라 독립 교차 아님. '대체됨'은 게시판 기준의 판 관계일 뿐이며 2.x 로봇의 현장 사용(oq-091)이나 2.1.0 태그(ref-323)의 존재와 모순되지 않도록 서술해야 한다. 발행일은 oq-005(3.0.0 발행일 출처 충돌)가 미해소."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과에서 ISO 페이지 'ISO 22400-2:2014/Amd 1:2017 …'(iso.org/standard/68295) 존재 확인. 발행 2017-04·에너지 관리 KPI 는 리서치 스니펫 기준, 원문 미열람. ISO 단일 발행 기관."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 ISO/DIS 22400-2(iso.org/standard/87563)가 개발 중이며 2024-09-17 FDIS 등록 승인(단계 40.99)임을 확인. 새 판 발행은 확인되지 않음(원문 미열람, 확인일 2026-09-26)."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 A3 FAQ(automate.org) 실재와 'most of the requirements of ISO/TS 15066 have been incorporated into ISO 10218-2:2025 because human-robot collaboration relates to the application' 취지 확인. ISO 10218-2:2025 페이지(ref-560)는 이번에 재확인하지 않음(기존 등록 출처). A3 는 ISO 가 아니므로 'A3 설명에 따르면'으로 출처 주체를 밝힌다. 원문 미열람."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 ISO/TS 15066:2016 '2022 검토·확인' 및 ISO/AWI 15066-1 이 이를 대체할 예정임을 확인. AWI 정식 제목은 'Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data' 로, 브리프 제목(Collaborative Safety)보다 길다. 두 출처 모두 ISO 로 독립 교차 아님. 원문 미열람."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-568·ref-211 은 기존 등록 출처. 신규 ref-825 는 검증 검색 예산 소진으로 검증자가 독립 재검색하지 못했고 리서치 검색 기록(제목·URL)에만 기댄다(원문 미열람(검증 예산)). 부재 확인이 아닌 '검색 범위 내 미발견'이므로 [추정]·low 적정."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 ISO/CD 3691-4(iso.org/standard/88615)가 '위원회 검토 중인 초안'이며 ISO 3691-4:2023 을 대체할 예정임을 확인. 같은 검색에 ISO OBP 의 'ISO/DIS 3691-4 ed-2' 항목도 나타나 실제 단계가 CD 보다 뒤일 수 있음 — 단계 표기는 '확인일 2026-09-26 ISO 프로젝트 페이지 표기 기준'으로 한정한다. 원문 미열람."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-820(DIN Media 초안 페이지)은 검증 예산 소진으로 독립 재검색하지 못함(리서치 검색 기록 의존, 원문 미열람(검증 예산)). 다만 ISO 20607 검증 검색 결과에 'prEN ISO 12100:2025' 6.4절 보완이 언급되어 12100 개정 진행은 간접 확인. 기준일은 2025-01(초안 게시)로 남긴다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-821 은 시험인증기관 블로그(업계 보고서, low)로 검증자가 독립 확인하지 못함(원문 미열람(검증 예산)). 2026 FDIS 전망은 블로그 전망이므로 [추정]·low 적정. EU 기계 규정 2027-01-20 적용은 기존 등록 출처 ref-555 에 기댄다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 ISO 22301:2019/Amd 1:2024(2024-02 발행) 확인. 단 4.1 은 '조직은 기후 변화가 관련 이슈인지 결정해야 한다'는 요구사항 추가이고 4.2 는 '관련 이해관계자는 기후 변화 관련 요구사항을 가질 수 있다'는 주석 추가다. '4.1·4.2 에서 관련성 검토를 요구한다'는 4.2 를 과장하므로 문구 정정을 조건으로 유지. 원문 미열람."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-502 는 기존 등록 출처. 후속판 부재는 검색 범위 내 미발견이며 검증자는 예산 소진으로 재검색하지 않음. [추정] 적정, 원문 미열람."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-119 는 기존 등록 출처. 후속판 부재는 검색 범위 내 미발견, [추정] 적정. 검증자 재검색 없음(예산), 원문 미열람."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-767 은 기존 등록 출처이며 주간 정리(2026-09-26-01 f6)에서 ref-584·ref-707 과 같은 표준의 중복 URL 로 지적됨. 개정 진행 미확인 [추정]·low 적정. 검증자 재검색 없음(예산), 원문 미열람."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-818 작업반 README 를 raw.githubusercontent.com 으로 직접 열어 2023 Edition 이 편집자 초안·공개 작업 초안 상태이고 2017 판이 W3C 권고안이라는 점, 구현 사례 수집 중임을 확인. ref-817(W3C 뉴스)은 원문 미열람, 같은 W3C 계열이라 독립 교차 아님. as_of '2025' 는 FPWD 공지 연도로 월은 미확인."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 IEC/IEEE CD 82079-1(iso.org/standard/87206)이 위원회 검토 중인 초안이며 2019 판을 대체할 예정임을 확인. 원문 미열람."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검색 결과로 IBF 뉴스와 ISO/DIS 20607 투표 종료(2025-05-02/03)·디지털 사용 설명서 요구(7.2절) 확인. 추가로 검색 결과에 ISO 페이지 'ISO/FDIS 20607'(iso.org/standard/90501)이 나타나 개정판이 FDIS 단계까지 진행된 것으로 보이나 브리프에 없는 출처이므로 본문에 쓰지 않는다. 새 판 발행 미확인 [추정] 유지, 원문 미열람."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-345·ref-679 모두 기존 등록 출처이며 참고문헌 목록 대조(2018-03-05 대 고시 제2021-1445호 2021-12-24)는 입력 references/index.md 로 확인. '2021 판 이후 개정 고시 미확인'은 검색 범위 내 미발견으로 한정해 서술해야 한다. 원문 미열람."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "ref-314 는 기존 등록 출처. 개정 여부 미확인 [추정]·low 적정. 검증자 재검색 없음(예산), 원문 미열람."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "검증 검색에서 국가법령정보센터 '법령 > 제정·개정문 > 산업 디지털 전환 및 인공지능 활용 촉진법'(lsiSeq=281883) 제목·URL 일치를 확인하고, 독립 출처인 폴리뉴스 기사가 기존 산업 디지털 전환 촉진법을 개정해 AI 활용을 포함했다고 전함 — 제명 변경은 발행 주체가 다른 두 출처로 확인. 두 출처 모두 원문 미열람이라 신뢰도 medium 상한. 조문 내용은 미확인."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "검증 검색 요약에서 폴리뉴스 기사의 2026-07-01 시행 서술 확인. 법령정보센터에서 시행일은 확인하지 못해 기사 단일 출처 [추정]·low 적정. 데이터 공동 생성 조문 변화 미확인이므로 oq-122 는 해결로 바꾸지 않는다. 원문 미열람."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f1 은 열린 질문 oq-005(VDA 5050 3.0.0 발행일 출처 충돌)·oq-091(2.x·3.0.0 혼재 플릿)과 연결된다 — oq-005 는 해결로 바꾸지 않는다. ref-052 와 ref-634 는 같은 VDA5050 저장소 README 를 가리키는 중복 후보다",
+      "f13 의 ref-767 은 주간 정리 2026-09-26-01 f6 에서 ref-584·ref-707 과 같은 IEC 62443-3-3:2013 중복으로 지적된 출처다",
+      "f17 의 ref-345·ref-679 는 같은 실내공간정보 구축 작업규정의 두 판이며 oq-044 와 관련된다",
+      "f19·f20 은 주간 정리 2026-09-26-01 f4 와 oq-122 를 이어받은 것으로 모순 없음(f4 의 '가능성'이 제명 변경 확인으로 보강됨)",
+      "새 열린 질문(KS B ISO 10218-2·KS B ISO/TS 15066 부합 개정)은 oq-070(이동식 협동로봇 KS 와 ISO 10218-2:2025 대응)·oq-092(협동로봇 설치 작업장 안전인증)와 인접하나 같은 질문은 아니다"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "갱신 범위: 이번 실행의 페이지 갱신은 docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md 와 docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md 두 건만 pages[].patches 로 보낸다 — 첫 제안 rationale 의 주제 페이지(2026-09-25-area04-s4, 2026-09-25-area04-s7) 동시 수정은 하루 갱신 상한 2건을 넘고, 표준 목록의 ISO 22400-2 항목은 퍼블리셔 자동 영역(standards-table)이므로 손대지 않는다; 주제 페이지 반영은 다음 실행 후보로 changelog_entry 에 적는다.",
+    "두 세부영역 페이지 모두 기존 절 본문이 이번 입력에 없어 인용 문장을 대조하지 못했으므로 patches 의 action 은 append 로 하고, 해당 절 끝에 '재검증(2026-09-26, 실행 2026-09-26-02)' 소제목으로 판 상태를 덧붙인다 — 기존 검증된 문장을 replace 로 지우지 않는다.",
+    "월간 재검증 처분: ISO 22400-2:2014·ISO/TS 15066:2016·ISO 3691-4:2023·ISO 12100:2010 은 모두 아직 대체 판이 발행되지 않았으므로 두 페이지에 needs_update·deprecated 를 지시하지 않는다; status 는 일반 규칙대로 draft 로 둔다.",
+    "f2·f3: 4. 성과·경제성·프로세스 개선 페이지에는 'ISO 22400-2:2014 는 현행판이며 에너지 관리 KPI 를 더한 개정 1(2017-04)이 있고, 개정판 ISO/DIS 22400-2 가 2024-09-17 FDIS 등록 승인 단계로 표시돼 있으나 새 판 발행은 확인되지 않았다(확인일 2026-09-26)'를 [사실][^ref-812][^ref-811][^ref-139]로 쓴다.",
+    "f4: 문장 주체를 'A3(미국 로봇 안전 표준 개발 단체) FAQ 설명에 따르면'으로 밝히고 [사실][^ref-471][^ref-560]를 유지한다; 용어는 용어집의 '협동 적용(Collaborative Application)'을 쓴다.",
+    "f5: ISO/AWI 15066-1 제목을 'Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data'로 적는다 — 브리프의 줄인 제목은 ISO 페이지 제목과 다르다. ISO/TS 15066:2016 이 폐지되지 않고 2022 확인판으로 남아 있다는 점과 함께 기준일 2026-09-26 을 남긴다.",
+    "f6: '국내 KS 는 구판 기준일 가능성이 있다'는 [추정]으로 두고 '검색 범위 내 미발견이며 부재 확인이 아니다'를 같은 문장에 밝힌다.",
+    "f7: ISO 3691-4 차기판 단계는 '확인일 2026-09-26 ISO 프로젝트 페이지(ISO/CD 3691-4) 표기 기준'으로 한정해 쓴다 — 단계가 이미 더 진행됐을 수 있다.",
+    "f8·f9: f8 은 기준일 2025-01(DIN 초안 게시)로 [사실][^ref-820][^ref-566]; f9 는 '시험인증기관 Intertek 블로그(2025-12-11)의 전망'으로 출처 주체를 밝히고 [추정][^ref-821][^ref-555]로 쓴다.",
+    "f10: 4.1 과 4.2 를 구분해 '4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항이, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석이 추가됐다'로 고친다 — 브리프 문구는 4.2 를 요구사항으로 과장한다. (이번 갱신 대상 페이지가 아니므로 changelog_entry 의 다음 실행 후보에 이 정정 문구로 남긴다.)",
+    "f1·f14·f16·f17·f19·f20 등 이번 갱신 대상 페이지(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리) 밖의 재검증 결과는 본문에 넣지 않고 changelog_entry 에 '다음 실행 후보'로 출처 id 와 처분(ref-022 최신 게시판 기준 이전 판 — 2.x 로봇 현장 사용(oq-091)과 모순되지 않게, 3.0.0 발행일은 oq-005 미해소로 적지 않음; ref-345 구판·대체 출처 ref-679; ref-637 제명 변경; ref-030 2023 Edition 공개 작업 초안; ref-486 개정 1:2024; ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정)만 적는다.",
+    "f17 을 인용할 경우 '2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않았다'로 부재를 한정한다.",
+    "oq-122 는 해결로 바꾸지 않는다 — 제명 변경(f19)은 확인됐으나 시행일(f20)은 기사 단일 출처이고 데이터 공동 생성 조문 변화가 미확인이다.",
+    "새 열린 질문(KS B ISO 10218-2·KS B ISO/TS 15066 부합 개정)은 질문 끝에 '(관련 기존 질문: oq-070, oq-092)'를 덧붙여 등록하고 areas 는 25·18 로 둔다.",
+    "각주·참고문헌: ref-052·ref-818 을 제외한 이번 실행 출처의 각주 정의는 접근일 뒤 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다; 신규 출처는 페이지에 실제 인용한 것만 reference_updates 에 등록한다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다(fetch_mode mirror_only). 확인 20건, 미확인 0건, 교차 확인 1건(f19: 국가법령정보센터·폴리뉴스). 확인 20건 가운데 검증자가 원문 열람(ref-052 VDA 5050 README, ref-818 SOSA/SSN 작업반 README)이나 검색으로 독립 재확인한 것은 f1·f2·f3·f4·f5·f7·f10·f14·f15·f16·f19·f20 12건이고, f6·f8·f9·f11·f12·f13·f17·f18 8건은 검증 검색 예산 소진(리서치 20회 + 검증 10회 = 회당 상한 30회)으로 기존 등록 출처와 리서치 검색 기록에 기댔다. 강등: 없음(f10 은 4.2 조항을 요구사항으로 과장한 문구의 정정을 조건으로 유지). 원문 미열람 출처: ref-052·ref-818 을 제외한 이번 실행 출처 전부. 주의: 재검증 대상은 참고문헌 목록에서 리서치가 고른 일부이며 전수 재검증이 아니다. 대상 표준 가운데 대체 판이 발행된 것은 확인되지 않았고(ISO 22400-2 FDIS 등록 승인, ISO/TS 15066 은 2022 확인판 유지·요구사항 대부분이 ISO 10218-2:2025 로 통합, ISO 3691-4 CD, ISO 12100 개정 초안, IEC/IEEE 82079-1 CD, ISO 20607 개정 진행), 판 단계 표기는 확인일 2026-09-26 기준이다. 검증 검색에서 ISO/FDIS 20607(iso.org/standard/90501)과 ISO OBP 의 ISO/DIS 3691-4 제2판 항목이 추가로 보여 두 표준의 실제 단계가 브리프보다 앞설 수 있다 — 다음 재검증에서 확인한다. 산업 디지털 전환 촉진법은 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 제명이 바뀐 것이 확인됐으나 시행일(2026-07-01)은 기사 1건이고 조문 변화는 미확인이어서 oq-122 는 열림으로 둔다. 정정 요청 없음."
+}
