@@ -28,6 +28,23 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-01 답함(네 층 평가 지표, 3절 신설), 2절에 단계 5 백로그 질문 반영(q5-06 폐기 제외)·새 질문 q5-11·q5-12, 4·5·6·8·9절 갱신, 상태 줄 진행 중. 시드 단계 페이지라 상태 줄(H1 아래)까지 고치려고 전체 content 로 보냄 |
+| 2026-09-25-98 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절 '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절 신설(네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행, 모두 추정), 새 출처 각주 추가 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 초안 v0.8 유지(실행 2026-09-25-98 변경 없음), 아이디어 2 링크 설명에 CLI 지정 질문으로 단계 5 q5-01 을 다뤘음과 현재 단계 3 유지를 적음. 상태 줄은 입력 그대로(현재 단계 3, 마지막 트랙 실행 2026-09-25) |
+| 2026-09-25-98 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-01 답함(해석·분해·배정 적합성·일정 품질 네 층 평가 지표, 신뢰도 low), 후속 질문 2건, q5-06 폐기, 아이디어 2 6절 평가 지표 소절 신설, 초안 v0.8 유지 |
+| 2026-09-25-98 | 생성 | [docs/references/ref-730.md](references/ref-730.md) | 참고문헌 ref-730 등록: Mismatch between Multi-turn Dialogue and its Evaluation Metr… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-731.md](references/ref-731.md) | 참고문헌 ref-731 등록: A Survey on Spoken Language Understanding: Recent Advances a… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-732.md](references/ref-732.md) | 참고문헌 ref-732 등록: Generating Executable Action Plans with Environmentally-Awar… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-733.md](references/ref-733.md) | 참고문헌 ref-733 등록: Robustness and stability measures for scheduling: single-mac… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-734.md](references/ref-734.md) | 참고문헌 ref-734 등록: Dynamic rescheduling that simultaneously considers efficienc… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-735.md](references/ref-735.md) | 참고문헌 ref-735 등록: RTAW-Centralised-multi-robot-task-allocation — README |
+| 2026-09-25-98 | 생성 | [docs/references/ref-736.md](references/ref-736.md) | 참고문헌 ref-736 등록: The Berkeley Function Calling Leaderboard (BFCL): From Tool… |
+| 2026-09-25-98 | 생성 | [docs/references/ref-737.md](references/ref-737.md) | 참고문헌 ref-737 등록: berkeley-function-call-leaderboard — README |
+| 2026-09-25-98 | 생성 | [docs/glossary/joint-goal-accuracy.md](glossary/joint-goal-accuracy.md) | 용어집 항목 결합 목표 정확도 |
+| 2026-09-25-98 | 생성 | [docs/glossary/optimality-gap.md](glossary/optimality-gap.md) | 용어집 항목 최적성 간격 |
+| 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-01 답함(3절 신설), 2절에 q5-04~q5-10 행 추가, 4·5·6·8·9절 갱신, 상태 줄 갱신(seed 페이지 전체를 content 로 보냄). 2차 수정: 6절 첫 완료 조건을 한 행·미충족으로 되돌림, 4절 결론의 '클래스별' 삭제 |
 | 2026-09-25-80 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: 도입 단락을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 '평가 지표 (q5-01)' 소절(세 층 지표·운영 허용치 변환·경로 차이 정의·ROP 경계, 추정 중심)을 더함, 근거 공백 문장에 태그·각주 추가 |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-80(단계 5, q5-01) 산출물 요약 단락 추가 |

@@ -1,0 +1,794 @@
+{
+  "duration_api_ms": 360829,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 5.126743999999999,
+  "usage": {
+    "input_tokens": 24,
+    "cache_creation_input_tokens": 390379,
+    "cache_read_input_tokens": 5025135,
+    "output_tokens": 27240,
+    "output_tokens_details": {
+      "thinking_tokens": 7736
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 390379,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 21151,
+        "cache_read_input_tokens": 463717,
+        "cache_creation_input_tokens": 495,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 495
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 24,
+      "outputTokens": 27240,
+      "cacheReadInputTokens": 5025135,
+      "cacheCreationInputTokens": 390379,
+      "webSearchRequests": 0,
+      "costUSD": 4.672955,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7736,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 228694,
+      "outputTokens": 9019,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.45378900000000005,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 27,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-98\",\"date\":\"2026-09-25\",\"run_type\":\"track\",\"target\":{\"area_no\":13,\"area_name\":\"13. 작업 배정 — MRTA\",\"category\":\"D. 계획·최적화\"},\"gaps\":[\"단계 5 질문 q5-01 열림(target.json 지정, CLI 지정 질문 id). 단계 5 페이지는 seed 상태로 3~6·8절 비어 있음(단계 5 첫 실행)\",\"완료 조건: 평가 지표와 검증 절차가 아이디어 2. 자연어 업무 지시 챗봇 6절에 없음(6절 '아직 조사되지 않음')\",\"완료 조건: 가설 판정표(q5-03)와 실험 계획(experiments.md)이 없음 — 이번 실행 밖\",\"아이디어 2. 자연어 업무 지시 챗봇 4절 '해석·분해 평가 데이터' 소절은 데이터 형식만 있고 지표 정의는 6절로 미뤄 둠\",\"13. 작업 배정 — MRTA 섹션 6에 배정 결과를 실행 가능성과 최적성으로 나눠 평가하는 지표 근거 없음\",\"14. 작업 순서·스케줄링 섹션 6에 재스케줄링 뒤 일정 품질(효율·안정성) 지표 근거 없음\",\"23. 시험·형식 검증·벤치마크 섹션 6에 지시 해석·계획 평가 지표(목표 조건 달성, 순서 일치, 도구 호출 인자 일치) 근거 약함\"],\"research_questions\":[\"가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]\",\"q5-01 해석·분해 정확도, 배정 적합성, 일정 품질을 각각 어떤 지표로 측정하는가?\",\"지시 해석 정확도는 대화·음성 이해 연구에서 어떤 지표(의도 정확도, 슬롯 F1, 전체 정확도, 결합 목표 정확도)로 재며, 구조화된 도구 호출 인자는 어떻게 채점하는가? (단계 5 페이지 3절, 27. AI·학습·적응과 모델 운영 겨냥)\",\"분해 결과는 체화 에이전트·다중 로봇 계획 벤치마크에서 어떤 지표(성공률, 목표 조건 달성률, 순서 일치, 실행 가능성, 로봇 활용도)로 재는가? (23. 시험·형식 검증·벤치마크 연결)\",\"배정 적합성은 실행 가능성과 최적성(해법기 기준값 대비 격차)을 어떻게 나눠 재며, 창고 배정 연구는 어떤 운영 지표(총 이동 지연, makespan)를 쓰는가? (13. 작업 배정 — MRTA 섹션 6 겨냥)\",\"일정 품질은 효율(makespan·납기 지연)과 재스케줄링 안정성(시작 시각 편차)으로 어떻게 재는가? (14. 작업 순서·스케줄링 섹션 6 겨냥)\",\"국내에 로봇 작업 지시 해석·배정 평가 지표를 다룬 연구·자료가 있는가? (한국 자료 우선 규칙)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"ALFRED 벤치마크는 성공률과 함께 에피소드 끝에 달성한 목표 조건 수를 과제 완료에 필요한 목표 조건 수로 나눈 목표 조건 성공률(GC)을 두고, 두 지표를 전문가 시연 경로 길이 대비 에이전트 경로 길이로 가중한 경로 길이 가중 지표(PLW)도 보고한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-540\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"목표 조건 성공률 = 에피소드 끝에 완료한 목표 조건 / 과제에 필요한 목표 조건(과제당 평균 2.55개). PLW 는 (전문가 경로 길이)/(에이전트 경로 길이)로 가중해 전문가보다 두 배 길면 절반 점수. 가정 환경(AI2-THOR) 조건, 검색 요약 기준.\",\"as_of\":\"2020\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f2\",\"claim\":\"SMART-LLM 논문은 다중 로봇 계획을 성공률, 작업 완료율, 정답 최종 상태 조건 대비 목표 조건 재현율(GCR), 정답 전이 수와 비교한 로봇 활용도(RU), 실행 가능 동작 비율(Exe)의 다섯 지표로 평가한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-090\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SR·TC·GCR(달성한 목표 원자/정답 목표 집합)·RU(총 전이 수를 정답과 비교)·Exe. AI2-THOR 기반 36개 상위 지시 데이터셋 조건. (재인용: 2026-09-25-62)\",\"as_of\":\"2023-09\",\"flow_step\":null,\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"Gramopadhye·Szafir(G-PlanET)는 생성 계획과 사람이 쓴 정답 계획 사이 최장 공통 부분수열(LCS) 길이를 더 긴 계획의 길이로 나눈 LCS 지표로 행동 순서의 일치를 재고, 실행 가능성(executability)과 정확성(correctness)을 함께 보고한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-732\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"LCS 는 순서를 유지하되 간격을 허용하며, 무관·반복 행동이 든 긴 계획을 벌점한다. VirtualHome·ActivityPrograms 조건, 저자들은 실행 가능성 310%·정확성 147% 개선을 보고(저자 보고값, 검색 요약 기준).\",\"as_of\":\"2022-10\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"음성 언어 이해(SLU) 서베이(Qin 외, IJCAI 2021)는 가장 널리 쓰는 평가 지표로 슬롯 채우기의 F1, 의도 인식의 의도 정확도, 한 문장에서 의도와 슬롯을 모두 맞힌 비율인 전체 정확도(overall accuracy)를 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-731\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"슬롯 채우기는 정밀도·재현율의 조화평균인 F1, 의도 인식은 문장 단위 정확도, 전체 정확도는 의도와 슬롯이 모두 맞은 문장의 비율. ATIS·SNIPS 가 대표 데이터셋. 검색 요약 기준.\",\"as_of\":\"2021\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"Snips 의 NLU 벤치마크(2017-06)는 의도·경쟁 엔진별 결과 파일에 슬롯마다 정밀도와 재현율을 따로 기록해, 슬롯 단위로 해석 정확도를 비교한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-545\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 결과는 의도·경쟁 엔진마다 metrics 파일로 제시되며, 슬롯마다 'precision' 과 'recall' 을 표시하고 학습 크기별 무작위 표본 3회 값을 둔다(F1 계산 방식은 README 에 없음). 확인일 2026-09-25 기준.\",\"as_of\":\"2017-06\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"Kim 외(고려대학교 등, ACL 2022)는 대화 상태 추적의 표준 지표인 결합 목표 정확도(JGA, 한 턴의 모든 슬롯 값을 맞혀야 정답)가 초기 오류가 누적되어 성능을 과소평가하고 슬롯 정확도는 미리 정한 슬롯 수에 좌우되어 과대평가한다고 지적하고, 대안으로 상대 슬롯 정확도(relative slot accuracy)를 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-730\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"MultiWOZ 조건. 저자들은 모델 간 차이가 슬롯 정확도로는 1.09%p, 상대 슬롯 정확도로는 5.47%p 로 나타났다고 보고(저자 보고값, 검색 요약 기준).\",\"as_of\":\"2022-05\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f7\",\"claim\":\"Berkeley 함수 호출 리더보드(BFCL)는 자연어 요청을 도구 호출로 옮기는 능력을 함수 이름·인자 스키마·값을 추상 구문 트리(AST)로 대조하는 AST 평가와 실제로 호출해 보는 실행 평가로 채점하며, 2,000개가 넘는 질문–함수–정답 쌍을 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-737\",\"ref-738\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 'first comprehensive and executable function call evaluation', v1 은 단일·병렬·다중 함수 호출을 AST 로 평가. 2,000개 넘는 쌍과 '호출하지 말아야 할 경우' 포함은 논문 검색 요약 기준(원문 미열람). README 와 논문은 같은 저자라 독립 교차 아님.\",\"as_of\":\"2025\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f8\",\"claim\":\"ConstraintBench 저자들은 LLM 이 제약 최적화 문제를 직접 풀 때 실행 가능성과 최적성이 분리되어 나타난다고 보고했으며, 시설 입지 영역은 실행 가능 비율 85.0%로 가장 높았지만 최적성까지 만족한 비율은 0%(중앙 최적성 간격 9.4%)였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-592\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"10개 운영과학 영역, Gurobi 최적값을 기준으로 실행 가능성과 최적성(0.1% 이내)을 따로 채점. 시설 입지 85.0% 실행 가능·0% 최적·중앙 간격 9.4%는 저자 보고값(검색 요약 기준, 원문 미열람).\",\"as_of\":\"2026-02\",\"flow_step\":null,\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"창고 다중 로봇 작업 배정 연구 RTAW(ICRA 2023)는 로봇이 작업을 수행하지 않고 이동하는 추가 시간인 총 이동 지연(TTD)을 평가 지표로 두고, 근시안적 픽업 거리 최소화(탐욕) 기준선과 후회 기반 기준선에 견주어 TTD 를 최대 14% 줄였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-735\",\"ref-736\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"TTD 최소화가 충분히 큰 작업 목록에서 makespan 을 개선한다고 설명. 여러 창고 배치·작업 생성 방식, 최대 1000대 시뮬레이션 조건(저자 보고, 논문은 검색 요약 기준). 공식 README 는 TTD 값을 내는 명령을 둔다(확인일 2026-09-25). 같은 저자 자료라 독립 교차 아님.\",\"as_of\":\"2022-09\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f10\",\"claim\":\"Rangsaritratsamee·Ferrell·Kurz(Computers & Industrial Engineering 46, 2004)는 작업이 동적으로 도착하는 작업장 재스케줄링에서 효율은 makespan 과 납기 지연(tardiness)으로, 안정성은 작업 시작 시각의 편차로 재어 두 목표를 함께 다루는 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-734\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"재스케줄 시점마다 유전 국소 탐색으로 일정을 만들고 효율(makespan·tardiness)과 안정성(시작 시각 편차 최소화)을 상황에 맞게 균형. 제조 작업장 조건, 검색 요약 기준.\",\"as_of\":\"2004\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f11\",\"claim\":\"Goren·Sabuncuoglu(IIE Transactions 40(1), 2008)는 무작위 교란이 있을 때 강건하고 안정적인 일정을 찾는 문제에서 강건성(성능 지표의 변화)과 안정성(일정 자체의 변화)을 재는 대리 척도 두 가지를 개발했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-733\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"단일 기계 환경 조건. 강건성·안정성 대리 척도 개발은 검색 요약에서 확인. 강건성은 makespan·지연 같은 성과의 변화, 안정성은 시작·완료 시각 같은 일정 특성의 변화로 구분하는 서술은 검색 요약 기준이며 원문 문구는 미확인.\",\"as_of\":\"2008\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f12\",\"claim\":\"q5-01 에 대해 확인한 지표를 이 위키가 묶으면, 측정은 (1) 해석: 의도 정확도·슬롯별 정밀도·재현율·F1·의도와 슬롯이 모두 맞은 전체 정확도, 여러 턴이면 결합 목표 정확도와 상대 슬롯 정확도, 구조화 출력이면 필드 값 대조(AST식), (2) 분해: 성공률·목표 조건 달성률·LCS 순서 일치·실행 가능 동작 비율, (3) 배정 적합성: 능력·제약 위반 없는 실행 가능 배정 비율과 해법기 기준값 대비 최적성 간격, (4) 일정 품질: makespan·납기 지연·총 이동 지연과 재스케줄 뒤 시작 시각 편차의 네 층으로 두는 구성이 근거가 가장 많은 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-731\",\"ref-545\",\"ref-730\",\"ref-737\",\"ref-540\",\"ref-090\",\"ref-732\",\"ref-592\",\"ref-735\",\"ref-734\",\"ref-733\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 층의 지표 정의는 f1~f11 의 출처별 서술이며, 네 층을 한 번에 제시한 단일 출처는 찾지 못함. 근거 환경은 가정·대화·도구 호출·운영과학·창고 시뮬레이션·제조 작업장.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f13\",\"claim\":\"배정 적합성은 목표 상태 달성만으로는 드러나지 않고 실행 가능성과 최적성이 따로 움직이므로, 실행 가능 배정 비율과 해법기 최적값(또는 최선 해) 대비 목적함수 격차를 분리해 보고해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-592\",\"ref-090\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"ConstraintBench 의 실행 가능성–최적성 분리 보고(f8)와, SMART-LLM 지표가 목표 달성·전이 수 대비 활용도를 재되 배정 최적성을 정답으로 두지 않는 점(f2)을 이 위키가 연결한 추론.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f14\",\"claim\":\"분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)을 재려면, 챗봇·ROP 의 배정 결과를 최근접(탐욕 픽업 거리) 기준선과 해법기 기준값에 함께 견주어 총 이동 지연·makespan·납기 지연으로 비교하는 설계가 필요해 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-735\",\"ref-400\",\"ref-592\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"RTAW 는 탐욕 픽업 거리 기준선 대비 TTD 를 보고(f9), 작업장 사례는 최근접 규칙 대비 조합 최적화 배차의 대기 시간을 보고. 창고 조건 실측 비교 부재는 기존 oq-052 와 같은 방향.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"피킹\",\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f15\",\"claim\":\"결합 목표 정확도나 전체 정확도처럼 모두 맞아야 정답인 지표는 물류 지시에서 화물·장소·기한 슬롯 하나만 틀려도 0점이 되므로, 슬롯별 지표를 함께 두고 기한·대상 화물처럼 오배정 비용이 큰 슬롯의 오류를 따로 집계해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-730\",\"ref-731\",\"ref-545\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"JGA 의 과소평가·슬롯 정확도의 과대평가 지적(f6)과 슬롯별 정밀도·재현율 기록 관행(f5)을 물류 지시에 옮긴 이 위키의 추론. 슬롯별 가중치 근거는 없음.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f16\",\"claim\":\"피킹 구역 관리자가 '피킹 끝난 토트를 10시 전까지 2번 도크로'라고 지시하면, 해석은 대상·장소·기한 슬롯과 프레임 전체 일치로, 분해는 '토트가 2번 도크에 있음' 같은 목표 조건 달성과 행동 순서 일치로, 배정은 능력·제약 위반 여부와 해법기 기준값 대비 격차로, 일정은 10시 대비 납기 지연과 재계획 뒤 시작 시각 편차로 재는 식이 가능해 보인다(설명용 가정 사례).\",\"tag\":\"추정\",\"source_ids\":[\"ref-731\",\"ref-540\",\"ref-592\",\"ref-734\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"수치 없는 설명용 가정 사례. f12 의 네 층 구성을 한 지시에 적용한 예시.\",\"as_of\":\"2026-09-25\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f17\",\"claim\":\"Open-RMF 작업 상태 스키마가 진행 상태 값(delayed 등)과 시작·종료 시각을 기록하므로, 시뮬레이션이나 시험 운영에서 일정 품질 지표(납기 지연, makespan)를 산출할 기록 원천으로 쓸 수 있어 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-111\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"작업 상태 스키마의 status 값(queued·underway·delayed·completed 등)과 시작·종료 시각(확인일 2026-09-25 기준, 이전 실행 확인)을 지표 산출 원천으로 쓰는 것은 이 위키의 추론. 기한 필드는 작업 모델 쪽에 있어야 함(초안 업무 개념). (재인용: 2026-09-25-51)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"완료·인계\",\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"이번 검색 범위(한국어 2회 포함 18회)에서는 물류 창고 로봇에 채팅으로 준 지시의 해석·분해·배정·일정 품질을 한 벤치마크에서 함께 잰 연구나 국내 자료를 찾지 못했다(부재의 확인은 아님).\",\"tag\":\"추정\",\"source_ids\":[\"ref-540\",\"ref-090\",\"ref-737\",\"ref-735\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"확인한 지표의 환경은 가정 시뮬레이터, 대화·음성 비서, 도구 호출, 운영과학 일반, 창고 배정 시뮬레이션(해석 없음), 제조 작업장. 한국어 검색은 해외 논문 번역 페이지와 산업 기사만 나옴.\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true}],\"sources\":[{\"id\":\"ref-730\",\"org\":\"Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(고려대학교 등, ACL 2022 Short Papers)\",\"title\":\"Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking\",\"published\":\"2022-05\",\"url\":\"https://aclanthology.org/2022.acl-short.33/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 대화 상태 추적의 결합 목표 정확도가 과소평가, 슬롯 정확도가 과대평가된다고 지적하고 상대 슬롯 정확도를 제안한 국내 연구진 논문.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-731\",\"org\":\"Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021)\",\"title\":\"A Survey on Spoken Language Understanding: Recent Advances and New Frontiers\",\"published\":\"2021\",\"url\":\"https://www.ijcai.org/proceedings/2021/0622.pdf\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 음성 언어 이해의 의도 인식·슬롯 채우기 방법을 정리하고 의도 정확도·슬롯 F1·전체 정확도를 대표 지표로 드는 서베이.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-732\",\"org\":\"Gramopadhye, M., & Szafir, D.\",\"title\":\"Generating Executable Action Plans with Environmentally-Aware Language Models\",\"published\":\"2022-10\",\"url\":\"https://arxiv.org/abs/2210.04964\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 환경을 고려한 LLM 행동 계획 생성 연구로, 실행 가능성·정확성과 정답 계획과의 LCS 지표로 평가한다(VirtualHome).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-733\",\"org\":\"Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83)\",\"title\":\"Robustness and stability measures for scheduling: single-machine environment\",\"published\":\"2008\",\"url\":\"https://www.tandfonline.com/doi/full/10.1080/07408170701283198\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 무작위 교란 아래 단일 기계 일정의 강건성과 안정성을 재는 대리 척도를 개발한 논문.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-734\",\"org\":\"Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46)\",\"title\":\"Dynamic rescheduling that simultaneously considers efficiency and stability\",\"published\":\"2004\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 동적 작업장 재스케줄링에서 효율(makespan·납기 지연)과 안정성(시작 시각 편차)을 함께 다루는 유전 국소 탐색 방법.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-735\",\"org\":\"Agrawal, A. 외(RTAW 저자, ICRA 2023)\",\"title\":\"RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments\",\"published\":\"2022-09\",\"url\":\"https://arxiv.org/abs/2209.05738\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 창고 다중 로봇 작업 배정을 강화학습으로 풀고 총 이동 지연(TTD)을 탐욕·후회 기반 기준선과 비교한 연구.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-736\",\"org\":\"Aakriti05 (RTAW 공식 저장소)\",\"title\":\"RTAW-Centralised-multi-robot-task-allocation — README\",\"published\":null,\"url\":\"https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"RTAW 구현 저장소 README. 학습된 정책으로 TTD 값을 산출하는 실행 명령을 둔다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation/main/README.md\"},{\"id\":\"ref-737\",\"org\":\"Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267)\",\"title\":\"The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models\",\"published\":\"2025\",\"url\":\"https://proceedings.mlr.press/v267/patil25a.html\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LLM 의 함수 호출 능력을 AST 평가와 실행 평가로 채점하는 벤치마크 논문.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-738\",\"org\":\"ShishirPatil (gorilla GitHub)\",\"title\":\"berkeley-function-call-leaderboard — README\",\"published\":null,\"url\":\"https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"BFCL 공식 README. 실행 가능한 함수 호출 평가와 AST 기반 단일·병렬·다중 호출 평가를 설명한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md\"},{\"id\":\"ref-540\",\"org\":\"Shridhar, M. 외\",\"title\":\"ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks\",\"published\":\"2020\",\"url\":\"https://openaccess.thecvf.com/content_CVPR_2020/html/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.html\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자연어 지시와 가정 작업 행동 순서를 짝지은 벤치마크로, 성공률·목표 조건 성공률과 경로 길이 가중 지표를 쓴다.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-090\",\"org\":\"Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.\",\"title\":\"SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models\",\"published\":\"2023-09\",\"url\":\"https://arxiv.org/abs/2309.10062\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. LLM 다중 로봇 작업 계획(분해·팀 구성·할당)과 다섯 평가 지표.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-545\",\"org\":\"Snips (sonos/nlu-benchmark GitHub)\",\"title\":\"nlu-benchmark — 2017-06-custom-intent-engines (README)\",\"published\":\"2017-06\",\"url\":\"https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"7개 의도의 크라우드소싱 질의로 NLU 엔진을 비교하고 슬롯별 정밀도·재현율을 기록하는 벤치마크 README.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/sonos/nlu-benchmark/master/2017-06-custom-intent-engines/README.md\"},{\"id\":\"ref-592\",\"org\":\"ConstraintBench 저자(arXiv 2602.22465, 저자 미확인)\",\"title\":\"ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization\",\"published\":\"2026-02\",\"url\":\"https://arxiv.org/abs/2602.22465\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 10개 운영과학 영역에서 LLM 직접 풀이의 실행 가능성과 최적성을 해법기 기준으로 따로 채점한 벤치마크.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-400\",\"org\":\"International Journal of Planning and Scheduling 게재 논문(저자 미확인)\",\"title\":\"Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors\",\"published\":\"2019\",\"url\":\"https://www.inderscience.com/info/inarticle.php?artid=103016\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 작업장 AGV 배차에서 조합 최적화 배차를 무작위·최근접 규칙과 작업 대기 시간으로 비교한 사례 연구.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-111\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_api_msgs — rmf_api_msgs/schemas/task_state.json\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. Open-RMF 작업 상태 스키마(배정 결과, dispatch·status 값, 시작·종료 시각). 이번 실행에서는 다시 열지 않음.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md\",\"sections\":[\"2\",\"3\",\"4\",\"5\",\"6\",\"8\",\"9\"],\"rationale\":\"q5-01 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12·f13·f14·f15·f16·f17·f18 (신뢰도 low) — 2절 q5-01 상태 답함, 3절 q5-01 소제목 신설({#q5-01}): 해석 지표(SLU 의도 정확도·슬롯 F1·전체 정확도 f4, 슬롯별 정밀도·재현율 f5, 결합 목표 정확도의 한계와 상대 슬롯 정확도 f6, 도구 호출 AST·실행 평가 f7), 분해 지표(목표 조건 성공률·경로 길이 가중 f1, SMART-LLM 다섯 지표 f2, LCS 순서 일치 f3), 배정 적합성(실행 가능성–최적성 분리 f8, 창고 총 이동 지연 f9), 일정 품질(효율·안정성 f10, 강건성·안정성 척도 f11), 종합: 네 층 지표 구성(f12, 표 권장)·배정의 실행 가능성과 최적성 분리 보고(f13)·SCM 질문 비교 설계(f14)·슬롯별 지표 병행(f15)·피킹 시나리오(f16)·기록 원천(f17)·근거 공백(f18) / 4절 결론·불확실성 / 5절 후속 질문 / 6절 완료 조건 현황 / 8절 출처 / 9절 이력\"},{\"action\":\"update\",\"path\":\"docs/ideas/nl-task-chatbot.md\",\"sections\":[\"6\"],\"rationale\":\"아이디어 페이지 6절(트랙 산출물): '평가 지표' 소절 신설 — 네 층 지표 구성 f12·배정 실행 가능성과 최적성 분리 f13·슬롯별 지표 병행 f15(모두 추정), 근거 f1·f2·f3·f4·f6·f7·f8·f9·f10. 4절 '해석·분해 평가 데이터' 소절과 링크로 잇고, 검증 절차(q5-02 가상 현장 시험)와 가설 판정(q5-03)은 미조사임을 명시\"},{\"action\":\"update\",\"path\":\"docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 nl-task-chatbot 단계 5 반영 제안 (f8, f9, f13, f14): 배정 결과를 실행 가능성과 해법기 대비 최적성 간격으로 나눠 평가, 창고 배정의 총 이동 지연 지표와 탐욕 픽업 거리 기준선, 분류 원문 질문의 비교 설계. 27. AI·학습·적응과 모델 운영과 양쪽 연결\"},{\"action\":\"update\",\"path\":\"docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 nl-task-chatbot 단계 5 반영 제안 (f10, f11, f12): 재스케줄링 일정 품질을 효율(makespan·납기 지연)과 안정성(시작 시각 편차)으로 재는 지표, 강건성과 안정성의 구분\"},{\"action\":\"update\",\"path\":\"docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 nl-task-chatbot 단계 5 반영 제안 (f1, f2, f3, f7, f12): 지시 수행·계획 평가 지표(목표 조건 성공률·경로 길이 가중, LCS 순서 일치, 실행 가능 동작 비율, 도구 호출 AST·실행 평가)와 네 층 지표 구성(추정)\"},{\"action\":\"update\",\"path\":\"docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md\",\"sections\":[\"6\"],\"rationale\":\"트랙 nl-task-chatbot 단계 5 반영 제안 (f4, f6, f7, f8, f15): LLM 해석·출력 평가 지표(의도 정확도·슬롯 F1·전체 정확도, 결합 목표 정확도의 한계, 도구 호출 AST 평가, 실행 가능성–최적성 분리). 교차 규칙에 따라 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 함께 연결\"}],\"glossary_candidates\":[{\"term_ko\":\"결합 목표 정확도\",\"term_en\":\"Joint Goal Accuracy (JGA)\",\"definition\":\"대화 상태 추적에서 한 턴의 모든 슬롯 값을 정답과 똑같이 맞힌 턴의 비율로, 하나라도 틀리면 그 턴을 오답으로 세는 엄격한 지표다.\"},{\"term_ko\":\"최적성 간격\",\"term_en\":\"Optimality Gap\",\"definition\":\"어떤 해의 목적함수 값이 최적값(또는 해법기가 찾은 최선 값·하한)과 얼마나 떨어져 있는지를 비율로 나타낸 값으로, 실행 가능한 해의 품질을 재는 데 쓴다.\"},{\"term_ko\":\"일정 안정성\",\"term_en\":\"Schedule Stability\",\"definition\":\"재스케줄링 뒤 일정이 원래 일정에서 얼마나 바뀌었는지(작업 시작·완료 시각의 편차 등)를 재는 성질로, 성과 지표의 변화를 재는 강건성과 구분된다.\"}],\"open_questions_new\":[],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":15,\"cross_checked_count\":0,\"unverified\":[\"모든 finding 교차 확인 없음: 지표 정의마다 단일 출처이거나 같은 저자의 논문·저장소 쌍(f7·f9)\",\"f1 ALFRED 지표 정의와 과제당 평균 목표 조건 2.55개는 검색 요약 기준(공식 README 에는 지표 설명 없음)\",\"f4 SLU 서베이의 지표 서술은 검색 요약 기준, 원문 미열람\",\"f6 상대 슬롯 정확도 수치(1.09%p·5.47%p)는 저자 보고값, 원문 미열람\",\"f7 BFCL 의 2,000개 넘는 쌍과 '호출하지 말아야 할 경우' 범주는 논문 검색 요약 기준(README 에서는 확인되지 않음)\",\"f8 시설 입지 수치(85.0%·0%·9.4%)는 저자 보고값, 원문 미열람\",\"f9 RTAW 의 14% 개선·1000대 규모는 논문 검색 요약 기준, README 는 TTD 산출 명령만 확인\",\"f11 강건성·안정성 구분의 원문 문구 미확인\",\"ref-735 저자 목록 전체 미확인\",\"f12~f18 은 이 위키의 종합이며 네 층 지표를 한 번에 제시한 단일 출처는 찾지 못함\",\"물류 지시 해석·배정·일정을 함께 평가한 벤치마크·국내 자료 부재는 검색 범위 관찰\"],\"scope_violations\":[\"f9·f14: 창고 배정 강화학습 연구는 지표(총 이동 지연) 근거로만 쓰고 학습 기반 배차 방법 자체는 27. AI·학습·적응과 모델 운영·13. 작업 배정 — MRTA 연결로만 제안\",\"f10·f11: 제조 작업장·단일 기계 재스케줄링 연구는 일정 품질 지표의 방법 근거로만 쓰고 물류 적용은 미확인으로 명시\",\"f7: 도구 호출 벤치마크는 일반 API 조건이며 로봇 명령 적용은 추정(f12)으로만 서술\"],\"budget_used\":{\"queries\":18,\"sources\":9},\"limits\":\"web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 신규 ref-736(RTAW README)·ref-738(BFCL README), 재사용 ref-545(Snips NLU 벤치마크 README). ALFRED·TEACh·SMART-LLM·LoTa-Bench README 도 열었으나 지표 설명이 없어 근거로 쓰지 않았다. 나머지 신규 7건과 재사용 ref-540·ref-090·ref-592·ref-400·ref-111 은 원문 미열람이라 신뢰도 상한 medium, high 없음. 검색 18회/40(한국어 2회), 신규 출처 9건/20(ref-730~ref-738, 예약 구간 안), 재사용 6건. 질문 선택: target.json 지정 q5-01 1건. q5-01 은 해석·분해·배정·일정 각 층의 지표 정의(사실)로 답했으나 네 층 구성·배정 평가 분리·슬롯별 지표·시나리오(f12~f17)는 이 위키의 종합이고 근거가 물류 플릿 조건이 아니라 질문 종합 신뢰도 low. 한국 자료: 한국어 검색 2회는 해외 논문 번역 페이지와 산업 기사만 나와 finding 으로 쓰지 않았고, 국내 연구진 논문으로 대화 상태 추적 지표 연구(ref-730, 고려대학교 등)를 넣었다. 교차 규칙: LLM 해석·출력 평가 지표는 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(가상 현장 시험은 q5-02 범위). 정정 요청 없음. 새 일반 열린 질문 없음: 창고 조건 배정 비교 실측은 기존 oq-052, 물류 지시 평가 데이터는 백로그 q5-04 와 겹친다. 온톨로지 변경 없음: 평가 지표는 업무 분해·배정 설계 초안의 개념·관계가 아니라 검증 방법이므로 아이디어 페이지 6절과 단계 5 페이지에 둔다. 후속 질문 2건. 페이지 제안: 트랙 산출물 2건, 세부영역 반영 제안 4건(갱신 상한과 별도). 백로그 참고: q5-05·q5-06 중복 등록(q5-05 는 이번 f13 과 같은 방향이지만 답하지 않음), q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q1-05·q1-06 중복 정리 필요. 트랙 개요의 현재 단계 표기(단계 3)와 이번 지정 단계(단계 5)가 다르며, 단계 3·4 완료가 승인되지 않은 상태에서 지정된 질문으로 단계 5 를 다뤘다.\"},\"track\":{\"slug\":\"nl-task-chatbot\",\"stage\":5,\"answered_question_ids\":[\"q5-01\"],\"new_questions\":[{\"question\":\"물류 지시 해석 평가에서 슬롯별 오류 비용(기한·대상 화물·장소 오류가 오배정·납기 지연으로 이어지는 정도)을 어떻게 추정해 슬롯 가중치나 치명 오류 집계 기준으로 정하며, 모두 맞아야 정답인 전체 정확도와 어떻게 함께 보고하는가? (q5-01 에서 파생)\",\"stage\":5,\"rationale_finding_id\":\"f15\"},{\"question\":\"배정 적합성의 최적성 간격을 재기 위한 해법기 기준값을 창고 규모 사례에서 시간 제한 때문에 최적해로 인증하지 못할 때, 최선 해·하한 가운데 무엇을 기준으로 삼고 최근접 배정 기준선과 함께 어떻게 보고하는가? (q5-01 에서 파생) (관련: q5-05, oq-052)\",\"stage\":5,\"rationale_finding_id\":\"f13\"}],\"ontology_changes\":[],\"stage_completion_self_assessment\":{\"met\":false,\"missing\":[\"평가 지표(q5-01 답 f12~f15)는 검증 승인 전이며 아이디어 2. 자연어 업무 지시 챗봇 6절에 아직 반영되지 않음\",\"검증 절차(가상 현장·가상 로봇 시나리오 시험, q5-02) 미조사\",\"가설 판정표(q5-03)가 트랙 개요 3절에 없음\",\"사용자에게 제안하는 실험 계획이 실험 페이지에 없음\",\"열린 질문 q5-02~q5-10(q5-05·q5-06 중복 정리 필요)\"]}}}",
+  "structured_output": {
+    "run_id": "2026-09-25-98",
+    "date": "2026-09-25",
+    "run_type": "track",
+    "target": {
+      "area_no": 13,
+      "area_name": "13. 작업 배정 — MRTA",
+      "category": "D. 계획·최적화"
+    },
+    "gaps": [
+      "단계 5 질문 q5-01 열림(target.json 지정, CLI 지정 질문 id). 단계 5 페이지는 seed 상태로 3~6·8절 비어 있음(단계 5 첫 실행)",
+      "완료 조건: 평가 지표와 검증 절차가 아이디어 2. 자연어 업무 지시 챗봇 6절에 없음(6절 '아직 조사되지 않음')",
+      "완료 조건: 가설 판정표(q5-03)와 실험 계획(experiments.md)이 없음 — 이번 실행 밖",
+      "아이디어 2. 자연어 업무 지시 챗봇 4절 '해석·분해 평가 데이터' 소절은 데이터 형식만 있고 지표 정의는 6절로 미뤄 둠",
+      "13. 작업 배정 — MRTA 섹션 6에 배정 결과를 실행 가능성과 최적성으로 나눠 평가하는 지표 근거 없음",
+      "14. 작업 순서·스케줄링 섹션 6에 재스케줄링 뒤 일정 품질(효율·안정성) 지표 근거 없음",
+      "23. 시험·형식 검증·벤치마크 섹션 6에 지시 해석·계획 평가 지표(목표 조건 달성, 순서 일치, 도구 호출 인자 일치) 근거 약함"
+    ],
+    "research_questions": [
+      "가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]",
+      "q5-01 해석·분해 정확도, 배정 적합성, 일정 품질을 각각 어떤 지표로 측정하는가?",
+      "지시 해석 정확도는 대화·음성 이해 연구에서 어떤 지표(의도 정확도, 슬롯 F1, 전체 정확도, 결합 목표 정확도)로 재며, 구조화된 도구 호출 인자는 어떻게 채점하는가? (단계 5 페이지 3절, 27. AI·학습·적응과 모델 운영 겨냥)",
+      "분해 결과는 체화 에이전트·다중 로봇 계획 벤치마크에서 어떤 지표(성공률, 목표 조건 달성률, 순서 일치, 실행 가능성, 로봇 활용도)로 재는가? (23. 시험·형식 검증·벤치마크 연결)",
+      "배정 적합성은 실행 가능성과 최적성(해법기 기준값 대비 격차)을 어떻게 나눠 재며, 창고 배정 연구는 어떤 운영 지표(총 이동 지연, makespan)를 쓰는가? (13. 작업 배정 — MRTA 섹션 6 겨냥)",
+      "일정 품질은 효율(makespan·납기 지연)과 재스케줄링 안정성(시작 시각 편차)으로 어떻게 재는가? (14. 작업 순서·스케줄링 섹션 6 겨냥)",
+      "국내에 로봇 작업 지시 해석·배정 평가 지표를 다룬 연구·자료가 있는가? (한국 자료 우선 규칙)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "ALFRED 벤치마크는 성공률과 함께 에피소드 끝에 달성한 목표 조건 수를 과제 완료에 필요한 목표 조건 수로 나눈 목표 조건 성공률(GC)을 두고, 두 지표를 전문가 시연 경로 길이 대비 에이전트 경로 길이로 가중한 경로 길이 가중 지표(PLW)도 보고한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-540"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "목표 조건 성공률 = 에피소드 끝에 완료한 목표 조건 / 과제에 필요한 목표 조건(과제당 평균 2.55개). PLW 는 (전문가 경로 길이)/(에이전트 경로 길이)로 가중해 전문가보다 두 배 길면 절반 점수. 가정 환경(AI2-THOR) 조건, 검색 요약 기준.",
+        "as_of": "2020",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f2",
+        "claim": "SMART-LLM 논문은 다중 로봇 계획을 성공률, 작업 완료율, 정답 최종 상태 조건 대비 목표 조건 재현율(GCR), 정답 전이 수와 비교한 로봇 활용도(RU), 실행 가능 동작 비율(Exe)의 다섯 지표로 평가한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-090"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SR·TC·GCR(달성한 목표 원자/정답 목표 집합)·RU(총 전이 수를 정답과 비교)·Exe. AI2-THOR 기반 36개 상위 지시 데이터셋 조건. (재인용: 2026-09-25-62)",
+        "as_of": "2023-09",
+        "flow_step": null,
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "Gramopadhye·Szafir(G-PlanET)는 생성 계획과 사람이 쓴 정답 계획 사이 최장 공통 부분수열(LCS) 길이를 더 긴 계획의 길이로 나눈 LCS 지표로 행동 순서의 일치를 재고, 실행 가능성(executability)과 정확성(correctness)을 함께 보고한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-732"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "LCS 는 순서를 유지하되 간격을 허용하며, 무관·반복 행동이 든 긴 계획을 벌점한다. VirtualHome·ActivityPrograms 조건, 저자들은 실행 가능성 310%·정확성 147% 개선을 보고(저자 보고값, 검색 요약 기준).",
+        "as_of": "2022-10",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "음성 언어 이해(SLU) 서베이(Qin 외, IJCAI 2021)는 가장 널리 쓰는 평가 지표로 슬롯 채우기의 F1, 의도 인식의 의도 정확도, 한 문장에서 의도와 슬롯을 모두 맞힌 비율인 전체 정확도(overall accuracy)를 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-731"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "슬롯 채우기는 정밀도·재현율의 조화평균인 F1, 의도 인식은 문장 단위 정확도, 전체 정확도는 의도와 슬롯이 모두 맞은 문장의 비율. ATIS·SNIPS 가 대표 데이터셋. 검색 요약 기준.",
+        "as_of": "2021",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "Snips 의 NLU 벤치마크(2017-06)는 의도·경쟁 엔진별 결과 파일에 슬롯마다 정밀도와 재현율을 따로 기록해, 슬롯 단위로 해석 정확도를 비교한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-545"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 결과는 의도·경쟁 엔진마다 metrics 파일로 제시되며, 슬롯마다 'precision' 과 'recall' 을 표시하고 학습 크기별 무작위 표본 3회 값을 둔다(F1 계산 방식은 README 에 없음). 확인일 2026-09-25 기준.",
+        "as_of": "2017-06",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "Kim 외(고려대학교 등, ACL 2022)는 대화 상태 추적의 표준 지표인 결합 목표 정확도(JGA, 한 턴의 모든 슬롯 값을 맞혀야 정답)가 초기 오류가 누적되어 성능을 과소평가하고 슬롯 정확도는 미리 정한 슬롯 수에 좌우되어 과대평가한다고 지적하고, 대안으로 상대 슬롯 정확도(relative slot accuracy)를 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-730"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "MultiWOZ 조건. 저자들은 모델 간 차이가 슬롯 정확도로는 1.09%p, 상대 슬롯 정확도로는 5.47%p 로 나타났다고 보고(저자 보고값, 검색 요약 기준).",
+        "as_of": "2022-05",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f7",
+        "claim": "Berkeley 함수 호출 리더보드(BFCL)는 자연어 요청을 도구 호출로 옮기는 능력을 함수 이름·인자 스키마·값을 추상 구문 트리(AST)로 대조하는 AST 평가와 실제로 호출해 보는 실행 평가로 채점하며, 2,000개가 넘는 질문–함수–정답 쌍을 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-737",
+          "ref-738"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 'first comprehensive and executable function call evaluation', v1 은 단일·병렬·다중 함수 호출을 AST 로 평가. 2,000개 넘는 쌍과 '호출하지 말아야 할 경우' 포함은 논문 검색 요약 기준(원문 미열람). README 와 논문은 같은 저자라 독립 교차 아님.",
+        "as_of": "2025",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f8",
+        "claim": "ConstraintBench 저자들은 LLM 이 제약 최적화 문제를 직접 풀 때 실행 가능성과 최적성이 분리되어 나타난다고 보고했으며, 시설 입지 영역은 실행 가능 비율 85.0%로 가장 높았지만 최적성까지 만족한 비율은 0%(중앙 최적성 간격 9.4%)였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-592"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "10개 운영과학 영역, Gurobi 최적값을 기준으로 실행 가능성과 최적성(0.1% 이내)을 따로 채점. 시설 입지 85.0% 실행 가능·0% 최적·중앙 간격 9.4%는 저자 보고값(검색 요약 기준, 원문 미열람).",
+        "as_of": "2026-02",
+        "flow_step": null,
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "창고 다중 로봇 작업 배정 연구 RTAW(ICRA 2023)는 로봇이 작업을 수행하지 않고 이동하는 추가 시간인 총 이동 지연(TTD)을 평가 지표로 두고, 근시안적 픽업 거리 최소화(탐욕) 기준선과 후회 기반 기준선에 견주어 TTD 를 최대 14% 줄였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-735",
+          "ref-736"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "TTD 최소화가 충분히 큰 작업 목록에서 makespan 을 개선한다고 설명. 여러 창고 배치·작업 생성 방식, 최대 1000대 시뮬레이션 조건(저자 보고, 논문은 검색 요약 기준). 공식 README 는 TTD 값을 내는 명령을 둔다(확인일 2026-09-25). 같은 저자 자료라 독립 교차 아님.",
+        "as_of": "2022-09",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f10",
+        "claim": "Rangsaritratsamee·Ferrell·Kurz(Computers & Industrial Engineering 46, 2004)는 작업이 동적으로 도착하는 작업장 재스케줄링에서 효율은 makespan 과 납기 지연(tardiness)으로, 안정성은 작업 시작 시각의 편차로 재어 두 목표를 함께 다루는 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-734"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "재스케줄 시점마다 유전 국소 탐색으로 일정을 만들고 효율(makespan·tardiness)과 안정성(시작 시각 편차 최소화)을 상황에 맞게 균형. 제조 작업장 조건, 검색 요약 기준.",
+        "as_of": "2004",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f11",
+        "claim": "Goren·Sabuncuoglu(IIE Transactions 40(1), 2008)는 무작위 교란이 있을 때 강건하고 안정적인 일정을 찾는 문제에서 강건성(성능 지표의 변화)과 안정성(일정 자체의 변화)을 재는 대리 척도 두 가지를 개발했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-733"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "단일 기계 환경 조건. 강건성·안정성 대리 척도 개발은 검색 요약에서 확인. 강건성은 makespan·지연 같은 성과의 변화, 안정성은 시작·완료 시각 같은 일정 특성의 변화로 구분하는 서술은 검색 요약 기준이며 원문 문구는 미확인.",
+        "as_of": "2008",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f12",
+        "claim": "q5-01 에 대해 확인한 지표를 이 위키가 묶으면, 측정은 (1) 해석: 의도 정확도·슬롯별 정밀도·재현율·F1·의도와 슬롯이 모두 맞은 전체 정확도, 여러 턴이면 결합 목표 정확도와 상대 슬롯 정확도, 구조화 출력이면 필드 값 대조(AST식), (2) 분해: 성공률·목표 조건 달성률·LCS 순서 일치·실행 가능 동작 비율, (3) 배정 적합성: 능력·제약 위반 없는 실행 가능 배정 비율과 해법기 기준값 대비 최적성 간격, (4) 일정 품질: makespan·납기 지연·총 이동 지연과 재스케줄 뒤 시작 시각 편차의 네 층으로 두는 구성이 근거가 가장 많은 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-731",
+          "ref-545",
+          "ref-730",
+          "ref-737",
+          "ref-540",
+          "ref-090",
+          "ref-732",
+          "ref-592",
+          "ref-735",
+          "ref-734",
+          "ref-733"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 층의 지표 정의는 f1~f11 의 출처별 서술이며, 네 층을 한 번에 제시한 단일 출처는 찾지 못함. 근거 환경은 가정·대화·도구 호출·운영과학·창고 시뮬레이션·제조 작업장.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f13",
+        "claim": "배정 적합성은 목표 상태 달성만으로는 드러나지 않고 실행 가능성과 최적성이 따로 움직이므로, 실행 가능 배정 비율과 해법기 최적값(또는 최선 해) 대비 목적함수 격차를 분리해 보고해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-592",
+          "ref-090"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "ConstraintBench 의 실행 가능성–최적성 분리 보고(f8)와, SMART-LLM 지표가 목표 달성·전이 수 대비 활용도를 재되 배정 최적성을 정답으로 두지 않는 점(f2)을 이 위키가 연결한 추론.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f14",
+        "claim": "분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)을 재려면, 챗봇·ROP 의 배정 결과를 최근접(탐욕 픽업 거리) 기준선과 해법기 기준값에 함께 견주어 총 이동 지연·makespan·납기 지연으로 비교하는 설계가 필요해 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-735",
+          "ref-400",
+          "ref-592"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "RTAW 는 탐욕 픽업 거리 기준선 대비 TTD 를 보고(f9), 작업장 사례는 최근접 규칙 대비 조합 최적화 배차의 대기 시간을 보고. 창고 조건 실측 비교 부재는 기존 oq-052 와 같은 방향.",
+        "as_of": "2026-09-25",
+        "flow_step": "피킹",
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f15",
+        "claim": "결합 목표 정확도나 전체 정확도처럼 모두 맞아야 정답인 지표는 물류 지시에서 화물·장소·기한 슬롯 하나만 틀려도 0점이 되므로, 슬롯별 지표를 함께 두고 기한·대상 화물처럼 오배정 비용이 큰 슬롯의 오류를 따로 집계해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-730",
+          "ref-731",
+          "ref-545"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "JGA 의 과소평가·슬롯 정확도의 과대평가 지적(f6)과 슬롯별 정밀도·재현율 기록 관행(f5)을 물류 지시에 옮긴 이 위키의 추론. 슬롯별 가중치 근거는 없음.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f16",
+        "claim": "피킹 구역 관리자가 '피킹 끝난 토트를 10시 전까지 2번 도크로'라고 지시하면, 해석은 대상·장소·기한 슬롯과 프레임 전체 일치로, 분해는 '토트가 2번 도크에 있음' 같은 목표 조건 달성과 행동 순서 일치로, 배정은 능력·제약 위반 여부와 해법기 기준값 대비 격차로, 일정은 10시 대비 납기 지연과 재계획 뒤 시작 시각 편차로 재는 식이 가능해 보인다(설명용 가정 사례).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-731",
+          "ref-540",
+          "ref-592",
+          "ref-734"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "수치 없는 설명용 가정 사례. f12 의 네 층 구성을 한 지시에 적용한 예시.",
+        "as_of": "2026-09-25",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f17",
+        "claim": "Open-RMF 작업 상태 스키마가 진행 상태 값(delayed 등)과 시작·종료 시각을 기록하므로, 시뮬레이션이나 시험 운영에서 일정 품질 지표(납기 지연, makespan)를 산출할 기록 원천으로 쓸 수 있어 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-111"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "작업 상태 스키마의 status 값(queued·underway·delayed·completed 등)과 시작·종료 시각(확인일 2026-09-25 기준, 이전 실행 확인)을 지표 산출 원천으로 쓰는 것은 이 위키의 추론. 기한 필드는 작업 모델 쪽에 있어야 함(초안 업무 개념). (재인용: 2026-09-25-51)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "완료·인계",
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "이번 검색 범위(한국어 2회 포함 18회)에서는 물류 창고 로봇에 채팅으로 준 지시의 해석·분해·배정·일정 품질을 한 벤치마크에서 함께 잰 연구나 국내 자료를 찾지 못했다(부재의 확인은 아님).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-540",
+          "ref-090",
+          "ref-737",
+          "ref-735"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "확인한 지표의 환경은 가정 시뮬레이터, 대화·음성 비서, 도구 호출, 운영과학 일반, 창고 배정 시뮬레이션(해석 없음), 제조 작업장. 한국어 검색은 해외 논문 번역 페이지와 산업 기사만 나옴.",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-730",
+        "org": "Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(고려대학교 등, ACL 2022 Short Papers)",
+        "title": "Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking",
+        "published": "2022-05",
+        "url": "https://aclanthology.org/2022.acl-short.33/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 대화 상태 추적의 결합 목표 정확도가 과소평가, 슬롯 정확도가 과대평가된다고 지적하고 상대 슬롯 정확도를 제안한 국내 연구진 논문.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-731",
+        "org": "Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021)",
+        "title": "A Survey on Spoken Language Understanding: Recent Advances and New Frontiers",
+        "published": "2021",
+        "url": "https://www.ijcai.org/proceedings/2021/0622.pdf",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 음성 언어 이해의 의도 인식·슬롯 채우기 방법을 정리하고 의도 정확도·슬롯 F1·전체 정확도를 대표 지표로 드는 서베이.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-732",
+        "org": "Gramopadhye, M., & Szafir, D.",
+        "title": "Generating Executable Action Plans with Environmentally-Aware Language Models",
+        "published": "2022-10",
+        "url": "https://arxiv.org/abs/2210.04964",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 환경을 고려한 LLM 행동 계획 생성 연구로, 실행 가능성·정확성과 정답 계획과의 LCS 지표로 평가한다(VirtualHome).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-733",
+        "org": "Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83)",
+        "title": "Robustness and stability measures for scheduling: single-machine environment",
+        "published": "2008",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/07408170701283198",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 무작위 교란 아래 단일 기계 일정의 강건성과 안정성을 재는 대리 척도를 개발한 논문.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-734",
+        "org": "Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46)",
+        "title": "Dynamic rescheduling that simultaneously considers efficiency and stability",
+        "published": "2004",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 동적 작업장 재스케줄링에서 효율(makespan·납기 지연)과 안정성(시작 시각 편차)을 함께 다루는 유전 국소 탐색 방법.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-735",
+        "org": "Agrawal, A. 외(RTAW 저자, ICRA 2023)",
+        "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+        "published": "2022-09",
+        "url": "https://arxiv.org/abs/2209.05738",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 창고 다중 로봇 작업 배정을 강화학습으로 풀고 총 이동 지연(TTD)을 탐욕·후회 기반 기준선과 비교한 연구.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-736",
+        "org": "Aakriti05 (RTAW 공식 저장소)",
+        "title": "RTAW-Centralised-multi-robot-task-allocation — README",
+        "published": null,
+        "url": "https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "RTAW 구현 저장소 README. 학습된 정책으로 TTD 값을 산출하는 실행 명령을 둔다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation/main/README.md"
+      },
+      {
+        "id": "ref-737",
+        "org": "Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267)",
+        "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+        "published": "2025",
+        "url": "https://proceedings.mlr.press/v267/patil25a.html",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LLM 의 함수 호출 능력을 AST 평가와 실행 평가로 채점하는 벤치마크 논문.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-738",
+        "org": "ShishirPatil (gorilla GitHub)",
+        "title": "berkeley-function-call-leaderboard — README",
+        "published": null,
+        "url": "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "BFCL 공식 README. 실행 가능한 함수 호출 평가와 AST 기반 단일·병렬·다중 호출 평가를 설명한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md"
+      },
+      {
+        "id": "ref-540",
+        "org": "Shridhar, M. 외",
+        "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+        "published": "2020",
+        "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Shridhar_ALFRED_A_Benchmark_for_Interpreting_Grounded_Instructions_for_Everyday_Tasks_CVPR_2020_paper.html",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자연어 지시와 가정 작업 행동 순서를 짝지은 벤치마크로, 성공률·목표 조건 성공률과 경로 길이 가중 지표를 쓴다.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-090",
+        "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+        "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+        "published": "2023-09",
+        "url": "https://arxiv.org/abs/2309.10062",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. LLM 다중 로봇 작업 계획(분해·팀 구성·할당)과 다섯 평가 지표.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-545",
+        "org": "Snips (sonos/nlu-benchmark GitHub)",
+        "title": "nlu-benchmark — 2017-06-custom-intent-engines (README)",
+        "published": "2017-06",
+        "url": "https://github.com/sonos/nlu-benchmark/tree/master/2017-06-custom-intent-engines",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "7개 의도의 크라우드소싱 질의로 NLU 엔진을 비교하고 슬롯별 정밀도·재현율을 기록하는 벤치마크 README.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/sonos/nlu-benchmark/master/2017-06-custom-intent-engines/README.md"
+      },
+      {
+        "id": "ref-592",
+        "org": "ConstraintBench 저자(arXiv 2602.22465, 저자 미확인)",
+        "title": "ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization",
+        "published": "2026-02",
+        "url": "https://arxiv.org/abs/2602.22465",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 10개 운영과학 영역에서 LLM 직접 풀이의 실행 가능성과 최적성을 해법기 기준으로 따로 채점한 벤치마크.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-400",
+        "org": "International Journal of Planning and Scheduling 게재 논문(저자 미확인)",
+        "title": "Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors",
+        "published": "2019",
+        "url": "https://www.inderscience.com/info/inarticle.php?artid=103016",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 작업장 AGV 배차에서 조합 최적화 배차를 무작위·최근접 규칙과 작업 대기 시간으로 비교한 사례 연구.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-111",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_api_msgs — rmf_api_msgs/schemas/task_state.json",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. Open-RMF 작업 상태 스키마(배정 결과, dispatch·status 값, 시작·종료 시각). 이번 실행에서는 다시 열지 않음.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "sections": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8",
+          "9"
+        ],
+        "rationale": "q5-01 답: f1·f2·f3·f4·f5·f6·f7·f8·f9·f10·f11·f12·f13·f14·f15·f16·f17·f18 (신뢰도 low) — 2절 q5-01 상태 답함, 3절 q5-01 소제목 신설({#q5-01}): 해석 지표(SLU 의도 정확도·슬롯 F1·전체 정확도 f4, 슬롯별 정밀도·재현율 f5, 결합 목표 정확도의 한계와 상대 슬롯 정확도 f6, 도구 호출 AST·실행 평가 f7), 분해 지표(목표 조건 성공률·경로 길이 가중 f1, SMART-LLM 다섯 지표 f2, LCS 순서 일치 f3), 배정 적합성(실행 가능성–최적성 분리 f8, 창고 총 이동 지연 f9), 일정 품질(효율·안정성 f10, 강건성·안정성 척도 f11), 종합: 네 층 지표 구성(f12, 표 권장)·배정의 실행 가능성과 최적성 분리 보고(f13)·SCM 질문 비교 설계(f14)·슬롯별 지표 병행(f15)·피킹 시나리오(f16)·기록 원천(f17)·근거 공백(f18) / 4절 결론·불확실성 / 5절 후속 질문 / 6절 완료 조건 현황 / 8절 출처 / 9절 이력"
+      },
+      {
+        "action": "update",
+        "path": "docs/ideas/nl-task-chatbot.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "아이디어 페이지 6절(트랙 산출물): '평가 지표' 소절 신설 — 네 층 지표 구성 f12·배정 실행 가능성과 최적성 분리 f13·슬롯별 지표 병행 f15(모두 추정), 근거 f1·f2·f3·f4·f6·f7·f8·f9·f10. 4절 '해석·분해 평가 데이터' 소절과 링크로 잇고, 검증 절차(q5-02 가상 현장 시험)와 가설 판정(q5-03)은 미조사임을 명시"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 nl-task-chatbot 단계 5 반영 제안 (f8, f9, f13, f14): 배정 결과를 실행 가능성과 해법기 대비 최적성 간격으로 나눠 평가, 창고 배정의 총 이동 지연 지표와 탐욕 픽업 거리 기준선, 분류 원문 질문의 비교 설계. 27. AI·학습·적응과 모델 운영과 양쪽 연결"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 nl-task-chatbot 단계 5 반영 제안 (f10, f11, f12): 재스케줄링 일정 품질을 효율(makespan·납기 지연)과 안정성(시작 시각 편차)으로 재는 지표, 강건성과 안정성의 구분"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 nl-task-chatbot 단계 5 반영 제안 (f1, f2, f3, f7, f12): 지시 수행·계획 평가 지표(목표 조건 성공률·경로 길이 가중, LCS 순서 일치, 실행 가능 동작 비율, 도구 호출 AST·실행 평가)와 네 층 지표 구성(추정)"
+      },
+      {
+        "action": "update",
+        "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
+        "sections": [
+          "6"
+        ],
+        "rationale": "트랙 nl-task-chatbot 단계 5 반영 제안 (f4, f6, f7, f8, f15): LLM 해석·출력 평가 지표(의도 정확도·슬롯 F1·전체 정확도, 결합 목표 정확도의 한계, 도구 호출 AST 평가, 실행 가능성–최적성 분리). 교차 규칙에 따라 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 함께 연결"
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "결합 목표 정확도",
+        "term_en": "Joint Goal Accuracy (JGA)",
+        "definition": "대화 상태 추적에서 한 턴의 모든 슬롯 값을 정답과 똑같이 맞힌 턴의 비율로, 하나라도 틀리면 그 턴을 오답으로 세는 엄격한 지표다."
+      },
+      {
+        "term_ko": "최적성 간격",
+        "term_en": "Optimality Gap",
+        "definition": "어떤 해의 목적함수 값이 최적값(또는 해법기가 찾은 최선 값·하한)과 얼마나 떨어져 있는지를 비율로 나타낸 값으로, 실행 가능한 해의 품질을 재는 데 쓴다."
+      },
+      {
+        "term_ko": "일정 안정성",
+        "term_en": "Schedule Stability",
+        "definition": "재스케줄링 뒤 일정이 원래 일정에서 얼마나 바뀌었는지(작업 시작·완료 시각의 편차 등)를 재는 성질로, 성과 지표의 변화를 재는 강건성과 구분된다."
+      }
+    ],
+    "open_questions_new": [],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 15,
+      "cross_checked_count": 0,
+      "unverified": [
+        "모든 finding 교차 확인 없음: 지표 정의마다 단일 출처이거나 같은 저자의 논문·저장소 쌍(f7·f9)",
+        "f1 ALFRED 지표 정의와 과제당 평균 목표 조건 2.55개는 검색 요약 기준(공식 README 에는 지표 설명 없음)",
+        "f4 SLU 서베이의 지표 서술은 검색 요약 기준, 원문 미열람",
+        "f6 상대 슬롯 정확도 수치(1.09%p·5.47%p)는 저자 보고값, 원문 미열람",
+        "f7 BFCL 의 2,000개 넘는 쌍과 '호출하지 말아야 할 경우' 범주는 논문 검색 요약 기준(README 에서는 확인되지 않음)",
+        "f8 시설 입지 수치(85.0%·0%·9.4%)는 저자 보고값, 원문 미열람",
+        "f9 RTAW 의 14% 개선·1000대 규모는 논문 검색 요약 기준, README 는 TTD 산출 명령만 확인",
+        "f11 강건성·안정성 구분의 원문 문구 미확인",
+        "ref-735 저자 목록 전체 미확인",
+        "f12~f18 은 이 위키의 종합이며 네 층 지표를 한 번에 제시한 단일 출처는 찾지 못함",
+        "물류 지시 해석·배정·일정을 함께 평가한 벤치마크·국내 자료 부재는 검색 범위 관찰"
+      ],
+      "scope_violations": [
+        "f9·f14: 창고 배정 강화학습 연구는 지표(총 이동 지연) 근거로만 쓰고 학습 기반 배차 방법 자체는 27. AI·학습·적응과 모델 운영·13. 작업 배정 — MRTA 연결로만 제안",
+        "f10·f11: 제조 작업장·단일 기계 재스케줄링 연구는 일정 품질 지표의 방법 근거로만 쓰고 물류 적용은 미확인으로 명시",
+        "f7: 도구 호출 벤치마크는 일반 API 조건이며 로봇 명령 적용은 추정(f12)으로만 서술"
+      ],
+      "budget_used": {
+        "queries": 18,
+        "sources": 9
+      },
+      "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: 신규 ref-736(RTAW README)·ref-738(BFCL README), 재사용 ref-545(Snips NLU 벤치마크 README). ALFRED·TEACh·SMART-LLM·LoTa-Bench README 도 열었으나 지표 설명이 없어 근거로 쓰지 않았다. 나머지 신규 7건과 재사용 ref-540·ref-090·ref-592·ref-400·ref-111 은 원문 미열람이라 신뢰도 상한 medium, high 없음. 검색 18회/40(한국어 2회), 신규 출처 9건/20(ref-730~ref-738, 예약 구간 안), 재사용 6건. 질문 선택: target.json 지정 q5-01 1건. q5-01 은 해석·분해·배정·일정 각 층의 지표 정의(사실)로 답했으나 네 층 구성·배정 평가 분리·슬롯별 지표·시나리오(f12~f17)는 이 위키의 종합이고 근거가 물류 플릿 조건이 아니라 질문 종합 신뢰도 low. 한국 자료: 한국어 검색 2회는 해외 논문 번역 페이지와 산업 기사만 나와 finding 으로 쓰지 않았고, 국내 연구진 논문으로 대화 상태 추적 지표 연구(ref-730, 고려대학교 등)를 넣었다. 교차 규칙: LLM 해석·출력 평가 지표는 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스 양쪽에 반영 제안. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(가상 현장 시험은 q5-02 범위). 정정 요청 없음. 새 일반 열린 질문 없음: 창고 조건 배정 비교 실측은 기존 oq-052, 물류 지시 평가 데이터는 백로그 q5-04 와 겹친다. 온톨로지 변경 없음: 평가 지표는 업무 분해·배정 설계 초안의 개념·관계가 아니라 검증 방법이므로 아이디어 페이지 6절과 단계 5 페이지에 둔다. 후속 질문 2건. 페이지 제안: 트랙 산출물 2건, 세부영역 반영 제안 4건(갱신 상한과 별도). 백로그 참고: q5-05·q5-06 중복 등록(q5-05 는 이번 f13 과 같은 방향이지만 답하지 않음), q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q1-05·q1-06 중복 정리 필요. 트랙 개요의 현재 단계 표기(단계 3)와 이번 지정 단계(단계 5)가 다르며, 단계 3·4 완료가 승인되지 않은 상태에서 지정된 질문으로 단계 5 를 다뤘다."
+    },
+    "track": {
+      "slug": "nl-task-chatbot",
+      "stage": 5,
+      "answered_question_ids": [
+        "q5-01"
+      ],
+      "new_questions": [
+        {
+          "question": "물류 지시 해석 평가에서 슬롯별 오류 비용(기한·대상 화물·장소 오류가 오배정·납기 지연으로 이어지는 정도)을 어떻게 추정해 슬롯 가중치나 치명 오류 집계 기준으로 정하며, 모두 맞아야 정답인 전체 정확도와 어떻게 함께 보고하는가? (q5-01 에서 파생)",
+          "stage": 5,
+          "rationale_finding_id": "f15"
+        },
+        {
+          "question": "배정 적합성의 최적성 간격을 재기 위한 해법기 기준값을 창고 규모 사례에서 시간 제한 때문에 최적해로 인증하지 못할 때, 최선 해·하한 가운데 무엇을 기준으로 삼고 최근접 배정 기준선과 함께 어떻게 보고하는가? (q5-01 에서 파생) (관련: q5-05, oq-052)",
+          "stage": 5,
+          "rationale_finding_id": "f13"
+        }
+      ],
+      "ontology_changes": [],
+      "stage_completion_self_assessment": {
+        "met": false,
+        "missing": [
+          "평가 지표(q5-01 답 f12~f15)는 검증 승인 전이며 아이디어 2. 자연어 업무 지시 챗봇 6절에 아직 반영되지 않음",
+          "검증 절차(가상 현장·가상 로봇 시나리오 시험, q5-02) 미조사",
+          "가설 판정표(q5-03)가 트랙 개요 3절에 없음",
+          "사용자에게 제안하는 실험 계획이 실험 페이지에 없음",
+          "열린 질문 q5-02~q5-10(q5-05·q5-06 중복 정리 필요)"
+        ]
+      }
+    }
+  },
+  "ttft_ms": 10225,
+  "type": "result",
+  "duration_ms": 293076,
+  "uuid": "2f4e0d5c-7514-4725-863e-3c5b496250af",
+  "ttft_stream_ms": 5451,
+  "time_to_request_ms": 85,
+  "first_content_frame_ms": 5452,
+  "time_to_request_from_spawn_ms": 22615164,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790335711092.143,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 295.2
+}

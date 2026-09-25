@@ -1,0 +1,583 @@
+{
+  "run_id": "2026-09-25-98",
+  "outline": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "3. 조사 결과",
+      "budget_chars": 3600,
+      "summary": "q5-01 에 대해 해석·분해·배정 적합성·일정 품질 네 층으로 지표를 정리했다. 네 층 구성은 이 위키의 종합이다. [추정][^ref-731][^ref-540][^ref-592][^ref-734]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "4. 결론과 남은 불확실성",
+      "budget_chars": 900,
+      "summary": "층마다 지표 정의가 있지만 네 층 구성과 배정 분리 보고는 추정이며, 교차 확인과 물류 조건 근거가 없다. [추정][^ref-592]",
+      "planned_findings": [
+        "f12",
+        "f13",
+        "f15",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "section": "5. 이 단계가 낳은 후속 질문",
+      "budget_chars": 400,
+      "summary": "q5-11(슬롯별 오류 비용), q5-12(해법기 기준값) 두 질문을 올렸다.",
+      "planned_findings": [
+        "f13",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "section": "6. 검증 방법",
+      "budget_chars": 1800,
+      "summary": "'평가 지표' 소절을 새로 두고 네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행을 [추정]으로 실었다. [추정][^ref-592][^ref-730]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f15"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "q5-01 답함(네 층 평가 지표, 3절 신설), 2절에 단계 5 백로그 질문 반영(q5-06 폐기 제외)·새 질문 q5-11·q5-12, 4·5·6·8·9절 갱신, 상태 줄 진행 중. 시드 단계 페이지라 상태 줄(H1 아래)까지 고치려고 전체 content 로 보냄"
+    },
+    {
+      "path": "docs/ideas/nl-task-chatbot.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절 '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절 신설(네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행, 모두 추정), 새 출처 각주 추가",
+      "patches": [
+        {
+          "section": "6. 검증 방법",
+          "action": "replace",
+          "content": "이 절은 [단계 5. 검증 방법과 가설 판정](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md)의 결과를 싣는다. 지금까지 q5-01 의 답인 평가 지표(실행 2026-09-25-98)를 실었다. 검증 절차(q5-02, 가상 현장·가상 로봇으로 지시 시나리오를 재현하는 시험)와 가설 판정(q5-03)은 아직 조사되지 않았다.\n\n### 평가 지표\n\n확인한 지표를 이 위키가 묶으면, 챗봇의 측정은 해석·분해·배정 적합성·일정 품질의 네 층으로 두는 구성이 근거가 가장 많은 것으로 보인다. [추정][^ref-731][^ref-730][^ref-736][^ref-540][^ref-732][^ref-592][^ref-623][^ref-734][^ref-733] 네 층을 한 번에 제시한 출처는 없고, 근거 환경이 가정 시뮬레이터·대화·도구 호출·운영과학 일반·창고 배정 시뮬레이션·제조 작업장이라 물류 지시 조건이 아니어서 신뢰도가 낮다. 평가에 쓸 지시–정답 데이터는 4절의 [해석·분해 평가 데이터](#해석분해-평가-데이터) 소절에, 자세한 근거는 [단계 5 조사 결과](../tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01)에 있다.\n\n| 층 | 지표 후보 | 근거 환경 |\n|---|---|---|\n| 해석 | 의도 정확도, 슬롯별 정밀도·재현율·F1, 전체 정확도; 여러 턴이면 결합 목표 정확도·상대 슬롯 정확도; 구조화 출력이면 필드 값 대조(AST식) | 음성 비서·대화·일반 API |\n| 분해 | 성공률, 목표 조건 달성률, LCS 순서 일치, 실행 가능 동작 비율 | 가정 시뮬레이터 |\n| 배정 적합성 | 실행 가능 배정 비율, 해법기 기준값 대비 최적성 간격 | 운영과학 일반 |\n| 일정 품질 | makespan, 납기 지연, 총 이동 지연, 재스케줄 뒤 시작 시각 편차 | 창고 배정 시뮬레이션, 제조 작업장 |\n\n위 표는 이 위키의 종합이며 네 층을 한 번에 제시한 출처는 없고, 근거 환경이 물류 지시 조건이 아니다. [추정][^ref-731][^ref-540][^ref-592][^ref-734]\n\n- **해석**: SLU 서베이(IJCAI 2021)는 [슬롯 채우기](../glossary/slot-filling.md)의 F1, [의도 인식](../glossary/intent-recognition.md)의 의도 정확도, 의도와 슬롯을 모두 맞힌 문장 비율인 전체 정확도를 대표 지표로 든다(원문 미열람). [사실][^ref-731] 대화 상태 추적 연구(ACL 2022)는 결합 목표 정확도가 성능을 과소평가하고 슬롯 정확도가 과대평가한다고 지적하고 상대 슬롯 정확도를 제안했다(MultiWOZ 조건, 저자 보고, 원문 미열람). [사실][^ref-730] BFCL 은 함수 호출을 AST 대조와 실행으로 채점한다(README 확인일 2026-09-25; 2,000개 넘는 쌍은 논문 기준, 원문 미열람, 같은 저자 자료). [사실][^ref-737][^ref-736]\n- **분해**: ALFRED 는 성공률과 [목표 조건](../glossary/goal-condition.md) 성공률을 쓰고(가정 환경, 원문 미열람) [사실][^ref-540], Gramopadhye·Szafir(2022-10)는 정답 계획과의 최장 공통 부분수열(LCS) 비율로 행동 순서 일치를 잰다(VirtualHome 조건, 원문 미열람). [사실][^ref-732]\n- **배정 적합성**: ConstraintBench 의 시설 입지 영역은 평균 실행 가능 비율 85.0%였지만 실행 가능성과 최적성을 함께 만족한 비율은 모든 모델에서 0%, 실행 가능 해의 중앙 최적성 간격은 9.41%였다(저자 보고, 원문 미열람; 전체 결과는 5절). [사실][^ref-592] 창고 배정 연구 RTAW(ICRA 2023)는 총 이동 지연(TTD)을 탐욕 픽업 거리·후회 기반 기준선과 비교했다(시뮬레이션 조건, 저자 보고). [사실][^ref-623][^ref-735]\n- **일정 품질**: 동적 작업장 재스케줄링 연구(2004)는 효율을 makespan·납기 지연으로, 안정성을 작업 시작 시각 편차로 잰다(원문 미열람). [사실][^ref-734] 단일 기계 연구(2008)는 강건성·안정성 대리 척도 두 가지를 개발했으나 두 개념 정의의 원문 문구는 확인하지 못했다. [사실][^ref-733] 두 연구의 물류 적용은 미확인이다.\n- **배정의 분리 보고**: 배정 적합성은 실행 가능성과 최적성이 따로 움직이므로 실행 가능 배정 비율과 해법기(예: [혼합 정수 계획(MILP)](../glossary/milp.md)) 최적값(또는 최선 해) 대비 목적함수 격차를 분리해 보고해야 할 것으로 보인다. [추정][^ref-592][^ref-090]\n- **슬롯별 지표 병행**: 모두 맞아야 정답인 지표는 화물·장소·기한 슬롯 하나만 틀려도 0점이 되므로, 슬롯별 지표를 함께 두고 오배정 비용이 큰 슬롯의 오류를 따로 집계해야 할 것으로 보인다. [추정][^ref-730][^ref-731][^ref-545] 슬롯 가중치의 근거는 없어 백로그 q5-11 로 남겼다.\n\n검증 절차(q5-02)와 가설 판정(q5-03)은 아직 조사되지 않았고, 사용자에게 제안하는 실험 계획도 아직 없다.\n\n[^ref-730]: Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(ACL 2022 Short Papers, 소속 미확인), Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking, 2022-05, https://aclanthology.org/2022.acl-short.33/, 접근일 2026-09-25 (원문 미열람)\n[^ref-731]: Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021), A Survey on Spoken Language Understanding: Recent Advances and New Frontiers, 2021, https://www.ijcai.org/proceedings/2021/0622.pdf, 접근일 2026-09-25 (원문 미열람)\n[^ref-732]: Gramopadhye, M., & Szafir, D., Generating Executable Action Plans with Environmentally-Aware Language Models, 2022-10, https://arxiv.org/abs/2210.04964, 접근일 2026-09-25 (원문 미열람)\n[^ref-733]: Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83), Robustness and stability measures for scheduling: single-machine environment, 2008, https://www.tandfonline.com/doi/full/10.1080/07408170701283198, 접근일 2026-09-25 (원문 미열람)\n[^ref-734]: Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46), Dynamic rescheduling that simultaneously considers efficiency and stability, 2004, https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950, 접근일 2026-09-25 (원문 미열람)\n[^ref-623]: Agrawal, A. 외(RTAW 저자, ICRA 2023), RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments, 2022-09, https://arxiv.org/abs/2209.05738, 접근일 2026-09-25 (원문 미열람)\n[^ref-735]: Aakriti05 (RTAW 공식 저장소), RTAW-Centralised-multi-robot-task-allocation — README, 미확인, https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation, 접근일 2026-09-25\n[^ref-736]: Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267), The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models, 2025, https://proceedings.mlr.press/v267/patil25a.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-737]: ShishirPatil (gorilla GitHub), berkeley-function-call-leaderboard — README, 미확인, https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard, 접근일 2026-09-25",
+          "frontmatter": {
+            "last_run": "2026-09-25",
+            "confidence": "low",
+            "sources": [
+              "ref-054",
+              "ref-055",
+              "ref-057",
+              "ref-058",
+              "ref-059",
+              "ref-061",
+              "ref-089",
+              "ref-090",
+              "ref-091",
+              "ref-093",
+              "ref-094",
+              "ref-095",
+              "ref-087",
+              "ref-164",
+              "ref-166",
+              "ref-167",
+              "ref-168",
+              "ref-169",
+              "ref-170",
+              "ref-171",
+              "ref-172",
+              "ref-174",
+              "ref-175",
+              "ref-176",
+              "ref-177",
+              "ref-178",
+              "ref-179",
+              "ref-180",
+              "ref-181",
+              "ref-242",
+              "ref-272",
+              "ref-275",
+              "ref-276",
+              "ref-277",
+              "ref-278",
+              "ref-279",
+              "ref-280",
+              "ref-350",
+              "ref-351",
+              "ref-352",
+              "ref-353",
+              "ref-354",
+              "ref-355",
+              "ref-356",
+              "ref-357",
+              "ref-358",
+              "ref-359",
+              "ref-360",
+              "ref-362",
+              "ref-015",
+              "ref-031",
+              "ref-125",
+              "ref-130",
+              "ref-228",
+              "ref-411",
+              "ref-413",
+              "ref-418",
+              "ref-111",
+              "ref-495",
+              "ref-230",
+              "ref-496",
+              "ref-500",
+              "ref-501",
+              "ref-502",
+              "ref-116",
+              "ref-504",
+              "ref-539",
+              "ref-540",
+              "ref-541",
+              "ref-542",
+              "ref-543",
+              "ref-544",
+              "ref-545",
+              "ref-546",
+              "ref-547",
+              "ref-548",
+              "ref-056",
+              "ref-404",
+              "ref-377",
+              "ref-592",
+              "ref-593",
+              "ref-594",
+              "ref-595",
+              "ref-596",
+              "ref-598",
+              "ref-611",
+              "ref-612",
+              "ref-615",
+              "ref-616",
+              "ref-376",
+              "ref-236",
+              "ref-417",
+              "ref-586",
+              "ref-674",
+              "ref-675",
+              "ref-676",
+              "ref-711",
+              "ref-677",
+              "ref-712",
+              "ref-678",
+              "ref-656",
+              "ref-657",
+              "ref-039",
+              "ref-658",
+              "ref-659",
+              "ref-660",
+              "ref-661",
+              "ref-662",
+              "ref-663",
+              "ref-664",
+              "ref-041",
+              "ref-126",
+              "ref-127",
+              "ref-680",
+              "ref-537",
+              "ref-681",
+              "ref-682",
+              "ref-683",
+              "ref-684",
+              "ref-373",
+              "ref-685",
+              "ref-695",
+              "ref-696",
+              "ref-697",
+              "ref-698",
+              "ref-699",
+              "ref-700",
+              "ref-701",
+              "ref-702",
+              "ref-703",
+              "ref-713",
+              "ref-714",
+              "ref-715",
+              "ref-716",
+              "ref-717",
+              "ref-730",
+              "ref-731",
+              "ref-732",
+              "ref-733",
+              "ref-734",
+              "ref-623",
+              "ref-735",
+              "ref-736",
+              "ref-737"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "path": "docs/tracks/nl-task-chatbot/index.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "6절 산출물 링크 갱신: 초안 v0.8 유지(실행 2026-09-25-98 변경 없음), 아이디어 2 링크 설명에 CLI 지정 질문으로 단계 5 q5-01 을 다뤘음과 현재 단계 3 유지를 적음. 상태 줄은 입력 그대로(현재 단계 3, 마지막 트랙 실행 2026-09-25)",
+      "patches": [
+        {
+          "section": "6. 살아있는 산출물 링크",
+          "action": "replace",
+          "content": "- [업무 분해·배정 설계 초안](task-model-draft.md) — 현재 버전 v0.8. 아이디어 정의에서 도출한 v0 개념 10개·관계 9개에 검증을 거친 개념 로봇 팀을 더했고(v0.1, 실행 2026-09-25-04), 배정 개념에 속성 '배정 산출 방식'을 더해 확정했으며(v0.2, 실행 2026-09-25-21), 상황 개념에 속성 '값 출처'를 더해 확정했고(v0.3, 실행 2026-09-25-30), 상황의 장소 표현에 해석 결과 '공간 노드 참조'를 짝으로 더하고 업무 개념의 기한·우선순위 값 원천을 정리해 확정했으며(v0.4, 실행 2026-09-25-37), 진행 상태 개념에 외부 표현 원천 메모를 더해 확정하고 배정 개념에 외부 표현 대응 메모를 더했다(v0.5, 실행 2026-09-25-51). 일정 개념에 속성 '일정 산출 방식'을 더해 확정했고(v0.6, 실행 2026-09-25-66), 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교'를 더했으며(v0.7, 실행 2026-09-25-71), 지시 개념에 속성 '변경 유형'·'원 지시 참조'를, 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동'을 더해 두 개념을 확정했다(v0.8, 실행 2026-09-25-77). 실행 2026-09-25-26, 2026-09-25-62, 2026-09-25-74, 2026-09-25-79, 2026-09-25-98 에서는 변경이 없었다(2026-09-25-74 에서 제안된 개념 '배정 실패'와 2026-09-25-79 에서 제안된 개념 '사용자 확인'은 초안 6절의 질문으로 남았고, 2026-09-25-98 의 평가 지표는 작업 모델의 개념이 아니라 검증 방법이라 초안에 넣지 않았다). 트랙 실행이 근거 finding과 함께 갱신한다.\n- [아이디어 2. 자연어 업무 지시 챗봇](../../ideas/nl-task-chatbot.md) — 확장 아이디어 페이지. 3~6절(선행 연구·제품 사례, 필요한 데이터와 표준, 구현 가설, 검증 방법)을 이 트랙의 단계 1·2·3·4·5 실행이 채운다. 3절은 선행 연구와 제품 사례(벤더 주장 수준), 채팅·음성 지시 제품의 확인·승인 방식 비교(q1-03, 실행 2026-09-25-26)에 더해 상황 정보 추출과 되묻기(q1-04, 실행 2026-09-25-30)가 작성되었다. 로봇에 자연어로 일을 지시하는 제품의 해석 결과 확인·승인 절차와 물류 지시를 대상으로 한 추출·되묻기 연구는 공개 자료·검색 범위에서 확인되지 않았다(부재의 확인은 아님). 4절은 필요한 데이터 항목과 원천(q2-01, 실행 2026-09-25-37), 작업·배정 결과를 표현하는 표준·형식 비교(q2-02, 실행 2026-09-25-51), 해석·분해 평가 데이터(q2-03, 실행 2026-09-25-62)가 작성되었다. 물류 창고 지시를 정답과 짝지은 공개 데이터셋은 검색 범위에서 찾지 못했다(부재의 확인은 아님). 5절은 스케줄링 결정의 분담(q3-01, 실행 2026-09-25-66), 처리 흐름·핵심 구성 요소(q3-02, 실행 2026-09-25-71), 온톨로지 질의 결과에 따른 되묻기(q3-03, 실행 2026-09-25-74), 지시 변경 반영(q3-04, 실행 2026-09-25-77)이 작성되어 단계 3 시작 질문 4개가 모두 답해졌고, 다른 아이디어와의 연결은 구조 언급 수준이다. 실행 2026-09-25-79 에서는 단계 4 의 q4-01 에 답해 5절에 '오해석 방지 확인 절차' 소절(다섯 겹 확인 절차 가설, 신뢰도 low)을 더했다. 명령 권한(q4-03)과 제한 운영 기준(q4-04)은 아직 조사하지 않았다. 실행 2026-09-25-98 에서는 CLI 로 지정된 질문으로 단계 5 의 q5-01 에 답해 6절에 '평가 지표' 소절(해석·분해·배정 적합성·일정 품질 네 층 지표 구성, 신뢰도 low)을 더했다. 검증 절차(q5-02)와 가설 판정(q5-03)은 아직 조사하지 않았다. 실행 2026-09-25-79 와 2026-09-25-98 은 단계 3·4 완료와 단계 전환이 승인되지 않은 상태에서 지정된 질문으로 뒤 단계를 다뤘으므로, 현재 단계는 단계 3 으로 둔다.\n- [질문 백로그](question-backlog.md) — 최신 수치는 백로그 페이지의 자동 표를 따른다.\n- [트랙 로그](log.md) — 실행별 기록\n- [실험](experiments.md) — 제안된 실험 계획과 사용자 실험 결과 요약(선택). 현재 제안된 실험은 없다."
+        }
+      ]
+    }
+  ],
+  "changelog_entry": "2026-09-25 | 자연어 업무 지시 챗봇 단계 5 | q5-01 답함(해석·분해·배정 적합성·일정 품질 네 층 평가 지표, 신뢰도 low), 후속 질문 2건, q5-06 폐기, 아이디어 2 6절 평가 지표 소절 신설, 초안 v0.8 유지 | run 2026-09-25-98",
+  "index_updates": {
+    "home_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: q5-01 에 답해 해석·분해·배정 적합성·일정 품질 네 층의 평가 지표를 정리(신뢰도 low)",
+    "category_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: 13. 작업 배정 — MRTA 의 배정 적합성을 실행 가능성과 최적성 간격으로 나눠 재는 지표와 14. 작업 순서·스케줄링 의 일정 품질 지표 정리(반영 제안)",
+    "area_recent": "2026-09-25 — 자연어 업무 지시 챗봇 단계 5: 배정 결과를 최근접 기준선·해법기 기준값과 견주는 평가 지표 정리, 6. 대표 접근법과 기술 반영 제안"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "joint-goal-accuracy",
+      "term_ko": "결합 목표 정확도",
+      "term_en": "Joint Goal Accuracy (JGA)",
+      "definition": "대화 상태 추적에서 한 턴의 모든 슬롯 값을 정답과 똑같이 맞힌 턴의 비율로, 하나라도 틀리면 그 턴을 오답으로 세는 엄격한 지표다.",
+      "description": "ACL 2022 연구는 이 지표가 초기 오류 누적으로 성능을 과소평가한다고 지적하고 상대 슬롯 정확도를 제안했다(MultiWOZ 조건, 원문 미열람). 관련 용어: 슬롯 채우기, 의도 인식.",
+      "related_areas": [
+        27,
+        18,
+        23
+      ],
+      "sources": [
+        "ref-730"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "optimality-gap",
+      "term_ko": "최적성 간격",
+      "term_en": "Optimality Gap",
+      "definition": "어떤 해의 목적함수 값이 최적값(또는 해법기가 찾은 최선 값·하한)과 얼마나 떨어져 있는지를 비율로 나타낸 값으로, 실행 가능한 해의 품질을 재는 데 쓴다.",
+      "description": "ConstraintBench 는 LLM 직접 풀이를 해법기 최적값 기준으로 실행 가능성과 최적성을 따로 채점했다(운영과학 일반 조건, 원문 미열람). 관련 용어: 혼합 정수 계획.",
+      "related_areas": [
+        13,
+        14,
+        23,
+        27
+      ],
+      "sources": [
+        "ref-592"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "schedule-stability",
+      "term_ko": "일정 안정성",
+      "term_en": "Schedule Stability",
+      "definition": "재스케줄링 뒤 일정이 원래 일정에서 얼마나 바뀌었는지(작업 시작·완료 시각의 편차 등)를 재는 성질로, 성과 지표의 변화를 재는 강건성과 구분된다.",
+      "description": "동적 작업장 재스케줄링 연구(2004)는 안정성을 작업 시작 시각 편차로 쟀다(원문 미열람). 강건성과의 구분은 일반적 설명이며, 단일 기계 연구(2008)의 정의 원문 문구는 확인하지 못했다.",
+      "related_areas": [
+        14,
+        20
+      ],
+      "sources": [
+        "ref-734",
+        "ref-733"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-730",
+      "org": "Kim, T., Yoon, H., Lee, Y., Kang, P., Bang, J., & Kim, M.(ACL 2022 Short Papers, 소속 미확인)",
+      "title": "Mismatch between Multi-turn Dialogue and its Evaluation Metric in Dialogue State Tracking",
+      "published": "2022-05",
+      "url": "https://aclanthology.org/2022.acl-short.33/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 대화 상태 추적의 결합 목표 정확도가 과소평가, 슬롯 정확도가 과대평가된다고 지적하고 상대 슬롯 정확도를 제안한 논문(저자 소속 미확인).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-731",
+      "org": "Qin, L., Xie, T., Che, W., & Liu, T.(IJCAI 2021)",
+      "title": "A Survey on Spoken Language Understanding: Recent Advances and New Frontiers",
+      "published": "2021",
+      "url": "https://www.ijcai.org/proceedings/2021/0622.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 음성 언어 이해의 의도 인식·슬롯 채우기 방법을 정리하고 의도 정확도·슬롯 F1·전체 정확도를 대표 지표로 드는 서베이.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-732",
+      "org": "Gramopadhye, M., & Szafir, D.",
+      "title": "Generating Executable Action Plans with Environmentally-Aware Language Models",
+      "published": "2022-10",
+      "url": "https://arxiv.org/abs/2210.04964",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 환경을 고려한 LLM 행동 계획 생성 연구(IROS 2023)로, 실행 가능성·정확성과 정답 계획과의 LCS 지표로 평가한다(VirtualHome).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-733",
+      "org": "Goren, S., & Sabuncuoglu, I.(IIE Transactions 40(1), 66-83)",
+      "title": "Robustness and stability measures for scheduling: single-machine environment",
+      "published": "2008",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/07408170701283198",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 무작위 교란 아래 단일 기계 일정의 강건성과 안정성을 재는 대리 척도를 개발한 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-734",
+      "org": "Rangsaritratsamee, R., Ferrell Jr., W. G., & Kurz, M. B.(Computers & Industrial Engineering 46)",
+      "title": "Dynamic rescheduling that simultaneously considers efficiency and stability",
+      "published": "2004",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360835203000950",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 동적 작업장 재스케줄링에서 효율(makespan·납기 지연)과 안정성(시작 시각 편차)을 함께 다루는 유전 국소 탐색 방법.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-623",
+      "org": "Agrawal, A. 외(RTAW 저자, ICRA 2023)",
+      "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.05738",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. 창고 다중 로봇 작업 배정을 강화학습으로 풀고 총 이동 지연(TTD)을 탐욕·후회 기반 기준선과 비교한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-735",
+      "org": "Aakriti05 (RTAW 공식 저장소)",
+      "title": "RTAW-Centralised-multi-robot-task-allocation — README",
+      "published": null,
+      "url": "https://github.com/Aakriti05/RTAW-Centralised-multi-robot-task-allocation",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "RTAW 구현 저장소 README. 학습된 정책으로 TTD 값을 산출하는 실행 명령과 탐욕·후회 기준선 스크립트를 둔다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-736",
+      "org": "Patil, S. G. 외(Gorilla/BFCL 저자, ICML 2025 PMLR v267)",
+      "title": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+      "published": "2025",
+      "url": "https://proceedings.mlr.press/v267/patil25a.html",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "원문 미열람. LLM 의 함수 호출 능력을 AST 평가와 실행 평가로 채점하는 벤치마크 논문.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    },
+    {
+      "id": "ref-737",
+      "org": "ShishirPatil (gorilla GitHub)",
+      "title": "berkeley-function-call-leaderboard — README",
+      "published": null,
+      "url": "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-function-call-leaderboard",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-25",
+      "summary": "BFCL 공식 README. 실행 가능한 함수 호출 평가와 AST 기반 단일·병렬·다중 호출 평가를 설명한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+        "docs/ideas/nl-task-chatbot.md"
+      ]
+    }
+  ],
+  "open_question_updates": [],
+  "flow_matrix_updates": [
+    {
+      "step": "피킹",
+      "item": "시작 조건",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "작업 대상",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "수행 자원",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "제약",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "완료·인계",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    },
+    {
+      "step": "피킹",
+      "item": "예외·성과",
+      "link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01",
+      "title": "단계 5. 검증 방법과 가설 판정"
+    }
+  ],
+  "additional_research_requests": [
+    "단계 5 페이지 3절과 아이디어 2 6절: 가상 현장·가상 로봇으로 지시 시나리오를 재현하는 검증 절차와 한계(q5-02)가 필요하다 — 완료 조건 '평가 지표와 검증 절차'의 절반이 비어 있다.",
+    "트랙 개요 3절: 가설 1~3 판정(q5-03)에 쓸 단계 1~4 결과의 판정 근거가 필요하다 — 가설 판정표 완료 조건.",
+    "실험 페이지: 사용자에게 제안할 실험 계획(네 층 지표를 물류 지시 시나리오에서 산출하는 실험)을 쓰려면 대상 시뮬레이터·데이터 구성 근거가 필요하다.",
+    "단계 5 3절: 물류 지시 해석·분해·배정·일정을 함께 평가한 벤치마크나 국내 자료가 있는지 추가 검색이 필요하다(이번 검색 18회 범위에서는 없음).",
+    "단계 5 3절: Goren·Sabuncuoglu(ref-733)의 강건성·안정성 정의 원문 문구 확인이 필요하다.",
+    "참고문헌: ref-623 저자 목록 전체와 ref-730 저자 소속 확인이 필요하다.",
+    "퍼블리셔: 보류된 실행 2026-09-25-82 가 ref-730~ref-744 를 다른 출처에 쓴 기록이 있어 id 병합 충돌 확인이 필요하다.",
+    "백로그 정리: q3-09·q3-10, q3-12·q3-13, q4-09·q4-10, q1-05·q1-06 중복 등록을 해당 단계 실행에서 정리해야 한다."
+  ],
+  "fixes_applied": [
+    "f3 연구 이름 표기 — 'G-PlanET'을 쓰지 않고 'Gramopadhye·Szafir(arXiv 2210.04964, 2022-10, IROS 2023)'로만 표기했고, 310%·147% 뒤에 '(저자 보고, 원문 미열람, VirtualHome·ActivityPrograms 조건)'을 붙였다.",
+    "f11 정의 분리 — 대리 척도 두 가지 개발만 [사실]로 쓰고 강건성·안정성 정의는 별도 [추정] 문장에 '원문 문구는 확인하지 못했다'를 병기했다. 용어 '일정 안정성' 설명에도 같은 한계를 적었다.",
+    "f1 PLW·SPL 구분 — 경로 길이 가중 지표를 용어집 SPL 과 같은 지표로 다루지 않는다고 명시하고, 목표 조건을 glossary goal-condition 페이지로 링크했다.",
+    "f7 출처 분리 — 2,000개 쌍과 세 평가 범주는 ref-736 각주에만, '실행 가능한 함수 호출 평가'와 v1 AST 평가는 ref-737 각주에만 달았고, 같은 저자라 독립 교차가 아님을 본문과 4절 불확실성에 적었다.",
+    "f6·f8·f9 수치 조건 — 1.09%p·5.47%p(MultiWOZ), 85.0%·0%·9.41%(모든 모델), TTD 최대 14%(25~1000초)·최대 1000대 시뮬레이션 뒤에 조건과 '저자 보고, 원문 미열람'을 두었고, '고려대학교 등'을 빼고 ref-730 기관 표기를 '소속 미확인'으로 바꿨다.",
+    "f2 연결 — SMART-LLM 지표를 새로 서술하지 않고 단계 2 q2-03 답 링크와 기존 각주 ref-090 으로만 연결했다.",
+    "f14 재사용 — 13. 작업 배정 — MRTA 3절의 ref-400 문장과 각주를 그대로 쓰고 창고 조건 실측 부재는 oq-052 로 연결했으며 새 열린 질문은 만들지 않았다.",
+    "f12·f13·f15·f16·f17 태그 — 모두 [추정]으로 싣고 네 층 표 아래에 '이 위키의 종합이며 네 층을 한 번에 제시한 출처는 없고, 근거 환경이 물류 지시 조건이 아니다'를 두었으며, f16 은 설명용 가상 시나리오로 밝히고 시각·도크 번호 같은 수치를 뺐다.",
+    "각주·reference_updates — 신규 미열람 ref-730~735·737 은 접근일 뒤 ' (원문 미열람)'과 source_unopened: true, ref-735·738 은 표시 없이 두었고, 재사용 ref-540·545·090·592·400·111 은 기존 페이지 각주 줄을 그대로 썼다.",
+    "단계 5 2절 — q5-01 을 답함·2026-09-25-98·[답](#q5-01)로 바꾸고 3절에 '### q5-01 … {#q5-01}' 소제목을 두었으며, 새 질문 q5-11·q5-12 를 2절 표와 5절 표에 단계 5 로 올리고 q5-12 의 '(관련: q5-05, oq-052)'를 유지했다.",
+    "backlog q5-06 — backlog_updates 에 status 폐기로 내고 단계 5 페이지 2절 표에서 뺐다(표 머리 설명에 q5-05 중복 사유 기재).",
+    "단계 5 6절 — 세 행을 미충족 · 미승인으로, 첫 행 근거를 지시 문구대로, 전환 줄을 지시 문구대로 썼고 stage_transition 은 넣지 않았으며, 상태 줄을 '진행 중 · 열린 질문: 10건 · 답한 질문: 1건 · 완료 조건: 미충족'으로 2절 표와 맞췄다.",
+    "트랙 개요 — 상태 줄(현재 단계 3, 마지막 트랙 실행 2026-09-25)은 입력 그대로 두고, 6절 아이디어 2 링크 설명에 이번 실행이 CLI 지정 질문으로 단계 5 를 다뤘음과 현재 단계 3 유지를 적었다.",
+    "아이디어 2 6절 — '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절에 f12·f13·f15 를 [추정]으로, f1·f4·f5(슬롯별 지표 근거)·f6·f7·f8·f9·f10·f11 을 요약 수준으로 싣고 4절 '해석·분해 평가 데이터' 소절로 링크했으며 q5-02·q5-03 미조사를 적었다.",
+    "용어집 — 결합 목표 정확도·최적성 간격·일정 안정성 3건을 신규로 내고, 본문에서 intent-recognition·slot-filling·goal-condition·milp 용어집 페이지로 링크했다.",
+    "세부영역 반영 제안 — 13·14·23·27 페이지는 고치지 않고 area_reflection_proposals 와 트랙 로그 항목으로만 남겼으며, f9 강화학습 배차는 27. AI·학습·적응과 모델 운영과 13. 작업 배정 — MRTA 양쪽 연결로만, f10·f11 은 물류 적용 미확인을 제안 문안에 밝혔다."
+  ],
+  "track_updates": {
+    "stage_page": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md",
+    "ontology_draft_version": "0.8",
+    "backlog_updates": [
+      {
+        "id": "q5-01",
+        "status": "답함",
+        "answer_link": "docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-01"
+      },
+      {
+        "id": "q5-06",
+        "status": "폐기",
+        "answer_link": null
+      },
+      {
+        "id": "q5-11",
+        "status": "열림",
+        "answer_link": null,
+        "question": "물류 지시 해석 평가에서 슬롯별 오류 비용(기한·대상 화물·장소 오류가 오배정·납기 지연으로 이어지는 정도)을 어떻게 추정해 슬롯 가중치나 치명 오류 집계 기준으로 정하며, 모두 맞아야 정답인 전체 정확도와 어떻게 함께 보고하는가? (q5-01 에서 파생)",
+        "stage": 5,
+        "origin": "f15"
+      },
+      {
+        "id": "q5-12",
+        "status": "열림",
+        "answer_link": null,
+        "question": "배정 적합성의 최적성 간격을 재기 위한 해법기 기준값을 창고 규모 사례에서 시간 제한 때문에 최적해로 인증하지 못할 때, 최선 해·하한 가운데 무엇을 기준으로 삼고 최근접 배정 기준선과 함께 어떻게 보고하는가? (q5-01 에서 파생) (관련: q5-05, oq-052)",
+        "stage": 5,
+        "origin": "f13"
+      }
+    ],
+    "log_entry": "답한 질문: q5-01(해석·분해·배정 적합성·일정 품질 네 층 지표, 근거 f1~f18, 신뢰도 low) / 새 질문: q5-11(슬롯별 오류 비용·치명 오류 집계, f15), q5-12(해법기 기준값·최적성 간격 기준, f13, 관련 q5-05·oq-052) / 백로그 정리: q5-06 폐기(q5-05 중복 등록) / 온톨로지 변경: 없음(업무 분해·배정 설계 초안 v0.8 유지 — 평가 지표는 작업 모델의 개념·관계가 아니라 검증 방법) / 완료 조건 평가: 미충족(부족: 검증 절차 q5-02, 가설 판정표 q5-03, 실험 계획; 앞 단계 3·4 완료 미승인) / 세부영역 반영 제안: 13. 작업 배정 — MRTA, 14. 작업 순서·스케줄링, 23. 시험·형식 검증·벤치마크, 27. AI·학습·적응과 모델 운영 4건(각 6. 대표 접근법과 기술) / 다음 실행 제안: q5-02, 이어서 q5-05·q5-12, q5-03. 참고: 이 실행은 CLI 지정 질문으로 단계 5 를 다뤘고 트랙 현재 단계는 단계 3 으로 둔다.",
+    "overview_progress": "단계 5 진행 중 — 열린 질문 10, 답함 1, 완료 조건 미충족(CLI 지정 질문 q5-01 로 다뤘으며 트랙 현재 단계는 단계 3 유지)"
+  },
+  "area_reflection_proposals": [
+    {
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "배정 결과를 실행 가능 배정 비율과 해법기 기준값 대비 최적성 간격으로 나눠 평가하는 방식(ConstraintBench 시설 입지 85.0%·0%·9.41%, 저자 보고), 창고 배정의 총 이동 지연(TTD) 지표와 탐욕 픽업 거리 기준선(RTAW, 저자 보고), 분류 원문 질문을 최근접 기준선·해법기 기준값과 비교하는 설계(추정, oq-052 연결). RTAW 의 강화학습 배차는 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽 연결로만 적는다."
+    },
+    {
+      "area_no": 14,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "재스케줄링 일정 품질을 효율(makespan·납기 지연)과 안정성(작업 시작 시각 편차)으로 재는 지표(2004)와 강건성·안정성 대리 척도(2008, 정의 원문 문구 미확인). 두 연구는 제조 작업장·단일 기계 조건이며 물류 적용은 미확인이다."
+    },
+    {
+      "area_no": 23,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "지시 수행·계획 평가 지표: ALFRED 목표 조건 성공률과 경로 길이 가중 지표, Gramopadhye·Szafir 의 LCS 순서 일치, BFCL 의 도구 호출 AST·실행 평가, 그리고 해석·분해·배정 적합성·일정 품질 네 층 지표 구성(이 위키의 종합, 추정)."
+    },
+    {
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM 해석·출력 평가 지표: 의도 정확도·슬롯 F1·전체 정확도(SLU 서베이), 결합 목표 정확도의 과소평가와 상대 슬롯 정확도(ACL 2022), 도구 호출 AST·실행 평가(BFCL), LLM 직접 최적화의 실행 가능성–최적성 분리(ConstraintBench). 적용 대상 13. 작업 배정 — MRTA·18. 사람–로봇 협업·운영 인터페이스와 함께 연결한다."
+    }
+  ]
+}
