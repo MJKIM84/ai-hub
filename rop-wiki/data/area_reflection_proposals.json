@@ -995,6 +995,66 @@
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "summary": "IDTA 02047 템플릿의 ECLASS 분류 클래스 코드는 일반 블록 복합 식별자에만 쓰이고 [사실][^ref-245], 로봇 제품 클래스는 제조사가 인스턴스 값으로 채우는 것이어서 ROP 는 자체 분류가 필요할 것으로 보인다 [추정][^ref-245][^ref-444].",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 6,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "도면 처리 흐름을 입력 정리 → 인식·벡터화 → 공간 그래프 생성 → 온톨로지 적재로 나누는 이 위키의 종합([추정], f16)과 BIM 입력의 직접 변환 경로(ifc2indoorgml, f9), 사람 검토 네 지점([추정], f17), 업무 장소 이름과 공간 노드의 연결을 공간 그래프 생성 뒤 사람 확인에 두는 방향([추정], f18, osmAG 문자 이름 기본 꺼짐 f1, traffic-editor 경유점 주석 f8). 근거 실행 2026-09-25-54.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "교차 규칙(도면 해석은 6. 지도·공간·위치 모델에 적용)에 따라 시각-언어 모델 벡터화(FloorplanVLM, 외벽 IoU 92.52% 저자 보고 단일 출처, f3), 불확실성 기반 사람 참여 루프(Jakubik 외 2022, f5), LLM 다중 에이전트와 사람 피드백·스키마 검증(Sketch2BIM, f6), 검출기·LLM·사람 검수 반자동 절차(DoorDet, f7)를 6. 지도·공간·위치 모델 페이지와 양쪽에 연결.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "FloorplanVLM(ref-463), Jakubik 외 AAAI 2022(ref-458), Sketch2BIM(ref-457), DoorDet(ref-077)를 도면 해석 연구로 등재(모두 원문 미열람, 수치는 저자 보고).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "IFC → 링크드 빌딩 데이터 RDF 변환기 IFCtoLBD(판 2.54.0, SHACL 검증 지원, f10), 적재 전 검증 언어 W3C SHACL(2017 권고안, 편집자 초안으로 확인, f11), IFC 정보 요구 명세 buildingSMART IDS(XML 기반, 판 미확인, f12).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 21,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "시운전 전 도면 처리에서 사람이 입력·확인하는 항목: 축척·좌표 기준점 파라미터(osmAG-from-cad, f1), 운영 요소·경유점 주석(traffic-editor, f8), 적재 전 검증 보고서 확인(SHACL, f11) — 네 지점 구분은 [추정](f17).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-54",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 3,
+      "area_no": 5,
+      "section": "8. 대표 연구와 자료",
+      "summary": "건물·장면 정보를 로봇 온톨로지·지식 그래프에 적재한 연구: OBRNIT(로봇·건물·주행 작업·점검 작업 네 개념 묶음, ifcOWL 재사용 여부 미확인, f14), 장면 그래프를 USD로 통일하고 사람이 온톨로지 개념으로 라벨을 붙이는 흐름(arXiv 2507.11770, IROS 2025 제출, f13). 모두 원문 미열람.",
+      "status": "제안"
     }
   ]
 }

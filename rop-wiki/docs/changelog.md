@@ -28,6 +28,24 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-01 답함(처리 흐름 네 단계·사람 검토 네 지점, 결론은 추정), 2~9절 갱신, 후속 질문 2건(q3-07·q3-08). 2차 수정: H1 아래 단계 상태 줄 갱신(진행 중 · 열린 7 · 답함 1), 6절 첫 행 검증 판정 '충족 · 전환 미승인', 전환 줄에 핵심 구성 요소 추가. 머리 영역 수정 때문에 페이지 전문으로 보냄 |
+| 2026-09-25-54 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5. 구현 가설 절 첫 작성: 처리 흐름과 사람 검토 지점(q3-01, 실행 2026-09-25-54, 추정 중심), 핵심 구성 요소·다른 아이디어와의 연결은 아직 조사되지 않음(2차 재실행에서 변경 없음) |
+| 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 아이디어 5절 첫 반영(q3-01), 백로그 후속 질문 15건·q3-01 답함, 스키마 초안 변경 없음 기록. 상태 줄은 입력 값 그대로(현재 단계 단계 1 유지, 마지막 트랙 실행 2026-09-25)(2차 재실행에서 변경 없음) |
+| 2026-09-25-54 | 요약 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | 건축 도면 자동 인식 단계 3: q3-01 답함(도면 처리 흐름 네 단계와 사람 검토 네 지점, 추정), 아이디어 3 5절 첫 반영, 후속 질문 2건, 온톨로지 변경 없음 |
+| 2026-09-25-54 | 생성 | [docs/references/ref-456.md](references/ref-456.md) | 참고문헌 ref-456 등록: IFCtoLBD — README (IFCtoLBD converts IFC (Industry Foundatio… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-457.md](references/ref-457.md) | 참고문헌 ref-457 등록: Sketch2BIM: A Multi-Agent Human-AI Collaborative Pipeline to… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-458.md](references/ref-458.md) | 참고문헌 ref-458 등록: Designing a Human-in-the-Loop System for Object Detection in… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-459.md](references/ref-459.md) | 참고문헌 ref-459 등록: Shapes Constraint Language (SHACL) (W3C data-shapes 저장소 편집자… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-460.md](references/ref-460.md) | 참고문헌 ref-460 등록: 딥러닝과 경로계획 기반의 주택 평면도 3D 모델링 방법 |
+| 2026-09-25-54 | 생성 | [docs/references/ref-461.md](references/ref-461.md) | 참고문헌 ref-461 등록: Ontology for BIM-Based Robotic Navigation and Inspection Tas… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-462.md](references/ref-462.md) | 참고문헌 ref-462 등록: Generating Actionable Robot Knowledge Bases by Combining 3D… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-463.md](references/ref-463.md) | 참고문헌 ref-463 등록: FloorplanVLM: A Vision-Language Model for Floorplan Vectoriz… |
+| 2026-09-25-54 | 생성 | [docs/references/ref-464.md](references/ref-464.md) | 참고문헌 ref-464 등록: IDS — README (Information Delivery Specification) |
+| 2026-09-25-54 | 생성 | [docs/glossary/human-in-the-loop.md](glossary/human-in-the-loop.md) | 용어집 항목 사람 참여 루프 |
+| 2026-09-25-54 | 생성 | [docs/glossary/information-delivery-specification.md](glossary/information-delivery-specification.md) | 용어집 항목 정보 전달 명세 |
+| 2026-09-25-54 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-54 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) | q1-09 부분 답에 실행 2026-09-25-53 보강 소절 추가(AHY911·AHY912 복합 식별자, 템플릿 열람 다섯 번째 절단, 게시 템플릿 목록, IDTA 02003 2.0.1, 제품 분류 항목 식별자), 4절 결론·사용자 결정 필요, 새 질문 q4-16, 6절 미충족 유지, 7절 반영 제안, 출처 ref-443·ref-444, 이력 행 추가 |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/model-standard-comparison.md](tracks/manual-capability-ontology/model-standard-comparison.md) | IDTA 02047 행 종류 칸에 제품 이미지(AHY911)·SpecificDescriptions(AHY912) 복합 식별자 [사실] 추가, 상태 칸에 실행 2026-09-25-53 재열람 절단 추가, 이력 행 추가 |
 | 2026-09-25-53 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 4절에 실행 2026-09-25-53 발견(게시 템플릿 목록·Digital Battery Passport 후보·제품 분류 항목 식별자·제품 클래스 인스턴스 값) 문단과 각주 추가 |

@@ -68,9 +68,9 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
-| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 45 | q1-08 — MassRobotics AMR 상호운용 표준의 setup·status 메시지 스키마에는 로봇 능력(적재량, 지원 작업, 부착 장비)을 기술하는 필드가 있는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-08)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
+| 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q1-08 — MassRobotics AMR 상호운용 표준의 setup·status 메시지 스키마에는 로봇 능력(적재량, 지원 작업, 부착 장비)을 기술하는 필드가 있는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-08)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 24 | q2-01 — 채팅 지시를 작업으로 바꾸려면 어떤 정보(작업 종류, 장소, 대상 화물, 기한, 우선순위, 완료 조건)가 필요하고, 그 가운데 무엇을 로봇 기능 온톨로지·공간 그래프·업무 시스템에서 가져오는가? ([답](tracks/nl-task-chatbot/stage-2-data-and-standards.md#q2-01)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
-| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 24 | q2-03 — 층별 지도와 공용 자원 목록을 로봇 관제와 ROP가 받아들이는 형식(제조사 지도 형식, 지도 교환 형식)은 무엇이 있는가? ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-03)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
+| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 25 | q3-01 — 인식 → 벡터화 → 공간 그래프 생성 → 온톨로지 적재의 흐름에서 단계마다 입력·출력은 무엇이고 사람 검토는 어디에 두는가? ([답](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md#q3-01)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례
