@@ -28,6 +28,27 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-01 답함, q2-02·q2-03 부분 답, 후속 질문 2건(q2-07·q6-07), 완료 조건 미충족·전환 아니오, 출처 14건, 이력 추가. H1 아래 단계 상태 줄을 고쳐야 해 patches 대신 전체 content 로 보냄 |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 매트릭스 9/64칸 채움(페이로드·액세서리 문서 행 추가), 공개 문서 샘플 4건, 출처·이력 갱신. H1 아래 산출 단계 상태 줄을 고쳐야 해 전체 content 로 보냄 |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/ontology-draft.md](tracks/manual-capability-ontology/ontology-draft.md) | v0.3 → v0.4: 근거 문서 속성 '문서 유형'·'이용 조건' 추가와 확정(f3·f17), 속성 '정보 형태'는 6절 질문에 합침. H1 버전 표기를 고쳐야 해 전체 content 로 보냄 |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 6. 살아있는 산출물 링크: 온톨로지 초안 v0.4, 문서 유형 매트릭스 초안(9/64칸·샘플 4건) 반영. 상태 줄은 입력 그대로(현재 단계 단계 1 유지) |
+| 2026-09-25-57 | 갱신 | [docs/ideas/robot-capability-ontology.md](ideas/robot-capability-ontology.md) | 3절에 매뉴얼 대상 추출 연구, 4절에 제조사 문서 유형·공개 샘플·이용 조건 단락 추가(실행 2026-09-25-57) |
+| 2026-09-25-57 | 요약 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-01 답함, q2-02·q2-03 부분 답, 문서 유형 매트릭스 9/64칸·공개 문서 샘플 4건, 온톨로지 초안 v0.4, 후속 질문 2건 |
+| 2026-09-25-57 | 생성 | [docs/references/ref-505.md](references/ref-505.md) | 참고문헌 ref-505 등록: spot-sdk — README |
+| 2026-09-25-57 | 생성 | [docs/references/ref-506.md](references/ref-506.md) | 참고문헌 ref-506 등록: kortex — readme |
+| 2026-09-25-57 | 생성 | [docs/references/ref-507.md](references/ref-507.md) | 참고문헌 ref-507 등록: doosan-robot2 — README (humble) |
+| 2026-09-25-57 | 생성 | [docs/references/ref-508.md](references/ref-508.md) | 참고문헌 ref-508 등록: rbpodo — README |
+| 2026-09-25-57 | 생성 | [docs/references/ref-509.md](references/ref-509.md) | 참고문헌 ref-509 등록: ISO 20607:2019 - Safety of machinery — Instruction handbook… |
+| 2026-09-25-57 | 생성 | [docs/references/ref-510.md](references/ref-510.md) | 참고문헌 ref-510 등록: IEC/IEEE 82079-1:2019 - Preparation of information for use (… |
+| 2026-09-25-57 | 생성 | [docs/references/ref-511.md](references/ref-511.md) | 참고문헌 ref-511 등록: 매뉴얼 : Doosan Robotics Training & Service |
+| 2026-09-25-57 | 생성 | [docs/references/ref-512.md](references/ref-512.md) | 참고문헌 ref-512 등록: Rainbow Robotics 협동로봇 기술자료 (rb_cobot_docs) |
+| 2026-09-25-57 | 생성 | [docs/references/ref-513.md](references/ref-513.md) | 참고문헌 ref-513 등록: OmniDocBench — README |
+| 2026-09-25-57 | 생성 | [docs/references/ref-514.md](references/ref-514.md) | 참고문헌 ref-514 등록: Conversational Knowledge Extraction from Technical Manuals:… |
+| 2026-09-25-57 | 생성 | [docs/references/ref-515.md](references/ref-515.md) | 참고문헌 ref-515 등록: Enhancing LLMs for Manufacturing Information Extraction |
+| 2026-09-25-57 | 생성 | [docs/glossary/information-for-use.md](glossary/information-for-use.md) | 용어집 항목 사용 정보 |
+| 2026-09-25-57 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-55 | 갱신 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 아직 다루지 않은 연결에 7. 화물·재고·자산 식별과 추적 명시), '참고 자료' 끝에 새 각주 정의 38건 추가 |
 | 2026-09-25-55 | 요약 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | D. 계획·최적화: '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) |
 | 2026-09-25-55 | 생성 | [docs/references/ref-493.md](references/ref-493.md) | 참고문헌 ref-493 등록: Decentralized Multi-Robot Task Allocation Under Degraded Com… |

@@ -65,9 +65,9 @@
       "question": "제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-57",
+      "answer_link": "docs/tracks/manual-capability-ontology/stage-2-document-types.md#q2-01",
       "created": "2026-09-24"
     },
     {
@@ -75,7 +75,7 @@
       "question": "기능 정보는 어떤 형태(문장, 표, 그림·다이어그램, 코드 예제, 파라미터 표)로 존재하며 형태별 추출 난이도는 어떠한가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "열림",
+      "status": "조사 중",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-24"
@@ -85,7 +85,7 @@
       "question": "공개적으로 접근할 수 있는 대표 문서 샘플(AMR, 협동로봇, 로봇팔 등)은 무엇이고 이용 조건은 어떠한가?",
       "stage": 2,
       "origin": "사용자",
-      "status": "열림",
+      "status": "조사 중",
       "answered_run_id": null,
       "answer_link": null,
       "created": "2026-09-24"
@@ -580,6 +580,28 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-53"
+    },
+    {
+      "id": "q2-07",
+      "question": "AMR 제조사(MiR·OTTO·국내 물류로봇 업체 등)가 공개하는 매뉴얼·REST API 문서는 무엇이며, 공개되지 않을 때 표준 스키마(VDA 5050 팩트시트·MassRobotics)로 대신할 수 있는 정보와 없는 정보는 무엇인가? (q2-03 에서 파생)",
+      "stage": 2,
+      "origin": "f20",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-57"
+    },
+    {
+      "id": "q6-07",
+      "question": "SDK 코드 라이선스와 별개로 제조사 매뉴얼 문서를 자동 추출·재가공해 능력 온톨로지에 쓰는 것이 이용 조건상 허용되는가, 이를 누가 확인하고 기록하는가? (q2-03 에서 파생)",
+      "stage": 6,
+      "origin": "f19",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-57"
     }
   ]
 }
