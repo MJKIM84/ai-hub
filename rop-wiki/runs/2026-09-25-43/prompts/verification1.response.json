@@ -1,0 +1,326 @@
+{
+  "duration_api_ms": 192654,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.7813686000000004,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 385162,
+    "cache_read_input_tokens": 983058,
+    "output_tokens": 16003,
+    "output_tokens_details": {
+      "thinking_tokens": 6304
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 385162,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12846,
+        "cache_read_input_tokens": 455449,
+        "cache_creation_input_tokens": 5867,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5867
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 128387,
+      "outputTokens": 2998,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 4,
+      "costUSD": 0.183377,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 16003,
+      "cacheReadInputTokens": 983058,
+      "cacheCreationInputTokens": 385162,
+      "webSearchRequests": 0,
+      "costUSD": 3.5979916000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6304,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 12,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-43\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-948 원본을 github_raw로 다시 열었다. 필수 필드는 phases(최소 1개)뿐이고, phase는 activity 필수·on_cancel 선택이며 'use a Sequence activity' 문구가 있다. 발행일은 미확인, 확인일 2026-09-25 기준.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-111 원본을 다시 열었다. 필수는 booking뿐이다. assigned_to는 group·name 필수이고, dispatch status 값은 queued/selected/dispatched/failed_to_assign/canceled_in_flight 5종이다. status는 uninitialized, blocked, error, failed, queued, standby, underway, delayed, skipped, canceled, killed, completed의 12종이다. 브리프가 '등'으로 줄인 것은 원문과 맞다. 추가로 event_state에 같은 phase 안 사건 사이 의존(deps) 배열이 있다(f3·f16·f17 관련).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 배정 근거·확인 여부 필드가 없다는 점은 원본으로 확인했다. 다만 task_state.json에는 작업 내부 사건 사이 의존(event_state.deps)이 있으므로, '선행 의존 필드 없음'은 서로 다른 작업 사이에 한정해 써야 한다(수정 지시).\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트 data/source_texts/ref-031.txt(VDA 5050 3.0.0)에서 5.3 'Assignment of orders to the mobile robots'와 6.1.1 'An order message does not necessarily describe the full transport order'를 확인했다. 브리프 sources의 ref-031은 fetched_via가 github_raw인데 fetch_url은 null이고 발췌에는 inbox로 적혀 있다. 실제 경로는 inbox다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 표 4에서 확인했다. waitForTrigger의 triggerType에 FLEET_CONTROL·LOCAL이 있고, 'Fleet control is responsible for handling the timeout and shall cancel the order if necessary'라는 문구와 trigger 순간 동작의 제3 시스템 문구가 있다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-230 JSON 원본을 다시 열었다. oneOf로 identityReport·statusReport 두 유형만 있고, 작업을 보내는 메시지는 없다. operationalState 9종, destinations 'Target destination(s) of AGV'를 확인했다. README(ref-253)는 원문 미열람이며 같은 발행 주체라 교차 확인이 아니다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: NodeSet2.xml 원본을 다시 열었다. JobResponseID, JobOrderID, 실제 StartTime·EndTime, JobState, Equipment·Personnel·PhysicalAsset·Material Actuals가 있다. 설비 ID는 'EquipmentClass or Equipment'이고, 모델 발행일은 2024-01-31이다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 검증 열람에서도 ISA95JobOrderDataType에 작업 지시 사이 의존·선행 필드가 없었다. 부재 관찰이며, B2MML 세그먼트 의존은 oq-013과 연결된다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. 원문 미열람. 검증 검색에서 HumanPerformer의 특수화 PotentialOwner와 ResourceAssignmentExpression, 명세 10.3.2절·표 10.17·10.18 참조는 확인했다. 그러나 근거가 주로 구현 문서(Flowable 등) 요약이고, 'Performer를 활동을 수행하거나 책임지는 자원으로 정의'라는 정의 문구는 발행 기관(OMG) 원문으로 확인하지 못했다. 표준 주장이 발행 기관 자료로 확인되지 않았으므로 재확인을 요청한다. BPMN 2.0.2 발행 2014-01은 맞다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람): 검증 검색에서 저자 5명, Robotics and Autonomous Systems 160권 104322(2023), BPMN 기반 다중 로봇 임무 모델링·설정·실행 틀과 툴체인을 확인했다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: dsl.md 원본을 다시 열었다. 예시 표기 DSL 1.0.3, 작업 유형 Call·Do·Emit·For·Fork·Listen·Raise·Run·Set·Switch·Try·Wait, 시간 초과와 every·cron·after 일정을 확인했다. 브리프 목록에서 For가 빠졌지만 '같은'으로 예시한 것이라 허용한다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 검증 열람에서도 수행자 배정·우선순위·기한 개념은 확인되지 않았다(시간 초과만 있음). 부재 관찰이다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: README 원본에서 XML 기반 DSL의 실행 시 적재, 정적 링크·플러그인 노드, 비동기 Action을 first-class로 두는 점을 확인했다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람): 검증 검색에서 arXiv 1911.05499(2019-11-13), PDDL2.1 STRIPS 부분의 확장, 기본 HTN 계획 한정, AAAI 2020 발표를 확인했다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 리서치 검색 요약에만 있다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(원문 미열람): 검증 검색에서 저자 Filippone·Pettinari·Pelliccione(GSSI), arXiv 2603.15427, 'no standard or widely accepted formalism' 문구, BT·상태 기계·HTN·BPMN 비교를 확인했다. [의견]이므로 누구의 평가인지 밝혀 쓴다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지(이 위키의 대응). 다만 BPMN을 '분해·순서 구조'로만 분류하면 f9의 수행자 지정(자원 배정 식)을 빠뜨린다. 또 Open-RMF 작업 상태의 작업 내부 사건 의존(deps)을 고려해 표현을 고쳐야 한다(수정 지시). 브리프는 source_unopened를 false로 적었지만, 근거에 원문 미열람 출처 ref-951·ref-952가 섞여 있다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. waitForTrigger–trigger 동작은 원문으로 확인했다. 이를 플릿 사이 선후 집행에 쓴 사례는 확인되지 않았다. oq-049는 해결로 바꾸지 않는다. '작업 사이'라는 한정을 유지한다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. assigned_to(f2)와 EquipmentActuals(f7)는 원문으로 확인했다. 배정 근거 기록을 권고한 출처는 없으며 oq-052와 연결된다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f4는 13. 작업 배정 — MRTA 7절·9절의 기존 서술('VDA 5050은 주문 배정을 관제의 기능으로 둔다', ref-031)과 같은 주장이다. 기존 각주 ref-031을 재사용하고 반영 제안에서 새 문장으로 반복하지 않는다.\",\"f17과 새 질문 'Open-RMF 복합 작업 + waitForTrigger로 플릿 사이 선후 집행'은 열린 질문 oq-049(플릿 사이 작업 선후 표현·집행)와 겹친다. 중복 등록은 아니지만 oq-049로 연결한다.\",\"f7·f16은 oq-020(ISA-95 작업 지시·응답 ↔ VDA 5050·Open-RMF 매핑), f9·f10은 oq-014(BPMN 단계 상태 ↔ 로봇 작업 상태 동기화), f8은 oq-013(B2MML 의존 유형)과 관련된다. 어느 것도 해결로 판정하지 않는다.\",\"새 질문 'BPMN·Serverless Workflow·HDDL을 표준 표현으로 채택할지 자체 스키마를 두고 변환할지'는 백로그 q2-04(중간 표현을 작업 모델·관제 인터페이스로 옮길 때 무엇이 빠지는가)와 관련되지만, 단계 3의 설계 결정 질문이라 중복으로 보지 않는다.\",\"f18은 oq-052(최근접 대 전역 최적 배정 실측 비교)와 관련된다.\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"f2가 Open-RMF의 dispatch를 '배정 과정'으로 번역했는데, 업무 분해·배정 설계 초안에서 '배치(Dispatch)'는 배정된 로봇에게 작업을 내보내는 실행 지시이고 '배정(Assignment)'은 별개 개념이다. 페이지에서는 'Open-RMF 디스패치 상태(dispatch status: queued·selected·dispatched·failed_to_assign·canceled_in_flight)'로 원어를 병기한다. 초안의 배정·배치 개념과 같은 것으로 단정하지 않는다.\"]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f9: [사실] → [추정]으로 강등한다. 'BPMN 2.0.2 명세는 사람 수행자(HumanPerformer)와 그 특수화인 잠재 담당자(PotentialOwner), 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다(발행 기관 원문 미열람, 구현 문서 요약 기준)' 수준으로 쓴다. 'Performer를 활동을 수행하거나 책임지는 자원으로 정의' 문구는 넣지 않는다. 이유: 정의 문구를 OMG 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다.\",\"f3·f16·f17: '선행 의존 필드가 확인되지 않았다'는 서술을 '서로 다른 작업(작업 요청) 사이'로 한정해 쓴다. 이유: 검증 열람에서 Open-RMF task_state.json의 작업 내부 사건 사이에는 의존(deps) 배열이 있음을 확인했다. 이 사실은 검증 노트에만 두고 새 [사실] 문장으로 추가하지 않는다.\",\"f16: 대응 서술과 표에서 BPMN을 '분해·순서 구조'로만 분류하지 않는다. f9의 수행자·자원 배정 식을 '배정 대상 지정' 칸에 [추정]으로 함께 적는다. 이유: 이 위키의 대응(추론)이 f9와 어긋난다.\",\"f2 용어: Open-RMF dispatch는 '디스패치 상태(dispatch)'로 원어를 병기한다. 업무 분해·배정 설계 초안의 '배치(Dispatch)'나 '배정(Assignment)' 개념과 같은 것으로 쓰지 않는다.\",\"f15: [의견] 문장에 'Filippone 외(2026-03, 프리프린트)의 평가'임을 문장 안에 밝힌다.\",\"f14: 날짜는 'arXiv 2019-11 공개, AAAI 2020 발표'로 적는다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 원문 미열람 검색 요약 기준임을 병기한다.\",\"원문 미열람 표시: ref-114, ref-116, ref-253, ref-951, ref-952의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, 신규 출처(ref-951·ref-952)의 reference_updates에 source_unopened: true를 넣는다. ref-031·ref-111·ref-130·ref-230·ref-948·ref-949·ref-950은 원문 열람 출처이므로 표시하지 않는다.\",\"온톨로지 변경 '진행 상태 (Progress)' 수정을 승인한다. 속성 '상태 값'에 외부 표현 원천 후보(Open-RMF 작업 상태 status 값, Open-RMF 디스패치 상태 값, ISA-95 작업 응답 JobState·실제 시작·종료 시각)를 근거 f2·f7 각주와 함께 적는다. 행 상태는 초안 → 확정으로 바꾼다. 초안의 네 값(접수·실행·완료·취소)과의 대응 규칙은 6절 미해결 모델링 질문에 새 항목으로 둔다.\",\"온톨로지 변경 '배정 (Assignment)' 수정(메모)을 승인하되 표현을 고친다. 'Open-RMF 작업 상태는 assigned_to(그룹·이름)로 배정 대상만 기록하고 배정 근거·산출 방식·확인 여부 필드는 확인되지 않았다 [추정]; VDA 5050 3.0.0은 주문의 로봇 배정을 관제의 기능으로 둘 뿐 배정 근거를 담는 메시지를 두지 않는다 [사실][^ref-031]'로 쓴다. '로봇 토픽으로 배정 대상을 표현' 문구는 f4에 없으므로 쓰지 않는다. 행 상태는 확정을 유지한다.\",\"초안 버전: 승인한 변경이 있으므로 ontology_version을 '0.4' → '0.5'로 올린다. H1 '(v0.5)', page-status 표기, 프런트매터, pages.json track_updates.ontology_draft_version 네 곳을 같은 값으로 맞추고, 1절 버전 설명에 v0.5를 더한다.\",\"단계 2 페이지: 2절 q2-02 상태는 '답함'(답한 실행 2026-09-25-43, 답 위치 #q2-02)으로 바꾼다. 3절에 '### q2-02 … {#q2-02}' 소제목을 둔다. 6절 두 완료 조건은 모두 '미충족', 검증 판정 칸은 '미충족 · 미승인'으로 둔다. 아래 줄은 '다음 단계로 전환: 아니오(열린 질문 q2-03·q2-04·q2-05·q2-06, 작업 요구의 적재물 속성·업무 완료 조건 미확정)'로 쓴다. 상태 줄의 열린 질문·답한 질문 수를 2절 표와 맞춘다.\",\"새 질문 두 건은 단계 3 태그로 backlog_updates에 등록한다(origin f16, f17). 'Open-RMF 복합 작업·waitForTrigger' 질문 문장에는 열린 질문 oq-049와 관련됨을 병기한다. 'BPMN·Serverless Workflow·HDDL 채택 대 자체 스키마' 질문 옆에는 q2-04와의 관계를 단계 페이지 5절에 한 줄로 적는다.\",\"세부영역 반영 제안(13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링)은 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals로만 낸다. 13. 작업 배정 — MRTA 제안에서 VDA 5050 배정 기능 서술은 기존 7절·9절 문장과 각주 ref-031을 재사용하고 새로 반복하지 않는다. f9는 강등된 태그([추정])로 제안한다.\",\"아이디어 2 페이지 4절: '작업·배정 결과를 표현하는 표준·형식' 소절의 비교표는 이 위키가 구성한 것임을 밝히고 [추정] 태그와 근거 각주를 붙인다. 원 명세의 표를 복제하지 않는다. q2-03(평가 데이터)은 미조사임을 명시한다.\",\"용어집: 신규 용어 '계층적 작업 네트워크(Hierarchical Task Network, HTN)'와 '계층 도메인 정의 언어(Hierarchical Domain Definition Language, HDDL)'를 근거 f14로 등록한다. HDDL 정의에서는 기존 용어 '계획 도메인 정의 언어(PDDL)' 페이지에 연결한다. BPMN은 기존 용어 '비즈니스 프로세스 모델 및 표기법' 페이지에 연결하고 새로 등록하지 않는다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 6건(ref-948, ref-111, ref-230, ref-949, ref-950, ref-130)은 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 확인했다. 확인 17건, 미확인 1건(f9), 교차 확인 0건. 강등: f9 사실 → 추정(BPMN 수행자 정의 문구를 발행 기관 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다). 원문 미열람 출처: ref-114, ref-116, ref-253, ref-951, ref-952. 주의: 표준·형식의 필드는 각 공식 파일 하나에 기댄 관찰이고, '초안 대비 빠진 항목(배정 근거·지시 원문·상황 값 출처·확인 여부)'은 이 위키의 대응 추론이다(부재의 확인이 아님). 검증 열람에서 Open-RMF 작업 상태 스키마에 작업 내부 사건 사이 의존(event_state.deps)이 있음을 확인했으므로, 선행 의존 부재 서술은 서로 다른 작업 사이로 한정한다. 브리프 기록 오류도 있다. ref-031은 fetched_via가 github_raw로 적혀 있으나 실제로는 입력 원문 텍스트(inbox)로 확인했다. ref-253은 fetched: false인데 fetch_url이 적혀 있다. f16은 원문 미열람 출처를 포함하는데 source_unopened가 false로 적혀 있다. 검증 검색 4회(리서치 7회 포함 11/40). 정정 요청 없음. 열린 질문 해결 인정 없음(oq-049·oq-052·oq-014·oq-020은 관련만 표시). 온톨로지 변경 승인: 진행 상태 (Progress) 수정 — 상태 값의 외부 표현 원천 후보(f2·f7), 초안 → 확정 / 배정 (Assignment) 수정 — 외부 표현이 배정 대상만 담는다는 메모(f2·f4, [추정] f3·f18), VDA 5050 '로봇 토픽' 표현은 제외, 확정 유지. 이에 따라 v0.4 → v0.5. 거부: 없음. 새 질문 2건(단계 3, f16·f17) 등록, 중복 없음. 단계 완료 조건: 미충족(부족: 평가 데이터 q2-03 미조사, 작업 모델 정보 항목 가운데 작업 요구의 적재물 속성과 업무 완료 조건 미확정). 단계 전환: 미승인(막힌 질문 q2-03·q2-04·q2-05·q2-06).\",\"retry_reason\":null,\"track_checks\":{\"standard_sources_ok\":false,\"vendor_claims_tagged\":true,\"ontology_changes_grounded\":true,\"backlog_duplicates\":[],\"stage_tag_issues\":[],\"completeness_wording_ok\":true,\"stage_complete\":false,\"stage_transition_approved\":false}}",
+  "structured_output": {
+    "run_id": "2026-09-25-43",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-948 원본을 github_raw로 다시 열었다. 필수 필드는 phases(최소 1개)뿐이고, phase는 activity 필수·on_cancel 선택이며 'use a Sequence activity' 문구가 있다. 발행일은 미확인, 확인일 2026-09-25 기준."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-111 원본을 다시 열었다. 필수는 booking뿐이다. assigned_to는 group·name 필수이고, dispatch status 값은 queued/selected/dispatched/failed_to_assign/canceled_in_flight 5종이다. status는 uninitialized, blocked, error, failed, queued, standby, underway, delayed, skipped, canceled, killed, completed의 12종이다. 브리프가 '등'으로 줄인 것은 원문과 맞다. 추가로 event_state에 같은 phase 안 사건 사이 의존(deps) 배열이 있다(f3·f16·f17 관련)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 배정 근거·확인 여부 필드가 없다는 점은 원본으로 확인했다. 다만 task_state.json에는 작업 내부 사건 사이 의존(event_state.deps)이 있으므로, '선행 의존 필드 없음'은 서로 다른 작업 사이에 한정해 써야 한다(수정 지시)."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트 data/source_texts/ref-031.txt(VDA 5050 3.0.0)에서 5.3 'Assignment of orders to the mobile robots'와 6.1.1 'An order message does not necessarily describe the full transport order'를 확인했다. 브리프 sources의 ref-031은 fetched_via가 github_raw인데 fetch_url은 null이고 발췌에는 inbox로 적혀 있다. 실제 경로는 inbox다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 표 4에서 확인했다. waitForTrigger의 triggerType에 FLEET_CONTROL·LOCAL이 있고, 'Fleet control is responsible for handling the timeout and shall cancel the order if necessary'라는 문구와 trigger 순간 동작의 제3 시스템 문구가 있다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-230 JSON 원본을 다시 열었다. oneOf로 identityReport·statusReport 두 유형만 있고, 작업을 보내는 메시지는 없다. operationalState 9종, destinations 'Target destination(s) of AGV'를 확인했다. README(ref-253)는 원문 미열람이며 같은 발행 주체라 교차 확인이 아니다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: NodeSet2.xml 원본을 다시 열었다. JobResponseID, JobOrderID, 실제 StartTime·EndTime, JobState, Equipment·Personnel·PhysicalAsset·Material Actuals가 있다. 설비 ID는 'EquipmentClass or Equipment'이고, 모델 발행일은 2024-01-31이다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 검증 열람에서도 ISA95JobOrderDataType에 작업 지시 사이 의존·선행 필드가 없었다. 부재 관찰이며, B2MML 세그먼트 의존은 oq-013과 연결된다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. 원문 미열람. 검증 검색에서 HumanPerformer의 특수화 PotentialOwner와 ResourceAssignmentExpression, 명세 10.3.2절·표 10.17·10.18 참조는 확인했다. 그러나 근거가 주로 구현 문서(Flowable 등) 요약이고, 'Performer를 활동을 수행하거나 책임지는 자원으로 정의'라는 정의 문구는 발행 기관(OMG) 원문으로 확인하지 못했다. 표준 주장이 발행 기관 자료로 확인되지 않았으므로 재확인을 요청한다. BPMN 2.0.2 발행 2014-01은 맞다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람): 검증 검색에서 저자 5명, Robotics and Autonomous Systems 160권 104322(2023), BPMN 기반 다중 로봇 임무 모델링·설정·실행 틀과 툴체인을 확인했다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: dsl.md 원본을 다시 열었다. 예시 표기 DSL 1.0.3, 작업 유형 Call·Do·Emit·For·Fork·Listen·Raise·Run·Set·Switch·Try·Wait, 시간 초과와 every·cron·after 일정을 확인했다. 브리프 목록에서 For가 빠졌지만 '같은'으로 예시한 것이라 허용한다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 검증 열람에서도 수행자 배정·우선순위·기한 개념은 확인되지 않았다(시간 초과만 있음). 부재 관찰이다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: README 원본에서 XML 기반 DSL의 실행 시 적재, 정적 링크·플러그인 노드, 비동기 Action을 first-class로 두는 점을 확인했다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람): 검증 검색에서 arXiv 1911.05499(2019-11-13), PDDL2.1 STRIPS 부분의 확장, 기본 HTN 계획 한정, AAAI 2020 발표를 확인했다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 리서치 검색 요약에만 있다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(원문 미열람): 검증 검색에서 저자 Filippone·Pettinari·Pelliccione(GSSI), arXiv 2603.15427, 'no standard or widely accepted formalism' 문구, BT·상태 기계·HTN·BPMN 비교를 확인했다. [의견]이므로 누구의 평가인지 밝혀 쓴다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지(이 위키의 대응). 다만 BPMN을 '분해·순서 구조'로만 분류하면 f9의 수행자 지정(자원 배정 식)을 빠뜨린다. 또 Open-RMF 작업 상태의 작업 내부 사건 의존(deps)을 고려해 표현을 고쳐야 한다(수정 지시). 브리프는 source_unopened를 false로 적었지만, 근거에 원문 미열람 출처 ref-951·ref-952가 섞여 있다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. waitForTrigger–trigger 동작은 원문으로 확인했다. 이를 플릿 사이 선후 집행에 쓴 사례는 확인되지 않았다. oq-049는 해결로 바꾸지 않는다. '작업 사이'라는 한정을 유지한다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. assigned_to(f2)와 EquipmentActuals(f7)는 원문으로 확인했다. 배정 근거 기록을 권고한 출처는 없으며 oq-052와 연결된다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f4는 13. 작업 배정 — MRTA 7절·9절의 기존 서술('VDA 5050은 주문 배정을 관제의 기능으로 둔다', ref-031)과 같은 주장이다. 기존 각주 ref-031을 재사용하고 반영 제안에서 새 문장으로 반복하지 않는다.",
+        "f17과 새 질문 'Open-RMF 복합 작업 + waitForTrigger로 플릿 사이 선후 집행'은 열린 질문 oq-049(플릿 사이 작업 선후 표현·집행)와 겹친다. 중복 등록은 아니지만 oq-049로 연결한다.",
+        "f7·f16은 oq-020(ISA-95 작업 지시·응답 ↔ VDA 5050·Open-RMF 매핑), f9·f10은 oq-014(BPMN 단계 상태 ↔ 로봇 작업 상태 동기화), f8은 oq-013(B2MML 의존 유형)과 관련된다. 어느 것도 해결로 판정하지 않는다.",
+        "새 질문 'BPMN·Serverless Workflow·HDDL을 표준 표현으로 채택할지 자체 스키마를 두고 변환할지'는 백로그 q2-04(중간 표현을 작업 모델·관제 인터페이스로 옮길 때 무엇이 빠지는가)와 관련되지만, 단계 3의 설계 결정 질문이라 중복으로 보지 않는다.",
+        "f18은 oq-052(최근접 대 전역 최적 배정 실측 비교)와 관련된다."
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "f2가 Open-RMF의 dispatch를 '배정 과정'으로 번역했는데, 업무 분해·배정 설계 초안에서 '배치(Dispatch)'는 배정된 로봇에게 작업을 내보내는 실행 지시이고 '배정(Assignment)'은 별개 개념이다. 페이지에서는 'Open-RMF 디스패치 상태(dispatch status: queued·selected·dispatched·failed_to_assign·canceled_in_flight)'로 원어를 병기한다. 초안의 배정·배치 개념과 같은 것으로 단정하지 않는다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f9: [사실] → [추정]으로 강등한다. 'BPMN 2.0.2 명세는 사람 수행자(HumanPerformer)와 그 특수화인 잠재 담당자(PotentialOwner), 자원 배정 식(resourceAssignmentExpression)으로 활동을 맡을 자원을 지정하게 한다(발행 기관 원문 미열람, 구현 문서 요약 기준)' 수준으로 쓴다. 'Performer를 활동을 수행하거나 책임지는 자원으로 정의' 문구는 넣지 않는다. 이유: 정의 문구를 OMG 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다.",
+      "f3·f16·f17: '선행 의존 필드가 확인되지 않았다'는 서술을 '서로 다른 작업(작업 요청) 사이'로 한정해 쓴다. 이유: 검증 열람에서 Open-RMF task_state.json의 작업 내부 사건 사이에는 의존(deps) 배열이 있음을 확인했다. 이 사실은 검증 노트에만 두고 새 [사실] 문장으로 추가하지 않는다.",
+      "f16: 대응 서술과 표에서 BPMN을 '분해·순서 구조'로만 분류하지 않는다. f9의 수행자·자원 배정 식을 '배정 대상 지정' 칸에 [추정]으로 함께 적는다. 이유: 이 위키의 대응(추론)이 f9와 어긋난다.",
+      "f2 용어: Open-RMF dispatch는 '디스패치 상태(dispatch)'로 원어를 병기한다. 업무 분해·배정 설계 초안의 '배치(Dispatch)'나 '배정(Assignment)' 개념과 같은 것으로 쓰지 않는다.",
+      "f15: [의견] 문장에 'Filippone 외(2026-03, 프리프린트)의 평가'임을 문장 안에 밝힌다.",
+      "f14: 날짜는 'arXiv 2019-11 공개, AAAI 2020 발표'로 적는다. 'IPC 2020 계층 계획 부문 공통 언어' 부분은 원문 미열람 검색 요약 기준임을 병기한다.",
+      "원문 미열람 표시: ref-114, ref-116, ref-253, ref-951, ref-952의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고, 신규 출처(ref-951·ref-952)의 reference_updates에 source_unopened: true를 넣는다. ref-031·ref-111·ref-130·ref-230·ref-948·ref-949·ref-950은 원문 열람 출처이므로 표시하지 않는다.",
+      "온톨로지 변경 '진행 상태 (Progress)' 수정을 승인한다. 속성 '상태 값'에 외부 표현 원천 후보(Open-RMF 작업 상태 status 값, Open-RMF 디스패치 상태 값, ISA-95 작업 응답 JobState·실제 시작·종료 시각)를 근거 f2·f7 각주와 함께 적는다. 행 상태는 초안 → 확정으로 바꾼다. 초안의 네 값(접수·실행·완료·취소)과의 대응 규칙은 6절 미해결 모델링 질문에 새 항목으로 둔다.",
+      "온톨로지 변경 '배정 (Assignment)' 수정(메모)을 승인하되 표현을 고친다. 'Open-RMF 작업 상태는 assigned_to(그룹·이름)로 배정 대상만 기록하고 배정 근거·산출 방식·확인 여부 필드는 확인되지 않았다 [추정]; VDA 5050 3.0.0은 주문의 로봇 배정을 관제의 기능으로 둘 뿐 배정 근거를 담는 메시지를 두지 않는다 [사실][^ref-031]'로 쓴다. '로봇 토픽으로 배정 대상을 표현' 문구는 f4에 없으므로 쓰지 않는다. 행 상태는 확정을 유지한다.",
+      "초안 버전: 승인한 변경이 있으므로 ontology_version을 '0.4' → '0.5'로 올린다. H1 '(v0.5)', page-status 표기, 프런트매터, pages.json track_updates.ontology_draft_version 네 곳을 같은 값으로 맞추고, 1절 버전 설명에 v0.5를 더한다.",
+      "단계 2 페이지: 2절 q2-02 상태는 '답함'(답한 실행 2026-09-25-43, 답 위치 #q2-02)으로 바꾼다. 3절에 '### q2-02 … {#q2-02}' 소제목을 둔다. 6절 두 완료 조건은 모두 '미충족', 검증 판정 칸은 '미충족 · 미승인'으로 둔다. 아래 줄은 '다음 단계로 전환: 아니오(열린 질문 q2-03·q2-04·q2-05·q2-06, 작업 요구의 적재물 속성·업무 완료 조건 미확정)'로 쓴다. 상태 줄의 열린 질문·답한 질문 수를 2절 표와 맞춘다.",
+      "새 질문 두 건은 단계 3 태그로 backlog_updates에 등록한다(origin f16, f17). 'Open-RMF 복합 작업·waitForTrigger' 질문 문장에는 열린 질문 oq-049와 관련됨을 병기한다. 'BPMN·Serverless Workflow·HDDL 채택 대 자체 스키마' 질문 옆에는 q2-04와의 관계를 단계 페이지 5절에 한 줄로 적는다.",
+      "세부영역 반영 제안(13. 작업 배정 — MRTA, 2. 공정·워크플로 모델링, 14. 작업 순서·스케줄링)은 세부영역 페이지를 직접 고치지 않고 area_reflection_proposals로만 낸다. 13. 작업 배정 — MRTA 제안에서 VDA 5050 배정 기능 서술은 기존 7절·9절 문장과 각주 ref-031을 재사용하고 새로 반복하지 않는다. f9는 강등된 태그([추정])로 제안한다.",
+      "아이디어 2 페이지 4절: '작업·배정 결과를 표현하는 표준·형식' 소절의 비교표는 이 위키가 구성한 것임을 밝히고 [추정] 태그와 근거 각주를 붙인다. 원 명세의 표를 복제하지 않는다. q2-03(평가 데이터)은 미조사임을 명시한다.",
+      "용어집: 신규 용어 '계층적 작업 네트워크(Hierarchical Task Network, HTN)'와 '계층 도메인 정의 언어(Hierarchical Domain Definition Language, HDDL)'를 근거 f14로 등록한다. HDDL 정의에서는 기존 용어 '계획 도메인 정의 언어(PDDL)' 페이지에 연결한다. BPMN은 기존 용어 '비즈니스 프로세스 모델 및 표기법' 페이지에 연결하고 새로 등록하지 않는다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(fetch_mode mirror_only)에서 검증됐다. GitHub 공식 저장소 원문 6건(ref-948, ref-111, ref-230, ref-949, ref-950, ref-130)은 다시 열어 확인했고, ref-031은 입력 원문 텍스트로 확인했다. 확인 17건, 미확인 1건(f9), 교차 확인 0건. 강등: f9 사실 → 추정(BPMN 수행자 정의 문구를 발행 기관 원문으로 확인하지 못했고, 근거가 구현 문서 요약이다). 원문 미열람 출처: ref-114, ref-116, ref-253, ref-951, ref-952. 주의: 표준·형식의 필드는 각 공식 파일 하나에 기댄 관찰이고, '초안 대비 빠진 항목(배정 근거·지시 원문·상황 값 출처·확인 여부)'은 이 위키의 대응 추론이다(부재의 확인이 아님). 검증 열람에서 Open-RMF 작업 상태 스키마에 작업 내부 사건 사이 의존(event_state.deps)이 있음을 확인했으므로, 선행 의존 부재 서술은 서로 다른 작업 사이로 한정한다. 브리프 기록 오류도 있다. ref-031은 fetched_via가 github_raw로 적혀 있으나 실제로는 입력 원문 텍스트(inbox)로 확인했다. ref-253은 fetched: false인데 fetch_url이 적혀 있다. f16은 원문 미열람 출처를 포함하는데 source_unopened가 false로 적혀 있다. 검증 검색 4회(리서치 7회 포함 11/40). 정정 요청 없음. 열린 질문 해결 인정 없음(oq-049·oq-052·oq-014·oq-020은 관련만 표시). 온톨로지 변경 승인: 진행 상태 (Progress) 수정 — 상태 값의 외부 표현 원천 후보(f2·f7), 초안 → 확정 / 배정 (Assignment) 수정 — 외부 표현이 배정 대상만 담는다는 메모(f2·f4, [추정] f3·f18), VDA 5050 '로봇 토픽' 표현은 제외, 확정 유지. 이에 따라 v0.4 → v0.5. 거부: 없음. 새 질문 2건(단계 3, f16·f17) 등록, 중복 없음. 단계 완료 조건: 미충족(부족: 평가 데이터 q2-03 미조사, 작업 모델 정보 항목 가운데 작업 요구의 적재물 속성과 업무 완료 조건 미확정). 단계 전환: 미승인(막힌 질문 q2-03·q2-04·q2-05·q2-06).",
+    "retry_reason": null,
+    "track_checks": {
+      "standard_sources_ok": false,
+      "vendor_claims_tagged": true,
+      "ontology_changes_grounded": true,
+      "backlog_duplicates": [],
+      "stage_tag_issues": [],
+      "completeness_wording_ok": true,
+      "stage_complete": false,
+      "stage_transition_approved": false
+    }
+  },
+  "ttft_ms": 18240,
+  "type": "result",
+  "duration_ms": 161202,
+  "uuid": "086b6f50-21b9-4b70-be80-c956d4ea26e0",
+  "ttft_stream_ms": 5363,
+  "time_to_request_ms": 194,
+  "first_content_frame_ms": 5363,
+  "time_to_request_from_spawn_ms": 13661201,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790309514279.8535,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 163.2
+}
