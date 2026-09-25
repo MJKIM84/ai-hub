@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # ROP 연구 위키 — 사이트 빌드와 원격 배포(GitHub Pages, gh-deploy 방식).
 #
+# 공개 배포(https://mjkim84.github.io/ai-hub/)는 .github/workflows/rop-wiki-pages.yml(GitHub Actions)이 담당한다.
+# 이 스크립트는 그 대체 수단(gh-deploy 방식)의 수동 배포 명령이며, config/ops.yaml 의 deploy.method 가
+# actions 인 동안은 --yes 를 줘도 아무것도 하지 않는다(10행). 두 방식을 동시에 켜지 않도록 deploy.method 값 하나로 고른다.
+#
 # 사용: bash pipeline/deploy_site.sh [--yes] [--no-build]
 #   (옵션 없음)  로컬 빌드(settings.site_build_cmd, 기본 mkdocs build --strict)만 하고, 원격 배포는 무엇을 할지 출력만 한다(exit 0)
 #   --yes        config/ops.yaml 의 deploy.enabled 가 true 이고 deploy.method 가 gh-deploy 일 때만 실제로 배포한다:
