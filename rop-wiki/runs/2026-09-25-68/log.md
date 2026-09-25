@@ -59,3 +59,5 @@
 - 2026-09-25 16:21:38 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area27-s10.md: 깨진 링크 28-standards-interoperability-and-multi-vendor-governance.md
 - 2026-09-25 16:21:38 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-25-68/format_check.md)
 - 2026-09-25 16:21:45 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-68/prompts/storyteller-formatfix1.md (266,327자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 16:26:34 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 4분 49초 · 비용 $2.1768 · subtype success
+- 2026-09-25 16:26:34 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-68/pages.json

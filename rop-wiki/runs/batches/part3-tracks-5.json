@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-5",
   "date": "2026-09-25",
-  "updated": "2026-09-25 07:00:10",
+  "updated": "2026-09-25 07:29:29",
   "concurrency": 3,
   "items": [
     {
@@ -164,14 +164,19 @@
         "group": "t3",
         "label": "트랙3 도면 인식 #10 q3-03"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-65",
           "started": "2026-09-25 06:56:02",
-          "agents_exit": null,
-          "publish_exit": null,
-          "continued": false
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "continued": false,
+          "agents_done": "2026-09-25 07:22:35",
+          "published_at": "2026-09-25 07:29:29",
+          "cost_usd": 17.8322,
+          "duration_sec": 1708.5,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-65"
