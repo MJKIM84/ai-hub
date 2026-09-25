@@ -743,28 +743,82 @@ def _category_link_inputs(target_json: dict) -> list[tuple[str, str]]:
     return out
 
 
+def _run_digest(d: Path) -> str:
+    """주간 정리 입력용 실행 요약(실행마다 몇 줄). 브리프·원고 전문 대신 준다."""
+    t = runs.read_json(d / "target.json", {}) or {}
+    s = runs.read_summary(d)
+    tg = t.get("target") or {}
+    tr = t.get("track") or {}
+    who = (f"트랙 {tr.get('slug')} 단계 {tr.get('stage')} 질문 {', '.join(tr.get('question_ids') or [])}" if tr
+           else (tg.get("area_name") or tg.get("category") or "전체"))
+    pj = runs.read_json(d / "pages.json", {}) or {}
+    pages = [f"{pg.get('action')} {pg.get('path')}" for pg in pj.get("pages", [])]
+    v2 = runs.read_json(d / "verification2.json", {}) or runs.read_json(d / "verification.json", {}) or {}
+    note = str(v2.get("verification_note") or "")[:400]
+    oq = [q.get("question", "")[:120] for q in (pj.get("open_question_updates") or []) if isinstance(q, dict)][:5]
+    lines = [f"### 실행 {d.name} — {t.get('run_type')} · {who}",
+             f"- 종료 상태: {s.get('end_state')} · 1차 {s.get('verdict_first')} / 2차 {s.get('verdict_second')} · 신뢰도 {s.get('confidence')}",
+             f"- 페이지: {'; '.join(pages) or '없음'}"]
+    if note:
+        lines.append(f"- 검증 노트(앞부분): {note}")
+    if oq:
+        lines.append(f"- 열린 질문 갱신: {' / '.join(oq)}")
+    return "\n".join(lines)
+
+
 def _weekly_inputs(run_id: str, day: str, settings: dict) -> list[tuple[str, str]]:
+    """주간 정리 입력. 이번 주 실행은 실행 요약(_run_digest)으로, 링크·URL 점검 결과는 요약·실패 항목으로 준다.
+    처음 설계는 하루 한 번 실행(주 7회)을 전제로 실행마다 브리프·원고 전문과 변경 이력 전체를 넣었는데, 배치로 한 주에 90회 가까이
+    돌자 프롬프트가 790만 자가 되어 모델 입력 한도를 넘었다(3부, D-047)."""
     out: list[tuple[str, str]] = []
     week = runs.iso_week(day)
+    digests = []
     for rid in runs.list_run_ids(settings):
         if rid == run_id or runs.iso_week(rid[:10]) != week:
             continue
         d = runs.find_run_dir(rid, settings)
-        if not d:
-            continue
-        for fn in ("research.md", "verification.md", "verification2.md", "pages.json", "log.md"):
-            p = d / fn
-            if p.is_file():
-                rel = p.relative_to(ROOT).as_posix()
-                out.append((rel, p.read_text(encoding="utf-8")))
-    _add(out, "data/changelog.json")
-    # 7.1 "링크·출처 유효성 점검": run_daily.sh 가 이번 실행 폴더에 남긴 스크립트 점검 결과(에이전트는 이를 근거로 정리한다)
+        if d:
+            digests.append(_run_digest(d))
+    out.append((f"이번 주({week}) 실행 {len(digests)}회 요약 (runs/<id>/ 의 target·summary·pages·verification 에서 만들었다)",
+                "\n\n".join(digests) or "없음"))
     rd = runs.find_run_dir(run_id, settings)
     if rd:
-        for fn, label in WEEKLY_CHECK_FILES:
-            p = rd / fn
-            if p.is_file():
-                out.append((f"{rd.relative_to(ROOT).as_posix()}/{fn} ({label})", p.read_text(encoding="utf-8")))
+        uc = runs.read_json(rd / "url_check.json", None)
+        if uc is not None:
+            items = uc.get("items") or {}
+            bad = [f"- {k}: {v.get('status')} · {v.get('url')} · 미러 {v.get('mirror_status') or '없음'}" for k, v in sorted(items.items())
+                   if v.get("status") not in ("열림", "정책 차단") or (v.get("status") == "정책 차단" and v.get("mirror") and v.get("mirror_status") not in ("열림", None))]
+            out.append((f"{rd.relative_to(ROOT).as_posix()}/url_check.json (요약: 건수 {uc.get('counts')}. 정책 차단은 이 환경의 네트워크 정책이며 "
+                         "링크 오류가 아니다. 아래는 오류·없음·미러 실패 항목만)", "\n".join(bad) or "없음"))
+        p = rd / "link_check.txt"
+        if p.is_file():
+            out.append((f"{rd.relative_to(ROOT).as_posix()}/link_check.txt (내부 링크·각주 검사 결과)", p.read_text(encoding="utf-8")[:20000]))
+    return out
+
+
+def _full_compact_indexes() -> list[tuple[str, str]]:
+    """주간 정리·월간 재검증용 전체 목록(요약형): 참고문헌 한 줄씩(id·기관·제목·발행일·URL·원문 열람), 용어집 한 줄씩, 열린 질문 페이지."""
+    rows = ["| id | 기관 | 제목 | 발행일 | URL | 원문 열람 |", "|---|---|---|---|---|---|"]
+    refs = sorted((paths.DOCS / "references").glob("ref-*.md"), key=lambda p: int(p.stem.split("-")[1]))
+    for f in refs:
+        try:
+            m, _ = fm.read(f)
+        except Exception:  # noqa: BLE001
+            continue
+        rows.append(f"| {f.stem} | {m.get('org', '')} | {m.get('ref_title') or m.get('title', '')} | {m.get('published') or '미확인'} | "
+                    f"{m.get('url', '')} | {'예' if m.get('fetched') else '아니오'} |")
+    gl = []
+    for f in sorted((paths.DOCS / "glossary").glob("*.md")):
+        if f.name == "index.md":
+            continue
+        try:
+            m, _ = fm.read(f)
+        except Exception:  # noqa: BLE001
+            continue
+        gl.append(f"- {f.stem}: {m.get('term_ko', '')} ({m.get('term_en', '')}) · {m.get('status')}")
+    out = [(f"docs/references/index.md (요약형 전체 {len(rows) - 2}건)", "\n".join(rows)),
+           (f"docs/glossary/index.md (요약형 전체 {len(gl)}개: slug: 한국어 (영어) · 상태)", "\n".join(gl))]
+    _add(out, "docs/open-questions.md")
     return out
 
 
@@ -776,10 +830,7 @@ def _index_inputs(target_json: dict, track_cfg: dict | None) -> list[tuple[str, 
     - 열린 질문: 대상 영역(트랙이면 중심·관련 영역)에 걸린 것만"""
     rt = target_json.get("run_type")
     if rt in ("weekly_review", "monthly_recheck"):
-        out: list[tuple[str, str]] = []
-        for rel in ("docs/glossary/index.md", "docs/references/index.md", "docs/open-questions.md"):
-            _add(out, rel)
-        return out
+        return _full_compact_indexes()
     t = target_json.get("target") or {}
     tr = target_json.get("track") or {}
     pages: list[Path] = []
@@ -856,9 +907,8 @@ def _standards_summary() -> tuple[str, str]:
 
 
 def _monthly_inputs() -> list[tuple[str, str]]:
-    out: list[tuple[str, str]] = []
-    for rel in ("docs/references/index.md", "docs/standards/index.md", "docs/glossary/index.md"):
-        _add(out, rel)
+    out: list[tuple[str, str]] = list(_full_compact_indexes()[:2])
+    out.append(_standards_summary())
     # 마지막 갱신이 오래된 게시 페이지(세부영역·주제) 상위 5개 [가정]
     cands = []
     for p in paths.DOCS.rglob("*.md"):
@@ -1095,10 +1145,7 @@ def build_inputs(role: str, run_id: str, target_json: dict, settings: dict, stag
             if letter:
                 _add(inputs, paths.category_repo_path(letter))
         inputs.extend(_index_inputs(target_json, track_cfg))
-        if rt in ("weekly_review", "monthly_recheck"):
-            _add(inputs, "docs/standards/index.md")
-        else:
-            inputs.append(_standards_summary())
+        inputs.append(_standards_summary())
         _add(inputs, f"{rel_run}/docs_tree.txt")
         _add(inputs, "inbox/corrections.md")
         if rt == "weekly_review":
