@@ -9,7 +9,7 @@ created: 2026-09-25
 updated: 2026-09-25
 version: 2
 confidence: medium
-sources: [ref-031, ref-107, ref-108, ref-110, ref-111, ref-114, ref-116]
+sources: [ref-031, ref-136, ref-137, ref-139, ref-140, ref-143, ref-144]
 last_run: 2026-09-25
 ---
 
@@ -69,9 +69,9 @@ last_run: 2026-09-25
 기존 능력 표현 모델과 표준의 조사 결과는 [단계 1. 기존 능력 표현 모델과 표준 조사](../tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md)와 [모델·표준 비교표](../tracks/manual-capability-ontology/model-standard-comparison.md)에 쌓이고 있다. 아래는 [매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/index.md) 트랙 실행 2026-09-25-06에서 확인된 것 가운데 이 아이디어와 직접 닿는 것만 옮긴 요약이다.
 
 - VDA 5050 3.0.0은 모든 이동로봇이 따르는 사전 정의 동작(pick, drop, startCharging 등)을 의미·파라미터·상태 전이와 함께 정하고, 이것으로 옮길 수 없는 동작만 제조사가 추가로 정의해 팩트시트의 지원 동작 목록에 같은 형식으로 선언하게 한다(공식 저장소 main 기준, 기준일 2026-09-25). [사실][^ref-031]
-- IDTA 02020 능력 기술 서브모델 1.0은 능력을 구현과 무관한 기능 명세로 정의하고, 속성·제약과 능력을 구현하는 스킬로 기술한다. [사실][^ref-108]
-- 오픈소스 온톨로지 CaSkMan은 제조 설비의 능력과 스킬, 스킬 인터페이스(REST·OPC UA)를 잇고, 능력을 표준 분류(VDI 2860·DIN 8580)에서 파생한 하위 클래스로 기술하도록 권한다. [사실][^ref-111]
-- Dussard 외(2023)는 로봇이 가진 구성요소와 하위 능력으로부터 능력을 추론하는 온톨로지 기반 기술 방법을 제안했다. [사실][^ref-114]
+- IDTA 02020 능력 기술 서브모델 1.0은 능력을 구현과 무관한 기능 명세로 정의하고, 속성·제약과 능력을 구현하는 스킬로 기술한다. [사실][^ref-137]
+- 오픈소스 온톨로지 CaSkMan은 제조 설비의 능력과 스킬, 스킬 인터페이스(REST·OPC UA)를 잇고, 능력을 표준 분류(VDI 2860·DIN 8580)에서 파생한 하위 클래스로 기술하도록 권한다. [사실][^ref-140]
+- Dussard 외(2023)는 로봇이 가진 구성요소와 하위 능력으로부터 능력을 추론하는 온톨로지 기반 기술 방법을 제안했다. [사실][^ref-143]
 
 제품 사례(제조사 관제·온보딩 도구)는 아직 조사되지 않았다.
 
@@ -79,11 +79,11 @@ last_run: 2026-09-25
 
 이 아이디어의 범위 능력 가운데 적재·충전과 로봇 식별 정보는 기존 규격에 담을 자리가 있다. 규격별 비교는 [모델·표준 비교표](../tracks/manual-capability-ontology/model-standard-comparison.md)에 있다.
 
-- 적재: VDA 5050 3.0.0 팩트시트의 적재 명세(loadSets)는 적재 유형·위치·치수·최대 중량, 적재 처리 높이·깊이·기울기의 최소·최대값, 적재 시 최대 속도·가감속, 픽·드롭 소요 시간을 기술하는 필드를 둔다(기준일 2026-09-25). [사실][^ref-107]
+- 적재: VDA 5050 3.0.0 팩트시트의 적재 명세(loadSets)는 적재 유형·위치·치수·최대 중량, 적재 처리 높이·깊이·기울기의 최소·최대값, 적재 시 최대 속도·가감속, 픽·드롭 소요 시간을 기술하는 필드를 둔다(기준일 2026-09-25). [사실][^ref-136]
 - 충전: VDA 5050 3.0.0 명세는 startCharging 동작을, 충전이 시작되어 powerSupply.charging 이 true 로 보고되면 완료(FINISHED)로 본다. [사실][^ref-031]
-- 로봇 식별·능력 요약: MassRobotics AMR 상호운용 표준 JSON 스키마는 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 최대 부피·최대 중량·제품 문서 링크 필드를 둔다(스키마 판 미확인). [사실][^ref-110]
-- 능력 모델: IDTA 02020은 능력의 속성(최대 속도·허용 오차·온도 범위 등)과 제약(전제조건·불변조건·사후조건, 순서 요구)을 기술한다. [사실][^ref-108]
-- 의미 참조: 자산관리셸(Asset Administration Shell, AAS) 메타모델(2024년판)은 요소의 의미를 의미 식별자(semanticId)로 ECLASS·IEC 공통 데이터 사전(Common Data Dictionary, CDD) 같은 외부 사전의 식별자에 연결한다. [사실][^ref-116]
+- 로봇 식별·능력 요약: MassRobotics AMR 상호운용 표준 JSON 스키마는 식별 보고에 최대 속도·예상 가동 시간·충전기 유형·화물 최대 부피·최대 중량·제품 문서 링크 필드를 둔다(스키마 판 미확인). [사실][^ref-139]
+- 능력 모델: IDTA 02020은 능력의 속성(최대 속도·허용 오차·온도 범위 등)과 제약(전제조건·불변조건·사후조건, 순서 요구)을 기술한다. [사실][^ref-137]
+- 의미 참조: 자산관리셸(Asset Administration Shell, AAS) 메타모델(2024년판)은 요소의 의미를 의미 식별자(semanticId)로 ECLASS·IEC 공통 데이터 사전(Common Data Dictionary, CDD) 같은 외부 사전의 식별자에 연결한다. [사실][^ref-144]
 
 이동·계단·도어 조작 능력을 담는 필드와, 매뉴얼·SDK 문서에서 이 값들을 얻는 방법은 아직 조사되지 않았다. 문서 유형과 정보 구조는 [단계 2. 로봇 문서 유형과 정보 구조 조사](../tracks/manual-capability-ontology/stage-2-document-types.md)와 [문서 유형 매트릭스](../tracks/manual-capability-ontology/document-type-matrix.md)에서 다룬다.
 
@@ -148,9 +148,9 @@ last_run: 2026-09-25
 <!-- auto:idea-backlog:end -->
 
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
-[^ref-107]: VDA / VDMA (VDA5050 GitHub), VDA5050/json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
-[^ref-108]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
-[^ref-110]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25
-[^ref-111]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25
-[^ref-114]: Dussard, B. 외, Ontological Component-based Description of Robot Capabilities, 2023-06, https://arxiv.org/abs/2306.07569, 접근일 2026-09-25 (원문 미열람)
-[^ref-116]: IDTA(Industrial Digital Twin Association), Specification of the Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1), 2024, https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-136]: VDA / VDMA (VDA5050 GitHub), VDA5050/json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
+[^ref-137]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
+[^ref-139]: MassRobotics, MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard.json, 미확인, https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json, 접근일 2026-09-25
+[^ref-140]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25
+[^ref-143]: Dussard, B. 외, Ontological Component-based Description of Robot Capabilities, 2023-06, https://arxiv.org/abs/2306.07569, 접근일 2026-09-25 (원문 미열람)
+[^ref-144]: IDTA(Industrial Digital Twin Association), Specification of the Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1), 2024, https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf, 접근일 2026-09-25 (원문 미열람)

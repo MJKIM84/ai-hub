@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
-sources: [ref-022, ref-028, ref-029, ref-031, ref-035, ref-036, ref-037, ref-041, ref-107, ref-051, ref-108, ref-109, ref-111, ref-112, ref-116, ref-117]
+sources: [ref-022, ref-028, ref-029, ref-031, ref-035, ref-036, ref-037, ref-041, ref-136, ref-051, ref-137, ref-138, ref-140, ref-141, ref-144, ref-145]
 last_run: 2026-09-25
 version: 3
 ---
@@ -48,7 +48,7 @@ v0.2는 [단계 1. 기존 능력 표현 모델과 표준 조사](stage-1-existin
 |---|---|---|---|---|
 | 로봇(Robot) | 제조사가 만든 특정 기종의 개체로, 기능을 가지고 장착 장비를 갖춘다. [분류원문] 기반 [가정] | 기종, 제조사, 식별자, 펌웨어 버전(단계 6에서 확정) | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 | 초안 |
 | 제조사(Manufacturer) | 로봇과 그 문서를 만들어 제공하는 주체. 정의의 "제조사별"이 뜻하듯 같은 이름의 기능이 제조사마다 다른 의미를 가질 수 있어 기능 해석의 기준점이 된다. [분류원문] 기반 [가정] | 이름, 제공 문서 목록 | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 | 초안 |
-| 기능(Capability) | 로봇이 수행할 수 있는 동작 또는 작업의 단위. 실행 조건을 요구하고 제약을 받으며, 작업 요구와 대응된다. [분류원문] 기반 [가정] | 이름, 제조사별 명칭, 의미 참조(외부 사전·표준 분류·표준 동작 이름의 식별자), 파라미터(단계 1·4에서 확정), 단위 크기(단계 4 질문), 능력 출처 구분(광고 능력 / 운용 능력) | 분류 원문 5. 로봇 능력·작업 온톨로지 정의. 속성 "능력 출처 구분"은 finding f8 (실행 2026-09-25-02)[^ref-041]. 매뉴얼 등 근거 문서에서 온 값은 제조사가 명시한 광고 능력에 해당한다는 해석은 [추정] (finding f27, 실행 2026-09-25-02)[^ref-041]. 속성 "의미 참조"는 finding f14·f23·f24 (실행 2026-09-25-06)[^ref-031][^ref-107][^ref-116][^ref-111] | 확정 |
+| 기능(Capability) | 로봇이 수행할 수 있는 동작 또는 작업의 단위. 실행 조건을 요구하고 제약을 받으며, 작업 요구와 대응된다. [분류원문] 기반 [가정] | 이름, 제조사별 명칭, 의미 참조(외부 사전·표준 분류·표준 동작 이름의 식별자), 파라미터(단계 1·4에서 확정), 단위 크기(단계 4 질문), 능력 출처 구분(광고 능력 / 운용 능력) | 분류 원문 5. 로봇 능력·작업 온톨로지 정의. 속성 "능력 출처 구분"은 finding f8 (실행 2026-09-25-02)[^ref-041]. 매뉴얼 등 근거 문서에서 온 값은 제조사가 명시한 광고 능력에 해당한다는 해석은 [추정] (finding f27, 실행 2026-09-25-02)[^ref-041]. 속성 "의미 참조"는 finding f14·f23·f24 (실행 2026-09-25-06)[^ref-031][^ref-136][^ref-144][^ref-140] | 확정 |
 | 제약(Constraint) | 기능의 수행 범위를 제한하는 조건. 분류 원문 11장이 드는 납기·공간·적재량·설비·권한 제약이 후보 종류다. [분류원문] 기반 [가정] | 종류, 값 또는 범위, 적용 대상 기능 | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 | 초안 |
 | 장착 장비(Mounted Equipment) | 로봇에 부착되어 기능을 가능하게 하거나 바꾸는 장비. 옵션 장비에 따라 같은 기종의 기능이 달라질 수 있다(단계 2 질문). [분류원문] 기반 [가정] | 이름, 장착 여부, 관련 기능 | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 | 초안 |
 | 실행 조건(Execution Condition) | 기능을 실제로 실행하려면 실행 시점에 충족돼야 하는 조건. 실행 시점의 판단은 8. 실시간 세계 상태·데이터 일관성으로 넘긴다(단계 4 질문). [분류원문] 기반 [가정] | 조건 항목, 확인 방법, 확인 시점 | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 | 초안 |
@@ -57,7 +57,7 @@ v0.2는 [단계 1. 기존 능력 표현 모델과 표준 조사](stage-1-existin
 | 효과(Effect) | 기능 수행 뒤 세계 상태에 생기는 변화. PDDL 행동의 효과와 CSS 모델의 능력 정의(효과를 내는 기능)에 대응한다. | 변화 내용, 대상 상태 | finding f5·f15 (실행 2026-09-25-02)[^ref-029][^ref-035] | 확정 |
 | 스킬(Skill) | 기능(능력)의 실행 가능한 구현. | 이름, 구현하는 기능 | finding f15·f17 (실행 2026-09-25-02)[^ref-035][^ref-037] | 확정 |
 | 오류(Error) | 기능·스킬 실행 중 보고되는 실패·이상. | 유형, 등급(VDA 5050 2.0.0의 WARNING·FATAL, 3.0.0의 WARNING·URGENT·CRITICAL·FATAL — 3.0.0 등급은 현재 주문 계속 가능 여부와 새 주문 수락 가능 여부로 구분), 설명, 참조(errorReferences), 조치 힌트(errorHint), 복구 가능성(미확인) | finding f22·f26 (실행 2026-09-25-02)[^ref-022][^ref-028]. 3.0.0 등급과 참조·조치 힌트 속성은 finding f6 (실행 2026-09-25-06)[^ref-051] | 확정 |
-| 실행 상태(Execution State) | 기능·스킬 실행의 진행 단계(대기·준비·실행·일시정지·재시도 가능·완료·실패·취소 등). 완료 확인 방법의 판정 대상이다. | 상태 값(VDA 5050 동작 상태 일곱 값, SOMA 실행 상태 여섯 값, PackML 상태 기계의 상태에 대응), 전이 | finding f5·f11, 보조 f18 (실행 2026-09-25-06)[^ref-051][^ref-112][^ref-117] | 확정 |
+| 실행 상태(Execution State) | 기능·스킬 실행의 진행 단계(대기·준비·실행·일시정지·재시도 가능·완료·실패·취소 등). 완료 확인 방법의 판정 대상이다. | 상태 값(VDA 5050 동작 상태 일곱 값, SOMA 실행 상태 여섯 값, PackML 상태 기계의 상태에 대응), 전이 | finding f5·f11, 보조 f18 (실행 2026-09-25-06)[^ref-051][^ref-141][^ref-145] | 확정 |
 
 개념은 번호나 코드로 부르지 않고 이름으로 부른다. 상태 값은 초안(시드) / 제안(검증 승인 전) / 확정(검증 승인) / 폐기(이유 병기)이며, 폐기한 개념은 표에서 지우지 않고 상태만 바꾼다. 이 표의 기능(Capability)은 능력·스킬·서비스(Capabilities, Skills and Services, CSS) 모델의 능력(capability), 곧 구현과 무관한 기능 명세에 대응시켜 부른다. 제약 개념은 v0.2에서 바꾸지 않았다(6절 참고).
 
@@ -72,9 +72,9 @@ v0.2는 [단계 1. 기존 능력 표현 모델과 표준 조사](stage-1-existin
 | 작업 요구 | 기능과 대응된다 | 기능 | 분류 원문 5. 로봇 능력·작업 온톨로지 정의 — [분류원문] 기반 [가정] |
 | 모든 개념 | 근거 문서를 가리킨다 | 근거 문서 | 트랙 정의(빌드 사양서 8.1)가 더한 관계 — 온톨로지 초안 v0과 트랙 출처 규칙. 분류 원문 5. 로봇 능력·작업 온톨로지 정의에는 직접 나오지 않음 — [분류원문] 기반 [가정] |
 | 기능 | 구현된다 (1:N, 하나 이상의 스킬로) | 스킬 | finding f15·f17 (실행 2026-09-25-02)[^ref-035][^ref-037] — ref-037은 원문 미열람, IDTA 원문 아님 (확정) |
-| 스킬 | 실행 상태를 드러낸다 | 실행 상태 | finding f19, 보조 f17·f18 (실행 2026-09-25-06)[^ref-111][^ref-036][^ref-117] (확정) |
-| 기능 | 일반화된다 (더 일반적인 기능의 하위 개념이 된다) | 기능 | finding f10·f24 (실행 2026-09-25-06)[^ref-109][^ref-111] — IDTA 02020 CapabilityGeneralizedBy, CaSkMan 표준 분류 하위 클래스 (확정) |
-| 기능 | 구성된다 (복합 기능이 하위 기능들로 이루어진다) | 기능 | finding f10 (실행 2026-09-25-06)[^ref-109] — IDTA 02020 CapabilityComposedOf (확정) |
+| 스킬 | 실행 상태를 드러낸다 | 실행 상태 | finding f19, 보조 f17·f18 (실행 2026-09-25-06)[^ref-140][^ref-036][^ref-145] (확정) |
+| 기능 | 일반화된다 (더 일반적인 기능의 하위 개념이 된다) | 기능 | finding f10·f24 (실행 2026-09-25-06)[^ref-138][^ref-140] — IDTA 02020 CapabilityGeneralizedBy, CaSkMan 표준 분류 하위 클래스 (확정) |
+| 기능 | 구성된다 (복합 기능이 하위 기능들로 이루어진다) | 기능 | finding f10 (실행 2026-09-25-06)[^ref-138] — IDTA 02020 CapabilityComposedOf (확정) |
 
 v0의 여섯 관계는 트랙 정의(빌드 사양서 8.1)의 v0 관계를 그대로 옮긴 것이고, v0.1에서 "기능 / 구현된다 / 스킬" 관계가, v0.2에서 "스킬 / 실행 상태를 드러낸다 / 실행 상태", "기능 / 일반화된다 / 기능", "기능 / 구성된다 / 기능" 관계가 더해졌다. 관계의 방향은 주어에서 목적어로 읽는다. v0 관계의 카디널리티(한 로봇이 몇 개의 기능을 가지는지 등)는 정하지 않았으며 6절의 미해결 질문으로 둔다. 제조사는 아직 관계에 등장하지 않고, 효과와 오류도 다른 개념과의 관계가 승인되지 않았다(6절 참고).
 
@@ -123,7 +123,7 @@ v0를 정의에서 도출하는 과정에서 생긴 질문과, v0.1·v0.2에서 
 
 - 제조사와 로봇·기능 사이의 관계가 없다. 정의의 "제조사별"을 어떤 관계로 표현할지(로봇이 제조사에 속하는지, 기능 이름이 제조사에 종속되는지)가 정해지지 않았다. v0.2에서 기능에 "의미 참조" 속성을 더해 제조사별 명칭과 공통 의미를 나눌 자리를 두었지만, 관계 자체는 아직 없다. — 관련: q1-05, q1-06(단계 1. 기존 능력 표현 모델과 표준 조사) [가정]
 - 실행 조건과 제약의 경계가 정해지지 않았다. 배터리 잔량이나 적재량은 실행 시점에 확인하는 실행 조건인지, 기능의 범위를 제한하는 제약인지, 둘 다인지 구분 기준이 필요하다. 또한 전제조건(PDDL 행동 전제조건, f5)을 실행 조건과 별도 개념으로 둘지 정해지지 않았다(실행 2026-09-25-02의 전제조건 개념 제안은 기존 실행 조건과 정의가 겹쳐 반영하지 않았다)[^ref-029]. — 관련: q1-03(단계 1), q4-04(단계 4. 온톨로지를 실행에 연결하는 방법 조사) [가정]
-- 제약의 종류를 어떻게 나눌지 정해지지 않았다. IDTA 02020은 제약을 전제조건·불변조건·사후조건을 담는 속성 제약과 순서 요구를 담는 전이 제약으로 나눈다. [사실][^ref-108] 이 구분을 제약 개념의 종류 속성에 더하자는 제안(실행 2026-09-25-06, f9)은 바로 위 질문(전제조건을 제약의 한 종류로 둘지 실행 조건으로 둘지)과 충돌해 반영하지 않았다. — 관련: q1-03(단계 1), q4-04(단계 4) [가정]
+- 제약의 종류를 어떻게 나눌지 정해지지 않았다. IDTA 02020은 제약을 전제조건·불변조건·사후조건을 담는 속성 제약과 순서 요구를 담는 전이 제약으로 나눈다. [사실][^ref-137] 이 구분을 제약 개념의 종류 속성에 더하자는 제안(실행 2026-09-25-06, f9)은 바로 위 질문(전제조건을 제약의 한 종류로 둘지 실행 조건으로 둘지)과 충돌해 반영하지 않았다. — 관련: q1-03(단계 1), q4-04(단계 4) [가정]
 - 스킬이 상태 기계로 실행 상태를 드러낸다는 점은 v0.2에서 관계 "스킬 / 실행 상태를 드러낸다 / 실행 상태"로 다뤘다(f19, 보조 f17·f18). 스킬이 OPC UA·REST 같은 실행 인터페이스로 호출된다는 점을 스킬의 속성으로 둘지는 아직 정하지 않았다. — 관련: q1-04(단계 1), q4-01(단계 4) [가정]
 - 효과·오류·실행 상태를 기능·스킬 가운데 무엇에 연결할지, 효과와 실행 상태를 완료 확인 방법의 기준으로 어떻게 함께 쓸지 정해지지 않았다. — 관련: q1-03(단계 1), q4-01(단계 4) [가정]
 - 기능의 능력 출처 구분(광고 능력 / 운용 능력)의 차이를 어떤 지표로 측정하고 함께 기록할지 정해지지 않았다. — 관련: q5-05(단계 5. 완전성과 정확성을 검증하는 방법 조사) [가정]
@@ -152,11 +152,11 @@ v0를 정의에서 도출하는 과정에서 생긴 질문과, v0.1·v0.2에서 
 [^ref-036]: Köcher, A. 외, A Reference Model for Common Understanding of Capabilities and Skills in Manufacturing, 2022, https://arxiv.org/abs/2209.09632, 접근일 2026-09-25 (원문 미열람)
 [^ref-037]: Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A., Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies, 2023-07, https://arxiv.org/abs/2307.00827, 접근일 2026-09-25 (원문 미열람)
 [^ref-041]: Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots, 2025-10-02, https://www.nature.com/articles/s41598-025-16649-3, 접근일 2026-09-25 (원문 미열람)
-[^ref-107]: VDA / VDMA (VDA5050 GitHub), VDA5050/json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
+[^ref-136]: VDA / VDMA (VDA5050 GitHub), VDA5050/json_schemas/factsheet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema, 접근일 2026-09-25
 [^ref-051]: VDA / VDMA (VDA5050 GitHub), VDA5050/json_schemas/state.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema, 접근일 2026-09-25
-[^ref-108]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
-[^ref-109]: IDTA(Industrial Digital Twin Association), IDTA 02020_Template_Capability_Description.json, 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
-[^ref-111]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25
-[^ref-112]: EASE CRC (ease-crc/soma), SOMA — owl/SOMA-ACT.owl, 미확인, https://github.com/ease-crc/soma/blob/master/owl/SOMA-ACT.owl, 접근일 2026-09-25
-[^ref-116]: IDTA(Industrial Digital Twin Association), Specification of the Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1), 2024, https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf, 접근일 2026-09-25 (원문 미열람)
-[^ref-117]: OPC Foundation / OMAC, OPC-30050 – OPC UA for PackML - Common Object Model: PackML, 미확인, https://reference.opcfoundation.org/specs/OPC-30050, 접근일 2026-09-25 (원문 미열람)
+[^ref-137]: IDTA(Industrial Digital Twin Association), IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates), 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
+[^ref-138]: IDTA(Industrial Digital Twin Association), IDTA 02020_Template_Capability_Description.json, 미확인, https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description/1/0, 접근일 2026-09-25 (원문 미열람)
+[^ref-140]: CaSkade-Automation (GitHub), CaSkMan - An OWL ontology to model capabilities and skills in manufacturing (README), 미확인, https://github.com/CaSkade-Automation/CaSkMan, 접근일 2026-09-25
+[^ref-141]: EASE CRC (ease-crc/soma), SOMA — owl/SOMA-ACT.owl, 미확인, https://github.com/ease-crc/soma/blob/master/owl/SOMA-ACT.owl, 접근일 2026-09-25
+[^ref-144]: IDTA(Industrial Digital Twin Association), Specification of the Asset Administration Shell Part 1: Metamodel (IDTA-01001-3-0-1), 2024, https://industrialdigitaltwin.org/wp-content/uploads/2024/06/IDTA-01001-3-0-1_SpecificationAssetAdministrationShell_Part1_Metamodel.pdf, 접근일 2026-09-25 (원문 미열람)
+[^ref-145]: OPC Foundation / OMAC, OPC-30050 – OPC UA for PackML - Common Object Model: PackML, 미확인, https://reference.opcfoundation.org/specs/OPC-30050, 접근일 2026-09-25 (원문 미열람)
