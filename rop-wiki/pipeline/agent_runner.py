@@ -150,6 +150,12 @@ def system_prompt_file(role: str) -> tuple[Path, str]:
     if not shared or not role_text:
         raise AgentError("agents/shared-rules.md 또는 역할 파일이 없다")
     text = shared.rstrip("\n") + "\n\n---\n\n" + role_text.rstrip("\n") + "\n"
+    if role in ("researcher", "verifier"):
+        # 자주 바뀌지 않는 참조 자료도 시스템 프롬프트에 두어 캐시에 싣는다(운영 전환 1-5): GitHub 공식 저장소 원문 경로 목록
+        mirrors = runs.read_text(ROOT / "config" / "source_mirrors.yaml")
+        if mirrors:
+            text += ("\n---\n\n## 참조: config/source_mirrors.yaml (원문을 열 수 있는 GitHub 공식 저장소 경로, 부록 R)\n\n```yaml\n"
+                     + mirrors.rstrip("\n") + "\n```\n")
     sha = hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
     SYSTEM_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     path = SYSTEM_CACHE_DIR / f"{role}-{sha}.md"
@@ -648,8 +654,7 @@ def _track_inputs(slug: str, stage_no: int | None) -> list[tuple[str, str]]:
 def _source_inputs(role: str, target_json: dict, rd: Path) -> list[tuple[str, str]]:
     """원문 열람 입력(운영 전환 1-1): GitHub 공식 저장소 원문 경로 목록과, 사람이 inbox/sources 로 넣은 원문 텍스트 가운데
     이번 대상과 관련된 것. 리서치·1차 검증에만 넣는다."""
-    out: list[tuple[str, str]] = []
-    _add(out, "config/source_mirrors.yaml")
+    out: list[tuple[str, str]] = []   # config/source_mirrors.yaml 은 시스템 프롬프트에 있다(system_prompt_file)
     try:
         from lib import sources as S
     except ImportError:
