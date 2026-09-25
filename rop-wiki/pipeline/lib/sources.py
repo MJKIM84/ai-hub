@@ -78,7 +78,7 @@ TEXT_SUFFIXES = {".txt", ".md", ".markdown", ".rst", ".adoc", ".ttl", ".owl", ".
 HTML_SUFFIXES = {".html", ".htm", ".xhtml"}
 PDF_SUFFIXES = {".pdf"}
 _KEY_RE = re.compile(r"^[a-z0-9][a-z0-9._-]{0,80}$")
-_REF_RE = re.compile(r"^ref-\d{3}$")
+_REF_RE = re.compile(r"^ref-\d{3,}$")
 UA = "rop-wiki-sources/1.0 (+pipeline/lib/sources.py)"
 
 
@@ -670,7 +670,7 @@ def _set_fetch_block(body: str, block: str) -> str:
     return body[: m.end()] + section + f"\n\n{block}\n" + ("\n" + body[end:] if nxt else "")
 
 
-_FOOT_LINE = re.compile(r"^(\[\^(ref-\d{3})\]: .*?, 접근일 )(\d{4}-\d{2}-\d{2})( \(원문 미열람\))?[ \t]*$", re.M)
+_FOOT_LINE = re.compile(r"^(\[\^(ref-\d{3,})\]: .*?, 접근일 )(\d{4}-\d{2}-\d{2})( \(원문 미열람\))?[ \t]*$", re.M)
 
 
 def _set_footnote_line(body: str, fetched: bool, accessed: str | None) -> str:

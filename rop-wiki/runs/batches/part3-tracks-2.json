@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-tracks-2",
   "date": "2026-09-25",
-  "updated": "2026-09-25 02:25:17",
+  "updated": "2026-09-25 02:32:13",
   "concurrency": 3,
   "items": [
     {
@@ -45,17 +45,24 @@
         "label": "트랙2 자연어 작업 챗봇 #2",
         "resume": "2026-09-25-12"
       },
-      "status": "넘겨받은 실행 대기",
+      "status": "에이전트 단계 진행",
       "attempts": [
         {
           "run_id": "2026-09-25-12",
           "started": "2026-09-25 02:04:41",
-          "agents_exit": null,
+          "agents_exit": 2,
           "publish_exit": null,
-          "adopted": true
+          "adopted": true,
+          "agents_done": "2026-09-25 02:32:12"
+        },
+        {
+          "run_id": "2026-09-25-21",
+          "started": "2026-09-25 02:32:13",
+          "agents_exit": null,
+          "publish_exit": null
         }
       ],
-      "run_id": "2026-09-25-12"
+      "run_id": "2026-09-25-21"
     },
     {
       "index": 2,

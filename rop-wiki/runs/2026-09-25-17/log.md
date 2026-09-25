@@ -7,3 +7,15 @@
 - 2026-09-25 11:18:37 KST [준비] 결과: 성공 · 소요 1초 · web_search_available: true · web_fetch_available: false · 부분 열람 모드(fetch_mode: mirror_only)
 - 2026-09-25 11:18:37 KST [대상 선정] 결과: 성공 · 소요 0초 · area_deep_dive · 6. 지도·공간·위치 모델
 - 2026-09-25 11:18:37 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-25-17/prompts/research.md (231,826자, 규칙은 시스템 프롬프트 researcher-061e717d5a1d.md)
+- 2026-09-25 11:28:25 KST [리서치 에이전트] 호출 완료(시도 1): 턴 35 · 9분 47초 · 비용 $4.7189 · subtype success
+- 2026-09-25 11:28:25 KST [리서치 에이전트] 저장: runs/2026-09-25-17/research.json
+- 2026-09-25 11:28:25 KST [형식 검증] 리서치 산출물 검사: 출처 31건 중 원문 열람 11건 · 신뢰도 상한 적용 1건
+- 2026-09-25 11:28:25 KST [형식 검증]   - 출처 ref-033: 원문 열람 표시를 인정하지 않음 — 연 파일(https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/AMR_Interop_Standard.json)은 공식 산출물(정본 페이지 본문 아님)이다 — 정본 문서의 원문 열람으로 치지 않는다. 연 파일을 github.com/…/blob/… URL 의 별도 출처로 인용하면 원문 열람으로 인정된다. fetched false 로 둔다
+- 2026-09-25 11:28:25 KST [리서치] 예산 점검: 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:28:25 KST [리서치] 결과: 성공 · 소요 9분 48초 · 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-25 11:28:25 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-17/prompts/verification1.md (319,493자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 11:31:47 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 24 · 3분 22초 · 비용 $2.5139 · subtype success
+- 2026-09-25 11:31:47 KST [내용 검증 에이전트] 저장: runs/2026-09-25-17/verification.json
+- 2026-09-25 11:31:47 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-25 11:31:47 KST [1차 검증] 결과: 조건부 승인 · 소요 3분 22초 · 신뢰도 medium
+- 2026-09-25 11:31:48 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-17/prompts/storyteller.md (209,536자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)

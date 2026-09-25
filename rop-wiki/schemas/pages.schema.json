@@ -183,7 +183,7 @@
             "items": {
               "type": "string",
               "description": "출처 id",
-              "pattern": "^ref-\\d{3}$"
+              "pattern": "^ref-\\d{3,}$"
             },
             "uniqueItems": true
           }
@@ -206,7 +206,7 @@
           "id": {
             "type": "string",
             "description": "참고문헌 id",
-            "pattern": "^ref-\\d{3}$"
+            "pattern": "^ref-\\d{3,}$"
           },
           "org": {
             "type": "string",
@@ -664,7 +664,7 @@
           "ref_id": {
             "type": "string",
             "description": "선택. 대응하는 참고문헌 id [가정]",
-            "pattern": "^ref-\\d{3}$"
+            "pattern": "^ref-\\d{3,}$"
           }
         },
         "required": [

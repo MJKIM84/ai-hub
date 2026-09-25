@@ -164,7 +164,7 @@
             "items": {
               "type": "string",
               "description": "출처 id",
-              "pattern": "^ref-\\d{3}$"
+              "pattern": "^ref-\\d{3,}$"
             },
             "uniqueItems": true
           },
@@ -311,7 +311,7 @@
           "id": {
             "type": "string",
             "description": "출처 id. ref-001~ref-010 은 부록 A 12장 1~10번에 대응하며 새 출처는 ref-011 부터",
-            "pattern": "^ref-\\d{3}$"
+            "pattern": "^ref-\\d{3,}$"
           },
           "org": {
             "type": "string",

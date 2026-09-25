@@ -184,19 +184,35 @@ class TestPublishHelpers(unittest.TestCase):
         self.assertEqual(m["ref-001"], "ref-151")      # 다른 실행이 예약한 구간(~ref-150) 위로 옮긴다
 
     def test_reserve_reference_block(self):
-        orig_file, orig_ids = runs.REF_BLOCK_FILE, runs.existing_reference_ids
+        orig = (runs.REF_BLOCK_FILE, runs.existing_reference_ids, runs.find_run_dir, runs.read_summary, runs.is_parked)
         with tempfile.TemporaryDirectory() as td:
+            state = {"r1": {}, "r2": {}, "r3": {}}          # 실행별 summary(게시 여부)
             runs.REF_BLOCK_FILE = Path(td) / "blocks.json"
             runs.existing_reference_ids = lambda: ["ref-001", "ref-040"]
+            runs.find_run_dir = lambda rid, settings=None: Path(td) / rid if rid in state else None
+            runs.read_summary = lambda d: state.get(Path(d).name, {})
+            runs.is_parked = lambda rid, settings=None: False
             try:
                 a = runs.reserve_reference_block("r1", size=10)
                 b = runs.reserve_reference_block("r2", size=10)
                 again = runs.reserve_reference_block("r1", size=10)
+                self.assertEqual(runs.active_reference_blocks(exclude="r1"), [(51, 60)])
+                state["r1"] = {"published": True}             # 게시된 실행의 구간은 풀린다
+                c = runs.reserve_reference_block("r3", size=10)
+                self.assertEqual(runs.active_reference_blocks(exclude="r3"), [(51, 60)])
             finally:
-                runs.REF_BLOCK_FILE, runs.existing_reference_ids = orig_file, orig_ids
+                (runs.REF_BLOCK_FILE, runs.existing_reference_ids, runs.find_run_dir, runs.read_summary, runs.is_parked) = orig
         self.assertEqual(a, ("ref-041", "ref-050"))
         self.assertEqual(b, ("ref-051", "ref-060"))     # 겹치지 않는다
         self.assertEqual(again, a)                        # 같은 실행은 같은 구간
+        self.assertEqual(c, ("ref-061", "ref-070"))     # 풀린 구간 뒤가 아니라 남은 예약(r2) 뒤
+
+    def test_compact_ref_mapping(self):
+        import publish
+        ex = {"ref-001": "a", "ref-002": "b", "ref-004": "d"}
+        run = {"ref-150": "x", "ref-151": "y", "ref-152": "b", "ref-153": "z"}
+        m = publish.compact_ref_mapping(ex, run, publish.compute_ref_mapping(ex, run), [(5, 6)])
+        self.assertEqual(m, {"ref-152": "ref-002", "ref-150": "ref-003", "ref-151": "ref-007", "ref-153": "ref-008"})
 
     def _transition(self, slug: str, from_stage: int, to_stage: int, stages: int):
         """퍼블리셔 단계 전환(_transition_stage)을 임시 복사한 트랙 설정에 적용하고 결과 설정을 돌려준다."""

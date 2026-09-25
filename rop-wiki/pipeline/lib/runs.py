@@ -570,7 +570,7 @@ def reserve_reference_block(run_id: str, size: int = 30) -> tuple[str, str]:
     REF_BLOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(str(REF_BLOCK_FILE) + ".lock", "w") as lk:
         fcntl.flock(lk, fcntl.LOCK_EX)
-        data = read_json(REF_BLOCK_FILE, {}) or {}
+        data = _prune_ref_blocks(read_json(REF_BLOCK_FILE, {}) or {}, keep=run_id)
         if run_id in data:
             a, b = data[run_id]
         else:
@@ -579,8 +579,31 @@ def reserve_reference_block(run_id: str, size: int = 30) -> tuple[str, str]:
             top = max([top] + [int(v[1]) for v in data.values()])
             a, b = top + 1, top + size
             data[run_id] = [a, b]
-            write_json(REF_BLOCK_FILE, data)
+        write_json(REF_BLOCK_FILE, data)
     return f"ref-{a:03d}", f"ref-{b:03d}"
+
+
+def _prune_ref_blocks(data: dict, keep: str | None = None) -> dict:
+    """게시·보류됐거나 폴더가 없는 실행의 예약 구간을 푼다(예약 번호가 실행 수 × 구간 크기만큼 끝없이 커지지 않게)."""
+    out = {}
+    for rid, v in data.items():
+        if rid == keep:
+            out[rid] = v
+            continue
+        d = find_run_dir(rid)
+        if not d:
+            continue
+        s = read_summary(d)
+        if s.get("published") or s.get("parked") or is_parked(rid):
+            continue
+        out[rid] = v
+    return out
+
+
+def active_reference_blocks(exclude: str | None = None) -> list[tuple[int, int]]:
+    """아직 게시·보류되지 않은 다른 실행들의 예약 구간 [(시작, 끝)]."""
+    data = _prune_ref_blocks(read_json(REF_BLOCK_FILE, {}) or {})
+    return [(int(a), int(b)) for rid, (a, b) in data.items() if rid != exclude]
 
 
 # --- 예산 -----------------------------------------------------------------------------

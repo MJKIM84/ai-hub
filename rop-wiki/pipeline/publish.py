@@ -447,7 +447,7 @@ class Publisher:
             self.info(f"동시 실행 조정: {n}")
         return notes
 
-    def remap_reference_ids(self) -> dict:
+    def remap_reference_ids(self, compact: bool = False) -> dict:
         """병렬로 조사한 실행들이 같은 '다음 참고문헌 id'를 받았을 수 있다(배치 실행, run_batch.py). 반영 직전에 이번 실행의 새 출처 id 가
         이미 다른 URL 에 쓰였으면 다음 빈 번호로 옮기고, 같은 URL 이 이미 다른 id 로 등록돼 있으면 그 id 를 재사용한다(공통 규칙 10 "기존 각주
         재사용"). pages/ 원고·pages.json·research.json·verification*.json 의 id 를 함께 바꾼다. 반환: {옛 id: 새 id}."""
@@ -465,9 +465,13 @@ class Publisher:
         for r in self.pages.get("reference_updates") or []:
             if r.get("id"):
                 run_refs.setdefault(r["id"], self._norm_url(r.get("url")))
-        blocks = runs.read_json(runs.REF_BLOCK_FILE, {}) or {}
-        floor = max([int(v[1]) for k, v in blocks.items() if k != self.run_id] or [0])
+        others = runs.active_reference_blocks(exclude=self.run_id)
+        floor = max([b for _, b in others] or [0])
         mapping = compute_ref_mapping(existing, run_refs, floor)
+        if compact:
+            # 게시 직전(검증이 모두 끝난 뒤)에만: 이번 실행의 새 출처 id 를 가장 낮은 빈 번호로 옮긴다. 다른 실행이 검증 중인 예약 구간은
+            # 피한다 — 그 실행들이 대조하는 번호를 바꾸지 않는다. 예약 구간 방식으로 생기는 빈 번호를 메워 id 가 끝없이 커지지 않게 한다
+            mapping = compact_ref_mapping(existing, run_refs, mapping, others)
         if not mapping:
             return {}
         pat = re.compile(r"\bref-(\d{3,})\b")
@@ -843,7 +847,7 @@ class Publisher:
             dst = paths.DOCS / "glossary" / f"{slug}.md"
             rel = f"glossary/{slug}.md"
             existed = dst.is_file()
-            sources = [s for s in (g.get("sources") or []) if re.match(r"^ref-\d{3}$", str(s))]
+            sources = [s for s in (g.get("sources") or []) if re.match(r"^ref-\d{3,}$", str(s))]
             refs = []
             for s in sources:
                 r = self._ref_data(s)
@@ -1926,7 +1930,7 @@ class Publisher:
                 return 0
             if not (self.args.dry_run or self.args.check_only):
                 self.reconcile_concurrent_changes()
-                self.remap_reference_ids()
+                self.remap_reference_ids(compact=True)
             elif getattr(self.args, "precheck", False):
                 # 사전 검사에서도 참고문헌 id 를 먼저 재배정한다: 병렬 실행이 같은 '다음 id'를 받은 충돌은 코드가 푸는 일이라
                 # 스토리텔러 형식 수정으로 돌려보내지 않는다(3부 배치 첫 트랙 실행에서 이 충돌로 형식 수정 1회·$2.37 이 들었다)
@@ -2066,6 +2070,38 @@ def merge_three(ours: str, base: str, theirs: str) -> tuple[bool, str]:
         mp = subprocess.run(["git", "merge-file", "-p", "-L", "이번 실행", "-L", "기준", "-L", "현재", str(fo), str(fb), str(ft)],
                             capture_output=True, text=True)
     return mp.returncode == 0, mp.stdout
+
+
+def compact_ref_mapping(existing: dict, run_refs: dict, mapping: dict, other_blocks: list) -> dict:
+    """게시 직전 id 압축(순수 함수). 이번 실행의 새 출처(기존 참고문헌과 같은 URL 로 재사용되는 것 제외)를 번호 순서를 지키며 가장 낮은
+    빈 번호로 옮긴다. 빈 번호 = docs 에 없고, 다른 실행의 예약 구간(other_blocks)에 들지 않고, 이번에 이미 준 번호가 아닌 것.
+    mapping: compute_ref_mapping 결과(같은 URL 재사용·충돌 이동). 반환: 최종 {옛 id: 새 id}(바뀌지 않는 id 는 넣지 않는다)."""
+    out = dict(mapping)
+    existing_urls = {i: u for i, u in existing.items()}
+    new_ids = []
+    for rid, url in run_refs.items():
+        tgt = mapping.get(rid, rid)
+        if tgt in existing_urls and existing_urls[tgt] == url and url:
+            continue          # 기존 참고문헌(같은 URL)을 그대로 쓰는 출처
+        if rid in existing_urls and existing_urls[rid] == url and url:
+            continue
+        new_ids.append(rid)
+    new_ids.sort(key=lambda x: int(x.split("-")[1]) if re.match(r"^ref-\d+$", x) else 10 ** 9)
+    taken = {int(i.split("-")[1]) for i in existing if re.match(r"^ref-\d+$", i)}
+    blocked = set()
+    for a, b in other_blocks:
+        blocked.update(range(int(a), int(b) + 1))
+    n = 1
+    for rid in new_ids:
+        while n in taken or n in blocked:
+            n += 1
+        nid = f"ref-{n:03d}"
+        taken.add(n)
+        if nid != rid:
+            out[rid] = nid
+        else:
+            out.pop(rid, None)
+    return out
 
 
 def compute_ref_mapping(existing: dict, run_refs: dict, floor: int = 0) -> dict:

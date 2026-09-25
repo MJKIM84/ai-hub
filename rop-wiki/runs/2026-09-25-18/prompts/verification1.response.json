@@ -1,0 +1,417 @@
+{
+  "duration_api_ms": 253163,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.4392747999999997,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 186331,
+    "cache_read_input_tokens": 1328949,
+    "output_tokens": 18539,
+    "output_tokens_details": {
+      "thinking_tokens": 7086
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 186331,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 14254,
+        "cache_read_input_tokens": 258236,
+        "cache_creation_input_tokens": 4249,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4249
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 190994,
+      "outputTokens": 6203,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 9,
+      "costUSD": 0.312009,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 18539,
+      "cacheReadInputTokens": 1328949,
+      "cacheCreationInputTokens": 186331,
+      "webSearchRequests": 0,
+      "costUSD": 2.1272658,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7086,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 22,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-18\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(data/source_texts/ref-031, 공식 저장소 main 3.0.0) 6.6 에 'published when relevant events occur or at least every 30 seconds' 와 사건 목록(주문 수신, load 변화, errors, operatingMode·driving·paused·safetyState 변화 등)이 있다. 단일 발행 주체라 교차 확인 없음. 발행일 미확인(oq-005).\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 원문 4.1(order·instantActions·state·factsheet·zoneSet·responses·visualization 은 QoS 0, connection 은 QoS 1)과 6.5(last will 로 CONNECTION_BROKEN 발행) 일치. 원문은 connection 토픽을 관제가 로봇 건강 확인에 쓰지 말라고도 적는다(참고).\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 입력 원문은 전체 207,642자 가운데 앞 110,737자만 담겨 있어 명세 전체에 규정이 없다고 확인할 수 없다. 원문 5.3 은 관제 기능으로 '통신 오류 감지·해결'을 적되 방법은 정하지 않고, waitForTrigger 의 시간 초과 처리는 관제 책임으로 둔다. '이번 열람 범위에서 찾지 못했다' 표현을 유지해야 한다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw 스키마 열람. timestamp ISO8601, lastNodeId·lastNodeSequenceId, newBaseRequest, mobileRobotPosition 의 localized('x, y, and theta can be trusted')·localizationScore·deviationRange·mapId, loads, paused·operatingMode·safetyState 확인. 발행일 미확인.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw robot_state.json 에 unix_millis_time, location, status 7종, issues('operators need to address'), battery(0.0~1.0) 있음. 그 밖에 task_id·commission·mutex_groups 필드도 있다. 발행일 미확인.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: integration_doors.md 원본에 /door_states 토픽, 'state supervisor' 문장, 어댑터를 거치지 않은 직접 요청을 이전 상태로 되돌린다는 문장이 있다. DoorState.msg 필드는 door_time·door_name·current_mode. ref-184·ref-186 은 같은 Open-RMF 계열이라 독립 교차가 아니다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: LiftState.msg(lift_time, available_floors, current/destination_floor, door_state, motion_state, current_mode 에 human·AGV·fire·offline·emergency, session_id)와 integration_lifts.md('keeping track of the internal and desired state', 'only relaying ... if it is deemed appropriate') 일치. 같은 계열이라 독립 교차가 아니다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 검증자가 두 문서를 다시 열어 보니 발행 주기와 오래된 상태 판정 규칙에 관한 서술이 없었다. 구현 코드는 보지 않았으므로 부재를 확정할 수는 없다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ros2_documentation jazzy 원본에서 Deadline·Lifespan('considered stale or expired')·Liveliness·Lease Duration 정의와 offered/requested deadline missed, liveliness lost/changed 이벤트 확인. Jazzy 판 기준임을 밝혀야 한다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Sparkplug 5장 원본에서 NDEATH 수신 시와 MQTT 서버 연결 상실 시의 STALE 표시 MUST, seq 0~255, Reorder Timeout 뒤 Rebirth 요청 확인. 발행일 미확인.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 OPC 10000-4 7.11 의 기관·제목·URL 일치를 확인했다. SourceTimestamp(값·상태 변경 시각, 원천 가까이에서 생성)와 ServerTimestamp('the time at which the Server knew the value to be accurate')는 스니펫으로 확인했다. StatusCode 의 Good·Uncertain·Bad 구분은 검증 스니펫에 없고 브리프 발췌에만 있다. 발행일 미확인.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과로 Yates 외, IEEE JSAC 2021-05 서베이임을 확인했다(시각 표시된 상태 갱신, 저지연 사이버물리 시스템). AoI 정의 문구는 브리프 스니펫 기준이다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f1·f9·f10·f6·f8·f12 를 분류 원문 SCM 질문에 대응시킨 추론이다. 근거 finding 은 모두 확인됐다. 허용 경과 시간 값을 제시한 출처가 없으므로 수치를 넣지 않는다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EPCIS.ttl 원본(버전 2.0, 수정 2021-09-30)의 eventTime·recordTime('bookkeeping mechanism')·eventTimeZoneOffset 정의 일치.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EPCIS.ttl 의 errorDeclaration·declarationTime·reason·correctiveEventIDs 정의와 CBV.ttl(2.0, 2021-09-30)의 did_not_occur('There are no corrective events')·incorrect_data 정의 일치. 두 파일은 같은 GS1 저장소라 독립 교차가 아니다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f15 를 로봇 상태 이력에 옮긴 설계 추론이다. 누구의 판단인지('이 위키의 추정') 드러나게 서술해야 한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증자가 raw sosa.ttl 을 열어 phenomenonTime('Not necessarily the same as the resultTime')·resultTime 정의를 확인했다. 작업반 저장소 편집본이라 /TR 권고안(2017-10-19)과 문구가 다를 수 있다. 브리프는 fetch_url 을 적고도 fetched=false 로 표시했다(보수적 표시라 신뢰도 상한 medium 유지).\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f11·f14·f17 을 대응시킨 추론이다. 브리프는 source_unopened=false 로 적었지만 근거 가운데 ref-182 는 원문 미열람이다. 세 표준이 서로를 참조하지 않는다는 점과 필드 이름·정의 차이를 밝혀야 한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 텍스트(ref-004 rmf-core)에 'living database ... delays, cancellations, or route changes', conflict notice, fleet manager 사이 협상, 제3자 judge 가 있다. 교통 일정은 '의도된 미래 궤적'을 담는다(원문).\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(INFORMS·HBS·RePEc 서지)에서 Management Science 54(4) 627-641, 37개 매장의 약 37만 건 가운데 65% 부정확, 실사는 부정확성을 줄이고 매장 환경 복잡성·유통 구조는 늘린다는 내용을 확인했다. 수치를 낸 연구는 하나라 독립 교차가 없다. '논문이 보고했다'는 귀속 서술과 '소매 매장 조건' 명시가 있어야 [사실]로 유지할 수 있다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f20 과 f4(loads)를 대응시킨 설계 추론이다. 소매 매장 수치를 물류센터에 그대로 옮기지 않는다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(MDPI DOI, PubMed 22666027, PMC3355407)에서 Massawe 외 Sensors 2012 와 'approximately 30% less overall errors' 를 확인했다. 수치는 이동 환경 시뮬레이션 조건의 저자 보고로 서술한다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(arXiv 2507.18808, IEEE Xplore)에서 persistence·emergence 필터 혼합, 베이즈 틀, IROS 2025 채택을 확인했다. 로봇 지도 쪽 연구라 ROP 에는 방법 참고로만 쓴다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(arXiv 1805.06358, ADS)에서 두 성질(조율 없는 수정, 같은 갱신 집합이면 결정적으로 같은 상태)을 확인했다. 제출일 2018-05-16.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f24 와 f6·f7 을 대조한 설계 추론이다. 로봇 세계 상태에 CRDT 를 적용한 사례는 확인하지 못했다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"원문 미열람(ISO 23247 원문도, NIST 해설 PDF 도 열지 않음). 검색 결과로 NIST 문서의 제목·URL 과 정의 문구('fit for purpose digital representation ... with synchronization')를 확인했다. '장치 통신 계층과 디지털 트윈 계층을 나눈다'는 부분은 브리프 발췌와 검증 스니펫 어디에도 없어 뒷받침되지 않는다. 표준 내용을 발행 기관이 아닌 NIST 해설로 인용하고 있다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. 검색 결과(ScienceDirect S2405896318316021, IFAC-PapersOnLine 2018)에서 통합 수준에 따른 디지털 모델·디지털 섀도(automated one-way data flow)·디지털 트윈 구분을 확인했다.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: f26 의 정의 부분과 f27 을 분류 원문 7장 주석에 대응시킨 추론이다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 원문 구분에 맞는다. f26 의 계층 부분은 근거로 쓰지 않는다.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람. KCI URL(ART002993454)·earticle·Korea Science 에서 논문의 존재와 FLEXING CPS·EDGE 활용을 확인했다. 게재지는 Korea Science 표기로는 한국인터넷방송통신학회논문지(DOI 10.7236/JIIBC.2023.23.4.189), 다른 검색 요약으로는 지능정보논문지 23권 4호라 충돌이 남는다(열린 질문 유지). 3D 시뮬레이션 측면은 22. 시뮬레이션·예측용 디지털 트윈과 걸친다.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: '연계 대상: ' 표시가 있고 분류 원문 9장 '로봇 자체 지능·제어' 경계와 맞다. 필드는 f4 에서 확인했다.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지: 분류 원문 9장 '시설·설비 제어' 행(작업 요청·예약·인계·상태 확인)과 맞는 경계 추론이다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f4(VDA 5050 state.schema 의 loads)·f14·f15(EPCIS 시각·오류 선언)는 7. 화물·재고·자산 식별과 추적 페이지와 같은 출처(ref-051, ref-044, ref-045)를 쓴다. 기존 id 를 재사용했으므로 새 각주를 만들지 않는다\",\"새 열린 질문 3(로봇 적재물 식별과 WMS 재고 불일치)은 oq-007(loadId 와 판독 식별자 불일치)·oq-003(판독 실패 시 인계 확정)과 가깝다. 중복은 아니지만 연결이 필요하다\",\"oq-024(선언 능력과 관측 운용 능력의 차이)가 이미 8. 실시간 세계 상태·데이터 일관성에 걸려 있으나 이번 브리프는 다루지 않았다\",\"ref-182~ref-196 은 이전 브리프 2026-09-25-13 이 같은 번호대를 다른 출처에 제안한 이력이 있다(현재 참고문헌 목록에는 없음). 퍼블리셔 충돌 확인 대상이다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f26: '장치 상태 변화를 모으는 장치 통신 계층과 모델을 갱신하는 디지털 트윈 계층을 나눈다' 부분은 삭제한다 — 브리프 발췌와 검증 검색 어디에도 근거가 없다. 남는 정의 부분만 'NIST 해설에 따르면 ISO 23247 은 …로 정의한다'처럼 NIST 해설 경유임을 밝혀 쓰고, 표준 원문은 열람하지 않았다고 적는다.\",\"f28: 근거로 f26 의 정의 부분과 f27 만 쓴다. 계층 구분 내용은 쓰지 않는다 — f26 의 해당 부분이 삭제됐기 때문이다.\",\"f20: 65% 수치는 'DeHoratius·Raman(2008)이 한 소매업체 37개 매장 조사에서 보고했다'는 귀속 문장으로 쓰고, 물류센터 수치가 아니라 소매 매장 조건임을 같은 문장에 밝힌다 — 단일 연구의 핵심 수치이기 때문이다.\",\"f22: '약 30% 적었다'는 수치는 Massawe 외(2012)가 이동 태그 환경 실험에서 보고한 값이라고 귀속해 쓴다 — 단일 연구의 저자 보고이고 실험 조건은 원문을 열지 않았다.\",\"f3·f8: '규정이 없다'고 단정하지 않는다. '이번에 연 범위에서 찾지 못했다'는 표현을 그대로 둔다 — ref-031 입력 원문은 전체의 약 53%만 담겨 있고, Open-RMF 는 구현 코드를 보지 않았다.\",\"f13·f16·f18·f21·f25·f28·f30·f31: 본문에서 이 위키가 도출한 [추정]임이 드러나게 쓴다(예: '확인한 표준들로 볼 때 …할 것으로 보인다'). 출처가 이 결론을 말한 것처럼 쓰지 않는다.\",\"f6·f7: 문·승강기 어댑터의 감독 역할은 Open-RMF 의 구성으로 서술한다. 문·승강기 제어 자체는 분류 원문 9장 '시설·설비 제어'의 연계 대상으로 짧게 다루고, ROP 직접 범위는 상태 확인·요청·인계로 한정한다.\",\"f23: Perpetua 는 로봇 지도·환경 모델 연구로 소개하고, ROP 세계 상태에 적용할 수 있는 방법 참고로만 쓴다 — 로봇 자체 지능 쪽 연구이기 때문이다.\",\"f29: 8절에서는 이기종 로봇·PLC 데이터를 실시간으로 수집·표현한 국내 사례로만 쓰고, 3D 시뮬레이션 측면은 10절에서 22. 시뮬레이션·예측용 디지털 트윈으로 연결만 한다. 제조 대상 사례임을 밝힌다. 각주의 게재지는 한쪽을 고르지 말고 '미확인(출처 충돌, 열린 질문)'으로 두며, 이 출처 충돌 열린 질문에 Korea Science 표기(한국인터넷방송통신학회논문지, DOI 10.7236/JIIBC.2023.23.4.189)와 다른 검색 요약(지능정보논문지)을 둘 다 적는다.\",\"10절: 22. 시뮬레이션·예측용 디지털 트윈과의 구분(f28)을 분류 원문 주석과 함께 제시하되, 원문 주석 인용 블록은 고치지 않는다.\",\"11절 새 열린 질문 3(로봇 적재물 식별과 WMS 재고 불일치): oq-007·oq-003 과 관련 있음을 밝혀 링크한다. 기존 oq-024 도 이 영역의 열린 질문으로 연결한다 — 이미 8. 실시간 세계 상태·데이터 일관성에 걸려 있다.\",\"인용: 출처당 직접 인용은 페이지에서 1회만 쓴다. ref-031(f1 의 30초 문구 외), ref-045(f14·f15), ref-051(f4)의 나머지 문구는 요약·재서술한다.\",\"각주: fetched=false 인 출처(ref-030, ref-182, ref-189, ref-190, ref-191, ref-192, ref-193, ref-194, ref-195, ref-196)의 각주 정의에는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-030 의 각주에는 W3C/OGC 작업반 저장소 편집본(sosa.ttl)으로 정의를 확인했음을 적는다.\",\"f9: ROS 2 QoS 는 Jazzy 판 문서 기준임을 기준일과 함께 밝힌다. ref-182~ref-188 과 VDA 5050 계열 각주의 발행일은 '미확인'으로 둔다.\",\"용어집: '디지털 섀도' 정의에 Kritzinger 외(2018)의 분류임을 밝히고, 기존 '디지털 트윈' 용어 페이지와 연결한다. 기존 '디지털 트윈' 정의는 바꾸지 않는다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. raw.githubusercontent.com 의 공식 저장소 원문과 입력 원문 텍스트만 열 수 있었고, 검증 검색은 9회(리서치 18회와 합쳐 27/30)였다. 확인 30건, 미확인 1건(f26), 교차 확인 0건. 강등: f26 사실 → 추정(계층 구분 부분 삭제, 정의는 NIST 해설 경유). 원문 미열람 출처: ref-030(브리프는 fetched=false 로 표시. 검증자가 작업반 편집본 sosa.ttl 로 정의를 확인함), ref-182, ref-189, ref-190, ref-191, ref-192, ref-193, ref-194, ref-195, ref-196. 주의: 핵심 절(3·6·9절)을 이루는 주장의 절반 이상이 이 위키의 [추정]이고, 모든 [사실] 주장은 발행 주체 한 곳의 자료에만 기댄다. 대상별 허용 경과 시간을 정한 출처는 찾지 못했다. 재고 기록 부정확 65%는 소매 매장 조건이다. VDA 5050 입력 원문은 전체의 약 53%만 담겨 있어 f3 의 '규정 없음'은 부재를 확정하지 않는다. ref-195 게재지는 출처 충돌로 열린 질문에 남는다. 브리프 표시 불일치: f18 은 source_unopened=false 이지만 근거 ref-182 가 미열람이다. 신규 참고문헌 id ref-182~ref-196 은 2026-09-25-13 제안 이력과 번호대가 겹치므로 퍼블리셔 확인이 필요하다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-25-18",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(data/source_texts/ref-031, 공식 저장소 main 3.0.0) 6.6 에 'published when relevant events occur or at least every 30 seconds' 와 사건 목록(주문 수신, load 변화, errors, operatingMode·driving·paused·safetyState 변화 등)이 있다. 단일 발행 주체라 교차 확인 없음. 발행일 미확인(oq-005)."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 원문 4.1(order·instantActions·state·factsheet·zoneSet·responses·visualization 은 QoS 0, connection 은 QoS 1)과 6.5(last will 로 CONNECTION_BROKEN 발행) 일치. 원문은 connection 토픽을 관제가 로봇 건강 확인에 쓰지 말라고도 적는다(참고)."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 입력 원문은 전체 207,642자 가운데 앞 110,737자만 담겨 있어 명세 전체에 규정이 없다고 확인할 수 없다. 원문 5.3 은 관제 기능으로 '통신 오류 감지·해결'을 적되 방법은 정하지 않고, waitForTrigger 의 시간 초과 처리는 관제 책임으로 둔다. '이번 열람 범위에서 찾지 못했다' 표현을 유지해야 한다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw 스키마 열람. timestamp ISO8601, lastNodeId·lastNodeSequenceId, newBaseRequest, mobileRobotPosition 의 localized('x, y, and theta can be trusted')·localizationScore·deviationRange·mapId, loads, paused·operatingMode·safetyState 확인. 발행일 미확인."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw robot_state.json 에 unix_millis_time, location, status 7종, issues('operators need to address'), battery(0.0~1.0) 있음. 그 밖에 task_id·commission·mutex_groups 필드도 있다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: integration_doors.md 원본에 /door_states 토픽, 'state supervisor' 문장, 어댑터를 거치지 않은 직접 요청을 이전 상태로 되돌린다는 문장이 있다. DoorState.msg 필드는 door_time·door_name·current_mode. ref-184·ref-186 은 같은 Open-RMF 계열이라 독립 교차가 아니다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: LiftState.msg(lift_time, available_floors, current/destination_floor, door_state, motion_state, current_mode 에 human·AGV·fire·offline·emergency, session_id)와 integration_lifts.md('keeping track of the internal and desired state', 'only relaying ... if it is deemed appropriate') 일치. 같은 계열이라 독립 교차가 아니다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 검증자가 두 문서를 다시 열어 보니 발행 주기와 오래된 상태 판정 규칙에 관한 서술이 없었다. 구현 코드는 보지 않았으므로 부재를 확정할 수는 없다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ros2_documentation jazzy 원본에서 Deadline·Lifespan('considered stale or expired')·Liveliness·Lease Duration 정의와 offered/requested deadline missed, liveliness lost/changed 이벤트 확인. Jazzy 판 기준임을 밝혀야 한다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Sparkplug 5장 원본에서 NDEATH 수신 시와 MQTT 서버 연결 상실 시의 STALE 표시 MUST, seq 0~255, Reorder Timeout 뒤 Rebirth 요청 확인. 발행일 미확인."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 OPC 10000-4 7.11 의 기관·제목·URL 일치를 확인했다. SourceTimestamp(값·상태 변경 시각, 원천 가까이에서 생성)와 ServerTimestamp('the time at which the Server knew the value to be accurate')는 스니펫으로 확인했다. StatusCode 의 Good·Uncertain·Bad 구분은 검증 스니펫에 없고 브리프 발췌에만 있다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과로 Yates 외, IEEE JSAC 2021-05 서베이임을 확인했다(시각 표시된 상태 갱신, 저지연 사이버물리 시스템). AoI 정의 문구는 브리프 스니펫 기준이다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f1·f9·f10·f6·f8·f12 를 분류 원문 SCM 질문에 대응시킨 추론이다. 근거 finding 은 모두 확인됐다. 허용 경과 시간 값을 제시한 출처가 없으므로 수치를 넣지 않는다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EPCIS.ttl 원본(버전 2.0, 수정 2021-09-30)의 eventTime·recordTime('bookkeeping mechanism')·eventTimeZoneOffset 정의 일치."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EPCIS.ttl 의 errorDeclaration·declarationTime·reason·correctiveEventIDs 정의와 CBV.ttl(2.0, 2021-09-30)의 did_not_occur('There are no corrective events')·incorrect_data 정의 일치. 두 파일은 같은 GS1 저장소라 독립 교차가 아니다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f15 를 로봇 상태 이력에 옮긴 설계 추론이다. 누구의 판단인지('이 위키의 추정') 드러나게 서술해야 한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증자가 raw sosa.ttl 을 열어 phenomenonTime('Not necessarily the same as the resultTime')·resultTime 정의를 확인했다. 작업반 저장소 편집본이라 /TR 권고안(2017-10-19)과 문구가 다를 수 있다. 브리프는 fetch_url 을 적고도 fetched=false 로 표시했다(보수적 표시라 신뢰도 상한 medium 유지)."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f11·f14·f17 을 대응시킨 추론이다. 브리프는 source_unopened=false 로 적었지만 근거 가운데 ref-182 는 원문 미열람이다. 세 표준이 서로를 참조하지 않는다는 점과 필드 이름·정의 차이를 밝혀야 한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 텍스트(ref-004 rmf-core)에 'living database ... delays, cancellations, or route changes', conflict notice, fleet manager 사이 협상, 제3자 judge 가 있다. 교통 일정은 '의도된 미래 궤적'을 담는다(원문)."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(INFORMS·HBS·RePEc 서지)에서 Management Science 54(4) 627-641, 37개 매장의 약 37만 건 가운데 65% 부정확, 실사는 부정확성을 줄이고 매장 환경 복잡성·유통 구조는 늘린다는 내용을 확인했다. 수치를 낸 연구는 하나라 독립 교차가 없다. '논문이 보고했다'는 귀속 서술과 '소매 매장 조건' 명시가 있어야 [사실]로 유지할 수 있다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f20 과 f4(loads)를 대응시킨 설계 추론이다. 소매 매장 수치를 물류센터에 그대로 옮기지 않는다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(MDPI DOI, PubMed 22666027, PMC3355407)에서 Massawe 외 Sensors 2012 와 'approximately 30% less overall errors' 를 확인했다. 수치는 이동 환경 시뮬레이션 조건의 저자 보고로 서술한다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(arXiv 2507.18808, IEEE Xplore)에서 persistence·emergence 필터 혼합, 베이즈 틀, IROS 2025 채택을 확인했다. 로봇 지도 쪽 연구라 ROP 에는 방법 참고로만 쓴다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(arXiv 1805.06358, ADS)에서 두 성질(조율 없는 수정, 같은 갱신 집합이면 결정적으로 같은 상태)을 확인했다. 제출일 2018-05-16."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f24 와 f6·f7 을 대조한 설계 추론이다. 로봇 세계 상태에 CRDT 를 적용한 사례는 확인하지 못했다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "원문 미열람(ISO 23247 원문도, NIST 해설 PDF 도 열지 않음). 검색 결과로 NIST 문서의 제목·URL 과 정의 문구('fit for purpose digital representation ... with synchronization')를 확인했다. '장치 통신 계층과 디지털 트윈 계층을 나눈다'는 부분은 브리프 발췌와 검증 스니펫 어디에도 없어 뒷받침되지 않는다. 표준 내용을 발행 기관이 아닌 NIST 해설로 인용하고 있다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. 검색 결과(ScienceDirect S2405896318316021, IFAC-PapersOnLine 2018)에서 통합 수준에 따른 디지털 모델·디지털 섀도(automated one-way data flow)·디지털 트윈 구분을 확인했다."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: f26 의 정의 부분과 f27 을 분류 원문 7장 주석에 대응시킨 추론이다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 원문 구분에 맞는다. f26 의 계층 부분은 근거로 쓰지 않는다."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람. KCI URL(ART002993454)·earticle·Korea Science 에서 논문의 존재와 FLEXING CPS·EDGE 활용을 확인했다. 게재지는 Korea Science 표기로는 한국인터넷방송통신학회논문지(DOI 10.7236/JIIBC.2023.23.4.189), 다른 검색 요약으로는 지능정보논문지 23권 4호라 충돌이 남는다(열린 질문 유지). 3D 시뮬레이션 측면은 22. 시뮬레이션·예측용 디지털 트윈과 걸친다."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: '연계 대상: ' 표시가 있고 분류 원문 9장 '로봇 자체 지능·제어' 경계와 맞다. 필드는 f4 에서 확인했다."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지: 분류 원문 9장 '시설·설비 제어' 행(작업 요청·예약·인계·상태 확인)과 맞는 경계 추론이다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f4(VDA 5050 state.schema 의 loads)·f14·f15(EPCIS 시각·오류 선언)는 7. 화물·재고·자산 식별과 추적 페이지와 같은 출처(ref-051, ref-044, ref-045)를 쓴다. 기존 id 를 재사용했으므로 새 각주를 만들지 않는다",
+        "새 열린 질문 3(로봇 적재물 식별과 WMS 재고 불일치)은 oq-007(loadId 와 판독 식별자 불일치)·oq-003(판독 실패 시 인계 확정)과 가깝다. 중복은 아니지만 연결이 필요하다",
+        "oq-024(선언 능력과 관측 운용 능력의 차이)가 이미 8. 실시간 세계 상태·데이터 일관성에 걸려 있으나 이번 브리프는 다루지 않았다",
+        "ref-182~ref-196 은 이전 브리프 2026-09-25-13 이 같은 번호대를 다른 출처에 제안한 이력이 있다(현재 참고문헌 목록에는 없음). 퍼블리셔 충돌 확인 대상이다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f26: '장치 상태 변화를 모으는 장치 통신 계층과 모델을 갱신하는 디지털 트윈 계층을 나눈다' 부분은 삭제한다 — 브리프 발췌와 검증 검색 어디에도 근거가 없다. 남는 정의 부분만 'NIST 해설에 따르면 ISO 23247 은 …로 정의한다'처럼 NIST 해설 경유임을 밝혀 쓰고, 표준 원문은 열람하지 않았다고 적는다.",
+      "f28: 근거로 f26 의 정의 부분과 f27 만 쓴다. 계층 구분 내용은 쓰지 않는다 — f26 의 해당 부분이 삭제됐기 때문이다.",
+      "f20: 65% 수치는 'DeHoratius·Raman(2008)이 한 소매업체 37개 매장 조사에서 보고했다'는 귀속 문장으로 쓰고, 물류센터 수치가 아니라 소매 매장 조건임을 같은 문장에 밝힌다 — 단일 연구의 핵심 수치이기 때문이다.",
+      "f22: '약 30% 적었다'는 수치는 Massawe 외(2012)가 이동 태그 환경 실험에서 보고한 값이라고 귀속해 쓴다 — 단일 연구의 저자 보고이고 실험 조건은 원문을 열지 않았다.",
+      "f3·f8: '규정이 없다'고 단정하지 않는다. '이번에 연 범위에서 찾지 못했다'는 표현을 그대로 둔다 — ref-031 입력 원문은 전체의 약 53%만 담겨 있고, Open-RMF 는 구현 코드를 보지 않았다.",
+      "f13·f16·f18·f21·f25·f28·f30·f31: 본문에서 이 위키가 도출한 [추정]임이 드러나게 쓴다(예: '확인한 표준들로 볼 때 …할 것으로 보인다'). 출처가 이 결론을 말한 것처럼 쓰지 않는다.",
+      "f6·f7: 문·승강기 어댑터의 감독 역할은 Open-RMF 의 구성으로 서술한다. 문·승강기 제어 자체는 분류 원문 9장 '시설·설비 제어'의 연계 대상으로 짧게 다루고, ROP 직접 범위는 상태 확인·요청·인계로 한정한다.",
+      "f23: Perpetua 는 로봇 지도·환경 모델 연구로 소개하고, ROP 세계 상태에 적용할 수 있는 방법 참고로만 쓴다 — 로봇 자체 지능 쪽 연구이기 때문이다.",
+      "f29: 8절에서는 이기종 로봇·PLC 데이터를 실시간으로 수집·표현한 국내 사례로만 쓰고, 3D 시뮬레이션 측면은 10절에서 22. 시뮬레이션·예측용 디지털 트윈으로 연결만 한다. 제조 대상 사례임을 밝힌다. 각주의 게재지는 한쪽을 고르지 말고 '미확인(출처 충돌, 열린 질문)'으로 두며, 이 출처 충돌 열린 질문에 Korea Science 표기(한국인터넷방송통신학회논문지, DOI 10.7236/JIIBC.2023.23.4.189)와 다른 검색 요약(지능정보논문지)을 둘 다 적는다.",
+      "10절: 22. 시뮬레이션·예측용 디지털 트윈과의 구분(f28)을 분류 원문 주석과 함께 제시하되, 원문 주석 인용 블록은 고치지 않는다.",
+      "11절 새 열린 질문 3(로봇 적재물 식별과 WMS 재고 불일치): oq-007·oq-003 과 관련 있음을 밝혀 링크한다. 기존 oq-024 도 이 영역의 열린 질문으로 연결한다 — 이미 8. 실시간 세계 상태·데이터 일관성에 걸려 있다.",
+      "인용: 출처당 직접 인용은 페이지에서 1회만 쓴다. ref-031(f1 의 30초 문구 외), ref-045(f14·f15), ref-051(f4)의 나머지 문구는 요약·재서술한다.",
+      "각주: fetched=false 인 출처(ref-030, ref-182, ref-189, ref-190, ref-191, ref-192, ref-193, ref-194, ref-195, ref-196)의 각주 정의에는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다. ref-030 의 각주에는 W3C/OGC 작업반 저장소 편집본(sosa.ttl)으로 정의를 확인했음을 적는다.",
+      "f9: ROS 2 QoS 는 Jazzy 판 문서 기준임을 기준일과 함께 밝힌다. ref-182~ref-188 과 VDA 5050 계열 각주의 발행일은 '미확인'으로 둔다.",
+      "용어집: '디지털 섀도' 정의에 Kritzinger 외(2018)의 분류임을 밝히고, 기존 '디지털 트윈' 용어 페이지와 연결한다. 기존 '디지털 트윈' 정의는 바꾸지 않는다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경에서 검증됐다. raw.githubusercontent.com 의 공식 저장소 원문과 입력 원문 텍스트만 열 수 있었고, 검증 검색은 9회(리서치 18회와 합쳐 27/30)였다. 확인 30건, 미확인 1건(f26), 교차 확인 0건. 강등: f26 사실 → 추정(계층 구분 부분 삭제, 정의는 NIST 해설 경유). 원문 미열람 출처: ref-030(브리프는 fetched=false 로 표시. 검증자가 작업반 편집본 sosa.ttl 로 정의를 확인함), ref-182, ref-189, ref-190, ref-191, ref-192, ref-193, ref-194, ref-195, ref-196. 주의: 핵심 절(3·6·9절)을 이루는 주장의 절반 이상이 이 위키의 [추정]이고, 모든 [사실] 주장은 발행 주체 한 곳의 자료에만 기댄다. 대상별 허용 경과 시간을 정한 출처는 찾지 못했다. 재고 기록 부정확 65%는 소매 매장 조건이다. VDA 5050 입력 원문은 전체의 약 53%만 담겨 있어 f3 의 '규정 없음'은 부재를 확정하지 않는다. ref-195 게재지는 출처 충돌로 열린 질문에 남는다. 브리프 표시 불일치: f18 은 source_unopened=false 이지만 근거 ref-182 가 미열람이다. 신규 참고문헌 id ref-182~ref-196 은 2026-09-25-13 제안 이력과 번호대가 겹치므로 퍼블리셔 확인이 필요하다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 10291,
+  "type": "result",
+  "duration_ms": 191536,
+  "uuid": "3cf3d68a-9efd-41a5-ac6b-02fc34d0685f",
+  "ttft_stream_ms": 2394,
+  "time_to_request_ms": 100,
+  "first_content_frame_ms": 2395,
+  "time_to_request_from_spawn_ms": 7370398,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790303223296.2058,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 193.8
+}
