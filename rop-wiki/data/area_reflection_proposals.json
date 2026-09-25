@@ -1271,6 +1271,56 @@
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "summary": "정적 능력 대조(6. 지도·공간·위치 모델, 5. 로봇 능력·작업 온톨로지)와 현재 상태 층(문 상태, Open-RMF LaneRequest 차선 폐쇄)을 분리해야 한다는 점(추정, f23)과 어포던스 상태로 막힌 경로를 설명하는 연구(f20).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-66",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 14,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "rmf_task 작업 계획기의 순서 계획(요청 시작 시각 준수, 탐욕·A* 선택)과 README 기준 충전 작업 자동 삽입(f1·f2), LLM 직접 스케줄 생성의 실행 가능성 한계 벤치마크(ConstraintBench 65.0%·30.5% 조건 병기 f8, SCHEDBench 표현 민감성 f10, DynaSchedBench f12, R-ConstraintBench [추정] f9), LLM 을 결정 루프 밖에 두고 규칙을 합성하는 RACE-Sched(f13)와 분담 가설(f22·f24 [추정]). 교차 규칙에 따라 27. AI·학습·적응과 모델 운영과 양쪽에 연결한다.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-66",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 13,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "TaskPlanner 의 탐욕(최적성 미보장)·A*(최적성 보장) 선택과 기본 비용 계산기 BinaryPriorityCostCalculator(f2), LLM 정식화+선형·정수계획·MILP·makespan 최소화 해법 배정 분담(f21), 분류 원문 질문 '가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가?'와 목적함수 기반 해법의 비교 가능성([추정] f25, 30.5% 조건 병기).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-66",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 27,
+      "section": "6. 대표 접근법과 기술",
+      "summary": "LLM-모듈로 틀(Kambhampati 외, [의견] f7), LLM 을 해법기가 아니라 정식화·인스턴스화 인터페이스로 쓰는 OptiMUS(f15)·LAPPI(f16, Kuroki 외), 스케줄링 결과의 설명문을 LLM 으로 생성하는 연구(f19). 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링과 함께 연결한다.",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-66",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 27,
+      "section": "8. 대표 연구와 자료",
+      "summary": "운영과학 LLM 적용 서베이(Wang·Li, 자동 모델링·보조 최적화·직접 풀이의 세 경로, f17)와 LLM 직접 풀이 벤치마크 ConstraintBench(f8)·SCHEDBench(f10)를 대표 자료 후보로 제안한다(원문 미열람).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-66",
+      "date": "2026-09-25",
+      "track": "nl-task-chatbot",
+      "stage": 3,
+      "area_no": 20,
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "summary": "동적 재스케줄링에서 LLM 추론 지연 때문에 LLM 을 결정 루프 밖에 두고 규칙·정책을 만들어 시뮬레이션·검증 뒤 반영하는 구조(RACE-Sched f13, Li·Li f14, 종합 f24 [추정])가 14. 작업 순서·스케줄링·27. AI·학습·적응과 모델 운영과 이어진다. 시뮬레이션은 정책 검증 도구로만 다룬다.",
+      "status": "제안"
     }
   ]
 }

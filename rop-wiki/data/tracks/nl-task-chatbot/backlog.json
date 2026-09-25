@@ -75,9 +75,9 @@
       "question": "스케줄링 결정은 LLM과 최적화 엔진 중 어디에 맡기는가?",
       "stage": 3,
       "origin": "사용자",
-      "status": "열림",
-      "answered_run_id": null,
-      "answer_link": null,
+      "status": "답함",
+      "answered_run_id": "2026-09-25-66",
+      "answer_link": "docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md#q3-01",
       "created": "2026-09-25"
     },
     {
@@ -377,6 +377,28 @@
       "answer_link": null,
       "created": "2026-09-25",
       "origin_run_id": "2026-09-25-62"
+    },
+    {
+      "id": "q3-11",
+      "question": "채팅 지시에서 LLM 이 뽑은 기한·우선순위·선호(목적 가중치)를 rmf_task 비용 계산기나 MILP 목적함수·제약으로 넘기는 인터페이스는 어떤 형식으로 두고, LAPPI 처럼 사용자가 결과를 보고 가중치를 고치는 반복을 어떻게 설계하는가? (q3-01 에서 파생)",
+      "stage": 3,
+      "origin": "f16",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-66"
+    },
+    {
+      "id": "q4-08",
+      "question": "RACE-Sched·Li·Li 처럼 LLM 이 루프 밖에서 만든 배정·스케줄 규칙을 시뮬레이션·샌드박스에서 검증한 뒤 운영 정책으로 반영할 때, 어떤 검증 기준을 통과해야 반영을 허용하는가? (q3-01 에서 파생)",
+      "stage": 4,
+      "origin": "f13",
+      "status": "열림",
+      "answered_run_id": null,
+      "answer_link": null,
+      "created": "2026-09-25",
+      "origin_run_id": "2026-09-25-66"
     }
   ]
 }

@@ -296,6 +296,7 @@ nav:
     - IEC 공통 데이터 사전 (IEC Common Data Dictionary (IEC CDD)): glossary/iec-common-data-dictionary.md
     - IndoorGML (IndoorGML): glossary/indoorgml.md
     - LLM 에이전트 (LLM Agent): glossary/llm-agent.md
+    - LLM-모듈로 프레임워크 (LLM-Modulo Framework): glossary/llm-modulo-framework.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
@@ -400,7 +401,9 @@ nav:
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
+    - 자원 제약 프로젝트 스케줄링 문제 (Resource-Constrained Project Scheduling Problem (RCPSP)): glossary/resource-constrained-project-scheduling-problem.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
+    - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
     - 장애 주입 (Fault Injection): glossary/fault-injection.md
     - 적합성 시험 (Conformance Test): glossary/conformance-test.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
@@ -1076,11 +1079,19 @@ nav:
     - ? 'ref-584 — CAN/CSA IEC 62443-3-3-2017 - Industrial communication networks - Network and system security - Part 3-3: System security requirements and security levels (Adopted IEC 62443-3-3:2013, first edition, 2013-08)'
       : references/ref-584.md
     - ref-585 — Security Aspects of Zones and Conduits in IEC 62443: references/ref-585.md
+    - ref-586 — LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks: references/ref-586.md
     - ref-587 — 개인정보 보호법: references/ref-587.md
     - ref-588 — '이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서' 관련 인사이트: references/ref-588.md
     - ref-589 — 근로자참여 및 협력증진에 관한 법률: references/ref-589.md
     - ref-590 — 로봇 보안취약점 점검 체크리스트 해설서: references/ref-590.md
     - ref-591 — The Cyber Resilience Act - Summary of the legislative text: references/ref-591.md
+    - 'ref-592 — ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization': references/ref-592.md
+    - 'ref-593 — R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling': references/ref-593.md
+    - 'ref-594 — SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling': references/ref-594.md
+    - 'ref-595 — Starjob: Dataset for LLM-Driven Job Shop Scheduling': references/ref-595.md
+    - ref-596 — OptiMUS — Optimization Modeling Using mip Solvers and large language models (GitHub README): references/ref-596.md
+    - 'ref-597 — OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale': references/ref-597.md
+    - 'ref-598 — LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation': references/ref-598.md
     - 'ref-599 — Formal Specification and Verification of Autonomous Robotic Systems: A Survey': references/ref-599.md
     - ref-600 — A Study on Challenges of Testing Robotic Systems: references/ref-600.md
     - ref-601 — ros2_fault_injection — README: references/ref-601.md
@@ -1093,6 +1104,16 @@ nav:
     - ref-607 — 시험평가 | KIRIA 첨단로봇 실증지원 디지털 플랫폼: references/ref-607.md
     - ref-608 — OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments: references/ref-608.md
     - ref-609 — BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper): references/ref-609.md
+    - ? 'ref-610 — DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents'
+      : references/ref-610.md
+    - ? 'ref-611 — Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling'
+      : references/ref-611.md
+    - 'ref-612 — LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling': references/ref-612.md
+    - 'ref-613 — PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals': references/ref-613.md
+    - 'ref-614 — Large Language Models in Operations Research: Methods, Applications, and Challenges': references/ref-614.md
+    - ? ref-615 — Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models
+      : references/ref-615.md
+    - ref-616 — Hybrid LLM-based Intelligent Framework for Robot Task Scheduling: references/ref-616.md
     - ref-640 — rmf_building_map_msgs — rmf_building_map_msgs/msg/GraphEdge.msg: references/ref-640.md
     - ref-641 — Optimized Directed Roadmap Graph for Multi-Agent Path Finding Using Stochastic Gradient Descent: references/ref-641.md
     - ref-642 — An Indoor Space Subspacing Framework for Implementing a 3D Hierarchical Network-Based Topological Data Model: references/ref-642.md

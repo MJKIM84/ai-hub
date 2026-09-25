@@ -30,6 +30,30 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
 | 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
+| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-01 답함(3절 #q3-01 신설), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건(초안 갱신만 충족), 상태 줄 갱신. 2차 수정: 6절 초안 갱신 행 충족으로 정정, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸에 ConstraintBench 조건 병기 |
+| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-66 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 2차 수정: 새 각주 정의 12개를 5절 끝에 직접 두고 ref-598 기관을 Kuroki 외로, ref-612 소속을 '소속 미확인'으로 고침 |
+| 2026-09-25-66 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-01 답함(스케줄링은 결정적 해법, LLM 은 인스턴스화·설명 분담 가설, 신뢰도 low), 업무 분해·배정 설계 초안 v0.5 → v0.6(일정 산출 방식), 아이디어 2 5절에 분담 소절, 후속 질문 2건 |
+| 2026-09-25-66 | 생성 | [docs/references/ref-586.md](references/ref-586.md) | 참고문헌 ref-586 등록: LLMs Can't Plan, But Can Help Planning in LLM-Modulo Framewo… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-592.md](references/ref-592.md) | 참고문헌 ref-592 등록: ConstraintBench: Benchmarking LLM Constraint Reasoning on Di… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-593.md](references/ref-593.md) | 참고문헌 ref-593 등록: R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling |
+| 2026-09-25-66 | 생성 | [docs/references/ref-594.md](references/ref-594.md) | 참고문헌 ref-594 등록: SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithf… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-595.md](references/ref-595.md) | 참고문헌 ref-595 등록: Starjob: Dataset for LLM-Driven Job Shop Scheduling |
+| 2026-09-25-66 | 생성 | [docs/references/ref-596.md](references/ref-596.md) | 참고문헌 ref-596 등록: OptiMUS — Optimization Modeling Using mip Solvers and large… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-597.md](references/ref-597.md) | 참고문헌 ref-597 등록: OptiMUS-0.3: Using Large Language Models to Model and Solve… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-598.md](references/ref-598.md) | 참고문헌 ref-598 등록: LAPPI: Interactive Optimization with LLM-Assisted Preference… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-610.md](references/ref-610.md) | 참고문헌 ref-610 등록: DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-611.md](references/ref-611.md) | 참고문헌 ref-611 등록: Harmonizing Real-Time Constraints and Long-Horizon Reasoning… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-612.md](references/ref-612.md) | 참고문헌 ref-612 등록: LLM-Guided Heuristic Design from Simulation Traces: A Case S… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-613.md](references/ref-613.md) | 참고문헌 ref-613 등록: PortAgent: LLM-driven Vehicle Dispatching Agent for Port Ter… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-614.md](references/ref-614.md) | 참고문헌 ref-614 등록: Large Language Models in Operations Research: Methods, Appli… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-615.md](references/ref-615.md) | 참고문헌 ref-615 등록: Generating textual explanations for scheduling systems lever… |
+| 2026-09-25-66 | 생성 | [docs/references/ref-616.md](references/ref-616.md) | 참고문헌 ref-616 등록: Hybrid LLM-based Intelligent Framework for Robot Task Schedu… |
+| 2026-09-25-66 | 생성 | [docs/glossary/job-shop-scheduling-problem.md](glossary/job-shop-scheduling-problem.md) | 용어집 항목 작업장 스케줄링 문제 |
+| 2026-09-25-66 | 생성 | [docs/glossary/resource-constrained-project-scheduling-problem.md](glossary/resource-constrained-project-scheduling-problem.md) | 용어집 항목 자원 제약 프로젝트 스케줄링 문제 |
+| 2026-09-25-66 | 생성 | [docs/glossary/llm-modulo-framework.md](glossary/llm-modulo-framework.md) | 용어집 항목 LLM-모듈로 프레임워크 |
+| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설), 후속 질문 q3-10·q5-05, 4·5·6·8·9절 갱신, 7절 반영 제안 추가. H1 아래 단계 상태 줄(답한 질문 2건 → 3건)은 H2 절 밖이라 패치로 보낼 수 없으므로 코드에서 맞춰야 한다 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.7 → v0.8: 문에 자동 구동 여부·장애인 접근 가능 속성(f8), 계단에 단 높이·디딤판 길이·단 수 속성(f9) 추가(두 행 확정 유지). 개념 '통과 요구 조건'은 6절 질문으로. H1 의 (v0.7) 표기는 H2 절 밖이라 패치로 보낼 수 없어 프런트매터 ontology_version 0.8 에 맞춰 코드가 (v0.8)로 바꿔야 한다 |
 | 2026-09-25-65 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절: 핵심 구성 요소에 '능력 대조' 소절 신설, '다른 아이디어와의 연결' 작성(아이디어 1·13. 작업 배정 — MRTA 연결, 추정), 새 각주 정의 추가 |

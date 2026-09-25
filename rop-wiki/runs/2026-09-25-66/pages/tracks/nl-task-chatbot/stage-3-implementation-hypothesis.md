@@ -9,7 +9,7 @@ status: draft
 confidence: low
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-674, ref-675, ref-676, ref-677, ref-678, ref-679, ref-680, ref-681, ref-682, ref-683, ref-684, ref-685, ref-686, ref-687, ref-689, ref-166, ref-181, ref-242, ref-167]
+sources: [ref-404, ref-377, ref-376, ref-031, ref-091, ref-092, ref-586, ref-592, ref-593, ref-594, ref-595, ref-596, ref-597, ref-598, ref-610, ref-611, ref-612, ref-613, ref-614, ref-615, ref-616, ref-166, ref-181, ref-242, ref-167]
 last_run: 2026-09-25
 version: 2
 ---
@@ -48,7 +48,7 @@ version: 2
 
 ### q3-01 스케줄링 결정은 LLM과 최적화 엔진 중 어디에 맡기는가? {#q3-01}
 
-확인한 자료로는 LLM 이 스케줄을 직접 만들면 제약이 겹치거나 문장 표현이 바뀔 때 실행 가능성이 흔들리므로, ROP 에서는 순서·시각·충전 삽입 같은 스케줄링 결정은 rmf_task 같은 결정적 최적화·계획 해법이 맡고 LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-675][^ref-676][^ref-677][^ref-682][^ref-377][^ref-092][^ref-679][^ref-681][^ref-687] 이 결론은 이 위키의 종합이며, 근거가 작업장·프로젝트·운영과학 일반·건설·항만·여행 계획 조건이고 이종 제조사 창고 플릿에서 두 방식을 비교한 자료가 없어 신뢰도가 낮다. 아래에 근거를 나누어 적는다.
+확인한 자료로는 LLM 이 스케줄을 직접 만들면 제약이 겹치거나 문장 표현이 바뀔 때 실행 가능성이 흔들리므로, ROP 에서는 순서·시각·충전 삽입 같은 스케줄링 결정은 rmf_task 같은 결정적 최적화·계획 해법이 맡고 LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. [추정][^ref-592][^ref-593][^ref-594][^ref-610][^ref-377][^ref-092][^ref-596][^ref-598][^ref-615] 이 결론은 이 위키의 종합이며, 근거가 작업장·프로젝트·운영과학 일반·건설·항만·여행 계획 조건이고 이종 제조사 창고 플릿에서 두 방식을 비교한 자료가 없어 신뢰도가 낮다. 아래에 근거를 나누어 적는다.
 
 #### 로봇 오케스트레이션 도구는 스케줄링을 어디에 두는가
 
@@ -59,32 +59,32 @@ version: 2
 
 #### LLM 이 스케줄을 직접 만들 때의 한계
 
-- ConstraintBench 저자들은 10개 운영과학 영역 200개 과제에서 6개 모델에게 제약 최적화 문제를 직접 풀게 했을 때, 가장 좋은 모델의 실행 가능 해 비율이 65.0%였고 실행 가능성과 최적성(솔버 최적값 기준 0.1% 이내)을 함께 만족한 비율은 어느 모델도 30.5%를 넘지 못했으며, 실패 유형으로 소요 시간 제약 오해와 존재하지 않는 개체 생성을 들었다(저자 보고값, 원문 미열람). [사실][^ref-675] 영역별 실행 가능 비율은 편차가 크다고 보고되었으나 수치는 검색 요약마다 달라 미확인이다.
-- R-ConstraintBench 저자들은 자원 제약 프로젝트 스케줄링 문제(Resource-Constrained Project Scheduling Problem, RCPSP)에서 선후 제약을 늘린 뒤 정지 시간·시간창·배타 제약을 더해 LLM 을 평가했고, 선후 제약만 있을 때는 실행 가능성이 천장에 가깝지만 제약이 함께 걸리면 급락하며 병목은 그래프 깊이가 아니라 제약 사이 상호작용이라고 보고한 것으로 보인다(저자 보고, 원문 미열람·검증 미재확인). [추정][^ref-676]
-- SCHEDBench 저자들은 작업장·자원 제약 프로젝트·간호사 근무·교과 시간표 스케줄링 1,132개 사례로 LLM 이 완성 스케줄을 직접 내게 하고, 같은 문제를 의미가 같은 다른 문장 표현으로 주면 실행 가능 비율이 떨어지고 제약 위반이 달라진다고 보고했다(저자 보고, 원문 미열람; 평가한 모델 수와 가장 민감한 변형 유형은 미확인). [사실][^ref-677]
-- DynaSchedBench 저자들은 동적 유연 작업장 스케줄링에서 LLM 스케줄러에 전체 구조 정보를 주면 간결한 통계 요약을 줄 때보다 성능이 나빠졌고(1.66% 대 0.65%, 지표 정의 미확인), 도구를 쓰는 탐색은 토큰 비용이 약 3배인데 성능은 더 낮았다고 보고했다(저자 보고값, 원문 미열람). [사실][^ref-682]
-- Kambhampati 외(ICML 2024 입장 논문)는 자기회귀 LLM 이 혼자서는 계획이나 자기 검증을 하지 못한다고 보고, LLM 을 근사적 아이디어 생성기로 두고 외부 모델 기반 검증기·비평자와 양방향으로 결합하는 LLM-모듈로(LLM-Modulo) 틀을 제안한다. [의견][^ref-674]
+- ConstraintBench 저자들은 10개 운영과학 영역 200개 과제에서 6개 모델에게 제약 최적화 문제를 직접 풀게 했을 때, 가장 좋은 모델의 실행 가능 해 비율이 65.0%였고 실행 가능성과 최적성(솔버 최적값 기준 0.1% 이내)을 함께 만족한 비율은 어느 모델도 30.5%를 넘지 못했으며, 실패 유형으로 소요 시간 제약 오해와 존재하지 않는 개체 생성을 들었다(저자 보고값, 원문 미열람). [사실][^ref-592] 영역별 실행 가능 비율은 편차가 크다고 보고되었으나 수치는 검색 요약마다 달라 미확인이다.
+- R-ConstraintBench 저자들은 자원 제약 프로젝트 스케줄링 문제(Resource-Constrained Project Scheduling Problem, RCPSP)에서 선후 제약을 늘린 뒤 정지 시간·시간창·배타 제약을 더해 LLM 을 평가했고, 선후 제약만 있을 때는 실행 가능성이 천장에 가깝지만 제약이 함께 걸리면 급락하며 병목은 그래프 깊이가 아니라 제약 사이 상호작용이라고 보고한 것으로 보인다(저자 보고, 원문 미열람·검증 미재확인). [추정][^ref-593]
+- SCHEDBench 저자들은 작업장·자원 제약 프로젝트·간호사 근무·교과 시간표 스케줄링 1,132개 사례로 LLM 이 완성 스케줄을 직접 내게 하고, 같은 문제를 의미가 같은 다른 문장 표현으로 주면 실행 가능 비율이 떨어지고 제약 위반이 달라진다고 보고했다(저자 보고, 원문 미열람; 평가한 모델 수와 가장 민감한 변형 유형은 미확인). [사실][^ref-594]
+- DynaSchedBench 저자들은 동적 유연 작업장 스케줄링에서 LLM 스케줄러에 전체 구조 정보를 주면 간결한 통계 요약을 줄 때보다 성능이 나빠졌고(1.66% 대 0.65%, 지표 정의 미확인), 도구를 쓰는 탐색은 토큰 비용이 약 3배인데 성능은 더 낮았다고 보고했다(저자 보고값, 원문 미열람). [사실][^ref-610]
+- Kambhampati 외(ICML 2024 입장 논문)는 자기회귀 LLM 이 혼자서는 계획이나 자기 검증을 하지 못한다고 보고, LLM 을 근사적 아이디어 생성기로 두고 외부 모델 기반 검증기·비평자와 양방향으로 결합하는 LLM-모듈로(LLM-Modulo) 틀을 제안한다. [의견][^ref-586]
 
 #### 반례: LLM 이 스케줄을 직접 만든 연구
 
-- Starjob 저자들은 작업장 스케줄링 문제(Job Shop Scheduling Problem, JSSP) 13만 개 사례를 자연어로 기술한 데이터셋으로 Llama 8B 를 미세 조정하면 실행 가능한 스케줄을 생성하고, 우선순위 디스패치 규칙과 초기 신경망 방법(L2D)보다 DMU 평균 15.36%, Taillard 평균 7.85% 개선된다고 보고했다(저자 보고값, 원문 미열람; 정확 해법기와의 비교는 미확인). [사실][^ref-678]
-- 건설 로봇 사례로, Saha 외는 LLM 에 에이전트의 행동 능력과 목표를 주고 생성 LLM(GPT-4)과 감독 LLM(Gemma 3·Llama 4·Mistral 7B)이 함께 스케줄을 만드는, 해법기 없이 LLM 이 일정을 직접 내는 틀을 제안했다(해법기 대비 정량 비교는 미확인, 건설 현장은 분류 원문 9장의 업종별 조건에 속하는 연계 대상이어서 방법 사례로만 다룸). [사실][^ref-689]
-- 두 연구로 보면 LLM 직접 스케줄링이 배제되는 것은 아니지만, 비교 대상이 정확 해법기가 아니거나 확인되지 않아 해법기 대체의 근거로는 약한 것으로 보인다. [추정][^ref-678][^ref-689][^ref-675]
+- Starjob 저자들은 작업장 스케줄링 문제(Job Shop Scheduling Problem, JSSP) 13만 개 사례를 자연어로 기술한 데이터셋으로 Llama 8B 를 미세 조정하면 실행 가능한 스케줄을 생성하고, 우선순위 디스패치 규칙과 초기 신경망 방법(L2D)보다 DMU 평균 15.36%, Taillard 평균 7.85% 개선된다고 보고했다(저자 보고값, 원문 미열람; 정확 해법기와의 비교는 미확인). [사실][^ref-595]
+- 건설 로봇 사례로, Saha 외는 LLM 에 에이전트의 행동 능력과 목표를 주고 생성 LLM(GPT-4)과 감독 LLM(Gemma 3·Llama 4·Mistral 7B)이 함께 스케줄을 만드는, 해법기 없이 LLM 이 일정을 직접 내는 틀을 제안했다(해법기 대비 정량 비교는 미확인, 건설 현장은 분류 원문 9장의 업종별 조건에 속하는 연계 대상이어서 방법 사례로만 다룸). [사실][^ref-616]
+- 두 연구로 보면 LLM 직접 스케줄링이 배제되는 것은 아니지만, 비교 대상이 정확 해법기가 아니거나 확인되지 않아 해법기 대체의 근거로는 약한 것으로 보인다. [추정][^ref-595][^ref-616][^ref-592]
 
 #### LLM 이 정식화하고 해법기가 푸는 결합 구조
 
 - LLM+P 는 LLM 이 자연어 계획 문제를 PDDL 문제 파일로 바꾸고 고전 계획기 Fast Downward 가 계획을 구하는 구조이며, LLM 이 계획을 직접 내는 방식(LLM-as-Planner)과 문맥 예시 유무를 바꾼 기준선을 7개 도메인에서 비교한다(공식 저장소 README, 확인일 2026-09-25 기준). [사실][^ref-091] LLM+P 논문 저자들은 GPT-4 실험에서 LLM+P 가 LLM-as-Planner 보다 훨씬 많은 문제를 풀었고, 직접 계획 방식은 공간 관계가 복잡한 문제에서 완전히 실패했으며, 문맥 예시가 없으면 LLM+P 도 실패했다고 보고한 것으로 보인다(LLM+P 논문 저자 보고, 원문 미열람). [추정][^ref-092]
-- OptiMUS 공식 README 는 순차형(v1, 중소 규모 문제), 에이전트형(v2), 검색 증강·대규모 기법(v3)의 구성과 MIP·LP 해법기 사용을 밝힌다(확인일 2026-09-25 기준). [사실][^ref-679] OptiMUS-0.3 논문은 LLM 이 정식화한 모델을 Gurobi 파이썬 API 코드로 옮겨 해법기로 풀고 각 LLM 구성 요소에 오류 검사 모듈을 둔다고 설명하며, 이 부분은 원문 미열람 논문의 요약 기준이고 README 와 같은 저자 계열이라 독립 교차가 아니다. [사실][^ref-680]
-- LAPPI(Kuroki 외, IEEE Access 2026)는 LLM 이 대화로 사용자의 모호한 선호를 후보 항목·선호 점수·제약으로 바꿔 최적화 문제를 인스턴스화하고 풀이는 기존 해법기에 맡기는 대화형 최적화 방식이며, 여행 계획 사용자 연구에서 기존 방식과 프롬프트만 쓴 방식보다 나은 실행 가능 계획을 냈다고 저자가 보고했다(원문 미열람). [사실][^ref-681]
+- OptiMUS 공식 README 는 순차형(v1, 중소 규모 문제), 에이전트형(v2), 검색 증강·대규모 기법(v3)의 구성과 MIP·LP 해법기 사용을 밝힌다(확인일 2026-09-25 기준). [사실][^ref-596] OptiMUS-0.3 논문은 LLM 이 정식화한 모델을 Gurobi 파이썬 API 코드로 옮겨 해법기로 풀고 각 LLM 구성 요소에 오류 검사 모듈을 둔다고 설명하며, 이 부분은 원문 미열람 논문의 요약 기준이고 README 와 같은 저자 계열이라 독립 교차가 아니다. [사실][^ref-597]
+- LAPPI(Kuroki 외, IEEE Access 2026)는 LLM 이 대화로 사용자의 모호한 선호를 후보 항목·선호 점수·제약으로 바꿔 최적화 문제를 인스턴스화하고 풀이는 기존 해법기에 맡기는 대화형 최적화 방식이며, 여행 계획 사용자 연구에서 기존 방식과 프롬프트만 쓴 방식보다 나은 실행 가능 계획을 냈다고 저자가 보고했다(원문 미열람). [사실][^ref-598]
 - 다중 로봇 LLM 연구 가운데 LiP-LLM(선형계획), PIP-LLM(정수계획), FLEET(makespan 최소화), Peng 외(MILP)는 LLM 이 의존 그래프·적합도·제약을 정식화하고 배정·일정은 결정적 해법이 푸는 분담을 쓴다. [사실][^ref-166][^ref-181][^ref-242][^ref-167]
-- 운영과학(Operations Research, OR)의 LLM 적용을 정리한 서베이(Wang·Li)는 기존 방법을 자동 모델링, 보조 최적화(휴리스틱·알고리즘 설계), 직접 풀이의 세 경로로 나누고, 의미–구조 대응의 불안정, 일반화·해석 가능성 한계, 평가 체계 부족, 산업 배치 장벽을 과제로 든다. [사실][^ref-686]
+- 운영과학(Operations Research, OR)의 LLM 적용을 정리한 서베이(Wang·Li)는 기존 방법을 자동 모델링, 보조 최적화(휴리스틱·알고리즘 설계), 직접 풀이의 세 경로로 나누고, 의미–구조 대응의 불안정, 일반화·해석 가능성 한계, 평가 체계 부족, 산업 배치 장벽을 과제로 든다. [사실][^ref-614]
 
 #### 결정 루프 밖에서 규칙·정책을 만드는 구조
 
-- RACE-Sched 는 LLM 추론 지연이 산업 제어의 밀리초 단위 결정 주기와 맞지 않는다고 보고, 실시간 디스패치는 저지연 기호 휴리스틱이 맡고 병렬 흐름에서 LLM 이 규칙을 합성·검증·진화시키는 이중 흐름 구조를 제안했다(저자 보고, 원문 미열람; 규칙을 운영에 반영하는 방식의 세부는 미확인). [사실][^ref-683]
-- Li·Li(소속 미확인)는 동적 생산·AGV 스케줄링의 이산 사건 시뮬레이션에서 LLM 관리 에이전트가 사건 기록으로 병목 가설을 세우고 편집 에이전트가 규칙 기반 정책 코드를 고치는 휴리스틱 설계 틀을 제안했으며, 결과 정책이 수리계획·규칙·메타휴리스틱 기준선보다 나았다고 보고했다(저자 보고, 원문 미열람). [사실][^ref-684] 여기서 시뮬레이션은 LLM 이 만든 정책을 검증하는 도구로만 쓰인다.
-- 연계 대상: 컨테이너 터미널 차량 디스패칭은 분류 원문 9장의 거점 간 운송·업종별 조건에 가까운 영역이며, PortAgent 는 LLM 이 개별 배차를 결정하기보다 가상 전문가 팀(지식 검색·모델러·코더·디버거)이 디스패칭 모델과 코드를 만들고 디버거가 오류를 검사·수정하는 방법 사례다(검사 방식의 세부와 성능 수치는 미확인, 원문 미열람). [사실][^ref-685]
-- Powell 외(Journal of Intelligent Information Systems, 2025)는 스케줄링 시스템이 낸 결과를 사람에게 설명하는 텍스트를 LLM 의 추론(사고 사슬 프롬프트)으로 생성하는 방법을 연구했다(원문 미열람). [사실][^ref-687]
+- RACE-Sched 는 LLM 추론 지연이 산업 제어의 밀리초 단위 결정 주기와 맞지 않는다고 보고, 실시간 디스패치는 저지연 기호 휴리스틱이 맡고 병렬 흐름에서 LLM 이 규칙을 합성·검증·진화시키는 이중 흐름 구조를 제안했다(저자 보고, 원문 미열람; 규칙을 운영에 반영하는 방식의 세부는 미확인). [사실][^ref-611]
+- Li·Li(소속 미확인)는 동적 생산·AGV 스케줄링의 이산 사건 시뮬레이션에서 LLM 관리 에이전트가 사건 기록으로 병목 가설을 세우고 편집 에이전트가 규칙 기반 정책 코드를 고치는 휴리스틱 설계 틀을 제안했으며, 결과 정책이 수리계획·규칙·메타휴리스틱 기준선보다 나았다고 보고했다(저자 보고, 원문 미열람). [사실][^ref-612] 여기서 시뮬레이션은 LLM 이 만든 정책을 검증하는 도구로만 쓰인다.
+- 연계 대상: 컨테이너 터미널 차량 디스패칭은 분류 원문 9장의 거점 간 운송·업종별 조건에 가까운 영역이며, PortAgent 는 LLM 이 개별 배차를 결정하기보다 가상 전문가 팀(지식 검색·모델러·코더·디버거)이 디스패칭 모델과 코드를 만들고 디버거가 오류를 검사·수정하는 방법 사례다(검사 방식의 세부와 성능 수치는 미확인, 원문 미열람). [사실][^ref-613]
+- Powell 외(Journal of Intelligent Information Systems, 2025)는 스케줄링 시스템이 낸 결과를 사람에게 설명하는 텍스트를 LLM 의 추론(사고 사슬 프롬프트)으로 생성하는 방법을 연구했다(원문 미열람). [사실][^ref-615]
 
 #### 종합: 이 위키의 분담 가설
 
@@ -98,13 +98,13 @@ flowchart LR
   rule["LLM: 루프 밖 규칙·정책 합성"] -.->|"시뮬레이션·검증 뒤 반영"| solver
 ```
 
-- 진행 중 고장·새 지시 같은 동적 사건의 재스케줄링은 LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, RACE-Sched·Li·Li 처럼 LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·검증을 거쳐 반영하며 실시간 재계산(rmf_task 의 충전 삽입 등)은 해법이 맡는 구조가 ROP 의 선택지로 보인다. rmf_task 의 재배정 기능은 문서에서 확인하지 않았다. [추정][^ref-683][^ref-684][^ref-404][^ref-674]
+- 진행 중 고장·새 지시 같은 동적 사건의 재스케줄링은 LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, RACE-Sched·Li·Li 처럼 LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·검증을 거쳐 반영하며 실시간 재계산(rmf_task 의 충전 삽입 등)은 해법이 맡는 구조가 ROP 의 선택지로 보인다. rmf_task 의 재배정 기능은 문서에서 확인하지 않았다. [추정][^ref-611][^ref-612][^ref-404][^ref-586]
 - 분류 원문 13. 작업 배정 — MRTA 의 SCM 관점 질문은 다음과 같다.
 
 > 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? [분류원문]
 
-- 이 질문과 관련해, 전체 이익은 완료 시각·비용 같은 명시적 목적함수를 최적화하는 해법(rmf_task, 선형·정수계획)이 계산·비교할 수 있지만, LLM 직접 배정·스케줄은 실행 가능하더라도 최적성까지 함께 만족하는 비율이 낮게 보고되어(운영과학 일반 문제, 솔버 기준 0.1% 이내 조건의 저자 보고값 30.5% 이하) 전체 이익을 보장하는 수단으로 쓰기 어려운 것으로 보인다. [추정][^ref-377][^ref-166][^ref-675]
-- 이번에 확인한 LLM 스케줄링 근거의 평가 환경은 작업장·프로젝트·근무표 스케줄링, 운영과학 일반 문제, 건설 로봇, 컨테이너 터미널, 여행 계획이었고, 이종 제조사 창고 로봇 플릿에서 LLM 직접 스케줄과 해법기를 비교한 자료는 검색 범위에서 찾지 못했다(한국어 검색 포함, 부재의 확인은 아님). [추정][^ref-675][^ref-676][^ref-677][^ref-678][^ref-689][^ref-685][^ref-681]
+- 이 질문과 관련해, 전체 이익은 완료 시각·비용 같은 명시적 목적함수를 최적화하는 해법(rmf_task, 선형·정수계획)이 계산·비교할 수 있지만, LLM 직접 배정·스케줄은 실행 가능하더라도 최적성까지 함께 만족하는 비율이 낮게 보고되어(운영과학 일반 문제, 솔버 기준 0.1% 이내 조건의 저자 보고값 30.5% 이하) 전체 이익을 보장하는 수단으로 쓰기 어려운 것으로 보인다. [추정][^ref-377][^ref-166][^ref-592]
+- 이번에 확인한 LLM 스케줄링 근거의 평가 환경은 작업장·프로젝트·근무표 스케줄링, 운영과학 일반 문제, 건설 로봇, 컨테이너 터미널, 여행 계획이었고, 이종 제조사 창고 로봇 플릿에서 LLM 직접 스케줄과 해법기를 비교한 자료는 검색 범위에서 찾지 못했다(한국어 검색 포함, 부재의 확인은 아님). [추정][^ref-592][^ref-593][^ref-594][^ref-595][^ref-616][^ref-613][^ref-598]
 
 #### 설명용 시나리오
 
@@ -116,19 +116,19 @@ flowchart LR
 |---|---|
 | 시작 조건 | 출하 마감 전에 관리자가 채팅으로 긴급 출고 지시를 보낸다(설명용 가정). |
 | 작업 대상 | 긴급 출고 대상 화물과 그 운반 작업(설명용 가정) |
-| 수행 자원 | LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스로 바꾸고, 해법이 일정을 다시 계산하며, LLM 이 바뀐 일정과 이유를 설명하는 분담이 가능해 보인다. [추정][^ref-681][^ref-377][^ref-687] |
+| 수행 자원 | LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스로 바꾸고, 해법이 일정을 다시 계산하며, LLM 이 바뀐 일정과 이유를 설명하는 분담이 가능해 보인다. [추정][^ref-598][^ref-377][^ref-615] |
 | 제약 | rmf_task 는 배터리 같은 자원 제약을 고려해 충전 작업을 일정에 끼워 넣고 [사실][^ref-404] VDA 5050 에서는 충전 주문이 운반 주문을 중단할 수 있다. [사실][^ref-031] |
 | 완료·인계 | 해당 없음 |
-| 예외·성과 | LLM 이 일정을 직접 만들면 실행 가능성과 최적성을 함께 만족하는 비율이 낮게 보고되었고(운영과학 일반 제약 최적화 문제, 솔버 기준 0.1% 이내 조건의 저자 보고값) [사실][^ref-675] LLM 추론 지연은 실시간 결정 주기와 맞지 않을 수 있다. [추정][^ref-683] |
+| 예외·성과 | LLM 이 일정을 직접 만들면 실행 가능성과 최적성을 함께 만족하는 비율이 낮게 보고되었고(운영과학 일반 제약 최적화 문제, 솔버 기준 0.1% 이내 조건의 저자 보고값) [사실][^ref-592] LLM 추론 지연은 실시간 결정 주기와 맞지 않을 수 있다. [추정][^ref-611] |
 
-다음은 설명을 위한 가상의 시나리오이다. 출하 마감 전에 채팅으로 긴급 출고 지시가 들어오면, LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스(제약·목적 가중치)로 바꾸고 해법이 충전 삽입을 포함한 일정을 다시 계산한 뒤, LLM 이 바뀐 일정과 이유를 설명하는 흐름이 가능해 보인다. [추정][^ref-681][^ref-377][^ref-687] 이 흐름에서 LLM 이 뽑은 값을 해법의 비용 계산기나 목적함수로 넘기는 형식은 아직 정하지 않았으며 후속 질문 q3-11 로 둔다.
+다음은 설명을 위한 가상의 시나리오이다. 출하 마감 전에 채팅으로 긴급 출고 지시가 들어오면, LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스(제약·목적 가중치)로 바꾸고 해법이 충전 삽입을 포함한 일정을 다시 계산한 뒤, LLM 이 바뀐 일정과 이유를 설명하는 흐름이 가능해 보인다. [추정][^ref-598][^ref-377][^ref-615] 이 흐름에서 LLM 이 뽑은 값을 해법의 비용 계산기나 목적함수로 넘기는 형식은 아직 정하지 않았으며 후속 질문 q3-11 로 둔다.
 
 ## 4. 결론과 남은 불확실성
 
 **결론**
 - Open-RMF 는 배정·순서·충전 삽입을 결정적 작업 계획기(rmf_task)에 두고, VDA 5050 은 배정 알고리즘을 규정하지 않아 관제 구현에 맡기는 것으로 보인다. [추정][^ref-404][^ref-377][^ref-031]
-- q3-01 의 답: 스케줄링 결정은 결정적 최적화·계획 해법이 맡고 LLM 은 문제 인스턴스화와 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다(신뢰도 low). [추정][^ref-675][^ref-677][^ref-377][^ref-679][^ref-681][^ref-687]
-- 동적 재스케줄링에서는 LLM 을 결정 루프 밖에 두고 규칙·정책을 만들어 검증 뒤 반영하는 구조가 선택지로 보인다. [추정][^ref-683][^ref-684]
+- q3-01 의 답: 스케줄링 결정은 결정적 최적화·계획 해법이 맡고 LLM 은 문제 인스턴스화와 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다(신뢰도 low). [추정][^ref-592][^ref-594][^ref-377][^ref-596][^ref-598][^ref-615]
+- 동적 재스케줄링에서는 LLM 을 결정 루프 밖에 두고 규칙·정책을 만들어 검증 뒤 반영하는 구조가 선택지로 보인다. [추정][^ref-611][^ref-612]
 - 이번 실행에서 [업무 분해·배정 설계 초안](task-model-draft.md)의 일정 개념에 속성 '일정 산출 방식'을 더해 초안 버전을 v0.5 에서 v0.6 으로 올렸다. 값 후보 'LLM 직접 생성'은 근거 finding 이 지정되지 않아 반영하지 않고 초안 6절의 질문으로 두었다.
 
 **남은 불확실성**
@@ -181,21 +181,21 @@ flowchart LR
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25
 [^ref-091]: Cranial-XIX (LLM+P 저자), llm-pddl — LLM+P: Empowering Large Language Models with Optimal Planning Proficiency (GitHub README), 미확인, https://github.com/Cranial-XIX/llm-pddl, 접근일 2026-09-25
 [^ref-092]: Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P., LLM+P: Empowering Large Language Models with Optimal Planning Proficiency, 2023-04, https://arxiv.org/abs/2304.11477, 접근일 2026-09-25 (원문 미열람)
-[^ref-674]: Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S., Saldyt, L., & Murthy, A., LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks, 2024-02, https://arxiv.org/abs/2402.01817, 접근일 2026-09-25 (원문 미열람)
-[^ref-675]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)
-[^ref-676]: Jain, R. 외(R-ConstraintBench 저자), R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling, 2025-08, https://arxiv.org/abs/2508.15204, 접근일 2026-09-25 (원문 미열람)
-[^ref-677]: SCHEDBench 저자(arXiv 2608.00991, 저자 미확인), SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling, 2026-08, https://arxiv.org/abs/2608.00991, 접근일 2026-09-25 (원문 미열람)
-[^ref-678]: Starjob 저자(arXiv 2503.01877, 저자 미확인), Starjob: Dataset for LLM-Driven Job Shop Scheduling, 2025-03, https://arxiv.org/abs/2503.01877, 접근일 2026-09-25 (원문 미열람)
-[^ref-679]: teshnizi (OptiMUS 공식 저장소), OptiMUS — Optimization Modeling Using mip Solvers and large language models (GitHub README), 미확인, https://github.com/teshnizi/OptiMUS, 접근일 2026-09-25
-[^ref-680]: AhmadiTeshnizi, A. 외(OptiMUS 저자), OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale, 2024-07, https://arxiv.org/abs/2407.19633, 접근일 2026-09-25 (원문 미열람)
-[^ref-681]: Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026), LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation, 2025-12, https://arxiv.org/abs/2512.14138, 접근일 2026-09-25 (원문 미열람)
-[^ref-682]: DynaSchedBench 저자(arXiv 2605.27566, 저자 미확인), DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents, 2026-05, https://arxiv.org/abs/2605.27566, 접근일 2026-09-25 (원문 미열람)
-[^ref-683]: RACE-Sched 저자(arXiv 2605.29262, 저자 미확인), Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling, 2026-05, https://arxiv.org/abs/2605.29262, 접근일 2026-09-25 (원문 미열람)
-[^ref-684]: Li, J., & Li, C.(소속 미확인), LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling, 2026-08, https://arxiv.org/abs/2608.09343, 접근일 2026-09-25 (원문 미열람)
-[^ref-685]: Hu, J., Li, J., Lin, W., Jia, P., Ji, Y., & Lai, J., PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals, 2025-12, https://arxiv.org/abs/2512.14417, 접근일 2026-09-25 (원문 미열람)
-[^ref-686]: Wang, Y., & Li, K., Large Language Models in Operations Research: Methods, Applications, and Challenges, 2025-09, https://arxiv.org/abs/2509.18180, 접근일 2026-09-25 (원문 미열람)
-[^ref-687]: Powell, C. 외(University of Strathclyde), Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models, 2025, https://link.springer.com/article/10.1007/s10844-025-00940-w, 접근일 2026-09-25 (원문 미열람)
-[^ref-689]: Saha, S., Das, S., Duan, H., & Liu, X.-Y., Hybrid LLM-based Intelligent Framework for Robot Task Scheduling, 2026-05, https://arxiv.org/abs/2605.15486, 접근일 2026-09-25 (원문 미열람)
+[^ref-586]: Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S., Saldyt, L., & Murthy, A., LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks, 2024-02, https://arxiv.org/abs/2402.01817, 접근일 2026-09-25 (원문 미열람)
+[^ref-592]: ConstraintBench 저자(arXiv 2602.22465, 저자 미확인), ConstraintBench: Benchmarking LLM Constraint Reasoning on Direct Optimization, 2026-02, https://arxiv.org/abs/2602.22465, 접근일 2026-09-25 (원문 미열람)
+[^ref-593]: Jain, R. 외(R-ConstraintBench 저자), R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling, 2025-08, https://arxiv.org/abs/2508.15204, 접근일 2026-09-25 (원문 미열람)
+[^ref-594]: SCHEDBench 저자(arXiv 2608.00991, 저자 미확인), SCHEDBench: A Benchmark for Evaluating LLM Constraint Faithfulness in Natural-Language Combinatorial Scheduling, 2026-08, https://arxiv.org/abs/2608.00991, 접근일 2026-09-25 (원문 미열람)
+[^ref-595]: Starjob 저자(arXiv 2503.01877, 저자 미확인), Starjob: Dataset for LLM-Driven Job Shop Scheduling, 2025-03, https://arxiv.org/abs/2503.01877, 접근일 2026-09-25 (원문 미열람)
+[^ref-596]: teshnizi (OptiMUS 공식 저장소), OptiMUS — Optimization Modeling Using mip Solvers and large language models (GitHub README), 미확인, https://github.com/teshnizi/OptiMUS, 접근일 2026-09-25
+[^ref-597]: AhmadiTeshnizi, A. 외(OptiMUS 저자), OptiMUS-0.3: Using Large Language Models to Model and Solve Optimization Problems at Scale, 2024-07, https://arxiv.org/abs/2407.19633, 접근일 2026-09-25 (원문 미열람)
+[^ref-598]: Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026), LAPPI: Interactive Optimization with LLM-Assisted Preference-Based Problem Instantiation, 2025-12, https://arxiv.org/abs/2512.14138, 접근일 2026-09-25 (원문 미열람)
+[^ref-610]: DynaSchedBench 저자(arXiv 2605.27566, 저자 미확인), DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents, 2026-05, https://arxiv.org/abs/2605.27566, 접근일 2026-09-25 (원문 미열람)
+[^ref-611]: RACE-Sched 저자(arXiv 2605.29262, 저자 미확인), Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling, 2026-05, https://arxiv.org/abs/2605.29262, 접근일 2026-09-25 (원문 미열람)
+[^ref-612]: Li, J., & Li, C.(소속 미확인), LLM-Guided Heuristic Design from Simulation Traces: A Case Study in Dynamic Production and AGV Scheduling, 2026-08, https://arxiv.org/abs/2608.09343, 접근일 2026-09-25 (원문 미열람)
+[^ref-613]: Hu, J., Li, J., Lin, W., Jia, P., Ji, Y., & Lai, J., PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals, 2025-12, https://arxiv.org/abs/2512.14417, 접근일 2026-09-25 (원문 미열람)
+[^ref-614]: Wang, Y., & Li, K., Large Language Models in Operations Research: Methods, Applications, and Challenges, 2025-09, https://arxiv.org/abs/2509.18180, 접근일 2026-09-25 (원문 미열람)
+[^ref-615]: Powell, C. 외(University of Strathclyde), Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models, 2025, https://link.springer.com/article/10.1007/s10844-025-00940-w, 접근일 2026-09-25 (원문 미열람)
+[^ref-616]: Saha, S., Das, S., Duan, H., & Liu, X.-Y., Hybrid LLM-based Intelligent Framework for Robot Task Scheduling, 2026-05, https://arxiv.org/abs/2605.15486, 접근일 2026-09-25 (원문 미열람)
 [^ref-166]: Obata, K., Aoki, T., Horii, T., Taniguchi, T., & Nagai, T., LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)
 [^ref-181]: Shi, G., Wu, Y., Kumar, V., & Sukhatme, G. S., PIP-LLM: Integrating PDDL-Integer Programming with LLMs for Coordinating Multi-Robot Teams Using Natural Language, 2025-10, https://arxiv.org/abs/2510.22784, 접근일 2026-09-25 (원문 미열람)
 [^ref-242]: Rivera, C., Byrd, G., Booker, M., Kemp, B., Gaines, A., Holmes, E., Uplinger, J., de Melo, C. M., & Handelman, D.(JHU APL·JHU·DEVCOM ARL), FLEET: Formal Language-Grounded Scheduling for Heterogeneous Robot Teams, 2025-10, https://arxiv.org/abs/2510.07417, 접근일 2026-09-25 (원문 미열람)
