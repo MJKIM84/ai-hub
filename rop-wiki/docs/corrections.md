@@ -92,7 +92,7 @@ flowchart LR
 5. **스토리텔러 에이전트가 반영한다.** 문장을 고치거나, 태그를 내리거나, 출처를 바꾼다. 브리프에 없는 새 사실은 더하지 않는다.
 6. **퍼블리셔가 기록한다.** [변경 이력](changelog.md)에 실행 id와 함께 남기고, `inbox/corrections.md`의 상태를 `applied`로 바꾼다. 검증이 반영하지 않기로 판정한 요청은 `rejected`로 바꾸고 사유를 처리 메모에 적는다. [가정]
 
-요청이 처리됐는지는 `inbox/corrections.md`의 상태, [변경 이력](changelog.md), 그리고 해당 실행의 일일 로그([로그](logs/index.md))에서 확인한다.
+요청이 처리됐는지는 `inbox/corrections.md`의 상태와 [변경 이력](changelog.md)에서 확인한다.
 
 ## 반영이 거부되는 경우
 

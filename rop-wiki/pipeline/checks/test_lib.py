@@ -159,7 +159,9 @@ class TestNavAndRender(unittest.TestCase):
         """사양서 4.8 의 상위 순서 전체: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 → 참고문헌 →
         표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
         4.8 목록에 없는 "정정 요청 안내"는 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 온다. [가정]"""
-        nav = build_nav()
+        # logs_public=True: 이 검사는 파일시스템 기준 전체 구조를 본다(공개 배포의 publish.logs_public=false
+        # 로그·운영 지표 제외는 nav.py 의 별도 동작이며 이 검사 대상이 아니다). [가정]
+        nav = build_nav(logs_public=True)
         top = [next(iter(i)) if isinstance(i, dict) else i for i in nav]
         docs = paths.DOCS
         expected = ["홈", "소개", *self.CATEGORY_TITLES]

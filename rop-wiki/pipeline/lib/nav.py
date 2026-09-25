@@ -14,6 +14,7 @@ from pathlib import Path
 import yaml
 
 from . import frontmatter as fm
+from . import notify
 from . import paths
 from .paths import DOCS, MKDOCS_YML
 
@@ -22,21 +23,45 @@ SITE_DESCRIPTION = "SCM 관점의 로봇 오케스트레이션 플랫폼 연구"
 TRACKS_LABEL = "중점 연구 트랙"
 IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
 
+# 공개 배포 설정(config/ops.yaml 의 publish 절, notify.site_url) — 이 값들은 write_mkdocs_yml() 이 매 실행마다
+# 다시 반영하므로, 켜고 끄려면 mkdocs.yml 을 손으로 고치지 말고 config/ops.yaml 을 고친 뒤 퍼블리셔(또는
+# write_mkdocs_yml())를 다시 실행한다. [가정: 배포 프롬프트 8장의 config/settings.yaml 대신 config/ops.yaml 을 쓴다]
+
+def _publish_cfg() -> dict:
+    ops = notify.load_ops()
+    return ops.get("publish") or {}
+
+
+def logs_public_default() -> bool:
+    return bool(_publish_cfg().get("logs_public", True))
+
+
+def verification_banner_on() -> bool:
+    return bool(_publish_cfg().get("show_verification_banner", False))
+
+
+def site_url() -> str:
+    ops = notify.load_ops()
+    return str((ops.get("notify") or {}).get("site_url", "") or "")
+
+
 MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 이 생성한다. 손으로 고치지 말 것.
 # 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 →
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
+# 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
+# notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
 site_name: {site_name}
 site_description: {site_description}
-docs_dir: docs
+{site_url_line}docs_dir: docs
 site_dir: site
 use_directory_urls: true
-
+{exclude_docs_block}
 theme:
   name: material
   language: ko
-  features:
+{custom_dir_line}  features:
     - navigation.indexes
     - navigation.top
     - search.suggest
@@ -77,7 +102,7 @@ validation:
     anchors: warn
     absolute_links: warn
     unrecognized_links: warn
-
+{extra_block}
 nav:
 {nav}"""
 
@@ -141,7 +166,10 @@ def _track_children(slug: str) -> list:
     return children
 
 
-def build_nav() -> list:
+def build_nav(logs_public: bool | None = None) -> list:
+    """logs_public=False 면 metrics.md 와 로그 절을 nav 에서 뺀다(공개 배포용, config/ops.yaml 의 publish.logs_public).
+    None 이면 config/ops.yaml 값을 읽는다."""
+    show_logs = logs_public_default() if logs_public is None else logs_public
     nav: list = []
 
     # 1. 홈
@@ -227,12 +255,15 @@ def build_nav() -> list:
             nav.append(_page("standards/index.md"))
 
     # 9~12. 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표
-    for rel in ("open-questions.md", "flow-matrix.md", "changelog.md", "metrics.md"):
+    # logs_public=False 면 운영 지표(metrics.md)는 뺀다(공개 배포, exclude_docs 와 짝) [가정]
+    metrics_rels = ("open-questions.md", "flow-matrix.md", "changelog.md") if not show_logs \
+        else ("open-questions.md", "flow-matrix.md", "changelog.md", "metrics.md")
+    for rel in metrics_rels:
         if _exists(rel):
             nav.append(_page(rel))
 
-    # 13. 로그 (index, 일일, 주간 — 최신 우선)
-    if (DOCS / "logs").is_dir():
+    # 13. 로그 (index, 일일, 주간 — 최신 우선) — logs_public=False 면 절 전체를 뺀다(공개 배포, exclude_docs 와 짝) [가정]
+    if show_logs and (DOCS / "logs").is_dir():
         items = []
         if _exists("logs/index.md"):
             items.append("logs/index.md")
@@ -257,9 +288,28 @@ def nav_yaml(nav: list) -> str:
 
 
 def render_mkdocs_yml(nav: list | None = None) -> str:
-    nav = build_nav() if nav is None else nav
+    show_logs = logs_public_default()
+    nav = build_nav(logs_public=show_logs) if nav is None else nav
     indented = "".join("  " + line + "\n" for line in nav_yaml(nav).rstrip("\n").split("\n"))
-    return MKDOCS_TEMPLATE.format(site_name=SITE_NAME, site_description=SITE_DESCRIPTION, nav=indented)
+
+    url = site_url()
+    site_url_line = f"site_url: {url}\n" if url else ""
+
+    exclude_docs_block = ""
+    if not show_logs:
+        exclude_docs_block = "\nexclude_docs: |\n  logs/\n  metrics.md\n"
+
+    custom_dir_line = "  custom_dir: overrides\n" if verification_banner_on() else ""
+
+    extra_block = ""
+    if verification_banner_on():
+        extra_block = "\nextra:\n  verification_banner: true\n"
+
+    return MKDOCS_TEMPLATE.format(
+        site_name=SITE_NAME, site_description=SITE_DESCRIPTION, nav=indented,
+        site_url_line=site_url_line, exclude_docs_block=exclude_docs_block,
+        custom_dir_line=custom_dir_line, extra_block=extra_block,
+    )
 
 
 def write_mkdocs_yml(path: Path = MKDOCS_YML) -> Path:

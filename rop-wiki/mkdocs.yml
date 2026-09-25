@@ -3,15 +3,23 @@
 # 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
+# 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
+# notify.site_url / publish.logs_public / publish.show_verification_banner 에서 온다(README "배포" 절).
 site_name: ROP 연구 위키
 site_description: SCM 관점의 로봇 오케스트레이션 플랫폼 연구
+site_url: https://mjkim84.github.io/ai-hub/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
 
+exclude_docs: |
+  logs/
+  metrics.md
+
 theme:
   name: material
   language: ko
+  custom_dir: overrides
   features:
     - navigation.indexes
     - navigation.top
@@ -53,6 +61,9 @@ validation:
     anchors: warn
     absolute_links: warn
     unrecognized_links: warn
+
+extra:
+  verification_banner: true
 
 nav:
   - 홈: index.md
@@ -1391,12 +1402,4 @@ nav:
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md
   - 변경 이력: changelog.md
-  - 운영 지표: metrics.md
-  - 로그:
-    - logs/index.md
-    - 일일 로그:
-      - 2026-09-26 일일 로그: logs/daily/2026-09-26.md
-      - 2026-09-25 일일 로그: logs/daily/2026-09-25.md
-    - 주간 정리:
-      - 2026-W39 주간 정리: logs/weekly/2026-W39.md
   - 정정 요청 안내: corrections.md

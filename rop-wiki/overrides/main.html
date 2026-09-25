@@ -1,0 +1,14 @@
+<!--
+  ROP 연구 위키 — 공개 배포 안내 배너(Material 테마 announce 블록 오버라이드).
+  켜고 끄기는 mkdocs.yml 의 extra.verification_banner 한 값으로 한다(pipeline/lib/nav.py 가
+  config/ops.yaml 의 publish.show_verification_banner 를 읽어 이 값을 채운다). 본문은 고치지 않는다.
+-->
+{% extends "base.html" %}
+
+{% block announce %}
+{% if config.extra.verification_banner %}
+{% set guide = nav.pages | selectattr("file.src_uri", "eq", "about/reading-guide.md") | first %}
+이 위키는 연구 에이전트가 작성 중이며 출처 재검증이 진행 중입니다. 각 페이지의 상태·신뢰도 표기와
+<a href="{{ (guide.url if guide else 'about/reading-guide/') | url }}">읽기 가이드</a>를 확인하세요.
+{% endif %}
+{% endblock %}

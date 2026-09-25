@@ -35,6 +35,7 @@ import yaml
 from . import autoregion as ar
 from . import frontmatter as fm
 from . import paths
+from .nav import logs_public_default
 from .paths import CONFIG, DATA, DOCS, RUNS
 from .source import load_source
 
@@ -183,8 +184,18 @@ def _table(header: list[str], rows: list[list[str]]) -> str:
     return "\n".join(lines)
 
 
+def _publicly_excluded(rel: str) -> bool:
+    """공개 배포(config/ops.yaml 의 publish.logs_public=false)에서 exclude_docs 로 빌드에서 빠지는 경로인가.
+    [가정: 배포 프롬프트 3장 — logs_public=false 면 docs/logs/, docs/metrics.md 를 빼고, 이 때문에 깨지는
+    링크는 changelog.md 로 바꾼다. _link()/_page_label() 한 곳에서 처리해 모든 auto 영역에 일괄 적용한다.]"""
+    if logs_public_default():
+        return False
+    return rel == "metrics.md" or rel.startswith("logs/")
+
+
 def _link(page_rel: str, target: str | None, text: str | None = None) -> str:
-    """target("docs/…" 또는 docs 기준 경로)으로의 상대 링크. 대상이 없으면 링크 없이 텍스트만."""
+    """target("docs/…" 또는 docs 기준 경로)으로의 상대 링크. 대상이 없으면 링크 없이 텍스트만.
+    공개 배포에서 exclude_docs 로 빠진 경로(logs/, metrics.md)는 changelog.md 로 대신 링크한다."""
     if not target:
         return text or ""
     if re.match(r"^[a-z]+://", target):
@@ -196,6 +207,10 @@ def _link(page_rel: str, target: str | None, text: str | None = None) -> str:
         rel = rel + "index.md"
     if (DOCS / rel).is_dir():
         rel = rel + "/index.md"
+    if _publicly_excluded(rel):
+        if rel == "changelog.md" or not (DOCS / "changelog.md").is_file():
+            return text or rel
+        return f"[{text or rel}]({paths.rel_link(page_rel, 'changelog.md')})"
     if not (DOCS / rel).is_file():
         return text or rel
     return f"[{text or _title_of(rel)}]({paths.rel_link(page_rel, rel)}{frag})"

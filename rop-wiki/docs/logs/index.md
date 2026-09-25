@@ -19,10 +19,10 @@ version: 1
 <!-- auto:logs-index:start -->
 **일일 로그**
 
-- [2026-09-26 일일 로그](daily/2026-09-26.md)
-- [2026-09-25 일일 로그](daily/2026-09-25.md)
+- [logs/daily/2026-09-26.md](../changelog.md)
+- [logs/daily/2026-09-25.md](../changelog.md)
 
 **주간 정리**
 
-- [2026-W39 주간 정리](weekly/2026-W39.md)
+- [logs/weekly/2026-W39.md](../changelog.md)
 <!-- auto:logs-index:end -->

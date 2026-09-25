@@ -21,7 +21,7 @@ notify:
   enabled: false                 # false 면 발송 코드가 네트워크를 전혀 쓰지 않는다(status: disabled)
   channel: none                  # none / slack_webhook / email / both. settings.yaml 의 notify(사양서 0장 원문 값)보다 이 값이 우선한다
   on: [published, parked, failed]   # 어떤 결과에 보낼지: published(게시 완료) / parked(보류) / failed(중단·퍼블리셔 실패)
-  site_url: ""                   # 배포된 사이트 주소(예 https://<계정>.github.io/ai-hub/). 적으면 알림에 그날 일일 로그 페이지 링크를 붙인다
+  site_url: "https://mjkim84.github.io/ai-hub/"   # 배포된 사이트 주소. 적으면 알림에 그날 일일 로그 페이지 링크를 붙이고, mkdocs.yml 의 site_url 로도 쓰인다(nav.py) [가정]
   slack:
     webhook_url_env: ROP_SLACK_WEBHOOK_URL   # 슬랙 수신 웹훅(Incoming Webhook) URL 을 담은 환경변수 이름. https:// 만 허용
     timeout_sec: 10
@@ -60,3 +60,11 @@ cron:
   log_max_bytes: 5242880         # cron.log 가 이 크기(5MB)를 넘으면 실행 시작 전에 cron.log.1 로 돌린다(이전 .1 은 지운다)
   env_file: ~/.config/rop-wiki/env   # 있으면 실행 전에 읽는 환경 파일(비밀값). 권한이 600 이 아니면 경고를 남긴다
   max_runtime_sec: 14400         # 한 번의 실행 시간 상한(4시간). 넘으면 timeout 으로 끝내고(잠금이 영구히 잡히지 않게) 종료 코드 124 를 남긴다. 0 이면 상한 없음
+
+# ---------------------------------------------------------------------------------------------
+# 4. 공개 사이트(GitHub Pages) 배포 시 노출 범위 — pipeline/lib/nav.py(write_mkdocs_yml)가 매 실행마다 읽어
+#    mkdocs.yml 에 반영한다(손으로 mkdocs.yml 을 고쳐도 다음 실행에서 되돌아온다). 자세한 절차는 README.md "배포" 절.
+# ---------------------------------------------------------------------------------------------
+publish:
+  logs_public: false             # false 면 docs/logs/ 와 docs/metrics.md 를 mkdocs exclude_docs·내비게이션에서 뺀다(로그 비공개). true 로 되돌리면 다시 공개된다
+  show_verification_banner: true    # true 면 mkdocs.yml 에 extra.verification_banner: true 와 theme.custom_dir: overrides 를 켠다(안내 배너 표시). false 로 끌 수 있다

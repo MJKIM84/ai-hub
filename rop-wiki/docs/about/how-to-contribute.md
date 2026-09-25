@@ -99,7 +99,7 @@ track_questions:
 
 **폐기.** `runs/parked/<실행 id>/DISCARDED` 파일을 만들고 그 안에 날짜와 사유를 한 줄 적는다. 폴더는 기록으로 남기되 더 이상 검토 대상이 아니라는 표시다. [가정]
 
-같은 영역이 3회 연속 보류되면 대상 선정에서 그 영역이 제외되고 사용자 검토 요청이 [열린 질문](../open-questions.md)에 올라간다. 검토를 마친 뒤 그 영역을 다시 다루게 하려면 `config/priority.yaml`의 `areas`에 지정한다. [가정] 보류 건수는 [운영 지표](../metrics.md)에 집계된다.
+같은 영역이 3회 연속 보류되면 대상 선정에서 그 영역이 제외되고 사용자 검토 요청이 [열린 질문](../open-questions.md)에 올라간다. 검토를 마친 뒤 그 영역을 다시 다루게 하려면 `config/priority.yaml`의 `areas`에 지정한다. [가정] 보류 건수는 [변경 이력](../changelog.md)에 집계된다.
 
 ## 실험 결과 입력: `experiments/`
 
@@ -140,7 +140,7 @@ track_questions:
 - [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](../tracks/manual-capability-ontology/index.md), [자연어 업무 지시 챗봇 트랙 개요](../tracks/nl-task-chatbot/index.md), [건축 도면 자동 인식 트랙 개요](../tracks/floorplan-recognition/index.md) — `track_questions`와 실험 결과가 반영되는 세 트랙
 - [확장 아이디어 연결 구조](../ideas/index.md) — 세 트랙이 연구하는 확장 아이디어의 연결 구조와 매핑표
 - [질문 백로그](../tracks/manual-capability-ontology/question-backlog.md) — 트랙 전용 질문의 상태
-- [변경 이력](../changelog.md), [운영 지표](../metrics.md)
+- [변경 이력](../changelog.md)
 
 ## 참고 자료
 

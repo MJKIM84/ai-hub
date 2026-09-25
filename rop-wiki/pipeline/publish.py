@@ -60,7 +60,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib import autoregion as ar  # noqa: E402
 from lib import frontmatter as fm  # noqa: E402
 from lib import paths, runs  # noqa: E402
-from lib.nav import write_mkdocs_yml  # noqa: E402
+from lib.nav import logs_public_default, write_mkdocs_yml  # noqa: E402
 from lib.render import AutoRegionError, load_backlog, neutralize_footnotes, refresh_all_auto_regions  # noqa: E402
 from lib.source import load_source  # noqa: E402
 import render_run_md  # noqa: E402
@@ -1328,9 +1328,12 @@ class Publisher:
         arp_cell = "; ".join(f"{self.src.area(a['area_no']).title} — {a['section']}: {_short(a['summary'], 80)}" for a in arp) or "없음"
         next_cell = _log_segment(tu.get("log_entry", ""), "다음 실행") or _log_segment(tu.get("log_entry", ""), "다음 실행 제안") or "다음 트랙 실행에서 현재 단계의 열린 질문을 오래된 순으로 고른다"
         daily_link = f"../../logs/daily/{self.date}.md"
+        # 공개 배포(config/ops.yaml 의 publish.logs_public=false)에서는 docs/logs/ 가 exclude_docs 로 빠지므로
+        # 트랙 로그의 "일일 로그" 링크를 changelog.md 로 대신 건다(배포 프롬프트 3장, [가정]).
+        daily_link_display = "../../changelog.md" if not logs_public_default() else daily_link
         entry = {
             "run_id": self.run_id, "date": self.date, "stage": stage, "stage_name": stage_name, "stage_page": stage_file,
-            "daily_log": daily_link, "run_id_cell": f"{self.run_id} ([일일 로그]({daily_link}))",
+            "daily_log": daily_link, "run_id_cell": f"{self.run_id} ([일일 로그]({daily_link_display}))",
             "stage_cell": f"[단계 {stage}. {stage_name}]({stage_file}) — 트랙 상태 {cfg.get('status', 'active')}, 현재 단계 {stage}",
             "answered_questions": answered_cell, "new_questions": new_cell, "ontology_change": onto_cell,
             "completion_assessment": comp_cell, "area_reflection_proposals": arp_cell, "next_run_proposal": next_cell,

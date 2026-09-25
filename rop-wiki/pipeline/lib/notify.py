@@ -70,6 +70,7 @@ DEFAULTS: dict = {
                "after_daily_run": True},
     "cron": {"enabled": False, "tz_mode": "auto", "lock_file": "runs/.lock", "log_file": "runs/cron.log",
              "log_max_bytes": 5 * 1024 * 1024, "env_file": "~/.config/rop-wiki/env", "max_runtime_sec": 14400},
+    "publish": {"logs_public": True, "show_verification_banner": False},
 }
 
 SAMPLE_SUMMARY: dict = {
