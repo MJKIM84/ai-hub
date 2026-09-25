@@ -82,6 +82,11 @@ version: 1
 | 2026-09-25 | [12. 명령·작업 실행의 신뢰성 — 대표 접근법과 기술](2026/2026-09-25-area12-s6.md) | [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | published | medium | — |
 | 2026-09-25 | [12. 명령·작업 실행의 신뢰성 — 관련 표준·프레임워크·오픈소스](2026/2026-09-25-area12-s7.md) | [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | published | medium | — |
 | 2026-09-25 | [12. 명령·작업 실행의 신뢰성 — 대표 연구와 자료](2026/2026-09-25-area12-s8.md) | [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | published | medium | — |
+| 2026-09-25 | [13. 작업 배정 — MRTA — 열린 질문](2026/2026-09-25-area13-s11.md) | [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | — |
+| 2026-09-25 | [13. 작업 배정 — MRTA — 핵심 개념과 용어](2026/2026-09-25-area13-s4.md) | [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | — |
+| 2026-09-25 | [13. 작업 배정 — MRTA — 대표 접근법과 기술](2026/2026-09-25-area13-s6.md) | [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | — |
+| 2026-09-25 | [13. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스](2026/2026-09-25-area13-s7.md) | [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | — |
+| 2026-09-25 | [13. 작업 배정 — MRTA — 대표 연구와 자료](2026/2026-09-25-area13-s8.md) | [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) | published | medium | — |
 | 2026-09-25 | [14. 작업 순서·스케줄링 — 열린 질문](2026/2026-09-25-area14-s11.md) | [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | published | medium | — |
 | 2026-09-25 | [14. 작업 순서·스케줄링 — 핵심 개념과 용어](2026/2026-09-25-area14-s4.md) | [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | published | medium | — |
 | 2026-09-25 | [14. 작업 순서·스케줄링 — 대표 접근법과 기술](2026/2026-09-25-area14-s6.md) | [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | published | medium | — |

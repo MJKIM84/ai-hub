@@ -64,6 +64,30 @@ version: 1
 | 2026-09-25-34 | 생성 | [docs/glossary/time-window.md](glossary/time-window.md) | 용어집 항목 시간창 |
 | 2026-09-25-34 | 생성 | [docs/glossary/put-wall.md](glossary/put-wall.md) | 용어집 항목 풋월 |
 | 2026-09-25-34 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-25-33 | 갱신 | [docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 섹션 3~11 신규 작성(분류 체계·배정 방식·Open-RMF 입찰·LLM 기반 배정·열린 질문), 트랙 반영 제안 반영, 페이지 상태 마커 추가. 2차 수정: 6·8·10·11절 첫 문장의 표기·태그 정리 |
+| 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s6.md](topics/2026/2026-09-25-area13-s6.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 내부 용어 '브리프' 삭제, 원 페이지 3절 참조를 링크로 명시 |
+| 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s8.md](topics/2026/2026-09-25-area13-s8.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: '대표 자료' 선정 문장을 이 위키의 선정으로 밝힌 안내 문장으로 고침 |
+| 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s11.md](topics/2026/2026-09-25-area13-s11.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "11. 열린 질문" 절을 옮겼다. 2차 수정: 안내 문장의 태그·각주 제거, oq-024 항목의 단정을 [추정] 문장으로 고침 |
+| 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s7.md](topics/2026/2026-09-25-area13-s7.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s4.md](topics/2026/2026-09-25-area13-s4.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "4. 핵심 개념과 용어" 절(759자)을 옮겼다 |
+| 2026-09-25-33 | 요약 | [docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 13. 작업 배정 — MRTA: 영역 심화: 3~11절 신규 작성(분류 체계·시장 기반·최근접 규칙·Open-RMF 입찰·LLM 기반 배정), 트랙 반영 제안 반영 |
+| 2026-09-25-33 | 생성 | [docs/references/ref-393.md](references/ref-393.md) | 참고문헌 ref-393 등록: A Formal Analysis and Taxonomy of Task Allocation in Multi-R… |
+| 2026-09-25-33 | 생성 | [docs/references/ref-394.md](references/ref-394.md) | 참고문헌 ref-394 등록: A comprehensive taxonomy for multi-robot task allocation |
+| 2026-09-25-33 | 생성 | [docs/references/ref-395.md](references/ref-395.md) | 참고문헌 ref-395 등록: Consensus-Based Decentralized Auctions for Robust Task Alloc… |
+| 2026-09-25-33 | 생성 | [docs/references/ref-396.md](references/ref-396.md) | 참고문헌 ref-396 등록: Market-Based Multirobot Coordination: A Survey and Analysis |
+| 2026-09-25-33 | 생성 | [docs/references/ref-397.md](references/ref-397.md) | 참고문헌 ref-397 등록: Multi-Robot Task Allocation—Complexity and Approximation |
+| 2026-09-25-33 | 생성 | [docs/references/ref-398.md](references/ref-398.md) | 참고문헌 ref-398 등록: Decision rules for robotic mobile fulfillment systems |
+| 2026-09-25-33 | 생성 | [docs/references/ref-399.md](references/ref-399.md) | 참고문헌 ref-399 등록: Heterogeneous graph attention networks for scalable multi-ro… |
+| 2026-09-25-33 | 생성 | [docs/references/ref-400.md](references/ref-400.md) | 참고문헌 ref-400 등록: Automated guided vehicle dispatching based on combinatorial… |
+| 2026-09-25-33 | 생성 | [docs/references/ref-401.md](references/ref-401.md) | 참고문헌 ref-401 등록: 클라우드에 연결된 개별 로봇 및 로봇그룹의 작업 계획 기술 개발 |
+| 2026-09-25-33 | 생성 | [docs/references/ref-402.md](references/ref-402.md) | 참고문헌 ref-402 등록: 시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화 |
+| 2026-09-25-33 | 생성 | [docs/references/ref-403.md](references/ref-403.md) | 참고문헌 ref-403 등록: Fleet-Level Battery-Health-Aware Scheduling for Autonomous M… |
+| 2026-09-25-33 | 생성 | [docs/references/ref-404.md](references/ref-404.md) | 참고문헌 ref-404 등록: rmf_task — README |
+| 2026-09-25-33 | 생성 | [docs/glossary/hungarian-method.md](glossary/hungarian-method.md) | 용어집 항목 헝가리안 방법 |
+| 2026-09-25-33 | 생성 | [docs/glossary/market-based-task-allocation.md](glossary/market-based-task-allocation.md) | 용어집 항목 시장 기반 작업 배정 |
+| 2026-09-25-33 | 생성 | [docs/glossary/consensus-based-bundle-algorithm.md](glossary/consensus-based-bundle-algorithm.md) | 용어집 항목 합의 기반 번들 알고리즘 |
+| 2026-09-25-33 | 생성 | [docs/glossary/nearest-vehicle-first-rule.md](glossary/nearest-vehicle-first-rule.md) | 용어집 항목 최근접 차량 우선 규칙 |
+| 2026-09-25-33 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-32 | 갱신 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
 | 2026-09-25-32 | 요약 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
 | 2026-09-25-31 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |

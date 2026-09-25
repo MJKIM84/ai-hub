@@ -39,7 +39,7 @@
 | ref-653 | Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L. | Decision rules for robotic mobile fulfillment systems | 논문 | medium | https://www.sciencedirect.com/science/article/pii/S2214716019300946 |
 | ref-654 | Wang, Z., & Gombolay, M. | Heterogeneous graph attention networks for scalable multi-robot scheduling with temporospatial constraints | 논문 | medium | https://link.springer.com/article/10.1007/s10514-021-09997-2 |
 | ref-655 | International Journal of Planning and Scheduling 게재 논문(저자 미확인) | Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors | 논문 | medium | https://www.inderscience.com/info/inarticle.php?artid=103016 |
-| ref-656 | Open Robotics | Tasks in RMF (task) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/task.html |
+| ref-376 | Open Robotics | Tasks in RMF (task) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/task.html |
 | ref-657 | KISTI ScienceON 수록 국가R&D 과제 보고서(수행기관 미확인) | 클라우드에 연결된 개별 로봇 및 로봇그룹의 작업 계획 기술 개발 | 정부·연구기관 | medium | https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400003952 |
 | ref-658 | KISTI ScienceON 수록 논문(저자 미확인) | 시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화 | 논문 | medium | https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO200634515151716 |
 | ref-659 | Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin) | Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots | 논문 | medium | https://arxiv.org/abs/2603.22731 |
@@ -105,7 +105,7 @@
 - f14 — 6·8절에서 저자·발행연도를 '미확인'으로 두고 시뮬레이션 설계 연구임을 병기했으며, 10절에서 f13·f14 시뮬레이션을 22. 시뮬레이션·예측용 디지털 트윈의 가정한 미래 실험 도구로만 연결하고 8. 실시간 세계 상태·데이터 일관성과 연결하지 않았다.
 - f11 — 6절에서 '토큰을 받은 에이전트가 가까운 미배정 작업을 스스로 맡는다' 수준으로만 쓰고 세부 조건은 서술하지 않았다.
 - f2 — 4·6절에서 복잡도 차수를 쓰지 않고 '다항 시간'까지만 썼다.
-- 원문 미열람 표기 — fetched=false 출처 전체의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-656·ref-660·ref-031 에는 붙이지 않았다.
+- 원문 미열람 표기 — fetched=false 출처 전체의 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-376·ref-660·ref-031 에는 붙이지 않았다.
 - 트랙 반영 범위 — SMART-LLM 난이도 벤치마크, COHERENT·LaMMA-P·IMR-LLM 을 6·8절에 넣지 않고 additional_research_requests 로 돌렸다.
 - f22·oq-030 — LTAA 완료율 수치를 본문에 쓰지 않고 11절에 oq-030 을 두 보고를 모두 언급한 '출처 충돌 미해소'로 유지했다.
 - 교차 규칙 — f17 과 f19~f22·f28 을 6절(학습 기반 배차, LLM 기반 배정)에 두고 10절에서 27. AI·학습·적응과 모델 운영과의 양쪽 연결을 명시했다.

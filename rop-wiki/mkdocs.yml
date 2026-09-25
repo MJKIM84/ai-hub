@@ -159,6 +159,11 @@ nav:
       - 14. 작업 순서·스케줄링 — 대표 접근법과 기술: topics/2026/2026-09-25-area14-s6.md
       - 14. 작업 순서·스케줄링 — 핵심 개념과 용어: topics/2026/2026-09-25-area14-s4.md
       - 14. 작업 순서·스케줄링 — 열린 질문: topics/2026/2026-09-25-area14-s11.md
+      - 13. 작업 배정 — MRTA — 대표 연구와 자료: topics/2026/2026-09-25-area13-s8.md
+      - 13. 작업 배정 — MRTA — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area13-s7.md
+      - 13. 작업 배정 — MRTA — 대표 접근법과 기술: topics/2026/2026-09-25-area13-s6.md
+      - 13. 작업 배정 — MRTA — 핵심 개념과 용어: topics/2026/2026-09-25-area13-s4.md
+      - 13. 작업 배정 — MRTA — 열린 질문: topics/2026/2026-09-25-area13-s11.md
       - 12. 명령·작업 실행의 신뢰성 — 대표 연구와 자료: topics/2026/2026-09-25-area12-s8.md
       - 12. 명령·작업 실행의 신뢰성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-25-area12-s7.md
       - 12. 명령·작업 실행의 신뢰성 — 대표 접근법과 기술: topics/2026/2026-09-25-area12-s6.md
@@ -274,6 +279,7 @@ nav:
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
     - 시간창 (Time Window): glossary/time-window.md
+    - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
@@ -300,6 +306,7 @@ nav:
     - 지속형 다중 에이전트 경로 찾기 (Lifelong MAPF): glossary/lifelong-mapf.md
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
+    - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
@@ -308,9 +315,11 @@ nav:
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
+    - 합의 기반 번들 알고리즘 (Consensus-Based Bundle Algorithm (CBBA)): glossary/consensus-based-bundle-algorithm.md
     - 해제 구역 (Release Zone): glossary/release-zone.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
+    - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
     - 형상 제약 언어 (Shapes Constraint Language (SHACL)): glossary/shacl.md
     - 혼합 정수 계획 (Mixed Integer Linear Programming (MILP)): glossary/milp.md
     - 환각 (Hallucination): glossary/hallucination.md
@@ -704,6 +713,19 @@ nav:
     - ref-390 — rmf_task — rmf_task/include/rmf_task/BinaryPriorityScheme.hpp: references/ref-390.md
     - ref-391 — What Is the MassRobotics AMR Interoperability Standard?: references/ref-391.md
     - ref-392 — IRDI - ECLASS Technischer Support: references/ref-392.md
+    - ref-393 — A Formal Analysis and Taxonomy of Task Allocation in Multi-Robot Systems: references/ref-393.md
+    - ref-394 — A comprehensive taxonomy for multi-robot task allocation: references/ref-394.md
+    - ref-395 — Consensus-Based Decentralized Auctions for Robust Task Allocation: references/ref-395.md
+    - 'ref-396 — Market-Based Multirobot Coordination: A Survey and Analysis': references/ref-396.md
+    - ref-397 — Multi-Robot Task Allocation—Complexity and Approximation: references/ref-397.md
+    - ref-398 — Decision rules for robotic mobile fulfillment systems: references/ref-398.md
+    - ref-399 — Heterogeneous graph attention networks for scalable multi-robot scheduling with temporospatial constraints: references/ref-399.md
+    - ? ref-400 — Automated guided vehicle dispatching based on combinatorial optimisation to minimise job waiting time on shop floors
+      : references/ref-400.md
+    - ref-401 — 클라우드에 연결된 개별 로봇 및 로봇그룹의 작업 계획 기술 개발: references/ref-401.md
+    - ref-402 — 시뮬레이션과 메타모델을 이용한 자동물류센터 설계 최적화: references/ref-402.md
+    - ref-403 — Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots: references/ref-403.md
+    - ref-404 — rmf_task — README: references/ref-404.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 물류 흐름 매트릭스: flow-matrix.md
