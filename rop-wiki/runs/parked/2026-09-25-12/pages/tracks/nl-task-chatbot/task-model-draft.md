@@ -9,7 +9,7 @@ status: draft
 confidence: medium
 created: 2026-09-25
 updated: 2026-09-25
-sources: [ref-054, ref-055, ref-059, ref-089, ref-090, ref-091, ref-093, ref-223, ref-224, ref-226]
+sources: [ref-054, ref-055, ref-059, ref-089, ref-090, ref-091, ref-093, ref-292, ref-293, ref-295]
 last_run: 2026-09-25
 version: 3
 ---
@@ -43,7 +43,7 @@ v0은 확장 아이디어 2의 정의 문구(아래 인용)에 나오는 요소�
 | 작업 요구(Task Requirement) | 작업이 요구하는 능력과 제약. 온톨로지 질의의 입력이며 [능력 온톨로지 초안](../manual-capability-ontology/ontology-draft.md)의 작업 요구와 같은 개념으로 본다. 아이디어 정의 기반 [가정] | 필요 능력, 제약(적재량·층·통과 조건) | 확장 아이디어 2의 정의 문구 | 초안 |
 | 로봇(Robot) | 배정 대상. 능력과 제약은 로봇 기능 온톨로지에서 가져온다. 아이디어 정의 기반 [가정] | 식별자, 능력(온톨로지 참조), 현재 상태(8. 실시간 세계 상태·데이터 일관성에서 확인) | 확장 아이디어 2의 정의 문구 | 초안 |
 | 로봇 팀(Coalition) | 하나의 작업을 함께 맡도록 구성된 로봇 묶음. 배정의 대상은 로봇 또는 로봇 팀일 수 있다. SMART-LLM은 작업 분해 뒤 팀 구성(coalition formation)과 작업 할당을 차례로 수행한다. [사실][^ref-089][^ref-090] | 구성 로봇, 맡은 작업 | finding f9 (실행 2026-09-25-04)[^ref-089] | 확정 |
-| 배정(Assignment) | 작업과 로봇의 짝. 온톨로지 질의 결과(수행 가능한 로봇 후보) 가운데에서 고른다. 아이디어 정의 기반 [가정] 배정을 산출하는 방식은 연구마다 다르다. COHERENT에서는 중앙 배정자 LLM이 작업을 분해해 로봇에 직접 배정한다. [사실][^ref-226] LiP-LLM은 LLM이 기술 목록과 의존 그래프를 만들고 로봇 배정은 선형계획으로 푼다. [사실][^ref-223] Peng 외는 자연어 작업 기술을 혼합 정수 선형 계획(Mixed Integer Linear Programming, MILP) 모델로 자동 정식화한다. [사실][^ref-224] | 작업, 로봇, 선택 근거, 확인 여부, 배정 산출 방식(값: LLM 직접 추론 / 선형계획·MILP 같은 최적화 해법. '선택 근거'와는 별도 속성) | 확장 아이디어 2의 정의 문구; finding f7·f3·f5 (실행 2026-09-25-12)[^ref-226][^ref-223][^ref-224] | 확정 |
+| 배정(Assignment) | 작업과 로봇의 짝. 온톨로지 질의 결과(수행 가능한 로봇 후보) 가운데에서 고른다. 아이디어 정의 기반 [가정] 배정을 산출하는 방식은 연구마다 다르다. COHERENT에서는 중앙 배정자 LLM이 작업을 분해해 로봇에 직접 배정한다. [사실][^ref-295] LiP-LLM은 LLM이 기술 목록과 의존 그래프를 만들고 로봇 배정은 선형계획으로 푼다. [사실][^ref-292] Peng 외는 자연어 작업 기술을 혼합 정수 선형 계획(Mixed Integer Linear Programming, MILP) 모델로 자동 정식화한다. [사실][^ref-293] | 작업, 로봇, 선택 근거, 확인 여부, 배정 산출 방식(값: LLM 직접 추론 / 선형계획·MILP 같은 최적화 해법. '선택 근거'와는 별도 속성) | 확장 아이디어 2의 정의 문구; finding f7·f3·f5 (실행 2026-09-25-12)[^ref-295][^ref-292][^ref-293] | 확정 |
 | 배치(Dispatch) | 배정된 로봇에게 작업을 실제로 내보내는 실행 지시. 아이디어 정의 기반 [가정] | 명령, 보낸 시각, 실행 상태 | 확장 아이디어 2의 정의 문구 | 초안 |
 | 일정(Schedule) | 작업들의 순서와 시각. 새 지시·지시 변경·예외에 따라 다시 계산된다. 아이디어 정의 기반 [가정] | 작업 순서, 시작·종료 예정 시각, 갱신 이유 | 확장 아이디어 2의 정의 문구 | 초안 |
 | 진행 상태(Progress) | 작업이 접수·실행·완료·취소 가운데 어디에 있는지와 지연 여부. 아이디어 정의 기반 [가정] | 상태 값, 갱신 시각, 지연 사유 | 확장 아이디어 2의 정의 문구 | 초안 |
@@ -121,6 +121,6 @@ v0을 아이디어 정의에서 도출하는 과정과 이후 트랙 실행에�
 [^ref-090]: Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C., SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models, 2023-09, https://arxiv.org/abs/2309.10062, 접근일 2026-09-25 (원문 미열람)
 [^ref-091]: Cranial-XIX (LLM+P 저자), llm-pddl — LLM+P: Empowering Large Language Models with Optimal Planning Proficiency (GitHub README), 미확인, https://github.com/Cranial-XIX/llm-pddl, 접근일 2026-09-25
 [^ref-093]: Huang, W., Abbeel, P., Pathak, D., & Mordatch, I., Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents, 2022-07, https://proceedings.mlr.press/v162/huang22a.html, 접근일 2026-09-25 (원문 미열람)
-[^ref-223]: Obata, K. 외(Taniguchi 연구실), LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)
-[^ref-224]: Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L., Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models, 2025-03, https://arxiv.org/abs/2503.13813, 접근일 2026-09-25 (원문 미열람)
-[^ref-226]: SHAILAB-IPEC (COHERENT 저자), COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (GitHub README), 미확인, https://github.com/SHAILAB-IPEC/COHERENT, 접근일 2026-09-25
+[^ref-292]: Obata, K. 외(Taniguchi 연구실), LiP-LLM: Integrating Linear Programming and dependency graph with Large Language Models for multi-robot task planning, 2024-10, https://arxiv.org/abs/2410.21040, 접근일 2026-09-25 (원문 미열람)
+[^ref-293]: Peng, M., Chen, Z., Yang, J., Huang, J., Shi, Z., Liu, Q., Li, X., & Gao, L., Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models, 2025-03, https://arxiv.org/abs/2503.13813, 접근일 2026-09-25 (원문 미열람)
+[^ref-295]: SHAILAB-IPEC (COHERENT 저자), COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models (GitHub README), 미확인, https://github.com/SHAILAB-IPEC/COHERENT, 접근일 2026-09-25
