@@ -73,7 +73,7 @@
       "supports_claim": true,
       "cross_checked": false,
       "tag_decision": "유지",
-      "note": "확인: 검증 단계에서 raw AMR_Interop_Standard.json 을 열어 identityReport(필수 uuid·timestamp·manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope)와 statusReport(필수 uuid·timestamp·operationalState·location) 두 메시지만 있고 명령·작업 배정 메시지가 없음을 확인(statusReport 의 destinations 는 예상 위치). 브리프는 ref-705 를 fetched false 로 적었으므로 페이지 표시는 원문 미열람을 유지한다. 판·발행일은 README·스키마에 없어 미확인."
+      "note": "확인: 검증 단계에서 raw AMR_Interop_Standard.json 을 열어 identityReport(필수 uuid·timestamp·manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope)와 statusReport(필수 uuid·timestamp·operationalState·location) 두 메시지만 있고 명령·작업 배정 메시지가 없음을 확인(statusReport 의 destinations 는 예상 위치). 브리프는 ref-253 를 fetched false 로 적었으므로 페이지 표시는 원문 미열람을 유지한다. 판·발행일은 README·스키마에 없어 미확인."
     },
     {
       "finding_id": "f10",
@@ -283,13 +283,13 @@
     "f13: '인증서'라는 표현을 빼고 '인증 로고'만 쓴다 — 스니펫에서 확인된 범위다.",
     "f15: 본문에 [추정]과 '벤더 주장'을 함께 적어 유지한다. 인증의 시험 항목과 주체가 미확인이라는 문구도 유지한다.",
     "f8·f14·f19·f21·f24·f26·f27·f28·f30: [추정] 태그를 유지하고 [사실]로 올리지 않는다. f21 은 9절에서 '공식 기준은 확인되지 않았다'는 단서를 그대로 둔다.",
-    "모든 각주 정의: fetched false 인 출처(ref-407·ref-408·ref-608·ref-705·ref-707·ref-708·ref-709·ref-711·ref-712·ref-713·ref-714·ref-715·ref-716·ref-717·ref-718)는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.",
+    "모든 각주 정의: fetched false 인 출처(ref-407·ref-408·ref-608·ref-253·ref-707·ref-708·ref-709·ref-711·ref-712·ref-713·ref-560·ref-715·ref-716·ref-717·ref-718)는 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates[] 의 해당 항목에 source_unopened: true 를 넣는다 — web_fetch_available: false 환경이다.",
     "7절(트랙 반영 제안): 이번 실행에서 확인한 f1·f2·f4·f5·f29(VDA 5050)와 f9·f10(MassRobotics)만 반영한다. 2026-09-25-02 제안의 'VDA 5050 3.0.0 발행 2026-03'과 'MassRobotics 1.0' 판 표기는 싣지 않고 oq-005 로 남긴다. 나머지 10건(2026-09-25-11·16·19·28·35·36·41·44·47·53·54)은 이번 페이지에 반영하지 않는다 — 이번 실행에서 재확인하지 않았다.",
     "glossary_candidates '산업데이터': 정의를 '산업 활동 과정에서 생성·활용되는 데이터(산업디지털전환촉진법의 용어)'로 줄인다. 사용·수익 권리는 정의 문장에서 빼고 f18 본문에서 다룬다 — 용어 정의와 권리 규정은 조문이 다르다.",
     "glossary_candidates '서비스 수준 협약': 정의에서 '미달 시 처리 방식'을 뺀다 — 브리프의 어느 finding 도 이를 뒷받침하지 않는다.",
     "11절: oq-005·oq-055·oq-091·oq-096·oq-041·oq-026 은 해결로 바꾸지 않고 열린 질문으로 유지한다. open_questions_new 4건은 그대로 등록한다."
   ],
   "confidence": "medium",
-  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 29건, 미확인 1건, 교차 확인 0건. 강등: f12 사실 → 추정(인용 출처에 없는 날짜, 개정 절차의 과잉 일반화). 원문 미열람 출처: ref-407, ref-408, ref-608, ref-705(검증 단계에서 raw 스키마와 README 를 열어 f9·f10 을 확인했으나 브리프 표시는 미열람), ref-707, ref-708, ref-709, ref-711, ref-712, ref-713, ref-714, ref-715, ref-716, ref-717, ref-718. 브리프 표시 불일치: self_check.limits 는 ref-705 를 열었다고 적었지만 sources[] 에는 fetched false 로 되어 있다. 원문을 연 출처는 ref-004, ref-031, ref-051, ref-704, ref-706, ref-710 이다. 주의: 핵심 수치·사실은 모두 단일 기관 출처라 독립 교차 확인이 없다. 9절의 책임 분담(f21)과 데이터 권리 적용(f19)은 추정이다. VDA 5050 명세 자체가 운영 주체 간 책임을 배분하지 않는다고 적고 있다(ref-031 2 Scope). 이 문구는 다음 실행에서 finding 으로 보강할 후보다. 산업디지털전환촉진법은 2025-05-27 개정판이 있어 조문을 다시 확인해야 한다. 트랙 반영 제안 12건 가운데 VDA 5050·MassRobotics 관련만 반영하고 10건은 보류한다. 검증 검색 12회로 회당 상한 30회에 도달해 ref-608·ref-407·ref-408 은 다시 확인하지 못했다. 정정 요청 없음. 해결 인정한 열린 질문 없음.",
+  "verification_note": "판정: 조건부 승인. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. 확인 29건, 미확인 1건, 교차 확인 0건. 강등: f12 사실 → 추정(인용 출처에 없는 날짜, 개정 절차의 과잉 일반화). 원문 미열람 출처: ref-407, ref-408, ref-608, ref-253(검증 단계에서 raw 스키마와 README 를 열어 f9·f10 을 확인했으나 브리프 표시는 미열람), ref-707, ref-708, ref-709, ref-711, ref-712, ref-713, ref-560, ref-715, ref-716, ref-717, ref-718. 브리프 표시 불일치: self_check.limits 는 ref-253 를 열었다고 적었지만 sources[] 에는 fetched false 로 되어 있다. 원문을 연 출처는 ref-004, ref-031, ref-051, ref-704, ref-706, ref-710 이다. 주의: 핵심 수치·사실은 모두 단일 기관 출처라 독립 교차 확인이 없다. 9절의 책임 분담(f21)과 데이터 권리 적용(f19)은 추정이다. VDA 5050 명세 자체가 운영 주체 간 책임을 배분하지 않는다고 적고 있다(ref-031 2 Scope). 이 문구는 다음 실행에서 finding 으로 보강할 후보다. 산업디지털전환촉진법은 2025-05-27 개정판이 있어 조문을 다시 확인해야 한다. 트랙 반영 제안 12건 가운데 VDA 5050·MassRobotics 관련만 반영하고 10건은 보류한다. 검증 검색 12회로 회당 상한 30회에 도달해 ref-608·ref-407·ref-408 은 다시 확인하지 못했다. 정정 요청 없음. 해결 인정한 열린 질문 없음.",
   "retry_reason": null
 }

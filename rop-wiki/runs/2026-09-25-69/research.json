@@ -152,7 +152,7 @@
       "claim": "MassRobotics AMR 상호운용 표준의 JSON 스키마는 신원 보고(identityReport)와 상태 보고(statusReport) 두 보고 메시지만 정의하고 명령·작업 배정 메시지는 두지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-705"
+        "ref-253"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -167,7 +167,7 @@
       "claim": "MassRobotics AMR 상호운용 표준은 여러 제조사의 AMR 이 같은 현장에서 공존하도록 로봇의 위치·속도·방향·상태(health)·작업 가용성 정보를 공유하게 하는 것을 목적으로 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-705"
+        "ref-253"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -324,7 +324,7 @@
       "claim": "ISO 10218-2:2025 는 로봇 자체를 다루는 Part 1 과 구분해 산업용 로봇 적용과 로봇 셀의 안전 요구를 다루며, 통합자(integrator)가 합리적으로 예견할 수 있는 위험원과 위험 상황을 대상으로 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-714"
+        "ref-560"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -341,7 +341,7 @@
       "source_ids": [
         "ref-031",
         "ref-004",
-        "ref-714",
+        "ref-560",
         "ref-704"
       ],
       "cross_checked": false,
@@ -433,7 +433,7 @@
       "claim": "입고 단계에서 새 제조사 로봇을 등록할 때 MassRobotics 신원 보고의 제조사명·모델·일련번호나 VDA 5050 헤더의 manufacturer·serialNumber 를 감사 기록의 주체 식별자로 쓰면, 이후 연동 오류와 변경 이력을 제조사별로 귀속할 수 있을 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-705",
+        "ref-253",
         "ref-051"
       ],
       "cross_checked": false,
@@ -480,7 +480,7 @@
         "ref-004",
         "ref-712",
         "ref-715",
-        "ref-714",
+        "ref-560",
         "ref-717"
       ],
       "cross_checked": false,
@@ -599,7 +599,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-705",
+      "id": "ref-253",
       "org": "MassRobotics",
       "title": "AMR_Interop_Standard — MassRobotics AMR Interoperability Standard (README, JSON schema)",
       "published": null,
@@ -734,7 +734,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-714",
+      "id": "ref-560",
       "org": "ISO",
       "title": "ISO 10218-2:2025 - Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells",
       "published": "2025-02",
@@ -866,7 +866,7 @@
       "f25 로봇 엘리베이터 탑승 KS 의 번호·세부 메시지 미확인(oq-041 미해결)",
       "f16 KOROS 1148-8:2025 시험 항목과 ISO 22166 계열 관계 미확인",
       "f15 OTTO VDA 5050 인증의 시험 항목·주체 미확인(벤더 주장)",
-      "ref-704·ref-705·ref-706·ref-709·ref-710·ref-712·ref-713 발행일 미확인",
+      "ref-704·ref-253·ref-706·ref-709·ref-710·ref-712·ref-713 발행일 미확인",
       "oq-005 VDA 5050 3.0.0 발행일은 명세 원문에 날짜가 없어 해소 못 함(f29)",
       "oq-055 VDA 5050 공식 적합성 시험 부재는 읽은 명세·README 범위에서만 확인(f14), 해결 제안하지 않음"
     ],
@@ -880,6 +880,6 @@
       "queries": 18,
       "sources": 15
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-704(VDA5050 README), ref-705(MassRobotics README·JSON 스키마), ref-706(semver.md), ref-710(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-704~ref-718, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-708), SPRi(ref-709), 국가기술표준원 보도자료(ref-717), KOROS 단체표준(ref-718). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-004(rmf-core.md), ref-704(VDA5050 README), ref-253(MassRobotics README·JSON 스키마), ref-706(semver.md), ref-710(OSRA P&P README). 나머지 14건은 검색 요약 기준 원문 미열람(신뢰도 상한 medium). 원문을 연 출처가 있어도 공통 규칙 0절 6항에 따라 high 는 주지 않았다. 신규 출처 15건(ref-704~ref-718, 예약 구간 안)으로 신규 출처 상한에 도달해 실외이동로봇 운행안전인증(KIRIA)·국내 로봇 표준화 로드맵 논문은 넣지 못했다. 재사용 6건(ref-004·031·051·407·408·608)은 이전 브리프·역할 규칙 예시의 값을 썼다. 트랙 반영 제안 12건 가운데 VDA 5050 3.0.0 판(2026-09-25-02)과 MassRobotics(2026-09-25-02 f13)는 f29·f9·f10 으로 확인했고, 나머지(IEEE 1872·AAS·ECLASS·IEC CDD·IDTA·ISO 22166·IFC·IndoorGML·ISO 19164·VDMA LIF·CAD 레이어 표준·SHACL·IDS)는 해당 ref id 의 메타데이터가 입력에 없어 이번 실행에서 재확인하지 못하고 다음 실행 후보로 남겼다. 한국 자료: 산업디지털전환촉진법(ref-708), SPRi(ref-709), 국가기술표준원 보도자료(ref-717), KOROS 단체표준(ref-718). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 27. AI·학습·적응과 모델 운영 관련 주장 없음. 정정 요청 없음. 해결된 열린 질문 없음."
   }
 }

@@ -181,6 +181,16 @@ def stage_pages(rd: Path, settings: dict, run_id: str) -> int:
                 f"{len(topics)}개 절을 주제 페이지로 옮김, 남은 본문 {after:,}자")
         pages.setdefault("fixes_applied", []).append(note)
 
+    # ②-b 참조가 없는 각주 정의는 뺀다(엄격 빌드가 'footnote never referenced' 로 실패한다 — 판단이 필요 없는 정리, 3부 배치 세부영역 27)
+    for pg in pages.get("pages", []):
+        src = rd / "pages" / paths.docs_rel(pg.get("path", ""))
+        if src.is_file():
+            t = src.read_text(encoding="utf-8")
+            n = V._drop_unused_defs(t)
+            if n != t:
+                src.write_text(n, encoding="utf-8")
+                pages.setdefault("fixes_applied", []).append(f"{pg.get('path')}: 참조가 없는 각주 정의를 뺐다")
+
     # ③ 페이지별 형식 검사
     for pg in pages.get("pages", []):
         rel = paths.docs_rel(pg.get("path", ""))

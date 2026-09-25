@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-areas-3",
   "date": "2026-09-25",
-  "updated": "2026-09-25 07:39:44",
+  "updated": "2026-09-25 07:52:33",
   "concurrency": 3,
   "items": [
     {
@@ -289,15 +289,19 @@
         "area": 27,
         "label": "세부영역 27 영역 심화"
       },
-      "status": "퍼블리셔 대기",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-68",
           "started": "2026-09-25 07:03:39",
           "agents_exit": 0,
-          "publish_exit": null,
+          "publish_exit": 0,
           "continued": false,
-          "agents_done": "2026-09-25 07:36:26"
+          "agents_done": "2026-09-25 07:36:26",
+          "published_at": "2026-09-25 07:52:33",
+          "cost_usd": 13.0259,
+          "duration_sec": 2095.8,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-68"
