@@ -607,6 +607,36 @@
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "summary": "VDA 5050 3.0.0(main) 팩트시트 구성 블록의 충전 설정 batteryCharging(임계 저충전 수준·희망 최소·최대 충전 수준·최소 충전 시간)이 로봇 선언의 일부로 추가돼 충전 시점 계획의 입력이 될 수 있다(실행 2026-09-25-23, f4·f22).",
       "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "표준마다 공간 연결을 표현하는 방식을 더한다: IndoorGML 2.0(Part 1 개념 모델 2025-08 발행, 쌍대 그래프·주제 레이어, Part 2 인코딩 초안), IFC 4.3(IfcSpace·IfcBuildingStorey·IfcRelSpaceBoundary, 공간 사이 직접 연결 관계는 도출 필요 추정), CityGML 3.0(BuildingRoom·Storey·DoorSurface), ISO 19164:2024(의미 분류, 부속서 대응은 원문 미열람), IMDF(사람 길안내 형식), 국내 실내공간정보 구축 작업규정(2018-03-05 제정판 기준 CityGML 2.0·IndoorGML 공간 개념 원칙). 근거 f1·f2·f3·f5·f6·f8·f14·f15·f17·f21(실행 2026-09-25-28).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 6,
+      "section": "11. 열린 질문",
+      "summary": "국내에서 ISO 19164 나 IndoorGML 2.0 을 KS 로 부합화했거나 실내공간정보 구축 작업규정을 새 판 표준에 맞춰 개정한 사례가 있는가(근거 f17, 실행 2026-09-25-28).",
+      "status": "제안"
+    },
+    {
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25",
+      "track": "floorplan-recognition",
+      "stage": 2,
+      "area_no": 28,
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "summary": "실내 공간 표준의 발행 상태를 더한다: IndoorGML 2.0 Part 1 발행·Part 2 인코딩 초안(JSON v0.5.0), ISO 19164:2024(표준 간 클래스 대응 부속서, 원문 미열람), ISO 16739-1:2024(IFC 4.3), ifcOWL(IFC4_ADD2까지, 4.3 목록 없음), BOT v0.3.2(커뮤니티 그룹 사양), IMDF 1.0.0(OGC 커뮤니티 표준). 근거 f1·f3·f5·f10·f11·f12·f15(실행 2026-09-25-28). 3D 장면 그래프(f20)는 로봇 자체 지능·제어 연계 대상이라 제외.",
+      "status": "제안"
     }
   ]
 }

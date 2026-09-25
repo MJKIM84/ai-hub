@@ -29,8 +29,8 @@
       "claim": "OGC 는 2025-08-28 IndoorGML 2.0 Part 1(개념 모델, 문서 번호 22-045r5)을 발행했으며, 이 개념 모델은 실내 공간의 위상 연결과 여러 맥락을 기술하는 핵심(core) 데이터 모델과 실내 길찾기(navigation) 데이터 모델 두 부분으로 이루어진다.",
       "tag": "사실",
       "source_ids": [
-        "ref-498",
-        "ref-499",
+        "ref-331",
+        "ref-332",
         "ref-157"
       ],
       "cross_checked": false,
@@ -46,8 +46,8 @@
       "claim": "IndoorGML 은 방 같은 3차원 공간(셀)을 쌍대 공간(dual space)의 노드로, 두 공간이 공유하는 경계면을 두 노드를 잇는 엣지로 바꾸어 공간 연결 그래프를 만들고, 같은 실내를 지형(방·복도·계단) 레이어와 Wi-Fi·RFID 커버리지 레이어처럼 여러 주제 레이어로 나누어 표현한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-498",
-        "ref-499"
+        "ref-331",
+        "ref-332"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -62,7 +62,7 @@
       "claim": "IndoorGML 2.0 Part 2 의 인코딩(XML 26-042, JSON 26-043, SQL 26-044)은 아직 초안이며, JSON 인코딩 초안(v0.5.0, 2026-02-28 제출)은 IndoorFeatures·ThematicLayer·PrimalSpaceLayer·CellSpace·CellBoundary·DualSpaceLayer·Node·Edge 와 길찾기 클래스(NavigableSpace·GeneralSpace·TransferSpace·NonNavigableSpace·ObjectSpace·NavigableBoundary·Route), 그리고 IFC 같은 외부 모델을 가리키는 외부 참조 형식을 둔다.",
       "tag": "사실",
       "source_ids": [
-        "ref-500",
+        "ref-333",
         "ref-157"
       ],
       "cross_checked": false,
@@ -77,7 +77,7 @@
       "claim": "IndoorGML 1.x 기반 확장 연구는 길찾기 모듈이 일반 방(GeneralSpace), 복도·계단 같은 전이 공간(TransitionSpace), 출입구(AnchorSpace), 문에 대응하는 연결 공간(ConnectionSpace)과 경로(RouteNode·RouteSegment·Route)를 두며, 교통약자 길찾기를 위해 엘리베이터·에스컬레이터·경사로를 TransitionSpace 의 하위 클래스로 더했다고 설명한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-515"
+        "ref-348"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -121,7 +121,7 @@
       "claim": "IFC 4.3 의 IfcRelSpaceBoundary 는 공간을 둘러싼 물리 요소(벽 등)·가상 요소·개구부와 공간을 잇는 객체화된 관계이며, 2차 수준 경계는 반대편에 다른 공간이 있는 A 유형과 건물 요소가 있는 B 유형으로 나뉜다.",
       "tag": "사실",
       "source_ids": [
-        "ref-501"
+        "ref-334"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -136,7 +136,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-156",
-        "ref-501"
+        "ref-334"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -150,7 +150,7 @@
       "claim": "Zhu 외(Automation in Construction 171, 2025)는 IFC 를 그래프로 바꾼 IFC-Graph 의 의미 정보로 실내 길찾기 연결 그래프를 만들면서 수평 연결은 IfcRelSpaceBoundary 등 기존 관계에서 도출하고, 층 사이 수직 연결을 위해 사용자 정의 엔터티 IfcRelConnectsSpace 를 IFC 에 더해 공간–공간·공간–출구·공간–설비 경로 탐색을 보였다.",
       "tag": "사실",
       "source_ids": [
-        "ref-510"
+        "ref-343"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -165,7 +165,7 @@
       "claim": "IFC 4.3 은 ISO 16739-1:2024 로 국제표준화되었고 교량·도로·철도·항만 같은 기반시설 정보를 더했으며, 앞선 ISO 16739-1:2018 은 IFC4 ADD2 TC1 에 해당한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-502"
+        "ref-335"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -180,7 +180,7 @@
       "claim": "buildingSMART 의 ifcOWL 저장소는 IFC 스키마를 RDF·TTL 형식의 온톨로지로 제공하며, README 의 대상 판 목록은 IFC2X3_Final·IFC2X3_TC1·IFC4·IFC4_ADD1·IFC4_ADD2 까지이고 IFC 4.3 은 목록에 없다.",
       "tag": "사실",
       "source_ids": [
-        "ref-509"
+        "ref-342"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -194,8 +194,8 @@
       "claim": "W3C 링크드 빌딩 데이터 커뮤니티 그룹의 건물 위상 온톨로지(BOT, v0.3.2)는 Zone·Site·Building·Storey·Space·Element·Interface 클래스와 containsZone·hasStorey·hasSpace·adjacentZone·intersectsZone·adjacentElement·interfaceOf 같은 관계로 건물의 층·공간·요소 위상을 기술하는 최소 온톨로지다.",
       "tag": "사실",
       "source_ids": [
-        "ref-503",
-        "ref-504"
+        "ref-336",
+        "ref-337"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -209,7 +209,7 @@
       "claim": "BOT 에는 문·개구부 전용 클래스가 없고 공간 사이 연결은 adjacentZone·adjacentElement 관계와 일반 개념인 Interface 로만 표현되는 것으로 보여, 통행 가능 연결을 담으려면 다른 온톨로지와 결합해야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-503"
+        "ref-336"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -223,8 +223,8 @@
       "claim": "CityGML 3.0 Part 1 개념 모델(OGC 20-010, 2021 승인)은 공간(AbstractSpace)과 공간 경계(AbstractSpaceBoundary) 개념을 새로 두고, 건물 방을 비점유 공간의 하위 클래스인 BuildingRoom 으로, 문·창문을 DoorSurface·WindowSurface 같은 채움 면으로, 가상 경계를 ClosureSurface 로 표현하며 건물 층(Storey) 표현을 더했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-506",
-        "ref-507"
+        "ref-339",
+        "ref-340"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -239,7 +239,7 @@
       "claim": "IMDF 1.0.0 은 2021-02-23 OGC 커뮤니티 표준이 되었으며, 층(level)을 방·통로·계단실·엘리베이터 같은 공간 단위(unit)로 채우고 문 같은 출입구를 접근성·출입통제 속성을 가진 opening 으로, 설비·편의시설을 fixture·kiosk·amenity 로, 표시 위치를 anchor 로 모델링한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-505"
+        "ref-338"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -254,7 +254,7 @@
       "claim": "Brick 온톨로지는 자동화에 관련된 건물 안 위치(건물·층·방)를 brick:Location 으로 두고 hasPart·isPartOf 관계로 계층을 짓되, 벽 위치 같은 정확한 기하는 담지 않는 위상 중심 표현을 쓴다.",
       "tag": "사실",
       "source_ids": [
-        "ref-508"
+        "ref-341"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -269,7 +269,7 @@
       "claim": "국토교통부 고시 '실내공간정보 구축 작업규정'(2018-03-05 제정)은 철도역·공항처럼 유동 인구가 많은 시설의 길찾기·시설관리·안전에 쓰는 실내공간정보를 정의하고, 실내공간정보를 원칙적으로 CityGML 2.0 데이터 형식과 IndoorGML 공간 개념으로 제작하도록 한다.",
       "tag": "사실",
       "source_ids": [
-        "ref-512"
+        "ref-345"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -284,7 +284,7 @@
       "claim": "이기준·이지영(한국공간정보학회지 21(3), 2013)은 OGC 가 IndoorGML 표준화 작업반을 꾸려 2013년 9월 발행을 목표로 했고 IndoorGML 의 주된 목적이 실내 위치 기반 서비스의 기반인 실내 공간의 네트워크 위상을 표현하는 것이라고 소개했다.",
       "tag": "사실",
       "source_ids": [
-        "ref-511"
+        "ref-344"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -299,8 +299,8 @@
       "claim": "Open-RMF 건물 지도 메시지는 층(Level)마다 이름·고도·배경 이미지·장소(Place)·문(Door)·주행 그래프 목록(nav_graphs)·벽 그래프를 두고, 그래프(Graph)는 이름·꼭짓점(GraphNode)·간선(GraphEdge)·파라미터로 이루어진다.",
       "tag": "사실",
       "source_ids": [
-        "ref-513",
-        "ref-516"
+        "ref-346",
+        "ref-349"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -314,7 +314,7 @@
       "claim": "연계 대상: 로봇 인식 연구의 3D 장면 그래프(Hydra 계열)는 건물·방·장소(주행 가능 자유 공간)·객체·메트릭 메시를 층으로 쌓고 포함·인접 관계를 엣지로 두는 계층 그래프이며, 표준이 아니라 로봇이 센서로 온라인 생성하는 표현이다.",
       "tag": "사실",
       "source_ids": [
-        "ref-514"
+        "ref-347"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -329,16 +329,16 @@
       "claim": "q2-01 에 대해 확인한 표준은 (1) 공간 연결을 노드–엣지 쌍대 그래프로 명시하는 실내 공간 표준 IndoorGML, (2) 공간·층·경계는 담지만 연결은 경계·문에서 도출해야 하는 건물·도시 모델 IFC 4.3 과 CityGML 3.0, (3) 의미 분류와 표준 간 대응을 주는 ISO 19164, (4) 포함·인접 위상을 RDF 로 담는 링크드 데이터 온톨로지 BOT·ifcOWL·Brick, (5) 사람 길안내 지도 형식 IMDF 로 나뉘며, 공간 그래프 교환에 가장 가까운 것은 IndoorGML 이지만 2.0 인코딩은 아직 초안인 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-498",
-        "ref-500",
+        "ref-331",
+        "ref-333",
         "ref-156",
-        "ref-501",
-        "ref-506",
+        "ref-334",
+        "ref-339",
         "ref-158",
-        "ref-503",
-        "ref-509",
-        "ref-508",
-        "ref-505"
+        "ref-336",
+        "ref-342",
+        "ref-341",
+        "ref-338"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -353,13 +353,13 @@
       "claim": "확인한 표준 클래스를 공간 그래프 스키마 초안에 대응시키면 공간 노드는 IndoorGML CellSpace·IFC IfcSpace·CityGML BuildingRoom·BOT Space·IMDF unit, 문은 IndoorGML 경계(NavigableBoundary, 1.x 의 ConnectionSpace)·IFC 문과 공간 경계 관계·CityGML DoorSurface·IMDF opening, 층은 IfcBuildingStorey·BOT Storey·IMDF level 에 대응할 수 있으나, 로봇 충전 위치·작업 스테이션에 대응하는 전용 클래스는 이번에 확인한 표준들에서 찾지 못한 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-500",
-        "ref-515",
+        "ref-333",
+        "ref-348",
         "ref-156",
-        "ref-501",
-        "ref-506",
-        "ref-503",
-        "ref-505",
+        "ref-334",
+        "ref-339",
+        "ref-336",
+        "ref-338",
         "ref-214"
       ],
       "cross_checked": false,
@@ -375,9 +375,9 @@
       "claim": "분류 원문 질문(‘3층 출하 대기장’을 같은 장소로 인식)에 대해, IndoorGML 의 외부 참조로 공간 셀을 IFC 공간에 잇고 ISO 19164 가 IFC·CityGML·IndoorGML 사이 클래스 대응을 주므로 건물 표준 쪽 장소 식별자는 공통 기준이 될 수 있으나, 제조사 로봇 지도 좌표·지도 식별자와의 대응은 이들 표준이 다루지 않아 ROP 쪽 대응 계층이 여전히 필요할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
-        "ref-500",
+        "ref-333",
         "ref-158",
-        "ref-513"
+        "ref-346"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -465,7 +465,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-498",
+      "id": "ref-331",
       "org": "OGC (Open Geospatial Consortium)",
       "title": "OGC IndoorGML 2.0 Part 1 – Conceptual Model (22-045r5)",
       "published": "2025-08",
@@ -480,7 +480,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-499",
+      "id": "ref-332",
       "org": "OGC (Open Geospatial Consortium)",
       "title": "OGC Publishes IndoorGML 2.0 Part 1 Conceptual Model Standard",
       "published": "2025-08-28",
@@ -495,7 +495,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-500",
+      "id": "ref-333",
       "org": "OGC IndoorGML SWG (opengeospatial/IndoorGML-SWG GitHub)",
       "title": "OGC IndoorGML 2.0 Part 2b – JSON Encoding (26-043, Candidate SWG Draft v0.5.0)",
       "published": "2026-02-28",
@@ -510,7 +510,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-501",
+      "id": "ref-334",
       "org": "buildingSMART (IFC4.3.x-development GitHub)",
       "title": "IFC 4.3 — IfcRelSpaceBoundary (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음)",
       "published": null,
@@ -525,7 +525,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-502",
+      "id": "ref-335",
       "org": "ISO",
       "title": "ISO 16739-1:2024 - Industry Foundation Classes (IFC) for data sharing in the construction and facility management industries — Part 1: Data schema",
       "published": "2024",
@@ -540,7 +540,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-503",
+      "id": "ref-336",
       "org": "W3C Linked Building Data Community Group (w3c-lbd-cg GitHub)",
       "title": "Building Topology Ontology (BOT) — bot.ttl (version 0.3.2)",
       "published": "2020-07-31",
@@ -555,7 +555,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-504",
+      "id": "ref-337",
       "org": "Rasmussen, M. H., Lefrançois, M., Schneider, G. F., & Pauwels, P.",
       "title": "BOT: The building topology ontology of the W3C linked building data group",
       "published": "2020",
@@ -570,7 +570,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-505",
+      "id": "ref-338",
       "org": "OGC (Open Geospatial Consortium) / Apple",
       "title": "Indoor Mapping Data Format (1.0.0) — OGC Community Standard 20-094",
       "published": "2021-02",
@@ -585,7 +585,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-506",
+      "id": "ref-339",
       "org": "OGC (Open Geospatial Consortium)",
       "title": "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard (20-010)",
       "published": "2021",
@@ -600,7 +600,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-507",
+      "id": "ref-340",
       "org": "PFG(Journal of Photogrammetry, Remote Sensing and Geoinformation Science) 게재 논문 저자(미확인)",
       "title": "CityGML 3.0: New Functions Open Up New Applications",
       "published": "2020",
@@ -615,7 +615,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-508",
+      "id": "ref-341",
       "org": "Brick Consortium (Brick Schema)",
       "title": "Relationships — Brick Ontology Documentation",
       "published": null,
@@ -630,7 +630,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-509",
+      "id": "ref-342",
       "org": "buildingSMART (buildingsmart-community GitHub)",
       "title": "ifcOWL — README (ifcOWL standard)",
       "published": null,
@@ -645,7 +645,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-510",
+      "id": "ref-343",
       "org": "Zhu, J., Wong, M. O., Nisbet, N., Xu, J., Kelly, T., Zlatanova, S., & Brilakis, I.",
       "title": "Semantics-based connectivity graph for indoor pathfinding powered by IFC-Graph",
       "published": "2025",
@@ -660,7 +660,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-511",
+      "id": "ref-344",
       "org": "이기준, 이지영(한국공간정보학회지)",
       "title": "실내공간 표준안 IndoorGML의 개념 및 활용",
       "published": "2013",
@@ -675,7 +675,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-512",
+      "id": "ref-345",
       "org": "국토교통부(법제처 국가법령정보센터)",
       "title": "실내공간정보 구축 작업규정",
       "published": "2018-03-05",
@@ -690,7 +690,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-513",
+      "id": "ref-346",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_building_map_msgs — rmf_building_map_msgs/msg/Level.msg",
       "published": null,
@@ -705,7 +705,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-514",
+      "id": "ref-347",
       "org": "arXiv 2305.07154 저자(미확인)",
       "title": "Foundations of Spatial Perception for Robotics: Hierarchical Representations and Real-time Systems",
       "published": "2023-05",
@@ -720,7 +720,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-515",
+      "id": "ref-348",
       "org": "ISPRS International Journal of Geo-Information(MDPI) 게재 논문 저자(미확인)",
       "title": "Data Model for IndoorGML Extension to Support Indoor Navigation of People with Mobility Disabilities",
       "published": "2020",
@@ -735,7 +735,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-516",
+      "id": "ref-349",
       "org": "Open Robotics (open-rmf)",
       "title": "rmf_building_map_msgs — rmf_building_map_msgs/msg/Graph.msg",
       "published": null,
@@ -831,15 +831,15 @@
     "unverified": [
       "모든 finding 교차 확인 실패: 표준마다 발행 주체 한 곳(또는 같은 기관 계열)의 자료만 있음",
       "f1·f2 IndoorGML 2.0 Part 1 본문 원문 미열람(SWG 저장소 미러 HTML 이 10MB 를 넘어 WebFetch 실패), 발표일 2025-08-28 은 OGC 발표문 검색 요약 기준",
-      "f4 IndoorGML 1.x 길찾기 클래스(ConnectionSpace·TransitionSpace)가 2.0 에서 유지되는지 미확인, ref-515 저자 미확인",
+      "f4 IndoorGML 1.x 길찾기 클래스(ConnectionSpace·TransitionSpace)가 2.0 에서 유지되는지 미확인, ref-348 저자 미확인",
       "f8·f13 IFC·BOT 의 연결 관계·문 클래스 부재는 열람 도구 응답 기준이며 부재 확정 아님",
-      "f14 CityGML 3.0 본문 미열람, ref-507 저자 미확인",
+      "f14 CityGML 3.0 본문 미열람, ref-340 저자 미확인",
       "f15 IMDF 의 기하 인코딩 방식과 충전소를 amenity·fixture 로 담을 수 있는지 미확인",
       "f16 Brick 위치 계층은 공식 문서 검색 요약 기준, Brick README 는 열었으나 위치 클래스 설명이 없어 출처로 넣지 않음",
       "f17 실내공간정보 구축 작업규정의 개정 이력(2021-12-24 판 링크)과 현행 조문 미확인",
       "KS X ISO 19164 등 실내 지물·IndoorGML 관련 KS 부합화 여부는 검색 1회에서 찾지 못함",
       "RealEstateCore(DTDL)는 검색으로 존재를 확인했으나 신규 출처 상한을 고려해 넣지 않음",
-      "ref-514 저자 목록 미확인"
+      "ref-347 저자 목록 미확인"
     ],
     "scope_violations": [
       "f20: 3D 장면 그래프는 로봇 센서 인식으로 만드는 표현이라 분류 원문 9장 '로봇 자체 지능·제어' 연계 영역이므로 '연계 대상: '으로 표시하고 표준 비교의 대조 사례로만 제안함"
@@ -848,7 +848,7 @@
       "queries": 20,
       "sources": 19
     },
-    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다: 재사용 ref-156(IfcSpace)·ref-157(IndoorGML SWG README), 신규 ref-500(IndoorGML 2.0 JSON 인코딩 초안)·ref-501(IfcRelSpaceBoundary)·ref-503(BOT bot.ttl)·ref-509(ifcOWL README)·ref-513·ref-516(Open-RMF 건물 지도 메시지). IndoorGML 2.0 Part 1 미러 HTML(22-045r5)은 10MB 초과로 열지 못했고, CityGML-3.0CM README·Brick README 는 열었으나 필요한 내용이 없어 출처로 쓰지 않았다. 나머지 신규 11건과 재사용 ref-158·ref-214·ref-225 는 원문 미열람이라 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 20회/40, 신규 출처 19건/20(ref-498~ref-516, 예약 구간 안), 재사용 5건. 질문 선택: target.json 지정 q2-01 1건. q2-01 은 표준 목록과 표현 방식 비교로 답했으며(f21), 공간 그래프 교환에 가장 가까운 IndoorGML 2.0 은 인코딩이 초안이고 IFC·CityGML 은 연결을 도출해야 하며 충전·작업 스테이션 전용 클래스는 확인한 표준들에 없다는 점(f22)은 추정이다. 한국 자료: 실내공간정보 구축 작업규정(ref-512), 이기준·이지영 2013(ref-511). 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음(f20 장면 그래프는 로봇 인식 연계 대상). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 온톨로지 변경 제안 4건(표준 대응 클래스 속성 3건, 주제 레이어 개념 1건). 후속 질문 2건. 일반 열린 질문 1건."
+    "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문 8건을 열었다: 재사용 ref-156(IfcSpace)·ref-157(IndoorGML SWG README), 신규 ref-333(IndoorGML 2.0 JSON 인코딩 초안)·ref-334(IfcRelSpaceBoundary)·ref-336(BOT bot.ttl)·ref-342(ifcOWL README)·ref-346·ref-349(Open-RMF 건물 지도 메시지). IndoorGML 2.0 Part 1 미러 HTML(22-045r5)은 10MB 초과로 열지 못했고, CityGML-3.0CM README·Brick README 는 열었으나 필요한 내용이 없어 출처로 쓰지 않았다. 나머지 신규 11건과 재사용 ref-158·ref-214·ref-225 는 원문 미열람이라 신뢰도 상한 medium. finding 신뢰도는 모두 medium 이하, 교차 확인 0건. 검색 20회/40, 신규 출처 19건/20(ref-331~ref-349, 예약 구간 안), 재사용 5건. 질문 선택: target.json 지정 q2-01 1건. q2-01 은 표준 목록과 표현 방식 비교로 답했으며(f21), 공간 그래프 교환에 가장 가까운 IndoorGML 2.0 은 인코딩이 초안이고 IFC·CityGML 은 연결을 도출해야 하며 충전·작업 스테이션 전용 클래스는 확인한 표준들에 없다는 점(f22)은 추정이다. 한국 자료: 실내공간정보 구축 작업규정(ref-345), 이기준·이지영 2013(ref-344). 교차 규칙: 27. AI·학습·적응과 모델 운영 관련 finding 없음(f20 장면 그래프는 로봇 인식 연계 대상). 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 온톨로지 변경 제안 4건(표준 대응 클래스 속성 3건, 주제 레이어 개념 1건). 후속 질문 2건. 일반 열린 질문 1건."
   },
   "track": {
     "slug": "floorplan-recognition",

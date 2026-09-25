@@ -70,7 +70,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 40 | q1-07 — VDA 5050 3.0에서 팩트시트(유형 명세·적재 명세·지원 action)의 필드가 2.0 대비 어떻게 바뀌었으며, 적재 제약을 어떤 필드로 기술하는가? ([답](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md#q1-07)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 22 | q1-03 — 물류·시설 현장에서 채팅이나 음성으로 로봇·작업자에게 일을 지시하는 운영 인터페이스 제품은 무엇이 있고, 지시를 받은 뒤 확인·승인을 어떻게 받는가? ([답](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md#q1-03)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
-| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 21 | q1-04 — 로봇을 새 현장에 들일 때 지도 작성과 공용 자원 등록에 드는 시간과 반복 작업은 어떤 자료로 확인할 수 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-04)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
+| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 22 | q2-01 — 공간 그래프를 표현하는 기존 표준(예: BIM·IFC, 실내 공간 표준)은 무엇이 있는가? ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-01)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례

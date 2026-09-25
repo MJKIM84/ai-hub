@@ -30,6 +30,37 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | 2026-09-25-29 | 갱신 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | '다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 세부영역 연결 18쌍·근거 finding 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가. 2차: 번호만 쓴 호칭 수정, 첫 문장 태그·각주 보강 |
 | 2026-09-25-29 | 요약 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 세부영역 연결 18쌍, 근거 finding 22건 중 추정 9건) |
+| 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-01 답함(공간 그래프 표준 조사), 3절 조사 결과·4절 결론 신규 작성, 후속 질문 2건(q2-07·q3-05), 완료 조건 미충족·전환 미승인, 단계 상태 진행 중. 상태 줄 갱신이 필요해 patches 대신 전체 content로 보냄 |
+| 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.3 → v0.4: 공간 노드·층에 표준 대응 클래스(후보) 속성, 층 확정, 주제 레이어 추가·확정. 문 대응·레이어 구분·IFC 수직 연결은 6절 질문. H1 버전 표기 변경이 필요해 전체 content로 보냄 |
+| 2026-09-25-28 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 4절에 '공간 그래프를 표현하는 표준' 소절 덧붙임(q2-01 요약 비교표, 국내 규정, 종합). 입력 형식별 정보 항목(q2-02)·관제 수용 형식(q2-03)은 아직 없음을 명시 |
+| 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6. 살아있는 산출물 링크: 스키마 초안 v0.4, 아이디어 페이지 4절 표준 소절, 백로그 q2-01 답함·후속 질문 2건 반영 |
+| 2026-09-25-28 | 요약 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | 건축 도면 자동 인식 단계 2: q2-01 답함(IndoorGML 2.0·IFC 4.3·CityGML 3.0·ISO 19164·BOT·ifcOWL·Brick·IMDF 공간 그래프 표준 정리), 공간 그래프 스키마 초안 v0.3 → v0.4, 후속 질문 2건 |
+| 2026-09-25-28 | 생성 | [docs/references/ref-331.md](references/ref-331.md) | 참고문헌 ref-331 등록: OGC IndoorGML 2.0 Part 1 – Conceptual Model (22-045r5) |
+| 2026-09-25-28 | 생성 | [docs/references/ref-332.md](references/ref-332.md) | 참고문헌 ref-332 등록: OGC Publishes IndoorGML 2.0 Part 1 Conceptual Model Standard |
+| 2026-09-25-28 | 생성 | [docs/references/ref-333.md](references/ref-333.md) | 참고문헌 ref-333 등록: OGC IndoorGML 2.0 Part 2b – JSON Encoding (26-043, Candidate… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-334.md](references/ref-334.md) | 참고문헌 ref-334 등록: IFC 4.3 — IfcRelSpaceBoundary (개발 브랜치 ifc4.3-main 원본, 게시판 IF… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-335.md](references/ref-335.md) | 참고문헌 ref-335 등록: ISO 16739-1:2024 - Industry Foundation Classes (IFC) for dat… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-336.md](references/ref-336.md) | 참고문헌 ref-336 등록: Building Topology Ontology (BOT) — bot.ttl (version 0.3.2) |
+| 2026-09-25-28 | 생성 | [docs/references/ref-337.md](references/ref-337.md) | 참고문헌 ref-337 등록: BOT: The building topology ontology of the W3C linked buildi… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-338.md](references/ref-338.md) | 참고문헌 ref-338 등록: Indoor Mapping Data Format (1.0.0) — OGC Community Standard… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-339.md](references/ref-339.md) | 참고문헌 ref-339 등록: OGC City Geography Markup Language (CityGML) Part 1: Concept… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-340.md](references/ref-340.md) | 참고문헌 ref-340 등록: CityGML 3.0: New Functions Open Up New Applications |
+| 2026-09-25-28 | 생성 | [docs/references/ref-341.md](references/ref-341.md) | 참고문헌 ref-341 등록: Relationships — Brick Ontology Documentation |
+| 2026-09-25-28 | 생성 | [docs/references/ref-342.md](references/ref-342.md) | 참고문헌 ref-342 등록: ifcOWL — README (ifcOWL standard) |
+| 2026-09-25-28 | 생성 | [docs/references/ref-343.md](references/ref-343.md) | 참고문헌 ref-343 등록: Semantics-based connectivity graph for indoor pathfinding po… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-344.md](references/ref-344.md) | 참고문헌 ref-344 등록: 실내공간 표준안 IndoorGML의 개념 및 활용 |
+| 2026-09-25-28 | 생성 | [docs/references/ref-345.md](references/ref-345.md) | 참고문헌 ref-345 등록: 실내공간정보 구축 작업규정 |
+| 2026-09-25-28 | 생성 | [docs/references/ref-346.md](references/ref-346.md) | 참고문헌 ref-346 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/Level.msg |
+| 2026-09-25-28 | 생성 | [docs/references/ref-347.md](references/ref-347.md) | 참고문헌 ref-347 등록: Foundations of Spatial Perception for Robotics: Hierarchical… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-348.md](references/ref-348.md) | 참고문헌 ref-348 등록: Data Model for IndoorGML Extension to Support Indoor Navigat… |
+| 2026-09-25-28 | 생성 | [docs/references/ref-349.md](references/ref-349.md) | 참고문헌 ref-349 등록: rmf_building_map_msgs — rmf_building_map_msgs/msg/Graph.msg |
+| 2026-09-25-28 | 생성 | [docs/glossary/building-information-modeling.md](glossary/building-information-modeling.md) | 용어집 항목 건물 정보 모델링 |
+| 2026-09-25-28 | 생성 | [docs/glossary/space-graph.md](glossary/space-graph.md) | 용어집 항목 공간 그래프 |
+| 2026-09-25-28 | 생성 | [docs/glossary/building-topology-ontology.md](glossary/building-topology-ontology.md) | 용어집 항목 건물 위상 온톨로지 |
+| 2026-09-25-28 | 생성 | [docs/glossary/indoor-mapping-data-format.md](glossary/indoor-mapping-data-format.md) | 용어집 항목 실내 지도 데이터 형식 |
+| 2026-09-25-28 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
+| 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-27 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지. 2차 수정: 7절 첫 문장을 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s6.md](topics/2026/2026-09-25-area11-s6.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "6. 대표 접근법과 기술" 절(2,039자)을 옮겼다 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s4.md](topics/2026/2026-09-25-area11-s4.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "4. 핵심 개념과 용어" 절(1,171자)을 옮겼다 |

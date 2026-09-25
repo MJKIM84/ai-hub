@@ -1009,6 +1009,90 @@
       "ref_id": "ref-330",
       "run_id": "2026-09-25-23",
       "date": "2026-09-25"
+    },
+    {
+      "name": "CityGML 3.0 Part 1: Conceptual Model (OGC 20-010)",
+      "org": "OGC",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://docs.ogc.org/is/20-010/20-010.html",
+      "summary": "공간·공간 경계 개념과 건물 모듈의 방(BuildingRoom)·층(Storey)·문(DoorSurface) 표현을 정한 도시·건물 모델 개념 표준(2021, 원문 미열람).",
+      "ref_id": "ref-339",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "IMDF (Indoor Mapping Data Format) 1.0.0",
+      "org": "OGC / Apple",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://docs.ogc.org/cs/20-094/",
+      "summary": "층·공간 단위·출입구·편의시설을 사람 길안내용으로 모델링하는 OGC 커뮤니티 표준(2021-02-23, 원문 미열람).",
+      "ref_id": "ref-338",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "BOT (Building Topology Ontology) 0.3.2",
+      "org": "W3C Linked Building Data Community Group",
+      "kind": "프레임워크",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/w3c-lbd-cg/bot/blob/master/bot.ttl",
+      "summary": "건물의 대지·건물·층·공간·요소와 포함·인접 관계를 RDF 로 기술하는 최소 온톨로지. W3C 권고안이 아닌 커뮤니티 그룹 사양이다.",
+      "ref_id": "ref-336",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ifcOWL",
+      "org": "buildingSMART",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://github.com/buildingsmart-community/ifcOWL",
+      "summary": "IFC 스키마를 RDF·TTL 온톨로지로 제공한다. README 의 대상 판은 IFC2X3~IFC4_ADD2 이며 IFC 4.3 은 목록에 없다(2026-09-25 확인).",
+      "ref_id": "ref-342",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Brick Schema",
+      "org": "Brick Consortium",
+      "kind": "오픈소스",
+      "related_areas": [
+        6,
+        10
+      ],
+      "url": "https://docs.brickschema.org/brick/relationships.html",
+      "summary": "건물 설비·센서 메타데이터 온톨로지로, 건물·층·방 위치를 hasPart·isPartOf 계층으로 표현한다(원문 미열람).",
+      "ref_id": "ref-341",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "ISO 16739-1:2024 (IFC 4.3)",
+      "org": "ISO",
+      "kind": "표준",
+      "related_areas": [
+        6,
+        28
+      ],
+      "url": "https://www.iso.org/standard/84123.html",
+      "summary": "IFC 4.3 을 국제표준화한 판으로 교량·도로·철도·항만 같은 기반시설 정보를 더했다(원문 미열람).",
+      "ref_id": "ref-335",
+      "run_id": "2026-09-25-28",
+      "date": "2026-09-25"
     }
   ]
 }
