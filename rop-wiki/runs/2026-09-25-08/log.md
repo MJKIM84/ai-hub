@@ -91,3 +91,5 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ai-hub/rop-w
 
 - 2026-09-25 10:54:26 KST [퍼블리셔] 결과: 실패 · 소요 10초 · 5단계 반영 뒤 프런트매터 검사 실패: Traceback (most recent call last):
 - 2026-09-25 10:54:26 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 프런트매터 검사 실패: Traceback (most recent call last):))
+- 2026-09-25 10:54:32 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 5단계 반영 뒤 프런트매터 검사 실패: Traceback (most recent call last):))
+- 2026-09-25 10:54:43 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 1. 주문·업무 시스템 연계 — 생성 4/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
