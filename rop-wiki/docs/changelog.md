@@ -28,6 +28,8 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-29 | 갱신 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | '다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 세부영역 연결 18쌍·근거 finding 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가. 2차: 번호만 쓴 호칭 수정, 첫 문장 태그·각주 보강 |
+| 2026-09-25-29 | 요약 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 세부영역 연결 18쌍, 근거 finding 22건 중 추정 9건) |
 | 2026-09-25-27 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지. 2차 수정: 7절 첫 문장을 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s6.md](topics/2026/2026-09-25-area11-s6.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "6. 대표 접근법과 기술" 절(2,039자)을 옮겼다 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s4.md](topics/2026/2026-09-25-area11-s4.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "4. 핵심 개념과 용어" 절(1,171자)을 옮겼다 |
