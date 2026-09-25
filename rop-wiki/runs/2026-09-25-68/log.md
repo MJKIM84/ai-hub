@@ -121,3 +121,5 @@ WARNING -  Doc file 'categories/g-safety-security-intelligence-and-governance/27
 
 - 2026-09-25 16:41:57 KST [퍼블리셔] 결과: 실패 · 소요 2분 6초 · 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!
 - 2026-09-25 16:41:57 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
+- 2026-09-25 16:42:52 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))
+- 2026-09-25 16:44:39 KST [퍼블리셔] 로그 커밋: run(2026-09-25): 영역 심화 27. AI·학습·적응과 모델 운영 — 생성 5/갱신 1 (중단) (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)
