@@ -1120,9 +1120,20 @@ def cmd_run(args) -> int:
     retry = int(args.retry or 0)
     context = build_context(args.role, target_json, settings, probe_json, stage, retry, track_cfg)
     format_fix = int(getattr(args, "format_fix", 0) or 0)
-    if args.role == "storyteller" and not args.dry_run:
-        record_base(rd)
-    inputs = build_inputs(args.role, args.run_id, target_json, settings, stage, retry, track_cfg, rd, format_fix)
+    # 위키(docs·data)를 읽는 동안 퍼블리셔 전역 잠금을 공유 모드로 잡는다. 퍼블리셔와 사전 검사(--precheck)는 잠금을 독점으로 잡고
+    # 다른 실행의 원고를 docs 에 잠시 반영했다 되돌리므로, 그 사이에 읽으면 검증 전 원고나 반쯤 바뀐 페이지가 입력에 들어간다
+    # (3부 배치에서 대분류 C 연결 실행이 세부영역 12 의 사전 검사 중 상태를 읽었다)
+    import fcntl
+    _lock_path = ROOT / "runs" / ".cache" / "publish.lock"
+    _lock_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(_lock_path, "a") as _lk:
+        fcntl.flock(_lk, fcntl.LOCK_SH)
+        try:
+            if args.role == "storyteller" and not args.dry_run:
+                record_base(rd)
+            inputs = build_inputs(args.role, args.run_id, target_json, settings, stage, retry, track_cfg, rd, format_fix)
+        finally:
+            fcntl.flock(_lk, fcntl.LOCK_UN)
     extra: dict = {}
     if format_fix and args.role == "storyteller":
         extra["형식 검증 오류 (재작성)"] = _format_fix_section(rd)
