@@ -17,3 +17,35 @@
 - 2026-09-26 00:40:01 KST [형식 검증] 1차 검증 산출물 검사: 통과
 - 2026-09-26 00:40:01 KST [1차 검증] 결과: 조건부 승인 · 소요 3분 45초 · 신뢰도 medium
 - 2026-09-26 00:40:02 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-26-02/prompts/storyteller.md (366,284자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-26 00:41:47 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 1분 45초 · 비용 $1.9842 · subtype success
+- 2026-09-26 00:41:47 KST [스토리텔러 에이전트] 저장: runs/2026-09-26-02/pages.json
+- 2026-09-26 00:41:48 KST [스토리텔러] 결과: 성공 · 소요 1분 46초 · 페이지 2개
+- 2026-09-26 00:41:48 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-26-02 (월간 재검증)
+- 2026-09-26 00:41:48 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-26 00:41:48 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-26 00:41:49 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 4개, 반영 전 사전 검사 포함)
+- 2026-09-26 00:41:49 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-26-02/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-26 00:41:51 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-26 00:41:52 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-26 00:41:52 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 7건 (파일 1244개 검사)
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 01-order-and-business-system-integration.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 02-process-and-workflow-modeling.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 03-capacity-site-and-facility-planning.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md
+- topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md
+
+- 2026-09-26 00:41:52 KST [형식 검증] 원고 형식 검사: 오류 9건 · 패치 적용 2건 · 자동 분리 2건
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 01-order-and-business-system-integration.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 02-process-and-workflow-modeling.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 03-capacity-site-and-facility-planning.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md
+- 2026-09-26 00:41:52 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md
+- 2026-09-26 00:41:53 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-26-02/format_check.md)
+- 2026-09-26 00:41:54 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-26-02/prompts/storyteller-formatfix1.md (420,655자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)

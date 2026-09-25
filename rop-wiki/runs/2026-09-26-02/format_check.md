@@ -1,0 +1,19 @@
+# 형식 검증 결과(pages)
+
+- 판정: 오류 9건
+- 차등 갱신 패치 적용:
+    - docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md (1개 절)
+    - docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md (1개 절)
+- 분량 초과 자동 분리:
+    - docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" → docs/topics/2026/2026-09-26-area04-s10.md (654자)
+    - docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md "7. 관련 표준·프레임워크·오픈소스" → docs/topics/2026/2026-09-26-area25-s7.md (1,130자)
+- 오류:
+    - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+    - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 01-order-and-business-system-integration.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 02-process-and-workflow-modeling.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 03-capacity-site-and-facility-planning.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md
+    - 퍼블리셔 사전 검사: - topics/2026/2026-09-26-area04-s10.md: 깨진 링크 ../f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md
