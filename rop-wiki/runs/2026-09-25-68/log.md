@@ -79,3 +79,45 @@
 - 2026-09-25 16:30:39 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
 - 2026-09-25 16:30:39 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 1분 3초 · required_fixes 참고
 - 2026-09-25 16:30:39 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-68/prompts/storyteller-retry1.md (275,212자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
+- 2026-09-25 16:35:48 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 9초 · 비용 $2.2778 · subtype success
+- 2026-09-25 16:35:48 KST [스토리텔러 에이전트] 저장: runs/2026-09-25-68/pages.json
+- 2026-09-25 16:35:48 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 5분 9초 · 페이지 6개
+- 2026-09-25 16:35:48 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-68 (영역 심화)
+- 2026-09-25 16:35:49 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 16:35:49 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-25 16:35:49 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 6개, 반영 전 사전 검사 포함)
+- 2026-09-25 16:35:50 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-68/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 16:35:51 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 16:35:55 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 16:35:55 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 16:35:55 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-25 16:35:55 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-25 16:35:55 KST [형식 검증] 결과: 통과 · 소요 7초
+- 2026-09-25 16:35:55 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-25-68/prompts/verification2-retry1.md (169,090자, 규칙은 시스템 프롬프트 verifier-e64d9bdc3472.md)
+- 2026-09-25 16:36:26 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 30초 · 비용 $0.9158 · subtype success
+- 2026-09-25 16:36:26 KST [내용 검증 에이전트] 저장: runs/2026-09-25-68/verification2.json
+- 2026-09-25 16:36:26 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-25 16:36:26 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 31초 · 신뢰도 medium
+- 2026-09-25 16:39:45 KST [준비] 실행 시작 (date=2026-09-25 run_id=2026-09-25-68 resume=2026-09-25-68 step=publish run_type=자동 area=자동 track=자동)
+- 2026-09-25 16:39:45 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-25 16:39:45 KST [준비] 결과: 성공 · 소요 1초 · 건너뜀
+- 2026-09-25 16:39:46 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-25 16:39:52 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-25-68 (영역 심화)
+- 2026-09-25 16:39:52 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-25 16:39:52 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-25 16:39:53 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-734→ref-586, ref-735→ref-592, ref-736→ref-593, ref-737→ref-594, ref-738→ref-595, ref-742→ref-596, ref-743→ref-597, ref-744→ref-598, ref-745→ref-610, ref-746→ref-611, ref-747→ref-612
+- 2026-09-25 16:39:53 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 6개, 반영 전 사전 검사 포함)
+- 2026-09-25 16:39:53 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-25-68/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-25 16:39:54 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-25 16:39:58 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-25 16:41:03 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 5/갱신 1/폐기 0, 용어 4, 참고문헌 11, 표준 6, 열린 질문 3, 매트릭스 칸 7, 백로그 0, 정정 0; auto 영역 갱신 34개 페이지, mkdocs.yml 갱신
+- 2026-09-25 16:41:57 KST [퍼블리셔] 원복: 6단계 사이트 빌드 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 16:41:57 KST [퍼블리셔] 실패: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log):
+
+Aborted with 1 warnings in strict mode!
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /home/user/ai-hub/rop-wiki/site
+WARNING -  Doc file 'categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md' contains a link '#fnref:ref-541', but there is no such anchor on this page. This seems to be a footnote that is never referenced.
+
+- 2026-09-25 16:41:57 KST [퍼블리셔] 결과: 실패 · 소요 2분 6초 · 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!
+- 2026-09-25 16:41:57 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-25.md · summary.json (종료 상태: 중단(퍼블리셔: 6단계 사이트 빌드 실패(exit 1, 54초): 롤백했다. 출력(runs/<run_id>/build.log): Aborted with 1 warnings in strict mode!))

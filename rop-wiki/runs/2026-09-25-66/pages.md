@@ -4,9 +4,9 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md | draft | q3-01 답함(3절 #q3-01 신설: 오케스트레이션 도구의 스케줄링 위치, LLM 직접 생성의 한계·반례, LLM+해법기 결합, 루프 밖 규칙 합성, 분담 종합, 출하 시나리오), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건 미충족, 상태 줄 갱신(H1 아래 상태 줄 갱신이 필요해 전체 content 로 보냄) |
-| update | docs/tracks/nl-task-chatbot/task-model-draft.md | draft | 초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(H1 버전 표기 갱신이 필요해 전체 content 로 보냄) |
-| update | docs/ideas/nl-task-chatbot.md | draft | 5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 처리 흐름(q3-02)·되묻기(q3-03)·지시 변경(q3-04)은 미조사임을 명시 |
+| update | docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md | draft | q3-01 답함(3절 #q3-01 신설), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건(초안 갱신만 충족), 상태 줄 갱신. 2차 수정: 6절 초안 갱신 행 충족으로 정정, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸에 ConstraintBench 조건 병기 |
+| update | docs/tracks/nl-task-chatbot/task-model-draft.md | draft | 초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(2차 수정 대상 아님, 변경 없음) |
+| update | docs/ideas/nl-task-chatbot.md | draft | 5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 2차 수정: 새 각주 정의 12개를 5절 끝에 직접 두고 ref-681 기관을 Kuroki 외로, ref-684 소속을 '소속 미확인'으로 고침 |
 
 ## 변경 이력·색인
 
@@ -41,7 +41,7 @@
 | ref-685 | Hu, J., Li, J., Lin, W., Jia, P., Ji, Y., & Lai, J. | PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals | 논문 | medium | https://arxiv.org/abs/2512.14417 |
 | ref-686 | Wang, Y., & Li, K. | Large Language Models in Operations Research: Methods, Applications, and Challenges | 논문 | medium | https://arxiv.org/abs/2509.18180 |
 | ref-687 | Powell, C. 외(University of Strathclyde) | Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models | 논문 | medium | https://link.springer.com/article/10.1007/s10844-025-00940-w |
-| ref-688 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp | 오픈소스 문서 | medium | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp |
+| ref-377 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp | 오픈소스 문서 | medium | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp |
 | ref-689 | Saha, S., Das, S., Duan, H., & Liu, X.-Y. | Hybrid LLM-based Intelligent Framework for Robot Task Scheduling | 논문 | medium | https://arxiv.org/abs/2605.15486 |
 | ref-404 | Open Robotics (open-rmf) | rmf_task — README | 오픈소스 문서 | medium | https://github.com/open-rmf/rmf_task |
 | ref-376 | Open Robotics | Tasks in RMF (task) - Programming Multiple Robots with ROS 2 | 오픈소스 문서 | medium | https://osrf.github.io/ros2multirobotbook/task.html |
@@ -84,7 +84,7 @@
 
 ## 이행한 수정 지시
 
-- f2 '(예: 충전)' 제거 — 단계 3 페이지의 TaskPlanner.hpp(ref-688) 문장에서 충전 예시를 빼고 '마무리 작업'으로만 썼으며, 충전 작업 자동 삽입은 README(ref-404) 각주만 단 별도 문장으로 옮겼다(아이디어 페이지·시나리오도 같음).
+- f2 '(예: 충전)' 제거 — 단계 3 페이지의 TaskPlanner.hpp(ref-377) 문장에서 충전 예시를 빼고 '마무리 작업'으로만 썼으며, 충전 작업 자동 삽입은 README(ref-404) 각주만 단 별도 문장으로 옮겼다(아이디어 페이지·시나리오도 같음).
 - f4 분리 — 관제 최소 기능·충전 주문의 운반 주문 중단·교통 관리 로직 범위 제외는 [사실][^ref-031], '배정·일정 결정 로직은 관제 구현에 맡겨진 것으로 보인다'는 별도 [추정][^ref-031] 문장으로 나누고, 13. 작업 배정 — MRTA 페이지의 '배정 알고리즘을 규정하지 않는다'와 어긋나지 않게 썼다.
 - f6 강등 — LLM+P 결과 문장을 [추정]으로 쓰고 'LLM+P 논문 저자 보고, 원문 미열람'을 병기했다.
 - f8 수치 정리 — 영역별 비율 수치를 쓰지 않고 '편차가 크다고 보고되었으나 수치는 검색 요약마다 달라 미확인'으로 썼으며, 89~96% 는 삭제하고 30.5% 에 '솔버 기준 0.1% 이내', '6개 모델·200개 과제, 저자 보고값'을 병기했다.
@@ -99,21 +99,25 @@
 - f19 — '63권 1287–1337쪽'을 본문에서 뺐고 참고문헌 요약에서도 권·쪽수를 뺐다.
 - f20 — '건설 로봇 사례로' 시작하고 분류 원문 9장의 업종별 조건 연계 대상이어서 방법 사례로만 다룬다고 밝혔다.
 - f24 — 'rmf_task 의 재배정'을 쓰지 않고 [추정] 문장 안에서 '충전 삽입 등'으로만 쓰며 '재배정 기능은 문서에서 확인하지 않았다'를 덧붙였다.
-- 인용 — ref-688·ref-404 는 페이지에서 직접 인용 없이 모두 재서술했다.
-- 각주 — 원문 미열람 19개 출처의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-679·ref-688·ref-404·ref-091·ref-031·ref-376 은 원문 열람 출처(source_unopened: false, 각주 표시 없음)로 두었다.
+- 인용 — ref-377·ref-404 는 페이지에서 직접 인용 없이 모두 재서술했다.
+- 각주 — 원문 미열람 19개 출처의 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-679·ref-377·ref-404·ref-091·ref-031·ref-376 은 원문 열람 출처(source_unopened: false, 각주 표시 없음)로 두었다.
 - 온톨로지 — 업무 분해·배정 설계 초안의 일정(Schedule) 개념에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용)을 더하고 상태를 초안 → 확정, 초안 버전을 0.5 → 0.6(프런트매터·H1·ontology_draft_version)으로 올렸으며, 'LLM 직접 생성' 값은 넣지 않고 6절 질문(관련 f11·f20·f23)으로 두었다.
 - 초안 6절 — '일정을 누가 계산하는가' 질문에 q3-01 답([추정], 신뢰도 low)과 단계 3 페이지 링크를 연결하되 물류 플릿 근거가 없어 해결로 닫지 않는다고 적었다.
 - 새 질문 3(ConstraintBench 방식 물류 측정)은 q5-05 중복이므로 backlog_updates 에 넣지 않고 단계 3 페이지 5절에 제외 사유만 적었다.
 - q3-01 — 백로그와 단계 페이지 2절에서 답함(답한 실행 2026-09-25-66, 답 위치 #q3-01, 3절 '### q3-01 … {#q3-01}')으로 처리했고, 6절 완료 조건 세 항목을 모두 '미충족'으로, 표 아래 줄을 '다음 단계로 전환: 아니오(아이디어 2 5절 처리 흐름·구성 요소 미작성, 실험 계획 없음, 열린 질문 q3-02~q3-10)'로 썼다.
 - 트랙 개요 — 현재 단계(단계 1. 선행 연구·제품 사례 조사)를 바꾸지 않았고, 마지막 트랙 실행이 이미 2026-09-25 로 되어 있어 개요 페이지는 내용 변경이 없으므로 pages 에 넣지 않았다(overview_progress 에 CLI 지정 단계 3 실행임을 적음).
-- docs/ideas/nl-task-chatbot.md: 각주 정의 12개를 참고문헌에서 만들어 붙임: ref-404, ref-675, ref-676, ref-677, ref-678, ref-679, ref-681, ref-683, ref-684, ref-687, ref-688, ref-689
+- 2차: 아이디어 페이지 ref-681 각주 — 5절 패치 끝에 각주 정의를 직접 두고 기관을 'Kuroki, S., Nakagawa, M., Yoshida, S., Koyama, Y., & Kozuno, T.(OMRON SINIC X 등, IEEE Access 2026)'로 고쳤다.
+- 2차: 아이디어 페이지 ref-684 각주 — 같은 위치의 각주 정의에서 '(칭화대학교 산업공학과)'를 '(소속 미확인)'으로 고쳤다(나머지 새 각주 10개도 참고문헌 항목과 같은 값으로 5절 끝에 함께 두었다).
+- 2차: 단계 3 페이지 6절 두 번째 행 — 충족 여부 '충족', 근거 '이번 실행에서 일정 개념에 속성 일정 산출 방식을 더해 v0.6 으로 갱신(f1·f2·f13·f14·f15·f21)', 검증 판정 '충족'으로 고쳤고 나머지 두 행과 상태 줄의 '완료 조건: 미충족'은 그대로 두었다.
+- 2차: 단계 3 페이지 6절 아래 줄 — '다음 단계로 전환: 아니오(아이디어 2 5절 처리 흐름·구성 요소 미작성, 실험 계획 없음, 열린 질문 q3-02~q3-11)'로 고쳤다.
+- 2차: 단계 3 페이지 3절 시나리오 표 예외·성과 칸 — ConstraintBench 문장에 '(운영과학 일반 제약 최적화 문제, 솔버 기준 0.1% 이내 조건의 저자 보고값)'을 덧붙였다.
 
 ## 트랙 갱신
 
 - 단계 페이지: docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md
 - 온톨로지 초안 버전: 0.6
-- 트랙 로그 항목: 답한 질문: q3-01(단계 3. 구현 가설 설계 3절 #q3-01, 근거 f1~f27, 신뢰도 low — 스케줄링 결정은 결정적 최적화·계획 해법, LLM 은 문제 인스턴스화·결과 설명을 맡는 분담 가설) / 새 질문: q3-11(f16), q4-08(f13); ConstraintBench 방식 물류 측정 질문은 q5-05(및 q3-05)와 중복으로 제외 / 온톨로지 변경: v0.5 → v0.6: 개념 '일정 (Schedule)'에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용) 추가, 초안 → 확정(f1·f2·f13·f14·f15·f21, 근거 실행 2026-09-25-66); 값 후보 'LLM 직접 생성' 거부 → 6절 질문(관련 f11·f20·f23) / 완료 조건 평가: 미충족(부족: 아이디어 2 5절 처리 흐름·핵심 구성 요소·다른 아이디어와의 연결, 실험 페이지 실험 계획; 열린 질문 q3-02~q3-11) / 세부영역 반영 제안: 14. 작업 순서·스케줄링, 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영(2건), 20. 예외 복구·재계획·업무 연속성 — 5건 / 다음 실행 제안: q3-02, q3-03, q3-04. 참고: 이번 실행은 CLI 지정 단계 3 실행이며 트랙 개요의 현재 단계는 단계 1 유지. 백로그 중복 q3-09/q3-10, q5-05/q5-06 정리 필요.
-- 개요 진행 현황: 단계 3 진행 중 — 열린 질문 10, 답함 1, 완료 조건 미충족 (CLI 지정 단계 3 실행, 트랙 개요의 현재 단계 표시는 단계 1 유지)
+- 트랙 로그 항목: 답한 질문: q3-01(단계 3. 구현 가설 설계 3절 #q3-01, 근거 f1~f27, 신뢰도 low — 스케줄링 결정은 결정적 최적화·계획 해법, LLM 은 문제 인스턴스화·결과 설명을 맡는 분담 가설) / 새 질문: q3-11(f16), q4-08(f13); ConstraintBench 방식 물류 측정 질문은 q5-05(및 q3-05)와 중복으로 제외 / 온톨로지 변경: v0.5 → v0.6: 개념 '일정 (Schedule)'에 속성 '일정 산출 방식'(최적화·계획 해법 / LLM 이 만든 규칙·휴리스틱을 결정적 실행기가 적용) 추가, 초안 → 확정(f1·f2·f13·f14·f15·f21, 근거 실행 2026-09-25-66); 값 후보 'LLM 직접 생성' 거부 → 6절 질문(관련 f11·f20·f23) / 완료 조건 평가: 미충족(부족: 아이디어 2 5절 처리 흐름·핵심 구성 요소·다른 아이디어와의 연결, 실험 페이지 실험 계획; 초안 v0.6 갱신 조건은 충족; 열린 질문 q3-02~q3-11) / 세부영역 반영 제안: 14. 작업 순서·스케줄링, 13. 작업 배정 — MRTA, 27. AI·학습·적응과 모델 운영(2건), 20. 예외 복구·재계획·업무 연속성 — 5건 / 다음 실행 제안: q3-02, q3-03, q3-04. 참고: 이번 실행은 CLI 지정 단계 3 실행이며 트랙 개요의 현재 단계는 단계 1 유지. 백로그 중복 q3-09/q3-10, q5-05/q5-06 정리 필요.
+- 개요 진행 현황: 단계 3 진행 중 — 열린 질문 10, 답함 1, 완료 조건 미충족(초안 갱신 조건만 충족) (CLI 지정 단계 3 실행, 트랙 개요의 현재 단계 표시는 단계 1 유지)
 
 ### 백로그 갱신
 

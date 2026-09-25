@@ -5,7 +5,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "3. 왜 중요한가",
       "budget_chars": 750,
-      "summary": "AI가 만든 계획·해석을 실행에 쓰는 기준은 접지·형식 검증·사람 확인·안전 판정·승인된 모델 버전의 겹 구조로 정리될 수 있어 보인다. [추정][^ref-088] 한국 인공지능 기본법(2026-01-22 시행)과 EU AI Act가 고영향·고위험 AI에 별도 책무를 둔다. [사실][^ref-737]",
+      "summary": "AI가 만든 계획·해석을 실행에 쓰는 기준은 접지·형식 검증·사람 확인·안전 판정·승인된 모델 버전의 겹 구조로 정리될 수 있어 보인다. [추정][^ref-088] 한국 인공지능 기본법(2026-01-22 시행)과 EU AI Act가 고영향·고위험 AI에 별도 책무를 둔다. [사실][^ref-594]",
       "planned_findings": [
         "f20",
         "f16",
@@ -46,7 +46,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "6. 대표 접근법과 기술",
       "budget_chars": 1100,
-      "summary": "LLM 계획의 접지·형식 검증, 필요할 때 되묻기, 실행 전 안전 판정, 학습 기반 배차, 모델 운영 관리를 다룬다. [사실][^ref-088]",
+      "summary": "LLM 계획의 접지·형식 검증, 필요할 때 되묻기, 실행 전 안전 판정, 학습 기반 배차, 모델 운영 관리를 다룬다. [추정][^ref-088]",
       "planned_findings": [
         "f6",
         "f7",
@@ -66,7 +66,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "7. 관련 표준·프레임워크·오픈소스",
       "budget_chars": 600,
-      "summary": "NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, MLflow 모델 레지스트리, LoTa-Bench, AmbiK와 관련 법(한국 인공지능 기본법, EU AI Act)을 정리한다. [사실][^ref-735]",
+      "summary": "NIST AI RMF, ISO/IEC 42001, ISO/IEC 23894, MLflow 모델 레지스트리, LoTa-Bench, AmbiK와 관련 법(한국 인공지능 기본법, EU AI Act)을 정리한다(안내 문장, 태그 없음).",
       "planned_findings": [
         "f1",
         "f2",
@@ -82,7 +82,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "8. 대표 연구와 자료",
       "budget_chars": 800,
-      "summary": "SayCan, LLM+P, KnowNo, Code as Policies, Lang2LTL, AmbiK, Learning to Ask, LoTa-Bench, SafeGate, RTAW, Sculley 외, ML Test Score. [사실][^ref-351]",
+      "summary": "SayCan, LLM+P, KnowNo, Code as Policies, Lang2LTL, AmbiK, Learning to Ask, LoTa-Bench, SafeGate, RTAW, Sculley 외, ML Test Score를 정리한다(검증 상태 안내 문장, 태그 없음).",
       "planned_findings": [
         "f6",
         "f7",
@@ -102,7 +102,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
       "budget_chars": 600,
-      "summary": "ROP는 AI 출력의 채택 기준·검증·사람 확인·기록·모델 버전 승인을 맡고, 저수준 정책·파지 학습과 수요예측은 연계 대상이다. [추정][^ref-735]",
+      "summary": "ROP는 AI 출력의 채택 기준·검증·사람 확인·기록·모델 버전 승인을 맡고, 저수준 정책·파지 학습과 수요예측은 연계 대상이다. [추정][^ref-592]",
       "planned_findings": [
         "f23",
         "f24",
@@ -113,7 +113,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "budget_chars": 700,
-      "summary": "교차 규칙에 따라 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전(매뉴얼 해석), 6. 지도·공간·위치 모델(도면 해석), 13. 작업 배정 — MRTA(학습 기반 배차), 19. 모니터링·이상 탐지·원인 분석(장애 분석)과 18·23·24·25·28 영역을 연결한다. [추정][^ref-743]",
+      "summary": "교차 규칙에 따라 5. 로봇 능력·작업 온톨로지·21. 온보딩·설정·현장 시운전(매뉴얼 해석), 6. 지도·공간·위치 모델(도면 해석), 13. 작업 배정 — MRTA(학습 기반 배차), 19. 모니터링·이상 탐지·원인 분석(장애 분석)과 18. 사람–로봇 협업·운영 인터페이스, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스를 연결한다. [추정][^ref-597]",
       "planned_findings": [
         "f25"
       ]
@@ -135,7 +135,7 @@
       "path": "docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건"
+      "diff_summary": "영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area27-s6.md",
@@ -147,13 +147,13 @@
       "path": "docs/topics/2026/2026-09-25-area27-s7.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,001자)을 옮겼다"
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-592 각주를 떼어 안내 문장으로 바꿨다"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area27-s8.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"8. 대표 연구와 자료\" 절(969자)을 옮겼다"
+      "diff_summary": "자동 분리: 27. AI·학습·적응과 모델 운영 의 \"8. 대표 연구와 자료\" 절(969자)을 옮겼다. 2차: 도입 문장의 태그·각주 제거와 README 확인 출처 명시, KnowNo 항목 문구 수정(필요할 때·저자 보고)"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area27-s10.md",
@@ -201,7 +201,7 @@
         28
       ],
       "sources": [
-        "ref-735"
+        "ref-592"
       ]
     },
     {
@@ -217,7 +217,7 @@
         28
       ],
       "sources": [
-        "ref-737"
+        "ref-594"
       ]
     },
     {
@@ -231,13 +231,13 @@
         24
       ],
       "sources": [
-        "ref-746"
+        "ref-611"
       ]
     }
   ],
   "reference_updates": [
     {
-      "id": "ref-734",
+      "id": "ref-586",
       "org": "NIST",
       "title": "NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence",
       "published": "2023-01-26",
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "id": "ref-735",
+      "id": "ref-592",
       "org": "ISO/IEC",
       "title": "ISO/IEC 42001:2023 - AI management systems",
       "published": "2023",
@@ -270,7 +270,7 @@
       ]
     },
     {
-      "id": "ref-736",
+      "id": "ref-593",
       "org": "ISO/IEC",
       "title": "ISO/IEC 23894:2023 - AI — Guidance on risk management",
       "published": "2023-02",
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "id": "ref-737",
+      "id": "ref-594",
       "org": "국가법령정보센터(과학기술정보통신부)",
       "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
       "published": null,
@@ -302,7 +302,7 @@
       ]
     },
     {
-      "id": "ref-738",
+      "id": "ref-595",
       "org": "European Commission",
       "title": "AI Act | Shaping Europe's digital future",
       "published": null,
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "id": "ref-742",
+      "id": "ref-596",
       "org": "Liang, J. 외",
       "title": "Code as Policies: Language Model Programs for Embodied Control",
       "published": "2022-09",
@@ -391,7 +391,7 @@
       ]
     },
     {
-      "id": "ref-743",
+      "id": "ref-597",
       "org": "Agrawal, A. 외",
       "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
       "published": "2022-09",
@@ -409,7 +409,7 @@
       ]
     },
     {
-      "id": "ref-744",
+      "id": "ref-598",
       "org": "Sculley, D. 외",
       "title": "Hidden Technical Debt in Machine Learning Systems",
       "published": "2015",
@@ -425,7 +425,7 @@
       ]
     },
     {
-      "id": "ref-745",
+      "id": "ref-610",
       "org": "Breck, E. 외 (Google Research)",
       "title": "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction",
       "published": "2017",
@@ -442,7 +442,7 @@
       ]
     },
     {
-      "id": "ref-746",
+      "id": "ref-611",
       "org": "MLflow (Linux Foundation 오픈소스 프로젝트)",
       "title": "ML Model Registry | MLflow AI Platform",
       "published": null,
@@ -461,7 +461,7 @@
       ]
     },
     {
-      "id": "ref-747",
+      "id": "ref-612",
       "org": "머니투데이",
       "title": "포장은 로봇이, 간선운송은 무인차가…물류현장 스며든 '피지컬 AI'",
       "published": "2026-09-19",
@@ -651,7 +651,7 @@
         25
       ],
       "summary": "2023-01-26 발표된 자율 적용 AI 위험관리 프레임워크. 네 기능 Govern·Map·Measure·Manage(원문 미열람).",
-      "ref_id": "ref-734"
+      "ref_id": "ref-586"
     },
     {
       "name": "ISO/IEC 42001:2023 AI 관리 시스템",
@@ -663,7 +663,7 @@
         28
       ],
       "summary": "AI 시스템을 개발·제공·사용하는 조직의 AI 관리 시스템(AIMS) 수립·실행·유지·지속 개선 요구사항(원문 미열람).",
-      "ref_id": "ref-735"
+      "ref_id": "ref-592"
     },
     {
       "name": "ISO/IEC 23894:2023 AI 위험관리 지침",
@@ -675,7 +675,7 @@
         25
       ],
       "summary": "ISO 31000 을 AI 에 적용해 위험 평가·처리·감시·검토·기록을 AI 활동에 통합하도록 안내하는 지침(원문 미열람).",
-      "ref_id": "ref-736"
+      "ref_id": "ref-593"
     },
     {
       "name": "MLflow 모델 레지스트리",
@@ -687,7 +687,7 @@
         24
       ],
       "summary": "등록 모델의 버전·별칭·태그·계보를 관리하고 별칭 재지정으로 운영 모델을 교체하게 하는 기능(원문 미열람).",
-      "ref_id": "ref-746"
+      "ref_id": "ref-611"
     },
     {
       "name": "LoTa-Bench",
@@ -720,7 +720,8 @@
     "3·7절: EU AI Act 고위험 의무의 적용 시점이 개정(AI Omnibus)으로 바뀌었는지 공식 자료로 확인해야 한다.",
     "6·8절: 트랙 반영 제안 가운데 도면 해석(2026-09-25-05·36·54), 매뉴얼 추출(2026-09-25-57), LLM 다중 로봇 서베이·ROSA·RAI·ChatGPT for Robotics(2026-09-25-21), Cohen 외·Huang 외(-04), LMCR·구조화 출력(-30), DELIVER·SayPlan(-37)은 이번 브리프에 검증된 finding 이 없어 본문에 넣지 못했다. 다음 해당 영역 실행에서 재확인이 필요하다.",
     "3·6절: 한 줄 정의의 수요·고장 예측(예: 로봇 고장 예측 사례)과 19. 모니터링·이상 탐지·원인 분석에 적용되는 장애 분석 AI 자료가 브리프에 없어 쓰지 못했다.",
-    "전 절: 사실 주장이 모두 단일 출처·원문 미열람이다. 핵심 주장(SayCan, KnowNo, RTAW 수치, ISO/IEC 42001)을 원문 열람 또는 독립 출처로 교차 확인해야 신뢰도를 올릴 수 있다."
+    "전 절: 사실 주장이 모두 단일 출처·원문 미열람이다. 핵심 주장(SayCan, KnowNo, RTAW 수치, ISO/IEC 42001)을 원문 열람 또는 독립 출처로 교차 확인해야 신뢰도를 올릴 수 있다.",
+    "참고문헌: reference_updates 가 기존 id(ref-088·092·351·354·359·056·541·417)에도 source_unopened: true 를 넣으므로, 퍼블리셔가 기존 참고문헌 페이지의 열람 표시를 덮어쓰지 않는지 pipeline 담당의 확인이 필요하다(2차 검증 참고 사항)."
   ],
   "fixes_applied": [
     "f7·f20·f21 각주 ref-092 → ref-092 — 3·4·5·6·8절의 LLM+P 인용을 모두 [^ref-092]로 바꾸고 각주 정의를 ref-092 로 두었으며, reference_updates 에 ref-092 을 등록하지 않았다(ref-092 는 cited_by 갱신용으로만 넣음).",
@@ -741,6 +742,10 @@
     "모든 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 모든 항목에 source_unopened: true 를 넣었다.",
     "트랙 반영 제안 가운데 브리프가 다루지 않은 항목(2026-09-25-05·21·36·54·57, -04 의 Cohen 외·Huang 외, -30 의 LMCR·구조화 출력, -37 의 DELIVER·SayPlan)은 본문에 넣지 않고 additional_research_requests 에 재확인 요청으로만 남겼다.",
     "분량 초과 자동 분리: 27. AI·학습·적응과 모델 운영 본문 8,004자 > 기준 4,000자 → 5개 절을 주제 페이지로 옮김, 남은 본문 3,936자",
-    "형식 검증: docs/topics/2026/2026-09-25-area27-s10.md 3절의 세부영역 링크 10건을 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 주장·태그·각주는 바꾸지 않았다."
+    "형식 검증: docs/topics/2026/2026-09-25-area27-s10.md 3절의 세부영역 링크 10건을 주제 페이지 위치 기준 경로(../../categories/<대분류 slug>/<파일>.md)로 고쳤다. 주장·태그·각주는 바꾸지 않았다.",
+    "2차: 7절 도입 문장의 태그·각주 제거 — 세부영역 페이지 7절 첫 문장과 2026-09-25-area27-s7.md 의 1절 첫 항목·3절 첫 문장에서 '[사실][^ref-592]'를 떼어 태그 없는 안내 문장으로 두었다(ref-592 는 표의 ISO/IEC 42001 행에만 남김).",
+    "2차: 8절 도입 문장의 태그·각주 제거와 확인 방식 명시 — 세부영역 페이지 8절 첫 문장과 2026-09-25-area27-s8.md 의 1절 첫 항목·3절 첫 문장에서 '[사실][^ref-351]'를 떼고 '모두'를 '대부분'으로 고쳤으며 'AmbiK와 LoTa-Bench는 검증 과정에서 공식 저장소 README로 확인했다'를 덧붙였다(세부영역 페이지에서는 목록이 주제 페이지로 옮겨졌으므로 '아래 자료는'을 '이 절의 자료는'으로 썼다).",
+    "2차: 2026-09-25-area27-s8.md 3절 KnowNo 항목을 '등각 예측으로 필요할 때 사람에게 도움을 요청하는 LLM 계획기(저자 보고)'로 고쳤다.",
+    "2차: 세부영역 페이지 6절 첫 단락의 '아래 도식은 3절의 겹 구조를 이 위키가 그린 것이다.'를 '3절의 겹 구조를 이 위키가 그린 도식은 주제 페이지에 있다.'로 고쳤다(주장·태그 변경 없음)."
   ]
 }

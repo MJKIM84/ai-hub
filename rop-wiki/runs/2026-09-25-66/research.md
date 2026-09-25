@@ -33,8 +33,8 @@
 
 | id | 태그 | 주장 | 출처 | 교차 확인 | 신뢰도 | 기준일 | 흐름 단계 / 항목 | 표시 |
 |---|---|---|---|---|---|---|---|---|
-| f1 | [사실] | Open-RMF rmf_task 의 TaskPlanner 는 플릿 안의 작업과 로봇을 받아 요청된 시작 시각을 지키며 작업이 가장 짧게 끝나도록 로봇별 작업 순서를 정하고, 배터리 같은 자원 제약을 고려해 필요하면 충전 작업을 일정에 자동으로 끼워 넣는다. | ref-404, ref-688 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
-| f2 | [사실] | rmf_task TaskPlanner 는 최적성을 보장하지 않지만 빠른 탐욕(greedy) 방식과 최적성을 보장하지만 오래 걸릴 수 있는 A* 기반 방식 가운데 하나로 배정을 풀고, 비용 계산기를 지정하지 않으면 BinaryPriorityCostCalculator 를 쓰며, 각 로봇의 배정 끝에 수행할 마무리 작업(예: 충전)을 만드는 요청 생성기를 옵션으로 받는다. | ref-688 | 아니오 | medium | 2026-09-25 | — | — |
+| f1 | [사실] | Open-RMF rmf_task 의 TaskPlanner 는 플릿 안의 작업과 로봇을 받아 요청된 시작 시각을 지키며 작업이 가장 짧게 끝나도록 로봇별 작업 순서를 정하고, 배터리 같은 자원 제약을 고려해 필요하면 충전 작업을 일정에 자동으로 끼워 넣는다. | ref-404, ref-377 | 아니오 | medium | 2026-09-25 | 수행 자원 | — |
+| f2 | [사실] | rmf_task TaskPlanner 는 최적성을 보장하지 않지만 빠른 탐욕(greedy) 방식과 최적성을 보장하지만 오래 걸릴 수 있는 A* 기반 방식 가운데 하나로 배정을 풀고, 비용 계산기를 지정하지 않으면 BinaryPriorityCostCalculator 를 쓰며, 각 로봇의 배정 끝에 수행할 마무리 작업(예: 충전)을 만드는 요청 생성기를 옵션으로 받는다. | ref-377 | 아니오 | medium | 2026-09-25 | — | — |
 | f3 | [사실] | Open-RMF 에서는 디스패처가 입찰 공고를 보내면 각 플릿 어댑터가 TaskPlanner 로 비용을 계산해 입찰하고, 디스패처가 가장 빨리 끝나는 것·가장 낮은 비용 같은 설정 기준으로 비교해 작업을 줄 플릿을 정한다. | ref-376 | 아니오 | medium | 2026-09-25 | 수행 자원 | 원문 미열람 |
 | f4 | [사실] | VDA 5050 3.0.0 은 관제의 최소 기능으로 주문 배정, 에너지 관리(충전 주문이 운반 주문을 중단할 수 있음), 교통 제어를 두면서도 경로·우선순위·혼잡 처리 같은 교통 관리 전략·알고리즘은 범위에서 제외해, 배정·일정 결정 로직을 관제 구현에 맡긴다. | ref-031 | 아니오 | medium | 2026-09-25 | 제약 | — |
 | f5 | [사실] | LLM+P 는 LLM 이 자연어 계획 문제를 PDDL 문제 파일로 바꾸고 고전 계획기 Fast Downward 가 계획을 구하는 구조이며, LLM 이 계획을 직접 내는 방식(LLM-as-Planner)과 문맥 예시 유무를 바꾼 기준선을 barman·blocksworld 등 7개 도메인에서 비교한다. | ref-091 | 아니오 | medium | 2026-09-25 | — | — |
@@ -54,11 +54,11 @@
 | f19 | [사실] | Powell 외(Journal of Intelligent Information Systems 63권, 2025)는 스케줄링 시스템이 낸 결과를 사람에게 설명하는 텍스트를 LLM 의 추론(사고 사슬 프롬프트)으로 생성하는 방법을 연구했다. | ref-687 | 아니오 | medium | 2025 | — | 원문 미열람 |
 | f20 | [사실] | Saha 외(arXiv 2605.15486)는 건설 로봇 작업 스케줄링에서 LLM 에 에이전트 행동 능력과 목표를 주고 생성 LLM(GPT-4)과 감독 LLM(Gemma 3·Llama 4·Mistral 7B)이 함께 스케줄을 만드는, 해법기 없이 LLM 이 일정을 직접 산출하는 틀을 제안했다. | ref-689 | 아니오 | medium | 2026-05 | — | 원문 미열람 |
 | f21 | [사실] | 다중 로봇 LLM 연구 가운데 LiP-LLM(선형계획), PIP-LLM(정수계획), FLEET(makespan 최소화), Peng 외(MILP)는 LLM 이 의존 그래프·적합도·제약을 정식화하고 배정·일정은 결정적 해법이 푸는 분담을 쓴다. | ref-166, ref-181, ref-242, ref-167 | 아니오 | medium | 2025-10 | 수행 자원 | 원문 미열람 |
-| f22 | [추정] | q3-01 에 대해, 확인한 자료로는 LLM 이 스케줄을 직접 만들면 제약이 겹치거나 표현이 바뀔 때 실행 가능성이 흔들리므로(ConstraintBench, R-ConstraintBench, SCHEDBench, DynaSchedBench), ROP 에서는 순서·시각·충전 삽입 같은 스케줄링 결정은 rmf_task 같은 결정적 최적화·계획 해법이 맡고 LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일(LLM+P, OptiMUS, LAPPI)과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. | ref-675, ref-676, ref-677, ref-682, ref-688, ref-092, ref-679, ref-681, ref-687 | 아니오 | low | 2026-09-25 | — | — |
+| f22 | [추정] | q3-01 에 대해, 확인한 자료로는 LLM 이 스케줄을 직접 만들면 제약이 겹치거나 표현이 바뀔 때 실행 가능성이 흔들리므로(ConstraintBench, R-ConstraintBench, SCHEDBench, DynaSchedBench), ROP 에서는 순서·시각·충전 삽입 같은 스케줄링 결정은 rmf_task 같은 결정적 최적화·계획 해법이 맡고 LLM 은 지시에서 목적·제약·기한을 뽑아 문제를 인스턴스화하는 일(LLM+P, OptiMUS, LAPPI)과 결과 설명을 맡는 분담이 근거가 가장 많은 것으로 보인다. | ref-675, ref-676, ref-677, ref-682, ref-377, ref-092, ref-679, ref-681, ref-687 | 아니오 | low | 2026-09-25 | — | — |
 | f23 | [추정] | 직접 생성의 반례로, 미세 조정한 LLM 이 작업장 스케줄링에서 규칙·초기 신경망 방법을 앞섰다는 보고(Starjob)와 LLM 두 개가 건설 로봇 스케줄을 직접 만든 연구가 있어, LLM 직접 스케줄링이 배제되는 것은 아니지만 그 비교 대상이 정확 해법기가 아니거나 확인되지 않아 해법기 대체의 근거로는 약한 것으로 보인다. | ref-678, ref-689, ref-675 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
-| f24 | [추정] | 진행 중 고장·새 지시 같은 동적 사건에 대한 재스케줄링은 LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, RACE-Sched·Li·Li 처럼 LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·샌드박스 검증을 거쳐 반영하며 실시간 재계산은 해법기(rmf_task 의 충전 삽입·재배정)가 맡는 구조가 ROP 의 선택지로 보인다. | ref-683, ref-684, ref-688, ref-674 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
-| f25 | [추정] | 분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, 전체 이익은 완료 시각·비용 같은 명시적 목적함수를 최적화하는 해법(rmf_task, 선형·정수계획)이 계산·비교할 수 있지만, LLM 직접 배정·스케줄은 실행 가능하더라도 최적성과 함께 만족하는 비율이 낮게 보고되어 전체 이익을 보장하는 수단으로 쓰기 어려운 것으로 보인다. | ref-688, ref-166, ref-675 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
-| f26 | [추정] | 출하 마감 전에 채팅으로 긴급 출고 지시가 들어오면, LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스(제약·목적 가중치)로 바꾸고 해법기가 충전 삽입을 포함한 일정을 다시 계산한 뒤 LLM 이 바뀐 일정과 이유를 설명하는 흐름이 가능해 보인다. | ref-681, ref-688, ref-687 | 아니오 | low | 2026-09-25 | 출하 / 제약 | — |
+| f24 | [추정] | 진행 중 고장·새 지시 같은 동적 사건에 대한 재스케줄링은 LLM 추론 지연 때문에 결정 루프 안에 LLM 을 두기 어렵고, RACE-Sched·Li·Li 처럼 LLM 은 규칙·정책을 루프 밖에서 만들어 시뮬레이션·샌드박스 검증을 거쳐 반영하며 실시간 재계산은 해법기(rmf_task 의 충전 삽입·재배정)가 맡는 구조가 ROP 의 선택지로 보인다. | ref-683, ref-684, ref-377, ref-674 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
+| f25 | [추정] | 분류 원문 질문(가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가)과 관련해, 전체 이익은 완료 시각·비용 같은 명시적 목적함수를 최적화하는 해법(rmf_task, 선형·정수계획)이 계산·비교할 수 있지만, LLM 직접 배정·스케줄은 실행 가능하더라도 최적성과 함께 만족하는 비율이 낮게 보고되어 전체 이익을 보장하는 수단으로 쓰기 어려운 것으로 보인다. | ref-377, ref-166, ref-675 | 아니오 | low | 2026-09-25 | 수행 자원 | — |
+| f26 | [추정] | 출하 마감 전에 채팅으로 긴급 출고 지시가 들어오면, LLM 은 지시에서 기한·우선순위를 뽑아 문제 인스턴스(제약·목적 가중치)로 바꾸고 해법기가 충전 삽입을 포함한 일정을 다시 계산한 뒤 LLM 이 바뀐 일정과 이유를 설명하는 흐름이 가능해 보인다. | ref-681, ref-377, ref-687 | 아니오 | low | 2026-09-25 | 출하 / 제약 | — |
 | f27 | [추정] | 이번에 확인한 LLM 스케줄링 근거의 평가 환경은 작업장·프로젝트·근무표 스케줄링, 운영과학 일반 문제, 건설 로봇, 컨테이너 터미널, 여행 계획이었고, 이종 제조사 창고 로봇 플릿에서 LLM 직접 스케줄과 해법기를 비교한 자료는 검색 범위에서 찾지 못했다(부재의 확인은 아님). | ref-675, ref-676, ref-677, ref-678, ref-689, ref-685, ref-681 | 아니오 | low | 2026-09-25 | — | 원문 미열람 |
 
 ### 근거 발췌
@@ -109,7 +109,7 @@
 | ref-685 | Hu, J., Li, J., Lin, W., Jia, P., Ji, Y., & Lai, J. | PortAgent: LLM-driven Vehicle Dispatching Agent for Port Terminals | 2025-12 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2512.14417 | 예 |
 | ref-686 | Wang, Y., & Li, K. | Large Language Models in Operations Research: Methods, Applications, and Challenges | 2025-09 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2509.18180 | 예 |
 | ref-687 | Powell, C. 외(University of Strathclyde) | Generating textual explanations for scheduling systems leveraging the reasoning capabilities of large language models | 2025 | 논문 | medium | 2026-09-25 | https://link.springer.com/article/10.1007/s10844-025-00940-w | 예 |
-| ref-688 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp | 아니오 |
+| ref-377 | Open Robotics (open-rmf) | rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_task/blob/main/rmf_task/include/rmf_task/TaskPlanner.hpp | 아니오 |
 | ref-689 | Saha, S., Das, S., Duan, H., & Liu, X.-Y. | Hybrid LLM-based Intelligent Framework for Robot Task Scheduling | 2026-05 | 논문 | medium | 2026-09-25 | https://arxiv.org/abs/2605.15486 | 예 |
 | ref-404 | Open Robotics (open-rmf) | rmf_task — README | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://github.com/open-rmf/rmf_task | 아니오 |
 | ref-376 | Open Robotics | Tasks in RMF (task) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/task.html | 예 |
@@ -137,7 +137,7 @@
 - **ref-685**: 원문 미열람. LLM 가상 전문가 팀이 컨테이너 터미널 차량 디스패칭 시스템의 이전(모델·코드 작성·디버깅)을 자동화.
 - **ref-686**: 원문 미열람. 운영과학의 LLM 적용을 자동 모델링·보조 최적화·직접 풀이로 분류한 서베이.
 - **ref-687**: 원문 미열람. Journal of Intelligent Information Systems 63권. 스케줄링 시스템 출력의 설명문을 LLM 으로 생성.
-- **ref-688**: TaskPlanner API 헤더. 탐욕·A* 풀이 옵션, 비용 계산기 기본값, 마무리(충전) 요청 생성기, plan 함수를 정의.
+- **ref-377**: TaskPlanner API 헤더. 탐욕·A* 풀이 옵션, 비용 계산기 기본값, 마무리(충전) 요청 생성기, plan 함수를 정의.
 - **ref-689**: 원문 미열람. 생성·감독 LLM 두 개로 건설 로봇 작업 스케줄을 직접 만드는 틀.
 - **ref-404**: rmf_task 의 작업 배정·순서 계획(TaskPlanner)과 충전 작업 자동 삽입을 소개하는 README.
 - **ref-376**: 원문 미열람. 이번 실행에서 다시 열지 않음. 디스패처–플릿 어댑터 입찰 기반 작업 배정 설명.
@@ -195,7 +195,7 @@
 - 범위 경계 위반 의심:
     - f18: 컨테이너 터미널 차량 디스패칭은 분류 원문 9장의 업종별 조건·거점 간 운송과 가까울 수 있어, 방법론 사례(LLM 이 디스패칭 시스템을 구성)로만 쓰고 ROP 직접 범위처럼 서술하지 않도록 제안
     - f20: 건설 로봇 사례라 방법 사례로만 제안
-- 한계: web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: 신규 ref-679(OptiMUS README)·ref-688(rmf_task TaskPlanner.hpp)은 github_raw, 재사용 ref-404(rmf_task README)·ref-091(LLM+P README)는 github_raw, ref-031 은 입력 원문 텍스트(inbox). 나머지 신규 14건과 재사용 ref-376·ref-092·ref-166·ref-167·ref-181·ref-242 는 원문 미열람(신뢰도 상한 medium). 이번 실행에서는 모든 출처·finding 신뢰도를 medium 이하로 두었다. 검색 25회/40, 신규 출처 16건/20(ref-674~ref-689, 예약 구간 안), 재사용 9건. 질문 선택: target.json 지정 q3-01 1건. q3-01 은 오케스트레이션 도구 구조(사실)와 LLM 스케줄링 벤치마크·결합 연구(사실)로 답했으나, ROP 의 분담(f22·f24~f26)은 이 위키의 종합이고 근거가 물류 플릿이 아닌 조건이라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 3회에서 LLM 과 최적화 엔진의 스케줄링 분담을 다룬 국내 연구·사례를 찾지 못했다. 교차 규칙: LLM 스케줄링·배정 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링 양쪽에 반영 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈: 시뮬레이션은 LLM 규칙 검증 도구(f14)로만 언급했고 두 영역을 섞지 않았다. 정정 요청 없음. 새 일반 열린 질문 1건(LLM 지연 한계). 후속 질문 3건. 온톨로지 변경 제안 1건(일정 개념). 백로그 참고: q3-09·q3-10, q5-05·q5-06 이 중복 등록되어 정리 필요.
+- 한계: web_fetch_available: false · fetch_mode mirror_only. 원문을 연 출처: 신규 ref-679(OptiMUS README)·ref-377(rmf_task TaskPlanner.hpp)은 github_raw, 재사용 ref-404(rmf_task README)·ref-091(LLM+P README)는 github_raw, ref-031 은 입력 원문 텍스트(inbox). 나머지 신규 14건과 재사용 ref-376·ref-092·ref-166·ref-167·ref-181·ref-242 는 원문 미열람(신뢰도 상한 medium). 이번 실행에서는 모든 출처·finding 신뢰도를 medium 이하로 두었다. 검색 25회/40, 신규 출처 16건/20(ref-674~ref-689, 예약 구간 안), 재사용 9건. 질문 선택: target.json 지정 q3-01 1건. q3-01 은 오케스트레이션 도구 구조(사실)와 LLM 스케줄링 벤치마크·결합 연구(사실)로 답했으나, ROP 의 분담(f22·f24~f26)은 이 위키의 종합이고 근거가 물류 플릿이 아닌 조건이라 질문 종합 신뢰도를 low 로 두었다. 한국 자료: 한국어 검색 3회에서 LLM 과 최적화 엔진의 스케줄링 분담을 다룬 국내 연구·사례를 찾지 못했다. 교차 규칙: LLM 스케줄링·배정 finding 은 27. AI·학습·적응과 모델 운영과 적용 대상 13. 작업 배정 — MRTA·14. 작업 순서·스케줄링 양쪽에 반영 제안했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈: 시뮬레이션은 LLM 규칙 검증 도구(f14)로만 언급했고 두 영역을 섞지 않았다. 정정 요청 없음. 새 일반 열린 질문 1건(LLM 지연 한계). 후속 질문 3건. 온톨로지 변경 제안 1건(일정 개념). 백로그 참고: q3-09·q3-10, q5-05·q5-06 이 중복 등록되어 정리 필요.
 
 ## 트랙 블록
 
