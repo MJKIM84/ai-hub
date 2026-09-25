@@ -1,0 +1,1508 @@
+{
+  "duration_api_ms": 342231,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.4597902,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 175604,
+    "cache_read_input_tokens": 806146,
+    "output_tokens": 39471,
+    "output_tokens_details": {
+      "thinking_tokens": 8885
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 175604,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 35300,
+        "cache_read_input_tokens": 246766,
+        "cache_creation_input_tokens": 2671,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2671
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 39471,
+      "cacheReadInputTokens": 806146,
+      "cacheCreationInputTokens": 175604,
+      "webSearchRequests": 0,
+      "costUSD": 2.3555132,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8885,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 80727,
+      "outputTokens": 2710,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.104277,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 11,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-67\",\"date\":\"2026-09-25\",\"run_type\":\"category_link\",\"target\":{\"area_no\":null,\"area_name\":null,\"category\":\"F. 도입·검증·유지관리\"},\"gaps\":[\"F. 도입·검증·유지관리 대분류 페이지의 '다른 대분류와의 연결' 절이 '아직 작성되지 않음' 상태\",\"E. 협업·현장 운영 페이지가 20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈, E ↔ 21. 온보딩·설정·현장 시운전, E ↔ 24. 자산·소프트웨어 수명주기 관리를 '근거 없음'으로 남김(이번 실행에서도 근거 미확보)\",\"B. 공통 정보·환경 모델 페이지가 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리와의 연결을 '아직 다루지 않은 연결'로 둠 — 이번 실행 f11·f15 가 근거가 될 수 있음\",\"G. 안전·보안·지능·거버넌스 쪽 세부영역 페이지(25~28)가 seed 이거나 심화 전이라 G 연결은 F 쪽 근거에 기댐\"],\"research_questions\":[\"새 현장에 설치하고, 변경하면서, 오래 운영하려면? [분류원문]\",\"제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? [분류원문]\",\"21. 온보딩·설정·현장 시운전이 등록·설정하는 정보(팩트시트, 어댑터 설정, 경로망·지도 정합)는 B. 공통 정보·환경 모델과 C. 연결·실행 기반, D. 계획·최적화의 어느 세부영역으로 넘어가는가?\",\"22. 시뮬레이션·예측용 디지털 트윈은 A. 업무·공급망 설계(처리능력·성과)와 D. 계획·최적화(배정·경로망)의 어떤 결정을 가정한 미래로 실험하며, 8. 실시간 세계 상태·데이터 일관성과 어떻게 구분되는가?\",\"23. 시험·형식 검증·벤치마크는 C. 연결·실행 기반의 인터페이스·설비 연동, D. 계획·최적화의 교착·경로 알고리즘, E. 협업·현장 운영의 장애 대응을 어떤 시험·검증으로 잇는가? (oq-055, oq-058, oq-087 관련)\",\"24. 자산·소프트웨어 수명주기 관리의 지도·펌웨어 버전과 배터리 열화 정보는 B. 공통 정보·환경 모델, C. 연결·실행 기반, D. 계획·최적화, G. 안전·보안·지능·거버넌스의 어느 규칙·제약과 맞물리는가? (oq-090, oq-091 관련)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"A. 업무·공급망 설계의 3. 처리능력·거점·설비 계획 ↔ F. 도입·검증·유지관리의 22. 시뮬레이션·예측용 디지털 트윈: RAWSim-O 는 로봇 이동형 풀필먼트 시스템(RMFS) 운영의 여러 결정 문제가 미치는 효과를 연구하기 위한 이산 사건 시뮬레이션 프레임워크다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-101\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"RAWSim-O README: RMFS 의 결정 문제 효과를 연구하는 이산 사건 시뮬레이션 프레임워크 (재인용: 22. 시뮬레이션·예측용 디지털 트윈 페이지 7절·A 대분류 페이지) (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f2\",\"claim\":\"A. 업무·공급망 설계의 4. 성과·경제성·프로세스 개선 및 D. 계획·최적화의 13. 작업 배정 — MRTA ↔ 22. 시뮬레이션·예측용 디지털 트윈: Merschformann 외(2019)의 시뮬레이션 조건에서는 피킹 주문 배정 규칙이 단위 처리량을 크게 바꾸었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-398\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"RMFS 결정 규칙 시뮬레이션 연구에서 피킹 주문 배정 규칙이 단위 처리량에 큰 영향(모델·시뮬레이션 조건의 저자 보고) (재인용: 2026-09-25-56)\",\"as_of\":\"2019\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f3\",\"claim\":\"연계 대상: 22. 시뮬레이션·예측용 디지털 트윈의 성수기 시나리오 입력(주문·물동량 전망)은 A. 업무·공급망 설계의 1. 주문·업무 시스템 연계를 거쳐 상위 업무 시스템의 수요예측에서 받는 것으로 보이며, 수요예측 자체는 분류 원문 9장의 상위 업무 시스템 경계에 속한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-521\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Le·Fan(2024)은 물류·공급망 디지털 트윈 개념 틀을 제안하고 실데이터 검증 논문이 소수라고 보고 (재인용: 2026-09-25-56)\",\"as_of\":\"2024\",\"flow_step\":\"피킹\",\"flow_item\":\"시작 조건\",\"source_unopened\":true},{\"id\":\"f4\",\"claim\":\"A. 업무·공급망 설계의 3. 처리능력·거점·설비 계획 ↔ 21. 온보딩·설정·현장 시운전: 다중 AGV 도입이 정밀 지도 작성·좌표 지정·수작업 경로망 설계로 오래 걸린다는 연구와 설치 기간을 6개월에서 2개월로 줄일 수 있다는 과제 측 보고가 있어, 온보딩 기간이 증차한 로봇이 처리능력으로 바뀌는 시점을 좌우하는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-217\",\"ref-265\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Beinschob 외(2017) 도입 지연 원인 / PAN-Robots 설치 기간 6→2개월은 과제 측 보고값, 비교 조건 미확인 (재인용: 2026-09-25-52)\",\"as_of\":\"2017\",\"flow_step\":\"적치\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"A. 업무·공급망 설계의 2. 공정·워크플로 모델링 ↔ 23. 시험·형식 검증·벤치마크: 워크플로 넷의 건전성(soundness) 판정 복잡도를 다룬 연구(2022)가 있어 공정 모델의 형식적 점검이 형식 검증과 이어질 것으로 보이나, 물류 로봇 공정 적용 사례는 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-121\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Blondin 외, The complexity of soundness in workflow nets (LICS 2022) (재인용: 2026-09-25-29, A 대분류 페이지)\",\"as_of\":\"2022\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f6\",\"claim\":\"B. 공통 정보·환경 모델의 5. 로봇 능력·작업 온톨로지 ↔ 21. 온보딩·설정·현장 시운전: IDTA 02020 능력 기술(Capability Description) 서브모델은 공정이 요구하는 능력과 자원이 제공하는 능력을 비교하게 하고, 능력을 속성·제약(전제조건·순서)·스킬로 구조화해 자원의 매칭과 시운전을 돕는다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-229\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: capability 는 'implementation-independent specification of a function in industrial production'; 요구·제공 능력 비교, properties·constraints·skills 구조\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"Vieira da Silva 외(2024-06)는 자연어 능력 설명에서 대규모 언어 모델(LLM)을 이용해 능력 온톨로지를 생성하는 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-465\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Toward a Method to Generate Capability Ontologies from Natural Language Descriptions (arXiv 2406.07962) (재인용: 2026-09-25-52)\",\"as_of\":\"2024-06\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f8\",\"claim\":\"G. 안전·보안·지능·거버넌스의 27. AI·학습·적응과 모델 운영 ↔ 21. 온보딩·설정·현장 시운전: 분류 원문 8장 교차 규칙이 매뉴얼 해석을 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 AI 연구 방법으로 두므로, LLM 기반 능력 온톨로지 생성은 새 로봇 등록 작업을 줄이는 방법으로 두 대분류를 잇는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-465\",\"ref-229\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"교차 규칙(분류 원문 8장)과 f6·f7 의 결합에 따른 이 위키의 추론. 온보딩 현장 적용 사례는 미확인\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 21. 온보딩·설정·현장 시운전: Open-RMF 플릿 어댑터 튜토리얼은 로봇 좌표계와 RMF 좌표계 사이 변환을 위한 기준 좌표(대응 경유점)를 설정에 두고, 대응 경유점을 최소 4개 둘 것을 권한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-153\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"A minimum of 4 matching waypoints is recommended.\\\"\",\"as_of\":\"2026-09-25\",\"flow_step\":\"적치\",\"flow_item\":\"수행 자원\"},{\"id\":\"f10\",\"claim\":\"21. 온보딩·설정·현장 시운전 ↔ B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델, C. 연결·실행 기반의 10. 설비·건물 시스템 연동, D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF: Open-RMF traffic-editor 는 차선·경유점·충전소·주차 지점·문·승강기·층과 기준점(fiducial)을 이용한 층간 정렬을 주석하게 하고, 주석한 그래프는 building_map_generator 로 주행 그래프로 내보내져 플릿 어댑터의 경로 계획에 쓰인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-079\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문: annotated Graphs are exported as navigation graphs using the building_map_generator, used by rmf_fleet_adapters for path planning\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 3.0.0 은 지도 내려받기·활성화·삭제 즉시 동작(downloadMap·enableMap·deleteMap)을 두고 같은 mapId 에서는 한 번에 한 버전만 활성화하게 하며, 상태 스키마는 로봇이 mapId·mapVersion·mapStatus(ENABLED·DISABLED)를 보고하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\",\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"There shall only be one version of maps with the same mapId enabled at a time\\\" / state.schema maps: mapId, mapVersion, mapStatus(ENABLED, DISABLED)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"적치\",\"flow_item\":\"시작 조건\"},{\"id\":\"f12\",\"claim\":\"분류 원문이 6. 지도·공간·위치 모델에 '지도 버전 관리'를, 24. 자산·소프트웨어 수명주기 관리의 정의에 '지도 버전'을 함께 넣고 VDA 5050 이 지도 배포·활성화를 관제의 지시로 두므로, 지도 버전의 내용 정의는 B. 공통 정보·환경 모델 쪽, 배포·활성화 시점 조율과 이력 관리는 F. 도입·검증·유지관리 쪽이 맡는 분담이 될 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"분류 원문 6번 주석·24번 한 줄 정의와 VDA 5050 지도 배포 즉시 동작에서 끌어낸 이 위키의 추론\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"Kritzinger 외(2018)는 제조 분야 문헌을 검토해 물리 객체와 디지털 객체 사이 데이터 흐름의 자동화 정도에 따라 디지털 모델·디지털 섀도·디지털 트윈을 구분했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-291\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Digital Twin in manufacturing: A categorical literature review and classification (IFAC 2018) — 제조 대상 분류 (재인용: 2026-09-25-32)\",\"as_of\":\"2018\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f14\",\"claim\":\"B. 공통 정보·환경 모델의 8. 실시간 세계 상태·데이터 일관성 ↔ 22. 시뮬레이션·예측용 디지털 트윈: 8번은 현재 상태를 표현하고 22번은 그 모델을 이용해 가정한 미래를 실험한다는 분류 원문 구분에 따라, 22번은 8번의 현재 상태(로봇·설비·배터리 상태)를 시나리오 초기값으로 받는 쪽이 될 것으로 보이며, 근거 분류 자료가 물류가 아닌 제조 대상이라는 한계가 있다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-291\",\"ref-406\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"분류 원문 7장 구분 + 제조 대상 디지털 섀도·트윈 구분 + Open-RMF 시뮬레이션 문서에서 끌어낸 추론\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f15\",\"claim\":\"B. 공통 정보·환경 모델의 8. 실시간 세계 상태·데이터 일관성 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 상태 스키마는 충전 상태(stateOfCharge), 배터리 건강 상태(batteryHealth, 0~100%), 현재 충전량으로 추정한 도달 거리(range), 충전 여부(charging)를 로봇이 보고하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"state.schema batteryState: stateOfCharge, batteryHealth, range('Estimated reach with current State of Charge in meter'), charging\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"수행 자원\"},{\"id\":\"f16\",\"claim\":\"B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 및 C. 연결·실행 기반의 10. 설비·건물 시스템 연동 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Open-RMF 시뮬레이션 문서에 따르면 building_map_generator 는 traffic-editor 로 주석한 건물 지도에서 Gazebo 시뮬레이션 세계와 주행 그래프를 만들고, 문·승강기 플러그인, 워크셀을 흉내 내는 TeleportDispenser·TeleportIngestor, 여러 플릿 어댑터의 승강기 요청을 조율하는 lift_supervisor 를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"simulation.md: building_map_generator 가 .building.yaml 에서 월드·주행 그래프 생성; door·lift 플러그인, TeleportDispenser/TeleportIngestor, lift supervisor\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f17\",\"claim\":\"B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Sommer 외(2023)는 건물 환경 스캔과 객체 검출을 입력으로 생산 계획용 디지털 트윈을 자동 생성하는 방법을 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-241\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Automated generation of digital twin for a built environment using scan and object detection as input for production planning (2023) — 생산 계획 대상 (재인용: 2026-09-25-56)\",\"as_of\":\"2023\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 21. 온보딩·설정·현장 시운전: VDA 5050 3.0.0 은 팩트시트를 관제에서 이동로봇 설정을 돕는 매개변수·제조사 정보로 두고, 초기 설정과 관제–이동로봇 능력 사이의 지속적인 호환성 평가에 쓰도록 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Factsheet shall be used to support initial configuration and ongoing compatibility assessment between fleet control and mobile robot capabilities.\\\"\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"VDA 5050 팩트시트 스키마는 적재 명세(loadSpecification.loadSets), 로봇 구성의 버전 목록(mobileRobotConfiguration.versions, 예: softwareVersion), 충전 설정(batteryCharging: criticalLowChargingLevel·minimumDesiredChargingLevel·maximumDesiredChargingLevel·minimumChargingTime)을 담아, 한 등록 정보가 21. 온보딩·설정·현장 시운전, 24. 자산·소프트웨어 수명주기 관리, D. 계획·최적화의 16. 공용 자원·충전·에너지 최적화에 함께 쓰인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-228\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"factsheet.schema: loadSpecification.loadSets, mobileRobotConfiguration.versions(softwareVersion 등), mobileRobotConfiguration.batteryCharging.criticalLowChargingLevel 외\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 21. 온보딩·설정·현장 시운전: Open-RMF 플릿 어댑터 설정은 최대 선·각속도와 가속도, 수행 가능한 작업 유형(loop·delivery·clean), 로봇 외곽 반경, 배터리·재충전 임계값, 제조사 관제 API 연결 정보(주소·계정)를 요구한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-153\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"integration_fleets_adapter_tutorial.md: speed limits, task capabilities, robot profiles, battery params, recharge thresholds, fleet manager prefix/username/password\",\"as_of\":\"2026-09-25\",\"flow_step\":\"적치\",\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"22. 시뮬레이션·예측용 디지털 트윈·23. 시험·형식 검증·벤치마크 ↔ C. 연결·실행 기반의 10. 설비·건물 시스템 연동: Open-RMF 시뮬레이션 문서는 시뮬레이션 속 로봇이 배터리 소모나 충돌 비용 없이 장시간·가속 조건으로 드문 예외 상황을 시험할 수 있고, 장시간 시뮬레이션이 배치 전 시설 소유자의 확신을 높인다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Long running simulations can instill confidence in facility owners prior to deployment.\\\"\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Open-RMF 시뮬레이션의 slotcar 플러그인은 경로·모드 요청을 받아 레일식으로 움직이고 센서 기반 주행 스택 없이 로봇 상태를 발행하는 전체 제어(full control) 로봇 모델이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-406\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"simulation.md: slotcar 는 rail-like navigation 으로 full control 로봇을 모사, 센서 기반 주행 스택 불필요\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"slotcar 같은 단순화 모델은 제조사 관제·로봇 고유 거동을 재현하지 않으므로, 9. 로봇·제조사 관제 연동 방식(전체 제어·신호등·읽기 전용)과 제조사별 거동 차이가 22. 시뮬레이션·예측용 디지털 트윈의 처리량 예측 오차 원인이 될 것으로 보인다(oq-086).\",\"tag\":\"추정\",\"source_ids\":[\"ref-406\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f22 의 단순화 모델 설명에서 끌어낸 추론. 오차 크기 자료 미확인\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 3.0.0 은 로봇이 사용할 수 없는 선택 필드가 담긴 주문을 받으면 UNSUPPORTED_PARAMETER 오류를 CRITICAL 수준과 오류 필드 참조로 보고하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"The mobile robot shall report an error of type 'UNSUPPORTED_PARAMETER' with level 'CRITICAL'\\\"\",\"as_of\":\"2026-09-25\",\"flow_step\":\"적치\",\"flow_item\":\"예외·성과\"},{\"id\":\"f25\",\"claim\":\"C. 연결·실행 기반의 12. 명령·작업 실행의 신뢰성 ↔ 24. 자산·소프트웨어 수명주기 관리: ROS 2 관리형 노드는 Unconfigured·Inactive·Active·Finalized 상태와 configure·activate 같은 전이를 두어, 감독 도구가 구성요소 준비를 확인한 뒤 실행을 허용하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-364\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ROS 2 Design node_lifecycle: managed node 상태 기계 (재인용: 2026-09-25-38, C 대분류 페이지)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f26\",\"claim\":\"C. 연결·실행 기반의 9. 로봇·제조사 관제 연동·12. 명령·작업 실행의 신뢰성 ↔ 23. 시험·형식 검증·벤치마크: 공개 개인 프로젝트 vda5050-sim 은 VDA 5050 3.0.0 주문 수명주기·동작·교통 제어 의미를 명세와 대조하는 적합성 시험 묶음과 고장 주입을, vda5050-lab 은 MQTT 기록에서 반복 주문 id·재연결·취소 불일치를 진단한다고 README 에 적으며, 둘 다 VDA·VDMA 공식 적합성 시험이 아니다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-407\",\"ref-408\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"두 README 의 자기 기술 (재인용: 2026-09-25-38, C 대분류 페이지)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f27\",\"claim\":\"OTTO by Rockwell Automation 은 자사 AMR 이 여러 관제 업체와 VDA 5050 인증을 마쳤다고 2026-04 발표했으나, 인증의 시험 항목은 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-608\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: Idealworks·NAiSE·SYNAOS 와 VDA 5050 인증 완료 발표 (재인용: 2026-09-25-59)\",\"as_of\":\"2026-04\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true,\"vendor_claim\":true},{\"id\":\"f28\",\"claim\":\"연계 대상: ros2_fault_injection 은 오도메트리·레이저 스캔·IMU·점군 같은 센서 신호와 속도 명령을 조작하는 로봇 수준 장애 주입 도구이며, 23. 시험·형식 검증·벤치마크에서 ROP 쪽 장애 주입은 같은 프록시 방식을 C. 연결·실행 기반의 관제 명령·상태 메시지와 설비 응답 수준에 적용하는 형태가 될 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-601\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"README 기준 센서 신호 장애 주입과 Twist 명령 조작 (재인용: 2026-09-25-59). ROP 적용은 추론\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f29\",\"claim\":\"D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF ↔ 22. 시뮬레이션·예측용 디지털 트윈: 다중 AGV 시스템의 경로망(roadmap)을 시뮬레이션 기반으로 자동 설계하는 연구(IEEE T-ASE 2024)가 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-267\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (재인용: 2026-09-25-56)\",\"as_of\":\"2024\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f30\",\"claim\":\"D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF ↔ 23. 시험·형식 검증·벤치마크: Stern 외(2019)는 MAPF 의 가정·목적함수를 공통 용어로 정리하고 격자 기반 벤치마크를 소개했으나, 그 성과가 실제 물류센터 처리량으로 얼마나 이어지는지는 확인되지 않았다(oq-058).\",\"tag\":\"사실\",\"source_ids\":[\"ref-186\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks (2019) (재인용: 2026-09-25-59)\",\"as_of\":\"2019-06\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f31\",\"claim\":\"Yan 외(2026-02)는 기존 MAPF 연구가 단순한 운동 모델과 완전한 실행·통신을 가정한다고 지적하고, 플릿 관리 시스템 안에서 계획 시점·방법·복구 설계 선택을 비교하는 시험대(LSMART)를 제안해 D. 계획·최적화의 경로 알고리즘과 23. 시험·형식 검증·벤치마크를 잇는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-604\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"LSMART 와 지속형 AGV 플릿 관리 설계 선택 연구(arXiv 2602.15721, 프리프린트) (재인용: 2026-09-25-59)\",\"as_of\":\"2026-02-17\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f32\",\"claim\":\"von Berg 외(2026-05)는 창고 물류 AGV 의 교착 회피를 전이 시스템 인코딩과 BDD 로 분석한 사례 연구를 발표해, 15. 다중 로봇 경로·교통 관리 — MAPF 의 교착 문제가 23. 시험·형식 검증·벤치마크의 형식 검증 대상이 됨을 보인다(계산 규모 한계는 oq-088).\",\"tag\":\"사실\",\"source_ids\":[\"ref-609\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"BDD-Based Deadlock Avoidance for AGVs in Warehouse Logistics (FM 2026 사례 연구) (재인용: 2026-09-25-59)\",\"as_of\":\"2026-05\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f33\",\"claim\":\"D. 계획·최적화의 13. 작업 배정 — MRTA ↔ 23. 시험·형식 검증·벤치마크: Lott·Honary(2026-09 프리프린트)는 분산 작업 배정기 6종을 패킷 손실·페이딩 같은 통신 저하 조건에서 이동 거리·안정성·계산 부담으로 비교하는 벤치마크를 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-493\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark (재인용: 2026-09-25-55, D 대분류 페이지)\",\"as_of\":\"2026-09\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f34\",\"claim\":\"D. 계획·최적화의 16. 공용 자원·충전·에너지 최적화 ↔ 24. 자산·소프트웨어 수명주기 관리: 플릿 수준에서 배터리 건강(열화)을 고려해 자율이동로봇의 작업 배정·충전 일정을 정하는 연구(2026-03, 프리프린트)가 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-403\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots (arXiv 2603.22731) (재인용: 2026-09-25-61)\",\"as_of\":\"2026-03\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f35\",\"claim\":\"로봇이 보고하는 batteryHealth 가 낮아지면 같은 충전 상태에서도 도달 거리(range)가 짧아질 수 있어, 24. 자산·소프트웨어 수명주기 관리의 배터리 열화 정보가 D. 계획·최적화의 13. 작업 배정 — MRTA·16. 공용 자원·충전·에너지 최적화의 제약 입력이 되는 것으로 보인다(물류센터 실측 자료 미확인).\",\"tag\":\"추정\",\"source_ids\":[\"ref-051\",\"ref-403\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f15 의 상태 필드와 f34 의 연구에서 끌어낸 추론 (재인용: 2026-09-25-61 출하 시나리오)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"출하\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f36\",\"claim\":\"E. 협업·현장 운영의 20. 예외 복구·재계획·업무 연속성 ↔ 23. 시험·형식 검증·벤치마크: NIST ARIAC 2025 문서는 컨베이어 고장, 전압 시험기 고장, 진공 그리퍼 파지 실패, 긴급(고우선) 주문을 과제로 두어 설비·로봇 장애와 긴급 주문 대응을 평가한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-528\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"A specified vacuum gripper will fail during grasp attempts.\\\" (challenges.rst, ARIAC 2025 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f37\",\"claim\":\"ARIAC 같은 장애 과제 정의와 장애 주입 도구를 결합하면, 20. 예외 복구·재계획·업무 연속성의 재배정·수동 전환·제한 운영 동작을 업데이트마다 다시 돌리는 회귀 시험 시나리오로 만들 수 있을 것으로 보이나, 물류 오케스트레이션에 적용해 공개한 사례는 확인되지 않았다(oq-087).\",\"tag\":\"추정\",\"source_ids\":[\"ref-528\",\"ref-601\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f36·f28 에서 끌어낸 추론 (재인용: 2026-09-25-59 피킹 회귀 시험 시나리오)\",\"as_of\":\"2026-09-25\",\"flow_step\":\"피킹\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f38\",\"claim\":\"E. 협업·현장 운영의 17. 로봇 간 협업·물리적 인계 ↔ 23. 시험·형식 검증·벤치마크: ASTM F3499-21 은 자율 무인 지상 차량(A-UGV)의 도킹 성능을 확인하는 시험 방법이며, 그 결과를 로봇팔 파지 허용 오차와 잇는 기준은 확인되지 않았다(oq-063).\",\"tag\":\"사실\",\"source_ids\":[\"ref-204\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Standard Test Method for Confirming the Docking Performance of A-UGVs (2021) (재인용: 2026-09-25-60, E 대분류 페이지)\",\"as_of\":\"2021\",\"flow_step\":null,\"flow_item\":\"완료·인계\",\"source_unopened\":true},{\"id\":\"f39\",\"claim\":\"E. 협업·현장 운영의 19. 모니터링·이상 탐지·원인 분석 ↔ 24. 자산·소프트웨어 수명주기 관리: Lei 외(2025)는 산업용 로봇의 고장 모드·데이터 수집·모델 기반과 데이터 기반 진단을 상태 기반 정비 관점에서 정리한 검토를 발표했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-553\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Condition monitoring and fault diagnosis of industrial robots: A review (Sci China Tech Sci 68, 2025) (재인용: 2026-09-25-61)\",\"as_of\":\"2025\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f40\",\"claim\":\"E. 협업·현장 운영의 19. 모니터링·이상 탐지·원인 분석 ↔ 23. 시험·형식 검증·벤치마크: ROSMonitoring 은 ROS 시스템의 런타임 검증 프레임워크로, 운영 중 감시가 사전 시험을 보완하는 연결 지점이 된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-602\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ROSMonitoring: a Runtime Verification Framework for ROS — README (재인용: 2026-09-25-59)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f41\",\"claim\":\"G. 안전·보안·지능·거버넌스의 25. 안전·위험 관리 ↔ 21. 온보딩·설정·현장 시운전·23. 시험·형식 검증·벤치마크: ISO 3691-4:2023 은 AGV·AMR 을 포함한 무인 산업 차량과 그 시스템의 안전 요구와 검증 수단을 정하며, 운용 구역 준비를 부속서 A 에 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-470\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ISO 3691-4:2023 소개 (재인용: 2026-09-25-52·59·63). 세부 시험 항목 미확인\",\"as_of\":\"2023-06\",\"flow_step\":\"적치\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f42\",\"claim\":\"연계 대상: 국내에는 바퀴형 서비스 로봇의 이동 성능 시험방법 KS B ISO 18646-1 과 한국로봇산업진흥원의 시험평가 서비스가 있어, 로봇 자체 성능 시험은 시험기관 쪽이고 23. 시험·형식 검증·벤치마크의 ROP 몫은 그 결과를 등록·배정 조건으로 받는 쪽으로 보인다(oq-089).\",\"tag\":\"추정\",\"source_ids\":[\"ref-606\",\"ref-607\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"KSSN 표준 정보와 KIRIA 시험평가 페이지 (재인용: 2026-09-25-59). 오케스트레이션 수준 시험 포함 여부 미확인\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f43\",\"claim\":\"한국산업기술시험원(KTL)과 통합물류협회가 물류로봇 시험인증 협력을 강화하기로 했다고 2026-07 보도되어, 국내 물류로봇 시험·인증 체계가 23. 시험·형식 검증·벤치마크와 28. 표준·상호운용성·다사업자 거버넌스를 잇는 후보가 될 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-466\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"부산일보 2026-07-24 기사(1차 출처 미확인) (재인용: 2026-09-25-52)\",\"as_of\":\"2026-07-24\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f44\",\"claim\":\"G. 안전·보안·지능·거버넌스의 26. 사이버보안·접근권한·개인정보 ↔ 24. 자산·소프트웨어 수명주기 관리: IEC TR 62443-2-3:2015 는 산업 자동화·제어 시스템(IACS) 환경의 패치 관리를 다루는 기술 보고서다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-554\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IEC TR 62443-2-3:2015 Patch management in the IACS environment (재인용: 2026-09-25-61)\",\"as_of\":\"2015-06\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f45\",\"claim\":\"G. 안전·보안·지능·거버넌스의 25. 안전·위험 관리 ↔ 24. 자산·소프트웨어 수명주기 관리: 로봇 시스템 위험성평가 가이드는 설비·작업 변경 시 위험성평가를 다시 하도록 권하므로, 펌웨어·안전 파라미터·오케스트레이션 정책 변경이 재평가 촉발 조건이 될 수 있어 보이나, 국내 공식 규정은 미확인이다(oq-092, oq-093).\",\"tag\":\"추정\",\"source_ids\":[\"ref-559\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"세이프틱스 위험성평가 가이드(업체 자료, 발행일 미확인) (재인용: 2026-09-25-61) (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f46\",\"claim\":\"G. 안전·보안·지능·거버넌스의 27. AI·학습·적응과 모델 운영 ↔ 23. 시험·형식 검증·벤치마크: ALFRED 와 LoTa-Bench 는 자연어 지시를 행동 계획으로 바꾸는 체화 에이전트를 시뮬레이터 결과(목표 조건·성공률)로 자동 평가하는 공개 벤치마크다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-539\",\"ref-541\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ALFRED(AI2-THOR 가정 작업), LoTa-Bench(ICLR 2024, 성공률 비교) (재인용: 2026-09-25-62). 물류 지시 데이터셋은 아님\",\"as_of\":\"2024-02\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f47\",\"claim\":\"G. 안전·보안·지능·거버넌스의 28. 표준·상호운용성·다사업자 거버넌스 ↔ 22. 시뮬레이션·예측용 디지털 트윈: 제조용 디지털 트윈 프레임워크 ISO 23247 은 국내에 KS X ISO 23247-1 로 등재되어 있고, 2026 년 디지털 트윈 결합을 다루는 Part 6 이 발행되었으나 물류센터 적용 여부는 미확인이다(oq-085).\",\"tag\":\"사실\",\"source_ids\":[\"ref-516\",\"ref-518\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KSSN KS X ISO 23247-1, ISO 23247-6:2026 Digital twin composition (재인용: 2026-09-25-56)\",\"as_of\":\"2026\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f48\",\"claim\":\"이번에 확인한 VDA 5050 적합성 시험 근거가 제3자 오픈소스 도구와 벤더 발표뿐이라, 어느 시험 결과를 새 로봇 연동 승인 기준으로 쓰고 판 차이(2.x·3.0.0)로 생기는 UNSUPPORTED_PARAMETER 같은 미지원 오류를 누가 판정·수정할지가 23. 시험·형식 검증·벤치마크·24. 자산·소프트웨어 수명주기 관리에서 28. 표준·상호운용성·다사업자 거버넌스로 넘어가는 과제가 될 것으로 보인다(oq-055, oq-091).\",\"tag\":\"추정\",\"source_ids\":[\"ref-407\",\"ref-408\",\"ref-608\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f24·f26·f27 에서 끌어낸 추론. VDA 공식 인증 절차 부재는 확정 사실 아님\",\"as_of\":\"2026-09-25\",\"flow_step\":null,\"flow_item\":null,\"source_unopened\":true}],\"sources\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 3.0.0 명세 원문. 팩트시트 용도, 지도 배포 즉시 동작, UNSUPPORTED_PARAMETER, 범위 제외(안전·교통 전략·외부 IT 인터페이스)를 확인.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-051\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/state.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"상태 메시지 JSON 스키마. maps(mapId·mapVersion·mapStatus), batteryState(stateOfCharge·batteryHealth·range·charging), 오류 수준, 운용 모드 확인.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema\"},{\"id\":\"ref-079\",\"org\":\"Open Robotics\",\"title\":\"Traffic Editor - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"traffic-editor 로 차선·경유점·충전소·주차·문·승강기·층 정렬을 주석하고 주행 그래프로 내보내는 흐름.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md\"},{\"id\":\"ref-101\",\"org\":\"Merschformann, M. (RAWSim-O GitHub)\",\"title\":\"RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)\",\"published\":null,\"url\":\"https://github.com/merschformann/RAWSim-O\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. RMFS 결정 문제 효과를 연구하는 이산 사건 시뮬레이션 프레임워크.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-121\",\"org\":\"Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022)\",\"title\":\"The complexity of soundness in workflow nets\",\"published\":\"2022\",\"url\":\"https://arxiv.org/abs/2201.05588\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 워크플로 넷 건전성 판정의 계산 복잡도 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-153\",\"org\":\"Open Robotics\",\"title\":\"Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"플릿 어댑터 설정 항목(속도 한계·작업 유형·기준 좌표·관제 연결·배터리)과 대응 경유점 4개 이상 권장.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_adapter_tutorial.md\"},{\"id\":\"ref-186\",\"org\":\"Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외\",\"title\":\"Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks\",\"published\":\"2019-06\",\"url\":\"https://arxiv.org/abs/1906.08291\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MAPF 정의·변형·격자 벤치마크 정리.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-204\",\"org\":\"ASTM International\",\"title\":\"Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)\",\"published\":\"2021\",\"url\":\"https://www.astm.org/f3499-21.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. A-UGV 도킹 성능 확인 시험 방법.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-217\",\"org\":\"Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L.\",\"title\":\"Semi-automated map creation for fast deployment of AGV fleets in modern logistics\",\"published\":\"2017\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0921889015302724\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. AGV 플릿 신속 배치를 위한 반자동 지도 작성과 도입 지연 원인.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-228\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050 — json_schemas/factsheet.schema\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"팩트시트 JSON 스키마. loadSets, mobileRobotConfiguration.versions, batteryCharging 필드 확인.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/factsheet.schema\"},{\"id\":\"ref-229\",\"org\":\"IDTA(Industrial Digital Twin Association)\",\"title\":\"IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"능력 기술 서브모델 README. 요구·제공 능력 비교와 속성·제약·스킬 구조.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md\"},{\"id\":\"ref-241\",\"org\":\"Sommer, M., Stjepandić, J., Stobrawa, S., & von Soden, M.\",\"title\":\"Automated generation of digital twin for a built environment using scan and object detection as input for production planning\",\"published\":\"2023\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S2452414X23000353\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 스캔·객체 검출로 건물 환경 디지털 트윈 자동 생성.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-265\",\"org\":\"European Commission (CORDIS)\",\"title\":\"PAN-ROBOTS: Automating logistics for the factory of the future\",\"published\":null,\"url\":\"https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. EU 과제 소개, 설치 기간 단축 보고(과제 측).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-267\",\"org\":\"IEEE 게재 논문 저자(미확인)\",\"title\":\"Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))\",\"published\":\"2024\",\"url\":\"https://ieeexplore.ieee.org/document/10287275/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 시뮬레이션 기반 다중 AGV 경로망 자동 설계.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-291\",\"org\":\"Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.\",\"title\":\"Digital Twin in manufacturing: A categorical literature review and classification\",\"published\":\"2018\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S2405896318316021\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제조 분야 디지털 모델·섀도·트윈 구분.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-364\",\"org\":\"ROS 2 Design\",\"title\":\"Managed nodes (ROS 2 Design: node_lifecycle)\",\"published\":null,\"url\":\"https://design.ros2.org/articles/node_lifecycle.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ROS 2 관리형 노드 상태 기계.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-398\",\"org\":\"Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.\",\"title\":\"Decision rules for robotic mobile fulfillment systems\",\"published\":\"2019\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S2214716019300946\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. RMFS 결정 규칙의 시뮬레이션 비교.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-403\",\"org\":\"Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin)\",\"title\":\"Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots\",\"published\":\"2026-03\",\"url\":\"https://arxiv.org/abs/2603.22731\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 플릿 배터리 열화를 고려한 AMR 스케줄링(프리프린트).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-406\",\"org\":\"Open Robotics\",\"title\":\"Simulation - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/simulation.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"Open-RMF 시뮬레이션: 배치 전 시험 이점, 월드 생성, 문·승강기·워크셀 플러그인, lift_supervisor, slotcar 모델.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/simulation.md\"},{\"id\":\"ref-407\",\"org\":\"gpue (GitHub)\",\"title\":\"vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS)\",\"published\":null,\"url\":\"https://github.com/gpue/vda5050-sim\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. VDA 5050 3.0.0 플릿 시뮬레이터, 적합성 시험 묶음·고장 주입(개인 프로젝트).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-408\",\"org\":\"ekusiadadus (GitHub)\",\"title\":\"vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces)\",\"published\":null,\"url\":\"https://github.com/ekusiadadus/vda5050-lab\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. MQTT 기록 기반 VDA 5050 주문·재연결·취소 진단 도구(개인 프로젝트).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-465\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"Toward a Method to Generate Capability Ontologies from Natural Language Descriptions\",\"published\":\"2024-06\",\"url\":\"https://arxiv.org/abs/2406.07962\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자연어 설명에서 LLM 으로 능력 온톨로지 생성.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-466\",\"org\":\"부산일보\",\"title\":\"KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’\",\"published\":\"2026-07-24\",\"url\":\"https://www.busan.com/view/busan/view.php?code=2026072420194685883\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 국내 물류로봇 시험인증 협력 보도.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-470\",\"org\":\"ISO\",\"title\":\"ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems\",\"published\":\"2023-06\",\"url\":\"https://www.iso.org/standard/83545.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 무인 산업 차량과 시스템의 안전 요구·검증.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-493\",\"org\":\"Lott, J., & Honary, V.(University of San Diego)\",\"title\":\"Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark of Performance, Reliability, and Computation\",\"published\":\"2026-09\",\"url\":\"https://arxiv.org/abs/2609.13711\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 통신 저하 조건의 분산 배정기 벤치마크(프리프린트).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-516\",\"org\":\"한국표준협회 KSSN(국가표준인증종합정보센터)\",\"title\":\"KS X ISO 23247-1 자동화 시스템 및 통합 — 제조를 위한 디지털 트윈 프레임워크 — 제1부: 개요 및 일반 원리\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010140724\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 제조 디지털 트윈 프레임워크 국내 부합 표준.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-518\",\"org\":\"ISO\",\"title\":\"ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition\",\"published\":\"2026\",\"url\":\"https://www.iso.org/standard/87426.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 디지털 트윈 결합을 다루는 ISO 23247 Part 6.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-521\",\"org\":\"Le, T. V., & Fan, R.\",\"title\":\"Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges\",\"published\":\"2024\",\"url\":\"https://www.sciencedirect.com/science/article/abs/pii/S0360835223007921\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 물류·공급망 디지털 트윈 검토와 개념 틀.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-528\",\"org\":\"NIST (usnistgov/ARIAC_docs)\",\"title\":\"ARIAC 2025 Documentation — Challenges\",\"published\":null,\"url\":\"https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"ARIAC 2025 과제: 컨베이어·전압 시험기·진공 그리퍼 고장, 긴급 주문.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/challenges.rst\"},{\"id\":\"ref-539\",\"org\":\"askforalfred (ALFRED 공식 저장소)\",\"title\":\"ALFRED — A Benchmark for Interpreting Grounded Instructions for Everyday Tasks (GitHub README)\",\"published\":null,\"url\":\"https://github.com/askforalfred/alfred\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자연어 지시를 가정 작업 행동 순서로 대응시키는 벤치마크.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-541\",\"org\":\"lbaa2022 (LoTa-Bench 공식 저장소)\",\"title\":\"LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README)\",\"published\":null,\"url\":\"https://github.com/lbaa2022/LLMTaskPlanning\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 언어 기반 작업 계획기의 자동 정량 평가 벤치마크.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-553\",\"org\":\"Lei, Y., Liu, H., Li, N. 외\",\"title\":\"Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)\",\"published\":\"2025\",\"url\":\"https://link.springer.com/article/10.1007/s11431-024-2810-2\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 로봇 상태 감시·고장 진단 검토.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-554\",\"org\":\"IEC\",\"title\":\"IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment\",\"published\":\"2015-06\",\"url\":\"https://webstore.iec.ch/en/publication/22811\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. IACS 환경 패치 관리 기술 보고서.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-559\",\"org\":\"세이프틱스(Safetics)\",\"title\":\"로봇 시스템 위험성평가 가이드\",\"published\":null,\"url\":\"https://doc.safetics.io/insight-risk-assessment/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇 시스템 위험성평가 절차 안내(업체 자료).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-601\",\"org\":\"reeceholland (ros2_fault_injection GitHub)\",\"title\":\"ros2_fault_injection — README\",\"published\":null,\"url\":\"https://github.com/reeceholland/ros2_fault_injection\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ROS 2 센서 신호·속도 명령 장애 주입 도구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-602\",\"org\":\"University of Liverpool Autonomy and Verification (ROSMonitoring GitHub)\",\"title\":\"ROSMonitoring: a Runtime Verification Framework for ROS — README\",\"published\":null,\"url\":\"https://github.com/autonomy-and-verification-uol/ROSMonitoring\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ROS 런타임 검증 프레임워크.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-604\",\"org\":\"Yan, J., Zhang, Y., Liu, Z., Zhang, H., Jiang, H., Chen, J., Smith, S. F., & Li, J.\",\"title\":\"Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems\",\"published\":\"2026-02-17\",\"url\":\"https://arxiv.org/abs/2602.15721\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. FMS 안의 지속형 MAPF 시험대와 설계 선택 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-606\",\"org\":\"한국표준협회 KSSN(국가표준인증종합정보센터)\",\"title\":\"KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇의 이동능력\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010113281\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 바퀴형 서비스 로봇 이동 성능 시험방법 KS.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-607\",\"org\":\"한국로봇산업진흥원(KIRIA)\",\"title\":\"시험평가 | KIRIA 첨단로봇 실증지원 디지털 플랫폼\",\"published\":null,\"url\":\"https://kiria.org/rp/kiria/tva/inr/page.dn\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 한국로봇산업진흥원 로봇 시험평가 안내.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-608\",\"org\":\"OTTO by Rockwell Automation\",\"title\":\"OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments\",\"published\":\"2026-04\",\"url\":\"https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. OTTO AMR 의 VDA 5050 인증 발표(벤더 보도자료).\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-609\",\"org\":\"von Berg, B., Aichernig, B. K., & Wedenik, F.\",\"title\":\"BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper)\",\"published\":\"2026-05\",\"url\":\"https://link.springer.com/chapter/10.1007/978-3-032-26204-2_16\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 창고 AGV 교착 회피의 BDD 기반 사례 연구.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/f-deployment-verification-and-maintenance/index.md\",\"sections\":[\"5. 다른 대분류와의 연결\"],\"rationale\":\"'다른 대분류와의 연결' 절만 patches 로 채운다. A. 업무·공급망 설계: f1·f2(22↔3·4), f3(22↔1, 연계 대상), f4(21↔3), f5(23↔2) / B. 공통 정보·환경 모델: f6·f7(21↔5), f9·f10(21↔6), f11·f12(24↔6 지도 버전), f13·f14(22↔8, 8·22 구분 유지), f15(24↔8), f16·f17(22↔6) / C. 연결·실행 기반: f18·f19·f20(21↔9), f10(21↔10), f16·f21(22·23↔10), f22·f23(22↔9, oq-086), f24(24↔9), f25(24↔12), f26·f27(23↔9·12, f27 벤더 주장 병기), f28(23↔12, 연계 대상) / D. 계획·최적화: f2(22↔13), f29(22↔15), f10(21↔15), f30·f31·f32(23↔15), f33(23↔13), f19·f34·f35(24↔13·16) / E. 협업·현장 운영: f36·f37(23↔20), f38(23↔17), f39(24↔19), f40(23↔19) / G. 안전·보안·지능·거버넌스: f41(21·23↔25), f42·f43(23↔28, 연계 대상), f44(24↔26), f45(24↔25), f8·f46(21·23↔27, 교차 규칙), f47(22↔28), f48(23·24↔28) / '아직 다루지 않은 연결': 20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈(oq-081), 21. 온보딩·설정·현장 시운전 ↔ E. 협업·현장 운영, 22 ↔ 26. 사이버보안·접근권한·개인정보, 11. 분산 시스템·통신·컴퓨팅 구조, 7. 화물·재고·자산 식별과 추적과의 연결은 근거 미확보. 다음 실행 후보: B. 공통 정보·환경 모델 페이지의 '아직 다루지 않은 연결'(23·24)을 f11·f15 로 보강.\"}],\"glossary_candidates\":[],\"open_questions_new\":[\"Open-RMF 시뮬레이션의 lift_supervisor 처럼 여러 플릿의 승강기·문 요청 조율을 시뮬레이션에서 검증한 결과를 실제 설비 연동 시운전의 합격 기준으로 쓸 수 있는가, 쓴다면 시뮬레이션과 현장의 차이를 어떻게 확인하는가? | 관련 영역: 22. 시뮬레이션·예측용 디지털 트윈, 23. 시험·형식 검증·벤치마크, 10. 설비·건물 시스템 연동, 21. 온보딩·설정·현장 시운전 | 근거: f16 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":38,\"cross_checked_count\":0,\"unverified\":[\"모든 finding 교차 확인 없음(단일 출처이거나 같은 기관 출처 쌍: f11 은 VDA 명세와 VDA 스키마로 독립 출처 아님)\",\"f27 OTTO VDA 5050 인증의 시험 항목 미확인(벤더 주장)\",\"f43 KTL·통합물류협회 협력 내용은 기사 기준, 1차 출처 미확인\",\"f45 국내 변경 후 재평가 공식 규정 미확인(oq-092)\",\"20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈 연결 근거 미확보(oq-081)\",\"ref-407·ref-408·ref-121·ref-204·ref-539·ref-541 은 이번 입력의 참고문헌 요약 목록에 없어 게시 페이지 각주·이전 브리프 값을 옮겼고, 유형·신뢰도는 이번 실행의 판단\"],\"scope_violations\":[\"f3: 수요예측은 분류 원문 9장 상위 업무 시스템 경계라 '연계 대상:' 표시\",\"f28: 센서 신호 장애 주입은 로봇 자체 인식·주행 견고성 시험이라 '연계 대상:' 표시\",\"f42: 로봇 자체 성능 시험은 시험기관·제조사 쪽이라 '연계 대상:' 표시\",\"f13·f17·f47: 제조 대상 자료라 물류 적용은 미확인으로 명시\"],\"budget_used\":{\"queries\":1,\"sources\":0},\"limits\":\"web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-228(factsheet.schema), ref-079(traffic-editor.md), ref-153(fleet adapter tutorial), ref-406(simulation.md), ref-229(IDTA 02020 README), ref-528(ARIAC challenges.rst). 나머지 30건은 게시 페이지 각주·이전 브리프 재사용이며 원문 미열람(신뢰도 상한 medium). 대분류 연결 실행 규칙(R-3)에 따라 근거를 게시된 21~24 세부영역 페이지와 A·B·C·D·E 대분류 페이지 각주에서 먼저 찾았고 신규 출처는 0건이다. 한국어 검색 1회(물류센터 AMR 가상 시운전 디지털 트윈)는 기사·업체 블로그뿐이라 쓰지 않았다. 한국 자료: KS B ISO 18646-1(ref-606), KIRIA 시험평가(ref-607), KTL 협력 보도(ref-466), KS X ISO 23247-1(ref-516). 교차 규칙: 매뉴얼 해석 AI 는 f8 로 21. 온보딩·설정·현장 시운전·5. 로봇 능력·작업 온톨로지·27. AI·학습·적응과 모델 운영에 함께 연결했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f14 에서 원문 구분대로 나눴다. 페이지 절 번호는 대분류 페이지 절 순서(핵심 질문·개요·세부 연구영역·핵심 포인트·다른 대분류와의 연결)로 5를 붙였다 [가정]. 정정 요청 없음. 해결된 열린 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-25-67",
+    "date": "2026-09-25",
+    "run_type": "category_link",
+    "target": {
+      "area_no": null,
+      "area_name": null,
+      "category": "F. 도입·검증·유지관리"
+    },
+    "gaps": [
+      "F. 도입·검증·유지관리 대분류 페이지의 '다른 대분류와의 연결' 절이 '아직 작성되지 않음' 상태",
+      "E. 협업·현장 운영 페이지가 20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈, E ↔ 21. 온보딩·설정·현장 시운전, E ↔ 24. 자산·소프트웨어 수명주기 관리를 '근거 없음'으로 남김(이번 실행에서도 근거 미확보)",
+      "B. 공통 정보·환경 모델 페이지가 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리와의 연결을 '아직 다루지 않은 연결'로 둠 — 이번 실행 f11·f15 가 근거가 될 수 있음",
+      "G. 안전·보안·지능·거버넌스 쪽 세부영역 페이지(25~28)가 seed 이거나 심화 전이라 G 연결은 F 쪽 근거에 기댐"
+    ],
+    "research_questions": [
+      "새 현장에 설치하고, 변경하면서, 오래 운영하려면? [분류원문]",
+      "제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? [분류원문]",
+      "21. 온보딩·설정·현장 시운전이 등록·설정하는 정보(팩트시트, 어댑터 설정, 경로망·지도 정합)는 B. 공통 정보·환경 모델과 C. 연결·실행 기반, D. 계획·최적화의 어느 세부영역으로 넘어가는가?",
+      "22. 시뮬레이션·예측용 디지털 트윈은 A. 업무·공급망 설계(처리능력·성과)와 D. 계획·최적화(배정·경로망)의 어떤 결정을 가정한 미래로 실험하며, 8. 실시간 세계 상태·데이터 일관성과 어떻게 구분되는가?",
+      "23. 시험·형식 검증·벤치마크는 C. 연결·실행 기반의 인터페이스·설비 연동, D. 계획·최적화의 교착·경로 알고리즘, E. 협업·현장 운영의 장애 대응을 어떤 시험·검증으로 잇는가? (oq-055, oq-058, oq-087 관련)",
+      "24. 자산·소프트웨어 수명주기 관리의 지도·펌웨어 버전과 배터리 열화 정보는 B. 공통 정보·환경 모델, C. 연결·실행 기반, D. 계획·최적화, G. 안전·보안·지능·거버넌스의 어느 규칙·제약과 맞물리는가? (oq-090, oq-091 관련)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "A. 업무·공급망 설계의 3. 처리능력·거점·설비 계획 ↔ F. 도입·검증·유지관리의 22. 시뮬레이션·예측용 디지털 트윈: RAWSim-O 는 로봇 이동형 풀필먼트 시스템(RMFS) 운영의 여러 결정 문제가 미치는 효과를 연구하기 위한 이산 사건 시뮬레이션 프레임워크다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-101"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "RAWSim-O README: RMFS 의 결정 문제 효과를 연구하는 이산 사건 시뮬레이션 프레임워크 (재인용: 22. 시뮬레이션·예측용 디지털 트윈 페이지 7절·A 대분류 페이지) (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f2",
+        "claim": "A. 업무·공급망 설계의 4. 성과·경제성·프로세스 개선 및 D. 계획·최적화의 13. 작업 배정 — MRTA ↔ 22. 시뮬레이션·예측용 디지털 트윈: Merschformann 외(2019)의 시뮬레이션 조건에서는 피킹 주문 배정 규칙이 단위 처리량을 크게 바꾸었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-398"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "RMFS 결정 규칙 시뮬레이션 연구에서 피킹 주문 배정 규칙이 단위 처리량에 큰 영향(모델·시뮬레이션 조건의 저자 보고) (재인용: 2026-09-25-56)",
+        "as_of": "2019",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f3",
+        "claim": "연계 대상: 22. 시뮬레이션·예측용 디지털 트윈의 성수기 시나리오 입력(주문·물동량 전망)은 A. 업무·공급망 설계의 1. 주문·업무 시스템 연계를 거쳐 상위 업무 시스템의 수요예측에서 받는 것으로 보이며, 수요예측 자체는 분류 원문 9장의 상위 업무 시스템 경계에 속한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-521"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Le·Fan(2024)은 물류·공급망 디지털 트윈 개념 틀을 제안하고 실데이터 검증 논문이 소수라고 보고 (재인용: 2026-09-25-56)",
+        "as_of": "2024",
+        "flow_step": "피킹",
+        "flow_item": "시작 조건",
+        "source_unopened": true
+      },
+      {
+        "id": "f4",
+        "claim": "A. 업무·공급망 설계의 3. 처리능력·거점·설비 계획 ↔ 21. 온보딩·설정·현장 시운전: 다중 AGV 도입이 정밀 지도 작성·좌표 지정·수작업 경로망 설계로 오래 걸린다는 연구와 설치 기간을 6개월에서 2개월로 줄일 수 있다는 과제 측 보고가 있어, 온보딩 기간이 증차한 로봇이 처리능력으로 바뀌는 시점을 좌우하는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-217",
+          "ref-265"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Beinschob 외(2017) 도입 지연 원인 / PAN-Robots 설치 기간 6→2개월은 과제 측 보고값, 비교 조건 미확인 (재인용: 2026-09-25-52)",
+        "as_of": "2017",
+        "flow_step": "적치",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "A. 업무·공급망 설계의 2. 공정·워크플로 모델링 ↔ 23. 시험·형식 검증·벤치마크: 워크플로 넷의 건전성(soundness) 판정 복잡도를 다룬 연구(2022)가 있어 공정 모델의 형식적 점검이 형식 검증과 이어질 것으로 보이나, 물류 로봇 공정 적용 사례는 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-121"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Blondin 외, The complexity of soundness in workflow nets (LICS 2022) (재인용: 2026-09-25-29, A 대분류 페이지)",
+        "as_of": "2022",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f6",
+        "claim": "B. 공통 정보·환경 모델의 5. 로봇 능력·작업 온톨로지 ↔ 21. 온보딩·설정·현장 시운전: IDTA 02020 능력 기술(Capability Description) 서브모델은 공정이 요구하는 능력과 자원이 제공하는 능력을 비교하게 하고, 능력을 속성·제약(전제조건·순서)·스킬로 구조화해 자원의 매칭과 시운전을 돕는다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-229"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: capability 는 'implementation-independent specification of a function in industrial production'; 요구·제공 능력 비교, properties·constraints·skills 구조",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "Vieira da Silva 외(2024-06)는 자연어 능력 설명에서 대규모 언어 모델(LLM)을 이용해 능력 온톨로지를 생성하는 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-465"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions (arXiv 2406.07962) (재인용: 2026-09-25-52)",
+        "as_of": "2024-06",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f8",
+        "claim": "G. 안전·보안·지능·거버넌스의 27. AI·학습·적응과 모델 운영 ↔ 21. 온보딩·설정·현장 시운전: 분류 원문 8장 교차 규칙이 매뉴얼 해석을 5. 로봇 능력·작업 온톨로지와 21. 온보딩·설정·현장 시운전에 적용되는 AI 연구 방법으로 두므로, LLM 기반 능력 온톨로지 생성은 새 로봇 등록 작업을 줄이는 방법으로 두 대분류를 잇는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-465",
+          "ref-229"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "교차 규칙(분류 원문 8장)과 f6·f7 의 결합에 따른 이 위키의 추론. 온보딩 현장 적용 사례는 미확인",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 21. 온보딩·설정·현장 시운전: Open-RMF 플릿 어댑터 튜토리얼은 로봇 좌표계와 RMF 좌표계 사이 변환을 위한 기준 좌표(대응 경유점)를 설정에 두고, 대응 경유점을 최소 4개 둘 것을 권한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-153"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"A minimum of 4 matching waypoints is recommended.\"",
+        "as_of": "2026-09-25",
+        "flow_step": "적치",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f10",
+        "claim": "21. 온보딩·설정·현장 시운전 ↔ B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델, C. 연결·실행 기반의 10. 설비·건물 시스템 연동, D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF: Open-RMF traffic-editor 는 차선·경유점·충전소·주차 지점·문·승강기·층과 기준점(fiducial)을 이용한 층간 정렬을 주석하게 하고, 주석한 그래프는 building_map_generator 로 주행 그래프로 내보내져 플릿 어댑터의 경로 계획에 쓰인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-079"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문: annotated Graphs are exported as navigation graphs using the building_map_generator, used by rmf_fleet_adapters for path planning",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 3.0.0 은 지도 내려받기·활성화·삭제 즉시 동작(downloadMap·enableMap·deleteMap)을 두고 같은 mapId 에서는 한 번에 한 버전만 활성화하게 하며, 상태 스키마는 로봇이 mapId·mapVersion·mapStatus(ENABLED·DISABLED)를 보고하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031",
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"There shall only be one version of maps with the same mapId enabled at a time\" / state.schema maps: mapId, mapVersion, mapStatus(ENABLED, DISABLED)",
+        "as_of": "2026-09-25",
+        "flow_step": "적치",
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f12",
+        "claim": "분류 원문이 6. 지도·공간·위치 모델에 '지도 버전 관리'를, 24. 자산·소프트웨어 수명주기 관리의 정의에 '지도 버전'을 함께 넣고 VDA 5050 이 지도 배포·활성화를 관제의 지시로 두므로, 지도 버전의 내용 정의는 B. 공통 정보·환경 모델 쪽, 배포·활성화 시점 조율과 이력 관리는 F. 도입·검증·유지관리 쪽이 맡는 분담이 될 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "분류 원문 6번 주석·24번 한 줄 정의와 VDA 5050 지도 배포 즉시 동작에서 끌어낸 이 위키의 추론",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "Kritzinger 외(2018)는 제조 분야 문헌을 검토해 물리 객체와 디지털 객체 사이 데이터 흐름의 자동화 정도에 따라 디지털 모델·디지털 섀도·디지털 트윈을 구분했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-291"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Digital Twin in manufacturing: A categorical literature review and classification (IFAC 2018) — 제조 대상 분류 (재인용: 2026-09-25-32)",
+        "as_of": "2018",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f14",
+        "claim": "B. 공통 정보·환경 모델의 8. 실시간 세계 상태·데이터 일관성 ↔ 22. 시뮬레이션·예측용 디지털 트윈: 8번은 현재 상태를 표현하고 22번은 그 모델을 이용해 가정한 미래를 실험한다는 분류 원문 구분에 따라, 22번은 8번의 현재 상태(로봇·설비·배터리 상태)를 시나리오 초기값으로 받는 쪽이 될 것으로 보이며, 근거 분류 자료가 물류가 아닌 제조 대상이라는 한계가 있다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-291",
+          "ref-406"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "분류 원문 7장 구분 + 제조 대상 디지털 섀도·트윈 구분 + Open-RMF 시뮬레이션 문서에서 끌어낸 추론",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f15",
+        "claim": "B. 공통 정보·환경 모델의 8. 실시간 세계 상태·데이터 일관성 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 상태 스키마는 충전 상태(stateOfCharge), 배터리 건강 상태(batteryHealth, 0~100%), 현재 충전량으로 추정한 도달 거리(range), 충전 여부(charging)를 로봇이 보고하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "state.schema batteryState: stateOfCharge, batteryHealth, range('Estimated reach with current State of Charge in meter'), charging",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f16",
+        "claim": "B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 및 C. 연결·실행 기반의 10. 설비·건물 시스템 연동 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Open-RMF 시뮬레이션 문서에 따르면 building_map_generator 는 traffic-editor 로 주석한 건물 지도에서 Gazebo 시뮬레이션 세계와 주행 그래프를 만들고, 문·승강기 플러그인, 워크셀을 흉내 내는 TeleportDispenser·TeleportIngestor, 여러 플릿 어댑터의 승강기 요청을 조율하는 lift_supervisor 를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "simulation.md: building_map_generator 가 .building.yaml 에서 월드·주행 그래프 생성; door·lift 플러그인, TeleportDispenser/TeleportIngestor, lift supervisor",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f17",
+        "claim": "B. 공통 정보·환경 모델의 6. 지도·공간·위치 모델 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Sommer 외(2023)는 건물 환경 스캔과 객체 검출을 입력으로 생산 계획용 디지털 트윈을 자동 생성하는 방법을 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-241"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Automated generation of digital twin for a built environment using scan and object detection as input for production planning (2023) — 생산 계획 대상 (재인용: 2026-09-25-56)",
+        "as_of": "2023",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 21. 온보딩·설정·현장 시운전: VDA 5050 3.0.0 은 팩트시트를 관제에서 이동로봇 설정을 돕는 매개변수·제조사 정보로 두고, 초기 설정과 관제–이동로봇 능력 사이의 지속적인 호환성 평가에 쓰도록 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Factsheet shall be used to support initial configuration and ongoing compatibility assessment between fleet control and mobile robot capabilities.\"",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "VDA 5050 팩트시트 스키마는 적재 명세(loadSpecification.loadSets), 로봇 구성의 버전 목록(mobileRobotConfiguration.versions, 예: softwareVersion), 충전 설정(batteryCharging: criticalLowChargingLevel·minimumDesiredChargingLevel·maximumDesiredChargingLevel·minimumChargingTime)을 담아, 한 등록 정보가 21. 온보딩·설정·현장 시운전, 24. 자산·소프트웨어 수명주기 관리, D. 계획·최적화의 16. 공용 자원·충전·에너지 최적화에 함께 쓰인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "factsheet.schema: loadSpecification.loadSets, mobileRobotConfiguration.versions(softwareVersion 등), mobileRobotConfiguration.batteryCharging.criticalLowChargingLevel 외",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 21. 온보딩·설정·현장 시운전: Open-RMF 플릿 어댑터 설정은 최대 선·각속도와 가속도, 수행 가능한 작업 유형(loop·delivery·clean), 로봇 외곽 반경, 배터리·재충전 임계값, 제조사 관제 API 연결 정보(주소·계정)를 요구한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-153"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "integration_fleets_adapter_tutorial.md: speed limits, task capabilities, robot profiles, battery params, recharge thresholds, fleet manager prefix/username/password",
+        "as_of": "2026-09-25",
+        "flow_step": "적치",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "22. 시뮬레이션·예측용 디지털 트윈·23. 시험·형식 검증·벤치마크 ↔ C. 연결·실행 기반의 10. 설비·건물 시스템 연동: Open-RMF 시뮬레이션 문서는 시뮬레이션 속 로봇이 배터리 소모나 충돌 비용 없이 장시간·가속 조건으로 드문 예외 상황을 시험할 수 있고, 장시간 시뮬레이션이 배치 전 시설 소유자의 확신을 높인다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Long running simulations can instill confidence in facility owners prior to deployment.\"",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 22. 시뮬레이션·예측용 디지털 트윈: Open-RMF 시뮬레이션의 slotcar 플러그인은 경로·모드 요청을 받아 레일식으로 움직이고 센서 기반 주행 스택 없이 로봇 상태를 발행하는 전체 제어(full control) 로봇 모델이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-406"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "simulation.md: slotcar 는 rail-like navigation 으로 full control 로봇을 모사, 센서 기반 주행 스택 불필요",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "slotcar 같은 단순화 모델은 제조사 관제·로봇 고유 거동을 재현하지 않으므로, 9. 로봇·제조사 관제 연동 방식(전체 제어·신호등·읽기 전용)과 제조사별 거동 차이가 22. 시뮬레이션·예측용 디지털 트윈의 처리량 예측 오차 원인이 될 것으로 보인다(oq-086).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-406"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f22 의 단순화 모델 설명에서 끌어낸 추론. 오차 크기 자료 미확인",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동 ↔ 24. 자산·소프트웨어 수명주기 관리: VDA 5050 3.0.0 은 로봇이 사용할 수 없는 선택 필드가 담긴 주문을 받으면 UNSUPPORTED_PARAMETER 오류를 CRITICAL 수준과 오류 필드 참조로 보고하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"The mobile robot shall report an error of type 'UNSUPPORTED_PARAMETER' with level 'CRITICAL'\"",
+        "as_of": "2026-09-25",
+        "flow_step": "적치",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f25",
+        "claim": "C. 연결·실행 기반의 12. 명령·작업 실행의 신뢰성 ↔ 24. 자산·소프트웨어 수명주기 관리: ROS 2 관리형 노드는 Unconfigured·Inactive·Active·Finalized 상태와 configure·activate 같은 전이를 두어, 감독 도구가 구성요소 준비를 확인한 뒤 실행을 허용하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-364"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ROS 2 Design node_lifecycle: managed node 상태 기계 (재인용: 2026-09-25-38, C 대분류 페이지)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f26",
+        "claim": "C. 연결·실행 기반의 9. 로봇·제조사 관제 연동·12. 명령·작업 실행의 신뢰성 ↔ 23. 시험·형식 검증·벤치마크: 공개 개인 프로젝트 vda5050-sim 은 VDA 5050 3.0.0 주문 수명주기·동작·교통 제어 의미를 명세와 대조하는 적합성 시험 묶음과 고장 주입을, vda5050-lab 은 MQTT 기록에서 반복 주문 id·재연결·취소 불일치를 진단한다고 README 에 적으며, 둘 다 VDA·VDMA 공식 적합성 시험이 아니다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-407",
+          "ref-408"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "두 README 의 자기 기술 (재인용: 2026-09-25-38, C 대분류 페이지)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f27",
+        "claim": "OTTO by Rockwell Automation 은 자사 AMR 이 여러 관제 업체와 VDA 5050 인증을 마쳤다고 2026-04 발표했으나, 인증의 시험 항목은 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-608"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: Idealworks·NAiSE·SYNAOS 와 VDA 5050 인증 완료 발표 (재인용: 2026-09-25-59)",
+        "as_of": "2026-04",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true,
+        "vendor_claim": true
+      },
+      {
+        "id": "f28",
+        "claim": "연계 대상: ros2_fault_injection 은 오도메트리·레이저 스캔·IMU·점군 같은 센서 신호와 속도 명령을 조작하는 로봇 수준 장애 주입 도구이며, 23. 시험·형식 검증·벤치마크에서 ROP 쪽 장애 주입은 같은 프록시 방식을 C. 연결·실행 기반의 관제 명령·상태 메시지와 설비 응답 수준에 적용하는 형태가 될 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-601"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "README 기준 센서 신호 장애 주입과 Twist 명령 조작 (재인용: 2026-09-25-59). ROP 적용은 추론",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f29",
+        "claim": "D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF ↔ 22. 시뮬레이션·예측용 디지털 트윈: 다중 AGV 시스템의 경로망(roadmap)을 시뮬레이션 기반으로 자동 설계하는 연구(IEEE T-ASE 2024)가 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-267"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (재인용: 2026-09-25-56)",
+        "as_of": "2024",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f30",
+        "claim": "D. 계획·최적화의 15. 다중 로봇 경로·교통 관리 — MAPF ↔ 23. 시험·형식 검증·벤치마크: Stern 외(2019)는 MAPF 의 가정·목적함수를 공통 용어로 정리하고 격자 기반 벤치마크를 소개했으나, 그 성과가 실제 물류센터 처리량으로 얼마나 이어지는지는 확인되지 않았다(oq-058).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-186"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks (2019) (재인용: 2026-09-25-59)",
+        "as_of": "2019-06",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f31",
+        "claim": "Yan 외(2026-02)는 기존 MAPF 연구가 단순한 운동 모델과 완전한 실행·통신을 가정한다고 지적하고, 플릿 관리 시스템 안에서 계획 시점·방법·복구 설계 선택을 비교하는 시험대(LSMART)를 제안해 D. 계획·최적화의 경로 알고리즘과 23. 시험·형식 검증·벤치마크를 잇는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-604"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "LSMART 와 지속형 AGV 플릿 관리 설계 선택 연구(arXiv 2602.15721, 프리프린트) (재인용: 2026-09-25-59)",
+        "as_of": "2026-02-17",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f32",
+        "claim": "von Berg 외(2026-05)는 창고 물류 AGV 의 교착 회피를 전이 시스템 인코딩과 BDD 로 분석한 사례 연구를 발표해, 15. 다중 로봇 경로·교통 관리 — MAPF 의 교착 문제가 23. 시험·형식 검증·벤치마크의 형식 검증 대상이 됨을 보인다(계산 규모 한계는 oq-088).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-609"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "BDD-Based Deadlock Avoidance for AGVs in Warehouse Logistics (FM 2026 사례 연구) (재인용: 2026-09-25-59)",
+        "as_of": "2026-05",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f33",
+        "claim": "D. 계획·최적화의 13. 작업 배정 — MRTA ↔ 23. 시험·형식 검증·벤치마크: Lott·Honary(2026-09 프리프린트)는 분산 작업 배정기 6종을 패킷 손실·페이딩 같은 통신 저하 조건에서 이동 거리·안정성·계산 부담으로 비교하는 벤치마크를 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-493"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark (재인용: 2026-09-25-55, D 대분류 페이지)",
+        "as_of": "2026-09",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f34",
+        "claim": "D. 계획·최적화의 16. 공용 자원·충전·에너지 최적화 ↔ 24. 자산·소프트웨어 수명주기 관리: 플릿 수준에서 배터리 건강(열화)을 고려해 자율이동로봇의 작업 배정·충전 일정을 정하는 연구(2026-03, 프리프린트)가 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-403"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots (arXiv 2603.22731) (재인용: 2026-09-25-61)",
+        "as_of": "2026-03",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f35",
+        "claim": "로봇이 보고하는 batteryHealth 가 낮아지면 같은 충전 상태에서도 도달 거리(range)가 짧아질 수 있어, 24. 자산·소프트웨어 수명주기 관리의 배터리 열화 정보가 D. 계획·최적화의 13. 작업 배정 — MRTA·16. 공용 자원·충전·에너지 최적화의 제약 입력이 되는 것으로 보인다(물류센터 실측 자료 미확인).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-051",
+          "ref-403"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f15 의 상태 필드와 f34 의 연구에서 끌어낸 추론 (재인용: 2026-09-25-61 출하 시나리오)",
+        "as_of": "2026-09-25",
+        "flow_step": "출하",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f36",
+        "claim": "E. 협업·현장 운영의 20. 예외 복구·재계획·업무 연속성 ↔ 23. 시험·형식 검증·벤치마크: NIST ARIAC 2025 문서는 컨베이어 고장, 전압 시험기 고장, 진공 그리퍼 파지 실패, 긴급(고우선) 주문을 과제로 두어 설비·로봇 장애와 긴급 주문 대응을 평가한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-528"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"A specified vacuum gripper will fail during grasp attempts.\" (challenges.rst, ARIAC 2025 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f37",
+        "claim": "ARIAC 같은 장애 과제 정의와 장애 주입 도구를 결합하면, 20. 예외 복구·재계획·업무 연속성의 재배정·수동 전환·제한 운영 동작을 업데이트마다 다시 돌리는 회귀 시험 시나리오로 만들 수 있을 것으로 보이나, 물류 오케스트레이션에 적용해 공개한 사례는 확인되지 않았다(oq-087).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-528",
+          "ref-601"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f36·f28 에서 끌어낸 추론 (재인용: 2026-09-25-59 피킹 회귀 시험 시나리오)",
+        "as_of": "2026-09-25",
+        "flow_step": "피킹",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f38",
+        "claim": "E. 협업·현장 운영의 17. 로봇 간 협업·물리적 인계 ↔ 23. 시험·형식 검증·벤치마크: ASTM F3499-21 은 자율 무인 지상 차량(A-UGV)의 도킹 성능을 확인하는 시험 방법이며, 그 결과를 로봇팔 파지 허용 오차와 잇는 기준은 확인되지 않았다(oq-063).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-204"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Standard Test Method for Confirming the Docking Performance of A-UGVs (2021) (재인용: 2026-09-25-60, E 대분류 페이지)",
+        "as_of": "2021",
+        "flow_step": null,
+        "flow_item": "완료·인계",
+        "source_unopened": true
+      },
+      {
+        "id": "f39",
+        "claim": "E. 협업·현장 운영의 19. 모니터링·이상 탐지·원인 분석 ↔ 24. 자산·소프트웨어 수명주기 관리: Lei 외(2025)는 산업용 로봇의 고장 모드·데이터 수집·모델 기반과 데이터 기반 진단을 상태 기반 정비 관점에서 정리한 검토를 발표했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-553"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Condition monitoring and fault diagnosis of industrial robots: A review (Sci China Tech Sci 68, 2025) (재인용: 2026-09-25-61)",
+        "as_of": "2025",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f40",
+        "claim": "E. 협업·현장 운영의 19. 모니터링·이상 탐지·원인 분석 ↔ 23. 시험·형식 검증·벤치마크: ROSMonitoring 은 ROS 시스템의 런타임 검증 프레임워크로, 운영 중 감시가 사전 시험을 보완하는 연결 지점이 된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-602"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ROSMonitoring: a Runtime Verification Framework for ROS — README (재인용: 2026-09-25-59)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f41",
+        "claim": "G. 안전·보안·지능·거버넌스의 25. 안전·위험 관리 ↔ 21. 온보딩·설정·현장 시운전·23. 시험·형식 검증·벤치마크: ISO 3691-4:2023 은 AGV·AMR 을 포함한 무인 산업 차량과 그 시스템의 안전 요구와 검증 수단을 정하며, 운용 구역 준비를 부속서 A 에 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-470"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ISO 3691-4:2023 소개 (재인용: 2026-09-25-52·59·63). 세부 시험 항목 미확인",
+        "as_of": "2023-06",
+        "flow_step": "적치",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f42",
+        "claim": "연계 대상: 국내에는 바퀴형 서비스 로봇의 이동 성능 시험방법 KS B ISO 18646-1 과 한국로봇산업진흥원의 시험평가 서비스가 있어, 로봇 자체 성능 시험은 시험기관 쪽이고 23. 시험·형식 검증·벤치마크의 ROP 몫은 그 결과를 등록·배정 조건으로 받는 쪽으로 보인다(oq-089).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-606",
+          "ref-607"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "KSSN 표준 정보와 KIRIA 시험평가 페이지 (재인용: 2026-09-25-59). 오케스트레이션 수준 시험 포함 여부 미확인",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f43",
+        "claim": "한국산업기술시험원(KTL)과 통합물류협회가 물류로봇 시험인증 협력을 강화하기로 했다고 2026-07 보도되어, 국내 물류로봇 시험·인증 체계가 23. 시험·형식 검증·벤치마크와 28. 표준·상호운용성·다사업자 거버넌스를 잇는 후보가 될 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-466"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "부산일보 2026-07-24 기사(1차 출처 미확인) (재인용: 2026-09-25-52)",
+        "as_of": "2026-07-24",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f44",
+        "claim": "G. 안전·보안·지능·거버넌스의 26. 사이버보안·접근권한·개인정보 ↔ 24. 자산·소프트웨어 수명주기 관리: IEC TR 62443-2-3:2015 는 산업 자동화·제어 시스템(IACS) 환경의 패치 관리를 다루는 기술 보고서다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-554"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IEC TR 62443-2-3:2015 Patch management in the IACS environment (재인용: 2026-09-25-61)",
+        "as_of": "2015-06",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f45",
+        "claim": "G. 안전·보안·지능·거버넌스의 25. 안전·위험 관리 ↔ 24. 자산·소프트웨어 수명주기 관리: 로봇 시스템 위험성평가 가이드는 설비·작업 변경 시 위험성평가를 다시 하도록 권하므로, 펌웨어·안전 파라미터·오케스트레이션 정책 변경이 재평가 촉발 조건이 될 수 있어 보이나, 국내 공식 규정은 미확인이다(oq-092, oq-093).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-559"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "세이프틱스 위험성평가 가이드(업체 자료, 발행일 미확인) (재인용: 2026-09-25-61) (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f46",
+        "claim": "G. 안전·보안·지능·거버넌스의 27. AI·학습·적응과 모델 운영 ↔ 23. 시험·형식 검증·벤치마크: ALFRED 와 LoTa-Bench 는 자연어 지시를 행동 계획으로 바꾸는 체화 에이전트를 시뮬레이터 결과(목표 조건·성공률)로 자동 평가하는 공개 벤치마크다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-539",
+          "ref-541"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ALFRED(AI2-THOR 가정 작업), LoTa-Bench(ICLR 2024, 성공률 비교) (재인용: 2026-09-25-62). 물류 지시 데이터셋은 아님",
+        "as_of": "2024-02",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f47",
+        "claim": "G. 안전·보안·지능·거버넌스의 28. 표준·상호운용성·다사업자 거버넌스 ↔ 22. 시뮬레이션·예측용 디지털 트윈: 제조용 디지털 트윈 프레임워크 ISO 23247 은 국내에 KS X ISO 23247-1 로 등재되어 있고, 2026 년 디지털 트윈 결합을 다루는 Part 6 이 발행되었으나 물류센터 적용 여부는 미확인이다(oq-085).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-516",
+          "ref-518"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KSSN KS X ISO 23247-1, ISO 23247-6:2026 Digital twin composition (재인용: 2026-09-25-56)",
+        "as_of": "2026",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f48",
+        "claim": "이번에 확인한 VDA 5050 적합성 시험 근거가 제3자 오픈소스 도구와 벤더 발표뿐이라, 어느 시험 결과를 새 로봇 연동 승인 기준으로 쓰고 판 차이(2.x·3.0.0)로 생기는 UNSUPPORTED_PARAMETER 같은 미지원 오류를 누가 판정·수정할지가 23. 시험·형식 검증·벤치마크·24. 자산·소프트웨어 수명주기 관리에서 28. 표준·상호운용성·다사업자 거버넌스로 넘어가는 과제가 될 것으로 보인다(oq-055, oq-091).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-407",
+          "ref-408",
+          "ref-608",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f24·f26·f27 에서 끌어낸 추론. VDA 공식 인증 절차 부재는 확정 사실 아님",
+        "as_of": "2026-09-25",
+        "flow_step": null,
+        "flow_item": null,
+        "source_unopened": true
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 3.0.0 명세 원문. 팩트시트 용도, 지도 배포 즉시 동작, UNSUPPORTED_PARAMETER, 범위 제외(안전·교통 전략·외부 IT 인터페이스)를 확인.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-051",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/state.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/state.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "상태 메시지 JSON 스키마. maps(mapId·mapVersion·mapStatus), batteryState(stateOfCharge·batteryHealth·range·charging), 오류 수준, 운용 모드 확인.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/state.schema"
+      },
+      {
+        "id": "ref-079",
+        "org": "Open Robotics",
+        "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "traffic-editor 로 차선·경유점·충전소·주차·문·승강기·층 정렬을 주석하고 주행 그래프로 내보내는 흐름.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md"
+      },
+      {
+        "id": "ref-101",
+        "org": "Merschformann, M. (RAWSim-O GitHub)",
+        "title": "RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)",
+        "published": null,
+        "url": "https://github.com/merschformann/RAWSim-O",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. RMFS 결정 문제 효과를 연구하는 이산 사건 시뮬레이션 프레임워크.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-121",
+        "org": "Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022)",
+        "title": "The complexity of soundness in workflow nets",
+        "published": "2022",
+        "url": "https://arxiv.org/abs/2201.05588",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 워크플로 넷 건전성 판정의 계산 복잡도 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-153",
+        "org": "Open Robotics",
+        "title": "Fleet Adapter Tutorial - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "플릿 어댑터 설정 항목(속도 한계·작업 유형·기준 좌표·관제 연결·배터리)과 대응 경유점 4개 이상 권장.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_adapter_tutorial.md"
+      },
+      {
+        "id": "ref-186",
+        "org": "Stern, R., Sturtevant, N. R., Felner, A., Koenig, S. 외",
+        "title": "Multi-Agent Pathfinding: Definitions, Variants, and Benchmarks",
+        "published": "2019-06",
+        "url": "https://arxiv.org/abs/1906.08291",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MAPF 정의·변형·격자 벤치마크 정리.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-204",
+        "org": "ASTM International",
+        "title": "Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)",
+        "published": "2021",
+        "url": "https://www.astm.org/f3499-21.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. A-UGV 도킹 성능 확인 시험 방법.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-217",
+        "org": "Beinschob, P., Meyer, M., Reinke, C., Digani, V., Secchi, C., & Sabattini, L.",
+        "title": "Semi-automated map creation for fast deployment of AGV fleets in modern logistics",
+        "published": "2017",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0921889015302724",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. AGV 플릿 신속 배치를 위한 반자동 지도 작성과 도입 지연 원인.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050 — json_schemas/factsheet.schema",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "팩트시트 JSON 스키마. loadSets, mobileRobotConfiguration.versions, batteryCharging 필드 확인.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/factsheet.schema"
+      },
+      {
+        "id": "ref-229",
+        "org": "IDTA(Industrial Digital Twin Association)",
+        "title": "IDTA 02020 Capability Description 1.0 — README (admin-shell-io/submodel-templates)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "능력 기술 서브모델 README. 요구·제공 능력 비교와 속성·제약·스킬 구조.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md"
+      },
+      {
+        "id": "ref-241",
+        "org": "Sommer, M., Stjepandić, J., Stobrawa, S., & von Soden, M.",
+        "title": "Automated generation of digital twin for a built environment using scan and object detection as input for production planning",
+        "published": "2023",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2452414X23000353",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 스캔·객체 검출로 건물 환경 디지털 트윈 자동 생성.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-265",
+        "org": "European Commission (CORDIS)",
+        "title": "PAN-ROBOTS: Automating logistics for the factory of the future",
+        "published": null,
+        "url": "https://cordis.europa.eu/article/id/160857-panrobots-automating-logistics-for-the-factory-of-the-future",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. EU 과제 소개, 설치 기간 단축 보고(과제 측).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-267",
+        "org": "IEEE 게재 논문 저자(미확인)",
+        "title": "Simulation-Based Approach for Automatic Roadmap Design in Multi-AGV Systems (IEEE Transactions on Automation Science and Engineering 21(4), 2024 (2023 온라인 공개))",
+        "published": "2024",
+        "url": "https://ieeexplore.ieee.org/document/10287275/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 시뮬레이션 기반 다중 AGV 경로망 자동 설계.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-291",
+        "org": "Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W.",
+        "title": "Digital Twin in manufacturing: A categorical literature review and classification",
+        "published": "2018",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2405896318316021",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제조 분야 디지털 모델·섀도·트윈 구분.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-364",
+        "org": "ROS 2 Design",
+        "title": "Managed nodes (ROS 2 Design: node_lifecycle)",
+        "published": null,
+        "url": "https://design.ros2.org/articles/node_lifecycle.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ROS 2 관리형 노드 상태 기계.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-398",
+        "org": "Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.",
+        "title": "Decision rules for robotic mobile fulfillment systems",
+        "published": "2019",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2214716019300946",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. RMFS 결정 규칙의 시뮬레이션 비교.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-403",
+        "org": "Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin)",
+        "title": "Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.22731",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 플릿 배터리 열화를 고려한 AMR 스케줄링(프리프린트).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-406",
+        "org": "Open Robotics",
+        "title": "Simulation - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "Open-RMF 시뮬레이션: 배치 전 시험 이점, 월드 생성, 문·승강기·워크셀 플러그인, lift_supervisor, slotcar 모델.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/simulation.md"
+      },
+      {
+        "id": "ref-407",
+        "org": "gpue (GitHub)",
+        "title": "vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) robot fleet simulator — MQTT or NATS)",
+        "published": null,
+        "url": "https://github.com/gpue/vda5050-sim",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. VDA 5050 3.0.0 플릿 시뮬레이터, 적합성 시험 묶음·고장 주입(개인 프로젝트).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-408",
+        "org": "ekusiadadus (GitHub)",
+        "title": "vda5050-lab — README (Diagnose VDA 5050 order, reconnect, and cancel failures from MQTT traces)",
+        "published": null,
+        "url": "https://github.com/ekusiadadus/vda5050-lab",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. MQTT 기록 기반 VDA 5050 주문·재연결·취소 진단 도구(개인 프로젝트).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-465",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+        "published": "2024-06",
+        "url": "https://arxiv.org/abs/2406.07962",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자연어 설명에서 LLM 으로 능력 온톨로지 생성.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-466",
+        "org": "부산일보",
+        "title": "KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’",
+        "published": "2026-07-24",
+        "url": "https://www.busan.com/view/busan/view.php?code=2026072420194685883",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 국내 물류로봇 시험인증 협력 보도.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-470",
+        "org": "ISO",
+        "title": "ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+        "published": "2023-06",
+        "url": "https://www.iso.org/standard/83545.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 무인 산업 차량과 시스템의 안전 요구·검증.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-493",
+        "org": "Lott, J., & Honary, V.(University of San Diego)",
+        "title": "Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark of Performance, Reliability, and Computation",
+        "published": "2026-09",
+        "url": "https://arxiv.org/abs/2609.13711",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 통신 저하 조건의 분산 배정기 벤치마크(프리프린트).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-516",
+        "org": "한국표준협회 KSSN(국가표준인증종합정보센터)",
+        "title": "KS X ISO 23247-1 자동화 시스템 및 통합 — 제조를 위한 디지털 트윈 프레임워크 — 제1부: 개요 및 일반 원리",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010140724",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 제조 디지털 트윈 프레임워크 국내 부합 표준.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-518",
+        "org": "ISO",
+        "title": "ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition",
+        "published": "2026",
+        "url": "https://www.iso.org/standard/87426.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 디지털 트윈 결합을 다루는 ISO 23247 Part 6.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-521",
+        "org": "Le, T. V., & Fan, R.",
+        "title": "Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges",
+        "published": "2024",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360835223007921",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 물류·공급망 디지털 트윈 검토와 개념 틀.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-528",
+        "org": "NIST (usnistgov/ARIAC_docs)",
+        "title": "ARIAC 2025 Documentation — Challenges",
+        "published": null,
+        "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "ARIAC 2025 과제: 컨베이어·전압 시험기·진공 그리퍼 고장, 긴급 주문.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/challenges.rst"
+      },
+      {
+        "id": "ref-539",
+        "org": "askforalfred (ALFRED 공식 저장소)",
+        "title": "ALFRED — A Benchmark for Interpreting Grounded Instructions for Everyday Tasks (GitHub README)",
+        "published": null,
+        "url": "https://github.com/askforalfred/alfred",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자연어 지시를 가정 작업 행동 순서로 대응시키는 벤치마크.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-541",
+        "org": "lbaa2022 (LoTa-Bench 공식 저장소)",
+        "title": "LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents (ICLR 2024) (GitHub README)",
+        "published": null,
+        "url": "https://github.com/lbaa2022/LLMTaskPlanning",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 언어 기반 작업 계획기의 자동 정량 평가 벤치마크.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-553",
+        "org": "Lei, Y., Liu, H., Li, N. 외",
+        "title": "Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301)",
+        "published": "2025",
+        "url": "https://link.springer.com/article/10.1007/s11431-024-2810-2",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 로봇 상태 감시·고장 진단 검토.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-554",
+        "org": "IEC",
+        "title": "IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment",
+        "published": "2015-06",
+        "url": "https://webstore.iec.ch/en/publication/22811",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. IACS 환경 패치 관리 기술 보고서.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-559",
+        "org": "세이프틱스(Safetics)",
+        "title": "로봇 시스템 위험성평가 가이드",
+        "published": null,
+        "url": "https://doc.safetics.io/insight-risk-assessment/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇 시스템 위험성평가 절차 안내(업체 자료).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-601",
+        "org": "reeceholland (ros2_fault_injection GitHub)",
+        "title": "ros2_fault_injection — README",
+        "published": null,
+        "url": "https://github.com/reeceholland/ros2_fault_injection",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ROS 2 센서 신호·속도 명령 장애 주입 도구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-602",
+        "org": "University of Liverpool Autonomy and Verification (ROSMonitoring GitHub)",
+        "title": "ROSMonitoring: a Runtime Verification Framework for ROS — README",
+        "published": null,
+        "url": "https://github.com/autonomy-and-verification-uol/ROSMonitoring",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ROS 런타임 검증 프레임워크.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-604",
+        "org": "Yan, J., Zhang, Y., Liu, Z., Zhang, H., Jiang, H., Chen, J., Smith, S. F., & Li, J.",
+        "title": "Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems",
+        "published": "2026-02-17",
+        "url": "https://arxiv.org/abs/2602.15721",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. FMS 안의 지속형 MAPF 시험대와 설계 선택 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-606",
+        "org": "한국표준협회 KSSN(국가표준인증종합정보센터)",
+        "title": "KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇의 이동능력",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010113281",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 바퀴형 서비스 로봇 이동 성능 시험방법 KS.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-607",
+        "org": "한국로봇산업진흥원(KIRIA)",
+        "title": "시험평가 | KIRIA 첨단로봇 실증지원 디지털 플랫폼",
+        "published": null,
+        "url": "https://kiria.org/rp/kiria/tva/inr/page.dn",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 한국로봇산업진흥원 로봇 시험평가 안내.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-608",
+        "org": "OTTO by Rockwell Automation",
+        "title": "OTTO Adds VDA 5050 Certifications to Support Mixed-Fleet Deployments",
+        "published": "2026-04",
+        "url": "https://ottomotors.com/company/newsroom/press-releases/otto-adds-vda-5050-certifications-to-support-mixed-fleet-deployments/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. OTTO AMR 의 VDA 5050 인증 발표(벤더 보도자료).",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-609",
+        "org": "von Berg, B., Aichernig, B. K., & Wedenik, F.",
+        "title": "BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper)",
+        "published": "2026-05",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-26204-2_16",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 창고 AGV 교착 회피의 BDD 기반 사례 연구.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/f-deployment-verification-and-maintenance/index.md",
+        "sections": [
+          "5. 다른 대분류와의 연결"
+        ],
+        "rationale": "'다른 대분류와의 연결' 절만 patches 로 채운다. A. 업무·공급망 설계: f1·f2(22↔3·4), f3(22↔1, 연계 대상), f4(21↔3), f5(23↔2) / B. 공통 정보·환경 모델: f6·f7(21↔5), f9·f10(21↔6), f11·f12(24↔6 지도 버전), f13·f14(22↔8, 8·22 구분 유지), f15(24↔8), f16·f17(22↔6) / C. 연결·실행 기반: f18·f19·f20(21↔9), f10(21↔10), f16·f21(22·23↔10), f22·f23(22↔9, oq-086), f24(24↔9), f25(24↔12), f26·f27(23↔9·12, f27 벤더 주장 병기), f28(23↔12, 연계 대상) / D. 계획·최적화: f2(22↔13), f29(22↔15), f10(21↔15), f30·f31·f32(23↔15), f33(23↔13), f19·f34·f35(24↔13·16) / E. 협업·현장 운영: f36·f37(23↔20), f38(23↔17), f39(24↔19), f40(23↔19) / G. 안전·보안·지능·거버넌스: f41(21·23↔25), f42·f43(23↔28, 연계 대상), f44(24↔26), f45(24↔25), f8·f46(21·23↔27, 교차 규칙), f47(22↔28), f48(23·24↔28) / '아직 다루지 않은 연결': 20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈(oq-081), 21. 온보딩·설정·현장 시운전 ↔ E. 협업·현장 운영, 22 ↔ 26. 사이버보안·접근권한·개인정보, 11. 분산 시스템·통신·컴퓨팅 구조, 7. 화물·재고·자산 식별과 추적과의 연결은 근거 미확보. 다음 실행 후보: B. 공통 정보·환경 모델 페이지의 '아직 다루지 않은 연결'(23·24)을 f11·f15 로 보강."
+      }
+    ],
+    "glossary_candidates": [],
+    "open_questions_new": [
+      "Open-RMF 시뮬레이션의 lift_supervisor 처럼 여러 플릿의 승강기·문 요청 조율을 시뮬레이션에서 검증한 결과를 실제 설비 연동 시운전의 합격 기준으로 쓸 수 있는가, 쓴다면 시뮬레이션과 현장의 차이를 어떻게 확인하는가? | 관련 영역: 22. 시뮬레이션·예측용 디지털 트윈, 23. 시험·형식 검증·벤치마크, 10. 설비·건물 시스템 연동, 21. 온보딩·설정·현장 시운전 | 근거: f16 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 38,
+      "cross_checked_count": 0,
+      "unverified": [
+        "모든 finding 교차 확인 없음(단일 출처이거나 같은 기관 출처 쌍: f11 은 VDA 명세와 VDA 스키마로 독립 출처 아님)",
+        "f27 OTTO VDA 5050 인증의 시험 항목 미확인(벤더 주장)",
+        "f43 KTL·통합물류협회 협력 내용은 기사 기준, 1차 출처 미확인",
+        "f45 국내 변경 후 재평가 공식 규정 미확인(oq-092)",
+        "20. 예외 복구·재계획·업무 연속성 ↔ 22. 시뮬레이션·예측용 디지털 트윈 연결 근거 미확보(oq-081)",
+        "ref-407·ref-408·ref-121·ref-204·ref-539·ref-541 은 이번 입력의 참고문헌 요약 목록에 없어 게시 페이지 각주·이전 브리프 값을 옮겼고, 유형·신뢰도는 이번 실행의 판단"
+      ],
+      "scope_violations": [
+        "f3: 수요예측은 분류 원문 9장 상위 업무 시스템 경계라 '연계 대상:' 표시",
+        "f28: 센서 신호 장애 주입은 로봇 자체 인식·주행 견고성 시험이라 '연계 대상:' 표시",
+        "f42: 로봇 자체 성능 시험은 시험기관·제조사 쪽이라 '연계 대상:' 표시",
+        "f13·f17·f47: 제조 대상 자료라 물류 적용은 미확인으로 명시"
+      ],
+      "budget_used": {
+        "queries": 1,
+        "sources": 0
+      },
+      "limits": "web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 원문을 연 출처: ref-031(VDA5050_EN.md), ref-051(state.schema), ref-228(factsheet.schema), ref-079(traffic-editor.md), ref-153(fleet adapter tutorial), ref-406(simulation.md), ref-229(IDTA 02020 README), ref-528(ARIAC challenges.rst). 나머지 30건은 게시 페이지 각주·이전 브리프 재사용이며 원문 미열람(신뢰도 상한 medium). 대분류 연결 실행 규칙(R-3)에 따라 근거를 게시된 21~24 세부영역 페이지와 A·B·C·D·E 대분류 페이지 각주에서 먼저 찾았고 신규 출처는 0건이다. 한국어 검색 1회(물류센터 AMR 가상 시운전 디지털 트윈)는 기사·업체 블로그뿐이라 쓰지 않았다. 한국 자료: KS B ISO 18646-1(ref-606), KIRIA 시험평가(ref-607), KTL 협력 보도(ref-466), KS X ISO 23247-1(ref-516). 교차 규칙: 매뉴얼 해석 AI 는 f8 로 21. 온보딩·설정·현장 시운전·5. 로봇 능력·작업 온톨로지·27. AI·학습·적응과 모델 운영에 함께 연결했다. 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈은 f14 에서 원문 구분대로 나눴다. 페이지 절 번호는 대분류 페이지 절 순서(핵심 질문·개요·세부 연구영역·핵심 포인트·다른 대분류와의 연결)로 5를 붙였다 [가정]. 정정 요청 없음. 해결된 열린 질문 없음."
+    }
+  },
+  "ttft_ms": 24236,
+  "type": "result",
+  "duration_ms": 328419,
+  "uuid": "dbad3df9-4faa-4f04-9a17-8c5e45f21ee7",
+  "ttft_stream_ms": 2916,
+  "time_to_request_ms": 92,
+  "first_content_frame_ms": 2917,
+  "time_to_request_from_spawn_ms": 6723207,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790319819017.7065,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 330.6
+}

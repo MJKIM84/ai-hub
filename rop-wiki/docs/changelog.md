@@ -28,6 +28,8 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
+| 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05. 2차 수정: 4절 결론 데이터셋 항목에 ref-540·ref-544 각주와 원문 미열람 표기, 6절 첫 행 검증 판정 '충족 · 미승인' |
 | 2026-09-25-62 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가 |
 | 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록 |
