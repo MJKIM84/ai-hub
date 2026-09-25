@@ -28,6 +28,10 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/verifier.md | 내용 검증 에이전트 1.4 → 1.5: fetched 확인, 정정 요청 거절, 2차 검증 범위 조정 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
+| 2026-09-25-73 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
+| 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
+| 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |
+| 2026-09-25-73 | 생성 | [docs/references/ref-712.md](references/ref-712.md) | 참고문헌 ref-712 등록: ros-mcp-server — Connect AI models like Claude & GPT with ro… |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 q3-04 소절 신설), 2절 질문 목록 갱신과 q3-11 추가, 4·5·7절 추가, 6절 시뮬레이션 초기값 행 충족·전환 미승인, 8절 출처 추가, 9절 이력 행 추가 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.8 → v0.9: 층 '높이 기준'에 층 고도 값 후보 병기, 문 '여닫는 방식' 값 후보(Open-RMF 문 유형)와 '동작 범위' 속성 추가, 엘리베이터 '칸 치수' 속성 추가, 6절 질문 3건 추가, H1 버전 표기(v0.7) 오류를 v0.9로 수정 |
 | 2026-09-25-70 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 '핵심 구성 요소'에 '시뮬레이션 초기값' 소절 신설(설계·도입 검토용과 운영 중 예측용 초기화 구분), '아직 조사되지 않은 구성 요소'에서 q3-04 제거, 새 각주 3건 |

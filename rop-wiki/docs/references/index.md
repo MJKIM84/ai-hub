@@ -671,4 +671,6 @@ version: 1
 | [ref-708](ref-708.md) | ISO/IEC | ISO/IEC 20000-1:2018 - Information technology — Service management — Part 1: Service management system requirements | 2018 | 표준 | medium | 2026-09-25 | <https://www.iso.org/standard/70636.html> |
 | [ref-709](ref-709.md) | 대한민국 정책브리핑(산업통상자원부 국가기술표준원) | 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 | 2021-11-11 | 정부·연구기관 | medium | 2026-09-25 | <https://korea.kr/news/pressReleaseView.do?newsId=156480155> |
 | [ref-710](ref-710.md) | 한국지능형로봇표준포럼(KOROS) | KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차 | 2025-06-04 | 표준 | medium | 2026-09-25 | <http://www.koros.or.kr/bbs/board.php?bo_table=notice27&wr_id=223> |
+| [ref-711](ref-711.md) | Tang, G. 외(arXiv 2606.31339) | Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems | 2026-06 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2606.31339> |
+| [ref-712](ref-712.md) | robotmcp (ROS-MCP-Server 공식 저장소) | ros-mcp-server — Connect AI models like Claude & GPT with robots using MCP and ROS (GitHub README) | 미확인 | 오픈소스 문서 | medium | 2026-09-25 | <https://github.com/robotmcp/ros-mcp-server> |
 <!-- auto:references-index:end -->
