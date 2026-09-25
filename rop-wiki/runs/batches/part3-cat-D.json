@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-cat-D",
   "date": "2026-09-25",
-  "updated": "2026-09-25 05:46:33",
+  "updated": "2026-09-25 05:53:25",
   "concurrency": 1,
   "items": [
     {
@@ -12,18 +12,29 @@
         "category": "D",
         "label": "대분류 D 연결"
       },
-      "status": "퍼블리셔 진행",
+      "status": "에이전트 단계 진행",
       "attempts": [
         {
           "run_id": "2026-09-25-49",
           "started": "2026-09-25 05:25:15",
           "agents_exit": 0,
-          "publish_exit": null,
+          "publish_exit": 4,
           "continued": false,
-          "agents_done": "2026-09-25 05:46:33"
+          "agents_done": "2026-09-25 05:46:33",
+          "published_at": "2026-09-25 05:53:24",
+          "cost_usd": 9.5457,
+          "duration_sec": 1328.4,
+          "end_state": "중단(퍼블리셔: 4단계 내부 링크·각주 검사 실패: [check_links] 오류 1건 (파일 771개 검사))"
+        },
+        {
+          "run_id": "2026-09-25-55",
+          "started": "2026-09-25 05:53:25",
+          "agents_exit": null,
+          "publish_exit": null,
+          "continued": false
         }
       ],
-      "run_id": "2026-09-25-49"
+      "run_id": "2026-09-25-55"
     }
   ]
 }

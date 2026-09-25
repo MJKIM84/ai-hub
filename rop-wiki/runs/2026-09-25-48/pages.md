@@ -4,11 +4,11 @@
 
 | 동작 | 경로 | 상태 | 변경 요약 |
 |---|---|---|---|
-| update | docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md | draft | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 17건 정의(1차 조건부 승인 수정 14건 반영) |
+| update | docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md | draft | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영) |
 | create | docs/topics/2026/2026-09-25-area19-s4.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "4. 핵심 개념과 용어" 절(1,482자)을 옮겼다 |
 | create | docs/topics/2026/2026-09-25-area19-s7.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,413자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area19-s8.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "8. 대표 연구와 자료" 절(1,396자)을 옮겼다 |
-| create | docs/topics/2026/2026-09-25-area19-s6.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "6. 대표 접근법과 기술" 절(861자)을 옮겼다 |
+| create | docs/topics/2026/2026-09-25-area19-s8.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "8. 대표 연구와 자료" 절(1,396자)을 옮겼다. 형식 재작성: 8. 실시간 세계 상태·데이터 일관성 링크를 주제 페이지 기준 경로로 고침 |
+| create | docs/topics/2026/2026-09-25-area19-s6.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "6. 대표 접근법과 기술" 절(861자)을 옮겼다. 형식 재작성: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침 |
 | create | docs/topics/2026/2026-09-25-area19-s11.md | draft | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "11. 열린 질문" 절(767자)을 옮겼다 |
 
 ## 변경 이력·색인
@@ -37,11 +37,11 @@
 | ref-501 | ROS 2 (ros2/ros2_tracing GitHub) | ros2_tracing — README | 오픈소스 문서 | high | https://github.com/ros2/ros2_tracing |
 | ref-502 | OpenTelemetry (CNCF) | OpenTelemetry Specification — Overview | 오픈소스 문서 | high | https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md |
 | ref-503 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_task_msgs/msg/Alert.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg |
-| ref-504 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_door_msgs/msg/DoorMode.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg |
-| ref-505 | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs/schemas/task_state.json | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
+| ref-313 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_door_msgs/msg/DoorMode.msg | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg |
+| ref-111 | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs/schemas/task_state.json | 오픈소스 문서 | high | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
 | ref-506 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/connection.schema | 표준 | high | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema |
-| ref-507 | MassRobotics (MassRobotics-AMR/AMR_Interop_Standard) | AMR_Interop_Standard.json | 표준 | high | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json |
-| ref-508 | Open Robotics (osrf/ros2multirobotbook) | Programming Multiple Robots with ROS 2 — Doors | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
+| ref-230 | MassRobotics (MassRobotics-AMR/AMR_Interop_Standard) | AMR_Interop_Standard.json | 표준 | high | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json |
+| ref-283 | Open Robotics (osrf/ros2multirobotbook) | Programming Multiple Robots with ROS 2 — Doors | 오픈소스 문서 | high | https://osrf.github.io/ros2multirobotbook/integration_doors.html |
 | ref-509 | Khalastchi, E., & Kalech, M. | Fault Detection and Diagnosis in Multi-Robot Systems: A Survey | 논문 | medium | https://doi.org/10.3390/s19184019 |
 | ref-510 | Roser, C., Nakano, M., & Tanaka, M. | Comparison of bottleneck detection methods for AGV systems | 논문 | medium | https://keio.elsevierpure.com/en/publications/comparison-of-bottleneck-detection-methods-for-agv-systems/ |
 | ref-511 | Soldani, J., & Brogi, A. | Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey | 논문 | medium | https://dl.acm.org/doi/full/10.1145/3501297 |
@@ -75,7 +75,7 @@
 | ROS 2 diagnostics | 오픈소스 | ROS (ros/diagnostics GitHub) | 19 | ref-500 | https://github.com/ros/diagnostics/blob/ros2/README.md |
 | ros2_tracing | 오픈소스 | ROS 2 (ros2/ros2_tracing GitHub) | 19, 11 | ref-501 | https://github.com/ros2/ros2_tracing |
 | OpenTelemetry Specification | 오픈소스 | OpenTelemetry (CNCF) | 19, 11 | ref-502 | https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md |
-| Open-RMF 작업 상태 스키마(rmf_api_msgs task_state) | 오픈소스 | Open Robotics (open-rmf) | 19, 12, 20 | ref-505 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
+| Open-RMF 작업 상태 스키마(rmf_api_msgs task_state) | 오픈소스 | Open Robotics (open-rmf) | 19, 12, 20 | ref-111 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json |
 | Open-RMF 경보 메시지(rmf_task_msgs Alert) | 오픈소스 | Open Robotics (open-rmf) | 19, 18, 20 | ref-503 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg |
 
 ## 추가 조사 요청
@@ -97,9 +97,9 @@
 - f1·f2·f4 — 4절과 7절 서두에 기준을 'VDA 5050 3.0.0 판(GitHub main 브랜치, 접근일 2026-09-25)'으로 명시하고 main 브랜치는 판이 바뀔 수 있다고 적었다.
 - f7 — 5절 수행 자원 칸과 7절 Open-RMF 문 행, 9절 표에서 문 개폐 제어 자체를 연계 대상(시설·설비 제어)으로 표시하고 ROP 는 문 상태(DoorMode) 확인과 요청만 다룬다고 썼다.
 - f11·f12 — 7절 ROS 2 diagnostics·ros2_tracing 행을 로봇 내부 진단·계측 도구로서 연계 대상으로 짧게 다루고 9절 f21 경계와 같은 표현(센서·모터·드라이버 수준의 로봇 내부 진단)을 썼다.
-- f18 — 6절과 10절에 27. AI·학습·적응과 모델 운영을 번호와 이름으로 연결하고, 27번 페이지에서 오는 연결은 additional_research_requests 에 다음 실행 제안으로 남겼다.
+- f18 — 6절과 10절에 27. AI·학습·적응과 모델 운영을 번호와 이름으로 연결하고, 27. AI·학습·적응과 모델 운영 페이지에서 오는 연결은 additional_research_requests 에 다음 실행 제안으로 남겼다.
 - ref-513 — 13절 각주와 reference_updates 의 기관 표기를 'International Journal of Production Research(Taylor & Francis), 저자 미확인'으로 바꾸고 'Leopold, H. 외'를 쓰지 않았다(8절 본문도 저자명 없이 기재).
-- 원문 미열람 표시 — ref-509~ref-514 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 여섯 항목에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-500~ref-508 에는 붙이지 않았다.
+- 원문 미열람 표시 — ref-509~ref-514 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 여섯 항목에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-500~ref-283 에는 붙이지 않았다.
 - 열린 질문 신규 1번 — 질문 문장을 'VDA 5050 3.0.0 판의 네 단계 오류 수준과 이전 판(2.x)의 오류 수준이 다를 때'로 고쳐 2.x 두 단계를 사실 전제로 두지 않았다(11절과 open_question_updates 모두).
 - 5절 시나리오 — 첫 문장에 가상 시나리오임을 밝히고 수치를 쓰지 않았으며, 필드·값은 f5·f6·f8·f9(와 문 어댑터 역할 f7)가 확인한 것만 쓰고 원인 판정 절차는 [추정]으로 두었다.
 - oq-018·oq-033 — 11절에 열림 상태로 두고 해결로 바꾸지 않았으며, f16·f19 는 oq-018 의 부분 자료로만 8절·11절에 연결했다(open_question_updates 에 상태 변경 없음).

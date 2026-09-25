@@ -38,12 +38,12 @@
 | f2 | [사실] | VDA 5050 최신판 상태 스키마는 오류와 관련된 nodeId·edgeId·orderId·actionId 등을 가리키는 errorReferences, 사람이 읽는 설명(errorDescription)과 조치 힌트(errorHint)를 둘 수 있게 하고, 오류와 별도로 INFO·DEBUG 수준의 information 배열을 둔다. | ref-051 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f3 | [사실] | VDA 5050 3.0.0 명세는 실패한 동작(actionStatus FAILED)이 해당하는 오류 보고와 대응하도록 설명하며, 예로 집기·내려놓기 실패를 든다. | ref-031 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f4 | [사실] | VDA 5050 connection 토픽은 로봇의 마지막 유언(last will) 메시지로, 정상 종료(OFFLINE)와 예기치 않은 연결 끊김(CONNECTION_BROKEN)을 구분해 관제에 알린다. | ref-506 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
-| f5 | [사실] | MassRobotics AMR 상호운용 표준의 상태 보고는 운용 상태(operationalState)에 navigating·idle·disabled·offline·charging 외에 waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 를 두어 대기 원인을 사람·외부·내부 사건으로 나누고, 정상 운용 때는 생략하는 errorCodes 배열을 둔다. | ref-507 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
-| f6 | [사실] | Open-RMF 에서 문 노드는 문 상태(DoorState)를 /door_states 토픽으로 발행하고, 문 모드(DoorMode)는 closed·moving·open·offline·unknown 다섯 값이다. | ref-504, ref-508 | 아니오 | medium | 2026-09-25 | 보충 / 제약 | — |
-| f7 | [사실] | Open-RMF 문 어댑터는 플릿 어댑터의 문 요청을 받아 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다. | ref-508 | 아니오 | medium | 2026-09-25 | 보충 / 제약 | — |
-| f8 | [사실] | Open-RMF 작업 상태(task_state) 스키마는 작업·단계·이벤트 상태 토큰으로 blocked·delayed·error·failed·underway·completed 등을 두고, 완료 예상 시간(estimate_millis), 중단 기록(interruptions), 배정 상태(failed_to_assign 등)를 함께 기록한다. | ref-505 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
+| f5 | [사실] | MassRobotics AMR 상호운용 표준의 상태 보고는 운용 상태(operationalState)에 navigating·idle·disabled·offline·charging 외에 waitingHumanEvent·waitingExternalEvent·waitingInternalEvent·manualOverride 를 두어 대기 원인을 사람·외부·내부 사건으로 나누고, 정상 운용 때는 생략하는 errorCodes 배열을 둔다. | ref-230 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
+| f6 | [사실] | Open-RMF 에서 문 노드는 문 상태(DoorState)를 /door_states 토픽으로 발행하고, 문 모드(DoorMode)는 closed·moving·open·offline·unknown 다섯 값이다. | ref-313, ref-283 | 아니오 | medium | 2026-09-25 | 보충 / 제약 | — |
+| f7 | [사실] | Open-RMF 문 어댑터는 플릿 어댑터의 문 요청을 받아 진행 중인 로봇 작업을 방해하지 않을 때만 문을 움직이게 하는 상태 감독자 역할을 한다. | ref-283 | 아니오 | medium | 2026-09-25 | 보충 / 제약 | — |
+| f8 | [사실] | Open-RMF 작업 상태(task_state) 스키마는 작업·단계·이벤트 상태 토큰으로 blocked·delayed·error·failed·underway·completed 등을 두고, 완료 예상 시간(estimate_millis), 중단 기록(interruptions), 배정 상태(failed_to_assign 등)를 함께 기록한다. | ref-111 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
 | f9 | [사실] | Open-RMF 경보 메시지(rmf_task_msgs Alert)는 심각도 등급(INFO·WARNING·ERROR), 운영자가 고를 수 있는 응답 목록, 관련 작업 id 를 담는다. | ref-503 | 아니오 | medium | 2026-09-25 | 예외·성과 | — |
-| f10 | [추정] | f1~f9 에 따르면 분류 원문의 질문(지연 원인이 로봇·문·앞 공정 중 무엇인가)은 작업 상태의 지연·차단(Open-RMF), 로봇 오류 수준과 연결 끊김(VDA 5050), 외부 사건 대기(MassRobotics), 문 모드(Open-RMF)를 같은 시간축에 맞춰 보는 방식으로 접근할 수 있어 보이나, 세 어휘가 서로 달라 ROP 가 자체 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. | ref-051, ref-506, ref-507, ref-504, ref-505 | 아니오 | low | 2026-09-25 | 보충 / 예외·성과 | — |
+| f10 | [추정] | f1~f9 에 따르면 분류 원문의 질문(지연 원인이 로봇·문·앞 공정 중 무엇인가)은 작업 상태의 지연·차단(Open-RMF), 로봇 오류 수준과 연결 끊김(VDA 5050), 외부 사건 대기(MassRobotics), 문 모드(Open-RMF)를 같은 시간축에 맞춰 보는 방식으로 접근할 수 있어 보이나, 세 어휘가 서로 달라 ROP 가 자체 원인 범주로 옮기는 매핑이 필요할 것으로 보인다. | ref-051, ref-506, ref-230, ref-313, ref-111 | 아니오 | low | 2026-09-25 | 보충 / 예외·성과 | — |
 | f11 | [사실] | ROS 2 diagnostics 는 하드웨어 드라이버가 /diagnostics 토픽에 DiagnosticArray 로 진단 정보를 발행하게 하고, diagnostic_updater(발행 도우미), diagnostic_aggregator(플러그인 규칙으로 집계), diagnostic_remote_logging(InfluxDB 등 원격 전송) 등의 패키지를 제공한다. | ref-500 | 아니오 | medium | 2026-09-25 | — | — |
 | f12 | [사실] | ros2_tracing 은 LTTng 기반으로 ROS 2 핵심 패키지에 추적 지점(tracepoint)을 넣고 실행 시 추적을 설정하는 도구를 제공하는 저오버헤드 추적 프레임워크이다. | ref-501 | 아니오 | medium | 2026-09-25 | — | — |
 | f13 | [사실] | OpenTelemetry 명세는 추적(traces)·지표(metrics)·로그(logs)·배기지(baggage) 신호를 정의하고, 추적을 부모–자식 관계의 스팬(span)으로 이루어진 방향 비순환 그래프로 보며, TraceId·SpanId 로 신호를 서로 연결한다. | ref-502 | 아니오 | medium | 2026-09-25 | — | — |
@@ -54,7 +54,7 @@
 | f18 | [사실] | REFLECT(Liu 외, CoRL 2023)는 영상·소리·로봇 상태 같은 다중 감각 관측을 계층적 경험 요약으로 바꾼 뒤 LLM 에 실패 원인 설명과 수정 계획을 묻는 방법으로, 실행 실패와 계획 실패를 모두 다룬다. | ref-512 | 아니오 | medium | 2023 | 예외·성과 | 원문 미열람 |
 | f19 | [사실] | 공급망 관리(SCM)에서 프로세스 마이닝의 현황·활용 사례·연구 전망을 정리한 리뷰 논문이 International Journal of Production Research(2024)에 게재되었다. | ref-513 | 아니오 | medium | 2024 | — | 원문 미열람 |
 | f20 | [사실] | 국내 연구(DBpia, 2026-07)는 다중 AMR 운영용 웹 기반 사용자 중심 관제 인터페이스를 가상 테스트베드에서 피험자 10명으로 예비 평가해, 대조군 대비 이상 대응 시간이 39.6% 단축되었다고 보고한다. | ref-514 | 아니오 | low | 2026-07 | 예외·성과 | 원문 미열람 |
-| f21 | [추정] | 연계 대상: 센서·모터·드라이버 수준의 진단(ROS 2 diagnostics 같은 로봇 내부 진단)과 개별 부품 고장 진단은 로봇 제조사 영역이며, 이종 로봇을 연결하는 ROP 는 표준 인터페이스가 보고하는 오류 수준·연결 상태·설비 상태·작업 상태를 모아 원인 범주(로봇·설비·통신·공정)로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. | ref-500, ref-051, ref-506, ref-505 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
+| f21 | [추정] | 연계 대상: 센서·모터·드라이버 수준의 진단(ROS 2 diagnostics 같은 로봇 내부 진단)과 개별 부품 고장 진단은 로봇 제조사 영역이며, 이종 로봇을 연결하는 ROP 는 표준 인터페이스가 보고하는 오류 수준·연결 상태·설비 상태·작업 상태를 모아 원인 범주(로봇·설비·통신·공정)로 구분하고 업무 영향과 연결하는 부분을 맡는 경계가 될 것으로 보인다. | ref-500, ref-051, ref-506, ref-111 | 아니오 | low | 2026-09-25 | 예외·성과 | — |
 
 ### 근거 발췌
 
@@ -90,11 +90,11 @@
 | ref-501 | ROS 2 (ros2/ros2_tracing GitHub) | ros2_tracing — README | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/ros2/ros2_tracing | 아니오 |
 | ref-502 | OpenTelemetry (CNCF) | OpenTelemetry Specification — Overview | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md | 아니오 |
 | ref-503 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_task_msgs/msg/Alert.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_task_msgs/msg/Alert.msg | 아니오 |
-| ref-504 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_door_msgs/msg/DoorMode.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg | 아니오 |
-| ref-505 | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs/schemas/task_state.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json | 아니오 |
+| ref-313 | Open Robotics (open-rmf/rmf_internal_msgs) | rmf_door_msgs/msg/DoorMode.msg | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_door_msgs/msg/DoorMode.msg | 아니오 |
+| ref-111 | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs/schemas/task_state.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json | 아니오 |
 | ref-506 | VDA / VDMA (VDA5050 GitHub) | VDA5050/VDA5050 — json_schemas/connection.schema | 미확인 | 표준 | high | 2026-09-25 | https://github.com/VDA5050/VDA5050/blob/main/json_schemas/connection.schema | 아니오 |
-| ref-507 | MassRobotics (MassRobotics-AMR/AMR_Interop_Standard) | AMR_Interop_Standard.json | 미확인 | 표준 | high | 2026-09-25 | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json | 아니오 |
-| ref-508 | Open Robotics (osrf/ros2multirobotbook) | Programming Multiple Robots with ROS 2 — Doors | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_doors.html | 아니오 |
+| ref-230 | MassRobotics (MassRobotics-AMR/AMR_Interop_Standard) | AMR_Interop_Standard.json | 미확인 | 표준 | high | 2026-09-25 | https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json | 아니오 |
+| ref-283 | Open Robotics (osrf/ros2multirobotbook) | Programming Multiple Robots with ROS 2 — Doors | 미확인 | 오픈소스 문서 | high | 2026-09-25 | https://osrf.github.io/ros2multirobotbook/integration_doors.html | 아니오 |
 | ref-509 | Khalastchi, E., & Kalech, M. | Fault Detection and Diagnosis in Multi-Robot Systems: A Survey | 2019 | 논문 | medium | 2026-09-25 | https://doi.org/10.3390/s19184019 | 예 |
 | ref-510 | Roser, C., Nakano, M., & Tanaka, M. | Comparison of bottleneck detection methods for AGV systems | 2003 | 논문 | medium | 2026-09-25 | https://keio.elsevierpure.com/en/publications/comparison-of-bottleneck-detection-methods-for-agv-systems/ | 예 |
 | ref-511 | Soldani, J., & Brogi, A. | Anomaly Detection and Failure Root Cause Analysis in (Micro) Service-Based Cloud Applications: A Survey | 2022 | 논문 | medium | 2026-09-25 | https://dl.acm.org/doi/full/10.1145/3501297 | 예 |
@@ -110,11 +110,11 @@
 - **ref-501**: LTTng 기반 ROS 2 추적 계측과 설정 도구 설명, 관련 논문(IEEE RA-L 2022) 인용.
 - **ref-502**: 추적·지표·로그·배기지 신호와 스팬·추적 정의, 문맥 전파(TraceId·SpanId) 설명.
 - **ref-503**: Open-RMF 경보 메시지 정의(심각도 등급, 응답 목록, 관련 작업 id).
-- **ref-504**: Open-RMF 문 모드 값(closed, moving, open, offline, unknown) 정의.
-- **ref-505**: Open-RMF 작업 상태 JSON 스키마. 상태 토큰(blocked, delayed 등), 예상 시간, 중단, 배정 상태.
+- **ref-313**: Open-RMF 문 모드 값(closed, moving, open, offline, unknown) 정의.
+- **ref-111**: Open-RMF 작업 상태 JSON 스키마. 상태 토큰(blocked, delayed 등), 예상 시간, 중단, 배정 상태.
 - **ref-506**: VDA 5050 connection 토픽(last will) 스키마. 연결 상태 네 값 정의.
-- **ref-507**: MassRobotics AMR 상호운용 표준 JSON 스키마. 운용 상태 열거값, errorCodes, 배터리·위치 필드.
-- **ref-508**: Open-RMF 문 연동: 문 노드의 상태 발행과 문 어댑터의 감독 역할.
+- **ref-230**: MassRobotics AMR 상호운용 표준 JSON 스키마. 운용 상태 열거값, errorCodes, 배터리·위치 필드.
+- **ref-283**: Open-RMF 문 연동: 문 노드의 상태 발행과 문 어댑터의 감독 역할.
 - **ref-509**: 원문 미열람. Sensors 19(18):4019. 다중 로봇 시스템의 고장 탐지·진단 과제와 접근을 정리한 설문.
 - **ref-510**: 원문 미열람. Winter Simulation Conference 2003. AGV 시스템에서 가동률·대기 시간·이동 병목 탐지 방법 비교.
 - **ref-511**: 원문 미열람. ACM Computing Surveys 55(3). 다중 서비스 응용의 이상 탐지·근본 원인 분석 기법 설문.
@@ -165,4 +165,4 @@
     - f21: 센서·모터·드라이버 진단은 분류 원문 9장 로봇 자체 지능·제어 연계 영역이므로 연계 대상으로 표시
     - f7: 문 제어 자체는 시설·설비 제어 연계 영역이며 ROP 는 문 상태 확인·요청만 다룬다는 구분 필요
     - f20: 논문의 디지털 트윈은 실시간 상태 표시(8. 실시간 세계 상태·데이터 일관성)이며 22. 시뮬레이션·예측용 디지털 트윈과 섞지 않도록 주의
-- 한계: web_fetch_available: false, fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-031·ref-051, 신규 ref-500~ref-508. 신규 ref-509~ref-514 는 원문 미열람(신뢰도 상한 medium). 검색 25회/30, 신규 출처 15건/15(상한 도달로 Spatial Process Mining arXiv 2506.06081, inorbit-ai ros_amr_interop README 는 출처로 넣지 않음, 다음 실행 후보). 참고문헌 목록이 요약본(대상 페이지 인용 0건)으로만 와서 VDA 5050 connection.schema·MassRobotics JSON·Open-RMF 문 연동 장 등이 기존 id 로 이미 있는지 확인하지 못함 — 같은 URL 이면 퍼블리셔 병합 필요. 한국어 검색 3회에서 국내 물류센터 로봇 장애 원인 분석·프로세스 마이닝 사례는 찾지 못했고 국내 자료는 f20 1건. 벤더 가동률 사례 글(oxmaint 등)은 방법이 공개되지 않아 넣지 않음. 27. AI·학습·적응과 모델 운영 관련 f18 은 27번 페이지와 양쪽 연결 제안. 정정 요청 없음.
+- 한계: web_fetch_available: false, fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-031·ref-051, 신규 ref-500~ref-283. 신규 ref-509~ref-514 는 원문 미열람(신뢰도 상한 medium). 검색 25회/30, 신규 출처 15건/15(상한 도달로 Spatial Process Mining arXiv 2506.06081, inorbit-ai ros_amr_interop README 는 출처로 넣지 않음, 다음 실행 후보). 참고문헌 목록이 요약본(대상 페이지 인용 0건)으로만 와서 VDA 5050 connection.schema·MassRobotics JSON·Open-RMF 문 연동 장 등이 기존 id 로 이미 있는지 확인하지 못함 — 같은 URL 이면 퍼블리셔 병합 필요. 한국어 검색 3회에서 국내 물류센터 로봇 장애 원인 분석·프로세스 마이닝 사례는 찾지 못했고 국내 자료는 f20 1건. 벤더 가동률 사례 글(oxmaint 등)은 방법이 공개되지 않아 넣지 않음. 27. AI·학습·적응과 모델 운영 관련 f18 은 27번 페이지와 양쪽 연결 제안. 정정 요청 없음.

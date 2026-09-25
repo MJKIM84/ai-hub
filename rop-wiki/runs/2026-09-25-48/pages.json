@@ -104,7 +104,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
       "budget_chars": 700,
-      "summary": "4·8·9·10·12·18·20·27번 영역과 이어지며, 27. AI·학습·적응과 모델 운영의 장애 분석 교차 규칙을 반영한다.",
+      "summary": "4. 성과·경제성·프로세스 개선, 8. 실시간 세계 상태·데이터 일관성, 9. 로봇·제조사 관제 연동, 10. 설비·건물 시스템 연동, 12. 명령·작업 실행의 신뢰성, 18. 사람–로봇 협업·운영 인터페이스, 20. 예외 복구·재계획·업무 연속성, 27. AI·학습·적응과 모델 운영과 이어진다.",
       "planned_findings": [
         "f1",
         "f3",
@@ -134,7 +134,7 @@
       "path": "docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md",
       "action": "update",
       "status": "draft",
-      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 17건 정의(1차 조건부 승인 수정 14건 반영)"
+      "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영)"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area19-s4.md",
@@ -152,13 +152,13 @@
       "path": "docs/topics/2026/2026-09-25-area19-s8.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 \"8. 대표 연구와 자료\" 절(1,396자)을 옮겼다"
+      "diff_summary": "자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 \"8. 대표 연구와 자료\" 절(1,396자)을 옮겼다. 형식 재작성: 8. 실시간 세계 상태·데이터 일관성 링크를 주제 페이지 기준 경로로 고침"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area19-s6.md",
       "action": "create",
       "status": "draft",
-      "diff_summary": "자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 \"6. 대표 접근법과 기술\" 절(861자)을 옮겼다"
+      "diff_summary": "자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 \"6. 대표 접근법과 기술\" 절(861자)을 옮겼다. 형식 재작성: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침"
     },
     {
       "path": "docs/topics/2026/2026-09-25-area19-s11.md",
@@ -637,7 +637,7 @@
     "f1·f2·f4 — 4절과 7절 서두에 기준을 'VDA 5050 3.0.0 판(GitHub main 브랜치, 접근일 2026-09-25)'으로 명시하고 main 브랜치는 판이 바뀔 수 있다고 적었다.",
     "f7 — 5절 수행 자원 칸과 7절 Open-RMF 문 행, 9절 표에서 문 개폐 제어 자체를 연계 대상(시설·설비 제어)으로 표시하고 ROP 는 문 상태(DoorMode) 확인과 요청만 다룬다고 썼다.",
     "f11·f12 — 7절 ROS 2 diagnostics·ros2_tracing 행을 로봇 내부 진단·계측 도구로서 연계 대상으로 짧게 다루고 9절 f21 경계와 같은 표현(센서·모터·드라이버 수준의 로봇 내부 진단)을 썼다.",
-    "f18 — 6절과 10절에 27. AI·학습·적응과 모델 운영을 번호와 이름으로 연결하고, 27번 페이지에서 오는 연결은 additional_research_requests 에 다음 실행 제안으로 남겼다.",
+    "f18 — 6절과 10절에 27. AI·학습·적응과 모델 운영을 번호와 이름으로 연결하고, 27. AI·학습·적응과 모델 운영 페이지에서 오는 연결은 additional_research_requests 에 다음 실행 제안으로 남겼다.",
     "ref-513 — 13절 각주와 reference_updates 의 기관 표기를 'International Journal of Production Research(Taylor & Francis), 저자 미확인'으로 바꾸고 'Leopold, H. 외'를 쓰지 않았다(8절 본문도 저자명 없이 기재).",
     "원문 미열람 표시 — ref-509~ref-514 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 여섯 항목에 source_unopened: true 를 넣었으며, ref-031·ref-051·ref-500~ref-283 에는 붙이지 않았다.",
     "열린 질문 신규 1번 — 질문 문장을 'VDA 5050 3.0.0 판의 네 단계 오류 수준과 이전 판(2.x)의 오류 수준이 다를 때'로 고쳐 2.x 두 단계를 사실 전제로 두지 않았다(11절과 open_question_updates 모두).",
