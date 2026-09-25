@@ -123,7 +123,13 @@ def area_body_chars(body: str) -> int:
 # --- 페이지 형식 검사 ------------------------------------------------------------------------
 
 def status_line_violations(body: str) -> list[str]:
-    """본문에 페이지 상태를 직접 쓴 줄(자동 영역 page-status 밖). 상태는 프런트매터 한 곳에만 둔다(1-4)."""
+    """본문에 페이지 상태를 직접 쓴 줄(자동 영역 page-status 밖). 상태는 프런트매터 한 곳에만 둔다(1-4).
+    check_frontmatter.py 와 같은 규칙을 쓰도록 lib.render.status_line_violations 에 맡긴다(없으면 아래 간이 규칙)."""
+    try:
+        from .render import status_line_violations as _render_rule
+        return _render_rule(body)
+    except ImportError:
+        pass
     outside = _PAGE_STATUS_REGION.sub("", _COMMENT.sub(lambda m: m.group(0) if "auto:page-status" in m.group(0) else "", body))
     outside = _strip_code(outside)
     return [m.group(0).strip() for m in _STATUS_LINE.finditer(outside)]

@@ -461,7 +461,7 @@ class Publisher:
         if self.track:
             tu = self.pages.get("track_updates") or {}
             new_version = str(tu.get("ontology_draft_version") or "")
-            od_rel = f"tracks/{self.track['slug']}/ontology-draft.md"
+            od_rel = paths.track_draft_rel(self.track['slug'], self.track_cfg)   # 트랙마다 자기 초안 문서(운영 전환 2부)
             cand = self.rd / "pages" / od_rel
             if not cand.is_file():
                 cand = paths.DOCS / od_rel
@@ -1134,7 +1134,7 @@ class Publisher:
         self._changelog_item("갱신", f"docs/tracks/{slug}/question-backlog.md", f"백로그 항목 {self.counts['backlog']}건 갱신")
 
         # (3) 온톨로지 버전: pages.json 의 ontology_draft_version 과 페이지 프런트매터 ontology_version 대조, 버전 이력 추가
-        od_rel = f"tracks/{slug}/ontology-draft.md"
+        od_rel = paths.track_draft_rel(slug, cfg)
         od_page = paths.DOCS / od_rel
         new_version = str(tu.get("ontology_draft_version", ""))
         page_version = None
@@ -1149,7 +1149,7 @@ class Publisher:
             m, _ = fm.read(old_od)
             old_version = str(m.get("ontology_version", ""))
         if new_version and old_version is not None and new_version != old_version:
-            vp = paths.DATA / "tracks" / slug / "ontology_versions.json"
+            vp = paths.track_draft_versions(slug, cfg)
             vdata = runs.read_json(vp, {"items": []}) or {"items": []}
             changes = _log_segment(tu.get("log_entry", ""), "온톨로지 변경") or f"v{old_version} → v{new_version}"
             vdata.setdefault("items", []).append({"version": new_version, "date": self.date, "changes": changes, "run_id": self.run_id})
