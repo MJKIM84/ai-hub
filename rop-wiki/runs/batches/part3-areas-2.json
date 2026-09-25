@@ -1,7 +1,7 @@
 {
   "batch_id": "part3-areas-2",
   "date": "2026-09-25",
-  "updated": "2026-09-25 03:26:50",
+  "updated": "2026-09-25 03:30:13",
   "concurrency": 3,
   "items": [
     {
@@ -208,13 +208,18 @@
         "area": 10,
         "label": "세부영역 10 영역 심화"
       },
-      "status": "에이전트 단계 진행",
+      "status": "게시",
       "attempts": [
         {
           "run_id": "2026-09-25-25",
           "started": "2026-09-25 02:54:59",
-          "agents_exit": null,
-          "publish_exit": null
+          "agents_exit": 0,
+          "publish_exit": 0,
+          "agents_done": "2026-09-25 03:28:47",
+          "published_at": "2026-09-25 03:30:11",
+          "cost_usd": 17.9961,
+          "duration_sec": 2073.9,
+          "end_state": "게시 완료"
         }
       ],
       "run_id": "2026-09-25-25"
@@ -289,9 +294,16 @@
         "area": 14,
         "label": "세부영역 14 영역 심화"
       },
-      "status": "대기",
-      "attempts": [],
-      "run_id": null
+      "status": "에이전트 단계 진행",
+      "attempts": [
+        {
+          "run_id": "2026-09-25-34",
+          "started": "2026-09-25 03:30:13",
+          "agents_exit": null,
+          "publish_exit": null
+        }
+      ],
+      "run_id": "2026-09-25-34"
     },
     {
       "index": 12,
