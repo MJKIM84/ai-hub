@@ -5,7 +5,8 @@
 
 지표(실행마다)
 - 원문 열람 출처: research.json sources 가운데 fetched true (개선 전 실행은 fetched 필드가 없고 source_unopened true → 0)
-- 교차 확인: verification.json(1차) claim_checks 가운데 cross_checked true
+- 교차 확인: verification.json(1차) claim_checks 가운데 cross_checked true(검증 에이전트가 서로 독립인 두 출처를 직접 확인한 것)
+- 다중 출처 finding: research.json findings 가운데 source_ids 가 2개 이상인 것(독립성은 따지지 않는다)
 - 퍼블리셔 실패: timings.json 의 '퍼블리셔' 단계 가운데 결과가 성공이 아닌 것
 - 재작성: 스토리텔러 호출 수 − 1 (2차 검증 수정 지시 재작성 + 형식 수정 재작성). 형식 수정만 따로 센다
 - 비용: usage.json total.cost_usd, 없으면 prompts/*.response.json 의 total_cost_usd 합(점검 호출 제외)
@@ -33,6 +34,7 @@ def run_metrics(rd: Path) -> dict:
     sources = research.get("sources") or []
     fetched = sum(1 for s in sources if s.get("fetched") is True)
     cross = sum(1 for c in (v1.get("claim_checks") or []) if c.get("cross_checked") is True)
+    multi = sum(1 for f in research.get("findings") or [] if len(set(f.get("source_ids") or [])) >= 2)
     steps = timings.get("steps") or []
     pub_fail = sum(1 for s in steps if str(s.get("step")) == "퍼블리셔" and not str(s.get("result", "")).startswith("성공"))
     prompts = sorted((rd / "prompts").glob("storyteller*.md")) if (rd / "prompts").is_dir() else []
@@ -52,7 +54,8 @@ def run_metrics(rd: Path) -> dict:
     return {
         "run_id": rid, "run_type": target.get("run_type"), "area_no": t.get("area_no"), "track": tr.get("slug"),
         "category": t.get("category_letter"), "published": bool(summ.get("published")), "parked": bool(summ.get("parked")),
-        "sources": len(sources), "fetched_sources": fetched, "cross_checked": cross, "claims": len(v1.get("claim_checks") or []),
+        "sources": len(sources), "fetched_sources": fetched, "cross_checked": cross, "multi_source_findings": multi,
+        "findings": len(research.get("findings") or []), "claims": len(v1.get("claim_checks") or []),
         "publisher_failures": pub_fail, "rewrites": max(story_calls - 1, 0), "format_fix_rewrites": format_fix,
         "cost_usd": round(cost, 4), "calls": calls, "duration_sec": summ.get("duration_sec"),
     }
@@ -65,6 +68,7 @@ def aggregate(rows: list[dict]) -> dict:
     return {"runs": len(rows), "published": sum(1 for r in rows if r["published"]),
             "fetched_sources_avg": avg("fetched_sources"), "fetched_sources_total": sum(r["fetched_sources"] for r in rows),
             "sources_avg": avg("sources"), "cross_checked_avg": avg("cross_checked"),
+            "multi_source_findings_avg": avg("multi_source_findings"), "findings_avg": avg("findings"),
             "cross_checked_total": sum(r["cross_checked"] for r in rows),
             "publisher_failures_total": sum(r["publisher_failures"] for r in rows), "publisher_failures_avg": avg("publisher_failures"),
             "rewrites_avg": avg("rewrites"), "rewrites_total": sum(r["rewrites"] for r in rows),
@@ -92,11 +96,12 @@ def main(argv=None) -> int:
     out = {"runs": rows, "aggregate": agg}
     if args.json:
         runs.write_json(args.json, out)
-    lines = ["| 실행 | 유형 | 대상 | 게시 | 출처 | 원문 열람 | 교차 확인 | 퍼블리셔 실패 | 재작성(형식) | 비용 $ | 분 |", "|---|---|---|---|---|---|---|---|---|---|---|"]
+    lines = ["| 실행 | 유형 | 대상 | 게시 | 출처 | 원문 열람 | 다중 출처 finding | 교차 확인(검증) | 퍼블리셔 실패 | 재작성(형식) | 비용 $ | 분 |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         tgt = r["track"] or (f"영역 {r['area_no']}" if r["area_no"] else (f"대분류 {r['category']}" if r["category"] else "-"))
         lines.append(f"| {r['run_id']} | {r['run_type']} | {tgt} | {'예' if r['published'] else ('보류' if r['parked'] else '아니오')} | "
-                     f"{r['sources']} | {r['fetched_sources']} | {r['cross_checked']} | {r['publisher_failures']} | "
+                     f"{r['sources']} | {r['fetched_sources']} | {r['multi_source_findings']}/{r['findings']} | {r['cross_checked']} | {r['publisher_failures']} | "
                      f"{r['rewrites']}({r['format_fix_rewrites']}) | {r['cost_usd']:.2f} | {round(float(r.get('duration_sec') or 0) / 60, 1)} |")
     lines.append("")
     lines.append("합계·평균: " + json.dumps(agg, ensure_ascii=False))
