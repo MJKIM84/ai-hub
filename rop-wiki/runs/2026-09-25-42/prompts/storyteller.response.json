@@ -1,0 +1,824 @@
+{
+  "duration_api_ms": 367552,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.424588,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 181742,
+    "cache_read_input_tokens": 63020,
+    "output_tokens": 47902,
+    "output_tokens_details": {
+      "thinking_tokens": 19761
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 181742,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 47902,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 181742,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 181742
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 47902,
+      "cacheReadInputTokens": 63020,
+      "cacheCreationInputTokens": 181742,
+      "webSearchRequests": 0,
+      "costUSD": 2.424588,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 19761,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-25-42\",\"outline\":[{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"3. 왜 중요한가\",\"budget_chars\":650,\"summary\":\"NIST 는 이종 로봇 워크셀의 협업 평가와 협업 통신 프로토콜을 과제로 둔다. [사실][^ref-007] VDA 5050 은 주변 설비 인터페이스를 범위에서 제외해 인계 확인이 비어 있다. [사실][^ref-031]\",\"planned_findings\":[\"f1\",\"f6\",\"f8\",\"f24\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"4. 핵심 개념과 용어\",\"budget_chars\":900,\"summary\":\"모바일 매니퓰레이터는 ANSI/A3 R15.08-2-2023 의 IMR 유형 C 로 다뤄진다. [사실][^ref-926] 스케줄 간 의존·협동 운반·협동 인지·CBV 업무 단계를 정리한다.\",\"planned_findings\":[\"f19\",\"f2\",\"f13\",\"f17\",\"f18\",\"f21\",\"f5\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\",\"budget_chars\":900,\"summary\":\"보충 → 피킹 흐름에서 이동로봇이 가져온 상자를 로봇팔이 인수하는 가상 시나리오로, 완료·인계는 독립 신호의 일치로 판정할 수 있을 것으로 보인다. [추정][^ref-216]\",\"planned_findings\":[\"f2\",\"f3\",\"f5\",\"f10\",\"f24\",\"f25\",\"f26\",\"f27\",\"f28\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"6. 대표 접근법과 기술\",\"budget_chars\":1100,\"summary\":\"Open-RMF 는 결과를 받을 때까지 요청을 반복하는 워크셀 인계를 쓴다. [사실][^ref-023] VDA 5050 pick 은 새 적재 상태 보고로 완료를 본다. [사실][^ref-031]\",\"planned_findings\":[\"f2\",\"f3\",\"f4\",\"f5\",\"f12\",\"f16\",\"f24\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"7. 관련 표준·프레임워크·오픈소스\",\"budget_chars\":800,\"summary\":\"Open-RMF 워크셀, VDA 5050 3.0.0, SEMI E84(반도체 업종 참고), ASTM F3499-21, Nav2 도킹, ARIAC, CBV, 안전 표준 두 건을 정리한다. [사실][^ref-031]\",\"planned_findings\":[\"f2\",\"f3\",\"f5\",\"f6\",\"f7\",\"f10\",\"f12\",\"f19\",\"f20\",\"f21\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"8. 대표 연구와 자료\",\"budget_chars\":900,\"summary\":\"NIST ARIAC 2025 는 AGV 와 로봇팔의 트레이 인계를 다룬다. [사실][^ref-008] 인계 스테이션 연구(Zang 외 2026)는 저자 보고 시뮬레이션 수치를 낸다. [사실][^ref-925]\",\"planned_findings\":[\"f1\",\"f9\",\"f11\",\"f13\",\"f14\",\"f15\",\"f17\",\"f18\",\"f23\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\",\"budget_chars\":700,\"summary\":\"ROP 는 인계 순서·시점 동기화, 신호 중계, 완료 판정과 업무 반영을 맡고 파지·도킹 주행·PLC 는 연계 대상일 것으로 보인다. [추정][^ref-023]\",\"planned_findings\":[\"f27\",\"f28\",\"f8\",\"f19\",\"f20\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\",\"budget_chars\":700,\"summary\":\"인계는 7. 화물·재고·자산 식별과 추적, 10. 설비·건물 시스템 연동, 13·14 계획 영역 등과 이어질 것으로 보인다. [추정][^ref-044]\",\"planned_findings\":[\"f29\",\"f22\",\"f5\"]},{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"section\":\"11. 열린 질문\",\"budget_chars\":900,\"summary\":\"기존 oq-001·oq-006·oq-042·oq-049 에 이번 실행의 진전을 적고 새 질문 4건을 둔다.\",\"planned_findings\":[\"f4\",\"f7\",\"f10\",\"f11\",\"f19\",\"f22\",\"f24\"]}],\"pages\":[{\"path\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\",\"action\":\"update\",\"status\":\"draft\",\"diff_summary\":\"영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 각주 23건\",\"content\":\"---\\ntitle: \\\"17. 로봇 간 협업·물리적 인계\\\"\\ntype: area\\ncategory: \\\"E. 협업·현장 운영\\\"\\narea_no: 17\\nrelated_areas: [5, 7, 10, 13, 14, 16, 20, 23, 25]\\ntags: [인계 확인, 모바일 매니퓰레이터, 디스펜서·인제스터, VDA 5050, 스케줄 간 의존, 도킹]\\nstatus: draft\\nconfidence: medium\\ncreated: 2026-09-24\\nupdated: 2026-09-25\\nsources: [ref-007, ref-008, ref-023, ref-031, ref-044, ref-047, ref-048, ref-216, ref-360, ref-394, ref-918, ref-919, ref-920, ref-921, ref-922, ref-923, ref-924, ref-925, ref-926, ref-927, ref-928, ref-929, ref-930]\\nlast_run: 2026-09-25\\nversion: 2\\n---\\n\\n[홈](../../index.md) › [E. 협업·현장 운영](index.md) › 17. 로봇 간 협업·물리적 인계\\n\\n# 17. 로봇 간 협업·물리적 인계\\n\\n!!! info \\\"소속 대분류\\\"\\n    [E. 협업·현장 운영](index.md) — 핵심 질문:\\n    계획과 실제가 달라지는 상황에서 일을 어떻게 계속할 것인가? [분류원문]\\n\\n<!-- auto:area-tracks:start -->\\n<!-- auto:area-tracks:end -->\\n\\n<!-- auto:page-status:start -->\\n<!-- auto:page-status:end -->\\n\\n## 1. 한 줄 정의\\n\\n이동로봇–로봇팔 협업, 공동 운반, 작업 동기화, 인계 확인, 필요한 정보·인식 결과 공유 [분류원문]\\n\\n## 2. SCM 관점의 질문\\n\\nAMR이 물건을 가져온 뒤 로봇팔이 안전하게 인수했음을 어떻게 확인할까? [분류원문]\\n\\n> 원문 주석: 17번의 협업은 이동로봇끼리 길을 양보하는 문제보다 넓다. **이동·조작·검사·사람 작업을 하나의 공정으로 묶는 문제**까지 포함한다. NIST도 이종 로봇과 사람의 협업 성능을 별도 연구·평가 대상으로 다룬다. [7] [분류원문]\\n\\n원문의 [7]은 참고문헌 [ref-007](../../references/ref-007.md)에 해당한다.[^ref-007]\\n\\n## 3. 왜 중요한가\\n\\nNIST 의 협업 로봇 시스템 성능 프로젝트는 사람–로봇·로봇–로봇 협업 팀의 안전성과 효과를 평가하는 방법·지표를 목표로 하며, 제조사·기종이 다른 로봇이 함께 일하는 이종 로봇 워크셀과 로봇 간 협업 통신 프로토콜 개발을 과제로 둔다(확인일 2026-09-25). [사실][^ref-007]\\n\\n그런데 이동로봇 관제 규격인 VDA 5050 은 관제–이동로봇 통신과 관계없는 주변 설비·인프라·외부 IT 시스템 인터페이스를 범위에서 제외하며, 최신판 3.0.0 에도 로봇과 컨베이어·스테이션 사이 인계 신호 절차는 없다. [사실][^ref-031]\\n\\n반도체 업종의 SEMI E84 처럼 준비–진행–완료를 양쪽이 단계별로 확인하는 인계 신호 구조는 ROP 가 이동로봇–작업대·로봇팔 인계의 상태 모델을 정할 때 참고할 수 있을 것으로 보이나, 이는 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니고, 물류 업종에서 같은 역할을 하는 제조사 중립 공개 규격은 이번 조사에서 확인하지 못했다. [추정][^ref-918][^ref-919][^ref-031]\\n\\n2절의 질문에 대해서는 도킹·정지 위치 확인, 로봇팔·워크셀의 인수 결과, 이동로봇의 적재 상태 변경 보고라는 서로 독립된 신호가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보인다(6절). [추정][^ref-216][^ref-930][^ref-031][^ref-920]\\n\\n## 4. 핵심 개념과 용어\\n\\n- **모바일 매니퓰레이터(Mobile Manipulator)** — AMR(Autonomous Mobile Robot, 자율이동로봇)·AGV(Automated Guided Vehicle, 무인운반차) 같은 이동 플랫폼에 로봇팔을 단 로봇으로, ANSI/A3 R15.08-2-2023 은 이를 산업용 이동로봇(Industrial Mobile Robot, IMR) 유형 C 로 다룬다. [사실][^ref-926]\\n- **[디스펜서·인제스터](../../glossary/dispenser-ingestor.md)(Dispenser / Ingestor)** — Open-RMF 에서 로봇에 물건을 내주는 워크셀과 로봇에서 물건을 받아들이는 워크셀로, 로봇은 결과 메시지를 받을 때까지 요청 메시지를 반복해 보내고 워크셀은 상태를 주기적으로 발행한다. [사실][^ref-023]\\n- **스케줄 간 의존(Cross-schedule Dependency, XD)** — Korsah·Stentz·Dias 의 [다중 로봇 작업 배정](../../glossary/mrta.md)(Multi-Robot Task Allocation, MRTA) 분류 iTax(2013)는 작업 의존을 의존 없음(ND)·일정 내 의존(ID)·스케줄 간 의존(XD)·복합 의존(CD)으로 나누고, 서로 다른 로봇에 배정된 작업 사이에 [선후 제약](../../glossary/precedence-constraint.md) 같은 관계가 있으면 스케줄 간 의존으로 본다. [사실][^ref-394]\\n- **협동 운반(Cooperative Object Transport)** — 로봇 한 대로 다루기에 너무 크거나 무거운 물체를 여러 로봇이 행동을 조율해 목적지까지 옮기는 일로, Tuci 외(2018)는 운반·조율·제어 전략이 다양하게 제안되어 왔다고 정리했다. [사실][^ref-923]\\n- **협동 인지(Collaborative Perception)** — Singh 외(2024)는 로봇 플릿의 협동 인지를 여러 에이전트가 센서 정보를 공유·융합해 환경을 더 넓게 이해하고 판단을 돕는 능력으로 정의했다. [사실][^ref-928]\\n- **CBV 업무 단계 accepting·receiving** — GS1 [핵심 업무 어휘](../../glossary/cbv.md)(Core Business Vocabulary, CBV) 온톨로지(2021-09-30 수정판)는 accepting 을 물체의 점유·소유가 바뀌는 활동으로, receiving 을 받아들인 물체가 받는 쪽 재고에 더해지는 활동으로 정의하고, loading·unloading 은 운송 수단에 싣고 내리는 활동으로 정의한다. [사실][^ref-044]\\n- **적재 장치(load handling device, lhd)** — VDA 5050 3.0.0 의 pick·drop 동작 파라미터로, 적재 장치가 여럿인 로봇에서 어느 장치로 화물을 다룰지 지정한다. [사실][^ref-031]\\n\\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\\n\\n다음은 설명을 위한 가상의 시나리오이다.\\n\\n**물류 흐름 단계:** 보충 → 피킹\\n\\n**시나리오:** 이동로봇이 가져온 상자를 작업대 로봇팔이 인수\\n\\n| 항목 | 내용 |\\n|---|---|\\n| 시작 조건 | 이동로봇이 작업대 앞 하역 지점에 도착한다(가상 설정). Open-RMF 배송 작업이라면 이 시점부터 로봇이 결과 메시지를 받을 때까지 인제스터 요청을 반복해 보낸다. [사실][^ref-023] |\\n| 작업 대상 | 상자 단위 화물. 인계 요청이 담는 화물 정보는 규격마다 달라, Open-RMF 디스펜서 요청은 품목 유형 id·수량·칸 이름을, VDA 5050 pick·drop 은 적재물 유형·식별 번호(loadType, loadId)를 담는다. [사실][^ref-047][^ref-048][^ref-031] |\\n| 수행 자원 | 이동로봇은 운반·도킹을, 로봇팔은 파지·적재를 맡고, ROP 는 인계 순서·시점 동기화와 요청·결과 신호 중계, 인계 완료 판정을 맡으며 파지·도킹 주행 제어는 제조사가 맡는 것으로 보인다. [추정][^ref-023][^ref-031][^ref-044][^ref-216] |\\n| 제약 | 보충 단계에서 이동로봇 운반과 로봇팔 적치가 선후로 이어지면 스케줄 간 의존이 생기고 인계 스테이션의 도크·버퍼가 공용 자원 제약이 되어, 인계 시점을 두 로봇 일정에 함께 맞춰야 할 것으로 보인다. [추정][^ref-394][^ref-925] 도킹 정지 위치의 반복성은 ASTM F3499-21 같은 시험 방법으로 확인한다. [사실][^ref-920] |\\n| 완료·인계 | 이동로봇의 도킹·정지 위치 확인, 로봇팔·워크셀의 인수 결과(SUCCESS), 이동로봇의 적재 상태 변경 보고가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보인다. [추정][^ref-216][^ref-930][^ref-031][^ref-920] |\\n| 예외·성과 | 워크셀 결과 FAILED, 도킹 재시도 한도 초과, 동작 FAILED 가 나오면 인계 재시도·다른 작업대로 재배정·사람 확인 가운데 하나로 넘겨야 하며, 대기 동안 이동로봇과 작업대가 함께 묶여 처리량 손실이 생길 것으로 보인다(현장 사례 미확인). [추정][^ref-930][^ref-216][^ref-031][^ref-925] |\\n\\n가상 흐름은 다음과 같다. 이동로봇이 도착해 도킹을 마치면 로봇팔이 상자를 집어 작업대에 올리고, 이동로봇은 적재 상태 변화를 보고한다. ROP 는 이 신호들을 모아 인계 완료를 판정한 뒤 재고 이동을 업무 시스템에 기록한다. 어느 신호라도 어긋나면 예외·성과 칸의 처리로 넘어간다.\\n\\n## 6. 대표 접근법과 기술\\n\\n### 요청–결과 메시지로 인계 주고받기\\n\\nOpen-RMF 배송 작업에서 로봇은 픽업 지점에서 DispenserResult 를 받을 때까지 DispenserRequest 를, 하역 지점에서 IngestorResult 를 받을 때까지 IngestorRequest 를 반복해 보내며, 워크셀은 상태(DispenserState·IngestorState)를 주기적으로 발행한다. [사실][^ref-023] 이 흐름은 플릿 어댑터의 perform_deliveries 설정을 켜야 동작한다. [사실][^ref-023]\\n\\n디스펜서 요청 메시지는 시각·요청 id(request_guid)·대상 워크셀 이름(target_guid)·운반체 유형(transporter_type)·품목 목록(품목 유형 id, 수량, 칸 이름)을 담고, 결과 메시지는 시각·요청 id·보낸 워크셀 id(source_guid)·상태(ACKNOWLEDGED, SUCCESS, FAILED)를 담는다. [사실][^ref-047][^ref-048][^ref-930]\\n\\n이 위키의 추론으로는, 결과 메시지가 요청 단위의 성공·실패 상태만 담고 넘겨받은 화물의 개별 식별자나 실측 수량 필드가 없어 인수 확인의 근거가 워크셀 자체 판단에 기대므로, ROP 가 화물 식별·적재 상태 같은 별도 확인과 결합해야 할 것으로 보인다. [추정][^ref-930][^ref-047][^ref-048]\\n\\n연구 시스템에서는 더 가벼운 신호도 쓴다. DELIVER(2025)는 로봇끼리 화물을 넘기는 릴레이 배송에서 넘기는 로봇이 ROS 메시지나 LED 색 변화로 준비를 알리고, 받는 로봇이 그 신호를 감지하면 움직이기 시작하게 한다. [사실][^ref-360]\\n\\n### 동작 완료를 적재 상태 보고로 판정\\n\\nVDA 5050 3.0.0 의 pick·drop 동작은 적재 장치(lhd), 스테이션 유형(바닥, 랙, 수동·능동 컨베이어 등), 스테이션 이름, 적재물 유형·식별 번호(loadType, loadId), 높이·깊이 파라미터를 두며, pick 은 적재물이 로봇에 들어오고 로봇이 새 적재 상태를 보고해야 완료(FINISHED)로 본다(발행일 미확인, 확인일 2026-09-25). [사실][^ref-031]\\n\\n### 도킹 위치 확인\\n\\nROS 2 Nav2 도킹 프레임워크는 충전 도크와 컨베이어·팔레트 같은 비충전 도크를 모두 지원하며, 준비 위치(staging pose)로 간 뒤 센서로 도크 위치를 다듬어 접근하고, 모터 전류 급증(도크 접촉 감지)이나 거리 임계값으로 도킹 여부를 판정하며, 실패하면 기본 3회까지 재시도한다. [사실][^ref-216]\\n\\n### 여러 신호를 결합한 인계 완료 판정\\n\\n위 세 가지 신호(도킹 확인, 워크셀 인수 결과, 적재 상태 보고)가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보이나, 세 신호를 결합하는 규정은 이번 조사에서 어느 표준에서도 확인하지 못했다. [추정][^ref-216][^ref-930][^ref-031][^ref-920] 아래 도식은 이 위키가 제안하는 판정 흐름이다.\\n\\n```mermaid\\nflowchart LR\\n  dock[이동로봇 도킹·정지 위치 확인] --> judge{ROP 인계 완료 판정}\\n  cell[로봇팔·워크셀 인수 결과 SUCCESS] --> judge\\n  load[이동로봇 적재 상태 변경 보고] --> judge\\n  judge -->|세 신호 일치| done[인계 완료·재고 이동 기록]\\n  judge -->|불일치 또는 FAILED| exc[재시도·재배정·사람 확인]\\n```\\n\\n## 7. 관련 표준·프레임워크·오픈소스\\n\\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\\n|---|---|---|---|\\n| Open-RMF 워크셀 메시지(rmf_dispenser_msgs 등) | 오픈소스 | 디스펜서·인제스터의 요청–결과·상태 메시지로 워크셀 인계를 주고받는다. [사실][^ref-023][^ref-930] | [ref-023](../../references/ref-023.md), ref-930 |\\n| VDA 5050 3.0.0 | 표준 | pick·drop 동작이 적재 장치·스테이션·적재물 파라미터를 두지만 주변 설비와의 인계 신호 절차는 범위 밖이다. [사실][^ref-031] | [ref-031](../../references/ref-031.md) |\\n| SEMI E84 | 표준 | 자동 반송 시스템(Automated Material Handling System, AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호로 준비 여부·사용 로드포트·진행·완료를 주고받으며, 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니고, 개별 신호 이름·순서는 미확인이다. [사실][^ref-918][^ref-919] | ref-918·ref-919, 원문 미열람 |\\n| ASTM F3499-21 | 표준 | A-UGV 가 도크 같은 현장 설비 기준 위치에 정지할 때의 위치 반복성과 포크 같은 적재 이송 장치의 높이 제어 반복성을 확인하는 시험 방법이다(2021). [사실][^ref-920] | ref-920, 원문 미열람 |\\n| Nav2 Docking Framework | 오픈소스 | 충전·비충전 도크의 도킹 절차·판정·재시도를 제공한다(6절). [사실][^ref-216] | [ref-216](../../references/ref-216.md) |\\n| [ARIAC](../../glossary/ariac.md) 2025 | 평가 프로그램 | AGV 와 로봇팔의 트레이 인계, 이동 전 키트 품질 확인 서비스를 시나리오에 둔다(8절). [사실][^ref-008] | [ref-008](../../references/ref-008.md) |\\n| NIST 협업 로봇 성능 | 평가 프로그램 | 이종 로봇 워크셀의 협업 성능 평가를 과제로 둔다(3절). [사실][^ref-007] | [ref-007](../../references/ref-007.md), 원문 미열람 |\\n| GS1 CBV | 표준 | 인계 이벤트에 쓸 업무 단계 어휘(accepting·receiving 등)를 정의한다(4절). [사실][^ref-044] | [ref-044](../../references/ref-044.md) |\\n| ANSI/A3 R15.08-2-2023 | 표준 | 산업용 이동로봇과 그 플릿을 현장에 통합·배치할 때의 안전 요구사항을 정하고 유형 C(모바일 매니퓰레이터)를 다룬다. [사실][^ref-926] | ref-926, 원문 미열람 |\\n| KS B ISO 10218-2 | 표준 | 로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준이며, 판·확인 연도와 이동식 로봇 적용 조항은 미확인이다. [사실][^ref-927] | ref-927, 원문 미열람 |\\n\\n안전 표준 두 건(ANSI/A3 R15.08-2-2023, KS B ISO 10218-2)은 [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)의 내용이며, 이 영역에서는 인계 작업에 걸리는 제약으로만 연결한다. 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\\n\\n## 8. 대표 연구와 자료\\n\\n- NIST, ARIAC 2025 시나리오 — AGV 가 검사·조립·출하·재활용 스테이션 사이로 셀 트레이를 옮기고 검사 로봇팔이 합격 셀을 AGV 트레이에 올리며, 완성 키트를 실은 AGV 를 움직이기 전에 키트 품질 확인 서비스를 호출해야 하고 트레이에 놓인 셀은 고정되어 검사 스테이션에서 다시 옮길 수 없다. 이동 전 확인을 요구하는 인계 평가 사례다. [사실][^ref-008]\\n- NIST, Reconfigurable Mobile Manipulator Artifact(RMMA)와 Bostelman 외(발행연도 미확인) — NIST 는 ASTM F45 위원회에서 이동로봇·모바일 매니퓰레이터 시험 방법 개발에 참여하며, 매니퓰레이터에 단 카메라·센서로 기준 표식을 측정해 위치 불확도를 재는 시험 기물(RMMA)을 설계했고 그 측정 불확도가 2 mm 수준이라고 보고했다. 2 mm 는 NIST 보고치이며 두 출처 모두 NIST 계열이라 독립 확인은 없다. [사실][^ref-921][^ref-922]\\n- Coltin·Veloso, Online pickup and delivery planning with transfers for mobile robots(ICRA 2014) — 여러 이동로봇이 서로 물건을 옮겨 주는 전달(transfer)을 허용해 픽업·배송 계획을 개선하는 온라인 계획 알고리즘을 제시했다. [사실][^ref-924]\\n- Zang 외, Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations(2026-07, 프리프린트) — 구역에 묶인 플릿들이 도크 1개와 유한 버퍼를 가진 인계 스테이션으로 화물을 주고받는 [다중 에이전트 픽업·배송](../../glossary/multi-agent-pickup-and-delivery.md) 문제를 정식화했다. 공유 도크 예약 달력과 버퍼 점유 예측으로 경로를 승인하는 제어기(HARR)가 처리량을 최대 77% 높이고 적체를 92% 줄였다고 하나, 이는 저자 보고이며 시뮬레이션·중간 부하 조건에서 고정 도크 비교안 대비로 얻은 프리프린트 수치다. [사실][^ref-925]\\n- Korsah·Stentz·Dias, A comprehensive taxonomy for multi-robot task allocation(2013) — 작업 의존을 포함한 배정 분류 iTax 를 제시했다(4절의 스케줄 간 의존). [사실][^ref-394]\\n- Tuci 외, Cooperative Object Transport in Multi-Robot Systems(2018) — 협동 운반 연구를 검토했다. 물류센터 적용 사례는 이번 조사에서 찾지 못했다. [사실][^ref-923]\\n- Singh 외, Multi-agent Collaborative Perception for Robotic Fleet(2024) — 로봇 플릿의 협동 인지 연구를 체계적으로 검토했다. [사실][^ref-928]\\n- 국내 자료: 유진로봇이 과학기술정보통신부 스마트제조혁신기술개발사업의 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 개발 과제 결과물을 공개했다고 보도되었다(2025-11-04). 기사 1건에 기댄 것이며 1차 출처(과제 정보)는 확인하지 못했다. [추정][^ref-929]\\n\\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\\n\\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\\n|---|---|---|\\n| 상위 업무 시스템 | 여러 확인 신호를 모은 인계 완료 판정과 그 결과의 재고·업무 시스템 반영 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 재고를 기록하는 업무 시스템. 인계 이벤트의 업무 단계 값은 미정이다(oq-006). |\\n| 로봇 자체 지능·제어 | 인계 작업의 순서·시점 동기화, 도킹·동작 결과 상태와 실패 신호 수신 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 로봇팔의 파지·동작 제어, 이동로봇의 도킹 주행 제어와 센서 인식 [추정][^ref-216][^ref-031][^ref-926] |\\n| 시설·설비 제어 | 인계 요청·결과 신호의 중계 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 컨베이어 PLC 와 설비 안전 제어 [추정][^ref-216][^ref-031][^ref-926] |\\n| 업종별 조건 | 업종 인계 규격을 인계 상태 모델의 참고 사례로 검토 [추정][^ref-918][^ref-919][^ref-031] | 연계 대상: SEMI E84 같은 업종별 인계 규격. 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다. |\\n\\nROP 는 제조사가 맡는 파지·도킹 주행·설비 제어의 결과 상태와 실패 신호를 받는 쪽에 서고, 그 신호를 묶어 인계 완료를 판정해 업무 시스템에 반영하는 것을 직접 범위로 삼을 것으로 보인다. [추정][^ref-216][^ref-031][^ref-926] 모바일 매니퓰레이터의 현장 통합 안전 요구(ANSI/A3 R15.08-2-2023, KS B ISO 10218-2)는 25. 안전·위험 관리와 연결되는 제약이며, ROP 가 이 안전 요구를 이행하는 주체는 아닌 것으로 보인다. [추정][^ref-926][^ref-927]\\n\\n범위 경계의 기준과 제품 전략에 따른 경계 이동은 [범위 경계](../../about/scope-boundary.md) 페이지에 있다.\\n\\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\\n\\n- [7. 화물·재고·자산 식별과 추적](../b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 시설 안 로봇 사이·로봇과 작업대 사이의 물리적 인계는 CBV 의 accepting 이나 receiving 에 가깝고 운송 수단 기준의 loading·unloading 과는 맞지 않아, 인계 이벤트의 업무 단계 값은 ROP 가 정해야 할 것으로 보인다(oq-006). [추정][^ref-044]\\n- [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — 워크셀·컨베이어와의 인계 신호로 이어질 것으로 보인다. [추정][^ref-023]\\n- [5. 로봇 능력·작업 온톨로지](../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — pick·drop 에서 쓰는 적재 장치(lhd) 선언으로 로봇 능력 표현과 이어질 것으로 보인다. [추정][^ref-031]\\n- [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md)·[14. 작업 순서·스케줄링](../d-planning-and-optimization/14-task-sequencing-and-scheduling.md) — 서로 다른 로봇 작업의 스케줄 간 의존으로 이어질 것으로 보인다. [추정][^ref-394]\\n- [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — 인계 스테이션의 도크 예약·버퍼 제약으로 이어질 것으로 보인다. [추정][^ref-925]\\n- [20. 예외 복구·재계획·업무 연속성](20-exception-recovery-replanning-and-business-continuity.md) — 인계 실패 뒤 재시도·재배정·사람 확인 처리로 이어질 것으로 보인다. [추정][^ref-930][^ref-216]\\n- [23. 시험·형식 검증·벤치마크](../f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 도킹 위치 시험(ASTM F3499-21)과 ARIAC 같은 평가로 이어질 것으로 보인다. [추정][^ref-920][^ref-008]\\n- [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 모바일 매니퓰레이터 통합 안전 요구로 이어질 것으로 보인다. [추정][^ref-926]\\n\\n## 11. 열린 질문\\n\\n- **oq-001** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-01) 로봇의 적재·하역 완료 신호(VDA 5050 drop 동작 완료, Open-RMF IngestorResult)를 EPCIS 인계 이벤트로 옮기는 표준 매핑이나 공개 구현 사례가 있는가? 이번 실행에서 Open-RMF 디스펜서 결과 메시지에 화물의 개별 식별자·실측 수량 필드가 없음을 확인했으므로, 매핑에는 별도 화물 식별 확인이 필요할 것으로 보인다. [추정][^ref-930]\\n- **oq-006** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-03) CBV의 loading·unloading이 운송 수단 적재로 정의되어 있을 때 시설 안 로봇의 적재·운반·하역은 어떤 업무 단계(bizStep) 값이나 사용자 정의 어휘로 기록해야 하는가? 이번 실행은 accepting·receiving 정의를 보강했으나 로봇 인계에 쓸 값을 권고한 GS1 문서는 찾지 못했다. [추정][^ref-044]\\n- **oq-042** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-25) 컨베이어·작업대와 이동로봇 사이 적재물 인계 신호(준비·허가·이송·완료)를 제조사 중립으로 정한 공개 표준이나 규격이 있는가? 이번 실행에서 VDA 5050 이 주변 설비 인터페이스를 범위에서 제외함을 확인했고 반도체 업종 규격 SEMI E84 를 찾았으나(반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다), 물류 업종의 제조사 중립 규격은 찾지 못했다. [추정][^ref-031][^ref-918]\\n  - **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 반도체 업종의 SEMI E84 같은 단계별 인계 신호를 물류센터의 이동로봇–컨베이어·작업대 인계에 적용하거나 옮긴 사례가 있는가?\\n- **oq-049** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-34) 제조사가 다른 로봇 플릿 사이의 작업 선후(예: 피킹 로봇 완료 뒤 운반 로봇 출발)를 작업 요청 수준에서 표현·집행하는 표준 필드나 공개 구현이 있는가? 4절의 스케줄 간 의존과 관련된다.\\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 로봇팔·워크셀의 인수 결과와 이동로봇의 적재 상태 보고가 어긋날 때(한쪽은 성공, 다른 쪽은 적재 유지) 어느 신호를 기준으로 인계 완료를 판정하는지 정한 표준이나 현장 사례가 있는가?\\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) ASTM F3499·NIST RMMA 같은 도킹·위치 정밀도 시험 결과를 로봇팔 파지 허용 오차와 연결해 인계 가능 여부를 정하는 기준이 있는가?\\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 국내에 ANSI/A3 R15.08-2 의 유형 C(모바일 매니퓰레이터) 통합 안전 요구에 대응하는 KS 표준이나 인증 기준이 있는가?\\n\\n전체 목록은 [열린 질문](../../open-questions.md)에 있다.\\n\\n## 12. 최근 업데이트 (자동)\\n\\n<!-- auto:area-recent:start -->\\n아직 기록된 업데이트가 없다.\\n<!-- auto:area-recent:end -->\\n\\n## 13. 참고 자료 (각주)\\n\\n[^ref-007]: NIST, Performance of Collaborative Robot Systems, 미확인, https://www.nist.gov/programs-projects/performance-collaborative-robot-systems, 접근일 2026-09-24 (원문 미열람)\\n[^ref-008]: NIST, ARIAC Documentation, 미확인, https://pages.nist.gov/ARIAC_docs/en/latest/, 접근일 2026-09-25\\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25\\n[^ref-047]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequest.msg, 접근일 2026-09-25\\n[^ref-048]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequestItem.msg, 접근일 2026-09-25\\n[^ref-216]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_docking — README (Open Navigation's Nav2 Docking Framework), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md, 접근일 2026-09-25\\n[^ref-360]: arXiv 2508.19114 저자(미확인), DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning, 2025-08, https://arxiv.org/abs/2508.19114, 접근일 2026-09-25 (원문 미열람)\\n[^ref-394]: Korsah, G. A., Stentz, A., & Dias, M. B., A comprehensive taxonomy for multi-robot task allocation, 2013, https://journals.sagepub.com/doi/10.1177/0278364913496484, 접근일 2026-09-25 (원문 미열람)\\n[^ref-918]: SEMI, E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface, 미확인, https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface, 접근일 2026-09-25 (원문 미열람)\\n[^ref-919]: PEER Group, SEMI E84: Carrier Handoff, 미확인, https://www.peergroup.com/definition-of-standard/semi-e84/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-920]: ASTM International, Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21), 2021, https://www.astm.org/f3499-21.html, 접근일 2026-09-25 (원문 미열람)\\n[^ref-921]: NIST, Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA), 미확인, https://www.nist.gov/publications/design-and-application-reconfigurable-mobile-manipulator-artifact-rmma, 접근일 2026-09-25 (원문 미열람)\\n[^ref-922]: Bostelman, R. 외(NIST), Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development, 미확인, https://pubmed.ncbi.nlm.nih.gov/28690359/, 접근일 2026-09-25 (원문 미열람)\\n[^ref-923]: Tuci, E., Alkilabi, M. H. M., & Akanyeti, O., Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art, 2018, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2018.00059/full, 접근일 2026-09-25 (원문 미열람)\\n[^ref-924]: Coltin, B., & Veloso, M., Online pickup and delivery planning with transfers for mobile robots, 2014, https://www.researchgate.net/publication/289338501_Online_pickup_and_delivery_planning_with_transfers_for_mobile_robots, 접근일 2026-09-25 (원문 미열람)\\n[^ref-925]: Zang, C. 외, Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations, 2026-07, https://arxiv.org/abs/2607.17724, 접근일 2026-09-25 (원문 미열람)\\n[^ref-926]: ANSI / A3(Association for Advancing Automation), ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s), 2023, https://webstore.ansi.org/standards/ria/ansia3r15082023, 접근일 2026-09-25 (원문 미열람)\\n[^ref-927]: 국가표준인증통합정보시스템(KSSN), KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010083660, 접근일 2026-09-25 (원문 미열람)\\n[^ref-928]: Singh, A., Raut, G., & Choudhary, A., Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review, 2024-03, https://arxiv.org/abs/2405.15777, 접근일 2026-09-25 (원문 미열람)\\n[^ref-929]: 다음뉴스 게재 기사(원 언론사 미확인), 유진로봇, 지능형 제조 물류시스템 공개, 2025-11-04, https://v.daum.net/v/20251104092138920, 접근일 2026-09-25 (원문 미열람)\\n[^ref-930]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg, 접근일 2026-09-25\\n\"}],\"changelog_entry\":\"2026-09-25 | 17. 로봇 간 협업·물리적 인계 | 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 | run 2026-09-25-42\",\"index_updates\":{\"home_recent\":\"2026-09-25 — 17. 로봇 간 협업·물리적 인계: 3~11절 신규 작성(Open-RMF 워크셀·VDA 5050 pick 완료 조건·도킹 시험·스케줄 간 의존, 인계 완료 판정은 이 위키의 추론)\",\"category_recent\":\"2026-09-25 — 17. 로봇 간 협업·물리적 인계: 영역 심화 초안, 물류 업종 제조사 중립 인계 규격은 미확인(oq-042)\",\"area_recent\":\"2026-09-25 — 17. 로봇 간 협업·물리적 인계: 3~11절 신규 작성, 새 열린 질문 4건\"},\"glossary_updates\":[{\"action\":\"new\",\"slug\":\"mobile-manipulator\",\"term_ko\":\"모바일 매니퓰레이터\",\"term_en\":\"Mobile Manipulator\",\"definition\":\"AMR·AGV 같은 이동 플랫폼에 로봇팔을 결합해 이동과 집기·놓기 작업을 함께 수행하는 로봇이다.\",\"description\":\"ANSI/A3 R15.08-2-2023 은 매니퓰레이터를 단 이동로봇을 산업용 이동로봇(IMR) 유형 C 로 다룬다.\",\"related_areas\":[17,25],\"sources\":[\"ref-926\"]},{\"action\":\"new\",\"slug\":\"cooperative-object-transport\",\"term_ko\":\"협동 운반\",\"term_en\":\"Cooperative Object Transport\",\"definition\":\"로봇 한 대로 다루기 어려운 크거나 무거운 물체를 여러 로봇이 행동을 조율해 목적지까지 함께 옮기는 일이다.\",\"related_areas\":[17],\"sources\":[\"ref-923\"]},{\"action\":\"new\",\"slug\":\"collaborative-perception\",\"term_ko\":\"협동 인지\",\"term_en\":\"Collaborative Perception\",\"definition\":\"여러 로봇이 센서 정보나 인식 결과를 공유·융합해 한 대가 볼 때보다 넓고 정확하게 환경을 파악하는 방식이다.\",\"related_areas\":[17],\"sources\":[\"ref-928\"]},{\"action\":\"new\",\"slug\":\"cross-schedule-dependency\",\"term_ko\":\"스케줄 간 의존\",\"term_en\":\"Cross-schedule Dependency (XD)\",\"definition\":\"서로 다른 로봇에 배정된 작업 사이에 선후 같은 관계가 있어, 한 로봇의 작업 적합성이 다른 로봇의 일정에 따라 달라지는 작업 의존 유형이다.\",\"description\":\"Korsah·Stentz·Dias(2013)의 MRTA 분류 iTax 는 작업 의존을 ND·ID·XD·CD 로 나눈다.\",\"related_areas\":[17,13,14],\"sources\":[\"ref-394\"]}],\"reference_updates\":[{\"id\":\"ref-007\",\"org\":\"NIST\",\"title\":\"Performance of Collaborative Robot Systems\",\"published\":null,\"url\":\"https://www.nist.gov/programs-projects/performance-collaborative-robot-systems\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 사람–로봇·로봇–로봇 협업 팀과 이종 로봇 워크셀의 협업 성능을 평가하는 시험 방법·지표·통신 프로토콜 개발 프로젝트(검색 요약 기준).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-008\",\"org\":\"NIST\",\"title\":\"ARIAC Documentation\",\"published\":null,\"url\":\"https://pages.nist.gov/ARIAC_docs/en/latest/\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"ARIAC 문서. 2025 시나리오의 AGV 스테이션 이동, 로봇팔의 트레이 적재, 이동 전 키트 품질 확인 서비스를 원본으로 확인했다.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-023\",\"org\":\"Open Robotics\",\"title\":\"Workcells - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_workcells.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"디스펜서·인제스터 워크셀과 배송 작업의 요청–결과 반복 방식을 설명한 장.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"VDA 5050 최신판(3.0.0) 명세 원문. pick·drop 파라미터와 완료 조건, 주변 설비 인터페이스의 범위 제외를 확인했다.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-044\",\"org\":\"GS1\",\"title\":\"gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)\",\"published\":\"2021-09-30\",\"url\":\"https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"CBV 업무 단계·상태 어휘 온톨로지. accepting·receiving·loading·unloading 정의를 원본으로 확인했다.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-047\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequest.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"디스펜서 요청 메시지(시각, 요청 id, 대상 워크셀, 운반체 유형, 품목 목록).\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-048\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequestItem.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"디스펜서 요청 품목(품목 유형 id, 수량, 칸 이름).\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-216\",\"org\":\"ROS Navigation (ros-navigation/navigation2 GitHub)\",\"title\":\"nav2_docking — README (Open Navigation's Nav2 Docking Framework)\",\"published\":null,\"url\":\"https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"충전·비충전 도크 도킹 절차(준비 위치, 도크 위치 보정, 전류 급증·거리 임계 판정, 재시도)를 설명한 README.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-360\",\"org\":\"arXiv 2508.19114 저자(미확인)\",\"title\":\"DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning\",\"published\":\"2025-08\",\"url\":\"https://arxiv.org/abs/2508.19114\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 보로노이 경계에서 로봇끼리 화물을 넘기는 릴레이 배송과 가벼운 준비 신호 방식을 다룬 프리프린트.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-394\",\"org\":\"Korsah, G. A., Stentz, A., & Dias, M. B.\",\"title\":\"A comprehensive taxonomy for multi-robot task allocation\",\"published\":\"2013\",\"url\":\"https://journals.sagepub.com/doi/10.1177/0278364913496484\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 작업 사이 의존(ND·ID·XD·CD)을 포함한 다중 로봇 작업 배정 분류 iTax 를 제시한 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-918\",\"org\":\"SEMI\",\"title\":\"E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface\",\"published\":null,\"url\":\"https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 자동 반송 시스템과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 SEMI 표준의 판매 페이지(유료 원문).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-919\",\"org\":\"PEER Group\",\"title\":\"SEMI E84: Carrier Handoff\",\"published\":null,\"url\":\"https://www.peergroup.com/definition-of-standard/semi-e84/\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 반도체 자동화 소프트웨어 업체의 SEMI E84 해설 페이지로, 신호 교환으로 인계 준비·진행·완료를 확인한다고 설명한다.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-920\",\"org\":\"ASTM International\",\"title\":\"Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)\",\"published\":\"2021\",\"url\":\"https://www.astm.org/f3499-21.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-921\",\"org\":\"NIST\",\"title\":\"Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA)\",\"published\":null,\"url\":\"https://www.nist.gov/publications/design-and-application-reconfigurable-mobile-manipulator-artifact-rmma\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 모바일 매니퓰레이터의 위치 불확도를 기준 표식으로 재는 시험 기물(RMMA)의 설계와 적용을 다룬 NIST 발행물.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-922\",\"org\":\"Bostelman, R. 외(NIST)\",\"title\":\"Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development\",\"published\":null,\"url\":\"https://pubmed.ncbi.nlm.nih.gov/28690359/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. ASTM F45 표준 개발을 위한 NIST 의 이동로봇 도킹·모바일 매니퓰레이터 성능 측정 연구를 정리한 논문.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-923\",\"org\":\"Tuci, E., Alkilabi, M. H. M., & Akanyeti, O.\",\"title\":\"Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art\",\"published\":\"2018\",\"url\":\"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2018.00059/full\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 여러 로봇이 행동을 조율해 크거나 무거운 물체를 옮기는 협동 운반 연구를 검토한 리뷰.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-924\",\"org\":\"Coltin, B., & Veloso, M.\",\"title\":\"Online pickup and delivery planning with transfers for mobile robots\",\"published\":\"2014\",\"url\":\"https://www.researchgate.net/publication/289338501_Online_pickup_and_delivery_planning_with_transfers_for_mobile_robots\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 이동로봇 사이 물건 전달을 허용해 픽업·배송 계획을 개선하는 온라인 알고리즘(ICRA 2014).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-925\",\"org\":\"Zang, C. 외\",\"title\":\"Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations\",\"published\":\"2026-07\",\"url\":\"https://arxiv.org/abs/2607.17724\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 도크 1개·유한 버퍼의 인계 스테이션으로 화물을 주고받는 다중 서브시스템 픽업·배송 문제와 도크 예약·버퍼 예측 제어기(HARR)를 제시한 프리프린트.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-926\",\"org\":\"ANSI / A3(Association for Advancing Automation)\",\"title\":\"ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s)\",\"published\":\"2023\",\"url\":\"https://webstore.ansi.org/standards/ria/ansia3r15082023\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 이동로봇 시스템·응용·플릿의 현장 통합 안전 요구사항을 정한 미국 국가표준으로, 매니퓰레이터를 단 이동로봇(유형 C)을 다룬다.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-927\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"title\":\"KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합\",\"published\":null,\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010083660\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 산업용 로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준의 표준 정보 페이지. 판·확인 연도 미확인.\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-928\",\"org\":\"Singh, A., Raut, G., & Choudhary, A.\",\"title\":\"Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review\",\"published\":\"2024-03\",\"url\":\"https://arxiv.org/abs/2405.15777\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 로봇 플릿에서 여러 에이전트가 센서 정보를 공유·융합하는 협동 인지 연구를 검토한 논문(ECCV 2024 워크숍).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-929\",\"org\":\"다음뉴스 게재 기사(원 언론사 미확인)\",\"title\":\"유진로봇, 지능형 제조 물류시스템 공개\",\"published\":\"2025-11-04\",\"url\":\"https://v.daum.net/v/20251104092138920\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-25\",\"summary\":\"원문 미열람. 유진로봇의 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 과제 결과물 공개를 전한 기사(검색 요약 기준).\",\"source_unopened\":true,\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]},{\"id\":\"ref-930\",\"org\":\"Open Robotics (open-rmf)\",\"title\":\"rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-25\",\"summary\":\"디스펜서 결과 메시지(시각, 요청 id, 워크셀 id, 상태 ACKNOWLEDGED·SUCCESS·FAILED). 원본을 열었다.\",\"cited_by\":[\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md\"]}],\"open_question_updates\":[{\"action\":\"new\",\"question\":\"로봇팔·워크셀의 인수 결과와 이동로봇의 적재 상태 보고가 어긋날 때(한쪽은 성공, 다른 쪽은 적재 유지) 어느 신호를 기준으로 인계 완료를 판정하는지 정한 표준이나 현장 사례가 있는가?\",\"areas\":[17,8],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"반도체 업종의 SEMI E84 같은 단계별 인계 신호를 물류센터의 이동로봇–컨베이어·작업대 인계에 적용하거나 옮긴 사례가 있는가?\",\"areas\":[17,10],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"ASTM F3499·NIST RMMA 같은 도킹·위치 정밀도 시험 결과를 로봇팔 파지 허용 오차와 연결해 인계 가능 여부를 정하는 기준이 있는가?\",\"areas\":[17,23],\"status\":\"열림\",\"link\":null},{\"action\":\"new\",\"question\":\"국내에 ANSI/A3 R15.08-2 의 유형 C(모바일 매니퓰레이터) 통합 안전 요구에 대응하는 KS 표준이나 인증 기준이 있는가?\",\"areas\":[17,25],\"status\":\"열림\",\"link\":null}],\"flow_matrix_updates\":[{\"step\":\"피킹\",\"item\":\"시작 조건\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"피킹\",\"item\":\"작업 대상\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"피킹\",\"item\":\"수행 자원\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"피킹\",\"item\":\"제약\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"피킹\",\"item\":\"완료·인계\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"피킹\",\"item\":\"예외·성과\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"},{\"step\":\"보충\",\"item\":\"제약\",\"link\":\"docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시\",\"title\":\"17. 로봇 간 협업·물리적 인계\"}],\"standards_updates\":[{\"name\":\"SEMI E84 Enhanced Carrier Handoff Parallel I/O Interface\",\"kind\":\"표준\",\"org\":\"SEMI\",\"url\":\"https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface\",\"related_areas\":[17,10],\"summary\":\"반도체 업종에서 자동 반송 시스템(AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 표준. 물류센터 적용 근거는 아니며 참고 사례로만 다룬다(원문 미열람).\",\"ref_id\":\"ref-918\"},{\"name\":\"ASTM F3499-21 A-UGV 도킹 성능 시험 방법\",\"kind\":\"표준\",\"org\":\"ASTM International\",\"url\":\"https://www.astm.org/f3499-21.html\",\"related_areas\":[17,23],\"summary\":\"A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법(원문 미열람).\",\"ref_id\":\"ref-920\"},{\"name\":\"ANSI/A3 R15.08-2-2023 Industrial Mobile Robots — Safety Requirements — Part 2\",\"kind\":\"표준\",\"org\":\"ANSI / A3\",\"url\":\"https://webstore.ansi.org/standards/ria/ansia3r15082023\",\"related_areas\":[25,17],\"summary\":\"산업용 이동로봇과 플릿의 현장 통합 안전 요구사항을 정하고 모바일 매니퓰레이터(IMR 유형 C)를 다룬다(원문 미열람).\",\"ref_id\":\"ref-926\"},{\"name\":\"KS B ISO 10218-2 산업용 로봇의 안전 — 제2부: 로봇 시스템 및 통합\",\"kind\":\"표준\",\"org\":\"국가표준인증통합정보시스템(KSSN)\",\"url\":\"https://www.kssn.net/search/stddetail.do?itemNo=K001010083660\",\"related_areas\":[25,17],\"summary\":\"로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준. 판·확인 연도와 이동식 로봇 적용 조항 미확인(원문 미열람).\",\"ref_id\":\"ref-927\"},{\"name\":\"Open-RMF 디스펜서·인제스터 메시지(rmf_internal_msgs의 rmf_dispenser_msgs)\",\"kind\":\"오픈소스\",\"org\":\"Open Robotics (open-rmf)\",\"url\":\"https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg\",\"related_areas\":[17,10],\"summary\":\"워크셀 인계의 요청(요청 id, 대상 워크셀, 품목 목록)과 결과(ACKNOWLEDGED·SUCCESS·FAILED) 메시지 정의.\",\"ref_id\":\"ref-930\"}],\"additional_research_requests\":[\"6절·11절: Open-RMF IngestorResult(ref-049)의 필드를 원본으로 대조해 하역 쪽 결과 메시지에도 화물 식별·실측 수량 필드가 없는지 확인이 필요하다(f4 는 디스펜서 쪽만 대조).\",\"3절·7절·11절(oq-042): 물류 업종에서 이동로봇–컨베이어·작업대 인계 신호를 제조사 중립으로 정한 공개 규격과, SEMI E84 개별 신호 이름·순서(유료 원문)를 확인할 필요가 있다.\",\"4절·8절: 협동 운반·협동 인지의 물류센터 적용 사례를 찾지 못해 개념 정의만 실었다.\",\"8절: 이동로봇–로봇팔 인계 확인을 다룬 국내 학술 논문과 유진로봇 과제의 1차 출처(과제 정보)가 필요하다.\",\"7절: KS B ISO 10218-2 의 판·확인 연도(KSSN 2017 확인판 항목 K001010116494 포함)와 이동식 로봇 적용 조항 확인이 필요하다.\",\"8절: RMMA 2 mm 측정 불확도의 NIST 밖 독립 확인과 ref-922 발행연도 확인이 필요하다.\",\"5절: 인계 실패 시 재시도·재배정·사람 확인에 따른 처리량 영향의 현장 사례가 필요하다(f25 는 추론).\"],\"fixes_applied\":[\"f23 강등·문장 수정 — 8절 국내 자료 항목을 [추정]으로 바꾸고 '과제 결과물을 공개했다고 보도되었다(2025-11-04)'로 고쳤으며 정보통신기획평가원·'추진한다'를 빼고 기사 1건 기반·1차 출처 미확인 한계를 병기했다.\",\"f12 표현 수정 — 6절 도킹 위치 확인에서 '관절 부하 급증'을 '모터 전류 급증(도크 접촉 감지)'으로 썼다.\",\"f15 조건 병기 — 8절 Zang 외 항목에 저자 보고·시뮬레이션·중간 부하 조건·고정 도크 비교안 대비·프리프린트를 함께 적었다.\",\"f11 병기 — 8절 RMMA 항목에 2 mm 가 NIST 보고치이며 두 출처 모두 NIST 계열이라 독립 확인이 없음을 적었다.\",\"f7·f8 업종 병기 — 3절·7절·9절·11절의 SEMI E84 서술마다 '반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다'를 넣고 7절에 개별 신호 이름·순서 미확인을 적었다.\",\"[추정] 유지 — f4·f8·f22·f24~f29 를 쓴 모든 문장을 [추정]과 '…것으로 보인다' 표현으로 두었고 [사실]로 올리지 않았다.\",\"원문 미열람 표시 — ref-007·ref-360·ref-394·ref-918~ref-929 각주 정의 끝에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-930 에는 붙이지 않았다.\",\"기존 각주 재사용 — ref-007 은 시드 각주 정의 줄을 그대로 쓰고(앞 지시에 따라 끝에 원문 미열람 표시만 덧붙임), 다른 기존 참고문헌은 참고문헌 색인의 기관·제목·발행일·URL·접근일로 각주 형식 줄을 만들었다.\",\"인용 제한 — ref-031 은 원문 직접 인용 없이 모두 재서술했다(0회).\",\"f19·f20 범위 — 7절 표 아래와 9절에서 안전 표준을 25. 안전·위험 관리와 연결되는 제약으로만 서술하고 ROP 가 이행 주체가 아니라고 적었으며, f20 에 판·확인 연도와 이동식 로봇 적용 조항 미확인을 병기했다.\",\"11절 연결 — oq-001·oq-006·oq-042·oq-049 를 두고 새 질문 2(SEMI E84 물류 적용)를 oq-042 바로 아래에 나란히 두었으며, 새 질문 3 은 근거를 f10·f11 로 보고 ASTM F3499·NIST RMMA 를 함께 언급했다(근거 필드는 JSON 에 넣지 않음).\",\"4절 용어 — 디스펜서·인제스터는 기존 용어집 페이지(docs/glossary/dispenser-ingestor.md)에 링크만 하고 glossary_updates 에는 새 용어 4건(모바일 매니퓰레이터, 협동 운반, 협동 인지, 스케줄 간 의존)만 냈다.\"]}",
+  "structured_output": {
+    "run_id": "2026-09-25-42",
+    "outline": [
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "3. 왜 중요한가",
+        "budget_chars": 650,
+        "summary": "NIST 는 이종 로봇 워크셀의 협업 평가와 협업 통신 프로토콜을 과제로 둔다. [사실][^ref-007] VDA 5050 은 주변 설비 인터페이스를 범위에서 제외해 인계 확인이 비어 있다. [사실][^ref-031]",
+        "planned_findings": [
+          "f1",
+          "f6",
+          "f8",
+          "f24"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "4. 핵심 개념과 용어",
+        "budget_chars": 900,
+        "summary": "모바일 매니퓰레이터는 ANSI/A3 R15.08-2-2023 의 IMR 유형 C 로 다뤄진다. [사실][^ref-926] 스케줄 간 의존·협동 운반·협동 인지·CBV 업무 단계를 정리한다.",
+        "planned_findings": [
+          "f19",
+          "f2",
+          "f13",
+          "f17",
+          "f18",
+          "f21",
+          "f5"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+        "budget_chars": 900,
+        "summary": "보충 → 피킹 흐름에서 이동로봇이 가져온 상자를 로봇팔이 인수하는 가상 시나리오로, 완료·인계는 독립 신호의 일치로 판정할 수 있을 것으로 보인다. [추정][^ref-216]",
+        "planned_findings": [
+          "f2",
+          "f3",
+          "f5",
+          "f10",
+          "f24",
+          "f25",
+          "f26",
+          "f27",
+          "f28"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "6. 대표 접근법과 기술",
+        "budget_chars": 1100,
+        "summary": "Open-RMF 는 결과를 받을 때까지 요청을 반복하는 워크셀 인계를 쓴다. [사실][^ref-023] VDA 5050 pick 은 새 적재 상태 보고로 완료를 본다. [사실][^ref-031]",
+        "planned_findings": [
+          "f2",
+          "f3",
+          "f4",
+          "f5",
+          "f12",
+          "f16",
+          "f24"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "budget_chars": 800,
+        "summary": "Open-RMF 워크셀, VDA 5050 3.0.0, SEMI E84(반도체 업종 참고), ASTM F3499-21, Nav2 도킹, ARIAC, CBV, 안전 표준 두 건을 정리한다. [사실][^ref-031]",
+        "planned_findings": [
+          "f2",
+          "f3",
+          "f5",
+          "f6",
+          "f7",
+          "f10",
+          "f12",
+          "f19",
+          "f20",
+          "f21"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "8. 대표 연구와 자료",
+        "budget_chars": 900,
+        "summary": "NIST ARIAC 2025 는 AGV 와 로봇팔의 트레이 인계를 다룬다. [사실][^ref-008] 인계 스테이션 연구(Zang 외 2026)는 저자 보고 시뮬레이션 수치를 낸다. [사실][^ref-925]",
+        "planned_findings": [
+          "f1",
+          "f9",
+          "f11",
+          "f13",
+          "f14",
+          "f15",
+          "f17",
+          "f18",
+          "f23"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+        "budget_chars": 700,
+        "summary": "ROP 는 인계 순서·시점 동기화, 신호 중계, 완료 판정과 업무 반영을 맡고 파지·도킹 주행·PLC 는 연계 대상일 것으로 보인다. [추정][^ref-023]",
+        "planned_findings": [
+          "f27",
+          "f28",
+          "f8",
+          "f19",
+          "f20"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "budget_chars": 700,
+        "summary": "인계는 7. 화물·재고·자산 식별과 추적, 10. 설비·건물 시스템 연동, 13·14 계획 영역 등과 이어질 것으로 보인다. [추정][^ref-044]",
+        "planned_findings": [
+          "f29",
+          "f22",
+          "f5"
+        ]
+      },
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "section": "11. 열린 질문",
+        "budget_chars": 900,
+        "summary": "기존 oq-001·oq-006·oq-042·oq-049 에 이번 실행의 진전을 적고 새 질문 4건을 둔다.",
+        "planned_findings": [
+          "f4",
+          "f7",
+          "f10",
+          "f11",
+          "f19",
+          "f22",
+          "f24"
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "path": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md",
+        "action": "update",
+        "status": "draft",
+        "diff_summary": "영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 각주 23건",
+        "content": "---\ntitle: \"17. 로봇 간 협업·물리적 인계\"\ntype: area\ncategory: \"E. 협업·현장 운영\"\narea_no: 17\nrelated_areas: [5, 7, 10, 13, 14, 16, 20, 23, 25]\ntags: [인계 확인, 모바일 매니퓰레이터, 디스펜서·인제스터, VDA 5050, 스케줄 간 의존, 도킹]\nstatus: draft\nconfidence: medium\ncreated: 2026-09-24\nupdated: 2026-09-25\nsources: [ref-007, ref-008, ref-023, ref-031, ref-044, ref-047, ref-048, ref-216, ref-360, ref-394, ref-918, ref-919, ref-920, ref-921, ref-922, ref-923, ref-924, ref-925, ref-926, ref-927, ref-928, ref-929, ref-930]\nlast_run: 2026-09-25\nversion: 2\n---\n\n[홈](../../index.md) › [E. 협업·현장 운영](index.md) › 17. 로봇 간 협업·물리적 인계\n\n# 17. 로봇 간 협업·물리적 인계\n\n!!! info \"소속 대분류\"\n    [E. 협업·현장 운영](index.md) — 핵심 질문:\n    계획과 실제가 달라지는 상황에서 일을 어떻게 계속할 것인가? [분류원문]\n\n<!-- auto:area-tracks:start -->\n<!-- auto:area-tracks:end -->\n\n<!-- auto:page-status:start -->\n<!-- auto:page-status:end -->\n\n## 1. 한 줄 정의\n\n이동로봇–로봇팔 협업, 공동 운반, 작업 동기화, 인계 확인, 필요한 정보·인식 결과 공유 [분류원문]\n\n## 2. SCM 관점의 질문\n\nAMR이 물건을 가져온 뒤 로봇팔이 안전하게 인수했음을 어떻게 확인할까? [분류원문]\n\n> 원문 주석: 17번의 협업은 이동로봇끼리 길을 양보하는 문제보다 넓다. **이동·조작·검사·사람 작업을 하나의 공정으로 묶는 문제**까지 포함한다. NIST도 이종 로봇과 사람의 협업 성능을 별도 연구·평가 대상으로 다룬다. [7] [분류원문]\n\n원문의 [7]은 참고문헌 [ref-007](../../references/ref-007.md)에 해당한다.[^ref-007]\n\n## 3. 왜 중요한가\n\nNIST 의 협업 로봇 시스템 성능 프로젝트는 사람–로봇·로봇–로봇 협업 팀의 안전성과 효과를 평가하는 방법·지표를 목표로 하며, 제조사·기종이 다른 로봇이 함께 일하는 이종 로봇 워크셀과 로봇 간 협업 통신 프로토콜 개발을 과제로 둔다(확인일 2026-09-25). [사실][^ref-007]\n\n그런데 이동로봇 관제 규격인 VDA 5050 은 관제–이동로봇 통신과 관계없는 주변 설비·인프라·외부 IT 시스템 인터페이스를 범위에서 제외하며, 최신판 3.0.0 에도 로봇과 컨베이어·스테이션 사이 인계 신호 절차는 없다. [사실][^ref-031]\n\n반도체 업종의 SEMI E84 처럼 준비–진행–완료를 양쪽이 단계별로 확인하는 인계 신호 구조는 ROP 가 이동로봇–작업대·로봇팔 인계의 상태 모델을 정할 때 참고할 수 있을 것으로 보이나, 이는 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니고, 물류 업종에서 같은 역할을 하는 제조사 중립 공개 규격은 이번 조사에서 확인하지 못했다. [추정][^ref-918][^ref-919][^ref-031]\n\n2절의 질문에 대해서는 도킹·정지 위치 확인, 로봇팔·워크셀의 인수 결과, 이동로봇의 적재 상태 변경 보고라는 서로 독립된 신호가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보인다(6절). [추정][^ref-216][^ref-930][^ref-031][^ref-920]\n\n## 4. 핵심 개념과 용어\n\n- **모바일 매니퓰레이터(Mobile Manipulator)** — AMR(Autonomous Mobile Robot, 자율이동로봇)·AGV(Automated Guided Vehicle, 무인운반차) 같은 이동 플랫폼에 로봇팔을 단 로봇으로, ANSI/A3 R15.08-2-2023 은 이를 산업용 이동로봇(Industrial Mobile Robot, IMR) 유형 C 로 다룬다. [사실][^ref-926]\n- **[디스펜서·인제스터](../../glossary/dispenser-ingestor.md)(Dispenser / Ingestor)** — Open-RMF 에서 로봇에 물건을 내주는 워크셀과 로봇에서 물건을 받아들이는 워크셀로, 로봇은 결과 메시지를 받을 때까지 요청 메시지를 반복해 보내고 워크셀은 상태를 주기적으로 발행한다. [사실][^ref-023]\n- **스케줄 간 의존(Cross-schedule Dependency, XD)** — Korsah·Stentz·Dias 의 [다중 로봇 작업 배정](../../glossary/mrta.md)(Multi-Robot Task Allocation, MRTA) 분류 iTax(2013)는 작업 의존을 의존 없음(ND)·일정 내 의존(ID)·스케줄 간 의존(XD)·복합 의존(CD)으로 나누고, 서로 다른 로봇에 배정된 작업 사이에 [선후 제약](../../glossary/precedence-constraint.md) 같은 관계가 있으면 스케줄 간 의존으로 본다. [사실][^ref-394]\n- **협동 운반(Cooperative Object Transport)** — 로봇 한 대로 다루기에 너무 크거나 무거운 물체를 여러 로봇이 행동을 조율해 목적지까지 옮기는 일로, Tuci 외(2018)는 운반·조율·제어 전략이 다양하게 제안되어 왔다고 정리했다. [사실][^ref-923]\n- **협동 인지(Collaborative Perception)** — Singh 외(2024)는 로봇 플릿의 협동 인지를 여러 에이전트가 센서 정보를 공유·융합해 환경을 더 넓게 이해하고 판단을 돕는 능력으로 정의했다. [사실][^ref-928]\n- **CBV 업무 단계 accepting·receiving** — GS1 [핵심 업무 어휘](../../glossary/cbv.md)(Core Business Vocabulary, CBV) 온톨로지(2021-09-30 수정판)는 accepting 을 물체의 점유·소유가 바뀌는 활동으로, receiving 을 받아들인 물체가 받는 쪽 재고에 더해지는 활동으로 정의하고, loading·unloading 은 운송 수단에 싣고 내리는 활동으로 정의한다. [사실][^ref-044]\n- **적재 장치(load handling device, lhd)** — VDA 5050 3.0.0 의 pick·drop 동작 파라미터로, 적재 장치가 여럿인 로봇에서 어느 장치로 화물을 다룰지 지정한다. [사실][^ref-031]\n\n## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)\n\n다음은 설명을 위한 가상의 시나리오이다.\n\n**물류 흐름 단계:** 보충 → 피킹\n\n**시나리오:** 이동로봇이 가져온 상자를 작업대 로봇팔이 인수\n\n| 항목 | 내용 |\n|---|---|\n| 시작 조건 | 이동로봇이 작업대 앞 하역 지점에 도착한다(가상 설정). Open-RMF 배송 작업이라면 이 시점부터 로봇이 결과 메시지를 받을 때까지 인제스터 요청을 반복해 보낸다. [사실][^ref-023] |\n| 작업 대상 | 상자 단위 화물. 인계 요청이 담는 화물 정보는 규격마다 달라, Open-RMF 디스펜서 요청은 품목 유형 id·수량·칸 이름을, VDA 5050 pick·drop 은 적재물 유형·식별 번호(loadType, loadId)를 담는다. [사실][^ref-047][^ref-048][^ref-031] |\n| 수행 자원 | 이동로봇은 운반·도킹을, 로봇팔은 파지·적재를 맡고, ROP 는 인계 순서·시점 동기화와 요청·결과 신호 중계, 인계 완료 판정을 맡으며 파지·도킹 주행 제어는 제조사가 맡는 것으로 보인다. [추정][^ref-023][^ref-031][^ref-044][^ref-216] |\n| 제약 | 보충 단계에서 이동로봇 운반과 로봇팔 적치가 선후로 이어지면 스케줄 간 의존이 생기고 인계 스테이션의 도크·버퍼가 공용 자원 제약이 되어, 인계 시점을 두 로봇 일정에 함께 맞춰야 할 것으로 보인다. [추정][^ref-394][^ref-925] 도킹 정지 위치의 반복성은 ASTM F3499-21 같은 시험 방법으로 확인한다. [사실][^ref-920] |\n| 완료·인계 | 이동로봇의 도킹·정지 위치 확인, 로봇팔·워크셀의 인수 결과(SUCCESS), 이동로봇의 적재 상태 변경 보고가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보인다. [추정][^ref-216][^ref-930][^ref-031][^ref-920] |\n| 예외·성과 | 워크셀 결과 FAILED, 도킹 재시도 한도 초과, 동작 FAILED 가 나오면 인계 재시도·다른 작업대로 재배정·사람 확인 가운데 하나로 넘겨야 하며, 대기 동안 이동로봇과 작업대가 함께 묶여 처리량 손실이 생길 것으로 보인다(현장 사례 미확인). [추정][^ref-930][^ref-216][^ref-031][^ref-925] |\n\n가상 흐름은 다음과 같다. 이동로봇이 도착해 도킹을 마치면 로봇팔이 상자를 집어 작업대에 올리고, 이동로봇은 적재 상태 변화를 보고한다. ROP 는 이 신호들을 모아 인계 완료를 판정한 뒤 재고 이동을 업무 시스템에 기록한다. 어느 신호라도 어긋나면 예외·성과 칸의 처리로 넘어간다.\n\n## 6. 대표 접근법과 기술\n\n### 요청–결과 메시지로 인계 주고받기\n\nOpen-RMF 배송 작업에서 로봇은 픽업 지점에서 DispenserResult 를 받을 때까지 DispenserRequest 를, 하역 지점에서 IngestorResult 를 받을 때까지 IngestorRequest 를 반복해 보내며, 워크셀은 상태(DispenserState·IngestorState)를 주기적으로 발행한다. [사실][^ref-023] 이 흐름은 플릿 어댑터의 perform_deliveries 설정을 켜야 동작한다. [사실][^ref-023]\n\n디스펜서 요청 메시지는 시각·요청 id(request_guid)·대상 워크셀 이름(target_guid)·운반체 유형(transporter_type)·품목 목록(품목 유형 id, 수량, 칸 이름)을 담고, 결과 메시지는 시각·요청 id·보낸 워크셀 id(source_guid)·상태(ACKNOWLEDGED, SUCCESS, FAILED)를 담는다. [사실][^ref-047][^ref-048][^ref-930]\n\n이 위키의 추론으로는, 결과 메시지가 요청 단위의 성공·실패 상태만 담고 넘겨받은 화물의 개별 식별자나 실측 수량 필드가 없어 인수 확인의 근거가 워크셀 자체 판단에 기대므로, ROP 가 화물 식별·적재 상태 같은 별도 확인과 결합해야 할 것으로 보인다. [추정][^ref-930][^ref-047][^ref-048]\n\n연구 시스템에서는 더 가벼운 신호도 쓴다. DELIVER(2025)는 로봇끼리 화물을 넘기는 릴레이 배송에서 넘기는 로봇이 ROS 메시지나 LED 색 변화로 준비를 알리고, 받는 로봇이 그 신호를 감지하면 움직이기 시작하게 한다. [사실][^ref-360]\n\n### 동작 완료를 적재 상태 보고로 판정\n\nVDA 5050 3.0.0 의 pick·drop 동작은 적재 장치(lhd), 스테이션 유형(바닥, 랙, 수동·능동 컨베이어 등), 스테이션 이름, 적재물 유형·식별 번호(loadType, loadId), 높이·깊이 파라미터를 두며, pick 은 적재물이 로봇에 들어오고 로봇이 새 적재 상태를 보고해야 완료(FINISHED)로 본다(발행일 미확인, 확인일 2026-09-25). [사실][^ref-031]\n\n### 도킹 위치 확인\n\nROS 2 Nav2 도킹 프레임워크는 충전 도크와 컨베이어·팔레트 같은 비충전 도크를 모두 지원하며, 준비 위치(staging pose)로 간 뒤 센서로 도크 위치를 다듬어 접근하고, 모터 전류 급증(도크 접촉 감지)이나 거리 임계값으로 도킹 여부를 판정하며, 실패하면 기본 3회까지 재시도한다. [사실][^ref-216]\n\n### 여러 신호를 결합한 인계 완료 판정\n\n위 세 가지 신호(도킹 확인, 워크셀 인수 결과, 적재 상태 보고)가 모두 일치할 때 인계 완료로 인정하는 방식이 가능할 것으로 보이나, 세 신호를 결합하는 규정은 이번 조사에서 어느 표준에서도 확인하지 못했다. [추정][^ref-216][^ref-930][^ref-031][^ref-920] 아래 도식은 이 위키가 제안하는 판정 흐름이다.\n\n```mermaid\nflowchart LR\n  dock[이동로봇 도킹·정지 위치 확인] --> judge{ROP 인계 완료 판정}\n  cell[로봇팔·워크셀 인수 결과 SUCCESS] --> judge\n  load[이동로봇 적재 상태 변경 보고] --> judge\n  judge -->|세 신호 일치| done[인계 완료·재고 이동 기록]\n  judge -->|불일치 또는 FAILED| exc[재시도·재배정·사람 확인]\n```\n\n## 7. 관련 표준·프레임워크·오픈소스\n\n| 이름 | 유형 | 이 영역과의 관계 | 출처 |\n|---|---|---|---|\n| Open-RMF 워크셀 메시지(rmf_dispenser_msgs 등) | 오픈소스 | 디스펜서·인제스터의 요청–결과·상태 메시지로 워크셀 인계를 주고받는다. [사실][^ref-023][^ref-930] | [ref-023](../../references/ref-023.md), ref-930 |\n| VDA 5050 3.0.0 | 표준 | pick·drop 동작이 적재 장치·스테이션·적재물 파라미터를 두지만 주변 설비와의 인계 신호 절차는 범위 밖이다. [사실][^ref-031] | [ref-031](../../references/ref-031.md) |\n| SEMI E84 | 표준 | 자동 반송 시스템(Automated Material Handling System, AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호로 준비 여부·사용 로드포트·진행·완료를 주고받으며, 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니고, 개별 신호 이름·순서는 미확인이다. [사실][^ref-918][^ref-919] | ref-918·ref-919, 원문 미열람 |\n| ASTM F3499-21 | 표준 | A-UGV 가 도크 같은 현장 설비 기준 위치에 정지할 때의 위치 반복성과 포크 같은 적재 이송 장치의 높이 제어 반복성을 확인하는 시험 방법이다(2021). [사실][^ref-920] | ref-920, 원문 미열람 |\n| Nav2 Docking Framework | 오픈소스 | 충전·비충전 도크의 도킹 절차·판정·재시도를 제공한다(6절). [사실][^ref-216] | [ref-216](../../references/ref-216.md) |\n| [ARIAC](../../glossary/ariac.md) 2025 | 평가 프로그램 | AGV 와 로봇팔의 트레이 인계, 이동 전 키트 품질 확인 서비스를 시나리오에 둔다(8절). [사실][^ref-008] | [ref-008](../../references/ref-008.md) |\n| NIST 협업 로봇 성능 | 평가 프로그램 | 이종 로봇 워크셀의 협업 성능 평가를 과제로 둔다(3절). [사실][^ref-007] | [ref-007](../../references/ref-007.md), 원문 미열람 |\n| GS1 CBV | 표준 | 인계 이벤트에 쓸 업무 단계 어휘(accepting·receiving 등)를 정의한다(4절). [사실][^ref-044] | [ref-044](../../references/ref-044.md) |\n| ANSI/A3 R15.08-2-2023 | 표준 | 산업용 이동로봇과 그 플릿을 현장에 통합·배치할 때의 안전 요구사항을 정하고 유형 C(모바일 매니퓰레이터)를 다룬다. [사실][^ref-926] | ref-926, 원문 미열람 |\n| KS B ISO 10218-2 | 표준 | 로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준이며, 판·확인 연도와 이동식 로봇 적용 조항은 미확인이다. [사실][^ref-927] | ref-927, 원문 미열람 |\n\n안전 표준 두 건(ANSI/A3 R15.08-2-2023, KS B ISO 10218-2)은 [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)의 내용이며, 이 영역에서는 인계 작업에 걸리는 제약으로만 연결한다. 전체 목록은 [표준·프레임워크 목록](../../standards/index.md)에 있다.\n\n## 8. 대표 연구와 자료\n\n- NIST, ARIAC 2025 시나리오 — AGV 가 검사·조립·출하·재활용 스테이션 사이로 셀 트레이를 옮기고 검사 로봇팔이 합격 셀을 AGV 트레이에 올리며, 완성 키트를 실은 AGV 를 움직이기 전에 키트 품질 확인 서비스를 호출해야 하고 트레이에 놓인 셀은 고정되어 검사 스테이션에서 다시 옮길 수 없다. 이동 전 확인을 요구하는 인계 평가 사례다. [사실][^ref-008]\n- NIST, Reconfigurable Mobile Manipulator Artifact(RMMA)와 Bostelman 외(발행연도 미확인) — NIST 는 ASTM F45 위원회에서 이동로봇·모바일 매니퓰레이터 시험 방법 개발에 참여하며, 매니퓰레이터에 단 카메라·센서로 기준 표식을 측정해 위치 불확도를 재는 시험 기물(RMMA)을 설계했고 그 측정 불확도가 2 mm 수준이라고 보고했다. 2 mm 는 NIST 보고치이며 두 출처 모두 NIST 계열이라 독립 확인은 없다. [사실][^ref-921][^ref-922]\n- Coltin·Veloso, Online pickup and delivery planning with transfers for mobile robots(ICRA 2014) — 여러 이동로봇이 서로 물건을 옮겨 주는 전달(transfer)을 허용해 픽업·배송 계획을 개선하는 온라인 계획 알고리즘을 제시했다. [사실][^ref-924]\n- Zang 외, Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations(2026-07, 프리프린트) — 구역에 묶인 플릿들이 도크 1개와 유한 버퍼를 가진 인계 스테이션으로 화물을 주고받는 [다중 에이전트 픽업·배송](../../glossary/multi-agent-pickup-and-delivery.md) 문제를 정식화했다. 공유 도크 예약 달력과 버퍼 점유 예측으로 경로를 승인하는 제어기(HARR)가 처리량을 최대 77% 높이고 적체를 92% 줄였다고 하나, 이는 저자 보고이며 시뮬레이션·중간 부하 조건에서 고정 도크 비교안 대비로 얻은 프리프린트 수치다. [사실][^ref-925]\n- Korsah·Stentz·Dias, A comprehensive taxonomy for multi-robot task allocation(2013) — 작업 의존을 포함한 배정 분류 iTax 를 제시했다(4절의 스케줄 간 의존). [사실][^ref-394]\n- Tuci 외, Cooperative Object Transport in Multi-Robot Systems(2018) — 협동 운반 연구를 검토했다. 물류센터 적용 사례는 이번 조사에서 찾지 못했다. [사실][^ref-923]\n- Singh 외, Multi-agent Collaborative Perception for Robotic Fleet(2024) — 로봇 플릿의 협동 인지 연구를 체계적으로 검토했다. [사실][^ref-928]\n- 국내 자료: 유진로봇이 과학기술정보통신부 스마트제조혁신기술개발사업의 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 개발 과제 결과물을 공개했다고 보도되었다(2025-11-04). 기사 1건에 기댄 것이며 1차 출처(과제 정보)는 확인하지 못했다. [추정][^ref-929]\n\n## 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)\n\n| 경계 | ROP가 직접 맡는 것 | 외부와 연계하는 것 |\n|---|---|---|\n| 상위 업무 시스템 | 여러 확인 신호를 모은 인계 완료 판정과 그 결과의 재고·업무 시스템 반영 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 재고를 기록하는 업무 시스템. 인계 이벤트의 업무 단계 값은 미정이다(oq-006). |\n| 로봇 자체 지능·제어 | 인계 작업의 순서·시점 동기화, 도킹·동작 결과 상태와 실패 신호 수신 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 로봇팔의 파지·동작 제어, 이동로봇의 도킹 주행 제어와 센서 인식 [추정][^ref-216][^ref-031][^ref-926] |\n| 시설·설비 제어 | 인계 요청·결과 신호의 중계 [추정][^ref-023][^ref-031][^ref-044] | 연계 대상: 컨베이어 PLC 와 설비 안전 제어 [추정][^ref-216][^ref-031][^ref-926] |\n| 업종별 조건 | 업종 인계 규격을 인계 상태 모델의 참고 사례로 검토 [추정][^ref-918][^ref-919][^ref-031] | 연계 대상: SEMI E84 같은 업종별 인계 규격. 반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다. |\n\nROP 는 제조사가 맡는 파지·도킹 주행·설비 제어의 결과 상태와 실패 신호를 받는 쪽에 서고, 그 신호를 묶어 인계 완료를 판정해 업무 시스템에 반영하는 것을 직접 범위로 삼을 것으로 보인다. [추정][^ref-216][^ref-031][^ref-926] 모바일 매니퓰레이터의 현장 통합 안전 요구(ANSI/A3 R15.08-2-2023, KS B ISO 10218-2)는 25. 안전·위험 관리와 연결되는 제약이며, ROP 가 이 안전 요구를 이행하는 주체는 아닌 것으로 보인다. [추정][^ref-926][^ref-927]\n\n범위 경계의 기준과 제품 전략에 따른 경계 이동은 [범위 경계](../../about/scope-boundary.md) 페이지에 있다.\n\n## 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\n\n- [7. 화물·재고·자산 식별과 추적](../b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 시설 안 로봇 사이·로봇과 작업대 사이의 물리적 인계는 CBV 의 accepting 이나 receiving 에 가깝고 운송 수단 기준의 loading·unloading 과는 맞지 않아, 인계 이벤트의 업무 단계 값은 ROP 가 정해야 할 것으로 보인다(oq-006). [추정][^ref-044]\n- [10. 설비·건물 시스템 연동](../c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — 워크셀·컨베이어와의 인계 신호로 이어질 것으로 보인다. [추정][^ref-023]\n- [5. 로봇 능력·작업 온톨로지](../b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — pick·drop 에서 쓰는 적재 장치(lhd) 선언으로 로봇 능력 표현과 이어질 것으로 보인다. [추정][^ref-031]\n- [13. 작업 배정 — MRTA](../d-planning-and-optimization/13-task-allocation-mrta.md)·[14. 작업 순서·스케줄링](../d-planning-and-optimization/14-task-sequencing-and-scheduling.md) — 서로 다른 로봇 작업의 스케줄 간 의존으로 이어질 것으로 보인다. [추정][^ref-394]\n- [16. 공용 자원·충전·에너지 최적화](../d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — 인계 스테이션의 도크 예약·버퍼 제약으로 이어질 것으로 보인다. [추정][^ref-925]\n- [20. 예외 복구·재계획·업무 연속성](20-exception-recovery-replanning-and-business-continuity.md) — 인계 실패 뒤 재시도·재배정·사람 확인 처리로 이어질 것으로 보인다. [추정][^ref-930][^ref-216]\n- [23. 시험·형식 검증·벤치마크](../f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 도킹 위치 시험(ASTM F3499-21)과 ARIAC 같은 평가로 이어질 것으로 보인다. [추정][^ref-920][^ref-008]\n- [25. 안전·위험 관리](../g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 모바일 매니퓰레이터 통합 안전 요구로 이어질 것으로 보인다. [추정][^ref-926]\n\n## 11. 열린 질문\n\n- **oq-001** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-01) 로봇의 적재·하역 완료 신호(VDA 5050 drop 동작 완료, Open-RMF IngestorResult)를 EPCIS 인계 이벤트로 옮기는 표준 매핑이나 공개 구현 사례가 있는가? 이번 실행에서 Open-RMF 디스펜서 결과 메시지에 화물의 개별 식별자·실측 수량 필드가 없음을 확인했으므로, 매핑에는 별도 화물 식별 확인이 필요할 것으로 보인다. [추정][^ref-930]\n- **oq-006** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-03) CBV의 loading·unloading이 운송 수단 적재로 정의되어 있을 때 시설 안 로봇의 적재·운반·하역은 어떤 업무 단계(bizStep) 값이나 사용자 정의 어휘로 기록해야 하는가? 이번 실행은 accepting·receiving 정의를 보강했으나 로봇 인계에 쓸 값을 권고한 GS1 문서는 찾지 못했다. [추정][^ref-044]\n- **oq-042** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-25) 컨베이어·작업대와 이동로봇 사이 적재물 인계 신호(준비·허가·이송·완료)를 제조사 중립으로 정한 공개 표준이나 규격이 있는가? 이번 실행에서 VDA 5050 이 주변 설비 인터페이스를 범위에서 제외함을 확인했고 반도체 업종 규격 SEMI E84 를 찾았으나(반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다), 물류 업종의 제조사 중립 규격은 찾지 못했다. [추정][^ref-031][^ref-918]\n  - **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 반도체 업종의 SEMI E84 같은 단계별 인계 신호를 물류센터의 이동로봇–컨베이어·작업대 인계에 적용하거나 옮긴 사례가 있는가?\n- **oq-049** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-34) 제조사가 다른 로봇 플릿 사이의 작업 선후(예: 피킹 로봇 완료 뒤 운반 로봇 출발)를 작업 요청 수준에서 표현·집행하는 표준 필드나 공개 구현이 있는가? 4절의 스케줄 간 의존과 관련된다.\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 로봇팔·워크셀의 인수 결과와 이동로봇의 적재 상태 보고가 어긋날 때(한쪽은 성공, 다른 쪽은 적재 유지) 어느 신호를 기준으로 인계 완료를 판정하는지 정한 표준이나 현장 사례가 있는가?\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) ASTM F3499·NIST RMMA 같은 도킹·위치 정밀도 시험 결과를 로봇팔 파지 허용 오차와 연결해 인계 가능 여부를 정하는 기준이 있는가?\n- **신규** (상태: 열림 · 제기 2026-09-25 · 실행 2026-09-25-42) 국내에 ANSI/A3 R15.08-2 의 유형 C(모바일 매니퓰레이터) 통합 안전 요구에 대응하는 KS 표준이나 인증 기준이 있는가?\n\n전체 목록은 [열린 질문](../../open-questions.md)에 있다.\n\n## 12. 최근 업데이트 (자동)\n\n<!-- auto:area-recent:start -->\n아직 기록된 업데이트가 없다.\n<!-- auto:area-recent:end -->\n\n## 13. 참고 자료 (각주)\n\n[^ref-007]: NIST, Performance of Collaborative Robot Systems, 미확인, https://www.nist.gov/programs-projects/performance-collaborative-robot-systems, 접근일 2026-09-24 (원문 미열람)\n[^ref-008]: NIST, ARIAC Documentation, 미확인, https://pages.nist.gov/ARIAC_docs/en/latest/, 접근일 2026-09-25\n[^ref-023]: Open Robotics, Workcells - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/integration_workcells.html, 접근일 2026-09-25\n[^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25\n[^ref-044]: GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0), 2021-09-30, https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl, 접근일 2026-09-25\n[^ref-047]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequest.msg, 접근일 2026-09-25\n[^ref-048]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequestItem.msg, 접근일 2026-09-25\n[^ref-216]: ROS Navigation (ros-navigation/navigation2 GitHub), nav2_docking — README (Open Navigation's Nav2 Docking Framework), 미확인, https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md, 접근일 2026-09-25\n[^ref-360]: arXiv 2508.19114 저자(미확인), DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning, 2025-08, https://arxiv.org/abs/2508.19114, 접근일 2026-09-25 (원문 미열람)\n[^ref-394]: Korsah, G. A., Stentz, A., & Dias, M. B., A comprehensive taxonomy for multi-robot task allocation, 2013, https://journals.sagepub.com/doi/10.1177/0278364913496484, 접근일 2026-09-25 (원문 미열람)\n[^ref-918]: SEMI, E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface, 미확인, https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface, 접근일 2026-09-25 (원문 미열람)\n[^ref-919]: PEER Group, SEMI E84: Carrier Handoff, 미확인, https://www.peergroup.com/definition-of-standard/semi-e84/, 접근일 2026-09-25 (원문 미열람)\n[^ref-920]: ASTM International, Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21), 2021, https://www.astm.org/f3499-21.html, 접근일 2026-09-25 (원문 미열람)\n[^ref-921]: NIST, Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA), 미확인, https://www.nist.gov/publications/design-and-application-reconfigurable-mobile-manipulator-artifact-rmma, 접근일 2026-09-25 (원문 미열람)\n[^ref-922]: Bostelman, R. 외(NIST), Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development, 미확인, https://pubmed.ncbi.nlm.nih.gov/28690359/, 접근일 2026-09-25 (원문 미열람)\n[^ref-923]: Tuci, E., Alkilabi, M. H. M., & Akanyeti, O., Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art, 2018, https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2018.00059/full, 접근일 2026-09-25 (원문 미열람)\n[^ref-924]: Coltin, B., & Veloso, M., Online pickup and delivery planning with transfers for mobile robots, 2014, https://www.researchgate.net/publication/289338501_Online_pickup_and_delivery_planning_with_transfers_for_mobile_robots, 접근일 2026-09-25 (원문 미열람)\n[^ref-925]: Zang, C. 외, Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations, 2026-07, https://arxiv.org/abs/2607.17724, 접근일 2026-09-25 (원문 미열람)\n[^ref-926]: ANSI / A3(Association for Advancing Automation), ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s), 2023, https://webstore.ansi.org/standards/ria/ansia3r15082023, 접근일 2026-09-25 (원문 미열람)\n[^ref-927]: 국가표준인증통합정보시스템(KSSN), KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합, 미확인, https://www.kssn.net/search/stddetail.do?itemNo=K001010083660, 접근일 2026-09-25 (원문 미열람)\n[^ref-928]: Singh, A., Raut, G., & Choudhary, A., Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review, 2024-03, https://arxiv.org/abs/2405.15777, 접근일 2026-09-25 (원문 미열람)\n[^ref-929]: 다음뉴스 게재 기사(원 언론사 미확인), 유진로봇, 지능형 제조 물류시스템 공개, 2025-11-04, https://v.daum.net/v/20251104092138920, 접근일 2026-09-25 (원문 미열람)\n[^ref-930]: Open Robotics (open-rmf), rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg, 미확인, https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg, 접근일 2026-09-25\n"
+      }
+    ],
+    "changelog_entry": "2026-09-25 | 17. 로봇 간 협업·물리적 인계 | 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 | run 2026-09-25-42",
+    "index_updates": {
+      "home_recent": "2026-09-25 — 17. 로봇 간 협업·물리적 인계: 3~11절 신규 작성(Open-RMF 워크셀·VDA 5050 pick 완료 조건·도킹 시험·스케줄 간 의존, 인계 완료 판정은 이 위키의 추론)",
+      "category_recent": "2026-09-25 — 17. 로봇 간 협업·물리적 인계: 영역 심화 초안, 물류 업종 제조사 중립 인계 규격은 미확인(oq-042)",
+      "area_recent": "2026-09-25 — 17. 로봇 간 협업·물리적 인계: 3~11절 신규 작성, 새 열린 질문 4건"
+    },
+    "glossary_updates": [
+      {
+        "action": "new",
+        "slug": "mobile-manipulator",
+        "term_ko": "모바일 매니퓰레이터",
+        "term_en": "Mobile Manipulator",
+        "definition": "AMR·AGV 같은 이동 플랫폼에 로봇팔을 결합해 이동과 집기·놓기 작업을 함께 수행하는 로봇이다.",
+        "description": "ANSI/A3 R15.08-2-2023 은 매니퓰레이터를 단 이동로봇을 산업용 이동로봇(IMR) 유형 C 로 다룬다.",
+        "related_areas": [
+          17,
+          25
+        ],
+        "sources": [
+          "ref-926"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "cooperative-object-transport",
+        "term_ko": "협동 운반",
+        "term_en": "Cooperative Object Transport",
+        "definition": "로봇 한 대로 다루기 어려운 크거나 무거운 물체를 여러 로봇이 행동을 조율해 목적지까지 함께 옮기는 일이다.",
+        "related_areas": [
+          17
+        ],
+        "sources": [
+          "ref-923"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "collaborative-perception",
+        "term_ko": "협동 인지",
+        "term_en": "Collaborative Perception",
+        "definition": "여러 로봇이 센서 정보나 인식 결과를 공유·융합해 한 대가 볼 때보다 넓고 정확하게 환경을 파악하는 방식이다.",
+        "related_areas": [
+          17
+        ],
+        "sources": [
+          "ref-928"
+        ]
+      },
+      {
+        "action": "new",
+        "slug": "cross-schedule-dependency",
+        "term_ko": "스케줄 간 의존",
+        "term_en": "Cross-schedule Dependency (XD)",
+        "definition": "서로 다른 로봇에 배정된 작업 사이에 선후 같은 관계가 있어, 한 로봇의 작업 적합성이 다른 로봇의 일정에 따라 달라지는 작업 의존 유형이다.",
+        "description": "Korsah·Stentz·Dias(2013)의 MRTA 분류 iTax 는 작업 의존을 ND·ID·XD·CD 로 나눈다.",
+        "related_areas": [
+          17,
+          13,
+          14
+        ],
+        "sources": [
+          "ref-394"
+        ]
+      }
+    ],
+    "reference_updates": [
+      {
+        "id": "ref-007",
+        "org": "NIST",
+        "title": "Performance of Collaborative Robot Systems",
+        "published": null,
+        "url": "https://www.nist.gov/programs-projects/performance-collaborative-robot-systems",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 사람–로봇·로봇–로봇 협업 팀과 이종 로봇 워크셀의 협업 성능을 평가하는 시험 방법·지표·통신 프로토콜 개발 프로젝트(검색 요약 기준).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-008",
+        "org": "NIST",
+        "title": "ARIAC Documentation",
+        "published": null,
+        "url": "https://pages.nist.gov/ARIAC_docs/en/latest/",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "ARIAC 문서. 2025 시나리오의 AGV 스테이션 이동, 로봇팔의 트레이 적재, 이동 전 키트 품질 확인 서비스를 원본으로 확인했다.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-023",
+        "org": "Open Robotics",
+        "title": "Workcells - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_workcells.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "디스펜서·인제스터 워크셀과 배송 작업의 요청–결과 반복 방식을 설명한 장.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "VDA 5050 최신판(3.0.0) 명세 원문. pick·drop 파라미터와 완료 조건, 주변 설비 인터페이스의 범위 제외를 확인했다.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-044",
+        "org": "GS1",
+        "title": "gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0)",
+        "published": "2021-09-30",
+        "url": "https://github.com/gs1/EPCIS/blob/master/Ontology/CBV.ttl",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "CBV 업무 단계·상태 어휘 온톨로지. accepting·receiving·loading·unloading 정의를 원본으로 확인했다.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-047",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequest.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequest.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "디스펜서 요청 메시지(시각, 요청 id, 대상 워크셀, 운반체 유형, 품목 목록).",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-048",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserRequestItem.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserRequestItem.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "디스펜서 요청 품목(품목 유형 id, 수량, 칸 이름).",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-216",
+        "org": "ROS Navigation (ros-navigation/navigation2 GitHub)",
+        "title": "nav2_docking — README (Open Navigation's Nav2 Docking Framework)",
+        "published": null,
+        "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_docking/README.md",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "충전·비충전 도크 도킹 절차(준비 위치, 도크 위치 보정, 전류 급증·거리 임계 판정, 재시도)를 설명한 README.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-360",
+        "org": "arXiv 2508.19114 저자(미확인)",
+        "title": "DELIVER: A System for LLM-Guided Coordinated Multi-Robot Pickup and Delivery using Voronoi-Based Relay Planning",
+        "published": "2025-08",
+        "url": "https://arxiv.org/abs/2508.19114",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 보로노이 경계에서 로봇끼리 화물을 넘기는 릴레이 배송과 가벼운 준비 신호 방식을 다룬 프리프린트.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-394",
+        "org": "Korsah, G. A., Stentz, A., & Dias, M. B.",
+        "title": "A comprehensive taxonomy for multi-robot task allocation",
+        "published": "2013",
+        "url": "https://journals.sagepub.com/doi/10.1177/0278364913496484",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 작업 사이 의존(ND·ID·XD·CD)을 포함한 다중 로봇 작업 배정 분류 iTax 를 제시한 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-918",
+        "org": "SEMI",
+        "title": "E08400 - SEMI E84 - Specification for Enhanced Carrier Handoff Parallel I/O Interface",
+        "published": null,
+        "url": "https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 자동 반송 시스템과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 SEMI 표준의 판매 페이지(유료 원문).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-919",
+        "org": "PEER Group",
+        "title": "SEMI E84: Carrier Handoff",
+        "published": null,
+        "url": "https://www.peergroup.com/definition-of-standard/semi-e84/",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 반도체 자동화 소프트웨어 업체의 SEMI E84 해설 페이지로, 신호 교환으로 인계 준비·진행·완료를 확인한다고 설명한다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-920",
+        "org": "ASTM International",
+        "title": "Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21)",
+        "published": "2021",
+        "url": "https://www.astm.org/f3499-21.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-921",
+        "org": "NIST",
+        "title": "Design and Application of the Reconfigurable Mobile Manipulator Artifact (RMMA)",
+        "published": null,
+        "url": "https://www.nist.gov/publications/design-and-application-reconfigurable-mobile-manipulator-artifact-rmma",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 모바일 매니퓰레이터의 위치 불확도를 기준 표식으로 재는 시험 기물(RMMA)의 설계와 적용을 다룬 NIST 발행물.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-922",
+        "org": "Bostelman, R. 외(NIST)",
+        "title": "Mobile Robot and Mobile Manipulator Research Towards ASTM Standards Development",
+        "published": null,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28690359/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. ASTM F45 표준 개발을 위한 NIST 의 이동로봇 도킹·모바일 매니퓰레이터 성능 측정 연구를 정리한 논문.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-923",
+        "org": "Tuci, E., Alkilabi, M. H. M., & Akanyeti, O.",
+        "title": "Cooperative Object Transport in Multi-Robot Systems: A Review of the State-of-the-Art",
+        "published": "2018",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2018.00059/full",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 여러 로봇이 행동을 조율해 크거나 무거운 물체를 옮기는 협동 운반 연구를 검토한 리뷰.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-924",
+        "org": "Coltin, B., & Veloso, M.",
+        "title": "Online pickup and delivery planning with transfers for mobile robots",
+        "published": "2014",
+        "url": "https://www.researchgate.net/publication/289338501_Online_pickup_and_delivery_planning_with_transfers_for_mobile_robots",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 이동로봇 사이 물건 전달을 허용해 픽업·배송 계획을 개선하는 온라인 알고리즘(ICRA 2014).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-925",
+        "org": "Zang, C. 외",
+        "title": "Lifelong Multi-Subsystem Pickup and Delivery with Buffer-Limited Handover Stations",
+        "published": "2026-07",
+        "url": "https://arxiv.org/abs/2607.17724",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 도크 1개·유한 버퍼의 인계 스테이션으로 화물을 주고받는 다중 서브시스템 픽업·배송 문제와 도크 예약·버퍼 예측 제어기(HARR)를 제시한 프리프린트.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-926",
+        "org": "ANSI / A3(Association for Advancing Automation)",
+        "title": "ANSI/A3 R15.08-2-2023 - Industrial Mobile Robots - Safety Requirements - Part 2: Requirements for IMR system(s) and IMR application(s)",
+        "published": "2023",
+        "url": "https://webstore.ansi.org/standards/ria/ansia3r15082023",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 이동로봇 시스템·응용·플릿의 현장 통합 안전 요구사항을 정한 미국 국가표준으로, 매니퓰레이터를 단 이동로봇(유형 C)을 다룬다.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-927",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "title": "KS B ISO 10218-2 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합",
+        "published": null,
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010083660",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 산업용 로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준의 표준 정보 페이지. 판·확인 연도 미확인.",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-928",
+        "org": "Singh, A., Raut, G., & Choudhary, A.",
+        "title": "Multi-agent Collaborative Perception for Robotic Fleet: A Systematic Review",
+        "published": "2024-03",
+        "url": "https://arxiv.org/abs/2405.15777",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 로봇 플릿에서 여러 에이전트가 센서 정보를 공유·융합하는 협동 인지 연구를 검토한 논문(ECCV 2024 워크숍).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-929",
+        "org": "다음뉴스 게재 기사(원 언론사 미확인)",
+        "title": "유진로봇, 지능형 제조 물류시스템 공개",
+        "published": "2025-11-04",
+        "url": "https://v.daum.net/v/20251104092138920",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-25",
+        "summary": "원문 미열람. 유진로봇의 자율이송 모바일 매니퓰레이터 기반 지능형 제조 물류시스템 과제 결과물 공개를 전한 기사(검색 요약 기준).",
+        "source_unopened": true,
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      },
+      {
+        "id": "ref-930",
+        "org": "Open Robotics (open-rmf)",
+        "title": "rmf_internal_msgs — rmf_dispenser_msgs/msg/DispenserResult.msg",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-25",
+        "summary": "디스펜서 결과 메시지(시각, 요청 id, 워크셀 id, 상태 ACKNOWLEDGED·SUCCESS·FAILED). 원본을 열었다.",
+        "cited_by": [
+          "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md"
+        ]
+      }
+    ],
+    "open_question_updates": [
+      {
+        "action": "new",
+        "question": "로봇팔·워크셀의 인수 결과와 이동로봇의 적재 상태 보고가 어긋날 때(한쪽은 성공, 다른 쪽은 적재 유지) 어느 신호를 기준으로 인계 완료를 판정하는지 정한 표준이나 현장 사례가 있는가?",
+        "areas": [
+          17,
+          8
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "반도체 업종의 SEMI E84 같은 단계별 인계 신호를 물류센터의 이동로봇–컨베이어·작업대 인계에 적용하거나 옮긴 사례가 있는가?",
+        "areas": [
+          17,
+          10
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "ASTM F3499·NIST RMMA 같은 도킹·위치 정밀도 시험 결과를 로봇팔 파지 허용 오차와 연결해 인계 가능 여부를 정하는 기준이 있는가?",
+        "areas": [
+          17,
+          23
+        ],
+        "status": "열림",
+        "link": null
+      },
+      {
+        "action": "new",
+        "question": "국내에 ANSI/A3 R15.08-2 의 유형 C(모바일 매니퓰레이터) 통합 안전 요구에 대응하는 KS 표준이나 인증 기준이 있는가?",
+        "areas": [
+          17,
+          25
+        ],
+        "status": "열림",
+        "link": null
+      }
+    ],
+    "flow_matrix_updates": [
+      {
+        "step": "피킹",
+        "item": "시작 조건",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "피킹",
+        "item": "작업 대상",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "피킹",
+        "item": "수행 자원",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "피킹",
+        "item": "제약",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "피킹",
+        "item": "완료·인계",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "피킹",
+        "item": "예외·성과",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      },
+      {
+        "step": "보충",
+        "item": "제약",
+        "link": "docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md#5-현장-시나리오-물류-흐름의-어느-단계인지-명시",
+        "title": "17. 로봇 간 협업·물리적 인계"
+      }
+    ],
+    "standards_updates": [
+      {
+        "name": "SEMI E84 Enhanced Carrier Handoff Parallel I/O Interface",
+        "kind": "표준",
+        "org": "SEMI",
+        "url": "https://store-us.semi.org/products/e08400-semi-e84-specification-for-enhanced-carrier-handoff-parallel-i-o-interface",
+        "related_areas": [
+          17,
+          10
+        ],
+        "summary": "반도체 업종에서 자동 반송 시스템(AMHS)과 생산 장비 로드포트 사이 캐리어 인계용 병렬 I/O 신호를 정한 표준. 물류센터 적용 근거는 아니며 참고 사례로만 다룬다(원문 미열람).",
+        "ref_id": "ref-918"
+      },
+      {
+        "name": "ASTM F3499-21 A-UGV 도킹 성능 시험 방법",
+        "kind": "표준",
+        "org": "ASTM International",
+        "url": "https://www.astm.org/f3499-21.html",
+        "related_areas": [
+          17,
+          23
+        ],
+        "summary": "A-UGV 의 정지·도킹 위치 반복성과 적재 이송 장치 높이 제어 반복성을 확인하는 시험 방법(원문 미열람).",
+        "ref_id": "ref-920"
+      },
+      {
+        "name": "ANSI/A3 R15.08-2-2023 Industrial Mobile Robots — Safety Requirements — Part 2",
+        "kind": "표준",
+        "org": "ANSI / A3",
+        "url": "https://webstore.ansi.org/standards/ria/ansia3r15082023",
+        "related_areas": [
+          25,
+          17
+        ],
+        "summary": "산업용 이동로봇과 플릿의 현장 통합 안전 요구사항을 정하고 모바일 매니퓰레이터(IMR 유형 C)를 다룬다(원문 미열람).",
+        "ref_id": "ref-926"
+      },
+      {
+        "name": "KS B ISO 10218-2 산업용 로봇의 안전 — 제2부: 로봇 시스템 및 통합",
+        "kind": "표준",
+        "org": "국가표준인증통합정보시스템(KSSN)",
+        "url": "https://www.kssn.net/search/stddetail.do?itemNo=K001010083660",
+        "related_areas": [
+          25,
+          17
+        ],
+        "summary": "로봇 시스템과 그 통합의 안전 요구사항을 정한 한국산업표준. 판·확인 연도와 이동식 로봇 적용 조항 미확인(원문 미열람).",
+        "ref_id": "ref-927"
+      },
+      {
+        "name": "Open-RMF 디스펜서·인제스터 메시지(rmf_internal_msgs의 rmf_dispenser_msgs)",
+        "kind": "오픈소스",
+        "org": "Open Robotics (open-rmf)",
+        "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_dispenser_msgs/msg/DispenserResult.msg",
+        "related_areas": [
+          17,
+          10
+        ],
+        "summary": "워크셀 인계의 요청(요청 id, 대상 워크셀, 품목 목록)과 결과(ACKNOWLEDGED·SUCCESS·FAILED) 메시지 정의.",
+        "ref_id": "ref-930"
+      }
+    ],
+    "additional_research_requests": [
+      "6절·11절: Open-RMF IngestorResult(ref-049)의 필드를 원본으로 대조해 하역 쪽 결과 메시지에도 화물 식별·실측 수량 필드가 없는지 확인이 필요하다(f4 는 디스펜서 쪽만 대조).",
+      "3절·7절·11절(oq-042): 물류 업종에서 이동로봇–컨베이어·작업대 인계 신호를 제조사 중립으로 정한 공개 규격과, SEMI E84 개별 신호 이름·순서(유료 원문)를 확인할 필요가 있다.",
+      "4절·8절: 협동 운반·협동 인지의 물류센터 적용 사례를 찾지 못해 개념 정의만 실었다.",
+      "8절: 이동로봇–로봇팔 인계 확인을 다룬 국내 학술 논문과 유진로봇 과제의 1차 출처(과제 정보)가 필요하다.",
+      "7절: KS B ISO 10218-2 의 판·확인 연도(KSSN 2017 확인판 항목 K001010116494 포함)와 이동식 로봇 적용 조항 확인이 필요하다.",
+      "8절: RMMA 2 mm 측정 불확도의 NIST 밖 독립 확인과 ref-922 발행연도 확인이 필요하다.",
+      "5절: 인계 실패 시 재시도·재배정·사람 확인에 따른 처리량 영향의 현장 사례가 필요하다(f25 는 추론)."
+    ],
+    "fixes_applied": [
+      "f23 강등·문장 수정 — 8절 국내 자료 항목을 [추정]으로 바꾸고 '과제 결과물을 공개했다고 보도되었다(2025-11-04)'로 고쳤으며 정보통신기획평가원·'추진한다'를 빼고 기사 1건 기반·1차 출처 미확인 한계를 병기했다.",
+      "f12 표현 수정 — 6절 도킹 위치 확인에서 '관절 부하 급증'을 '모터 전류 급증(도크 접촉 감지)'으로 썼다.",
+      "f15 조건 병기 — 8절 Zang 외 항목에 저자 보고·시뮬레이션·중간 부하 조건·고정 도크 비교안 대비·프리프린트를 함께 적었다.",
+      "f11 병기 — 8절 RMMA 항목에 2 mm 가 NIST 보고치이며 두 출처 모두 NIST 계열이라 독립 확인이 없음을 적었다.",
+      "f7·f8 업종 병기 — 3절·7절·9절·11절의 SEMI E84 서술마다 '반도체 업종(AMHS–생산 장비 로드포트) 규격이며 물류센터 적용 근거는 아니다'를 넣고 7절에 개별 신호 이름·순서 미확인을 적었다.",
+      "[추정] 유지 — f4·f8·f22·f24~f29 를 쓴 모든 문장을 [추정]과 '…것으로 보인다' 표현으로 두었고 [사실]로 올리지 않았다.",
+      "원문 미열람 표시 — ref-007·ref-360·ref-394·ref-918~ref-929 각주 정의 끝에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, ref-008·ref-023·ref-031·ref-044·ref-047·ref-048·ref-216·ref-930 에는 붙이지 않았다.",
+      "기존 각주 재사용 — ref-007 은 시드 각주 정의 줄을 그대로 쓰고(앞 지시에 따라 끝에 원문 미열람 표시만 덧붙임), 다른 기존 참고문헌은 참고문헌 색인의 기관·제목·발행일·URL·접근일로 각주 형식 줄을 만들었다.",
+      "인용 제한 — ref-031 은 원문 직접 인용 없이 모두 재서술했다(0회).",
+      "f19·f20 범위 — 7절 표 아래와 9절에서 안전 표준을 25. 안전·위험 관리와 연결되는 제약으로만 서술하고 ROP 가 이행 주체가 아니라고 적었으며, f20 에 판·확인 연도와 이동식 로봇 적용 조항 미확인을 병기했다.",
+      "11절 연결 — oq-001·oq-006·oq-042·oq-049 를 두고 새 질문 2(SEMI E84 물류 적용)를 oq-042 바로 아래에 나란히 두었으며, 새 질문 3 은 근거를 f10·f11 로 보고 ASTM F3499·NIST RMMA 를 함께 언급했다(근거 필드는 JSON 에 넣지 않음).",
+      "4절 용어 — 디스펜서·인제스터는 기존 용어집 페이지(docs/glossary/dispenser-ingestor.md)에 링크만 하고 glossary_updates 에는 새 용어 4건(모바일 매니퓰레이터, 협동 운반, 협동 인지, 스케줄 간 의존)만 냈다."
+    ]
+  },
+  "ttft_ms": 178303,
+  "type": "result",
+  "duration_ms": 367691,
+  "uuid": "47db15a6-4d2a-4245-a5c9-54caa3be2825",
+  "ttft_stream_ms": 2609,
+  "time_to_request_ms": 83,
+  "first_content_frame_ms": 2609,
+  "time_to_request_from_spawn_ms": 13333321,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790309186550.5547,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 369.4
+}

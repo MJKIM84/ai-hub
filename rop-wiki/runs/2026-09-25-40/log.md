@@ -34,3 +34,11 @@
 - topics/2026/2026-09-25-area16-s7.md: 깨진 링크 ../../references/ref-864.md
 - topics/2026/2026-09-25-area16-s7.md: 깨진 링크 ../../references/ref-866.md
 
+- 2026-09-25 13:12:25 KST [형식 검증] 원고 형식 검사: 오류 5건 · 자동 분리 5건
+- 2026-09-25 13:12:25 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-25 13:12:25 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-25 13:12:25 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area16-s6.md: 깨진 링크 ../g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md
+- 2026-09-25 13:12:25 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area16-s7.md: 깨진 링크 ../../references/ref-864.md
+- 2026-09-25 13:12:25 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-25-area16-s7.md: 깨진 링크 ../../references/ref-866.md
+- 2026-09-25 13:12:25 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-25-40/format_check.md)
+- 2026-09-25 13:12:25 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-25-40/prompts/storyteller-formatfix1.md (408,968자, 규칙은 시스템 프롬프트 storyteller-213d405e48a9.md)
