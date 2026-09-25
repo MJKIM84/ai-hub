@@ -1,0 +1,41 @@
+{
+  "run_id": "2026-09-25-53",
+  "stage": "second",
+  "verdict": "통과",
+  "claim_checks": [],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": []
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인 / 2차 통과. 이번 실행은 원문 열람이 차단된 환경(mirror_only)에서 검증됐다. GitHub 원문(ref-245 템플릿 JSON, ref-439 저장소 README, ref-443 IDTA 02003 2.0.1 README)은 검증자가 raw 경로로 직접 열어 대조했다. 확인 8건, 미확인 0건, 교차 확인 0건이다. 모든 사실이 발행 기관 한 곳의 자료에 기댄다. 강등: 없음. 두 finding 에는 부분 수정만 지시했고 페이지에서 이행됐다: f2 에서 VDA5050 문자열 부재 표현을 뺐고, f6 의 ProductClassificationSystem 식별자는 미확인으로 두었다. 원문 미열람 출처: ref-444, ref-438, ref-198, ref-183, ref-184, ref-185. ref-439 는 검증자가 원문으로 확인했으므로 '(원문 미열람)' 없이 각주를 유지했다. 주의: 템플릿 JSON 은 다섯 번째 열람에서도 DecelerationMax 에서 잘려 충전 요소 유무를 원문으로 판정할 수 없다. oq-060 은 열린 상태다. ECLASS·IEC CDD 에 이동로봇 범위 능력 항목이 있는지는 여전히 미확인이며, 이것은 부재 확정이 아니다. 정정 요청 없음. 온톨로지 변경 승인: 없음 / 거부: 없음(제안 없음, v0.3 유지). 새 질문 q4-16(f4, 단계 4)을 등록했다. q4-14 와 대상 출처가 달라 중복이 아니다. 단계 완료 조건: 미충족. 부족한 것은 모델·표준 비교표의 PDDL·OPC UA Robotics·MassRobotics·AAS·Open-RMF 행 미조사 칸과, ROP용 능력 개념 요구 목록 가운데 구성 버전·운용 구역·환경 조건·충전 조건의 미반영이다. 단계 전환: 미승인(막힌 질문 q1-09, 조사 중). 다섯 실행(2026-09-25-35·41·45·47·53)이 같은 이유로 막혔다. 사용자는 ECLASS·IEC CDD 조회 결과를 inbox/sources 로 제공할지, 아니면 사유와 재개 조건을 적어 q1-09 를 보류할지 결정해야 한다. / 2차 통과. 드리프트 없음. 1차 수정 지시 13건을 모두 이행했다. [분류원문] 보존, 섹션 순서 준수, 링크 유효. 참고: 아이디어 1 페이지 4절에 보강 문단을 더했다. 이 문단은 페이지 제안 밖이지만 모두 검증된 finding(f3·f4·f6·f8)과 같은 태그·각주로만 구성되어 드리프트가 아니다. 트랙 개요 페이지는 pages 에 없다. 다만 현재 상태 줄의 마지막 트랙 실행(2026-09-25)과 현재 단계(단계 1)가 이번 판정과 같아 바뀔 값이 없다.",
+  "retry_reason": null,
+  "track_checks": {
+    "standard_sources_ok": true,
+    "vendor_claims_tagged": true,
+    "ontology_changes_grounded": true,
+    "backlog_duplicates": [],
+    "stage_tag_issues": [],
+    "completeness_wording_ok": true,
+    "stage_complete": false,
+    "stage_transition_approved": false
+  }
+}

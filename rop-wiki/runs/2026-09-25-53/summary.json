@@ -1,0 +1,134 @@
+{
+  "run_id": "2026-09-25-53",
+  "date": "2026-09-25",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 온톨로지",
+    "category": "B. 공통 정보·환경 모델",
+    "slug": "manual-capability-ontology",
+    "stage": 1,
+    "question_ids": [
+      "q1-09"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 3,
+  "new_sources": 2,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 8,
+    "sources": 2
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 772.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | 매뉴얼 기반 로봇 기능 온톨로지 단계 1 | q1-09 부분 답 보강(AHY911·AHY912 복합 식별자, 게시 템플릿 목록, IDTA 02003 2.0.1, 제품 분류 항목 식별자), 새 질문 q4-16, 온톨로지 변경 없음(v0.3), 다섯 실행 막힘으로 사용자 결정 필요 | run 2026-09-25-53",
+  "notes": [
+    "참고문헌 생성: references/ref-443.md",
+    "참고문헌 생성: references/ref-444.md"
+  ],
+  "counts": {
+    "create": 0,
+    "update": 3,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 2,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 2,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 14:58:58 KST",
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 1329869,
+    "cache_read_input_tokens": 3339493,
+    "output_tokens": 66981,
+    "cost_usd": 12.9899,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.4864,
+        "output_tokens": 15900,
+        "cache_read_input_tokens": 2322707,
+        "cache_creation_input_tokens": 308299
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.9639,
+        "output_tokens": 9354,
+        "cache_read_input_tokens": 857328,
+        "cache_creation_input_tokens": 318471
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 2.9591,
+        "output_tokens": 35881,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 278604
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 3.4958,
+        "output_tokens": 4854,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 422936
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md (7개 절)",
+      "docs/tracks/manual-capability-ontology/model-standard-comparison.md (2개 절)",
+      "docs/ideas/robot-capability-ontology.md (1개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 2,
+  "cross_checked_findings": 0
+}

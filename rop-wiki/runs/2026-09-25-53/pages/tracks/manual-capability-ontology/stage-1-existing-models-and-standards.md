@@ -5,7 +5,7 @@ track: manual-capability-ontology
 stage: 1
 related_areas: [5, 27, 9, 28, 16]
 tags: [능력 온톨로지, 산업 상호운용 규격, 모델·표준 비교표, ROP용 능력 개념, 능력 매칭]
-status: published
+status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25

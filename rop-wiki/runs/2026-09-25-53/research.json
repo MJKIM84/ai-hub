@@ -90,7 +90,7 @@
       "claim": "IDTA 02003 기술 데이터 일반 틀 2.0.1 README 는 2.0 의 GitHub 이슈 6건을 고친 버그 수정판으로 예시값 한정자·ProductImages→ProductImage 이름 변경·TechnicalPropertyAreas 카디널리티·의미 식별자 구분을 다루며, 제품 분류 항목·ECLASS·IEC CDD 에 관한 변경은 적지 않는다.",
       "tag": "사실",
       "source_ids": [
-        "ref-659"
+        "ref-443"
       ],
       "cross_checked": false,
       "confidence": "medium",
@@ -104,7 +104,7 @@
       "claim": "ZVEI 기술 데이터 서브모델 1.1 명세에서 제품 분류 항목(ProductClassificationItem)은 https://admin-shell.io/ZVEI/TechnicalData/ProductClassificationItem/1/1 의미 식별자를 가진 요소 모음으로 제품을 특정 분류 체계·속성 사전의 제품 클래스와 연결하며, 분류 체계 이름(ProductClassificationSystem)은 …/ProductClassificationSystem/1/1 식별자를 가진다.",
       "tag": "사실",
       "source_ids": [
-        "ref-660",
+        "ref-444",
         "ref-438"
       ],
       "cross_checked": false,
@@ -138,7 +138,7 @@
       "tag": "추정",
       "source_ids": [
         "ref-245",
-        "ref-660"
+        "ref-444"
       ],
       "cross_checked": false,
       "confidence": "low",
@@ -181,7 +181,7 @@
       "source_unopened": true
     },
     {
-      "id": "ref-659",
+      "id": "ref-443",
       "org": "IDTA (admin-shell-io/submodel-templates)",
       "title": "Generic Frame for Technical Data for Industrial Equipment in Manufacturing 2.0.1 — README (published/Technical_Data/2/0/1)",
       "published": null,
@@ -196,7 +196,7 @@
       "source_unopened": false
     },
     {
-      "id": "ref-660",
+      "id": "ref-444",
       "org": "ZVEI / Plattform Industrie 4.0",
       "title": "Submodel Templates of the Asset Administration Shell — ZVEI Technical Data Version 1.1",
       "published": "2020-11",
@@ -297,7 +297,7 @@
         "8",
         "9"
       ],
-      "rationale": "q1-09 부분 답: f1·f2·f3·f4·f5·f6·f7·f8 — 3절 q1-09 '(부분 답)'에 '실행 2026-09-25-53 보강' 소절 추가: IDTA 02047 템플릿의 ECLASS 분류 클래스 코드가 일반 블록 복합 식별자에만 쓰임(f1, 원문 인용), 템플릿 열람 다섯 번째 절단(f2, oq-060 해소 아님), IDTA 게시 템플릿 목록에 로봇·스킬·충전 템플릿 없음과 Digital Battery Passport 존재(f3·f4), IDTA 02003 2.0.1 변경 범위(f5), 제품 분류 항목 의미 식별자(f6), 웹 검색으로 판정 불가(f7), 제품 클래스는 인스턴스 값이라 ROP 자체 분류 필요(f8) / 4절 불확실성: 다섯 실행이 같은 벽에 막혔음을 적고, 사용자 결정(ECLASS·CDD 조회 결과를 inbox/sources 로 제공하거나 q1-09 를 재개 조건과 함께 보류) 필요 / 5절 후속 질문 / 8절 출처(ref-659·ref-660) / 9절 이력. q1-09 는 조사 중 유지"
+      "rationale": "q1-09 부분 답: f1·f2·f3·f4·f5·f6·f7·f8 — 3절 q1-09 '(부분 답)'에 '실행 2026-09-25-53 보강' 소절 추가: IDTA 02047 템플릿의 ECLASS 분류 클래스 코드가 일반 블록 복합 식별자에만 쓰임(f1, 원문 인용), 템플릿 열람 다섯 번째 절단(f2, oq-060 해소 아님), IDTA 게시 템플릿 목록에 로봇·스킬·충전 템플릿 없음과 Digital Battery Passport 존재(f3·f4), IDTA 02003 2.0.1 변경 범위(f5), 제품 분류 항목 의미 식별자(f6), 웹 검색으로 판정 불가(f7), 제품 클래스는 인스턴스 값이라 ROP 자체 분류 필요(f8) / 4절 불확실성: 다섯 실행이 같은 벽에 막혔음을 적고, 사용자 결정(ECLASS·CDD 조회 결과를 inbox/sources 로 제공하거나 q1-09 를 재개 조건과 함께 보류) 필요 / 5절 후속 질문 / 8절 출처(ref-443·ref-444) / 9절 이력. q1-09 는 조사 중 유지"
     },
     {
       "action": "update",
@@ -337,7 +337,7 @@
       "f2: oq-060 출처 충돌 미해소 — 템플릿 원문으로 충전 요소 확인 불가",
       "f4: Digital Battery Passport 템플릿 본문 미열람, 충전 능력과의 관련성 미확인",
       "f6: ZVEI 1.1 명세 원문 미열람(검색 요약 기준), IDTA 02003 2.0.1 템플릿의 해당 식별자는 미확인",
-      "ref-659 발행일 미확인",
+      "ref-443 발행일 미확인",
       "모든 finding 교차 확인 없음"
     ],
     "scope_violations": [],
@@ -345,7 +345,7 @@
       "queries": 8,
       "sources": 2
     },
-    "limits": "답한 질문 없음: q1-09 의 핵심(ECLASS·IEC CDD 에 이동로봇 범위 능력 항목이 있는가)은 ECLASS·CDD 데이터베이스가 네트워크 정책(fetch_mode mirror_only)으로 열리지 않고 영·독·한 검색 8회에서도 해당 클래스·항목이 나오지 않아 판정 불가 — 부분 답 f1~f8 만 냄. 다섯 실행(2026-09-25-35·41·45·47·53)이 같은 벽에 막혔으므로 추가 트랙 실행으로 풀리지 않을 가능성이 높다: 사용자가 eclass.eu 콘텐츠 검색과 cdd.iec.ch 에서 'AGV·FTF·autonomous mobile robot' 조회 결과를 inbox/sources 로 넣어 주거나, q1-09 를 사유와 재개 조건(원문 조회 가능 시)을 적어 '보류'로 돌리는 판단이 필요해 보인다(판단은 검증·사용자 몫). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-245(템플릿 JSON, 다시 DecelerationMax 에서 절단)·ref-439(저장소 README), 신규 ref-659(IDTA 02003 2.0.1 README). 신규 ref-660 과 재사용 ref-438·ref-198·ref-183·ref-184·ref-185 는 원문 미열람(신뢰도 상한 medium). 검색 8회/40, 신규 출처 2건/20(ref-659·ref-660, 예약 구간 안). 한국어 검색 1회는 인증기관 소개·대학 e-class 사이트뿐이라 출처로 넣지 않음. 온톨로지 변경 없음: 능력 단위 의미 식별자를 뒷받침할 사전 항목이 여전히 없고 충전 요소는 출처 충돌(oq-060) 상태라 초안 6절 '기능의 의미 식별자 속성'·충전 조건 질문을 유지함. 후속 질문 1건(f4 근거, 단계 4). 용어 후보 없음: 트랙 glossary_targets 가운데 미등록 용어(로봇 능력 온톨로지, 역량 질문, SPARQL, 온톨로지 학습)에 대한 이번 근거 없음. 27. AI·학습·적응과 모델 운영, 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음(충전 요소 충돌은 기존 oq-060)."
+    "limits": "답한 질문 없음: q1-09 의 핵심(ECLASS·IEC CDD 에 이동로봇 범위 능력 항목이 있는가)은 ECLASS·CDD 데이터베이스가 네트워크 정책(fetch_mode mirror_only)으로 열리지 않고 영·독·한 검색 8회에서도 해당 클래스·항목이 나오지 않아 판정 불가 — 부분 답 f1~f8 만 냄. 다섯 실행(2026-09-25-35·41·45·47·53)이 같은 벽에 막혔으므로 추가 트랙 실행으로 풀리지 않을 가능성이 높다: 사용자가 eclass.eu 콘텐츠 검색과 cdd.iec.ch 에서 'AGV·FTF·autonomous mobile robot' 조회 결과를 inbox/sources 로 넣어 주거나, q1-09 를 사유와 재개 조건(원문 조회 가능 시)을 적어 '보류'로 돌리는 판단이 필요해 보인다(판단은 검증·사용자 몫). web_fetch_available: false · fetch_mode mirror_only. raw.githubusercontent.com 으로 연 출처: 재사용 ref-245(템플릿 JSON, 다시 DecelerationMax 에서 절단)·ref-439(저장소 README), 신규 ref-443(IDTA 02003 2.0.1 README). 신규 ref-444 과 재사용 ref-438·ref-198·ref-183·ref-184·ref-185 는 원문 미열람(신뢰도 상한 medium). 검색 8회/40, 신규 출처 2건/20(ref-443·ref-444, 예약 구간 안). 한국어 검색 1회는 인증기관 소개·대학 e-class 사이트뿐이라 출처로 넣지 않음. 온톨로지 변경 없음: 능력 단위 의미 식별자를 뒷받침할 사전 항목이 여전히 없고 충전 요소는 출처 충돌(oq-060) 상태라 초안 6절 '기능의 의미 식별자 속성'·충전 조건 질문을 유지함. 후속 질문 1건(f4 근거, 단계 4). 용어 후보 없음: 트랙 glossary_targets 가운데 미등록 용어(로봇 능력 온톨로지, 역량 질문, SPARQL, 온톨로지 학습)에 대한 이번 근거 없음. 27. AI·학습·적응과 모델 운영, 8. 실시간 세계 상태·데이터 일관성, 22. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 정정 요청 없음. 새 일반 열린 질문 없음(충전 요소 충돌은 기존 oq-060)."
   },
   "track": {
     "slug": "manual-capability-ontology",

@@ -5,7 +5,7 @@ subtype: comparison
 track: manual-capability-ontology
 related_areas: [5, 9, 28]
 tags: [모델·표준 비교표, 능력 온톨로지, 산업 상호운용 규격, 단계 1 산출물]
-status: published
+status: draft
 confidence: medium
 created: 2026-09-24
 updated: 2026-09-25
