@@ -1,0 +1,124 @@
+{
+  "run_id": "2026-09-25-32",
+  "date": "2026-09-25",
+  "run_type": "category_link",
+  "target": {
+    "area_no": null,
+    "area_name": null,
+    "category": "B. 공통 정보·환경 모델"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 1,
+  "new_sources": 0,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": false,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 2,
+    "sources": 0
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 771.7,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-25 | B. 공통 정보·환경 모델 | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) | run 2026-09-25-32",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 1,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-25 12:36:11 KST",
+  "usage": {
+    "input_tokens": 30,
+    "cache_creation_input_tokens": 705354,
+    "cache_read_input_tokens": 1578769,
+    "output_tokens": 81106,
+    "cost_usd": 7.8065,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.3015,
+        "output_tokens": 29210,
+        "cache_read_input_tokens": 1043949,
+        "cache_creation_input_tokens": 174339
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.3394,
+        "output_tokens": 17598,
+        "cache_read_input_tokens": 375362,
+        "cache_creation_input_tokens": 231089
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 1.7529,
+        "output_tokens": 29609,
+        "cache_read_input_tokens": 63020,
+        "cache_creation_input_tokens": 143513
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 1.328,
+        "output_tokens": 3697,
+        "cache_read_input_tokens": 76154,
+        "cache_creation_input_tokens": 154854
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0446,
+        "output_tokens": 499,
+        "cache_read_input_tokens": 6604,
+        "cache_creation_input_tokens": 1263
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0061,
+        "output_tokens": 234,
+        "cache_read_input_tokens": 6886,
+        "cache_creation_input_tokens": 0
+      },
+      "probe-web_fetch_mirror": {
+        "calls": 1,
+        "cost_usd": 0.034,
+        "output_tokens": 259,
+        "cache_read_input_tokens": 6794,
+        "cache_creation_input_tokens": 296
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [
+      "docs/categories/b-common-information-and-environment-model/index.md (2개 절)"
+    ],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 12,
+  "cross_checked_findings": 0
+}
