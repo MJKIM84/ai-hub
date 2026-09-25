@@ -143,7 +143,7 @@ def neutralize_footnotes(s) -> str:
     return _TAG_PAREN_TEXT.sub(lambda m: f"{m.group(1)} (", out)
 
 
-_MD_LINK = re.compile(r"(?<!!)\[([^\]\n]+)\]\(([^)\s#]+\.md)(#[^)\s]*)?\)")
+_MD_LINK = re.compile(r"(?<!!)\[([^\]\n]+)\]\(([^)\s#]+)(#[^)\s]*)?\)")
 
 
 def fix_relative_links(text: str, page_rel: str) -> str:
@@ -157,6 +157,8 @@ def fix_relative_links(text: str, page_rel: str) -> str:
         label, target, anchor = m.group(1), m.group(2), m.group(3) or ""
         if re.match(r"^[a-z]+:", target):
             return m.group(0)
+        if not target.endswith(".md") and not re.search(r"\.(png|jpg|jpeg|svg|gif|pdf|html|txt|json|csv)$", target):
+            return label            # 잘린 문장("…")이나 경로가 아닌 괄호 내용은 링크가 아니다
         here = posixpath.normpath(posixpath.join(base, target))
         if (DOCS / here).is_file():
             return m.group(0)
