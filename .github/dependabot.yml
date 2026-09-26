@@ -1,0 +1,18 @@
+# Dependabot — 의존성 갱신을 PR로 제안한다. 자동 머지는 하지 않는다(사람이 검토 후 머지).
+# - pip: rop-wiki/requirements.txt (mkdocs-material 등, == 로 고정된 버전을 올리는 PR)
+# - github-actions: .github/workflows/*.yml (커밋 SHA로 고정된 액션을 새 릴리스 SHA로 올리는 PR)
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/rop-wiki"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "rop-wiki"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "github-actions"]
