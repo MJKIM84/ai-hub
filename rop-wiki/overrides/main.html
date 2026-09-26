@@ -1,9 +1,18 @@
 <!--
-  ROP 연구 위키 — 공개 배포 안내 배너(Material 테마 announce 블록 오버라이드).
-  켜고 끄기는 mkdocs.yml 의 extra.verification_banner 한 값으로 한다(pipeline/lib/nav.py 가
-  config/ops.yaml 의 publish.show_verification_banner 를 읽어 이 값을 채운다). 본문은 고치지 않는다.
+  ROP 연구 위키 — Material 테마 오버라이드.
+  1) announce 블록: 공개 배포 안내 배너. 켜고 끄기는 mkdocs.yml 의 extra.verification_banner 한 값으로 한다
+     (pipeline/lib/nav.py 가 config/ops.yaml 의 publish.show_verification_banner 를 읽어 이 값을 채운다). 본문은 고치지 않는다.
+  2) extrahead 블록: 클릭재킹 완화. GitHub Pages 는 서버 응답 헤더(X-Frame-Options, CSP frame-ancestors)를 줄 수 없고,
+     CSP 의 frame-ancestors 는 <meta> 태그로는 브라우저가 무시하므로, 대신 다른 사이트의 iframe 안에서 열리면 최상위로
+     빠져나오는 짧은 스크립트를 둔다. [가정: 배포 후 보안 보강 프롬프트 5장의 meta CSP 대신 동작하는 방식으로 대체]
+     검색엔진 색인 제어(robots meta)는 사용자 결정 후 이 블록에 추가한다.
 -->
 {% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>if (window.top !== window.self) { try { window.top.location = window.self.location; } catch (e) { document.documentElement.style.display = "none"; } }</script>
+{% endblock %}
 
 {% block announce %}
 {% if config.extra.verification_banner %}
