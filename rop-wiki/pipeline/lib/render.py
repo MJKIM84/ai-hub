@@ -35,6 +35,7 @@ import yaml
 from . import autoregion as ar
 from . import frontmatter as fm
 from . import paths
+from .htmlcheck import escape_tags
 from .nav import logs_public_default
 from .paths import CONFIG, DATA, DOCS, RUNS
 from .source import load_source
@@ -173,8 +174,9 @@ def fix_relative_links(text: str, page_rel: str) -> str:
 
 
 def _esc(s) -> str:
-    """표 셀용 이스케이프. 각주 참조 표기는 인라인 코드로 바꾼다(neutralize_footnotes)."""
-    return neutralize_footnotes(s).replace("|", "\\|").replace("\n", " ")
+    """표 셀용 이스케이프. 각주 참조 표기는 인라인 코드로 바꾸고(neutralize_footnotes), 데이터에서 온 값이
+    raw HTML 로 렌더링되지 않게 <br>·오토링크 외의 태그 모양 '<' 는 &lt; 로 바꾼다(lib/htmlcheck, 보안 보강 1항)."""
+    return escape_tags(neutralize_footnotes(s)).replace("|", "\\|").replace("\n", " ")
 
 
 def _table(header: list[str], rows: list[list[str]]) -> str:

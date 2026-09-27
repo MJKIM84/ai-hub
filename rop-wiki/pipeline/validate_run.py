@@ -21,7 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import frontmatter as fm  # noqa: E402
-from lib import paths, runs  # noqa: E402
+from lib import htmlcheck, paths, runs  # noqa: E402
 from lib import validate as V  # noqa: E402
 
 ROOT = paths.ROOT
@@ -198,8 +198,12 @@ def stage_pages(rd: Path, settings: dict, run_id: str) -> int:
         if not src.is_file():
             errors.append(f"{pg.get('path')}: pages/ 에 파일이 없다")
             continue
-        for e in V.check_page(rel, src.read_text(encoding="utf-8")):
+        page_text = src.read_text(encoding="utf-8")
+        for e in V.check_page(rel, page_text):
             errors.append(f"{pg.get('path')}: {e}")
+        # raw HTML 차단(공개 배포 보안 보강 1항): md_in_html 로 그대로 렌더링되므로 허용 목록 밖의 태그·위험한 링크는 형식 오류
+        for e in htmlcheck.find_unsafe_html(page_text):
+            errors.append(f"{pg.get('path')}: raw HTML — {e} (허용: <br>, 오토링크. 태그 대신 마크다운으로 쓴다)")
 
     # pages.json 갱신(패치 표시 제거, 분리 페이지 추가)
     stored = json.loads(json.dumps(pages, ensure_ascii=False))
