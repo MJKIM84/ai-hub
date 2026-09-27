@@ -1,4 +1,6 @@
-# ROP 연구 위키 — 정적 사이트와 파이프라인 검사에 필요한 패키지 (Python 3.11)
-mkdocs-material>=9.5
-pyyaml>=6.0
-jsonschema>=4.0
+# ROP 연구 위키 — 정적 사이트와 파이프라인 검사에 필요한 패키지 (Python 3.11 / 3.12)
+# 버전은 라이브 배포에서 검증된 값으로 고정한다(== ). 갱신은 .github/dependabot.yml 의 pip 항목이 PR로 제안하며,
+# 올릴 때는 `cd rop-wiki && mkdocs build --strict` 와 `bash pipeline/checks/run_all.sh` 가 통과하는지 확인한다.
+mkdocs-material==9.7.7
+pyyaml==6.0.1
+jsonschema==4.26.0
