@@ -1,18 +1,25 @@
 name: rop-wiki pages
 
+# 트리거
+# - push(main, rop-wiki/**)·workflow_dispatch: 빌드 + GitHub Pages 배포
+# - pull_request(rop-wiki/**, 이 워크플로): 빌드만(배포 없음). main 의 브랜치 보호 규칙이 요구하는 "build" 상태 검사를 PR 에 남긴다
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths: ["rop-wiki/**"]
+  pull_request:
+    branches: [main]
+    paths: ["rop-wiki/**", ".github/workflows/rop-wiki-pages.yml"]
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# 배포(main)는 group "pages" 로 직렬화하고, PR 빌드는 PR 별 그룹으로 분리해 배포를 막지 않는다
 concurrency:
-  group: pages
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.number) || 'pages' }}
   cancel-in-progress: false
 
 # 액션은 태그 대신 커밋 SHA로 고정한다(태그가 바뀌어도 실행 내용이 바뀌지 않게). 주석의 버전이 그 SHA가 가리키는 릴리스다.
@@ -36,15 +43,18 @@ jobs:
         run: cd rop-wiki && mkdocs build --strict
 
       - name: Configure Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: rop-wiki/site
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
