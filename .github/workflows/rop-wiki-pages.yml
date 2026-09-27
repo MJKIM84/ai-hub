@@ -2,7 +2,8 @@ name: rop-wiki pages
 
 # 트리거
 # - push(main, rop-wiki/**)·workflow_dispatch: 빌드 + GitHub Pages 배포
-# - pull_request(rop-wiki/**, 이 워크플로): 빌드만(배포 없음). main 의 브랜치 보호 규칙이 요구하는 "build" 상태 검사를 PR 에 남긴다
+# - pull_request(main 대상, 경로 제한 없음): 빌드만(배포 없음). main 의 브랜치 보호 규칙이 "모든" PR 에 "build"
+#   상태 검사를 요구하므로, rop-wiki 를 건드리지 않는 PR(앱 코드, 설정 파일)에도 검사를 남겨야 병합할 수 있다
 on:
   workflow_dispatch:
   push:
@@ -10,7 +11,6 @@ on:
     paths: ["rop-wiki/**"]
   pull_request:
     branches: [main]
-    paths: ["rop-wiki/**", ".github/workflows/rop-wiki-pages.yml"]
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 # 액션은 태그 대신 커밋 SHA로 고정한다(태그가 바뀌어도 실행 내용이 바뀌지 않게). 주석의 버전이 그 SHA가 가리키는 릴리스다.
-# 갱신은 .github/dependabot.yml 의 github-actions 항목이 PR로 제안한다.
+# 갱신은 .github/dependabot.yml 이 보안 취약점이 있을 때만 PR로 제안한다.
 jobs:
   build:
     runs-on: ubuntu-latest
