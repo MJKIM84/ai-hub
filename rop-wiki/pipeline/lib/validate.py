@@ -394,7 +394,7 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
             "7. 열린 질문", "8. 출처", "9. 검증 노트", "10. 이력"]
         sec_anchor = lambda n: next((t for t in h2_titles(body) if section_no(t) == n), "")  # noqa: E731
         bodies = {
-            0: f"- {summary}\n- 이 페이지는 [{area_title}]({link_to_area}) 페이지의 \"{sec_name_short}\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.",
+            0: f"- {rebase_links(summary, area_docs_rel, topic_docs)}\n- 이 페이지는 [{area_title}]({link_to_area}) 페이지의 \"{sec_name_short}\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.",
             1: f"[{area_title}]({link_to_area}) 페이지를 쓰는 과정에서 \"{sec_name}\" 절의 분량이 세부영역 페이지 기준({limit:,}자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.",
             2: rebase_links(sec_body, area_docs_rel, topic_docs),   # 옮긴 절의 상대 링크는 주제 페이지 기준으로 다시 쓴다
             3: f"현장 시나리오는 원 페이지의 [{sec_anchor('5') or '5. 현장 시나리오'}]({link_to_area}) 절에 있다.",

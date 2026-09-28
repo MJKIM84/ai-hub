@@ -107,6 +107,17 @@ class TestValidate(unittest.TestCase):
         self.assertIn("[5절](../../" + paths.area_rel_path(AREA_NO) + "#5-적용-사례-현장-유형-명시)", t["content"])
         self.assertEqual(V.footnote_problems(fm.parse(new)[1]), [])
 
+    def test_split_summary_links_rebased_only_in_topic(self):
+        """옮긴 절의 첫 문장(요약)은 주제 페이지에서는 주제 기준으로, 원 절에 남는 요약은 원 페이지 기준으로 링크를 쓴다."""
+        first = "[15. 지도·공간·위치 모델](../space-and-map-model/map-space-and-location-model.md)이 짝 엔진이다. [사실][^ref-003]"
+        long = first + "\n\n" + "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(120))
+        new, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), _area_page({"6. 대표 접근법과 기술": long}), 4000, [],
+                                             "2026-09-25-99", "2026-09-26")
+        self.assertIn(first, new)
+        self.assertIn("- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)이 짝 엔진이다.",
+                      topics[0]["content"])
+        self.assertEqual(V.check_page(paths.docs_rel(topics[0]["path"]), topics[0]["content"]), [])
+
     def test_rebase_links(self):
         src, dst = "categories/robot-ontology/capability-model.md", "topics/2026/x.md"
         self.assertEqual(V.rebase_links("[a](index.md) [b](../integration/index.md#x) [c](https://e.org/p.md) [d](#sec)", src, dst),
