@@ -4,7 +4,7 @@ type: glossary
 term_ko: 플릿 어댑터
 term_en: Fleet Adapter
 definition: Open-RMF에서 제조사별 로봇 플릿(같은 관제 아래 묶인 로봇 무리)을 연결하기 위해 두는 제조사별 연결 구성요소이다.
-related_areas: [9, 5, 12, 21]
+related_areas: [5, 20, 29, 55]
 tags: [Open-RMF, 어댑터, 제조사 관제]
 status: draft
 created: 2026-09-24
@@ -36,18 +36,18 @@ Open-RMF도 제조사별 Fleet Adapter와 건물 설비 인터페이스를 통�
 
 Open-RMF 문서의 플릿 통합 장은 제조사 관제가 허용하는 제어 수준에 따라 어댑터를 범주로 나누며, 검색 결과에는 관제가 로봇의 경로를 지정·변경할 수 있는 Full Control 범주와 로봇 상태만 읽는 Read Only 범주가 나타난다. [추정][^cand-10] 범주의 정확한 정의와 그 밖의 범주는 원문을 열지 못해 미확인이다.
 
-ROP 맥락에서 플릿 어댑터는 9. 로봇·제조사 관제 연동의 SCM 관점의 질문과 직결된다.
+ROP 맥락에서 플릿 어댑터는 20. 로봇·제조사 관제 연동의 핵심 질문과 직결된다.
 
-개별 로봇을 제어할까, 제조사 관제에 미션을 맡길까? [분류원문]
+개별 로봇을 제어할까, 제조사 관제에 미션을 맡길까? [옛 분류원문]
 
 어댑터 범주가 갈리는 이유는 제조사 관제가 경로·속도·정지 같은 제어권을 어디까지 열어 주느냐가 제조사마다 다르기 때문이며, ROP가 맡을 수 있는 교통 조율과 실행 보장의 수준도 그에 따라 달라진다. [추정] 어댑터가 로봇 기능을 어떤 형식으로 기술하는지는 중점 연구 트랙 [매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/index.md)의 단계 1에서 산업 규격 후보의 하나로 조사한다.
 
 ## 관련 영역
 
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 제조사 API(Application Programming Interface)·SDK(Software Development Kit)·표준 프로토콜을 연결하고 명령·상태·오류를 변환하는 어댑터의 대표 사례다.
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — 어댑터가 노출하는 기능 기술 형식이 능력 온톨로지의 비교 대상이 된다.
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 어댑터를 거치는 명령의 접수·실행·완료·취소 상태와 제어권 문제가 여기서 다뤄진다.
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 새 제조사를 추가할 때 어댑터를 만들고 설정하는 반복 작업이 온보딩 비용의 큰 부분이다.
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) — 제조사 API(Application Programming Interface)·SDK(Software Development Kit)·표준 프로토콜을 연결하고 명령·상태·오류를 변환하는 어댑터의 대표 사례다.
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md) — 어댑터가 노출하는 기능 기술 형식이 능력 온톨로지의 비교 대상이 된다.
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) — 어댑터를 거치는 명령의 접수·실행·완료·취소 상태와 제어권 문제가 여기서 다뤄진다.
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) — 새 제조사를 추가할 때 어댑터를 만들고 설정하는 반복 작업이 온보딩 비용의 큰 부분이다.
 
 관련 용어: [오픈 RMF (Open-RMF)](open-rmf.md)
 

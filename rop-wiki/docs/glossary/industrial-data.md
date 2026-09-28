@@ -4,7 +4,7 @@ type: glossary
 term_ko: 산업데이터
 term_en: Industrial Data
 definition: 산업 활동 과정에서 생성·활용되는 데이터(산업디지털전환촉진법의 용어).
-related_areas: [28]
+related_areas: [21]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

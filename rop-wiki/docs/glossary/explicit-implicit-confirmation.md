@@ -4,7 +4,7 @@ type: glossary
 term_ko: 명시적 확인·암시적 확인
 term_en: Explicit / Implicit Confirmation
 definition: 대화 시스템이 이해한 내용을 사용자에게 직접 물어 승인받는 방식(명시적)과, 다음 응답 속에 이해한 내용을 되풀이해 보여 주고 사용자가 고치지 않으면 진행하는 방식(암시적)이다.
-related_areas: [18, 27]
+related_areas: [31, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

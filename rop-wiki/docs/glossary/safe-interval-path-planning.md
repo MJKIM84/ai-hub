@@ -4,7 +4,7 @@ type: glossary
 term_ko: 안전 구간 경로 계획
 term_en: Safe Interval Path Planning (SIPP)
 definition: 위치마다 충돌 없는 연속 시간 구간(안전 구간)을 두고 위치와 안전 구간의 쌍을 상태로 삼아 움직이는 장애물 사이 경로를 찾는 방법이다.
-related_areas: [15]
+related_areas: [27]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

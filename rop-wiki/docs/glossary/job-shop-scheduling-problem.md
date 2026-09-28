@@ -4,7 +4,7 @@ type: glossary
 term_ko: 작업장 스케줄링 문제
 term_en: Job Shop Scheduling Problem (JSSP)
 definition: 여러 작업이 정해진 순서로 여러 기계를 거칠 때 기계별 작업 순서를 정해 전체 완료 시간 같은 목표를 최소화하는 대표적 조합 최적화 스케줄링 문제이다.
-related_areas: [14, 27]
+related_areas: [26, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ LLM 이 스케줄을 직접 만드는 연구(Starjob 등)의 평가 대상으로
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

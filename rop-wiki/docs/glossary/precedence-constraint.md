@@ -4,7 +4,7 @@ type: glossary
 term_ko: 선후 제약
 term_en: Precedence Constraint
 definition: 한 작업이 끝나야 다른 작업을 시작할 수 있는 것처럼 두 작업의 실행 순서를 제한하는 조건이다.
-related_areas: [14, 15]
+related_areas: [26, 27]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

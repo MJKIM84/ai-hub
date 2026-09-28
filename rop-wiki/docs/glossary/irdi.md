@@ -4,7 +4,7 @@ type: glossary
 term_ko: 국제 등록 데이터 식별자
 term_en: International Registration Data Identifier (IRDI)
 definition: 'ECLASS·IEC CDD 같은 데이터 사전이 속성·분류 클래스를 기관 식별자와 코드 공간·항목 코드·버전으로 고유하게 가리키는 식별자 형식이다(예: 최대 적재 질량 속성의 ECLASS IRDI 0173-1#02-ABJ258#001).'
-related_areas: [5, 28]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ ECLASS IRDI 에서 코드 공간 01 은 분류 클래스, 02 는 속성을 뜻�
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

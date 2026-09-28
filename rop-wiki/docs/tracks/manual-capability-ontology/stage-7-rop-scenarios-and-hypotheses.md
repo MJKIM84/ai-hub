@@ -3,7 +3,7 @@ title: "단계 7. ROP 활용 시나리오 종합과 가설 판정"
 type: track-stage
 track: manual-capability-ontology
 stage: 7
-related_areas: [21, 13, 25, 9, 5]
+related_areas: [5, 20, 25, 48, 55]
 tags: [활용 시나리오, 여섯 항목, 가설 판정, 실험 계획, 온보딩, 능력 기반 배정]
 status: seed
 created: 2026-09-24
@@ -22,7 +22,7 @@ version: 2
 
 > 온톨로지가 ROP 운영에서 실제로 무엇을 바꾸는가.
 
-위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 문장 속 ROP는 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)이다. 이 단계는 온보딩([21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)), 능력 기반 배정([13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md)), 안전 제약 반영([25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)), 이종 제조사 통합([9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md))의 시나리오 4종을 분류 원문 11장의 여섯 항목으로 쓰고, [트랙 개요](index.md)의 가설 1~3을 단계 1~6의 결과로 판정한다. 세부영역 이름 속 MRTA는 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA)이다. 완료 시 트랙 상태를 `done`으로 바꾸고 후속 트랙(실험 등)을 사용자에게 제안한다(트랙 운영 규칙. [에이전트 소개](../../about/agents.md)의 "트랙 실행이 일반 실행과 다른 점" 절에 있다).
+위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 문장 속 ROP는 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)이다. 이 단계는 온보딩([55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)), 능력 기반 배정([25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md)), 안전 제약 반영([48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md)), 이종 제조사 통합([20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md))의 시나리오 4종을 분류 개정 전 원문 11장의 여섯 항목으로 쓰고, [트랙 개요](index.md)의 가설 1~3을 단계 1~6의 결과로 판정한다. 세부영역 이름 속 MRTA는 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA)이다. 완료 시 트랙 상태를 `done`으로 바꾸고 후속 트랙(실험 등)을 사용자에게 제안한다(트랙 운영 규칙. [에이전트 소개](../../about/agents.md)의 "트랙 실행이 일반 실행과 다른 점" 절에 있다).
 
 ## 2. 질문 목록
 
@@ -37,7 +37,7 @@ version: 2
 
 q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)) 편입 때 새 연구 목표 5(신규 로봇 온보딩 시 능력 정의 초안 자동 생성)의 효과 측정 질문으로 더했다(2026-09-25). 가설 3의 판정 근거가 된다.
 
-표의 질문 문장은 트랙 정의 그대로 두었다. 다음은 구축자 보충이다. q7-01의 21번은 [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md), 13번은 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), 25번은 [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md), 9번은 [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)을 가리킨다. "부록 A 11장의 여섯 항목"은 이 위키의 분류 원문 11장, 곧 [SCM 관점의 연구 시작 방법](../../about/research-method.md)의 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)이다. "부록 A"는 이 위키의 분류 원문(`_source/ROP_SCM_연구분야_분류.md`)을 뜻한다.
+표의 질문 문장은 트랙 정의 그대로 두었다. 다음은 구축자 보충이다. q7-01의 21번은 [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md), 13번은 [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md), 25번은 [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md), 9번은 [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md)을 가리킨다. "부록 A 11장의 여섯 항목"은 이 위키의 분류 개정 전 원문 11장, 곧 [연구 방법](../../about/research-method.md)의 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)이다. "부록 A"는 이 위키의 개정 전 분류 원문(`_source/archive/ROP_SCM_연구분야_분류_2026-09-24.md`)을 뜻한다.
 
 ## 3. 조사 결과
 
@@ -45,33 +45,20 @@ q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../.
 
 ### 시나리오 4종
 
-시나리오는 분류 원문 11장의 여섯 항목으로 쓴다. 여섯 항목의 원문은 다음과 같다(전문은 [SCM 관점의 연구 시작 방법](../../about/research-method.md), 위키 전체의 칸 채움 현황은 [물류 흐름 매트릭스](../../flow-matrix.md)에 있다).
+시나리오는 분류 개정 전 원문 11장의 여섯 항목으로 쓴다. 여섯 항목의 원문은 다음과 같다(전문은 [연구 방법](../../about/research-method.md), 위키 전체의 칸 채움 현황은 [현장 유형 매트릭스](../../site-matrix.md)에 있다).
 
-1. **시작 조건:** 어떤 주문·재고·설비 이벤트가 작업을 발생시키는가? [분류원문]
-2. **작업 대상:** 어떤 화물·운반구를 다루는가? [분류원문]
+1. **시작 조건:** 어떤 주문·재고·설비 이벤트가 작업을 발생시키는가? [옛 분류원문]
+2. **작업 대상:** 어떤 화물·운반구를 다루는가? [옛 분류원문]
 3. **수행 자원:** 로봇·사람·설비 중 누가 어떤 부분을 맡는가? [분류원문]
-4. **제약:** 납기·공간·적재량·설비·권한 제약은 무엇인가? [분류원문]
-5. **완료·인계:** 무엇이 확인돼야 업무 완료와 재고 변경을 인정하는가? [분류원문]
+4. **제약:** 납기·공간·적재량·설비·권한 제약은 무엇인가? [옛 분류원문]
+5. **완료·인계:** 무엇이 확인돼야 업무 완료와 재고 변경을 인정하는가? [옛 분류원문]
 6. **예외·성과:** 실패하면 누가 복구하며, 처리량·시간·비용에 어떤 영향을 주는가? [분류원문]
 
 표의 열은 항목 / 내용 / 온톨로지가 바꾸는가 / 근거이다. "내용"에는 그 시나리오에서 항목이 어떻게 채워지는지를, "온톨로지가 바꾸는가"에는 예 / 아니오 / 부분 중 하나와 무엇이 바뀌는지를, "근거"에는 단계·실행 id(또는 실험 폴더)를 적는다. 시나리오가 다루는 물류 흐름 단계(입고 → 적치 → 보충 → 피킹 → 포장 → 출하 → 반품 중 하나 이상)는 표 위에 밝힌다. 표 형식은 구축자가 정한 것이다. [가정]
 
-#### 시나리오 1. 온보딩(21. 온보딩·설정·현장 시운전)
+#### 시나리오 1. 온보딩(55. 현장 조사·설치·시운전)
 
-관련 세부영역: [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) · 물류 흐름 단계: 미정
-
-| 항목 | 내용 | 온톨로지가 바꾸는가 | 근거(단계·실행 id) |
-|---|---|---|---|
-| 시작 조건 | 미조사 | 미조사 | |
-| 작업 대상 | 미조사 | 미조사 | |
-| 수행 자원 | 미조사 | 미조사 | |
-| 제약 | 미조사 | 미조사 | |
-| 완료·인계 | 미조사 | 미조사 | |
-| 예외·성과 | 미조사 | 미조사 | |
-
-#### 시나리오 2. 능력 기반 배정(13. 작업 배정 — MRTA)
-
-관련 세부영역: [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) · 물류 흐름 단계: 미정
+관련 세부영역: [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) · 물류 흐름 단계: 미정
 
 | 항목 | 내용 | 온톨로지가 바꾸는가 | 근거(단계·실행 id) |
 |---|---|---|---|
@@ -82,9 +69,9 @@ q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../.
 | 완료·인계 | 미조사 | 미조사 | |
 | 예외·성과 | 미조사 | 미조사 | |
 
-#### 시나리오 3. 안전 제약 반영(25. 안전·위험 관리)
+#### 시나리오 2. 능력 기반 배정(25. 작업 배정 — MRTA)
 
-관련 세부영역: [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) · 물류 흐름 단계: 미정
+관련 세부영역: [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md) · 물류 흐름 단계: 미정
 
 | 항목 | 내용 | 온톨로지가 바꾸는가 | 근거(단계·실행 id) |
 |---|---|---|---|
@@ -95,9 +82,22 @@ q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../.
 | 완료·인계 | 미조사 | 미조사 | |
 | 예외·성과 | 미조사 | 미조사 | |
 
-#### 시나리오 4. 이종 제조사 통합(9. 로봇·제조사 관제 연동)
+#### 시나리오 3. 안전 제약 반영(48. 안전·위험 관리)
 
-관련 세부영역: [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) · 물류 흐름 단계: 미정
+관련 세부영역: [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md) · 물류 흐름 단계: 미정
+
+| 항목 | 내용 | 온톨로지가 바꾸는가 | 근거(단계·실행 id) |
+|---|---|---|---|
+| 시작 조건 | 미조사 | 미조사 | |
+| 작업 대상 | 미조사 | 미조사 | |
+| 수행 자원 | 미조사 | 미조사 | |
+| 제약 | 미조사 | 미조사 | |
+| 완료·인계 | 미조사 | 미조사 | |
+| 예외·성과 | 미조사 | 미조사 | |
+
+#### 시나리오 4. 이종 제조사 통합(20. 로봇·제조사 관제 연동)
+
+관련 세부영역: [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) · 물류 흐름 단계: 미정
 
 | 항목 | 내용 | 온톨로지가 바꾸는가 | 근거(단계·실행 id) |
 |---|---|---|---|
@@ -156,18 +156,18 @@ q7-02는 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../.
 
 **트랙 정의가 명시한 연결(시나리오 4종)**
 
-- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 온보딩 시나리오. 새 제조사·기종을 추가할 때 문서 기반 온톨로지가 반복 작업과 기능 누락을 어떻게 바꾸는지가 가설 3의 판정 근거가 된다. 확인된 사실은 "5. 현장 시나리오"와 "6. 대표 접근법과 기술" 절에 반영을 제안한다.
-- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 능력 기반 배정 시나리오. 능력·제약·실행 조건이 배정 판단에 어떻게 쓰이는지가 가설 2의 판정 근거가 된다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
-- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 안전 제약 반영 시나리오. 문서(안전 매뉴얼)에 적힌 안전 제약이 작업·경로·권한 제약으로 어떻게 반영되는지를 다룬다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
-- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 이종 제조사 통합 시나리오. 제조사마다 다른 기능 이름·인터페이스를 공통 온톨로지로 맞추는 것이 어댑터 구성에 무엇을 바꾸는지를 다룬다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
+- [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) — 온보딩 시나리오. 새 제조사·기종을 추가할 때 문서 기반 온톨로지가 반복 작업과 기능 누락을 어떻게 바꾸는지가 가설 3의 판정 근거가 된다. 확인된 사실은 "5. 현장 시나리오"와 "6. 대표 접근법과 기술" 절에 반영을 제안한다.
+- [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md) — 능력 기반 배정 시나리오. 능력·제약·실행 조건이 배정 판단에 어떻게 쓰이는지가 가설 2의 판정 근거가 된다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
+- [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md) — 안전 제약 반영 시나리오. 문서(안전 매뉴얼)에 적힌 안전 제약이 작업·경로·권한 제약으로 어떻게 반영되는지를 다룬다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
+- [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) — 이종 제조사 통합 시나리오. 제조사마다 다른 기능 이름·인터페이스를 공통 온톨로지로 맞추는 것이 어댑터 구성에 무엇을 바꾸는지를 다룬다. 확인된 사실은 "5. 현장 시나리오" 절에 반영을 제안한다.
 
 **트랙 중심 영역**
 
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — 시나리오와 가설 판정의 결과는 이 영역의 공통 모델이 실제로 어느 활용처에서 쓰일 수 있는지를 말한다. 확인된 사실은 "5. 현장 시나리오"와 "9. ROP가 직접 맡는 것과 외부와 연계하는 것" 절에 반영을 제안한다.
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 시나리오와 가설 판정의 결과는 이 영역의 공통 모델이 실제로 어느 활용처에서 쓰일 수 있는지를 말한다. 확인된 사실은 "5. 현장 시나리오"와 "9. ROP가 직접 맡는 것과 외부와 연계하는 것" 절에 반영을 제안한다.
 
 ## 8. 출처
 
-아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 12장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
+아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 22장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
 
 ## 9. 이력
 

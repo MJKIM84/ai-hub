@@ -3,7 +3,7 @@ title: "단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조
 type: track-stage
 track: manual-capability-ontology
 stage: 3
-related_areas: [5, 27]
+related_areas: [5, 47]
 tags: [온톨로지 학습, 정보 추출, LLM 기반 추출, 문서 파싱, 출처 추적, 사람 검토 루프]
 status: seed
 created: 2026-09-24
@@ -22,7 +22,7 @@ version: 2
 
 > 문서를 구조로 바꾸는 방법의 현재 수준·정확도·한계.
 
-위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 이 단계는 [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)의 방법(문서 해석, 대규모 언어 모델(Large Language Model, LLM) 에이전트, 불확실성 평가)이 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)에 적용되는 부분을 다룬다. 스토리텔러 에이전트가 [실험](experiments.md) 계획을 제안할 수 있는 단계이기도 하다(실험 규칙은 그 페이지에 있다).
+위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 이 단계는 [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)의 방법(문서 해석, 대규모 언어 모델(Large Language Model, LLM) 에이전트, 불확실성 평가)이 [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md)에 적용되는 부분을 다룬다. 스토리텔러 에이전트가 [실험](experiments.md) 계획을 제안할 수 있는 단계이기도 하다(실험 규칙은 그 페이지에 있다).
 
 ## 2. 질문 목록
 
@@ -86,15 +86,15 @@ q3-07·q3-08은 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로�
 
 **중심 영역**
 
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — 추출된 구조가 이 영역의 공통 모델([능력 온톨로지 초안](ontology-draft.md))에 어떻게 맞춰지는지(q3-06)가 이 단계의 결과다. 확인된 사실은 "6. 대표 접근법과 기술"과 "8. 대표 연구와 자료" 절에 반영을 제안한다.
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 추출된 구조가 이 영역의 공통 모델([능력 온톨로지 초안](ontology-draft.md))에 어떻게 맞춰지는지(q3-06)가 이 단계의 결과다. 확인된 사실은 "6. 대표 접근법과 기술"과 "8. 대표 연구와 자료" 절에 반영을 제안한다.
 
-**연구 방법으로 연결되는 영역(분류 원문 8장의 교차 규칙)**
+**연구 방법으로 연결되는 영역(분류 개정 전 원문 8장의 교차 규칙)**
 
-- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 온톨로지 학습, 정보 추출, 지식그래프 구축, LLM 기반 추출의 정확도·재현성·환각과 사람 검토 루프는 이 영역의 연구 방법이다. 확인된 사실은 이 영역 페이지의 "6. 대표 접근법과 기술"과 "8. 대표 연구와 자료" 절에 반영을 제안하고, 적용 대상인 5. 로봇 능력·작업 온톨로지 페이지에도 함께 연결한다.
+- [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 온톨로지 학습, 정보 추출, 지식그래프 구축, LLM 기반 추출의 정확도·재현성·환각과 사람 검토 루프는 이 영역의 연구 방법이다. 확인된 사실은 이 영역 페이지의 "6. 대표 접근법과 기술"과 "8. 대표 연구와 자료" 절에 반영을 제안하고, 적용 대상인 5. 로봇 능력·작업 표현 페이지에도 함께 연결한다.
 
 ## 8. 출처
 
-아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 12장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
+아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 22장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
 
 ## 9. 이력
 

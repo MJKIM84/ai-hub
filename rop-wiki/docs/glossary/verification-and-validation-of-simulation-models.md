@@ -4,7 +4,7 @@ type: glossary
 term_ko: 시뮬레이션 모델 검증·타당성 확인
 term_en: Verification and Validation (V&V) of Simulation Models
 definition: 시뮬레이션 모델이 설계대로 구현되었는지(검증)와 목적에 비추어 현실을 충분히 대표하는지(타당성 확인)를 개념 모델·운영·데이터 측면에서 확인하는 절차다.
-related_areas: [22, 23]
+related_areas: [34, 54]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Sargent(2008, 40th WSC 판)는 개념 모델 타당성·모델 검증·운영 �
 
 ## 관련 영역
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [34. 시뮬레이션·예측용 디지털 트윈](../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

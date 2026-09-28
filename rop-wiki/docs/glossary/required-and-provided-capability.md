@@ -4,7 +4,7 @@ type: glossary
 term_ko: 요구 능력·제공 능력
 term_en: Required Capability / Provided (Offered) Capability
 definition: 공정·작업 쪽이 필요로 하는 능력과 자원 쪽이 내놓는 능력을 구분한 표현으로, 둘을 비교해 작업을 맡을 자원을 정한다. 이 위키의 온톨로지 초안에서는 capability 를 기능으로 부르므로 요구·제공 한정자에 해당한다.
-related_areas: [5, 13, 28]
+related_areas: [5, 21, 25]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ IDTA 02020 능력 기술 1.0 README 는 요구 능력과 제공 능력의 비교
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

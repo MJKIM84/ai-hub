@@ -4,7 +4,7 @@ type: glossary
 term_ko: 의미 식별자
 term_en: Semantic ID (semanticId)
 definition: AAS 요소의 의미를 외부 사전(ECLASS·IEC CDD 등)의 개념 기술이나 IDTA 자체 식별자로 가리키는 식별자이다.
-related_areas: [5, 28]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ AAS 요소의 의미를 외부 사전(ECLASS·IEC CDD 등)의 개념 기술이�
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

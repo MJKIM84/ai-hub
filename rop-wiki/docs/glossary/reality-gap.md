@@ -4,7 +4,7 @@ type: glossary
 term_ko: 현실 격차
 term_en: Reality Gap (Sim-to-Real Gap)
 definition: 시뮬레이션의 추상화·근사 때문에 생기는 시뮬레이션과 실제 환경 사이의 동역학·인식·구동 차이로, 시뮬레이션 결과를 현실로 옮기는 것을 어렵게 한다.
-related_areas: [22, 23]
+related_areas: [34, 54]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [34. 시뮬레이션·예측용 디지털 트윈](../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

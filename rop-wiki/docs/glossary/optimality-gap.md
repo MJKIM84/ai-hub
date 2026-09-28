@@ -4,7 +4,7 @@ type: glossary
 term_ko: 최적성 간격
 term_en: Optimality Gap
 definition: 어떤 해의 목적함수 값이 최적값(또는 해법기가 찾은 최선 값·하한)과 얼마나 떨어져 있는지를 비율로 나타낸 값으로, 실행 가능한 해의 품질을 재는 데 쓴다.
-related_areas: [13, 14, 23, 27]
+related_areas: [25, 26, 47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,10 +34,10 @@ ConstraintBench 는 LLM 직접 풀이를 해법기 최적값 기준으로 실행
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 시스템 이론적 프로세스 분석
 term_en: System-Theoretic Process Analysis (STPA)
 definition: 제어 구조를 기준으로 구성요소 사이의 안전하지 않은 제어 상호작용에서 위험 시나리오와 원인 요인을 찾는 위험 분석 기법이다.
-related_areas: [25, 15]
+related_areas: [27, 48]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

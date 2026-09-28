@@ -4,7 +4,7 @@ type: glossary
 term_ko: 디지털 트윈 결합
 term_en: Digital Twin Composition
 definition: 제품·설비·공정의 개별 디지털 트윈을 목적에 맞게 골라 묶어 라인·공장 단위의 복합 트윈을 만드는 방법으로, ISO 23247-6 이 다룬다.
-related_areas: [22, 28]
+related_areas: [21, 34]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [34. 시뮬레이션·예측용 디지털 트윈](../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

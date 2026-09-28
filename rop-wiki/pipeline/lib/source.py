@@ -1,4 +1,7 @@
-"""분류 원문(_source/ROP_SCM_연구분야_분류.md) 파서.
+"""분류 원문(_source/ROP_연구분야_분류.md) 파서.
+
+2026-09-28 개정: 대분류 A~Q(17개)·세부영역 1~67. 경계·아이디어 매핑·연구 방법·참고 자료 장은 번호가 아니라
+제목으로 찾는다(scope_chapter, idea_chapter, method_chapter, refs_chapter). 옛 원문(보관본)도 같은 파서로 읽는다.
 
 원문에서 옮기는 문장은 사람이 손으로 쓰지 않고 이 파서가 읽은 값을 그대로 출력해
 글자 단위 일치를 보장한다. 파서는 표의 굵게(**…**)를 제목(title)에서만 제거하고,
@@ -15,7 +18,7 @@ from .paths import SOURCE_FILE
 from .verbatim import split_blocks, strip_bold
 
 _CHAPTER = re.compile(r"^## (\d+)\. (.*)$")
-_CAT_HEADING = re.compile(r"^([A-G]) — (.+)$")
+_CAT_HEADING = re.compile(r"^([A-Z]) — (.+)$")
 _AREA_TITLE = re.compile(r"^(\d+)\. (.+)$")
 _NBUN = re.compile(r"(\d+(?:·\d+)*)번")
 _CITE = re.compile(r"\[(\d+)\]")
@@ -52,7 +55,7 @@ class Area:
     title: str              # "7. 화물·재고·자산 식별과 추적" (굵게 제거)
     title_cell: str         # "**7. 화물·재고·자산 식별과 추적**" (원문 셀 그대로)
     what: str               # 무엇을 연구하는가 (원문 셀 그대로)
-    question: str           # SCM 관점의 질문 (원문 셀 그대로)
+    question: str           # 핵심 질문 (원문 셀 그대로)
     category_letter: str
 
 
@@ -115,6 +118,10 @@ class Source:
     idea_table_header: list[str] = field(default_factory=list)
     idea_rows: list[dict] = field(default_factory=list)             # idea, primary, related
     references_intro: str = ""
+    scope_chapter: int = 0      # "ROP가 직접 소유할 범위와 외부 연계 경계"
+    idea_chapter: int = 0       # "논의한 아이디어의 연구영역 매핑"
+    method_chapter: int = 0     # 연구 방법(개정 전 원문은 "SCM 관점의 연구 시작 방법")
+    refs_chapter: int = 0       # "참고 자료"
 
     # --- 조회 ---------------------------------------------------------------
     def chapter_text(self, n: int) -> str:
@@ -271,22 +278,33 @@ def parse(raw: str, path: Path = SOURCE_FILE) -> Source:
         for a in areas:
             src.areas[a.no] = a
 
-    # 9장: 범위 경계 표
-    for b in split_blocks(src.chapter_text(9)):
+    # 제목으로 특수 장 찾기
+    def find(*keys: str) -> int:
+        for n in sorted(chapters):
+            if any(k in src.chapter_heading(n) for k in keys):
+                return n
+        raise ValueError(f"원문에 장이 없음: {keys}")
+    src.scope_chapter = find("직접 소유할 범위")
+    src.idea_chapter = find("아이디어의 연구영역 매핑")
+    src.method_chapter = find("연구 방법", "연구 시작 방법")
+    src.refs_chapter = find("참고 자료")
+
+    # 범위 경계 표
+    for b in split_blocks(src.chapter_text(src.scope_chapter)):
         if b[0].lstrip().startswith("|"):
             hdr, rows = parse_table(b)
             src.scope_table_header = hdr
             src.scope_rows = [{"경계": r[0], "rop": r[1], "external": r[2]} for r in rows]
 
-    # 10장: 아이디어 매핑 표
-    for b in split_blocks(src.chapter_text(10)):
+    # 아이디어 매핑 표
+    for b in split_blocks(src.chapter_text(src.idea_chapter)):
         if b[0].lstrip().startswith("|"):
             hdr, rows = parse_table(b)
             src.idea_table_header = hdr
             src.idea_rows = [{"idea": r[0], "primary": r[1], "related": r[2]} for r in rows]
 
-    # 12장: 참고 자료
-    blocks12 = split_blocks(src.chapter_text(12))
+    # 참고 자료
+    blocks12 = split_blocks(src.chapter_text(src.refs_chapter))
     if blocks12 and not re.match(r"^\d+\. ", blocks12[0][0]):
         src.references_intro = "\n".join(blocks12[0])
     for b in blocks12:

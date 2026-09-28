@@ -4,7 +4,7 @@ type: glossary
 term_ko: 분산 추적
 term_en: Distributed Tracing
 definition: 하나의 요청이 여러 구성 요소를 거치는 과정을 공통 추적 id 로 묶은 스팬들의 그래프로 기록하는 관측 기법이다.
-related_areas: [19, 11]
+related_areas: [38, 42]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [19. 모니터링·이상 탐지·원인 분석](../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md)
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
+- [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
 
 ## 출처
 

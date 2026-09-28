@@ -4,7 +4,7 @@ type: glossary
 term_ko: 평면도 인식
 term_en: Floor Plan Recognition
 definition: 평면도 이미지나 CAD 도면에서 벽·문·창문·계단 같은 건축 요소와 방 영역·유형을 자동으로 찾아내 구조화하는 작업이다.
-related_areas: [6, 27]
+related_areas: [15, 47]
 tags: []
 status: published
 confidence: medium
@@ -30,12 +30,12 @@ version: 1
 
 ## 설명
 
-래스터 이미지 데이터셋(CubiCasa5K, R2V 등), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan)이 공개되어 있다. 도면 해석은 27. AI·학습·적응과 모델 운영의 방법이 6. 지도·공간·위치 모델에 적용되는 경우다.
+래스터 이미지 데이터셋(CubiCasa5K, R2V 등), 벡터 CAD 데이터셋(FloorPlanCAD, ArchCAD-400K), 그래프 출력형 데이터셋(Raster-to-Graph, ResPlan)이 공개되어 있다. 도면 해석은 47. AI·학습·적응과 모델 운영의 방법이 15. 지도·공간·위치 모델에 적용되는 경우다.
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

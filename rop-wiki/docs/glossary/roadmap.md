@@ -4,7 +4,7 @@ type: glossary
 term_ko: 경로망
 term_en: Roadmap
 definition: 다중 AGV·이동로봇이 따라 달릴 수 있는 노드와 엣지의 주행 경로 그래프로, 현장 도입 때 전문가가 설계하거나 자동 생성한다.
-related_areas: [15, 21, 6]
+related_areas: [15, 27, 55]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ version: 1
 
 ## 관련 영역
 
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 그래프 편집 거리
 term_en: Graph Edit Distance (GED)
 definition: 한 그래프를 다른 그래프로 바꾸는 노드·엣지 추가·삭제·치환의 최소 비용으로, 평면도 방 연결 그래프의 구조 차이를 재는 데 쓴다.
-related_areas: [6, 27, 23]
+related_areas: [15, 47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ SSIG 는 평면도 구조 유사도를 IoU 와 방 연결 그래프의 GED 가�
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

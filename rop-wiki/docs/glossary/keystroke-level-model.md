@@ -4,7 +4,7 @@ type: glossary
 term_ko: 키 입력 수준 모델
 term_en: Keystroke-Level Model (KLM)
 definition: 숙련 사용자가 오류 없이 과제를 수행하는 시간을 키 입력·포인팅·정신적 준비 같은 연산자 시간의 합으로 예측하는 GOMS 계열 모델이다.
-related_areas: [21, 23]
+related_areas: [54, 55]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

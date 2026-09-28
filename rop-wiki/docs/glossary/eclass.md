@@ -4,7 +4,7 @@ type: glossary
 term_ko: ECLASS
 term_en: ECLASS
 definition: ECLASS e.V. 가 관리하는 제품·서비스 분류·속성 사전 표준으로, 4단계 계층의 8자리 코드와 IRDI 로 분류 클래스와 속성을 식별한다.
-related_areas: [5, 28]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ ECLASS e.V. 가 관리하는 제품·서비스 분류·속성 사전 표준으�
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

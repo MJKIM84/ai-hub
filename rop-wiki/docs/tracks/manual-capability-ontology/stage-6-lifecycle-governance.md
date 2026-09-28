@@ -3,7 +3,7 @@ title: "단계 6. 변경 관리·운영·거버넌스 조사"
 type: track-stage
 track: manual-capability-ontology
 stage: 6
-related_areas: [24, 27, 28, 5]
+related_areas: [5, 21, 47, 57]
 tags: [변경 관리, 버전 대응, 재추출, 재검증, 책임과 데이터 소유권, AI 해석 사용 기준]
 status: seed
 created: 2026-09-24
@@ -22,7 +22,7 @@ version: 1
 
 > 문서와 펌웨어가 바뀌는 동안 온톨로지를 어떻게 유지하는가. 부록 A 24·27·28번과 연결.
 
-위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 위 문장의 "부록 A"는 이 위키의 분류 원문을 뜻하며, 24·27·28번은 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md), [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md), [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)를 가리킨다. 조사 결과는 온톨로지 수명주기 절차 초안으로 정리되며, 버전 규칙 중 온톨로지에 관한 것은 [능력 온톨로지 초안](ontology-draft.md)의 버전 이력 규칙과 맞춘다.
+위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 위 문장의 "부록 A"는 이 위키의 분류 원문을 뜻하며, 24·27·28번은 [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md), [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md), [21. 상호운용 표준·적합성](../../categories/integration/interoperability-standards-and-conformance.md)를 가리킨다. 조사 결과는 온톨로지 수명주기 절차 초안으로 정리되며, 버전 규칙 중 온톨로지에 관한 것은 [능력 온톨로지 초안](ontology-draft.md)의 버전 이력 규칙과 맞춘다.
 
 ## 2. 질문 목록
 
@@ -79,17 +79,17 @@ version: 1
 
 **트랙 정의가 명시한 연결**
 
-- [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) — 이 영역이 다루는 소프트웨어 구성 요소의 버전 관리와 배포 뒤 복구가 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 문서·펌웨어 개정 시 재추출·차이 검출·재검증(q6-01)과 버전 대응(q6-02)이 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술" 절에 반영을 제안한다.
-- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 이 영역이 다루는 AI 모델의 변경 관리가 이 단계와 닿고(원문 정의는 그 영역 페이지의 1절에 있다), AI가 해석한 기능 정보를 실행에 사용하는 기준(신뢰도 문턱, 사람 승인, 제한 운영, q6-04)은 이 영역의 SCM 관점의 질문과 같은 물음이다. 확인된 사실은 이 영역 페이지와 적용 대상인 5. 로봇 능력·작업 온톨로지 페이지 양쪽에 연결한다.
-- [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 이 영역이 다루는 제조사 사이의 책임 분담, 데이터 소유권, 인터페이스 변경 정책이 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 제조사·ROP·설비업체 사이의 기능 기술 정확성 책임과 데이터 소유권(q6-03)이 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술"과 "11. 열린 질문" 절에 반영을 제안한다.
+- [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 이 영역이 다루는 소프트웨어 구성 요소의 버전 관리와 배포 뒤 복구가 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 문서·펌웨어 개정 시 재추출·차이 검출·재검증(q6-01)과 버전 대응(q6-02)이 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술" 절에 반영을 제안한다.
+- [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 이 영역이 다루는 AI 모델의 변경 관리가 이 단계와 닿고(원문 정의는 그 영역 페이지의 1절에 있다), AI가 해석한 기능 정보를 실행에 사용하는 기준(신뢰도 문턱, 사람 승인, 제한 운영, q6-04)은 이 영역의 핵심 질문과 같은 물음이다. 확인된 사실은 이 영역 페이지와 적용 대상인 5. 로봇 능력·작업 표현 페이지 양쪽에 연결한다.
+- [21. 상호운용 표준·적합성](../../categories/integration/interoperability-standards-and-conformance.md) — 이 영역이 다루는 제조사 사이의 책임 분담, 데이터 소유권, 인터페이스 변경 정책이 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 제조사·ROP·설비업체 사이의 기능 기술 정확성 책임과 데이터 소유권(q6-03)이 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술"과 "11. 열린 질문" 절에 반영을 제안한다.
 
 **트랙 중심 영역**
 
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — 수명주기 절차가 요구하는 온톨로지의 버전·근거 문서 속성은 이 영역의 공통 모델에 속한다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 수명주기 절차가 요구하는 온톨로지의 버전·근거 문서 속성은 이 영역의 공통 모델에 속한다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
 
 ## 8. 출처
 
-아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 12장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
+아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 22장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
 
 ## 9. 이력
 

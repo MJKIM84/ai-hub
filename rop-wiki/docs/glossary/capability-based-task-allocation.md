@@ -4,7 +4,7 @@ type: glossary
 term_ko: 능력 기반 작업 배정
 term_en: Capability-based Task Allocation
 definition: 로봇이 선언하거나 관측된 능력·제약과 작업의 요구 조건을 대조해 수행 가능한 로봇에게 작업을 배정하는 방식이다.
-related_areas: [13, 5]
+related_areas: [5, 25]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
 
 ## 출처
 

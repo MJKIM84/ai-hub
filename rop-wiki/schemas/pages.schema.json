@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://rop-wiki.invalid/schemas/pages.schema.json",
   "title": "pages.json — 스토리텔러 페이지 산출물",
-  "description": "사양서 부록 B.3. 스토리텔러가 반환하는 페이지 목록과 색인·용어집·참고문헌·열린 질문·흐름 매트릭스 갱신 내용. 에이전트가 반환하는 원본은 pages[].content(프런트매터 포함 페이지 전체 마크다운)를 담고, 스크립트가 runs/<run_id>/pages/ 에 풀어낸 뒤 content 를 뺀 사본을 저장하므로 이 루트 스키마에서 content 는 선택 필드다. 에이전트 반환값은 $defs/returned(루트 + pages[] 모든 항목에 content 필수)로 검사한다. track_updates 와 area_reflection_proposals 는 트랙 실행에만 넣는다. standards_updates 는 선택이다 [가정].",
+  "description": "사양서 부록 B.3. 스토리텔러가 반환하는 페이지 목록과 색인·용어집·참고문헌·열린 질문·현장 유형 매트릭스 갱신 내용. 에이전트가 반환하는 원본은 pages[].content(프런트매터 포함 페이지 전체 마크다운)를 담고, 스크립트가 runs/<run_id>/pages/ 에 풀어낸 뒤 content 를 뺀 사본을 저장하므로 이 루트 스키마에서 content 는 선택 필드다. 에이전트 반환값은 $defs/returned(루트 + pages[] 모든 항목에 content 필수)로 검사한다. track_updates 와 area_reflection_proposals 는 트랙 실행에만 넣는다. standards_updates 는 선택이다 [가정].",
   "type": "object",
   "properties": {
     "run_id": {
@@ -173,7 +173,7 @@
               "type": "integer",
               "description": "세부영역 번호",
               "minimum": 1,
-              "maximum": 28
+              "maximum": 67
             },
             "uniqueItems": true
           },
@@ -328,7 +328,7 @@
               "type": "integer",
               "description": "세부영역 번호",
               "minimum": 1,
-              "maximum": 28
+              "maximum": 67
             },
             "minItems": 1,
             "uniqueItems": true
@@ -385,24 +385,24 @@
         ]
       }
     },
-    "flow_matrix_updates": {
+    "site_matrix_updates": {
       "type": "array",
-      "description": "물류 흐름 매트릭스 갱신(시나리오가 다룬 칸)",
+      "description": "현장 유형 × 대분류 적용 사례 매트릭스 갱신(적용 사례가 다룬 칸). 대분류는 넣지 않는다 — 퍼블리셔가 link 의 페이지에서 정해 '현장 유형|대분류 문자' 칸에 반영한다",
       "items": {
         "type": "object",
-        "description": "흐름 매트릭스 칸 갱신 하나",
+        "description": "현장 유형 매트릭스 칸 갱신 하나",
         "properties": {
-          "step": {
+          "site_type": {
             "type": "string",
-            "description": "물류 흐름 단계",
+            "description": "적용 사례의 현장 유형(분류 원문 21장)",
             "enum": [
-              "입고",
-              "적치",
-              "보충",
-              "피킹",
-              "포장",
-              "출하",
-              "반품"
+              "물류창고",
+              "제조 공장",
+              "병원",
+              "상업 시설",
+              "가정",
+              "실외",
+              "기타"
             ]
           },
           "item": {
@@ -429,7 +429,7 @@
           }
         },
         "required": [
-          "step",
+          "site_type",
           "item",
           "link"
         ],
@@ -579,7 +579,7 @@
             "type": "integer",
             "description": "반영할 세부영역 번호",
             "minimum": 1,
-            "maximum": 28
+            "maximum": 67
           },
           "section": {
             "type": "string",
@@ -587,11 +587,11 @@
             "enum": [
               "3. 왜 중요한가",
               "4. 핵심 개념과 용어",
-              "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+              "5. 적용 사례 (현장 유형 명시)",
               "6. 대표 접근법과 기술",
               "7. 관련 표준·프레임워크·오픈소스",
               "8. 대표 연구와 자료",
-              "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+              "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
               "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
               "11. 열린 질문",
               "13. 참고 자료 (각주)"
@@ -651,7 +651,7 @@
               "type": "integer",
               "description": "세부영역 번호",
               "minimum": 1,
-              "maximum": 28
+              "maximum": 67
             },
             "minItems": 1,
             "uniqueItems": true
@@ -722,7 +722,7 @@
     "glossary_updates",
     "reference_updates",
     "open_question_updates",
-    "flow_matrix_updates",
+    "site_matrix_updates",
     "additional_research_requests",
     "fixes_applied"
   ],

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 모델 레지스트리
 term_en: Model Registry
 definition: 학습된 모델의 버전·별칭·태그·계보를 한곳에서 관리해 어떤 버전을 운영에 쓰는지 정하고 교체·되돌림을 추적하게 하는 저장소다.
-related_areas: [27, 24]
+related_areas: [47, 57]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
 
 ## 출처
 

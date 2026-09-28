@@ -4,7 +4,7 @@ type: glossary
 term_ko: CAP 정리
 term_en: CAP Theorem
 definition: 네트워크 분할이 일어날 수 있는 분산 서비스는 일관성과 가용성을 동시에 완전히 보장할 수 없다는 정리이다.
-related_areas: [11, 8]
+related_areas: [18, 42]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ Gilbert·Lynch(2002)가 비동기 네트워크 모델에서 증명했다(원문 
 
 ## 관련 영역
 
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
-- [8. 실시간 세계 상태·데이터 일관성](../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
+- [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)
 
 ## 출처
 

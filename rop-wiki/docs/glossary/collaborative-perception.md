@@ -4,7 +4,7 @@ type: glossary
 term_ko: 협동 인지
 term_en: Collaborative Perception
 definition: 여러 로봇이 센서 정보나 인식 결과를 공유·융합해 한 대가 볼 때보다 넓고 정확하게 환경을 파악하는 방식이다.
-related_areas: [17]
+related_areas: [30]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [17. 로봇 간 협업·물리적 인계](../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)
+- [30. 로봇 간 협업·물리적 인계](../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)
 
 ## 출처
 

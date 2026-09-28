@@ -4,7 +4,7 @@ type: glossary
 term_ko: VDA 5050 팩트시트
 term_en: VDA 5050 factsheet
 definition: VDA 5050에서 이동로봇이 관제에 자신의 유형·물리 파라미터·적재 명세·지원 action을 알리는 메시지이다.
-related_areas: [5, 9]
+related_areas: [5, 20]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ VDA 5050에서 이동로봇이 관제에 자신의 유형·물리 파라미터·
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
 
 ## 출처
 

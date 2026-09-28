@@ -4,7 +4,7 @@ type: glossary
 term_ko: 절제 실험
 term_en: Ablation Study
 definition: 시스템의 한 구성 요소를 빼거나 다른 것으로 바꿔 성능 변화를 재어 그 구성 요소의 기여를 확인하는 실험이다.
-related_areas: [23, 27]
+related_areas: [47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ LLM 기반 로봇 계획 연구에서 기호 검증기를 같은 방식으로 �
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

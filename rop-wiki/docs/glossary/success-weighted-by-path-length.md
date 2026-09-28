@@ -4,7 +4,7 @@ type: glossary
 term_ko: 경로 길이 가중 성공률
 term_en: Success weighted by Path Length (SPL)
 definition: 내비게이션 에피소드마다 성공 여부에 최단 경로 길이를 실제 경로 길이(최단보다 짧으면 최단)로 나눈 비율을 곱해 평균한 지표로, 도착 여부와 경로 효율을 함께 잰다.
-related_areas: [23, 6]
+related_areas: [15, 54]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ Anderson 외(2018)의 작업반 권고가 주 지표로 제안했다. 로봇 주
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
 
 ## 출처
 

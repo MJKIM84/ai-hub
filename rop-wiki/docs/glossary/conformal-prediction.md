@@ -4,7 +4,7 @@ type: glossary
 term_ko: 등각 예측
 term_en: Conformal Prediction
 definition: 보정 데이터로 예측 집합의 크기를 정해, 정답이 집합에 들어갈 확률을 사용자가 정한 수준 이상으로 통계적으로 보장하는 불확실성 정량화 방법이다.
-related_areas: [27, 18]
+related_areas: [31, 47]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ KnowNo는 등각 예측으로 LLM 계획기의 불확실성을 보정해 필요�
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

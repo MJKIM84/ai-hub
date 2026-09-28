@@ -4,7 +4,7 @@ type: glossary
 term_ko: 정보 전달 명세
 term_en: Information Delivery Specification (IDS)
 definition: buildingSMART 가 정한, IFC 모델이 갖춰야 할 정보 요구사항을 컴퓨터가 해석할 수 있게 적는 XML 기반 표준이다.
-related_areas: [28, 6]
+related_areas: [15, 21]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ XSD 스키마와 XML 예시로 제공된다. 판 번호와 검사 범위는 공�
 
 ## 관련 영역
 
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
 
 ## 출처
 

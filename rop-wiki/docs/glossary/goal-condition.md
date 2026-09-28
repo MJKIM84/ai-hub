@@ -4,7 +4,7 @@ type: glossary
 term_ko: 목표 조건
 term_en: Goal Condition
 definition: 작업이 끝났을 때 환경이 만족해야 하는 상태 조건의 집합으로, 지시 수행 벤치마크에서 계획·실행 결과가 맞았는지를 판정하는 정답으로 쓰인다.
-related_areas: [23, 27, 13]
+related_areas: [25, 47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ ALFRED 는 작업별 PDDL 목표 조건으로 전문가 시연을 만들고, SMA
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 주문 취소 즉시 동작
 term_en: cancelOrder (VDA 5050 instant action)
 definition: VDA 5050 에서 관제가 보내면 로봇이 가능한 한 빨리 정지하고 남은 동작을 실패로 보고한 뒤 유휴 상태가 되게 하는 즉시 동작이다.
-related_areas: [20, 9, 12]
+related_areas: [20, 29, 32]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ VDA 5050 3.0.0 기준. 예정 동작은 FAILED, 정지 뒤 cancelOrder 는 FINIS
 
 ## 관련 영역
 
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
 
 ## 출처
 

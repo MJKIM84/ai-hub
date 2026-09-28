@@ -4,7 +4,7 @@ type: glossary
 term_ko: 비용 지도
 term_en: Costmap
 definition: 로봇 경로 계획을 위해 점유 격자 지도 위에 장애물, 로봇 외형에 따른 여유(인플레이션), 필터 마스크로 적용한 금지 구역·속도 제한 같은 비용을 칸마다 매긴 격자 지도다.
-related_areas: [6, 15]
+related_areas: [15, 27]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ Nav2 의 costmap_2d 패키지가 대표 구현이다. 점유 격자 지도가 �
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

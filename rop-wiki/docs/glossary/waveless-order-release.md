@@ -4,7 +4,7 @@ type: glossary
 term_ko: 웨이브리스 출고 지시
 term_en: Waveless Order Release
 definition: 주문을 큰 묶음(웨이브)으로 모아 내리지 않고 도착·여유 용량에 따라 연속으로 현장에 내려보내는 출고 지시 방식이다.
-related_areas: [1, 14]
+related_areas: [23, 26]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Gallien·Weber(2010)는 자동 분류기 창고에서 웨이브리스 정책이 
 
 ## 관련 영역
 
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
 
 ## 출처
 

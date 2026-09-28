@@ -4,7 +4,7 @@ type: glossary
 term_ko: 디스펜서·인제스터
 term_en: Dispenser / Ingestor
 definition: Open-RMF 에서 로봇에 물건을 내주는 작업대(디스펜서)와 로봇에서 물건을 받아들이는 작업대(인제스터)로, 각각 요청·결과·상태 메시지로 배송 작업과 연동된다.
-related_areas: [10, 17]
+related_areas: [22, 30]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Open-RMF 문서는 두 유형을 예시(sample) 작업대로 부르므로 표준
 
 ## 관련 영역
 
-- [10. 설비·건물 시스템 연동](../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)
-- [17. 로봇 간 협업·물리적 인계](../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)
+- [22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md)
+- [30. 로봇 간 협업·물리적 인계](../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)
 
 ## 출처
 

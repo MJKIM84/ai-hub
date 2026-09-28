@@ -4,7 +4,7 @@ type: glossary
 term_ko: 고영향 인공지능
 term_en: High-impact AI (Korea AI Basic Act)
 definition: 한국 인공지능 기본법에서 사람의 생명·안전·기본권에 중대한 영향을 미칠 수 있어 별도 책무가 부과되는 영역의 AI 시스템이다.
-related_areas: [27, 25, 28]
+related_areas: [21, 47, 48]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ version: 1
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

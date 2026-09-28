@@ -4,7 +4,7 @@ type: glossary
 term_ko: 멱등성 키
 term_en: Idempotency Key
 definition: 클라이언트가 요청마다 만든 고유 값으로, 서버가 같은 요청의 재시도를 알아보고 한 번만 처리하게 하는 데 쓰인다.
-related_areas: [12, 1]
+related_areas: [23, 29]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IETF HTTPAPI 작업반의 Idempotency-Key 헤더 초안(RFC 아님)은 키를 �
 
 ## 관련 영역
 
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md)
 
 ## 출처
 

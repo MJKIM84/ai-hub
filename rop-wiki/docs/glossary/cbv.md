@@ -4,7 +4,7 @@ type: glossary
 term_ko: 핵심 업무 어휘
 term_en: Core Business Vocabulary (CBV)
 definition: EPCIS 이벤트의 업무 단계·상태·인계 유형 등에 채울 표준 어휘 값을 정한 GS1 표준(ISO/IEC 19988)이다.
-related_areas: [7]
+related_areas: [17]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ EPCIS 이벤트의 업무 단계·상태·인계 유형 등에 채울 표준 어
 
 ## 관련 영역
 
-- [7. 화물·재고·자산 식별과 추적](../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)
+- [17. 작업 대상·자산 식별과 인계 추적](../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)
 
 ## 출처
 

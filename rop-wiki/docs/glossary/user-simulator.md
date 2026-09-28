@@ -4,7 +4,7 @@ type: glossary
 term_ko: 사용자 시뮬레이터
 term_en: User Simulator
 definition: 대화형 에이전트를 평가할 때 목표와 정보를 가진 사용자를 규칙이나 LLM 으로 모사해 에이전트와 대화하게 하는 구성 요소다.
-related_areas: [23, 27, 18]
+related_areas: [31, 47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ version: 1
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

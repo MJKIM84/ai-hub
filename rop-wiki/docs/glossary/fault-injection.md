@@ -4,7 +4,7 @@ type: glossary
 term_ko: 장애 주입
 term_en: Fault Injection
 definition: 시험 중 센서 신호·메시지·서비스·장비에 지연, 누락, 고장 같은 장애를 계획적으로 넣어 시스템이 장애를 감지하고 복구하는지 확인하는 시험 기법이다.
-related_areas: [23, 12, 20]
+related_areas: [29, 32, 54]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ NIST ARIAC 는 경진 중 컨베이어 정지·공구 파지 실패 등을 주�
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
 
 ## 출처
 

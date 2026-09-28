@@ -4,7 +4,7 @@ type: glossary
 term_ko: IndoorGML
 term_en: IndoorGML
 definition: 실내 공간을 셀 공간(CellSpace)과 그 경계, 공간 연결을 나타내는 노드·엣지의 쌍대 그래프, 의미별 주제 레이어로 표현하는 OGC 실내 공간 정보 표준이다.
-related_areas: [6, 28]
+related_areas: [15, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IndoorGML 2.0 은 Part 1 개념 모델이 공개됐고 Part 2 인코딩은 작�
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

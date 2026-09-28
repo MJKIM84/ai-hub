@@ -4,7 +4,7 @@ type: glossary
 term_ko: 능력·스킬·서비스 모델
 term_en: Capabilities, Skills and Services (CSS) Model
 definition: Plattform Industrie 4.0 작업반이 제안한 정보 모델로, 구현과 무관한 기능 명세(능력)와 그 실행 가능한 구현(스킬), 제공 형태(서비스)를 구분한다. 이 위키의 온톨로지 초안에서는 CSS의 능력(capability)을 기능(Capability)으로 부른다.
-related_areas: [5, 28]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Plattform Industrie 4.0 작업반이 제안한 정보 모델로, 구현과 무�
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 통과 가능성
 term_en: Traversability
 definition: 특정 로봇이 공간 그래프의 구역·차선·문·계단·승강기를 지나갈 수 있는지를 로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다.
-related_areas: [6, 5, 8, 13]
+related_areas: [5, 15, 18, 25]
 tags: []
 status: published
 confidence: low
@@ -26,7 +26,7 @@ version: 1
 
 ## 한 줄 정의
 
-특정 로봇이 공간 그래프의 구역·차선·문·계단·승강기를 지나갈 수 있는지를 로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 8. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다. [추정][^ref-573][^ref-574][^ref-461][^ref-229]
+특정 로봇이 공간 그래프의 구역·차선·문·계단·승강기를 지나갈 수 있는지를 로봇 능력(정적 조건)으로 판정하는 통과 가능 여부이며, 문 닫힘 같은 현재 상태는 18. 실시간 세계 상태·데이터 일관성 쪽에서 따로 다룬다. [추정][^ref-573][^ref-574][^ref-461][^ref-229]
 
 ## 설명
 
@@ -34,10 +34,10 @@ version: 1
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [8. 실시간 세계 상태·데이터 일관성](../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [18. 실시간 세계 상태·데이터 일관성](../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 의미적 버전 관리
 term_en: Semantic Versioning (SemVer)
 definition: 공개 API 를 선언하고 호환되지 않는 변경·하위 호환 기능 추가·하위 호환 수정을 각각 MAJOR·MINOR·PATCH 번호로 올려 변경의 호환성을 판 번호로 알리는 규칙이다.
-related_areas: [28, 24, 9]
+related_areas: [20, 21, 57]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ VDA 5050 3.0.0 도 이 규칙을 따라 메시지 헤더 version 에 프로토�
 
 ## 관련 영역
 
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
 
 ## 출처
 

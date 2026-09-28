@@ -4,7 +4,7 @@ type: glossary
 term_ko: 사건 기반 재스케줄링
 term_en: Event-driven Rescheduling
 definition: 고장·긴급 주문·지시 변경 같은 사건이 생길 때마다 기존 일정을 다시 계산하는 재스케줄링 정책으로, 정해진 주기마다 다시 짜는 주기적 재스케줄링과 구분된다.
-related_areas: [14, 20, 13]
+related_areas: [25, 26, 32]
 tags: []
 status: published
 confidence: low
@@ -30,13 +30,13 @@ version: 1
 
 ## 설명
 
-Vieira·Herrmann·Lin(2003)의 재스케줄링 틀은 정책으로 주기적 재스케줄링과 사건 기반 재스케줄링을 구분한다(원문 미열람). 자연어 업무 지시 챗봇 트랙에서는 채팅 지시 변경을 사건으로 삼아 작업 계획기가 남은 요청으로 일정을 다시 계산하는 분담이 선택지로 검토되었다(추정).
+Vieira·Herrmann·Lin(2003)의 재스케줄링 틀은 정책으로 주기적 재스케줄링과 사건 기반 재스케줄링을 구분한다(원문 미열람). 채팅 기반 구성·운영 트랙에서는 채팅 지시 변경을 사건으로 삼아 작업 계획기가 남은 요청으로 일정을 다시 계산하는 분담이 선택지로 검토되었다(추정).
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

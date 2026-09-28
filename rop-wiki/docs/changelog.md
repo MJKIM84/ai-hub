@@ -20,11 +20,11 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
-| 2026-09-26-02 | 갱신 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-781·ref-782 추가, last_run 2026-09-26 |
-| 2026-09-26-02 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 |
+| 2026-09-26-02 | 갱신 | [docs/categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-781·ref-782 추가, last_run 2026-09-26 |
+| 2026-09-26-02 | 갱신 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 |
 | 2026-09-26-02 | 생성 | [docs/topics/2026/2026-09-26-area04-s10.md](topics/2026/2026-09-26-area04-s10.md) | 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다(2차 재실행에서 변경 없음) |
 | 2026-09-26-02 | 생성 | [docs/topics/2026/2026-09-26-area25-s7.md](topics/2026/2026-09-26-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: ref-783 각주 정의 제목을 ISO 페이지 전체 제목으로 고침 |
-| 2026-09-26-02 | 요약 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리): ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 |
+| 2026-09-26-02 | 요약 | [docs/categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리): ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 |
 | 2026-09-26-02 | 생성 | [docs/references/ref-781.md](references/ref-781.md) | 참고문헌 ref-781 등록: ISO/DIS 22400-2 - Automation systems and integration — Key p… |
 | 2026-09-26-02 | 생성 | [docs/references/ref-782.md](references/ref-782.md) | 참고문헌 ref-782 등록: ISO 22400-2:2014/Amd 1:2017 - Automation systems and integra… |
 | 2026-09-26-02 | 생성 | [docs/references/ref-783.md](references/ref-783.md) | 참고문헌 ref-783 등록: ISO/AWI 15066-1 - Collaborative Safety – Physical contact wi… |
@@ -858,10 +858,10 @@ version: 1
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.5 → 1.6: outline 선작성, 차등 갱신 patches, 대분류 연결, 트랙 산출물 |
 | manual-2026-09-25 | 갱신 | agents/storyteller.md | 스토리텔러 에이전트 1.6 → 1.7: 기존 페이지 갱신은 실행 유형과 관계없이 patches(영역 심화의 seed 페이지만 예외) |
 | deploy-2026-09-25 | 배포 | docs/ | 라이브 배포: GitHub Pages(https://mjkim84.github.io/ai-hub/), GitHub Actions로 자동 빌드·배포 |
-| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 {#q5-02} 소제목 신설: 네 층 가상 시험 구성·한계), 후속 질문 q5-13~q5-15, 2·4·5·6·8·9절 갱신, 7절에 22. 시뮬레이션·예측용 디지털 트윈 추가. 2차: 단계 상태 줄을 열린 질문 12건·답한 질문 2건으로 고치고 SafeAgentBench 10% 출처 문장을 README·초록으로 나눠 고침(상태 줄 때문에 전체 content 로 보냄) |
-| 2026-09-25-99 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절에 '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절 신설(네 층 구성 표·Mermaid 도식, f18~f21 추정, 근거 f1·f2·f4·f7(강등)·f8·f9·f10·f15), 새 각주 11건(2차 재실행에서 변경 없음) |
-| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 2차: '6. 살아있는 산출물 링크' 절만 갱신 — 아이디어 2 항목에 q5-02 답(검증 절차 소절) 반영과 실행 2026-09-25-99 의 지정 질문 처리 서술 추가, 초안 변경 없음 실행 목록에 2026-09-25-99 추가(현재 단계 표기·상태 줄은 그대로) |
-| 2026-09-25-99 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-02 답함(가상 현장·가상 로봇 네 층 시험 구성과 한계, 추정 중심), 아이디어 2 6절 검증 절차 소절 신설, 트랙 개요 6절 갱신, 후속 질문 3건 |
+| 2026-09-25-99 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 {#q5-02} 소제목 신설: 네 층 가상 시험 구성·한계), 후속 질문 q5-13~q5-15, 2·4·5·6·8·9절 갱신, 7절에 22. 시뮬레이션·예측용 디지털 트윈 추가. 2차: 단계 상태 줄을 열린 질문 12건·답한 질문 2건으로 고치고 SafeAgentBench 10% 출처 문장을 README·초록으로 나눠 고침(상태 줄 때문에 전체 content 로 보냄) |
+| 2026-09-25-99 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 6절에 '검증 절차: 가상 현장·가상 로봇 시나리오 시험' 소절 신설(네 층 구성 표·Mermaid 도식, f18~f21 추정, 근거 f1·f2·f4·f7(강등)·f8·f9·f10·f15), 새 각주 11건(2차 재실행에서 변경 없음) |
+| 2026-09-25-99 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 2차: '6. 살아있는 산출물 링크' 절만 갱신 — 아이디어 2 항목에 q5-02 답(검증 절차 소절) 반영과 실행 2026-09-25-99 의 지정 질문 처리 서술 추가, 초안 변경 없음 실행 목록에 2026-09-25-99 추가(현재 단계 표기·상태 줄은 그대로) |
+| 2026-09-25-99 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-02 답함(가상 현장·가상 로봇 네 층 시험 구성과 한계, 추정 중심), 아이디어 2 6절 검증 절차 소절 신설, 트랙 개요 6절 갱신, 후속 질문 3건 |
 | 2026-09-25-99 | 생성 | [docs/references/ref-738.md](references/ref-738.md) | 참고문헌 ref-738 등록: τ-bench: A Benchmark for Tool-Agent-User Interaction in Real… |
 | 2026-09-25-99 | 생성 | [docs/references/ref-739.md](references/ref-739.md) | 참고문헌 ref-739 등록: tau-bench — README |
 | 2026-09-25-99 | 생성 | [docs/references/ref-740.md](references/ref-740.md) | 참고문헌 ref-740 등록: Lost in Simulation: LLM-Simulated Users are Unreliable Proxi… |
@@ -876,12 +876,12 @@ version: 1
 | 2026-09-25-99 | 생성 | [docs/glossary/pass-k.md](glossary/pass-k.md) | 용어집 항목 pass^k 지표 |
 | 2026-09-25-99 | 생성 | [docs/glossary/reality-gap.md](glossary/reality-gap.md) | 용어집 항목 현실 격차 |
 | 2026-09-25-99 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
-| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-99 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-01 답함(네 층 평가 지표, 3절 신설), 2절에 단계 5 백로그 질문 반영(q5-06 폐기 제외)·새 질문 q5-11·q5-12, 4·5·6·8·9절 갱신, 상태 줄 진행 중. 시드 단계 페이지라 상태 줄(H1 아래)까지 고치려고 전체 content 로 보냄 |
-| 2026-09-25-98 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절 '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절 신설(네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행, 모두 추정), 새 출처 각주 추가 |
-| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 초안 v0.8 유지(실행 2026-09-25-98 변경 없음), 아이디어 2 링크 설명에 CLI 지정 질문으로 단계 5 q5-01 을 다뤘음과 현재 단계 3 유지를 적음. 상태 줄은 입력 그대로(현재 단계 3, 마지막 트랙 실행 2026-09-25) |
-| 2026-09-25-98 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-01 답함(해석·분해·배정 적합성·일정 품질 네 층 평가 지표, 신뢰도 low), 후속 질문 2건, q5-06 폐기, 아이디어 2 6절 평가 지표 소절 신설, 초안 v0.8 유지 |
+| 2026-09-25-99 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-99 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-98 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | q5-01 답함(네 층 평가 지표, 3절 신설), 2절에 단계 5 백로그 질문 반영(q5-06 폐기 제외)·새 질문 q5-11·q5-12, 4·5·6·8·9절 갱신, 상태 줄 진행 중. 시드 단계 페이지라 상태 줄(H1 아래)까지 고치려고 전체 content 로 보냄 |
+| 2026-09-25-98 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 6절 '아직 조사되지 않음'을 바꾸고 '평가 지표' 소절 신설(네 층 지표 구성·배정 분리 보고·슬롯별 지표 병행, 모두 추정), 새 출처 각주 추가 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 산출물 링크 갱신: 초안 v0.8 유지(실행 2026-09-25-98 변경 없음), 아이디어 2 링크 설명에 CLI 지정 질문으로 단계 5 q5-01 을 다뤘음과 현재 단계 3 유지를 적음. 상태 줄은 입력 그대로(현재 단계 3, 마지막 트랙 실행 2026-09-25) |
+| 2026-09-25-98 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-01 답함(해석·분해·배정 적합성·일정 품질 네 층 평가 지표, 신뢰도 low), 후속 질문 2건, q5-06 폐기, 아이디어 2 6절 평가 지표 소절 신설, 초안 v0.8 유지 |
 | 2026-09-25-98 | 생성 | [docs/references/ref-730.md](references/ref-730.md) | 참고문헌 ref-730 등록: Mismatch between Multi-turn Dialogue and its Evaluation Metr… |
 | 2026-09-25-98 | 생성 | [docs/references/ref-731.md](references/ref-731.md) | 참고문헌 ref-731 등록: A Survey on Spoken Language Understanding: Recent Advances a… |
 | 2026-09-25-98 | 생성 | [docs/references/ref-732.md](references/ref-732.md) | 참고문헌 ref-732 등록: Generating Executable Action Plans with Environmentally-Awar… |
@@ -893,29 +893,29 @@ version: 1
 | 2026-09-25-98 | 생성 | [docs/glossary/joint-goal-accuracy.md](glossary/joint-goal-accuracy.md) | 용어집 항목 결합 목표 정확도 |
 | 2026-09-25-98 | 생성 | [docs/glossary/optimality-gap.md](glossary/optimality-gap.md) | 용어집 항목 최적성 간격 |
 | 2026-09-25-98 | 생성 | [docs/glossary/schedule-stability.md](glossary/schedule-stability.md) | 용어집 항목 일정 안정성 |
-| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-98 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·가설별 근거·잠정 판정표·필요 실험), 2절에 q5-16~q5-19 추가, 후속 질문 2건(q5-19, q3-16), 완료 조건 현황·상태 줄 갱신 |
-| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 3절 가설 판정 칸을 부분 지지(잠정)로 갱신(단계 5 · 실행 2026-09-25-86), 판정 규칙 단락·변경 기록 추가, 6절에 실행 기록 추가, 8절에 판정 근거 각주 |
-| 2026-09-25-86 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 6절에 '가설 판정 절차' 소절 추가(확실성 평가·TRL 보조 축·판정 값 규칙·잠정 판정 요약·필요 실험, 추정 중심) |
-| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/experiments.md](tracks/nl-task-chatbot/experiments.md) | '제안된 실험 계획' 절에 E5-01~E5-03 을 제안(사용자 수행 대기)으로 추가 |
-| 2026-09-25-86 | 요약 | [docs/tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-03 답함: 가설 판정 절차·규칙과 잠정 판정(가설 1~3 부분 지지(잠정)), 실험 계획 E5-01~E5-03 제안 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-98 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-86 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·가설별 근거·잠정 판정표·필요 실험), 2절에 q5-16~q5-19 추가, 후속 질문 2건(q5-19, q3-16), 완료 조건 현황·상태 줄 갱신 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 3절 가설 판정 칸을 부분 지지(잠정)로 갱신(단계 5 · 실행 2026-09-25-86), 판정 규칙 단락·변경 기록 추가, 6절에 실행 기록 추가, 8절에 판정 근거 각주 |
+| 2026-09-25-86 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 6절에 '가설 판정 절차' 소절 추가(확실성 평가·TRL 보조 축·판정 값 규칙·잠정 판정 요약·필요 실험, 추정 중심) |
+| 2026-09-25-86 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/experiments.md](tracks/chat-based-configuration-and-operation/experiments.md) | '제안된 실험 계획' 절에 E5-01~E5-03 을 제안(사용자 수행 대기)으로 추가 |
+| 2026-09-25-86 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md) | 자연어 업무 지시 챗봇 단계 5: q5-03 답함: 가설 판정 절차·규칙과 잠정 판정(가설 1~3 부분 지지(잠정)), 실험 계획 E5-01~E5-03 제안 |
 | 2026-09-25-86 | 생성 | [docs/references/ref-777.md](references/ref-777.md) | 참고문헌 ref-777 등록: RobotFleet: An Open-Source Framework for Centralized Multi-R… |
 | 2026-09-25-86 | 생성 | [docs/references/ref-778.md](references/ref-778.md) | 참고문헌 ref-778 등록: robot-fleet — RobotFleet: An Open-Source Framework for Centr… |
 | 2026-09-25-86 | 생성 | [docs/references/ref-779.md](references/ref-779.md) | 참고문헌 ref-779 등록: Enhancing Robustness in Language-Driven Robotics: A Modular… |
 | 2026-09-25-86 | 생성 | [docs/references/ref-780.md](references/ref-780.md) | 참고문헌 ref-780 등록: 제조 물류 로봇에서의 대규모 언어 모델(LLM)을 활용한 로봇 협업 인터페이스 구축 |
 | 2026-09-25-86 | 생성 | [docs/glossary/ablation-study.md](glossary/ablation-study.md) | 용어집 항목 절제 실험 |
 | 2026-09-25-86 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
-| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-86 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신 |
-| 2026-09-25-85 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low) |
-| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음) |
-| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절에 실행 2026-09-25-85(q4-04 답, 초안 v0.9 유지) 한 줄 추가 |
-| 2026-09-25-85 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-86 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 5) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 4·6·8·9절 갱신 |
+| 2026-09-25-85 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '제한 운영으로 넘기는 기준' 소절 추가(q4-04, 신뢰도 low) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 6절 '사용자 확인' 질문에 q4-04 답 연결(초안 v0.9 유지, 온톨로지 변경 없음) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절에 실행 2026-09-25-85(q4-04 답, 초안 v0.9 유지) 한 줄 추가 |
+| 2026-09-25-85 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-04 답함(되묻기·사람 승인·실행 보류 전환 기준, 신뢰도 low), 후속 질문 q4-19, 아이디어 2 5절 소절 추가, 초안 v0.9 유지 |
 | 2026-09-25-85 | 생성 | [docs/glossary/expected-value-of-perfect-information.md](glossary/expected-value-of-perfect-information.md) | 용어집 항목 완전 정보의 기대 가치 |
-| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-85 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
+| 2026-09-25-85 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-85 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-03 답함(판정 절차·판정 값 규칙·잠정 판정표·필요 실험), 후속 질문 q5-14·q5-15, 완료 조건 표 갱신(충족 · 미승인), 출처 26건 추가, 이력 행 추가 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 3절 가설 판정 칸 갱신(가설 1·2 부분 지지(잠정), 가설 3 미판정)과 판정 규칙 단락(추정), 6절 이번 실행 요약 추가, 8절 각주 정의 추가 |
 | 2026-09-25-84 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '가설 판정 절차 (q5-03)' 소절 추가(근거 확실성 평가, 판정 값 규칙과 TRL 보조 축, 잠정 판정, 필요 실험), 절 안내 문장에 q5-03 소절 안내 추가, 기존 두 소절의 'q5-03 아직 조사하지 않았다' 구절을 새 소절 안내로 정정(2차 수정), 각주 4건 추가 |
@@ -929,11 +929,11 @@ version: 1
 | 2026-09-25-84 | 생성 | [docs/glossary/grade-certainty-of-evidence.md](glossary/grade-certainty-of-evidence.md) | 용어집 항목 근거 확실성 등급 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-84 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-03 답함(명령 권한·감사 추적), 후속 질문 3건(q4-17·q4-18·q5-17), 결론·완료 조건·출처·이력 갱신. 2차: 단계 상태 줄을 열린 질문 15건·답한 질문 3건으로 맞추고 q4-03 시나리오 예외·성과 칸 문구를 배정 최적성 손실로 고침(전체 content) |
-| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.8 → v0.9: 개념 '명령 권한' 추가(확정, 속성 구성·기본 거부는 후보), 지시 개념 입력자를 인증된 사용자 식별로 정리, 다이어그램·6절 질문 갱신. 2차: H1 을 (v0.9)로 맞춤(전체 content) |
-| 2026-09-25-83 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '명령 권한과 감사 추적' 소절 신설(q4-03, 실행 2026-09-25-83, 신뢰도 low) |
-| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 초안 v0.9(명령 권한 추가), 아이디어 5절 명령 권한 소절(q4-03) 반영 |
-| 2026-09-25-83 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-03 답함(명령 권한·감사 추적), 업무 분해·배정 설계 초안 v0.8 → v0.9(개념 '명령 권한' 추가, 지시 입력자 정리), 후속 질문 3건 |
+| 2026-09-25-83 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | q4-03 답함(명령 권한·감사 추적), 후속 질문 3건(q4-17·q4-18·q5-17), 결론·완료 조건·출처·이력 갱신. 2차: 단계 상태 줄을 열린 질문 15건·답한 질문 3건으로 맞추고 q4-03 시나리오 예외·성과 칸 문구를 배정 최적성 손실로 고침(전체 content) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.8 → v0.9: 개념 '명령 권한' 추가(확정, 속성 구성·기본 거부는 후보), 지시 개념 입력자를 인증된 사용자 식별로 정리, 다이어그램·6절 질문 갱신. 2차: H1 을 (v0.9)로 맞춤(전체 content) |
+| 2026-09-25-83 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '명령 권한과 감사 추적' 소절 신설(q4-03, 실행 2026-09-25-83, 신뢰도 low) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 산출물 링크 갱신: 초안 v0.9(명령 권한 추가), 아이디어 5절 명령 권한 소절(q4-03) 반영 |
+| 2026-09-25-83 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-03 답함(명령 권한·감사 추적), 업무 분해·배정 설계 초안 v0.8 → v0.9(개념 '명령 권한' 추가, 지시 입력자 정리), 후속 질문 3건 |
 | 2026-09-25-83 | 생성 | [docs/references/ref-762.md](references/ref-762.md) | 참고문헌 ref-762 등록: rmf-web — packages/api-server/README.md |
 | 2026-09-25-83 | 생성 | [docs/references/ref-763.md](references/ref-763.md) | 참고문헌 ref-763 등록: Specification 2025-06-18 — Basic: Authorization (docs/specif… |
 | 2026-09-25-83 | 생성 | [docs/references/ref-764.md](references/ref-764.md) | 참고문헌 ref-764 등록: Article 12: Record-Keeping \| EU Artificial Intelligence Act |
@@ -953,8 +953,8 @@ version: 1
 | 2026-09-25-83 | 생성 | [docs/glossary/attribute-based-access-control.md](glossary/attribute-based-access-control.md) | 용어집 항목 속성 기반 접근 통제 |
 | 2026-09-25-83 | 생성 | [docs/glossary/confused-deputy.md](glossary/confused-deputy.md) | 용어집 항목 혼란된 대리인 |
 | 2026-09-25-83 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-83 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
+| 2026-09-25-83 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-83 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-02 답함(3절 소제목 신설, 측정 구성 추정 중심), 후속 질문 q5-12·q5-13, 4·5·6·7·8·9절 갱신 |
 | 2026-09-25-82 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: '검증 절차: 현장 모델링 시간 단축 측정' 소절 추가(q5-02, 추정 중심), 절 첫 문단과 평가 지표 소절 끝의 미조사 문장을 새 소절과 맞춤 |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-82(단계 5, q5-02) 진행 문단 추가 |
@@ -979,11 +979,11 @@ version: 1
 | 2026-09-25-82 | 생성 | [docs/glossary/keystroke-level-model.md](glossary/keystroke-level-model.md) | 용어집 항목 키 입력 수준 모델 |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-82 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-757 발행일 2026-04), 이력 행 추가 |
-| 2026-09-25-81 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16 |
-| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가 |
-| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 게시본(v14) 6절을 유지한 채 실행 2026-09-25-81(q4-02 답, 초안 변경 없음)만 덧붙임, version 15 |
-| 2026-09-25-81 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | q4-02 답함(검증 방법별 포착·놓침 오류, 모의 실행의 8·22 구분, 피킹 시나리오), 후속 질문 3건(q4-15·q4-16·q5-16), 완료 조건 미충족 유지(열린 질문 q4-03~q4-16), 관련 세부영역 22·23·8 추가, 8. 출처에 새 각주 정의(ref-757 발행일 2026-04), 이력 행 추가 |
+| 2026-09-25-81 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 게시본(v15)의 5절 끝에 '검증 방법별로 잡는 오류' 소절 추가(q4-02, 실행 2026-09-25-81), 6절·auto 영역은 게시본 유지, 프런트매터 sources 에 새 인용 id 추가, version 16 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 6절 '검증 기록' 질문에 q4-02 답 연결과 재제안 미반영 사유 추가(초안 v0.8 유지), 프런트매터 sources 에 새 인용 id 추가 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 게시본(v14) 6절을 유지한 채 실행 2026-09-25-81(q4-02 답, 초안 변경 없음)만 덧붙임, version 15 |
+| 2026-09-25-81 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-02 답함: 실행 전 검증 방법(스키마·온톨로지 제약·계획 검증·모의 실행·사람 확인)별 포착·놓침 오류 정리(신뢰도 low), 후속 질문 3건, 초안 v0.8 유지 |
 | 2026-09-25-81 | 생성 | [docs/references/ref-748.md](references/ref-748.md) | 참고문헌 ref-748 등록: json-schema-spec — specs/jsonschema-validation.md (JSON Sche… |
 | 2026-09-25-81 | 생성 | [docs/references/ref-749.md](references/ref-749.md) | 참고문헌 ref-749 등록: jsonschemabench — README (JSONSchemaBench) |
 | 2026-09-25-81 | 생성 | [docs/references/ref-750.md](references/ref-750.md) | 참고문헌 ref-750 등록: JSONSchemaBench: A Rigorous Benchmark of Structured Outputs… |
@@ -1002,8 +1002,8 @@ version: 1
 | 2026-09-25-81 | 생성 | [docs/glossary/json-schema.md](glossary/json-schema.md) | 용어집 항목 JSON 스키마 |
 | 2026-09-25-81 | 생성 | [docs/glossary/latent-failure.md](glossary/latent-failure.md) | 용어집 항목 잠재 실패 |
 | 2026-09-25-81 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
-| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-81 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
+| 2026-09-25-81 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-81 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md) | q5-01 답함(3절 신설), 2절에 q5-04~q5-10 행 추가, 4·5·6·8·9절 갱신, 상태 줄 갱신(seed 페이지 전체를 content 로 보냄). 2차 수정: 6절 첫 완료 조건을 한 행·미충족으로 되돌림, 4절 결론의 '클래스별' 삭제 |
 | 2026-09-25-80 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 6절 전체 교체: 도입 단락을 소절 출처(q1-04 선행 근거, q5-01 답)에 맞게 고치고 '평가 지표 (q5-01)' 소절(세 층 지표·운영 허용치 변환·경로 차이 정의·ROP 경계, 추정 중심)을 더함, 근거 공백 문장에 태그·각주 추가 |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-09-25-80(단계 5, q5-01) 산출물 요약 단락 추가 |
@@ -1026,11 +1026,11 @@ version: 1
 | 2026-09-25-80 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-80 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 5) |
-| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 질문 표를 백로그 문구와 맞춤, 후속 질문 3건, 완료 조건 미충족·전환 아니오, 상태 줄 진행 중. 2차 수정: OWASP 발행일 표기 정정, 2절 표 백로그 일치(상태 줄이 H2 밖이라 전체 content 로 보냄) |
-| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절에 사용자 확인 질문의 q4-01 답 링크와 속성 후보를 질문으로 덧붙임(개념 추가 미반영, 초안 v0.8 유지). 2차 수정: MCP 풀어쓰기·용어집 링크, 사람 참여 루프 용어집 링크 |
-| 2026-09-25-79 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '오해석 방지 확인 절차' 소절 추가(q4-01, 실행 2026-09-25-79), 머리 문장의 '확인 절차 미조사' 서술을 실행 기준과 함께 갱신, 명령 권한·제한 운영 기준 미조사 명시. 2차 수정: MCP 첫 등장 풀어쓰기·용어집 링크 |
-| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크 절 갱신: 실행 2026-09-25-79 에서 초안 v0.8 유지·개념 '사용자 확인' 제안은 6절 질문, 아이디어 2 5절에 '오해석 방지 확인 절차' 소절(q4-01) 추가. 상태 줄은 바꾸지 않음(단계 3 완료·전환 미승인) |
-| 2026-09-25-79 | 요약 | [docs/tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md](tracks/nl-task-chatbot/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 후속 질문 3건, 초안 v0.8 유지(개념 '사용자 확인'은 6절 질문), 아이디어 2 5절에 오해석 방지 확인 절차 소절 추가, 트랙 개요 산출물 현황 갱신 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 질문 표를 백로그 문구와 맞춤, 후속 질문 3건, 완료 조건 미충족·전환 아니오, 상태 줄 진행 중. 2차 수정: OWASP 발행일 표기 정정, 2절 표 백로그 일치(상태 줄이 H2 밖이라 전체 content 로 보냄) |
+| 2026-09-25-79 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 6절에 사용자 확인 질문의 q4-01 답 링크와 속성 후보를 질문으로 덧붙임(개념 추가 미반영, 초안 v0.8 유지). 2차 수정: MCP 풀어쓰기·용어집 링크, 사람 참여 루프 용어집 링크 |
+| 2026-09-25-79 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '오해석 방지 확인 절차' 소절 추가(q4-01, 실행 2026-09-25-79), 머리 문장의 '확인 절차 미조사' 서술을 실행 기준과 함께 갱신, 명령 권한·제한 운영 기준 미조사 명시. 2차 수정: MCP 첫 등장 풀어쓰기·용어집 링크 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6. 살아있는 산출물 링크 절 갱신: 실행 2026-09-25-79 에서 초안 v0.8 유지·개념 '사용자 확인' 제안은 6절 질문, 아이디어 2 5절에 '오해석 방지 확인 절차' 소절(q4-01) 추가. 상태 줄은 바꾸지 않음(단계 3 완료·전환 미승인) |
+| 2026-09-25-79 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md) | 자연어 업무 지시 챗봇 단계 4: q4-01 답함(다섯 겹 확인 절차 가설, 신뢰도 low), 후속 질문 3건, 초안 v0.8 유지(개념 '사용자 확인'은 6절 질문), 아이디어 2 5절에 오해석 방지 확인 절차 소절 추가, 트랙 개요 산출물 현황 갱신 |
 | 2026-09-25-79 | 생성 | [docs/references/ref-695.md](references/ref-695.md) | 참고문헌 ref-695 등록: LLM06:2025 Excessive Agency (2_0_vulns/LLM06_ExcessiveAgency… |
 | 2026-09-25-79 | 생성 | [docs/references/ref-696.md](references/ref-696.md) | 참고문헌 ref-696 등록: Specification 2025-06-18 — Server Features: Tools (docs/spec… |
 | 2026-09-25-79 | 생성 | [docs/references/ref-697.md](references/ref-697.md) | 참고문헌 ref-697 등록: Human-in-the-loop — LangChain docs (src/oss/langchain/human-… |
@@ -1049,8 +1049,8 @@ version: 1
 | 2026-09-25-79 | 생성 | [docs/glossary/automation-bias.md](glossary/automation-bias.md) | 용어집 항목 자동화 편향 |
 | 2026-09-25-79 | 생성 | [docs/glossary/explicit-implicit-confirmation.md](glossary/explicit-implicit-confirmation.md) | 용어집 항목 명시적 확인·암시적 확인 |
 | 2026-09-25-79 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
-| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-79 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 4) |
+| 2026-09-25-79 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-79 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 4) |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-04 답함(3절 {#q4-04} 신설: 지도 판 식별·배포 규칙은 사실, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 추정), 후속 질문 q4-15·q5-08, q4-14 폐기로 2절 표에서 제외, 상태 줄 답한 질문 4건, 6절 막힌 질문에 q4-15 추가, 7절 목록에 23·25 추가, 4·5·8·9절 갱신. 머리 줄 수정 때문에 전체 페이지로 보냄 |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.1 → v1.2: 평면도 '버전' 속성에 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모 추가(f7·f9). 층별 지도 '판 식별자(후보)'는 반영하지 않고 6절 지도 버전 항목 근거 보강, 정합 절차 초안에 판 교체 시 재검증 단계 추가. H1 버전 표기를 (v1.2)로 맞추려고 전체 페이지로 보냄 |
 | 2026-09-25-78 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '도면·지도 판 관리와 재검증' 소절 신설(q4-04 요약, 정합 절차 초안 7단계 추가, 종합은 추정) |
@@ -1068,11 +1068,11 @@ version: 1
 | 2026-09-25-78 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-78 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
-| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 소제목 {#q3-04} 신설, 변경 유형별 조작 표·도식, 출하 시나리오), 2절 질문 목록 갱신과 q3-15 추가, 4절 결론 추가, 후속 질문 3건, 6절 완료 조건 미충족·전환 아니오(q3-05~q3-15), 7절 반영 제안, 8절 각주 12건 추가, 9절 이력 행 추가. 2차 수정: 전문으로 보내 H1 아래 단계 상태 줄을 답한 질문 4건·열린 질문 10건으로 갱신, 전환 줄 막힌 질문 범위를 q3-05~q3-15 로 고침 |
-| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.7 → v0.8: 지시 개념에 속성 '변경 유형'·'원 지시 참조', 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동' 추가, 두 개념 초안 → 확정; 6절에 q3-04 답 연결과 경계 규칙·보상 작업 승인 주체 질문 추가. 2차 수정: 전문으로 보내 H1 을 '(v0.8)' 로 고쳐 프런트매터·JSON 버전과 맞춤 |
-| 2026-09-25-77 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '지시 변경 반영' 소절 신설(q3-04, 실행 2026-09-25-77): 단계 3 시작 질문 4개가 모두 답해졌음과 다른 아이디어와의 연결은 여전히 구조 언급 수준(완료 조건 미충족)임을 명시, 새 각주 10건(2차 수정 대상 아님, 변경 없음) |
-| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 현재 버전 v0.8(실행 2026-09-25-77 지시·작업 개념 확정)과 아이디어 2 5절의 지시 변경 반영(q3-04) 반영(2차 수정 대상 아님, 변경 없음) |
-| 2026-09-25-77 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-04 답함(지시 변경 반영: 변경 유형별 조작·변경 허용 상태·사건 기반 재스케줄링·보상 작업), 업무 분해·배정 설계 초안 v0.7 → v0.8, 후속 질문 3건 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 소제목 {#q3-04} 신설, 변경 유형별 조작 표·도식, 출하 시나리오), 2절 질문 목록 갱신과 q3-15 추가, 4절 결론 추가, 후속 질문 3건, 6절 완료 조건 미충족·전환 아니오(q3-05~q3-15), 7절 반영 제안, 8절 각주 12건 추가, 9절 이력 행 추가. 2차 수정: 전문으로 보내 H1 아래 단계 상태 줄을 답한 질문 4건·열린 질문 10건으로 갱신, 전환 줄 막힌 질문 범위를 q3-05~q3-15 로 고침 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.7 → v0.8: 지시 개념에 속성 '변경 유형'·'원 지시 참조', 작업 개념에 속성 '변경 허용 상태'·'취소 시 보상 활동' 추가, 두 개념 초안 → 확정; 6절에 q3-04 답 연결과 경계 규칙·보상 작업 승인 주체 질문 추가. 2차 수정: 전문으로 보내 H1 을 '(v0.8)' 로 고쳐 프런트매터·JSON 버전과 맞춤 |
+| 2026-09-25-77 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '지시 변경 반영' 소절 신설(q3-04, 실행 2026-09-25-77): 단계 3 시작 질문 4개가 모두 답해졌음과 다른 아이디어와의 연결은 여전히 구조 언급 수준(완료 조건 미충족)임을 명시, 새 각주 10건(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-77 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6. 살아있는 산출물 링크: 초안 현재 버전 v0.8(실행 2026-09-25-77 지시·작업 개념 확정)과 아이디어 2 5절의 지시 변경 반영(q3-04) 반영(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-77 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-04 답함(지시 변경 반영: 변경 유형별 조작·변경 허용 상태·사건 기반 재스케줄링·보상 작업), 업무 분해·배정 설계 초안 v0.7 → v0.8, 후속 질문 3건 |
 | 2026-09-25-77 | 생성 | [docs/references/ref-680.md](references/ref-680.md) | 참고문헌 ref-680 등록: rmf_api_msgs — rmf_api_msgs/schemas/skip_phase_request.json |
 | 2026-09-25-77 | 생성 | [docs/references/ref-681.md](references/ref-681.md) | 참고문헌 ref-681 등록: OPC UA for ISA-95 - Part 4: Job Control (OPC 10031-4) — 6 IS… |
 | 2026-09-25-77 | 생성 | [docs/references/ref-682.md](references/ref-682.md) | 참고문헌 ref-682 등록: Rescheduling Manufacturing Systems: A Framework of Strategie… |
@@ -1083,8 +1083,8 @@ version: 1
 | 2026-09-25-77 | 생성 | [docs/glossary/event-driven-rescheduling.md](glossary/event-driven-rescheduling.md) | 용어집 항목 사건 기반 재스케줄링 |
 | 2026-09-25-77 | 생성 | [docs/glossary/frozen-horizon.md](glossary/frozen-horizon.md) | 용어집 항목 동결 구간 |
 | 2026-09-25-77 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
-| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-77 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-77 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-77 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-76 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-03 답함(3절 {#q4-03} 신설, 추정 중심), 후속 질문 q4-12·q4-13, 완료 조건 2행 충족(1차 예비)·전환 미승인, 출처 16건 추가, 이력 행 추가; 2차 수정: 상태 줄 수치·완료 조건 갱신, 7절에 10. 설비·건물 시스템 연동 추가 |
 | 2026-09-25-76 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.0 → v1.1: 층 속성 '시스템별 층 식별자(별칭)' 추가(MassRobotics planarDatum 제외), 개념 '좌표계 정렬'은 반영하지 않고 6절 근거 보강, 6절에 층·장소 식별자 대응 근거와 도면–현장 정합 절차 초안(추정) 추가; 2차 수정: H1 을 v1.1 로, 프런트매터 sources 에서 미인용 ref-159·ref-669·ref-679 제거 |
 | 2026-09-25-76 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절에 '좌표 정렬과 층·목적지 이름 맞춤' 소절(q4-03, 추정 중심)과 q4-02·q4-03 을 합친 '도면–현장 정합 절차 초안(추정)' 소절 추가; 2차 수정: 5절을 replace 로 보내 기존 소절의 'q4-03 미조사·정합 절차 미완성' 문장을 이번 결과로 고치고 메타 문장 삭제 |
@@ -1120,11 +1120,11 @@ version: 1
 | 2026-09-25-75 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-75 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
-| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설 #q3-03), 새 질문 q3-14·q4-11·q5-08, 4·6·7·8·9절과 상태 줄 갱신(답한 질문 3건·열린 질문 10건), 단계 전환 아니오 |
-| 2026-09-25-74 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '온톨로지 질의 결과에 따른 되묻기' 소절 신설(q3-03), 다른 아이디어와의 연결은 구조 언급 수준으로 명시, 절 머리 문장 갱신 |
-| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 6절에 개념 '배정 실패' 제안(검증 미반영)을 미해결 모델링 질문으로 추가, 초안 버전 v0.7 유지 |
-| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 상태 줄의 현재 단계를 '단계 3. 구현 가설 설계'로 갱신, 6절 산출물 링크에 실행 2026-09-25-74(q3-03, 초안 변경 없음) 반영 |
-| 2026-09-25-74 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-03 답함(후보 없음·후보 여럿일 때 되묻기 범위, 신뢰도 low), 새 질문 3건, 초안 v0.7 유지 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설 #q3-03), 새 질문 q3-14·q4-11·q5-08, 4·6·7·8·9절과 상태 줄 갱신(답한 질문 3건·열린 질문 10건), 단계 전환 아니오 |
+| 2026-09-25-74 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '온톨로지 질의 결과에 따른 되묻기' 소절 신설(q3-03), 다른 아이디어와의 연결은 구조 언급 수준으로 명시, 절 머리 문장 갱신 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 6절에 개념 '배정 실패' 제안(검증 미반영)을 미해결 모델링 질문으로 추가, 초안 버전 v0.7 유지 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 상태 줄의 현재 단계를 '단계 3. 구현 가설 설계'로 갱신, 6절 산출물 링크에 실행 2026-09-25-74(q3-03, 초안 변경 없음) 반영 |
+| 2026-09-25-74 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-03 답함(후보 없음·후보 여럿일 때 되묻기 범위, 신뢰도 low), 새 질문 3건, 초안 v0.7 유지 |
 | 2026-09-25-74 | 생성 | [docs/references/ref-656.md](references/ref-656.md) | 참고문헌 ref-656 등록: rmf_ros2 — rmf_task_ros2/src/rmf_task_ros2/Dispatcher.cpp |
 | 2026-09-25-74 | 생성 | [docs/references/ref-657.md](references/ref-657.md) | 참고문헌 ref-657 등록: rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/bidding/Aucti… |
 | 2026-09-25-74 | 생성 | [docs/references/ref-658.md](references/ref-658.md) | 참고문헌 ref-658 등록: Fallback and Human Handoff — Rasa documentation (docs/docs/f… |
@@ -1139,10 +1139,10 @@ version: 1
 | 2026-09-25-74 | 생성 | [docs/glossary/contrastive-explanation.md](glossary/contrastive-explanation.md) | 용어집 항목 대조적 설명 |
 | 2026-09-25-74 | 생성 | [docs/glossary/irreducible-infeasible-subset.md](glossary/irreducible-infeasible-subset.md) | 용어집 항목 기약 불능 제약 집합 |
 | 2026-09-25-74 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-74 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
-| 2026-09-25-73 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
-| 2026-09-25-73 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/index.md](categories/g-safety-security-intelligence-and-governance/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
+| 2026-09-25-74 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-74 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-73 | 갱신 | [docs/categories/governance-law-and-society/index.md](categories/governance-law-and-society/index.md) | '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
+| 2026-09-25-73 | 요약 | [docs/categories/governance-law-and-society/index.md](categories/governance-law-and-society/index.md) | G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) |
 | 2026-09-25-73 | 생성 | [docs/references/ref-711.md](references/ref-711.md) | 참고문헌 ref-711 등록: Verification-Gated Agentic Mission-State Governance for Inte… |
 | 2026-09-25-73 | 생성 | [docs/references/ref-712.md](references/ref-712.md) | 참고문헌 ref-712 등록: ros-mcp-server — Connect AI models like Claude & GPT with ro… |
 | 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md) | q4-01 답함(보정 여섯 묶음·용도별 지도·ROP 경계, 추정), 후속 질문 2건(q4-09·q4-10), 완료 조건 첫 행 충족(2차 확인)·둘째 행 미충족, 상태 줄 진행 중; 2차: 시나리오 제약 칸 비용 지도 필터 문장을 Nav2 로 한정 |
@@ -1160,11 +1160,11 @@ version: 1
 | 2026-09-25-72 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-72 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 4) |
-| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-02 답함(3절 {#q3-02} 소제목 신설: 여섯 단계 입력·출력, 결정적 구성 요소·검증 게이트·도구 노출 경계, 피킹 시나리오), 2·4·5·6·7·8·9절 갱신, 후속 질문 3건. 2차 수정: 절 밖 상태 줄을 고치려고 전체 페이지로 보냄 — 상태 줄 '답한 질문: 2건', 6절 전환 줄 질문 범위 q3-03~q3-12 |
-| 2026-09-25-71 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절에 '처리 흐름과 핵심 구성 요소' 소절 신설(q3-02, 실행 2026-09-25-71), 절 안내 문장 갱신, 5절 각주 정의에 새 출처 추가·원문 미열람 표기 보완(2차 수정 대상 아님, 변경 없음) |
-| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.6 → v0.7: 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교' 추가(f1, 상태 확정 유지), 1절 버전 설명 추가, 6절에 거부된 제안(실행 가능성 판정·검증 기록) 질문 2건 추가. 2차 수정: 절 밖 H1 을 고치려고 전체 페이지로 보냄 — H1 '(v0.7)' |
-| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 살아있는 산출물: 초안 현재 버전 v0.7(v0.6·v0.7 내역), 아이디어 2 5절 작성 현황 갱신. H1 아래 트랙 상태 줄의 현재 단계는 2차 검증 참고대로 config 의 current_stage(단계 1)와 맞춰 두고 바꾸지 않음(공식 현재 단계는 사용자 결정 사항) |
-| 2026-09-25-71 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-02 답함(처리 흐름 여섯 단계의 입력·출력과 결정적 구성 요소·검증 게이트 배치, 신뢰도 low), 업무 분해·배정 설계 초안 v0.6 → v0.7(배정 산출 방식 '입찰 비교'), 후속 질문 3건, 1차 수정 지시 15건·2차 수정 지시 3건 이행 |
+| 2026-09-25-71 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | q3-02 답함(3절 {#q3-02} 소제목 신설: 여섯 단계 입력·출력, 결정적 구성 요소·검증 게이트·도구 노출 경계, 피킹 시나리오), 2·4·5·6·7·8·9절 갱신, 후속 질문 3건. 2차 수정: 절 밖 상태 줄을 고치려고 전체 페이지로 보냄 — 상태 줄 '답한 질문: 2건', 6절 전환 줄 질문 범위 q3-03~q3-12 |
+| 2026-09-25-71 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절에 '처리 흐름과 핵심 구성 요소' 소절 신설(q3-02, 실행 2026-09-25-71), 절 안내 문장 갱신, 5절 각주 정의에 새 출처 추가·원문 미열람 표기 보완(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-71 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.6 → v0.7: 배정 개념의 배정 산출 방식에 값 후보 '입찰 비교' 추가(f1, 상태 확정 유지), 1절 버전 설명 추가, 6절에 거부된 제안(실행 가능성 판정·검증 기록) 질문 2건 추가. 2차 수정: 절 밖 H1 을 고치려고 전체 페이지로 보냄 — H1 '(v0.7)' |
+| 2026-09-25-71 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 살아있는 산출물: 초안 현재 버전 v0.7(v0.6·v0.7 내역), 아이디어 2 5절 작성 현황 갱신. H1 아래 트랙 상태 줄의 현재 단계는 2차 검증 참고대로 config 의 current_stage(단계 1)와 맞춰 두고 바꾸지 않음(공식 현재 단계는 사용자 결정 사항) |
+| 2026-09-25-71 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-02 답함(처리 흐름 여섯 단계의 입력·출력과 결정적 구성 요소·검증 게이트 배치, 신뢰도 low), 업무 분해·배정 설계 초안 v0.6 → v0.7(배정 산출 방식 '입찰 비교'), 후속 질문 3건, 1차 수정 지시 15건·2차 수정 지시 3건 이행 |
 | 2026-09-25-71 | 생성 | [docs/references/ref-674.md](references/ref-674.md) | 참고문헌 ref-674 등록: Agentic Neuro-Symbolic Planning and Commissioning for Human-… |
 | 2026-09-25-71 | 생성 | [docs/references/ref-675.md](references/ref-675.md) | 참고문헌 ref-675 등록: Robot Planning via LLM Proposals and Symbolic Verification |
 | 2026-09-25-71 | 생성 | [docs/references/ref-676.md](references/ref-676.md) | 참고문헌 ref-676 등록: minigrid-crewai — Sense–Plan–Code–Act (SPCA) framework (GitH… |
@@ -1172,8 +1172,8 @@ version: 1
 | 2026-09-25-71 | 생성 | [docs/references/ref-678.md](references/ref-678.md) | 참고문헌 ref-678 등록: STRAP-LLM: structured task allocation and planning for heter… |
 | 2026-09-25-71 | 생성 | [docs/glossary/model-context-protocol.md](glossary/model-context-protocol.md) | 용어집 항목 모델 컨텍스트 프로토콜 |
 | 2026-09-25-71 | 생성 | [docs/glossary/neuro-symbolic-ai.md](glossary/neuro-symbolic-ai.md) | 용어집 항목 신경-기호 AI |
-| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 6건 갱신 |
-| 2026-09-25-71 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-71 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 6건 갱신 |
+| 2026-09-25-71 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-04 답함(3절 q3-04 소절 신설), 2절 질문 목록 갱신과 q3-11 추가, 4·5·7절 추가, 6절 시뮬레이션 초기값 행 충족·전환 미승인, 8절 출처 추가, 9절 이력 행 추가 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.8 → v0.9: 층 '높이 기준'에 층 고도 값 후보 병기, 문 '여닫는 방식' 값 후보(Open-RMF 문 유형)와 '동작 범위' 속성 추가, 엘리베이터 '칸 치수' 속성 추가, 6절 질문 3건 추가, H1 버전 표기(v0.7) 오류를 v0.9로 수정 |
 | 2026-09-25-70 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절 '핵심 구성 요소'에 '시뮬레이션 초기값' 소절 신설(설계·도입 검토용과 운영 중 예측용 초기화 구분), '아직 조사되지 않은 구성 요소'에서 q3-04 제거, 새 각주 3건 |
@@ -1189,13 +1189,13 @@ version: 1
 | 2026-09-25-70 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-70 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
-| 2026-09-25-69 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | seed → draft: 3~11절 첫 작성, 페이지 상태 자동 영역 추가, 13절 각주. 2차: 9절 승강기 연계 칸 [추정]으로 정정, ISO 10218-2 적용 범위 미확인 단서 추가, 5절 시작 조건 칸에 가상 설정 표시와 [추정] 태그 추가 |
+| 2026-09-25-69 | 갱신 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | seed → draft: 3~11절 첫 작성, 페이지 상태 자동 영역 추가, 13절 각주. 2차: 9절 승강기 연계 칸 [추정]으로 정정, ISO 10218-2 적용 범위 미확인 단서 추가, 5절 시작 조건 칸에 가상 설정 표시와 [추정] 태그 추가 |
 | 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s7.md](topics/2026/2026-09-25-area28-s7.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,840자)을 옮겼다 |
 | 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s6.md](topics/2026/2026-09-25-area28-s6.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "6. 대표 접근법과 기술" 절(1,549자)을 옮겼다 |
 | 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s11.md](topics/2026/2026-09-25-area28-s11.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "11. 열린 질문" 절(1,233자)을 옮겼다 |
 | 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s4.md](topics/2026/2026-09-25-area28-s4.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "4. 핵심 개념과 용어" 절(1,053자)을 옮겼다 |
 | 2026-09-25-69 | 생성 | [docs/topics/2026/2026-09-25-area28-s3.md](topics/2026/2026-09-25-area28-s3.md) | 자동 분리: 28. 표준·상호운용성·다사업자 거버넌스 의 "3. 왜 중요한가" 절(802자)을 옮겼다 |
-| 2026-09-25-69 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) | 28. 표준·상호운용성·다사업자 거버넌스: seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영, 2차 수정(9절 태그·단서, 5절 시작 조건 태그) |
+| 2026-09-25-69 | 요약 | [docs/categories/integration/interoperability-standards-and-conformance.md](categories/integration/interoperability-standards-and-conformance.md) | 28. 표준·상호운용성·다사업자 거버넌스: seed → draft: 3~11절 첫 작성(규격 구속력·데이터 권리, 판 번호·폐기 예고·적합성 시험, 입고·출하 시나리오, 책임 경계·연결·열린 질문), f12 추정 강등 반영, 2차 수정(9절 태그·단서, 5절 시작 조건 태그) |
 | 2026-09-25-69 | 생성 | [docs/references/ref-634.md](references/ref-634.md) | 참고문헌 ref-634 등록: VDA5050/VDA5050 — README |
 | 2026-09-25-69 | 생성 | [docs/references/ref-635.md](references/ref-635.md) | 참고문헌 ref-635 등록: Semantic Versioning 2.0.0 |
 | 2026-09-25-69 | 생성 | [docs/references/ref-636.md](references/ref-636.md) | 참고문헌 ref-636 등록: Regulation (EU) 2023/2854 of the European Parliament and of… |
@@ -1214,13 +1214,13 @@ version: 1
 | 2026-09-25-69 | 생성 | [docs/glossary/audit-trail.md](glossary/audit-trail.md) | 용어집 항목 감사 추적 |
 | 2026-09-25-69 | 생성 | [docs/glossary/industrial-data.md](glossary/industrial-data.md) | 용어집 항목 산업데이터 |
 | 2026-09-25-69 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
-| 2026-09-25-68 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
+| 2026-09-25-68 | 갱신 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법), 페이지 상태 자동 영역 추가, 각주 19건. 2차: 7·8절 도입 문장의 태그·각주 제거, 6절 도식 지시어 수정 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s6.md](topics/2026/2026-09-25-area27-s6.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "6. 대표 접근법과 기술" 절(1,218자)을 옮겼다 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s7.md](topics/2026/2026-09-25-area27-s7.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,001자)을 옮겼다. 2차: 도입 문장의 [사실] 태그와 ref-618 각주를 떼어 안내 문장으로 바꿨다 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s8.md](topics/2026/2026-09-25-area27-s8.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "8. 대표 연구와 자료" 절(969자)을 옮겼다. 2차: 도입 문장의 태그·각주 제거와 README 확인 출처 명시, KnowNo 항목 문구 수정(필요할 때·저자 보고) |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s10.md](topics/2026/2026-09-25-area27-s10.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(760자)을 옮겼다. 본문 링크를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
 | 2026-09-25-68 | 생성 | [docs/topics/2026/2026-09-25-area27-s4.md](topics/2026/2026-09-25-area27-s4.md) | 자동 분리: 27. AI·학습·적응과 모델 운영 의 "4. 핵심 개념과 용어" 절(754자)을 옮겼다 |
-| 2026-09-25-68 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) | 27. AI·학습·적응과 모델 운영: 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법, 출처 19건 원문 미열람) |
+| 2026-09-25-68 | 요약 | [docs/categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 27. AI·학습·적응과 모델 운영: 영역 심화: 3~11절 신규 작성(LLM 계획 접지·검증·되묻기·안전 판정, 학습 기반 배차, 모델 운영, AI 위험관리 표준·법, 출처 19건 원문 미열람) |
 | 2026-09-25-68 | 생성 | [docs/references/ref-617.md](references/ref-617.md) | 참고문헌 ref-617 등록: NIST Risk Management Framework Aims to Improve Trustworthine… |
 | 2026-09-25-68 | 생성 | [docs/references/ref-618.md](references/ref-618.md) | 참고문헌 ref-618 등록: ISO/IEC 42001:2023 - AI management systems |
 | 2026-09-25-68 | 생성 | [docs/references/ref-619.md](references/ref-619.md) | 참고문헌 ref-619 등록: ISO/IEC 23894:2023 - AI — Guidance on risk management |
@@ -1237,12 +1237,12 @@ version: 1
 | 2026-09-25-68 | 생성 | [docs/glossary/high-impact-ai.md](glossary/high-impact-ai.md) | 용어집 항목 고영향 인공지능 |
 | 2026-09-25-68 | 생성 | [docs/glossary/model-registry.md](glossary/model-registry.md) | 용어집 항목 모델 레지스트리 |
 | 2026-09-25-68 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
-| 2026-09-25-67 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
-| 2026-09-25-67 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/index.md](categories/f-deployment-verification-and-maintenance/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
-| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | q3-01 답함(3절 #q3-01 신설), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건(초안 갱신만 충족), 상태 줄 갱신. 2차 수정: 6절 초안 갱신 행 충족으로 정정, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸에 ConstraintBench 조건 병기 |
-| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(2차 수정 대상 아님, 변경 없음) |
-| 2026-09-25-66 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 2차 수정: 새 각주 정의 12개를 5절 끝에 직접 두고 ref-598 기관을 Kuroki 외로, ref-612 소속을 '소속 미확인'으로 고침 |
-| 2026-09-25-66 | 요약 | [docs/tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md](tracks/nl-task-chatbot/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-01 답함(스케줄링은 결정적 해법, LLM 은 인스턴스화·설명 분담 가설, 신뢰도 low), 업무 분해·배정 설계 초안 v0.5 → v0.6(일정 산출 방식), 아이디어 2 5절에 분담 소절, 후속 질문 2건 |
+| 2026-09-25-67 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/index.md](categories/verification-deployment-and-lifecycle/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) |
+| 2026-09-25-67 | 요약 | [docs/categories/verification-deployment-and-lifecycle/index.md](categories/verification-deployment-and-lifecycle/index.md) | F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) |
+| 2026-09-25-66 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | q3-01 답함(3절 #q3-01 신설), 2절에 q3-05~q3-11 추가, 후속 질문 2건, 완료 조건(초안 갱신만 충족), 상태 줄 갱신. 2차 수정: 6절 초안 갱신 행 충족으로 정정, 전환 줄 q3-02~q3-11, 시나리오 예외·성과 칸에 ConstraintBench 조건 병기 |
+| 2026-09-25-66 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.5 → v0.6: 일정(Schedule) 개념에 속성 '일정 산출 방식' 추가·초안 → 확정(f1·f2·f13·f14·f15·f21), 6절 '일정을 누가 계산하는가'에 q3-01 답 연결(해결로 닫지 않음), 값 후보 'LLM 직접 생성'을 6절 질문으로 추가(2차 수정 대상 아님, 변경 없음) |
+| 2026-09-25-66 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 5절 구현 가설에 '스케줄링 결정의 분담' 소절 신설(q3-01, 실행 2026-09-25-66). 2차 수정: 새 각주 정의 12개를 5절 끝에 직접 두고 ref-598 기관을 Kuroki 외로, ref-612 소속을 '소속 미확인'으로 고침 |
+| 2026-09-25-66 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md) | 자연어 업무 지시 챗봇 단계 3: q3-01 답함(스케줄링은 결정적 해법, LLM 은 인스턴스화·설명 분담 가설, 신뢰도 low), 업무 분해·배정 설계 초안 v0.5 → v0.6(일정 산출 방식), 아이디어 2 5절에 분담 소절, 후속 질문 2건 |
 | 2026-09-25-66 | 생성 | [docs/references/ref-586.md](references/ref-586.md) | 참고문헌 ref-586 등록: LLMs Can't Plan, But Can Help Planning in LLM-Modulo Framewo… |
 | 2026-09-25-66 | 생성 | [docs/references/ref-592.md](references/ref-592.md) | 참고문헌 ref-592 등록: ConstraintBench: Benchmarking LLM Constraint Reasoning on Di… |
 | 2026-09-25-66 | 생성 | [docs/references/ref-593.md](references/ref-593.md) | 참고문헌 ref-593 등록: R-ConstraintBench: Evaluating LLMs on NP-Complete Scheduling |
@@ -1261,8 +1261,8 @@ version: 1
 | 2026-09-25-66 | 생성 | [docs/glossary/job-shop-scheduling-problem.md](glossary/job-shop-scheduling-problem.md) | 용어집 항목 작업장 스케줄링 문제 |
 | 2026-09-25-66 | 생성 | [docs/glossary/resource-constrained-project-scheduling-problem.md](glossary/resource-constrained-project-scheduling-problem.md) | 용어집 항목 자원 제약 프로젝트 스케줄링 문제 |
 | 2026-09-25-66 | 생성 | [docs/glossary/llm-modulo-framework.md](glossary/llm-modulo-framework.md) | 용어집 항목 LLM-모듈로 프레임워크 |
-| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-66 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 3) |
+| 2026-09-25-66 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-66 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 3) |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/stage-3-implementation-hypothesis.md](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md) | q3-03 답함(3절 소제목 신설), 후속 질문 q3-10·q5-05, 4·5·6·8·9절 갱신, 7절 반영 제안 추가. H1 아래 단계 상태 줄(답한 질문 2건 → 3건)은 H2 절 밖이라 패치로 보낼 수 없으므로 코드에서 맞춰야 한다 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.7 → v0.8: 문에 자동 구동 여부·장애인 접근 가능 속성(f8), 계단에 단 높이·디딤판 길이·단 수 속성(f9) 추가(두 행 확정 유지). 개념 '통과 요구 조건'은 6절 질문으로. H1 의 (v0.7) 표기는 H2 절 밖이라 패치로 보낼 수 없어 프런트매터 ontology_version 0.8 에 맞춰 코드가 (v0.8)로 바꿔야 한다 |
 | 2026-09-25-65 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 5절: 핵심 구성 요소에 '능력 대조' 소절 신설, '다른 아이디어와의 연결' 작성(아이디어 1·13. 작업 배정 — MRTA 연결, 추정), 새 각주 정의 추가 |
@@ -1283,7 +1283,7 @@ version: 1
 | 2026-09-25-65 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-65 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 3) |
-| 2026-09-25-64 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | seed → draft: 3~11절 첫 작성(접근 제어 구조, 규제·한국 개인영상 규정, 출하·입고 시나리오, 경계·연결·열린 질문), 페이지 상태 자동 영역 추가, 13절 각주. 2차: 7절 첫 문장을 [의견]으로 바꾸고 ref-031 각주 제거, 8절 학술 자료 문장 수정 |
+| 2026-09-25-64 | 갱신 | [docs/categories/security-and-privacy/authentication-authorization-and-isolation.md](categories/security-and-privacy/authentication-authorization-and-isolation.md) | seed → draft: 3~11절 첫 작성(접근 제어 구조, 규제·한국 개인영상 규정, 출하·입고 시나리오, 경계·연결·열린 질문), 페이지 상태 자동 영역 추가, 13절 각주. 2차: 7절 첫 문장을 [의견]으로 바꾸고 ref-031 각주 제거, 8절 학술 자료 문장 수정 |
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s6.md](topics/2026/2026-09-25-area26-s6.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "6. 대표 접근법과 기술" 절(1,606자)을 옮겼다 |
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s7.md](topics/2026/2026-09-25-area26-s7.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: 첫 문장을 [의견]으로 바꾸고 ref-031 각주 제거, NIST 행에서 '산업용 IoT' 삭제 |
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s3.md](topics/2026/2026-09-25-area26-s3.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "3. 왜 중요한가" 절(1,078자)을 옮겼다 |
@@ -1291,7 +1291,7 @@ version: 1
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s4.md](topics/2026/2026-09-25-area26-s4.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "4. 핵심 개념과 용어" 절(1,004자)을 옮겼다 |
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s10.md](topics/2026/2026-09-25-area26-s10.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(771자)을 옮겼다. 형식 재작성: 3절 세부영역 링크 9개를 주제 페이지 위치 기준 경로(../../categories/…)로 고쳤다 |
 | 2026-09-25-64 | 생성 | [docs/topics/2026/2026-09-25-area26-s8.md](topics/2026/2026-09-25-area26-s8.md) | 자동 분리: 26. 사이버보안·접근권한·개인정보 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차: 첫 문장의 학술 논문 성격 서술을 바로잡았다 |
-| 2026-09-25-64 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md) | 26. 사이버보안·접근권한·개인정보: 영역 심화: 3~11절 첫 작성(SROS 2·Open-RMF·VDA 5050·MQTT 접근 제어, 로봇 안전·EU·한국 개인영상 규정, 출하·입고 시나리오, 새 열린 질문 5건) |
+| 2026-09-25-64 | 요약 | [docs/categories/security-and-privacy/authentication-authorization-and-isolation.md](categories/security-and-privacy/authentication-authorization-and-isolation.md) | 26. 사이버보안·접근권한·개인정보: 영역 심화: 3~11절 첫 작성(SROS 2·Open-RMF·VDA 5050·MQTT 접근 제어, 로봇 안전·EU·한국 개인영상 규정, 출하·입고 시나리오, 새 열린 질문 5건) |
 | 2026-09-25-64 | 생성 | [docs/references/ref-579.md](references/ref-579.md) | 참고문헌 ref-579 등록: ROS 2 Access Control Policies |
 | 2026-09-25-64 | 생성 | [docs/references/ref-580.md](references/ref-580.md) | 참고문헌 ref-580 등록: ROS 2 Security Enclaves |
 | 2026-09-25-64 | 생성 | [docs/references/ref-581.md](references/ref-581.md) | 참고문헌 ref-581 등록: mosquitto.conf man page |
@@ -1308,13 +1308,13 @@ version: 1
 | 2026-09-25-64 | 갱신 | [docs/glossary/dds-security.md](glossary/dds-security.md) | 용어집 항목 권한 파일 |
 | 2026-09-25-64 | 생성 | [docs/glossary/mobile-video-information-processing-device.md](glossary/mobile-video-information-processing-device.md) | 용어집 항목 이동형 영상정보처리기기 |
 | 2026-09-25-64 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
-| 2026-09-25-63 | 갱신 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | seed → draft: 3~11절 첫 작성(표준 책임 분담, 정지·재개·비상 대응, STPA, SafeGate 트랙 반영), 페이지 상태 자동 영역 추가, 각주 11건(3·6·7·8·11절 상세는 주제 페이지로 분리). 2차: 9절 마지막 문장 어미를 추정형으로 수정 |
+| 2026-09-25-63 | 갱신 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | seed → draft: 3~11절 첫 작성(표준 책임 분담, 정지·재개·비상 대응, STPA, SafeGate 트랙 반영), 페이지 상태 자동 영역 추가, 각주 11건(3·6·7·8·11절 상세는 주제 페이지로 분리). 2차: 9절 마지막 문장 어미를 추정형으로 수정 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s6.md](topics/2026/2026-09-25-area25-s6.md) | 자동 분리: 25. 안전·위험 관리 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '운영 조율 수단' 문장을 [사실]·[추정] 두 문장으로 나눴다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s7.md](topics/2026/2026-09-25-area25-s7.md) | 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: VDA 5050 행의 관계 칸을 [사실]·[추정]으로 나눴다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s11.md](topics/2026/2026-09-25-area25-s11.md) | 자동 분리: 25. 안전·위험 관리 의 "11. 열린 질문" 절(910자)을 옮겼다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s8.md](topics/2026/2026-09-25-area25-s8.md) | 자동 분리: 25. 안전·위험 관리 의 "8. 대표 연구와 자료" 절(767자)을 옮겼다 |
 | 2026-09-25-63 | 생성 | [docs/topics/2026/2026-09-25-area25-s3.md](topics/2026/2026-09-25-area25-s3.md) | 자동 분리: 25. 안전·위험 관리 의 "3. 왜 중요한가" 절(694자)을 옮겼다 |
-| 2026-09-25-63 | 요약 | [docs/categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) | 25. 안전·위험 관리: 영역 심화: 3~11절 첫 작성(표준별 책임 분담, 정지·재개·비상 대응, STPA 위험 분석, SafeGate 트랙 반영) |
+| 2026-09-25-63 | 요약 | [docs/categories/safety/safety-and-risk-management.md](categories/safety/safety-and-risk-management.md) | 25. 안전·위험 관리: 영역 심화: 3~11절 첫 작성(표준별 책임 분담, 정지·재개·비상 대응, STPA 위험 분석, SafeGate 트랙 반영) |
 | 2026-09-25-63 | 생성 | [docs/references/ref-560.md](references/ref-560.md) | 참고문헌 ref-560 등록: ISO 10218-2:2025 - Robotics — Safety requirements — Part 2:… |
 | 2026-09-25-63 | 생성 | [docs/references/ref-561.md](references/ref-561.md) | 참고문헌 ref-561 등록: 이동식 협동로봇 ‘안전기준 산업표준’ 제정…상용화 길 열어 |
 | 2026-09-25-63 | 생성 | [docs/references/ref-562.md](references/ref-562.md) | 참고문헌 ref-562 등록: 산업안전보건기준에 관한 규칙 제223조(운전 중 위험 방지) |
@@ -1329,10 +1329,10 @@ version: 1
 | 2026-09-25-63 | 생성 | [docs/glossary/operating-zone.md](glossary/operating-zone.md) | 용어집 항목 운용 구역 |
 | 2026-09-25-63 | 생성 | [docs/glossary/stpa.md](glossary/stpa.md) | 용어집 항목 시스템 이론적 프로세스 분석 |
 | 2026-09-25-63 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05. 2차 수정: 4절 결론 데이터셋 항목에 ref-540·ref-544 각주와 원문 미열람 표기, 6절 첫 행 검증 판정 '충족 · 미승인' |
-| 2026-09-25-62 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가 |
-| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록 |
-| 2026-09-25-62 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-03 답함(지시–정답 공개 데이터셋·지표 비교, 필요한 쌍 구조·물류 데이터 공백·배정 정답 부재는 추정), 새 질문 q5-04·q5-05, 아이디어 2 4절 평가 데이터 소절 추가, 초안 변경 없음 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-03 답함(3절 {#q2-03} 신설: 지시–정답 공개 데이터셋·지표·쌍 구조·물류 공백), 상태 줄·2·4·5·6·7·8·9절 갱신, 후속 질문 q5-04·q5-05. 2차 수정: 4절 결론 데이터셋 항목에 ref-540·ref-544 각주와 원문 미열람 표기, 6절 첫 행 검증 판정 '충족 · 미승인' |
+| 2026-09-25-62 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 4절 도입 문단과 q2-02 소절 끝의 q2-03 미조사 문장을 새 소절 안내로 바꾸고 '해석·분해 평가 데이터' 소절 신설, 새 각주 정의 추가 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 산출물 링크 갱신: 아이디어 2 4절에 해석·분해 평가 데이터(q2-03) 소절 작성, 초안 변경 없음(실행 2026-09-25-62) 기록 |
+| 2026-09-25-62 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-03 답함(지시–정답 공개 데이터셋·지표 비교, 필요한 쌍 구조·물류 데이터 공백·배정 정답 부재는 추정), 새 질문 q5-04·q5-05, 아이디어 2 4절 평가 데이터 소절 추가, 초안 변경 없음 |
 | 2026-09-25-62 | 생성 | [docs/references/ref-539.md](references/ref-539.md) | 참고문헌 ref-539 등록: ALFRED — A Benchmark for Interpreting Grounded Instructions… |
 | 2026-09-25-62 | 생성 | [docs/references/ref-540.md](references/ref-540.md) | 참고문헌 ref-540 등록: ALFRED: A Benchmark for Interpreting Grounded Instructions f… |
 | 2026-09-25-62 | 생성 | [docs/references/ref-541.md](references/ref-541.md) | 참고문헌 ref-541 등록: LLMTaskPlanning — LoTa-Bench: Benchmarking Language-oriented… |
@@ -1345,15 +1345,15 @@ version: 1
 | 2026-09-25-62 | 생성 | [docs/references/ref-548.md](references/ref-548.md) | 참고문헌 ref-548 등록: An LLM- Interface for Robot Mission Specification in Logisti… |
 | 2026-09-25-62 | 생성 | [docs/glossary/goal-condition.md](glossary/goal-condition.md) | 용어집 항목 목표 조건 |
 | 2026-09-25-62 | 생성 | [docs/glossary/signal-temporal-logic.md](glossary/signal-temporal-logic.md) | 용어집 항목 신호 시간 논리 |
-| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 4건 갱신 |
-| 2026-09-25-62 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
-| 2026-09-25-61 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-556 항목 롤백 문구 정정 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 4건 갱신 |
+| 2026-09-25-62 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-61 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-556 항목 롤백 문구 정정 |
 | 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s4.md](topics/2026/2026-09-25-area24-s4.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "4. 핵심 개념과 용어" 절(1,365자)을 옮겼다(2차 수정 없음) |
 | 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s6.md](topics/2026/2026-09-25-area24-s6.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "6. 대표 접근법과 기술" 절(1,327자)을 옮겼다. 2차 수정: 부품 진단 연계 대상 문장을 [추정]과 각주로 고치고, 5·9절 참조를 원 세부영역 페이지 절 링크로 바꿈 |
 | 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s3.md](topics/2026/2026-09-25-area24-s3.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "3. 왜 중요한가" 절(1,019자)을 옮겼다(2차 수정 없음) |
 | 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s7.md](topics/2026/2026-09-25-area24-s7.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(982자)을 옮겼다. 2차 수정: 1절 요약과 3절 첫 문장의 태그를 [추정]으로 낮추고 각주를 ref-031·ref-550·ref-554 로 바꿈 |
 | 2026-09-25-61 | 생성 | [docs/topics/2026/2026-09-25-area24-s10.md](topics/2026/2026-09-25-area24-s10.md) | 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "10. 다른 연구영역과의 연결" 절(731자)을 옮겼다. 형식 수정: 본문 링크 11건을 주제 페이지 위치 기준 경로로 고침(2차 수정 없음) |
-| 2026-09-25-61 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) | 24. 자산·소프트웨어 수명주기 관리: 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) |
+| 2026-09-25-61 | 요약 | [docs/categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 24. 자산·소프트웨어 수명주기 관리: 영역 심화: 3~11절 신규 작성(버전·지도·배터리 열화·배포 복구·변경 후 재평가, 적치·출하 가상 시나리오) |
 | 2026-09-25-61 | 생성 | [docs/references/ref-549.md](references/ref-549.md) | 참고문헌 ref-549 등록: REP 2000 -- ROS 2 Releases and Target Platforms |
 | 2026-09-25-61 | 생성 | [docs/references/ref-550.md](references/ref-550.md) | 참고문헌 ref-550 등록: IDTA SoftwareNameplate 1/0 — README (Nameplate for Software… |
 | 2026-09-25-61 | 생성 | [docs/references/ref-551.md](references/ref-551.md) | 참고문헌 ref-551 등록: ISO 17359:2018 - Condition monitoring and diagnostics of mac… |
@@ -1370,15 +1370,15 @@ version: 1
 | 2026-09-25-61 | 생성 | [docs/glossary/software-nameplate.md](glossary/software-nameplate.md) | 용어집 항목 소프트웨어 명판 |
 | 2026-09-25-61 | 생성 | [docs/glossary/over-the-air-update.md](glossary/over-the-air-update.md) | 용어집 항목 무선 업데이트 |
 | 2026-09-25-61 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
-| 2026-09-25-60 | 갱신 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
-| 2026-09-25-60 | 요약 | [docs/categories/e-collaboration-and-field-operations/index.md](categories/e-collaboration-and-field-operations/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
-| 2026-09-25-59 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 영역 심화: 3~11절 신규 작성(4·6·7·10·11절은 주제 페이지로 분리), 2차 수정: 9절 f8 태그 분리, 3절 첫 문장 범위 정정, 10절 요약 의견 주체 표시, 3·9절 약어 풀이 |
+| 2026-09-25-60 | 갱신 | [docs/categories/execution-collaboration-and-recovery/index.md](categories/execution-collaboration-and-recovery/index.md) | '다른 대분류와의 연결' 절 신규 작성: A·B·C·D·F·G 대분류와의 연결, 상호 참조 링크, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 |
+| 2026-09-25-60 | 요약 | [docs/categories/execution-collaboration-and-recovery/index.md](categories/execution-collaboration-and-recovery/index.md) | E. 협업·현장 운영: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·F·G 연결, 아직 다루지 않은 연결 목록) |
+| 2026-09-25-59 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 영역 심화: 3~11절 신규 작성(4·6·7·10·11절은 주제 페이지로 분리), 2차 수정: 9절 f8 태그 분리, 3절 첫 문장 범위 정정, 10절 요약 의견 주체 표시, 3·9절 약어 풀이 |
 | 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s6.md](topics/2026/2026-09-25-area23-s6.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "6. 대표 접근법과 기술" 절을 옮겼다(2차 수정 없음) |
 | 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s7.md](topics/2026/2026-09-25-area23-s7.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 없음) |
 | 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s4.md](topics/2026/2026-09-25-area23-s4.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 적합성 시험 항목에 '벤더 주장' 병기 |
 | 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s11.md](topics/2026/2026-09-25-area23-s11.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "11. 열린 질문" 절을 옮겼다(2차 수정 없음) |
 | 2026-09-25-59 | 생성 | [docs/topics/2026/2026-09-25-area23-s10.md](topics/2026/2026-09-25-area23-s10.md) | 자동 분리: 23. 시험·형식 검증·벤치마크 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 1절·3절 요약 문장에 '구축자 의견' 표시 |
-| 2026-09-25-59 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) | 23. 시험·형식 검증·벤치마크: 영역 심화: 3~11절 신규 작성(장애 주입·회귀 시험·형식 검증·런타임 검증·벤치마크), 1차 조건부 승인 수정 16건·2차 수정 5건 반영 |
+| 2026-09-25-59 | 요약 | [docs/categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 23. 시험·형식 검증·벤치마크: 영역 심화: 3~11절 신규 작성(장애 주입·회귀 시험·형식 검증·런타임 검증·벤치마크), 1차 조건부 승인 수정 16건·2차 수정 5건 반영 |
 | 2026-09-25-59 | 생성 | [docs/references/ref-528.md](references/ref-528.md) | 참고문헌 ref-528 등록: ARIAC 2025 Documentation — Challenges |
 | 2026-09-25-59 | 생성 | [docs/references/ref-529.md](references/ref-529.md) | 참고문헌 ref-529 등록: ARIAC 2025 Documentation — Scoring |
 | 2026-09-25-59 | 생성 | [docs/references/ref-599.md](references/ref-599.md) | 참고문헌 ref-599 등록: Formal Specification and Verification of Autonomous Robotic… |
@@ -1431,13 +1431,13 @@ version: 1
 | 2026-09-25-57 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-57 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
-| 2026-09-25-56 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8·10절은 주제 페이지로 분리), 2차 수정: 4절 끊긴 문장 정정, 5절 수행 자원·완료·인계 칸 태그 정정, 6·8절 요약 [의견]화, 7절 요약 각주 보강, 9절 벤더 주장 병기, sources 정리 |
+| 2026-09-25-56 | 갱신 | [docs/categories/design-and-simulation/simulation-and-predictive-digital-twin.md](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8·10절은 주제 페이지로 분리), 2차 수정: 4절 끊긴 문장 정정, 5절 수행 자원·완료·인계 칸 태그 정정, 6·8절 요약 [의견]화, 7절 요약 각주 보강, 9절 벤더 주장 병기, sources 정리 |
 | 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s7.md](topics/2026/2026-09-25-area22-s7.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 요약·첫 문장에 RAWSim-O·OFacT 근거 각주(ref-101·ref-524) 추가 |
 | 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s8.md](topics/2026/2026-09-25-area22-s8.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약·첫 문장의 대표 자료 선정을 [의견] (구축자 의견)으로 바꾸고 근거 각주 보강 |
 | 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s10.md](topics/2026/2026-09-25-area22-s10.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 번호만 쓴 호칭 2곳 정정, 6. 지도·공간·위치 모델 연결을 [사실]/[추정]으로 분리, 28 연결의 '표준 기반' 단정 정정 |
 | 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s4.md](topics/2026/2026-09-25-area22-s4.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 수정 없음) |
 | 2026-09-25-56 | 생성 | [docs/topics/2026/2026-09-25-area22-s6.md](topics/2026/2026-09-25-area22-s6.md) | 자동 분리: 22. 시뮬레이션·예측용 디지털 트윈 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 요약·첫 문장을 [의견] (구축자 의견)으로 바꾸고 ref-241 각주 추가, '3절' 지칭을 원 페이지 3. 왜 중요한가 링크로 정정 |
-| 2026-09-25-56 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) | 22. 시뮬레이션·예측용 디지털 트윈: 영역 심화: 3~11절 신규 작성(1차 조건부 승인 수정 16건·2차 수정 11건 반영, 트랙 floorplan-recognition 반영 제안 8절 반영) |
+| 2026-09-25-56 | 요약 | [docs/categories/design-and-simulation/simulation-and-predictive-digital-twin.md](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | 22. 시뮬레이션·예측용 디지털 트윈: 영역 심화: 3~11절 신규 작성(1차 조건부 승인 수정 16건·2차 수정 11건 반영, 트랙 floorplan-recognition 반영 제안 8절 반영) |
 | 2026-09-25-56 | 생성 | [docs/references/ref-516.md](references/ref-516.md) | 참고문헌 ref-516 등록: KS X ISO 23247-1 자동화 시스템 및 통합 — 제조를 위한 디지털 트윈 프레임워크 — 제1부: 개… |
 | 2026-09-25-56 | 생성 | [docs/references/ref-517.md](references/ref-517.md) | 참고문헌 ref-517 등록: Digital Twins for Advanced Manufacturing |
 | 2026-09-25-56 | 생성 | [docs/references/ref-518.md](references/ref-518.md) | 참고문헌 ref-518 등록: ISO 23247-6:2026 — Automation systems and integration — Digi… |
@@ -1454,8 +1454,8 @@ version: 1
 | 2026-09-25-56 | 생성 | [docs/glossary/digital-twin-composition.md](glossary/digital-twin-composition.md) | 용어집 항목 디지털 트윈 결합 |
 | 2026-09-25-56 | 생성 | [docs/glossary/verification-and-validation-of-simulation-models.md](glossary/verification-and-validation-of-simulation-models.md) | 용어집 항목 시뮬레이션 모델 검증·타당성 확인 |
 | 2026-09-25-56 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
-| 2026-09-25-55 | 갱신 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 아직 다루지 않은 연결에 7. 화물·재고·자산 식별과 추적 명시), '참고 자료' 끝에 새 각주 정의 38건 추가 |
-| 2026-09-25-55 | 요약 | [docs/categories/d-planning-and-optimization/index.md](categories/d-planning-and-optimization/index.md) | D. 계획·최적화: '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) |
+| 2026-09-25-55 | 갱신 | [docs/categories/planning-and-optimization/index.md](categories/planning-and-optimization/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 아직 다루지 않은 연결에 7. 화물·재고·자산 식별과 추적 명시), '참고 자료' 끝에 새 각주 정의 38건 추가 |
+| 2026-09-25-55 | 요약 | [docs/categories/planning-and-optimization/index.md](categories/planning-and-optimization/index.md) | D. 계획·최적화: '다른 대분류와의 연결' 절 신규 작성(A·B·C·E·F·G 여섯 대분류, 1차 수정 지시 14건 이행) |
 | 2026-09-25-55 | 생성 | [docs/references/ref-493.md](references/ref-493.md) | 참고문헌 ref-493 등록: Decentralized Multi-Robot Task Allocation Under Degraded Com… |
 | 2026-09-25-55 | 생성 | [docs/references/ref-494.md](references/ref-494.md) | 참고문헌 ref-494 등록: Trust-Aware Sequential Decision Making and Rollout Planning… |
 | 2026-09-25-55 | 생성 | [docs/glossary/fleet-control-level.md](glossary/fleet-control-level.md) | 용어집 항목 플릿 제어 수준 |
@@ -1486,12 +1486,12 @@ version: 1
 | 2026-09-25-53 | 생성 | [docs/references/ref-444.md](references/ref-444.md) | 참고문헌 ref-444 등록: Submodel Templates of the Asset Administration Shell — Gener… |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-53 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-52 | 갱신 | [docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8절은 주제 페이지로 분리), 2차 수정: 10절 연결 문장 5건 태그·표현 정정, 7절 요약 강등, 9절 표 범위 정정, sources 정리 |
+| 2026-09-25-52 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | 영역 심화: 3~11절 신규 작성(4·6·7·8절은 주제 페이지로 분리), 2차 수정: 10절 연결 문장 5건 태그·표현 정정, 7절 요약 강등, 9절 표 범위 정정, sources 정리 |
 | 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s6.md](topics/2026/2026-09-25-area21-s6.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 문서 해석 AI 문장을 자연어 능력 설명 기준 [추정]으로 정정 |
 | 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s7.md](topics/2026/2026-09-25-area21-s7.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 요약 문장 [추정]으로 강등 |
 | 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s4.md](topics/2026/2026-09-25-area21-s4.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "4. 핵심 개념과 용어" 절을 옮겼다 |
 | 2026-09-25-52 | 생성 | [docs/topics/2026/2026-09-25-area21-s8.md](topics/2026/2026-09-25-area21-s8.md) | 자동 분리: 21. 온보딩·설정·현장 시운전 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: Beinschob 외 항목의 평가 문장 삭제 |
-| 2026-09-25-52 | 요약 | [docs/categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) | 21. 온보딩·설정·현장 시운전: 영역 심화: 3~11절 신규 작성(표준 등록 메시지·어댑터 설정·평면도 주석·반자동 지도 작성·가상 시운전, 적치 시나리오) |
+| 2026-09-25-52 | 요약 | [docs/categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | 21. 온보딩·설정·현장 시운전: 영역 심화: 3~11절 신규 작성(표준 등록 메시지·어댑터 설정·평면도 주석·반자동 지도 작성·가상 시운전, 적치 시나리오) |
 | 2026-09-25-52 | 생성 | [docs/references/ref-465.md](references/ref-465.md) | 참고문헌 ref-465 등록: Toward a Method to Generate Capability Ontologies from Natur… |
 | 2026-09-25-52 | 생성 | [docs/references/ref-466.md](references/ref-466.md) | 참고문헌 ref-466 등록: KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’ |
 | 2026-09-25-52 | 생성 | [docs/references/ref-481.md](references/ref-481.md) | 참고문헌 ref-481 등록: Virtual commissioning with Siemens solutions reduces launch… |
@@ -1500,11 +1500,11 @@ version: 1
 | 2026-09-25-52 | 생성 | [docs/glossary/plug-and-produce.md](glossary/plug-and-produce.md) | 용어집 항목 플러그 앤 프로듀스 |
 | 2026-09-25-52 | 생성 | [docs/glossary/identity-report.md](glossary/identity-report.md) | 용어집 항목 신원 보고 |
 | 2026-09-25-52 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
-| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-02 답함(3절 소제목 신설), 새 질문 q2-07·q3-08·q3-09, 4·6·7·8·9절과 상태 줄 갱신. 2차: q2-07 행 제기 근거 칸을 'f15' 로 정정 |
-| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.4 → v0.5: 진행 상태 외부 표현 원천 메모(초안 → 확정), 배정 외부 표현 대응 메모(확정 유지), 6절 질문 2건 추가·선행 의존 질문 보강(2차 변경 없음) |
-| 2026-09-25-51 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절에 '작업·배정 결과를 표현하는 표준·형식' 소절 신설(이 위키 구성 비교표, 초안 대비 빠진 항목, 임무 기술 형식 비교 연구), 평가 데이터(q2-03) 미조사 명시. 2차: ref-504 각주 발행일을 2024-06-18 로 정정(각주를 직접 넣으려 전체 content 로 보냄) |
-| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.5 와 아이디어 2 4절(q2-02 표준·형식 비교) 진행 상황 갱신(2차 변경 없음) |
-| 2026-09-25-51 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-02 답함(실행 2026-09-25-43 이 다룬 같은 질문의 반영 재시도), 업무 분해·배정 설계 초안 v0.4→v0.5(진행 상태·배정 외부 표현 메모), 새 질문 q2-07·q3-08·q3-09; 같은 URL 이 이전 실행에서 ref-111·ref-505(task_state.json), ref-569(compose), ref-230·ref-507(MassRobotics JSON), ref-570(dsl.md), ref-571(BehaviorTree.CPP), ref-572(HDDL), ref-116(Filippone 외)로 쓰였을 수 있어 퍼블리셔 URL 병합 확인이 필요하다 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-02 답함(3절 소제목 신설), 새 질문 q2-07·q3-08·q3-09, 4·6·7·8·9절과 상태 줄 갱신. 2차: q2-07 행 제기 근거 칸을 'f15' 로 정정 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.4 → v0.5: 진행 상태 외부 표현 원천 메모(초안 → 확정), 배정 외부 표현 대응 메모(확정 유지), 6절 질문 2건 추가·선행 의존 질문 보강(2차 변경 없음) |
+| 2026-09-25-51 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 4절에 '작업·배정 결과를 표현하는 표준·형식' 소절 신설(이 위키 구성 비교표, 초안 대비 빠진 항목, 임무 기술 형식 비교 연구), 평가 데이터(q2-03) 미조사 명시. 2차: ref-504 각주 발행일을 2024-06-18 로 정정(각주를 직접 넣으려 전체 content 로 보냄) |
+| 2026-09-25-51 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6. 살아있는 산출물 링크: 초안 v0.5 와 아이디어 2 4절(q2-02 표준·형식 비교) 진행 상황 갱신(2차 변경 없음) |
+| 2026-09-25-51 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-02 답함(실행 2026-09-25-43 이 다룬 같은 질문의 반영 재시도), 업무 분해·배정 설계 초안 v0.4→v0.5(진행 상태·배정 외부 표현 메모), 새 질문 q2-07·q3-08·q3-09; 같은 URL 이 이전 실행에서 ref-111·ref-505(task_state.json), ref-569(compose), ref-230·ref-507(MassRobotics JSON), ref-570(dsl.md), ref-571(BehaviorTree.CPP), ref-572(HDDL), ref-116(Filippone 외)로 쓰였을 수 있어 퍼블리셔 URL 병합 확인이 필요하다 |
 | 2026-09-25-51 | 생성 | [docs/references/ref-495.md](references/ref-495.md) | 참고문헌 ref-495 등록: rmf_ros2 — rmf_fleet_adapter/schemas/task_description__compo… |
 | 2026-09-25-51 | 생성 | [docs/references/ref-496.md](references/ref-496.md) | 참고문헌 ref-496 등록: Serverless Workflow Specification — dsl.md |
 | 2026-09-25-51 | 생성 | [docs/references/ref-500.md](references/ref-500.md) | 참고문헌 ref-500 등록: BehaviorTree.CPP — README |
@@ -1515,15 +1515,15 @@ version: 1
 | 2026-09-25-51 | 생성 | [docs/glossary/hierarchical-task-network.md](glossary/hierarchical-task-network.md) | 용어집 항목 계층적 작업 네트워크 |
 | 2026-09-25-51 | 생성 | [docs/glossary/hddl.md](glossary/hddl.md) | 용어집 항목 계층 도메인 정의 언어 |
 | 2026-09-25-51 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
-| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 5건 갱신 |
-| 2026-09-25-51 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
-| 2026-09-25-50 | 갱신 | [docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 영역 추가. 2차 수정: 4·6·8절 정리 문장을 [의견]으로, 5절 완료·인계 칸 첫 문장을 [추정]으로 분리 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-51 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-50 | 갱신 | [docs/categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 영역 추가. 2차 수정: 4·6·8절 정리 문장을 [의견]으로, 5절 완료·인계 칸 첫 문장을 [추정]으로 분리 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s6.md](topics/2026/2026-09-25-area20-s6.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 세 줄 요약과 3절 첫 문장을 [의견]으로 바꿈 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s4.md](topics/2026/2026-09-25-area20-s4.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 요약 문장을 [의견]으로, BCMS 항목에 ISO 22301:2019 기준(개정 1:2024 별도) 명시 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s11.md](topics/2026/2026-09-25-area20-s11.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "11. 열린 질문" 절을 옮겼다(2차 수정 대상 아님, 변경 없음) |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s7.md](topics/2026/2026-09-25-area20-s7.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: ISO 22301 행의 '현장에는 참조 틀이다'를 [추정]으로 분리 |
 | 2026-09-25-50 | 생성 | [docs/topics/2026/2026-09-25-area20-s10.md](topics/2026/2026-09-25-area20-s10.md) | 자동 분리: 20. 예외 복구·재계획·업무 연속성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차 수정: 7. 화물·재고·자산 식별과 추적 항목에 EPCIS 1.2(2016-09-29 기준) 명시 |
-| 2026-09-25-50 | 요약 | [docs/categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) | 20. 예외 복구·재계획·업무 연속성: 영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오), 2차 수정으로 정리 문장 태그 조정 |
+| 2026-09-25-50 | 요약 | [docs/categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 20. 예외 복구·재계획·업무 연속성: 영역 심화: 3~11절 신규 작성(VDA 5050·Open-RMF 예외 동작, 통신 단절, 실행 중 재계획 연구, 보상·정정, BCP 참조 틀, 피킹→포장 운반 중 고장 시나리오), 2차 수정으로 정리 문장 태그 조정 |
 | 2026-09-25-50 | 생성 | [docs/references/ref-483.md](references/ref-483.md) | 참고문헌 ref-483 등록: A Real-Time Rescheduling Algorithm for Multi-robot Plan Exec… |
 | 2026-09-25-50 | 생성 | [docs/references/ref-484.md](references/ref-484.md) | 참고문헌 ref-484 등록: Multi-Robot Preemptive Task Scheduling with Fault Recovery:… |
 | 2026-09-25-50 | 생성 | [docs/references/ref-485.md](references/ref-485.md) | 참고문헌 ref-485 등록: Multiagent Rollout with Reshuffling for Warehouse Robots Pat… |
@@ -1538,13 +1538,13 @@ version: 1
 | 2026-09-25-50 | 생성 | [docs/glossary/business-continuity-management-system.md](glossary/business-continuity-management-system.md) | 용어집 항목 업무 연속성 관리 시스템 |
 | 2026-09-25-50 | 생성 | [docs/glossary/vda-5050-cancel-order.md](glossary/vda-5050-cancel-order.md) | 용어집 항목 주문 취소 즉시 동작 |
 | 2026-09-25-50 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
-| 2026-09-25-48 | 갱신 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴 |
+| 2026-09-25-48 | 갱신 | [docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 13절 각주 정의(1차 조건부 승인 수정 14건 반영). 형식 재작성: 프런트매터 sources 를 이 페이지 각주 정의와 일치시킴 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s4.md](topics/2026/2026-09-25-area19-s4.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "4. 핵심 개념과 용어" 절(1,482자)을 옮겼다 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s7.md](topics/2026/2026-09-25-area19-s7.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,413자)을 옮겼다 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s8.md](topics/2026/2026-09-25-area19-s8.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "8. 대표 연구와 자료" 절(1,396자)을 옮겼다. 형식 재작성: 8. 실시간 세계 상태·데이터 일관성 링크를 주제 페이지 기준 경로로 고침 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s6.md](topics/2026/2026-09-25-area19-s6.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "6. 대표 접근법과 기술" 절(861자)을 옮겼다. 형식 재작성: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침 |
 | 2026-09-25-48 | 생성 | [docs/topics/2026/2026-09-25-area19-s11.md](topics/2026/2026-09-25-area19-s11.md) | 자동 분리: 19. 모니터링·이상 탐지·원인 분석 의 "11. 열린 질문" 절(767자)을 옮겼다 |
-| 2026-09-25-48 | 요약 | [docs/categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md) | 19. 모니터링·이상 탐지·원인 분석: 영역 심화: 3~11절 신규 작성(표준 상태·오류 어휘, 원인 구분 접근, ROP 경계), 1차 조건부 승인 수정 14건 반영 |
+| 2026-09-25-48 | 요약 | [docs/categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 19. 모니터링·이상 탐지·원인 분석: 영역 심화: 3~11절 신규 작성(표준 상태·오류 어휘, 원인 구분 접근, ROP 경계), 1차 조건부 승인 수정 14건 반영 |
 | 2026-09-25-48 | 생성 | [docs/references/ref-445.md](references/ref-445.md) | 참고문헌 ref-445 등록: diagnostics — README (ros2 branch) |
 | 2026-09-25-48 | 생성 | [docs/references/ref-446.md](references/ref-446.md) | 참고문헌 ref-446 등록: ros2_tracing — README |
 | 2026-09-25-48 | 생성 | [docs/references/ref-447.md](references/ref-447.md) | 참고문헌 ref-447 등록: OpenTelemetry Specification — Overview |
@@ -1571,12 +1571,12 @@ version: 1
 | 2026-09-25-47 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-47 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-46 | 갱신 | [docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가. 2차: 9절 시설·설비 제어 행을 [추정]으로 낮추고 Open-RMF 데모 내용을 따로 적음 |
+| 2026-09-25-46 | 갱신 | [docs/categories/execution-collaboration-and-recovery/human-robot-collaboration.md](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 영역 심화: 3~11절 신규 작성(협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 자연어 업무 지시 챗봇 반영 제안 6건 검토 반영), 페이지 상태 자동 영역 추가. 2차: 9절 시설·설비 제어 행을 [추정]으로 낮추고 Open-RMF 데모 내용을 따로 적음 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s6.md](topics/2026/2026-09-25-area18-s6.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "6. 대표 접근법과 기술" 절을 옮겼다. 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 기준 경로로 고침. 2차: 운용 모드 소절 마지막 문장을 [사실]과 [추정]으로 나눔 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s7.md](topics/2026/2026-09-25-area18-s7.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,079자)을 옮겼다 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s4.md](topics/2026/2026-09-25-area18-s4.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "4. 핵심 개념과 용어" 절(897자)을 옮겼다 |
 | 2026-09-25-46 | 생성 | [docs/topics/2026/2026-09-25-area18-s8.md](topics/2026/2026-09-25-area18-s8.md) | 자동 분리: 18. 사람–로봇 협업·운영 인터페이스 의 "8. 대표 연구와 자료" 절(750자)을 옮겼다 |
-| 2026-09-25-46 | 요약 | [docs/categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md) | 18. 사람–로봇 협업·운영 인터페이스: 3~11절 신규 작성: 협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 반영 제안 6건 검토 |
+| 2026-09-25-46 | 요약 | [docs/categories/execution-collaboration-and-recovery/human-robot-collaboration.md](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 18. 사람–로봇 협업·운영 인터페이스: 3~11절 신규 작성: 협동 피킹 조율, VDA 5050 운용 모드·안전 상태, 관제 대시보드, 안전 표준·국내 가이드, 설명·감독, 트랙 반영 제안 6건 검토 |
 | 2026-09-25-46 | 생성 | [docs/references/ref-467.md](references/ref-467.md) | 참고문헌 ref-467 등록: Order batching and batch sequencing in an AMR-assisted picke… |
 | 2026-09-25-46 | 생성 | [docs/references/ref-468.md](references/ref-468.md) | 참고문헌 ref-468 등록: Human-Robot Cooperation: Coordinating Autonomous Mobile Robo… |
 | 2026-09-25-46 | 생성 | [docs/references/ref-469.md](references/ref-469.md) | 참고문헌 ref-469 등록: Deploying pickers and robots in cobot-based collaborative or… |
@@ -1616,14 +1616,14 @@ version: 1
 | 2026-09-25-44 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-44 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
-| 2026-09-25-42 | 갱신 | [docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정. 2차: 5절 제약 칸의 ASTM F3499-21 서술을 시험 방법의 존재로 고침 |
+| 2026-09-25-42 | 갱신 | [docs/categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 영역 심화: 3~11절 신규 작성, 페이지 상태 자동 표식 추가, 10절 첫 항목 목록 기호 보정. 2차: 5절 제약 칸의 ASTM F3499-21 서술을 시험 방법의 존재로 고침 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s11.md](topics/2026/2026-09-25-area17-s11.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "11. 열린 질문" 절(1,494자)을 옮겼다 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s8.md](topics/2026/2026-09-25-area17-s8.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "8. 대표 연구와 자료" 절(1,462자)을 옮겼다 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s7.md](topics/2026/2026-09-25-area17-s7.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 25. 안전·위험 관리 링크를 주제 페이지 기준 경로로 고침. 2차: GS1 CBV 행을 어휘 정의만 [사실]로 쓰고 인계 이벤트 값은 미정(oq-006)으로 고침 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s4.md](topics/2026/2026-09-25-area17-s4.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "4. 핵심 개념과 용어" 절(1,232자)을 옮겼다 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s6.md](topics/2026/2026-09-25-area17-s6.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "6. 대표 접근법과 기술" 절(1,226자)을 옮겼다 |
 | 2026-09-25-42 | 생성 | [docs/topics/2026/2026-09-25-area17-s10.md](topics/2026/2026-09-25-area17-s10.md) | 자동 분리: 17. 로봇 간 협업·물리적 인계 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(647자)을 옮겼다. 세부영역 링크를 주제 페이지 기준 경로로 고침 |
-| 2026-09-25-42 | 요약 | [docs/categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) | 17. 로봇 간 협업·물리적 인계: 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 |
+| 2026-09-25-42 | 요약 | [docs/categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 17. 로봇 간 협업·물리적 인계: 영역 심화: 3~11절 신규 작성(인계 확인 신호·도킹 시험·스케줄 간 의존), 새 열린 질문 4건 |
 | 2026-09-25-42 | 생성 | [docs/references/ref-202.md](references/ref-202.md) | 참고문헌 ref-202 등록: E08400 - SEMI E84 - Specification for Enhanced Carrier Hando… |
 | 2026-09-25-42 | 생성 | [docs/references/ref-203.md](references/ref-203.md) | 참고문헌 ref-203 등록: SEMI E84: Carrier Handoff |
 | 2026-09-25-42 | 생성 | [docs/references/ref-204.md](references/ref-204.md) | 참고문헌 ref-204 등록: Standard Test Method for Confirming the Docking Performance… |
@@ -1654,13 +1654,13 @@ version: 1
 | 2026-09-25-41 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 2건 갱신 |
 | 2026-09-25-41 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-40 | 갱신 | [docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 섹션 3~11 신규 작성(트랙 반영 제안 4건 반영, 1차 수정 지시 13건 이행), 2차 수정: 4·8절 연결 문장 태그 제거, 5절 조사 한계 문장 태그·각주 제거와 oq-010 연결, 6절 첫 문장을 출처 범위로 좁힘 |
+| 2026-09-25-40 | 갱신 | [docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 섹션 3~11 신규 작성(트랙 반영 제안 4건 반영, 1차 수정 지시 13건 이행), 2차 수정: 4·8절 연결 문장 태그 제거, 5절 조사 한계 문장 태그·각주 제거와 oq-010 연결, 6절 첫 문장을 출처 범위로 좁힘 |
 | 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s6.md](topics/2026/2026-09-25-area16-s6.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 문장을 출처 범위(충전 작업 삽입·뮤텍스 그룹·승강기 세션)로 좁혔다 |
 | 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s8.md](topics/2026/2026-09-25-area16-s8.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 첫 문장 태그 제거, 병원·호텔 연구 문구를 연관 관계로 고침, ref-535 제목 원문 복원 |
 | 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s7.md](topics/2026/2026-09-25-area16-s7.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(ref-536·ref-538 링크는 id 표기). 2차 수정: batteryCharging 행의 계획 입력 해석을 [추정]으로 분리 |
 | 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s11.md](topics/2026/2026-09-25-area16-s11.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "11. 열린 질문" 절을 옮겼다 |
 | 2026-09-25-40 | 생성 | [docs/topics/2026/2026-09-25-area16-s4.md](topics/2026/2026-09-25-area16-s4.md) | 자동 분리: 16. 공용 자원·충전·에너지 최적화 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 연결 문장의 태그·각주 제거 |
-| 2026-09-25-40 | 요약 | [docs/categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) | 16. 공용 자원·충전·에너지 최적화: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 4건 반영, 1차 수정 지시 13건·2차 수정 지시 6건 이행 |
+| 2026-09-25-40 | 요약 | [docs/categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) | 16. 공용 자원·충전·에너지 최적화: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 4건 반영, 1차 수정 지시 13건·2차 수정 지시 6건 이행 |
 | 2026-09-25-40 | 생성 | [docs/references/ref-530.md](references/ref-530.md) | 참고문헌 ref-530 등록: Optimal recharge sequencing in multi-AGV systems: A mixed IL… |
 | 2026-09-25-40 | 생성 | [docs/references/ref-531.md](references/ref-531.md) | 참고문헌 ref-531 등록: Deep Reinforcement Learning for Dynamic Battery Management o… |
 | 2026-09-25-40 | 생성 | [docs/references/ref-532.md](references/ref-532.md) | 참고문헌 ref-532 등록: Simulation model and performance evaluation of battery-power… |
@@ -1675,13 +1675,13 @@ version: 1
 | 2026-09-25-40 | 갱신 | [docs/glossary/open-rmf.md](glossary/open-rmf.md) | 용어집 항목 승강기 세션 |
 | 2026-09-25-40 | 생성 | [docs/glossary/battery-swapping.md](glossary/battery-swapping.md) | 용어집 항목 배터리 교환 |
 | 2026-09-25-40 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-39 | 갱신 | [docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영 |
+| 2026-09-25-39 | 갱신 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s6.md](topics/2026/2026-09-25-area15-s6.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "6. 대표 접근법과 기술" 절(2,051자)을 옮겼다. 2차 수정: SIPP 가정 한계 문장을 [추정]으로 고쳐 썼다 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s8.md](topics/2026/2026-09-25-area15-s8.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "8. 대표 연구와 자료" 절(1,679자)을 옮겼다 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s7.md](topics/2026/2026-09-25-area15-s7.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,155자)을 옮겼다. 형식 수정: 아직 참고문헌 페이지가 없는 ref-197·ref-191 링크를 텍스트 id 로 바꿨다 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s4.md](topics/2026/2026-09-25-area15-s4.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "4. 핵심 개념과 용어" 절(969자)을 옮겼다 |
 | 2026-09-25-39 | 생성 | [docs/topics/2026/2026-09-25-area15-s3.md](topics/2026/2026-09-25-area15-s3.md) | 자동 분리: 15. 다중 로봇 경로·교통 관리 — MAPF 의 "3. 왜 중요한가" 절(742자)을 옮겼다 |
-| 2026-09-25-39 | 요약 | [docs/categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) | 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 |
+| 2026-09-25-39 | 요약 | [docs/categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) | 15. 다중 로봇 경로·교통 관리 — MAPF: 영역 심화: 3~11절 신규 작성, 트랙 반영 제안 2건(경로망 자동 설계)을 6·8절에 반영, 열린 질문 3건 추가 |
 | 2026-09-25-39 | 생성 | [docs/references/ref-186.md](references/ref-186.md) | 참고문헌 ref-186 등록: Multi-Agent Pathfinding: Definitions, Variants, and Benchmar… |
 | 2026-09-25-39 | 생성 | [docs/references/ref-187.md](references/ref-187.md) | 참고문헌 ref-187 등록: Conflict-based search for optimal multi-agent pathfinding |
 | 2026-09-25-39 | 생성 | [docs/references/ref-188.md](references/ref-188.md) | 참고문헌 ref-188 등록: Persistent and Robust Execution of MAPF Schedules in Warehou… |
@@ -1701,8 +1701,8 @@ version: 1
 | 2026-09-25-39 | 생성 | [docs/glossary/action-dependency-graph.md](glossary/action-dependency-graph.md) | 용어집 항목 행동 의존 그래프 |
 | 2026-09-25-39 | 생성 | [docs/glossary/deadlock.md](glossary/deadlock.md) | 용어집 항목 교착 |
 | 2026-09-25-39 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
-| 2026-09-25-38 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 아직 다루지 않은 연결), 참고 자료 절에 각주 정의 41건 덧붙임 |
-| 2026-09-25-38 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/index.md](categories/c-connectivity-and-execution-foundation/index.md) | C. 연결·실행 기반: 다른 대분류와의 연결 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 27. AI·학습·적응과 모델 운영은 근거 없음), 조건부 승인 수정 15건 이행 |
+| 2026-09-25-38 | 갱신 | [docs/categories/integration/index.md](categories/integration/index.md) | '다른 대분류와의 연결' 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 아직 다루지 않은 연결), 참고 자료 절에 각주 정의 41건 덧붙임 |
+| 2026-09-25-38 | 요약 | [docs/categories/integration/index.md](categories/integration/index.md) | C. 연결·실행 기반: 다른 대분류와의 연결 절 신규 작성(A·B·D·E·F·G 대분류 연결 31건, 27. AI·학습·적응과 모델 운영은 근거 없음), 조건부 승인 수정 15건 이행 |
 | 2026-09-25-38 | 생성 | [docs/references/ref-405.md](references/ref-405.md) | 참고문헌 ref-405 등록: Security - Programming Multiple Robots with ROS 2 |
 | 2026-09-25-38 | 생성 | [docs/references/ref-406.md](references/ref-406.md) | 참고문헌 ref-406 등록: Simulation - Programming Multiple Robots with ROS 2 |
 | 2026-09-25-38 | 생성 | [docs/references/ref-407.md](references/ref-407.md) | 참고문헌 ref-407 등록: vda5050-sim — README (Standards-compliant VDA5050 (v3.0.0) r… |
@@ -1710,11 +1710,11 @@ version: 1
 | 2026-09-25-38 | 생성 | [docs/references/ref-409.md](references/ref-409.md) | 참고문헌 ref-409 등록: 아파트 단지의 로봇 친화형 환경 인증 모델 개발 (지적과 국토정보 53(1), 83-105) |
 | 2026-09-25-38 | 생성 | [docs/glossary/enclave.md](glossary/enclave.md) | 용어집 항목 인클레이브 |
 | 2026-09-25-38 | 생성 | [docs/glossary/conformance-test.md](glossary/conformance-test.md) | 용어집 항목 적합성 시험 |
-| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | q2-01 답함(2·3·4·5·6·8·9절 작성), 후속 질문 2건(q2-05·q2-06), q2-04 행 추가, 상태 줄 갱신. 2차 수정: 3절 첫 문장에 ref-411 추가, 2절 제기 근거 칸을 finding id 만으로 정리. seed 단계 페이지의 H1 아래 상태 줄을 바꿔야 해서 content 로 보냄 |
-| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.3 → v0.4: 상황 속성에 공간 노드 참조 추가(확정 유지), 업무 기한·우선순위 값 원천과 기한 필드 부재 메모(초안 → 확정), 작업 요구 수정 거부를 6절 질문으로. 2차 수정: 6절 화물 식별 단위 문장 각주를 ref-411·ref-031 로 교체하고 각주 정의·sources 추가. H1 버전 표기를 바꿔야 해서 content 로 보냄 |
-| 2026-09-25-37 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 4절에 '필요한 데이터 항목과 원천' 소절 작성(q2-01), 표준·형식 목록·평가 데이터는 미조사로 명시. 2차 수정: 첫 문장에 ref-411 추가, 팩트시트 항목을 [사실] 문장과 태그 없는 대리 원천 문장으로 분리 |
-| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.4, 아이디어 페이지 4절 작성 반영(현재 단계는 트랙 정의 current_stage 1 그대로라 상태 줄 변경 없음) |
-| 2026-09-25-37 | 요약 | [docs/tracks/nl-task-chatbot/stage-2-data-and-standards.md](tracks/nl-task-chatbot/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-01 답함(로봇 인터페이스·업무 시스템 필드와 정보 항목 원천 대응), 초안 v0.3 → v0.4, 후속 질문 2건 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-01 답함(2·3·4·5·6·8·9절 작성), 후속 질문 2건(q2-05·q2-06), q2-04 행 추가, 상태 줄 갱신. 2차 수정: 3절 첫 문장에 ref-411 추가, 2절 제기 근거 칸을 finding id 만으로 정리. seed 단계 페이지의 H1 아래 상태 줄을 바꿔야 해서 content 로 보냄 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.3 → v0.4: 상황 속성에 공간 노드 참조 추가(확정 유지), 업무 기한·우선순위 값 원천과 기한 필드 부재 메모(초안 → 확정), 작업 요구 수정 거부를 6절 질문으로. 2차 수정: 6절 화물 식별 단위 문장 각주를 ref-411·ref-031 로 교체하고 각주 정의·sources 추가. H1 버전 표기를 바꿔야 해서 content 로 보냄 |
+| 2026-09-25-37 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 4절에 '필요한 데이터 항목과 원천' 소절 작성(q2-01), 표준·형식 목록·평가 데이터는 미조사로 명시. 2차 수정: 첫 문장에 ref-411 추가, 팩트시트 항목을 [사실] 문장과 태그 없는 대리 원천 문장으로 분리 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6. 살아있는 산출물 링크: 초안 v0.4, 아이디어 페이지 4절 작성 반영(현재 단계는 트랙 정의 current_stage 1 그대로라 상태 줄 변경 없음) |
+| 2026-09-25-37 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | 자연어 업무 지시 챗봇 단계 2: q2-01 답함(로봇 인터페이스·업무 시스템 필드와 정보 항목 원천 대응), 초안 v0.3 → v0.4, 후속 질문 2건 |
 | 2026-09-25-37 | 생성 | [docs/references/ref-410.md](references/ref-410.md) | 참고문헌 ref-410 등록: rmf_ros2 — rmf_fleet_adapter/schemas/task_description__deliv… |
 | 2026-09-25-37 | 생성 | [docs/references/ref-411.md](references/ref-411.md) | 참고문헌 ref-411 등록: rmf_ros2 — rmf_fleet_adapter/schemas/event_description__payl… |
 | 2026-09-25-37 | 생성 | [docs/references/ref-412.md](references/ref-412.md) | 참고문헌 ref-412 등록: rmf_ros2 — rmf_fleet_adapter/schemas/place.json |
@@ -1724,8 +1724,8 @@ version: 1
 | 2026-09-25-37 | 생성 | [docs/references/ref-416.md](references/ref-416.md) | 참고문헌 ref-416 등록: SayPlan: Grounding Large Language Models using 3D Scene Grap… |
 | 2026-09-25-37 | 생성 | [docs/references/ref-417.md](references/ref-417.md) | 참고문헌 ref-417 등록: Pre-Execution Safety Gate & Task Safety Contracts for LLM-Co… |
 | 2026-09-25-37 | 생성 | [docs/references/ref-418.md](references/ref-418.md) | 참고문헌 ref-418 등록: Mecalux integrates generative AI into Easy WMS |
-| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-37 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 2) |
+| 2026-09-25-37 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-37 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-02 답함(3절 q2-02 소제목 신설: BIM·벡터 CAD·래스터 입력별 정보 항목과 빠지는 정보, 입력 형식별 비교표), 2절 표에 q2-08·q2-09 추가, 4·5·6·7·8·9절 갱신. 2차 수정: 비교표 문 행 래스터 칸에 (추정) 표시, 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정. H1 아래 단계 상태 줄은 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔 쪽 갱신 필요 |
 | 2026-09-25-36 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.4 → v0.5: 문 BIM 대응 클래스 IfcDoor(f1), 계단 BIM 대응 클래스 IfcStair(f3), 엘리베이터 유형 값 ELEVATOR 확정(f4), 평면도 길이 단위·축척 정보 속성(f12) 반영, 6절에 거부된 변경과 프록시·충전 위치 질문 추가. 2차 수정: 7절 끝 각주 정의를 직접 보내 `[^ref-432]` 기관을 Noardo 외로 고침(버전 이력 자동 영역은 그대로 유지). H1 의 '(v0.4)' 표기는 H2 밖이라 patches 로 바꾸지 못했다 — 퍼블리셔가 '(v0.5)'로 맞춰야 한다 |
 | 2026-09-25-36 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 4절에 '입력 형식별 정보 항목' 소절(q2-02, 실행 2026-09-25-36) 신설, 4절 머리말과 q2-01 소절의 'q2-02 미조사' 문장을 갱신. 2차 수정: 비교표 충전 위치 행 BIM 칸을 확인한 두 유형 열거로 범위 한정 |
@@ -1764,12 +1764,12 @@ version: 1
 | 2026-09-25-35 | 갱신 | [docs/glossary/semantic-id.md](glossary/semantic-id.md) | 용어집 항목 의미 식별자 |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-35 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-34 | 갱신 | [docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 영역 심화: 섹션 3~11 신규 작성(4·6·8·11절은 주제 페이지로 분리), 2차 수정 지시 4건 반영(9절 경계 칸, 10절 태그, 5절 시작 조건·제약 칸) |
+| 2026-09-25-34 | 갱신 | [docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 영역 심화: 섹션 3~11 신규 작성(4·6·8·11절은 주제 페이지로 분리), 2차 수정 지시 4건 반영(9절 경계 칸, 10절 태그, 5절 시작 조건·제약 칸) |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s6.md](topics/2026/2026-09-25-area14-s6.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "6. 대표 접근법과 기술" 절(1,504자)을 옮겼다 |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s4.md](topics/2026/2026-09-25-area14-s4.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s8.md](topics/2026/2026-09-25-area14-s8.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "8. 대표 연구와 자료" 절(904자)을 옮겼다 |
 | 2026-09-25-34 | 생성 | [docs/topics/2026/2026-09-25-area14-s11.md](topics/2026/2026-09-25-area14-s11.md) | 자동 분리: 14. 작업 순서·스케줄링 의 "11. 열린 질문" 절(865자)을 옮겼다 |
-| 2026-09-25-34 | 요약 | [docs/categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md) | 14. 작업 순서·스케줄링: 영역 심화로 3~11절 초안 작성(신규 출처 15건, 재사용 6건). ref-376 은 2026-09-25-33 브리프의 ref-656 과 같은 URL(task.html)이라 중복 등록 가능성 있음 |
+| 2026-09-25-34 | 요약 | [docs/categories/planning-and-optimization/task-sequencing-and-scheduling.md](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 14. 작업 순서·스케줄링: 영역 심화로 3~11절 초안 작성(신규 출처 15건, 재사용 6건). ref-376 은 2026-09-25-33 브리프의 ref-656 과 같은 URL(task.html)이라 중복 등록 가능성 있음 |
 | 2026-09-25-34 | 생성 | [docs/references/ref-376.md](references/ref-376.md) | 참고문헌 ref-376 등록: Tasks in RMF (task) - Programming Multiple Robots with ROS 2 |
 | 2026-09-25-34 | 생성 | [docs/references/ref-377.md](references/ref-377.md) | 참고문헌 ref-377 등록: rmf_task — rmf_task/include/rmf_task/TaskPlanner.hpp |
 | 2026-09-25-34 | 생성 | [docs/references/ref-378.md](references/ref-378.md) | 참고문헌 ref-378 등록: rmf_ros2 — rmf_task_ros2/include/rmf_task_ros2/Dispatcher.hp… |
@@ -1790,13 +1790,13 @@ version: 1
 | 2026-09-25-34 | 생성 | [docs/glossary/time-window.md](glossary/time-window.md) | 용어집 항목 시간창 |
 | 2026-09-25-34 | 생성 | [docs/glossary/put-wall.md](glossary/put-wall.md) | 용어집 항목 풋월 |
 | 2026-09-25-34 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-33 | 갱신 | [docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 섹션 3~11 신규 작성(분류 체계·배정 방식·Open-RMF 입찰·LLM 기반 배정·열린 질문), 트랙 반영 제안 반영, 페이지 상태 마커 추가. 2차 수정: 6·8·10·11절 첫 문장의 표기·태그 정리 |
+| 2026-09-25-33 | 갱신 | [docs/categories/planning-and-optimization/task-allocation-mrta.md](categories/planning-and-optimization/task-allocation-mrta.md) | 섹션 3~11 신규 작성(분류 체계·배정 방식·Open-RMF 입찰·LLM 기반 배정·열린 질문), 트랙 반영 제안 반영, 페이지 상태 마커 추가. 2차 수정: 6·8·10·11절 첫 문장의 표기·태그 정리 |
 | 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s6.md](topics/2026/2026-09-25-area13-s6.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 내부 용어 '브리프' 삭제, 원 페이지 3절 참조를 링크로 명시 |
 | 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s8.md](topics/2026/2026-09-25-area13-s8.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: '대표 자료' 선정 문장을 이 위키의 선정으로 밝힌 안내 문장으로 고침 |
 | 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s11.md](topics/2026/2026-09-25-area13-s11.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "11. 열린 질문" 절을 옮겼다. 2차 수정: 안내 문장의 태그·각주 제거, oq-024 항목의 단정을 [추정] 문장으로 고침 |
 | 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s7.md](topics/2026/2026-09-25-area13-s7.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 대상 아님, 변경 없음) |
 | 2026-09-25-33 | 생성 | [docs/topics/2026/2026-09-25-area13-s4.md](topics/2026/2026-09-25-area13-s4.md) | 자동 분리: 13. 작업 배정 — MRTA 의 "4. 핵심 개념과 용어" 절(759자)을 옮겼다 |
-| 2026-09-25-33 | 요약 | [docs/categories/d-planning-and-optimization/13-task-allocation-mrta.md](categories/d-planning-and-optimization/13-task-allocation-mrta.md) | 13. 작업 배정 — MRTA: 영역 심화: 3~11절 신규 작성(분류 체계·시장 기반·최근접 규칙·Open-RMF 입찰·LLM 기반 배정), 트랙 반영 제안 반영 |
+| 2026-09-25-33 | 요약 | [docs/categories/planning-and-optimization/task-allocation-mrta.md](categories/planning-and-optimization/task-allocation-mrta.md) | 13. 작업 배정 — MRTA: 영역 심화: 3~11절 신규 작성(분류 체계·시장 기반·최근접 규칙·Open-RMF 입찰·LLM 기반 배정), 트랙 반영 제안 반영 |
 | 2026-09-25-33 | 생성 | [docs/references/ref-393.md](references/ref-393.md) | 참고문헌 ref-393 등록: A Formal Analysis and Taxonomy of Task Allocation in Multi-R… |
 | 2026-09-25-33 | 생성 | [docs/references/ref-394.md](references/ref-394.md) | 참고문헌 ref-394 등록: A comprehensive taxonomy for multi-robot task allocation |
 | 2026-09-25-33 | 생성 | [docs/references/ref-395.md](references/ref-395.md) | 참고문헌 ref-395 등록: Consensus-Based Decentralized Auctions for Robust Task Alloc… |
@@ -1814,15 +1814,15 @@ version: 1
 | 2026-09-25-33 | 생성 | [docs/glossary/consensus-based-bundle-algorithm.md](glossary/consensus-based-bundle-algorithm.md) | 용어집 항목 합의 기반 번들 알고리즘 |
 | 2026-09-25-33 | 생성 | [docs/glossary/nearest-vehicle-first-rule.md](glossary/nearest-vehicle-first-rule.md) | 용어집 항목 최근접 차량 우선 규칙 |
 | 2026-09-25-33 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
-| 2026-09-25-32 | 갱신 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
-| 2026-09-25-32 | 요약 | [docs/categories/b-common-information-and-environment-model/index.md](categories/b-common-information-and-environment-model/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
-| 2026-09-25-31 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |
+| 2026-09-25-32 | 갱신 | [docs/categories/robot-ontology/index.md](categories/robot-ontology/index.md) | 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 |
+| 2026-09-25-32 | 요약 | [docs/categories/robot-ontology/index.md](categories/robot-ontology/index.md) | B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) |
+| 2026-09-25-31 | 갱신 | [docs/categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 섹션 3~11 신규 작성(명령 식별자·중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 11건 이행. 형식 재작성: 6절의 11. 분산 시스템·통신·컴퓨팅 구조 링크를 분리 뒤에도 깨지지 않는 경로(../../categories/…)로 바꿈 |
 | 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s6.md](topics/2026/2026-09-25-area12-s6.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "6. 대표 접근법과 기술" 절(3,046자)을 옮겼다 |
 | 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s7.md](topics/2026/2026-09-25-area12-s7.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다 |
 | 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s4.md](topics/2026/2026-09-25-area12-s4.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "4. 핵심 개념과 용어" 절(1,163자)을 옮겼다 |
 | 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s11.md](topics/2026/2026-09-25-area12-s11.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "11. 열린 질문" 절(1,032자)을 옮겼다 |
 | 2026-09-25-31 | 생성 | [docs/topics/2026/2026-09-25-area12-s8.md](topics/2026/2026-09-25-area12-s8.md) | 자동 분리: 12. 명령·작업 실행의 신뢰성 의 "8. 대표 연구와 자료" 절(735자)을 옮겼다 |
-| 2026-09-25-31 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) | 12. 명령·작업 실행의 신뢰성: 섹션 3~11 신규 작성(주문 갱신 id 중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 조건부 승인 수정 11건 이행 |
+| 2026-09-25-31 | 요약 | [docs/categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 12. 명령·작업 실행의 신뢰성: 섹션 3~11 신규 작성(주문 갱신 id 중복 무시, 멱등성 키, 상태 기계, 시간 초과, 재시도·취소·보상, 재시작 복원, 적치 재전송 시나리오), 조건부 승인 수정 11건 이행 |
 | 2026-09-25-31 | 생성 | [docs/references/ref-363.md](references/ref-363.md) | 참고문헌 ref-363 등록: Actions (ROS 2 Design) |
 | 2026-09-25-31 | 생성 | [docs/references/ref-364.md](references/ref-364.md) | 참고문헌 ref-364 등록: Managed nodes (ROS 2 Design: node_lifecycle) |
 | 2026-09-25-31 | 생성 | [docs/references/ref-365.md](references/ref-365.md) | 참고문헌 ref-365 등록: rmf_api_msgs — rmf_api_msgs/schemas/dispatch_task_request.js… |
@@ -1841,11 +1841,11 @@ version: 1
 | 2026-09-25-31 | 갱신 | [docs/glossary/mqtt.md](glossary/mqtt.md) | 용어집 항목 마지막 유언 메시지 |
 | 2026-09-25-31 | 생성 | [docs/glossary/managed-node.md](glossary/managed-node.md) | 용어집 항목 관리형 노드 |
 | 2026-09-25-31 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
-| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 상태 줄·2절·4절·5절(q3-07, q4-07)·6절·7절·8절·9절 갱신 |
-| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | v0.2 → v0.3: 상황 개념에 속성 '값 출처' 추가·확정, 6절에 추론 값 확인 근거와 모호 시간 표현 질문 추가 |
-| 2026-09-25-30 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절에 '상황 정보 추출과 되묻기' 소절 추가(q1-04, 실행 2026-09-25-30) |
-| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6. 살아있는 산출물 링크: 초안 v0.3, 아이디어 3절 q1-04 반영 현황 갱신 |
-| 2026-09-25-30 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-04 답함(상황 정보 추출과 빠진 정보 처리 세 방식), 업무 분해·배정 설계 초안 v0.2 → v0.3(상황 개념에 값 출처), 새 질문 q3-07·q4-07 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | q1-04 답함(3절 소제목 신설), 상태 줄·2절·4절·5절(q3-07, q4-07)·6절·7절·8절·9절 갱신 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | v0.2 → v0.3: 상황 개념에 속성 '값 출처' 추가·확정, 6절에 추론 값 확인 근거와 모호 시간 표현 질문 추가 |
+| 2026-09-25-30 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절에 '상황 정보 추출과 되묻기' 소절 추가(q1-04, 실행 2026-09-25-30) |
+| 2026-09-25-30 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6. 살아있는 산출물 링크: 초안 v0.3, 아이디어 3절 q1-04 반영 현황 갱신 |
+| 2026-09-25-30 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-04 답함(상황 정보 추출과 빠진 정보 처리 세 방식), 업무 분해·배정 설계 초안 v0.2 → v0.3(상황 개념에 값 출처), 새 질문 q3-07·q4-07 |
 | 2026-09-25-30 | 생성 | [docs/references/ref-350.md](references/ref-350.md) | 참고문헌 ref-350 등록: Robots That Ask For Help: Uncertainty Alignment for Large La… |
 | 2026-09-25-30 | 생성 | [docs/references/ref-351.md](references/ref-351.md) | 참고문헌 ref-351 등록: Robots That Ask For Help: Uncertainty Alignment for Large La… |
 | 2026-09-25-30 | 생성 | [docs/references/ref-352.md](references/ref-352.md) | 참고문헌 ref-352 등록: CLARA: Classifying and Disambiguating User Commands for Reli… |
@@ -1864,10 +1864,10 @@ version: 1
 | 2026-09-25-30 | 생성 | [docs/glossary/structured-output.md](glossary/structured-output.md) | 용어집 항목 구조화 출력 |
 | 2026-09-25-30 | 생성 | [docs/glossary/hallucination.md](glossary/hallucination.md) | 용어집 항목 환각 |
 | 2026-09-25-30 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
-| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-30 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-29 | 갱신 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | '다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 세부영역 연결 18쌍·근거 finding 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가. 2차: 번호만 쓴 호칭 수정, 첫 문장 태그·각주 보강 |
-| 2026-09-25-29 | 요약 | [docs/categories/a-business-supply-chain-design/index.md](categories/a-business-supply-chain-design/index.md) | A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 세부영역 연결 18쌍, 근거 finding 22건 중 추정 9건) |
+| 2026-09-25-30 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-30 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-29 | 갱신 | [docs/categories/planning-and-business/index.md](categories/planning-and-business/index.md) | '다른 대분류와의 연결' 절 신규 작성(B~G 6개 대분류, 세부영역 연결 18쌍·근거 finding 22건, Mermaid 도식), '참고 자료' 절 끝에 각주 정의 23건 추가. 2차: 번호만 쓴 호칭 수정, 첫 문장 태그·각주 보강 |
+| 2026-09-25-29 | 요약 | [docs/categories/planning-and-business/index.md](categories/planning-and-business/index.md) | A. 업무·공급망 설계: 다른 대분류와의 연결 절 작성(B~G 여섯 대분류, 세부영역 연결 18쌍, 근거 finding 22건 중 추정 9건) |
 | 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-01 답함(공간 그래프 표준 조사), 3절 조사 결과·4절 결론 신규 작성, 후속 질문 2건(q2-07·q3-05), 완료 조건 미충족·전환 미승인, 단계 상태 진행 중. 상태 줄 갱신이 필요해 patches 대신 전체 content로 보냄 |
 | 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0.3 → v0.4: 공간 노드·층에 표준 대응 클래스(후보) 속성, 층 확정, 주제 레이어 추가·확정. 문 대응·레이어 구분·IFC 수직 연결은 6절 질문. H1 버전 표기 변경이 필요해 전체 content로 보냄 |
 | 2026-09-25-28 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 4절에 '공간 그래프를 표현하는 표준' 소절 덧붙임(q2-01 요약 비교표, 국내 규정, 종합). 입력 형식별 정보 항목(q2-02)·관제 수용 형식(q2-03)은 아직 없음을 명시 |
@@ -1899,13 +1899,13 @@ version: 1
 | 2026-09-25-28 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-28 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
-| 2026-09-25-27 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지. 2차 수정: 7절 첫 문장을 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
+| 2026-09-25-27 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | 섹션 3~11 신규 작성(외부망 단절 운영 범위, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 페이지 상태 표식 추가, 조건부 승인 수정 16건 이행, 4·6·7·8·10절 주제 페이지 분리 상태 유지. 2차 수정: 7절 첫 문장을 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s6.md](topics/2026/2026-09-25-area11-s6.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "6. 대표 접근법과 기술" 절(2,039자)을 옮겼다 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s4.md](topics/2026/2026-09-25-area11-s4.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "4. 핵심 개념과 용어" 절(1,171자)을 옮겼다 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s8.md](topics/2026/2026-09-25-area11-s8.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "8. 대표 연구와 자료" 절(855자)을 옮겼다. 2차 수정: NIST 항목의 쓰임새 평가를 [의견]으로, Gilbert·Lynch 항목의 적용 구절을 [추정]으로 분리 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s7.md](topics/2026/2026-09-25-area11-s7.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "7. 관련 표준·프레임워크·오픈소스" 절(769자)을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 문장의 '대부분' 일반화를 VDA 5050·KubeEdge 두 사례에 한정한 [사실] 문장으로 교체 |
 | 2026-09-25-27 | 생성 | [docs/topics/2026/2026-09-25-area11-s10.md](topics/2026/2026-09-25-area11-s10.md) | 자동 분리: 11. 분산 시스템·통신·컴퓨팅 구조 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(737자)을 옮겼다. 형식 수정: 본문 세부영역 링크 8개를 주제 페이지 위치 기준(../../categories/…) 경로로 고쳤다. 2차 수정: 27. AI·학습·적응과 모델 운영 항목을 ref-305 사실 문장과 태그 없는 연결 문장으로 분리 |
-| 2026-09-25-27 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md) | 11. 분산 시스템·통신·컴퓨팅 구조: 섹션 3~11 신규 작성(외부망 단절 운영 범위 추론, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 1차 조건부 승인 수정 16건·2차 수정 4건 이행 |
+| 2026-09-25-27 | 요약 | [docs/categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | 11. 분산 시스템·통신·컴퓨팅 구조: 섹션 3~11 신규 작성(외부망 단절 운영 범위 추론, VDA 5050 무선망 전제·QoS·베이스/호라이즌, ROS 2 DDS·Zenoh, 엣지 단절 운영, 계산 배치 선례, 피킹 시나리오), 1차 조건부 승인 수정 16건·2차 수정 4건 이행 |
 | 2026-09-25-27 | 생성 | [docs/references/ref-297.md](references/ref-297.md) | 참고문헌 ref-297 등록: ROS on DDS |
 | 2026-09-25-27 | 생성 | [docs/references/ref-298.md](references/ref-298.md) | 참고문헌 ref-298 등록: ROS 2 Quality of Service policies |
 | 2026-09-25-27 | 생성 | [docs/references/ref-299.md](references/ref-299.md) | 참고문헌 ref-299 등록: rmw_zenoh — README (A ROS 2 RMW implementation based on Zeno… |
@@ -1926,10 +1926,10 @@ version: 1
 | 2026-09-25-27 | 생성 | [docs/glossary/private-5g-network.md](glossary/private-5g-network.md) | 용어집 항목 5G 특화망(이음5G) |
 | 2026-09-25-27 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 베이스·호라이즌 |
 | 2026-09-25-27 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
-| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설, 신뢰도 low), 4절 결론·불확실성(f22 이번 실행에서도 미확인), 후속 질문 q4-06, 완료 조건 표·이력 갱신, 상태 줄 갱신(상태 줄이 절 밖에 있어 patches 대신 전체 content로 보냄) |
-| 2026-09-25-26 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절: q1-03 미조사 문장 두 곳을 채팅·음성 지시의 확인·승인 방식 비교(작업자 대상 동작 단위 확인 대 로봇 대상 확인 절차 미확인)로 교체 |
-| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 아이디어 2 항목의 'q1-03 미조사' 문구를 이번 실행 결과로 교체(상태 줄은 마지막 트랙 실행 2026-09-25·현재 단계 단계 1 그대로라 변경 없음) |
-| 2026-09-25-26 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-03 답함(채팅·음성 지시 제품의 확인·승인 방식, 신뢰도 low), 후속 질문 q4-06 등록, 아이디어 2 3절 갱신 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | q1-03 답함(3절 소제목 신설, 신뢰도 low), 4절 결론·불확실성(f22 이번 실행에서도 미확인), 후속 질문 q4-06, 완료 조건 표·이력 갱신, 상태 줄 갱신(상태 줄이 절 밖에 있어 patches 대신 전체 content로 보냄) |
+| 2026-09-25-26 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절: q1-03 미조사 문장 두 곳을 채팅·음성 지시의 확인·승인 방식 비교(작업자 대상 동작 단위 확인 대 로봇 대상 확인 절차 미확인)로 교체 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 아이디어 2 항목의 'q1-03 미조사' 문구를 이번 실행 결과로 교체(상태 줄은 마지막 트랙 실행 2026-09-25·현재 단계 단계 1 그대로라 변경 없음) |
+| 2026-09-25-26 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-03 답함(채팅·음성 지시 제품의 확인·승인 방식, 신뢰도 low), 후속 질문 q4-06 등록, 아이디어 2 3절 갱신 |
 | 2026-09-25-26 | 생성 | [docs/references/ref-272.md](references/ref-272.md) | 참고문헌 ref-272 등록: Voice-Directed Warehousing - Solutions \| Lucas Systems |
 | 2026-09-25-26 | 생성 | [docs/references/ref-275.md](references/ref-275.md) | 참고문헌 ref-275 등록: System and method for generating and updating location check… |
 | 2026-09-25-26 | 생성 | [docs/references/ref-276.md](references/ref-276.md) | 참고문헌 ref-276 등록: Amazon unveils next-gen Proteus robot as part of €10 billion… |
@@ -1940,15 +1940,15 @@ version: 1
 | 2026-09-25-26 | 생성 | [docs/references/ref-281.md](references/ref-281.md) | 참고문헌 ref-281 등록: 현대로템, 무인로봇 국책과제 2건 수주 |
 | 2026-09-25-26 | 생성 | [docs/glossary/voice-picking.md](glossary/voice-picking.md) | 용어집 항목 음성 피킹 |
 | 2026-09-25-26 | 생성 | [docs/glossary/location-check-digit.md](glossary/location-check-digit.md) | 용어집 항목 위치 체크 디지트 |
-| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 2건 갱신 |
-| 2026-09-25-26 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-25 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터와 설비 메시지, 디스펜서·인제스터, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·단체표준·제조사 API, 출하 시나리오), 페이지 상태 표식 추가. 2차 수정: 7절 요약의 '국제 표준 미확인' 태그·각주 분리, 5절 KS B 7317 문장 교체, 3·9절 [의견]에 구축자 의견 명시 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 2건 갱신 |
+| 2026-09-25-26 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-25 | 갱신 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터와 설비 메시지, 디스펜서·인제스터, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·단체표준·제조사 API, 출하 시나리오), 페이지 상태 표식 추가. 2차 수정: 7절 요약의 '국제 표준 미확인' 태그·각주 분리, 5절 KS B 7317 문장 교체, 3·9절 [의견]에 구축자 의견 명시 |
 | 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s7.md](topics/2026/2026-09-25-area10-s7.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 첫 문장의 '국제 표준 미확인'을 태그 없는 조사 한계 서술로 분리 |
 | 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s4.md](topics/2026/2026-09-25-area10-s4.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s10.md](topics/2026/2026-09-25-area10-s10.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "10. 다른 연구영역과의 연결" 절을 옮겼다. 2차 수정: 9번 항목 사실·의견 분리, 17번 항목을 Open-RMF 예시 작업대로 한정, 28번 항목 사실·열린 질문 분리 |
 | 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s8.md](topics/2026/2026-09-25-area10-s8.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "8. 대표 연구와 자료" 절을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-25 | 생성 | [docs/topics/2026/2026-09-25-area10-s11.md](topics/2026/2026-09-25-area10-s11.md) | 자동 분리: 10. 설비·건물 시스템 연동 의 "11. 열린 질문" 절을 옮겼다(2차 재실행에서 변경 없음) |
-| 2026-09-25-25 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) | 10. 설비·건물 시스템 연동: 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터·설비 메시지, 디스펜서·인제스터 예시 구현, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·승강기협회 단체표준·제조사 API, 출하 시나리오), 2차 수정으로 태그 드리프트 6건 교정 |
+| 2026-09-25-25 | 요약 | [docs/categories/integration/facility-and-building-system-integration.md](categories/integration/facility-and-building-system-integration.md) | 10. 설비·건물 시스템 연동: 섹션 3~11 신규 작성(Open-RMF 문·승강기 어댑터·설비 메시지, 디스펜서·인제스터 예시 구현, VDA 5050 3.0.0 해제·동작 구역, KS B 7317·승강기협회 단체표준·제조사 API, 출하 시나리오), 2차 수정으로 태그 드리프트 6건 교정 |
 | 2026-09-25-25 | 생성 | [docs/references/ref-312.md](references/ref-312.md) | 참고문헌 ref-312 등록: rmf_internal_msgs — rmf_lift_msgs/msg/LiftRequest.msg |
 | 2026-09-25-25 | 생성 | [docs/references/ref-313.md](references/ref-313.md) | 참고문헌 ref-313 등록: rmf_internal_msgs — rmf_door_msgs/msg/DoorMode.msg |
 | 2026-09-25-25 | 생성 | [docs/references/ref-314.md](references/ref-314.md) | 참고문헌 ref-314 등록: KS B 7317 이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법 |
@@ -1964,7 +1964,7 @@ version: 1
 | 2026-09-25-25 | 생성 | [docs/glossary/dispenser-ingestor.md](glossary/dispenser-ingestor.md) | 용어집 항목 디스펜서·인제스터 |
 | 2026-09-25-25 | 생성 | [docs/glossary/release-zone.md](glossary/release-zone.md) | 용어집 항목 해제 구역 |
 | 2026-09-25-25 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-24 | 갱신 | [docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 1차 조건부 승인 수정 14건 이행, 2차 수정: 5절 승강기 추론 문장에 [추정] 태그·각주 추가, 완료·인계 칸 EPCIS 문장을 사실 부분만 남김 |
+| 2026-09-25-24 | 갱신 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 1차 조건부 승인 수정 14건 이행, 2차 수정: 5절 승강기 추론 문장에 [추정] 태그·각주 추가, 완료·인계 칸 EPCIS 문장을 사실 부분만 남김 |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s7.md](topics/2026/2026-09-25-area08-s7.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,454자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s4.md](topics/2026/2026-09-25-area08-s4.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "4. 핵심 개념과 용어" 절(1,436자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s6.md](topics/2026/2026-09-25-area08-s6.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "6. 대표 접근법과 기술" 절(1,386자)을 옮겼다(2차 재실행에서 변경 없음) |
@@ -1972,7 +1972,7 @@ version: 1
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s10.md](topics/2026/2026-09-25-area08-s10.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,091자)을 옮겼다. 형식 수정: 세부영역 링크 9건 경로 수정. 2차 수정: 7·9·19 항목에서 사실과 해석을 나누어 해석은 [추정] 또는 태그 없는 연결 문장으로 두고 f21 을 [추정]`[^ref-292]``[^ref-051]`로 되돌림 |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s11.md](topics/2026/2026-09-25-area08-s11.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "11. 열린 질문" 절(1,060자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-25-24 | 생성 | [docs/topics/2026/2026-09-25-area08-s3.md](topics/2026/2026-09-25-area08-s3.md) | 자동 분리: 8. 실시간 세계 상태·데이터 일관성 의 "3. 왜 중요한가" 절(694자)을 옮겼다(2차 재실행에서 변경 없음) |
-| 2026-09-25-24 | 요약 | [docs/categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) | 8. 실시간 세계 상태·데이터 일관성: 영역 심화: 섹션 3~11 신규 작성(허용 경과 시간·두 시각·품질·정정 이벤트, 22. 시뮬레이션·예측용 디지털 트윈과의 구분), 1차 조건부 승인 수정 14건과 2차 수정 5건 이행 |
+| 2026-09-25-24 | 요약 | [docs/categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 8. 실시간 세계 상태·데이터 일관성: 영역 심화: 섹션 3~11 신규 작성(허용 경과 시간·두 시각·품질·정정 이벤트, 22. 시뮬레이션·예측용 디지털 트윈과의 구분), 1차 조건부 승인 수정 14건과 2차 수정 5건 이행 |
 | 2026-09-25-24 | 생성 | [docs/references/ref-282.md](references/ref-282.md) | 참고문헌 ref-282 등록: Quality of Service settings — ROS 2 Documentation: Jazzy |
 | 2026-09-25-24 | 생성 | [docs/references/ref-283.md](references/ref-283.md) | 참고문헌 ref-283 등록: Doors (integration_doors) - Programming Multiple Robots with… |
 | 2026-09-25-24 | 생성 | [docs/references/ref-284.md](references/ref-284.md) | 참고문헌 ref-284 등록: Lifts (integration_lifts) - Programming Multiple Robots with… |
@@ -2030,11 +2030,11 @@ version: 1
 | 2026-09-25-22 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 3건 갱신 |
 | 2026-09-25-22 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-02 답함(3절 q1-02 소제목 추가), 2·4·5·6·7·8·9절 갱신, 후속 질문 q3-05·q3-06, 상태 줄 '답한 질문: 2건'으로 갱신(2차 수정 지시로 전체 content 전송) |
-| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0.1 → v0.2: 배정 개념에 속성 '배정 산출 방식' 추가·확정(f3·f5·f7·f8·f9), '규칙' 값은 6절 질문으로. H1 버전 표기를 바꿔야 해서 전체 content 로 보냄(2차 재실행에서 변경 없음) |
-| 2026-09-25-21 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절 갱신: LLM 담당 범위와 LLM·최적화 결합 선행 연구, 제품 사례 소절(공개 에이전트 프레임워크, 로봇 운영 제품 — 벤더 주장) 작성, q1-03 미조사 명시. 2차: LTAA 문장에 저자 보고값 병기, 평가 환경 문장에 '건설 기계 시나리오' 복원과 ref-168 각주 추가 |
-| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 6절 살아있는 산출물 링크 갱신(초안 v0.2, 아이디어 2 3절 제품 사례 작성). 상태 줄은 값 변화 없음 |
-| 2026-09-25-21 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-02 답함(LLM 담당 범위 세 방식, LLM 정식화와 최적화 배정 연구, 로봇 운영 제품 사례는 벤더 주장), 업무 분해·배정 설계 초안 v0.1 → v0.2, 새 질문 2건 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | q1-02 답함(3절 q1-02 소제목 추가), 2·4·5·6·7·8·9절 갱신, 후속 질문 q3-05·q3-06, 상태 줄 '답한 질문: 2건'으로 갱신(2차 수정 지시로 전체 content 전송) |
+| 2026-09-25-21 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.1 → v0.2: 배정 개념에 속성 '배정 산출 방식' 추가·확정(f3·f5·f7·f8·f9), '규칙' 값은 6절 질문으로. H1 버전 표기를 바꿔야 해서 전체 content 로 보냄(2차 재실행에서 변경 없음) |
+| 2026-09-25-21 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절 갱신: LLM 담당 범위와 LLM·최적화 결합 선행 연구, 제품 사례 소절(공개 에이전트 프레임워크, 로봇 운영 제품 — 벤더 주장) 작성, q1-03 미조사 명시. 2차: LTAA 문장에 저자 보고값 병기, 평가 환경 문장에 '건설 기계 시나리오' 복원과 ref-168 각주 추가 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 6절 살아있는 산출물 링크 갱신(초안 v0.2, 아이디어 2 3절 제품 사례 작성). 상태 줄은 값 변화 없음 |
+| 2026-09-25-21 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-02 답함(LLM 담당 범위 세 방식, LLM 정식화와 최적화 배정 연구, 로봇 운영 제품 사례는 벤더 주장), 업무 분해·배정 설계 초안 v0.1 → v0.2, 새 질문 2건 |
 | 2026-09-25-21 | 생성 | [docs/references/ref-164.md](references/ref-164.md) | 참고문헌 ref-164 등록: LaMMA-P: Generalizable Multi-Agent Long-Horizon Task Allocat… |
 | 2026-09-25-21 | 생성 | [docs/references/ref-165.md](references/ref-165.md) | 참고문헌 ref-165 등록: Large Language Models for Multi-Robot Systems: A Survey |
 | 2026-09-25-21 | 생성 | [docs/references/ref-166.md](references/ref-166.md) | 참고문헌 ref-166 등록: LiP-LLM: Integrating Linear Programming and dependency graph… |
@@ -2057,16 +2057,16 @@ version: 1
 | 2026-09-25-21 | 생성 | [docs/glossary/llm-agent.md](glossary/llm-agent.md) | 용어집 항목 LLM 에이전트 |
 | 2026-09-25-21 | 생성 | [docs/glossary/milp.md](glossary/milp.md) | 용어집 항목 혼합 정수 계획 |
 | 2026-09-25-21 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 3건 갱신 |
-| 2026-09-25-21 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-20 | 갱신 | [docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안 7절 반영, 페이지 상태 표식 추가. 2차 수정: 9절 설비 행 태그 분리·free_fleet 문장 태그와 ref-256 각주 추가, 8절 요약 문장 교체 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 3건 갱신 |
+| 2026-09-25-21 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-20 | 갱신 | [docs/categories/integration/robot-and-vendor-fleet-manager-integration.md](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 섹션 3~11 신규 작성(제어 수준 4범주, 어댑터 API 요구, VDA 5050 3.0.0, MassRobotics, 출하 시나리오), 트랙 반영 제안 7절 반영, 페이지 상태 표식 추가. 2차 수정: 9절 설비 행 태그 분리·free_fleet 문장 태그와 ref-256 각주 추가, 8절 요약 문장 교체 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s7.md](topics/2026/2026-09-25-area09-s7.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,784자)을 옮겼다 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s8.md](topics/2026/2026-09-25-area09-s8.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "8. 대표 연구와 자료" 절(1,706자)을 옮겼다. 2차 수정: 1절·3절 첫 요약 문장을 ref-259 범위 문장과 조사 범위 설명 두 문장으로 교체 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s6.md](topics/2026/2026-09-25-area09-s6.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "6. 대표 접근법과 기술" 절(1,498자)을 옮겼다 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s11.md](topics/2026/2026-09-25-area09-s11.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "11. 열린 질문" 절(1,297자)을 옮겼다 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s4.md](topics/2026/2026-09-25-area09-s4.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "4. 핵심 개념과 용어" 절(1,070자)을 옮겼다 |
 | 2026-09-25-20 | 생성 | [docs/topics/2026/2026-09-25-area09-s10.md](topics/2026/2026-09-25-area09-s10.md) | 자동 분리: 9. 로봇·제조사 관제 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(815자)을 옮겼다. 세부영역 링크를 주제 페이지 위치 기준 경로로 고쳤다. 2차 수정: 12. 명령·작업 실행의 신뢰성 연결 문장 태그를 [추정]으로 |
-| 2026-09-25-20 | 요약 | [docs/categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) | 9. 로봇·제조사 관제 연동: 영역 심화: 3~11절 신규 작성(제어 수준·어댑터 API·VDA 5050 3.0.0·MassRobotics·출하 시나리오), 트랙 반영 제안 1건 반영 |
+| 2026-09-25-20 | 요약 | [docs/categories/integration/robot-and-vendor-fleet-manager-integration.md](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 9. 로봇·제조사 관제 연동: 영역 심화: 3~11절 신규 작성(제어 수준·어댑터 API·VDA 5050 3.0.0·MassRobotics·출하 시나리오), 트랙 반영 제안 1건 반영 |
 | 2026-09-25-20 | 생성 | [docs/references/ref-251.md](references/ref-251.md) | 참고문헌 ref-251 등록: Mobile Robot Fleets (integration_fleets) - Programming Multi… |
 | 2026-09-25-20 | 생성 | [docs/references/ref-252.md](references/ref-252.md) | 참고문헌 ref-252 등록: Integration (integration) - Programming Multiple Robots with… |
 | 2026-09-25-20 | 생성 | [docs/references/ref-253.md](references/ref-253.md) | 참고문헌 ref-253 등록: MassRobotics-AMR/AMR_Interop_Standard — README |
@@ -2105,14 +2105,14 @@ version: 1
 | 2026-09-25-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-19 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-17 | 갱신 | [docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 가운데 브리프 근거가 있는 것(평면도 인식·데이터셋·traffic-editor·경로 지도 요건·9절 경계)만 반영 |
+| 2026-09-25-17 | 갱신 | [docs/categories/space-and-map-model/map-space-and-location-model.md](categories/space-and-map-model/map-space-and-location-model.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 가운데 브리프 근거가 있는 것(평면도 인식·데이터셋·traffic-editor·경로 지도 요건·9절 경계)만 반영 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s7.md](topics/2026/2026-09-25-area06-s7.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: GS1 GLN 행을 [사실] 식별 문장과 [추정] 대응 문장으로 나눔 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s6.md](topics/2026/2026-09-25-area06-s6.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "6. 대표 접근법과 기술" 절(1,863자)을 옮겼다. 형식 수정: 27. AI·학습·적응과 모델 운영 링크를 주제 페이지 위치 기준 경로로 고침 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s8.md](topics/2026/2026-09-25-area06-s8.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "8. 대표 연구와 자료" 절(1,701자)을 옮겼다 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s4.md](topics/2026/2026-09-25-area06-s4.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "4. 핵심 개념과 용어" 절(1,382자)을 옮겼다 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s10.md](topics/2026/2026-09-25-area06-s10.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,143자)을 옮겼다. 형식 수정: 세부영역 링크 11건을 주제 페이지 위치 기준 경로(../../categories/…)로 고침 |
 | 2026-09-25-17 | 생성 | [docs/topics/2026/2026-09-25-area06-s3.md](topics/2026/2026-09-25-area06-s3.md) | 자동 분리: 6. 지도·공간·위치 모델 의 "3. 왜 중요한가" 절을 옮겼다. 2차 수정: MassRobotics 평면 기준 부재 문장에 '(스키마 파일 기준, 부재 확정 아님)' 한정 추가 |
-| 2026-09-25-17 | 요약 | [docs/categories/b-common-information-and-environment-model/06-map-space-and-location-model.md](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) | 6. 지도·공간·위치 모델: 영역 심화: 3~11절 신규 작성(좌표계 정렬·지도 판·위치 신뢰도·도면–현장 차이·평면도 인식), 트랙 반영 제안 가운데 브리프 근거가 있는 것만 반영 |
+| 2026-09-25-17 | 요약 | [docs/categories/space-and-map-model/map-space-and-location-model.md](categories/space-and-map-model/map-space-and-location-model.md) | 6. 지도·공간·위치 모델: 영역 심화: 3~11절 신규 작성(좌표계 정렬·지도 판·위치 신뢰도·도면–현장 차이·평면도 인식), 트랙 반영 제안 가운데 브리프 근거가 있는 것만 반영 |
 | 2026-09-25-17 | 생성 | [docs/references/ref-154.md](references/ref-154.md) | 참고문헌 ref-154 등록: rmf_api_msgs — rmf_api_msgs/schemas/location_2D.json |
 | 2026-09-25-17 | 생성 | [docs/references/ref-153.md](references/ref-153.md) | 참고문헌 ref-153 등록: Fleet Adapter Tutorial - Programming Multiple Robots with RO… |
 | 2026-09-25-17 | 생성 | [docs/references/ref-155.md](references/ref-155.md) | 참고문헌 ref-155 등록: REP 105 -- Coordinate Frames for Mobile Platforms |
@@ -2149,12 +2149,12 @@ version: 1
 | 2026-09-25-16 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 10건 갱신 |
 | 2026-09-25-16 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-15 | 갱신 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 |
+| 2026-09-25-15 | 갱신 | [docs/categories/robot-ontology/robot-capability-and-task-representation.md](categories/robot-ontology/robot-capability-and-task-representation.md) | 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s7.md](topics/2026/2026-09-25-area05-s7.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,658자)을 옮겼다 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s6.md](topics/2026/2026-09-25-area05-s6.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "6. 대표 접근법과 기술" 절(1,396자)을 옮겼다 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s4.md](topics/2026/2026-09-25-area05-s4.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "4. 핵심 개념과 용어" 절(1,115자)을 옮겼다 |
 | 2026-09-25-15 | 생성 | [docs/topics/2026/2026-09-25-area05-s8.md](topics/2026/2026-09-25-area05-s8.md) | 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "8. 대표 연구와 자료" 절(1,010자)을 옮겼다 |
-| 2026-09-25-15 | 요약 | [docs/categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) | 5. 로봇 능력·작업 온톨로지: 영역 심화: 3~11절 신규 작성(능력·스킬 구분, VDA 5050 팩트시트·MassRobotics·Open-RMF 능력 선언, IDTA 02020·CaSkMan·SSN·IEEE 1872 계열·ISO 22166-201·KS B 7321-2, 적치 시나리오, 열린 질문 2건 신규·oq-004 연결), 트랙 반영 제안 3건 반영 |
+| 2026-09-25-15 | 요약 | [docs/categories/robot-ontology/robot-capability-and-task-representation.md](categories/robot-ontology/robot-capability-and-task-representation.md) | 5. 로봇 능력·작업 온톨로지: 영역 심화: 3~11절 신규 작성(능력·스킬 구분, VDA 5050 팩트시트·MassRobotics·Open-RMF 능력 선언, IDTA 02020·CaSkMan·SSN·IEEE 1872 계열·ISO 22166-201·KS B 7321-2, 적치 시나리오, 열린 질문 2건 신규·oq-004 연결), 트랙 반영 제안 3건 반영 |
 | 2026-09-25-15 | 생성 | [docs/references/ref-228.md](references/ref-228.md) | 참고문헌 ref-228 등록: VDA5050/VDA5050 — json_schemas/factsheet.schema |
 | 2026-09-25-15 | 생성 | [docs/references/ref-229.md](references/ref-229.md) | 참고문헌 ref-229 등록: IDTA 02020 Capability Description 1.0 — README (admin-shell-… |
 | 2026-09-25-15 | 생성 | [docs/references/ref-230.md](references/ref-230.md) | 참고문헌 ref-230 등록: MassRobotics-AMR/AMR_Interop_Standard — AMR_Interop_Standard… |
@@ -2175,13 +2175,13 @@ version: 1
 | 2026-09-25-15 | 생성 | [docs/glossary/asset-administration-shell.md](glossary/asset-administration-shell.md) | 용어집 항목 자산관리셸 |
 | 2026-09-25-15 | 생성 | [docs/glossary/shacl.md](glossary/shacl.md) | 용어집 항목 형상 제약 언어 |
 | 2026-09-25-15 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
-| 2026-09-25-14 | 갱신 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 영역 심화: 3~11절 신규 작성(성과 지표 표준, 흐름 법칙·병목 탐지·프로세스 마이닝, 가상 시나리오, ROP 경계, 연결 7개 영역, 열린 질문 4건+기존 2건), task_state.json 은 기존 ref-111 재사용 |
+| 2026-09-25-14 | 갱신 | [docs/categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 영역 심화: 3~11절 신규 작성(성과 지표 표준, 흐름 법칙·병목 탐지·프로세스 마이닝, 가상 시나리오, ROP 경계, 연결 7개 영역, 열린 질문 4건+기존 2건), task_state.json 은 기존 ref-111 재사용 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s8.md](topics/2026/2026-09-25-area04-s8.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "8. 대표 연구와 자료" 절(1,579자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s4.md](topics/2026/2026-09-25-area04-s4.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "4. 핵심 개념과 용어" 절(1,517자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s6.md](topics/2026/2026-09-25-area04-s6.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "6. 대표 접근법과 기술" 절(1,238자)을 옮겼다. 2차 수정: 각주 id 를 브리프 id 로 원복 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s7.md](topics/2026/2026-09-25-area04-s7.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,187자)을 옮겼다. 2차 수정: task_state 행은 기존 ref-111 재사용, 나머지 각주 id 를 브리프 id 로 원복 |
 | 2026-09-25-14 | 생성 | [docs/topics/2026/2026-09-25-area04-s11.md](topics/2026/2026-09-25-area04-s11.md) | 자동 분리: 4. 성과·경제성·프로세스 개선 의 "11. 열린 질문" 절(970자)을 옮겼다(2차 수정 없음) |
-| 2026-09-25-14 | 요약 | [docs/categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) | 4. 성과·경제성·프로세스 개선: 3~11절 신규 작성(ISO 22400·SCOR·WERC 지표, 리틀의 법칙·병목 탐지·프로세스 마이닝, ROP 계산 지표와 주문·재무 지표의 경계, 열린 질문 4건), task_state.json 은 기존 ref-111 재사용 |
+| 2026-09-25-14 | 요약 | [docs/categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | 4. 성과·경제성·프로세스 개선: 3~11절 신규 작성(ISO 22400·SCOR·WERC 지표, 리틀의 법칙·병목 탐지·프로세스 마이닝, ROP 계산 지표와 주문·재무 지표의 경계, 열린 질문 4건), task_state.json 은 기존 ref-111 재사용 |
 | 2026-09-25-14 | 생성 | [docs/references/ref-115.md](references/ref-115.md) | 참고문헌 ref-115 등록: Throughput bottleneck detection in manufacturing: a systemat… |
 | 2026-09-25-14 | 생성 | [docs/references/ref-139.md](references/ref-139.md) | 참고문헌 ref-139 등록: ISO 22400-2:2014 - Automation systems and integration — Key… |
 | 2026-09-25-14 | 생성 | [docs/references/ref-140.md](references/ref-140.md) | 참고문헌 ref-140 등록: SCOR Model — Performance: Reliability RL.1.1 Perfect Custome… |
@@ -2201,14 +2201,14 @@ version: 1
 | 2026-09-25-14 | 생성 | [docs/glossary/littles-law.md](glossary/littles-law.md) | 용어집 항목 리틀의 법칙 |
 | 2026-09-25-14 | 생성 | [docs/glossary/process-mining.md](glossary/process-mining.md) | 용어집 항목 프로세스 마이닝 |
 | 2026-09-25-14 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
-| 2026-09-25-13 | 갱신 | [docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 섹션 3~11 신규 작성(자동 분리 반영). 2차 수정: 각주 ref-138·ref-182 → ref-110·ref-111, 5절 시작 조건·9절 마지막 문장 사실/추정 분리, 9절 표 태그 추가, 7·8절 첫 문장 목록 서술로 변경, sources 에서 미인용 ref-131 제외 |
+| 2026-09-25-13 | 갱신 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 섹션 3~11 신규 작성(자동 분리 반영). 2차 수정: 각주 ref-138·ref-182 → ref-110·ref-111, 5절 시작 조건·9절 마지막 문장 사실/추정 분리, 9절 표 태그 추가, 7·8절 첫 문장 목록 서술로 변경, sources 에서 미인용 ref-131 제외 |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s4.md](topics/2026/2026-09-25-area01-s4.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "4. 핵심 개념과 용어" 절. 2차 수정: 각주 ref-182 → ref-111 |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s8.md](topics/2026/2026-09-25-area01-s8.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "8. 대표 연구와 자료" 절. 2차 수정: 첫 문장을 '이번 조사에서 확인한 자료는 … 이다'로 변경 |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s6.md](topics/2026/2026-09-25-area01-s6.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "6. 대표 접근법과 기술" 절. 2차 수정: 각주 ref-138 → ref-110, 번역 절 마지막 문장 사실/추정 분리 |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s11.md](topics/2026/2026-09-25-area01-s11.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "11. 열린 질문" 절(2차 수정 없음) |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s7.md](topics/2026/2026-09-25-area01-s7.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "7. 관련 표준·프레임워크·오픈소스" 절. 2차 수정: 각주 ref-138·ref-182 → ref-110·ref-111, 첫 문장 목록 서술로 변경 |
 | 2026-09-25-13 | 생성 | [docs/topics/2026/2026-09-25-area01-s3.md](topics/2026/2026-09-25-area01-s3.md) | 자동 분리: 1. 주문·업무 시스템 연계 의 "3. 왜 중요한가" 절(717자)을 옮겼다 |
-| 2026-09-25-13 | 요약 | [docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) | 1. 주문·업무 시스템 연계: 3~11절 신규 작성: 로봇 인터페이스의 주문 갱신·취소·일시정지·되감기, ISA-95 작업 지시·B2MML 거래 동사, 동적 주문 피킹 연구, 피킹 → 출하 시나리오, ROP 경계, 새 열린 질문 3건(2차 수정: 각주 ref-110·ref-111 정정, 사실·추정 분리) |
+| 2026-09-25-13 | 요약 | [docs/categories/integration/business-system-integration.md](categories/integration/business-system-integration.md) | 1. 주문·업무 시스템 연계: 3~11절 신규 작성: 로봇 인터페이스의 주문 갱신·취소·일시정지·되감기, ISA-95 작업 지시·B2MML 거래 동사, 동적 주문 피킹 연구, 피킹 → 출하 시나리오, ROP 경계, 새 열린 질문 3건(2차 수정: 각주 ref-110·ref-111 정정, 사실·추정 분리) |
 | 2026-09-25-13 | 생성 | [docs/references/ref-125.md](references/ref-125.md) | 참고문헌 ref-125 등록: rmf_api_msgs — rmf_api_msgs/schemas/task_request.json |
 | 2026-09-25-13 | 생성 | [docs/references/ref-126.md](references/ref-126.md) | 참고문헌 ref-126 등록: rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json |
 | 2026-09-25-13 | 생성 | [docs/references/ref-127.md](references/ref-127.md) | 참고문헌 ref-127 등록: rmf_api_msgs — rmf_api_msgs/schemas/interrupt_task_request.j… |
@@ -2254,12 +2254,12 @@ version: 1
 | 2026-09-25-11 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 5건 갱신 |
 | 2026-09-25-11 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-10 | 갱신 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
+| 2026-09-25-10 | 갱신 | [docs/categories/design-and-simulation/capacity-sizing-and-layout-design.md](categories/design-and-simulation/capacity-sizing-and-layout-design.md) | 3~11절 신규 작성(소요대수 산정 모델, 작업대·충전기·승강기 병목, 가상 시나리오, ROP 경계, 열린 질문 4건). 2차 수정: 8절 각주 보강, 10절 순위 문장 삭제·MRTA 범위 한정, 9절 사실·의견 분리, 11절 문구, sources 에서 ref-107 제외 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s8.md](topics/2026/2026-09-25-area03-s8.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 요약 문장 각주에 ref-097·ref-103 추가 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s6.md](topics/2026/2026-09-25-area03-s6.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 드리프트 문장 삭제, 태그 없는 주장 3문장에 태그·각주 |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s7.md](topics/2026/2026-09-25-area03-s7.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정 없음, ref-107 인용 페이지) |
 | 2026-09-25-10 | 생성 | [docs/topics/2026/2026-09-25-area03-s11.md](topics/2026/2026-09-25-area03-s11.md) | 자동 분리: 3. 처리능력·거점·설비 계획 의 "11. 열린 질문" 절을 옮겼다(2차 수정 없음) |
-| 2026-09-25-10 | 요약 | [docs/categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md) | 3. 처리능력·거점·설비 계획: 영역 심화로 3~11절 초안을 썼다(1차 조건부 승인 수정 13건, 2차 수정 지시 8건 이행) |
+| 2026-09-25-10 | 요약 | [docs/categories/design-and-simulation/capacity-sizing-and-layout-design.md](categories/design-and-simulation/capacity-sizing-and-layout-design.md) | 3. 처리능력·거점·설비 계획: 영역 심화로 3~11절 초안을 썼다(1차 조건부 승인 수정 13건, 2차 수정 지시 8건 이행) |
 | 2026-09-25-10 | 생성 | [docs/references/ref-096.md](references/ref-096.md) | 참고문헌 ref-096 등록: Estimating performance in a Robotic Mobile Fulfillment Syste… |
 | 2026-09-25-10 | 생성 | [docs/references/ref-097.md](references/ref-097.md) | 참고문헌 ref-097 등록: Inventory allocation in robotic mobile fulfillment systems |
 | 2026-09-25-10 | 생성 | [docs/references/ref-098.md](references/ref-098.md) | 참고문헌 ref-098 등록: Evaluating battery charging and swapping strategies in a rob… |
@@ -2280,14 +2280,14 @@ version: 1
 | 2026-09-25-10 | 생성 | [docs/glossary/semi-open-queueing-network.md](glossary/semi-open-queueing-network.md) | 용어집 항목 반개방형 대기행렬 네트워크 |
 | 2026-09-25-10 | 생성 | [docs/glossary/discrete-event-simulation.md](glossary/discrete-event-simulation.md) | 용어집 항목 이산 사건 시뮬레이션 |
 | 2026-09-25-10 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
-| 2026-09-25-09 | 갱신 | [docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 섹션 3~11 신규 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오), 페이지 상태 자동 영역 추가. 2차 수정: 5절 태그 강등 2건·예외 칸 태그 추가, 6절 요약 [의견], 프런트매터 sources 정리 |
+| 2026-09-25-09 | 갱신 | [docs/categories/planning-and-optimization/task-and-workflow-modeling.md](categories/planning-and-optimization/task-and-workflow-modeling.md) | 섹션 3~11 신규 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오), 페이지 상태 자동 영역 추가. 2차 수정: 5절 태그 강등 2건·예외 칸 태그 추가, 6절 요약 [의견], 프런트매터 sources 정리 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s4.md](topics/2026/2026-09-25-area02-s4.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 수정: ref-120 각주와 건전성의 교착·라이브락 문장을 빼고 ref-121 근거 문장으로 줄였다 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s6.md](topics/2026/2026-09-25-area02-s6.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 첫 문장을 [의견] 정리로 바꾸고 ref-120 문장을 ref-121 근거 문장으로 줄였다 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s7.md](topics/2026/2026-09-25-area02-s7.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,105자)을 옮겼다 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s8.md](topics/2026/2026-09-25-area02-s8.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "8. 대표 연구와 자료" 절(870자)을 옮겼다 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s11.md](topics/2026/2026-09-25-area02-s11.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "11. 열린 질문" 절(815자)을 옮겼다 |
 | 2026-09-25-09 | 생성 | [docs/topics/2026/2026-09-25-area02-s10.md](topics/2026/2026-09-25-area02-s10.md) | 자동 분리: 2. 공정·워크플로 모델링 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다(링크는 주제 페이지 위치 기준). 2차 수정: 7번 항목 [추정] 강등, 12번 항목 두 주장 분리, 1번 항목 ref-119 추가 |
-| 2026-09-25-09 | 요약 | [docs/categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) | 2. 공정·워크플로 모델링: 영역 심화 3~11절 초안 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오, 1차 조건부 승인 수정 13건과 2차 수정 지시 9건 반영) |
+| 2026-09-25-09 | 요약 | [docs/categories/planning-and-optimization/task-and-workflow-modeling.md](categories/planning-and-optimization/task-and-workflow-modeling.md) | 2. 공정·워크플로 모델링: 영역 심화 3~11절 초안 작성(BPMN·ISA-95/B2MML·Open-RMF 작업 단계·CBV 업무 단계·워크플로 넷·OCEL 2.0, 입고 → 적치·출하 시나리오, 1차 조건부 승인 수정 13건과 2차 수정 지시 9건 반영) |
 | 2026-09-25-09 | 생성 | [docs/references/ref-110.md](references/ref-110.md) | 참고문헌 ref-110 등록: Tasks in RMF (task_new) - Programming Multiple Robots with R… |
 | 2026-09-25-09 | 생성 | [docs/references/ref-111.md](references/ref-111.md) | 참고문헌 ref-111 등록: rmf_api_msgs — rmf_api_msgs/schemas/task_state.json |
 | 2026-09-25-09 | 생성 | [docs/references/ref-112.md](references/ref-112.md) | 참고문헌 ref-112 등록: About the Business Process Model And Notation Specification… |
@@ -2306,14 +2306,14 @@ version: 1
 | 2026-09-25-09 | 생성 | [docs/glossary/ocel.md](glossary/ocel.md) | 용어집 항목 객체 중심 이벤트 로그 |
 | 2026-09-25-09 | 생성 | [docs/glossary/b2mml.md](glossary/b2mml.md) | 용어집 항목 B2MML |
 | 2026-09-25-09 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
-| 2026-09-25-07 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가, 발행 시점 문장에 태그·각주. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
+| 2026-09-25-07 | 갱신 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | corr-001 반영: 7절 VDA 5050 행을 현행판 3.0.0·2.0.0 병기로 고치고 열람 표시 수정, 3.0.0 pick·drop 완료 정의와 loads 필드 설명 추가, 발행 시점 문장에 태그·각주. 11절 oq-007 보강(열림 유지). 13절 각주 ref-031·ref-032·ref-051·ref-052 추가. corr-002 거절(분류원문 보호, 1절 변경 없음) |
 | 2026-09-25-07 | 생성 | [docs/topics/2026/2026-09-25-area07-s7.md](topics/2026/2026-09-25-area07-s7.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,570자)을 옮겼다 |
-| 2026-09-25-07 | 요약 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 7. 화물·재고·자산 식별과 추적: corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 |
+| 2026-09-25-07 | 요약 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 7. 화물·재고·자산 식별과 추적: corr-001 반영(7절 VDA 5050 현행판 3.0.0·2.0.0 병기, 두 판 모두 loads·loadId 정의, 열람 표시 수정), corr-002 거절(사유: 분류원문 보호), 11절 oq-007 보강(열림 유지), 용어집 VDA 5050 정의 수정 |
 | 2026-09-25-07 | 생성 | [docs/references/ref-051.md](references/ref-051.md) | 참고문헌 ref-051 등록: VDA5050/VDA5050 — json_schemas/state.schema |
 | 2026-09-25-07 | 생성 | [docs/references/ref-052.md](references/ref-052.md) | 참고문헌 ref-052 등록: VDA5050/VDA5050 — README.md |
 | 2026-09-25-07 | 갱신 | [docs/glossary/vda-5050.md](glossary/vda-5050.md) | 용어집 항목 VDA 5050 |
-| 2026-09-25-07 | 정정 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 정정 요청 corr-002 거절: 요청 대상 문장은 분류 원문(부록 A)의 세부영역 정의로 [분류원문] 보호 대상이라 정정할 수 없다. 요청이 말한 식별 수단(GS1-128 바코… |
-| 2026-09-25-07 | 정정 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 정정 요청 corr-001 반영 |
+| 2026-09-25-07 | 정정 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 정정 요청 corr-002 거절: 요청 대상 문장은 분류 원문(부록 A)의 세부영역 정의로 [분류원문] 보호 대상이라 정정할 수 없다. 요청이 말한 식별 수단(GS1-128 바코… |
+| 2026-09-25-07 | 정정 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 정정 요청 corr-001 반영 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | q1-01 답함(공개 평면도 인식 데이터셋·모델), 후속 질문 3건(q1-05·q2-04·q4-05), 완료 조건 1 미충족·2 충족(막힌 질문 q1-02~q1-05), 상태 줄 갱신, 4절 결론 종합 판단 [추정] 처리, 출처 17건(ref-062~ref-078로 재부여), 이력 행 추가 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | 초안 v0 → v0.1: H1 버전 표기 v0.1, 창문·난간 개념 추가, 관계 '공간 노드 / 인접한다(문 없이) / 공간 노드' 추가, 공간 노드에 방 유형 속성, 벽·문·계단·공간 노드 확정, 에스컬레이터 등 6절 질문 추가(각주 ref-062~ref-078 체계) |
 | 2026-09-25-05 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 단계 1 선행 연구·데이터셋 비교표(11종), 관련 모델·로봇 적용 연구, 한계를 싣고 제품 사례는 미조사(q1-02)로 명시, LLM·VLM 약어 풀어 씀, 프런트매터 sources(ref-062~ref-078) 추가 |
@@ -2341,11 +2341,11 @@ version: 1
 | 2026-09-25-05 | 생성 | [docs/glossary/panoptic-symbol-spotting.md](glossary/panoptic-symbol-spotting.md) | 용어집 항목 파놉틱 심볼 스포팅 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 4건 갱신 |
 | 2026-09-25-05 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | q1-01 답함(분해 접근 여섯 유형·접근별 내용·사람에게 남는 일), 후속 질문 q1-05, 완료 조건 미충족, 출처 17건(2차 재실행에서 내용 변경 없음) |
-| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/task-model-draft.md](tracks/nl-task-chatbot/task-model-draft.md) | 초안 v0 → v0.1: 개념 로봇 팀(Coalition) 확정 추가(f9), 거부된 제안 3건을 6절 미해결 모델링 질문으로(2차: 6절 일곱 접근 범위 한정, Lang2LTL 서술 수정, PDDL·LTL 풀어쓰기) |
-| 2026-09-25-04 | 갱신 | [docs/ideas/nl-task-chatbot.md](ideas/nl-task-chatbot.md) | 3절 선행 연구 쪽 작성(분해 결과 형태 여섯 유형, 사람에게 남는 일, 물류 적용 한계), 제품 사례 미조사 명시(2차: 표의 PDDL·LTL 풀어쓰기, 둘째·셋째 항목에 '이 위키의 정리' 표시) |
-| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/index.md](tracks/nl-task-chatbot/index.md) | 상태 줄 마지막 트랙 실행 2026-09-25, 6절 초안 버전 v0.1 반영(2차 재실행에서 내용 변경 없음) |
-| 2026-09-25-04 | 요약 | [docs/tracks/nl-task-chatbot/stage-1-prior-work-and-products.md](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-01 답함(자연어 지시 분해 접근 여섯 유형), 후속 질문 q1-05, 업무 분해·배정 설계 초안 v0.1(로봇 팀 추가) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | q1-01 답함(분해 접근 여섯 유형·접근별 내용·사람에게 남는 일), 후속 질문 q1-05, 완료 조건 미충족, 출처 17건(2차 재실행에서 내용 변경 없음) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0 → v0.1: 개념 로봇 팀(Coalition) 확정 추가(f9), 거부된 제안 3건을 6절 미해결 모델링 질문으로(2차: 6절 일곱 접근 범위 한정, Lang2LTL 서술 수정, PDDL·LTL 풀어쓰기) |
+| 2026-09-25-04 | 갱신 | [docs/ideas/chat-based-configuration-and-operation.md](ideas/chat-based-configuration-and-operation.md) | 3절 선행 연구 쪽 작성(분해 결과 형태 여섯 유형, 사람에게 남는 일, 물류 적용 한계), 제품 사례 미조사 명시(2차: 표의 PDDL·LTL 풀어쓰기, 둘째·셋째 항목에 '이 위키의 정리' 표시) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/index.md](tracks/chat-based-configuration-and-operation/index.md) | 상태 줄 마지막 트랙 실행 2026-09-25, 6절 초안 버전 v0.1 반영(2차 재실행에서 내용 변경 없음) |
+| 2026-09-25-04 | 요약 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 자연어 업무 지시 챗봇 단계 1: q1-01 답함(자연어 지시 분해 접근 여섯 유형), 후속 질문 q1-05, 업무 분해·배정 설계 초안 v0.1(로봇 팀 추가) |
 | 2026-09-25-04 | 생성 | [docs/references/ref-087.md](references/ref-087.md) | 참고문헌 ref-087 등록: SayCan (google-research/saycan README) |
 | 2026-09-25-04 | 생성 | [docs/references/ref-088.md](references/ref-088.md) | 참고문헌 ref-088 등록: Do As I Can, Not As I Say: Grounding Language in Robotic Aff… |
 | 2026-09-25-04 | 생성 | [docs/references/ref-053.md](references/ref-053.md) | 참고문헌 ref-053 등록: progprompt-vh — ProgPrompt: Generating Situated Robot Task P… |
@@ -2366,10 +2366,10 @@ version: 1
 | 2026-09-25-04 | 생성 | [docs/glossary/task-decomposition.md](glossary/task-decomposition.md) | 용어집 항목 작업 분해 |
 | 2026-09-25-04 | 생성 | [docs/glossary/behavior-tree.md](glossary/behavior-tree.md) | 용어집 항목 행동 트리 |
 | 2026-09-25-04 | 생성 | [docs/glossary/linear-temporal-logic.md](glossary/linear-temporal-logic.md) | 용어집 항목 선형 시간 논리 |
-| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/question-backlog.md](tracks/nl-task-chatbot/question-backlog.md) | 백로그 항목 5건 갱신 |
-| 2026-09-25-04 | 갱신 | [docs/tracks/nl-task-chatbot/log.md](tracks/nl-task-chatbot/log.md) | 트랙 로그 항목 추가(단계 1) |
+| 2026-09-25-04 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/question-backlog.md](tracks/chat-based-configuration-and-operation/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-09-25-04 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/log.md](tracks/chat-based-configuration-and-operation/log.md) | 트랙 로그 항목 추가(단계 1) |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 신규 작성: 로봇 적재·하역 완료 신호를 EPCIS 이벤트 필드(readPoint·bizLocation·source/destination)로 나누는 방법과 CBV 정의 한계, 식별 수준 비교, 매핑 부재. 2차 수정: 4절 끝 문장 태그·각주, 약어 첫 등장 풀어 쓰기 |
-| 2026-09-25-03 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건 |
+| 2026-09-25-03 | 갱신 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 4절 인계 맥락 유형에 ref-044 각주 추가, 6절 이벤트 기반 추적에 readPoint·bizLocation 구분과 CBV loading 정의 한계·새 주제 페이지 링크 추가(분량 초과 시 요약은 절 내용 요약 2문장), 7절 EPCIS·CBV 열람 표시 분리와 Oliot EPCIS 행 추가, 11절 새 질문 2건 |
 | 2026-09-25-03 | 생성 | [docs/topics/2026/2026-09-25-area07-s6.md](topics/2026/2026-09-25-area07-s6.md) | 자동 분리: 7. 화물·재고·자산 식별과 추적 의 "6. 대표 접근법과 기술" 절(775자)을 옮겼다 |
 | 2026-09-25-03 | 요약 | [docs/topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md](topics/2026/2026-09-25-epcis-event-design-for-robot-handover.md) | 7. 화물·재고·자산 식별과 추적: 주제 페이지 '로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가' 신규 작성, 영역 페이지 4·6·7·11절 갱신(Oliot EPCIS 행, 새 열린 질문 2건) |
 | 2026-09-25-03 | 생성 | [docs/references/ref-044.md](references/ref-044.md) | 참고문헌 ref-044 등록: gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontol… |
@@ -2413,9 +2413,9 @@ version: 1
 | 2026-09-25-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 7건 추가·갱신 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 7건 갱신 |
 | 2026-09-25-02 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 1) |
-| 2026-09-25-01 | 갱신 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 영역 심화: 섹션 3~11 신규 작성, 상태 줄 추가, 각주 15건 정의. 2차 재수정: 중복 문장 축소(3·5·7·8·9·10·11절), 6절 로봇 적재 보고 소제목을 주제 페이지로 분리하고 링크, 7절 약어 정리 |
+| 2026-09-25-01 | 갱신 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 영역 심화: 섹션 3~11 신규 작성, 상태 줄 추가, 각주 15건 정의. 2차 재수정: 중복 문장 축소(3·5·7·8·9·10·11절), 6절 로봇 적재 보고 소제목을 주제 페이지로 분리하고 링크, 7절 약어 정리 |
 | 2026-09-25-01 | 생성 | [docs/topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md](topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md) | 신규 작성: 7. 화물·재고·자산 식별과 추적 6절의 로봇 관제 인터페이스 적재·하역 보고(VDA 5050 loads, Open-RMF 워크셀 결과)와 인계 확인 추론을 분량 기준에 따라 분리 |
-| 2026-09-25-01 | 요약 | [docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) | 7. 화물·재고·자산 식별과 추적: 영역 심화 초안: 3~11절 신규 작성(GS1 식별 키, EPCIS·CBV 이벤트, 출하 인계 시나리오), 로봇 적재·하역 보고와 인계 확인을 주제 페이지로 분리 |
+| 2026-09-25-01 | 요약 | [docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 7. 화물·재고·자산 식별과 추적: 영역 심화 초안: 3~11절 신규 작성(GS1 식별 키, EPCIS·CBV 이벤트, 출하 인계 시나리오), 로봇 적재·하역 보고와 인계 확인을 주제 페이지로 분리 |
 | 2026-09-25-01 | 생성 | [docs/references/ref-011.md](references/ref-011.md) | 참고문헌 ref-011 등록: ISO/IEC 19987:2024 - Information technology — EPC Informatio… |
 | 2026-09-25-01 | 생성 | [docs/references/ref-012.md](references/ref-012.md) | 참고문헌 ref-012 등록: ISO/IEC 19988:2024 - Information technology — GS1 Core Busin… |
 | 2026-09-25-01 | 생성 | [docs/references/ref-013.md](references/ref-013.md) | 참고문헌 ref-013 등록: EPCIS 2.0 and EPCIS 1.2 \| OpenEPCIS Docs |

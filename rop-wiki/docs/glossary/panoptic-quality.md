@@ -4,7 +4,7 @@ type: glossary
 term_ko: 파놉틱 품질
 term_en: Panoptic Quality (PQ)
 definition: 매칭된 인스턴스의 평균 IoU(분할 품질)와 TP/(TP+0.5FP+0.5FN)(인식 품질)의 곱으로, 요소를 맞게 찾았는지와 모양을 정확히 잡았는지를 함께 재는 지표다.
-related_areas: [27, 6]
+related_areas: [15, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ FloorPlanCAD 계열의 파놉틱 심볼 스포팅은 의미 라벨이 같고 IoU
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
 
 ## 출처
 

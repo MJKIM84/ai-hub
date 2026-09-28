@@ -14,9 +14,9 @@
 - 형식은 YAML 이고 인코딩은 UTF-8 이다. 파이썬 `yaml.safe_load` 로 읽히지 않으면 실행이 준비 단계에서 멈추고 로그에 남는다 [가정: 사양서 7.3 은 설정 파일 오류의 처리를 정하지 않는다. 7.2 의 준비 단계(설정 로드)에서 잘못된 설정으로 진행하지 않도록 "웹 도구 없음"과 같이 즉시 중단·로그로 다룬다].
 - 상대 경로는 모두 위키 루트(`rop-wiki/`) 기준이다. `settings.yaml` 의 `repo_root` 만 git 저장소 루트를 가리키는 예외다.
 - 실행 스크립트는 이 폴더의 파일을 다시 쓰지 않는다. 유일한 예외는 퍼블리셔의 단계 전환 기록이다: 2차 검증의 `track_checks.stage_transition_approved` 가 true 이고 `pages.json` 의 `track_updates.stage_transition` 이 있으면 `tracks/<slug>.yaml` 의 `current_stage` 를 `to_stage` 로 올리고, 단계 7 이 끝났으면 `status` 를 `done` 으로 바꾸며, 선택 키 `stage_status`·`stage_completion`(`pipeline/lib/render.py` 가 읽는 값)을 기록할 수 있다. 그 밖의 키와 다른 파일은 건드리지 않는다. 사양서 8.2 의 단계 전환 상태를 어디에 기록하는지는 사양서에 없어 구축자가 정했다 [가정].
-- 세부영역은 데이터에서는 번호(`area_no`)로 적지만, 사람이 읽는 주석·로그·페이지에서는 항상 번호와 이름을 함께 쓴다. 예: `7. 화물·재고·자산 식별과 추적`.
+- 세부영역은 데이터에서는 번호(`area_no`)로 적지만, 사람이 읽는 주석·로그·페이지에서는 항상 번호와 이름을 함께 쓴다. 예: `17. 작업 대상·자산 식별과 인계 추적`. 번호는 2026-09-28 개정 분류의 1~67 이다.
 - `[가정]` 이 붙은 값은 사양서에 수치나 기준이 없어 구축자가 정한 것이다. 바꿔도 사양서와 어긋나지 않는다.
-- 분류 원문(`_source/ROP_SCM_연구분야_분류.md`)의 명칭·번호·정의·질문은 설정으로 바꿀 수 없고, 세부영역을 더하거나 합치는 설정도 없다.
+- 분류 원문(`_source/ROP_연구분야_분류.md`, 2026-09-28 개정판. 17개 대분류·67개 세부영역. 개정 전 원문은 `_source/archive/` 에 보관)의 명칭·번호·정의·질문은 설정으로 바꿀 수 없고, 세부영역을 더하거나 합치는 설정도 없다.
 
 ## `settings.yaml` — 전역 설정
 
@@ -26,7 +26,7 @@
 
 | 항목 | 기본값 | 뜻 | 읽는 곳 |
 |---|---|---|---|
-| `wiki_name` | `"ROP 연구 위키"` | 표시 이름. 부제는 "SCM 관점의 로봇 오케스트레이션 플랫폼 연구" | 사이트 설정, 로그 |
+| `wiki_name` | `"ROP 연구 위키"` | 표시 이름. 부제는 "로봇 오케스트레이션 플랫폼 기술 지형도"(2026-09-28 분류 개정으로 바꿨다) | 사이트 설정, 로그 |
 | `repo_path` | `"./rop-wiki"` | 저장소 루트에서 본 위키 폴더 경로 | 스케줄 파일, README |
 | `storage` | `"markdown+git"` | 저장 방식. 다른 저장소로 바꿔도 4~7장의 구조와 규칙은 유지한다 | 퍼블리셔 |
 | `site_generator` | `"mkdocs-material"` | 정적 사이트 생성기. 바꿔도 4.8 의 내비게이션 순서를 재현한다 | 퍼블리셔 |
@@ -35,7 +35,7 @@
 | `run_time` | `"06:00 Asia/Seoul"` | 매일 1회 실행 시각 | 스케줄 등록 파일 |
 | `language` | `"ko"` | 본문 언어. 전문용어는 첫 등장 시 영문 병기 | 에이전트 실행 컨텍스트 |
 | `checkpoints` | `true` | 9장의 멈춤 지점 2곳에서 사용자 확인을 받는지 | 구축 절차 |
-| `tracks` | `["manual-capability-ontology"]` | 활성 중점 연구 트랙 slug 목록. 정의는 `tracks/<slug>.yaml` | `select_target.*`, 퍼블리셔 |
+| `tracks` | `["manual-capability-ontology", "chat-based-configuration-and-operation", "floorplan-recognition"]` | 활성 중점 연구 트랙 slug 목록. 정의는 `tracks/<slug>.yaml`(2026-09-28: `nl-task-chatbot` → `chat-based-configuration-and-operation`. `track_weights` 의 키도 같은 slug 다) | `select_target.*`, 퍼블리셔 |
 | `track_runs_per_week` | `2` | 주 7회 실행 중 트랙에 배정하는 횟수. 7이면 트랙 단계가 끝날 때까지 트랙만 실행. `tracks/<slug>.yaml` 의 `runs_per_week` 가 비어 있을 때 쓰는 값이다(8.2). 이 두 곳 외에 주당 트랙 실행 횟수를 정하는 설정은 없다 | `select_target.*` |
 | `daily_budget.new_topic_pages` | `1` | 하루 신규 주제 페이지 상한 | 스토리텔러 컨텍스트, 퍼블리셔 |
 | `daily_budget.page_updates` | `2` | 하루 기존 페이지 갱신 상한 | 스토리텔러 컨텍스트, 퍼블리셔 |
@@ -88,7 +88,7 @@
 | 항목 | 기본값 | 뜻 |
 |---|---|---|
 | `cycle1.run_type` | `area_deep_dive` | 1주기의 실행 유형 |
-| `cycle1.order` | `[1, …, 28]` | 1주기 순서. 1. 주문·업무 시스템 연계부터 28. 표준·상호운용성·다사업자 거버넌스까지 번호순 |
+| `cycle1.order` | `[1, …, 67]` | 1주기 순서. 1. 기술·시장·업체 동향부터 67. 기타 현장까지 번호순(2026-09-28 개정 분류) |
 | `cycle1.rule` | `"status seed 인 최저 번호 영역"` | `order` 를 따라가되 세부영역 페이지 프런트매터의 `status` 가 `seed` 인 것 가운데 가장 낮은 번호를 고른다. `exclude_after_consecutive_parks` 로 제외된 영역은 `seed` 로 남아 있어도 건너뛴다. 제외되지 않은 `seed` 영역이 하나도 없으면(남은 `seed` 가 모두 제외 영역인 경우 포함) 1주기가 끝난 것으로 보고 `cycle2` 로 넘어간다. 제외 영역은 제외가 풀릴 때까지 2주기에서도 대상이 되지 않는다 [가정: 1주기 종료 판정 기준 — 사양서의 "첫 28회 실행"을 실행 횟수가 아니라 페이지 `status` 로 판정한다] |
 | `cycle2.default_run_type` | `topic` | 2주기의 기본 실행 유형은 주제 조사다 |
 | `corrections.include_update` | `true` | `inbox/corrections.md` 에 `open` 요청이 걸린 페이지가 있으면 그 페이지의 갱신을 당일 작업에 포함한다. 대상 선정 자체는 바꾸지 않고 `daily_budget.page_updates` 안에서 처리한다(넘치면 다음 해당 실행으로). 사양서 7.1 은 이 문장을 2주기 항목에 두지만 정정 요청은 1주기·우선 지정 실행 중에도 들어오므로 실행 주기와 관계없이 적용한다(`docs/corrections.md` 의 처리 흐름과 같다) [가정] |
@@ -116,7 +116,7 @@
 |---|---|---|
 | 마지막 갱신 경과일 | 세부영역 페이지 프런트매터 `updated` | 오늘 − `updated` (일) |
 | 열린 질문 수 | `data/open_questions.json` | 상태가 열림·조사 중이고 관련 영역에 그 영역이 포함된 항목 수 |
-| 비어 있는 매트릭스 칸 수 | `data/flow_matrix.json` | 42칸(입고 → 적치 → 보충 → 피킹 → 포장 → 출하 → 반품 × 시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과) 가운데 그 영역의 페이지 링크가 없는 칸 수 |
+| 비어 있는 매트릭스 칸 수(`scoring.weights.empty_matrix_cells`) | `data/site_matrix.json` | 현장 유형 7개(물류창고·제조 공장·병원·상업 시설·가정·실외·기타) 가운데 그 영역의 적용 사례(페이지 링크)가 하나도 없는 현장 유형 수(0~7). 매트릭스는 현장 유형 × 대분류(A~Q)이며 칸마다 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)을 기록한다. 2026-09-28 개정 전에는 흐름 매트릭스(7단계 × 6항목 42칸)였다 |
 | 우선 가중치 | `config/priority.yaml` | `areas[].weight` + `topics[].weight`(같은 `area_no`) + `questions` 항목 수 × `priority.question_weight`. 우선 항목은 보통 `priority` 단계에서 먼저 선정되므로, 이 항은 `skip_if_targeted_within_days` 로 건너뛴 항목이 2주기 점수에 남기는 보조 가중치다 |
 | 최근 감점 | `runs/*/target.json`·`summary.json` | 최근 `recent_penalty_days` 일 안에 게시까지 간 비트랙 실행의 대상이면 `recent_penalty` 를 한 번 뺀다(보류·중단된 실행은 세지 않는다) |
 
@@ -133,7 +133,7 @@
 
 유의점은 다음과 같다.
 
-- `area_no` 는 1~28 이다. 주석에 영역 이름을 함께 적는다. 예: `area_no: 7  # 7. 화물·재고·자산 식별과 추적`.
+- `area_no` 는 1~67 이다. 주석에 영역 이름을 함께 적는다. 예: `area_no: 17  # 17. 작업 대상·자산 식별과 인계 추적`.
 - 처리된 항목은 지워도 된다. 지우지 않으면 `rotation.yaml` 의 `priority.skip_if_targeted_within_days` 가 지난 뒤 다시 우선된다.
 - 우선 지정은 조사 대상을 정할 뿐 검증 규칙과 하루 예산을 바꾸지 않는다. 우선 항목이 예산보다 많으면 여러 날에 걸쳐 처리된다.
 - 틀린 문장의 정정은 이 파일이 아니라 `inbox/corrections.md` 에 적는다.
@@ -164,7 +164,7 @@
 python3 -c "import yaml,glob; [yaml.safe_load(open(p, encoding='utf-8')) for p in glob.glob('config/**/*.yaml', recursive=True)]; print('ok')"
 ```
 
-`priority.yaml` 은 네 키가 모두 있어야 하고, `area_no` 는 1~28, `track_questions[].stage` 는 그 트랙의 `stages` 이하여야 한다. `pipeline/select_target.*` 는 이 조건이 어긋나면 해당 항목을 무시하고 로그에 남긴다 [가정].
+`priority.yaml` 은 네 키가 모두 있어야 하고, `area_no` 는 1~67, `track_questions[].stage` 는 그 트랙의 `stages` 이하여야 한다. `pipeline/select_target.*` 는 이 조건이 어긋나면 해당 항목을 무시하고 로그에 남긴다 [가정].
 
 ## `[가정]` 목록
 
@@ -176,7 +176,7 @@ python3 -c "import yaml,glob; [yaml.safe_load(open(p, encoding='utf-8')) for p i
 - `rotation.precedence` — 트랙 실행일 → 월간 재검증 → 주간 정리 → 우선 지정 → 1주기 → 2주기 순. 트랙 실행일이 정기 실행보다 앞이므로, 이달 첫 실행·매 7번째 실행이 트랙 요일과 겹치면 정기 실행을 다음 비트랙 실행으로 미룬다(`deferred_periodic_runs`). 사양서 7.1 의 "매월 첫 실행"·"매 7번째 실행"과 글자 그대로는 다르며, 정기 실행을 앞세우면 트랙의 주당 횟수가 매주 하나씩 빠지기 때문에 택했다. 사용자 결정 항목이다(기본값: 트랙 우선·정기 실행 미룸 / 대안: 정기 실행 우선·그날의 트랙 실행 건너뜀).
 - `rotation.scoring.recent_penalty: 5`, 트랙 실행은 최근 감점에 세지 않음.
 - `rotation.track_days: [Tue, Fri]`.
-- `rotation.cycle1.rule` — 1주기 종료는 실행 횟수(28회)가 아니라 제외되지 않은 `status: seed` 세부영역이 남았는지로 판정한다. 남은 `seed` 가 모두 보류 3회로 제외된 영역이면 1주기가 끝난 것으로 보고 2주기로 넘어간다.
+- `rotation.cycle1.rule` — 1주기 종료는 실행 횟수(사양서의 "첫 28회", 개정 전 영역 수)가 아니라 제외되지 않은 `status: seed` 세부영역이 남았는지로 판정한다. 남은 `seed` 가 모두 보류 3회로 제외된 영역이면 1주기가 끝난 것으로 보고 2주기로 넘어간다.
 - `rotation.weekly_review_every` 의 실행 번호는 `runs/<DATE>-<NN>/` 과 `runs/parked/<DATE>-<NN>/` 의 실행 id 수로 센다(같은 id 는 한 번). 미룬 정기 실행도 실행 번호 세기를 바꾸지 않는다.
 - 주당 트랙 실행 횟수는 `tracks/<slug>.yaml` 의 `runs_per_week` → `settings.track_runs_per_week` 순으로 정하고 `rotation.yaml` 에는 두지 않는다. 활성 트랙이 여럿이고 값이 다르면 가장 큰 값.
 - `rotation.priority.*` — 우선 항목이 여럿일 때의 선택, 실행 유형, 7일 건너뛰기. `questions` 항목은 사양서 7.1 대로 `areas` 와 같이 해당 영역을 우선 대상으로 올리며, 그 가중치는 3.

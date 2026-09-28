@@ -4,7 +4,7 @@ type: glossary
 term_ko: 고장 탐지·진단
 term_en: Fault Detection and Diagnosis (FDD)
 definition: 시스템에 고장이 생겼음을 알아내고(탐지) 그 종류와 위치·원인을 밝히는(진단) 기법의 총칭이다.
-related_areas: [19]
+related_areas: [38]
 tags: []
 status: published
 confidence: low
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [19. 모니터링·이상 탐지·원인 분석](../categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md)
+- [38. 모니터링·이상 탐지·원인 분석](../categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 스케줄 간 의존
 term_en: Cross-schedule Dependency (XD)
 definition: 서로 다른 로봇에 배정된 작업 사이에 선후 같은 관계가 있어, 한 로봇의 작업 적합성이 다른 로봇의 일정에 따라 달라지는 작업 의존 유형이다.
-related_areas: [17, 13, 14]
+related_areas: [25, 26, 30]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Korsah·Stentz·Dias(2013)의 MRTA 분류 iTax 는 작업 의존을 ND·ID·XD·
 
 ## 관련 영역
 
-- [17. 로봇 간 협업·물리적 인계](../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
+- [30. 로봇 간 협업·물리적 인계](../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
 
 ## 출처
 

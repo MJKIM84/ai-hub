@@ -14,58 +14,124 @@ DOCS: Path = ROOT / "docs"
 DATA: Path = ROOT / "data"
 RUNS: Path = ROOT / "runs"
 CONFIG: Path = ROOT / "config"
-SOURCE_FILE: Path = ROOT / "_source" / "ROP_SCM_연구분야_분류.md"
+SOURCE_FILE: Path = ROOT / "_source" / "ROP_연구분야_분류.md"
+# 2026-09-28 개정 전 원문(보관본). [옛 분류원문] 태그 줄은 이 파일과 대조한다
+OLD_SOURCE_FILE: Path = ROOT / "_source" / "archive" / "ROP_SCM_연구분야_분류_2026-09-24.md"
 MKDOCS_YML: Path = ROOT / "mkdocs.yml"
 SOURCE_HASH_FILE: Path = ROOT / "pipeline" / "checks" / "source.sha256"
 
-# 대분류 폴더 slug (docs/categories/<slug>/index.md)
+# 대분류 폴더 slug (docs/categories/<slug>/index.md). 2026-09-28 개정: 17개 대분류, 문자 접두어 없는 slug
 CATEGORY_SLUGS: dict[str, str] = {
-    "A": "a-business-supply-chain-design",
-    "B": "b-common-information-and-environment-model",
-    "C": "c-connectivity-and-execution-foundation",
-    "D": "d-planning-and-optimization",
-    "E": "e-collaboration-and-field-operations",
-    "F": "f-deployment-verification-and-maintenance",
-    "G": "g-safety-security-intelligence-and-governance",
+    "A": "planning-and-business",
+    "B": "robot-ontology",
+    "C": "chat-based-configuration-and-operation",
+    "D": "space-and-map-model",
+    "E": "objects-people-and-live-state",
+    "F": "integration",
+    "G": "planning-and-optimization",
+    "H": "execution-collaboration-and-recovery",
+    "I": "design-and-simulation",
+    "J": "field-operations-and-monitoring",
+    "K": "platform-architecture-and-infrastructure",
+    "L": "ai-and-learning",
+    "M": "safety",
+    "N": "security-and-privacy",
+    "O": "verification-deployment-and-lifecycle",
+    "P": "governance-law-and-society",
+    "Q": "site-type-applications",
 }
 CATEGORY_LETTERS: list[str] = list(CATEGORY_SLUGS)
 
 # 대분류별 세부영역 번호 범위 (포함)
 CATEGORY_AREA_RANGES: dict[str, tuple[int, int]] = {
-    "A": (1, 4), "B": (5, 8), "C": (9, 12), "D": (13, 16),
-    "E": (17, 20), "F": (21, 24), "G": (25, 28),
+    "A": (1, 3),
+    "B": (4, 7),
+    "C": (8, 13),
+    "D": (14, 16),
+    "E": (17, 19),
+    "F": (20, 23),
+    "G": (24, 28),
+    "H": (29, 32),
+    "I": (33, 36),
+    "J": (37, 40),
+    "K": (41, 43),
+    "L": (44, 47),
+    "M": (48, 50),
+    "N": (51, 53),
+    "O": (54, 57),
+    "P": (58, 60),
+    "Q": (61, 67),
 }
 
-# 세부영역 파일 slug (확장자 제외)
+# 세부영역 파일 slug (확장자 제외). 2026-09-28 개정: 67개 영역, 번호 접두어 없는 slug(번호가 바뀌어도 주소 유지)
 AREA_SLUGS: dict[int, str] = {
-    1: "01-order-and-business-system-integration",
-    2: "02-process-and-workflow-modeling",
-    3: "03-capacity-site-and-facility-planning",
-    4: "04-performance-economics-and-process-improvement",
-    5: "05-robot-capability-and-task-ontology",
-    6: "06-map-space-and-location-model",
-    7: "07-cargo-inventory-and-asset-identification-and-tracking",
-    8: "08-real-time-world-state-and-data-consistency",
-    9: "09-robot-and-vendor-fleet-manager-integration",
-    10: "10-facility-and-building-system-integration",
-    11: "11-distributed-systems-communication-and-computing",
-    12: "12-command-and-task-execution-reliability",
-    13: "13-task-allocation-mrta",
-    14: "14-task-sequencing-and-scheduling",
-    15: "15-multi-robot-path-and-traffic-management-mapf",
-    16: "16-shared-resource-charging-and-energy-optimization",
-    17: "17-robot-to-robot-collaboration-and-physical-handover",
-    18: "18-human-robot-collaboration-and-operator-interface",
-    19: "19-monitoring-anomaly-detection-and-root-cause-analysis",
-    20: "20-exception-recovery-replanning-and-business-continuity",
-    21: "21-onboarding-configuration-and-commissioning",
-    22: "22-simulation-and-predictive-digital-twin",
-    23: "23-testing-formal-verification-and-benchmarking",
-    24: "24-asset-and-software-lifecycle-management",
-    25: "25-safety-and-risk-management",
-    26: "26-cybersecurity-access-control-and-privacy",
-    27: "27-ai-learning-adaptation-and-model-operations",
-    28: "28-standards-interoperability-and-multi-vendor-governance",
+    1: "technology-market-and-vendor-trends",
+    2: "use-cases-requirements-and-scope",
+    3: "economics-procurement-and-business-models",
+    4: "heterogeneous-robot-registration",
+    5: "robot-capability-and-task-representation",
+    6: "ontology-based-system-and-robot-integration",
+    7: "ontology-verification-and-change-management",
+    8: "chat-map-authoring",
+    9: "chat-scenario-composition",
+    10: "chat-robot-configuration",
+    11: "chat-real-situation-simulation-replay",
+    12: "chat-task-instruction-and-orchestration",
+    13: "conversational-trust-and-foundations",
+    14: "maps-from-floor-plans-and-bim",
+    15: "map-space-and-location-model",
+    16: "place-semantics-and-map-management",
+    17: "work-object-and-asset-identification-and-handover-tracking",
+    18: "real-time-world-state-and-data-consistency",
+    19: "people-and-pedestrian-model",
+    20: "robot-and-vendor-fleet-manager-integration",
+    21: "interoperability-standards-and-conformance",
+    22: "facility-and-building-system-integration",
+    23: "business-system-integration",
+    24: "task-and-workflow-modeling",
+    25: "task-allocation-mrta",
+    26: "task-sequencing-and-scheduling",
+    27: "multi-robot-path-and-traffic-management-mapf",
+    28: "shared-resource-charging-and-energy-optimization",
+    29: "command-and-task-execution-reliability",
+    30: "robot-to-robot-collaboration-and-physical-handover",
+    31: "human-robot-collaboration",
+    32: "exception-recovery-replanning-and-business-continuity",
+    33: "scenario-model-and-editing",
+    34: "simulation-and-predictive-digital-twin",
+    35: "capacity-sizing-and-layout-design",
+    36: "virtual-commissioning-and-real-situation-replay",
+    37: "control-screen-and-execution-records",
+    38: "monitoring-anomaly-detection-and-root-cause-analysis",
+    39: "operational-performance-measurement-and-improvement",
+    40: "operating-procedures-and-request-channels",
+    41: "platform-architecture-and-external-api",
+    42: "distributed-systems-communication-and-computing",
+    43: "data-observability-and-deployment",
+    44: "robot-foundation-models-and-llm-planning",
+    45: "document-drawing-and-scene-understanding",
+    46: "prediction-and-learning-based-optimization",
+    47: "ai-learning-adaptation-and-model-operations",
+    48: "safety-and-risk-management",
+    49: "human-proximity-safety",
+    50: "safety-standards-certification-and-incident-investigation",
+    51: "authentication-authorization-and-isolation",
+    52: "communication-protection-threat-management-and-audit",
+    53: "privacy-and-video-data",
+    54: "testing-formal-verification-and-benchmarking",
+    55: "site-survey-installation-and-commissioning",
+    56: "operations-handover-scale-out-and-training",
+    57: "asset-and-software-lifecycle-management",
+    58: "multi-party-responsibility-contracts-and-data",
+    59: "law-regulation-insurance-and-licensing",
+    60: "labor-acceptance-and-accessibility",
+    61: "warehouse",
+    62: "manufacturing-plant",
+    63: "hospital-and-healthcare",
+    64: "commercial-facilities",
+    65: "home-and-apartment",
+    66: "outdoor",
+    67: "other-sites",
 }
 AREA_NOS: list[int] = sorted(AREA_SLUGS)
 
@@ -92,8 +158,9 @@ DEFAULT_DRAFT_VERSIONS: str = "ontology_versions.json"
 IDEAS_DIR: str = "ideas"
 IDEAS_INDEX: str = "ideas/index.md"
 
-# 물류 흐름 매트릭스 축 (원문 11장)
-FLOW_STEPS: list[str] = ["입고", "적치", "보충", "피킹", "포장", "출하", "반품"]
+# 현장 유형 × 대분류 적용 사례 매트릭스의 축 (원문 21장 연구 방법)
+SITE_TYPES: list[str] = ["물류창고", "제조 공장", "병원", "상업 시설", "가정", "실외", "기타"]
+# 적용 사례마다 채우는 여섯 항목 (원문 21장)
 FLOW_ITEMS: list[str] = ["시작 조건", "작업 대상", "수행 자원", "제약", "완료·인계", "예외·성과"]
 
 

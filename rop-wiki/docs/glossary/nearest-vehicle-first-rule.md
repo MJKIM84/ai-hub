@@ -4,7 +4,7 @@ type: glossary
 term_ko: 최근접 차량 우선 규칙
 term_en: Nearest Vehicle First (NVF) Rule
 definition: 운반 요청이 생기면 요청 위치까지 이동 거리가 가장 짧은 유휴 차량·로봇에 작업을 맡기는 배차 규칙이다.
-related_areas: [13]
+related_areas: [25]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

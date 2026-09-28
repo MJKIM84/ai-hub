@@ -4,7 +4,7 @@ type: glossary
 term_ko: 우선순위 상속·되돌림
 term_en: Priority Inheritance with Backtracking (PIBT)
 definition: 매 시간 단계마다 에이전트에 우선순위를 주고 우선순위 상속과 되돌림으로 한 걸음씩 이동을 정하는 반복형 MAPF 방법이다.
-related_areas: [15]
+related_areas: [27]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

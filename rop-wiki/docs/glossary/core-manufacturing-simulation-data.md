@@ -4,7 +4,7 @@ type: glossary
 term_ko: 핵심 제조 시뮬레이션 데이터
 term_en: Core Manufacturing Simulation Data (CMSD)
 definition: 제조 분야 시뮬레이션과 정보 시스템 사이 데이터 교환을 위한 SISO 표준 중립 정보 모델이다.
-related_areas: [22, 28]
+related_areas: [21, 34]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [34. 시뮬레이션·예측용 디지털 트윈](../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

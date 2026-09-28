@@ -4,7 +4,7 @@ type: glossary
 term_ko: 비즈니스 프로세스 모델 및 표기법
 term_en: Business Process Model and Notation (BPMN)
 definition: OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPMN 2.0.1을 PAS 절차로 국제표준화한 것이다.
-related_areas: [2, 12]
+related_areas: [24, 29]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ OMG가 정한 업무 프로세스 표기법으로, ISO/IEC 19510:2013은 OMG BPM
 
 ## 관련 영역
 
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md)
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
 
 ## 출처
 

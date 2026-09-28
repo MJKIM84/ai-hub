@@ -4,7 +4,7 @@ type: glossary
 term_ko: 합의 기반 번들 알고리즘
 term_en: Consensus-Based Bundle Algorithm (CBBA)
 definition: 각 로봇이 작업 묶음에 입찰하고 이웃과의 국소 통신 합의로 낙찰 충돌을 풀어 중앙 없이 충돌 없는 배정에 이르는 분산 배정 알고리즘이다.
-related_areas: [13]
+related_areas: [25]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

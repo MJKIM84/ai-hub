@@ -1,9 +1,9 @@
 ---
 title: "로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인"
 type: topic
-category: "B. 공통 정보·환경 모델"
-primary_area_no: 7
-related_areas: [9, 10, 17]
+category: "E. 사물·사람·실시간 상태"
+primary_area_no: 17
+related_areas: [20, 22, 30]
 tags: [VDA 5050, Open-RMF, 인계 확인, 적재물 식별]
 status: published
 confidence: medium
@@ -18,7 +18,7 @@ version: 1
 
 # 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인
 
-**주 연구영역:** [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) · **관련 영역:** [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md), [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) · **실행:** 2026-09-25-01
+**주 연구영역:** [17. 작업 대상·자산 식별과 인계 추적](../../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) · **관련 영역:** [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md), [30. 로봇 간 협업·물리적 인계](../../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) · **실행:** 2026-09-25-01
 
 <!-- auto:page-status:start -->
 > 페이지 상태: published · 신뢰도: medium · 페이지 버전: 1 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
@@ -32,7 +32,7 @@ version: 1
 
 ## 2. 배경
 
-[7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)의 SCM 관점 질문, 곧 로봇이 도착했을 때 실제로 어떤 팔레트가 인계됐는지를 확인하는 문제에서 출발했다. 영역 페이지의 분량 기준에 따라 그 페이지 6절의 로봇 관제 인터페이스 내용을 이 페이지로 옮겼다.
+[17. 작업 대상·자산 식별과 인계 추적](../../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)의 옛 분류의 질문, 곧 로봇이 도착했을 때 실제로 어떤 팔레트가 인계됐는지를 확인하는 문제에서 출발했다. 영역 페이지의 분량 기준에 따라 그 페이지 6절의 로봇 관제 인터페이스 내용을 이 페이지로 옮겼다.
 
 ## 3. 본문
 
@@ -75,10 +75,10 @@ Open-RMF 배송(Delivery) 작업에서 [플릿 어댑터](../../glossary/fleet-a
 
 ## 6. 연결되는 연구영역
 
-- [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 주 연구영역, 화물 식별과 인계 이력
-- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — VDA 5050 적재물 보고
-- [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — 적재·하역 설비의 요청·결과
-- [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) — 행동 완료와 인계 확정의 결합
+- [17. 작업 대상·자산 식별과 인계 추적](../../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) — 주 연구영역, 화물 식별과 인계 이력
+- [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) — VDA 5050 적재물 보고
+- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — 적재·하역 설비의 요청·결과
+- [30. 로봇 간 협업·물리적 인계](../../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) — 행동 완료와 인계 확정의 결합
 
 ## 7. 열린 질문
 
@@ -108,4 +108,4 @@ Open-RMF 배송(Delivery) 작업에서 [플릿 어댑터](../../glossary/fleet-a
 
 | 날짜 | 실행 id | 변경 | 버전 |
 |---|---|---|---|
-| 2026-09-25 | 2026-09-25-01 | 신규 작성(7. 화물·재고·자산 식별과 추적 6절에서 분리) | 1 |
+| 2026-09-25 | 2026-09-25-01 | 신규 작성(17. 작업 대상·자산 식별과 인계 추적 6절에서 분리) | 1 |

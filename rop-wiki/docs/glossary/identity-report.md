@@ -4,7 +4,7 @@ type: glossary
 term_ko: 신원 보고
 term_en: Identity Report (MassRobotics identityReport)
 definition: MassRobotics AMR 상호운용 표준에서 로봇이 제조사·모델·일련번호·외곽 치수와 선택적으로 속도·화물 한계·문서 위치를 알리는 메시지다.
-related_areas: [21, 9]
+related_areas: [20, 55]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ MassRobotics AMR 상호운용 표준에서 로봇이 제조사·모델·일련�
 
 ## 관련 영역
 
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
 
 ## 출처
 

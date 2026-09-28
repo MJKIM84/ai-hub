@@ -4,7 +4,7 @@ type: glossary
 term_ko: 자동화 편향
 term_en: Automation Bias
 definition: 사람이 자동화 시스템의 출력이나 권고를 충분히 따져 보지 않고 과도하게 믿고 따르는 경향으로, 사람 승인 절차를 형식적 확인으로 만들 수 있다.
-related_areas: [18, 27, 25]
+related_areas: [31, 47, 48]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ EU AI Act 제14조 제4항 (b)호가 고위험 AI 감독자가 이 경향을 인
 
 ## 관련 영역
 
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 로봇·자동화 핵심 온톨로지
 term_en: Core Ontology for Robotics and Automation (CORA)
 definition: IEEE 1872-2015가 정한 로봇·자동화 분야의 가장 일반적인 개념·관계·공리를 담은 핵심 온톨로지이다.
-related_areas: [5, 28]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IEEE 1872-2015는 CORA와 보조 온톨로지(CORAX, POS, RPARTS)로 구성되�
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

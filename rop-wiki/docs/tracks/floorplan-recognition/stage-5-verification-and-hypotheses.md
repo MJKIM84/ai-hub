@@ -3,7 +3,7 @@ title: "단계 5. 검증 방법과 가설 판정"
 type: track-stage
 track: floorplan-recognition
 stage: 5
-related_areas: [23, 21, 22, 6, 27]
+related_areas: [15, 34, 47, 54, 55]
 tags: [인식 정확도, 지도 품질, 모델링 시간, 가설 판정, 평가 지표]
 status: published
 confidence: low
@@ -77,7 +77,7 @@ version: 4
 
 #### 주행 성능 시험 표준과 지표
 
-아래 시험과 지표는 로봇이 실제로 주행하는 성능을 재는 것이며, 분류 원문 9장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다. ROP 는 이 시험을 직접 하기보다 제조사·통합자의 시험 결과를 받아 쓰는 쪽이다(아래 경계 문장).
+아래 시험과 지표는 로봇이 실제로 주행하는 성능을 재는 것이며, 분류 원문 19장의 로봇 자체 지능·제어 경계에 속하는 연계 대상이다. ROP 는 이 시험을 직접 하기보다 제조사·통합자의 시험 결과를 받아 쓰는 쪽이다(아래 경계 문장).
 
 - 연계 대상: ISO 18646-2:2024(2판, 2019 판을 기술 개정, 2024-01)는 이동 서비스 로봇의 주행 성능을 자세 정확도·반복성, 장애물 감지·회피, 경로 이탈, 좁은 통로 통과, 지도 작성 정확도로 측정하며, 실내 환경을 다루고 안전 요구사항 검증에는 쓰지 않는다. 시험 절차 세부는 미확인이다. [사실][^ref-721]
 - 연계 대상: ASTM F3244(2021 개정)은 무인 지상 차량(A-UGV)이 여유가 제한된 정의 영역을 지나는 능력을 시험하며, 시험 영역을 물리 경계·가상 경계·바닥 표시 세 방식으로 만들고 시험에 쓸 장애 유형으로 장애물과 통신 장애 두 가지를 둔다. [사실][^ref-723]
@@ -251,7 +251,7 @@ flowchart LR
 - EU CORDIS 기사는 PAN-Robots 시스템이 AGV 설치 기간을 6개월에서 2개월로 줄일 수 있다고 전하나, 과제 측 보고값이며 비교 조건은 확인되지 않았다(기준일 2015-04, 재게재 기사 기준, CORDIS 원 게재일 미확인). [추정][^ref-265]
 - OTTO Motors 는 소프트웨어 2.28 판(2023)에서 시설 지도·작업 흐름 설정 시간이 내부 시험으로 50% 줄었다고 밝힌다. 측정 조건이 공개되지 않아 판정 근거로 쓰지 않는다. [추정] 벤더 주장[^ref-271]
 - Open-RMF building_map_generator 는 사람이 주석한 건물 파일에서 주행 그래프와 함께 바닥·벽·문·승강기를 담은 시뮬레이션 월드를 만든다(같은 Open Robotics 자료라 독립 교차 확인 아님). [사실][^ref-441][^ref-406] 이를 도면 인식 결과로 넓히면 도면 기반 결과를 시뮬레이션 초기값으로 옮기는 경로가 존재하는 것으로 보인다. [추정][^ref-441][^ref-406]
-- IFAC 2024 논문은 운영 결정용 시뮬레이션 기반 디지털 트윈을 실제 부하 상태로 초기화하면 빈 상태 기준 모델보다 과도 구간이 크게 줄어든다고 보고했다(저자 미확인). [사실][^ref-632] 이는 도면 기반 정적 초기값만으로는 운영 예측용 초기값이 되지 않음을 시사하는 것으로 보이며, 운영 예측용 초기값은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태에서 받고 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)이 그 상태로 가정한 미래를 실험한다는 구분을 따른다. [추정][^ref-632]
+- IFAC 2024 논문은 운영 결정용 시뮬레이션 기반 디지털 트윈을 실제 부하 상태로 초기화하면 빈 상태 기준 모델보다 과도 구간이 크게 줄어든다고 보고했다(저자 미확인). [사실][^ref-632] 이는 도면 기반 정적 초기값만으로는 운영 예측용 초기값이 되지 않음을 시사하는 것으로 보이며, 운영 예측용 초기값은 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태에서 받고 [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)이 그 상태로 가정한 미래를 실험한다는 구분을 따른다. [추정][^ref-632]
 
 #### 판정 값 규칙 (설계 제안)
 
@@ -365,15 +365,15 @@ flowchart LR
 
 이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 프런트매터 `related_areas`는 아래 목록과 같다.
 
-- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 인식 결과와 생성한 지도를 시뮬레이션·실기체 주행 시험으로 검증한다. 이번 실행의 주행 시험 표준(ISO 18646-2, ASTM F3244, NIST AGV 시험)과 내비게이션 지표(SPL 등), 세 층 지표를 "6. 대표 접근법과 기술"에 반영하도록 제안했다
-- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 분류 원문 10장의 함께 필요한 영역(시운전). '현장 모델링 시간을 줄이는' 적용처다
-- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 분류 원문 10장의 함께 필요한 영역(시뮬레이션). 생성한 지도를 '시뮬레이션 초기값으로 사용'한다
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 지도 품질 지표(SLABIM 정답 자세, CAD 지도 위치추정 오차, 상대 지표의 한계)와 목적지 잔차를 노드 허용 편차로 판정하는 방법(추정)을 "6. 대표 접근법과 기술"·"8. 대표 연구와 자료"에 반영하도록 제안했다
-- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 도면 해석 모델의 평가 지표(모서리·방 정밀도·재현율, 파놉틱 품질, 클래스별 IoU, SSIG)를 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 원문 8장 교차 규칙: 도면 해석은 6. 지도·공간·위치 모델에 적용)
+- [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) — 인식 결과와 생성한 지도를 시뮬레이션·실기체 주행 시험으로 검증한다. 이번 실행의 주행 시험 표준(ISO 18646-2, ASTM F3244, NIST AGV 시험)과 내비게이션 지표(SPL 등), 세 층 지표를 "6. 대표 접근법과 기술"에 반영하도록 제안했다
+- [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) — 분류 개정 전 원문 10장의 함께 필요한 영역(시운전). '현장 모델링 시간을 줄이는' 적용처다
+- [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md) — 분류 개정 전 원문 10장의 함께 필요한 영역(시뮬레이션). 생성한 지도를 '시뮬레이션 초기값으로 사용'한다
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 지도 품질 지표(SLABIM 정답 자세, CAD 지도 위치추정 오차, 상대 지표의 한계)와 목적지 잔차를 노드 허용 편차로 판정하는 방법(추정)을 "6. 대표 접근법과 기술"·"8. 대표 연구와 자료"에 반영하도록 제안했다
+- [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 도면 해석 모델의 평가 지표(모서리·방 정밀도·재현율, 파놉틱 품질, 클래스별 IoU, SSIG)를 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 개정 전 원문 8장 교차 규칙: 도면 해석은 15. 지도·공간·위치 모델에 적용)
 
-실행 2026-09-25-82(q5-02)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남겼다: [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)에는 시운전·설정 공수를 수작업 대비로 재는 방법과 가상 시운전 근거의 한계를, [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)에는 사람 수정 노력 지표(편집 비용, 클릭 수, HTER)와 편집 수–시간 관계를, [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)과 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)에는 도면 해석 모델을 사람 수정 노력으로 평가하는 방법을 각각 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 원문 8장 교차 규칙에 따라 양쪽 연결).
+실행 2026-09-25-82(q5-02)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남겼다: [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)에는 시운전·설정 공수를 수작업 대비로 재는 방법과 가상 시운전 근거의 한계를, [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)에는 사람 수정 노력 지표(편집 비용, 클릭 수, HTER)와 편집 수–시간 관계를, [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)과 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)에는 도면 해석 모델을 사람 수정 노력으로 평가하는 방법을 각각 "6. 대표 접근법과 기술"에 반영하도록 제안했다(분류 개정 전 원문 8장 교차 규칙에 따라 양쪽 연결).
 
-실행 2026-09-25-84(q5-03)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로만 남겼다: [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)의 "6. 대표 접근법과 기술"에 여러 출처의 근거를 GRADE 식 영역으로 확실성을 매기고 기술 성숙도(TRL)를 병기해 기술 가설을 판정하는 방법(추정)을, [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 "11. 열린 질문"에 물류센터 도면 기반 지도 생성의 직접 근거 공백을 반영하도록 제안했다.
+실행 2026-09-25-84(q5-03)에서는 세부영역 페이지를 직접 고치지 않고 다음 반영 제안을 [트랙 로그](log.md)의 "세부영역 반영 제안"으로만 남겼다: [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)의 "6. 대표 접근법과 기술"에 여러 출처의 근거를 GRADE 식 영역으로 확실성을 매기고 기술 성숙도(TRL)를 병기해 기술 가설을 판정하는 방법(추정)을, [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)의 "11. 열린 질문"에 물류센터 도면 기반 지도 생성의 직접 근거 공백을 반영하도록 제안했다.
 
 ## 8. 출처
 

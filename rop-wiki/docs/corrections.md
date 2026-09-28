@@ -36,7 +36,7 @@ version: 1
 | 필드 | 뜻 | 값 |
 |---|---|---|
 | id | 요청 식별자. 제목에 쓴다 | `corr-001`부터 순서대로. 이미 있는 가장 큰 번호 + 1 |
-| 페이지 | 문제 문장이 있는 페이지 | 저장소 루트 기준 경로. 예: `docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md` |
+| 페이지 | 문제 문장이 있는 페이지 | 저장소 루트 기준 경로. 예: `docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md` |
 | 문제 문장 | 틀렸다고 보는 문장 | 페이지에 있는 문장을 그대로 옮긴다. 태그가 있으면 태그까지 포함한다 |
 | 근거 | 왜 틀렸는가 | 출처 URL, 또는 출처가 없으면 설명. 설명만 있는 요청도 받지만 에이전트가 근거를 찾지 못하면 거부될 수 있다 |
 | 요청일 | 요청을 적은 날 | YYYY-MM-DD |
@@ -55,7 +55,7 @@ version: 1
 ```markdown
 ## corr-001
 
-- 페이지: docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md
+- 페이지: docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md
 - 문제 문장: "○○ 제조사의 운반 로봇은 팔레트 인계를 무게 센서만으로 확인한다. [사실][^ref-015]"
 - 근거: ref-015는 제조사 제품 소개 페이지이므로 독립 출처가 아니다. 벤더 주장이므로 [추정] 뒤에 "벤더 주장"을 병기해야 한다. 같은 페이지 5절의 시나리오는 인계 확인에 식별 이벤트가 함께 필요하다고 서술해 서로 맞지 않는다.
 - 요청일: 2026-10-01

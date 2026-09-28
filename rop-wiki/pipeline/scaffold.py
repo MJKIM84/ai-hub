@@ -5,7 +5,7 @@
           → refresh_all_auto_regions() → write_mkdocs_yml()
 옵션:
   --force            이미 있는 페이지도 덮어쓴다(data/*.json 은 건드리지 않는다)
-  --reset-data       data/{open_questions,changelog,flow_matrix}.json 을 시드로 되돌린다(상태 데이터 초기화)
+  --reset-data       data/{open_questions,changelog,site_matrix}.json 을 시드로 되돌린다(상태 데이터 초기화)
   --refresh-auto     페이지 생성 없이 refresh_all_auto_regions() + write_mkdocs_yml() 만 실행
   --apply-url-check  data/url_check.json(check_urls.py 결과)을 참고문헌 페이지에 반영한다: url_status, 열린 GitHub 원문 미러의
                      텍스트 저장(data/source_texts) → fetched·원문 열람 표시. 신뢰도 상한은 원문 열람(fetched)일 때만 푼다
@@ -37,7 +37,7 @@ from lib.korean import topic_particle  # noqa: E402
 from lib.nav import write_mkdocs_yml  # noqa: E402
 from lib.render import refresh_all_auto_regions  # noqa: E402
 from lib.source import Reference, load_source  # noqa: E402
-from lib.verbatim import TAG, tag_blocks, tag_line  # noqa: E402
+from lib.verbatim import TAG, split_blocks, tag_blocks, tag_line  # noqa: E402
 
 DOCS = paths.DOCS
 DATA = paths.DATA
@@ -61,14 +61,14 @@ URL_CHECK_FILE = DATA / "url_check.json"   # pipeline/checks/check_urls.py --jso
 
 AREA_SECTIONS: list[str] = [
     "1. 한 줄 정의",
-    "2. SCM 관점의 질문",
+    "2. 핵심 질문",
     "3. 왜 중요한가",
     "4. 핵심 개념과 용어",
-    "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)",
+    "5. 적용 사례 (현장 유형 명시)",
     "6. 대표 접근법과 기술",
     "7. 관련 표준·프레임워크·오픈소스",
     "8. 대표 연구와 자료",
-    "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+    "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
     "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
     "11. 열린 질문",
     "12. 최근 업데이트 (자동)",
@@ -149,6 +149,27 @@ def area_link(from_rel: str, no: int) -> str:
     return L(from_rel, paths.area_rel_path(no), SRC.area(no).title)
 
 
+def area_items_block(rel: str, no: int) -> str:
+    """세부영역 1절 뒤에 붙는 '이 영역이 다루는 일'(data/area_items.json, 2026-09-28 리스트업)과
+    옛 영역에서 일부를 이어받은 경우의 계보 안내(data/area_lineage.json). 원문이 아니라 위키 문구다."""
+    out = ""
+    try:
+        items = json.loads((DATA / "area_items.json").read_text(encoding="utf-8"))["areas"].get(str(no)) or []
+        lin = json.loads((DATA / "area_lineage.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError, KeyError):
+        return out
+    if items:
+        out += "\n\n이 영역이 다루는 일(2026-09-28 리스트업 기준):\n\n" + "\n".join(f"- **{i['name']}**: {i['def']}" for i in items)
+    part = (lin.get("areas", {}).get(str(no)) or {}).get("part_old") or []
+    for old in part:
+        mains = [int(k) for k, v in lin["areas"].items() if old in (v.get("main_old") or [])]
+        if mains:
+            title = lin["old_titles"].get(str(old), str(old))
+            out += (f"\n\n이 영역의 일부는 이전 분류(2026-09-24)의 옛 {old}번 영역 ‘{title.split('. ', 1)[-1]}’에서 왔다. 그 본문은 "
+                    f"{area_link(rel, mains[0])}로 옮겼으며, 이 영역은 그 내용을 출발점으로 삼는다.")
+    return out
+
+
 def cat_link(from_rel: str, letter: str) -> str:
     return L(from_rel, paths.category_index_rel(letter), SRC.category(letter).title)
 
@@ -157,7 +178,6 @@ def cat_link(from_rel: str, letter: str) -> str:
 
 def build_home() -> None:
     rel = "index.md"
-    cats = SRC.categories
     header = ["대분류", "핵심 질문", "세부영역", "대분류 페이지", "세부 연구영역"]
     rows = []
     for row in SRC.overview_table_rows:
@@ -166,34 +186,40 @@ def build_home() -> None:
         areas = "<br>".join(area_link(rel, no) for no in cat.area_nos)
         rows.append(f"| {row['category_title']} | {row['core_question']} | {row['area_range']} | {cat_link(rel, letter)} | {areas} |")
     table = "| " + " | ".join(header) + " |\n|" + "---|" * len(header) + "\n" + "\n".join(rows)
-
-    # 9장 표의 두 셀을 이어 붙인 요약 줄이다. 원문에 이 줄 자체는 없으므로 [분류원문] 태그를 붙이지 않는다.
+    # 경계 표의 두 셀을 이어 붙인 요약 줄이다. 원문에 이 줄 자체는 없으므로 [분류원문] 태그를 붙이지 않는다.
     scope_lines = "\n".join(f"- {r['경계']} — {r['external']}" for r in SRC.scope_rows)
-    cite_sentence, _ = citation_note(rel, SRC.scor_paragraph, with_footnote=False)
-
-    first_area, last_area = SRC.area(paths.AREA_NOS[0]).title, SRC.area(paths.AREA_NOS[-1]).title
-    # 이동 경로 규약은 모든 docs 페이지에 적용된다. 홈은 경로가 "홈" 한 단어뿐이므로 링크 없이 그 단어만 둔다.
+    ch1_blocks = [b for b in split_blocks(SRC.chapter_text(1)) if not b[0].lstrip().startswith("|")]
+    concept = "\n".join(ch1_blocks[1]) if len(ch1_blocks) > 1 else ""
+    must = "\n".join(ch1_blocks[2]) if len(ch1_blocks) > 2 else ""
+    n_cat, n_area = len(SRC.categories), len(SRC.areas)
     body = f"""홈
 
 # ROP 연구 위키
 
-SCM(공급망 관리, Supply Chain Management) 관점에서 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)의 연구 범위를 정리하고, 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓아 가는 연구 위키다.
+로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)을 구현하고 운영하는 데 관여하는 모든 일을 빠짐없이 나열해 {n_cat}개 대분류·{n_area}개 세부 연구영역으로 묶고, 대분류마다 연구 논문·기사·업체 발표를 모아 가는 기술 지형도다. 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓는다.
+
+[로봇 시뮬레이터 실행하기 ↗](https://robot-lab-seven.vercel.app/){{ .md-button .md-button--primary }}
+[체험 내용과 확인 범위](about/simulator.md){{ .md-button }}
+
+2개 층에서 AMR·조작 팔·Spot과 이동 보행자가 함께하는 물품 운반을 직접 실행할 수 있습니다. Vercel에서 방문자마다 별도 체험 공간을 만들며, 최대 30분 동안 사용할 수 있습니다.
 
 ## ROP란 무엇인가
 
 {tag_line(SRC.rop_definition_sentence)}
 
-{tag_line(SRC.scor_paragraph)}
+{tag_line(concept)}
 
-SCOR(Supply Chain Operations Reference)의 오케스트레이션은 계획부터 반품까지 공급망 프로세스 전체를 하나로 조정하는 상위 개념이고, 로봇 오케스트레이션은 그 가운데 물리적인 작업이 실제로 일어나는 구간에서 로봇과 현장 설비의 행동을 연결하는 실행 계층이다. [의견] 따라서 이 위키에서 ROP는 SCOR의 오케스트레이션을 대체하는 것이 아니라, 업무 시스템의 계획을 현장 행동으로 옮기고 그 결과를 다시 업무 시스템에 되돌려 주는 역할로 다룬다. [의견] {cite_sentence} 자세한 설명은 {L(rel, "about/what-is-rop.md", "SCM 관점의 ROP란 무엇인가")}에 있다.
+{tag_line(must)}
+
+자세한 설명은 {L(rel, "about/what-is-rop.md", "ROP란 무엇인가")}에 있다.
 
 ## 이 위키가 다루는 범위
 
-이 위키는 7개 대분류와 28개 세부 연구영역을 뼈대로 한다. 분류 원문은 이 분류의 성격을 다음과 같이 밝힌다.
+분류 원문은 이 분류의 성격을 다음과 같이 밝힌다.
 
 {tag_line(SRC.scope_disclaimer_sentence)}
 
-대분류·세부영역의 명칭·번호·정의·질문은 원문 그대로 쓰며 바꾸지 않는다. 새 세부영역이 필요해 보이면 분류를 바꾸지 않고 {L(rel, "open-questions.md", "열린 질문")}에 "분류 확장 제안"으로 기록한다.
+대분류·세부영역의 명칭·번호·정의·질문은 원문 그대로 쓰며 바꾸지 않는다. 새 세부영역이 필요해 보이면 분류를 바꾸지 않고 {L(rel, "open-questions.md", "열린 질문")}에 "분류 확장 제안"으로 기록한다. 2026-09-28에 분류를 7개 대분류·28개 영역에서 지금 구조로 개정했고, 옛 영역 페이지의 본문은 새 영역 페이지로 옮겼다.
 
 ## 대분류 표
 
@@ -205,15 +231,15 @@ SCOR(Supply Chain Operations Reference)의 오케스트레이션은 계획부터
 
 ## 다루지 않는 것
 
-ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원문 9장은 다섯 가지 경계로 정리한다. 아래 목록은 원문 9장 표의 "경계" 열과 "주로 연계할 외부 영역" 열을 위키에서 한 줄씩 이어 붙인 요약이다. 셀의 문구는 원문과 같지만 이 줄 자체는 원문에 없는 문장이므로 `[분류원문]` 태그를 붙이지 않는다.
+ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원문 {SRC.scope_chapter}장은 다섯 가지 경계로 정리한다. 아래 목록은 경계표의 "경계" 열과 "주로 연계할 외부 영역" 열을 위키에서 한 줄씩 이어 붙인 요약이다. 셀의 문구는 원문과 같지만 이 줄 자체는 원문에 없는 문장이므로 `[분류원문]` 태그를 붙이지 않는다.
 
 {scope_lines}
 
-이 영역들은 ROP가 직접 만들지 않고 "연계 대상"으로 다룬다. 원문 9장의 표 전체(ROP에서 다룰 내용 열 포함)와 이 경계가 제품 전략에 따라 이동할 수 있다는 원문 설명은 {L(rel, "about/scope-boundary.md", "ROP가 직접 소유할 범위와 외부 연계 경계")}에 원문 그대로 있다.
+이 영역들은 ROP가 직접 만들지 않고 "연계 대상"으로 다룬다. 경계표 전체와 이 경계가 제품 전략에 따라 이동할 수 있다는 원문 설명은 {L(rel, "about/scope-boundary.md", "ROP가 직접 소유할 범위와 외부 연계 경계")}에 원문 그대로 있다.
 
 ## 콘텐츠가 만들어지는 방식
 
-세 에이전트가 매일 1회 한 영역을 다룬다. 리서치 에이전트가 근거 있는 조사 브리프를 만들고, 내용 검증 에이전트가 출처의 실재와 주장–출처 일치를 검증해 게시 가능 여부를 판정하며, 스토리텔러 에이전트가 검증을 통과한 브리프만으로 페이지를 쓴다. 마지막으로 퍼블리셔 스크립트가 원문 보호·링크·프런트매터 검사를 거쳐 위키에 반영한다. 첫 주기(28회)는 세부영역 {first_area}부터 {last_area}까지 번호순으로 본문을 채우고, 그 뒤에는 오래된 영역·열린 질문·비어 있는 매트릭스 칸을 기준으로 대상을 고른다. 각 에이전트의 역할·입력·출력과 사람이 개입하는 지점은 {L(rel, "about/agents.md", "에이전트 소개")}에 있다.
+세 에이전트가 매일 1회 한 영역을 다룬다. 리서치 에이전트가 근거 있는 조사 브리프를 만들고, 내용 검증 에이전트가 출처의 실재와 주장–출처 일치를 검증해 게시 가능 여부를 판정하며, 스토리텔러 에이전트가 검증을 통과한 브리프만으로 페이지를 쓴다. 마지막으로 퍼블리셔 스크립트가 원문 보호·링크·프런트매터 검사를 거쳐 위키에 반영한다. 아직 본문이 없는 세부영역부터 번호순으로 채우고, 그 뒤에는 오래된 영역·열린 질문·비어 있는 현장 유형 칸을 기준으로 대상을 고른다. 각 에이전트의 역할·입력·출력과 사람이 개입하는 지점은 {L(rel, "about/agents.md", "에이전트 소개")}에 있다.
 
 ## 진행 중인 중점 연구 트랙
 
@@ -236,7 +262,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 
 신뢰도(`confidence`)는 내용 검증 에이전트가 부여한다. high 는 핵심 주장이 2개 이상의 독립 출처로 확인된 것, medium 은 단일 출처이거나 벤더·기사 중심인 것, low 는 추정·의견 비중이 높은 것이다.
 
-본문의 주장에는 태그를 붙인다. `[사실]`은 출처로 확인된 주장, `[추정]`은 근거는 있으나 확인이 부족한 주장(벤더 주장 포함), `[의견]`은 작성자의 해석이다. `[분류원문]`은 분류 원문에서 한 글자도 바꾸지 않고 옮긴 문장, `[가설]`은 중점 연구 트랙에서 검증할 가설, `[사용자 실험]`은 사용자가 직접 수행한 실험 결과다. 출처는 `[^ref-001]` 형식의 각주로 붙인다. 자세한 읽는 법은 {L(rel, "about/reading-guide.md", "읽기 가이드")}에 있다.
+본문의 주장에는 태그를 붙인다. `[사실]`은 출처로 확인된 주장, `[추정]`은 근거는 있으나 확인이 부족한 주장(벤더 주장 포함), `[의견]`은 작성자의 해석이다. `[분류원문]`은 분류 원문에서 한 글자도 바꾸지 않고 옮긴 문장, `[옛 분류원문]`은 2026-09-28 개정 전 원문(보관본)에서 옮긴 문장, `[가설]`은 중점 연구 트랙에서 검증할 가설, `[사용자 실험]`은 사용자가 직접 수행한 실험 결과다. 출처는 `[^ref-001]` 형식의 각주로 붙인다. 자세한 읽는 법은 {L(rel, "about/reading-guide.md", "읽기 가이드")}에 있다.
 
 ## 최근 업데이트
 
@@ -244,10 +270,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 
 ## 시작하기 좋은 페이지
 
-- {L(rel, "about/research-method.md", "SCM 관점의 연구 시작 방법")} — 물류 흐름 7단계와 여섯 항목으로 기술을 교차해 보는 방법
-- {L(rel, "flow-matrix.md", "물류 흐름 매트릭스")} — 입고부터 반품까지 각 단계에서 어떤 페이지가 어떤 항목을 다루는지
-- {L(rel, f"tracks/{TRACK_SLUG}/index.md", "매뉴얼 기반 로봇 기능 온톨로지 트랙 개요")} — 진행 중인 중점 연구 트랙
-- {L(rel, "glossary/index.md", "용어집")} — SCOR, ISA-95, EPCIS, Open-RMF, MRTA, MAPF 같은 용어의 한 줄 정의
+- {L(rel, "about/research-method.md", "연구 방법")} — 할 일을 빠짐없이 나열하고, 묶고, 묶음마다 자료를 모으는 방법
+- {L(rel, paths.category_index_rel("B"), SRC.category("B").title)} — 이기종 로봇 등록·능력 표현·시스템과 로봇의 연동
+- {L(rel, paths.category_index_rel("C"), SRC.category("C").title)} — 채팅으로 맵 작성·시나리오 구성·로봇 구성·실제 상황 재현·업무 지시
+- {L(rel, "site-matrix.md", "현장 유형 × 대분류 적용 사례 매트릭스")} — 물류창고·공장·병원·상업 시설·가정·실외에서 어떤 대분류가 다뤄졌는지
+- {L(rel, "glossary/index.md", "용어집")} — ISA-95, EPCIS, Open-RMF, VDA 5050, MRTA, MAPF 같은 용어의 한 줄 정의
 - {L(rel, "open-questions.md", "열린 질문")} — 아직 답하지 못한 질문과 그 상태
 
 ## 정정과 요청
@@ -260,78 +287,73 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 # --- 소개 -------------------------------------------------------------------------
 
 def build_about() -> None:
-    # 1) SCM 관점의 ROP란 무엇인가 — 원문 1장 전체
+    # 1) ROP란 무엇인가 — 원문 1장 전체
     rel = "about/what-is-rop.md"
     ch1 = SRC.chapter_text(1)
-    cite_sentence, refs = citation_note(rel, ch1)
-    body = f"""{crumb(rel, ("SCM 관점의 ROP란 무엇인가", None))}
+    body = f"""{crumb(rel, ("ROP란 무엇인가", None))}
 
-# SCM 관점의 ROP란 무엇인가
+# ROP란 무엇인가
 
-이 페이지는 분류 원문 1장 "전체 관점"을 그대로 옮긴 것이다. ASCM(Association for Supply Chain Management)의 SCOR(Supply Chain Operations Reference)가 공급망 프로세스의 범위를, ISA-95 가 기업 업무와 제조 운영·제어의 통합 경계를 참고 기준으로 제시하는 가운데, 원문은 ROP를 "물리적인 작업이 발생하는 부분을 연결하는 역할"로 본다. 즉 ROP는 SCOR 오케스트레이션 전체를 대체하는 것이 아니라, 그 계획을 로봇과 현장 설비의 실제 행동으로 옮기고 결과를 업무 시스템에 되돌려 주는 실행 플랫폼이다. [의견]
+이 페이지는 분류 원문 1장 "전체 관점"을 그대로 옮긴 것이다. 원문은 ROP를 서로 다른 로봇과 현장 설비·업무 시스템을 연결해 사람이 정한 일을 실제로 해내게 하는 플랫폼으로 보고, 그 플랫폼을 구현하고 운영하는 데 관여하는 일 전체를 대분류로 묶는다. 물류창고는 여러 현장 유형 가운데 하나다. [의견]
 
-아래 본문과 표는 원문 그대로이며 `[분류원문]`으로 표시한다. 원문의 `[n]` 표기는 원문 12장 참고 자료의 n번 항목이며, 이 위키의 참고문헌 `ref-00n` 페이지에 해당한다.
+아래 본문과 표는 원문 그대로이며 `[분류원문]`으로 표시한다.
 
 ## 원문 1장. 전체 관점
 
 {tag_blocks(ch1).rstrip()}
 
-## 원문 각주와 참고문헌
-
-{cite_sentence} 참고문헌 전체 목록은 {L(rel, "references/index.md", "참고문헌")}에 있다.
-
 ## 관련 페이지
 
 - {L(rel, "about/scope-boundary.md", "ROP가 직접 소유할 범위와 외부 연계 경계")}
-- {L(rel, "about/research-method.md", "SCM 관점의 연구 시작 방법")}
+- {L(rel, "about/research-method.md", "연구 방법")}
 - {L(rel, "about/idea-mapping.md", "논의한 아이디어의 연구영역 매핑")}
 - 대분류 페이지: {", ".join(cat_link(rel, c.letter) for c in SRC.categories)}
-
-## 참고 자료
-
-{footnotes(refs)}
 """
-    emit(rel, meta("SCM 관점의 ROP란 무엇인가", "about"), body)
+    emit(rel, meta("ROP란 무엇인가", "about"), body)
 
-    # 2) ROP가 직접 소유할 범위와 외부 연계 경계 — 원문 9장
+    # 2) ROP가 직접 소유할 범위와 외부 연계 경계
+    n = SRC.scope_chapter
     rel = "about/scope-boundary.md"
     body = f"""{crumb(rel, ("ROP가 직접 소유할 범위와 외부 연계 경계", None))}
 
 # ROP가 직접 소유할 범위와 외부 연계 경계
 
-이 페이지는 분류 원문 9장을 표와 설명 문단(경계가 제품 전략에 따라 이동한다는 문단 포함)까지 그대로 옮긴 것이다. 위키의 모든 페이지는 범위 판단을 이 장을 기준으로 하며, "주로 연계할 외부 영역"에 속하는 내용은 ROP 직접 범위처럼 서술하지 않고 연계 대상으로 짧게 다룬다.
+이 페이지는 분류 원문 {n}장을 표와 설명 문단(경계가 제품 전략에 따라 이동한다는 문단 포함)까지 그대로 옮긴 것이다. 위키의 모든 페이지는 범위 판단을 이 장을 기준으로 하며, "주로 연계할 외부 영역"에 속하는 내용은 ROP 직접 범위처럼 서술하지 않고 연계 대상으로 짧게 다룬다. 이 경계는 {L(rel, paths.area_rel_path(2), SRC.area(2).title)}의 근거다.
 
-## 원문 9장. ROP가 직접 소유할 범위와 외부 연계 경계
+## 원문 {n}장. ROP가 직접 소유할 범위와 외부 연계 경계
 
-{tag_blocks(SRC.chapter_text(9)).rstrip()}
+{tag_blocks(SRC.chapter_text(n)).rstrip()}
 
 ## 관련 페이지
 
-- {L(rel, "about/what-is-rop.md", "SCM 관점의 ROP란 무엇인가")}
-- 세부영역 페이지의 "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)" 섹션이 이 경계를 영역별로 적용한다.
+- {L(rel, "about/what-is-rop.md", "ROP란 무엇인가")}
+- 세부영역 페이지의 "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)" 섹션이 이 경계를 영역별로 적용한다.
 """
     emit(rel, meta("ROP가 직접 소유할 범위와 외부 연계 경계", "about"), body)
 
-    # 3) SCM 관점의 연구 시작 방법 — 원문 11장
+    # 3) 연구 방법
+    n = SRC.method_chapter
     rel = "about/research-method.md"
-    body = f"""{crumb(rel, ("SCM 관점의 연구 시작 방법", None))}
+    body = f"""{crumb(rel, ("연구 방법", None))}
 
-# SCM 관점의 연구 시작 방법
+# 연구 방법
 
-이 페이지는 분류 원문 11장을 그대로 옮긴 것이다. 물류 흐름 7단계(입고 → 적치 → 보충 → 피킹 → 포장 → 출하 → 반품)와 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)을 교차한 표가 {L(rel, "flow-matrix.md", "물류 흐름 매트릭스")}이며, 스토리텔러 에이전트가 쓰는 현장 시나리오는 이 여섯 항목으로 구성한다.
+이 페이지는 분류 원문 {n}장을 그대로 옮긴 것이다. 이 위키는 ROP를 구현하고 운영하는 데 관여하는 일을 빠짐없이 나열하고(리스트업), 대분류·세부영역으로 묶고(카테고리화), 묶음마다 연구·기사·업체 발표를 모은다(출처 수집). 현장 적용 사례는 현장 유형을 밝히고 여섯 항목으로 쓰며, 현장 유형과 대분류를 교차한 표가 {L(rel, "site-matrix.md", "현장 유형 × 대분류 적용 사례 매트릭스")}다.
 
-## 원문 11장. SCM 관점의 연구 시작 방법
+## 원문 {n}장. 연구 방법
 
-{tag_blocks(SRC.chapter_text(11)).rstrip()}
+{tag_blocks(SRC.chapter_text(n)).rstrip()}
 
 ## 관련 페이지
 
-- {L(rel, "flow-matrix.md", "물류 흐름 매트릭스")} — 7단계 × 여섯 항목의 채움 현황과 관련 페이지 링크
+- {L(rel, "site-matrix.md", "현장 유형 × 대분류 적용 사례 매트릭스")} — 현장 유형별로 어떤 대분류의 적용 사례가 모였는지
+- {L(rel, paths.category_index_rel("Q"), SRC.category("Q").title)} — 현장 유형별 요구와 도입 사례
 - {L(rel, "about/scope-boundary.md", "ROP가 직접 소유할 범위와 외부 연계 경계")}
 """
-    emit(rel, meta("SCM 관점의 연구 시작 방법", "about"), body)
+    emit(rel, meta("연구 방법", "about"), body)
 
-    # 4) 논의한 아이디어의 연구영역 매핑 — 원문 10장
+    # 4) 논의한 아이디어의 연구영역 매핑
+    n = SRC.idea_chapter
     rel = "about/idea-mapping.md"
     related_lines = []
     for row in SRC.idea_rows:
@@ -341,21 +363,16 @@ def build_about() -> None:
                 no = int(m.group(1))
                 if no in SRC.areas and area_link(rel, no) not in links:
                     links.append(area_link(rel, no))
-            rm = re.search(r"([A-G])~([A-G])", cell)
-            if rm:
-                for letter in paths.CATEGORY_LETTERS:
-                    if rm.group(1) <= letter <= rm.group(2):
-                        links.append(cat_link(rel, letter))
         related_lines.append(f"- {row['idea']}: " + ", ".join(links))
     body = f"""{crumb(rel, ("논의한 아이디어의 연구영역 매핑", None))}
 
 # 논의한 아이디어의 연구영역 매핑
 
-이 페이지는 분류 원문 10장의 표를 그대로 옮긴 것이다. 표 안의 영역 표기는 원문 그대로 두고, 각 아이디어가 언급하는 세부영역·대분류 페이지 링크를 표 아래 "관련 페이지"에 따로 둔다. 첫 번째 아이디어(매뉴얼 기반 로봇 온톨로지)는 중점 연구 트랙 {L(rel, f"tracks/{TRACK_SLUG}/index.md", "매뉴얼 기반 로봇 기능 온톨로지")}로 진행 중이다.
+이 페이지는 분류 원문 {n}장의 표를 그대로 옮긴 것이다. 표 안의 영역 표기는 원문 그대로 두고, 각 아이디어가 언급하는 세부영역 페이지 링크를 표 아래 "관련 페이지"에 따로 둔다. 세 아이디어는 중점 연구 트랙으로 진행 중이다: {L(rel, f"tracks/{TRACK_SLUG}/index.md", "매뉴얼 기반 로봇 기능 온톨로지")}, {L(rel, "tracks/chat-based-configuration-and-operation/index.md", "채팅 기반 구성·운영")}, {L(rel, "tracks/floorplan-recognition/index.md", "건축 도면 자동 인식")}.
 
-## 원문 10장. 논의한 아이디어의 연구영역 매핑
+## 원문 {n}장. 논의한 아이디어의 연구영역 매핑
 
-{tag_blocks(SRC.chapter_text(10)).rstrip()}
+{tag_blocks(SRC.chapter_text(n)).rstrip()}
 
 ## 관련 페이지
 
@@ -394,7 +411,7 @@ def build_categories() -> None:
 
 ## 세부 연구영역
 
-표의 세부 연구영역·무엇을 연구하는가·SCM 관점의 질문 열은 원문 그대로이고, 페이지·현재 상태 열은 위키에서 덧붙인 것이다. 현재 상태는 퍼블리셔가 자동으로 갱신한다.
+표의 세부 연구영역·무엇을 연구하는가·핵심 질문 열은 원문 그대로이고, 페이지·현재 상태 열은 위키에서 덧붙인 것이다. 현재 상태는 퍼블리셔가 자동으로 갱신한다.
 
 {ar.wrap("category-area-table")}
 
@@ -405,6 +422,10 @@ def build_categories() -> None:
 ## 다른 대분류와의 연결
 
 아직 작성되지 않음(에이전트가 채운다).
+
+## 이 대분류의 자료
+
+{ar.wrap("category-sources")}
 
 ## 최근 업데이트
 
@@ -433,7 +454,7 @@ def build_areas() -> None:
             cite_sentence, refs = citation_note(rel, "\n".join(notes))
             if cite_sentence:
                 quote += "\n\n" + cite_sentence
-        sections = [f"## {AREA_SECTIONS[0]}\n\n{tag_line(a.what)}",
+        sections = [f"## {AREA_SECTIONS[0]}\n\n{tag_line(a.what)}{area_items_block(rel, no)}",
                     f"## {AREA_SECTIONS[1]}\n\n{tag_line(a.question)}{quote}"]
         for title in AREA_SECTIONS[2:11]:
             sections.append(f"## {title}\n\n{NOT_WRITTEN}")
@@ -446,6 +467,10 @@ def build_areas() -> None:
 !!! info "소속 대분류"
     {L(rel, paths.category_index_rel(cat.letter), cat.title)} — 핵심 질문:
     {tag_line(cat.core_question)}
+
+{ar.wrap('area-tracks')}
+
+{ar.wrap('page-status')}
 
 {chr(10).join(s + chr(10) for s in sections)}"""
         page_meta = meta(a.title, "area", status="seed", category=cat.title, area_no=no,
@@ -625,7 +650,7 @@ def build_glossary_index() -> None:
 
 # 용어집
 
-이 위키에서 쓰는 용어의 한글·영문 표기와 한 줄 정의를 모은다. 용어마다 개별 페이지에 설명, 관련 연구영역, 출처를 둔다. 시드 용어는 SCOR, ISA-95, EPCIS, Open-RMF, Fleet Adapter, WES/WCS/WMS/MES/TMS, MRTA, MAPF, Lifelong MAPF, Multi-Agent Pickup and Delivery, ARIAC, DDS-Security, 디지털 트윈이다. 새 용어는 스토리텔러 에이전트가 제안하고 퍼블리셔가 반영한다.
+이 위키에서 쓰는 용어의 한글·영문 표기와 한 줄 정의를 모은다. 용어마다 개별 페이지에 설명, 관련 연구영역, 출처를 둔다. 시드 용어는 ISA-95, EPCIS, Open-RMF, Fleet Adapter, WES/WCS/WMS/MES/TMS, MRTA, MAPF, Lifelong MAPF, Multi-Agent Pickup and Delivery, ARIAC, DDS-Security, 디지털 트윈이다. 새 용어는 스토리텔러 에이전트가 제안하고 퍼블리셔가 반영한다.
 
 아래 표는 용어 페이지의 프런트매터(term_ko, term_en, definition, related_areas)에서 자동으로 만든다.
 
@@ -637,20 +662,20 @@ def build_glossary_index() -> None:
 
 
 def build_cross_pages() -> None:
-    rel = "flow-matrix.md"
-    body = f"""{crumb(rel, ("물류 흐름 매트릭스", None))}
+    rel = "site-matrix.md"
+    body = f"""{crumb(rel, ("현장 유형 × 대분류 적용 사례 매트릭스", None))}
 
-# 물류 흐름 매트릭스
+# 현장 유형 × 대분류 적용 사례 매트릭스
 
-행은 원문 11장의 물류 흐름 7단계(입고 → 적치 → 보충 → 피킹 → 포장 → 출하 → 반품), 열은 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과)이다. 각 칸에는 그 단계·항목을 다룬 페이지의 링크를 두고, 아직 다룬 페이지가 없으면 "비어 있음"으로 표시한다. 스토리텔러 에이전트가 현장 시나리오를 쓸 때 다룬 칸을 출력하고, 퍼블리셔가 `data/flow_matrix.json` 에 반영해 이 표를 다시 그린다.
+행은 현장 유형(물류창고·제조 공장·병원·상업 시설·가정·실외·기타), 열은 대분류다. 각 칸의 숫자는 그 현장 유형의 적용 사례를 다룬 페이지 수이고, 아래 현장 유형별 목록에 링크가 있다. 스토리텔러 에이전트가 적용 사례를 쓸 때 현장 유형과 여섯 항목(시작 조건, 작업 대상, 수행 자원, 제약, 완료·인계, 예외·성과) 가운데 다룬 칸을 출력하고, 퍼블리셔가 `data/site_matrix.json` 에 반영해 이 표를 다시 그린다.
 
-이 매트릭스는 기술 목록에 실제 물류 흐름을 교차해 보는 도구다. 채움률이 낮은 단계·항목은 대상 선정에서 가산점을 받아 먼저 조사된다. 방법 설명은 {L(rel, "about/research-method.md", "SCM 관점의 연구 시작 방법")}에 있다.
+비어 있는 칸이 많은 현장 유형은 대상 선정에서 가산점을 받아 먼저 조사된다. 2026-09-28 개정 전 물류 흐름 매트릭스의 칸은 모두 ‘물류창고’ 행으로 옮겼다. 방법 설명은 {L(rel, "about/research-method.md", "연구 방법")}에 있다.
 
 ## 매트릭스
 
-{ar.wrap("flow-matrix")}
+{ar.wrap("site-matrix")}
 """
-    emit(rel, meta("물류 흐름 매트릭스", "matrix"), body)
+    emit(rel, meta("현장 유형 × 대분류 적용 사례 매트릭스", "matrix"), body)
 
     rel = "open-questions.md"
     body = f"""{crumb(rel, ("열린 질문", None))}
@@ -685,7 +710,7 @@ def build_cross_pages() -> None:
 
 # 운영 지표
 
-영역별 페이지 상태 분포, 검증 통과율, 반려·보류 건수, 출처 유형 분포, 물류 흐름 매트릭스 채움률, 마지막 갱신이 오래된 영역을 퍼블리셔가 계산한다. 원천은 페이지 프런트매터(status, updated), `data/changelog.json`, `data/flow_matrix.json`, `runs/<run_id>/summary.json`, 참고문헌 페이지의 `source_type` 이다.
+영역별 페이지 상태 분포, 검증 통과율, 반려·보류 건수, 출처 유형 분포, 현장 유형 매트릭스 채움률, 마지막 갱신이 오래된 영역을 퍼블리셔가 계산한다. 원천은 페이지 프런트매터(status, updated), `data/changelog.json`, `data/site_matrix.json`, `runs/<run_id>/summary.json`, 참고문헌 페이지의 `source_type` 이다.
 
 ## 지표
 
@@ -738,7 +763,7 @@ def seed_data() -> None:
             "date": TODAY, "run_id": BUILD_RUN_ID, "action": "생성", "page": "docs/",
             "summary": "위키 뼈대 생성(홈·소개·대분류·세부영역·횡단·트랙 시드)",
         }]},
-        "flow_matrix.json": {"steps": paths.FLOW_STEPS, "items": paths.FLOW_ITEMS, "cells": {}},
+        "site_matrix.json": {"sites": paths.SITE_TYPES, "items": paths.FLOW_ITEMS, "cells": {}},
     }
     for name, obj in seeds.items():
         p = DATA / name
@@ -756,7 +781,7 @@ def main(argv: list[str] | None = None) -> int:
     global VERBOSE, FORCE, RESET_DATA
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--force", action="store_true", help="이미 있는 페이지도 덮어쓴다(data/*.json 제외)")
-    ap.add_argument("--reset-data", action="store_true", help="data/{open_questions,changelog,flow_matrix}.json 을 시드로 되돌린다")
+    ap.add_argument("--reset-data", action="store_true", help="data/{open_questions,changelog,site_matrix}.json 을 시드로 되돌린다")
     ap.add_argument("--refresh-auto", action="store_true", help="auto 영역 갱신과 mkdocs.yml 생성만 실행")
     ap.add_argument("--apply-url-check", action="store_true", help="data/url_check.json 을 참고문헌 페이지에 반영")
     ap.add_argument("--no-changelog", action="store_true", help="--apply-url-check 가 data/changelog.json 에 기록하지 않게 한다")

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 일정 안정성
 term_en: Schedule Stability
 definition: 재스케줄링 뒤 일정이 원래 일정에서 얼마나 바뀌었는지(작업 시작·완료 시각의 편차 등)를 재는 성질로, 성과 지표의 변화를 재는 강건성과 구분된다.
-related_areas: [14, 20]
+related_areas: [26, 32]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
 
 ## 출처
 

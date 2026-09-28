@@ -4,7 +4,7 @@ type: glossary
 term_ko: 지도 정합
 term_en: Map Alignment
 definition: 서로 다른 로봇·도면의 지도 좌표계를 대응점으로 구한 회전·축척·이동 변환으로 공통 좌표계에 맞추는 일이다.
-related_areas: [6, 9, 21]
+related_areas: [15, 20, 55]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Open-RMF 플릿 어댑터는 층별 기준 좌표 쌍으로 변환과 오차를 
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
 
 ## 출처
 

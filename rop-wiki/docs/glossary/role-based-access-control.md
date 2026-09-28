@@ -4,7 +4,7 @@ type: glossary
 term_ko: 역할 기반 접근 통제
 term_en: Role-Based Access Control (RBAC)
 definition: 사용자에게 역할을 주고 역할에 동작 권한을 묶어, 사용자가 가진 역할에 따라 어떤 자원에 어떤 동작을 할 수 있는지 정하는 접근 통제 방식이다.
-related_areas: [26, 13, 18]
+related_areas: [25, 31, 51]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ Open-RMF 웹 API 서버는 역할·동작·인가 그룹의 조합으로 사용�
 
 ## 관련 영역
 
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

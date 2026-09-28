@@ -4,7 +4,7 @@ type: glossary
 term_ko: 혼합 정수 계획
 term_en: Mixed Integer Linear Programming (MILP)
 definition: 일부 결정 변수가 정수여야 하는 선형 목적함수·선형 제약 최적화 문제로, 작업 배정·스케줄링 같은 조합 결정을 정식화해 해법기로 푸는 데 쓰인다.
-related_areas: [13, 14, 27]
+related_areas: [25, 26, 47]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Peng 외는 LLM으로 자연어 작업 기술을 MILP 모델과 실행 코드로
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

@@ -9,7 +9,7 @@ refresh_all_auto_regions() 는 docs 전체를 순회해 마커가 있는 페이�
 데이터 형식
 - data/open_questions.json : {"items":[{"id","question","areas":[7],"raised","run_id","status","link"}]}
 - data/changelog.json      : {"items":[{"date","run_id","action","page","summary"}]}
-- data/flow_matrix.json    : {"steps":[…],"items":[…],"cells":{"피킹|완료·인계":[{"link","title","run_id"}]}}
+- data/site_matrix.json    : {"sites":[…],"items":[…],"cells":{"병원|F":[{"link","title","run_id","item"}]}} (현장 유형 × 대분류)
 - data/tracks/<slug>/backlog.json : {"items":[{"id","question","stage","origin","status","answered_run_id","answer_link","created"}]}
 - data/tracks/<slug>/log.json     : {"items":[{"run_id","date","stage","stage_name","stage_page","run_id_cell","stage_cell",
                                      "answered_questions","new_questions","ontology_change","completion_assessment",
@@ -61,12 +61,37 @@ def load_changelog() -> list[dict]:
     return _load_json(DATA / "changelog.json", {}).get("items", []) or []
 
 
-def load_flow_matrix() -> dict:
-    d = _load_json(DATA / "flow_matrix.json", {})
-    d.setdefault("steps", paths.FLOW_STEPS)
+def load_site_matrix() -> dict:
+    """현장 유형 × 대분류 적용 사례 매트릭스(data/site_matrix.json). 칸 키는 "현장 유형|대분류 문자"."""
+    d = _load_json(DATA / "site_matrix.json", {})
+    d.setdefault("sites", paths.SITE_TYPES)
     d.setdefault("items", paths.FLOW_ITEMS)
     d.setdefault("cells", {})
     return d
+
+
+def page_category_letter(link: str) -> str | None:
+    """적용 사례 페이지 링크("docs/…#앵커")가 속한 대분류 문자. 영역·대분류 페이지는 경로로, 주제는 primary_area_no 로,
+    트랙 페이지는 트랙 정의의 primary_area 로 정한다. 정할 수 없으면 None."""
+    rel = paths.docs_rel(str(link).split("#")[0])
+    parts = rel.split("/")
+    if parts[0] == "categories" and len(parts) >= 2:
+        for letter, slug in paths.CATEGORY_SLUGS.items():
+            if slug == parts[1]:
+                return letter
+    p = paths.DOCS / rel
+    no = None
+    if parts[0] == "topics" and p.is_file():
+        try:
+            meta, _ = fm.read(p)
+            no = meta.get("primary_area_no")
+        except Exception:
+            no = None
+    elif parts[0] == "tracks" and len(parts) >= 2:
+        no = (paths.read_track_config(parts[1]) or {}).get("primary_area")
+    if str(no).isdigit() and int(no) in paths.AREA_SLUGS:
+        return paths.category_letter_of(int(no))
+    return None
 
 
 def load_backlog(slug: str) -> list[dict]:
@@ -264,7 +289,7 @@ def _days_since(iso: str, today: str) -> int | None:
         return None
 
 
-# --- 열린 질문 / 변경 이력 / 흐름 매트릭스 ------------------------------------------------
+# --- 열린 질문 / 변경 이력 / 현장 유형 매트릭스 ------------------------------------------------
 
 def render_open_questions(page_rel: str = "open-questions.md") -> str:
     items = load_open_questions()
@@ -317,28 +342,43 @@ def render_changelog(page_rel: str = "changelog.md") -> str:
     return "\n".join(parts).rstrip("\n")
 
 
-def flow_fill_counts() -> tuple[int, int]:
-    d = load_flow_matrix()
-    total = len(d["steps"]) * len(d["items"])
+def site_fill_counts() -> tuple[int, int]:
+    d = load_site_matrix()
+    total = len(d["sites"]) * len(paths.CATEGORY_LETTERS)
     filled = sum(1 for k, v in d["cells"].items() if v)
     return filled, total
 
 
-def render_flow_matrix(page_rel: str = "flow-matrix.md") -> str:
-    d = load_flow_matrix()
-    steps, items, cells = d["steps"], d["items"], d["cells"]
+def render_site_matrix(page_rel: str = "site-matrix.md") -> str:
+    d = load_site_matrix()
+    sites, cells = d["sites"], d["cells"]
+    letters = paths.CATEGORY_LETTERS
     rows = []
-    for step in steps:
-        row = [f"**{step}**"]
-        for item in items:
-            entries = cells.get(f"{step}|{item}") or []
-            if not entries:
-                row.append(EMPTY)
-            else:
-                row.append("<br>".join(_link(page_rel, e.get("link"), e.get("title") or e.get("link")) for e in entries))
+    for site in sites:
+        row = [f"**{site}**"]
+        for letter in letters:
+            n = len(cells.get(f"{site}|{letter}") or [])
+            row.append(str(n) if n else EMPTY)
         rows.append(row)
-    filled, total = flow_fill_counts()
-    return _table(["물류 단계 / 항목", *items], rows) + f"\n\n아직 채워지지 않은 칸은 \"{EMPTY}\"으로 표시한다. 채움률: {filled}/{total} 칸."
+    filled, total = site_fill_counts()
+    out = [_table(["현장 유형 / 대분류", *letters], rows),
+           "", f"열 머리의 문자는 대분류다({', '.join(f'{l}. {load_source().category(l).name}' for l in letters)}). "
+           f"아직 사례가 없는 칸은 \"{EMPTY}\"으로 표시한다. 채움률: {filled}/{total} 칸.", ""]
+    for site in sites:
+        out.append(f"### {site}")
+        out.append("")
+        any_ = False
+        for letter in letters:
+            entries = cells.get(f"{site}|{letter}") or []
+            if not entries:
+                continue
+            any_ = True
+            links = ", ".join(_link(page_rel, e.get("link"), e.get("title") or e.get("link")) for e in entries)
+            out.append(f"- **{letter}. {load_source().category(letter).name}**: {links}")
+        if not any_:
+            out.append(f"아직 이 현장 유형의 적용 사례가 없다.")
+        out.append("")
+    return "\n".join(out).rstrip("\n")
 
 
 # --- 운영 지표 ----------------------------------------------------------------------
@@ -426,10 +466,10 @@ def render_metrics(page_rel: str = "metrics.md", today: str | None = None) -> st
     parts.append("")
 
     # 5. 매트릭스 채움률
-    filled, total = flow_fill_counts()
-    parts.append("### 물류 흐름 매트릭스 채움률")
+    filled, total = site_fill_counts()
+    parts.append("### 현장 유형 매트릭스 채움률")
     parts.append("")
-    parts.append(f"- {filled}/{total} 칸 ({filled / total:.0%}) — {_link(page_rel, 'flow-matrix.md', '흐름 매트릭스')}")
+    parts.append(f"- {filled}/{total} 칸 ({filled / total:.0%}) — {_link(page_rel, 'site-matrix.md', '현장 유형 × 대분류 적용 사례 매트릭스')}")
     parts.append("")
 
     # 6. 마지막 갱신이 오래된 영역 상위 5
@@ -647,6 +687,74 @@ def render_reference_cited_pages(ref_id: str, page_rel: str) -> str:
         if hit:
             lines.append(f"- {_link(page_rel, rel, str(meta.get('title') or rel))}")
     return "\n".join(lines) if lines else "- 아직 없음"
+
+
+# 대분류 자료 묶음: 출처 유형 7종을 독자용 네 묶음으로 보인다. "업체 발표"는 기존 유형 "벤더 문서"로 받는다(새 유형을 더하지 않음) [가정]
+CATEGORY_SOURCE_GROUPS: list[tuple[str, tuple[str, ...]]] = [
+    ("논문", ("논문",)),
+    ("기사·보고서", ("기사", "업계 보고서")),
+    ("업체 발표", ("벤더 문서",)),
+    ("표준·오픈소스·기관 자료", ("표준", "오픈소스 문서", "정부·연구기관")),
+]
+_FOOT_ID = re.compile(r"\[\^(ref-\d+)\](?!:)")
+
+
+def category_source_ids(letter: str) -> set[str]:
+    """대분류에 모인 출처 id: 대분류 페이지·소속 세부영역 페이지·그 영역이 주 영역인 주제 페이지가 인용한 출처
+    (프런트매터 sources 와 본문 각주 참조), 그리고 related_areas 가 이 대분류 영역을 가리키는 참고문헌."""
+    lo, hi = paths.CATEGORY_AREA_RANGES[letter]
+    mine = {paths.category_index_rel(letter), *(paths.area_rel_path(n) for n in range(lo, hi + 1))}
+    ids: set[str] = set()
+    for rel, meta in all_pages():
+        in_cat = rel in mine or (meta.get("type") == "topic" and str(meta.get("primary_area_no", "")).isdigit()
+                                 and lo <= int(meta["primary_area_no"]) <= hi)
+        if meta.get("type") == "reference" and rel != "references/index.md":
+            if any(str(n).isdigit() and lo <= int(n) <= hi for n in (meta.get("related_areas") or [])):
+                ids.add(str(meta.get("ref_id") or Path(rel).stem))
+            continue
+        if not in_cat:
+            continue
+        ids.update(str(x) for x in (meta.get("sources") or []) if re.fullmatch(r"ref-\d+", str(x)))
+        try:
+            ids.update(_FOOT_ID.findall(_FENCE.sub("", (DOCS / rel).read_text(encoding="utf-8"))))
+        except OSError:
+            pass
+    return ids
+
+
+def render_category_sources(letter: str, page_rel: str | None = None, per_group: int = 10) -> str:
+    """대분류 페이지 "이 대분류의 자료": 이 대분류에 모인 논문·기사·업체 발표를 유형별로 센 표와 최근 발행순 목록."""
+    page_rel = page_rel or paths.category_index_rel(letter)
+    ids = category_source_ids(letter)
+    refs = {str(meta.get("ref_id")): (rel, meta) for rel, meta in all_pages()
+            if meta.get("type") == "reference" and meta.get("ref_id")}
+    found = [refs[i] for i in ids if i in refs]
+    groups = {name: [x for x in found if x[1].get("source_type") in types] for name, types in CATEGORY_SOURCE_GROUPS}
+    counts = " · ".join(f"{name} {len(v)}건" for name, v in groups.items())
+    out = [f"이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 {len(found)}건이다({counts}). "
+           f"유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 "
+           f"{per_group}건까지 보이고, 전체 목록은 {_link(page_rel, 'references/index.md', '참고문헌')}에 있다."]
+
+    def _key(x):
+        pub = str(x[1].get("published") or "")
+        m = re.match(r"(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?", pub)
+        return (m.group(0) if m else "0000", str(x[1].get("ref_id")))
+
+    for name, items in groups.items():
+        out.append("")
+        out.append(f"**{name}**")
+        out.append("")
+        if not items:
+            out.append("- 아직 없음")
+            continue
+        for rel, meta in sorted(items, key=_key, reverse=True)[:per_group]:
+            title = _esc(meta.get("ref_title") or meta.get("title") or rel)
+            org = _esc(meta.get("org") or "기관 미상")
+            pub = str(meta.get("published") or "미확인")
+            out.append(f"- {_link(page_rel, rel, str(meta.get('ref_id')))} — {org}, {title} (발행 {_esc(pub)})")
+        if len(items) > per_group:
+            out.append(f"- 그 밖에 {len(items) - per_group}건")
+    return "\n".join(out)
 
 
 def render_logs_index(page_rel: str = "logs/index.md") -> str:
@@ -905,7 +1013,7 @@ def render_area_tracks(no: int, page_rel: str | None = None) -> str:
 
 
 def render_idea_area_map(page_rel: str = paths.IDEAS_INDEX) -> str:
-    """28개 세부영역 × 확장 아이디어 매핑표(auto:idea-area-map). 칸: ● 중심 영역 / ○ 함께 필요한 영역 / 빈칸."""
+    """67개 세부영역 × 확장 아이디어 매핑표(auto:idea-area-map). 칸: ● 중심 영역 / ○ 함께 필요한 영역 / 빈칸."""
     tracks = idea_tracks()
     if not tracks:
         return "아이디어 매핑이 없다(config/tracks/*.yaml 의 idea_page·idea_areas 없음)."
@@ -1069,6 +1177,9 @@ def render_for(key: str, page_rel: str, meta: dict) -> str | None:
     if key == "category-recent":
         letter = _letter_from(page_rel, meta)
         return render_category_recent(letter, page_rel) if letter else None
+    if key == "category-sources":
+        letter = _letter_from(page_rel, meta)
+        return render_category_sources(letter, page_rel) if letter else None
     if key == "category-area-table":
         letter = _letter_from(page_rel, meta)
         return render_category_area_table(letter, page_rel) if letter else None
@@ -1094,8 +1205,8 @@ def render_for(key: str, page_rel: str, meta: dict) -> str | None:
         return render_open_questions(page_rel)
     if key == "changelog":
         return render_changelog(page_rel)
-    if key == "flow-matrix":
-        return render_flow_matrix(page_rel)
+    if key == "site-matrix":
+        return render_site_matrix(page_rel)
     if key == "metrics":
         return render_metrics(page_rel)
     if key == "glossary-index":

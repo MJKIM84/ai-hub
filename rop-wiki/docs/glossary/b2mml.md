@@ -4,7 +4,7 @@ type: glossary
 term_ko: B2MML
 term_en: Business To Manufacturing Markup Language (B2MML)
 definition: MESA International이 ISA-95(IEC 62264)의 데이터 모델을 XML 스키마로 구현한 교환 형식이다.
-related_areas: [1, 2, 14]
+related_areas: [23, 24, 26]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ MESA International이 ISA-95(IEC 62264)의 데이터 모델을 XML 스키마로 
 
 ## 관련 영역
 
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md)
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
 
 ## 출처
 

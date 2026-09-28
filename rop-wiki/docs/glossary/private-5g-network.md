@@ -4,7 +4,7 @@ type: glossary
 term_ko: 5G 특화망(이음5G)
 term_en: Private 5G Network (e-Um 5G)
 definition: 이동통신사가 아닌 기업·기관이 건물·공장 같은 특정 구역 단위로 5G 주파수를 할당받아 직접 구축해 쓰는 국내 5G 통신망이다.
-related_areas: [11]
+related_areas: [42]
 tags: []
 status: published
 confidence: low
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
 
 ## 출처
 

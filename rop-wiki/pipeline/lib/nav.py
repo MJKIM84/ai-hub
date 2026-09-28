@@ -19,7 +19,7 @@ from . import paths
 from .paths import DOCS, MKDOCS_YML
 
 SITE_NAME = "ROP 연구 위키"
-SITE_DESCRIPTION = "SCM 관점의 로봇 오케스트레이션 플랫폼 연구"
+SITE_DESCRIPTION = "로봇 오케스트레이션 플랫폼을 구현하고 운영하는 일의 기술 지형도"
 TRACKS_LABEL = "중점 연구 트랙"
 IDEAS_LABEL = "확장 아이디어"      # 사양서 4.8 목록 밖의 구축자 추가 섹션 [가정]
 
@@ -46,8 +46,8 @@ def site_url() -> str:
 
 
 MKDOCS_TEMPLATE = """# 이 파일은 pipeline/lib/nav.py 의 write_mkdocs_yml() 이 생성한다. 손으로 고치지 말 것.
-# 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 →
-# 참고문헌 → 표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
+# 내비게이션 순서는 사양서 4.8 로 고정: 홈 → 소개 → 대분류(A~Q, 2026-09-28 개정) → 중점 연구 트랙 → 주제 → 용어집 →
+# 참고문헌 → 표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
 # 4.8 에 없는 "확장 아이디어"(docs/ideas/)는 중점 연구 트랙 바로 다음, 주제 앞에 둔다(4.8 순서는 그대로). [가정]
 # 4.7 의 횡단 페이지 "정정 요청 안내"는 4.8 순서 목록에 없으므로 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 둔다. [가정]
 # 공개 배포 값(site_url, exclude_docs, theme.custom_dir, extra.verification_banner)은 config/ops.yaml 의
@@ -91,7 +91,7 @@ markdown_extensions:
 
 plugins:
   - search
-
+{redirects_block}
 validation:
   nav:
     omitted_files: warn
@@ -254,10 +254,10 @@ def build_nav(logs_public: bool | None = None) -> list:
         else:
             nav.append(_page("standards/index.md"))
 
-    # 9~12. 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표
+    # 9~12. 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표
     # logs_public=False 면 운영 지표(metrics.md)는 뺀다(공개 배포, exclude_docs 와 짝) [가정]
-    metrics_rels = ("open-questions.md", "flow-matrix.md", "changelog.md") if not show_logs \
-        else ("open-questions.md", "flow-matrix.md", "changelog.md", "metrics.md")
+    metrics_rels = ("open-questions.md", "site-matrix.md", "changelog.md") if not show_logs \
+        else ("open-questions.md", "site-matrix.md", "changelog.md", "metrics.md")
     for rel in metrics_rels:
         if _exists(rel):
             nav.append(_page(rel))
@@ -305,7 +305,17 @@ def render_mkdocs_yml(nav: list | None = None) -> str:
     if verification_banner_on():
         extra_block = "\nextra:\n  verification_banner: true\n"
 
+    # 2026-09-28 구조 개정으로 옮긴 페이지의 옛 주소를 새 주소로 잇는다(data/redirects.json, mkdocs-redirects)
+    redirects_block = ""
+    rp = paths.DATA / "redirects.json"
+    if rp.is_file():
+        import json
+        maps = json.loads(rp.read_text(encoding="utf-8"))
+        if maps:
+            redirects_block = "  - redirects:\n      redirect_maps:\n" + "".join(
+                f"        {json.dumps(k, ensure_ascii=False)}: {json.dumps(v, ensure_ascii=False)}\n" for k, v in sorted(maps.items()))
     return MKDOCS_TEMPLATE.format(
+        redirects_block=redirects_block,
         site_name=SITE_NAME, site_description=SITE_DESCRIPTION, nav=indented,
         site_url_line=site_url_line, exclude_docs_block=exclude_docs_block,
         custom_dir_line=custom_dir_line, extra_block=extra_block,

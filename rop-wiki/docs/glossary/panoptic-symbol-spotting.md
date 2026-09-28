@@ -4,7 +4,7 @@ type: glossary
 term_ko: 파놉틱 심볼 스포팅
 term_en: Panoptic Symbol Spotting
 definition: CAD 도면의 선 요소마다 문·창문 같은 셀 수 있는 기호의 개별 인스턴스와 벽 같은 셀 수 없는 영역의 의미를 함께 판별하는 과제이다.
-related_areas: [6, 27]
+related_areas: [15, 47]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ FloorPlanCAD(ICCV 2021)가 이 과제를 정의했고 ArchCAD-400K(NeurIPS 2025)
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

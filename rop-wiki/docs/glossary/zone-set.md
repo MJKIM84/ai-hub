@@ -4,7 +4,7 @@ type: glossary
 term_ko: 구역 집합
 term_en: Zone Set (VDA 5050 zoneSet)
 definition: 하나의 지도(mapId)에 붙는 다각형 구역들의 묶음으로, 구역마다 통행 금지·진입 허가·속도 제한·우선·벌점·방향 같은 유형과 파라미터를 둔다.
-related_areas: [6, 15, 28]
+related_areas: [15, 21, 27]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ VDA 5050 3.0.0 에서 구역 집합은 구역 집합 식별자·지도 식별자
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

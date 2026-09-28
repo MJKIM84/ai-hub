@@ -10,6 +10,8 @@ from __future__ import annotations
 import re
 
 TAG = "[분류원문]"
+# 2026-09-28 개정 전 원문(보관본 _source/archive/)에서 옮긴 문장. protect_source 가 보관본과 대조한다
+TAG_OLD = "[옛 분류원문]"
 _TAG_SUFFIX = " " + TAG
 _BOLD = re.compile(r"\*\*(.+?)\*\*")
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 차량 소요대수 산정
 term_en: Fleet Sizing
 definition: 예상 물동량과 서비스 수준(대기 시간·처리량) 목표를 만족하는 데 필요한 로봇·운반 차량의 최소 대수를 정하는 계획 문제이다.
-related_areas: [3, 13, 16]
+related_areas: [25, 28, 35]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Vis(2006)는 소요대수 모델을 결정론적 모델, 확률(대기행렬) �
 
 ## 관련 영역
 
-- [3. 처리능력·거점·설비 계획](../categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)
+- [35. 처리능력·규모·배치 설계](../categories/design-and-simulation/capacity-sizing-and-layout-design.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)
 
 ## 출처
 

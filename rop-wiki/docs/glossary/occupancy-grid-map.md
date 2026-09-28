@@ -4,7 +4,7 @@ type: glossary
 term_ko: 점유 격자 지도
 term_en: Occupancy Grid Map (OGM)
 definition: 공간을 일정 크기 칸으로 나누고 칸마다 점유·빈 공간·미지 여부를 적어 로봇 위치추정과 경로계획에 쓰는 지도 표현이다.
-related_areas: [6]
+related_areas: [15]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ BIM(IFC) 모델에서 구조 요소만 담은 2D 점유 격자 지도를 자동 
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
 
 ## 출처
 

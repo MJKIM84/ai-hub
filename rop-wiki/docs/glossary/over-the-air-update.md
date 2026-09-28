@@ -4,7 +4,7 @@ type: glossary
 term_ko: 무선 업데이트
 term_en: Over-the-Air Update (OTA)
 definition: 기기를 회수하지 않고 네트워크로 소프트웨어·펌웨어를 내려받아 갱신하는 방식이다.
-related_areas: [24]
+related_areas: [57]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
 
 ## 출처
 

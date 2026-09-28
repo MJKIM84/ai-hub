@@ -4,7 +4,7 @@ type: glossary
 term_ko: 계층적 작업 네트워크
 term_en: Hierarchical Task Network (HTN)
 definition: 복합 작업을 미리 정한 분해 방법으로 하위 작업 네트워크로 나누어 결국 실행 가능한 기본 동작의 순서에 이르게 하는 자동 계획 방식이다.
-related_areas: [14, 13, 2]
+related_areas: [24, 25, 26]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ HDDL 은 이 방식의 계획 문제를 기술하는 공통 언어로, 작업을
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md)
 
 ## 출처
 

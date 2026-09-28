@@ -4,7 +4,7 @@ type: glossary
 term_ko: 모바일 매니퓰레이터
 term_en: Mobile Manipulator
 definition: AMR·AGV 같은 이동 플랫폼에 로봇팔을 결합해 이동과 집기·놓기 작업을 함께 수행하는 로봇이다.
-related_areas: [17, 25]
+related_areas: [30, 48]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ ANSI/A3 R15.08-2-2023 은 매니퓰레이터를 단 이동로봇을 산업용 �
 
 ## 관련 영역
 
-- [17. 로봇 간 협업·물리적 인계](../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
+- [30. 로봇 간 협업·물리적 인계](../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
 
 ## 출처
 

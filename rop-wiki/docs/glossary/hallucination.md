@@ -4,7 +4,7 @@ type: glossary
 term_ko: 환각
 term_en: Hallucination
 definition: LLM이 근거 없이 그럴듯한 내용을 만들어 내는 현상이다.
-related_areas: [27, 18, 13]
+related_areas: [25, 31, 47]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ Wang 외(EMNLP 2025)는 LLM 에이전트가 불명확한 지시에서 빠진 인
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

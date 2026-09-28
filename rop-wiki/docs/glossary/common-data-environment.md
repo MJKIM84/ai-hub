@@ -4,7 +4,7 @@ type: glossary
 term_ko: 공통 데이터 환경
 term_en: Common Data Environment (CDE)
 definition: ISO 19650 정보 관리에서 도면·모델 같은 정보 컨테이너를 상태·개정 메타데이터와 함께 관리하는 환경(영국 국가 부속서 기반 지침 기준).
-related_areas: [6, 24]
+related_areas: [15, 57]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ ISO 19650 정보 관리에서 도면·모델 같은 정보 컨테이너를 상�
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
 
 ## 출처
 

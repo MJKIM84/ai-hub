@@ -4,7 +4,7 @@ type: glossary
 term_ko: IEC 공통 데이터 사전
 term_en: IEC Common Data Dictionary (IEC CDD)
 definition: IEC 61360 기반 IEC 온라인 데이터 사전으로, 공정 자동화·저압 개폐장치·측정 장비 등 도메인별 제품 온톨로지와 측정 단위를 제공한다.
-related_areas: [28, 5]
+related_areas: [5, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IEC 61360 기반 IEC 온라인 데이터 사전으로, 공정 자동화·저압 
 
 ## 관련 영역
 
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
 
 ## 출처
 

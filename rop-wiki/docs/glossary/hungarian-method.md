@@ -4,7 +4,7 @@ type: glossary
 term_ko: 헝가리안 방법
 term_en: Hungarian Method
 definition: 작업과 수행자 사이 일대일 배정에서 총비용을 최소로 하는 최적 배정 문제를 다항 시간에 푸는 고전 알고리즘이다.
-related_areas: [13]
+related_areas: [25]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ Gerkey–Matarić 분류의 ST-SR-IA 배정 문제는 최적 배정 문제의 �
 
 ## 관련 영역
 
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 운용 구역
 term_en: Operating Zone (ISO 3691-4)
 definition: 무인 산업 차량이 운행하는 구역으로, ISO 3691-4 는 구역 상태가 안전 운용에 큰 영향을 준다고 보고 운용 구역 준비를 부속서 A 에 둔다.
-related_areas: [25]
+related_areas: [48]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
 
 ## 출처
 

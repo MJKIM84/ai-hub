@@ -681,9 +681,9 @@ class Publisher:
         for i, u in enumerate(self.pages.get("open_question_updates") or []):
             if u.get("link"):
                 out.append((f"pages.json open_question_updates[{i}].link", str(u["link"])))
-        for i, u in enumerate(self.pages.get("flow_matrix_updates") or []):
+        for i, u in enumerate(self.pages.get("site_matrix_updates") or []):
             if u.get("link"):
-                out.append((f"pages.json flow_matrix_updates[{i}].link", str(u["link"])))
+                out.append((f"pages.json site_matrix_updates[{i}].link", str(u["link"])))
         for i, b in enumerate((self.pages.get("track_updates") or {}).get("backlog_updates") or []):
             if b.get("answer_link"):
                 out.append((f"pages.json track_updates.backlog_updates[{i}].answer_link", str(b["answer_link"])))
@@ -1031,24 +1031,28 @@ class Publisher:
             self.counts["open_questions"] += 1
         runs.write_json(p, data)
 
-    def _apply_flow_matrix(self) -> None:
-        items = self.pages.get("flow_matrix_updates") or []
+    def _apply_site_matrix(self) -> None:
+        """스토리텔러의 site_matrix_updates({site_type, item, link, title})를 data/site_matrix.json 에 반영한다.
+        칸은 "현장 유형|대분류 문자"이며, 대분류는 링크한 페이지에서 정한다(render.page_category_letter)."""
+        from lib.render import page_category_letter
+        items = self.pages.get("site_matrix_updates") or []
         if not items:
             return
-        p = paths.DATA / "flow_matrix.json"
+        p = paths.DATA / "site_matrix.json"
         data = runs.read_json(p, {}) or {}
-        data.setdefault("steps", paths.FLOW_STEPS)
+        data.setdefault("sites", paths.SITE_TYPES)
         data.setdefault("items", paths.FLOW_ITEMS)
         cells = data.setdefault("cells", {})
         for u in items:
-            key = f"{u['step']}|{u['item']}"
+            letter = page_category_letter(u["link"]) or "Q"
+            key = f"{u['site_type']}|{letter}"
             entries = cells.setdefault(key, [])
             title = u.get("title") or self._title_of(u["link"])
             hit = next((e for e in entries if e.get("link") == u["link"]), None)
             if hit:
-                hit.update({"title": title, "run_id": self.run_id})
+                hit.update({"title": title, "run_id": self.run_id, "item": u.get("item")})
             else:
-                entries.append({"link": u["link"], "title": title, "run_id": self.run_id})
+                entries.append({"link": u["link"], "title": title, "run_id": self.run_id, "item": u.get("item")})
             self.counts["flow_cells"] += 1
         runs.write_json(p, data)
 
@@ -1398,7 +1402,7 @@ class Publisher:
         self._apply_glossary()
         self._apply_standards()
         self._apply_open_questions()
-        self._apply_flow_matrix()
+        self._apply_site_matrix()
         if self.track:
             self._apply_track()
         self._apply_area_reflections()
@@ -1705,7 +1709,7 @@ class Publisher:
             page_cell = daily_log_page_cell(log_rel, pg["path"], title)
             pages_rows.append(f"| {kind} | {page_cell} | {_esc(pg.get('diff_summary', ''))} |")
         side = ", ".join(f"{k} {v}건" for k, v in (("용어집", self.counts["glossary"]), ("참고문헌", self.counts["references"]), ("표준", self.counts["standards"]),
-                                                 ("열린 질문", self.counts["open_questions"]), ("흐름 매트릭스 칸", self.counts["flow_cells"]),
+                                                 ("열린 질문", self.counts["open_questions"]), ("현장 유형 매트릭스 칸", self.counts["flow_cells"]),
                                                  ("트랙 백로그", self.counts["backlog"]), ("정정 요청", self.counts["corrections"])) if v)
         if side and end_state.startswith("게시"):
             pages_rows.append(f"| 부수 갱신 | 색인·홈·대분류 자동 영역, {side} | 퍼블리셔 반영 |")

@@ -1,0 +1,356 @@
+# 개념 재정립 작업 데이터 (1/3) — 렌즈, 카테고리, 영역
+# build_scope.py 가 이 파일과 items_*.yaml, mapping.yaml 을 읽어 01~04 문서를 만든다.
+# 고칠 때는 이 데이터를 고치고 스크립트를 다시 돌린다(문서를 손으로 고치지 않는다).
+
+lenses:
+  누가: [개발, 설계, 운영, 제조사, 소유자, 규제, 현장 사람]
+  언제: [조사, 설계, 구현, 로봇·설비 연동, 설치·시운전, 운영, 유지·변경, 폐기·교체]
+  무엇: [데이터 모델, 인터페이스·프로토콜, 알고리즘, UI·대화, 인프라, 검증·시험, 거버넌스·계약]
+  어디: [물류창고, 제조 공장, 병원, 상업 시설, 가정, 실외, 기타]
+
+role_labels:
+  개발: 플랫폼 개발자
+  설계: 통합·설계자
+  운영: 운영자
+  제조사: 로봇 제조사
+  소유자: 현장 소유자
+  규제: 규제·감사
+  현장 사람: "현장의 사람(작업자·방문객·환자·거주자) — 렌즈에 추가한 값 [가정]"
+
+# 필수 두 항목의 하위 항목. check 2 가 이 목록으로 검사한다.
+mandatory:
+  온톨로지:
+    required: [등록, 능력 표현, 연동]
+    extra: [검증·변경 관리]
+  채팅:
+    required: [맵 작성, 시나리오 구성, 로봇 구성, 시뮬레이션 재현]
+    extra: [업무 지시, 기반]
+
+# 출처 유형. 앞의 셋은 사용자가 말한 수집 대상(연구·기사·업체 발표)이고, check 6 이 이 셋 가운데 2종 이상을 요구한다.
+source_types_core: [논문, 기사, 업체 발표]
+source_types_other: [표준, 오픈소스 문서, 정부·연구기관, 업계 보고서]
+
+categories:
+  - id: A
+    name: 기획·사업
+    full_name: 기획·사업
+    slug: planning-and-business
+    must: false
+    def: "플랫폼을 들이기 전과 들이는 동안 무엇을 왜 할지 정하는 일. 기술·시장 동향 조사, 사용 사례·요구·책임 범위, 경제성·조달·사업 모델."
+    include: "결정의 대상이 ‘무엇을 맡기고, 무엇을 들이고, 얼마를 쓸지’인 항목. 구현 방법은 다른 카테고리에 둔다."
+    question: "어떤 일을 로봇에게 맡기고, 무엇을 들여, 어떤 효과를 볼 것인가?"
+    if_missing: "맡길 일의 범위와 투자 효과를 설명하지 못해 도입이 시작되지 않는다."
+    why: "동향 조사·요구 정의·조달은 현장 소유자와 경영이 결정하고, 출처도 시장 보고서와 기사가 중심이라 구현 항목과 따로 묶었다."
+    sources:
+      - {type: 업계 보고서, ex: "IFR World Robotics 같은 연간 로봇 통계, 이동 로봇·서비스 로봇 시장 보고서"}
+      - {type: 기사, ex: "로봇 산업 전문 매체의 투자·도입 기사"}
+      - {type: 업체 발표, ex: "오케스트레이션·관제 제품 출시, 서비스형 로봇(RaaS) 요금제 발표"}
+      - {type: 논문, ex: "로봇 도입의 경제성·총소유비용 분석"}
+  - id: B
+    name: 로봇 온톨로지
+    full_name: "로봇 온톨로지 — 이기종 로봇 등록·능력 표현·시스템·로봇 연동"
+    slug: robot-ontology
+    must: true
+    def: "서로 다른 제조사의 로봇을 등록하고, 무엇을 할 수 있는지 공통 모델로 표현하고, 그 모델로 시스템과 로봇이 쉽게 연동되게 하는 온톨로지 기능 전체."
+    include: "로봇·능력·작업의 의미 모델과, 그 모델을 만들고(등록·추출·검토) 쓰고(질의·실행 연결·연동 자동화) 지키는(검증·변경 관리) 일. 통신 배관 자체(프로토콜·어댑터 구현)는 F에 둔다."
+    question: "서로 다른 제조사의 로봇을 어떻게 등록하고, 할 수 있는 일을 같은 말로 표현해, 시스템과 쉽게 연결할 것인가?"
+    if_missing: "새 로봇마다 연동을 손으로 다시 만들어야 하고, 어떤 로봇이 어떤 일을 할 수 있는지 플랫폼이 판단하지 못한다."
+    why: "사용자 필수 항목이다. 옛 분류에서 한 영역(5)이던 것을 등록·능력 표현·연동·검증 네 영역으로 넓혀 카테고리로 올렸다."
+    sources:
+      - {type: 표준, ex: "IEEE 1872-2015(CORA), IEEE 1872.2-2021, VDA 5050 팩트시트, 자산 관리 셸(AAS)"}
+      - {type: 논문, ex: "KnowRob, 능력·스킬·서비스 모델, 문서에서 온톨로지를 만드는 온톨로지 학습 연구"}
+      - {type: 오픈소스 문서, ex: "ROS 2 로봇 기술 형식(URDF), Open-RMF 플릿 구성"}
+      - {type: 업체 발표, ex: "제조사 SDK·API 문서 공개, 팩트시트 지원 발표"}
+  - id: C
+    name: 채팅 기반 구성·운영
+    full_name: "채팅 기반 구성·운영 — 맵 작성·시나리오 구성·로봇 구성·실제 상황 시뮬레이션 재현·업무 지시"
+    slug: chat-based-configuration-and-operation
+    must: true
+    def: "채팅으로 맵을 그리고, 시나리오를 구성하고, 로봇을 구성하고, 실제 상황을 시뮬레이션으로 재현하고, 업무를 지시·관리하는 대화형 기능 전체와 그 신뢰 기반."
+    include: "사용자가 대화로 하는 일과, 대화 기능 자체의 확인·승인·오해석 방지·권한·모델 연결·평가. 대화가 부르는 엔진(지도 모델·시뮬레이터·배정 알고리즘)은 D·I·G 같은 해당 카테고리에 두고 연결한다."
+    question: "맵 작성, 시나리오 구성, 로봇 구성, 실제 상황 재현, 업무 지시를 비전문 사용자가 대화만으로 할 수 있게 하려면?"
+    if_missing: "현장 구성과 운영이 전문가용 편집 도구에 묶여, 설계 사용자와 운영 사용자가 플랫폼을 직접 쓰지 못한다."
+    why: "사용자 필수 항목이다. 옛 트랙 이름(자연어 업무 지시 챗봇)은 업무 지시만 가리켰으므로, 맵·시나리오·로봇 구성·시뮬레이션 재현·업무 지시 다섯 기능을 영역 이름으로 드러냈다."
+    sources:
+      - {type: 논문, ex: "언어 모델 기반 로봇 계획(SayCan, Code as Policies), 언어로 3D 환경·시뮬레이션 과제를 만드는 연구(Holodeck, RoboGen 등)"}
+      - {type: 업체 발표, ex: "로봇·관제 업체의 자연어 지시·생성형 AI 구성 기능 발표"}
+      - {type: 기사, ex: "생성형 AI 로봇 인터페이스 도입 기사"}
+      - {type: 오픈소스 문서, ex: "언어 모델 에이전트·도구 호출·구조화 출력 문서"}
+  - id: D
+    name: 공간·지도 모델
+    full_name: 공간·지도 모델
+    slug: space-and-map-model
+    must: false
+    def: "건물 도면·센서 지도·좌표계를 하나의 공간 모델로 만들고, 장소에 의미를 붙이고, 바뀔 때 관리하는 일."
+    include: "공간의 형상·연결·좌표·층·이름에 관한 항목. 공간 안에 있는 것들의 현재 상태는 E에 둔다."
+    question: "로봇마다 다른 지도와 건물 도면을 어떻게 하나의 공간으로 만들고 유지할 것인가?"
+    if_missing: "로봇이 어디로 갈 수 있는지, 같은 장소를 무엇이라 부르는지 플랫폼이 몰라 배정·경로·대화가 모두 막힌다."
+    why: "옛 B(공통 정보·환경 모델)에서 공간 항목만 모았다. 도면 인식 트랙의 연구 대상이 여기에 있다."
+    sources:
+      - {type: 표준, ex: "IFC(ISO 16739), OGC IndoorGML"}
+      - {type: 논문, ex: "평면도 인식(래스터–벡터 변환), 다중 지도 정합, 위상 지도"}
+      - {type: 오픈소스 문서, ex: "Open-RMF 건물 지도 편집기, Nav2 지도 서버"}
+      - {type: 업체 발표, ex: "BIM 연동·지도 자동 생성 제품 발표"}
+  - id: E
+    name: 사물·사람·실시간 상태
+    full_name: 사물·사람·실시간 상태
+    slug: objects-people-and-live-state
+    must: false
+    def: "작업 대상과 자산의 식별·인계, 현장의 사람, 로봇·설비·공간의 현재 상태를 믿을 수 있게 관리하는 일."
+    include: "움직이거나 바뀌는 것들과 그 현재 상태에 관한 항목. 로봇 능력 같은 정적 의미는 B, 공간 형상은 D에 둔다."
+    question: "작업 대상·사람·설비·로봇이 지금 어디에 어떤 상태로 있는지 어떻게 믿을 수 있게 알 것인가?"
+    if_missing: "물건이 실제로 넘겨졌는지, 사람이 있는지 모른 채 명령하게 되어 작업 완료와 안전을 보장하지 못한다."
+    why: "옛 B의 7·8번에 시뮬레이터가 다루는 사람(보행자) 모델을 더했다. 공간(D)은 설계 때 주로 만들고 이 카테고리는 운영 중 계속 바뀌어 따로 묶었다."
+    sources:
+      - {type: 표준, ex: "GS1 EPCIS"}
+      - {type: 논문, ex: "사회적 내비게이션·보행자 흐름 모델, 여러 출처의 상태 추정과 데이터 일관성"}
+      - {type: 업체 발표, ex: "실내 위치 추적(RTLS)·자산 추적 제품 발표"}
+      - {type: 기사, ex: "사람이 많은 공간의 로봇 운영 기사"}
+  - id: F
+    name: 연동
+    full_name: "연동 — 로봇·설비·업무 시스템"
+    slug: integration
+    must: false
+    def: "제조사 관제·로봇, 문·승강기 같은 설비, 업무 시스템과 실제로 연결하고 표준으로 호환성을 확보하는 일."
+    include: "메시지·API·프로토콜·어댑터로 외부와 주고받는 항목. 온톨로지로 연동을 자동화하는 일은 B에 둔다."
+    question: "제조사 관제·로봇·문·승강기·업무 시스템과 어떻게 확실하게 연결할 것인가?"
+    if_missing: "로봇에 명령을 보내지도, 층을 옮기지도, 업무 요청을 받지도 못해 플랫폼이 실제로 아무것도 움직이지 못한다."
+    why: "옛 C(연결·실행 기반)의 9·10번, 옛 A의 1번, 옛 G의 28번 표준 부분을 모았다. 로봇·설비·업무 시스템 연결은 같은 연동 기술 묶음이다."
+    sources:
+      - {type: 표준, ex: "VDA 5050, MassRobotics 상호운용 표준, OPC UA 로보틱스 규격, ISA-95"}
+      - {type: 오픈소스 문서, ex: "Open-RMF 플릿 어댑터·설비 어댑터, ROS 2"}
+      - {type: 업체 발표, ex: "제조사 관제 API 공개, 승강기·출입통제 업체의 로봇 연동 발표"}
+      - {type: 기사, ex: "여러 제조사 로봇 연동 사례 기사"}
+  - id: G
+    name: 계획·최적화
+    full_name: 계획·최적화
+    slug: planning-and-optimization
+    must: false
+    def: "작업을 모델링·분해하고, 로봇에 배정하고, 순서·경로·공용 자원·충전을 최적화하는 결정 알고리즘."
+    include: "실행 전에 ‘누가·언제·어디로·무엇을 써서’를 정하는 항목."
+    question: "누가, 언제, 어디로, 어떤 자원을 써서 일할 것인가?"
+    if_missing: "로봇이 늘수록 충돌·대기·충전 몰림이 생겨 처리량이 오히려 줄어든다."
+    why: "옛 D를 그대로 이어받고, 작업 모델링(옛 2번)을 계획의 입력으로 옮겨 왔다."
+    sources:
+      - {type: 논문, ex: "MRTA 분류 체계, MAPF·Lifelong MAPF, MAPD"}
+      - {type: 오픈소스 문서, ex: "Open-RMF 작업 배정·교통 관리"}
+      - {type: 업체 발표, ex: "대규모 로봇 교통 관리 기술 발표"}
+      - {type: 기사, ex: "MAPF 공개 대회·벤치마크 결과 기사"}
+  - id: H
+    name: 실행·협업·예외 복구
+    full_name: 실행·협업·예외 복구
+    slug: execution-collaboration-and-recovery
+    must: false
+    def: "명령을 확실하게 실행하고, 로봇 사이·사람과 로봇 사이의 협업과 인계를 확인하며, 예외가 생기면 복구하는 일."
+    include: "실행 중에 일어나는 조정·확인·복구 항목."
+    question: "계획한 일을 여러 로봇과 사람이 함께 끝까지 해내고, 어긋나면 어떻게 이어 갈 것인가?"
+    if_missing: "명령이 중복되거나 사라지고, 인계가 확인되지 않으며, 고장 한 번에 업무가 멈춘다."
+    why: "옛 C의 12번과 옛 E의 17·18·20번을 ‘실행 중’이라는 공통 시점으로 묶었다."
+    sources:
+      - {type: 논문, ex: "다중 로봇 협업·물체 인계, 행동 트리 기반 실행, 고장 복구"}
+      - {type: 정부·연구기관, ex: "NIST 협업 로봇 시스템 성능 평가"}
+      - {type: 오픈소스 문서, ex: "BehaviorTree.CPP, Nav2 복구 동작"}
+      - {type: 업체 발표, ex: "모바일 매니퓰레이터·다중 로봇 협업 사례 발표"}
+  - id: I
+    name: 설계·시뮬레이션
+    full_name: 설계·시뮬레이션
+    slug: design-and-simulation
+    must: false
+    def: "시나리오를 모델링하고, 시뮬레이션으로 처리능력·배치·정책을 미리 보고, 가상 시운전과 실제 상황 재현을 하는 설계 사용자의 일."
+    include: "가상 환경에서 설계·예측·재현하는 항목. 이 일을 대화로 하는 인터페이스는 C에 둔다."
+    question: "현장을 바꾸거나 로봇을 늘리기 전에 가상으로 설계하고 결과를 미리 볼 수 있는가?"
+    if_missing: "현장에 설치해 봐야 결과를 알 수 있어 설계 변경의 비용과 위험이 커진다."
+    why: "옛 A의 3번과 옛 F의 22번에, 시뮬레이터가 구현한 시나리오 형식·계획 검증을 더해 설계 사용자의 일로 묶었다."
+    sources:
+      - {type: 오픈소스 문서, ex: "MuJoCo, Gazebo, NVIDIA Isaac Sim 문서"}
+      - {type: 논문, ex: "시뮬레이션–현실 차이(sim-to-real), 가상 시운전"}
+      - {type: 표준, ex: "ISO 23247 제조 디지털 트윈 프레임워크"}
+      - {type: 업체 발표, ex: "디지털 트윈·시뮬레이션 플랫폼 발표"}
+  - id: J
+    name: 현장 운영·관제
+    full_name: 현장 운영·관제
+    slug: field-operations-and-monitoring
+    must: false
+    def: "운영 사용자가 상태를 보고, 이상을 알아차리고, 원인을 찾고, 성과를 측정하고, 운영 절차를 돌리는 일."
+    include: "운영 중 사람이 보고 판단하는 화면·지표·절차 항목."
+    question: "운영자가 지금 무슨 일이 일어나는지 보고, 이상을 알아차리고, 성과를 확인할 수 있는가?"
+    if_missing: "문제를 늦게 알아차리고 원인을 찾지 못해 현장이 플랫폼을 믿고 맡기지 못한다."
+    why: "옛 E의 18번(운영 인터페이스)·19번과 옛 A의 4번(성과)을 운영 사용자의 일로 묶었다."
+    sources:
+      - {type: 업체 발표, ex: "플릿 관리·원격 관제 제품 발표"}
+      - {type: 논문, ex: "운영자 인터페이스, 이상 탐지, 원인 분석"}
+      - {type: 기사, ex: "로봇 관제 센터 운영 사례 기사"}
+  - id: K
+    name: 플랫폼 아키텍처·인프라
+    full_name: 플랫폼 아키텍처·인프라
+    slug: platform-architecture-and-infrastructure
+    must: false
+    def: "플랫폼의 구조, 클라우드·현장 서버·로봇의 역할 분담, 네트워크·가용성·다현장, 데이터·관측성·배포·비용."
+    include: "플랫폼 소프트웨어 자체를 받치는 기술 항목."
+    question: "플랫폼을 어디에 어떻게 두어야 끊김·확장·다현장 조건에서도 계속 동작하는가?"
+    if_missing: "네트워크가 끊기거나 로봇이 늘면 플랫폼이 멈추고, 현장과 고객을 늘릴 수 없다."
+    why: "옛 C의 11번에 아키텍처·API·데이터·배포처럼 플랫폼 구현에 꼭 필요하지만 옛 분류에 없던 항목을 더했다."
+    sources:
+      - {type: 오픈소스 문서, ex: "ROS 2 미들웨어(DDS, Zenoh)"}
+      - {type: 논문, ex: "클라우드 로보틱스, 엣지 연산 분담"}
+      - {type: 업계 보고서, ex: "5G·사설망 로봇 활용 보고서"}
+      - {type: 업체 발표, ex: "클라우드 로봇 플랫폼 발표"}
+  - id: L
+    name: AI·학습 기술
+    full_name: AI·학습 기술
+    slug: ai-and-learning
+    must: false
+    def: "로봇 기반 모델·언어 모델, 문서·도면·장면 이해, 예측·학습 기반 최적화, AI 결과의 신뢰와 모델 운영."
+    include: "여러 카테고리에서 쓰이는 AI 방법 자체. 적용 결과는 해당 카테고리(B·C·D·G·J 등)에도 연결한다."
+    question: "학습·언어 모델 같은 AI 기술을 어디에 쓰고, 그 결과를 어떤 기준으로 믿을 것인가?"
+    if_missing: "문서·도면 해석, 대화, 예측 같은 자동화가 불가능하거나, 검증되지 않은 AI 판단이 그대로 실행된다."
+    why: "옛 G의 27번을 연구 흐름별 네 영역으로 나눴다. AI 연구 동향은 양이 많아 따로 모으는 편이 수집에 유리하다."
+    sources:
+      - {type: 논문, ex: "RT-2 같은 시각–언어–행동 모델, Open X-Embodiment"}
+      - {type: 업체 발표, ex: "로봇 기반 모델·범용 로봇 발표"}
+      - {type: 기사, ex: "임바디드 AI 동향 기사"}
+  - id: M
+    name: 안전
+    full_name: 안전
+    slug: safety
+    must: false
+    def: "위험성 평가, 안전 기능과 정지·재개, 사람 근접 안전, 비상 대응, 안전 표준·인증, 사고 조사."
+    include: "사람과 설비의 물리적 안전에 관한 항목."
+    question: "여러 로봇·사람·설비가 함께 움직일 때 생기는 위험을 어떻게 찾고 막을 것인가?"
+    if_missing: "사람이 다치거나 설비가 손상될 위험을 관리하지 못해 현장 투입 허가를 받지 못한다."
+    why: "옛 G의 25번에 사람 근접 안전·표준 인증·사고 조사를 더했다. 안전과 보안은 표준·전문가·출처가 달라 나눴다."
+    sources:
+      - {type: 표준, ex: "ISO 10218-1·-2, ISO 3691-4, ISO 13482, ANSI/A3 R15.08"}
+      - {type: 논문, ex: "속도·분리 감시, 다중 로봇 위험성 평가"}
+      - {type: 정부·연구기관, ex: "산업안전 당국·연구기관 지침"}
+      - {type: 기사, ex: "로봇 안전사고 보도"}
+  - id: N
+    name: 보안·개인정보
+    full_name: 보안·개인정보
+    slug: security-and-privacy
+    must: false
+    def: "인증·권한·격리, 통신 보호, 위협 관리와 감사 기록, 문서·대화 입력 보안, 개인정보·영상 데이터 보호."
+    include: "정보 보안과 개인정보 항목."
+    question: "누가 어떤 로봇에 무엇을 시킬 수 있는지 통제하고, 데이터와 사람의 정보를 어떻게 지킬 것인가?"
+    if_missing: "권한 없는 명령·유출·침해가 곧바로 물리적 사고와 개인정보 사고로 이어진다."
+    why: "옛 G의 26번을 세 영역으로 나누고, 언어 모델을 쓰면서 새로 생긴 입력 보안을 더했다."
+    sources:
+      - {type: 표준, ex: "IEC 62443"}
+      - {type: 오픈소스 문서, ex: "ROS 2 DDS 보안(SROS2), ROS 2 위협 모델"}
+      - {type: 정부·연구기관, ex: "개인정보 보호 당국의 영상 정보 지침"}
+      - {type: 논문, ex: "로봇 사이버보안, 언어 모델 프롬프트 주입"}
+      - {type: 기사, ex: "로봇 보안 취약점 보도"}
+  - id: O
+    name: 검증·도입·수명주기
+    full_name: 검증·도입·수명주기
+    slug: verification-deployment-and-lifecycle
+    must: false
+    def: "시험·검증, 현장 조사·설치·시운전·인수, 운영 이관·확대·교육, 정비·버전·교체·폐기."
+    include: "만든 것을 확인하고, 현장에 넣고, 오래 유지하는 항목."
+    question: "만든 것을 어떻게 검증하고, 현장에 설치해 넘기고, 오래 바꿔 가며 운영할 것인가?"
+    if_missing: "업데이트할 때마다 무엇이 깨졌는지 모르고, 새 현장 설치가 매번 처음부터 반복된다."
+    why: "옛 F(도입·검증·유지관리)를 이어받았다. 22번(시뮬레이션)은 I로, 21번의 로봇 등록은 B로 보냈다."
+    sources:
+      - {type: 정부·연구기관, ex: "NIST ARIAC, 로봇 성능 시험 방법"}
+      - {type: 표준, ex: "ASTM F45 위원회의 성능 시험 표준"}
+      - {type: 논문, ex: "형식 검증, 장애 주입, 예측 정비"}
+      - {type: 업체 발표, ex: "도입·시운전 사례, 원격 업데이트 기능 발표"}
+  - id: P
+    name: 거버넌스·법규·사회
+    full_name: 거버넌스·법규·사회
+    slug: governance-law-and-society
+    must: false
+    def: "여러 사업자 사이의 책임·계약·데이터·API 정책, 법·규제·보험·라이선스, 노동 영향·수용성·접근성."
+    include: "기술 밖의 규칙·책임·사회 항목."
+    question: "여러 사업자와 법, 사회적 요구 속에서 책임과 규칙을 어떻게 정할 것인가?"
+    if_missing: "연동 오류·사고·데이터 분쟁 때 책임질 주체가 없고, 규제를 넘지 못해 서비스를 열지 못한다."
+    why: "옛 G의 28번 거버넌스 부분에 법·보험·사회 항목을 더했다."
+    sources:
+      - {type: 정부·연구기관, ex: "EU 기계류 규정(2023/1230), EU AI 법, 한국 지능형 로봇법의 실외 이동로봇 규정"}
+      - {type: 표준, ex: "IEEE 7007(윤리 기반 로봇·자동화 온톨로지 표준)"}
+      - {type: 논문, ex: "로봇 도입의 노동 영향·사회적 수용성"}
+      - {type: 기사, ex: "로봇 규제·책임 논쟁 보도"}
+  - id: Q
+    name: 현장 유형별 적용
+    full_name: 현장 유형별 적용
+    slug: site-type-applications
+    must: false
+    def: "현장 유형(물류창고·제조 공장·병원·상업 시설·가정·실외·기타)마다 다른 요구와 도입 사례를 모으는 곳."
+    include: "특정 현장 유형에만 해당하는 항목과 그 현장의 도입 사례·기사·업체 발표. 모든 현장에 공통인 기능은 A~P에 둔다."
+    question: "현장마다 다른 요구를 플랫폼이 어떻게 받아들이고, 실제로 어디에 어떻게 쓰이고 있는가?"
+    if_missing: "한 현장 유형에만 맞춘 플랫폼이 되어 다른 현장으로 넓히지 못한다."
+    why: "옛 분류는 물류 흐름 7단계를 모든 영역의 시나리오 축으로 썼다. 새 구조는 물류창고를 여러 현장 유형 가운데 하나로 두고, 기존 물류 시나리오를 Q1에 사례로 남긴다."
+    sources:
+      - {type: 기사, ex: "현장 유형별 로봇 도입 사례 기사"}
+      - {type: 업체 발표, ex: "병원·호텔·공장·가정·실외 도입 발표"}
+      - {type: 업계 보고서, ex: "서비스 로봇·물류 로봇 시장 보고서"}
+      - {type: 논문, ex: "현장 적용 사례 연구"}
+
+areas:
+  - {id: A1, cat: A, name: "기술·시장·업체 동향", slug: technology-market-and-vendor-trends, def: "카테고리마다 연구·기사·업체 발표를 모으고, 제품·업체·로봇 종류의 지형을 정리한다."}
+  - {id: A2, cat: A, name: "사용 사례·요구·책임 범위", slug: use-cases-requirements-and-scope, def: "로봇에게 맡길 일과 현장 유형별 요구, 플랫폼이 직접 맡을 범위와 외부에 맡길 범위를 정한다."}
+  - {id: A3, cat: A, name: "경제성·조달·사업 모델", slug: economics-procurement-and-business-models, def: "투자 효과를 따지고, 로봇·플랫폼을 골라 계약하고, 과금 방식을 정한다."}
+  - {id: B1, cat: B, sub: 등록, name: "이기종 로봇 등록", slug: heterogeneous-robot-registration, def: "서로 다른 제조사의 로봇을 문서 근거와 함께 등록하고, 사람이 검토·승인한다."}
+  - {id: B2, cat: B, sub: 능력 표현, name: "로봇 능력·작업 표현", slug: robot-capability-and-task-representation, def: "능력·작업 요구·환경 조건을 공통 어휘로 표현하고 기존 표준과 맞춘다."}
+  - {id: B3, cat: B, sub: 연동, name: "온톨로지 기반 시스템·로봇 연동", slug: ontology-based-system-and-robot-integration, def: "온톨로지로 수행 가능한 로봇을 찾고, 능력을 실제 명령에 묶고, 연동 설정을 자동으로 만든다."}
+  - {id: B4, cat: B, sub: 검증·변경 관리, name: "온톨로지 검증·변경 관리", slug: ontology-verification-and-change-management, def: "온톨로지가 빠짐없고 정확한지 검증하고, 문서·펌웨어가 바뀔 때 버전을 관리한다."}
+  - {id: C1, cat: C, sub: 맵 작성, name: "채팅으로 맵 작성", slug: chat-map-authoring, def: "대화로 층·구역·통로·문·승강기·충전 위치를 만들고 고친다."}
+  - {id: C2, cat: C, sub: 시나리오 구성, name: "채팅으로 시나리오 구성", slug: chat-scenario-composition, def: "대화로 할 일·물품·사람·순서·기한·실패 처리 조건을 정한다."}
+  - {id: C3, cat: C, sub: 로봇 구성, name: "채팅으로 로봇 구성", slug: chat-robot-configuration, def: "대화로 투입 로봇의 종류·대수·장비·위치·역할을 정하고 수행 가능 여부를 확인한다."}
+  - {id: C4, cat: C, sub: 시뮬레이션 재현, name: "채팅으로 실제 상황 시뮬레이션 재현", slug: chat-real-situation-simulation-replay, def: "실제로 있었던 상황을 대화로 시뮬레이션에 재현하고, 재현이 실제와 얼마나 맞는지 보이며, 조건을 바꿔 비교한다."}
+  - {id: C5, cat: C, sub: 업무 지시, name: "채팅으로 업무 지시·오케스트레이션", slug: chat-task-instruction-and-orchestration, def: "대화로 일을 지시하면 분해·배정·일정을 계획으로 제안하고, 승인 뒤 실행하며 진행 상황을 설명한다."}
+  - {id: C6, cat: C, sub: 기반, name: "대화형 기능의 신뢰·기반", slug: conversational-trust-and-foundations, def: "오해석 방지, 권한, 모델 연결, 입력 채널, 대화와 화면 편집의 연동, 평가처럼 대화 기능 전체를 믿고 쓰게 하는 기반."}
+  - {id: D1, cat: D, name: "도면·BIM에서 지도 만들기", slug: maps-from-floor-plans-and-bim, def: "평면도·BIM에서 공간과 시설을 인식해 지도 초안을 만들고 현장과 맞춘다."}
+  - {id: D2, cat: D, name: "지도·공간·위치 모델", slug: map-space-and-location-model, def: "로봇마다 다른 지도·좌표·층을 하나의 공간 모델로 통합하고 위치 신뢰도를 관리한다."}
+  - {id: D3, cat: D, name: "장소 의미·지도 관리", slug: place-semantics-and-map-management, def: "장소에 이름·용도를 붙이고, 지도를 편집하고, 바뀔 때 버전을 관리한다."}
+  - {id: E1, cat: E, name: "작업 대상·자산 식별과 인계 추적", slug: work-object-and-asset-identification-and-handover-tracking, def: "물품·자산·도구 같은 작업 대상의 식별·위치·인계 책임을 추적하고, 사람에게 넘길 때 수령인을 확인한다."}
+  - {id: E2, cat: E, name: "실시간 세계 상태·데이터 일관성", slug: real-time-world-state-and-data-consistency, def: "로봇·설비·공간·물품의 현재 상태를 통합하고, 관측의 신선도·신뢰도를 관리한다."}
+  - {id: E3, cat: E, name: "사람·보행자 모델", slug: people-and-pedestrian-model, def: "현장 사람의 위치·흐름·혼잡을 모델링해 계획과 안전에 쓴다."}
+  - {id: F1, cat: F, name: "로봇·제조사 관제 연동", slug: robot-and-vendor-fleet-manager-integration, def: "제조사 API·SDK·관제 시스템과 연결하는 어댑터, 공통 명령·관측 계약, 로봇과 주고받는 통신 방식."}
+  - {id: F2, cat: F, name: "상호운용 표준·적합성", slug: interoperability-standards-and-conformance, def: "로봇 상호운용 표준을 채택·변환하고 적합성을 시험한다."}
+  - {id: F3, cat: F, name: "설비·건물 시스템 연동", slug: facility-and-building-system-integration, def: "문·승강기·출입통제·컨베이어·PLC·고정 센서와 작업을 연계한다."}
+  - {id: F4, cat: F, name: "업무 시스템 연동", slug: business-system-integration, def: "업무 요청을 받아 작업으로 바꾸고, 진행·완료를 되돌려 반영한다."}
+  - {id: G1, cat: G, name: "작업·워크플로 모델링", slug: task-and-workflow-modeling, def: "현장 업무를 단계·선후관계·완료 조건으로 정의하고, 계획과 실행이 따를 운영 정책을 정한다."}
+  - {id: G2, cat: G, name: "작업 배정 — MRTA", slug: task-allocation-mrta, def: "작업을 로봇 또는 로봇 팀에 배정한다."}
+  - {id: G3, cat: G, name: "작업 순서·스케줄링", slug: task-sequencing-and-scheduling, def: "순서·시간 제약·긴급 삽입을 다루고, 계속 들어오는 작업에 맞춰 다시 계획한다."}
+  - {id: G4, cat: G, name: "다중 로봇 경로·교통 관리 — MAPF", slug: multi-robot-path-and-traffic-management-mapf, def: "여러 로봇의 경로·통과 시점·우선권을 조율한다."}
+  - {id: G5, cat: G, name: "공용 자원·충전·에너지 최적화", slug: shared-resource-charging-and-energy-optimization, def: "공용 자원을 예약·배분하고 충전·에너지를 계획한다."}
+  - {id: H1, cat: H, name: "명령·작업 실행의 신뢰성", slug: command-and-task-execution-reliability, def: "명령 상태 관리, 중복 실행 방지, 관측 근거 완료 판정."}
+  - {id: H2, cat: H, name: "로봇 간 협업·물리적 인계", slug: robot-to-robot-collaboration-and-physical-handover, def: "로봇 간 협업, 인계 확인, 조작 작업 관리."}
+  - {id: H3, cat: H, name: "사람–로봇 협업", slug: human-robot-collaboration, def: "사람과의 작업 분담, 수동 개입·원격 조작, 주변 사람과의 소통."}
+  - {id: H4, cat: H, name: "예외 복구·재계획·업무 연속성", slug: exception-recovery-replanning-and-business-continuity, def: "고장·통신 단절·누락에 대한 복구와 제한 운영."}
+  - {id: I1, cat: I, name: "시나리오 모델·편집", slug: scenario-model-and-editing, def: "시나리오 형식, 예제 라이브러리, 시나리오·워크플로 편집기."}
+  - {id: I2, cat: I, name: "시뮬레이션·예측용 디지털 트윈", slug: simulation-and-predictive-digital-twin, def: "물리·센서·다중 로봇 시뮬레이션과 그 자산, 운영 정책·수요 변화 예측."}
+  - {id: I3, cat: I, name: "처리능력·규모·배치 설계", slug: capacity-sizing-and-layout-design, def: "필요한 로봇 수·배치·병목·여러 현장의 자원 배치를 설계하고, 로봇이 다니기 쉬운 공간을 만든다."}
+  - {id: I4, cat: I, name: "가상 시운전·실제 상황 재현", slug: virtual-commissioning-and-real-situation-replay, def: "설치 전 가상 시운전, 실행 전 계획 검증, 운영 기록 기반 재현, 시뮬레이션–현실 차이 관리."}
+  - {id: J1, cat: J, name: "관제 화면·실행 기록", slug: control-screen-and-execution-records, def: "지도 위 상태 표시, 설명 가능한 표시, 실행 기록 재생."}
+  - {id: J2, cat: J, name: "모니터링·이상 탐지·원인 분석", slug: monitoring-anomaly-detection-and-root-cause-analysis, def: "감시, 로봇 건강 상태 진단, 이상 탐지, 원인 분석, 알림."}
+  - {id: J3, cat: J, name: "운영 성과 측정·개선", slug: operational-performance-measurement-and-improvement, def: "지표 정의·측정, 로봇 성과와 업무 성과 구분, 운영 개선."}
+  - {id: J4, cat: J, name: "운영 절차·요청 창구", slug: operating-procedures-and-request-channels, def: "운영 절차·교대, 현장 사용자의 요청 창구."}
+  - {id: K1, cat: K, name: "플랫폼 아키텍처·외부 API", slug: platform-architecture-and-external-api, def: "기준 아키텍처, 클라우드·현장 서버·로봇 역할 분담, 외부 API·SDK."}
+  - {id: K2, cat: K, name: "분산 시스템·통신·컴퓨팅 구조", slug: distributed-systems-communication-and-computing, def: "현장 네트워크, 연결이 끊겨도 계속 운영, 다현장 구조, 확장성."}
+  - {id: K3, cat: K, name: "데이터·관측성·배포", slug: data-observability-and-deployment, def: "데이터 수집·보존, 플랫폼 관측성, 배포 자동화, 운영 비용."}
+  - {id: L1, cat: L, name: "로봇 기반 모델·언어 모델 계획", slug: robot-foundation-models-and-llm-planning, def: "시각–언어–행동 모델 같은 로봇 기반 모델의 흐름과 언어 모델 기반 작업 계획."}
+  - {id: L2, cat: L, name: "문서·도면·장면 이해", slug: document-drawing-and-scene-understanding, def: "매뉴얼·도면 해석과 플랫폼 수준의 장면 인식."}
+  - {id: L3, cat: L, name: "예측·학습 기반 최적화", slug: prediction-and-learning-based-optimization, def: "학습 기반 배정·경로, 수요·고장 예측."}
+  - {id: L4, cat: L, name: "AI·학습·적응과 모델 운영", slug: ai-learning-adaptation-and-model-operations, def: "AI 결과를 실행에 쓰는 기준과 불확실성, 모델 운영."}
+  - {id: M1, cat: M, name: "안전·위험 관리", slug: safety-and-risk-management, def: "위험성 평가, 안전 책임 경계, 정지·재개, 비상 대응."}
+  - {id: M2, cat: M, name: "사람 근접 안전", slug: human-proximity-safety, def: "사람과의 분리 거리·감속·양보, 구역별 속도·진입 제한."}
+  - {id: M3, cat: M, name: "안전 표준·인증·사고 조사", slug: safety-standards-certification-and-incident-investigation, def: "안전 표준 적합성·인증, 사고 기록과 사후 조사."}
+  - {id: N1, cat: N, name: "인증·권한·격리", slug: authentication-authorization-and-isolation, def: "장비·사용자 인증, 명령 권한, 원격 접속 계정, 고객·현장 격리."}
+  - {id: N2, cat: N, name: "통신 보호·위협 관리·감사", slug: communication-protection-threat-management-and-audit, def: "통신 보호, 위협 모델·취약점, 문서·대화 입력 보안, 감사 기록."}
+  - {id: N3, cat: N, name: "개인정보·영상 데이터", slug: privacy-and-video-data, def: "영상·작업자·거주자 데이터 보호, 최소 수집·익명화."}
+  - {id: O1, cat: O, name: "시험·형식 검증·벤치마크", slug: testing-formal-verification-and-benchmarking, def: "시험 설계·장애 주입·회귀 시험·형식 검증·벤치마크·재현 실험."}
+  - {id: O2, cat: O, name: "현장 조사·설치·시운전", slug: site-survey-installation-and-commissioning, def: "현장 조사, 설치·설정, 교정, 시운전, 인수 시험."}
+  - {id: O3, cat: O, name: "운영 이관·확대·교육", slug: operations-handover-scale-out-and-training, def: "운영 이관·지원, 단계적 확대, 교육·변화 관리."}
+  - {id: O4, cat: O, name: "자산·소프트웨어 수명주기 관리", slug: asset-and-software-lifecycle-management, def: "정비·고장 예측, 버전 관리, 장비 교체, 폐기."}
+  - {id: P1, cat: P, name: "다사업자 책임·계약·데이터", slug: multi-party-responsibility-contracts-and-data, def: "책임과 변경 승인, 데이터 소유권, API 변경 정책, 서비스 수준·감사 이력."}
+  - {id: P2, cat: P, name: "법·규제·보험·라이선스", slug: law-regulation-insurance-and-licensing, def: "법·규제 대응, 보험·사고 책임, 오픈소스·라이선스."}
+  - {id: P3, cat: P, name: "노동·수용성·접근성", slug: labor-acceptance-and-accessibility, def: "노동 영향·사회적 수용성, 고령자·장애인·어린이 접근성."}
+  - {id: Q1, cat: Q, name: "물류창고", slug: warehouse, def: "입고~반품 흐름의 로봇 작업. 기존 흐름 매트릭스와 영역 페이지의 물류 시나리오를 사례로 모은다."}
+  - {id: Q2, cat: Q, name: "제조 공장", slug: manufacturing-plant, def: "라인 공급, 공정 간 운반, 여러 로봇이 함께 하는 공정 작업."}
+  - {id: Q3, cat: Q, name: "병원·의료", slug: hospital-and-healthcare, def: "검체·약품·식사·린넨 이송, 감염 관리, 환자 정보."}
+  - {id: Q4, cat: Q, name: "상업 시설", slug: commercial-facilities, def: "호텔 객실 배송, 식당 서빙, 매장·쇼핑몰 안내·청소."}
+  - {id: Q5, cat: Q, name: "가정·공동주택", slug: home-and-apartment, def: "집안일 보조, 공동주택 배송, 사생활."}
+  - {id: Q6, cat: Q, name: "실외", slug: outdoor, def: "실외 배송·순찰·캠퍼스, 보도 주행 규정, 날씨."}
+  - {id: Q7, cat: Q, name: "기타 현장", slug: other-sites, def: "점검·순찰(플랜트·데이터센터·빌딩), 건설, 농업, 공공시설, 오피스, 연구실."}

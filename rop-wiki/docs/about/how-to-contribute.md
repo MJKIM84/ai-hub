@@ -38,19 +38,19 @@ version: 2
 | `areas` | `area_no`, `weight`, `reason` | 세부영역을 먼저 다루게 한다. `weight`는 선정 점수에 더해지는 가중치이고 `reason`은 로그에 남는 지정 사유다 |
 | `topics` | `title`, `area_no`, `weight` | 특정 주제로 주제 조사를 실행하게 한다. `area_no`는 주 연구영역이다 |
 | `questions` | `question`, `area_no` | 답을 찾게 할 질문이다. 리서치 에이전트의 조사 질문에 포함된다 |
-| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문이다. 제기 근거가 "사용자"로 기록되고 다음 트랙 실행에서 사용자 지정 질문으로 가장 먼저 처리된다. `track`에는 세 트랙의 slug(`manual-capability-ontology`, `nl-task-chatbot`, `floorplan-recognition`) 가운데 하나를 쓴다 |
+| `track_questions` | `track`, `stage`, `question`, `priority` | 트랙 백로그에 넣을 질문이다. 제기 근거가 "사용자"로 기록되고 다음 트랙 실행에서 사용자 지정 질문으로 가장 먼저 처리된다. `track`에는 세 트랙의 slug(`manual-capability-ontology`, `chat-based-configuration-and-operation`, `floorplan-recognition`) 가운데 하나를 쓴다 |
 
 예시는 다음과 같다. 항목이 없는 키는 빈 목록(`[]`)으로 둔다.
 
 ```yaml
 # config/priority.yaml — 사용자가 지정하는 우선 영역·주제·질문. 비어 있으면 순환 규칙만 따른다.
 areas:
-  - area_no: 7            # 7. 화물·재고·자산 식별과 추적
+  - area_no: 7            # 17. 작업 대상·자산 식별과 인계 추적
     weight: 10            # 대상 선정 점수에 더하는 가중치
     reason: "인계 확인 사례가 부족하다"
 topics:
   - title: "팔레트 인계 확인에 EPCIS 이벤트를 쓰는 방법"
-    area_no: 7            # 주 연구영역: 7. 화물·재고·자산 식별과 추적
+    area_no: 7            # 주 연구영역: 17. 작업 대상·자산 식별과 인계 추적
     weight: 8
 questions:
   - question: "로봇 도착과 실제 팔레트 인계를 어떤 이벤트로 구분해 기록하는가?"
@@ -103,7 +103,7 @@ track_questions:
 
 ## 실험 결과 입력: `experiments/`
 
-중점 연구 트랙의 실험은 사용자가 직접 수행한다. 스토리텔러 에이전트는 트랙마다 정한 단계(첫 트랙은 단계 3·5·7, 두 새 트랙은 단계 3·5)에서 실험 계획을 그 트랙의 실험 페이지([매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/experiments.md), [자연어 업무 지시 챗봇](../tracks/nl-task-chatbot/experiments.md), [건축 도면 자동 인식](../tracks/floorplan-recognition/experiments.md))에 제안하고, 사용자는 결과를 저장소의 `experiments/` 폴더에 넣는다.
+중점 연구 트랙의 실험은 사용자가 직접 수행한다. 스토리텔러 에이전트는 트랙마다 정한 단계(첫 트랙은 단계 3·5·7, 두 새 트랙은 단계 3·5)에서 실험 계획을 그 트랙의 실험 페이지([매뉴얼 기반 로봇 기능 온톨로지](../tracks/manual-capability-ontology/experiments.md), [채팅 기반 구성·운영](../tracks/chat-based-configuration-and-operation/experiments.md), [건축 도면 자동 인식](../tracks/floorplan-recognition/experiments.md))에 제안하고, 사용자는 결과를 저장소의 `experiments/` 폴더에 넣는다.
 
 - 폴더 이름은 `experiments/<날짜>-<이름>/`이다. 예: `experiments/2026-10-15-amr-manual-extraction/`. 날짜는 YYYY-MM-DD, 이름은 영문 소문자와 하이픈이다.
 - 폴더에는 `README.md`와 데이터 파일을 둔다. `README.md`에는 목적, 방법, 결과 요약을 적고, 어느 트랙·단계·질문(또는 실험 계획)에 대한 결과인지 밝힌다. 수치에는 측정 조건을 함께 적는다.
@@ -137,7 +137,7 @@ track_questions:
 - [에이전트 소개](agents.md) — 실행 순서, 반려·보류 처리, 사람이 개입하는 지점
 - [읽기 가이드](reading-guide.md) — 상태·신뢰도·태그 표기와 자동 갱신 영역
 - [열린 질문](../open-questions.md) — 분류 확장 제안과 사용자 검토 요청이 올라오는 곳
-- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](../tracks/manual-capability-ontology/index.md), [자연어 업무 지시 챗봇 트랙 개요](../tracks/nl-task-chatbot/index.md), [건축 도면 자동 인식 트랙 개요](../tracks/floorplan-recognition/index.md) — `track_questions`와 실험 결과가 반영되는 세 트랙
+- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](../tracks/manual-capability-ontology/index.md), [채팅 기반 구성·운영 트랙 개요](../tracks/chat-based-configuration-and-operation/index.md), [건축 도면 자동 인식 트랙 개요](../tracks/floorplan-recognition/index.md) — `track_questions`와 실험 결과가 반영되는 세 트랙
 - [확장 아이디어 연결 구조](../ideas/index.md) — 세 트랙이 연구하는 확장 아이디어의 연결 구조와 매핑표
 - [질문 백로그](../tracks/manual-capability-ontology/question-backlog.md) — 트랙 전용 질문의 상태
 - [변경 이력](../changelog.md)

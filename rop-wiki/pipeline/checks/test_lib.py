@@ -16,7 +16,7 @@ from lib import paths  # noqa: E402
 from lib.korean import topic_particle  # noqa: E402
 from lib.nav import _title, build_nav, flatten_nav, load_mkdocs_yml, mkdocs_yml_is_current, render_mkdocs_yml  # noqa: E402
 from lib import render as render_mod  # noqa: E402
-from lib.render import load_track_config, render_flow_matrix, render_for, track_slugs  # noqa: E402
+from lib.render import load_track_config, render_for, render_site_matrix, track_slugs  # noqa: E402
 
 
 def _load_script(name: str):
@@ -33,15 +33,20 @@ def _load_script(name: str):
 class TestPaths(unittest.TestCase):
     def test_root_and_slugs(self):
         self.assertTrue((paths.ROOT / "_source").is_dir())
-        self.assertEqual(len(paths.AREA_SLUGS), 28)
-        self.assertEqual(len(paths.CATEGORY_SLUGS), 7)
+        self.assertEqual(len(paths.AREA_SLUGS), 67)
+        self.assertEqual(len(paths.CATEGORY_SLUGS), 17)
         self.assertEqual(paths.category_letter_of(7), "B")
+        self.assertEqual(paths.category_letter_of(12), "C")
+        self.assertEqual(paths.category_letter_of(67), "Q")
         self.assertEqual(paths.area_rel_path(7),
-                         "categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md")
-        self.assertEqual(paths.area_repo_path(1), "docs/categories/a-business-supply-chain-design/01-order-and-business-system-integration.md")
+                         "categories/robot-ontology/ontology-verification-and-change-management.md")
+        self.assertEqual(paths.area_repo_path(1), "docs/categories/planning-and-business/technology-market-and-vendor-trends.md")
         self.assertEqual(paths.docs_rel("docs/index.md"), "index.md")
+        # 개정 분류(2026-09-28): 영역 파일 이름에는 번호를 붙이지 않는다
         for no, slug in paths.AREA_SLUGS.items():
-            self.assertTrue(slug.startswith(f"{no:02d}-"))
+            self.assertFalse(slug[:1].isdigit(), slug)
+        for letter, slug in paths.CATEGORY_SLUGS.items():
+            self.assertFalse(slug.startswith(f"{letter.lower()}-"), slug)
 
     def test_rel_link(self):
         self.assertEqual(paths.rel_link("index.md", "about/what-is-rop.md"), "about/what-is-rop.md")
@@ -120,7 +125,7 @@ class TestVerbatimChecks(unittest.TestCase):
     def test_tagged_text_strips_only_structure(self):
         """태그 줄 대조는 구조 표식(들여쓰기·인용 표식·태그 뒤 각주·"원문 주석: " 라벨)만 벗기고 본문은 그대로 둔다."""
         ps = _load_script("protect_source")
-        q = "로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가?"
+        q = "현장을 바꾸거나 로봇을 늘리기 전에 가상으로 설계하고 결과를 미리 볼 수 있는가?"
         self.assertEqual(ps.tagged_text(f"    {q} [분류원문]"), q)
         self.assertEqual(ps.tagged_text(f"> {q} [분류원문][^ref-003][^ref-004]"), q)
         self.assertEqual(ps.tagged_text(f"> 원문 주석: {q} [분류원문]"), q)
@@ -130,6 +135,10 @@ class TestVerbatimChecks(unittest.TestCase):
         allowed = ps._source_lines_and_cells()
         self.assertIn(q, allowed)
         self.assertNotIn(f"핵심 질문: {q}", allowed)
+        # 개정 전 원문(보관본) 인용은 [옛 분류원문] 태그와 "옛 …: " 라벨로 따로 대조한다
+        old_q = "로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가?"
+        self.assertEqual(ps.tagged_text(f"> 옛 질문: {old_q} [옛 분류원문]", ps.TAG_OLD), old_q)
+        self.assertIn(old_q, ps._source_lines_and_cells(ps.OLD_SRC))
 
     def test_reference_reliability_cap(self):
         """원문 미열람 출처는 유형 기준이 high 라도 medium 상한, URL 열림이 확인되면 유형 기준값."""
@@ -152,12 +161,15 @@ class TestKorean(unittest.TestCase):
 
 
 class TestNavAndRender(unittest.TestCase):
-    CATEGORY_TITLES = ["A. 업무·공급망 설계", "B. 공통 정보·환경 모델", "C. 연결·실행 기반", "D. 계획·최적화",
-                       "E. 협업·현장 운영", "F. 도입·검증·유지관리", "G. 안전·보안·지능·거버넌스"]
+    CATEGORY_TITLES = ["A. 기획·사업", "B. 로봇 온톨로지", "C. 채팅 기반 구성·운영", "D. 공간·지도 모델",
+                       "E. 사물·사람·실시간 상태", "F. 연동", "G. 계획·최적화", "H. 실행·협업·예외 복구",
+                       "I. 설계·시뮬레이션", "J. 현장 운영·관제", "K. 플랫폼 아키텍처·인프라", "L. AI·학습 기술",
+                       "M. 안전", "N. 보안·개인정보", "O. 검증·도입·수명주기", "P. 거버넌스·법규·사회",
+                       "Q. 현장 유형별 적용"]
 
     def test_nav_order_and_labels(self):
-        """사양서 4.8 의 상위 순서 전체: 홈 → 소개 → 대분류 A~G → 중점 연구 트랙 → 주제 → 용어집 → 참고문헌 →
-        표준·프레임워크 → 열린 질문 → 흐름 매트릭스 → 변경 이력 → 운영 지표 → 로그.
+        """사양서 4.8 의 상위 순서 전체: 홈 → 소개 → 대분류 A~Q → 중점 연구 트랙 → 주제 → 용어집 → 참고문헌 →
+        표준·프레임워크 → 열린 질문 → 현장 유형 매트릭스 → 변경 이력 → 운영 지표 → 로그.
         4.8 목록에 없는 "정정 요청 안내"는 그 순서를 끊지 않도록 맨 뒤(로그 다음)에 온다. [가정]"""
         # logs_public=True: 이 검사는 파일시스템 기준 전체 구조를 본다(공개 배포의 publish.logs_public=false
         # 로그·운영 지표 제외는 nav.py 의 별도 동작이며 이 검사 대상이 아니다). [가정]
@@ -172,7 +184,7 @@ class TestNavAndRender(unittest.TestCase):
         if (docs / "topics").is_dir():
             expected.append("주제")
         for rel in ("glossary/index.md", "references/index.md", "standards/index.md", "open-questions.md",
-                    "flow-matrix.md", "changelog.md", "metrics.md"):
+                    "site-matrix.md", "changelog.md", "metrics.md"):
             if (docs / rel).is_file():
                 expected.append(_title(rel))
         if (docs / "logs").is_dir():
@@ -184,7 +196,7 @@ class TestNavAndRender(unittest.TestCase):
         if "로그" in top and _title("metrics.md") in top:
             self.assertEqual(top.index("로그"), top.index(_title("metrics.md")) + 1)
         pairs = dict((p, l) for l, p in flatten_nav(nav))
-        self.assertEqual(pairs.get(paths.area_rel_path(13)), "13. 작업 배정 — MRTA")
+        self.assertEqual(pairs.get(paths.area_rel_path(25)), "25. 작업 배정 — MRTA")
         for letter, title in zip(paths.CATEGORY_LETTERS, self.CATEGORY_TITLES):
             self.assertEqual(pairs.get(paths.category_index_rel(letter)), title)
         # 소개 하위 7개는 4.2 표 순서
@@ -253,13 +265,13 @@ class TestNavAndRender(unittest.TestCase):
         self.assertNotIn("references/index.md", out)
 
     def test_render(self):
-        m = render_flow_matrix()
+        m = render_site_matrix()
         rows = [l for l in m.split("\n") if l.startswith("| **")]
-        self.assertEqual(len(rows), 7)
+        self.assertEqual(len(rows), len(paths.SITE_TYPES))
         cells = [c.strip() for r in rows for c in r.strip().strip("|").split("|")[1:]]
-        self.assertEqual(len(cells), 42)
-        self.assertTrue(all(c == "비어 있음" or "](" in c for c in cells))
-        self.assertIn("| **입고** |", m)
+        self.assertEqual(len(cells), len(paths.SITE_TYPES) * len(paths.CATEGORY_LETTERS))
+        self.assertTrue(all(c == "비어 있음" or c.isdigit() for c in cells))
+        self.assertIn("| **물류창고** |", m)
         self.assertIsNone(render_for("unknown-key", "index.md", {}))
         self.assertIsInstance(render_for("metrics", "metrics.md", {}), str)
 

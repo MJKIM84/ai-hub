@@ -4,7 +4,7 @@ type: glossary
 term_ko: 워크플로 넷
 term_en: Workflow Net (WF-net)
 definition: 워크플로를 모델링·분석하는 표준적 방법 가운데 하나로 쓰이는 페트리 넷의 한 부류이다.
-related_areas: [2, 23]
+related_areas: [24, 54]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

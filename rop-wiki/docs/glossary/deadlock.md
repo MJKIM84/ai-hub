@@ -4,7 +4,7 @@ type: glossary
 term_ko: 교착
 term_en: Deadlock
 definition: 여러 로봇이 서로 상대가 비켜 주기를 기다리며 아무도 진행하지 못하는 상태로, 좁은 통로·공유 구간에서 교통 관리가 탐지·예방·해소해야 한다.
-related_areas: [15, 9]
+related_areas: [20, 27]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ VDA 5050 은 교착의 탐지·해소를 관제의 기능으로 든다.
 
 ## 관련 영역
 
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
 
 ## 출처
 

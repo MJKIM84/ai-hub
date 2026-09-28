@@ -4,7 +4,7 @@ type: glossary
 term_ko: 종합설비효율
 term_en: Overall Equipment Effectiveness (OEE)
 definition: 설비의 가용성·효과성(성능)·품질률을 곱해 구하는 지표로, ISO 22400-2(2014판)가 제조 운영 관리 KPI의 하나로 정의한다.
-related_areas: [4, 16]
+related_areas: [28, 39]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ ISO 22400-2는 계획 가동 시간(PBT) 같은 시간 상태 모델을 기준�
 
 ## 관련 영역
 
-- [4. 성과·경제성·프로세스 개선](../categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md)
-- [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)
+- [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md)
+- [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)
 
 ## 출처
 

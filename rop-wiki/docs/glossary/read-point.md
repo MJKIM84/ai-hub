@@ -4,7 +4,7 @@ type: glossary
 term_ko: 판독 지점
 term_en: Read Point (EPCIS readPoint)
 definition: EPCIS 이벤트가 일어난 지점을 나타내는 선택 필드이다.
-related_areas: [7, 17]
+related_areas: [17, 30]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ GS1 구현 가이드라인은 출입구를 readPoint, 그 너머 방을 bizLocat
 
 ## 관련 영역
 
-- [7. 화물·재고·자산 식별과 추적](../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)
-- [17. 로봇 간 협업·물리적 인계](../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)
+- [17. 작업 대상·자산 식별과 인계 추적](../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)
+- [30. 로봇 간 협업·물리적 인계](../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 운용 모드
 term_en: Operating Mode (VDA 5050 operatingMode)
 definition: VDA 5050 에서 이동로봇이 관제 주문을 자동 실행하는지, HMI가 주행 속도를 제어하는지, 운영자가 제어를 넘겨받았는지 등을 알리는 상태 값이다.
-related_areas: [9, 18]
+related_areas: [20, 31]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ VDA 5050 에서 이동로봇이 관제 주문을 자동 실행하는지, HMI가 
 
 ## 관련 영역
 
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 
