@@ -31,6 +31,8 @@ export async function request<T>(
     () => abort.abort(),
     (path === "/experiments" || path === "/assistant/chat" || path.endsWith("/extract/model") || path.endsWith("/inspect")) && method === "POST"
       ? 600000
+      : path === "/scene" && method === "GET"
+        ? 60000
       : method === "GET"
         ? 5000
         : 30000,

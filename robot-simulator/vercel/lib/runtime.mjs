@@ -5,7 +5,7 @@ async function inventory() {
   // Includes stopped names: a used daily slot must never be recreated or resumed.
   const yesterday = new Date(Date.now() - 86_400_000);
   const groups = await Promise.all([dayPrefix(), dayPrefix(yesterday)].map(async namePrefix => {
-    const result = await Sandbox.list({namePrefix, sortBy: 'name', sortOrder: 'desc', limit: 100});
+    const result = await Sandbox.list({namePrefix, sortBy: 'name', sortOrder: 'desc', limit: 50});
     return result.toArray();
   }));
   return groups.flat();
@@ -38,8 +38,8 @@ async function boot(sandbox, minutes) {
   await sandbox.runCommand({
     cmd: '/usr/bin/flock',
     args: ['-n', '/tmp/rop-server.lock', '/opt/rop-venv/bin/python', '-m', 'robot_platform.cloud'],
-    cwd: '/vercel/sandbox/robot-simulator', detached: true,
-    env: {PYTHONPATH: '/vercel/sandbox/robot-simulator/src',
+    cwd: '/opt/robot-app/robot-simulator', detached: true,
+    env: {PYTHONPATH: '/opt/robot-app/robot-simulator/src',
       ROBOT_PUBLIC_ORIGINS: url, ROBOT_MAX_VISITORS: '1',
       ROBOT_VISITOR_TTL_SECONDS: String(minutes * 60), ROBOT_KEY_TTL_SECONDS: String(Math.min(minutes * 60, 1800)),
       FORWARDED_ALLOW_IPS: '*', PORT: '8000', OMP_NUM_THREADS: '1', OPENBLAS_NUM_THREADS: '1'},
