@@ -4,7 +4,7 @@ type: glossary
 term_ko: 결합 목표 정확도
 term_en: Joint Goal Accuracy (JGA)
 definition: 대화 상태 추적에서 한 턴의 모든 슬롯 값을 정답과 똑같이 맞힌 턴의 비율로, 하나라도 틀리면 그 턴을 오답으로 세는 엄격한 지표다.
-related_areas: [27, 18, 23]
+related_areas: [31, 47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ ACL 2022 연구는 이 지표가 초기 오류 누적으로 성능을 과소평�
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

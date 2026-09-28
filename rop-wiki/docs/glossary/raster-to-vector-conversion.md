@@ -4,7 +4,7 @@ type: glossary
 term_ko: 래스터–벡터 변환
 term_en: Raster-to-Vector Conversion
 definition: 픽셀 이미지로 된 평면도를 벽 선분·교차점·방 다각형 같은 기하 요소의 벡터 표현으로 바꾸는 처리이다.
-related_areas: [6, 27]
+related_areas: [15, 47]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Liu 외(ICCV 2017)의 Raster-to-Vector 방법이 대표적이며, 래스터 평�
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

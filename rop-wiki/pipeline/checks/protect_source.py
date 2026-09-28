@@ -3,11 +3,12 @@
 
 검사 항목
 1. _source/ 원문의 sha256 이 pipeline/checks/source.sha256 과 같은지(변조 여부). --write-hash 로 해시 파일 생성.
-2. 28개 세부영역 페이지: 프런트매터 title/category, 13개 섹션 제목·순서, 섹션 1·2의 [분류원문] 문장,
+2. 세부영역 페이지(2026-09-28 개정 후 67개): 프런트매터 title/category, 13개 섹션 제목·순서, 섹션 1·2의 [분류원문] 문장,
    "> 원문 주석:" 인용 블록, 상단 admonition 의 핵심 질문을 파서 값과 글자 단위로 대조.
-3. 7개 대분류 페이지: 핵심 질문·개요·세부 연구영역 표(원문 3열)·핵심 포인트 문단 대조.
+3. 대분류 페이지(개정 후 17개): 핵심 질문·개요·세부 연구영역 표(원문 3열)·핵심 포인트 문단 대조.
    섹션은 4.3 의 여섯 개 뒤에 번호 없는 "참고 자료"(각주 정의) 하나만 더 둘 수 있다. [가정]
-4. 홈·소개 4페이지: 원문 1·9·10·11장의 모든 줄과 정의·범위 문장이 그대로 들어 있는지.
+4. 홈·소개 4페이지: 원문 1장·경계 장·아이디어 매핑 장·연구 방법 장의 모든 줄과 정의·범위 문장이 그대로 들어 있는지.
+5-1. [옛 분류원문] 태그 줄은 보관한 개정 전 원문(_source/archive/)의 줄·표 셀과 글자 단위로 같아야 한다.
 5. docs 전체(모든 페이지 유형): [분류원문] 태그가 붙은 줄은 모두 원문의 줄 또는 표 셀과 글자 단위로 같아야 한다
    (원문에 없는 합성 문장이나 위키 문구가 섞인 줄에 태그를 붙이는 것을 막는다). 비교 전에 제거하는 것은
    구조 표식뿐이다: 들여쓰기, 인용 블록 표식(>), 태그 뒤에 붙은 각주 참조("[분류원문][^ref-003]"),
@@ -36,20 +37,21 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from lib import frontmatter as fm  # noqa: E402
 from lib import paths  # noqa: E402
 from lib.nav import build_nav, flatten_nav, load_mkdocs_yml, render_mkdocs_yml  # noqa: E402
-from lib.source import load_source, split_cells  # noqa: E402
-from lib.verbatim import TAG, strip_tags, untag  # noqa: E402
+from lib.source import load_source, parse, split_cells  # noqa: E402
+from lib.verbatim import TAG, TAG_OLD, strip_tags, untag  # noqa: E402
 
 SRC = load_source()
+OLD_SRC = parse(paths.OLD_SOURCE_FILE.read_text(encoding="utf-8"), paths.OLD_SOURCE_FILE) if paths.OLD_SOURCE_FILE.exists() else None
 CATEGORY_EXTRA_SECTIONS = ["참고 자료"]   # 여섯 섹션 뒤에 허용하는 번호 없는 보조 절(각주 정의) [가정]
 AREA_SECTIONS = [
-    "1. 한 줄 정의", "2. SCM 관점의 질문", "3. 왜 중요한가", "4. 핵심 개념과 용어",
-    "5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)", "6. 대표 접근법과 기술",
+    "1. 한 줄 정의", "2. 핵심 질문", "3. 왜 중요한가", "4. 핵심 개념과 용어",
+    "5. 적용 사례 (현장 유형 명시)", "6. 대표 접근법과 기술",
     "7. 관련 표준·프레임워크·오픈소스", "8. 대표 연구와 자료",
-    "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)",
+    "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
     "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)", "11. 열린 질문",
     "12. 최근 업데이트 (자동)", "13. 참고 자료 (각주)",
 ]
-CATEGORY_SECTIONS = ["핵심 질문", "개요", "세부 연구영역", "이 대분류의 핵심 포인트", "다른 대분류와의 연결", "최근 업데이트"]
+CATEGORY_SECTIONS = ["핵심 질문", "개요", "세부 연구영역", "이 대분류의 핵심 포인트", "다른 대분류와의 연결", "이 대분류의 자료", "최근 업데이트"]
 
 
 def sha256_of(path: Path) -> str:
@@ -230,8 +232,7 @@ def check_home() -> list[str]:
     _, body = fm.read(p)
     lines = strip_tags(body).split("\n")
     errs = []
-    for label, exp in [("정의 문장", SRC.rop_definition_sentence), ("SCOR 문단", SRC.scor_paragraph),
-                       ("범위 문장", SRC.scope_disclaimer_sentence)]:
+    for label, exp in [("정의 문장", SRC.rop_definition_sentence), ("범위 문장", SRC.scope_disclaimer_sentence)]:
         if exp not in lines:
             errs.append(f"{rel}: {label}이 원문 그대로 들어 있지 않음\n  기대: {exp}")
     rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in lines if l.startswith("| ") and ". " in l]
@@ -243,15 +244,16 @@ def check_home() -> list[str]:
     return errs
 
 
-def _source_lines_and_cells() -> set[str]:
-    """원문의 모든 줄과 표 셀(태그가 붙은 줄이 이 집합에 있어야 한다)."""
+def _source_lines_and_cells(src=None) -> set[str]:
+    """원문의 모든 줄과 표 셀(태그가 붙은 줄이 이 집합에 있어야 한다). src 를 주면 그 원문(보관본 등) 기준."""
+    src = SRC if src is None else src
     out: set[str] = set()
-    for line in SRC.raw.split("\n"):
+    for line in src.raw.split("\n"):
         out.add(line)
         if line.lstrip().startswith("|"):
             out.update(split_cells(line))
     # 사양서 4.1 이 따로 인용하라고 지정한 머리말 속 범위 문장(한 줄의 일부)
-    out.add(SRC.scope_disclaimer_sentence)
+    out.add(src.scope_disclaimer_sentence)
     out.discard("")
     return out
 
@@ -259,40 +261,50 @@ def _source_lines_and_cells() -> set[str]:
 _FOOTNOTE_TAIL = re.compile(r"(\[\^[^\]\s]+\])+$")
 _FENCE = re.compile(r"^(```|~~~).*?^\1[ \t]*$", re.M | re.S)
 QUOTE_LABELS = ("원문 주석: ",)   # 세부영역 페이지 인용 블록의 고정 라벨(check_area 가 요구하는 형식)
+# [옛 분류원문] 줄의 고정 라벨(개정 때 옮긴 영역 페이지 1절의 옛 정의·질문·주석)
+OLD_QUOTE_LABELS = ("옛 정의: ", "옛 질문: ", "옛 원문 주석: ")
 
 
-def tagged_text(line: str) -> str | None:
-    """줄이 [분류원문] 태그 줄이면 구조 표식(들여쓰기, 인용 표식, 태그 뒤 각주, 고정 라벨)을 벗긴 원문 후보를,
+def tagged_text(line: str, tag: str = TAG) -> str | None:
+    """줄이 tag([분류원문] 또는 [옛 분류원문]) 줄이면 구조 표식(들여쓰기, 인용 표식, 태그 뒤 각주, 고정 라벨)을 벗긴 원문 후보를,
     아니면(태그 없음 또는 표 아래 단독 태그 줄) None 을 돌려준다."""
     s = line.strip()
     while s.startswith(">"):
         s = s[1:].lstrip()
     s = _FOOTNOTE_TAIL.sub("", s).rstrip()
-    if s == TAG or not s.endswith(" " + TAG):
+    if s == tag or not s.endswith(" " + tag):
         return None
-    text = untag(s)
-    for label in QUOTE_LABELS:
+    text = s[: -len(tag) - 1]
+    for label in (QUOTE_LABELS if tag == TAG else OLD_QUOTE_LABELS):
         if text.startswith(label):
             text = text[len(label):]
     return text
 
 
-def check_tagged_lines(rel: str, allowed: set[str] | None = None) -> list[str]:
-    """[분류원문] 태그가 붙은 줄(표 아래 단독 태그 줄 제외)이 모두 원문의 줄 또는 표 셀과 글자 단위로 같은지.
+def check_tagged_lines(rel: str, allowed: set[str] | None = None, allowed_old: set[str] | None = None) -> list[str]:
+    """[분류원문] 태그 줄은 원문, [옛 분류원문] 태그 줄은 보관한 옛 원문의 줄 또는 표 셀과 글자 단위로 같은지.
     코드 펜스 안(예시)은 검사하지 않는다."""
     p = paths.DOCS / rel
     if not p.exists():
         return [f"{rel}: 파일 없음"]
     _, body = fm.read(p)
     allowed = _source_lines_and_cells() if allowed is None else allowed
-    bad = []
+    if allowed_old is None:
+        allowed_old = _source_lines_and_cells(OLD_SRC) if OLD_SRC else set()
+    bad, bad_old = [], []
     for line in _FENCE.sub("", body).split("\n"):
         text = tagged_text(line)
         if text is not None and text not in allowed:
             bad.append(line)
+        text = tagged_text(line, TAG_OLD)
+        if text is not None and text not in allowed_old:
+            bad_old.append(line)
+    errs = []
     if bad:
-        return [f"{rel}: 원문에 없는 문장에 {TAG} 태그가 붙어 있음 {len(bad)}줄:\n" + "\n".join(f"  - {b}" for b in bad)]
-    return []
+        errs.append(f"{rel}: 원문에 없는 문장에 {TAG} 태그가 붙어 있음 {len(bad)}줄:\n" + "\n".join(f"  - {b}" for b in bad))
+    if bad_old:
+        errs.append(f"{rel}: 보관한 옛 원문에 없는 문장에 {TAG_OLD} 태그가 붙어 있음 {len(bad_old)}줄:\n" + "\n".join(f"  - {b}" for b in bad_old))
+    return errs
 
 
 def all_doc_rels() -> list[str]:
@@ -301,7 +313,7 @@ def all_doc_rels() -> list[str]:
 
 # 사양서 4.8 의 상위 순서(원문 그대로). 이 순서는 새 섹션이 생겨도 바꾸지 않는다
 SPEC_48_ORDER = ["home", "about", *[f"cat:{l}" for l in paths.CATEGORY_LETTERS], "tracks", "topics", "glossary",
-                 "references", "standards", "open-questions", "flow-matrix", "changelog", "metrics", "logs"]
+                 "references", "standards", "open-questions", "site-matrix", "changelog", "metrics", "logs"]
 # 4.8 목록 밖 섹션 → 바로 앞에 와야 하는 섹션 [가정]
 NAV_EXTRA_AFTER = {"ideas": "tracks"}
 NAV_TRAILING = ["corrections"]            # 4.8 목록 밖, 맨 뒤(로그 다음)에만 [가정]
@@ -318,8 +330,9 @@ def _nav_kind(item) -> str | None:
     if path == "index.md":
         return "home"
     if top == "categories":
-        m = re.match(r"categories/([a-g])-", path)
-        return f"cat:{m.group(1).upper()}" if m else None
+        slug = path.split("/")[1] if path.count("/") >= 1 else ""
+        letter = next((l for l, s in paths.CATEGORY_SLUGS.items() if s == slug), None)
+        return f"cat:{letter}" if letter else None
     if path.endswith(".md") and "/" not in path:
         return path[:-3]
     return {"about": "about", "tracks": "tracks", "ideas": "ideas", "topics": "topics", "glossary": "glossary",
@@ -433,13 +446,14 @@ def main(argv=None) -> int:
         errs += check_category(letter)
     errs += check_home()
     errs += check_verbatim_page("about/what-is-rop.md", 1)
-    errs += check_verbatim_page("about/scope-boundary.md", 9)
-    errs += check_verbatim_page("about/idea-mapping.md", 10)
-    errs += check_verbatim_page("about/research-method.md", 11)
+    errs += check_verbatim_page("about/scope-boundary.md", SRC.scope_chapter)
+    errs += check_verbatim_page("about/idea-mapping.md", SRC.idea_chapter)
+    errs += check_verbatim_page("about/research-method.md", SRC.method_chapter)
     allowed = _source_lines_and_cells()
+    allowed_old = _source_lines_and_cells(OLD_SRC) if OLD_SRC else set()
     rels = all_doc_rels()
     for rel in rels:
-        errs += check_tagged_lines(rel, allowed)
+        errs += check_tagged_lines(rel, allowed, allowed_old)
     if not args.skip_nav:
         errs += check_nav()
 
@@ -448,7 +462,7 @@ def main(argv=None) -> int:
         for e in errs:
             print("-", e)
         return 1
-    print(f"[protect_source] 통과: 세부영역 28 · 대분류 7 · 홈·소개 5 · 태그 줄 원문 대조(docs 전체 {len(rels)}개 페이지) · "
+    print(f"[protect_source] 통과: 세부영역 {len(paths.AREA_NOS)} · 대분류 {len(paths.CATEGORY_LETTERS)} · 홈·소개 5 · 태그 줄 원문 대조(docs 전체 {len(rels)}개 페이지) · "
           "내비(라벨·4.8 순서·재생성 일치) · 원문 해시")
     return 0
 

@@ -3,7 +3,7 @@ title: "평가 지표와 검증 절차"
 type: track
 subtype: evaluation
 track: manual-capability-ontology
-related_areas: [23, 5]
+related_areas: [5, 54]
 tags: [평가 지표, 검증 절차, 커버리지, 기준 정답, 역량 질문, 전문가 합의, 단계 5 산출물]
 status: seed
 created: 2026-09-24
@@ -65,7 +65,7 @@ version: 1
 
 - 각 단계에서 무엇을 입력으로 받고(문서 샘플, 온톨로지 인스턴스, 기준 정답, 역량 질문 목록) 무엇을 출력하는지(지표 값, 오류 목록).
 - 사람 검토가 들어가는 지점과 판정 기준(단계 3의 사람 검토 루프 결과와 맞춘다).
-- 시뮬레이션·실기체 시험으로 능력 모델을 검증하는 방법과 한계(q5-04). 이 부분은 [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)에 연결한다.
+- 시뮬레이션·실기체 시험으로 능력 모델을 검증하는 방법과 한계(q5-04). 이 부분은 [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)에 연결한다.
 - 온톨로지 품질 평가 방법론(일관성·완전성·정확성, q5-03) 가운데 무엇을 쓰는지와 그 출처.
 - 절차의 결과를 [능력 온톨로지 초안](ontology-draft.md)의 개념·관계 상태(초안 / 제안 / 확정 / 폐기)에 어떻게 반영하는지.
 

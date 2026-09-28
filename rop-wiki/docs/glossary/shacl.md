@@ -4,7 +4,7 @@ type: glossary
 term_ko: 형상 제약 언어
 term_en: Shapes Constraint Language (SHACL)
 definition: RDF 그래프가 정해진 구조·값 조건을 지키는지 검증하는 W3C 제약 언어로, 생성된 온톨로지의 품질 검사에 쓰인다.
-related_areas: [5, 27]
+related_areas: [5, 47]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ RDF 그래프가 정해진 구조·값 조건을 지키는지 검증하는 W3C �
 
 ## 관련 영역
 
-- [5. 로봇 능력·작업 온톨로지](../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [5. 로봇 능력·작업 표현](../categories/robot-ontology/robot-capability-and-task-representation.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

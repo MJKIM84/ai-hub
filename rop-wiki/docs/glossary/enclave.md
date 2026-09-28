@@ -4,7 +4,7 @@ type: glossary
 term_ko: 인클레이브
 term_en: Enclave (SROS 2)
 definition: SROS 2 에서 같은 신원과 접근통제 규칙을 공유하는 프로세스 또는 프로세스 묶음으로, 보안 인증서·권한 파일을 이 단위로 발급·적용한다.
-related_areas: [26, 11, 10]
+related_areas: [22, 42, 51]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Open-RMF 문서는 SROS 2 키스토어의 인클레이브로 RMF 구성요소의
 
 ## 관련 영역
 
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
-- [10. 설비·건물 시스템 연동](../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
+- [22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md)
 
 ## 출처
 

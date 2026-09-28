@@ -4,7 +4,7 @@ type: glossary
 term_ko: 스캔 대 BIM 비교
 term_en: Scan-vs-BIM
 definition: 설계 BIM·3D 모델을 현장 레이저 스캔 점군에 정합해 모델 객체의 시공 상태와 설계 대비 편차를 찾는 방법이다.
-related_areas: [6, 21]
+related_areas: [15, 55]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ Bosché(2010)의 설계 CAD 모델–레이저 스캔 정합과 객체 인식·�
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
 
 ## 출처
 

@@ -1,9 +1,9 @@
 ---
 title: "로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가"
 type: topic
-category: "B. 공통 정보·환경 모델"
-primary_area_no: 7
-related_areas: [1, 9, 10, 17, 20]
+category: "E. 사물·사람·실시간 상태"
+primary_area_no: 17
+related_areas: [20, 22, 23, 30, 32]
 tags: [EPCIS, CBV, readPoint, bizLocation, VDA 5050, Open-RMF]
 status: published
 confidence: medium
@@ -18,7 +18,7 @@ version: 1
 
 # 로봇 적재·하역 완료를 EPCIS 인계 이벤트로 어떻게 기록할 것인가
 
-**주 연구영역:** [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) · **관련 영역:** [1. 주문·업무 시스템 연계](../../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md), [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md), [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md), [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md), [20. 예외 복구·재계획·업무 연속성](../../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) · **실행:** 2026-09-25-03
+**주 연구영역:** [17. 작업 대상·자산 식별과 인계 추적](../../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) · **관련 영역:** [23. 업무 시스템 연동](../../categories/integration/business-system-integration.md), [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md), [30. 로봇 간 협업·물리적 인계](../../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md), [32. 예외 복구·재계획·업무 연속성](../../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) · **실행:** 2026-09-25-03
 
 <!-- auto:page-status:start -->
 > 페이지 상태: published · 신뢰도: medium · 페이지 버전: 1 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
@@ -32,9 +32,9 @@ version: 1
 
 ## 2. 배경
 
-이 글은 7. 화물·재고·자산 식별과 추적의 질문에서 출발한다.
+이 글은 17. 작업 대상·자산 식별과 인계 추적의 질문에서 출발한다.
 
-로봇은 도착했는데 실제로 어떤 팔레트가 인계됐는가? [분류원문]
+로봇은 도착했는데 실제로 어떤 팔레트가 인계됐는가? [옛 분류원문]
 
 직접 출발점은 열린 질문 oq-001(로봇 완료 신호를 EPCIS 인계 이벤트로 옮기는 매핑)이다. 로봇 관제 인터페이스 쪽 보고는 주제 페이지 [로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인](2026-09-25-robot-load-reporting-handover-confirmation.md)이 다루므로, 이 글은 EPCIS 쪽 필드 설계에 집중한다.
 
@@ -111,16 +111,16 @@ VDA 5050 2.0에서 loadId가 비었거나 loads가 생략되면 drop 완료만�
 - 연계 대상: 하역 설비 자체의 제어. [추정][^ref-049]
 - 연계 대상: 이벤트를 저장·공유하는 EPCIS 저장소. 국내 오픈소스 구현으로 Oliot EPCIS가 있다. [사실][^ref-050]
 
-경계 기준은 [분류 원문 9장](../../about/scope-boundary.md)이다.
+경계 기준은 [분류 원문 19장](../../about/scope-boundary.md)이다.
 
 ## 6. 연결되는 연구영역
 
-- [7. 화물·재고·자산 식별과 추적](../../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md) — 인계 이벤트의 필드 설계
-- [1. 주문·업무 시스템 연계](../../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) — WMS 식별자와 거래 문서(bizTransaction) 연결
-- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — VDA 5050 loadId·drop 완료 보고
-- [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — Open-RMF 하역 워크셀 결과
-- [17. 로봇 간 협업·물리적 인계](../../categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md) — 점유 당사자 변경과 인계
-- [20. 예외 복구·재계획·업무 연속성](../../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) — 식별 실패 시 이벤트 보류
+- [17. 작업 대상·자산 식별과 인계 추적](../../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) — 인계 이벤트의 필드 설계
+- [23. 업무 시스템 연동](../../categories/integration/business-system-integration.md) — WMS 식별자와 거래 문서(bizTransaction) 연결
+- [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) — VDA 5050 loadId·drop 완료 보고
+- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — Open-RMF 하역 워크셀 결과
+- [30. 로봇 간 협업·물리적 인계](../../categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) — 점유 당사자 변경과 인계
+- [32. 예외 복구·재계획·업무 연속성](../../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) — 식별 실패 시 이벤트 보류
 
 ## 7. 열린 질문
 

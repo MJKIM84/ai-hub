@@ -11,3 +11,7 @@
   result: "최종 확인 실행. 결과는 이 문서 0절 표와 같다."
   found: "-"
   fixed: "-"
+- run: 적용(D→E) 1회차
+  result: "run_all.sh 전체 통과(단위 테스트 포함), mkdocs build --strict 통과"
+  found: "새 영역 페이지에 auto:area-tracks·page-status 영역이 없었다. 채팅 트랙 단계 3·5 페이지 제목이 새 단계 이름과 달랐다. 채팅 트랙 related_areas 에서 25번이 빠졌다. 전역 치환이 원문 표 칸(61번 행) 하나를 바꿨다. 25번의 현재 질문을 '옛 분류의 질문'이라 부른 곳이 있었다. 표준 목록 표의 링크 이름이 옛 번호·이름이었다. mkdocs-redirects 1.2.3 이 properdocs 의존을 끌고 와 1.2.2 로 고정했다."
+  fixed: "모두 고쳤다(05_apply.md)."

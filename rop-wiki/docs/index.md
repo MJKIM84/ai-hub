@@ -2,16 +2,16 @@
 title: "ROP 연구 위키"
 type: home
 status: published
-created: 2026-09-24
-updated: 2026-09-29
-version: 3
+created: 2026-09-28
+updated: 2026-09-28
+version: 1
 ---
 
 홈
 
 # ROP 연구 위키
 
-SCM(공급망 관리, Supply Chain Management) 관점에서 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)의 연구 범위를 정리하고, 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓아 가는 연구 위키다.
+로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)을 구현하고 운영하는 데 관여하는 모든 일을 빠짐없이 나열해 17개 대분류·67개 세부 연구영역으로 묶고, 대분류마다 연구 논문·기사·업체 발표를 모아 가는 기술 지형도다. 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓는다.
 
 [로봇 시뮬레이터 · 다층 물품 업무 살펴보기](about/simulator.md){ .md-button .md-button--primary }
 
@@ -19,19 +19,21 @@ SCM(공급망 관리, Supply Chain Management) 관점에서 로봇 오케스트�
 
 ## ROP란 무엇인가
 
-SCM 관점에서 ROP는 **주문·물류·생산 계획을 로봇과 현장 설비의 실제 행동으로 연결하고, 결과를 다시 업무 시스템에 반영하는 실행 플랫폼**으로 볼 수 있다. [분류원문]
+ROP는 **서로 다른 제조사의 로봇과 현장 설비·업무 시스템을 하나로 연결해, 사람이 정한 일을 여러 로봇이 함께 실제로 해내게 하고 그 결과를 다시 시스템에 돌려주는 플랫폼**으로 볼 수 있다. [분류원문]
 
-ASCM의 SCOR는 계획·주문·조달·생산/가공·이행·반품과 이를 아우르는 Orchestrate를 다룬다. **ROP는 이 중 물리적인 작업이 발생하는 부분을 연결하는 역할**로 접근할 수 있다. SCOR의 공급망 오케스트레이션과 로봇 오케스트레이션은 범위가 다르다. [1] [분류원문]
+이 분류는 ROP를 구현하고 운영하는 데 관여하는 모든 일을 처음부터 끝까지 빠짐없이 나열하고, 같은 일을 하는 것끼리 세부 연구영역으로, 핵심 질문이 같은 영역끼리 대분류로 묶은 것이다. 대분류마다 연구 논문·기사·업체 발표를 모아 기술 지형도를 만든다. 물류창고·제조 공장·병원·상업 시설·가정·실외는 모두 ROP가 쓰이는 현장 유형이다. [분류원문]
 
-SCOR(Supply Chain Operations Reference)의 오케스트레이션은 계획부터 반품까지 공급망 프로세스 전체를 하나로 조정하는 상위 개념이고, 로봇 오케스트레이션은 그 가운데 물리적인 작업이 실제로 일어나는 구간에서 로봇과 현장 설비의 행동을 연결하는 실행 계층이다. [의견] 따라서 이 위키에서 ROP는 SCOR의 오케스트레이션을 대체하는 것이 아니라, 업무 시스템의 계획을 현장 행동으로 옮기고 그 결과를 다시 업무 시스템에 되돌려 주는 역할로 다룬다. [의견] 원문의 [1]은 참고문헌 [ref-001](references/ref-001.md)에 해당한다. 자세한 설명은 [SCM 관점의 ROP란 무엇인가](about/what-is-rop.md)에 있다.
+**B. 로봇 온톨로지와 C. 채팅 기반 구성·운영은 반드시 갖춰야 할 기능이다.** B는 이기종 로봇을 등록하고 능력을 표현해 시스템과 로봇을 쉽게 연동하게 하고, C는 채팅으로 맵을 그리고, 시나리오를 구성하고, 로봇을 구성하고, 실제 상황을 시뮬레이션으로 재현하고, 업무를 지시하게 한다. [분류원문]
+
+자세한 설명은 [ROP란 무엇인가](about/what-is-rop.md)에 있다.
 
 ## 이 위키가 다루는 범위
 
-이 위키는 7개 대분류와 28개 세부 연구영역을 뼈대로 한다. 분류 원문은 이 분류의 성격을 다음과 같이 밝힌다.
+분류 원문은 이 분류의 성격을 다음과 같이 밝힌다.
 
-공식 단일 분류가 아니라 공급망 프레임워크·로봇 연구·실제 플랫폼 구조를 종합한 연구 범위 점검용 분류이며, 모든 항목을 직접 개발한다는 의미는 아니다. [분류원문]
+공식 단일 분류가 아니라 로봇 연구·실제 플랫폼 구조·현장 사례를 종합한 연구 범위 점검용 분류이며, 모든 항목을 직접 개발한다는 의미는 아니다. [분류원문]
 
-대분류·세부영역의 명칭·번호·정의·질문은 원문 그대로 쓰며 바꾸지 않는다. 새 세부영역이 필요해 보이면 분류를 바꾸지 않고 [열린 질문](open-questions.md)에 "분류 확장 제안"으로 기록한다.
+대분류·세부영역의 명칭·번호·정의·질문은 원문 그대로 쓰며 바꾸지 않는다. 새 세부영역이 필요해 보이면 분류를 바꾸지 않고 [열린 질문](open-questions.md)에 "분류 확장 제안"으로 기록한다. 2026-09-28에 분류를 7개 대분류·28개 영역에서 지금 구조로 개정했고, 옛 영역 페이지의 본문은 새 영역 페이지로 옮겼다.
 
 ## 대분류 표
 
@@ -39,41 +41,51 @@ SCOR(Supply Chain Operations Reference)의 오케스트레이션은 계획부터
 
 | 대분류 | 핵심 질문 | 세부영역 | 대분류 페이지 | 세부 연구영역 |
 |---|---|---|---|---|
-| A. 업무·공급망 설계 | 무슨 일을 왜, 얼마나 해야 하는가? | 1–4 | [A. 업무·공급망 설계](categories/a-business-supply-chain-design/index.md) | [1. 주문·업무 시스템 연계](categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)<br>[2. 공정·워크플로 모델링](categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md)<br>[3. 처리능력·거점·설비 계획](categories/a-business-supply-chain-design/03-capacity-site-and-facility-planning.md)<br>[4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) |
-| B. 공통 정보·환경 모델 | 로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? | 5–8 | [B. 공통 정보·환경 모델](categories/b-common-information-and-environment-model/index.md) | [5. 로봇 능력·작업 온톨로지](categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)<br>[6. 지도·공간·위치 모델](categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)<br>[7. 화물·재고·자산 식별과 추적](categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)<br>[8. 실시간 세계 상태·데이터 일관성](categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) |
-| C. 연결·실행 기반 | 계획한 작업을 실제 장비가 확실하게 수행하게 하려면? | 9–12 | [C. 연결·실행 기반](categories/c-connectivity-and-execution-foundation/index.md) | [9. 로봇·제조사 관제 연동](categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)<br>[10. 설비·건물 시스템 연동](categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)<br>[11. 분산 시스템·통신·컴퓨팅 구조](categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)<br>[12. 명령·작업 실행의 신뢰성](categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) |
-| D. 계획·최적화 | 누가, 언제, 어디로, 어떤 자원을 사용해 작업할 것인가? | 13–16 | [D. 계획·최적화](categories/d-planning-and-optimization/index.md) | [13. 작업 배정 — MRTA](categories/d-planning-and-optimization/13-task-allocation-mrta.md)<br>[14. 작업 순서·스케줄링](categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)<br>[15. 다중 로봇 경로·교통 관리 — MAPF](categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)<br>[16. 공용 자원·충전·에너지 최적화](categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) |
-| E. 협업·현장 운영 | 계획과 실제가 달라지는 상황에서 일을 어떻게 계속할 것인가? | 17–20 | [E. 협업·현장 운영](categories/e-collaboration-and-field-operations/index.md) | [17. 로봇 간 협업·물리적 인계](categories/e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md)<br>[18. 사람–로봇 협업·운영 인터페이스](categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)<br>[19. 모니터링·이상 탐지·원인 분석](categories/e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md)<br>[20. 예외 복구·재계획·업무 연속성](categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md) |
-| F. 도입·검증·유지관리 | 새 현장에 설치하고, 변경하면서, 오래 운영하려면? | 21–24 | [F. 도입·검증·유지관리](categories/f-deployment-verification-and-maintenance/index.md) | [21. 온보딩·설정·현장 시운전](categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)<br>[22. 시뮬레이션·예측용 디지털 트윈](categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)<br>[23. 시험·형식 검증·벤치마크](categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)<br>[24. 자산·소프트웨어 수명주기 관리](categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) |
-| G. 안전·보안·지능·거버넌스 | 전체 영역에 어떤 공통 제약과 관리 체계를 적용할 것인가? | 25–28 | [G. 안전·보안·지능·거버넌스](categories/g-safety-security-intelligence-and-governance/index.md) | [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)<br>[26. 사이버보안·접근권한·개인정보](categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)<br>[27. AI·학습·적응과 모델 운영](categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)<br>[28. 표준·상호운용성·다사업자 거버넌스](categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) |
+| A. 기획·사업 | 어떤 일을 로봇에게 맡기고, 무엇을 들여, 어떤 효과를 볼 것인가? | 1–3 | [A. 기획·사업](categories/planning-and-business/index.md) | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md)<br>[2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) |
+| B. 로봇 온톨로지 | 서로 다른 제조사의 로봇을 어떻게 등록하고, 할 수 있는 일을 같은 말로 표현해, 시스템과 쉽게 연결할 것인가? | 4–7 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | [4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md)<br>[5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md)<br>[6. 온톨로지 기반 시스템·로봇 연동](categories/robot-ontology/ontology-based-system-and-robot-integration.md)<br>[7. 온톨로지 검증·변경 관리](categories/robot-ontology/ontology-verification-and-change-management.md) |
+| C. 채팅 기반 구성·운영 | 맵 작성, 시나리오 구성, 로봇 구성, 실제 상황 재현, 업무 지시를 비전문 사용자가 대화만으로 할 수 있게 하려면? | 8–13 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md)<br>[9. 채팅으로 시나리오 구성](categories/chat-based-configuration-and-operation/chat-scenario-composition.md)<br>[10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md)<br>[11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md)<br>[12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)<br>[13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) |
+| D. 공간·지도 모델 | 로봇마다 다른 지도와 건물 도면을 어떻게 하나의 공간으로 만들고 유지할 것인가? | 14–16 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md)<br>[16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md) |
+| E. 사물·사람·실시간 상태 | 작업 대상·사람·설비·로봇이 지금 어디에 어떤 상태로 있는지 어떻게 믿을 수 있게 알 것인가? | 17–19 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) |
+| F. 연동 | 제조사 관제·로봇·문·승강기·업무 시스템과 어떻게 확실하게 연결할 것인가? | 20–23 | [F. 연동](categories/integration/index.md) | [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) |
+| G. 계획·최적화 | 누가, 언제, 어디로, 어떤 자원을 써서 일할 것인가? | 24–28 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | [24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[27. 다중 로봇 경로·교통 관리 — MAPF](categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)<br>[28. 공용 자원·충전·에너지 최적화](categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) |
+| H. 실행·협업·예외 복구 | 계획한 일을 여러 로봇과 사람이 함께 끝까지 해내고, 어긋나면 어떻게 이어 갈 것인가? | 29–32 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | [29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)<br>[30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md)<br>[31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) |
+| I. 설계·시뮬레이션 | 현장을 바꾸거나 로봇을 늘리기 전에 가상으로 설계하고 결과를 미리 볼 수 있는가? | 33–36 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md)<br>[35. 처리능력·규모·배치 설계](categories/design-and-simulation/capacity-sizing-and-layout-design.md)<br>[36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) |
+| J. 현장 운영·관제 | 운영자가 지금 무슨 일이 일어나는지 보고, 이상을 알아차리고, 성과를 확인할 수 있는가? | 37–40 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md)<br>[39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md)<br>[40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) |
+| K. 플랫폼 아키텍처·인프라 | 플랫폼을 어디에 어떻게 두어야 끊김·확장·다현장 조건에서도 계속 동작하는가? | 41–43 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)<br>[43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) |
+| L. AI·학습 기술 | 학습·언어 모델 같은 AI 기술을 어디에 쓰고, 그 결과를 어떤 기준으로 믿을 것인가? | 44–47 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) |
+| M. 안전 | 여러 로봇·사람·설비가 함께 움직일 때 생기는 위험을 어떻게 찾고 막을 것인가? | 48–50 | [M. 안전](categories/safety/index.md) | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) |
+| N. 보안·개인정보 | 누가 어떤 로봇에 무엇을 시킬 수 있는지 통제하고, 데이터와 사람의 정보를 어떻게 지킬 것인가? | 51–53 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | [51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md)<br>[52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) |
+| O. 검증·도입·수명주기 | 만든 것을 어떻게 검증하고, 현장에 설치해 넘기고, 오래 바꿔 가며 운영할 것인가? | 54–57 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | [54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)<br>[55. 현장 조사·설치·시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)<br>[56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) |
+| P. 거버넌스·법규·사회 | 여러 사업자와 법, 사회적 요구 속에서 책임과 규칙을 어떻게 정할 것인가? | 58–60 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md)<br>[60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) |
+| Q. 현장 유형별 적용 | 현장마다 다른 요구를 플랫폼이 어떻게 받아들이고, 실제로 어디에 어떻게 쓰이고 있는가? | 61–67 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[66. 실외](categories/site-type-applications/outdoor.md)<br>[67. 기타 현장](categories/site-type-applications/other-sites.md) |
 
 [분류원문]
 
 ## 다루지 않는 것
 
-ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원문 9장은 다섯 가지 경계로 정리한다. 아래 목록은 원문 9장 표의 "경계" 열과 "주로 연계할 외부 영역" 열을 위키에서 한 줄씩 이어 붙인 요약이다. 셀의 문구는 원문과 같지만 이 줄 자체는 원문에 없는 문장이므로 `[분류원문]` 태그를 붙이지 않는다.
+ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원문 19장은 다섯 가지 경계로 정리한다. 아래 목록은 경계표의 "경계" 열과 "주로 연계할 외부 영역" 열을 위키에서 한 줄씩 이어 붙인 요약이다. 셀의 문구는 원문과 같지만 이 줄 자체는 원문에 없는 문장이므로 `[분류원문]` 태그를 붙이지 않는다.
 
-- **상위 업무 시스템** — 수요예측, 구매, 재무, 전사 재고정책
+- **상위 업무 시스템** — 수요예측, 구매, 재무, 전사 자원 계획
 - **로봇 자체 지능·제어** — 센서 인식, SLAM, 로컬 회피, 파지, 모터·관절 제어
 - **시설·설비 제어** — 승강기·컨베이어·PLC·설비 안전 제어
-- **거점 간 운송** — 배차·운송계획·운임·국제물류
+- **현장 간 운송** — 배차·운송계획·운임·국제물류
 - **업종별 조건** — 의료·식품·위험물·실외 차량·드론 등의 전문 요구사항
 
-이 영역들은 ROP가 직접 만들지 않고 "연계 대상"으로 다룬다. 원문 9장의 표 전체(ROP에서 다룰 내용 열 포함)와 이 경계가 제품 전략에 따라 이동할 수 있다는 원문 설명은 [ROP가 직접 소유할 범위와 외부 연계 경계](about/scope-boundary.md)에 원문 그대로 있다.
+이 영역들은 ROP가 직접 만들지 않고 "연계 대상"으로 다룬다. 경계표 전체와 이 경계가 제품 전략에 따라 이동할 수 있다는 원문 설명은 [ROP가 직접 소유할 범위와 외부 연계 경계](about/scope-boundary.md)에 원문 그대로 있다.
 
 ## 콘텐츠가 만들어지는 방식
 
-세 에이전트가 매일 1회 한 영역을 다룬다. 리서치 에이전트가 근거 있는 조사 브리프를 만들고, 내용 검증 에이전트가 출처의 실재와 주장–출처 일치를 검증해 게시 가능 여부를 판정하며, 스토리텔러 에이전트가 검증을 통과한 브리프만으로 페이지를 쓴다. 마지막으로 퍼블리셔 스크립트가 원문 보호·링크·프런트매터 검사를 거쳐 위키에 반영한다. 첫 주기(28회)는 세부영역 1. 주문·업무 시스템 연계부터 28. 표준·상호운용성·다사업자 거버넌스까지 번호순으로 본문을 채우고, 그 뒤에는 오래된 영역·열린 질문·비어 있는 매트릭스 칸을 기준으로 대상을 고른다. 각 에이전트의 역할·입력·출력과 사람이 개입하는 지점은 [에이전트 소개](about/agents.md)에 있다.
+세 에이전트가 매일 1회 한 영역을 다룬다. 리서치 에이전트가 근거 있는 조사 브리프를 만들고, 내용 검증 에이전트가 출처의 실재와 주장–출처 일치를 검증해 게시 가능 여부를 판정하며, 스토리텔러 에이전트가 검증을 통과한 브리프만으로 페이지를 쓴다. 마지막으로 퍼블리셔 스크립트가 원문 보호·링크·프런트매터 검사를 거쳐 위키에 반영한다. 아직 본문이 없는 세부영역부터 번호순으로 채우고, 그 뒤에는 오래된 영역·열린 질문·비어 있는 현장 유형 칸을 기준으로 대상을 고른다. 각 에이전트의 역할·입력·출력과 사람이 개입하는 지점은 [에이전트 소개](about/agents.md)에 있다.
 
 ## 진행 중인 중점 연구 트랙
 
-트랙은 분류를 바꾸지 않고 여러 세부영역을 가로지르는 집중 연구 프로그램이다. 현재 트랙은 세 개다. 첫 트랙 [매뉴얼 기반 로봇 기능 온톨로지](tracks/manual-capability-ontology/index.md)에 더해, 사용자가 제안한 세 확장 아이디어(아이디어 1. 로봇 기능 온톨로지, 아이디어 2. 자연어 업무 지시 챗봇, 아이디어 3. 건축 도면 자동 인식)를 연구하기 위해 첫 트랙을 넓히고(아이디어 1) 트랙 [자연어 업무 지시 챗봇](tracks/nl-task-chatbot/index.md)과 [건축 도면 자동 인식](tracks/floorplan-recognition/index.md)을 더했다. 세 아이디어가 이어지는 구조, 공통 데이터 모델, 28개 세부 연구영역 매핑표는 [확장 아이디어 연결 구조](ideas/index.md)에 있다. 아래 현황은 퍼블리셔가 자동으로 갱신한다.
+트랙은 분류를 바꾸지 않고 여러 세부영역을 가로지르는 집중 연구 프로그램이다. 아래 현황은 퍼블리셔가 자동으로 갱신한다.
 
 <!-- auto:home-track-status:start -->
 | 트랙 | 현재 단계 | 상태 | 열린 질문 수 | 최근 답한 질문 | 개요 |
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 45 | q2-01 — 제조사가 제공하는 문서 유형(사용자 매뉴얼, 통합·API 가이드, 사양서·데이터시트, 안전 매뉴얼, 오류 코드표, 릴리스 노트, 치수도·도면)은 무엇이며 각각 어떤 기능 정보를 담는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-01)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
-| 자연어 업무 지시 챗봇 | [단계 1. 선행 연구·제품 사례 조사](tracks/nl-task-chatbot/stage-1-prior-work-and-products.md) (1 / 5) | active | 48 | q5-02 — 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? ([답](tracks/nl-task-chatbot/stage-5-verification-and-hypotheses.md#q5-02)) | [트랙 개요](tracks/nl-task-chatbot/index.md) |
+| 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q5-02 — 가상 현장·가상 로봇으로 지시 시나리오를 재현해 챗봇을 시험하는 방법과 그 한계는 무엇인가? ([답](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-02)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
 | 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 35 | q5-03 — 가설 1~3은 단계 1~4의 결과로 어떻게 판정되는가? ([답](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-03)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
@@ -92,26 +104,26 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 
 신뢰도(`confidence`)는 내용 검증 에이전트가 부여한다. high 는 핵심 주장이 2개 이상의 독립 출처로 확인된 것, medium 은 단일 출처이거나 벤더·기사 중심인 것, low 는 추정·의견 비중이 높은 것이다.
 
-본문의 주장에는 태그를 붙인다. `[사실]`은 출처로 확인된 주장, `[추정]`은 근거는 있으나 확인이 부족한 주장(벤더 주장 포함), `[의견]`은 작성자의 해석이다. `[분류원문]`은 분류 원문에서 한 글자도 바꾸지 않고 옮긴 문장, `[가설]`은 중점 연구 트랙에서 검증할 가설, `[사용자 실험]`은 사용자가 직접 수행한 실험 결과다. 출처는 `[^ref-001]` 형식의 각주로 붙인다. 자세한 읽는 법은 [읽기 가이드](about/reading-guide.md)에 있다.
+본문의 주장에는 태그를 붙인다. `[사실]`은 출처로 확인된 주장, `[추정]`은 근거는 있으나 확인이 부족한 주장(벤더 주장 포함), `[의견]`은 작성자의 해석이다. `[분류원문]`은 분류 원문에서 한 글자도 바꾸지 않고 옮긴 문장, `[옛 분류원문]`은 2026-09-28 개정 전 원문(보관본)에서 옮긴 문장, `[가설]`은 중점 연구 트랙에서 검증할 가설, `[사용자 실험]`은 사용자가 직접 수행한 실험 결과다. 출처는 `[^ref-001]` 형식의 각주로 붙인다. 자세한 읽는 법은 [읽기 가이드](about/reading-guide.md)에 있다.
 
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-09-26 · 갱신 · [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) — 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-781·ref-782 추가, last_run 2026-09-26 (실행 2026-09-26-02)
-- 2026-09-26 · 갱신 · [25. 안전·위험 관리](categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 (실행 2026-09-26-02)
-- 2026-09-26 · 생성 · [4. 성과·경제성·프로세스 개선 — 다른 연구영역과의 연결](topics/2026/2026-09-26-area04-s10.md) — 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다(2차 재실행에서 변경 없음) (실행 2026-09-26-02)
-- 2026-09-26 · 생성 · [25. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](topics/2026/2026-09-26-area25-s7.md) — 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: ref-783 각주 정의 제목을 ISO 페이지 전체 제목으로 고침 (실행 2026-09-26-02)
-- 2026-09-26 · 요약 · [4. 성과·경제성·프로세스 개선](categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md) — 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리): ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 (실행 2026-09-26-02)
+- 2026-09-26 · 갱신 · [39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) — 월간 재검증: 7절 끝에 ISO 22400-2 판 상태 덧붙임, 10절 본문을 주제 페이지로 옮기고 요약·링크만 남김. 2차: 프런트매터 sources 에 ref-781·ref-782 추가, last_run 2026-09-26 (실행 2026-09-26-02)
+- 2026-09-26 · 갱신 · [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) — 월간 재검증: 7절 재검증 내용은 주제 페이지로 분리되어 요약·링크만 남김. 2차: 프런트매터 last_run 2026-09-26 (실행 2026-09-26-02)
+- 2026-09-26 · 생성 · [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](topics/2026/2026-09-26-area04-s10.md) — 분리: 4. 성과·경제성·프로세스 개선 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮기고 링크를 주제 페이지 위치 기준 상대 경로로 고쳤다(2차 재실행에서 변경 없음) (실행 2026-09-26-02)
+- 2026-09-26 · 생성 · [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](topics/2026/2026-09-26-area25-s7.md) — 자동 분리: 25. 안전·위험 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차: ref-783 각주 정의 제목을 ISO 페이지 전체 제목으로 고침 (실행 2026-09-26-02)
+- 2026-09-26 · 요약 · [39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) — 월간 재검증(4. 성과·경제성·프로세스 개선, 25. 안전·위험 관리): ISO 22400-2(개정 1:2017, ISO/DIS FDIS 등록 승인)와 ISO/TS 15066·ISO 10218-2:2025·KS 부합 상태·ISO 3691-4·ISO 12100 판 상태를 두 페이지 7절에 덧붙임. 다음 실행 후보: 주제 페이지 2026-09-25-area04-s4·2026-09-25-area04-s7 반영; ref-022 최신 게시판(3.0.0) 기준 이전 판(2.x 로봇 현장 사용 oq-091 과 모순 없게, 3.0.0 발행일은 oq-005 미해소로 적지 않음); ref-345 구판·대체 출처 ref-679(2021 판 이후 개정 고시는 검색 범위 내에서 확인되지 않음); ref-637 제명 변경(산업 디지털 전환 및 인공지능 활용 촉진법, oq-122 열림 유지); ref-030 SSN 2023 Edition 공개 작업 초안; ref-486 개정 1:2024(4.1 에 기후 변화가 관련 이슈인지 결정하라는 요구사항, 4.2 에 관련 이해관계자가 기후 변화 관련 요구를 가질 수 있다는 주석 추가); ref-509·ref-510 개정 진행; ref-502·ref-119·ref-767·ref-314 유효 추정 (실행 2026-09-26-02)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 
 ## 시작하기 좋은 페이지
 
-- [SCM 관점의 연구 시작 방법](about/research-method.md) — 물류 흐름 7단계와 여섯 항목으로 기술을 교차해 보는 방법
-- [물류 흐름 매트릭스](flow-matrix.md) — 입고부터 반품까지 각 단계에서 어떤 페이지가 어떤 항목을 다루는지
-- [매뉴얼 기반 로봇 기능 온톨로지 트랙 개요](tracks/manual-capability-ontology/index.md) — 진행 중인 중점 연구 트랙(첫 트랙)
-- [확장 아이디어 연결 구조](ideas/index.md) — 세 확장 아이디어와 세 트랙이 이어지는 구조, 공통 데이터 모델, 28개 세부 연구영역 매핑표
-- [용어집](glossary/index.md) — SCOR, ISA-95, EPCIS, Open-RMF, MRTA, MAPF 같은 용어의 한 줄 정의
+- [연구 방법](about/research-method.md) — 할 일을 빠짐없이 나열하고, 묶고, 묶음마다 자료를 모으는 방법
+- [B. 로봇 온톨로지](categories/robot-ontology/index.md) — 이기종 로봇 등록·능력 표현·시스템과 로봇의 연동
+- [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) — 채팅으로 맵 작성·시나리오 구성·로봇 구성·실제 상황 재현·업무 지시
+- [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md) — 물류창고·공장·병원·상업 시설·가정·실외에서 어떤 대분류가 다뤄졌는지
+- [용어집](glossary/index.md) — ISA-95, EPCIS, Open-RMF, VDA 5050, MRTA, MAPF 같은 용어의 한 줄 정의
 - [열린 질문](open-questions.md) — 아직 답하지 못한 질문과 그 상태
 
 ## 정정과 요청

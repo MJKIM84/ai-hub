@@ -4,7 +4,7 @@ type: glossary
 term_ko: 신경-기호 AI
 term_en: Neuro-symbolic AI
 definition: LLM 같은 신경망 모델의 유연한 해석·생성과 계획기·검증기 같은 기호적(규칙·논리 기반) 구성 요소의 결정적 검사를 결합하는 AI 구성 방식이다.
-related_areas: [27, 13]
+related_areas: [25, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ LLM 같은 신경망 모델의 유연한 해석·생성과 계획기·검증기 
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

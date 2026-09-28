@@ -4,7 +4,7 @@ type: glossary
 term_ko: 필터 마스크
 term_en: Filter Mask (Nav2 costmap filter)
 definition: Nav2 에서 금지 구역·속도 제한처럼 공간별 동작 규칙을 표시하는 별도 래스터 지도로, 일반 지도와 같은 이미지+YAML 형식으로 배포되어 비용 지도 필터로 비용 지도에 적용된다.
-related_areas: [6, 15, 16]
+related_areas: [15, 27, 28]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ Nav2 에서 금지 구역·속도 제한처럼 공간별 동작 규칙을 표시
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
-- [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
+- [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)
 
 ## 출처
 

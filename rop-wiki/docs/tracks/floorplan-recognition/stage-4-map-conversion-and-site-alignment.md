@@ -3,7 +3,7 @@ title: "단계 4. 지도 변환 보정과 현장 정합"
 type: track-stage
 track: floorplan-recognition
 stage: 4
-related_areas: [6, 21, 24, 8, 9, 10, 15, 23, 25]
+related_areas: [15, 18, 20, 22, 27, 48, 54, 55, 57]
 tags: [지도 변환, 보정, 좌표계 정렬, 도면–현장 차이, 지도 버전, 비용 지도, 변화 탐지, 재검증]
 status: published
 confidence: low
@@ -52,7 +52,7 @@ version: 5
 
 확인한 자료를 이 위키가 묶으면, 인식 결과를 로봇 내비게이션 지도로 바꿀 때의 보정은 (1) 좌표·축척 보정(픽셀→미터, 세로축 반전, 원점·해상도), (2) 층 정렬과 층 고도, (3) 제조사·플릿별 로봇 지도 좌표계와의 변환과 변환 오차 확인, (4) 표현 보정(장애물 내부 채움, 점유 임계값, 유리처럼 센서가 잘 못 보는 요소의 처리), (5) 도면에 없는 가구·랙과 설계–시공 편차 반영, (6) 금지 구역·속도 제한 같은 운영 규칙 층 추가의 여섯 묶음으로 나뉘는 것으로 보인다. 이 묶음은 이 위키의 종합이며 이를 제시한 단일 출처는 확인하지 못했다. [추정][^ref-440][^ref-079][^ref-153][^ref-031][^ref-082][^ref-081][^ref-648][^ref-644][^ref-224]
 
-위치추정·SLAM·비용 지도 인플레이션은 분류 원문 9장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 지도 형식·좌표·판 관리 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
+위치추정·SLAM·비용 지도 인플레이션은 분류 원문 19장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 지도 형식·좌표·판 관리 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
 
 아래 표는 검증된 발견 사항으로 이 위키가 구성한 종합([추정])이며 출처의 표를 옮긴 것이 아니다.
 
@@ -113,7 +113,7 @@ flowchart LR
 
 분류 원문의 질문은 다음과 같다.
 
-> 제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [분류원문]
+> 제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [옛 분류원문]
 
 - 이 질문에 비추면, 도면 좌표로 정한 대기장 경유점을 층별 변환으로 각 제조사 지도에 옮긴 뒤, 그 변환 오차가 해당 노드의 허용 편차(VDA 5050 의 allowedDeviationXY·allowedDeviationTheta) 안에 드는지 확인하는 단계가 도착 판정 전에 필요할 것으로 보인다. 오차와 허용 편차의 연결은 이 위키의 추정이다. [추정][^ref-153][^ref-031][^ref-079]
 
@@ -134,13 +134,13 @@ flowchart LR
 | 완료·인계 | 대기장 경유점을 각 제조사 지도로 옮긴 변환 오차가 노드 허용 편차 안에 들어야 도착을 인정할 수 있을 것으로 보인다. [추정][^ref-153][^ref-031] |
 | 예외·성과 | 변환 오차가 허용 편차를 넘으면 도착 판정을 보류하고 대응점을 다시 확인하는 흐름을 가정할 수 있다. [추정][^ref-153][^ref-031] 처리량·시간에 주는 영향은 미확인이다. |
 
-이 시나리오의 제약·완료·인계 칸은 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 5절 시나리오와 같은 장소를 다루며, 좌표 정렬 절차 자체는 q4-03 에서 다룬다.
+이 시나리오의 제약·완료·인계 칸은 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)의 5절 시나리오와 같은 장소를 다루며, 좌표 정렬 절차 자체는 q4-03 에서 다룬다.
 
 ### q4-02 도면과 현장의 차이를 찾아 지도에 반영하는 방법 {#q4-02}
 
 확인한 자료를 이 위키가 묶으면, 도면–현장 차이는 지속성에 따라 (1) 개보수 같은 구조 변경은 재측량이나 도면 기반 다중 세션 정렬로 찾아 도면·지도 판을 갱신하고, (2) 랙·팔레트·가구 같은 반정적 배치 변화는 반복 주행 데이터의 변화 탐지·지도 갱신과 관제의 구역·차선 규칙으로 반영하며, (3) 임시 장애물은 정적 지도에 넣지 않고 로봇 쪽 비용 지도가 실행 중에 처리하는 세 갈래로 나뉘는 것으로 보인다. 이는 이 위키의 종합이며 이 세 갈래를 제시한 단일 출처는 없다. [추정][^ref-651][^ref-221][^ref-224][^ref-653][^ref-652][^ref-654][^ref-649][^ref-031][^ref-569]
 
-아래의 SLAM·다중 세션 정렬·변화 탐지·비용 지도는 분류 원문 9장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 차이를 찾는 방법의 근거로만 쓰고, ROP 쪽은 탐지된 차이를 반영하는 경로로 다룬다([범위 경계](../../about/scope-boundary.md)).
+아래의 SLAM·다중 세션 정렬·변화 탐지·비용 지도는 분류 원문 19장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 차이를 찾는 방법의 근거로만 쓰고, ROP 쪽은 탐지된 차이를 반영하는 경로로 다룬다([범위 경계](../../about/scope-boundary.md)).
 
 #### 재측량과 도면 대조: 구조 변경
 
@@ -215,7 +215,7 @@ flowchart LR
 
 확인한 도구·규격을 이 위키가 묶으면, 도면 좌표계와 로봇별 지도 좌표계의 정렬은 (1) 시설 공통 좌표계의 원점과 층별 기준점을 도면 위 고정 지점에 정하고, (2) 측정선으로 도면 축척을, 층간 기준점으로 층 사이 변환을 정하며, (3) 제조사·플릿·층마다 대응점(최소 4쌍 권장)으로 유사 변환을 최소제곱 추정하고, (4) 잔차(변환 오차 추정값)를 확인한 뒤, (5) 층·장소 식별자 대응표를 등록하는 순서가 될 것으로 보인다. 이 절차는 이 위키의 종합이며 이를 제시한 단일 출처는 없다. [추정][^ref-670][^ref-345][^ref-079][^ref-153][^ref-105][^ref-668][^ref-669][^ref-031][^ref-230] 이 답의 핵심인 정합 절차 초안, 층·목적지 대응표, 목적지별 잔차 합격 기준, ROP 경계는 모두 이 위키의 종합 추정이어서 이 답의 종합 신뢰도는 low 이며, 근거 출처도 도구·규격마다 발행 주체가 한 곳이라 교차 확인된 주장이 없다.
 
-아래의 제조사 지도 작성·위치추정과 격자 지도 병합·정합 알고리즘은 분류 원문 9장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 좌표 변환·식별자 대응 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
+아래의 제조사 지도 작성·위치추정과 격자 지도 병합·정합 알고리즘은 분류 원문 19장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 좌표 변환·식별자 대응 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
 
 #### 공통 좌표계의 원점과 기준점
 
@@ -244,7 +244,7 @@ flowchart LR
 
 #### 도면–격자 지도 자동 정합 연구
 
-아래 연구는 제조사 SLAM 지도(점유 격자 지도)를 입력으로 하는 격자 지도 병합·도면 정합 알고리즘이다. 연계 대상: 지도 작성·위치추정 자체는 분류 원문 9장 '로봇 자체 지능·제어'의 연계 대상이며, 이 위키는 이 알고리즘들을 시운전 보조 도구 후보로만 다룬다.
+아래 연구는 제조사 SLAM 지도(점유 격자 지도)를 입력으로 하는 격자 지도 병합·도면 정합 알고리즘이다. 연계 대상: 지도 작성·위치추정 자체는 분류 원문 19장 '로봇 자체 지능·제어'의 연계 대상이며, 이 위키는 이 알고리즘들을 시운전 보조 도구 후보로만 다룬다.
 
 - Carpin(Autonomous Robots, 2008)은 여러 로봇의 점유 격자 지도를 합치기 위해 허프 스펙트럼의 순환 상호상관으로 회전 후보를, 축별 투영 스펙트럼으로 이동을 구해 가중치가 붙은 변환 후보 여러 개를 결정적·비반복적으로 내는 방법을 제안했다. [사실][^ref-671]
 - Kakuma 외(2017)는 SLAM 으로 만든 점유 격자 지도와 건물 평면도를 그래프 매칭으로 대응시키고 정렬해, 로봇이 평면도가 가진 의미 정보(방 이름 등)에 접근하게 하는 방법을 제안했다. 검색 요약상 결과는 대략적 정렬 수준으로 보고됐다. [사실][^ref-672]
@@ -300,7 +300,7 @@ flowchart LR
 
 확인한 자료를 이 위키가 묶으면, 도면과 지도가 바뀔 때는 도면 개정(공통 데이터 환경의 상태·개정 코드, IFC 요소 GlobalId), 공통 공간 그래프 판, 제조사별 지도 판(mapId·mapVersion), 구역 집합(zoneSetId), 제조사·층별 좌표 변환이 서로 다른 계보로 바뀌므로, ROP 는 이들을 한 행으로 묶는 판 대응표를 두고 도면 판 차이에서 영향받는 요소만 다시 확인하는 식으로 재검증 범위를 좁혀야 할 것으로 보인다. [추정][^ref-689][^ref-687][^ref-031][^ref-212][^ref-688][^ref-153] 이 답에서 지도 판 식별·배포 규칙과 판 비교 도구의 동작은 출처로 확인한 사실이지만, 판 대응표·재검증 범위·배포 순서·안전 재검토 구분은 이 위키의 종합이며 단일 출처가 없어 이 답의 종합 신뢰도는 low 이다.
 
-아래의 라이다 지도 갱신 알고리즘과 보호 영역·안전 기능의 재검증은 분류 원문 9장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 판 관리와 재검증 요청 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
+아래의 라이다 지도 갱신 알고리즘과 보호 영역·안전 기능의 재검증은 분류 원문 19장의 '로봇 자체 지능·제어' 쪽 연계 대상이다. 이 절은 그것들을 판 관리와 재검증 요청 관점으로만 다룬다([범위 경계](../../about/scope-boundary.md)).
 
 #### 로봇 쪽: 지도 판의 식별·배포·삭제
 
@@ -433,21 +433,21 @@ flowchart LR
 
 이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 프런트매터 `related_areas`는 아래 목록과 같다.
 
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 분류 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 이번 실행은 6. 대표 접근법과 기술 절(보정 항목, 기존 ref-153 각주 재사용)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(보정의 ROP·로봇 쪽 경계)에 반영을 제안한다.
-- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 분류 원문 10장의 함께 필요한 영역(시운전). '현장 모델링 시간을 줄이는' 적용처다. 이번 실행은 6. 대표 접근법과 기술 절(대응점으로 변환 오차를 확인하는 시운전 절차, 사전 지도 작성 주행을 줄인 연구)에 반영을 제안한다.
-- [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md) — 도면 개정에 따른 지도 버전 관리가 필요하다(이 영역 정의의 지도 버전)
-- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — 공간 노드(문·엘리베이터)에 붙는 현재 상태를 실시간으로 갱신하는 쪽이다
-- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 플릿 어댑터의 좌표 변환과 VDA 5050 좌표 규약이 제조사 지도와 공통 좌표를 잇는 지점이다
-- [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — Open-RMF 승강기 상태가 층을 주석 없는 문자열로만 나타내므로, 지도 층 이름과 승강기 층 이름을 잇는 층 대응표가 필요할 것으로 보이는 지점이다([열린 질문](../../open-questions.md) oq-045). [추정][^ref-286][^ref-667]
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) — 금지 구역·속도 제한 같은 운영 규칙 층이 경로·교통 조율의 제약이 된다
-- [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md) — 도면 판 차이(추가·삭제·변경 요소)로 재검증 범위를 좁히는 방법이 지도 판 교체 뒤 재검증과 이어지는 지점으로 보인다. [추정][^ref-687][^ref-031]
-- [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md) — 운용 구역 상태와 반복적 위험성평가를 다루는 표준이 도면·지도 변경의 안전 재검토와 이어지는 지점이며, 보호 영역·안전 기능 재검증 자체는 로봇·통합자 쪽 연계 대상이다. [추정][^ref-470][^ref-472]
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 분류 개정 전 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 이번 실행은 6. 대표 접근법과 기술 절(보정 항목, 기존 ref-153 각주 재사용)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(보정의 ROP·로봇 쪽 경계)에 반영을 제안한다.
+- [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) — 분류 개정 전 원문 10장의 함께 필요한 영역(시운전). '현장 모델링 시간을 줄이는' 적용처다. 이번 실행은 6. 대표 접근법과 기술 절(대응점으로 변환 오차를 확인하는 시운전 절차, 사전 지도 작성 주행을 줄인 연구)에 반영을 제안한다.
+- [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) — 도면 개정에 따른 지도 버전 관리가 필요하다(이 영역 정의의 지도 버전)
+- [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) — 공간 노드(문·엘리베이터)에 붙는 현재 상태를 실시간으로 갱신하는 쪽이다
+- [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) — 플릿 어댑터의 좌표 변환과 VDA 5050 좌표 규약이 제조사 지도와 공통 좌표를 잇는 지점이다
+- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — Open-RMF 승강기 상태가 층을 주석 없는 문자열로만 나타내므로, 지도 층 이름과 승강기 층 이름을 잇는 층 대응표가 필요할 것으로 보이는 지점이다([열린 질문](../../open-questions.md) oq-045). [추정][^ref-286][^ref-667]
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — 금지 구역·속도 제한 같은 운영 규칙 층이 경로·교통 조율의 제약이 된다
+- [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) — 도면 판 차이(추가·삭제·변경 요소)로 재검증 범위를 좁히는 방법이 지도 판 교체 뒤 재검증과 이어지는 지점으로 보인다. [추정][^ref-687][^ref-031]
+- [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md) — 운용 구역 상태와 반복적 위험성평가를 다루는 표준이 도면·지도 변경의 안전 재검토와 이어지는 지점이며, 보호 영역·안전 기능 재검증 자체는 로봇·통합자 쪽 연계 대상이다. [추정][^ref-470][^ref-472]
 
-실행 2026-09-25-75(q4-02)는 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(도면–현장 차이 탐지 방법과 지속성별 반영 경로, 추정)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(변화 탐지 계산은 연계 대상, 구역·차선·지도 판 반영은 ROP 쪽이라는 경계, 추정), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)의 6. 대표 접근법과 기술 절(시운전 전 재측량과 도면 대조, 기준 지도 정렬 도구), [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)의 6. 대표 접근법과 기술 절(현장 변화에 따른 지도 판 갱신과 구역 집합 교체 규칙)에 반영을 제안한다.
+실행 2026-09-25-75(q4-02)는 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(도면–현장 차이 탐지 방법과 지속성별 반영 경로, 추정)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(변화 탐지 계산은 연계 대상, 구역·차선·지도 판 반영은 ROP 쪽이라는 경계, 추정), [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)의 6. 대표 접근법과 기술 절(시운전 전 재측량과 도면 대조, 기준 지도 정렬 도구), [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)의 6. 대표 접근법과 기술 절(현장 변화에 따른 지도 판 갱신과 구역 집합 교체 규칙)에 반영을 제안한다.
 
-실행 2026-09-25-76(q4-03)은 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(층별·플릿별 대응점 유사 변환과 잔차 확인, 층–기준층 변환과의 구분), 7. 관련 표준·프레임워크·오픈소스 절(ISO/FDIS 21423 공통 좌표계 원점 정의는 FDIS 요약 기준, MassRobotics planarDatum, IMDF 층 순번·약칭, Open-RMF 층·승강기 층 이름), 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(대응표·변환·잔차 확인은 ROP, 지도 작성·위치추정·자동 정합 알고리즘은 연계 대상이라는 경계, 추정), 11. 열린 질문 절(oq-027·oq-045·oq-029 근거 보강, 해결 아님), [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)의 6. 대표 접근법과 기술 절(시운전의 대응점·목적지별 잔차 판정, 국내 작업규정의 기준점 선정, 격자 지도–도면 자동 정합 연구, oq-077 근거 보강), [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)의 6. 대표 접근법과 기술 절(승강기 층 이름이 주석 없는 문자열이라 층 대응표가 필요하다는 점, oq-045)에 반영을 제안한다. 이 제안은 세부영역 페이지를 직접 고치지 않고 트랙 로그에만 남긴다.
+실행 2026-09-25-76(q4-03)은 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(층별·플릿별 대응점 유사 변환과 잔차 확인, 층–기준층 변환과의 구분), 7. 관련 표준·프레임워크·오픈소스 절(ISO/FDIS 21423 공통 좌표계 원점 정의는 FDIS 요약 기준, MassRobotics planarDatum, IMDF 층 순번·약칭, Open-RMF 층·승강기 층 이름), 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(대응표·변환·잔차 확인은 ROP, 지도 작성·위치추정·자동 정합 알고리즘은 연계 대상이라는 경계, 추정), 11. 열린 질문 절(oq-027·oq-045·oq-029 근거 보강, 해결 아님), [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)의 6. 대표 접근법과 기술 절(시운전의 대응점·목적지별 잔차 판정, 국내 작업규정의 기준점 선정, 격자 지도–도면 자동 정합 연구, oq-077 근거 보강), [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md)의 6. 대표 접근법과 기술 절(승강기 층 이름이 주석 없는 문자열이라 층 대응표가 필요하다는 점, oq-045)에 반영을 제안한다. 이 제안은 세부영역 페이지를 직접 고치지 않고 트랙 로그에만 남긴다.
 
-실행 2026-09-25-78(q4-04)은 [24. 자산·소프트웨어 수명주기 관리](../../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)의 6. 대표 접근법과 기술 절(지도 판 식별·사전 적재·활성화·삭제 규칙, 공통 데이터 환경의 도면 개정 관리와 IFC 판 비교, 판 대응표와 차이 기반 재검증 범위(추정)), [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(지도 판 관리와 판 대응표, 추정)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(판 대응표·재검증 범위 산정은 ROP, 지도 갱신 계산·안전 기능 재검증은 연계 대상이라는 경계, 추정), [23. 시험·형식 검증·벤치마크](../../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)의 6. 대표 접근법과 기술 절(도면 판 차이로 재검증 범위를 좁히는 방법과 안전 재검토가 필요한 변경의 구분, 추정, [열린 질문](../../open-questions.md) oq-090 근거 보강)에 반영을 제안한다. [25. 안전·위험 관리](../../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)는 운용 구역 상태와 반복적 위험성평가를 다루는 표준(ISO 3691-4:2023, ANSI/A3 R15.08-2-2023)이 도면·지도 변경의 안전 재검토와 이어지는 지점이며, 보호 영역·안전 기능 재검증 자체는 로봇·통합자 쪽 연계 대상이다. [추정][^ref-470][^ref-472] 이 제안은 세부영역 페이지를 직접 고치지 않고 트랙 로그에만 남긴다.
+실행 2026-09-25-78(q4-04)은 [57. 자산·소프트웨어 수명주기 관리](../../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)의 6. 대표 접근법과 기술 절(지도 판 식별·사전 적재·활성화·삭제 규칙, 공통 데이터 환경의 도면 개정 관리와 IFC 판 비교, 판 대응표와 차이 기반 재검증 범위(추정)), [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)의 6. 대표 접근법과 기술 절(지도 판 관리와 판 대응표, 추정)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(판 대응표·재검증 범위 산정은 ROP, 지도 갱신 계산·안전 기능 재검증은 연계 대상이라는 경계, 추정), [54. 시험·형식 검증·벤치마크](../../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)의 6. 대표 접근법과 기술 절(도면 판 차이로 재검증 범위를 좁히는 방법과 안전 재검토가 필요한 변경의 구분, 추정, [열린 질문](../../open-questions.md) oq-090 근거 보강)에 반영을 제안한다. [48. 안전·위험 관리](../../categories/safety/safety-and-risk-management.md)는 운용 구역 상태와 반복적 위험성평가를 다루는 표준(ISO 3691-4:2023, ANSI/A3 R15.08-2-2023)이 도면·지도 변경의 안전 재검토와 이어지는 지점이며, 보호 영역·안전 기능 재검증 자체는 로봇·통합자 쪽 연계 대상이다. [추정][^ref-470][^ref-472] 이 제안은 세부영역 페이지를 직접 고치지 않고 트랙 로그에만 남긴다.
 
 ## 8. 출처
 

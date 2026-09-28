@@ -4,7 +4,7 @@ type: glossary
 term_ko: 포그 컴퓨팅
 term_en: Fog Computing
 definition: 클라우드와 말단 장치 사이에 계산·저장·네트워크 자원을 계층으로 두어 지연에 민감한 분산 애플리케이션을 현장 가까이에서 처리하게 하는 컴퓨팅 모델이다.
-related_areas: [11]
+related_areas: [42]
 tags: []
 status: published
 confidence: low
@@ -34,7 +34,7 @@ NIST SP 500-325(2018-03)가 개념 모델을 제시했다(원문 미열람).
 
 ## 관련 영역
 
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
 
 ## 출처
 

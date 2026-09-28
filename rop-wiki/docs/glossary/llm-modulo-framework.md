@@ -4,7 +4,7 @@ type: glossary
 term_ko: LLM-모듈로 프레임워크
 term_en: LLM-Modulo Framework
 definition: LLM 을 계획의 후보를 내는 생성기로 두고 외부 모델 기반 검증기·비평자가 후보를 검사해 되먹임하는 LLM–기호 시스템 결합 구조이다.
-related_areas: [27, 14]
+related_areas: [26, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ Kambhampati 외(ICML 2024 입장 논문)가 제안했다. 입장 논문의 주�
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
 
 ## 출처
 

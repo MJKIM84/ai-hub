@@ -4,7 +4,7 @@ type: glossary
 term_ko: pass^k 지표
 term_en: pass^k
 definition: 같은 과제를 독립적으로 k번 시행했을 때 모든 시행이 성공할 확률을 추정해 에이전트 행동의 일관성을 재는 지표다.
-related_areas: [23, 27]
+related_areas: [47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

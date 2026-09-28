@@ -4,7 +4,7 @@ type: glossary
 term_ko: 동결 구간
 term_en: Frozen Horizon (Frozen Zone)
 definition: 계획 구간 가운데 가까운 시각의 일정을 고정해 재계산에서 바꾸지 않는 구간으로, 잦은 재계획이 일정을 흔드는 것을 줄이려고 둔다.
-related_areas: [14, 1, 20]
+related_areas: [23, 26, 32]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ Sridharan·Berry·Udayabhanu(1987)는 롤링 계획 구간에서 기준생산계
 
 ## 관련 영역
 
-- [14. 작업 순서·스케줄링](../categories/d-planning-and-optimization/14-task-sequencing-and-scheduling.md)
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
+- [26. 작업 순서·스케줄링](../categories/planning-and-optimization/task-sequencing-and-scheduling.md)
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 배터리 건강 상태
 term_en: State of Health (SOH)
 definition: 배터리의 현재 용량·성능을 새 배터리 대비 비율로 나타낸 값으로, VDA 5050 상태 메시지의 batteryHealth 가 이에 해당한다.
-related_areas: [24, 16]
+related_areas: [28, 57]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ VDA 5050 상태 스키마는 충전 상태(stateOfCharge)와 별도로 batteryHe
 
 ## 관련 영역
 
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
-- [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
+- [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)
 
 ## 출처
 

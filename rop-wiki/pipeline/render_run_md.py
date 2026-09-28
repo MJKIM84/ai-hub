@@ -70,7 +70,7 @@ def render_research_md(d: dict) -> str:
                 flags.append("벤더 주장")
             rows.append([f.get("id"), f"[{f.get('tag')}]", f.get("claim"), f.get("source_ids"), f.get("cross_checked"),
                          f.get("confidence"), f.get("as_of"),
-                         " / ".join(x for x in (f.get("flow_step"), f.get("flow_item")) if x) or "—", ", ".join(flags) or "—"])
+                         " / ".join(x for x in (f.get("site_type"), f.get("flow_item")) if x) or "—", ", ".join(flags) or "—"])
         parts.append(_table(["id", "태그", "주장", "출처", "교차 확인", "신뢰도", "기준일", "흐름 단계 / 항목", "표시"], rows))
         parts += ["", "### 근거 발췌", ""]
         for f in fs:
@@ -185,9 +185,9 @@ def render_pages_md(d: dict) -> str:
     parts += ["", "## 열린 질문 갱신", ""]
     oq = d.get("open_question_updates") or []
     parts.append(_table(["동작", "id", "질문", "영역", "상태", "링크"], [[q.get("action"), q.get("id") or "—", q.get("question"), q.get("areas"), q.get("status"), q.get("link")] for q in oq]) if oq else "- 없음")
-    parts += ["", "## 흐름 매트릭스 갱신", ""]
-    fmu = d.get("flow_matrix_updates") or []
-    parts.append(_table(["단계", "항목", "링크", "제목"], [[f.get("step"), f.get("item"), f.get("link"), f.get("title") or "—"] for f in fmu]) if fmu else "- 없음")
+    parts += ["", "## 현장 유형 매트릭스 갱신", ""]
+    fmu = d.get("site_matrix_updates") or []
+    parts.append(_table(["현장 유형", "항목", "링크", "제목"], [[f.get("site_type"), f.get("item"), f.get("link"), f.get("title") or "—"] for f in fmu]) if fmu else "- 없음")
     parts += ["", "## 표준·프레임워크 갱신", ""]
     su = d.get("standards_updates") or []
     parts.append(_table(["이름", "종류", "기관", "관련 영역", "참고문헌", "URL"], [[s.get("name"), s.get("kind"), s.get("org"), s.get("related_areas"), s.get("ref_id") or "—", s.get("url")] for s in su]) if su else "- 없음")

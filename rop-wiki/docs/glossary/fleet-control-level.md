@@ -4,7 +4,7 @@ type: glossary
 term_ko: 플릿 제어 수준
 term_en: 'Fleet Control Level (Open-RMF: Full Control / Traffic Light / Read Only)'
 definition: Open-RMF 가 제조사 플릿과 연동하는 정도를 경로 지시까지 하는 전체 제어, 일시정지·재개만 하는 신호등, 상태만 받는 읽기 전용으로 나눈 구분이다.
-related_areas: [9, 15]
+related_areas: [20, 27]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Open-RMF 는 공유 공간마다 읽기 전용 플릿을 최대 하나만 허용
 
 ## 관련 영역
 
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)
 
 ## 출처
 

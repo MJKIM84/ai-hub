@@ -4,7 +4,7 @@ type: glossary
 term_ko: 창고 실행·창고 제어·창고 관리·제조 실행·운송 관리 시스템
 term_en: Warehouse Execution System / Warehouse Control System / Warehouse Management System / Manufacturing Execution System / Transportation Management System
 definition: 창고·생산·운송의 주문·재고·설비·공정을 관리하거나 실행하는 업무·실행 시스템 계열의 약어이며, ROP는 이들에서 작업 요청을 받아 로봇 작업으로 바꾸고 결과를 되돌려 주는 관계에 있다.
-related_areas: [1, 2, 10]
+related_areas: [22, 23, 24]
 tags: [업무 시스템, WMS, WES, WCS, MES, TMS]
 status: draft
 created: 2026-09-24
@@ -36,11 +36,11 @@ confidence: medium
 
 ## 설명
 
-분류 원문은 1. 주문·업무 시스템 연계의 정의에서 이 시스템들을 한꺼번에 들고, A. 업무·공급망 설계의 설명에서 책임의 겹침을 지적한다.
+분류 원문은 23. 업무 시스템 연동의 정의에서 이 시스템들을 한꺼번에 들고, A. 업무·공급망 설계의 설명에서 책임의 겹침을 지적한다.
 
-ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 변환하고, 변경·취소·완료를 다시 반영하는 방법 [분류원문]
+ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 변환하고, 변경·취소·완료를 다시 반영하는 방법 [옛 분류원문]
 
-기업 업무와 현장 운영·제어의 경계를 정리할 때는 ISA-95의 기업–제어 시스템 통합 관점이 참고가 된다. 실제 제품별로 WES·WCS·FMS·ROP의 책임은 겹칠 수 있다. [2] [분류원문][^ref-002]
+기업 업무와 현장 운영·제어의 경계를 정리할 때는 ISA-95의 기업–제어 시스템 통합 관점이 참고가 된다. 실제 제품별로 WES·WCS·FMS·ROP의 책임은 겹칠 수 있다. [2] [옛 분류원문][^ref-002]
 
 원문에 함께 나오는 ERP(Enterprise Resource Planning, 전사적 자원 관리)는 회계·구매·재고·생산 같은 전사 업무를 통합 관리하는 시스템 범주다. 협회·표준 기관의 정의는 미확인이다. [추정] FMS는 문맥상 로봇 플릿 관리 시스템(Fleet Management System), 곧 제조사 관제를 가리키는 것으로 읽는다. [가정] 두 약어는 이 항목의 범위 밖이므로 여기서는 풀어 쓰기만 한다.
 
@@ -56,9 +56,9 @@ ROP와 이들 시스템의 책임 경계는 [ROP가 직접 소유할 범위와 �
 
 ## 관련 영역
 
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) — 이 시스템들의 주문·재고·생산 요청을 로봇 작업으로 바꾸고 변경·취소·완료를 되돌리는 영역이다.
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) — WMS·WES가 정의하는 업무 단계와 로봇 작업 단계의 선후관계·완료 조건을 맞추는 영역이다.
-- [10. 설비·건물 시스템 연동](../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — WCS가 제어하는 컨베이어·자동창고와 로봇 작업을 연계하는 영역이다.
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) — 이 시스템들의 주문·재고·생산 요청을 로봇 작업으로 바꾸고 변경·취소·완료를 되돌리는 영역이다.
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) — WMS·WES가 정의하는 업무 단계와 로봇 작업 단계의 선후관계·완료 조건을 맞추는 영역이다.
+- [22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md) — WCS가 제어하는 컨베이어·자동창고와 로봇 작업을 연계하는 영역이다.
 
 관련 용어: [기업–제어 시스템 통합 표준 (ISA-95)](isa-95.md), [공급망 운영 참조 모델 (SCOR)](scor.md), [전자 제품 코드 정보 서비스 (EPCIS)](epcis.md)
 

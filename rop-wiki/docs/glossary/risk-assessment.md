@@ -4,7 +4,7 @@ type: glossary
 term_ko: 위험성평가
 term_en: Risk Assessment (ISO 12100)
 definition: 본질적 안전 설계, 방호·보완 보호 조치, 사용 정보의 순서로 앞 단계를 다한 뒤 다음 단계로 가며 위험을 줄이는 ISO 12100 의 우선순위 원칙이다.
-related_areas: [25]
+related_areas: [48]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 2
 
 ## 관련 영역
 
-- [25. 안전·위험 관리](../categories/g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md)
+- [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md)
 
 ## 출처
 

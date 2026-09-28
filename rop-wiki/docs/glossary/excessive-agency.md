@@ -4,7 +4,7 @@ type: glossary
 term_ko: 과도한 에이전시
 term_en: Excessive Agency
 definition: LLM 기반 시스템이 필요 이상의 기능·권한·자율성을 가져 잘못되거나 조작된 출력이 해로운 행동으로 이어지는 위험으로, OWASP LLM Top 10(2025)의 한 항목이다.
-related_areas: [27, 26, 18]
+related_areas: [31, 47, 51]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ OWASP 문서는 원인을 과도한 기능·과도한 권한·과도한 자율�
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

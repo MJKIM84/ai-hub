@@ -4,7 +4,7 @@ type: glossary
 term_ko: 디지털 스레드
 term_en: Digital Thread
 definition: 제품 수명주기 전반의 설계·생산·운영 데이터를 연결해 디지털 트윈을 만들고 유지하게 하는 데이터 연결 체계로, ISO 23247-5 가 제조 디지털 트윈용 틀을 정한다.
-related_areas: [22, 28]
+related_areas: [21, 34]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ ISO 23247-5:2026 은 한국(ETRI) 제안으로 2026년 발간되었다고 국가
 
 ## 관련 영역
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [34. 시뮬레이션·예측용 디지털 트윈](../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

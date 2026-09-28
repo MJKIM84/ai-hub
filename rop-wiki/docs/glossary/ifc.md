@@ -4,7 +4,7 @@ type: glossary
 term_ko: 산업 기초 클래스
 term_en: Industry Foundation Classes (IFC)
 definition: buildingSMART 의 BIM 데이터 스키마로, IFC 4.3 은 건물 안에서 특정 기능을 제공하는 경계 지어진 면적·체적을 IfcSpace 로 정의하고 건물 층(IfcBuildingStorey)에 집합 관계로 연결한다.
-related_areas: [6, 28]
+related_areas: [15, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IfcSpace 는 공간 바닥 높이(ElevationWithFlooring) 같은 속성을 둔다
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

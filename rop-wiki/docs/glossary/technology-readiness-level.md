@@ -4,7 +4,7 @@ type: glossary
 term_ko: 기술 성숙도
 term_en: Technology Readiness Level (TRL)
 definition: 기술이 실제 적용에 얼마나 준비되었는지를 1~9단계로 나타내는 지표로, NASA 정의는 TRL 5(관련 환경 검증)와 TRL 6(관련 환경 시연)을 구분한다.
-related_areas: [23, 21]
+related_areas: [54, 55]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [21. 온보딩·설정·현장 시운전](../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [55. 현장 조사·설치·시운전](../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md)
 
 ## 출처
 

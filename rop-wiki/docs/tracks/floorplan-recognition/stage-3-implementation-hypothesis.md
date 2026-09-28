@@ -3,7 +3,7 @@ title: "단계 3. 구현 가설 설계"
 type: track-stage
 track: floorplan-recognition
 stage: 3
-related_areas: [6, 5, 15, 16, 22, 21, 27, 28, 10, 13, 8]
+related_areas: [5, 15, 18, 21, 22, 25, 27, 28, 34, 47, 55]
 tags: [처리 흐름, 공간 그래프, 온톨로지 적재, 사람 검토, SHACL, 시뮬레이션 초기값]
 status: published
 confidence: low
@@ -79,11 +79,11 @@ flowchart LR
 - Raster-to-Graph README(2024)는 입력을 가운데 정렬한 512×512 래스터 평면도로, 출력을 벽 교차점(노드)과 벽 선분(엣지)에 평면도 의미를 붙인 구조 그래프로 두며, 전처리가 다르면 모델을 다시 학습해야 할 수 있다고 적는다. [사실][^ref-070]
 - FloorplanVLM(arXiv 2602.06507, 2026-02)은 래스터 평면도에서 벽·문·창문·방을 구조화된 JSON 시퀀스로 바로 출력하는 시각-언어 모델(Vision-Language Model, VLM) 방식의 벡터화를 제안했고, 외벽 IoU 92.52%를 보고했다(저자 보고, 단일 출처). [사실][^ref-463]
 - 대한건축학회논문집 40(1)(2024)의 국내 연구는 기존 주택 평면도를 BIM 기반 3D 모델로 바꾸기 위해 딥러닝 분할 뒤 경로 계획 기반 벡터 생성 알고리즘으로 벽선을 만드는 2단계 방법을 제안했다(세부 기법 미확인). [사실][^ref-460]
-- 인식·벡터화에 쓰는 학습 모델은 분류 원문 8장 교차 규칙에 따라 [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)의 방법이 [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)에 적용되는 것으로 두 페이지에 함께 연결한다.
+- 인식·벡터화에 쓰는 학습 모델은 분류 개정 전 원문 8장 교차 규칙에 따라 [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)의 방법이 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md)에 적용되는 것으로 두 페이지에 함께 연결한다.
 
 #### 공간 그래프 생성
 
-- Open-RMF traffic-editor는 사람이 평면도 위에 주석한 결과를 .building.yaml로 저장하고, building_map_generator가 이 파일에서 주행 그래프와 시뮬레이터 월드를 만들어 하나의 주석 파일에서 경로용 그래프와 시뮬레이션 초기값이 함께 나온다(2026-09-25 확인). [사실][^ref-441][^ref-079] 시뮬레이션 초기값으로서의 조건은 q3-04에서 다루며 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 주제다.
+- Open-RMF traffic-editor는 사람이 평면도 위에 주석한 결과를 .building.yaml로 저장하고, building_map_generator가 이 파일에서 주행 그래프와 시뮬레이터 월드를 만들어 하나의 주석 파일에서 경로용 그래프와 시뮬레이션 초기값이 함께 나온다(2026-09-25 확인). [사실][^ref-441][^ref-079] 시뮬레이션 초기값으로서의 조건은 q3-04에서 다루며 [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)의 주제다.
 - ifc2indoorgml(ISPRS Archives 2022)은 IFC 데이터에서 IndoorGML 모델을 자동 생성하는 오픈소스 도구다. [사실][^ref-225] 따라서 BIM 입력은 이미지 인식·벡터화 단계를 거치지 않고 공간 그래프 표현으로 바로 변환하는 경로가 있는 것으로 보인다(이 위키의 해석). [추정][^ref-225]
 
 #### 온톨로지 적재와 적재 전 검증
@@ -92,7 +92,7 @@ flowchart LR
 - W3C 형상 제약 언어(Shapes Constraint Language, SHACL, 2017 권고안)는 RDF 데이터 그래프를 형상 그래프의 조건에 대해 검증하는 언어이며, 결과로 sh:conforms(참·거짓)와 위반별 결과를 담은 검증 보고서를 낸다. 이번 확인은 W3C data-shapes 저장소의 편집자 초안으로 한 것이며 권고안(2017) 본문과 문구가 다를 수 있다. [사실][^ref-459]
 - buildingSMART의 정보 전달 명세(Information Delivery Specification, IDS)는 IFC 기반 정보 요구사항을 컴퓨터가 해석할 수 있게 정의하는 XML 기반 표준으로, XSD 스키마와 XML 예시로 제공된다(판 번호 미확인, 2026-09-25 확인). [사실][^ref-464]
 - arXiv 2507.11770(2025-07, IROS 2025 제출)은 MJCF·URDF·SDF 장면 기술을 USD 장면 그래프로 통일하고, 웹 기반 도구에서 사람이 온톨로지 개념 클래스로 의미 라벨을 붙인 뒤 지식 그래프로 옮겨 역량 질문(competency question)에 답하게 하는 흐름을 제안했다. [사실][^ref-462]
-- OBRNIT(Buildings 14(8), 2024)은 BIM 기반 로봇 주행·점검 작업을 위해 로봇, 건물, 주행 작업, 점검 작업의 네 개념 묶음을 둔 온톨로지다(ifcOWL 개념 재사용 여부 미확인). [사실][^ref-461] 로봇 능력과의 대조는 q3-03에서 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)와 함께 다룬다.
+- OBRNIT(Buildings 14(8), 2024)은 BIM 기반 로봇 주행·점검 작업을 위해 로봇, 건물, 주행 작업, 점검 작업의 네 개념 묶음을 둔 온톨로지다(ifcOWL 개념 재사용 여부 미확인). [사실][^ref-461] 로봇 능력과의 대조는 q3-03에서 [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md)와 함께 다룬다.
 
 #### 사람 검토를 둔 사례
 
@@ -107,7 +107,7 @@ flowchart LR
 
 이 트랙이 출발한 분류 원문의 질문은 다음과 같다.
 
-제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [분류원문]
+제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? [옛 분류원문]
 
 확인한 흐름에서 방 이름은 CAD 문자 추출이 기본으로 꺼져 있거나 래스터 문자 인식에 기대므로, 업무 장소 이름과 공간 노드를 잇는 일은 공간 그래프 생성 뒤 사람 확인 단계에 두어야 할 것으로 보인다. [추정][^ref-084][^ref-079][^ref-462]
 
@@ -162,10 +162,10 @@ flowchart TB
 
 도식은 위 종합(추정)을 그린 것이다.
 
-- 확인한 관제 형식에서 문·승강기는 차선 이벤트와 경유점 속성(승강기 안 여부·승강기 칸 경유점), 좁은 구역은 상호 배제 그룹이나 해제 구역 다각형, 충전은 노드 동작으로 흩어져 표현되므로, 자원 예약의 단위는 그래프 노드 하나가 아니라 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. 상호 배제 그룹은 이런 점유 예약을 그래프 요소 묶음 단위로 표현하는 예로 읽을 수 있다. [추정][^ref-536][^ref-079][^ref-031] 자원 예약 단위를 명시한 단일 출처는 확인하지 못했으며, 이 내용은 [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)와 이어진다.
+- 확인한 관제 형식에서 문·승강기는 차선 이벤트와 경유점 속성(승강기 안 여부·승강기 칸 경유점), 좁은 구역은 상호 배제 그룹이나 해제 구역 다각형, 충전은 노드 동작으로 흩어져 표현되므로, 자원 예약의 단위는 그래프 노드 하나가 아니라 공용 자원 개체가 자신이 걸친 경유점·차선·구역을 가리키는 형태로 두어야 할 것으로 보인다. 상호 배제 그룹은 이런 점유 예약을 그래프 요소 묶음 단위로 표현하는 예로 읽을 수 있다. [추정][^ref-536][^ref-079][^ref-031] 자원 예약 단위를 명시한 단일 출처는 확인하지 못했으며, 이 내용은 [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)와 이어진다.
 - 확인한 엣지 속성은 속도·높이·방향·통로·이벤트 같은 운동·설비 조건이고 계단 주행·문 조작 같은 로봇 능력 조건은 플릿별 그래프(Open-RMF)나 관제가 보유한 로봇별 통행 제한(VDA 5050)으로 처리되므로, 공간 그래프는 플릿 중립의 기본 그래프와 로봇별 통행 가능 여부를 분리해 두는 것이 맞아 보인다. [추정][^ref-413][^ref-031][^ref-079] 능력 대조 규칙은 q3-03에서 다룬다.
 - q3-01에 인용한 분류 원문 질문의 ‘3층 출하 대기장’은 구역 수준 노드 하나로 두고 이름·층을 붙인 뒤, 제조사 플릿마다 그 구역에 포함되는 경유점·스테이션을 대응시키는 방식이면 제조사별 지도 차이를 흡수할 수 있을 것으로 보인다. [추정][^ref-079][^ref-413][^ref-212]
-- 경로망의 정점 배치와 엣지 방향이 다중 로봇 충돌 회피와 경로망 품질을 좌우한다는 연구를 보면, 도면 인식으로 얻은 차선 수준 그래프는 최종 경로망이 아니라 경로망 자동 생성·최적화의 입력 초안으로 두는 것이 맞아 보인다. [추정][^ref-641][^ref-268] 이 관점은 [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md)와 이어진다.
+- 경로망의 정점 배치와 엣지 방향이 다중 로봇 충돌 회피와 경로망 품질을 좌우한다는 연구를 보면, 도면 인식으로 얻은 차선 수준 그래프는 최종 경로망이 아니라 경로망 자동 생성·최적화의 입력 초안으로 두는 것이 맞아 보인다. [추정][^ref-641][^ref-268] 이 관점은 [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md)와 이어진다.
 
 검증이 승인한 개념(경유점·주행 차선)과 공용 자원 속성(상호 배제 여부)은 [공간 그래프 스키마 초안](space-graph-schema-draft.md) v0.7에 반영했다. 공용 자원의 점유 요소 속성과 경유점·주행 차선–공간 노드 관계는 추정 근거여서 스키마 초안 6절 질문으로 두었다.
 
@@ -203,8 +203,8 @@ flowchart TB
 
 #### 문·승강기 통과: 로봇 조작과 설비 연동
 
-- 연계 대상: Schulze 외(2025-02-25)는 7자유도 팔을 단 이동 로봇이 닫힌 문을 스스로 열고 사람용 인터페이스로 승강기를 조작해 층을 옮기는 운반 서비스를 요양 시설과 대학 건물에서 현장 시험했다. [사실][^ref-575] 팔로 문을 열고 버튼을 누르는 조작은 분류 원문 9장의 로봇 자체 지능·제어(파지·관절 제어) 쪽 연계 대상이다.
-- 국가기술표준원은 2021-11-11 로봇의 엘리베이터 탑승 안전 요구사항과 실내 배송 로봇에 관한 KS 제정을 알리며, 로봇이 건물 안을 이동하려면 속도 제어, 위험 상황의 보호 정지, 높낮이 차·틈새 극복, 추락·넘어짐 방지 기준이 필요하다고 밝혔고, 관련 표준으로 KS B 7317(이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법)이 등재되어 있다. [사실][^ref-315][^ref-314] 단차·틈새의 수치 기준은 미확인이며, 승강기 안전 제어 자체는 분류 원문 9장의 시설·설비 제어 쪽 연계 대상이다.
+- 연계 대상: Schulze 외(2025-02-25)는 7자유도 팔을 단 이동 로봇이 닫힌 문을 스스로 열고 사람용 인터페이스로 승강기를 조작해 층을 옮기는 운반 서비스를 요양 시설과 대학 건물에서 현장 시험했다. [사실][^ref-575] 팔로 문을 열고 버튼을 누르는 조작은 분류 원문 19장의 로봇 자체 지능·제어(파지·관절 제어) 쪽 연계 대상이다.
+- 국가기술표준원은 2021-11-11 로봇의 엘리베이터 탑승 안전 요구사항과 실내 배송 로봇에 관한 KS 제정을 알리며, 로봇이 건물 안을 이동하려면 속도 제어, 위험 상황의 보호 정지, 높낮이 차·틈새 극복, 추락·넘어짐 방지 기준이 필요하다고 밝혔고, 관련 표준으로 KS B 7317(이동 로봇의 엘리베이터 탑승을 위한 안전 요구사항 및 평가 방법)이 등재되어 있다. [사실][^ref-315][^ref-314] 단차·틈새의 수치 기준은 미확인이며, 승강기 안전 제어 자체는 분류 원문 19장의 시설·설비 제어 쪽 연계 대상이다.
 - 국내 연구(지적과 국토정보 52(2), 2022)는 업무 시설을 대상으로 초점집단면접과 계층화 분석으로 로봇 친화형 건축물 인증 지표 23개 평가 항목의 상대 중요도를 정했으며, 요구사항을 운영 시설·시스템의 적정성과 건축·로봇 운영 시스템·네트워크의 적정성으로 나눴다(세부 항목 미확인). [사실][^ref-578]
 
 #### 정적 능력 대조와 현재 상태
@@ -222,9 +222,9 @@ flowchart TB
 | 승강기 | 칸 면적·통과 폭(사람 대상 연구의 속성) | 로봇 폭·길이, 승강기 이용 가능 여부 또는 설비 연동 | [^ref-348][^ref-228][^ref-315] |
 | 주행 차선 | 로봇 최대 높이·최대 속도 | 로봇 높이·속도 | [^ref-413][^ref-228] |
 
-- 문·승강기 통과는 로봇 쪽 능력(팔로 문 열기·버튼 조작)으로도, 건물 쪽 연동(문 어댑터·자동 구동 문, 승강기 연동)으로도 충족될 수 있으므로, 능력 대조 규칙은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두어야 할 것으로 보이며, 로봇 쪽 조작 기술 자체는 연계 대상이다. [추정][^ref-283][^ref-573][^ref-575][^ref-315] 설비 연동은 [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)과 이어진다.
-- q3-02 에서 로봇별 통행 가능 여부를 플릿 중립의 기본 그래프와 분리해 두자고 정리한 것을, 이번 확인은 두 가지로 넓힌다. 확인한 관제 인터페이스에 계단·문·승강기 능력 필드가 없으므로 ROP 는 매뉴얼 등에서 얻은 로봇별 능력 속성을 따로 두고 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프를 파생해야 하며, 차선 폐쇄·문 상태 같은 현재 상태는 이와 분리한 별도 층으로 두어야 할 것으로 보인다. [추정][^ref-228][^ref-105][^ref-031][^ref-079][^ref-569][^ref-570] 현재 상태 층은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)의 몫이고, 능력 속성은 [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md)와 [매뉴얼 기반 로봇 기능 온톨로지](../manual-capability-ontology/index.md) 트랙과 이어진다.
-- q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’에 어느 로봇을 보낼 수 있는지는 그 구역 노드까지 승강기 엣지를 포함한 경로가 그 로봇의 통행 가능 부분 그래프 안에 있는지로 걸러 낸 뒤 작업 배정 후보로 넘기는 방식이 될 것으로 보이며, 능력별 경로를 먼저 구해 배정 문제에 넣는 연구가 이 구조의 예다. [추정][^ref-576][^ref-572][^ref-031] 배정 자체는 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md)에서 다룬다.
+- 문·승강기 통과는 로봇 쪽 능력(팔로 문 열기·버튼 조작)으로도, 건물 쪽 연동(문 어댑터·자동 구동 문, 승강기 연동)으로도 충족될 수 있으므로, 능력 대조 규칙은 '로봇 능력 또는 설비 연동 가능' 같은 선택 조건으로 두어야 할 것으로 보이며, 로봇 쪽 조작 기술 자체는 연계 대상이다. [추정][^ref-283][^ref-573][^ref-575][^ref-315] 설비 연동은 [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md)과 이어진다.
+- q3-02 에서 로봇별 통행 가능 여부를 플릿 중립의 기본 그래프와 분리해 두자고 정리한 것을, 이번 확인은 두 가지로 넓힌다. 확인한 관제 인터페이스에 계단·문·승강기 능력 필드가 없으므로 ROP 는 매뉴얼 등에서 얻은 로봇별 능력 속성을 따로 두고 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프를 파생해야 하며, 차선 폐쇄·문 상태 같은 현재 상태는 이와 분리한 별도 층으로 두어야 할 것으로 보인다. [추정][^ref-228][^ref-105][^ref-031][^ref-079][^ref-569][^ref-570] 현재 상태 층은 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)의 몫이고, 능력 속성은 [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md)와 [매뉴얼 기반 로봇 기능 온톨로지](../manual-capability-ontology/index.md) 트랙과 이어진다.
+- q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’에 어느 로봇을 보낼 수 있는지는 그 구역 노드까지 승강기 엣지를 포함한 경로가 그 로봇의 통행 가능 부분 그래프 안에 있는지로 걸러 낸 뒤 작업 배정 후보로 넘기는 방식이 될 것으로 보이며, 능력별 경로를 먼저 구해 배정 문제에 넣는 연구가 이 구조의 예다. [추정][^ref-576][^ref-572][^ref-031] 배정 자체는 [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md)에서 다룬다.
 
 ```mermaid
 flowchart LR
@@ -271,7 +271,7 @@ flowchart LR
 
 #### 도면·BIM 기반 가상 환경 연구
 
-- 연계 대상: Lee·Woo·Shin(IJPEM, 2026)은 2D 건축 CAD 도면으로 3D 가상 환경을 만든 뒤 2D 점유 격자 지도를 자동 생성해 센서 주행 없이 AMCL 위치추정에 쓰고, 가상 지도의 평균 이동 오차 0.17±0.06 m, 회전 오차 3.59°±1.78°, 궤적 일관성 오차 0.10±0.08 m 로 SLAM 기반 지도와 비슷했다고 보고했다(저자 보고 단일 출처, 시험 환경 규모 미확인). [사실][^ref-628] 위치추정 자체는 분류 원문 9장의 로봇 자체 지능·제어 쪽 연계 대상이며, 여기서는 도면에서 가상 지도를 만드는 근거로만 읽는다.
+- 연계 대상: Lee·Woo·Shin(IJPEM, 2026)은 2D 건축 CAD 도면으로 3D 가상 환경을 만든 뒤 2D 점유 격자 지도를 자동 생성해 센서 주행 없이 AMCL 위치추정에 쓰고, 가상 지도의 평균 이동 오차 0.17±0.06 m, 회전 오차 3.59°±1.78°, 궤적 일관성 오차 0.10±0.08 m 로 SLAM 기반 지도와 비슷했다고 보고했다(저자 보고 단일 출처, 시험 환경 규모 미확인). [사실][^ref-628] 위치추정 자체는 분류 원문 19장의 로봇 자체 지능·제어 쪽 연계 대상이며, 여기서는 도면에서 가상 지도를 만드는 근거로만 읽는다.
 - 4D BIM 과 로봇 작업 계획을 잇는 연구(arXiv 2402.03602, 2024-02, ITcon 2025 게재판 있음)는 4D BIM 모델을 건설 로봇 작업의 시뮬레이션 월드로 변환하는 흐름을 다룬 것으로 보이며, 상태 속성별 SDF 분할·FBX 내보내기·URDF→SDF 변환 같은 세부는 원문 미열람으로 미확인이다. 건설 로봇 대상이며 물류 적용은 미확인이다. [추정][^ref-633]
 - Vega-Torres 외는 BIM 에서 자동 생성한 2D 점유 격자 지도가 구조 요소만 담으며, 가구·잡동사니와 설계–시공 편차 때문에 BIM 이 현실을 정확히 나타낸다는 가정이 성립하지 않는다고 지적했다(2023-08). [사실][^ref-081]
 
@@ -289,11 +289,11 @@ flowchart LR
 | 현재 상태 | 없음 | 운영 중 현재 상태(운영 예측용일 때) | [^ref-632] |
 
 - 여섯 묶음 가운데 도면 인식이 직접 채울 수 있는 것은 평면 형상과 문·승강기·계단의 위치 정도이고, 층 고도·벽 높이는 층 정보나 BIM 에서, 문·승강기 동작 파라미터와 로봇 모델은 설비·제조사 자료에서, 주문 흐름·초기 재고는 창고 관리 시스템에서 와야 하며, 가구·랙 같은 비구조 요소는 도면 기반 결과에 빠질 수 있는 것으로 보인다. [추정][^ref-079][^ref-406][^ref-629][^ref-081][^ref-628]
-- 분류 원문 7장은 두 영역을 다음과 같이 구분한다.
+- 분류 개정 전 원문 7장은 두 영역을 다음과 같이 구분한다.
 
-8번의 실시간 모델이 **현재 상태를 표현**한다면, 22번은 그 모델을 이용해 **가정한 미래를 실험**한다. 구분해두면 디지털 트윈이라는 이름 아래 서로 다른 기능이 섞이지 않는다. [분류원문]
+8번의 실시간 모델이 **현재 상태를 표현**한다면, 22번은 그 모델을 이용해 **가정한 미래를 실험**한다. 구분해두면 디지털 트윈이라는 이름 아래 서로 다른 기능이 섞이지 않는다. [옛 분류원문]
 
-- 이 구분에 따라, 설계·도입 검토용 시뮬레이션은 도면 기반 정적 초기값과 가정한 수요로 시작하고, 운영 중 예측용 시뮬레이션은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태(로봇 위치·배터리, 대기 작업, 재고)로 초기화하는 것으로 나누어야 [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md)의 초기값 요구가 섞이지 않을 것으로 보인다. [추정][^ref-632][^ref-406]
+- 이 구분에 따라, 설계·도입 검토용 시뮬레이션은 도면 기반 정적 초기값과 가정한 수요로 시작하고, 운영 중 예측용 시뮬레이션은 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)이 표현하는 현재 상태(로봇 위치·배터리, 대기 작업, 재고)로 초기화하는 것으로 나누어야 [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)의 초기값 요구가 섞이지 않을 것으로 보인다. [추정][^ref-632][^ref-406]
 - 출하 성수기 병목(‘성수기 주문량이 늘면 어디가 먼저 막힐까?’)을 도면 기반 시뮬레이션으로 보려면 층별 지도만으로는 부족하고, 출고 주문 흐름과 초기 재고, 충전소·승강기의 수용량과 동작 시간, 로봇 대수·배터리 파라미터가 함께 주어져야 할 것으로 보인다. [추정][^ref-629][^ref-406][^ref-105][^ref-631]
 - 시뮬레이션 입력 데이터 관련 활동이 프로젝트 시간의 큰 몫을 차지한다는 보고(제조 대상, 2007)와 레이아웃 외 입력이 따로 정의되는 사례를 보면, 도면 기반 자동 생성은 입력 준비 가운데 레이아웃 부분만 줄이고, 주문·자원·재고 데이터를 중립 구조로 잇는 일은 별도 과제로 남을 것으로 보인다. 도면 자동화가 줄이는 몫을 측정한 자료는 찾지 못했다. [추정][^ref-630][^ref-631][^ref-629]
 - q3-01 에 인용한 분류 원문 질문의 ‘3층 출하 대기장’을 시뮬레이션에서 재현하려면 그 구역 노드와 경유점이 층 고도를 가진 층에 속하고 승강기 칸·운행 층과 이어져 있어야 하며, 대기장에 스폰하거나 도착하는 로봇이 같은 이름으로 참조되어야 할 것으로 보인다. [추정][^ref-079][^ref-406]
@@ -305,7 +305,7 @@ flowchart LR
   demand["가정한 주문 흐름·초기 재고"] --> design
   robot["로봇 모델 파라미터"] --> design
   plan --> ops["운영 중 예측용 시뮬레이션"]
-  state["현재 상태: 8. 실시간 세계 상태·데이터 일관성"] --> ops
+  state["현재 상태: 18. 실시간 세계 상태·데이터 일관성"] --> ops
   robot --> ops
 ```
 
@@ -408,7 +408,7 @@ q5-06 은 [열린 질문](../../open-questions.md) oq-084(물류센터 디지털
 | 핵심 구성 요소 가운데 공간 그래프 단위가 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-58에서 5절 '핵심 구성 요소'에 공간 그래프의 두 층위·자원 예약 단위·통과 조건 분리를 실었다(q3-02, 결론은 추정) | 충족 · 전환 미승인 |
 | 핵심 구성 요소 가운데 능력 대조가 같은 절에 실림 | 충족 | 실행 2026-09-25-65에서 5절 '핵심 구성 요소'에 능력 대조 소절을 실었다(q3-03, 결론은 추정) | 충족 · 전환 미승인 |
 | 핵심 구성 요소 가운데 시뮬레이션 초기값이 같은 절에 실림 | 충족 | 실행 2026-09-25-70에서 5절 '핵심 구성 요소'에 시뮬레이션 초기값 소절을 실었다(q3-04, 결론은 추정) | 충족 · 전환 미승인 |
-| 다른 아이디어와의 연결이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-65에서 5절 '다른 아이디어와의 연결'에 아이디어 1(매뉴얼 기반 로봇 기능 온톨로지)과 대조되는 지점과 13. 작업 배정 — MRTA로 넘어가는 지점을 실었다(q3-03, 결론은 추정) | 충족 · 전환 미승인 |
+| 다른 아이디어와의 연결이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "5. 구현 가설" 절에 실림 | 충족 | 실행 2026-09-25-65에서 5절 '다른 아이디어와의 연결'에 아이디어 1(매뉴얼 기반 로봇 기능 온톨로지)과 대조되는 지점과 25. 작업 배정 — MRTA로 넘어가는 지점을 실었다(q3-03, 결론은 추정) | 충족 · 전환 미승인 |
 | [공간 그래프 스키마 초안](space-graph-schema-draft.md)이 근거 finding과 함께 v0.1 이상으로 갱신됨 | 충족 | 실행 2026-09-25-58에서 v0.6 → v0.7, 실행 2026-09-25-65에서 v0.7 → v0.8, 실행 2026-09-25-70에서 v0.8 → v0.9 갱신(층·문·엘리베이터 속성, 근거 f2·f3) | 충족 · 전환 미승인 |
 | 사용자에게 제안하는 실험 계획이 [실험](experiments.md)에 실림 | 미충족 | 제안된 실험 계획 없음 | 미충족 · 미승인 |
 
@@ -418,34 +418,34 @@ q5-06 은 [열린 질문](../../open-questions.md) oq-084(물류센터 디지털
 
 이 트랙은 분류를 바꾸지 않는다. 확인된 사실은 세부영역 페이지를 직접 고치지 않고 [트랙 로그](log.md)의 "세부영역 반영 제안"으로 남기며, 반영은 다음 해당 영역 실행에서 한다. 프런트매터 `related_areas`는 아래 목록과 같다.
 
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — 분류 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 실행 2026-09-25-54의 반영 제안: "6. 대표 접근법과 기술"에 도면 처리 흐름의 단계 구분과 장소 이름·운영 요소를 사람이 확인하는 지점
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — '공간 그래프로 온톨로지에 적재'한 공간·시설이 로봇 능력(계단·도어 조작·충전)과 대조된다(아이디어 1과의 연결). 반영 제안: "8. 대표 연구와 자료"에 건물·장면 정보를 로봇 온톨로지·지식 그래프에 적재한 연구
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) — 분류 원문 10장의 함께 필요한 영역(교통 관리). 공간 그래프가 경로·통로 조율의 바탕이다
-- [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — 인식한 충전 위치·엘리베이터가 공용 자원 목록이 되어 예약·배분의 대상이 된다
-- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — 분류 원문 10장의 함께 필요한 영역(시뮬레이션). 생성한 지도를 '시뮬레이션 초기값으로 사용'한다. 이번 실행은 시뮬레이터 월드 생성을 형식 설명으로만 다뤘다(q3-04)
-- [21. 온보딩·설정·현장 시운전](../../categories/f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md) — 반영 제안: "6. 대표 접근법과 기술"에 시운전 전 도면 처리에서 사람이 입력·확인하는 항목(축척·좌표 기준점, 운영 요소 주석, 검증 보고서 확인)
-- [27. AI·학습·적응과 모델 운영](../../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md) — 분류 원문 8장 교차 규칙(도면 해석은 6. 지도·공간·위치 모델에 적용). 반영 제안: "6. 대표 접근법과 기술"·"8. 대표 연구와 자료"에 시각-언어 모델 벡터화, 불확실성 기반 사람 참여 루프, LLM 다중 에이전트와 사람 피드백
-- [28. 표준·상호운용성·다사업자 거버넌스](../../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 반영 제안: "7. 관련 표준·프레임워크·오픈소스"에 IFCtoLBD, SHACL, IDS
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 분류 개정 전 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 실행 2026-09-25-54의 반영 제안: "6. 대표 접근법과 기술"에 도면 처리 흐름의 단계 구분과 장소 이름·운영 요소를 사람이 확인하는 지점
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — '공간 그래프로 온톨로지에 적재'한 공간·시설이 로봇 능력(계단·도어 조작·충전)과 대조된다(아이디어 1과의 연결). 반영 제안: "8. 대표 연구와 자료"에 건물·장면 정보를 로봇 온톨로지·지식 그래프에 적재한 연구
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — 분류 개정 전 원문 10장의 함께 필요한 영역(교통 관리). 공간 그래프가 경로·통로 조율의 바탕이다
+- [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) — 인식한 충전 위치·엘리베이터가 공용 자원 목록이 되어 예약·배분의 대상이 된다
+- [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md) — 분류 개정 전 원문 10장의 함께 필요한 영역(시뮬레이션). 생성한 지도를 '시뮬레이션 초기값으로 사용'한다. 이번 실행은 시뮬레이터 월드 생성을 형식 설명으로만 다뤘다(q3-04)
+- [55. 현장 조사·설치·시운전](../../categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) — 반영 제안: "6. 대표 접근법과 기술"에 시운전 전 도면 처리에서 사람이 입력·확인하는 항목(축척·좌표 기준점, 운영 요소 주석, 검증 보고서 확인)
+- [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 분류 개정 전 원문 8장 교차 규칙(도면 해석은 15. 지도·공간·위치 모델에 적용). 반영 제안: "6. 대표 접근법과 기술"·"8. 대표 연구와 자료"에 시각-언어 모델 벡터화, 불확실성 기반 사람 참여 루프, LLM 다중 에이전트와 사람 피드백
+- [21. 상호운용 표준·적합성](../../categories/integration/interoperability-standards-and-conformance.md) — 반영 제안: "7. 관련 표준·프레임워크·오픈소스"에 IFCtoLBD, SHACL, IDS
 
 실행 2026-09-25-58(q3-02)의 반영 제안:
 
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — "6. 대표 접근법과 기술"에 공간 그래프를 구역 수준·차선 수준 층위로 두고 업무 장소 이름을 구역 노드에 붙이는 접근(추정), "8. 대표 연구와 자료"에 IndoorGML 공간 세분화 연구
-- [16. 공용 자원·충전·에너지 최적화](../../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md) — "6. 대표 접근법과 기술"에 문·승강기의 차선 이벤트·경유점 속성 표현, 상호 배제 그룹, VDA 5050 해제 구역 접근 허가, 충전 동작의 위치, 공용 자원 예약 단위(추정)
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) — "6. 대표 접근법과 기술"에 플릿별 주행 그래프와 엣지 통과 조건, 방향 경로망 최적화, 도면 차선 그래프를 경로망 초안으로 두는 관점(추정)
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — "6. 대표 접근법과 기술"에 공간 그래프를 구역 수준·차선 수준 층위로 두고 업무 장소 이름을 구역 노드에 붙이는 접근(추정), "8. 대표 연구와 자료"에 IndoorGML 공간 세분화 연구
+- [28. 공용 자원·충전·에너지 최적화](../../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md) — "6. 대표 접근법과 기술"에 문·승강기의 차선 이벤트·경유점 속성 표현, 상호 배제 그룹, VDA 5050 해제 구역 접근 허가, 충전 동작의 위치, 공용 자원 예약 단위(추정)
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — "6. 대표 접근법과 기술"에 플릿별 주행 그래프와 엣지 통과 조건, 방향 경로망 최적화, 도면 차선 그래프를 경로망 초안으로 두는 관점(추정)
 
 실행 2026-09-25-65(q3-03)의 반영 제안:
 
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — "6. 대표 접근법과 기술"에 로봇 능력 속성(최대 단 높이·폭·높이·문 조작·승강기 이용)을 공간 요소의 통과 조건과 요구–제공 능력으로 대조하는 접근(추정)과, 확인한 관제 인터페이스(VDA 5050 팩트시트, Open-RMF 플릿 설정)에 해당 필드가 없다는 점
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — "6. 대표 접근법과 기술"에 BIM·건물 디지털 트윈에서 로봇 스킬별 지도·경로를 만드는 연구, 경로 그래프 엣지 메타데이터·동적 폐쇄, 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프 파생(추정)
-- [10. 설비·건물 시스템 연동](../../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — "6. 대표 접근법과 기술"에 문·승강기 통과를 설비 연동(Open-RMF 문 어댑터, IFC 자동 구동 문)으로 충족하는 방식, KS B 7317 의 표준명·제정 사실(수치 미확인), 로봇 조작과 설비 연동의 선택 조건(추정)
-- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — "6. 대표 접근법과 기술"에 능력별 통행 가능 경로로 배정 후보를 거르거나 이종 차량 경로·배정 문제에 넣는 접근(연계 대상 사례)
-- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — "10. 다른 연구영역과의 연결"에 정적 능력 대조와 현재 상태 층(문 상태·차선 폐쇄)의 분리(추정)
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — "6. 대표 접근법과 기술"에 로봇 능력 속성(최대 단 높이·폭·높이·문 조작·승강기 이용)을 공간 요소의 통과 조건과 요구–제공 능력으로 대조하는 접근(추정)과, 확인한 관제 인터페이스(VDA 5050 팩트시트, Open-RMF 플릿 설정)에 해당 필드가 없다는 점
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — "6. 대표 접근법과 기술"에 BIM·건물 디지털 트윈에서 로봇 스킬별 지도·경로를 만드는 연구, 경로 그래프 엣지 메타데이터·동적 폐쇄, 플릿 중립 공간 그래프에서 로봇별 통행 가능 부분 그래프 파생(추정)
+- [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — "6. 대표 접근법과 기술"에 문·승강기 통과를 설비 연동(Open-RMF 문 어댑터, IFC 자동 구동 문)으로 충족하는 방식, KS B 7317 의 표준명·제정 사실(수치 미확인), 로봇 조작과 설비 연동의 선택 조건(추정)
+- [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md) — "6. 대표 접근법과 기술"에 능력별 통행 가능 경로로 배정 후보를 거르거나 이종 차량 경로·배정 문제에 넣는 접근(연계 대상 사례)
+- [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) — "10. 다른 연구영역과의 연결"에 정적 능력 대조와 현재 상태 층(문 상태·차선 폐쇄)의 분리(추정)
 
 실행 2026-09-25-70(q3-04)의 반영 제안:
 
-- [22. 시뮬레이션·예측용 디지털 트윈](../../categories/f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md) — "6. 대표 접근법과 기술"에 도면 주석에서 시뮬레이션 월드를 만드는 방식과 추가로 필요한 입력(로봇 모델·주문 흐름·초기 재고·현재 상태), 설계용과 운영 예측용 초기화의 구분(추정), "8. 대표 연구와 자료"에 SLAPStack, CMSD, 입력 데이터 활동 시간 연구, IFAC 2024 초기화 연구
-- [6. 지도·공간·위치 모델](../../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md) — "8. 대표 연구와 자료"에 2D 건축 CAD 도면에서 가상 환경·점유 격자 지도를 자동 생성한 국내 저자 연구(연계 대상), "6. 대표 접근법과 기술"에 도면 기반 결과에 빠지는 비구조 요소와 도면 밖 원천(추정)
-- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — "10. 다른 연구영역과의 연결"에 운영 중 예측 시뮬레이션을 현재 상태로 초기화한다는 연구와, 이 영역이 그 초기값을 공급하는 쪽이라는 구분(추정)
+- [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md) — "6. 대표 접근법과 기술"에 도면 주석에서 시뮬레이션 월드를 만드는 방식과 추가로 필요한 입력(로봇 모델·주문 흐름·초기 재고·현재 상태), 설계용과 운영 예측용 초기화의 구분(추정), "8. 대표 연구와 자료"에 SLAPStack, CMSD, 입력 데이터 활동 시간 연구, IFAC 2024 초기화 연구
+- [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — "8. 대표 연구와 자료"에 2D 건축 CAD 도면에서 가상 환경·점유 격자 지도를 자동 생성한 국내 저자 연구(연계 대상), "6. 대표 접근법과 기술"에 도면 기반 결과에 빠지는 비구조 요소와 도면 밖 원천(추정)
+- [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) — "10. 다른 연구영역과의 연결"에 운영 중 예측 시뮬레이션을 현재 상태로 초기화한다는 연구와, 이 영역이 그 초기값을 공급하는 쪽이라는 구분(추정)
 
 ## 8. 출처
 

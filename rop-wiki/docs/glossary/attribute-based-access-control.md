@@ -4,7 +4,7 @@ type: glossary
 term_ko: 속성 기반 접근 통제
 term_en: Attribute-Based Access Control (ABAC)
 definition: 주체·객체·요청 동작의 속성과 시간·위치 같은 환경 조건을 정책에 대조해 허용 여부를 정하는 접근 통제 방식이다.
-related_areas: [26, 27, 13]
+related_areas: [25, 47, 51]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ NIST SP 800-162(2014-01 판)가 정의한다. 채팅 지시의 명령 권한에�
 
 ## 관련 영역
 
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 모델 컨텍스트 프로토콜
 term_en: Model Context Protocol (MCP)
 definition: LLM 이 외부 시스템의 상태를 조회하고 정해진 도구로 동작을 수행하도록 도구·자원을 구조화해 노출하는 개방형 연결 규약이다.
-related_areas: [27, 26, 18]
+related_areas: [31, 47, 51]
 tags: []
 status: published
 confidence: low
@@ -34,9 +34,9 @@ LLM 이 외부 시스템의 상태를 조회하고 정해진 도구로 동작을
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 기업–제어 시스템 통합 표준
 term_en: ISA-95 Enterprise-Control System Integration
 definition: ISA-95 계열에서 하위 실행 계층이 수행할 작업 단위의 요청으로, OPC UA for ISA-95 Job Control 은 이를 저장·시작·갱신·일시정지·중단하는 메서드를 둔다.
-related_areas: [1, 2, 28]
+related_areas: [21, 23, 24]
 tags: [표준, ISA, 기업–제어 통합]
 status: published
 created: 2026-09-24
@@ -34,9 +34,9 @@ OPC UA for ISA-95 Job Control(판 2.0.0, 2024-01-31)은 Store·StoreAndStart·St
 
 ## 관련 영역
 
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md) — 업무 시스템에서 받은 주문·재고·생산 요청과 결과 반영의 경계를 ISA-95 관점으로 정리한다.
-- [2. 공정·워크플로 모델링](../categories/a-business-supply-chain-design/02-process-and-workflow-modeling.md) — 업무 단계와 현장 작업 단계의 분리 지점을 정할 때 참조한다.
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md) — 업무 시스템·ROP·설비 제어 사이의 책임 분담을 표준 어휘로 논의한다.
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) — 업무 시스템에서 받은 주문·재고·생산 요청과 결과 반영의 경계를 ISA-95 관점으로 정리한다.
+- [24. 작업·워크플로 모델링](../categories/planning-and-optimization/task-and-workflow-modeling.md) — 업무 단계와 현장 작업 단계의 분리 지점을 정할 때 참조한다.
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md) — 업무 시스템·ROP·설비 제어 사이의 책임 분담을 표준 어휘로 논의한다.
 
 관련 용어: [공급망 운영 참조 모델 (SCOR)](scor.md), [WES/WCS/WMS/MES/TMS](wes-wcs-wms-mes-tms.md)
 

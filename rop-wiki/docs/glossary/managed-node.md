@@ -4,7 +4,7 @@ type: glossary
 term_ko: 관리형 노드
 term_en: Managed Node (ROS 2 Lifecycle Node)
 definition: Unconfigured·Inactive·Active·Finalized 상태와 전이를 가져 감독 도구가 준비 확인·재시작·교체를 제어할 수 있는 ROS 2 노드이다.
-related_areas: [12, 24]
+related_areas: [29, 57]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ Unconfigured·Inactive·Active·Finalized 상태와 전이를 가져 감독 도�
 
 ## 관련 영역
 
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
-- [24. 자산·소프트웨어 수명주기 관리](../categories/f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
+- [57. 자산·소프트웨어 수명주기 관리](../categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md)
 
 ## 출처
 

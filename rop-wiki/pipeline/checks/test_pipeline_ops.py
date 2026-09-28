@@ -16,11 +16,13 @@ from lib import paths, runs  # noqa: E402
 from lib import validate as V  # noqa: E402
 
 FIX = HERE / "fixtures" / "regressions"
-AREA7 = paths.ROOT / paths.area_repo_path(7)
+# 옛 7. 화물·재고·자산 식별과 추적 → 개정 17. 작업 대상·자산 식별과 인계 추적(본문을 이어받음, 2026-09-28)
+AREA_NO = 17
+AREA7 = paths.ROOT / paths.area_repo_path(AREA_NO)
 
 
 def _area_page(extra_sections: dict[str, str]) -> str:
-    """area 7 페이지를 바탕으로 특정 절 본문을 바꾼 시험 페이지."""
+    """area 17(옛 7) 페이지를 바탕으로 특정 절 본문을 바꾼 시험 페이지."""
     text = AREA7.read_text(encoding="utf-8")
     meta, body = fm.parse(text)
     patches = [{"section": k, "action": "replace", "content": v} for k, v in extra_sections.items()]
@@ -84,8 +86,8 @@ class TestValidate(unittest.TestCase):
     def test_split_oversized_area(self):
         long = "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(120))
         text = _area_page({"6. 대표 접근법과 기술": long})
-        new, topics = V.split_oversized_area(paths.area_repo_path(7), text, 4000,
-                                             [{"path": paths.area_repo_path(7), "section": "6. 대표 접근법과 기술",
+        new, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), text, 4000,
+                                             [{"path": paths.area_repo_path(AREA_NO), "section": "6. 대표 접근법과 기술",
                                                "budget_chars": 800, "summary": "요약 문장이다. [사실][^ref-003]"}],
                                              "2026-09-25-99", "2026-09-26")
         self.assertEqual(len(topics), 1)
@@ -93,7 +95,7 @@ class TestValidate(unittest.TestCase):
         self.assertNotIn("요약 문장이다", new)
         self.assertLessEqual(V.area_body_chars(fm.parse(new)[1]), 4000)
         t = topics[0]
-        self.assertTrue(t["path"].startswith("docs/topics/2026/2026-09-26-area07-s6"))
+        self.assertTrue(t["path"].startswith("docs/topics/2026/2026-09-26-area17-s6"))
         self.assertEqual(V.check_page(paths.docs_rel(t["path"]), t["content"]), [])
         self.assertIn("긴 설명 문장 119번이다", t["content"])
         self.assertEqual(V.footnote_problems(fm.parse(new)[1]), [])
@@ -104,19 +106,19 @@ class TestValidate(unittest.TestCase):
         # 이름 충돌 검사는 paths.DOCS 기준이므로 임시 폴더로 바꿔 끼운다
         orig = paths.DOCS
         with tempfile.TemporaryDirectory() as td:
-            taken = Path(td) / "topics" / "2099" / "2099-01-01-area07-s6.md"
+            taken = Path(td) / "topics" / "2099" / "2099-01-01-area17-s6.md"
             taken.parent.mkdir(parents=True)
             taken.write_text("x", encoding="utf-8")
             paths.DOCS = Path(td)
             try:
-                _, topics = V.split_oversized_area(paths.area_repo_path(7), text, 4000, [], "2099-01-01-01", "2099-01-01")
+                _, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), text, 4000, [], "2099-01-01-01", "2099-01-01")
             finally:
                 paths.DOCS = orig
-        self.assertEqual(topics[0]["path"], "docs/topics/2099/2099-01-01-area07-s6-2.md")
+        self.assertEqual(topics[0]["path"], "docs/topics/2099/2099-01-01-area17-s6-2.md")
 
     def test_small_area_not_split(self):
         text = AREA7.read_text(encoding="utf-8")
-        new, topics = V.split_oversized_area(paths.area_repo_path(7), text, 100000, [], "r", "2026-09-26")
+        new, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), text, 100000, [], "r", "2026-09-26")
         self.assertEqual(topics, [])
         self.assertEqual(new, text)
 
@@ -135,7 +137,7 @@ class TestRegressions(unittest.TestCase):
         cell = publish.daily_log_page_cell(fx["log_rel"], fx["path"], fx["title"])
         self.assertNotIn("](", cell)
         self.assertIn("미반영", cell)
-        cell2 = publish.daily_log_page_cell(fx["log_rel"], paths.area_repo_path(7), "7")
+        cell2 = publish.daily_log_page_cell(fx["log_rel"], paths.area_repo_path(AREA_NO), "7")
         self.assertIn("](", cell2)
 
     def test_korean_anchor_and_explicit_id(self):
@@ -150,8 +152,8 @@ class TestRegressions(unittest.TestCase):
 
     def test_anchored_link_rendered(self):
         from lib.render import _link
-        out = _link("flow-matrix.md", paths.area_repo_path(7) + "#5-현장-시나리오", "7")
-        self.assertIn("#5-현장-시나리오", out)
+        out = _link("site-matrix.md", paths.area_repo_path(AREA_NO) + "#5-적용-사례-현장-유형-명시", "17")
+        self.assertIn("#5-적용-사례-현장-유형-명시", out)
         self.assertIn("](", out)
 
 
@@ -234,7 +236,7 @@ class TestPublishHelpers(unittest.TestCase):
             return yaml.safe_load(tmp.read_text(encoding="utf-8")), pub, changes
 
     def test_stage_transition_advances_and_records(self):
-        cfg, pub, changes = self._transition("nl-task-chatbot", 1, 2, 5)
+        cfg, pub, changes = self._transition("chat-based-configuration-and-operation", 1, 2, 10)
         self.assertEqual(cfg["current_stage"], 2)
         self.assertEqual(cfg["stage_status"][1], "완료")
         self.assertEqual(cfg["stage_status"][2], "진행 중")
@@ -286,11 +288,11 @@ class TestPromptSlimming(unittest.TestCase):
 
     def test_index_inputs_compact_for_area(self):
         import agent_runner as A
-        out = A._index_inputs({"run_type": "area_deep_dive", "target": {"area_no": 7, "category_letter": "B"}}, None)
+        out = A._index_inputs({"run_type": "area_deep_dive", "target": {"area_no": AREA_NO, "category_letter": "E"}}, None)
         labels = [l for l, _ in out]
         self.assertTrue(any(l.startswith("docs/references/index.md (요약") for l in labels))
         refs = dict(out)[labels[0]]
-        self.assertIn("ref-022", refs)              # 7번 페이지가 인용한 출처
+        self.assertIn("ref-022", refs)              # 17번(옛 7번) 페이지가 인용한 출처
         full = A._index_inputs({"run_type": "weekly_review", "target": {}}, None)
         lab = [l for l, _ in full]
         self.assertTrue(any(l.startswith("docs/references/index.md (요약형 전체") for l in lab), lab)   # 주간·월간은 요약형 전체 목록(D-047)

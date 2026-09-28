@@ -1,51 +1,53 @@
 ---
-title: "SCM 관점의 ROP란 무엇인가"
+title: "ROP란 무엇인가"
 type: about
 status: published
-created: 2026-09-24
-updated: 2026-09-24
+created: 2026-09-28
+updated: 2026-09-28
 version: 1
 ---
 
-[홈](../index.md) › SCM 관점의 ROP란 무엇인가
+[홈](../index.md) › ROP란 무엇인가
 
-# SCM 관점의 ROP란 무엇인가
+# ROP란 무엇인가
 
-이 페이지는 분류 원문 1장 "전체 관점"을 그대로 옮긴 것이다. ASCM(Association for Supply Chain Management)의 SCOR(Supply Chain Operations Reference)가 공급망 프로세스의 범위를, ISA-95 가 기업 업무와 제조 운영·제어의 통합 경계를 참고 기준으로 제시하는 가운데, 원문은 ROP를 "물리적인 작업이 발생하는 부분을 연결하는 역할"로 본다. 즉 ROP는 SCOR 오케스트레이션 전체를 대체하는 것이 아니라, 그 계획을 로봇과 현장 설비의 실제 행동으로 옮기고 결과를 업무 시스템에 되돌려 주는 실행 플랫폼이다. [의견]
+이 페이지는 분류 원문 1장 "전체 관점"을 그대로 옮긴 것이다. 원문은 ROP를 서로 다른 로봇과 현장 설비·업무 시스템을 연결해 사람이 정한 일을 실제로 해내게 하는 플랫폼으로 보고, 그 플랫폼을 구현하고 운영하는 데 관여하는 일 전체를 대분류로 묶는다. 물류창고는 여러 현장 유형 가운데 하나다. [의견]
 
-아래 본문과 표는 원문 그대로이며 `[분류원문]`으로 표시한다. 원문의 `[n]` 표기는 원문 12장 참고 자료의 n번 항목이며, 이 위키의 참고문헌 `ref-00n` 페이지에 해당한다.
+아래 본문과 표는 원문 그대로이며 `[분류원문]`으로 표시한다.
 
 ## 원문 1장. 전체 관점
 
-SCM 관점에서 ROP는 **주문·물류·생산 계획을 로봇과 현장 설비의 실제 행동으로 연결하고, 결과를 다시 업무 시스템에 반영하는 실행 플랫폼**으로 볼 수 있다. [분류원문]
+ROP는 **서로 다른 제조사의 로봇과 현장 설비·업무 시스템을 하나로 연결해, 사람이 정한 일을 여러 로봇이 함께 실제로 해내게 하고 그 결과를 다시 시스템에 돌려주는 플랫폼**으로 볼 수 있다. [분류원문]
 
-연구 범위는 다음과 같이 구분한다. [분류원문]
+이 분류는 ROP를 구현하고 운영하는 데 관여하는 모든 일을 처음부터 끝까지 빠짐없이 나열하고, 같은 일을 하는 것끼리 세부 연구영역으로, 핵심 질문이 같은 영역끼리 대분류로 묶은 것이다. 대분류마다 연구 논문·기사·업체 발표를 모아 기술 지형도를 만든다. 물류창고·제조 공장·병원·상업 시설·가정·실외는 모두 ROP가 쓰이는 현장 유형이다. [분류원문]
 
 | 대분류 | 핵심 질문 | 세부영역 |
 |---|---|---|
-| A. 업무·공급망 설계 | 무슨 일을 왜, 얼마나 해야 하는가? | 1–4 |
-| B. 공통 정보·환경 모델 | 로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? | 5–8 |
-| C. 연결·실행 기반 | 계획한 작업을 실제 장비가 확실하게 수행하게 하려면? | 9–12 |
-| D. 계획·최적화 | 누가, 언제, 어디로, 어떤 자원을 사용해 작업할 것인가? | 13–16 |
-| E. 협업·현장 운영 | 계획과 실제가 달라지는 상황에서 일을 어떻게 계속할 것인가? | 17–20 |
-| F. 도입·검증·유지관리 | 새 현장에 설치하고, 변경하면서, 오래 운영하려면? | 21–24 |
-| G. 안전·보안·지능·거버넌스 | 전체 영역에 어떤 공통 제약과 관리 체계를 적용할 것인가? | 25–28 |
+| A. 기획·사업 | 어떤 일을 로봇에게 맡기고, 무엇을 들여, 어떤 효과를 볼 것인가? | 1–3 |
+| B. 로봇 온톨로지 | 서로 다른 제조사의 로봇을 어떻게 등록하고, 할 수 있는 일을 같은 말로 표현해, 시스템과 쉽게 연결할 것인가? | 4–7 |
+| C. 채팅 기반 구성·운영 | 맵 작성, 시나리오 구성, 로봇 구성, 실제 상황 재현, 업무 지시를 비전문 사용자가 대화만으로 할 수 있게 하려면? | 8–13 |
+| D. 공간·지도 모델 | 로봇마다 다른 지도와 건물 도면을 어떻게 하나의 공간으로 만들고 유지할 것인가? | 14–16 |
+| E. 사물·사람·실시간 상태 | 작업 대상·사람·설비·로봇이 지금 어디에 어떤 상태로 있는지 어떻게 믿을 수 있게 알 것인가? | 17–19 |
+| F. 연동 | 제조사 관제·로봇·문·승강기·업무 시스템과 어떻게 확실하게 연결할 것인가? | 20–23 |
+| G. 계획·최적화 | 누가, 언제, 어디로, 어떤 자원을 써서 일할 것인가? | 24–28 |
+| H. 실행·협업·예외 복구 | 계획한 일을 여러 로봇과 사람이 함께 끝까지 해내고, 어긋나면 어떻게 이어 갈 것인가? | 29–32 |
+| I. 설계·시뮬레이션 | 현장을 바꾸거나 로봇을 늘리기 전에 가상으로 설계하고 결과를 미리 볼 수 있는가? | 33–36 |
+| J. 현장 운영·관제 | 운영자가 지금 무슨 일이 일어나는지 보고, 이상을 알아차리고, 성과를 확인할 수 있는가? | 37–40 |
+| K. 플랫폼 아키텍처·인프라 | 플랫폼을 어디에 어떻게 두어야 끊김·확장·다현장 조건에서도 계속 동작하는가? | 41–43 |
+| L. AI·학습 기술 | 학습·언어 모델 같은 AI 기술을 어디에 쓰고, 그 결과를 어떤 기준으로 믿을 것인가? | 44–47 |
+| M. 안전 | 여러 로봇·사람·설비가 함께 움직일 때 생기는 위험을 어떻게 찾고 막을 것인가? | 48–50 |
+| N. 보안·개인정보 | 누가 어떤 로봇에 무엇을 시킬 수 있는지 통제하고, 데이터와 사람의 정보를 어떻게 지킬 것인가? | 51–53 |
+| O. 검증·도입·수명주기 | 만든 것을 어떻게 검증하고, 현장에 설치해 넘기고, 오래 바꿔 가며 운영할 것인가? | 54–57 |
+| P. 거버넌스·법규·사회 | 여러 사업자와 법, 사회적 요구 속에서 책임과 규칙을 어떻게 정할 것인가? | 58–60 |
+| Q. 현장 유형별 적용 | 현장마다 다른 요구를 플랫폼이 어떻게 받아들이고, 실제로 어디에 어떻게 쓰이고 있는가? | 61–67 |
 
 [분류원문]
 
-ASCM의 SCOR는 계획·주문·조달·생산/가공·이행·반품과 이를 아우르는 Orchestrate를 다룬다. **ROP는 이 중 물리적인 작업이 발생하는 부분을 연결하는 역할**로 접근할 수 있다. SCOR의 공급망 오케스트레이션과 로봇 오케스트레이션은 범위가 다르다. [1] [분류원문]
-
-## 원문 각주와 참고문헌
-
-원문의 [1]은 참고문헌 [ref-001](../references/ref-001.md)에 해당한다.[^ref-001] 참고문헌 전체 목록은 [참고문헌](../references/index.md)에 있다.
+**B. 로봇 온톨로지와 C. 채팅 기반 구성·운영은 반드시 갖춰야 할 기능이다.** B는 이기종 로봇을 등록하고 능력을 표현해 시스템과 로봇을 쉽게 연동하게 하고, C는 채팅으로 맵을 그리고, 시나리오를 구성하고, 로봇을 구성하고, 실제 상황을 시뮬레이션으로 재현하고, 업무를 지시하게 한다. [분류원문]
 
 ## 관련 페이지
 
 - [ROP가 직접 소유할 범위와 외부 연계 경계](scope-boundary.md)
-- [SCM 관점의 연구 시작 방법](research-method.md)
+- [연구 방법](research-method.md)
 - [논의한 아이디어의 연구영역 매핑](idea-mapping.md)
-- 대분류 페이지: [A. 업무·공급망 설계](../categories/a-business-supply-chain-design/index.md), [B. 공통 정보·환경 모델](../categories/b-common-information-and-environment-model/index.md), [C. 연결·실행 기반](../categories/c-connectivity-and-execution-foundation/index.md), [D. 계획·최적화](../categories/d-planning-and-optimization/index.md), [E. 협업·현장 운영](../categories/e-collaboration-and-field-operations/index.md), [F. 도입·검증·유지관리](../categories/f-deployment-verification-and-maintenance/index.md), [G. 안전·보안·지능·거버넌스](../categories/g-safety-security-intelligence-and-governance/index.md)
-
-## 참고 자료
-
-[^ref-001]: ASCM, SCOR Digital Standard, 미확인, https://www.ascm.org/corporate-solutions/standards-tools/scor-ds/, 접근일 2026-09-24
+- 대분류 페이지: [A. 기획·사업](../categories/planning-and-business/index.md), [B. 로봇 온톨로지](../categories/robot-ontology/index.md), [C. 채팅 기반 구성·운영](../categories/chat-based-configuration-and-operation/index.md), [D. 공간·지도 모델](../categories/space-and-map-model/index.md), [E. 사물·사람·실시간 상태](../categories/objects-people-and-live-state/index.md), [F. 연동](../categories/integration/index.md), [G. 계획·최적화](../categories/planning-and-optimization/index.md), [H. 실행·협업·예외 복구](../categories/execution-collaboration-and-recovery/index.md), [I. 설계·시뮬레이션](../categories/design-and-simulation/index.md), [J. 현장 운영·관제](../categories/field-operations-and-monitoring/index.md), [K. 플랫폼 아키텍처·인프라](../categories/platform-architecture-and-infrastructure/index.md), [L. AI·학습 기술](../categories/ai-and-learning/index.md), [M. 안전](../categories/safety/index.md), [N. 보안·개인정보](../categories/security-and-privacy/index.md), [O. 검증·도입·수명주기](../categories/verification-deployment-and-lifecycle/index.md), [P. 거버넌스·법규·사회](../categories/governance-law-and-society/index.md), [Q. 현장 유형별 적용](../categories/site-type-applications/index.md)

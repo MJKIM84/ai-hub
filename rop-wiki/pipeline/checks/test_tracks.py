@@ -2,7 +2,7 @@
 
 실행: python3 -m unittest pipeline/checks/test_tracks.py
 검사 대상
-- config/tracks/*.yaml: 새 트랙 2개(nl-task-chatbot, floorplan-recognition)와 첫 트랙의 필수 키, 단계·초안·아이디어 페이지 존재
+- config/tracks/*.yaml: 새 트랙 2개(chat-based-configuration-and-operation — 옛 nl-task-chatbot, floorplan-recognition)와 첫 트랙의 필수 키, 단계·초안·아이디어 페이지 존재
 - data/tracks/<slug>/backlog.json: id 형식·중복·단계 일치, 항목 키(스키마) 동일, 사용자 요청 시작 질문 포함
 - 내비게이션: 트랙 3개(첫 트랙이 맨 앞) + "확장 아이디어" 섹션(트랙 바로 다음, 주제 앞, 색인 → 아이디어 3개)
 - auto:area-tracks(세부영역 5. 로봇 능력·작업 온톨로지의 관련 연구 트랙 링크), auto:idea-area-map, auto:idea-areas, auto:idea-backlog
@@ -32,7 +32,8 @@ from lib.nav import build_nav, flatten_nav  # noqa: E402
 from lib.source import load_source  # noqa: E402
 
 FIRST = "manual-capability-ontology"
-NEW_TRACKS = ["nl-task-chatbot", "floorplan-recognition"]
+CHAT = "chat-based-configuration-and-operation"   # 2026-09-28 개정: 옛 nl-task-chatbot(자연어 업무 지시 챗봇)을 채팅 기반 구성·운영으로 넓혔다
+NEW_TRACKS = [CHAT, "floorplan-recognition"]
 ALL_TRACKS = [FIRST, *NEW_TRACKS]
 REQUIRED_KEYS = ["slug", "name", "status", "primary_area", "related_areas", "current_stage", "stages", "stage_names",
                  "stage_pages", "runs_per_week", "budget", "order", "draft_page", "draft_title", "draft_template",
@@ -45,7 +46,7 @@ STATUSES = {"열림", "조사 중", "답함", "보류", "폐기"}
 REQUEST_QUESTIONS = {
     FIRST: ["매뉴얼에서 능력과 제약을 추출할 때 가장 자주 틀리는 유형은 무엇인가?",
             "\"이 작업을 할 수 있는 로봇\" 질의를 어떤 형식으로 표현하는가?"],   # 첫 질문은 q1-01 과 같아 새로 만들지 않았다
-    "nl-task-chatbot": ["자연어 지시를 작업 단위로 분해하는 기존 접근은 무엇이 있는가?",
+    CHAT: ["자연어 지시를 작업 단위로 분해하는 기존 접근은 무엇이 있는가?",
                         "LLM의 잘못된 해석이 로봇 배정으로 이어지지 않게 하는 확인 절차는 어떻게 두는가?",
                         "스케줄링 결정은 LLM과 최적화 엔진 중 어디에 맡기는가?"],
     "floorplan-recognition": ["평면도에서 벽·문·엘리베이터·계단을 인식하는 공개 데이터셋과 모델은 무엇이 있는가?",
@@ -106,13 +107,23 @@ class TestTrackConfigs(unittest.TestCase):
     def test_new_tracks_shape(self):
         for slug in NEW_TRACKS:
             cfg = _cfg(slug)
-            self.assertEqual(cfg["stages"], 5)
+            self.assertEqual(cfg["stages"], 10 if slug == CHAT else 5)
             self.assertEqual(cfg["current_stage"], 1)
             self.assertEqual(cfg["stage_names"][1], "선행 연구·제품 사례 조사")
-            self.assertEqual(cfg["stage_names"][5], "검증 방법과 가설 판정")
+            if slug != CHAT:
+                self.assertEqual(cfg["stage_names"][5], "검증 방법과 가설 판정")
             for f in ("index.md", "question-backlog.md", "log.md", "experiments.md"):
                 self.assertTrue((paths.track_dir(slug) / f).is_file(), f"{slug}/{f}")
-        self.assertEqual(_cfg("nl-task-chatbot")["stage_names"][4], "오해석 방지와 확인 절차")
+        chat = _cfg(CHAT)
+        self.assertEqual(chat["stage_names"][4], "오해석 방지와 확인 절차")
+        self.assertEqual(chat["stage_names"][5], "업무 지시 검증과 가설 판정")
+        # 필수 기능(맵 작성·시나리오 구성·로봇 구성·실제 상황 재현)은 각각 한 단계로 둔다
+        for n, name in {6: "채팅으로 맵 작성", 7: "채팅으로 시나리오 구성", 8: "채팅으로 로봇 구성",
+                        9: "채팅으로 실제 상황 시뮬레이션 재현"}.items():
+            self.assertEqual(chat["stage_names"][n], name)
+        self.assertEqual(chat["name"], "채팅 기반 구성·운영")
+        self.assertEqual(chat["primary_area"], 12)
+        self.assertTrue({8, 9, 10, 11, 12, 13} <= set(chat["idea_areas"]["primary"]))
         self.assertEqual(_cfg("floorplan-recognition")["stage_names"][4], "지도 변환 보정과 현장 정합")
 
     def test_first_track_goals_and_scope(self):
@@ -131,7 +142,7 @@ class TestTrackConfigs(unittest.TestCase):
     def test_track_order(self):
         self.assertEqual(paths.ordered_track_slugs()[:3], ALL_TRACKS)
         self.assertEqual(render.track_slugs()[:3], ALL_TRACKS)
-        self.assertEqual(paths.idea_page_rels(), ["ideas/robot-capability-ontology.md", "ideas/nl-task-chatbot.md",
+        self.assertEqual(paths.idea_page_rels(), ["ideas/robot-capability-ontology.md", "ideas/chat-based-configuration-and-operation.md",
                                                   "ideas/floorplan-recognition.md"])
 
 
@@ -143,8 +154,8 @@ class TestBacklogs(unittest.TestCase):
             ids = [b["id"] for b in items]
             self.assertEqual(len(ids), len(set(ids)), f"{slug}: id 중복")
             for b in items:
-                self.assertRegex(b["id"], r"^q\d-\d\d$")
-                self.assertEqual(int(b["id"][1]), int(b["stage"]), f"{slug} {b['id']}: id 의 단계와 stage 가 다름")
+                self.assertRegex(b["id"], r"^q[1-9][0-9]?-\d\d$")
+                self.assertEqual(int(b["id"][1:].split("-")[0]), int(b["stage"]), f"{slug} {b['id']}: id 의 단계와 stage 가 다름")
                 self.assertTrue(1 <= int(b["stage"]) <= int(cfg["stages"]))
                 self.assertIn(b["status"], STATUSES)
                 self.assertTrue(b["origin"] == "사용자" or re.fullmatch(r"f\d+", str(b["origin"])), b["origin"])
@@ -193,7 +204,7 @@ class TestNav(unittest.TestCase):
         got = [re.match(r"tracks/([^/]+)/", flatten_nav([i])[0][1]).group(1) for i in tracks]
         self.assertEqual(got[:3], ALL_TRACKS, "첫 트랙이 맨 앞, 이어서 새 트랙 2개")
         ideas = [p for _, p in flatten_nav([nav[t + 1]])]
-        self.assertEqual(ideas[:4], ["ideas/index.md", "ideas/robot-capability-ontology.md", "ideas/nl-task-chatbot.md",
+        self.assertEqual(ideas[:4], ["ideas/index.md", "ideas/robot-capability-ontology.md", "ideas/chat-based-configuration-and-operation.md",
                                      "ideas/floorplan-recognition.md"])
 
     def test_track_children_use_draft_page(self):
@@ -230,45 +241,48 @@ class TestNav(unittest.TestCase):
 
 class TestAreaTracksAndIdeas(unittest.TestCase):
     def test_area5_links(self):
+        # 옛 5. 로봇 능력·작업 온톨로지 → 개정 5. 능력 모델(B. 로봇 온톨로지)
         rel = paths.area_rel_path(5)
         out = render.render_for("area-tracks", rel, {"type": "area", "area_no": 5})
         self.assertTrue(out.startswith('!!! note "관련 연구 트랙"'))
         for slug in ALL_TRACKS:
             self.assertIn(f"../../tracks/{slug}/index.md", out)
-        for page in ("robot-capability-ontology", "nl-task-chatbot", "floorplan-recognition"):
+        for page in ("robot-capability-ontology", "chat-based-configuration-and-operation", "floorplan-recognition"):
             self.assertIn(f"../../ideas/{page}.md", out)
         self.assertIn("[매뉴얼 기반 로봇 기능 온톨로지](../../tracks/manual-capability-ontology/index.md) — 중심 영역(●)", out)
-        self.assertIn("[자연어 업무 지시 챗봇](../../tracks/nl-task-chatbot/index.md) — 함께 필요한 영역(○)", out)
+        self.assertIn("[채팅 기반 구성·운영](../../tracks/chat-based-configuration-and-operation/index.md) — 함께 필요한 영역(○)", out)
         self.assertIn("아이디어 1. 로봇 기능 온톨로지", out)
         # 페이지의 영역이 렌더 결과와 같다(scaffold --refresh-auto 반영 여부)
         text = paths.area_file(5).read_text(encoding="utf-8")
         self.assertEqual(ar.get_region(text, "area-tracks"), out)
 
     def test_area_regions_placed_before_section1(self):
-        """28개 세부영역 페이지 모두 소속 대분류 admonition 바로 아래, 1절 앞에 area-tracks 영역이 있다."""
+        """67개 세부영역 페이지 모두 소속 대분류 admonition 바로 아래, 1절 앞에 area-tracks 영역이 있다."""
         for no in paths.AREA_NOS:
             text = paths.area_file(no).read_text(encoding="utf-8")
             self.assertTrue(ar.has_region(text, "area-tracks"), no)
             self.assertLess(text.index("<!-- auto:area-tracks:start -->"), text.index("## 1. 한 줄 정의"))
             self.assertLess(text.index('!!! info "소속 대분류"'), text.index("<!-- auto:area-tracks:start -->"))
-        # 어느 트랙과도 연결되지 않은 영역(4. 성과·경제성·프로세스 개선)은 빈 영역
-        self.assertEqual(render.render_area_tracks(4), "")
+        # 어느 트랙과도 연결되지 않은 영역(1. 기술·시장·업체 동향)은 빈 영역
+        self.assertEqual(render.render_area_tracks(1), "")
 
     def test_idea_area_map(self):
         out = render.render_for("idea-area-map", "ideas/index.md", {"type": "idea", "subtype": "index"})
         src = load_source()
         rows = [l for l in out.split("\n") if l.startswith("| [")]
-        self.assertEqual(len(rows), 28)
+        self.assertEqual(len(rows), len(paths.AREA_NOS))
         for no in paths.AREA_NOS:
             self.assertIn(f"[{src.area(no).title}](", out)     # 번호와 이름을 함께 쓴 링크
         for slug in ALL_TRACKS:
             ia = _cfg(slug)["idea_areas"]
             label = render.idea_label(_cfg(slug))
             self.assertIn(f"- {label}: ● {len(ia['primary'])}개 · ○ {len(ia['related'])}개", out)
-        row5 = next(r for r in rows if "[5. 로봇 능력·작업 온톨로지]" in r)
+        row5 = next(r for r in rows if "[5. 로봇 능력·작업 표현]" in r)
         self.assertEqual([c.strip() for c in row5.strip().strip("|").split("|")[2:]], ["●", "○", "○"])
-        row6 = next(r for r in rows if "[6. 지도·공간·위치 모델]" in r)
-        self.assertEqual([c.strip() for c in row6.strip().strip("|").split("|")[2:]], ["", "○", "●"])
+        row12 = next(r for r in rows if "[12. 채팅으로 업무 지시·오케스트레이션]" in r)
+        self.assertEqual([c.strip() for c in row12.strip().strip("|").split("|")[2:]], ["", "●", ""])
+        row14 = next(r for r in rows if "[14. 도면·BIM에서 지도 만들기]" in r)
+        self.assertEqual([c.strip() for c in row14.strip().strip("|").split("|")[2:]], ["", "", "●"])
 
     def test_idea_pages(self):
         for slug in ALL_TRACKS:
@@ -301,7 +315,7 @@ class TestAreaTracksAndIdeas(unittest.TestCase):
         out = render.render_for("home-track-status", "index.md", {"type": "home"})
         rows = [l for l in out.split("\n") if l.startswith("| ") and not l.startswith("| 트랙 |")]
         self.assertEqual([r.split("|")[1].strip() for r in rows][:3],
-                         ["매뉴얼 기반 로봇 기능 온톨로지", "자연어 업무 지시 챗봇", "건축 도면 자동 인식"])
+                         ["매뉴얼 기반 로봇 기능 온톨로지", "채팅 기반 구성·운영", "건축 도면 자동 인식"])
 
 
 class TestPageStatus(unittest.TestCase):
@@ -320,8 +334,8 @@ class TestPageStatus(unittest.TestCase):
         out = render.render_page_status("tracks/manual-capability-ontology/ontology-draft.md",
                                         {"track": FIRST, "ontology_version": "0.1", **self.META})
         self.assertTrue(out.startswith("> 온톨로지 버전: v0.1 · 페이지 상태: published"))
-        out = render.render_page_status("tracks/nl-task-chatbot/task-model-draft.md",
-                                        {"track": "nl-task-chatbot", "ontology_version": "0", **self.META})
+        out = render.render_page_status("tracks/chat-based-configuration-and-operation/task-model-draft.md",
+                                        {"track": CHAT, "ontology_version": "0", **self.META})
         self.assertTrue(out.startswith("> 초안 버전: v0 · 페이지 상태:"))
 
     def test_pages_match_frontmatter(self):

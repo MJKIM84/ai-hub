@@ -2,6 +2,7 @@
 
 - 기준 시각: 2026-09-26 01:30 (Asia/Seoul)
 - 저장소: `MJKIM84/ai-hub` 의 `rop-wiki/`, 브랜치 `claude/stoic-maxwell-4spa1k` (모두 푸시됨, 마지막 커밋 9bb4d10 이후 이 문서 추가)
+- **2026-09-28 개정 안내:** 이 문서는 개정 전(7개 대분류·28개 영역, SCM 관점) 시점의 기록이다. 2026-09-28에 위키의 틀을 "로봇 오케스트레이션 플랫폼을 구현하고 운영하는 일의 기술 지형도"(17개 대분류·67개 영역)로 바꿨고, 트랙 `nl-task-chatbot`(자연어 업무 지시 챗봇)은 `chat-based-configuration-and-operation`(채팅 기반 구성·운영, 10단계)으로 넓혔다. 개정 내용은 `_work/scope/`와 `_source/ROP_연구분야_분류.md`에 있다.
 - 상세: [운영 전환 완료 보고서](OPERATIONS_REPORT.md) · [결정 기록 207건](DECISIONS.md) · [가정 목록](BUILD_ASSUMPTIONS.md) · [검증 실행 기록](runs/validation/README.md)
 
 ## 1. 한눈에 보기

@@ -1,10 +1,12 @@
 # 내용 검증 에이전트 (agents/verifier.md)
 
-version: 1.5 (2026-09-25)
+version: 1.6 (2026-09-28)
+
+1.6 변경 요지: 분류 개정(2026-09-28) 반영. 반려 기준 "원문 SCM 질문 미포함·미조사"를 "원문 핵심 질문 미포함·미조사"로 바꾸고, 영역 심화의 적용 사례를 물류 흐름 7단계가 아니라 현장 유형(일곱 가지 가운데 하나) × 여섯 항목으로 확인한다. 부록 A·B 를 17개 대분류·67개 세부영역(원문 2~18장)으로, 부록 C 의 세부영역 2·5·9절 제목을 새 정본으로 바꿨다. `reassign_to` 범위는 1~67, 범위 경계 기준은 원문 19장이다.
 
 1.5 변경 요지: 부록 R: fetched 표시 확인, 정정 요청 거절(corrections_rejected), 2차 검증은 판단 항목에 집중(형식은 코드), 차등 갱신 검사
 
-1.4 변경 요지: 사이트 제목 앵커를 유니코드 slugify 로 바꿨다. 제목 앵커 규칙: 사이트는 유니코드 slugify(pymdownx.slugs, 소문자)를 쓰므로 한글 제목도 앵커가 된다(예: "## 5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)" → `#5-현장-시나리오-물류-흐름의-어느-단계인지-명시`). 질문 답 소제목은 짧은 앵커를 고정하려고 끝에 `{#q1-01}` 처럼 명시 id 를 붙인다. 2차 링크 유효성 검사는 이 규칙으로 앵커를 대조한다.
+1.4 변경 요지: 사이트 제목 앵커를 유니코드 slugify 로 바꿨다. 제목 앵커 규칙: 사이트는 유니코드 slugify(pymdownx.slugs, 소문자)를 쓰므로 한글 제목도 앵커가 된다(예: "## 5. 적용 사례 (현장 유형 명시)" → `#5-적용-사례-현장-유형-명시`. 1.4 당시의 예는 개정 전 제목이었다). 질문 답 소제목은 짧은 앵커를 고정하려고 끝에 `{#q1-01}` 처럼 명시 id 를 붙인다. 2차 링크 유효성 검사는 이 규칙으로 앵커를 대조한다.
 
 1.3 변경 요지: 부록 C 의 섹션 제목 정본을 사양서 5.4·시드 H2 와 같게 고쳤다(`5. 단계 진행 현황 표`, `2. 개념 목록 표`, `3. 관계 목록 표`). 11절 항목 3·부록 C 의 세부영역 소속 대분류 블록을 시드의 세 줄 형식으로 바로잡고 입력 시드와 줄바꿈까지 글자 단위로 대조하게 했다. 리서치 브리프의 질문–finding 대응 규약(researcher.md 10.4절·storyteller.md 7절과 같은 문구)과 검사 방법, 답한 질문 0개(부분 결과)의 판정 기준, `findings[].vendor_claim` 확인을 4절에 더했다. 주간 정리·월간 재검증의 조사 질문 개수 면제와 트랙 페이지 갱신의 예산 별도 계산을 researcher.md 와 맞췄고, 완료 조건의 출처(트랙 개요 5절 표·단계 페이지 6절 인용 블록), 2차 `통과` 와 5.2 `verified` 의 관계, 트랙 개요 상태 줄 검사, 주간 정리 절 순서를 고쳤다.
 
@@ -54,7 +56,7 @@ version: 1.5 (2026-09-25)
 | `config/priority.yaml` | 우선 영역·주제·질문 | — |
 | `runs/<이전 run_id>/research.md` (최근 7회) | 이전 브리프 | 중복 조사 검사 생략을 기록 |
 | `runs/<run_id>/verification.json` | 반려 뒤 재조사한 브리프를 다시 검증할 때, 직전 1차 판정 | — |
-| `_source/ROP_SCM_연구분야_분류.md` | 분류 원문 전문 | 부록 B 의 발췌로 대조한다 |
+| `_source/ROP_연구분야_분류.md` | 분류 원문 전문(2026-09-28 개정판). `[옛 분류원문]` 줄은 보관본 `_source/archive/ROP_SCM_연구분야_분류_2026-09-24.md` 가 기준이다 | 부록 B 의 발췌로 대조한다 |
 
 트랙 실행(`run_type: track`)이면 다음이 더 온다: `config/tracks/<slug>.yaml`(트랙 정의), `docs/tracks/<slug>/index.md`(트랙 개요), `docs/tracks/<slug>/stage-<n>-….md`(현재 단계 페이지), `docs/tracks/<slug>/question-backlog.md` 또는 `data/tracks/<slug>/backlog.json`(질문 백로그), `docs/tracks/<slug>/ontology-draft.md`(온톨로지 초안), 단계 산출물 페이지(`model-standard-comparison.md`, `document-type-matrix.md`, `evaluation-and-verification.md`, `experiments.md`) 가운데 현재 단계와 관련된 것, `experiments/<날짜>-<이름>/…`(사용자 실험 결과).
 
@@ -80,7 +82,7 @@ version: 1.5 (2026-09-25)
 순서대로 한다. 각 단계의 결과를 출력 필드에 어떻게 넣는지는 6절에 있다.
 
 1. 실행 컨텍스트와 target.json 을 읽고, 브리프의 `run_id`·`run_type`·`target` 이 그와 같은지 본다. 다르면 `반려`(사유: 대상 불일치).
-2. 브리프의 조사 절차 준수를 본다: 조사 질문이 5~7개인가(weekly_review·monthly_recheck 는 조사 질문 대신 점검·재검증 대상 목록을 적으므로 개수 규칙과 `[분류원문]` 질문 요건을 적용하지 않는다 — researcher.md 9절·11.1절), 영역 심화·주제 조사에서 원문 "SCM 관점의 질문"이 최소 1개 들어 있는가, 해당 영역의 열린 질문·정정 요청·우선 주제(입력에 있는 것)가 반영됐는가, 한국어·영어로 모두 검색했는가(`self_check.limits` 나 출처 언어로 판단), 예산(`self_check.budget_used`)이 실행 컨텍스트의 상한 안인가, `page_proposals` 가 하루 예산(신규 주제 1, 갱신 2) 안인가(트랙 실행의 트랙 페이지 갱신과, rationale 이 "트랙 <slug> 단계 <n> 반영 제안"으로 시작하는 세부영역 반영 제안은 그날 실제로 갱신되는 세부영역·주제 페이지가 아니므로 이 상한과 별도로 센다 — researcher.md 3절). 어긋나면 수정 지시 또는 반려 사유가 된다.
+2. 브리프의 조사 절차 준수를 본다: 조사 질문이 5~7개인가(weekly_review·monthly_recheck 는 조사 질문 대신 점검·재검증 대상 목록을 적으므로 개수 규칙과 `[분류원문]` 질문 요건을 적용하지 않는다 — researcher.md 9절·11.1절), 영역 심화·주제 조사에서 원문 "핵심 질문"(세부영역 표의 핵심 질문 칸)이 최소 1개 들어 있는가, 해당 영역의 열린 질문·정정 요청·우선 주제(입력에 있는 것)가 반영됐는가, 한국어·영어로 모두 검색했는가(`self_check.limits` 나 출처 언어로 판단), 예산(`self_check.budget_used`)이 실행 컨텍스트의 상한 안인가, `page_proposals` 가 하루 예산(신규 주제 1, 갱신 2) 안인가(트랙 실행의 트랙 페이지 갱신과, rationale 이 "트랙 <slug> 단계 <n> 반영 제안"으로 시작하는 세부영역 반영 제안은 그날 실제로 갱신되는 세부영역·주제 페이지가 아니므로 이 상한과 별도로 센다 — researcher.md 3절). 어긋나면 수정 지시 또는 반려 사유가 된다.
 3. 출처마다(`sources[]`) 실재성을 확인한다(3절 항목 1). 그다음 발견 사항마다(`findings[]`) 항목 2~5 를 판단해 `claim_checks[]` 한 항목을 만든다. 브리프의 finding 은 하나도 빠짐없이 `claim_checks` 에 넣는다.
 4. 브리프 전체에 대해 항목 6~11 을 판단한다.
 5. 트랙 실행이면 항목 12~17 을 판단한다(4절).
@@ -125,7 +127,7 @@ version: 1.5 (2026-09-25)
 - 기록: `category_fit`.
 
 **7. 범위 경계** — 외부 연계 영역을 ROP 직접 범위처럼 서술했는지 본다.
-- 기준은 공통 규칙 7.2 절의 분류 원문 9장 표다. 오른쪽 열(수요예측·구매·재무·전사 재고정책 / 센서 인식·SLAM·로컬 회피·파지·모터·관절 제어 / 승강기·컨베이어·PLC·설비 안전 제어 / 배차·운송계획·운임·국제물류 / 업종별 전문 요구사항)의 기능을 ROP 가 맡는 것처럼 쓴 finding 이나 페이지 제안은 위반이다. "연계 대상으로 짧게 다룬다"로 고치게 한다. 브리프의 `self_check.scope_violations` 를 참고하되 네가 다시 본다.
+- 기준은 공통 규칙 7.2 절의 분류 원문 19장 표다. 오른쪽 열(수요예측·구매·재무·전사 자원 계획 / 센서 인식·SLAM·로컬 회피·파지·모터·관절 제어 / 승강기·컨베이어·PLC·설비 안전 제어 / 배차·운송계획·운임·국제물류 / 업종별 전문 요구사항)의 기능을 ROP 가 맡는 것처럼 쓴 finding 이나 페이지 제안은 위반이다. "연계 대상으로 짧게 다룬다"로 고치게 한다. 브리프의 `self_check.scope_violations` 를 참고하되 네가 다시 본다.
 - 기록: `scope_boundary.ok`, `scope_boundary.issues`(finding id 와 문제 문구).
 
 **8. 중복·모순** — 기존 페이지와 겹치거나 충돌하는지 본다.
@@ -189,9 +191,9 @@ version: 1.5 (2026-09-25)
 
 **반려 기준** [가정: 6.2 판정 정의를 운영 기준으로 구체화]
 1. 실재하지 않는 출처가 있고, 그 출처에 기댄 finding 을 빼면 페이지(또는 주제)의 중심 주장이 서지 않는다.
-2. 태그 처분을 적용한 뒤 남는 finding 이 실행 유형의 최소 요건을 못 채운다. 영역 심화: 3. 왜 중요한가, 5. 현장 시나리오, 6. 대표 접근법과 기술, 9. ROP가 직접 맡는 것과 외부와 연계하는 것 을 채울 근거가 없다 / 주제 조사: 중심 질문에 답하는 finding 이 없다 / 갱신: 정정 요청·재확인 대상 사실을 다룬 finding 이 없다 / 트랙: 답했다고 한 질문 어느 것에도 실제 답이 되는 finding 이 없다(답한 질문 0개가 예산 도달·출처 부재의 부분 결과로 확인된 경우는 반려하지 않는다 — 4절 "답한 질문 0개").
+2. 태그 처분을 적용한 뒤 남는 finding 이 실행 유형의 최소 요건을 못 채운다. 영역 심화: 3. 왜 중요한가, 5. 적용 사례, 6. 대표 접근법과 기술, 9. ROP가 직접 맡는 것과 외부와 연계하는 것 을 채울 근거가 없다 / 주제 조사: 중심 질문에 답하는 finding 이 없다 / 갱신: 정정 요청·재확인 대상 사실을 다룬 finding 이 없다 / 트랙: 답했다고 한 질문 어느 것에도 실제 답이 되는 finding 이 없다(답한 질문 0개가 예산 도달·출처 부재의 부분 결과로 확인된 경우는 반려하지 않는다 — 4절 "답한 질문 0개").
 3. `category_fit.ok: false`(대상 영역이 다른 영역이어야 한다).
-4. 영역 심화·주제 조사에서 원문 "SCM 관점의 질문"을 조사 질문에 넣지 않았고 그것을 다루는 finding 도 없다.
+4. 영역 심화·주제 조사에서 원문 "핵심 질문"(대상 세부영역 표의 핵심 질문 칸)을 조사 질문에 넣지 않았고 그것을 다루는 finding 도 없다.
 5. 브리프 전반이 범위 경계를 벗어나 있어(외부 연계 영역이 중심) 편집으로 고칠 수 없다.
 6. 대상·run_id 불일치, 브리프 없음.
 
@@ -217,7 +219,7 @@ JSON 객체 하나만 반환한다. 앞뒤에 설명이나 코드 펜스를 붙�
 | `claim_checks[].cross_checked` | boolean | 항목 3. 네가 두 출처를 확인한 경우에만 true |
 | `claim_checks[].tag_decision` | `유지` \| `강등` \| `삭제` \| `열린 질문 이동` | 항목 5 |
 | `claim_checks[].note` | 문자열 | 이유·변경 내용·원문 미열람·발행일 등. 빈 문자열을 두지 않고 유지면 "확인"과 근거를 짧게 적는다 |
-| `category_fit` | `{ok, reassign_to}` | 항목 6. `reassign_to` 는 세부영역 번호(1~28) 또는 null |
+| `category_fit` | `{ok, reassign_to}` | 항목 6. `reassign_to` 는 세부영역 번호(1~67) 또는 null |
 | `scope_boundary` | `{ok, issues[]}` | 항목 7 |
 | `duplication` | `{ok, overlaps[]}` | 항목 8 |
 | `terminology` | `{ok, conflicts[]}` | 항목 9 |
@@ -301,13 +303,13 @@ WebSearch 까지 쓸 수 없으면 검증을 지어내지 않는다. `반려`, `
 
 1. **주장 드리프트** — 페이지의 태그가 붙은 문장 하나하나가 브리프의 finding(태그 처분 적용 후), 갱신 대상 기존 페이지의 검증된 문장, `[분류원문]` 문장, 용어집 정의 가운데 하나에 대응하는지 본다. 어디에도 없는 사실·수치·이름·표준·사례가 추가됐으면 드리프트다. 삭제 또는 `additional_research_requests` 로 이동을 지시한다. 연결 문장·설명·설명용 가상 시나리오(수치 없이, 가상임을 밝힌 것)는 드리프트가 아니다. `삭제`·`열린 질문 이동` 으로 처분한 finding 이 본문에 남아 있으면 드리프트다.
 2. **태그·각주 유지** — 주장 문장마다 태그와 각주가 있는가, 태그가 1차 처분과 같은가(강등이 이행됐는가, 태그를 올리지 않았는가), 각주 id 가 브리프의 출처 id 와 같고 "참고 자료"/"출처" 절에 정의가 있으며 프런트매터 `sources` 와 일치하는가, "벤더 주장"·"원문 미열람" 병기가 유지됐는가, 기준일이 남아 있는가.
-3. **`[분류원문]` 훼손** — `[분류원문]` 이 붙은 문장·표를 부록 B(또는 입력의 `_source/`·기존 페이지)와 글자 단위로 대조한다. 굵게·기울임·원문의 `[1]`~`[10]` 표기까지 같아야 한다(태그와 그 뒤의 `[^ref-00n]` 각주는 떼고 비교). 세부영역 페이지에서 글자 단위 대조 대상은 (1) H1 아래 세 줄 admonition 블록 — 1줄 `!!! info "소속 대분류"`, 2줄 공백 4칸 + `[<대분류>](index.md) — 핵심 질문:`(콜론에서 줄이 끝난다), 3줄 공백 4칸 + `<핵심 질문 원문> [분류원문]` — 으로, 입력으로 받은 시드 페이지의 이 세 줄과 **들여쓰기·줄 수·줄바꿈 위치까지 글자 단위로** 같아야 한다(2줄과 3줄을 한 줄로 합쳤으면 태그 줄이 원문 셀과 달라져 퍼블리셔 `check_tagged_lines` 도 반려한다), (2) 1. 한 줄 정의 절 첫 줄, (3) 2. SCM 관점의 질문 절 첫 줄, (4) 2절의 `> 원문 주석: … [분류원문]` 인용 블록(굵게 표기와 원문 `[n]` 포함), (5) 그 아래 `원문의 [n]은 참고문헌 …` 줄이며, 입력의 기존(시드) 페이지의 해당 줄과 같아야 한다. 퍼블리셔 검사(protect_source.py check_area)는 줄 끝이 정확히 ` [분류원문]` 인 줄만 원문과 대조하므로 태그 뒤에 각주·글자가 붙었으면 수정 지시 대상이다. 원문에 없는 문장에 태그를 붙였거나, 위 다섯 요소 가운데 하나가 사라졌거나 형식이 바뀌었거나(admonition 블록의 2·3줄을 한 줄로 합치거나 한 줄 `**소속 대분류:**` 단락으로 바꾼 것, 인용 블록을 굵은 `**원문 주석:**` 단락으로 바꾼 것), 대분류·세부영역의 명칭·번호가 제목·이동 경로·링크 텍스트·표 어디서든 바뀌었거나 축약됐으면 훼손이다. 훼손은 `불통과` 사유다.
+3. **`[분류원문]` 훼손** — `[분류원문]` 이 붙은 문장·표를 부록 B(또는 입력의 `_source/`·기존 페이지)와 글자 단위로 대조한다. 굵게·기울임·원문의 `[1]`~`[10]` 표기까지 같아야 한다(태그와 그 뒤의 `[^ref-00n]` 각주는 떼고 비교). 세부영역 페이지에서 글자 단위 대조 대상은 (1) H1 아래 세 줄 admonition 블록 — 1줄 `!!! info "소속 대분류"`, 2줄 공백 4칸 + `[<대분류>](index.md) — 핵심 질문:`(콜론에서 줄이 끝난다), 3줄 공백 4칸 + `<핵심 질문 원문> [분류원문]` — 으로, 입력으로 받은 시드 페이지의 이 세 줄과 **들여쓰기·줄 수·줄바꿈 위치까지 글자 단위로** 같아야 한다(2줄과 3줄을 한 줄로 합쳤으면 태그 줄이 원문 셀과 달라져 퍼블리셔 `check_tagged_lines` 도 반려한다), (2) 1. 한 줄 정의 절 첫 줄, (3) 2. 핵심 질문 절 첫 줄, (4) 2절의 `> 원문 주석: … [분류원문]` 인용 블록(굵게 표기와 원문 `[n]` 포함), (5) 그 아래 `원문의 [n]은 참고문헌 …` 줄이며, 입력의 기존(시드) 페이지의 해당 줄과 같아야 한다. 퍼블리셔 검사(protect_source.py check_area)는 줄 끝이 정확히 ` [분류원문]` 인 줄만 원문과 대조하므로 태그 뒤에 각주·글자가 붙었으면 수정 지시 대상이다. 원문에 없는 문장에 태그를 붙였거나, 위 다섯 요소 가운데 하나가 사라졌거나 형식이 바뀌었거나(admonition 블록의 2·3줄을 한 줄로 합치거나 한 줄 `**소속 대분류:**` 단락으로 바꾼 것, 인용 블록을 굵은 `**원문 주석:**` 단락으로 바꾼 것), 대분류·세부영역의 명칭·번호가 제목·이동 경로·링크 텍스트·표 어디서든 바뀌었거나 축약됐으면 훼손이다. 훼손은 `불통과` 사유다.
 4. **템플릿 섹션 순서** — H2 제목이 부록 C 의 정본과 문구·순서·개수까지 같은가(### 소제목은 자유. 세부영역은 괄호 설명 포함, 대분류는 번호 없음 — 퍼블리셔 검사 `protect_source.py` 의 `AREA_SECTIONS`·`CATEGORY_SECTIONS` 와 같은 문자열이며 다른 표기는 퍼블리셔가 반려하므로 여기서 잡는다). 갱신 페이지가 정본 뒤에 이미 갖고 있던 추가 절(구축자가 둔 부록 절)은 유지됐는가(지웠으면 지적하고, 유지했으면 개수 초과로 보지 않는다). 트랙 보조 페이지는 입력으로 받은 기존 페이지의 H2 와 같은가. auto 마커(`<!-- auto:<key>:start -->`/`end`)가 템플릿과 같은 자리에 있고, 갱신 페이지에서는 마커 사이 내용이 기존 페이지와 같은가(새 페이지에서는 비어 있는가). `{{` 가 남아 있지 않은가. 이동 경로 줄이 본문 첫 줄에 있는가 — 갱신 페이지에서는 입력으로 받은 기존 페이지의 이동 경로 줄과 글자 단위로 같은가(시드끼리 형식이 달라도 입력의 줄이 기준이다), 새 페이지에서는 storyteller.md 4.2 의 유형별 형식인가. 상태 줄이 있는 유형(부록 C 의 페이지 머리)에서 상태 줄의 형식이 그 유형의 것이고 값이 프런트매터와 같은가(세부영역 시드에는 상태 줄이 없으므로 영역 심화에서 스토리텔러가 새로 넣은 4항목 줄로 본다).
 5. **링크 유효성** — 내부 링크가 페이지 위치 기준 상대 경로에 `.md` 확장자를 포함하는가, 대상이 `docs_tree.txt`(또는 이번 실행이 만드는 페이지) 안에 있는가, 링크 텍스트가 번호와 이름을 함께 쓰는가, 각주 참조가 모두 정의돼 있고 정의만 있는 각주가 없는가, 트랙 페이지가 관련 세부영역에 연결돼 있는가.
 6. **문체 규칙** — 한국어 평서체("~이다/~한다"), 짧은 단락(한 단락 5문장 이하를 기준으로 본다 [가정]), 전문용어 첫 등장 시 영문 병기, 약어 첫 등장 시 풀어 쓰기, 마케팅 표현("혁신적", "최고의", "완벽한", "획기적" 등) 없음, "B-7"·"2-1"·"7번" 같은 코드·번호만의 호칭 없음(원문 인용 안은 예외), 근거 없는 단정 없음, "빠짐없이·완전·모든 기능"이 측정 근거 없이 쓰이지 않음, 외부 연계 영역을 ROP 직접 범위처럼 쓰지 않음, 8. 실시간 세계 상태·데이터 일관성과 22. 시뮬레이션·예측용 디지털 트윈의 구분.
 7. **분량** — 주제 페이지 본문은 1,500~2,500자, 세부영역 페이지 본문(3~11절)은 4,000자 이내. 글자 수는 공백 포함, 프런트매터·HTML 주석·표 구분 기호·각주 정의·mermaid 코드는 뺀다 [가정: 템플릿 기준과 동일]. 주제 페이지의 본문은 1~7절이다 [가정]. 넘치면 "주제 페이지로 분리"를, 모자라면 "브리프의 finding 을 더 쓰거나 분량 미달 사유를 남긴다"를 지시한다.
 
-**pages.json 필드 검사** — 먼저 예외 하나: `pages` 의 `diff_summary` 가 "변경 없음 — 브리프 없음" / "변경 없음 — 1차 판정 없음" / "변경 없음 — 1차 판정 반려" 이면 스토리텔러의 "입력 없음 처리"(storyteller.md 1절) 출력이다. 아래 필드 검사(`status: draft`, `version` +1, `updated` 실행 날짜)를 적용하지 않고, 페이지 내용이 입력 페이지와 같은지만 확인한 뒤 `불통과`, `retry_reason` 은 "브리프 없음"(또는 그 사유 그대로)으로 판정한다. 이 판정은 스토리텔러 재실행으로 풀리지 않으므로 실행 스크립트가 재실행 없이 `runs/parked/` 로 보류해야 한다 [가정: `retry_reason` 이 "브리프 없음"으로 시작하면 재실행하지 않도록 pipeline/run_daily 담당에게 요청한다]. 그 밖의 출력에서는 다음을 본다: `fixes_applied` 가 1차 `required_fixes` 의 모든 항목을 다루고 각 수정이 실제 페이지에 반영됐는가, `flow_matrix_updates` 가 시나리오 표에서 실제로 채운 칸(단계 × 항목)과 일치하는가, `open_question_updates` 가 페이지의 열린 질문 절과 일치하고 트랙 질문을 넣지 않았는가, `reference_updates` 에 `source_exists: false` 인 출처나 미사용 출처가 없는가, `glossary_updates` 가 용어 충돌 판정과 어긋나지 않는가, `changelog_entry`·`index_updates` 의 대상 이름이 번호+이름 표기인가, 페이지 `status` 가 `draft`(월간 재검증의 `needs_update`·`deprecated` 지시는 예외)이고 `version` 이 기존보다 1 크고 `updated` 가 실행 날짜인가, 주제 페이지 9. 검증 노트가 1차 `verification_note`·판정·건수·신뢰도와 같은가(판정 줄의 정본은 "1차 <1차 판정> / 2차 대기"다. "2차 대기"는 게시 시 퍼블리셔가 2차 판정으로, "검증자 주의" 줄은 2차 `verification_note` 로 바꾸므로 수정 지시 대상이 아니다 [가정: 사양서 6.4 의 9단계에 없는 퍼블리셔 단계이며 pipeline/ 에는 아직 이 치환이 없다. storyteller.md 6절과 같은 규칙이며, pipeline/publish 담당에게 5단계(반영)에서 이 두 줄을 치환하는 처리를 추가하도록 명시적으로 요청한다. 구현되지 않으면 게시된 주제 페이지에 "2차 대기"가 남으므로 완료 보고의 사용자 결정 항목에 올린다. 대안은 퍼블리셔가 2차 `verification_note` 전체를 그대로 실어 덮어쓰는 것이다]). 트랙이면: 온톨로지 초안에 네가 승인한 변경만 반영됐고 거부한 변경은 미해결 모델링 질문으로 갔는가, 2. 개념 목록 표의 상태 열이 시드의 네 값(`초안` / `제안` / `확정` / `폐기(이유 병기)`)만 쓰고 4절 항목 14 의 전이 규칙대로인가(승인 행 `확정`, 제거 승인 행은 지우지 않고 `폐기(이유)`, `초안` 행은 네가 확정을 승인한 것만 `확정`, 승인 없는 `제안`·`확정` 행 없음, 4. 다이어그램이 `폐기` 아닌 행과 일치), `ontology_draft_version` 이 프런트매터 `ontology_version` 과 같은 문자열이고(시드 표기 `"0"` 포함) 네가 승인한 변경이 있을 때만 0.1 올랐는가(`"0"` → `"0.1"` → `"0.2"`; H1 제목 `(v0.1)`·상태 줄 `v0.1`·프런트매터·JSON 네 곳이 같은가), 변경이 없으면 온톨로지 초안 페이지가 `pages` 에 없고 값이 입력 페이지의 `ontology_version` 그대로인가, `backlog_updates` 가 단계 페이지 2절·5절 표와 일치하고 `backlog_duplicates` 로 판정한 질문을 넣지 않았으며 `stage_tag_issues` 로 판정한 질문의 단계가 고쳐졌는가, `보류` 로 바꾼 질문마다 단계 페이지 2절 표의 상태 칸이 `보류(사유: …; 재개 조건: …)` 형식으로 사유와 재개 조건을 갖는가(없으면 `수정 후 재검증` — 10절의 막힌 질문 판정이 이 칸에 기댄다), `stage_transition` 이 1차 `stage_transition_approved: true` 일 때만 있고 단계 페이지의 전환 표기(6절 아래 줄 "다음 단계로 전환: 예", 상태 줄 "완료", 검증 판정 칸 "충족"·"전환 승인")와 함께 있는가 — 그리고 이번 2차의 `track_checks.stage_transition_approved` 가 최종값이므로 1차와 다르면 다음을 `required_fixes` 로 내고 `수정 후 재검증` 한다: 2차에서 false 로 내리면 "`track_updates.stage_transition` 필드를 제거하고, 단계 페이지 6절 아래 줄을 「다음 단계로 전환: 아니오(<부족한 완료 조건 또는 막힌 질문 id>)」로, 상태 줄의 단계 상태를 「진행 중」으로, 6절 표의 검증 판정 칸을 「미충족」 또는 「미승인」으로 고친다"; 1차가 false 였는데 2차에서 true 로 올리면 반대 방향으로 「예」·「완료」·「충족」·「전환 승인」과 `stage_transition` 추가를 지시한다 [가정: storyteller.md 7절과 같은 규칙]. 재검증에서는 같은 `track_checks` 값을 유지한다, `area_reflection_proposals` 가 세부영역 페이지를 직접 고치지 않고 제안에 그쳤는가, 트랙 주제 페이지가 `track` 프런트매터를 갖고 단계 페이지에서 링크됐는가, 트랙 개요 페이지가 `pages` 에 있고 H1 아래 상태 줄의 "마지막 트랙 실행"이 실행 날짜이며 "현재 단계"가 이번 판정과 맞는가(단계 전환을 승인한 실행이면 `단계 n+1. <이름>`, 아니면 `단계 n. <이름>` — 2차에서 전환을 내리거나 올리면 이 줄도 함께 고치게 지시한다; storyteller.md 7절).
+**pages.json 필드 검사** — 먼저 예외 하나: `pages` 의 `diff_summary` 가 "변경 없음 — 브리프 없음" / "변경 없음 — 1차 판정 없음" / "변경 없음 — 1차 판정 반려" 이면 스토리텔러의 "입력 없음 처리"(storyteller.md 1절) 출력이다. 아래 필드 검사(`status: draft`, `version` +1, `updated` 실행 날짜)를 적용하지 않고, 페이지 내용이 입력 페이지와 같은지만 확인한 뒤 `불통과`, `retry_reason` 은 "브리프 없음"(또는 그 사유 그대로)으로 판정한다. 이 판정은 스토리텔러 재실행으로 풀리지 않으므로 실행 스크립트가 재실행 없이 `runs/parked/` 로 보류해야 한다 [가정: `retry_reason` 이 "브리프 없음"으로 시작하면 재실행하지 않도록 pipeline/run_daily 담당에게 요청한다]. 그 밖의 출력에서는 다음을 본다: `fixes_applied` 가 1차 `required_fixes` 의 모든 항목을 다루고 각 수정이 실제 페이지에 반영됐는가, `site_matrix_updates` 가 적용 사례 표에서 실제로 채운 칸(현장 유형 × 항목)과 일치하고 `site_type` 이 사례에 밝힌 현장 유형과 같은가, `open_question_updates` 가 페이지의 열린 질문 절과 일치하고 트랙 질문을 넣지 않았는가, `reference_updates` 에 `source_exists: false` 인 출처나 미사용 출처가 없는가, `glossary_updates` 가 용어 충돌 판정과 어긋나지 않는가, `changelog_entry`·`index_updates` 의 대상 이름이 번호+이름 표기인가, 페이지 `status` 가 `draft`(월간 재검증의 `needs_update`·`deprecated` 지시는 예외)이고 `version` 이 기존보다 1 크고 `updated` 가 실행 날짜인가, 주제 페이지 9. 검증 노트가 1차 `verification_note`·판정·건수·신뢰도와 같은가(판정 줄의 정본은 "1차 <1차 판정> / 2차 대기"다. "2차 대기"는 게시 시 퍼블리셔가 2차 판정으로, "검증자 주의" 줄은 2차 `verification_note` 로 바꾸므로 수정 지시 대상이 아니다 [가정: 사양서 6.4 의 9단계에 없는 퍼블리셔 단계이며 pipeline/ 에는 아직 이 치환이 없다. storyteller.md 6절과 같은 규칙이며, pipeline/publish 담당에게 5단계(반영)에서 이 두 줄을 치환하는 처리를 추가하도록 명시적으로 요청한다. 구현되지 않으면 게시된 주제 페이지에 "2차 대기"가 남으므로 완료 보고의 사용자 결정 항목에 올린다. 대안은 퍼블리셔가 2차 `verification_note` 전체를 그대로 실어 덮어쓰는 것이다]). 트랙이면: 온톨로지 초안에 네가 승인한 변경만 반영됐고 거부한 변경은 미해결 모델링 질문으로 갔는가, 2. 개념 목록 표의 상태 열이 시드의 네 값(`초안` / `제안` / `확정` / `폐기(이유 병기)`)만 쓰고 4절 항목 14 의 전이 규칙대로인가(승인 행 `확정`, 제거 승인 행은 지우지 않고 `폐기(이유)`, `초안` 행은 네가 확정을 승인한 것만 `확정`, 승인 없는 `제안`·`확정` 행 없음, 4. 다이어그램이 `폐기` 아닌 행과 일치), `ontology_draft_version` 이 프런트매터 `ontology_version` 과 같은 문자열이고(시드 표기 `"0"` 포함) 네가 승인한 변경이 있을 때만 0.1 올랐는가(`"0"` → `"0.1"` → `"0.2"`; H1 제목 `(v0.1)`·상태 줄 `v0.1`·프런트매터·JSON 네 곳이 같은가), 변경이 없으면 온톨로지 초안 페이지가 `pages` 에 없고 값이 입력 페이지의 `ontology_version` 그대로인가, `backlog_updates` 가 단계 페이지 2절·5절 표와 일치하고 `backlog_duplicates` 로 판정한 질문을 넣지 않았으며 `stage_tag_issues` 로 판정한 질문의 단계가 고쳐졌는가, `보류` 로 바꾼 질문마다 단계 페이지 2절 표의 상태 칸이 `보류(사유: …; 재개 조건: …)` 형식으로 사유와 재개 조건을 갖는가(없으면 `수정 후 재검증` — 10절의 막힌 질문 판정이 이 칸에 기댄다), `stage_transition` 이 1차 `stage_transition_approved: true` 일 때만 있고 단계 페이지의 전환 표기(6절 아래 줄 "다음 단계로 전환: 예", 상태 줄 "완료", 검증 판정 칸 "충족"·"전환 승인")와 함께 있는가 — 그리고 이번 2차의 `track_checks.stage_transition_approved` 가 최종값이므로 1차와 다르면 다음을 `required_fixes` 로 내고 `수정 후 재검증` 한다: 2차에서 false 로 내리면 "`track_updates.stage_transition` 필드를 제거하고, 단계 페이지 6절 아래 줄을 「다음 단계로 전환: 아니오(<부족한 완료 조건 또는 막힌 질문 id>)」로, 상태 줄의 단계 상태를 「진행 중」으로, 6절 표의 검증 판정 칸을 「미충족」 또는 「미승인」으로 고친다"; 1차가 false 였는데 2차에서 true 로 올리면 반대 방향으로 「예」·「완료」·「충족」·「전환 승인」과 `stage_transition` 추가를 지시한다 [가정: storyteller.md 7절과 같은 규칙]. 재검증에서는 같은 `track_checks` 값을 유지한다, `area_reflection_proposals` 가 세부영역 페이지를 직접 고치지 않고 제안에 그쳤는가, 트랙 주제 페이지가 `track` 프런트매터를 갖고 단계 페이지에서 링크됐는가, 트랙 개요 페이지가 `pages` 에 있고 H1 아래 상태 줄의 "마지막 트랙 실행"이 실행 날짜이며 "현재 단계"가 이번 판정과 맞는가(단계 전환을 승인한 실행이면 `단계 n+1. <이름>`, 아니면 `단계 n. <이름>` — 2차에서 전환을 내리거나 올리면 이 줄도 함께 고치게 지시한다; storyteller.md 7절).
 
 **2차 판정 3종**
 
@@ -325,7 +327,7 @@ WebSearch 까지 쓸 수 없으면 검증을 지어내지 않는다. `반려`, `
 
 ## 12. 실행 유형별 초점
 
-- **area_deep_dive(영역 심화)**: 세부영역 페이지 3~11절을 채울 근거가 있는가. 원문 SCM 관점의 질문이 다뤄졌는가. 5. 현장 시나리오가 물류 흐름 7단계와 여섯 항목에 놓이는가. 9절이 분류 원문 9장 기준으로 직접/연계를 나눴는가. 10절 연결이 번호+이름인가.
+- **area_deep_dive(영역 심화)**: 세부영역 페이지 3~11절을 채울 근거가 있는가. 원문 핵심 질문이 다뤄졌는가. 5. 적용 사례가 현장 유형(물류창고 / 제조 공장 / 병원 / 상업 시설 / 가정 / 실외 / 기타 가운데 하나)을 명시하고 여섯 항목(원문 21장)에 놓이는가 — 근거 없이 물류창고를 기본값으로 쓰거나 물류 흐름 단계만으로 사례를 세웠으면 수정 지시 대상이다. finding 의 `site_type` 이 출처가 밝힌 현장 유형과 맞는가. `site_matrix_updates` 의 칸(현장 유형 × 항목)이 페이지 사례와 맞는가. 9절이 분류 원문 19장 기준으로 직접/연계를 나눴는가. 10절 연결이 번호+이름인가.
 - **topic(주제 조사)**: 하나의 구체적 질문·사례·기술을 깊게 다뤘는가. 주 연구영역이 하나로 정해졌는가. 신규 주제 페이지가 하루 1건인가.
 - **update(갱신)**: 정정 요청과 오래된 사실의 재확인이 브리프의 중심인가(7절). 재확인 결과가 기존 문장의 유지·수정·`needs_update` 가운데 무엇인지 명확한가.
 - **weekly_review(주간 정리)**: 신규 조사가 없어야 한다. 출처의 URL 열림·제목 일치·변경 여부만 적은 점검 결과 finding(researcher.md 9절: 출처마다 1건, 그 출처 id 를 `source_ids` 로, tag 사실, as_of 오늘)은 출처의 상태에 관한 진술이므로 신규 조사로 보지 않고 1차 항목 1·2 로만 확인한다. 그 밖에 새 사실을 담은 finding 이 있으면 반려가 아니라 "이번 실행에서 제외"를 지시한다. 브리프는 링크·출처 유효성 점검 결과(입력의 `runs/<run_id>/url_check.json`·`link_check.txt` 스크립트 결과와 점검 결과 finding), 열린 질문 정리 제안, 용어집 정리 제안을 담는다. 깨졌다고 보고된 링크·출처는 네가 최대 5건을 다시 열어 확인한다 [가정]. 2차에서는 주간 요약 페이지(`docs/logs/weekly/YYYY-Www.md`)의 내용이 이번 주 실행 기록과 맞는지 본다.
@@ -334,138 +336,285 @@ WebSearch 까지 쓸 수 없으면 검증을 지어내지 않는다. `반려`, `
 
 ---
 
-## 부록 A. 세부영역 28개의 명칭과 경로
+## 부록 A. 세부영역 67개의 명칭과 경로
 
-번호+이름 표기와 `reassign_to`, 링크 유효성 검사의 기준이다. 경로는 `docs/categories/` 아래다.
+번호+이름 표기와 `reassign_to`, 링크 유효성 검사의 기준이다. 경로는 `docs/categories/` 아래다. 2026-09-28 개정부터 폴더·파일 이름에 대분류 문자·영역 번호를 붙이지 않는다(pipeline/lib/paths.py 의 CATEGORY_SLUGS·AREA_SLUGS).
 
 | 번호 | 세부영역(원문 명칭) | 대분류 | 파일 |
 |---|---|---|---|
-| 1 | 1. 주문·업무 시스템 연계 | A. 업무·공급망 설계 | a-business-supply-chain-design/01-order-and-business-system-integration.md |
-| 2 | 2. 공정·워크플로 모델링 | A. 업무·공급망 설계 | a-business-supply-chain-design/02-process-and-workflow-modeling.md |
-| 3 | 3. 처리능력·거점·설비 계획 | A. 업무·공급망 설계 | a-business-supply-chain-design/03-capacity-site-and-facility-planning.md |
-| 4 | 4. 성과·경제성·프로세스 개선 | A. 업무·공급망 설계 | a-business-supply-chain-design/04-performance-economics-and-process-improvement.md |
-| 5 | 5. 로봇 능력·작업 온톨로지 | B. 공통 정보·환경 모델 | b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md |
-| 6 | 6. 지도·공간·위치 모델 | B. 공통 정보·환경 모델 | b-common-information-and-environment-model/06-map-space-and-location-model.md |
-| 7 | 7. 화물·재고·자산 식별과 추적 | B. 공통 정보·환경 모델 | b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md |
-| 8 | 8. 실시간 세계 상태·데이터 일관성 | B. 공통 정보·환경 모델 | b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md |
-| 9 | 9. 로봇·제조사 관제 연동 | C. 연결·실행 기반 | c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md |
-| 10 | 10. 설비·건물 시스템 연동 | C. 연결·실행 기반 | c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md |
-| 11 | 11. 분산 시스템·통신·컴퓨팅 구조 | C. 연결·실행 기반 | c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md |
-| 12 | 12. 명령·작업 실행의 신뢰성 | C. 연결·실행 기반 | c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md |
-| 13 | 13. 작업 배정 — MRTA | D. 계획·최적화 | d-planning-and-optimization/13-task-allocation-mrta.md |
-| 14 | 14. 작업 순서·스케줄링 | D. 계획·최적화 | d-planning-and-optimization/14-task-sequencing-and-scheduling.md |
-| 15 | 15. 다중 로봇 경로·교통 관리 — MAPF | D. 계획·최적화 | d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md |
-| 16 | 16. 공용 자원·충전·에너지 최적화 | D. 계획·최적화 | d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md |
-| 17 | 17. 로봇 간 협업·물리적 인계 | E. 협업·현장 운영 | e-collaboration-and-field-operations/17-robot-to-robot-collaboration-and-physical-handover.md |
-| 18 | 18. 사람–로봇 협업·운영 인터페이스 | E. 협업·현장 운영 | e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md |
-| 19 | 19. 모니터링·이상 탐지·원인 분석 | E. 협업·현장 운영 | e-collaboration-and-field-operations/19-monitoring-anomaly-detection-and-root-cause-analysis.md |
-| 20 | 20. 예외 복구·재계획·업무 연속성 | E. 협업·현장 운영 | e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md |
-| 21 | 21. 온보딩·설정·현장 시운전 | F. 도입·검증·유지관리 | f-deployment-verification-and-maintenance/21-onboarding-configuration-and-commissioning.md |
-| 22 | 22. 시뮬레이션·예측용 디지털 트윈 | F. 도입·검증·유지관리 | f-deployment-verification-and-maintenance/22-simulation-and-predictive-digital-twin.md |
-| 23 | 23. 시험·형식 검증·벤치마크 | F. 도입·검증·유지관리 | f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md |
-| 24 | 24. 자산·소프트웨어 수명주기 관리 | F. 도입·검증·유지관리 | f-deployment-verification-and-maintenance/24-asset-and-software-lifecycle-management.md |
-| 25 | 25. 안전·위험 관리 | G. 안전·보안·지능·거버넌스 | g-safety-security-intelligence-and-governance/25-safety-and-risk-management.md |
-| 26 | 26. 사이버보안·접근권한·개인정보 | G. 안전·보안·지능·거버넌스 | g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md |
-| 27 | 27. AI·학습·적응과 모델 운영 | G. 안전·보안·지능·거버넌스 | g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md |
-| 28 | 28. 표준·상호운용성·다사업자 거버넌스 | G. 안전·보안·지능·거버넌스 | g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md |
+| 1 | 1. 기술·시장·업체 동향 | A. 기획·사업 | planning-and-business/technology-market-and-vendor-trends.md |
+| 2 | 2. 사용 사례·요구·책임 범위 | A. 기획·사업 | planning-and-business/use-cases-requirements-and-scope.md |
+| 3 | 3. 경제성·조달·사업 모델 | A. 기획·사업 | planning-and-business/economics-procurement-and-business-models.md |
+| 4 | 4. 이기종 로봇 등록 | B. 로봇 온톨로지 | robot-ontology/heterogeneous-robot-registration.md |
+| 5 | 5. 로봇 능력·작업 표현 | B. 로봇 온톨로지 | robot-ontology/robot-capability-and-task-representation.md |
+| 6 | 6. 온톨로지 기반 시스템·로봇 연동 | B. 로봇 온톨로지 | robot-ontology/ontology-based-system-and-robot-integration.md |
+| 7 | 7. 온톨로지 검증·변경 관리 | B. 로봇 온톨로지 | robot-ontology/ontology-verification-and-change-management.md |
+| 8 | 8. 채팅으로 맵 작성 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/chat-map-authoring.md |
+| 9 | 9. 채팅으로 시나리오 구성 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/chat-scenario-composition.md |
+| 10 | 10. 채팅으로 로봇 구성 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/chat-robot-configuration.md |
+| 11 | 11. 채팅으로 실제 상황 시뮬레이션 재현 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md |
+| 12 | 12. 채팅으로 업무 지시·오케스트레이션 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md |
+| 13 | 13. 대화형 기능의 신뢰·기반 | C. 채팅 기반 구성·운영 | chat-based-configuration-and-operation/conversational-trust-and-foundations.md |
+| 14 | 14. 도면·BIM에서 지도 만들기 | D. 공간·지도 모델 | space-and-map-model/maps-from-floor-plans-and-bim.md |
+| 15 | 15. 지도·공간·위치 모델 | D. 공간·지도 모델 | space-and-map-model/map-space-and-location-model.md |
+| 16 | 16. 장소 의미·지도 관리 | D. 공간·지도 모델 | space-and-map-model/place-semantics-and-map-management.md |
+| 17 | 17. 작업 대상·자산 식별과 인계 추적 | E. 사물·사람·실시간 상태 | objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md |
+| 18 | 18. 실시간 세계 상태·데이터 일관성 | E. 사물·사람·실시간 상태 | objects-people-and-live-state/real-time-world-state-and-data-consistency.md |
+| 19 | 19. 사람·보행자 모델 | E. 사물·사람·실시간 상태 | objects-people-and-live-state/people-and-pedestrian-model.md |
+| 20 | 20. 로봇·제조사 관제 연동 | F. 연동 | integration/robot-and-vendor-fleet-manager-integration.md |
+| 21 | 21. 상호운용 표준·적합성 | F. 연동 | integration/interoperability-standards-and-conformance.md |
+| 22 | 22. 설비·건물 시스템 연동 | F. 연동 | integration/facility-and-building-system-integration.md |
+| 23 | 23. 업무 시스템 연동 | F. 연동 | integration/business-system-integration.md |
+| 24 | 24. 작업·워크플로 모델링 | G. 계획·최적화 | planning-and-optimization/task-and-workflow-modeling.md |
+| 25 | 25. 작업 배정 — MRTA | G. 계획·최적화 | planning-and-optimization/task-allocation-mrta.md |
+| 26 | 26. 작업 순서·스케줄링 | G. 계획·최적화 | planning-and-optimization/task-sequencing-and-scheduling.md |
+| 27 | 27. 다중 로봇 경로·교통 관리 — MAPF | G. 계획·최적화 | planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md |
+| 28 | 28. 공용 자원·충전·에너지 최적화 | G. 계획·최적화 | planning-and-optimization/shared-resource-charging-and-energy-optimization.md |
+| 29 | 29. 명령·작업 실행의 신뢰성 | H. 실행·협업·예외 복구 | execution-collaboration-and-recovery/command-and-task-execution-reliability.md |
+| 30 | 30. 로봇 간 협업·물리적 인계 | H. 실행·협업·예외 복구 | execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md |
+| 31 | 31. 사람–로봇 협업 | H. 실행·협업·예외 복구 | execution-collaboration-and-recovery/human-robot-collaboration.md |
+| 32 | 32. 예외 복구·재계획·업무 연속성 | H. 실행·협업·예외 복구 | execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md |
+| 33 | 33. 시나리오 모델·편집 | I. 설계·시뮬레이션 | design-and-simulation/scenario-model-and-editing.md |
+| 34 | 34. 시뮬레이션·예측용 디지털 트윈 | I. 설계·시뮬레이션 | design-and-simulation/simulation-and-predictive-digital-twin.md |
+| 35 | 35. 처리능력·규모·배치 설계 | I. 설계·시뮬레이션 | design-and-simulation/capacity-sizing-and-layout-design.md |
+| 36 | 36. 가상 시운전·실제 상황 재현 | I. 설계·시뮬레이션 | design-and-simulation/virtual-commissioning-and-real-situation-replay.md |
+| 37 | 37. 관제 화면·실행 기록 | J. 현장 운영·관제 | field-operations-and-monitoring/control-screen-and-execution-records.md |
+| 38 | 38. 모니터링·이상 탐지·원인 분석 | J. 현장 운영·관제 | field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md |
+| 39 | 39. 운영 성과 측정·개선 | J. 현장 운영·관제 | field-operations-and-monitoring/operational-performance-measurement-and-improvement.md |
+| 40 | 40. 운영 절차·요청 창구 | J. 현장 운영·관제 | field-operations-and-monitoring/operating-procedures-and-request-channels.md |
+| 41 | 41. 플랫폼 아키텍처·외부 API | K. 플랫폼 아키텍처·인프라 | platform-architecture-and-infrastructure/platform-architecture-and-external-api.md |
+| 42 | 42. 분산 시스템·통신·컴퓨팅 구조 | K. 플랫폼 아키텍처·인프라 | platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md |
+| 43 | 43. 데이터·관측성·배포 | K. 플랫폼 아키텍처·인프라 | platform-architecture-and-infrastructure/data-observability-and-deployment.md |
+| 44 | 44. 로봇 기반 모델·언어 모델 계획 | L. AI·학습 기술 | ai-and-learning/robot-foundation-models-and-llm-planning.md |
+| 45 | 45. 문서·도면·장면 이해 | L. AI·학습 기술 | ai-and-learning/document-drawing-and-scene-understanding.md |
+| 46 | 46. 예측·학습 기반 최적화 | L. AI·학습 기술 | ai-and-learning/prediction-and-learning-based-optimization.md |
+| 47 | 47. AI·학습·적응과 모델 운영 | L. AI·학습 기술 | ai-and-learning/ai-learning-adaptation-and-model-operations.md |
+| 48 | 48. 안전·위험 관리 | M. 안전 | safety/safety-and-risk-management.md |
+| 49 | 49. 사람 근접 안전 | M. 안전 | safety/human-proximity-safety.md |
+| 50 | 50. 안전 표준·인증·사고 조사 | M. 안전 | safety/safety-standards-certification-and-incident-investigation.md |
+| 51 | 51. 인증·권한·격리 | N. 보안·개인정보 | security-and-privacy/authentication-authorization-and-isolation.md |
+| 52 | 52. 통신 보호·위협 관리·감사 | N. 보안·개인정보 | security-and-privacy/communication-protection-threat-management-and-audit.md |
+| 53 | 53. 개인정보·영상 데이터 | N. 보안·개인정보 | security-and-privacy/privacy-and-video-data.md |
+| 54 | 54. 시험·형식 검증·벤치마크 | O. 검증·도입·수명주기 | verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md |
+| 55 | 55. 현장 조사·설치·시운전 | O. 검증·도입·수명주기 | verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md |
+| 56 | 56. 운영 이관·확대·교육 | O. 검증·도입·수명주기 | verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md |
+| 57 | 57. 자산·소프트웨어 수명주기 관리 | O. 검증·도입·수명주기 | verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md |
+| 58 | 58. 다사업자 책임·계약·데이터 | P. 거버넌스·법규·사회 | governance-law-and-society/multi-party-responsibility-contracts-and-data.md |
+| 59 | 59. 법·규제·보험·라이선스 | P. 거버넌스·법규·사회 | governance-law-and-society/law-regulation-insurance-and-licensing.md |
+| 60 | 60. 노동·수용성·접근성 | P. 거버넌스·법규·사회 | governance-law-and-society/labor-acceptance-and-accessibility.md |
+| 61 | 61. 물류창고 | Q. 현장 유형별 적용 | site-type-applications/warehouse.md |
+| 62 | 62. 제조 공장 | Q. 현장 유형별 적용 | site-type-applications/manufacturing-plant.md |
+| 63 | 63. 병원·의료 | Q. 현장 유형별 적용 | site-type-applications/hospital-and-healthcare.md |
+| 64 | 64. 상업 시설 | Q. 현장 유형별 적용 | site-type-applications/commercial-facilities.md |
+| 65 | 65. 가정·공동주택 | Q. 현장 유형별 적용 | site-type-applications/home-and-apartment.md |
+| 66 | 66. 실외 | Q. 현장 유형별 적용 | site-type-applications/outdoor.md |
+| 67 | 67. 기타 현장 | Q. 현장 유형별 적용 | site-type-applications/other-sites.md |
 
-대분류 페이지는 `docs/categories/<대분류 slug>/index.md`, 트랙 페이지는 `docs/tracks/manual-capability-ontology/{index, stage-1-existing-models-and-standards, stage-2-document-types, stage-3-extraction-methods, stage-4-execution-grounding, stage-5-completeness-verification, stage-6-lifecycle-governance, stage-7-rop-scenarios-and-hypotheses, ontology-draft, model-standard-comparison, document-type-matrix, evaluation-and-verification, question-backlog, log, experiments}.md`, 주제 페이지는 `docs/topics/YYYY/YYYY-MM-DD-<slug>.md`, 주간 정리는 `docs/logs/weekly/YYYY-Www.md` 다.
+대분류 페이지는 `docs/categories/<대분류 slug>/index.md`, 트랙 페이지는 `docs/tracks/<트랙 slug>/…`(slug: manual-capability-ontology, chat-based-configuration-and-operation, floorplan-recognition. 첫 트랙의 예: `docs/tracks/manual-capability-ontology/{index, stage-1-existing-models-and-standards, stage-2-document-types, stage-3-extraction-methods, stage-4-execution-grounding, stage-5-completeness-verification, stage-6-lifecycle-governance, stage-7-rop-scenarios-and-hypotheses, ontology-draft, model-standard-comparison, document-type-matrix, evaluation-and-verification, question-backlog, log, experiments}.md`, 주제 페이지는 `docs/topics/YYYY/YYYY-MM-DD-<slug>.md`, 주간 정리는 `docs/logs/weekly/YYYY-Www.md` 다.
 
 ---
 
 ## 부록 B. 분류 원문의 세부영역 정의·질문 표 (분류 적합성·[분류원문] 대조의 기준)
 
-아래 일곱 표는 `_source/ROP_SCM_연구분야_분류.md` 의 2~8장에서 한 글자도 바꾸지 않고 옮긴 것이다. 세부영역 페이지 1. 한 줄 정의는 "무엇을 연구하는가" 칸, 2. SCM 관점의 질문은 "SCM 관점의 질문" 칸의 문장이다. 대분류의 핵심 질문 표와 9장·11장은 공통 규칙 7절에 있다.
+아래 열일곱 표는 `_source/ROP_연구분야_분류.md`(2026-09-28 개정판)의 2~18장에서 한 글자도 바꾸지 않고 옮긴 것이다. 세부영역 페이지 1. 한 줄 정의는 "무엇을 연구하는가" 칸, 2. 핵심 질문은 "핵심 질문" 칸의 문장이다. 대분류의 핵심 질문 표와 19장(책임 경계)·21장(연구 방법)은 공통 규칙 7절에 있다. 옛 영역 페이지에서 옮긴 `[옛 분류원문]` 줄(1절의 `> 옛 정의: …`·`> 옛 질문: …`·`> 옛 원문 주석: …`)은 보관한 옛 원문(`_source/archive/ROP_SCM_연구분야_분류_2026-09-24.md`)이 기준이며, 입력 시드와 글자 단위로 같게 유지됐는지만 본다.
 
-**A. 업무·공급망 설계** (원문 2장)
+**A. 기획·사업** (원문 2장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **1. 주문·업무 시스템 연계** | ERP, WMS, MES, WES, TMS의 주문·재고·생산 요청을 받아 작업으로 변환하고, 변경·취소·완료를 다시 반영하는 방법 | 출고 우선순위가 바뀌면 이미 진행 중인 로봇 작업을 어떻게 바꿀까? |
-| **2. 공정·워크플로 모델링** | 입고·검수·적치·보충·피킹·이송·생산·포장·출하·반품을 작업 단계로 분해하고, 선후관계와 완료 조건을 정의 | ‘운반 완료’와 ‘인수 확인·재고 반영 완료’를 어떻게 연결할까? |
-| **3. 처리능력·거점·설비 계획** | 물동량에 필요한 로봇 수와 종류, 작업대·충전기 배치, 교대 운영, 여러 거점의 자원 배치를 결정 | 로봇을 늘려야 할까, 포장대나 엘리베이터가 병목일까? |
-| **4. 성과·경제성·프로세스 개선** | 납기 준수율, 처리량, 리드타임, 재공품, 비용, 에너지 등을 측정하고 병목과 투자 효과를 분석 | 로봇 가동률 상승이 실제 출하량과 비용 개선으로 이어졌는가? |
+| **1. 기술·시장·업체 동향** | 카테고리마다 연구·기사·업체 발표를 모으고, 제품·업체·로봇 종류의 지형을 정리한다 | 어떤 연구·제품·업체가 로봇 오케스트레이션의 흐름을 바꾸고 있는가? |
+| **2. 사용 사례·요구·책임 범위** | 로봇에게 맡길 일과 현장 유형별 요구, 플랫폼이 직접 맡을 범위와 외부에 맡길 범위를 정한다 | 로봇에게 어떤 일을 맡기고, 플랫폼은 그중 어디까지 직접 책임질 것인가? |
+| **3. 경제성·조달·사업 모델** | 투자 효과를 따지고, 로봇·플랫폼을 골라 계약하고, 과금 방식을 정한다 | 도입 비용을 넘는 효과가 나오며, 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가? |
 
 [분류원문]
 
-**B. 공통 정보·환경 모델** (원문 3장)
+**B. 로봇 온톨로지** (원문 3장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **5. 로봇 능력·작업 온톨로지** | 제조사별 기능·제약·장착 장비·실행 조건을 공통 모델로 표현하고, 작업 요구와 연결 | 같은 ‘운반 로봇’ 중 누가 이 화물을 실제로 취급할 수 있는가? |
-| **6. 지도·공간·위치 모델** | BIM·CAD·센서 지도에서 이동 공간과 경로를 만들고, 로봇별 좌표계·층·목적지를 정렬 | 제조사마다 다른 지도에서 ‘3층 출하 대기장’을 어떻게 동일한 장소로 인식할까? |
-| **7. 화물·재고·자산 식별과 추적** | 제품·박스·팔레트·운반구·로봇을 식별하고, 적재 관계·위치·인계 이력을 연결 | 로봇은 도착했는데 실제로 어떤 팔레트가 인계됐는가? |
-| **8. 실시간 세계 상태·데이터 일관성** | 로봇·설비·공간·화물의 현재 상태를 통합하고, 시간 지연·누락·충돌·불확실성을 관리 | 문이 열려 있다는 정보가 30초 전이라면 지금도 통과 가능하다고 볼 수 있을까? |
+| **4. 이기종 로봇 등록** | 서로 다른 제조사의 로봇을 문서 근거와 함께 등록하고, 사람이 검토·승인한다 | 제조사도 형식도 다른 로봇을 어떻게 빠르고 믿을 수 있게 등록할 것인가? |
+| **5. 로봇 능력·작업 표현** | 능력·작업 요구·환경 조건을 공통 어휘로 표현하고 기존 표준과 맞춘다 | 로봇이 할 수 있는 일과 작업이 요구하는 조건을 어떻게 같은 말로 표현할 것인가? |
+| **6. 온톨로지 기반 시스템·로봇 연동** | 온톨로지로 수행 가능한 로봇을 찾고, 능력을 실제 명령에 묶고, 연동 설정을 자동으로 만든다 | 온톨로지를 이용해 새 로봇과 새 시스템을 손작업 없이 어떻게 연동할 것인가? |
+| **7. 온톨로지 검증·변경 관리** | 온톨로지가 빠짐없고 정확한지 검증하고, 문서·펌웨어가 바뀔 때 버전을 관리한다 | 온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지 어떻게 알 것인가? |
 
 [분류원문]
 
-**C. 연결·실행 기반** (원문 4장)
+**C. 채팅 기반 구성·운영** (원문 4장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **9. 로봇·제조사 관제 연동** | 제조사 API·SDK·표준 프로토콜을 연결하고 명령·상태·오류를 변환하는 어댑터 | 개별 로봇을 제어할까, 제조사 관제에 미션을 맡길까? |
-| **10. 설비·건물 시스템 연동** | 컨베이어, 자동창고, 작업대, PLC, 문, 승강기, 출입통제 시스템과 작업을 연계 | 컨베이어 준비와 로봇 도착을 어떻게 맞출까? |
-| **11. 분산 시스템·통신·컴퓨팅 구조** | 클라우드·현장 서버·로봇의 역할 분담, 네트워크 지연, 서비스 가용성, 데이터 전송 품질, 다거점 운영 | 인터넷이 끊겨도 현장에서 어디까지 계속 운영할 수 있을까? |
-| **12. 명령·작업 실행의 신뢰성** | 접수·실행·완료·취소 상태, 제어권, 중복 요청 방지, 시간 초과, 재시작 후 상태 복원 | 응답이 끊긴 운반 요청을 다시 보내면 같은 화물을 두 번 처리하지 않을까? |
+| **8. 채팅으로 맵 작성** | 대화로 층·구역·통로·문·승강기·충전 위치를 만들고 고친다 | 공간을 말로 설명하거나 도면을 올리는 것만으로 쓸 수 있는 지도를 만들 수 있는가? |
+| **9. 채팅으로 시나리오 구성** | 대화로 할 일·물품·사람·순서·기한·실패 처리 조건을 정한다 | 할 일·사람·순서·실패 처리를 대화로 빠짐없이 정하려면 무엇을 되물어야 하는가? |
+| **10. 채팅으로 로봇 구성** | 대화로 투입 로봇의 종류·대수·장비·위치·역할을 정하고 수행 가능 여부를 확인한다 | 어떤 로봇을 몇 대, 어디에, 어떤 역할로 둘지 대화로 정하고 가능 여부를 바로 알 수 있는가? |
+| **11. 채팅으로 실제 상황 시뮬레이션 재현** | 실제로 있었던 상황을 대화로 시뮬레이션에 재현하고, 재현이 실제와 얼마나 맞는지 보이며, 조건을 바꿔 비교한다 | 실제로 있었던 상황을 대화만으로 시뮬레이션에 재현하고, 조건을 바꿔 비교할 수 있는가? |
+| **12. 채팅으로 업무 지시·오케스트레이션** | 대화로 일을 지시하면 분해·배정·일정을 계획으로 제안하고, 승인 뒤 실행하며 진행 상황을 설명한다 | 대화로 받은 지시를 확인 가능한 계획으로 바꾸고, 승인 뒤 실행과 진행 설명까지 이어 갈 수 있는가? |
+| **13. 대화형 기능의 신뢰·기반** | 오해석 방지, 권한, 모델 연결, 입력 채널, 대화와 화면 편집의 연동, 평가처럼 대화 기능 전체를 믿고 쓰게 하는 기반 | 언어 모델의 해석이 틀려도 잘못된 실행으로 이어지지 않게 하려면 무엇을 갖춰야 하는가? |
 
 [분류원문]
 
-**D. 계획·최적화** (원문 5장)
+**D. 공간·지도 모델** (원문 5장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **13. 작업 배정 — MRTA** | 능력·위치·적재량·배터리·납기 등을 고려해 로봇 또는 로봇 팀에 작업을 배정 | 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? |
-| **14. 작업 순서·스케줄링** | 주문 묶음, 작업 선후관계, 시간 제약, 공정 간 동기화, 긴급 작업 삽입 | 피킹·운반·포장이 서로 기다리지 않게 어떤 순서로 실행할까? |
-| **15. 다중 로봇 경로·교통 관리 — MAPF** | 여러 로봇의 경로와 통과 시점을 조율하고, 혼잡·교착·우선권을 처리 | 서로 다른 제조사의 로봇이 좁은 통로에서 마주치면 누가 양보할까? |
-| **16. 공용 자원·충전·에너지 최적화** | 충전기·승강기·작업대·대기 공간·버퍼의 예약과 배분, 충전 시점과 에너지 사용 계획 | 로봇들이 동시에 충전하거나 승강기를 기다리는 상황을 어떻게 줄일까? |
+| **14. 도면·BIM에서 지도 만들기** | 평면도·BIM에서 공간과 시설을 인식해 지도 초안을 만들고 현장과 맞춘다 | 이미 있는 도면과 건물 모델에서 로봇이 쓸 지도를 얼마나 자동으로 만들 수 있는가? |
+| **15. 지도·공간·위치 모델** | 로봇마다 다른 지도·좌표·층을 하나의 공간 모델로 통합하고 위치 신뢰도를 관리한다 | 제조사마다 다른 지도·좌표·층을 어떻게 하나의 공간으로 맞출 것인가? |
+| **16. 장소 의미·지도 관리** | 장소에 이름·용도를 붙이고, 지도를 편집하고, 바뀔 때 버전을 관리한다 | 같은 장소를 모두가 같은 이름으로 부르고, 공간이 바뀌면 지도를 어떻게 따라 바꿀 것인가? |
 
 [분류원문]
 
-**E. 협업·현장 운영** (원문 6장)
+**E. 사물·사람·실시간 상태** (원문 6장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **17. 로봇 간 협업·물리적 인계** | 이동로봇–로봇팔 협업, 공동 운반, 작업 동기화, 인계 확인, 필요한 정보·인식 결과 공유 | AMR이 물건을 가져온 뒤 로봇팔이 안전하게 인수했음을 어떻게 확인할까? |
-| **18. 사람–로봇 협업·운영 인터페이스** | 작업자에게 일 배정, 승인·수동 전환, 원격 조작, 설명 가능한 상태 표시, 인체공학 | 사람이 피킹하고 로봇이 운반할 때 서로 기다리지 않게 하려면? |
-| **19. 모니터링·이상 탐지·원인 분석** | 로그·이벤트·성능 지표를 연결해 이상을 탐지하고, 로봇·설비·통신·공정 원인을 구분 | 지연 원인이 로봇 고장인지, 문인지, 앞 공정인지 어떻게 찾을까? |
-| **20. 예외 복구·재계획·업무 연속성** | 고장·통신 단절·화물 누락·긴급 주문 등에 대해 재배정, 우회, 수동 처리, 제한 운영을 결정 | 운반 중 고장 난 로봇의 화물과 남은 주문은 어떻게 처리할까? |
+| **17. 작업 대상·자산 식별과 인계 추적** | 물품·자산·도구 같은 작업 대상의 식별·위치·인계 책임을 추적하고, 사람에게 넘길 때 수령인을 확인한다 | 로봇이 도착했을 때 실제로 무엇이 누구에게 넘겨졌는지 어떻게 확인할 것인가? |
+| **18. 실시간 세계 상태·데이터 일관성** | 로봇·설비·공간·물품의 현재 상태를 통합하고, 관측의 신선도·신뢰도를 관리한다 | 조금 전에 받은 상태 정보를 지금의 판단에 믿고 써도 되는가? |
+| **19. 사람·보행자 모델** | 현장 사람의 위치·흐름·혼잡을 모델링해 계획과 안전에 쓴다 | 현장 사람의 위치와 흐름을 어떻게 알고 계획과 안전에 반영할 것인가? |
 
 [분류원문]
 
-**F. 도입·검증·유지관리** (원문 7장)
+**F. 연동** (원문 7장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **21. 온보딩·설정·현장 시운전** | 로봇 등록, 기능 탐색, 문서 분석, 지도·설비 설정, 교정, 설치 절차 자동화 | 새 제조사나 새 물류센터를 추가할 때 반복 작업을 얼마나 줄일까? |
-| **22. 시뮬레이션·예측용 디지털 트윈** | 로봇·설비·물동량을 가상 환경에서 재현하고, 배치·운영 정책·수요 변화의 효과를 예측 | 성수기 주문량이 늘면 어디가 먼저 막힐까? |
-| **23. 시험·형식 검증·벤치마크** | 시뮬레이션·실기체 시험, 장애 주입, 교착·제약 위반 검증, 회귀시험, 성능 비교 | 업데이트 후 정상 상황뿐 아니라 장애 상황도 여전히 처리되는가? |
-| **24. 자산·소프트웨어 수명주기 관리** | 고장 예측·정비, 배터리 열화, 펌웨어·어댑터·지도·모델 버전, 배포·복구, 장비 교체 | 제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? |
+| **20. 로봇·제조사 관제 연동** | 제조사 API·SDK·관제 시스템과 연결하는 어댑터, 공통 명령·관측 계약, 로봇과 주고받는 통신 방식 | 로봇을 하나씩 직접 움직일지, 제조사 관제에 맡길지, 어떤 방식으로 통신할지 어떻게 정할 것인가? |
+| **21. 상호운용 표준·적합성** | 로봇 상호운용 표준을 채택·변환하고 적합성을 시험한다 | 어떤 상호운용 표준을 따르고, 제조사가 그 표준을 지키는지 어떻게 확인할 것인가? |
+| **22. 설비·건물 시스템 연동** | 문·승강기·출입통제·컨베이어·PLC·고정 센서와 작업을 연계한다 | 문·승강기·설비의 준비와 로봇의 도착을 어떻게 맞출 것인가? |
+| **23. 업무 시스템 연동** | 업무 요청을 받아 작업으로 바꾸고, 진행·완료를 되돌려 반영한다 | 업무 시스템의 요청이 바뀌거나 취소되면 진행 중인 로봇 작업을 어떻게 바꿀 것인가? |
 
 [분류원문]
 
-**G. 안전·보안·지능·거버넌스** (원문 8장)
+**G. 계획·최적화** (원문 8장)
 
-| 세부 연구영역 | 무엇을 연구하는가 | SCM 관점의 질문 |
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
 |---|---|---|
-| **25. 안전·위험 관리** | 로봇·사람·설비 상호작용의 위험, 안전 조건, 정지·재개 절차, 비상 상황 대응, 안전 책임 경계 | 여러 장비는 각각 안전해도 함께 움직일 때 새로운 위험이 생기지 않는가? |
-| **26. 사이버보안·접근권한·개인정보** | 장비 인증, 통신 보호, 명령 권한, 원격 접속, 고객별 격리, 영상·작업자 데이터 보호 | 외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가? |
-| **27. AI·학습·적응과 모델 운영** | 문서·도면 해석, 수요·고장 예측, 학습 기반 계획, LLM 에이전트, 불확실성 평가, 모델 변경 관리 | AI가 만든 작업 계획이나 기능 해석을 어떤 기준으로 실행에 사용할까? |
-| **28. 표준·상호운용성·다사업자 거버넌스** | 공통 규격, 적합성 시험, 제조사 간 책임, 데이터 소유권, API 변경 정책, 서비스 수준과 감사 이력 | 제조사·ROP·설비업체 중 누가 연동 오류를 수정하고 변경을 승인할까? |
+| **24. 작업·워크플로 모델링** | 현장 업무를 단계·선후관계·완료 조건으로 정의하고, 계획과 실행이 따를 운영 정책을 정한다 | 현장 업무를 로봇이 실행할 수 있는 단계와 완료 조건으로 어떻게 나눌 것인가? |
+| **25. 작업 배정 — MRTA** | 작업을 로봇 또는 로봇 팀에 배정한다 | 가장 가까운 로봇에 맡기는 것이 전체적으로도 유리한가? |
+| **26. 작업 순서·스케줄링** | 순서·시간 제약·긴급 삽입을 다루고, 계속 들어오는 작업에 맞춰 다시 계획한다 | 일이 계속 새로 들어올 때 무엇을 먼저, 언제 할지 어떻게 정할 것인가? |
+| **27. 다중 로봇 경로·교통 관리 — MAPF** | 여러 로봇의 경로·통과 시점·우선권을 조율한다 | 서로 다른 제조사의 로봇이 좁은 통로에서 마주치면 누가 양보할까? |
+| **28. 공용 자원·충전·에너지 최적화** | 공용 자원을 예약·배분하고 충전·에너지를 계획한다 | 로봇들이 동시에 충전하거나 승강기를 기다리는 상황을 어떻게 줄일까? |
 
 [분류원문]
 
+**H. 실행·협업·예외 복구** (원문 9장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **29. 명령·작업 실행의 신뢰성** | 명령 상태 관리, 중복 실행 방지, 관측 근거 완료 판정 | 응답이 끊긴 명령을 다시 보내도 같은 일을 두 번 하지 않게 하려면? |
+| **30. 로봇 간 협업·물리적 인계** | 로봇 간 협업, 인계 확인, 조작 작업 관리 | 한 로봇이 가져온 물건을 다른 로봇이 확실히 받았음을 어떻게 확인할까? |
+| **31. 사람–로봇 협업** | 사람과의 작업 분담, 수동 개입·원격 조작, 주변 사람과의 소통 | 사람과 로봇이 같은 공간에서 서로 기다리거나 방해하지 않게 하려면? |
+| **32. 예외 복구·재계획·업무 연속성** | 고장·통신 단절·누락에 대한 복구와 제한 운영 | 작업 중 로봇이 고장 나면 남은 일은 누가 어떻게 이어받는가? |
+
+[분류원문]
+
+**I. 설계·시뮬레이션** (원문 10장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **33. 시나리오 모델·편집** | 시나리오 형식, 예제 라이브러리, 시나리오·워크플로 편집기 | 현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가? |
+| **34. 시뮬레이션·예측용 디지털 트윈** | 물리·센서·다중 로봇 시뮬레이션과 그 자산, 운영 정책·수요 변화 예측 | 현장을 바꾸기 전에 가상 환경에서 결과를 얼마나 믿을 만하게 미리 볼 수 있는가? |
+| **35. 처리능력·규모·배치 설계** | 필요한 로봇 수·배치·병목·여러 현장의 자원 배치를 설계하고, 로봇이 다니기 쉬운 공간을 만든다 | 로봇을 늘려야 할까, 공간이나 설비가 병목일까? |
+| **36. 가상 시운전·실제 상황 재현** | 설치 전 가상 시운전, 실행 전 계획 검증, 운영 기록 기반 재현, 시뮬레이션–현실 차이 관리 | 설치 전에 가상으로 시운전하고, 실제로 있었던 문제를 시뮬레이션에서 다시 볼 수 있는가? |
+
+[분류원문]
+
+**J. 현장 운영·관제** (원문 11장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **37. 관제 화면·실행 기록** | 지도 위 상태 표시, 설명 가능한 표시, 실행 기록 재생 | 운영자가 지금 무슨 일이 왜 일어나는지 한눈에 알 수 있는가? |
+| **38. 모니터링·이상 탐지·원인 분석** | 감시, 로봇 건강 상태 진단, 이상 탐지, 원인 분석, 알림 | 지연의 원인이 로봇인지, 설비인지, 통신인지, 앞 작업인지 어떻게 찾을까? |
+| **39. 운영 성과 측정·개선** | 지표 정의·측정, 로봇 성과와 업무 성과 구분, 운영 개선 | 로봇 가동률이 오른 것이 실제 업무 성과로 이어졌는가? |
+| **40. 운영 절차·요청 창구** | 운영 절차·교대, 현장 사용자의 요청 창구 | 현장 사람들이 로봇에게 일을 맡기고 운영자가 교대하는 절차가 정해져 있는가? |
+
+[분류원문]
+
+**K. 플랫폼 아키텍처·인프라** (원문 12장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **41. 플랫폼 아키텍처·외부 API** | 기준 아키텍처, 클라우드·현장 서버·로봇 역할 분담, 외부 API·SDK | 어떤 판단을 클라우드·현장 서버·로봇 가운데 어디에서 하고, 외부에 무엇을 열어 줄 것인가? |
+| **42. 분산 시스템·통신·컴퓨팅 구조** | 현장 네트워크, 연결이 끊겨도 계속 운영, 다현장 구조, 확장성 | 인터넷이 끊겨도 현장에서 어디까지 계속 운영할 수 있을까? |
+| **43. 데이터·관측성·배포** | 데이터 수집·보존, 플랫폼 관측성, 배포 자동화, 운영 비용 | 플랫폼 자체의 상태·데이터·배포·비용을 어떻게 관리할 것인가? |
+
+[분류원문]
+
+**L. AI·학습 기술** (원문 13장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **44. 로봇 기반 모델·언어 모델 계획** | 시각–언어–행동 모델 같은 로봇 기반 모델의 흐름과 언어 모델 기반 작업 계획 | 범용 로봇 모델과 언어 모델은 오케스트레이션의 무엇을 바꾸는가? |
+| **45. 문서·도면·장면 이해** | 매뉴얼·도면 해석과 플랫폼 수준의 장면 인식 | 매뉴얼·도면·현장 영상을 AI가 얼마나 정확히 읽어 낼 수 있는가? |
+| **46. 예측·학습 기반 최적화** | 학습 기반 배정·경로, 수요·고장 예측 | 학습과 예측이 배정·경로·정비 결정을 실제로 개선하는가? |
+| **47. AI·학습·적응과 모델 운영** | AI 결과를 실행에 쓰는 기준과 불확실성, 모델 운영 | AI가 만든 작업 계획이나 기능 해석을 어떤 기준으로 실행에 사용할까? |
+
+[분류원문]
+
+**M. 안전** (원문 14장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **48. 안전·위험 관리** | 위험성 평가, 안전 책임 경계, 정지·재개, 비상 대응 | 여러 장비는 각각 안전해도 함께 움직일 때 새로운 위험이 생기지 않는가? |
+| **49. 사람 근접 안전** | 사람과의 분리 거리·감속·양보, 구역별 속도·진입 제한 | 사람 가까이에서 로봇은 얼마나 떨어지고, 언제 느려지고 멈춰야 하는가? |
+| **50. 안전 표준·인증·사고 조사** | 안전 표준 적합성·인증, 사고 기록과 사후 조사 | 어떤 안전 표준과 인증을 따라야 하며, 사고가 나면 원인을 어떻게 밝힐 것인가? |
+
+[분류원문]
+
+**N. 보안·개인정보** (원문 15장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **51. 인증·권한·격리** | 장비·사용자 인증, 명령 권한, 원격 접속 계정, 고객·현장 격리 | 외부 유지보수 계정이 어느 로봇에 어떤 명령까지 내릴 수 있는가? |
+| **52. 통신 보호·위협 관리·감사** | 통신 보호, 위협 모델·취약점, 문서·대화 입력 보안, 감사 기록 | 통신·문서·대화를 통한 공격이 로봇 동작으로 이어지지 않게 하려면? |
+| **53. 개인정보·영상 데이터** | 영상·작업자·거주자 데이터 보호, 최소 수집·익명화 | 로봇이 찍은 영상과 사람의 위치 정보를 어디까지 모으고 어떻게 지킬 것인가? |
+
+[분류원문]
+
+**O. 검증·도입·수명주기** (원문 16장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **54. 시험·형식 검증·벤치마크** | 시험 설계·장애 주입·회귀 시험·형식 검증·벤치마크·재현 실험 | 업데이트 후 정상 상황뿐 아니라 장애 상황도 여전히 처리되는가? |
+| **55. 현장 조사·설치·시운전** | 현장 조사, 설치·설정, 교정, 시운전, 인수 시험 | 새 현장에 설치하고 시운전할 때 반복 작업을 얼마나 줄일 수 있는가? |
+| **56. 운영 이관·확대·교육** | 운영 이관·지원, 단계적 확대, 교육·변화 관리 | 시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가? |
+| **57. 자산·소프트웨어 수명주기 관리** | 정비·고장 예측, 버전 관리, 장비 교체, 폐기 | 제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? |
+
+[분류원문]
+
+**P. 거버넌스·법규·사회** (원문 17장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **58. 다사업자 책임·계약·데이터** | 책임과 변경 승인, 데이터 소유권, API 변경 정책, 서비스 수준·감사 이력 | 제조사·플랫폼·설비업체 중 누가 연동 오류를 고치고 변경을 승인할까? |
+| **59. 법·규제·보험·라이선스** | 법·규제 대응, 보험·사고 책임, 오픈소스·라이선스 | 이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가? |
+| **60. 노동·수용성·접근성** | 노동 영향·사회적 수용성, 고령자·장애인·어린이 접근성 | 로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가? |
+
+[분류원문]
+
+**Q. 현장 유형별 적용** (원문 18장)
+
+| 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 |
+|---|---|---|
+| **61. 물류창고** | 입고~반품 흐름의 로봇 작업. 기존 흐름 매트릭스와 영역 페이지의 물류 시나리오를 사례로 모은다 | 물류창고의 입고부터 반품까지 흐름에서 로봇 작업은 어디에 어떻게 들어가는가? |
+| **62. 제조 공장** | 라인 공급, 공정 간 운반, 여러 로봇이 함께 하는 공정 작업 | 여러 로봇이 함께 하는 공장 작업을 생산 관리와 어떻게 맞출 것인가? |
+| **63. 병원·의료** | 검체·약품·식사·린넨 이송, 감염 관리, 환자 정보 | 감염 관리와 환자 정보 보호 조건에서 병원 이송을 어떻게 운영할 것인가? |
+| **64. 상업 시설** | 호텔 객실 배송, 식당 서빙, 매장·쇼핑몰 안내·청소 | 손님이 있는 영업 시간에 호텔·식당·매장의 로봇을 어떻게 운영할 것인가? |
+| **65. 가정·공동주택** | 집안일 보조, 공동주택 배송, 사생활 | 가정과 공동주택에서 사생활을 지키며 집안일과 배송을 어떻게 맡길 것인가? |
+| **66. 실외** | 실외 배송·순찰·캠퍼스, 보도 주행 규정, 날씨 | 보도와 날씨 조건에서 실외 로봇을 어떻게 운영할 것인가? |
+| **67. 기타 현장** | 점검·순찰(플랜트·데이터센터·빌딩), 건설, 농업, 공공시설, 오피스, 연구실 | 점검·건설·농업·공공시설 같은 다른 현장은 무엇이 다른가? |
+
+[분류원문]
 
 ---
 
 ## 부록 C. 템플릿 섹션 제목 정본 (2차 검증 항목 4의 기준)
 
-H2 제목 문자열이 아래와 문구·순서·개수까지 같아야 한다. ### 소제목은 자유다. 세부영역·대분류의 문자열은 퍼블리셔 검사 `pipeline/checks/protect_source.py` 의 `AREA_SECTIONS`·`CATEGORY_SECTIONS`, 시드 페이지(세부영역 28·대분류 7), `templates/README.md` 의 "섹션 제목 정본", `agents/storyteller.md` 부록 B 와 글자 단위로 같다 — 세부영역은 사양서 5.4 의 괄호 설명까지 제목에 포함하고, 대분류는 사양서 4.3 처럼 번호가 없다. 괄호를 뺀 제목이나 번호를 붙인 대분류 제목은 퍼블리셔가 반려하므로 `수정 후 재검증`(제목 문구만 다름) 또는 `불통과`(절 누락·순서 변경) 사유다. 기존 페이지를 갱신한 산출물에서는 입력으로 받은 그 페이지의 H2 가 1순위 기준이며, 정본 뒤에 이미 있던 추가 절(구축자가 둔 부록 절)은 유지된 것으로 보고 개수 초과로 지적하지 않는다. 현재 시드 페이지(세부영역 28·대분류 7·트랙 개요·트랙 단계 7·온톨로지 초안)의 H2 는 아래 정본과 글자 단위로 같다.
+H2 제목 문자열이 아래와 문구·순서·개수까지 같아야 한다. ### 소제목은 자유다. 세부영역·대분류의 문자열은 퍼블리셔 검사 `pipeline/checks/protect_source.py` 의 `AREA_SECTIONS`·`CATEGORY_SECTIONS`, 시드 페이지(세부영역 67·대분류 17), `templates/README.md` 의 "섹션 제목 정본", `agents/storyteller.md` 부록 B 와 글자 단위로 같다 — 세부영역은 사양서 5.4 의 괄호 설명까지 제목에 포함하고, 대분류는 사양서 4.3 처럼 번호가 없다. 괄호를 뺀 제목이나 번호를 붙인 대분류 제목은 퍼블리셔가 반려하므로 `수정 후 재검증`(제목 문구만 다름) 또는 `불통과`(절 누락·순서 변경) 사유다. 기존 페이지를 갱신한 산출물에서는 입력으로 받은 그 페이지의 H2 가 1순위 기준이며, 정본 뒤에 이미 있던 추가 절(구축자가 둔 부록 절)은 유지된 것으로 보고 개수 초과로 지적하지 않는다. 현재 시드 페이지(세부영역 67·대분류 17·트랙 개요·트랙 단계·온톨로지 초안)의 H2 는 아래 정본과 글자 단위로 같다.
 
 해석 규칙 [가정 — 완료 보고의 사용자 결정 항목, templates/README.md "섹션 제목 정본"·storyteller.md 부록 B 와 같다]: 세부영역·대분류는 퍼블리셔 검사 문자열 그대로(세부영역은 5.4 의 괄호 설명 포함). 주제·트랙 개요·트랙 단계·온톨로지 초안은 5.4 의 제목 본문을 그대로 쓰고 괄호·줄표(—) 뒤 설명구만 뺀다. 제목 본문의 "표"는 설명구가 아니므로 남는다(`5. 단계 진행 현황 표`, `2. 개념 목록 표`, `3. 관계 목록 표`). "표"를 뺀 제목은 `수정 후 재검증` 사유다.
 
-- **area**(세부 연구영역, 13개): `1. 한 줄 정의` `2. SCM 관점의 질문` `3. 왜 중요한가` `4. 핵심 개념과 용어` `5. 현장 시나리오 (물류 흐름의 어느 단계인지 명시)` `6. 대표 접근법과 기술` `7. 관련 표준·프레임워크·오픈소스` `8. 대표 연구와 자료` `9. ROP가 직접 맡는 것과 외부와 연계하는 것 (부록 A 9장 기준)` `10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)` `11. 열린 질문` `12. 최근 업데이트 (자동)`(auto: area-recent) `13. 참고 자료 (각주)`
-- **topic**(주제, 10개): `1. 세 줄 요약` `2. 배경` `3. 본문` `4. 현장 시나리오` `5. ROP 관점의 시사점` `6. 연결되는 연구영역` `7. 열린 질문` `8. 출처` `9. 검증 노트` `10. 이력` — 사양서 5.4 의 "2. 배경 — 어느 연구영역의 어떤 질문에서 출발했는가", "9. 검증 노트 — 판정, 확인·미확인 건수, …" 에서 대시 뒤 문구는 설명으로 보고 제목에서 뺐다(세부영역의 괄호 설명은 제목에 포함한 것과 해석이 다르다) [가정: templates/topic.md 및 storyteller.md 부록 B 와 동일]
-- **category**(대분류, 7개 — 번호 없음): `핵심 질문` `개요` `세부 연구영역`(auto: category-area-table 마커 안의 표는 퍼블리셔가 "현재 상태" 열까지 다시 쓰므로 스토리텔러가 손대지 않았는지 본다) `이 대분류의 핵심 포인트` `다른 대분류와의 연결` `최근 업데이트`(auto: category-recent) `참고 자료`(번호 없음, 각주 정의. 사양서 4.3 여섯 절 밖의 구축자 추가 절이며 퍼블리셔 검사가 여섯 절 뒤의 선택 절로 허용한다 [가정])
+- **area**(세부 연구영역, 13개): `1. 한 줄 정의` `2. 핵심 질문` `3. 왜 중요한가` `4. 핵심 개념과 용어` `5. 적용 사례 (현장 유형 명시)` `6. 대표 접근법과 기술` `7. 관련 표준·프레임워크·오픈소스` `8. 대표 연구와 자료` `9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)` `10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)` `11. 열린 질문` `12. 최근 업데이트 (자동)`(auto: area-recent) `13. 참고 자료 (각주)`
+- **topic**(주제, 10개): `1. 세 줄 요약` `2. 배경` `3. 본문` `4. 현장 시나리오`(제목은 고정 문자열. 내용은 현장 유형을 명시한 적용 사례) `5. ROP 관점의 시사점` `6. 연결되는 연구영역` `7. 열린 질문` `8. 출처` `9. 검증 노트` `10. 이력` — 사양서 5.4 의 "2. 배경 — 어느 연구영역의 어떤 질문에서 출발했는가", "9. 검증 노트 — 판정, 확인·미확인 건수, …" 에서 대시 뒤 문구는 설명으로 보고 제목에서 뺐다(세부영역의 괄호 설명은 제목에 포함한 것과 해석이 다르다) [가정: templates/topic.md 및 storyteller.md 부록 B 와 동일]
+- **category**(대분류 페이지의 절, 6개 + 참고 자료 — 번호 없음): `핵심 질문` `개요` `세부 연구영역`(auto: category-area-table 마커 안의 표는 퍼블리셔가 "현재 상태" 열까지 다시 쓰므로 스토리텔러가 손대지 않았는지 본다) `이 대분류의 핵심 포인트` `다른 대분류와의 연결` `최근 업데이트`(auto: category-recent) `참고 자료`(번호 없음, 각주 정의. 사양서 4.3 여섯 절 밖의 구축자 추가 절이며 퍼블리셔 검사가 여섯 절 뒤의 선택 절로 허용한다 [가정])
 - **track-overview**(트랙 개요, 8개): `1. 컨셉` `2. 연구 목표` `3. 가설과 판정 상태` `4. 관련 세부영역` `5. 단계 진행 현황 표`(auto: track-progress) `6. 살아있는 산출물 링크` `7. 최근 실행`(auto: track-recent-runs) `8. 참고 자료`(현재 시드 `docs/tracks/manual-capability-ontology/index.md` 의 H2 는 이 여덟 절과 글자 단위로 같다. 갱신 대상에 8절 뒤 부록 절이 있으면 위 규칙대로 유지된 것으로 본다 [가정])
 - **track-stage**(트랙 단계, 9개): `1. 이 단계에서 밝힐 것` `2. 질문 목록`(| id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |, 상태: 답함 / 열림 / `보류(사유: …; 재개 조건: …)`) `3. 조사 결과` `4. 결론과 남은 불확실성` `5. 이 단계가 낳은 후속 질문` `6. 완료 조건 충족 현황`(표 아래 "다음 단계로 전환: 예 | 아니오(…)" 한 줄) `7. 관련 세부영역` `8. 출처` `9. 이력`
 - **ontology-draft**(온톨로지 초안, 7개. H1 은 `<title> (v<버전>)`, 첫 트랙은 `능력 온톨로지 초안 (v<버전>)`): `1. 목적과 범위` `2. 개념 목록 표`(상태 열: 초안 / 제안 / 확정 / 폐기(이유 병기) — 4절 항목 14) `3. 관계 목록 표` `4. 다이어그램` `5. 적용 예시` `6. 미해결 모델링 질문` `7. 버전 이력`(auto: ontology-version-history. 각주 정의는 마커 아래 페이지 끝)
@@ -476,14 +625,14 @@ H2 제목 문자열이 아래와 문구·순서·개수까지 같아야 한다. 
   - experiments `experiments.md`(번호 없음): `실험 규칙(8.2)` `계획 제안 형식` `사용자 결과 입력 형식` `제안된 실험 계획` `사용자 실험 결과 요약`
 - **주간 정리**(`docs/logs/weekly/YYYY-Www.md`, type: log, 템플릿 없음): storyteller.md 6절의 7개 절 `1. 이번 주 다룬 영역` `2. 새로 확인된 사실` `3. 강등·폐기된 주장` `4. 열린 질문 변동` `5. 다음 주 후보` `6. 링크·출처 유효성 점검` `7. 용어집 정리`(1~5절은 사양서 6.3 절차 8 의 다섯 항목과 그 순서, 6·7절은 사양서 7.1 주간 정리 항목의 부록 절) [가정]
 - **페이지 머리**(모든 페이지): 본문 첫 줄은 이동 경로(`[홈](…) › …`) — 갱신 페이지는 입력 페이지의 줄 그대로, 새 페이지는 storyteller.md 4.2 의 형식(트랙 하위 페이지는 시드 단계 페이지와 같은 `[홈](../../index.md) › 중점 연구 트랙 › [매뉴얼 기반 로봇 기능 온톨로지](index.md) › …`. 시드 가운데 온톨로지 초안·실험·백로그·로그는 "중점 연구 트랙" 항목이 없는 형식이며 갱신 시 그대로 유지한다 [가정: 시드 통일은 트랙 페이지 담당에게 요청한다]) —, 그다음 H1 제목(프런트매터 `title` 과 같은 문자열). H1 아래는 유형별로 다음과 같다(templates/ 와 시드의 문자열, storyteller.md 4.2 와 같다).
-  - 세부영역: 시드의 세 줄 admonition 블록이 입력 시드와 줄바꿈까지 글자 단위로 그대로 있고(11절 항목 3 의 대조 대상), 그 아래 스토리텔러가 영역 심화에서 새로 넣은 상태 줄 `> 상태: <status> · 신뢰도: <confidence> · 갱신일: <updated> · 마지막 실행: <last_run>`(4항목)이 프런트매터와 같은 값인가. 블록 형식은 시드 28페이지·templates/area.md·storyteller.md 4.2 가 모두 같다:
+  - 세부영역: 시드의 세 줄 admonition 블록이 입력 시드와 줄바꿈까지 글자 단위로 그대로 있고(11절 항목 3 의 대조 대상), 그 아래 스토리텔러가 영역 심화에서 새로 넣은 상태 줄 `> 상태: <status> · 신뢰도: <confidence> · 갱신일: <updated> · 마지막 실행: <last_run>`(4항목)이 프런트매터와 같은 값인가. 블록 형식은 시드 67페이지·templates/area.md·storyteller.md 4.2 가 모두 같다:
     ```
     !!! info "소속 대분류"
-        [B. 공통 정보·환경 모델](index.md) — 핵심 질문:
-        로봇·물건·공간·상태를 어떻게 같은 의미로 이해할 것인가? [분류원문]
+        [B. 로봇 온톨로지](index.md) — 핵심 질문:
+        서로 다른 제조사의 로봇을 어떻게 등록하고, 할 수 있는 일을 같은 말로 표현해, 시스템과 쉽게 연결할 것인가? [분류원문]
     ```
     2·3줄을 한 줄로 합쳤거나 한 줄 `**소속 대분류:** …` 단락으로 바꿨으면 [분류원문] 훼손(`불통과`)이다.
-  - 주제: `**주 연구영역:** … · **관련 영역:** … · **실행:** <run_id>`(트랙이면 `· **트랙:** [매뉴얼 기반 로봇 기능 온톨로지](…) 단계 n`) 줄, 그 아래 `> 상태: <status> · 신뢰도: <confidence> · 갱신일: <updated>`(3항목, "마지막 실행" 없음).
+  - 주제: `**주 연구영역:** … · **관련 영역:** … · **실행:** <run_id>`(트랙이면 `· **트랙:** [<트랙 이름>](…) 단계 n`. 예: 매뉴얼 기반 로봇 기능 온톨로지, 채팅 기반 구성·운영, 건축 도면 자동 인식) 줄, 그 아래 `> 상태: <status> · 신뢰도: <confidence> · 갱신일: <updated>`(3항목, "마지막 실행" 없음).
   - 대분류: 머리 줄·상태 줄 없음.
   - 트랙 개요: `> 트랙 상태: <active | paused | done> · 현재 단계: 단계 n. <단계 이름> · 마지막 트랙 실행: <date>`.
   - 트랙 단계: `> 단계 상태: <대기 | 진행 중 | 완료 | 재개> · 열린 질문: n건 · 답한 질문: n건 · 완료 조건: <충족 | 미충족> · 마지막 실행: <date>`(숫자가 2절·5절·6절 표와 맞는가. 완료 조건 값은 트랙 개요 5절 자동 표와 같은 두 값뿐이며 "부분 충족" 같은 다른 값은 수정 지시 대상이다).

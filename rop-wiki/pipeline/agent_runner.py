@@ -526,7 +526,7 @@ def _related_area_nos(target: dict, track_cfg: dict | None) -> list[int]:
             pass
     seen: list[int] = []
     for n in out:
-        if n != no and n not in seen and 1 <= n <= 28:
+        if n != no and n not in seen and 1 <= n <= max(paths.AREA_NOS):
             seen.append(n)
     return seen
 

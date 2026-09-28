@@ -4,7 +4,7 @@ type: glossary
 term_ko: 위치 체크 디지트
 term_en: Location Check Digit
 definition: 보관 위치 라벨에 붙은 짧은 확인용 숫자로, 작업자가 이를 말하거나 입력해 올바른 위치에 있음을 시스템에 확인시키는 데 쓰인다. GS1 식별 키(SSCC·GTIN 등)의 끝자리 검증 숫자(체크 디지트)와는 다른 뜻이다.
-related_areas: [18]
+related_areas: [31]
 tags: []
 status: published
 confidence: low
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [18. 사람–로봇 협업·운영 인터페이스](../categories/e-collaboration-and-field-operations/18-human-robot-collaboration-and-operator-interface.md)
+- [31. 사람–로봇 협업](../categories/execution-collaboration-and-recovery/human-robot-collaboration.md)
 
 ## 출처
 

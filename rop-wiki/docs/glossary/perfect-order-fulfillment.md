@@ -4,7 +4,7 @@ type: glossary
 term_ko: 완전 주문 이행률
 term_en: Perfect Order Fulfillment
 definition: 완전 주문 수를 전체 주문 수로 나눈 비율로, 주문의 모든 품목 줄이 완전해야 완전 주문으로 보는 SCOR의 신뢰성 대표 지표(RL.1.1)이다.
-related_areas: [4, 1]
+related_areas: [23, 39]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ version: 1
 
 ## 관련 영역
 
-- [4. 성과·경제성·프로세스 개선](../categories/a-business-supply-chain-design/04-performance-economics-and-process-improvement.md)
-- [1. 주문·업무 시스템 연계](../categories/a-business-supply-chain-design/01-order-and-business-system-integration.md)
+- [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md)
+- [23. 업무 시스템 연동](../categories/integration/business-system-integration.md)
 
 ## 출처
 

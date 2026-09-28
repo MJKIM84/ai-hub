@@ -4,7 +4,7 @@ type: glossary
 term_ko: JSON 스키마
 term_en: JSON Schema
 definition: JSON 데이터의 자료형·허용 값·필수 속성·수치 범위 같은 구조 제약을 기술하고 인스턴스가 이를 따르는지 검증하는 명세다.
-related_areas: [27, 12]
+related_areas: [29, 47]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ JSON 데이터의 자료형·허용 값·필수 속성·수치 범위 같은 구
 
 ## 관련 영역
 
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
 
 ## 출처
 

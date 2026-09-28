@@ -37,7 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from lib import frontmatter as fm  # noqa: E402
 from lib import paths, runs  # noqa: E402
-from lib.render import load_backlog, load_flow_matrix, load_open_questions  # noqa: E402
+from lib.render import load_backlog, load_open_questions, load_site_matrix  # noqa: E402
 from lib.source import load_source  # noqa: E402
 
 DEFAULT_PRECEDENCE = ["track_day", "monthly_recheck", "weekly_review", "priority", "cycle1", "category_link", "cycle2"]
@@ -289,7 +289,7 @@ def pick_priority(priority: dict, rotation: dict, history: list[dict], day: str,
     cands = []
     for i, a in enumerate(priority.get("areas", [])):
         no = a.get("area_no")
-        if not str(no).isdigit() or not 1 <= int(no) <= 28:
+        if not str(no).isdigit() or not 1 <= int(no) <= max(paths.AREA_NOS):
             continue
         no = int(no)
         if no not in lifted and any(h.get("area_no") == no for h in recent):
@@ -298,14 +298,14 @@ def pick_priority(priority: dict, rotation: dict, history: list[dict], day: str,
                                                          "lifted": no in lifted}))
     for i, t in enumerate(priority.get("topics", [])):
         no = t.get("area_no")
-        if not str(no).isdigit() or not 1 <= int(no) <= 28 or not t.get("title"):
+        if not str(no).isdigit() or not 1 <= int(no) <= max(paths.AREA_NOS) or not t.get("title"):
             continue
         if any(h.get("topic") == t.get("title") for h in recent):
             continue
         cands.append((float(t.get("weight") or 0), 1, i, {"kind": "topics", "area_no": int(no), "title": t.get("title"), "weight": t.get("weight")}))
     for i, q in enumerate(priority.get("questions", [])):
         no = q.get("area_no")
-        if not str(no).isdigit() or not 1 <= int(no) <= 28 or not q.get("question"):
+        if not str(no).isdigit() or not 1 <= int(no) <= max(paths.AREA_NOS) or not q.get("question"):
             continue
         if any(q.get("question") in (h.get("priority_questions") or []) for h in recent):
             continue
@@ -344,8 +344,8 @@ def cycle2_scores(statuses: dict[int, dict], rotation: dict, priority: dict, his
     pen = float(sc.get("recent_penalty") or 5)
     qw = float((rotation.get("priority") or {}).get("question_weight") or 3)
     oq = load_open_questions()
-    fmx = load_flow_matrix()
-    total_cells = len(fmx["steps"]) * len(fmx["items"])
+    smx = load_site_matrix()
+    total_cells = len(smx["sites"])   # 이 영역에 적용 사례가 없는 현장 유형 수를 빈 칸으로 센다
     recent_areas = {h.get("area_no") for h in history
                     if h.get("run_type") != "track" and covered(h) and _within_days(h["date"], day, pen_days)}   # 보류·중단 실행은 감점하지 않는다
     out = []
@@ -359,7 +359,9 @@ def cycle2_scores(statuses: dict[int, dict], rotation: dict, priority: dict, his
             days = 0
         n_oq = sum(1 for q in oq if q.get("status") in OPEN_STATES and no in [int(x) for x in (q.get("areas") or []) if str(x).isdigit()])
         mine = paths.area_repo_path(no)
-        filled = sum(1 for v in fmx["cells"].values() if any(str(e.get("link", "")).split("#")[0] == mine for e in (v or [])))
+        filled = sum(1 for site in smx["sites"]
+                     if any(str(e.get("link", "")).split("#")[0] == mine
+                            for k, v in smx["cells"].items() if k.split("|")[0] == site for e in (v or [])))
         empty = total_cells - filled
         pw = sum(float(a.get("weight") or 0) for a in priority.get("areas", []) if a.get("area_no") == no)
         pw += sum(float(t.get("weight") or 0) for t in priority.get("topics", []) if t.get("area_no") == no)
@@ -591,7 +593,7 @@ def main(argv=None) -> int:
     ap.add_argument("--date", help="실행 날짜 YYYY-MM-DD (기본: settings.timezone 의 오늘 또는 ROP_TODAY)")
     ap.add_argument("--run-id", help="실행 id(기본: <date>-<NN> 자동 부여)")
     ap.add_argument("--run-type", choices=runs.RUN_TYPES)
-    ap.add_argument("--area", type=int, help="세부영역 번호 1~28")
+    ap.add_argument("--area", type=int, help="세부영역 번호 1~67")
     ap.add_argument("--track", help="트랙 slug")
     ap.add_argument("--stage", type=int, help="트랙 단계")
     ap.add_argument("--question-ids", help="쉼표로 구분한 백로그 질문 id (예 q1-01,q1-02)")
@@ -610,7 +612,7 @@ def main(argv=None) -> int:
     if not runs.DATE_RE.match(day):
         print(f"[select_target] 날짜 형식 오류: {day}")
         return 2
-    if args.area is not None and not 1 <= args.area <= 28:
+    if args.area is not None and not 1 <= args.area <= max(paths.AREA_NOS):
         print(f"[select_target] 세부영역 번호 범위 밖: {args.area}")
         return 2
     run_id = args.run_id or runs.new_run_id(day, settings)

@@ -4,7 +4,7 @@ type: glossary
 term_ko: 오픈 RMF
 term_en: Open-RMF (Open Robotics Middleware Framework)
 definition: Open-RMF 주행 그래프에서 한 번에 로봇 한 대만 점유할 수 있도록 묶은 경유점·차선의 집합이다.
-related_areas: [6, 9, 10, 13, 15, 16]
+related_areas: [15, 20, 22, 25, 27, 28]
 tags: [오픈소스, ROS 2, 다중 로봇, 설비 연동]
 status: published
 created: 2026-09-24
@@ -34,10 +34,10 @@ rmf_traffic 그래프 정의에서 경유점과 차선이 상호 배제 그룹�
 
 ## 관련 영역
 
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 제조사 API(Application Programming Interface)를 공통 인터페이스로 변환하는 플릿 어댑터 구조의 참조 사례다.
-- [10. 설비·건물 시스템 연동](../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md) — 문·승강기 같은 건물 설비를 로봇 작업과 함께 조율하는 인터페이스의 참조 사례다.
-- [15. 다중 로봇 경로·교통 관리 — MAPF](../categories/d-planning-and-optimization/15-multi-robot-path-and-traffic-management-mapf.md) — 이종 플릿 사이의 교통 조율을 다루는 구성 요소를 참조한다.
-- [13. 작업 배정 — MRTA](../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 작업 요청을 플릿에 배정하는 구성 요소를 참조한다.
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md) — 제조사 API(Application Programming Interface)를 공통 인터페이스로 변환하는 플릿 어댑터 구조의 참조 사례다.
+- [22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md) — 문·승강기 같은 건물 설비를 로봇 작업과 함께 조율하는 인터페이스의 참조 사례다.
+- [27. 다중 로봇 경로·교통 관리 — MAPF](../categories/planning-and-optimization/multi-robot-path-and-traffic-management-mapf.md) — 이종 플릿 사이의 교통 조율을 다루는 구성 요소를 참조한다.
+- [25. 작업 배정 — MRTA](../categories/planning-and-optimization/task-allocation-mrta.md) — 작업 요청을 플릿에 배정하는 구성 요소를 참조한다.
 
 관련 용어: [플릿 어댑터 (Fleet Adapter)](fleet-adapter.md), [다중 에이전트 경로 찾기 (MAPF)](mapf.md), [DDS 보안 규격 (DDS-Security)](dds-security.md)
 

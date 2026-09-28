@@ -4,7 +4,7 @@ type: glossary
 term_ko: 건물 정보 모델링
 term_en: Building Information Modeling (BIM)
 definition: 건물의 공간·요소·속성을 객체 단위의 디지털 모델로 만들고 설계·시공·운영 단계에서 공유하는 방식으로, IFC 가 그 개방형 교환 스키마다.
-related_areas: [6, 28]
+related_areas: [15, 21]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ IFC 4.3 은 ISO 16739-1:2024 로 국제표준화되었고, 공간(IfcSpace)을 �
 
 ## 관련 영역
 
-- [6. 지도·공간·위치 모델](../categories/b-common-information-and-environment-model/06-map-space-and-location-model.md)
-- [28. 표준·상호운용성·다사업자 거버넌스](../categories/g-safety-security-intelligence-and-governance/28-standards-interoperability-and-multi-vendor-governance.md)
+- [15. 지도·공간·위치 모델](../categories/space-and-map-model/map-space-and-location-model.md)
+- [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)
 
 ## 출처
 

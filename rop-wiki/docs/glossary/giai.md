@@ -4,7 +4,7 @@ type: glossary
 term_ko: 글로벌 개별 자산 식별자
 term_en: Global Individual Asset Identifier (GIAI)
 definition: 컨테이너·트럭·트레일러 같은 개별 자산을 식별하는 GS1 식별 키이다.
-related_areas: [7]
+related_areas: [17]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ version: 1
 
 ## 관련 영역
 
-- [7. 화물·재고·자산 식별과 추적](../categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md)
+- [17. 작업 대상·자산 식별과 인계 추적](../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)
 
 ## 출처
 

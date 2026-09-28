@@ -3,20 +3,20 @@
   "date": "2026-09-24",
   "run_type": "area_deep_dive",
   "target": {
-    "area_no": 7,
-    "area_name": "7. 화물·재고·자산 식별과 추적",
-    "category": "B. 공통 정보·환경 모델"
+    "area_no": 17,
+    "area_name": "17. 작업 대상·자산 식별과 인계 추적",
+    "category": "E. 사물·사람·실시간 상태"
   },
   "gaps": [
     "섹션 6 대표 접근법 비어 있음",
     "섹션 7 관련 표준·프레임워크·오픈소스 비어 있음"
   ],
   "research_questions": [
-    "로봇은 도착했는데 실제로 어떤 팔레트가 인계됐는가?",
-    "화물·자산의 인계 이벤트를 표현하는 표준은 무엇이며 어떤 이벤트 유형을 정의하는가?",
-    "로봇 위치 추적과 화물 위치·인계 책임 추적은 어떤 데이터로 구분되는가?",
-    "피킹 단계의 완료·인계를 확인하는 데 어떤 식별 수단(바코드, RFID)이 쓰이는가?",
-    "Open-RMF 는 화물 인계 확인을 어느 수준까지 다루는가?"
+    "로봇이 도착했을 때 실제로 무엇이 누구에게 넘겨졌는지 어떻게 확인할 것인가? [분류원문]",
+    "작업 대상·자산의 인계 이벤트를 표현하는 표준은 무엇이며 어떤 이벤트 유형을 정의하는가?",
+    "로봇 위치 추적과 작업 대상의 위치·인계 책임 추적은 어떤 데이터로 구분되는가?",
+    "물류창고의 피킹 단계나 병원 검체 이송에서 완료·인계를 확인하는 데 어떤 식별 수단(바코드, RFID, 수령인 인증)이 쓰이는가?",
+    "Open-RMF 는 작업 대상 인계 확인을 어느 수준까지 다루는가?"
   ],
   "findings": [
     {
@@ -30,13 +30,13 @@
       "confidence": "medium",
       "evidence_excerpt": "EPCIS and CBV Linked Data Model — 물리적 객체의 가시성 이벤트(what, when, where, why)를 표현한다.",
       "as_of": "2026-09-24",
-      "flow_step": "피킹",
+      "site_type": "물류창고",
       "flow_item": "완료·인계",
       "source_unopened": true
     },
     {
       "id": "f2",
-      "claim": "Open-RMF 는 Fleet Adapter 를 통해 로봇을 연결하지만, 화물 단위의 인계 이력은 별도 시스템이 다루어야 할 것으로 보인다.",
+      "claim": "Open-RMF 는 Fleet Adapter 를 통해 로봇을 연결하지만, 작업 대상 단위의 인계 이력은 별도 시스템이 다루어야 할 것으로 보인다.",
       "tag": "추정",
       "source_ids": [
         "ref-004"
@@ -45,7 +45,7 @@
       "confidence": "low",
       "evidence_excerpt": "RMF Core Overview — 작업·교통 조율과 Fleet Adapter 구조를 설명한다.",
       "as_of": "2026-09-24",
-      "flow_step": null,
+      "site_type": null,
       "flow_item": null,
       "source_unopened": true
     }
@@ -79,7 +79,7 @@
   "page_proposals": [
     {
       "action": "update",
-      "path": "docs/categories/b-common-information-and-environment-model/07-cargo-inventory-and-asset-identification-and-tracking.md",
+      "path": "docs/categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md",
       "sections": [
         "6",
         "7"
@@ -95,15 +95,15 @@
     }
   ],
   "open_questions_new": [
-    "Open-RMF 기반 현장에서 화물 인계 이벤트를 어느 계층이 기록해야 하는가?"
+    "Open-RMF 기반 현장에서 작업 대상 인계 이벤트를 어느 계층이 기록해야 하는가?"
   ],
   "open_questions_resolved": [],
   "self_check": {
     "source_count": 2,
     "cross_checked_count": 0,
     "unverified": [
-      "Open-RMF 문서의 화물 인계 범위(원문 미열람)",
-      "ref-003 발행일 미확인(부록 A 12장에 발행일 없음, 기준일은 확인일 2026-09-24)"
+      "Open-RMF 문서의 작업 대상 인계 범위(원문 미열람)",
+      "ref-003 발행일 미확인(분류 원문 22장에 발행일 없음, 기준일은 확인일 2026-09-24)"
     ],
     "scope_violations": [],
     "budget_used": {

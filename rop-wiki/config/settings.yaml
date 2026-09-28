@@ -8,7 +8,7 @@
 # ---------------------------------------------------------------------------------------------
 # 1. 빌드 사양서 0장 (값·주석 그대로)
 # ---------------------------------------------------------------------------------------------
-wiki_name: "ROP 연구 위키"                 # 표시 이름. 부제: SCM 관점의 로봇 오케스트레이션 플랫폼 연구
+wiki_name: "ROP 연구 위키"                 # 표시 이름. 부제: 로봇 오케스트레이션 플랫폼 기술 지형도(2026-09-28 분류 개정으로 사양서 0장의 부제 "SCM 관점의 …"를 바꿨다)
 repo_path: "./rop-wiki"                    # 저장소 경로
 storage: "markdown+git"                    # 기본값. Notion·Obsidian 등으로 바꿔도 4~7장의 구조와 규칙은 그대로 유지하고 저장 방식만 바꾼다
 site_generator: "mkdocs-material"          # 정적 사이트. 다른 도구를 쓰더라도 4.8의 내비게이션 순서를 그대로 재현한다
@@ -17,11 +17,11 @@ scheduler: "cron"                          # cron / n8n / GitHub Actions 중 택
 run_time: "06:00 Asia/Seoul"               # 매일 1회
 language: "ko"                             # 본문 한국어, 전문용어는 첫 등장 시 영문 병기
 checkpoints: true                          # true면 9장의 멈춤 지점 2곳에서 사용자 확인을 받는다
-tracks: ["manual-capability-ontology", "nl-task-chatbot", "floorplan-recognition"]     # 활성 중점 연구 트랙(8장, 운영 전환 2부에서 2개 추가). 정의는 config/tracks/<slug>.yaml
+tracks: ["manual-capability-ontology", "chat-based-configuration-and-operation", "floorplan-recognition"]     # 활성 중점 연구 트랙(8장, 운영 전환 2부에서 2개 추가). 정의는 config/tracks/<slug>.yaml. 2026-09-28: nl-task-chatbot(자연어 업무 지시 챗봇) → chat-based-configuration-and-operation(채팅 기반 구성·운영)
 track_runs_per_week: 3                     # 주 7회 실행 중 트랙에 배정하는 횟수(트랙 조사 비중). 7이면 트랙 단계가 끝날 때까지 트랙만 실행. 운영 전환 2-4: 트랙이 3개가 되어 2 → 3 (DECISIONS)
 track_weights:                             # 트랙 실행일에 어느 트랙을 고를지의 가중치(select_target.pick_track: 게시된 트랙 실행 수/가중치가 작은 트랙). 기본 1
   manual-capability-ontology: 1
-  nl-task-chatbot: 1
+  chat-based-configuration-and-operation: 1
   floorplan-recognition: 1
 daily_budget:
   new_topic_pages: 1                       # 하루 신규 주제 페이지 상한
@@ -66,4 +66,4 @@ area_body_char_limit: 4000                 # 세부영역 페이지 3~11절 본�
 web_fetch_probe_url: "https://ref.gs1.org/epcis/"   # 준비 단계(7.2의 1)의 페이지 열람 점검용 URL(참고문헌 ref-003 GS1 EPCIS). claude -p --tools WebFetch 로 한 번 연다. 열리지 않으면 web_tools_required 대로 중단한다(override 가 있으면 원문 미열람 모드로 진행)
 web_fetch_required: true                   # 페이지 열람(WebFetch) 점검이 실패했을 때 즉시 중단·로그할지. true(기본값): 0장 web_tools_required 와 7.3 "웹 도구 없음 → 즉시 중단·로그" 원문대로 중단한다(실행마다 --allow-no-fetch 또는 ROP_ALLOW_NO_FETCH=1 로 예외 허용). false: 설정으로 계속 허용하는 사용자 override — 중단하지 않고 원문 미열람 모드(web_fetch_available: false)로 진행하며 로그에 "페이지 열람 불가 — 원문 미열람 모드(사용자 override)"를 남긴다. 네트워크 정책으로 열람이 막힌 환경에서만 쓴다 [가정: override 수단 — 사양서는 예외를 정하지 않는다]
 runs_dir: "runs"                           # 실행 산출물 폴더(위키 루트 기준). runs/<DATE>-<NN>/ 와 보류 산출물 runs/parked/
-data_dir: "data"                           # 퍼블리셔가 페이지를 다시 쓸 때 원천으로 삼는 상태 데이터 폴더(위키 루트 기준). open_questions.json, changelog.json, flow_matrix.json, tracks/<slug>/backlog.json
+data_dir: "data"                           # 퍼블리셔가 페이지를 다시 쓸 때 원천으로 삼는 상태 데이터 폴더(위키 루트 기준). open_questions.json, changelog.json, site_matrix.json(2026-09-28 전 flow_matrix.json), tracks/<slug>/backlog.json

@@ -3,7 +3,7 @@ title: "모델·표준 비교표"
 type: track
 subtype: comparison
 track: manual-capability-ontology
-related_areas: [5, 9, 28]
+related_areas: [5, 20, 21]
 tags: [모델·표준 비교표, 능력 온톨로지, 산업 상호운용 규격, 단계 1 산출물]
 status: published
 confidence: medium

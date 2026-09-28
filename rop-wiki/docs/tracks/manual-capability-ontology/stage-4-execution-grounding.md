@@ -3,7 +3,7 @@ title: "단계 4. 온톨로지를 실행에 연결하는 방법 조사"
 type: track-stage
 track: manual-capability-ontology
 stage: 4
-related_areas: [9, 12, 13, 8, 5]
+related_areas: [5, 18, 20, 25, 29]
 tags: [능력→명령 매핑, 실행 인터페이스, 전제조건, 완료 확인, 실행 조건, 능력의 단위 크기]
 status: seed
 created: 2026-09-24
@@ -22,7 +22,7 @@ version: 2
 
 > 구조화된 능력을 실제 명령·조건·확인으로 잇는 방법. 부록 A 9·12번과 연결.
 
-위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 위 문장의 "부록 A"는 이 위키의 분류 원문을 뜻하며, 9·12번은 [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)과 [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)을 가리킨다. 시작 질문은 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md)(능력의 단위 크기와 배정)과 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)(실행 시점 판단)도 언급한다. 세부영역 이름 속 MRTA는 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA)이다. 조사 결과는 능력→명령 매핑 규칙 초안의 형태로 [능력 온톨로지 초안](ontology-draft.md)에 반영된다.
+위 문장은 트랙 정의의 "밝힐 것"을 그대로 옮긴 것이다(트랙 정의의 단계별 밝힐 것과 완료 조건은 [트랙 개요](index.md)의 단계 진행 현황에 정리되어 있다). 위 문장의 "부록 A"는 이 위키의 분류 원문을 뜻하며, 9·12번은 [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md)과 [29. 명령·작업 실행의 신뢰성](../../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)을 가리킨다. 시작 질문은 [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md)(능력의 단위 크기와 배정)과 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)(실행 시점 판단)도 언급한다. 세부영역 이름 속 MRTA는 다중 로봇 작업 배정(Multi-Robot Task Allocation, MRTA)이다. 조사 결과는 능력→명령 매핑 규칙 초안의 형태로 [능력 온톨로지 초안](ontology-draft.md)에 반영된다.
 
 ## 2. 질문 목록
 
@@ -43,7 +43,7 @@ version: 2
 
 q4-06은 실행 2026-09-25-02의 후속 질문(근거 f17)으로 백로그에 먼저 올라 있던 것을 이 표에 옮겼다. q4-07·q4-08은 확장 아이디어 1([아이디어 1. 로봇 기능 온톨로지](../../ideas/robot-capability-ontology.md)) 편입 때 사용자 요청으로 더한 질문이다(2026-09-25). q4-07은 요청 문구 그대로이고, q4-08은 새 연구 목표 4(작업 할당 질의)의 질문이다.
 
-표의 질문 문장은 트랙 정의 그대로 두었다. 다음은 구축자 보충이다. q4-03의 13번은 [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md), 12번은 [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)를 가리키고, q4-04의 8번은 [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md)을 가리킨다. 질문 문장 속 API는 응용 프로그램 인터페이스(Application Programming Interface, API)이다.
+표의 질문 문장은 트랙 정의 그대로 두었다. 다음은 구축자 보충이다. q4-03의 13번은 [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md), 12번은 [29. 명령·작업 실행의 신뢰성](../../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)를 가리키고, q4-04의 8번은 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)을 가리킨다. 질문 문장 속 API는 응용 프로그램 인터페이스(Application Programming Interface, API)이다.
 
 ## 3. 조사 결과
 
@@ -85,21 +85,21 @@ q4-06은 실행 2026-09-25-02의 후속 질문(근거 f17)으로 백로그에 �
 
 **트랙 정의가 명시한 연결**
 
-- [9. 로봇·제조사 관제 연동](../../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md) — 이 영역은 제조사별 인터페이스와 ROP 사이를 잇는 연동 어댑터를 다룬다(원문 정의는 그 영역 페이지의 1절에 있다). 추출된 능력을 그 명령·상태·오류로 잇는 q4-01, q4-02, q4-05가 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술"과 "7. 관련 표준·프레임워크·오픈소스" 절에 반영을 제안한다.
-- [12. 명령·작업 실행의 신뢰성](../../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md) — 이 영역이 다루는 작업 상태 관리, 시간 초과 처리, 재시작 뒤 상태 복구가 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 능력의 전제조건·완료 확인(q4-01)과 단위 크기(q4-03)가 여기에 닿는다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
+- [20. 로봇·제조사 관제 연동](../../categories/integration/robot-and-vendor-fleet-manager-integration.md) — 이 영역은 제조사별 인터페이스와 ROP 사이를 잇는 연동 어댑터를 다룬다(원문 정의는 그 영역 페이지의 1절에 있다). 추출된 능력을 그 명령·상태·오류로 잇는 q4-01, q4-02, q4-05가 여기에 닿는다. 확인된 사실은 "6. 대표 접근법과 기술"과 "7. 관련 표준·프레임워크·오픈소스" 절에 반영을 제안한다.
+- [29. 명령·작업 실행의 신뢰성](../../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) — 이 영역이 다루는 작업 상태 관리, 시간 초과 처리, 재시작 뒤 상태 복구가 이 단계와 닿는다(원문 정의는 그 영역 페이지의 1절에 있다). 능력의 전제조건·완료 확인(q4-01)과 단위 크기(q4-03)가 여기에 닿는다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
 
 **이 단계의 질문이 언급하는 영역(트랙 개요의 활용처 연결, 구축자 제안 [가정])**
 
-- [13. 작업 배정 — MRTA](../../categories/d-planning-and-optimization/13-task-allocation-mrta.md) — 능력의 단위 크기(원자 동작 vs 복합 작업)가 배정에 쓰이려면 어떻게 정해야 하는지(q4-03)가 이 영역과 이어진다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
-- [8. 실시간 세계 상태·데이터 일관성](../../categories/b-common-information-and-environment-model/08-real-time-world-state-and-data-consistency.md) — 실행 조건(배터리, 적재량, 환경, 안전 상태)을 온톨로지에서 실행 시점 판단으로 넘기는 방법(q4-04)이 이 영역과 이어진다. 이 영역은 현재 상태를 표현하는 쪽이며, 가정한 미래를 실험하는 22. 시뮬레이션·예측용 디지털 트윈과 구분한다.
+- [25. 작업 배정 — MRTA](../../categories/planning-and-optimization/task-allocation-mrta.md) — 능력의 단위 크기(원자 동작 vs 복합 작업)가 배정에 쓰이려면 어떻게 정해야 하는지(q4-03)가 이 영역과 이어진다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
+- [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) — 실행 조건(배터리, 적재량, 환경, 안전 상태)을 온톨로지에서 실행 시점 판단으로 넘기는 방법(q4-04)이 이 영역과 이어진다. 이 영역은 현재 상태를 표현하는 쪽이며, 가정한 미래를 실험하는 34. 시뮬레이션·예측용 디지털 트윈과 구분한다.
 
 **트랙 중심 영역**
 
-- [5. 로봇 능력·작업 온톨로지](../../categories/b-common-information-and-environment-model/05-robot-capability-and-task-ontology.md) — 매핑 규칙 초안이 반영되는 [능력 온톨로지 초안](ontology-draft.md)은 이 영역의 공통 모델이다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
+- [5. 로봇 능력·작업 표현](../../categories/robot-ontology/robot-capability-and-task-representation.md) — 매핑 규칙 초안이 반영되는 [능력 온톨로지 초안](ontology-draft.md)은 이 영역의 공통 모델이다. 확인된 사실은 "4. 핵심 개념과 용어" 절에 반영을 제안한다.
 
 ## 8. 출처
 
-아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 12장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
+아직 없음. 이 단계의 조사 결과가 생기면 각주 정의(`[^ref-NNN]: 기관, 제목, 발행일, URL, 접근일`)를 여기에 두고 프런트매터 `sources`와 맞춘다. 원문을 열지 못한 출처는 접근일 뒤에 "(원문 미열람)"을 붙인다. 참고문헌 id는 `ref-001`~`ref-010`이 분류 원문 22장의 1~10번에 대응하고, 새 출처는 `ref-011`부터 순서대로 매기고 [참고문헌](../../references/index.md)의 id와 같게 쓴다.
 
 ## 9. 이력
 

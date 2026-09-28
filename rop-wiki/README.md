@@ -1,16 +1,16 @@
 # ROP 연구 위키 (rop-wiki)
 
-SCM(Supply Chain Management, 공급망 관리) 관점의 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP) 연구 위키와, 그 위키를 매일 한 번 조사·검증·서술해 채우는 에이전트 파이프라인, 그리고 여러 세부영역을 가로지르는 중점 연구 트랙을 한 폴더에 담은 저장소다. 이 문서는 저장소 소개, 설치, 사이트 빌드, 수동 실행, 스케줄 등록·해제·확인, 검사, 사용자 개입 지점, 문제 해결, 커밋 방식을 다룬다. 실행 절차의 정본은 [`pipeline/RUN.md`](pipeline/RUN.md)이며, 이 문서의 실행·스케줄·문제 해결 절은 그 문서의 해당 절(2·4·5·6·7절)을 가리킨다.
+로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)을 구현하고 운영하는 데 관여하는 모든 일을 나열하고 카테고리로 묶어, 카테고리마다 연구·기사·업체 발표를 모으는 기술 지형도 위키와, 그 위키를 매일 한 번 조사·검증·서술해 채우는 에이전트 파이프라인, 그리고 여러 세부영역을 가로지르는 중점 연구 트랙을 한 폴더에 담은 저장소다. 이 문서는 저장소 소개, 설치, 사이트 빌드, 수동 실행, 스케줄 등록·해제·확인, 검사, 사용자 개입 지점, 문제 해결, 커밋 방식을 다룬다. 실행 절차의 정본은 [`pipeline/RUN.md`](pipeline/RUN.md)이며, 이 문서의 실행·스케줄·문제 해결 절은 그 문서의 해당 절(2·4·5·6·7절)을 가리킨다.
 
 모든 명령은 위키 루트 `rop-wiki/`(이 파일이 있는 폴더)에서 실행한다. 위키는 `ai-hub` git 저장소의 하위 폴더이며, 커밋은 그 저장소에 남는다(9절).
 
 ## 1. 저장소 소개
 
-**위키.** 7개 대분류·28개 세부 연구영역을 뼈대로 하는 연구 위키다. 뼈대의 정본은 분류 원문 `_source/ROP_SCM_연구분야_분류.md`이며, 대분류·세부영역의 명칭·번호·정의·질문은 위키 어디서도 바꾸지 않는다. 원문에서 옮긴 문장에는 `[분류원문]` 태그가 붙고, 퍼블리셔의 원문 보호 검사가 글자 단위로 대조한다. 페이지는 홈, 소개 7, 대분류 7(A. 업무·공급망 설계 ~ G. 안전·보안·지능·거버넌스), 세부영역 28(1. 주문·업무 시스템 연계 ~ 28. 표준·상호운용성·다사업자 거버넌스, 시드 상태로 시작), 중점 연구 트랙 15, 횡단 페이지(용어집, 참고문헌, 표준·프레임워크 목록, 열린 질문, 물류 흐름 매트릭스, 변경 이력, 운영 지표, 정정 요청 안내), 운영 로그로 구성되며 mkdocs-material 정적 사이트로 빌드한다. 본문의 모든 주장은 `[사실]`/`[추정]`/`[의견]` 태그와 각주(`[^ref-003]`)를 갖고, 트랙 가설은 `[가설]`, 사용자 실험은 `[사용자 실험]`으로 표시한다. 표기를 읽는 법은 `docs/about/reading-guide.md`에 있다.
+**위키.** 17개 대분류(A~Q)·67개 세부 연구영역을 뼈대로 하는 연구 위키다(2026-09-28 개정, 개정 전 7개 대분류·28개 영역 원문은 `_source/archive/ROP_SCM_연구분야_분류_2026-09-24.md`에 보관). 필수 대분류는 B. 로봇 온톨로지(이기종 로봇 등록·능력 표현·연동)와 C. 채팅 기반 구성·운영(채팅으로 맵 작성·시나리오 구성·로봇 구성·실제 상황 재현·업무 지시)이다. 뼈대의 정본은 분류 원문 `_source/ROP_연구분야_분류.md`이며, 대분류·세부영역의 명칭·번호·정의·질문은 위키 어디서도 바꾸지 않는다. 원문에서 옮긴 문장에는 `[분류원문]`(개정 전 원문은 `[옛 분류원문]`) 태그가 붙고, 퍼블리셔의 원문 보호 검사가 글자 단위로 대조한다. 페이지는 홈, 소개 7, 대분류 17(A. 기획·사업 ~ Q. 현장 유형별 적용), 세부영역 67(1. 기술·시장·업체 동향 ~ 67. 기타 현장, 새 영역은 시드 상태로 시작), 중점 연구 트랙 15, 횡단 페이지(용어집, 참고문헌, 표준·프레임워크 목록, 열린 질문, 현장 유형 매트릭스, 변경 이력, 운영 지표, 정정 요청 안내), 운영 로그로 구성되며 mkdocs-material 정적 사이트로 빌드한다. 본문의 모든 주장은 `[사실]`/`[추정]`/`[의견]` 태그와 각주(`[^ref-003]`)를 갖고, 트랙 가설은 `[가설]`, 사용자 실험은 `[사용자 실험]`으로 표시한다. 표기를 읽는 법은 `docs/about/reading-guide.md`에 있다.
 
-**파이프라인.** 매일 06:00(Asia/Seoul)에 `pipeline/run_daily.sh`가 리서치 에이전트 → 내용 검증 에이전트(1차) → 스토리텔러 에이전트 → 내용 검증 에이전트(2차) → 퍼블리셔 순으로 실행되어 그날의 연구영역(또는 트랙의 현재 단계)을 조사·검증·서술하고 위키에 반영한다. 세 에이전트는 `claude -p`(Claude Code CLI 헤드리스)로 실행되며, 프롬프트는 `agents/shared-rules.md` + `agents/<역할>.md` + 실행 컨텍스트 + 입력 파일 본문을 이어 붙인 텍스트 하나다. 에이전트는 파일을 직접 읽거나 쓰지 않고 `schemas/*.json`에 맞는 JSON 하나를 반환하며, 리서치·검증 에이전트는 WebSearch·WebFetch만, 스토리텔러는 도구 없이 실행된다. 퍼블리셔(`pipeline/publish.py`)는 LLM이 아닌 스크립트이며 스키마 검증 → 프런트매터 검증 → 원문 보호 검사 → 링크·각주 검사 → 반영 → 사이트 빌드 → 커밋 → 일일 로그 → 알림 순으로 실행하고, 하나라도 실패하면 반영하지 않는다. 검증을 통과하지 않은 산출물은 게시되지 않는다. 대상은 `config/rotation.yaml`이 정한다: 1주기는 1. 주문·업무 시스템 연계부터 28. 표준·상호운용성·다사업자 거버넌스까지 번호순 영역 심화, 2주기부터는 점수, 매 7번째 실행은 주간 정리, 매월 첫 실행은 월간 재검증, 주 2회(기본 화·금)는 트랙 실행이다. 독자용 설명은 `docs/about/agents.md`에 있다.
+**파이프라인.** 매일 06:00(Asia/Seoul)에 `pipeline/run_daily.sh`가 리서치 에이전트 → 내용 검증 에이전트(1차) → 스토리텔러 에이전트 → 내용 검증 에이전트(2차) → 퍼블리셔 순으로 실행되어 그날의 연구영역(또는 트랙의 현재 단계)을 조사·검증·서술하고 위키에 반영한다. 세 에이전트는 `claude -p`(Claude Code CLI 헤드리스)로 실행되며, 프롬프트는 `agents/shared-rules.md` + `agents/<역할>.md` + 실행 컨텍스트 + 입력 파일 본문을 이어 붙인 텍스트 하나다. 에이전트는 파일을 직접 읽거나 쓰지 않고 `schemas/*.json`에 맞는 JSON 하나를 반환하며, 리서치·검증 에이전트는 WebSearch·WebFetch만, 스토리텔러는 도구 없이 실행된다. 퍼블리셔(`pipeline/publish.py`)는 LLM이 아닌 스크립트이며 스키마 검증 → 프런트매터 검증 → 원문 보호 검사 → 링크·각주 검사 → 반영 → 사이트 빌드 → 커밋 → 일일 로그 → 알림 순으로 실행하고, 하나라도 실패하면 반영하지 않는다. 검증을 통과하지 않은 산출물은 게시되지 않는다. 대상은 `config/rotation.yaml`이 정한다: 1주기는 1번부터 67번까지 번호순 영역 심화, 2주기부터는 점수, 매 7번째 실행은 주간 정리, 매월 첫 실행은 월간 재검증, 주 2회(기본 화·금)는 트랙 실행이다. 독자용 설명은 `docs/about/agents.md`에 있다.
 
-**중점 연구 트랙.** 첫 트랙 "매뉴얼 기반 로봇 기능 온톨로지"(`manual-capability-ontology`)는 로봇 매뉴얼과 기술 설명서 같은 비정형 문서를 온톨로지로 구조화해 ROP에서 로봇 기능을 활용하는 방법을 7단계(단계 1. 기존 능력 표현 모델과 표준 조사 → 단계 2. 로봇 문서 유형과 정보 구조 조사 → 단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조사 → 단계 4. 온톨로지를 실행에 연결하는 방법 조사 → 단계 5. 완전성과 정확성을 검증하는 방법 조사 → 단계 6. 변경 관리·운영·거버넌스 조사 → 단계 7. ROP 활용 시나리오 종합과 가설 판정)로 조사한다. 단계 이름은 `config/tracks/manual-capability-ontology.yaml`의 `stage_names`(사양서 8.1의 단계 제목)와 같으며, 표시할 때는 번호와 이름을 함께 쓴다. 중심은 5. 로봇 능력·작업 온톨로지이고, 9. 로봇·제조사 관제 연동, 21. 온보딩·설정·현장 시운전, 23. 시험·형식 검증·벤치마크, 24. 자산·소프트웨어 수명주기 관리, 27. AI·학습·적응과 모델 운영을 함께 다루며, 활용처로 8. 실시간 세계 상태·데이터 일관성, 12. 명령·작업 실행의 신뢰성, 13. 작업 배정 — MRTA, 25. 안전·위험 관리, 28. 표준·상호운용성·다사업자 거버넌스에 연결한다. 트랙은 분류를 바꾸지 않는다. 정의는 `config/tracks/manual-capability-ontology.yaml`, 페이지는 `docs/tracks/manual-capability-ontology/`, 질문 백로그의 원천은 `data/tracks/manual-capability-ontology/backlog.json`(시드 질문 `q1-01`부터 31건)이다. 트랙 실행 1회는 현재 단계의 열린 질문 1~3개에 답하고, 후속 질문을 백로그에 올리고, 온톨로지 초안 변경 여부와 단계 완료 조건을 평가하고, 트랙 로그에 기록한다.
+**중점 연구 트랙.** 첫 트랙 "매뉴얼 기반 로봇 기능 온톨로지"(`manual-capability-ontology`)는 로봇 매뉴얼과 기술 설명서 같은 비정형 문서를 온톨로지로 구조화해 ROP에서 로봇 기능을 활용하는 방법을 7단계(단계 1. 기존 능력 표현 모델과 표준 조사 → 단계 2. 로봇 문서 유형과 정보 구조 조사 → 단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조사 → 단계 4. 온톨로지를 실행에 연결하는 방법 조사 → 단계 5. 완전성과 정확성을 검증하는 방법 조사 → 단계 6. 변경 관리·운영·거버넌스 조사 → 단계 7. ROP 활용 시나리오 종합과 가설 판정)로 조사한다. 단계 이름은 `config/tracks/manual-capability-ontology.yaml`의 `stage_names`(사양서 8.1의 단계 제목)와 같으며, 표시할 때는 번호와 이름을 함께 쓴다. 중심은 5. 로봇 능력·작업 표현이고(2026-09-28 개정 번호), 20. 로봇·제조사 관제 연동, 55. 현장 조사·설치·시운전, 54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리, 47. AI·학습·적응과 모델 운영을 함께 다루며, 활용처로 18. 실시간 세계 상태·데이터 일관성, 29. 명령·작업 실행의 신뢰성, 25. 작업 배정 — MRTA, 48. 안전·위험 관리, 21. 상호운용 표준·적합성에 연결한다. 트랙은 분류를 바꾸지 않는다. 정의는 `config/tracks/manual-capability-ontology.yaml`, 페이지는 `docs/tracks/manual-capability-ontology/`, 질문 백로그의 원천은 `data/tracks/manual-capability-ontology/backlog.json`(시드 질문 `q1-01`부터 31건)이다. 트랙 실행 1회는 현재 단계의 열린 질문 1~3개에 답하고, 후속 질문을 백로그에 올리고, 온톨로지 초안 변경 여부와 단계 완료 조건을 평가하고, 트랙 로그에 기록한다.
 
 ### 1.1 저장소 구조
 
@@ -22,21 +22,21 @@ ai-hub/                                   # git 저장소 루트 (Next.js 프로
    ├─ README.md                           # 이 문서
    ├─ requirements.txt                    # mkdocs-material, pyyaml, jsonschema
    ├─ mkdocs.yml                          # pipeline/lib/nav.py 가 생성한다. 내비게이션은 사양서 4.8 순서로 고정. 손으로 고치지 않는다
-   ├─ _source/ROP_SCM_연구분야_분류.md     # 분류 원문. 읽기 전용(pipeline/checks/source.sha256 로 변조를 검사한다)
+   ├─ _source/ROP_연구분야_분류.md        # 분류 원문. 읽기 전용(pipeline/checks/source.sha256 로 변조를 검사한다). 개정 전 원문은 _source/archive/
    ├─ docs/                               # 위키 페이지 (mkdocs docs_dir)
    │  ├─ index.md                         # 홈
    │  ├─ about/                           # 소개 7페이지 (what-is-rop, scope-boundary, research-method, idea-mapping, agents, reading-guide, how-to-contribute)
-   │  ├─ categories/<대분류 slug>/         # 대분류 index.md + 세부영역 NN-<slug>.md (폴더 7 · 파일 28)
+   │  ├─ categories/<대분류 slug>/         # 대분류 index.md + 세부영역 <slug>.md (폴더 17 · 파일 67)
    │  ├─ tracks/manual-capability-ontology/   # 트랙 개요, 단계 1~7, 온톨로지 초안, 모델·표준 비교표, 문서 유형 매트릭스, 평가 절차, 질문 백로그, 로그, 실험
    │  ├─ topics/                          # 주제 페이지 색인 + YYYY/YYYY-MM-DD-<slug>.md (2주기부터 생성)
    │  ├─ glossary/, references/, standards/   # 용어집(시드 13건), 참고문헌(ref-001 ~ ref-010), 표준·프레임워크 목록
-   │  ├─ flow-matrix.md, open-questions.md, changelog.md, metrics.md, corrections.md   # 횡단 페이지
+   │  ├─ site-matrix.md, open-questions.md, changelog.md, metrics.md, corrections.md   # 횡단 페이지
    │  └─ logs/                            # index.md + daily/YYYY-MM-DD.md, weekly/YYYY-Www.md (퍼블리셔가 생성)
    ├─ agents/                             # shared-rules.md, researcher.md, verifier.md, storyteller.md (파일 머리에 version)
    ├─ templates/                          # 페이지 템플릿 12종 + README.md
    ├─ schemas/                            # research/verification/pages .schema.json + examples/ + README.md
    ├─ config/                             # settings.yaml, rotation.yaml, priority.yaml, tracks/manual-capability-ontology.yaml, README.md
-   ├─ data/                               # 퍼블리셔가 자동 갱신 영역을 다시 쓸 때 원천으로 삼는 JSON (open_questions, changelog, flow_matrix, tracks/<slug>/{backlog,log,ontology_versions})
+   ├─ data/                               # 퍼블리셔가 자동 갱신 영역을 다시 쓸 때 원천으로 삼는 JSON (open_questions, changelog, site_matrix, redirects, area_items, area_lineage, tracks/<slug>/{backlog,log,ontology_versions})
    ├─ inbox/corrections.md                # 정정 요청함
    ├─ experiments/                        # 사용자 실험 결과 (README.md 에 폴더·서식 규칙)
    ├─ pipeline/
@@ -150,7 +150,7 @@ bash pipeline/run_daily.sh --help
 |---|---|
 | `--date YYYY-MM-DD` | 실행 날짜. 기본은 `settings.timezone`의 오늘. 환경변수 `ROP_TODAY`와 같다 |
 | `--run-type T` | 실행 유형을 지정한다. 값: `area_deep_dive`(영역 심화) · `topic`(주제 조사) · `update`(갱신) · `weekly_review`(주간 정리) · `monthly_recheck`(월간 재검증) · `track`(트랙 실행) |
-| `--area N` | 대상 세부영역 번호(1~28) |
+| `--area N` | 대상 세부영역 번호(1~67) |
 | `--track S` | 트랙 slug(예 `manual-capability-ontology`) |
 | `--stage N` | 트랙 단계(1~7) |
 | `--question-ids a,b` | 이번에 다룰 백로그 질문 id(쉼표 구분. 사양서 8.2의 1~3개 규칙은 자동 선택에만 적용되며 지정한 id의 개수는 검사하지 않으므로 3개 이하로 준다) |
@@ -275,7 +275,7 @@ python3 pipeline/scaffold.py --apply-url-check     # 열림이 확인된 참고�
 | 검사 | 스크립트 | 무엇을 보는가 |
 |---|---|---|
 | 프런트매터 | `pipeline/checks/check_frontmatter.py` | 모든 `docs/**/*.md`의 필수 필드(`title, type, status, created, updated, version` + 유형별 필수), 허용 값, 날짜 형식, 본문 첫 줄이 이동 경로(`홈 › …`)인지 |
-| 원문 보호 | `pipeline/checks/protect_source.py` | 세부영역 28·대분류 7·홈·소개 페이지의 `[분류원문]` 문장과 명칭·번호·정의·질문을 `_source/` 원문과 글자 단위로 대조, `mkdocs.yml` 내비게이션이 4.8 순서와 같은지, 원문 파일의 해시(`source.sha256`) |
+| 원문 보호 | `pipeline/checks/protect_source.py` | 세부영역 67·대분류 17·홈·소개 페이지의 `[분류원문]` 문장(개정 전 원문 인용은 `[옛 분류원문]`)과 명칭·번호·정의·질문을 `_source/` 원문과 글자 단위로 대조, `mkdocs.yml` 내비게이션이 4.8 순서와 같은지, 원문 파일의 해시(`source.sha256`) |
 | 링크·각주 | `pipeline/checks/check_links.py` | 상대 경로 링크의 파일 존재, `[^id]` 참조마다 정의가 있는지 |
 | 단위 테스트 | `pipeline/checks/test_source.py`, `test_lib.py` | 원문 파서와 공용 모듈 |
 | URL 열림(선택) | `pipeline/checks/check_urls.py [--strict] [--json 경로]` | 참고문헌 프런트매터 `url`에 HEAD/GET 요청. 기본 exit 0, `--strict`면 열리지 않는 항목이 있을 때 exit 1 |

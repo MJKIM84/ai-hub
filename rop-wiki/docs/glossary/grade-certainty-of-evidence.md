@@ -4,7 +4,7 @@ type: glossary
 term_ko: 근거 확실성 등급
 term_en: GRADE (Grading of Recommendations, Assessment, Development and Evaluation)
 definition: 근거 묶음의 확실성을 비뚤림 위험·비일관성·비직접성·비정밀성·출판 비뚤림으로 낮춰 높음·중간·낮음·매우 낮음으로 매기는 평가 체계다.
-related_areas: [23]
+related_areas: [54]
 tags: []
 status: published
 confidence: low
@@ -34,7 +34,7 @@ Cochrane 핸드북 14장 기준(원문 미열람). 이 위키는 트랙 가설 �
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
 
 ## 출처
 

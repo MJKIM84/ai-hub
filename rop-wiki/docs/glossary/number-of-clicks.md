@@ -4,7 +4,7 @@ type: glossary
 term_ko: 클릭 수 지표
 term_en: Number of Clicks (NoC)
 definition: '대화형 주석·분할에서 목표 정확도(예: IoU 90%)에 이르거나 예측을 고치는 데 필요한 평균 사용자 클릭 수로, 사람 노력을 재는 지표다.'
-related_areas: [23, 27]
+related_areas: [47, 54]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ NoC@90 처럼 목표 IoU 를 붙여 쓰며 보통 최대 클릭 수(예: 20회)�
 
 ## 관련 영역
 
-- [23. 시험·형식 검증·벤치마크](../categories/f-deployment-verification-and-maintenance/23-testing-formal-verification-and-benchmarking.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [54. 시험·형식 검증·벤치마크](../categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

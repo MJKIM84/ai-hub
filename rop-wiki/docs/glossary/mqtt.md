@@ -4,7 +4,7 @@ type: glossary
 term_ko: 메시지 큐잉 원격 측정 전송
 term_en: Message Queuing Telemetry Transport (MQTT)
 definition: MQTT 클라이언트가 예기치 않게 끊기면 브로커가 대신 발행하도록 미리 등록해 둔 메시지로, VDA 5050 은 이를 로봇 연결 끊김(CONNECTION_BROKEN) 알림에 쓴다.
-related_areas: [9, 11, 12]
+related_areas: [20, 29, 42]
 tags: []
 status: published
 confidence: medium
@@ -34,8 +34,8 @@ VDA 5050 3.0.0은 최소 3.1.1판을 요구하고, 로봇이 연결 시 설정�
 
 ## 관련 영역
 
-- [9. 로봇·제조사 관제 연동](../categories/c-connectivity-and-execution-foundation/09-robot-and-vendor-fleet-manager-integration.md)
-- [11. 분산 시스템·통신·컴퓨팅 구조](../categories/c-connectivity-and-execution-foundation/11-distributed-systems-communication-and-computing.md)
+- [20. 로봇·제조사 관제 연동](../categories/integration/robot-and-vendor-fleet-manager-integration.md)
+- [42. 분산 시스템·통신·컴퓨팅 구조](../categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md)
 
 ## 출처
 

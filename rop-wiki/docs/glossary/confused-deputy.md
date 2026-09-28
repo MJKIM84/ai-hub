@@ -4,7 +4,7 @@ type: glossary
 term_ko: 혼란된 대리인
 term_en: Confused Deputy
 definition: 더 큰 권한을 가진 중개 프로그램이 요청자의 권한을 확인하지 않고 대신 행동해, 요청자가 원래 할 수 없는 동작이 실행되는 보안 문제다.
-related_areas: [26, 27]
+related_areas: [47, 51]
 tags: []
 status: published
 confidence: low
@@ -34,8 +34,8 @@ MCP 명세(2025-06-18판) 인가 절이 이 위험을 경고하고 토큰 대상
 
 ## 관련 영역
 
-- [26. 사이버보안·접근권한·개인정보](../categories/g-safety-security-intelligence-and-governance/26-cybersecurity-access-control-and-privacy.md)
-- [27. AI·학습·적응과 모델 운영](../categories/g-safety-security-intelligence-and-governance/27-ai-learning-adaptation-and-model-operations.md)
+- [51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md)
+- [47. AI·학습·적응과 모델 운영](../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md)
 
 ## 출처
 

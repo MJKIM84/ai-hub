@@ -4,7 +4,7 @@ type: glossary
 term_ko: 업무 연속성 관리 시스템
 term_en: Business Continuity Management System (BCMS)
 definition: 교란 사건에 대비하고 핵심 업무를 지속·복구하기 위한 조직의 관리 체계로, ISO 22301 이 요구사항을 정한다.
-related_areas: [20]
+related_areas: [32]
 tags: []
 status: published
 confidence: medium
@@ -34,7 +34,7 @@ ISO 22301:2019 기준(개정 1:2024 별도). ROP 에서는 직접 범위가 아�
 
 ## 관련 영역
 
-- [20. 예외 복구·재계획·업무 연속성](../categories/e-collaboration-and-field-operations/20-exception-recovery-replanning-and-business-continuity.md)
+- [32. 예외 복구·재계획·업무 연속성](../categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md)
 
 ## 출처
 

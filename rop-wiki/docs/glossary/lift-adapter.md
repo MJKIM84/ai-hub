@@ -4,7 +4,7 @@ type: glossary
 term_ko: 승강기 어댑터
 term_en: Lift Adapter
 definition: Open-RMF 에서 플릿 어댑터·핵심 시스템의 승강기 요청을 받아 적절할 때만 승강기 노드에 전달하는 감독 구성요소이다.
-related_areas: [10, 12, 16]
+related_areas: [22, 28, 29]
 tags: []
 status: published
 confidence: medium
@@ -34,9 +34,9 @@ Open-RMF 에서 플릿 어댑터·핵심 시스템의 승강기 요청을 받아
 
 ## 관련 영역
 
-- [10. 설비·건물 시스템 연동](../categories/c-connectivity-and-execution-foundation/10-facility-and-building-system-integration.md)
-- [12. 명령·작업 실행의 신뢰성](../categories/c-connectivity-and-execution-foundation/12-command-and-task-execution-reliability.md)
-- [16. 공용 자원·충전·에너지 최적화](../categories/d-planning-and-optimization/16-shared-resource-charging-and-energy-optimization.md)
+- [22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md)
+- [29. 명령·작업 실행의 신뢰성](../categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md)
+- [28. 공용 자원·충전·에너지 최적화](../categories/planning-and-optimization/shared-resource-charging-and-energy-optimization.md)
 
 ## 출처
 
