@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "id": "24e5b7f0d36c",
+  "name": "arm-pick-place",
+  "revision": 1,
+  "environment": {
+    "id": "207ef4c466f0",
+    "name": "새 공간",
+    "version": 1,
+    "floors": [
+      {
+        "id": "floor-1",
+        "name": "1층",
+        "elevation": 0.0,
+        "width": 20.0,
+        "depth": 14.0
+      }
+    ],
+    "elements": []
+  },
+  "robots": [
+    {
+      "id": "robot",
+      "name": "로봇",
+      "model_id": "arm",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 4.0,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.0,
+        "yaw_noise": 0.0,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "fault": "none",
+      "agv_route": []
+    }
+  ],
+  "people": [],
+  "items": [
+    {
+      "id": "item",
+      "name": "물품",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 4.55,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "size": {
+        "x": 0.25,
+        "y": 0.2,
+        "z": 0.15
+      },
+      "mass": 1.0,
+      "friction": 0.5,
+      "fragility_impulse": 15.0
+    }
+  ],
+  "tasks": [
+    {
+      "id": "move-item",
+      "name": "작업",
+      "kind": "manipulate",
+      "destination": {
+        "x": 4.65,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": "item",
+      "predecessor_ids": [],
+      "preferred_robot": null,
+      "priority": 5,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 0,
+      "timeout": 120.0,
+      "dwell": 1.0
+    }
+  ],
+  "policy": {
+    "id": "default",
+    "name": "가까운 로봇 우선",
+    "version": 1,
+    "assignment": "nearest",
+    "traffic": "priority",
+    "safety_distance": 0.25,
+    "speed_limit": 0.6,
+    "charge_below": 20.0,
+    "charge_until": 80.0,
+    "stale_after": 1.0,
+    "deadlock_timeout": 8.0,
+    "failure": "reassign"
+  },
+  "physics": {
+    "timestep": 0.002,
+    "control_hz": 100.0,
+    "orchestration_hz": 5.0,
+    "render_hz": 20.0,
+    "fidelity": "detailed",
+    "seed": 42
+  },
+  "faults": []
+}

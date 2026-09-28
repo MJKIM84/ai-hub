@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling", "editables"]
+build-backend = "hatchling.build"
+
+[project]
+name = "robot-platform"
+version = "0.1.0"
+description = "공간 · 이종 로봇 · 물리 검증 플랫폼"
+requires-python = ">=3.12,<3.15"
+dependencies = ["mujoco>=3.3,<4", "numpy>=2,<3", "pydantic>=2.10,<3", "fastapi>=0.115,<1", "uvicorn>=0.34,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "httpx>=0.28,<1"]
+spot = ["bosdyn-client==5.2.0"]
+
+[project.scripts]
+robot-platform = "robot_platform.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robot_platform"]

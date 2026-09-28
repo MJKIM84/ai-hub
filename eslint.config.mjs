@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Independent Vite app; built and checked by robot-simulator.yml.
+    "robot-simulator/**",
   ]),
 ]);
 

@@ -1,0 +1,117 @@
+.recording-view {
+  min-width: 0;
+}
+.recording-view .section-head {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.recording-view .toolbar {
+  flex-wrap: wrap;
+}
+.recording-view h2:focus {
+  outline-offset: 4px;
+}
+.recording-seek-context,
+.recording-identity,
+.recording-seek-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  margin: 12px 0;
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+.recording-seek-context {
+  padding: 10px 12px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+.recording-seek-context span {
+  font-size: var(--text-xs);
+}
+.recording-identity {
+  justify-content: space-between;
+  color: var(--color-muted);
+}
+.recording-identity b {
+  font-weight: 500;
+}
+.recording-seek-result {
+  border-bottom: 1px solid var(--color-rule);
+  padding-bottom: 12px;
+}
+.recording-seek-result b {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.recording-seek-result p {
+  flex-basis: 100%;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+}
+.recording-notice {
+  padding: 12px;
+  margin: 12px 0;
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+.recording-notice.is-error {
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+.recording-notice p {
+  margin-top: 6px;
+}
+.recording-controls {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.recording-controls select {
+  width: auto;
+  max-width: 200px;
+}
+.recording-map {
+  min-height: 260px;
+  height: clamp(260px, 44vh, 460px);
+}
+.recording-map .recording-selected {
+  stroke: var(--color-accent);
+  stroke-width: 0.08;
+  stroke-dasharray: 0.12 0.06;
+}
+.recording-scope {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+.recording-frame-slider {
+  margin-top: 12px;
+}
+.recording-raw {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-rule);
+  margin-top: 10px;
+  font-size: var(--text-sm);
+}
+.recording-raw summary,
+.recording-notice summary {
+  cursor: pointer;
+  min-height: 32px;
+}
+.recording-raw pre,
+.recording-notice pre {
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: var(--text-xs)/1.6 var(--font-code);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  padding: 10px;
+}
+.recording-view .timeline h3 {
+  margin-bottom: 12px;
+}
