@@ -7,7 +7,8 @@
 
 CLI 호출(실험으로 확인한 형식):
   claude -p --output-format json --json-schema <스키마> --tools <도구> --allowedTools <도구> --max-turns N
-         --permission-mode dontAsk --no-session-persistence [--model M]
+         --permission-mode dontAsk --no-session-persistence [--model M] [--effort E]
+  - 모델은 settings.model_by_role[role] → settings.model 순, 에포트는 settings.effort[role](에이전트별)로 넘긴다.
   - 응답은 JSON 봉투이며 구조화 출력은 `structured_output`(dict)에, 같은 내용이 `result`(JSON 문자열)에 온다.
     `is_error: true` 면 `result` 가 오류 문구다(예: API Error 400).
   - --json-schema 는 CLI(Ajv strict)와 API 의 제약이 있어 lib.runs.cli_schema() 로 바꿔 넘긴다
@@ -195,8 +196,13 @@ def claude_cmd(settings: dict, role: str | None, schema: dict | None, max_turns:
         max_turns = int((settings.get("max_turns") or {}).get(role) or 0) or None
     if max_turns:
         cmd += ["--max-turns", str(max_turns)]
-    if settings.get("model"):
-        cmd += ["--model", str(settings["model"])]
+    model = (settings.get("model_by_role") or {}).get(role) if role else None
+    model = model or settings.get("model")
+    if model:
+        cmd += ["--model", str(model)]
+    effort = (settings.get("effort") or {}).get(role) if role else None
+    if effort:
+        cmd += ["--effort", str(effort)]
     return cmd
 
 

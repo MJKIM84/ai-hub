@@ -350,6 +350,16 @@ class TestRunner(unittest.TestCase):
         self.assertIn("shared-rules", "agents/shared-rules.md")
         cmd = A.claude_cmd({"model": "m"}, "verifier", {"type": "object"}, system_file=p1)
         self.assertIn("--append-system-prompt-file", cmd)
+        self.assertEqual(cmd[cmd.index("--model") + 1], "m")
+        self.assertNotIn("--effort", cmd)
+        # 에이전트별 모델·에포트: model_by_role[role] 이 model 보다 우선, effort[role] 은 --effort 로
+        cmd = A.claude_cmd({"model": "m", "model_by_role": {"storyteller": "s"}, "effort": {"storyteller": "medium"}},
+                           "storyteller", {"type": "object"})
+        self.assertEqual(cmd[cmd.index("--model") + 1], "s")
+        self.assertEqual(cmd[cmd.index("--effort") + 1], "medium")
+        cmd = A.claude_cmd({"model": "m", "effort": {"storyteller": "medium"}}, None, {"type": "object"}, max_turns=4)
+        self.assertEqual(cmd[cmd.index("--model") + 1], "m")
+        self.assertNotIn("--effort", cmd)
         up = A.build_prompt("verifier", {"run_id": "x"}, [("a.md", "b")])
         self.assertNotIn("# 에이전트 공통 규칙", up)
 
