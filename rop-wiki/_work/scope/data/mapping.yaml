@@ -1,0 +1,118 @@
+# 개념 재정립 작업 데이터 (3/3) — 옛 구조 → 새 구조 매핑, 트랙 개편안, 주소 정책, [가정]
+# 처리 종류(영역)는 build_scope.py 가 계산한다: 일부가 다른 영역으로 가면 분할, 이름이 바뀌면 이름 변경,
+# 이름이 같고 이어받는 카테고리로 가면 유지, 이름이 같고 다른 카테고리로 가면 이동. 병합(옛 영역 둘 이상이 한 영역으로)은 이번 안에 없다.
+
+old_categories:
+  - {id: A, name: "업무·공급망 설계", slug: a-business-supply-chain-design, action: 분할, successor: A, note: "1→F4, 2→G1, 3→I3, 4→J3(주)·A3. 대분류 페이지는 새 A(기획·사업)가 잇는다. 핵심 질문(무슨 일을 왜, 얼마나)이 같은 계열이다."}
+  - {id: B, name: "공통 정보·환경 모델", slug: b-common-information-and-environment-model, action: 분할, successor: B, note: "5→B, 6→D, 7·8→E. 대분류 페이지는 새 B(로봇 온톨로지)가 잇는다. ‘같은 의미로 이해’가 온톨로지의 일이다."}
+  - {id: C, name: "연결·실행 기반", slug: c-connectivity-and-execution-foundation, action: 분할, successor: F, note: "9·10→F, 11→K, 12→H. 대분류 페이지는 새 F(연동)가 잇는다."}
+  - {id: D, name: "계획·최적화", slug: d-planning-and-optimization, action: 유지, successor: G, note: "13~16은 그대로 G로. 옛 2번이 G1로 들어온다."}
+  - {id: E, name: "협업·현장 운영", slug: e-collaboration-and-field-operations, action: 분할, successor: H, note: "17·18(주)·20→H, 18(일부)·19→J. 대분류 페이지는 새 H(실행·협업·예외 복구)가 잇는다."}
+  - {id: F, name: "도입·검증·유지관리", slug: f-deployment-verification-and-maintenance, action: 이름 변경, successor: O, note: "23·24→O, 21→O2(주)·B1, 22→I2. 새 O(검증·도입·수명주기)가 잇는다."}
+  - {id: G, name: "안전·보안·지능·거버넌스", slug: g-safety-security-intelligence-and-governance, action: 분할, successor: P, note: "25→M, 26→N, 27→L, 28→F2(주)·P1. 대분류 페이지는 새 P(거버넌스·법규·사회)가 잇는다. 핵심 질문(공통 제약과 관리 체계)이 거버넌스 계열이다."}
+
+old_areas:
+  - {num: 1, name: "주문·업무 시스템 연계", cat: A, main: F4, parts: [], note: "‘주문’을 빼고 업무 요청 전반(병원·호텔·빌딩 시스템 포함)으로 넓힘"}
+  - {num: 2, name: "공정·워크플로 모델링", cat: A, main: G1, parts: [], note: "‘공정’을 작업 전반으로 넓히고 계획의 입력으로 옮김"}
+  - {num: 3, name: "처리능력·거점·설비 계획", cat: A, main: I3, parts: [], note: "‘거점’을 빼고 설계 사용자의 일로 옮김"}
+  - {num: 4, name: "성과·경제성·프로세스 개선", cat: A, main: J3, parts: [A3], note: "성과 측정·개선은 J3, 경제성은 A3"}
+  - {num: 5, name: "로봇 능력·작업 온톨로지", cat: B, main: B2, parts: [B1, B3], note: "능력·작업 표현은 B2, 등록·문서 추출은 B1, 질의·실행 연결은 B3"}
+  - {num: 6, name: "지도·공간·위치 모델", cat: B, main: D2, parts: [D1, D3], note: "통합 공간 모델은 D2, 도면·BIM·CAD는 D1, 장소 이름·지도 버전은 D3"}
+  - {num: 7, name: "화물·재고·자산 식별과 추적", cat: B, main: E1, parts: [], note: "‘화물·재고’를 작업 대상 전반(물품·도구·검체·세탁물 등)으로 넓힘"}
+  - {num: 8, name: "실시간 세계 상태·데이터 일관성", cat: B, main: E2, parts: []}
+  - {num: 9, name: "로봇·제조사 관제 연동", cat: C, main: F1, parts: []}
+  - {num: 10, name: "설비·건물 시스템 연동", cat: C, main: F3, parts: []}
+  - {num: 11, name: "분산 시스템·통신·컴퓨팅 구조", cat: C, main: K2, parts: [K1], note: "네트워크·가용성·다거점은 K2, 클라우드·현장 서버·로봇 역할 분담은 K1"}
+  - {num: 12, name: "명령·작업 실행의 신뢰성", cat: C, main: H1, parts: []}
+  - {num: 13, name: "작업 배정 — MRTA", cat: D, main: G2, parts: []}
+  - {num: 14, name: "작업 순서·스케줄링", cat: D, main: G3, parts: []}
+  - {num: 15, name: "다중 로봇 경로·교통 관리 — MAPF", cat: D, main: G4, parts: []}
+  - {num: 16, name: "공용 자원·충전·에너지 최적화", cat: D, main: G5, parts: []}
+  - {num: 17, name: "로봇 간 협업·물리적 인계", cat: E, main: H2, parts: []}
+  - {num: 18, name: "사람–로봇 협업·운영 인터페이스", cat: E, main: H3, parts: [J1], note: "협업은 H3, 운영 인터페이스(상태 표시·관제 화면)는 J1"}
+  - {num: 19, name: "모니터링·이상 탐지·원인 분석", cat: E, main: J2, parts: []}
+  - {num: 20, name: "예외 복구·재계획·업무 연속성", cat: E, main: H4, parts: []}
+  - {num: 21, name: "온보딩·설정·현장 시운전", cat: F, main: O2, parts: [B1], note: "설치·설정·시운전은 O2, 로봇 등록·기능 탐색·문서 분석은 B1"}
+  - {num: 22, name: "시뮬레이션·예측용 디지털 트윈", cat: F, main: I2, parts: []}
+  - {num: 23, name: "시험·형식 검증·벤치마크", cat: F, main: O1, parts: []}
+  - {num: 24, name: "자산·소프트웨어 수명주기 관리", cat: F, main: O4, parts: []}
+  - {num: 25, name: "안전·위험 관리", cat: G, main: M1, parts: []}
+  - {num: 26, name: "사이버보안·접근권한·개인정보", cat: G, main: N1, parts: [N2, N3], note: "인증·권한·격리는 N1, 통신 보호·위협은 N2, 개인정보는 N3"}
+  - {num: 27, name: "AI·학습·적응과 모델 운영", cat: G, main: L4, parts: [L1, L2, L3], note: "실행 사용 기준·모델 운영은 L4, 언어 모델 계획은 L1, 문서·도면 해석은 L2, 학습 기반 최적화·예측은 L3"}
+  - {num: 28, name: "표준·상호운용성·다사업자 거버넌스", cat: G, main: F2, parts: [P1], note: "표준·상호운용성은 F2, 다사업자 거버넌스는 P1"}
+
+# 옛 영역에서 오지 않는 새 영역이 처음에 가져올(또는 링크할) 기존 페이지
+seeds:
+  A2: ["about/scope-boundary.md(원문 9장 경계표)"]
+  B4: ["tracks/manual-capability-ontology 단계 5·6 페이지(링크)"]
+  C1: ["tracks/floorplan-recognition 공간 그래프 스키마 초안(링크)", "about/simulator.md"]
+  C2: ["about/simulator.md(대화로 작업 구성하기)"]
+  C5: ["tracks/nl-task-chatbot 단계 1~5·업무 분해·배정 설계 초안(링크)", "ideas/nl-task-chatbot.md"]
+  C6: ["tracks/nl-task-chatbot 단계 4 오해석 방지(링크)"]
+  I1: ["about/simulator.md"]
+  Q1: ["flow-matrix.md(물류 흐름 7단계 × 여섯 항목)", "28개 영역 페이지 5절의 물류창고 시나리오(절 이동)"]
+
+tracks:
+  - slug: manual-capability-ontology
+    name: "매뉴얼 기반 로봇 기능 온톨로지"
+    action: 유지
+    old_primary: 5
+    new_primary: B2
+    proposal: "이름·주소·7단계를 그대로 둔다. 중심 영역을 B2로 바꾸고 함께 필요한 영역에 B1·B3·B4를 더한다. 옛 관련 영역 번호는 매핑표로 새 영역에 옮긴다. 단계 4 이름에 시스템 연동을 드러내는 것을 제안한다(‘온톨로지를 실행·시스템 연동에 연결하는 방법 조사’) [가정]."
+  - slug: nl-task-chatbot
+    name: "자연어 업무 지시 챗봇"
+    action: 확장·이름 변경
+    new_name: "채팅 기반 구성·운영"
+    new_slug: chat-based-configuration-and-operation
+    old_primary: 13
+    new_primary: C5
+    proposal: "이름을 ‘채팅 기반 구성·운영’으로 바꾸고, 중심 영역을 C1~C6 전체로 넓힌다(대표 C5). 연구 목표에 맵 작성·시나리오 구성·로봇 구성·실제 상황 시뮬레이션 재현을 더한다."
+    layout_a:
+      label: "이어 붙이기 (권장)"
+      stages: ["1 선행 연구·제품 사례 조사 (유지)", "2 필요한 데이터와 표준 조사 (유지)", "3 업무 지시 구현 가설 설계 (표시 이름만 변경)", "4 오해석 방지와 확인 절차 (유지)", "5 업무 지시 검증과 가설 판정 (표시 이름만 변경)", "6 채팅으로 맵 작성 (신규)", "7 채팅으로 시나리오 구성 (신규)", "8 채팅으로 로봇 구성 (신규)", "9 채팅으로 실제 상황 시뮬레이션 재현 (신규)", "10 대화형 구성·운영 통합 검증과 가설 판정 (신규)"]
+      note: "6~9단계는 각 기능의 선행 연구·구현 가설·확인 절차·검증 지표를 한 단계 안에서 다룬다. 내용이 있는 기존 1~5단계 페이지의 번호와 파일이 그대로다."
+    layout_b:
+      label: "재배열"
+      stages: ["1 선행 연구·제품 사례 조사", "2 필요한 데이터와 표준 조사", "3 채팅으로 맵 작성", "4 채팅으로 시나리오 구성", "5 채팅으로 로봇 구성", "6 채팅으로 실제 상황 시뮬레이션 재현", "7 채팅으로 업무 지시(기존 3)", "8 오해석 방지와 확인 절차(기존 4)", "9 검증 방법과 가설 판정(기존 5)"]
+      note: "읽는 순서는 자연스럽지만, 내용이 있는 기존 3~5단계 페이지 3개의 번호와 파일 이름이 바뀐다."
+  - slug: floorplan-recognition
+    name: "건축 도면 자동 인식"
+    action: 두 안
+    old_primary: 6
+    new_primary: D1
+    option_ga: "(가) 채팅 트랙에 합치기: 트랙을 끝내고(status done), 단계 페이지 5개·공간 그래프 스키마 초안·실험 페이지를 D1 영역과 채팅 트랙 ‘채팅으로 맵 작성’ 단계의 참고 자료로 옮긴다. 트랙 페이지 10개의 주소가 바뀐다(리다이렉트). 일일 실행이 채팅 트랙에 모이지만, 따로 큰 도면 인식 문헌이 채팅 한 단계 밑으로 들어간다."
+    option_na: "(나) 별도 트랙 유지 (권장): 트랙을 그대로 두고 중심 영역을 D1로 바꾼다. 채팅 트랙의 ‘채팅으로 맵 작성’ 단계가 이 트랙의 공간 그래프 초안을 입력으로 쓴다고 명시한다. 주소 변경 0."
+
+ideas:
+  - {page: ideas/robot-capability-ontology.md, name: "아이디어 1. 로봇 기능 온톨로지", action: 유지, note: "관련 영역을 새 영역(B1~B4 중심)으로 바꾼다"}
+  - {page: ideas/nl-task-chatbot.md, name: "아이디어 2. 자연어 업무 지시 챗봇", action: 이름 변경, new_name: "아이디어 2. 채팅 기반 구성·운영", note: "사용자 09-28 정의(맵 작성·시나리오 구성·로봇 구성·실제 상황 시뮬레이션 재현·업무 지시)를 새 정의로 싣고, 옛 정의 문구는 이력으로 남긴다"}
+  - {page: ideas/floorplan-recognition.md, name: "아이디어 3. 건축 도면 자동 인식", action: 유지, note: "중심 영역을 D1로, C1(채팅으로 맵 작성)과 연결"}
+  - {page: ideas/index.md, name: "확장 아이디어 연결 구조", action: 유지, note: "28영역 매핑표를 새 영역 기준으로 다시 만든다"}
+
+other_pages:
+  - {page: flow-matrix.md, action: 이름 변경, note: "‘물류 흐름 매트릭스’를 ‘현장 유형 × 카테고리 적용 사례 매트릭스’로 바꾸고, 물류 7단계 내용은 Q1(물류창고) 사례로 옮긴다"}
+  - {page: index.md, action: 내용 교체, note: "홈 첫 문단·대분류 표를 새 개념과 17개 카테고리로"}
+  - {page: about/what-is-rop.md, action: 내용 교체, note: "ROP란 무엇인가를 새 개념 문장으로"}
+  - {page: about/research-method.md, action: 내용 교체, note: "연구 방법을 리스트업 → 카테고리화 → 출처 수집으로"}
+  - {page: about/scope-boundary.md, action: 문구 수정, note: "경계표는 유지하고 A2의 근거로 연결"}
+  - {page: about/idea-mapping.md, action: 내용 교체, note: "아이디어–영역 매핑을 새 영역 기준으로"}
+  - {page: "topics/** (주제 페이지)", action: 프런트매터 갱신, note: "primary_area_no 를 새 영역 ID로. 주소는 그대로"}
+  - {page: "glossary/**·references/** 등 링크가 있는 페이지", action: 링크 갱신, note: "주소 정책 안 1이면 스크립트로 링크를 새 경로로 바꾼다"}
+
+url_policy:
+  option_1: "안 1 — 새 경로 + 리다이렉트 (권장): 카테고리·영역 경로를 새 슬러그로 바꾸고(문자·번호 접두어 없이, 순서가 바뀌어도 주소 유지), 옛 주소는 mkdocs-redirects(버전 고정)로 새 주소에 잇는다. 옛 슬러그의 ‘business-supply-chain-design’ 같은 옛 틀이 주소에서 사라진다."
+  option_2: "안 2 — 옛 경로 유지: 기존 파일 경로는 그대로 두고 내비게이션·제목만 새 구조로 바꾼다. 새 영역만 새 경로에 만든다. 주소는 안 바뀌지만, 옛 디렉터리 이름이 주소에 남고 카테고리와 디렉터리가 어긋난다."
+  recommend: 1
+
+assumptions:
+  - "누가 렌즈에 ‘현장의 사람(작업자·방문객·환자·거주자)’ 값을 더했다. 병원·가정·상업 시설에서는 운영자가 아닌 사람이 로봇과 가장 많이 마주친다."
+  - "무엇 렌즈는 기술의 종류라, 동향 조사·조달·교육·현장 적용 같은 항목은 무엇 칸을 비워 두었다(렌즈 값마다 항목이 있는지만 검사한다)."
+  - "채팅으로 실제 상황 시뮬레이션 재현 가운데 ‘실제 운영 기록에서 재현’은 시뮬레이터에 아직 없다. 시뮬레이터는 자기 실행 기록 재생과 장애 주입까지 한다. 그래서 L023의 해당 부분과 L157을 신규로 두었다."
+  - "L013 온톨로지 기반 연동 자동화는 사용자 문구 ‘쉽게 시스템과 로봇을 연동’을 구체화한 해석이다."
+  - "카테고리 표시 순서는 기획 다음에 필수 두 카테고리(B·C)를 두었다. 순서는 표시용이며 축이 아니다."
+  - "새 영역 ID를 ‘카테고리 문자+번호’(예: B2)로 두었다. 수정 단계에서 area_no(정수)를 문자열 ID로 바꾼다."
+  - "출처 유형에 ‘업체 발표’를 ‘벤더 문서’와 따로 두는 것을 제안한다(보도자료·발표 대 매뉴얼·사양). 수정 단계에서 스키마 열거값에 더한다."
+  - "옛 대분류 페이지 7개가 이어질 새 카테고리(리다이렉트 대상)를 핵심 질문이 가장 가까운 곳으로 골랐다(03 매핑 1절)."
+  - "원문 11장의 물류 흐름 7단계와 흐름 매트릭스 내용은 지우지 않고 Q1(물류창고) 사례로 옮긴다."
+  - "시뮬레이터 코드(PR #12)를 근거로 인용했다. 시뮬레이터는 연구 모델이며 실물 로봇 검증이 아니라고 스스로 밝힌다."
+  - "카테고리별 출처 예시의 표준·논문·제품 이름은 수집 대상 후보다. 수집 단계에서 원문을 열어 확인한 뒤에만 페이지에 싣는다."
