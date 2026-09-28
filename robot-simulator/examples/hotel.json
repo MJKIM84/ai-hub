@@ -1,0 +1,1427 @@
+{
+  "schema_version": "1.0",
+  "id": "example-hotel",
+  "name": "호텔 · 혼합 로봇 실험",
+  "revision": 1,
+  "environment": {
+    "id": "env-hotel",
+    "name": "호텔",
+    "version": 1,
+    "floors": [
+      {
+        "id": "floor-1",
+        "name": "1층",
+        "elevation": 0.0,
+        "width": 24.0,
+        "depth": 18.0
+      },
+      {
+        "id": "floor-2",
+        "name": "2층",
+        "elevation": 3.2,
+        "width": 24.0,
+        "depth": 18.0
+      }
+    ],
+    "elements": [
+      {
+        "id": "wall-0",
+        "kind": "wall",
+        "name": "외벽",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 12.0,
+          "y": 0.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 24.0,
+          "y": 0.15,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-1",
+        "kind": "wall",
+        "name": "외벽",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 12.0,
+          "y": 18.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 24.0,
+          "y": 0.15,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-2",
+        "kind": "wall",
+        "name": "외벽",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 0.0,
+          "y": 9.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.15,
+          "y": 18.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-3",
+        "kind": "wall",
+        "name": "외벽",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 24.0,
+          "y": 9.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.15,
+          "y": 18.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "room-4",
+        "kind": "room",
+        "name": "객실 5",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.7,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-5",
+        "kind": "wall",
+        "name": "공간 구획",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 3.1,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.12,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "door-6",
+        "kind": "door",
+        "name": "자동문",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 11.5,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.0,
+          "y": 0.12,
+          "z": 2.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "room-7",
+        "kind": "room",
+        "name": "객실 9",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 9.0,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.7,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-8",
+        "kind": "wall",
+        "name": "공간 구획",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 7.1,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.12,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "door-9",
+        "kind": "door",
+        "name": "자동문",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 9.0,
+          "y": 11.5,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.0,
+          "y": 0.12,
+          "z": 2.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "room-10",
+        "kind": "room",
+        "name": "객실 13",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 13.0,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.7,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-11",
+        "kind": "wall",
+        "name": "공간 구획",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 11.1,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.12,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "door-12",
+        "kind": "door",
+        "name": "자동문",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 13.0,
+          "y": 11.5,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.0,
+          "y": 0.12,
+          "z": 2.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "room-13",
+        "kind": "room",
+        "name": "객실 17",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 17.0,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.7,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "wall-14",
+        "kind": "wall",
+        "name": "공간 구획",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 15.1,
+          "y": 14.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 0.12,
+          "y": 5.0,
+          "z": 2.7
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "door-15",
+        "kind": "door",
+        "name": "자동문",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 17.0,
+          "y": 11.5,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.0,
+          "y": 0.12,
+          "z": 2.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "corridor-16",
+        "kind": "corridor",
+        "name": "공용 복도",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 10.0,
+          "y": 10.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 18.0,
+          "y": 2.0,
+          "z": 0.02
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "charger-17",
+        "kind": "charger",
+        "name": "충전소",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 21.0,
+          "y": 3.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 0.025
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "dock-18",
+        "kind": "dock",
+        "name": "도킹 스테이션",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 21.0,
+          "y": 5.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 1.2,
+          "y": 1.2,
+          "z": 0.025
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "waiting-19",
+        "kind": "waiting",
+        "name": "충전 후 경로 대기",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 19.488,
+          "y": 6.2,
+          "z": 0.0,
+          "yaw": 1.5707963267948966
+        },
+        "size": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 0.01
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "stairs-20",
+        "kind": "stairs",
+        "name": "층간 계단",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 21.0,
+          "y": 13.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 2.0,
+          "y": 5.0,
+          "z": 3.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.16,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "elevator-21",
+        "kind": "elevator",
+        "name": "공용 승강기",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 21.0,
+          "y": 8.8,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 3.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 2,
+          "max_load": 350.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [
+            "floor-1",
+            "floor-2"
+          ],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "ramp-22",
+        "kind": "ramp",
+        "name": "시험 경사로",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 16.0,
+          "y": 8.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.0,
+          "y": 1.5,
+          "z": 0.3
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.1,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      }
+    ]
+  },
+  "robots": [
+    {
+      "id": "robot-1",
+      "name": "Spot 01",
+      "model_id": "spot",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 2.0,
+        "y": 2.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-2",
+      "name": "Spot 02",
+      "model_id": "spot",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 2.0,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-3",
+      "name": "DELIVERY 03",
+      "model_id": "delivery",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 5.0,
+        "y": 2.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-4",
+      "name": "AMR 04",
+      "model_id": "amr",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 5.0,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-5",
+      "name": "AGV 05",
+      "model_id": "agv",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 18.0,
+        "y": 3.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": [
+        {
+          "x": 18.0,
+          "y": 3.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        {
+          "x": 19.488,
+          "y": 3.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        {
+          "x": 19.488,
+          "y": 6.2,
+          "z": 0.0,
+          "yaw": 1.5707963267948966
+        },
+        {
+          "x": 18.0,
+          "y": 6.2,
+          "z": 0.0,
+          "yaw": 3.141592653589793
+        },
+        {
+          "x": 18.0,
+          "y": 3.0,
+          "z": 0.0,
+          "yaw": 0.0
+        }
+      ]
+    },
+    {
+      "id": "robot-6",
+      "name": "LOGISTICS 06",
+      "model_id": "logistics",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 8.0,
+        "y": 4.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-7",
+      "name": "ARM 07",
+      "model_id": "arm",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 12.0,
+        "y": 6.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    },
+    {
+      "id": "robot-8",
+      "name": "MOBILE_MANIPULATOR 08",
+      "model_id": "mobile_manipulator",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 11.0,
+        "y": 2.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    }
+  ],
+  "people": [
+    {
+      "id": "person-1",
+      "name": "보행자 01",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 3.0,
+        "y": 8.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "path": [
+        {
+          "x": 3.0,
+          "y": 8.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        {
+          "x": 13.0,
+          "y": 8.0,
+          "z": 0.0,
+          "yaw": 0.0
+        }
+      ],
+      "speed": 0.6,
+      "reaction_time": 0.5,
+      "avoidance": true,
+      "sudden_probability": 0.0,
+      "mass": 70.0
+    }
+  ],
+  "items": [
+    {
+      "id": "item-1",
+      "name": "검증 물품",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 12.5,
+        "y": 6.0,
+        "z": 0.8,
+        "yaw": 0.0
+      },
+      "size": {
+        "x": 0.25,
+        "y": 0.2,
+        "z": 0.15
+      },
+      "mass": 1.0,
+      "friction": 0.5,
+      "fragility_impulse": 15.0
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "name": "Spot 01 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 4.0,
+        "y": 3.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-1",
+      "priority": 5,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "task-2",
+      "name": "Spot 02 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 4.0,
+        "y": 5.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-2",
+      "priority": 6,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "task-3",
+      "name": "DELIVERY 03 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 7.0,
+        "y": 3.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-3",
+      "priority": 7,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "task-4",
+      "name": "AMR 04 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 7.0,
+        "y": 5.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-4",
+      "priority": 8,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "task-6",
+      "name": "LOGISTICS 06 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 10.0,
+        "y": 5.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-6",
+      "priority": 10,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "task-8",
+      "name": "MOBILE_MANIPULATOR 08 점검 이동",
+      "kind": "patrol",
+      "destination": {
+        "x": 13.0,
+        "y": 3.0,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-8",
+      "priority": 12,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    },
+    {
+      "id": "agv-route",
+      "name": "AGV 충전 복귀 순환 경로",
+      "kind": "patrol",
+      "destination": {
+        "x": 18.0,
+        "y": 6.2,
+        "z": 0.0,
+        "yaw": 3.141592653589793
+      },
+      "floor_id": "floor-1",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "robot-5",
+      "priority": 5,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 1,
+      "timeout": 120.0,
+      "dwell": 1.0,
+      "cooperation": null
+    }
+  ],
+  "policy": {
+    "id": "default",
+    "name": "가까운 로봇 우선",
+    "version": 1,
+    "assignment": "nearest",
+    "traffic": "priority",
+    "safety_distance": 0.25,
+    "speed_limit": 0.6,
+    "charge_below": 20.0,
+    "charge_until": 80.0,
+    "stale_after": 1.0,
+    "deadlock_timeout": 8.0,
+    "failure": "reassign"
+  },
+  "physics": {
+    "timestep": 0.002,
+    "impratio": 1.0,
+    "control_hz": 100.0,
+    "orchestration_hz": 5.0,
+    "render_hz": 20.0,
+    "fidelity": "detailed",
+    "seed": 42
+  },
+  "faults": []
+}

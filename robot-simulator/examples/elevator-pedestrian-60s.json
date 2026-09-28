@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "id": "example-elevator-pedestrian-60s",
+  "name": "엘리베이터·보행자 회피 · 60초",
+  "revision": 1,
+  "environment": {
+    "id": "env-elevator-pedestrian-60s",
+    "name": "2층 승강기와 교차 복도",
+    "version": 1,
+    "floors": [
+      {
+        "id": "floor-1",
+        "name": "1층",
+        "elevation": 0.0,
+        "width": 10.0,
+        "depth": 8.0
+      },
+      {
+        "id": "floor-2",
+        "name": "2층",
+        "elevation": 3.2,
+        "width": 10.0,
+        "depth": 8.0
+      }
+    ],
+    "elements": [
+      {
+        "id": "lift",
+        "kind": "elevator",
+        "name": "1·2층 승강기",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 5.0,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 2.0,
+          "y": 2.0,
+          "z": 3.2
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.4,
+          "door_duration": 2.0,
+          "served_floors": [
+            "floor-1",
+            "floor-2"
+          ],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "landing-1",
+        "kind": "waiting",
+        "name": "1층 승강장",
+        "floor_id": "floor-1",
+        "pose": {
+          "x": 5.0,
+          "y": 2.7,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 3.0,
+          "y": 2.0,
+          "z": 0.01
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      },
+      {
+        "id": "corridor-2",
+        "kind": "corridor",
+        "name": "2층 교차 복도",
+        "floor_id": "floor-2",
+        "pose": {
+          "x": 5.0,
+          "y": 3.5,
+          "z": 0.0,
+          "yaw": 0.0
+        },
+        "size": {
+          "x": 6.0,
+          "y": 6.5,
+          "z": 0.01
+        },
+        "material": "concrete",
+        "friction": 0.8,
+        "mass": 20.0,
+        "slope": 0.0,
+        "step_height": 0.15,
+        "speed_limit": 0.5,
+        "allowed_groups": [],
+        "dynamic": false,
+        "facility": {
+          "capacity": 1,
+          "max_load": 500.0,
+          "speed": 0.5,
+          "door_duration": 2.0,
+          "served_floors": [],
+          "fault": false,
+          "automatic": true,
+          "charge_power_w": 400.0,
+          "charge_efficiency": 0.9
+        }
+      }
+    ],
+    "reviewed_topology": null
+  },
+  "robots": [
+    {
+      "id": "sample-amr",
+      "name": "승강기 AMR",
+      "model_id": "amr",
+      "floor_id": "floor-1",
+      "pose": {
+        "x": 5.0,
+        "y": 2.5,
+        "z": 0.0,
+        "yaw": 1.5707963267948966
+      },
+      "group": "기본",
+      "battery": 100.0,
+      "battery_capacity_wh": 400.0,
+      "estimated_drive_power_w": 120.0,
+      "payload_mass": 0.0,
+      "equipment": [],
+      "sensors": {
+        "position_noise": 0.01,
+        "yaw_noise": 0.005,
+        "observation_delay": 0.05,
+        "communication_delay": 0.02,
+        "dropout": 0.0,
+        "rate_hz": 20.0,
+        "camera": false,
+        "lidar": true,
+        "imu": true,
+        "item_tracking": true
+      },
+      "max_speed": 0.5,
+      "controller": "default",
+      "gripper_kp": 400.0,
+      "fault": "none",
+      "agv_route": []
+    }
+  ],
+  "people": [
+    {
+      "id": "sample-person",
+      "name": "2층 이동 보행자",
+      "floor_id": "floor-2",
+      "pose": {
+        "x": 3.2,
+        "y": 2.65,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "path": [],
+      "speed": 0.8,
+      "reaction_time": 0.5,
+      "avoidance": false,
+      "sudden_probability": 0.0,
+      "mass": 70.0,
+      "behavior": {
+        "mode": "destinations",
+        "allowed_floor_ids": [
+          "floor-2"
+        ],
+        "allowed_zone_ids": [
+          "corridor-2"
+        ],
+        "destinations": [
+          {
+            "x": 6.8,
+            "y": 2.65,
+            "z": 0.0,
+            "yaw": 0.0
+          }
+        ],
+        "speed_min_m_s": 0.65,
+        "speed_max_m_s": 0.65,
+        "stop_rate_per_s": 0.0,
+        "stop_duration_min_s": 0.5,
+        "stop_duration_max_s": 2.0,
+        "destination_change_rate_per_s": 0.0,
+        "crossing_rate_per_s": 0.0,
+        "seed": null,
+        "start_delay_s": 32.0
+      }
+    }
+  ],
+  "items": [],
+  "tasks": [
+    {
+      "id": "sample-patrol",
+      "name": "승강기 탑승 후 2층 목적지",
+      "kind": "patrol",
+      "destination": {
+        "x": 5.0,
+        "y": 2.6,
+        "z": 0.0,
+        "yaw": 0.0
+      },
+      "approved_route": [],
+      "floor_id": "floor-2",
+      "source": null,
+      "item_id": null,
+      "predecessor_ids": [],
+      "preferred_robot": "sample-amr",
+      "priority": 5,
+      "release_time": 0.0,
+      "deadline": null,
+      "quantity": 1,
+      "interval": 0.0,
+      "retries": 0,
+      "timeout": 60.0,
+      "dwell": 0.5,
+      "cooperation": null
+    }
+  ],
+  "policy": {
+    "id": "default",
+    "name": "가까운 로봇 우선",
+    "version": 1,
+    "assignment": "nearest",
+    "traffic": "priority",
+    "safety_distance": 0.25,
+    "speed_limit": 0.6,
+    "charge_below": 20.0,
+    "charge_until": 80.0,
+    "charge_target_mode": "fixed",
+    "stale_after": 1.0,
+    "deadlock_timeout": 8.0,
+    "failure": "reassign",
+    "pedestrian_avoidance": {
+      "desired_clearance_m": 0.5,
+      "slowdown_distance_m": 2.0,
+      "stop_distance_m": 0.65,
+      "resume_distance_m": 0.9,
+      "max_near_speed_m_s": 0.2,
+      "strategy": "yield",
+      "replan_after_s": 2.0,
+      "blocked_timeout_s": 15.0,
+      "observation_range_m": 6.0,
+      "braking_deceleration_m_s2": 0.8
+    }
+  },
+  "physics": {
+    "timestep": 0.002,
+    "impratio": 1.0,
+    "control_hz": 100.0,
+    "orchestration_hz": 10.0,
+    "render_hz": 20.0,
+    "fidelity": "detailed",
+    "seed": 2026
+  },
+  "faults": [],
+  "auto_stop_after_seconds": 60.0
+}

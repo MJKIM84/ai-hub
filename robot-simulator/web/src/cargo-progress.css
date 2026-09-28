@@ -1,0 +1,9 @@
+.cargo-progress{padding:10px 14px;border-bottom:1px solid var(--border,#dbe2eb);background:var(--surface,#fff)}
+.cargo-progress header{display:flex;align-items:baseline;gap:12px;font-size:12px;margin-bottom:6px}
+.cargo-progress header span,.cargo-progress small{color:var(--muted,#596575)}
+.cargo-progress__steps{display:flex;gap:12px;overflow-x:auto}
+.cargo-progress article{min-width:240px;flex:1;display:grid;gap:3px;border-left:3px solid #c6d0de;padding-left:9px;font-size:12px}
+.cargo-progress article[data-status=running]{border-color:#2563eb}.cargo-progress article[data-status=completed]{border-color:#20814f}.cargo-progress article[data-status=failed]{border-color:#c43535}
+.cargo-progress article>div{display:flex;gap:6px;margin-top:3px}.cargo-progress button{padding:3px 7px;font-size:11px;min-height:27px}
+.workspace-content > .workspace:has(.cargo-progress),.workspace-content > .workspace.is-3d:has(.cargo-progress){flex-basis:760px;min-height:760px}
+.workspace:has(.cargo-progress) .viewport-panel > .map-view{min-height:480px}
