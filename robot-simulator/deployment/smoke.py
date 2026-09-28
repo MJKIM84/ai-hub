@@ -1,12 +1,14 @@
 """Probe the built container, including real physics; no paid model requests."""
 import http.cookiejar
+from http.client import RemoteDisconnected
 import json
+import sys
 import time
 from urllib.error import URLError
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 
-base = 'http://127.0.0.1:8000'
+base = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8000'
 headers = {
     'Host':'demo.example', 'X-Forwarded-Proto':'https',
     'Origin':'https://demo.example', 'X-Robot-Request':'1',
@@ -14,19 +16,20 @@ headers = {
 opener = build_opener(HTTPCookieProcessor(http.cookiejar.CookieJar()))
 
 
-def call(path, data=None, extra=None):
+def call(path, data=None, extra=None, timeout=60):
     raw = None if data is None else json.dumps(data).encode()
     with opener.open(Request(base+path, data=raw,
-        headers={**headers, **({'Content-Type':'application/json'} if raw else {}), **(extra or {})}), timeout=60) as response:
+        headers={**headers, **({'Content-Type':'application/json'} if raw else {}), **(extra or {})}), timeout=timeout) as response:
         return response.read(), response.headers
 
 
-for attempt in range(60):
+deadline = time.monotonic() + 60
+while time.monotonic() < deadline:
     try:
-        health, _ = call('/healthz')
+        health, _ = call('/healthz', timeout=2)
         assert json.loads(health)['mode'] == 'personal_api'
         break
-    except URLError:
+    except (URLError, ConnectionError, RemoteDisconnected, TimeoutError):
         time.sleep(1)
 else:
     raise RuntimeError('Container did not become healthy')
