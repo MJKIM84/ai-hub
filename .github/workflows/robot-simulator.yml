@@ -23,6 +23,12 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: robot-simulator/requirements.lock
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test Vercel session lifecycle and allocation limits
+        working-directory: robot-simulator/vercel
+        run: npm ci --no-audit --no-fund && npm test
       - name: Install runtime and test tools
         run: pip install -r robot-simulator/requirements.lock pytest==8.4.2 httpx==0.28.1
       - name: Visitor isolation and deployment tests (no live model calls)

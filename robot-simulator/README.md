@@ -16,7 +16,23 @@
 
 외부 실행 서버는 아직 연결하지 않았습니다. `Dockerfile`, `railway.json`, 공개 방문자 진입점과 자동 검사를 준비했습니다. `.github/workflows/robot-simulator.yml`이 Linux에서 방문자 격리 검사와 컨테이너 빌드·물리 단계 실행을 검사합니다. 실제 모델에 유료 요청을 보내지 않습니다.
 
-## Railway 배포
+## Vercel 배포 (준비 중)
+
+`vercel/`에 별도 프로젝트로 배포할 체험 시작 화면과 Sandbox 연결 코드를 추가했습니다. 기존 루트 Next.js 프로젝트의 설정은 변경하지 않습니다. 현재 Vercel CLI 재로그인이 필요해 실제 배포·Sandbox 호환성은 아직 검증 전입니다.
+
+1. `vercel/`에서 유료 팀의 새 프로젝트를 연결합니다. Framework는 Other, Output Directory는 `public`입니다. `vercel.json`을 그대로 사용합니다.
+2. `vercel env pull .env.local`로 해당 프로젝트의 개발 OIDC 인증을 가져옵니다. 이 파일은 Git에서 제외되어 있습니다.
+3. `node --env-file=.env.local scripts/prepare-snapshot.mjs <공개 Git 커밋 SHA>`로 공개 실행 소스·의존성·웹 빌드만 포함한 실행 이미지를 준비합니다. 방문자 체험은 스냅샷으로 저장하지 않습니다.
+4. 출력한 스냅샷 ID를 Vercel의 `ROBOT_SNAPSHOT_ID` 환경 변수에 설정하고 배포합니다. 운영 인증은 Vercel OIDC를 사용하며, 개인 Vercel 토큰을 브라우저나 런타임에 전달하지 않습니다.
+5. 배포에서 새 체험 → 지도·로봇·보행자 → 실제 물리 실행 → 종료 → 다른 방문자 격리를 확인한 뒤에만 위키에 실행 링크를 게시합니다.
+
+각 체험은 2 vCPU/4GB의 독립 Sandbox이며 기본 30분 후 종료됩니다. 매일 UTC 기준 최대 10개의 이름이 고정된 슬롯으로 생성 상한을 둡니다. 종료된 슬롯도 당일 재사용하지 않습니다. 동시 2개는 입장 전 검사이며 동시 요청 경쟁 시 초과할 수 있지만, 하루 생성 상한은 고유 이름으로 제한합니다. API 요청·전송·저장 비용까지 포함한 결제액 상한은 아니므로 Vercel Spend Management는 별도로 적용합니다.
+
+`체험 종료`는 시작 화면에서 사용할 수 있습니다. 브라우저 탭을 닫아도 Sandbox는 종료 시간까지 유지됩니다. 임시 구성·업로드·결과·모델 키는 다른 체험에 복원하지 않으며, 필요한 결과는 실행 화면에서 내려받아야 합니다. 원래 앱의 개인 API 방식과 기능 제한은 그대로입니다.
+
+참고: [Sandbox 실행 환경](https://vercel.com/docs/sandbox), [가격·한도](https://vercel.com/docs/sandbox/pricing).
+
+## Railway 배포 (대안)
 
 1. GitHub 저장소 `MJKIM84/ai-hub`를 연결하고 서비스의 **Root Directory**를 `/robot-simulator`, **Config File**을 `/robot-simulator/railway.json`으로 설정합니다.
 2. 리소스·요금 한도를 결정합니다. **인스턴스 1개**, 작업자 프로세스 1개로 시작합니다. 물리 엔진은 CPU에서 실행하고 3D 화면은 방문자의 브라우저가 그립니다. 실제 동시 접속 성능은 배포 후 측정해야 합니다.

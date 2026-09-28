@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROBOT LAB · 시뮬레이터 체험</title>
+<meta name="description" content="다층 공간에서 로봇과 보행자가 함께 움직이는 실제 물리 시뮬레이션을 체험합니다.">
+<link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+<header><a class="brand" href="/">ROBOT LAB <span>시뮬레이터 체험</span></a><a href="https://mjkim84.github.io/ai-hub/about/simulator/">프로젝트 소개 ↗</a></header>
+<main>
+<section class="intro">
+<p class="eyebrow">ROBOT ORCHESTRATION PLATFORM</p>
+<h1>로봇의 다음 행동을,<br>직접 확인하세요.</h1>
+<p class="lead">물품을 싣고, 승강기를 타고, 사람에게 양보하고.<br>여러 로봇의 협업을 하나의 공간에서 살펴보세요.</p>
+<div class="actions"><button id="start" disabled>연결 확인 중…</button><button id="stop" class="secondary" hidden>체험 종료</button></div>
+<p id="status" role="status" aria-live="polite">실행 공간을 확인하고 있습니다.</p>
+<p class="note">체험 공간은 최대 30분 동안 유지됩니다. 필요한 구성과 결과는 종료 전에 내려받으세요. 모델 없이 예제를 실행할 수 있으며, AI 대화는 본인 API 연결이 필요합니다.</p>
+</section>
+<figure><img src="/simulator.png" alt="다층 지도에서 승강기로 물품을 운반하는 로봇 시뮬레이터의 실제 화면" width="1440" height="960"><figcaption>실제 앱 화면 · 다층 물품 운반 예제</figcaption></figure>
+<section class="guide" aria-label="체험 순서">
+<div><span>01</span><h2>공간 살펴보기</h2><p>2개 층과 승강기, 로봇 5대와 이동 보행자 3명이 준비되어 있습니다.</p></div>
+<div><span>02</span><h2>작업 실행하기</h2><p>상차부터 층간 운반, 재인수와 최종 인계까지 실제 물리 실행을 확인하세요.</p></div>
+<div><span>03</span><h2>바꾸고 비교하기</h2><p>지도를 편집하고 로봇을 추적하며, 구성 변경이 작업에 미치는 영향을 살펴보세요.</p></div>
+</section>
+</main>
+<footer><span>로컬 연구 플랫폼을 공개 체험용으로 제공하는 환경입니다.</span><span>실물 로봇은 연결되어 있지 않습니다.</span></footer>
+</body></html>
