@@ -73,7 +73,12 @@ def test_health_initial_scene_physics_isolation_and_capacity(monkeypatch):
         after = first.post('/api/control', json={'action':'step','steps':20}).json()
         assert after['sim_time'] > before['sim_time']
         assert after['status'] != 'failed'
-        assert first.get('/api/scene').status_code == 200
+        scene = first.get('/api/scene', headers={'Accept-Encoding':'gzip'})
+        assert scene.status_code == 200
+        assert scene.headers['content-encoding'] == 'gzip'
+        assert int(scene.headers['content-length']) < len(scene.content)
+        assert scene.json()['run_id'] == after['run_id']
+        assert scene.json()['meshes']
         with TestClient(app, base_url='https://demo.example', headers=headers) as second:
             assert second.get('/api/session').status_code == 200
             other = second.get('/api/state').json()

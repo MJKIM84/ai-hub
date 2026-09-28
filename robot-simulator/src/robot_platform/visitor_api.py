@@ -17,6 +17,7 @@ from fastapi import FastAPI
 from starlette.requests import Request
 from starlette.responses import JSONResponse, FileResponse
 from starlette.staticfiles import StaticFiles
+from starlette.middleware.gzip import GZipMiddleware
 
 from .api import create_app
 from .personal_provider import PersonalPlanningProvider
@@ -209,6 +210,9 @@ def create_personal_app(*, registry=None, origins=None):
     app = FastAPI(lifespan=lifespan, docs_url=None, redoc_url=None, openapi_url=None)
     app.state.visitors = registry
     app.add_middleware(VisitorMiddleware, registry=registry, origins=origins)
+    # Scene meshes are large; compress at the outer layer so visitor-routed
+    # responses are included as well as the static shell.
+    app.add_middleware(GZipMiddleware, minimum_size=1000, compresslevel=3)
     @app.get('/healthz')
     def health():
         # Hosting probes must not allocate a robot world or a visitor session.
