@@ -13,9 +13,10 @@ version: 3
 
 SCM(공급망 관리, Supply Chain Management) 관점에서 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)의 연구 범위를 정리하고, 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓아 가는 연구 위키다.
 
-[로봇 시뮬레이터 · 다층 물품 업무 살펴보기](about/simulator.md){ .md-button .md-button--primary }
+[로봇 시뮬레이터 실행하기 ↗](https://robot-lab-seven.vercel.app/){ .md-button .md-button--primary }
+[체험 내용과 확인 범위](about/simulator.md){ .md-button }
 
-2개 층에서 AMR·조작 팔·Spot과 이동 보행자가 함께하는 실제 로컬 실행 화면을 확인할 수 있습니다. 온라인 실행 서버는 연결 준비 중입니다.
+2개 층에서 AMR·조작 팔·Spot과 이동 보행자가 함께하는 물품 운반을 직접 실행할 수 있습니다. Vercel에서 방문자마다 별도 체험 공간을 만들며, 최대 30분 동안 사용할 수 있습니다.
 
 ## ROP란 무엇인가
 

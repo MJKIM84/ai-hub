@@ -14,11 +14,13 @@
 
 ## 배포 상태
 
-외부 실행 서버는 아직 연결하지 않았습니다. `Dockerfile`, `railway.json`, 공개 방문자 진입점과 자동 검사를 준비했습니다. `.github/workflows/robot-simulator.yml`이 Linux에서 방문자 격리 검사와 컨테이너 빌드·물리 단계 실행을 검사합니다. 실제 모델에 유료 요청을 보내지 않습니다.
+[공개 체험](https://robot-lab-seven.vercel.app/)은 Vercel의 `robot-lab` 프로젝트에서 제공합니다. 시작 페이지·세션 API는 Vercel 배포, 실제 Python/MuJoCo 실행은 방문자별 Sandbox입니다. `.github/workflows/robot-simulator.yml`이 Linux에서 방문자 격리 검사와 컨테이너 빌드·물리 단계 실행을 검사합니다. 배포 검사에서 실제 모델에 유료 요청을 보내지 않습니다.
 
-## Vercel 배포 (준비 중)
+기본 다층 업무 3건을 공개 서버에서 완료했고, 새 Chrome 체험에서 3D·층 선택·따라가기·시작·일시 정지를 확인했습니다. [실행 조건·기록·한계](deployment/evidence/vercel-2026-09-29.md)를 참조하세요.
 
-`vercel/`에 별도 프로젝트로 배포할 체험 시작 화면과 Sandbox 연결 코드를 추가했습니다. 기존 루트 Next.js 프로젝트의 설정은 변경하지 않습니다. 현재 Vercel CLI 재로그인이 필요해 실제 배포·Sandbox 호환성은 아직 검증 전입니다.
+## Vercel 배포
+
+`vercel/`은 별도 프로젝트의 체험 시작 화면과 Sandbox 연결 코드입니다. Git 배포의 Root Directory는 `robot-simulator/vercel`, Node.js는 22.x입니다. 기존 루트 Next.js 프로젝트는 별도로 유지합니다.
 
 1. `vercel/`에서 유료 팀의 새 프로젝트를 연결합니다. Framework는 Other, Output Directory는 `public`입니다. `vercel.json`을 그대로 사용합니다.
 2. `vercel env pull .env.local`로 해당 프로젝트의 개발 OIDC 인증을 가져옵니다. 이 파일은 Git에서 제외되어 있습니다.
