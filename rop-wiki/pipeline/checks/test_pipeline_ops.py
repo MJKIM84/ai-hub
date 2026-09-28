@@ -85,6 +85,10 @@ class TestValidate(unittest.TestCase):
 
     def test_split_oversized_area(self):
         long = "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(120))
+        # 옮겨 갈 절 안의 상대 링크(같은 폴더·다른 대분류·같은 페이지 앵커)는 주제 페이지 기준으로 다시 써야 한다
+        long += ("\n\n[18. 실시간 세계 상태·데이터 일관성](real-time-world-state-and-data-consistency.md)와 "
+                 "[15. 지도·공간·위치 모델](../space-and-map-model/map-space-and-location-model.md), "
+                 "[5절](#5-적용-사례-현장-유형-명시) 참고. [사실][^ref-003]")
         text = _area_page({"6. 대표 접근법과 기술": long})
         new, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), text, 4000,
                                              [{"path": paths.area_repo_path(AREA_NO), "section": "6. 대표 접근법과 기술",
@@ -98,7 +102,16 @@ class TestValidate(unittest.TestCase):
         self.assertTrue(t["path"].startswith("docs/topics/2026/2026-09-26-area17-s6"))
         self.assertEqual(V.check_page(paths.docs_rel(t["path"]), t["content"]), [])
         self.assertIn("긴 설명 문장 119번이다", t["content"])
+        self.assertIn("](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)", t["content"])
+        self.assertIn("](../../categories/space-and-map-model/map-space-and-location-model.md)", t["content"])
+        self.assertIn("[5절](../../" + paths.area_rel_path(AREA_NO) + "#5-적용-사례-현장-유형-명시)", t["content"])
         self.assertEqual(V.footnote_problems(fm.parse(new)[1]), [])
+
+    def test_rebase_links(self):
+        src, dst = "categories/robot-ontology/capability-model.md", "topics/2026/x.md"
+        self.assertEqual(V.rebase_links("[a](index.md) [b](../integration/index.md#x) [c](https://e.org/p.md) [d](#sec)", src, dst),
+                         "[a](../../categories/robot-ontology/index.md) [b](../../categories/integration/index.md#x) "
+                         "[c](https://e.org/p.md) [d](../../categories/robot-ontology/capability-model.md#sec)")
 
     def test_split_name_collision_gets_suffix(self):
         text = _area_page({"6. 대표 접근법과 기술": "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(250))})
