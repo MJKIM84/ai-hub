@@ -1,4 +1,6 @@
 """Atomic versioned local storage; input identifiers never become unchecked paths."""
+from __future__ import annotations
+
 import json
 import re
 import threading
