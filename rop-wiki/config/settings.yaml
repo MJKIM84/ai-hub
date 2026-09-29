@@ -49,10 +49,10 @@ repo_root: ".."                            # git 저장소 루트. 위키 루트
 claude_bin: "claude"                       # 헤드리스 실행에 쓰는 Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다. agent_runner.py 가 `claude -p` 로 호출한다
 model: "claude-fable-5-1"                  # 에이전트 기본 모델 id. agent_runner.py 가 claude -p --model 로 넘긴다. 비우면 CLI 기본 모델을 쓴다(--model 옵션을 붙이지 않는다). 2026-09-28 부터 Fable 5.1
 model_by_role: {}                          # 에이전트별 모델 재정의(예: storyteller: "claude-opus-5-5"). 없으면 위 model 을 쓴다
-effort:                                    # 에이전트별 에포트(claude -p --effort, low/medium/high/xhigh/max). 비우면 CLI 기본값. 리서치·검증은 출처 대조가 품질을 좌우해 high, 스토리텔러는 문장 작성이라 medium [가정]
+effort:                                    # 에이전트별 에포트(claude -p --effort, low/medium/high/xhigh/max). 비우면 CLI 기본값. 리서치·검증은 출처 대조가 품질을 좌우해 high, 스토리텔러는 시험 실행(2026-09-29-01)에서 medium 이 2차 검증 재작성을 2회 받아 high 로 올렸다 [가정]
   researcher: high
   verifier: high
-  storyteller: medium
+  storyteller: high
 max_turns:                                 # 에이전트별 최대 턴 수(claude -p --max-turns). 넘으면 agent_runner.py 가 호출을 끊고 7.3 의 스키마 불일치와 같이 1회 재실행 후 보류한다 [가정: 사양서 7.3 은 턴 수·시간 초과의 처리를 정하지 않는다]
   researcher: 60
   verifier: 40
