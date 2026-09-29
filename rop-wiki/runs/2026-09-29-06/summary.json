@@ -1,0 +1,177 @@
+{
+  "run_id": "2026-09-29-06",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 13,
+    "area_name": "13. 대화형 기능의 신뢰·기반",
+    "category": "C. 채팅 기반 구성·운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "2aabbda",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2092.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 13. 대화형 기능의 신뢰·기반 | 3~11절 신규 작성(seed → draft), 출처 19건(ref-855~ref-868 신규, 4건 재사용), 상업 시설 사례 1건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 7건 이행 | run 2026-09-29-06",
+  "notes": [
+    "참고문헌 생성: references/ref-855.md",
+    "참고문헌 생성: references/ref-856.md",
+    "참고문헌 생성: references/ref-857.md",
+    "참고문헌 생성: references/ref-858.md",
+    "참고문헌 생성: references/ref-859.md",
+    "참고문헌 생성: references/ref-860.md",
+    "참고문헌 생성: references/ref-861.md",
+    "참고문헌 생성: references/ref-862.md",
+    "참고문헌 생성: references/ref-863.md",
+    "참고문헌 생성: references/ref-864.md",
+    "참고문헌 생성: references/ref-865.md",
+    "참고문헌 생성: references/ref-866.md",
+    "참고문헌 생성: references/ref-867.md",
+    "참고문헌 생성: references/ref-868.md",
+    "용어집 생성: glossary/prompt-injection.md",
+    "용어집 생성: glossary/jailbreak.md",
+    "용어집 생성: glossary/approval-fatigue.md",
+    "용어집 생성: glossary/model-substitution-and-routing-dilution.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 14,
+    "standards": 5,
+    "open_questions": 4,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 14:26:19 KST",
+  "usage": {
+    "input_tokens": 464,
+    "cache_creation_input_tokens": 463675,
+    "cache_read_input_tokens": 2578102,
+    "output_tokens": 134306,
+    "cost_usd": 17.5055,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.8168,
+        "output_tokens": 47400,
+        "cache_read_input_tokens": 1726417,
+        "cache_creation_input_tokens": 121782
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.8685,
+        "output_tokens": 22343,
+        "cache_read_input_tokens": 654989,
+        "cache_creation_input_tokens": 115364
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 4.8149,
+        "output_tokens": 50389,
+        "cache_read_input_tokens": 73750,
+        "cache_creation_input_tokens": 113850
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 2.9117,
+        "output_tokens": 13487,
+        "cache_read_input_tokens": 90325,
+        "cache_creation_input_tokens": 110738
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.068,
+        "output_tokens": 400,
+        "cache_read_input_tokens": 16907,
+        "cache_creation_input_tokens": 1326
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0256,
+        "output_tokens": 287,
+        "cache_read_input_tokens": 15714,
+        "cache_creation_input_tokens": 615
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-29-area13-s6.md",
+        "chars": 3607
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-29-area13-s8.md",
+        "chars": 1988
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-29-area13-s11.md",
+        "chars": 1562
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-29-area13-s4.md",
+        "chars": 1495
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-29-area13-s10.md",
+        "chars": 1267
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-29-area13-s7.md",
+        "chars": 1256
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-29-area13-s3.md",
+        "chars": 1085
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 2
+}

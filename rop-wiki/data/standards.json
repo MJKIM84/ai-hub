@@ -2846,6 +2846,128 @@
       "ref_id": "ref-828",
       "run_id": "2026-09-29-03",
       "date": "2026-09-29"
+    },
+    {
+      "name": "Open-RMF 작업 요청 스키마(rmf_api_msgs task_request)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        20,
+        24,
+        26
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "summary": "Open-RMF 작업 요청 JSON 스키마. 필수 필드는 category·description, 선택 필드는 가장 이른 시작 가능 시각·요청 시각·priority·labels·requester·fleet_name 이며 완료 기한·반복 주기 필드는 없다.",
+      "ref_id": "ref-125",
+      "run_id": "2026-09-29-04",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "Open-RMF 작업 구성(compose 범주)과 단계 API(ros2multirobotbook task_new)",
+      "org": "Open Robotics",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        20,
+        24
+      ],
+      "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+      "summary": "작업을 단계(phase)를 만들어 내는 객체로 정의하고 공개 단계 GoToPlace·PickUp·DropOff·PerformAction, 내부 단계 RequestLift, compose 범주의 활동 순서열, robot_task_request·dispatch_task_request 요청 경로를 설명하는 문서.",
+      "ref_id": "ref-110",
+      "run_id": "2026-09-29-04",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "VerifyLLM (LLM 기반 사전 실행 작업 계획 검증 모듈, 코드 공개)",
+      "org": "Grigorev, D. S., Kovalev, A. K., & Panov, A. I. (IROS 2025)",
+      "kind": "오픈소스",
+      "related_areas": [
+        12,
+        13,
+        44,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2507.05118",
+      "summary": "자연어 지시를 선형 시간 논리(LTL)로 옮긴 뒤 언어 모델 추론으로 행동 순서열의 논리 일관성과 누락 단계를 실행 전에 찾는 2단계 검증 모듈. 가정 작업 데이터셋으로 평가(실제 현장 아님)했으며 코드를 공개했다.",
+      "ref_id": "ref-753",
+      "run_id": "2026-09-29-05",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "EU AI Act 제12조 기록 보관 (Regulation (EU) 2024/1689, Article 12 Record-keeping)",
+      "org": "European Union (유럽위원회 AI Act Service Desk 게재)",
+      "kind": "프레임워크",
+      "related_areas": [
+        13,
+        52,
+        53,
+        59
+      ],
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+      "summary": "법규(EU 규정). 고위험 AI 시스템이 수명 기간 내내 사건을 자동으로 기록하고 위험 상황 식별·시장 출시 후 모니터링·운영 모니터링에 필요한 추적 가능성을 보장하도록 규정한다. 대화 기록 자동 로그의 근거 후보.",
+      "ref_id": "ref-863",
+      "run_id": "2026-09-29-06",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
+      "org": "개인정보보호위원회",
+      "kind": "프레임워크",
+      "related_areas": [
+        13,
+        53
+      ],
+      "url": "https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20836",
+      "summary": "생성형 AI 수명주기 각 단계의 개인정보 처리·보호 이슈를 체계화하고 법적 기준과 안전조치를 제시하는 국내 정부 안내서(공식 사이트 게시 2025-08-22). PDF 본문은 미열람.",
+      "ref_id": "ref-862",
+      "run_id": "2026-09-29-06",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야",
+      "org": "과학기술정보통신부·한국정보통신기술협회(TTA)",
+      "kind": "프레임워크",
+      "related_areas": [
+        13,
+        47,
+        54
+      ],
+      "url": "https://tta-trustworthy-ai.gitbook.io/general",
+      "summary": "AI 서비스·제품 개발 과정의 기술적 신뢰성 확보 방안을 다루는 국내 안내서. 2024년 2월 발간, 웹 문서로 2025-08-14까지 갱신, 2024년 생성 AI 기반 서비스 분야 안내서 추가.",
+      "ref_id": "ref-860",
+      "run_id": "2026-09-29-06",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "Embodied Agent Interface (체화 의사결정 언어 모델 벤치마크)",
+      "org": "Li, M. 외 (NeurIPS 2024 Datasets and Benchmarks)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        13,
+        44,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2410.07166",
+      "summary": "목표 해석·하위 목표 분해·행동 순서화·전이 모델링 네 모듈로 나누고 환각·어포던스·계획 오류를 구분하는 세분화 지표로 언어 모델을 평가한다.",
+      "ref_id": "ref-858",
+      "run_id": "2026-09-29-06",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "langbar (다중 모달 GUI–MCP 아키텍처 참조 구현)",
+      "org": "van Dam, H. G. W.",
+      "kind": "오픈소스",
+      "related_areas": [
+        13,
+        8,
+        9
+      ],
+      "url": "https://arxiv.org/abs/2510.06223",
+      "summary": "응용 프로그램의 화면 이동 그래프와 의미를 MCP 로 노출해 음성 대화 비서와 GUI 를 맞추는 아키텍처의 참조 구현.",
+      "ref_id": "ref-861",
+      "run_id": "2026-09-29-06",
+      "date": "2026-09-29"
     }
   ]
 }

@@ -1,0 +1,937 @@
+{
+  "duration_api_ms": 844120,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 5.816799249999999,
+  "usage": {
+    "input_tokens": 290,
+    "cache_creation_input_tokens": 121782,
+    "cache_read_input_tokens": 1726417,
+    "output_tokens": 47400,
+    "output_tokens_details": {
+      "thinking_tokens": 14963
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 121782,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 26697,
+        "cache_read_input_tokens": 204814,
+        "cache_creation_input_tokens": 2132,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2132
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 290,
+      "outputTokens": 47400,
+      "cacheReadInputTokens": 1726417,
+      "cacheCreationInputTokens": 121782,
+      "webSearchRequests": 0,
+      "costUSD": 5.24014425,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 14963,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 314400,
+      "outputTokens": 16451,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.5766550000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 47,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-06\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":13,\"area_name\":\"13. 대화형 기능의 신뢰·기반\",\"category\":\"C. 채팅 기반 구성·운영\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 프롬프트 주입·탈옥·승인 피로·모델 대체 용어 없음(환각·과도한 에이전시·사람 참여 루프·모델 컨텍스트 프로토콜·구조화 출력·제약 디코딩·등각 예측·불확실도 정렬·자동화 편향·역할 기반 접근 통제·감사 추적·pass^k·사용자 시뮬레이터는 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 오해석 방지·권한·모델 연결·평가·화면 연동·음성 여섯 갈래 모두 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — OWASP LLM Top 10, MCP 보안 원칙, EU AI Act 기록 조항, 국내 안내서(TTA·개인정보위) 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 8~12번 채팅 영역, 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 6건(oq-125, oq-127, oq-133, oq-136, oq-139, oq-141) 미반영\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"언어 모델의 해석이 틀려도 잘못된 실행으로 이어지지 않게 하려면 무엇을 갖춰야 하는가? [분류원문]\",\"언어 모델이 없는 물품·장소를 지어내거나 외부 입력(프롬프트 주입·탈옥)에 조종당해 로봇 동작으로 이어지는 위협은 무엇이 보고되었고, 근거 표시·불확실도 보정·사전 검증 같은 방어는 어떤 것이 있는가? (섹션 3·4·6 겨냥)\",\"사용자별로 대화로 지시할 수 있는 로봇·구역·작업 범위를 제한하고 승인 관문을 두는 권한 설계와 승인 부담(승인 피로)은 어떻게 다뤄지는가? (섹션 6·11 겨냥, oq-139·oq-141 관련)\",\"대화 기록의 보존·보호와 자동 로그에 관한 규제·안내서(EU AI Act, 국내 개인정보위·TTA 안내서)는 무엇을 요구하는가? (섹션 7·9 겨냥)\",\"언어 모델 공급자를 고르고 바꾸며 장애 때 임의 대체를 막으려면 무엇을 알아야 하는가(게이트웨이의 모델 대체·희석)? (섹션 6·11 겨냥)\",\"대화형 기능의 해석·분해 정확도, 질문 횟수, 신뢰성(반복 시행)을 재는 공개 벤치마크·지표는 무엇인가? (섹션 6·8 겨냥, oq-125·oq-127 관련)\",\"음성·다국어·현장 단말 대화와 화면 선택–대화 연동을 다룬 연구·현장 사례(현장 유형 명시)와 국내 자료는 무엇이며, ROP가 직접 맡을 것과 음성 인식·모델 공급자에 맡길 것의 경계는 어디인가? (섹션 5·9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"OWASP 가 낸 2025년판 LLM 응용 프로그램 Top 10 은 프롬프트 주입(LLM01), 민감 정보 노출(LLM02), 공급망(LLM03), 부적절한 출력 처리(LLM05), 과도한 에이전시(LLM06), 잘못된 정보(LLM09)를 포함한 열 가지 위험을 목록으로 정리하고, 과도한 에이전시를 언어 모델 기반 시스템에 필요 이상의 기능·권한·자율이 주어진 상태로 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-855\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"목록 페이지의 LLM06:2025 Excessive Agency 항목: \\\"An LLM-based system is often granted a degree of agency\\\" 이고, LLM01 Prompt Injection 은 사용자 프롬프트가 의도치 않은 방식으로 모델 행동을 바꾸는 위험으로 적혀 있다.\",\"as_of\":\"2025\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"모델 컨텍스트 프로토콜(MCP) 명세 2025-06-18 판의 '보안과 신뢰·안전' 절은 호스트가 어떤 도구든 호출하기 전에 사용자의 명시적 동의를 얻어야 하고, 도구 설명·주석은 신뢰할 수 있는 서버에서 온 것이 아니면 신뢰하지 말아야 하며, 프로토콜 자체는 이 원칙을 강제할 수 없으므로 구현자가 동의·인가 흐름을 응용 프로그램에 만들어야 한다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-856\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Tool Safety 항목: \\\"Hosts must obtain explicit user consent before invoking any tool\\\". 구현 지침은 MCP 가 프로토콜 수준에서 보안 원칙을 강제할 수 없으므로 구현자가 견고한 동의·인가 흐름을 만들어야(SHOULD) 한다고 적는다.\",\"as_of\":\"2025-06-18\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f3\",\"claim\":\"Robey 외(2024)의 RoboPAIR 는 언어 모델로 제어되는 로봇을 탈옥시키는 알고리즘으로, 자율주행 언어 모델(화이트박스)·GPT-4o 계획기를 단 Clearpath Jackal(그레이박스)·Unitree Go2 로봇 개(블랙박스)의 세 설정에서 100% 공격 성공률을 보고했고, 배치된 상용 로봇 시스템에 대한 첫 탈옥 성공이라고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-857\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"jailbroken robots could cause physical damage in the real world\\\". 세 설정 모두에서 100% attack success rate 를 보고하고, Unitree Go2 사례를 배치된 상용 로봇 시스템의 첫 탈옥으로 적었다(2024-10-17 제출, 2024-11-09 개정).\",\"as_of\":\"2024-11-09\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f4\",\"claim\":\"Huang 외(2025)의 서베이 '언어 모델 제어 로봇의 신뢰'는 추상 추론과 물리 동작 사이의 체화 격차(embodiment gap)를 중심으로 탈옥·백도어·다중 모달 프롬프트 주입을 포함한 공격 벡터 분류와, 형식 안전 명세·런타임 강제·다중 언어 모델 감독·프롬프트 강화를 포함한 방어 분류, 그리고 강건성 평가용 데이터셋·벤치마크를 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-859\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록은 \\\"a comprehensive taxonomy of attack vectors\\\"(탈옥·백도어·다중 모달 프롬프트 주입)와 방어(형식 안전 명세와 런타임 강제부터 다중 LLM 감독·프롬프트 강화까지)를 다룬다고 적는다(2025-12-17 제출).\",\"as_of\":\"2025-12-17\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"서로 다른 세 발행 주체(OWASP, Robey 외, Huang 외)가 언어 모델에 대한 프롬프트 주입·탈옥이 도구 호출이나 로봇의 물리 동작으로 이어지는 위협을 각각 보고해, 언어 모델의 오해석뿐 아니라 외부 조작이 잘못된 실행의 원인이 된다는 점이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-855\",\"ref-857\",\"ref-859\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"OWASP 는 프롬프트 주입·과도한 에이전시를 위험 목록에 두고, RoboPAIR 는 실제 로봇에서 탈옥으로 유해 동작을 끌어냈으며, Huang 외 서베이는 공격·방어 분류를 정리한다. 세 출처는 발행 기관이 다르다.\",\"as_of\":\"2025-12-17\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"MCP 가 도구 호출 전 사용자 동의를 호스트의 책임으로 두고 프로토콜이 강제하지 못한다는 점(f2)과 탈옥이 배치된 로봇에서도 성공한다는 점(f3·f5)을 함께 보면, 분류 원문의 '사람이 확인·승인한 계획만 실행'은 언어 모델이나 도구 서버 안이 아니라 ROP 쪽 호스트에 승인 관문을 두고, 도구 설명·검색 문서·현장 입력을 신뢰하지 않는 입력으로 다루어야 지켜질 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-856\",\"ref-857\",\"ref-855\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2 의 '호스트가 명시적 동의를 얻어야 한다'와 f3 의 100% 탈옥 성공, f1 의 과도한 에이전시 정의를 결합한 추정이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f7\",\"claim\":\"VerifyLLM(Grigorev·Kovalev·Panov, IROS 2025)은 자연어 지시를 선형 시간 논리로 옮긴 뒤 행동 순서열의 논리 일관성과 빠진 단계를 실행 전에 찾는 검증 모듈로, 승인 전에 계획을 자동으로 거르는 층의 사례다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-753\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"실행 전 계획 검증(pre-execution task plan verification) 모듈로 가정 작업 데이터셋에서 시험하고 코드를 공개했다 (재인용: 2026-09-29-05)\",\"as_of\":\"2025-07-07\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f8\",\"claim\":\"Li 외(NeurIPS 2024 데이터셋·벤치마크 트랙, 구두 발표)의 Embodied Agent Interface 는 체화 의사결정 과제를 목표 해석·하위 목표 분해·행동 순서화·전이 모델링의 네 모듈로 나누고, 최종 성공률 대신 환각 오류·어포던스 오류·여러 계획 오류를 구분하는 세분화 지표로 언어 모델을 평가한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-858\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 지표가 \\\"hallucination errors, affordance errors, various types of planning errors\\\" 를 구분한다. 네 모듈은 goal interpretation, subgoal decomposition, action sequencing, transition modeling(2024-10-09 제출, 2025-01-19 개정).\",\"as_of\":\"2025-01-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"Yao 외(2024)의 τ-bench 는 언어 모델이 흉내 내는 사용자와 도구·정책 지침을 가진 에이전트의 대화를 시뮬레이션해 대화 종료 시 데이터베이스 상태를 목표 상태와 비교하고, 같은 과제를 여러 번 시행해 모두 성공할 확률 pass^k 로 신뢰성을 재며, GPT-4o 같은 최신 함수 호출 에이전트도 과제 성공률 50% 미만·소매 도메인 pass^8 25% 미만이라고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-867\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 평가는 \\\"the database state at the end of a conversation with the annotated goal state\\\" 비교이며, gpt-4o 가 과제의 50% 미만에 성공하고 소매 도메인 pass^8 이 25% 미만이라고 적는다(2024-06-17 제출).\",\"as_of\":\"2024-06-17\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f10\",\"claim\":\"KnowNo(Ren 외, CoRL 2023)는 등각 예측으로 언어 모델 계획기의 불확실도를 보정해 후보 행동 집합이 하나로 좁혀지면 실행하고 여러 개가 남으면 사람에게 되묻는 틀로, 목표 성공률을 보장하면서 도움 요청을 줄였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-351\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"불확실도 정렬(uncertainty alignment)로 예측 집합 크기에 따라 자율 실행과 되묻기를 가른다 (재인용: 2026-09-29-04)\",\"as_of\":\"2023-09-04\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f11\",\"claim\":\"Mullen·Manocha(2024, 2025 개정)의 LBAP 는 베이즈 추론으로 장면 근거(scene grounding)와 세계 지식을 함께 반영해 로봇의 확신도를 보정함으로써 언어 모델 환각에 대응하며, 실제 환경 시험에서 성공률 70% 조건에서 이전 방법보다 사람 도움 요청률을 33% 넘게 줄였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-864\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"decreases the human help rate of previous methods by over 33% at a success rate of 70%\\\". 방법은 장면 근거와 세계 지식을 모두 고려해 확신도를 보정한다(2024-03-19 제출, 2025-06-17 개정).\",\"as_of\":\"2025-06-17\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f12\",\"claim\":\"서로 다른 두 연구 그룹(Ren 외의 KnowNo, Mullen·Manocha 의 LBAP)이 언어 모델 계획기의 불확실도를 통계적으로 보정해 확신이 없을 때만 사람에게 되묻는 설계를 각각 보고해, '불확실도 보정 기반 되묻기'로 오해석이 실행으로 이어지는 것을 막는 접근이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-351\",\"ref-864\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"KnowNo 는 등각 예측, LBAP 는 베이즈 추론과 장면 근거로 확신도를 보정하고 둘 다 도움 요청률을 성공률과 함께 보고한다. 두 연구는 소속 기관이 다르다.\",\"as_of\":\"2025-06-17\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f13\",\"claim\":\"세분화 오류 지표(f8), 반복 시행 신뢰성 pass^k(f9), 성공률 대비 도움 요청률(f10·f11)을 함께 보면, 이 영역의 '대화형 기능 평가'는 해석·분해 정확도를 오류 유형별로 나누고 같은 과제를 여러 번 시행한 신뢰성과 질문 횟수를 성공률과 짝지어 재는 방식으로 구성할 수 있으나, 로봇 지도 작성·로봇 구성 대화에 특화된 벤치마크는 이번 조사에서 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-858\",\"ref-867\",\"ref-864\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f8·f9·f11 의 지표를 조합한 추정이며 oq-125·oq-127 이 묻는 특화 벤치마크의 부재는 검색 범위 안의 판단이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Laban 외(2025)는 20만 건 이상의 시뮬레이션 대화에서 언어 모델의 다중 턴 성능이 단일 턴보다 평균 39% 낮았고 원인이 초기 가정에 대한 과도한 의존 같은 신뢰성 저하라고 보고해, 대화가 길어질수록 오해석 위험이 커진다는 근거가 된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-841\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"여섯 생성 과제에서 다중 턴 성능이 평균 39% 낮았고 능력 저하보다 신뢰성 저하가 원인이라고 적었다 (재인용: 2026-09-29-04)\",\"as_of\":\"2025-05-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"Michael·Roesner(2026)는 AI 에이전트의 사용자 수준 권한 제안 21건과 상용 에이전트 5종을 조사해 권한 정책 명세(자연어·권한 라벨·고정 선택지·구조화 제약·임의 규칙)와 강제 방식(에이전트 자율 준수·언어 모델 가드레일·결정적 위반 탐지·실시간 사용자 승인·형식 검증 강제)의 분류를 만들고, 상용 에이전트가 부담이 큰 실시간 승인과 투명성 없는 언어 모델 자동 검토 사이의 선택을 강요하며 낮은 사용자 부담·형식 근거·결정적 강제를 함께 갖춘 학술 시스템은 21건 중 하나도 없다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-868\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"본문: \\\"Commercial agents often force users to choose between high-overhead user-in-the-loop permissions enforcement, and LLM auto-reviewers with little transparency or user control.\\\" 분석 대상은 Claude·Claude Cowork·ChatGPT 채팅·ChatGPT 에이전트 모드·Codex(2026-07-20 개정).\",\"as_of\":\"2026-07-20\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f16\",\"claim\":\"Li 외(2025)의 다중 로봇 언어 모델 서베이는 사람이 계획을 함께 만드는 파트너가 아니라 오류를 잡는 반응적 역할에 머물고 로봇 수가 늘 때 운영자 인지 부담이 정량화되지 않았다고 지적해, 승인 관문의 검토 부담이 열린 문제임을 뒷받침한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-165\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"사람 개입 절이 실행 전 승인·도움 요청·사람 검증 방식을 정리하면서 운영자 인지 부담 미정량화를 빈틈으로 적었다 (재인용: 2026-09-29-05)\",\"as_of\":\"2025-02-06\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"권한 강제 방식의 분류(f15)와 승인 부담 미정량화(f16), 호스트 책임의 동의 원칙(f2)을 함께 보면, 이 영역의 '대화 권한'은 프롬프트 안내가 아니라 도구 호출 수준에서 사용자·로봇·구역·작업 범위를 결정적으로 검사하는 정책으로 두고, 실행 전 승인은 위험도가 낮은 조회는 자동 허용하고 로봇을 움직이는 요청만 사람이 승인하는 식으로 단위를 나누어야 승인 피로를 줄일 수 있을 것으로 보이나, 로봇 대수·계획 크기에 따른 승인 단위를 정한 연구는 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-868\",\"ref-165\",\"ref-856\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f15 의 '결정적 강제'와 '실시간 승인의 높은 부담', f16 의 인지 부담 미정량화, f2 의 호스트 동의 원칙을 결합한 추정이며 oq-139 의 답은 아니다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f18\",\"claim\":\"EU AI Act 제12조(기록 보관)는 고위험 AI 시스템이 수명 기간 내내 사건을 자동으로 기록(로그)할 수 있어야 하고, 로그가 위험 상황 식별·시장 출시 후 모니터링·운영 모니터링에 필요한 사건을 담아 의도된 목적에 맞는 추적 가능성을 보장해야 한다고 규정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-863\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"제1항: \\\"High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system.\\\" 제2항은 추적 가능성 수준에 맞는 사건 기록 요건을 둔다(유럽위원회 AI Act 서비스 데스크 게재, 발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f19\",\"claim\":\"개인정보보호위원회는 2025년 8월 '생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서'를 내어(공식 사이트 게시 2025-08-22) 생성형 AI 수명주기 각 단계에서 고려할 개인정보 처리·보호 이슈를 체계화하고 법적 기준과 안전조치를 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-862\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"게시물: 생성형 AI 수명주기 각 단계의 개인정보 처리·보호 이슈를 체계화하고 법적 기준 및 안전조치를 제시한다고 적는다. 안내서 PDF 본문은 이번 실행에서 열지 못했다.\",\"as_of\":\"2025-08\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"과학기술정보통신부와 한국정보통신기술협회(TTA)의 '2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야'는 2024년 2월 발간되어 웹 문서로 2025-08-14까지 갱신되었고, 인공지능 서비스·제품 개발 과정의 기술적 신뢰성 확보 방안을 다루며 2024년에는 생성 AI 기반 서비스 분야 안내서가 함께 나왔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-860\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"일러두기: \\\"기술적 측면의 신뢰성 확보 방안을 다루고 있습니다\\\". 2023년 자율주행·의료·공공사회, 2024년 채용·스마트치안·생성 AI 기반 서비스 분야 안내서를 더했다고 적는다.\",\"as_of\":\"2025-08-14\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"대화 기록의 보존·보호 요구는 EU AI Act 의 자동 로그 조항(f18), 국내 개인정보위 안내서(f19), TTA 신뢰성 안내서(f20)에 근거를 둘 수 있으나, ROP 의 로봇 대화 기능이 고위험·고영향 AI 에 해당하는지와 로그 항목·보존 기간을 어떻게 정할지는 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-863\",\"ref-862\",\"ref-860\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f18~f20 을 이 영역의 '대화 기록 보존·보호' 요구에 대응시킨 추정이며, 적용 여부는 열린 질문으로 남긴다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f22\",\"claim\":\"Zhang·Zhang·Qin(2026)의 IRIS 는 언어 모델 게이트웨이가 광고한 모델 대신 더 싼 모델을 내보내는 모델 대체(substitution)와 일부 요청만 약속한 백엔드로 보내는 라우팅 희석(dilution)을 응답 텍스트만으로 감사하는 방법으로, 상용 라이브러리에서 희석을 평균 탐지력 0.85·오탐률 0.017 로 잡고 교차 제공자 감사에서 문제 모델 쌍 15개 중 14개를 표시했다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-865\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"an audit that needs only the returned text\\\". 희석 탐지력 0.85(오탐 0.017), 희석 비율 오차 0.04 이내, 교차 제공자 14/15 (2026-07-23 제출).\",\"as_of\":\"2026-07-23\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f23\",\"claim\":\"게이트웨이의 무단 모델 대체·희석이 실제로 관측된다는 점(f22)과 OWASP 가 공급망을 위험 항목으로 둔 점(f1)을 함께 보면, 이 영역의 '모델 장애 때 임의로 다른 모델로 넘기지 않는다'는 요구는 ROP 가 요청·응답마다 실제 제공 모델 식별자를 기록하고 대체를 사전에 정한 정책으로만 허용하며 게이트웨이 계층의 대체를 감사하는 절차로 구현해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-865\",\"ref-855\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f22 의 대체·희석 관측과 f1 의 공급망 위험을 이 영역의 모델 연결·교체 요구에 대응시킨 추정이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f24\",\"claim\":\"Li 외(2026)의 서베이는 로봇 시스템의 음성 인식이 온라인 API 서비스에만 의존해야 하는지를 물으며 Whisper 같은 심층 학습 모델까지의 발전과 ROS 기반·클라우드 기반·혼합 배치 전략, 다양하고 동적인 환경에서 강건한 음성 인식을 배치하는 과제를 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-866\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록은 ROS-based, cloud-based, hybrid 배치 전략과 \\\"challenges of deploying robust speech recognition\\\" 를 다룬다고 적는다(2026-07-13 제출). 소음·다국어 수치는 초록에 없다.\",\"as_of\":\"2026-07-13\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f25\",\"claim\":\"Nandkumar·Peternel(Frontiers in Robotics and AI, 2025-04-29)은 네덜란드 슈퍼마켓의 상품 안내·회수 로봇을 위한 음성 대화 인터페이스에서 네 가지 음성 인식 기술을 영어·네덜란드어와 성별 집단(참가자 40명)으로 비교해 Whisper 가 가장 낮은 단어 오류율을 보였고, 질의 분류기와 상·중·하 세 층의 언어 모델이 1,612개 상품 데이터베이스에 근거해 답하게 한 다층 구조가 참가자 16명 평가에서 GPT-4 Turbo 보다 13개 항목 중 4개에서 유의하게 높았다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-869\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"본문: \\\"Whisper leads in speech recognition accuracy between genders and languages.\\\" 질의 분류기 정확도 약 87%(영어·네덜란드어), 모든 응답이 상품 DB 항목을 참조해 환각을 줄였다고 적는다.\",\"as_of\":\"2025-04-29\",\"site_type\":\"상업 시설\",\"flow_item\":\"작업 대상\"},{\"id\":\"f26\",\"claim\":\"van Dam(2025)의 다중 모달 GUI 아키텍처는 응용 프로그램의 화면 이동 그래프와 의미를 모델 컨텍스트 프로토콜로 노출하고 뷰모델이 현재 보이는 화면에 적용되는 도구와 전역 도구를 언어 모델에 제공해 음성 입력과 시각 인터페이스의 정렬과 양쪽 모달리티의 일관된 피드백을 목표로 하며, 참조 구현(langbar)을 공개하고 로컬 배치 가능한 개방 가중치 모델이 전체 정확도에서 선도 상용 모델에 근접한다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-861\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"makes an application's navigation graph and semantics available through the Model Context Protocol (MCP)\\\". 목표는 음성 입력과 시각 인터페이스의 신뢰할 수 있는 정렬과 모달리티 간 일관된 피드백(2025-10-09 개정).\",\"as_of\":\"2025-10-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f27\",\"claim\":\"화면 상태와 가능한 동작을 도구로 노출해 음성·대화와 화면을 맞추는 구조(f26)와 화면 선택을 대화에 반영하는 이 영역의 요구를 함께 보면, 지도에서 고른 장소·로봇을 대화가 참조하고 대화로 바꾼 값이 편집 화면에 바로 보이게 하려면 편집기의 현재 선택·화면 상태를 언어 모델에 자원으로 주고 변경은 같은 상태 저장소를 거치게 하는 구조가 필요할 것으로 보이나, 로봇 지도·시나리오 편집기에 특화된 공개 구현은 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-861\",\"ref-856\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f26 의 GUI–MCP 구조와 f2 의 MCP 자원·도구 개념을 이 영역의 '대화와 화면 편집 연동' 요구에 대응시킨 추정이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f28\",\"claim\":\"확인한 자료를 종합하면 13. 대화형 기능의 신뢰·기반에서 ROP가 직접 맡을 범위는 해석 결과에 근거(장소·물품·문서 식별자)를 붙이고 불확실한 항목만 되묻는 흐름, 도구 호출 수준의 권한 검사와 실행 전 승인 관문, 대화·도구 호출·실제 제공 모델의 기록, 모델 공급자 연결·교체 정책, 오류 유형별 평가 시나리오이며, 음성 인식 엔진의 정확도와 언어 모델 자체의 안전 정렬은 연계 대상으로 두는 것이 분류 원문 19장의 경계에 맞을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-856\",\"ref-868\",\"ref-865\",\"ref-866\",\"ref-858\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f15·f22·f24·f8 을 원문 19장의 '로봇 자체 지능·제어'와 외부 도구 경계에 대응시킨 추정이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f29\",\"claim\":\"연계 대상: 음성 인식 모델의 소음·다국어 강건성(Whisper 등)과 언어 모델 공급자의 탈옥 방어·안전 학습은 분류 원문 19장의 로봇 자체 지능 및 외부 도구 쪽이며, 이종 제조사를 잇는 ROP 는 인식 결과의 확인 절차와 모델 출력의 검증·승인·기록을 맡고 인식·모델 내부 성능은 공급자에게 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-866\",\"ref-869\",\"ref-857\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f24 의 배치 전략, f25 의 음성 인식 비교, f3 의 모델 수준 탈옥을 경계 판단에 쓴 추정이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f30\",\"claim\":\"불확실도 보정·되묻기(KnowNo, LBAP), 세분화 벤치마크(Embodied Agent Interface), 탈옥 공격·방어(RoboPAIR, Huang 외)는 L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획과 47. AI·학습·적응과 모델 운영에 속하는 연구 방법이며, 원문 교차 규칙에 따라 이 영역과 함께 8. 채팅으로 맵 작성부터 12. 채팅으로 업무 지시·오케스트레이션까지의 대화 영역, 권한·기록은 51. 인증·권한·격리와 52. 통신 보호·위협 관리·감사, 대화 기록의 개인정보는 53. 개인정보·영상 데이터, 평가는 54. 시험·형식 검증·벤치마크에 연결해야 한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-858\",\"ref-857\",\"ref-863\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"finding 의 주제를 분류 원문의 대분류·세부영역과 교차 규칙에 대응시킨 판단이다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-855\",\"org\":\"OWASP GenAI Security Project\",\"title\":\"OWASP Top 10 for LLM Applications 2025\",\"published\":\"2025\",\"url\":\"https://genai.owasp.org/llm-top-10/\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델 응용 프로그램의 열 가지 위험 목록(프롬프트 주입, 민감 정보 노출, 공급망, 부적절한 출력 처리, 과도한 에이전시, 잘못된 정보 등)을 항목별 한 줄 설명과 함께 게시한 목록 페이지다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-856\",\"org\":\"Model Context Protocol (Anthropic 주도 오픈소스 프로젝트)\",\"title\":\"Specification — Model Context Protocol (2025-06-18)\",\"published\":\"2025-06-18\",\"url\":\"https://modelcontextprotocol.io/specification/2025-06-18\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"MCP 명세 개요 페이지. '보안과 신뢰·안전' 절에 사용자 동의·제어, 데이터 프라이버시, 도구 안전(도구 호출 전 명시적 동의, 도구 설명 불신), 샘플링 제어 원칙과 구현 지침을 둔다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-857\",\"org\":\"Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J.\",\"title\":\"Jailbreaking LLM-Controlled Robots\",\"published\":\"2024-11-09\",\"url\":\"https://arxiv.org/abs/2410.13691\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델 제어 로봇을 탈옥시키는 RoboPAIR 를 제안하고 자율주행 언어 모델·Jackal UGV·Unitree Go2 의 세 설정에서 100% 공격 성공률과 유해 물리 동작을 보고한 프리프린트(2024-10-17 제출).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-858\",\"org\":\"Li, M., Zhao, S., Wang, Q., Wang, K., Zhou, Y., Srivastava, S., Gokmen, C., Lee, T., Li, L. E., Zhang, R., Liu, W., Liang, P., Li, F.-F., Mao, J., & Wu, J. (NeurIPS 2024 Datasets and Benchmarks)\",\"title\":\"Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making\",\"published\":\"2025-01-19\",\"url\":\"https://arxiv.org/abs/2410.07166\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"체화 의사결정을 목표 해석·하위 목표 분해·행동 순서화·전이 모델링의 네 모듈로 나누고 환각·어포던스·계획 오류를 구분하는 세분화 지표로 언어 모델을 평가하는 벤치마크(2024-10-09 제출).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-859\",\"org\":\"Huang, X., Karthick V B, S., Chen, T., Bryson, M., Chaffey, T., Chen, H., Choo, K.-K. R., & Manchester, I. R.\",\"title\":\"Trust in LLM-controlled Robotics: a Survey of Security Threats, Defenses and Challenges\",\"published\":\"2025-12-17\",\"url\":\"https://arxiv.org/abs/2601.02377\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델 제어 로봇의 체화 격차를 중심으로 탈옥·백도어·다중 모달 프롬프트 주입 등 공격 벡터 분류와 형식 안전 명세·런타임 강제·다중 언어 모델 감독·프롬프트 강화 등 방어, 평가 데이터셋·벤치마크를 정리한 서베이.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-860\",\"org\":\"과학기술정보통신부·한국정보통신기술협회(TTA)\",\"title\":\"2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야 (일러두기)\",\"published\":\"2024-02\",\"url\":\"https://tta-trustworthy-ai.gitbook.io/general\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"인공지능 서비스·제품 개발 과정의 기술적 신뢰성 확보 방안을 다루는 안내서의 웹 문서판. 2024년 2월 발간 뒤 2025-08-14까지 갱신되었고, 2024년 생성 AI 기반 서비스 분야 안내서가 추가되었다고 적는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-861\",\"org\":\"van Dam, H. G. W.\",\"title\":\"A Multimodal GUI Architecture for Interfacing with LLM-Based Conversational Assistants\",\"published\":\"2025-10-09\",\"url\":\"https://arxiv.org/abs/2510.06223\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"응용 프로그램의 화면 이동 그래프와 의미를 MCP 로 노출해 음성 대화 비서와 GUI 를 맞추는 아키텍처를 제안하고 참조 구현(langbar)과 개방 가중치 모델 평가를 담은 프리프린트(2025-08-31 제출).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-862\",\"org\":\"개인정보보호위원회\",\"title\":\"생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)\",\"published\":\"2025-08\",\"url\":\"https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20836\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"개인정보보호위원회 공식 사이트 게시물(2025-08-22). 생성형 AI 수명주기 단계별 개인정보 처리·보호 이슈와 법적 기준·안전조치를 제시하는 안내서의 PDF 배포 안내이며, PDF 본문은 이번 실행에서 열지 못했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-863\",\"org\":\"European Commission — AI Act Service Desk\",\"title\":\"Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act)\",\"published\":null,\"url\":\"https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"유럽위원회 서비스 데스크가 게재한 AI Act 제12조 조문. 고위험 AI 시스템의 수명 기간 자동 사건 기록(로그)과 추적 가능성 요건, 원격 생체 식별 시스템의 최소 로그 항목을 규정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-864\",\"org\":\"Mullen, J. F., Jr., & Manocha, D.\",\"title\":\"Towards Robots That Know When They Need Help: Affordance-Based Uncertainty for Large Language Model Planners\",\"published\":\"2025-06-17\",\"url\":\"https://arxiv.org/abs/2403.13198\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"장면 근거와 세계 지식을 베이즈 추론으로 결합해 언어 모델 계획기의 확신도를 보정하는 LBAP 를 제안하고 성공률 70%에서 사람 도움 요청률을 33% 넘게 줄였다고 보고한 프리프린트(2024-03-19 제출).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-865\",\"org\":\"Zhang, Y., Zhang, Z.-H., & Qin, H.\",\"title\":\"Which Model Is Actually Serving You? IRIS: Budgeted Black-Box Auditing of Model Substitution and Routing Dilution in LLM Gateways\",\"published\":\"2026-07-23\",\"url\":\"https://arxiv.org/abs/2607.20860\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델 게이트웨이의 모델 대체와 라우팅 희석을 응답 텍스트만으로 감사하는 IRIS 를 제안하고 상용 라이브러리·교차 제공자 감사 결과를 보고한 프리프린트.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-866\",\"org\":\"Li, S., Li, J., Schijve, F., Hu, J., & Barakova, E.\",\"title\":\"Is That All We Can Do? Relying on Online API Services: A Survey of Localized Speech Recognition Model Integration in Robotic Systems\",\"published\":\"2026-07-13\",\"url\":\"https://arxiv.org/abs/2607.11792\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"로봇 시스템의 음성 인식 통합을 온라인 API 의존과 로컬 배치 관점에서 정리한 서베이. Whisper 등 심층 학습 모델, ROS 기반·클라우드·혼합 배치 전략, 동적 환경의 강건성 과제를 다룬다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-867\",\"org\":\"Yao, S., Shinn, N., Razavi, P., & Narasimhan, K. (Sierra)\",\"title\":\"τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains\",\"published\":\"2024-06-17\",\"url\":\"https://arxiv.org/abs/2406.12045\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델이 흉내 내는 사용자와 도구·정책을 가진 에이전트의 대화를 시뮬레이션해 최종 데이터베이스 상태로 성공을 판정하고 반복 시행 신뢰성 지표 pass^k 를 제안한 벤치마크.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-868\",\"org\":\"Michael, A. E., & Roesner, F.\",\"title\":\"How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement\",\"published\":\"2026-07-20\",\"url\":\"https://arxiv.org/abs/2607.13718\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"AI 에이전트의 사용자 수준 권한 제안 21건과 상용 에이전트 5종을 조사해 권한 정책 명세와 강제 방식의 분류를 만들고 실시간 승인 부담과 자동 검토 불투명성의 상충을 보고한 프리프린트(2026-07-15 제출).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2607.13718\"},{\"id\":\"ref-869\",\"org\":\"Nandkumar, C., & Peternel, L. (Delft University of Technology), Frontiers in Robotics and AI\",\"title\":\"Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents\",\"published\":\"2025-04-29\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12069059/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"네덜란드 슈퍼마켓 로봇의 음성 대화 인터페이스에서 네 가지 음성 인식 기술을 영어·네덜란드어·성별로 비교하고, 상품 데이터베이스에 근거한 다층 언어 모델 챗봇을 GPT-4 Turbo 와 사용자 평가로 비교한 학술지 논문(PMC 전문).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-351\",\"org\":\"Ren, A. Z., Dixit, A., Bodrova, A., Singh, S., Tu, S., Brown, N., Xu, P., Takayama, L., Xia, F., Varley, J., Xu, Z., Sadigh, D., Zeng, A., & Majumdar, A. (CoRL 2023)\",\"title\":\"Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners\",\"published\":\"2023-09-04\",\"url\":\"https://arxiv.org/abs/2307.01928\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"등각 예측으로 언어 모델 계획기의 불확실도를 보정해 후보 행동 집합이 하나면 실행하고 여러 개면 사람에게 되묻는 KnowNo 틀을 제안한 논문.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-841\",\"org\":\"Laban, P., Hayashi, H., Zhou, Y., & Neville, J.\",\"title\":\"LLMs Get Lost In Multi-Turn Conversation\",\"published\":\"2025-05-09\",\"url\":\"https://arxiv.org/abs/2505.06120\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"20만 건 이상의 시뮬레이션 대화로 언어 모델의 다중 턴 성능이 단일 턴보다 평균 39% 낮고 원인이 신뢰성 저하임을 보고한 프리프린트.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-165\",\"org\":\"Li, P., An, Z., Abrar, S., & Zhou, L.\",\"title\":\"Large Language Models for Multi-Robot Systems: A Survey\",\"published\":\"2025-02-06\",\"url\":\"https://arxiv.org/abs/2502.03814\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"다중 로봇 시스템에 언어 모델을 쓰는 연구를 작업 배정·동작 계획·행동 생성·사람 개입의 네 층으로 정리하고 사람 개입의 반응적 역할과 운영자 인지 부담 미정량화를 빈틈으로 지적한 서베이.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-753\",\"org\":\"Grigorev, D. S., Kovalev, A. K., & Panov, A. I. (IROS 2025)\",\"title\":\"VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots\",\"published\":\"2025-07-07\",\"url\":\"https://arxiv.org/abs/2507.05118\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자연어 지시를 선형 시간 논리로 옮긴 뒤 언어 모델 추론으로 행동 순서열의 논리 일관성과 빠진 단계를 실행 전에 찾는 검증 모듈을 제안한 논문.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f3·f5(탈옥이 배치된 로봇의 물리 동작으로 이어짐), f14(다중 턴에서 신뢰성 저하), f9(도구 에이전트의 낮은 반복 신뢰성), f15·f16(승인 부담과 자동 검토의 불투명성) / 섹션 4: f1(프롬프트 주입·과도한 에이전시), f3(탈옥), f10·f11(불확실도 보정·되묻기), f8(환각·어포던스·계획 오류), f9(pass^k), f15(권한 명세·강제 방식, 승인 피로), f22(모델 대체·라우팅 희석) / 섹션 5: 상업 시설 — f25(슈퍼마켓 로봇의 음성 대화, 다국어 음성 인식 비교, 상품 DB 근거 응답; 네덜란드 사례임을 명시), 그 밖의 현장 유형 사례는 이번 조사에서 확인되지 않음을 서술 / 섹션 6: 오해석 방지·근거 표시 f10·f11·f12·f7·f25(불확실한 항목만 되묻기, 실행 전 자동 검증, DB 근거 응답), 권한·승인 f2·f6·f15·f17, 모델 연결·교체 f22·f23, 평가 f8·f9·f13, 화면 연동 f26·f27, 음성·다국어 f24·f25 / 섹션 7: f1(OWASP LLM Top 10 2025), f2(MCP 명세 보안 원칙), f18(EU AI Act 제12조), f19(개인정보위 생성형 AI 안내서), f20(TTA 신뢰할 수 있는 AI 개발 안내서), f26(langbar 참조 구현), f8·f9(공개 벤치마크) / 섹션 8: f3, f4, f8, f9, f10, f11, f14, f15, f16, f22, f24, f25, f26, 국내 f19·f20 / 섹션 9: f28(직접 범위: 근거 표시·되묻기, 권한 검사·승인 관문, 기록, 모델 정책, 평가), f29(연계 대상: 음성 인식 엔진 성능, 언어 모델 공급자의 안전 정렬) / 섹션 10: 8. 채팅으로 맵 작성·9. 채팅으로 시나리오 구성·10. 채팅으로 로봇 구성·11. 채팅으로 실제 상황 시뮬레이션 재현·12. 채팅으로 업무 지시·오케스트레이션(f6·f13·f27, 이 영역이 다섯 대화 영역의 공통 기반), 44. 로봇 기반 모델·언어 모델 계획·47. AI·학습·적응과 모델 운영(f30, 교차 규칙), 51. 인증·권한·격리(f15·f17), 52. 통신 보호·위협 관리·감사(f1·f3·f4·f18), 53. 개인정보·영상 데이터(f19·f21), 54. 시험·형식 검증·벤치마크(f8·f9), 20. 로봇·제조사 관제 연동(f2·f6 승인 관문 위치), 48. 안전·위험 관리(f3), 57. 자산·소프트웨어 수명주기 관리(f23 모델 교체), 64. 상업 시설(f25) / 섹션 11: 기존 oq-125·oq-127(f13 으로 부분 진전, 미해결), oq-133·oq-136(미조사), oq-139(f15·f16·f17 로 부분 진전, 미해결), oq-141(f2·f6 으로 부분 진전, 공개 구현 미확인)과 open_questions_new 4건. 다음 실행 후보: 52. 통신 보호·위협 관리·감사 페이지에 f1·f3·f4 반영, 51. 인증·권한·격리 페이지에 f15 반영, 54. 시험·형식 검증·벤치마크 페이지에 f8·f9 반영, 12. 채팅으로 업무 지시·오케스트레이션 페이지에 f2·f6 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"프롬프트 주입\",\"term_en\":\"Prompt Injection\",\"definition\":\"사용자 입력이나 모델이 읽는 문서·도구 설명에 숨긴 지시로 언어 모델의 행동을 의도치 않게 바꾸는 공격으로, 도구를 부르는 에이전트에서는 무단 동작으로 이어질 수 있다.\"},{\"term_ko\":\"탈옥\",\"term_en\":\"Jailbreak\",\"definition\":\"언어 모델의 안전 제한을 우회하도록 유도하는 입력 기법으로, 로봇을 제어하는 언어 모델에서는 유해한 물리 동작을 끌어내는 데 쓰일 수 있다.\"},{\"term_ko\":\"승인 피로\",\"term_en\":\"Approval Fatigue (Consent Fatigue)\",\"definition\":\"에이전트의 동작마다 사람에게 승인을 묻는 방식이 반복되어 사용자가 검토 없이 허용하거나 자동 승인으로 바꾸게 되는 현상으로, 실시간 승인 관문의 실효성을 떨어뜨린다.\"},{\"term_ko\":\"모델 대체·라우팅 희석\",\"term_en\":\"Model Substitution / Routing Dilution\",\"definition\":\"언어 모델 게이트웨이가 요청한 모델 대신 다른 모델로 응답하거나(대체) 요청의 일부만 약속한 모델로 보내는(희석) 현상으로, 재현성과 모델 교체 정책의 통제를 어렵게 한다.\"}],\"open_questions_new\":[\"ROP 의 로봇 대화 기능이 국내 인공지능 기본법의 고영향 인공지능이나 EU AI Act 의 고위험 AI 시스템에 해당하는지, 해당한다면 대화 기록 자동 로그의 항목과 보존 기간을 어떻게 정해야 하는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 59. 법·규제·보험·라이선스, 53. 개인정보·영상 데이터 | 근거: f21 | 종류: 일반\",\"로봇 대화 지시에 특화된 프롬프트 주입·탈옥 방어(도구 설명 신뢰 경계, 실행 전 물리 제약 검사, 다중 모델 감독)의 효과를 잰 공개 벤치마크나 현장 시험 결과가 있는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 52. 통신 보호·위협 관리·감사, 48. 안전·위험 관리 | 근거: f4 | 종류: 일반\",\"언어 모델 게이트웨이의 모델 대체·라우팅 희석을 ROP 운영에서 탐지·기록하고 계약으로 막는 실무 절차나 사례가 있는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터 | 근거: f22 | 종류: 일반\",\"국내 물류창고·병원·제조 공장에서 로봇 소음과 한국어 조건의 음성 지시 인식률과 오인식 시 확인 절차를 보고한 자료가 있는가(이번 조사에서 확인된 현장 사례는 네덜란드 슈퍼마켓 연구뿐이다)? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 60. 노동·수용성·접근성, 61. 물류창고 | 근거: f24 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":19,\"cross_checked_count\":2,\"unverified\":[\"f19 개인정보위 안내서 PDF 원문 미열람(smartcity.go.kr 사본 ECONNRESET 뒤 404, pipc.go.kr ECONNRESET, kisa.or.kr 인증서 오류) — 4단계 구성·AI 에이전트 관련 내용은 검색 결과 요약에서만 보여 claim 에 넣지 않음\",\"f20 TTA 안내서의 개발 요구사항 15개·검증항목 67개 수치는 검색 결과 요약에만 있고 연 페이지에 없어 claim 에 넣지 않음; 생성 AI 기반 서비스 분야 페이지의 세부 검증항목도 요약 도구 응답이 불명확해 인용하지 않음\",\"f18 EU AI Act 조문 게재 페이지에 발행일·적용일 표시 없음(published null)\",\"f8 Embodied Agent Interface 의 시뮬레이터·모델별 결과 수치는 초록에 없어 미확인\",\"f24 음성 인식 서베이의 소음·다국어 수치는 초록에 없어 미확인\",\"f3 RoboPAIR 의 방어 제안은 초록에 없어 미확인\",\"f12·f5 외 모든 finding 교차 확인 실패(연구·문서마다 발행 주체 한 곳)\",\"산업 현장 음성 제어 사례(ScienceDirect·SSRN 게재 'LLM-driven agent for speech-enabled control of industrial robots', 눈게 검사)는 403 으로 열지 못해 넣지 않음\",\"SMaRTAban(영어·슬로바키아어 음성 제어 사족 로봇, Springer)은 인증 리다이렉트로 열지 못해 넣지 않음\",\"CURE(arXiv 2510.08044, 결합 불확실도 추정)는 열었으나 되묻기·실행 결정을 초록이 밝히지 않아 출처 상한 때문에 제외\",\"OpenTelemetry GenAI 시맨틱 규약(도구 호출·에이전트 스팬 기록)은 검색 결과에서만 확인했고 출처 상한으로 넣지 못함 — 대화·도구 호출 기록 형식의 후보\",\"MiniScope(arXiv 2512.11147, 도구 호출 최소 권한)는 열었으나 출처 상한으로 제외(f17 의 결정적 권한 강제 근거로는 ref-868 만 씀)\",\"oq-139·oq-141 은 f15·f16·f17·f2·f6 으로 부분 진전만 있고 승인 단위를 정한 연구나 공개 구현은 확인하지 못해 해결 제안하지 않음\",\"oq-133·oq-136 은 이번 실행에서 조사하지 않음\"],\"scope_violations\":[\"f29: 음성 인식 엔진의 소음·다국어 성능과 언어 모델 공급자의 안전 학습은 분류 원문 19장의 로봇 자체 지능·외부 도구 쪽이므로 '연계 대상: '으로 표시함\",\"f3: RoboPAIR 의 자율주행 언어 모델 사례는 로봇 자체 지능 수준의 공격이므로 위협 근거로만 제안하고 ROP 직접 범위로 서술하지 않음\",\"f18·f19·f20: 법·규제·안내서 내용은 59. 법·규제·보험·라이선스와 53. 개인정보·영상 데이터의 범위와 겹치므로 이 영역에서는 대화 기록 보존·보호 요구의 근거로만 제안함\",\"f9·f15: 로봇이 아닌 일반 도구 에이전트 연구는 평가 지표·권한 설계의 선례로만 제안함\",\"f25: 슈퍼마켓 안내·회수 로봇 사례는 다중 로봇 오케스트레이션이 아니므로 음성·다국어·근거 응답 사례로만 제안함\"],\"budget_used\":{\"queries\":17,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-855~ref-869, 예약 구간 안) 상한 도달로 위 미확인 항목의 후보 출처(OpenTelemetry GenAI 규약, MiniScope, CURE, 산업 음성 제어 사례)를 넣지 못했다. 원문 열람 15건(webfetch 15; ref-868 은 arXiv HTML 전문, ref-869 는 PMC 전문, 나머지 논문은 arXiv 초록 페이지), 재사용 4건(ref-351·ref-841·ref-165·ref-753, 이전 브리프 2026-09-29-04·05 의 값 그대로, 이번에 다시 열지 않음). 이전 실행 2026-09-29-05 가 ref-855~ref-862 로 낸 출처(HMCF, ETRI 동향, ROSA, OSRA MCP 세션 등)는 이번 실행의 예약 구간과 번호가 겹치고 참고문헌 목록 입력(0건 요약)에 없어 재사용하지 않았으며, 그 가운데 OSRA Interop SIG MCP 세션(oq-141 근거)은 이번 finding 에 넣지 않았다 — 퍼블리셔가 URL 로 합칠 때 번호 충돌을 확인해야 한다. 교차 확인 2건(f5: OWASP·Robey 외·Huang 외, f12: KnowNo·LBAP — 모두 발행 주체가 다름). 모든 finding 신뢰도 medium 이하(high 신뢰도 출처 ref-856·ref-860·ref-863·ref-869 는 각각 단일 출처 finding 에만 쓰임). 분류 원문 핵심 질문(해석이 틀려도 잘못된 실행으로 이어지지 않게 하려면)에는 f2·f6(호스트 쪽 승인 관문과 신뢰하지 않는 입력 처리), f7·f10·f11·f12(실행 전 자동 검증과 불확실도 보정 되묻기), f15·f17(도구 호출 수준의 결정적 권한 강제), f18·f21(자동 기록), f22·f23(모델 대체 감사)로 답했으며 결론은 '모델 밖의 검증·승인·권한·기록 층이 필요하고 승인 단위와 부담은 아직 정량화되지 않았다'는 추정(f6·f13·f17·f23·f28)이다. 현장 유형: 상업 시설(f25, 네덜란드 슈퍼마켓 연구)만 확인했고 물류창고·제조 공장·병원·가정·실외 사례는 없다. 국내 자료는 TTA 안내서(f20)와 개인정보위 안내서(f19) 두 건이며 국내 로봇 대화 기능 사례는 찾지 못했다. L. AI·학습 기술 관련 finding(f3·f4·f8·f10·f11·f30)은 44. 로봇 기반 모델·언어 모델 계획·47. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 벤더 문서 출처 없음(OWASP 는 업계 보고서, MCP 명세는 오픈소스 문서로 분류). 용어집에 이미 있는 환각·과도한 에이전시·사람 참여 루프·모델 컨텍스트 프로토콜·구조화 출력·제약 디코딩·등각 예측·불확실도 정렬·자동화 편향·역할 기반 접근 통제·감사 추적·pass^k·사용자 시뮬레이터·명확화 질문은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-06",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 13,
+      "area_name": "13. 대화형 기능의 신뢰·기반",
+      "category": "C. 채팅 기반 구성·운영"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 프롬프트 주입·탈옥·승인 피로·모델 대체 용어 없음(환각·과도한 에이전시·사람 참여 루프·모델 컨텍스트 프로토콜·구조화 출력·제약 디코딩·등각 예측·불확실도 정렬·자동화 편향·역할 기반 접근 통제·감사 추적·pass^k·사용자 시뮬레이터는 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 오해석 방지·권한·모델 연결·평가·화면 연동·음성 여섯 갈래 모두 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — OWASP LLM Top 10, MCP 보안 원칙, EU AI Act 기록 조항, 국내 안내서(TTA·개인정보위) 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 8~12번 채팅 영역, 51. 인증·권한·격리, 52. 통신 보호·위협 관리·감사, 53. 개인정보·영상 데이터, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 6건(oq-125, oq-127, oq-133, oq-136, oq-139, oq-141) 미반영",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "언어 모델의 해석이 틀려도 잘못된 실행으로 이어지지 않게 하려면 무엇을 갖춰야 하는가? [분류원문]",
+      "언어 모델이 없는 물품·장소를 지어내거나 외부 입력(프롬프트 주입·탈옥)에 조종당해 로봇 동작으로 이어지는 위협은 무엇이 보고되었고, 근거 표시·불확실도 보정·사전 검증 같은 방어는 어떤 것이 있는가? (섹션 3·4·6 겨냥)",
+      "사용자별로 대화로 지시할 수 있는 로봇·구역·작업 범위를 제한하고 승인 관문을 두는 권한 설계와 승인 부담(승인 피로)은 어떻게 다뤄지는가? (섹션 6·11 겨냥, oq-139·oq-141 관련)",
+      "대화 기록의 보존·보호와 자동 로그에 관한 규제·안내서(EU AI Act, 국내 개인정보위·TTA 안내서)는 무엇을 요구하는가? (섹션 7·9 겨냥)",
+      "언어 모델 공급자를 고르고 바꾸며 장애 때 임의 대체를 막으려면 무엇을 알아야 하는가(게이트웨이의 모델 대체·희석)? (섹션 6·11 겨냥)",
+      "대화형 기능의 해석·분해 정확도, 질문 횟수, 신뢰성(반복 시행)을 재는 공개 벤치마크·지표는 무엇인가? (섹션 6·8 겨냥, oq-125·oq-127 관련)",
+      "음성·다국어·현장 단말 대화와 화면 선택–대화 연동을 다룬 연구·현장 사례(현장 유형 명시)와 국내 자료는 무엇이며, ROP가 직접 맡을 것과 음성 인식·모델 공급자에 맡길 것의 경계는 어디인가? (섹션 5·9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "OWASP 가 낸 2025년판 LLM 응용 프로그램 Top 10 은 프롬프트 주입(LLM01), 민감 정보 노출(LLM02), 공급망(LLM03), 부적절한 출력 처리(LLM05), 과도한 에이전시(LLM06), 잘못된 정보(LLM09)를 포함한 열 가지 위험을 목록으로 정리하고, 과도한 에이전시를 언어 모델 기반 시스템에 필요 이상의 기능·권한·자율이 주어진 상태로 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-855"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "목록 페이지의 LLM06:2025 Excessive Agency 항목: \"An LLM-based system is often granted a degree of agency\" 이고, LLM01 Prompt Injection 은 사용자 프롬프트가 의도치 않은 방식으로 모델 행동을 바꾸는 위험으로 적혀 있다.",
+        "as_of": "2025",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "모델 컨텍스트 프로토콜(MCP) 명세 2025-06-18 판의 '보안과 신뢰·안전' 절은 호스트가 어떤 도구든 호출하기 전에 사용자의 명시적 동의를 얻어야 하고, 도구 설명·주석은 신뢰할 수 있는 서버에서 온 것이 아니면 신뢰하지 말아야 하며, 프로토콜 자체는 이 원칙을 강제할 수 없으므로 구현자가 동의·인가 흐름을 응용 프로그램에 만들어야 한다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-856"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Tool Safety 항목: \"Hosts must obtain explicit user consent before invoking any tool\". 구현 지침은 MCP 가 프로토콜 수준에서 보안 원칙을 강제할 수 없으므로 구현자가 견고한 동의·인가 흐름을 만들어야(SHOULD) 한다고 적는다.",
+        "as_of": "2025-06-18",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f3",
+        "claim": "Robey 외(2024)의 RoboPAIR 는 언어 모델로 제어되는 로봇을 탈옥시키는 알고리즘으로, 자율주행 언어 모델(화이트박스)·GPT-4o 계획기를 단 Clearpath Jackal(그레이박스)·Unitree Go2 로봇 개(블랙박스)의 세 설정에서 100% 공격 성공률을 보고했고, 배치된 상용 로봇 시스템에 대한 첫 탈옥 성공이라고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-857"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"jailbroken robots could cause physical damage in the real world\". 세 설정 모두에서 100% attack success rate 를 보고하고, Unitree Go2 사례를 배치된 상용 로봇 시스템의 첫 탈옥으로 적었다(2024-10-17 제출, 2024-11-09 개정).",
+        "as_of": "2024-11-09",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f4",
+        "claim": "Huang 외(2025)의 서베이 '언어 모델 제어 로봇의 신뢰'는 추상 추론과 물리 동작 사이의 체화 격차(embodiment gap)를 중심으로 탈옥·백도어·다중 모달 프롬프트 주입을 포함한 공격 벡터 분류와, 형식 안전 명세·런타임 강제·다중 언어 모델 감독·프롬프트 강화를 포함한 방어 분류, 그리고 강건성 평가용 데이터셋·벤치마크를 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-859"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록은 \"a comprehensive taxonomy of attack vectors\"(탈옥·백도어·다중 모달 프롬프트 주입)와 방어(형식 안전 명세와 런타임 강제부터 다중 LLM 감독·프롬프트 강화까지)를 다룬다고 적는다(2025-12-17 제출).",
+        "as_of": "2025-12-17",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "서로 다른 세 발행 주체(OWASP, Robey 외, Huang 외)가 언어 모델에 대한 프롬프트 주입·탈옥이 도구 호출이나 로봇의 물리 동작으로 이어지는 위협을 각각 보고해, 언어 모델의 오해석뿐 아니라 외부 조작이 잘못된 실행의 원인이 된다는 점이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-855",
+          "ref-857",
+          "ref-859"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "OWASP 는 프롬프트 주입·과도한 에이전시를 위험 목록에 두고, RoboPAIR 는 실제 로봇에서 탈옥으로 유해 동작을 끌어냈으며, Huang 외 서베이는 공격·방어 분류를 정리한다. 세 출처는 발행 기관이 다르다.",
+        "as_of": "2025-12-17",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "MCP 가 도구 호출 전 사용자 동의를 호스트의 책임으로 두고 프로토콜이 강제하지 못한다는 점(f2)과 탈옥이 배치된 로봇에서도 성공한다는 점(f3·f5)을 함께 보면, 분류 원문의 '사람이 확인·승인한 계획만 실행'은 언어 모델이나 도구 서버 안이 아니라 ROP 쪽 호스트에 승인 관문을 두고, 도구 설명·검색 문서·현장 입력을 신뢰하지 않는 입력으로 다루어야 지켜질 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-856",
+          "ref-857",
+          "ref-855"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2 의 '호스트가 명시적 동의를 얻어야 한다'와 f3 의 100% 탈옥 성공, f1 의 과도한 에이전시 정의를 결합한 추정이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f7",
+        "claim": "VerifyLLM(Grigorev·Kovalev·Panov, IROS 2025)은 자연어 지시를 선형 시간 논리로 옮긴 뒤 행동 순서열의 논리 일관성과 빠진 단계를 실행 전에 찾는 검증 모듈로, 승인 전에 계획을 자동으로 거르는 층의 사례다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-753"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "실행 전 계획 검증(pre-execution task plan verification) 모듈로 가정 작업 데이터셋에서 시험하고 코드를 공개했다 (재인용: 2026-09-29-05)",
+        "as_of": "2025-07-07",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f8",
+        "claim": "Li 외(NeurIPS 2024 데이터셋·벤치마크 트랙, 구두 발표)의 Embodied Agent Interface 는 체화 의사결정 과제를 목표 해석·하위 목표 분해·행동 순서화·전이 모델링의 네 모듈로 나누고, 최종 성공률 대신 환각 오류·어포던스 오류·여러 계획 오류를 구분하는 세분화 지표로 언어 모델을 평가한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-858"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 지표가 \"hallucination errors, affordance errors, various types of planning errors\" 를 구분한다. 네 모듈은 goal interpretation, subgoal decomposition, action sequencing, transition modeling(2024-10-09 제출, 2025-01-19 개정).",
+        "as_of": "2025-01-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "Yao 외(2024)의 τ-bench 는 언어 모델이 흉내 내는 사용자와 도구·정책 지침을 가진 에이전트의 대화를 시뮬레이션해 대화 종료 시 데이터베이스 상태를 목표 상태와 비교하고, 같은 과제를 여러 번 시행해 모두 성공할 확률 pass^k 로 신뢰성을 재며, GPT-4o 같은 최신 함수 호출 에이전트도 과제 성공률 50% 미만·소매 도메인 pass^8 25% 미만이라고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-867"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 평가는 \"the database state at the end of a conversation with the annotated goal state\" 비교이며, gpt-4o 가 과제의 50% 미만에 성공하고 소매 도메인 pass^8 이 25% 미만이라고 적는다(2024-06-17 제출).",
+        "as_of": "2024-06-17",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f10",
+        "claim": "KnowNo(Ren 외, CoRL 2023)는 등각 예측으로 언어 모델 계획기의 불확실도를 보정해 후보 행동 집합이 하나로 좁혀지면 실행하고 여러 개가 남으면 사람에게 되묻는 틀로, 목표 성공률을 보장하면서 도움 요청을 줄였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-351"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "불확실도 정렬(uncertainty alignment)로 예측 집합 크기에 따라 자율 실행과 되묻기를 가른다 (재인용: 2026-09-29-04)",
+        "as_of": "2023-09-04",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f11",
+        "claim": "Mullen·Manocha(2024, 2025 개정)의 LBAP 는 베이즈 추론으로 장면 근거(scene grounding)와 세계 지식을 함께 반영해 로봇의 확신도를 보정함으로써 언어 모델 환각에 대응하며, 실제 환경 시험에서 성공률 70% 조건에서 이전 방법보다 사람 도움 요청률을 33% 넘게 줄였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-864"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"decreases the human help rate of previous methods by over 33% at a success rate of 70%\". 방법은 장면 근거와 세계 지식을 모두 고려해 확신도를 보정한다(2024-03-19 제출, 2025-06-17 개정).",
+        "as_of": "2025-06-17",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f12",
+        "claim": "서로 다른 두 연구 그룹(Ren 외의 KnowNo, Mullen·Manocha 의 LBAP)이 언어 모델 계획기의 불확실도를 통계적으로 보정해 확신이 없을 때만 사람에게 되묻는 설계를 각각 보고해, '불확실도 보정 기반 되묻기'로 오해석이 실행으로 이어지는 것을 막는 접근이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-351",
+          "ref-864"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "KnowNo 는 등각 예측, LBAP 는 베이즈 추론과 장면 근거로 확신도를 보정하고 둘 다 도움 요청률을 성공률과 함께 보고한다. 두 연구는 소속 기관이 다르다.",
+        "as_of": "2025-06-17",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f13",
+        "claim": "세분화 오류 지표(f8), 반복 시행 신뢰성 pass^k(f9), 성공률 대비 도움 요청률(f10·f11)을 함께 보면, 이 영역의 '대화형 기능 평가'는 해석·분해 정확도를 오류 유형별로 나누고 같은 과제를 여러 번 시행한 신뢰성과 질문 횟수를 성공률과 짝지어 재는 방식으로 구성할 수 있으나, 로봇 지도 작성·로봇 구성 대화에 특화된 벤치마크는 이번 조사에서 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-858",
+          "ref-867",
+          "ref-864"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f8·f9·f11 의 지표를 조합한 추정이며 oq-125·oq-127 이 묻는 특화 벤치마크의 부재는 검색 범위 안의 판단이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Laban 외(2025)는 20만 건 이상의 시뮬레이션 대화에서 언어 모델의 다중 턴 성능이 단일 턴보다 평균 39% 낮았고 원인이 초기 가정에 대한 과도한 의존 같은 신뢰성 저하라고 보고해, 대화가 길어질수록 오해석 위험이 커진다는 근거가 된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-841"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "여섯 생성 과제에서 다중 턴 성능이 평균 39% 낮았고 능력 저하보다 신뢰성 저하가 원인이라고 적었다 (재인용: 2026-09-29-04)",
+        "as_of": "2025-05-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "Michael·Roesner(2026)는 AI 에이전트의 사용자 수준 권한 제안 21건과 상용 에이전트 5종을 조사해 권한 정책 명세(자연어·권한 라벨·고정 선택지·구조화 제약·임의 규칙)와 강제 방식(에이전트 자율 준수·언어 모델 가드레일·결정적 위반 탐지·실시간 사용자 승인·형식 검증 강제)의 분류를 만들고, 상용 에이전트가 부담이 큰 실시간 승인과 투명성 없는 언어 모델 자동 검토 사이의 선택을 강요하며 낮은 사용자 부담·형식 근거·결정적 강제를 함께 갖춘 학술 시스템은 21건 중 하나도 없다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-868"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "본문: \"Commercial agents often force users to choose between high-overhead user-in-the-loop permissions enforcement, and LLM auto-reviewers with little transparency or user control.\" 분석 대상은 Claude·Claude Cowork·ChatGPT 채팅·ChatGPT 에이전트 모드·Codex(2026-07-20 개정).",
+        "as_of": "2026-07-20",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f16",
+        "claim": "Li 외(2025)의 다중 로봇 언어 모델 서베이는 사람이 계획을 함께 만드는 파트너가 아니라 오류를 잡는 반응적 역할에 머물고 로봇 수가 늘 때 운영자 인지 부담이 정량화되지 않았다고 지적해, 승인 관문의 검토 부담이 열린 문제임을 뒷받침한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-165"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "사람 개입 절이 실행 전 승인·도움 요청·사람 검증 방식을 정리하면서 운영자 인지 부담 미정량화를 빈틈으로 적었다 (재인용: 2026-09-29-05)",
+        "as_of": "2025-02-06",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "권한 강제 방식의 분류(f15)와 승인 부담 미정량화(f16), 호스트 책임의 동의 원칙(f2)을 함께 보면, 이 영역의 '대화 권한'은 프롬프트 안내가 아니라 도구 호출 수준에서 사용자·로봇·구역·작업 범위를 결정적으로 검사하는 정책으로 두고, 실행 전 승인은 위험도가 낮은 조회는 자동 허용하고 로봇을 움직이는 요청만 사람이 승인하는 식으로 단위를 나누어야 승인 피로를 줄일 수 있을 것으로 보이나, 로봇 대수·계획 크기에 따른 승인 단위를 정한 연구는 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-868",
+          "ref-165",
+          "ref-856"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f15 의 '결정적 강제'와 '실시간 승인의 높은 부담', f16 의 인지 부담 미정량화, f2 의 호스트 동의 원칙을 결합한 추정이며 oq-139 의 답은 아니다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f18",
+        "claim": "EU AI Act 제12조(기록 보관)는 고위험 AI 시스템이 수명 기간 내내 사건을 자동으로 기록(로그)할 수 있어야 하고, 로그가 위험 상황 식별·시장 출시 후 모니터링·운영 모니터링에 필요한 사건을 담아 의도된 목적에 맞는 추적 가능성을 보장해야 한다고 규정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-863"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "제1항: \"High-risk AI systems shall technically allow for the automatic recording of events (logs) over the lifetime of the system.\" 제2항은 추적 가능성 수준에 맞는 사건 기록 요건을 둔다(유럽위원회 AI Act 서비스 데스크 게재, 발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f19",
+        "claim": "개인정보보호위원회는 2025년 8월 '생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서'를 내어(공식 사이트 게시 2025-08-22) 생성형 AI 수명주기 각 단계에서 고려할 개인정보 처리·보호 이슈를 체계화하고 법적 기준과 안전조치를 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-862"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "게시물: 생성형 AI 수명주기 각 단계의 개인정보 처리·보호 이슈를 체계화하고 법적 기준 및 안전조치를 제시한다고 적는다. 안내서 PDF 본문은 이번 실행에서 열지 못했다.",
+        "as_of": "2025-08",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "과학기술정보통신부와 한국정보통신기술협회(TTA)의 '2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야'는 2024년 2월 발간되어 웹 문서로 2025-08-14까지 갱신되었고, 인공지능 서비스·제품 개발 과정의 기술적 신뢰성 확보 방안을 다루며 2024년에는 생성 AI 기반 서비스 분야 안내서가 함께 나왔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-860"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "일러두기: \"기술적 측면의 신뢰성 확보 방안을 다루고 있습니다\". 2023년 자율주행·의료·공공사회, 2024년 채용·스마트치안·생성 AI 기반 서비스 분야 안내서를 더했다고 적는다.",
+        "as_of": "2025-08-14",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "대화 기록의 보존·보호 요구는 EU AI Act 의 자동 로그 조항(f18), 국내 개인정보위 안내서(f19), TTA 신뢰성 안내서(f20)에 근거를 둘 수 있으나, ROP 의 로봇 대화 기능이 고위험·고영향 AI 에 해당하는지와 로그 항목·보존 기간을 어떻게 정할지는 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-863",
+          "ref-862",
+          "ref-860"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f18~f20 을 이 영역의 '대화 기록 보존·보호' 요구에 대응시킨 추정이며, 적용 여부는 열린 질문으로 남긴다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f22",
+        "claim": "Zhang·Zhang·Qin(2026)의 IRIS 는 언어 모델 게이트웨이가 광고한 모델 대신 더 싼 모델을 내보내는 모델 대체(substitution)와 일부 요청만 약속한 백엔드로 보내는 라우팅 희석(dilution)을 응답 텍스트만으로 감사하는 방법으로, 상용 라이브러리에서 희석을 평균 탐지력 0.85·오탐률 0.017 로 잡고 교차 제공자 감사에서 문제 모델 쌍 15개 중 14개를 표시했다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-865"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"an audit that needs only the returned text\". 희석 탐지력 0.85(오탐 0.017), 희석 비율 오차 0.04 이내, 교차 제공자 14/15 (2026-07-23 제출).",
+        "as_of": "2026-07-23",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f23",
+        "claim": "게이트웨이의 무단 모델 대체·희석이 실제로 관측된다는 점(f22)과 OWASP 가 공급망을 위험 항목으로 둔 점(f1)을 함께 보면, 이 영역의 '모델 장애 때 임의로 다른 모델로 넘기지 않는다'는 요구는 ROP 가 요청·응답마다 실제 제공 모델 식별자를 기록하고 대체를 사전에 정한 정책으로만 허용하며 게이트웨이 계층의 대체를 감사하는 절차로 구현해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-865",
+          "ref-855"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f22 의 대체·희석 관측과 f1 의 공급망 위험을 이 영역의 모델 연결·교체 요구에 대응시킨 추정이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f24",
+        "claim": "Li 외(2026)의 서베이는 로봇 시스템의 음성 인식이 온라인 API 서비스에만 의존해야 하는지를 물으며 Whisper 같은 심층 학습 모델까지의 발전과 ROS 기반·클라우드 기반·혼합 배치 전략, 다양하고 동적인 환경에서 강건한 음성 인식을 배치하는 과제를 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-866"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록은 ROS-based, cloud-based, hybrid 배치 전략과 \"challenges of deploying robust speech recognition\" 를 다룬다고 적는다(2026-07-13 제출). 소음·다국어 수치는 초록에 없다.",
+        "as_of": "2026-07-13",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f25",
+        "claim": "Nandkumar·Peternel(Frontiers in Robotics and AI, 2025-04-29)은 네덜란드 슈퍼마켓의 상품 안내·회수 로봇을 위한 음성 대화 인터페이스에서 네 가지 음성 인식 기술을 영어·네덜란드어와 성별 집단(참가자 40명)으로 비교해 Whisper 가 가장 낮은 단어 오류율을 보였고, 질의 분류기와 상·중·하 세 층의 언어 모델이 1,612개 상품 데이터베이스에 근거해 답하게 한 다층 구조가 참가자 16명 평가에서 GPT-4 Turbo 보다 13개 항목 중 4개에서 유의하게 높았다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-869"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "본문: \"Whisper leads in speech recognition accuracy between genders and languages.\" 질의 분류기 정확도 약 87%(영어·네덜란드어), 모든 응답이 상품 DB 항목을 참조해 환각을 줄였다고 적는다.",
+        "as_of": "2025-04-29",
+        "site_type": "상업 시설",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f26",
+        "claim": "van Dam(2025)의 다중 모달 GUI 아키텍처는 응용 프로그램의 화면 이동 그래프와 의미를 모델 컨텍스트 프로토콜로 노출하고 뷰모델이 현재 보이는 화면에 적용되는 도구와 전역 도구를 언어 모델에 제공해 음성 입력과 시각 인터페이스의 정렬과 양쪽 모달리티의 일관된 피드백을 목표로 하며, 참조 구현(langbar)을 공개하고 로컬 배치 가능한 개방 가중치 모델이 전체 정확도에서 선도 상용 모델에 근접한다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-861"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"makes an application's navigation graph and semantics available through the Model Context Protocol (MCP)\". 목표는 음성 입력과 시각 인터페이스의 신뢰할 수 있는 정렬과 모달리티 간 일관된 피드백(2025-10-09 개정).",
+        "as_of": "2025-10-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f27",
+        "claim": "화면 상태와 가능한 동작을 도구로 노출해 음성·대화와 화면을 맞추는 구조(f26)와 화면 선택을 대화에 반영하는 이 영역의 요구를 함께 보면, 지도에서 고른 장소·로봇을 대화가 참조하고 대화로 바꾼 값이 편집 화면에 바로 보이게 하려면 편집기의 현재 선택·화면 상태를 언어 모델에 자원으로 주고 변경은 같은 상태 저장소를 거치게 하는 구조가 필요할 것으로 보이나, 로봇 지도·시나리오 편집기에 특화된 공개 구현은 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-861",
+          "ref-856"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f26 의 GUI–MCP 구조와 f2 의 MCP 자원·도구 개념을 이 영역의 '대화와 화면 편집 연동' 요구에 대응시킨 추정이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f28",
+        "claim": "확인한 자료를 종합하면 13. 대화형 기능의 신뢰·기반에서 ROP가 직접 맡을 범위는 해석 결과에 근거(장소·물품·문서 식별자)를 붙이고 불확실한 항목만 되묻는 흐름, 도구 호출 수준의 권한 검사와 실행 전 승인 관문, 대화·도구 호출·실제 제공 모델의 기록, 모델 공급자 연결·교체 정책, 오류 유형별 평가 시나리오이며, 음성 인식 엔진의 정확도와 언어 모델 자체의 안전 정렬은 연계 대상으로 두는 것이 분류 원문 19장의 경계에 맞을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-856",
+          "ref-868",
+          "ref-865",
+          "ref-866",
+          "ref-858"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f15·f22·f24·f8 을 원문 19장의 '로봇 자체 지능·제어'와 외부 도구 경계에 대응시킨 추정이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f29",
+        "claim": "연계 대상: 음성 인식 모델의 소음·다국어 강건성(Whisper 등)과 언어 모델 공급자의 탈옥 방어·안전 학습은 분류 원문 19장의 로봇 자체 지능 및 외부 도구 쪽이며, 이종 제조사를 잇는 ROP 는 인식 결과의 확인 절차와 모델 출력의 검증·승인·기록을 맡고 인식·모델 내부 성능은 공급자에게 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-866",
+          "ref-869",
+          "ref-857"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f24 의 배치 전략, f25 의 음성 인식 비교, f3 의 모델 수준 탈옥을 경계 판단에 쓴 추정이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f30",
+        "claim": "불확실도 보정·되묻기(KnowNo, LBAP), 세분화 벤치마크(Embodied Agent Interface), 탈옥 공격·방어(RoboPAIR, Huang 외)는 L. AI·학습 기술의 44. 로봇 기반 모델·언어 모델 계획과 47. AI·학습·적응과 모델 운영에 속하는 연구 방법이며, 원문 교차 규칙에 따라 이 영역과 함께 8. 채팅으로 맵 작성부터 12. 채팅으로 업무 지시·오케스트레이션까지의 대화 영역, 권한·기록은 51. 인증·권한·격리와 52. 통신 보호·위협 관리·감사, 대화 기록의 개인정보는 53. 개인정보·영상 데이터, 평가는 54. 시험·형식 검증·벤치마크에 연결해야 한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-858",
+          "ref-857",
+          "ref-863"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "finding 의 주제를 분류 원문의 대분류·세부영역과 교차 규칙에 대응시킨 판단이다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-855",
+        "org": "OWASP GenAI Security Project",
+        "title": "OWASP Top 10 for LLM Applications 2025",
+        "published": "2025",
+        "url": "https://genai.owasp.org/llm-top-10/",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델 응용 프로그램의 열 가지 위험 목록(프롬프트 주입, 민감 정보 노출, 공급망, 부적절한 출력 처리, 과도한 에이전시, 잘못된 정보 등)을 항목별 한 줄 설명과 함께 게시한 목록 페이지다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-856",
+        "org": "Model Context Protocol (Anthropic 주도 오픈소스 프로젝트)",
+        "title": "Specification — Model Context Protocol (2025-06-18)",
+        "published": "2025-06-18",
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "MCP 명세 개요 페이지. '보안과 신뢰·안전' 절에 사용자 동의·제어, 데이터 프라이버시, 도구 안전(도구 호출 전 명시적 동의, 도구 설명 불신), 샘플링 제어 원칙과 구현 지침을 둔다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-857",
+        "org": "Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J.",
+        "title": "Jailbreaking LLM-Controlled Robots",
+        "published": "2024-11-09",
+        "url": "https://arxiv.org/abs/2410.13691",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델 제어 로봇을 탈옥시키는 RoboPAIR 를 제안하고 자율주행 언어 모델·Jackal UGV·Unitree Go2 의 세 설정에서 100% 공격 성공률과 유해 물리 동작을 보고한 프리프린트(2024-10-17 제출).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-858",
+        "org": "Li, M., Zhao, S., Wang, Q., Wang, K., Zhou, Y., Srivastava, S., Gokmen, C., Lee, T., Li, L. E., Zhang, R., Liu, W., Liang, P., Li, F.-F., Mao, J., & Wu, J. (NeurIPS 2024 Datasets and Benchmarks)",
+        "title": "Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making",
+        "published": "2025-01-19",
+        "url": "https://arxiv.org/abs/2410.07166",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "체화 의사결정을 목표 해석·하위 목표 분해·행동 순서화·전이 모델링의 네 모듈로 나누고 환각·어포던스·계획 오류를 구분하는 세분화 지표로 언어 모델을 평가하는 벤치마크(2024-10-09 제출).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-859",
+        "org": "Huang, X., Karthick V B, S., Chen, T., Bryson, M., Chaffey, T., Chen, H., Choo, K.-K. R., & Manchester, I. R.",
+        "title": "Trust in LLM-controlled Robotics: a Survey of Security Threats, Defenses and Challenges",
+        "published": "2025-12-17",
+        "url": "https://arxiv.org/abs/2601.02377",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델 제어 로봇의 체화 격차를 중심으로 탈옥·백도어·다중 모달 프롬프트 주입 등 공격 벡터 분류와 형식 안전 명세·런타임 강제·다중 언어 모델 감독·프롬프트 강화 등 방어, 평가 데이터셋·벤치마크를 정리한 서베이.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-860",
+        "org": "과학기술정보통신부·한국정보통신기술협회(TTA)",
+        "title": "2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야 (일러두기)",
+        "published": "2024-02",
+        "url": "https://tta-trustworthy-ai.gitbook.io/general",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "인공지능 서비스·제품 개발 과정의 기술적 신뢰성 확보 방안을 다루는 안내서의 웹 문서판. 2024년 2월 발간 뒤 2025-08-14까지 갱신되었고, 2024년 생성 AI 기반 서비스 분야 안내서가 추가되었다고 적는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-861",
+        "org": "van Dam, H. G. W.",
+        "title": "A Multimodal GUI Architecture for Interfacing with LLM-Based Conversational Assistants",
+        "published": "2025-10-09",
+        "url": "https://arxiv.org/abs/2510.06223",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "응용 프로그램의 화면 이동 그래프와 의미를 MCP 로 노출해 음성 대화 비서와 GUI 를 맞추는 아키텍처를 제안하고 참조 구현(langbar)과 개방 가중치 모델 평가를 담은 프리프린트(2025-08-31 제출).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-862",
+        "org": "개인정보보호위원회",
+        "title": "생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.)",
+        "published": "2025-08",
+        "url": "https://www.privacy.go.kr/front/bbs/bbsView.do?bbsNo=BBSMSTR_000000000049&bbscttNo=20836",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "개인정보보호위원회 공식 사이트 게시물(2025-08-22). 생성형 AI 수명주기 단계별 개인정보 처리·보호 이슈와 법적 기준·안전조치를 제시하는 안내서의 PDF 배포 안내이며, PDF 본문은 이번 실행에서 열지 못했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-863",
+        "org": "European Commission — AI Act Service Desk",
+        "title": "Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act)",
+        "published": null,
+        "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-12",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "유럽위원회 서비스 데스크가 게재한 AI Act 제12조 조문. 고위험 AI 시스템의 수명 기간 자동 사건 기록(로그)과 추적 가능성 요건, 원격 생체 식별 시스템의 최소 로그 항목을 규정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-864",
+        "org": "Mullen, J. F., Jr., & Manocha, D.",
+        "title": "Towards Robots That Know When They Need Help: Affordance-Based Uncertainty for Large Language Model Planners",
+        "published": "2025-06-17",
+        "url": "https://arxiv.org/abs/2403.13198",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "장면 근거와 세계 지식을 베이즈 추론으로 결합해 언어 모델 계획기의 확신도를 보정하는 LBAP 를 제안하고 성공률 70%에서 사람 도움 요청률을 33% 넘게 줄였다고 보고한 프리프린트(2024-03-19 제출).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-865",
+        "org": "Zhang, Y., Zhang, Z.-H., & Qin, H.",
+        "title": "Which Model Is Actually Serving You? IRIS: Budgeted Black-Box Auditing of Model Substitution and Routing Dilution in LLM Gateways",
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.20860",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델 게이트웨이의 모델 대체와 라우팅 희석을 응답 텍스트만으로 감사하는 IRIS 를 제안하고 상용 라이브러리·교차 제공자 감사 결과를 보고한 프리프린트.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-866",
+        "org": "Li, S., Li, J., Schijve, F., Hu, J., & Barakova, E.",
+        "title": "Is That All We Can Do? Relying on Online API Services: A Survey of Localized Speech Recognition Model Integration in Robotic Systems",
+        "published": "2026-07-13",
+        "url": "https://arxiv.org/abs/2607.11792",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "로봇 시스템의 음성 인식 통합을 온라인 API 의존과 로컬 배치 관점에서 정리한 서베이. Whisper 등 심층 학습 모델, ROS 기반·클라우드·혼합 배치 전략, 동적 환경의 강건성 과제를 다룬다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-867",
+        "org": "Yao, S., Shinn, N., Razavi, P., & Narasimhan, K. (Sierra)",
+        "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+        "published": "2024-06-17",
+        "url": "https://arxiv.org/abs/2406.12045",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델이 흉내 내는 사용자와 도구·정책을 가진 에이전트의 대화를 시뮬레이션해 최종 데이터베이스 상태로 성공을 판정하고 반복 시행 신뢰성 지표 pass^k 를 제안한 벤치마크.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-868",
+        "org": "Michael, A. E., & Roesner, F.",
+        "title": "How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement",
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.13718",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "AI 에이전트의 사용자 수준 권한 제안 21건과 상용 에이전트 5종을 조사해 권한 정책 명세와 강제 방식의 분류를 만들고 실시간 승인 부담과 자동 검토 불투명성의 상충을 보고한 프리프린트(2026-07-15 제출).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2607.13718"
+      },
+      {
+        "id": "ref-869",
+        "org": "Nandkumar, C., & Peternel, L. (Delft University of Technology), Frontiers in Robotics and AI",
+        "title": "Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents",
+        "published": "2025-04-29",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12069059/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "네덜란드 슈퍼마켓 로봇의 음성 대화 인터페이스에서 네 가지 음성 인식 기술을 영어·네덜란드어·성별로 비교하고, 상품 데이터베이스에 근거한 다층 언어 모델 챗봇을 GPT-4 Turbo 와 사용자 평가로 비교한 학술지 논문(PMC 전문).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-351",
+        "org": "Ren, A. Z., Dixit, A., Bodrova, A., Singh, S., Tu, S., Brown, N., Xu, P., Takayama, L., Xia, F., Varley, J., Xu, Z., Sadigh, D., Zeng, A., & Majumdar, A. (CoRL 2023)",
+        "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+        "published": "2023-09-04",
+        "url": "https://arxiv.org/abs/2307.01928",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "등각 예측으로 언어 모델 계획기의 불확실도를 보정해 후보 행동 집합이 하나면 실행하고 여러 개면 사람에게 되묻는 KnowNo 틀을 제안한 논문.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-841",
+        "org": "Laban, P., Hayashi, H., Zhou, Y., & Neville, J.",
+        "title": "LLMs Get Lost In Multi-Turn Conversation",
+        "published": "2025-05-09",
+        "url": "https://arxiv.org/abs/2505.06120",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "20만 건 이상의 시뮬레이션 대화로 언어 모델의 다중 턴 성능이 단일 턴보다 평균 39% 낮고 원인이 신뢰성 저하임을 보고한 프리프린트.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-165",
+        "org": "Li, P., An, Z., Abrar, S., & Zhou, L.",
+        "title": "Large Language Models for Multi-Robot Systems: A Survey",
+        "published": "2025-02-06",
+        "url": "https://arxiv.org/abs/2502.03814",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "다중 로봇 시스템에 언어 모델을 쓰는 연구를 작업 배정·동작 계획·행동 생성·사람 개입의 네 층으로 정리하고 사람 개입의 반응적 역할과 운영자 인지 부담 미정량화를 빈틈으로 지적한 서베이.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-753",
+        "org": "Grigorev, D. S., Kovalev, A. K., & Panov, A. I. (IROS 2025)",
+        "title": "VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots",
+        "published": "2025-07-07",
+        "url": "https://arxiv.org/abs/2507.05118",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자연어 지시를 선형 시간 논리로 옮긴 뒤 언어 모델 추론으로 행동 순서열의 논리 일관성과 빠진 단계를 실행 전에 찾는 검증 모듈을 제안한 논문.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f3·f5(탈옥이 배치된 로봇의 물리 동작으로 이어짐), f14(다중 턴에서 신뢰성 저하), f9(도구 에이전트의 낮은 반복 신뢰성), f15·f16(승인 부담과 자동 검토의 불투명성) / 섹션 4: f1(프롬프트 주입·과도한 에이전시), f3(탈옥), f10·f11(불확실도 보정·되묻기), f8(환각·어포던스·계획 오류), f9(pass^k), f15(권한 명세·강제 방식, 승인 피로), f22(모델 대체·라우팅 희석) / 섹션 5: 상업 시설 — f25(슈퍼마켓 로봇의 음성 대화, 다국어 음성 인식 비교, 상품 DB 근거 응답; 네덜란드 사례임을 명시), 그 밖의 현장 유형 사례는 이번 조사에서 확인되지 않음을 서술 / 섹션 6: 오해석 방지·근거 표시 f10·f11·f12·f7·f25(불확실한 항목만 되묻기, 실행 전 자동 검증, DB 근거 응답), 권한·승인 f2·f6·f15·f17, 모델 연결·교체 f22·f23, 평가 f8·f9·f13, 화면 연동 f26·f27, 음성·다국어 f24·f25 / 섹션 7: f1(OWASP LLM Top 10 2025), f2(MCP 명세 보안 원칙), f18(EU AI Act 제12조), f19(개인정보위 생성형 AI 안내서), f20(TTA 신뢰할 수 있는 AI 개발 안내서), f26(langbar 참조 구현), f8·f9(공개 벤치마크) / 섹션 8: f3, f4, f8, f9, f10, f11, f14, f15, f16, f22, f24, f25, f26, 국내 f19·f20 / 섹션 9: f28(직접 범위: 근거 표시·되묻기, 권한 검사·승인 관문, 기록, 모델 정책, 평가), f29(연계 대상: 음성 인식 엔진 성능, 언어 모델 공급자의 안전 정렬) / 섹션 10: 8. 채팅으로 맵 작성·9. 채팅으로 시나리오 구성·10. 채팅으로 로봇 구성·11. 채팅으로 실제 상황 시뮬레이션 재현·12. 채팅으로 업무 지시·오케스트레이션(f6·f13·f27, 이 영역이 다섯 대화 영역의 공통 기반), 44. 로봇 기반 모델·언어 모델 계획·47. AI·학습·적응과 모델 운영(f30, 교차 규칙), 51. 인증·권한·격리(f15·f17), 52. 통신 보호·위협 관리·감사(f1·f3·f4·f18), 53. 개인정보·영상 데이터(f19·f21), 54. 시험·형식 검증·벤치마크(f8·f9), 20. 로봇·제조사 관제 연동(f2·f6 승인 관문 위치), 48. 안전·위험 관리(f3), 57. 자산·소프트웨어 수명주기 관리(f23 모델 교체), 64. 상업 시설(f25) / 섹션 11: 기존 oq-125·oq-127(f13 으로 부분 진전, 미해결), oq-133·oq-136(미조사), oq-139(f15·f16·f17 로 부분 진전, 미해결), oq-141(f2·f6 으로 부분 진전, 공개 구현 미확인)과 open_questions_new 4건. 다음 실행 후보: 52. 통신 보호·위협 관리·감사 페이지에 f1·f3·f4 반영, 51. 인증·권한·격리 페이지에 f15 반영, 54. 시험·형식 검증·벤치마크 페이지에 f8·f9 반영, 12. 채팅으로 업무 지시·오케스트레이션 페이지에 f2·f6 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "프롬프트 주입",
+        "term_en": "Prompt Injection",
+        "definition": "사용자 입력이나 모델이 읽는 문서·도구 설명에 숨긴 지시로 언어 모델의 행동을 의도치 않게 바꾸는 공격으로, 도구를 부르는 에이전트에서는 무단 동작으로 이어질 수 있다."
+      },
+      {
+        "term_ko": "탈옥",
+        "term_en": "Jailbreak",
+        "definition": "언어 모델의 안전 제한을 우회하도록 유도하는 입력 기법으로, 로봇을 제어하는 언어 모델에서는 유해한 물리 동작을 끌어내는 데 쓰일 수 있다."
+      },
+      {
+        "term_ko": "승인 피로",
+        "term_en": "Approval Fatigue (Consent Fatigue)",
+        "definition": "에이전트의 동작마다 사람에게 승인을 묻는 방식이 반복되어 사용자가 검토 없이 허용하거나 자동 승인으로 바꾸게 되는 현상으로, 실시간 승인 관문의 실효성을 떨어뜨린다."
+      },
+      {
+        "term_ko": "모델 대체·라우팅 희석",
+        "term_en": "Model Substitution / Routing Dilution",
+        "definition": "언어 모델 게이트웨이가 요청한 모델 대신 다른 모델로 응답하거나(대체) 요청의 일부만 약속한 모델로 보내는(희석) 현상으로, 재현성과 모델 교체 정책의 통제를 어렵게 한다."
+      }
+    ],
+    "open_questions_new": [
+      "ROP 의 로봇 대화 기능이 국내 인공지능 기본법의 고영향 인공지능이나 EU AI Act 의 고위험 AI 시스템에 해당하는지, 해당한다면 대화 기록 자동 로그의 항목과 보존 기간을 어떻게 정해야 하는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 59. 법·규제·보험·라이선스, 53. 개인정보·영상 데이터 | 근거: f21 | 종류: 일반",
+      "로봇 대화 지시에 특화된 프롬프트 주입·탈옥 방어(도구 설명 신뢰 경계, 실행 전 물리 제약 검사, 다중 모델 감독)의 효과를 잰 공개 벤치마크나 현장 시험 결과가 있는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 52. 통신 보호·위협 관리·감사, 48. 안전·위험 관리 | 근거: f4 | 종류: 일반",
+      "언어 모델 게이트웨이의 모델 대체·라우팅 희석을 ROP 운영에서 탐지·기록하고 계약으로 막는 실무 절차나 사례가 있는가? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 57. 자산·소프트웨어 수명주기 관리, 58. 다사업자 책임·계약·데이터 | 근거: f22 | 종류: 일반",
+      "국내 물류창고·병원·제조 공장에서 로봇 소음과 한국어 조건의 음성 지시 인식률과 오인식 시 확인 절차를 보고한 자료가 있는가(이번 조사에서 확인된 현장 사례는 네덜란드 슈퍼마켓 연구뿐이다)? | 관련 영역: 13. 대화형 기능의 신뢰·기반, 60. 노동·수용성·접근성, 61. 물류창고 | 근거: f24 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 19,
+      "cross_checked_count": 2,
+      "unverified": [
+        "f19 개인정보위 안내서 PDF 원문 미열람(smartcity.go.kr 사본 ECONNRESET 뒤 404, pipc.go.kr ECONNRESET, kisa.or.kr 인증서 오류) — 4단계 구성·AI 에이전트 관련 내용은 검색 결과 요약에서만 보여 claim 에 넣지 않음",
+        "f20 TTA 안내서의 개발 요구사항 15개·검증항목 67개 수치는 검색 결과 요약에만 있고 연 페이지에 없어 claim 에 넣지 않음; 생성 AI 기반 서비스 분야 페이지의 세부 검증항목도 요약 도구 응답이 불명확해 인용하지 않음",
+        "f18 EU AI Act 조문 게재 페이지에 발행일·적용일 표시 없음(published null)",
+        "f8 Embodied Agent Interface 의 시뮬레이터·모델별 결과 수치는 초록에 없어 미확인",
+        "f24 음성 인식 서베이의 소음·다국어 수치는 초록에 없어 미확인",
+        "f3 RoboPAIR 의 방어 제안은 초록에 없어 미확인",
+        "f12·f5 외 모든 finding 교차 확인 실패(연구·문서마다 발행 주체 한 곳)",
+        "산업 현장 음성 제어 사례(ScienceDirect·SSRN 게재 'LLM-driven agent for speech-enabled control of industrial robots', 눈게 검사)는 403 으로 열지 못해 넣지 않음",
+        "SMaRTAban(영어·슬로바키아어 음성 제어 사족 로봇, Springer)은 인증 리다이렉트로 열지 못해 넣지 않음",
+        "CURE(arXiv 2510.08044, 결합 불확실도 추정)는 열었으나 되묻기·실행 결정을 초록이 밝히지 않아 출처 상한 때문에 제외",
+        "OpenTelemetry GenAI 시맨틱 규약(도구 호출·에이전트 스팬 기록)은 검색 결과에서만 확인했고 출처 상한으로 넣지 못함 — 대화·도구 호출 기록 형식의 후보",
+        "MiniScope(arXiv 2512.11147, 도구 호출 최소 권한)는 열었으나 출처 상한으로 제외(f17 의 결정적 권한 강제 근거로는 ref-868 만 씀)",
+        "oq-139·oq-141 은 f15·f16·f17·f2·f6 으로 부분 진전만 있고 승인 단위를 정한 연구나 공개 구현은 확인하지 못해 해결 제안하지 않음",
+        "oq-133·oq-136 은 이번 실행에서 조사하지 않음"
+      ],
+      "scope_violations": [
+        "f29: 음성 인식 엔진의 소음·다국어 성능과 언어 모델 공급자의 안전 학습은 분류 원문 19장의 로봇 자체 지능·외부 도구 쪽이므로 '연계 대상: '으로 표시함",
+        "f3: RoboPAIR 의 자율주행 언어 모델 사례는 로봇 자체 지능 수준의 공격이므로 위협 근거로만 제안하고 ROP 직접 범위로 서술하지 않음",
+        "f18·f19·f20: 법·규제·안내서 내용은 59. 법·규제·보험·라이선스와 53. 개인정보·영상 데이터의 범위와 겹치므로 이 영역에서는 대화 기록 보존·보호 요구의 근거로만 제안함",
+        "f9·f15: 로봇이 아닌 일반 도구 에이전트 연구는 평가 지표·권한 설계의 선례로만 제안함",
+        "f25: 슈퍼마켓 안내·회수 로봇 사례는 다중 로봇 오케스트레이션이 아니므로 음성·다국어·근거 응답 사례로만 제안함"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-855~ref-869, 예약 구간 안) 상한 도달로 위 미확인 항목의 후보 출처(OpenTelemetry GenAI 규약, MiniScope, CURE, 산업 음성 제어 사례)를 넣지 못했다. 원문 열람 15건(webfetch 15; ref-868 은 arXiv HTML 전문, ref-869 는 PMC 전문, 나머지 논문은 arXiv 초록 페이지), 재사용 4건(ref-351·ref-841·ref-165·ref-753, 이전 브리프 2026-09-29-04·05 의 값 그대로, 이번에 다시 열지 않음). 이전 실행 2026-09-29-05 가 ref-855~ref-862 로 낸 출처(HMCF, ETRI 동향, ROSA, OSRA MCP 세션 등)는 이번 실행의 예약 구간과 번호가 겹치고 참고문헌 목록 입력(0건 요약)에 없어 재사용하지 않았으며, 그 가운데 OSRA Interop SIG MCP 세션(oq-141 근거)은 이번 finding 에 넣지 않았다 — 퍼블리셔가 URL 로 합칠 때 번호 충돌을 확인해야 한다. 교차 확인 2건(f5: OWASP·Robey 외·Huang 외, f12: KnowNo·LBAP — 모두 발행 주체가 다름). 모든 finding 신뢰도 medium 이하(high 신뢰도 출처 ref-856·ref-860·ref-863·ref-869 는 각각 단일 출처 finding 에만 쓰임). 분류 원문 핵심 질문(해석이 틀려도 잘못된 실행으로 이어지지 않게 하려면)에는 f2·f6(호스트 쪽 승인 관문과 신뢰하지 않는 입력 처리), f7·f10·f11·f12(실행 전 자동 검증과 불확실도 보정 되묻기), f15·f17(도구 호출 수준의 결정적 권한 강제), f18·f21(자동 기록), f22·f23(모델 대체 감사)로 답했으며 결론은 '모델 밖의 검증·승인·권한·기록 층이 필요하고 승인 단위와 부담은 아직 정량화되지 않았다'는 추정(f6·f13·f17·f23·f28)이다. 현장 유형: 상업 시설(f25, 네덜란드 슈퍼마켓 연구)만 확인했고 물류창고·제조 공장·병원·가정·실외 사례는 없다. 국내 자료는 TTA 안내서(f20)와 개인정보위 안내서(f19) 두 건이며 국내 로봇 대화 기능 사례는 찾지 못했다. L. AI·학습 기술 관련 finding(f3·f4·f8·f10·f11·f30)은 44. 로봇 기반 모델·언어 모델 계획·47. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 벤더 문서 출처 없음(OWASP 는 업계 보고서, MCP 명세는 오픈소스 문서로 분류). 용어집에 이미 있는 환각·과도한 에이전시·사람 참여 루프·모델 컨텍스트 프로토콜·구조화 출력·제약 디코딩·등각 예측·불확실도 정렬·자동화 편향·역할 기반 접근 통제·감사 추적·pass^k·사용자 시뮬레이터·명확화 질문은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음."
+    }
+  },
+  "ttft_ms": 31751,
+  "type": "result",
+  "duration_ms": 704414,
+  "uuid": "2aa6895a-eb73-445a-a8a7-182e54230a52",
+  "ttft_stream_ms": 1973,
+  "time_to_request_ms": 90,
+  "first_content_frame_ms": 1974,
+  "time_to_request_from_spawn_ms": 4764431,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790657520010.8657,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 705.8
+}

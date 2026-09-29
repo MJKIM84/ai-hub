@@ -20,6 +20,78 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-06 | 갱신 | [docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | 3~11절 신규 작성(seed → draft), 출처 19건(ref-855~ref-868 신규, ref-351·ref-840·ref-165·ref-753 재사용), 상업 시설 사례 1건, 열린 질문 4건 추가, 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s6.md](topics/2026/2026-09-29-area13-s6.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "6. 대표 접근법과 기술" 절(3,607자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s8.md](topics/2026/2026-09-29-area13-s8.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "8. 대표 연구와 자료" 절(1,988자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s11.md](topics/2026/2026-09-29-area13-s11.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "11. 열린 질문" 절(1,562자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s4.md](topics/2026/2026-09-29-area13-s4.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "4. 핵심 개념과 용어" 절(1,495자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s10.md](topics/2026/2026-09-29-area13-s10.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,267자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s7.md](topics/2026/2026-09-29-area13-s7.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,256자)을 옮겼다 |
+| 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s3.md](topics/2026/2026-09-29-area13-s3.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "3. 왜 중요한가" 절(1,085자)을 옮겼다 |
+| 2026-09-29-06 | 요약 | [docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | 13. 대화형 기능의 신뢰·기반: 3~11절 신규 작성(seed → draft), 출처 19건(ref-855~ref-868 신규, 4건 재사용), 상업 시설 사례 1건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-06 | 생성 | [docs/references/ref-855.md](references/ref-855.md) | 참고문헌 ref-855 등록: OWASP Top 10 for LLM Applications 2025 |
+| 2026-09-29-06 | 생성 | [docs/references/ref-856.md](references/ref-856.md) | 참고문헌 ref-856 등록: Specification — Model Context Protocol (2025-06-18) |
+| 2026-09-29-06 | 생성 | [docs/references/ref-857.md](references/ref-857.md) | 참고문헌 ref-857 등록: Jailbreaking LLM-Controlled Robots |
+| 2026-09-29-06 | 생성 | [docs/references/ref-858.md](references/ref-858.md) | 참고문헌 ref-858 등록: Embodied Agent Interface: Benchmarking LLMs for Embodied Dec… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-859.md](references/ref-859.md) | 참고문헌 ref-859 등록: Trust in LLM-controlled Robotics: a Survey of Security Threa… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-860.md](references/ref-860.md) | 참고문헌 ref-860 등록: 2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야 (일러두기) |
+| 2026-09-29-06 | 생성 | [docs/references/ref-861.md](references/ref-861.md) | 참고문헌 ref-861 등록: A Multimodal GUI Architecture for Interfacing with LLM-Based… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-862.md](references/ref-862.md) | 참고문헌 ref-862 등록: 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.) |
+| 2026-09-29-06 | 생성 | [docs/references/ref-863.md](references/ref-863.md) | 참고문헌 ref-863 등록: Article 12: Record-keeping (Regulation (EU) 2024/1689, Artif… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-864.md](references/ref-864.md) | 참고문헌 ref-864 등록: Towards Robots That Know When They Need Help: Affordance-Bas… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-865.md](references/ref-865.md) | 참고문헌 ref-865 등록: Which Model Is Actually Serving You? IRIS: Budgeted Black-Bo… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-866.md](references/ref-866.md) | 참고문헌 ref-866 등록: Casting Everything to Online API Services? A Survey of Integ… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-867.md](references/ref-867.md) | 참고문헌 ref-867 등록: How Agents Ask for Permission: User Permissions for AI Agent… |
+| 2026-09-29-06 | 생성 | [docs/references/ref-868.md](references/ref-868.md) | 참고문헌 ref-868 등록: Enhancing supermarket robot interaction: an equitable multi-… |
+| 2026-09-29-06 | 생성 | [docs/glossary/prompt-injection.md](glossary/prompt-injection.md) | 용어집 항목 프롬프트 주입 |
+| 2026-09-29-06 | 생성 | [docs/glossary/jailbreak.md](glossary/jailbreak.md) | 용어집 항목 탈옥 |
+| 2026-09-29-06 | 생성 | [docs/glossary/approval-fatigue.md](glossary/approval-fatigue.md) | 용어집 항목 승인 피로 |
+| 2026-09-29-06 | 생성 | [docs/glossary/model-substitution-and-routing-dilution.md](glossary/model-substitution-and-routing-dilution.md) | 용어집 항목 모델 대체·라우팅 희석 |
+| 2026-09-29-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-09-29-05 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | 3~11절 신규 작성(seed → draft), 출처 18건(ref-165~ref-847, ref-110·ref-111·ref-125 재사용), 병원·실외 사례 2건, 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 10건과 2차 수정 지시 8건(10절 연결 다섯 항목·8절 FLEET·3절 의견 주체·11절 보조 문장의 태그·문구 수정) 이행 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s6.md](topics/2026/2026-09-29-area12-s6.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "6. 대표 접근법과 기술" 절(3,807자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s8.md](topics/2026/2026-09-29-area12-s8.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "8. 대표 연구와 자료" 절(1,970자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s7.md](topics/2026/2026-09-29-area12-s7.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,291자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s10.md](topics/2026/2026-09-29-area12-s10.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,270자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s4.md](topics/2026/2026-09-29-area12-s4.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "4. 핵심 개념과 용어" 절(1,255자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s3.md](topics/2026/2026-09-29-area12-s3.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "3. 왜 중요한가" 절(1,149자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s11.md](topics/2026/2026-09-29-area12-s11.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "11. 열린 질문" 절(852자)을 옮겼다 |
+| 2026-09-29-05 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | 12. 채팅으로 업무 지시·오케스트레이션: 3~11절 신규 작성(seed → draft), 출처 18건, 병원·실외 사례 2건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 10건과 2차 수정 지시 8건 이행 |
+| 2026-09-29-05 | 생성 | [docs/references/ref-849.md](references/ref-849.md) | 참고문헌 ref-849 등록: HMCF: A Human-in-the-loop Multi-Robot Collaboration Framewor… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-850.md](references/ref-850.md) | 참고문헌 ref-850 등록: Defining and Monitoring Complex Robot Activities via LLMs an… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-851.md](references/ref-851.md) | 참고문헌 ref-851 등록: 거대언어모델 기반 로봇 인공지능 기술 동향 |
+| 2026-09-29-05 | 생성 | [docs/references/ref-852.md](references/ref-852.md) | 참고문헌 ref-852 등록: Enabling Novel Mission Operations and Interactions with ROSA… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-853.md](references/ref-853.md) | 참고문헌 ref-853 등록: Foundation-Model-Based Agents in Industrial Automation: Purp… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-854.md](references/ref-854.md) | 참고문헌 ref-854 등록: Interop SIG, 02 July 2026: Natural-Language Control of Open-… |
+| 2026-09-29-05 | 생성 | [docs/glossary/pre-execution-plan-verification.md](glossary/pre-execution-plan-verification.md) | 용어집 항목 사전 실행 계획 검증 |
+| 2026-09-29-05 | 생성 | [docs/glossary/supervisory-control.md](glossary/supervisory-control.md) | 용어집 항목 감독 제어 |
+| 2026-09-29-05 | 생성 | [docs/glossary/failure-explanation.md](glossary/failure-explanation.md) | 용어집 항목 실패 설명 |
+| 2026-09-29-05 | 생성 | [docs/glossary/robot-task-fitness-matrix.md](glossary/robot-task-fitness-matrix.md) | 용어집 항목 로봇–작업 적합도 행렬 |
+| 2026-09-29-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-29-04 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | 3~11절 신규 작성(seed → draft), 출처 15건(ref-351~ref-848), 병원 사례 1건, 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s6.md](topics/2026/2026-09-29-area09-s6.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "6. 대표 접근법과 기술" 절(2,863자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s8.md](topics/2026/2026-09-29-area09-s8.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "8. 대표 연구와 자료" 절(1,570자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s4.md](topics/2026/2026-09-29-area09-s4.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "4. 핵심 개념과 용어" 절(1,364자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s3.md](topics/2026/2026-09-29-area09-s3.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "3. 왜 중요한가" 절(1,211자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s7.md](topics/2026/2026-09-29-area09-s7.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,204자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s10.md](topics/2026/2026-09-29-area09-s10.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,022자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s11.md](topics/2026/2026-09-29-area09-s11.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "11. 열린 질문" 절(677자)을 옮겼다 |
+| 2026-09-29-04 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | 9. 채팅으로 시나리오 구성: 3~11절 신규 작성(seed → draft), 출처 15건, 병원 사례 1건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-04 | 생성 | [docs/references/ref-839.md](references/ref-839.md) | 참고문헌 ref-839 등록: Uncertainty-Aware Clarification in LLM Agents with Informati… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-840.md](references/ref-840.md) | 참고문헌 ref-840 등록: LLMs Get Lost In Multi-Turn Conversation |
+| 2026-09-29-04 | 생성 | [docs/references/ref-841.md](references/ref-841.md) | 참고문헌 ref-841 등록: LLMs Get Lost in Evolving User Intent |
+| 2026-09-29-04 | 생성 | [docs/references/ref-842.md](references/ref-842.md) | 참고문헌 ref-842 등록: Intent-Driven Situation Tracking for User-Centric Multi-Turn… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-843.md](references/ref-843.md) | 참고문헌 ref-843 등록: Process Modeling With Large Language Models |
+| 2026-09-29-04 | 생성 | [docs/references/ref-844.md](references/ref-844.md) | 참고문헌 ref-844 등록: Automated BPMN Model Generation from Textual Process Descrip… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-845.md](references/ref-845.md) | 참고문헌 ref-845 등록: ConformalNL2LTL: Translating Natural Language Instructions i… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-846.md](references/ref-846.md) | 참고문헌 ref-846 등록: Specification Patterns for Robotic Missions |
+| 2026-09-29-04 | 생성 | [docs/references/ref-847.md](references/ref-847.md) | 참고문헌 ref-847 등록: Agile assistive hospital robot for suboptimal Task execution… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-848.md](references/ref-848.md) | 참고문헌 ref-848 등록: 자연어 로봇 제어 기술 동향: 분류, 기술, 응용 |
+| 2026-09-29-04 | 생성 | [docs/glossary/uncertainty-alignment.md](glossary/uncertainty-alignment.md) | 용어집 항목 불확실도 정렬 |
+| 2026-09-29-04 | 생성 | [docs/glossary/underspecification.md](glossary/underspecification.md) | 용어집 항목 과소명세 |
+| 2026-09-29-04 | 생성 | [docs/glossary/mission-specification-pattern.md](glossary/mission-specification-pattern.md) | 용어집 항목 미션 명세 패턴 |
+| 2026-09-29-04 | 생성 | [docs/glossary/situation-state-tracking.md](glossary/situation-state-tracking.md) | 용어집 항목 상황 상태 추적 |
+| 2026-09-29-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-29-03 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 9건 이행. 2차 재검증 1회차 수정 8건 이행(약어 첫 등장 풀어 쓰기, 9절 원문 문장 재서술, 6절 단락 분리, 10절 태그 2건, 6절 절 참조 이름 병기). 2차 재검증 2회차 수정 2건은 분리 주제 페이지(s3·s10)에만 해당하며 이 페이지는 변경 없음 |
 | 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s6.md](topics/2026/2026-09-29-area11-s6.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "6. 대표 접근법과 기술" 절(2,271자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
 | 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s8.md](topics/2026/2026-09-29-area11-s8.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "8. 대표 연구와 자료" 절(1,684자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |

@@ -1,0 +1,169 @@
+{
+  "run_id": "2026-09-29-05",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 12,
+    "area_name": "12. 채팅으로 업무 지시·오케스트레이션",
+    "category": "C. 채팅 기반 구성·운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 6,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "ae795d7",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2427.9,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 12. 채팅으로 업무 지시·오케스트레이션 | 3~11절 신규 작성(seed → draft), 출처 18건, 병원·실외 사례 2건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 10건과 2차 수정 지시 8건 이행 | run 2026-09-29-05",
+  "notes": [
+    "참고문헌 생성: references/ref-849.md",
+    "참고문헌 생성: references/ref-850.md",
+    "참고문헌 생성: references/ref-851.md",
+    "참고문헌 생성: references/ref-852.md",
+    "참고문헌 생성: references/ref-853.md",
+    "참고문헌 생성: references/ref-854.md",
+    "용어집 생성: glossary/pre-execution-plan-verification.md",
+    "용어집 생성: glossary/supervisory-control.md",
+    "용어집 생성: glossary/failure-explanation.md",
+    "용어집 생성: glossary/robot-task-fitness-matrix.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 6,
+    "standards": 1,
+    "open_questions": 4,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 13:47:32 KST",
+  "usage": {
+    "input_tokens": 562,
+    "cache_creation_input_tokens": 721495,
+    "cache_read_input_tokens": 3139331,
+    "output_tokens": 165735,
+    "cost_usd": 24.113,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.026,
+        "output_tokens": 39978,
+        "cache_read_input_tokens": 2131304,
+        "cache_creation_input_tokens": 100479
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.3654,
+        "output_tokens": 18621,
+        "cache_read_input_tokens": 653891,
+        "cache_creation_input_tokens": 107221
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 10.1024,
+        "output_tokens": 84764,
+        "cache_read_input_tokens": 147500,
+        "cache_creation_input_tokens": 291364
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 5.5227,
+        "output_tokens": 21686,
+        "cache_read_input_tokens": 180650,
+        "cache_creation_input_tokens": 219660
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0733,
+        "output_tokens": 418,
+        "cache_read_input_tokens": 15510,
+        "cache_creation_input_tokens": 2523
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0232,
+        "output_tokens": 268,
+        "cache_read_input_tokens": 10476,
+        "cache_creation_input_tokens": 248
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-29-area12-s6.md",
+        "chars": 3807
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-29-area12-s8.md",
+        "chars": 1970
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-29-area12-s7.md",
+        "chars": 1291
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-29-area12-s10.md",
+        "chars": 1270
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-29-area12-s4.md",
+        "chars": 1255
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-29-area12-s3.md",
+        "chars": 1149
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-29-area12-s11.md",
+        "chars": 852
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 17,
+  "cross_checked_findings": 3
+}
