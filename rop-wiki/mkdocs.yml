@@ -320,6 +320,13 @@ nav:
       - 8. 채팅으로 맵 작성 — 왜 중요한가: topics/2026/2026-09-29-area08-s3.md
       - 8. 채팅으로 맵 작성 — 열린 질문: topics/2026/2026-09-29-area08-s11.md
       - 8. 채팅으로 맵 작성 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area08-s10.md
+      - 7. 온톨로지 검증·변경 관리 — 대표 연구와 자료: topics/2026/2026-09-29-area07-s8.md
+      - 7. 온톨로지 검증·변경 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area07-s7.md
+      - 7. 온톨로지 검증·변경 관리 — 대표 접근법과 기술: topics/2026/2026-09-29-area07-s6.md
+      - 7. 온톨로지 검증·변경 관리 — 핵심 개념과 용어: topics/2026/2026-09-29-area07-s4.md
+      - 7. 온톨로지 검증·변경 관리 — 왜 중요한가: topics/2026/2026-09-29-area07-s3.md
+      - 7. 온톨로지 검증·변경 관리 — 열린 질문: topics/2026/2026-09-29-area07-s11.md
+      - 7. 온톨로지 검증·변경 관리 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area07-s10.md
       - 6. 온톨로지 기반 시스템·로봇 연동 — 대표 연구와 자료: topics/2026/2026-09-29-area06-s8.md
       - 6. 온톨로지 기반 시스템·로봇 연동 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area06-s7.md
       - 6. 온톨로지 기반 시스템·로봇 연동 — 대표 접근법과 기술: topics/2026/2026-09-29-area06-s6.md
@@ -576,6 +583,7 @@ nav:
     - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 백 파일 (Bag File (rosbag2)): glossary/bag-file.md
+    - 버전 IRI (Version IRI (owl:versionIRI)): glossary/version-iri.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
@@ -624,12 +632,15 @@ nav:
     - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
     - 업무 연속성 관리 시스템 (Business Continuity Management System (BCMS)): glossary/business-continuity-management-system.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
+    - 역량 질문 (Competency Question (CQ)): glossary/competency-question.md
     - 역할 기반 접근 통제 (Role-Based Access Control (RBAC)): glossary/role-based-access-control.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
+    - 온톨로지 진화 (Ontology Evolution): glossary/ontology-evolution.md
     - 온톨로지 채우기 (Ontology Population): glossary/ontology-population.md
+    - 온톨로지 피트폴 (Ontology Pitfall): glossary/ontology-pitfall.md
     - 완전 정보의 기대 가치 (Expected Value of Perfect Information (EVPI)): glossary/expected-value-of-perfect-information.md
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability): glossary/required-and-provided-capability.md
@@ -1684,6 +1695,20 @@ nav:
     - ref-883 — 온톨로지 기반의 로봇 동적재구성에 관한 연구: references/ref-883.md
     - ref-884 — Robot-Lift Integration Challenge | Changi General Hospital: references/ref-884.md
     - ref-885 — Capability matchmaking software for rapid production system design and reconfiguration planning: references/ref-885.md
+    - ref-886 — OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition): references/ref-886.md
+    - 'ref-887 — Ontology evolution: a process-centric survey': references/ref-887.md
+    - 'ref-888 — OOPS! (OntOlogy Pitfall Scanner!): an on-line tool for ontology evaluation': references/ref-888.md
+    - ref-889 — Competency Questions and SPARQL-OWL Queries Dataset and Analysis: references/ref-889.md
+    - ref-890 — An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics: references/ref-890.md
+    - ref-891 — A Change Language for Ontologies and Knowledge Graphs: references/ref-891.md
+    - 'ref-892 — OM4OV: Leveraging Ontology Matching for Ontology Versioning': references/ref-892.md
+    - 'ref-893 — Model-driven realization of IDTA submodel specifications: The good, the bad, the incompatible?': references/ref-893.md
+    - 'ref-894 — OntoKG-EQ: A provenance-grounded, competency-question-governed knowledge graph for auditable analyst querying': references/ref-894.md
+    - 'ref-895 — Beyond Predefined Schemas: TRACE-KG for Context-Enriched Knowledge Graph Generation': references/ref-895.md
+    - 'ref-896 — Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models': references/ref-896.md
+    - ref-897 — 구조적 학술용어사전 “STNet”의 추론규칙 생성에 의한 의미 검색에 관한 연구: references/ref-897.md
+    - ? 'ref-898 — From Ontology Conformance to Admissible Reconfiguration: A RoSO/SMGI Adequacy Argument for Robotic Service Governance'
+      : references/ref-898.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

@@ -1,0 +1,133 @@
+{
+  "run_id": "2026-09-29-09",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 7,
+    "area_name": "7. 온톨로지 검증·변경 관리",
+    "category": "B. 로봇 온톨로지"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2701.3,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 7. 온톨로지 검증·변경 관리 | 영역 심화: 섹션 3~11 신규 작성(finding 27건 반영, 1차 조건부 승인 수정 13건·2차 수정 4건 이행), version 2; 참고문헌 ref-886~ref-889 이 같은 날 실행 2026-09-29-08 의 다른 URL 과 번호가 겹쳐 퍼블리셔가 URL 기준으로 번호를 재배정해야 함 | run 2026-09-29-09",
+  "notes": [
+    "참고문헌 생성: references/ref-886.md",
+    "참고문헌 생성: references/ref-887.md",
+    "참고문헌 생성: references/ref-888.md",
+    "참고문헌 생성: references/ref-889.md",
+    "참고문헌 생성: references/ref-890.md",
+    "참고문헌 생성: references/ref-891.md",
+    "참고문헌 생성: references/ref-892.md",
+    "참고문헌 생성: references/ref-893.md",
+    "참고문헌 생성: references/ref-894.md",
+    "참고문헌 생성: references/ref-895.md",
+    "참고문헌 생성: references/ref-896.md",
+    "참고문헌 생성: references/ref-897.md",
+    "참고문헌 생성: references/ref-898.md",
+    "용어집 생성: glossary/competency-question.md",
+    "용어집 생성: glossary/ontology-pitfall.md",
+    "용어집 생성: glossary/version-iri.md",
+    "용어집 생성: glossary/ontology-evolution.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 3,
+    "open_questions": 5,
+    "flow_cells": 9,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 17:02:00 KST",
+  "usage": {
+    "input_tokens": 465,
+    "cache_creation_input_tokens": 686410,
+    "cache_read_input_tokens": 2745834,
+    "output_tokens": 175241,
+    "cost_usd": 26.6362,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.2448,
+        "output_tokens": 47242,
+        "cache_read_input_tokens": 1584828,
+        "cache_creation_input_tokens": 126732
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.2566,
+        "output_tokens": 20611,
+        "cache_read_input_tokens": 704638,
+        "cache_creation_input_tokens": 131396
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 11.1465,
+        "output_tokens": 97799,
+        "cache_read_input_tokens": 147500,
+        "cache_creation_input_tokens": 310985
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 4.9035,
+        "output_tokens": 9120,
+        "cache_read_input_tokens": 282814,
+        "cache_creation_input_tokens": 115538
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0619,
+        "output_tokens": 224,
+        "cache_read_input_tokens": 10340,
+        "cache_creation_input_tokens": 1236
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0229,
+        "output_tokens": 245,
+        "cache_read_input_tokens": 15714,
+        "cache_creation_input_tokens": 523
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 4
+}

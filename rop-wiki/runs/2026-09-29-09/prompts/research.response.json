@@ -1,0 +1,875 @@
+{
+  "duration_api_ms": 835754,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 6.244779000000001,
+  "usage": {
+    "input_tokens": 258,
+    "cache_creation_input_tokens": 126732,
+    "cache_read_input_tokens": 1584828,
+    "output_tokens": 47242,
+    "output_tokens_details": {
+      "thinking_tokens": 15669
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 126732,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 29169,
+        "cache_read_input_tokens": 211071,
+        "cache_creation_input_tokens": 825,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 825
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 258,
+      "outputTokens": 47242,
+      "cacheReadInputTokens": 1584828,
+      "cacheCreationInputTokens": 126732,
+      "webSearchRequests": 0,
+      "costUSD": 5.295527,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 15669,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 699842,
+      "outputTokens": 17882,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 16,
+      "costUSD": 0.9492520000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 52,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-09\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":7,\"area_name\":\"7. 온톨로지 검증·변경 관리\",\"category\":\"B. 로봇 온톨로지\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 역량 질문·온톨로지 피트폴·버전 IRI·온톨로지 진화 용어 없음(형상 제약 언어·의미적 버전 관리·회귀 시험·모델 검사·온톨로지 채우기는 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 역량 질문 기반 완전성 확인, 추론기·피트폴 스캐너·형상 검증 같은 자동 평가, 버전 식별·호환성 표기, 변경 표현·탐지·영향 분석 네 갈래 모두 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — OWL 2 버전 IRI, W3C SHACL, OOPS!, IDTA 서브모델 템플릿 버전·폐기 규칙, 지식 그래프 변경 언어 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-147 미반영, 정정 요청 없음\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지 어떻게 알 것인가? [분류원문]\",\"역량 질문(competency question)을 SPARQL 질의·테스트로 형식화해 온톨로지의 완전성과 정확성을 확인하는 방법과 데이터셋·로봇 적용 사례는 무엇인가? (섹션 4·6·8 겨냥)\",\"추론기 일관성 검사, 피트폴 스캐너(OOPS!), 형상 검증(SHACL) 같은 자동 평가 도구는 각각 무엇을 잡아내고 검증 보고서를 어떤 구조로 내는가? (섹션 6·7 겨냥)\",\"온톨로지와 서브모델 템플릿의 버전은 어떻게 식별하고 이전 판과의 호환·비호환·폐기를 어떻게 표기하는가(OWL 2 버전 IRI, IDTA 서브모델 템플릿 규칙)? (섹션 4·7 겨냥)\",\"온톨로지 변경을 표현·탐지하고 의존 자원에 미치는 영향을 분석하는 연구(온톨로지 진화, 변경 언어, 버전 비교, 재구성 허용성)는 무엇이 보고되었으며, 언어 모델을 검증에 쓰는 방법은 어디에 연결되는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)\",\"oq-147 문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가? (섹션 6·11 겨냥)\",\"온톨로지 검증·변경 관리에서 ROP가 직접 맡을 것(역량 질문 목록·테스트 실행·검증 보고서·버전 식별·재검증 목록)과 제조사·표준 발행 기관에 맡길 것의 경계는 어디이며, 현장 유형별 사례와 국내 자료는 무엇인가? (섹션 5·9·10 겨냥, 한국 자료 우선)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Wiśniewski·Potoniec·Ławrynowicz·Keet(2018)는 온톨로지 개발에서 역량 질문(competency question) 사용을 촉진하기 위해 여러 도메인 온톨로지에 대한 역량 질문 234개와 그 SPARQL-OWL 번역을 공개하고, 언어·의미 분석으로 106개의 역량 질문 패턴을 46개의 SPARQL-OWL 질의 서명과 대응시켜 역량 질문의 형식화·실행·관리를 지원하는 벤치마크로 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-890\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '234 CQs와 여러 도메인의 온톨로지를 위한 SPARQL-OWL 번역'을 공개하고 106개 역량 질문 패턴을 46개 SPARQL-OWL 질의 서명과 비교 분석. 용도는 역량 질문의 형식화·실행·관리 지원과 테스트·벤치마크.\",\"as_of\":\"2018-11-23\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"Martorana·Urgese·Tiddi·Schlobach(2025)의 OntoBOT 은 SOMA·DOLCE 를 확장해 가정용 개인 서비스 로봇의 작업·행동·환경·능력을 통합 표현하는 온톨로지이며, 역량 질문으로 평가하고 TIAGo·HSR·UR3·Stretch 네 로봇에 대해 검증했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-891\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 노인·지원이 필요한 사람을 돕는 가정 내 개인 서비스 로봇을 대상으로 과제·행동·환경·능력을 통합 표현하고 '형식적 추론을 지원'하며, '역량 질문을 통해 평가'하고 네 가지 구체화된 에이전트(TIAGo, HSR, UR3, Stretch)에서 검증.\",\"as_of\":\"2025-09-26\",\"site_type\":\"가정\",\"flow_item\":\"수행 자원\"},{\"id\":\"f3\",\"claim\":\"고영만 외(한국문헌정보학회지 49권 3호, 2015)는 학술용어사전 STNet 에 온톨로지 구조를 도입하면서 Pellet 추론기로 TBox 를 검증해 생성한 추론규칙이 모두 참임을 확인하고 SPARQL 검색 시나리오로 의미 검색 성능을 평가했으며, 이는 이번 조사에서 확인된 유일한 국내 온톨로지 검증 연구다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-899\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '추론 엔진(Pellet)을 통해 TBox 검증을 수행한 결과 본 연구에서 생성한 추론규칙이 모두 참으로 나타났으며' 키워드 검색으로 파악하기 힘든 복잡한 검색 시나리오를 SPARQL 질의로 평가.\",\"as_of\":\"2015\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"서로 다른 세 발행 주체(포즈난 공과대학교·케이프타운 대학교 연구진의 역량 질문 데이터셋, 암스테르담 자유대학교 연구진의 OntoBOT, 국내 문헌정보학 연구진의 STNet)가 역량 질문 또는 SPARQL 질의 실행과 추론기 검증으로 온톨로지의 완전성·정확성을 확인하는 방식을 각각 보고해, 이 영역의 역량 질문·질의 기반 검증이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-890\",\"ref-891\",\"ref-899\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"f1(역량 질문→SPARQL-OWL 데이터셋), f2(역량 질문으로 로봇 온톨로지 평가), f3(Pellet TBox 검증과 SPARQL 시나리오)을 종합. 세 출처는 발행 기관·국가가 다르고 서로 인용 관계가 아니다.\",\"as_of\":\"2025-09-26\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"Poveda-Villalón·Gómez-Pérez·Suárez-Figueroa(IJSWIS, 2014)의 OOPS!(OntOlogy Pitfall Scanner!)는 기술 논리에 익숙하지 않은 도메인 전문가를 위해 온톨로지의 모델링 결함(피트폴)을 온라인에서 탐지하는 도구로, 693개 이상의 온톨로지를 경험적으로 분석해 만든 카탈로그를 구조·기능·사용성 프로파일링 차원으로 분류하고 피트폴마다 심각·중요·경미의 중요도를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-889\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '온톨로지에서 결함을 탐지하기 위한 도구'로 693개 이상 온톨로지를 분석한 카탈로그를 구조적·기능적·사용성 프로파일링 차원으로 분류하고 각 피트폴에 중요도(critical·important·minor)와 탐지된 온톨로지 수를 포함.\",\"as_of\":\"2014-04\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"W3C 형상 제약 언어(SHACL) 권고안(2017-07-20)은 데이터 그래프를 형상 그래프의 조건 집합으로 검증하는 언어이며, 검증 보고서는 적합 여부(sh:conforms), 개별 결과(sh:result), 심각도(sh:resultSeverity: Violation·Warning·Info)와 초점 노드·경로·값·원인 형상을 담는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-887\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"원문: 'RDF 그래프를 조건의 집합으로 검증하는 언어'. 검증 결과는 sh:conforms(부울), sh:result, sh:resultSeverity(sh:Violation·sh:Warning·sh:Info), sh:focusNode·sh:resultPath·sh:value·sh:sourceShape 로 구성.\",\"as_of\":\"2017-07-20\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"Ioannidou 외(Healthcare, 2025)의 의료 로봇 상위 온톨로지 HERON 은 SPARQL 질의로 작업에 대한 에이전트 자격·전제조건을 검사하고 SHACL 형상으로 역할 기반 권한·오버라이드 승인 같은 기관 정책 준수를 검증하며, 임상 배치 없이 의료센터의 물류 운반·다중 로봇 플릿 조정 시뮬레이션 시나리오로 시연했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-885\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"SPARQL 로 에이전트 자격·전제조건 검사, SHACL 형상으로 역할 기반 권한·오버라이드 승인 정책 검증, Fundació Ave Maria 의료센터 시뮬레이션 시나리오(임상 배치 아님). (재인용: 2026-09-29-08)\",\"as_of\":\"2025-04-30\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f8\",\"claim\":\"서로 다른 두 발행 주체(W3C 의 SHACL 권고안, 그리스 연구진의 HERON)가 형상 제약 검증을 각각 정의하고 로봇 온톨로지 정책 검증에 적용해, 온톨로지 인스턴스 데이터의 제약 검증 수단으로서 SHACL 이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-887\",\"ref-885\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"f6(W3C 권고안의 검증 보고서 구조)과 f7(HERON 의 SHACL 정책 검증)을 종합. W3C 원문을 이번 실행에서 열었고 HERON 은 이전 실행에서 전문을 연 동료심사 논문이다.\",\"as_of\":\"2025-04-30\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성한 뒤 구문 검증·모순 탐지·환각과 누락 점검을 언어 모델과의 반복 루프로 자동 수행하고 사람이 최종 검토·수정만 하게 하여, 온톨로지 검증 단계에 자동 검사와 사람 검토를 결합했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-465\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토. (재인용: 2026-09-29-08)\",\"as_of\":\"2024-10-18\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f10\",\"claim\":\"Alharbi·Tamma·Payne·de Berardinis(2026)는 개방형(KimiK2·Llama 3.1·3.2)과 폐쇄형(Gemini 2.5 Pro·GPT 4.1) 언어 모델이 생성한 역량 질문을 가독성·입력 텍스트 관련성·구조적 복잡성 지표로 여러 도메인에서 평가해, 모델의 생성 프로필이 사용 사례에 따라 뚜렷이 달라진다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-898\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 전통적으로 수작업이던 역량 질문 생성을 생성형 AI 로 자동화; '가독성, 입력 텍스트와의 관련성, 생성된 질문의 구조적 복잡성' 지표; 'LLM 성능이 사용 사례에 의해 형성된 뚜렷한 생성 프로필을 반영'. 사람 검토 필요성은 초록에 명시되지 않음.\",\"as_of\":\"2026-04-17\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"W3C OWL 2 구조 명세 2판(2012-12-11)은 온톨로지를 온톨로지 IRI 로 식별하고 특정 판을 버전 IRI 로 구분하며 같은 온톨로지 시리즈에서 정확히 하나의 버전만 현재 버전으로 보고, 온톨로지 주석 owl:priorVersion(이전 판 IRI)·owl:backwardCompatibleWith(호환되는 이전 판)·owl:incompatibleWith(양립 불가능한 이전 판)로 판 사이 관계를 표기한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-886\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"3.1절: ontology IRI 는 온톨로지를, version IRI 는 특정 버전을 식별하며 '각 온톨로지 시리즈에서 정확히 하나의 버전이 현재 버전으로 간주'. 3.5절: owl:priorVersion·owl:backwardCompatibleWith·owl:incompatibleWith 정의.\",\"as_of\":\"2012-12-11\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f12\",\"claim\":\"IDTA 서브모델 템플릿 공식 저장소 README 는 템플릿을 published·deprecated 폴더로 관리하고 판을 주버전·리비전·버그 수정으로 표기하며, 새 판 발행 6개월 뒤 이전 판을 deprecated 로 옮기되 그 템플릿은 계속 유효하나 버그 수정·개선·갱신을 더 제공하지 않는다고 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-894\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 'After six months from the publication of a new version of a Submodel Template (SMT), the previous version will be moved to the deprecated folder.' 폐기 템플릿은 사용 가능하나 유지보수되지 않음. Technical Data 2.0.1 = 주버전 2·리비전 0·패치 1.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"서로 다른 두 발행 주체(W3C, IDTA)가 온톨로지와 서브모델 템플릿의 판 식별자와 이전 판과의 호환·폐기 관계 표기를 각각 정의해, '판 식별자 + 이전 판 관계 명시'가 온톨로지·모델 버전 관리의 관행으로 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-886\",\"ref-894\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"f11(OWL 2 버전 IRI·이전 판 주석)과 f12(IDTA 주버전·리비전·deprecated 규칙)를 종합. 두 출처 모두 이번 실행에서 원문을 열었고 발행 주체가 다르다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Zablith 외(The Knowledge Engineering Review, 2013)의 프로세스 중심 서베이는 온톨로지 진화(ontology evolution)를 도메인 변화나 정보 시스템 요구에 대응해 온톨로지를 최신으로 유지하는 일로 정의하고, 전형적 접근이 자연어 처리·추론 등 여러 분야 기법을 결합한 다단계 과정으로 설계된다고 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-888\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '온톨로지 진화는 도메인 변화 또는 정보 시스템 요구사항에 대응하여 온톨로지를 유지하는 것을 목표'로 하며 자연언어처리와 추론 등 기법을 결합한 다단계 프로세스 접근. 단계 이름은 초록 페이지에서 확인하지 못함.\",\"as_of\":\"2013-08-28\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"Hegde 외(Database, 2025)의 지식 그래프 변경 언어 KGCL 은 온톨로지·지식 그래프의 변경을 '동의어 추가'·'계층 재배치' 같은 통제 자연어 명령으로 요청하거나 기술하는 표준 데이터 모델로, 패치·diff 개념을 빌려 미래 변경 요청과 기존 변경 기술에 모두 쓰이며 GitHub 온톨로지 저장소 자동화 에이전트와 BioPortal 변경 요청 인터페이스로 구현되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-892\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'add synonym 'arm' to 'forelimb'' 같은 고수준 명령으로 변경을 요청·기술하는 표준 데이터 모델; 적용 패치와 diff 개념; GitHub 온톨로지 저장소 통합 에이전트, BioPortal UI 변경 요청. 영향 분석·감사는 초록에 없음.\",\"as_of\":\"2024-09-20\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"Qiang·Taylor·Wang(2024, 2026 개정)의 OM4OV 는 온톨로지 매칭 시스템을 온톨로지 버전 간 변경 비교에 재사용할 수 있지만 확장 없이는 왜곡된 측정을 낸다고 분석하고, 기존 정렬을 활용해 후보를 줄이는 교차 참조 메커니즘을 더한 버전 비교 프레임워크를 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-893\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'OM systems can be effectively reused for OV tasks, but without the necessary extensions, can produce skewed measurements'; Agent-OM 기반에 cross-reference 메커니즘 도입. 정량 결과는 초록에 없음.\",\"as_of\":\"2026-08-31\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f17\",\"claim\":\"서로 다른 세 발행 주체(Zablith 외의 유럽 연구진 서베이, Hegde 외의 생물의학 온톨로지 연구진, 호주 국립대학교 계열 Qiang 외)가 온톨로지 변경의 정의·표현·탐지를 각각 다루어, 온톨로지 변경 관리가 별도 연구 분야로 존재함이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-888\",\"ref-892\",\"ref-893\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"f14(진화 서베이), f15(변경 언어), f16(버전 비교)을 종합. 세 출처는 기관·주제가 다르고 상호 재게시가 아니다. 다만 세 출처 모두 로봇 능력 온톨로지를 다루지는 않는다.\",\"as_of\":\"2026-08-31\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"Eichelberger·Weber(2024)는 2024년 2월 기준 IDTA 가 발표한 84개 명세 가운데 18개를 중간 메타모델로 변환해 5만 줄 이상의 API 코드·테스트를 자동 생성했으나 명세의 문법적 변동과 문제 때문에 수동 개입이 필요했다고 보고해, 표준 명세 자체의 변동성이 이를 소비하는 시스템의 재검증 부담이 됨을 보였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-895\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '모든 현재 IDTA 명세를 성공적으로 처리'해 50,000줄 이상 생성했으나 '문법적 변동성과 문제'로 수동 개입 필요; 84개 중 18개 명세 분석. 버전 표시 비율 같은 수치는 초록에 없음.\",\"as_of\":\"2024-06-20\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"Osmani(2026)는 로봇 서비스 온톨로지(RoSO)를 구조적 일반지능 모델(SMGI)의 의미 계층으로 두고, 서비스 재구성 뒤에도 서비스 기술이 유효하게 남기 위한 정체성 보존 재구성 기준과 지역적으로 허용되는 갱신이 전역적으로도 허용되는 조합 조건을 제시해 런타임 변경의 허용 여부를 판단하는 거버넌스를 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-900\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"초록: 'identity-preserving reconfiguration criteria, and compositional conditions under which locally acceptable updates remain globally admissible'; 서비스 기술이 'dynamically governable' 하게 됨. 단독 저자 프리프린트이며 실험·현장 적용은 초록에 없음.\",\"as_of\":\"2026-05-05\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"Nasir 외(2026)의 OntoKG-EQ 는 다섯 개의 고정된 역량 질문으로 정당화된 핵심 온톨로지가 모든 클래스·속성·형상 제약·지표를 통제하고, 각 답에 관찰·증거·출처까지 추적하는 설명을 붙여 검증된 그래프에서 결정론적으로 만들며, 17명 패널 연구에서 증거 묶음이 인지된 신뢰도와 완전성을 크게 높였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-896\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '다섯 개의 동결된 질문으로 정당화된 핵심 온톨로지'; 각 결과가 '관찰, 증거, 출처, 출처까지 추적하는 설명을 생성'; 17명 패널에서 '증거 묶음이 인지된 신뢰도와 완전성을 크게 증가'. 도메인은 신흥 주식시장 분석.\",\"as_of\":\"2026-09-08\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f21\",\"claim\":\"Abolhasani·Ba·He·Pan(2026)의 TRACE-KG 는 미리 정의한 온톨로지 없이 문맥이 풍부한 지식 그래프와 유도 스키마를 함께 만들면서 원문 근거에 대한 완전한 추적 가능성을 유지해, 사람 검토자가 자동 추출 결과를 원문과 대조해 검증할 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-897\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: '미리 정의된 온톨로지를 가정하지 않고 문맥이 풍부한 지식 그래프와 유도된 스키마를 공동으로 구축'하며 '원본 근거에 대한 완전한 추적 가능성을 유지'. ICML 2026 워크숍 발표.\",\"as_of\":\"2026-06-15\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f22\",\"claim\":\"oq-147 관련: 추출한 지식 항목마다 원문 근거를 붙여 검토자가 대조하게 하는 구성은 일반 문서 지식 그래프 추출(f20·f21)과 능력 온톨로지 생성의 사람 최종 검토(f9)에서 확인되지만, 로봇 매뉴얼·URDF 에서 뽑은 능력 항목에 매뉴얼의 절·줄 위치를 붙여 확정·반려하는 공개 구현은 이번 조사에서도 확인되지 않아 oq-147 은 부분 진전에 그친다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-896\",\"ref-897\",\"ref-465\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f20(증거·출처 추적 설명), f21(원문 근거 완전 추적), f9(사람 최종 검토)를 종합. 세 출처 모두 로봇 매뉴얼을 대상으로 하지 않는다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f23\",\"claim\":\"VDA 5050 공식 저장소(main, 3.0.0 판)의 팩트시트 JSON 스키마는 팩트시트 자체의 version 을 필수 속성으로 두고 선택 속성 mobileRobotConfiguration 에 하드웨어·소프트웨어 버전을 담아, 로봇 펌웨어·소프트웨어 판이 바뀐 사실을 등록 데이터에서 읽을 수 있는 자리를 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-228\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"팩트시트 스키마 필수 속성에 version 포함, 선택 속성 mobileRobotConfiguration 에 하드웨어·소프트웨어 버전과 네트워크·배터리 매개변수. (재인용: 2026-09-29-07)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f24\",\"claim\":\"확인한 출처 어디에도 로봇 능력 온톨로지에 대해 문서·펌웨어 개정 시 영향받는 작업·현장을 찾아 재검증하는 절차를 통째로 다룬 자료는 없으며, 판 식별·호환 표기(f11·f12), 변경의 표현·탐지(f15·f16), 재구성 허용 판단(f19), 펌웨어 판 보고 자리(f23)가 흩어져 있어 ROP 는 이들을 이어 '변경 감지 → 영향 목록 → 재검증 대기열' 절차를 스스로 설계해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-886\",\"ref-894\",\"ref-892\",\"ref-893\",\"ref-228\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f11·f12·f15·f16·f19·f23 의 종합. 영향 분석(impact analysis)은 f14 서베이가 다루는 분야이나 로봇 능력 온톨로지 적용 사례는 확인하지 못함.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f25\",\"claim\":\"확인한 자료를 종합하면 7. 온톨로지 검증·변경 관리에서 ROP가 직접 맡을 범위는 능력 온톨로지의 역량 질문 목록과 그 SPARQL 테스트 실행 기록, SHACL 형상과 검증 보고서, 추론기 일관성 검사, 온톨로지 판 식별자와 이전 판 관계 표기, 변경 기술(변경 언어)과 영향받는 작업·현장의 재검증 목록이며, 원문 근거를 붙인 검토·확정 기록은 4. 이기종 로봇 등록의 검토·승인과 같은 기록을 공유해야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-890\",\"ref-887\",\"ref-886\",\"ref-892\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1·f6·f11·f15 의 수단을 ROP 산출물로 묶은 리서치 에이전트의 종합. 어느 출처도 로봇 오케스트레이션 플랫폼의 책임 범위를 직접 말하지 않는다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"연계 대상: 로봇 펌웨어·소프트웨어의 릴리스 관리 자체와 표준 발행 기관의 템플릿 개정·폐기 일정은 분류 원문 19장의 로봇 자체 지능·제어와 업종·규격 측 소유 사항이므로, 이종 제조사를 잇는 ROP 는 팩트시트의 판 정보와 템플릿 폐기 통보를 받아 온톨로지 재검증을 촉발하는 데 그치고 펌웨어 검증과 템플릿 유지보수는 제조사·IDTA 에 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-228\",\"ref-894\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f23(팩트시트의 하드웨어·소프트웨어 판)과 f12(IDTA 의 6개월 뒤 deprecated 규칙)를 경계 판단에 적용한 종합.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f27\",\"claim\":\"이 영역은 등록 검토·승인 기록을 주는 4. 이기종 로봇 등록, 검증 대상 어휘를 주는 5. 로봇 능력·작업 표현, 검증된 연결만 실행하는 6. 온톨로지 기반 시스템·로봇 연동을 앞뒤로 두고, 판 규칙은 21. 상호운용 표준·적합성과 57. 자산·소프트웨어 수명주기 관리, 테스트·형식 검증 방법은 54. 시험·형식 검증·벤치마크에 이어지며, 언어 모델로 역량 질문·온톨로지를 생성·검증하는 방법(f9·f10)은 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영에도 연결된다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-894\",\"ref-887\",\"ref-465\",\"ref-898\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f9·f10·f12·f6 과 분류 원문 교차 규칙(매뉴얼 해석은 4·55번)에 근거한 연결 판단.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-886\",\"org\":\"W3C (OWL Working Group)\",\"title\":\"OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)\",\"published\":\"2012-12-11\",\"url\":\"https://www.w3.org/TR/owl2-syntax/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"OWL 2 구조 명세. 온톨로지 IRI·버전 IRI 의 관계와 owl:priorVersion·backwardCompatibleWith·incompatibleWith 주석을 정의한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-887\",\"org\":\"W3C (RDF Data Shapes Working Group)\",\"title\":\"Shapes Constraint Language (SHACL)\",\"published\":\"2017-07-20\",\"url\":\"https://www.w3.org/TR/shacl/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"RDF 데이터 그래프를 형상 그래프의 조건으로 검증하는 W3C 권고안. 검증 보고서 구조(sh:conforms·sh:result·sh:resultSeverity)를 정한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-888\",\"org\":\"Zablith, F., Antoniou, G., d'Aquin, M., Flouris, G., Kondylakis, H., Motta, E., Plexousakis, D., & Sabou, M. (The Knowledge Engineering Review)\",\"title\":\"Ontology evolution: a process-centric survey\",\"published\":\"2013-08-28\",\"url\":\"https://www.cambridge.org/core/product/identifier/S0269888913000349/type/journal_article\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"온톨로지 진화를 도메인·요구 변화에 대응하는 유지 활동으로 정의하고 다단계 과정으로 정리한 서베이. 초록 페이지만 열었다(전문 PDF 403).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-889\",\"org\":\"Poveda-Villalón, M., Gómez-Pérez, A., & Suárez-Figueroa, M. C. (Universidad Politécnica de Madrid, IJSWIS 10(2))\",\"title\":\"OOPS! (OntOlogy Pitfall Scanner!): an on-line tool for ontology evaluation\",\"published\":\"2014-04\",\"url\":\"https://oa.upm.es/35873/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"온톨로지 모델링 결함을 탐지하는 온라인 도구 OOPS! 와 693개 이상 온톨로지 분석에 기반한 피트폴 카탈로그. UPM 기관 저장소의 초록을 열었다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-890\",\"org\":\"Wiśniewski, D., Potoniec, J., Ławrynowicz, A., & Keet, C. M.\",\"title\":\"Competency Questions and SPARQL-OWL Queries Dataset and Analysis\",\"published\":\"2018-11-23\",\"url\":\"https://arxiv.org/abs/1811.09529\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"역량 질문 234개와 SPARQL-OWL 번역, 106개 질문 패턴과 46개 질의 서명의 대응을 공개한 데이터셋 논문(프리프린트 초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-891\",\"org\":\"Martorana, M., Urgese, F., Tiddi, I., & Schlobach, S. (Vrije Universiteit Amsterdam)\",\"title\":\"An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics\",\"published\":\"2025-09-26\",\"url\":\"https://arxiv.org/abs/2509.22434\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"가정용 개인 서비스 로봇의 작업·행동·환경·능력을 통합 표현하는 OntoBOT 을 역량 질문으로 평가하고 네 로봇에서 검증한 프리프린트(초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-892\",\"org\":\"Hegde, H. 외 (Database, Oxford)\",\"title\":\"A Change Language for Ontologies and Knowledge Graphs\",\"published\":\"2024-09-20\",\"url\":\"https://arxiv.org/abs/2409.13906\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"온톨로지·지식 그래프 변경을 통제 자연어 명령으로 요청·기술하는 표준 데이터 모델 KGCL(프리프린트 초록, Database 2025 게재).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-893\",\"org\":\"Qiang, Z., Taylor, K., & Wang, W.\",\"title\":\"OM4OV: Leveraging Ontology Matching for Ontology Versioning\",\"published\":\"2024-09-30\",\"url\":\"https://arxiv.org/abs/2409.20302\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"온톨로지 매칭 시스템을 버전 간 변경 비교에 재사용하는 프레임워크와 교차 참조 메커니즘(프리프린트 초록, 2026-08-31 v19).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-894\",\"org\":\"Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소\",\"title\":\"submodel-templates — IDTA Submodel Templates for AAS (README)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"IDTA 서브모델 템플릿 공식 저장소 README. published·deprecated 폴더, 주버전·리비전·버그 수정 표기, 새 판 6개월 뒤 이전 판 폐기 규칙을 적는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/README.md\"},{\"id\":\"ref-895\",\"org\":\"Eichelberger, H., & Weber, A.\",\"title\":\"Model-driven realization of IDTA submodel specifications: The good, the bad, the incompatible?\",\"published\":\"2024-06-20\",\"url\":\"https://arxiv.org/abs/2406.14470\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"IDTA 명세 18개를 메타모델로 변환해 API 코드·테스트를 생성한 모델 기반 접근과 명세의 문법적 변동 문제(프리프린트 초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-896\",\"org\":\"Nasir, F., Saeed, M. A., Ehsan, M., Ahmad, S. J., & Altaf, A. M.\",\"title\":\"OntoKG-EQ: A provenance-grounded, competency-question-governed knowledge graph for auditable analyst querying\",\"published\":\"2026-09-08\",\"url\":\"https://arxiv.org/abs/2609.08869\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"다섯 개 고정 역량 질문이 온톨로지를 통제하고 각 답에 출처까지의 증거 추적을 붙이는 지식 그래프. 17명 패널 평가(프리프린트 초록, 금융 도메인).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-897\",\"org\":\"Abolhasani, M. S., Ba, Y., He, Y., & Pan, R. (Graph Foundation Models @ ICML 2026)\",\"title\":\"Beyond Predefined Schemas: TRACE-KG for Context-Enriched Knowledge Graph Generation\",\"published\":\"2026-04-03\",\"url\":\"https://arxiv.org/abs/2604.03496\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"원문 근거에 대한 완전한 추적 가능성을 유지하며 문맥 지식 그래프와 유도 스키마를 함께 만드는 프레임워크(프리프린트 초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-898\",\"org\":\"Alharbi, R., Tamma, V., Payne, T. R., & de Berardinis, J.\",\"title\":\"Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models\",\"published\":\"2026-04-17\",\"url\":\"https://arxiv.org/abs/2604.16258\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"개방형·폐쇄형 언어 모델이 생성한 역량 질문을 가독성·관련성·구조 복잡성으로 평가한 다중 도메인 연구(프리프린트 초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-899\",\"org\":\"고영만, 송민선, 이승준, 김비연, 민혜령 (한국문헌정보학회지 49(3))\",\"title\":\"구조적 학술용어사전 “STNet”의 추론규칙 생성에 의한 의미 검색에 관한 연구\",\"published\":\"2015\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002022617\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"학술용어사전에 온톨로지를 도입하고 Pellet 추론기 TBox 검증과 SPARQL 검색 시나리오로 평가한 국내 연구(KCI 초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-900\",\"org\":\"Osmani, A.\",\"title\":\"From Ontology Conformance to Admissible Reconfiguration: A RoSO/SMGI Adequacy Argument for Robotic Service Governance\",\"published\":\"2026-05-05\",\"url\":\"https://arxiv.org/abs/2605.08185\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"로봇 서비스 온톨로지의 재구성 뒤 유효성 유지 조건과 지역·전역 허용성을 다룬 이론적 단독 저자 프리프린트(초록).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-465\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"Toward a Method to Generate Capability Ontologies from Natural Language Descriptions\",\"published\":\"2024-10-18\",\"url\":\"https://arxiv.org/abs/2406.07962\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토하는 방법.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-885\",\"org\":\"Ioannidou, P., Vezakis, I., Haritou, M., Petropoulou, R., Miloulis, S. T., Kouris, I., Bromis, K., Matsopoulos, G. K., & Koutsouris, D. D. (Healthcare, Basel)\",\"title\":\"HEalthcare Robotics' ONtology (HERON): An Upper Ontology for Communication, Collaboration and Safety in Healthcare Robotics\",\"published\":\"2025-04-30\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"의료 로봇 상위 온톨로지 HERON. SPARQL 자격·전제조건 검사와 SHACL 정책 검증을 의료센터 물류·플릿 조정 시뮬레이션 시나리오로 시연.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-228\",\"org\":\"VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소\",\"title\":\"VDA5050/json_schemas/factsheet.schema (main)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"VDA 5050 3.0.0 팩트시트 JSON 스키마. version 등 필수 속성과 하드웨어·소프트웨어 버전을 담는 선택 속성 mobileRobotConfiguration 을 정한다.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/ontology-verification-and-change-management.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f4(역량 질문·질의 기반 검증이 여러 곳에서 확인), f18(표준 명세 변동이 재검증 부담), f24(개정 시 영향·재검증 절차는 흩어져 있어 ROP 가 설계해야 함) / 섹션 4: f1(역량 질문·SPARQL-OWL), f5(피트폴·중요도), f6(형상 검증 보고서), f11(온톨로지 IRI·버전 IRI·이전 판 주석), f14(온톨로지 진화) / 섹션 5: 가정 — f2(OntoBOT, 네 로봇 역량 질문 평가, 현장 배치 아님을 명시), 병원 — f7(HERON 의료센터 시뮬레이션 정책 검증, 임상 배치 아님), 제조 공장·물류창고·상업 시설·실외 사례는 확인되지 않음을 서술 / 섹션 6: 역량 질문 검증 f1·f2·f3·f4, 자동 평가 f5·f6·f8, 언어 모델 결합 검증 f9·f10(교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영 함께 연결), 버전·호환 표기 f11·f12·f13, 변경 표현·탐지·허용성 f15·f16·f17·f19, 원문 근거 검토 f20·f21·f22 / 섹션 7: f11(OWL 2), f6(SHACL), f5(OOPS!), f12(IDTA 서브모델 템플릿 규칙), f15(KGCL), f23(VDA 5050 팩트시트 판 정보) / 섹션 8: f1, f2, f5, f14, f15, f16, f18, f19, f20, f21, 국내 f3 / 섹션 9: f25(직접 범위: 역량 질문 목록·테스트 기록·형상·검증 보고서·판 식별·재검증 목록), f26(연계 대상: 펌웨어 릴리스·템플릿 폐기 일정) / 섹션 10: f27 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리, 63. 병원·의료(f7), 65. 가정·공동주택(f2) / 섹션 11: 기존 oq-147(f22 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 57. 자산·소프트웨어 수명주기 관리 페이지에 f12·f23 반영, 54. 시험·형식 검증·벤치마크 페이지에 f1·f6 반영, 트랙 manual-capability-ontology 단계 5(완전성·정확성 검증)에 f1·f4·f5·f6 참고, 단계 6(변경 관리)에 f11·f12·f15 참고.\"}],\"glossary_candidates\":[{\"term_ko\":\"역량 질문\",\"term_en\":\"Competency Question (CQ)\",\"definition\":\"온톨로지가 답할 수 있어야 하는 질문으로 요구사항을 적은 것으로, SPARQL 같은 질의로 형식화해 온톨로지가 요구를 충족하는지 검증하는 데 쓴다.\"},{\"term_ko\":\"온톨로지 피트폴\",\"term_en\":\"Ontology Pitfall\",\"definition\":\"온톨로지 모델링에서 흔히 생기는 결함 유형으로, 피트폴 스캐너(OOPS!)가 구조·기능·사용성 차원의 카탈로그와 심각·중요·경미 중요도로 자동 탐지한다.\"},{\"term_ko\":\"버전 IRI\",\"term_en\":\"Version IRI (owl:versionIRI)\",\"definition\":\"OWL 2 에서 같은 온톨로지 IRI 를 공유하는 온톨로지 시리즈 가운데 특정 판을 식별하는 IRI 로, 이전 판·호환·비호환 주석과 함께 온톨로지 버전 관리에 쓴다.\"},{\"term_ko\":\"온톨로지 진화\",\"term_en\":\"Ontology Evolution\",\"definition\":\"도메인 변화나 정보 시스템 요구 변화에 대응해 온톨로지를 최신 상태로 유지하는 활동으로, 변경 감지·표현·적용·영향 관리를 포함하는 다단계 과정으로 다뤄진다.\"}],\"open_questions_new\":[\"로봇 능력 온톨로지에 대해 펌웨어·매뉴얼 개정을 감지해 영향받는 작업·현장을 찾고 재검증 대기열에 넣는 절차를 구현한 공개 구현이나 현장 사례가 있는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 57. 자산·소프트웨어 수명주기 관리, 4. 이기종 로봇 등록 | 근거: f24 | 종류: 일반\",\"분류 원문이 말하는 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)에 대응하는 기존 검증 수준·성숙도 체계가 있는가, 아니면 ROP 가 자체 정의해야 하는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 54. 시험·형식 검증·벤치마크, 36. 가상 시운전·실제 상황 재현 | 근거: f25 | 종류: 일반\",\"국내에서 역량 질문·추론기·SHACL 로 로봇 온톨로지를 검증하거나 버전을 관리한 연구·현장 사례가 있는가(이번 조사에서 확인된 국내 자료는 학술용어사전 온톨로지 검증 연구 1건이다)? | 관련 영역: 7. 온톨로지 검증·변경 관리, 5. 로봇 능력·작업 표현 | 근거: f3 | 종류: 일반\",\"IDTA 서브모델 템플릿의 이전 판이 새 판 발행 6개월 뒤 deprecated 로 옮겨질 때 그 판에 묶인 로봇 등록 데이터와 능력 정의를 ROP 는 어떤 기준으로 재검증·이관해야 하는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 21. 상호운용 표준·적합성, 4. 이기종 로봇 등록 | 근거: f12 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":18,\"cross_checked_count\":4,\"unverified\":[\"Grüninger·Fox(1995) 'Methodology for the Design and Evaluation of Ontologies' 원문 PDF(토론토대학교 EIL)는 텍스트 추출이 되지 않고 Semantic Scholar API 는 429 로 서지를 확인하지 못해 출처에 넣지 않음 — 역량 질문의 원 제안자 인용은 스토리텔러가 쓰지 말 것\",\"Themis(UPM 온톨로지 공학 그룹의 요구사항 기반 온톨로지 검증 도구)는 도구 페이지를 열었으나 개발 기관·논문을 페이지에서 확인하지 못했고 논문 PDF·Semantic Scholar 페이지는 연결 끊김·빈 응답으로 미확인 — 출처 제외\",\"Köcher·Vieira da Silva·Fay 'Constraint Checking of Skills using SHACL'(INDIN 2021, 제조 스킬 검증)은 검색 결과 요약에서만 확인되고 HSU 페이지 404·Semantic Scholar 429 로 서지 미확인 — 제조 공장 현장 유형 사례 미확보\",\"IDTA 'How to write a SMT v1.1' 지침 PDF 와 Dibowski 'Full Traceability and Provenance for Knowledge Graphs'(FOIS 2024) PDF 는 텍스트 추출 실패, MDPI 'Grounded Knowledge Graph Extraction via LLMs'(Computers 15(3):178)는 403 — oq-147 의 로봇 문서 적용 사례 후보 미열람\",\"f14 Zablith 서베이의 진화 단계 이름은 초록 페이지에 없어 미확인(전문 PDF 403)\",\"f16 OM4OV·f18 Eichelberger 의 정량 결과(검색 요약의 'AASX 파일 44%만 대상 명세 판 표시')는 초록에 없어 claim 에 넣지 않음\",\"f2 OntoBOT 은 네 로봇에 대한 평가이며 가정 현장 배치 여부는 초록에서 확인하지 못함(site_type 은 출처가 밝힌 적용 대상 기준)\",\"f7 HERON·f9 Vieira da Silva·f23 팩트시트는 재사용 출처로 이번에 다시 열지 않음\",\"oq-147 미해결(f22 부분 진전)\",\"f4·f8·f13·f17 외 모든 finding 교차 확인 실패(표준·연구마다 발행 주체 한 곳)\"],\"scope_violations\":[\"f26: 펌웨어 릴리스 관리와 표준 템플릿 유지보수는 분류 원문 19장의 로봇 자체 지능·제어와 규격 발행 기관 소유이므로 '연계 대상: '으로 표시함\",\"f7: HERON 의 역할 기반 권한 정책 검증은 51. 인증·권한·격리·48. 안전·위험 관리와 겹치므로 이 영역에서는 SHACL 검증 적용 사례로만 제안함\",\"f9·f10·f20·f21: 언어 모델 기반 온톨로지 생성·역량 질문 생성·지식 그래프 추출은 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f27)\",\"f18: IDTA 명세의 코드 생성은 21. 상호운용 표준·적합성의 범위와 겹치므로 표준 명세 변동이 재검증 부담이 된다는 근거로만 제안함\",\"f20: 금융 분석 도메인의 지식 그래프이므로 역량 질문 통제·증거 추적 구성의 선례로만 제안함\"],\"budget_used\":{\"queries\":17,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-886~ref-900, 예약 구간 안) 상한 도달로 Frontiers 'A survey of ontology-enabled processes for dependable robot autonomy'(2024, 32편 검토 — 연 원문에 검증·변경 관리 서술이 없어 finding 으로 쓰지 않음), Themis, Köcher 외 SHACL 스킬 검증, IDTA SMT 작성 지침, Dibowski 추적성 논문, MDPI 근거 기반 추출 논문은 넣지 못했다. 원문 열람 15건(github_raw 1: IDTA 서브모델 템플릿 README, webfetch 14: W3C 권고안 2건, arXiv 초록 9건, Cambridge 초록, UPM 기관 저장소 초록, KCI 초록), 재사용 3건(ref-465·ref-885 는 2026-09-29-08, ref-228 은 2026-09-29-07 의 값 그대로, 이번에 다시 열지 않아 fetched false). 교차 확인 4건(f4: 포즈난·케이프타운/암스테르담/국내, f8: W3C/그리스 연구진, f13: W3C/IDTA, f17: Zablith 외/Hegde 외/Qiang 외). 신뢰도 high 는 f8·f13 두 건(각각 이번 실행에서 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지)에는 완전성·정확성 쪽은 f1~f8(역량 질문·질의 실행, 추론기, 피트폴 스캐너, SHACL)과 f9·f10(언어 모델 결합 검증)으로, 변경 쪽은 f11~f19·f23(판 식별·호환 표기, 변경 표현·탐지, 재구성 허용성, 팩트시트 판 정보)으로 답했으며 결론은 '검증 수단과 판 표기 규칙은 여러 곳에서 확인되지만 로봇 능력 온톨로지에 대해 개정 시 영향받는 작업·현장을 찾아 재검증하는 절차와 원문 절·줄 근거를 붙인 검토 구현은 확인되지 않았다'는 추정(f22·f24)이다. 분류 원문 1절의 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)를 정의한 출처는 찾지 못해 열린 질문으로 올렸다. 현장 유형: 가정(f2 OntoBOT 평가), 병원(f7 HERON 시뮬레이션 재인용)만 확인했고 제조 공장·물류창고·상업 시설·실외·기타 사례는 없다(제조 사례 후보 Köcher 외는 서지 미확인). 국내 자료는 KCI 논문(f3, 2015, 문헌정보학 온톨로지) 한 건이며 로봇 온톨로지 검증의 국내 사례는 찾지 못했다. 벤더 문서·벤더 주장 없음. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 용어집에 이미 있는 형상 제약 언어·의미적 버전 관리·회귀 시험·모델 검사·온톨로지 채우기·런타임 검증은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-147 은 f22 로 부분 진전만). 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 885건과의 URL 중복을 대조하지 못했으므로 W3C OWL 2·SHACL·IDTA 저장소·arXiv 2406.07962 등은 퍼블리셔가 기존 id 로 합칠 수 있다.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-09",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 7,
+      "area_name": "7. 온톨로지 검증·변경 관리",
+      "category": "B. 로봇 온톨로지"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 역량 질문·온톨로지 피트폴·버전 IRI·온톨로지 진화 용어 없음(형상 제약 언어·의미적 버전 관리·회귀 시험·모델 검사·온톨로지 채우기는 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 역량 질문 기반 완전성 확인, 추론기·피트폴 스캐너·형상 검증 같은 자동 평가, 버전 식별·호환성 표기, 변경 표현·탐지·영향 분석 네 갈래 모두 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — OWL 2 버전 IRI, W3C SHACL, OOPS!, IDTA 서브모델 템플릿 버전·폐기 규칙, 지식 그래프 변경 언어 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-147 미반영, 정정 요청 없음",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지 어떻게 알 것인가? [분류원문]",
+      "역량 질문(competency question)을 SPARQL 질의·테스트로 형식화해 온톨로지의 완전성과 정확성을 확인하는 방법과 데이터셋·로봇 적용 사례는 무엇인가? (섹션 4·6·8 겨냥)",
+      "추론기 일관성 검사, 피트폴 스캐너(OOPS!), 형상 검증(SHACL) 같은 자동 평가 도구는 각각 무엇을 잡아내고 검증 보고서를 어떤 구조로 내는가? (섹션 6·7 겨냥)",
+      "온톨로지와 서브모델 템플릿의 버전은 어떻게 식별하고 이전 판과의 호환·비호환·폐기를 어떻게 표기하는가(OWL 2 버전 IRI, IDTA 서브모델 템플릿 규칙)? (섹션 4·7 겨냥)",
+      "온톨로지 변경을 표현·탐지하고 의존 자원에 미치는 영향을 분석하는 연구(온톨로지 진화, 변경 언어, 버전 비교, 재구성 허용성)는 무엇이 보고되었으며, 언어 모델을 검증에 쓰는 방법은 어디에 연결되는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)",
+      "oq-147 문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가? (섹션 6·11 겨냥)",
+      "온톨로지 검증·변경 관리에서 ROP가 직접 맡을 것(역량 질문 목록·테스트 실행·검증 보고서·버전 식별·재검증 목록)과 제조사·표준 발행 기관에 맡길 것의 경계는 어디이며, 현장 유형별 사례와 국내 자료는 무엇인가? (섹션 5·9·10 겨냥, 한국 자료 우선)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Wiśniewski·Potoniec·Ławrynowicz·Keet(2018)는 온톨로지 개발에서 역량 질문(competency question) 사용을 촉진하기 위해 여러 도메인 온톨로지에 대한 역량 질문 234개와 그 SPARQL-OWL 번역을 공개하고, 언어·의미 분석으로 106개의 역량 질문 패턴을 46개의 SPARQL-OWL 질의 서명과 대응시켜 역량 질문의 형식화·실행·관리를 지원하는 벤치마크로 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-890"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '234 CQs와 여러 도메인의 온톨로지를 위한 SPARQL-OWL 번역'을 공개하고 106개 역량 질문 패턴을 46개 SPARQL-OWL 질의 서명과 비교 분석. 용도는 역량 질문의 형식화·실행·관리 지원과 테스트·벤치마크.",
+        "as_of": "2018-11-23",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "Martorana·Urgese·Tiddi·Schlobach(2025)의 OntoBOT 은 SOMA·DOLCE 를 확장해 가정용 개인 서비스 로봇의 작업·행동·환경·능력을 통합 표현하는 온톨로지이며, 역량 질문으로 평가하고 TIAGo·HSR·UR3·Stretch 네 로봇에 대해 검증했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-891"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 노인·지원이 필요한 사람을 돕는 가정 내 개인 서비스 로봇을 대상으로 과제·행동·환경·능력을 통합 표현하고 '형식적 추론을 지원'하며, '역량 질문을 통해 평가'하고 네 가지 구체화된 에이전트(TIAGo, HSR, UR3, Stretch)에서 검증.",
+        "as_of": "2025-09-26",
+        "site_type": "가정",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f3",
+        "claim": "고영만 외(한국문헌정보학회지 49권 3호, 2015)는 학술용어사전 STNet 에 온톨로지 구조를 도입하면서 Pellet 추론기로 TBox 를 검증해 생성한 추론규칙이 모두 참임을 확인하고 SPARQL 검색 시나리오로 의미 검색 성능을 평가했으며, 이는 이번 조사에서 확인된 유일한 국내 온톨로지 검증 연구다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-899"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '추론 엔진(Pellet)을 통해 TBox 검증을 수행한 결과 본 연구에서 생성한 추론규칙이 모두 참으로 나타났으며' 키워드 검색으로 파악하기 힘든 복잡한 검색 시나리오를 SPARQL 질의로 평가.",
+        "as_of": "2015",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "서로 다른 세 발행 주체(포즈난 공과대학교·케이프타운 대학교 연구진의 역량 질문 데이터셋, 암스테르담 자유대학교 연구진의 OntoBOT, 국내 문헌정보학 연구진의 STNet)가 역량 질문 또는 SPARQL 질의 실행과 추론기 검증으로 온톨로지의 완전성·정확성을 확인하는 방식을 각각 보고해, 이 영역의 역량 질문·질의 기반 검증이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-890",
+          "ref-891",
+          "ref-899"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "f1(역량 질문→SPARQL-OWL 데이터셋), f2(역량 질문으로 로봇 온톨로지 평가), f3(Pellet TBox 검증과 SPARQL 시나리오)을 종합. 세 출처는 발행 기관·국가가 다르고 서로 인용 관계가 아니다.",
+        "as_of": "2025-09-26",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "Poveda-Villalón·Gómez-Pérez·Suárez-Figueroa(IJSWIS, 2014)의 OOPS!(OntOlogy Pitfall Scanner!)는 기술 논리에 익숙하지 않은 도메인 전문가를 위해 온톨로지의 모델링 결함(피트폴)을 온라인에서 탐지하는 도구로, 693개 이상의 온톨로지를 경험적으로 분석해 만든 카탈로그를 구조·기능·사용성 프로파일링 차원으로 분류하고 피트폴마다 심각·중요·경미의 중요도를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-889"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '온톨로지에서 결함을 탐지하기 위한 도구'로 693개 이상 온톨로지를 분석한 카탈로그를 구조적·기능적·사용성 프로파일링 차원으로 분류하고 각 피트폴에 중요도(critical·important·minor)와 탐지된 온톨로지 수를 포함.",
+        "as_of": "2014-04",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "W3C 형상 제약 언어(SHACL) 권고안(2017-07-20)은 데이터 그래프를 형상 그래프의 조건 집합으로 검증하는 언어이며, 검증 보고서는 적합 여부(sh:conforms), 개별 결과(sh:result), 심각도(sh:resultSeverity: Violation·Warning·Info)와 초점 노드·경로·값·원인 형상을 담는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-887"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "원문: 'RDF 그래프를 조건의 집합으로 검증하는 언어'. 검증 결과는 sh:conforms(부울), sh:result, sh:resultSeverity(sh:Violation·sh:Warning·sh:Info), sh:focusNode·sh:resultPath·sh:value·sh:sourceShape 로 구성.",
+        "as_of": "2017-07-20",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "Ioannidou 외(Healthcare, 2025)의 의료 로봇 상위 온톨로지 HERON 은 SPARQL 질의로 작업에 대한 에이전트 자격·전제조건을 검사하고 SHACL 형상으로 역할 기반 권한·오버라이드 승인 같은 기관 정책 준수를 검증하며, 임상 배치 없이 의료센터의 물류 운반·다중 로봇 플릿 조정 시뮬레이션 시나리오로 시연했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-885"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "SPARQL 로 에이전트 자격·전제조건 검사, SHACL 형상으로 역할 기반 권한·오버라이드 승인 정책 검증, Fundació Ave Maria 의료센터 시뮬레이션 시나리오(임상 배치 아님). (재인용: 2026-09-29-08)",
+        "as_of": "2025-04-30",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f8",
+        "claim": "서로 다른 두 발행 주체(W3C 의 SHACL 권고안, 그리스 연구진의 HERON)가 형상 제약 검증을 각각 정의하고 로봇 온톨로지 정책 검증에 적용해, 온톨로지 인스턴스 데이터의 제약 검증 수단으로서 SHACL 이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-887",
+          "ref-885"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "f6(W3C 권고안의 검증 보고서 구조)과 f7(HERON 의 SHACL 정책 검증)을 종합. W3C 원문을 이번 실행에서 열었고 HERON 은 이전 실행에서 전문을 연 동료심사 논문이다.",
+        "as_of": "2025-04-30",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성한 뒤 구문 검증·모순 탐지·환각과 누락 점검을 언어 모델과의 반복 루프로 자동 수행하고 사람이 최종 검토·수정만 하게 하여, 온톨로지 검증 단계에 자동 검사와 사람 검토를 결합했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-465"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토. (재인용: 2026-09-29-08)",
+        "as_of": "2024-10-18",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f10",
+        "claim": "Alharbi·Tamma·Payne·de Berardinis(2026)는 개방형(KimiK2·Llama 3.1·3.2)과 폐쇄형(Gemini 2.5 Pro·GPT 4.1) 언어 모델이 생성한 역량 질문을 가독성·입력 텍스트 관련성·구조적 복잡성 지표로 여러 도메인에서 평가해, 모델의 생성 프로필이 사용 사례에 따라 뚜렷이 달라진다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-898"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 전통적으로 수작업이던 역량 질문 생성을 생성형 AI 로 자동화; '가독성, 입력 텍스트와의 관련성, 생성된 질문의 구조적 복잡성' 지표; 'LLM 성능이 사용 사례에 의해 형성된 뚜렷한 생성 프로필을 반영'. 사람 검토 필요성은 초록에 명시되지 않음.",
+        "as_of": "2026-04-17",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "W3C OWL 2 구조 명세 2판(2012-12-11)은 온톨로지를 온톨로지 IRI 로 식별하고 특정 판을 버전 IRI 로 구분하며 같은 온톨로지 시리즈에서 정확히 하나의 버전만 현재 버전으로 보고, 온톨로지 주석 owl:priorVersion(이전 판 IRI)·owl:backwardCompatibleWith(호환되는 이전 판)·owl:incompatibleWith(양립 불가능한 이전 판)로 판 사이 관계를 표기한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-886"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "3.1절: ontology IRI 는 온톨로지를, version IRI 는 특정 버전을 식별하며 '각 온톨로지 시리즈에서 정확히 하나의 버전이 현재 버전으로 간주'. 3.5절: owl:priorVersion·owl:backwardCompatibleWith·owl:incompatibleWith 정의.",
+        "as_of": "2012-12-11",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f12",
+        "claim": "IDTA 서브모델 템플릿 공식 저장소 README 는 템플릿을 published·deprecated 폴더로 관리하고 판을 주버전·리비전·버그 수정으로 표기하며, 새 판 발행 6개월 뒤 이전 판을 deprecated 로 옮기되 그 템플릿은 계속 유효하나 버그 수정·개선·갱신을 더 제공하지 않는다고 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-894"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 'After six months from the publication of a new version of a Submodel Template (SMT), the previous version will be moved to the deprecated folder.' 폐기 템플릿은 사용 가능하나 유지보수되지 않음. Technical Data 2.0.1 = 주버전 2·리비전 0·패치 1.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "서로 다른 두 발행 주체(W3C, IDTA)가 온톨로지와 서브모델 템플릿의 판 식별자와 이전 판과의 호환·폐기 관계 표기를 각각 정의해, '판 식별자 + 이전 판 관계 명시'가 온톨로지·모델 버전 관리의 관행으로 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-886",
+          "ref-894"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "f11(OWL 2 버전 IRI·이전 판 주석)과 f12(IDTA 주버전·리비전·deprecated 규칙)를 종합. 두 출처 모두 이번 실행에서 원문을 열었고 발행 주체가 다르다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Zablith 외(The Knowledge Engineering Review, 2013)의 프로세스 중심 서베이는 온톨로지 진화(ontology evolution)를 도메인 변화나 정보 시스템 요구에 대응해 온톨로지를 최신으로 유지하는 일로 정의하고, 전형적 접근이 자연어 처리·추론 등 여러 분야 기법을 결합한 다단계 과정으로 설계된다고 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-888"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '온톨로지 진화는 도메인 변화 또는 정보 시스템 요구사항에 대응하여 온톨로지를 유지하는 것을 목표'로 하며 자연언어처리와 추론 등 기법을 결합한 다단계 프로세스 접근. 단계 이름은 초록 페이지에서 확인하지 못함.",
+        "as_of": "2013-08-28",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "Hegde 외(Database, 2025)의 지식 그래프 변경 언어 KGCL 은 온톨로지·지식 그래프의 변경을 '동의어 추가'·'계층 재배치' 같은 통제 자연어 명령으로 요청하거나 기술하는 표준 데이터 모델로, 패치·diff 개념을 빌려 미래 변경 요청과 기존 변경 기술에 모두 쓰이며 GitHub 온톨로지 저장소 자동화 에이전트와 BioPortal 변경 요청 인터페이스로 구현되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-892"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'add synonym 'arm' to 'forelimb'' 같은 고수준 명령으로 변경을 요청·기술하는 표준 데이터 모델; 적용 패치와 diff 개념; GitHub 온톨로지 저장소 통합 에이전트, BioPortal UI 변경 요청. 영향 분석·감사는 초록에 없음.",
+        "as_of": "2024-09-20",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "Qiang·Taylor·Wang(2024, 2026 개정)의 OM4OV 는 온톨로지 매칭 시스템을 온톨로지 버전 간 변경 비교에 재사용할 수 있지만 확장 없이는 왜곡된 측정을 낸다고 분석하고, 기존 정렬을 활용해 후보를 줄이는 교차 참조 메커니즘을 더한 버전 비교 프레임워크를 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-893"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'OM systems can be effectively reused for OV tasks, but without the necessary extensions, can produce skewed measurements'; Agent-OM 기반에 cross-reference 메커니즘 도입. 정량 결과는 초록에 없음.",
+        "as_of": "2026-08-31",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f17",
+        "claim": "서로 다른 세 발행 주체(Zablith 외의 유럽 연구진 서베이, Hegde 외의 생물의학 온톨로지 연구진, 호주 국립대학교 계열 Qiang 외)가 온톨로지 변경의 정의·표현·탐지를 각각 다루어, 온톨로지 변경 관리가 별도 연구 분야로 존재함이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-888",
+          "ref-892",
+          "ref-893"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "f14(진화 서베이), f15(변경 언어), f16(버전 비교)을 종합. 세 출처는 기관·주제가 다르고 상호 재게시가 아니다. 다만 세 출처 모두 로봇 능력 온톨로지를 다루지는 않는다.",
+        "as_of": "2026-08-31",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "Eichelberger·Weber(2024)는 2024년 2월 기준 IDTA 가 발표한 84개 명세 가운데 18개를 중간 메타모델로 변환해 5만 줄 이상의 API 코드·테스트를 자동 생성했으나 명세의 문법적 변동과 문제 때문에 수동 개입이 필요했다고 보고해, 표준 명세 자체의 변동성이 이를 소비하는 시스템의 재검증 부담이 됨을 보였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-895"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '모든 현재 IDTA 명세를 성공적으로 처리'해 50,000줄 이상 생성했으나 '문법적 변동성과 문제'로 수동 개입 필요; 84개 중 18개 명세 분석. 버전 표시 비율 같은 수치는 초록에 없음.",
+        "as_of": "2024-06-20",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "Osmani(2026)는 로봇 서비스 온톨로지(RoSO)를 구조적 일반지능 모델(SMGI)의 의미 계층으로 두고, 서비스 재구성 뒤에도 서비스 기술이 유효하게 남기 위한 정체성 보존 재구성 기준과 지역적으로 허용되는 갱신이 전역적으로도 허용되는 조합 조건을 제시해 런타임 변경의 허용 여부를 판단하는 거버넌스를 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-900"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "초록: 'identity-preserving reconfiguration criteria, and compositional conditions under which locally acceptable updates remain globally admissible'; 서비스 기술이 'dynamically governable' 하게 됨. 단독 저자 프리프린트이며 실험·현장 적용은 초록에 없음.",
+        "as_of": "2026-05-05",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "Nasir 외(2026)의 OntoKG-EQ 는 다섯 개의 고정된 역량 질문으로 정당화된 핵심 온톨로지가 모든 클래스·속성·형상 제약·지표를 통제하고, 각 답에 관찰·증거·출처까지 추적하는 설명을 붙여 검증된 그래프에서 결정론적으로 만들며, 17명 패널 연구에서 증거 묶음이 인지된 신뢰도와 완전성을 크게 높였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-896"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '다섯 개의 동결된 질문으로 정당화된 핵심 온톨로지'; 각 결과가 '관찰, 증거, 출처, 출처까지 추적하는 설명을 생성'; 17명 패널에서 '증거 묶음이 인지된 신뢰도와 완전성을 크게 증가'. 도메인은 신흥 주식시장 분석.",
+        "as_of": "2026-09-08",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f21",
+        "claim": "Abolhasani·Ba·He·Pan(2026)의 TRACE-KG 는 미리 정의한 온톨로지 없이 문맥이 풍부한 지식 그래프와 유도 스키마를 함께 만들면서 원문 근거에 대한 완전한 추적 가능성을 유지해, 사람 검토자가 자동 추출 결과를 원문과 대조해 검증할 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-897"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: '미리 정의된 온톨로지를 가정하지 않고 문맥이 풍부한 지식 그래프와 유도된 스키마를 공동으로 구축'하며 '원본 근거에 대한 완전한 추적 가능성을 유지'. ICML 2026 워크숍 발표.",
+        "as_of": "2026-06-15",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f22",
+        "claim": "oq-147 관련: 추출한 지식 항목마다 원문 근거를 붙여 검토자가 대조하게 하는 구성은 일반 문서 지식 그래프 추출(f20·f21)과 능력 온톨로지 생성의 사람 최종 검토(f9)에서 확인되지만, 로봇 매뉴얼·URDF 에서 뽑은 능력 항목에 매뉴얼의 절·줄 위치를 붙여 확정·반려하는 공개 구현은 이번 조사에서도 확인되지 않아 oq-147 은 부분 진전에 그친다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-896",
+          "ref-897",
+          "ref-465"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f20(증거·출처 추적 설명), f21(원문 근거 완전 추적), f9(사람 최종 검토)를 종합. 세 출처 모두 로봇 매뉴얼을 대상으로 하지 않는다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f23",
+        "claim": "VDA 5050 공식 저장소(main, 3.0.0 판)의 팩트시트 JSON 스키마는 팩트시트 자체의 version 을 필수 속성으로 두고 선택 속성 mobileRobotConfiguration 에 하드웨어·소프트웨어 버전을 담아, 로봇 펌웨어·소프트웨어 판이 바뀐 사실을 등록 데이터에서 읽을 수 있는 자리를 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "팩트시트 스키마 필수 속성에 version 포함, 선택 속성 mobileRobotConfiguration 에 하드웨어·소프트웨어 버전과 네트워크·배터리 매개변수. (재인용: 2026-09-29-07)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f24",
+        "claim": "확인한 출처 어디에도 로봇 능력 온톨로지에 대해 문서·펌웨어 개정 시 영향받는 작업·현장을 찾아 재검증하는 절차를 통째로 다룬 자료는 없으며, 판 식별·호환 표기(f11·f12), 변경의 표현·탐지(f15·f16), 재구성 허용 판단(f19), 펌웨어 판 보고 자리(f23)가 흩어져 있어 ROP 는 이들을 이어 '변경 감지 → 영향 목록 → 재검증 대기열' 절차를 스스로 설계해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-886",
+          "ref-894",
+          "ref-892",
+          "ref-893",
+          "ref-228"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f11·f12·f15·f16·f19·f23 의 종합. 영향 분석(impact analysis)은 f14 서베이가 다루는 분야이나 로봇 능력 온톨로지 적용 사례는 확인하지 못함.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f25",
+        "claim": "확인한 자료를 종합하면 7. 온톨로지 검증·변경 관리에서 ROP가 직접 맡을 범위는 능력 온톨로지의 역량 질문 목록과 그 SPARQL 테스트 실행 기록, SHACL 형상과 검증 보고서, 추론기 일관성 검사, 온톨로지 판 식별자와 이전 판 관계 표기, 변경 기술(변경 언어)과 영향받는 작업·현장의 재검증 목록이며, 원문 근거를 붙인 검토·확정 기록은 4. 이기종 로봇 등록의 검토·승인과 같은 기록을 공유해야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-890",
+          "ref-887",
+          "ref-886",
+          "ref-892"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1·f6·f11·f15 의 수단을 ROP 산출물로 묶은 리서치 에이전트의 종합. 어느 출처도 로봇 오케스트레이션 플랫폼의 책임 범위를 직접 말하지 않는다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "연계 대상: 로봇 펌웨어·소프트웨어의 릴리스 관리 자체와 표준 발행 기관의 템플릿 개정·폐기 일정은 분류 원문 19장의 로봇 자체 지능·제어와 업종·규격 측 소유 사항이므로, 이종 제조사를 잇는 ROP 는 팩트시트의 판 정보와 템플릿 폐기 통보를 받아 온톨로지 재검증을 촉발하는 데 그치고 펌웨어 검증과 템플릿 유지보수는 제조사·IDTA 에 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-228",
+          "ref-894"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f23(팩트시트의 하드웨어·소프트웨어 판)과 f12(IDTA 의 6개월 뒤 deprecated 규칙)를 경계 판단에 적용한 종합.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f27",
+        "claim": "이 영역은 등록 검토·승인 기록을 주는 4. 이기종 로봇 등록, 검증 대상 어휘를 주는 5. 로봇 능력·작업 표현, 검증된 연결만 실행하는 6. 온톨로지 기반 시스템·로봇 연동을 앞뒤로 두고, 판 규칙은 21. 상호운용 표준·적합성과 57. 자산·소프트웨어 수명주기 관리, 테스트·형식 검증 방법은 54. 시험·형식 검증·벤치마크에 이어지며, 언어 모델로 역량 질문·온톨로지를 생성·검증하는 방법(f9·f10)은 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영에도 연결된다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-894",
+          "ref-887",
+          "ref-465",
+          "ref-898"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f9·f10·f12·f6 과 분류 원문 교차 규칙(매뉴얼 해석은 4·55번)에 근거한 연결 판단.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-886",
+        "org": "W3C (OWL Working Group)",
+        "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)",
+        "published": "2012-12-11",
+        "url": "https://www.w3.org/TR/owl2-syntax/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "OWL 2 구조 명세. 온톨로지 IRI·버전 IRI 의 관계와 owl:priorVersion·backwardCompatibleWith·incompatibleWith 주석을 정의한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-887",
+        "org": "W3C (RDF Data Shapes Working Group)",
+        "title": "Shapes Constraint Language (SHACL)",
+        "published": "2017-07-20",
+        "url": "https://www.w3.org/TR/shacl/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "RDF 데이터 그래프를 형상 그래프의 조건으로 검증하는 W3C 권고안. 검증 보고서 구조(sh:conforms·sh:result·sh:resultSeverity)를 정한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-888",
+        "org": "Zablith, F., Antoniou, G., d'Aquin, M., Flouris, G., Kondylakis, H., Motta, E., Plexousakis, D., & Sabou, M. (The Knowledge Engineering Review)",
+        "title": "Ontology evolution: a process-centric survey",
+        "published": "2013-08-28",
+        "url": "https://www.cambridge.org/core/product/identifier/S0269888913000349/type/journal_article",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "온톨로지 진화를 도메인·요구 변화에 대응하는 유지 활동으로 정의하고 다단계 과정으로 정리한 서베이. 초록 페이지만 열었다(전문 PDF 403).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-889",
+        "org": "Poveda-Villalón, M., Gómez-Pérez, A., & Suárez-Figueroa, M. C. (Universidad Politécnica de Madrid, IJSWIS 10(2))",
+        "title": "OOPS! (OntOlogy Pitfall Scanner!): an on-line tool for ontology evaluation",
+        "published": "2014-04",
+        "url": "https://oa.upm.es/35873/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "온톨로지 모델링 결함을 탐지하는 온라인 도구 OOPS! 와 693개 이상 온톨로지 분석에 기반한 피트폴 카탈로그. UPM 기관 저장소의 초록을 열었다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-890",
+        "org": "Wiśniewski, D., Potoniec, J., Ławrynowicz, A., & Keet, C. M.",
+        "title": "Competency Questions and SPARQL-OWL Queries Dataset and Analysis",
+        "published": "2018-11-23",
+        "url": "https://arxiv.org/abs/1811.09529",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "역량 질문 234개와 SPARQL-OWL 번역, 106개 질문 패턴과 46개 질의 서명의 대응을 공개한 데이터셋 논문(프리프린트 초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-891",
+        "org": "Martorana, M., Urgese, F., Tiddi, I., & Schlobach, S. (Vrije Universiteit Amsterdam)",
+        "title": "An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics",
+        "published": "2025-09-26",
+        "url": "https://arxiv.org/abs/2509.22434",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "가정용 개인 서비스 로봇의 작업·행동·환경·능력을 통합 표현하는 OntoBOT 을 역량 질문으로 평가하고 네 로봇에서 검증한 프리프린트(초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-892",
+        "org": "Hegde, H. 외 (Database, Oxford)",
+        "title": "A Change Language for Ontologies and Knowledge Graphs",
+        "published": "2024-09-20",
+        "url": "https://arxiv.org/abs/2409.13906",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "온톨로지·지식 그래프 변경을 통제 자연어 명령으로 요청·기술하는 표준 데이터 모델 KGCL(프리프린트 초록, Database 2025 게재).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-893",
+        "org": "Qiang, Z., Taylor, K., & Wang, W.",
+        "title": "OM4OV: Leveraging Ontology Matching for Ontology Versioning",
+        "published": "2024-09-30",
+        "url": "https://arxiv.org/abs/2409.20302",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "온톨로지 매칭 시스템을 버전 간 변경 비교에 재사용하는 프레임워크와 교차 참조 메커니즘(프리프린트 초록, 2026-08-31 v19).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-894",
+        "org": "Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소",
+        "title": "submodel-templates — IDTA Submodel Templates for AAS (README)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "IDTA 서브모델 템플릿 공식 저장소 README. published·deprecated 폴더, 주버전·리비전·버그 수정 표기, 새 판 6개월 뒤 이전 판 폐기 규칙을 적는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/README.md"
+      },
+      {
+        "id": "ref-895",
+        "org": "Eichelberger, H., & Weber, A.",
+        "title": "Model-driven realization of IDTA submodel specifications: The good, the bad, the incompatible?",
+        "published": "2024-06-20",
+        "url": "https://arxiv.org/abs/2406.14470",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "IDTA 명세 18개를 메타모델로 변환해 API 코드·테스트를 생성한 모델 기반 접근과 명세의 문법적 변동 문제(프리프린트 초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-896",
+        "org": "Nasir, F., Saeed, M. A., Ehsan, M., Ahmad, S. J., & Altaf, A. M.",
+        "title": "OntoKG-EQ: A provenance-grounded, competency-question-governed knowledge graph for auditable analyst querying",
+        "published": "2026-09-08",
+        "url": "https://arxiv.org/abs/2609.08869",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "다섯 개 고정 역량 질문이 온톨로지를 통제하고 각 답에 출처까지의 증거 추적을 붙이는 지식 그래프. 17명 패널 평가(프리프린트 초록, 금융 도메인).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-897",
+        "org": "Abolhasani, M. S., Ba, Y., He, Y., & Pan, R. (Graph Foundation Models @ ICML 2026)",
+        "title": "Beyond Predefined Schemas: TRACE-KG for Context-Enriched Knowledge Graph Generation",
+        "published": "2026-04-03",
+        "url": "https://arxiv.org/abs/2604.03496",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "원문 근거에 대한 완전한 추적 가능성을 유지하며 문맥 지식 그래프와 유도 스키마를 함께 만드는 프레임워크(프리프린트 초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-898",
+        "org": "Alharbi, R., Tamma, V., Payne, T. R., & de Berardinis, J.",
+        "title": "Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models",
+        "published": "2026-04-17",
+        "url": "https://arxiv.org/abs/2604.16258",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "개방형·폐쇄형 언어 모델이 생성한 역량 질문을 가독성·관련성·구조 복잡성으로 평가한 다중 도메인 연구(프리프린트 초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-899",
+        "org": "고영만, 송민선, 이승준, 김비연, 민혜령 (한국문헌정보학회지 49(3))",
+        "title": "구조적 학술용어사전 “STNet”의 추론규칙 생성에 의한 의미 검색에 관한 연구",
+        "published": "2015",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002022617",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "학술용어사전에 온톨로지를 도입하고 Pellet 추론기 TBox 검증과 SPARQL 검색 시나리오로 평가한 국내 연구(KCI 초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-900",
+        "org": "Osmani, A.",
+        "title": "From Ontology Conformance to Admissible Reconfiguration: A RoSO/SMGI Adequacy Argument for Robotic Service Governance",
+        "published": "2026-05-05",
+        "url": "https://arxiv.org/abs/2605.08185",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "로봇 서비스 온톨로지의 재구성 뒤 유효성 유지 조건과 지역·전역 허용성을 다룬 이론적 단독 저자 프리프린트(초록).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-465",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+        "published": "2024-10-18",
+        "url": "https://arxiv.org/abs/2406.07962",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토하는 방법.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-885",
+        "org": "Ioannidou, P., Vezakis, I., Haritou, M., Petropoulou, R., Miloulis, S. T., Kouris, I., Bromis, K., Matsopoulos, G. K., & Koutsouris, D. D. (Healthcare, Basel)",
+        "title": "HEalthcare Robotics' ONtology (HERON): An Upper Ontology for Communication, Collaboration and Safety in Healthcare Robotics",
+        "published": "2025-04-30",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "의료 로봇 상위 온톨로지 HERON. SPARQL 자격·전제조건 검사와 SHACL 정책 검증을 의료센터 물류·플릿 조정 시뮬레이션 시나리오로 시연.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+        "title": "VDA5050/json_schemas/factsheet.schema (main)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "VDA 5050 3.0.0 팩트시트 JSON 스키마. version 등 필수 속성과 하드웨어·소프트웨어 버전을 담는 선택 속성 mobileRobotConfiguration 을 정한다.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f4(역량 질문·질의 기반 검증이 여러 곳에서 확인), f18(표준 명세 변동이 재검증 부담), f24(개정 시 영향·재검증 절차는 흩어져 있어 ROP 가 설계해야 함) / 섹션 4: f1(역량 질문·SPARQL-OWL), f5(피트폴·중요도), f6(형상 검증 보고서), f11(온톨로지 IRI·버전 IRI·이전 판 주석), f14(온톨로지 진화) / 섹션 5: 가정 — f2(OntoBOT, 네 로봇 역량 질문 평가, 현장 배치 아님을 명시), 병원 — f7(HERON 의료센터 시뮬레이션 정책 검증, 임상 배치 아님), 제조 공장·물류창고·상업 시설·실외 사례는 확인되지 않음을 서술 / 섹션 6: 역량 질문 검증 f1·f2·f3·f4, 자동 평가 f5·f6·f8, 언어 모델 결합 검증 f9·f10(교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영 함께 연결), 버전·호환 표기 f11·f12·f13, 변경 표현·탐지·허용성 f15·f16·f17·f19, 원문 근거 검토 f20·f21·f22 / 섹션 7: f11(OWL 2), f6(SHACL), f5(OOPS!), f12(IDTA 서브모델 템플릿 규칙), f15(KGCL), f23(VDA 5050 팩트시트 판 정보) / 섹션 8: f1, f2, f5, f14, f15, f16, f18, f19, f20, f21, 국내 f3 / 섹션 9: f25(직접 범위: 역량 질문 목록·테스트 기록·형상·검증 보고서·판 식별·재검증 목록), f26(연계 대상: 펌웨어 릴리스·템플릿 폐기 일정) / 섹션 10: f27 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크, 57. 자산·소프트웨어 수명주기 관리, 63. 병원·의료(f7), 65. 가정·공동주택(f2) / 섹션 11: 기존 oq-147(f22 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 57. 자산·소프트웨어 수명주기 관리 페이지에 f12·f23 반영, 54. 시험·형식 검증·벤치마크 페이지에 f1·f6 반영, 트랙 manual-capability-ontology 단계 5(완전성·정확성 검증)에 f1·f4·f5·f6 참고, 단계 6(변경 관리)에 f11·f12·f15 참고."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "역량 질문",
+        "term_en": "Competency Question (CQ)",
+        "definition": "온톨로지가 답할 수 있어야 하는 질문으로 요구사항을 적은 것으로, SPARQL 같은 질의로 형식화해 온톨로지가 요구를 충족하는지 검증하는 데 쓴다."
+      },
+      {
+        "term_ko": "온톨로지 피트폴",
+        "term_en": "Ontology Pitfall",
+        "definition": "온톨로지 모델링에서 흔히 생기는 결함 유형으로, 피트폴 스캐너(OOPS!)가 구조·기능·사용성 차원의 카탈로그와 심각·중요·경미 중요도로 자동 탐지한다."
+      },
+      {
+        "term_ko": "버전 IRI",
+        "term_en": "Version IRI (owl:versionIRI)",
+        "definition": "OWL 2 에서 같은 온톨로지 IRI 를 공유하는 온톨로지 시리즈 가운데 특정 판을 식별하는 IRI 로, 이전 판·호환·비호환 주석과 함께 온톨로지 버전 관리에 쓴다."
+      },
+      {
+        "term_ko": "온톨로지 진화",
+        "term_en": "Ontology Evolution",
+        "definition": "도메인 변화나 정보 시스템 요구 변화에 대응해 온톨로지를 최신 상태로 유지하는 활동으로, 변경 감지·표현·적용·영향 관리를 포함하는 다단계 과정으로 다뤄진다."
+      }
+    ],
+    "open_questions_new": [
+      "로봇 능력 온톨로지에 대해 펌웨어·매뉴얼 개정을 감지해 영향받는 작업·현장을 찾고 재검증 대기열에 넣는 절차를 구현한 공개 구현이나 현장 사례가 있는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 57. 자산·소프트웨어 수명주기 관리, 4. 이기종 로봇 등록 | 근거: f24 | 종류: 일반",
+      "분류 원문이 말하는 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)에 대응하는 기존 검증 수준·성숙도 체계가 있는가, 아니면 ROP 가 자체 정의해야 하는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 54. 시험·형식 검증·벤치마크, 36. 가상 시운전·실제 상황 재현 | 근거: f25 | 종류: 일반",
+      "국내에서 역량 질문·추론기·SHACL 로 로봇 온톨로지를 검증하거나 버전을 관리한 연구·현장 사례가 있는가(이번 조사에서 확인된 국내 자료는 학술용어사전 온톨로지 검증 연구 1건이다)? | 관련 영역: 7. 온톨로지 검증·변경 관리, 5. 로봇 능력·작업 표현 | 근거: f3 | 종류: 일반",
+      "IDTA 서브모델 템플릿의 이전 판이 새 판 발행 6개월 뒤 deprecated 로 옮겨질 때 그 판에 묶인 로봇 등록 데이터와 능력 정의를 ROP 는 어떤 기준으로 재검증·이관해야 하는가? | 관련 영역: 7. 온톨로지 검증·변경 관리, 21. 상호운용 표준·적합성, 4. 이기종 로봇 등록 | 근거: f12 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 18,
+      "cross_checked_count": 4,
+      "unverified": [
+        "Grüninger·Fox(1995) 'Methodology for the Design and Evaluation of Ontologies' 원문 PDF(토론토대학교 EIL)는 텍스트 추출이 되지 않고 Semantic Scholar API 는 429 로 서지를 확인하지 못해 출처에 넣지 않음 — 역량 질문의 원 제안자 인용은 스토리텔러가 쓰지 말 것",
+        "Themis(UPM 온톨로지 공학 그룹의 요구사항 기반 온톨로지 검증 도구)는 도구 페이지를 열었으나 개발 기관·논문을 페이지에서 확인하지 못했고 논문 PDF·Semantic Scholar 페이지는 연결 끊김·빈 응답으로 미확인 — 출처 제외",
+        "Köcher·Vieira da Silva·Fay 'Constraint Checking of Skills using SHACL'(INDIN 2021, 제조 스킬 검증)은 검색 결과 요약에서만 확인되고 HSU 페이지 404·Semantic Scholar 429 로 서지 미확인 — 제조 공장 현장 유형 사례 미확보",
+        "IDTA 'How to write a SMT v1.1' 지침 PDF 와 Dibowski 'Full Traceability and Provenance for Knowledge Graphs'(FOIS 2024) PDF 는 텍스트 추출 실패, MDPI 'Grounded Knowledge Graph Extraction via LLMs'(Computers 15(3):178)는 403 — oq-147 의 로봇 문서 적용 사례 후보 미열람",
+        "f14 Zablith 서베이의 진화 단계 이름은 초록 페이지에 없어 미확인(전문 PDF 403)",
+        "f16 OM4OV·f18 Eichelberger 의 정량 결과(검색 요약의 'AASX 파일 44%만 대상 명세 판 표시')는 초록에 없어 claim 에 넣지 않음",
+        "f2 OntoBOT 은 네 로봇에 대한 평가이며 가정 현장 배치 여부는 초록에서 확인하지 못함(site_type 은 출처가 밝힌 적용 대상 기준)",
+        "f7 HERON·f9 Vieira da Silva·f23 팩트시트는 재사용 출처로 이번에 다시 열지 않음",
+        "oq-147 미해결(f22 부분 진전)",
+        "f4·f8·f13·f17 외 모든 finding 교차 확인 실패(표준·연구마다 발행 주체 한 곳)"
+      ],
+      "scope_violations": [
+        "f26: 펌웨어 릴리스 관리와 표준 템플릿 유지보수는 분류 원문 19장의 로봇 자체 지능·제어와 규격 발행 기관 소유이므로 '연계 대상: '으로 표시함",
+        "f7: HERON 의 역할 기반 권한 정책 검증은 51. 인증·권한·격리·48. 안전·위험 관리와 겹치므로 이 영역에서는 SHACL 검증 적용 사례로만 제안함",
+        "f9·f10·f20·f21: 언어 모델 기반 온톨로지 생성·역량 질문 생성·지식 그래프 추출은 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f27)",
+        "f18: IDTA 명세의 코드 생성은 21. 상호운용 표준·적합성의 범위와 겹치므로 표준 명세 변동이 재검증 부담이 된다는 근거로만 제안함",
+        "f20: 금융 분석 도메인의 지식 그래프이므로 역량 질문 통제·증거 추적 구성의 선례로만 제안함"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-886~ref-900, 예약 구간 안) 상한 도달로 Frontiers 'A survey of ontology-enabled processes for dependable robot autonomy'(2024, 32편 검토 — 연 원문에 검증·변경 관리 서술이 없어 finding 으로 쓰지 않음), Themis, Köcher 외 SHACL 스킬 검증, IDTA SMT 작성 지침, Dibowski 추적성 논문, MDPI 근거 기반 추출 논문은 넣지 못했다. 원문 열람 15건(github_raw 1: IDTA 서브모델 템플릿 README, webfetch 14: W3C 권고안 2건, arXiv 초록 9건, Cambridge 초록, UPM 기관 저장소 초록, KCI 초록), 재사용 3건(ref-465·ref-885 는 2026-09-29-08, ref-228 은 2026-09-29-07 의 값 그대로, 이번에 다시 열지 않아 fetched false). 교차 확인 4건(f4: 포즈난·케이프타운/암스테르담/국내, f8: W3C/그리스 연구진, f13: W3C/IDTA, f17: Zablith 외/Hegde 외/Qiang 외). 신뢰도 high 는 f8·f13 두 건(각각 이번 실행에서 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지)에는 완전성·정확성 쪽은 f1~f8(역량 질문·질의 실행, 추론기, 피트폴 스캐너, SHACL)과 f9·f10(언어 모델 결합 검증)으로, 변경 쪽은 f11~f19·f23(판 식별·호환 표기, 변경 표현·탐지, 재구성 허용성, 팩트시트 판 정보)으로 답했으며 결론은 '검증 수단과 판 표기 규칙은 여러 곳에서 확인되지만 로봇 능력 온톨로지에 대해 개정 시 영향받는 작업·현장을 찾아 재검증하는 절차와 원문 절·줄 근거를 붙인 검토 구현은 확인되지 않았다'는 추정(f22·f24)이다. 분류 원문 1절의 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)를 정의한 출처는 찾지 못해 열린 질문으로 올렸다. 현장 유형: 가정(f2 OntoBOT 평가), 병원(f7 HERON 시뮬레이션 재인용)만 확인했고 제조 공장·물류창고·상업 시설·실외·기타 사례는 없다(제조 사례 후보 Köcher 외는 서지 미확인). 국내 자료는 KCI 논문(f3, 2015, 문헌정보학 온톨로지) 한 건이며 로봇 온톨로지 검증의 국내 사례는 찾지 못했다. 벤더 문서·벤더 주장 없음. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 용어집에 이미 있는 형상 제약 언어·의미적 버전 관리·회귀 시험·모델 검사·온톨로지 채우기·런타임 검증은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-147 은 f22 로 부분 진전만). 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 885건과의 URL 중복을 대조하지 못했으므로 W3C OWL 2·SHACL·IDTA 저장소·arXiv 2406.07962 등은 퍼블리셔가 기존 id 로 합칠 수 있다."
+    }
+  },
+  "ttft_ms": 28853,
+  "type": "result",
+  "duration_ms": 678878,
+  "uuid": "7c7ffdf1-e385-4d25-8399-a3f5d7266f28",
+  "ttft_stream_ms": 2282,
+  "time_to_request_ms": 95,
+  "first_content_frame_ms": 2282,
+  "time_to_request_from_spawn_ms": 5273961,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790666247319.8254,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 680.2
+}
