@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 기획·사업](categories/planning-and-business/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
+| [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 1 | 0 | 0 | 21 | 0 | 0 | 22 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
@@ -56,7 +56,7 @@ version: 1
 |---|---|---|---|---|
 | [4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | 2026-09-29 | 2 |
 | [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | published | medium | 2026-09-25 | 2 |
-| [6. 온톨로지 기반 시스템·로봇 연동](categories/robot-ontology/ontology-based-system-and-robot-integration.md) | seed | — | 2026-09-28 | 1 |
+| [6. 온톨로지 기반 시스템·로봇 연동](categories/robot-ontology/ontology-based-system-and-robot-integration.md) | published | medium | 2026-09-29 | 2 |
 | [7. 온톨로지 검증·변경 관리](categories/robot-ontology/ontology-verification-and-change-management.md) | seed | — | 2026-09-28 | 1 |
 
 **C. 채팅 기반 구성·운영**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 95회 중 최종 통과 95회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 95
-- 2차 검증 판정: 통과 95
+- 실행 96회 중 최종 통과 96회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 96
+- 2차 검증 판정: 통과 96
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 397 |
-| 오픈소스 문서 | 189 |
+| 논문 | 403 |
+| 오픈소스 문서 | 192 |
 | 표준 | 152 |
-| 정부·연구기관 | 63 |
+| 정부·연구기관 | 64 |
 | 벤더 문서 | 42 |
 | 기사 | 24 |
 | 업계 보고서 | 8 |
 
-신뢰도: medium 662건, high 148건, low 65건
+신뢰도: medium 668건, high 152건, low 65건
 
 ### 현장 유형 매트릭스 채움률
 

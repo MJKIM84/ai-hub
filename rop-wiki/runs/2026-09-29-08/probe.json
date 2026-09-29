@@ -1,0 +1,65 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": true,
+  "web_fetch_mirror_available": true,
+  "fetch_mode": "full",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-29 15:29:23 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "The search succeeded and returned GS1 EPCIS results, including the official GS1 EPCIS & CBV page and EPCIS 2.0 references.",
+      "elapsed_sec": 13.8,
+      "num_turns": 3,
+      "usage": {
+        "step": "probe-search",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 34,
+        "cache_creation_input_tokens": 1260,
+        "cache_read_input_tokens": 10340,
+        "output_tokens": 214,
+        "cost_usd": 0.0621,
+        "seconds": 13.8,
+        "num_turns": 3,
+        "models": [
+          "claude-fable-5-1",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch": {
+      "available": true,
+      "detail": "WebFetch succeeded; the page title is \"EPCIS and CBV Linked Data Model\".",
+      "elapsed_sec": 12.4,
+      "num_turns": 4,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 36,
+        "cache_creation_input_tokens": 647,
+        "cache_read_input_tokens": 15714,
+        "output_tokens": 366,
+        "cost_usd": 0.0375,
+        "seconds": 12.4,
+        "num_turns": 4,
+        "models": [
+          "claude-fable-5-1",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch_mirror": {
+      "available": true,
+      "detail": "일반 열람 가능 또는 미러 점검 URL 없음"
+    },
+    "web_fetch_curl": {
+      "available": true,
+      "status": 200,
+      "detail": "curl 200"
+    }
+  }
+}

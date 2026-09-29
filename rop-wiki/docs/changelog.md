@@ -20,6 +20,29 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-08 | 갱신 | [docs/categories/robot-ontology/ontology-based-system-and-robot-integration.md](categories/robot-ontology/ontology-based-system-and-robot-integration.md) | 영역 심화: 섹션 3~11 신규 작성(finding 28건 반영, 1차 조건부 승인 수정 13건·2차 수정 2건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s6.md](topics/2026/2026-09-29-area06-s6.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "6. 대표 접근법과 기술" 절(3,102자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s8.md](topics/2026/2026-09-29-area06-s8.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "8. 대표 연구와 자료" 절(1,873자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s4.md](topics/2026/2026-09-29-area06-s4.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "4. 핵심 개념과 용어" 절(1,115자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s11.md](topics/2026/2026-09-29-area06-s11.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "11. 열린 질문" 절(1,074자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s7.md](topics/2026/2026-09-29-area06-s7.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,042자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s10.md](topics/2026/2026-09-29-area06-s10.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,018자)을 옮겼다 |
+| 2026-09-29-08 | 생성 | [docs/topics/2026/2026-09-29-area06-s3.md](topics/2026/2026-09-29-area06-s3.md) | 자동 분리: 6. 온톨로지 기반 시스템·로봇 연동 의 "3. 왜 중요한가" 절(666자)을 옮겼다 |
+| 2026-09-29-08 | 요약 | [docs/categories/robot-ontology/ontology-based-system-and-robot-integration.md](categories/robot-ontology/ontology-based-system-and-robot-integration.md) | 6. 온톨로지 기반 시스템·로봇 연동: 영역 심화: 섹션 3~11 신규 작성(finding 28건 반영, 1차 조건부 승인 수정 13건·2차 수정 2건 이행), version 2. 참고문헌 번호 충돌 확인 필요(ref-038·037·880·881·883 은 실행 2026-09-29-07 의 다른 URL 과 겹치고, ref-869 는 대분류 페이지 자료 목록의 OPC 40010-1 과 겹치므로 퍼블리셔가 URL 기준으로 합쳐야 한다) |
+| 2026-09-29-08 | 생성 | [docs/references/ref-876.md](references/ref-876.md) | 참고문헌 ref-876 등록: User-defined Tasks - Programming Multiple Robots with ROS 2 |
+| 2026-09-29-08 | 생성 | [docs/references/ref-877.md](references/ref-877.md) | 참고문헌 ref-877 등록: SkiROS2: A skill-based Robot Control Platform for ROS |
+| 2026-09-29-08 | 생성 | [docs/references/ref-878.md](references/ref-878.md) | 참고문헌 ref-878 등록: CSS — An ontology for the Capability, Skill and Service mode… |
+| 2026-09-29-08 | 생성 | [docs/references/ref-879.md](references/ref-879.md) | 참고문헌 ref-879 등록: Industry 4.0 Asset Administration Shell (AAS): Interoperable… |
+| 2026-09-29-08 | 생성 | [docs/references/ref-880.md](references/ref-880.md) | 참고문헌 ref-880 등록: HEalthcare Robotics' ONtology (HERON): An Upper Ontology for… |
+| 2026-09-29-08 | 생성 | [docs/references/ref-881.md](references/ref-881.md) | 참고문헌 ref-881 등록: vda5050_connector - ROS Package Overview |
+| 2026-09-29-08 | 생성 | [docs/references/ref-882.md](references/ref-882.md) | 참고문헌 ref-882 등록: An OPC UA Model of the Skill Execution Interaction Protocol… |
+| 2026-09-29-08 | 생성 | [docs/references/ref-883.md](references/ref-883.md) | 참고문헌 ref-883 등록: 온톨로지 기반의 로봇 동적재구성에 관한 연구 |
+| 2026-09-29-08 | 생성 | [docs/references/ref-884.md](references/ref-884.md) | 참고문헌 ref-884 등록: Robot-Lift Integration Challenge \| Changi General Hospital |
+| 2026-09-29-08 | 생성 | [docs/references/ref-885.md](references/ref-885.md) | 참고문헌 ref-885 등록: Capability matchmaking software for rapid production system… |
+| 2026-09-29-08 | 생성 | [docs/glossary/skill-interface.md](glossary/skill-interface.md) | 용어집 항목 스킬 인터페이스 |
+| 2026-09-29-08 | 생성 | [docs/glossary/pre-hold-post-condition.md](glossary/pre-hold-post-condition.md) | 용어집 항목 전제·유지·사후 조건 |
+| 2026-09-29-08 | 생성 | [docs/glossary/performable-action.md](glossary/performable-action.md) | 용어집 항목 수행 가능 동작 |
+| 2026-09-29-08 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-29-07 | 갱신 | [docs/categories/robot-ontology/heterogeneous-robot-registration.md](categories/robot-ontology/heterogeneous-robot-registration.md) | 영역 심화: 섹션 3~11 신규 작성(finding 26건 반영, 1차 조건부 승인 수정 13건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2. 출처 id ref-228 는 직전 실행과 충돌하므로 퍼블리셔가 새 id 를 부여해야 한다 |
 | 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s4.md](topics/2026/2026-09-29-area04-s4.md) | 자동 분리: 4. 이기종 로봇 등록 의 "4. 핵심 개념과 용어" 절(2,184자)을 옮겼다 |
 | 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s6.md](topics/2026/2026-09-29-area04-s6.md) | 자동 분리: 4. 이기종 로봇 등록 의 "6. 대표 접근법과 기술" 절(1,749자)을 옮겼다 |
