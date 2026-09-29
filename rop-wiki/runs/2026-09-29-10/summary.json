@@ -1,0 +1,131 @@
+{
+  "run_id": "2026-09-29-10",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 1,
+    "area_name": "1. 기술·시장·업체 동향",
+    "category": "A. 기획·사업"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3437.9,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 1. 기술·시장·업체 동향 | 3~11절 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 열린 질문 4건, 용어 4건, 출처 16건). 2차 수정 반영(11절 괄호 정리, 6절 단락 분할, 'IT/OT 융합' 표기 통일, AMR·RMAC·IFR 약어 풀이). 주의: ref-899·ref-900 은 같은 날 실행 2026-09-29-09 가 다른 URL 에 부여한 번호이므로 퍼블리셔가 URL 기준으로 합칠 때 번호 충돌을 확인해야 한다 | run 2026-09-29-10",
+  "notes": [
+    "참고문헌 생성: references/ref-899.md",
+    "참고문헌 생성: references/ref-900.md",
+    "참고문헌 생성: references/ref-901.md",
+    "참고문헌 생성: references/ref-902.md",
+    "참고문헌 생성: references/ref-903.md",
+    "참고문헌 생성: references/ref-904.md",
+    "참고문헌 생성: references/ref-905.md",
+    "참고문헌 생성: references/ref-906.md",
+    "참고문헌 생성: references/ref-907.md",
+    "참고문헌 생성: references/ref-908.md",
+    "참고문헌 생성: references/ref-909.md",
+    "용어집 생성: glossary/robot-as-a-service.md",
+    "용어집 생성: glossary/robot-density.md",
+    "용어집 생성: glossary/agentic-ai.md",
+    "용어집 생성: glossary/it-ot-convergence.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 11,
+    "standards": 0,
+    "open_questions": 4,
+    "flow_cells": 11,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 18:26:14 KST",
+  "usage": {
+    "input_tokens": 692,
+    "cache_creation_input_tokens": 1004292,
+    "cache_read_input_tokens": 3888085,
+    "output_tokens": 240353,
+    "cost_usd": 34.4922,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 12.647,
+        "output_tokens": 88939,
+        "cache_read_input_tokens": 2560288,
+        "cache_creation_input_tokens": 318211
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.7526,
+        "output_tokens": 20757,
+        "cache_read_input_tokens": 1057751,
+        "cache_creation_input_tokens": 112416
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 12.894,
+        "output_tokens": 109240,
+        "cache_read_input_tokens": 73750,
+        "cache_creation_input_tokens": 370679
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 4.9,
+        "output_tokens": 20807,
+        "cache_read_input_tokens": 180650,
+        "cache_creation_input_tokens": 190721
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.1716,
+        "output_tokens": 344,
+        "cache_read_input_tokens": 5170,
+        "cache_creation_input_tokens": 6472
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.127,
+        "output_tokens": 266,
+        "cache_read_input_tokens": 10476,
+        "cache_creation_input_tokens": 5793
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 1
+}

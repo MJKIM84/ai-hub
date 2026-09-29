@@ -20,6 +20,30 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-10 | 갱신 | [docs/categories/planning-and-business/technology-market-and-vendor-trends.md](categories/planning-and-business/technology-market-and-vendor-trends.md) | 섹션 3~11 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 표준 3건, 자료 10건, 경계 2행, 연결 9개, 열린 질문 4건), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주. 2차: 11절 첫 문장 괄호 정리, 4절 'IT/OT 융합' 표기 통일, 5절 사례 제목의 AMR·RMAC 과 9절 IFR 약어 풀이 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s6.md](topics/2026/2026-09-29-area01-s6.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "6. 대표 접근법과 기술" 절(2,471자)을 옮겼다. 2차: '시장 통계 추적' 첫 단락을 세 단락으로 나눔(내용·태그·각주 동일) |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s8.md](topics/2026/2026-09-29-area01-s8.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "8. 대표 연구와 자료" 절(1,493자)을 옮겼다. 2차: IFR 동향 항목의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s3.md](topics/2026/2026-09-29-area01-s3.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "3. 왜 중요한가" 절(1,175자)을 옮겼다. 2차: IFR 동향 문장의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s4.md](topics/2026/2026-09-29-area01-s4.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "4. 핵심 개념과 용어" 절(1,162자)을 옮겼다. 2차: 용어 항목 제목·세 줄 요약·3절 첫 문장의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s11.md](topics/2026/2026-09-29-area01-s11.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "11. 열린 질문" 절(838자)을 옮겼다. 2차: 세 줄 요약 첫 항목과 3절 첫 문장의 닫히지 않은 괄호를 두 문장으로 고침 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s10.md](topics/2026/2026-09-29-area01-s10.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(769자)을 옮겼다. 2차 변경 없음 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s7.md](topics/2026/2026-09-29-area01-s7.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "7. 관련 표준·프레임워크·오픈소스" 절(582자)을 옮겼다. 2차 변경 없음 |
+| 2026-09-29-10 | 요약 | [docs/categories/planning-and-business/technology-market-and-vendor-trends.md](categories/planning-and-business/technology-market-and-vendor-trends.md) | 1. 기술·시장·업체 동향: 3~11절 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 열린 질문 4건, 용어 4건, 출처 16건). 2차 수정 반영(11절 괄호 정리, 6절 단락 분할, 'IT/OT 융합' 표기 통일, AMR·RMAC·IFR 약어 풀이). 주의: ref-899·ref-900 은 같은 날 실행 2026-09-29-09 가 다른 URL 에 부여한 번호이므로 퍼블리셔가 URL 기준으로 합칠 때 번호 충돌을 확인해야 한다 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-899.md](references/ref-899.md) | 참고문헌 ref-899 등록: World Robotics 2025 report – SERVICE ROBOTS – released by IF… |
+| 2026-09-29-10 | 생성 | [docs/references/ref-900.md](references/ref-900.md) | 참고문헌 ref-900 등록: World Robotics 2025 report – INDUSTRIAL ROBOTS – released by… |
+| 2026-09-29-10 | 생성 | [docs/references/ref-901.md](references/ref-901.md) | 참고문헌 ref-901 등록: Robot Density Surges in Europe, Asia, and Americas |
+| 2026-09-29-10 | 생성 | [docs/references/ref-902.md](references/ref-902.md) | 참고문헌 ref-902 등록: Top 5 Global Robotics Trends 2026 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-903.md](references/ref-903.md) | 참고문헌 ref-903 등록: [Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-904.md](references/ref-904.md) | 참고문헌 ref-904 등록: 산업부, '제4차 지능형 로봇 기본계획' 발표 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-905.md](references/ref-905.md) | 참고문헌 ref-905 등록: Mobile Robot Market Forecast Revised Downward |
+| 2026-09-29-10 | 생성 | [docs/references/ref-906.md](references/ref-906.md) | 참고문헌 ref-906 등록: Digit Moves Over 100,000 Totes in Commercial Deployment |
+| 2026-09-29-10 | 생성 | [docs/references/ref-907.md](references/ref-907.md) | 참고문헌 ref-907 등록: Agility Robotics' Digit humanoids land first official job |
+| 2026-09-29-10 | 생성 | [docs/references/ref-908.md](references/ref-908.md) | 참고문헌 ref-908 등록: CJ대한통운, 물류업계 최초 AI 휴머노이드 상용화 '첫발' |
+| 2026-09-29-10 | 생성 | [docs/references/ref-909.md](references/ref-909.md) | 참고문헌 ref-909 등록: 부품 배치 '척척' 무거운 짐도 '사뿐'… 아틀라스 2.5만대 로봇 학교 간다 |
+| 2026-09-29-10 | 생성 | [docs/glossary/robot-as-a-service.md](glossary/robot-as-a-service.md) | 용어집 항목 서비스형 로봇 |
+| 2026-09-29-10 | 생성 | [docs/glossary/robot-density.md](glossary/robot-density.md) | 용어집 항목 로봇 밀도 |
+| 2026-09-29-10 | 생성 | [docs/glossary/agentic-ai.md](glossary/agentic-ai.md) | 용어집 항목 에이전틱 AI |
+| 2026-09-29-10 | 생성 | [docs/glossary/it-ot-convergence.md](glossary/it-ot-convergence.md) | 용어집 항목 IT/OT 융합 |
 | 2026-09-29-09 | 갱신 | [docs/categories/robot-ontology/ontology-verification-and-change-management.md](categories/robot-ontology/ontology-verification-and-change-management.md) | 영역 심화: 섹션 3~11 신규 작성(finding 27건 반영, 1차 조건부 승인 수정 13건·2차 수정 4건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2 |
 | 2026-09-29-09 | 생성 | [docs/topics/2026/2026-09-29-area07-s6.md](topics/2026/2026-09-29-area07-s6.md) | 자동 분리: 7. 온톨로지 검증·변경 관리 의 "6. 대표 접근법과 기술" 절(2,811자)을 옮겼다 |
 | 2026-09-29-09 | 생성 | [docs/topics/2026/2026-09-29-area07-s8.md](topics/2026/2026-09-29-area07-s8.md) | 자동 분리: 7. 온톨로지 검증·변경 관리 의 "8. 대표 연구와 자료" 절(1,834자)을 옮겼다 |

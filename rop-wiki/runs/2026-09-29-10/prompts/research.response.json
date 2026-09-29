@@ -1,0 +1,822 @@
+{
+  "duration_api_ms": 798021,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 7.308535000000004,
+  "usage": {
+    "input_tokens": 258,
+    "cache_creation_input_tokens": 203768,
+    "cache_read_input_tokens": 1428784,
+    "output_tokens": 45376,
+    "output_tokens_details": {
+      "thinking_tokens": 16863
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 203768,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 28918,
+        "cache_read_input_tokens": 199907,
+        "cache_creation_input_tokens": 3861,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3861
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 258,
+      "outputTokens": 45376,
+      "cacheReadInputTokens": 1428784,
+      "cacheCreationInputTokens": 203768,
+      "webSearchRequests": 0,
+      "costUSD": 6.703936000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 16863,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 345109,
+      "outputTokens": 15898,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.6045990000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 45,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-10\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":1,\"area_name\":\"1. 기술·시장·업체 동향\",\"category\":\"A. 기획·사업\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 서비스형 로봇(RaaS)·휴머노이드 로봇·운영 대수·피지컬 AI·다중 에이전트 기반 모델 용어 없음(다중 플릿 오케스트레이션·플릿 관리 시스템·모바일 매니퓰레이터·기술 성숙도는 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 공식 통계(IFR·국내 실태조사)·시장조사 보고서·오픈소스 프레임워크 동향·연구 서베이·정부 전략 문서를 동향 추적 수단으로 구분한 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — Open-RMF, 국내 로봇 표준화 로드맵(KS·KOROS), IFR 통계 체계 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 2. 사용 사례·요구·책임 범위, 3. 경제성·조달·사업 모델, 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영, Q. 현장 유형별 적용 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 없음, 정정 요청 없음\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"어떤 연구·제품·업체가 로봇 오케스트레이션의 흐름을 바꾸고 있는가? [분류원문]\",\"오케스트레이션 대상 로봇(산업용·전문 서비스·이동·물류·휴머노이드)의 세계 판매·운영 규모와 성장 부문은 공식 통계(IFR)에서 어떻게 나타나는가? (섹션 3·6·8 겨냥)\",\"국내 로봇산업의 매출·사업체·분야별 구성과 정부 전략(제4차 지능형 로봇 기본계획, K-휴머노이드 연합)은 무엇을 말하는가? (섹션 5·8 겨냥, 한국 자료 우선)\",\"다중 제조사 로봇을 묶는 오케스트레이션·관제 제품과 오픈소스 프레임워크(Open-RMF, 국내 이기종 통합관제 솔루션)의 지형과 시장 성장 전망은 어떠한가? (섹션 6·7 겨냥)\",\"학습 기반·언어 모델 기반 다중 로봇 조정(DeepFleet 등)과 다중 로봇 협업 서베이가 보여 주는 연구 동향은 무엇인가? (섹션 6·8 겨냥, 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영과 연결)\",\"휴머노이드·모바일 매니퓰레이터·사족 보행 로봇 같은 새 로봇 형태의 도입 추세는 어디까지 확인되는가? (섹션 4·6 겨냥)\",\"기술·시장·업체 동향 조사에서 ROP가 직접 맡을 것(지형 정보의 등록·능력 표현·조달 판단 연결)과 외부(시장조사·수요예측·로봇 자체 기술)에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"국제로봇연맹(IFR)의 World Robotics 2025 서비스 로봇 통계(2025-10-07 발표)에 따르면 2024년 전문용 서비스 로봇 판매는 약 20만 대(전년 대비 9% 증가)이고, 그중 운송·물류 응용이 102,900대(14% 증가)로 가장 크며, 로봇 구매 대신 구독·임대를 택하는 서비스형 로봇(RaaS) 플릿이 31% 늘었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-899\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR 보도자료(Frankfurt, 2025-10-07): 전문 서비스 로봇 약 200,000대(+9%), 운송·물류 102,900대(+14%), RaaS 플릿 +31%. 원문 구절: \\\"더 많은 기업들이 로봇을 직접 구매하기보다는 구독 또는 임차 계약을 선택하고 있습니다\\\"(열람 도구 번역).\",\"as_of\":\"2025-10-07\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"같은 IFR 2025 서비스 로봇 통계에서 의료 로봇은 약 16,700대로 91% 늘었고 접객(hospitality) 로봇은 42,000대 이상으로 11% 줄어, 응용 분야별로 성장 방향이 갈린다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-899\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR 보도자료: 의료 로봇 약 16,700대(+91%), 그중 재활·비침습 치료 +106%, 수술 +41%; 접객 로봇 42,000대 이상(-11%); 소비자용 서비스 로봇 약 2,000만 대(+11%).\",\"as_of\":\"2025-10-07\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"IFR World Robotics 2025 산업용 로봇 통계(2025-09-25 발표)에 따르면 2024년 세계 산업용 로봇 설치는 542,000대, 운영 대수는 4,664,000대(9% 증가)이며 아시아가 신규 설치의 74%를 차지하고 중국이 295,000대(54%), 한국은 30,600대로 세계 4위 시장이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-900\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR 보도자료(2025-09-25): 설치 542,000대, 운영 4,664,000대(+9%), 아시아 74%·유럽 16%·미주 9%, 중국 295,000대(54%), 한국 30,600대 4위. 2025년 약 575,000대, 2028년 700,000대 초과 전망.\",\"as_of\":\"2025-09-25\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"IFR 위치 논문 'Humanoid Robots – Vision and Reality'(2025-08-14 발표)는 휴머노이드에 대한 지역별 시각을 미국(물류·제조 생산성), 중국(대량 생산 목표·서비스 부문), 일본(교육·노인 돌봄의 사회적 동반자), 유럽(산업 협업·윤리 중심)으로 구분하고, 휴머노이드가 기존 로봇을 대체하지 않고 보완·확장할 것이며 대중적 채택 시기는 불확실하다고 본다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-901\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR 보도자료(Frankfurt, 2025-08-14): 중국은 휴머노이드 대량 생산 목표 설정, 미·유럽 기술 기업 대규모 투자 발표. IFR 회장 인용: \\\"휴머노이드는 기존 로봇을 대체하지 않을 것이며, 대신 보완하고 확장할 것\\\"(열람 도구 번역).\",\"as_of\":\"2025-08-14\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"산업통상자원부는 2025년 4월 10일 기업·대학·단체 약 40곳이 참여하는 K-휴머노이드 연합을 출범시키고 2030년까지 정부 연구개발과 민간 투자를 합쳐 1조원 이상이 투입될 것으로 기대한다고 밝혔으며, 장관은 휴머노이드 시장이 2025년 15억 달러에서 2035년 380억 달러로 25배 성장할 것으로 전망했다(전망 수치의 원 출처는 자료에 없음).\",\"tag\":\"사실\",\"source_ids\":[\"ref-904\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KDI 경제정보센터 전재 산업통상자원부 자료(2025-04-11): 약 40개 기업·대학·단체 협약, 2030년까지 1조원 이상 투자 기대, 시장 15억 달러(2025)→380억 달러(2035). 미션: 로봇 AI 공용 모델, 휴머노이드 핵심기술, AI 반도체·배터리, 스타트업·인력, 공급–수요 협력.\",\"as_of\":\"2025-04-11\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f6\",\"claim\":\"서로 다른 두 발행 주체(국제 업계 단체인 IFR 과 한국 산업통상자원부)가 2025년에 각각 휴머노이드를 차세대 투자·정책 대상으로 다루는 문서를 내어, 휴머노이드가 오케스트레이션 대상 로봇 종류의 지형에 새로 들어오고 있음이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-901\",\"ref-904\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR 위치 논문(2025-08-14)은 미·중·유럽의 대규모 투자와 대량 생산 목표를, 산업통상자원부 자료(2025-04-11)는 K-휴머노이드 연합과 1조원 투자 기대를 각각 서술한다. 두 출처 모두 실제 배치 규모는 밝히지 않는다.\",\"as_of\":\"2025-08-14\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"산업통상자원부는 2024년 1월 16일 로봇산업정책심의회를 거쳐 2023년 12월의 '첨단로봇 산업 비전과 전략'을 이행하는 제4차 지능형 로봇 기본계획(2024~2028)을 확정했으며, 2030년까지 민관 합동 3조원 이상 투자를 목표로 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-903\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KDI 경제정보센터 자료(산업통상자원부 제조산업정책과, 2024-01-16, 28쪽 첨부): 2024~2028 5개년 계획, 2030년까지 민관 합동 3조원 이상 투자, 'K-로봇 경제' 실현. 첨부 PDF 본문은 열지 않았다.\",\"as_of\":\"2024-01-16\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"한국로봇산업진흥원 로봇산업 실태조사(2024년 기준) 결과를 요약한 로봇신문 기사에 따르면 국내 로봇산업 매출은 6조1,695억원(3.2% 증가)으로 처음 6조원을 넘었고, 제조업용 로봇 3조1,075억원(50.4%), 부품·소프트웨어 1조9,800억원(32.1%), 전문 서비스 로봇 6,420억원(10.4%), 개인 서비스 로봇 4,380억원(7.1%)이며 사업체 2,509곳·종사자 34,649명이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-902\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"로봇신문 커버스토리: 매출 6조1,695억원(+3.2%), 생산 5조9,447억원(+4.5%), 수출 1조2,600억원(+0.8%), 수입 6,890억원(+5.1%), 중소기업 2,458곳(98.0%), 연구개발 수행 기업 17.1%. 실태조사 원문(한국로봇산업진흥원)은 열지 않았다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"시장조사 업체 Interact Analysis 는 2025년 5월 이동로봇 시장 보고서에서 관세와 경제 불확실성을 이유로 2025년 전망을 8억 달러 낮추고 향후 5년 연평균 성장률을 26%에서 21%로, 2030년 매출 전망을 156억 달러로 조정했으며, AGV 출하 성장률은 6%에서 4%로, 대형 AMR 출하는 15~20% 줄여 잡았다고 FreightWaves 가 보도했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-911\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"FreightWaves 기사: 전망 8억 달러 삭감, CAGR 26%→21%, 2030년 156억 달러, AGV 출하 성장 6%→4%, 대형 AMR 출하 15~20% 감소, 경제정책 불확실성 지수 430(2025-01). Interact Analysis 원 보고서·해설 페이지는 열람 차단으로 열지 못했다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"서로 다른 두 발행 주체(IFR 공식 통계, 시장조사 업체 Interact Analysis 의 보도된 전망)가 각각 운송·물류용 이동로봇을 전문 서비스 로봇 가운데 가장 큰 응용이자 성장이 이어지는 부문으로 서술해, 이동·물류 로봇이 오케스트레이션 대상의 중심 로봇 종류임이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-899\",\"ref-911\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"IFR: 운송·물류 102,900대(+14%)로 최대 응용. Interact Analysis(FreightWaves 보도): 전망 하향에도 이동로봇 시장 CAGR 21%. 두 출처의 집계 단위(대수 vs 매출)가 달라 수치 자체는 비교할 수 없다.\",\"as_of\":\"2025-10-07\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"Interact Analysis 의 해설 자료는 여러 제조사의 AMR 플릿을 한 플랫폼에서 관리하는 다중 플릿 오케스트레이션 소프트웨어(제3자 플릿 관리 솔루션)가 2021~2027년 연평균 138% 성장할 것으로 전망하고 이 부문이 창고 제어 소프트웨어(WCS) 부문의 발전을 대체로 따라왔다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-913\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 결과 요약: 다중 플릿 오케스트레이션 플랫폼 CAGR 138%(2021~2027 전망), '제3자 플릿 관리 솔루션'으로도 불리며 WCS 부문의 발전을 대체로 따라옴. 원문 페이지는 열람 차단으로 열지 못해 요약 범위만 반영했다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f12\",\"claim\":\"Open-RMF 공식 문서(Programming Multiple Robots with ROS 2 서문)는 RMF 가 싱가포르 정부(보건부·국가로봇프로그램)의 지원으로 시작되었고, 단일 공급업체 의존 위험과 중복 통합 비용을 피하기 위해 이기종 로봇 플릿의 상호운용을 가능하게 하는 라이브러리·도구 모음이며, 쇼핑몰·주택단지·대학·직장·공항·병원·호텔 같은 대형 건물에서 배송·청소 로봇이 승강기·복도·문을 함께 쓰는 상황을 다룬다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-910\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"intro.md 원문(열람 도구 번역): \\\"이질적 로봇 플릿의 상호운용성을 가능하게 하는 재사용 가능하고 확장 가능한 라이브러리와 도구 모음\\\", 단일 공급업체 운영 위험·중복 통합 비용 회피, 싱가포르 MOH·NRP 지원, 배포 현장으로 쇼핑몰·주택단지·대학·직장·공항·병원·호텔 열거. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f13\",\"claim\":\"Open-RMF 핵심 개요 문서는 RMF 를 로봇 시스템·건물 기반시설·사용자 인터페이스의 통합을 위한 개방형 명세와 소프트웨어 도구로 정의하고, 플릿 어댑터가 문 열기·승강기 호출·디스펜서 같은 표준 기반시설 인터페이스와의 통신을 맡으며 모든 플릿 관리자가 예상 경로를 교통 일정 데이터베이스에 보고하고, 로봇 통합 수준을 Full Control·Traffic Light·Read Only 세 범주로 나눈다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-004\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"rmf-core.md 원문(열람 도구 번역): \\\"로봇 시스템, 건물 기반시설, 사용자 인터페이스의 통합과 상호운용성을 용이하게 하는 개방형 명세와 소프트웨어 도구\\\"; 플릿 어댑터의 문·승강기·디스펜서 인터페이스 담당; Traffic Schedule Database 와 협상; Full Control / Traffic Light / Read Only. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Amazon 은 2025년 8월 11일 Amazon Science 글에서 풀필먼트·분류 센터의 이동로봇 플릿 조정을 위한 첫 기반 모델 DeepFleet 을 발표하며 운영 중인 로봇이 100만 대이고 모델이 로봇 중심·로봇–바닥·이미지–바닥·그래프–바닥의 네 구조를 탐색했다고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-905\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Amazon Science(Joey Durham, 2025-08-11): 첫 기반 모델 DeepFleet, 100만 대 로봇 운영, 네 모델(Robot-Centric, Robot-Floor, Image-Floor, Graph-Floor), 수백만 시간의 운영 데이터로 학습, 위치 예측 사전학습.\",\"as_of\":\"2025-08-11\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f15\",\"claim\":\"Amazon 은 DeepFleet 이 작업 배정과 혼잡 경로 조정을 통해 로봇 배치 효율을 10% 높인다고 주장하지만 독립 출처로는 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-905\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: Amazon Science 글의 \\\"10% increase in efficiency of robot deployments\\\". 측정 조건·기간은 글에 없으며 독립 출처 확인 없음.\",\"as_of\":\"2025-08-11\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f16\",\"claim\":\"Agaskar 외 Amazon Robotics 연구진 21명의 arXiv 논문 DeepFleet(2025-08-12 제출, 2026-04-13 개정)은 수십만 대 로봇의 창고 이동 데이터로 학습한 대규모 이동로봇 플릿 조정·계획용 기반 모델 모음을 제시하고, 로봇 중심 모델과 그래프–바닥 모델이 비동기 로봇 갱신과 국소 상호작용 구조를 쓸 때 우수하며 데이터가 늘수록 성능이 향상된다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-906\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2508.08574 초록: \\\"DeepFleet, a suite of foundation models designed to support coordination and planning for large-scale mobile robot fleets\\\"; 네 구조 RC·RF·IF·GF; RC 와 GF 가 우수, 데이터 규모에 따라 확장. 분류 cs.RO·cs.MA.\",\"as_of\":\"2026-04-13\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f17\",\"claim\":\"Li·An·Abrar·Zhou 의 서베이 'Large Language Models for Multi-Robot Systems'(2025-02-06 제출, 2026-05-03 v5)는 언어 모델의 다중 로봇 적용을 상위 작업 배정·중간 동작 계획·하위 행동 생성·사람 개입의 네 수준으로 정리하고 수학적 추론 부족·환각·지연·실환경 벤치마크 부족을 한계로 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-909\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2502.03814 초록: LLM 이 \\\"enhanced communication, task allocation and planning, and human-robot interaction\\\" 을 가능하게 함; 네 수준 분류; 응용 도메인 가정·건설·편대 제어·표적 추적; 한계로 수학 추론, 환각, 지연, 벤치마크 부족.\",\"as_of\":\"2026-05-03\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"서로 다른 두 발행 주체(Amazon Robotics 의 DeepFleet 논문, Drexel 대학교 계열 연구진의 언어 모델 다중 로봇 서베이)가 각각 학습 기반 모델을 다중 로봇 조정·배정에 적용하는 흐름을 보고해, 대규모 플릿 조정에 기반 모델·언어 모델을 쓰는 연구 동향이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-906\",\"ref-909\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"DeepFleet 은 수십만 대 로봇 이동 데이터로 학습한 조정·계획 기반 모델을, LLM 서베이는 작업 배정·계획·상호작용에 언어 모델을 쓰는 연구를 정리한다. 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영에도 연결한다.\",\"as_of\":\"2026-05-03\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"Karam 외(Egerstedt 연구진)의 서베이 'Collaboration in Multi-Robot Systems'(2026-03-25 제출)는 다중 로봇 연구에서 협력(cooperation)·조정(coordination)·협업(collaboration)이 구분 없이 혼용된다고 지적하고 세 개념의 정의를 제안한 뒤 협업 구현 프레임워크를 검토하고 기술 과제를 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-908\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2603.23898 초록: \\\"cooperation, coordination, and collaboration are often treated interchangeably, without clearly articulating the differences among them\\\"; 정의 제안, 프레임워크 검토, 과제·향후 연구 정리. 분류 eess.SY.\",\"as_of\":\"2026-03-25\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"2024년 10월 기사에 따르면 클로봇은 LG CNS 컨소시엄과 함께 인천국제공항공사의 '다기종 로봇 제작 및 5G 디지털 트윈 관제 구축 사업'을 수주해 안내·보안·도슨트 로봇용 AI 서비스와 디지털 트윈 관제를 맡고, 클라우드 기반 다중로봇제어시스템으로 소개된 이기종 통합관제 솔루션 크롬스를 국립중앙박물관·국립현대미술관에서 이미 운영 중이라고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-907\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"헬로티 기사(2024-10-12): 인천국제공항공사 '다기종 로봇 제작 및 5G 디지털 트윈 관제 구축 사업', 클로봇은 AI 서비스·디지털 트윈 관제, LG CNS 는 로봇·인프라·5G 특화망; 크롬스는 클라우드 기반 다중로봇제어시스템(FMS). 연동 로봇 제조사 수·대수·계약 규모는 기사에 없다.\",\"as_of\":\"2024-10-12\",\"site_type\":\"기타\",\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"한국로봇산업협회 연구진 5명이 표준인증안전학회지 15권 2호(2025)에 실은 논문은 ISO·IEC 등 공식 표준화 기구와 IEEE·OMG 등 산업 단체의 로봇 표준화 동향, 한국산업표준(KS)과 한국로봇표준포럼(KOROS)의 국내 활동을 분석하고 2024~2028 국제표준화 로드맵으로 경쟁 기술 분야 집중·표준 전문 인력·연구–표준 연계·중소기업 참여·해외 규제 대응을 권고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-912\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KCI 초록(표준인증안전학회지 15(2), 2025): ISO·IEC·IEEE·OMG 표준화 활동, KS·KOROS 분석, 권고 5항목. 원문 구절(열람 도구 번역): \\\"로봇 기술은 AI·5G·IoT 와의 융합을 통해 산업 혁신을 빠르게 이끌며 국제표준화의 중요성이 커지고 있다\\\".\",\"as_of\":\"2025\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"확인한 자료를 종합하면 로봇 오케스트레이션의 흐름을 바꾸는 요소는 (1) 이기종 로봇 상호운용을 목표로 한 오픈소스 프레임워크와 다중 플릿 오케스트레이션 소프트웨어 부문의 급성장, (2) 100만 대 규모 플릿에 학습 기반 조정 모델을 적용하는 초대형 운영사, (3) 휴머노이드 같은 새 로봇 형태에 대한 정부·업계 투자, (4) 구독형(RaaS) 도입 확대로 보이며, 이 가운데 실제 배치 규모가 공식 통계로 확인되는 것은 이동·물류 로봇뿐이다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-910\",\"ref-913\",\"ref-906\",\"ref-901\",\"ref-899\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f12(Open-RMF 상호운용 목적), f11(다중 플릿 오케스트레이션 138% 전망), f14·f16(DeepFleet), f4·f6(휴머노이드 투자), f1(RaaS +31%)을 종합한 판단. 모바일 매니퓰레이터·사족 보행 로봇의 공식 통계는 이번 조사에서 확인하지 못했다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"확인한 자료를 종합하면 1. 기술·시장·업체 동향에서 ROP가 직접 맡을 범위는 오케스트레이션·관제 제품, 로봇 제조사, 통합 사업자, 로봇 종류·형태의 지형을 기준일과 출처를 붙여 정리하고 그 결과를 4. 이기종 로봇 등록의 등록 대상 목록, 5. 로봇 능력·작업 표현의 능력 어휘, 3. 경제성·조달·사업 모델의 후보 선정에 넘기는 일이며, 통계 자체의 생산은 IFR·한국로봇산업진흥원 같은 외부 기관에 기댄다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-899\",\"ref-902\",\"ref-912\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"IFR 통계(f1·f3)와 국내 실태조사(f8)는 외부 기관이 생산하고, 표준화 로드맵(f21)은 협회가 정리한다. ROP 쪽에 남는 일은 이를 등록·능력·조달 판단의 입력으로 연결하는 것이라는 판단이며 출처가 직접 말한 경계는 아니다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"연계 대상: 시장 규모·수요 전망과 투자 판단(수요예측·재무 쪽 상위 업무 영역)과 휴머노이드·이동로봇의 기구·제어 기술 자체(로봇 자체 지능·제어)는 분류 원문 19장의 외부 연계 영역이므로, ROP 는 시장조사 업체·업계 단체의 전망과 제조사의 로봇 형태 정보를 입력으로 받아 지형에 반영하는 데 그치고 전망의 산출과 로봇 기술 개발은 외부에 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-911\",\"ref-901\",\"ref-904\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Interact Analysis 전망(f9)·휴머노이드 시장 전망(f5)·IFR 위치 논문(f4)은 모두 외부 기관의 산출물이다. 분류 원문 19장의 '상위 업무 시스템(수요예측·재무)'과 '로봇 자체 지능·제어' 경계를 적용한 판단.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"이 영역은 로봇에게 맡길 일을 정하는 2. 사용 사례·요구·책임 범위와 로봇·플랫폼을 고르는 3. 경제성·조달·사업 모델(RaaS 추세 f1)에 지형 정보를 주고, 등록 대상과 능력 어휘의 범위를 정하는 4. 이기종 로봇 등록·5. 로봇 능력·작업 표현, 관제 제품·규격의 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성(f12·f13·f21), 학습 기반 조정 연구의 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영(f16~f18), 현장별 도입 현황의 61. 물류창고(f14)·67. 기타 현장(f20)에 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-899\",\"ref-910\",\"ref-912\",\"ref-909\",\"ref-905\",\"ref-907\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1(RaaS), f12·f13(Open-RMF), f21(표준화 로드맵), f16~f18(학습 기반 조정), f14(Amazon 물류창고), f20(인천공항) 근거를 영역별로 대응한 연결 제안.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-899\",\"org\":\"International Federation of Robotics (IFR)\",\"title\":\"World Robotics 2025 report – SERVICE ROBOTS – released by IFR\",\"published\":\"2025-10-07\",\"url\":\"https://ifr.org/ifr-press-releases/news/service-robots-see-global-growth-boom\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"2024년 전문 서비스 로봇 판매 약 20만 대(+9%), 운송·물류 102,900대(+14%), RaaS 플릿 +31%, 의료 로봇 +91%, 접객 로봇 -11% 등 IFR 공식 통계 요약 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-900\",\"org\":\"International Federation of Robotics (IFR)\",\"title\":\"World Robotics 2025 report – INDUSTRIAL ROBOTS – released by IFR\",\"published\":\"2025-09-25\",\"url\":\"https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"2024년 산업용 로봇 설치 542,000대, 운영 4,664,000대, 아시아 74%, 중국 295,000대, 한국 30,600대(4위), 2028년 70만 대 초과 전망을 담은 IFR 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-901\",\"org\":\"International Federation of Robotics (IFR)\",\"title\":\"Humanoid Robots: “Vision and Reality” Paper Published by IFR\",\"published\":\"2025-08-14\",\"url\":\"https://ifr.org/ifr-press-releases/news/humanoid-robots-vision-and-reality-paper-published-by-ifr\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"IFR 위치 논문 발표 보도자료. 휴머노이드에 대한 미국·중국·일본·유럽의 시각 차이와 '기존 로봇을 대체하지 않고 보완'한다는 전망을 정리한다. 위치 논문 본문은 열지 않았다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-902\",\"org\":\"로봇신문\",\"title\":\"[Cover Story] ‘2024년 국내 로봇산업 실태 조사 결과 보고서’ 요약\",\"published\":null,\"url\":\"https://www.irobotnews.com/news/articleView.html?idxno=44544\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-29\",\"summary\":\"한국로봇산업진흥원 로봇산업 실태조사(2024년 기준)의 매출 6조1,695억원·분야별 구성·사업체·인력·수출입 수치를 요약한 전문지 기사. 실태조사 원문은 열지 않았다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-903\",\"org\":\"산업통상자원부 (KDI 경제교육·정보센터 전재)\",\"title\":\"제4차 지능형 로봇 기본계획(2024~2028) 발표\",\"published\":\"2024-01-16\",\"url\":\"https://eiec.kdi.re.kr/policy/materialView.do?num=247119\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"2023년 12월 '첨단로봇 산업 비전과 전략'을 이행하는 5개년 기본계획 발표 자료. 2030년까지 민관 합동 3조원 이상 투자 목표. 첨부 PDF 본문은 열지 않았다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-904\",\"org\":\"산업통상자원부 (KDI 경제교육·정보센터 전재)\",\"title\":\"K-휴머노이드 연합 출범\",\"published\":\"2025-04-11\",\"url\":\"https://eiec.kdi.re.kr/policy/materialView.do?num=265432\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"약 40개 기업·대학·단체가 참여하는 K-휴머노이드 연합 출범(2025-04-10)과 2030년까지 1조원 이상 투자 기대, 휴머노이드 시장 25배 성장 전망을 담은 정부 자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-905\",\"org\":\"Amazon Science (Joey Durham)\",\"title\":\"Amazon builds first foundation model for multirobot coordination\",\"published\":\"2025-08-11\",\"url\":\"https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"Amazon 의 플릿 조정용 첫 기반 모델 DeepFleet 소개. 100만 대 로봇 운영, 네 모델 구조, 효율 10% 개선(벤더 주장)을 서술한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-906\",\"org\":\"Agaskar, A. 외 (Amazon Robotics)\",\"title\":\"DeepFleet: Multi-Agent Foundation Models for Mobile Robots\",\"published\":\"2025-08-12\",\"url\":\"https://arxiv.org/abs/2508.08574\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"대규모 이동로봇 플릿 조정·계획용 기반 모델 모음. 네 구조를 비교해 로봇 중심·그래프–바닥 모델의 우수성과 데이터 규모 확장성을 보고한 프리프린트(최신판 2026-04-13).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-907\",\"org\":\"헬로티(HelloT)\",\"title\":\"[헬로티 HelloT] 클로봇, 인천공항에 로봇 통합 관제 시스템 수놓는다\",\"published\":\"2024-10-12\",\"url\":\"https://www.hellot.net/news/article.html?no=94331\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-29\",\"summary\":\"클로봇이 LG CNS 컨소시엄과 인천국제공항 다기종 로봇·5G 디지털 트윈 관제 구축 사업을 수주하고 이기종 통합관제 솔루션 크롬스를 적용한다는 국내 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-908\",\"org\":\"Karam, R., Nguyen, A. A., Lin, R., Martin, D. R., Morales, D., Butler, B. A., & Egerstedt, M.\",\"title\":\"Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration\",\"published\":\"2026-03-25\",\"url\":\"https://arxiv.org/abs/2603.23898\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"다중 로봇 연구의 협력·조정·협업 용어 혼용을 지적하고 정의를 제안한 뒤 협업 프레임워크와 과제를 검토한 서베이 프리프린트.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-909\",\"org\":\"Li, P., An, Z., Abrar, S., & Zhou, L.\",\"title\":\"Large Language Models for Multi-Robot Systems: A Survey\",\"published\":\"2025-02-06\",\"url\":\"https://arxiv.org/abs/2502.03814\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"언어 모델의 다중 로봇 적용을 네 수준으로 정리하고 수학 추론·환각·지연·벤치마크 부족을 한계로 든 서베이 프리프린트(최신판 v5, 2026-05-03).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-910\",\"org\":\"Open Robotics (Programming Multiple Robots with ROS 2)\",\"title\":\"Introduction - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/intro.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"Open-RMF 의 기원(싱가포르 정부·보건부·국가로봇프로그램 지원), 목적(이기종 플릿 상호운용, 단일 공급업체 위험 회피), 대상 현장 유형을 설명하는 공식 mdBook 서문.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/intro.md\"},{\"id\":\"ref-004\",\"org\":\"Open Robotics\",\"title\":\"RMF Core Overview — Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/rmf-core.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md\"},{\"id\":\"ref-911\",\"org\":\"FreightWaves\",\"title\":\"Report: Interact Analysis cuts robot market growth forecast by $800M\",\"published\":null,\"url\":\"https://www.freightwaves.com/news/report-interact-analysis-cuts-robot-market-growth-forecast-by-800m\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-29\",\"summary\":\"Interact Analysis 의 2025년 이동로봇 시장 전망 하향(8억 달러 삭감, CAGR 26%→21%, 2030년 156억 달러, AGV·대형 AMR 출하 하향)을 보도한 물류 전문지 기사. 원 보고서는 열지 않았다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-912\",\"org\":\"한국로봇산업협회 연구진 (표준인증안전학회지 15(2))\",\"title\":\"로봇 분야 표준화 동향 및 한국의 국제표준화 전략(2024-2028 로드맵)\",\"published\":\"2025\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003212865\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"ISO·IEC·IEEE·OMG 의 로봇 표준화 동향과 KS·KOROS 국내 활동을 분석하고 2024~2028 국제표준화 로드맵 권고를 제시한 국내 논문(KCI 초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-913\",\"org\":\"Interact Analysis\",\"title\":\"AMR Multi-Fleet Orchestration Software Explained\",\"published\":null,\"url\":\"https://interactanalysis.com/insight/amr-multi-fleet-orchestration-software/\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"원문 미열람. 다중 플릿 오케스트레이션(제3자 플릿 관리) 소프트웨어 부문이 2021~2027년 연평균 138% 성장할 것으로 전망하고 WCS 부문의 발전을 따라왔다고 설명하는 시장조사 업체 해설 페이지(검색 결과 요약으로만 확인).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/planning-and-business/technology-market-and-vendor-trends.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f10(이동·물류 로봇이 최대 응용이자 성장 부문), f22(흐름을 바꾸는 네 요소 — 추정), f9(전망 하향으로 동향 추적의 기준일 관리 필요) / 섹션 4: f1(서비스형 로봇 RaaS), f3(설치 대수·운영 대수), f4·f6(휴머노이드), f14·f16(다중 에이전트 기반 모델), f11(다중 플릿 오케스트레이션) / 섹션 5: 물류창고 — f14·f16(Amazon 100만 대 플릿과 DeepFleet, 벤더 주장 f15 는 '벤더 주장' 병기), 기타 — f20(인천공항 다기종 로봇 관제 사업, 기사 단계·규모 미확인 명시), 다른 현장 유형(제조 공장·병원·상업 시설·가정·실외)의 동향 사례는 f12 의 현장 열거 외에 확인되지 않음을 서술 / 섹션 6: 공식 통계 f1·f2·f3, 시장조사 전망 f9·f11, 정부 전략 f5·f7, 오픈소스 프레임워크 f12·f13, 연구 서베이 f17·f18·f19(교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영 함께 연결) / 섹션 7: f12·f13(Open-RMF), f21(KS·KOROS·ISO/IEC 로드맵), f3(IFR 통계 체계) / 섹션 8: f1, f3, f4, f8(국내 실태조사), f16, f17, f19, f21 / 섹션 9: f23(직접 범위: 지형 정리와 등록·능력·조달 연결), f24(연계 대상: 시장 전망 산출·로봇 기술 개발) / 섹션 10: f25 — 2. 사용 사례·요구·책임 범위, 3. 경제성·조달·사업 모델, 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영, 61. 물류창고, 67. 기타 현장 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 3. 경제성·조달·사업 모델 페이지에 f1(RaaS +31%)·f9 반영, 47. AI·학습·적응과 모델 운영 페이지에 f16·f18 반영, 21. 상호운용 표준·적합성 페이지에 f21 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"서비스형 로봇\",\"term_en\":\"Robot-as-a-Service (RaaS)\",\"definition\":\"로봇을 일시불로 구매하지 않고 구독·임대 계약으로 도입해 사용량이나 기간에 따라 비용을 내는 사업 모델로, IFR 은 2024년 이 방식의 플릿이 31% 늘었다고 집계했다.\"},{\"term_ko\":\"휴머노이드 로봇\",\"term_en\":\"Humanoid Robot\",\"definition\":\"사람과 비슷한 몸 형태(두 다리·두 팔 등)로 사람이 쓰는 공간과 도구를 그대로 쓰도록 만든 로봇으로, 2025년 업계 단체와 각국 정부가 차세대 투자 대상으로 다루지만 대중적 채택 시기는 불확실하다.\"},{\"term_ko\":\"운영 대수\",\"term_en\":\"Operational Stock\",\"definition\":\"IFR 통계에서 특정 시점에 실제 가동 중인 것으로 추정되는 로봇의 누적 대수로, 그해 새로 설치된 대수(installations)와 구분된다.\"},{\"term_ko\":\"다중 에이전트 기반 모델\",\"term_en\":\"Multi-Agent Foundation Model\",\"definition\":\"많은 로봇의 이동·상호작용 데이터로 사전학습해 플릿의 미래 상태를 예측하고 조정·계획 작업에 재사용하는 대규모 학습 모델로, Amazon 의 DeepFleet 이 대표 사례다.\"}],\"open_questions_new\":[\"국내 이기종 로봇 통합관제 제품(크롬스 등)이 실제로 연동한 로봇 제조사 수와 운영 규모를 공개 자료로 확인할 수 있는가? | 관련 영역: 1. 기술·시장·업체 동향, 20. 로봇·제조사 관제 연동 | 근거: f20 | 종류: 일반\",\"Interact Analysis 의 다중 플릿 오케스트레이션 소프트웨어 138% 성장 전망은 어떤 제품 범위와 기준 연도로 정의되며, 독립 조사 기관의 수치와 일치하는가? | 관련 영역: 1. 기술·시장·업체 동향, 3. 경제성·조달·사업 모델 | 근거: f11 | 종류: 일반\",\"모바일 매니퓰레이터·사족 보행 로봇의 출하량과 도입 추세를 IFR 급 공식 통계나 동료심사 문헌으로 확인할 수 있는가(이번 조사에서는 시장조사 업체 요약만 확인됨)? | 관련 영역: 1. 기술·시장·업체 동향, 5. 로봇 능력·작업 표현 | 근거: f22 | 종류: 일반\",\"산업통상자원부가 인용한 휴머노이드 시장 전망(2025년 15억 달러에서 2035년 380억 달러)의 원 출처는 무엇이며, IFR 위치 논문의 전망과 어떻게 비교되는가? | 관련 영역: 1. 기술·시장·업체 동향 | 근거: f5 | 종류: 일반\",\"한국로봇산업진흥원 로봇산업 실태조사(2024년 기준) 원 보고서에서 전문 서비스 로봇 가운데 물류·이송 로봇의 매출·대수 비중을 확인할 수 있는가? | 관련 영역: 1. 기술·시장·업체 동향, 61. 물류창고 | 근거: f8 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":16,\"cross_checked_count\":3,\"unverified\":[\"f8 국내 로봇산업 실태조사는 한국로봇산업진흥원 원 보고서를 열지 못해 로봇신문 요약 기사로만 확인(ZDNet 2025-12-29 기사도 같은 수치를 보도했으나 같은 보도자료의 기사화라 독립 출처로 세지 않고 출처에 넣지 않음), 기사 발행일 미확인\",\"f9 Interact Analysis 원 보고서와 해설 페이지는 열람 차단(빈 응답)으로 FreightWaves 기사 요약만 반영, 기사 발행일 미확인\",\"f11 ref-913 원문 미열람 — 138% 수치의 기준 연도·정의는 검색 요약 범위를 넘지 않게 적음\",\"f5 휴머노이드 시장 전망(15억→380억 달러)의 원 출처 미기재\",\"f7 제4차 지능형 로봇 기본계획 첨부 PDF 본문 미열람 — 세부 목표 수치(보급 대수·수출 등)는 claim 에 넣지 않음\",\"f4 IFR 휴머노이드 위치 논문 본문 미열람(보도자료만), 2025년 휴머노이드 출하 7,000대 같은 검색 요약 수치는 원문 확인이 안 되어 넣지 않음\",\"f13 ref-004 재사용 항목의 org·title·reliability·summary 는 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 있어 agents/researcher.md 11.9 예시 값을 따랐음 — 퍼블리셔가 실제 목록 값과 대조 필요\",\"f20 인천공항 사업의 연동 로봇 제조사 수·대수·계약 규모·현재 운영 결과 미확인(2024-10 기사)\",\"DiVA 학위논문(VDA 5050 이기종 플릿 통합)은 두 번 모두 ECONNRESET, MDPI Applied Sciences 15(13):7235 다중 브랜드 플릿 사례·ResearchGate 'A Review of Robot Fleet Management'(2025-07)·ScienceDirect Fragapane 외 AMR 계획·제어 문헌 리뷰는 403 으로 열지 못해 출처에 넣지 않음\",\"korea.kr 'K-휴머노이드 연합 순항중' 보도자료(2025-05-01)는 본문이 표시되지 않아 KDI 전재 자료로 대체\",\"모바일 매니퓰레이터·사족 보행 로봇 동향은 시장조사 업체 요약(방법론 미공개)만 검색되어 finding 으로 내지 않음\",\"f6·f10·f18 외 모든 finding 교차 확인 실패(통계·문서마다 발행 주체 한 곳)\"],\"scope_violations\":[\"f24: 시장 규모·수요 전망 산출과 로봇 기구·제어 기술 개발은 분류 원문 19장의 상위 업무 시스템(수요예측·재무)과 로봇 자체 지능·제어 쪽이므로 '연계 대상: '으로 표시함\",\"f9·f11: 시장 규모·성장률 수치는 3. 경제성·조달·사업 모델과 겹치므로 이 영역에서는 제품·업체 지형의 변화 신호로만 제안하고 투자 판단 근거로 쓰지 않도록 함\",\"f15: Amazon 의 효율 10% 개선은 벤더 주장이며 vendor_claim true·추정으로 둠\",\"f16·f17·f18: 학습 기반·언어 모델 기반 조정은 L. AI·학습 기술의 방법이므로 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f25)\",\"f5·f7: 정부 투자 계획은 P. 거버넌스·법규·사회와 겹칠 수 있으나 이 영역에서는 국내 로봇 종류·업체 지형을 바꾸는 정책 신호로만 제안함\"],\"budget_used\":{\"queries\":17,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-899~ref-913, 예약 구간 ref-899~ref-928 안) 상한 도달로 ZDNet 실태조사 기사, AI타임스·이데일리 K-휴머노이드 기사, Robotics 24/7 Open-RMF 기사(2021), SYNAOS 벤더 블로그(VDA 5050·MassRobotics·Open-RMF 비교), MarketsandMarkets 등 시장조사 업체 페이지(방법론 미공개)는 넣지 않았다. 원문 열람 15건(github_raw 2: Open-RMF intro.md·rmf-core.md, webfetch 13: IFR 보도자료 3건, KDI 전재 정부 자료 2건, 로봇신문·헬로티·FreightWaves 기사, Amazon Science, arXiv 초록 3건, KCI 초록), 미열람 1건(ref-913 Interact Analysis 해설 — 열람 차단으로 검색 요약만 사용). 재사용 1건(ref-004, 이번 실행에서 raw 원문을 다시 열어 fetched true). 교차 확인 3건(f6: IFR/산업통상자원부, f10: IFR/Interact Analysis 보도, f18: Amazon Robotics/Drexel 계열 연구진). 신뢰도 high 없음(교차 확인된 finding 의 출처가 모두 medium 이하). 분류 원문 핵심 질문(어떤 연구·제품·업체가 흐름을 바꾸는가)에는 통계(f1~f3·f8), 제품·프레임워크(f11~f13·f20), 연구(f16~f19), 정책·로봇 형태(f4~f7)로 답했고 결론은 '이동·물류 로봇 중심의 성장, 이기종 상호운용 플랫폼 부문의 급성장 전망, 초대형 플릿의 학습 기반 조정, 휴머노이드 투자 확대가 흐름을 바꾸는 요소로 보이나 실제 배치가 공식 통계로 확인되는 것은 이동·물류 로봇뿐'이라는 추정(f22)이다. 현장 유형: 물류창고(f14·f16 Amazon), 기타(f20 인천공항)만 확인했고 제조 공장·병원·상업 시설·가정·실외의 동향 사례는 f12 의 현장 열거 외에 없다. 국내 자료는 로봇신문 실태조사 요약(f8), 정부 자료 2건(f5·f7), KCI 표준화 논문(f21), 클로봇 기사(f20) 다섯 건이다. 벤더 문서 1건(ref-905)의 성능 주장은 f15 로 분리해 벤더 주장으로 표시했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 용어집에 이미 있는 다중 플릿 오케스트레이션·플릿 관리 시스템·모바일 매니퓰레이터·기술 성숙도·플릿 어댑터·플릿 제어 수준·LLM 에이전트는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 이 영역에 걸린 열린 질문 없음. 이전 브리프(2026-09-25-13·2026-09-25-08)는 개정 전 옛 1번 영역 '주문·업무 시스템 연계'를 다룬 것이라 이번 영역과 겹치지 않아 재인용하지 않았다. 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 898건과의 URL 중복을 대조하지 못했으므로 IFR 보도자료·Open-RMF intro·arXiv 2502.03814 등은 퍼블리셔가 기존 id 로 합칠 수 있다.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-10",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 1,
+      "area_name": "1. 기술·시장·업체 동향",
+      "category": "A. 기획·사업"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 서비스형 로봇(RaaS)·휴머노이드 로봇·운영 대수·피지컬 AI·다중 에이전트 기반 모델 용어 없음(다중 플릿 오케스트레이션·플릿 관리 시스템·모바일 매니퓰레이터·기술 성숙도는 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 공식 통계(IFR·국내 실태조사)·시장조사 보고서·오픈소스 프레임워크 동향·연구 서베이·정부 전략 문서를 동향 추적 수단으로 구분한 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — Open-RMF, 국내 로봇 표준화 로드맵(KS·KOROS), IFR 통계 체계 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 2. 사용 사례·요구·책임 범위, 3. 경제성·조달·사업 모델, 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영, Q. 현장 유형별 적용 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 없음, 정정 요청 없음",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "어떤 연구·제품·업체가 로봇 오케스트레이션의 흐름을 바꾸고 있는가? [분류원문]",
+      "오케스트레이션 대상 로봇(산업용·전문 서비스·이동·물류·휴머노이드)의 세계 판매·운영 규모와 성장 부문은 공식 통계(IFR)에서 어떻게 나타나는가? (섹션 3·6·8 겨냥)",
+      "국내 로봇산업의 매출·사업체·분야별 구성과 정부 전략(제4차 지능형 로봇 기본계획, K-휴머노이드 연합)은 무엇을 말하는가? (섹션 5·8 겨냥, 한국 자료 우선)",
+      "다중 제조사 로봇을 묶는 오케스트레이션·관제 제품과 오픈소스 프레임워크(Open-RMF, 국내 이기종 통합관제 솔루션)의 지형과 시장 성장 전망은 어떠한가? (섹션 6·7 겨냥)",
+      "학습 기반·언어 모델 기반 다중 로봇 조정(DeepFleet 등)과 다중 로봇 협업 서베이가 보여 주는 연구 동향은 무엇인가? (섹션 6·8 겨냥, 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영과 연결)",
+      "휴머노이드·모바일 매니퓰레이터·사족 보행 로봇 같은 새 로봇 형태의 도입 추세는 어디까지 확인되는가? (섹션 4·6 겨냥)",
+      "기술·시장·업체 동향 조사에서 ROP가 직접 맡을 것(지형 정보의 등록·능력 표현·조달 판단 연결)과 외부(시장조사·수요예측·로봇 자체 기술)에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "국제로봇연맹(IFR)의 World Robotics 2025 서비스 로봇 통계(2025-10-07 발표)에 따르면 2024년 전문용 서비스 로봇 판매는 약 20만 대(전년 대비 9% 증가)이고, 그중 운송·물류 응용이 102,900대(14% 증가)로 가장 크며, 로봇 구매 대신 구독·임대를 택하는 서비스형 로봇(RaaS) 플릿이 31% 늘었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-899"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR 보도자료(Frankfurt, 2025-10-07): 전문 서비스 로봇 약 200,000대(+9%), 운송·물류 102,900대(+14%), RaaS 플릿 +31%. 원문 구절: \"더 많은 기업들이 로봇을 직접 구매하기보다는 구독 또는 임차 계약을 선택하고 있습니다\"(열람 도구 번역).",
+        "as_of": "2025-10-07",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "같은 IFR 2025 서비스 로봇 통계에서 의료 로봇은 약 16,700대로 91% 늘었고 접객(hospitality) 로봇은 42,000대 이상으로 11% 줄어, 응용 분야별로 성장 방향이 갈린다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-899"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR 보도자료: 의료 로봇 약 16,700대(+91%), 그중 재활·비침습 치료 +106%, 수술 +41%; 접객 로봇 42,000대 이상(-11%); 소비자용 서비스 로봇 약 2,000만 대(+11%).",
+        "as_of": "2025-10-07",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "IFR World Robotics 2025 산업용 로봇 통계(2025-09-25 발표)에 따르면 2024년 세계 산업용 로봇 설치는 542,000대, 운영 대수는 4,664,000대(9% 증가)이며 아시아가 신규 설치의 74%를 차지하고 중국이 295,000대(54%), 한국은 30,600대로 세계 4위 시장이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-900"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR 보도자료(2025-09-25): 설치 542,000대, 운영 4,664,000대(+9%), 아시아 74%·유럽 16%·미주 9%, 중국 295,000대(54%), 한국 30,600대 4위. 2025년 약 575,000대, 2028년 700,000대 초과 전망.",
+        "as_of": "2025-09-25",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "IFR 위치 논문 'Humanoid Robots – Vision and Reality'(2025-08-14 발표)는 휴머노이드에 대한 지역별 시각을 미국(물류·제조 생산성), 중국(대량 생산 목표·서비스 부문), 일본(교육·노인 돌봄의 사회적 동반자), 유럽(산업 협업·윤리 중심)으로 구분하고, 휴머노이드가 기존 로봇을 대체하지 않고 보완·확장할 것이며 대중적 채택 시기는 불확실하다고 본다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-901"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR 보도자료(Frankfurt, 2025-08-14): 중국은 휴머노이드 대량 생산 목표 설정, 미·유럽 기술 기업 대규모 투자 발표. IFR 회장 인용: \"휴머노이드는 기존 로봇을 대체하지 않을 것이며, 대신 보완하고 확장할 것\"(열람 도구 번역).",
+        "as_of": "2025-08-14",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "산업통상자원부는 2025년 4월 10일 기업·대학·단체 약 40곳이 참여하는 K-휴머노이드 연합을 출범시키고 2030년까지 정부 연구개발과 민간 투자를 합쳐 1조원 이상이 투입될 것으로 기대한다고 밝혔으며, 장관은 휴머노이드 시장이 2025년 15억 달러에서 2035년 380억 달러로 25배 성장할 것으로 전망했다(전망 수치의 원 출처는 자료에 없음).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-904"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KDI 경제정보센터 전재 산업통상자원부 자료(2025-04-11): 약 40개 기업·대학·단체 협약, 2030년까지 1조원 이상 투자 기대, 시장 15억 달러(2025)→380억 달러(2035). 미션: 로봇 AI 공용 모델, 휴머노이드 핵심기술, AI 반도체·배터리, 스타트업·인력, 공급–수요 협력.",
+        "as_of": "2025-04-11",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f6",
+        "claim": "서로 다른 두 발행 주체(국제 업계 단체인 IFR 과 한국 산업통상자원부)가 2025년에 각각 휴머노이드를 차세대 투자·정책 대상으로 다루는 문서를 내어, 휴머노이드가 오케스트레이션 대상 로봇 종류의 지형에 새로 들어오고 있음이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-901",
+          "ref-904"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR 위치 논문(2025-08-14)은 미·중·유럽의 대규모 투자와 대량 생산 목표를, 산업통상자원부 자료(2025-04-11)는 K-휴머노이드 연합과 1조원 투자 기대를 각각 서술한다. 두 출처 모두 실제 배치 규모는 밝히지 않는다.",
+        "as_of": "2025-08-14",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "산업통상자원부는 2024년 1월 16일 로봇산업정책심의회를 거쳐 2023년 12월의 '첨단로봇 산업 비전과 전략'을 이행하는 제4차 지능형 로봇 기본계획(2024~2028)을 확정했으며, 2030년까지 민관 합동 3조원 이상 투자를 목표로 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-903"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KDI 경제정보센터 자료(산업통상자원부 제조산업정책과, 2024-01-16, 28쪽 첨부): 2024~2028 5개년 계획, 2030년까지 민관 합동 3조원 이상 투자, 'K-로봇 경제' 실현. 첨부 PDF 본문은 열지 않았다.",
+        "as_of": "2024-01-16",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "한국로봇산업진흥원 로봇산업 실태조사(2024년 기준) 결과를 요약한 로봇신문 기사에 따르면 국내 로봇산업 매출은 6조1,695억원(3.2% 증가)으로 처음 6조원을 넘었고, 제조업용 로봇 3조1,075억원(50.4%), 부품·소프트웨어 1조9,800억원(32.1%), 전문 서비스 로봇 6,420억원(10.4%), 개인 서비스 로봇 4,380억원(7.1%)이며 사업체 2,509곳·종사자 34,649명이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-902"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "로봇신문 커버스토리: 매출 6조1,695억원(+3.2%), 생산 5조9,447억원(+4.5%), 수출 1조2,600억원(+0.8%), 수입 6,890억원(+5.1%), 중소기업 2,458곳(98.0%), 연구개발 수행 기업 17.1%. 실태조사 원문(한국로봇산업진흥원)은 열지 않았다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "시장조사 업체 Interact Analysis 는 2025년 5월 이동로봇 시장 보고서에서 관세와 경제 불확실성을 이유로 2025년 전망을 8억 달러 낮추고 향후 5년 연평균 성장률을 26%에서 21%로, 2030년 매출 전망을 156억 달러로 조정했으며, AGV 출하 성장률은 6%에서 4%로, 대형 AMR 출하는 15~20% 줄여 잡았다고 FreightWaves 가 보도했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-911"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "FreightWaves 기사: 전망 8억 달러 삭감, CAGR 26%→21%, 2030년 156억 달러, AGV 출하 성장 6%→4%, 대형 AMR 출하 15~20% 감소, 경제정책 불확실성 지수 430(2025-01). Interact Analysis 원 보고서·해설 페이지는 열람 차단으로 열지 못했다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "서로 다른 두 발행 주체(IFR 공식 통계, 시장조사 업체 Interact Analysis 의 보도된 전망)가 각각 운송·물류용 이동로봇을 전문 서비스 로봇 가운데 가장 큰 응용이자 성장이 이어지는 부문으로 서술해, 이동·물류 로봇이 오케스트레이션 대상의 중심 로봇 종류임이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-899",
+          "ref-911"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "IFR: 운송·물류 102,900대(+14%)로 최대 응용. Interact Analysis(FreightWaves 보도): 전망 하향에도 이동로봇 시장 CAGR 21%. 두 출처의 집계 단위(대수 vs 매출)가 달라 수치 자체는 비교할 수 없다.",
+        "as_of": "2025-10-07",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "Interact Analysis 의 해설 자료는 여러 제조사의 AMR 플릿을 한 플랫폼에서 관리하는 다중 플릿 오케스트레이션 소프트웨어(제3자 플릿 관리 솔루션)가 2021~2027년 연평균 138% 성장할 것으로 전망하고 이 부문이 창고 제어 소프트웨어(WCS) 부문의 발전을 대체로 따라왔다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-913"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 결과 요약: 다중 플릿 오케스트레이션 플랫폼 CAGR 138%(2021~2027 전망), '제3자 플릿 관리 솔루션'으로도 불리며 WCS 부문의 발전을 대체로 따라옴. 원문 페이지는 열람 차단으로 열지 못해 요약 범위만 반영했다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f12",
+        "claim": "Open-RMF 공식 문서(Programming Multiple Robots with ROS 2 서문)는 RMF 가 싱가포르 정부(보건부·국가로봇프로그램)의 지원으로 시작되었고, 단일 공급업체 의존 위험과 중복 통합 비용을 피하기 위해 이기종 로봇 플릿의 상호운용을 가능하게 하는 라이브러리·도구 모음이며, 쇼핑몰·주택단지·대학·직장·공항·병원·호텔 같은 대형 건물에서 배송·청소 로봇이 승강기·복도·문을 함께 쓰는 상황을 다룬다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-910"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "intro.md 원문(열람 도구 번역): \"이질적 로봇 플릿의 상호운용성을 가능하게 하는 재사용 가능하고 확장 가능한 라이브러리와 도구 모음\", 단일 공급업체 운영 위험·중복 통합 비용 회피, 싱가포르 MOH·NRP 지원, 배포 현장으로 쇼핑몰·주택단지·대학·직장·공항·병원·호텔 열거. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f13",
+        "claim": "Open-RMF 핵심 개요 문서는 RMF 를 로봇 시스템·건물 기반시설·사용자 인터페이스의 통합을 위한 개방형 명세와 소프트웨어 도구로 정의하고, 플릿 어댑터가 문 열기·승강기 호출·디스펜서 같은 표준 기반시설 인터페이스와의 통신을 맡으며 모든 플릿 관리자가 예상 경로를 교통 일정 데이터베이스에 보고하고, 로봇 통합 수준을 Full Control·Traffic Light·Read Only 세 범주로 나눈다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "rmf-core.md 원문(열람 도구 번역): \"로봇 시스템, 건물 기반시설, 사용자 인터페이스의 통합과 상호운용성을 용이하게 하는 개방형 명세와 소프트웨어 도구\"; 플릿 어댑터의 문·승강기·디스펜서 인터페이스 담당; Traffic Schedule Database 와 협상; Full Control / Traffic Light / Read Only. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Amazon 은 2025년 8월 11일 Amazon Science 글에서 풀필먼트·분류 센터의 이동로봇 플릿 조정을 위한 첫 기반 모델 DeepFleet 을 발표하며 운영 중인 로봇이 100만 대이고 모델이 로봇 중심·로봇–바닥·이미지–바닥·그래프–바닥의 네 구조를 탐색했다고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-905"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Amazon Science(Joey Durham, 2025-08-11): 첫 기반 모델 DeepFleet, 100만 대 로봇 운영, 네 모델(Robot-Centric, Robot-Floor, Image-Floor, Graph-Floor), 수백만 시간의 운영 데이터로 학습, 위치 예측 사전학습.",
+        "as_of": "2025-08-11",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f15",
+        "claim": "Amazon 은 DeepFleet 이 작업 배정과 혼잡 경로 조정을 통해 로봇 배치 효율을 10% 높인다고 주장하지만 독립 출처로는 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-905"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: Amazon Science 글의 \"10% increase in efficiency of robot deployments\". 측정 조건·기간은 글에 없으며 독립 출처 확인 없음.",
+        "as_of": "2025-08-11",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f16",
+        "claim": "Agaskar 외 Amazon Robotics 연구진 21명의 arXiv 논문 DeepFleet(2025-08-12 제출, 2026-04-13 개정)은 수십만 대 로봇의 창고 이동 데이터로 학습한 대규모 이동로봇 플릿 조정·계획용 기반 모델 모음을 제시하고, 로봇 중심 모델과 그래프–바닥 모델이 비동기 로봇 갱신과 국소 상호작용 구조를 쓸 때 우수하며 데이터가 늘수록 성능이 향상된다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-906"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2508.08574 초록: \"DeepFleet, a suite of foundation models designed to support coordination and planning for large-scale mobile robot fleets\"; 네 구조 RC·RF·IF·GF; RC 와 GF 가 우수, 데이터 규모에 따라 확장. 분류 cs.RO·cs.MA.",
+        "as_of": "2026-04-13",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f17",
+        "claim": "Li·An·Abrar·Zhou 의 서베이 'Large Language Models for Multi-Robot Systems'(2025-02-06 제출, 2026-05-03 v5)는 언어 모델의 다중 로봇 적용을 상위 작업 배정·중간 동작 계획·하위 행동 생성·사람 개입의 네 수준으로 정리하고 수학적 추론 부족·환각·지연·실환경 벤치마크 부족을 한계로 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-909"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2502.03814 초록: LLM 이 \"enhanced communication, task allocation and planning, and human-robot interaction\" 을 가능하게 함; 네 수준 분류; 응용 도메인 가정·건설·편대 제어·표적 추적; 한계로 수학 추론, 환각, 지연, 벤치마크 부족.",
+        "as_of": "2026-05-03",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "서로 다른 두 발행 주체(Amazon Robotics 의 DeepFleet 논문, Drexel 대학교 계열 연구진의 언어 모델 다중 로봇 서베이)가 각각 학습 기반 모델을 다중 로봇 조정·배정에 적용하는 흐름을 보고해, 대규모 플릿 조정에 기반 모델·언어 모델을 쓰는 연구 동향이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-906",
+          "ref-909"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "DeepFleet 은 수십만 대 로봇 이동 데이터로 학습한 조정·계획 기반 모델을, LLM 서베이는 작업 배정·계획·상호작용에 언어 모델을 쓰는 연구를 정리한다. 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영에도 연결한다.",
+        "as_of": "2026-05-03",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "Karam 외(Egerstedt 연구진)의 서베이 'Collaboration in Multi-Robot Systems'(2026-03-25 제출)는 다중 로봇 연구에서 협력(cooperation)·조정(coordination)·협업(collaboration)이 구분 없이 혼용된다고 지적하고 세 개념의 정의를 제안한 뒤 협업 구현 프레임워크를 검토하고 기술 과제를 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-908"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2603.23898 초록: \"cooperation, coordination, and collaboration are often treated interchangeably, without clearly articulating the differences among them\"; 정의 제안, 프레임워크 검토, 과제·향후 연구 정리. 분류 eess.SY.",
+        "as_of": "2026-03-25",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "2024년 10월 기사에 따르면 클로봇은 LG CNS 컨소시엄과 함께 인천국제공항공사의 '다기종 로봇 제작 및 5G 디지털 트윈 관제 구축 사업'을 수주해 안내·보안·도슨트 로봇용 AI 서비스와 디지털 트윈 관제를 맡고, 클라우드 기반 다중로봇제어시스템으로 소개된 이기종 통합관제 솔루션 크롬스를 국립중앙박물관·국립현대미술관에서 이미 운영 중이라고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-907"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "헬로티 기사(2024-10-12): 인천국제공항공사 '다기종 로봇 제작 및 5G 디지털 트윈 관제 구축 사업', 클로봇은 AI 서비스·디지털 트윈 관제, LG CNS 는 로봇·인프라·5G 특화망; 크롬스는 클라우드 기반 다중로봇제어시스템(FMS). 연동 로봇 제조사 수·대수·계약 규모는 기사에 없다.",
+        "as_of": "2024-10-12",
+        "site_type": "기타",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "한국로봇산업협회 연구진 5명이 표준인증안전학회지 15권 2호(2025)에 실은 논문은 ISO·IEC 등 공식 표준화 기구와 IEEE·OMG 등 산업 단체의 로봇 표준화 동향, 한국산업표준(KS)과 한국로봇표준포럼(KOROS)의 국내 활동을 분석하고 2024~2028 국제표준화 로드맵으로 경쟁 기술 분야 집중·표준 전문 인력·연구–표준 연계·중소기업 참여·해외 규제 대응을 권고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-912"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KCI 초록(표준인증안전학회지 15(2), 2025): ISO·IEC·IEEE·OMG 표준화 활동, KS·KOROS 분석, 권고 5항목. 원문 구절(열람 도구 번역): \"로봇 기술은 AI·5G·IoT 와의 융합을 통해 산업 혁신을 빠르게 이끌며 국제표준화의 중요성이 커지고 있다\".",
+        "as_of": "2025",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "확인한 자료를 종합하면 로봇 오케스트레이션의 흐름을 바꾸는 요소는 (1) 이기종 로봇 상호운용을 목표로 한 오픈소스 프레임워크와 다중 플릿 오케스트레이션 소프트웨어 부문의 급성장, (2) 100만 대 규모 플릿에 학습 기반 조정 모델을 적용하는 초대형 운영사, (3) 휴머노이드 같은 새 로봇 형태에 대한 정부·업계 투자, (4) 구독형(RaaS) 도입 확대로 보이며, 이 가운데 실제 배치 규모가 공식 통계로 확인되는 것은 이동·물류 로봇뿐이다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-910",
+          "ref-913",
+          "ref-906",
+          "ref-901",
+          "ref-899"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f12(Open-RMF 상호운용 목적), f11(다중 플릿 오케스트레이션 138% 전망), f14·f16(DeepFleet), f4·f6(휴머노이드 투자), f1(RaaS +31%)을 종합한 판단. 모바일 매니퓰레이터·사족 보행 로봇의 공식 통계는 이번 조사에서 확인하지 못했다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "확인한 자료를 종합하면 1. 기술·시장·업체 동향에서 ROP가 직접 맡을 범위는 오케스트레이션·관제 제품, 로봇 제조사, 통합 사업자, 로봇 종류·형태의 지형을 기준일과 출처를 붙여 정리하고 그 결과를 4. 이기종 로봇 등록의 등록 대상 목록, 5. 로봇 능력·작업 표현의 능력 어휘, 3. 경제성·조달·사업 모델의 후보 선정에 넘기는 일이며, 통계 자체의 생산은 IFR·한국로봇산업진흥원 같은 외부 기관에 기댄다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-899",
+          "ref-902",
+          "ref-912"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "IFR 통계(f1·f3)와 국내 실태조사(f8)는 외부 기관이 생산하고, 표준화 로드맵(f21)은 협회가 정리한다. ROP 쪽에 남는 일은 이를 등록·능력·조달 판단의 입력으로 연결하는 것이라는 판단이며 출처가 직접 말한 경계는 아니다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "연계 대상: 시장 규모·수요 전망과 투자 판단(수요예측·재무 쪽 상위 업무 영역)과 휴머노이드·이동로봇의 기구·제어 기술 자체(로봇 자체 지능·제어)는 분류 원문 19장의 외부 연계 영역이므로, ROP 는 시장조사 업체·업계 단체의 전망과 제조사의 로봇 형태 정보를 입력으로 받아 지형에 반영하는 데 그치고 전망의 산출과 로봇 기술 개발은 외부에 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-911",
+          "ref-901",
+          "ref-904"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Interact Analysis 전망(f9)·휴머노이드 시장 전망(f5)·IFR 위치 논문(f4)은 모두 외부 기관의 산출물이다. 분류 원문 19장의 '상위 업무 시스템(수요예측·재무)'과 '로봇 자체 지능·제어' 경계를 적용한 판단.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "이 영역은 로봇에게 맡길 일을 정하는 2. 사용 사례·요구·책임 범위와 로봇·플랫폼을 고르는 3. 경제성·조달·사업 모델(RaaS 추세 f1)에 지형 정보를 주고, 등록 대상과 능력 어휘의 범위를 정하는 4. 이기종 로봇 등록·5. 로봇 능력·작업 표현, 관제 제품·규격의 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성(f12·f13·f21), 학습 기반 조정 연구의 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영(f16~f18), 현장별 도입 현황의 61. 물류창고(f14)·67. 기타 현장(f20)에 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-899",
+          "ref-910",
+          "ref-912",
+          "ref-909",
+          "ref-905",
+          "ref-907"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1(RaaS), f12·f13(Open-RMF), f21(표준화 로드맵), f16~f18(학습 기반 조정), f14(Amazon 물류창고), f20(인천공항) 근거를 영역별로 대응한 연결 제안.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-899",
+        "org": "International Federation of Robotics (IFR)",
+        "title": "World Robotics 2025 report – SERVICE ROBOTS – released by IFR",
+        "published": "2025-10-07",
+        "url": "https://ifr.org/ifr-press-releases/news/service-robots-see-global-growth-boom",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "2024년 전문 서비스 로봇 판매 약 20만 대(+9%), 운송·물류 102,900대(+14%), RaaS 플릿 +31%, 의료 로봇 +91%, 접객 로봇 -11% 등 IFR 공식 통계 요약 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-900",
+        "org": "International Federation of Robotics (IFR)",
+        "title": "World Robotics 2025 report – INDUSTRIAL ROBOTS – released by IFR",
+        "published": "2025-09-25",
+        "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "2024년 산업용 로봇 설치 542,000대, 운영 4,664,000대, 아시아 74%, 중국 295,000대, 한국 30,600대(4위), 2028년 70만 대 초과 전망을 담은 IFR 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-901",
+        "org": "International Federation of Robotics (IFR)",
+        "title": "Humanoid Robots: “Vision and Reality” Paper Published by IFR",
+        "published": "2025-08-14",
+        "url": "https://ifr.org/ifr-press-releases/news/humanoid-robots-vision-and-reality-paper-published-by-ifr",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "IFR 위치 논문 발표 보도자료. 휴머노이드에 대한 미국·중국·일본·유럽의 시각 차이와 '기존 로봇을 대체하지 않고 보완'한다는 전망을 정리한다. 위치 논문 본문은 열지 않았다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-902",
+        "org": "로봇신문",
+        "title": "[Cover Story] ‘2024년 국내 로봇산업 실태 조사 결과 보고서’ 요약",
+        "published": null,
+        "url": "https://www.irobotnews.com/news/articleView.html?idxno=44544",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-29",
+        "summary": "한국로봇산업진흥원 로봇산업 실태조사(2024년 기준)의 매출 6조1,695억원·분야별 구성·사업체·인력·수출입 수치를 요약한 전문지 기사. 실태조사 원문은 열지 않았다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-903",
+        "org": "산업통상자원부 (KDI 경제교육·정보센터 전재)",
+        "title": "제4차 지능형 로봇 기본계획(2024~2028) 발표",
+        "published": "2024-01-16",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=247119",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "2023년 12월 '첨단로봇 산업 비전과 전략'을 이행하는 5개년 기본계획 발표 자료. 2030년까지 민관 합동 3조원 이상 투자 목표. 첨부 PDF 본문은 열지 않았다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-904",
+        "org": "산업통상자원부 (KDI 경제교육·정보센터 전재)",
+        "title": "K-휴머노이드 연합 출범",
+        "published": "2025-04-11",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=265432",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "약 40개 기업·대학·단체가 참여하는 K-휴머노이드 연합 출범(2025-04-10)과 2030년까지 1조원 이상 투자 기대, 휴머노이드 시장 25배 성장 전망을 담은 정부 자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-905",
+        "org": "Amazon Science (Joey Durham)",
+        "title": "Amazon builds first foundation model for multirobot coordination",
+        "published": "2025-08-11",
+        "url": "https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "Amazon 의 플릿 조정용 첫 기반 모델 DeepFleet 소개. 100만 대 로봇 운영, 네 모델 구조, 효율 10% 개선(벤더 주장)을 서술한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-906",
+        "org": "Agaskar, A. 외 (Amazon Robotics)",
+        "title": "DeepFleet: Multi-Agent Foundation Models for Mobile Robots",
+        "published": "2025-08-12",
+        "url": "https://arxiv.org/abs/2508.08574",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "대규모 이동로봇 플릿 조정·계획용 기반 모델 모음. 네 구조를 비교해 로봇 중심·그래프–바닥 모델의 우수성과 데이터 규모 확장성을 보고한 프리프린트(최신판 2026-04-13).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-907",
+        "org": "헬로티(HelloT)",
+        "title": "[헬로티 HelloT] 클로봇, 인천공항에 로봇 통합 관제 시스템 수놓는다",
+        "published": "2024-10-12",
+        "url": "https://www.hellot.net/news/article.html?no=94331",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-29",
+        "summary": "클로봇이 LG CNS 컨소시엄과 인천국제공항 다기종 로봇·5G 디지털 트윈 관제 구축 사업을 수주하고 이기종 통합관제 솔루션 크롬스를 적용한다는 국내 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-908",
+        "org": "Karam, R., Nguyen, A. A., Lin, R., Martin, D. R., Morales, D., Butler, B. A., & Egerstedt, M.",
+        "title": "Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration",
+        "published": "2026-03-25",
+        "url": "https://arxiv.org/abs/2603.23898",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "다중 로봇 연구의 협력·조정·협업 용어 혼용을 지적하고 정의를 제안한 뒤 협업 프레임워크와 과제를 검토한 서베이 프리프린트.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-909",
+        "org": "Li, P., An, Z., Abrar, S., & Zhou, L.",
+        "title": "Large Language Models for Multi-Robot Systems: A Survey",
+        "published": "2025-02-06",
+        "url": "https://arxiv.org/abs/2502.03814",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "언어 모델의 다중 로봇 적용을 네 수준으로 정리하고 수학 추론·환각·지연·벤치마크 부족을 한계로 든 서베이 프리프린트(최신판 v5, 2026-05-03).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-910",
+        "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+        "title": "Introduction - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/intro.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "Open-RMF 의 기원(싱가포르 정부·보건부·국가로봇프로그램 지원), 목적(이기종 플릿 상호운용, 단일 공급업체 위험 회피), 대상 현장 유형을 설명하는 공식 mdBook 서문.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/intro.md"
+      },
+      {
+        "id": "ref-004",
+        "org": "Open Robotics",
+        "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md"
+      },
+      {
+        "id": "ref-911",
+        "org": "FreightWaves",
+        "title": "Report: Interact Analysis cuts robot market growth forecast by $800M",
+        "published": null,
+        "url": "https://www.freightwaves.com/news/report-interact-analysis-cuts-robot-market-growth-forecast-by-800m",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-29",
+        "summary": "Interact Analysis 의 2025년 이동로봇 시장 전망 하향(8억 달러 삭감, CAGR 26%→21%, 2030년 156억 달러, AGV·대형 AMR 출하 하향)을 보도한 물류 전문지 기사. 원 보고서는 열지 않았다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-912",
+        "org": "한국로봇산업협회 연구진 (표준인증안전학회지 15(2))",
+        "title": "로봇 분야 표준화 동향 및 한국의 국제표준화 전략(2024-2028 로드맵)",
+        "published": "2025",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003212865",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "ISO·IEC·IEEE·OMG 의 로봇 표준화 동향과 KS·KOROS 국내 활동을 분석하고 2024~2028 국제표준화 로드맵 권고를 제시한 국내 논문(KCI 초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-913",
+        "org": "Interact Analysis",
+        "title": "AMR Multi-Fleet Orchestration Software Explained",
+        "published": null,
+        "url": "https://interactanalysis.com/insight/amr-multi-fleet-orchestration-software/",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "원문 미열람. 다중 플릿 오케스트레이션(제3자 플릿 관리) 소프트웨어 부문이 2021~2027년 연평균 138% 성장할 것으로 전망하고 WCS 부문의 발전을 따라왔다고 설명하는 시장조사 업체 해설 페이지(검색 결과 요약으로만 확인).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/planning-and-business/technology-market-and-vendor-trends.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f10(이동·물류 로봇이 최대 응용이자 성장 부문), f22(흐름을 바꾸는 네 요소 — 추정), f9(전망 하향으로 동향 추적의 기준일 관리 필요) / 섹션 4: f1(서비스형 로봇 RaaS), f3(설치 대수·운영 대수), f4·f6(휴머노이드), f14·f16(다중 에이전트 기반 모델), f11(다중 플릿 오케스트레이션) / 섹션 5: 물류창고 — f14·f16(Amazon 100만 대 플릿과 DeepFleet, 벤더 주장 f15 는 '벤더 주장' 병기), 기타 — f20(인천공항 다기종 로봇 관제 사업, 기사 단계·규모 미확인 명시), 다른 현장 유형(제조 공장·병원·상업 시설·가정·실외)의 동향 사례는 f12 의 현장 열거 외에 확인되지 않음을 서술 / 섹션 6: 공식 통계 f1·f2·f3, 시장조사 전망 f9·f11, 정부 전략 f5·f7, 오픈소스 프레임워크 f12·f13, 연구 서베이 f17·f18·f19(교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영 함께 연결) / 섹션 7: f12·f13(Open-RMF), f21(KS·KOROS·ISO/IEC 로드맵), f3(IFR 통계 체계) / 섹션 8: f1, f3, f4, f8(국내 실태조사), f16, f17, f19, f21 / 섹션 9: f23(직접 범위: 지형 정리와 등록·능력·조달 연결), f24(연계 대상: 시장 전망 산출·로봇 기술 개발) / 섹션 10: f25 — 2. 사용 사례·요구·책임 범위, 3. 경제성·조달·사업 모델, 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 44. 로봇 기반 모델·언어 모델 계획, 46. 예측·학습 기반 최적화, 47. AI·학습·적응과 모델 운영, 61. 물류창고, 67. 기타 현장 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 3. 경제성·조달·사업 모델 페이지에 f1(RaaS +31%)·f9 반영, 47. AI·학습·적응과 모델 운영 페이지에 f16·f18 반영, 21. 상호운용 표준·적합성 페이지에 f21 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "서비스형 로봇",
+        "term_en": "Robot-as-a-Service (RaaS)",
+        "definition": "로봇을 일시불로 구매하지 않고 구독·임대 계약으로 도입해 사용량이나 기간에 따라 비용을 내는 사업 모델로, IFR 은 2024년 이 방식의 플릿이 31% 늘었다고 집계했다."
+      },
+      {
+        "term_ko": "휴머노이드 로봇",
+        "term_en": "Humanoid Robot",
+        "definition": "사람과 비슷한 몸 형태(두 다리·두 팔 등)로 사람이 쓰는 공간과 도구를 그대로 쓰도록 만든 로봇으로, 2025년 업계 단체와 각국 정부가 차세대 투자 대상으로 다루지만 대중적 채택 시기는 불확실하다."
+      },
+      {
+        "term_ko": "운영 대수",
+        "term_en": "Operational Stock",
+        "definition": "IFR 통계에서 특정 시점에 실제 가동 중인 것으로 추정되는 로봇의 누적 대수로, 그해 새로 설치된 대수(installations)와 구분된다."
+      },
+      {
+        "term_ko": "다중 에이전트 기반 모델",
+        "term_en": "Multi-Agent Foundation Model",
+        "definition": "많은 로봇의 이동·상호작용 데이터로 사전학습해 플릿의 미래 상태를 예측하고 조정·계획 작업에 재사용하는 대규모 학습 모델로, Amazon 의 DeepFleet 이 대표 사례다."
+      }
+    ],
+    "open_questions_new": [
+      "국내 이기종 로봇 통합관제 제품(크롬스 등)이 실제로 연동한 로봇 제조사 수와 운영 규모를 공개 자료로 확인할 수 있는가? | 관련 영역: 1. 기술·시장·업체 동향, 20. 로봇·제조사 관제 연동 | 근거: f20 | 종류: 일반",
+      "Interact Analysis 의 다중 플릿 오케스트레이션 소프트웨어 138% 성장 전망은 어떤 제품 범위와 기준 연도로 정의되며, 독립 조사 기관의 수치와 일치하는가? | 관련 영역: 1. 기술·시장·업체 동향, 3. 경제성·조달·사업 모델 | 근거: f11 | 종류: 일반",
+      "모바일 매니퓰레이터·사족 보행 로봇의 출하량과 도입 추세를 IFR 급 공식 통계나 동료심사 문헌으로 확인할 수 있는가(이번 조사에서는 시장조사 업체 요약만 확인됨)? | 관련 영역: 1. 기술·시장·업체 동향, 5. 로봇 능력·작업 표현 | 근거: f22 | 종류: 일반",
+      "산업통상자원부가 인용한 휴머노이드 시장 전망(2025년 15억 달러에서 2035년 380억 달러)의 원 출처는 무엇이며, IFR 위치 논문의 전망과 어떻게 비교되는가? | 관련 영역: 1. 기술·시장·업체 동향 | 근거: f5 | 종류: 일반",
+      "한국로봇산업진흥원 로봇산업 실태조사(2024년 기준) 원 보고서에서 전문 서비스 로봇 가운데 물류·이송 로봇의 매출·대수 비중을 확인할 수 있는가? | 관련 영역: 1. 기술·시장·업체 동향, 61. 물류창고 | 근거: f8 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 16,
+      "cross_checked_count": 3,
+      "unverified": [
+        "f8 국내 로봇산업 실태조사는 한국로봇산업진흥원 원 보고서를 열지 못해 로봇신문 요약 기사로만 확인(ZDNet 2025-12-29 기사도 같은 수치를 보도했으나 같은 보도자료의 기사화라 독립 출처로 세지 않고 출처에 넣지 않음), 기사 발행일 미확인",
+        "f9 Interact Analysis 원 보고서와 해설 페이지는 열람 차단(빈 응답)으로 FreightWaves 기사 요약만 반영, 기사 발행일 미확인",
+        "f11 ref-913 원문 미열람 — 138% 수치의 기준 연도·정의는 검색 요약 범위를 넘지 않게 적음",
+        "f5 휴머노이드 시장 전망(15억→380억 달러)의 원 출처 미기재",
+        "f7 제4차 지능형 로봇 기본계획 첨부 PDF 본문 미열람 — 세부 목표 수치(보급 대수·수출 등)는 claim 에 넣지 않음",
+        "f4 IFR 휴머노이드 위치 논문 본문 미열람(보도자료만), 2025년 휴머노이드 출하 7,000대 같은 검색 요약 수치는 원문 확인이 안 되어 넣지 않음",
+        "f13 ref-004 재사용 항목의 org·title·reliability·summary 는 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 있어 agents/researcher.md 11.9 예시 값을 따랐음 — 퍼블리셔가 실제 목록 값과 대조 필요",
+        "f20 인천공항 사업의 연동 로봇 제조사 수·대수·계약 규모·현재 운영 결과 미확인(2024-10 기사)",
+        "DiVA 학위논문(VDA 5050 이기종 플릿 통합)은 두 번 모두 ECONNRESET, MDPI Applied Sciences 15(13):7235 다중 브랜드 플릿 사례·ResearchGate 'A Review of Robot Fleet Management'(2025-07)·ScienceDirect Fragapane 외 AMR 계획·제어 문헌 리뷰는 403 으로 열지 못해 출처에 넣지 않음",
+        "korea.kr 'K-휴머노이드 연합 순항중' 보도자료(2025-05-01)는 본문이 표시되지 않아 KDI 전재 자료로 대체",
+        "모바일 매니퓰레이터·사족 보행 로봇 동향은 시장조사 업체 요약(방법론 미공개)만 검색되어 finding 으로 내지 않음",
+        "f6·f10·f18 외 모든 finding 교차 확인 실패(통계·문서마다 발행 주체 한 곳)"
+      ],
+      "scope_violations": [
+        "f24: 시장 규모·수요 전망 산출과 로봇 기구·제어 기술 개발은 분류 원문 19장의 상위 업무 시스템(수요예측·재무)과 로봇 자체 지능·제어 쪽이므로 '연계 대상: '으로 표시함",
+        "f9·f11: 시장 규모·성장률 수치는 3. 경제성·조달·사업 모델과 겹치므로 이 영역에서는 제품·업체 지형의 변화 신호로만 제안하고 투자 판단 근거로 쓰지 않도록 함",
+        "f15: Amazon 의 효율 10% 개선은 벤더 주장이며 vendor_claim true·추정으로 둠",
+        "f16·f17·f18: 학습 기반·언어 모델 기반 조정은 L. AI·학습 기술의 방법이므로 44. 로봇 기반 모델·언어 모델 계획·46. 예측·학습 기반 최적화·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f25)",
+        "f5·f7: 정부 투자 계획은 P. 거버넌스·법규·사회와 겹칠 수 있으나 이 영역에서는 국내 로봇 종류·업체 지형을 바꾸는 정책 신호로만 제안함"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-899~ref-913, 예약 구간 ref-899~ref-928 안) 상한 도달로 ZDNet 실태조사 기사, AI타임스·이데일리 K-휴머노이드 기사, Robotics 24/7 Open-RMF 기사(2021), SYNAOS 벤더 블로그(VDA 5050·MassRobotics·Open-RMF 비교), MarketsandMarkets 등 시장조사 업체 페이지(방법론 미공개)는 넣지 않았다. 원문 열람 15건(github_raw 2: Open-RMF intro.md·rmf-core.md, webfetch 13: IFR 보도자료 3건, KDI 전재 정부 자료 2건, 로봇신문·헬로티·FreightWaves 기사, Amazon Science, arXiv 초록 3건, KCI 초록), 미열람 1건(ref-913 Interact Analysis 해설 — 열람 차단으로 검색 요약만 사용). 재사용 1건(ref-004, 이번 실행에서 raw 원문을 다시 열어 fetched true). 교차 확인 3건(f6: IFR/산업통상자원부, f10: IFR/Interact Analysis 보도, f18: Amazon Robotics/Drexel 계열 연구진). 신뢰도 high 없음(교차 확인된 finding 의 출처가 모두 medium 이하). 분류 원문 핵심 질문(어떤 연구·제품·업체가 흐름을 바꾸는가)에는 통계(f1~f3·f8), 제품·프레임워크(f11~f13·f20), 연구(f16~f19), 정책·로봇 형태(f4~f7)로 답했고 결론은 '이동·물류 로봇 중심의 성장, 이기종 상호운용 플랫폼 부문의 급성장 전망, 초대형 플릿의 학습 기반 조정, 휴머노이드 투자 확대가 흐름을 바꾸는 요소로 보이나 실제 배치가 공식 통계로 확인되는 것은 이동·물류 로봇뿐'이라는 추정(f22)이다. 현장 유형: 물류창고(f14·f16 Amazon), 기타(f20 인천공항)만 확인했고 제조 공장·병원·상업 시설·가정·실외의 동향 사례는 f12 의 현장 열거 외에 없다. 국내 자료는 로봇신문 실태조사 요약(f8), 정부 자료 2건(f5·f7), KCI 표준화 논문(f21), 클로봇 기사(f20) 다섯 건이다. 벤더 문서 1건(ref-905)의 성능 주장은 f15 로 분리해 벤더 주장으로 표시했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음. 용어집에 이미 있는 다중 플릿 오케스트레이션·플릿 관리 시스템·모바일 매니퓰레이터·기술 성숙도·플릿 어댑터·플릿 제어 수준·LLM 에이전트는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 이 영역에 걸린 열린 질문 없음. 이전 브리프(2026-09-25-13·2026-09-25-08)는 개정 전 옛 1번 영역 '주문·업무 시스템 연계'를 다룬 것이라 이번 영역과 겹치지 않아 재인용하지 않았다. 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 898건과의 URL 중복을 대조하지 못했으므로 IFR 보도자료·Open-RMF intro·arXiv 2502.03814 등은 퍼블리셔가 기존 id 로 합칠 수 있다."
+    }
+  },
+  "ttft_ms": 15622,
+  "type": "result",
+  "duration_ms": 662891,
+  "uuid": "575601be-454e-458c-afb5-11d25989f3cc",
+  "ttft_stream_ms": 2744,
+  "time_to_request_ms": 115,
+  "first_content_frame_ms": 2745,
+  "time_to_request_from_spawn_ms": 133196,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790670578722.0332,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 664.3
+}

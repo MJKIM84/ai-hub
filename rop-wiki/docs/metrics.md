@@ -22,7 +22,7 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 기획·사업](categories/planning-and-business/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| [A. 기획·사업](categories/planning-and-business/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
@@ -46,7 +46,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md) | seed | — | 2026-09-28 | 1 |
+| [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | 2026-09-29 | 2 |
 | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md) | seed | — | 2026-09-28 | 1 |
 | [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | seed | — | 2026-09-28 | 1 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 97회 중 최종 통과 97회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 97
-- 2차 검증 판정: 통과 97
+- 실행 98회 중 최종 통과 98회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 98
+- 2차 검증 판정: 통과 98
 
 ### 반려·보류 건수
 
@@ -213,15 +213,15 @@ version: 1
 | 오픈소스 문서 | 192 |
 | 표준 | 153 |
 | 정부·연구기관 | 64 |
-| 벤더 문서 | 42 |
-| 기사 | 24 |
-| 업계 보고서 | 8 |
+| 벤더 문서 | 43 |
+| 기사 | 29 |
+| 업계 보고서 | 13 |
 
-신뢰도: medium 680건, high 153건, low 65건
+신뢰도: medium 688건, high 153건, low 68건
 
 ### 현장 유형 매트릭스 채움률
 
-- 21/119 칸 (18%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 24/119 칸 (20%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
