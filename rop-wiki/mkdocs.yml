@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 8. 채팅으로 맵 작성 — 대표 연구와 자료: topics/2026/2026-09-29-area08-s8.md
+      - 8. 채팅으로 맵 작성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area08-s7.md
+      - 8. 채팅으로 맵 작성 — 대표 접근법과 기술: topics/2026/2026-09-29-area08-s6.md
+      - 8. 채팅으로 맵 작성 — 핵심 개념과 용어: topics/2026/2026-09-29-area08-s4.md
+      - 8. 채팅으로 맵 작성 — 왜 중요한가: topics/2026/2026-09-29-area08-s3.md
+      - 8. 채팅으로 맵 작성 — 열린 질문: topics/2026/2026-09-29-area08-s11.md
+      - 8. 채팅으로 맵 작성 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area08-s10.md
       - 48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-26-area25-s7.md
       - 39. 운영 성과 측정·개선 — 다른 연구영역과의 연결: topics/2026/2026-09-26-area04-s10.md
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
@@ -497,6 +504,7 @@ nav:
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
     - 명시적 확인·암시적 확인 (Explicit / Implicit Confirmation): glossary/explicit-implicit-confirmation.md
+    - 명확화 질문 (Clarification Question (Follow-up Clarification)): glossary/clarification-question.md
     - 모델 검사 (Model Checking): glossary/model-checking.md
     - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모델 컨텍스트 프로토콜 (Model Context Protocol (MCP)): glossary/model-context-protocol.md
@@ -544,6 +552,7 @@ nav:
     - 신호 시간 논리 (Signal Temporal Logic (STL)): glossary/signal-temporal-logic.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
+    - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
     - 업무 연속성 관리 시스템 (Business Continuity Management System (BCMS)): glossary/business-continuity-management-system.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 역할 기반 접근 통제 (Role-Based Access Control (RBAC)): glossary/role-based-access-control.md
@@ -1485,6 +1494,10 @@ nav:
     - ? 'ref-783 — ISO/AWI 15066-1 - Collaborative Safety – Physical contact with robots — Part 1: Biomechanical thresholds and data'
       : references/ref-783.md
     - ref-784 — ISO/TS 15066:2016 - Robots and robotic devices — Collaborative robots: references/ref-784.md
+    - 'ref-785 — Language to Map: Topological map generation from natural language path instructions': references/ref-785.md
+    - ref-786 — SENT Map -- Semantically Enhanced Topological Maps with Foundation Models: references/ref-786.md
+    - 'ref-787 — Tell2Design: A Dataset for Language-Guided Floor Plan Generation': references/ref-787.md
+    - ref-788 — Learning Semantic Maps from Natural Language Descriptions: references/ref-788.md
     - ? 'ref-789 — ISO/CD 3691-4 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems'
       : references/ref-789.md
     - ref-790 — DIN EN ISO 12100 - 2025-01 (Draft standard): references/ref-790.md
@@ -1511,7 +1524,13 @@ nav:
     - ref-808 — Strength of evidence in systematic reviews in software engineering: references/ref-808.md
     - ref-809 — Definition Of Technology Readiness Levels: references/ref-809.md
     - ref-810 — 기술성숙도평가(TRA) 업무지침: references/ref-810.md
+    - ref-811 — 공공 맵 데이터를 이용한 자율주행 이동 로봇의 전역 경로 계획용 지도 생성 방법에 관한 연구: references/ref-811.md
+    - 'ref-812 — FloorplanQA: A Benchmark for Spatial Reasoning in LLMs using Structured Representations': references/ref-812.md
+    - ref-813 — Tokenization Allows Multimodal Large Language Models to Understand, Generate and Edit Architectural Floor Plans: references/ref-813.md
     - 'ref-814 — KS B ISO 10218-2(2017 확인) 로봇 및 로봇 장치 - 산업용 로봇의 안전에 관한 요구사항 - 제2부: 로봇 시스템 및 통합': references/ref-814.md
+    - 'ref-815 — Holodeck: Language Guided Generation of 3D Embodied AI Environments': references/ref-815.md
+    - ref-816 — Asking Follow-Up Clarifications to Resolve Ambiguities in Human-Robot Conversation: references/ref-816.md
+    - ref-817 — [최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 관제를 웹 화면 하나로 끝내는 방법: references/ref-817.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

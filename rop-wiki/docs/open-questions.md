@@ -143,8 +143,11 @@ version: 1
 | oq-121 | 로봇 관제 챗봇의 채팅 지시 기록에 작업자 식별 정보가 담길 때 그 시스템이 개인정보의 안전성 확보조치 기준의 개인정보처리시스템에 해당해 접근권한 기록·접속기록 보관 기준을 적용받는지 공식 해석이 있는가? (관련: oq-099) | [31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md)<br>[51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md) | 2026-09-25 | 2026-09-25-83 | 열림 | — |
 | oq-122 | 산업 디지털 전환 촉진법의 제명이 '산업 디지털 전환 및 인공지능 활용 촉진법'으로 바뀌어 시행되었는가, 바뀌었다면 데이터 공동 생성 규정의 조문 번호와 내용도 달라졌는가? (관련 기존 질문: oq-109) | [21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-26 | 2026-09-26-01 | 열림 | — |
 | oq-123 | ISO 10218-2:2025 발행 뒤 국내 KS B ISO 10218-2 와 KS B ISO/TS 15066 은 새 판으로 부합 개정되었거나 개정 예고되었는가, 국내 협동로봇 설치 작업장 안전인증은 어느 판을 기준으로 하는가? (관련 기존 질문: oq-070, oq-092) | [31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md)<br>[48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | 2026-09-26 | 2026-09-26-02 | 열림 | — |
+| oq-124 | 대화로 만든 층·구역·통로·문·승강기·충전 위치를 Open-RMF 빌딩 맵과 VDMA LIF 처럼 서로 다른 플릿 지도 형식으로 함께 내보낼 수 있는 공통 중간 표현이나 공식 변환 규칙이 있는가? | [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md)<br>[15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-29 | 2026-09-29-01 | 열림 | — |
+| oq-125 | 언어 모델이 대화로 만든 지도 요소의 기하 정확도와 확인 질문 횟수·구성 완료 시간을 어떤 지표와 시험 시나리오로 평가할 것인가, 로봇 지도 작성 대화에 특화된 벤치마크나 국내 사례가 있는가? | [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md)<br>[13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | 2026-09-29 | 2026-09-29-01 | 열림 | — |
+| oq-126 | 채팅 맵 작성이 받는 도면·라이다 지도 입력의 좌표계·축척 정합 결과를 누가 확인·승인하고 어느 시점에 지도가 확정된 것으로 보는지, 이 역할을 ROP 와 로봇 제조사·통합자 가운데 누가 맡는가? | [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md)<br>[14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[55. 현장 조사·설치·시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | 2026-09-29 | 2026-09-29-01 | 열림 | — |
 
-상태별 건수: 열림 123건
+상태별 건수: 열림 126건
 
 **트랙 전용 질문(트랙 백로그)**
 

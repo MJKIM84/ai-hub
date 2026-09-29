@@ -3,15 +3,15 @@ title: "오픈 RMF (Open-RMF)"
 type: glossary
 term_ko: 오픈 RMF
 term_en: Open-RMF (Open Robotics Middleware Framework)
-definition: Open-RMF 주행 그래프에서 한 번에 로봇 한 대만 점유할 수 있도록 묶은 경유점·차선의 집합이다.
-related_areas: [15, 20, 22, 25, 27, 28]
+definition: 2D 평면도 이미지 위에 층·벽·꼭짓점·플릿별 차선·문·승강기를 그려 제조사 중립 빌딩 맵(.building.yaml)을 만드는 Open-RMF 의 GUI 편집 도구이다.
+related_areas: [8, 15, 20, 22, 25, 27, 28]
 tags: [오픈소스, ROS 2, 다중 로봇, 설비 연동]
 status: published
 created: 2026-09-24
-updated: 2026-09-25
-sources: [ref-004, ref-286, ref-312, ref-536]
-version: 6
-confidence: low
+updated: 2026-09-29
+sources: [ref-004, ref-079, ref-286, ref-312, ref-536]
+version: 7
+confidence: medium
 ---
 
 [홈](../index.md) › [용어집](index.md) › 오픈 RMF
@@ -26,11 +26,11 @@ confidence: low
 
 ## 한 줄 정의
 
-Open-RMF 주행 그래프에서 한 번에 로봇 한 대만 점유할 수 있도록 묶은 경유점·차선의 집합이다. [추정][^ref-536]
+2D 평면도 이미지 위에 층·벽·꼭짓점·플릿별 차선·문·승강기를 그려 제조사 중립 빌딩 맵(.building.yaml)을 만드는 Open-RMF 의 GUI 편집 도구이다. [추정][^ref-079]
 
 ## 설명
 
-rmf_traffic 그래프 정의에서 경유점과 차선이 상호 배제 그룹을 속성으로 가지며, 같은 그룹의 요소는 한 번에 로봇 한 대만 점유한다(2026-09-25 확인).
+층의 축척은 실제 거리를 아는 두 점 사이에 측정선을 긋고 물리 거리를 미터로 입력해 정한다. 꼭짓점에 충전소·주차·도킹 속성을 줄 수 있고 문은 여닫이·양여닫이·미닫이·양미닫이 4종이다.
 
 ## 관련 영역
 
@@ -43,7 +43,6 @@ rmf_traffic 그래프 정의에서 경유점과 차선이 상호 배제 그룹�
 
 ## 출처
 
-
 - [ref-004](../references/ref-004.md)
 - [표준·프레임워크 목록](../standards/index.md)
-[^ref-536]: Open Robotics (open-rmf), rmf_traffic — rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 미확인, https://github.com/open-rmf/rmf_traffic/blob/main/rmf_traffic/include/rmf_traffic/agv/Graph.hpp, 접근일 2026-09-25
+[^ref-079]: Open Robotics, Traffic Editor - Programming Multiple Robots with ROS 2, 미확인, https://osrf.github.io/ros2multirobotbook/traffic-editor.html, 접근일 2026-09-29

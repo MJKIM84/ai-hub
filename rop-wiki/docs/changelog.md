@@ -16,6 +16,33 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-09-29
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-09-29-01 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-map-authoring.md](categories/chat-based-configuration-and-operation/chat-map-authoring.md) | 3~11절 신규 작성(seed → draft), 출처 15건, 열린 질문 3건, 현장 유형 사례 3건(병원·제조 공장·실외). 2차 재검증 수정 지시 이행: 10절 14. 도면·BIM에서 지도 만들기 항목을 사실 문장과 추정 문장으로 나눔(태그 상향 해소) |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s6.md](topics/2026/2026-09-29-area08-s6.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "6. 대표 접근법과 기술" 절(1,767자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s4.md](topics/2026/2026-09-29-area08-s4.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "4. 핵심 개념과 용어" 절(1,091자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s8.md](topics/2026/2026-09-29-area08-s8.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "8. 대표 연구와 자료" 절(979자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s3.md](topics/2026/2026-09-29-area08-s3.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "3. 왜 중요한가" 절(742자)을 옮겼다. 2차 재검증 수정: 3절의 태그 없는 판단 문장 2건에 [추정]·[의견] 태그와 각주를 붙이고 sources·출처에 ref-785·ref-786·ref-788 추가 |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s7.md](topics/2026/2026-09-29-area08-s7.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "7. 관련 표준·프레임워크·오픈소스" 절(690자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s10.md](topics/2026/2026-09-29-area08-s10.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(618자)을 옮겼다. 2차 재검증 수정: 14. 도면·BIM에서 지도 만들기 항목을 사실·추정 문장으로 나누고 15. 지도·공간·위치 모델 항목 태그를 [추정]으로 바꿈 |
+| 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s11.md](topics/2026/2026-09-29-area08-s11.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "11. 열린 질문" 절(589자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-01 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-map-authoring.md](categories/chat-based-configuration-and-operation/chat-map-authoring.md) | 8. 채팅으로 맵 작성: 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 3건, 열린 질문 3건, 2차 재검증 수정 지시 3건 반영(10절 태그 상향 2건 되돌림, 3절 판단 문장 태그) |
+| 2026-09-29-01 | 생성 | [docs/references/ref-785.md](references/ref-785.md) | 참고문헌 ref-785 등록: Language to Map: Topological map generation from natural lan… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-786.md](references/ref-786.md) | 참고문헌 ref-786 등록: SENT Map -- Semantically Enhanced Topological Maps with Foun… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-787.md](references/ref-787.md) | 참고문헌 ref-787 등록: Tell2Design: A Dataset for Language-Guided Floor Plan Genera… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-788.md](references/ref-788.md) | 참고문헌 ref-788 등록: Learning Semantic Maps from Natural Language Descriptions |
+| 2026-09-29-01 | 생성 | [docs/references/ref-811.md](references/ref-811.md) | 참고문헌 ref-811 등록: 공공 맵 데이터를 이용한 자율주행 이동 로봇의 전역 경로 계획용 지도 생성 방법에 관한 연구 |
+| 2026-09-29-01 | 생성 | [docs/references/ref-812.md](references/ref-812.md) | 참고문헌 ref-812 등록: FloorplanQA: A Benchmark for Spatial Reasoning in LLMs using… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-813.md](references/ref-813.md) | 참고문헌 ref-813 등록: Tokenization Allows Multimodal Large Language Models to Unde… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-815.md](references/ref-815.md) | 참고문헌 ref-815 등록: Holodeck: Language Guided Generation of 3D Embodied AI Envir… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-816.md](references/ref-816.md) | 참고문헌 ref-816 등록: Asking Follow-Up Clarifications to Resolve Ambiguities in Hu… |
+| 2026-09-29-01 | 생성 | [docs/references/ref-817.md](references/ref-817.md) | 참고문헌 ref-817 등록: [최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 관제를 웹 화면 하나로 끝내는 방법 |
+| 2026-09-29-01 | 갱신 | [docs/glossary/open-rmf.md](glossary/open-rmf.md) | 용어집 항목 트래픽 에디터 |
+| 2026-09-29-01 | 생성 | [docs/glossary/language-guided-floor-plan-generation.md](glossary/language-guided-floor-plan-generation.md) | 용어집 항목 언어 유도 평면도 생성 |
+| 2026-09-29-01 | 생성 | [docs/glossary/clarification-question.md](glossary/clarification-question.md) | 용어집 항목 명확화 질문 |
+
 ### 2026-09-26
 
 | 실행 id | 동작 | 페이지 | 요약 |

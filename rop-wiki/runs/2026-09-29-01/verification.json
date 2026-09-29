@@ -1,0 +1,246 @@
+{
+  "run_id": "2026-09-29-01",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2403.10008 초록·HTML 본문 열람: 제목·저자·2024-03-15·ICRA 2024 일치. 'generating explicit maps achieves significantly higher accuracy than storing implicit maps in the LLMs' 및 'creates a map using only natural language information' 원문 확인. 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2511.03165 열람: JSON 형식 위상 지도, 사람·기반 모델 공동 편집, 2단계(시각 기반 모델+운영자 → 자연어 질의 계획), 소형 로컬 모델 계획 가능 모두 초록에 있음. ICRA 2025 워크숍 채택 일치. 단일 출처."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 브리프 URL(roboticsproceedings.org/rss09/p04)은 검증 중 연결 오류(ECONNRESET) 2회로 열지 못했으나 검색 결과의 기관·제목·URL 이 일치하고, 같은 논문의 MIT DSpace 사본(dspace.mit.edu/handle/1721.1/87051)에서 초록을 열어 'jointly estimates a hybrid metric, topological, and semantic representation' 과 자연어 포함 시 계량·위상·의미 정확도 향상 문장을 확인. RSS IX 2013-06 일치. 단일 출처."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f1·f2·f3 이 모두 살아남았고 세 논문 어느 것도 순수 언어에서 정확한 계량 기하를 얻는다고 주장하지 않으므로 추정으로 적절. 구축자 추정임을 본문에서 드러낼 것."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2311.15941 열람: 8만 건 이상 평면도·자연어 지시, 공간·관계 제약 만족이 난점, Seq2Seq 기준 모델, 텍스트 조건 이미지 생성 모델 비교, 사람 평가 모두 초록에 있음. ACL 2023(Area Chair Award). 발행일 '2023'은 arXiv 등록 2023-11-27 기준으로 유지 가능. 단일 출처. 건축 설계용 연구이므로 방법 참고로만."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2603.11640 열람: HouseMind, 방 단위 이산 토큰 통합 어휘, 이해·생성·편집 통합, 텍스트 지시 편집, 기하 타당성·제어 가능성 우위, 로컬 배포 가능 모두 초록에 있음. CVPR 2026 채택, 2026-03-12 일치. 우위 주장은 저자 보고값이므로 본문에서 '저자 보고'로 서술. 단일 출처."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2312.09067 초록·HTML 본문 열람: GPT-4 가 평면도·재질·출입구·창을 설계하고 객체 간 공간 관계 제약을 생성해 제약 최적화로 배치, Objaverse 자산, 주거 장면 사람 평가에서 절차적 기준선보다 선호, 신규 장면 내비게이션 확인. CVPR 2024, 2023-12-14(v2 2024-04-22). 단일 출처."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2507.07644 열람: JSON/XML 평면도, 거리·가시성·경로·배치 네 과제, 'often fail to respect physical constraints, preserve spatial coherence', 작은 변화에 강건 모두 초록에 있음. 최신성: v4 가 2026-05-25 에 개정되고 ICML 2026 채택으로 표시됨 — 본문 기준일에 버전·학회를 병기할 것. 단일 출처."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인. Tell2Design(SUTD·NUS 등, 2023)과 FloorplanQA(KAUST 등, 2025)를 각각 열어 공간·관계 제약 만족의 어려움과 물리 제약 미준수를 확인. 발행 주체·저자가 다르고 인용 관계가 아니므로 독립 교차 확인 인정. 추정 태그 적절(도출 결론은 구축자 추정)."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. traffic-editor.md 원문(github_raw) 열람: 레벨·벽(기본 10cm·2.5m)·꼭짓점 속성(충전소·주차·도킹)·플릿별 차선·문 4종(hinged·double-hinged·sliding·double-sliding)·다층 승강기·바닥 다각형·.building.yaml 저장 모두 일치. 발행일 미확인(확인일 기준) 표기 유지. 단일 출처(Open Robotics)."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 인용 구절 'Setting the `distance` parameter to the physical distance between the points (in meters) will then update the `Scale` for the level.' 원문과 일치. 측정선·거리 입력 방식 확인. 같은 출처 직접 인용은 이 1회만 허용."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f10·f11·f2 에서 도출한 추정이며 근거 finding 이 모두 살아남음. 대화로 빌딩 맵을 채운 사례를 직접 확인하지 않았다는 한계를 본문에 남길 것."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. rmf_demos README 원문(github_raw) 열람: Clinic World 'two levels and two lifts … Two different robot fleets with different roles navigate across two levels by lifts', Hotel World '2 guest levels … two lifts, multiple doors and 3 robot fleets (4 robots)' 일치. 시뮬레이션 데모이며 실제 현장 배치가 아님을 5절에서 반드시 명시. Hotel 은 상업 시설 사례로 나눌 수 있음."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. LIF README 원문(github_raw) 열람: 1.0.0(2023-09), 'edges, nodes and stations', 통합자가 제3자 관제에 레이아웃을 넘긴다는 문장, VDA5050 영향, 'non-binding approach' 모두 일치. 출처 유형이 '표준'이나 문서 스스로 비구속 가이드라인이라 하므로 본문에서 그렇게 표기."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f14·f10 이 살아남았고 두 형식의 공식 변환 규칙은 미확인이라는 한계가 열린 질문으로 올라가 있음. 추정 적절."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2507.00552 열람: CAD → 계층 위상·계량 OSM, 레이어 분리·AreaGraph 분할·글자–방 연결·다층 융합·GUI·코드 공개, SLAM 의 시간·노동·강건성 한계 주장 모두 초록에 있음. v3 2026-03-31 개정, 학회 표기 없음(기준일에 버전 병기). 단일 출처. 14. 도면·BIM에서 지도 만들기 쪽 내용이므로 이 페이지에서는 연계·참고로 다룰 것."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. DBpia 열람: 대한공간정보학회지 30권 2호(2022-06) 11–20쪽, 김영재·김세윤·김홍준(대전대). 공공 지도 데이터 기반 분기점 단위 전역 경로 계획용 위상 지도, A* 모의실험, 비용 절감·실외 서비스 상용화 촉진 모두 초록에 있음. 단일 출처."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. KCI 열람: 로봇학회 논문지 21권 1호 48–57쪽(2026), 노주형·강규리·김연찬·심현철(KAIST). 3D LiDAR–IMU SLAM, 프런티어 탐사(약 33% 단축), 4자유도 매니퓰레이터 승강기 버튼 조작, N1 건물 5F–9F 27분, 승강기 성공률 95% 모두 초록에 있음. 수치는 저자 보고값이며 단일 출처. '연계 대상' 표시 유지."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 모빌리오 페이지 열람(2026-08-24): 2D 라이다 지도(PGM)와 CAD/BIM 도면을 기준점 3개 이상(기둥·모서리)으로 좌표계 일치 후 회전각·크기 미세 조정, 웨이포인트 티칭 경로, 도면·구역 편집 기능 설명 없음 모두 일치. 벤더 주장·추정 표기 적절(vendor_claim: true). 용어는 용어집 '지도 정합(Map Alignment)'으로 맞추고 벤더 표기 '맵 정합'은 따옴표로."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 원문 미열람. ACM DL 은 403, DiVA 학위논문·Reviewerly 는 연결 오류로 열지 못함. 검색 결과에서 기관(ACM/IEEE HRI 2022)·제목·저자(Doğan·Torre·Leite)·URL·461–469쪽·2022-03-07 일치와 '63명 사용자 연구'는 확인했으나, 명확화 질문을 받은 사용자가 과제를 더 쉽게 느끼고 로봇의 이해·역량을 더 높게 평가했다는 효과 결론은 어느 스니펫에서도 나타나지 않았다. 스니펫 범위 밖 주장이므로 8절 3항에 따라 강등하고 각주에 (원문 미열람) 표기."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f11(축척 입력 방식)은 원문으로 확인, f20 은 추정으로 강등됨. 추정 태그 유지하되 본문에서 f20 의 효과 결론이 원문 미확인임을 함께 밝힐 것."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f16·f18·f19 가 모두 살아남았고 분류 원문 19장 경계와 C 대분류 주석(맵 작성은 14·15번의 기능을 대화로 쓰게 하는 것)에 맞는 추정. '연계 대상' 표시 유지."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 근거 finding(f10·f14·f2·f8) 모두 살아남음. 원문 19장 경계와 '사람이 확인·승인한 계획만 실행' 주석에 맞는 구축자 추정으로 9절에 적절."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. f6·f8·f16 이 도면·평면도 해석 연구이고 분류 원문 L 주석이 도면 해석을 14번 적용 연구 방법으로 두므로 교차 규칙 적용이 맞음. 10절에서 45. 문서·도면·장면 이해와 14. 도면·BIM에서 지도 만들기 양쪽에 연결."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "ref-079(Traffic Editor)·ref-104(rmf_demos)는 이전 실행들이 같은 Open Robotics 계열 문서(rmf-core, integration_doors 등)를 이미 등록했으므로 참고문헌 전체 목록에 같은 URL 이 있으면 퍼블리셔가 기존 id 로 합친다(이번 입력에는 인용 0건만 요약되어 대조하지 못함)",
+      "용어 후보 '명확화 질문'은 기존 용어 '명시적 확인·암시적 확인(explicit-implicit-confirmation)'·'슬롯 채우기(slot-filling)'와 뜻이 겹치지 않으나 인접하므로 정의에 관계를 적고 등록"
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "f19 '맵 정합' — 용어집 '지도 정합 (Map Alignment)'과 표기가 다름. 본문은 용어집 표기를 쓰고 벤더 명칭은 따옴표로 병기",
+      "f14·f15 '레이아웃 교환 형식(LIF)'은 용어집 'layout-interchange-format' 과 일치 — 신규 등록하지 않고 링크",
+      "f1·f17 '위상 지도'는 용어집 'topological-map' 과 일치 — 링크 재사용"
+    ]
+  },
+  "quotation_check": {
+    "ok": true,
+    "issues": []
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f20: [사실] → [추정]으로 강등하고, 본문에서는 '63명 사용자 연구'까지만 확인된 사실로 두고 효과 결론(과제가 쉽게 느껴짐·로봇 역량 평가 상승)은 원문 미확인으로 서술한다 — ACM 원문을 열지 못했고 검색 스니펫에 효과 결론이 없다.",
+    "ref-816: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — 원문 403.",
+    "f21: 추정을 유지하되 근거 문장에서 f20 의 효과 결론이 원문 미확인임을 밝힌다 — f20 강등에 따른 정합.",
+    "f19: 용어를 용어집 '지도 정합(Map Alignment)'으로 쓰고 벤더 표기 '맵 정합'은 따옴표 병기하며, [추정]에 '벤더 주장'을 유지하고 5절 제조 공장 사례임을 명시한다 — 단일 벤더 문서.",
+    "f13: 5절 병원 사례는 Open-RMF Clinic 시뮬레이션 데모 월드임을 문장에 명시하고 실제 병원 배치 사례처럼 쓰지 않는다. Hotel 월드를 쓰면 상업 시설 사례로 따로 나눈다 — 출처가 시뮬레이션 데모 README.",
+    "f18: 5절(기타 현장)·9절에서 '연계 대상'으로 짧게만 다루고 ROP 직접 범위처럼 쓰지 않는다 — 로봇 자체 SLAM·승강기 조작은 분류 원문 19장의 로봇 자체 지능·제어·시설·설비 제어 영역.",
+    "f5·f6·f7: 6·8절에서 건축 설계용 평면도 생성 연구임을 밝히고 로봇 지도 작성 방법의 참고로만 서술하며, f6 의 '기하 타당성·제어 가능성 우위'는 저자 보고값으로 표기한다 — 로봇 지도 작성이 아닌 대상.",
+    "f8·f16: 기준일에 arXiv 개정 버전을 병기한다(FloorplanQA v4 2026-05-25, ICML 2026 채택 / Zhang 외 v3 2026-03-31) — 발행일 이후 개정판 존재.",
+    "f14: 7절에서 VDMA LIF 를 표준이 아니라 '법적 구속력 없는 VDMA 가이드라인'으로 표기한다 — README 가 non-binding approach 로 명시.",
+    "f16·f24: 10절에서 14. 도면·BIM에서 지도 만들기와 45. 문서·도면·장면 이해 양쪽에 연결하고, 이 페이지 6절에는 도면 해석 엔진을 연계 대상으로만 둔다 — 원문 L 대분류 교차 규칙.",
+    "f11: Traffic Editor 직접 인용은 이 구절 1회만 쓰고 f10 은 요약·재서술한다 — 출처당 직접 인용 1회.",
+    "용어집: '레이아웃 교환 형식(LIF)'·'위상 지도'·'지도 정합'은 기존 용어(layout-interchange-format, topological-map, map-alignment)에 링크하고 신규 등록하지 않는다. '명확화 질문' 정의에는 '명시적 확인·암시적 확인'·'슬롯 채우기'와의 관계를 한 문장 더한다 — 용어 중복 방지.",
+    "ref-079·ref-104: reference_updates 에서 참고문헌 전체 목록에 같은 URL 이 이미 있으면 기존 id 를 재사용한다 — 이번 입력에 전체 목록이 없어 대조하지 못함."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 23건, 미확인 1건, 교차 확인 1건(f9). 강등: f20 사실 → 추정(효과 결론이 검색 스니펫에 없음). 원문 미열람 출처: ref-816(ACM 403). 주의: ref-788 는 브리프 URL(roboticsproceedings.org)이 검증 중 연결 오류로 열리지 않아 MIT DSpace 사본으로 초록을 확인했다. 나머지 13건은 원문(arXiv 초록·HTML, github_raw, DBpia, KCI, 벤더 페이지)을 열어 기관·제목·발행일·주장 일치를 확인했다. 사실 태그 finding 은 모두 단일 출처이며 논문은 초록·본문 일부만 확인했으므로 페이지 신뢰도는 medium 이다. 대화만으로 로봇 지도를 만든 실제 현장 배치 사례는 없고, 병원 사례는 Open-RMF 시뮬레이션 데모, 제조 공장 사례는 벤더 주장이다. f8·f16 은 발행 후 arXiv 개정판(2026)이 있어 기준일에 버전을 병기한다. 정정 요청 없음. 미사용 출처 없음.",
+  "retry_reason": null
+}
