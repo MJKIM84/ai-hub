@@ -325,6 +325,19 @@ export default function PlanningWorkbench({
       setDirty(true);
   }, [project, plan]);
   useEffect(() => {
+    if (!connected || !plan?.approval || !state?.run_id || plan.approval.run_id===state.run_id) return;
+    let active=true;
+    // A top-bar reset creates another run of the same approved conditions.
+    // Refresh only execution identity, preserving unsaved selection edits.
+    void request<Plan>(`/plans/${plan.id}`).then(latest => {
+      if (!active || latest.version!==plan.version || latest.plan_hash!==plan.plan_hash || latest.approval?.run_id!==state.run_id) return;
+      setPlan(current => current?.id===latest.id && current.version===latest.version
+        ? {...current,approval:latest.approval,previous_approvals:latest.previous_approvals} : current);
+      setResult(null);setStopped(false);
+    }).catch(() => {});
+    return () => {active=false;};
+  }, [connected, state?.run_id, plan?.id, plan?.version]);
+  useEffect(() => {
     if (!plan || !connected) return;
     const map = plan.compiled.project?.environment;
     const planMapId = plan.source_environment_id ?? map?.id;
@@ -1625,13 +1638,15 @@ export default function PlanningWorkbench({
                     {dirty
                       ? "선택 변경 · 다시 계산 필요"
                       : plan.approval
-                        ? "실행 요청 수락됨"
+                        ? livePlan && !terminalRun ? "실행 요청 수락됨" : "이전 승인 실행 · 결과 보존됨"
                         : plan.compiled.kind === "question"
                           ? "질문은 실행되지 않습니다"
                           : `검토한 버전 ${plan.version} 승인`}
                   </strong>
                   <small>
-                    편집 초기 배치로 새 실험 시작 · 진행 중인 실행은 먼저 일시 정지
+                    {plan.approval && (!livePlan || terminalRun)
+                      ? "다시 실행 준비 → 구성 검토 → 승인하면 처음부터 새 실행을 시작합니다."
+                      : "편집 초기 배치로 새 실험 시작 · 진행 중인 실행은 먼저 일시 정지"}
                   </small>
                 </div>
                 {(historicalPlan || planMapChanged) && <button disabled={!!busy} onClick={() => void act("저장된 지시로 새 계획 계산 중", async () => {
@@ -1640,7 +1655,7 @@ export default function PlanningWorkbench({
                 })}>이전 지시로 새 계획 만들기</button>}
                 <button disabled={!!busy || historicalPlan || planMapChanged} onClick={() => void revise()}>
                   <RefreshCw size={15} />
-                  계획 갱신
+                  {plan.approval && !dirty && (!livePlan || terminalRun) ? "다시 실행 준비" : "계획 갱신"}
                 </button>
                 <button
                   className="primary"
