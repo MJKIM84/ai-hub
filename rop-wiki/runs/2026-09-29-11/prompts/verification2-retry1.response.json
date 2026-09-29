@@ -1,0 +1,137 @@
+{
+  "duration_api_ms": 89717,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.50237125,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 106731,
+    "cache_read_input_tokens": 90325,
+    "output_tokens": 6903,
+    "output_tokens_details": {
+      "thinking_tokens": 3863
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 106731,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 6903,
+        "cache_read_input_tokens": 90325,
+        "cache_creation_input_tokens": 106731,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 106731
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 2,
+      "outputTokens": 6903,
+      "cacheReadInputTokens": 90325,
+      "cacheCreationInputTokens": 106731,
+      "webSearchRequests": 0,
+      "costUSD": 2.50237125,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 3863,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-11\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"ref-910~ref-913 의 id 충돌 기록은 changelog_entry 와 reference_updates(ref-910·ref-911·ref-913) summary 에 남아 있고, 근거 없던 ref-382 충돌 문구는 삭제됨 — 퍼블리셔가 URL 기준으로 병합\",\"f22(다중 플릿 오케스트레이션 정의)는 2026-09-29-10 f8 과 같은 주장이며 ref-257 재사용으로 중복 각주 아님\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true,\"issues\":[]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 28건, 미확인 0건, 교차 확인 2건(f11·f12 쿠팡 대구: 로봇신문/물류신문, 같은 현장 공개 기반이라 독립성 제한; f19 는 법적 근거 부분만 국토교통부/인증센터 2건). 강등: 없음(f19 신뢰도 high → medium: 등급·이자 수치가 인용 URL 이 아닌 같은 인증센터 사이트의 인증혜택·법적근거 페이지에 있고 단일 기관 근거). 원문 미열람 출처: ref-257(페이지 빈 응답, 검색 결과 일치), ref-003(브리프 미열람 표시, 검증에서 열어 표준 정의 확인). ref-004 는 입력 원문 텍스트로 열람 확인. 주의: 학술 서베이 4편(ref-910·911·382·913)과 국내 논문 2편은 초록만 확인했고 본문은 열지 않았다. 쿠팡·CJ대한통운·DHL·Amazon 사례의 성과 수치(65%, 48%, 35%, 10%, 하역 속도 우위 등)는 모두 회사 설명이며 벤더 주장으로 남는다. 국토교통부 인증제 세부 기준 첨부와 DHL 원 보도자료는 열지 못했다. ref-910~ref-913 은 같은 날 실행 2026-09-29-10 이 다른 URL 에 쓴 id 와 충돌하므로 퍼블리셔가 URL 기준으로 병합해야 한다. 정정 요청 없음. 열린 질문 해결 인정 없음(oq-134·oq-138·oq-142·oq-146 미해결 유지). 검증 예산: 검색 3회(브리프 15회와 합쳐 18/30), 열람 24회. / 2차 통과(재검증 1회차). 직전 2차 수정 지시 5건 모두 이행 확인: (1) 10절 1. 기술·시장·업체 동향 연결 문장이 warehouse.md 와 분리 페이지 2026-09-29-area61-s10.md 의 3절·1. 세 줄 요약에서 '[추정] 벤더 주장[^ref-918][^ref-257]' 로 고쳐져 1차 지시 7(f16 벤더 주장 병기)이 전부 이행됨, (2) AGV·AMR·WMS·WCS 첫 등장 풀이와 MCS·QPS·DPS·ITS 회사 표기 명시(새 풀이 없음), (3) 5절 마지막 단락을 4문장·3문장 두 단락으로 분할(문장·태그·각주 변경 없음), (4) 5절 [의견] 두 문장에 '1차 검증 노트 기준'·'브리프 자체 점검 기준' 귀속 명시, (5) reference_updates ref-382 의 근거 없는 충돌 문구 삭제(ref-910·911·913 은 유지). 드리프트 없음(태그 문장 전부가 브리프 finding·[분류원문]·용어집에 대응하며 삭제·이동 처분 finding 없음), [분류원문] 보존(admonition 세 줄·1절·2절 첫 줄이 입력 시드와 글자 단위로 같음), 섹션 순서 준수(세부영역 13절, 분리 주제 7건 10절, 형식 검증 통과), 링크 유효(docs_tree.txt 없음 — 부록 A 경로·입력 페이지·용어집 색인으로만 검사; about/scope-boundary.md 와 topics/index.md 는 미확인). 재검증에서 새로 지시할 문제는 없다. 사소한 표기 의견(이전 지시에 없었고 수정 지시 대상 아님): 분리 페이지 2026-09-29-area61-s6.md 는 4절 정의와 떨어져 MAPD·ASRS 약어가 풀이 없이 나오나 R-3 에 따라 원 절 내용을 그대로 옮긴 것으로 본다; 10절 1번 연결 문장의 '벤더 주장' 병기는 Amazon(ref-918) 근거에 해당하며 Interact Analysis(ref-257) 부분은 업계 보고서다. 퍼블리셔 참고: warehouse.md 프런트매터 sources 의 ref-911·ref-101·ref-124 는 분리 뒤 남은 본문에 각주가 없고 분리 페이지에서만 인용되며, reference_updates 의 cited_by 는 분리 주제 페이지를 포함하지 않는다(코드가 다시 만들면 됨). 분리 주제 페이지의 9. 검증 노트는 코드 생성 문구이며 이 2차 판정으로 갱신되어야 한다. 5절 여섯 항목은 세 사례(쿠팡 대구·DHL 하역·CJ대한통운 안성) 모두 현장 유형 물류창고를 명시하고 site_matrix_updates 6칸과 일치한다. 신뢰도 medium 유지(태그 분포 변화 없음).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-29-11",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "ref-910~ref-913 의 id 충돌 기록은 changelog_entry 와 reference_updates(ref-910·ref-911·ref-913) summary 에 남아 있고, 근거 없던 ref-382 충돌 문구는 삭제됨 — 퍼블리셔가 URL 기준으로 병합",
+        "f22(다중 플릿 오케스트레이션 정의)는 2026-09-29-10 f8 과 같은 주장이며 ref-257 재사용으로 중복 각주 아님"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": []
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 28건, 미확인 0건, 교차 확인 2건(f11·f12 쿠팡 대구: 로봇신문/물류신문, 같은 현장 공개 기반이라 독립성 제한; f19 는 법적 근거 부분만 국토교통부/인증센터 2건). 강등: 없음(f19 신뢰도 high → medium: 등급·이자 수치가 인용 URL 이 아닌 같은 인증센터 사이트의 인증혜택·법적근거 페이지에 있고 단일 기관 근거). 원문 미열람 출처: ref-257(페이지 빈 응답, 검색 결과 일치), ref-003(브리프 미열람 표시, 검증에서 열어 표준 정의 확인). ref-004 는 입력 원문 텍스트로 열람 확인. 주의: 학술 서베이 4편(ref-910·911·382·913)과 국내 논문 2편은 초록만 확인했고 본문은 열지 않았다. 쿠팡·CJ대한통운·DHL·Amazon 사례의 성과 수치(65%, 48%, 35%, 10%, 하역 속도 우위 등)는 모두 회사 설명이며 벤더 주장으로 남는다. 국토교통부 인증제 세부 기준 첨부와 DHL 원 보도자료는 열지 못했다. ref-910~ref-913 은 같은 날 실행 2026-09-29-10 이 다른 URL 에 쓴 id 와 충돌하므로 퍼블리셔가 URL 기준으로 병합해야 한다. 정정 요청 없음. 열린 질문 해결 인정 없음(oq-134·oq-138·oq-142·oq-146 미해결 유지). 검증 예산: 검색 3회(브리프 15회와 합쳐 18/30), 열람 24회. / 2차 통과(재검증 1회차). 직전 2차 수정 지시 5건 모두 이행 확인: (1) 10절 1. 기술·시장·업체 동향 연결 문장이 warehouse.md 와 분리 페이지 2026-09-29-area61-s10.md 의 3절·1. 세 줄 요약에서 '[추정] 벤더 주장[^ref-918][^ref-257]' 로 고쳐져 1차 지시 7(f16 벤더 주장 병기)이 전부 이행됨, (2) AGV·AMR·WMS·WCS 첫 등장 풀이와 MCS·QPS·DPS·ITS 회사 표기 명시(새 풀이 없음), (3) 5절 마지막 단락을 4문장·3문장 두 단락으로 분할(문장·태그·각주 변경 없음), (4) 5절 [의견] 두 문장에 '1차 검증 노트 기준'·'브리프 자체 점검 기준' 귀속 명시, (5) reference_updates ref-382 의 근거 없는 충돌 문구 삭제(ref-910·911·913 은 유지). 드리프트 없음(태그 문장 전부가 브리프 finding·[분류원문]·용어집에 대응하며 삭제·이동 처분 finding 없음), [분류원문] 보존(admonition 세 줄·1절·2절 첫 줄이 입력 시드와 글자 단위로 같음), 섹션 순서 준수(세부영역 13절, 분리 주제 7건 10절, 형식 검증 통과), 링크 유효(docs_tree.txt 없음 — 부록 A 경로·입력 페이지·용어집 색인으로만 검사; about/scope-boundary.md 와 topics/index.md 는 미확인). 재검증에서 새로 지시할 문제는 없다. 사소한 표기 의견(이전 지시에 없었고 수정 지시 대상 아님): 분리 페이지 2026-09-29-area61-s6.md 는 4절 정의와 떨어져 MAPD·ASRS 약어가 풀이 없이 나오나 R-3 에 따라 원 절 내용을 그대로 옮긴 것으로 본다; 10절 1번 연결 문장의 '벤더 주장' 병기는 Amazon(ref-918) 근거에 해당하며 Interact Analysis(ref-257) 부분은 업계 보고서다. 퍼블리셔 참고: warehouse.md 프런트매터 sources 의 ref-911·ref-101·ref-124 는 분리 뒤 남은 본문에 각주가 없고 분리 페이지에서만 인용되며, reference_updates 의 cited_by 는 분리 주제 페이지를 포함하지 않는다(코드가 다시 만들면 됨). 분리 주제 페이지의 9. 검증 노트는 코드 생성 문구이며 이 2차 판정으로 갱신되어야 한다. 5절 여섯 항목은 세 사례(쿠팡 대구·DHL 하역·CJ대한통운 안성) 모두 현장 유형 물류창고를 명시하고 site_matrix_updates 6칸과 일치한다. 신뢰도 medium 유지(태그 분포 변화 없음).",
+    "retry_reason": null
+  },
+  "ttft_ms": 59020,
+  "type": "result",
+  "duration_ms": 91437,
+  "uuid": "d3055a69-d842-4ee9-88f8-29a956ffbcf7",
+  "ttft_stream_ms": 6425,
+  "time_to_request_ms": 152,
+  "first_content_frame_ms": 6426,
+  "time_to_request_from_spawn_ms": 7192978,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790677638417.2217,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 92.9
+}

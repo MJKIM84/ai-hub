@@ -91,6 +91,13 @@ version: 1
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술](2026/2026-09-29-area13-s6.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area13-s7.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 대표 연구와 자료](2026/2026-09-29-area13-s8.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 다른 연구영역과의 연결](2026/2026-09-29-area61-s10.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 열린 질문](2026/2026-09-29-area61-s11.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 왜 중요한가](2026/2026-09-29-area61-s3.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 핵심 개념과 용어](2026/2026-09-29-area61-s4.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 대표 접근법과 기술](2026/2026-09-29-area61-s6.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area61-s7.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 대표 연구와 자료](2026/2026-09-29-area61-s8.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
 | 2026-09-26 | [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | — |
 | 2026-09-26 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [23. 업무 시스템 연동 — 열린 질문](2026/2026-09-25-area01-s11.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |

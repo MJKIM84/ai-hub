@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 61. 물류창고 — 대표 연구와 자료: topics/2026/2026-09-29-area61-s8.md
+      - 61. 물류창고 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area61-s7.md
+      - 61. 물류창고 — 대표 접근법과 기술: topics/2026/2026-09-29-area61-s6.md
+      - 61. 물류창고 — 핵심 개념과 용어: topics/2026/2026-09-29-area61-s4.md
+      - 61. 물류창고 — 왜 중요한가: topics/2026/2026-09-29-area61-s3.md
+      - 61. 물류창고 — 열린 질문: topics/2026/2026-09-29-area61-s11.md
+      - 61. 물류창고 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area61-s10.md
       - 13. 대화형 기능의 신뢰·기반 — 대표 연구와 자료: topics/2026/2026-09-29-area13-s8.md
       - 13. 대화형 기능의 신뢰·기반 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area13-s7.md
       - 13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술: topics/2026/2026-09-29-area13-s6.md
@@ -498,6 +505,7 @@ nav:
     - 5G 특화망(이음5G) (Private 5G Network (e-Um 5G)): glossary/private-5g-network.md
     - AGV 기술 데이터 서브모델 (Technical Data for AGV in Intralogistics (IDTA 02047)): glossary/agv-technical-data-submodel.md
     - AI 관리 시스템 (Artificial Intelligence Management System (AIMS)): glossary/artificial-intelligence-management-system.md
+    - AMR 협업 피킹 (AMR-assisted Order Picking): glossary/amr-assisted-order-picking.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
@@ -611,15 +619,18 @@ nav:
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 산업데이터 (Industrial Data): glossary/industrial-data.md
     - 상태 기반 정비 (Condition-Based Maintenance (CBM)): glossary/condition-based-maintenance.md
+    - 상품-대-사람 (Goods-to-Person (GTP)): glossary/goods-to-person.md
     - 상황 상태 추적 (Situation State Tracking): glossary/situation-state-tracking.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
     - 서비스 수준 협약 (Service Level Agreement (SLA)): glossary/service-level-agreement.md
     - 서비스형 로봇 (Robot-as-a-Service (RaaS)): glossary/robot-as-a-service.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
+    - 셔틀 기반 저장·회수 시스템 (Shuttle-Based Storage and Retrieval System (SBS/RS)): glossary/shuttle-based-storage-and-retrieval-system.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
     - 수행 가능 동작 (Performable Action (Open-RMF perform_action)): glossary/performable-action.md
+    - 스마트물류센터 인증 (Smart Logistics Center Certification): glossary/smart-logistics-center-certification.md
     - 스캔 대 BIM 비교 (Scan-vs-BIM): glossary/scan-vs-bim.md
     - 스케줄 간 의존 (Cross-schedule Dependency (XD)): glossary/cross-schedule-dependency.md
     - 스킬 (Skill): glossary/skill.md
@@ -1731,6 +1742,18 @@ nav:
     - ref-907 — Agility Robotics' Digit humanoids land first official job: references/ref-907.md
     - ref-908 — CJ대한통운, 물류업계 최초 AI 휴머노이드 상용화 '첫발': references/ref-908.md
     - ref-909 — 부품 배치 '척척' 무거운 짐도 '사뿐'… 아틀라스 2.5만대 로봇 학교 간다: references/ref-909.md
+    - 'ref-910 — Robotized and Automated Warehouse Systems: Review and Recent Developments': references/ref-910.md
+    - 'ref-911 — Planning and control of autonomous mobile robots for intralogistics: Literature review and research agenda': references/ref-911.md
+    - ref-912 — Integration of returns and decomposition of customer orders in e-commerce warehouses: references/ref-912.md
+    - ref-913 — 급속 확산되는 물류현장의 로봇적용 사례: references/ref-913.md
+    - ref-914 — 온라인 주문 풀필먼트를 위한 물류센터 피킹 설비 최적화에 대한 연구: references/ref-914.md
+    - ref-915 — CJ대한통운이 뽑은 물류자동화 혁신 기술 '톱3': references/ref-915.md
+    - ref-916 — Amazon launches a new AI foundation model to power its robotic fleet and deploys its 1 millionth robot: references/ref-916.md
+    - ref-917 — 쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이...: references/ref-917.md
+    - ref-918 — ‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니: references/ref-918.md
+    - 'ref-919 — 인증스마트물류센터 : 인증심사 > 심사기준 > 일반': references/ref-919.md
+    - ref-920 — CJ대한통운 안성 MP허브, 국토부 ‘스마트물류센터 1등급’ 인증: references/ref-920.md
+    - ref-921 — DHL Makes First Commercial Deployment of Boston Dynamics Stretch Robot to Unload Trailers and Containers: references/ref-921.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

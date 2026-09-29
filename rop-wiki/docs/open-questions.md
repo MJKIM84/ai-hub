@@ -182,8 +182,12 @@ version: 1
 | oq-160 | 다중 플릿 오케스트레이션 소프트웨어 시장의 규모·성장률에 대해 산정 방법론이 공개된 독립 출처가 있는가(확인한 시장조사 전망은 방법론이 공개되지 않았다)? | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md)<br>[3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | 2026-09-29 | 2026-09-29-10 | 열림 | — |
 | oq-161 | 휴머노이드가 AMR 과 함께 물류·제조 현장에 들어올 때 기존 플릿 관제·오케스트레이션 플랫폼은 휴머노이드를 어떤 인터페이스로 등록·관제하며 AMR–휴머노이드 인계는 누가 조율하는가? | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md)<br>[4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md)<br>[30. 로봇 간 협업·물리적 인계](categories/execution-collaboration-and-recovery/robot-to-robot-collaboration-and-physical-handover.md) | 2026-09-29 | 2026-09-29-10 | 열림 | — |
 | oq-162 | 국내 로봇산업 실태조사에 오케스트레이션·관제 소프트웨어 매출을 따로 집계하는 항목이 있는가, 없다면 국내 관제 소프트웨어 시장 규모를 어떤 자료로 추적할 것인가? | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md)<br>[3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | 2026-09-29 | 2026-09-29-10 | 열림 | — |
+| oq-163 | 국내 물류센터에서 서로 다른 제조사의 AGV·소팅봇·무인지게차·하역 로봇을 하나의 오케스트레이션 계층으로 관제한 공개 사례가 있는가(쿠팡 대구·CJ대한통운 사례는 설비별 도입만 확인됐다)? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
+| oq-164 | 스마트물류센터 인증 심사기준의 정보시스템 항목(WMS 150점, WCS/MCS 50점)에서 이기종 로봇 오케스트레이션 계층은 어느 항목으로 평가되며 인증 심사가 로봇 플릿 관제 기능을 따로 보는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
+| oq-165 | 반품 재적치를 피킹 경로에 통합하는 최적화 연구를 로봇 이동형 풀필먼트 시스템이나 AMR 협업 피킹에 적용한 연구·사례가 있는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
+| oq-166 | 트레일러 하역 로봇의 떨어진 상자 복구 같은 예외 처리가 로봇 자체 복구와 오케스트레이션 계층의 재계획 사이에서 어떻게 분담되는지 공개된 인터페이스나 사례가 있는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
 
-상태별 건수: 열림 161건, 조사 중 1건
+상태별 건수: 열림 165건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

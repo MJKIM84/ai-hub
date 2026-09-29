@@ -20,6 +20,31 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-11 | 갱신 | [docs/categories/site-type-applications/warehouse.md](categories/site-type-applications/warehouse.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 20건 추가; 2차 수정: 10절 1번 연결 벤더 주장 병기, AGV·AMR·WMS·WCS 첫 등장 풀이와 QPS·DPS·ITS 회사 표기 명시, 5절 마지막 단락 분할, [의견] 귀속 명시 |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s8.md](topics/2026/2026-09-29-area61-s8.md) | 자동 분리: 61. 물류창고 의 "8. 대표 연구와 자료" 절(1,603자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s6.md](topics/2026/2026-09-29-area61-s6.md) | 자동 분리: 61. 물류창고 의 "6. 대표 접근법과 기술" 절(1,262자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s4.md](topics/2026/2026-09-29-area61-s4.md) | 자동 분리: 61. 물류창고 의 "4. 핵심 개념과 용어" 절(1,156자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s11.md](topics/2026/2026-09-29-area61-s11.md) | 자동 분리: 61. 물류창고 의 "11. 열린 질문" 절(1,068자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s7.md](topics/2026/2026-09-29-area61-s7.md) | 자동 분리: 61. 물류창고 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,062자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s10.md](topics/2026/2026-09-29-area61-s10.md) | 자동 분리: 61. 물류창고 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(868자)을 옮겼다; 2차 수정: 1. 기술·시장·업체 동향 연결 문장(3절 첫 항목·1. 세 줄 요약 첫 항목)에 벤더 주장 병기 |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s3.md](topics/2026/2026-09-29-area61-s3.md) | 자동 분리: 61. 물류창고 의 "3. 왜 중요한가" 절(855자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 요약 | [docs/categories/site-type-applications/warehouse.md](categories/site-type-applications/warehouse.md) | 61. 물류창고: 3~11절 신규 작성(seed → draft): 흐름 단계별 로봇 작업, 쿠팡 대구·DHL·CJ대한통운 사례, 스마트물류센터 인증 심사기준, ROP 직접 범위; 같은 날 실행 2026-09-29-10 의 ref-910~ref-912 과 id 충돌, URL 기준 병합 필요 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-910.md](references/ref-910.md) | 참고문헌 ref-910 등록: Robotized and Automated Warehouse Systems: Review and Recent… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-911.md](references/ref-911.md) | 참고문헌 ref-911 등록: Planning and control of autonomous mobile robots for intralo… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-912.md](references/ref-912.md) | 참고문헌 ref-912 등록: Integration of returns and decomposition of customer orders… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-913.md](references/ref-913.md) | 참고문헌 ref-913 등록: 급속 확산되는 물류현장의 로봇적용 사례 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-914.md](references/ref-914.md) | 참고문헌 ref-914 등록: 온라인 주문 풀필먼트를 위한 물류센터 피킹 설비 최적화에 대한 연구 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-915.md](references/ref-915.md) | 참고문헌 ref-915 등록: CJ대한통운이 뽑은 물류자동화 혁신 기술 '톱3' |
+| 2026-09-29-11 | 생성 | [docs/references/ref-916.md](references/ref-916.md) | 참고문헌 ref-916 등록: Amazon launches a new AI foundation model to power its robot… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-917.md](references/ref-917.md) | 참고문헌 ref-917 등록: 쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이... |
+| 2026-09-29-11 | 생성 | [docs/references/ref-918.md](references/ref-918.md) | 참고문헌 ref-918 등록: ‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-919.md](references/ref-919.md) | 참고문헌 ref-919 등록: 인증스마트물류센터 : 인증심사 > 심사기준 > 일반 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-920.md](references/ref-920.md) | 참고문헌 ref-920 등록: CJ대한통운 안성 MP허브, 국토부 ‘스마트물류센터 1등급’ 인증 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-921.md](references/ref-921.md) | 참고문헌 ref-921 등록: DHL Makes First Commercial Deployment of Boston Dynamics Str… |
+| 2026-09-29-11 | 생성 | [docs/glossary/goods-to-person.md](glossary/goods-to-person.md) | 용어집 항목 상품-대-사람 |
+| 2026-09-29-11 | 생성 | [docs/glossary/shuttle-based-storage-and-retrieval-system.md](glossary/shuttle-based-storage-and-retrieval-system.md) | 용어집 항목 셔틀 기반 저장·회수 시스템 |
+| 2026-09-29-11 | 생성 | [docs/glossary/amr-assisted-order-picking.md](glossary/amr-assisted-order-picking.md) | 용어집 항목 AMR 협업 피킹 |
+| 2026-09-29-11 | 생성 | [docs/glossary/smart-logistics-center-certification.md](glossary/smart-logistics-center-certification.md) | 용어집 항목 스마트물류센터 인증 |
 | 2026-09-29-10 | 갱신 | [docs/categories/planning-and-business/technology-market-and-vendor-trends.md](categories/planning-and-business/technology-market-and-vendor-trends.md) | 섹션 3~11 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 표준 3건, 자료 10건, 경계 2행, 연결 9개, 열린 질문 4건), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주. 2차: 11절 첫 문장 괄호 정리, 4절 'IT/OT 융합' 표기 통일, 5절 사례 제목의 AMR·RMAC 과 9절 IFR 약어 풀이 |
 | 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s6.md](topics/2026/2026-09-29-area01-s6.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "6. 대표 접근법과 기술" 절(2,471자)을 옮겼다. 2차: '시장 통계 추적' 첫 단락을 세 단락으로 나눔(내용·태그·각주 동일) |
 | 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s8.md](topics/2026/2026-09-29-area01-s8.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "8. 대표 연구와 자료" 절(1,493자)을 옮겼다. 2차: IFR 동향 항목의 'IT/OT 융합' 표기 통일 |
