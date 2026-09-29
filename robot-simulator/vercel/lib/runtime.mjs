@@ -54,6 +54,7 @@ async function boot(sandbox, minutes, entrySecret) {
 export async function launch(token, config, dependencies = {}) {
   const {find = findSession, load = loadSession, create = options => Sandbox.create(options), start = boot, wait = ready} = dependencies;
   const {items, item} = await find(token);
+  if (item?.tags?.access !== 'password-v1' && item) return {status:409,error:'이전 버전의 실행 공간이 열려 있습니다. 필요한 결과를 저장한 뒤 시뮬레이션 종료를 누르고 다시 시작해 주세요.'};
   if (item) {
     const existing = await load(item);
     if (existing) return runtimeEntry(await wait(existing),token,existing.name,config.access);

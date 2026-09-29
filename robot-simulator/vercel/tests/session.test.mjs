@@ -25,7 +25,7 @@ test('unique slots roll over on UTC day and stay bounded',()=>{
   assert.deepEqual(slotNames(2,new Date('2026-09-29T00:00:00Z')),['rop-20260929-00','rop-20260929-01']);
 });
 test('an existing session is reused without creating or rebooting it',async()=>{
-  const result=await launch('a',config,fake({find:async()=>({items:[],item:{name:'mine'}}),wait:async()=>({url:'mine'}),create:async()=>assert.fail(),start:async()=>assert.fail()}));
+  const result=await launch('a',config,fake({find:async()=>({items:[],item:{name:'mine',tags:{access:'password-v1'}}}),wait:async()=>({url:'mine'}),create:async()=>assert.fail(),start:async()=>assert.fail()}));
   assert.ok(result.url.startsWith('mine/access/start#entry='));
 });
 test('active capacity does not allocate another machine',async()=>{
@@ -57,4 +57,9 @@ test('first status request only sets a secure cookie; it never allocates',async(
 });
 test('cross origin start is rejected before any cloud call',async()=>{
   const res=response();await handler({method:'POST',headers:{host:'robot.example',origin:'https://evil.example'}},res);assert.equal(res.code,403);
+});
+
+test('legacy runtimes require explicit user termination; never silently discard or claim protected access',async()=>{
+ const result=await launch('a',config,fake({find:async()=>({items:[],item:{name:'legacy',tags:{}}}),load:async()=>assert.fail(),create:async()=>assert.fail()}));
+ assert.equal(result.status,409);assert.match(result.error,/결과를 저장/);
 });
