@@ -27,7 +27,7 @@ sources: [ref-003, ref-162, ref-031, ref-044, ref-148, ref-228, ref-105, ref-040
 <!-- auto:category-area-table:start -->
 | 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 | 페이지 | 현재 상태 |
 |---|---|---|---|---|
-| **4. 이기종 로봇 등록** | 서로 다른 제조사의 로봇을 문서 근거와 함께 등록하고, 사람이 검토·승인한다 | 제조사도 형식도 다른 로봇을 어떻게 빠르고 믿을 수 있게 등록할 것인가? | [4. 이기종 로봇 등록](heterogeneous-robot-registration.md) | seed |
+| **4. 이기종 로봇 등록** | 서로 다른 제조사의 로봇을 문서 근거와 함께 등록하고, 사람이 검토·승인한다 | 제조사도 형식도 다른 로봇을 어떻게 빠르고 믿을 수 있게 등록할 것인가? | [4. 이기종 로봇 등록](heterogeneous-robot-registration.md) | published |
 | **5. 로봇 능력·작업 표현** | 능력·작업 요구·환경 조건을 공통 어휘로 표현하고 기존 표준과 맞춘다 | 로봇이 할 수 있는 일과 작업이 요구하는 조건을 어떻게 같은 말로 표현할 것인가? | [5. 로봇 능력·작업 표현](robot-capability-and-task-representation.md) | published |
 | **6. 온톨로지 기반 시스템·로봇 연동** | 온톨로지로 수행 가능한 로봇을 찾고, 능력을 실제 명령에 묶고, 연동 설정을 자동으로 만든다 | 온톨로지를 이용해 새 로봇과 새 시스템을 손작업 없이 어떻게 연동할 것인가? | [6. 온톨로지 기반 시스템·로봇 연동](ontology-based-system-and-robot-integration.md) | seed |
 | **7. 온톨로지 검증·변경 관리** | 온톨로지가 빠짐없고 정확한지 검증하고, 문서·펌웨어가 바뀔 때 버전을 관리한다 | 온톨로지가 빠짐없고 정확한지, 문서가 바뀌면 무엇을 다시 확인할지 어떻게 알 것인가? | [7. 온톨로지 검증·변경 관리](ontology-verification-and-change-management.md) | seed |
@@ -127,7 +127,7 @@ graph LR
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 51건이다(논문 16건 · 기사·보고서 0건 · 업체 발표 0건 · 표준·오픈소스·기관 자료 35건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 60건이다(논문 19건 · 기사·보고서 1건 · 업체 발표 0건 · 표준·오픈소스·기관 자료 40건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -135,17 +135,17 @@ graph LR
 - [ref-239](../../references/ref-239.md) — Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF (발행 2026-06)
 - [ref-041](../../references/ref-041.md) — Naqvi, M. R. 외(Scientific Reports), Ontology-driven integration of advertised and operational capabilities in robots (발행 2025-10-02)
 - [ref-152](../../references/ref-152.md) — Meseguer Valenzuela, A., & Blanes Noguera, F., Task Allocation in Mobile Robot Fleets: A review (발행 2025-01)
+- [ref-875](../../references/ref-875.md) — Abolhasani, M. S., & Pan, R., Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation (발행 2024-12-10)
 - [ref-076](../../references/ref-076.md) — DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps (발행 2024-09)
 - [ref-224](../../references/ref-224.md) — Shaheer, M., Millan-Romera, J. A., Bavle, H., Giberna, M., Sanchez-Lopez, J. L., Civera, J., & Voos, H., Tightly Coupled SLAM with Imprecise Architectural Plans (발행 2024-08)
 - [ref-042](../../references/ref-042.md) — Aguado, E., Gomez, V., Hernando, M., Rossi, C., & Sanz, R., A survey of ontology-enabled processes for dependable robot autonomy (발행 2024-07)
+- [ref-465](../../references/ref-465.md) — Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., Toward a Method to Generate Capability Ontologies from Natural Language Descriptions (발행 2024-06)
 - [ref-238](../../references/ref-238.md) — Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies (발행 2024-04)
-- [ref-043](../../references/ref-043.md) — 신민종, 한영석, 정재윤, 자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계 (발행 2024)
-- [ref-038](../../references/ref-038.md) — Vieira da Silva, L. M., Köcher, A., & Fay, A., A Capability and Skill Model for Heterogeneous Autonomous Robots (발행 2022-09)
-- 그 밖에 6건
+- 그 밖에 9건
 
 **기사·보고서**
 
-- 아직 없음
+- [ref-870](../../references/ref-870.md) — 로봇신문, [기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막 (발행 2025-11-09)
 
 **업체 발표**
 
@@ -153,27 +153,27 @@ graph LR
 
 **표준·오픈소스·기관 자료**
 
+- [ref-874](../../references/ref-874.md) — OPC Foundation, OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integration (Version 1.02) (발행 2025-09-08)
+- [ref-872](../../references/ref-872.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025 (발행 2025-05-01)
+- [ref-198](../../references/ref-198.md) — IDTA(Industrial Digital Twin Association), IDTA 02047-1-0 Technical Data for AGV in Intralogistics (발행 2025-03)
 - [ref-240](../../references/ref-240.md) — ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules (발행 2024-02)
 - [ref-035](../../references/ref-035.md) — Plattform Industrie 4.0, Information Model for Capabilities, Skills & Services (발행 2022-11)
 - [ref-026](../../references/ref-026.md) — IEEE, IEEE 1872.2-2021 - IEEE Standard for Autonomous Robotics (AuR) Ontology (발행 2022)
 - [ref-044](../../references/ref-044.md) — GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0) (발행 2021-09-30)
 - [ref-025](../../references/ref-025.md) — IEEE, 1872-2015 - IEEE Standard Ontologies for Robotics and Automation (발행 2015)
-- [ref-290](../../references/ref-290.md) — NIST, DIGITAL TWINS FOR ADVANCED MANUFACTURING: THE STANDARDIZED APPROACH (발행 미확인)
-- [ref-287](../../references/ref-287.md) — Eclipse Foundation (eclipse-sparkplug GitHub), Sparkplug Specification — Chapter 5 Operational Behavior (Sparkplug_5_Operational_Behavior.adoc) (발행 미확인)
-- [ref-286](../../references/ref-286.md) — Open Robotics (open-rmf), rmf_internal_msgs — rmf_lift_msgs/msg/LiftState.msg (발행 미확인)
-- [ref-285](../../references/ref-285.md) — Open Robotics (open-rmf), rmf_internal_msgs — rmf_door_msgs/msg/DoorState.msg (발행 미확인)
-- [ref-284](../../references/ref-284.md) — Open Robotics, Lifts (integration_lifts) - Programming Multiple Robots with ROS 2 (발행 미확인)
-- 그 밖에 25건
+- [ref-873](../../references/ref-873.md) — Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소, aas-specs-api — Repository of the Asset Administration Shell Specification IDTA-01002 API (README) (발행 미확인)
+- [ref-871](../../references/ref-871.md) — Industrial Digital Twin Association (IDTA), IDTA 02006-3-0 Submodel Template: Digital Nameplate for Industrial Equipment (발행 미확인)
+- 그 밖에 30건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-25 · 갱신 · [B. 로봇 온톨로지](index.md) — 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, Mermaid 도식 포함), 참고 자료 절에 새 각주 33건 정의 추가, 프런트매터 sources 추가 (실행 2026-09-25-32)
-- 2026-09-25 · 요약 · [B. 로봇 온톨로지](index.md) — B. 공통 정보·환경 모델: 다른 대분류와의 연결 절 신규 작성(A·C·D·E·F·G 대분류와의 연결 27건, 1차 조건부 승인 수정 14건 이행) (실행 2026-09-25-32)
-- 2026-09-25 · 갱신 · [5. 로봇 능력·작업 표현](robot-capability-and-task-representation.md) — 영역 심화: 섹션 3~11 신규 작성, 페이지 상태 자동 영역 표식 추가, 트랙 반영 제안 3건(4·7·8절) 반영. 2차 수정: 10절 태그 2건 조정·ref-152 문장 분리, 3·9절 의견 주체 명시 (실행 2026-09-25-15)
-- 2026-09-25 · 생성 · [5. 로봇 능력·작업 표현 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-25-area05-s7.md) — 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,658자)을 옮겼다 (실행 2026-09-25-15)
-- 2026-09-25 · 생성 · [5. 로봇 능력·작업 표현 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area05-s6.md) — 자동 분리: 5. 로봇 능력·작업 온톨로지 의 "6. 대표 접근법과 기술" 절(1,396자)을 옮겼다 (실행 2026-09-25-15)
+- 2026-09-29 · 갱신 · [4. 이기종 로봇 등록](heterogeneous-robot-registration.md) — 영역 심화: 섹션 3~11 신규 작성(finding 26건 반영, 1차 조건부 승인 수정 13건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2. 출처 id ref-228 는 직전 실행과 충돌하므로 퍼블리셔가 새 id 를 부여해야 한다 (실행 2026-09-29-07)
+- 2026-09-29 · 생성 · [4. 이기종 로봇 등록 — 핵심 개념과 용어](../../topics/2026/2026-09-29-area04-s4.md) — 자동 분리: 4. 이기종 로봇 등록 의 "4. 핵심 개념과 용어" 절(2,184자)을 옮겼다 (실행 2026-09-29-07)
+- 2026-09-29 · 생성 · [4. 이기종 로봇 등록 — 대표 접근법과 기술](../../topics/2026/2026-09-29-area04-s6.md) — 자동 분리: 4. 이기종 로봇 등록 의 "6. 대표 접근법과 기술" 절(1,749자)을 옮겼다 (실행 2026-09-29-07)
+- 2026-09-29 · 생성 · [4. 이기종 로봇 등록 — 대표 연구와 자료](../../topics/2026/2026-09-29-area04-s8.md) — 자동 분리: 4. 이기종 로봇 등록 의 "8. 대표 연구와 자료" 절(1,238자)을 옮겼다 (실행 2026-09-29-07)
+- 2026-09-29 · 생성 · [4. 이기종 로봇 등록 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-29-area04-s7.md) — 자동 분리: 4. 이기종 로봇 등록 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,149자)을 옮겼다 (실행 2026-09-29-07)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

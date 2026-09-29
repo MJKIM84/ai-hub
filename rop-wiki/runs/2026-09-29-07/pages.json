@@ -1,0 +1,663 @@
+{
+  "run_id": "2026-09-29-07",
+  "outline": [
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "세 발행 기관이 제조사 제공 기계가독 등록 기록을 정하며 제조사명·기종·일련번호가 공통으로 보인다. [추정][^ref-228][^ref-230][^ref-871] 플릿 등록은 어댑터 설정 파일과 로봇 API 구현의 두 부분으로 이루어진다. [사실][^ref-153][^ref-869]",
+      "planned_findings": [
+        "f7",
+        "f14",
+        "f15",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1100,
+      "summary": "팩트시트·디지털 명판·AGV 기술 데이터 서브모델·신원 보고·레지스트리·URDF·온톨로지 채우기·어댑터 설정을 정의한다. [사실][^ref-228] [추정][^ref-871]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f5",
+        "f4",
+        "f6",
+        "f10",
+        "f19",
+        "f12"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1300,
+      "summary": "병원 사례 2건(타르투대학교병원 검체 운반, 싱가포르 RoMi-H 등재)과 기타(인천공항, 벤더 주장). [사실][^ref-869][^ref-872] [추정] 벤더 주장[^ref-870]",
+      "planned_findings": [
+        "f13",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "팩트시트 요청·신원 보고, 자산관리셸 경로(추정), 어댑터 설정+API, 문서·URDF 추출과 사람 검토, 표준 문서의 AI 가독 형식. [사실][^ref-031][^ref-153][^ref-239][^ref-465][^ref-875][^ref-874] [추정][^ref-873]",
+      "planned_findings": [
+        "f3",
+        "f6",
+        "f11",
+        "f10",
+        "f12",
+        "f14",
+        "f19",
+        "f20",
+        "f21",
+        "f22",
+        "f23",
+        "f9"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 900,
+      "summary": "VDA 5050 팩트시트, IDTA 02047, IDTA 02006, MassRobotics, OPC UA Robotics, 자산관리셸 API, Open-RMF 플릿 어댑터, RoMi-H 등재 프로그램 표. [사실][^ref-228][^ref-198][^ref-230][^ref-874][^ref-873][^ref-153][^ref-872]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f8",
+        "f10",
+        "f12",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 750,
+      "summary": "병원 현장 시험 전문, 언어 모델 추출 연구 3건(arXiv 초록), 국내 자산관리셸 설계 연구(KCI 초록). [사실][^ref-869][^ref-239][^ref-465][^ref-875][^ref-043]",
+      "planned_findings": [
+        "f13",
+        "f19",
+        "f20",
+        "f21",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 700,
+      "summary": "등록부·수집 경로·검토 승인 기록·어댑터 설정 초안·승인 관문은 직접 범위로 보이고, 위치추정·주행 방식·펌웨어 성능은 제조사 소유 연계 대상이다. [추정][^ref-031][^ref-198][^ref-153][^ref-872] [추정][^ref-228][^ref-031]",
+      "planned_findings": [
+        "f24",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 800,
+      "summary": "5·6·7·20·21·45·47·55·57·63 영역과 매뉴얼 기반 로봇 기능 온톨로지 트랙에 연결한다. [추정][^ref-239][^ref-198][^ref-153]",
+      "planned_findings": [
+        "f26",
+        "f13",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 600,
+      "summary": "oq-128 은 국내 설계 연구·벤더 소개만 확인되어 미해결이며 새 질문 4건을 올린다. [추정][^ref-043][^ref-870]",
+      "planned_findings": [
+        "f18",
+        "f23",
+        "f7",
+        "f15",
+        "f12"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 섹션 3~11 신규 작성(finding 26건 반영, 1차 조건부 승인 수정 13건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2. 출처 id ref-228 는 직전 실행과 충돌하므로 퍼블리셔가 새 id 를 부여해야 한다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"4. 핵심 개념과 용어\" 절(2,184자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"6. 대표 접근법과 기술\" 절(1,749자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"8. 대표 연구와 자료\" 절(1,238자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,149자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"11. 열린 질문\" 절(1,109자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(805자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area04-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 4. 이기종 로봇 등록 의 \"3. 왜 중요한가\" 절(734자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-29 | 4. 이기종 로봇 등록 | 영역 심화: 섹션 3~11 신규 작성(병원 사례 2건·기타 1건, 표준 8종, 언어 모델 추출 연구 3건), 1차 조건부 승인 수정 13건 이행 | run 2026-09-29-07",
+  "index_updates": {
+    "home_recent": "2026-09-29 — 4. 이기종 로봇 등록: 영역 심화로 3~11절 신규 작성. VDA 5050 팩트시트·자산관리셸 서브모델·MassRobotics 신원 보고의 등록 항목, Open-RMF 어댑터 설정과 병원 현장 등록 사례, 문서·URDF 능력 추출과 사람 검토 연구를 정리했다",
+    "category_recent": "2026-09-29 — 4. 이기종 로봇 등록: 영역 심화, 3~11절 신규 작성(신뢰도 medium, 새 출처 15건, 새 열린 질문 4건, oq-128 은 미해결)",
+    "area_recent": "2026-09-29 — 실행 2026-09-29-07: 3~11절 신규 작성. 1차 조건부 승인 수정 13건 이행(디지털 명판·세 형식 공통 항목 강등, OPC UA 식별 속성 축소, 벤더 주장 병기)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "digital-nameplate",
+      "term_ko": "디지털 명판",
+      "term_en": "Digital Nameplate (IDTA 02006)",
+      "definition": "제조사명·제품명·일련번호·제조일과 하드웨어·펌웨어·소프트웨어 버전 같은 식별·버전 항목을 담는 자산관리셸 서브모델로, 산업 장비의 명판 정보를 기계가독 형식으로 교환하게 한다.",
+      "description": "IDTA 02006 3.0 판의 필수·선택 항목 구분은 이번 실행에서 확인하지 못했다(미확인). 로봇 등록 시 제조사 제공 식별 기록의 한 형식이다.",
+      "related_areas": [
+        4,
+        21,
+        57
+      ],
+      "sources": [
+        "ref-871"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "agv-technical-data-submodel",
+      "term_ko": "AGV 기술 데이터 서브모델",
+      "term_en": "Technical Data for AGV in Intralogistics (IDTA 02047)",
+      "definition": "실내 물류용 AGV·AMR 의 유형·기술 매개변수·VDA 5050 팩트시트·에너지·통신·배터리·안전·임시 기술 데이터를 컬렉션으로 나눠 담는 자산관리셸 서브모델 템플릿이다.",
+      "description": "IDTA 02047-1-0(2025-03). 혼합 플릿을 중앙 관제에 통합하고 시운전·운영·유지보수에 걸쳐 쓰는 것을 목표로 한다.",
+      "related_areas": [
+        4,
+        5,
+        21
+      ],
+      "sources": [
+        "ref-198"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "urdf",
+      "term_ko": "통합 로봇 기술 형식",
+      "term_en": "Unified Robot Description Format (URDF)",
+      "definition": "로봇의 링크와 관절로 구조·운동학·물리 속성을 기술하는 ROS 계열의 XML 형식으로, 식별자 자체에는 의미가 없어 온톨로지로 옮기려면 해석이 필요하다.",
+      "description": "URDF 공식 문서는 이번 실행에서 열지 못했고, 정의는 URDF 온톨로지 채우기 연구의 초록에 기댄다.",
+      "related_areas": [
+        4,
+        5,
+        45
+      ],
+      "sources": [
+        "ref-239"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "aas-registry-and-discovery",
+      "term_ko": "자산관리셸 레지스트리·디스커버리",
+      "term_en": "AAS Registry / Discovery",
+      "definition": "자산관리셸 API 명세(IDTA-01002)가 정한 서비스로, 등록된 자산관리셸과 서브모델의 서술자를 관리하고 자산 식별자로 해당 자산관리셸을 찾게 한다.",
+      "description": "IDTA-01002 3.2.0 판은 AAS·서브모델 저장소, AAS·서브모델 레지스트리, 디스커버리, 개념 설명 저장소, AASX 파일 서버 등 서비스 명세 9종을 둔다. 디스커버리와 레지스트리를 부르는 순서는 원문 미열람으로 미확인.",
+      "related_areas": [
+        4,
+        6,
+        21
+      ],
+      "sources": [
+        "ref-873"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "ontology-population",
+      "term_ko": "온톨로지 채우기",
+      "term_en": "Ontology Population",
+      "definition": "이미 정해진 온톨로지의 개념·관계에 맞춰 문서·모델 파일 같은 원천에서 개체와 관계 인스턴스를 뽑아 채우는 작업으로, 언어 모델을 쓸 때는 검증과 사람 검토를 함께 둔다.",
+      "description": "URDF 를 언어 모델로 해석해 로봇 온톨로지를 채우는 연구는 여러 번 질의한 다수결과 구문·스키마 검증으로 출력을 제약한다.",
+      "related_areas": [
+        4,
+        45,
+        47
+      ],
+      "sources": [
+        "ref-239"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-228",
+      "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+      "title": "VDA5050/json_schemas/factsheet.schema (main)",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "VDA 5050 팩트시트 메시지의 JSON 스키마 원본. 필수·선택 속성과 typeSpecification·physicalParameters 필드 정의를 담는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-198",
+      "org": "Industrial Digital Twin Association (IDTA)",
+      "title": "IDTA 02047-1-0 Submodel Template: Technical Data for AGV in Intralogistics",
+      "published": "2025-03",
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "실내 물류 AGV·AMR 의 기술 데이터를 자산관리셸 서브모델로 표준화한 명세. VDA 5050 팩트시트 컬렉션을 포함하고 혼합 플릿의 중앙 관제 통합을 목표로 한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-230",
+      "org": "MassRobotics (AMR Interoperability Working Group)",
+      "title": "AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema",
+      "published": null,
+      "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. identityReport·statusReport 메시지와 필수·선택 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-239",
+      "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
+      "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
+      "published": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.17073",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "URDF 모델을 언어 모델로 해석해 기존 온톨로지 개념에 맞춰 로봇 온톨로지를 자동으로 채우는 방법. 다수결과 구문·스키마 검증으로 출력을 제약한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-153",
+      "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+      "title": "Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "Open-RMF 플릿 어댑터를 만드는 튜토리얼. 플릿·로봇 설정 파일(config.yaml)의 항목과 로봇 측 RobotAPI 가 구현할 메서드를 적는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-869",
+      "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI",
+      "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+      "published": "2022-08-23",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "타르투대학교병원에서 Open-RMF 와 FreeFleet 으로 이기종 로봇을 등록·운용해 혈액 검체를 운반한 현장 시험. 등록 설정과 문 통과용 보조 장치를 기술한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-870",
+      "org": "로봇신문",
+      "title": "[기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막",
+      "published": "2025-11-09",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=43274",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-29",
+      "summary": "클로봇의 이기종 로봇 통합관제 솔루션 크롬스를 소개한 기사. 50대 이상 동시 제어·엘리베이터 탑승과 인천공항 다기종 로봇 사업 계약을 전한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-871",
+      "org": "Industrial Digital Twin Association (IDTA)",
+      "title": "IDTA 02006-3-0 Submodel Template: Digital Nameplate for Industrial Equipment",
+      "published": null,
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2025/10/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "산업 장비의 디지털 명판 서브모델 3.0 판 명세. 제조사·제품명·일련번호·제조일과 하드웨어·펌웨어·소프트웨어 버전 같은 식별·버전 항목을 둔다. 필수·선택 구분은 검증에서 미확인으로 남았다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-043",
+      "org": "신민종, 한영석, 정재윤 (한국디지털산업학회지 29(4))",
+      "title": "자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계",
+      "published": "2024",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "AMR 의 하드웨어·소프트웨어 정보를 자산관리셸로 기록해 JSON 으로 교환하고 OPC UA 로 감시하는 시스템 설계를 제안한 국내 논문. KCI 초록만 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": "2025-05-01",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "싱가포르 공공 의료기관의 로봇 통합 플랫폼 RoMi-H 에 시스템 통합사를 평가·등재하는 프로그램 공지. 등재 요건·유효 기간·등재 업체 5곳을 적는다(2026-08-24 갱신).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+      "title": "VDA5050_EN.md — VDA 5050 Interface for the communication between automated guided vehicles (AGV) and a master control (Version 3.0.0, main)",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "VDA 5050 명세 3.0.0 판 원문(마크다운). 팩트시트의 목적과 factsheetRequest 즉시 동작·factsheet 토픽을 통한 요청·게시 방식을 적는다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-873",
+      "org": "Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소",
+      "title": "aas-specs-api — Repository of the Asset Administration Shell Specification IDTA-01002 API (README)",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/aas-specs-api",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "자산관리셸 API 명세(IDTA-01002)의 공식 OpenAPI 저장소 README. 최신 3.2.0 판과 레지스트리·디스커버리를 포함한 서비스 명세 9종을 나열한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-874",
+      "org": "OPC Foundation",
+      "title": "OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integration (Version 1.02)",
+      "published": "2025-09-08",
+      "url": "https://reference.opcfoundation.org/Robotics/v100/docs/",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "산업용 로봇의 수직 통합·자산 관리·상태 감시를 위한 OPC UA 정보 모델(MotionDeviceSystem). MotionDevice 의 Manufacturer·Model·SerialNumber·ProductCode 식별 속성을 정의하고 AI 응용용 마크다운·RAG 청크 형식도 제공한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-465",
+      "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+      "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+      "published": "2024-10-18",
+      "url": "https://arxiv.org/abs/2406.07962",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "자연어 능력 설명을 소수 예시 프롬프트로 언어 모델에 넣어 능력 온톨로지를 생성하고 자동 검증 루프 뒤 사람이 최종 검토하는 방법. 초록만 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    },
+    {
+      "id": "ref-875",
+      "org": "Abolhasani, M. S., & Pan, R.",
+      "title": "Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation",
+      "published": "2024-12-10",
+      "url": "https://arxiv.org/abs/2412.00608",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "기술 문서에서 언어 모델로 온톨로지·지식 그래프를 추출하되 대화형 인터페이스에서 사용자가 최종 결정을 갖게 하는 OntoKGen 파이프라인. 초록만 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/heterogeneous-robot-registration.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "update",
+      "id": "oq-128",
+      "question": "국내 현장에서 VDA 5050 팩트시트나 자산관리셸 능력 기술을 로봇 등록 데이터로 실제 쓰는 사례가 있으며, 채팅 로봇 구성이 그 데이터를 읽어 되묻기를 줄일 수 있는가?",
+      "areas": [
+        10,
+        4,
+        21
+      ],
+      "status": "열림",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#11-열린-질문"
+    },
+    {
+      "action": "new",
+      "question": "문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가?",
+      "areas": [
+        4,
+        45,
+        7
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "VDA 5050 팩트시트·IDTA 02047 서브모델·MassRobotics identityReport 사이의 필드 대응표(예: maximumLoadMass 와 cargoMaxWeight)가 공식으로 제공되는가, ROP 등록부는 어느 형식을 정본으로 삼고 나머지를 어떻게 변환해야 하는가?",
+      "areas": [
+        4,
+        21,
+        5
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "싱가포르 공공 의료의 RoMi-H 등재 프로그램처럼 벤더·통합사를 사전 평가해 등록 자격을 주는 관문을 국내 병원·공공 현장에서 운용한 사례나 제도가 있는가?",
+      "areas": [
+        4,
+        63,
+        58
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "팩트시트·명판에 없는 능력(문 조작·승강기 탑승·인계 동작 등)을 등록할 때 Open-RMF 의 task_capabilities 나 자산관리셸 능력 기술 서브모델을 실제로 쓴 사례가 있는가?",
+      "areas": [
+        4,
+        5,
+        6
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "병원",
+      "item": "완료·인계",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    },
+    {
+      "site_type": "기타",
+      "item": "제약",
+      "link": "docs/categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시",
+      "title": "4. 이기종 로봇 등록"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "IDTA 02006 Digital Nameplate for Industrial Equipment (3.0)",
+      "kind": "표준",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "url": "https://industrialdigitaltwin.org/wp-content/uploads/2025/10/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf",
+      "related_areas": [
+        4,
+        21,
+        57
+      ],
+      "summary": "산업 장비의 식별·버전 항목을 담는 자산관리셸 디지털 명판 서브모델. 필수·선택 항목 구분은 이번 실행에서 미확인.",
+      "ref_id": "ref-871"
+    },
+    {
+      "name": "IDTA-01002 Asset Administration Shell Specification — API (3.2.0)",
+      "kind": "표준",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "url": "https://github.com/admin-shell-io/aas-specs-api",
+      "related_areas": [
+        4,
+        6,
+        21
+      ],
+      "summary": "자산관리셸 API 명세. AAS·서브모델 저장소, AAS·서브모델 레지스트리, 디스커버리, 개념 설명 저장소, AASX 파일 서버 등 서비스 명세 9종을 둔다.",
+      "ref_id": "ref-873"
+    },
+    {
+      "name": "RoMi-H Empanelment Programme (싱가포르 공공 의료기관 시스템 통합사 등재)",
+      "kind": "평가 프로그램",
+      "org": "Changi General Hospital CHART(Centre for Healthcare Assistive & Robotics Technology)",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "related_areas": [
+        4,
+        63,
+        58
+      ],
+      "summary": "Open-RMF 기반 RoMi-H 에 로봇을 연동할 시스템 통합사를 기술·배치 역량 평가로 등재하는 프로그램(2025-05-01 시행, 등재 2년 유효, 2026-08-24 기준 5곳).",
+      "ref_id": "ref-872"
+    }
+  ],
+  "additional_research_requests": [
+    "4절·7절 디지털 명판(IDTA 02006 3.0)의 정확한 필수·선택 속성 목록 — PDF 본문을 열어 YearOfConstruction·OrderCodeOfManufacturer 의 카디널리티 변경까지 확인해야 f5 를 [사실]로 되돌릴 수 있다",
+    "7절 OPC UA for Robotics(OPC 40010-1 1.02) ControllerType 의 식별 속성과 SoftwareRevision 유무 — 이번 검증이 열람 상한으로 확인하지 못해 본문에서 뺐다",
+    "4절·6절 IDTA 02047 서브모델의 개별 속성명과 VDA 5050 팩트시트 필드 대응 세부, 그리고 디지털 명판·기술 데이터 서브모델과의 연계 여부 — 검색 요약과 README 에서 확인하지 못해 서술을 컬렉션 이름 수준으로 제한했다",
+    "6절 자산관리셸 디스커버리·레지스트리 호출 순서(자산 ID→AAS ID→엔드포인트) — IDTA Part 2 원문 미열람으로 본문에 단정하지 않았다",
+    "5절 제조 공장·물류창고·상업 시설·가정·실외 현장의 이기종 로봇 등록 사례 — 제조 공장 후보(MDPI Applied Sciences 다중 브랜드 플릿 통합)는 403 으로 열지 못했다",
+    "5절 RoMi-H 등재 평가의 기술 항목(어댑터 시험·적합성 검사 등) — 공지에 없어 미확인",
+    "4절 URDF 공식 문서 — wiki.ros.org·docs.ros.org 를 열지 못해 URDF 정의를 arXiv 초록에 기댔다",
+    "11절 oq-128 국내 운영 사례 — 중기부 스마트공장 고도화 사업의 AAS 적용 의무화 문구가 검색 요약에만 보여 확인이 필요하다"
+  ],
+  "fixes_applied": [
+    "f5 강등 — 4절 디지털 명판 항목과 7절 표를 [추정][^ref-871]으로 쓰고 '필수 6개·선택 5개' 구분을 뺐으며 식별·버전 항목을 담는다는 수준으로만 서술하고 필수·선택 구분은 '미확인'으로 남겼다. 정확한 목록은 additional_research_requests 1번으로 넘겼다",
+    "용어집 '디지털 명판' 정의 수정 — glossary_updates 에서 필수·선택 구절을 지우고 식별·버전 항목을 담는 서브모델로 고쳤으며 description 에 필수·선택 미확인을 적었다",
+    "f7 강등 — 3절에서 세 형식의 공통 항목을 제조사명·기종(시리즈)·일련번호로 좁혀 [추정][^ref-228][^ref-230][^ref-871]으로 쓰고, 치수·최대 적재·최대 속도는 VDA 5050 팩트시트와 MassRobotics identityReport 두 형식의 공통 항목으로만 별도 문장([추정][^ref-228][^ref-230])에 썼다",
+    "f8 축소 — 7절 표의 OPC UA for Robotics 행에 MotionDevice 의 Manufacturer·Model·SerialNumber·ProductCode 네 가지만 [사실]로 쓰고 Controller 의 식별 속성과 SoftwareRevision 은 '미확인'으로 표시했다. reference_updates 의 ref-874 요약도 같은 범위로 고쳤다",
+    "f4 구절 제거 — 4절 AGV 기술 데이터 서브모델 항목과 7절 표에서 '디지털 명판·기술 데이터 서브모델과 연계' 구절을 빼고 7개 컬렉션 이름과 혼합 플릿 통합·시운전·운영·유지보수 목표만 [사실][^ref-198]으로 썼다",
+    "f9 표현 수정 — 6절 '표준 문서 자체의 기계가독 형식'에서 '배포하기 시작했다'를 '제공한다'로 썼다",
+    "f19·f20·f21 정량 결과 제외 — 6절·8절에 정확도 수치를 쓰지 않았고 6절에 '정량 결과는 초록에 없어 적지 않는다'고 밝혔으며 f22 는 [사실][^ref-239][^ref-465][^ref-875]으로 유지했다",
+    "f16 벤더 주장 병기 — 5절 기타 사례와 8절에서 [추정] 벤더 주장[^ref-870]으로 쓰고 '국내 첫 이기종 로봇 통합관제 솔루션'과 '50대 이상'을 기사 인용임을 밝혀 썼으며 VDA 5050 지원·연동 제조사 수·등록 방식은 쓰지 않았다",
+    "5절 현장 유형 명시 — 병원 2건(타르투대학교병원 검체 운반 f13, RoMi-H 등재 f15)과 기타 1건(인천공항 f16)을 각각 현장 유형·사례·여섯 항목 표·서술로 썼고, 물류창고·제조 공장·상업 시설·가정·실외 사례는 확인되지 않았음을 절 첫 문장에 적었으며, site_matrix_updates 의 site_type 을 병원·기타로만 냈다",
+    "9절 경계 — f24·f25 를 [추정]으로만 쓰고 f25 의 위치추정·주행 방식·펌웨어 버전은 '연계 대상:' 단락에서 분류 원문 19장 '로봇 자체 지능·제어' 행의 연계 대상으로 짧게 다뤘다",
+    "11절 열린 질문 — oq-128 을 해결로 바꾸지 않고 f17·f18 로 부분 진전(국내 설계 연구·벤더 소개만 확인, 운영 사례 미확인)임을 적었으며 open_questions_new 4건을 브리프 형식대로 open_question_updates 에 new 로 등록했다(근거 f23·f7·f15·f12)",
+    "f11·f23 유지 — 6절에서 둘 다 [추정]으로 쓰고 '확인되지 않았다'는 서술을 남겼으며, f11 의 자산 ID→AAS ID→엔드포인트 순서는 '원문을 열지 못해 단정하지 않는다'고 적었다",
+    "각주 표기 — 8절에서 ref-239·ref-465·ref-875 은 arXiv 초록으로, ref-043 은 KCI 초록만 확인했음을 밝혔고, ref-198·ref-871 의 각주 정의에 ' (원문 미열람)'을 붙이지 않았다",
+    "분량 초과 자동 분리: 4. 이기종 로봇 등록 본문 11,446자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,109자"
+  ]
+}

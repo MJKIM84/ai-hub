@@ -23,7 +23,7 @@ version: 1
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
 | [A. 기획·사업](categories/planning-and-business/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
+| [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
@@ -54,7 +54,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | seed | — | 2026-09-28 | 1 |
+| [4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | 2026-09-29 | 2 |
 | [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | published | medium | 2026-09-25 | 2 |
 | [6. 온톨로지 기반 시스템·로봇 연동](categories/robot-ontology/ontology-based-system-and-robot-integration.md) | seed | — | 2026-09-28 | 1 |
 | [7. 온톨로지 검증·변경 관리](categories/robot-ontology/ontology-verification-and-change-management.md) | seed | — | 2026-09-28 | 1 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 94회 중 최종 통과 94회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 94
-- 2차 검증 판정: 통과 94
+- 실행 95회 중 최종 통과 95회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 95
+- 2차 검증 판정: 통과 95
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 395 |
+| 논문 | 397 |
 | 오픈소스 문서 | 189 |
-| 표준 | 149 |
-| 정부·연구기관 | 62 |
+| 표준 | 152 |
+| 정부·연구기관 | 63 |
 | 벤더 문서 | 42 |
-| 기사 | 23 |
+| 기사 | 24 |
 | 업계 보고서 | 8 |
 
-신뢰도: medium 660건, high 144건, low 64건
+신뢰도: medium 662건, high 148건, low 65건
 
 ### 현장 유형 매트릭스 채움률
 
-- 18/119 칸 (15%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 20/119 칸 (17%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

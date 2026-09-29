@@ -20,6 +20,28 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-07 | 갱신 | [docs/categories/robot-ontology/heterogeneous-robot-registration.md](categories/robot-ontology/heterogeneous-robot-registration.md) | 영역 심화: 섹션 3~11 신규 작성(finding 26건 반영, 1차 조건부 승인 수정 13건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2. 출처 id ref-228 는 직전 실행과 충돌하므로 퍼블리셔가 새 id 를 부여해야 한다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s4.md](topics/2026/2026-09-29-area04-s4.md) | 자동 분리: 4. 이기종 로봇 등록 의 "4. 핵심 개념과 용어" 절(2,184자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s6.md](topics/2026/2026-09-29-area04-s6.md) | 자동 분리: 4. 이기종 로봇 등록 의 "6. 대표 접근법과 기술" 절(1,749자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s8.md](topics/2026/2026-09-29-area04-s8.md) | 자동 분리: 4. 이기종 로봇 등록 의 "8. 대표 연구와 자료" 절(1,238자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s7.md](topics/2026/2026-09-29-area04-s7.md) | 자동 분리: 4. 이기종 로봇 등록 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,149자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s11.md](topics/2026/2026-09-29-area04-s11.md) | 자동 분리: 4. 이기종 로봇 등록 의 "11. 열린 질문" 절(1,109자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s10.md](topics/2026/2026-09-29-area04-s10.md) | 자동 분리: 4. 이기종 로봇 등록 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(805자)을 옮겼다 |
+| 2026-09-29-07 | 생성 | [docs/topics/2026/2026-09-29-area04-s3.md](topics/2026/2026-09-29-area04-s3.md) | 자동 분리: 4. 이기종 로봇 등록 의 "3. 왜 중요한가" 절(734자)을 옮겼다 |
+| 2026-09-29-07 | 요약 | [docs/categories/robot-ontology/heterogeneous-robot-registration.md](categories/robot-ontology/heterogeneous-robot-registration.md) | 4. 이기종 로봇 등록: 영역 심화: 섹션 3~11 신규 작성(병원 사례 2건·기타 1건, 표준 8종, 언어 모델 추출 연구 3건), 1차 조건부 승인 수정 13건 이행 |
+| 2026-09-29-07 | 생성 | [docs/references/ref-869.md](references/ref-869.md) | 참고문헌 ref-869 등록: Scalable and heterogenous mobile robot fleet-based task auto… |
+| 2026-09-29-07 | 생성 | [docs/references/ref-870.md](references/ref-870.md) | 참고문헌 ref-870 등록: [기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막 |
+| 2026-09-29-07 | 생성 | [docs/references/ref-871.md](references/ref-871.md) | 참고문헌 ref-871 등록: IDTA 02006-3-0 Submodel Template: Digital Nameplate for Indu… |
+| 2026-09-29-07 | 생성 | [docs/references/ref-872.md](references/ref-872.md) | 참고문헌 ref-872 등록: RoMi-H Empanelment Programme 2025 |
+| 2026-09-29-07 | 생성 | [docs/references/ref-873.md](references/ref-873.md) | 참고문헌 ref-873 등록: aas-specs-api — Repository of the Asset Administration Shell… |
+| 2026-09-29-07 | 생성 | [docs/references/ref-874.md](references/ref-874.md) | 참고문헌 ref-874 등록: OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integrat… |
+| 2026-09-29-07 | 생성 | [docs/references/ref-875.md](references/ref-875.md) | 참고문헌 ref-875 등록: Leveraging LLM for Automated Ontology Extraction and Knowled… |
+| 2026-09-29-07 | 생성 | [docs/glossary/digital-nameplate.md](glossary/digital-nameplate.md) | 용어집 항목 디지털 명판 |
+| 2026-09-29-07 | 생성 | [docs/glossary/agv-technical-data-submodel.md](glossary/agv-technical-data-submodel.md) | 용어집 항목 AGV 기술 데이터 서브모델 |
+| 2026-09-29-07 | 생성 | [docs/glossary/urdf.md](glossary/urdf.md) | 용어집 항목 통합 로봇 기술 형식 |
+| 2026-09-29-07 | 생성 | [docs/glossary/aas-registry-and-discovery.md](glossary/aas-registry-and-discovery.md) | 용어집 항목 자산관리셸 레지스트리·디스커버리 |
+| 2026-09-29-07 | 생성 | [docs/glossary/ontology-population.md](glossary/ontology-population.md) | 용어집 항목 온톨로지 채우기 |
+| 2026-09-29-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-29-06 | 갱신 | [docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | 3~11절 신규 작성(seed → draft), 출처 19건(ref-855~ref-868 신규, ref-351·ref-840·ref-165·ref-753 재사용), 상업 시설 사례 1건, 열린 질문 4건 추가, 1차 조건부 승인 수정 7건 이행 |
 | 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s6.md](topics/2026/2026-09-29-area13-s6.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "6. 대표 접근법과 기술" 절(3,607자)을 옮겼다 |
 | 2026-09-29-06 | 생성 | [docs/topics/2026/2026-09-29-area13-s8.md](topics/2026/2026-09-29-area13-s8.md) | 자동 분리: 13. 대화형 기능의 신뢰·기반 의 "8. 대표 연구와 자료" 절(1,988자)을 옮겼다 |

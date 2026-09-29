@@ -21,6 +21,13 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-29 | [4. 이기종 로봇 등록 — 다른 연구영역과의 연결](2026/2026-09-29-area04-s10.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 열린 질문](2026/2026-09-29-area04-s11.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 왜 중요한가](2026/2026-09-29-area04-s3.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 핵심 개념과 용어](2026/2026-09-29-area04-s4.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 대표 접근법과 기술](2026/2026-09-29-area04-s6.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area04-s7.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
+| 2026-09-29 | [4. 이기종 로봇 등록 — 대표 연구와 자료](2026/2026-09-29-area04-s8.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 다른 연구영역과의 연결](2026/2026-09-29-area08-s10.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 열린 질문](2026/2026-09-29-area08-s11.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 왜 중요한가](2026/2026-09-29-area08-s3.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |

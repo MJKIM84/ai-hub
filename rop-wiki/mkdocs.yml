@@ -320,6 +320,13 @@ nav:
       - 8. 채팅으로 맵 작성 — 왜 중요한가: topics/2026/2026-09-29-area08-s3.md
       - 8. 채팅으로 맵 작성 — 열린 질문: topics/2026/2026-09-29-area08-s11.md
       - 8. 채팅으로 맵 작성 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area08-s10.md
+      - 4. 이기종 로봇 등록 — 대표 연구와 자료: topics/2026/2026-09-29-area04-s8.md
+      - 4. 이기종 로봇 등록 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area04-s7.md
+      - 4. 이기종 로봇 등록 — 대표 접근법과 기술: topics/2026/2026-09-29-area04-s6.md
+      - 4. 이기종 로봇 등록 — 핵심 개념과 용어: topics/2026/2026-09-29-area04-s4.md
+      - 4. 이기종 로봇 등록 — 왜 중요한가: topics/2026/2026-09-29-area04-s3.md
+      - 4. 이기종 로봇 등록 — 열린 질문: topics/2026/2026-09-29-area04-s11.md
+      - 4. 이기종 로봇 등록 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area04-s10.md
       - 48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-26-area25-s7.md
       - 39. 운영 성과 측정·개선 — 다른 연구영역과의 연결: topics/2026/2026-09-26-area04-s10.md
       - 로봇 관제 인터페이스의 적재·하역 보고와 화물 인계 확인: topics/2026/2026-09-25-robot-load-reporting-handover-confirmation.md
@@ -468,6 +475,7 @@ nav:
   - 용어집:
     - glossary/index.md
     - 5G 특화망(이음5G) (Private 5G Network (e-Um 5G)): glossary/private-5g-network.md
+    - AGV 기술 데이터 서브모델 (Technical Data for AGV in Intralogistics (IDTA 02047)): glossary/agv-technical-data-submodel.md
     - AI 관리 시스템 (Artificial Intelligence Management System (AIMS)): glossary/artificial-intelligence-management-system.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
@@ -530,6 +538,7 @@ nav:
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
     - 등각 예측 (Conformal Prediction): glossary/conformal-prediction.md
     - 디스펜서·인제스터 (Dispenser / Ingestor): glossary/dispenser-ingestor.md
+    - 디지털 명판 (Digital Nameplate (IDTA 02006)): glossary/digital-nameplate.md
     - 디지털 섀도 (Digital Shadow): glossary/digital-shadow.md
     - 디지털 스레드 (Digital Thread): glossary/digital-thread.md
     - 디지털 트윈 (Digital Twin): glossary/digital-twin.md
@@ -611,6 +620,7 @@ nav:
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
+    - 온톨로지 채우기 (Ontology Population): glossary/ontology-population.md
     - 완전 정보의 기대 가치 (Expected Value of Perfect Information (EVPI)): glossary/expected-value-of-perfect-information.md
     - 완전 주문 이행률 (Perfect Order Fulfillment): glossary/perfect-order-fulfillment.md
     - 요구 능력·제공 능력 (Required Capability / Provided (Offered) Capability): glossary/required-and-provided-capability.md
@@ -635,6 +645,7 @@ nav:
     - 자동 시뮬레이션 모델 생성 (Automatic Simulation Model Generation (ASMG)): glossary/automatic-simulation-model-generation.md
     - 자동화 편향 (Automation Bias): glossary/automation-bias.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
+    - 자산관리셸 레지스트리·디스커버리 (AAS Registry / Discovery): glossary/aas-registry-and-discovery.md
     - 자원 제약 프로젝트 스케줄링 문제 (Resource-Constrained Project Scheduling Problem (RCPSP)): glossary/resource-constrained-project-scheduling-problem.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
@@ -663,6 +674,7 @@ nav:
     - 키 입력 수준 모델 (Keystroke-Level Model (KLM)): glossary/keystroke-level-model.md
     - 탈옥 (Jailbreak): glossary/jailbreak.md
     - 통과 가능성 (Traversability): glossary/traversability.md
+    - 통합 로봇 기술 형식 (Unified Robot Description Format (URDF)): glossary/urdf.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 파놉틱 품질 (Panoptic Quality (PQ)): glossary/panoptic-quality.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
@@ -1644,6 +1656,13 @@ nav:
     - 'ref-867 — How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement': references/ref-867.md
     - ? 'ref-868 — Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents'
       : references/ref-868.md
+    - ref-869 — Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test: references/ref-869.md
+    - ref-870 — [기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막: references/ref-870.md
+    - 'ref-871 — IDTA 02006-3-0 Submodel Template: Digital Nameplate for Industrial Equipment': references/ref-871.md
+    - ref-872 — RoMi-H Empanelment Programme 2025: references/ref-872.md
+    - ref-873 — aas-specs-api — Repository of the Asset Administration Shell Specification IDTA-01002 API (README): references/ref-873.md
+    - 'ref-874 — OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integration (Version 1.02)': references/ref-874.md
+    - ref-875 — Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation: references/ref-875.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md
