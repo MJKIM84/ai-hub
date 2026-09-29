@@ -64,6 +64,18 @@ class PedestrianSafety:
             result=(execution or {}).get('result') or {}
             if (not execution or execution['terminal'] or execution['released'] or execution['committed']
                     or result.get('phase')!='transport' or not result.get('supported')):return False
+            # Loading departure is deliberately straight inside the donor's
+            # motion envelope. A detour turn here would be rejected by the
+            # cooperative base controller and permanently strand the carrier.
+            # Keep its route while the common person gate slows/stops it;
+            # detours resume after observed clearance from the stationary arm.
+            donor_id=execution['participants'].get('donor')
+            donor=owner.last_observations.get(donor_id) if donor_id else None
+            if donor and execution.get('loading_committed'):
+                if time-donor['sampled_at']>owner.policy.stale_after:return False
+                separation=math.hypot(obs['pose']['x']-donor['pose']['x'],obs['pose']['y']-donor['pose']['y'])
+                if separation<radius(robot)+radius(owner.robots[donor_id])+owner.policy.safety_distance:
+                    return False
             trip=state.get('trip')
             if trip and trip['phase']!='approach':return False
             goal=trip['staging'] if trip else result.get('navigation_target')

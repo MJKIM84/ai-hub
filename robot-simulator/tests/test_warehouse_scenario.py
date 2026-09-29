@@ -91,3 +91,21 @@ def test_cancelled_loading_approach_holds_carrier_and_keeps_recovery_reservation
     assert command['v'] == command['w'] == 0
     assert execution['terminal'] and not execution['released']
     assert session.orchestrator.tasks[task.id]['status'] == 'cancelled'
+
+
+def test_person_detour_does_not_replace_reserved_straight_departure_near_donor():
+    from robot_platform.runtime import Session
+    sample = example("warehouse-cooperation")
+    session = Session(sample)
+    owner = session.orchestrator
+    rid = 'outbound-cart'
+    owner.robot_states[rid].update(status='cooperating',task_id='return-delivery')
+    route = [dict(x=13.048,y=3,z=.3,yaw=0,align=True),dict(x=13.848,y=3,z=.3,yaw=0)]
+    execution = dict(terminal=False,released=False,committed=False,loading_committed=True,
+        participants=dict(carrier=rid,donor='receiver',receiver='final-arm'),route=route,
+        result=dict(phase='transport',supported=True,navigation_target=route[-1]))
+    session.cooperative.executions['return-delivery'] = execution
+    owner.last_observations = {'receiver': dict(sampled_at=1.,pose=dict(x=9.5,y=3.8,z=0))}
+    observation = dict(pose=dict(x=10.688,y=3,z=.3,yaw=0),sampled_at=1.)
+    assert not owner.pedestrian_safety.detour(rid,observation,1.,[])
+    assert execution['route'] is route

@@ -1,7 +1,7 @@
 import type {Project,RunState} from './types';
 import './cargo-progress.css';
 
-const phases:Record<string,string>={loading:'파지·상차',await_load:'적재 지지 확인',transport:'적재 운반',settle:'인계 지점 정차',await_receiver:'인수 준비',handoff_grasp:'인수 팔 파지',separating:'적재면에서 분리',confirm_handoff:'배치·지지·접촉 해제 확인'};
+const phases:Record<string,string>={loading_approach:'예약된 상차 위치로 접근',loading:'파지·상차',await_load:'적재 지지 확인',transport:'적재 운반',settle:'인계 지점 정차',await_receiver:'인수 준비',handoff_grasp:'인수 팔 파지',separating:'적재면에서 분리',confirm_handoff:'배치·지지·접촉 해제 확인'};
 const labels:Record<string,string>={pending:'시작 전',waiting:'선행 작업 대기',running:'진행 중',completed:'완료',failed:'실패',cancelled:'취소',skipped:'미실행'};
 
 export function CargoProgress({project,state,onFocus}:{project:Project;state:RunState;onFocus:(id:string)=>void}) {

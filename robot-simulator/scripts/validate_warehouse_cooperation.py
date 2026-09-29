@@ -36,8 +36,12 @@ def main():
     for before, after in [("delivery", "inbound-clear"), ("inbound-clear", "outbound-approach"),
                           ("outbound-approach", "return-delivery")]:
         assert rows[before]["completed_at"] <= rows[after]["started_at"]
+    positions = {rid: [next(r for r in frame["robots"] if r["id"] == rid)["pose"]["x"]
+                       for frame in trace] for rid in ("cart", "outbound-cart")}
+    assert max(positions["cart"]) < 11, "Inbound carrier entered the outbound-only zone"
+    assert min(positions["outbound-cart"]) > 8, "Outbound carrier entered the inbound-only zone"
     loaded = [e for e in session.events if e["kind"] == "cooperation_loaded"]
-    assert len(loaded) == 2
+    assert [e["entity_id"] for e in loaded] == ["cart", "outbound-cart"]
     clearance = session.metrics()["pedestrian_min_clearance_m"]
     assert all(value is not None and value >= .5 for value in clearance.values())
     for person in project.people:
