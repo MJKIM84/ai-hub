@@ -112,6 +112,13 @@ version: 1
 | 2026-09-29 | [63. 병원·의료 — 대표 접근법과 기술](2026/2026-09-29-area63-s6.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
 | 2026-09-29 | [63. 병원·의료 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area63-s7.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
 | 2026-09-29 | [63. 병원·의료 — 대표 연구와 자료](2026/2026-09-29-area63-s8.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 다른 연구영역과의 연결](2026/2026-09-29-area64-s10.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 열린 질문](2026/2026-09-29-area64-s11.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 왜 중요한가](2026/2026-09-29-area64-s3.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 핵심 개념과 용어](2026/2026-09-29-area64-s4.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 대표 접근법과 기술](2026/2026-09-29-area64-s6.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area64-s7.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 대표 연구와 자료](2026/2026-09-29-area64-s8.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
 | 2026-09-26 | [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | — |
 | 2026-09-26 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [23. 업무 시스템 연동 — 열린 질문](2026/2026-09-25-area01-s11.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |

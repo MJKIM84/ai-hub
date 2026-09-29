@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 64. 상업 시설 — 대표 연구와 자료: topics/2026/2026-09-29-area64-s8.md
+      - 64. 상업 시설 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area64-s7.md
+      - 64. 상업 시설 — 대표 접근법과 기술: topics/2026/2026-09-29-area64-s6.md
+      - 64. 상업 시설 — 핵심 개념과 용어: topics/2026/2026-09-29-area64-s4.md
+      - 64. 상업 시설 — 왜 중요한가: topics/2026/2026-09-29-area64-s3.md
+      - 64. 상업 시설 — 열린 질문: topics/2026/2026-09-29-area64-s11.md
+      - 64. 상업 시설 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area64-s10.md
       - 63. 병원·의료 — 대표 연구와 자료: topics/2026/2026-09-29-area63-s8.md
       - 63. 병원·의료 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area63-s7.md
       - 63. 병원·의료 — 대표 접근법과 기술: topics/2026/2026-09-29-area63-s6.md
@@ -576,6 +583,7 @@ nav:
     - 다중 로봇 작업 배정 (MRTA): glossary/mrta.md
     - 다중 에이전트 경로 찾기 (MAPF): glossary/mapf.md
     - 다중 에이전트 픽업·배송 (Multi-Agent Pickup and Delivery): glossary/multi-agent-pickup-and-delivery.md
+    - 다중 운행 차량 경로 문제 (Multi-Trip Vehicle Routing Problem (MTVRP)): glossary/multi-trip-vehicle-routing-problem.md
     - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
     - 대조적 설명 (Contrastive Explanation): glossary/contrastive-explanation.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
@@ -593,6 +601,7 @@ nav:
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
     - 로봇 밀도 (Robot Density): glossary/robot-density.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
+    - 로봇 친화형 건축물 인증 (Robot-Friendly Building Certification): glossary/robot-friendly-building-certification.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 로봇–작업 적합도 행렬 (Robot–Task Fitness Matrix): glossary/robot-task-fitness-matrix.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
@@ -637,6 +646,7 @@ nav:
     - 상품-대-사람 (Goods-to-Person (GTP)): glossary/goods-to-person.md
     - 상황 상태 추적 (Situation State Tracking): glossary/situation-state-tracking.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
+    - 서비스 삼자 관계 (Service Triad (service robot, customer, frontline employee)): glossary/service-triad.md
     - 서비스 수준 협약 (Service Level Agreement (SLA)): glossary/service-level-agreement.md
     - 서비스형 로봇 (Robot-as-a-Service (RaaS)): glossary/robot-as-a-service.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
@@ -1806,6 +1816,21 @@ nav:
     - ref-948 — 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까: references/ref-948.md
     - 'ref-949 — 감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여': references/ref-949.md
     - ref-950 — 선도모델 및 모듈 소개: references/ref-950.md
+    - ref-951 — 엘베 타고 수건 배달·안내·방역도 '척척'...호텔로 간 로봇: references/ref-951.md
+    - ref-952 — Sam's Club rolls out inventory-checking robots chainwide: references/ref-952.md
+    - ref-953 — A Communication Robot in a Shopping Mall: references/ref-953.md
+    - 'ref-954 — Hotel managers'' perceptions towards the use of robots: a mixed-methods approach': references/ref-954.md
+    - ref-955 — 식당 음식 나르던 서빙로봇, 공장·창고로 진격: references/ref-955.md
+    - ref-956 — 네이버 제2사옥, 로봇 친화형 건축물 인증 획득: references/ref-956.md
+    - ref-957 — Elevators and service robots: references/ref-957.md
+    - ref-958 — 브이디컴퍼니, 신규 서빙로봇 3종 출시…“식당 전체 자동화 이룰 것”: references/ref-958.md
+    - ref-959 — 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향: references/ref-959.md
+    - 'ref-960 — The service triad: an empirical study of service robots, customers and frontline employees': references/ref-960.md
+    - 'ref-961 — Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks': references/ref-961.md
+    - 'ref-962 — Score One for The Humans: Japan''s Henn-na Hotel Fires Half Its Robot Workforce': references/ref-962.md
+    - ref-963 — 엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장: references/ref-963.md
+    - ? 'ref-964 — Digital transformation in restaurants: key aspects of service robot deployment from project initiation to evaluation'
+      : references/ref-964.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

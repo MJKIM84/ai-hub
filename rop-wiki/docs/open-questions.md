@@ -195,8 +195,13 @@ version: 1
 | oq-173 | 국가기술표준원이 2021년 제정을 발표한 로봇의 승강기 탑승 안전 요구사항 KS 와 실내 배송 로봇 KS 의 표준 번호·조항은 무엇이며, 그 요구(속도 제어·보호 정지·높낮이차·틈새)가 승강기 연동 계층에 어떤 정보를 요구하는가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
 | oq-174 | 한림대성심병원처럼 제조사가 다른 여러 로봇을 통합관제하는 국내 병원은 어떤 인터페이스·표준(Open-RMF, VDA 5050, 제조사 API)으로 로봇과 승강기를 연결하며 그 구조가 공개돼 있는가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
 | oq-175 | 국내 병원에서 식사(환자식) 이송을 로봇이 맡은 운영 사례가 있으며, 식사 이송은 약품·검체 이송과 시작 조건·시간 제약·인계 방식이 어떻게 다른가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
+| oq-176 | 호텔·쇼핑몰에서 제조사가 다른 배송·청소·안내 로봇을 하나의 오케스트레이션 계층(Open-RMF 등)으로 묶어 승강기를 함께 쓰게 한 국내외 공개 사례가 있는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
+| oq-177 | 호텔 객실 배송 로봇이 객실 관리 시스템(PMS)이나 객실 전화에서 요청을 받고 배송 완료를 되돌려 주는 표준 인터페이스나 공개된 연동 구조가 있는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
+| oq-178 | 영업 중인 매장·쇼핑몰에서 청소·재고 스캔 로봇을 손님이 많은 시간과 어떻게 나눠 운영하는지(운영 시간대 규칙과 그 효과)를 수치로 보인 연구나 공개 자료가 있는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
+| oq-179 | 로봇 친화형 건축물 인증이 오피스를 넘어 호텔·쇼핑몰 같은 상업 시설로 확대됐는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
+| oq-180 | 식당 서빙로봇과 호텔 배송 로봇은 손님이 음식·물품을 받았는지(완료·인계)를 어떤 방식(무게 감지·버튼·직원 확인·객실 문 앞 알림)으로 확인하며 그 결과가 주문 시스템에 기록되는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
 
-상태별 건수: 열림 174건, 조사 중 1건
+상태별 건수: 열림 179건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

@@ -1,0 +1,176 @@
+{
+  "run_id": "2026-09-29-16",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 64,
+    "area_name": "64. 상업 시설",
+    "category": "Q. 현장 유형별 적용"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 14,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 23,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1912.1,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 64. 상업 시설 | 섹션 3~11 신규 작성(seed → draft): 호텔·식당·매장·쇼핑몰 적용 사례 3건, 승강기 이용 방식·혼잡 시간 배송 계획·책임 경계, 1차 수정 지시 11건 이행 | run 2026-09-29-16",
+  "notes": [
+    "참고문헌 생성: references/ref-951.md",
+    "참고문헌 생성: references/ref-952.md",
+    "참고문헌 생성: references/ref-953.md",
+    "참고문헌 생성: references/ref-954.md",
+    "참고문헌 생성: references/ref-955.md",
+    "참고문헌 생성: references/ref-956.md",
+    "참고문헌 생성: references/ref-957.md",
+    "참고문헌 생성: references/ref-958.md",
+    "참고문헌 생성: references/ref-959.md",
+    "참고문헌 생성: references/ref-960.md",
+    "참고문헌 생성: references/ref-961.md",
+    "참고문헌 생성: references/ref-962.md",
+    "참고문헌 생성: references/ref-963.md",
+    "참고문헌 생성: references/ref-964.md",
+    "용어집 생성: glossary/multi-trip-vehicle-routing-problem.md",
+    "용어집 생성: glossary/robot-friendly-building-certification.md",
+    "용어집 생성: glossary/service-triad.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 14,
+    "standards": 1,
+    "open_questions": 5,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 22:59:23 KST",
+  "usage": {
+    "input_tokens": 100,
+    "cache_creation_input_tokens": 613256,
+    "cache_read_input_tokens": 7542434,
+    "output_tokens": 150857,
+    "cost_usd": 10.7296,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.797,
+        "output_tokens": 52339,
+        "cache_read_input_tokens": 5517357,
+        "cache_creation_input_tokens": 212144
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.1368,
+        "output_tokens": 26603,
+        "cache_read_input_tokens": 1923231,
+        "cache_creation_input_tokens": 112142
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 2.6959,
+        "output_tokens": 59289,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 188762
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 1.0511,
+        "output_tokens": 12201,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 98673
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.039,
+        "output_tokens": 207,
+        "cache_read_input_tokens": 6622,
+        "cache_creation_input_tokens": 1273
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0098,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 6758,
+        "cache_creation_input_tokens": 262
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-29-area64-s8.md",
+        "chars": 1584
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-29-area64-s10.md",
+        "chars": 1122
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-29-area64-s6.md",
+        "chars": 1017
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-29-area64-s4.md",
+        "chars": 1000
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-29-area64-s3.md",
+        "chars": 726
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-29-area64-s11.md",
+        "chars": 694
+      },
+      {
+        "from": "docs/categories/site-type-applications/commercial-facilities.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-29-area64-s7.md",
+        "chars": 636
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 1
+}

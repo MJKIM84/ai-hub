@@ -38,7 +38,7 @@ version: 1
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 4 | 0 | 0 | 24 | 0 | 0 | 28 |
+| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 3 | 0 | 0 | 32 | 0 | 0 | 35 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -189,16 +189,16 @@ version: 1
 | [61. 물류창고](categories/site-type-applications/warehouse.md) | published | medium | 2026-09-29 | 2 |
 | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md) | published | medium | 2026-09-29 | 2 |
 | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | published | medium | 2026-09-29 | 2 |
-| [64. 상업 시설](categories/site-type-applications/commercial-facilities.md) | seed | — | 2026-09-28 | 1 |
+| [64. 상업 시설](categories/site-type-applications/commercial-facilities.md) | published | medium | 2026-09-29 | 2 |
 | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | seed | — | 2026-09-28 | 1 |
 | [66. 실외](categories/site-type-applications/outdoor.md) | seed | — | 2026-09-28 | 1 |
 | [67. 기타 현장](categories/site-type-applications/other-sites.md) | seed | — | 2026-09-28 | 1 |
 
 ### 검증 통과율
 
-- 실행 103회 중 최종 통과 101회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 101, None 2
-- 2차 검증 판정: 통과 101, None 2
+- 실행 104회 중 최종 통과 102회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 102, None 2
+- 2차 검증 판정: 통과 102, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 431 |
+| 논문 | 435 |
 | 오픈소스 문서 | 193 |
 | 표준 | 154 |
-| 정부·연구기관 | 69 |
-| 벤더 문서 | 49 |
-| 기사 | 41 |
+| 정부·연구기관 | 70 |
+| 벤더 문서 | 50 |
+| 기사 | 49 |
 | 업계 보고서 | 13 |
 
-신뢰도: medium 717건, high 161건, low 72건
+신뢰도: medium 727건, high 163건, low 74건
 
 ### 현장 유형 매트릭스 채움률
 
-- 27/119 칸 (23%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 28/119 칸 (24%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

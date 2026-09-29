@@ -20,6 +20,33 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-16 | 갱신 | [docs/categories/site-type-applications/commercial-facilities.md](categories/site-type-applications/commercial-facilities.md) | 섹션 3~11 신규 작성(seed → draft): 호텔 객실 배송·식당 서빙·매장·쇼핑몰 청소·재고 스캔·안내 세 사례를 여섯 항목으로 정리, 승강기 이용 방식·혼잡 시간 배송 계획·식당 도입 5단계, 책임 경계, 연결 영역 15개, 열린 질문 5건, 각주 17건, 1차 수정 지시 11건 이행 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s8.md](topics/2026/2026-09-29-area64-s8.md) | 자동 분리: 64. 상업 시설 의 "8. 대표 연구와 자료" 절(1,584자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s10.md](topics/2026/2026-09-29-area64-s10.md) | 자동 분리: 64. 상업 시설 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,122자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s6.md](topics/2026/2026-09-29-area64-s6.md) | 자동 분리: 64. 상업 시설 의 "6. 대표 접근법과 기술" 절(1,017자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s4.md](topics/2026/2026-09-29-area64-s4.md) | 자동 분리: 64. 상업 시설 의 "4. 핵심 개념과 용어" 절(1,000자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s3.md](topics/2026/2026-09-29-area64-s3.md) | 자동 분리: 64. 상업 시설 의 "3. 왜 중요한가" 절(726자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s11.md](topics/2026/2026-09-29-area64-s11.md) | 자동 분리: 64. 상업 시설 의 "11. 열린 질문" 절(694자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s7.md](topics/2026/2026-09-29-area64-s7.md) | 자동 분리: 64. 상업 시설 의 "7. 관련 표준·프레임워크·오픈소스" 절(636자)을 옮겼다 |
+| 2026-09-29-16 | 요약 | [docs/categories/site-type-applications/commercial-facilities.md](categories/site-type-applications/commercial-facilities.md) | 64. 상업 시설: 섹션 3~11 신규 작성(seed → draft): 호텔·식당·매장·쇼핑몰 적용 사례 3건, 승강기 이용 방식·혼잡 시간 배송 계획·책임 경계, 1차 수정 지시 11건 이행 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-951.md](references/ref-951.md) | 참고문헌 ref-951 등록: 엘베 타고 수건 배달·안내·방역도 '척척'...호텔로 간 로봇 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-952.md](references/ref-952.md) | 참고문헌 ref-952 등록: Sam's Club rolls out inventory-checking robots chainwide |
+| 2026-09-29-16 | 생성 | [docs/references/ref-953.md](references/ref-953.md) | 참고문헌 ref-953 등록: A Communication Robot in a Shopping Mall |
+| 2026-09-29-16 | 생성 | [docs/references/ref-954.md](references/ref-954.md) | 참고문헌 ref-954 등록: Hotel managers' perceptions towards the use of robots: a mix… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-955.md](references/ref-955.md) | 참고문헌 ref-955 등록: 식당 음식 나르던 서빙로봇, 공장·창고로 진격 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-956.md](references/ref-956.md) | 참고문헌 ref-956 등록: 네이버 제2사옥, 로봇 친화형 건축물 인증 획득 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-957.md](references/ref-957.md) | 참고문헌 ref-957 등록: Elevators and service robots |
+| 2026-09-29-16 | 생성 | [docs/references/ref-958.md](references/ref-958.md) | 참고문헌 ref-958 등록: 브이디컴퍼니, 신규 서빙로봇 3종 출시…“식당 전체 자동화 이룰 것” |
+| 2026-09-29-16 | 생성 | [docs/references/ref-959.md](references/ref-959.md) | 참고문헌 ref-959 등록: 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-960.md](references/ref-960.md) | 참고문헌 ref-960 등록: The service triad: an empirical study of service robots, cus… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-961.md](references/ref-961.md) | 참고문헌 ref-961 등록: Incident 346: Robots in Japanese Hotel Annoyed Guests and Fa… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-962.md](references/ref-962.md) | 참고문헌 ref-962 등록: Score One for The Humans: Japan's Henn-na Hotel Fires Half I… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-963.md](references/ref-963.md) | 참고문헌 ref-963 등록: 엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-964.md](references/ref-964.md) | 참고문헌 ref-964 등록: Digital transformation in restaurants: key aspects of servic… |
+| 2026-09-29-16 | 생성 | [docs/glossary/multi-trip-vehicle-routing-problem.md](glossary/multi-trip-vehicle-routing-problem.md) | 용어집 항목 다중 운행 차량 경로 문제 |
+| 2026-09-29-16 | 생성 | [docs/glossary/robot-friendly-building-certification.md](glossary/robot-friendly-building-certification.md) | 용어집 항목 로봇 친화형 건축물 인증 |
+| 2026-09-29-16 | 생성 | [docs/glossary/service-triad.md](glossary/service-triad.md) | 용어집 항목 서비스 삼자 관계 |
+| 2026-09-29-16 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-29-13 | 갱신 | [docs/categories/site-type-applications/hospital-and-healthcare.md](categories/site-type-applications/hospital-and-healthcare.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 첫 항목의 태그·각주를 결론 문장 뒤로 옮기고 해석 문장을 [추정]으로 분리, 3절 '운영 계층은 … 받아야 한다'를 [추정] 문장으로 분리, 5절 울산대병원 제약 칸에 '기사가 전한 국내 병원 일반의 장애 요인:' 귀속 표시, 용어집 RoMi-H 출처에 ref-872 추가·승강기 가동률 정의 한정(분리 전 전체 본문으로 반환, 분리는 코드가 다시 한다) |
 | 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s11.md](topics/2026/2026-09-29-area63-s11.md) | 자동 분리: 63. 병원·의료 의 "11. 열린 질문" 절(1,575자)을 옮겼다 |
 | 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s4.md](topics/2026/2026-09-29-area63-s4.md) | 자동 분리: 63. 병원·의료 의 "4. 핵심 개념과 용어" 절(1,525자)을 옮겼다 |
