@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 13. 대화형 기능의 신뢰·기반 — 대표 연구와 자료: topics/2026/2026-09-29-area13-s8.md
+      - 13. 대화형 기능의 신뢰·기반 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area13-s7.md
+      - 13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술: topics/2026/2026-09-29-area13-s6.md
+      - 13. 대화형 기능의 신뢰·기반 — 핵심 개념과 용어: topics/2026/2026-09-29-area13-s4.md
+      - 13. 대화형 기능의 신뢰·기반 — 왜 중요한가: topics/2026/2026-09-29-area13-s3.md
+      - 13. 대화형 기능의 신뢰·기반 — 열린 질문: topics/2026/2026-09-29-area13-s11.md
+      - 13. 대화형 기능의 신뢰·기반 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area13-s10.md
       - 12. 채팅으로 업무 지시·오케스트레이션 — 대표 연구와 자료: topics/2026/2026-09-29-area12-s8.md
       - 12. 채팅으로 업무 지시·오케스트레이션 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area12-s7.md
       - 12. 채팅으로 업무 지시·오케스트레이션 — 대표 접근법과 기술: topics/2026/2026-09-29-area12-s6.md
@@ -539,6 +546,7 @@ nav:
     - 명시적 확인·암시적 확인 (Explicit / Implicit Confirmation): glossary/explicit-implicit-confirmation.md
     - 명확화 질문 (Clarification Question (Follow-up Clarification)): glossary/clarification-question.md
     - 모델 검사 (Model Checking): glossary/model-checking.md
+    - 모델 대체·라우팅 희석 (Model Substitution / Routing Dilution): glossary/model-substitution-and-routing-dilution.md
     - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모델 컨텍스트 프로토콜 (Model Context Protocol (MCP)): glossary/model-context-protocol.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
@@ -582,6 +590,7 @@ nav:
     - 스킬 (Skill): glossary/skill.md
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
+    - 승인 피로 (Approval Fatigue (Consent Fatigue)): glossary/approval-fatigue.md
     - 시간창 (Time Window): glossary/time-window.md
     - 시나리오 재구성 (Scenario Reconstruction): glossary/scenario-reconstruction.md
     - 시뮬레이션 모델 검증·타당성 확인 (Verification and Validation (V&V) of Simulation Models): glossary/verification-and-validation-of-simulation-models.md
@@ -652,6 +661,7 @@ nav:
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
     - 클릭 수 지표 (Number of Clicks (NoC)): glossary/number-of-clicks.md
     - 키 입력 수준 모델 (Keystroke-Level Model (KLM)): glossary/keystroke-level-model.md
+    - 탈옥 (Jailbreak): glossary/jailbreak.md
     - 통과 가능성 (Traversability): glossary/traversability.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 파놉틱 품질 (Panoptic Quality (PQ)): glossary/panoptic-quality.md
@@ -662,6 +672,7 @@ nav:
     - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
     - 풋월 (Put Wall): glossary/put-wall.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
+    - 프롬프트 주입 (Prompt Injection): glossary/prompt-injection.md
     - 플러그 앤 프로듀스 (Plug and Produce): glossary/plug-and-produce.md
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
@@ -1616,6 +1627,23 @@ nav:
     - 'ref-852 — Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent': references/ref-852.md
     - 'ref-853 — Foundation-Model-Based Agents in Industrial Automation: Purposes, Capabilities, and Open Challenges': references/ref-853.md
     - 'ref-854 — Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP)': references/ref-854.md
+    - ref-855 — OWASP Top 10 for LLM Applications 2025: references/ref-855.md
+    - ref-856 — Specification — Model Context Protocol (2025-06-18): references/ref-856.md
+    - ref-857 — Jailbreaking LLM-Controlled Robots: references/ref-857.md
+    - 'ref-858 — Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making': references/ref-858.md
+    - 'ref-859 — Trust in LLM-controlled Robotics: a Survey of Security Threats, Defenses and Challenges': references/ref-859.md
+    - ref-860 — 2024 신뢰할 수 있는 인공지능 개발 안내서 — 일반분야 (일러두기): references/ref-860.md
+    - ref-861 — A Multimodal GUI Architecture for Interfacing with LLM-Based Conversational Assistants: references/ref-861.md
+    - ref-862 — 생성형 인공지능(AI) 개발·활용을 위한 개인정보 처리 안내서(2025.8.): references/ref-862.md
+    - 'ref-863 — Article 12: Record-keeping (Regulation (EU) 2024/1689, Artificial Intelligence Act)': references/ref-863.md
+    - 'ref-864 — Towards Robots That Know When They Need Help: Affordance-Based Uncertainty for Large Language Model Planners': references/ref-864.md
+    - ? 'ref-865 — Which Model Is Actually Serving You? IRIS: Budgeted Black-Box Auditing of Model Substitution and Routing Dilution in LLM Gateways'
+      : references/ref-865.md
+    - ? ref-866 — Casting Everything to Online API Services? A Survey of Integrating Localized Speech Recognition Models in Robotic Systems
+      : references/ref-866.md
+    - 'ref-867 — How Agents Ask for Permission: User Permissions for AI Agents, from Interfaces to Enforcement': references/ref-867.md
+    - ? 'ref-868 — Enhancing supermarket robot interaction: an equitable multi-level LLM conversational interface for handling diverse customer intents'
+      : references/ref-868.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md
