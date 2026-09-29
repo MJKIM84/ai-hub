@@ -416,5 +416,16 @@ class TestRunner(unittest.TestCase):
         self.assertFalse(runs.semantic_checks("pages", ok, "update", returned=True))
 
 
+class LeadSentenceTest(unittest.TestCase):
+    def test_keeps_tag_qualifier(self):
+        """태그 뒤 각주 앞 병기("[추정] 벤더 주장[^ref]")는 요약 문장에 남고, 다음 문장은 끌려오지 않는다."""
+        from lib import validate as v
+        t = "용어는 제조사 발표에서 쓰인다. [추정] 벤더 주장[^ref-974][^ref-973] 둘째 문장이다. [사실][^ref-1]\n"
+        self.assertEqual(v._first_sentence(t), "용어는 제조사 발표에서 쓰인다. [추정] 벤더 주장[^ref-974][^ref-973]")
+        self.assertTrue(v._lead_sentences(t).endswith("둘째 문장이다. [사실][^ref-1]"))
+        self.assertEqual(v._first_sentence("A가 있다. [사실] 짧다.[^r] 뒤."), "A가 있다. [사실]")
+        self.assertEqual(v._first_sentence("평범한 문장이다. [사실][^r1][^r2] 다음이다."), "평범한 문장이다. [사실][^r1][^r2]")
+
+
 if __name__ == "__main__":
     unittest.main()
