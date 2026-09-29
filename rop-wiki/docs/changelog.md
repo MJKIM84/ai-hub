@@ -20,6 +20,35 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-17 | 갱신 | [docs/categories/site-type-applications/home-and-apartment.md](categories/site-type-applications/home-and-apartment.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 가정 사례 3건을 여섯 항목으로 정리, 공동현관·승강기 연동·집하 방식·수령 인증·사생활 기능·Matter 1.2, 관련 법령·법안, 책임 경계, 연결 영역 16개, 열린 질문 5건, 각주 15건. 1차 수정 지시 17건, 2차 수정 지시 4건, 2차 재검증 지시 1건(4절 요약 문장의 벤더 주장 병기를 태그 앞 본문에 두고 ref-974·ref-973 각주 복원) 이행 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s7.md](topics/2026/2026-09-29-area65-s7.md) | 자동 분리: 65. 가정·공동주택 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,508자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s6.md](topics/2026/2026-09-29-area65-s6.md) | 자동 분리: 65. 가정·공동주택 의 "6. 대표 접근법과 기술" 절(1,233자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s4.md](topics/2026/2026-09-29-area65-s4.md) | 자동 분리: 65. 가정·공동주택 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 재검증 지시로 1절 첫 항목·3절 첫 문단의 벤더 주장 문장을 '제조사 발표(벤더 주장)에서 쓰인다. [추정]`[^ref-974]``[^ref-973]`'로 고쳤다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s8.md](topics/2026/2026-09-29-area65-s8.md) | 자동 분리: 65. 가정·공동주택 의 "8. 대표 연구와 자료" 절(949자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s3.md](topics/2026/2026-09-29-area65-s3.md) | 자동 분리: 65. 가정·공동주택 의 "3. 왜 중요한가" 절(885자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s10.md](topics/2026/2026-09-29-area65-s10.md) | 자동 분리: 65. 가정·공동주택 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(885자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s11.md](topics/2026/2026-09-29-area65-s11.md) | 자동 분리: 65. 가정·공동주택 의 "11. 열린 질문" 절(858자)을 옮겼다 |
+| 2026-09-29-17 | 요약 | [docs/categories/site-type-applications/home-and-apartment.md](categories/site-type-applications/home-and-apartment.md) | 65. 가정·공동주택: 섹션 3~11 신규 작성(seed → draft): 공동주택 음식·택배 배송과 세대 안 청소·가사 로봇 세 사례(현장 유형 가정), 공동현관·승강기 연동·수령 인증·사생활 기능·Matter 1.2, 관련 법령·발의 단계 특별법안, 책임 경계, 연결 영역 16개, 열린 질문 5건, 1차 수정 지시 17건·2차 수정 지시 4건·2차 재검증 지시 1건 이행 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-965.md](references/ref-965.md) | 참고문헌 ref-965 등록: 삼성물산, 아파트 세대 현관까지 음식배달로봇 확장 운영 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-966.md](references/ref-966.md) | 참고문헌 ref-966 등록: 로봇이 문앞까지 택배 가져다 주는 미래 곧 온다 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-967.md](references/ref-967.md) | 참고문헌 ref-967 등록: 실외이동로봇 시대 개막...개정 지능형로봇법 17일 시행 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-968.md](references/ref-968.md) | 참고문헌 ref-968 등록: A Roomba recorded a woman on the toilet. How did screenshots… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-969.md](references/ref-969.md) | 참고문헌 ref-969 등록: '로봇청소기' 다수 제품 보안 취약…대응방안은? |
+| 2026-09-29-17 | 생성 | [docs/references/ref-970.md](references/ref-970.md) | 참고문헌 ref-970 등록: 사생활 훔치는 로봇청소기…중국산 제품서 `무단 촬영` 가능성 확인 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-971.md](references/ref-971.md) | 참고문헌 ref-971 등록: BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-972.md](references/ref-972.md) | 참고문헌 ref-972 등록: Comparing Perceptions of Service Robot Adoption in Multi-Fam… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-973.md](references/ref-973.md) | 참고문헌 ref-973 등록: NEO humanoid designed for household use, available for preor… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-974.md](references/ref-974.md) | 참고문헌 ref-974 등록: LG ELECTRONICS PRESENTS LG CLOiD HOME ROBOT TO DEMONSTRATE "… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-975.md](references/ref-975.md) | 참고문헌 ref-975 등록: 배송·주차·청소까지…로봇 아파트 뜬다 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-976.md](references/ref-976.md) | 참고문헌 ref-976 등록: 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’ |
+| 2026-09-29-17 | 생성 | [docs/references/ref-977.md](references/ref-977.md) | 참고문헌 ref-977 등록: Matter 1.2 Arrives with Nine New Device Types & Improvements… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-978.md](references/ref-978.md) | 참고문헌 ref-978 등록: 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한) |
+| 2026-09-29-17 | 생성 | [docs/references/ref-979.md](references/ref-979.md) | 참고문헌 ref-979 등록: 로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도 |
+| 2026-09-29-17 | 생성 | [docs/glossary/matter.md](glossary/matter.md) | 용어집 항목 매터 |
+| 2026-09-29-17 | 생성 | [docs/glossary/outdoor-mobile-robot-operational-safety-certification.md](glossary/outdoor-mobile-robot-operational-safety-certification.md) | 용어집 항목 실외이동로봇 운행안전인증 |
+| 2026-09-29-17 | 생성 | [docs/glossary/vision-language-action-model.md](glossary/vision-language-action-model.md) | 용어집 항목 비전 언어 행동 모델 |
+| 2026-09-29-17 | 생성 | [docs/glossary/teleoperation.md](glossary/teleoperation.md) | 용어집 항목 원격 조작 |
+| 2026-09-29-17 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-29-16 | 갱신 | [docs/categories/site-type-applications/commercial-facilities.md](categories/site-type-applications/commercial-facilities.md) | 섹션 3~11 신규 작성(seed → draft): 호텔 객실 배송·식당 서빙·매장·쇼핑몰 청소·재고 스캔·안내 세 사례를 여섯 항목으로 정리, 승강기 이용 방식·혼잡 시간 배송 계획·식당 도입 5단계, 책임 경계, 연결 영역 15개, 열린 질문 5건, 각주 17건, 1차 수정 지시 11건 이행 |
 | 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s8.md](topics/2026/2026-09-29-area64-s8.md) | 자동 분리: 64. 상업 시설 의 "8. 대표 연구와 자료" 절(1,584자)을 옮겼다 |
 | 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s10.md](topics/2026/2026-09-29-area64-s10.md) | 자동 분리: 64. 상업 시설 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,122자)을 옮겼다 |

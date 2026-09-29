@@ -262,6 +262,7 @@ version: 3
 | 서비스로봇 실증사업 | 한국로봇산업진흥원 | 평가 프로그램 | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md)<br>[3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | [ref-947](../references/ref-947.md) | <https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do> |
 | 스마트병원 선도모델(9개 모듈) | 한국보건산업진흥원 스마트병원 확산지원센터 | 프레임워크 | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md)<br>[17. 작업 대상·자산 식별과 인계 추적](../categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)<br>[51. 인증·권한·격리](../categories/security-and-privacy/authentication-authorization-and-isolation.md) | [ref-950](../references/ref-950.md) | <https://www.khidi.or.kr/board?menuId=MENU03336&siteId=SITE00040> |
 | 로봇 친화형 건축물 인증 | 스마트도시협회 | 평가 프로그램 | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md)<br>[22. 설비·건물 시스템 연동](../categories/integration/facility-and-building-system-integration.md) | [ref-956](../references/ref-956.md) | <https://zdnet.co.kr/view/?no=20220411142336> |
+| Matter 1.2 (로봇청소기 장치 유형 포함) | Connectivity Standards Alliance (CSA) | 표준 | [21. 상호운용 표준·적합성](../categories/integration/interoperability-standards-and-conformance.md)<br>[65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | [ref-977](../references/ref-977.md) | <https://csa-iot.org/newsroom/matter-1-2-arrives-with-nine-new-device-types-improvements-across-the-board/> |
 <!-- auto:standards-table:end -->
 
 ## 읽는 법

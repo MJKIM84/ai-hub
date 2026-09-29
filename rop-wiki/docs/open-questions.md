@@ -200,8 +200,13 @@ version: 1
 | oq-178 | 영업 중인 매장·쇼핑몰에서 청소·재고 스캔 로봇을 손님이 많은 시간과 어떻게 나눠 운영하는지(운영 시간대 규칙과 그 효과)를 수치로 보인 연구나 공개 자료가 있는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
 | oq-179 | 로봇 친화형 건축물 인증이 오피스를 넘어 호텔·쇼핑몰 같은 상업 시설로 확대됐는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
 | oq-180 | 식당 서빙로봇과 호텔 배송 로봇은 손님이 음식·물품을 받았는지(완료·인계)를 어떤 방식(무게 감지·버튼·직원 확인·객실 문 앞 알림)으로 확인하며 그 결과가 주문 시스템에 기록되는가? | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md)<br>[17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-29 | 2026-09-29-16 | 열림 | — |
+| oq-181 | 세대 안에서 거주자가 쓰는 가사 로봇·로봇청소기의 영상 수집에는 개인정보 보호법 제25조의2(이동형 영상정보처리기기)가 적용되는가, 아니면 동의 기반 처리 조항만 적용되는가, 그리고 이에 대한 개인정보보호위원회 해석이나 가이드라인이 있는가? | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-09-29 | 2026-09-29-17 | 열림 | — |
+| oq-182 | 이동로봇 특별법안이 간소화·표준화하겠다는 공동현관·엘리베이터 통신 연동 절차는 어떤 기존 표준(KS 로봇 승강기 탑승 요구사항, 홈네트워크 월패드 규격)을 참조하며, 한 단지에서 제조사가 다른 배송로봇이 같은 인터페이스를 쓰게 하는가? | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-29 | 2026-09-29-17 | 열림 | — |
+| oq-183 | 한 아파트 단지에서 제조사가 다른 배송·청소·순찰·주차 로봇을 하나의 관제 계층으로 묶어 공동현관·승강기를 함께 쓰게 한 국내외 공개 사례가 있는가? | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-29 | 2026-09-29-17 | 열림 | — |
+| oq-184 | 공동주택 배송로봇의 수령 확인(주문자만 꺼낼 수 있는 방식)은 어떤 인증 수단(비밀번호·앱·QR)으로 이루어지며, 그 결과가 배달 앱·택배사 시스템에 완료 이벤트로 어떻게 돌아가는가? | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-17 | 열림 | — |
+| oq-185 | 소유자가 원격 조작자를 예약해 가정 로봇을 안내하게 하는 방식(1X NEO 등)에서 원격 조작자의 영상 접근·사고 책임을 다루는 국내외 규제·인증 기준이 있는가? | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 2026-09-29 | 2026-09-29-17 | 열림 | — |
 
-상태별 건수: 열림 179건, 조사 중 1건
+상태별 건수: 열림 184건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

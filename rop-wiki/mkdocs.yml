@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 65. 가정·공동주택 — 대표 연구와 자료: topics/2026/2026-09-29-area65-s8.md
+      - 65. 가정·공동주택 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area65-s7.md
+      - 65. 가정·공동주택 — 대표 접근법과 기술: topics/2026/2026-09-29-area65-s6.md
+      - 65. 가정·공동주택 — 핵심 개념과 용어: topics/2026/2026-09-29-area65-s4.md
+      - 65. 가정·공동주택 — 왜 중요한가: topics/2026/2026-09-29-area65-s3.md
+      - 65. 가정·공동주택 — 열린 질문: topics/2026/2026-09-29-area65-s11.md
+      - 65. 가정·공동주택 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area65-s10.md
       - 64. 상업 시설 — 대표 연구와 자료: topics/2026/2026-09-29-area64-s8.md
       - 64. 상업 시설 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area64-s7.md
       - 64. 상업 시설 — 대표 접근법과 기술: topics/2026/2026-09-29-area64-s6.md
@@ -605,6 +612,7 @@ nav:
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 로봇–작업 적합도 행렬 (Robot–Task Fitness Matrix): glossary/robot-task-fitness-matrix.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
+    - 매터 (Matter (Connectivity Standards Alliance smart home standard)): glossary/matter.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
     - 명시적 확인·암시적 확인 (Explicit / Implicit Confirmation): glossary/explicit-implicit-confirmation.md
@@ -631,6 +639,7 @@ nav:
     - 불확실도 정렬 (Uncertainty Alignment): glossary/uncertainty-alignment.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비용 지도 (Costmap): glossary/costmap.md
+    - 비전 언어 행동 모델 (Vision-Language-Action Model (VLA)): glossary/vision-language-action-model.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
     - 사가 (Saga): glossary/saga.md
     - 사건 기반 재스케줄링 (Event-driven Rescheduling): glossary/event-driven-rescheduling.md
@@ -675,6 +684,7 @@ nav:
     - 신원 보고 (Identity Report (MassRobotics identityReport)): glossary/identity-report.md
     - 신호 시간 논리 (Signal Temporal Logic (STL)): glossary/signal-temporal-logic.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
+    - 실외이동로봇 운행안전인증 (Outdoor Mobile Robot Operational Safety Certification): glossary/outdoor-mobile-robot-operational-safety-certification.md
     - 실패 설명 (Failure Explanation): glossary/failure-explanation.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 어포던스 (Affordance): glossary/affordance.md
@@ -698,6 +708,7 @@ nav:
     - 운용 구역 (Operating Zone (ISO 3691-4)): glossary/operating-zone.md
     - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
+    - 원격 조작 (Teleoperation): glossary/teleoperation.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
     - 위치 체크 디지트 (Location Check Digit): glossary/location-check-digit.md
@@ -1831,6 +1842,22 @@ nav:
     - ref-963 — 엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장: references/ref-963.md
     - ? 'ref-964 — Digital transformation in restaurants: key aspects of service robot deployment from project initiation to evaluation'
       : references/ref-964.md
+    - ref-965 — 삼성물산, 아파트 세대 현관까지 음식배달로봇 확장 운영: references/ref-965.md
+    - ref-966 — 로봇이 문앞까지 택배 가져다 주는 미래 곧 온다: references/ref-966.md
+    - ref-967 — 실외이동로봇 시대 개막...개정 지능형로봇법 17일 시행: references/ref-967.md
+    - ref-968 — A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook?: references/ref-968.md
+    - ref-969 — '로봇청소기' 다수 제품 보안 취약…대응방안은?: references/ref-969.md
+    - ref-970 — 사생활 훔치는 로봇청소기…중국산 제품서 `무단 촬영` 가능성 확인: references/ref-970.md
+    - 'ref-971 — BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation': references/ref-971.md
+    - ? 'ref-972 — Comparing Perceptions of Service Robot Adoption in Multi-Family Housing Between Residents and Industry Stakeholders: Focusing on Acceptance Attitudes, Concerns, and Technological Needs'
+      : references/ref-972.md
+    - ref-973 — NEO humanoid designed for household use, available for preorder: references/ref-973.md
+    - ref-974 — LG ELECTRONICS PRESENTS LG CLOiD HOME ROBOT TO DEMONSTRATE "ZERO LABOR HOME" AT CES 2026: references/ref-974.md
+    - ref-975 — 배송·주차·청소까지…로봇 아파트 뜬다: references/ref-975.md
+    - ref-976 — 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’: references/ref-976.md
+    - ref-977 — Matter 1.2 Arrives with Nine New Device Types & Improvements Across the Board: references/ref-977.md
+    - ref-978 — 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한): references/ref-978.md
+    - ref-979 — 로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도: references/ref-979.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md
