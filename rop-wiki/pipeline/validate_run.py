@@ -171,10 +171,15 @@ def stage_pages(rd: Path, settings: dict, run_id: str) -> int:
         if not topics:
             continue
         _write_page(rd, pg["path"], new_area)
+        listed = {p.get("path") for p in pages.get("pages", [])}
         for tp in topics:
             _write_page(rd, tp["path"], tp["content"])
-            pages["pages"].append({"path": tp["path"], "action": "create", "status": "draft",
-                                   "diff_summary": f"자동 분리: {meta.get('title')} 의 \"{tp['section']}\" 절({tp['chars']:,}자)을 옮겼다"})
+            # 재작성 뒤 같은 절을 다시 분리하면 주제 경로가 이미 pages 에 있다(스토리텔러가 앞선 분리 페이지를 그대로 돌려주고
+            # 원 절도 다시 채운 경우, 실행 2026-09-29-12). 파일은 새 분리 결과로 덮고 항목은 중복 추가하지 않는다(퍼블리셔 1단계 경로 중복 반려)
+            if tp["path"] not in listed:
+                pages["pages"].append({"path": tp["path"], "action": "create", "status": "draft",
+                                       "diff_summary": f"자동 분리: {meta.get('title')} 의 \"{tp['section']}\" 절({tp['chars']:,}자)을 옮겼다"})
+                listed.add(tp["path"])
             splits.append({"from": pg["path"], "section": tp["section"], "to": tp["path"], "chars": tp["chars"]})
         after = V.area_body_chars(fm.parse(new_area)[1])
         note = (f"분량 초과 자동 분리: {meta.get('title')} 본문 {chars:,}자 > 기준 {limit:,}자 → "
