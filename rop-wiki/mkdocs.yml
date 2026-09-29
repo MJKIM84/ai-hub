@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 대표 연구와 자료: topics/2026/2026-09-29-area12-s8.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area12-s7.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 대표 접근법과 기술: topics/2026/2026-09-29-area12-s6.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 핵심 개념과 용어: topics/2026/2026-09-29-area12-s4.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 왜 중요한가: topics/2026/2026-09-29-area12-s3.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 열린 질문: topics/2026/2026-09-29-area12-s11.md
+      - 12. 채팅으로 업무 지시·오케스트레이션 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area12-s10.md
       - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 대표 연구와 자료: topics/2026/2026-09-29-area11-s8.md
       - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area11-s7.md
       - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 대표 접근법과 기술: topics/2026/2026-09-29-area11-s6.md
@@ -469,6 +476,7 @@ nav:
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
     - pass^k 지표 (pass^k): glossary/pass-k.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
+    - 감독 제어 (Supervisory Control): glossary/supervisory-control.md
     - 감사 추적 (Audit Trail): glossary/audit-trail.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
@@ -524,6 +532,7 @@ nav:
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
+    - 로봇–작업 적합도 행렬 (Robot–Task Fitness Matrix): glossary/robot-task-fitness-matrix.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
     - 멱등성 키 (Idempotency Key): glossary/idempotency-key.md
@@ -556,6 +565,7 @@ nav:
     - 사람 참여 루프 (Human-in-the-Loop (HITL)): glossary/human-in-the-loop.md
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
+    - 사전 실행 계획 검증 (Pre-execution Plan Verification): glossary/pre-execution-plan-verification.md
     - 산업 기초 클래스 (Industry Foundation Classes (IFC)): glossary/ifc.md
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 산업데이터 (Industrial Data): glossary/industrial-data.md
@@ -581,6 +591,7 @@ nav:
     - 신원 보고 (Identity Report (MassRobotics identityReport)): glossary/identity-report.md
     - 신호 시간 논리 (Signal Temporal Logic (STL)): glossary/signal-temporal-logic.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
+    - 실패 설명 (Failure Explanation): glossary/failure-explanation.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 어포던스 (Affordance): glossary/affordance.md
     - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
@@ -1599,6 +1610,12 @@ nav:
     - ref-846 — Specification Patterns for Robotic Missions: references/ref-846.md
     - ref-847 — Agile assistive hospital robot for suboptimal Task execution in dynamic environments: references/ref-847.md
     - 'ref-848 — 자연어 로봇 제어 기술 동향: 분류, 기술, 응용': references/ref-848.md
+    - 'ref-849 — HMCF: A Human-in-the-loop Multi-Robot Collaboration Framework Based on Large Language Models': references/ref-849.md
+    - ref-850 — Defining and Monitoring Complex Robot Activities via LLMs and Symbolic Reasoning: references/ref-850.md
+    - ref-851 — 거대언어모델 기반 로봇 인공지능 기술 동향: references/ref-851.md
+    - 'ref-852 — Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent': references/ref-852.md
+    - 'ref-853 — Foundation-Model-Based Agents in Industrial Automation: Purposes, Capabilities, and Open Challenges': references/ref-853.md
+    - 'ref-854 — Interop SIG, 02 July 2026: Natural-Language Control of Open-RMF Fleets via the Model Context Protocol (MCP)': references/ref-854.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

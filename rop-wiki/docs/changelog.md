@@ -20,6 +20,26 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-05 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | 3~11절 신규 작성(seed → draft), 출처 18건(ref-165~ref-847, ref-110·ref-111·ref-125 재사용), 병원·실외 사례 2건, 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 10건과 2차 수정 지시 8건(10절 연결 다섯 항목·8절 FLEET·3절 의견 주체·11절 보조 문장의 태그·문구 수정) 이행 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s6.md](topics/2026/2026-09-29-area12-s6.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "6. 대표 접근법과 기술" 절(3,807자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s8.md](topics/2026/2026-09-29-area12-s8.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "8. 대표 연구와 자료" 절(1,970자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s7.md](topics/2026/2026-09-29-area12-s7.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,291자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s10.md](topics/2026/2026-09-29-area12-s10.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,270자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s4.md](topics/2026/2026-09-29-area12-s4.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "4. 핵심 개념과 용어" 절(1,255자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s3.md](topics/2026/2026-09-29-area12-s3.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "3. 왜 중요한가" 절(1,149자)을 옮겼다 |
+| 2026-09-29-05 | 생성 | [docs/topics/2026/2026-09-29-area12-s11.md](topics/2026/2026-09-29-area12-s11.md) | 자동 분리: 12. 채팅으로 업무 지시·오케스트레이션 의 "11. 열린 질문" 절(852자)을 옮겼다 |
+| 2026-09-29-05 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | 12. 채팅으로 업무 지시·오케스트레이션: 3~11절 신규 작성(seed → draft), 출처 18건, 병원·실외 사례 2건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 10건과 2차 수정 지시 8건 이행 |
+| 2026-09-29-05 | 생성 | [docs/references/ref-849.md](references/ref-849.md) | 참고문헌 ref-849 등록: HMCF: A Human-in-the-loop Multi-Robot Collaboration Framewor… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-850.md](references/ref-850.md) | 참고문헌 ref-850 등록: Defining and Monitoring Complex Robot Activities via LLMs an… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-851.md](references/ref-851.md) | 참고문헌 ref-851 등록: 거대언어모델 기반 로봇 인공지능 기술 동향 |
+| 2026-09-29-05 | 생성 | [docs/references/ref-852.md](references/ref-852.md) | 참고문헌 ref-852 등록: Enabling Novel Mission Operations and Interactions with ROSA… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-853.md](references/ref-853.md) | 참고문헌 ref-853 등록: Foundation-Model-Based Agents in Industrial Automation: Purp… |
+| 2026-09-29-05 | 생성 | [docs/references/ref-854.md](references/ref-854.md) | 참고문헌 ref-854 등록: Interop SIG, 02 July 2026: Natural-Language Control of Open-… |
+| 2026-09-29-05 | 생성 | [docs/glossary/pre-execution-plan-verification.md](glossary/pre-execution-plan-verification.md) | 용어집 항목 사전 실행 계획 검증 |
+| 2026-09-29-05 | 생성 | [docs/glossary/supervisory-control.md](glossary/supervisory-control.md) | 용어집 항목 감독 제어 |
+| 2026-09-29-05 | 생성 | [docs/glossary/failure-explanation.md](glossary/failure-explanation.md) | 용어집 항목 실패 설명 |
+| 2026-09-29-05 | 생성 | [docs/glossary/robot-task-fitness-matrix.md](glossary/robot-task-fitness-matrix.md) | 용어집 항목 로봇–작업 적합도 행렬 |
+| 2026-09-29-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-29-04 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | 3~11절 신규 작성(seed → draft), 출처 15건(ref-351~ref-848), 병원 사례 1건, 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 7건 이행 |
 | 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s6.md](topics/2026/2026-09-29-area09-s6.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "6. 대표 접근법과 기술" 절(2,863자)을 옮겼다 |
 | 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s8.md](topics/2026/2026-09-29-area09-s8.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "8. 대표 연구와 자료" 절(1,570자)을 옮겼다 |

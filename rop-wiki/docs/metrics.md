@@ -24,7 +24,7 @@ version: 1
 |---|---|---|---|---|---|---|---|
 | [A. 기획·사업](categories/planning-and-business/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
-| [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 2 | 0 | 0 | 32 | 0 | 0 | 34 |
+| [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 1 | 0 | 0 | 40 | 0 | 0 | 41 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
@@ -67,7 +67,7 @@ version: 1
 | [9. 채팅으로 시나리오 구성](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | published | medium | 2026-09-29 | 2 |
 | [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | 2026-09-29 | 2 |
 | [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | published | medium | 2026-09-29 | 2 |
-| [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | seed | — | 2026-09-28 | 1 |
+| [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | published | medium | 2026-09-29 | 2 |
 | [13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | seed | — | 2026-09-28 | 1 |
 
 **D. 공간·지도 모델**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 92회 중 최종 통과 92회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 92
-- 2차 검증 판정: 통과 92
+- 실행 93회 중 최종 통과 93회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 93
+- 2차 검증 판정: 통과 93
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 382 |
-| 오픈소스 문서 | 187 |
+| 논문 | 386 |
+| 오픈소스 문서 | 188 |
 | 표준 | 149 |
-| 정부·연구기관 | 58 |
+| 정부·연구기관 | 59 |
 | 벤더 문서 | 42 |
 | 기사 | 23 |
 | 업계 보고서 | 7 |
 
-신뢰도: medium 645건, high 139건, low 64건
+신뢰도: medium 650건, high 140건, low 64건
 
 ### 현장 유형 매트릭스 채움률
 
