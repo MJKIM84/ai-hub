@@ -1,0 +1,890 @@
+{
+  "duration_api_ms": 862468,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 5.9282337499999995,
+  "usage": {
+    "input_tokens": 226,
+    "cache_creation_input_tokens": 120254,
+    "cache_read_input_tokens": 1319779,
+    "output_tokens": 50194,
+    "output_tokens_details": {
+      "thinking_tokens": 17923
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 120254,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 34318,
+        "cache_read_input_tokens": 201152,
+        "cache_creation_input_tokens": 4266,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4266
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 226,
+      "outputTokens": 50194,
+      "cacheReadInputTokens": 1319779,
+      "cacheCreationInputTokens": 120254,
+      "webSearchRequests": 0,
+      "costUSD": 5.24698475,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 17923,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 422439,
+      "outputTokens": 17762,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 17,
+      "costUSD": 0.6812489999999999,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 52,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-08\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":6,\"area_name\":\"6. 온톨로지 기반 시스템·로봇 연동\",\"category\":\"B. 로봇 온톨로지\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 스킬 인터페이스·전제·유지·사후 조건·수행 가능 동작 용어 없음(스킬·능력 매칭·요구 능력·제공 능력·능력·스킬·서비스 모델·능력 기술 서브모델·형상 제약 언어·플릿 어댑터·자산관리셸은 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 능력 기반 로봇 후보 질의, 능력–실행 연결(능력→스킬→인터페이스), 온톨로지 기반 연동 자동화(모델 매핑·설정 초안 생성), 실행 시점 조건 판단(전제조건·상태 검사) 네 갈래 모두 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 능력·스킬·서비스 모델 온톨로지, IDTA 02020 능력 기술 서브모델, Open-RMF 사용자 정의 작업, VDA 5050 커넥터, OPC UA 스킬 실행 프로토콜, SkiROS2 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 22. 설비·건물 시스템 연동, 25. 작업 배정 — MRTA, 29. 명령·작업 실행의 신뢰성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-150 미반영, 정정 요청 없음\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"온톨로지를 이용해 새 로봇과 새 시스템을 손작업 없이 어떻게 연동할 것인가? [분류원문]\",\"작업 요구에 맞는 로봇·자원 후보를 온톨로지 질의로 찾고 근거와 함께 돌려주는 능력 매칭 접근에는 무엇이 있는가? (섹션 4·6·8 겨냥)\",\"온톨로지의 능력을 실제 로봇 명령·어댑터·스킬 인터페이스에 묶는 모델(능력·스킬·서비스 모델, 자산관리셸 능력 기술, OPC UA 스킬, Open-RMF 사용자 정의 작업)은 무엇을 정하며, 검토되지 않은 연결의 실행을 어떻게 막는가? (섹션 6·7 겨냥)\",\"등록된 능력 모델로 어댑터 설정·명령 매핑·상태 변환 규칙의 초안을 자동으로 만드는 방법(모델 간 매핑, 계획 도메인 자동 생성, 모델 기반 생성)은 무엇이 보고되었는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)\",\"배터리·적재·문·승강기 같은 현재 상태로 능력을 지금 실행할 수 있는지 판단하는 전제조건·정책 검사(SPARQL·SHACL, 전제·유지·사후 조건)는 어떻게 구현되는가? (섹션 4·6 겨냥)\",\"oq-150 팩트시트·명판에 없는 능력(문 조작·승강기 탑승·인계 동작 등)을 등록할 때 Open-RMF 의 task_capabilities 나 자산관리셸 능력 기술 서브모델을 실제로 쓴 사례가 있는가? (섹션 5·11 겨냥, 현장 유형 명시·한국 자료 우선)\",\"온톨로지 기반 연동에서 ROP가 직접 맡을 것(후보 질의·매핑·설정 초안·조건 검사)과 스킬 내부 구현·설비 API 에 맡길 것의 경계는 어디이며, 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Plattform Industrie 4.0 의 능력·스킬·서비스(CSS) 참조 모델을 구현한 CSS 온톨로지는 능력을 산업 생산에서 효과를 내는 기능의 구현 독립적 명세로, 스킬을 능력을 구현한 실행 가능한 자동화 기능으로, 서비스를 제공 능력의 상업적 측면 기술로 정의하고, 모든 스킬이 외부 제어를 위한 스킬 인터페이스(예: OPC UA 서버)를 가져야 한다고 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-882\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"저장소 README: Capability 는 \\\"implementation-independent specification of a function in industrial production\\\", Skill 은 실행 가능한 구현이며 SkillInterface(OPC UA 서버 등)가 외부 제어에 필요. 확장 온톨로지로 CaSk·CaSkMan·RoboCaSk 를 든다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"IDTA 02020 능력 기술(Capability Description) 서브모델 1.0 판은 생산 공정의 요구 능력과 가용 자원의 제공 능력을 비교하는 기반을 목적으로 하며, 능력을 속성(최대 속도·허용 공차 등), 제약(전제조건·불변·사후조건의 속성 제약과 순서·병렬의 전이 제약), 능력을 구현하는 스킬(기술·소프트웨어 모듈)의 세 관계로 모델링한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-884\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 서브모델은 \\\"required capabilities\\\" 와 \\\"provided capabilities\\\" 의 매칭 기반을 두고, 속성·제약(property constraints: preconditions, invariants, postconditions; transition constraints)·스킬의 세 관계로 능력을 기술. 1.0 판이 첫 공식 발행. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f3\",\"claim\":\"서로 다른 두 발행 주체(헬무트 슈미트 대학 계열 CaSkade 의 CSS 온톨로지, IDTA 의 능력 기술 서브모델)가 구현 독립적 능력과 실행 구현인 스킬을 분리하고 요구 능력–제공 능력 매칭을 모델의 목적으로 각각 정의해, 이 영역의 능력–실행 분리 구조가 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-882\",\"ref-884\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"두 문서 모두 능력을 'implementation-independent specification' 으로, 스킬을 능력을 구현하는 모듈로 두고 요구/제공 능력 비교를 언급. 둘 다 Plattform Industrie 4.0 CSS 참조 모델에서 파생되어 완전 독립은 아니므로 신뢰도는 medium 으로 둔다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"Vieira da Silva·Köcher·Fay(2022, 2023 개정)는 이기종 자율 로봇 팀에서 각 로봇이 제공하는 기능을 일관되게 기술하는 방법이 없다고 지적하고, 제조업의 능력·스킬 모델링 접근을 자율 로봇에 적용한 능력 모델을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-876\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"there is no consistent way of describing the functions that each robot provides\\\"; 제조업 능력 모델링을 이기종 자율 로봇에 확장하는 접근을 제시(v2 2023-02-09).\",\"as_of\":\"2023-02-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"Dussard·Sarthou·Clodic(2023, 2025 개정)은 로봇이 보유한 물리 구성요소와 하위 능력으로부터 상위 능력을 온톨로지 추론으로 도출해 로봇이 어떤 작업에 배정될 수 있고 없는지를 스스로 판단하게 하고, 능력과 외부 객체 속성 사이의 어포던스 관계까지 추론하는 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-879\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 구성요소 기반으로 능력을 추론하는 온톨로지 수단을 제시하고, 능력으로 \\\"which tasks it can be assigned to and which it cannot\\\" 을 정의하며 외부 개체와의 어포던스 관계를 추론(v3 2025-09-10).\",\"as_of\":\"2025-09-10\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f6\",\"claim\":\"Järvenpää·Siltala·Hylli·Lanz(Procedia CIRP 97, 2021)의 능력 매치메이킹 소프트웨어는 제품 요구와 자원 능력의 매칭을 자동화해 기존 생산 시스템이 새 제품 요구를 충족하는지 확인하고 대형 카탈로그에서 후보 자원을 찾으며, 외부 설계 도구와의 연동을 사례로 설명했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-890\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"탐페레대학교 연구 포털 초록: 소프트웨어가 \\\"automatizes the matchmaking between product requirements and resource capabilities\\\" 하고 대형 카탈로그에서 대안 자원을 식별하며 외부 설계 도구 연동을 사례로 설명. 온톨로지·규칙 구현 세부는 초록에 없음.\",\"as_of\":\"2021\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f7\",\"claim\":\"서로 다른 세 연구 그룹(LAAS 의 구성요소 기반 능력 추론, 탐페레대학교의 능력 매치메이킹, 헬무트 슈미트 대학의 이기종 로봇 능력 모델)이 온톨로지 기반 능력 기술로 작업·요구에 맞는 로봇·자원 후보를 찾는 접근을 각각 보고해, 능력 기반 로봇 후보 질의가 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-879\",\"ref-890\",\"ref-876\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"세 출처 모두 발행 주체가 다르고, 능력 기술을 근거로 작업 배정 가능 여부(LAAS)·후보 자원 식별(탐페레)·이기종 로봇 기능 기술(HSU)을 다룬다. 후보와 함께 근거(설명)를 돌려주는 기능은 세 초록 어디에도 명시되지 않았다.\",\"as_of\":\"2025-09-10\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f8\",\"claim\":\"Open-RMF 의 사용자 정의 작업 문서는 플릿 설정의 action_categories 로 지원 동작을 선언하고, add_performable_action 의 consider 콜백이 동작 설명을 보고 수락 여부를 정하며 set_action_executor 가 실행을 맡는 두 부분 API 를 정하고, 사용자 정의 동작 중 로봇은 읽기 전용 교통 참여자가 되어 교통 협상에 참여하지 않으며 문·승강기 사용은 사용자 정의 로직에서 바꿀 수 없다고 적는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-880\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"문서: action_categories: [\\\"clean\\\", \\\"manual_control\\\"] 예시; consider 콜백으로 수락 판단; 동작 중 로봇은 \\\"read-only\\\" 교통 참여자가 되어 교통 협상에 참여하지 않으며 문·승강기 조작은 사용자 정의 범위 밖. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"Open-RMF 플릿 어댑터 튜토리얼은 새 플릿 설정에 작업 능력(loop·delivery·clean)과 재충전 임계값, 배터리·기계 시스템 매개변수를 적게 하고 로봇 측 API 가 battery_soc 를 보고하게 하여, 능력 선언과 실행 시점 배터리 상태가 같은 설정·API 에 담긴다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-153\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"config.yaml 에 task_capabilities(loop·delivery·clean), recharge_threshold, 배터리·기계 시스템 매개변수를 적고 RobotAPI 가 battery_soc·is_command_completed 를 구현해야 한다. (재인용: 2026-09-29-07)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f10\",\"claim\":\"Mayr·Rovida·Krueger 의 SkiROS2(IROS 2023)는 스킬을 전제·유지·사후 조건으로 정의하고 OWL 세계 모델(지식 베이스)로 세계 상태와 개체를 추론하며 확장 행동 트리로 작업 계획과 반응적 실행을 합쳐, 서로 다른 작업과 로봇 시스템 사이에서 스킬을 교체해 쓰는 사례(작업 계획·추론·다중 센서 통합·제조 실행 시스템 연결 등)를 보였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-881\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 스킬 정식화는 \\\"pre-, hold- and post-conditions\\\" 에 기반하고, 계층적 혼합 제어 구조와 세계 상태 추론용 지식 베이스를 두며 세 가지 사용 사례로 작업·로봇 간 교체 가능성을 예시. 실제 로봇 배치 결과는 초록에 없음.\",\"as_of\":\"2023-06-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f11\",\"claim\":\"Ioannidou 외(Healthcare, 2025)의 의료 로봇 상위 온톨로지 HERON 은 SPARQL 질의로 특정 작업에 대한 에이전트 자격과 전제조건을 검사하고 SHACL 형상으로 역할 기반 권한·오버라이드 승인 같은 기관 정책 준수를 검증하며, 임상 배치 없이 Fundació Ave Maria 의료센터의 물류 운반·다중 로봇 플릿 조정 시뮬레이션 시나리오로 시연했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-885\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"PMC 전문: SPARQL 로 \\\"agent eligibility for specific tasks\\\" 와 전제조건을, SHACL 로 역할 기반 권한·오버라이드 승인을 검증; 물류 운반·e-진단 지원·다중 로봇 조정 시나리오를 시뮬레이션(2025-04-30).\",\"as_of\":\"2025-04-30\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f12\",\"claim\":\"서로 다른 세 발행 주체(룬드대학교의 SkiROS2, 그리스 연구진의 HERON, IDTA 의 능력 기술 서브모델)가 능력·스킬에 전제조건과 사후조건 같은 실행 조건을 붙이고 실행 전에 이를 검사하는 구조를 각각 두어, 이 영역의 실행 시점 조건 판단이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-881\",\"ref-885\",\"ref-884\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"SkiROS2 는 pre/hold/post 조건, HERON 은 SPARQL 전제조건·SHACL 정책 검사, IDTA 02020 은 preconditions·invariants·postconditions 속성 제약을 각각 정의. 배터리·문·승강기 같은 구체 상태를 조건으로 쓴 예는 HERON(운반 시나리오)과 Open-RMF(배터리) 외에는 확인하지 못했다.\",\"as_of\":\"2025-04-30\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f13\",\"claim\":\"Vieira da Silva 외(2023, 2024 개정)는 자산관리셸 서브모델과 능력·스킬 온톨로지가 서로 호환되지 않는 두 모델링 틀임을 분석하고, 비교 가능한 요소와 다른 요소를 가려낸 뒤 두 개의 단방향 선언적 매핑으로 이루어진 양방향 매핑 개념을 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-878\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"a concept for a bidirectional mapping between AAS submodels and a capability and skill ontology\\\" 를 \\\"two unidirectional, declarative mappings\\\" 로 구성(v2 2024-04-28).\",\"as_of\":\"2024-04-28\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Nabizada 외(IEEE CASE 2026 채택)는 네 가지 Industrie 4.0 표준으로 구조화한 자산관리셸 능력 모델에 완전한 PDDL 계획 문제를 자동 생성할 정보가 충분함을 보이고, PDDL 전용 서브모델 없이 분산 다중 자산관리셸 구조를 계획 문제로 변환하는 추출 알고리즘을 실험실 생산 시스템의 레이아웃 변형 4개 비교로 검증했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-877\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 알고리즘이 \\\"transforms distributed Multi-AAS architectures into complete PDDL planning problems\\\"; 실험실 생산 시스템 AAS 모델로 4개 레이아웃 변형을 최적 계획으로 비교(2026-06-01 제출).\",\"as_of\":\"2026-06-01\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"Nagrath·Blender·Shaik·Schlegel(2022)은 서비스 로봇에서 소프트웨어 컴포넌트의 자산관리셸을 표준화된 디지털 데이터 시트로, 시스템 수준 자산관리셸을 런타임 운영 데이터 수집과 스킬 수준 명령의 창구로 쓰며, 자산관리셸을 손으로 만들지 않고 모델 기반 개발·조합 워크플로에서 생성·채운다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-883\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"The AAS for a software component serves as a standardized digital data sheet\\\", 시스템 AAS 가 \\\"skill-level commanding of the service robot\\\" 을 가능하게 하며 \\\"AASs are generated and filled as part of our model-driven development and composition workflow\\\"(5쪽 작업 중 논문).\",\"as_of\":\"2022-08-02\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"Sidorenko 외(FAIM 2021)는 스킬을 유한 상태 기계로 OPC UA 에 노출하고 Industrie 4.0 언어 메시지와 상호작용 상태 기계를 능동 자산관리셸 안에 모델링한 스킬 실행 상호작용 프로토콜을 제시해, 두 Industrie 4.0 컴포넌트가 계층적 제어 대신 동등 협력 방식으로 스킬을 함께 실행하는 예시를 시연했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-887\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Zenodo 초록: I4.0 언어 메시지와 상호작용 상태 기계의 모델링으로 사이버 물리 생산 모듈이 스킬을 협력 사용하게 하고, 두 컴포넌트의 협력 스킬 실행 예시를 제시(2021-11-03).\",\"as_of\":\"2021-11-03\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f17\",\"claim\":\"서로 다른 세 발행 주체(Schlegel 연구진, SmartFactory-KL 계열 Sidorenko 연구진, CaSkade 의 CSS 온톨로지)가 능력 모델과 별도로 스킬 실행 인터페이스(OPC UA 서버·상태 기계·자산관리셸 스킬 명령)를 두고 능력→스킬→인터페이스 순으로 실제 명령에 묶는 구조를 각각 보고해, 이 영역의 능력–실행 연결 방식이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-883\",\"ref-887\",\"ref-882\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"CSS 온톨로지는 SkillInterface 를 필수로, Sidorenko 외는 OPC UA 상태 기계 스킬 실행 프로토콜을, Nagrath 외는 시스템 AAS 의 스킬 수준 명령을 기술. 검토·승인되지 않은 연결의 실행을 막는 관문은 세 출처 모두 명시하지 않았다.\",\"as_of\":\"2022-08-02\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"ROS 2 패키지 vda5050_connector(1.1.1, BSD-3, VDA 5050 2.0 지원)는 MQTT 브리지·컨트롤러(주문 검증·실행·피드백)·어댑터의 세 부분으로 로봇을 VDA 5050 관제에 연결하며, 어댑터는 상태·노드 주행·VDA 동작의 세 핸들러를 플러그인으로 두어 로봇 플랫폼마다 사용자가 핸들러 패키지를 직접 만들어야 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-886\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"index.ros.org: 어댑터는 State Handler·NavToNode Handler·VDA Action Handler 세 종류를 요구하고 \\\"Users must create custom adapter packages defining these handlers for their specific robot platform\\\"; 지원 버전 2.0. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f19\",\"claim\":\"등록된 능력 모델에서 어댑터 설정·명령 매핑·상태 변환 규칙의 초안을 자동으로 만들었다고 직접 보고한 자료는 이번 조사에서 확인되지 않았으며, 확인된 것은 모델 간 선언적 매핑(f13), 자산관리셸에서 계획 도메인 자동 생성(f14), 모델 기반 자산관리셸 생성(f15), 어댑터의 고정된 핸들러 구조(f18·f9)이므로 이를 결합하면 능력 모델에서 핸들러·설정 초안을 만드는 경로가 가능해 보이나 사례는 미확인이다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-878\",\"ref-877\",\"ref-886\",\"ref-153\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"네 출처를 종합한 추정. 매핑·생성 연구는 모두 제조 자산관리셸·PDDL 대상이고, 이동로봇 플릿 어댑터(Open-RMF·VDA 5050 커넥터)의 설정·핸들러를 능력 모델에서 생성한 사례는 찾지 못했다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"서로 다른 두 발행 주체(Open Robotics 의 플릿 어댑터·사용자 정의 작업 문서, ROS 패키지 색인의 vda5050_connector)가 로봇 연동 어댑터를 '플릿·능력 설정'과 '로봇별 핸들러·API 구현'의 두 부분으로 각각 구성해, 온톨로지로 자동화할 수 있는 부분(설정·매핑)과 손작업이 남는 부분(로봇별 구현)의 경계가 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-880\",\"ref-153\",\"ref-886\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"Open-RMF 는 config.yaml 의 능력·동작 선언과 RobotAPI·action executor 구현으로, vda5050_connector 는 설정과 세 핸들러 플러그인 구현으로 나뉜다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"창이종합병원 CHART 는 KONE·Smart Urban Co-Innovation Lab·AWS·CapitaLand 와 함께 캐피털랜드 Galen 오피스 빌딩에서 개방 API 를 가진 KONE DX 급 승강기와 RMF 로 자율이동로봇이 여러 층을 오가는 시험 환경을 만들고, 청소·보안·배송·컨시어지 등 여러 업체 로봇으로 시험을 확대할 계획을 밝혔으나 업체 수와 정량 결과는 공개 페이지에 없다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-889\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"페이지: KONE 이 승강기를 개방 API 로 현대화해 \\\"autonomous mobile robots to traverse across different levels\\\" 가능; Galen 빌딩이 로봇–승강기 연동의 실환경 시험장; 여러 로봇 업체 시험은 다음 단계. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":\"기타\",\"flow_item\":\"수행 자원\"},{\"id\":\"f22\",\"claim\":\"Valner 외(2022)의 타르투대학교병원 현장 시험에서는 프로그램 제어가 없는 병원 문을 카드 인식·근접 센서를 대신 작동시키는 서보 장치로 보완해야 했으므로, 온톨로지·설정만으로 연동되지 않는 설비가 남아 손작업 없는 연동의 한계를 보여준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-874\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"PAL Robotics TIAGo 를 FreeFleet 클라이언트·서버와 RMF 어댑터 파일로 등록했고, 프로그램 제어가 없는 문은 서보 장치를 만들어 지났다. (재인용: 2026-09-29-07)\",\"as_of\":\"2022-08-23\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f23\",\"claim\":\"황선명(보안공학연구논문지 8권 1호, 2011)은 컴포넌트 온톨로지와 환경 온톨로지를 구축해 사람의 명령을 사전 정의된 작업에 연결하고 환경 온톨로지에서 매개변수를 얻어 필요한 컴포넌트 목록을 구성·실행하는 로봇 컴포넌트 동적 재구성 방법을 제안했으며, 이는 이번 조사에서 확인된 유일한 국내 온톨로지 기반 로봇 연동 연구다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-888\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KCI 초록: \\\"By constructing component ontology and environment ontology, robot constitutes component list needed to preliminarily defined TASK according to person's order\\\"; 평가는 목표 지점 이동 시간 개선 서술.\",\"as_of\":\"2011\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토하게 하여, 온톨로지 기반 연동의 앞 단계인 능력 모델 작성 부담을 줄이는 방법을 제안했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-465\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"자연어 능력 설명을 프롬프트에 넣어 능력 온톨로지를 생성하고 자동 검증 뒤 사람이 최종 검토·수정. (재인용: 2026-09-29-07)\",\"as_of\":\"2024-10-18\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f25\",\"claim\":\"확인한 자료를 종합하면 6. 온톨로지 기반 시스템·로봇 연동에서 ROP가 직접 맡을 범위는 능력 온톨로지 질의로 후보 로봇을 찾아 근거와 함께 돌려주는 기능, 능력→스킬→인터페이스 매핑표와 그 검토·승인 기록, 어댑터 설정·핸들러 초안 생성, 실행 전 전제조건·정책 검사(배터리·문·승강기 상태)이며, 근거를 함께 돌려주는 설명 기능과 검토되지 않은 연결의 실행 차단은 확인한 출처 어디에도 명시되지 않아 ROP 가 따로 설계해야 할 요구로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-882\",\"ref-880\",\"ref-886\",\"ref-885\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"CSS 온톨로지·Open-RMF 사용자 정의 작업·vda5050_connector·HERON 을 종합한 추정. Open-RMF 의 consider 콜백(f8)과 HERON 의 SHACL 정책 검사(f11)가 승인 관문의 부분 선례다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"연계 대상: 스킬의 내부 구현과 상태 기계 실행(OPC UA 서버·로봇 SDK 쪽)과 승강기 제조사의 개방 API 자체는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 쪽이므로, 이종 제조사를 잇는 ROP 는 스킬 인터페이스 호출·상태 확인·완료 판정과 승강기 사용 요청·인계만 맡고 구현 성능은 제조사·설비 측에 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-887\",\"ref-889\",\"ref-882\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Sidorenko 외의 OPC UA 스킬 상태 기계, CGH 의 KONE 개방 API 승강기, CSS 온톨로지의 스킬 인터페이스 분리를 근거로 한 경계 추정.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f27\",\"claim\":\"이 영역은 능력 표현을 주는 5. 로봇 능력·작업 표현과 등록 데이터를 주는 4. 이기종 로봇 등록, 매핑·제약을 검증하는 7. 온톨로지 검증·변경 관리를 앞뒤로 두고, 어댑터·규격은 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성, 문·승강기 상태는 22. 설비·건물 시스템 연동, 후보 질의 결과는 25. 작업 배정 — MRTA, 실행 조건과 완료 판정은 29. 명령·작업 실행의 신뢰성과 18. 실시간 세계 상태·데이터 일관성에 이어지며, 언어 모델로 능력 온톨로지를 만드는 방법(f24)은 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영에도 연결된다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-880\",\"ref-884\",\"ref-885\",\"ref-465\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Open-RMF 사용자 정의 작업(문·승강기 제외, 교통 협상 제외), IDTA 02020 제약, HERON 전제조건 검사, 언어 모델 능력 온톨로지 생성을 근거로 한 영역 연결 추정.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f28\",\"claim\":\"oq-150 관련: Open-RMF 의 task_capabilities·action_categories 로 청소·수동 제어 같은 팩트시트에 없는 능력을 선언하는 방법은 공식 문서(f8·f9)로 확인되지만 문·승강기 사용은 사용자 정의 동작이 아니라 플랫폼 기능이라 그 경로로 등록하지 않으며, 자산관리셸 능력 기술 서브모델을 로봇 현장에서 실제로 썼다는 사례는 확인되지 않아 oq-150 은 미해결로 남는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-880\",\"ref-884\",\"ref-153\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"Open-RMF 문서는 사용자 정의 동작이 문·승강기 조작을 바꿀 수 없다고 적고, IDTA 02020 README 는 생산 계획 대상만 언급하며 로봇 현장 적용 사례를 들지 않는다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-876\",\"org\":\"Vieira da Silva, L. M., Köcher, A., & Fay, A. (Helmut Schmidt University)\",\"title\":\"A Capability and Skill Model for Heterogeneous Autonomous Robots\",\"published\":\"2023-02-09\",\"url\":\"https://arxiv.org/abs/2209.10900\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"이기종 자율 로봇 팀의 기능을 일관되게 기술할 방법이 없다는 문제를 들어 제조업 능력·스킬 모델링을 자율 로봇에 적용한 능력 모델을 제안한 프리프린트(초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2209.10900\"},{\"id\":\"ref-877\",\"org\":\"Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A. (IEEE CASE 2026 채택)\",\"title\":\"From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation\",\"published\":\"2026-06-01\",\"url\":\"https://arxiv.org/abs/2606.02167\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자산관리셸 능력 모델에서 PDDL 계획 문제를 자동 생성하는 추출 알고리즘을 제시하고 실험실 생산 시스템의 레이아웃 변형 4개 비교로 검증한 프리프린트(초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2606.02167\"},{\"id\":\"ref-878\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A.\",\"title\":\"Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies\",\"published\":\"2024-04-28\",\"url\":\"https://arxiv.org/abs/2307.00827\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자산관리셸 서브모델과 능력·스킬 온톨로지 사이의 양방향 매핑을 두 개의 단방향 선언적 매핑으로 구성하는 개념을 제시한 프리프린트(초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2307.00827\"},{\"id\":\"ref-879\",\"org\":\"Dussard, B., Sarthou, G., & Clodic, A. (LAAS-CNRS)\",\"title\":\"Ontological Component-based Description of Robot Capabilities\",\"published\":\"2025-09-10\",\"url\":\"https://arxiv.org/abs/2306.07569\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"로봇의 구성요소와 하위 능력에서 상위 능력을 온톨로지로 추론해 배정 가능한 작업을 판단하고 어포던스 관계를 추론하는 방법을 제안한 프리프린트(v3, 초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2306.07569\"},{\"id\":\"ref-880\",\"org\":\"Open Robotics (Programming Multiple Robots with ROS 2)\",\"title\":\"User-defined Tasks - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/task_userdefined.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"Open-RMF 의 사용자 정의 작업(perform_action) 지원 방식: action_categories 선언, add_performable_action 의 consider 콜백, set_action_executor, 동작 중 읽기 전용 교통 참여자, 문·승강기 조작 제외.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://osrf.github.io/ros2multirobotbook/task_userdefined.html\"},{\"id\":\"ref-881\",\"org\":\"Mayr, M., Rovida, F., & Krueger, V. (Lund University, IROS 2023)\",\"title\":\"SkiROS2: A skill-based Robot Control Platform for ROS\",\"published\":\"2023-06-29\",\"url\":\"https://arxiv.org/abs/2306.17030\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"전제·유지·사후 조건으로 정의한 스킬, OWL 세계 모델, 확장 행동 트리로 계획과 실행을 합친 ROS 기반 스킬 제어 플랫폼(초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2306.17030\"},{\"id\":\"ref-882\",\"org\":\"CaSkade-Automation (Helmut Schmidt University, Institute of Automation Technology) GitHub 공식 저장소\",\"title\":\"CSS — An ontology for the Capability, Skill and Service model of Plattform Industrie 4.0 (README)\",\"published\":null,\"url\":\"https://github.com/CaSkade-Automation/CSS\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"Plattform Industrie 4.0 의 능력·스킬·서비스 참조 모델을 구현한 OWL 온톨로지 README. 능력·스킬·서비스·속성·스킬 인터페이스 정의와 확장 온톨로지(CaSk·CaSkMan·RoboCaSk)를 소개한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/CaSkade-Automation/CSS/main/README.md\"},{\"id\":\"ref-883\",\"org\":\"Nagrath, V., Blender, T., Shaik, N., & Schlegel, C. (Technische Hochschule Ulm)\",\"title\":\"Industry 4.0 Asset Administration Shell (AAS): Interoperable Skill-Based Service-Robots\",\"published\":\"2022-08-02\",\"url\":\"https://arxiv.org/abs/2208.01273\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"서비스 로봇의 소프트웨어 컴포넌트·시스템 수준 자산관리셸을 디지털 데이터 시트와 스킬 수준 명령 창구로 쓰고 모델 기반 개발 워크플로에서 생성하는 접근(작업 중 논문, 초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2208.01273\"},{\"id\":\"ref-884\",\"org\":\"Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소\",\"title\":\"IDTA 02020 Submodel Template: Capability Description — README (published/Capability Description/1/0)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"요구 능력과 제공 능력의 비교를 목적으로 능력을 속성·제약(전제조건·불변·사후조건, 전이 제약)·스킬의 세 관계로 모델링하는 자산관리셸 서브모델 템플릿 1.0 판 README.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md\"},{\"id\":\"ref-885\",\"org\":\"Ioannidou, P., Vezakis, I., Haritou, M., Petropoulou, R., Miloulis, S. T., Kouris, I., Bromis, K., Matsopoulos, G. K., & Koutsouris, D. D. (Healthcare, Basel)\",\"title\":\"HEalthcare Robotics' ONtology (HERON): An Upper Ontology for Communication, Collaboration and Safety in Healthcare Robotics\",\"published\":\"2025-04-30\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"의료 로봇 상위 온톨로지 HERON. SPARQL 로 작업 자격·전제조건을, SHACL 로 역할 기반 정책을 검증하며 의료센터 물류·다중 로봇 시나리오를 시뮬레이션으로 시연(전문 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/\"},{\"id\":\"ref-886\",\"org\":\"ROS Index (InOrbit ros_amr_interop, 유지관리자 Leandro Pineda)\",\"title\":\"vda5050_connector - ROS Package Overview\",\"published\":null,\"url\":\"https://index.ros.org/p/vda5050_connector/\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"ROS 2 로봇을 VDA 5050 2.0 관제에 잇는 커넥터 패키지(1.1.1, BSD-3). MQTT 브리지·컨트롤러·어댑터 구조와 로봇별로 구현해야 하는 세 핸들러 플러그인을 설명한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://index.ros.org/p/vda5050_connector/\"},{\"id\":\"ref-887\",\"org\":\"Sidorenko, A., Volkmann, M., Motsch, W., Wagner, A., & Ruskowski, M. (FAIM 2021, Zenodo)\",\"title\":\"An OPC UA Model of the Skill Execution Interaction Protocol for the Active Asset Administration Shell\",\"published\":\"2021-11-03\",\"url\":\"https://zenodo.org/records/5648095\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"스킬을 유한 상태 기계로 OPC UA 에 노출하고 I4.0 언어 메시지·상호작용 상태 기계를 능동 자산관리셸에 모델링한 스킬 실행 프로토콜과 두 컴포넌트 협력 실행 예시(Zenodo 초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://zenodo.org/records/5648095\"},{\"id\":\"ref-888\",\"org\":\"황선명 (대전대학교, 보안공학연구논문지 8(1))\",\"title\":\"온톨로지 기반의 로봇 동적재구성에 관한 연구\",\"published\":\"2011\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001533055\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"컴포넌트 온톨로지와 환경 온톨로지로 사람의 명령을 사전 정의 작업에 연결하고 필요한 컴포넌트를 구성·실행하는 로봇 동적 재구성 방법을 제안한 국내 논문(KCI 초록 열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001533055\"},{\"id\":\"ref-889\",\"org\":\"Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CGH-CHART)\",\"title\":\"Robot-Lift Integration Challenge | Changi General Hospital\",\"published\":null,\"url\":\"https://www.cgh.com.sg/chart/projects/romi-h/robot-lift-integration-challenge\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"CGH-CHART·KONE·Smart Urban Co-Innovation Lab·AWS·CapitaLand 가 Galen 오피스 빌딩에서 개방 API 승강기와 RMF 로 로봇 층간 이동을 시험하는 프로젝트 소개 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.cgh.com.sg/chart/projects/romi-h/robot-lift-integration-challenge\"},{\"id\":\"ref-890\",\"org\":\"Järvenpää, E., Siltala, N., Hylli, O., & Lanz, M. (Tampere University, Procedia CIRP 97)\",\"title\":\"Capability matchmaking software for rapid production system design and reconfiguration planning\",\"published\":\"2021\",\"url\":\"https://researchportal.tuni.fi/en/publications/capability-matchmaking-software-for-rapid-production-system-desig/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"제품 요구와 자원 능력의 매칭을 자동화해 대형 카탈로그에서 후보 자원을 찾는 매치메이킹 소프트웨어와 외부 설계 도구 연동 사례(연구 포털 초록 열람, CC BY-NC-ND 공개).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://researchportal.tuni.fi/en/publications/capability-matchmaking-software-for-rapid-production-system-desig/\"},{\"id\":\"ref-153\",\"org\":\"Open Robotics (Programming Multiple Robots with ROS 2)\",\"title\":\"Fleet Adapter Tutorial (integration_fleets_action_tutorial) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"Open-RMF 플릿 어댑터 설정(config.yaml)의 항목과 로봇 측 RobotAPI 구현 요구를 설명하는 튜토리얼(이전 실행 2026-09-29-07 재사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-874\",\"org\":\"Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI\",\"title\":\"Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test\",\"published\":\"2022-08-23\",\"url\":\"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"타르투대학교병원에서 Open-RMF 로 이기종 로봇 플릿을 등록·운용한 현장 시험(이전 실행 2026-09-29-07 재사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-465\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"Toward a Method to Generate Capability Ontologies from Natural Language Descriptions\",\"published\":\"2024-10-18\",\"url\":\"https://arxiv.org/abs/2406.07962\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 자동 검증 뒤 사람이 최종 검토하는 방법(이전 실행 2026-09-29-07 재사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/ontology-based-system-and-robot-integration.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f4(이기종 로봇 기능을 일관되게 기술할 방법 부재), f20(어댑터가 설정과 로봇별 구현으로 나뉘어 손작업이 남음), f22(설비가 프로그램 제어를 못 하면 온톨로지·설정만으로 연동되지 않음) / 섹션 4: f1(능력·스킬·서비스·스킬 인터페이스), f2(속성·제약·스킬, 전제조건·불변·사후조건), f10(전제·유지·사후 조건), f8(수행 가능 동작·action_categories), f5(구성요소 기반 능력 추론·어포던스) / 섹션 5: 병원 — f11(HERON 의료센터 시뮬레이션: 물류 운반·다중 로봇 조정, 임상 배치 아님을 명시), f22(타르투대학교병원 문 보완 장치), 기타 — f21(싱가포르 Galen 오피스 빌딩 승강기 연동 시험 환경), 제조 공장·물류창고 현장 사례는 확인되지 않음을 서술(f6·f14 는 생산 시스템 설계·실험실 수준) / 섹션 6: 능력 기반 후보 질의 f5·f6·f7, 능력–실행 연결 f1·f15·f16·f17·f8, 연동 자동화 f13·f14·f15·f19(자동 생성 사례 미확인은 추정), 실행 시점 조건 판단 f9·f10·f11·f12, 앞 단계 능력 모델 생성 f24(교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영 함께 연결) / 섹션 7: f1(CSS 온톨로지), f2(IDTA 02020), f8·f9(Open-RMF 사용자 정의 작업·플릿 어댑터), f18(vda5050_connector), f16(OPC UA 스킬 실행 프로토콜), f10(SkiROS2) / 섹션 8: f4, f5, f6, f13, f14, f15, f16, f11, 국내 f23 / 섹션 9: f25(직접 범위: 후보 질의·매핑표·검토 승인 기록·설정 초안·전제조건 검사), f26(연계 대상: 스킬 내부 구현·승강기 API) / 섹션 10: f27 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 7. 온톨로지 검증·변경 관리, 18. 실시간 세계 상태·데이터 일관성, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 22. 설비·건물 시스템 연동, 25. 작업 배정 — MRTA, 29. 명령·작업 실행의 신뢰성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 63. 병원·의료(f11·f22) / 섹션 11: 기존 oq-150(f28 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 22. 설비·건물 시스템 연동 페이지에 f8·f21 반영, 21. 상호운용 표준·적합성 페이지에 f2·f13·f18 반영, 25. 작업 배정 — MRTA 페이지에 f5·f7 반영, 트랙 manual-capability-ontology 단계 4(실행 연결)에 f1·f16·f17 참고.\"}],\"glossary_candidates\":[{\"term_ko\":\"스킬 인터페이스\",\"term_en\":\"Skill Interface\",\"definition\":\"능력·스킬·서비스 모델에서 스킬을 외부에서 제어하기 위해 반드시 두는 접점(예: OPC UA 서버)으로, 스킬 구현과 분리되어 같은 스킬을 여러 프로토콜로 노출할 수 있게 한다.\"},{\"term_ko\":\"전제·유지·사후 조건\",\"term_en\":\"Pre-, Hold-, Post-condition\",\"definition\":\"스킬이 시작될 때 참이어야 하는 조건(전제), 실행 중 계속 유지되어야 하는 조건(유지), 끝난 뒤 성립해야 하는 조건(사후)으로 스킬을 정의해 실행 가능 여부 판단과 완료 확인에 쓰는 방식이다.\"},{\"term_ko\":\"수행 가능 동작\",\"term_en\":\"Performable Action (Open-RMF perform_action)\",\"definition\":\"Open-RMF 에서 플릿이 지원한다고 선언한 사용자 정의 동작으로, 플릿 어댑터가 수락 여부를 판단하고 실행하는 동안 관제는 로봇 제어를 넘기고 교통 협상에서 제외한다.\"}],\"open_questions_new\":[\"등록된 능력 온톨로지나 자산관리셸 능력 기술에서 플릿 어댑터의 설정·명령 핸들러·상태 변환 규칙 초안을 자동 생성한 공개 구현이나 현장 사례가 있는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 20. 로봇·제조사 관제 연동, 4. 이기종 로봇 등록 | 근거: f19 | 종류: 일반\",\"Open-RMF 사용자 정의 동작이 교통 협상에서 빠지고 문·승강기 조작을 바꿀 수 없을 때, ROP 는 그 동작의 배터리·설비 상태 같은 실행 시점 조건을 어디에서 검사하고 실패를 어떻게 복구하는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 28. 공용 자원·충전·에너지 최적화, 29. 명령·작업 실행의 신뢰성 | 근거: f8 | 종류: 일반\",\"국내 현장에서 온톨로지나 능력 모델로 이기종 로봇 후보를 질의해 배정·연동한 운영 사례가 있는가(이번 조사에서 확인된 국내 자료는 2011년 연구 한 건뿐이다)? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 25. 작업 배정 — MRTA | 근거: f23 | 종류: 일반\",\"제조업의 능력·스킬·서비스 모델(CSS 온톨로지·IDTA 02020)과 이동로봇 규격(VDA 5050 팩트시트·IDTA 02047 AGV 기술 데이터·Open-RMF 작업 능력) 사이의 능력 대응표가 공식으로 제공되는가, 아니면 ROP 가 직접 매핑을 만들어 관리해야 하는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 5. 로봇 능력·작업 표현 | 근거: f13 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":18,\"cross_checked_count\":5,\"unverified\":[\"f6 탐페레 매치메이킹의 OWL 온톨로지·SPIN 규칙 구현 세부는 검색 결과 요약에서만 보였고 연 초록 페이지에 없어 claim 에 넣지 않음(Procedia CIRP ScienceDirect 원문 403)\",\"f3 CSS 온톨로지와 IDTA 02020 은 모두 Plattform Industrie 4.0 CSS 참조 모델에서 파생되어 독립성이 제한적임(신뢰도 medium 으로 둠)\",\"f2 IDTA 02020 1.0 판 발행일 미확인(README 에 날짜 없음), f1·f8·f18·f21 출처 발행일 미확인\",\"f11 HERON 은 임상 배치 없는 시뮬레이션 시나리오이며 배터리·문·승강기 같은 구체 상태 조건은 전문에서 확인하지 못함\",\"f14 AAS→PDDL 생성의 정량 결과와 f10 SkiROS2 의 실기 배치 결과는 초록에 없어 미확인\",\"f16 Sidorenko 외 논문은 Zenodo 초록만 확인(상태 기계 세부 미확인)\",\"MDPI Electronics 15(16):3562 'Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation'(배터리·층 접근 조건의 의미 기반 실행 가능성 추론)은 두 경로 모두 403 으로 열지 못해 넣지 않음 — 실행 시점 조건 판단의 핵심 후보 출처\",\"Järvenpää 외 'Semantic rules for capability matchmaking'(IJCIM 2022, tandfonline)과 'development of an ontology for describing the capabilities of manufacturing resources'(Springer JIM 2018)는 403·인증 리다이렉트로 열지 못함\",\"Plattform Industrie 4.0 CSS 토론 문서는 웹 페이지가 보안 검증으로 막히고 PDF 는 텍스트 추출이 되지 않아 CSS 온톨로지 README(ref-882)로 대신함 — 참조 모델 원문 미열람\",\"RoboCaSk 온톨로지 저장소 raw README 는 404 로 확인하지 못해 f1 에 이름만 적음\",\"f7·f17 외 능력 기반 후보 질의가 '근거와 함께' 후보를 돌려주는 설명 기능은 어느 출처에서도 확인하지 못함\",\"oq-150 미해결(f28)\",\"f3·f7·f12·f17·f20 외 모든 finding 교차 확인 실패(연구·문서마다 발행 주체 한 곳)\"],\"scope_violations\":[\"f26: 스킬 내부 구현·OPC UA 상태 기계 실행과 승강기 제조사 API 는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 연계 영역이므로 '연계 대상: '으로 표시함\",\"f21: 승강기 개방 API 연동은 22. 설비·건물 시스템 연동의 범위와 겹치므로 이 영역에서는 온톨로지·플랫폼 기반 이기종 로봇의 층간 이동 시험 환경 사례로만 제안함\",\"f11: HERON 의 역할 기반 권한·오버라이드 정책 검사는 48. 안전·위험 관리·51. 인증·권한·격리와 겹치므로 실행 시점 조건 판단 사례로만 제안함\",\"f14·f6: 제조 생산 시스템 설계·계획 도메인 생성 연구는 이동로봇 플랫폼이 아니므로 능력 모델에서 실행 산출물을 자동 생성하는 방법의 선례로만 제안함\",\"f24: 언어 모델 능력 온톨로지 생성은 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f27)\"],\"budget_used\":{\"queries\":17,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-876~ref-890, 예약 구간 안) 상한 도달로 CSS 참조 모델 논문(arXiv 2209.09632), ETFA 능력·스킬 서베이(arXiv 2204.12908), MiR VDA 5050 어댑터 벤더 블로그, RoSO/SMGI(arXiv 2605.08185), 온톨로지 기반 로봇 사양 합성(arXiv 2602.05456), 국내 클라우드 기반 이기종 다중로봇 플랫폼(제어로봇시스템학회 2023, 온톨로지 언급 없음)은 열었으나 넣지 않았다. 원문 열람 15건(github_raw 2: CSS 온톨로지 README·IDTA 02020 README, webfetch 13: arXiv 초록 7건, PMC 전문 1건, Open-RMF 문서, ROS Index, Zenodo, KCI 초록, CGH 페이지, 탐페레 연구 포털), 재사용 3건(ref-153·ref-874·ref-465, 이전 브리프 2026-09-29-07 의 값 그대로, 이번에 다시 열지 않음). 주의: 실행 컨텍스트가 예약한 ref-876~ref-905 구간은 같은 날 이전 실행 2026-09-29-07 이 ref-876·ref-878·ref-880·ref-881·ref-883 으로 낸 다른 URL 과 번호가 겹치므로 퍼블리셔가 URL 기준으로 합칠 때 번호 충돌을 확인해야 한다. 교차 확인 5건(f3: CaSkade·IDTA — 공통 참조 모델 파생이라 medium, f7: LAAS·탐페레·HSU, f12: 룬드·그리스 연구진·IDTA, f17: Schlegel 연구진·Sidorenko 연구진·CaSkade, f20: Open Robotics·ROS Index/InOrbit). 신뢰도 high 는 f12·f20 두 건(각각 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(온톨로지로 새 로봇·새 시스템을 손작업 없이 연동)에는 f1·f2·f3(능력–스킬–인터페이스 분리와 요구/제공 매칭 모델), f5·f6·f7(능력 기반 후보 질의), f13·f14·f15(모델 매핑·계획 도메인·자산관리셸 자동 생성), f8·f18·f20(어댑터의 설정 부분과 로봇별 구현 부분), f9~f12(실행 조건 검사)로 답했으며 결론은 '능력 모델과 실행 인터페이스를 잇는 구조와 조건 검사는 여러 곳에서 확인되지만, 능력 모델에서 어댑터 설정·핸들러 초안을 자동 생성해 손작업을 없앤 사례와 근거를 함께 돌려주는 후보 질의는 확인되지 않았다'는 추정(f19·f25)이다. 현장 유형: 병원(f11 시뮬레이션, f22 타르투대학교병원 재인용), 기타(f21 싱가포르 오피스 빌딩)만 확인했고 제조 공장·물류창고·상업 시설·가정·실외 현장 사례는 없다(제조 관련 출처는 생산 시스템 설계·실험실 수준). 국내 자료는 KCI 논문(f23, 2011) 한 건이며 국내 운영 사례는 찾지 못했다. 벤더 문서 출처 없음(MiR 블로그는 출처 상한으로 제외). L. AI·학습 기술 관련 finding(f24)은 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성은 실행 조건의 현재 상태 연결로만 제안했고 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 없다. 용어집에 이미 있는 스킬·능력 매칭·요구 능력·제공 능력·능력·스킬·서비스 모델·능력 기술 서브모델·형상 제약 언어·플릿 어댑터·어포던스·자산관리셸·계획 도메인 정의 언어·행동 트리는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-150 은 f28 로 부분 진전만).\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-08",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 6,
+      "area_name": "6. 온톨로지 기반 시스템·로봇 연동",
+      "category": "B. 로봇 온톨로지"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 스킬 인터페이스·전제·유지·사후 조건·수행 가능 동작 용어 없음(스킬·능력 매칭·요구 능력·제공 능력·능력·스킬·서비스 모델·능력 기술 서브모델·형상 제약 언어·플릿 어댑터·자산관리셸은 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 능력 기반 로봇 후보 질의, 능력–실행 연결(능력→스킬→인터페이스), 온톨로지 기반 연동 자동화(모델 매핑·설정 초안 생성), 실행 시점 조건 판단(전제조건·상태 검사) 네 갈래 모두 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 능력·스킬·서비스 모델 온톨로지, IDTA 02020 능력 기술 서브모델, Open-RMF 사용자 정의 작업, VDA 5050 커넥터, OPC UA 스킬 실행 프로토콜, SkiROS2 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 22. 설비·건물 시스템 연동, 25. 작업 배정 — MRTA, 29. 명령·작업 실행의 신뢰성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-150 미반영, 정정 요청 없음",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "온톨로지를 이용해 새 로봇과 새 시스템을 손작업 없이 어떻게 연동할 것인가? [분류원문]",
+      "작업 요구에 맞는 로봇·자원 후보를 온톨로지 질의로 찾고 근거와 함께 돌려주는 능력 매칭 접근에는 무엇이 있는가? (섹션 4·6·8 겨냥)",
+      "온톨로지의 능력을 실제 로봇 명령·어댑터·스킬 인터페이스에 묶는 모델(능력·스킬·서비스 모델, 자산관리셸 능력 기술, OPC UA 스킬, Open-RMF 사용자 정의 작업)은 무엇을 정하며, 검토되지 않은 연결의 실행을 어떻게 막는가? (섹션 6·7 겨냥)",
+      "등록된 능력 모델로 어댑터 설정·명령 매핑·상태 변환 규칙의 초안을 자동으로 만드는 방법(모델 간 매핑, 계획 도메인 자동 생성, 모델 기반 생성)은 무엇이 보고되었는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)",
+      "배터리·적재·문·승강기 같은 현재 상태로 능력을 지금 실행할 수 있는지 판단하는 전제조건·정책 검사(SPARQL·SHACL, 전제·유지·사후 조건)는 어떻게 구현되는가? (섹션 4·6 겨냥)",
+      "oq-150 팩트시트·명판에 없는 능력(문 조작·승강기 탑승·인계 동작 등)을 등록할 때 Open-RMF 의 task_capabilities 나 자산관리셸 능력 기술 서브모델을 실제로 쓴 사례가 있는가? (섹션 5·11 겨냥, 현장 유형 명시·한국 자료 우선)",
+      "온톨로지 기반 연동에서 ROP가 직접 맡을 것(후보 질의·매핑·설정 초안·조건 검사)과 스킬 내부 구현·설비 API 에 맡길 것의 경계는 어디이며, 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Plattform Industrie 4.0 의 능력·스킬·서비스(CSS) 참조 모델을 구현한 CSS 온톨로지는 능력을 산업 생산에서 효과를 내는 기능의 구현 독립적 명세로, 스킬을 능력을 구현한 실행 가능한 자동화 기능으로, 서비스를 제공 능력의 상업적 측면 기술로 정의하고, 모든 스킬이 외부 제어를 위한 스킬 인터페이스(예: OPC UA 서버)를 가져야 한다고 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-882"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "저장소 README: Capability 는 \"implementation-independent specification of a function in industrial production\", Skill 은 실행 가능한 구현이며 SkillInterface(OPC UA 서버 등)가 외부 제어에 필요. 확장 온톨로지로 CaSk·CaSkMan·RoboCaSk 를 든다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "IDTA 02020 능력 기술(Capability Description) 서브모델 1.0 판은 생산 공정의 요구 능력과 가용 자원의 제공 능력을 비교하는 기반을 목적으로 하며, 능력을 속성(최대 속도·허용 공차 등), 제약(전제조건·불변·사후조건의 속성 제약과 순서·병렬의 전이 제약), 능력을 구현하는 스킬(기술·소프트웨어 모듈)의 세 관계로 모델링한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-884"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 서브모델은 \"required capabilities\" 와 \"provided capabilities\" 의 매칭 기반을 두고, 속성·제약(property constraints: preconditions, invariants, postconditions; transition constraints)·스킬의 세 관계로 능력을 기술. 1.0 판이 첫 공식 발행. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f3",
+        "claim": "서로 다른 두 발행 주체(헬무트 슈미트 대학 계열 CaSkade 의 CSS 온톨로지, IDTA 의 능력 기술 서브모델)가 구현 독립적 능력과 실행 구현인 스킬을 분리하고 요구 능력–제공 능력 매칭을 모델의 목적으로 각각 정의해, 이 영역의 능력–실행 분리 구조가 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-882",
+          "ref-884"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "두 문서 모두 능력을 'implementation-independent specification' 으로, 스킬을 능력을 구현하는 모듈로 두고 요구/제공 능력 비교를 언급. 둘 다 Plattform Industrie 4.0 CSS 참조 모델에서 파생되어 완전 독립은 아니므로 신뢰도는 medium 으로 둔다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "Vieira da Silva·Köcher·Fay(2022, 2023 개정)는 이기종 자율 로봇 팀에서 각 로봇이 제공하는 기능을 일관되게 기술하는 방법이 없다고 지적하고, 제조업의 능력·스킬 모델링 접근을 자율 로봇에 적용한 능력 모델을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-876"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"there is no consistent way of describing the functions that each robot provides\"; 제조업 능력 모델링을 이기종 자율 로봇에 확장하는 접근을 제시(v2 2023-02-09).",
+        "as_of": "2023-02-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "Dussard·Sarthou·Clodic(2023, 2025 개정)은 로봇이 보유한 물리 구성요소와 하위 능력으로부터 상위 능력을 온톨로지 추론으로 도출해 로봇이 어떤 작업에 배정될 수 있고 없는지를 스스로 판단하게 하고, 능력과 외부 객체 속성 사이의 어포던스 관계까지 추론하는 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-879"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 구성요소 기반으로 능력을 추론하는 온톨로지 수단을 제시하고, 능력으로 \"which tasks it can be assigned to and which it cannot\" 을 정의하며 외부 개체와의 어포던스 관계를 추론(v3 2025-09-10).",
+        "as_of": "2025-09-10",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f6",
+        "claim": "Järvenpää·Siltala·Hylli·Lanz(Procedia CIRP 97, 2021)의 능력 매치메이킹 소프트웨어는 제품 요구와 자원 능력의 매칭을 자동화해 기존 생산 시스템이 새 제품 요구를 충족하는지 확인하고 대형 카탈로그에서 후보 자원을 찾으며, 외부 설계 도구와의 연동을 사례로 설명했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-890"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "탐페레대학교 연구 포털 초록: 소프트웨어가 \"automatizes the matchmaking between product requirements and resource capabilities\" 하고 대형 카탈로그에서 대안 자원을 식별하며 외부 설계 도구 연동을 사례로 설명. 온톨로지·규칙 구현 세부는 초록에 없음.",
+        "as_of": "2021",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f7",
+        "claim": "서로 다른 세 연구 그룹(LAAS 의 구성요소 기반 능력 추론, 탐페레대학교의 능력 매치메이킹, 헬무트 슈미트 대학의 이기종 로봇 능력 모델)이 온톨로지 기반 능력 기술로 작업·요구에 맞는 로봇·자원 후보를 찾는 접근을 각각 보고해, 능력 기반 로봇 후보 질의가 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-879",
+          "ref-890",
+          "ref-876"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "세 출처 모두 발행 주체가 다르고, 능력 기술을 근거로 작업 배정 가능 여부(LAAS)·후보 자원 식별(탐페레)·이기종 로봇 기능 기술(HSU)을 다룬다. 후보와 함께 근거(설명)를 돌려주는 기능은 세 초록 어디에도 명시되지 않았다.",
+        "as_of": "2025-09-10",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f8",
+        "claim": "Open-RMF 의 사용자 정의 작업 문서는 플릿 설정의 action_categories 로 지원 동작을 선언하고, add_performable_action 의 consider 콜백이 동작 설명을 보고 수락 여부를 정하며 set_action_executor 가 실행을 맡는 두 부분 API 를 정하고, 사용자 정의 동작 중 로봇은 읽기 전용 교통 참여자가 되어 교통 협상에 참여하지 않으며 문·승강기 사용은 사용자 정의 로직에서 바꿀 수 없다고 적는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-880"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "문서: action_categories: [\"clean\", \"manual_control\"] 예시; consider 콜백으로 수락 판단; 동작 중 로봇은 \"read-only\" 교통 참여자가 되어 교통 협상에 참여하지 않으며 문·승강기 조작은 사용자 정의 범위 밖. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "Open-RMF 플릿 어댑터 튜토리얼은 새 플릿 설정에 작업 능력(loop·delivery·clean)과 재충전 임계값, 배터리·기계 시스템 매개변수를 적게 하고 로봇 측 API 가 battery_soc 를 보고하게 하여, 능력 선언과 실행 시점 배터리 상태가 같은 설정·API 에 담긴다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-153"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "config.yaml 에 task_capabilities(loop·delivery·clean), recharge_threshold, 배터리·기계 시스템 매개변수를 적고 RobotAPI 가 battery_soc·is_command_completed 를 구현해야 한다. (재인용: 2026-09-29-07)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f10",
+        "claim": "Mayr·Rovida·Krueger 의 SkiROS2(IROS 2023)는 스킬을 전제·유지·사후 조건으로 정의하고 OWL 세계 모델(지식 베이스)로 세계 상태와 개체를 추론하며 확장 행동 트리로 작업 계획과 반응적 실행을 합쳐, 서로 다른 작업과 로봇 시스템 사이에서 스킬을 교체해 쓰는 사례(작업 계획·추론·다중 센서 통합·제조 실행 시스템 연결 등)를 보였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-881"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 스킬 정식화는 \"pre-, hold- and post-conditions\" 에 기반하고, 계층적 혼합 제어 구조와 세계 상태 추론용 지식 베이스를 두며 세 가지 사용 사례로 작업·로봇 간 교체 가능성을 예시. 실제 로봇 배치 결과는 초록에 없음.",
+        "as_of": "2023-06-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f11",
+        "claim": "Ioannidou 외(Healthcare, 2025)의 의료 로봇 상위 온톨로지 HERON 은 SPARQL 질의로 특정 작업에 대한 에이전트 자격과 전제조건을 검사하고 SHACL 형상으로 역할 기반 권한·오버라이드 승인 같은 기관 정책 준수를 검증하며, 임상 배치 없이 Fundació Ave Maria 의료센터의 물류 운반·다중 로봇 플릿 조정 시뮬레이션 시나리오로 시연했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-885"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "PMC 전문: SPARQL 로 \"agent eligibility for specific tasks\" 와 전제조건을, SHACL 로 역할 기반 권한·오버라이드 승인을 검증; 물류 운반·e-진단 지원·다중 로봇 조정 시나리오를 시뮬레이션(2025-04-30).",
+        "as_of": "2025-04-30",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f12",
+        "claim": "서로 다른 세 발행 주체(룬드대학교의 SkiROS2, 그리스 연구진의 HERON, IDTA 의 능력 기술 서브모델)가 능력·스킬에 전제조건과 사후조건 같은 실행 조건을 붙이고 실행 전에 이를 검사하는 구조를 각각 두어, 이 영역의 실행 시점 조건 판단이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-881",
+          "ref-885",
+          "ref-884"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "SkiROS2 는 pre/hold/post 조건, HERON 은 SPARQL 전제조건·SHACL 정책 검사, IDTA 02020 은 preconditions·invariants·postconditions 속성 제약을 각각 정의. 배터리·문·승강기 같은 구체 상태를 조건으로 쓴 예는 HERON(운반 시나리오)과 Open-RMF(배터리) 외에는 확인하지 못했다.",
+        "as_of": "2025-04-30",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f13",
+        "claim": "Vieira da Silva 외(2023, 2024 개정)는 자산관리셸 서브모델과 능력·스킬 온톨로지가 서로 호환되지 않는 두 모델링 틀임을 분석하고, 비교 가능한 요소와 다른 요소를 가려낸 뒤 두 개의 단방향 선언적 매핑으로 이루어진 양방향 매핑 개념을 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-878"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"a concept for a bidirectional mapping between AAS submodels and a capability and skill ontology\" 를 \"two unidirectional, declarative mappings\" 로 구성(v2 2024-04-28).",
+        "as_of": "2024-04-28",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Nabizada 외(IEEE CASE 2026 채택)는 네 가지 Industrie 4.0 표준으로 구조화한 자산관리셸 능력 모델에 완전한 PDDL 계획 문제를 자동 생성할 정보가 충분함을 보이고, PDDL 전용 서브모델 없이 분산 다중 자산관리셸 구조를 계획 문제로 변환하는 추출 알고리즘을 실험실 생산 시스템의 레이아웃 변형 4개 비교로 검증했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-877"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 알고리즘이 \"transforms distributed Multi-AAS architectures into complete PDDL planning problems\"; 실험실 생산 시스템 AAS 모델로 4개 레이아웃 변형을 최적 계획으로 비교(2026-06-01 제출).",
+        "as_of": "2026-06-01",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "Nagrath·Blender·Shaik·Schlegel(2022)은 서비스 로봇에서 소프트웨어 컴포넌트의 자산관리셸을 표준화된 디지털 데이터 시트로, 시스템 수준 자산관리셸을 런타임 운영 데이터 수집과 스킬 수준 명령의 창구로 쓰며, 자산관리셸을 손으로 만들지 않고 모델 기반 개발·조합 워크플로에서 생성·채운다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-883"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"The AAS for a software component serves as a standardized digital data sheet\", 시스템 AAS 가 \"skill-level commanding of the service robot\" 을 가능하게 하며 \"AASs are generated and filled as part of our model-driven development and composition workflow\"(5쪽 작업 중 논문).",
+        "as_of": "2022-08-02",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "Sidorenko 외(FAIM 2021)는 스킬을 유한 상태 기계로 OPC UA 에 노출하고 Industrie 4.0 언어 메시지와 상호작용 상태 기계를 능동 자산관리셸 안에 모델링한 스킬 실행 상호작용 프로토콜을 제시해, 두 Industrie 4.0 컴포넌트가 계층적 제어 대신 동등 협력 방식으로 스킬을 함께 실행하는 예시를 시연했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-887"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Zenodo 초록: I4.0 언어 메시지와 상호작용 상태 기계의 모델링으로 사이버 물리 생산 모듈이 스킬을 협력 사용하게 하고, 두 컴포넌트의 협력 스킬 실행 예시를 제시(2021-11-03).",
+        "as_of": "2021-11-03",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f17",
+        "claim": "서로 다른 세 발행 주체(Schlegel 연구진, SmartFactory-KL 계열 Sidorenko 연구진, CaSkade 의 CSS 온톨로지)가 능력 모델과 별도로 스킬 실행 인터페이스(OPC UA 서버·상태 기계·자산관리셸 스킬 명령)를 두고 능력→스킬→인터페이스 순으로 실제 명령에 묶는 구조를 각각 보고해, 이 영역의 능력–실행 연결 방식이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-883",
+          "ref-887",
+          "ref-882"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "CSS 온톨로지는 SkillInterface 를 필수로, Sidorenko 외는 OPC UA 상태 기계 스킬 실행 프로토콜을, Nagrath 외는 시스템 AAS 의 스킬 수준 명령을 기술. 검토·승인되지 않은 연결의 실행을 막는 관문은 세 출처 모두 명시하지 않았다.",
+        "as_of": "2022-08-02",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "ROS 2 패키지 vda5050_connector(1.1.1, BSD-3, VDA 5050 2.0 지원)는 MQTT 브리지·컨트롤러(주문 검증·실행·피드백)·어댑터의 세 부분으로 로봇을 VDA 5050 관제에 연결하며, 어댑터는 상태·노드 주행·VDA 동작의 세 핸들러를 플러그인으로 두어 로봇 플랫폼마다 사용자가 핸들러 패키지를 직접 만들어야 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-886"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "index.ros.org: 어댑터는 State Handler·NavToNode Handler·VDA Action Handler 세 종류를 요구하고 \"Users must create custom adapter packages defining these handlers for their specific robot platform\"; 지원 버전 2.0. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f19",
+        "claim": "등록된 능력 모델에서 어댑터 설정·명령 매핑·상태 변환 규칙의 초안을 자동으로 만들었다고 직접 보고한 자료는 이번 조사에서 확인되지 않았으며, 확인된 것은 모델 간 선언적 매핑(f13), 자산관리셸에서 계획 도메인 자동 생성(f14), 모델 기반 자산관리셸 생성(f15), 어댑터의 고정된 핸들러 구조(f18·f9)이므로 이를 결합하면 능력 모델에서 핸들러·설정 초안을 만드는 경로가 가능해 보이나 사례는 미확인이다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-878",
+          "ref-877",
+          "ref-886",
+          "ref-153"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "네 출처를 종합한 추정. 매핑·생성 연구는 모두 제조 자산관리셸·PDDL 대상이고, 이동로봇 플릿 어댑터(Open-RMF·VDA 5050 커넥터)의 설정·핸들러를 능력 모델에서 생성한 사례는 찾지 못했다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "서로 다른 두 발행 주체(Open Robotics 의 플릿 어댑터·사용자 정의 작업 문서, ROS 패키지 색인의 vda5050_connector)가 로봇 연동 어댑터를 '플릿·능력 설정'과 '로봇별 핸들러·API 구현'의 두 부분으로 각각 구성해, 온톨로지로 자동화할 수 있는 부분(설정·매핑)과 손작업이 남는 부분(로봇별 구현)의 경계가 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-880",
+          "ref-153",
+          "ref-886"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "Open-RMF 는 config.yaml 의 능력·동작 선언과 RobotAPI·action executor 구현으로, vda5050_connector 는 설정과 세 핸들러 플러그인 구현으로 나뉜다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "창이종합병원 CHART 는 KONE·Smart Urban Co-Innovation Lab·AWS·CapitaLand 와 함께 캐피털랜드 Galen 오피스 빌딩에서 개방 API 를 가진 KONE DX 급 승강기와 RMF 로 자율이동로봇이 여러 층을 오가는 시험 환경을 만들고, 청소·보안·배송·컨시어지 등 여러 업체 로봇으로 시험을 확대할 계획을 밝혔으나 업체 수와 정량 결과는 공개 페이지에 없다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-889"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "페이지: KONE 이 승강기를 개방 API 로 현대화해 \"autonomous mobile robots to traverse across different levels\" 가능; Galen 빌딩이 로봇–승강기 연동의 실환경 시험장; 여러 로봇 업체 시험은 다음 단계. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": "기타",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f22",
+        "claim": "Valner 외(2022)의 타르투대학교병원 현장 시험에서는 프로그램 제어가 없는 병원 문을 카드 인식·근접 센서를 대신 작동시키는 서보 장치로 보완해야 했으므로, 온톨로지·설정만으로 연동되지 않는 설비가 남아 손작업 없는 연동의 한계를 보여준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-874"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "PAL Robotics TIAGo 를 FreeFleet 클라이언트·서버와 RMF 어댑터 파일로 등록했고, 프로그램 제어가 없는 문은 서보 장치를 만들어 지났다. (재인용: 2026-09-29-07)",
+        "as_of": "2022-08-23",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f23",
+        "claim": "황선명(보안공학연구논문지 8권 1호, 2011)은 컴포넌트 온톨로지와 환경 온톨로지를 구축해 사람의 명령을 사전 정의된 작업에 연결하고 환경 온톨로지에서 매개변수를 얻어 필요한 컴포넌트 목록을 구성·실행하는 로봇 컴포넌트 동적 재구성 방법을 제안했으며, 이는 이번 조사에서 확인된 유일한 국내 온톨로지 기반 로봇 연동 연구다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-888"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KCI 초록: \"By constructing component ontology and environment ontology, robot constitutes component list needed to preliminarily defined TASK according to person's order\"; 평가는 목표 지점 이동 시간 개선 서술.",
+        "as_of": "2011",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토하게 하여, 온톨로지 기반 연동의 앞 단계인 능력 모델 작성 부담을 줄이는 방법을 제안했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-465"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "자연어 능력 설명을 프롬프트에 넣어 능력 온톨로지를 생성하고 자동 검증 뒤 사람이 최종 검토·수정. (재인용: 2026-09-29-07)",
+        "as_of": "2024-10-18",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f25",
+        "claim": "확인한 자료를 종합하면 6. 온톨로지 기반 시스템·로봇 연동에서 ROP가 직접 맡을 범위는 능력 온톨로지 질의로 후보 로봇을 찾아 근거와 함께 돌려주는 기능, 능력→스킬→인터페이스 매핑표와 그 검토·승인 기록, 어댑터 설정·핸들러 초안 생성, 실행 전 전제조건·정책 검사(배터리·문·승강기 상태)이며, 근거를 함께 돌려주는 설명 기능과 검토되지 않은 연결의 실행 차단은 확인한 출처 어디에도 명시되지 않아 ROP 가 따로 설계해야 할 요구로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-882",
+          "ref-880",
+          "ref-886",
+          "ref-885"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "CSS 온톨로지·Open-RMF 사용자 정의 작업·vda5050_connector·HERON 을 종합한 추정. Open-RMF 의 consider 콜백(f8)과 HERON 의 SHACL 정책 검사(f11)가 승인 관문의 부분 선례다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "연계 대상: 스킬의 내부 구현과 상태 기계 실행(OPC UA 서버·로봇 SDK 쪽)과 승강기 제조사의 개방 API 자체는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 쪽이므로, 이종 제조사를 잇는 ROP 는 스킬 인터페이스 호출·상태 확인·완료 판정과 승강기 사용 요청·인계만 맡고 구현 성능은 제조사·설비 측에 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-887",
+          "ref-889",
+          "ref-882"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Sidorenko 외의 OPC UA 스킬 상태 기계, CGH 의 KONE 개방 API 승강기, CSS 온톨로지의 스킬 인터페이스 분리를 근거로 한 경계 추정.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f27",
+        "claim": "이 영역은 능력 표현을 주는 5. 로봇 능력·작업 표현과 등록 데이터를 주는 4. 이기종 로봇 등록, 매핑·제약을 검증하는 7. 온톨로지 검증·변경 관리를 앞뒤로 두고, 어댑터·규격은 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성, 문·승강기 상태는 22. 설비·건물 시스템 연동, 후보 질의 결과는 25. 작업 배정 — MRTA, 실행 조건과 완료 판정은 29. 명령·작업 실행의 신뢰성과 18. 실시간 세계 상태·데이터 일관성에 이어지며, 언어 모델로 능력 온톨로지를 만드는 방법(f24)은 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영에도 연결된다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-880",
+          "ref-884",
+          "ref-885",
+          "ref-465"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Open-RMF 사용자 정의 작업(문·승강기 제외, 교통 협상 제외), IDTA 02020 제약, HERON 전제조건 검사, 언어 모델 능력 온톨로지 생성을 근거로 한 영역 연결 추정.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f28",
+        "claim": "oq-150 관련: Open-RMF 의 task_capabilities·action_categories 로 청소·수동 제어 같은 팩트시트에 없는 능력을 선언하는 방법은 공식 문서(f8·f9)로 확인되지만 문·승강기 사용은 사용자 정의 동작이 아니라 플랫폼 기능이라 그 경로로 등록하지 않으며, 자산관리셸 능력 기술 서브모델을 로봇 현장에서 실제로 썼다는 사례는 확인되지 않아 oq-150 은 미해결로 남는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-880",
+          "ref-884",
+          "ref-153"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "Open-RMF 문서는 사용자 정의 동작이 문·승강기 조작을 바꿀 수 없다고 적고, IDTA 02020 README 는 생산 계획 대상만 언급하며 로봇 현장 적용 사례를 들지 않는다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-876",
+        "org": "Vieira da Silva, L. M., Köcher, A., & Fay, A. (Helmut Schmidt University)",
+        "title": "A Capability and Skill Model for Heterogeneous Autonomous Robots",
+        "published": "2023-02-09",
+        "url": "https://arxiv.org/abs/2209.10900",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "이기종 자율 로봇 팀의 기능을 일관되게 기술할 방법이 없다는 문제를 들어 제조업 능력·스킬 모델링을 자율 로봇에 적용한 능력 모델을 제안한 프리프린트(초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2209.10900"
+      },
+      {
+        "id": "ref-877",
+        "org": "Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A. (IEEE CASE 2026 채택)",
+        "title": "From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation",
+        "published": "2026-06-01",
+        "url": "https://arxiv.org/abs/2606.02167",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자산관리셸 능력 모델에서 PDDL 계획 문제를 자동 생성하는 추출 알고리즘을 제시하고 실험실 생산 시스템의 레이아웃 변형 4개 비교로 검증한 프리프린트(초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2606.02167"
+      },
+      {
+        "id": "ref-878",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gill, M. S., Weiss, M., & Fay, A.",
+        "title": "Toward a Mapping of Capability and Skill Models using Asset Administration Shells and Ontologies",
+        "published": "2024-04-28",
+        "url": "https://arxiv.org/abs/2307.00827",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자산관리셸 서브모델과 능력·스킬 온톨로지 사이의 양방향 매핑을 두 개의 단방향 선언적 매핑으로 구성하는 개념을 제시한 프리프린트(초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2307.00827"
+      },
+      {
+        "id": "ref-879",
+        "org": "Dussard, B., Sarthou, G., & Clodic, A. (LAAS-CNRS)",
+        "title": "Ontological Component-based Description of Robot Capabilities",
+        "published": "2025-09-10",
+        "url": "https://arxiv.org/abs/2306.07569",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "로봇의 구성요소와 하위 능력에서 상위 능력을 온톨로지로 추론해 배정 가능한 작업을 판단하고 어포던스 관계를 추론하는 방법을 제안한 프리프린트(v3, 초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2306.07569"
+      },
+      {
+        "id": "ref-880",
+        "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+        "title": "User-defined Tasks - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/task_userdefined.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "Open-RMF 의 사용자 정의 작업(perform_action) 지원 방식: action_categories 선언, add_performable_action 의 consider 콜백, set_action_executor, 동작 중 읽기 전용 교통 참여자, 문·승강기 조작 제외.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://osrf.github.io/ros2multirobotbook/task_userdefined.html"
+      },
+      {
+        "id": "ref-881",
+        "org": "Mayr, M., Rovida, F., & Krueger, V. (Lund University, IROS 2023)",
+        "title": "SkiROS2: A skill-based Robot Control Platform for ROS",
+        "published": "2023-06-29",
+        "url": "https://arxiv.org/abs/2306.17030",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "전제·유지·사후 조건으로 정의한 스킬, OWL 세계 모델, 확장 행동 트리로 계획과 실행을 합친 ROS 기반 스킬 제어 플랫폼(초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2306.17030"
+      },
+      {
+        "id": "ref-882",
+        "org": "CaSkade-Automation (Helmut Schmidt University, Institute of Automation Technology) GitHub 공식 저장소",
+        "title": "CSS — An ontology for the Capability, Skill and Service model of Plattform Industrie 4.0 (README)",
+        "published": null,
+        "url": "https://github.com/CaSkade-Automation/CSS",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "Plattform Industrie 4.0 의 능력·스킬·서비스 참조 모델을 구현한 OWL 온톨로지 README. 능력·스킬·서비스·속성·스킬 인터페이스 정의와 확장 온톨로지(CaSk·CaSkMan·RoboCaSk)를 소개한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/CaSkade-Automation/CSS/main/README.md"
+      },
+      {
+        "id": "ref-883",
+        "org": "Nagrath, V., Blender, T., Shaik, N., & Schlegel, C. (Technische Hochschule Ulm)",
+        "title": "Industry 4.0 Asset Administration Shell (AAS): Interoperable Skill-Based Service-Robots",
+        "published": "2022-08-02",
+        "url": "https://arxiv.org/abs/2208.01273",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "서비스 로봇의 소프트웨어 컴포넌트·시스템 수준 자산관리셸을 디지털 데이터 시트와 스킬 수준 명령 창구로 쓰고 모델 기반 개발 워크플로에서 생성하는 접근(작업 중 논문, 초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2208.01273"
+      },
+      {
+        "id": "ref-884",
+        "org": "Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소",
+        "title": "IDTA 02020 Submodel Template: Capability Description — README (published/Capability Description/1/0)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "요구 능력과 제공 능력의 비교를 목적으로 능력을 속성·제약(전제조건·불변·사후조건, 전이 제약)·스킬의 세 관계로 모델링하는 자산관리셸 서브모델 템플릿 1.0 판 README.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/admin-shell-io/submodel-templates/main/published/Capability%20Description/1/0/README.md"
+      },
+      {
+        "id": "ref-885",
+        "org": "Ioannidou, P., Vezakis, I., Haritou, M., Petropoulou, R., Miloulis, S. T., Kouris, I., Bromis, K., Matsopoulos, G. K., & Koutsouris, D. D. (Healthcare, Basel)",
+        "title": "HEalthcare Robotics' ONtology (HERON): An Upper Ontology for Communication, Collaboration and Safety in Healthcare Robotics",
+        "published": "2025-04-30",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "의료 로봇 상위 온톨로지 HERON. SPARQL 로 작업 자격·전제조건을, SHACL 로 역할 기반 정책을 검증하며 의료센터 물류·다중 로봇 시나리오를 시뮬레이션으로 시연(전문 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/"
+      },
+      {
+        "id": "ref-886",
+        "org": "ROS Index (InOrbit ros_amr_interop, 유지관리자 Leandro Pineda)",
+        "title": "vda5050_connector - ROS Package Overview",
+        "published": null,
+        "url": "https://index.ros.org/p/vda5050_connector/",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "ROS 2 로봇을 VDA 5050 2.0 관제에 잇는 커넥터 패키지(1.1.1, BSD-3). MQTT 브리지·컨트롤러·어댑터 구조와 로봇별로 구현해야 하는 세 핸들러 플러그인을 설명한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://index.ros.org/p/vda5050_connector/"
+      },
+      {
+        "id": "ref-887",
+        "org": "Sidorenko, A., Volkmann, M., Motsch, W., Wagner, A., & Ruskowski, M. (FAIM 2021, Zenodo)",
+        "title": "An OPC UA Model of the Skill Execution Interaction Protocol for the Active Asset Administration Shell",
+        "published": "2021-11-03",
+        "url": "https://zenodo.org/records/5648095",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "스킬을 유한 상태 기계로 OPC UA 에 노출하고 I4.0 언어 메시지·상호작용 상태 기계를 능동 자산관리셸에 모델링한 스킬 실행 프로토콜과 두 컴포넌트 협력 실행 예시(Zenodo 초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://zenodo.org/records/5648095"
+      },
+      {
+        "id": "ref-888",
+        "org": "황선명 (대전대학교, 보안공학연구논문지 8(1))",
+        "title": "온톨로지 기반의 로봇 동적재구성에 관한 연구",
+        "published": "2011",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001533055",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "컴포넌트 온톨로지와 환경 온톨로지로 사람의 명령을 사전 정의 작업에 연결하고 필요한 컴포넌트를 구성·실행하는 로봇 동적 재구성 방법을 제안한 국내 논문(KCI 초록 열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001533055"
+      },
+      {
+        "id": "ref-889",
+        "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CGH-CHART)",
+        "title": "Robot-Lift Integration Challenge | Changi General Hospital",
+        "published": null,
+        "url": "https://www.cgh.com.sg/chart/projects/romi-h/robot-lift-integration-challenge",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "CGH-CHART·KONE·Smart Urban Co-Innovation Lab·AWS·CapitaLand 가 Galen 오피스 빌딩에서 개방 API 승강기와 RMF 로 로봇 층간 이동을 시험하는 프로젝트 소개 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.cgh.com.sg/chart/projects/romi-h/robot-lift-integration-challenge"
+      },
+      {
+        "id": "ref-890",
+        "org": "Järvenpää, E., Siltala, N., Hylli, O., & Lanz, M. (Tampere University, Procedia CIRP 97)",
+        "title": "Capability matchmaking software for rapid production system design and reconfiguration planning",
+        "published": "2021",
+        "url": "https://researchportal.tuni.fi/en/publications/capability-matchmaking-software-for-rapid-production-system-desig/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "제품 요구와 자원 능력의 매칭을 자동화해 대형 카탈로그에서 후보 자원을 찾는 매치메이킹 소프트웨어와 외부 설계 도구 연동 사례(연구 포털 초록 열람, CC BY-NC-ND 공개).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://researchportal.tuni.fi/en/publications/capability-matchmaking-software-for-rapid-production-system-desig/"
+      },
+      {
+        "id": "ref-153",
+        "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+        "title": "Fleet Adapter Tutorial (integration_fleets_action_tutorial) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "Open-RMF 플릿 어댑터 설정(config.yaml)의 항목과 로봇 측 RobotAPI 구현 요구를 설명하는 튜토리얼(이전 실행 2026-09-29-07 재사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-874",
+        "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI",
+        "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+        "published": "2022-08-23",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "타르투대학교병원에서 Open-RMF 로 이기종 로봇 플릿을 등록·운용한 현장 시험(이전 실행 2026-09-29-07 재사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-465",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+        "published": "2024-10-18",
+        "url": "https://arxiv.org/abs/2406.07962",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 자동 검증 뒤 사람이 최종 검토하는 방법(이전 실행 2026-09-29-07 재사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/ontology-based-system-and-robot-integration.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f4(이기종 로봇 기능을 일관되게 기술할 방법 부재), f20(어댑터가 설정과 로봇별 구현으로 나뉘어 손작업이 남음), f22(설비가 프로그램 제어를 못 하면 온톨로지·설정만으로 연동되지 않음) / 섹션 4: f1(능력·스킬·서비스·스킬 인터페이스), f2(속성·제약·스킬, 전제조건·불변·사후조건), f10(전제·유지·사후 조건), f8(수행 가능 동작·action_categories), f5(구성요소 기반 능력 추론·어포던스) / 섹션 5: 병원 — f11(HERON 의료센터 시뮬레이션: 물류 운반·다중 로봇 조정, 임상 배치 아님을 명시), f22(타르투대학교병원 문 보완 장치), 기타 — f21(싱가포르 Galen 오피스 빌딩 승강기 연동 시험 환경), 제조 공장·물류창고 현장 사례는 확인되지 않음을 서술(f6·f14 는 생산 시스템 설계·실험실 수준) / 섹션 6: 능력 기반 후보 질의 f5·f6·f7, 능력–실행 연결 f1·f15·f16·f17·f8, 연동 자동화 f13·f14·f15·f19(자동 생성 사례 미확인은 추정), 실행 시점 조건 판단 f9·f10·f11·f12, 앞 단계 능력 모델 생성 f24(교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영 함께 연결) / 섹션 7: f1(CSS 온톨로지), f2(IDTA 02020), f8·f9(Open-RMF 사용자 정의 작업·플릿 어댑터), f18(vda5050_connector), f16(OPC UA 스킬 실행 프로토콜), f10(SkiROS2) / 섹션 8: f4, f5, f6, f13, f14, f15, f16, f11, 국내 f23 / 섹션 9: f25(직접 범위: 후보 질의·매핑표·검토 승인 기록·설정 초안·전제조건 검사), f26(연계 대상: 스킬 내부 구현·승강기 API) / 섹션 10: f27 — 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 7. 온톨로지 검증·변경 관리, 18. 실시간 세계 상태·데이터 일관성, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 22. 설비·건물 시스템 연동, 25. 작업 배정 — MRTA, 29. 명령·작업 실행의 신뢰성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 63. 병원·의료(f11·f22) / 섹션 11: 기존 oq-150(f28 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 22. 설비·건물 시스템 연동 페이지에 f8·f21 반영, 21. 상호운용 표준·적합성 페이지에 f2·f13·f18 반영, 25. 작업 배정 — MRTA 페이지에 f5·f7 반영, 트랙 manual-capability-ontology 단계 4(실행 연결)에 f1·f16·f17 참고."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "스킬 인터페이스",
+        "term_en": "Skill Interface",
+        "definition": "능력·스킬·서비스 모델에서 스킬을 외부에서 제어하기 위해 반드시 두는 접점(예: OPC UA 서버)으로, 스킬 구현과 분리되어 같은 스킬을 여러 프로토콜로 노출할 수 있게 한다."
+      },
+      {
+        "term_ko": "전제·유지·사후 조건",
+        "term_en": "Pre-, Hold-, Post-condition",
+        "definition": "스킬이 시작될 때 참이어야 하는 조건(전제), 실행 중 계속 유지되어야 하는 조건(유지), 끝난 뒤 성립해야 하는 조건(사후)으로 스킬을 정의해 실행 가능 여부 판단과 완료 확인에 쓰는 방식이다."
+      },
+      {
+        "term_ko": "수행 가능 동작",
+        "term_en": "Performable Action (Open-RMF perform_action)",
+        "definition": "Open-RMF 에서 플릿이 지원한다고 선언한 사용자 정의 동작으로, 플릿 어댑터가 수락 여부를 판단하고 실행하는 동안 관제는 로봇 제어를 넘기고 교통 협상에서 제외한다."
+      }
+    ],
+    "open_questions_new": [
+      "등록된 능력 온톨로지나 자산관리셸 능력 기술에서 플릿 어댑터의 설정·명령 핸들러·상태 변환 규칙 초안을 자동 생성한 공개 구현이나 현장 사례가 있는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 20. 로봇·제조사 관제 연동, 4. 이기종 로봇 등록 | 근거: f19 | 종류: 일반",
+      "Open-RMF 사용자 정의 동작이 교통 협상에서 빠지고 문·승강기 조작을 바꿀 수 없을 때, ROP 는 그 동작의 배터리·설비 상태 같은 실행 시점 조건을 어디에서 검사하고 실패를 어떻게 복구하는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 28. 공용 자원·충전·에너지 최적화, 29. 명령·작업 실행의 신뢰성 | 근거: f8 | 종류: 일반",
+      "국내 현장에서 온톨로지나 능력 모델로 이기종 로봇 후보를 질의해 배정·연동한 운영 사례가 있는가(이번 조사에서 확인된 국내 자료는 2011년 연구 한 건뿐이다)? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 25. 작업 배정 — MRTA | 근거: f23 | 종류: 일반",
+      "제조업의 능력·스킬·서비스 모델(CSS 온톨로지·IDTA 02020)과 이동로봇 규격(VDA 5050 팩트시트·IDTA 02047 AGV 기술 데이터·Open-RMF 작업 능력) 사이의 능력 대응표가 공식으로 제공되는가, 아니면 ROP 가 직접 매핑을 만들어 관리해야 하는가? | 관련 영역: 6. 온톨로지 기반 시스템·로봇 연동, 21. 상호운용 표준·적합성, 5. 로봇 능력·작업 표현 | 근거: f13 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 18,
+      "cross_checked_count": 5,
+      "unverified": [
+        "f6 탐페레 매치메이킹의 OWL 온톨로지·SPIN 규칙 구현 세부는 검색 결과 요약에서만 보였고 연 초록 페이지에 없어 claim 에 넣지 않음(Procedia CIRP ScienceDirect 원문 403)",
+        "f3 CSS 온톨로지와 IDTA 02020 은 모두 Plattform Industrie 4.0 CSS 참조 모델에서 파생되어 독립성이 제한적임(신뢰도 medium 으로 둠)",
+        "f2 IDTA 02020 1.0 판 발행일 미확인(README 에 날짜 없음), f1·f8·f18·f21 출처 발행일 미확인",
+        "f11 HERON 은 임상 배치 없는 시뮬레이션 시나리오이며 배터리·문·승강기 같은 구체 상태 조건은 전문에서 확인하지 못함",
+        "f14 AAS→PDDL 생성의 정량 결과와 f10 SkiROS2 의 실기 배치 결과는 초록에 없어 미확인",
+        "f16 Sidorenko 외 논문은 Zenodo 초록만 확인(상태 기계 세부 미확인)",
+        "MDPI Electronics 15(16):3562 'Semantic Feasibility Reasoning for Heterogeneous Multi-Robot Task Allocation'(배터리·층 접근 조건의 의미 기반 실행 가능성 추론)은 두 경로 모두 403 으로 열지 못해 넣지 않음 — 실행 시점 조건 판단의 핵심 후보 출처",
+        "Järvenpää 외 'Semantic rules for capability matchmaking'(IJCIM 2022, tandfonline)과 'development of an ontology for describing the capabilities of manufacturing resources'(Springer JIM 2018)는 403·인증 리다이렉트로 열지 못함",
+        "Plattform Industrie 4.0 CSS 토론 문서는 웹 페이지가 보안 검증으로 막히고 PDF 는 텍스트 추출이 되지 않아 CSS 온톨로지 README(ref-882)로 대신함 — 참조 모델 원문 미열람",
+        "RoboCaSk 온톨로지 저장소 raw README 는 404 로 확인하지 못해 f1 에 이름만 적음",
+        "f7·f17 외 능력 기반 후보 질의가 '근거와 함께' 후보를 돌려주는 설명 기능은 어느 출처에서도 확인하지 못함",
+        "oq-150 미해결(f28)",
+        "f3·f7·f12·f17·f20 외 모든 finding 교차 확인 실패(연구·문서마다 발행 주체 한 곳)"
+      ],
+      "scope_violations": [
+        "f26: 스킬 내부 구현·OPC UA 상태 기계 실행과 승강기 제조사 API 는 분류 원문 19장의 로봇 자체 지능·제어와 시설·설비 제어 연계 영역이므로 '연계 대상: '으로 표시함",
+        "f21: 승강기 개방 API 연동은 22. 설비·건물 시스템 연동의 범위와 겹치므로 이 영역에서는 온톨로지·플랫폼 기반 이기종 로봇의 층간 이동 시험 환경 사례로만 제안함",
+        "f11: HERON 의 역할 기반 권한·오버라이드 정책 검사는 48. 안전·위험 관리·51. 인증·권한·격리와 겹치므로 실행 시점 조건 판단 사례로만 제안함",
+        "f14·f6: 제조 생산 시스템 설계·계획 도메인 생성 연구는 이동로봇 플랫폼이 아니므로 능력 모델에서 실행 산출물을 자동 생성하는 방법의 선례로만 제안함",
+        "f24: 언어 모델 능력 온톨로지 생성은 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f27)"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-876~ref-890, 예약 구간 안) 상한 도달로 CSS 참조 모델 논문(arXiv 2209.09632), ETFA 능력·스킬 서베이(arXiv 2204.12908), MiR VDA 5050 어댑터 벤더 블로그, RoSO/SMGI(arXiv 2605.08185), 온톨로지 기반 로봇 사양 합성(arXiv 2602.05456), 국내 클라우드 기반 이기종 다중로봇 플랫폼(제어로봇시스템학회 2023, 온톨로지 언급 없음)은 열었으나 넣지 않았다. 원문 열람 15건(github_raw 2: CSS 온톨로지 README·IDTA 02020 README, webfetch 13: arXiv 초록 7건, PMC 전문 1건, Open-RMF 문서, ROS Index, Zenodo, KCI 초록, CGH 페이지, 탐페레 연구 포털), 재사용 3건(ref-153·ref-874·ref-465, 이전 브리프 2026-09-29-07 의 값 그대로, 이번에 다시 열지 않음). 주의: 실행 컨텍스트가 예약한 ref-876~ref-905 구간은 같은 날 이전 실행 2026-09-29-07 이 ref-876·ref-878·ref-880·ref-881·ref-883 으로 낸 다른 URL 과 번호가 겹치므로 퍼블리셔가 URL 기준으로 합칠 때 번호 충돌을 확인해야 한다. 교차 확인 5건(f3: CaSkade·IDTA — 공통 참조 모델 파생이라 medium, f7: LAAS·탐페레·HSU, f12: 룬드·그리스 연구진·IDTA, f17: Schlegel 연구진·Sidorenko 연구진·CaSkade, f20: Open Robotics·ROS Index/InOrbit). 신뢰도 high 는 f12·f20 두 건(각각 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(온톨로지로 새 로봇·새 시스템을 손작업 없이 연동)에는 f1·f2·f3(능력–스킬–인터페이스 분리와 요구/제공 매칭 모델), f5·f6·f7(능력 기반 후보 질의), f13·f14·f15(모델 매핑·계획 도메인·자산관리셸 자동 생성), f8·f18·f20(어댑터의 설정 부분과 로봇별 구현 부분), f9~f12(실행 조건 검사)로 답했으며 결론은 '능력 모델과 실행 인터페이스를 잇는 구조와 조건 검사는 여러 곳에서 확인되지만, 능력 모델에서 어댑터 설정·핸들러 초안을 자동 생성해 손작업을 없앤 사례와 근거를 함께 돌려주는 후보 질의는 확인되지 않았다'는 추정(f19·f25)이다. 현장 유형: 병원(f11 시뮬레이션, f22 타르투대학교병원 재인용), 기타(f21 싱가포르 오피스 빌딩)만 확인했고 제조 공장·물류창고·상업 시설·가정·실외 현장 사례는 없다(제조 관련 출처는 생산 시스템 설계·실험실 수준). 국내 자료는 KCI 논문(f23, 2011) 한 건이며 국내 운영 사례는 찾지 못했다. 벤더 문서 출처 없음(MiR 블로그는 출처 상한으로 제외). L. AI·학습 기술 관련 finding(f24)은 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 이 영역 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성은 실행 조건의 현재 상태 연결로만 제안했고 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 없다. 용어집에 이미 있는 스킬·능력 매칭·요구 능력·제공 능력·능력·스킬·서비스 모델·능력 기술 서브모델·형상 제약 언어·플릿 어댑터·어포던스·자산관리셸·계획 도메인 정의 언어·행동 트리는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-150 은 f28 로 부분 진전만)."
+    }
+  },
+  "ttft_ms": 28528,
+  "type": "result",
+  "duration_ms": 685322,
+  "uuid": "615590ee-0496-42b4-97d9-5e51d2b22937",
+  "ttft_stream_ms": 2056,
+  "time_to_request_ms": 91,
+  "first_content_frame_ms": 2057,
+  "time_to_request_from_spawn_ms": 2391295,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790663364553.7043,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 686.8
+}

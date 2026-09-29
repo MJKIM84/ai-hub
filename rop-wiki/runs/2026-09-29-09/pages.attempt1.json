@@ -1,0 +1,700 @@
+{
+  "run_id": "2026-09-29-09",
+  "outline": [
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "검증 수단과 판 표기 규칙은 여러 발행 주체에서 확인되지만 로봇 능력 온톨로지의 개정 영향·재검증 절차는 확인되지 않아 ROP 가 설계해야 할 것으로 보인다. [추정][^ref-886][^ref-439][^ref-892][^ref-893][^ref-228] 역량 질문·질의·추론기 기반 검증은 세 발행 주체에서 확인되고 표준 명세 자체의 변동이 재검증 부담이 된다. [사실][^ref-890][^ref-891][^ref-899][^ref-895]",
+      "planned_findings": [
+        "f4",
+        "f18",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 750,
+      "summary": "역량 질문·온톨로지 피트폴·SHACL 검증 보고서·온톨로지 IRI와 버전 IRI·온톨로지 진화·지식 그래프 변경 언어를 정의한다. [사실][^ref-890][^ref-889][^ref-459][^ref-886][^ref-888][^ref-892]",
+      "planned_findings": [
+        "f1",
+        "f5",
+        "f6",
+        "f11",
+        "f14",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1000,
+      "summary": "가정(OntoBOT, 네 로봇 플랫폼 대상 역량 질문 평가, 현장 배치 아님)과 병원(HERON, 임상 배치 없는 시뮬레이션의 SHACL 정책 검증) 두 사례만 확인됐다. [사실][^ref-891][^ref-880]",
+      "planned_findings": [
+        "f2",
+        "f7"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1700,
+      "summary": "역량 질문 기반 완전성 확인, 추론기·피트폴 스캐너·SHACL 자동 평가, 언어 모델 결합 검증, 판 식별·호환 표기, 변경 표현·탐지·허용성 판단, 원문 근거를 붙인 검토의 여섯 갈래가 있다. [사실][^ref-890][^ref-459][^ref-886][^ref-892] 로봇 매뉴얼 절·줄 근거를 붙인 확정·반려 구현은 확인되지 않았다. [추정][^ref-896][^ref-897][^ref-465]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f15",
+        "f16",
+        "f17",
+        "f19",
+        "f20",
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 650,
+      "summary": "OWL 2 버전 IRI, W3C SHACL 권고안(2017-07-20), OOPS!, IDTA 서브모델 템플릿 저장소 규칙, KGCL, VDA 5050 팩트시트의 판 정보를 표로 정리한다. [사실][^ref-886][^ref-459][^ref-889][^ref-439][^ref-892][^ref-228]",
+      "planned_findings": [
+        "f5",
+        "f6",
+        "f11",
+        "f12",
+        "f15",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1000,
+      "summary": "역량 질문 데이터셋, OntoBOT, OOPS!, 온톨로지 진화 서베이, KGCL, OM4OV, IDTA 명세 모델 기반 구현, RoSO/SMGI, OntoKG-EQ, TRACE-KG, 국내 STNet 연구를 요약한다. [사실][^ref-890][^ref-891][^ref-889][^ref-888][^ref-892][^ref-893][^ref-895][^ref-900][^ref-896][^ref-897][^ref-899]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f5",
+        "f14",
+        "f15",
+        "f16",
+        "f18",
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 650,
+      "summary": "ROP 는 역량 질문 목록·테스트 실행 기록·SHACL 형상과 검증 보고서·판 식별자·변경 기술·재검증 목록을 맡고, 펌웨어 릴리스 관리와 템플릿 개정·폐기 일정은 제조사·표준 발행 기관의 연계 대상으로 두는 것이 리서치 종합의 추정이다. [추정][^ref-890][^ref-459][^ref-886][^ref-892][^ref-228][^ref-439]",
+      "planned_findings": [
+        "f25",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 550,
+      "summary": "4·5·6번 온톨로지 영역, 21·57번 판 규칙, 54번 시험·형식 검증, 45·47번 언어 모델 방법, 63·65번 현장 유형 영역과 잇는다. [추정][^ref-439][^ref-459][^ref-465][^ref-898]",
+      "planned_findings": [
+        "f27"
+      ]
+    },
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 650,
+      "summary": "oq-147 은 부분 진전으로 조사 중이며, 개정 감지·재검증 절차, 지원 단계 표시 체계, 국내 사례, IDTA 폐기 판 이관 기준의 새 질문 4건을 올린다. [추정][^ref-896][^ref-897][^ref-465]",
+      "planned_findings": [
+        "f22",
+        "f24",
+        "f25",
+        "f3",
+        "f12"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/robot-ontology/ontology-verification-and-change-management.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 섹션 3~11 신규 작성(finding 27건 반영, 1차 조건부 승인 수정 13건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"6. 대표 접근법과 기술\" 절(2,811자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"8. 대표 연구와 자료\" 절(1,834자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"4. 핵심 개념과 용어\" 절(1,478자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"11. 열린 질문\" 절(1,150자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,053자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"3. 왜 중요한가\" 절(909자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area07-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 7. 온톨로지 검증·변경 관리 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(743자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-29 | 7. 온톨로지 검증·변경 관리 | 영역 심화: 섹션 3~11 신규 작성(finding 27건 반영, 1차 조건부 승인 수정 13건 이행), version 2; 참고문헌 ref-886~ref-890 이 같은 날 실행 2026-09-29-08 의 다른 URL 과 번호가 겹쳐 퍼블리셔가 URL 기준으로 번호를 재배정해야 함 | run 2026-09-29-09",
+  "index_updates": {
+    "home_recent": "2026-09-29 — 7. 온톨로지 검증·변경 관리: 역량 질문·SHACL·피트폴 스캐너 기반 검증과 OWL 2 버전 IRI·IDTA 템플릿 폐기 규칙 등 판 관리 관행을 정리하고, 로봇 능력 온톨로지의 개정 영향·재검증 절차는 미확인으로 남겼다(가정·병원 사례 2건, 신뢰도 medium)",
+    "category_recent": "2026-09-29 — 7. 온톨로지 검증·변경 관리: 섹션 3~11 신규 작성(역량 질문·자동 평가·언어 모델 결합 검증·판 식별·변경 표현·원문 근거 검토 여섯 갈래), 열린 질문 4건 신규·oq-147 조사 중, 실행 2026-09-29-09",
+    "area_recent": "2026-09-29 — 7. 온톨로지 검증·변경 관리: 영역 심화로 3~11절을 처음 채웠다. 검증 수단과 판 표기 규칙은 여러 발행 주체에서 확인됐으나 로봇 능력 온톨로지의 개정 감지·재검증 절차와 매뉴얼 절·줄 근거 검토 구현은 미확인이다(실행 2026-09-29-09)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "competency-question",
+      "term_ko": "역량 질문",
+      "term_en": "Competency Question (CQ)",
+      "definition": "온톨로지가 답할 수 있어야 하는 질문으로 요구사항을 적은 것으로, SPARQL 같은 질의로 형식화해 온톨로지가 요구를 충족하는지 검증하는 데 쓴다.",
+      "description": "Wiśniewski 외(2018)는 여러 도메인 온톨로지의 역량 질문 234개와 SPARQL-OWL 번역, 106개 질문 패턴과 46개 질의 서명의 대응을 공개해 역량 질문의 형식화·실행·관리를 지원하는 벤치마크로 제시했다. 로봇 온톨로지 OntoBOT 도 역량 질문으로 평가되었다.",
+      "related_areas": [
+        7,
+        5,
+        54
+      ],
+      "sources": [
+        "ref-890",
+        "ref-891"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "ontology-pitfall",
+      "term_ko": "온톨로지 피트폴",
+      "term_en": "Ontology Pitfall",
+      "definition": "온톨로지 모델링에서 흔히 생기는 결함 유형으로, 피트폴 스캐너(OOPS!)가 구조·기능·사용성 차원의 카탈로그와 심각·중요·경미 중요도로 자동 탐지한다.",
+      "description": "OOPS!(OntOlogy Pitfall Scanner!)는 693개 이상의 온톨로지를 경험적으로 분석해 만든 카탈로그를 바탕으로 기술 논리에 익숙하지 않은 도메인 전문가도 온라인에서 결함을 탐지하게 한 도구다(2014).",
+      "related_areas": [
+        7
+      ],
+      "sources": [
+        "ref-889"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "version-iri",
+      "term_ko": "버전 IRI",
+      "term_en": "Version IRI (owl:versionIRI)",
+      "definition": "OWL 2 에서 같은 온톨로지 IRI 를 공유하는 온톨로지 시리즈 가운데 특정 판을 식별하는 IRI 로, 이전 판·호환·비호환 주석과 함께 온톨로지 버전 관리에 쓴다.",
+      "description": "W3C OWL 2 구조 명세 2판(2012-12-11)은 같은 온톨로지 시리즈에서 정확히 하나의 버전만 현재 버전으로 보고, owl:priorVersion·owl:backwardCompatibleWith·owl:incompatibleWith 주석으로 판 사이 관계를 표기한다.",
+      "related_areas": [
+        7,
+        57
+      ],
+      "sources": [
+        "ref-886"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "ontology-evolution",
+      "term_ko": "온톨로지 진화",
+      "term_en": "Ontology Evolution",
+      "definition": "도메인 변화나 정보 시스템 요구 변화에 대응해 온톨로지를 최신 상태로 유지하는 활동으로, 변경 감지·표현·적용·영향 관리를 포함하는 다단계 과정으로 다뤄진다.",
+      "description": "Zablith 외(2013)의 프로세스 중심 서베이는 전형적 접근이 자연어 처리·추론 등 여러 분야 기법을 결합한 다단계 과정으로 설계된다고 정리했다. 단계 이름은 초록에서 확인되지 않았다.",
+      "related_areas": [
+        7
+      ],
+      "sources": [
+        "ref-888"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-886",
+      "org": "W3C (OWL Working Group)",
+      "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)",
+      "published": "2012-12-11",
+      "url": "https://www.w3.org/TR/owl2-syntax/",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "OWL 2 구조 명세. 온톨로지 IRI·버전 IRI 의 관계와 owl:priorVersion·backwardCompatibleWith·incompatibleWith 주석을 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-459",
+      "org": "W3C (RDF Data Shapes Working Group)",
+      "title": "Shapes Constraint Language (SHACL)",
+      "published": "2017-07-20",
+      "url": "https://www.w3.org/TR/shacl/",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "RDF 데이터 그래프를 형상 그래프의 조건으로 검증하는 W3C 권고안. 검증 보고서 구조(sh:conforms·sh:result·sh:resultSeverity)를 정한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-888",
+      "org": "Zablith, F., Antoniou, G., d'Aquin, M., Flouris, G., Kondylakis, H., Motta, E., Plexousakis, D., & Sabou, M. (The Knowledge Engineering Review)",
+      "title": "Ontology evolution: a process-centric survey",
+      "published": "2013-08-28",
+      "url": "https://www.cambridge.org/core/product/identifier/S0269888913000349/type/journal_article",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "온톨로지 진화를 도메인·요구 변화에 대응하는 유지 활동으로 정의하고 다단계 과정으로 정리한 서베이. 초록 페이지만 열었다(전문 PDF 403).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-889",
+      "org": "Poveda-Villalón, M., Gómez-Pérez, A., & Suárez-Figueroa, M. C. (Universidad Politécnica de Madrid, IJSWIS 10(2))",
+      "title": "OOPS! (OntOlogy Pitfall Scanner!): an on-line tool for ontology evaluation",
+      "published": "2014-04",
+      "url": "https://oa.upm.es/35873/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "온톨로지 모델링 결함을 탐지하는 온라인 도구 OOPS! 와 693개 이상 온톨로지 분석에 기반한 피트폴 카탈로그. UPM 기관 저장소의 초록을 열었다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-890",
+      "org": "Wiśniewski, D., Potoniec, J., Ławrynowicz, A., & Keet, C. M.",
+      "title": "Competency Questions and SPARQL-OWL Queries Dataset and Analysis",
+      "published": "2018-11-23",
+      "url": "https://arxiv.org/abs/1811.09529",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "역량 질문 234개와 SPARQL-OWL 번역, 106개 질문 패턴과 46개 질의 서명의 대응을 공개한 데이터셋 논문(프리프린트 초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-891",
+      "org": "Martorana, M., Urgese, F., Tiddi, I., & Schlobach, S. (Vrije Universiteit Amsterdam)",
+      "title": "An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics",
+      "published": "2025-09-26",
+      "url": "https://arxiv.org/abs/2509.22434",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "가정용 개인 서비스 로봇의 작업·행동·환경·능력을 통합 표현하는 OntoBOT 을 역량 질문으로 평가하고 네 로봇에서 검증한 프리프린트(초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-892",
+      "org": "Hegde, H. 외 (Database, Oxford)",
+      "title": "A Change Language for Ontologies and Knowledge Graphs",
+      "published": "2024-09-20",
+      "url": "https://arxiv.org/abs/2409.13906",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "온톨로지·지식 그래프 변경을 통제 자연어 명령으로 요청·기술하는 표준 데이터 모델 KGCL(프리프린트 초록, Database 2025 게재).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-893",
+      "org": "Qiang, Z., Taylor, K., & Wang, W.",
+      "title": "OM4OV: Leveraging Ontology Matching for Ontology Versioning",
+      "published": "2024-09-30",
+      "url": "https://arxiv.org/abs/2409.20302",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "온톨로지 매칭 시스템을 버전 간 변경 비교에 재사용하는 프레임워크와 교차 참조 메커니즘(프리프린트 초록, 2026-08-31 v19).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-439",
+      "org": "Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소",
+      "title": "submodel-templates — IDTA Submodel Templates for AAS (README)",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "IDTA 서브모델 템플릿 공식 저장소 README. published·deprecated 폴더, 주버전·리비전·버그 수정 표기, 새 판 6개월 뒤 이전 판 폐기 규칙을 적는다. 검증에서 raw README 원문을 열어 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-895",
+      "org": "Eichelberger, H., & Weber, A.",
+      "title": "Model-driven realization of IDTA submodel specifications: The good, the bad, the incompatible?",
+      "published": "2024-06-20",
+      "url": "https://arxiv.org/abs/2406.14470",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "IDTA 명세 18개를 메타모델로 변환해 API 코드·테스트를 생성한 모델 기반 접근과 명세의 문법적 변동 문제(프리프린트 초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-896",
+      "org": "Nasir, F., Saeed, M. A., Ehsan, M., Ahmad, S. J., & Altaf, A. M.",
+      "title": "OntoKG-EQ: A provenance-grounded, competency-question-governed knowledge graph for auditable analyst querying",
+      "published": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.08869",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "다섯 개 고정 역량 질문이 온톨로지를 통제하고 각 답에 출처까지의 증거 추적을 붙이는 지식 그래프. 17명 패널 평가(프리프린트 초록, 금융 도메인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-897",
+      "org": "Abolhasani, M. S., Ba, Y., He, Y., & Pan, R. (Graph Foundation Models @ ICML 2026)",
+      "title": "Beyond Predefined Schemas: TRACE-KG for Context-Enriched Knowledge Graph Generation",
+      "published": "2026-04-03",
+      "url": "https://arxiv.org/abs/2604.03496",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 근거에 대한 완전한 추적 가능성을 유지하며 문맥 지식 그래프와 유도 스키마를 함께 만드는 프레임워크(프리프린트 초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-898",
+      "org": "Alharbi, R., Tamma, V., Payne, T. R., & de Berardinis, J.",
+      "title": "Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models",
+      "published": "2026-04-17",
+      "url": "https://arxiv.org/abs/2604.16258",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "개방형·폐쇄형 언어 모델이 생성한 역량 질문을 가독성·관련성·구조 복잡성으로 평가한 다중 도메인 연구(프리프린트 초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-899",
+      "org": "고영만, 송민선, 이승준, 김비연, 민혜령 (한국문헌정보학회지 49(3))",
+      "title": "구조적 학술용어사전 “STNet”의 추론규칙 생성에 의한 의미 검색에 관한 연구",
+      "published": "2015",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002022617",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "학술용어사전에 온톨로지를 도입하고 Pellet 추론기 TBox 검증과 SPARQL 검색 시나리오로 평가한 국내 연구(KCI 초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-900",
+      "org": "Osmani, A.",
+      "title": "From Ontology Conformance to Admissible Reconfiguration: A RoSO/SMGI Adequacy Argument for Robotic Service Governance",
+      "published": "2026-05-05",
+      "url": "https://arxiv.org/abs/2605.08185",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "로봇 서비스 온톨로지의 재구성 뒤 유효성 유지 조건과 지역·전역 허용성을 다룬 이론적 단독 저자 프리프린트(초록).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-465",
+      "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+      "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+      "published": "2024-10-18",
+      "url": "https://arxiv.org/abs/2406.07962",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "자연어 능력 설명에서 언어 모델로 능력 온톨로지를 생성하고 구문 검증·모순 탐지·환각·누락 점검을 자동 루프로 돌린 뒤 사람이 최종 검토하는 방법. 검증에서 초록을 직접 열었다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-880",
+      "org": "Ioannidou, P., Vezakis, I., Haritou, M., Petropoulou, R., Miloulis, S. T., Kouris, I., Bromis, K., Matsopoulos, G. K., & Koutsouris, D. D. (Healthcare, Basel)",
+      "title": "HEalthcare Robotics' ONtology (HERON): An Upper Ontology for Communication, Collaboration and Safety in Healthcare Robotics",
+      "published": "2025-04-30",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12071619/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "의료 로봇 상위 온톨로지 HERON. SPARQL 자격·전제조건 검사와 SHACL 정책 검증을 의료센터 물류·플릿 조정 시뮬레이션 시나리오로 시연. 검증에서 PMC 전문을 직접 열었다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    },
+    {
+      "id": "ref-228",
+      "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+      "title": "VDA5050/json_schemas/factsheet.schema (main)",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "VDA 5050 3.0.0 팩트시트 JSON 스키마. VDA 5050 프로토콜 판을 뜻하는 version 등 필수 속성과 하드웨어·소프트웨어 버전을 담는 선택 속성 mobileRobotConfiguration 을 정한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/robot-ontology/ontology-verification-and-change-management.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "update",
+      "id": "oq-147",
+      "question": "문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가?",
+      "areas": [
+        4,
+        45,
+        7
+      ],
+      "status": "조사 중",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 능력 온톨로지에 대해 펌웨어·매뉴얼 개정을 감지해 영향받는 작업·현장을 찾고 재검증 대기열에 넣는 절차를 구현한 공개 구현이나 현장 사례가 있는가?",
+      "areas": [
+        7,
+        57,
+        4
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "분류 원문이 말하는 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)에 대응하는 기존 검증 수준·성숙도 체계가 있는가, 아니면 ROP 가 자체 정의해야 하는가?",
+      "areas": [
+        7,
+        54,
+        36
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내에서 역량 질문·추론기·SHACL 로 로봇 온톨로지를 검증하거나 버전을 관리한 연구·현장 사례가 있는가(이번 조사에서 확인된 국내 자료는 학술용어사전 온톨로지 검증 연구 1건이다)?",
+      "areas": [
+        7,
+        5
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "IDTA 서브모델 템플릿의 이전 판이 새 판 발행 6개월 뒤 deprecated 로 옮겨질 때 그 판에 묶인 로봇 등록 데이터와 능력 정의를 ROP 는 어떤 기준으로 재검증·이관해야 하는가?",
+      "areas": [
+        7,
+        21,
+        4
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "가정",
+      "item": "시작 조건",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "작업 대상",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "수행 자원",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "제약",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "완료·인계",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시",
+      "title": "7. 온톨로지 검증·변경 관리"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "OWL 2 Web Ontology Language Structural Specification (Second Edition)",
+      "kind": "표준",
+      "org": "W3C",
+      "url": "https://www.w3.org/TR/owl2-syntax/",
+      "related_areas": [
+        7,
+        5,
+        57
+      ],
+      "summary": "온톨로지 IRI·버전 IRI 로 판을 식별하고 owl:priorVersion·backwardCompatibleWith·incompatibleWith 주석으로 이전 판 관계를 표기하는 OWL 2 구조 명세 2판(2012-12-11).",
+      "ref_id": "ref-886"
+    },
+    {
+      "name": "IDTA 서브모델 템플릿 공식 저장소(admin-shell-io/submodel-templates) 판·폐기 규칙",
+      "kind": "표준",
+      "org": "IDTA(Industrial Digital Twin Association)",
+      "url": "https://github.com/admin-shell-io/submodel-templates",
+      "related_areas": [
+        7,
+        21,
+        4
+      ],
+      "summary": "published·deprecated 폴더, 주버전·리비전·버그 수정 표기, 새 판 발행 6개월 뒤 이전 판을 deprecated 로 옮기는 규칙을 README 로 정한다.",
+      "ref_id": "ref-439"
+    },
+    {
+      "name": "KGCL (Knowledge Graph Change Language)",
+      "kind": "프레임워크",
+      "org": "Hegde, H. 외 (Database, Oxford)",
+      "url": "https://arxiv.org/abs/2409.13906",
+      "related_areas": [
+        7
+      ],
+      "summary": "온톨로지·지식 그래프의 변경을 통제 자연어 명령·패치·diff 로 요청·기술하는 표준 데이터 모델. GitHub 저장소 에이전트와 BioPortal 변경 요청 인터페이스로 구현되었다.",
+      "ref_id": "ref-892"
+    }
+  ],
+  "additional_research_requests": [
+    "7절 SHACL 행에 필요한 사실: W3C 가 진행 중인 SHACL 1.2 Core 작업 초안(2026-06-22)에서 검증 보고서 구조(sh:conforms·sh:result·sh:resultSeverity)가 바뀌는지 확인 — 검증이 언급했으나 브리프에 없어 본문에 쓰지 않았다",
+    "5절에 필요한 사실: 제조 공장·물류창고·상업 시설·실외·기타 현장 유형의 온톨로지 검증·변경 관리 적용 사례 — 특히 Köcher·Vieira da Silva·Fay 'Constraint Checking of Skills using SHACL'(INDIN 2021)의 서지 확인(제조 공장 사례 후보)",
+    "6·11절에 필요한 사실: 분류 원문의 지원 단계 표시(문서 확인·구조화·시뮬레이션 연결·어댑터 연결·시뮬레이션 검증·실기 검증)에 대응하는 검증 수준·성숙도 체계를 정의한 출처",
+    "4절에 필요한 사실: Zablith 외(2013) 온톨로지 진화 서베이의 단계 이름(초록에서 확인되지 않아 본문에 쓰지 않았다)",
+    "6·11절(oq-147)에 필요한 사실: 로봇 매뉴얼·URDF 에서 추출한 능력 항목에 매뉴얼 절·줄 근거를 붙여 확정·반려하는 공개 구현 — IDTA 'How to write a SMT v1.1' 지침, Dibowski 'Full Traceability and Provenance for Knowledge Graphs'(FOIS 2024), MDPI 'Grounded Knowledge Graph Extraction via LLMs' 원문 열람",
+    "8절에 필요한 사실: 국내에서 로봇 온톨로지를 역량 질문·추론기·SHACL 로 검증하거나 버전을 관리한 연구·현장 사례(이번 조사는 문헌정보학 온톨로지 검증 연구 1건뿐)",
+    "4·8절에 필요한 사실: 역량 질문의 원 제안(Grüninger·Fox 1995)과 요구사항 기반 검증 도구 Themis 의 서지 — 원문·서지를 확인하지 못해 쓰지 않았다"
+  ],
+  "fixes_applied": [
+    "f21 강등 — 6절 '원문 근거를 붙인 검토'에서 TRACE-KG 의 '원문 근거에 대한 완전한 추적 가능성 유지' 문장만 [사실][^ref-897]로 두고, 사람 검토자가 원문과 대조해 검증하는 용도는 별도 문장으로 나눠 [추정][^ref-897]로 썼다",
+    "f23 문구 정정 — 7절 VDA 5050 팩트시트 행을 'VDA 5050 프로토콜 판([Major].[Minor].[Patch])을 뜻하는 version 을 필수 속성으로 두고' 로 고쳤고, mobileRobotConfiguration 의 하드웨어·소프트웨어 판 서술은 그대로 두었다",
+    "f4·f17 소속 표현 제거 — 3·6절에서 '포즈난 공과대학교·케이프타운 대학교 연구진', '유럽 연구진', '생물의학 온톨로지 연구진', '호주 국립대학교 계열'을 쓰지 않고 Wiśniewski 외·Martorana 외·고영만 외·Zablith 외·Hegde 외·Qiang 외 저자명으로 발행 주체를 구분했다. f2 는 '암스테르담 자유대학교'를 5절과 각주에 썼다",
+    "SHACL 기준 판 명시 — 4·6·7절과 7절 표 아래 문장에서 'W3C 권고안 2017-07-20' 을 기준 판으로 적었고, SHACL 1.2 작업 초안은 본문에 쓰지 않고 additional_research_requests 첫 항목에 '검증 보고서 구조가 바뀌는지 확인'으로 올렸다",
+    "f10 모델명 — 6절에서 'Kimi K2' 로 표기했다",
+    "f18 문구 — 3·8절에서 '2024년 2월 기준 IDTA 가 발표한 84개·공개한 18개 명세' 로 썼다",
+    "5절 적용 사례 — 가정 사례에 현장 배치가 아니라 네 로봇 플랫폼 대상 역량 질문 평가임을, 병원 사례에 임상 배치 없는 시뮬레이션 시나리오임을 표와 서술에 명시했고, 5절 첫 단락에 제조 공장·물류창고·상업 시설·실외·기타 사례는 확인되지 않았다고 적었다. site_matrix_updates 는 가정·병원 두 현장 유형만 냈다",
+    "f7·f9 중복 처리 — HERON 은 5절 병원 사례와 6절 '자동 평가 도구'에서 SHACL 검증 관점으로만 짧게 다루고 6. 온톨로지 기반 시스템·로봇 연동 페이지로 링크했으며, Vieira da Silva 외는 6절 '언어 모델을 결합한 검증'에서 검증 단계 관점으로만 쓰고 4. 이기종 로봇 등록 페이지로 링크했다. 각주 id 는 ref-880·ref-465 를 그대로 재사용했다",
+    "원문 미열람 표시 제거 — ref-439·ref-465·ref-880 의 13절 각주에 '(원문 미열람)' 을 붙이지 않았고 reference_updates 의 source_unopened 를 모두 false 로 냈다",
+    "f19·f20 조건 — 6절과 8절에서 Osmani(2026)를 단독 저자의 이론적 프리프린트이며 실험·현장 적용이 없다고 적었고, OntoKG-EQ 를 금융(신흥 주식시장) 도메인의 선례라고 밝혔다",
+    "9절 — 첫 문장에 어느 출처도 ROP 책임 범위를 직접 말하지 않아 리서치 에이전트의 종합이며 전부 추정임을 밝히고 f25·f26 을 [추정]으로 두었으며, f26 은 표의 '외부와 연계하는 것' 열에 '연계 대상:' 으로 짧게 다뤘다",
+    "11절 — oq-147 을 해결로 바꾸지 않고 '상태: 조사 중' 에 부분 진전(원문 근거 추적·사람 최종 검토 구성은 확인, 로봇 매뉴얼 절·줄 근거 구현은 미확인)을 적었고, open_question_updates 에 update(조사 중)로 냈다. open_questions_new 4건은 질문 문장·관련 영역 번호를 그대로 new 로 등록했다",
+    "참고문헌 번호 충돌 — changelog_entry 에 'ref-886~ref-890 이 같은 날 실행 2026-09-29-08 의 다른 URL 과 번호가 겹쳐 퍼블리셔가 URL 기준으로 번호를 재배정해야 함' 을 남겼고, 페이지 각주는 브리프 id 를 그대로 쓰되 reference_updates 18건 모두에 URL 을 적었다",
+    "분량 초과 자동 분리: 7. 온톨로지 검증·변경 관리 본문 12,274자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 3,482자"
+  ]
+}

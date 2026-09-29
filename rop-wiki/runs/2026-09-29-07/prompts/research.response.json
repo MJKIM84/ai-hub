@@ -1,0 +1,824 @@
+{
+  "duration_api_ms": 721307,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 5.136523,
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 105879,
+    "cache_read_input_tokens": 923252,
+    "output_tokens": 43651,
+    "output_tokens_details": {
+      "thinking_tokens": 14511
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 105879,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 31476,
+        "cache_read_input_tokens": 188246,
+        "cache_creation_input_tokens": 2797,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2797
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 162,
+      "outputTokens": 43651,
+      "cacheReadInputTokens": 923252,
+      "cacheCreationInputTokens": 105879,
+      "webSearchRequests": 0,
+      "costUSD": 4.532563,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 14511,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 398495,
+      "outputTokens": 13093,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 14,
+      "costUSD": 0.60396,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 41,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-07\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":4,\"area_name\":\"4. 이기종 로봇 등록\",\"category\":\"B. 로봇 온톨로지\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 디지털 명판·URDF·AGV 기술 데이터 서브모델·자산관리셸 레지스트리·온톨로지 채우기 용어 없음(VDA 5050 팩트시트·신원 보고·자산관리셸·소프트웨어 명판·능력 기술 서브모델·의미 식별자는 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 등록 데이터 수집(팩트시트 요청·자산관리셸), 문서·URDF에서 능력 추출, 검토·승인 흐름, 어댑터 설정 생성 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — VDA 5050 팩트시트, IDTA 02047·02006, MassRobotics 신원 보고, OPC UA Robotics, 자산관리셸 API, Open-RMF 플릿 어댑터 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-128 미반영, 정정 요청 없음\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"제조사도 형식도 다른 로봇을 어떻게 빠르고 믿을 수 있게 등록할 것인가? [분류원문]\",\"등록 시 받아야 할 식별·제원 데이터를 정한 기계가독 형식(VDA 5050 팩트시트, 자산관리셸 서브모델·디지털 명판, MassRobotics 신원 보고, OPC UA Robotics)은 각각 무엇을 필수로 요구하는가? (섹션 4·7 겨냥)\",\"플릿 관리 프레임워크(Open-RMF)는 새 로봇을 등록·연동할 때 어떤 설정과 구현을 요구하며, 병원 현장에서 실제로 어떻게 등록했는가? (섹션 5·6 겨냥)\",\"매뉴얼·URDF·자연어 설명에서 능력·제약을 자동으로 추출하고 검증과 사람 검토를 두는 방법은 무엇이 보고되었는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)\",\"제조사가 능력·제원 정보를 제공·갱신하는 경로(자산관리셸 레지스트리·디스커버리, 팩트시트 요청)와 벤더·통합사를 사전 평가하는 등록 승인 관문의 사례는 무엇인가? (섹션 6·9 겨냥)\",\"oq-128 국내 현장에서 VDA 5050 팩트시트나 자산관리셸 능력 기술을 로봇 등록 데이터로 실제 쓰는 사례가 있는가? (섹션 5·11 겨냥, 한국 자료 우선)\",\"이기종 로봇 등록에서 ROP가 직접 맡을 것(등록부·데이터 수집·추출 초안·검토 승인)과 로봇 내부 주행 기술·제조사 책임에 맡길 것의 경계는 어디이며, 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"VDA 5050 공식 저장소(main, 3.0.0 판)의 팩트시트 JSON 스키마는 headerId·timestamp·version·manufacturer·serialNumber·typeSpecification·physicalParameters·protocolLimits·protocolFeatures·mobileRobotGeometry·loadSpecification 을 필수 속성으로, 하드웨어·소프트웨어 버전과 네트워크·배터리 매개변수를 담는 mobileRobotConfiguration 을 선택 속성으로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-869\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"factsheet.schema 의 required 목록에 위 11개 속성이 있고 mobileRobotConfiguration 은 선택이다. headerId 는 \\\"defined per topic and incremented by 1 with each sent message\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f2\",\"claim\":\"같은 팩트시트 스키마에서 typeSpecification 은 시리즈 이름, 구동 방식(DIFFERENTIAL·OMNIDIRECTIONAL·THREE_WHEEL), 로봇 종류(FORKLIFT·CONVEYOR·TUGGER·CARRIER), 최대 적재 질량, 위치추정 방식, 주행 방식(물리 라인·가상 라인·자유 주행), 지원 구역 유형을, physicalParameters 는 최소·최대 속도, 각속도, 최대 가감속, 높이·폭·길이를 기종 단위로 기술한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-869\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"typeSpecification: seriesName, mobileRobotKinematics, mobileRobotClass, maximumLoadMass, localizationTypes, navigationTypes, supportedZones / physicalParameters: minimumSpeed·maximumSpeed, 각속도, maximumAcceleration·Deceleration(최대 적재 기준), height·width·length. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f3\",\"claim\":\"VDA 5050 명세 3.0.0 판은 플릿 관제가 factsheetRequest 즉시 동작을 보내면 로봇이 factsheet 토픽에 팩트시트를 게시하는 요청·응답 방식을 정하고, 팩트시트에 플릿 관제에서 로봇 설정을 돕는 매개변수와 벤더 특정 정보가 들어간다고 적어 등록 데이터를 로봇에서 직접 받는 경로를 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-879\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"3.0.0 판 명세: 팩트시트는 \\\"Parameters or vendor-specific information to assist set-up of the mobile robot in fleet control\\\"을 담고, 관제가 factsheetRequest 즉시 동작으로 요청하면 로봇이 factsheet 토픽에 게시한다. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f4\",\"claim\":\"IDTA 02047-1-0(2025-03) '실내 물류용 AGV 기술 데이터' 자산관리셸 서브모델은 TypeAndApplicationInformation·TechnicalParameters·VDA5050Factsheet·EnergyAndCommunication·Battery·Safety·TemporaryTechnicalData 컬렉션으로 구성되며, 혼합 플릿을 중앙 관제에 통합하고 시운전·운영·유지보수에 걸쳐 쓰는 것을 목표로 디지털 명판·기술 데이터 서브모델과 연계된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-870\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"PDF 본문의 컬렉션 목록과 VDA 5050 팩트시트 연계, 관련 서브모델(Digital Nameplate, Technical Data) 확인. 공식 저장소 README 는 대상이 \\\"driverless vehicles and robots in intralogistics\\\"이고 요구가 \\\"commissioning, operation and maintenance\\\"에 걸친다고 적는다.\",\"as_of\":\"2025-03\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f5\",\"claim\":\"IDTA 02006 디지털 명판 서브모델 3.0 판은 URIOfTheProduct·ManufacturerName·ManufacturerProductDesignation·SerialNumber·YearOfConstruction·DateOfManufacture 를 필수로, HardwareVersion·FirmwareVersion·SoftwareVersion·ContactInformation·Markings 를 선택으로 두어 로봇을 포함한 산업 장비의 식별자와 버전을 기계가독 명판으로 담는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-876\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IDTA 02006-3-0 PDF 의 속성표: 필수 6개(제품 URI·제조사·제품명·일련번호·제조 연도·제조일), 선택 5개(하드웨어·펌웨어·소프트웨어 버전, 연락처, 마킹). 발행일은 도구가 2024-11 로 읽었으나 파일명은 3-0-1 판(2025-10 게시)이라 확정하지 못함. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f6\",\"claim\":\"MassRobotics AMR 상호운용 표준의 JSON 스키마는 로봇이 접속 시 보내는 identityReport 에 uuid(RFC 4122)·timestamp·manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope 를 필수로, maxSpeed·maxRunTime·chargerType·supportVendorName·productDocumentation·cargoType·cargoMaxVolume·cargoMaxWeight 등을 선택으로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-871\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"AMR_Interop_Standard.json: identityReport 필수 6개, 선택에 productDocumentation(문서 URL)·cargoMaxWeight 등. robotSerialNumber 는 \\\"Unique robot identifier that ideally can be physically linked to the AMR\\\". (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f7\",\"claim\":\"서로 다른 세 발행 기관(VDA, IDTA, MassRobotics)이 각각 제조사가 제공하는 기계가독 등록 기록을 정의하고, 셋 모두 제조사명·기종(시리즈)·일련번호·치수(외곽)·최대 적재·최대 속도 항목을 공통으로 담아 '제조사 제공 식별·제원 기록'이 이기종 로봇 등록의 표준 관행으로 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-869\",\"ref-871\",\"ref-876\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"VDA 5050 팩트시트(manufacturer·serialNumber·typeSpecification·physicalParameters·mobileRobotGeometry), MassRobotics identityReport(manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope·maxSpeed), IDTA 02006(ManufacturerName·SerialNumber·버전) 세 원문을 대조. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f8\",\"claim\":\"OPC UA for Robotics 1부(OPC 40010-1) 1.02 판(2025-09-08)은 수직 통합·자산 관리·상태 감시를 범위로 MotionDeviceSystem 정보 모델을 정의하고, MotionDevice 와 Controller 에 Manufacturer·Model·SerialNumber·ProductCode·SoftwareRevision 식별 속성을 두어 산업용 로봇(매니퓰레이터) 등록에 쓸 식별 정보를 표준화한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-881\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"OPC Foundation 참조 사이트: Version 1.02, 2025-09-08 게시, 범위 'Vertical Integration'(자산 관리·상태 감시), MotionDevice·Controller 식별 속성 Manufacturer·Model·SerialNumber·ProductCode·SoftwareRevision.\",\"as_of\":\"2025-09-08\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f9\",\"claim\":\"OPC Foundation 은 OPC UA for Robotics 명세를 STS XML 외에 'AI 응용용 마크다운'과 'RAG 청크' 형식으로도 제공해, 표준 문서 자체를 언어 모델이 읽어 처리하기 쉬운 형식으로 배포하기 시작했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-881\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"참조 페이지의 제공 형식: STS XML, \\\"Markdown for AI applications\\\", RAG Chunks(로컬 모델 통합용), 네임스페이스 http://opcfoundation.org/UA/Robotics/ 와 노드셋 다운로드.\",\"as_of\":\"2025-09-08\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"자산관리셸 API 명세(IDTA-01002) 공식 저장소는 최신 3.2.0 판에서 AAS 저장소·서브모델 저장소·AAS 레지스트리·서브모델 레지스트리·디스커버리·개념 설명 저장소·AASX 파일 서버 등 아홉 가지 서비스 명세를 두어, 제조사가 낸 자산관리셸을 등록하고 찾는 인터페이스를 표준으로 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-880\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"aas-specs-api README: 최신 릴리스 3.2.0, 서비스 명세 9종(AAS Service, AAS Repository, AAS Registry, Submodel Service·Repository·Registry, Discovery, Concept Description Repository, AASX File Server). 레지스트리·디스커버리의 결합 목적 문장은 README 에 없음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"디지털 명판(f5)·AGV 기술 데이터 서브모델(f4)·레지스트리·디스커버리 API(f10)를 함께 보면, 이 영역의 '제조사 능력 정보 제공 경로'는 제조사가 명판과 기술 데이터 서브모델을 자산관리셸로 내고 레지스트리에 등록해 ROP 가 자산 식별자로 찾아 읽는 방식으로 구성할 수 있을 것으로 보이나, 로봇 관제가 이 경로로 실제 등록한 운영 사례는 확인되지 않았다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-876\",\"ref-870\",\"ref-880\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"세 표준 산출물의 역할(식별·제원·등록/발견)을 조합한 리서치 에이전트의 추론. 자산 ID→AAS ID(디스커버리)→엔드포인트(레지스트리) 순서는 IDTA Part 2 PDF 검색 결과 요약에서만 보였고 원문은 열지 않았다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f12\",\"claim\":\"Open-RMF 플릿 어댑터 튜토리얼은 새 플릿을 등록하는 config.yaml 에 플릿 이름, 선속도·각속도 한계, 발자국·근접 반경(profile), 후진 가능 여부, 배터리·기계·주변·도구 시스템 매개변수, 재충전 임계값, 작업 능력(loop·delivery·clean), 로봇별 충전기를 적고, 로봇 측 RobotAPI 가 navigate·position·battery_soc·stop·start_activity·is_command_completed 를 구현해야 한다고 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-873\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"integration_fleets_adapter_tutorial.md: \\\"limits: [linear: [0.5, 0.75], angular: [0.6, 2.0]]\\\", profile footprint/vicinity, battery_system(voltage·capacity·charging_current), task_capabilities, robots 별 charger; RobotAPI 필수 메서드 6종. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f13\",\"claim\":\"Valner 외(2022)의 타르투대학교병원 현장 시험은 자체 관제가 없는 PAL Robotics TIAGo 를 로봇 탑재 컴퓨터의 FreeFleet 클라이언트, 플릿 이름·DDS 설정의 FreeFleet 서버, 배터리·속도·발자국을 적은 RMF 어댑터 파일로 Open-RMF 에 등록했고, 프로그램 제어가 없는 병원 문은 카드 인식·근접 센서를 대신 작동시키는 서보 장치를 만들어 지나며 중환자실에서 검사실로 혈액 검체를 운반했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-874\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Frontiers in Robotics and AI 2022-08-23 전문: TIAGo 주 배치, Clearpath Jackal 시험 환경, MiR100+UR5e 예정; 등록은 FreeFleet 클라이언트·서버 설정과 어댑터 파일의 로봇 특성; 문은 \\\"swipe the key card or trigger the proximity sensor\\\" 장치로 통과.\",\"as_of\":\"2022-08-23\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f14\",\"claim\":\"서로 다른 두 발행 주체(Open Robotics 튜토리얼, 타르투대학교 연구진의 병원 현장 시험)가 플릿 관리 프레임워크에 로봇을 등록하는 일이 '기종 제원·배터리 매개변수를 적은 어댑터 설정 파일'과 '로봇별 API 구현'의 두 부분으로 이루어진다고 각각 보고해, 등록 작업의 구성이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-873\",\"ref-874\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"튜토리얼의 config.yaml(제원·배터리·작업 능력)+RobotAPI 와 병원 시험의 어댑터 파일(배터리·속도·발자국)+FreeFleet 클라이언트가 같은 구조. 발행 기관이 다르고 한쪽이 다른 쪽을 옮긴 것이 아님.\",\"as_of\":\"2022-08-23\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f15\",\"claim\":\"싱가포르 창이종합병원 CHART 의 RoMi-H 등재 프로그램(2025-05-01 시행)은 보건부가 Open-RMF 기반 RoMi-H 를 공공 의료기관의 자동화 통합 플랫폼으로 지정한 뒤 시스템 통합사가 기술·배치 역량 평가를 거쳐 2년 유효 등재를 받아야 병원 제안 요청에 참여하게 하며, 2026-08-24 기준 등재 업체는 5곳이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-878\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"CGH 공지: 통합사는 \\\"a series of evaluations, encompassing both technical expertise and deployment knowledge\\\"를 거침, 등재 5곳(HOPE Technik·Medisys·Panasonic Asia Pacific·QuikBot·Techfox), 2년 유효, 반기 평가.\",\"as_of\":\"2026-08-24\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f16\",\"claim\":\"벤더 주장(기사 경유): 클로봇의 크롬스는 '국내 첫 이기종 로봇 통합관제 솔루션'으로 50대 이상 로봇 동시 제어와 엘리베이터 탑승을 지원한다고 소개되며, 기사는 LG CNS 와 함께 인천공항 다기종 로봇 제작·5G 디지털 트윈 관제 구축 사업을 계약했다고 전하나 VDA 5050 지원 여부·연동 제조사 수·등록 방식은 기사에 없다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-875\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 로봇신문 2025-11-09 기사에서 \\\"다양한 제조사의 로봇을 하나의 시스템에서 제어할 수 있는 국내 첫 이기종 로봇 통합관제 솔루션\\\", 50대 이상 동시 제어, 인천공항 사업 계약. VDA 5050 기반이라는 문구는 검색 결과 요약에서만 보였고 공식 페이지는 403 으로 열지 못함.\",\"as_of\":\"2025-11-09\",\"site_type\":\"기타\",\"flow_item\":\"수행 자원\",\"vendor_claim\":true},{\"id\":\"f17\",\"claim\":\"신민종·한영석·정재윤(한국디지털산업학회지 29권 4호, 2024)은 자율이동로봇(AMR)의 하드웨어·소프트웨어 정보를 자산관리셸(AAS)로 기록해 JSON 으로 저장·송수신하고 OPC UA 로 실시간 감시하는 모니터링 시스템 설계를 제안했으나, 초록은 실제 현장 적용 결과를 적지 않는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-877\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KCI 초록: \\\"AMR의 정보를 AAS로 기록하고 JSON 형식으로 저장하고 송수신하여\\\" 정보를 공유, OPC UA 활용; 기대 효과만 서술. 세부 서브모델(명판·기술 데이터) 명칭은 초록에 없음.\",\"as_of\":\"2024\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"oq-128 관련: 국내 자료로 확인된 것은 자산관리셸로 AMR 정보를 기록하는 설계 연구(f17)와 벤더의 이기종 관제 소개(f16)뿐이며, VDA 5050 팩트시트나 자산관리셸 능력 기술을 실제 로봇 등록 데이터로 운영에 쓴 국내 사례는 이번 조사에서 확인되지 않아 oq-128 은 미해결로 남는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-877\",\"ref-875\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"한국어 검색 2회(관제 플랫폼·팩트시트·자산관리셸, 자산관리쉘 스마트공장·로봇)에서 국내 운영 사례를 찾지 못함. 중기부 스마트공장 고도화 사업의 AAS 적용 의무화는 검색 결과 요약에서만 보여 finding 으로 내지 않음.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"Dussard·Sarthou(2026)는 URDF 가 로봇의 구조·운동학은 기술하지만 식별자에 의미가 없다는 점을 들어, 기존 온톨로지의 개념을 프롬프트에 넣어 언어 모델이 URDF 요소의 의미 관계를 추론하게 하고 여러 번 질의한 다수결과 구문·스키마 검증으로 출력을 제약해 로봇 온톨로지를 자동으로 채우는 방법을 여러 로봇 기술로 평가했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-872\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2606.17073 초록(2026-06-10): 언어 모델에 \\\"concepts from an existing ontology\\\"를 프롬프트로 주어 정렬, \\\"majority voting across multiple LLM queries\\\"와 구문·스키마 검증; 정확도 수치·사람 검증 언급은 초록에 없음.\",\"as_of\":\"2026-06-10\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 능력의 자연어 설명을 정해진 프롬프트에 넣어 언어 모델이 능력 온톨로지를 생성하고, 구문 검증·모순 탐지·환각과 누락 점검을 언어 모델과의 반복 루프로 자동 수행한 뒤 사람이 최종 검토·수정만 하게 하는 방법을 제안해 수작업 모델링 부담을 줄였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-882\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2406.07962 초록: 모델링은 \\\"manual and error-prone task\\\"; 자동 검증 루프(구문·모순·환각/누락) 뒤 \\\"a final human review and possible correction\\\"만 필요. 정량 결과는 초록에 없음.\",\"as_of\":\"2024-10-18\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f21\",\"claim\":\"Abolhasani·Pan(2024)의 OntoKGen 은 신뢰성·유지보수성 분야 기술 문서에서 언어 모델로 온톨로지와 지식 그래프를 뽑되, 대화형 인터페이스에서 시스템이 모범 사례 기반 온톨로지를 추천하고 사용자가 최종 결정을 갖게 하는 방식으로 '보편적으로 옳은 온톨로지는 없다'는 전제를 두고 사용자 검토를 설계의 중심에 두었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-883\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 2412.00608 초록: 적응형 반복 사고 연쇄로 사용자 요구에 맞추고, 사용자가 \\\"complete control over final decisions\\\"; 결과는 Neo4j 저장·RAG 기반으로 활용. 로봇 문서가 아닌 신뢰성·유지보수성 문서가 대상.\",\"as_of\":\"2024-12-10\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f22\",\"claim\":\"서로 다른 세 연구 그룹(LAAS 의 URDF 온톨로지 채우기, 헬무트 슈미트 대학 계열의 자연어 능력 온톨로지 생성, Abolhasani·Pan 의 기술 문서 온톨로지 추출)이 언어 모델 추출에 자동 검증이나 사용자 최종 검토를 결합한 방법을 각각 보고해, '자동 추출 + 자동 검증 + 사람 최종 검토' 구성이 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-872\",\"ref-882\",\"ref-883\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"f19(다수결·스키마 검증), f20(검증 루프+사람 최종 검토), f21(사용자 최종 결정) 대조. 세 출처 모두 프리프린트(초록 확인)라 medium.\",\"as_of\":\"2026-06-10\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f23\",\"claim\":\"이 영역이 요구하는 '원문 근거(절·줄·인용)와 함께 능력 정의 초안을 만들고 사람이 대조해 확정·반려'하는 흐름은 f20·f21 의 사람 최종 검토와 방향이 같지만, 확인한 세 연구 어느 것도 추출 항목마다 매뉴얼의 절·줄 위치를 붙여 검토자가 대조하게 하는 근거 연결을 초록에서 밝히지 않아 근거 연결형 검토·승인은 아직 확인되지 않은 요구로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-882\",\"ref-883\",\"ref-872\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"세 초록의 검증·검토 서술에 원문 위치 인용 항목이 없음. 원문 위치 강조를 갖춘 검토 작업대(HERMES 등)는 지질 분야라 출처 상한 때문에 넣지 않음.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f24\",\"claim\":\"확인한 자료를 종합하면 4. 이기종 로봇 등록에서 ROP가 직접 맡을 범위는 제조사·기종·일련번호·펌웨어·SDK 버전·장착 장비를 담는 등록부, 팩트시트·자산관리셸·신원 보고를 받아 저장·대조하는 수집 경로, 문서·URDF에서 뽑은 능력 초안의 검토·승인 기록, 어댑터 설정 초안 생성이며, 등록 승인 관문에 벤더·통합사 사전 평가(f15)를 둘 수 있을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-879\",\"ref-870\",\"ref-873\",\"ref-878\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"팩트시트 요청 경로(f3), 자산관리셸 서브모델(f4), 어댑터 설정 구성(f12·f14), 등재 프로그램(f15)을 분류 원문 19장의 경계에 맞춰 조합한 추론.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"연계 대상: 팩트시트의 위치추정 방식·주행 방식(localizationTypes·navigationTypes)과 mobileRobotConfiguration 의 펌웨어·소프트웨어 버전은 제조사가 소유·갱신하는 로봇 자체 지능·제어 정보이므로, 이종 제조사를 잇는 ROP 는 등록 시 이를 받아 저장·대조하고 버전 변경을 추적하는 데 그치고 위치추정·회피 성능 자체는 제조사에 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-869\",\"ref-879\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"스키마 필드(f2)와 명세의 벤더 정보 문구(f3)를 분류 원문 19장 '로봇 자체 지능·제어' 경계에 대응시킨 추론.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f26\",\"claim\":\"언어 모델로 URDF·자연어·기술 문서에서 온톨로지를 추출하는 연구(f19~f22)는 L. AI·학습 기술의 45. 문서·도면·장면 이해와 47. AI·학습·적응과 모델 운영에 속하는 방법이며 원문 교차 규칙(매뉴얼 해석은 4·55번)에 따라 이 영역과 55. 현장 조사·설치·시운전에 연결해야 하고, 등록 데이터는 5. 로봇 능력·작업 표현(능력 표현), 6. 온톨로지 기반 시스템·로봇 연동(어댑터 설정), 7. 온톨로지 검증·변경 관리와 57. 자산·소프트웨어 수명주기 관리(펌웨어·문서 개정), 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성(팩트시트·자산관리셸 규격)에 연결된다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-872\",\"ref-870\",\"ref-873\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"분류 원문 13장 교차 규칙과 4장 주석, 그리고 이번 finding 의 내용 분포에 따른 연결 제안.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-869\",\"org\":\"VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소\",\"title\":\"VDA5050/json_schemas/factsheet.schema (main)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"VDA 5050 팩트시트 메시지의 JSON 스키마 원본. 필수·선택 속성과 typeSpecification·physicalParameters 필드 정의를 담는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/factsheet.schema\"},{\"id\":\"ref-870\",\"org\":\"Industrial Digital Twin Association (IDTA)\",\"title\":\"IDTA 02047-1-0 Submodel Template: Technical Data for AGV in Intralogistics\",\"published\":\"2025-03\",\"url\":\"https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"실내 물류 AGV·AMR 의 기술 데이터를 자산관리셸 서브모델로 표준화한 명세. VDA 5050 팩트시트 컬렉션을 포함하고 혼합 플릿의 중앙 관제 통합을 목표로 한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-871\",\"org\":\"MassRobotics (AMR Interoperability Working Group)\",\"title\":\"AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema\",\"published\":null,\"url\":\"https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. identityReport·statusReport 메시지와 필수·선택 필드를 정의한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/AMR_Interop_Standard.json\"},{\"id\":\"ref-872\",\"org\":\"Dussard, B., & Sarthou, G. (LAAS-CNRS)\",\"title\":\"Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF\",\"published\":\"2026-06-10\",\"url\":\"https://arxiv.org/abs/2606.17073\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"URDF 모델을 언어 모델로 해석해 기존 온톨로지 개념에 맞춰 로봇 온톨로지를 자동으로 채우는 방법. 다수결과 구문·스키마 검증으로 출력을 제약한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-873\",\"org\":\"Open Robotics (Programming Multiple Robots with ROS 2)\",\"title\":\"Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"Open-RMF 플릿 어댑터를 만드는 튜토리얼. 플릿·로봇 설정 파일(config.yaml)의 항목과 로봇 측 RobotAPI 가 구현할 메서드를 적는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_adapter_tutorial.md\"},{\"id\":\"ref-874\",\"org\":\"Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI\",\"title\":\"Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test\",\"published\":\"2022-08-23\",\"url\":\"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"타르투대학교병원에서 Open-RMF 와 FreeFleet 으로 이기종 로봇을 등록·운용해 혈액 검체를 운반한 현장 시험. 등록 설정과 문 통과용 보조 장치를 기술한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-875\",\"org\":\"로봇신문\",\"title\":\"[기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막\",\"published\":\"2025-11-09\",\"url\":\"https://www.irobotnews.com/news/articleView.html?idxno=43274\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-29\",\"summary\":\"클로봇의 이기종 로봇 통합관제 솔루션 크롬스를 소개한 기사. 50대 이상 동시 제어·엘리베이터 탑승과 인천공항 다기종 로봇 사업 계약을 전한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-876\",\"org\":\"Industrial Digital Twin Association (IDTA)\",\"title\":\"IDTA 02006-3-0 Submodel Template: Digital Nameplate for Industrial Equipment\",\"published\":null,\"url\":\"https://industrialdigitaltwin.org/wp-content/uploads/2025/10/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"산업 장비의 디지털 명판 서브모델 3.0 판 명세. 제품 URI·제조사·제품명·일련번호·제조 연도·제조일을 필수로, 하드웨어·펌웨어·소프트웨어 버전 등을 선택으로 둔다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-877\",\"org\":\"신민종, 한영석, 정재윤 (한국디지털산업학회지 29(4))\",\"title\":\"자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계\",\"published\":\"2024\",\"url\":\"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"AMR 의 하드웨어·소프트웨어 정보를 자산관리셸로 기록해 JSON 으로 교환하고 OPC UA 로 감시하는 시스템 설계를 제안한 국내 논문. KCI 초록만 확인했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-878\",\"org\":\"Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)\",\"title\":\"RoMi-H Empanelment Programme 2025\",\"published\":\"2025-05-01\",\"url\":\"https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"싱가포르 공공 의료기관의 로봇 통합 플랫폼 RoMi-H 에 시스템 통합사를 평가·등재하는 프로그램 공지. 등재 요건·유효 기간·등재 업체 5곳을 적는다(2026-08-24 갱신).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-879\",\"org\":\"VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소\",\"title\":\"VDA5050_EN.md — VDA 5050 Interface for the communication between automated guided vehicles (AGV) and a master control (Version 3.0.0, main)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"VDA 5050 명세 3.0.0 판 원문(마크다운). 팩트시트의 목적과 factsheetRequest 즉시 동작·factsheet 토픽을 통한 요청·게시 방식을 적는다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-880\",\"org\":\"Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소\",\"title\":\"aas-specs-api — Repository of the Asset Administration Shell Specification IDTA-01002 API (README)\",\"published\":null,\"url\":\"https://github.com/admin-shell-io/aas-specs-api\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"자산관리셸 API 명세(IDTA-01002)의 공식 OpenAPI 저장소 README. 최신 3.2.0 판과 레지스트리·디스커버리를 포함한 서비스 명세 9종을 나열한다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/admin-shell-io/aas-specs-api/main/README.md\"},{\"id\":\"ref-881\",\"org\":\"OPC Foundation\",\"title\":\"OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integration (Version 1.02)\",\"published\":\"2025-09-08\",\"url\":\"https://reference.opcfoundation.org/Robotics/v100/docs/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"산업용 로봇의 수직 통합·자산 관리·상태 감시를 위한 OPC UA 정보 모델(MotionDeviceSystem). 제조사·모델·일련번호 등 식별 속성을 정의하고 AI 응용용 마크다운·RAG 청크 형식도 제공한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-882\",\"org\":\"Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.\",\"title\":\"Toward a Method to Generate Capability Ontologies from Natural Language Descriptions\",\"published\":\"2024-10-18\",\"url\":\"https://arxiv.org/abs/2406.07962\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"자연어 능력 설명을 소수 예시 프롬프트로 언어 모델에 넣어 능력 온톨로지를 생성하고 자동 검증 루프 뒤 사람이 최종 검토하는 방법. 초록만 확인했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-883\",\"org\":\"Abolhasani, M. S., & Pan, R.\",\"title\":\"Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation\",\"published\":\"2024-12-10\",\"url\":\"https://arxiv.org/abs/2412.00608\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"기술 문서에서 언어 모델로 온톨로지·지식 그래프를 추출하되 대화형 인터페이스에서 사용자가 최종 결정을 갖게 하는 OntoKGen 파이프라인. 초록만 확인했다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/robot-ontology/heterogeneous-robot-registration.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f7(세 표준 기관이 제조사 제공 등록 기록을 공통으로 요구), f14(등록 작업이 설정 파일+API 구현으로 이루어짐), f15(공공 의료의 벤더 사전 평가 관문) / 섹션 4: f1·f2(팩트시트 필수 속성·기종 제원 항목), f5(디지털 명판 필수 식별자·버전), f6(신원 보고), f19(URDF 는 구조·운동학 기술, 온톨로지 채우기), f10(자산관리셸 레지스트리·디스커버리) / 섹션 5: 병원 — f13(타르투대학교병원, FreeFleet·어댑터 파일 등록, 문 통과 보조 장치, 검체 운반), f15(싱가포르 공공 의료기관의 RoMi-H 등재 프로그램), 기타 — f16(인천공항 다기종 로봇 사업, 벤더 주장 병기), 제조 공장·물류창고 사례는 이번 조사에서 확인되지 않음을 서술 / 섹션 6: 등록 데이터 수집 f3(팩트시트 요청·게시)·f11(자산관리셸 경로, 추정), 어댑터 설정 등록 f12·f14, 문서·URDF·자연어에서 능력 추출 f19·f20·f21·f22, 검토·승인 f20·f21·f23(근거 연결형 검토는 미확인), 표준 문서의 AI 가독 형식 f9 / 섹션 7: f1·f2·f3(VDA 5050 팩트시트 스키마·명세), f4(IDTA 02047), f5(IDTA 02006), f6(MassRobotics), f8·f9(OPC UA Robotics), f10(자산관리셸 API), f12(Open-RMF 플릿 어댑터) / 섹션 8: f13, f19, f20, f21, 국내 f17 / 섹션 9: f24(직접 범위: 등록부, 수집 경로, 검토·승인 기록, 어댑터 설정 초안, 승인 관문), f25(연계 대상: 위치추정·주행 방식·펌웨어는 제조사 소유) / 섹션 10: f26 — 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 63. 병원·의료(f13·f15) / 섹션 11: 기존 oq-128(f17·f18 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 63. 병원·의료 페이지에 f13·f15 반영, 21. 상호운용 표준·적합성 페이지에 f7·f8 반영, 45. 문서·도면·장면 이해 페이지에 f19·f22 반영, 트랙 manual-capability-ontology 단계 2(문서 유형)에 f9·f19·f20 참고.\"}],\"glossary_candidates\":[{\"term_ko\":\"디지털 명판\",\"term_en\":\"Digital Nameplate (IDTA 02006)\",\"definition\":\"제품 URI·제조사·제품명·일련번호·제조 연도·제조일을 필수로 담고 하드웨어·펌웨어·소프트웨어 버전을 선택으로 두는 자산관리셸 서브모델로, 산업 장비의 명판 정보를 기계가독 형식으로 교환하게 한다.\"},{\"term_ko\":\"AGV 기술 데이터 서브모델\",\"term_en\":\"Technical Data for AGV in Intralogistics (IDTA 02047)\",\"definition\":\"실내 물류용 AGV·AMR 의 유형·기술 매개변수·VDA 5050 팩트시트·에너지·통신·배터리·안전·임시 기술 데이터를 컬렉션으로 나눠 담는 자산관리셸 서브모델 템플릿이다.\"},{\"term_ko\":\"통합 로봇 기술 형식\",\"term_en\":\"Unified Robot Description Format (URDF)\",\"definition\":\"로봇의 링크와 관절로 구조·운동학·물리 속성을 기술하는 ROS 계열의 XML 형식으로, 식별자 자체에는 의미가 없어 온톨로지로 옮기려면 해석이 필요하다.\"},{\"term_ko\":\"자산관리셸 레지스트리·디스커버리\",\"term_en\":\"AAS Registry / Discovery\",\"definition\":\"자산관리셸 API 명세(IDTA-01002)가 정한 서비스로, 등록된 자산관리셸과 서브모델의 서술자를 관리하고 자산 식별자로 해당 자산관리셸을 찾게 한다.\"},{\"term_ko\":\"온톨로지 채우기\",\"term_en\":\"Ontology Population\",\"definition\":\"이미 정해진 온톨로지의 개념·관계에 맞춰 문서·모델 파일 같은 원천에서 개체와 관계 인스턴스를 뽑아 채우는 작업으로, 언어 모델을 쓸 때는 검증과 사람 검토를 함께 둔다.\"}],\"open_questions_new\":[\"문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 45. 문서·도면·장면 이해, 7. 온톨로지 검증·변경 관리 | 근거: f23 | 종류: 일반\",\"VDA 5050 팩트시트·IDTA 02047 서브모델·MassRobotics identityReport 사이의 필드 대응표(예: maximumLoadMass 와 cargoMaxWeight)가 공식으로 제공되는가, ROP 등록부는 어느 형식을 정본으로 삼고 나머지를 어떻게 변환해야 하는가? | 관련 영역: 4. 이기종 로봇 등록, 21. 상호운용 표준·적합성, 5. 로봇 능력·작업 표현 | 근거: f7 | 종류: 일반\",\"싱가포르 공공 의료의 RoMi-H 등재 프로그램처럼 벤더·통합사를 사전 평가해 등록 자격을 주는 관문을 국내 병원·공공 현장에서 운용한 사례나 제도가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 63. 병원·의료, 58. 다사업자 책임·계약·데이터 | 근거: f15 | 종류: 일반\",\"팩트시트·명판에 없는 능력(문 조작·승강기 탑승·인계 동작 등)을 등록할 때 Open-RMF 의 task_capabilities 나 자산관리셸 능력 기술 서브모델을 실제로 쓴 사례가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동 | 근거: f12 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":15,\"cross_checked_count\":3,\"unverified\":[\"MDPI Applied Sciences 자동차 공장 다중 브랜드 플릿 통합 사례(제조 공장 사례 후보)는 두 경로 모두 403 으로 열지 못해 넣지 않음 — 제조 공장 현장 유형 사례 미확보\",\"f16 클로봇 크롬스 공식 페이지(clobot.co.kr/croms) 403 — 'VDA 5050 기반 FMS' 문구는 검색 결과 요약에서만 보여 claim 에 넣지 않음, 벤더 주장 미교차\",\"URDF 공식 문서(wiki.ros.org 는 Anubis 차단, docs.ros.org 차단, ros2_documentation raw 경로 404) 미열람 — URDF 서술은 ref-872 초록의 '구조·운동학 기술' 문구에만 기댐\",\"Springer 'Conversational Knowledge Extraction from Technical Manuals'(ECML PKDD 2025)는 인증 리다이렉트로 열지 못해 넣지 않음\",\"f4 IDTA 02047 PDF 는 컬렉션 이름과 관련 서브모델까지만 확인했고 개별 속성명·VDA 5050 팩트시트 대응 세부는 추출 응답이 얇아 미확인\",\"f5 IDTA 02006 3.0 발행일 불확실(도구 응답 2024-11, 파일명 3-0-1 판 2025-10 게시) — published null\",\"f11 자산 ID→AAS ID→엔드포인트 흐름은 IDTA Part 2 PDF 검색 결과 요약에서만 확인, 원문 미열람\",\"f15 RoMi-H 등재 평가의 기술 항목(어댑터 시험·적합성 검사 등)은 공지에 없어 미확인\",\"f17 KCI 논문 초록만 확인 — 서브모델 구성(명판·기술 데이터 등)과 현장 적용 결과 미확인\",\"f19·f20·f21 정량 결과는 초록에 없어 미확인\",\"f1·f2·f3·f6·f10·f12 출처 발행일 미확인(저장소 원문)\",\"oq-128 미해결(f18)\",\"f7·f14·f22 외 모든 finding 교차 확인 실패(표준·연구마다 발행 주체 한 곳)\"],\"scope_violations\":[\"f25: 팩트시트의 위치추정·주행 방식과 펌웨어 버전은 분류 원문 19장 '로봇 자체 지능·제어' 연계 영역이므로 '연계 대상: '으로 표시함\",\"f15: 벤더 등재 제도는 58. 다사업자 책임·계약·데이터와 겹치므로 이 영역에서는 등록 승인 관문 사례로만 제안함\",\"f8·f9: OPC UA Robotics 는 산업용 매니퓰레이터의 수직 통합 규격이므로 등록 식별 속성과 문서 형식 근거로만 제안하고 제어 연동은 다루지 않음\",\"f19~f22: 언어 모델 추출 연구는 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f26)\"],\"budget_used\":{\"queries\":14,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 14회/30, 신규 출처 15건/15(ref-869~ref-883, 예약 구간 안) 상한 도달로 URDF 공식 문서, IDTA Part 2 API PDF, HERMES 검토 작업대, OntoKGen 외 매뉴얼 추출 논문, IFR 의 VDA 5050 해설을 넣지 못했다. 원문 열람 15건(github_raw 5: 팩트시트 스키마·VDA5050_EN.md·MassRobotics JSON·Open-RMF 튜토리얼·aas-specs-api README, webfetch 10: IDTA 02047·02006 PDF, arXiv 초록 3건, Frontiers 전문, KCI 초록, CGH 공지, OPC Foundation 참조 페이지, 로봇신문 기사). 재사용 출처 없음(참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 868건과의 URL 중복을 대조하지 못했으므로 Open-RMF 튜토리얼·VDA 5050 저장소·MassRobotics 저장소는 퍼블리셔가 기존 id 로 합칠 수 있다). 교차 확인 3건(f7: VDA·MassRobotics·IDTA, f14: Open Robotics·타르투대학교, f22: LAAS·헬무트 슈미트 대학 계열·Abolhasani·Pan — 모두 발행 주체가 다름). 신뢰도 high 는 f7·f14 두 건(각각 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(제조사도 형식도 다른 로봇을 빠르고 믿을 수 있게 등록)에는 f3·f7(제조사가 기계가독 기록을 제공하고 로봇이 요청에 게시), f12·f14(등록은 설정 파일+API 구현), f19·f20·f21·f22(문서·URDF 에서 자동 추출 후 검증·사람 검토), f15(벤더 사전 평가 관문)로 답했으며 결론은 '식별·제원은 세 표준이 겹치게 정해 두었지만 능력 추출의 근거 연결형 검토와 형식 간 대응은 확인되지 않았다'는 추정(f11·f23·f24)이다. 현장 유형: 병원(f13 타르투대학교병원, f15 싱가포르 공공 의료기관), 기타(f16 인천공항, 벤더 주장)만 확인했고 제조 공장·물류창고·상업 시설·가정·실외 사례는 없다(제조 공장 후보 MDPI 논문은 403). 국내 자료는 KCI 논문(f17)과 로봇신문 기사(f16) 두 건이며 국내 운영 사례는 찾지 못해 oq-128 은 미해결이다. L. AI·학습 기술 관련 finding(f19~f23)은 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 이 영역·55. 현장 조사·설치·시운전 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(IDTA 02047 의 TemporaryTechnicalData 는 f4 에 이름만 적음). 벤더 문서 출처는 없고 벤더 주장은 기사 경유 f16 한 건(vendor_claim). 용어집에 이미 있는 VDA 5050 팩트시트·신원 보고·자산관리셸·소프트웨어 명판·능력 기술 서브모델·의미 식별자·플릿 어댑터·플러그 앤 프로듀스는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-07",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 4,
+      "area_name": "4. 이기종 로봇 등록",
+      "category": "B. 로봇 온톨로지"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 디지털 명판·URDF·AGV 기술 데이터 서브모델·자산관리셸 레지스트리·온톨로지 채우기 용어 없음(VDA 5050 팩트시트·신원 보고·자산관리셸·소프트웨어 명판·능력 기술 서브모델·의미 식별자는 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 등록 데이터 수집(팩트시트 요청·자산관리셸), 문서·URDF에서 능력 추출, 검토·승인 흐름, 어댑터 설정 생성 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — VDA 5050 팩트시트, IDTA 02047·02006, MassRobotics 신원 보고, OPC UA Robotics, 자산관리셸 API, Open-RMF 플릿 어댑터 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-128 미반영, 정정 요청 없음",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "제조사도 형식도 다른 로봇을 어떻게 빠르고 믿을 수 있게 등록할 것인가? [분류원문]",
+      "등록 시 받아야 할 식별·제원 데이터를 정한 기계가독 형식(VDA 5050 팩트시트, 자산관리셸 서브모델·디지털 명판, MassRobotics 신원 보고, OPC UA Robotics)은 각각 무엇을 필수로 요구하는가? (섹션 4·7 겨냥)",
+      "플릿 관리 프레임워크(Open-RMF)는 새 로봇을 등록·연동할 때 어떤 설정과 구현을 요구하며, 병원 현장에서 실제로 어떻게 등록했는가? (섹션 5·6 겨냥)",
+      "매뉴얼·URDF·자연어 설명에서 능력·제약을 자동으로 추출하고 검증과 사람 검토를 두는 방법은 무엇이 보고되었는가? (섹션 6·8 겨냥, 교차 규칙에 따라 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 연결)",
+      "제조사가 능력·제원 정보를 제공·갱신하는 경로(자산관리셸 레지스트리·디스커버리, 팩트시트 요청)와 벤더·통합사를 사전 평가하는 등록 승인 관문의 사례는 무엇인가? (섹션 6·9 겨냥)",
+      "oq-128 국내 현장에서 VDA 5050 팩트시트나 자산관리셸 능력 기술을 로봇 등록 데이터로 실제 쓰는 사례가 있는가? (섹션 5·11 겨냥, 한국 자료 우선)",
+      "이기종 로봇 등록에서 ROP가 직접 맡을 것(등록부·데이터 수집·추출 초안·검토 승인)과 로봇 내부 주행 기술·제조사 책임에 맡길 것의 경계는 어디이며, 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "VDA 5050 공식 저장소(main, 3.0.0 판)의 팩트시트 JSON 스키마는 headerId·timestamp·version·manufacturer·serialNumber·typeSpecification·physicalParameters·protocolLimits·protocolFeatures·mobileRobotGeometry·loadSpecification 을 필수 속성으로, 하드웨어·소프트웨어 버전과 네트워크·배터리 매개변수를 담는 mobileRobotConfiguration 을 선택 속성으로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-869"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "factsheet.schema 의 required 목록에 위 11개 속성이 있고 mobileRobotConfiguration 은 선택이다. headerId 는 \"defined per topic and incremented by 1 with each sent message\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f2",
+        "claim": "같은 팩트시트 스키마에서 typeSpecification 은 시리즈 이름, 구동 방식(DIFFERENTIAL·OMNIDIRECTIONAL·THREE_WHEEL), 로봇 종류(FORKLIFT·CONVEYOR·TUGGER·CARRIER), 최대 적재 질량, 위치추정 방식, 주행 방식(물리 라인·가상 라인·자유 주행), 지원 구역 유형을, physicalParameters 는 최소·최대 속도, 각속도, 최대 가감속, 높이·폭·길이를 기종 단위로 기술한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-869"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "typeSpecification: seriesName, mobileRobotKinematics, mobileRobotClass, maximumLoadMass, localizationTypes, navigationTypes, supportedZones / physicalParameters: minimumSpeed·maximumSpeed, 각속도, maximumAcceleration·Deceleration(최대 적재 기준), height·width·length. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f3",
+        "claim": "VDA 5050 명세 3.0.0 판은 플릿 관제가 factsheetRequest 즉시 동작을 보내면 로봇이 factsheet 토픽에 팩트시트를 게시하는 요청·응답 방식을 정하고, 팩트시트에 플릿 관제에서 로봇 설정을 돕는 매개변수와 벤더 특정 정보가 들어간다고 적어 등록 데이터를 로봇에서 직접 받는 경로를 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-879"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "3.0.0 판 명세: 팩트시트는 \"Parameters or vendor-specific information to assist set-up of the mobile robot in fleet control\"을 담고, 관제가 factsheetRequest 즉시 동작으로 요청하면 로봇이 factsheet 토픽에 게시한다. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f4",
+        "claim": "IDTA 02047-1-0(2025-03) '실내 물류용 AGV 기술 데이터' 자산관리셸 서브모델은 TypeAndApplicationInformation·TechnicalParameters·VDA5050Factsheet·EnergyAndCommunication·Battery·Safety·TemporaryTechnicalData 컬렉션으로 구성되며, 혼합 플릿을 중앙 관제에 통합하고 시운전·운영·유지보수에 걸쳐 쓰는 것을 목표로 디지털 명판·기술 데이터 서브모델과 연계된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-870"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "PDF 본문의 컬렉션 목록과 VDA 5050 팩트시트 연계, 관련 서브모델(Digital Nameplate, Technical Data) 확인. 공식 저장소 README 는 대상이 \"driverless vehicles and robots in intralogistics\"이고 요구가 \"commissioning, operation and maintenance\"에 걸친다고 적는다.",
+        "as_of": "2025-03",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f5",
+        "claim": "IDTA 02006 디지털 명판 서브모델 3.0 판은 URIOfTheProduct·ManufacturerName·ManufacturerProductDesignation·SerialNumber·YearOfConstruction·DateOfManufacture 를 필수로, HardwareVersion·FirmwareVersion·SoftwareVersion·ContactInformation·Markings 를 선택으로 두어 로봇을 포함한 산업 장비의 식별자와 버전을 기계가독 명판으로 담는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-876"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IDTA 02006-3-0 PDF 의 속성표: 필수 6개(제품 URI·제조사·제품명·일련번호·제조 연도·제조일), 선택 5개(하드웨어·펌웨어·소프트웨어 버전, 연락처, 마킹). 발행일은 도구가 2024-11 로 읽었으나 파일명은 3-0-1 판(2025-10 게시)이라 확정하지 못함. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f6",
+        "claim": "MassRobotics AMR 상호운용 표준의 JSON 스키마는 로봇이 접속 시 보내는 identityReport 에 uuid(RFC 4122)·timestamp·manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope 를 필수로, maxSpeed·maxRunTime·chargerType·supportVendorName·productDocumentation·cargoType·cargoMaxVolume·cargoMaxWeight 등을 선택으로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-871"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "AMR_Interop_Standard.json: identityReport 필수 6개, 선택에 productDocumentation(문서 URL)·cargoMaxWeight 등. robotSerialNumber 는 \"Unique robot identifier that ideally can be physically linked to the AMR\". (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f7",
+        "claim": "서로 다른 세 발행 기관(VDA, IDTA, MassRobotics)이 각각 제조사가 제공하는 기계가독 등록 기록을 정의하고, 셋 모두 제조사명·기종(시리즈)·일련번호·치수(외곽)·최대 적재·최대 속도 항목을 공통으로 담아 '제조사 제공 식별·제원 기록'이 이기종 로봇 등록의 표준 관행으로 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-869",
+          "ref-871",
+          "ref-876"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "VDA 5050 팩트시트(manufacturer·serialNumber·typeSpecification·physicalParameters·mobileRobotGeometry), MassRobotics identityReport(manufacturerName·robotModel·robotSerialNumber·baseRobotEnvelope·maxSpeed), IDTA 02006(ManufacturerName·SerialNumber·버전) 세 원문을 대조. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f8",
+        "claim": "OPC UA for Robotics 1부(OPC 40010-1) 1.02 판(2025-09-08)은 수직 통합·자산 관리·상태 감시를 범위로 MotionDeviceSystem 정보 모델을 정의하고, MotionDevice 와 Controller 에 Manufacturer·Model·SerialNumber·ProductCode·SoftwareRevision 식별 속성을 두어 산업용 로봇(매니퓰레이터) 등록에 쓸 식별 정보를 표준화한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-881"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "OPC Foundation 참조 사이트: Version 1.02, 2025-09-08 게시, 범위 'Vertical Integration'(자산 관리·상태 감시), MotionDevice·Controller 식별 속성 Manufacturer·Model·SerialNumber·ProductCode·SoftwareRevision.",
+        "as_of": "2025-09-08",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f9",
+        "claim": "OPC Foundation 은 OPC UA for Robotics 명세를 STS XML 외에 'AI 응용용 마크다운'과 'RAG 청크' 형식으로도 제공해, 표준 문서 자체를 언어 모델이 읽어 처리하기 쉬운 형식으로 배포하기 시작했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-881"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "참조 페이지의 제공 형식: STS XML, \"Markdown for AI applications\", RAG Chunks(로컬 모델 통합용), 네임스페이스 http://opcfoundation.org/UA/Robotics/ 와 노드셋 다운로드.",
+        "as_of": "2025-09-08",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "자산관리셸 API 명세(IDTA-01002) 공식 저장소는 최신 3.2.0 판에서 AAS 저장소·서브모델 저장소·AAS 레지스트리·서브모델 레지스트리·디스커버리·개념 설명 저장소·AASX 파일 서버 등 아홉 가지 서비스 명세를 두어, 제조사가 낸 자산관리셸을 등록하고 찾는 인터페이스를 표준으로 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-880"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "aas-specs-api README: 최신 릴리스 3.2.0, 서비스 명세 9종(AAS Service, AAS Repository, AAS Registry, Submodel Service·Repository·Registry, Discovery, Concept Description Repository, AASX File Server). 레지스트리·디스커버리의 결합 목적 문장은 README 에 없음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "디지털 명판(f5)·AGV 기술 데이터 서브모델(f4)·레지스트리·디스커버리 API(f10)를 함께 보면, 이 영역의 '제조사 능력 정보 제공 경로'는 제조사가 명판과 기술 데이터 서브모델을 자산관리셸로 내고 레지스트리에 등록해 ROP 가 자산 식별자로 찾아 읽는 방식으로 구성할 수 있을 것으로 보이나, 로봇 관제가 이 경로로 실제 등록한 운영 사례는 확인되지 않았다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-876",
+          "ref-870",
+          "ref-880"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "세 표준 산출물의 역할(식별·제원·등록/발견)을 조합한 리서치 에이전트의 추론. 자산 ID→AAS ID(디스커버리)→엔드포인트(레지스트리) 순서는 IDTA Part 2 PDF 검색 결과 요약에서만 보였고 원문은 열지 않았다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f12",
+        "claim": "Open-RMF 플릿 어댑터 튜토리얼은 새 플릿을 등록하는 config.yaml 에 플릿 이름, 선속도·각속도 한계, 발자국·근접 반경(profile), 후진 가능 여부, 배터리·기계·주변·도구 시스템 매개변수, 재충전 임계값, 작업 능력(loop·delivery·clean), 로봇별 충전기를 적고, 로봇 측 RobotAPI 가 navigate·position·battery_soc·stop·start_activity·is_command_completed 를 구현해야 한다고 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-873"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "integration_fleets_adapter_tutorial.md: \"limits: [linear: [0.5, 0.75], angular: [0.6, 2.0]]\", profile footprint/vicinity, battery_system(voltage·capacity·charging_current), task_capabilities, robots 별 charger; RobotAPI 필수 메서드 6종. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f13",
+        "claim": "Valner 외(2022)의 타르투대학교병원 현장 시험은 자체 관제가 없는 PAL Robotics TIAGo 를 로봇 탑재 컴퓨터의 FreeFleet 클라이언트, 플릿 이름·DDS 설정의 FreeFleet 서버, 배터리·속도·발자국을 적은 RMF 어댑터 파일로 Open-RMF 에 등록했고, 프로그램 제어가 없는 병원 문은 카드 인식·근접 센서를 대신 작동시키는 서보 장치를 만들어 지나며 중환자실에서 검사실로 혈액 검체를 운반했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-874"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Frontiers in Robotics and AI 2022-08-23 전문: TIAGo 주 배치, Clearpath Jackal 시험 환경, MiR100+UR5e 예정; 등록은 FreeFleet 클라이언트·서버 설정과 어댑터 파일의 로봇 특성; 문은 \"swipe the key card or trigger the proximity sensor\" 장치로 통과.",
+        "as_of": "2022-08-23",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f14",
+        "claim": "서로 다른 두 발행 주체(Open Robotics 튜토리얼, 타르투대학교 연구진의 병원 현장 시험)가 플릿 관리 프레임워크에 로봇을 등록하는 일이 '기종 제원·배터리 매개변수를 적은 어댑터 설정 파일'과 '로봇별 API 구현'의 두 부분으로 이루어진다고 각각 보고해, 등록 작업의 구성이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-873",
+          "ref-874"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "튜토리얼의 config.yaml(제원·배터리·작업 능력)+RobotAPI 와 병원 시험의 어댑터 파일(배터리·속도·발자국)+FreeFleet 클라이언트가 같은 구조. 발행 기관이 다르고 한쪽이 다른 쪽을 옮긴 것이 아님.",
+        "as_of": "2022-08-23",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f15",
+        "claim": "싱가포르 창이종합병원 CHART 의 RoMi-H 등재 프로그램(2025-05-01 시행)은 보건부가 Open-RMF 기반 RoMi-H 를 공공 의료기관의 자동화 통합 플랫폼으로 지정한 뒤 시스템 통합사가 기술·배치 역량 평가를 거쳐 2년 유효 등재를 받아야 병원 제안 요청에 참여하게 하며, 2026-08-24 기준 등재 업체는 5곳이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-878"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "CGH 공지: 통합사는 \"a series of evaluations, encompassing both technical expertise and deployment knowledge\"를 거침, 등재 5곳(HOPE Technik·Medisys·Panasonic Asia Pacific·QuikBot·Techfox), 2년 유효, 반기 평가.",
+        "as_of": "2026-08-24",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f16",
+        "claim": "벤더 주장(기사 경유): 클로봇의 크롬스는 '국내 첫 이기종 로봇 통합관제 솔루션'으로 50대 이상 로봇 동시 제어와 엘리베이터 탑승을 지원한다고 소개되며, 기사는 LG CNS 와 함께 인천공항 다기종 로봇 제작·5G 디지털 트윈 관제 구축 사업을 계약했다고 전하나 VDA 5050 지원 여부·연동 제조사 수·등록 방식은 기사에 없다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-875"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 로봇신문 2025-11-09 기사에서 \"다양한 제조사의 로봇을 하나의 시스템에서 제어할 수 있는 국내 첫 이기종 로봇 통합관제 솔루션\", 50대 이상 동시 제어, 인천공항 사업 계약. VDA 5050 기반이라는 문구는 검색 결과 요약에서만 보였고 공식 페이지는 403 으로 열지 못함.",
+        "as_of": "2025-11-09",
+        "site_type": "기타",
+        "flow_item": "수행 자원",
+        "vendor_claim": true
+      },
+      {
+        "id": "f17",
+        "claim": "신민종·한영석·정재윤(한국디지털산업학회지 29권 4호, 2024)은 자율이동로봇(AMR)의 하드웨어·소프트웨어 정보를 자산관리셸(AAS)로 기록해 JSON 으로 저장·송수신하고 OPC UA 로 실시간 감시하는 모니터링 시스템 설계를 제안했으나, 초록은 실제 현장 적용 결과를 적지 않는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-877"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KCI 초록: \"AMR의 정보를 AAS로 기록하고 JSON 형식으로 저장하고 송수신하여\" 정보를 공유, OPC UA 활용; 기대 효과만 서술. 세부 서브모델(명판·기술 데이터) 명칭은 초록에 없음.",
+        "as_of": "2024",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "oq-128 관련: 국내 자료로 확인된 것은 자산관리셸로 AMR 정보를 기록하는 설계 연구(f17)와 벤더의 이기종 관제 소개(f16)뿐이며, VDA 5050 팩트시트나 자산관리셸 능력 기술을 실제 로봇 등록 데이터로 운영에 쓴 국내 사례는 이번 조사에서 확인되지 않아 oq-128 은 미해결로 남는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-877",
+          "ref-875"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "한국어 검색 2회(관제 플랫폼·팩트시트·자산관리셸, 자산관리쉘 스마트공장·로봇)에서 국내 운영 사례를 찾지 못함. 중기부 스마트공장 고도화 사업의 AAS 적용 의무화는 검색 결과 요약에서만 보여 finding 으로 내지 않음.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "Dussard·Sarthou(2026)는 URDF 가 로봇의 구조·운동학은 기술하지만 식별자에 의미가 없다는 점을 들어, 기존 온톨로지의 개념을 프롬프트에 넣어 언어 모델이 URDF 요소의 의미 관계를 추론하게 하고 여러 번 질의한 다수결과 구문·스키마 검증으로 출력을 제약해 로봇 온톨로지를 자동으로 채우는 방법을 여러 로봇 기술로 평가했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-872"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2606.17073 초록(2026-06-10): 언어 모델에 \"concepts from an existing ontology\"를 프롬프트로 주어 정렬, \"majority voting across multiple LLM queries\"와 구문·스키마 검증; 정확도 수치·사람 검증 언급은 초록에 없음.",
+        "as_of": "2026-06-10",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "Vieira da Silva·Köcher·Gehlhoff·Fay(2024)는 능력의 자연어 설명을 정해진 프롬프트에 넣어 언어 모델이 능력 온톨로지를 생성하고, 구문 검증·모순 탐지·환각과 누락 점검을 언어 모델과의 반복 루프로 자동 수행한 뒤 사람이 최종 검토·수정만 하게 하는 방법을 제안해 수작업 모델링 부담을 줄였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-882"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2406.07962 초록: 모델링은 \"manual and error-prone task\"; 자동 검증 루프(구문·모순·환각/누락) 뒤 \"a final human review and possible correction\"만 필요. 정량 결과는 초록에 없음.",
+        "as_of": "2024-10-18",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f21",
+        "claim": "Abolhasani·Pan(2024)의 OntoKGen 은 신뢰성·유지보수성 분야 기술 문서에서 언어 모델로 온톨로지와 지식 그래프를 뽑되, 대화형 인터페이스에서 시스템이 모범 사례 기반 온톨로지를 추천하고 사용자가 최종 결정을 갖게 하는 방식으로 '보편적으로 옳은 온톨로지는 없다'는 전제를 두고 사용자 검토를 설계의 중심에 두었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-883"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 2412.00608 초록: 적응형 반복 사고 연쇄로 사용자 요구에 맞추고, 사용자가 \"complete control over final decisions\"; 결과는 Neo4j 저장·RAG 기반으로 활용. 로봇 문서가 아닌 신뢰성·유지보수성 문서가 대상.",
+        "as_of": "2024-12-10",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f22",
+        "claim": "서로 다른 세 연구 그룹(LAAS 의 URDF 온톨로지 채우기, 헬무트 슈미트 대학 계열의 자연어 능력 온톨로지 생성, Abolhasani·Pan 의 기술 문서 온톨로지 추출)이 언어 모델 추출에 자동 검증이나 사용자 최종 검토를 결합한 방법을 각각 보고해, '자동 추출 + 자동 검증 + 사람 최종 검토' 구성이 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-872",
+          "ref-882",
+          "ref-883"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "f19(다수결·스키마 검증), f20(검증 루프+사람 최종 검토), f21(사용자 최종 결정) 대조. 세 출처 모두 프리프린트(초록 확인)라 medium.",
+        "as_of": "2026-06-10",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f23",
+        "claim": "이 영역이 요구하는 '원문 근거(절·줄·인용)와 함께 능력 정의 초안을 만들고 사람이 대조해 확정·반려'하는 흐름은 f20·f21 의 사람 최종 검토와 방향이 같지만, 확인한 세 연구 어느 것도 추출 항목마다 매뉴얼의 절·줄 위치를 붙여 검토자가 대조하게 하는 근거 연결을 초록에서 밝히지 않아 근거 연결형 검토·승인은 아직 확인되지 않은 요구로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-882",
+          "ref-883",
+          "ref-872"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "세 초록의 검증·검토 서술에 원문 위치 인용 항목이 없음. 원문 위치 강조를 갖춘 검토 작업대(HERMES 등)는 지질 분야라 출처 상한 때문에 넣지 않음.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f24",
+        "claim": "확인한 자료를 종합하면 4. 이기종 로봇 등록에서 ROP가 직접 맡을 범위는 제조사·기종·일련번호·펌웨어·SDK 버전·장착 장비를 담는 등록부, 팩트시트·자산관리셸·신원 보고를 받아 저장·대조하는 수집 경로, 문서·URDF에서 뽑은 능력 초안의 검토·승인 기록, 어댑터 설정 초안 생성이며, 등록 승인 관문에 벤더·통합사 사전 평가(f15)를 둘 수 있을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-879",
+          "ref-870",
+          "ref-873",
+          "ref-878"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "팩트시트 요청 경로(f3), 자산관리셸 서브모델(f4), 어댑터 설정 구성(f12·f14), 등재 프로그램(f15)을 분류 원문 19장의 경계에 맞춰 조합한 추론.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "연계 대상: 팩트시트의 위치추정 방식·주행 방식(localizationTypes·navigationTypes)과 mobileRobotConfiguration 의 펌웨어·소프트웨어 버전은 제조사가 소유·갱신하는 로봇 자체 지능·제어 정보이므로, 이종 제조사를 잇는 ROP 는 등록 시 이를 받아 저장·대조하고 버전 변경을 추적하는 데 그치고 위치추정·회피 성능 자체는 제조사에 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-869",
+          "ref-879"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "스키마 필드(f2)와 명세의 벤더 정보 문구(f3)를 분류 원문 19장 '로봇 자체 지능·제어' 경계에 대응시킨 추론.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f26",
+        "claim": "언어 모델로 URDF·자연어·기술 문서에서 온톨로지를 추출하는 연구(f19~f22)는 L. AI·학습 기술의 45. 문서·도면·장면 이해와 47. AI·학습·적응과 모델 운영에 속하는 방법이며 원문 교차 규칙(매뉴얼 해석은 4·55번)에 따라 이 영역과 55. 현장 조사·설치·시운전에 연결해야 하고, 등록 데이터는 5. 로봇 능력·작업 표현(능력 표현), 6. 온톨로지 기반 시스템·로봇 연동(어댑터 설정), 7. 온톨로지 검증·변경 관리와 57. 자산·소프트웨어 수명주기 관리(펌웨어·문서 개정), 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성(팩트시트·자산관리셸 규격)에 연결된다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-872",
+          "ref-870",
+          "ref-873"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "분류 원문 13장 교차 규칙과 4장 주석, 그리고 이번 finding 의 내용 분포에 따른 연결 제안.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-869",
+        "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+        "title": "VDA5050/json_schemas/factsheet.schema (main)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "VDA 5050 팩트시트 메시지의 JSON 스키마 원본. 필수·선택 속성과 typeSpecification·physicalParameters 필드 정의를 담는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/json_schemas/factsheet.schema"
+      },
+      {
+        "id": "ref-870",
+        "org": "Industrial Digital Twin Association (IDTA)",
+        "title": "IDTA 02047-1-0 Submodel Template: Technical Data for AGV in Intralogistics",
+        "published": "2025-03",
+        "url": "https://industrialdigitaltwin.org/wp-content/uploads/2025/03/IDTA-02047-1-0-Submodel_Technical-Data-for-AGV.pdf",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "실내 물류 AGV·AMR 의 기술 데이터를 자산관리셸 서브모델로 표준화한 명세. VDA 5050 팩트시트 컬렉션을 포함하고 혼합 플릿의 중앙 관제 통합을 목표로 한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-871",
+        "org": "MassRobotics (AMR Interoperability Working Group)",
+        "title": "AMR_Interop_Standard.json — MassRobotics AMR Interoperability Standard JSON schema",
+        "published": null,
+        "url": "https://github.com/MassRobotics-AMR/AMR_Interop_Standard/blob/main/AMR_Interop_Standard.json",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "MassRobotics AMR 상호운용 표준의 공식 JSON 스키마. identityReport·statusReport 메시지와 필수·선택 필드를 정의한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/MassRobotics-AMR/AMR_Interop_Standard/main/AMR_Interop_Standard.json"
+      },
+      {
+        "id": "ref-872",
+        "org": "Dussard, B., & Sarthou, G. (LAAS-CNRS)",
+        "title": "Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF",
+        "published": "2026-06-10",
+        "url": "https://arxiv.org/abs/2606.17073",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "URDF 모델을 언어 모델로 해석해 기존 온톨로지 개념에 맞춰 로봇 온톨로지를 자동으로 채우는 방법. 다수결과 구문·스키마 검증으로 출력을 제약한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-873",
+        "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+        "title": "Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "Open-RMF 플릿 어댑터를 만드는 튜토리얼. 플릿·로봇 설정 파일(config.yaml)의 항목과 로봇 측 RobotAPI 가 구현할 메서드를 적는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/integration_fleets_adapter_tutorial.md"
+      },
+      {
+        "id": "ref-874",
+        "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (University of Tartu), Frontiers in Robotics and AI",
+        "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+        "published": "2022-08-23",
+        "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "타르투대학교병원에서 Open-RMF 와 FreeFleet 으로 이기종 로봇을 등록·운용해 혈액 검체를 운반한 현장 시험. 등록 설정과 문 통과용 보조 장치를 기술한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-875",
+        "org": "로봇신문",
+        "title": "[기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막",
+        "published": "2025-11-09",
+        "url": "https://www.irobotnews.com/news/articleView.html?idxno=43274",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-29",
+        "summary": "클로봇의 이기종 로봇 통합관제 솔루션 크롬스를 소개한 기사. 50대 이상 동시 제어·엘리베이터 탑승과 인천공항 다기종 로봇 사업 계약을 전한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-876",
+        "org": "Industrial Digital Twin Association (IDTA)",
+        "title": "IDTA 02006-3-0 Submodel Template: Digital Nameplate for Industrial Equipment",
+        "published": null,
+        "url": "https://industrialdigitaltwin.org/wp-content/uploads/2025/10/IDTA-02006-3-0-1_Submodel_Digital-Nameplate.pdf",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "산업 장비의 디지털 명판 서브모델 3.0 판 명세. 제품 URI·제조사·제품명·일련번호·제조 연도·제조일을 필수로, 하드웨어·펌웨어·소프트웨어 버전 등을 선택으로 둔다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-877",
+        "org": "신민종, 한영석, 정재윤 (한국디지털산업학회지 29(4))",
+        "title": "자산관리쉘 표준을 이용한 자율이동로봇 모니터링 시스템 설계",
+        "published": "2024",
+        "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003140560",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "AMR 의 하드웨어·소프트웨어 정보를 자산관리셸로 기록해 JSON 으로 교환하고 OPC UA 로 감시하는 시스템 설계를 제안한 국내 논문. KCI 초록만 확인했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-878",
+        "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+        "title": "RoMi-H Empanelment Programme 2025",
+        "published": "2025-05-01",
+        "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "싱가포르 공공 의료기관의 로봇 통합 플랫폼 RoMi-H 에 시스템 통합사를 평가·등재하는 프로그램 공지. 등재 요건·유효 기간·등재 업체 5곳을 적는다(2026-08-24 갱신).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-879",
+        "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+        "title": "VDA5050_EN.md — VDA 5050 Interface for the communication between automated guided vehicles (AGV) and a master control (Version 3.0.0, main)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "VDA 5050 명세 3.0.0 판 원문(마크다운). 팩트시트의 목적과 factsheetRequest 즉시 동작·factsheet 토픽을 통한 요청·게시 방식을 적는다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-880",
+        "org": "Industrial Digital Twin Association (IDTA), admin-shell-io GitHub 공식 저장소",
+        "title": "aas-specs-api — Repository of the Asset Administration Shell Specification IDTA-01002 API (README)",
+        "published": null,
+        "url": "https://github.com/admin-shell-io/aas-specs-api",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "자산관리셸 API 명세(IDTA-01002)의 공식 OpenAPI 저장소 README. 최신 3.2.0 판과 레지스트리·디스커버리를 포함한 서비스 명세 9종을 나열한다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/admin-shell-io/aas-specs-api/main/README.md"
+      },
+      {
+        "id": "ref-881",
+        "org": "OPC Foundation",
+        "title": "OPC 40010-1: OPC UA for Robotics — Part 1: Vertical Integration (Version 1.02)",
+        "published": "2025-09-08",
+        "url": "https://reference.opcfoundation.org/Robotics/v100/docs/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "산업용 로봇의 수직 통합·자산 관리·상태 감시를 위한 OPC UA 정보 모델(MotionDeviceSystem). 제조사·모델·일련번호 등 식별 속성을 정의하고 AI 응용용 마크다운·RAG 청크 형식도 제공한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-882",
+        "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+        "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+        "published": "2024-10-18",
+        "url": "https://arxiv.org/abs/2406.07962",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "자연어 능력 설명을 소수 예시 프롬프트로 언어 모델에 넣어 능력 온톨로지를 생성하고 자동 검증 루프 뒤 사람이 최종 검토하는 방법. 초록만 확인했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-883",
+        "org": "Abolhasani, M. S., & Pan, R.",
+        "title": "Leveraging LLM for Automated Ontology Extraction and Knowledge Graph Generation",
+        "published": "2024-12-10",
+        "url": "https://arxiv.org/abs/2412.00608",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "기술 문서에서 언어 모델로 온톨로지·지식 그래프를 추출하되 대화형 인터페이스에서 사용자가 최종 결정을 갖게 하는 OntoKGen 파이프라인. 초록만 확인했다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/robot-ontology/heterogeneous-robot-registration.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f7(세 표준 기관이 제조사 제공 등록 기록을 공통으로 요구), f14(등록 작업이 설정 파일+API 구현으로 이루어짐), f15(공공 의료의 벤더 사전 평가 관문) / 섹션 4: f1·f2(팩트시트 필수 속성·기종 제원 항목), f5(디지털 명판 필수 식별자·버전), f6(신원 보고), f19(URDF 는 구조·운동학 기술, 온톨로지 채우기), f10(자산관리셸 레지스트리·디스커버리) / 섹션 5: 병원 — f13(타르투대학교병원, FreeFleet·어댑터 파일 등록, 문 통과 보조 장치, 검체 운반), f15(싱가포르 공공 의료기관의 RoMi-H 등재 프로그램), 기타 — f16(인천공항 다기종 로봇 사업, 벤더 주장 병기), 제조 공장·물류창고 사례는 이번 조사에서 확인되지 않음을 서술 / 섹션 6: 등록 데이터 수집 f3(팩트시트 요청·게시)·f11(자산관리셸 경로, 추정), 어댑터 설정 등록 f12·f14, 문서·URDF·자연어에서 능력 추출 f19·f20·f21·f22, 검토·승인 f20·f21·f23(근거 연결형 검토는 미확인), 표준 문서의 AI 가독 형식 f9 / 섹션 7: f1·f2·f3(VDA 5050 팩트시트 스키마·명세), f4(IDTA 02047), f5(IDTA 02006), f6(MassRobotics), f8·f9(OPC UA Robotics), f10(자산관리셸 API), f12(Open-RMF 플릿 어댑터) / 섹션 8: f13, f19, f20, f21, 국내 f17 / 섹션 9: f24(직접 범위: 등록부, 수집 경로, 검토·승인 기록, 어댑터 설정 초안, 승인 관문), f25(연계 대상: 위치추정·주행 방식·펌웨어는 제조사 소유) / 섹션 10: f26 — 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동, 7. 온톨로지 검증·변경 관리, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 45. 문서·도면·장면 이해, 47. AI·학습·적응과 모델 운영, 55. 현장 조사·설치·시운전, 57. 자산·소프트웨어 수명주기 관리, 63. 병원·의료(f13·f15) / 섹션 11: 기존 oq-128(f17·f18 로 부분 진전, 미해결)과 open_questions_new 4건. 다음 실행 후보: 63. 병원·의료 페이지에 f13·f15 반영, 21. 상호운용 표준·적합성 페이지에 f7·f8 반영, 45. 문서·도면·장면 이해 페이지에 f19·f22 반영, 트랙 manual-capability-ontology 단계 2(문서 유형)에 f9·f19·f20 참고."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "디지털 명판",
+        "term_en": "Digital Nameplate (IDTA 02006)",
+        "definition": "제품 URI·제조사·제품명·일련번호·제조 연도·제조일을 필수로 담고 하드웨어·펌웨어·소프트웨어 버전을 선택으로 두는 자산관리셸 서브모델로, 산업 장비의 명판 정보를 기계가독 형식으로 교환하게 한다."
+      },
+      {
+        "term_ko": "AGV 기술 데이터 서브모델",
+        "term_en": "Technical Data for AGV in Intralogistics (IDTA 02047)",
+        "definition": "실내 물류용 AGV·AMR 의 유형·기술 매개변수·VDA 5050 팩트시트·에너지·통신·배터리·안전·임시 기술 데이터를 컬렉션으로 나눠 담는 자산관리셸 서브모델 템플릿이다."
+      },
+      {
+        "term_ko": "통합 로봇 기술 형식",
+        "term_en": "Unified Robot Description Format (URDF)",
+        "definition": "로봇의 링크와 관절로 구조·운동학·물리 속성을 기술하는 ROS 계열의 XML 형식으로, 식별자 자체에는 의미가 없어 온톨로지로 옮기려면 해석이 필요하다."
+      },
+      {
+        "term_ko": "자산관리셸 레지스트리·디스커버리",
+        "term_en": "AAS Registry / Discovery",
+        "definition": "자산관리셸 API 명세(IDTA-01002)가 정한 서비스로, 등록된 자산관리셸과 서브모델의 서술자를 관리하고 자산 식별자로 해당 자산관리셸을 찾게 한다."
+      },
+      {
+        "term_ko": "온톨로지 채우기",
+        "term_en": "Ontology Population",
+        "definition": "이미 정해진 온톨로지의 개념·관계에 맞춰 문서·모델 파일 같은 원천에서 개체와 관계 인스턴스를 뽑아 채우는 작업으로, 언어 모델을 쓸 때는 검증과 사람 검토를 함께 둔다."
+      }
+    ],
+    "open_questions_new": [
+      "문서·URDF 에서 추출한 능력 항목마다 매뉴얼의 절·줄 위치를 근거로 붙여 검토자가 원문과 대조해 확정·반려하는 공개 구현이나 연구가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 45. 문서·도면·장면 이해, 7. 온톨로지 검증·변경 관리 | 근거: f23 | 종류: 일반",
+      "VDA 5050 팩트시트·IDTA 02047 서브모델·MassRobotics identityReport 사이의 필드 대응표(예: maximumLoadMass 와 cargoMaxWeight)가 공식으로 제공되는가, ROP 등록부는 어느 형식을 정본으로 삼고 나머지를 어떻게 변환해야 하는가? | 관련 영역: 4. 이기종 로봇 등록, 21. 상호운용 표준·적합성, 5. 로봇 능력·작업 표현 | 근거: f7 | 종류: 일반",
+      "싱가포르 공공 의료의 RoMi-H 등재 프로그램처럼 벤더·통합사를 사전 평가해 등록 자격을 주는 관문을 국내 병원·공공 현장에서 운용한 사례나 제도가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 63. 병원·의료, 58. 다사업자 책임·계약·데이터 | 근거: f15 | 종류: 일반",
+      "팩트시트·명판에 없는 능력(문 조작·승강기 탑승·인계 동작 등)을 등록할 때 Open-RMF 의 task_capabilities 나 자산관리셸 능력 기술 서브모델을 실제로 쓴 사례가 있는가? | 관련 영역: 4. 이기종 로봇 등록, 5. 로봇 능력·작업 표현, 6. 온톨로지 기반 시스템·로봇 연동 | 근거: f12 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 15,
+      "cross_checked_count": 3,
+      "unverified": [
+        "MDPI Applied Sciences 자동차 공장 다중 브랜드 플릿 통합 사례(제조 공장 사례 후보)는 두 경로 모두 403 으로 열지 못해 넣지 않음 — 제조 공장 현장 유형 사례 미확보",
+        "f16 클로봇 크롬스 공식 페이지(clobot.co.kr/croms) 403 — 'VDA 5050 기반 FMS' 문구는 검색 결과 요약에서만 보여 claim 에 넣지 않음, 벤더 주장 미교차",
+        "URDF 공식 문서(wiki.ros.org 는 Anubis 차단, docs.ros.org 차단, ros2_documentation raw 경로 404) 미열람 — URDF 서술은 ref-872 초록의 '구조·운동학 기술' 문구에만 기댐",
+        "Springer 'Conversational Knowledge Extraction from Technical Manuals'(ECML PKDD 2025)는 인증 리다이렉트로 열지 못해 넣지 않음",
+        "f4 IDTA 02047 PDF 는 컬렉션 이름과 관련 서브모델까지만 확인했고 개별 속성명·VDA 5050 팩트시트 대응 세부는 추출 응답이 얇아 미확인",
+        "f5 IDTA 02006 3.0 발행일 불확실(도구 응답 2024-11, 파일명 3-0-1 판 2025-10 게시) — published null",
+        "f11 자산 ID→AAS ID→엔드포인트 흐름은 IDTA Part 2 PDF 검색 결과 요약에서만 확인, 원문 미열람",
+        "f15 RoMi-H 등재 평가의 기술 항목(어댑터 시험·적합성 검사 등)은 공지에 없어 미확인",
+        "f17 KCI 논문 초록만 확인 — 서브모델 구성(명판·기술 데이터 등)과 현장 적용 결과 미확인",
+        "f19·f20·f21 정량 결과는 초록에 없어 미확인",
+        "f1·f2·f3·f6·f10·f12 출처 발행일 미확인(저장소 원문)",
+        "oq-128 미해결(f18)",
+        "f7·f14·f22 외 모든 finding 교차 확인 실패(표준·연구마다 발행 주체 한 곳)"
+      ],
+      "scope_violations": [
+        "f25: 팩트시트의 위치추정·주행 방식과 펌웨어 버전은 분류 원문 19장 '로봇 자체 지능·제어' 연계 영역이므로 '연계 대상: '으로 표시함",
+        "f15: 벤더 등재 제도는 58. 다사업자 책임·계약·데이터와 겹치므로 이 영역에서는 등록 승인 관문 사례로만 제안함",
+        "f8·f9: OPC UA Robotics 는 산업용 매니퓰레이터의 수직 통합 규격이므로 등록 식별 속성과 문서 형식 근거로만 제안하고 제어 연동은 다루지 않음",
+        "f19~f22: 언어 모델 추출 연구는 L. AI·학습 기술의 방법이므로 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 함께 연결하도록 제안함(f26)"
+      ],
+      "budget_used": {
+        "queries": 14,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 14회/30, 신규 출처 15건/15(ref-869~ref-883, 예약 구간 안) 상한 도달로 URDF 공식 문서, IDTA Part 2 API PDF, HERMES 검토 작업대, OntoKGen 외 매뉴얼 추출 논문, IFR 의 VDA 5050 해설을 넣지 못했다. 원문 열람 15건(github_raw 5: 팩트시트 스키마·VDA5050_EN.md·MassRobotics JSON·Open-RMF 튜토리얼·aas-specs-api README, webfetch 10: IDTA 02047·02006 PDF, arXiv 초록 3건, Frontiers 전문, KCI 초록, CGH 공지, OPC Foundation 참조 페이지, 로봇신문 기사). 재사용 출처 없음(참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 868건과의 URL 중복을 대조하지 못했으므로 Open-RMF 튜토리얼·VDA 5050 저장소·MassRobotics 저장소는 퍼블리셔가 기존 id 로 합칠 수 있다). 교차 확인 3건(f7: VDA·MassRobotics·IDTA, f14: Open Robotics·타르투대학교, f22: LAAS·헬무트 슈미트 대학 계열·Abolhasani·Pan — 모두 발행 주체가 다름). 신뢰도 high 는 f7·f14 두 건(각각 원문을 연 high 신뢰도 출처 포함), 나머지 medium 이하. 분류 원문 핵심 질문(제조사도 형식도 다른 로봇을 빠르고 믿을 수 있게 등록)에는 f3·f7(제조사가 기계가독 기록을 제공하고 로봇이 요청에 게시), f12·f14(등록은 설정 파일+API 구현), f19·f20·f21·f22(문서·URDF 에서 자동 추출 후 검증·사람 검토), f15(벤더 사전 평가 관문)로 답했으며 결론은 '식별·제원은 세 표준이 겹치게 정해 두었지만 능력 추출의 근거 연결형 검토와 형식 간 대응은 확인되지 않았다'는 추정(f11·f23·f24)이다. 현장 유형: 병원(f13 타르투대학교병원, f15 싱가포르 공공 의료기관), 기타(f16 인천공항, 벤더 주장)만 확인했고 제조 공장·물류창고·상업 시설·가정·실외 사례는 없다(제조 공장 후보 MDPI 논문은 403). 국내 자료는 KCI 논문(f17)과 로봇신문 기사(f16) 두 건이며 국내 운영 사례는 찾지 못해 oq-128 은 미해결이다. L. AI·학습 기술 관련 finding(f19~f23)은 45. 문서·도면·장면 이해·47. AI·학습·적응과 모델 운영과 이 영역·55. 현장 조사·설치·시운전 양쪽에 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장 없음(IDTA 02047 의 TemporaryTechnicalData 는 f4 에 이름만 적음). 벤더 문서 출처는 없고 벤더 주장은 기사 경유 f16 한 건(vendor_claim). 용어집에 이미 있는 VDA 5050 팩트시트·신원 보고·자산관리셸·소프트웨어 명판·능력 기술 서브모델·의미 식별자·플릿 어댑터·플러그 앤 프로듀스는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음."
+    }
+  },
+  "ttft_ms": 12475,
+  "type": "result",
+  "duration_ms": 583089,
+  "uuid": "55b35936-1289-4488-b0a9-564acf144375",
+  "ttft_stream_ms": 2212,
+  "time_to_request_ms": 94,
+  "first_content_frame_ms": 2212,
+  "time_to_request_from_spawn_ms": 68338,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790661041566.985,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 584.5
+}
