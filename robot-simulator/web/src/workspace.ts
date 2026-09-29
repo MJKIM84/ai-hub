@@ -10,7 +10,8 @@ export function fingerprint(project: Project): string {
     if (value && typeof value === "object")
       return Object.fromEntries(
         Object.entries(value)
-          .filter(([key, child]) => key !== "reviewed_topology" || child !== null)
+          .filter(([key, child]) => (key !== "reviewed_topology" || child !== null) &&
+            (key !== "pedestrian_access" || child !== false) && (key !== "carrier_loading_pose" || child !== null))
           .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
           .map(([key, child]) => [key, canonical(child)]),
       );
@@ -103,7 +104,7 @@ const cooperation = record(
     workspace_id: string,
     carrier_destination: pose,
   },
-  { donor_id: nullable(string), source_floor_id: nullable(string), loading_offset: list(number) },
+  { carrier_loading_pose: nullable(pose), donor_id: nullable(string), source_floor_id: nullable(string), loading_offset: list(number) },
 );
 // The opt-in records and each defaulted field may be omitted. Validate without
 // inserting defaults, so legacy drafts and explicitly null settings round-trip.
@@ -179,7 +180,7 @@ const projectShape = record({
         allowed_groups: list(string),
         dynamic: boolean,
         facility,
-      }),
+      }, { pedestrian_access: boolean }),
     ),
   }, { reviewed_topology: nullable(reviewedTopology) }),
   robots: list(
@@ -661,6 +662,7 @@ function validateProjectContent(value: unknown): string[] {
         `${task.name} 협업 작업 종류`,
       );
       text(c.workspace_id, `${task.name} 논리 작업 공간 식별자`);
+      if (c.carrier_loading_pose) validPose(c.carrier_loading_pose, `${task.name} 상차 접근 위치`);
       validPose(c.carrier_destination, `${task.name} 운반 로봇 목적지`);
       const roles = [
         c.carrier_id,

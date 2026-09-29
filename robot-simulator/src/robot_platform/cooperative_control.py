@@ -118,6 +118,8 @@ class CooperativeControl:
         cross_floor = self.o._floor(obs['pose']['z']) != task.floor_id
         if cross_floor and trip is None:
             return '적재 질량·외곽·출발 및 도착 경로를 만족하는 승강기 없음'
+        if c.carrier_loading_pose and self._handoff_route(carrier, obs, c.carrier_loading_pose.model_dump(), c.source_floor_id or task.floor_id) is None:
+            return '상차 접근 경로 없음'
         route = trip['route'] if trip else self._handoff_route(carrier, obs, c.carrier_destination.model_dump(), task.floor_id)
         if route is None:
             return '적재 운반 경로 없음'
@@ -186,6 +188,9 @@ class CooperativeControl:
             committed=False, custody_seen=False, released=False, terminal=False,
             loading=loading, loading_result=None, loading_committed=loading is None, donor_custody_seen=False,
             trip_plan=trip,
+            loading_approach_done=c.carrier_loading_pose is None,
+            loading_route=(self._handoff_route(self.o.robots[c.carrier_id], observations[c.carrier_id],
+                c.carrier_loading_pose.model_dump(), c.source_floor_id or task.floor_id) if c.carrier_loading_pose else None),
             route=deepcopy(trip['route']) if trip else self._handoff_route(self.o.robots[c.carrier_id], observations[c.carrier_id], destination, task.floor_id))
         self.reports.pop(task.id, None)
         # The legacy item reservation is a bridge to single-robot schedulers.
@@ -366,6 +371,24 @@ class CooperativeControl:
                 self.terminate(task_id,now,'인계 참여 로봇 사이의 의도하지 않은 충돌 접촉')
                 arms.update(self._hold_arms(task_id, e))
                 continue
+            if not e.get('loading_approach_done', True):
+                from .orchestration import angle
+                target = c.carrier_loading_pose
+                pose = carrier['pose']
+                arrived = (math.hypot(pose['x']-target.x, pose['y']-target.y) < .07
+                    and abs(angle(pose['yaw']-target.yaw)) < .08
+                    and math.hypot(*carrier['velocity'][:2]) < .04)
+                if arrived:
+                    e['loading_approach_done'] = True
+                    e['result'] = None
+                    self.o.emit('cooperation_loading_arrived', c.carrier_id,
+                        '예약된 상차 위치 도착·정렬·정지 관측 확인', dict(task_id=task_id, pose=deepcopy(pose)))
+                else:
+                    record['reason'] = '상차 팔 정지·작업 공간 예약 후 운반차 접근'
+                    record['cooperation'] = dict(execution_id=e['id'], phase='loading_approach', resources_retained=True)
+                    self.o.robot_states[c.carrier_id]['reason'] = record['reason']
+                    arms.update(self._hold_arms(task_id, e))
+                    continue
             if not e.get('loading_committed', True):
                 arms.update(self._loading(task_id, now, observations))
                 continue
@@ -527,7 +550,9 @@ class CooperativeControl:
         stopped = dict(v=0., w=0., mode='stand')
         if not e or e['terminal'] or e['released'] or rid != e['participants']['carrier']:
             return stopped
-        result = e['result']
+        approaching = not e.get('loading_approach_done', True)
+        result = (dict(hold=False, navigation_target=self.o.tasks[state['task_id']]['spec'].cooperation.carrier_loading_pose.model_dump())
+                  if approaching else e['result'])
         if not result or result['hold'] or not result.get('navigation_target'):
             return stopped
         obs = observations.get(rid, {})
@@ -546,7 +571,7 @@ class CooperativeControl:
                     or math.sqrt(sum(v*v for v in donor.get('angular_velocity',[math.inf])))>.08):
                 return stopped
         target = result['navigation_target']
-        if e.get('trip_plan') and not state.get('trip'):
+        if not approaching and e.get('trip_plan') and not state.get('trip'):
             trip = e.pop('trip_plan')
             receipt = self.o.facilities.request(trip['elevator_id'], rid, trip['source_floor'], trip['dest_floor'], trip['mass'], trip['envelope'])
             state['trip'] = dict(trip, request_id=receipt['request_id'])
@@ -563,7 +588,7 @@ class CooperativeControl:
                 return stopped
             if command is not None:return command
             target = trip['staging']
-        path = e['route']
+        path = e['loading_route'] if approaching else e['route']
         while path and math.hypot(path[0]['x']-obs['pose']['x'],path[0]['y']-obs['pose']['y']) < .10:
             if path[0].get('align') and abs(angle(path[0]['yaw']-obs['pose']['yaw']))>.1:break
             path.pop(0)
@@ -580,7 +605,8 @@ class CooperativeControl:
         # retain their full motion envelope; the stationary peer's actual base
         # remains a range obstacle inside the reserved handoff workspace.
         for other_id, other in observations.items():
-            if other_id == rid or other_id == e['participants']['receiver'] or now-other['sampled_at'] > self.o.policy.stale_after:
+            approach_peer = donor_id if approaching else e['participants']['receiver']
+            if other_id == rid or other_id == approach_peer or now-other['sampled_at'] > self.o.policy.stale_after:
                 continue
             if abs(other['pose']['z']-obs['pose']['z']) < 1.2 and math.hypot(other['pose']['x']-obs['pose']['x'],other['pose']['y']-obs['pose']['y']) < radius(self.o.robots[rid])+radius(self.o.robots[other_id])+self.o.policy.safety_distance:
                 # After a verified retraction, permit only a straight departure

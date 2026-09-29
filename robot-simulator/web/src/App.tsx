@@ -254,6 +254,7 @@ const cooperativeFormKinds: TaskKind[] = [
 ];
 const cooperativeSchemaKinds = cooperativeFormKinds;
 const cooperationPhases: Record<string, string> = {
+  loading_approach: "예약된 상차 위치로 접근",
   loading: "초기 상차",
   loaded: "적재 확인",
   await_load: "적재 지지 확인",
@@ -3301,7 +3302,7 @@ function App() {
             </>
           )}
           <label className="span-2">
-            출입 허용 그룹 (쉼표로 구분)
+            로봇 출입 허용 그룹 (쉼표로 구분)
             <input
               value={element.allowed_groups.join(", ")}
               onChange={(e) =>
@@ -3314,6 +3315,11 @@ function App() {
               }
             />
           </label>
+          {element.kind === "restricted" && <label className="span-2">
+            <input type="checkbox" checked={element.pedestrian_access ?? false}
+              onChange={(e) => updateElement({ pedestrian_access: e.target.checked })} />
+            보행자 통행 허용 · 로봇 그룹 제한은 유지
+          </label>}
           <label>
             <input
               type="checkbox"
@@ -5286,6 +5292,22 @@ function App() {
                                 공유합니다. 로봇과 물품의 실제 적합성은 실행부가
                                 확인합니다.
                               </p>
+                              {task.cooperation.donor_id && <>
+                                <label className="check span-2">
+                                  <input type="checkbox" checked={!!task.cooperation.carrier_loading_pose}
+                                    onChange={(e) => updateCooperation({carrier_loading_pose: e.target.checked
+                                      ? {x: 0, y: 0, z: 0, yaw: 0} : null})} />
+                                  상차 전 운반차 접근 위치 지정
+                                </label>
+                                {task.cooperation.carrier_loading_pose && <>
+                                  <p className="muted span-2">팔과 작업 공간을 예약하고 접근합니다. 도착·정렬·정지가 확인된 뒤 물품을 집습니다.</p>
+                                  {(["x", "y", "yaw"] as const).map((axis) => <Field key={`loading-${axis}`}
+                                    label={axis === "yaw" ? "상차 접근 방향 (rad)" : `상차 접근 ${axis.toUpperCase()} (m)`}
+                                    value={task.cooperation!.carrier_loading_pose![axis]}
+                                    onChange={(value) => updateCooperation({carrier_loading_pose: {
+                                      ...task.cooperation!.carrier_loading_pose!, [axis]: value}})} />)}
+                                </>}
+                              </>}
                               <strong className="span-2">
                                 적재 후 수신 로봇과 만날 위치 · 몸체 원점
                               </strong>
