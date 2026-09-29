@@ -20,6 +20,30 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-04 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | 3~11절 신규 작성(seed → draft), 출처 15건(ref-351~ref-848), 병원 사례 1건, 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s6.md](topics/2026/2026-09-29-area09-s6.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "6. 대표 접근법과 기술" 절(2,863자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s8.md](topics/2026/2026-09-29-area09-s8.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "8. 대표 연구와 자료" 절(1,570자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s4.md](topics/2026/2026-09-29-area09-s4.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "4. 핵심 개념과 용어" 절(1,364자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s3.md](topics/2026/2026-09-29-area09-s3.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "3. 왜 중요한가" 절(1,211자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s7.md](topics/2026/2026-09-29-area09-s7.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,204자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s10.md](topics/2026/2026-09-29-area09-s10.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,022자)을 옮겼다 |
+| 2026-09-29-04 | 생성 | [docs/topics/2026/2026-09-29-area09-s11.md](topics/2026/2026-09-29-area09-s11.md) | 자동 분리: 9. 채팅으로 시나리오 구성 의 "11. 열린 질문" 절(677자)을 옮겼다 |
+| 2026-09-29-04 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | 9. 채팅으로 시나리오 구성: 3~11절 신규 작성(seed → draft), 출처 15건, 병원 사례 1건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 7건 이행 |
+| 2026-09-29-04 | 생성 | [docs/references/ref-839.md](references/ref-839.md) | 참고문헌 ref-839 등록: Uncertainty-Aware Clarification in LLM Agents with Informati… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-840.md](references/ref-840.md) | 참고문헌 ref-840 등록: LLMs Get Lost In Multi-Turn Conversation |
+| 2026-09-29-04 | 생성 | [docs/references/ref-841.md](references/ref-841.md) | 참고문헌 ref-841 등록: LLMs Get Lost in Evolving User Intent |
+| 2026-09-29-04 | 생성 | [docs/references/ref-842.md](references/ref-842.md) | 참고문헌 ref-842 등록: Intent-Driven Situation Tracking for User-Centric Multi-Turn… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-843.md](references/ref-843.md) | 참고문헌 ref-843 등록: Process Modeling With Large Language Models |
+| 2026-09-29-04 | 생성 | [docs/references/ref-844.md](references/ref-844.md) | 참고문헌 ref-844 등록: Automated BPMN Model Generation from Textual Process Descrip… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-845.md](references/ref-845.md) | 참고문헌 ref-845 등록: ConformalNL2LTL: Translating Natural Language Instructions i… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-846.md](references/ref-846.md) | 참고문헌 ref-846 등록: Specification Patterns for Robotic Missions |
+| 2026-09-29-04 | 생성 | [docs/references/ref-847.md](references/ref-847.md) | 참고문헌 ref-847 등록: Agile assistive hospital robot for suboptimal Task execution… |
+| 2026-09-29-04 | 생성 | [docs/references/ref-848.md](references/ref-848.md) | 참고문헌 ref-848 등록: 자연어 로봇 제어 기술 동향: 분류, 기술, 응용 |
+| 2026-09-29-04 | 생성 | [docs/glossary/uncertainty-alignment.md](glossary/uncertainty-alignment.md) | 용어집 항목 불확실도 정렬 |
+| 2026-09-29-04 | 생성 | [docs/glossary/underspecification.md](glossary/underspecification.md) | 용어집 항목 과소명세 |
+| 2026-09-29-04 | 생성 | [docs/glossary/mission-specification-pattern.md](glossary/mission-specification-pattern.md) | 용어집 항목 미션 명세 패턴 |
+| 2026-09-29-04 | 생성 | [docs/glossary/situation-state-tracking.md](glossary/situation-state-tracking.md) | 용어집 항목 상황 상태 추적 |
+| 2026-09-29-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-29-03 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 9건 이행. 2차 재검증 1회차 수정 8건 이행(약어 첫 등장 풀어 쓰기, 9절 원문 문장 재서술, 6절 단락 분리, 10절 태그 2건, 6절 절 참조 이름 병기). 2차 재검증 2회차 수정 2건은 분리 주제 페이지(s3·s10)에만 해당하며 이 페이지는 변경 없음 |
 | 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s6.md](topics/2026/2026-09-29-area11-s6.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "6. 대표 접근법과 기술" 절(2,271자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
 | 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s8.md](topics/2026/2026-09-29-area11-s8.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "8. 대표 연구와 자료" 절(1,684자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |

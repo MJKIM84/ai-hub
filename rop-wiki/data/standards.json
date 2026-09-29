@@ -2846,6 +2846,37 @@
       "ref_id": "ref-828",
       "run_id": "2026-09-29-03",
       "date": "2026-09-29"
+    },
+    {
+      "name": "Open-RMF 작업 요청 스키마(rmf_api_msgs task_request)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        20,
+        24,
+        26
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "summary": "Open-RMF 작업 요청 JSON 스키마. 필수 필드는 category·description, 선택 필드는 가장 이른 시작 가능 시각·요청 시각·priority·labels·requester·fleet_name 이며 완료 기한·반복 주기 필드는 없다.",
+      "ref_id": "ref-125",
+      "run_id": "2026-09-29-04",
+      "date": "2026-09-29"
+    },
+    {
+      "name": "Open-RMF 작업 구성(compose 범주)과 단계 API(ros2multirobotbook task_new)",
+      "org": "Open Robotics",
+      "kind": "오픈소스",
+      "related_areas": [
+        9,
+        20,
+        24
+      ],
+      "url": "https://osrf.github.io/ros2multirobotbook/task_new.html",
+      "summary": "작업을 단계(phase)를 만들어 내는 객체로 정의하고 공개 단계 GoToPlace·PickUp·DropOff·PerformAction, 내부 단계 RequestLift, compose 범주의 활동 순서열, robot_task_request·dispatch_task_request 요청 경로를 설명하는 문서.",
+      "ref_id": "ref-110",
+      "run_id": "2026-09-29-04",
+      "date": "2026-09-29"
     }
   ]
 }

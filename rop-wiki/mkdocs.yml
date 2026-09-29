@@ -292,6 +292,13 @@ nav:
       - 10. 채팅으로 로봇 구성 — 왜 중요한가: topics/2026/2026-09-29-area10-s3.md
       - 10. 채팅으로 로봇 구성 — 열린 질문: topics/2026/2026-09-29-area10-s11.md
       - 10. 채팅으로 로봇 구성 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area10-s10.md
+      - 9. 채팅으로 시나리오 구성 — 대표 연구와 자료: topics/2026/2026-09-29-area09-s8.md
+      - 9. 채팅으로 시나리오 구성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area09-s7.md
+      - 9. 채팅으로 시나리오 구성 — 대표 접근법과 기술: topics/2026/2026-09-29-area09-s6.md
+      - 9. 채팅으로 시나리오 구성 — 핵심 개념과 용어: topics/2026/2026-09-29-area09-s4.md
+      - 9. 채팅으로 시나리오 구성 — 왜 중요한가: topics/2026/2026-09-29-area09-s3.md
+      - 9. 채팅으로 시나리오 구성 — 열린 질문: topics/2026/2026-09-29-area09-s11.md
+      - 9. 채팅으로 시나리오 구성 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area09-s10.md
       - 8. 채팅으로 맵 작성 — 대표 연구와 자료: topics/2026/2026-09-29-area08-s8.md
       - 8. 채팅으로 맵 작성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area08-s7.md
       - 8. 채팅으로 맵 작성 — 대표 접근법과 기술: topics/2026/2026-09-29-area08-s6.md
@@ -480,6 +487,7 @@ nav:
     - 공통 데이터 환경 (Common Data Environment (CDE)): glossary/common-data-environment.md
     - 공통 좌표계 (Common Coordinate System (CCS, ISO 21423)): glossary/common-coordinate-system.md
     - 과도한 에이전시 (Excessive Agency): glossary/excessive-agency.md
+    - 과소명세 (Underspecification): glossary/underspecification.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
     - 교착 (Deadlock): glossary/deadlock.md
     - 구성 코파일럿 (Configuration Copilot): glossary/configuration-copilot.md
@@ -529,6 +537,7 @@ nav:
     - 무선 업데이트 (Over-the-Air Update (OTA)): glossary/over-the-air-update.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
+    - 미션 명세 패턴 (Mission Specification Pattern): glossary/mission-specification-pattern.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 반정적 객체 (Semi-static Object): glossary/semi-static-object.md
     - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
@@ -537,6 +546,7 @@ nav:
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
+    - 불확실도 정렬 (Uncertainty Alignment): glossary/uncertainty-alignment.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비용 지도 (Costmap): glossary/costmap.md
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
@@ -550,6 +560,7 @@ nav:
     - 산업 자동화용 민첩 로봇 경진대회 (ARIAC): glossary/ariac.md
     - 산업데이터 (Industrial Data): glossary/industrial-data.md
     - 상태 기반 정비 (Condition-Based Maintenance (CBM)): glossary/condition-based-maintenance.md
+    - 상황 상태 추적 (Situation State Tracking): glossary/situation-state-tracking.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
     - 서비스 수준 협약 (Service Level Agreement (SLA)): glossary/service-level-agreement.md
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
@@ -1577,6 +1588,17 @@ nav:
     - ? 'ref-837 — Design and Application of a Nurse-Following Medical Bed Robot with a Negative Pressure Chamber for Patient Transportation in the Hospital: A Korean Case of Federated Digital Twins'
       : references/ref-837.md
     - ref-838 — Digital twin for scenario-based design evaluation of manufacturing robotic fleets and factory layouts: references/ref-838.md
+    - ref-839 — Uncertainty-Aware Clarification in LLM Agents with Information Gain: references/ref-839.md
+    - ref-840 — LLMs Get Lost In Multi-Turn Conversation: references/ref-840.md
+    - ref-841 — LLMs Get Lost in Evolving User Intent: references/ref-841.md
+    - ref-842 — Intent-Driven Situation Tracking for User-Centric Multi-Turn Agents: references/ref-842.md
+    - ref-843 — Process Modeling With Large Language Models: references/ref-843.md
+    - 'ref-844 — Automated BPMN Model Generation from Textual Process Descriptions: A Multi-Stage LLM-Driven Approach': references/ref-844.md
+    - ? 'ref-845 — ConformalNL2LTL: Translating Natural Language Instructions into Temporal Logic Formulas with Conformal Correctness Guarantees'
+      : references/ref-845.md
+    - ref-846 — Specification Patterns for Robotic Missions: references/ref-846.md
+    - ref-847 — Agile assistive hospital robot for suboptimal Task execution in dynamic environments: references/ref-847.md
+    - 'ref-848 — 자연어 로봇 제어 기술 동향: 분류, 기술, 응용': references/ref-848.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

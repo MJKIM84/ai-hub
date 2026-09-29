@@ -1,0 +1,173 @@
+{
+  "run_id": "2026-09-29-04",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 9,
+    "area_name": "9. 채팅으로 시나리오 구성",
+    "category": "C. 채팅 기반 구성·운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1792.3,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 9. 채팅으로 시나리오 구성 | 3~11절 신규 작성(seed → draft), 출처 15건, 병원 사례 1건, 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 7건 이행 | run 2026-09-29-04",
+  "notes": [
+    "참고문헌 생성: references/ref-839.md",
+    "참고문헌 생성: references/ref-840.md",
+    "참고문헌 생성: references/ref-841.md",
+    "참고문헌 생성: references/ref-842.md",
+    "참고문헌 생성: references/ref-843.md",
+    "참고문헌 생성: references/ref-844.md",
+    "참고문헌 생성: references/ref-845.md",
+    "참고문헌 생성: references/ref-846.md",
+    "참고문헌 생성: references/ref-847.md",
+    "참고문헌 생성: references/ref-848.md",
+    "용어집 생성: glossary/uncertainty-alignment.md",
+    "용어집 생성: glossary/underspecification.md",
+    "용어집 생성: glossary/mission-specification-pattern.md",
+    "용어집 생성: glossary/situation-state-tracking.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 10,
+    "standards": 2,
+    "open_questions": 4,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 13:03:19 KST",
+  "usage": {
+    "input_tokens": 462,
+    "cache_creation_input_tokens": 671659,
+    "cache_read_input_tokens": 2155866,
+    "output_tokens": 113987,
+    "cost_usd": 20.3778,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.6491,
+        "output_tokens": 40246,
+        "cache_read_input_tokens": 1330558,
+        "cache_creation_input_tokens": 190127
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 5.1939,
+        "output_tokens": 18578,
+        "cache_read_input_tokens": 719337,
+        "cache_creation_input_tokens": 194965
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 5.8586,
+        "output_tokens": 45063,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 180270
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 2.3848,
+        "output_tokens": 9620,
+        "cache_read_input_tokens": 90325,
+        "cache_creation_input_tokens": 94061
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.1642,
+        "output_tokens": 216,
+        "cache_read_input_tokens": 5170,
+        "cache_creation_input_tokens": 6429
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.1272,
+        "output_tokens": 264,
+        "cache_read_input_tokens": 10476,
+        "cache_creation_input_tokens": 5807
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-29-area09-s6.md",
+        "chars": 2863
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-29-area09-s8.md",
+        "chars": 1570
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-29-area09-s4.md",
+        "chars": 1364
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-29-area09-s3.md",
+        "chars": 1211
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-29-area09-s7.md",
+        "chars": 1204
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-29-area09-s10.md",
+        "chars": 1022
+      },
+      {
+        "from": "docs/categories/chat-based-configuration-and-operation/chat-scenario-composition.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-29-area09-s11.md",
+        "chars": 677
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 12,
+  "cross_checked_findings": 2
+}
