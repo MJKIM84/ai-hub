@@ -1,0 +1,30 @@
+{
+  "web_search_available": false,
+  "web_fetch_available": false,
+  "web_fetch_mirror_available": false,
+  "fetch_mode": "none",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-29 22:08:45 KST",
+  "details": {
+    "web_search": {
+      "available": false,
+      "detail": "claude 오류 응답: You've reached your Fable limit. Switch to another model to continue."
+    },
+    "web_fetch": {
+      "available": false,
+      "detail": "claude 오류 응답: You've reached your Fable limit. Switch to another model to continue.",
+      "method": "claude -p --tools WebFetch"
+    },
+    "web_fetch_mirror": {
+      "available": false,
+      "detail": "claude 오류 응답: You've reached your Fable limit. Switch to another model to continue.",
+      "method": "claude -p --tools WebFetch"
+    },
+    "web_fetch_curl": {
+      "available": true,
+      "status": 200,
+      "detail": "curl 200"
+    }
+  }
+}
