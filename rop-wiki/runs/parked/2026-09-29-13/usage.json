@@ -1,0 +1,115 @@
+{
+  "calls": [
+    {
+      "step": "research",
+      "role": "researcher",
+      "attempt": 1,
+      "input_tokens": 194,
+      "cache_creation_input_tokens": 182891,
+      "cache_read_input_tokens": 938091,
+      "output_tokens": 46472,
+      "cost_usd": 6.9015,
+      "seconds": 664.3,
+      "num_turns": 43,
+      "models": [
+        "claude-fable-5-1",
+        "claude-haiku-4-5-20251001"
+      ]
+    },
+    {
+      "step": "verification1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 130,
+      "cache_creation_input_tokens": 120317,
+      "cache_read_input_tokens": 840290,
+      "output_tokens": 26527,
+      "cost_usd": 4.4699,
+      "seconds": 444.4,
+      "num_turns": 29,
+      "models": [
+        "claude-haiku-4-5-20251001",
+        "claude-fable-5-1"
+      ]
+    },
+    {
+      "step": "storyteller",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 121226,
+      "cache_read_input_tokens": 73750,
+      "output_tokens": 52062,
+      "cost_usd": 5.0461,
+      "seconds": 628.2,
+      "num_turns": 2,
+      "models": [
+        "claude-fable-5-1"
+      ]
+    },
+    {
+      "step": "verification2",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 109512,
+      "cache_read_input_tokens": 90325,
+      "output_tokens": 15449,
+      "cost_usd": 2.9853,
+      "seconds": 219.1,
+      "num_turns": 2,
+      "models": [
+        "claude-fable-5-1"
+      ]
+    },
+    {
+      "step": "storyteller-retry1",
+      "role": "storyteller",
+      "attempt": 1,
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 184673,
+      "cache_read_input_tokens": 73750,
+      "output_tokens": 37729,
+      "cost_usd": 5.5984,
+      "seconds": 410.7,
+      "num_turns": 2,
+      "models": [
+        "claude-fable-5-1"
+      ]
+    },
+    {
+      "step": "verification2-retry1",
+      "role": "verifier",
+      "attempt": 1,
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "seconds": 3.0,
+      "num_turns": 1,
+      "models": []
+    },
+    {
+      "step": "verification2-retry1-schema-retry",
+      "role": "verifier",
+      "attempt": 2,
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "seconds": 1.8,
+      "num_turns": 1,
+      "models": []
+    }
+  ],
+  "total": {
+    "input_tokens": 330,
+    "cache_creation_input_tokens": 718619,
+    "cache_read_input_tokens": 2016206,
+    "output_tokens": 178239,
+    "cost_usd": 25.0012,
+    "calls": 7
+  }
+}

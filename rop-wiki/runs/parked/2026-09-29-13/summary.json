@@ -1,0 +1,159 @@
+{
+  "run_id": "2026-09-29-13",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 63,
+    "area_name": "63. 병원·의료",
+    "category": "Q. 현장 유형별 적용"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "수정 후 재검증",
+  "confidence": "medium",
+  "pages_created": 0,
+  "pages_updated": 0,
+  "new_sources": 14,
+  "parked": true,
+  "published": false,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 14,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2436.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "보류(runs/parked/)",
+  "changelog_entry": "2026-09-29 | 63. 병원·의료 | 섹션 3~11 신규 작성(seed → draft), 병원 사례 6건 여섯 항목 정리, 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 태그·각주 정리, 3절 추론 문장 [추정] 분리, 5절 울산대병원 제약 칸 귀속 표시, 용어집 RoMi-H 출처·승강기 가동률 정의 수정 | run 2026-09-29-13",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 0,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 21:58:22 KST",
+  "usage": {
+    "input_tokens": 431,
+    "cache_creation_input_tokens": 720170,
+    "cache_read_input_tokens": 2049123,
+    "output_tokens": 178784,
+    "cost_usd": 25.0878,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.9015,
+        "output_tokens": 46472,
+        "cache_read_input_tokens": 938091,
+        "cache_creation_input_tokens": 182891
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 4.4699,
+        "output_tokens": 26527,
+        "cache_read_input_tokens": 840290,
+        "cache_creation_input_tokens": 120317
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 10.6445,
+        "output_tokens": 89791,
+        "cache_read_input_tokens": 147500,
+        "cache_creation_input_tokens": 305899
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 2.9853,
+        "output_tokens": 15449,
+        "cache_read_input_tokens": 90325,
+        "cache_creation_input_tokens": 109512
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0632,
+        "output_tokens": 267,
+        "cache_read_input_tokens": 16851,
+        "cache_creation_input_tokens": 1270
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0234,
+        "output_tokens": 278,
+        "cache_read_input_tokens": 16066,
+        "cache_creation_input_tokens": 281
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-29-area63-s11.md",
+        "chars": 1575
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-29-area63-s4.md",
+        "chars": 1525
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-29-area63-s6.md",
+        "chars": 1495
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-29-area63-s8.md",
+        "chars": 1439
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-29-area63-s10.md",
+        "chars": 1068
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-29-area63-s3.md",
+        "chars": 858
+      },
+      {
+        "from": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-29-area63-s7.md",
+        "chars": 805
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 3,
+  "park_reason": "내용 검증 에이전트(2차) 실패(스키마 불일치 1회 재실행 후에도 실패 또는 호출 오류; 7.3)"
+}

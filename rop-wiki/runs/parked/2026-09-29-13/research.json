@@ -1,0 +1,769 @@
+{
+  "run_id": "2026-09-29-13",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 63,
+    "area_name": "63. 병원·의료",
+    "category": "Q. 현장 유형별 적용"
+  },
+  "gaps": [
+    "섹션 3. 왜 중요한가 비어 있음",
+    "섹션 4. 핵심 개념과 용어 비어 있음 — 의료 로봇 미들웨어(RoMi-H)·승강기 가동률·등재 프로그램·스마트병원 선도모델 용어 없음(승강기 어댑터·플릿 어댑터·오픈 RMF·이동형 영상정보처리기기는 용어집에 이미 있음)",
+    "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 국내(분당서울대병원·한림대성심병원·고대구로병원·울산대병원)·해외(싱가포르 창이종합병원 RoMi-H, 중국 산시성 인민병원) 사례와 여섯 항목 정리 없음",
+    "섹션 6. 대표 접근법과 기술 비어 있음 — 승강기·자동문 연동, 이기종 로봇 미들웨어, 수령 인증(RFID·생체인증), 야간 배송, 승강기 혼잡 모델링 근거 없음",
+    "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ISO 13482, KS 로봇 승강기 탑승 안전 요구사항, Open-RMF/RoMi-H, 스마트병원 선도모델 모듈 위치 없음",
+    "섹션 8. 대표 연구와 자료 비어 있음 — 간호 협동로봇 체계적 문헌 검토, 병원 물류 로봇 효과 분석, 승강기 혼잡 타당성 연구, 국내 감염환자 이송 로봇 인식 연구 없음",
+    "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+    "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 17. 작업 대상·자산 식별과 인계 추적, 20. 로봇·제조사 관제 연동, 22. 설비·건물 시스템 연동, 28. 공용 자원·충전·에너지 최적화, 32. 예외 복구·재계획·업무 연속성, 51. 인증·권한·격리, 53. 개인정보·영상 데이터, 50. 안전 표준·인증·사고 조사, 56. 운영 이관·확대·교육, 58. 다사업자 책임·계약·데이터 연결 필요",
+    "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-134·oq-138·oq-142·oq-149 미반영, 정정 요청 없음",
+    "프런트매터 related_areas·sources 비어 있음"
+  ],
+  "research_questions": [
+    "감염 관리와 환자 정보 보호 조건에서 병원 이송을 어떻게 운영할 것인가? [분류원문]",
+    "병원 안 검체·약품·식사·린넨 이송과 감염환자 이송에 어떤 로봇이 들어가며, 학술 문헌은 그 효과와 근거 수준을 어떻게 평가하는가? (섹션 3·6·8 겨냥)",
+    "국내(분당서울대병원·한림대성심병원·고대구로병원)와 해외(싱가포르 RoMi-H, 중국 병원) 사례에서 병원 로봇 작업의 시작 조건·작업 대상·수행 자원·제약·완료·인계·예외·성과는 어떻게 나타나는가? (섹션 5 겨냥, 현장 유형 병원 명시, 한국 자료 우선)",
+    "승강기·자동문 연동과 승강기 혼잡, 감염 관리 구역, 수령 인증(RFID·생체인증)은 병원 이송 로봇 운영에 어떤 제약과 완료 조건을 만들며 어떤 기술로 다루는가? (섹션 4·6 겨냥)",
+    "병원 이송 로봇에 적용되는 안전·상호운용 표준(ISO 13482, KS 로봇 승강기 탑승 안전 요구사항)과 이기종 로봇 미들웨어(Open-RMF/RoMi-H), 국내 정부 사업(서비스로봇 실증사업, 스마트병원 선도모델)은 무엇을 규정·지원하며 ROP 의 위치를 어떻게 규정하는가? (섹션 7·9 겨냥)",
+    "병원에서 ROP 가 직접 맡을 것(이송 요청 수신·배정·승강기 예약·수령 확인·결과 반환)과 병원 정보 시스템·승강기 제어·로봇 자체 안전 기능·감염 관리 규정에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)",
+    "oq-149·oq-134·oq-138·oq-142: 싱가포르 RoMi-H 등재 프로그램 같은 벤더 사전 평가 제도가 국내 병원에 있는가, 그리고 국내 병원에서 운영 기록의 시뮬레이션 재현·대화형 시나리오 구성·대화형 다중 로봇 업무 지시 사례가 있는가? (섹션 11 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "Li 외(Scientific Reports, 2026-04-24)는 중국 산시성 인민병원(500병상, 22개 개방 병동)에서 적재 200kg·배터리 7시간의 자율이동로봇 10대로 약국→병동 약품 배송과 병동→검사실 검체 이송을 정기·수시 두 방식으로 6개월 운영한 결과, 수작업 대비 배송 시간이 32~36% 줄고 로봇 10대가 수작업 인력 19명보다 7.3배 많은 배송 횟수를 처리했으며 검증 정확도·물품 온전율 100%(수작업 97~99%)를 기록했다고 보고한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-939"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"Compared with manual delivery, robot delivery reduced delivery time by 32% to 36%\"; 10대 플릿이 6개월간 수작업 19명보다 7.3배 많은 배송 횟수, 검증 정확도·물품 온전율 100%(수작업 97~99%). 10년 누적 절감 692.8만 위안, 투자 회수 3.4년.",
+      "as_of": "2026-04-24",
+      "site_type": "병원",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f2",
+      "claim": "같은 연구는 사물인터넷 기반 승강기 제어로 층간 자율 이동을, 픽업·배송 지점의 RFID 신원 확인으로 수령 인증을, 비접촉 배송으로 인력 이동과 교차 감염 위험 감소를 구현했고, 약국·병동·시스템 관리자·장비 정비 인력의 역할을 정한 협력 책임 체계를 운영 관리 틀로 두었으며 최대 수요 시간당 42건에서 로봇 10대의 이용률이 0.84였다고 적는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-939"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "IoT 연동 승강기 제어로 층간 자율 주행, 픽업·배송 지점 RFID 신원 확인, 비접촉 배송으로 교차 감염 위험 감소, 스마트 충전소. 약국·병동·시스템 관리자·정비 인력의 역할을 정한 협력 책임 체계. 최대 수요 42건/시간, 이용률 0.84(10대).",
+      "as_of": "2026-04-24",
+      "site_type": "병원",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f3",
+      "claim": "Lee 외(고려대학교 구로병원·도구공간, Digital Health, 2026-03-31)는 고대구로병원에서 ISO 13482 적합 인증 시험을 거친 도구공간 IROI 로봇 1대로 2025-06-18~29 약국→응급실 비긴급 약품 배송 122건을 분석해 전체 성공률 87.03%, 승강기 가동률(EOR) 59% 미만에서 95.52%, 실패는 EOR 90% 초과 구간에 집중됐다고 보고했으며, 승강기 연동은 TK엘리베이터 TK50M 제어반에 부착한 전용 통신 모듈로 호출·탑승을 자동화했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-946"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"Overall success rate: 87.03%\"; EOR 59% 미만 성공률 95.52%, 실패는 EOR 90% 초과에 집중, ROC AUC 0.779(95% CI 0.661–0.882). TK Elevator TK50M 제어반 전용 통신 모듈로 호출·탑승 자동화. 한계: 단일 기관·단일 로봇·몬테카를로 모형 단순화.",
+      "as_of": "2026-03-31",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f4",
+      "claim": "RoMi-H(Robotic Middleware for Healthcare)는 싱가포르 창이종합병원 CHART 가 IHiS·GovTech·Hope Technik·Open Robotics 와 함께 만든 ROS 2·DDS 기반 오픈소스 미들웨어로 2018-07 보건부 장관 발표 뒤 2019-10-31 ROSCon 에서 공개됐고, 기계·제어·중앙·통합의 네 도메인으로 서로 다른 제조사의 로봇·센서·병원 정보 시스템을 잇는 것을 목적으로 하며 Open-RMF 를 핵심 기반으로 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-940",
+        "ref-945"
+      ],
+      "cross_checked": true,
+      "confidence": "high",
+      "evidence_excerpt": "CGH: \"To ensure that all robotics systems tested and subsequently deployed in Public Healthcare Institutions are interoperable via a standardised and recognised International and Singapore platform.\" Open Robotics 블로그: RMF(ROS 2) 위에 구축, 2018-07 시작, CHART·IHiS·HopeTechnik·GovTech 협력. (두 출처는 같은 프로젝트의 참여 기관이라 독립성 제한)",
+      "as_of": "2021-02-10",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f5",
+      "claim": "Open Robotics 는 2021-02-10 글에서 RoMi-H 가 여러 제조사의 로봇이 승강기 같은 병원의 물리 자산을 공유하고 경로 계획 시각화와 다른 로봇에 대한 출입 금지 구역으로 충돌을 피하게 하며 로봇 플랫폼·센서·기업 정보 시스템에 걸친 통일된 통신·모니터링을 제공한다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-945"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"uniform communication and monitoring across robot platforms, sensors, and enterprise information systems\"; 승강기 같은 물리 자산과 상호작용, 다른 로봇에 대한 keep-out 구역으로 충돌 회피. 싱가포르 보건부·국가로봇프로그램 지원.",
+      "as_of": "2021-02-10",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f6",
+      "claim": "창이종합병원 CHART 의 RoMi-H 등재 프로그램(Empanelment Programme) 2025 는 싱가포르 보건부가 모든 공공 의료기관의 자동화 통합 플랫폼으로 인정한 RoMi-H 를 배치할 시스템 통합사의 기술 전문성과 배치 지식을 평가해 2025-05-01 부터 2년 유효한 인증을 주고 CHART 웹사이트에 게시해 공공 의료기관의 RFP·RFI 참여 목록으로 쓰며, 격년으로 운영되고 현재 등재 통합사는 HOPE Technik·Medisys Innovation·Panasonic Asia Pacific·QuikBot Technologies·Techfox 5개사다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-872"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"Applicants will undergo a series of evaluations, encompassing both technical expertise and deployment knowledge.\" 2025-05-01 효력, 2년 유효, CHART 사이트 게시·공공 의료기관 RFP/RFI 참여 목록, 등재 통합사 5개. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f7",
+      "claim": "이데일리(2023-07-06)에 따르면 분당서울대병원은 KT 의 5G 특화망 위에 자율주행 이송로봇(AMR) 6대를 두어 본관에서 헬스케어혁신파크까지 약 300m 의 연결 터널(워킹갤러리)로 진료재료·약품·린넨(환자복·침대 시트·이불) 카트를 옮기며, 승강기·자동문이 다중으로 연동돼 자동 작동하고 기존 1.5km 차량 운송을 대체했으며 야간 배송으로 환자 동선과 분리했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-941"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"물품을 카트에 채워놓기만 하면 무거운 카트는 자율주행 이송로봇이 옮긴다.\" AMR 6대, 워킹갤러리 약 300m, 승강기·자동문 다중 연동, 충돌 방지, 야간 배송으로 환자 동선 분리, 기존 차량 운송 1.5km 대체.",
+      "as_of": "2023-07-06",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f8",
+      "claim": "한림대성심병원은 2024-04 기준 7종 73대의 서비스 로봇(약제·검체·물품 배송로봇 '나르미', 안내로봇, 방역로봇, 비대면 협진·홈케어 로봇)을 운영하며 제조사가 다른 여러 로봇을 통합관제 시스템으로 커맨드센터에서 중앙 관리하고 2023년 27,300건(월평균 2,250건)의 로봇 배송을 처리했으며, 데일리팜(2024-07-15)은 이 병원에 LG전자와 빅웨이브로보틱스가 각각 배송로봇을 공급한다고 전해 서로 다른 제조사 로봇의 공존이 확인된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-947",
+        "ref-943"
+      ],
+      "cross_checked": true,
+      "confidence": "medium",
+      "evidence_excerpt": "로봇신문: \"제조사마다 상이한 다종 다수의 로봇 관제를 통합관제 시스템을 이용해 중앙에서 효율적으로 관리할 수 있다\"; 7종 73대, 2023년 27,300건. 데일리팜: LG전자(한림대성심·용인세브란스 공급, 구독 서비스), 빅웨이브로보틱스(한림대성심 담당).",
+      "as_of": "2024-07-15",
+      "site_type": "병원",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f9",
+      "claim": "뉴스투데이(2025-02-11)에 따르면 한림대성심병원의 약제 배송로봇은 혼자 승강기를 타고 병동 간호사 스테이션 지정 장소에서 대기하고, 검체 운반 로봇은 포름알데히드 용액에 담긴 조직을 옮기며, 실외 배송로봇은 신호등을 인식해 본관과 별관 사이 횡단보도를 건너는데, 커맨드센터 부센터장은 시스템 정착에 약 3년이 걸렸고 사용자 공감대 형성과 보급형 로봇의 한계에 맞춘 병원 시스템 변경이 과제였다고 밝혔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-942"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"혼자서 엘리베이터를 타고 병동으로 이동해 간호사 스테이션의 지정된 장소에서 무한정 대기\"; 포름알데히드 용액 조직 운반, 신호등 인식 횡단보도 통과, 정착 약 3년, 사용자 공감대·병원 시스템 변경 필요.",
+      "as_of": "2025-02-11",
+      "site_type": "병원",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f10",
+      "claim": "데일리팜(2024-07-15)에 따르면 양산부산대병원·용인세브란스병원·한림대성심병원·조선대병원·삼성서울병원·해운대백병원·의정부을지대병원·일산차병원이 원내 약 배송로봇을 도입했고 과학기술정보통신부 'XaaS 선도 프로젝트'(총 56억 원) 5개 과제 중 1개를 빅웨이브로보틱스가 맡았으며, 자동출입문 장치 필요·통로 협소·승강기 턱 때문에 도입을 포기한 병원이 있어 기존 건물보다 신축 병원 위주로 도입된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "도입 병원 8곳 열거; 과기정통부 XaaS 선도 프로젝트 총 56억 원; \"자동출입문 장치 필요, 통로 협소, 엘리베이터 턱 문제로 이동 불가해 도입이 어려웠다\"; 구축 병원 공간 제약, 신축 병원 위주 도입.",
+      "as_of": "2024-07-15",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f11",
+      "claim": "비즈한국(2025-04-10)에 따르면 한국로봇산업진흥원의 서비스로봇 실증사업과 한국보건산업진흥원의 스마트병원 사업이 2020년부터 병원 로봇 도입을 지원해 스마트병원 개별 선도모델 58개가 운영되고, 울산대학교병원은 2022년 항암제 이송 로봇을 도입했으며, 의료진은 약사의 대면 업무와 간호사의 약제실 왕복이 줄었다고 평가하는 한편 속도·안전성 부족과 병원 물류의 복잡성을 지적했고 대당 수억 원의 비용과 경사로·문·승강기 호환 같은 건축 구조가 주요 장애 요인으로 꼽힌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-951"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"약사는 대면 업무가 줄고 간호사는 직접 약제실로 내려오지 않아 두 직군 모두 업무 효율성을 높일 수 있었다\"; 비용 대당 평균 수억 원, 경사로·문·승강기 호환 문제, 생체인증(지정맥)·AI 안면인식으로 출입 통제와 접촉 최소화.",
+      "as_of": "2025-04-10",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f12",
+      "claim": "한국로봇산업진흥원의 서비스로봇 실증사업은 수요 중심 실증으로 시장 창출 한계를 넘기 위해 2020년부터 물류(공공·민간 실내외 물류·이송 로봇)·웨어러블·의료·기타(협동·언택트 서비스 로봇) 네 분야를 지원하며 로봇 도입 비용의 50% 이내를 국비로 대고 총사업비의 50% 이상을 민간 현금 부담으로 하며, 공모 → 서류·발표·현장평가 → 과제 선정 → 협약 → 중간 점검 → 최종 평가 순서로 진행된다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-950",
+        "ref-951"
+      ],
+      "cross_checked": true,
+      "confidence": "high",
+      "evidence_excerpt": "진흥원: \"수요 중심의 로봇 활용 실증을 통해 시장창출 한계를 극복\", 2020년부터, 로봇 도입 비용 50% 이내 국비, 서류심사·발표평가·현장평가. 비즈한국: 2020년부터 운영 중인 서비스 로봇 실증사업(교차 확인은 사업 존재·시작 연도만).",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f13",
+      "claim": "한국보건산업진흥원 스마트병원 확산지원센터는 개별 선도모델 58개를 9개 모듈로 재구성했으며, 그중 '지능형 원내 물류 배송' 모듈은 자율주행 로봇과 보안이 강화된 생체인증 시스템으로 약국·물품공급실·병동 간 무인 배송 체계를, '하나로 감염관리' 모듈은 방문객 출입 통제·동선 분석·혼잡도 관리·환경 소독까지 감염관리 업무 자동화를 정의한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-953"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"자율주행 로봇과 보안이 강화된 생체인증 시스템을 이용하여 약국, 물품공급실, 병동 간 무인 배송 시스템을 구축합니다.\" 9개 모듈: 환자흐름 최적화·환자안전 강화·간호 업무 자동화·스마트수술실·원격중환자실·감염병 위기 대응·하나로 감염관리·지능형 원내 물류 배송·지능형 업무 자동화. (발행일 미확인, 확인일 기준)",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f14",
+      "claim": "산업통상자원부 국가기술표준원은 2021-11-11 로봇의 승강기 탑승 시 안전 요구사항과 실내 배송 로봇에 관한 국가표준(KS)을 제정한다고 발표했으며, 이는 2020-10 '로봇산업 선제적 규제혁신 로드맵'에 따라 승강기 안전기준 소관인 행정안전부와 협력한 결과로 속도 제어·위험 상황의 보호 정지·높낮이차·틈새 극복·추락·넘어짐 방지를 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-948"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"속도제어 ▲위험상황에서의 보호정지 ▲높낮이차·틈새극복 ▲추락·넘어짐 방지\"; 산업부 2020-10 로봇산업 선제적 규제혁신 로드맵, 행정안전부 협력. 자료에 KS 표준 번호·정식 명칭은 없음.",
+      "as_of": "2021-11-11",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f15",
+      "claim": "Babalola 외(Frontiers in Robotics and AI, 2024-06-05)의 체계적 문헌 검토는 2018년 이후 간호 협동로봇 연구 28편을 검토해 대부분이 기술 성숙도 4~5 수준이고 환자 중심 설계가 많아 간호 업무 부담을 줄이는 물류·행정 보조 로봇은 드물며, 미국 병원에 TUG 같은 배송 로봇이 도입돼 있음에도 동료 심사 근거가 '두드러지게 부족'하고 비용·유지보수·사이버보안 분석이 미흡하다고 결론짓는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-949"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "\"evidence of nurse-assistive cobots in U.S. hospitals was generally strikingly lacking, despite the known adoption of general-purpose cobots like TUG Automated Robotic Delivery System by Aethon Inc.\" 28편, TRL 4~5 다수, TRL 9 는 1건, 비용·유지보수·사이버보안 분석 부족.",
+      "as_of": "2024-06-05",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f16",
+      "claim": "최현철·서슬기·권재용·박상찬·장혜정(경희대학교·Korea SUNY, 품질경영학회지 51(3), 2023)은 감염병 대응 수단인 감염환자 이송 로봇에 대한 의료종사자 인식을 SERVQUAL 다섯 차원(유형성·신뢰성·반응성·보증성·공감성)과 AHP(유효 응답 23부)로 조사해, 환자 이송 과정의 안전이 최우선이고 이송 중 기기 오류 해결과 응급처치 제공 용이성, 환자 모니터링과 감염 인자 억제 능력이 중요하다는 결과를 얻었다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-952"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "KCI 초록: 의료종사자 개입이 최소화되는 영역의 위험 요인 우려, 환자 이송 과정에서 안전이 최우선이라는 합의, 이송 중 기기 오류 해결·응급처치 제공 용이성 강조, 환자 모니터링·감염 인자 억제 능력 중요. 30부 배포·24부 회수·23부 분석.",
+      "as_of": "2023",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f17",
+      "claim": "Fragapane 외(European Journal of Operational Research 294(2), 2021)의 자율이동로봇 계획·제어 문헌 검토는 제조·창고·크로스독·터미널과 함께 병원을 AMR 의 적용 분야로 들어, 병원이 인트라로지스틱스 AMR 연구의 대상 현장 가운데 하나임을 보인다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-911"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제조·창고·크로스독·터미널·병원을 적용 분야로 들며 관리자를 위한 AMR 계획·제어 프레임워크와 연구 의제 제시 (재인용: 2026-09-29-11)",
+      "as_of": "2021",
+      "site_type": "병원",
+      "flow_item": null,
+      "source_unopened": true
+    },
+    {
+      "id": "f18",
+      "claim": "Open-RMF 는 플릿 어댑터로 서로 다른 제조사의 로봇 플릿을 붙이고 문·승강기 어댑터로 설비를 연동하는 오픈소스 미들웨어이며, RoMi-H 가 이를 핵심 기반으로 싱가포르 공공 병원에 적용됐으므로 병원 현장의 이기종 로봇·승강기 연동 참고 구조로 볼 수 있다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-004",
+        "ref-945"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "RMF Core: 플릿 어댑터·문·승강기 연동·작업·교통 조율 구조(재인용: 2026-09-29-12). Open Robotics 블로그: RoMi-H 는 RMF(ROS 2) 위에 구축돼 승강기 같은 물리 자산 공유를 지원.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": "수행 자원",
+      "source_unopened": false
+    },
+    {
+      "id": "f19",
+      "claim": "확인한 자료를 종합하면 병원의 로봇 작업은 (1) 약품 이송 — 야간 약제·항암제·마약류를 약국에서 병동·응급실로(f1·f3·f10·f11), (2) 검체 이송 — 병동·수술실에서 검사실로, 포름알데히드 조직 포함(f1·f9), (3) 린넨·진료재료·물품 카트 이송(f7·f8), (4) 감염환자 이송 — 사람을 작업 대상으로 하는 이송(f16), (5) 방역·환경 소독과 출입 통제(f8·f13)의 다섯 형태로 나타나며, 식사 이송 사례는 이번 조사에서 근거를 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-939",
+        "ref-946",
+        "ref-943",
+        "ref-951",
+        "ref-942",
+        "ref-941",
+        "ref-947",
+        "ref-952",
+        "ref-953"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1·f3·f7·f8·f9·f10·f11·f13·f16 의 종합. 각 사례가 밝힌 이송 대상: 약품(항암제·마약류 포함), 검체(포름알데히드 조직), 린넨·진료재료·물품, 감염환자, 방역·출입 통제.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f20",
+      "claim": "확인한 자료를 종합하면 병원 로봇 작업의 여섯 항목은 시작 조건이 약국·병동의 정기·수시 이송 요청과 야간 시간대 배송(f1·f7), 작업 대상이 약품·검체·린넨·진료재료와 감염환자(f19), 수행 자원이 AMR 과 약국·병동·시스템 관리자·정비 인력·커맨드센터(f2·f8), 제약이 승강기 혼잡·자동문·통로·턱(f3·f10), 감염 관리 구역과 비접촉(f2·f13), 생체인증 권한(f13), ISO 13482·KS 승강기 탑승 안전 요구(f3·f14), 완료·인계가 RFID 신원 확인·생체인증 개폐(f2·f13), 예외·성과가 승강기 혼잡 시 실패·기기 오류·응급처치 우려와 배송 시간·건수 지표(f1·f3·f16)로 채워질 수 있다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-939",
+        "ref-941",
+        "ref-947",
+        "ref-946",
+        "ref-943",
+        "ref-953",
+        "ref-948",
+        "ref-952"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1·f2·f3·f7·f8·f10·f13·f14·f16 의 종합. 수치는 각 연구·기사 조건(단일 병원·단일 로봇·특정 기간)에 한정된다.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f21",
+      "claim": "확인한 자료를 종합하면 63. 병원·의료에서 ROP 가 직접 맡을 범위는 약국·병동·검사실이 내는 이송 요청을 받아 제조사가 다른 로봇에 배정하고, 승강기·자동문을 예약·연동하며(f2·f3·f7), 감염 관리 구역·야간 시간대·권한 제약을 경로·배정 제약으로 반영하고(f7·f13), RFID·생체인증 같은 수령 인증으로 완료를 확인해 병원 정보 시스템에 결과를 돌려주며(f2·f13), 승강기 혼잡 같은 실패를 받아 재계획하는 일(f3)이고, 싱가포르 RoMi-H 가 이를 공공 의료 전체의 통합 플랫폼으로 보였으며(f4·f6) 국내는 한림대성심병원의 통합관제(f8)가 가장 가까운 공개 사례다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-939",
+        "ref-946",
+        "ref-941",
+        "ref-953",
+        "ref-940",
+        "ref-872",
+        "ref-947"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f2·f3·f4·f6·f7·f8·f13 의 종합. 국내에서 이기종 병원 로봇을 하나의 표준 계층으로 묶은 공개 사례는 통합관제 언급 수준이며 인터페이스·표준은 미확인.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f22",
+      "claim": "연계 대상: 병원에서 처방·조제·검사 지시를 내는 병원 정보 시스템(HIS·EMR·약국 시스템)은 분류 원문 19장의 상위 업무 시스템, 승강기 제어반·자동문은 시설·설비 제어, 로봇의 자율 주행·회피와 ISO 13482 안전 기능은 로봇 자체 지능·제어, 감염 관리 규정·환자 정보 보호·의료 관련 법령은 업종별 조건에 속하므로, 이종 제조사를 잇는 ROP 는 이들에 작업 요청·예약·인계·상태 확인만 걸고 처방 판단·승강기 제어·안전 기능 성능·감염 관리 기준 설정은 병원 정보 시스템·승강기 업체·로봇 제조사·병원 감염관리 조직에 맡겨야 할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-939",
+        "ref-946",
+        "ref-953",
+        "ref-948"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f2(승강기 제어·RFID)·f3(TK50M 전용 모듈, ISO 13482)·f13(생체인증·감염관리 모듈)·f14(KS 안전 요구)에서 도출한 경계. 분류 원문 19장 표의 다섯 경계에 대응.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f23",
+      "claim": "이 영역은 승강기·자동문 연동을 다루는 22. 설비·건물 시스템 연동(f2·f3·f7·f14), 이기종 로봇 미들웨어와 등재 제도를 다루는 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성·58. 다사업자 책임·계약·데이터(f4·f6·f8), RFID·생체인증 수령 확인을 다루는 17. 작업 대상·자산 식별과 인계 추적·51. 인증·권한·격리(f2·f13), 사이버보안·환자 정보를 다루는 53. 개인정보·영상 데이터(f15), ISO 13482·KS 승강기 탑승 요구와 감염환자 이송 안전을 다루는 49. 사람 근접 안전·50. 안전 표준·인증·사고 조사(f3·f14·f16), 승강기를 공용 자원으로 다루는 28. 공용 자원·충전·에너지 최적화와 혼잡 시 실패를 다루는 32. 예외 복구·재계획·업무 연속성(f3), 야간 동선 분리를 다루는 19. 사람·보행자 모델(f7), 배송 시간·건수를 다루는 39. 운영 성과 측정·개선(f1·f8), 구축 병원의 통로·턱 제약과 3년 정착을 다루는 55. 현장 조사·설치·시운전·56. 운영 이관·확대·교육(f9·f10·f11), 정부 실증·스마트병원 사업을 다루는 3. 경제성·조달·사업 모델(f12·f13)에 이어진다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-939",
+        "ref-946",
+        "ref-941",
+        "ref-948",
+        "ref-940",
+        "ref-872",
+        "ref-947",
+        "ref-953",
+        "ref-949",
+        "ref-952",
+        "ref-942",
+        "ref-943",
+        "ref-951",
+        "ref-950"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1~f16 이 각각 근거가 되는 영역을 대응시킨 것. 승강기는 병원에서 로봇·사람·침대가 함께 쓰는 공용 자원이라는 점(f3)이 28. 공용 자원·충전·에너지 최적화 연결의 근거다.",
+      "as_of": "2026-09-29",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f24",
+      "claim": "oq-149 에 대해 싱가포르 RoMi-H 등재 프로그램은 2025-05-01 부터 2년 유효한 통합사 5개 등재로 계속 운용 중임이 확인되나(f6), 국내에서 벤더·통합사를 사전 평가해 병원 로봇 공급 자격을 주는 제도는 이번 조사에서 확인되지 않았고, 확인된 국내 제도는 과제 단위로 서류·발표·현장평가를 거치는 서비스로봇 실증사업(f12)과 스마트병원 선도모델 사업(f11·f13)뿐이며 이는 벤더 등록 자격 제도가 아니다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-872",
+        "ref-950",
+        "ref-951",
+        "ref-953"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f6(등재 프로그램 2025)·f12(실증사업 평가 절차)·f11·f13(스마트병원 사업)의 대조. 검색어 '스마트병원 선도모델 로봇 표준 가이드라인 상호운용'에서 국내 등재 제도 미확인.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": null
+    },
+    {
+      "id": "f25",
+      "claim": "oq-134·oq-138·oq-142 에 대해 국내 병원에서 로봇 운영 기록으로 실제 상황을 시뮬레이션에 재현하거나 대화로 시나리오를 구성하거나 대화로 여러 로봇에 업무를 지시·승인한 사례는 이번 조사에서도 확인되지 않았으며, 가장 가까운 국내 자료는 고대구로병원 연구가 운영 기록의 승강기 가동률과 성공률 관계를 몬테카를로 모형으로 분석한 것(f3)과 한림대성심병원의 통합관제(f8)다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-946",
+        "ref-947"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f3(122건 운영 기록·몬테카를로 모형, 단일 로봇)·f8(통합관제 시스템)의 대조. 검색어 '병원 로봇 디지털 트윈 시뮬레이션 운영 기록 재현 대화형 업무 지시 LLM' 결과는 임상 LLM·병원 운영 시뮬레이션이며 로봇 운영 재현·대화형 지시는 아님.",
+      "as_of": "2026-09-29",
+      "site_type": "병원",
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-939",
+      "org": "Li, M. 외 (Scientific Reports)",
+      "title": "Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios",
+      "published": "2026-04-24",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13276296/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "중국 산시성 인민병원에서 AMR 10대로 약품·검체 이송을 6개월 운영한 효과 분석. 배송 시간 32~36% 단축, 승강기 IoT 제어·RFID 신원 확인·협력 책임 체계·경제성 분석.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13276296/",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-940",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "ROMI-H | Changi General Hospital",
+      "published": null,
+      "url": "https://www.cgh.com.sg/chart/projects/romi-h",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "싱가포르 공공 의료 로봇 미들웨어 RoMi-H 의 목적·네 도메인·DDS 기반·2019-10-31 공개를 설명하는 창이종합병원 CHART 공식 페이지.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.cgh.com.sg/chart/projects/romi-h",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-941",
+      "org": "이데일리",
+      "title": "분당서울대병원, 무거운 이송카트 로봇자율배송, 무안경 3D 의료실습에 도입",
+      "published": "2023-07-06",
+      "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01403846635671896",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "분당서울대병원이 KT 5G 특화망 위에 AMR 6대로 워킹갤러리 300m 구간의 진료재료·약품·린넨 카트를 야간 배송하며 승강기·자동문을 연동한 사례.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01403846635671896",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-942",
+      "org": "뉴스투데이",
+      "title": "[한림대성심병원 로봇 사용기 (下)] 배송로봇, 엘리베이터 타고 횡단보도 건너 검체 운반",
+      "published": "2025-02-11",
+      "url": "https://www.news2day.co.kr/article/20250211500007",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "한림대성심병원의 약제·검체·실외 배송로봇 운영 방식(승강기 단독 탑승, 횡단보도 통과)과 3년 정착 과정의 조직·시스템 변경 과제를 전한 탐방 기사.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.news2day.co.kr/article/20250211500007",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-943",
+      "org": "데일리팜",
+      "title": "원내 약 배송로봇 도입 확대...정부 지원에 변화 바람",
+      "published": "2024-07-15",
+      "url": "https://m.dailypharm.com/user/news/15128",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원내 약 배송로봇을 도입한 국내 병원 8곳, 과기정통부 XaaS 선도 프로젝트(56억 원), LG전자·빅웨이브로보틱스 공급, 구축 병원의 자동문·통로·승강기 턱 제약을 정리한 기사.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://m.dailypharm.com/user/news/15128",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": null,
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "RoMi-H 배치 시스템 통합사를 기술·배치 역량으로 평가해 2년 유효 인증을 주고 공공 의료기관 RFP·RFI 참여 목록으로 게시하는 등재 프로그램 안내(2025-05-01 효력, 등재 통합사 5개).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-945",
+      "org": "Open Robotics",
+      "title": "ROMI-H: Bringing Robot Traffic Control to Healthcare",
+      "published": "2021-02-10",
+      "url": "https://www.openrobotics.org/blog/2021/2/10/romi-h-bringing-robot-traffic-control-to-healthcare",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "Open Robotics 가 RoMi-H 의 RMF(ROS 2) 기반, 이기종 로봇의 승강기 등 물리 자산 공유, 출입 금지 구역을 통한 충돌 회피, 협력 기관을 설명한 블로그 글.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.openrobotics.org/blog/2021/2/10/romi-h-bringing-robot-traffic-control-to-healthcare",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-946",
+      "org": "Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03-31",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "고대구로병원에서 ISO 13482 인증 시험을 거친 IROI 로봇 1대의 약국→응급실 배송 122건을 분석해 승강기 가동률과 성공률(전체 87.03%)의 관계를 밝힌 타당성 연구. 승강기 연동은 TK50M 전용 통신 모듈.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-947",
+      "org": "로봇신문",
+      "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원'",
+      "published": "2024-04-15",
+      "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "한림대성심병원의 7종 73대 서비스 로봇, 제조사가 다른 로봇의 통합관제 시스템·커맨드센터, 2023년 로봇 배송 27,300건을 전한 탐방 기사.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-948",
+      "org": "산업통상자원부 국가기술표준원 (KDI 경제정보센터 게재)",
+      "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
+      "published": "2021-11-11",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=220004",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "국가기술표준원이 로봇의 승강기 탑승 안전 요구사항과 실내 배송 로봇 KS 를 제정한다고 알린 보도자료. 속도 제어·보호 정지·높낮이차·틈새·추락 방지 요구, 행정안전부 협력.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://eiec.kdi.re.kr/policy/materialView.do?num=220004",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-949",
+      "org": "Babalola, G. T., Gaston, J.-M., Trombetta, J., & Tulk Jesso, S. (Frontiers in Robotics and AI)",
+      "title": "A systematic review of collaborative robots for nurses: where are we now, and where is the evidence?",
+      "published": "2024-06-05",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1398140/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "2018년 이후 간호 협동로봇 연구 28편의 체계적 검토. TRL 4~5 다수, 미국 병원의 TUG 등 배송 로봇에 대한 동료 심사 근거 부족, 비용·유지보수·사이버보안 분석 미흡을 지적.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1398140/full",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-950",
+      "org": "한국로봇산업진흥원",
+      "title": "서비스로봇 실증사업",
+      "published": null,
+      "url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "2020년부터 물류·웨어러블·의료·기타 네 분야의 서비스로봇 도입을 국비 50% 이내로 지원하는 실증사업의 목적·분야·절차 안내.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-951",
+      "org": "비즈한국",
+      "title": "병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까",
+      "published": "2025-04-10",
+      "url": "https://bizhankook.com/articles/29394.html",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "국내 병원 로봇 도입 현황(한림대의료원·울산대병원·서울대병원), 서비스로봇 실증사업·스마트병원 사업(선도모델 58개), 의료진 평가와 비용·건축 구조 장애 요인을 정리한 기사.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://bizhankook.com/articles/29394.html",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-952",
+      "org": "최현철, 서슬기, 권재용, 박상찬, 장혜정 (경희대학교, Korea SUNY; 품질경영학회지 51(3))",
+      "title": "감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여",
+      "published": "2023",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002997683",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "감염환자 이송 로봇의 서비스 품질에 대한 의료종사자 인식을 SERVQUAL 다섯 차원과 AHP 로 조사해 안전 최우선, 기기 오류 해결·응급처치·환자 모니터링·감염 인자 억제의 중요성을 확인한 국내 논문(KCI 초록 확인).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002997683",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-953",
+      "org": "한국보건산업진흥원 스마트병원 확산지원센터",
+      "title": "선도모델 및 모듈 소개",
+      "published": null,
+      "url": "https://www.khidi.or.kr/board?menuId=MENU03336&siteId=SITE00040",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "스마트병원 선도모델 58개를 9개 모듈로 재구성한 안내. '지능형 원내 물류 배송'(자율주행 로봇+생체인증 무인 배송)과 '하나로 감염관리'(출입 통제·동선·혼잡도·환경 소독 자동화) 모듈 정의.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.khidi.or.kr/board?menuId=MENU03336&siteId=SITE00040",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-004",
+      "org": "Open Robotics",
+      "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고.",
+      "source_unopened": false,
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": null
+    },
+    {
+      "id": "ref-911",
+      "org": "Fragapane, G., de Koster, R., Sgarbossa, F., & Strandhagen, J. O. (European Journal of Operational Research 294(2))",
+      "title": "Planning and control of autonomous mobile robots for intralogistics: Literature review and research agenda",
+      "published": "2021",
+      "url": "https://doi.org/10.1016/j.ejor.2021.01.019",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. AMR 의 분산 의사결정 특성과 제조·창고·크로스독·터미널·병원 적용 분야, 관리자용 계획·제어 프레임워크와 연구 의제를 제시한 문헌 검토(이전 실행 2026-09-29-11 등록).",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/site-type-applications/hospital-and-healthcare.md",
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "rationale": "섹션 3: f1(로봇 이송이 배송 시간·처리 건수·교차 감염 위험을 줄임), f11·f12(정부가 2020년부터 병원 로봇 도입을 지원), f15(상업 도입에 비해 동료 심사 근거가 부족) / 섹션 4: f4(의료 로봇 미들웨어 RoMi-H), f3(승강기 가동률), f6(등재 프로그램), f13(스마트병원 선도모델·지능형 원내 물류 배송 모듈), f16(감염환자 이송 로봇) / 섹션 5(현장 유형 모두 병원): 약품·린넨 이송 — f7(분당서울대병원, 야간·워킹갤러리), f8·f9(한림대성심병원 7종 73대·통합관제·검체·실외), f3(고대구로병원 승강기 혼잡), f10·f11(국내 도입 병원 목록·울산대병원 항암제 이송·도입 포기 사례), 해외 — f1·f2(중국 산시성 인민병원 10대), f4·f5·f6(싱가포르 창이종합병원 RoMi-H), 여섯 항목 정리는 f20, 작업 형태 지도는 f19 / 섹션 6: 승강기·자동문 연동 f2·f3·f7, 이기종 미들웨어 f4·f5·f18, 수령 인증 f2·f13, 야간 배송·동선 분리 f7, 승강기 혼잡 모델링 f3, 정착 과정 f9 / 섹션 7: f3(ISO 13482), f14(KS 로봇 승강기 탑승 안전 요구사항·실내 배송 로봇, 번호 미확인), f4·f18(Open-RMF/RoMi-H, ref-004 재사용), f6(등재 프로그램), f12·f13(서비스로봇 실증사업·스마트병원 선도모델) / 섹션 8: f15(간호 협동로봇 체계적 검토), f1·f2(효과 분석 논문), f3(승강기 타당성 논문), f16(국내 인식 연구), f17(AMR 문헌 검토, ref-911 재사용) / 섹션 9: f21(직접 범위: 이송 요청 수신·이기종 배정·승강기·자동문 예약·감염 구역·야간·권한 제약 반영·수령 인증 완료 확인·결과 반환·혼잡 시 재계획), f22(연계 대상: HIS·EMR·약국 시스템, 승강기 제어반·자동문, 로봇 자율 주행·안전 기능, 감염 관리 규정·환자 정보 보호 법령) / 섹션 10: f23 — 3. 경제성·조달·사업 모델, 17. 작업 대상·자산 식별과 인계 추적, 19. 사람·보행자 모델, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 22. 설비·건물 시스템 연동, 28. 공용 자원·충전·에너지 최적화, 32. 예외 복구·재계획·업무 연속성, 39. 운영 성과 측정·개선, 49. 사람 근접 안전, 50. 안전 표준·인증·사고 조사, 51. 인증·권한·격리, 53. 개인정보·영상 데이터, 55. 현장 조사·설치·시운전, 56. 운영 이관·확대·교육, 58. 다사업자 책임·계약·데이터 / 섹션 11: 기존 oq-149(f24, 부분 답이나 미해결)·oq-134·oq-138·oq-142(f25, 미해결)와 open_questions_new 5건. 벤더 주장 finding 없음(모든 성과 수치는 논문·정부 자료·기사 기준이며 f1·f3 수치는 단일 병원 조건임을 명시). 다음 실행 후보: 22. 설비·건물 시스템 연동 페이지에 f3·f14 반영, 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성 페이지에 f4·f6 반영, 58. 다사업자 책임·계약·데이터 페이지에 f6(등재 프로그램) 반영, 17. 작업 대상·자산 식별과 인계 추적 페이지에 f2·f13(RFID·생체인증 수령 확인) 반영, 53. 개인정보·영상 데이터 페이지에 이동형 영상정보처리기기 규정의 병원 로봇 적용 조사(이번 실행에서 원문 미열람) 반영."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "의료 로봇 미들웨어 RoMi-H",
+      "term_en": "Robotic Middleware for Healthcare (RoMi-H)",
+      "definition": "싱가포르 창이종합병원 CHART 가 Open-RMF(ROS 2·DDS) 위에 만든 오픈소스 미들웨어로, 서로 다른 제조사의 로봇·센서·병원 정보 시스템을 기계·제어·중앙·통합 네 도메인으로 잇고 승강기 같은 공용 자산을 공유하게 하며 싱가포르 보건부가 공공 의료기관의 자동화 통합 플랫폼으로 인정한다."
+    },
+    {
+      "term_ko": "승강기 가동률",
+      "term_en": "Elevator Operating Rate (EOR)",
+      "definition": "병원처럼 승강기를 사람·침대·로봇이 함께 쓰는 건물에서 승강기가 사용 중인 시간 비율로, 고대구로병원 연구는 가동률이 높을수록 배송 로봇의 승강기 대기가 길어지고 임무 실패가 늘어난다는 관계를 보여 로봇 배차·재계획의 제약 변수로 쓸 수 있다."
+    },
+    {
+      "term_ko": "등재 프로그램",
+      "term_en": "Empanelment Programme",
+      "definition": "공공 기관이 벤더·시스템 통합사의 기술 전문성과 배치 역량을 사전에 평가해 일정 기간 유효한 자격을 주고 조달 제안 요청(RFP·RFI)에 참여할 수 있는 목록에 올리는 제도로, 싱가포르 CHART 가 RoMi-H 배치 통합사를 대상으로 격년 운영한다."
+    },
+    {
+      "term_ko": "스마트병원 선도모델",
+      "term_en": "Smart Hospital Leading Model",
+      "definition": "보건복지부·한국보건산업진흥원이 2020년부터 정보통신기술로 환자 안전과 의료 질을 높이는 병원 모델을 개발·검증하도록 지원한 사업의 산출물로, 개별 선도모델 58개가 지능형 원내 물류 배송(자율주행 로봇+생체인증 무인 배송)·하나로 감염관리 등 9개 모듈로 재구성됐다."
+    }
+  ],
+  "open_questions_new": [
+    "개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한)의 촬영 사실 표시·촬영 거부 규정이 병원 이송 로봇의 카메라·센서 촬영에 어떻게 적용되며, 환자·방문객 영상을 관제 계층이 어디까지 저장·전송할 수 있는지 법령 원문과 해석 사례로 확인할 수 있는가(이번 조사는 법령 원문을 열지 못했다)? | 관련 영역: 63. 병원·의료, 53. 개인정보·영상 데이터 | 근거: f22 | 종류: 일반",
+    "격리 병동·감염 관리 구역을 지나는 이송 로봇의 출입 허용 규칙과 로봇 표면 소독 절차를 병원 감염관리 조직이 어떻게 정하고 로봇 플릿 관제가 이를 경로·배정 제약으로 어떻게 받는지 공개된 지침이나 연구가 있는가? | 관련 영역: 63. 병원·의료, 48. 안전·위험 관리 | 근거: f2 | 종류: 일반",
+    "국가기술표준원이 2021년 제정을 발표한 로봇의 승강기 탑승 안전 요구사항 KS 와 실내 배송 로봇 KS 의 표준 번호·조항은 무엇이며, 그 요구(속도 제어·보호 정지·높낮이차·틈새)가 승강기 연동 계층에 어떤 정보를 요구하는가? | 관련 영역: 63. 병원·의료, 22. 설비·건물 시스템 연동, 59. 법·규제·보험·라이선스 | 근거: f14 | 종류: 일반",
+    "한림대성심병원처럼 제조사가 다른 여러 로봇을 통합관제하는 국내 병원은 어떤 인터페이스·표준(Open-RMF, VDA 5050, 제조사 API)으로 로봇과 승강기를 연결하며 그 구조가 공개돼 있는가? | 관련 영역: 63. 병원·의료, 20. 로봇·제조사 관제 연동 | 근거: f8 | 종류: 일반",
+    "국내 병원에서 식사(환자식) 이송을 로봇이 맡은 운영 사례가 있으며, 식사 이송은 약품·검체 이송과 시작 조건·시간 제약·인계 방식이 어떻게 다른가? | 관련 영역: 63. 병원·의료 | 근거: f19 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 17,
+    "cross_checked_count": 3,
+    "unverified": [
+      "f1·f2 산시성 인민병원 수치(32~36%·7.3배·이용률 0.84)는 단일 논문이며 독립 출처 교차 확인 실패",
+      "f3 고대구로병원 성공률(87.03%·95.52%)은 단일 논문·단일 로봇·12일 기간이며 교차 확인 실패",
+      "f4 의 두 출처(창이종합병원 CHART, Open Robotics)는 같은 프로젝트의 참여 기관이라 독립성이 제한적",
+      "f6 RoMi-H 등재 프로그램 페이지의 발행일 미확인, 등재 통합사 목록의 기준 시점 미확인",
+      "f7 분당서울대병원(이데일리)·f9·f10(뉴스투데이·데일리팜)·f11(비즈한국) 사례는 각각 발행 주체 한 곳",
+      "f8 의 교차 확인은 '제조사가 다른 로봇의 공존'만이며 로봇 대수·건수(73대·27,300건)는 로봇신문 단독",
+      "f13·f14 의 출처 페이지 발행일 미확인(스마트병원 모듈 소개), KS 표준 번호·정식 명칭 미확인",
+      "f16 품질경영학회지 논문은 PDF 텍스트 추출 실패로 KCI 초록만 확인",
+      "개인정보 보호법 제25조의2 원문(law.go.kr 연결 끊김, casenote 403)을 열지 못해 환자 정보 보호 법령 finding 을 내지 못하고 열린 질문으로 남김",
+      "American Journal of Infection Control 2023 감염 예방 로봇 체계적 검토와 Journal of Hospital Infection 2025 응급실 AMR 소독 연구는 출판사 403·Semantic Scholar 429 로 열지 못해 출처 제외",
+      "Panasonic HOSPI ISO 13482 인증 페이지 403 으로 제외(ISO 13482 근거는 f3 논문으로 대체)",
+      "세계비즈 도구공간·고대구로병원 실증 기사는 프록시 거부로 열지 못함(같은 사례는 f3 논문으로 확인)",
+      "메디칼타임즈(2026-02-03)의 삼성서울병원 야간 승강기 혼잡 회피 운영 사실과 머니투데이(2026-04-14)의 서울대병원·하버드의대 임상 환경 시뮬레이터는 열었으나 출처 상한 15건으로 제외",
+      "oq-149 부분 답: 싱가포르 등재 프로그램의 현황은 확인했으나 국내 유사 제도는 미확인(f24)",
+      "oq-134·oq-138·oq-142 미해결: 국내 병원의 운영 기록 시뮬레이션 재현·대화형 시나리오 구성·대화형 다중 로봇 지시 사례 미확인(f25)",
+      "ref-004·ref-911 재사용 항목은 참고문헌 목록 입력이 0건이라 등록된 기관·제목·URL 과 글자 단위로 대조하지 못함"
+    ],
+    "scope_violations": [
+      "f22: HIS·EMR·약국 시스템의 처방·조제 판단, 승강기 제어반·자동문 제어, 로봇의 자율 주행·회피와 ISO 13482 안전 기능, 감염 관리 규정·환자 정보 보호 법령은 분류 원문 19장의 상위 업무 시스템·시설·설비 제어·로봇 자체 지능·제어·업종별 조건 쪽이므로 '연계 대상: '으로 표시함",
+      "f3·f14: 승강기 연동 방식과 KS 안전 요구는 22. 설비·건물 시스템 연동·50. 안전 표준·인증·사고 조사 의 핵심이므로 이 영역에서는 병원 이송의 제약 근거로만 제안함",
+      "f4·f5·f6: RoMi-H 미들웨어 구조와 등재 제도는 20. 로봇·제조사 관제 연동·21. 상호운용 표준·적합성·58. 다사업자 책임·계약·데이터 와 겹치므로 이 영역에서는 병원 현장의 이기종 로봇 운영 사례로만 제안함",
+      "f2·f13: RFID·생체인증 수령 확인은 17. 작업 대상·자산 식별과 인계 추적·51. 인증·권한·격리 의 방법이므로 이 영역에서는 완료·인계 조건의 근거로만 제안함",
+      "f15: 사이버보안 분석 부족 지적은 53. 개인정보·영상 데이터 와 연결하되 환자 정보 보호 법령 자체는 이번 실행에서 확인하지 못함"
+    ],
+    "budget_used": {
+      "queries": 14,
+      "sources": 15
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 검색 14회/30, 신규 출처 15건/15(ref-939~ref-953, 예약 구간 ref-939~ref-968 안) 상한 도달로 메디칼타임즈 삼성서울병원 야간 운영 기사, 머니투데이 서울대병원 임상 환경 시뮬레이터 기사, 개인정보 보호법 제25조의2 원문(열람 실패), AJIC·JHI 감염 관리 논문(열람 실패), Panasonic HOSPI ISO 13482 페이지(403), Aethon TUG 벤더 자료, 서울대병원 의료 LLM 보도자료는 넣지 못했다. 원문 열람 15건(모두 webfetch: PMC 논문 원문 2(ref-939·ref-946), Frontiers 원문 1, KCI 초록 1, 창이종합병원 CHART 페이지 2, Open Robotics 블로그 1, 국가기술표준원 보도자료(KDI 게재) 1, 한국로봇산업진흥원·한국보건산업진흥원 페이지 2, 기사 5), 재사용 미열람 2건(ref-004·ref-911 은 이번에 다시 열지 않아 fetched false·source_unopened true). 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 Open-RMF·Fragapane 검토·RoMi-H 관련 페이지가 전체 936건과 URL 이 겹칠 수 있으므로 퍼블리셔가 URL 기준으로 합칠 때 확인해야 한다(ref-911 은 직전 실행 2026-09-29-11 이 부여한 id 를 그대로 썼다). 교차 확인 3건(f4: CHART/Open Robotics — 같은 프로젝트 참여 기관이라 독립성 제한, f8: 로봇신문/데일리팜 — 이기종 제조사 공존 사실만, f12: 한국로봇산업진흥원/비즈한국 — 사업 존재·시작 연도만). 신뢰도 high 는 f4(정부·연구기관 원문 열람 + 오픈소스 문서)·f12(정부·연구기관 원문 열람 + 기사) 두 건이며 검증에서 medium 으로 낮아질 수 있다. 벤더 주장 finding 없음: 도구공간 직원이 공저한 f3 은 병원이 주저자인 동료 심사 논문이라 벤더 문서로 보지 않았고, 성과 수치는 모두 논문·정부·기사 출처다. 분류 원문 핵심 질문(감염 관리와 환자 정보 보호 조건에서 병원 이송을 어떻게 운영할 것인가)에는 작업 형태 지도 f19, 여섯 항목 정리 f20, 직접 범위 f21, 연계 대상 f22 로 답했으며 결론은 '감염 관리는 비접촉 배송·야간 동선 분리·감염 구역 제약·방역 모듈로, 환자·약품 정보 보호는 RFID·생체인증 수령 확인과 권한 통제로 다루고, 승강기 혼잡이 병원 특유의 핵심 제약이며, 이기종 로봇을 하나의 표준 계층으로 묶은 공개 사례는 싱가포르 RoMi-H 이고 국내는 통합관제 언급 수준'이라는 추정이다. 환자 정보 보호의 법령 근거(개인정보 보호법 제25조의2)는 원문을 열지 못해 finding 대신 열린 질문으로 남겼다. 현장 유형: 모두 병원(국내 분당서울대·한림대성심·고대구로·울산대 등, 해외 싱가포르 창이종합병원·중국 산시성 인민병원, 학술 검토)이며 이 영역의 성격상 다른 현장 유형 사례는 찾지 않았다(f9 의 실외 배송로봇은 병원 부지 안 이동으로 병원 사례에 둠). 국내 자료는 고대구로병원 논문(f3)·품질경영학회지 논문(f16)·국가기술표준원(f14)·한국로봇산업진흥원(f12)·한국보건산업진흥원(f13)·이데일리(f7)·로봇신문(f8)·뉴스투데이(f9)·데일리팜(f10)·비즈한국(f11) 열 건이다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 섞지 않았다(f3 의 몬테카를로 모형은 사전 타당성 분석으로 34 쪽 성격이나 이번 연결 제안에는 넣지 않음). 용어집에 이미 있는 승강기 어댑터·플릿 어댑터·오픈 RMF·이동형 영상정보처리기기·플릿 관리 시스템·기술 성숙도·서비스형 로봇은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 이 영역에 걸린 기존 열린 질문 4건(oq-134·oq-138·oq-142·oq-149)은 조사 질문에 넣고 검색 2회를 배분했으나 oq-149 는 부분 답(f24), 나머지는 미해결(f25)로 남긴다. 해결된 열린 질문 없음."
+  }
+}
