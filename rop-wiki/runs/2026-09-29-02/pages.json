@@ -1,0 +1,669 @@
+{
+  "run_id": "2026-09-29-02",
+  "outline": [
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "planned_findings": [
+        "f3",
+        "f18",
+        "f20",
+        "f16(강등)",
+        "self_check 실제 배치 사례 없음"
+      ],
+      "summary": "채팅으로 로봇 구성은 기계가 읽는 능력 목록과 검증 엔진 위에서 성립하며 대수는 산정 엔진과 사람 확인이 필요할 것으로 보인다. [추정][^ref-090][^ref-677][^ref-822][^ref-823]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1000,
+      "planned_findings": [
+        "f1",
+        "f4",
+        "f7",
+        "f10",
+        "f11",
+        "f13",
+        "f18"
+      ],
+      "summary": "연합 형성·어포던스·요구/제공 능력·팩트시트·플릿 설정·구성 코파일럿·차량 소요대수 산정을 정의한다. [사실][^ref-090][^ref-088][^ref-229][^ref-031][^ref-105][^ref-819][^ref-822]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1400,
+      "planned_findings": [
+        "f18",
+        "f19",
+        "f14",
+        "f20"
+      ],
+      "summary": "물류창고(피킹 대수 산정)·제조 공장(벤더 주장)·병원(가상 수술기구 분류 라인) 세 사례를 여섯 항목으로 쓴다. [사실][^ref-822][^ref-759] [추정] 벤더 주장[^ref-823]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1300,
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f8",
+        "f9",
+        "f13",
+        "f15",
+        "f16",
+        "f17",
+        "f24"
+      ],
+      "summary": "언어 모델 팀 구성, 어포던스·온톨로지 접지, 능력 온톨로지 생성, 능력 모델→계획, 제약 해결·기호 검증·디지털 트윈 검토, 되묻기 범위를 정리한다. [사실][^ref-090][^ref-677][^ref-088][^ref-818][^ref-465][^ref-201][^ref-674]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 500,
+      "planned_findings": [
+        "f10",
+        "f7",
+        "f11",
+        "f12"
+      ],
+      "summary": "VDA 5050 팩트시트·IDTA 02020·Open-RMF 플릿 설정이 대화 결과물의 자리이며 등록 데이터는 읽어 오는 입력일 것으로 보인다. [사실][^ref-031][^ref-229][^ref-105] [추정][^ref-031][^ref-105]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 900,
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f8",
+        "f13",
+        "f14",
+        "f15",
+        "f17",
+        "f18",
+        "f21(강등·축소)"
+      ],
+      "summary": "SMART-LLM·CoMuRoS·SayCan 등 12건과 국내 AGM 플랫폼 논문을 한 줄씩 정리한다. [사실][^ref-090][^ref-677][^ref-088][^ref-820]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 600,
+      "planned_findings": [
+        "f22",
+        "f12",
+        "f19"
+      ],
+      "summary": "ROP 는 대화→구조화 구성·적합성 확인·승인을 맡고 로봇별 코드 생성·어포던스 점수화는 연계 대상일 것으로 보인다. [추정][^ref-677][^ref-088][^ref-229]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 900,
+      "planned_findings": [
+        "f7",
+        "f9",
+        "f10",
+        "f12",
+        "f21",
+        "f1",
+        "f2",
+        "f18",
+        "f20",
+        "f16",
+        "f24",
+        "f11",
+        "f23"
+      ],
+      "summary": "5. 로봇 능력·작업 표현을 엔진 짝으로, 4·25·34·35·9·13·20·21·44·47·55 를 연결한다. [추정][^ref-229][^ref-201][^ref-465][^ref-819]"
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 500,
+      "planned_findings": [
+        "open_questions_new 4건"
+      ],
+      "summary": "평가 벤치마크, 국내 팩트시트·AAS 활용, 대수 산정 목적 결정 주체, 부족 능력 설명 형식 네 질문을 둔다."
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 10건 이행. 2차 재검증 수정: 5절 물류창고 사례 표 시작 조건 칸의 첫 등장 '대수 산정'을 용어집 표기·링크로 고침"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"6. 대표 접근법과 기술\" 절(2,293자)을 옮겼다(2차 재검증에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"8. 대표 연구와 자료\" 절(1,679자)을 옮겼다(2차 재검증에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"4. 핵심 개념과 용어\" 절(1,394자)을 옮겼다(2차 재검증에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,016자)을 옮겼다. 2차 재검증 수정: 20. 로봇·제조사 관제 연동 항목과 25. 작업 배정 — MRTA 항목의 태그를 [사실]에서 [추정]으로 되돌림"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(946자)을 옮겼다(2차 재검증에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"3. 왜 중요한가\" 절(894자)을 옮겼다(2차 재검증에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area10-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 10. 채팅으로 로봇 구성 의 \"11. 열린 질문\" 절(661자)을 옮겼다(2차 재검증에서 변경 없음)"
+    }
+  ],
+  "changelog_entry": "2026-09-29 | 10. 채팅으로 로봇 구성 | 3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건, 1차 수정 지시 10건 이행. 2차 재검증 수정 지시 3건 이행(10절 20·25번 항목 태그 [추정]으로 되돌림, 5절 첫 등장 '대수 산정'을 용어집 표기·링크로) | run 2026-09-29-02",
+  "index_updates": {
+    "home_recent": "2026-09-29 — 10. 채팅으로 로봇 구성: 3~11절 신규 작성(seed → draft), 출처 16건, 열린 질문 4건, 현장 유형 사례 3건(물류창고·제조 공장·병원)",
+    "category_recent": "2026-09-29 — 10. 채팅으로 로봇 구성: 3~11절 신규 작성(seed → draft), 출처 16건, 열린 질문 4건, 현장 유형 사례 3건(물류창고·제조 공장·병원). 5. 로봇 능력·작업 표현을 엔진 짝으로 연결. 2차 재검증 수정 지시 이행: 10절 20. 로봇·제조사 관제 연동·25. 작업 배정 — MRTA 항목 태그를 [추정]으로 되돌리고 5절 첫 등장 '대수 산정'에 용어집 링크",
+    "area_recent": "2026-09-29 — 10. 채팅으로 로봇 구성: 3~11절 신규 작성(seed → draft), 출처 16건, 열린 질문 4건, 용어 4건. 2차 재검증 수정 3건 이행 (실행 2026-09-29-02)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "coalition-formation",
+      "term_ko": "연합 형성",
+      "term_en": "Coalition Formation",
+      "definition": "하나의 하위 작업을 맡을 로봇 팀을 각 로봇의 능력과 제약에 맞춰 고르는 다중 로봇 계획 단계이다.",
+      "description": "SMART-LLM 은 자연어 지시를 작업 분해 → 연합 형성 → 작업 배정의 세 단계로 나눠 언어 모델 프롬프트로 수행한다.",
+      "related_areas": [
+        10,
+        25,
+        5
+      ],
+      "sources": [
+        "ref-090"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "affordance",
+      "term_ko": "어포던스",
+      "term_en": "Affordance",
+      "definition": "현재 환경과 로봇 상태에서 어떤 스킬을 실제로 실행할 수 있는지를 나타내는 값으로, 언어 모델의 제안을 실행 가능한 행동에 접지하는 데 쓴다.",
+      "description": "SayCan 은 스킬별 가치 함수로 실행 가능성을 점수화해 언어 모델의 행동 제안과 결합한다. 분류 원문 19장 기준으로 어포던스 점수화 자체는 로봇 자체 지능·제어의 연계 대상이다.",
+      "related_areas": [
+        10,
+        44,
+        5
+      ],
+      "sources": [
+        "ref-088"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "capability-description-submodel",
+      "term_ko": "능력 기술 서브모델",
+      "term_en": "Capability Description Submodel (IDTA 02020)",
+      "definition": "자산관리셸에서 요구 능력과 제공 능력을 속성·제약·스킬과 함께 적어 자원 능력 매칭에 쓰는 IDTA 서브모델 템플릿이다.",
+      "description": "속성 제약(전제·불변·사후 조건)과 전이 제약(순서·병렬)을 두며 1.0 이 첫 공식판이다. 이 실행에서는 공식 저장소 README 를 원문 미열람으로 확인했다.",
+      "related_areas": [
+        10,
+        5,
+        4
+      ],
+      "sources": [
+        "ref-229"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "configuration-copilot",
+      "term_ko": "구성 코파일럿",
+      "term_en": "Configuration Copilot",
+      "definition": "자연어 요구를 제약으로 형식화하고 제약 해결기로 유효한 구성을 찾아 자연어로 돌려주는 대화형 구성 보조 도구이다.",
+      "description": "Valerio 외(2026)는 출력이 구문상 유효하고 지식 베이스와 의미적으로 일치하며 실제 제조 가능해야 한다는 조건을 제시했다. 산업 제품 구성 연구이며 로봇 구성에는 방법 참고로 쓴다.",
+      "related_areas": [
+        10,
+        13,
+        47
+      ],
+      "sources": [
+        "ref-819"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-677",
+      "org": "Borate, S., Rai B, B., Pardeshi, V., & Vadali, M.",
+      "title": "LLM-Based Generalizable Hierarchical Task Planning and Execution for Heterogeneous Robot Teams with Event-Driven Replanning",
+      "published": "2025-11-27",
+      "url": "https://arxiv.org/abs/2511.22354",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "CoMuRoS: 중앙 작업 관리자 언어 모델과 로봇별 언어 모델을 결합한 이기종 로봇 팀 계층 계획·실행 프레임워크. 하드웨어 실험 성공률과 텍스트 벤치마크 결과를 보고한다(2026-06-18 개정판).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-465",
+      "org": "Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A.",
+      "title": "Toward a Method to Generate Capability Ontologies from Natural Language Descriptions",
+      "published": "2024-06-12",
+      "url": "https://arxiv.org/abs/2406.07962",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "few-shot 프롬프트로 자연어 능력 설명에서 능력 온톨로지를 생성하고 구문·모순·환각·누락을 자동 검사하는 방법(2024-10-18 개정판).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-818",
+      "org": "Nakajima, H., & Miura, J. (IROS 2024)",
+      "title": "Combining Ontological Knowledge and Large Language Model for User-Friendly Service Robots",
+      "published": "2024-10-22",
+      "url": "https://arxiv.org/abs/2410.16804",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "서비스 로봇의 '가져다 줘' 작업에서 온톨로지 지식으로 언어 모델의 환각을 줄이고 사용자 확인 필요를 줄이는 결합 방식. 초록만 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-090",
+      "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C.",
+      "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+      "published": "2023-09-18",
+      "url": "https://arxiv.org/abs/2309.10062",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "고수준 지시를 작업 분해·연합 형성·작업 배정으로 다중 로봇 계획으로 바꾸는 언어 모델 프레임워크와 벤치마크(2024-03-23 개정판, IROS 2024 제출).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-105",
+      "org": "Open Robotics (open-rmf)",
+      "title": "fleet_adapter_template — fleet_adapter_template/config.yaml",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "Open-RMF 플릿 어댑터 템플릿 설정 파일. 플릿 한계·프로파일·배터리·작업 유형(task_capabilities)·로봇 목록·충전기 배정 필드를 정의한다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-229",
+      "org": "IDTA (Industrial Digital Twin Association, admin-shell-io GitHub)",
+      "title": "IDTA 02020 Submodel Template Capability Description — README (published/Capability Description/1/0)",
+      "published": null,
+      "url": "https://github.com/admin-shell-io/submodel-templates/tree/main/published/Capability%20Description",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 자산관리셸 능력 기술 서브모델 1.0 공식 저장소 README. 요구·제공 능력, 속성, 속성·전이 제약, 스킬을 모델링해 능력 매칭에 쓴다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-819",
+      "org": "Valerio, D., Kogler, P., Bischof, S., Hubauer, T., & Rangwala, H.",
+      "title": "Neuro-symbolic AI for Industrial Configuration",
+      "published": "2026-09-24",
+      "url": "https://arxiv.org/abs/2609.29947",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "산업 제품 구성에서 언어 모델과 제약 해결을 결합하는 세 통합 전략과 구성 코파일럿의 유효성 조건을 정리한 프리프린트.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-820",
+      "org": "심현재, 무함마드 카짐, Michael Muldoon, 김광기 (제어로봇시스템학회 국내학술대회)",
+      "title": "클라우드 기반 이기종 다중로봇 운용 소프트웨어 플랫폼 연구",
+      "published": "2023-06",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11480590",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "이기종 다중 로봇을 위한 클라우드 기반 AGM 플랫폼(적응형 목표 실행, REST API 로봇 간 통신). DBpia 초록만 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-088",
+      "org": "Ahn, M., Brohan, A., Brown, N., Chebotar, Y. 외 (Google/Everyday Robots)",
+      "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+      "published": "2022-04-04",
+      "url": "https://arxiv.org/abs/2204.01691",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "SayCan: 언어 모델 제안과 스킬 어포던스 가치 함수를 결합해 실행 가능한 행동을 고르는 접지 방법(2022-08-16 개정판).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-201",
+      "org": "Nabizada, H., Wirt, T., Vieira da Silva, L. M., Gehlhoff, F., & Fay, A. (IEEE CASE 2026)",
+      "title": "From Capability Models to Automated Planning: An AAS-Native Approach for Automatic PDDL Generation",
+      "published": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.02167",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "자산관리셸 능력 모델에서 PDDL 계획 문제를 자동 생성해 설비 배치가 요구 공정을 지원하는지 확인하는 방법. 실험실 생산 시스템 검증.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-821",
+      "org": "Figat, M., Mackey, R. M., & Ingham, M. D.",
+      "title": "Ontology-Driven Robotic Specification Synthesis",
+      "published": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05456",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "임무 목표를 온톨로지·확률 시간 페트리 넷·자원 모델링으로 로봇 하드웨어·소프트웨어 사양으로 바꾸는 RSTM2 방법론. 가상 사례 연구.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-822",
+      "org": "Howard, T. L. (California Polytechnic State University, 석사논문)",
+      "title": "A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities",
+      "published": "2026-06",
+      "url": "https://digitalcommons.calpoly.edu/theses/3387/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "작업자 피킹 창고의 협동 자율이동로봇 대수 산정을 시뮬레이션·대기행렬·대리모델로 분석해 비용 기준 최적 로봇 대 작업자 비율을 제시한 학위논문. 초록 페이지 확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-823",
+      "org": "폴라리스3D(Polaris3D)",
+      "title": "AMR 도입 ROI 어떻게 계산할까? 물류 자동화 투자 회수 기간 알아보기",
+      "published": "2026-06-12",
+      "url": "https://polaris3d.com/blog/trends/amr-roi-calculator/",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-29",
+      "summary": "국내 자율이동로봇 업체 블로그. 로봇 대수 산정에 영향을 주는 현장 입력 데이터와 ROI 계산 방식을 설명한다(벤더 자료).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-759",
+      "org": "Ko, T.-H., & Lin, C.-T.",
+      "title": "Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin",
+      "published": "2026-09-24",
+      "url": "https://arxiv.org/abs/2609.29061",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "가상 수술기구 분류 라인 4개에서 자연어 작업 조정 요청을 로컬 언어 모델과 디지털 트윈으로 제안–검증–결정하는 흐름과 시험 사례 18건 결과를 보고한 프리프린트.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-674",
+      "org": "Liu, Z., Fernandez-Ayala, V. N., Wang, T., Qin, Q., Wang, X. V., Dimarogonas, D. V., & Wang, L.",
+      "title": "Agentic Neuro-Symbolic Planning and Commissioning for Human-in-the-Loop Industrial Robotics with Digital Twins",
+      "published": "2026-06-06",
+      "url": "https://arxiv.org/abs/2606.08214",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "언어 모델 해석과 결정론적 기호 검증·디지털 트윈 검토를 결합한 사람 참여 산업 로봇 계획·시운전 프레임워크. 기준선 10종과 비교.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "VDA 5050 공식 저장소 main 브랜치의 명세 원문(3.0.0). 이번 실행에서는 팩트시트 토픽의 구성과 typeSpecification·loadSpecification 필드를 확인했다(필드 이름은 3.0.0 명칭으로 정정).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "대화로 로봇 종류·대수·장비·역할을 정하고 수행 가능 여부를 판정하는 기능을 평가할 공개 벤치마크나 지표(적합성 판정 정확도, 질문 횟수, 구성 완료 시간)가 있는가?",
+      "areas": [
+        10,
+        13
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 현장에서 VDA 5050 팩트시트나 자산관리셸 능력 기술을 로봇 등록 데이터로 실제 쓰는 사례가 있으며, 채팅 로봇 구성이 그 데이터를 읽어 되묻기를 줄일 수 있는가?",
+      "areas": [
+        10,
+        4,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "채팅으로 정한 로봇 대수를 시뮬레이션 기반 대수 산정과 어떻게 연결하고, 처리량 최대화와 비용 최소화 가운데 어느 목적을 누가 정하는가?",
+      "areas": [
+        10,
+        35,
+        3
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 구성이 시나리오 요구를 채우지 못할 때 부족한 능력·대수를 사용자에게 어떤 형식(요구 능력별 매칭 결과, 불능 제약 집합 등)으로 설명해야 이해와 수정이 쉬운가?",
+      "areas": [
+        10,
+        5
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "물류창고",
+      "item": "시작 조건",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "작업 대상",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "제약",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "시작 조건",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "제약",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "완료·인계",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시",
+      "title": "10. 채팅으로 로봇 구성"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 적용 사례: 실외·상업 시설·가정 현장에서 대화형(또는 구조화 입력) 로봇 구성·대수 결정 사례가 브리프에 없어 세 현장 유형만 썼다. 다음 조사에서 해당 현장 유형의 근거를 찾아야 한다.",
+    "3절·11절: 대화만으로 로봇 구성(종류·대수·장비·위치·역할)을 정해 실제 현장에 배치한 사례가 확인되지 않았다(가상 라인·실험실·시뮬레이션 사례뿐). 벤더 제품 발표를 포함해 실제 배치 사례를 찾아야 한다.",
+    "6절: SMART-LLM 이 로봇 유형별 스킬 집합을 프롬프트에 주는 구체 형식(본문)이 초록에서 확인되지 않아 능력 목록의 형식 논의를 [추정]으로만 썼다. 본문 확인이 필요하다.",
+    "8절·10절: 심현재 외(2023) AGM 플랫폼의 로봇 등록·능력 정보 처리·작업 배정 메커니즘은 초록 범위 밖이라 본문에서 뺐다. 본문 열람으로 확인하면 4. 이기종 로봇 등록 연결의 근거가 된다.",
+    "8절: 국내 언어 모델 기반 로봇 구성 대화 연구가 검색에서 확인되지 않았다(국내 자료는 이기종 플랫폼 논문과 벤더 대수 산정 설명뿐). 국내 학회·기관 자료를 추가로 찾아야 한다.",
+    "7절·8절: 출처 상한으로 넣지 못한 REBEL(다중 사람–로봇 초기 작업 배정), IDTA 02047 AGV 기술 데이터 서브모델(이 영역의 로봇 종류·장비 필드 근거), LLM 다중 로봇 서베이(arXiv 2502.03814)를 다음 실행에서 다룰 수 있다.",
+    "6절: 열지 못한 ACMG(자연어→CSP 모델 생성)와 Järvenpää 외 능력 매칭 의미 규칙 논문, Springer 유통센터 AMR 플릿 규모 산정 시뮬레이션 장은 접근 가능한 경로로 재시도할 수 있다.",
+    "10절: 20. 로봇·제조사 관제 연동·25. 작업 배정 — MRTA 연결 문장을 [사실]로 쓰려면 대화 결과가 플릿 설정에 실제로 기록된 사례와 언어 모델 연합 형성이 MRTA 배정 문제로 정식화된다는 출처가 필요하다. 현재는 [추정]으로 둔다."
+  ],
+  "fixes_applied": [
+    "f10 팩트시트 필드 이름 정정 — 4절 용어 항목과 7절 표를 VDA 5050 3.0.0 명칭(mobileRobotGeometry, mobileRobotConfiguration, mobileRobotKinematics, mobileRobotClass, maximumLoadMass)으로 쓰고 typeSpecification 에 seriesDescription·supportedZones 를 더했으며 [사실] 유지",
+    "f14 '병원 멸균공급실을 본뜬' 삭제 — 5절·8절에서 '가상의 수술기구 분류 라인 4개'로만 쓰고, 5절 병원 사례의 서술 단락에 출처가 현장 유형을 명시하지 않으며 수술기구 분류 라인이라는 점에서 병원·의료로 분류했고 물리 로봇이 아닌 가상 라인임을 밝힘",
+    "f16 강등 — 3절과 6절의 해당 문장을 [추정]으로 쓰고 '세 연구가 언어 모델을 해석 단계에 한정하고 제약 해결·기호 검증·시뮬레이션 검증을 거치게 한다는 점은 공통이며, 사람의 최종 검토는 Ko·Lin 과 Liu 외 두 연구에서 확인된다'로 고침",
+    "f21 범위 축소 — 8절 항목과 10절 4. 이기종 로봇 등록 연결에서 '이기종 다중 로봇을 위한 클라우드 기반 AGM 플랫폼으로 적응형 목표 실행 방식과 REST API 로 여러 로봇이 통신한다'까지만 [사실]로 쓰고, 등록·능력 정보·작업 배정 메커니즘 언급은 본문에서 삭제(additional_research_requests 에 본문 확인 요청)",
+    "f23 표현 정정 — 10절 44·47 연결 항목을 '원문 교차 규칙이 매뉴얼 해석의 적용 대상으로 드는 4. 이기종 로봇 등록(및 55. 현장 조사·설치·시운전)과, 능력 온톨로지 생성이라는 내용상 짝인 5. 로봇 능력·작업 표현'으로 고치고 55 를 related_areas 에 추가",
+    "f19 벤더 주장 병기 — 5절 제조 공장 사례의 여섯 항목과 서술, 9절 시설·설비 제어 행을 모두 '[추정] 벤더 주장[^ref-823]'으로 쓰고, 5절 서술에 출처가 국내 자율이동로봇 업체 폴라리스3D 블로그(2026-06-12)이며 독립 확인이 없음을 밝힘",
+    "ref-229 원문 미열람 표시 — 13절 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-229 에 source_unopened: true 와 summary 첫머리 '원문 미열람.'을 넣었으며 7절 표의 출처 칸에도 원문 미열람을 표기",
+    "5절 현장 유형 세 개 분리 — 물류창고(f18, 피킹 단계를 사례 제목에 명시)·제조 공장(f19, 벤더 주장 병기)·병원(f14, 가상 라인·현장 유형 미명시 병기)으로 사례 묶음을 나눠 쓰고 근거 있는 항목만 채웠으며(물류창고·제조 공장의 완료·인계는 해당 없음) 실외·상업 시설·가정 사례가 없음을 절 끝에 밝혔고, site_matrix_updates 의 site_type 을 사례의 현장 유형과 같게 냄(해당 없음 칸은 제외)",
+    "용어 — 3절 첫 등장에서 '차량 소요대수 산정(Fleet Sizing)' 표기와 ../../glossary/fleet-sizing.md 링크를 쓰고 4절·6절에서도 같은 표기를 유지했으며, glossary_updates 에 연합 형성·어포던스·능력 기술 서브모델·구성 코파일럿 4건을 new 로 냄",
+    "ROP 적용 결론 문체 — f3·f9·f12·f20·f22·f24 를 쓴 3·5·6·7·9·10절 문장을 모두 [추정]과 '~할 것으로 보인다'로 쓰고, 3절 끝에 대화만으로 로봇 구성을 정한 실제 현장 배치 사례가 확인되지 않았고 가상 라인·실험실·시뮬레이션 사례뿐이라는 문장을 둠",
+    "2차: 10절 20. 로봇·제조사 관제 연동 항목 태그 강등 — 분리 페이지 docs/topics/2026/2026-09-29-area10-s10.md 3절의 'Open-RMF 플릿 설정이 구성 결과가 들어갈 자리다' 문장을 [추정][^ref-105]로 고침. 세부영역 페이지 10절 원 절에는 이 항목이 남아 있지 않아(요약은 5. 로봇 능력·작업 표현 항목뿐) 고칠 문장이 없음",
+    "2차: 10절 25. 작업 배정 — MRTA 항목 태그 강등 — 같은 분리 페이지 3절의 '언어 모델의 연합 형성과 역할 배정은 이 영역의 배정 문제를 대화에서 부르는 것이다' 문장을 [추정][^ref-090][^ref-677]로 고침. 세부영역 페이지 원 절에는 이 항목이 없음",
+    "2차: 5절 물류창고 사례 표 시작 조건 칸 — 세부영역 페이지 본문 첫 등장 '대수 산정'을 '[차량 소요대수 산정(Fleet Sizing)](../../glossary/fleet-sizing.md)' 표기로 고쳤고, 같은 페이지의 이후 '대수 산정'은 그대로 둠"
+  ]
+}

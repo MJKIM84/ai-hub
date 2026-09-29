@@ -28,6 +28,13 @@ version: 1
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 대표 접근법과 기술](2026/2026-09-29-area08-s6.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area08-s7.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |
 | 2026-09-29 | [8. 채팅으로 맵 작성 — 대표 연구와 자료](2026/2026-09-29-area08-s8.md) | [8. 채팅으로 맵 작성](../categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 다른 연구영역과의 연결](2026/2026-09-29-area10-s10.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 열린 질문](2026/2026-09-29-area10-s11.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 왜 중요한가](2026/2026-09-29-area10-s3.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 핵심 개념과 용어](2026/2026-09-29-area10-s4.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 대표 접근법과 기술](2026/2026-09-29-area10-s6.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area10-s7.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
+| 2026-09-29 | [10. 채팅으로 로봇 구성 — 대표 연구와 자료](2026/2026-09-29-area10-s8.md) | [10. 채팅으로 로봇 구성](../categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | published | medium | — |
 | 2026-09-26 | [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | — |
 | 2026-09-26 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [23. 업무 시스템 연동 — 열린 질문](2026/2026-09-25-area01-s11.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |

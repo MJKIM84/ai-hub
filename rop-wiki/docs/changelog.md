@@ -20,6 +20,25 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-02 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md](categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | 3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 10건 이행. 2차 재검증 수정: 5절 물류창고 사례 표 시작 조건 칸의 첫 등장 '대수 산정'을 용어집 표기·링크로 고침 |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s6.md](topics/2026/2026-09-29-area10-s6.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "6. 대표 접근법과 기술" 절(2,293자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s8.md](topics/2026/2026-09-29-area10-s8.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "8. 대표 연구와 자료" 절(1,679자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s4.md](topics/2026/2026-09-29-area10-s4.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "4. 핵심 개념과 용어" 절(1,394자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s10.md](topics/2026/2026-09-29-area10-s10.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,016자)을 옮겼다. 2차 재검증 수정: 20. 로봇·제조사 관제 연동 항목과 25. 작업 배정 — MRTA 항목의 태그를 [사실]에서 [추정]으로 되돌림 |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s7.md](topics/2026/2026-09-29-area10-s7.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "7. 관련 표준·프레임워크·오픈소스" 절(946자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s3.md](topics/2026/2026-09-29-area10-s3.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "3. 왜 중요한가" 절(894자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s11.md](topics/2026/2026-09-29-area10-s11.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "11. 열린 질문" 절(661자)을 옮겼다(2차 재검증에서 변경 없음) |
+| 2026-09-29-02 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md](categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | 10. 채팅으로 로봇 구성: 3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건, 1차 수정 지시 10건 이행. 2차 재검증 수정 지시 3건 이행(10절 20·25번 항목 태그 [추정]으로 되돌림, 5절 첫 등장 '대수 산정'을 용어집 표기·링크로) |
+| 2026-09-29-02 | 생성 | [docs/references/ref-818.md](references/ref-818.md) | 참고문헌 ref-818 등록: Combining Ontological Knowledge and Large Language Model for… |
+| 2026-09-29-02 | 생성 | [docs/references/ref-819.md](references/ref-819.md) | 참고문헌 ref-819 등록: Neuro-symbolic AI for Industrial Configuration |
+| 2026-09-29-02 | 생성 | [docs/references/ref-820.md](references/ref-820.md) | 참고문헌 ref-820 등록: 클라우드 기반 이기종 다중로봇 운용 소프트웨어 플랫폼 연구 |
+| 2026-09-29-02 | 생성 | [docs/references/ref-821.md](references/ref-821.md) | 참고문헌 ref-821 등록: Ontology-Driven Robotic Specification Synthesis |
+| 2026-09-29-02 | 생성 | [docs/references/ref-822.md](references/ref-822.md) | 참고문헌 ref-822 등록: A Simulation, Analytical, and Machine-Learning Approach for… |
+| 2026-09-29-02 | 생성 | [docs/references/ref-823.md](references/ref-823.md) | 참고문헌 ref-823 등록: AMR 도입 ROI 어떻게 계산할까? 물류 자동화 투자 회수 기간 알아보기 |
+| 2026-09-29-02 | 생성 | [docs/glossary/coalition-formation.md](glossary/coalition-formation.md) | 용어집 항목 연합 형성 |
+| 2026-09-29-02 | 생성 | [docs/glossary/affordance.md](glossary/affordance.md) | 용어집 항목 어포던스 |
+| 2026-09-29-02 | 생성 | [docs/glossary/capability-description-submodel.md](glossary/capability-description-submodel.md) | 용어집 항목 능력 기술 서브모델 |
+| 2026-09-29-02 | 생성 | [docs/glossary/configuration-copilot.md](glossary/configuration-copilot.md) | 용어집 항목 구성 코파일럿 |
 | 2026-09-29-01 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-map-authoring.md](categories/chat-based-configuration-and-operation/chat-map-authoring.md) | 3~11절 신규 작성(seed → draft), 출처 15건, 열린 질문 3건, 현장 유형 사례 3건(병원·제조 공장·실외). 2차 재검증 수정 지시 이행: 10절 14. 도면·BIM에서 지도 만들기 항목을 사실 문장과 추정 문장으로 나눔(태그 상향 해소) |
 | 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s6.md](topics/2026/2026-09-29-area08-s6.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "6. 대표 접근법과 기술" 절(1,767자)을 옮겼다(2차 재검증에서 변경 없음) |
 | 2026-09-29-01 | 생성 | [docs/topics/2026/2026-09-29-area08-s4.md](topics/2026/2026-09-29-area08-s4.md) | 자동 분리: 8. 채팅으로 맵 작성 의 "4. 핵심 개념과 용어" 절(1,091자)을 옮겼다(2차 재검증에서 변경 없음) |
