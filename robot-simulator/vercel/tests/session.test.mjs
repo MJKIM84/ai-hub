@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { identity, newIdentity, ownerHash, settings, slotNames, allowedOrigin, COOKIE } from '../lib/session-policy.mjs';
 import { launch } from '../lib/runtime.mjs';
 import handler from '../api/session.mjs';
-const config = {daily:2, concurrent:2, minutes:30, snapshot:'snapshot-test'};
+const config = {daily:2, concurrent:2, minutes:30, snapshot:'snapshot-test',access:{secret:'a'.repeat(64)}};
 function fake(overrides={}) {
   return {find:async()=>({items:[]}),load:async x=>x,create:async x=>({...x,stop:async()=>{}}),start:async x=>({url:x.name}),...overrides};
 }
@@ -26,7 +26,7 @@ test('unique slots roll over on UTC day and stay bounded',()=>{
 });
 test('an existing session is reused without creating or rebooting it',async()=>{
   const result=await launch('a',config,fake({find:async()=>({items:[],item:{name:'mine'}}),wait:async()=>({url:'mine'}),create:async()=>assert.fail(),start:async()=>assert.fail()}));
-  assert.equal(result.url,'mine');
+  assert.ok(result.url.startsWith('mine/access/start#entry='));
 });
 test('active capacity does not allocate another machine',async()=>{
   const result=await launch('a',config,fake({find:async()=>({items:[{status:'running'},{status:'pending'}]}),create:async()=>assert.fail()}));

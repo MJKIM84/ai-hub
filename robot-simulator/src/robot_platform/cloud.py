@@ -1,5 +1,6 @@
 """Single-process, isolated visitor entry point for a TLS-terminating host."""
 import os
+import re
 from urllib.parse import urlsplit
 
 from .visitor_api import VisitorRegistry, create_personal_app
@@ -40,7 +41,14 @@ def create_cloud_app():
         max_visitors=_bounded_int('ROBOT_MAX_VISITORS', 2, 1, 8),
         initial_template='multifloor-cargo',
     )
-    return create_personal_app(registry=registry, origins=origins)
+    app = create_personal_app(registry=registry, origins=origins)
+    if os.environ.get('ROBOT_ENTRY_REQUIRED') == '1':
+        from .entry_gate import EntryGate
+        secret = os.environ.get('ROBOT_ENTRY_SECRET', '')
+        if not re.fullmatch(r'[a-f0-9]{64}', secret):
+            raise ValueError('A runtime entry signing key is required.')
+        app.add_middleware(EntryGate, secret=secret, origins=origins, ttl=registry.ttl)
+    return app
 
 
 def main():
