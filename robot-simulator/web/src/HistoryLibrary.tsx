@@ -65,7 +65,7 @@ export default function HistoryLibrary({ catalog, saved, currentProjectId, curre
   useEffect(() => { void refresh(); }, [refresh]);
   const matches = (value: string) => value.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase());
   const projects = saved.filter((row) => matches(`${row.name} ${row.versions?.map((v) => `${v.name} ${v.map_name}`).join(" ") ?? ""}`));
-  const examples = catalog.templates.filter((row) => matches(`${row.name} ${row.group ?? ""}`));
+  const examples = catalog.templates.filter((row) => matches(`${row.name} ${row.group ?? ""} ${row.description ?? ""}`));
   const visibleDrawings = drawings.filter((row) => matches(row.title));
   const groups = useMemo(() => {
     const grouped = new Map<string, WorkPlan[]>();
@@ -115,7 +115,8 @@ export default function HistoryLibrary({ catalog, saved, currentProjectId, curre
     {shown("examples") && examples.length > 0 && <div className="history-library-section">
       <div className="history-library-section-title"><h3>샘플·예제</h3><span>{examples.length}개 · 원본 구성 보존</span></div>
       {examples.map((row) => <div className="history-library-row" key={row.id}><div><strong>{row.name}</strong>
-        <small>{row.group ?? "예제"} · 기존에 저장된 시작 구성</small></div>
+        <small>{row.group ?? "예제"} · 기존에 저장된 시작 구성</small>
+        {row.description && <small>{row.description}</small>}</div>
         <div className="history-library-actions"><button disabled={busy} onClick={() => onLoadExample(row.id, false)}>초안으로 열기</button>
           <button className="primary" disabled={busy || running} onClick={() => onLoadExample(row.id, true)}>실행 준비 <ArrowRight size={14} /></button></div></div>)}
     </div>}
