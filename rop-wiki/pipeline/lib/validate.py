@@ -335,6 +335,9 @@ def rebase_links(text: str, from_rel: str, to_rel: str) -> str:
     return _ANCHOR_ONLY_LINK.sub(lambda m: f"[{m.group(1)}]({paths.rel_link(to_rel, from_rel)}{m.group(2)})", out)
 
 
+_SPLIT_POINTER = re.compile(r"^자세한 내용은 주제 페이지 \[[^\]\n]+\]\([^)\n]+\)에 있다\.[ \t]*\n?", re.M)
+
+
 def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: list[dict], run_id: str, day: str,
                          topic_template_h2: list[str] | None = None) -> tuple[str, list[dict]]:
     """세부영역 페이지의 3~11절 본문이 limit 을 넘으면, 큰 절부터(5·9절 제외) 주제 페이지로 옮기고 원 절에는
@@ -364,7 +367,9 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
         idx = next(i for i, (t, _) in enumerate(parts) if section_no(t) == no)
         title, text = parts[idx]
         head, _, sec_body = text.partition("\n")
-        sec_body = sec_body.strip("\n")
+        # 이미 분리된 절을 재작성 뒤 다시 분리하면 앞선 분리가 남긴 "자세한 내용은 주제 페이지 …" 줄이 옮겨 가 주제 페이지가
+        # 자기 자신을 가리킨다(실행 2026-09-29-12, 62번 4절). 그 줄은 옮기지 않는다
+        sec_body = _SPLIT_POINTER.sub("", sec_body).strip("\n")
         sec_name = re.sub(r"^\d+\.\s*", "", title)
         sec_name_short = re.sub(r"\s*\(.*\)\s*$", "", sec_name)
         slug = f"{day}-area{area_no:02d}-s{no}"

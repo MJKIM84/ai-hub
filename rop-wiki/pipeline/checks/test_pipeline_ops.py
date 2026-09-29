@@ -118,6 +118,16 @@ class TestValidate(unittest.TestCase):
                       topics[0]["content"])
         self.assertEqual(V.check_page(paths.docs_rel(topics[0]["path"]), topics[0]["content"]), [])
 
+    def test_resplit_drops_pointer_line(self):
+        """이미 분리된 절에 남은 '자세한 내용은 주제 페이지 …' 줄은 다시 분리할 때 주제 페이지로 옮기지 않는다."""
+        long = ("요약 문장이다. [사실][^ref-003]\n\n자세한 내용은 주제 페이지 [17. x — 대표 접근법과 기술](../../topics/2026/2026-09-25-area17-s6.md)에 있다.\n\n"
+                + "\n\n".join(f"긴 설명 문장 {i}번이다. [사실][^ref-003]" for i in range(120)))
+        _, topics = V.split_oversized_area(paths.area_repo_path(AREA_NO), _area_page({"6. 대표 접근법과 기술": long}), 4000, [],
+                                           "2026-09-25-99", "2026-09-26")
+        self.assertEqual(len(topics), 1)
+        self.assertNotIn("자세한 내용은 주제 페이지 [17. x", topics[0]["content"])
+        self.assertIn("긴 설명 문장 119번이다", topics[0]["content"])
+
     def test_rebase_links(self):
         src, dst = "categories/robot-ontology/capability-model.md", "topics/2026/x.md"
         self.assertEqual(V.rebase_links("[a](index.md) [b](../integration/index.md#x) [c](https://e.org/p.md) [d](#sec)", src, dst),
