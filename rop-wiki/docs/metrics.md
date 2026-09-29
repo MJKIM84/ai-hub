@@ -25,7 +25,7 @@ version: 1
 | [A. 기획·사업](categories/planning-and-business/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
-| [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
+| [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 1 | 0 | 0 | 14 | 0 | 0 | 15 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
@@ -74,7 +74,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | seed | — | 2026-09-28 | 1 |
+| [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | 2026-09-30 | 2 |
 | [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | published | medium | 2026-09-25 | 2 |
 | [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md) | seed | — | 2026-09-28 | 1 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 107회 중 최종 통과 105회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 105, None 2
-- 2차 검증 판정: 통과 105, None 2
+- 실행 108회 중 최종 통과 106회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 106, None 2
+- 2차 검증 판정: 통과 106, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 441 |
+| 논문 | 443 |
 | 오픈소스 문서 | 194 |
 | 표준 | 158 |
-| 기사 | 74 |
-| 정부·연구기관 | 74 |
+| 기사 | 75 |
+| 정부·연구기관 | 75 |
 | 벤더 문서 | 53 |
 | 업계 보고서 | 15 |
 
-신뢰도: medium 764건, high 170건, low 75건
+신뢰도: medium 766건, high 171건, low 76건
 
 ### 현장 유형 매트릭스 채움률
 
-- 31/119 칸 (26%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 33/119 칸 (28%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

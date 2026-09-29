@@ -215,8 +215,12 @@ version: 1
 | oq-193 | 건설 현장처럼 공간이 날마다 바뀌는 곳에서 점검 로봇의 지도와 BIM 을 어떤 주기·방식으로 맞추며, 드론과 지상 로봇을 한 계층에서 함께 운영한 국내 공개 사례가 있는가? | [67. 기타 현장](categories/site-type-applications/other-sites.md)<br>[14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md) | 2026-09-30 | 2026-09-30-02 | 열림 | — |
 | oq-194 | 플랜트·변전소 점검 로봇이 얻은 계기값·열화상·이상 판정은 설비 보전 시스템의 작업 지시·점검 기록으로 어떤 형식과 승인 절차를 거쳐 돌아가는가? | [67. 기타 현장](categories/site-type-applications/other-sites.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-09-30 | 2026-09-30-02 | 열림 | — |
 | oq-195 | SiLA 로봇·이동 로봇 작업반은 실험실 이동 로봇의 능력과 작업 인계를 어떻게 표현하려 하며, 결과물이 공개됐는가? | [67. 기타 현장](categories/site-type-applications/other-sites.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md)<br>[5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-30 | 2026-09-30-02 | 열림 | — |
+| oq-196 | Raster-to-Vector 의 약 90% 정밀도·재현율 같은 보고된 평면도 인식 성능이 병원·공장·물류창고 같은 비주거 시설 도면에서도 확인됐는가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-09-30 | 2026-09-30-03 | 열림 | — |
+| oq-197 | AI Hub 건축 도면 데이터의 라벨(구조 8종·공간 12종·객체 5종)에 충전 위치처럼 로봇 운영에 필요한 클래스가 들어 있는가, 비주거 건물 도면은 얼마나 포함되는가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 2026-09-30 | 2026-09-30-03 | 열림 | — |
+| oq-198 | 도면과 로봇 지도의 정합에 쓰는 대응점 수(Open-RMF 4개 이상 권장, 벤더 주장 3개 이상)와 허용 오차를 정한 공통 기준이나 검수 절차가 있는가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md)<br>[55. 현장 조사·설치·시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | 2026-09-30 | 2026-09-30-03 | 열림 | — |
+| oq-199 | 국내 공공건축 BIM 적용 확대로 만들어지는 IFC 모델을 준공 뒤 유지관리 단계에서 로봇 운영 지도로 넘겨받는 절차나 요구 수준(공간·문·승강기 정보)이 정해져 있는가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-30 | 2026-09-30-03 | 열림 | — |
 
-상태별 건수: 열림 194건, 조사 중 1건
+상태별 건수: 열림 198건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

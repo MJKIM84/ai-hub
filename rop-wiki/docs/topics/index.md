@@ -21,6 +21,12 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결](2026/2026-09-30-area14-s10.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 열린 질문](2026/2026-09-30-area14-s11.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 왜 중요한가](2026/2026-09-30-area14-s3.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 핵심 개념과 용어](2026/2026-09-30-area14-s4.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 접근법과 기술](2026/2026-09-30-area14-s6.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 연구와 자료](2026/2026-09-30-area14-s8.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

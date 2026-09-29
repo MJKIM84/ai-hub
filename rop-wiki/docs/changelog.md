@@ -20,6 +20,21 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-03 | 갱신 | [docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합, 책임 경계, 연결 10개 영역, 열린 질문 6건), 13절 각주 15건. 2차 수정: 3절 f20·f21 문장과 9절 f24 문장에 태그·각주 추가, 4절 설계–준공 편차 설명의 [의견] 각주를 떼고 용어 사용 설명으로 바꿈, 8절 BIM-SLAM 항목에 '연계 대상' 표시 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s6.md](topics/2026/2026-09-30-area14-s6.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "6. 대표 접근법과 기술" 절(1,924자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s4.md](topics/2026/2026-09-30-area14-s4.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "4. 핵심 개념과 용어" 절(1,101자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s8.md](topics/2026/2026-09-30-area14-s8.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "8. 대표 연구와 자료" 절(1,017자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s11.md](topics/2026/2026-09-30-area14-s11.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "11. 열린 질문" 절(880자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s10.md](topics/2026/2026-09-30-area14-s10.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(825자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s3.md](topics/2026/2026-09-30-area14-s3.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "3. 왜 중요한가" 절(748자)을 옮겼다 |
+| 2026-09-30-03 | 요약 | [docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 14. 도면·BIM에서 지도 만들기: 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합), 1차 조건부 승인 수정 13건과 2차 수정 4건 이행 |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1010.md](references/ref-1010.md) | 참고문헌 ref-1010 등록: Raster-to-Vector: Revisiting Floorplan Transformation |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1011.md](references/ref-1011.md) | 참고문헌 ref-1011 등록: Connecting Semantic Building Information Models and Robotics… |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1012.md](references/ref-1012.md) | 참고문헌 ref-1012 등록: 건축 도면 데이터 |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1013.md](references/ref-1013.md) | 참고문헌 ref-1013 등록: "설계부터 100% 도입" 건설산업 BIM 활성화 로드맵 공개 |
+| 2026-09-30-03 | 생성 | [docs/glossary/level-alignment-fiducial.md](glossary/level-alignment-fiducial.md) | 용어집 항목 층 정렬 기준점 |
+| 2026-09-30-03 | 생성 | [docs/glossary/space-boundary.md](glossary/space-boundary.md) | 용어집 항목 공간 경계 |
+| 2026-09-30-03 | 생성 | [docs/glossary/as-planned-vs-as-built-deviation.md](glossary/as-planned-vs-as-built-deviation.md) | 용어집 항목 설계–준공 편차 |
 | 2026-09-30-02 | 갱신 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 접근법 6가지, 표준 5건, 책임 경계, 연결 영역 17개, 열린 질문 5건. 2차 수정: 출처 5건 제목 정정, 9절 태그 추가, BIM·라이다·RMF 첫 등장 풀어 쓰기. 2차 재검증 수정: 9절 RMF 풀이를 Robotics Middleware Framework 로 정정 |
 | 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s6.md](topics/2026/2026-09-30-area67-s6.md) | 자동 분리: 67. 기타 현장 의 "6. 대표 접근법과 기술" 절(1,209자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
 | 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s7.md](topics/2026/2026-09-30-area67-s7.md) | 자동 분리: 67. 기타 현장 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,102자)을 옮겼다. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |
