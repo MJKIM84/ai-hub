@@ -16,6 +16,41 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-09-30
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-09-30-01 | 갱신 | [docs/categories/site-type-applications/outdoor.md](categories/site-type-applications/outdoor.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건. 2차 수정: 4절 도입 문장을 태그 없는 안내문으로 교체, 5절 세 번째 사례 수행 자원의 '허가' 삭제, 9절 GPS·RTK·PDD 첫 등장 풀어 쓰기 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s7.md](topics/2026/2026-09-30-area66-s7.md) | 자동 분리: 66. 실외 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,761자)을 옮겼다. 2차 수정 원칙에 맞춰 표의 GPS 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s6.md](topics/2026/2026-09-30-area66-s6.md) | 자동 분리: 66. 실외 의 "6. 대표 접근법과 기술" 절(1,280자)을 옮겼다. 2차 수정 지시로 위치 추정 소절의 GPS·RTK·UTM 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s8.md](topics/2026/2026-09-30-area66-s8.md) | 자동 분리: 66. 실외 의 "8. 대표 연구와 자료" 절(1,110자)을 옮겼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s4.md](topics/2026/2026-09-30-area66-s4.md) | 자동 분리: 66. 실외 의 "4. 핵심 개념과 용어" 절(909자)을 옮겼다. 2차 수정 지시로 세 줄 요약·본문 첫 문장을 태그·각주 없는 안내 문장으로 바꿨다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s11.md](topics/2026/2026-09-30-area66-s11.md) | 자동 분리: 66. 실외 의 "11. 열린 질문" 절(816자)을 옮겼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s10.md](topics/2026/2026-09-30-area66-s10.md) | 자동 분리: 66. 실외 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(780자)을 옮겼다. 2차 수정 원칙에 맡춰 UTM 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s3.md](topics/2026/2026-09-30-area66-s3.md) | 자동 분리: 66. 실외 의 "3. 왜 중요한가" 절(683자)을 옮겼다. 2차 수정 지시로 넷째 단락의 일반화 문장에 [추정]과 ref-987 각주를 붙였다 |
+| 2026-09-30-01 | 요약 | [docs/categories/site-type-applications/outdoor.md](categories/site-type-applications/outdoor.md) | 66. 실외: 섹션 3~11 신규 작성(seed → draft): 실외 사례 3건 여섯 항목 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건, 1차 수정 지시 16건·2차 수정 지시 4건 이행 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-980.md](references/ref-980.md) | 참고문헌 ref-980 등록: 실외이동로봇 운행안전인증 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-981.md](references/ref-981.md) | 참고문헌 ref-981 등록: Starship steers its delivery robots off college campuses and… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-982.md](references/ref-982.md) | 참고문헌 ref-982 등록: Robust Route Planning for Sidewalk Delivery Robots |
+| 2026-09-30-01 | 생성 | [docs/references/ref-983.md](references/ref-983.md) | 참고문헌 ref-983 등록: 배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-984.md](references/ref-984.md) | 참고문헌 ref-984 등록: 뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-985.md](references/ref-985.md) | 참고문헌 ref-985 등록: 令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について |
+| 2026-09-30-01 | 생성 | [docs/references/ref-986.md](references/ref-986.md) | 참고문헌 ref-986 등록: Why delivery robots face a regulatory ‘nightmare’ |
+| 2026-09-30-01 | 생성 | [docs/references/ref-987.md](references/ref-987.md) | 참고문헌 ref-987 등록: Pitt pauses testing of Starship robots due to safety concern… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-988.md](references/ref-988.md) | 참고문헌 ref-988 등록: Navigating Using GPS Localization — Nav2 documentation |
+| 2026-09-30-01 | 생성 | [docs/references/ref-989.md](references/ref-989.md) | 참고문헌 ref-989 등록: ISO-4448 Update Winter 2024 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-990.md](references/ref-990.md) | 참고문헌 ref-990 등록: Observed sidewalk autonomous delivery robot interactions wit… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-991.md](references/ref-991.md) | 참고문헌 ref-991 등록: ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-992.md](references/ref-992.md) | 참고문헌 ref-992 등록: 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-993.md](references/ref-993.md) | 참고문헌 ref-993 등록: With a Little Help of Humans. An Exploratory Study of Delive… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-994.md](references/ref-994.md) | 참고문헌 ref-994 등록: ISO/TR 4448-1:2024 Intelligent transport systems — Public-ar… |
+| 2026-09-30-01 | 생성 | [docs/glossary/public-area-mobile-robot.md](glossary/public-area-mobile-robot.md) | 용어집 항목 공공 영역 이동로봇 |
+| 2026-09-30-01 | 생성 | [docs/glossary/personal-delivery-device.md](glossary/personal-delivery-device.md) | 용어집 항목 개인 배송 장치 |
+| 2026-09-30-01 | 생성 | [docs/glossary/remote-controlled-small-vehicle.md](glossary/remote-controlled-small-vehicle.md) | 용어집 항목 원격 조작형 소형차 |
+| 2026-09-30-01 | 생성 | [docs/glossary/post-encroachment-time.md](glossary/post-encroachment-time.md) | 용어집 항목 침범 후 시간 |
+| 2026-09-30-01 | 갱신 | [docs/glossary/outdoor-mobile-robot-operational-safety-certification.md](glossary/outdoor-mobile-robot-operational-safety-certification.md) | 용어집 항목 실외이동로봇 운행안전인증 |
+| 2026-09-30-01 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+
 ### 2026-09-29
 
 | 실행 id | 동작 | 페이지 | 요약 |

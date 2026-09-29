@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-09-29
+기준일: 2026-09-30
 
 ### 영역별 페이지 상태 분포
 
@@ -38,7 +38,7 @@ version: 1
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 2 | 0 | 0 | 40 | 0 | 0 | 42 |
+| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 1 | 0 | 0 | 48 | 0 | 0 | 49 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -191,14 +191,14 @@ version: 1
 | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | published | medium | 2026-09-29 | 2 |
 | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md) | published | medium | 2026-09-29 | 2 |
 | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | published | medium | 2026-09-29 | 2 |
-| [66. 실외](categories/site-type-applications/outdoor.md) | seed | — | 2026-09-28 | 1 |
+| [66. 실외](categories/site-type-applications/outdoor.md) | published | medium | 2026-09-30 | 2 |
 | [67. 기타 현장](categories/site-type-applications/other-sites.md) | seed | — | 2026-09-28 | 1 |
 
 ### 검증 통과율
 
-- 실행 105회 중 최종 통과 103회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 103, None 2
-- 2차 검증 판정: 통과 103, None 2
+- 실행 106회 중 최종 통과 104회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 104, None 2
+- 2차 검증 판정: 통과 104, None 2
 
 ### 반려·보류 건수
 
@@ -209,27 +209,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 437 |
-| 오픈소스 문서 | 193 |
-| 표준 | 155 |
-| 정부·연구기관 | 71 |
-| 기사 | 58 |
+| 논문 | 440 |
+| 오픈소스 문서 | 194 |
+| 표준 | 156 |
+| 정부·연구기관 | 74 |
+| 기사 | 64 |
 | 벤더 문서 | 52 |
-| 업계 보고서 | 13 |
+| 업계 보고서 | 14 |
 
-신뢰도: medium 740건, high 165건, low 74건
+신뢰도: medium 751건, high 169건, low 74건
 
 ### 현장 유형 매트릭스 채움률
 
-- 29/119 칸 (24%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 30/119 칸 (25%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 4 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 4 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 4 | published |
-| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 4 | published |
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 4 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 5 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 5 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 5 | published |
+| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 5 | published |
+| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 5 | published |
 <!-- auto:metrics:end -->

@@ -31,7 +31,7 @@ version: 1
 | **63. 병원·의료** | 검체·약품·식사·린넨 이송, 감염 관리, 환자 정보 | 감염 관리와 환자 정보 보호 조건에서 병원 이송을 어떻게 운영할 것인가? | [63. 병원·의료](hospital-and-healthcare.md) | published |
 | **64. 상업 시설** | 호텔 객실 배송, 식당 서빙, 매장·쇼핑몰 안내·청소 | 손님이 있는 영업 시간에 호텔·식당·매장의 로봇을 어떻게 운영할 것인가? | [64. 상업 시설](commercial-facilities.md) | published |
 | **65. 가정·공동주택** | 집안일 보조, 공동주택 배송, 사생활 | 가정과 공동주택에서 사생활을 지키며 집안일과 배송을 어떻게 맡길 것인가? | [65. 가정·공동주택](home-and-apartment.md) | published |
-| **66. 실외** | 실외 배송·순찰·캠퍼스, 보도 주행 규정, 날씨 | 보도와 날씨 조건에서 실외 로봇을 어떻게 운영할 것인가? | [66. 실외](outdoor.md) | seed |
+| **66. 실외** | 실외 배송·순찰·캠퍼스, 보도 주행 규정, 날씨 | 보도와 날씨 조건에서 실외 로봇을 어떻게 운영할 것인가? | [66. 실외](outdoor.md) | published |
 | **67. 기타 현장** | 점검·순찰(플랜트·데이터센터·빌딩), 건설, 농업, 공공시설, 오피스, 연구실 | 점검·건설·농업·공공시설 같은 다른 현장은 무엇이 다른가? | [67. 기타 현장](other-sites.md) | seed |
 
 [분류원문]
@@ -48,7 +48,7 @@ version: 1
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 80건이다(논문 26건 · 기사·보고서 30건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 15건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 95건이다(논문 29건 · 기사·보고서 37건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 20건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -56,27 +56,27 @@ version: 1
 - [ref-929](../../references/ref-929.md) — Li, M. 외 (Scientific Reports), Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios (발행 2026-04-24)
 - [ref-964](../../references/ref-964.md) — Karlsen, A. S. T., Andersen, B., Nevstad, K., Heirsaunet, S. E., Indergård, E., & Aarseth, W. (Frontiers in Robotics and AI), Digital transformation in restaurants: key aspects of service robot deployment from project initiation to evaluation (발행 2026-04-22)
 - [ref-943](../../references/ref-943.md) — Lee, Y. 외 (고려대학교 구로병원, 도구공간; Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026-03-31)
+- [ref-982](../../references/ref-982.md) — Tong, X., & Simoni, M. D. (arXiv), Robust Route Planning for Sidewalk Delivery Robots (발행 2025-07-16)
 - [ref-928](../../references/ref-928.md) — Pietrantoni, L., Favilla, M., Fraboni, F., Mazzoni, E., Morandini, S., Benvenuti, M., & De Angelis, M. (Frontiers in Robotics and AI), Integrating collaborative robots in manufacturing, logistics, and agriculture: Expert perspectives on technical, safety, and human factors (발행 2024-12-02)
 - [ref-946](../../references/ref-946.md) — Babalola, G. T., Gaston, J.-M., Trombetta, J., & Tulk Jesso, S. (Frontiers in Robotics and AI), A systematic review of collaborative robots for nurses: where are we now, and where is the evidence? (발행 2024-06-05)
 - [ref-971](../../references/ref-971.md) — Li, C., Zhang, R., Wong, J. 외 (arXiv; CoRL 2022 예비판), BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation (발행 2024-03-14)
 - [ref-933](../../references/ref-933.md) — Keshvarparast, A., Battini, D., Battaia, O., & Pirayesh, A. (Journal of Intelligent Manufacturing 35), Collaborative robots in manufacturing and assembly systems: literature review and future research agenda (발행 2023-05-30)
-- [ref-949](../../references/ref-949.md) — 최현철, 서슬기, 권재용, 박상찬, 장혜정 (경희대학교, Korea SUNY; 품질경영학회지 51(3)), 감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여 (발행 2023)
-- [ref-960](../../references/ref-960.md) — Odekerken-Schröder, G., Mennens, K., Steins, M., & Mahr, D. (Journal of Service Management 33(2)), The service triad: an empirical study of service robots, customers and frontline employees (발행 2022)
-- 그 밖에 16건
+- [ref-990](../../references/ref-990.md) — Gehrke, S. R., Phair, C. D., Russo, B. J., & Smaglik, E. J. (Transportation Research Interdisciplinary Perspectives 18), Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists (발행 2023-03)
+- 그 밖에 19건
 
 **기사·보고서**
 
 - [ref-975](../../references/ref-975.md) — 한국경제 (김익환), 배송·주차·청소까지…로봇 아파트 뜬다 (발행 2026-09-27)
 - [ref-979](../../references/ref-979.md) — 미디어펜 (조태민), 로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도 (발행 2026-09-20)
 - [ref-931](../../references/ref-931.md) — 뉴시스, "로봇 몇 대, 어디로 움직일까"…중소 제조현장에 'AI 공장장' 뜬다 (발행 2026-09-07)
+- [ref-984](../../references/ref-984.md) — 스포츠경향, 뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지 (발행 2026-09-02)
+- [ref-981](../../references/ref-981.md) — DC Velocity, Starship steers its delivery robots off college campuses and toward grocery sector (발행 2026-06-08)
 - [ref-969](../../references/ref-969.md) — 바이라인네트워크, '로봇청소기' 다수 제품 보안 취약…대응방안은? (발행 2025-10-31)
 - [ref-973](../../references/ref-973.md) — The Robot Report (Mike Oitzman), NEO humanoid designed for household use, available for preorder (발행 2025-10-30)
 - [ref-970](../../references/ref-970.md) — 매일신문, 사생활 훔치는 로봇청소기…중국산 제품서 `무단 촬영` 가능성 확인 (발행 2025-10-06)
+- [ref-983](../../references/ref-983.md) — 지디넷코리아, 배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득 (발행 2025-06-23)
 - [ref-948](../../references/ref-948.md) — 비즈한국, 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까 (발행 2025-04-10)
-- [ref-963](../../references/ref-963.md) — 서울경제 (백주연), 엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장 (발행 2025-04-02)
-- [ref-932](../../references/ref-932.md) — 테크데일리, KETI, LLM 모델 및 모방학습, 조립공정 자동화 기술 공개 (발행 2025-03-12)
-- [ref-940](../../references/ref-940.md) — 뉴스투데이, [한림대성심병원 로봇 사용기 (下)] 배송로봇, 엘리베이터 타고 횡단보도 건너 검체 운반 (발행 2025-02-11)
-- 그 밖에 20건
+- 그 밖에 27건
 
 **업체 발표**
 
@@ -93,24 +93,24 @@ version: 1
 **표준·오픈소스·기관 자료**
 
 - [ref-872](../../references/ref-872.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025 (발행 2025-05-01)
+- [ref-994](../../references/ref-994.md) — ISO, ISO/TR 4448-1:2024 Intelligent transport systems — Public-area mobile robots (PMR) — Part 1: Overview of paradigm (발행 2024-08)
 - [ref-959](../../references/ref-959.md) — 한국노동연구원 (박수민 외), 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 (발행 2024)
+- [ref-991](../../references/ref-991.md) — 대한민국 정책브리핑 (산업통상자원부·경찰청), ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 (발행 2023-11-16)
 - [ref-977](../../references/ref-977.md) — Connectivity Standards Alliance (CSA), Matter 1.2 Arrives with Nine New Device Types & Improvements Across the Board (발행 2023-10-23)
 - [ref-978](../../references/ref-978.md) — CaseNote (법령 게재; 원 제정 국회·개인정보보호위원회 소관), 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한) (발행 2023-03-14)
+- [ref-985](../../references/ref-985.md) — 内閣府 (일본 내각부), 令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について (발행 2023)
 - [ref-945](../../references/ref-945.md) — 산업통상자원부 국가기술표준원 (KDI 경제정보센터 게재), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 (발행 2021-11-11)
 - [ref-942](../../references/ref-942.md) — Open Robotics, ROMI-H: Bringing Robot Traffic Control to Healthcare (발행 2021-02-10)
-- [ref-950](../../references/ref-950.md) — 한국보건산업진흥원 스마트병원 확산지원센터, 선도모델 및 모듈 소개 (발행 미확인)
-- [ref-947](../../references/ref-947.md) — 한국로봇산업진흥원, 서비스로봇 실증사업 (발행 미확인)
-- [ref-937](../../references/ref-937.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), ROMI-H \| Changi General Hospital (발행 미확인)
-- [ref-923](../../references/ref-923.md) — Verband der Automobilindustrie (VDA), VDA 5050: Managing Transport in Manufacturing Plants (발행 미확인)
-- 그 밖에 5건
+- [ref-988](../../references/ref-988.md) — Open Navigation (Nav2), Navigating Using GPS Localization — Nav2 documentation (발행 미확인)
+- 그 밖에 10건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-29 · 갱신 · [65. 가정·공동주택](home-and-apartment.md) — 섹션 3~11 신규 작성(seed → draft): 현장 유형 가정 사례 3건을 여섯 항목으로 정리, 공동현관·승강기 연동·집하 방식·수령 인증·사생활 기능·Matter 1.2, 관련 법령·법안, 책임 경계, 연결 영역 16개, 열린 질문 5건, 각주 15건. 1차 수정 지시 17건, 2차 수정 지시 4건, 2차 재검증 지시 1건(4절 요약 문장의 벤더 주장 병기를 태그 앞 본문에 두고 ref-974·ref-973 각주 복원) 이행 (실행 2026-09-29-17)
-- 2026-09-29 · 생성 · [65. 가정·공동주택 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-29-area65-s7.md) — 자동 분리: 65. 가정·공동주택 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,508자)을 옮겼다 (실행 2026-09-29-17)
-- 2026-09-29 · 생성 · [65. 가정·공동주택 — 대표 접근법과 기술](../../topics/2026/2026-09-29-area65-s6.md) — 자동 분리: 65. 가정·공동주택 의 "6. 대표 접근법과 기술" 절(1,233자)을 옮겼다 (실행 2026-09-29-17)
-- 2026-09-29 · 생성 · [65. 가정·공동주택 — 핵심 개념과 용어](../../topics/2026/2026-09-29-area65-s4.md) — 자동 분리: 65. 가정·공동주택 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 재검증 지시로 1절 첫 항목·3절 첫 문단의 벤더 주장 문장을 '제조사 발표(벤더 주장)에서 쓰인다. [추정]`[^ref-974]``[^ref-973]`'로 고쳤다 (실행 2026-09-29-17)
-- 2026-09-29 · 생성 · [65. 가정·공동주택 — 대표 연구와 자료](../../topics/2026/2026-09-29-area65-s8.md) — 자동 분리: 65. 가정·공동주택 의 "8. 대표 연구와 자료" 절(949자)을 옮겼다 (실행 2026-09-29-17)
+- 2026-09-30 · 갱신 · [66. 실외](outdoor.md) — 섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건. 2차 수정: 4절 도입 문장을 태그 없는 안내문으로 교체, 5절 세 번째 사례 수행 자원의 '허가' 삭제, 9절 GPS·RTK·PDD 첫 등장 풀어 쓰기 (실행 2026-09-30-01)
+- 2026-09-30 · 생성 · [66. 실외 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area66-s7.md) — 자동 분리: 66. 실외 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,761자)을 옮겼다. 2차 수정 원칙에 맞춰 표의 GPS 첫 등장을 풀어 썼다 (실행 2026-09-30-01)
+- 2026-09-30 · 생성 · [66. 실외 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area66-s6.md) — 자동 분리: 66. 실외 의 "6. 대표 접근법과 기술" 절(1,280자)을 옮겼다. 2차 수정 지시로 위치 추정 소절의 GPS·RTK·UTM 첫 등장을 풀어 썼다 (실행 2026-09-30-01)
+- 2026-09-30 · 생성 · [66. 실외 — 대표 연구와 자료](../../topics/2026/2026-09-30-area66-s8.md) — 자동 분리: 66. 실외 의 "8. 대표 연구와 자료" 절(1,110자)을 옮겼다 (실행 2026-09-30-01)
+- 2026-09-30 · 생성 · [66. 실외 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area66-s4.md) — 자동 분리: 66. 실외 의 "4. 핵심 개념과 용어" 절(909자)을 옮겼다. 2차 수정 지시로 세 줄 요약·본문 첫 문장을 태그·각주 없는 안내 문장으로 바꿨다 (실행 2026-09-30-01)
 <!-- auto:category-recent:end -->

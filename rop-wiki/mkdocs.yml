@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 66. 실외 — 대표 연구와 자료: topics/2026/2026-09-30-area66-s8.md
+      - 66. 실외 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area66-s7.md
+      - 66. 실외 — 대표 접근법과 기술: topics/2026/2026-09-30-area66-s6.md
+      - 66. 실외 — 핵심 개념과 용어: topics/2026/2026-09-30-area66-s4.md
+      - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
+      - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
+      - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
       - 65. 가정·공동주택 — 대표 연구와 자료: topics/2026/2026-09-29-area65-s8.md
       - 65. 가정·공동주택 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area65-s7.md
       - 65. 가정·공동주택 — 대표 접근법과 기술: topics/2026/2026-09-29-area65-s6.md
@@ -551,6 +558,7 @@ nav:
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
     - 감독 제어 (Supervisory Control): glossary/supervisory-control.md
     - 감사 추적 (Audit Trail): glossary/audit-trail.md
+    - 개인 배송 장치 (Personal Delivery Device (PDD)): glossary/personal-delivery-device.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
@@ -564,6 +572,7 @@ nav:
     - 고장 탐지·진단 (Fault Detection and Diagnosis (FDD)): glossary/fault-detection-and-diagnosis-fdd.md
     - 공간 그래프 (Space Graph): glossary/space-graph.md
     - 공간 세분화 (Subspacing (Indoor Space Subdivision)): glossary/indoor-space-subspacing.md
+    - 공공 영역 이동로봇 (Public-area Mobile Robot (PMR)): glossary/public-area-mobile-robot.md
     - 공급망 운영 참조 모델 (SCOR): glossary/scor.md
     - 공통 데이터 환경 (Common Data Environment (CDE)): glossary/common-data-environment.md
     - 공통 좌표계 (Common Coordinate System (CCS, ISO 21423)): glossary/common-coordinate-system.md
@@ -709,6 +718,7 @@ nav:
     - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 원격 조작 (Teleoperation): glossary/teleoperation.md
+    - 원격 조작형 소형차 (Remote-controlled Small Vehicle (遠隔操作型小型車)): glossary/remote-controlled-small-vehicle.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
     - 위치 체크 디지트 (Location Check Digit): glossary/location-check-digit.md
@@ -754,6 +764,7 @@ nav:
     - 최적성 간격 (Optimality Gap): glossary/optimality-gap.md
     - 충돌 기반 탐색 (Conflict-Based Search (CBS)): glossary/conflict-based-search.md
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
+    - 침범 후 시간 (Post-Encroachment Time (PET)): glossary/post-encroachment-time.md
     - 클릭 수 지표 (Number of Clicks (NoC)): glossary/number-of-clicks.md
     - 키 입력 수준 모델 (Keystroke-Level Model (KLM)): glossary/keystroke-level-model.md
     - 탈옥 (Jailbreak): glossary/jailbreak.md
@@ -1858,6 +1869,22 @@ nav:
     - ref-977 — Matter 1.2 Arrives with Nine New Device Types & Improvements Across the Board: references/ref-977.md
     - ref-978 — 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한): references/ref-978.md
     - ref-979 — 로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도: references/ref-979.md
+    - ref-980 — 실외이동로봇 운행안전인증: references/ref-980.md
+    - ref-981 — Starship steers its delivery robots off college campuses and toward grocery sector: references/ref-981.md
+    - ref-982 — Robust Route Planning for Sidewalk Delivery Robots: references/ref-982.md
+    - ref-983 — 배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득: references/ref-983.md
+    - ref-984 — 뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지: references/ref-984.md
+    - ref-985 — 令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について: references/ref-985.md
+    - ref-986 — Why delivery robots face a regulatory ‘nightmare’: references/ref-986.md
+    - ref-987 — Pitt pauses testing of Starship robots due to safety concerns: references/ref-987.md
+    - ref-988 — Navigating Using GPS Localization — Nav2 documentation: references/ref-988.md
+    - ref-989 — ISO-4448 Update Winter 2024: references/ref-989.md
+    - ref-990 — Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists: references/ref-990.md
+    - ref-991 — ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용: references/ref-991.md
+    - ref-992 — 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준: references/ref-992.md
+    - ref-993 — With a Little Help of Humans. An Exploratory Study of Delivery Robots Stuck in Snow: references/ref-993.md
+    - ? 'ref-994 — ISO/TR 4448-1:2024 Intelligent transport systems — Public-area mobile robots (PMR) — Part 1: Overview of paradigm'
+      : references/ref-994.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

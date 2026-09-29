@@ -1,0 +1,666 @@
+{
+  "run_id": "2026-09-30-01",
+  "outline": [
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "한국에서는 2023-11-17 개정 지능형로봇법·도로교통법 시행으로 운행안전인증을 받은 실외이동로봇이 보행자 지위를 얻어 보도를 다닐 수 있게 됐고, 보도 운영은 인증·보행자 의무·보험 조건 위에서 이루어진다. [사실][^ref-991]",
+      "planned_findings": [
+        "f2",
+        "f3",
+        "f6",
+        "f7",
+        "f9",
+        "f15",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "실외이동로봇 운행안전인증, 보행자 지위, 원격 조작형 소형차, 개인 배송 장치(PDD), 공공 영역 이동로봇(PMR), RTK, 침범 후 시간(PET)을 정리한다. [사실][^ref-980]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f6",
+        "f7",
+        "f16",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 2200,
+      "summary": "확인한 자료에서 실외 로봇 작업은 보도 배송, 순찰, 캠퍼스 배송의 세 형태로 나타나며 세 사례를 여섯 항목으로 정리하되 완료·인계는 미확인으로 둔다. [추정][^ref-983]",
+      "planned_findings": [
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "위치 추정은 연계 대상이고, 운영 계층은 불확실성을 고려한 경로 계획, 날씨의 제약·예외 처리, 사람 도움·원격 개입, 접근성 민감 지점 대기 규칙을 다룬다. [추정][^ref-982]",
+      "planned_findings": [
+        "f13",
+        "f15",
+        "f17",
+        "f18",
+        "f19",
+        "f24",
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 1700,
+      "summary": "실외 로봇의 운영 기준은 한국 운행안전인증, 나라·주마다 다른 보도 통행 법규, 개발 중인 ISO 4448 시리즈로 이루어지며 인증 항목 수는 두 기준일의 값을 함께 제시한다. [추정][^ref-980]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 900,
+      "summary": "연구는 보도 로봇–보행자 상호작용 관측, 눈 속 고립과 사람 개입, 불확실성 아래 경로 계획에 모여 있다. [추정][^ref-990]",
+      "planned_findings": [
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 900,
+      "summary": "ROP는 요청 수신·배정, 관할 규정·날씨의 제약 반영, 예외 인계를 맡고 배달 앱·로봇 주행·법적 인증은 연계 대상으로 둔다. [추정][^ref-980]",
+      "planned_findings": [
+        "f1",
+        "f25",
+        "f26"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 900,
+      "summary": "법규·안전, 보행자, 지도·위치, 경로·스케줄링, 예외 복구, 관제·연동, 사업 동향의 16개 세부영역과 이어진다. [추정][^ref-980]",
+      "planned_findings": [
+        "f27"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 700,
+      "summary": "인증 항목 개정, 관제장치 해당 여부, 접근성 대기 규칙, 강설·폭우 운영 기준, 관할 규정의 기계 판독 모델 다섯 질문을 연다.",
+      "planned_findings": [
+        "f1",
+        "f5",
+        "f15",
+        "f20",
+        "f24"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/site-type-applications/outdoor.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 위치 추정(연계 대상)·강건 경로 계획·날씨·사람 도움, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건, 각주 15건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,761자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"6. 대표 접근법과 기술\" 절(1,280자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"8. 대표 연구와 자료\" 절(1,110자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"4. 핵심 개념과 용어\" 절(909자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"11. 열린 질문\" 절(816자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(780자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area66-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 66. 실외 의 \"3. 왜 중요한가\" 절(683자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 66. 실외 | 섹션 3~11 신규 작성(seed → draft): 실외 사례 3건 여섯 항목 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건, 1차 수정 지시 16건 이행 | run 2026-09-30-01",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 66. 실외: 보도 배송(딜리)·덕수궁 순찰(뉴비)·캠퍼스 배송(Starship) 사례와 한국 운행안전인증·일본·미국 보도 규정, 날씨·위치 오차를 다루는 운영 방법을 정리했다",
+    "category_recent": "2026-09-30 — 66. 실외: 섹션 3~11 신규 작성(seed → draft), 실외 사례 3건 여섯 항목 정리, 운행안전인증 항목 수(2023 시행 16개·2026-09-30 확인 8개) 병기, 열린 질문 5건",
+    "area_recent": "2026-09-30 — 66. 실외: 섹션 3~11 신규 작성, 각주 15건(ref-980~ref-994), 신뢰도 medium"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "public-area-mobile-robot",
+      "term_ko": "공공 영역 이동로봇",
+      "term_en": "Public-area Mobile Robot (PMR)",
+      "definition": "보도·연석 같은 공공 공간에서 보호받지 않는 보행자 곁을 다니며 배송·점검·감시 등을 하는 로봇으로, ISO/TC 204 의 ISO 4448 시리즈가 쓰는 용어다.",
+      "related_areas": [
+        66,
+        50
+      ],
+      "sources": [
+        "ref-989",
+        "ref-994"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "personal-delivery-device",
+      "term_ko": "개인 배송 장치",
+      "term_en": "Personal Delivery Device (PDD)",
+      "definition": "미국 여러 주 법에서 보도·횡단보도를 다니며 물건을 나르는 배송 로봇을 가리키는 법적 범주로, 무게·속도 상한이 주마다 다르다.",
+      "description": "2023-04 기사 기준 2022년 말까지 최소 23개 주가 관련 법을 제정했으며, 조지아는 최대 500파운드·보도 4mph, 뉴햄프셔는 최대 80파운드·10mph를 허용한다.",
+      "related_areas": [
+        66,
+        59
+      ],
+      "sources": [
+        "ref-986"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "remote-controlled-small-vehicle",
+      "term_ko": "원격 조작형 소형차",
+      "term_en": "Remote-controlled Small Vehicle (遠隔操作型小型車)",
+      "definition": "일본 개정 도로교통법(2023-04 시행)이 정한 최고 6km/h·120×70×120cm 이하의 자동배송 로봇 등의 범주로, 보도를 보행자에 준하는 규칙으로 다니며 공안위원회에 사전 신고해야 한다.",
+      "related_areas": [
+        66,
+        59
+      ],
+      "sources": [
+        "ref-985"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "post-encroachment-time",
+      "term_ko": "침범 후 시간",
+      "term_en": "Post-Encroachment Time (PET)",
+      "definition": "한 이동체가 충돌 가능 지점을 떠난 뒤 다른 이동체가 그 지점에 도착하기까지의 시간 차로, 실제 충돌 없이 상충의 심각도를 재는 대리 안전 지표다.",
+      "description": "보도 자율 배송로봇과 보행자·자전거 이용자의 상호작용 분석에 쓰였다.",
+      "related_areas": [
+        66,
+        19,
+        49
+      ],
+      "sources": [
+        "ref-990"
+      ]
+    },
+    {
+      "action": "update",
+      "slug": "outdoor-mobile-robot-operational-safety-certification",
+      "term_ko": "실외이동로봇 운행안전인증",
+      "term_en": "Outdoor Mobile Robot Operational Safety Certification",
+      "definition": "지능형로봇법 제40조의2에 따라 최대 속도 15km/h·최대 질량 500kg 이하의 배송 등 자율주행(원격제어 포함) 로봇과 관제장치의 조합이 보도를 다니려면 받아야 하는 의무인증이다.",
+      "description": "심사항목 수는 2023-11 시행 당시 16개 시험항목(기준일 2023-11-16, 정책브리핑·지디넷코리아)이었고, 2026-09-30 확인한 한국로봇산업진흥원 안내에는 8개 심사항목(규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치)으로 적혀 있다. 변경 시점과 근거 고시는 미확인이다.",
+      "related_areas": [
+        66,
+        50,
+        59,
+        65
+      ],
+      "sources": [
+        "ref-980",
+        "ref-991",
+        "ref-992"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-980",
+      "org": "한국로봇산업진흥원",
+      "title": "실외이동로봇 운행안전인증",
+      "published": null,
+      "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "지능형로봇법 제40조의2에 따른 실외이동로봇 운행안전인증 안내. 대상(15km/h·500kg 이하, 로봇+관제장치), 8개 심사항목, 30일 처리 기간, 절차를 적는다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-981",
+      "org": "DC Velocity",
+      "title": "Starship steers its delivery robots off college campuses and toward grocery sector",
+      "published": "2026-06-08",
+      "url": "https://www.dcvelocity.com/transportation/trucking/last-mile/starship-steers-its-delivery-robots-off-college-campuses-and-toward-grocery-sector",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Starship 이 2026-06-08 미국 대학 캠퍼스 운영을 종료하고 로봇 1,200대 이상을 식료품 배송으로 옮긴다는 발표 기사. 회사가 밝힌 핀란드 점유율·비용 절감 수치와 2년 성장 예상을 옮긴다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-982",
+      "org": "Tong, X., & Simoni, M. D. (arXiv)",
+      "title": "Robust Route Planning for Sidewalk Delivery Robots",
+      "published": "2025-07-16",
+      "url": "https://arxiv.org/abs/2507.12067",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "보행자·장애물·날씨·혼잡에 따른 이동 시간 불확실성을 강건 최적화와 시뮬레이션으로 다룬 보도 배송로봇 경로 계획 프리프린트(스톡홀름 자료). 2026-03-27 개정, 동료심사 전.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-983",
+      "org": "지디넷코리아",
+      "title": "배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득",
+      "published": "2025-06-23",
+      "url": "https://zdnet.co.kr/view/?no=20250623095742",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "배민 배달로봇 딜리 신규 모델의 운행안전인증 획득(2025-06-17), 성능 개선(회사 발표), 강남 B마트 시범 운영과 8월 투입 계획을 전한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-984",
+      "org": "스포츠경향",
+      "title": "뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지",
+      "published": "2026-09-02",
+      "url": "https://sports.khan.co.kr/article/202609020605003/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "뉴빌리티 뉴비의 덕수궁·서울숲·충남대병원·도쿄 시부야 운영, 덕수궁 순찰 기능, 카메라 기반 V-SLAM, 회사가 밝힌 누적 운영 수치를 전한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-985",
+      "org": "内閣府 (일본 내각부)",
+      "title": "令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について",
+      "published": "2023",
+      "url": "https://www8.cao.go.jp/koutu//taisaku/r05kou_haku/zenbun/genkyo/topics/topic_1.html",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "2023-04-01 시행 일본 개정 도로교통법의 원격 조작형 소형차(6km/h·120×70×120cm, 보도 통행, 사전 신고)와 레벨4 특정 자동운행 허가제를 설명한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-986",
+      "org": "Supply Chain Dive",
+      "title": "Why delivery robots face a regulatory ‘nightmare’",
+      "published": "2023-04-26",
+      "url": "https://www.supplychaindive.com/news/delivery-robot-bills-laws-proliferate-state-legislatures/648303/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "미국 23개 이상 주의 배송 로봇(PDD) 법이 무게·속도 기준에서 서로 다르고 업체들의 입법 영향이 그 차이를 낳았다는 분석 기사.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-987",
+      "org": "The Pitt News",
+      "title": "Pitt pauses testing of Starship robots due to safety concerns",
+      "published": "2019-10-21",
+      "url": "https://pittnews.com/article/151679/news/pitt-pauses-testing-of-starship-robots-due-to-safety-concerns/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "연석 경사로를 막은 Starship 로봇 때문에 휠체어 이용자가 차도에 갇힌 사건과 피츠버그 대학의 시험 중단, 회사의 지도 오류 설명을 보도한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-988",
+      "org": "Open Navigation (Nav2)",
+      "title": "Navigating Using GPS Localization — Nav2 documentation",
+      "published": null,
+      "url": "https://docs.nav2.org/jazzy/tutorials/general_tutorials/navigation2_with_gps/navigation2_with_gps/",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Nav2 의 실외 GPS 항법 튜토리얼. GPS·RTK 정확도 한계, IMU 절대 방위, 두 EKF 융합, navsat_transform, rolling 전역 비용 지도를 설명한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-989",
+      "org": "Urban Robotics Foundation (Bern Grush)",
+      "title": "ISO-4448 Update Winter 2024",
+      "published": "2024-02-04",
+      "url": "https://www.urbanroboticsfoundation.org/post/iso-4448-update-winter-2024",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "ISO/TC 204 ISO 4448 시리즈(공공 영역 이동로봇)의 부분 구성과 진행 상황을 표준 책임자가 정리한 글(2025-04-20 갱신). Part 6·9·16은 위원회 초안 제출 대기로 적는다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-990",
+      "org": "Gehrke, S. R., Phair, C. D., Russo, B. J., & Smaglik, E. J. (Transportation Research Interdisciplinary Perspectives 18)",
+      "title": "Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists",
+      "published": "2023-03",
+      "url": "https://doi.org/10.1016/j.trip.2023.100789",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "노던애리조나대학 캠퍼스 10개 지점 1주일 영상으로 보도 배송로봇–보행자·자전거 상호작용을 침범 후 시간으로 분석한 동료심사 논문. 초록만 확인.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-991",
+      "org": "대한민국 정책브리핑 (산업통상자원부·경찰청)",
+      "title": "‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용",
+      "published": "2023-11-16",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922726",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "2023-11-17 시행 개정 지능형로봇법·도로교통법에 따른 실외이동로봇의 보행자 지위, 16가지 시험항목 인증, 범칙금, 보험·공제 가입 의무를 설명한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-992",
+      "org": "지디넷코리아",
+      "title": "실외 배달로봇 '시속 15km 이하로'...16가지 안전기준",
+      "published": "2023-07-28",
+      "url": "https://zdnet.co.kr/view/?no=20230728173101",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "산업통상자원부·한국로봇산업진흥원의 실외이동로봇 운행안전 기준 16개 항목, 질량별 속도 상한, 폭 기준, 보험 보장액(시행 전 기준안)을 전한다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-993",
+      "org": "Dobrosovestnova, A., Schwaninger, I., & Weiss, A. (IEEE RO-MAN 2022)",
+      "title": "With a Little Help of Humans. An Exploratory Study of Delivery Robots Stuck in Snow",
+      "published": "2022",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9900588/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "탈린에서 눈에 갇힌 상업 배송로봇을 행인이 돕는 현상을 다룬 학회 논문(pp. 1023–1029). 연구 포털의 초록만 확인.",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-994",
+      "org": "ISO",
+      "title": "ISO/TR 4448-1:2024 Intelligent transport systems — Public-area mobile robots (PMR) — Part 1: Overview of paradigm",
+      "published": "2024-08",
+      "url": "https://www.iso.org/standard/81068.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. ISO/TC 204 의 공공 영역 이동로봇 배치 체계 개요 기술 보고서. 발행일·범위는 검색 결과 요약으로만 확인했다(ISO 페이지 403).",
+      "cited_by": [
+        "docs/categories/site-type-applications/outdoor.md"
+      ],
+      "source_unopened": true
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "실외이동로봇 운행안전인증 심사항목이 16개에서 8개로 바뀐 개정의 시점·근거 고시는 무엇이며, 경사로·알림음·등화장치 같은 기존 항목은 어느 항목에 흡수됐는가?",
+      "areas": [
+        66,
+        50,
+        59
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "운행안전인증 대상이 로봇과 관제장치의 조합인데, 제조사가 다른 실외 로봇을 하나의 오케스트레이션 계층에서 지시할 때 그 계층이 인증상 관제장치에 해당하는지, 재인증이 필요한지에 관한 기준이나 해석이 있는가?",
+      "areas": [
+        66,
+        20,
+        59
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 보도에서 배송·순찰 로봇이 횡단 대기 중 연석 경사로·점자블록을 막지 않도록 하는 대기 위치 규칙이나 접근성 기준(인증 항목·지침)이 있는가?",
+      "areas": [
+        66,
+        60,
+        16
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 실외 로봇 운영사는 강설·결빙·폭우 때 운행 중단·재개 기준과 고립 로봇 회수 절차를 어떻게 정하고 있으며, 그 기준이 공개된 자료가 있는가?",
+      "areas": [
+        66,
+        32
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "나라·주마다 다른 보도 로봇 규정(속도·크기·신고·보행자 의무)을 경로·속도 제약으로 기계가 읽을 수 있게 표현하는 공통 모델이 있으며, ISO 4448 의 경로 계획 충분성·운행 데이터 기록기 부분이 이를 다루는가?",
+      "areas": [
+        66,
+        21,
+        16
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "실외",
+      "item": "시작 조건",
+      "link": "docs/categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시",
+      "title": "66. 실외"
+    },
+    {
+      "site_type": "실외",
+      "item": "작업 대상",
+      "link": "docs/categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시",
+      "title": "66. 실외"
+    },
+    {
+      "site_type": "실외",
+      "item": "수행 자원",
+      "link": "docs/categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시",
+      "title": "66. 실외"
+    },
+    {
+      "site_type": "실외",
+      "item": "제약",
+      "link": "docs/categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시",
+      "title": "66. 실외"
+    },
+    {
+      "site_type": "실외",
+      "item": "예외·성과",
+      "link": "docs/categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시",
+      "title": "66. 실외"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "실외이동로봇 운행안전인증 (지능형로봇법 제40조의2)",
+      "kind": "평가 프로그램",
+      "org": "한국로봇산업진흥원",
+      "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+      "related_areas": [
+        66,
+        50,
+        59
+      ],
+      "summary": "15km/h·500kg 이하 실외이동로봇과 관제장치 조합의 보도 운행 의무인증. 2026-09-30 확인한 안내는 8개 심사항목(2023-11 시행 당시 16개 시험항목)과 30일 이내 처리를 적는다.",
+      "ref_id": "ref-980"
+    },
+    {
+      "name": "ISO/TR 4448-1:2024 Public-area mobile robots (PMR) — Part 1: Overview of paradigm",
+      "kind": "표준",
+      "org": "ISO (ISO/TC 204)",
+      "url": "https://www.iso.org/standard/81068.html",
+      "related_areas": [
+        66,
+        50
+      ],
+      "summary": "원문 미열람. 2024-08 발행 기술 보고서로, 연석 승하차 로봇 도로 차량과 보호받지 않는 보행자 사이에서 배송·점검·유지보수·감시를 하는 로봇 장치의 배치 체계를 개관한다.",
+      "ref_id": "ref-994"
+    },
+    {
+      "name": "ISO 4448 시리즈 (Public-area mobile robots, Part 6·9·16 개발 중)",
+      "kind": "표준",
+      "org": "ISO/TC 204",
+      "url": "https://www.urbanroboticsfoundation.org/post/iso-4448-update-winter-2024",
+      "related_areas": [
+        66,
+        50,
+        21
+      ],
+      "summary": "공공 영역 이동로봇 표준 시리즈. Part 6 경로 계획 충분성, Part 9 운행 데이터 기록기, Part 16 안전·신뢰성은 위원회 초안(CD) 제출을 앞두고 있다고 표준 책임자가 밝혔다(2025-04-20 갱신 기준, 이후 진행 상태 미확인).",
+      "ref_id": "ref-989"
+    },
+    {
+      "name": "Nav2 GPS 항법 구성 (navsat_transform·두 EKF 융합·rolling 전역 비용 지도)",
+      "kind": "오픈소스",
+      "org": "Open Navigation (Nav2)",
+      "url": "https://docs.nav2.org/jazzy/tutorials/general_tutorials/navigation2_with_gps/navigation2_with_gps/",
+      "related_areas": [
+        66,
+        15
+      ],
+      "summary": "실외 GPS 항법 튜토리얼. 일반 GPS 1~2m·최대 10m, RTK 약 1cm·기준국 필요를 적고 바퀴 주행거리계·IMU·GPS 융합 구성을 안내한다. ROP 에는 연계 대상이다.",
+      "ref_id": "ref-988"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 완료·인계: 딜리·뉴비·Starship 등 실외 배송·순찰 로봇의 수령 확인·순찰 완료 확인 방식(무엇이 확인돼야 일이 끝났다고 인정하는가) 자료가 브리프에 없어 '미확인'으로 두었다.",
+    "5·9절: 딜리·뉴비의 관제·원격 제어 운영 방식과 사람 대응 분담, 실패 시 복구 주체 자료가 없어 미확인으로 두었다.",
+    "5절 순찰 사례 제약: 덕수궁 등 순찰 구역의 운영 제약(시간·구역·관람객 동선) 자료가 없어 미확인으로 두었다.",
+    "7절: 운행안전인증 심사항목 16개→8개 변경의 개정 시점·근거 고시 원문과 2023-07 기준안(질량별 속도·폭·보험 보장액)의 최종 고시 반영 여부 확인이 필요하다.",
+    "7절: 미국 주 PDD 법 개수(2023-04 기준 23개 이상) 이후 변화와 일본 규정의 경찰청 원문 교차 확인이 필요하다.",
+    "6절: 국내 실외 로봇 운영사의 강설·결빙·폭우 운행 중단·재개 기준과 고립 로봇 회수 절차 자료가 필요하다.",
+    "9절: 제조사가 다른 실외 로봇을 한 오케스트레이션 계층에서 묶은 공개 사례를 찾아야 한다.",
+    "5절: 출처 상한으로 조사하지 못한 해외 순찰(예: Knightscope)·공원·골프장 등 다른 실외 작업 사례가 필요하다.",
+    "다음 65. 가정·공동주택 실행: 그 페이지의 '16개 시험항목' 서술에 기준일(2023-11-16)을 붙이고 2026-09-30 확인한 한국로봇산업진흥원 안내 8개 심사항목을 병기해야 한다(1차 검증 중복 지적)."
+  ],
+  "fixes_applied": [
+    "ref-988 URL 교체 — 13절 각주 정의와 reference_updates·standards_updates 의 URL을 https://docs.nav2.org/jazzy/tutorials/general_tutorials/navigation2_with_gps/navigation2_with_gps/ 로 바꿨다.",
+    "f19 구절 삭제 — 6절 위치 추정 소절에서 '도심·숲에서는 정확도가 더 떨어진다'를 빼고 GPS 1~2m·최대 10m, RTK 약 1cm·기준국, EKF 2개, navsat_transform(UTM 변환), rolling 전역 비용 지도만 '연계 대상'으로 짧게 썼다.",
+    "f20 문구 수정 — 7절 표의 ISO 4448 시리즈 행과 standards_updates 를 'Part 6·9·16은 위원회 초안(CD) 제출을 앞두고 있다고 표준 책임자가 밝혔다(2024-02-04 게시, 2025-04-20 갱신 기준, 이후 진행 상태 미확인)'로 썼다.",
+    "f15 문구 수정 — 5절 캠퍼스 사례 예외·성과 칸에 '문제 제기가 트위터에 올라온 뒤 두 시간이 채 안 돼' 대학이 시험 운행을 멈췄다고 썼다.",
+    "f10 문구 수정 — 5절 캠퍼스 사례 서술에 '앞으로 2년간 식료품 사업이 10배 성장할 것으로 예상한다고 밝혔다(벤더 주장). [추정]'으로 쓰고 벤더 주장 병기를 유지했다.",
+    "ref-981 발행일 — 13절 각주 정의와 reference_updates 의 발행일을 2026-06-08로 적었다.",
+    "f22 수정 — 5절 도입 문장에서 '역 주변'을 빼고 순찰 형태는 덕수궁으로 한정했으며, 서울숲·충남대학교병원·도쿄 시부야는 작업 형태가 특정되지 않은 운영 장소로만 썼다.",
+    "f23 수정 — 5절 세 사례의 완료·인계 칸과 여섯 항목 종합 문단에서 '주문자 문 앞 전달'을 빼고 '미확인(이번 자료에 수령 확인 방식 없음)'으로 두었으며 site_matrix_updates 에 완료·인계 칸을 넣지 않았다.",
+    "f1·f2·f5 병기 — 7절 '인증 심사항목 수: 두 기준일의 값' 소절에 2023-11 시행 당시 16개 시험항목(기준일 2023-11-16)과 2026-09-30 확인한 KIRIA 안내 8개 심사항목을 모두 제시하고 차이의 원인은 [추정]으로만 쓴 뒤 11절 첫 번째 열린 질문으로 연결했다.",
+    "f4 기준안 명시 — 7절 한국 항목에 '2023-07 지디넷코리아가 전한 시행 전 기준안'으로 밝히고 최종 고시 반영 여부는 미확인이라고 적었다.",
+    "f13 연계 대상 — V-SLAM·5방향 카메라 위치 추정을 5절 순찰 사례 서술에서 '로봇 자체 지능·제어에 속하는 연계 대상'으로 한 문장만 썼다.",
+    "f18 프리프린트 명시 — 6절과 8절에서 ref-982가 동료심사 전 arXiv 프리프린트(2025-07-16 제출, 2026-03-27 개정)임을 밝히고 결과는 직접 인용 없이 재서술했다.",
+    "f16·f17 초록 기준 — 8절에서 ref-990·ref-993을 초록 기준으로 확인했음을 밝히고 상충 비율 등 초록에 없는 수치는 쓰지 않았다.",
+    "ref-994 미열람 표시 — 13절 각주 정의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣었으며, 7절 본문은 2024-08 발행 기술 보고서와 대상 범위만 썼다.",
+    "용어집 기준일 병기 — glossary_updates 에 outdoor-mobile-robot-operational-safety-certification 을 action: update 로 내어 2023-11 시행 당시 16개 시험항목과 2026-09-30 확인한 한국로봇산업진흥원 안내 8개 심사항목을 두 기준일과 함께 적었다.",
+    "f8 의견 주체 — 7절 미국 항목에서 [의견]의 주체를 'Ottonomy CEO Ritukar Vijay(ref-986 기사 인용)'로 밝혔다.",
+    "분량 초과 자동 분리: 66. 실외 본문 10,505자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,034자"
+  ]
+}
