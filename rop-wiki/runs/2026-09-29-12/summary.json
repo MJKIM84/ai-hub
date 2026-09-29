@@ -1,0 +1,133 @@
+{
+  "run_id": "2026-09-29-12",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 62,
+    "area_name": "62. 제조 공장",
+    "category": "Q. 현장 유형별 적용"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 17,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 12,
+    "sources": 17
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 5470.7,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 62. 제조 공장 | 섹션 3~11 신규 작성(seed → draft), 각주 16건(분리 주제 페이지 7건 포함 17건), 용어 2건, 열린 질문 4건 신규, 현장 유형 매트릭스 제조 공장 6칸; 2차 수정 2회차: 분리 페이지 핵심 개념과 용어 복구, 다른 연구영역과의 연결 23·25·26 항목 태그·문구 정정, 9절 PLC·ERP 풀어 씀 | run 2026-09-29-12",
+  "notes": [
+    "참고문헌 생성: references/ref-922.md",
+    "참고문헌 생성: references/ref-923.md",
+    "참고문헌 생성: references/ref-924.md",
+    "참고문헌 생성: references/ref-925.md",
+    "참고문헌 생성: references/ref-926.md",
+    "참고문헌 생성: references/ref-927.md",
+    "참고문헌 생성: references/ref-928.md",
+    "참고문헌 생성: references/ref-930.md",
+    "참고문헌 생성: references/ref-931.md",
+    "참고문헌 생성: references/ref-932.md",
+    "참고문헌 생성: references/ref-933.md",
+    "참고문헌 생성: references/ref-934.md",
+    "참고문헌 생성: references/ref-935.md",
+    "참고문헌 생성: references/ref-936.md",
+    "참고문헌 생성: references/ref-938.md",
+    "용어집 생성: glossary/assembly-line-feeding-problem.md",
+    "용어집 생성: glossary/cell-based-production.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 2,
+    "references": 15,
+    "standards": 0,
+    "open_questions": 4,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 21:12:44 KST",
+  "usage": {
+    "input_tokens": 671,
+    "cache_creation_input_tokens": 1117867,
+    "cache_read_input_tokens": 4049105,
+    "output_tokens": 442203,
+    "cost_usd": 46.7503,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 9.3629,
+        "output_tokens": 83993,
+        "cache_read_input_tokens": 2022042,
+        "cache_creation_input_tokens": 182109
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.9496,
+        "output_tokens": 26963,
+        "cache_read_input_tokens": 1000395,
+        "cache_creation_input_tokens": 103881
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 24.5691,
+        "output_tokens": 288983,
+        "cache_read_input_tokens": 730836,
+        "cache_creation_input_tokens": 496858
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 8.6642,
+        "output_tokens": 41771,
+        "cache_read_input_tokens": 270975,
+        "cache_creation_input_tokens": 325390
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.1737,
+        "output_tokens": 224,
+        "cache_read_input_tokens": 10340,
+        "cache_creation_input_tokens": 7883
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0308,
+        "output_tokens": 269,
+        "cache_read_input_tokens": 14517,
+        "cache_creation_input_tokens": 1746
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 18,
+  "cross_checked_findings": 1
+}

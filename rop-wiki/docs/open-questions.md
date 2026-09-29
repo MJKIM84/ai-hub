@@ -186,8 +186,12 @@ version: 1
 | oq-164 | 스마트물류센터 인증 심사기준의 정보시스템 항목(WMS 150점, WCS/MCS 50점)에서 이기종 로봇 오케스트레이션 계층은 어느 항목으로 평가되며 인증 심사가 로봇 플릿 관제 기능을 따로 보는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
 | oq-165 | 반품 재적치를 피킹 경로에 통합하는 최적화 연구를 로봇 이동형 풀필먼트 시스템이나 AMR 협업 피킹에 적용한 연구·사례가 있는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[25. 작업 배정 — MRTA](categories/planning-and-optimization/task-allocation-mrta.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
 | oq-166 | 트레일러 하역 로봇의 떨어진 상자 복구 같은 예외 처리가 로봇 자체 복구와 오케스트레이션 계층의 재계획 사이에서 어떻게 분담되는지 공개된 인터페이스나 사례가 있는가? | [61. 물류창고](categories/site-type-applications/warehouse.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-29 | 2026-09-29-11 | 열림 | — |
+| oq-167 | 국내 제조 공장에서 서로 다른 제조사의 AGV·AMR·모바일 매니퓰레이터를 VDA 5050 같은 표준 인터페이스로 하나의 관제 계층 아래 운영한 공개 사례가 있는가(확인된 국내 사례는 자체 로봇 도입과 정부 시범사업뿐이다)? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
+| oq-168 | 생산 관리 시스템(MES)이 로봇 플릿에 내는 운송·공정 작업 요청과 완료 보고에 ISA-95 의 작업 요청·작업 응답 모델을 실제로 쓴 공개 사례나 표준 매핑이 있는가? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
+| oq-169 | 셀 생산 방식에서 여러 셀이 동시에 같은 부품을 요청할 때 운반 로봇 배정과 셀 안 로봇팔·작업자의 조립 순서를 어떤 계층이 조율하며 라인 정지·결품 시 재계획 책임은 어디에 있는가? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
+| oq-170 | ISO 3691-4:2023 의 운용 구역 분류와 사람 감지 요구가 이기종 플릿 관제 계층에 어떤 정보(구역·속도 제한·모드)를 요구하는지 표준 원문으로 확인할 수 있는가(이번 조사는 인증 기관 설명만 확인했다)? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
 
-상태별 건수: 열림 165건, 조사 중 1건
+상태별 건수: 열림 169건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

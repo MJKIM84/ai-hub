@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-12 | 갱신 | [docs/categories/site-type-applications/manufacturing-plant.md](categories/site-type-applications/manufacturing-plant.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 16건(분리 후), 1차 수정 지시 18건 이행; 2차 수정(1회차): 4·8절 추론 [추정] 분리, 6절 세 형태 문장 정리, 약어 병기; 2차 수정(2회차): 9절 표의 PLC·ERP 첫 등장을 풀어 씀 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s4.md](topics/2026/2026-09-29-area62-s4.md) | 자동 분리: 62. 제조 공장 의 "4. 핵심 개념과 용어" 절을 옮겼다; 2차 수정(2회차): 두 번째 자동 분리로 소실된 4절 전체 내용(견인차·언더라이드 로봇 기반 라인 공급, 운송 주문, 셀 생산 방식, 치구 없는 다중 로봇 조립, 협동로봇, 운용 구역·ISO 3691-4)을 복구하고 자기 참조 링크 줄을 삭제, 출처·프런트매터 sources·세 줄 요약을 맞춤 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s6.md](topics/2026/2026-09-29-area62-s6.md) | 자동 분리: 62. 제조 공장 의 "6. 대표 접근법과 기술" 절을 옮겼다; 2차 수정(1회차): 1절·3절 첫 문장의 세 형태 (3) 을 '작업자와 로봇이 함께 조립하거나 두 대 이상의 로봇(로봇팔·이동 플랫폼)이 치구 없이 조립하거나'로 고침(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s8.md](topics/2026/2026-09-29-area62-s8.md) | 자동 분리: 62. 제조 공장 의 "8. 대표 연구와 자료" 절을 옮겼다; 2차 수정(1회차): 첫 항목(1절·3절)의 '라인 공급 작업 단위 기준' 문장을 [추정] 별도 문장으로 분리(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s11.md](topics/2026/2026-09-29-area62-s11.md) | 자동 분리: 62. 제조 공장 의 "11. 열린 질문" 절을 옮겼다; 2차 수정(1회차): KETI 첫 등장을 '한국전자기술연구원(KETI)'로 병기(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s3.md](topics/2026/2026-09-29-area62-s3.md) | 자동 분리: 62. 제조 공장 의 "3. 왜 중요한가" 절(980자)을 옮겼다(2차 재실행 1·2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s10.md](topics/2026/2026-09-29-area62-s10.md) | 자동 분리: 62. 제조 공장 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(904자)을 옮겼다; 2차 수정(2회차): 23. 항목의 운송 주문 생성을 [추정] 벤더 주장`[^ref-926]`으로 분리(ref-926 을 출처·sources 에 추가), 25. 항목의 운반 로봇 배정 추론을 [추정] 별도 문장으로 분리, 26. 항목에서 '순서' 삭제 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s7.md](topics/2026/2026-09-29-area62-s7.md) | 자동 분리: 62. 제조 공장 의 "7. 관련 표준·프레임워크·오픈소스" 절(885자)을 옮겼다(2차 재실행 1·2회차 변경 없음) |
+| 2026-09-29-12 | 요약 | [docs/categories/site-type-applications/manufacturing-plant.md](categories/site-type-applications/manufacturing-plant.md) | 62. 제조 공장: 섹션 3~11 신규 작성(seed → draft), 각주 16건(분리 주제 페이지 7건 포함 17건), 용어 2건, 열린 질문 4건 신규, 현장 유형 매트릭스 제조 공장 6칸; 2차 수정 2회차: 분리 페이지 핵심 개념과 용어 복구, 다른 연구영역과의 연결 23·25·26 항목 태그·문구 정정, 9절 PLC·ERP 풀어 씀 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-922.md](references/ref-922.md) | 참고문헌 ref-922 등록: A classification of tactical assembly line feeding problems |
+| 2026-09-29-12 | 생성 | [docs/references/ref-923.md](references/ref-923.md) | 참고문헌 ref-923 등록: VDA 5050: Managing Transport in Manufacturing Plants |
+| 2026-09-29-12 | 생성 | [docs/references/ref-924.md](references/ref-924.md) | 참고문헌 ref-924 등록: VDA 5050: unified AGV fleet control in real time at VW |
+| 2026-09-29-12 | 생성 | [docs/references/ref-925.md](references/ref-925.md) | 참고문헌 ref-925 등록: Flexible Production Systems: Automated Generation of Operati… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-926.md](references/ref-926.md) | 참고문헌 ref-926 등록: AGV fleet management integration with intralogistics |
+| 2026-09-29-12 | 생성 | [docs/references/ref-927.md](references/ref-927.md) | 참고문헌 ref-927 등록: LG전자, 스마트팩토리 솔루션 확대에 AMR 등 물류로봇 적극 활용한다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-928.md](references/ref-928.md) | 참고문헌 ref-928 등록: Integrating collaborative robots in manufacturing, logistics… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-930.md](references/ref-930.md) | 참고문헌 ref-930 등록: ‘혁신의 장場’ HMGICS, 인간 중심 모빌리티 솔루션의 새 시대 열다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-931.md](references/ref-931.md) | 참고문헌 ref-931 등록: "로봇 몇 대, 어디로 움직일까"…중소 제조현장에 'AI 공장장' 뜬다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-932.md](references/ref-932.md) | 참고문헌 ref-932 등록: KETI, LLM 모델 및 모방학습, 조립공정 자동화 기술 공개 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-933.md](references/ref-933.md) | 참고문헌 ref-933 등록: Collaborative robots in manufacturing and assembly systems:… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-934.md](references/ref-934.md) | 참고문헌 ref-934 등록: Multi-Robot Assembly Strategies and Metrics |
+| 2026-09-29-12 | 생성 | [docs/references/ref-935.md](references/ref-935.md) | 참고문헌 ref-935 등록: 시뮬레이션을 이용한 자동차 부품 공급 시스템 도입 방안 분석: R자동차 사례 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-936.md](references/ref-936.md) | 참고문헌 ref-936 등록: 자동차 생산을 위한 통합창고 연구 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-938.md](references/ref-938.md) | 참고문헌 ref-938 등록: ISO 3691-4:2023: Compliance Testing for Automated Guided Veh… |
+| 2026-09-29-12 | 생성 | [docs/glossary/assembly-line-feeding-problem.md](glossary/assembly-line-feeding-problem.md) | 용어집 항목 조립라인 공급 문제 |
+| 2026-09-29-12 | 생성 | [docs/glossary/cell-based-production.md](glossary/cell-based-production.md) | 용어집 항목 셀 생산 방식 |
 | 2026-09-29-11 | 갱신 | [docs/categories/site-type-applications/warehouse.md](categories/site-type-applications/warehouse.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 20건 추가; 2차 수정: 10절 1번 연결 벤더 주장 병기, AGV·AMR·WMS·WCS 첫 등장 풀이와 QPS·DPS·ITS 회사 표기 명시, 5절 마지막 단락 분할, [의견] 귀속 명시 |
 | 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s8.md](topics/2026/2026-09-29-area61-s8.md) | 자동 분리: 61. 물류창고 의 "8. 대표 연구와 자료" 절(1,603자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s6.md](topics/2026/2026-09-29-area61-s6.md) | 자동 분리: 61. 물류창고 의 "6. 대표 접근법과 기술" 절(1,262자)을 옮겼다(2차 재실행에서 변경 없음) |

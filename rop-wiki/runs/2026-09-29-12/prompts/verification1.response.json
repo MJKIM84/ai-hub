@@ -1,0 +1,389 @@
+{
+  "duration_api_ms": 477410,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.949567750000001,
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 103881,
+    "cache_read_input_tokens": 1000395,
+    "output_tokens": 26963,
+    "output_tokens_details": {
+      "thinking_tokens": 11468
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 103881,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 18113,
+        "cache_read_input_tokens": 191083,
+        "cache_creation_input_tokens": 3123,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3123
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 212169,
+      "outputTokens": 7982,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 2,
+      "costUSD": 0.27207899999999996,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-fable-5-1": {
+      "inputTokens": 162,
+      "outputTokens": 26963,
+      "cacheReadInputTokens": 1000395,
+      "cacheCreationInputTokens": 103881,
+      "webSearchRequests": 0,
+      "costUSD": 3.67748875,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 11468,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 28,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-12\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. Semantic Scholar API 로 제목·저자·IJPR 57권 7586–7609쪽·2019-02-23·초록 일치(대량 맞춤화, line stocking·boxed-supply·sequencing·kitting, 분류 틀). 출판사 페이지(tandfonline)는 열지 않았고 호수(24)는 API 에 없어 미확인. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. DBpia 서지·초록 일치(부산대, 아태경상저널, R자동차, 유인 견인차 → AGV, Witness, 적정 대수, 단일 차선 양방향, 투자 타당성). DBpia 발행 표기는 2014.4 이므로 published 를 2014-04 로 적을 수 있다. 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. KCI 서지·초록 일치(고려대·현대자동차, 한국시뮬레이션학회 논문지 21(2) 91–101쪽, 2012, WBS·PBS, starvation·blocking, 통합창고, 스태커 크레인·AGV 적정 대수, 도장 라인 정지 시 효율). 단일 출처.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 1911.05481 제목·저자·2019-11-13·초록 일치. ISA-95 는 제목에 있고 초록은 '생산 시스템 모델'이라고만 적는다. 평가·사례는 초록에 없음. 단일 출처.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 지멘스 페이지에서 인용문(자재 관리 시스템의 자동 운송 주문 생성)·사람 개입 감소·표준화 데이터 통합·JIT/칸반 문구 일치. JIT/칸반 문구는 고객 사례(ROJ) 설명이다. 발행일 미확인. 벤더 주장·추정 표시 적정.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. VDA 페이지에서 VDA·VDMA·KIT IFL 2019 제정, AGV Mesh-Up 여섯 제조사, 2.0.0 판 문구 일치. 제정 주체는 VDA5050 공식 저장소 README(VDA·VDMA·KIT IFL 공동 개발)와 Interact Analysis(ref-257, 독일 자동차 산업 개발)로 교차 확인. Mesh-Up 세부와 2.0.0 은 VDA 단일 출처. 최신성: 공식 저장소 README 기준 현재 판은 3.0.0 이므로 '2.0.0 판 공개'는 소개 글 시점 정보로 서술해야 한다. 발행일 미확인.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. VDA 페이지에서 Peter Kiermaier(BMW 그룹 Head of Logistics Planning), 2021년 3월부터 프로젝트 그룹 의장, 스마트 운반 로봇·자율 견인차·자율 지게차 프로젝트 적용, 신규 AGV 입찰 표준, 인용문 일치. '딩골핑·데브레첸 공장' 표기는 열람 요약에서 확인되지 않음. 벤더 주장·추정 표시 적정.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. IoT Use Case/SYNAOS 페이지(2025-10-16)에서 MLR 언더라이드 로봇 약 100대, 린데(괴팅) 견인차 40대, 135대 이상, 일 9,000 랙, 연 약 30만 km, 세계 최대 VDA 5050 플릿, JIT·JIS, SYNAOS IMP 일치. 수치는 모두 업체 설명. 벤더 주장·추정 표시 적정.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정: 물류신문 기사(2024-07-18, 이경성)는 실재하고 AMR·MM 역할·배터리 교체·60여 곳 생산기지·특허 1,000건 이상이 일치하나, MM 의 조립·불량 검사·배터리 교체 '가능'과 사업장 수·매출 규모는 기사에 실린 회사 설명이므로 벤더 주장 병기가 필요하다. 또 기사는 '사업 첫해인 올해 외부 업체에 공급한 솔루션이 2,000억 원 수준'이라 적어 '2024년 외부 매출 2,000억 원 목표'와 표현이 다르고, '60개 사업장'은 '60여 곳 생산기지'다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 같은 기사에서 창원 공장 생산성 17%·에너지효율 30%·품질비용 70% 감소, 디지털트윈·비전 AI·생성형 AI 언급, MES 등 이름 없음 일치. 벤더 주장·추정 표시 적정.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 현대차그룹 뉴스(ref-930, 2023-11-21)에서 타원형 셀·작업자와 로봇 협업·여러 모빌리티 동시 제작·디지털 트윈 메타 팩토리·연 3만 대 이상 일치. '약 200개의 로봇', AGV·AMR·스팟은 현대차 브랜드 저널(ref-937)에만 있다. '로봇팔'은 두 페이지 어디에도 없어 삭제 대상. 두 출처 모두 현대차 발행이라 교차 확인 아님. ref-937 은 출처 상한 초과분으로 제외하므로 ref-937 에만 있는 내용은 뺀다. 벤더 주장·추정 표시 적정.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. Semantic Scholar API 로 제목·저자·JIM 35권 2065–2118쪽·2023-05-30·초록 일치(SLR, 대상·방법론·성과 기준·사람–협동로봇 상호작용 유형, 맞춤화·대응성, 안전·일자리 대체 위험). 출판사 페이지 미열람. 단일 출처.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. Semantic Scholar API 와 NIST 게시 페이지(2018-01-26, ACM CSUR 51(1)) 양쪽에서 같은 초록 확인(치구 없는 조립, 로봇팔·다지 손·AGV, 조립 유형·동기화 알고리즘·지표). 같은 문서의 두 게시처이므로 독립 교차 확인으로 세지 않음.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. Frontiers 원문(2024-12-02)에서 유럽 9개국 전문가 31명, 차량 조립·창고 물류·농업 세 사례, 지붕 부품·공구 전달 인용문, 외골격·협동로봇 충돌 예측·회피가 우선 기술 과제라는 문구 일치. 태그 사실 유지. 단, 브리프 신뢰도 high 는 단일 출처이므로 medium 으로 낮춘다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. Applus+ 페이지에서 무인 산업 차량, 위험 분석·위험성 평가 표, 사람 감지·제동·속도·안정성, 카테고리 대신 PL, 구역 분류, EN 1525 개선, EU 조화 표준·CE 일치(발행일 미확인). ISO 원문 페이지(iso.org/standard/83545.html)는 403 으로 미열람이나 검색 결과의 ISO 범위 문구(driverless industrial trucks, PL vs category, 구역 가드, 운용 구역 준비는 부속서 A)로 범위는 교차 확인. 부속서 번호(Applus 의 B, ISO 스니펫의 A)는 대상이 달라 본문에는 쓰지 않는 것이 안전. 표준 원문 미열람이므로 태그 추정·벤더 주장 표시 유지.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 테크데일리 기사(2025-03-12)에서 KETI 13종 공개, 거대언어모델·모방학습 조립 공정 자동화, '별도의 작업 지시나 프로그래밍 없이' 자연어 입력 제어, 산업부·KEIT 지원, 랜덤피스피킹, 양팔 매니퓰레이터 언급, 현장 배치 사례 없음 일치. 자연어 제어와 양팔 매니퓰레이터가 같은 기술로 묶이는지는 열람 요약에서 확인되지 않아 '양팔 로봇을 자연어로 제어' 표현은 완화 필요. 단일 출처.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 뉴시스 기사(2026-09-07)에서 과기정통부·중기부, AMR·AGV 소요 규모 분석과 가상 사전 검증, KAIST·전북·경남, 2026 개별 물류구간·2027 물류공정 확대·2028 생산 전 공정·2029 다크팩토리 OS, 자연어·LLM 언급 없음 일치. '2027년 통합 물류'는 기사 표현 '물류공정 확대'로 맞춘다. 단일 출처.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"삭제\",\"note\":\"출처 ref-929 는 KISTI ScienceON 에서 실재하고 정의·1953년 Barrett Electronics·50년 넘게 운반·AI·5G 융합 전망이 일치한다('스스로 판단해 집고 싣는 단계' 부분은 열람 요약에서 미확인). 그러나 이번 실행의 신규 출처가 17건으로 max_sources_per_run 15 를 넘었고 브리프가 ref-929·ref-937 을 초과분으로 지정했으므로 ref-929 를 제외하고 이 finding 을 이번 실행에서 뺀다. 내용 자체의 문제는 아니며 다음 실행에서 재인용할 수 있다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"열람 실패(두 번 모두 빈 응답), 검색 결과 일치(원문 미열람). 검색 스니펫이 독일 자동차 산업의 VDA 5050 개발과 Audi·VW·BMW 의 마스터 컨트롤 업체 지원·분사 서술을 그대로 담는다. 2026-09-29-10 브리프 f12 와 같은 주장·같은 ref id 재사용 적정. 각주에 원문 미열람 표기 필요.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. VDA 페이지(BMW 적용·입찰 표준), SYNAOS 사례(VW 하노버 VDA 5050 플릿), Interact Analysis 스니펫(Audi·VW·BMW 채택 견인) 세 발행 주체가 독일 완성차 공장의 VDA 5050 채택을 각각 서술해 채택 사실은 교차 확인. 수치는 제외한 채택 사실만 사실로 두는 것이 적정. ref-257 은 원문 미열람이므로 high 불가.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 입력의 data/source_texts/ref-004.txt(RMF Core Overview 원문)에서 플릿 어댑터, 교통 스케줄·협상, 문·승강기·디스펜서 연동 구조 확인. 제조 공장 적용 사례가 없다는 한계를 밝힌 추정 표시 적정. 브리프 출처 summary 가 '원문 미열람.'으로 시작하나 fetched true·입력 원문 존재로 열람 출처다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f1·f2·f3·f8·f9·f11·f13·f14 의 종합 추정이며 각 근거 finding 이 검증에서 살아남았다. f9 강등에 따라 모바일 매니퓰레이터 부분은 벤더 주장 병기, f11 의 로봇팔 언급은 뺀다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 여섯 항목 종합 추정. 근거 finding 모두 유지. 완료·인계 항목이 f4·f5 에서 도출한 추정임을 본문에 밝혀야 한다. 성과 수치는 벤더 주장 병기.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 직접 범위 종합 추정. 근거 f3·f4·f5·f6·f20 유지. 분류 원문 19장 기준에 맞고 국내 사례 미확인을 밝혔다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. '연계 대상:' 표시로 상위 업무 시스템·시설·설비 제어·로봇 자체 지능·제어를 분류 원문 19장대로 나눴다. 범위 위반 없음.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 연결 영역 14개의 번호·이름이 부록 A 와 일치. 34. 시뮬레이션·예측용 디지털 트윈과 18. 실시간 세계 상태·데이터 일관성을 섞지 않았다. f18 삭제에 따른 변화 없음(f18 은 연결 근거에 없음).\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f16·f17 의 종합. oq-142 미해결 판정 적정(해결 제안 없음).\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f19 는 runs/2026-09-29-10 브리프 f12 와 같은 주장이며 같은 참고문헌 id(ref-257)를 재사용해 중복 각주가 아니다\",\"f21 은 runs/2026-09-29-11 브리프 f23(Open-RMF, ref-004)과 같은 구조 설명이며 같은 id 를 재사용한다\",\"ref-923·ref-924 id 가 같은 날 runs/2026-09-29-11 브리프에서 다른 URL(CJ대한통운 보도자료, Robotics 24/7)에 부여되어 있다 — 내용 충돌은 아니며 퍼블리셔가 URL 기준으로 병합할 때 번호 충돌 확인 필요\",\"oq-142 는 61. 물류창고(2026-09-29-11)와 이 영역 양쪽에서 미해결로 남으며 서로 모순되지 않는다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true,\"issues\":[]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"ref-929·ref-937: 이번 실행의 신규 출처 17건이 max_sources_per_run 15 를 넘었으므로 브리프가 초과분으로 지정한 두 출처를 reference_updates 와 각주에서 제외한다 — 예산 규칙(공통 규칙 1절 9항) 위반분 정리.\",\"f18: 이번 실행에서 삭제한다(본문·8절 어디에도 쓰지 않는다) — 유일한 근거 ref-929 가 출처 상한 초과분으로 제외됐기 때문이며 내용 오류는 아니다.\",\"f11: 근거를 ref-930 하나로 두고, ref-937 에만 있는 '약 200대의 로봇'·'AGV·AMR·스팟' 부분과 어느 출처에도 없는 '로봇팔' 언급을 뺀다 — 타원형 셀·작업자와 로봇 협업·여러 차종 동시 생산·디지털 트윈 메타 팩토리·연 3만 대 이상은 ref-930 에서 확인되며 [추정]에 '벤더 주장' 병기를 유지한다.\",\"f9: [사실] → [추정]으로 강등하고 '벤더 주장'을 병기한다 — MM 의 조립·불량 검사·배터리 교체 기능, 60여 곳 생산기지, 2,000억 원 규모는 물류신문 기사에 실린 LG전자 설명이고 독립 확인이 없다. 아울러 '2024년 외부 매출 2,000억 원을 목표로 한다'는 기사 문구대로 '사업 첫해인 2024년 외부 업체 공급 규모가 2,000억 원 수준이라고 밝혔다'로, '40여 지역 60개 사업장'은 '40여 지역 60여 곳 생산기지'로 고친다.\",\"f14: 신뢰도 high → medium 으로 낮춘다(태그 [사실] 유지) — Frontiers 원문을 열었으나 단일 출처이므로 공통 규칙 3절의 high 조건(독립 출처 2개)을 채우지 못한다.\",\"f6: 'VDA 5050 2.0.0 판이 공개됐다'는 VDA 소개 글 작성 시점의 정보로 서술하고 현재 판으로 단정하지 않는다(기준일은 '발행일 미확인, VDA 소개 글 기준'으로 표시) — VDA5050 공식 저장소 README 기준 현재 판은 3.0.0 이며, 이 브리프에는 그 출처 id 가 없으므로 판 번호 갱신은 기존 용어집 'VDA 5050' 항목·21. 상호운용 표준·적합성 페이지에 맡기고 여기서는 단정만 피한다.\",\"f7: Peter Kiermaier 의 직함은 VDA 페이지에 있는 'BMW 그룹 물류기획 책임자(Head of Logistics Planning)'로만 쓰고 '딩골핑·데브레첸 공장'은 뺀다 — 열람에서 공장 이름이 확인되지 않았다.\",\"f15: 본문에서 ISO 3691-4:2023 내용은 '인증 기관(Applus+) 안내 기준이며 표준 원문은 미열람'임을 명시해 [추정]에 '벤더 주장'을 병기하고, 부속서 번호(부속서 B 표)는 쓰지 않는다 — ISO 검색 스니펫은 운용 구역 준비를 부속서 A 로 적어 대상이 달라 혼동을 줄 수 있고 원문으로 확인하지 못했다.\",\"f16: '자연어로 양팔 로봇을 제어'는 '자연어 입력으로 로봇을 제어'로 쓴다 — 기사가 자연어 제어와 양팔 매니퓰레이터를 같은 기술로 묶는지 확인되지 않았다. '연구 단계 시연, 현장 운영 사례 아님'은 유지한다.\",\"f17: '2027년 통합 물류'는 기사 표현대로 '2027년 물류공정 확대'로 고친다 — 뉴시스 원문 문구와 맞춘다.\",\"f2: 참고문헌 ref-935 의 발행일을 '2014-04'로 적는다 — DBpia 표기가 2014.4 이다.\",\"f19·ref-257: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-257 에 source_unopened: true 를 유지한다 — 검증에서도 페이지가 열리지 않아 검색 결과 일치로만 확인했다.\",\"ref-004: reference_updates 의 summary 에서 '원문 미열람' 문구를 빼고 각주에도 원문 미열람 표기를 붙이지 않는다 — 입력의 data/source_texts/ref-004.txt 로 원문이 확인됐고 브리프도 fetched true·source_unopened false 로 적었다.\",\"glossary_candidates '인플랜트 밀크런': 이번 실행에서 등록하지 않는다 — 정의가 말하는 순회 경로·주기·적재량 스케줄링을 뒷받침하는 finding 이 없다(브리프가 Emde 외 논문을 열지 못해 제외했다고 스스로 적었다). 4절에서는 용어 없이 f8 의 견인차 운반만 서술한다.\",\"glossary_candidates '셀 생산 방식': 정의를 f11(ref-930)이 뒷받침하는 범위 — 컨베이어 대신 작업자와 로봇이 함께 일하는 셀에서 여러 차종을 동시에 생산하는 유연 생산 방식 — 로 줄이고 '셀마다 운반 로봇이 공급해야 하므로 라인 공급과 다중 로봇 조율이 결합된다'는 추론은 뺀다 — 출처에 없는 서술이다.\",\"벤더 주장 병기 필수: f5·f7·f8·f9·f10·f11·f15 는 본문에서 [추정]에 '벤더 주장'을 함께 쓰고 수치(135대 이상·일 9,000 랙·연 30만 km, 생산성 17%·에너지 30%·품질비용 70%, 연 3만 대, 2,000억 원)는 회사 설명임을 문장에 밝힌다.\",\"5. 적용 사례 (현장 유형 명시): 모든 사례에 현장 유형 '제조 공장'을 이름으로 밝히고 f23 의 여섯 항목(시작 조건·작업 대상·수행 자원·제약·완료·인계·예외·성과)에 놓으며, 완료·인계 항목이 f4·f5 에서 도출한 추정임을 밝힌다. site_matrix_updates 의 site_type 은 모두 '제조 공장'이다.\",\"11. 열린 질문: oq-142 는 해결로 바꾸지 않는다(f27) — 국내 다중 로봇 대화 지시·승인 운영 사례가 확인되지 않았다. open_questions_new 4건은 브리프 문자열의 관련 영역·근거·종류를 그대로 옮긴다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 3건(f6 제정 주체, f15 표준 범위, f20 독일 완성차의 VDA 5050 채택). 강등: f9 사실 → 추정(기사에 실린 LG전자 설명, 벤더 주장 병기), f14 신뢰도 high → medium(단일 출처), f18 삭제(출처 상한 15 초과분 ref-929 제외). 원문 미열람 출처: ref-257(검증에서도 열람 실패, 검색 결과 일치). ISO 3691-4:2023 원문(iso.org)은 403 으로 미열람이며 인증 기관 안내와 ISO 검색 스니펫으로만 확인했다. 주의: 신규 출처 17건이 회당 상한 15 를 넘어 ref-929·ref-937 을 제외했다; 적용 사례의 성과 수치(VW 하노버 135대 이상·일 9,000 랙, LG전자 창원 생산성 17%, HMGICS 연 3만 대, 외부 공급 2,000억 원)는 모두 회사 설명이며 독립 확인이 없다; VDA 소개 글의 '2.0.0 판'은 작성 시점 정보이고 공식 저장소 기준 현재 판은 3.0.0 이다; 국내 제조 공장에서 이기종 로봇을 하나의 오케스트레이션 계층으로 묶은 공개 사례는 확인되지 않았다; 학술 서베이 3편(ref-922·ref-933·ref-934)은 초록만 확인했다. ref-923·ref-924 id 가 같은 날 2026-09-29-11 브리프에서 다른 URL 에 부여되어 있어 퍼블리셔가 URL 기준으로 병합할 때 번호 충돌을 확인해야 한다. ref-004 는 입력 원문 텍스트로 열람 확인됐으므로 원문 미열람 표기를 붙이지 않는다. 정정 요청 없음. oq-142 미해결 유지.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-29-12",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. Semantic Scholar API 로 제목·저자·IJPR 57권 7586–7609쪽·2019-02-23·초록 일치(대량 맞춤화, line stocking·boxed-supply·sequencing·kitting, 분류 틀). 출판사 페이지(tandfonline)는 열지 않았고 호수(24)는 API 에 없어 미확인. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. DBpia 서지·초록 일치(부산대, 아태경상저널, R자동차, 유인 견인차 → AGV, Witness, 적정 대수, 단일 차선 양방향, 투자 타당성). DBpia 발행 표기는 2014.4 이므로 published 를 2014-04 로 적을 수 있다. 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. KCI 서지·초록 일치(고려대·현대자동차, 한국시뮬레이션학회 논문지 21(2) 91–101쪽, 2012, WBS·PBS, starvation·blocking, 통합창고, 스태커 크레인·AGV 적정 대수, 도장 라인 정지 시 효율). 단일 출처."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 1911.05481 제목·저자·2019-11-13·초록 일치. ISA-95 는 제목에 있고 초록은 '생산 시스템 모델'이라고만 적는다. 평가·사례는 초록에 없음. 단일 출처."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 지멘스 페이지에서 인용문(자재 관리 시스템의 자동 운송 주문 생성)·사람 개입 감소·표준화 데이터 통합·JIT/칸반 문구 일치. JIT/칸반 문구는 고객 사례(ROJ) 설명이다. 발행일 미확인. 벤더 주장·추정 표시 적정."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. VDA 페이지에서 VDA·VDMA·KIT IFL 2019 제정, AGV Mesh-Up 여섯 제조사, 2.0.0 판 문구 일치. 제정 주체는 VDA5050 공식 저장소 README(VDA·VDMA·KIT IFL 공동 개발)와 Interact Analysis(ref-257, 독일 자동차 산업 개발)로 교차 확인. Mesh-Up 세부와 2.0.0 은 VDA 단일 출처. 최신성: 공식 저장소 README 기준 현재 판은 3.0.0 이므로 '2.0.0 판 공개'는 소개 글 시점 정보로 서술해야 한다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. VDA 페이지에서 Peter Kiermaier(BMW 그룹 Head of Logistics Planning), 2021년 3월부터 프로젝트 그룹 의장, 스마트 운반 로봇·자율 견인차·자율 지게차 프로젝트 적용, 신규 AGV 입찰 표준, 인용문 일치. '딩골핑·데브레첸 공장' 표기는 열람 요약에서 확인되지 않음. 벤더 주장·추정 표시 적정."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. IoT Use Case/SYNAOS 페이지(2025-10-16)에서 MLR 언더라이드 로봇 약 100대, 린데(괴팅) 견인차 40대, 135대 이상, 일 9,000 랙, 연 약 30만 km, 세계 최대 VDA 5050 플릿, JIT·JIS, SYNAOS IMP 일치. 수치는 모두 업체 설명. 벤더 주장·추정 표시 적정."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정: 물류신문 기사(2024-07-18, 이경성)는 실재하고 AMR·MM 역할·배터리 교체·60여 곳 생산기지·특허 1,000건 이상이 일치하나, MM 의 조립·불량 검사·배터리 교체 '가능'과 사업장 수·매출 규모는 기사에 실린 회사 설명이므로 벤더 주장 병기가 필요하다. 또 기사는 '사업 첫해인 올해 외부 업체에 공급한 솔루션이 2,000억 원 수준'이라 적어 '2024년 외부 매출 2,000억 원 목표'와 표현이 다르고, '60개 사업장'은 '60여 곳 생산기지'다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 같은 기사에서 창원 공장 생산성 17%·에너지효율 30%·품질비용 70% 감소, 디지털트윈·비전 AI·생성형 AI 언급, MES 등 이름 없음 일치. 벤더 주장·추정 표시 적정."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 현대차그룹 뉴스(ref-930, 2023-11-21)에서 타원형 셀·작업자와 로봇 협업·여러 모빌리티 동시 제작·디지털 트윈 메타 팩토리·연 3만 대 이상 일치. '약 200개의 로봇', AGV·AMR·스팟은 현대차 브랜드 저널(ref-937)에만 있다. '로봇팔'은 두 페이지 어디에도 없어 삭제 대상. 두 출처 모두 현대차 발행이라 교차 확인 아님. ref-937 은 출처 상한 초과분으로 제외하므로 ref-937 에만 있는 내용은 뺀다. 벤더 주장·추정 표시 적정."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. Semantic Scholar API 로 제목·저자·JIM 35권 2065–2118쪽·2023-05-30·초록 일치(SLR, 대상·방법론·성과 기준·사람–협동로봇 상호작용 유형, 맞춤화·대응성, 안전·일자리 대체 위험). 출판사 페이지 미열람. 단일 출처."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. Semantic Scholar API 와 NIST 게시 페이지(2018-01-26, ACM CSUR 51(1)) 양쪽에서 같은 초록 확인(치구 없는 조립, 로봇팔·다지 손·AGV, 조립 유형·동기화 알고리즘·지표). 같은 문서의 두 게시처이므로 독립 교차 확인으로 세지 않음."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. Frontiers 원문(2024-12-02)에서 유럽 9개국 전문가 31명, 차량 조립·창고 물류·농업 세 사례, 지붕 부품·공구 전달 인용문, 외골격·협동로봇 충돌 예측·회피가 우선 기술 과제라는 문구 일치. 태그 사실 유지. 단, 브리프 신뢰도 high 는 단일 출처이므로 medium 으로 낮춘다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. Applus+ 페이지에서 무인 산업 차량, 위험 분석·위험성 평가 표, 사람 감지·제동·속도·안정성, 카테고리 대신 PL, 구역 분류, EN 1525 개선, EU 조화 표준·CE 일치(발행일 미확인). ISO 원문 페이지(iso.org/standard/83545.html)는 403 으로 미열람이나 검색 결과의 ISO 범위 문구(driverless industrial trucks, PL vs category, 구역 가드, 운용 구역 준비는 부속서 A)로 범위는 교차 확인. 부속서 번호(Applus 의 B, ISO 스니펫의 A)는 대상이 달라 본문에는 쓰지 않는 것이 안전. 표준 원문 미열람이므로 태그 추정·벤더 주장 표시 유지."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 테크데일리 기사(2025-03-12)에서 KETI 13종 공개, 거대언어모델·모방학습 조립 공정 자동화, '별도의 작업 지시나 프로그래밍 없이' 자연어 입력 제어, 산업부·KEIT 지원, 랜덤피스피킹, 양팔 매니퓰레이터 언급, 현장 배치 사례 없음 일치. 자연어 제어와 양팔 매니퓰레이터가 같은 기술로 묶이는지는 열람 요약에서 확인되지 않아 '양팔 로봇을 자연어로 제어' 표현은 완화 필요. 단일 출처."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 뉴시스 기사(2026-09-07)에서 과기정통부·중기부, AMR·AGV 소요 규모 분석과 가상 사전 검증, KAIST·전북·경남, 2026 개별 물류구간·2027 물류공정 확대·2028 생산 전 공정·2029 다크팩토리 OS, 자연어·LLM 언급 없음 일치. '2027년 통합 물류'는 기사 표현 '물류공정 확대'로 맞춘다. 단일 출처."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "삭제",
+        "note": "출처 ref-929 는 KISTI ScienceON 에서 실재하고 정의·1953년 Barrett Electronics·50년 넘게 운반·AI·5G 융합 전망이 일치한다('스스로 판단해 집고 싣는 단계' 부분은 열람 요약에서 미확인). 그러나 이번 실행의 신규 출처가 17건으로 max_sources_per_run 15 를 넘었고 브리프가 ref-929·ref-937 을 초과분으로 지정했으므로 ref-929 를 제외하고 이 finding 을 이번 실행에서 뺀다. 내용 자체의 문제는 아니며 다음 실행에서 재인용할 수 있다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "열람 실패(두 번 모두 빈 응답), 검색 결과 일치(원문 미열람). 검색 스니펫이 독일 자동차 산업의 VDA 5050 개발과 Audi·VW·BMW 의 마스터 컨트롤 업체 지원·분사 서술을 그대로 담는다. 2026-09-29-10 브리프 f12 와 같은 주장·같은 ref id 재사용 적정. 각주에 원문 미열람 표기 필요."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. VDA 페이지(BMW 적용·입찰 표준), SYNAOS 사례(VW 하노버 VDA 5050 플릿), Interact Analysis 스니펫(Audi·VW·BMW 채택 견인) 세 발행 주체가 독일 완성차 공장의 VDA 5050 채택을 각각 서술해 채택 사실은 교차 확인. 수치는 제외한 채택 사실만 사실로 두는 것이 적정. ref-257 은 원문 미열람이므로 high 불가."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 입력의 data/source_texts/ref-004.txt(RMF Core Overview 원문)에서 플릿 어댑터, 교통 스케줄·협상, 문·승강기·디스펜서 연동 구조 확인. 제조 공장 적용 사례가 없다는 한계를 밝힌 추정 표시 적정. 브리프 출처 summary 가 '원문 미열람.'으로 시작하나 fetched true·입력 원문 존재로 열람 출처다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f1·f2·f3·f8·f9·f11·f13·f14 의 종합 추정이며 각 근거 finding 이 검증에서 살아남았다. f9 강등에 따라 모바일 매니퓰레이터 부분은 벤더 주장 병기, f11 의 로봇팔 언급은 뺀다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 여섯 항목 종합 추정. 근거 finding 모두 유지. 완료·인계 항목이 f4·f5 에서 도출한 추정임을 본문에 밝혀야 한다. 성과 수치는 벤더 주장 병기."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 직접 범위 종합 추정. 근거 f3·f4·f5·f6·f20 유지. 분류 원문 19장 기준에 맞고 국내 사례 미확인을 밝혔다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. '연계 대상:' 표시로 상위 업무 시스템·시설·설비 제어·로봇 자체 지능·제어를 분류 원문 19장대로 나눴다. 범위 위반 없음."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 연결 영역 14개의 번호·이름이 부록 A 와 일치. 34. 시뮬레이션·예측용 디지털 트윈과 18. 실시간 세계 상태·데이터 일관성을 섞지 않았다. f18 삭제에 따른 변화 없음(f18 은 연결 근거에 없음)."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f16·f17 의 종합. oq-142 미해결 판정 적정(해결 제안 없음)."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f19 는 runs/2026-09-29-10 브리프 f12 와 같은 주장이며 같은 참고문헌 id(ref-257)를 재사용해 중복 각주가 아니다",
+        "f21 은 runs/2026-09-29-11 브리프 f23(Open-RMF, ref-004)과 같은 구조 설명이며 같은 id 를 재사용한다",
+        "ref-923·ref-924 id 가 같은 날 runs/2026-09-29-11 브리프에서 다른 URL(CJ대한통운 보도자료, Robotics 24/7)에 부여되어 있다 — 내용 충돌은 아니며 퍼블리셔가 URL 기준으로 병합할 때 번호 충돌 확인 필요",
+        "oq-142 는 61. 물류창고(2026-09-29-11)와 이 영역 양쪽에서 미해결로 남으며 서로 모순되지 않는다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": []
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "ref-929·ref-937: 이번 실행의 신규 출처 17건이 max_sources_per_run 15 를 넘었으므로 브리프가 초과분으로 지정한 두 출처를 reference_updates 와 각주에서 제외한다 — 예산 규칙(공통 규칙 1절 9항) 위반분 정리.",
+      "f18: 이번 실행에서 삭제한다(본문·8절 어디에도 쓰지 않는다) — 유일한 근거 ref-929 가 출처 상한 초과분으로 제외됐기 때문이며 내용 오류는 아니다.",
+      "f11: 근거를 ref-930 하나로 두고, ref-937 에만 있는 '약 200대의 로봇'·'AGV·AMR·스팟' 부분과 어느 출처에도 없는 '로봇팔' 언급을 뺀다 — 타원형 셀·작업자와 로봇 협업·여러 차종 동시 생산·디지털 트윈 메타 팩토리·연 3만 대 이상은 ref-930 에서 확인되며 [추정]에 '벤더 주장' 병기를 유지한다.",
+      "f9: [사실] → [추정]으로 강등하고 '벤더 주장'을 병기한다 — MM 의 조립·불량 검사·배터리 교체 기능, 60여 곳 생산기지, 2,000억 원 규모는 물류신문 기사에 실린 LG전자 설명이고 독립 확인이 없다. 아울러 '2024년 외부 매출 2,000억 원을 목표로 한다'는 기사 문구대로 '사업 첫해인 2024년 외부 업체 공급 규모가 2,000억 원 수준이라고 밝혔다'로, '40여 지역 60개 사업장'은 '40여 지역 60여 곳 생산기지'로 고친다.",
+      "f14: 신뢰도 high → medium 으로 낮춘다(태그 [사실] 유지) — Frontiers 원문을 열었으나 단일 출처이므로 공통 규칙 3절의 high 조건(독립 출처 2개)을 채우지 못한다.",
+      "f6: 'VDA 5050 2.0.0 판이 공개됐다'는 VDA 소개 글 작성 시점의 정보로 서술하고 현재 판으로 단정하지 않는다(기준일은 '발행일 미확인, VDA 소개 글 기준'으로 표시) — VDA5050 공식 저장소 README 기준 현재 판은 3.0.0 이며, 이 브리프에는 그 출처 id 가 없으므로 판 번호 갱신은 기존 용어집 'VDA 5050' 항목·21. 상호운용 표준·적합성 페이지에 맡기고 여기서는 단정만 피한다.",
+      "f7: Peter Kiermaier 의 직함은 VDA 페이지에 있는 'BMW 그룹 물류기획 책임자(Head of Logistics Planning)'로만 쓰고 '딩골핑·데브레첸 공장'은 뺀다 — 열람에서 공장 이름이 확인되지 않았다.",
+      "f15: 본문에서 ISO 3691-4:2023 내용은 '인증 기관(Applus+) 안내 기준이며 표준 원문은 미열람'임을 명시해 [추정]에 '벤더 주장'을 병기하고, 부속서 번호(부속서 B 표)는 쓰지 않는다 — ISO 검색 스니펫은 운용 구역 준비를 부속서 A 로 적어 대상이 달라 혼동을 줄 수 있고 원문으로 확인하지 못했다.",
+      "f16: '자연어로 양팔 로봇을 제어'는 '자연어 입력으로 로봇을 제어'로 쓴다 — 기사가 자연어 제어와 양팔 매니퓰레이터를 같은 기술로 묶는지 확인되지 않았다. '연구 단계 시연, 현장 운영 사례 아님'은 유지한다.",
+      "f17: '2027년 통합 물류'는 기사 표현대로 '2027년 물류공정 확대'로 고친다 — 뉴시스 원문 문구와 맞춘다.",
+      "f2: 참고문헌 ref-935 의 발행일을 '2014-04'로 적는다 — DBpia 표기가 2014.4 이다.",
+      "f19·ref-257: 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-257 에 source_unopened: true 를 유지한다 — 검증에서도 페이지가 열리지 않아 검색 결과 일치로만 확인했다.",
+      "ref-004: reference_updates 의 summary 에서 '원문 미열람' 문구를 빼고 각주에도 원문 미열람 표기를 붙이지 않는다 — 입력의 data/source_texts/ref-004.txt 로 원문이 확인됐고 브리프도 fetched true·source_unopened false 로 적었다.",
+      "glossary_candidates '인플랜트 밀크런': 이번 실행에서 등록하지 않는다 — 정의가 말하는 순회 경로·주기·적재량 스케줄링을 뒷받침하는 finding 이 없다(브리프가 Emde 외 논문을 열지 못해 제외했다고 스스로 적었다). 4절에서는 용어 없이 f8 의 견인차 운반만 서술한다.",
+      "glossary_candidates '셀 생산 방식': 정의를 f11(ref-930)이 뒷받침하는 범위 — 컨베이어 대신 작업자와 로봇이 함께 일하는 셀에서 여러 차종을 동시에 생산하는 유연 생산 방식 — 로 줄이고 '셀마다 운반 로봇이 공급해야 하므로 라인 공급과 다중 로봇 조율이 결합된다'는 추론은 뺀다 — 출처에 없는 서술이다.",
+      "벤더 주장 병기 필수: f5·f7·f8·f9·f10·f11·f15 는 본문에서 [추정]에 '벤더 주장'을 함께 쓰고 수치(135대 이상·일 9,000 랙·연 30만 km, 생산성 17%·에너지 30%·품질비용 70%, 연 3만 대, 2,000억 원)는 회사 설명임을 문장에 밝힌다.",
+      "5. 적용 사례 (현장 유형 명시): 모든 사례에 현장 유형 '제조 공장'을 이름으로 밝히고 f23 의 여섯 항목(시작 조건·작업 대상·수행 자원·제약·완료·인계·예외·성과)에 놓으며, 완료·인계 항목이 f4·f5 에서 도출한 추정임을 밝힌다. site_matrix_updates 의 site_type 은 모두 '제조 공장'이다.",
+      "11. 열린 질문: oq-142 는 해결로 바꾸지 않는다(f27) — 국내 다중 로봇 대화 지시·승인 운영 사례가 확인되지 않았다. open_questions_new 4건은 브리프 문자열의 관련 영역·근거·종류를 그대로 옮긴다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 27건, 미확인 0건, 교차 확인 3건(f6 제정 주체, f15 표준 범위, f20 독일 완성차의 VDA 5050 채택). 강등: f9 사실 → 추정(기사에 실린 LG전자 설명, 벤더 주장 병기), f14 신뢰도 high → medium(단일 출처), f18 삭제(출처 상한 15 초과분 ref-929 제외). 원문 미열람 출처: ref-257(검증에서도 열람 실패, 검색 결과 일치). ISO 3691-4:2023 원문(iso.org)은 403 으로 미열람이며 인증 기관 안내와 ISO 검색 스니펫으로만 확인했다. 주의: 신규 출처 17건이 회당 상한 15 를 넘어 ref-929·ref-937 을 제외했다; 적용 사례의 성과 수치(VW 하노버 135대 이상·일 9,000 랙, LG전자 창원 생산성 17%, HMGICS 연 3만 대, 외부 공급 2,000억 원)는 모두 회사 설명이며 독립 확인이 없다; VDA 소개 글의 '2.0.0 판'은 작성 시점 정보이고 공식 저장소 기준 현재 판은 3.0.0 이다; 국내 제조 공장에서 이기종 로봇을 하나의 오케스트레이션 계층으로 묶은 공개 사례는 확인되지 않았다; 학술 서베이 3편(ref-922·ref-933·ref-934)은 초록만 확인했다. ref-923·ref-924 id 가 같은 날 2026-09-29-11 브리프에서 다른 URL 에 부여되어 있어 퍼블리셔가 URL 기준으로 병합할 때 번호 충돌을 확인해야 한다. ref-004 는 입력 원문 텍스트로 열람 확인됐으므로 원문 미열람 표기를 붙이지 않는다. 정정 요청 없음. oq-142 미해결 유지.",
+    "retry_reason": null
+  },
+  "ttft_ms": 18494,
+  "type": "result",
+  "duration_ms": 404020,
+  "uuid": "64f13fd1-c3c5-4acb-b605-9ffde20a8cba",
+  "ttft_stream_ms": 9778,
+  "time_to_request_ms": 105,
+  "first_content_frame_ms": 9778,
+  "time_to_request_from_spawn_ms": 9092837,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790679537533.3806,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 406.3
+}

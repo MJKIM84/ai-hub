@@ -38,7 +38,7 @@ version: 1
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
-| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 6 | 0 | 0 | 8 | 0 | 0 | 14 |
+| [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 5 | 0 | 0 | 16 | 0 | 0 | 21 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
 
@@ -187,7 +187,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [61. 물류창고](categories/site-type-applications/warehouse.md) | published | medium | 2026-09-29 | 2 |
-| [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md) | seed | — | 2026-09-28 | 1 |
+| [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md) | published | medium | 2026-09-29 | 2 |
 | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | seed | — | 2026-09-28 | 1 |
 | [64. 상업 시설](categories/site-type-applications/commercial-facilities.md) | seed | — | 2026-09-28 | 1 |
 | [65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | seed | — | 2026-09-28 | 1 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 99회 중 최종 통과 99회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 99
-- 2차 검증 판정: 통과 99
+- 실행 100회 중 최종 통과 100회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 100
+- 2차 검증 판정: 통과 100
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 420 |
+| 논문 | 427 |
 | 오픈소스 문서 | 192 |
-| 표준 | 153 |
+| 표준 | 154 |
 | 정부·연구기관 | 65 |
-| 벤더 문서 | 45 |
-| 기사 | 33 |
+| 벤더 문서 | 49 |
+| 기사 | 36 |
 | 업계 보고서 | 13 |
 
-신뢰도: medium 698건, high 154건, low 69건
+신뢰도: medium 710건, high 154건, low 72건
 
 ### 현장 유형 매트릭스 채움률
 
-- 25/119 칸 (21%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 26/119 칸 (22%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
