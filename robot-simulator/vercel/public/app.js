@@ -11,7 +11,7 @@ function message(text, error = false) {status.textContent = text; status.classLi
 async function call(method, path='/api/session', body) {
   const response = await fetch(path, {method, credentials:'same-origin',cache:'no-store',
     ...(body ? {headers:{'Content-Type':'application/json'},body:JSON.stringify(body)} : {})});
-  if(response.status===429)throw new Error('입력 시도가 많습니다. 최대 10분 후 다시 시도해 주세요.');
+  if(response.status===429 && path==='/api/access')throw new Error('입력 시도가 많습니다. 최대 10분 후 다시 시도해 주세요.');
   let result;
   try {result = await response.json();}
   catch {throw new Error('실행 서버에 연결할 수 없습니다. 잠시 후 다시 시도해 주세요.');}
