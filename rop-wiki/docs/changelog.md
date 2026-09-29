@@ -16,10 +16,232 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-09-30
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-09-30-02 | 갱신 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 접근법 6가지, 표준 5건, 책임 경계, 연결 영역 17개, 열린 질문 5건. 2차 수정: 출처 5건 제목 정정, 9절 태그 추가, BIM·라이다·RMF 첫 등장 풀어 쓰기. 2차 재검증 수정: 9절 RMF 풀이를 Robotics Middleware Framework 로 정정 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s6.md](topics/2026/2026-09-30-area67-s6.md) | 자동 분리: 67. 기타 현장 의 "6. 대표 접근법과 기술" 절(1,209자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s7.md](topics/2026/2026-09-30-area67-s7.md) | 자동 분리: 67. 기타 현장 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,102자)을 옮겼다. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s10.md](topics/2026/2026-09-30-area67-s10.md) | 자동 분리: 67. 기타 현장 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,022자)을 옮겼다. 2차 수정: 20. 로봇·제조사 관제 연동 항목의 창이 공항 서술을 기사 수준으로 고치고 출처 제목 정정 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s4.md](topics/2026/2026-09-30-area67-s4.md) | 자동 분리: 67. 기타 현장 의 "4. 핵심 개념과 용어" 절(903자)을 옮겼다. 2차 수정: ref-1000 제목 정정. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s11.md](topics/2026/2026-09-30-area67-s11.md) | 자동 분리: 67. 기타 현장 의 "11. 열린 질문" 절(866자)을 옮겼다 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s3.md](topics/2026/2026-09-30-area67-s3.md) | 자동 분리: 67. 기타 현장 의 "3. 왜 중요한가" 절(716자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s8.md](topics/2026/2026-09-30-area67-s8.md) | 자동 분리: 67. 기타 현장 의 "8. 대표 연구와 자료" 절(629자)을 옮겼다 |
+| 2026-09-30-02 | 요약 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 67. 기타 현장: 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농촌진흥청 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 표준 5건(ISO 18497·SiLA 2·SS 713·TR 130·Open-RMF), 책임 경계, 연결 영역 17개, 열린 질문 5건. 1차 조건부 승인 수정 16건·2차 수정 5건(출처 제목 정정, 창이 공항 서술 완화, 태그 보완, 약어 풀어 쓰기, ref-004 각주는 대조 요청)·2차 재검증 수정 1건(RMF 풀이를 Robotics Middleware Framework 로 정정) 이행 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-995.md](references/ref-995.md) | 참고문헌 ref-995 등록: Equinor's autonomous robotics: inspection 'dogs' and record-… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-996.md](references/ref-996.md) | 참고문헌 ref-996 등록: A mobile robotic chemist |
+| 2026-09-30-02 | 생성 | [docs/references/ref-997.md](references/ref-997.md) | 참고문헌 ref-997 등록: 로봇이 로봇들을 움직이는, 네이버 1784 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-998.md](references/ref-998.md) | 참고문헌 ref-998 등록: 인천국제공항, 안내 로봇 '에어스타' 본격 운영 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-999.md](references/ref-999.md) | 참고문헌 ref-999 등록: 로봇 '스팟' 건설현장 누빈다…현대건설 품질·안전 관리 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1000.md](references/ref-1000.md) | 참고문헌 ref-1000 등록: GS건설, 4족보행 로봇 '스팟(SPOT)' 국내 최초 건설현장 도입하기로 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1001.md](references/ref-1001.md) | 참고문헌 ref-1001 등록: SiLA Standards |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1002.md](references/ref-1002.md) | 참고문헌 ref-1002 등록: 아시아 최대 규모 데이터센터…네이버 '각 세종' 본격 가동 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1003.md](references/ref-1003.md) | 참고문헌 ref-1003 등록: Game-changer: The rationale behind the investment in Energy… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1004.md](references/ref-1004.md) | 참고문헌 ref-1004 등록: Singapore's National Robotics Programme reveals initiatives… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1005.md](references/ref-1005.md) | 참고문헌 ref-1005 등록: 스스로 수확하고 운반···'로봇농부' 나왔다 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1006.md](references/ref-1006.md) | 참고문헌 ref-1006 등록: 농민 뒤 졸졸 '운반로봇'…무거운 수확물 옮기고 자동 하역 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1007.md](references/ref-1007.md) | 참고문헌 ref-1007 등록: 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1008.md](references/ref-1008.md) | 참고문헌 ref-1008 등록: 한전의 5G 특화망 기반 응용: IoT 예방진단, 로봇기반 순시점검 및 안전관리 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1009.md](references/ref-1009.md) | 참고문헌 ref-1009 등록: ISO 18497-3:2024 Agricultural machinery and tractors — Safet… |
+| 2026-09-30-02 | 생성 | [docs/glossary/sila-2.md](glossary/sila-2.md) | 용어집 항목 SiLA 2 |
+| 2026-09-30-02 | 생성 | [docs/glossary/brainless-robot.md](glossary/brainless-robot.md) | 용어집 항목 브레인리스 로봇 |
+| 2026-09-30-02 | 생성 | [docs/glossary/self-driving-laboratory.md](glossary/self-driving-laboratory.md) | 용어집 항목 자율 실험실 |
+| 2026-09-30-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-30-01 | 갱신 | [docs/categories/site-type-applications/outdoor.md](categories/site-type-applications/outdoor.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건. 2차 수정: 4절 도입 문장을 태그 없는 안내문으로 교체, 5절 세 번째 사례 수행 자원의 '허가' 삭제, 9절 GPS·RTK·PDD 첫 등장 풀어 쓰기 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s7.md](topics/2026/2026-09-30-area66-s7.md) | 자동 분리: 66. 실외 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,761자)을 옮겼다. 2차 수정 원칙에 맞춰 표의 GPS 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s6.md](topics/2026/2026-09-30-area66-s6.md) | 자동 분리: 66. 실외 의 "6. 대표 접근법과 기술" 절(1,280자)을 옮겼다. 2차 수정 지시로 위치 추정 소절의 GPS·RTK·UTM 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s8.md](topics/2026/2026-09-30-area66-s8.md) | 자동 분리: 66. 실외 의 "8. 대표 연구와 자료" 절(1,110자)을 옮겼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s4.md](topics/2026/2026-09-30-area66-s4.md) | 자동 분리: 66. 실외 의 "4. 핵심 개념과 용어" 절(909자)을 옮겼다. 2차 수정 지시로 세 줄 요약·본문 첫 문장을 태그·각주 없는 안내 문장으로 바꿨다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s11.md](topics/2026/2026-09-30-area66-s11.md) | 자동 분리: 66. 실외 의 "11. 열린 질문" 절(816자)을 옮겼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s10.md](topics/2026/2026-09-30-area66-s10.md) | 자동 분리: 66. 실외 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(780자)을 옮겼다. 2차 수정 원칙에 맡춰 UTM 첫 등장을 풀어 썼다 |
+| 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s3.md](topics/2026/2026-09-30-area66-s3.md) | 자동 분리: 66. 실외 의 "3. 왜 중요한가" 절(683자)을 옮겼다. 2차 수정 지시로 넷째 단락의 일반화 문장에 [추정]과 ref-987 각주를 붙였다 |
+| 2026-09-30-01 | 요약 | [docs/categories/site-type-applications/outdoor.md](categories/site-type-applications/outdoor.md) | 66. 실외: 섹션 3~11 신규 작성(seed → draft): 실외 사례 3건 여섯 항목 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건, 1차 수정 지시 16건·2차 수정 지시 4건 이행 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-980.md](references/ref-980.md) | 참고문헌 ref-980 등록: 실외이동로봇 운행안전인증 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-981.md](references/ref-981.md) | 참고문헌 ref-981 등록: Starship steers its delivery robots off college campuses and… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-982.md](references/ref-982.md) | 참고문헌 ref-982 등록: Robust Route Planning for Sidewalk Delivery Robots |
+| 2026-09-30-01 | 생성 | [docs/references/ref-983.md](references/ref-983.md) | 참고문헌 ref-983 등록: 배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-984.md](references/ref-984.md) | 참고문헌 ref-984 등록: 뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-985.md](references/ref-985.md) | 참고문헌 ref-985 등록: 令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について |
+| 2026-09-30-01 | 생성 | [docs/references/ref-986.md](references/ref-986.md) | 참고문헌 ref-986 등록: Why delivery robots face a regulatory ‘nightmare’ |
+| 2026-09-30-01 | 생성 | [docs/references/ref-987.md](references/ref-987.md) | 참고문헌 ref-987 등록: Pitt pauses testing of Starship robots due to safety concern… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-988.md](references/ref-988.md) | 참고문헌 ref-988 등록: Navigating Using GPS Localization — Nav2 documentation |
+| 2026-09-30-01 | 생성 | [docs/references/ref-989.md](references/ref-989.md) | 참고문헌 ref-989 등록: ISO-4448 Update Winter 2024 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-990.md](references/ref-990.md) | 참고문헌 ref-990 등록: Observed sidewalk autonomous delivery robot interactions wit… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-991.md](references/ref-991.md) | 참고문헌 ref-991 등록: ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-992.md](references/ref-992.md) | 참고문헌 ref-992 등록: 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 |
+| 2026-09-30-01 | 생성 | [docs/references/ref-993.md](references/ref-993.md) | 참고문헌 ref-993 등록: With a Little Help of Humans. An Exploratory Study of Delive… |
+| 2026-09-30-01 | 생성 | [docs/references/ref-994.md](references/ref-994.md) | 참고문헌 ref-994 등록: ISO/TR 4448-1:2024 Intelligent transport systems — Public-ar… |
+| 2026-09-30-01 | 생성 | [docs/glossary/public-area-mobile-robot.md](glossary/public-area-mobile-robot.md) | 용어집 항목 공공 영역 이동로봇 |
+| 2026-09-30-01 | 생성 | [docs/glossary/personal-delivery-device.md](glossary/personal-delivery-device.md) | 용어집 항목 개인 배송 장치 |
+| 2026-09-30-01 | 생성 | [docs/glossary/remote-controlled-small-vehicle.md](glossary/remote-controlled-small-vehicle.md) | 용어집 항목 원격 조작형 소형차 |
+| 2026-09-30-01 | 생성 | [docs/glossary/post-encroachment-time.md](glossary/post-encroachment-time.md) | 용어집 항목 침범 후 시간 |
+| 2026-09-30-01 | 갱신 | [docs/glossary/outdoor-mobile-robot-operational-safety-certification.md](glossary/outdoor-mobile-robot-operational-safety-certification.md) | 용어집 항목 실외이동로봇 운행안전인증 |
+| 2026-09-30-01 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+
 ### 2026-09-29
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-17 | 갱신 | [docs/categories/site-type-applications/home-and-apartment.md](categories/site-type-applications/home-and-apartment.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 가정 사례 3건을 여섯 항목으로 정리, 공동현관·승강기 연동·집하 방식·수령 인증·사생활 기능·Matter 1.2, 관련 법령·법안, 책임 경계, 연결 영역 16개, 열린 질문 5건, 각주 15건. 1차 수정 지시 17건, 2차 수정 지시 4건, 2차 재검증 지시 1건(4절 요약 문장의 벤더 주장 병기를 태그 앞 본문에 두고 ref-974·ref-973 각주 복원) 이행 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s7.md](topics/2026/2026-09-29-area65-s7.md) | 자동 분리: 65. 가정·공동주택 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,508자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s6.md](topics/2026/2026-09-29-area65-s6.md) | 자동 분리: 65. 가정·공동주택 의 "6. 대표 접근법과 기술" 절(1,233자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s4.md](topics/2026/2026-09-29-area65-s4.md) | 자동 분리: 65. 가정·공동주택 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차 재검증 지시로 1절 첫 항목·3절 첫 문단의 벤더 주장 문장을 '제조사 발표(벤더 주장)에서 쓰인다. [추정]`[^ref-974]``[^ref-973]`'로 고쳤다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s8.md](topics/2026/2026-09-29-area65-s8.md) | 자동 분리: 65. 가정·공동주택 의 "8. 대표 연구와 자료" 절(949자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s3.md](topics/2026/2026-09-29-area65-s3.md) | 자동 분리: 65. 가정·공동주택 의 "3. 왜 중요한가" 절(885자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s10.md](topics/2026/2026-09-29-area65-s10.md) | 자동 분리: 65. 가정·공동주택 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(885자)을 옮겼다 |
+| 2026-09-29-17 | 생성 | [docs/topics/2026/2026-09-29-area65-s11.md](topics/2026/2026-09-29-area65-s11.md) | 자동 분리: 65. 가정·공동주택 의 "11. 열린 질문" 절(858자)을 옮겼다 |
+| 2026-09-29-17 | 요약 | [docs/categories/site-type-applications/home-and-apartment.md](categories/site-type-applications/home-and-apartment.md) | 65. 가정·공동주택: 섹션 3~11 신규 작성(seed → draft): 공동주택 음식·택배 배송과 세대 안 청소·가사 로봇 세 사례(현장 유형 가정), 공동현관·승강기 연동·수령 인증·사생활 기능·Matter 1.2, 관련 법령·발의 단계 특별법안, 책임 경계, 연결 영역 16개, 열린 질문 5건, 1차 수정 지시 17건·2차 수정 지시 4건·2차 재검증 지시 1건 이행 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-965.md](references/ref-965.md) | 참고문헌 ref-965 등록: 삼성물산, 아파트 세대 현관까지 음식배달로봇 확장 운영 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-966.md](references/ref-966.md) | 참고문헌 ref-966 등록: 로봇이 문앞까지 택배 가져다 주는 미래 곧 온다 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-967.md](references/ref-967.md) | 참고문헌 ref-967 등록: 실외이동로봇 시대 개막...개정 지능형로봇법 17일 시행 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-968.md](references/ref-968.md) | 참고문헌 ref-968 등록: A Roomba recorded a woman on the toilet. How did screenshots… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-969.md](references/ref-969.md) | 참고문헌 ref-969 등록: '로봇청소기' 다수 제품 보안 취약…대응방안은? |
+| 2026-09-29-17 | 생성 | [docs/references/ref-970.md](references/ref-970.md) | 참고문헌 ref-970 등록: 사생활 훔치는 로봇청소기…중국산 제품서 `무단 촬영` 가능성 확인 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-971.md](references/ref-971.md) | 참고문헌 ref-971 등록: BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-972.md](references/ref-972.md) | 참고문헌 ref-972 등록: Comparing Perceptions of Service Robot Adoption in Multi-Fam… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-973.md](references/ref-973.md) | 참고문헌 ref-973 등록: NEO humanoid designed for household use, available for preor… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-974.md](references/ref-974.md) | 참고문헌 ref-974 등록: LG ELECTRONICS PRESENTS LG CLOiD HOME ROBOT TO DEMONSTRATE "… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-975.md](references/ref-975.md) | 참고문헌 ref-975 등록: 배송·주차·청소까지…로봇 아파트 뜬다 |
+| 2026-09-29-17 | 생성 | [docs/references/ref-976.md](references/ref-976.md) | 참고문헌 ref-976 등록: 로봇배송 ‘관제·통신·전력 고도화’ 따라 성장 ‘쑥쑥’ |
+| 2026-09-29-17 | 생성 | [docs/references/ref-977.md](references/ref-977.md) | 참고문헌 ref-977 등록: Matter 1.2 Arrives with Nine New Device Types & Improvements… |
+| 2026-09-29-17 | 생성 | [docs/references/ref-978.md](references/ref-978.md) | 참고문헌 ref-978 등록: 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한) |
+| 2026-09-29-17 | 생성 | [docs/references/ref-979.md](references/ref-979.md) | 참고문헌 ref-979 등록: 로봇이 다닐 길부터 짓는다…건설사, ‘로봇 친화 설계’ 속도 |
+| 2026-09-29-17 | 생성 | [docs/glossary/matter.md](glossary/matter.md) | 용어집 항목 매터 |
+| 2026-09-29-17 | 생성 | [docs/glossary/outdoor-mobile-robot-operational-safety-certification.md](glossary/outdoor-mobile-robot-operational-safety-certification.md) | 용어집 항목 실외이동로봇 운행안전인증 |
+| 2026-09-29-17 | 생성 | [docs/glossary/vision-language-action-model.md](glossary/vision-language-action-model.md) | 용어집 항목 비전 언어 행동 모델 |
+| 2026-09-29-17 | 생성 | [docs/glossary/teleoperation.md](glossary/teleoperation.md) | 용어집 항목 원격 조작 |
+| 2026-09-29-17 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-29-16 | 갱신 | [docs/categories/site-type-applications/commercial-facilities.md](categories/site-type-applications/commercial-facilities.md) | 섹션 3~11 신규 작성(seed → draft): 호텔 객실 배송·식당 서빙·매장·쇼핑몰 청소·재고 스캔·안내 세 사례를 여섯 항목으로 정리, 승강기 이용 방식·혼잡 시간 배송 계획·식당 도입 5단계, 책임 경계, 연결 영역 15개, 열린 질문 5건, 각주 17건, 1차 수정 지시 11건 이행 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s8.md](topics/2026/2026-09-29-area64-s8.md) | 자동 분리: 64. 상업 시설 의 "8. 대표 연구와 자료" 절(1,584자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s10.md](topics/2026/2026-09-29-area64-s10.md) | 자동 분리: 64. 상업 시설 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,122자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s6.md](topics/2026/2026-09-29-area64-s6.md) | 자동 분리: 64. 상업 시설 의 "6. 대표 접근법과 기술" 절(1,017자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s4.md](topics/2026/2026-09-29-area64-s4.md) | 자동 분리: 64. 상업 시설 의 "4. 핵심 개념과 용어" 절(1,000자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s3.md](topics/2026/2026-09-29-area64-s3.md) | 자동 분리: 64. 상업 시설 의 "3. 왜 중요한가" 절(726자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s11.md](topics/2026/2026-09-29-area64-s11.md) | 자동 분리: 64. 상업 시설 의 "11. 열린 질문" 절(694자)을 옮겼다 |
+| 2026-09-29-16 | 생성 | [docs/topics/2026/2026-09-29-area64-s7.md](topics/2026/2026-09-29-area64-s7.md) | 자동 분리: 64. 상업 시설 의 "7. 관련 표준·프레임워크·오픈소스" 절(636자)을 옮겼다 |
+| 2026-09-29-16 | 요약 | [docs/categories/site-type-applications/commercial-facilities.md](categories/site-type-applications/commercial-facilities.md) | 64. 상업 시설: 섹션 3~11 신규 작성(seed → draft): 호텔·식당·매장·쇼핑몰 적용 사례 3건, 승강기 이용 방식·혼잡 시간 배송 계획·책임 경계, 1차 수정 지시 11건 이행 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-951.md](references/ref-951.md) | 참고문헌 ref-951 등록: 엘베 타고 수건 배달·안내·방역도 '척척'...호텔로 간 로봇 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-952.md](references/ref-952.md) | 참고문헌 ref-952 등록: Sam's Club rolls out inventory-checking robots chainwide |
+| 2026-09-29-16 | 생성 | [docs/references/ref-953.md](references/ref-953.md) | 참고문헌 ref-953 등록: A Communication Robot in a Shopping Mall |
+| 2026-09-29-16 | 생성 | [docs/references/ref-954.md](references/ref-954.md) | 참고문헌 ref-954 등록: Hotel managers' perceptions towards the use of robots: a mix… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-955.md](references/ref-955.md) | 참고문헌 ref-955 등록: 식당 음식 나르던 서빙로봇, 공장·창고로 진격 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-956.md](references/ref-956.md) | 참고문헌 ref-956 등록: 네이버 제2사옥, 로봇 친화형 건축물 인증 획득 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-957.md](references/ref-957.md) | 참고문헌 ref-957 등록: Elevators and service robots |
+| 2026-09-29-16 | 생성 | [docs/references/ref-958.md](references/ref-958.md) | 참고문헌 ref-958 등록: 브이디컴퍼니, 신규 서빙로봇 3종 출시…“식당 전체 자동화 이룰 것” |
+| 2026-09-29-16 | 생성 | [docs/references/ref-959.md](references/ref-959.md) | 참고문헌 ref-959 등록: 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-960.md](references/ref-960.md) | 참고문헌 ref-960 등록: The service triad: an empirical study of service robots, cus… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-961.md](references/ref-961.md) | 참고문헌 ref-961 등록: Incident 346: Robots in Japanese Hotel Annoyed Guests and Fa… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-962.md](references/ref-962.md) | 참고문헌 ref-962 등록: Score One for The Humans: Japan's Henn-na Hotel Fires Half I… |
+| 2026-09-29-16 | 생성 | [docs/references/ref-963.md](references/ref-963.md) | 참고문헌 ref-963 등록: 엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장 |
+| 2026-09-29-16 | 생성 | [docs/references/ref-964.md](references/ref-964.md) | 참고문헌 ref-964 등록: Digital transformation in restaurants: key aspects of servic… |
+| 2026-09-29-16 | 생성 | [docs/glossary/multi-trip-vehicle-routing-problem.md](glossary/multi-trip-vehicle-routing-problem.md) | 용어집 항목 다중 운행 차량 경로 문제 |
+| 2026-09-29-16 | 생성 | [docs/glossary/robot-friendly-building-certification.md](glossary/robot-friendly-building-certification.md) | 용어집 항목 로봇 친화형 건축물 인증 |
+| 2026-09-29-16 | 생성 | [docs/glossary/service-triad.md](glossary/service-triad.md) | 용어집 항목 서비스 삼자 관계 |
+| 2026-09-29-16 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-09-29-13 | 갱신 | [docs/categories/site-type-applications/hospital-and-healthcare.md](categories/site-type-applications/hospital-and-healthcare.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 첫 항목의 태그·각주를 결론 문장 뒤로 옮기고 해석 문장을 [추정]으로 분리, 3절 '운영 계층은 … 받아야 한다'를 [추정] 문장으로 분리, 5절 울산대병원 제약 칸에 '기사가 전한 국내 병원 일반의 장애 요인:' 귀속 표시, 용어집 RoMi-H 출처에 ref-872 추가·승강기 가동률 정의 한정(분리 전 전체 본문으로 반환, 분리는 코드가 다시 한다) |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s11.md](topics/2026/2026-09-29-area63-s11.md) | 자동 분리: 63. 병원·의료 의 "11. 열린 질문" 절(1,575자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s4.md](topics/2026/2026-09-29-area63-s4.md) | 자동 분리: 63. 병원·의료 의 "4. 핵심 개념과 용어" 절(1,525자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s6.md](topics/2026/2026-09-29-area63-s6.md) | 자동 분리: 63. 병원·의료 의 "6. 대표 접근법과 기술" 절(1,495자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s8.md](topics/2026/2026-09-29-area63-s8.md) | 자동 분리: 63. 병원·의료 의 "8. 대표 연구와 자료" 절(1,439자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s10.md](topics/2026/2026-09-29-area63-s10.md) | 자동 분리: 63. 병원·의료 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,068자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s3.md](topics/2026/2026-09-29-area63-s3.md) | 자동 분리: 63. 병원·의료 의 "3. 왜 중요한가" 절(858자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s7.md](topics/2026/2026-09-29-area63-s7.md) | 자동 분리: 63. 병원·의료 의 "7. 관련 표준·프레임워크·오픈소스" 절(805자)을 옮겼다 |
+| 2026-09-29-13 | 요약 | [docs/categories/site-type-applications/hospital-and-healthcare.md](categories/site-type-applications/hospital-and-healthcare.md) | 63. 병원·의료: 섹션 3~11 신규 작성(seed → draft), 병원 사례 6건 여섯 항목 정리, 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 태그·각주 정리, 3절 추론 문장 [추정] 분리, 5절 울산대병원 제약 칸 귀속 표시, 용어집 RoMi-H 출처·승강기 가동률 정의 수정 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-929.md](references/ref-929.md) | 참고문헌 ref-929 등록: Application management and effectiveness analysis of intelli… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-937.md](references/ref-937.md) | 참고문헌 ref-937 등록: ROMI-H \| Changi General Hospital |
+| 2026-09-29-13 | 생성 | [docs/references/ref-939.md](references/ref-939.md) | 참고문헌 ref-939 등록: 분당서울대병원, 무거운 이송카트 로봇자율배송, 무안경 3D 의료실습에 도입 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-940.md](references/ref-940.md) | 참고문헌 ref-940 등록: [한림대성심병원 로봇 사용기 (下)] 배송로봇, 엘리베이터 타고 횡단보도 건너 검체 운반 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-941.md](references/ref-941.md) | 참고문헌 ref-941 등록: 원내 약 배송로봇 도입 확대...정부 지원에 변화 바람 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-942.md](references/ref-942.md) | 참고문헌 ref-942 등록: ROMI-H: Bringing Robot Traffic Control to Healthcare |
+| 2026-09-29-13 | 생성 | [docs/references/ref-943.md](references/ref-943.md) | 참고문헌 ref-943 등록: Feasibility of autonomous medication delivery robots conside… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-944.md](references/ref-944.md) | 참고문헌 ref-944 등록: 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' |
+| 2026-09-29-13 | 생성 | [docs/references/ref-945.md](references/ref-945.md) | 참고문헌 ref-945 등록: 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-946.md](references/ref-946.md) | 참고문헌 ref-946 등록: A systematic review of collaborative robots for nurses: wher… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-947.md](references/ref-947.md) | 참고문헌 ref-947 등록: 서비스로봇 실증사업 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-948.md](references/ref-948.md) | 참고문헌 ref-948 등록: 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-949.md](references/ref-949.md) | 참고문헌 ref-949 등록: 감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-950.md](references/ref-950.md) | 참고문헌 ref-950 등록: 선도모델 및 모듈 소개 |
+| 2026-09-29-13 | 생성 | [docs/glossary/robotic-middleware-for-healthcare.md](glossary/robotic-middleware-for-healthcare.md) | 용어집 항목 의료 로봇 미들웨어 RoMi-H |
+| 2026-09-29-13 | 생성 | [docs/glossary/elevator-operating-rate.md](glossary/elevator-operating-rate.md) | 용어집 항목 승강기 가동률 |
+| 2026-09-29-13 | 생성 | [docs/glossary/empanelment-programme.md](glossary/empanelment-programme.md) | 용어집 항목 등재 프로그램 |
+| 2026-09-29-13 | 생성 | [docs/glossary/smart-hospital-leading-model.md](glossary/smart-hospital-leading-model.md) | 용어집 항목 스마트병원 선도모델 |
+| 2026-09-29-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-29-12 | 갱신 | [docs/categories/site-type-applications/manufacturing-plant.md](categories/site-type-applications/manufacturing-plant.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 16건(분리 후), 1차 수정 지시 18건 이행; 2차 수정(1회차): 4·8절 추론 [추정] 분리, 6절 세 형태 문장 정리, 약어 병기; 2차 수정(2회차): 9절 표의 PLC·ERP 첫 등장을 풀어 씀 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s4.md](topics/2026/2026-09-29-area62-s4.md) | 자동 분리: 62. 제조 공장 의 "4. 핵심 개념과 용어" 절을 옮겼다; 2차 수정(2회차): 두 번째 자동 분리로 소실된 4절 전체 내용(견인차·언더라이드 로봇 기반 라인 공급, 운송 주문, 셀 생산 방식, 치구 없는 다중 로봇 조립, 협동로봇, 운용 구역·ISO 3691-4)을 복구하고 자기 참조 링크 줄을 삭제, 출처·프런트매터 sources·세 줄 요약을 맞춤 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s6.md](topics/2026/2026-09-29-area62-s6.md) | 자동 분리: 62. 제조 공장 의 "6. 대표 접근법과 기술" 절을 옮겼다; 2차 수정(1회차): 1절·3절 첫 문장의 세 형태 (3) 을 '작업자와 로봇이 함께 조립하거나 두 대 이상의 로봇(로봇팔·이동 플랫폼)이 치구 없이 조립하거나'로 고침(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s8.md](topics/2026/2026-09-29-area62-s8.md) | 자동 분리: 62. 제조 공장 의 "8. 대표 연구와 자료" 절을 옮겼다; 2차 수정(1회차): 첫 항목(1절·3절)의 '라인 공급 작업 단위 기준' 문장을 [추정] 별도 문장으로 분리(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s11.md](topics/2026/2026-09-29-area62-s11.md) | 자동 분리: 62. 제조 공장 의 "11. 열린 질문" 절을 옮겼다; 2차 수정(1회차): KETI 첫 등장을 '한국전자기술연구원(KETI)'로 병기(2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s3.md](topics/2026/2026-09-29-area62-s3.md) | 자동 분리: 62. 제조 공장 의 "3. 왜 중요한가" 절(980자)을 옮겼다(2차 재실행 1·2회차 변경 없음) |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s10.md](topics/2026/2026-09-29-area62-s10.md) | 자동 분리: 62. 제조 공장 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(904자)을 옮겼다; 2차 수정(2회차): 23. 항목의 운송 주문 생성을 [추정] 벤더 주장`[^ref-926]`으로 분리(ref-926 을 출처·sources 에 추가), 25. 항목의 운반 로봇 배정 추론을 [추정] 별도 문장으로 분리, 26. 항목에서 '순서' 삭제 |
+| 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s7.md](topics/2026/2026-09-29-area62-s7.md) | 자동 분리: 62. 제조 공장 의 "7. 관련 표준·프레임워크·오픈소스" 절(885자)을 옮겼다(2차 재실행 1·2회차 변경 없음) |
+| 2026-09-29-12 | 요약 | [docs/categories/site-type-applications/manufacturing-plant.md](categories/site-type-applications/manufacturing-plant.md) | 62. 제조 공장: 섹션 3~11 신규 작성(seed → draft), 각주 16건(분리 주제 페이지 7건 포함 17건), 용어 2건, 열린 질문 4건 신규, 현장 유형 매트릭스 제조 공장 6칸; 2차 수정 2회차: 분리 페이지 핵심 개념과 용어 복구, 다른 연구영역과의 연결 23·25·26 항목 태그·문구 정정, 9절 PLC·ERP 풀어 씀 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-922.md](references/ref-922.md) | 참고문헌 ref-922 등록: A classification of tactical assembly line feeding problems |
+| 2026-09-29-12 | 생성 | [docs/references/ref-923.md](references/ref-923.md) | 참고문헌 ref-923 등록: VDA 5050: Managing Transport in Manufacturing Plants |
+| 2026-09-29-12 | 생성 | [docs/references/ref-924.md](references/ref-924.md) | 참고문헌 ref-924 등록: VDA 5050: unified AGV fleet control in real time at VW |
+| 2026-09-29-12 | 생성 | [docs/references/ref-925.md](references/ref-925.md) | 참고문헌 ref-925 등록: Flexible Production Systems: Automated Generation of Operati… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-926.md](references/ref-926.md) | 참고문헌 ref-926 등록: AGV fleet management integration with intralogistics |
+| 2026-09-29-12 | 생성 | [docs/references/ref-927.md](references/ref-927.md) | 참고문헌 ref-927 등록: LG전자, 스마트팩토리 솔루션 확대에 AMR 등 물류로봇 적극 활용한다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-928.md](references/ref-928.md) | 참고문헌 ref-928 등록: Integrating collaborative robots in manufacturing, logistics… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-930.md](references/ref-930.md) | 참고문헌 ref-930 등록: ‘혁신의 장場’ HMGICS, 인간 중심 모빌리티 솔루션의 새 시대 열다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-931.md](references/ref-931.md) | 참고문헌 ref-931 등록: "로봇 몇 대, 어디로 움직일까"…중소 제조현장에 'AI 공장장' 뜬다 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-932.md](references/ref-932.md) | 참고문헌 ref-932 등록: KETI, LLM 모델 및 모방학습, 조립공정 자동화 기술 공개 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-933.md](references/ref-933.md) | 참고문헌 ref-933 등록: Collaborative robots in manufacturing and assembly systems:… |
+| 2026-09-29-12 | 생성 | [docs/references/ref-934.md](references/ref-934.md) | 참고문헌 ref-934 등록: Multi-Robot Assembly Strategies and Metrics |
+| 2026-09-29-12 | 생성 | [docs/references/ref-935.md](references/ref-935.md) | 참고문헌 ref-935 등록: 시뮬레이션을 이용한 자동차 부품 공급 시스템 도입 방안 분석: R자동차 사례 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-936.md](references/ref-936.md) | 참고문헌 ref-936 등록: 자동차 생산을 위한 통합창고 연구 |
+| 2026-09-29-12 | 생성 | [docs/references/ref-938.md](references/ref-938.md) | 참고문헌 ref-938 등록: ISO 3691-4:2023: Compliance Testing for Automated Guided Veh… |
+| 2026-09-29-12 | 생성 | [docs/glossary/assembly-line-feeding-problem.md](glossary/assembly-line-feeding-problem.md) | 용어집 항목 조립라인 공급 문제 |
+| 2026-09-29-12 | 생성 | [docs/glossary/cell-based-production.md](glossary/cell-based-production.md) | 용어집 항목 셀 생산 방식 |
+| 2026-09-29-11 | 갱신 | [docs/categories/site-type-applications/warehouse.md](categories/site-type-applications/warehouse.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 20건 추가; 2차 수정: 10절 1번 연결 벤더 주장 병기, AGV·AMR·WMS·WCS 첫 등장 풀이와 QPS·DPS·ITS 회사 표기 명시, 5절 마지막 단락 분할, [의견] 귀속 명시 |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s8.md](topics/2026/2026-09-29-area61-s8.md) | 자동 분리: 61. 물류창고 의 "8. 대표 연구와 자료" 절(1,603자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s6.md](topics/2026/2026-09-29-area61-s6.md) | 자동 분리: 61. 물류창고 의 "6. 대표 접근법과 기술" 절(1,262자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s4.md](topics/2026/2026-09-29-area61-s4.md) | 자동 분리: 61. 물류창고 의 "4. 핵심 개념과 용어" 절(1,156자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s11.md](topics/2026/2026-09-29-area61-s11.md) | 자동 분리: 61. 물류창고 의 "11. 열린 질문" 절(1,068자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s7.md](topics/2026/2026-09-29-area61-s7.md) | 자동 분리: 61. 물류창고 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,062자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s10.md](topics/2026/2026-09-29-area61-s10.md) | 자동 분리: 61. 물류창고 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(868자)을 옮겼다; 2차 수정: 1. 기술·시장·업체 동향 연결 문장(3절 첫 항목·1. 세 줄 요약 첫 항목)에 벤더 주장 병기 |
+| 2026-09-29-11 | 생성 | [docs/topics/2026/2026-09-29-area61-s3.md](topics/2026/2026-09-29-area61-s3.md) | 자동 분리: 61. 물류창고 의 "3. 왜 중요한가" 절(855자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-29-11 | 요약 | [docs/categories/site-type-applications/warehouse.md](categories/site-type-applications/warehouse.md) | 61. 물류창고: 3~11절 신규 작성(seed → draft): 흐름 단계별 로봇 작업, 쿠팡 대구·DHL·CJ대한통운 사례, 스마트물류센터 인증 심사기준, ROP 직접 범위; 같은 날 실행 2026-09-29-10 의 ref-910~ref-912 과 id 충돌, URL 기준 병합 필요 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-910.md](references/ref-910.md) | 참고문헌 ref-910 등록: Robotized and Automated Warehouse Systems: Review and Recent… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-911.md](references/ref-911.md) | 참고문헌 ref-911 등록: Planning and control of autonomous mobile robots for intralo… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-912.md](references/ref-912.md) | 참고문헌 ref-912 등록: Integration of returns and decomposition of customer orders… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-913.md](references/ref-913.md) | 참고문헌 ref-913 등록: 급속 확산되는 물류현장의 로봇적용 사례 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-914.md](references/ref-914.md) | 참고문헌 ref-914 등록: 온라인 주문 풀필먼트를 위한 물류센터 피킹 설비 최적화에 대한 연구 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-915.md](references/ref-915.md) | 참고문헌 ref-915 등록: CJ대한통운이 뽑은 물류자동화 혁신 기술 '톱3' |
+| 2026-09-29-11 | 생성 | [docs/references/ref-916.md](references/ref-916.md) | 참고문헌 ref-916 등록: Amazon launches a new AI foundation model to power its robot… |
+| 2026-09-29-11 | 생성 | [docs/references/ref-917.md](references/ref-917.md) | 참고문헌 ref-917 등록: 쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이... |
+| 2026-09-29-11 | 생성 | [docs/references/ref-918.md](references/ref-918.md) | 참고문헌 ref-918 등록: ‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-919.md](references/ref-919.md) | 참고문헌 ref-919 등록: 인증스마트물류센터 : 인증심사 > 심사기준 > 일반 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-920.md](references/ref-920.md) | 참고문헌 ref-920 등록: CJ대한통운 안성 MP허브, 국토부 ‘스마트물류센터 1등급’ 인증 |
+| 2026-09-29-11 | 생성 | [docs/references/ref-921.md](references/ref-921.md) | 참고문헌 ref-921 등록: DHL Makes First Commercial Deployment of Boston Dynamics Str… |
+| 2026-09-29-11 | 생성 | [docs/glossary/goods-to-person.md](glossary/goods-to-person.md) | 용어집 항목 상품-대-사람 |
+| 2026-09-29-11 | 생성 | [docs/glossary/shuttle-based-storage-and-retrieval-system.md](glossary/shuttle-based-storage-and-retrieval-system.md) | 용어집 항목 셔틀 기반 저장·회수 시스템 |
+| 2026-09-29-11 | 생성 | [docs/glossary/amr-assisted-order-picking.md](glossary/amr-assisted-order-picking.md) | 용어집 항목 AMR 협업 피킹 |
+| 2026-09-29-11 | 생성 | [docs/glossary/smart-logistics-center-certification.md](glossary/smart-logistics-center-certification.md) | 용어집 항목 스마트물류센터 인증 |
+| 2026-09-29-10 | 갱신 | [docs/categories/planning-and-business/technology-market-and-vendor-trends.md](categories/planning-and-business/technology-market-and-vendor-trends.md) | 섹션 3~11 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 표준 3건, 자료 10건, 경계 2행, 연결 9개, 열린 질문 4건), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주. 2차: 11절 첫 문장 괄호 정리, 4절 'IT/OT 융합' 표기 통일, 5절 사례 제목의 AMR·RMAC 과 9절 IFR 약어 풀이 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s6.md](topics/2026/2026-09-29-area01-s6.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "6. 대표 접근법과 기술" 절(2,471자)을 옮겼다. 2차: '시장 통계 추적' 첫 단락을 세 단락으로 나눔(내용·태그·각주 동일) |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s8.md](topics/2026/2026-09-29-area01-s8.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "8. 대표 연구와 자료" 절(1,493자)을 옮겼다. 2차: IFR 동향 항목의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s3.md](topics/2026/2026-09-29-area01-s3.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "3. 왜 중요한가" 절(1,175자)을 옮겼다. 2차: IFR 동향 문장의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s4.md](topics/2026/2026-09-29-area01-s4.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "4. 핵심 개념과 용어" 절(1,162자)을 옮겼다. 2차: 용어 항목 제목·세 줄 요약·3절 첫 문장의 'IT/OT 융합' 표기 통일 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s11.md](topics/2026/2026-09-29-area01-s11.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "11. 열린 질문" 절(838자)을 옮겼다. 2차: 세 줄 요약 첫 항목과 3절 첫 문장의 닫히지 않은 괄호를 두 문장으로 고침 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s10.md](topics/2026/2026-09-29-area01-s10.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(769자)을 옮겼다. 2차 변경 없음 |
+| 2026-09-29-10 | 생성 | [docs/topics/2026/2026-09-29-area01-s7.md](topics/2026/2026-09-29-area01-s7.md) | 자동 분리: 1. 기술·시장·업체 동향 의 "7. 관련 표준·프레임워크·오픈소스" 절(582자)을 옮겼다. 2차 변경 없음 |
+| 2026-09-29-10 | 요약 | [docs/categories/planning-and-business/technology-market-and-vendor-trends.md](categories/planning-and-business/technology-market-and-vendor-trends.md) | 1. 기술·시장·업체 동향: 3~11절 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 열린 질문 4건, 용어 4건, 출처 16건). 2차 수정 반영(11절 괄호 정리, 6절 단락 분할, 'IT/OT 융합' 표기 통일, AMR·RMAC·IFR 약어 풀이). 주의: ref-899·ref-900 은 같은 날 실행 2026-09-29-09 가 다른 URL 에 부여한 번호이므로 퍼블리셔가 URL 기준으로 합칠 때 번호 충돌을 확인해야 한다 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-899.md](references/ref-899.md) | 참고문헌 ref-899 등록: World Robotics 2025 report – SERVICE ROBOTS – released by IF… |
+| 2026-09-29-10 | 생성 | [docs/references/ref-900.md](references/ref-900.md) | 참고문헌 ref-900 등록: World Robotics 2025 report – INDUSTRIAL ROBOTS – released by… |
+| 2026-09-29-10 | 생성 | [docs/references/ref-901.md](references/ref-901.md) | 참고문헌 ref-901 등록: Robot Density Surges in Europe, Asia, and Americas |
+| 2026-09-29-10 | 생성 | [docs/references/ref-902.md](references/ref-902.md) | 참고문헌 ref-902 등록: Top 5 Global Robotics Trends 2026 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-903.md](references/ref-903.md) | 참고문헌 ref-903 등록: [Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-904.md](references/ref-904.md) | 참고문헌 ref-904 등록: 산업부, '제4차 지능형 로봇 기본계획' 발표 |
+| 2026-09-29-10 | 생성 | [docs/references/ref-905.md](references/ref-905.md) | 참고문헌 ref-905 등록: Mobile Robot Market Forecast Revised Downward |
+| 2026-09-29-10 | 생성 | [docs/references/ref-906.md](references/ref-906.md) | 참고문헌 ref-906 등록: Digit Moves Over 100,000 Totes in Commercial Deployment |
+| 2026-09-29-10 | 생성 | [docs/references/ref-907.md](references/ref-907.md) | 참고문헌 ref-907 등록: Agility Robotics' Digit humanoids land first official job |
+| 2026-09-29-10 | 생성 | [docs/references/ref-908.md](references/ref-908.md) | 참고문헌 ref-908 등록: CJ대한통운, 물류업계 최초 AI 휴머노이드 상용화 '첫발' |
+| 2026-09-29-10 | 생성 | [docs/references/ref-909.md](references/ref-909.md) | 참고문헌 ref-909 등록: 부품 배치 '척척' 무거운 짐도 '사뿐'… 아틀라스 2.5만대 로봇 학교 간다 |
+| 2026-09-29-10 | 생성 | [docs/glossary/robot-as-a-service.md](glossary/robot-as-a-service.md) | 용어집 항목 서비스형 로봇 |
+| 2026-09-29-10 | 생성 | [docs/glossary/robot-density.md](glossary/robot-density.md) | 용어집 항목 로봇 밀도 |
+| 2026-09-29-10 | 생성 | [docs/glossary/agentic-ai.md](glossary/agentic-ai.md) | 용어집 항목 에이전틱 AI |
+| 2026-09-29-10 | 생성 | [docs/glossary/it-ot-convergence.md](glossary/it-ot-convergence.md) | 용어집 항목 IT/OT 융합 |
 | 2026-09-29-09 | 갱신 | [docs/categories/robot-ontology/ontology-verification-and-change-management.md](categories/robot-ontology/ontology-verification-and-change-management.md) | 영역 심화: 섹션 3~11 신규 작성(finding 27건 반영, 1차 조건부 승인 수정 13건·2차 수정 4건 이행), 프런트매터 related_areas·tags·confidence·sources·last_run 추가, version 2 |
 | 2026-09-29-09 | 생성 | [docs/topics/2026/2026-09-29-area07-s6.md](topics/2026/2026-09-29-area07-s6.md) | 자동 분리: 7. 온톨로지 검증·변경 관리 의 "6. 대표 접근법과 기술" 절(2,811자)을 옮겼다 |
 | 2026-09-29-09 | 생성 | [docs/topics/2026/2026-09-29-area07-s8.md](topics/2026/2026-09-29-area07-s8.md) | 자동 분리: 7. 온톨로지 검증·변경 관리 의 "8. 대표 연구와 자료" 절(1,834자)을 옮겼다 |

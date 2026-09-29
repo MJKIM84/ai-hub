@@ -1,0 +1,855 @@
+{
+  "duration_api_ms": 938607,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 5.58854575,
+  "usage": {
+    "input_tokens": 194,
+    "cache_creation_input_tokens": 102473,
+    "cache_read_input_tokens": 1015983,
+    "output_tokens": 53380,
+    "output_tokens_details": {
+      "thinking_tokens": 20398
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 102473,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 36625,
+        "cache_read_input_tokens": 182052,
+        "cache_creation_input_tokens": 5585,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5585
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-fable-5-1": {
+      "inputTokens": 194,
+      "outputTokens": 53380,
+      "cacheReadInputTokens": 1015983,
+      "cacheCreationInputTokens": 102473,
+      "webSearchRequests": 0,
+      "costUSD": 4.974395749999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 20398,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 333180,
+      "outputTokens": 18194,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 19,
+      "costUSD": 0.6141499999999998,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 50,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-11\",\"date\":\"2026-09-29\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":61,\"area_name\":\"61. 물류창고\",\"category\":\"Q. 현장 유형별 적용\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 상품 대 사람 피킹·소팅봇·무인 산업 차량·스마트물류센터 인증 용어 없음(로봇 이동형 풀필먼트 시스템·주문 배치·풋월·음성 피킹·웨이브리스 출고 지시·운용 구역·창고 실행·관리 시스템은 용어집에 이미 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 입고·적치·보충·피킹·포장·출하·반품 단계별 사례와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 로봇 이동형 풀필먼트 시스템, 피스 피킹, 분류 로봇, 무인지게차, 반품 통합 접근 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ISO 3691-4, 국토교통부 스마트물류센터 인증, 고용노동부 협동작업 안전 가이드, VDA 5050, Open-RMF 의 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음 — 로봇화 창고 리뷰, 전자상거래 창고 서베이, Kiva 논문, Amazon Picking Challenge 분석, 국내 로봇학회 논문 없음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 17. 작업 대상·자산 식별과 인계 추적, 23. 업무 시스템 연동, 25. 작업 배정 — MRTA, 27. 다중 로봇 경로·교통 관리 — MAPF, 35. 처리능력·규모·배치 설계, 48. 안전·위험 관리, 49. 사람 근접 안전, 1. 기술·시장·업체 동향 연결 필요\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-134·oq-138·oq-142·oq-146 미반영, 정정 요청 없음\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"물류창고의 입고부터 반품까지 흐름에서 로봇 작업은 어디에 어떻게 들어가는가? [분류원문]\",\"입고·적치·보충·피킹·포장·출하·반품 각 단계에 어떤 종류의 로봇(AGV·AMR·로봇 이동형 풀필먼트 시스템·피스 피킹·팔레타이징·분류 로봇·무인지게차)이 들어가며, 사례마다 시작 조건·작업 대상·수행 자원·제약·완료·인계·예외·성과는 어떻게 정리되는가? (섹션 4·5·6 겨냥)\",\"로봇 이동형 풀필먼트 시스템과 전자상거래 창고 자동화를 다룬 대표 연구·리뷰는 무엇이고, 어떤 운영 결정(주문 배정·포드 선택·로봇 수)이 처리량을 좌우한다고 보는가? (섹션 6·8 겨냥)\",\"물류창고 로봇 운영에 적용되는 안전 표준·국내 규제·인증제도(ISO 3691-4, 고용노동부 협동작업 안전 가이드, 국토교통부 스마트물류센터 인증)와 플릿 연동 인터페이스(VDA 5050, Open-RMF)는 무엇인가? (섹션 7 겨냥)\",\"국내 물류센터의 로봇 도입 사례(CJ대한통운 군포 스마트 풀필먼트센터, 쿠팡 대구 풀필먼트센터)는 어떤 로봇을 어느 단계에 넣고 어떤 성과와 안전 조치를 보고하는가? (섹션 5·8 겨냥, 한국 자료 우선)\",\"물류창고에서 ROP 가 직접 맡을 것(작업 요청 수신·배정·인계·완료 확인)과 창고 관리 시스템·설비 제어·로봇 자체 지능에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)\",\"oq-134·oq-138·oq-142·oq-146: 국내 물류창고에서 운영 기록의 시뮬레이션 재현, 대화형 시나리오 구성·업무 지시, 한국어 음성 지시 인식률을 보고한 자료가 있는가? (섹션 11 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Azadeh·de Koster·Roy(에라스무스 대학교, Transportation Science 53(4), 2019)의 리뷰는 셔틀 기반 보관·인출 시스템, 셔틀 기반 압축 보관 시스템, 로봇 이동형 풀필먼트 시스템 같은 새 범주의 로봇화 취급 시스템이 물류센터에서 공간을 적게 쓰고 수요 변동에 유연하며 24시간 가동될 수 있다고 정리하고, 보관·오더피킹 시스템 선택, 보관 위치 배정, 주문 배치, 피커 라우팅 같은 설계·운영 결정을 로봇 창고에 맞게 다시 검토해야 한다고 본다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-910\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"RePub 초록: 로봇 취급 시스템은 'require little space, provide flexibility in managing varying demand' 하고 연속 가동된다. 검토 범주는 shuttle-based S/R, shuttle-based compact storage, robotic mobile fulfillment systems. 초록만 열람(전문 미열람).\",\"as_of\":\"2019\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f2\",\"claim\":\"Boysen·Weidinger·de Koster(European Journal of Operational Research 277(2), 2018 온라인)의 서베이는 전자상거래 창고가 주문당 몇 줄·소량인 시간 민감 피킹 주문을 대량으로 처리해야 하며, 자동 피킹 워크스테이션·로봇·AGV 보조 오더피킹 같은 자동화와 혼합 선반 보관·동적 주문 처리·배치·존·분류 시스템 같은 조직적 적응으로 대응한다고 정리했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-911\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"에라스무스 대학교 연구 포털 초록: 'large numbers of time-critical picking orders each consisting of just a few order lines with low order quantities'. 초록은 반품 처리를 다루지 않는다. 초록만 열람.\",\"as_of\":\"2018-08-23\",\"site_type\":\"물류창고\",\"flow_item\":\"시작 조건\"},{\"id\":\"f3\",\"claim\":\"Wurman·D'Andrea·Mountz(AI Magazine 29(1), 2008)는 Kiva 시스템이 소형 자율 로봇이 이동식 보관 선반을 들어 작업자에게 상품을 가져오는 방식으로 pick-pack-ship 창고의 작업자 생산성을 2배 이상 높이고 책임 추적성과 유연성을 함께 개선하며, 대형 물류센터 설치는 500대 이상의 차량을 필요로 하고 2006년 여름 첫 상설 설치가 이루어졌다고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-913\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"AAAI AI Magazine 초록: 'movable storage shelves that can be lifted by small, autonomous robots'; 생산성 2배 이상; 500대 이상 차량; 'the first commercially available, large-scale autonomous robot system'. DOI 10.1609/aimag.v29i1.2082. 초록만 열람.\",\"as_of\":\"2008-03-20\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f4\",\"claim\":\"Merschformann·Lamballais·de Koster·Suhl(2018)은 로봇 이동형 풀필먼트 시스템의 피킹·보충 주문 배정, 포드 선택, 포드 보관 위치 배정 결정 규칙을 이산 사건 시뮬레이션으로 비교해 피킹 주문 배정이 단위 처리량에 큰 영향을 주는 반면 보충 주문 배정·포드 선택·포드 보관 배정의 영향은 작고, SKU 가 많은 창고는 포드 수와 보관 면적이 같아도 처리량 유지에 더 많은 로봇이 필요하며, 반품 처리는 SKU 다양성과 피킹 주문이 많은 창고에서만 처리량에 의미 있는 영향을 준다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-912\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 1801.06703 초록: 로봇이 이동식 선반(포드)을 워크스테이션으로 나르는 parts-to-picker 시스템; 결정 문제는 order assignment(pick·replenishment), pod selection, pod storage assignment; 처리량 지표 7종 상관; 반품은 SKU 다양성·피킹 주문이 많을 때만 영향. 초록만 열람.\",\"as_of\":\"2018-01-20\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\"},{\"id\":\"f5\",\"claim\":\"서로 다른 세 발행 주체(Kiva 개발진의 AI Magazine 논문, 에라스무스 대학교 연구진의 Transportation Science 리뷰, 파더보른·에라스무스 연구진의 시뮬레이션 연구)가 로봇이 이동식 선반(포드)을 작업자에게 가져오는 로봇 이동형 풀필먼트 시스템을 각각 서술해, 이 방식이 물류창고 피킹의 대표 로봇 접근법으로 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-913\",\"ref-910\",\"ref-912\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"ref-913 은 Kiva 의 이동식 선반·자율 로봇, ref-910 은 robotic mobile fulfillment systems 를 리뷰 범주로, ref-912 는 포드를 워크스테이션으로 나르는 parts-to-picker 시스템으로 각각 기술. 세 출처 모두 초록만 열람해 high 는 주지 않음.\",\"as_of\":\"2019\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f6\",\"claim\":\"Correll 외 10인(2016 v1, 2017 v3)의 첫 Amazon Picking Challenge 분석은 창고 선반에서 물품을 자율로 집는 로봇 과제에 참가한 26개 팀에게 기구 설계·인식 장치·계획·제어 접근을 묻는 28문항 설문을 해 경향을 팀 성적과 대응시키고 교훈을 정리해, 피스 피킹 로봇이 물체 인식·파지·작업 계획을 통합해야 하는 연구 과제로 남아 있음을 보였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-914\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 1601.05484 초록: 과제는 로봇이 'pick items from a warehouse shelf'; 26개 팀·28문항 설문으로 mechanism design, perception, planning/control 을 조사해 성적과 상관을 분석. 초록만 열람.\",\"as_of\":\"2017-09-22\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f7\",\"claim\":\"Schrotenboer·Wruck·Vis·Roodbergen(2019)은 사람 피커가 다니는 picker-to-parts 전자상거래 창고에서 반품 재입고를 피커 경로에 통합하고 고객 주문을 여러 배치로 분할하는 통합 최적화(배치 구성·피커 배정·순서)를 다루어, 반품 재입고 통합으로 10~15%, 주문 분할 허용으로 최대 44%, 제안한 탐색 휴리스틱으로 평균 17.4% 의 비용 절감을 보고했다(최대 5,547개 피킹·2,491개 재입고 벤치마크).\",\"tag\":\"사실\",\"source_ids\":[\"ref-915\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"arXiv 1909.01794 초록: 반품 재입고를 정규 피킹 경로에 넣어 'cost-savings of 10 to 15%', 주문 분할 'up to 44%', ALNS 'average cost-savings of 17.4%'. 로봇이 아닌 사람 피커 대상 연구이므로 반품 흐름의 작업 설계 근거로만 쓸 것. 초록만 열람.\",\"as_of\":\"2019-09-01\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\"},{\"id\":\"f8\",\"claim\":\"ISO 3691-4:2023 은 무인 산업 차량(driverless industrial truck)과 그 시스템 — 차량, 제어 시스템, 하역 부속 장치, 배터리 충전소, 하역 이송 스테이션 — 의 안전 요구사항과 검증 수단을 정하며, 무인 산업 차량의 예로 AGV·자율이동로봇·봇·무인 운반 카트·터널 터거·언더카트를 들고, 운용 구역의 준비 사항을 부속서 A 에 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-916\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"iso.org 카탈로그 검색 요약: 'specifies safety requirements and the means for their verification for driverless industrial trucks and their systems'; 적용 대상 vehicle·control system·load handling attachments·battery charging stations·load transfer stations; 예시 AGV, AMR, bots, automated guided cart, tunnel tugger, under cart; 운용 구역 준비는 Annex A. 원문 미열람(iso.org 403).\",\"as_of\":\"2023\",\"site_type\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f9\",\"claim\":\"국토교통부는 「물류시설의 개발 및 운영에 관한 법률」 제21조의4 에 근거해 첨단 물류시설·설비·운영시스템을 도입해 저비용·고효율·안전성·친환경성에서 우수한 성능을 낼 수 있는 물류창고를 스마트물류센터로 인증하고 행정적·재정적 혜택을 준다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-917\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"국가물류통합정보센터 안내: 근거 법령 물류시설의 개발 및 운영에 관한 법률 제21조의4, 주관 국토교통부, 대상은 '첨단물류시설 및 설비, 운영시스템 등을 도입하여 저비용·고효율·안전성·친환경성 등에서 우수한 성능을 발휘할 수 있는 물류창고'. 세부 기준은 첨부 PDF 에만 있어 미열람 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":\"제약\"},{\"id\":\"f10\",\"claim\":\"한국교통연구원이 운영하는 인증스마트물류센터 사이트에 따르면 스마트물류센터 인증 심사는 입고·보관·피킹·출고 등 물류 처리 과정별 첨단·자동화 정도를 보는 기능영역과 기반영역으로 구성되어 1~5등급을 부여하며, 인증 기업은 구축 비용 보조·융자(시설·운영자금 이차보전 1.0~2.0%p, 2025년 예산 125.86억 원), 신·증축 시 용적률·높이 완화, 신용보증기금·기술보증기금 보증 우대를 받는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-918\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"cslc.koti.re.kr 첫 페이지·인증혜택 페이지: 기능영역·기반영역, 입고·보관·피킹·출고 과정별 평가, 1~5등급, 운영기관 국토교통부·한국교통연구원; 이차보전 지원한도 500억~1,500억 원, 금리 1.0~2.0%p, 2024년 98.72억·2025년 125.86억 원 예산. 심사기준 상세 페이지(new_sub2_2_1)는 404 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":\"제약\"},{\"id\":\"f11\",\"claim\":\"CJ대한통운의 2021-12-21 보도자료에 따르면 경기 군포 풀필먼트센터 한 층에 바닥 QR 코드 경로를 따르는 AGV 와 AMR 등 무인 운반 로봇 128대와 완충재 투입 로봇팔을 넣어 피킹·포장·분류를 자동화하고, 3D 스캐너로 박스 빈 공간을 측정하는 스마트 패키징으로 라벨·테이프 작업을 로봇이 맡게 했으며, 디지털 트윈은 데이터 모니터링·운영화의 1단계이고 2023년 완료를 목표로 한다고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-919\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"CJ대한통운 뉴스룸 보도자료(2021-12-21): 군포 센터 단일 층, 로봇 128대, QR 코드 경로 AGV, 2차 작업용 AMR, 완충재 로봇팔, 3D 스캐너 스마트 패키징, 피킹·포장·분류 자동화, 디지털 트윈 1단계(데이터 모니터링) 2023년 완료 예정.\",\"as_of\":\"2021-12-21\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f12\",\"claim\":\"CJ대한통운은 군포 스마트 풀필먼트센터의 AGV 도입으로 기존 운영 대비 처리 능력이 약 33% 향상됐다고 발표했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-919\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 보도자료 원문 '33% improved processing capacity compared to conventional operations'(열람 도구 요약). 2022-07 르포(ref-920)는 운용 효율 35%·생산성 55% 로 달리 전해 수치가 일치하지 않는다.\",\"as_of\":\"2021-12-21\",\"site_type\":\"물류창고\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f13\",\"claim\":\"파이낸셜뉴스(2022-07-17) 르포에 따르면 군포 스마트 풀필먼트센터는 긱플러스(Geek+) 피킹 AGV 101대와 이송 AGV 25대(대당 약 3,000만 원)를 운영하며, 작업자가 터치스크린으로 상품을 호출하면 피킹 AGV 가 해당 선반을 찾아 실어 오고 작업자는 피킹·터치·바코드 스캔만 한 뒤 검수존 선반으로 옮기며 검수 뒤 이송 AGV 가 선반을 나르고 3D 비전 스캐너와 로봇팔이 포장을 처리해, 시간당 작업량이 일반층 15.4박스 대비 스마트층 23.8박스(55% 증가), 일 출고 용량이 7,400박스 대비 1만 박스라고 전했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-920\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"기사: '작업자가 터치스크린으로 상품을 호출하면 최적의 동선으로 해당상품이 피킹된 선반을 찾아가 몸에 실어' 반입; 피킹 AGV 101대·이송 AGV 25대; 일반층 15.4 vs 스마트층 23.8 박스/시간; 일 1만 vs 7,400 박스; 운용 효율 35%. 수치는 취재 시 회사가 제공한 것으로 보인다.\",\"as_of\":\"2022-07-17\",\"site_type\":\"물류창고\",\"flow_item\":\"완료·인계\"},{\"id\":\"f14\",\"claim\":\"로봇신문(2023-02-07)에 따르면 쿠팡 대구 풀필먼트센터는 3,200억 원 이상을 투자해 바닥 QR 코드로 최대 1,000kg 선반을 작업자에게 2분 안에 가져오는 AGV 1,000대 이상(업무 단계 65% 감소), 송장 바코드를 스캔해 배송지별로 분류·이송하는 소팅봇 수백 대, 직원이 버튼 한 번을 누르면 대용량 상품을 옮기는 무인지게차 수십 대를 운영하며 무인지게차 운영 구역은 사람 출입을 차단한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-921\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"로봇신문 포토뉴스(2023-02-07, 2-08 갱신): AGV 1,000대 이상·1,000kg 선반·2분 내 전달·업무 65% 감소; 소팅봇은 '송장 바코드를 스캔한 뒤 배송지별로 분류·이송'(요약); 무인지게차 수십 대, 운영 구역 출입 제한; 투자 3,200억 원 이상. 쿠팡 뉴스룸 원문(보도자료)은 403 으로 미열람.\",\"as_of\":\"2023-02-07\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f15\",\"claim\":\"물류신문(2023-02-07)에 따르면 쿠팡 대구 풀필먼트센터는 지하 2층~지상 10층 33만㎡ 규모에 3,200억 원을 투자해 AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 다수(일 최대 1,600 팔레트)를 운영하고 업무 단계를 65% 줄였으며, 사람 작업 공간과 자동화 구역을 분리하고 무인지게차는 작업자가 제한 구역에 들어오면 자동 정지한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-922\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"물류신문 르포(2023-02-07): 33만㎡·12층·3,200억 원; AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 일 최대 1,600 팔레트; 업무 65% 감소, 2분 내 전달; '사람 작업 공간과 자동화 구역 분리', 작업자 진입 시 무인지게차 자동 정지(요약).\",\"as_of\":\"2023-02-07\",\"site_type\":\"물류창고\",\"flow_item\":\"제약\"},{\"id\":\"f16\",\"claim\":\"서로 다른 두 전문지(로봇신문, 물류신문)의 현장 취재가 쿠팡 대구 풀필먼트센터의 AGV 약 1,000대·소팅봇 수백 대·무인지게차 운영, 업무 단계 65% 감소, 무인지게차 구역의 사람 출입 차단을 각각 같은 내용으로 전해, 국내 물류창고에서 적치·피킹(AGV)·출하 분류(소팅봇)·팔레트 이동(무인지게차)에 로봇이 함께 쓰이는 사례가 한 곳 이상에서 확인된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-921\",\"ref-922\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"ref-921 과 ref-922 는 같은 날 공개 행사를 각각 취재한 기사로 서로 인용하지 않으나 수치의 원천이 쿠팡 발표라는 점에서 독립성이 약하며, 정량 수치(대수·65%)는 회사 제공 값으로 보아야 한다.\",\"as_of\":\"2023-02-07\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f17\",\"claim\":\"곽경민·박범·고은지·윤철주·김경훈(CJ대한통운, 로봇학회 논문지 17(4), 2022)은 물류산업이 많은 공정을 인력에 의존하지만 로봇 기술 진전과 경쟁에 따른 가격 하락으로 물류 로봇 적용이 빠르게 늘고 있다고 보고, AGV·AMR, 자동창고(ASRS), 박스·피스 핸들링 로봇, 피킹 로봇, 팔레타이징 로봇, 웨어러블 로봇 유형별 적용 사례를 검토하며 국내 사례로 CJ대한통운의 웨어러블 로봇 슈트 현장 적용을 들었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-923\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"KCI 초록: '물류산업이 많은 공정에서 인력에 의존하고 있지만 로봇 기술 진전과 경쟁으로 인한 가격 하락으로 물류 로봇 적용이 빠르게 증가'(요약); 다루는 유형 AGV/AMR·ASRS·박스/피스 핸들링·피킹·팔레타이징·웨어러블. 저자 전원 CJ대한통운 소속이므로 자사 사례 서술은 회사 관점임. 초록만 열람.\",\"as_of\":\"2022\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f18\",\"claim\":\"고용노동부 산업안전기준과는 2023-07-03 사람과 같은 공간에서 작업하는 산업용 로봇을 대상으로 고정식 협동로봇과 이동식 로봇의 협동작업 안전 가이드를 배포해 위험성평가 절차와 안전 조치, 관련 규정 개정 사항을 안내했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-924\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"고용노동부 정책자료(2023-07-03, 산업안전기준과): '사람과 같은 공간에서 작업하는 용도로 사용하는 산업용 로봇' 대상, 고정식 협동로봇·이동식 로봇 두 범주, 위험성평가·안전 조치·관련 규정 개정 내용. 가이드 본문 PDF 는 열지 않음.\",\"as_of\":\"2023-07-03\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f19\",\"claim\":\"Open-RMF 의 RMF Core 는 플랫폼 독립 교통 스케줄 데이터베이스와 플릿 매니저 간 협상으로 여러 플릿의 교통 충돌을 예방·해소하고, rmf_task 로 작업을 계획·배정하며, 플릿 어댑터를 Full Control·Traffic Light·Read Only·No Interface 네 제어 수준으로 두고 문·승강기·디스펜서 같은 표준화된 인프라 인터페이스와 통신하게 하여, 여러 제조사 로봇을 한 시설에서 조율하는 오픈소스 뼈대를 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-004\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"공식 저장소 원문(src/rmf-core.md): 'platform-agnostic Traffic Schedule Database', 플릿 어댑터는 'to open doors, summon lifts, and wake up dispensers' 등 인프라 인터페이스 통신. 원문은 물류창고를 따로 언급하지 않는다 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f20\",\"claim\":\"물류창고에서 서로 다른 제조사의 AGV·AMR 플릿을 하나의 관제와 잇는 인터페이스 후보로는 VDA·VDMA 가 낸 VDA 5050(모바일 로봇 플릿과 중앙 플릿 제어 사이의 개방 통신 표준, 현재 3.0.0 판, 팩트시트로 차량 판·구성 보고)과 오픈소스 Open-RMF 가 있으며, 두 자료 모두 물류창고 전용은 아니어서 창고 특유의 요소(선반·포드 인계, 분류기·컨베이어 연동)는 별도 매핑이 필요할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-228\",\"ref-004\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"VDA 5050 공식 저장소 README(main)를 이번에 열어 'An open standard for communication between mobile robot fleets and a central fleet control', 3.0.0, VDA·VDMA·KIT 공동 개발을 확인했고 팩트시트의 version·mobileRobotConfiguration 은 ref-228 재인용(재인용: 2026-09-29-09). README 와 rmf-core.md 모두 창고를 언급하지 않는다.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"확인한 자료를 종합하면 물류창고 흐름에서 로봇 작업은 입고 단계의 팔레트 하역·이동(무인지게차·팔레타이징 로봇), 적치·보충 단계의 선반(포드) 운반과 보충 주문(AGV·로봇 이동형 풀필먼트 시스템), 피킹 단계의 상품 대 사람 운반과 피스 피킹, 포장 단계의 완충재 투입·박스 규격 측정(로봇팔·3D 스캐너), 출하 단계의 배송지별 분류(소팅봇), 반품 단계의 재입고 통합에 각각 들어가며, 국내 사례는 피킹·포장·분류에 집중되고 입고 하역과 반품의 로봇 적용은 연구·해외 사례 중심으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-912\",\"ref-915\",\"ref-919\",\"ref-920\",\"ref-921\",\"ref-923\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f4(보충·반품 결정), f7(반품 재입고), f11·f13(피킹·검수·포장), f14(적치·집품 AGV, 분류 소팅봇, 팔레트 무인지게차), f17(팔레타이징·피스 핸들링) 종합. 트레일러 하역 로봇 연구(arXiv 1910.09453)는 출처 상한으로 넣지 못함.\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"확인한 국내 사례를 여섯 항목으로 정리하면 시작 조건은 주문 도착과 작업자의 상품 호출, 작업 대상은 선반(포드)에 실린 상품·박스·팔레트·송장, 수행 자원은 피킹·이송 AGV·소팅봇·무인지게차·포장 로봇팔과 검수·피킹을 맡는 사람, 제약은 무인지게차 구역의 사람 출입 차단과 자동 정지 및 무인 산업 차량 안전 요구, 완료·인계는 바코드 스캔·검수와 선반의 검수존·포장 인계, 예외·성과는 시간당 박스·일 출고 용량·업무 단계 감소로 나타나며, 예외 복구(로봇 고장·선반 충돌) 절차는 확인한 자료에 없다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-920\",\"ref-921\",\"ref-922\",\"ref-916\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f13(호출→선반 운반→스캔→검수존→이송 AGV→포장), f14·f15(소팅봇 바코드 분류, 무인지게차 구역 차단·자동 정지, 65%), f8(ISO 3691-4 운용 구역) 종합. 실패 시 복구 주체는 어느 출처도 밝히지 않음.\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"확인한 자료를 종합하면 61. 물류창고에서 ROP 가 직접 맡을 범위는 창고 관리·실행 시스템이 내리는 주문·작업 요청을 시작 조건으로 받아 여러 제조사의 AGV·소팅봇·무인지게차·로봇팔과 사람 작업자에게 피킹·운반·분류·포장 작업을 배정하고, 선반·토트·박스의 인계와 바코드 스캔 기반 완료를 확인해 결과를 창고 관리 시스템에 돌려주는 일이며, 처리량을 좌우하는 피킹 주문 배정 규칙과 로봇 수 산정은 ROP 의 계획 기능과 설계 근거로 삼는 것이 맞아 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-910\",\"ref-912\",\"ref-920\",\"ref-004\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1(설계·운영 결정 재검토), f4(피킹 주문 배정이 처리량 좌우, SKU–로봇 수), f13(호출·스캔·검수 인계), f19(작업 배정·플릿 어댑터) 종합. 분류 원문 19장의 상위 업무 시스템 경계(요청·기한·자원 제약을 받아 실행하고 결과 반영) 적용.\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"연계 대상: 피스 피킹 로봇의 물체 인식·파지 계획, AGV 의 바닥 QR 코드 항법, 무인지게차 자체의 사람 감지·자동 정지, 컨베이어·분류기·자동창고의 설비 제어와 창고 관리 시스템의 재고·주문 관리는 분류 원문 19장의 로봇 자체 지능·제어, 시설·설비 제어, 상위 업무 시스템 쪽이므로 이종 제조사를 잇는 ROP 는 그 기능의 존재와 실행 조건, 상태·실패·완료 확인만 맡고 구현은 제조사·설비 업체·창고 관리 시스템에 맡겨야 할 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-914\",\"ref-922\",\"ref-921\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f6(인식·파지·계획 통합은 로봇 측 연구 과제), f14(QR 코드 항법), f15(무인지게차 자동 정지) 를 19장 경계표(로봇 자체 지능·제어 / 시설·설비 제어 / 상위 업무 시스템)에 대응.\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"이 영역은 바코드·송장 스캔과 선반·토트 인계 확인을 다루는 17. 작업 대상·자산 식별과 인계 추적, 창고 관리·실행 시스템과의 요청·결과 교환을 다루는 23. 업무 시스템 연동, 피킹 주문 배정 규칙을 다루는 25. 작업 배정 — MRTA, 수백~천 대 AGV 의 교통을 다루는 27. 다중 로봇 경로·교통 관리 — MAPF, SKU·로봇 수·등급 기준을 다루는 35. 처리능력·규모·배치 설계, 무인 산업 차량 안전과 구역 차단을 다루는 48. 안전·위험 관리와 49. 사람 근접 안전, 플릿 인터페이스를 다루는 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성, 휴머노이드 도입 동향을 다루는 1. 기술·시장·업체 동향, AGV–컨베이어 인계를 다루는 30. 로봇 간 협업·물리적 인계에 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-912\",\"ref-913\",\"ref-916\",\"ref-920\",\"ref-921\",\"ref-004\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f3(500대 이상 차량 조율), f4(주문 배정·로봇 수), f8(안전 표준), f13(스캔·검수 인계), f14(소팅봇·무인지게차 구역), f19(플릿 어댑터) 를 관련 영역에 대응. 이전 실행 2026-09-29-10 의 GXO·CJ대한통운 휴머노이드 사례는 1. 기술·시장·업체 동향 페이지에서 이어 받을 것.\",\"as_of\":\"2026-09-29\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"oq-134·oq-138·oq-142·oq-146 관련: 이번 조사에서도 국내 물류창고의 운영 기록을 시뮬레이션에 재현한 사례, 대화로 로봇 시나리오를 구성하거나 업무를 지시·승인한 운영 사례, 한국어 음성 지시의 인식률·오인식 확인 절차를 보고한 자료는 확인되지 않았고, 확인된 국내 자료는 군포 센터 디지털 트윈이 데이터 모니터링 1단계라는 회사 발표뿐이어서 네 질문은 미해결로 남는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-919\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f11(디지털 트윈 1단계=데이터 모니터링·운영화, 2023 완료 목표). 검색(국내 물류센터 디지털 트윈 재현, 국내 물류센터 언어모델 지시 실증, 물류센터 한국어 음성 피킹 인식률)에서 나온 자료는 제조 디지털 트윈 논문, 로봇 파운데이션 모델 실증 기사(언어 지시 아님), 2018년 음성 피킹 업계 기사뿐이며 출처로 넣지 않음.\",\"as_of\":\"2026-09-29\",\"site_type\":\"물류창고\",\"flow_item\":null}],\"sources\":[{\"id\":\"ref-910\",\"org\":\"Azadeh, K., de Koster, M. B. M., & Roy, D. (Rotterdam School of Management, Erasmus University; Transportation Science 53(4))\",\"title\":\"Robotized and automated warehouse systems: Review and recent developments\",\"published\":\"2019\",\"url\":\"https://repub.eur.nl/pub/119543/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"셔틀 기반 보관·인출, 압축 보관, 로봇 이동형 풀필먼트 시스템 등 로봇화 창고 시스템의 리뷰. 설계·운영 결정의 재검토 필요성. 기관 저장소 초록만 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://repub.eur.nl/pub/119543/\"},{\"id\":\"ref-911\",\"org\":\"Boysen, N., Weidinger, F., & de Koster, R. (European Journal of Operational Research 277(2))\",\"title\":\"Warehousing in the e-commerce era: A survey\",\"published\":\"2018-08-23\",\"url\":\"https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"전자상거래 창고의 소량·시간 민감 주문 특성과 자동화·조직적 적응(혼합 선반, 동적 처리, 배치·존·분류) 서베이. 초록만 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/\"},{\"id\":\"ref-912\",\"org\":\"Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.\",\"title\":\"Decision Rules for Robotic Mobile Fulfillment Systems\",\"published\":\"2018-01-20\",\"url\":\"https://arxiv.org/abs/1801.06703\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"로봇 이동형 풀필먼트 시스템의 주문 배정·포드 선택·포드 보관 결정 규칙을 이산 사건 시뮬레이션으로 비교. 피킹 주문 배정이 처리량을 좌우. arXiv 초록.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/1801.06703\"},{\"id\":\"ref-913\",\"org\":\"Wurman, P. R., D'Andrea, R., & Mountz, M. (AI Magazine 29(1), AAAI)\",\"title\":\"Coordinating Hundreds of Cooperative, Autonomous Vehicles in Warehouses\",\"published\":\"2008-03-20\",\"url\":\"https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2082\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"Kiva 창고 시스템: 이동식 선반을 자율 로봇이 작업자에게 운반, 생산성 2배 이상, 대형 설치 500대 이상. 초록만 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2082\"},{\"id\":\"ref-914\",\"org\":\"Correll, N., Bekris, K. E., Berenson, D., Brock, O., Causo, A., Hauser, K., Okada, K., Rodriguez, A., Romano, J. M., & Wurman, P. R.\",\"title\":\"Analysis and Observations from the First Amazon Picking Challenge\",\"published\":\"2016-01-21\",\"url\":\"https://arxiv.org/abs/1601.05484\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"첫 Amazon Picking Challenge 참가 26개 팀 설문 분석으로 창고 선반 피스 피킹 로봇의 기구·인식·계획 경향과 교훈 정리. arXiv 초록(v3 2017-09-22).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/1601.05484\"},{\"id\":\"ref-915\",\"org\":\"Schrotenboer, A. H., Wruck, S., Vis, I. F. A., & Roodbergen, K. J.\",\"title\":\"Integration of returns and decomposition of customer orders in e-commerce warehouses\",\"published\":\"2019-09-01\",\"url\":\"https://arxiv.org/abs/1909.01794\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"전자상거래 창고에서 반품 재입고를 피킹 경로에 통합하고 주문 분할을 허용하는 통합 최적화. 반품 통합 10~15% 비용 절감. arXiv 초록.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/1909.01794\"},{\"id\":\"ref-916\",\"org\":\"ISO (International Organization for Standardization)\",\"title\":\"ISO 3691-4:2023 Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems\",\"published\":\"2023\",\"url\":\"https://www.iso.org/standard/83545.html\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"원문 미열람. 무인 산업 차량(AGV·AMR 등)과 제어 시스템·하역 장치·충전소·이송 스테이션의 안전 요구사항과 검증 수단, 운용 구역 준비(부속서 A). iso.org 카탈로그는 403, 검색 요약으로만 확인.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-917\",\"org\":\"국토교통부 국가물류통합정보센터\",\"title\":\"스마트물류센터 인증제 안내\",\"published\":null,\"url\":\"https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"물류시설의 개발 및 운영에 관한 법률 제21조의4 근거 국토교통부 스마트물류센터 인증제 개요와 인증 대상 정의. 세부 기준은 첨부 PDF 에만 있음.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW\"},{\"id\":\"ref-918\",\"org\":\"한국교통연구원 (국토교통부 스마트물류센터 인증 운영)\",\"title\":\"인증스마트물류센터 — 인증제도·인증혜택\",\"published\":null,\"url\":\"https://cslc.koti.re.kr/\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"기능영역(입고·보관·피킹·출고 과정별 자동화)·기반영역 심사, 1~5등급, 이차보전·용적률 완화·보증 우대 혜택. 첫 페이지와 인증혜택 페이지(new_sub1/new_sub1_4) 열람, 심사기준 페이지는 404.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://cslc.koti.re.kr/new_sub1/new_sub1_4\"},{\"id\":\"ref-919\",\"org\":\"CJ대한통운\",\"title\":\"CJ대한통운, ‘디지털 물류’ 가속화 … 로봇 기반 ‘스마트 풀필먼트’ 가동\",\"published\":\"2021-12-21\",\"url\":\"https://www.cjlogistics.com/ko/newsroom/news/NR_00000922\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"군포 풀필먼트센터에 무인 운반 로봇 128대·포장 로봇팔·스마트 패키징 도입, 처리 능력 33% 향상 주장, 디지털 트윈 1단계. 운영사 보도자료이므로 성과 수치는 벤더 주장.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.cjlogistics.com/ko/newsroom/news/NR_00000922\"},{\"id\":\"ref-920\",\"org\":\"파이낸셜뉴스\",\"title\":\"[르포]\\\"알아서 척척 로봇에 생산성 55%↑\\\"…CJ대한통운 풀필먼트센터 가보니\",\"published\":\"2022-07-17\",\"url\":\"https://www.fnnews.com/news/202207170900567047\",\"type\":\"기사\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"군포 센터 현장 르포: 긱플러스 피킹 AGV 101대·이송 AGV 25대, 호출→선반 운반→스캔→검수→포장 흐름, 시간당 15.4 대 23.8 박스(55%), 일 출고 1만 박스.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.fnnews.com/news/202207170900567047\"},{\"id\":\"ref-921\",\"org\":\"로봇신문\",\"title\":\"쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이...\",\"published\":\"2023-02-07\",\"url\":\"https://www.irobotnews.com/news/articleView.html?idxno=30736\",\"type\":\"기사\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"쿠팡 대구 FC 의 AGV 1,000대 이상·소팅봇 수백 대·무인지게차 수십 대와 역할, 업무 단계 65% 감소, 무인지게차 구역 출입 차단, 투자 3,200억 원 이상.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.irobotnews.com/news/articleView.html?idxno=30736\"},{\"id\":\"ref-922\",\"org\":\"물류신문\",\"title\":\"‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니\",\"published\":\"2023-02-07\",\"url\":\"https://www.klnews.co.kr/news/articleView.html?idxno=306994\",\"type\":\"기사\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"쿠팡 대구 FC 르포: 33만㎡·12층, AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 일 최대 1,600 팔레트, 업무 65% 감소, 사람 작업 공간과 자동화 구역 분리·자동 정지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.klnews.co.kr/news/articleView.html?idxno=306994\"},{\"id\":\"ref-923\",\"org\":\"곽경민, 박범, 고은지, 윤철주, 김경훈 (CJ대한통운; 로봇학회 논문지 17(4))\",\"title\":\"급속 확산되는 물류현장의 로봇적용 사례\",\"published\":\"2022\",\"url\":\"https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002899267\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"AGV·AMR, 자동창고, 박스·피스 핸들링, 피킹, 팔레타이징, 웨어러블 로봇의 물류현장 적용 사례 검토와 CJ대한통운 웨어러블 슈트 국내 사례. KCI 초록만 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002899267\"},{\"id\":\"ref-924\",\"org\":\"고용노동부 (산업안전기준과)\",\"title\":\"고정식 이동식 산업용 로봇의 협동작업 안전 가이드 배포\",\"published\":\"2023-07-03\",\"url\":\"https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20230700065\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"사람과 같은 공간에서 작업하는 고정식 협동로봇·이동식 로봇의 위험성평가와 안전 조치를 안내하는 정부 가이드 배포 공지. 가이드 PDF 본문은 열지 않음.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20230700065\"},{\"id\":\"ref-004\",\"org\":\"Open Robotics\",\"title\":\"RMF Core Overview — Programming Multiple Robots with ROS 2\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/rmf-core.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-29\",\"summary\":\"작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고. 이번 실행에서 공식 저장소 원문(src/rmf-core.md)을 열어 확인.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md\"},{\"id\":\"ref-228\",\"org\":\"VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소\",\"title\":\"VDA5050/json_schemas/factsheet.schema (main)\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-29\",\"summary\":\"VDA 5050 팩트시트 JSON 스키마(version 필수, mobileRobotConfiguration 에 하드웨어·소프트웨어 판). 이번 실행에서는 같은 저장소의 README(main) 만 열었고 이 URL 은 다시 열지 않음(재인용 2026-09-29-09).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/site-type-applications/warehouse.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f2(전자상거래 소량·시간 민감 주문이 로봇화를 요구), f17(인력 의존 공정에 로봇 적용 급증), f4(피킹 주문 배정·로봇 수가 처리량 좌우) / 섹션 4: f3·f5(상품 대 사람 피킹, 로봇 이동형 풀필먼트 시스템), f14(소팅봇), f8(무인 산업 차량·운용 구역), f9·f10(스마트물류센터 인증) / 섹션 5: 물류창고 — f13·f11·f12(CJ대한통운 군포: 호출→AGV 선반 운반→스캔→검수→포장, 성과 수치는 f12 벤더 주장 병기와 수치 불일치 명시), f16·f14·f15(쿠팡 대구: 적치·집품 AGV, 출하 분류 소팅봇, 팔레트 무인지게차, 구역 차단·자동 정지), f22(여섯 항목 정리, 예외 복구 미확인 명시), f21(입고·반품 단계는 연구·해외 중심); 다른 현장 유형 사례는 이 영역 대상이 아님을 서술 / 섹션 6: f5·f3·f4(로봇 이동형 풀필먼트 시스템과 결정 규칙), f6(피스 피킹, 인식·파지 통합 과제), f14(분류 로봇·무인지게차), f7(반품 재입고 통합, 사람 피커 연구임을 명시), f17(팔레타이징·박스 핸들링·웨어러블) / 섹션 7: f8(ISO 3691-4:2023, 원문 미열람), f18(고용노동부 협동작업 안전 가이드), f9·f10(국토교통부 스마트물류센터 인증), f20·f19(VDA 5050, Open-RMF, 창고 전용 아님 명시) / 섹션 8: f1(Azadeh 외 리뷰), f2(Boysen 외 서베이), f3(Wurman 외 Kiva), f4(Merschformann 외), f6(Correll 외), f7(Schrotenboer 외), 국내 f17(곽경민 외) / 섹션 9: f23(직접 범위: 요청 수신·배정·인계·완료 확인·결과 반환), f24(연계 대상: 인식·파지·항법·자동 정지·설비 제어·창고 관리 시스템) / 섹션 10: f25 — 17. 작업 대상·자산 식별과 인계 추적, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 23. 업무 시스템 연동, 25. 작업 배정 — MRTA, 27. 다중 로봇 경로·교통 관리 — MAPF, 30. 로봇 간 협업·물리적 인계, 35. 처리능력·규모·배치 설계, 48. 안전·위험 관리, 49. 사람 근접 안전, 1. 기술·시장·업체 동향 / 섹션 11: 기존 oq-134·oq-138·oq-142·oq-146(f26 으로 미해결 유지)과 open_questions_new 5건. 다음 실행 후보: 17. 작업 대상·자산 식별과 인계 추적 페이지에 f13(바코드 스캔·검수 인계) 반영, 48. 안전·위험 관리 페이지에 f8·f18 반영, 35. 처리능력·규모·배치 설계 페이지에 f4·f10 반영, 1. 기술·시장·업체 동향 페이지의 GXO·CJ대한통운 휴머노이드 사례(2026-09-29-10 f16·f17)를 이 페이지 섹션 5에 재인용.\"}],\"glossary_candidates\":[{\"term_ko\":\"상품 대 사람 피킹\",\"term_en\":\"Goods-to-Person (G2P) / Parts-to-Picker Picking\",\"definition\":\"작업자가 선반으로 걸어가는 대신 로봇이나 자동 설비가 상품(선반·포드·토트)을 작업자의 워크스테이션으로 가져와 피킹하게 하는 방식으로, Kiva 계열 로봇 이동형 풀필먼트 시스템이 대표 사례다.\"},{\"term_ko\":\"소팅봇\",\"term_en\":\"Sorting Robot (Sorting Bot)\",\"definition\":\"송장 바코드를 읽어 배송지·목적지별로 상품을 분류·이송하는 소형 이동 로봇으로, 물류창고의 출하 분류 단계에서 사람이 옮기고 들어 올리던 분류 작업을 맡는다.\"},{\"term_ko\":\"무인 산업 차량\",\"term_en\":\"Driverless Industrial Truck (ISO 3691-4)\",\"definition\":\"ISO 3691-4 가 안전 요구사항을 정하는 운전자 없는 산업 차량으로, AGV·자율이동로봇·무인 운반 카트·터널 터거·언더카트를 포함하며 제어 시스템·하역 장치·충전소·이송 스테이션까지 시스템으로 본다.\"},{\"term_ko\":\"스마트물류센터 인증\",\"term_en\":\"Smart Logistics Center Certification (Korea MOLIT)\",\"definition\":\"국토교통부가 물류시설의 개발 및 운영에 관한 법률에 근거해 입고·보관·피킹·출고 과정별 자동화 정도(기능영역)와 구조·정보시스템(기반영역)을 심사해 물류창고에 1~5등급을 부여하고 이차보전·용적률 완화 등 혜택을 주는 국가 인증제다.\"}],\"open_questions_new\":[\"CJ대한통운 군포 스마트 풀필먼트센터의 로봇 도입 성과는 보도자료의 처리 능력 33% 향상과 현장 르포의 운용 효율 35%·생산성 55% 가운데 어느 지표가 어떤 비교 기준으로 산출된 것인가? | 관련 영역: 61. 물류창고, 39. 운영 성과 측정·개선 | 근거: f12 | 종류: 출처 충돌\",\"국내 물류센터에서 서로 다른 제조사의 AGV·소팅봇·무인지게차를 하나의 관제로 통합한 사례와 그때 쓴 인터페이스(VDA 5050 등)가 공개 자료로 확인되는가? | 관련 영역: 61. 물류창고, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성 | 근거: f16 | 종류: 일반\",\"국토교통부 스마트물류센터 인증 심사기준의 과정별 항목이 로봇 작업의 시작 조건·완료 확인·예외 처리 같은 오케스트레이션 요소를 평가하는가(심사기준 상세 페이지는 이번 조사에서 열지 못했다)? | 관련 영역: 61. 물류창고, 35. 처리능력·규모·배치 설계 | 근거: f10 | 종류: 일반\",\"로봇 이동형 풀필먼트 시스템에서 반품 재입고와 보충을 로봇 작업으로 통합해 처리량·비용 효과를 보고한 연구나 현장 사례가 있는가(확인한 반품 통합 연구는 사람 피커 대상이다)? | 관련 영역: 61. 물류창고, 24. 작업·워크플로 모델링 | 근거: f7 | 종류: 일반\",\"물류창고 입고 단계의 트레일러 하역·디팔레타이징 로봇이 오케스트레이션 플랫폼과 어떤 시작 조건·인계 이벤트로 연결되는지 보고한 연구·사례가 있는가? | 관련 영역: 61. 물류창고, 30. 로봇 간 협업·물리적 인계 | 근거: f21 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":17,\"cross_checked_count\":2,\"unverified\":[\"f5·f16 외 모든 finding 교차 확인 실패(리뷰·논문·정부 안내·기사마다 발행 주체 한 곳)\",\"f16 교차 확인의 두 기사는 같은 쿠팡 공개 행사를 각각 취재한 것이어서 수치의 원천이 회사 발표 하나로 독립성이 약함\",\"f8 ISO 3691-4:2023 원문 미열람(iso.org 403, iTeh 미리보기 빈 응답, ANSI 블로그 403) — 검색 요약 범위로만 서술\",\"f12 CJ대한통운 33% 처리 능력 향상은 벤더 주장이며 르포(35%·55%)와 수치 불일치 → 출처 충돌 열린 질문\",\"f9·f10 스마트물류센터 인증 심사기준의 배점·등급 점수는 첨부 PDF·404 페이지에 있어 미확인\",\"f14 쿠팡 뉴스룸 보도자료 원문(news.coupang.com/archives/26330)은 403 으로 미열람\",\"f18 고용노동부 가이드 PDF 본문 미열람(배포 공지만 확인)\",\"f17 곽경민 외 논문은 초록만 확인해 유형별 사례의 세부 내용 미확인\",\"f1·f2·f3·f4·f6·f7 논문은 초록만 열람(전문 미열람)\",\"f20 VDA 5050 README 는 열었으나 ref-228 URL(팩트시트 스키마)은 다시 열지 않음\",\"oq-134·oq-138·oq-142·oq-146 미해결(f26)\"],\"scope_violations\":[\"f24: 피스 피킹 인식·파지, QR 코드 항법, 무인지게차 자체 정지, 설비 제어, 창고 관리 시스템의 재고·주문 관리는 분류 원문 19장의 로봇 자체 지능·제어/시설·설비 제어/상위 업무 시스템 쪽이므로 '연계 대상: '으로 표시함\",\"f7: 사람 피커 대상 반품 통합 연구이므로 로봇 작업 사례가 아니라 반품 흐름 설계 근거로만 제안함\",\"f9·f10: 인증 혜택(이차보전·용적률)은 3. 경제성·조달·사업 모델의 범위와 겹치므로 이 영역에서는 인증이 과정별 자동화를 평가한다는 사실 위주로 제안함\",\"f8·f18: 안전 표준·가이드 내용은 48. 안전·위험 관리·49. 사람 근접 안전의 범위이므로 이 영역에서는 물류창고 운영 제약으로만 제안함\",\"f4·f5: 주문 배정·로봇 수 산정은 25. 작업 배정 — MRTA·35. 처리능력·규모·배치 설계와 겹치므로 대표 접근법 근거로만 제안함\"],\"budget_used\":{\"queries\":20,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 20회/30, 신규 출처 15건/15(ref-910~ref-924, 예약 구간 ref-910~ref-939 안) 상한 도달로 Keith·La 'Review of Autonomous Mobile Robots for the Warehouse Environment'(arXiv 2406.08333, 열람), Cao 'SCALE' 이기종 플릿 창고 배치 논문(arXiv 2607.00591, 열람), 테크M 리얼월드·CJ대한통운 로봇 파운데이션 모델 택배센터 실증 기사(2026-09-23, 열람, 언어 지시 아님), 트레일러 하역 로봇 연구(arXiv 1910.09453), 김태현·송상화 피킹 설비 최적화 KCI 논문(2021), Optoro·Locus 등 반품 자동화 벤더 글은 넣지 못했다. 원문 열람 15건(webfetch 14: 기관 저장소·arXiv·AAAI 초록 6건, nlic·koti·고용노동부 정부 페이지 3건, CJ대한통운 보도자료, 파이낸셜뉴스·로봇신문·물류신문 기사 3건, KCI 초록; github_raw 1: ref-004 rmf-core.md), 미열람 1건(ref-916 ISO 3691-4), 재사용 2건(ref-004 는 이번에 raw 원문을 열어 fetched true, ref-228 은 2026-09-29-09 의 값 그대로 fetched false). 주의: 같은 날 이전 실행 2026-09-29-10 이 ref-910·ref-912·ref-913 을 다른 URL(The Robot Report, 아시아경제, 서울신문)에 부여했으므로 이번 예약 구간과 번호가 겹친다 — 퍼블리셔가 URL 기준으로 합칠 때 확인 필요. 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 909건과의 URL 중복(Open-RMF·VDA 5050·ISO 3691-4·Kiva 논문 등)을 대조하지 못했다. 교차 확인 2건(f5: Kiva 개발진/에라스무스/파더보른·에라스무스, f16: 로봇신문/물류신문). 신뢰도 high 없음(교차 확인된 f5 는 초록만 연 medium 출처뿐, f16 은 기사 조합). 분류 원문 핵심 질문(물류창고의 입고부터 반품까지 흐름에서 로봇 작업은 어디에 어떻게 들어가는가)에는 단계별 로봇 작업 위치 f21, 여섯 항목 정리 f22, 접근법 f3~f7, 국내 사례 f11~f16 으로 답했으며 결론은 '피킹(상품 대 사람 AGV)·포장(로봇팔)·출하 분류(소팅봇)·팔레트 이동(무인지게차)은 국내 사례로 확인되나 입고 하역과 반품의 로봇 적용은 연구·해외 사례 중심이고 예외 복구 절차는 어느 출처도 밝히지 않았다'는 추정(f21·f22)이다. 현장 유형은 대상 영역 특성상 물류창고에 집중했고 다른 현장 유형 사례는 이 영역의 대상이 아니므로 찾지 않았다(공통 규칙 8의 치우침 방지는 Q. 현장 유형별 적용의 다른 영역 페이지가 담당). 국내 자료는 CJ대한통운 보도자료·르포(f11~f13), 쿠팡 기사 2건(f14~f16), 로봇학회 논문지(f17), 고용노동부 가이드(f18), 국토교통부·한국교통연구원 인증제(f9·f10) 여덟 건이다. 벤더 문서 1건(ref-919)의 성과 수치는 vendor_claim(f12)으로 표시했고, 기사에 실린 회사 제공 수치(f13·f14·f15)는 기사 보도 사실로 두되 evidence_excerpt 에 회사 제공 값임을 적었다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 f11 의 디지털 트윈 1단계(데이터 모니터링)뿐이며 현재 상태 표현 쪽으로만 서술할 것. 용어집에 이미 있는 로봇 이동형 풀필먼트 시스템·주문 배치·풋월·음성 피킹·웨이브리스 출고 지시·운용 구역·창고 실행·관리 시스템·물류 단위 일련 코드는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-134·oq-138·oq-142·oq-146 은 f26 으로 미해결 유지).\"}}",
+  "structured_output": {
+    "run_id": "2026-09-29-11",
+    "date": "2026-09-29",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 61,
+      "area_name": "61. 물류창고",
+      "category": "Q. 현장 유형별 적용"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 상품 대 사람 피킹·소팅봇·무인 산업 차량·스마트물류센터 인증 용어 없음(로봇 이동형 풀필먼트 시스템·주문 배치·풋월·음성 피킹·웨이브리스 출고 지시·운용 구역·창고 실행·관리 시스템은 용어집에 이미 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 입고·적치·보충·피킹·포장·출하·반품 단계별 사례와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 로봇 이동형 풀필먼트 시스템, 피스 피킹, 분류 로봇, 무인지게차, 반품 통합 접근 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ISO 3691-4, 국토교통부 스마트물류센터 인증, 고용노동부 협동작업 안전 가이드, VDA 5050, Open-RMF 의 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음 — 로봇화 창고 리뷰, 전자상거래 창고 서베이, Kiva 논문, Amazon Picking Challenge 분석, 국내 로봇학회 논문 없음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음 — 17. 작업 대상·자산 식별과 인계 추적, 23. 업무 시스템 연동, 25. 작업 배정 — MRTA, 27. 다중 로봇 경로·교통 관리 — MAPF, 35. 처리능력·규모·배치 설계, 48. 안전·위험 관리, 49. 사람 근접 안전, 1. 기술·시장·업체 동향 연결 필요",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 열린 질문 oq-134·oq-138·oq-142·oq-146 미반영, 정정 요청 없음",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "물류창고의 입고부터 반품까지 흐름에서 로봇 작업은 어디에 어떻게 들어가는가? [분류원문]",
+      "입고·적치·보충·피킹·포장·출하·반품 각 단계에 어떤 종류의 로봇(AGV·AMR·로봇 이동형 풀필먼트 시스템·피스 피킹·팔레타이징·분류 로봇·무인지게차)이 들어가며, 사례마다 시작 조건·작업 대상·수행 자원·제약·완료·인계·예외·성과는 어떻게 정리되는가? (섹션 4·5·6 겨냥)",
+      "로봇 이동형 풀필먼트 시스템과 전자상거래 창고 자동화를 다룬 대표 연구·리뷰는 무엇이고, 어떤 운영 결정(주문 배정·포드 선택·로봇 수)이 처리량을 좌우한다고 보는가? (섹션 6·8 겨냥)",
+      "물류창고 로봇 운영에 적용되는 안전 표준·국내 규제·인증제도(ISO 3691-4, 고용노동부 협동작업 안전 가이드, 국토교통부 스마트물류센터 인증)와 플릿 연동 인터페이스(VDA 5050, Open-RMF)는 무엇인가? (섹션 7 겨냥)",
+      "국내 물류센터의 로봇 도입 사례(CJ대한통운 군포 스마트 풀필먼트센터, 쿠팡 대구 풀필먼트센터)는 어떤 로봇을 어느 단계에 넣고 어떤 성과와 안전 조치를 보고하는가? (섹션 5·8 겨냥, 한국 자료 우선)",
+      "물류창고에서 ROP 가 직접 맡을 것(작업 요청 수신·배정·인계·완료 확인)과 창고 관리 시스템·설비 제어·로봇 자체 지능에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)",
+      "oq-134·oq-138·oq-142·oq-146: 국내 물류창고에서 운영 기록의 시뮬레이션 재현, 대화형 시나리오 구성·업무 지시, 한국어 음성 지시 인식률을 보고한 자료가 있는가? (섹션 11 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Azadeh·de Koster·Roy(에라스무스 대학교, Transportation Science 53(4), 2019)의 리뷰는 셔틀 기반 보관·인출 시스템, 셔틀 기반 압축 보관 시스템, 로봇 이동형 풀필먼트 시스템 같은 새 범주의 로봇화 취급 시스템이 물류센터에서 공간을 적게 쓰고 수요 변동에 유연하며 24시간 가동될 수 있다고 정리하고, 보관·오더피킹 시스템 선택, 보관 위치 배정, 주문 배치, 피커 라우팅 같은 설계·운영 결정을 로봇 창고에 맞게 다시 검토해야 한다고 본다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-910"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "RePub 초록: 로봇 취급 시스템은 'require little space, provide flexibility in managing varying demand' 하고 연속 가동된다. 검토 범주는 shuttle-based S/R, shuttle-based compact storage, robotic mobile fulfillment systems. 초록만 열람(전문 미열람).",
+        "as_of": "2019",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f2",
+        "claim": "Boysen·Weidinger·de Koster(European Journal of Operational Research 277(2), 2018 온라인)의 서베이는 전자상거래 창고가 주문당 몇 줄·소량인 시간 민감 피킹 주문을 대량으로 처리해야 하며, 자동 피킹 워크스테이션·로봇·AGV 보조 오더피킹 같은 자동화와 혼합 선반 보관·동적 주문 처리·배치·존·분류 시스템 같은 조직적 적응으로 대응한다고 정리했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-911"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "에라스무스 대학교 연구 포털 초록: 'large numbers of time-critical picking orders each consisting of just a few order lines with low order quantities'. 초록은 반품 처리를 다루지 않는다. 초록만 열람.",
+        "as_of": "2018-08-23",
+        "site_type": "물류창고",
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f3",
+        "claim": "Wurman·D'Andrea·Mountz(AI Magazine 29(1), 2008)는 Kiva 시스템이 소형 자율 로봇이 이동식 보관 선반을 들어 작업자에게 상품을 가져오는 방식으로 pick-pack-ship 창고의 작업자 생산성을 2배 이상 높이고 책임 추적성과 유연성을 함께 개선하며, 대형 물류센터 설치는 500대 이상의 차량을 필요로 하고 2006년 여름 첫 상설 설치가 이루어졌다고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-913"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "AAAI AI Magazine 초록: 'movable storage shelves that can be lifted by small, autonomous robots'; 생산성 2배 이상; 500대 이상 차량; 'the first commercially available, large-scale autonomous robot system'. DOI 10.1609/aimag.v29i1.2082. 초록만 열람.",
+        "as_of": "2008-03-20",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f4",
+        "claim": "Merschformann·Lamballais·de Koster·Suhl(2018)은 로봇 이동형 풀필먼트 시스템의 피킹·보충 주문 배정, 포드 선택, 포드 보관 위치 배정 결정 규칙을 이산 사건 시뮬레이션으로 비교해 피킹 주문 배정이 단위 처리량에 큰 영향을 주는 반면 보충 주문 배정·포드 선택·포드 보관 배정의 영향은 작고, SKU 가 많은 창고는 포드 수와 보관 면적이 같아도 처리량 유지에 더 많은 로봇이 필요하며, 반품 처리는 SKU 다양성과 피킹 주문이 많은 창고에서만 처리량에 의미 있는 영향을 준다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-912"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 1801.06703 초록: 로봇이 이동식 선반(포드)을 워크스테이션으로 나르는 parts-to-picker 시스템; 결정 문제는 order assignment(pick·replenishment), pod selection, pod storage assignment; 처리량 지표 7종 상관; 반품은 SKU 다양성·피킹 주문이 많을 때만 영향. 초록만 열람.",
+        "as_of": "2018-01-20",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f5",
+        "claim": "서로 다른 세 발행 주체(Kiva 개발진의 AI Magazine 논문, 에라스무스 대학교 연구진의 Transportation Science 리뷰, 파더보른·에라스무스 연구진의 시뮬레이션 연구)가 로봇이 이동식 선반(포드)을 작업자에게 가져오는 로봇 이동형 풀필먼트 시스템을 각각 서술해, 이 방식이 물류창고 피킹의 대표 로봇 접근법으로 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-913",
+          "ref-910",
+          "ref-912"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "ref-913 은 Kiva 의 이동식 선반·자율 로봇, ref-910 은 robotic mobile fulfillment systems 를 리뷰 범주로, ref-912 는 포드를 워크스테이션으로 나르는 parts-to-picker 시스템으로 각각 기술. 세 출처 모두 초록만 열람해 high 는 주지 않음.",
+        "as_of": "2019",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f6",
+        "claim": "Correll 외 10인(2016 v1, 2017 v3)의 첫 Amazon Picking Challenge 분석은 창고 선반에서 물품을 자율로 집는 로봇 과제에 참가한 26개 팀에게 기구 설계·인식 장치·계획·제어 접근을 묻는 28문항 설문을 해 경향을 팀 성적과 대응시키고 교훈을 정리해, 피스 피킹 로봇이 물체 인식·파지·작업 계획을 통합해야 하는 연구 과제로 남아 있음을 보였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-914"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 1601.05484 초록: 과제는 로봇이 'pick items from a warehouse shelf'; 26개 팀·28문항 설문으로 mechanism design, perception, planning/control 을 조사해 성적과 상관을 분석. 초록만 열람.",
+        "as_of": "2017-09-22",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f7",
+        "claim": "Schrotenboer·Wruck·Vis·Roodbergen(2019)은 사람 피커가 다니는 picker-to-parts 전자상거래 창고에서 반품 재입고를 피커 경로에 통합하고 고객 주문을 여러 배치로 분할하는 통합 최적화(배치 구성·피커 배정·순서)를 다루어, 반품 재입고 통합으로 10~15%, 주문 분할 허용으로 최대 44%, 제안한 탐색 휴리스틱으로 평균 17.4% 의 비용 절감을 보고했다(최대 5,547개 피킹·2,491개 재입고 벤치마크).",
+        "tag": "사실",
+        "source_ids": [
+          "ref-915"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "arXiv 1909.01794 초록: 반품 재입고를 정규 피킹 경로에 넣어 'cost-savings of 10 to 15%', 주문 분할 'up to 44%', ALNS 'average cost-savings of 17.4%'. 로봇이 아닌 사람 피커 대상 연구이므로 반품 흐름의 작업 설계 근거로만 쓸 것. 초록만 열람.",
+        "as_of": "2019-09-01",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f8",
+        "claim": "ISO 3691-4:2023 은 무인 산업 차량(driverless industrial truck)과 그 시스템 — 차량, 제어 시스템, 하역 부속 장치, 배터리 충전소, 하역 이송 스테이션 — 의 안전 요구사항과 검증 수단을 정하며, 무인 산업 차량의 예로 AGV·자율이동로봇·봇·무인 운반 카트·터널 터거·언더카트를 들고, 운용 구역의 준비 사항을 부속서 A 에 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-916"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "iso.org 카탈로그 검색 요약: 'specifies safety requirements and the means for their verification for driverless industrial trucks and their systems'; 적용 대상 vehicle·control system·load handling attachments·battery charging stations·load transfer stations; 예시 AGV, AMR, bots, automated guided cart, tunnel tugger, under cart; 운용 구역 준비는 Annex A. 원문 미열람(iso.org 403).",
+        "as_of": "2023",
+        "site_type": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f9",
+        "claim": "국토교통부는 「물류시설의 개발 및 운영에 관한 법률」 제21조의4 에 근거해 첨단 물류시설·설비·운영시스템을 도입해 저비용·고효율·안전성·친환경성에서 우수한 성능을 낼 수 있는 물류창고를 스마트물류센터로 인증하고 행정적·재정적 혜택을 준다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-917"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "국가물류통합정보센터 안내: 근거 법령 물류시설의 개발 및 운영에 관한 법률 제21조의4, 주관 국토교통부, 대상은 '첨단물류시설 및 설비, 운영시스템 등을 도입하여 저비용·고효율·안전성·친환경성 등에서 우수한 성능을 발휘할 수 있는 물류창고'. 세부 기준은 첨부 PDF 에만 있어 미열람 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f10",
+        "claim": "한국교통연구원이 운영하는 인증스마트물류센터 사이트에 따르면 스마트물류센터 인증 심사는 입고·보관·피킹·출고 등 물류 처리 과정별 첨단·자동화 정도를 보는 기능영역과 기반영역으로 구성되어 1~5등급을 부여하며, 인증 기업은 구축 비용 보조·융자(시설·운영자금 이차보전 1.0~2.0%p, 2025년 예산 125.86억 원), 신·증축 시 용적률·높이 완화, 신용보증기금·기술보증기금 보증 우대를 받는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-918"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "cslc.koti.re.kr 첫 페이지·인증혜택 페이지: 기능영역·기반영역, 입고·보관·피킹·출고 과정별 평가, 1~5등급, 운영기관 국토교통부·한국교통연구원; 이차보전 지원한도 500억~1,500억 원, 금리 1.0~2.0%p, 2024년 98.72억·2025년 125.86억 원 예산. 심사기준 상세 페이지(new_sub2_2_1)는 404 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f11",
+        "claim": "CJ대한통운의 2021-12-21 보도자료에 따르면 경기 군포 풀필먼트센터 한 층에 바닥 QR 코드 경로를 따르는 AGV 와 AMR 등 무인 운반 로봇 128대와 완충재 투입 로봇팔을 넣어 피킹·포장·분류를 자동화하고, 3D 스캐너로 박스 빈 공간을 측정하는 스마트 패키징으로 라벨·테이프 작업을 로봇이 맡게 했으며, 디지털 트윈은 데이터 모니터링·운영화의 1단계이고 2023년 완료를 목표로 한다고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-919"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "CJ대한통운 뉴스룸 보도자료(2021-12-21): 군포 센터 단일 층, 로봇 128대, QR 코드 경로 AGV, 2차 작업용 AMR, 완충재 로봇팔, 3D 스캐너 스마트 패키징, 피킹·포장·분류 자동화, 디지털 트윈 1단계(데이터 모니터링) 2023년 완료 예정.",
+        "as_of": "2021-12-21",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f12",
+        "claim": "CJ대한통운은 군포 스마트 풀필먼트센터의 AGV 도입으로 기존 운영 대비 처리 능력이 약 33% 향상됐다고 발표했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-919"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 보도자료 원문 '33% improved processing capacity compared to conventional operations'(열람 도구 요약). 2022-07 르포(ref-920)는 운용 효율 35%·생산성 55% 로 달리 전해 수치가 일치하지 않는다.",
+        "as_of": "2021-12-21",
+        "site_type": "물류창고",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f13",
+        "claim": "파이낸셜뉴스(2022-07-17) 르포에 따르면 군포 스마트 풀필먼트센터는 긱플러스(Geek+) 피킹 AGV 101대와 이송 AGV 25대(대당 약 3,000만 원)를 운영하며, 작업자가 터치스크린으로 상품을 호출하면 피킹 AGV 가 해당 선반을 찾아 실어 오고 작업자는 피킹·터치·바코드 스캔만 한 뒤 검수존 선반으로 옮기며 검수 뒤 이송 AGV 가 선반을 나르고 3D 비전 스캐너와 로봇팔이 포장을 처리해, 시간당 작업량이 일반층 15.4박스 대비 스마트층 23.8박스(55% 증가), 일 출고 용량이 7,400박스 대비 1만 박스라고 전했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-920"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "기사: '작업자가 터치스크린으로 상품을 호출하면 최적의 동선으로 해당상품이 피킹된 선반을 찾아가 몸에 실어' 반입; 피킹 AGV 101대·이송 AGV 25대; 일반층 15.4 vs 스마트층 23.8 박스/시간; 일 1만 vs 7,400 박스; 운용 효율 35%. 수치는 취재 시 회사가 제공한 것으로 보인다.",
+        "as_of": "2022-07-17",
+        "site_type": "물류창고",
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f14",
+        "claim": "로봇신문(2023-02-07)에 따르면 쿠팡 대구 풀필먼트센터는 3,200억 원 이상을 투자해 바닥 QR 코드로 최대 1,000kg 선반을 작업자에게 2분 안에 가져오는 AGV 1,000대 이상(업무 단계 65% 감소), 송장 바코드를 스캔해 배송지별로 분류·이송하는 소팅봇 수백 대, 직원이 버튼 한 번을 누르면 대용량 상품을 옮기는 무인지게차 수십 대를 운영하며 무인지게차 운영 구역은 사람 출입을 차단한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-921"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "로봇신문 포토뉴스(2023-02-07, 2-08 갱신): AGV 1,000대 이상·1,000kg 선반·2분 내 전달·업무 65% 감소; 소팅봇은 '송장 바코드를 스캔한 뒤 배송지별로 분류·이송'(요약); 무인지게차 수십 대, 운영 구역 출입 제한; 투자 3,200억 원 이상. 쿠팡 뉴스룸 원문(보도자료)은 403 으로 미열람.",
+        "as_of": "2023-02-07",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f15",
+        "claim": "물류신문(2023-02-07)에 따르면 쿠팡 대구 풀필먼트센터는 지하 2층~지상 10층 33만㎡ 규모에 3,200억 원을 투자해 AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 다수(일 최대 1,600 팔레트)를 운영하고 업무 단계를 65% 줄였으며, 사람 작업 공간과 자동화 구역을 분리하고 무인지게차는 작업자가 제한 구역에 들어오면 자동 정지한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-922"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "물류신문 르포(2023-02-07): 33만㎡·12층·3,200억 원; AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 일 최대 1,600 팔레트; 업무 65% 감소, 2분 내 전달; '사람 작업 공간과 자동화 구역 분리', 작업자 진입 시 무인지게차 자동 정지(요약).",
+        "as_of": "2023-02-07",
+        "site_type": "물류창고",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f16",
+        "claim": "서로 다른 두 전문지(로봇신문, 물류신문)의 현장 취재가 쿠팡 대구 풀필먼트센터의 AGV 약 1,000대·소팅봇 수백 대·무인지게차 운영, 업무 단계 65% 감소, 무인지게차 구역의 사람 출입 차단을 각각 같은 내용으로 전해, 국내 물류창고에서 적치·피킹(AGV)·출하 분류(소팅봇)·팔레트 이동(무인지게차)에 로봇이 함께 쓰이는 사례가 한 곳 이상에서 확인된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-921",
+          "ref-922"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "ref-921 과 ref-922 는 같은 날 공개 행사를 각각 취재한 기사로 서로 인용하지 않으나 수치의 원천이 쿠팡 발표라는 점에서 독립성이 약하며, 정량 수치(대수·65%)는 회사 제공 값으로 보아야 한다.",
+        "as_of": "2023-02-07",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f17",
+        "claim": "곽경민·박범·고은지·윤철주·김경훈(CJ대한통운, 로봇학회 논문지 17(4), 2022)은 물류산업이 많은 공정을 인력에 의존하지만 로봇 기술 진전과 경쟁에 따른 가격 하락으로 물류 로봇 적용이 빠르게 늘고 있다고 보고, AGV·AMR, 자동창고(ASRS), 박스·피스 핸들링 로봇, 피킹 로봇, 팔레타이징 로봇, 웨어러블 로봇 유형별 적용 사례를 검토하며 국내 사례로 CJ대한통운의 웨어러블 로봇 슈트 현장 적용을 들었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-923"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "KCI 초록: '물류산업이 많은 공정에서 인력에 의존하고 있지만 로봇 기술 진전과 경쟁으로 인한 가격 하락으로 물류 로봇 적용이 빠르게 증가'(요약); 다루는 유형 AGV/AMR·ASRS·박스/피스 핸들링·피킹·팔레타이징·웨어러블. 저자 전원 CJ대한통운 소속이므로 자사 사례 서술은 회사 관점임. 초록만 열람.",
+        "as_of": "2022",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f18",
+        "claim": "고용노동부 산업안전기준과는 2023-07-03 사람과 같은 공간에서 작업하는 산업용 로봇을 대상으로 고정식 협동로봇과 이동식 로봇의 협동작업 안전 가이드를 배포해 위험성평가 절차와 안전 조치, 관련 규정 개정 사항을 안내했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-924"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "고용노동부 정책자료(2023-07-03, 산업안전기준과): '사람과 같은 공간에서 작업하는 용도로 사용하는 산업용 로봇' 대상, 고정식 협동로봇·이동식 로봇 두 범주, 위험성평가·안전 조치·관련 규정 개정 내용. 가이드 본문 PDF 는 열지 않음.",
+        "as_of": "2023-07-03",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f19",
+        "claim": "Open-RMF 의 RMF Core 는 플랫폼 독립 교통 스케줄 데이터베이스와 플릿 매니저 간 협상으로 여러 플릿의 교통 충돌을 예방·해소하고, rmf_task 로 작업을 계획·배정하며, 플릿 어댑터를 Full Control·Traffic Light·Read Only·No Interface 네 제어 수준으로 두고 문·승강기·디스펜서 같은 표준화된 인프라 인터페이스와 통신하게 하여, 여러 제조사 로봇을 한 시설에서 조율하는 오픈소스 뼈대를 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "공식 저장소 원문(src/rmf-core.md): 'platform-agnostic Traffic Schedule Database', 플릿 어댑터는 'to open doors, summon lifts, and wake up dispensers' 등 인프라 인터페이스 통신. 원문은 물류창고를 따로 언급하지 않는다 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f20",
+        "claim": "물류창고에서 서로 다른 제조사의 AGV·AMR 플릿을 하나의 관제와 잇는 인터페이스 후보로는 VDA·VDMA 가 낸 VDA 5050(모바일 로봇 플릿과 중앙 플릿 제어 사이의 개방 통신 표준, 현재 3.0.0 판, 팩트시트로 차량 판·구성 보고)과 오픈소스 Open-RMF 가 있으며, 두 자료 모두 물류창고 전용은 아니어서 창고 특유의 요소(선반·포드 인계, 분류기·컨베이어 연동)는 별도 매핑이 필요할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-228",
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "VDA 5050 공식 저장소 README(main)를 이번에 열어 'An open standard for communication between mobile robot fleets and a central fleet control', 3.0.0, VDA·VDMA·KIT 공동 개발을 확인했고 팩트시트의 version·mobileRobotConfiguration 은 ref-228 재인용(재인용: 2026-09-29-09). README 와 rmf-core.md 모두 창고를 언급하지 않는다.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 자료를 종합하면 물류창고 흐름에서 로봇 작업은 입고 단계의 팔레트 하역·이동(무인지게차·팔레타이징 로봇), 적치·보충 단계의 선반(포드) 운반과 보충 주문(AGV·로봇 이동형 풀필먼트 시스템), 피킹 단계의 상품 대 사람 운반과 피스 피킹, 포장 단계의 완충재 투입·박스 규격 측정(로봇팔·3D 스캐너), 출하 단계의 배송지별 분류(소팅봇), 반품 단계의 재입고 통합에 각각 들어가며, 국내 사례는 피킹·포장·분류에 집중되고 입고 하역과 반품의 로봇 적용은 연구·해외 사례 중심으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-912",
+          "ref-915",
+          "ref-919",
+          "ref-920",
+          "ref-921",
+          "ref-923"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f4(보충·반품 결정), f7(반품 재입고), f11·f13(피킹·검수·포장), f14(적치·집품 AGV, 분류 소팅봇, 팔레트 무인지게차), f17(팔레타이징·피스 핸들링) 종합. 트레일러 하역 로봇 연구(arXiv 1910.09453)는 출처 상한으로 넣지 못함.",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "확인한 국내 사례를 여섯 항목으로 정리하면 시작 조건은 주문 도착과 작업자의 상품 호출, 작업 대상은 선반(포드)에 실린 상품·박스·팔레트·송장, 수행 자원은 피킹·이송 AGV·소팅봇·무인지게차·포장 로봇팔과 검수·피킹을 맡는 사람, 제약은 무인지게차 구역의 사람 출입 차단과 자동 정지 및 무인 산업 차량 안전 요구, 완료·인계는 바코드 스캔·검수와 선반의 검수존·포장 인계, 예외·성과는 시간당 박스·일 출고 용량·업무 단계 감소로 나타나며, 예외 복구(로봇 고장·선반 충돌) 절차는 확인한 자료에 없다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-920",
+          "ref-921",
+          "ref-922",
+          "ref-916"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f13(호출→선반 운반→스캔→검수존→이송 AGV→포장), f14·f15(소팅봇 바코드 분류, 무인지게차 구역 차단·자동 정지, 65%), f8(ISO 3691-4 운용 구역) 종합. 실패 시 복구 주체는 어느 출처도 밝히지 않음.",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "확인한 자료를 종합하면 61. 물류창고에서 ROP 가 직접 맡을 범위는 창고 관리·실행 시스템이 내리는 주문·작업 요청을 시작 조건으로 받아 여러 제조사의 AGV·소팅봇·무인지게차·로봇팔과 사람 작업자에게 피킹·운반·분류·포장 작업을 배정하고, 선반·토트·박스의 인계와 바코드 스캔 기반 완료를 확인해 결과를 창고 관리 시스템에 돌려주는 일이며, 처리량을 좌우하는 피킹 주문 배정 규칙과 로봇 수 산정은 ROP 의 계획 기능과 설계 근거로 삼는 것이 맞아 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-910",
+          "ref-912",
+          "ref-920",
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1(설계·운영 결정 재검토), f4(피킹 주문 배정이 처리량 좌우, SKU–로봇 수), f13(호출·스캔·검수 인계), f19(작업 배정·플릿 어댑터) 종합. 분류 원문 19장의 상위 업무 시스템 경계(요청·기한·자원 제약을 받아 실행하고 결과 반영) 적용.",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "연계 대상: 피스 피킹 로봇의 물체 인식·파지 계획, AGV 의 바닥 QR 코드 항법, 무인지게차 자체의 사람 감지·자동 정지, 컨베이어·분류기·자동창고의 설비 제어와 창고 관리 시스템의 재고·주문 관리는 분류 원문 19장의 로봇 자체 지능·제어, 시설·설비 제어, 상위 업무 시스템 쪽이므로 이종 제조사를 잇는 ROP 는 그 기능의 존재와 실행 조건, 상태·실패·완료 확인만 맡고 구현은 제조사·설비 업체·창고 관리 시스템에 맡겨야 할 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-914",
+          "ref-922",
+          "ref-921"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f6(인식·파지·계획 통합은 로봇 측 연구 과제), f14(QR 코드 항법), f15(무인지게차 자동 정지) 를 19장 경계표(로봇 자체 지능·제어 / 시설·설비 제어 / 상위 업무 시스템)에 대응.",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "이 영역은 바코드·송장 스캔과 선반·토트 인계 확인을 다루는 17. 작업 대상·자산 식별과 인계 추적, 창고 관리·실행 시스템과의 요청·결과 교환을 다루는 23. 업무 시스템 연동, 피킹 주문 배정 규칙을 다루는 25. 작업 배정 — MRTA, 수백~천 대 AGV 의 교통을 다루는 27. 다중 로봇 경로·교통 관리 — MAPF, SKU·로봇 수·등급 기준을 다루는 35. 처리능력·규모·배치 설계, 무인 산업 차량 안전과 구역 차단을 다루는 48. 안전·위험 관리와 49. 사람 근접 안전, 플릿 인터페이스를 다루는 20. 로봇·제조사 관제 연동과 21. 상호운용 표준·적합성, 휴머노이드 도입 동향을 다루는 1. 기술·시장·업체 동향, AGV–컨베이어 인계를 다루는 30. 로봇 간 협업·물리적 인계에 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-912",
+          "ref-913",
+          "ref-916",
+          "ref-920",
+          "ref-921",
+          "ref-004"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f3(500대 이상 차량 조율), f4(주문 배정·로봇 수), f8(안전 표준), f13(스캔·검수 인계), f14(소팅봇·무인지게차 구역), f19(플릿 어댑터) 를 관련 영역에 대응. 이전 실행 2026-09-29-10 의 GXO·CJ대한통운 휴머노이드 사례는 1. 기술·시장·업체 동향 페이지에서 이어 받을 것.",
+        "as_of": "2026-09-29",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "oq-134·oq-138·oq-142·oq-146 관련: 이번 조사에서도 국내 물류창고의 운영 기록을 시뮬레이션에 재현한 사례, 대화로 로봇 시나리오를 구성하거나 업무를 지시·승인한 운영 사례, 한국어 음성 지시의 인식률·오인식 확인 절차를 보고한 자료는 확인되지 않았고, 확인된 국내 자료는 군포 센터 디지털 트윈이 데이터 모니터링 1단계라는 회사 발표뿐이어서 네 질문은 미해결로 남는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-919"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f11(디지털 트윈 1단계=데이터 모니터링·운영화, 2023 완료 목표). 검색(국내 물류센터 디지털 트윈 재현, 국내 물류센터 언어모델 지시 실증, 물류센터 한국어 음성 피킹 인식률)에서 나온 자료는 제조 디지털 트윈 논문, 로봇 파운데이션 모델 실증 기사(언어 지시 아님), 2018년 음성 피킹 업계 기사뿐이며 출처로 넣지 않음.",
+        "as_of": "2026-09-29",
+        "site_type": "물류창고",
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-910",
+        "org": "Azadeh, K., de Koster, M. B. M., & Roy, D. (Rotterdam School of Management, Erasmus University; Transportation Science 53(4))",
+        "title": "Robotized and automated warehouse systems: Review and recent developments",
+        "published": "2019",
+        "url": "https://repub.eur.nl/pub/119543/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "셔틀 기반 보관·인출, 압축 보관, 로봇 이동형 풀필먼트 시스템 등 로봇화 창고 시스템의 리뷰. 설계·운영 결정의 재검토 필요성. 기관 저장소 초록만 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://repub.eur.nl/pub/119543/"
+      },
+      {
+        "id": "ref-911",
+        "org": "Boysen, N., Weidinger, F., & de Koster, R. (European Journal of Operational Research 277(2))",
+        "title": "Warehousing in the e-commerce era: A survey",
+        "published": "2018-08-23",
+        "url": "https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "전자상거래 창고의 소량·시간 민감 주문 특성과 자동화·조직적 적응(혼합 선반, 동적 처리, 배치·존·분류) 서베이. 초록만 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://pure.eur.nl/en/publications/warehousing-in-the-e-commerce-era-a-survey/"
+      },
+      {
+        "id": "ref-912",
+        "org": "Merschformann, M., Lamballais, T., de Koster, R., & Suhl, L.",
+        "title": "Decision Rules for Robotic Mobile Fulfillment Systems",
+        "published": "2018-01-20",
+        "url": "https://arxiv.org/abs/1801.06703",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "로봇 이동형 풀필먼트 시스템의 주문 배정·포드 선택·포드 보관 결정 규칙을 이산 사건 시뮬레이션으로 비교. 피킹 주문 배정이 처리량을 좌우. arXiv 초록.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/1801.06703"
+      },
+      {
+        "id": "ref-913",
+        "org": "Wurman, P. R., D'Andrea, R., & Mountz, M. (AI Magazine 29(1), AAAI)",
+        "title": "Coordinating Hundreds of Cooperative, Autonomous Vehicles in Warehouses",
+        "published": "2008-03-20",
+        "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2082",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "Kiva 창고 시스템: 이동식 선반을 자율 로봇이 작업자에게 운반, 생산성 2배 이상, 대형 설치 500대 이상. 초록만 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/2082"
+      },
+      {
+        "id": "ref-914",
+        "org": "Correll, N., Bekris, K. E., Berenson, D., Brock, O., Causo, A., Hauser, K., Okada, K., Rodriguez, A., Romano, J. M., & Wurman, P. R.",
+        "title": "Analysis and Observations from the First Amazon Picking Challenge",
+        "published": "2016-01-21",
+        "url": "https://arxiv.org/abs/1601.05484",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "첫 Amazon Picking Challenge 참가 26개 팀 설문 분석으로 창고 선반 피스 피킹 로봇의 기구·인식·계획 경향과 교훈 정리. arXiv 초록(v3 2017-09-22).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/1601.05484"
+      },
+      {
+        "id": "ref-915",
+        "org": "Schrotenboer, A. H., Wruck, S., Vis, I. F. A., & Roodbergen, K. J.",
+        "title": "Integration of returns and decomposition of customer orders in e-commerce warehouses",
+        "published": "2019-09-01",
+        "url": "https://arxiv.org/abs/1909.01794",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "전자상거래 창고에서 반품 재입고를 피킹 경로에 통합하고 주문 분할을 허용하는 통합 최적화. 반품 통합 10~15% 비용 절감. arXiv 초록.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/1909.01794"
+      },
+      {
+        "id": "ref-916",
+        "org": "ISO (International Organization for Standardization)",
+        "title": "ISO 3691-4:2023 Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems",
+        "published": "2023",
+        "url": "https://www.iso.org/standard/83545.html",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "원문 미열람. 무인 산업 차량(AGV·AMR 등)과 제어 시스템·하역 장치·충전소·이송 스테이션의 안전 요구사항과 검증 수단, 운용 구역 준비(부속서 A). iso.org 카탈로그는 403, 검색 요약으로만 확인.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-917",
+        "org": "국토교통부 국가물류통합정보센터",
+        "title": "스마트물류센터 인증제 안내",
+        "published": null,
+        "url": "https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "물류시설의 개발 및 운영에 관한 법률 제21조의4 근거 국토교통부 스마트물류센터 인증제 개요와 인증 대상 정의. 세부 기준은 첨부 PDF 에만 있음.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.nlic.go.kr/nlic/board0010.action?S_DOC_ID=5897&S_DOC_SEQ=&command=VIEW"
+      },
+      {
+        "id": "ref-918",
+        "org": "한국교통연구원 (국토교통부 스마트물류센터 인증 운영)",
+        "title": "인증스마트물류센터 — 인증제도·인증혜택",
+        "published": null,
+        "url": "https://cslc.koti.re.kr/",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "기능영역(입고·보관·피킹·출고 과정별 자동화)·기반영역 심사, 1~5등급, 이차보전·용적률 완화·보증 우대 혜택. 첫 페이지와 인증혜택 페이지(new_sub1/new_sub1_4) 열람, 심사기준 페이지는 404.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://cslc.koti.re.kr/new_sub1/new_sub1_4"
+      },
+      {
+        "id": "ref-919",
+        "org": "CJ대한통운",
+        "title": "CJ대한통운, ‘디지털 물류’ 가속화 … 로봇 기반 ‘스마트 풀필먼트’ 가동",
+        "published": "2021-12-21",
+        "url": "https://www.cjlogistics.com/ko/newsroom/news/NR_00000922",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "군포 풀필먼트센터에 무인 운반 로봇 128대·포장 로봇팔·스마트 패키징 도입, 처리 능력 33% 향상 주장, 디지털 트윈 1단계. 운영사 보도자료이므로 성과 수치는 벤더 주장.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.cjlogistics.com/ko/newsroom/news/NR_00000922"
+      },
+      {
+        "id": "ref-920",
+        "org": "파이낸셜뉴스",
+        "title": "[르포]\"알아서 척척 로봇에 생산성 55%↑\"…CJ대한통운 풀필먼트센터 가보니",
+        "published": "2022-07-17",
+        "url": "https://www.fnnews.com/news/202207170900567047",
+        "type": "기사",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "군포 센터 현장 르포: 긱플러스 피킹 AGV 101대·이송 AGV 25대, 호출→선반 운반→스캔→검수→포장 흐름, 시간당 15.4 대 23.8 박스(55%), 일 출고 1만 박스.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.fnnews.com/news/202207170900567047"
+      },
+      {
+        "id": "ref-921",
+        "org": "로봇신문",
+        "title": "쿠팡 대구 풀필먼트 센터에는 어떤 로봇들이...",
+        "published": "2023-02-07",
+        "url": "https://www.irobotnews.com/news/articleView.html?idxno=30736",
+        "type": "기사",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "쿠팡 대구 FC 의 AGV 1,000대 이상·소팅봇 수백 대·무인지게차 수십 대와 역할, 업무 단계 65% 감소, 무인지게차 구역 출입 차단, 투자 3,200억 원 이상.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.irobotnews.com/news/articleView.html?idxno=30736"
+      },
+      {
+        "id": "ref-922",
+        "org": "물류신문",
+        "title": "‘물류 투자만 6조’, 쿠팡 물류 인프라의 정점 ‘대구 FC’ 가보니",
+        "published": "2023-02-07",
+        "url": "https://www.klnews.co.kr/news/articleView.html?idxno=306994",
+        "type": "기사",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "쿠팡 대구 FC 르포: 33만㎡·12층, AGV 약 1,000대, 소팅봇 수백 대, 무인지게차 일 최대 1,600 팔레트, 업무 65% 감소, 사람 작업 공간과 자동화 구역 분리·자동 정지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.klnews.co.kr/news/articleView.html?idxno=306994"
+      },
+      {
+        "id": "ref-923",
+        "org": "곽경민, 박범, 고은지, 윤철주, 김경훈 (CJ대한통운; 로봇학회 논문지 17(4))",
+        "title": "급속 확산되는 물류현장의 로봇적용 사례",
+        "published": "2022",
+        "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002899267",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "AGV·AMR, 자동창고, 박스·피스 핸들링, 피킹, 팔레타이징, 웨어러블 로봇의 물류현장 적용 사례 검토와 CJ대한통운 웨어러블 슈트 국내 사례. KCI 초록만 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002899267"
+      },
+      {
+        "id": "ref-924",
+        "org": "고용노동부 (산업안전기준과)",
+        "title": "고정식 이동식 산업용 로봇의 협동작업 안전 가이드 배포",
+        "published": "2023-07-03",
+        "url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20230700065",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "사람과 같은 공간에서 작업하는 고정식 협동로봇·이동식 로봇의 위험성평가와 안전 조치를 안내하는 정부 가이드 배포 공지. 가이드 PDF 본문은 열지 않음.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.moel.go.kr/policy/policydata/view.do?bbs_seq=20230700065"
+      },
+      {
+        "id": "ref-004",
+        "org": "Open Robotics",
+        "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-29",
+        "summary": "작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고. 이번 실행에서 공식 저장소 원문(src/rmf-core.md)을 열어 확인.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/rmf-core.md"
+      },
+      {
+        "id": "ref-228",
+        "org": "VDA (Verband der Automobilindustrie) · VDMA, VDA5050 GitHub 공식 저장소",
+        "title": "VDA5050/json_schemas/factsheet.schema (main)",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/json_schemas/factsheet.schema",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-29",
+        "summary": "VDA 5050 팩트시트 JSON 스키마(version 필수, mobileRobotConfiguration 에 하드웨어·소프트웨어 판). 이번 실행에서는 같은 저장소의 README(main) 만 열었고 이 URL 은 다시 열지 않음(재인용 2026-09-29-09).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/site-type-applications/warehouse.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f2(전자상거래 소량·시간 민감 주문이 로봇화를 요구), f17(인력 의존 공정에 로봇 적용 급증), f4(피킹 주문 배정·로봇 수가 처리량 좌우) / 섹션 4: f3·f5(상품 대 사람 피킹, 로봇 이동형 풀필먼트 시스템), f14(소팅봇), f8(무인 산업 차량·운용 구역), f9·f10(스마트물류센터 인증) / 섹션 5: 물류창고 — f13·f11·f12(CJ대한통운 군포: 호출→AGV 선반 운반→스캔→검수→포장, 성과 수치는 f12 벤더 주장 병기와 수치 불일치 명시), f16·f14·f15(쿠팡 대구: 적치·집품 AGV, 출하 분류 소팅봇, 팔레트 무인지게차, 구역 차단·자동 정지), f22(여섯 항목 정리, 예외 복구 미확인 명시), f21(입고·반품 단계는 연구·해외 중심); 다른 현장 유형 사례는 이 영역 대상이 아님을 서술 / 섹션 6: f5·f3·f4(로봇 이동형 풀필먼트 시스템과 결정 규칙), f6(피스 피킹, 인식·파지 통합 과제), f14(분류 로봇·무인지게차), f7(반품 재입고 통합, 사람 피커 연구임을 명시), f17(팔레타이징·박스 핸들링·웨어러블) / 섹션 7: f8(ISO 3691-4:2023, 원문 미열람), f18(고용노동부 협동작업 안전 가이드), f9·f10(국토교통부 스마트물류센터 인증), f20·f19(VDA 5050, Open-RMF, 창고 전용 아님 명시) / 섹션 8: f1(Azadeh 외 리뷰), f2(Boysen 외 서베이), f3(Wurman 외 Kiva), f4(Merschformann 외), f6(Correll 외), f7(Schrotenboer 외), 국내 f17(곽경민 외) / 섹션 9: f23(직접 범위: 요청 수신·배정·인계·완료 확인·결과 반환), f24(연계 대상: 인식·파지·항법·자동 정지·설비 제어·창고 관리 시스템) / 섹션 10: f25 — 17. 작업 대상·자산 식별과 인계 추적, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성, 23. 업무 시스템 연동, 25. 작업 배정 — MRTA, 27. 다중 로봇 경로·교통 관리 — MAPF, 30. 로봇 간 협업·물리적 인계, 35. 처리능력·규모·배치 설계, 48. 안전·위험 관리, 49. 사람 근접 안전, 1. 기술·시장·업체 동향 / 섹션 11: 기존 oq-134·oq-138·oq-142·oq-146(f26 으로 미해결 유지)과 open_questions_new 5건. 다음 실행 후보: 17. 작업 대상·자산 식별과 인계 추적 페이지에 f13(바코드 스캔·검수 인계) 반영, 48. 안전·위험 관리 페이지에 f8·f18 반영, 35. 처리능력·규모·배치 설계 페이지에 f4·f10 반영, 1. 기술·시장·업체 동향 페이지의 GXO·CJ대한통운 휴머노이드 사례(2026-09-29-10 f16·f17)를 이 페이지 섹션 5에 재인용."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "상품 대 사람 피킹",
+        "term_en": "Goods-to-Person (G2P) / Parts-to-Picker Picking",
+        "definition": "작업자가 선반으로 걸어가는 대신 로봇이나 자동 설비가 상품(선반·포드·토트)을 작업자의 워크스테이션으로 가져와 피킹하게 하는 방식으로, Kiva 계열 로봇 이동형 풀필먼트 시스템이 대표 사례다."
+      },
+      {
+        "term_ko": "소팅봇",
+        "term_en": "Sorting Robot (Sorting Bot)",
+        "definition": "송장 바코드를 읽어 배송지·목적지별로 상품을 분류·이송하는 소형 이동 로봇으로, 물류창고의 출하 분류 단계에서 사람이 옮기고 들어 올리던 분류 작업을 맡는다."
+      },
+      {
+        "term_ko": "무인 산업 차량",
+        "term_en": "Driverless Industrial Truck (ISO 3691-4)",
+        "definition": "ISO 3691-4 가 안전 요구사항을 정하는 운전자 없는 산업 차량으로, AGV·자율이동로봇·무인 운반 카트·터널 터거·언더카트를 포함하며 제어 시스템·하역 장치·충전소·이송 스테이션까지 시스템으로 본다."
+      },
+      {
+        "term_ko": "스마트물류센터 인증",
+        "term_en": "Smart Logistics Center Certification (Korea MOLIT)",
+        "definition": "국토교통부가 물류시설의 개발 및 운영에 관한 법률에 근거해 입고·보관·피킹·출고 과정별 자동화 정도(기능영역)와 구조·정보시스템(기반영역)을 심사해 물류창고에 1~5등급을 부여하고 이차보전·용적률 완화 등 혜택을 주는 국가 인증제다."
+      }
+    ],
+    "open_questions_new": [
+      "CJ대한통운 군포 스마트 풀필먼트센터의 로봇 도입 성과는 보도자료의 처리 능력 33% 향상과 현장 르포의 운용 효율 35%·생산성 55% 가운데 어느 지표가 어떤 비교 기준으로 산출된 것인가? | 관련 영역: 61. 물류창고, 39. 운영 성과 측정·개선 | 근거: f12 | 종류: 출처 충돌",
+      "국내 물류센터에서 서로 다른 제조사의 AGV·소팅봇·무인지게차를 하나의 관제로 통합한 사례와 그때 쓴 인터페이스(VDA 5050 등)가 공개 자료로 확인되는가? | 관련 영역: 61. 물류창고, 20. 로봇·제조사 관제 연동, 21. 상호운용 표준·적합성 | 근거: f16 | 종류: 일반",
+      "국토교통부 스마트물류센터 인증 심사기준의 과정별 항목이 로봇 작업의 시작 조건·완료 확인·예외 처리 같은 오케스트레이션 요소를 평가하는가(심사기준 상세 페이지는 이번 조사에서 열지 못했다)? | 관련 영역: 61. 물류창고, 35. 처리능력·규모·배치 설계 | 근거: f10 | 종류: 일반",
+      "로봇 이동형 풀필먼트 시스템에서 반품 재입고와 보충을 로봇 작업으로 통합해 처리량·비용 효과를 보고한 연구나 현장 사례가 있는가(확인한 반품 통합 연구는 사람 피커 대상이다)? | 관련 영역: 61. 물류창고, 24. 작업·워크플로 모델링 | 근거: f7 | 종류: 일반",
+      "물류창고 입고 단계의 트레일러 하역·디팔레타이징 로봇이 오케스트레이션 플랫폼과 어떤 시작 조건·인계 이벤트로 연결되는지 보고한 연구·사례가 있는가? | 관련 영역: 61. 물류창고, 30. 로봇 간 협업·물리적 인계 | 근거: f21 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 17,
+      "cross_checked_count": 2,
+      "unverified": [
+        "f5·f16 외 모든 finding 교차 확인 실패(리뷰·논문·정부 안내·기사마다 발행 주체 한 곳)",
+        "f16 교차 확인의 두 기사는 같은 쿠팡 공개 행사를 각각 취재한 것이어서 수치의 원천이 회사 발표 하나로 독립성이 약함",
+        "f8 ISO 3691-4:2023 원문 미열람(iso.org 403, iTeh 미리보기 빈 응답, ANSI 블로그 403) — 검색 요약 범위로만 서술",
+        "f12 CJ대한통운 33% 처리 능력 향상은 벤더 주장이며 르포(35%·55%)와 수치 불일치 → 출처 충돌 열린 질문",
+        "f9·f10 스마트물류센터 인증 심사기준의 배점·등급 점수는 첨부 PDF·404 페이지에 있어 미확인",
+        "f14 쿠팡 뉴스룸 보도자료 원문(news.coupang.com/archives/26330)은 403 으로 미열람",
+        "f18 고용노동부 가이드 PDF 본문 미열람(배포 공지만 확인)",
+        "f17 곽경민 외 논문은 초록만 확인해 유형별 사례의 세부 내용 미확인",
+        "f1·f2·f3·f4·f6·f7 논문은 초록만 열람(전문 미열람)",
+        "f20 VDA 5050 README 는 열었으나 ref-228 URL(팩트시트 스키마)은 다시 열지 않음",
+        "oq-134·oq-138·oq-142·oq-146 미해결(f26)"
+      ],
+      "scope_violations": [
+        "f24: 피스 피킹 인식·파지, QR 코드 항법, 무인지게차 자체 정지, 설비 제어, 창고 관리 시스템의 재고·주문 관리는 분류 원문 19장의 로봇 자체 지능·제어/시설·설비 제어/상위 업무 시스템 쪽이므로 '연계 대상: '으로 표시함",
+        "f7: 사람 피커 대상 반품 통합 연구이므로 로봇 작업 사례가 아니라 반품 흐름 설계 근거로만 제안함",
+        "f9·f10: 인증 혜택(이차보전·용적률)은 3. 경제성·조달·사업 모델의 범위와 겹치므로 이 영역에서는 인증이 과정별 자동화를 평가한다는 사실 위주로 제안함",
+        "f8·f18: 안전 표준·가이드 내용은 48. 안전·위험 관리·49. 사람 근접 안전의 범위이므로 이 영역에서는 물류창고 운영 제약으로만 제안함",
+        "f4·f5: 주문 배정·로봇 수 산정은 25. 작업 배정 — MRTA·35. 처리능력·규모·배치 설계와 겹치므로 대표 접근법 근거로만 제안함"
+      ],
+      "budget_used": {
+        "queries": 20,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 20회/30, 신규 출처 15건/15(ref-910~ref-924, 예약 구간 ref-910~ref-939 안) 상한 도달로 Keith·La 'Review of Autonomous Mobile Robots for the Warehouse Environment'(arXiv 2406.08333, 열람), Cao 'SCALE' 이기종 플릿 창고 배치 논문(arXiv 2607.00591, 열람), 테크M 리얼월드·CJ대한통운 로봇 파운데이션 모델 택배센터 실증 기사(2026-09-23, 열람, 언어 지시 아님), 트레일러 하역 로봇 연구(arXiv 1910.09453), 김태현·송상화 피킹 설비 최적화 KCI 논문(2021), Optoro·Locus 등 반품 자동화 벤더 글은 넣지 못했다. 원문 열람 15건(webfetch 14: 기관 저장소·arXiv·AAAI 초록 6건, nlic·koti·고용노동부 정부 페이지 3건, CJ대한통운 보도자료, 파이낸셜뉴스·로봇신문·물류신문 기사 3건, KCI 초록; github_raw 1: ref-004 rmf-core.md), 미열람 1건(ref-916 ISO 3691-4), 재사용 2건(ref-004 는 이번에 raw 원문을 열어 fetched true, ref-228 은 2026-09-29-09 의 값 그대로 fetched false). 주의: 같은 날 이전 실행 2026-09-29-10 이 ref-910·ref-912·ref-913 을 다른 URL(The Robot Report, 아시아경제, 서울신문)에 부여했으므로 이번 예약 구간과 번호가 겹친다 — 퍼블리셔가 URL 기준으로 합칠 때 확인 필요. 참고문헌 목록 입력이 이 페이지 인용분 0건만 요약되어 전체 909건과의 URL 중복(Open-RMF·VDA 5050·ISO 3691-4·Kiva 논문 등)을 대조하지 못했다. 교차 확인 2건(f5: Kiva 개발진/에라스무스/파더보른·에라스무스, f16: 로봇신문/물류신문). 신뢰도 high 없음(교차 확인된 f5 는 초록만 연 medium 출처뿐, f16 은 기사 조합). 분류 원문 핵심 질문(물류창고의 입고부터 반품까지 흐름에서 로봇 작업은 어디에 어떻게 들어가는가)에는 단계별 로봇 작업 위치 f21, 여섯 항목 정리 f22, 접근법 f3~f7, 국내 사례 f11~f16 으로 답했으며 결론은 '피킹(상품 대 사람 AGV)·포장(로봇팔)·출하 분류(소팅봇)·팔레트 이동(무인지게차)은 국내 사례로 확인되나 입고 하역과 반품의 로봇 적용은 연구·해외 사례 중심이고 예외 복구 절차는 어느 출처도 밝히지 않았다'는 추정(f21·f22)이다. 현장 유형은 대상 영역 특성상 물류창고에 집중했고 다른 현장 유형 사례는 이 영역의 대상이 아니므로 찾지 않았다(공통 규칙 8의 치우침 방지는 Q. 현장 유형별 적용의 다른 영역 페이지가 담당). 국내 자료는 CJ대한통운 보도자료·르포(f11~f13), 쿠팡 기사 2건(f14~f16), 로봇학회 논문지(f17), 고용노동부 가이드(f18), 국토교통부·한국교통연구원 인증제(f9·f10) 여덟 건이다. 벤더 문서 1건(ref-919)의 성과 수치는 vendor_claim(f12)으로 표시했고, 기사에 실린 회사 제공 수치(f13·f14·f15)는 기사 보도 사실로 두되 evidence_excerpt 에 회사 제공 값임을 적었다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 f11 의 디지털 트윈 1단계(데이터 모니터링)뿐이며 현재 상태 표현 쪽으로만 서술할 것. 용어집에 이미 있는 로봇 이동형 풀필먼트 시스템·주문 배치·풋월·음성 피킹·웨이브리스 출고 지시·운용 구역·창고 실행·관리 시스템·물류 단위 일련 코드는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 해결된 열린 질문 없음(oq-134·oq-138·oq-142·oq-146 은 f26 으로 미해결 유지)."
+    }
+  },
+  "ttft_ms": 13706,
+  "type": "result",
+  "duration_ms": 755870,
+  "uuid": "8994fa13-0f51-4cad-bbb7-53e5b256841c",
+  "ttft_stream_ms": 2055,
+  "time_to_request_ms": 92,
+  "first_content_frame_ms": 2055,
+  "time_to_request_from_spawn_ms": 3833510,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790674279058.5151,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 757.3
+}

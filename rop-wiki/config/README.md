@@ -53,7 +53,7 @@
 |---|---|---|---|
 | `repo_root` | `".."` | git 저장소 루트. 위키 루트 기준 상대 경로. 위키가 ai-hub 저장소의 하위 폴더라는 전제다 [가정] | 퍼블리셔(커밋·푸시·롤백) |
 | `claude_bin` | `"claude"` | Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다 | `agent_runner.py` |
-| `model` | `"claude-fable-5-1"` | 에이전트 기본 모델 id. `agent_runner.py` 가 `claude -p --model <id>` 로 넘긴다(웹 도구 점검 호출 포함). 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
+| `model` | `"claude-opus-5-5"` | 에이전트 기본 모델 id(2026-09-29 Fable 5.1 사용 한도 도달로 Opus 5.5). `agent_runner.py` 가 `claude -p --model <id>` 로 넘긴다(웹 도구 점검 호출 포함). 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
 | `max_turns.researcher` / `.verifier` / `.storyteller` | `60` / `40` / `8` | 에이전트별 최대 턴 수(`--max-turns`). 넘으면 호출을 끊고 7.3 의 스키마 불일치와 같이 1회 재실행 뒤 보류한다 [가정: 사양서 7.3 은 턴 수·시간 초과의 처리를 정하지 않는다] | `agent_runner.py` |
 | `model_by_role` | `{}` | 에이전트별 모델 재정의(`researcher`/`verifier`/`storyteller` → 모델 id). 없으면 `model` 을 쓴다 | `agent_runner.py` |
 | `effort` | `researcher: high, verifier: high, storyteller: high` | 에이전트별 에포트(`claude -p --effort`, low/medium/high/xhigh/max). 비우면 CLI 기본값 [가정: 출처 대조가 품질을 좌우하는 리서치·검증은 high, 스토리텔러는 medium 이 재작성을 부르는 것을 보고 high] | `agent_runner.py` |

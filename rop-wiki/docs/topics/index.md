@@ -21,6 +21,27 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 핵심 개념과 용어](2026/2026-09-30-area66-s4.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 대표 접근법과 기술](2026/2026-09-30-area66-s6.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area66-s7.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [66. 실외 — 대표 연구와 자료](2026/2026-09-30-area66-s8.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 다른 연구영역과의 연결](2026/2026-09-30-area67-s10.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 열린 질문](2026/2026-09-30-area67-s11.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 왜 중요한가](2026/2026-09-30-area67-s3.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 핵심 개념과 용어](2026/2026-09-30-area67-s4.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 대표 접근법과 기술](2026/2026-09-30-area67-s6.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area67-s7.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 대표 연구와 자료](2026/2026-09-30-area67-s8.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 다른 연구영역과의 연결](2026/2026-09-29-area01-s10.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 열린 질문](2026/2026-09-29-area01-s11.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 왜 중요한가](2026/2026-09-29-area01-s3.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 핵심 개념과 용어](2026/2026-09-29-area01-s4.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 대표 접근법과 기술](2026/2026-09-29-area01-s6.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area01-s7.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
+| 2026-09-29 | [1. 기술·시장·업체 동향 — 대표 연구와 자료](2026/2026-09-29-area01-s8.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
 | 2026-09-29 | [4. 이기종 로봇 등록 — 다른 연구영역과의 연결](2026/2026-09-29-area04-s10.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
 | 2026-09-29 | [4. 이기종 로봇 등록 — 열린 질문](2026/2026-09-29-area04-s11.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
 | 2026-09-29 | [4. 이기종 로봇 등록 — 왜 중요한가](2026/2026-09-29-area04-s3.md) | [4. 이기종 로봇 등록](../categories/robot-ontology/heterogeneous-robot-registration.md) | published | medium | — |
@@ -84,6 +105,41 @@ version: 1
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 대표 접근법과 기술](2026/2026-09-29-area13-s6.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area13-s7.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
 | 2026-09-29 | [13. 대화형 기능의 신뢰·기반 — 대표 연구와 자료](2026/2026-09-29-area13-s8.md) | [13. 대화형 기능의 신뢰·기반](../categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 다른 연구영역과의 연결](2026/2026-09-29-area61-s10.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 열린 질문](2026/2026-09-29-area61-s11.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 왜 중요한가](2026/2026-09-29-area61-s3.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 핵심 개념과 용어](2026/2026-09-29-area61-s4.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 대표 접근법과 기술](2026/2026-09-29-area61-s6.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area61-s7.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [61. 물류창고 — 대표 연구와 자료](2026/2026-09-29-area61-s8.md) | [61. 물류창고](../categories/site-type-applications/warehouse.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 다른 연구영역과의 연결](2026/2026-09-29-area62-s10.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 열린 질문](2026/2026-09-29-area62-s11.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 왜 중요한가](2026/2026-09-29-area62-s3.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 핵심 개념과 용어](2026/2026-09-29-area62-s4.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 대표 접근법과 기술](2026/2026-09-29-area62-s6.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area62-s7.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [62. 제조 공장 — 대표 연구와 자료](2026/2026-09-29-area62-s8.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 다른 연구영역과의 연결](2026/2026-09-29-area63-s10.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 열린 질문](2026/2026-09-29-area63-s11.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 왜 중요한가](2026/2026-09-29-area63-s3.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 핵심 개념과 용어](2026/2026-09-29-area63-s4.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 대표 접근법과 기술](2026/2026-09-29-area63-s6.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area63-s7.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 대표 연구와 자료](2026/2026-09-29-area63-s8.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 다른 연구영역과의 연결](2026/2026-09-29-area64-s10.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 열린 질문](2026/2026-09-29-area64-s11.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 왜 중요한가](2026/2026-09-29-area64-s3.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 핵심 개념과 용어](2026/2026-09-29-area64-s4.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 대표 접근법과 기술](2026/2026-09-29-area64-s6.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area64-s7.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [64. 상업 시설 — 대표 연구와 자료](2026/2026-09-29-area64-s8.md) | [64. 상업 시설](../categories/site-type-applications/commercial-facilities.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 다른 연구영역과의 연결](2026/2026-09-29-area65-s10.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 열린 질문](2026/2026-09-29-area65-s11.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 왜 중요한가](2026/2026-09-29-area65-s3.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 핵심 개념과 용어](2026/2026-09-29-area65-s4.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 대표 접근법과 기술](2026/2026-09-29-area65-s6.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area65-s7.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
+| 2026-09-29 | [65. 가정·공동주택 — 대표 연구와 자료](2026/2026-09-29-area65-s8.md) | [65. 가정·공동주택](../categories/site-type-applications/home-and-apartment.md) | published | medium | — |
 | 2026-09-26 | [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | — |
 | 2026-09-26 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [23. 업무 시스템 연동 — 열린 질문](2026/2026-09-25-area01-s11.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |

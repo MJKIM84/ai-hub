@@ -1,0 +1,65 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": true,
+  "web_fetch_mirror_available": true,
+  "fetch_mode": "full",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-30 00:41:40 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "The search returned results describing EPCIS as GS1's standard for sharing supply-chain visibility event data.",
+      "elapsed_sec": 15.9,
+      "num_turns": 3,
+      "usage": {
+        "step": "probe-search",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 4519,
+        "cache_read_input_tokens": 3311,
+        "output_tokens": 405,
+        "cost_usd": 0.068,
+        "seconds": 15.9,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch": {
+      "available": true,
+      "detail": "The page loaded, and its title is \"EPCIS and CBV Linked Data Model\".",
+      "elapsed_sec": 8.5,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 3615,
+        "cache_read_input_tokens": 3379,
+        "output_tokens": 216,
+        "cost_usd": 0.0358,
+        "seconds": 8.5,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch_mirror": {
+      "available": true,
+      "detail": "일반 열람 가능 또는 미러 점검 URL 없음"
+    },
+    "web_fetch_curl": {
+      "available": true,
+      "status": 200,
+      "detail": "curl 200"
+    }
+  }
+}

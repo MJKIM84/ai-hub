@@ -266,6 +266,12 @@ def complete_patched_page(text: str, prior_text: str, day: str, run_refs: dict, 
 
 # --- 분량 초과 절 자동 분리 -------------------------------------------------------------------
 
+# 첫 문장(태그·각주 포함). 태그 뒤 각주 앞의 짧은 병기(예 "[추정] 벤더 주장[^ref-1]")도 문장에 넣는다 — 빼면 요약에서
+# 병기와 각주가 함께 사라진다(2026-09-29 65번 2차 검증 지적). 병기는 각주가 바로 뒤따를 때만 붙인다.
+_LEAD_SENT = (r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])?"
+              r"(?:[ \t]+[^\s\[\].][^\[\]\n.]{0,30}?(?=\[\^))?(?:\[\^[^\]]+\])*)")
+
+
 def _first_sentence(text: str) -> str:
     """절 본문의 첫 문장(태그·각주 포함). 요약이 없을 때 대신 쓴다."""
     t = _COMMENT.sub("", text).strip()
@@ -274,7 +280,7 @@ def _first_sentence(text: str) -> str:
         if not para or para.startswith(("|", "#", "```", "!!!", ">")):
             continue
         para = re.sub(r"^[-*]\s+", "", para)
-        m = re.search(r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])?(?:\[\^[^\]]+\])*)", para, re.S)
+        m = re.search(_LEAD_SENT, para, re.S)
         return (m.group(1) if m else para.split("\n")[0]).strip()
     return ""
 
@@ -291,7 +297,7 @@ def _lead_sentences(text: str, max_sentences: int = 2, max_chars: int = 300) -> 
         rest = rest_src[pos + len(first):]
         para_end = re.search(r"\n\s*\n", rest)
         rest = (rest[:para_end.start()] if para_end else rest).strip()
-        m = re.search(r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|사용자 실험)\])?(?:\[\^[^\]]+\])*)", rest, re.S)
+        m = re.search(_LEAD_SENT, rest, re.S)
         if m and len(out) + 1 + len(m.group(1)) <= max_chars:
             out = out + " " + m.group(1).strip()
     return out
@@ -335,6 +341,9 @@ def rebase_links(text: str, from_rel: str, to_rel: str) -> str:
     return _ANCHOR_ONLY_LINK.sub(lambda m: f"[{m.group(1)}]({paths.rel_link(to_rel, from_rel)}{m.group(2)})", out)
 
 
+_SPLIT_POINTER = re.compile(r"^자세한 내용은 주제 페이지 \[[^\]\n]+\]\([^)\n]+\)에 있다\.[ \t]*\n?", re.M)
+
+
 def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: list[dict], run_id: str, day: str,
                          topic_template_h2: list[str] | None = None) -> tuple[str, list[dict]]:
     """세부영역 페이지의 3~11절 본문이 limit 을 넘으면, 큰 절부터(5·9절 제외) 주제 페이지로 옮기고 원 절에는
@@ -364,7 +373,9 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
         idx = next(i for i, (t, _) in enumerate(parts) if section_no(t) == no)
         title, text = parts[idx]
         head, _, sec_body = text.partition("\n")
-        sec_body = sec_body.strip("\n")
+        # 이미 분리된 절을 재작성 뒤 다시 분리하면 앞선 분리가 남긴 "자세한 내용은 주제 페이지 …" 줄이 옮겨 가 주제 페이지가
+        # 자기 자신을 가리킨다(실행 2026-09-29-12, 62번 4절). 그 줄은 옮기지 않는다
+        sec_body = _SPLIT_POINTER.sub("", sec_body).strip("\n")
         sec_name = re.sub(r"^\d+\.\s*", "", title)
         sec_name_short = re.sub(r"\s*\(.*\)\s*$", "", sec_name)
         slug = f"{day}-area{area_no:02d}-s{no}"

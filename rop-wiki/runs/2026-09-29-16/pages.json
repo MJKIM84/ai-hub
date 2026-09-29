@@ -1,0 +1,620 @@
+{
+  "run_id": "2026-09-29-16",
+  "outline": [
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "상업 시설에서는 로봇이 손님과 같은 동선·승강기를 쓰는 영업 시간에 일하므로, 혼잡 시간·사람과의 충돌·직원 개입을 함께 다루는 운영이 성과를 가를 것으로 보인다. [추정][^ref-103][^ref-964][^ref-961]",
+      "planned_findings": [
+        "f10",
+        "f12",
+        "f16",
+        "f9"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "상업 시설 로봇 운영을 읽는 핵심 개념은 다중 운행 차량 경로 문제, 혼잡 시간, 로봇 친화형 건축물 인증, 서비스 삼자 관계, 반자율 네트워크 로봇 시스템, Open-RMF다. [추정][^ref-103][^ref-956][^ref-960][^ref-953]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f17",
+        "f14",
+        "f8",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 3000,
+      "summary": "상업 시설의 호텔 객실 배송, 식당 서빙, 매장·쇼핑몰 청소·재고 스캔·안내 세 사례를 여섯 항목으로 정리했고, 완료·인계(손님 수령 확인)는 대부분 미확인이다. [추정][^ref-951][^ref-964][^ref-952]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f7",
+        "f8",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f18",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1400,
+      "summary": "대표 접근법은 승강기 이용 방식(버튼 조작·클라우드 API·승강기 관리 솔루션), 혼잡 시간을 반영한 배송 계획, 주문 시스템 연동, 식당 도입 5단계, 직원·원격 조작자와의 역할 분담이다. [추정][^ref-103][^ref-951][^ref-958][^ref-964]",
+      "planned_findings": [
+        "f6",
+        "f4",
+        "f1",
+        "f2",
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f8"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "KS 로봇 엘리베이터 탑승 안전 요구사항, 로봇 친화형 건축물 인증(첫 사례는 오피스), Open-RMF가 관련되며 상업 시설의 Open-RMF 적용 사례는 확인되지 않았다. [사실][^ref-945][^ref-956][^ref-004]",
+      "planned_findings": [
+        "f18",
+        "f17",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1200,
+      "summary": "호텔 경로 계획, 호텔 관리자 인식, 식당 도입 사례, 식당 서비스 삼자 관계, 쇼핑몰 안내 로봇 현장 시험, 한국노동연구원 음식업 로봇 보고서, 헨나 호텔 기록이 대표 자료다. [사실][^ref-103][^ref-954][^ref-964]",
+      "planned_findings": [
+        "f1",
+        "f9",
+        "f12",
+        "f14",
+        "f8",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 1000,
+      "summary": "ROP는 요청 수신·이기종 배정·승강기 예약·혼잡 시간 반영·직원 인계·결과 반환을 맡고, 객실 관리 시스템·POS·승강기 제어·로봇 자체 주행·업종 규정은 연계 대상으로 보인다. [추정][^ref-951][^ref-103][^ref-957]",
+      "planned_findings": [
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1300,
+      "summary": "승강기 연동(22), 업무 시스템(23), 관제 연동(20), 일정·공용 자원(26·28), 규모 설계(35), 사람 모델·안전(19·49), 협업·예외(31·32), 대화 신뢰(13), 시운전(55), 노동(60), 동향·경제성(1·3)과 이어진다. [추정][^ref-957][^ref-103][^ref-964]",
+      "planned_findings": [
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 600,
+      "summary": "이기종 오케스트레이션 사례, 객실 관리 시스템 연동 구조, 매장 운영 시간대 규칙, 로봇 친화형 건축물 인증의 상업 시설 확대, 손님 수령 확인 방식이 열린 질문이다.",
+      "planned_findings": [
+        "f19",
+        "f3",
+        "f7",
+        "f17",
+        "f21"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/site-type-applications/commercial-facilities.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(seed → draft): 호텔 객실 배송·식당 서빙·매장·쇼핑몰 청소·재고 스캔·안내 세 사례를 여섯 항목으로 정리, 승강기 이용 방식·혼잡 시간 배송 계획·식당 도입 5단계, 책임 경계, 연결 영역 15개, 열린 질문 5건, 각주 17건, 1차 수정 지시 11건 이행"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"8. 대표 연구와 자료\" 절(1,584자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,122자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"6. 대표 접근법과 기술\" 절(1,017자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"4. 핵심 개념과 용어\" 절(1,000자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"3. 왜 중요한가\" 절(726자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"11. 열린 질문\" 절(694자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area64-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 64. 상업 시설 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(636자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-29 | 64. 상업 시설 | 섹션 3~11 신규 작성(seed → draft): 호텔·식당·매장·쇼핑몰 적용 사례 3건, 승강기 이용 방식·혼잡 시간 배송 계획·책임 경계, 1차 수정 지시 11건 이행 | run 2026-09-29-16",
+  "index_updates": {
+    "home_recent": "2026-09-29 — 64. 상업 시설: 영역 심화 초안 작성(호텔 객실 배송·식당 서빙·매장·쇼핑몰 청소·안내 사례, 승강기 이용 방식, 책임 경계)",
+    "category_recent": "2026-09-29 — 64. 상업 시설: 섹션 3~11 신규 작성(적용 사례 3건, 대표 연구 7건, 연결 영역 15개, 열린 질문 5건)",
+    "area_recent": "2026-09-29 — 64. 상업 시설: 섹션 3~11 신규 작성(seed → draft), 각주 17건, 1차 수정 지시 11건 이행"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "multi-trip-vehicle-routing-problem",
+      "term_ko": "다중 운행 차량 경로 문제",
+      "term_en": "Multi-Trip Vehicle Routing Problem (MTVRP)",
+      "definition": "적재 용량이 정해진 차량(로봇)이 한 거점에서 여러 번 출발·복귀하며 여러 목적지를 도는 경로를 정하는 차량 경로 문제의 변형이다.",
+      "description": "다층 호텔의 로봇 객실 배송 계획에서 승강기를 암묵적 경유지로 넣어 모델링하고 적응형 대규모 이웃 탐색(ALNS)으로 푼 연구가 있다.",
+      "related_areas": [
+        64,
+        26,
+        35
+      ],
+      "sources": [
+        "ref-103"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "robot-friendly-building-certification",
+      "term_ko": "로봇 친화형 건축물 인증",
+      "term_en": "Robot-Friendly Building Certification",
+      "definition": "스마트도시협회가 2022년 시작한 민간 인증으로, 건축·시설 설계, 네트워크·시스템, 건축 운영 관리, 로봇 지원·기타 서비스 4개 부문 25개 평가 범주(필수·부가)로 건물의 로봇 지원 수준을 최우수·우수·일반 등급으로 평가한다.",
+      "description": "첫 대상은 네이버 제2사옥(1784, 오피스)이며 2022-04-06 현장 실사를 거쳐 최우수 등급을 받았다. 평가에는 이동형 서비스 로봇의 승강기 이동 지원과 로봇용 정밀지도·측위 인프라가 포함됐다. 호텔·쇼핑몰 같은 상업 시설 인증 사례는 확인되지 않았다.",
+      "related_areas": [
+        64,
+        22
+      ],
+      "sources": [
+        "ref-956"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "service-triad",
+      "term_ko": "서비스 삼자 관계",
+      "term_en": "Service Triad (service robot, customer, frontline employee)",
+      "definition": "서비스 로봇·고객·일선 직원 세 주체의 상호작용으로 서비스 가치를 설명하는 틀로, 로봇이 직원을 보완하는지 대체하는지와 직원 응대가 로봇의 기능 부족을 메우는지를 분석한다.",
+      "related_areas": [
+        64,
+        31,
+        60
+      ],
+      "sources": [
+        "ref-960"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-004",
+      "org": "Open Robotics",
+      "title": "RMF Core Overview — Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/rmf-core.html",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "작업·교통 조율, Fleet Adapter, 설비 연동 구조 참고.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-945",
+      "org": "산업통상자원부 국가기술표준원 (KDI 경제정보센터 게재)",
+      "title": "국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다",
+      "published": "2021-11-11",
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=220004",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "로봇의 엘리베이터 탑승 안전 요구사항과 실내 배송 로봇 KS 제정 발표(속도 제어·보호 정지·높낮이차·틈새 극복·추락·넘어짐 방지). 이번 실행에서 다시 열어 확인.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-103",
+      "org": "Han, L., Ding, J., Liu, S., & Meng, M. (Sensors)",
+      "title": "The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments",
+      "published": "2025-03-13",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "다층 호텔의 다중 로봇 객실 배송을 승강기를 암묵적 경유지로 둔 다중 운행 차량 경로 문제로 모델링하고 ALNS 로 푼 동료 심사 논문(오픈 액세스 원문 열람).",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-951",
+      "org": "지디넷코리아 (윤상은)",
+      "title": "엘베 타고 수건 배달·안내·방역도 '척척'...호텔로 간 로봇",
+      "published": "2022-05-03",
+      "url": "https://zdnet.co.kr/view/?no=20220503124850",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "국내 호텔(헨나호텔 명동, 코트야드 메리어트 타임스퀘어, 테이크호텔 광명, 노보텔 앰배서더 동대문, 롯데월드호텔, 안다즈 강남 등)의 배송·안내·방역 로봇 도입과 승강기 이용·호출 방식을 정리한 기사.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-952",
+      "org": "Retail Dive (Sam Silverstein)",
+      "title": "Sam's Club rolls out inventory-checking robots chainwide",
+      "published": "2022-02-01",
+      "url": "https://www.retaildive.com/news/sams-club-rolls-out-inventory-checking-robots-chainwide/618040/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "Sam's Club 이 약 600개 매장의 자율 바닥 청소기에 Brain Corp 재고 스캔 타워를 달아 청소와 재고 스캔을 함께 수행하게 한 전사 배치를 보도.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-953",
+      "org": "Kanda, T., Shiomi, M., Miyashita, Z., Ishiguro, H., & Hagita, N. (IEEE Transactions on Robotics 26(5))",
+      "title": "A Communication Robot in a Shopping Mall",
+      "published": "2010-10",
+      "url": "https://ieeexplore.ieee.org/abstract/document/5557825",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 쇼핑몰에서 쇼핑 정보·길 안내를 하는 커뮤니케이션 로봇의 25일 현장 시험(상호작용 2,642회)과 센서·원격 조작자를 결합한 반자율 네트워크 로봇 시스템을 보고한 논문. 서지는 Semantic Scholar API 로, 초록 내용은 검색 결과 요약으로만 확인.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-954",
+      "org": "Ivanov, S., Seyitoğlu, F., & Markova, M. (Information Technology & Tourism)",
+      "title": "Hotel managers' perceptions towards the use of robots: a mixed-methods approach",
+      "published": "2020-09",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7486590/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "불가리아 호텔 관리자 설문 79명·면접 20명으로 로봇에 맞는 호텔 업무, 장단점 인식, 도입 의향과 장벽을 분석한 동료 심사 논문(오픈 액세스 원문 열람).",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-955",
+      "org": "지디넷코리아 (신영빈)",
+      "title": "식당 음식 나르던 서빙로봇, 공장·창고로 진격",
+      "published": "2024-07-30",
+      "url": "https://zdnet.co.kr/view/?no=20240730115912",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "브이디컴퍼니·비로보틱스의 국내 서빙로봇 보급 대수·업장 수(업체가 밝힌 값)와 식당 외 분야(스크린골프장·야구장·물류센터·공장)로의 확장을 보도. 원 URL 연결이 끊겨 다음 뉴스 게재본으로 열었다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-956",
+      "org": "지디넷코리아 (김성현)",
+      "title": "네이버 제2사옥, 로봇 친화형 건축물 인증 획득",
+      "published": "2022-04-11",
+      "url": "https://zdnet.co.kr/view/?no=20220411142336",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "스마트도시협회의 민간 로봇 친화형 건축물 인증(4개 부문 25개 평가 범주(필수·부가), 3개 등급)과 첫 대상 네이버 1784 의 최우수 등급 획득을 보도.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-957",
+      "org": "Otis Elevator Company",
+      "title": "Elevators and service robots",
+      "published": null,
+      "url": "https://www.otis.com/en/us/innovation/elevators-and-service-robots",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-29",
+      "summary": "오티스의 승강기–서비스 로봇 연동(Otis Integrated Dispatch 클라우드 API)과 오사카 호텔 케이한 유니버설 타워 배송 로봇 적용을 소개하는 제조사 페이지. 기능·성과는 벤더 주장.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-958",
+      "org": "이투데이 (구예지)",
+      "title": "브이디컴퍼니, 신규 서빙로봇 3종 출시…“식당 전체 자동화 이룰 것”",
+      "published": "2023-03-30",
+      "url": "https://www.etoday.co.kr/news/view/2235962",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "브이디컴퍼니의 신규 서빙로봇(푸두봇 프로·스위프트봇·브이디셜틀)과 태블릿 주문–음료냉장고–서빙로봇 연동, 누적 공급 대수를 회사 발표 중심으로 보도.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-959",
+      "org": "한국노동연구원 (박수민 외)",
+      "title": "음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향",
+      "published": "2024",
+      "url": "https://repository.kli.re.kr/bitstream/2021.oak/11632/2/(%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0)2024-13_%EC%9D%8C%EC%8B%9D%EC%97%85%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A1%9C%EB%B4%87%20%EB%8F%84%EC%9E%85%EC%9D%B4%EC%A7%81%EB%AC%B4%EC%99%80%20%EC%9E%91%EC%97%85%EC%9E%A5%20%EC%95%88%EC%A0%84%EC%97%90%20%EB%AF%B8%EC%B9%98%EB%8A%94%20%EC%98%81%ED%96%A5.pdf",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 한국노동연구원 연구보고서 2024-13. 급식업 조리로봇과 외식업 서빙로봇 도입의 이유·조건, 직무·동선 변화, 작업장 안전 문제를 분석(보고서 PDF·저장소 페이지 403, 검색 결과 요약만 확인).",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-960",
+      "org": "Odekerken-Schröder, G., Mennens, K., Steins, M., & Mahr, D. (Journal of Service Management 33(2))",
+      "title": "The service triad: an empirical study of service robots, customers and frontline employees",
+      "published": "2022",
+      "url": "https://www.emerald.com/josm/article/33/2/246/227998/The-service-triad-an-empirical-study-of-service",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "유럽 패스트 캐주얼 식당의 휴머노이드 서비스 로봇 2대에 대한 현장 고객 108명·실험 361명 조사로 로봇·고객·일선 직원 삼자 관계에서 보완·대체 효과를 분석한 동료 심사 논문(출판사 페이지의 초록 수준 확인).",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-961",
+      "org": "Responsible AI Collaborative (AI Incident Database)",
+      "title": "Incident 346: Robots in Japanese Hotel Annoyed Guests and Failed to Handle Simple Tasks",
+      "published": null,
+      "url": "https://incidentdatabase.ai/cite/346/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "일본 헨나 호텔의 로봇 243대 운영과 2019년 절반 이상 감축, 객실 비서·여권 복사 등 실패를 여러 언론 보도를 묶어 기록한 AI 사고 데이터베이스 항목.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-962",
+      "org": "Hotel Technology News",
+      "title": "Score One for The Humans: Japan's Henn-na Hotel Fires Half Its Robot Workforce",
+      "published": "2019-01",
+      "url": "https://hoteltechnologynews.com/2019/01/score-one-for-the-humans-japans-henn-na-hotel-fires-half-its-robot-workforce/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-29",
+      "summary": "헨나 호텔이 로봇 243대 가운데 절반 이상을 줄인 경위(객실 비서 Churi, 짐 운반 로봇, 프런트 공룡 로봇의 실패와 직원 부담)를 전한 호텔 기술 전문지 기사. 1차 출처를 명시하지 않는다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-963",
+      "org": "서울경제 (백주연)",
+      "title": "엘리베이터 타고 쇼핑몰 왔다갔다…바닥 물걸레질까지 하는 '로봇 청소부' 등장",
+      "published": "2025-04-02",
+      "url": "https://www.sedaily.com/article/14048085",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "화성 동탄 상업시설 레이크 꼬모의 라이노스 AI 청소로봇 휠리 J40 도입과 클라우드 승강기 관리 솔루션 rEMS 를 통한 전 층 이동을 보도. 발행일은 1차 검증에서 기사 페이지로 재확인하지 못했다.",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-964",
+      "org": "Karlsen, A. S. T., Andersen, B., Nevstad, K., Heirsaunet, S. E., Indergård, E., & Aarseth, W. (Frontiers in Robotics and AI)",
+      "title": "Digital transformation in restaurants: key aspects of service robot deployment from project initiation to evaluation",
+      "published": "2026-04-22",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1793138/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "노르웨이 식당 서비스 로봇 도입을 사업 착수·계획·통합·실행·평가 단계로 분석한 탐색·설명적 사례 연구(면접 22회·참여자 34명, 오픈 액세스 원문 열람).",
+      "cited_by": [
+        "docs/categories/site-type-applications/commercial-facilities.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "호텔·쇼핑몰에서 제조사가 다른 배송·청소·안내 로봇을 하나의 오케스트레이션 계층(Open-RMF 등)으로 묶어 승강기를 함께 쓰게 한 국내외 공개 사례가 있는가?",
+      "areas": [
+        64,
+        20,
+        22
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "호텔 객실 배송 로봇이 객실 관리 시스템(PMS)이나 객실 전화에서 요청을 받고 배송 완료를 되돌려 주는 표준 인터페이스나 공개된 연동 구조가 있는가?",
+      "areas": [
+        64,
+        23
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "영업 중인 매장·쇼핑몰에서 청소·재고 스캔 로봇을 손님이 많은 시간과 어떻게 나눠 운영하는지(운영 시간대 규칙과 그 효과)를 수치로 보인 연구나 공개 자료가 있는가?",
+      "areas": [
+        64,
+        26
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 친화형 건축물 인증이 오피스를 넘어 호텔·쇼핑몰 같은 상업 시설로 확대됐는가?",
+      "areas": [
+        64,
+        22
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "식당 서빙로봇과 호텔 배송 로봇은 손님이 음식·물품을 받았는지(완료·인계)를 어떤 방식(무게 감지·버튼·직원 확인·객실 문 앞 알림)으로 확인하며 그 결과가 주문 시스템에 기록되는가?",
+      "areas": [
+        64,
+        17
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "상업 시설",
+      "item": "시작 조건",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "작업 대상",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "수행 자원",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "제약",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "완료·인계",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "예외·성과",
+      "link": "docs/categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시",
+      "title": "64. 상업 시설"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "로봇 친화형 건축물 인증",
+      "kind": "평가 프로그램",
+      "org": "스마트도시협회",
+      "url": "https://zdnet.co.kr/view/?no=20220411142336",
+      "related_areas": [
+        64,
+        22
+      ],
+      "summary": "건축·시설 설계, 네트워크·시스템, 건축 운영 관리, 로봇 지원·기타 서비스 4개 부문 25개 평가 범주(필수·부가)로 건물의 로봇 지원 수준을 최우수·우수·일반 등급으로 평가하는 민간 인증. 첫 대상은 네이버 제2사옥(1784, 오피스)이며 2022-04-06 최우수 등급을 받았다(지디넷코리아 2022-04-11 보도 기준).",
+      "ref_id": "ref-956"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 완료·인계 칸: 식당 서빙로봇·호텔 배송 로봇이 손님 수령(테이블 전달·객실 문 앞 전달)을 무엇으로 확인하고 주문 시스템에 기록하는지에 관한 자료가 필요하다. 세 사례 모두 이 칸이 미확인이다.",
+    "5절 매장·쇼핑몰 사례의 시작 조건: 청소·재고 스캔·안내 로봇 작업이 어떤 일정·호출로 시작되는지와 영업시간 중·후 운영 시간대(Sam's Club 등) 자료가 필요하다.",
+    "7절: 로봇의 엘리베이터 탑승 안전 요구사항 KS 의 표준 번호·정식 명칭을 국가표준인증통합정보시스템 등 1차 자료로 확인해야 한다(ref-945 보도자료에는 번호가 없다).",
+    "5·8절: 호텔 경로 계획(ref-103)·노르웨이 식당(ref-964)·호텔 관리자 인식(ref-954) 수치가 모두 단일 연구 자료이므로 교차 확인할 두 번째 출처가 필요하다.",
+    "8절: 한국노동연구원 보고서(ref-959)와 Kanda 외 2010 논문(ref-953) 원문을 열어 검색 요약 수준에 머문 진술을 확인해야 한다.",
+    "5절: 레이크 꼬모 기사(ref-963)의 발행일 2025-04-02를 기사 페이지로 다시 확인해야 한다.",
+    "퍼블리셔 확인 요청: 이번 브리프는 국가기술표준원 KS 보도자료(https://eiec.kdi.re.kr/policy/materialView.do?num=220004)에 ref-945 을 썼으나, Q. 현장 유형별 적용 대분류 페이지의 자동 자료 목록에는 같은 제목·URL 이 ref-945 로, ref-945 은 비즈한국 병원 기사로 올라 있다. URL 기준으로 합칠 때 이 페이지의 [^ref-945] 각주를 기존 id 로 바꿔야 하는지 확인이 필요하다. ref-103~ref-952 도 같은 날 2026-09-29-13 실행 id 와 겹칠 수 있다."
+  ],
+  "fixes_applied": [
+    "f15 강등 — 5절 식당 사례의 제약 칸과 서술, 8절 한국노동연구원 항목, 10절 19·49·60 연결을 모두 [추정]으로 쓰고, '원문 미열람 상태의 검색 요약 기준'임과 '조리로봇을 포함한 음식업 로봇 전반에 관한 지적'임을 본문에 밝혔다.",
+    "f1 수정 — 5절 호텔 사례 제약 칸을 '총 이동 시간이 거의 두 배(고객 노드 60개에서 225초→500초)'로 쓰고 호텔은 '실제 호텔 배치 자료(3개 층 67실)'로만 적었다. 3·4·6·8절 어디에도 소재국을 쓰지 않았다.",
+    "f3 수정 — 5절 호텔 사례 서술에서 '자외선 방역로봇'으로 쓰고 파장 수치를 뺐다. '2022-05-03 보도 기준'과 '지금도 운영 중인지는 확인되지 않았다'를 적었다.",
+    "f5 수정 — 5절 매장·쇼핑몰 사례 서술에서 24시간 운영을 '운영사 설명에 따르면' [추정]으로 옮기고, 오염 감지·물걸레 세척 등 기능 서술을 [추정] 벤더 주장으로 썼다. 세부영역 페이지에는 검증 노트 절이 없어서, 발행일 2025-04-02를 1차 검증에서 다시 확인하지 못했다는 메모를 같은 서술과 reference_updates ref-963 요약에 남겼다.",
+    "f16 수정 — 3절·5절에서 '하우스텐보스'를 쓰지 않고 '나가사키'까지만 썼으며, 코골이 오인 사례 문장은 ref-961 단독 각주로 달았다.",
+    "f17·용어 후보 수정 — 4절·7절·용어집에서 '25개 평가 범주(필수·부가)'로 쓰고 표기를 '로봇 친화형 건축물 인증'으로 통일했다. 이 인증은 5절 적용 사례에 넣지 않고 4·7절(과 10절 22번 연결 근거)에서만 다뤘다.",
+    "f10 수정 — 3절과 5절 식당 사례 서술에서 보급 대수 5,000대·3,100대를 '업체가 밝힌 값(지디넷코리아 보도)'으로 쓰고 독립 집계가 없음을 적었다.",
+    "f4·f11 유지 — 5절·6절에서 오티스 OID·오사카 호텔(f4)과 브이디셜틀·스위프트봇(f11) 문장을 모두 [추정] 벤더 주장으로 쓰고 [사실]로 쓰지 않았다.",
+    "f8·f15 각주 — 13절 ref-953·ref-959 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 ref-953·ref-959 항목에 source_unopened: true 를 넣었다.",
+    "열린 질문 4번 축약 — 11절과 open_question_updates 에서 스마트+빌딩 인증 부분을 빼고 '로봇 친화형 건축물 인증이 오피스를 넘어 호텔·쇼핑몰 같은 상업 시설로 확대됐는가?'로 줄였다.",
+    "종합 판단 [추정] 유지 — f6(6절 승강기 이용 방식), f20(5절 첫 문단), f21(사례 표의 종합 칸), f22·f23(9절 표와 서술), f24(10절 각 줄)를 모두 [추정]으로 쓰고, 문장마다 근거 finding 의 출처 각주를 달았다. 9절의 직접 범위·연계 대상은 이 추정 문장과 분류원문 인용 한 줄로만 썼다.",
+    "분량 초과 자동 분리: 64. 상업 시설 본문 11,678자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 5,814자"
+  ]
+}
