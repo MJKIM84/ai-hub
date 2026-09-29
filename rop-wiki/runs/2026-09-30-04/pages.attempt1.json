@@ -1,0 +1,608 @@
+{
+  "run_id": "2026-09-30-04",
+  "outline": [
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 800,
+      "summary": "로봇 원시 지도는 계속 달라지지만 작업 목적지와 대화는 장소 이름으로 이루어지므로 지도 버전이 바뀌어도 이름과 지도 요소의 연결을 유지해야 한다. [추정][^ref-1036]",
+      "planned_findings": [
+        "f21",
+        "f12",
+        "f9",
+        "f2",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 650,
+      "summary": "지도 버전(mapId·mapVersion), 구역 집합, 이름·대체 이름, 접근 제한, 의미 지도, 3차원 장면 그래프가 이 영역의 기본 용어다. [사실][^ref-031]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f7",
+        "f12",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 900,
+      "summary": "병원(평면도 주요 위치 주석), 가정(청소 로봇 의미 지도 갱신), 기타(로봇 친화형 건축물의 정밀지도) 세 현장 유형 사례를 여섯 항목으로 정리하고 근거 없는 칸은 미확인으로 둔다. [사실][^ref-869]",
+      "planned_findings": [
+        "f11",
+        "f12",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "장소 목록을 지도 요소에 묶는 방식, 지도 버전 배포·활성화, 구역 집합과 차선 폐쇄 같은 임시 통제, 연계 대상인 지도 갱신, 계층형 의미 지도가 대표 접근법이다. [사실][^ref-031]",
+      "planned_findings": [
+        "f6",
+        "f9",
+        "f1",
+        "f2",
+        "f4",
+        "f3",
+        "f10",
+        "f13",
+        "f12",
+        "f14",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 800,
+      "summary": "VDA 5050 3.0.0, LIF, IMDF 1.0.0, Open-RMF 교통 편집기와 LaneRequest, IEEE 1873-2015(비활성 보류), osmAG 가 관련된다. LIF 날짜는 출처마다 다르다. [사실][^ref-046]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f5",
+        "f8",
+        "f9",
+        "f10",
+        "f15",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 700,
+      "summary": "평생 의미 지도, 지도 안전 갱신(연계 대상), 3차원 장면 그래프, osmAG·osmAG-LLM, 국토지리정보원 실내공간정보가 대표 자료다. [사실][^ref-1036]",
+      "planned_findings": [
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 650,
+      "summary": "ROP 는 장소 목록·지도와 구역 집합의 버전·임시 통제 선언을 맡고, 센서 기반 지도 생성·건물 데이터 구축·승강기 운행은 연계 대상으로 보인다. [추정][^ref-031]",
+      "planned_findings": [
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 800,
+      "summary": "8·12·14·15·18·21·27·44·45·51·57·63·65·67번 영역과 이어진다. [추정][^ref-031]",
+      "planned_findings": [
+        "f24",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 800,
+      "summary": "기존 oq-188·oq-190·oq-193 과 새 질문 6건(LIF 날짜 출처 충돌 포함)을 둔다.",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f5",
+        "f7",
+        "f17",
+        "f19"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/space-and-map-model/place-semantics-and-map-management.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 장소 목록·지도 버전·구역 집합·차선 폐쇄, 책임 경계, 연결 14개 영역, 열린 질문 9건), 13절 각주 16건, 프런트매터 갱신"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"6. 대표 접근법과 기술\" 절(2,190자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"11. 열린 질문\" 절(1,766자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,125자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"8. 대표 연구와 자료\" 절(960자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"4. 핵심 개념과 용어\" 절(866자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area16-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 16. 장소 의미·지도 관리 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(732자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 16. 장소 의미·지도 관리 | 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 지도 버전·구역 집합·차선 폐쇄·장소 이름 모델, 책임 경계, 연결 14개 영역, 새 열린 질문 6건), 각주 16건 | run 2026-09-30-04",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 16. 장소 의미·지도 관리: 영역 심화로 3~11절 신규 작성(병원·가정·기타 적용 사례, VDA 5050 지도 버전·구역 집합, IMDF 장소 이름·대체 이름, Open-RMF 차선 요청, 책임 경계, 새 열린 질문 6건)",
+    "category_recent": "2026-09-30 — 16. 장소 의미·지도 관리: 영역 심화로 3~11절 신규 작성(적용 사례 3건, 대표 접근법·표준 7종, 책임 경계, 연결 14개 영역, 열린 질문 9건)",
+    "area_recent": "2026-09-30 — 16. 장소 의미·지도 관리: 영역 심화로 3~11절 신규 작성, 13절 각주 16건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "map-version",
+      "term_ko": "지도 버전",
+      "term_en": "Map Version (VDA 5050 mapId / mapVersion)",
+      "definition": "같은 작업 공간 구역을 가리키는 지도 식별자(mapId)에 붙는 갱신 표시로, VDA 5050 3.0.0 에서는 관제가 내려받게 한 여러 버전 가운데 같은 mapId 에서 한 버전만 활성화해 로봇이 쓰게 한다.",
+      "description": "VDA 5050 3.0.0(공식 저장소 main, 확인일 2026-09-30)에서 지도 상태는 ENABLED·DISABLED 이며 관제가 downloadMap·enableMap·deleteMap 즉시 동작으로 관리한다.",
+      "related_areas": [
+        16,
+        15,
+        57
+      ],
+      "sources": [
+        "ref-031"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "alternative-name",
+      "term_ko": "대체 이름",
+      "term_en": "Alternative Name (IMDF alt_name)",
+      "definition": "IMDF 에서 공간·물체·서비스를 가리키는 동의어나 다른 표현으로, 기준 이름(name)과 별도로 색인·질의·검색에 쓰인다.",
+      "related_areas": [
+        16,
+        12
+      ],
+      "sources": [
+        "ref-1027",
+        "ref-1026"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "semantic-map",
+      "term_ko": "의미 지도",
+      "term_en": "Semantic Map",
+      "definition": "기하 지도 위에 방·구역·물체의 이름과 용도 같은 높은 수준의 정보를 얹어 로봇과 사람이 함께 쓰는 공간 표현이다.",
+      "related_areas": [
+        16,
+        45,
+        65
+      ],
+      "sources": [
+        "ref-1036"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "3d-scene-graph",
+      "term_ko": "3차원 장면 그래프",
+      "term_en": "3D Scene Graph",
+      "definition": "물체·장소·방·건물 같은 추상화 층을 노드와 관계로 묶어 환경을 여러 해상도로 표현하는 계층형 공간 그래프다.",
+      "related_areas": [
+        16,
+        45
+      ],
+      "sources": [
+        "ref-347"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-046",
+      "org": "VDMA (Intralogistics-2X-LIF GitHub)",
+      "title": "Layout-Interchange-Format — Repository for the Layout Interchange Format (LIF)",
+      "published": "2023-09",
+      "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "VDMA 의 궤도 레이아웃 교환 형식 LIF 공식 저장소 README. 목적(통합사업자→제3자 상위 관제로 에지·노드·스테이션 전달)과 1.0.0 판(2023-09)을 확인했다. VDA 5050 3.0.0 은 같은 LIF 를 VDMA 2024-03 으로 인용한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1026",
+      "org": "Apple (Apple Business Register)",
+      "title": "Unit - Indoor Mapping Data Format",
+      "published": null,
+      "url": "https://register.apple.com/resources/imdf/types/unit",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "IMDF Unit 유형 참조 문서. 속성(category, restriction, accessibility, name, alt_name, display_point, level_id)과 분류값을 규정한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1027",
+      "org": "Apple (Apple Business Register)",
+      "title": "Glossary - Indoor Mapping Data Format",
+      "published": null,
+      "url": "https://register.apple.com/resources/imdf/glossary",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "IMDF 용어집. name(기준 레이블), alt_name(색인·검색용 동의어), Unit, Level, Anchor, Venue, Restriction 을 정의한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1028",
+      "org": "Open Geospatial Consortium (OGC)",
+      "title": "Indoor Mapping Data Format (1.0.0) — OGC Community Standard 20-094",
+      "published": "2021-02-18",
+      "url": "https://docs.ogc.org/cs/20-094/index.html",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "OGC 가 커뮤니티 표준으로 승인(2021-02-02)·게시(2021-02-18)한 IMDF 1.0.0. 16개 지형지물 유형을 정의한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-569",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf_internal_msgs — rmf_fleet_msgs/msg/LaneRequest.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 차선 열기·닫기 요청 메시지 정의(fleet_name, open_lanes, close_lanes). 설명 주석은 없다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-347",
+      "org": "Hughes, N., Chang, Y., Hu, S., Talak, R., Abdulhai, R., Strader, J., & Carlone, L. (arXiv 2305.07154, IJRR 투고본)",
+      "title": "Foundations of Spatial Perception for Robotics: Hierarchical Representations and Real-time Systems",
+      "published": "2023-05",
+      "url": "https://arxiv.org/abs/2305.07154",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "계층형 3차원 장면 그래프(물체·장소·방·건물)와 실시간 구축 시스템 Hydra 를 제시한 논문의 arXiv 초록(IJRR 투고본, 초록 기준). 본문은 열지 않았다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1031",
+      "org": "Feng, D., Li, C., Zhang, Y., Yu, C., & Schwertfeger, S. (arXiv)",
+      "title": "osmAG: Hierarchical Semantic Topometric Area Graph Maps in the OSM Format for Mobile Robotics",
+      "published": "2023-09",
+      "url": "https://arxiv.org/abs/2309.04791",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "OpenStreetMap XML 기반 계층형 위상·거리 의미 지도 형식 osmAG 와 ROS 연동 라이브러리. 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1032",
+      "org": "Xie, F., Schwertfeger, S., & Blum, H. (RA-L 2026 채택, arXiv)",
+      "title": "osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning",
+      "published": "2025-07",
+      "url": "https://arxiv.org/abs/2507.12753",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "osmAG 의미 지도를 환경 맥락으로 삼아 LLM 이 옮겨졌거나 지도에 없는 물체의 위치를 추론하게 한 방법. 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1033",
+      "org": "IEEE Standards Association (IEEE RAS)",
+      "title": "IEEE 1873-2015 — IEEE Standard for Robot Map Data Representation for Navigation",
+      "published": "2015-10-26",
+      "url": "https://standards.ieee.org/standard/1873-2015.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "IEEE SA 표준 소개 페이지. 2D 메트릭·위상 지도 데이터 모델·형식 범위, 승인(2015-09-03)·발행일, 2026-03-26 비활성 보류 상태를 확인했다. 유료 표준 본문은 열지 않았다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-956",
+      "org": "지디넷코리아",
+      "title": "네이버 제2사옥, 로봇 친화형 건축물 인증 획득",
+      "published": "2022-04-11",
+      "url": "https://zdnet.co.kr/view/?no=20220411142336",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "네이버 1784 의 로봇 친화형 건축물 인증 획득 보도. 인증지표 구성과 정밀지도·측위 인프라에 대한 평가위원 언급.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1035",
+      "org": "국토지리정보원",
+      "title": "실내공간정보",
+      "published": null,
+      "url": "https://www.ngii.go.kr/kor/content.do?sq=324",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "국토지리정보원의 실내공간정보 소개. 정의, 구축 대상(지하철·철도역사 등), LoD2, 자료 형식, 브이월드 제공, 공공·민간 활용처.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1036",
+      "org": "Narayana, M., Kolling, A., Nardelli, L., & Fong, P. (IROS 2020)",
+      "title": "Lifelong update of semantic maps in dynamic environments",
+      "published": "2020-10",
+      "url": "https://arxiv.org/abs/2010.08846",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "가정용 바닥 청소 로봇 수천 대에 배포한 평생 의미 지도의 의미 전이·충돌 감지·새 의미 발견 방법. 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1037",
+      "org": "Stefanini, E., Ciancolini, E., Settimi, A., & Pallottino, L. (Sensors 23(13):6066)",
+      "title": "Safe and Robust Map Updating for Long-Term Operations in Dynamic Environments",
+      "published": "2023-06-30",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346461/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "산업 물류 환경용 LiDAR 점유 격자 지도 안전 갱신 알고리즘. 반복 확인·위치 추정 의심 시 갱신 중지, 모의 창고·실험실 평가. PMC 본문 열람, 발행일 2023-06-30.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/place-semantics-and-map-management.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "출처 충돌: LIF 의 판·날짜가 저장소 README 기준 1.0.0(2023-09)과 VDA 5050 3.0.0 이 인용한 VDMA 2024-03 으로 다르다. 어느 쪽이 현행이며 두 날짜는 같은 판을 가리키는가?",
+      "areas": [
+        16,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "제조사마다 다른 지도 버전(VDA 5050 mapVersion, 제조사 지도 파일)이 바뀔 때 ROP 의 장소 목록에 있는 이름·좌표 대응을 자동으로 옮기고 검수하는 방법이나 산업 현장 사례가 있는가?",
+      "areas": [
+        16,
+        15
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "IEEE 1873-2015 가 2026-03 비활성 보류 상태가 된 뒤 로봇 지도 데이터 교환 표준을 잇는 IEEE·ISO 작업이 있는가?",
+      "areas": [
+        16,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "공사·청소·감염 관리 같은 임시 통제 구역을 누가 선언·승인하고 언제 해제하는지, VDA 5050 구역 집합이나 Open-RMF 차선 폐쇄를 쓰는 운영 절차를 공개한 병원·상업 시설 사례가 있는가?",
+      "areas": [
+        16,
+        40,
+        63
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "IMDF·IndoorGML 같은 실내 지도 표준의 장소 이름·대체 이름을 로봇 작업 목적지나 대화형 지시의 장소 해석에 직접 쓰는 로봇 관제 제품이나 연구가 있는가?",
+      "areas": [
+        16,
+        12
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국토지리정보원 실내공간정보(지하철·철도역사 등)를 로봇 운영 지도나 장소 목록의 출발점으로 쓴 국내 사례가 있는가?",
+      "areas": [
+        16,
+        67
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "작업 대상",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "수행 자원",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "제약",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "가정",
+      "item": "예외·성과",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시",
+      "title": "16. 장소 의미·지도 관리"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "IEEE 1873-2015 Robot Map Data Representation for Navigation",
+      "kind": "표준",
+      "org": "IEEE Standards Association (IEEE RAS)",
+      "url": "https://standards.ieee.org/standard/1873-2015.html",
+      "related_areas": [
+        16,
+        15,
+        21
+      ],
+      "summary": "항법하는 이동 로봇의 2차원 메트릭·위상 지도 데이터 모델·형식을 정한 표준(2015-10-26 발행). 2026-03-26 비활성 보류(Inactive-Reserved) 상태가 됐다.",
+      "ref_id": "ref-1033"
+    },
+    {
+      "name": "osmAG (OSM 형식 계층형 위상·거리 의미 지도)",
+      "kind": "프레임워크",
+      "org": "Feng, D. 외 (ShanghaiTech, arXiv)",
+      "url": "https://arxiv.org/abs/2309.04791",
+      "related_areas": [
+        16,
+        15
+      ],
+      "summary": "OpenStreetMap XML 위에 실내·실외 다층 환경의 계층형 위상·거리 의미 지도를 담는 파일 형식과 ROS 연동 C++ 라이브러리. 초록 기준.",
+      "ref_id": "ref-1031"
+    },
+    {
+      "name": "Open-RMF 차선 요청 메시지(rmf_fleet_msgs LaneRequest)",
+      "kind": "오픈소스",
+      "org": "Open Robotics (open-rmf)",
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "related_areas": [
+        16,
+        27
+      ],
+      "summary": "플릿 이름(fleet_name)과 열 차선(open_lanes)·닫을 차선(close_lanes)의 차선 번호 배열로 이루어진 메시지 정의.",
+      "ref_id": "ref-569"
+    }
+  ],
+  "additional_research_requests": [
+    "6·7절: LIF 스키마 필드(layoutVersion·stationName 등)를 스키마 원문으로 확인해야 LIF 가 장소 이름·버전을 어떻게 표현하는지 쓸 수 있다(README 에 필드 없음).",
+    "5절: 물류창고·제조 공장·상업 시설의 실제 운영 현장에서 지도 버전·장소 이름을 관리한 공개 사례가 필요하다(이번 브리프에는 물류창고 근거가 모의 실험뿐).",
+    "5절: 병원·가정·기타 사례의 시작 조건·완료·인계·제약·예외·성과 근거가 없어 '미확인'으로 두었다. 타르투 대학병원 논문 본문과 청소 로봇 의미 지도 논문 본문에서 해당 항목을 확인해야 한다.",
+    "6절: Nav2 금지 구역·속도 필터(costmap filter)와 MiR 지도 편집기(구역·위치 구성 요소)의 공식 문서를 열어 제조사·오픈소스 쪽 임시 통제 구역 방식을 보강해야 한다(이번 실행에서 열지 못함).",
+    "11절 oq-193: 건설 현장 점검 로봇 지도–BIM 동기화 주기의 근거가 여전히 없다.",
+    "13절: ref-031·ref-079·ref-869 의 참고문헌 페이지 '각주 형식' 줄이 입력에 없어 브리프 출처 필드로 각주를 만들었다. 기존 줄과 다르면 퍼블리셔가 맞춰 주어야 한다. 또 ref-046 는 기존 ref-046(LIF README)과 URL 이 같으므로 병합 여부 확인이 필요하다."
+  ],
+  "fixes_applied": [
+    "f1 기준일 명시 — 3·4·6·7절에서 VDA 5050 을 'VDA 5050 3.0.0(공식 저장소 main)'으로 적고 확인일 2026-09-30 을 함께 두었다.",
+    "f2 문구 수정 — 6절 '지도 버전의 배포와 활성화'에서 '명세는 지도가 사용 중이면 deleteMap 이 실패(FAILED)할 수 있다는 예를 든다'로 고쳤다.",
+    "f3 용어·나열 수정 — 4·6절에서 '구역 집합'(용어집 zone-set 링크)으로 통일하고 구역 유형 나열에 양방향(BIDIRECTED)을 더했다.",
+    "f4·f5 LIF 날짜 — 7절 LIF 행에 'README 기준 1.0.0(2023-09)'과 'VDA 5050 3.0.0 이 인용한 VDMA 2024-03'을 함께 제시하고, 11절에 '출처 충돌' 새 질문(관련 영역 16·21, 각주 ref-046·ref-031)을 두고 open_question_updates 에 냈다.",
+    "f6 화장실 제외 — 6절 IMDF Unit 분류 나열을 '승강기·에스컬레이터·계단·경사로·방·비공개 구역 등'으로 쓰고 화장실을 뺐다.",
+    "f10 분리 — 6절에서 LaneRequest 필드 구성(fleet_name·open_lanes·close_lanes)만 [사실]로 쓰고, 운영 중 차선을 닫거나 여는 쓰임은 설명 주석이 없다는 점을 밝혀 [추정]으로 분리했다(7절 표도 필드 구성만 [사실]).",
+    "f13 발행일·범위 — ref-1037 각주·reference_updates 발행일을 2023-06-30 으로 고치고, 6·8절에서 '연계 대상:'으로 시작하는 짧은 서술로 다뤘다.",
+    "f14 출처 표기 — ref-347 각주·8절·4절 표기를 'arXiv 2305.07154, 2023-05(IJRR 투고본, 초록 기준)'로 맞추고, Hydra 센서 기반 구축 부분은 6·8절에서 연계 대상으로 표시했다.",
+    "f19 활용처 — 8절 국토지리정보원 항목의 활용처를 '공공분야(철도보안시스템, 시설물관리)·민간분야(실내 내비게이션, 메타버스, 좌석안내서비스)'로 바꾸고 안전·소방을 뺐다.",
+    "f12 경계 — 5절 가정 사례 표와 서술, 6절에서 평생 의미 지도를 '로봇 제품 쪽 기능'으로 서술하고, ROP 역할은 9절의 [추정](f22·f23) 범위로만 다룬다고 밝혔다.",
+    "f16·f24 연결 — 10절에 44. 로봇 기반 모델·언어 모델 계획(ref-1032)을 더하고 45·8·12번 연결을 유지했으며 프런트매터 related_areas 에 44 를 넣었다.",
+    "5절 사례 범위 — 병원(f11)·가정(f12)·기타(f18) 세 현장 유형만 쓰고 물류창고 사례를 만들지 않았으며, 근거 없는 칸(시작 조건·완료·인계 등)은 '미확인'으로 두었다.",
+    "f18 표기 — 5절 기타 사례를 '지디넷코리아(2022-04-11)에 따르면' 형식으로 쓰고 용어집 '로봇 친화형 건축물 인증'을 링크했다.",
+    "각주 — ref-031·ref-079·ref-869 는 기존 id 를 재사용하고(참고문헌 페이지 줄은 입력에 없어 브리프 출처 필드로 같은 형식을 구성, additional_research_requests 에 확인 요청), reference_updates 에는 신규 ref-046~ref-1037 만 넣었다.",
+    "분량 초과 자동 분리: 16. 장소 의미·지도 관리 본문 10,449자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,485자"
+  ]
+}

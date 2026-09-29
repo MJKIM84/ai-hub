@@ -20,6 +20,28 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-04 | 갱신 | [docs/categories/space-and-map-model/place-semantics-and-map-management.md](categories/space-and-map-model/place-semantics-and-map-management.md) | 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 장소 목록·지도 버전·구역 집합·차선 폐쇄, 책임 경계, 연결 14개 영역, 열린 질문 9건), 13절 각주, 프런트매터 갱신. 2차 수정: 8절 첫 문장을 이번 브리프 자료 범위로 한정하고 ref-1017 각주 정의 추가 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s6.md](topics/2026/2026-09-30-area16-s6.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "6. 대표 접근법과 기술" 절(2,190자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s11.md](topics/2026/2026-09-30-area16-s11.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "11. 열린 질문" 절(1,766자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s7.md](topics/2026/2026-09-30-area16-s7.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,125자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s8.md](topics/2026/2026-09-30-area16-s8.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 1절·3절 첫 문장을 이번 브리프 자료 범위로 한정 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s4.md](topics/2026/2026-09-30-area16-s4.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "4. 핵심 개념과 용어" 절(866자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s10.md](topics/2026/2026-09-30-area16-s10.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(732자)을 옮겼다 |
+| 2026-09-30-04 | 요약 | [docs/categories/space-and-map-model/place-semantics-and-map-management.md](categories/space-and-map-model/place-semantics-and-map-management.md) | 16. 장소 의미·지도 관리: 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 지도 버전·구역 집합·차선 폐쇄·장소 이름 모델, 책임 경계, 연결 14개 영역, 새 열린 질문 6건), 각주 16건 |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1014.md](references/ref-1014.md) | 참고문헌 ref-1014 등록: Unit - Indoor Mapping Data Format |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1015.md](references/ref-1015.md) | 참고문헌 ref-1015 등록: Glossary - Indoor Mapping Data Format |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1016.md](references/ref-1016.md) | 참고문헌 ref-1016 등록: Indoor Mapping Data Format (1.0.0) — OGC Community Standard… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1017.md](references/ref-1017.md) | 참고문헌 ref-1017 등록: osmAG: Hierarchical Semantic Topometric Area Graph Maps in t… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1018.md](references/ref-1018.md) | 참고문헌 ref-1018 등록: osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via S… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1019.md](references/ref-1019.md) | 참고문헌 ref-1019 등록: IEEE 1873-2015 — IEEE Standard for Robot Map Data Representa… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1020.md](references/ref-1020.md) | 참고문헌 ref-1020 등록: 실내공간정보 |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1021.md](references/ref-1021.md) | 참고문헌 ref-1021 등록: Lifelong update of semantic maps in dynamic environments |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1022.md](references/ref-1022.md) | 참고문헌 ref-1022 등록: Safe and Robust Map Updating for Long-Term Operations in Dyn… |
+| 2026-09-30-04 | 생성 | [docs/glossary/map-version.md](glossary/map-version.md) | 용어집 항목 지도 버전 |
+| 2026-09-30-04 | 생성 | [docs/glossary/alternative-name.md](glossary/alternative-name.md) | 용어집 항목 대체 이름 |
+| 2026-09-30-04 | 생성 | [docs/glossary/semantic-map.md](glossary/semantic-map.md) | 용어집 항목 의미 지도 |
+| 2026-09-30-04 | 생성 | [docs/glossary/3d-scene-graph.md](glossary/3d-scene-graph.md) | 용어집 항목 3차원 장면 그래프 |
+| 2026-09-30-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-03 | 갱신 | [docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합, 책임 경계, 연결 10개 영역, 열린 질문 6건), 13절 각주 15건. 2차 수정: 3절 f20·f21 문장과 9절 f24 문장에 태그·각주 추가, 4절 설계–준공 편차 설명의 [의견] 각주를 떼고 용어 사용 설명으로 바꿈, 8절 BIM-SLAM 항목에 '연계 대상' 표시 |
 | 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s6.md](topics/2026/2026-09-30-area14-s6.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "6. 대표 접근법과 기술" 절(1,924자)을 옮겼다 |
 | 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s4.md](topics/2026/2026-09-30-area14-s4.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "4. 핵심 개념과 용어" 절(1,101자)을 옮겼다 |

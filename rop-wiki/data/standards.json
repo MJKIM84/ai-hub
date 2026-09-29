@@ -3276,6 +3276,49 @@
       "ref_id": "ref-1004",
       "run_id": "2026-09-30-02",
       "date": "2026-09-30"
+    },
+    {
+      "name": "IEEE 1873-2015 Robot Map Data Representation for Navigation",
+      "org": "IEEE Standards Association (IEEE RAS)",
+      "kind": "표준",
+      "related_areas": [
+        16,
+        15,
+        21
+      ],
+      "url": "https://standards.ieee.org/standard/1873-2015.html",
+      "summary": "항법하는 이동 로봇의 2차원 메트릭·위상 지도 데이터 모델·형식을 정한 표준(2015-10-26 발행). 2026-03-26 비활성 보류(Inactive-Reserved) 상태가 됐다.",
+      "ref_id": "ref-1019",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "osmAG (OSM 형식 계층형 위상·거리 의미 지도)",
+      "org": "Feng, D. 외 (arXiv)",
+      "kind": "프레임워크",
+      "related_areas": [
+        16,
+        15
+      ],
+      "url": "https://arxiv.org/abs/2309.04791",
+      "summary": "OpenStreetMap XML 위에 실내·실외 다층 환경의 계층형 위상·거리 의미 지도를 담는 파일 형식과 ROS 연동 C++ 라이브러리. 초록 기준.",
+      "ref_id": "ref-1017",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open-RMF 차선 요청 메시지(rmf_fleet_msgs LaneRequest)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16,
+        27
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "summary": "플릿 이름(fleet_name)과 열 차선(open_lanes)·닫을 차선(close_lanes)의 차선 번호 배열로 이루어진 메시지 정의.",
+      "ref_id": "ref-569",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
     }
   ]
 }

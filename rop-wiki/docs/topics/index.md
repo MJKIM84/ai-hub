@@ -27,6 +27,12 @@ version: 1
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 핵심 개념과 용어](2026/2026-09-30-area14-s4.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 접근법과 기술](2026/2026-09-30-area14-s6.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 연구와 자료](2026/2026-09-30-area14-s8.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 다른 연구영역과의 연결](2026/2026-09-30-area16-s10.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 열린 질문](2026/2026-09-30-area16-s11.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 핵심 개념과 용어](2026/2026-09-30-area16-s4.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 접근법과 기술](2026/2026-09-30-area16-s6.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area16-s7.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 연구와 자료](2026/2026-09-30-area16-s8.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
