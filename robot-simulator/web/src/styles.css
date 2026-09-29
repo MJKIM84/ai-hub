@@ -2491,3 +2491,11 @@ input[aria-invalid="true"] {
 .personal-api-panel small { line-height: 1.7; color: var(--text-muted, #596579); }
 .personal-api-panel .check { grid-column: 1 / -1; line-height: 1.7; }
 .session-error { max-width: 600px; margin: 15vh auto; padding: 24px; }
+
+/* Keep environment editing focused on the map, with import/review above it. */
+@media (min-width: 761px) {
+  .page-environment.workspace-content > .workspace {
+    flex: 1 0 480px;
+    min-height: 480px;
+  }
+}

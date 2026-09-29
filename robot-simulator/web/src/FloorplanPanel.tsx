@@ -99,7 +99,7 @@ export default function FloorplanPanel({ project, onApply, focusDrawing }: {
   const [list, setList] = useState<FloorplanSummary[]>([]);
   const [versions, setVersions] = useState<FloorplanVersion[]>([]);
   const [pageIndex, setPageIndex] = useState(0);
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [selected, setSelected] = useState("");
   const [kindFilter, setKindFilter] = useState("all");
   const [statusFilter, setStatusFilter] = useState("proposed");
@@ -216,12 +216,12 @@ export default function FloorplanPanel({ project, onApply, focusDrawing }: {
     setFloorRegions((rows) => [...rows,{ bbox_px:box,name:`${rows.length+1}층`,elevation_m:rows.length*3.2 }]);
     setDrawingRegion(false);
   };
-  const load = async (id: string) => {
+  const load = async (id: string, reveal = true) => {
     if (dirty) throw new Error("현재 도면 수정이 저장되지 않았습니다. 검토 저장 후 다른 기록을 열어 주세요.");
     acceptSavedPlan(await request<Floorplan>(`/floorplans/${id}`));
     await refreshVersions(id);
     setDirty(false);
-    setPageIndex(0); setSelected(""); setMeasurePoints([]); setExpanded(true);
+    setPageIndex(0); setSelected(""); setMeasurePoints([]); if (reveal) setExpanded(true);
     setKindFilter("all"); setStatusFilter("proposed"); setSourceFilter("all"); setVisibleCount(40);
     setLabelVisibleCount(30);
     setSelectedLabelIndex(null);
@@ -237,7 +237,7 @@ export default function FloorplanPanel({ project, onApply, focusDrawing }: {
     const id = project.environment.id.startsWith("floorplan-")
       ? project.environment.id.slice("floorplan-".length) : "";
     if (!id) return;
-    void load(id).catch((e) => setError(`현재 지도의 원본 도면을 열지 못했습니다: ${errorText(e)}`));
+    void load(id, false).catch((e) => setError(`현재 지도의 원본 도면을 열지 못했습니다: ${errorText(e)}`));
   }, [project.environment.id]);
   const upload = (file: File) => act("도면 인식 중", async () => {
     if (file.size > 20_000_000) throw new Error("도면은 20MB 이하여야 합니다.");
@@ -373,21 +373,22 @@ export default function FloorplanPanel({ project, onApply, focusDrawing }: {
     label.review_status !== "rejected" && /\b(?:FIRST|SECOND|THIRD|1ST|2ND|3RD)\s+FLOOR\b|[1-9]층/i.test(label.text)
   ).map((label) => [label.text.trim().toLowerCase(),label])).values());
   return (
-    <section className="floorplan-panel" aria-label="도면 인식과 공간 검토">
+    <section className={`floorplan-panel ${expanded ? "is-expanded" : "is-collapsed"}`} aria-label="도면 인식과 공간 검토">
       <header className="floorplan-heading">
         <div><h2><Layers3 size={20} /> 도면에서 공간 만들기</h2>
-          <p>PDF·PNG·JPEG를 인식하고 원본 위에서 고친 뒤, 확정한 객체로 지도와 통행 그래프를 만듭니다.</p></div>
+          <p>{plan ? `${plan.title} · 검토 v${plan.revision}${dirty ? " · 미저장 변경" : ""}` : `PDF·PNG·JPEG 등록 · 저장된 도면 ${list.length}개`}</p></div>
         <div className="floorplan-actions">
           <button aria-expanded={expanded} onClick={() => setExpanded((v) => !v)}>{expanded ? "도면 검토 접기" : "도면 검토 펼치기"}</button>
           <input ref={fileRef} type="file" hidden accept=".pdf,.png,.jpg,.jpeg,application/pdf,image/png,image/jpeg"
             onChange={(e) => { const file = e.target.files?.[0]; if (file) void upload(file); e.target.value = ""; }} />
           <button disabled={!!busy} onClick={() => fileRef.current?.click()}><FileUp size={15} /> 도면 등록</button>
-          <button disabled={!!busy} onClick={() => void act("목록 확인 중", refreshList)}><RefreshCw size={15} /> 목록</button>
+          <button disabled={!!busy} onClick={() => { setExpanded(true); void act("목록 확인 중", refreshList); }}><RefreshCw size={15} /> 목록</button>
         </div>
       </header>
       {error && <p className="notice error" role="alert">{error}</p>}
       {notice && <p className="notice" role="status">{notice}</p>}
       {busy && <p className="notice" role="status">{busy}…</p>}
+      {expanded && <>
       <div className="floorplan-history" aria-label="저장된 도면 작업 기록">
         <div className="floorplan-history-heading"><strong>도면 작업 기록</strong><span>{list.length}개 도면 · 원본과 검토 버전 보존</span></div>
         {list.length === 0 ? <p>저장된 도면이 없습니다. PDF 또는 이미지를 등록해 시작하세요.</p> :
@@ -410,7 +411,6 @@ export default function FloorplanPanel({ project, onApply, focusDrawing }: {
           })}>이 도면의 지도 열기</button>}
         </details>}
       </div>
-      {expanded && <>
       <div className="floorplan-toolbar">
         <label>등록한 도면
           <select value={plan?.id ?? ""} onChange={(e) => { if (e.target.value) openPlan(e.target.value); }}>

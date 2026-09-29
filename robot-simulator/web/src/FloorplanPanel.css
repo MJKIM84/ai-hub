@@ -1,7 +1,9 @@
-.floorplan-panel{padding:20px;border:1px solid var(--line,#d9e1e4);border-radius:18px;background:var(--panel,#fff);margin-bottom:20px}
+.floorplan-panel{flex-shrink:0;padding:10px 12px;border:1px solid var(--line,#d9e1e4);border-radius:10px;background:var(--panel,#fff);margin-bottom:10px}
+.floorplan-panel.is-expanded{max-height:55dvh;overflow:auto}
+.floorplan-panel.is-expanded .floorplan-heading{position:sticky;top:-10px;z-index:5;background:var(--panel,#fff);padding:6px 0;border-bottom:1px solid var(--line,#d9e1e4)}
 .floorplan-heading,.floorplan-toolbar,.floorplan-actions,.floorplan-add,.floorplan-pages{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.floorplan-heading h2{display:flex;align-items:center;gap:8px;margin:0 0 6px;font-size:1.2rem}
-.floorplan-heading p,.floorplan-hint{margin:0;color:var(--muted,#5b6870);font-size:.88rem}
+.floorplan-heading h2{display:flex;align-items:center;gap:8px;margin:0 0 3px;font-size:.95rem}
+.floorplan-heading p,.floorplan-hint{margin:0;color:var(--muted,#5b6870);font-size:.75rem}
 .floorplan-history{margin-top:16px;padding:14px;border:1px solid #cbdcdd;border-radius:12px;background:#f7faf9}
 .floorplan-history-heading{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
 .floorplan-history-heading span,.floorplan-history-item small{color:#536a70;font-size:.78rem}
@@ -43,3 +45,8 @@
 .floorplan-label-row button[aria-pressed=true]{background:#fff1cb;border-color:#ad420e;color:#703006}
 @media(max-width:900px){.floorplan-edit-grid{grid-template-columns:1fr}.floorplan-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.floorplan-candidate-list,.floorplan-inspector,.floorplan-finish{grid-column:1/-1}}
 @media(max-width:600px){.floorplan-controls{grid-template-columns:1fr}.floorplan-candidate-list,.floorplan-inspector,.floorplan-finish{grid-column:auto}}
+
+.floorplan-panel .floorplan-heading>div:first-child{min-width:0;flex:1 1 240px}
+.floorplan-panel.is-collapsed .floorplan-heading p{overflow-wrap:anywhere}
+.floorplan-panel .floorplan-actions button{min-height:32px;padding:6px 10px;font-size:12px}
+@media(max-width:760px){.floorplan-panel.is-expanded{max-height:65dvh}.floorplan-heading{gap:8px}}
