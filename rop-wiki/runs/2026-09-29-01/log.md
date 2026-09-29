@@ -1,0 +1,164 @@
+# 실행 로그 2026-09-29-01
+
+- 2026-09-29 08:14:05 KST [준비] 실행 시작 (date=2026-09-29 run_id=2026-09-29-01 resume=없음 step=전체 run_type=area_deep_dive area=8 track=자동)
+- 2026-09-29 08:14:32 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:14:32 KST [준비] 결과: 성공 · 소요 28초 · web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:14:41 KST [대상 선정] 결과: 성공 · 소요 9초 · area_deep_dive · 8. 채팅으로 맵 작성
+- 2026-09-29 08:14:42 KST [리서치 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/research.md (82,039자, 규칙은 시스템 프롬프트 researcher-e90ce8b81cf3.md)
+- 2026-09-29 08:23:38 KST [리서치 에이전트] 호출 완료(시도 1): 턴 43 · 8분 56초 · 비용 $6.6278 · subtype success
+- 2026-09-29 08:23:39 KST [리서치 에이전트] 저장: runs/2026-09-29-01/research.json
+- 2026-09-29 08:23:39 KST [형식 검증] 리서치 산출물 검사: 출처 15건 중 원문 열람 14건 · 신뢰도 상한 적용 0건
+- 2026-09-29 08:23:39 KST [리서치] 예산 점검: 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-29 08:23:39 KST [리서치] 결과: 성공 · 소요 8분 58초 · 신규 출처 도달: 15/15 (부분 결과로 진행)
+- 2026-09-29 08:23:40 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/verification1.md (111,368자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-09-29 08:28:21 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 29 · 4분 42초 · 비용 $5.0634 · subtype success
+- 2026-09-29 08:28:21 KST [내용 검증 에이전트] 저장: runs/2026-09-29-01/verification.json
+- 2026-09-29 08:28:22 KST [형식 검증] 1차 검증 산출물 검사: 통과
+- 2026-09-29 08:28:22 KST [1차 검증] 결과: 조건부 승인 · 소요 4분 43초 · 신뢰도 medium
+- 2026-09-29 08:28:22 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/storyteller.md (156,879자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-09-29 08:34:46 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 6분 23초 · 비용 $5.1261 · subtype success
+- 2026-09-29 08:34:46 KST [스토리텔러 에이전트] 저장: runs/2026-09-29-01/pages.json
+- 2026-09-29 08:34:46 KST [스토리텔러] 결과: 성공 · 소요 6분 24초 · 페이지 1개
+- 2026-09-29 08:34:46 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 08:34:46 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 08:34:46 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-29 08:34:48 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-818→ref-079, ref-821→ref-046, ref-824→ref-104, ref-828→ref-083, ref-829→ref-163
+- 2026-09-29 08:34:48 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 08:34:49 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 08:34:51 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 08:34:53 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:34:53 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 9건 (파일 1314개 검사)
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/map-space-and-location-model.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/place-semantics-and-map-management.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../ai-and-learning/document-drawing-and-scene-understanding.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 conversational-trust-and-foundations.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/facility-and-building-system-integration.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/robot-and-vendor-fleet-manager-integration.md
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/interoperability-standards-and-conformance.md
+
+- 2026-09-29 08:34:53 KST [형식 검증] 원고 형식 검사: 오류 11건 · 자동 분리 7건
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/map-space-and-location-model.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/place-semantics-and-map-management.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../ai-and-learning/document-drawing-and-scene-understanding.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 conversational-trust-and-foundations.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/facility-and-building-system-integration.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/robot-and-vendor-fleet-manager-integration.md
+- 2026-09-29 08:34:53 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../integration/interoperability-standards-and-conformance.md
+- 2026-09-29 08:34:53 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-29-01/format_check.md)
+- 2026-09-29 08:34:53 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/storyteller-formatfix1.md (230,553자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-09-29 08:35:34 KST [스토리텔러 에이전트] 호출 실패(시도 1): claude 출력 없음 (exit 143): 
+- 2026-09-29 08:37:09 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 08:37:09 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 08:37:09 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-29 08:37:10 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 08:37:10 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 08:37:13 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 08:37:19 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-29 08:37:20 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:37:20 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-29 08:37:20 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-29 08:37:31 KST [준비] 실행 시작 (date=2026-09-29 run_id=2026-09-29-01 resume=2026-09-29-01 step=전체 run_type=자동 area=자동 track=자동)
+- 2026-09-29 08:37:31 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-29 08:37:58 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:37:58 KST [준비] 결과: 성공 · 소요 28초 · web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:37:58 KST [대상 선정] 재개: 기존 target.json 사용
+- 2026-09-29 08:37:58 KST [대상 선정] 결과: 건너뜀 · 소요 0초 · 재개(기존 target.json)
+- 2026-09-29 08:37:58 KST [1차 검증] 재개: 1차 검증 조건부 승인 — 리서치·1차 검증 건너뜀
+- 2026-09-29 08:37:59 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/verification2.md (130,111자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-09-29 08:41:27 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 3분 28초 · 비용 $2.4694 · subtype success
+- 2026-09-29 08:41:27 KST [내용 검증 에이전트] 저장: runs/2026-09-29-01/verification2.json
+- 2026-09-29 08:41:27 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-29 08:41:28 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
+- 2026-09-29 08:41:28 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 3분 29초 · required_fixes 참고
+- 2026-09-29 08:41:28 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/storyteller-retry1.md (236,661자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-09-29 08:43:29 KST [스토리텔러 에이전트] 호출 완료(시도 2): 턴 2 · 7분 55초 · 비용 $5.4405 · subtype success
+- 2026-09-29 08:43:29 KST [스토리텔러 에이전트] 저장: runs/2026-09-29-01/pages.json
+- 2026-09-29 08:47:13 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 5분 45초 · 비용 $4.6678 · subtype success
+- 2026-09-29 08:47:13 KST [스토리텔러 에이전트] 저장: runs/2026-09-29-01/pages.json
+- 2026-09-29 08:47:13 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 5분 45초 · 페이지 1개
+- 2026-09-29 08:47:13 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 08:47:14 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 08:47:14 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-29 08:47:15 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 08:47:15 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 08:47:18 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 08:47:19 KST [퍼블리셔] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:47:19 KST [퍼블리셔] 실패: 4단계 내부 링크·각주 검사 실패:
+[check_links] 오류 1건 (파일 1314개 검사)
+- topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+
+- 2026-09-29 08:47:19 KST [형식 검증] 원고 형식 검사: 오류 3건 · 자동 분리 7건
+- 2026-09-29 08:47:19 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 원복: 4단계 링크·각주 검사 실패 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:47:19 KST [형식 검증]   - 퍼블리셔 사전 검사: [publish] 실패: 4단계 내부 링크·각주 검사 실패:
+- 2026-09-29 08:47:19 KST [형식 검증]   - 퍼블리셔 사전 검사: - topics/2026/2026-09-29-area08-s10.md: 깨진 링크 ../space-and-map-model/maps-from-floor-plans-and-bim.md
+- 2026-09-29 08:47:19 KST [형식 검증] 형식 검증 실패 → 스토리텔러 형식 수정 재작성 1/2 (runs/2026-09-29-01/format_check.md)
+- 2026-09-29 08:47:20 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/storyteller-retry1-formatfix1.md (239,147자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-09-29 08:48:18 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 08:48:18 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 08:48:18 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-29 08:48:19 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 08:48:19 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 08:48:22 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 08:48:28 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-29 08:48:28 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 08:48:28 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-29 08:48:28 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-29 08:48:45 KST [준비] 실행 시작 (date=2026-09-29 run_id=2026-09-29-01 resume=2026-09-29-01 step=전체 run_type=자동 area=자동 track=자동)
+- 2026-09-29 08:48:45 KST [준비] 재개: 있는 산출물부터 이어서 실행한다
+- 2026-09-29 08:48:59 KST [스토리텔러 에이전트] 호출 실패(시도 1): claude 출력 없음 (exit 143): 
+- 2026-09-29 08:49:13 KST [준비] 웹 도구 점검: web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:49:13 KST [준비] 결과: 성공 · 소요 29초 · web_search_available: true · web_fetch_available: true
+- 2026-09-29 08:49:13 KST [대상 선정] 재개: 기존 target.json 사용
+- 2026-09-29 08:49:14 KST [대상 선정] 결과: 건너뜀 · 소요 0초 · 재개(기존 target.json)
+- 2026-09-29 08:49:14 KST [1차 검증] 재개: 1차 검증 조건부 승인 — 리서치·1차 검증 건너뜀
+- 2026-09-29 08:49:14 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/verification2.md (132,121자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-09-29 08:52:06 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 2분 52초 · 비용 $2.3939 · subtype success
+- 2026-09-29 08:52:06 KST [내용 검증 에이전트] 저장: runs/2026-09-29-01/verification2.json
+- 2026-09-29 08:52:06 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-29 08:52:06 KST [2차 검증] 수정 후 재검증 → 스토리텔러 재실행 1/2: required_fixes 참고
+- 2026-09-29 08:52:06 KST [2차 검증] 결과: 수정 후 재검증(재작성 1회차 진행) · 소요 2분 52초 · required_fixes 참고
+- 2026-09-29 08:52:07 KST [스토리텔러 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/storyteller-retry1.md (237,526자, 규칙은 시스템 프롬프트 storyteller-fe1480691d91.md)
+- 2026-09-29 08:57:39 KST [스토리텔러 에이전트] 호출 완료(시도 2): 턴 2 · 8분 40초 · 비용 $5.7771 · subtype success
+- 2026-09-29 08:57:39 KST [스토리텔러 에이전트] 저장: runs/2026-09-29-01/pages.json
+- 2026-09-29 09:00:31 KST [스토리텔러 에이전트] 호출 완료(시도 1): 턴 2 · 8분 24초 · 비용 $5.7047 · subtype success
+- 2026-09-29 09:00:31 KST [스토리텔러 에이전트] 저장: runs/2026-09-29-01/pages.json
+- 2026-09-29 09:00:31 KST [스토리텔러] 결과: 재시도 1회 후 성공 · 소요 8분 25초 · 페이지 8개
+- 2026-09-29 09:00:32 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 09:00:32 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 09:00:32 KST [퍼블리셔] 사전 검사(--precheck): 2차 검증 전 형식 검사 — 판정 확인을 건너뛰고 2~4단계만 검사한 뒤 되돌린다
+- 2026-09-29 09:00:33 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 09:00:33 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 09:00:36 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 09:00:41 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-29 09:00:41 KST [퍼블리셔] 원복: --dry-run: 검사만 하고 되돌린다 — docs/data/config/tracks/mkdocs.yml/inbox/corrections.md 를 스냅숏으로 되돌렸다
+- 2026-09-29 09:00:41 KST [퍼블리셔] --dry-run: 1~4단계 통과, docs 원복
+- 2026-09-29 09:00:41 KST [형식 검증] 원고 형식 검사: 통과
+- 2026-09-29 09:00:42 KST [형식 검증] 결과: 통과 · 소요 10초
+- 2026-09-29 09:00:42 KST [내용 검증 에이전트] 프롬프트 저장: runs/2026-09-29-01/prompts/verification2-retry1.md (138,053자, 규칙은 시스템 프롬프트 verifier-d4fe8ddd2d74.md)
+- 2026-09-29 09:02:13 KST [내용 검증 에이전트] 호출 완료(시도 1): 턴 2 · 1분 31초 · 비용 $2.1951 · subtype success
+- 2026-09-29 09:02:13 KST [내용 검증 에이전트] 저장: runs/2026-09-29-01/verification2.json
+- 2026-09-29 09:02:13 KST [형식 검증] 2차 검증 산출물 검사: 통과
+- 2026-09-29 09:02:13 KST [2차 검증] 결과: 재시도 1회 후 통과 · 소요 1분 31초 · 신뢰도 medium
+- 2026-09-29 09:02:13 KST [퍼블리셔] 퍼블리셔 시작(no_build=0 no_commit=0)
+- 2026-09-29 09:02:13 KST [퍼블리셔] 퍼블리셔 시작: 2026-09-29-01 (영역 심화)
+- 2026-09-29 09:02:13 KST [퍼블리셔] 1단계 스키마 검증 통과 (research, verification, verification2, pages)
+- 2026-09-29 09:02:13 KST [퍼블리셔] 1단계 판정 확인 통과 (1차 조건부 승인 / 2차 통과 · 신뢰도 medium)
+- 2026-09-29 09:02:14 KST [퍼블리셔] 참고문헌 id 재배정(병렬 실행 충돌·중복 URL): ref-815→ref-785, ref-816→ref-786, ref-817→ref-787, ref-819→ref-788, ref-820→ref-811, ref-822→ref-812, ref-823→ref-813, ref-825→ref-815, ref-826→ref-816, ref-827→ref-817
+- 2026-09-29 09:02:14 KST [퍼블리셔] 2단계 프런트매터 검증 통과 (페이지 8개, 반영 전 사전 검사 포함)
+- 2026-09-29 09:02:15 KST [퍼블리셔] 스냅숏 저장: runs/2026-09-29-01/backup (docs, data, config/tracks, mkdocs.yml, inbox/corrections.md)
+- 2026-09-29 09:02:17 KST [퍼블리셔] 3단계 원문 보호 검사 통과 (protect_source.py --skip-nav)
+- 2026-09-29 09:02:23 KST [퍼블리셔] 4단계 내부 링크·각주 검사 통과 (check_links.py, 제목 앵커 대조, check_frontmatter.py)
+- 2026-09-29 09:05:01 KST [퍼블리셔] 5단계 반영 완료: 페이지 생성 7/갱신 1/폐기 0, 용어 3, 참고문헌 10, 표준 0, 열린 질문 3, 매트릭스 칸 16, 백로그 0, 정정 0; auto 영역 갱신 242개 페이지, mkdocs.yml 갱신
+- 2026-09-29 09:06:26 KST [퍼블리셔] 6단계 사이트 빌드 성공 ('mkdocs build --strict', 1분 26초)
+- 2026-09-29 09:06:26 KST [퍼블리셔] 8단계 일일 로그 저장: docs/logs/daily/2026-09-29.md · summary.json (종료 상태: 게시 완료)
+- 2026-09-29 09:10:19 KST [퍼블리셔] 8단계 확정 로그 반영 뒤 사이트 재빌드 성공
+- 2026-09-29 09:10:19 KST [퍼블리셔] 퍼블리셔 완료: 생성 7/갱신 1 · 8분 6초
+- 2026-09-29 09:10:19 KST [퍼블리셔] 결과: 성공 · 소요 8분 6초 · 게시 완료
+- 2026-09-29 09:10:19 KST [퍼블리셔] 7단계 커밋: run(2026-09-29): 영역 심화 8. 채팅으로 맵 작성 — 생성 7/갱신 1 (커밋 해시는 바로 뒤 기록 커밋에서 summary.json 의 commit 에 남긴다)

@@ -53,9 +53,11 @@
 |---|---|---|---|
 | `repo_root` | `".."` | git 저장소 루트. 위키 루트 기준 상대 경로. 위키가 ai-hub 저장소의 하위 폴더라는 전제다 [가정] | 퍼블리셔(커밋·푸시·롤백) |
 | `claude_bin` | `"claude"` | Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다 | `agent_runner.py` |
-| `model` | `"claude-opus-5-5"` | 에이전트 모델 id. `agent_runner.py` 가 `claude -p --model <id>` 로 넘긴다(웹 도구 점검 호출 포함). 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
+| `model` | `"claude-fable-5-1"` | 에이전트 기본 모델 id. `agent_runner.py` 가 `claude -p --model <id>` 로 넘긴다(웹 도구 점검 호출 포함). 비우면 CLI 기본 모델을 쓰고 `--model` 옵션을 붙이지 않는다 | `agent_runner.py` |
 | `max_turns.researcher` / `.verifier` / `.storyteller` | `60` / `40` / `8` | 에이전트별 최대 턴 수(`--max-turns`). 넘으면 호출을 끊고 7.3 의 스키마 불일치와 같이 1회 재실행 뒤 보류한다 [가정: 사양서 7.3 은 턴 수·시간 초과의 처리를 정하지 않는다] | `agent_runner.py` |
-| `agent_timeout_sec` | `1800` | 에이전트 1회 호출의 시간 상한(초). 넘으면 강제 종료하고 `max_turns` 초과와 같이 처리한다(1회 재실행 뒤 보류) [가정: 위와 같음] | `agent_runner.py` |
+| `model_by_role` | `{}` | 에이전트별 모델 재정의(`researcher`/`verifier`/`storyteller` → 모델 id). 없으면 `model` 을 쓴다 | `agent_runner.py` |
+| `effort` | `researcher: high, verifier: high, storyteller: medium` | 에이전트별 에포트(`claude -p --effort`, low/medium/high/xhigh/max). 비우면 CLI 기본값 [가정: 출처 대조가 품질을 좌우하는 리서치·검증은 high, 문장 작성인 스토리텔러는 medium] | `agent_runner.py` |
+| `agent_timeout_sec` | `3600` | 에이전트 1회 호출의 시간 상한(초). 넘으면 강제 종료하고 `max_turns` 초과와 같이 처리한다(1회 재실행 뒤 보류) [가정: 위와 같음] | `agent_runner.py` |
 | `allowed_tools.researcher` / `.verifier` / `.storyteller` | `[WebSearch, WebFetch]` / `[WebSearch, WebFetch]` / `[]` | 에이전트별 허용 도구(`--allowedTools`). 빈 목록은 도구 없이 실행한다는 뜻이다. 파일 읽기·쓰기 도구는 어느 에이전트에도 주지 않는다 | `agent_runner.py` |
 | `site_build_cmd` | `"mkdocs build --strict"` | 퍼블리셔 6단계의 사이트 빌드 명령. 위키 루트에서 실행하고, 실패하면 커밋을 되돌린다 | 퍼블리셔 |
 | `git_commit` | `true` | 퍼블리셔 7단계 커밋 여부. 메시지 형식은 `run(DATE): <실행 유형> <대상 영역 이름> — 생성 n/갱신 n` | 퍼블리셔 |

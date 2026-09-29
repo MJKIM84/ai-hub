@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-09-28
+기준일: 2026-09-29
 
 ### 영역별 페이지 상태 분포
 
@@ -24,7 +24,7 @@ version: 1
 |---|---|---|---|---|---|---|---|
 | [A. 기획·사업](categories/planning-and-business/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 3 | 0 | 0 | 5 | 0 | 0 | 8 |
-| [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 6 | 0 | 0 | 0 | 0 | 0 | 6 |
+| [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 5 | 0 | 0 | 8 | 0 | 0 | 13 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
@@ -63,7 +63,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md) | seed | — | 2026-09-28 | 1 |
+| [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md) | published | medium | 2026-09-29 | 2 |
 | [9. 채팅으로 시나리오 구성](categories/chat-based-configuration-and-operation/chat-scenario-composition.md) | seed | — | 2026-09-28 | 1 |
 | [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | seed | — | 2026-09-28 | 1 |
 | [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | seed | — | 2026-09-28 | 1 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 88회 중 최종 통과 88회 (통과율 100%)
-- 1차 검증 판정: 조건부 승인 88
-- 2차 검증 판정: 통과 88
+- 실행 89회 중 최종 통과 89회 (통과율 100%)
+- 1차 검증 판정: 조건부 승인 89
+- 2차 검증 판정: 통과 89
 
 ### 반려·보류 건수
 
@@ -209,27 +209,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 344 |
+| 논문 | 353 |
 | 오픈소스 문서 | 186 |
 | 표준 | 149 |
 | 정부·연구기관 | 58 |
-| 벤더 문서 | 40 |
+| 벤더 문서 | 41 |
 | 기사 | 23 |
 | 업계 보고서 | 7 |
 
-신뢰도: medium 607건, high 138건, low 62건
+신뢰도: medium 616건, high 138건, low 63건
 
 ### 현장 유형 매트릭스 채움률
 
-- 14/119 칸 (12%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 17/119 칸 (14%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 3 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 3 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 3 | published |
-| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 3 | published |
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 3 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 4 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 4 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 4 | published |
+| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 4 | published |
+| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 4 | published |
 <!-- auto:metrics:end -->

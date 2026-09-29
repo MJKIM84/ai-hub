@@ -313,6 +313,28 @@ def _drop_unused_defs(body: str) -> str:
     return "\n".join(kept)
 
 
+_REL_MD_LINK = re.compile(r"(?<!!)\[([^\]\n]+)\]\(([^)\s#]+)(#[^)\s]*)?\)")
+_ANCHOR_ONLY_LINK = re.compile(r"(?<!!)\[([^\]\n]+)\]\((#[^)\s]+)\)")
+
+
+def rebase_links(text: str, from_rel: str, to_rel: str) -> str:
+    """from_rel(docs 기준) 페이지에 맞춰 적힌 상대 링크를 to_rel 페이지 기준으로 다시 쓴다. 절을 다른 페이지로 옮길 때 쓴다
+    (분량 초과 자동 분리 — 2026-09-29-01 에서 옮긴 절의 ../space-and-map-model/… 링크가 주제 페이지에서 깨졌다).
+    절대 URL·앵커만 있는 링크는 그대로 두되, 앵커만 있는 링크(#절)는 원 페이지의 그 절을 가리키도록 from_rel 을 붙인다."""
+    import posixpath
+    src_dir = posixpath.dirname(from_rel)
+
+    def repl(m):
+        label, target, frag = m.group(1), m.group(2), m.group(3) or ""
+        if re.match(r"^[a-z][a-z0-9+.-]*:", target) or target.startswith("/"):
+            return m.group(0)
+        absolute = posixpath.normpath(posixpath.join(src_dir, target))
+        return f"[{label}]({paths.rel_link(to_rel, absolute)}{frag})"
+
+    out = _REL_MD_LINK.sub(repl, text)
+    return _ANCHOR_ONLY_LINK.sub(lambda m: f"[{m.group(1)}]({paths.rel_link(to_rel, from_rel)}{m.group(2)})", out)
+
+
 def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: list[dict], run_id: str, day: str,
                          topic_template_h2: list[str] | None = None) -> tuple[str, list[dict]]:
     """세부영역 페이지의 3~11절 본문이 limit 을 넘으면, 큰 절부터(5·9절 제외) 주제 페이지로 옮기고 원 절에는
@@ -372,9 +394,9 @@ def split_oversized_area(area_rel: str, area_text: str, limit: int, outline: lis
             "7. 열린 질문", "8. 출처", "9. 검증 노트", "10. 이력"]
         sec_anchor = lambda n: next((t for t in h2_titles(body) if section_no(t) == n), "")  # noqa: E731
         bodies = {
-            0: f"- {summary}\n- 이 페이지는 [{area_title}]({link_to_area}) 페이지의 \"{sec_name_short}\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.",
+            0: f"- {rebase_links(summary, area_docs_rel, topic_docs)}\n- 이 페이지는 [{area_title}]({link_to_area}) 페이지의 \"{sec_name_short}\" 절이 분량 기준을 넘어 옮겨 온 것이다. 원 페이지의 검증을 거친 내용이며 새 주장은 없다.",
             1: f"[{area_title}]({link_to_area}) 페이지를 쓰는 과정에서 \"{sec_name}\" 절의 분량이 세부영역 페이지 기준({limit:,}자)을 넘어, 내용을 줄이지 않고 이 주제 페이지로 분리했다.",
-            2: sec_body,
+            2: rebase_links(sec_body, area_docs_rel, topic_docs),   # 옮긴 절의 상대 링크는 주제 페이지 기준으로 다시 쓴다
             3: f"현장 시나리오는 원 페이지의 [{sec_anchor('5') or '5. 현장 시나리오'}]({link_to_area}) 절에 있다.",
             4: f"ROP가 직접 맡는 것과 외부와 연계하는 것은 원 페이지의 [{sec_anchor('9') or '9절'}]({link_to_area}) 절에 있다.",
             5: "- 주 연구영역: " + f"[{area_title}]({link_to_area})" + ("\n- 관련 영역: " + ", ".join(rel_links) if rel_links else ""),

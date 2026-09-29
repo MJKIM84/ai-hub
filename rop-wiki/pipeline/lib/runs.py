@@ -87,6 +87,8 @@ DEFAULT_SETTINGS: dict = {
     "repo_root": "..",
     "claude_bin": "claude",
     "model": "",
+    "model_by_role": {},
+    "effort": {},
     "max_turns": {"researcher": 60, "verifier": 40, "storyteller": 8},
     "agent_timeout_sec": 1800,
     "allowed_tools": {"researcher": ["WebSearch", "WebFetch"], "verifier": ["WebSearch", "WebFetch"], "storyteller": []},
