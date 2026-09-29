@@ -1,0 +1,126 @@
+{
+  "run_id": "2026-09-29-02",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 10,
+    "area_name": "10. 채팅으로 로봇 구성",
+    "category": "C. 채팅 기반 구성·운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 6,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "17db511",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2606.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 10. 채팅으로 로봇 구성 | 3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건, 1차 수정 지시 10건 이행. 2차 재검증 수정 지시 3건 이행(10절 20·25번 항목 태그 [추정]으로 되돌림, 5절 첫 등장 '대수 산정'을 용어집 표기·링크로) | run 2026-09-29-02",
+  "notes": [
+    "참고문헌 생성: references/ref-818.md",
+    "참고문헌 생성: references/ref-819.md",
+    "참고문헌 생성: references/ref-820.md",
+    "참고문헌 생성: references/ref-821.md",
+    "참고문헌 생성: references/ref-822.md",
+    "참고문헌 생성: references/ref-823.md",
+    "용어집 생성: glossary/coalition-formation.md",
+    "용어집 생성: glossary/affordance.md",
+    "용어집 생성: glossary/capability-description-submodel.md",
+    "용어집 생성: glossary/configuration-copilot.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 6,
+    "standards": 0,
+    "open_questions": 4,
+    "flow_cells": 16,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 10:54:23 KST",
+  "usage": {
+    "input_tokens": 402,
+    "cache_creation_input_tokens": 947014,
+    "cache_read_input_tokens": 2008182,
+    "output_tokens": 189838,
+    "cost_usd": 29.719,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 6.2715,
+        "output_tokens": 38459,
+        "cache_read_input_tokens": 1098329,
+        "cache_creation_input_tokens": 178595
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 6.2393,
+        "output_tokens": 24933,
+        "cache_read_input_tokens": 628994,
+        "cache_creation_input_tokens": 228726
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 12.3038,
+        "output_tokens": 107987,
+        "cache_read_input_tokens": 73750,
+        "cache_creation_input_tokens": 344300
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 4.8159,
+        "output_tokens": 17845,
+        "cache_read_input_tokens": 180650,
+        "cache_creation_input_tokens": 193924
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0632,
+        "output_tokens": 256,
+        "cache_read_input_tokens": 10412,
+        "cache_creation_input_tokens": 1207
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0253,
+        "output_tokens": 358,
+        "cache_read_input_tokens": 16047,
+        "cache_creation_input_tokens": 262
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 1
+}

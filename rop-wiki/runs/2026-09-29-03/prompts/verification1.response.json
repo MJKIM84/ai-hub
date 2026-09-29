@@ -1,0 +1,358 @@
+{
+  "duration_api_ms": 258559,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.78426575,
+  "usage": {
+    "input_tokens": 98,
+    "cache_creation_input_tokens": 88529,
+    "cache_read_input_tokens": 600931,
+    "output_tokens": 15341,
+    "output_tokens_details": {
+      "thinking_tokens": 5820
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 88529,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 32,
+        "output_tokens": 11698,
+        "cache_read_input_tokens": 174838,
+        "cache_creation_input_tokens": 4016,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4016
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 72043,
+      "outputTokens": 4676,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.095423,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-fable-5-1": {
+      "inputTokens": 98,
+      "outputTokens": 15341,
+      "cacheReadInputTokens": 600931,
+      "cacheCreationInputTokens": 88529,
+      "webSearchRequests": 0,
+      "costUSD": 2.68884275,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 5820,
+      "canonicalModel": "claude-fable-5-1",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 20,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-29-03\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-836 원문 미열람(Springer 인증 리다이렉트 재현). Semantic Scholar API 초록으로 기관(Journal of Intelligent Manufacturing)·제목·발행일 2025-11-14 일치 확인. 초록에 4단계 절차, 18개 동작 유형, 응답 시간 8초~5분이 그대로 있음. 단일 출처, 저자 보고값.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2505.13761 초록 열람, 'utilizing the simulations to ground the LLMs' 구절 일치, 정량 평가 없음 확인. v2(2025-05-21) 있음.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2608.23622 초록 열람, 구조화 과제 표현→실험 설계→비교 시뮬레이션→해석→권고, 제약 공정 설계, 절제 실험, 언어 전용 대비 구체성·사용자 평가 개선 일치. ETFA 2026 채택 표기 있음. 비로봇 도메인이므로 본문에 그 점을 밝힌다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f1·f2·f3 종합 추정이며 [추정] 태그 적정. 로봇 플릿 적용 사례가 없음을 본문에 남긴다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2603.03784 초록 열람, DEVS·단계 분리·사건 트레이스 제약 대조·벤치마크 일치. v2(2026-05-21) 있음 — 각주에 판 표기.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 1910.05404 초록 열람, 로그 기반 모델 발견·하이퍼파라미터 최적화로 유사도 최대화·다도메인 평가 일치. Decision Support Systems(2020) 게재. 'Simod' 명칭은 초록에 없고 본문 도구명이므로 각주에 게재지를 병기한다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f5·f6 대응 추정, [추정] 적정.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2607.17088 초록 열람, 서브트레이스 조건부 검증·입력 고정·적합도 검정·불일치 원인 진단·M/M/1·직렬 대기행렬 일치.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f8 대응 추정, [추정] 적정. 로봇 플릿 적용 미확인을 본문에 남긴다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. rosbag2 README(github_raw) 열람, 첫 문장 인용 일치, record(-a, 토픽 필터, 압축, 분할)·play(--rate, --topics, --clock, 반복, 시작 위치 탐색)·MCAP·SQLite3 확인. 발행일 미확인(공식 저장소 문서, 확인일 기준).\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. '연계 대상' 표시가 있는 [추정]으로 분류 원문 19장 경계 적용 적정.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2409.08081 초록 열람, ASE 2024, 프롬프트 추출·제약 해결·다중 지도 재구성·NHTSA·Baidu Apollo·5종 안전 위반·한계 일치. 자율주행 시험 도구이므로 5절 현장 사례가 아니라 6절 방법 선례로 다룬다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2409.06450 초록 열람, OmniTester·멀티모달 LLM·SUMO·RAG·자기 개선·사고 보고서 시나리오 재구성·현실성·제어 가능성 일치. f12 와 같이 6절 방법 선례로.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. SoVAR(난징대 등)와 OmniTester(칭화대 등) 두 초록을 각각 열어 독립 연구 그룹의 사고 보고서→시나리오 재구성 보고를 확인. 교차 확인 인정.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2607.14387 초록 열람, 123개 시나리오·컴파일 성공 76.42%·프레임워크 정확도 58.17%·반복 RAG·대화형 인터페이스·코드 공개 일치. 실제 사고 보고서 재구성은 초록에 없음(브리프 기록과 같음).\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. f12·f13·f15 종합 추정, [추정] 적정.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2505.06287 초록 열람, 오슬로대 저자, 형식 모델·온톨로지·SMT·평균·최악 자원 시나리오·병상 배정 일치. 병상 배정 최적화는 ROP 범위 밖 업무 계획이므로 what-if 시나리오 구성 방식 사례로만.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-837 원문 미열람(MDPI 403 재현). Semantic Scholar API 초록으로 기관(Electronics)·제목·발행일 2025-12-17 일치, 감염병 상황 간호사 추종 침대 로봇·연합 디지털 트윈·전 과정 정의·시나리오 시뮬레이션 검증 확인. 저자 한글 표기는 미확인이므로 영문 표기(Woo, J., Shin, H., Jeon, C., & Park, S.)를 쓴다. 시뮬레이션 검증 사례임을 본문에 명시.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. DBpia 페이지 열람, 한국CDE학회 논문집 26(4), 2021-12, 성균관대·LG전자 저자, 설계 단계 가상 검증·운영 단계 실시간 모니터링·국내 제조업체 AGV 적용·진단·분석·예측·최적화 일치.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(부분 수정 필요). ref-838 원문 미열람(Nature 인증 리다이렉트 재현). Semantic Scholar API 초록으로 Scientific Reports·제목·2026-07-18 일치, 브라운필드 혼잡·그린필드 배치·플릿 규모·역할 균형·최대 3.5배 확인. 단, 초록은 역할을 'transportation and manipulation'이라 하므로 '운송·조립'은 '운송·조작(manipulation)'으로 고친다. 실제 공장 데이터 대조 여부는 초록에 없음.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. arXiv 2503.02167 초록 열람, 세 과제 문구·기술–예측–처방 프레임워크·기업 디지털 트윈 시스템 시연 일치.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 분류 원문 교차 규칙 적용 판단, [추정] 적정. 영역 이름·번호 표기 정확.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 분류 원문 19장 경계 적용 추정, [추정] 적정.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 구분을 지킨 추정, [추정] 적정.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[\"f12·f13·f14: 자율주행 사고 시나리오 재구성은 로봇 자체 지능 시험 도구이며 업종별 조건(실외 차량)에 걸치므로 5절 '실외' 적용 사례로 세우지 않고 6절 방법 선례로만 다룬다(브리프도 같은 취지로 표시)\",\"f17: 병상 배정 최적화는 상위 업무 계획(연계 영역)이므로 what-if 시나리오 구성 방식의 예시로만 쓴다\",\"f11: rosbag2 재생은 로봇 자체 지능·제어 쪽 도구로 '연계 대상' 표시 유지\"]},\"duplication\":{\"ok\":true,\"overlaps\":[\"대상 페이지는 시드(본문 없음)이며 관련 영역 페이지(8·9·10·12·13)와 주장 중복 없음\",\"참고문헌 id 충돌 위험: 이 브리프의 ref-824~ref-830 은 같은 날 이전 실행 2026-09-29-01(ref-825 Holodeck, ref-826 Doğan 외, ref-827 모빌리오)·2026-09-29-02(ref-824 Valerio 외, ref-825 심현재 외, ref-828 Figat 외, ref-829 Howard, ref-830 폴라리스3D)가 다른 출처에 부여한 id 와 겹친다. 퍼블리셔가 URL 기준으로 새 id 를 재부여해야 한다(내용 중복은 아님)\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true,\"issues\":[]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f20: '운송·조립 역할'을 '운송·조작(manipulation) 역할'로 고친다 — ref-838 초록이 'transportation and manipulation'이라 적고 있어 '조립'은 출처에 없다.\",\"f18: 저자를 '우지영·신효진·전창훈·박상찬'으로 쓰지 않고 영문 표기 'Woo, J., Shin, H., Jeon, C., & Park, S.'로 쓴다 — 한글 표기는 원문에서 확인되지 않았다.\",\"ref-836·ref-837·ref-838: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — Springer·MDPI·Nature 페이지를 열지 못했고 Semantic Scholar API 초록으로만 확인했다.\",\"f12·f13·f14: 5절 적용 사례의 '실외' 항목으로 세우지 않고 6절 대표 접근법에서 '자율주행 시험 도구의 텍스트→시나리오 재구성 선례'로 다루며, site_matrix_updates 에 실외 칸을 넣지 않는다 — 로봇 오케스트레이션 현장 사례가 아니라 차량 소프트웨어 시험 도구다. 5절은 병원(f18 을 중심 사례로, f17 은 what-if 시나리오 구성 방식 보조)과 제조 공장(f19·f20)만 현장 유형 × 여섯 항목으로 쓰고, 두 사례 모두 실제 운영 기록 재현이 아니라 시뮬레이션 검증·설계 비교 사례임을 문장에 밝힌다.\",\"f3: 본문에서 적용 대상이 제약 공정 설계(비로봇 도메인)임을 문장에 밝히고 에이전트 비교 실험 방법의 선례로만 쓴다 — 로봇 플릿 적용 근거가 아니다.\",\"f17: 병상 배정 최적화 자체는 분류 원문 19장의 상위 업무 시스템 연계 영역이므로 ROP 기능처럼 서술하지 않고 '평균·최악 자원 시나리오를 설정으로 만드는 방식'의 예시로만 쓴다.\",\"f6·ref-828: 각주에 게재지 'Decision Support Systems (2020)'를 병기하고 본문에서 Simod 라는 도구명을 쓸 때 초록이 아니라 논문 본문의 도구명임을 각주 요약에 남긴다.\",\"ref-824·ref-825: 각주 발행일에 판을 표기한다(ref-824 '2025-05-19 (v1; v2 2025-05-21)', ref-825 '2026-03-04 (v1; v2 2026-05-21)') — 더 새 판이 있으므로 기준일·버전을 명시한다.\",\"f1·f9·f4: 본문에 '로봇 플릿 운영 기록을 대화로 재현한 현장 사례는 이번 조사에서 확인되지 않았다'는 한계를 3절 또는 11절에 한 문장으로 남긴다 — 브리프 self_check 의 미확인 항목이며 독자가 알아야 할 한계다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 1건(f14: SoVAR·OmniTester 독립 연구 그룹). 강등: 없음. 원문 미열람 출처: ref-836, ref-837, ref-838(발행사 페이지 접근 차단, Semantic Scholar API 초록으로 기관·제목·발행일 일치 확인). 주의: 모든 사실 주장은 논문 초록·공식 저장소 README 확인에 근거한 단일 출처이며 정량 수치(f1 응답 시간, f15 정확도, f20 3.5배)는 저자 보고값이다. 대화만으로 로봇 플릿의 실제 운영 기록을 시뮬레이션에 재현한 현장 사례는 확인되지 않았고, 현장 사례는 병원·제조 공장의 시뮬레이션 검증·설계 비교 사례뿐이다. 자율주행 사고 재구성(f12~f14)은 현장 사례가 아닌 방법 선례로만 쓴다. f20 의 '조립'은 출처의 'manipulation'과 달라 수정을 지시했다. 참고문헌 id ref-824~ref-830 은 같은 날 이전 실행(2026-09-29-01·-02)이 다른 출처에 부여한 id 와 겹칠 수 있으므로 퍼블리셔가 URL 기준으로 재부여해야 한다. 검증에 검색은 쓰지 않았고 WebFetch 열람 18회(출처당 2회 이내)로 확인했다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-29-03",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-836 원문 미열람(Springer 인증 리다이렉트 재현). Semantic Scholar API 초록으로 기관(Journal of Intelligent Manufacturing)·제목·발행일 2025-11-14 일치 확인. 초록에 4단계 절차, 18개 동작 유형, 응답 시간 8초~5분이 그대로 있음. 단일 출처, 저자 보고값."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2505.13761 초록 열람, 'utilizing the simulations to ground the LLMs' 구절 일치, 정량 평가 없음 확인. v2(2025-05-21) 있음."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2608.23622 초록 열람, 구조화 과제 표현→실험 설계→비교 시뮬레이션→해석→권고, 제약 공정 설계, 절제 실험, 언어 전용 대비 구체성·사용자 평가 개선 일치. ETFA 2026 채택 표기 있음. 비로봇 도메인이므로 본문에 그 점을 밝힌다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f1·f2·f3 종합 추정이며 [추정] 태그 적정. 로봇 플릿 적용 사례가 없음을 본문에 남긴다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2603.03784 초록 열람, DEVS·단계 분리·사건 트레이스 제약 대조·벤치마크 일치. v2(2026-05-21) 있음 — 각주에 판 표기."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 1910.05404 초록 열람, 로그 기반 모델 발견·하이퍼파라미터 최적화로 유사도 최대화·다도메인 평가 일치. Decision Support Systems(2020) 게재. 'Simod' 명칭은 초록에 없고 본문 도구명이므로 각주에 게재지를 병기한다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f5·f6 대응 추정, [추정] 적정."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2607.17088 초록 열람, 서브트레이스 조건부 검증·입력 고정·적합도 검정·불일치 원인 진단·M/M/1·직렬 대기행렬 일치."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f8 대응 추정, [추정] 적정. 로봇 플릿 적용 미확인을 본문에 남긴다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. rosbag2 README(github_raw) 열람, 첫 문장 인용 일치, record(-a, 토픽 필터, 압축, 분할)·play(--rate, --topics, --clock, 반복, 시작 위치 탐색)·MCAP·SQLite3 확인. 발행일 미확인(공식 저장소 문서, 확인일 기준)."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. '연계 대상' 표시가 있는 [추정]으로 분류 원문 19장 경계 적용 적정."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2409.08081 초록 열람, ASE 2024, 프롬프트 추출·제약 해결·다중 지도 재구성·NHTSA·Baidu Apollo·5종 안전 위반·한계 일치. 자율주행 시험 도구이므로 5절 현장 사례가 아니라 6절 방법 선례로 다룬다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2409.06450 초록 열람, OmniTester·멀티모달 LLM·SUMO·RAG·자기 개선·사고 보고서 시나리오 재구성·현실성·제어 가능성 일치. f12 와 같이 6절 방법 선례로."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. SoVAR(난징대 등)와 OmniTester(칭화대 등) 두 초록을 각각 열어 독립 연구 그룹의 사고 보고서→시나리오 재구성 보고를 확인. 교차 확인 인정."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2607.14387 초록 열람, 123개 시나리오·컴파일 성공 76.42%·프레임워크 정확도 58.17%·반복 RAG·대화형 인터페이스·코드 공개 일치. 실제 사고 보고서 재구성은 초록에 없음(브리프 기록과 같음)."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. f12·f13·f15 종합 추정, [추정] 적정."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2505.06287 초록 열람, 오슬로대 저자, 형식 모델·온톨로지·SMT·평균·최악 자원 시나리오·병상 배정 일치. 병상 배정 최적화는 ROP 범위 밖 업무 계획이므로 what-if 시나리오 구성 방식 사례로만."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-837 원문 미열람(MDPI 403 재현). Semantic Scholar API 초록으로 기관(Electronics)·제목·발행일 2025-12-17 일치, 감염병 상황 간호사 추종 침대 로봇·연합 디지털 트윈·전 과정 정의·시나리오 시뮬레이션 검증 확인. 저자 한글 표기는 미확인이므로 영문 표기(Woo, J., Shin, H., Jeon, C., & Park, S.)를 쓴다. 시뮬레이션 검증 사례임을 본문에 명시."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. DBpia 페이지 열람, 한국CDE학회 논문집 26(4), 2021-12, 성균관대·LG전자 저자, 설계 단계 가상 검증·운영 단계 실시간 모니터링·국내 제조업체 AGV 적용·진단·분석·예측·최적화 일치."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(부분 수정 필요). ref-838 원문 미열람(Nature 인증 리다이렉트 재현). Semantic Scholar API 초록으로 Scientific Reports·제목·2026-07-18 일치, 브라운필드 혼잡·그린필드 배치·플릿 규모·역할 균형·최대 3.5배 확인. 단, 초록은 역할을 'transportation and manipulation'이라 하므로 '운송·조립'은 '운송·조작(manipulation)'으로 고친다. 실제 공장 데이터 대조 여부는 초록에 없음."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. arXiv 2503.02167 초록 열람, 세 과제 문구·기술–예측–처방 프레임워크·기업 디지털 트윈 시스템 시연 일치."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 분류 원문 교차 규칙 적용 판단, [추정] 적정. 영역 이름·번호 표기 정확."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 분류 원문 19장 경계 적용 추정, [추정] 적정."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 구분을 지킨 추정, [추정] 적정."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": [
+        "f12·f13·f14: 자율주행 사고 시나리오 재구성은 로봇 자체 지능 시험 도구이며 업종별 조건(실외 차량)에 걸치므로 5절 '실외' 적용 사례로 세우지 않고 6절 방법 선례로만 다룬다(브리프도 같은 취지로 표시)",
+        "f17: 병상 배정 최적화는 상위 업무 계획(연계 영역)이므로 what-if 시나리오 구성 방식의 예시로만 쓴다",
+        "f11: rosbag2 재생은 로봇 자체 지능·제어 쪽 도구로 '연계 대상' 표시 유지"
+      ]
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "대상 페이지는 시드(본문 없음)이며 관련 영역 페이지(8·9·10·12·13)와 주장 중복 없음",
+        "참고문헌 id 충돌 위험: 이 브리프의 ref-824~ref-830 은 같은 날 이전 실행 2026-09-29-01(ref-825 Holodeck, ref-826 Doğan 외, ref-827 모빌리오)·2026-09-29-02(ref-824 Valerio 외, ref-825 심현재 외, ref-828 Figat 외, ref-829 Howard, ref-830 폴라리스3D)가 다른 출처에 부여한 id 와 겹친다. 퍼블리셔가 URL 기준으로 새 id 를 재부여해야 한다(내용 중복은 아님)"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true,
+      "issues": []
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f20: '운송·조립 역할'을 '운송·조작(manipulation) 역할'로 고친다 — ref-838 초록이 'transportation and manipulation'이라 적고 있어 '조립'은 출처에 없다.",
+      "f18: 저자를 '우지영·신효진·전창훈·박상찬'으로 쓰지 않고 영문 표기 'Woo, J., Shin, H., Jeon, C., & Park, S.'로 쓴다 — 한글 표기는 원문에서 확인되지 않았다.",
+      "ref-836·ref-837·ref-838: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — Springer·MDPI·Nature 페이지를 열지 못했고 Semantic Scholar API 초록으로만 확인했다.",
+      "f12·f13·f14: 5절 적용 사례의 '실외' 항목으로 세우지 않고 6절 대표 접근법에서 '자율주행 시험 도구의 텍스트→시나리오 재구성 선례'로 다루며, site_matrix_updates 에 실외 칸을 넣지 않는다 — 로봇 오케스트레이션 현장 사례가 아니라 차량 소프트웨어 시험 도구다. 5절은 병원(f18 을 중심 사례로, f17 은 what-if 시나리오 구성 방식 보조)과 제조 공장(f19·f20)만 현장 유형 × 여섯 항목으로 쓰고, 두 사례 모두 실제 운영 기록 재현이 아니라 시뮬레이션 검증·설계 비교 사례임을 문장에 밝힌다.",
+      "f3: 본문에서 적용 대상이 제약 공정 설계(비로봇 도메인)임을 문장에 밝히고 에이전트 비교 실험 방법의 선례로만 쓴다 — 로봇 플릿 적용 근거가 아니다.",
+      "f17: 병상 배정 최적화 자체는 분류 원문 19장의 상위 업무 시스템 연계 영역이므로 ROP 기능처럼 서술하지 않고 '평균·최악 자원 시나리오를 설정으로 만드는 방식'의 예시로만 쓴다.",
+      "f6·ref-828: 각주에 게재지 'Decision Support Systems (2020)'를 병기하고 본문에서 Simod 라는 도구명을 쓸 때 초록이 아니라 논문 본문의 도구명임을 각주 요약에 남긴다.",
+      "ref-824·ref-825: 각주 발행일에 판을 표기한다(ref-824 '2025-05-19 (v1; v2 2025-05-21)', ref-825 '2026-03-04 (v1; v2 2026-05-21)') — 더 새 판이 있으므로 기준일·버전을 명시한다.",
+      "f1·f9·f4: 본문에 '로봇 플릿 운영 기록을 대화로 재현한 현장 사례는 이번 조사에서 확인되지 않았다'는 한계를 3절 또는 11절에 한 문장으로 남긴다 — 브리프 self_check 의 미확인 항목이며 독자가 알아야 할 한계다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 1건(f14: SoVAR·OmniTester 독립 연구 그룹). 강등: 없음. 원문 미열람 출처: ref-836, ref-837, ref-838(발행사 페이지 접근 차단, Semantic Scholar API 초록으로 기관·제목·발행일 일치 확인). 주의: 모든 사실 주장은 논문 초록·공식 저장소 README 확인에 근거한 단일 출처이며 정량 수치(f1 응답 시간, f15 정확도, f20 3.5배)는 저자 보고값이다. 대화만으로 로봇 플릿의 실제 운영 기록을 시뮬레이션에 재현한 현장 사례는 확인되지 않았고, 현장 사례는 병원·제조 공장의 시뮬레이션 검증·설계 비교 사례뿐이다. 자율주행 사고 재구성(f12~f14)은 현장 사례가 아닌 방법 선례로만 쓴다. f20 의 '조립'은 출처의 'manipulation'과 달라 수정을 지시했다. 참고문헌 id ref-824~ref-830 은 같은 날 이전 실행(2026-09-29-01·-02)이 다른 출처에 부여한 id 와 겹칠 수 있으므로 퍼블리셔가 URL 기준으로 재부여해야 한다. 검증에 검색은 쓰지 않았고 WebFetch 열람 18회(출처당 2회 이내)로 확인했다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 3726,
+  "type": "result",
+  "duration_ms": 214935,
+  "uuid": "e49a5dca-1f84-4418-8894-be3dcbf187f1",
+  "ttft_stream_ms": 2015,
+  "time_to_request_ms": 82,
+  "first_content_frame_ms": 2015,
+  "time_to_request_from_spawn_ms": 2086526,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790647721504.4102,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 217.1
+}

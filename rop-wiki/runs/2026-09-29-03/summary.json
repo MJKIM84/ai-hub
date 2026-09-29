@@ -1,0 +1,135 @@
+{
+  "run_id": "2026-09-29-03",
+  "date": "2026-09-29",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 11,
+    "area_name": "11. 채팅으로 실제 상황 시뮬레이션 재현",
+    "category": "C. 채팅 기반 구성·운영"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 15,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "c61f3b4",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 19,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2914.6,
+  "first_retries": 0,
+  "second_retries": 2,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-29 | 11. 채팅으로 실제 상황 시뮬레이션 재현 | 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 지시 9건 이행, 2차 재검증 1회차 수정 8건·2회차 수정 2건 이행(분리 주제 페이지 s3·s10 의 절 참조를 원 페이지 절 이름으로 표기) | run 2026-09-29-03",
+  "notes": [
+    "참고문헌 생성: references/ref-824.md",
+    "참고문헌 생성: references/ref-825.md",
+    "참고문헌 생성: references/ref-826.md",
+    "참고문헌 생성: references/ref-827.md",
+    "참고문헌 생성: references/ref-828.md",
+    "참고문헌 생성: references/ref-829.md",
+    "참고문헌 생성: references/ref-830.md",
+    "참고문헌 생성: references/ref-831.md",
+    "참고문헌 생성: references/ref-832.md",
+    "참고문헌 생성: references/ref-833.md",
+    "참고문헌 생성: references/ref-834.md",
+    "참고문헌 생성: references/ref-835.md",
+    "참고문헌 생성: references/ref-836.md",
+    "참고문헌 생성: references/ref-837.md",
+    "참고문헌 생성: references/ref-838.md",
+    "용어집 생성: glossary/automatic-simulation-model-generation.md",
+    "용어집 생성: glossary/event-trace.md",
+    "용어집 생성: glossary/scenario-reconstruction.md",
+    "용어집 생성: glossary/bag-file.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 15,
+    "standards": 2,
+    "open_questions": 4,
+    "flow_cells": 10,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-29 11:46:46 KST",
+  "usage": {
+    "input_tokens": 467,
+    "cache_creation_input_tokens": 936206,
+    "cache_read_input_tokens": 2523943,
+    "output_tokens": 225305,
+    "cost_usd": 31.4128,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 5.3704,
+        "output_tokens": 43220,
+        "cache_read_input_tokens": 1405858,
+        "cache_creation_input_tokens": 108193
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.7843,
+        "output_tokens": 15341,
+        "cache_read_input_tokens": 600931,
+        "cache_creation_input_tokens": 88529
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 15.7091,
+        "output_tokens": 137643,
+        "cache_read_input_tokens": 221250,
+        "cache_creation_input_tokens": 438582
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 7.4361,
+        "output_tokens": 28177,
+        "cache_read_input_tokens": 270975,
+        "cache_creation_input_tokens": 297971
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0817,
+        "output_tokens": 661,
+        "cache_read_input_tokens": 10412,
+        "cache_creation_input_tokens": 1143
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0312,
+        "output_tokens": 263,
+        "cache_read_input_tokens": 14517,
+        "cache_creation_input_tokens": 1788
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 12,
+  "cross_checked_findings": 1
+}
