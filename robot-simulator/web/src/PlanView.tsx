@@ -337,7 +337,7 @@ export function PlanView({
     y: h / 2,
     height: h + 2,
   });
-  const [mode, setMode] = useState<Mode>("move"),
+  const [mode, setMode] = useState<Mode>("pan"),
     [preview, setPreview] = useState<Change[]>([]);
   const [marquee, setMarquee] = useState<Bounds | null>(null),
     [cursor, setCursor] = useState<Point | null>(null);
@@ -814,7 +814,7 @@ export function PlanView({
   };
   const backgroundDown = (e: PointerEvent<SVGElement>) => {
     if (gesture.current || (e.button !== 0 && e.button !== 1)) return;
-    if (e.button === 1 || spaceHeld.current || mode === "pan") {
+    if (e.button === 1 || spaceHeld.current || (mode === "pan" && !activeTool)) {
       startPan(e);
       return;
     }
@@ -838,7 +838,7 @@ export function PlanView({
   };
   const objectDown = (e: PointerEvent<SVGGElement>, object: MapObject) => {
     if (gesture.current) return;
-    if (e.button === 1 || spaceHeld.current || mode === "pan") {
+    if (e.button === 1 || spaceHeld.current || (mode === "pan" && !activeTool)) {
       startPan(e);
       return;
     }
