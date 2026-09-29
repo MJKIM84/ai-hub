@@ -20,6 +20,35 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-03 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 9건 이행. 2차 재검증 1회차 수정 8건 이행(약어 첫 등장 풀어 쓰기, 9절 원문 문장 재서술, 6절 단락 분리, 10절 태그 2건, 6절 절 참조 이름 병기). 2차 재검증 2회차 수정 2건은 분리 주제 페이지(s3·s10)에만 해당하며 이 페이지는 변경 없음 |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s6.md](topics/2026/2026-09-29-area11-s6.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "6. 대표 접근법과 기술" 절(2,271자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s8.md](topics/2026/2026-09-29-area11-s8.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "8. 대표 연구와 자료" 절(1,684자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s4.md](topics/2026/2026-09-29-area11-s4.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "4. 핵심 개념과 용어" 절(1,010자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s10.md](topics/2026/2026-09-29-area11-s10.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(922자)을 옮겼다. 2차 재검증 2회차 수정: 63. 병원·의료, 62. 제조 공장 항목의 '5절의'를 '원 페이지의 5. 적용 사례 (현장 유형 명시) 절의'로 고침(태그·각주 유지) |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s3.md](topics/2026/2026-09-29-area11-s3.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "3. 왜 중요한가" 절(796자)을 옮겼다. 2차 재검증 2회차 수정: 본문 둘째 단락의 '2절의 핵심 질문은'을 '원 페이지의 2. 핵심 질문 절은'으로 고침 |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s11.md](topics/2026/2026-09-29-area11-s11.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "11. 열린 질문" 절(787자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
+| 2026-09-29-03 | 생성 | [docs/topics/2026/2026-09-29-area11-s7.md](topics/2026/2026-09-29-area11-s7.md) | 자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 "7. 관련 표준·프레임워크·오픈소스" 절(630자)을 옮겼다(2차 재검증 2회차에서 변경 없음) |
+| 2026-09-29-03 | 요약 | [docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md) | 11. 채팅으로 실제 상황 시뮬레이션 재현: 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 지시 9건 이행, 2차 재검증 1회차 수정 8건·2회차 수정 2건 이행(분리 주제 페이지 s3·s10 의 절 참조를 원 페이지 절 이름으로 표기) |
+| 2026-09-29-03 | 생성 | [docs/references/ref-824.md](references/ref-824.md) | 참고문헌 ref-824 등록: Simulation Agent: A Framework for Integrating Simulation and… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-825.md](references/ref-825.md) | 참고문헌 ref-825 등록: Specification-Driven Generation and Evaluation of Discrete-E… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-826.md](references/ref-826.md) | 참고문헌 ref-826 등록: Subtrace-Conditional Validation of Simulation Models and Dig… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-827.md](references/ref-827.md) | 참고문헌 ref-827 등록: Leveraging Large Language Models for Enhanced Digital Twin M… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-828.md](references/ref-828.md) | 참고문헌 ref-828 등록: Automated Discovery of Business Process Simulation Models fr… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-829.md](references/ref-829.md) | 참고문헌 ref-829 등록: BedreFlyt: Improving Patient Flows through Hospital Wards wi… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-830.md](references/ref-830.md) | 참고문헌 ref-830 등록: 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용 |
+| 2026-09-29-03 | 생성 | [docs/references/ref-831.md](references/ref-831.md) | 참고문헌 ref-831 등록: rosbag2 — README (Recording and playback of ROS 2 communicat… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-832.md](references/ref-832.md) | 참고문헌 ref-832 등록: LLM Agents Perform Controlled Experiments Using Simulation M… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-833.md](references/ref-833.md) | 참고문헌 ref-833 등록: Chat2Scenic: An Iterative RAG-Based Framework for Scenario G… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-834.md](references/ref-834.md) | 참고문헌 ref-834 등록: SoVAR: Building Generalizable Scenarios from Accident Report… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-835.md](references/ref-835.md) | 참고문헌 ref-835 등록: Multimodal Large Language Model Driven Scenario Testing for… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-836.md](references/ref-836.md) | 참고문헌 ref-836 등록: Natural language-driven production planning: integrating lar… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-837.md](references/ref-837.md) | 참고문헌 ref-837 등록: Design and Application of a Nurse-Following Medical Bed Robo… |
+| 2026-09-29-03 | 생성 | [docs/references/ref-838.md](references/ref-838.md) | 참고문헌 ref-838 등록: Digital twin for scenario-based design evaluation of manufac… |
+| 2026-09-29-03 | 생성 | [docs/glossary/automatic-simulation-model-generation.md](glossary/automatic-simulation-model-generation.md) | 용어집 항목 자동 시뮬레이션 모델 생성 |
+| 2026-09-29-03 | 생성 | [docs/glossary/event-trace.md](glossary/event-trace.md) | 용어집 항목 사건 트레이스 |
+| 2026-09-29-03 | 생성 | [docs/glossary/scenario-reconstruction.md](glossary/scenario-reconstruction.md) | 용어집 항목 시나리오 재구성 |
+| 2026-09-29-03 | 생성 | [docs/glossary/bag-file.md](glossary/bag-file.md) | 용어집 항목 백 파일 |
+| 2026-09-29-03 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-29-02 | 갱신 | [docs/categories/chat-based-configuration-and-operation/chat-robot-configuration.md](categories/chat-based-configuration-and-operation/chat-robot-configuration.md) | 3~11절 신규 작성(seed → draft), 출처 16건, 현장 유형 사례 3건(물류창고·제조 공장·병원), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 10건 이행. 2차 재검증 수정: 5절 물류창고 사례 표 시작 조건 칸의 첫 등장 '대수 산정'을 용어집 표기·링크로 고침 |
 | 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s6.md](topics/2026/2026-09-29-area10-s6.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "6. 대표 접근법과 기술" 절(2,293자)을 옮겼다(2차 재검증에서 변경 없음) |
 | 2026-09-29-02 | 생성 | [docs/topics/2026/2026-09-29-area10-s8.md](topics/2026/2026-09-29-area10-s8.md) | 자동 분리: 10. 채팅으로 로봇 구성 의 "8. 대표 연구와 자료" 절(1,679자)을 옮겼다(2차 재검증에서 변경 없음) |

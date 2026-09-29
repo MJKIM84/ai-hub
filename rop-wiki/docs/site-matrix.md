@@ -21,8 +21,8 @@ version: 1
 | 현장 유형 / 대분류 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | **물류창고** | 비어 있음 | 9 | 12 | 1 | 4 | 4 | 5 | 4 | 2 | 2 | 1 | 1 | 1 | 1 | 3 | 비어 있음 | 비어 있음 |
-| **제조 공장** | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
-| **병원** | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
+| **제조 공장** | 비어 있음 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
+| **병원** | 비어 있음 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
 | **상업 시설** | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
 | **가정** | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
 | **실외** | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 |
@@ -49,11 +49,11 @@ version: 1
 
 ### 제조 공장
 
-- **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시)
+- **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시)
 
 ### 병원
 
-- **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시)
+- **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시)
 
 ### 상업 시설
 

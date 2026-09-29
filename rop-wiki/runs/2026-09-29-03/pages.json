@@ -1,0 +1,704 @@
+{
+  "run_id": "2026-09-29-03",
+  "outline": [
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 800,
+      "summary": "언어 모델을 디지털 트윈에 쓰는 연구가 꼽는 데이터 부족·분석 비효율·설명 부족 과제가 이 영역의 세 가지 일과 맞물린다. [사실][^ref-827] 텍스트→시나리오 재구성의 정확도 한계 때문에 재현 결과는 사람이 확인하고 기록을 우선 입력으로 삼아야 할 것으로 보인다. [추정][^ref-834][^ref-835][^ref-833]",
+      "planned_findings": [
+        "f21",
+        "f16",
+        "f4",
+        "한계 문장(f1·f9·f4)"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1000,
+      "summary": "자동 시뮬레이션 모델 생성·사건 트레이스·시나리오 재구성·로그 기반 모델 발견·서브트레이스 조건부 검증·백 파일 여섯 용어를 각주와 함께 정의한다. [사실][^ref-836][^ref-825][^ref-834][^ref-828][^ref-826][^ref-831]",
+      "planned_findings": [
+        "f1",
+        "f5",
+        "f12",
+        "f6",
+        "f8",
+        "f10"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1700,
+      "summary": "병원(감염병 환자 이송 침대 로봇 연합 디지털 트윈 시뮬레이션 검증)과 제조 공장(국내 무인운반차 자동물류 디지털트윈, 이기종 플릿·배치 시나리오 비교) 두 사례를 여섯 항목으로 쓰고, 둘 다 실제 운영 기록 재현이 아니라 시뮬레이션 검증·설계 비교임을 밝힌다. [사실][^ref-837][^ref-830][^ref-838]",
+      "planned_findings": [
+        "f18",
+        "f17",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 2200,
+      "summary": "대화→모델 생성, 사양·로그→시뮬레이터와 트레이스 대조, 조건부 검증·불일치 진단, 텍스트→시나리오 재구성(자율주행 시험 도구 선례) 네 접근법을 정리한다. [사실][^ref-836][^ref-825][^ref-826][^ref-834]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 600,
+      "summary": "rosbag2·DEVS·Simod·SUMO·Scenic 을 이 영역과의 관계와 함께 표로 둔다. rosbag2 재생은 로봇 자체 지능·제어 쪽 연계 대상이다. [사실][^ref-831] [추정][^ref-831]",
+      "planned_findings": [
+        "f10",
+        "f11",
+        "f5",
+        "f6",
+        "f13",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1650,
+      "summary": "자연어→시뮬레이션 모델, 에이전트 비교 실험, DEVS 생성 벤치마크, 로그 기반 모델 발견, 조건부 검증, 언어 모델 디지털 트윈 서베이, 국내 병원·제조 공장 디지털 트윈 연구를 목록으로 둔다. [사실][^ref-836][^ref-832][^ref-825][^ref-828][^ref-826][^ref-827][^ref-837][^ref-830][^ref-838][^ref-829]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f5",
+        "f6",
+        "f8",
+        "f21",
+        "f18",
+        "f19",
+        "f20",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 1100,
+      "summary": "ROP는 플릿 실행 기록→시나리오 변환, 대화로 조건 변경 접수, 재현 트레이스 대조·설명, 사람 확인을 맡고 시뮬레이션 엔진과 로봇 통신 기록 재생은 연계 대상으로 둘 것으로 보인다. [추정][^ref-825][^ref-826][^ref-831][^ref-832]",
+      "planned_findings": [
+        "f23",
+        "f11",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 950,
+      "summary": "원문 주석의 짝인 33. 시나리오 모델·편집·36. 가상 시운전·실제 상황 재현, 34번과 18번의 구분, 37·38·9·13·54·44·47·62·63번과 트랙을 연결한다. [추정][^ref-836][^ref-825][^ref-832] [추정][^ref-830]",
+      "planned_findings": [
+        "f22",
+        "f24",
+        "f7",
+        "f9",
+        "f4",
+        "f16",
+        "f8",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 800,
+      "summary": "기록→시나리오 변환 형식, 재현 충실도 판정 지표와 승인 주체, 언어 모델 해석 오류를 막는 절차, 국내 물류창고·병원의 운영 기록 재현 사례 네 질문을 올린다.",
+      "planned_findings": [
+        "open_questions_new 4건"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 9건 이행. 2차 재검증 1회차 수정 8건 이행(약어 첫 등장 풀어 쓰기, 9절 원문 문장 재서술, 6절 단락 분리, 10절 태그 2건, 6절 절 참조 이름 병기). 2차 재검증 2회차 수정 2건은 분리 주제 페이지(s3·s10)에만 해당하며 이 페이지는 변경 없음"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"6. 대표 접근법과 기술\" 절(2,271자)을 옮겼다(2차 재검증 2회차에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"8. 대표 연구와 자료\" 절(1,684자)을 옮겼다(2차 재검증 2회차에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"4. 핵심 개념과 용어\" 절(1,010자)을 옮겼다(2차 재검증 2회차에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(922자)을 옮겼다. 2차 재검증 2회차 수정: 63. 병원·의료, 62. 제조 공장 항목의 '5절의'를 '원 페이지의 5. 적용 사례 (현장 유형 명시) 절의'로 고침(태그·각주 유지)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"3. 왜 중요한가\" 절(796자)을 옮겼다. 2차 재검증 2회차 수정: 본문 둘째 단락의 '2절의 핵심 질문은'을 '원 페이지의 2. 핵심 질문 절은'으로 고침"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"11. 열린 질문\" 절(787자)을 옮겼다(2차 재검증 2회차에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-29-area11-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 11. 채팅으로 실제 상황 시뮬레이션 재현 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(630자)을 옮겼다(2차 재검증 2회차에서 변경 없음)"
+    }
+  ],
+  "changelog_entry": "2026-09-29 | 11. 채팅으로 실제 상황 시뮬레이션 재현 | 3~11절 신규 작성(seed → draft), 출처 15건, 현장 유형 사례 2건(병원·제조 공장), 열린 질문 4건, 용어 4건, 1차 조건부 승인 수정 지시 9건 이행, 2차 재검증 1회차 수정 8건·2회차 수정 2건 이행(분리 주제 페이지 s3·s10 의 절 참조를 원 페이지 절 이름으로 표기) | run 2026-09-29-03",
+  "index_updates": {
+    "home_recent": "2026-09-29 — 11. 채팅으로 실제 상황 시뮬레이션 재현: 3~11절 신규 작성(seed → draft). 대화→시뮬레이션 모델 생성, 사양·로그→시뮬레이터와 사건 트레이스 대조, 서브트레이스 조건부 검증, 텍스트→시나리오 재구성 선례를 정리하고 병원·제조 공장 사례 2건, 열린 질문 4건, 용어 4건을 더했다. 로봇 플릿 운영 기록을 대화로 재현한 현장 사례는 미확인",
+    "category_recent": "2026-09-29 — 11. 채팅으로 실제 상황 시뮬레이션 재현: 3~11절 신규 작성(seed → draft), 출처 15건(원문 미열람 3건), 현장 유형 사례 2건(병원·제조 공장, 시뮬레이션 검증·설계 비교 사례), 열린 질문 4건, 용어 4건. 1차 조건부 승인 수정 지시 9건 이행. 2차 재검증 1회차 수정 8건(약어 첫 등장 풀어 쓰기, 9절 분류 원문 19장 문장 재서술, 6절 단락 분리, 10절 연결 판단 2건 [추정] 태그)과 2회차 수정 2건(분리 주제 페이지 s3·s10 의 '2절'·'5절' 참조를 원 페이지 절 이름으로 표기) 이행",
+    "area_recent": "2026-09-29 — 실행 2026-09-29-03: 3~11절 신규 작성. 대화·기록에서 시뮬레이션을 만들고 재현 충실도를 확인하는 접근법 4종, 병원·제조 공장 사례, 열린 질문 4건, 용어 4건. 로봇 플릿 운영 기록을 대화로 재현한 현장 사례는 미확인. 2차 재검증 1회차 수정 8건·2회차 수정 2건 이행"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "automatic-simulation-model-generation",
+      "term_ko": "자동 시뮬레이션 모델 생성",
+      "term_en": "Automatic Simulation Model Generation (ASMG)",
+      "definition": "사람이 시뮬레이션 도구를 직접 다루지 않고 데이터·사양·자연어 설명에서 실행 가능한 시뮬레이션 모델을 자동으로 만드는 기법이다.",
+      "description": "Elbasheer 외(2025)는 대규모 언어 모델과 ASMG 를 결합해 의도 표현→템플릿 기반 지식 추출→객체지향 데이터 기반 구성요소로 모델 구성→실행·결과 분석의 4단계로 자연어 대화에서 제조 시스템 시뮬레이션 모델을 직접 만들었다. 11. 채팅으로 실제 상황 시뮬레이션 재현과 9. 채팅으로 시나리오 구성이 기대는 방법이다.",
+      "related_areas": [
+        11,
+        9,
+        33,
+        36,
+        44
+      ],
+      "sources": [
+        "ref-836"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "event-trace",
+      "term_ko": "사건 트레이스",
+      "term_en": "Event Trace",
+      "definition": "시스템이나 시뮬레이터가 실행 중에 낸 사건을 시각 순서대로 기록한 구조화 목록으로, 재현 결과를 실제 기록이나 제약과 대조하는 데 쓴다.",
+      "description": "Chen 외(2026)는 자연어 사양에서 생성한 이산 사건 시스템 명세(Discrete Event System Specification, DEVS) 시뮬레이터가 내는 구조화 사건 트레이스를 사양에서 도출한 시간·인과·의미 제약과 대조해 검증하는 벤치마크를 제안했다. 11. 채팅으로 실제 상황 시뮬레이션 재현의 재현 충실도 확인이 이 대조에 기댄다.",
+      "related_areas": [
+        11,
+        36,
+        54
+      ],
+      "sources": [
+        "ref-825"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "scenario-reconstruction",
+      "term_ko": "시나리오 재구성",
+      "term_en": "Scenario Reconstruction",
+      "definition": "사고 보고서·운영 기록 같은 실제 상황의 기록에서 정보를 추출해 시뮬레이터에서 다시 실행할 수 있는 시나리오로 만드는 일이다.",
+      "description": "SoVAR(ASE 2024)와 OmniTester(2024)가 언어 모델로 사고 보고서 텍스트에서 시나리오를 재구성해 자율주행 시험 시뮬레이터에서 재현했다. 정보 추출 정확도와 지도 대응의 한계가 보고되어, 11. 채팅으로 실제 상황 시뮬레이션 재현에서는 사람 확인과 실제 기록 우선 입력이 필요한 것으로 본다.",
+      "related_areas": [
+        11,
+        33,
+        36
+      ],
+      "sources": [
+        "ref-834",
+        "ref-835"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "bag-file",
+      "term_ko": "백 파일",
+      "term_en": "Bag File (rosbag2)",
+      "definition": "ROS 2 에서 토픽 메시지를 시각과 함께 저장한 기록 파일로, 나중에 재생해 로봇 소프트웨어를 실제 하드웨어 없이 시험·디버깅하는 데 쓴다.",
+      "description": "rosbag2 는 ros2 bag record 로 기록하고 ros2 bag play 로 재생 속도·시작 시점·토픽 선택·반복·/clock 발행 옵션을 두어 재생하며 MCAP·SQLite3 저장 형식을 지원한다. 로봇 한 대의 통신 기록을 재생하는 로봇 자체 지능·제어 쪽 도구이며, 플릿 수준 실제 상황 재현과는 층이 다르다.",
+      "related_areas": [
+        11,
+        36,
+        43
+      ],
+      "sources": [
+        "ref-831"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-824",
+      "org": "Kleiman, J., Frank, K., Voyles, J., & Campagna, S.",
+      "title": "Simulation Agent: A Framework for Integrating Simulation and Large Language Models for Enhanced Decision-Making",
+      "published": "2025-05-19",
+      "url": "https://arxiv.org/abs/2505.13761",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "시뮬레이션으로 언어 모델을 접지하고 언어 모델을 시뮬레이터의 대화 인터페이스로 쓰는 결합 프레임워크. 초록에 정량 평가 없음(프리프린트, v1 2025-05-19; v2 2025-05-21 있음).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-825",
+      "org": "Chen, Z., Zhuang, H., Li, Z., & Li, C.",
+      "title": "Specification-Driven Generation and Evaluation of Discrete-Event World Models via the DEVS Formalism",
+      "published": "2026-03-04",
+      "url": "https://arxiv.org/abs/2603.03784",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "자연어 사양에서 DEVS 이산 사건 시뮬레이터를 단계별로 생성하고, 사건 트레이스를 시간·인과·의미 제약과 대조해 검증하는 벤치마크(프리프린트, v1 2026-03-04; v2 2026-05-21 있음).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s7.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-826",
+      "org": "Ghasemloo, M., Eckman, D. J., & Li, Y.",
+      "title": "Subtrace-Conditional Validation of Simulation Models and Digital Twins",
+      "published": "2026-07-19",
+      "url": "https://arxiv.org/abs/2607.17088",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "관측 트레이스의 일부 입력을 고정한 조건부 시뮬레이션과 적합도 검정으로 디지털 트윈을 검증하고 불일치 원인 입력 모델을 진단하는 통계 방법(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-827",
+      "org": "Yang, L., Luo, S., Cheng, X., & Yu, L.",
+      "title": "Leveraging Large Language Models for Enhanced Digital Twin Modeling: Trends, Methods, and Challenges",
+      "published": "2025-03-04",
+      "url": "https://arxiv.org/abs/2503.02167",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "언어 모델을 디지털 트윈 모델링에 쓰는 연구를 기술–예측–처방 프레임워크와 단계별 분류로 정리한 서베이(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-828",
+      "org": "Camargo, M., Dumas, M., & González-Rojas, O.",
+      "title": "Automated Discovery of Business Process Simulation Models from Event Logs",
+      "published": "2020",
+      "url": "https://arxiv.org/abs/1910.05404",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "이벤트 로그에서 프로세스 시뮬레이션 모델을 자동 발견하고 로그와의 행동 유사도를 최대화하도록 조정하는 방법(arXiv 판, Decision Support Systems (2020) 게재). 'Simod' 라는 도구명은 초록이 아니라 논문 본문의 명칭이다.",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s7.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-829",
+      "org": "Sieve, R., Kobialka, P., Slaughter, L., Schlatte, R., Johnsen, E. B., & Tapia Tarifa, S. L. (University of Oslo)",
+      "title": "BedreFlyt: Improving Patient Flows through Hospital Wards with Digital Twins",
+      "published": "2025-05-07",
+      "url": "https://arxiv.org/abs/2505.06287",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "병원 병동 환자 흐름 디지털 트윈으로 형식 모델·온톨로지·SMT 해결기를 결합하고 평균·최악 자원 시나리오를 오케스트레이터 설정으로 탐색(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-830",
+      "org": "이동건, 송승현, 이찬혁, 노상도(성균관대학교), 윤상문, 이현영(LG전자) (한국CDE학회 논문집 26(4))",
+      "title": "자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용",
+      "published": "2021-12",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10671861",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "자동물류시스템의 설계 단계 가상 검증과 운영 단계 실시간 모니터링·분석을 위한 디지털트윈을 국내 제조업체 AGV 시스템에 적용한 국내 학술지 논문(초록 확인).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-831",
+      "org": "ROS 2 (ros2/rosbag2 GitHub)",
+      "title": "rosbag2 — README (Recording and playback of ROS 2 communications)",
+      "published": null,
+      "url": "https://github.com/ros2/rosbag2",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-29",
+      "summary": "ROS 2 공식 기록·재생 도구. record/play 명령, 재생 속도·시작 시점·토픽 선택·반복·/clock 발행 옵션, MCAP·SQLite3 저장 형식을 설명한다.",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s7.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-832",
+      "org": "Xia, Y., Weyrich, M., Jazdi, N., Stümpfle, J., Sigel, J., Narla, A., Reynolds, G. K., Jawor-Baczynska, A., & Llopart, P.",
+      "title": "LLM Agents Perform Controlled Experiments Using Simulation Models",
+      "published": "2026-08-22",
+      "url": "https://arxiv.org/abs/2608.23622",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "언어 모델 에이전트가 사용자 질의에서 실험을 설계하고 매개변수 구성을 나란히 시뮬레이션해 결과를 해석·권고하는 다중 에이전트 프레임워크를 제약 공정 설계에 적용(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-833",
+      "org": "Gao, Y., Miao, W., Piccinini, M., Wang, H., Song, Q., & Betz, J.",
+      "title": "Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving",
+      "published": "2026-07-15",
+      "url": "https://arxiv.org/abs/2607.14387",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "규정 문서를 대화형 인터페이스와 반복 검색 증강 생성으로 Scenic 시나리오로 바꾸는 프레임워크. 123개 시나리오에서 컴파일 성공 76.42%, 프레임워크 정확도 58.17%(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s7.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-834",
+      "org": "Guo, A., Zhou, Y., Tian, H. 외 (ASE 2024)",
+      "title": "SoVAR: Building Generalizable Scenarios from Accident Reports for Autonomous Driving Testing",
+      "published": "2024-09-12",
+      "url": "https://arxiv.org/abs/2409.08081",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "언어 모델로 사고 보고서에서 정보를 추출하고 제약 해결로 궤적을 만들어 여러 지도에 사고 시나리오를 재구성하는 자율주행 시험 도구(ASE 2024 채택, arXiv 초록 확인).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-835",
+      "org": "Lu, Q., Wang, X., Jiang, Y., Zhao, G., Ma, M., & Feng, S.",
+      "title": "Multimodal Large Language Model Driven Scenario Testing for Autonomous Vehicles",
+      "published": "2024-09-10",
+      "url": "https://arxiv.org/abs/2409.06450",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "멀티모달 언어 모델·SUMO·검색 증강 생성으로 자율주행 시험 시나리오를 만들고 사고 보고서 시나리오를 재구성하는 OmniTester(프리프린트).",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s7.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-836",
+      "org": "Elbasheer, M., Laili, Y., Longo, F., Solina, V., Tao, Y., Veltri, P., Zhang, Y., & Zhang, L. (Journal of Intelligent Manufacturing)",
+      "title": "Natural language-driven production planning: integrating large language models with automatic simulation model generation in manufacturing systems",
+      "published": "2025-11-14",
+      "url": "https://link.springer.com/article/10.1007/s10845-025-02732-z",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 자연어 대화에서 실행 가능한 제조 시뮬레이션 모델을 만드는 LLM+ASMG 방법(4단계, 18개 동작 유형, 응답 8초~5분). Springer 페이지는 인증 리다이렉트라 Semantic Scholar API 초록으로 확인.",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s3.md",
+        "docs/topics/2026/2026-09-29-area11-s4.md",
+        "docs/topics/2026/2026-09-29-area11-s6.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-837",
+      "org": "Woo, J., Shin, H., Jeon, C., & Park, S. (Electronics 14(24))",
+      "title": "Design and Application of a Nurse-Following Medical Bed Robot with a Negative Pressure Chamber for Patient Transportation in the Hospital: A Korean Case of Federated Digital Twins",
+      "published": "2025-12-17",
+      "url": "https://www.mdpi.com/2079-9292/14/24/4954",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 감염병 환자 이송용 간호사 추종 침대 로봇 여러 대를 연합 디지털 트윈으로 시뮬레이션해 검증한 한국 병원 사례. MDPI 페이지 403 이라 Semantic Scholar API 초록으로 확인.",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md",
+        "docs/topics/2026/2026-09-29-area11-s10.md",
+        "docs/topics/2026/2026-09-29-area11-s11.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-838",
+      "org": "Valiollahi, S., Rodríguez, I., Eriksen, S. N., Zhang, W., Damsgaard, S., & Mogensen, P. (Scientific Reports)",
+      "title": "Digital twin for scenario-based design evaluation of manufacturing robotic fleets and factory layouts",
+      "published": "2026-07-18",
+      "url": "https://www.nature.com/articles/s41598-026-57316-5",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-29",
+      "summary": "원문 미열람. 운송·조작(manipulation) 역할이 다른 이기종 로봇 플릿·공정·배치를 함께 모델링한 디지털 트윈으로 브라운필드·그린필드 공장 시나리오를 비교(최대 3.5배 처리량). Nature 페이지는 인증 리다이렉트라 Semantic Scholar API 초록으로 확인.",
+      "cited_by": [
+        "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md",
+        "docs/topics/2026/2026-09-29-area11-s8.md"
+      ],
+      "source_unopened": true
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "플릿 관제의 실행 기록(작업·배정·위치·사건 시각)을 시뮬레이션 시나리오 사양으로 바꾸는 공개 형식이나 변환 규칙이 있는가, 아니면 프로세스 마이닝식 로그 발견을 로봇 플릿 기록에 맞게 새로 정의해야 하는가?",
+      "areas": [
+        11,
+        37,
+        33
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "재현한 시뮬레이션이 실제 기록과 '맞는다'고 판정할 지표(사건 순서 유사도·시각 오차·처리량 오차)와 허용 기준은 무엇이며, 그 판정을 누가 승인해야 조건 변경 비교의 근거로 쓸 수 있는가?",
+      "areas": [
+        11,
+        36,
+        54
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "대화로 재현·비교한 시뮬레이션 결과를 근거로 로봇 수·경로·정책을 바꾸는 결정에서 언어 모델의 결과 해석 오류를 막는 검증·승인 절차와 평가 지표는 무엇인가?",
+      "areas": [
+        11,
+        13
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 물류창고·병원에서 로봇 운영 기록으로 혼잡·고장·승강기 대기 같은 실제 상황을 시뮬레이션에 재현한 사례가 있는가(이번 조사에서 확인된 국내 자료는 설계 검증·모니터링용 디지털 트윈과 시나리오 기반 검증뿐이다)?",
+      "areas": [
+        11,
+        61,
+        63
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "시작 조건",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "제약",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "11. 채팅으로 실제 상황 시뮬레이션 재현"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "rosbag2",
+      "kind": "오픈소스",
+      "org": "ROS 2 (ros2/rosbag2 GitHub)",
+      "url": "https://github.com/ros2/rosbag2",
+      "related_areas": [
+        11,
+        36,
+        43
+      ],
+      "summary": "ROS 2 통신을 기록·재생하는 공식 도구. record/play 명령, 재생 속도·시작 시점·토픽 선택·반복·/clock 발행 옵션, MCAP·SQLite3 저장 형식. 로봇 한 대의 통신 기록 재생이라 플릿 수준 실제 상황 재현과는 연계 대상으로 구분한다.",
+      "ref_id": "ref-831"
+    },
+    {
+      "name": "Simod (로그 기반 업무 프로세스 시뮬레이션 모델 자동 발견 도구)",
+      "kind": "오픈소스",
+      "org": "Camargo, M., Dumas, M., & González-Rojas, O.",
+      "url": "https://arxiv.org/abs/1910.05404",
+      "related_areas": [
+        11,
+        36,
+        37
+      ],
+      "summary": "이벤트 로그에서 프로세스 모델과 시뮬레이션 매개변수를 자동 발견하고 하이퍼파라미터 최적화로 시뮬레이션 행동과 로그 행동의 유사도를 최대화하는 도구. 운영 기록을 지정하면 시뮬레이션을 재현하는 방법의 선례다.",
+      "ref_id": "ref-828"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 병원·제조 공장 사례의 '완료·인계' 칸에 넣을 사실: Woo 외(ref-837)·이동건 외(ref-830)·Valiollahi 외(ref-838)의 원문(초록 밖)에서 완료 판정 기준, 승강기 연동 여부, 정량 결과, 실제 공장 데이터 대조 여부를 확인해야 한다.",
+    "6절·8절에 넣을 사실: Elbasheer 외(ref-836)의 원문에서 어떤 시뮬레이션 도구를 썼고 생성 모델의 정확도를 어떻게 검증했는지 확인해야 한다(초록에는 없음).",
+    "5절 물류창고·상업 시설 사례: 물류창고·상업 시설에서 로봇 운영 기록으로 실제 상황을 시뮬레이션에 재현하거나 조건을 바꿔 비교한 사례가 없어 두 현장 유형의 사례를 쓰지 못했다. 예산 상한으로 넣지 못한 Webb·Tokhi·Alkan 의 AMR 플릿 디지털 트윈 사고 대응 논문과 WSC 2022 창고 디지털 트윈 논문을 다음 실행에서 확인하면 물류창고 사례가 될 수 있다.",
+    "6절 재현 충실도 확인: Simod(ref-828)의 정량 유사도 수치와 SoVAR(ref-834)의 재현 성공률이 초록에 없어 본문에 수치를 쓰지 못했다.",
+    "6절·11절: 언어 모델 자체를 디지털 트윈 시뮬레이터로 쓰는 연구(CALM-DT)와 병원 디지털 트윈 검증 논문(arXiv 2303.04117)은 예산 상한으로 브리프에 들어오지 못해 본문에 넣지 못했다."
+  ],
+  "fixes_applied": [
+    "f20 '운송·조립'을 '운송·조작(manipulation)'으로 — 5절 제조 공장 사례 표의 수행 자원 칸과 reference_updates 의 ref-838 요약에서 '운송·조작(manipulation) 역할'로 썼고 '조립'은 어디에도 쓰지 않았다.",
+    "f18 저자 영문 표기 — 5절 병원 사례 서술과 8절 목록, 각주 정의에서 'Woo, J., Shin, H., Jeon, C., & Park, S.'로 쓰고 한글 표기 '우지영·신효진·전창훈·박상찬'은 쓰지 않았다.",
+    "ref-836·ref-837·ref-838 원문 미열람 표시 — 13절 세 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙였고 reference_updates 의 세 항목에 source_unopened: true 를 넣었으며 요약이 '원문 미열람. '으로 시작하게 두었다.",
+    "f12·f13·f14 를 5절 '실외' 사례로 세우지 않음 — 5절은 병원(f18 중심, f17 은 what-if 시나리오 구성 방식 보조)과 제조 공장(f19·f20) 두 사례만 현장 유형 × 여섯 항목으로 썼고, 두 사례 모두 실제 운영 기록 재현이 아니라 시뮬레이션 검증·설계 비교 사례임을 서술 문장에 밝혔다. SoVAR·OmniTester·Chat2Scenic 은 6절 소제목 '텍스트 기록에서 시나리오 재구성 — 자율주행 시험 도구의 선례'에서 차량 소프트웨어 시험 도구임을 첫 문장에 밝혀 다뤘고, site_matrix_updates 에는 병원·제조 공장 칸만 넣고 실외 칸을 넣지 않았다.",
+    "f3 적용 대상 명시 — 6절 '언어 모델 에이전트의 비교 실험'에서 Xia 외의 적용 대상이 제약 공정 설계(비로봇 도메인)임을 문장으로 밝히고 로봇 플릿 적용 근거가 아니라 방법의 선례로만 쓴다고 적었으며, 8절 목록에도 '비로봇 도메인의 선례'를 병기했다.",
+    "f17 병상 배정을 ROP 기능처럼 쓰지 않음 — 5절 병원 사례 보조 단락에서 BedreFlyt 를 '평균·최악 자원 수요와 가용 자원 변동을 오케스트레이터 설정으로 what-if 시나리오로 만드는 방식'의 예시로만 쓰고, 병상 배정 최적화 자체는 상위 업무 시스템 연계 영역이라고 적었다. 9절 표의 상위 업무 시스템 행에도 병상 배정을 외부 연계 칸에 두었다.",
+    "f6·ref-828 게재지 병기 — 13절 ref-828 각주 정의 제목 뒤에 'Decision Support Systems (2020) 게재, arXiv 판'을 병기하고 8절 목록에도 게재지를 적었으며, reference_updates 의 ref-828 요약에 'Simod' 도구명이 초록이 아니라 논문 본문의 명칭임을 남겼다.",
+    "ref-824·ref-825 판 표기 — 13절 각주 발행일을 ref-824 '2025-05-19 (v1; v2 2025-05-21)', ref-825 '2026-03-04 (v1; v2 2026-05-21)'로 썼다. reference_updates 의 published 는 스키마 패턴 때문에 v1 날짜만 넣고 판 정보는 summary 에 적었다.",
+    "f1·f9·f4 한계 문장 — 3절 마지막 단락에 '로봇 플릿의 실제 운영 기록을 대화로 시뮬레이션에 재현한 현장 사례는 이번 조사(2026-09-29 기준)에서 확인되지 않았고, 확인된 것은 연구 프로토타입과 병원·제조 공장의 시뮬레이션 검증·설계 비교 사례뿐이다'를 두었고, 11절 첫 문장과 6절 조건부 검증 단락(로봇 플릿 적용 사례 미확인)에도 같은 한계를 남겼다.",
+    "2차: AGV 첫 등장 풀어 쓰기 — 5절 제조 공장 사례 제목을 '무인운반차(Automated Guided Vehicle, AGV) 자동물류시스템을 …'으로 썼고(표의 작업 대상·수행 자원 칸은 그 뒤 등장이므로 약어 유지), 자동 분리로 별도 페이지가 되어도 첫 등장이 풀어 쓰이도록 8절 이동건 외 항목에도 '국내 제조업체 무인운반차(Automated Guided Vehicle, AGV) 자동물류시스템'으로 썼다.",
+    "2차: SMT 첫 등장 풀어 쓰기 — 5절 병원 사례 보조 단락(BedreFlyt)에 브리프 f17 의 '실행 가능한 형식 모델·온톨로지·충족 가능성 모듈로 이론(Satisfiability Modulo Theories, SMT) 해결기를 결합한'을 넣고, 8절 Sieve 외 항목에서도 같은 표기로 풀어 썼다.",
+    "2차: DEVS·NHTSA·PLC 첫 등장 풀어 쓰기 — 6절 '사양·기록에서 시뮬레이터를 만들고 트레이스로 대조하기' 단락의 첫 DEVS 를 '이산 사건 시스템 명세(Discrete Event System Specification, DEVS) 형식'으로, 7절 표의 이름 칸을 같은 표기로, 6절 시나리오 재구성 단락의 NHTSA 를 '미국 도로교통안전국(National Highway Traffic Safety Administration, NHTSA) 사고 보고서'로, 9절 표 시설·설비 제어 행의 PLC 를 '프로그래머블 로직 컨트롤러(Programmable Logic Controller, PLC)'로 썼다. 4절 용어 정의에는 세 약어가 나오지 않음을 확인했고, glossary_updates 의 사건 트레이스 설명에서도 DEVS 를 풀어 썼다.",
+    "2차: 9절 마지막 단락의 분류 원문 19장 문장 재서술 — '이 경계는 제품 전략에 따라 이동할 수 있다.'를 '분류 원문 19장은 이 경계가 제품 전략에 따라 이동할 수 있다고 본다.'로 바꾸고, 따옴표 구절 \"인터페이스와 실행 보장\"을 따옴표 없이 '시뮬레이션 엔진과의 연결 인터페이스와 재현 실행의 보장을 맡는 쪽에 가깝다'로 재서술했다. [분류원문] 태그는 붙이지 않았다.",
+    "2차: 6절 '텍스트 기록에서 시나리오 재구성 — 자율주행 시험 도구의 선례' 단락 분리 — 선례 안내·SoVAR·OmniTester·교차 확인 문장(f12·f13·f14) 4문장을 첫 단락으로, Chat2Scenic·종합 추정 문장(f15·f16) 2문장을 둘째 단락으로 나눴다.",
+    "2차: 10절 '9. 채팅으로 시나리오 구성' 항목 태그 — '대화에서 시나리오·모델을 만드는 방법을 공유한다.'의 태그를 [사실]에서 [추정]으로 바꾸고 각주 [^ref-836][^ref-825]는 유지했다.",
+    "2차: 10절 '54. 시험·형식 검증·벤치마크' 항목 태그 — '조건부 검증과 시나리오 생성 정확도 지표가 검증 방법에 해당한다.'의 태그를 [사실]에서 [추정]으로 바꾸고 각주 [^ref-826][^ref-833]은 유지했다.",
+    "2차: 6절 마지막 문장의 절 참조 — '3절에서 말한'을 '3. 왜 중요한가 절에서 말한'으로 바꿔 자동 분리 뒤 주제 페이지에 놓여도 원 페이지의 절임이 드러나게 했다(따옴표 구절은 따옴표를 빼고 '사람 확인과 기록 우선 판단'으로 썼다).",
+    "2차(2회차): 분리 주제 페이지 docs/topics/2026/2026-09-29-area11-s3.md 3. 본문 둘째 단락의 '2절의 핵심 질문은 이 재현과 조건 비교를 비전문 사용자가 대화만으로 할 수 있는가를 묻는다.'를 '원 페이지의 2. 핵심 질문 절은 이 재현과 조건 비교를 비전문 사용자가 대화만으로 할 수 있는가를 묻는다.'로 바꿔 11. 채팅으로 실제 상황 시뮬레이션 재현 페이지의 절임을 드러냈다. 그 밖의 문장은 바꾸지 않았다.",
+    "2차(2회차): 분리 주제 페이지 docs/topics/2026/2026-09-29-area11-s10.md 3. 본문의 '63. 병원·의료, 62. 제조 공장' 항목 '5절의 병원·제조 공장 사례가 속하는 현장 유형이다. [사실][^ref-837][^ref-830]'를 '원 페이지의 5. 적용 사례 (현장 유형 명시) 절의 병원·제조 공장 사례가 속하는 현장 유형이다. [사실][^ref-837][^ref-830]'로 바꿨다. 태그와 각주는 그대로 두었고, 이 항목은 1. 세 줄 요약에 실리지 않아 다른 곳에는 같은 문장이 없다.",
+    "분량 초과 자동 분리(이전 초안에서 코드가 수행): 11. 채팅으로 실제 상황 시뮬레이션 재현 본문 10,944자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,229자. 이번 재실행은 분리된 페이지 구성을 그대로 유지했다"
+  ]
+}

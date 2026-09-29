@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 대표 연구와 자료: topics/2026/2026-09-29-area11-s8.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area11-s7.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 대표 접근법과 기술: topics/2026/2026-09-29-area11-s6.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 핵심 개념과 용어: topics/2026/2026-09-29-area11-s4.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 왜 중요한가: topics/2026/2026-09-29-area11-s3.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 열린 질문: topics/2026/2026-09-29-area11-s11.md
+      - 11. 채팅으로 실제 상황 시뮬레이션 재현 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area11-s10.md
       - 10. 채팅으로 로봇 구성 — 대표 연구와 자료: topics/2026/2026-09-29-area10-s8.md
       - 10. 채팅으로 로봇 구성 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area10-s7.md
       - 10. 채팅으로 로봇 구성 — 대표 접근법과 기술: topics/2026/2026-09-29-area10-s6.md
@@ -526,6 +533,7 @@ nav:
     - 반정적 객체 (Semi-static Object): glossary/semi-static-object.md
     - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
+    - 백 파일 (Bag File (rosbag2)): glossary/bag-file.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
@@ -534,6 +542,7 @@ nav:
     - 비즈니스 프로세스 모델 및 표기법 (Business Process Model and Notation (BPMN)): glossary/bpmn.md
     - 사가 (Saga): glossary/saga.md
     - 사건 기반 재스케줄링 (Event-driven Rescheduling): glossary/event-driven-rescheduling.md
+    - 사건 트레이스 (Event Trace): glossary/event-trace.md
     - 사람 참여 루프 (Human-in-the-Loop (HITL)): glossary/human-in-the-loop.md
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
@@ -553,6 +562,7 @@ nav:
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
     - 시간창 (Time Window): glossary/time-window.md
+    - 시나리오 재구성 (Scenario Reconstruction): glossary/scenario-reconstruction.md
     - 시뮬레이션 모델 검증·타당성 확인 (Verification and Validation (V&V) of Simulation Models): glossary/verification-and-validation-of-simulation-models.md
     - 시스템 이론적 프로세스 분석 (System-Theoretic Process Analysis (STPA)): glossary/stpa.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
@@ -591,6 +601,7 @@ nav:
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 일정 안정성 (Schedule Stability): glossary/schedule-stability.md
+    - 자동 시뮬레이션 모델 생성 (Automatic Simulation Model Generation (ASMG)): glossary/automatic-simulation-model-generation.md
     - 자동화 편향 (Automation Bias): glossary/automation-bias.md
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
     - 자원 제약 프로젝트 스케줄링 문제 (Resource-Constrained Project Scheduling Problem (RCPSP)): glossary/resource-constrained-project-scheduling-problem.md
@@ -1549,6 +1560,23 @@ nav:
     - ? ref-822 — A Simulation, Analytical, and Machine-Learning Approach for Collaborative Autonomous Mobile Robot Fleet Sizing in Picker-to-Parts Facilities
       : references/ref-822.md
     - ref-823 — AMR 도입 ROI 어떻게 계산할까? 물류 자동화 투자 회수 기간 알아보기: references/ref-823.md
+    - 'ref-824 — Simulation Agent: A Framework for Integrating Simulation and Large Language Models for Enhanced Decision-Making': references/ref-824.md
+    - ref-825 — Specification-Driven Generation and Evaluation of Discrete-Event World Models via the DEVS Formalism: references/ref-825.md
+    - ref-826 — Subtrace-Conditional Validation of Simulation Models and Digital Twins: references/ref-826.md
+    - 'ref-827 — Leveraging Large Language Models for Enhanced Digital Twin Modeling: Trends, Methods, and Challenges': references/ref-827.md
+    - ref-828 — Automated Discovery of Business Process Simulation Models from Event Logs: references/ref-828.md
+    - 'ref-829 — BedreFlyt: Improving Patient Flows through Hospital Wards with Digital Twins': references/ref-829.md
+    - ref-830 — 자동물류시스템의 설계 검증 및 운영을 위한 디지털트윈 개발 및 적용: references/ref-830.md
+    - ref-831 — rosbag2 — README (Recording and playback of ROS 2 communications): references/ref-831.md
+    - ref-832 — LLM Agents Perform Controlled Experiments Using Simulation Models: references/ref-832.md
+    - 'ref-833 — Chat2Scenic: An Iterative RAG-Based Framework for Scenario Generation in Autonomous Driving': references/ref-833.md
+    - 'ref-834 — SoVAR: Building Generalizable Scenarios from Accident Reports for Autonomous Driving Testing': references/ref-834.md
+    - ref-835 — Multimodal Large Language Model Driven Scenario Testing for Autonomous Vehicles: references/ref-835.md
+    - ? 'ref-836 — Natural language-driven production planning: integrating large language models with automatic simulation model generation in manufacturing systems'
+      : references/ref-836.md
+    - ? 'ref-837 — Design and Application of a Nurse-Following Medical Bed Robot with a Negative Pressure Chamber for Patient Transportation in the Hospital: A Korean Case of Federated Digital Twins'
+      : references/ref-837.md
+    - ref-838 — Digital twin for scenario-based design evaluation of manufacturing robotic fleets and factory layouts: references/ref-838.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md
