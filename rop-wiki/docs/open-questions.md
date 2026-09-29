@@ -190,8 +190,13 @@ version: 1
 | oq-168 | 생산 관리 시스템(MES)이 로봇 플릿에 내는 운송·공정 작업 요청과 완료 보고에 ISA-95 의 작업 요청·작업 응답 모델을 실제로 쓴 공개 사례나 표준 매핑이 있는가? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
 | oq-169 | 셀 생산 방식에서 여러 셀이 동시에 같은 부품을 요청할 때 운반 로봇 배정과 셀 안 로봇팔·작업자의 조립 순서를 어떤 계층이 조율하며 라인 정지·결품 시 재계획 책임은 어디에 있는가? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
 | oq-170 | ISO 3691-4:2023 의 운용 구역 분류와 사람 감지 요구가 이기종 플릿 관제 계층에 어떤 정보(구역·속도 제한·모드)를 요구하는지 표준 원문으로 확인할 수 있는가(이번 조사는 인증 기관 설명만 확인했다)? | [62. 제조 공장](categories/site-type-applications/manufacturing-plant.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-09-29 | 2026-09-29-12 | 열림 | — |
+| oq-171 | 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한)의 촬영 사실 표시·촬영 거부 규정이 병원 이송 로봇의 카메라·센서 촬영에 어떻게 적용되며, 환자·방문객 영상을 관제 계층이 어디까지 저장·전송할 수 있는지 법령 원문과 해석 사례로 확인할 수 있는가(이번 조사는 법령 원문을 열지 못했다)? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
+| oq-172 | 격리 병동·감염 관리 구역을 지나는 이송 로봇의 출입 허용 규칙과 로봇 표면 소독 절차를 병원 감염관리 조직이 어떻게 정하고 로봇 플릿 관제가 이를 경로·배정 제약으로 어떻게 받는지 공개된 지침이나 연구가 있는가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
+| oq-173 | 국가기술표준원이 2021년 제정을 발표한 로봇의 승강기 탑승 안전 요구사항 KS 와 실내 배송 로봇 KS 의 표준 번호·조항은 무엇이며, 그 요구(속도 제어·보호 정지·높낮이차·틈새)가 승강기 연동 계층에 어떤 정보를 요구하는가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
+| oq-174 | 한림대성심병원처럼 제조사가 다른 여러 로봇을 통합관제하는 국내 병원은 어떤 인터페이스·표준(Open-RMF, VDA 5050, 제조사 API)으로 로봇과 승강기를 연결하며 그 구조가 공개돼 있는가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
+| oq-175 | 국내 병원에서 식사(환자식) 이송을 로봇이 맡은 운영 사례가 있으며, 식사 이송은 약품·검체 이송과 시작 조건·시간 제약·인계 방식이 어떻게 다른가? | [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-29 | 2026-09-29-13 | 열림 | — |
 
-상태별 건수: 열림 169건, 조사 중 1건
+상태별 건수: 열림 174건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

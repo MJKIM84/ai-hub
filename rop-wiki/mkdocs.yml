@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 63. 병원·의료 — 대표 연구와 자료: topics/2026/2026-09-29-area63-s8.md
+      - 63. 병원·의료 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area63-s7.md
+      - 63. 병원·의료 — 대표 접근법과 기술: topics/2026/2026-09-29-area63-s6.md
+      - 63. 병원·의료 — 핵심 개념과 용어: topics/2026/2026-09-29-area63-s4.md
+      - 63. 병원·의료 — 왜 중요한가: topics/2026/2026-09-29-area63-s3.md
+      - 63. 병원·의료 — 열린 질문: topics/2026/2026-09-29-area63-s11.md
+      - 63. 병원·의료 — 다른 연구영역과의 연결: topics/2026/2026-09-29-area63-s10.md
       - 62. 제조 공장 — 대표 연구와 자료: topics/2026/2026-09-29-area62-s8.md
       - 62. 제조 공장 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area62-s7.md
       - 62. 제조 공장 — 대표 접근법과 기술: topics/2026/2026-09-29-area62-s6.md
@@ -574,6 +581,7 @@ nav:
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
     - 등각 예측 (Conformal Prediction): glossary/conformal-prediction.md
+    - 등재 프로그램 (Empanelment Programme): glossary/empanelment-programme.md
     - 디스펜서·인제스터 (Dispenser / Ingestor): glossary/dispenser-ingestor.md
     - 디지털 명판 (Digital Nameplate (IDTA 02006)): glossary/digital-nameplate.md
     - 디지털 섀도 (Digital Shadow): glossary/digital-shadow.md
@@ -639,11 +647,13 @@ nav:
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
     - 수행 가능 동작 (Performable Action (Open-RMF perform_action)): glossary/performable-action.md
     - 스마트물류센터 인증 (Smart Logistics Center Certification): glossary/smart-logistics-center-certification.md
+    - 스마트병원 선도모델 (Smart Hospital Leading Model): glossary/smart-hospital-leading-model.md
     - 스캔 대 BIM 비교 (Scan-vs-BIM): glossary/scan-vs-bim.md
     - 스케줄 간 의존 (Cross-schedule Dependency (XD)): glossary/cross-schedule-dependency.md
     - 스킬 (Skill): glossary/skill.md
     - 스킬 인터페이스 (Skill Interface): glossary/skill-interface.md
     - 슬롯 채우기 (Slot Filling): glossary/slot-filling.md
+    - 승강기 가동률 (Elevator Operating Rate (EOR)): glossary/elevator-operating-rate.md
     - 승강기 어댑터 (Lift Adapter): glossary/lift-adapter.md
     - 승인 피로 (Approval Fatigue (Consent Fatigue)): glossary/approval-fatigue.md
     - 시간창 (Time Window): glossary/time-window.md
@@ -685,6 +695,7 @@ nav:
     - 유사 변환 (Similarity Transformation): glossary/similarity-transformation.md
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
+    - 의료 로봇 미들웨어 RoMi-H (Robotic Middleware for Healthcare (RoMi-H)): glossary/robotic-middleware-for-healthcare.md
     - 의미 식별자 (Semantic ID (semanticId)): glossary/semantic-id.md
     - 의미적 버전 관리 (Semantic Versioning (SemVer)): glossary/semantic-versioning.md
     - 이동 병목 탐지 (Shifting Bottleneck Detection (Active Period Method)): glossary/shifting-bottleneck-detection-active-period-method.md
@@ -1771,6 +1782,8 @@ nav:
     - ref-927 — LG전자, 스마트팩토리 솔루션 확대에 AMR 등 물류로봇 적극 활용한다: references/ref-927.md
     - ? 'ref-928 — Integrating collaborative robots in manufacturing, logistics, and agriculture: Expert perspectives on technical, safety, and human factors'
       : references/ref-928.md
+    - ? ref-929 — Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios
+      : references/ref-929.md
     - ref-930 — ‘혁신의 장場’ HMGICS, 인간 중심 모빌리티 솔루션의 새 시대 열다: references/ref-930.md
     - ref-931 — "로봇 몇 대, 어디로 움직일까"…중소 제조현장에 'AI 공장장' 뜬다: references/ref-931.md
     - ref-932 — KETI, LLM 모델 및 모방학습, 조립공정 자동화 기술 공개: references/ref-932.md
@@ -1778,7 +1791,21 @@ nav:
     - ref-934 — Multi-Robot Assembly Strategies and Metrics: references/ref-934.md
     - 'ref-935 — 시뮬레이션을 이용한 자동차 부품 공급 시스템 도입 방안 분석: R자동차 사례': references/ref-935.md
     - ref-936 — 자동차 생산을 위한 통합창고 연구: references/ref-936.md
+    - ref-937 — ROMI-H | Changi General Hospital: references/ref-937.md
     - 'ref-938 — ISO 3691-4:2023: Compliance Testing for Automated Guided Vehicles (AGVs)': references/ref-938.md
+    - ref-939 — 분당서울대병원, 무거운 이송카트 로봇자율배송, 무안경 3D 의료실습에 도입: references/ref-939.md
+    - ref-940 — [한림대성심병원 로봇 사용기 (下)] 배송로봇, 엘리베이터 타고 횡단보도 건너 검체 운반: references/ref-940.md
+    - ref-941 — 원내 약 배송로봇 도입 확대...정부 지원에 변화 바람: references/ref-941.md
+    - 'ref-942 — ROMI-H: Bringing Robot Traffic Control to Healthcare': references/ref-942.md
+    - ? ref-943 — Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments
+      : references/ref-943.md
+    - ref-944 — 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원': references/ref-944.md
+    - ref-945 — 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다: references/ref-945.md
+    - 'ref-946 — A systematic review of collaborative robots for nurses: where are we now, and where is the evidence?': references/ref-946.md
+    - ref-947 — 서비스로봇 실증사업: references/ref-947.md
+    - ref-948 — 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까: references/ref-948.md
+    - 'ref-949 — 감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여': references/ref-949.md
+    - ref-950 — 선도모델 및 모듈 소개: references/ref-950.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

@@ -105,6 +105,13 @@ version: 1
 | 2026-09-29 | [62. 제조 공장 — 대표 접근법과 기술](2026/2026-09-29-area62-s6.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
 | 2026-09-29 | [62. 제조 공장 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area62-s7.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
 | 2026-09-29 | [62. 제조 공장 — 대표 연구와 자료](2026/2026-09-29-area62-s8.md) | [62. 제조 공장](../categories/site-type-applications/manufacturing-plant.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 다른 연구영역과의 연결](2026/2026-09-29-area63-s10.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 열린 질문](2026/2026-09-29-area63-s11.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 왜 중요한가](2026/2026-09-29-area63-s3.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 핵심 개념과 용어](2026/2026-09-29-area63-s4.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 대표 접근법과 기술](2026/2026-09-29-area63-s6.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 관련 표준·프레임워크·오픈소스](2026/2026-09-29-area63-s7.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
+| 2026-09-29 | [63. 병원·의료 — 대표 연구와 자료](2026/2026-09-29-area63-s8.md) | [63. 병원·의료](../categories/site-type-applications/hospital-and-healthcare.md) | published | medium | — |
 | 2026-09-26 | [39. 운영 성과 측정·개선 — 다른 연구영역과의 연결](2026/2026-09-26-area04-s10.md) | [39. 운영 성과 측정·개선](../categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | — |
 | 2026-09-26 | [48. 안전·위험 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-26-area25-s7.md) | [48. 안전·위험 관리](../categories/safety/safety-and-risk-management.md) | published | medium | — |
 | 2026-09-25 | [23. 업무 시스템 연동 — 열린 질문](2026/2026-09-25-area01-s11.md) | [23. 업무 시스템 연동](../categories/integration/business-system-integration.md) | published | medium | — |

@@ -20,6 +20,34 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-29-13 | 갱신 | [docs/categories/site-type-applications/hospital-and-healthcare.md](categories/site-type-applications/hospital-and-healthcare.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 첫 항목의 태그·각주를 결론 문장 뒤로 옮기고 해석 문장을 [추정]으로 분리, 3절 '운영 계층은 … 받아야 한다'를 [추정] 문장으로 분리, 5절 울산대병원 제약 칸에 '기사가 전한 국내 병원 일반의 장애 요인:' 귀속 표시, 용어집 RoMi-H 출처에 ref-872 추가·승강기 가동률 정의 한정(분리 전 전체 본문으로 반환, 분리는 코드가 다시 한다) |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s11.md](topics/2026/2026-09-29-area63-s11.md) | 자동 분리: 63. 병원·의료 의 "11. 열린 질문" 절(1,575자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s4.md](topics/2026/2026-09-29-area63-s4.md) | 자동 분리: 63. 병원·의료 의 "4. 핵심 개념과 용어" 절(1,525자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s6.md](topics/2026/2026-09-29-area63-s6.md) | 자동 분리: 63. 병원·의료 의 "6. 대표 접근법과 기술" 절(1,495자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s8.md](topics/2026/2026-09-29-area63-s8.md) | 자동 분리: 63. 병원·의료 의 "8. 대표 연구와 자료" 절(1,439자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s10.md](topics/2026/2026-09-29-area63-s10.md) | 자동 분리: 63. 병원·의료 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,068자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s3.md](topics/2026/2026-09-29-area63-s3.md) | 자동 분리: 63. 병원·의료 의 "3. 왜 중요한가" 절(858자)을 옮겼다 |
+| 2026-09-29-13 | 생성 | [docs/topics/2026/2026-09-29-area63-s7.md](topics/2026/2026-09-29-area63-s7.md) | 자동 분리: 63. 병원·의료 의 "7. 관련 표준·프레임워크·오픈소스" 절(805자)을 옮겼다 |
+| 2026-09-29-13 | 요약 | [docs/categories/site-type-applications/hospital-and-healthcare.md](categories/site-type-applications/hospital-and-healthcare.md) | 63. 병원·의료: 섹션 3~11 신규 작성(seed → draft), 병원 사례 6건 여섯 항목 정리, 각주 17건, 1차 수정 지시 18건 이행; 2차 수정(1회차): 8절 태그·각주 정리, 3절 추론 문장 [추정] 분리, 5절 울산대병원 제약 칸 귀속 표시, 용어집 RoMi-H 출처·승강기 가동률 정의 수정 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-929.md](references/ref-929.md) | 참고문헌 ref-929 등록: Application management and effectiveness analysis of intelli… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-937.md](references/ref-937.md) | 참고문헌 ref-937 등록: ROMI-H \| Changi General Hospital |
+| 2026-09-29-13 | 생성 | [docs/references/ref-939.md](references/ref-939.md) | 참고문헌 ref-939 등록: 분당서울대병원, 무거운 이송카트 로봇자율배송, 무안경 3D 의료실습에 도입 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-940.md](references/ref-940.md) | 참고문헌 ref-940 등록: [한림대성심병원 로봇 사용기 (下)] 배송로봇, 엘리베이터 타고 횡단보도 건너 검체 운반 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-941.md](references/ref-941.md) | 참고문헌 ref-941 등록: 원내 약 배송로봇 도입 확대...정부 지원에 변화 바람 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-942.md](references/ref-942.md) | 참고문헌 ref-942 등록: ROMI-H: Bringing Robot Traffic Control to Healthcare |
+| 2026-09-29-13 | 생성 | [docs/references/ref-943.md](references/ref-943.md) | 참고문헌 ref-943 등록: Feasibility of autonomous medication delivery robots conside… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-944.md](references/ref-944.md) | 참고문헌 ref-944 등록: 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' |
+| 2026-09-29-13 | 생성 | [docs/references/ref-945.md](references/ref-945.md) | 참고문헌 ref-945 등록: 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-946.md](references/ref-946.md) | 참고문헌 ref-946 등록: A systematic review of collaborative robots for nurses: wher… |
+| 2026-09-29-13 | 생성 | [docs/references/ref-947.md](references/ref-947.md) | 참고문헌 ref-947 등록: 서비스로봇 실증사업 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-948.md](references/ref-948.md) | 참고문헌 ref-948 등록: 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-949.md](references/ref-949.md) | 참고문헌 ref-949 등록: 감염환자 이송 로봇에 대한 의료종사자의 인식: SERVQUAL과 AHP를 활용하여 |
+| 2026-09-29-13 | 생성 | [docs/references/ref-950.md](references/ref-950.md) | 참고문헌 ref-950 등록: 선도모델 및 모듈 소개 |
+| 2026-09-29-13 | 생성 | [docs/glossary/robotic-middleware-for-healthcare.md](glossary/robotic-middleware-for-healthcare.md) | 용어집 항목 의료 로봇 미들웨어 RoMi-H |
+| 2026-09-29-13 | 생성 | [docs/glossary/elevator-operating-rate.md](glossary/elevator-operating-rate.md) | 용어집 항목 승강기 가동률 |
+| 2026-09-29-13 | 생성 | [docs/glossary/empanelment-programme.md](glossary/empanelment-programme.md) | 용어집 항목 등재 프로그램 |
+| 2026-09-29-13 | 생성 | [docs/glossary/smart-hospital-leading-model.md](glossary/smart-hospital-leading-model.md) | 용어집 항목 스마트병원 선도모델 |
+| 2026-09-29-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-29-12 | 갱신 | [docs/categories/site-type-applications/manufacturing-plant.md](categories/site-type-applications/manufacturing-plant.md) | 섹션 3~11 신규 작성(seed → draft), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주 16건(분리 후), 1차 수정 지시 18건 이행; 2차 수정(1회차): 4·8절 추론 [추정] 분리, 6절 세 형태 문장 정리, 약어 병기; 2차 수정(2회차): 9절 표의 PLC·ERP 첫 등장을 풀어 씀 |
 | 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s4.md](topics/2026/2026-09-29-area62-s4.md) | 자동 분리: 62. 제조 공장 의 "4. 핵심 개념과 용어" 절을 옮겼다; 2차 수정(2회차): 두 번째 자동 분리로 소실된 4절 전체 내용(견인차·언더라이드 로봇 기반 라인 공급, 운송 주문, 셀 생산 방식, 치구 없는 다중 로봇 조립, 협동로봇, 운용 구역·ISO 3691-4)을 복구하고 자기 참조 링크 줄을 삭제, 출처·프런트매터 sources·세 줄 요약을 맞춤 |
 | 2026-09-29-12 | 생성 | [docs/topics/2026/2026-09-29-area62-s6.md](topics/2026/2026-09-29-area62-s6.md) | 자동 분리: 62. 제조 공장 의 "6. 대표 접근법과 기술" 절을 옮겼다; 2차 수정(1회차): 1절·3절 첫 문장의 세 형태 (3) 을 '작업자와 로봇이 함께 조립하거나 두 대 이상의 로봇(로봇팔·이동 플랫폼)이 치구 없이 조립하거나'로 고침(2회차 변경 없음) |
