@@ -230,12 +230,14 @@ def create_app(data_dir:Path|None=None, *, provider_factory=None, initial_templa
                 if s.status in ("failed","completed","timed_out"):
                     raise HTTPException(409,"종료된 실행입니다. 초기화한 뒤 다시 시작하세요")
                 s.status="running"
-            elif request.action=="pause":s.status="paused"
+            elif request.action=="pause":
+                if s.status not in ("failed","completed","timed_out"):s.status="paused"
             elif request.action=="reset":
-                host.session=Session(s.project)
+                host.session=Session(s.project,stop_when_tasks_terminal=s.stop_when_tasks_terminal)
                 if host.plan_service:host.plan_service.amendment_required=False
             elif request.action=="step":
                 if host.plan_service and host.plan_service.amendment_required:raise HTTPException(409,"변경안을 다시 승인한 뒤 진행하세요.")
+                if s.status in ("failed","completed","timed_out"):raise HTTPException(409,"종료된 실행입니다. 초기화한 뒤 진행하세요")
                 if s.status=="running":raise HTTPException(409,"단계 실행 전에 일시 정지하세요")
                 s.step(request.steps)
             else:raise HTTPException(422,"알 수 없는 실행 명령")

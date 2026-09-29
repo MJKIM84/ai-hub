@@ -770,9 +770,54 @@ class PlanService:
             self.checkpoint(force=True)
             return dict(receipt,replayed=False,live=True)
 
+    def reset_approved(self, plan_id, run_id):
+        """Explicitly rewind identical approved conditions; never apply an editor draft.
+
+        A reset prepares a paused run, it does not approve modified work or start
+        physics. The source run is the idempotency key for double clicks/retries.
+        """
+        with self.host.lock:
+            if not isinstance(run_id,str) or not re.fullmatch(r'[0-9a-f]{32}',run_id):
+                raise HTTPException(422,'초기화할 실행 번호가 필요합니다.')
+            journal=self.folder/f'reset-{run_id}.json'
+            if journal.exists():
+                prior=json.loads(journal.read_text())
+                if prior['plan_id']!=plan_id or self.active!=plan_id or self.host.session.run_id!=prior['receipt']['run_id']:
+                    raise HTTPException(409,'이전 실행의 초기화 요청입니다. 현재 실행을 다시 확인하세요.')
+                return dict(prior['receipt'],replayed=True)
+            record=self.load(plan_id)
+            receipt=record.get('approval') or {}
+            previous=self.host.session
+            if (self.active!=plan_id or previous.run_id!=run_id or receipt.get('run_id')!=run_id
+                    or receipt.get('version')!=record['version']
+                    or digest(previous.project.model_dump(mode='json'))!=digest(record['compiled'].get('project'))):
+                raise HTTPException(409,'현재 승인 구성과 일치하지 않습니다. 변경된 계획을 검토·승인하세요.')
+            candidate=Session(previous.project,stop_when_tasks_terminal=previous.stop_when_tasks_terminal)
+            # Construct first, then archive before replacing the only runtime.
+            # A failed construction must leave the previous physical state intact.
+            if previous.status not in ('completed','failed','timed_out'):
+                previous.status='paused'
+            previous.emit('plan_reset_requested',None,'기존 실행 기록을 보존하고 동일 승인 구성의 초기 상태로 돌아갑니다.',
+                          {'next_run_id':candidate.run_id,'plan_id':plan_id,'version':record['version']})
+            self.checkpoint(force=True)
+            recordings=self.folder/'recordings';recordings.mkdir(exist_ok=True)
+            write_json(recordings/(run_id+'.json'),previous.recording())
+            next_receipt=dict(receipt,run_id=candidate.run_id,reset_of=run_id,reset_at=time.time(),
+                              initialization='approved_initial_conditions')
+            record['previous_approvals']=[*record.get('previous_approvals',[]),receipt]
+            record['approval']=next_receipt
+            self.save(record)
+            write_json(journal,{'plan_id':plan_id,'receipt':next_receipt})
+            self.host.session=candidate
+            self.amendment_required=False
+            candidate.emit('plan_reset',None,'동일 승인 구성으로 초기화했습니다. 시작을 누르면 처음부터 실행합니다.',next_receipt)
+            self.checkpoint(force=True)
+            return dict(next_receipt,replayed=False)
+
     def guard(self, action):
         if self.active:
-            self.host.session.status='paused'
+            if self.host.session.status not in ('completed','failed','timed_out'):
+                self.host.session.status='paused'
             self.amendment_required=True
             self.host.session.emit('plan_amendment_required',None,'승인 범위를 바꾸는 조작입니다. 계획 도우미에서 변경안을 승인하세요.',{'action':action})
             self.checkpoint(force=True)
@@ -1203,9 +1248,15 @@ def install_plan_routes(app,host,folder, *, provider_factory=None):
             if action not in ('pause','resume'):raise HTTPException(422,'일시 정지 또는 재개를 선택하세요.')
             if action=='resume' and (service.amendment_required or host.session.status in ('failed','completed','timed_out')):
                 raise HTTPException(409,'계획 변경 또는 실패를 해결한 뒤 새 계획을 승인하세요.')
-            host.session.status='paused' if action=='pause' else 'running'
+            if action=='resume':host.session.status='running'
+            elif host.session.status not in ('completed','failed','timed_out'):host.session.status='paused'
             service.checkpoint(force=True)
             return host.session.snapshot()
+
+    @app.post('/api/plans/{plan_id}/reset')
+    def reset_approved_plan(plan_id:str,body:dict):
+        if set(body)!={'run_id'}:raise HTTPException(422,'현재 실행 번호만 지정하세요. 구성 변경은 계획에서 승인하세요.')
+        return service.reset_approved(plan_id,body['run_id'])
 
     @app.post('/api/plans/{plan_id}/stop')
     def stop(plan_id:str,body:dict):

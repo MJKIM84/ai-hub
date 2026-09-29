@@ -1599,11 +1599,23 @@ function App() {
         runTransition.current = true;
       }
       try {
-        if(runApproval && runApproval.run_id===currentState.current?.run_id && runApproval.status==='accepted' && ['start','resume','pause'].includes(action)) {
+        if(action==='reset' && runApproval?.status==='accepted' && runApproval.run_id===currentState.current?.run_id) {
+          const receipt=await request<RunApproval>(`/plans/${encodeURIComponent(runApproval.plan_id)}/reset`,'POST',{
+            run_id:runApproval.run_id,
+          });
+          setRunApproval(receipt);
+        } else if(runApproval && runApproval.run_id===currentState.current?.run_id && runApproval.status==='accepted' && ['start','resume','pause'].includes(action)) {
           await request(`/plans/${encodeURIComponent(runApproval.plan_id)}/control`,'POST',{
             run_id:runApproval.run_id,action:action==='pause'?'pause':'resume',
           });
         } else await api.control(action, action === "step" ? 1 : undefined, speed);
+      } catch (error) {
+        runTransition.current = false;
+        // Rejected controls may pause a run. Never leave the old screen state
+        // saying it is still running (or keep a stale success notice).
+        setNotice("");
+        await refresh().catch(() => {});
+        throw error;
       } finally {
         if (changesRun) runTransition.current = false;
       }
@@ -1612,7 +1624,7 @@ function App() {
         action === "step"
           ? "물리 한 단계 실행 결과를 수신했습니다."
           : action === "reset"
-            ? "초기 조건에서 새 실행을 만들었습니다."
+            ? "0초·초기 배치로 돌아왔습니다. 이전 기록은 보존되며 시작을 누르면 다시 실행합니다."
             : action === "pause"
               ? "시뮬레이션을 일시 정지했습니다."
               : "시뮬레이션 실행 상태를 확인했습니다.",
@@ -3455,17 +3467,21 @@ function App() {
         </Empty>
       </>
     );
+  const executionEnded = !!state && ["failed", "completed", "timed_out"].includes(state.status);
+  const executionLabel = !live
+    ? "연결 대기"
+    : executionEnded
+      ? state?.status === "completed" ? "실행 완료" : "실행 종료"
+      : state?.status === "running" ? "실행 중" : state?.sim_time ? "재개" : "시작";
   const executeReason = !live
     ? "실행부에 연결된 뒤 사용할 수 있습니다."
+    : executionEnded
+      ? "종료된 실행입니다. 같은 구성으로 다시 실행하려면 초기화 후 시작하세요. 구성 변경은 다시 승인해야 합니다."
     : dirty && !(runApproval?.status==='accepted' && runApproval.run_id===state?.run_id)
       ? "초안 변경을 실행부에 먼저 적용하세요."
       : state?.status === "running"
         ? "시뮬레이션이 실행 중입니다."
-        : state?.status === "failed" ||
-            state?.status === "completed" ||
-            state?.status === "timed_out"
-          ? "종료된 실행입니다. 초기화한 뒤 다시 시작하세요."
-          : busy
+        : busy
             ? `${busy} 작업이 끝나면 사용할 수 있습니다.`
             : "";
   const executionControls = () => (
@@ -3480,7 +3496,7 @@ function App() {
           onClick={() => control(state?.sim_time ? "resume" : "start")}
         >
           <Play size={14} />
-          {state?.sim_time ? "재개" : "시작"}
+          {executionLabel}
         </button>
         <button
           disabled={!live || state?.status !== "running"}
@@ -3508,7 +3524,7 @@ function App() {
           title={
             !live
               ? "실행부 연결이 필요합니다."
-              : "현재 실행 구성의 초기 상태로 새 실행을 만듭니다. 초안은 보존됩니다."
+              : "이전 기록을 보존하고 현재 실행 구성의 0초·초기 배치로 돌아갑니다. 승인 구성과 편집 초안은 변경하지 않습니다."
           }
           onClick={() => control("reset")}
         >
@@ -3556,6 +3572,16 @@ function App() {
               : "시뮬레이션"}
         </small>
       </div>
+      {(!live || executionEnded) && (
+        <div className="execution-help" role="status">
+          <span>{!live
+            ? "실행부 연결을 기다리고 있습니다. 연결을 다시 확인하세요. 체험 시간이 끝났다면 시작 화면에서 새 체험을 열어 주세요. 표시된 시간과 결과는 마지막 수신 기록입니다."
+            : "이 실행은 종료되었습니다. 같은 구성은 초기화 → 시작으로 다시 실행하고, 구성 변경은 계획에서 다시 승인하세요."}</span>
+          {!live
+            ? <button disabled={!!busy} onClick={() => void run("연결 확인", refresh)}>연결 다시 확인</button>
+            : <button onClick={() => navigate("planner")}>계획 다시 검토</button>}
+        </div>
+      )}
       {project?.id === "example-elevator-pedestrian-60s" &&
         (() => {
           const robot = state?.robots.find((item) => item.id === "sample-amr");
