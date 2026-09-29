@@ -28,6 +28,13 @@ version: 1
 | 2026-09-30 | [66. 실외 — 대표 접근법과 기술](2026/2026-09-30-area66-s6.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area66-s7.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 대표 연구와 자료](2026/2026-09-30-area66-s8.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 다른 연구영역과의 연결](2026/2026-09-30-area67-s10.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 열린 질문](2026/2026-09-30-area67-s11.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 왜 중요한가](2026/2026-09-30-area67-s3.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 핵심 개념과 용어](2026/2026-09-30-area67-s4.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 대표 접근법과 기술](2026/2026-09-30-area67-s6.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area67-s7.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
+| 2026-09-30 | [67. 기타 현장 — 대표 연구와 자료](2026/2026-09-30-area67-s8.md) | [67. 기타 현장](../categories/site-type-applications/other-sites.md) | published | medium | — |
 | 2026-09-29 | [1. 기술·시장·업체 동향 — 다른 연구영역과의 연결](2026/2026-09-29-area01-s10.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
 | 2026-09-29 | [1. 기술·시장·업체 동향 — 열린 질문](2026/2026-09-29-area01-s11.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |
 | 2026-09-29 | [1. 기술·시장·업체 동향 — 왜 중요한가](2026/2026-09-29-area01-s3.md) | [1. 기술·시장·업체 동향](../categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | — |

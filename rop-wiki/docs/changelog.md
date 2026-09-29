@@ -20,6 +20,34 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-02 | 갱신 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 접근법 6가지, 표준 5건, 책임 경계, 연결 영역 17개, 열린 질문 5건. 2차 수정: 출처 5건 제목 정정, 9절 태그 추가, BIM·라이다·RMF 첫 등장 풀어 쓰기. 2차 재검증 수정: 9절 RMF 풀이를 Robotics Middleware Framework 로 정정 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s6.md](topics/2026/2026-09-30-area67-s6.md) | 자동 분리: 67. 기타 현장 의 "6. 대표 접근법과 기술" 절(1,209자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s7.md](topics/2026/2026-09-30-area67-s7.md) | 자동 분리: 67. 기타 현장 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,102자)을 옮겼다. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s10.md](topics/2026/2026-09-30-area67-s10.md) | 자동 분리: 67. 기타 현장 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,022자)을 옮겼다. 2차 수정: 20. 로봇·제조사 관제 연동 항목의 창이 공항 서술을 기사 수준으로 고치고 출처 제목 정정 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s4.md](topics/2026/2026-09-30-area67-s4.md) | 자동 분리: 67. 기타 현장 의 "4. 핵심 개념과 용어" 절(903자)을 옮겼다. 2차 수정: ref-1000 제목 정정. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s11.md](topics/2026/2026-09-30-area67-s11.md) | 자동 분리: 67. 기타 현장 의 "11. 열린 질문" 절(866자)을 옮겼다 |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s3.md](topics/2026/2026-09-30-area67-s3.md) | 자동 분리: 67. 기타 현장 의 "3. 왜 중요한가" 절(716자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
+| 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s8.md](topics/2026/2026-09-30-area67-s8.md) | 자동 분리: 67. 기타 현장 의 "8. 대표 연구와 자료" 절(629자)을 옮겼다 |
+| 2026-09-30-02 | 요약 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 67. 기타 현장: 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농촌진흥청 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 표준 5건(ISO 18497·SiLA 2·SS 713·TR 130·Open-RMF), 책임 경계, 연결 영역 17개, 열린 질문 5건. 1차 조건부 승인 수정 16건·2차 수정 5건(출처 제목 정정, 창이 공항 서술 완화, 태그 보완, 약어 풀어 쓰기, ref-004 각주는 대조 요청)·2차 재검증 수정 1건(RMF 풀이를 Robotics Middleware Framework 로 정정) 이행 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-995.md](references/ref-995.md) | 참고문헌 ref-995 등록: Equinor's autonomous robotics: inspection 'dogs' and record-… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-996.md](references/ref-996.md) | 참고문헌 ref-996 등록: A mobile robotic chemist |
+| 2026-09-30-02 | 생성 | [docs/references/ref-997.md](references/ref-997.md) | 참고문헌 ref-997 등록: 로봇이 로봇들을 움직이는, 네이버 1784 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-998.md](references/ref-998.md) | 참고문헌 ref-998 등록: 인천국제공항, 안내 로봇 '에어스타' 본격 운영 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-999.md](references/ref-999.md) | 참고문헌 ref-999 등록: 로봇 '스팟' 건설현장 누빈다…현대건설 품질·안전 관리 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1000.md](references/ref-1000.md) | 참고문헌 ref-1000 등록: GS건설, 4족보행 로봇 '스팟(SPOT)' 국내 최초 건설현장 도입하기로 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1001.md](references/ref-1001.md) | 참고문헌 ref-1001 등록: SiLA Standards |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1002.md](references/ref-1002.md) | 참고문헌 ref-1002 등록: 아시아 최대 규모 데이터센터…네이버 '각 세종' 본격 가동 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1003.md](references/ref-1003.md) | 참고문헌 ref-1003 등록: Game-changer: The rationale behind the investment in Energy… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1004.md](references/ref-1004.md) | 참고문헌 ref-1004 등록: Singapore's National Robotics Programme reveals initiatives… |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1005.md](references/ref-1005.md) | 참고문헌 ref-1005 등록: 스스로 수확하고 운반···'로봇농부' 나왔다 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1006.md](references/ref-1006.md) | 참고문헌 ref-1006 등록: 농민 뒤 졸졸 '운반로봇'…무거운 수확물 옮기고 자동 하역 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1007.md](references/ref-1007.md) | 참고문헌 ref-1007 등록: 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1008.md](references/ref-1008.md) | 참고문헌 ref-1008 등록: 한전의 5G 특화망 기반 응용: IoT 예방진단, 로봇기반 순시점검 및 안전관리 |
+| 2026-09-30-02 | 생성 | [docs/references/ref-1009.md](references/ref-1009.md) | 참고문헌 ref-1009 등록: ISO 18497-3:2024 Agricultural machinery and tractors — Safet… |
+| 2026-09-30-02 | 생성 | [docs/glossary/sila-2.md](glossary/sila-2.md) | 용어집 항목 SiLA 2 |
+| 2026-09-30-02 | 생성 | [docs/glossary/brainless-robot.md](glossary/brainless-robot.md) | 용어집 항목 브레인리스 로봇 |
+| 2026-09-30-02 | 생성 | [docs/glossary/self-driving-laboratory.md](glossary/self-driving-laboratory.md) | 용어집 항목 자율 실험실 |
+| 2026-09-30-02 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-30-01 | 갱신 | [docs/categories/site-type-applications/outdoor.md](categories/site-type-applications/outdoor.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건. 2차 수정: 4절 도입 문장을 태그 없는 안내문으로 교체, 5절 세 번째 사례 수행 자원의 '허가' 삭제, 9절 GPS·RTK·PDD 첫 등장 풀어 쓰기 |
 | 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s7.md](topics/2026/2026-09-30-area66-s7.md) | 자동 분리: 66. 실외 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,761자)을 옮겼다. 2차 수정 원칙에 맞춰 표의 GPS 첫 등장을 풀어 썼다 |
 | 2026-09-30-01 | 생성 | [docs/topics/2026/2026-09-30-area66-s6.md](topics/2026/2026-09-30-area66-s6.md) | 자동 분리: 66. 실외 의 "6. 대표 접근법과 기술" 절(1,280자)을 옮겼다. 2차 수정 지시로 위치 추정 소절의 GPS·RTK·UTM 첫 등장을 풀어 썼다 |

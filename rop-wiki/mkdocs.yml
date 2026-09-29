@@ -278,6 +278,13 @@ nav:
   - 주제:
     - topics/index.md
     - '2026':
+      - 67. 기타 현장 — 대표 연구와 자료: topics/2026/2026-09-30-area67-s8.md
+      - 67. 기타 현장 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area67-s7.md
+      - 67. 기타 현장 — 대표 접근법과 기술: topics/2026/2026-09-30-area67-s6.md
+      - 67. 기타 현장 — 핵심 개념과 용어: topics/2026/2026-09-30-area67-s4.md
+      - 67. 기타 현장 — 왜 중요한가: topics/2026/2026-09-30-area67-s3.md
+      - 67. 기타 현장 — 열린 질문: topics/2026/2026-09-30-area67-s11.md
+      - 67. 기타 현장 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area67-s10.md
       - 66. 실외 — 대표 연구와 자료: topics/2026/2026-09-30-area66-s8.md
       - 66. 실외 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area66-s7.md
       - 66. 실외 — 대표 접근법과 기술: topics/2026/2026-09-30-area66-s6.md
@@ -551,6 +558,7 @@ nav:
     - JSON 스키마 (JSON Schema): glossary/json-schema.md
     - LLM 에이전트 (LLM Agent): glossary/llm-agent.md
     - LLM-모듈로 프레임워크 (LLM-Modulo Framework): glossary/llm-modulo-framework.md
+    - SiLA 2 (Standardization in Lab Automation 2 (SiLA 2)): glossary/sila-2.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
@@ -646,6 +654,7 @@ nav:
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 불확실도 정렬 (Uncertainty Alignment): glossary/uncertainty-alignment.md
+    - 브레인리스 로봇 (Brainless Robot): glossary/brainless-robot.md
     - 블록 참조 (Block Reference (INSERT)): glossary/block-reference.md
     - 비용 지도 (Costmap): glossary/costmap.md
     - 비전 언어 행동 모델 (Vision-Language-Action Model (VLA)): glossary/vision-language-action-model.md
@@ -739,6 +748,7 @@ nav:
     - 자산관리셸 (Asset Administration Shell (AAS)): glossary/asset-administration-shell.md
     - 자산관리셸 레지스트리·디스커버리 (AAS Registry / Discovery): glossary/aas-registry-and-discovery.md
     - 자원 제약 프로젝트 스케줄링 문제 (Resource-Constrained Project Scheduling Problem (RCPSP)): glossary/resource-constrained-project-scheduling-problem.md
+    - 자율 실험실 (Self-driving Laboratory (Autonomous Laboratory)): glossary/self-driving-laboratory.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
     - 잠재 실패 (Latent Failure): glossary/latent-failure.md
@@ -912,6 +922,17 @@ nav:
     - ref-098 — Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system: references/ref-098.md
     - ref-099 — A review of design and control of automated guided vehicle systems: references/ref-099.md
     - ref-100 — Survey of research in the design and control of automated guided vehicle systems: references/ref-100.md
+    - ref-1000 — GS건설, 4족보행 로봇 '스팟(SPOT)' 국내 최초 건설현장 도입하기로: references/ref-1000.md
+    - ref-1001 — SiLA Standards: references/ref-1001.md
+    - ref-1002 — 아시아 최대 규모 데이터센터…네이버 '각 세종' 본격 가동: references/ref-1002.md
+    - 'ref-1003 — Game-changer: The rationale behind the investment in Energy Robotics': references/ref-1003.md
+    - ref-1004 — Singapore's National Robotics Programme reveals initiatives to advance robot adoption: references/ref-1004.md
+    - ref-1005 — 스스로 수확하고 운반···'로봇농부' 나왔다: references/ref-1005.md
+    - ref-1006 — 농민 뒤 졸졸 '운반로봇'…무거운 수확물 옮기고 자동 하역: references/ref-1006.md
+    - ref-1007 — 방제·운반·점검 '농업 로봇' 하나로 연결…통합관리기술 가동: references/ref-1007.md
+    - 'ref-1008 — 한전의 5G 특화망 기반 응용: IoT 예방진단, 로봇기반 순시점검 및 안전관리': references/ref-1008.md
+    - ? 'ref-1009 — ISO 18497-3:2024 Agricultural machinery and tractors — Safety of partially automated, semi-autonomous and autonomous machinery — Part 3: Autonomous operating zones'
+      : references/ref-1009.md
     - 'ref-101 — RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README)': references/ref-101.md
     - ref-102 — Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics: references/ref-102.md
     - ref-103 — The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments: references/ref-103.md
@@ -1885,6 +1906,11 @@ nav:
     - ref-993 — With a Little Help of Humans. An Exploratory Study of Delivery Robots Stuck in Snow: references/ref-993.md
     - ? 'ref-994 — ISO/TR 4448-1:2024 Intelligent transport systems — Public-area mobile robots (PMR) — Part 1: Overview of paradigm'
       : references/ref-994.md
+    - 'ref-995 — Equinor''s autonomous robotics: inspection ''dogs'' and record-holding subsea drones': references/ref-995.md
+    - ref-996 — A mobile robotic chemist: references/ref-996.md
+    - ref-997 — 로봇이 로봇들을 움직이는, 네이버 1784: references/ref-997.md
+    - ref-998 — 인천국제공항, 안내 로봇 '에어스타' 본격 운영: references/ref-998.md
+    - ref-999 — 로봇 '스팟' 건설현장 누빈다…현대건설 품질·안전 관리: references/ref-999.md
   - 표준·프레임워크 목록: standards/index.md
   - 열린 질문: open-questions.md
   - 현장 유형 × 대분류 적용 사례 매트릭스: site-matrix.md

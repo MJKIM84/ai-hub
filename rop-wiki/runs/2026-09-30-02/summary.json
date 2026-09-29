@@ -1,0 +1,134 @@
+{
+  "run_id": "2026-09-30-02",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 67,
+    "area_name": "67. 기타 현장",
+    "category": "Q. 현장 유형별 적용"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 15,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3099.5,
+  "first_retries": 0,
+  "second_retries": 2,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 67. 기타 현장 | 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농촌진흥청 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 표준 5건(ISO 18497·SiLA 2·SS 713·TR 130·Open-RMF), 책임 경계, 연결 영역 17개, 열린 질문 5건. 1차 조건부 승인 수정 16건·2차 수정 5건(출처 제목 정정, 창이 공항 서술 완화, 태그 보완, 약어 풀어 쓰기, ref-004 각주는 대조 요청)·2차 재검증 수정 1건(RMF 풀이를 Robotics Middleware Framework 로 정정) 이행 | run 2026-09-30-02",
+  "notes": [
+    "참고문헌 생성: references/ref-995.md",
+    "참고문헌 생성: references/ref-996.md",
+    "참고문헌 생성: references/ref-997.md",
+    "참고문헌 생성: references/ref-998.md",
+    "참고문헌 생성: references/ref-999.md",
+    "참고문헌 생성: references/ref-1000.md",
+    "참고문헌 생성: references/ref-1001.md",
+    "참고문헌 생성: references/ref-1002.md",
+    "참고문헌 생성: references/ref-1003.md",
+    "참고문헌 생성: references/ref-1004.md",
+    "참고문헌 생성: references/ref-1005.md",
+    "참고문헌 생성: references/ref-1006.md",
+    "참고문헌 생성: references/ref-1007.md",
+    "참고문헌 생성: references/ref-1008.md",
+    "참고문헌 생성: references/ref-1009.md",
+    "용어집 생성: glossary/sila-2.md",
+    "용어집 생성: glossary/brainless-robot.md",
+    "용어집 생성: glossary/self-driving-laboratory.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 15,
+    "standards": 4,
+    "open_questions": 5,
+    "flow_cells": 6,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 03:00:15 KST",
+  "usage": {
+    "input_tokens": 124,
+    "cache_creation_input_tokens": 1035808,
+    "cache_read_input_tokens": 8474214,
+    "output_tokens": 287494,
+    "cost_usd": 17.7473,
+    "calls": 11,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 5.7337,
+        "output_tokens": 71980,
+        "cache_read_input_tokens": 6517882,
+        "cache_creation_input_tokens": 177509
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.7116,
+        "output_tokens": 20171,
+        "cache_read_input_tokens": 1093453,
+        "cache_creation_input_tokens": 91671
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 7.0886,
+        "output_tokens": 168590,
+        "cache_read_input_tokens": 215673,
+        "cache_creation_input_tokens": 459211
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 3.165,
+        "output_tokens": 26326,
+        "cache_read_input_tokens": 633826,
+        "cache_creation_input_tokens": 305921
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0389,
+        "output_tokens": 209,
+        "cache_read_input_tokens": 6622,
+        "cache_creation_input_tokens": 1259
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0095,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 6758,
+        "cache_creation_input_tokens": 237
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 13,
+  "cross_checked_findings": 0
+}

@@ -32,7 +32,7 @@ version: 1
 | **64. 상업 시설** | 호텔 객실 배송, 식당 서빙, 매장·쇼핑몰 안내·청소 | 손님이 있는 영업 시간에 호텔·식당·매장의 로봇을 어떻게 운영할 것인가? | [64. 상업 시설](commercial-facilities.md) | published |
 | **65. 가정·공동주택** | 집안일 보조, 공동주택 배송, 사생활 | 가정과 공동주택에서 사생활을 지키며 집안일과 배송을 어떻게 맡길 것인가? | [65. 가정·공동주택](home-and-apartment.md) | published |
 | **66. 실외** | 실외 배송·순찰·캠퍼스, 보도 주행 규정, 날씨 | 보도와 날씨 조건에서 실외 로봇을 어떻게 운영할 것인가? | [66. 실외](outdoor.md) | published |
-| **67. 기타 현장** | 점검·순찰(플랜트·데이터센터·빌딩), 건설, 농업, 공공시설, 오피스, 연구실 | 점검·건설·농업·공공시설 같은 다른 현장은 무엇이 다른가? | [67. 기타 현장](other-sites.md) | seed |
+| **67. 기타 현장** | 점검·순찰(플랜트·데이터센터·빌딩), 건설, 농업, 공공시설, 오피스, 연구실 | 점검·건설·농업·공공시설 같은 다른 현장은 무엇이 다른가? | [67. 기타 현장](other-sites.md) | published |
 
 [분류원문]
 <!-- auto:category-area-table:end -->
@@ -48,7 +48,7 @@ version: 1
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 95건이다(논문 29건 · 기사·보고서 37건 · 업체 발표 9건 · 표준·오픈소스·기관 자료 20건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 110건이다(논문 30건 · 기사·보고서 48건 · 업체 발표 10건 · 표준·오픈소스·기관 자료 22건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -62,7 +62,7 @@ version: 1
 - [ref-971](../../references/ref-971.md) — Li, C., Zhang, R., Wong, J. 외 (arXiv; CoRL 2022 예비판), BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation (발행 2024-03-14)
 - [ref-933](../../references/ref-933.md) — Keshvarparast, A., Battini, D., Battaia, O., & Pirayesh, A. (Journal of Intelligent Manufacturing 35), Collaborative robots in manufacturing and assembly systems: literature review and future research agenda (발행 2023-05-30)
 - [ref-990](../../references/ref-990.md) — Gehrke, S. R., Phair, C. D., Russo, B. J., & Smaglik, E. J. (Transportation Research Interdisciplinary Perspectives 18), Observed sidewalk autonomous delivery robot interactions with pedestrians and bicyclists (발행 2023-03)
-- 그 밖에 19건
+- 그 밖에 20건
 
 **기사·보고서**
 
@@ -71,12 +71,12 @@ version: 1
 - [ref-931](../../references/ref-931.md) — 뉴시스, "로봇 몇 대, 어디로 움직일까"…중소 제조현장에 'AI 공장장' 뜬다 (발행 2026-09-07)
 - [ref-984](../../references/ref-984.md) — 스포츠경향, 뉴빌리티, 덕수궁 순찰부터 도쿄 시내 배달까지 (발행 2026-09-02)
 - [ref-981](../../references/ref-981.md) — DC Velocity, Starship steers its delivery robots off college campuses and toward grocery sector (발행 2026-06-08)
+- [ref-995](../../references/ref-995.md) — Offshore Technology (Eve Thomas), Equinor's autonomous robotics: inspection 'dogs' and record-holding subsea drones (발행 2025-11-21)
 - [ref-969](../../references/ref-969.md) — 바이라인네트워크, '로봇청소기' 다수 제품 보안 취약…대응방안은? (발행 2025-10-31)
 - [ref-973](../../references/ref-973.md) — The Robot Report (Mike Oitzman), NEO humanoid designed for household use, available for preorder (발행 2025-10-30)
+- [ref-1004](../../references/ref-1004.md) — The Robot Report, Singapore's National Robotics Programme reveals initiatives to advance robot adoption (발행 2025-10-29)
 - [ref-970](../../references/ref-970.md) — 매일신문, 사생활 훔치는 로봇청소기…중국산 제품서 `무단 촬영` 가능성 확인 (발행 2025-10-06)
-- [ref-983](../../references/ref-983.md) — 지디넷코리아, 배민, 차세대 배달로봇 ‘딜리’ 8월 투입…운행안전인증 획득 (발행 2025-06-23)
-- [ref-948](../../references/ref-948.md) — 비즈한국, 병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까 (발행 2025-04-10)
-- 그 밖에 27건
+- 그 밖에 38건
 
 **업체 발표**
 
@@ -86,6 +86,7 @@ version: 1
 - [ref-916](../../references/ref-916.md) — Amazon, Amazon launches a new AI foundation model to power its robotic fleet and deploys its 1 millionth robot (발행 2025-07)
 - [ref-930](../../references/ref-930.md) — 현대자동차그룹, ‘혁신의 장場’ HMGICS, 인간 중심 모빌리티 솔루션의 새 시대 열다 (발행 2023-11-21)
 - [ref-920](../../references/ref-920.md) — CJ대한통운, CJ대한통운 안성 MP허브, 국토부 ‘스마트물류센터 1등급’ 인증 (발행 2023-10-26)
+- [ref-1003](../../references/ref-1003.md) — Korial (구 Energy Robotics) — Andre Retterath, Earlybird Venture Capital 기고, Game-changer: The rationale behind the investment in Energy Robotics (발행 2021-01-15)
 - [ref-957](../../references/ref-957.md) — Otis Elevator Company, Elevators and service robots (발행 미확인)
 - [ref-938](../../references/ref-938.md) — Applus+ Laboratories, ISO 3691-4:2023: Compliance Testing for Automated Guided Vehicles (AGVs) (발행 미확인)
 - [ref-926](../../references/ref-926.md) — Siemens, AGV fleet management integration with intralogistics (발행 미확인)
@@ -95,22 +96,22 @@ version: 1
 - [ref-872](../../references/ref-872.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025 (발행 2025-05-01)
 - [ref-994](../../references/ref-994.md) — ISO, ISO/TR 4448-1:2024 Intelligent transport systems — Public-area mobile robots (PMR) — Part 1: Overview of paradigm (발행 2024-08)
 - [ref-959](../../references/ref-959.md) — 한국노동연구원 (박수민 외), 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 (발행 2024)
+- [ref-1009](../../references/ref-1009.md) — ISO, ISO 18497-3:2024 Agricultural machinery and tractors — Safety of partially automated, semi-autonomous and autonomous machinery — Part 3: Autonomous operating zones (발행 2024)
 - [ref-991](../../references/ref-991.md) — 대한민국 정책브리핑 (산업통상자원부·경찰청), ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 (발행 2023-11-16)
 - [ref-977](../../references/ref-977.md) — Connectivity Standards Alliance (CSA), Matter 1.2 Arrives with Nine New Device Types & Improvements Across the Board (발행 2023-10-23)
 - [ref-978](../../references/ref-978.md) — CaseNote (법령 게재; 원 제정 국회·개인정보보호위원회 소관), 개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한) (발행 2023-03-14)
 - [ref-985](../../references/ref-985.md) — 内閣府 (일본 내각부), 令和5年版交通安全白書 トピック 改正道路交通法（令和4年公布）について (발행 2023)
 - [ref-945](../../references/ref-945.md) — 산업통상자원부 국가기술표준원 (KDI 경제정보센터 게재), 국가표준(KS) 제정으로 로봇의 엘리베이터 탑승 돕는다 (발행 2021-11-11)
 - [ref-942](../../references/ref-942.md) — Open Robotics, ROMI-H: Bringing Robot Traffic Control to Healthcare (발행 2021-02-10)
-- [ref-988](../../references/ref-988.md) — Open Navigation (Nav2), Navigating Using GPS Localization — Nav2 documentation (발행 미확인)
-- 그 밖에 10건
+- 그 밖에 12건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-30 · 갱신 · [66. 실외](outdoor.md) — 섹션 3~11 신규 작성(seed → draft): 현장 유형 실외 사례 3건(보도 배송 딜리, 덕수궁 순찰 뉴비, 피츠버그 캠퍼스 배송 Starship)을 여섯 항목으로 정리, 운행안전인증 항목 수 두 기준일 병기, 한국·일본·미국 보도 규정, ISO 4448, 책임 경계, 연결 영역 16개, 열린 질문 5건. 2차 수정: 4절 도입 문장을 태그 없는 안내문으로 교체, 5절 세 번째 사례 수행 자원의 '허가' 삭제, 9절 GPS·RTK·PDD 첫 등장 풀어 쓰기 (실행 2026-09-30-01)
-- 2026-09-30 · 생성 · [66. 실외 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area66-s7.md) — 자동 분리: 66. 실외 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,761자)을 옮겼다. 2차 수정 원칙에 맞춰 표의 GPS 첫 등장을 풀어 썼다 (실행 2026-09-30-01)
-- 2026-09-30 · 생성 · [66. 실외 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area66-s6.md) — 자동 분리: 66. 실외 의 "6. 대표 접근법과 기술" 절(1,280자)을 옮겼다. 2차 수정 지시로 위치 추정 소절의 GPS·RTK·UTM 첫 등장을 풀어 썼다 (실행 2026-09-30-01)
-- 2026-09-30 · 생성 · [66. 실외 — 대표 연구와 자료](../../topics/2026/2026-09-30-area66-s8.md) — 자동 분리: 66. 실외 의 "8. 대표 연구와 자료" 절(1,110자)을 옮겼다 (실행 2026-09-30-01)
-- 2026-09-30 · 생성 · [66. 실외 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area66-s4.md) — 자동 분리: 66. 실외 의 "4. 핵심 개념과 용어" 절(909자)을 옮겼다. 2차 수정 지시로 세 줄 요약·본문 첫 문장을 태그·각주 없는 안내 문장으로 바꿨다 (실행 2026-09-30-01)
+- 2026-09-30 · 갱신 · [67. 기타 현장](other-sites.md) — 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 접근법 6가지, 표준 5건, 책임 경계, 연결 영역 17개, 열린 질문 5건. 2차 수정: 출처 5건 제목 정정, 9절 태그 추가, BIM·라이다·RMF 첫 등장 풀어 쓰기. 2차 재검증 수정: 9절 RMF 풀이를 Robotics Middleware Framework 로 정정 (실행 2026-09-30-02)
+- 2026-09-30 · 생성 · [67. 기타 현장 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area67-s6.md) — 자동 분리: 67. 기타 현장 의 "6. 대표 접근법과 기술" 절(1,209자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) (실행 2026-09-30-02)
+- 2026-09-30 · 생성 · [67. 기타 현장 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area67-s7.md) — 자동 분리: 67. 기타 현장 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,102자)을 옮겼다. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) (실행 2026-09-30-02)
+- 2026-09-30 · 생성 · [67. 기타 현장 — 다른 연구영역과의 연결](../../topics/2026/2026-09-30-area67-s10.md) — 자동 분리: 67. 기타 현장 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,022자)을 옮겼다. 2차 수정: 20. 로봇·제조사 관제 연동 항목의 창이 공항 서술을 기사 수준으로 고치고 출처 제목 정정 (실행 2026-09-30-02)
+- 2026-09-30 · 생성 · [67. 기타 현장 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area67-s4.md) — 자동 분리: 67. 기타 현장 의 "4. 핵심 개념과 용어" 절(903자)을 옮겼다. 2차 수정: ref-1000 제목 정정. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) (실행 2026-09-30-02)
 <!-- auto:category-recent:end -->
