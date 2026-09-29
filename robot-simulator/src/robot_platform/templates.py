@@ -5,6 +5,7 @@ from .domain import Project, Environment, Floor, Element, Size, Pose, FacilitySe
 
 
 TEMPLATES = [
+    {"id":"warehouse-cooperation","name":"물류 시설 · 협업 운반·보행자 교차","group":"복합 시나리오","description":"로봇 5대·이동 보행자 3명 · 상차 → 작업대 인계 → 재상차 → 출고, Spot 병행 순찰 · 완료 또는 360초에 정지"},
     {"id":"multifloor-cargo","name":"다층 물품 업무 · 상차·재인수·최종 인계","group":"복합 시나리오"},
     {"id":"elevator-pedestrian-60s","name":"엘리베이터·보행자 회피 · 60초","group":"기능 시험"},
     {"id":"hotel","name":"호텔","group":"환경 예제"},
@@ -26,6 +27,9 @@ FILE_EXAMPLES = {"elevator-pedestrian-60s", "elevator-patrol", "cooperative-hand
 
 
 def example(template_id="hotel") -> Project:
+    if template_id == 'warehouse-cooperation':
+        from .warehouse_scenario import warehouse_cooperation
+        return warehouse_cooperation()
     if template_id == 'multifloor-cargo':
         from .multifloor_scenario import cargo_scenario
         return cargo_scenario()

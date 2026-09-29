@@ -283,7 +283,7 @@ export interface RobotModel {
 }
 export interface Catalog {
   models: RobotModel[];
-  templates: { id: string; name: string; group?: string }[];
+  templates: { id: string; name: string; group?: string; description?: string }[];
   documentation_models?: { id: string; name: string; status: string }[];
 }
 export interface ChargingEnergyCandidate {
