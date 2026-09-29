@@ -61,3 +61,45 @@
 @media (max-width: 600px) {
   .md-typeset .agent-team { grid-template-columns: 1fr; gap: 1.8rem; }
 }
+
+/* Compact, always-visible role summary on the home page. */
+.md-typeset .agent-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: .8rem 0 1rem;
+}
+.md-typeset .agent-summary,
+.md-typeset .agent-mini {
+  border: 0;
+  box-shadow: none;
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+.md-typeset .agent-mini { min-width: 0; margin: 0; }
+.md-typeset .agent-mini p { margin: .5rem 0 0; }
+.md-typeset .agent-mini p:first-child { margin: 0 0 .55rem; }
+.md-typeset .agent-mini img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: .45rem;
+}
+.md-typeset .agent-mini strong { font-size: .75rem; }
+.md-typeset .agent-mini p:last-child {
+  font-size: .7rem;
+  line-height: 1.65;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.md-typeset .agent-summary + p {
+  padding: .65rem 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: .7rem;
+  line-height: 1.8;
+}
+@media (max-width: 600px) {
+  .md-typeset .agent-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

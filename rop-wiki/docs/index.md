@@ -3,8 +3,8 @@ title: "ROP 연구 위키"
 type: home
 status: published
 created: 2026-09-28
-updated: 2026-09-28
-version: 1
+updated: 2026-09-30
+version: 2
 ---
 
 홈
@@ -12,6 +12,44 @@ version: 1
 # ROP 연구 위키
 
 로봇 오케스트레이션 플랫폼(Robot Orchestration Platform, ROP)을 구현하고 운영하는 데 관여하는 모든 일을 빠짐없이 나열해 17개 대분류·67개 세부 연구영역으로 묶고, 대분류마다 연구 논문·기사·업체 발표를 모아 가는 기술 지형도다. 리서치·내용 검증·스토리텔러 에이전트가 매일 한 영역씩 조사한 내용을 쌓는다.
+
+**이 위키는 이렇게 작성됩니다**
+
+!!! agent-summary ""
+
+    !!! agent-mini ""
+
+        ![리서치 에이전트](assets/agents/researcher.jpg){ width="88" height="88" }
+
+        **리서치 · 조사**
+
+        공식 문서와 논문을 찾아 주장과 출처를 정리합니다.
+
+    !!! agent-mini ""
+
+        ![내용 검증 에이전트](assets/agents/verifier.jpg){ width="88" height="88" }
+
+        **내용 검증 · 확인**
+
+        조사 자료의 근거를 대조하고, 작성된 원고도 다시 확인합니다.
+
+    !!! agent-mini ""
+
+        ![스토리텔러 에이전트](assets/agents/storyteller.jpg){ width="88" height="88" }
+
+        **스토리텔러 · 작성**
+
+        검증한 자료로 설명과 사례를 쓰고 출처를 붙입니다.
+
+    !!! agent-mini ""
+
+        ![퍼블리셔 프로그램](assets/agents/publisher.jpg){ width="88" height="88" }
+
+        **퍼블리셔 · 게시**
+
+        통과한 원고의 형식과 링크를 검사해 게시합니다. AI가 아닌 프로그램입니다.
+
+**조사 → 근거 검증 → 원고 작성 → 원고 재검증 → 게시**
 
 [로봇 시뮬레이터 실행하기 ↗](https://robot-lab-seven.vercel.app/){ .md-button .md-button--primary }
 [체험 내용과 확인 범위](about/simulator.md){ .md-button }
