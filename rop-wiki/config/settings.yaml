@@ -47,7 +47,7 @@ web_tools_required: true                   # 웹 검색·페이지 열람 도구
 # ---------------------------------------------------------------------------------------------
 repo_root: ".."                            # git 저장소 루트. 위키 루트 기준 상대 경로. 위키가 ai-hub 저장소의 하위 폴더 rop-wiki/ 라는 전제 [가정]. git_commit·git_push 는 이 경로에서 실행하고, 위의 repo_path("./rop-wiki")는 그 저장소 루트에서 본 위키 폴더다
 claude_bin: "claude"                       # 헤드리스 실행에 쓰는 Claude Code CLI 실행 파일. PATH 에 있으면 이름만 적는다. agent_runner.py 가 `claude -p` 로 호출한다
-model: "claude-fable-5-1"                  # 에이전트 기본 모델 id. agent_runner.py 가 claude -p --model 로 넘긴다. 비우면 CLI 기본 모델을 쓴다(--model 옵션을 붙이지 않는다). 2026-09-28 부터 Fable 5.1
+model: "claude-opus-5-5"                   # 에이전트 기본 모델 id. agent_runner.py 가 claude -p --model 로 넘긴다. 비우면 CLI 기본 모델을 쓴다(--model 옵션을 붙이지 않는다). 2026-09-28~29 Fable 5.1 → 2026-09-29 사용 한도 도달로 Opus 5.5
 model_by_role: {}                          # 에이전트별 모델 재정의(예: storyteller: "claude-opus-5-5"). 없으면 위 model 을 쓴다
 effort:                                    # 에이전트별 에포트(claude -p --effort, low/medium/high/xhigh/max). 비우면 CLI 기본값. 리서치·검증은 출처 대조가 품질을 좌우해 high, 스토리텔러는 시험 실행(2026-09-29-01)에서 medium 이 2차 검증 재작성을 2회 받아 high 로 올렸다 [가정]
   researcher: high
@@ -57,7 +57,7 @@ max_turns:                                 # 에이전트별 최대 턴 수(clau
   researcher: 60
   verifier: 40
   storyteller: 8
-agent_timeout_sec: 3600                    # 에이전트 1회 호출의 시간 상한(초). Fable 5.1 은 한 턴이 길어 2026-09-28 에 1800 → 3600. 넘으면 강제 종료하고 max_turns 초과와 같이 처리한다(1회 재실행 후 보류) [가정: 위와 같음]
+agent_timeout_sec: 3600                    # 에이전트 1회 호출의 시간 상한(초). Fable 5.1 의 긴 턴에 맞춰 2026-09-28 에 1800 → 3600(Opus 5.5 에서도 유지). 넘으면 강제 종료하고 max_turns 초과와 같이 처리한다(1회 재실행 후 보류) [가정: 위와 같음]
 allowed_tools:                             # 에이전트별 허용 도구(claude -p --allowedTools). 리서치·검증은 WebSearch·WebFetch 만, 스토리텔러는 도구 없이 실행한다(빈 목록). 파일 읽기·쓰기 도구는 어느 에이전트에도 주지 않는다
   researcher: [WebSearch, WebFetch]
   verifier: [WebSearch, WebFetch]
