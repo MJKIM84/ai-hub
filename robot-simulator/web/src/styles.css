@@ -2499,3 +2499,46 @@ input[aria-invalid="true"] {
     min-height: 480px;
   }
 }
+
+/* Full-window fallback also removes off-screen controls from keyboard navigation. */
+body.workspace-fullscreen-active #root { visibility: hidden; }
+body.workspace-fullscreen-active .workspace[data-fullscreen="true"] {
+  visibility: visible;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--color-panel);
+}
+.workspace[data-fullscreen="true"] > .workspace-browser,
+.workspace[data-fullscreen="true"] > .inspector,
+.workspace[data-fullscreen="true"] .workspace-focus,
+.workspace[data-fullscreen="true"] .workspace-properties-toggle,
+.workspace[data-fullscreen="true"] .cargo-progress {
+  display: none;
+}
+.workspace[data-fullscreen="true"] > .viewport-panel {
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.workspace[data-fullscreen="true"] .viewport-panel > .map-view,
+.workspace[data-fullscreen="true"] .viewport-panel > .physics-view {
+  flex: 1 1 0;
+  height: auto;
+  min-height: 0;
+}
+.workspace[data-fullscreen="true"] .viewport-tools { flex-wrap: wrap; }
+.workspace-fullscreen-button[aria-pressed="true"] {
+  color: var(--color-primary, #2455cc);
+  background: var(--color-primary-soft, #e9efff);
+}

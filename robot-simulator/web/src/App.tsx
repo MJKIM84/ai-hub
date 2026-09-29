@@ -55,6 +55,7 @@ import {
 import { PhysicsView, PlanView } from "./WorldView";
 import PlanningWorkbench from "./PlanningWorkbench";
 import FloorplanPanel from "./FloorplanPanel";
+import { WorkspaceFullscreen } from "./WorkspaceFullscreen";
 import HistoryLibrary from "./HistoryLibrary";
 import PedestrianInspector from "./PedestrianInspector";
 import RecordingView from "./RecordingView";
@@ -3897,6 +3898,7 @@ function App() {
             )}
           </div>
           <div className="toolbar">
+            <WorkspaceFullscreen />
             <button
               className="ghost workspace-focus"
               aria-pressed={!browserOpen && !inspectorOpen}
@@ -3930,7 +3932,7 @@ function App() {
               </button>
             </div>
             {!inspectorOpen && (
-              <button className="ghost" onClick={() => setInspectorOpen(true)}>
+              <button className="ghost workspace-properties-toggle" onClick={() => setInspectorOpen(true)}>
                 속성
               </button>
             )}
