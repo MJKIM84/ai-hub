@@ -11,7 +11,8 @@ def test_warehouse_sample_preserves_geometry_and_physical_cargo_dependencies():
     assert sample.policy.pedestrian_avoidance.desired_clearance_m == .5
     tasks = {t.id: t for t in sample.tasks}
     assert tasks["return-delivery"].predecessor_ids == ["delivery", "inbound-clear", "outbound-approach"]
-    assert tasks["inbound-clear"].predecessor_ids == ["delivery"]
+    assert tasks["inbound-depart"].predecessor_ids == ["delivery"]
+    assert tasks["inbound-clear"].predecessor_ids == ["inbound-depart"]
     assert tasks["outbound-approach"].predecessor_ids == ["inbound-clear"]
     assert tasks["delivery"].cooperation.carrier_id != tasks["return-delivery"].cooperation.carrier_id
     assert tasks["return-delivery"].source == tasks["delivery"].destination

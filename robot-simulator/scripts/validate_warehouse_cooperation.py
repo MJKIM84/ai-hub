@@ -33,12 +33,12 @@ def main():
     print(json.dumps(session.metrics(), ensure_ascii=False), flush=True)
     assert session.status == "completed", "Failure details preserved in result"
     rows = {t["id"]: t for t in result["final"]["tasks"]}
-    for before, after in [("delivery", "inbound-clear"), ("inbound-clear", "outbound-approach"),
+    for before, after in [("delivery", "inbound-depart"), ("inbound-depart", "inbound-clear"), ("inbound-clear", "outbound-approach"),
                           ("outbound-approach", "return-delivery")]:
         assert rows[before]["completed_at"] <= rows[after]["started_at"]
     positions = {rid: [next(r for r in frame["robots"] if r["id"] == rid)["pose"]["x"]
                        for frame in trace] for rid in ("cart", "outbound-cart")}
-    assert max(positions["cart"]) < 11, "Inbound carrier entered the outbound-only zone"
+    assert max(positions["cart"]) < 12, "Inbound carrier entered the outbound-only zone"
     assert min(positions["outbound-cart"]) > 8, "Outbound carrier entered the inbound-only zone"
     loaded = [e for e in session.events if e["kind"] == "cooperation_loaded"]
     assert [e["entity_id"] for e in loaded] == ["cart", "outbound-cart"]
@@ -52,6 +52,9 @@ def main():
     assert any(e["details"].get("mode") == "waiting" for e in avoidance)
     assert any(e["details"].get("previous") == "waiting" and
                e["details"].get("mode") == "resuming" for e in avoidance)
+    robot_ids = {r.id for r in project.robots}
+    assert not any(e["kind"] == "collision" and e["details"].get("a") in robot_ids
+                   and e["details"].get("b") in robot_ids for e in session.events), "Robot body contacts preserved in result"
     assert not any(e["kind"] == "collision" and
                    (e["details"].get("a", "").startswith("crossing-") or
                     e["details"].get("b", "").startswith("crossing-"))

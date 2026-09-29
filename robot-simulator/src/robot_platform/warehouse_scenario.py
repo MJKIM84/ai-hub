@@ -18,7 +18,7 @@ def warehouse_cooperation():
     project.environment = warehouse.environment
     project.id = "example-warehouse-cooperation"
     project.name = "물류 시설 · 구역별 AMR 교대"
-    project.revision = 2
+    project.revision = 3
     project.environment.id = "env-warehouse-cooperation"
     project.environment.name = "물류 시설 · 입고·작업대·출고"
     project.robots = cargo.robots
@@ -54,8 +54,11 @@ def warehouse_cooperation():
     project.tasks[1].cooperation.carrier_loading_pose = Pose(x=9.848, y=3, yaw=0)
     project.tasks[1].predecessor_ids = ["delivery", "inbound-clear", "outbound-approach"]
     project.tasks.extend([
-        Task(id="inbound-clear", name="AMR A · 인계 완료 후 입고 구역 복귀",
+        Task(id="inbound-depart", name="AMR A · 팔 작업 반경 밖으로 직선 이탈",
              kind="patrol", preferred_robot="cart", predecessor_ids=["delivery"],
+             destination=Pose(x=11.2, y=3, yaw=0), dwell=1, timeout=120, retries=0),
+        Task(id="inbound-clear", name="AMR A · 인계 완료 후 입고 구역 복귀",
+             kind="patrol", preferred_robot="cart", predecessor_ids=["inbound-depart"],
              destination=Pose(x=7.4, y=6), dwell=1, timeout=120, retries=0),
         Task(id="outbound-approach", name="AMR B · A 복귀 확인 후 공용 작업대 접근",
              kind="patrol", preferred_robot="outbound-cart", predecessor_ids=["inbound-clear"],
@@ -82,10 +85,10 @@ def warehouse_cooperation():
                 pose=Pose(x=4, y=9), size=Size(x=8, y=18, z=.01),
                 allowed_groups=["입고", "인계", "순찰"], pedestrian_access=True),
         Element(id="outbound-zone", name="출고 전용 · AMR B", kind="restricted", floor_id="floor-1",
-                pose=Pose(x=17.5, y=9), size=Size(x=13, y=18, z=.01),
+                pose=Pose(x=18, y=9), size=Size(x=12, y=18, z=.01),
                 allowed_groups=["출고", "인계", "순찰"], pedestrian_access=True),
         Element(id="shared-handoff-zone", name="공용 인계 · A 퇴장 후 B 진입", kind="loading",
-                floor_id="floor-1", pose=Pose(x=9.5, y=3.5), size=Size(x=3, y=5, z=.01)),
+                floor_id="floor-1", pose=Pose(x=10, y=3.5), size=Size(x=4, y=5, z=.01)),
     ])
     # The west fleet must also have a reachable service station inside its own
     # permission boundary. Keep the existing east station and energy checks.
