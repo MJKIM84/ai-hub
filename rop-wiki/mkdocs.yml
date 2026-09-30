@@ -333,6 +333,13 @@ nav:
       - 41. 플랫폼 아키텍처·외부 API — 왜 중요한가: topics/2026/2026-09-30-area41-s3.md
       - 41. 플랫폼 아키텍처·외부 API — 열린 질문: topics/2026/2026-09-30-area41-s11.md
       - 41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결: topics/2026/2026-09-30-area41-s10.md
+      - 33. 시나리오 모델·편집 — 대표 연구와 자료: topics/2026/2026-09-30-area33-s8.md
+      - 33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area33-s7.md
+      - 33. 시나리오 모델·편집 — 대표 접근법과 기술: topics/2026/2026-09-30-area33-s6.md
+      - 33. 시나리오 모델·편집 — 핵심 개념과 용어: topics/2026/2026-09-30-area33-s4.md
+      - 33. 시나리오 모델·편집 — 왜 중요한가: topics/2026/2026-09-30-area33-s3.md
+      - 33. 시나리오 모델·편집 — 열린 질문: topics/2026/2026-09-30-area33-s11.md
+      - 33. 시나리오 모델·편집 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area33-s10.md
       - 16. 장소 의미·지도 관리 — 대표 연구와 자료: topics/2026/2026-09-30-area16-s8.md
       - 16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area16-s7.md
       - 16. 장소 의미·지도 관리 — 대표 접근법과 기술: topics/2026/2026-09-30-area16-s6.md
@@ -712,6 +719,7 @@ nav:
     - 미션 명세 패턴 (Mission Specification Pattern): glossary/mission-specification-pattern.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
     - 반정적 객체 (Semi-static Object): glossary/semi-static-object.md
+    - 반증 기반 시험 (Falsification): glossary/falsification.md
     - 배터리 건강 상태 (State of Health (SOH)): glossary/state-of-health.md
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 백 파일 (Bag File (rosbag2)): glossary/bag-file.md
@@ -764,6 +772,7 @@ nav:
     - 승인 피로 (Approval Fatigue (Consent Fatigue)): glossary/approval-fatigue.md
     - 시간창 (Time Window): glossary/time-window.md
     - 시나리오 재구성 (Scenario Reconstruction): glossary/scenario-reconstruction.md
+    - 시뮬레이션 기술 형식 (Simulation Description Format (SDFormat)): glossary/simulation-description-format.md
     - 시뮬레이션 모델 검증·타당성 확인 (Verification and Validation (V&V) of Simulation Models): glossary/verification-and-validation-of-simulation-models.md
     - 시스템 이론적 프로세스 분석 (System-Theoretic Process Analysis (STPA)): glossary/stpa.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
@@ -787,6 +796,7 @@ nav:
     - 예지 정비 (Predictive Maintenance): glossary/predictive-maintenance.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
+    - 오픈시나리오 (ASAM OpenSCENARIO): glossary/asam-openscenario.md
     - 오픈텔레메트리 (OpenTelemetry (OTel)): glossary/opentelemetry.md
     - 온톨로지 진화 (Ontology Evolution): glossary/ontology-evolution.md
     - 온톨로지 채우기 (Ontology Population): glossary/ontology-population.md
@@ -883,6 +893,7 @@ nav:
     - 해제 구역 (Release Zone): glossary/release-zone.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
     - 핵심 제조 시뮬레이션 데이터 (Core Manufacturing Simulation Data (CMSD)): glossary/core-manufacturing-simulation-data.md
+    - 행동 영역 정의 언어 (Behavior Domain Definition Language (BDDL)): glossary/behavior-domain-definition-language.md
     - 행동 의존 그래프 (Action Dependency Graph (ADG)): glossary/action-dependency-graph.md
     - 행동 트리 (Behavior Tree): glossary/behavior-tree.md
     - 헝가리안 방법 (Hungarian Method): glossary/hungarian-method.md
@@ -1107,7 +1118,15 @@ nav:
     - ref-1083 — Efficient Human-Aware Task Allocation for Multi-Robot Systems in Shared Environments: references/ref-1083.md
     - ref-1084 — New AMR safety standard available with release of ANSI/A3 R15.08-2: references/ref-1084.md
     - ref-1085 — Empirical Prediction of Pedestrian Comfort in Mobile Robot Pedestrian Encounters: references/ref-1085.md
+    - ref-1086 — 3D Environment Modeling for Falsification and Beyond with Scenic 3.0: references/ref-1086.md
+    - ref-1087 — ARIAC Documentation — Scenario: references/ref-1087.md
+    - ref-1088 — ASAM OpenSCENARIO® XML: references/ref-1088.md
+    - ? 'ref-1089 — Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation'
+      : references/ref-1089.md
     - ref-109 — A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse: references/ref-109.md
+    - ref-1090 — Groot2: references/ref-1090.md
+    - ref-1091 — MAPF Benchmarks: references/ref-1091.md
+    - ref-1092 — SDFormat (Simulation Description Format): references/ref-1092.md
     - ref-110 — Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2: references/ref-110.md
     - ref-111 — rmf_api_msgs — rmf_api_msgs/schemas/task_state.json: references/ref-111.md
     - ref-112 — About the Business Process Model And Notation Specification Version 2.0: references/ref-112.md

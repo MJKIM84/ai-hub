@@ -30,7 +30,7 @@ version: 1
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
-| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
+| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 1 | 0 | 0 | 19 | 0 | 0 | 20 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
@@ -118,7 +118,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | seed | — | 2026-09-28 | 1 |
+| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | published | low | 2026-09-30 | 2 |
 | [34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | published | medium | 2026-09-25 | 2 |
 | [35. 처리능력·규모·배치 설계](categories/design-and-simulation/capacity-sizing-and-layout-design.md) | published | medium | 2026-09-25 | 2 |
 | [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | seed | — | 2026-09-28 | 1 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 115회 중 최종 통과 113회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 113, None 2
-- 2차 검증 판정: 통과 113, None 2
+- 실행 116회 중 최종 통과 114회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 114, None 2
+- 2차 검증 판정: 통과 114, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 482 |
-| 오픈소스 문서 | 202 |
-| 표준 | 166 |
+| 논문 | 484 |
+| 오픈소스 문서 | 204 |
+| 표준 | 167 |
 | 기사 | 81 |
-| 정부·연구기관 | 76 |
-| 벤더 문서 | 62 |
+| 정부·연구기관 | 77 |
+| 벤더 문서 | 63 |
 | 업계 보고서 | 16 |
 
-신뢰도: medium 811건, high 192건, low 82건
+신뢰도: medium 815건, high 195건, low 82건
 
 ### 현장 유형 매트릭스 채움률
 
-- 45/119 칸 (38%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 50/119 칸 (42%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

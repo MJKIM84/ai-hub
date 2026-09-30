@@ -252,8 +252,12 @@ version: 1
 | oq-230 | 출처 충돌: 실외이동로봇 운행안전인증의 심사 항목 수를 인증기관 페이지는 8개 항목으로, 기사는 16가지로 전하는데 어느 쪽이 항목 단위이며 세부 항목 목록은 무엇인가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
 | oq-231 | 국내 병원·상업 시설·공동주택 실내에서 운행하는 서비스 로봇의 사람 근접 속도·거리 기준을 정한 법령·표준·인증이 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
 | oq-232 | 착용형 장치나 출입 통제 신호로 얻은 사람 위치를 제조사가 다른 여러 로봇 플릿에 동시에 전달해 감속·정지시키는 표준 인터페이스나 사례가 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
+| oq-233 | 환경·로봇·사람·물품·작업·정책·물리·장애를 담는 ROP 시나리오 형식을 SDFormat·Open-RMF 건물 파일·OpenSCENARIO 같은 기존 형식을 조합해 만들 것인가, 새로 정의하고 각 형식으로 내보낼 것인가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
+| oq-234 | 형식 판이 바뀔 때 개별 시나리오 인스턴스를 옮기고 호환성을 검사하는 버전 관리 규칙을 공개한 로봇 시뮬레이션 도구나 표준이 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
+| oq-235 | ARIAC 처럼 장애·긴급 요청을 시각·발생 횟수 조건으로 선언하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애까지 일반화한 시나리오 형식이 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
+| oq-236 | 국내 아파트·병원·물류센터·호텔을 본뜬 다중 로봇 시나리오 예제 라이브러리를 공개한 기관이나 프로젝트가 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
 
-상태별 건수: 열림 231건, 조사 중 1건
+상태별 건수: 열림 235건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

@@ -20,6 +20,27 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-12 | 갱신 | [docs/categories/design-and-simulation/scenario-model-and-editing.md](categories/design-and-simulation/scenario-model-and-editing.md) | 영역 심화: 3~11절 신규 작성(현장 유형 사례 5건: 상업 시설·병원·실외·가정·제조 공장), 1차 조건부 승인 수정 13건 반영, 13절 각주 15건. 2차 수정: 4절 요약 태그 [추정]으로 정정, 5절 병원·제조 공장 사례 서술의 사실·추정 분리 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s7.md](topics/2026/2026-09-30-area33-s7.md) | 자동 분리: 33. 시나리오 모델·편집 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,795자)을 옮겼다 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s10.md](topics/2026/2026-09-30-area33-s10.md) | 자동 분리: 33. 시나리오 모델·편집 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,571자)을 옮겼다 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s6.md](topics/2026/2026-09-30-area33-s6.md) | 자동 분리: 33. 시나리오 모델·편집 의 "6. 대표 접근법과 기술" 절(1,360자)을 옮겼다 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s4.md](topics/2026/2026-09-30-area33-s4.md) | 자동 분리: 33. 시나리오 모델·편집 의 "4. 핵심 개념과 용어" 절(1,249자)을 옮겼다. 2차 수정: 세 줄 요약·본문 첫 문장 태그를 [사실]에서 [추정]으로 정정 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s8.md](topics/2026/2026-09-30-area33-s8.md) | 자동 분리: 33. 시나리오 모델·편집 의 "8. 대표 연구와 자료" 절(951자)을 옮겼다 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s11.md](topics/2026/2026-09-30-area33-s11.md) | 자동 분리: 33. 시나리오 모델·편집 의 "11. 열린 질문" 절(919자)을 옮겼다 |
+| 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s3.md](topics/2026/2026-09-30-area33-s3.md) | 자동 분리: 33. 시나리오 모델·편집 의 "3. 왜 중요한가" 절(886자)을 옮겼다 |
+| 2026-09-30-12 | 요약 | [docs/categories/design-and-simulation/scenario-model-and-editing.md](categories/design-and-simulation/scenario-model-and-editing.md) | 33. 시나리오 모델·편집: 영역 심화: 3~11절 신규 작성(현장 유형 사례 5건), 1차 조건부 승인 수정 13건 반영(MAPF 벤치마크 수치 주장 강등 등), 2차 수정 3건 반영(4절 요약·5절 해석 문장 태그를 추정으로 정정) |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1086.md](references/ref-1086.md) | 참고문헌 ref-1086 등록: 3D Environment Modeling for Falsification and Beyond with Sc… |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1087.md](references/ref-1087.md) | 참고문헌 ref-1087 등록: ARIAC Documentation — Scenario |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1088.md](references/ref-1088.md) | 참고문헌 ref-1088 등록: ASAM OpenSCENARIO® XML |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1089.md](references/ref-1089.md) | 참고문헌 ref-1089 등록: Arena 4.0: A Comprehensive ROS2 Development and Benchmarking… |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1090.md](references/ref-1090.md) | 참고문헌 ref-1090 등록: Groot2 |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1091.md](references/ref-1091.md) | 참고문헌 ref-1091 등록: MAPF Benchmarks |
+| 2026-09-30-12 | 생성 | [docs/references/ref-1092.md](references/ref-1092.md) | 참고문헌 ref-1092 등록: SDFormat (Simulation Description Format) |
+| 2026-09-30-12 | 생성 | [docs/glossary/asam-openscenario.md](glossary/asam-openscenario.md) | 용어집 항목 오픈시나리오 |
+| 2026-09-30-12 | 생성 | [docs/glossary/behavior-domain-definition-language.md](glossary/behavior-domain-definition-language.md) | 용어집 항목 행동 영역 정의 언어 |
+| 2026-09-30-12 | 생성 | [docs/glossary/simulation-description-format.md](glossary/simulation-description-format.md) | 용어집 항목 시뮬레이션 기술 형식 |
+| 2026-09-30-12 | 생성 | [docs/glossary/falsification.md](glossary/falsification.md) | 용어집 항목 반증 기반 시험 |
+| 2026-09-30-12 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
 | 2026-09-30-10 | 갱신 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | seed → draft: 3~11절 첫 작성(보호 분리 거리 계산, 로봇 측·플릿 수준 감속·정지, 적용 유형별 표준·인증, 물류창고·병원·실외 사례, 책임 경계, 연결 16건, 열린 질문 4건), 각주 15건 |
 | 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s6.md](topics/2026/2026-09-30-area49-s6.md) | 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(1,762자)을 옮겼다 |
 | 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s7.md](topics/2026/2026-09-30-area49-s7.md) | 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,599자)을 옮겼다 |

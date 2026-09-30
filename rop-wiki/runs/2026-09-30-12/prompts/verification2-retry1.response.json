@@ -1,0 +1,151 @@
+{
+  "duration_api_ms": 45542,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.9424011999999999,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 102475,
+    "cache_read_input_tokens": 88466,
+    "output_tokens": 5245,
+    "output_tokens_details": {
+      "thinking_tokens": 3640
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 102475,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 5245,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 102475,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 102475
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 5245,
+      "cacheReadInputTokens": 88466,
+      "cacheCreationInputTokens": 102475,
+      "webSearchRequests": 0,
+      "costUSD": 0.9424011999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3640,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-12\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"low\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과(재검증 1회). 확인 25건, 미확인 1건, 교차 확인 0건. 강등: f18 사실 → 추정(MAPF 벤치마크의 지도 수·총 시나리오 수가 출처 페이지에 없고, 검증자가 연 목록(지도 33개)과도 맞지 않는다). 원문 미열람 출처: 없음(15건 모두 검증자가 다시 열어 확인했다. 논문 6건은 초록 페이지 기준이고, Holodeck 은 HTML 본문도 확인했다). 주의: 적용 사례(상업 시설·병원·실외·가정·제조 공장)는 모두 시뮬레이션 예제 월드·벤치마크·경진대회 시나리오이며 실제 현장 배치 사례가 아니다. 물류창고 현장 사례와 국내 자료는 찾지 못했다. 3절(왜 중요한가)과 9절(책임 경계)은 종합 추정(f23·f24·f25)이고, 사실 주장은 모두 단일 출처여서 신뢰도는 low 다. Groot2 기능(f16)은 벤더 주장이다. oq-131·oq-135 는 해결되지 않았다. / 2차 통과. 드리프트 3건 처리: 직전 2차 지시 3건이 모두 이행됐다. 4절 요약 문장은 원 페이지·주제 페이지 2026-09-30-area33-s4(세 줄 요약·본문 첫 문장)·outline 에서 [추정]으로 고쳐졌다. 5절 병원 사례는 사실(f6 시설 구성)과 해석([추정])으로 나뉘었다. 5절 제조 공장 사례는 f12 표현대로 고친 [사실] 문장과 평가([추정])로 나뉘었다. 새 드리프트는 없다. 1차 수정 지시 13건의 이행도 유지된다. [분류원문] 보존, 섹션 순서 준수, 링크 유효. site_matrix_updates 17칸은 5절 표에서 채운 칸과 일치한다. 참고(수정 지시 대상 아님): (1) 자동 분리 뒤 원 페이지 13절에 ref-815(Holodeck) 각주 정의가 남아 있다. 그러나 원 페이지 본문은 이를 참조하지 않는다(분리된 3·6·8·10절 주제 페이지에서만 참조). 형식 검증은 통과했으므로 pipeline 담당에게 분리 시 각주 정리 규칙의 확인을 요청한다. (2) 자동 분리 주제 페이지의 9. 검증 노트가 '1차·2차 검증을 거쳤다'로 고정돼 있어 1차 판정·건수 형식과 다르다. 또 본문의 '2절 원문 주석'·'(5절)' 표기가 원 페이지 절을 가리킨다는 점이 드러나지 않는다. 이 두 가지도 pipeline 담당의 확인이 필요하다. (3) 6·8절의 [의견] 문장은 스토리텔러의 분류 서술이다. 구축자 의견임을 밝히면 더 좋다. 2차 검증 검색 0회.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-12",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "low",
+    "verification_note": "판정: 조건부 승인 / 2차 통과(재검증 1회). 확인 25건, 미확인 1건, 교차 확인 0건. 강등: f18 사실 → 추정(MAPF 벤치마크의 지도 수·총 시나리오 수가 출처 페이지에 없고, 검증자가 연 목록(지도 33개)과도 맞지 않는다). 원문 미열람 출처: 없음(15건 모두 검증자가 다시 열어 확인했다. 논문 6건은 초록 페이지 기준이고, Holodeck 은 HTML 본문도 확인했다). 주의: 적용 사례(상업 시설·병원·실외·가정·제조 공장)는 모두 시뮬레이션 예제 월드·벤치마크·경진대회 시나리오이며 실제 현장 배치 사례가 아니다. 물류창고 현장 사례와 국내 자료는 찾지 못했다. 3절(왜 중요한가)과 9절(책임 경계)은 종합 추정(f23·f24·f25)이고, 사실 주장은 모두 단일 출처여서 신뢰도는 low 다. Groot2 기능(f16)은 벤더 주장이다. oq-131·oq-135 는 해결되지 않았다. / 2차 통과. 드리프트 3건 처리: 직전 2차 지시 3건이 모두 이행됐다. 4절 요약 문장은 원 페이지·주제 페이지 2026-09-30-area33-s4(세 줄 요약·본문 첫 문장)·outline 에서 [추정]으로 고쳐졌다. 5절 병원 사례는 사실(f6 시설 구성)과 해석([추정])으로 나뉘었다. 5절 제조 공장 사례는 f12 표현대로 고친 [사실] 문장과 평가([추정])로 나뉘었다. 새 드리프트는 없다. 1차 수정 지시 13건의 이행도 유지된다. [분류원문] 보존, 섹션 순서 준수, 링크 유효. site_matrix_updates 17칸은 5절 표에서 채운 칸과 일치한다. 참고(수정 지시 대상 아님): (1) 자동 분리 뒤 원 페이지 13절에 ref-815(Holodeck) 각주 정의가 남아 있다. 그러나 원 페이지 본문은 이를 참조하지 않는다(분리된 3·6·8·10절 주제 페이지에서만 참조). 형식 검증은 통과했으므로 pipeline 담당에게 분리 시 각주 정리 규칙의 확인을 요청한다. (2) 자동 분리 주제 페이지의 9. 검증 노트가 '1차·2차 검증을 거쳤다'로 고정돼 있어 1차 판정·건수 형식과 다르다. 또 본문의 '2절 원문 주석'·'(5절)' 표기가 원 페이지 절을 가리킨다는 점이 드러나지 않는다. 이 두 가지도 pipeline 담당의 확인이 필요하다. (3) 6·8절의 [의견] 문장은 스토리텔러의 분류 서술이다. 구축자 의견임을 밝히면 더 좋다. 2차 검증 검색 0회.",
+    "retry_reason": null
+  },
+  "ttft_ms": 34215,
+  "type": "result",
+  "duration_ms": 45657,
+  "uuid": "1a310c99-797f-43d3-9935-8975d9289834",
+  "ttft_stream_ms": 1540,
+  "time_to_request_ms": 95,
+  "time_to_request_phases_ms": {
+    "other": 50,
+    "system_prompt": 10,
+    "turn_start_resume": 0,
+    "process_user_input": 14,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 7
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 45,
+  "time_to_request_cpu_ms": 128,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1541,
+  "time_to_request_from_spawn_ms": 2621278,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790743921328.0752,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 47.9
+}
