@@ -153,6 +153,13 @@ version: 1
 | 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](2026/2026-09-30-area58-s4.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](2026/2026-09-30-area58-s6.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area58-s7.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 다른 연구영역과의 연결](2026/2026-09-30-area60-s10.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 열린 질문](2026/2026-09-30-area60-s11.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 왜 중요한가](2026/2026-09-30-area60-s3.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 핵심 개념과 용어](2026/2026-09-30-area60-s4.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 대표 접근법과 기술](2026/2026-09-30-area60-s6.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area60-s7.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 대표 연구와 자료](2026/2026-09-30-area60-s8.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

@@ -20,15 +20,15 @@ version: 1
 <!-- auto:site-matrix:start -->
 | 현장 유형 / 대분류 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **물류창고** | 3 | 9 | 12 | 1 | 5 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 3 | 1 | 4 | 비어 있음 | 1 |
+| **물류창고** | 3 | 9 | 12 | 1 | 5 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 3 | 1 | 4 | 1 | 1 |
 | **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 1 | 3 | 1 | 1 | 1 | 비어 있음 | 1 |
-| **병원** | 2 | 3 | 5 | 2 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 1 | 1 | 1 |
+| **병원** | 2 | 3 | 5 | 2 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 1 | 2 | 1 |
 | **상업 시설** | 2 | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 |
 | **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 1 | 2 | 비어 있음 | 1 | 1 |
-| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 비어 있음 | 1 |
+| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 1 | 1 |
 | **기타** | 1 | 2 | 비어 있음 | 2 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 1 |
 
-열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 72/119 칸.
+열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 74/119 칸.
 
 ### 물류창고
 
@@ -47,6 +47,7 @@ version: 1
 - **M. 안전**: [25. 안전·위험 관리](categories/safety/safety-and-risk-management.md#5-적용-사례-현장-유형-명시), [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
 - **N. 보안·개인정보**: [26. 사이버보안·접근권한·개인정보](categories/security-and-privacy/authentication-authorization-and-isolation.md#5-적용-사례-현장-유형-명시)
 - **O. 검증·도입·수명주기**: [24. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md), [23. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md), [21. 온보딩·설정·현장 시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md#5-적용-사례-현장-유형-명시), [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
+- **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [61. 물류창고](categories/site-type-applications/warehouse.md#5-적용-사례-현장-유형-명시)
 
 ### 제조 공장
@@ -75,7 +76,7 @@ version: 1
 - **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시)
 - **N. 보안·개인정보**: [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시), [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
 - **O. 검증·도입·수명주기**: [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시)
-- **P. 거버넌스·법규·사회**: [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md#5-적용-사례-현장-유형-명시)
+- **P. 거버넌스·법규·사회**: [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md#5-적용-사례-현장-유형-명시), [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md#5-적용-사례-현장-유형-명시)
 
 ### 상업 시설
@@ -108,6 +109,7 @@ version: 1
 - **L. AI·학습 기술**: [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
 - **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
 - **N. 보안·개인정보**: [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
+- **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [66. 실외](categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시)
 
 ### 기타

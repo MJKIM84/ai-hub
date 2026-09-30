@@ -20,6 +20,34 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-24 | 갱신 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 영역 심화: 3~11절 첫 작성(물류창고·병원·실외 적용 사례 4건, 수용성 모델·노동자 참여 절차·접근성 의무, 책임 경계, 연결 15개 영역, 열린 질문 8건), 각주 15건. 2차 수정: 6절 의견 주체 명시, 5절 물류창고 수행 자원 칸 드리프트 제거, 7절 도입 문장, 10절 요약 첫 문장 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s8.md](topics/2026/2026-09-30-area60-s8.md) | 자동 분리: 60. 노동·수용성·접근성 의 "8. 대표 연구와 자료" 절(1,290자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s7.md](topics/2026/2026-09-30-area60-s7.md) | 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,060자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s11.md](topics/2026/2026-09-30-area60-s11.md) | 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(1,002자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s4.md](topics/2026/2026-09-30-area60-s4.md) | 자동 분리: 60. 노동·수용성·접근성 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s10.md](topics/2026/2026-09-30-area60-s10.md) | 자동 분리: 60. 노동·수용성·접근성 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(980자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s6.md](topics/2026/2026-09-30-area60-s6.md) | 자동 분리: 60. 노동·수용성·접근성 의 "6. 대표 접근법과 기술" 절(778자)을 옮겼다 |
+| 2026-09-30-24 | 생성 | [docs/topics/2026/2026-09-30-area60-s3.md](topics/2026/2026-09-30-area60-s3.md) | 자동 분리: 60. 노동·수용성·접근성 의 "3. 왜 중요한가" 절(762자)을 옮겼다 |
+| 2026-09-30-24 | 요약 | [docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | 60. 노동·수용성·접근성: 영역 심화: 3~11절 첫 작성(물류창고·병원·실외 적용 사례, 수용성 모델·노동자 참여 절차·접근성 의무, 책임 경계), 출처 15건, 강등 2건·삭제 1건 반영, 2차 수정 4건 반영 |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1213.md](references/ref-1213.md) | 참고문헌 ref-1213 등록: Warehouse automation hasn't made workers safer — it's just r… |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1214.md](references/ref-1214.md) | 참고문헌 ref-1214 등록: Co-design Accessible Public Robots: Insights from People wit… |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1215.md](references/ref-1215.md) | 참고문헌 ref-1215 등록: 로봇이 제조업 일자리 뺏는다? 청년·고숙련 … (제목 일부만 확인) |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1216.md](references/ref-1216.md) | 참고문헌 ref-1216 등록: 기술 혁신과 노동시장 변화 |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1217.md](references/ref-1217.md) | 참고문헌 ref-1217 등록: 장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행 |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1218.md](references/ref-1218.md) | 참고문헌 ref-1218 등록: Assessing acceptance of assistive social agent technology by… |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1219.md](references/ref-1219.md) | 참고문헌 ref-1219 등록: Betriebsverfassungsgesetz § 87 Mitbestimmungsrechte |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1220.md](references/ref-1220.md) | 참고문헌 ref-1220 등록: 근로자참여 및 협력증진에 관한 법률 제20조(협의 사항) |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1221.md](references/ref-1221.md) | 참고문헌 ref-1221 등록: 돌봄로봇에 대한 돌봄서비스 종사자와 사용자의 인식 유형 연구 |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1222.md](references/ref-1222.md) | 참고문헌 ref-1222 등록: "로봇이 병원을 돌아다닌다"…의료서비스로봇 5만건 돌파 |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1223.md](references/ref-1223.md) | 참고문헌 ref-1223 등록: Robots and Jobs: Evidence from US Labor Markets |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1224.md](references/ref-1224.md) | 참고문헌 ref-1224 등록: ISO/IEC Guide 71:2014 Guide for addressing accessibility in… |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1225.md](references/ref-1225.md) | 참고문헌 ref-1225 등록: Advanced robotics and automation: implications for occupatio… |
+| 2026-09-30-24 | 생성 | [docs/references/ref-1226.md](references/ref-1226.md) | 참고문헌 ref-1226 등록: Towards Worker-Centered Warehouse Robots: A User Study on Pr… |
+| 2026-09-30-24 | 생성 | [docs/glossary/utaut.md](glossary/utaut.md) | 용어집 항목 통합 기술 수용 이론 |
+| 2026-09-30-24 | 생성 | [docs/glossary/almere-model.md](glossary/almere-model.md) | 용어집 항목 알메러 모델 |
+| 2026-09-30-24 | 생성 | [docs/glossary/kiosk-accessibility.md](glossary/kiosk-accessibility.md) | 용어집 항목 무인정보단말기 접근성 |
+| 2026-09-30-24 | 생성 | [docs/glossary/curb-cut.md](glossary/curb-cut.md) | 용어집 항목 연석 경사로 |
+| 2026-09-30-24 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-30-22 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 계약·버전·폐기 규칙·SLA·감사 이력, 책임 경계, 연결 14건, 열린 질문 8건+새 질문 5건), 13절 각주, 1차 조건부 승인 수정 17건 반영, 2차 수정: 9절 표 셋째 행 경계 칸을 '원문 19장 다섯 경계 밖'으로 고침 |
 | 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s6.md](topics/2026/2026-09-30-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(2,613자)을 옮겼다 |
 | 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s11.md](topics/2026/2026-09-30-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,824자)을 옮겼다 |

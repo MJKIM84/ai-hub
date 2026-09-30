@@ -1,0 +1,153 @@
+{
+  "duration_api_ms": 48859,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.9096451999999999,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 97608,
+    "cache_read_input_tokens": 88466,
+    "output_tokens": 5554,
+    "output_tokens_details": {
+      "thinking_tokens": 3798
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 97608,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 5554,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 97608,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 97608
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 5554,
+      "cacheReadInputTokens": 88466,
+      "cacheCreationInputTokens": 97608,
+      "webSearchRequests": 0,
+      "costUSD": 0.9096451999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3798,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-24\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"1차에서 지적한 59. 법·규제·보험·라이선스와 겹치는 주제(노사협의·공동결정 조문, 무인정보단말기 접근성 의무)는 7절(분리 페이지 2026-09-30-area60-s7.md)과 10절에서 법 적용 판단을 59. 법·규제·보험·라이선스로 넘기는 연결로 처리됐다. 재검증에서도 새 충돌은 없다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 21건, 미확인 1건, 교차 확인 0건. 강등: f7 사실 → 추정(보고서 수치가 기사 한 곳 기준), f9 사실 → 추정(병원 자체 조사를 전한 단일 기사). 삭제: f2(EU-OSHA 게시 페이지가 위험 목록·참여 권고를 뒷받침하지 않음). 원문 미열람 출처: ref-1276(ISO/IEC Guide 71, 검색 결과로만 확인). 주의: 물류창고 부상 수치(f3)는 논문 원문이 아니라 저자 소속 대학 발표 기준이다. 병원 만족도(f9)는 기관 자체 설문이다. 노사협의·공동결정 조문이 로봇 오케스트레이션의 작업자 데이터 기록에 적용되는지(f18), 화면 접근성 의무가 로봇 화면에 적용되는지는 법적으로 판단되지 않았다. 제조 공장·상업 시설·가정 사례는 확인하지 못했다. ref-1264는 이번 검증에서 직접 열리지 않아(307) 같은 보도문의 재게재와 검색 결과로 확인했다. 같은 대학의 후속 보도(2026-08, 로봇 창고 표지판·부상 관련)가 검색되었으나 열지 못해 반영하지 않았으며, 다음 갱신 실행의 확인 대상이다. 기존 열린 질문 oq-146·oq-188·oq-266은 해결로 인정하지 않는다(해결 제안 없음). 정정 요청 없음. 검증 검색 3회(리서치 20회와 합쳐 23/30). / 2차 통과(재검증 1회). 직전 2차 수정 지시 4건이 모두 반영됐다. 6절에서는 돌봄 연구가 수행된 맥락만 [사실]로 각주를 달고, 전용 가능성 판단은 '이 위키 구축자의 의견'으로 주체를 밝혀 각주 없이 [의견]으로 두었다. 5절 물류창고 수행 자원 칸의 작업 분담 드리프트를 지우고 f5 문장만 남겼다. 7절에는 규정 네 가지를 밝히는 도입 문장을 넣었다. 10절 첫 문장에는 15개 세부영역을 번호와 이름으로 적고 [추정]과 각주를 달았다. 드리프트 1건 처리, 새 드리프트 없음. 1차 수정 지시 11건의 반영도 유지됐다. [분류원문] 보존(소속 대분류 블록, 1·2절, 9절의 원문 19장 문장), 섹션 순서 준수, 링크 유효(형식 검증 통과), auto 마커 내용 유지. 적용 사례 표와 site_matrix_updates(물류창고·병원·실외 × 작업 대상·수행 자원·제약·예외·성과), 열린 질문 갱신 4건, 참고문헌·용어집·표준 갱신이 서로 맞는다. 자동 분리된 주제 페이지 7건은 원래 절 내용을 그대로 옮겼다. 2차 검색 0회.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-24",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "1차에서 지적한 59. 법·규제·보험·라이선스와 겹치는 주제(노사협의·공동결정 조문, 무인정보단말기 접근성 의무)는 7절(분리 페이지 2026-09-30-area60-s7.md)과 10절에서 법 적용 판단을 59. 법·규제·보험·라이선스로 넘기는 연결로 처리됐다. 재검증에서도 새 충돌은 없다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 21건, 미확인 1건, 교차 확인 0건. 강등: f7 사실 → 추정(보고서 수치가 기사 한 곳 기준), f9 사실 → 추정(병원 자체 조사를 전한 단일 기사). 삭제: f2(EU-OSHA 게시 페이지가 위험 목록·참여 권고를 뒷받침하지 않음). 원문 미열람 출처: ref-1276(ISO/IEC Guide 71, 검색 결과로만 확인). 주의: 물류창고 부상 수치(f3)는 논문 원문이 아니라 저자 소속 대학 발표 기준이다. 병원 만족도(f9)는 기관 자체 설문이다. 노사협의·공동결정 조문이 로봇 오케스트레이션의 작업자 데이터 기록에 적용되는지(f18), 화면 접근성 의무가 로봇 화면에 적용되는지는 법적으로 판단되지 않았다. 제조 공장·상업 시설·가정 사례는 확인하지 못했다. ref-1264는 이번 검증에서 직접 열리지 않아(307) 같은 보도문의 재게재와 검색 결과로 확인했다. 같은 대학의 후속 보도(2026-08, 로봇 창고 표지판·부상 관련)가 검색되었으나 열지 못해 반영하지 않았으며, 다음 갱신 실행의 확인 대상이다. 기존 열린 질문 oq-146·oq-188·oq-266은 해결로 인정하지 않는다(해결 제안 없음). 정정 요청 없음. 검증 검색 3회(리서치 20회와 합쳐 23/30). / 2차 통과(재검증 1회). 직전 2차 수정 지시 4건이 모두 반영됐다. 6절에서는 돌봄 연구가 수행된 맥락만 [사실]로 각주를 달고, 전용 가능성 판단은 '이 위키 구축자의 의견'으로 주체를 밝혀 각주 없이 [의견]으로 두었다. 5절 물류창고 수행 자원 칸의 작업 분담 드리프트를 지우고 f5 문장만 남겼다. 7절에는 규정 네 가지를 밝히는 도입 문장을 넣었다. 10절 첫 문장에는 15개 세부영역을 번호와 이름으로 적고 [추정]과 각주를 달았다. 드리프트 1건 처리, 새 드리프트 없음. 1차 수정 지시 11건의 반영도 유지됐다. [분류원문] 보존(소속 대분류 블록, 1·2절, 9절의 원문 19장 문장), 섹션 순서 준수, 링크 유효(형식 검증 통과), auto 마커 내용 유지. 적용 사례 표와 site_matrix_updates(물류창고·병원·실외 × 작업 대상·수행 자원·제약·예외·성과), 열린 질문 갱신 4건, 참고문헌·용어집·표준 갱신이 서로 맞는다. 자동 분리된 주제 페이지 7건은 원래 절 내용을 그대로 옮겼다. 2차 검색 0회.",
+    "retry_reason": null
+  },
+  "ttft_ms": 36622,
+  "type": "result",
+  "duration_ms": 48954,
+  "uuid": "e9bd122a-7549-4837-91f1-f33868c45d7f",
+  "ttft_stream_ms": 1623,
+  "time_to_request_ms": 84,
+  "time_to_request_phases_ms": {
+    "other": 31,
+    "system_prompt": 19,
+    "turn_start_resume": 0,
+    "process_user_input": 13,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "tool_schema_build": 4,
+    "message_normalization": 2,
+    "client_creation": 8
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 34,
+  "time_to_request_cpu_ms": 125,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1624,
+  "time_to_request_from_spawn_ms": 17309836,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790758610817.385,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 50.3
+}
