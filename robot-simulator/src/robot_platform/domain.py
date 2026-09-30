@@ -66,6 +66,7 @@ class Element(Record):
     step_height: float = Field(default=0.15, gt=0)
     speed_limit: float = Field(default=0.5, gt=0)
     allowed_groups: list[str] = Field(default_factory=list)
+    pedestrian_access: bool = False
     dynamic: bool = False
     facility: FacilitySettings = Field(default_factory=FacilitySettings)
 
@@ -210,6 +211,7 @@ class CooperativeTask(Record):
     receiver_id: str = Field(min_length=1, pattern=r"\S")
     workspace_id: str = Field(min_length=1, pattern=r"\S", description="협업 작업 공간의 논리적 예약 식별자")
     carrier_destination: Pose = Field(description="적재 후 수신 로봇과 만나는 작업 층 기준 운반 로봇 몸체 원점 목표; 물품 목표와 구분")
+    carrier_loading_pose: Pose | None = Field(default=None, description="상차 전 예약 작업 공간 안에서 정렬할 운반차 위치; 생략하면 현재 위치에서 상차")
     donor_id: str | None = Field(default=None, min_length=1, pattern=r"\S", description="선택적인 초기 상차 로봇; 생략하면 물품이 이미 실린 운반 로봇에서 시작")
     source_floor_id: str | None = Field(default=None, description="명시적인 상차 층. source 좌표는 이 층 기준이며 최종 배치는 Task.floor_id 기준")
     loading_offset: list[StrictFloat] = Field(default_factory=lambda: [0.0, 0.0], min_length=2, max_length=2,
@@ -218,6 +220,8 @@ class CooperativeTask(Record):
 
     @model_validator(mode="after")
     def distinct_roles(self):
+        if self.carrier_loading_pose is not None and self.donor_id is None:
+            raise ValueError("상차 접근에는 상차 로봇이 필요합니다")
         roles = [self.carrier_id, self.receiver_id]
         if self.donor_id is not None:
             roles.append(self.donor_id)

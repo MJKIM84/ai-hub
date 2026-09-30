@@ -230,25 +230,30 @@ class Orchestrator:
             if self._floor(peer['pose']['z'])!=floor_id:continue
             disks.append((peer['pose']['x'],peer['pose']['y'],radius(robot)+radius(self.robots[rid])+self.policy.safety_distance))
         start=obs['pose']
-        route=self.planner.path(start,target,floor_id,robot,peer_disks=disks)
-        if route is not None:return route
         inside=[disk for disk in disks if math.hypot(start['x']-disk[0],start['y']-disk[1])<disk[2]]
-        if not inside:return None
+        if not inside:
+            return self.planner.path(start,target,floor_id,robot,peer_disks=disks)
         outside=[disk for disk in disks if disk not in inside]
         # Circle envelopes include in-place rotation; leave a margin larger
         # than waypoint arrival tolerance before turning back toward the goal.
-        vx=sum(start['x']-x for x,y,r in inside);vy=sum(start['y']-y for x,y,r in inside)
-        if math.hypot(vx,vy)<1e-6:return None
-        away=math.atan2(vy,vx)
-        for distance in (.5,1.,1.5,2.):
-            for offset in (0.,math.pi/4,-math.pi/4,math.pi/2,-math.pi/2):
-                dx,dy=distance*math.cos(away+offset),distance*math.sin(away+offset)
-                escape=dict(x=start['x']+dx,y=start['y']+dy,z=start['z'],yaw=start['yaw'])
-                if any((start['x']-x)*dx+(start['y']-y)*dy<=0 or math.hypot(escape['x']-x,escape['y']-y)<r+.3 for x,y,r in inside):continue
-                if not self.planner.path_clear(start,[escape],floor_id,robot):continue
-                if not path_clear_of_disks(start,[escape],outside):continue
-                onward=self.planner.path(escape,target,floor_id,robot,peer_disks=disks)
-                if onward is not None:return [escape,*onward]
+        # A centerline moving away is not enough: rotating a rectangular
+        # chassis at close range can sweep into the stationary arm. Preserve
+        # the observed heading until the full rotation envelope is clear.
+        # If forward departure is not separating, wait for intervention rather
+        # than inventing an unsafe turn (reverse motion is not supported here).
+        hx,hy=math.cos(start['yaw']),math.sin(start['yaw'])
+        projections=[((start['x']-x)*hx+(start['y']-y)*hy,x,y,r) for x,y,r in inside]
+        if any(dot<=0 for dot,x,y,r in projections):return None
+        needed=max(-dot+math.sqrt(max(0.,dot*dot+(r+.31)**2-
+            (start['x']-x)**2-(start['y']-y)**2)) for dot,x,y,r in projections)
+        for distance in sorted(set((needed,.5,1.,1.5,2.))):
+            if distance<needed or distance>2.:continue
+            dx,dy=distance*hx,distance*hy
+            escape=dict(x=start['x']+dx,y=start['y']+dy,z=start['z'],yaw=start['yaw'])
+            if not self.planner.path_clear(start,[escape],floor_id,robot):continue
+            if not path_clear_of_disks(start,[escape],outside):continue
+            onward=self.planner.path(escape,target,floor_id,robot,peer_disks=disks)
+            if onward is not None:return [escape,*onward]
         return None
 
     def _guided_remaining(self,robot,obs,path,target,floor_id):

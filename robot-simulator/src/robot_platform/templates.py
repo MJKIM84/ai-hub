@@ -5,7 +5,7 @@ from .domain import Project, Environment, Floor, Element, Size, Pose, FacilitySe
 
 
 TEMPLATES = [
-    {"id":"warehouse-cooperation","name":"물류 시설 · 협업 운반·보행자 교차","group":"복합 시나리오","description":"로봇 5대·이동 보행자 3명 · 상차 → 작업대 인계 → 재상차 → 출고, Spot 병행 순찰 · 완료 또는 360초에 정지"},
+    {"id":"warehouse-cooperation","name":"물류 시설 · 구역별 AMR 교대","group":"복합 시나리오","description":"로봇 6대·보행자 3명 · 입고 AMR A → 작업대 인계 → A 복귀 → 출고 AMR B 상차·운반 · Spot 병행 순찰"},
     {"id":"multifloor-cargo","name":"다층 물품 업무 · 상차·재인수·최종 인계","group":"복합 시나리오"},
     {"id":"elevator-pedestrian-60s","name":"엘리베이터·보행자 회피 · 60초","group":"기능 시험"},
     {"id":"hotel","name":"호텔","group":"환경 예제"},

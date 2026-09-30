@@ -64,6 +64,7 @@ export interface Element {
   step_height: number;
   speed_limit: number;
   allowed_groups: string[];
+  pedestrian_access?: boolean;
   dynamic: boolean;
   facility: FacilitySettings;
 }
@@ -182,6 +183,7 @@ export interface CooperativeTask {
   workspace_id: string;
   /** Floor-relative carrier body origin at the post-loading receiver rendezvous. */
   carrier_destination: Pose;
+  carrier_loading_pose?: Pose | null;
   donor_id?: string | null;
   source_floor_id?: string | null;
   /** Carrier body-frame x/y metres; omitted legacy inputs default to [0, 0]. */

@@ -52,7 +52,7 @@ class PedestrianNavigator:
             if e.floor_id != person.floor_id:
                 continue
             rect = (e.pose.x,e.pose.y,math.cos(e.pose.yaw),math.sin(e.pose.yaw),e.size.x/2,e.size.y/2)
-            if e.kind in self.BLOCKED:
+            if e.kind in self.BLOCKED and not (e.kind == 'restricted' and e.pedestrian_access):
                 self.obstacles.append(rect)
             if e.id in selected:
                 self.zones.append(rect)

@@ -25,23 +25,36 @@ def main():
             print(round(session.time, 2), [(t["id"], t["status"]) for t in state["tasks"]], flush=True)
     result = dict(manifest=manifest(project), wall_seconds=time.monotonic()-start,
         final=session.snapshot(False), events=session.events, trace=trace)
-    folder = Path("docs/validation/warehouse-cooperation")
+    folder = Path("docs/validation/warehouse-zone-relay")
     folder.mkdir(parents=True, exist_ok=True)
     path = folder / f"run-{session.run_id}.json"
     path.write_text(json.dumps(result, ensure_ascii=False, indent=2))
     print(path, session.status, session.time, flush=True)
     print(json.dumps(session.metrics(), ensure_ascii=False), flush=True)
     assert session.status == "completed", "Failure details preserved in result"
+    rows = {t["id"]: t for t in result["final"]["tasks"]}
+    for before, after in [("delivery", "inbound-depart"), ("inbound-depart", "inbound-clear"), ("inbound-clear", "outbound-approach"),
+                          ("outbound-approach", "return-delivery")]:
+        assert rows[before]["completed_at"] <= rows[after]["started_at"]
+    positions = {rid: [next(r for r in frame["robots"] if r["id"] == rid)["pose"]["x"]
+                       for frame in trace] for rid in ("cart", "outbound-cart")}
+    assert max(positions["cart"]) < 12, "Inbound carrier entered the outbound-only zone"
+    assert min(positions["outbound-cart"]) > 8, "Outbound carrier entered the inbound-only zone"
+    loaded = [e for e in session.events if e["kind"] == "cooperation_loaded"]
+    assert [e["entity_id"] for e in loaded] == ["cart", "outbound-cart"]
     clearance = session.metrics()["pedestrian_min_clearance_m"]
     assert all(value is not None and value >= .5 for value in clearance.values())
     for person in project.people:
         ys = [frame["people"][person.id]["actual_position"][1] for frame in trace]
         assert max(ys)-min(ys) > 1, "A stationary pedestrian is not a crossing test"
     avoidance = [e for e in session.events if e["kind"] == "pedestrian_avoidance"
-                 and e["entity_id"] == "cart"]
+                 and e["entity_id"] in ("cart", "outbound-cart")]
     assert any(e["details"].get("mode") == "waiting" for e in avoidance)
     assert any(e["details"].get("previous") == "waiting" and
                e["details"].get("mode") == "resuming" for e in avoidance)
+    robot_ids = {r.id for r in project.robots}
+    assert not any(e["kind"] == "collision" and e["details"].get("a") in robot_ids
+                   and e["details"].get("b") in robot_ids for e in session.events), "Robot body contacts preserved in result"
     assert not any(e["kind"] == "collision" and
                    (e["details"].get("a", "").startswith("crossing-") or
                     e["details"].get("b", "").startswith("crossing-"))
