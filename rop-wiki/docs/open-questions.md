@@ -239,8 +239,13 @@ version: 1
 | oq-217 | 언어 모델 기반 다중 로봇 계획기를 현장 제약(설비·안전·시간창)이 있는 조건에서 비교할 공통 벤치마크나 평가 기준이 있는가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-09-30 | 2026-09-30-07 | 열림 | — |
 | oq-218 | 국내 로봇 AI 파운데이션 모델 과제의 물류센터 실증 목표(자동화율 80%, 성공률 90%)에 대한 공개된 측정 결과가 있는가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-09-30 | 2026-09-30-07 | 열림 | — |
 | oq-219 | 출처 충돌: BMW 그룹 보도자료(2026-06-25) 안에서 Figure 02의 스파턴버그 배치 기간이 10개월과 11개월로 엇갈리는데, 실제 배치 기간은 얼마인가? | [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md)<br>[62. 제조 공장](categories/site-type-applications/manufacturing-plant.md) | 2026-09-30 | 2026-09-30-07 | 열림 | — |
+| oq-220 | 학습 기반 배정·경로 정책을 실제 운영 중인 창고나 병원에 적용해 탐색·규칙 기반 방법 대비 개선을 제3자가 측정해 공개한 자료가 있는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
+| oq-221 | 제조사마다 다른 상태·고장 데이터를 내는 이종 로봇 플릿에서 고장 예측 모델을 학습·운영하려면 어떤 공통 데이터 항목이 필요하고 누가 모델을 소유하는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
+| oq-222 | 학습된 배정·경로 정책을 현장에 쓸 때 분포 이동을 감지해 탐색·규칙 기반 정책으로 되돌리는 기준을 정한 연구나 제품이 있는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
+| oq-223 | 46. 예측·학습 기반 최적화의 수요 예측(작업 요청·물동량 예측)과 분류 원문 19장이 외부 연계로 둔 수요예측(상위 업무 시스템)의 경계를 어떻게 나눌 것인가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
+| oq-224 | 국내 물류창고·병원·공장에서 로봇 배정·경로에 강화학습·모방학습 같은 학습 기반 방법을 적용한 공개 사례나 연구가 있는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
 
-상태별 건수: 열림 218건, 조사 중 1건
+상태별 건수: 열림 223건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

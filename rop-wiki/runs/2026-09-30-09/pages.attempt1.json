@@ -1,0 +1,666 @@
+{
+  "run_id": "2026-09-30-09",
+  "outline": [
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "예측·학습 기반 최적화는 혼잡·요청 변화·배터리 소모·고장처럼 계획을 어긋나게 하는 요인을 미리 알아 배정·경로·정비 결정에 반영하려는 영역이다. [추정][^ref-1105][^ref-1116][^ref-1112] 개선 근거는 대부분 시뮬레이션·벤치마크이고 운영 수치는 벤더 주장에 머문다. [추정][^ref-1109][^ref-1106]",
+      "planned_findings": [
+        "f18",
+        "f17",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "결정 중심 학습, 모방 학습, 안내 그래프, 예지·예지 정비, 분포 이동, 충전 상태, 다중 로봇 작업 배정을 정리한다. [사실][^ref-1115][^ref-1107][^ref-1118][^ref-1114]",
+      "planned_findings": [
+        "f11",
+        "f4",
+        "f5",
+        "f6",
+        "f13",
+        "f15",
+        "f9",
+        "f12",
+        "f7"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1800,
+      "summary": "물류창고(DeepFleet 혼잡 예측, CJ대한통운 iFlex 연계 대상)·병원(간호 업무 요청 예측 인지형 배정)·제조 공장(현대차 로봇팔 고장 예측)·기타(대학 캠퍼스 청소 로봇 예지 정비) 사례를 여섯 항목으로 정리하고, 상업 시설·가정·실외 사례는 찾지 못했다고 밝힌다.",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f16",
+        "f8",
+        "f9",
+        "f10",
+        "f14",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "학습 기반 배정, 학습 기반 경로·교통 관리(탐색 기반 대비), 대규모 플릿 기반 모델, 결정 품질로 예측 학습, 배터리·고장 예측 다섯 접근을 정리한다. 같은 조건 비교에서는 탐색 기반 방법이 아직 앞서고 학습은 탐색과 결합할 때 개선이 보고된다. [추정][^ref-1109][^ref-199][^ref-1118]",
+      "planned_findings": [
+        "f7",
+        "f8",
+        "f9",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f1",
+        "f11",
+        "f12",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 450,
+      "summary": "POGEMA 벤치마크, ISO 13381-1:2025(원문 미열람), League of Robot Runners 세 가지를 표로 정리한다. [사실][^ref-1109][^ref-1114][^ref-199]",
+      "planned_findings": [
+        "f3",
+        "f15",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1300,
+      "summary": "DeepFleet, POGEMA, MAPF-GPT, SILLM, 안내 그래프 최적화, RTAW, Garces 외, SPO, Poskart 외, Pookkuttath 외를 저자 보고 수치와 함께 목록으로 둔다. 교차 확인된 수치는 없다.",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f10",
+        "f11",
+        "f12",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 900,
+      "summary": "ROP는 플릿 수준 이력 수집·예측 결과를 계획에 넣는 인터페이스·학습 정책 평가와 분포 이동 감시·즉시 확정 범위 제한을 맡고, 부품 수준 상태 감시와 전사 주문 수요예측은 연계 대상이다. [추정][^ref-1116][^ref-1111][^ref-1117]",
+      "planned_findings": [
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1100,
+      "summary": "G. 계획·최적화의 배정·순서·경로·충전 영역, 38. 모니터링·이상 탐지·원인 분석, 47. AI·학습·적응과 모델 운영, 54. 시험·형식 검증·벤치마크, Q. 현장 유형별 적용의 네 현장 영역 등 15개 영역과 잇는다. [추정][^ref-623][^ref-1109][^ref-1111]",
+      "planned_findings": [
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 650,
+      "summary": "독립 현장 측정, 이종 플릿 고장 데이터 공통 항목, 분포 이동 시 되돌림 기준, 수요 예측 경계, 국내 적용 사례의 다섯 질문을 새로 올린다.",
+      "planned_findings": [
+        "open_questions_new"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 섹션 3~11 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 프런트매터 related_areas·tags·sources·confidence 추가"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"6. 대표 접근법과 기술\" 절(1,868자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"8. 대표 연구와 자료\" 절(1,712자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"4. 핵심 개념과 용어\" 절(1,029자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(942자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"11. 열린 질문\" 절(669자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"3. 왜 중요한가\" 절(613자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area46-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 46. 예측·학습 기반 최적화 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(463자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 46. 예측·학습 기반 최적화 | 영역 심화: 3~11절 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 1차 수정 지시 11건 이행 | run 2026-09-30-09",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 46. 예측·학습 기반 최적화: 영역 심화 — 학습 기반 배정·경로(탐색 기반 대비), 결정 중심 학습, 배터리·고장 예측과 물류창고·병원·제조 공장·기타 현장 사례를 새로 정리했다",
+    "category_recent": "2026-09-30 — 46. 예측·학습 기반 최적화: 영역 심화 — 3~11절 신규 작성, 개선 근거는 주로 시뮬레이션·벤치마크이고 운영 수치는 벤더 주장이라는 잠정 답을 정리했다",
+    "area_recent": "2026-09-30 — 46. 예측·학습 기반 최적화: 영역 심화 — 3~11절 신규 작성, 각주 14건, 열린 질문 5건 제기"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "decision-focused-learning",
+      "term_ko": "결정 중심 학습",
+      "term_en": "Decision-Focused Learning",
+      "definition": "예측 모델을 예측 오차가 아니라 그 예측으로 푼 최적화 문제의 결정 손실이 작아지도록 학습하는 방법이다. 대표 방법으로 Smart \"Predict, then Optimize\"(SPO)가 있다.",
+      "description": "SPO 는 결정 손실(SPO 손실)과 그 볼록 대리 손실(SPO+)로 최적화 문제의 목적·제약을 학습에 반영한다. SPO 는 결정 중심 학습의 한 방법이며 같은 말이 아니다.",
+      "related_areas": [
+        46,
+        26
+      ],
+      "sources": [
+        "ref-1115"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "predictive-maintenance",
+      "term_ko": "예지 정비",
+      "term_en": "Predictive Maintenance",
+      "definition": "설비·로봇의 상태 신호로 고장이나 성능 저하를 미리 예측해 고장 전에 정비 시점과 조치를 정하는 정비 방식이다.",
+      "description": "청소 로봇의 진동 분류 결과를 지도에 겹친 예지 정비 지도, 산업용 로봇팔의 신호 학습 기반 고장 예측(회사 발표) 같은 사례가 있다.",
+      "related_areas": [
+        46,
+        38,
+        57
+      ],
+      "sources": [
+        "ref-1111",
+        "ref-1113"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "imitation-learning",
+      "term_ko": "모방 학습",
+      "term_en": "Imitation Learning",
+      "definition": "전문가(예: 탐색 기반 계획기)가 만든 해나 행동 기록을 정답으로 삼아 같은 결정을 흉내 내는 정책을 학습하는 방법이다.",
+      "description": "다중 에이전트 경로 찾기에서 전문가 해의 대규모 데이터셋을 트랜스포머로 모방학습한 연구와, 모방학습에 충돌 해소·전역 안내를 결합한 지속형 경로 찾기 연구가 있다.",
+      "related_areas": [
+        46,
+        27
+      ],
+      "sources": [
+        "ref-1107",
+        "ref-199"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "guidance-graph",
+      "term_ko": "안내 그래프",
+      "term_en": "Guidance Graph",
+      "definition": "지속형 다중 에이전트 경로 찾기에서 로봇이 지나는 격자 간선에 가중치를 매겨 교통 흐름을 유도하는 그래프로, 배치 전에 최적화하거나 학습된 모델로 생성한다.",
+      "related_areas": [
+        46,
+        27
+      ],
+      "sources": [
+        "ref-1118"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-1105",
+      "org": "Agaskar, A., Siva, S., Pickering, W. 외 (Amazon, arXiv)",
+      "title": "DeepFleet: Multi-Agent Foundation Models for Mobile Robots",
+      "published": "2025-08",
+      "url": "https://arxiv.org/abs/2508.08574",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "아마존 창고 수십만 대 로봇의 이동 데이터로 학습한 네 가지 구조의 다중 로봇 기반 모델을 비교한 프리프린트(2026-04 개정). 초록 페이지를 열었다.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1106",
+      "org": "Amazon Science",
+      "title": "Amazon builds first foundation model for multirobot coordination",
+      "published": "2025-08-11",
+      "url": "https://www.amazon.science/blog/amazon-builds-first-foundation-model-for-multirobot-coordination",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "DeepFleet 의 용도(혼잡 예측으로 작업 배정·경로 조정)와 효율 10% 개선 주장을 소개하는 아마존 블로그 글. 벤더 주장이며 독립 확인 없음.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1107",
+      "org": "Andreychuk, A., Yakovlev, K., Panov, A., & Skrynnik, A. (arXiv)",
+      "title": "MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2409.00134",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "전문가 해를 트랜스포머로 모방학습한 MAPF 기반 모델. 학습형 해법 대비 우위와 제로샷 동작을 보고(초록 기준, 2025-04 개정). 학회 게재(AAAI 2025)는 미확인.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-199",
+      "org": "Jiang, H., Wang, Y., Veerapaneni, R., Duhan, T., Sartoretti, G., & Li, J. (arXiv, ICRA 2025)",
+      "title": "Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.21415",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "모방학습과 탐색 기법을 결합한 지속형 MAPF 방법 SILLM. 1만 대 규모에서 학습·탐색 기반 기준선 대비 처리량 개선과 실물 로봇 검증을 보고(초록 기준).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1109",
+      "org": "Skrynnik, A., Andreychuk, A., Borzilov, A., Chernyavskiy, A., Yakovlev, K., & Panov, A. (ICLR 2025, arXiv)",
+      "title": "POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding",
+      "published": "2025-04",
+      "url": "https://arxiv.org/abs/2407.14931",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "고전·학습·혼합 MAPF 방법을 같은 조건에서 비교하는 벤치마크 플랫폼과 비교 결과. v2 HTML 본문의 실험 결과 절을 열었다. 분포 밖 전면 실패는 MAMBA 에 대한 진술이다.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-623",
+      "org": "Agrawal, A., Bedi, A. S., & Manocha, D. (arXiv, ICRA 2023)",
+      "title": "RTAW: An Attention Inspired Reinforcement Learning Method for Multi-Robot Task Allocation in Warehouse Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2209.05738",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "창고 다중 로봇 작업 배정을 주의 기반 강화학습 정책으로 풀어 탐욕·후회 기반 방법 대비 총 이동 지연 감소를 보고한 시뮬레이션 연구(초록 기준).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1111",
+      "org": "Pookkuttath, S., Elara, M. R., Sivanantham, V., & Ramalingam, B. (Sensors)",
+      "title": "AI-Enabled Predictive Maintenance Framework for Autonomous Mobile Cleaning Robots",
+      "published": "2021-12-21",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8747287/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "청소 로봇의 IMU 진동 신호를 1D CNN 으로 분류해 예지 정비 지도를 만든 연구. 대학 캠퍼스 현장 시험 결과 포함(PMC 본문).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1112",
+      "org": "Poskart, B., Iskierka, G., Krot, K., Burduk, R., Gwizdal, P., & Gola, A. (Sensors)",
+      "title": "Multi-Parameter Predictive Model of Mobile Robot's Battery Discharge for Intelligent Mission Planning in Multi-Robot Systems",
+      "published": "2022-12-15",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9786877/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "MiR100 의 미션별 배터리 방전을 일반화 선형 모형으로 예측하고 미션 위임·로봇 추가 판단에 쓰는 방법을 제시(PMC 본문).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1113",
+      "org": "파이낸셜뉴스",
+      "title": "현대차, '로봇 고장' AI로 잡는다…5일전 90%이상 감지",
+      "published": "2026-05-28",
+      "url": "https://www.fnnews.com/news/202605280925297568",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "현대차가 산업용 로봇팔 고장을 AI 로 약 5일 전에 예측하는 시스템을 도입·확대한다는 회사 발표를 전한 기사. 정확도 산정 방법은 기사에 없다.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1114",
+      "org": "ISO (ISO/TC 108)",
+      "title": "ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements",
+      "published": "2025",
+      "url": "https://www.iso.org/standard/88029.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 기계 상태 감시·진단의 예지 일반 지침 3판(2015년 2판 대체). ISO 페이지가 403 이라 검색 결과 요약과 EVS 목록 페이지로 제목·판·대체 관계와 목적만 확인했다.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1115",
+      "org": "Elmachtoub, A. N., & Grigas, P. (arXiv)",
+      "title": "Smart \"Predict, then Optimize\"",
+      "published": "2017-10",
+      "url": "https://arxiv.org/abs/1710.08005",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "예측 모델을 예측 오차가 아닌 하류 최적화의 결정 손실(SPO, SPO+)로 학습하는 틀. 2020-11 개정. 학술지 게재 연도는 미확인. 초록 페이지를 열었다.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1116",
+      "org": "Garces, D., Castro, S., Haimovich, A., Crowe, B., & Gil, S. (arXiv)",
+      "title": "Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.21554",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "병원 입원 병동의 실제 간호 업무 요청 데이터로 예측 인지형 배정과 분포 이동 대응, 이력 기반 플릿 구성을 다룬 프리프린트(초록 기준, 동료 심사 전).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1117",
+      "org": "CJ대한통운",
+      "title": "'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명",
+      "published": "2021-07-28",
+      "url": "https://www.cjlogistics.com/ko/newsroom/latest/LT_00000238",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "iFlex 수요 예측·인력 배치, RPA, 화물선 도착 예측 등 CJ대한통운의 AI 적용을 소개한 자사 뉴스룸 글.",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1118",
+      "org": "Zhang, Y., Jiang, H., Bhatt, V., Nikolaidis, S., & Li, J. (arXiv, IJCAI 2024)",
+      "title": "Guidance Graph Optimization for Lifelong Multi-Agent Path Finding",
+      "published": "2024-02",
+      "url": "https://arxiv.org/abs/2402.01446",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "지속형 MAPF 의 안내 그래프 간선 가중치를 배치 전에 최적화·생성해 처리량을 높이는 방법(초록 기준).",
+      "cited_by": [
+        "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "학습 기반 배정·경로 정책을 실제 운영 중인 창고나 병원에 적용해 탐색·규칙 기반 방법 대비 개선을 제3자가 측정해 공개한 자료가 있는가?",
+      "areas": [
+        46,
+        54
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "제조사마다 다른 상태·고장 데이터를 내는 이종 로봇 플릿에서 고장 예측 모델을 학습·운영하려면 어떤 공통 데이터 항목이 필요하고 누가 모델을 소유하는가?",
+      "areas": [
+        46,
+        38
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "학습된 배정·경로 정책을 현장에 쓸 때 분포 이동을 감지해 탐색·규칙 기반 정책으로 되돌리는 기준을 정한 연구나 제품이 있는가?",
+      "areas": [
+        46,
+        47
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "46. 예측·학습 기반 최적화의 수요 예측(작업 요청·물동량 예측)과 분류 원문 19장이 외부 연계로 둔 수요예측(상위 업무 시스템)의 경계를 어떻게 나눌 것인가?",
+      "areas": [
+        46,
+        23
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 물류창고·병원·공장에서 로봇 배정·경로에 강화학습·모방학습 같은 학습 기반 방법을 적용한 공개 사례나 연구가 있는가?",
+      "areas": [
+        46,
+        61
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "물류창고",
+      "item": "작업 대상",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "제약",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "시작 조건",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "기타",
+      "item": "시작 조건",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "기타",
+      "item": "작업 대상",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    },
+    {
+      "site_type": "기타",
+      "item": "예외·성과",
+      "link": "docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시",
+      "title": "46. 예측·학습 기반 최적화"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "POGEMA (협동 다중 에이전트 경로 찾기 벤치마크 플랫폼)",
+      "kind": "평가 프로그램",
+      "org": "Skrynnik, A. 외 (ICLR 2025)",
+      "url": "https://arxiv.org/abs/2407.14931",
+      "related_areas": [
+        27,
+        46,
+        54
+      ],
+      "summary": "고전·학습·혼합 MAPF 방법을 같은 조건에서 비교하는 벤치마크 플랫폼. 고전 MAPF 에서 LaCAM, 지속형 MAPF 에서 RHCR 가 앞서고 MARL 방법이 크게 뒤처진다는 비교 결과를 보고했다.",
+      "ref_id": "ref-1109"
+    },
+    {
+      "name": "ISO 13381-1:2025 기계 상태 감시·진단 — 예지 — Part 1: 일반 지침과 요구사항",
+      "kind": "표준",
+      "org": "ISO (ISO/TC 108)",
+      "url": "https://www.iso.org/standard/88029.html",
+      "related_areas": [
+        38,
+        46,
+        57
+      ],
+      "summary": "원문 미열람. 기계 상태 감시·진단의 예지 일반 지침 3판(2015년 2판 대체). 이해관계자가 예지 개념을 공유하고 정확한 예지에 필요한 데이터·특성·절차를 정하게 하는 것이 목적이다.",
+      "ref_id": "ref-1114"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 적용 사례: 상업 시설·가정·실외 현장에서 학습·예측(수요·고장·배터리 예측, 학습 기반 배정·경로)을 로봇 운영에 적용한 1차 자료가 필요하다 — 이번 브리프에는 물류창고·병원·제조 공장·기타 사례만 있다.",
+    "5절 적용 사례: 네 사례 모두 '완료·인계' 항목(무엇이 확인돼야 작업이 끝났다고 인정하는가)의 근거가 없고, 물류창고(DeepFleet)의 시작 조건과 제조 공장·기타 사례의 제약도 미확인이다. 해당 칸을 채울 자료가 필요하다.",
+    "3·6·8절: 학습 기반 배정·경로 정책의 실제 운영 개선을 제3자가 측정한 공개 자료가 필요하다 — 현재 운영 수치(DeepFleet 효율 10%, 현대차 5일 전 90% 이상, iFlex)는 벤더·회사 발표뿐이고 교차 확인된 수치가 없다.",
+    "7절: ISO 13381-1:2025 원문(또는 공식 요약) 열람과, 같은 시리즈 다른 부(13381-2 이후)의 범위 확인이 필요하다 — 이번 실행은 검색 결과·EVS 목록 페이지로만 확인했고 다른 부의 범위 서술은 수정 지시로 뺐다.",
+    "8절: MAPF-GPT 의 학회 게재(AAAI 2025 여부)와 Smart \"Predict, then Optimize\" 의 학술지 게재 연도를 공식 페이지에서 확인해야 한다 — 이번 실행은 미확인으로 두었다.",
+    "6·8절: 제조 공장의 다중 에이전트 강화학습 AMR 주문 배차(Malus 외, CIRP Annals 2020)와 다중 로봇 작업 배정 체계적 문헌 고찰(ACM Computing Surveys 2024)은 원문 접근 실패(403)로 넣지 못했다. 열람 가능한 판본으로 재확인이 필요하다.",
+    "11절 관련: 국내 학술지·국내 현장의 학습 기반 다중 로봇 배정·경로 적용 사례와 국내 예지 정비 표준·지침 자료가 필요하다.",
+    "교차 규칙에 따른 다음 실행 후보: 25. 작업 배정 — MRTA 페이지에 학습 기반 배정(RTAW, Garces 외)과 핵심 질문 잠정 답, 27. 다중 로봇 경로·교통 관리 — MAPF 페이지에 POGEMA·MAPF-GPT·SILLM·안내 그래프 최적화, 38. 모니터링·이상 탐지·원인 분석 페이지에 청소 로봇 예지 정비·현대차 고장 예측 반영을 검토해야 한다(하루 갱신 예산 안에서)."
+  ],
+  "fixes_applied": [
+    "f3 MARL 일반화 수정 — 6절 '학습 기반 경로·교통 관리'에서 'MARL 방법(QPLEX·VDN·QMIX 등)은 크게 뒤처졌고, 그 가운데 MAMBA 는 분포 밖 데이터셋에서 한 인스턴스도 풀지 못했다'로 좁혀 [사실][^ref-1109]로 썼고, 3절 핵심 질문 답도 MAMBA 사례로 한정했다.",
+    "f15 다른 부 범위 삭제 — 4절·7절의 ISO 13381-1 서술에서 '같은 시리즈의 다른 부가 성능 추세·사이클 기반 수명 사용·잔여 유효 수명 모델을 다룬다'는 부분을 넣지 않고 3판·2015년 2판 대체·목적만 [사실]로 썼다.",
+    "ref-1114 제목·미열람 표시 — 13절 각주와 reference_updates·standards_updates 의 제목을 'ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements'로 고치고, 각주 접근일 뒤에 ' (원문 미열람)'을 붙였으며 reference_updates 항목에 source_unopened: true 를 넣고 summary 를 '원문 미열람. '으로 시작했다.",
+    "ref-1117 제목 — 13절 각주와 reference_updates 의 제목을 \"'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명\"으로 고쳤다(게시일 2021-07-28).",
+    "f4 AAAI 표기 — 6절·8절 본문에 'arXiv 2409.00134(2024-08 제출, 2025-04 개정)'로 적고, 각주·reference_updates 의 기관 표기에서 'AAAI 2025'를 뺐다(reference_updates summary 에는 'AAAI 2025 게재는 미확인'으로 적었다).",
+    "f11 게재 연도 — 8절에 'arXiv 1710.08005, 2017-10 제출, 2020-11 개정, 학술지 게재 연도 미확인'으로 적고, 각주·reference_updates 기관 표기에서 Management Science 를 뺐으며 summary 를 '학술지 게재 연도는 미확인'으로 고쳤다.",
+    "f20 배터리 셀 관리 삭제 — 9절 연계 대상 문장과 표에서 '배터리 셀 관리'를 빼고 로봇 부품 수준 상태 감시(모터 전류·진동·IMU)와 전사 주문 수요예측만 연계 대상으로 두었다. 배터리 예측(f12)은 ROP 직접 범위 쪽에만 썼다.",
+    "f2·f14·f16 벤더 주장 병기 — 5절 표·서술과 9절 표에서 이 세 finding 을 쓴 모든 문장을 '[추정] 벤더 주장[^ref-…]'로 쓰고, 효율 10%·5일 전 90% 이상 수치를 [사실]로 쓰지 않았으며, iFlex 서술은 '연계 대상:'으로 시작했다.",
+    "5절 현장 유형 — 사례를 물류창고(DeepFleet, iFlex 는 연계 대상 보충 서술)·병원(Garces 외)·제조 공장(현대차)·기타(대학 캠퍼스 청소 로봇) 네 묶음으로 쓰고, f12 는 6절 '배터리·고장 예측' 근거로만 썼으며, 상업 시설·가정·실외 사례는 찾지 못했다고 적었다. site_matrix_updates 는 이 네 현장 유형의 칸만 냈다.",
+    "용어집 '결정 중심 학습' — term_en 을 'Decision-Focused Learning'으로 두고 SPO 는 정의 안에서 대표 방법으로 적었으며, 4절 본문도 같은 방식(대표 방법인 SPO)으로 썼다.",
+    "8절 저자 보고 — 8절 도입에 모든 수치가 단일 출처 저자 보고이고 교차 확인된 수치가 없다고 밝히고, SILLM(+137.7%·+16.0%)·RTAW(14%)·Pookkuttath 외(91%)·Poskart 외(결정계수) 수치를 '저자 보고:'로 표시했다(5절·6절의 같은 수치도 '저자는 … 보고했다'로 썼다).",
+    "분량 초과 자동 분리: 46. 예측·학습 기반 최적화 본문 10,784자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,283자"
+  ]
+}

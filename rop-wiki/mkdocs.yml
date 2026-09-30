@@ -292,6 +292,13 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 46. 예측·학습 기반 최적화 — 대표 연구와 자료: topics/2026/2026-09-30-area46-s8.md
+      - 46. 예측·학습 기반 최적화 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area46-s7.md
+      - 46. 예측·학습 기반 최적화 — 대표 접근법과 기술: topics/2026/2026-09-30-area46-s6.md
+      - 46. 예측·학습 기반 최적화 — 핵심 개념과 용어: topics/2026/2026-09-30-area46-s4.md
+      - 46. 예측·학습 기반 최적화 — 왜 중요한가: topics/2026/2026-09-30-area46-s3.md
+      - 46. 예측·학습 기반 최적화 — 열린 질문: topics/2026/2026-09-30-area46-s11.md
+      - 46. 예측·학습 기반 최적화 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area46-s10.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료: topics/2026/2026-09-30-area44-s8.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area44-s7.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술: topics/2026/2026-09-30-area44-s6.md
@@ -606,6 +613,7 @@ nav:
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
+    - 결정 중심 학습 (Decision-Focused Learning): glossary/decision-focused-learning.md
     - 결합 목표 정확도 (Joint Goal Accuracy (JGA)): glossary/joint-goal-accuracy.md
     - 경로 길이 가중 성공률 (Success weighted by Path Length (SPL)): glossary/success-weighted-by-path-length.md
     - 경로망 (Roadmap): glossary/roadmap.md
@@ -680,6 +688,7 @@ nav:
     - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모델 컨텍스트 프로토콜 (Model Context Protocol (MCP)): glossary/model-context-protocol.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
+    - 모방 학습 (Imitation Learning): glossary/imitation-learning.md
     - 목표 조건 (Goal Condition): glossary/goal-condition.md
     - 무선 업데이트 (Over-the-Air Update (OTA)): glossary/over-the-air-update.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
@@ -746,6 +755,7 @@ nav:
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 실외이동로봇 운행안전인증 (Outdoor Mobile Robot Operational Safety Certification): glossary/outdoor-mobile-robot-operational-safety-certification.md
     - 실패 설명 (Failure Explanation): glossary/failure-explanation.md
+    - 안내 그래프 (Guidance Graph): glossary/guidance-graph.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 어포던스 (Affordance): glossary/affordance.md
     - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
@@ -756,6 +766,7 @@ nav:
     - 역할 기반 접근 통제 (Role-Based Access Control (RBAC)): glossary/role-based-access-control.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
+    - 예지 정비 (Predictive Maintenance): glossary/predictive-maintenance.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
     - 오픈텔레메트리 (OpenTelemetry (OTel)): glossary/opentelemetry.md
@@ -1032,7 +1043,21 @@ nav:
     - ref-1050 — K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과: references/ref-1050.md
     - ref-1051 — BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg: references/ref-1051.md
     - ref-1052 — VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입: references/ref-1052.md
+    - 'ref-1053 — DeepFleet: Multi-Agent Foundation Models for Mobile Robots': references/ref-1053.md
+    - ref-1054 — Amazon builds first foundation model for multirobot coordination: references/ref-1054.md
+    - 'ref-1055 — MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale': references/ref-1055.md
+    - 'ref-1056 — POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pathfinding': references/ref-1056.md
+    - ref-1057 — AI-Enabled Predictive Maintenance Framework for Autonomous Mobile Cleaning Robots: references/ref-1057.md
+    - ? ref-1058 — Multi-Parameter Predictive Model of Mobile Robot's Battery Discharge for Intelligent Mission Planning in Multi-Robot Systems
+      : references/ref-1058.md
+    - ref-1059 — 현대차, '로봇 고장' AI로 잡는다…5일전 90%이상 감지: references/ref-1059.md
     - ref-106 — 인증스마트물류센터: references/ref-106.md
+    - ? 'ref-1060 — ISO 13381-1:2025 Condition monitoring and diagnostics of machine systems — Prognostics — Part 1: General guidelines and requirements'
+      : references/ref-1060.md
+    - ref-1061 — Smart "Predict, then Optimize": references/ref-1061.md
+    - ref-1062 — Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts: references/ref-1062.md
+    - ref-1063 — 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명: references/ref-1063.md
+    - ref-1064 — Guidance Graph Optimization for Lifelong Multi-Agent Path Finding: references/ref-1064.md
     - ref-107 — 물류시설의 개발 및 운영에 관한 법률: references/ref-107.md
     - ref-108 — AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템을 중심으로 -: references/ref-108.md
     - ref-109 — A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse: references/ref-109.md

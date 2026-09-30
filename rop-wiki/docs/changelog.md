@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-09 | 갱신 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 영역 심화: 섹션 3~11 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 프런트매터 related_areas·tags·sources·confidence 추가(2차 재실행: 이 페이지 본문 변경 없음) |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s6.md](topics/2026/2026-09-30-area46-s6.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(1,868자)을 옮겼다. 2차: DeepFleet·34. 시뮬레이션·예측용 디지털 트윈 구분 문장의 태그를 [의견]에서 [추정]으로 되돌렸다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s8.md](topics/2026/2026-09-30-area46-s8.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(1,712자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s4.md](topics/2026/2026-09-30-area46-s4.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "4. 핵심 개념과 용어" 절(1,029자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s10.md](topics/2026/2026-09-30-area46-s10.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(942자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s11.md](topics/2026/2026-09-30-area46-s11.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "11. 열린 질문" 절(669자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s3.md](topics/2026/2026-09-30-area46-s3.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "3. 왜 중요한가" 절(613자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s7.md](topics/2026/2026-09-30-area46-s7.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절(463자)을 옮겼다. 2차: League of Robot Runners 행에서 대회 성격 서술(브리프 밖)을 뺐다 |
+| 2026-09-30-09 | 요약 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 46. 예측·학습 기반 최적화: 영역 심화: 3~11절 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 1차 수정 지시 11건·2차 수정 지시 2건 이행 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1053.md](references/ref-1053.md) | 참고문헌 ref-1053 등록: DeepFleet: Multi-Agent Foundation Models for Mobile Robots |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1054.md](references/ref-1054.md) | 참고문헌 ref-1054 등록: Amazon builds first foundation model for multirobot coordina… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1055.md](references/ref-1055.md) | 참고문헌 ref-1055 등록: MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1056.md](references/ref-1056.md) | 참고문헌 ref-1056 등록: POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pat… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1057.md](references/ref-1057.md) | 참고문헌 ref-1057 등록: AI-Enabled Predictive Maintenance Framework for Autonomous M… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1058.md](references/ref-1058.md) | 참고문헌 ref-1058 등록: Multi-Parameter Predictive Model of Mobile Robot's Battery D… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1059.md](references/ref-1059.md) | 참고문헌 ref-1059 등록: 현대차, '로봇 고장' AI로 잡는다…5일전 90%이상 감지 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1060.md](references/ref-1060.md) | 참고문헌 ref-1060 등록: ISO 13381-1:2025 Condition monitoring and diagnostics of mac… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1061.md](references/ref-1061.md) | 참고문헌 ref-1061 등록: Smart "Predict, then Optimize" |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1062.md](references/ref-1062.md) | 참고문헌 ref-1062 등록: Model-Based Reinforcement Learning for Heterogeneous Multi-R… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1063.md](references/ref-1063.md) | 참고문헌 ref-1063 등록: 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1064.md](references/ref-1064.md) | 참고문헌 ref-1064 등록: Guidance Graph Optimization for Lifelong Multi-Agent Path Fi… |
+| 2026-09-30-09 | 생성 | [docs/glossary/decision-focused-learning.md](glossary/decision-focused-learning.md) | 용어집 항목 결정 중심 학습 |
+| 2026-09-30-09 | 생성 | [docs/glossary/predictive-maintenance.md](glossary/predictive-maintenance.md) | 용어집 항목 예지 정비 |
+| 2026-09-30-09 | 생성 | [docs/glossary/imitation-learning.md](glossary/imitation-learning.md) | 용어집 항목 모방 학습 |
+| 2026-09-30-09 | 생성 | [docs/glossary/guidance-graph.md](glossary/guidance-graph.md) | 용어집 항목 안내 그래프 |
+| 2026-09-30-09 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-30-07 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 영역 심화: seed → draft, 3~11절 신규 작성(자동 분리 후 요약·링크), 각주 15건, 1차 수정 지시 10건 이행. 2차: 5절 도입 문장을 가정 [사실]과 제조 공장·물류창고 [추정] 벤더 주장으로 분리, 5절에 VLA(용어집 링크)·PoC, 7절에 PDDL 풀어쓰기 |
 | 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s6.md](topics/2026/2026-09-30-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,491자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s4.md](topics/2026/2026-09-30-area44-s4.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "4. 핵심 개념과 용어" 절(1,296자)을 옮겼다(2차 재실행에서 변경 없음) |
