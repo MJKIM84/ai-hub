@@ -292,6 +292,12 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 52. 통신 보호·위협 관리·감사 — 대표 연구와 자료: topics/2026/2026-09-30-area52-s8.md
+      - 52. 통신 보호·위협 관리·감사 — 대표 접근법과 기술: topics/2026/2026-09-30-area52-s6.md
+      - 52. 통신 보호·위협 관리·감사 — 핵심 개념과 용어: topics/2026/2026-09-30-area52-s4.md
+      - 52. 통신 보호·위협 관리·감사 — 왜 중요한가: topics/2026/2026-09-30-area52-s3.md
+      - 52. 통신 보호·위협 관리·감사 — 열린 질문: topics/2026/2026-09-30-area52-s11.md
+      - 52. 통신 보호·위협 관리·감사 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area52-s10.md
       - 49. 사람 근접 안전 — 대표 연구와 자료: topics/2026/2026-09-30-area49-s8.md
       - 49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area49-s7.md
       - 49. 사람 근접 안전 — 대표 접근법과 기술: topics/2026/2026-09-30-area49-s6.md
@@ -634,12 +640,15 @@ nav:
     - LLM-모듈로 프레임워크 (LLM-Modulo Framework): glossary/llm-modulo-framework.md
     - MCAP (MCAP): glossary/mcap.md
     - OpenAPI 명세 (OpenAPI Specification (OAS)): glossary/openapi-specification.md
+    - ? STRIDE 위협 분류 (STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege))
+      : glossary/stride-threat-classification.md
     - SiLA 2 (Standardization in Lab Automation 2 (SiLA 2)): glossary/sila-2.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
     - pass^k 지표 (pass^k): glossary/pass-k.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
+    - 간접 프롬프트 주입 (Indirect Prompt Injection): glossary/indirect-prompt-injection.md
     - 감독 제어 (Supervisory Control): glossary/supervisory-control.md
     - 감사 추적 (Audit Trail): glossary/audit-trail.md
     - 개인 배송 장치 (Personal Delivery Device (PDD)): glossary/personal-delivery-device.md
@@ -738,8 +747,10 @@ nav:
     - 배터리 교환 (Battery Swapping): glossary/battery-swapping.md
     - 백 파일 (Bag File (rosbag2)): glossary/bag-file.md
     - 버전 IRI (Version IRI (owl:versionIRI)): glossary/version-iri.md
+    - 변조 탐지 로그 (Tamper-evident Log): glossary/tamper-evident-log.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
+    - 보안 수준 (Security Level (SL, IEC 62443)): glossary/security-level-iec-62443.md
     - 보호 분리 거리 (Protective Separation Distance): glossary/protective-separation-distance.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 불확실도 정렬 (Uncertainty Alignment): glossary/uncertainty-alignment.md
@@ -1158,7 +1169,18 @@ nav:
     - ref-1102 — ARC brain 개요 - 사용 가이드: references/ref-1102.md
     - ref-1103 — 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다: references/ref-1103.md
     - 'ref-1104 — Nurses'' Evaluation of a Service Robot for Inpatient Care: Technology Acceptance Study': references/ref-1104.md
+    - ref-1105 — IEC 62443: references/ref-1105.md
+    - ref-1106 — LLM01:2025 Prompt Injection: references/ref-1106.md
+    - ref-1107 — Aethon TUG Home Base Server (ICSA-22-102-05): references/ref-1107.md
+    - ref-1108 — The Cybersecurity of a Humanoid Robot: references/ref-1108.md
+    - ref-1109 — Machinery Regulation Guide: references/ref-1109.md
     - ref-111 — rmf_api_msgs — rmf_api_msgs/schemas/task_state.json: references/ref-111.md
+    - ? 'ref-1110 — Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models'
+      : references/ref-1110.md
+    - ref-1111 — 선박·위성·로봇까지 해킹 표적…정부, ‘피지컬 AI’ 산업 보안 기준 제시: references/ref-1111.md
+    - 'ref-1112 — When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems': references/ref-1112.md
+    - ref-1113 — A Study on Prompt Injection Attack Against LLM-Integrated Mobile Robotic Systems: references/ref-1113.md
+    - ref-1114 — An Experimental Security Analysis of an Industrial Robot Controller: references/ref-1114.md
     - ref-112 — About the Business Process Model And Notation Specification Version 2.0: references/ref-112.md
     - 'ref-113 — Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)': references/ref-113.md
     - ref-114 — A BPMN-driven framework for Multi-Robot System development: references/ref-114.md

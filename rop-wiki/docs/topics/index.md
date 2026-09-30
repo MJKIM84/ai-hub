@@ -92,6 +92,12 @@ version: 1
 | 2026-09-30 | [49. 사람 근접 안전 — 대표 접근법과 기술](2026/2026-09-30-area49-s6.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
 | 2026-09-30 | [49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area49-s7.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
 | 2026-09-30 | [49. 사람 근접 안전 — 대표 연구와 자료](2026/2026-09-30-area49-s8.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 다른 연구영역과의 연결](2026/2026-09-30-area52-s10.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 열린 질문](2026/2026-09-30-area52-s11.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 왜 중요한가](2026/2026-09-30-area52-s3.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 핵심 개념과 용어](2026/2026-09-30-area52-s4.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 대표 접근법과 기술](2026/2026-09-30-area52-s6.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 대표 연구와 자료](2026/2026-09-30-area52-s8.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

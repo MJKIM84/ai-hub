@@ -35,7 +35,7 @@ version: 1
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
-| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
+| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
@@ -162,7 +162,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md) | published | medium | 2026-09-25 | 2 |
-| [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | seed | — | 2026-09-28 | 1 |
+| [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | 2026-09-30 | 2 |
 | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | seed | — | 2026-09-28 | 1 |
 
 **O. 검증·도입·수명주기**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 118회 중 최종 통과 116회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 116, None 2
-- 2차 검증 판정: 통과 116, None 2
+- 실행 119회 중 최종 통과 117회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 117, None 2
+- 2차 검증 판정: 통과 117, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 489 |
+| 논문 | 494 |
 | 오픈소스 문서 | 208 |
-| 표준 | 170 |
-| 기사 | 85 |
-| 정부·연구기관 | 78 |
+| 표준 | 171 |
+| 기사 | 86 |
+| 정부·연구기관 | 79 |
 | 벤더 문서 | 66 |
-| 업계 보고서 | 17 |
+| 업계 보고서 | 19 |
 
-신뢰도: medium 824건, high 203건, low 86건
+신뢰도: medium 833건, high 204건, low 86건
 
 ### 현장 유형 매트릭스 채움률
 
-- 54/119 칸 (45%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 57/119 칸 (48%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

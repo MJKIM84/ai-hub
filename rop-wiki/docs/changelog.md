@@ -86,6 +86,29 @@ version: 1
 | 2026-09-30-12 | 생성 | [docs/glossary/simulation-description-format.md](glossary/simulation-description-format.md) | 용어집 항목 시뮬레이션 기술 형식 |
 | 2026-09-30-12 | 생성 | [docs/glossary/falsification.md](glossary/falsification.md) | 용어집 항목 반증 기반 시험 |
 | 2026-09-30-12 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 5건 추가·갱신 |
+| 2026-09-30-11 | 갱신 | [docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | seed → draft: 3~11절 첫 작성(통신 인증·암호화, 위협 모델·IEC 62443, LLM 탈옥·프롬프트 주입 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 적용 사례, 책임 경계, 연결 19개 영역, 열린 질문), 13절 각주 17건. 2차 수정 6건 반영(5·8절 요약 태그, 6절 도식 안내 문장 분리·일반화 문장 한정, 3절 EU 규정 범위, 연계 대상 해석 태그 분리) |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s6.md](topics/2026/2026-09-30-area52-s6.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "6. 대표 접근법과 기술" 절(2,109자)을 옮겼다 |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s8.md](topics/2026/2026-09-30-area52-s8.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "8. 대표 연구와 자료" 절(1,206자)을 옮겼다 |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s10.md](topics/2026/2026-09-30-area52-s10.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,102자)을 옮겼다 |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s3.md](topics/2026/2026-09-30-area52-s3.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "3. 왜 중요한가" 절(1,079자)을 옮겼다 |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s11.md](topics/2026/2026-09-30-area52-s11.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "11. 열린 질문" 절(1,063자)을 옮겼다 |
+| 2026-09-30-11 | 생성 | [docs/topics/2026/2026-09-30-area52-s4.md](topics/2026/2026-09-30-area52-s4.md) | 자동 분리: 52. 통신 보호·위협 관리·감사 의 "4. 핵심 개념과 용어" 절(1,031자)을 옮겼다 |
+| 2026-09-30-11 | 요약 | [docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | 52. 통신 보호·위협 관리·감사: seed → draft: 3~11절 첫 작성(통신 인증·암호화, 위협 모델, LLM 입력 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 사례), 각주 17건 |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1105.md](references/ref-1105.md) | 참고문헌 ref-1105 등록: IEC 62443 |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1106.md](references/ref-1106.md) | 참고문헌 ref-1106 등록: LLM01:2025 Prompt Injection |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1107.md](references/ref-1107.md) | 참고문헌 ref-1107 등록: Aethon TUG Home Base Server (ICSA-22-102-05) |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1108.md](references/ref-1108.md) | 참고문헌 ref-1108 등록: The Cybersecurity of a Humanoid Robot |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1109.md](references/ref-1109.md) | 참고문헌 ref-1109 등록: Machinery Regulation Guide |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1110.md](references/ref-1110.md) | 참고문헌 ref-1110 등록: Enhancing Trust in Autonomous Agents: An Architecture for Ac… |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1111.md](references/ref-1111.md) | 참고문헌 ref-1111 등록: 선박·위성·로봇까지 해킹 표적…정부, ‘피지컬 AI’ 산업 보안 기준 제시 |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1112.md](references/ref-1112.md) | 참고문헌 ref-1112 등록: When Prompts Control Robots: Prompt Injection Attacks in Mul… |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1113.md](references/ref-1113.md) | 참고문헌 ref-1113 등록: A Study on Prompt Injection Attack Against LLM-Integrated Mo… |
+| 2026-09-30-11 | 생성 | [docs/references/ref-1114.md](references/ref-1114.md) | 참고문헌 ref-1114 등록: An Experimental Security Analysis of an Industrial Robot Con… |
+| 2026-09-30-11 | 생성 | [docs/glossary/stride-threat-classification.md](glossary/stride-threat-classification.md) | 용어집 항목 STRIDE 위협 분류 |
+| 2026-09-30-11 | 생성 | [docs/glossary/indirect-prompt-injection.md](glossary/indirect-prompt-injection.md) | 용어집 항목 간접 프롬프트 주입 |
+| 2026-09-30-11 | 생성 | [docs/glossary/security-level-iec-62443.md](glossary/security-level-iec-62443.md) | 용어집 항목 보안 수준 |
+| 2026-09-30-11 | 생성 | [docs/glossary/tamper-evident-log.md](glossary/tamper-evident-log.md) | 용어집 항목 변조 탐지 로그 |
+| 2026-09-30-11 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-10 | 갱신 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | seed → draft: 3~11절 첫 작성(보호 분리 거리 계산, 로봇 측·플릿 수준 감속·정지, 적용 유형별 표준·인증, 물류창고·병원·실외 사례, 책임 경계, 연결 16건, 열린 질문 4건), 각주 15건 |
 | 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s6.md](topics/2026/2026-09-30-area49-s6.md) | 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(1,762자)을 옮겼다 |
 | 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s7.md](topics/2026/2026-09-30-area49-s7.md) | 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,599자)을 옮겼다 |

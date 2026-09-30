@@ -1,0 +1,258 @@
+{
+  "run_id": "2026-09-30-11",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 원문 텍스트(ref-010, github_raw)에서 STRIDE 분류·DREAD 평가, TurtleBot 3·MARA 적용, 통신 위협(구성요소 신원 위조, 메시지 가로채기·변조, 채널 무단 쓰기, 도청)을 확인했다. 작성 2019-03, 최종 수정 2021-01. 원문 머리에 'DRAFT DOCUMENT' 표시와 '완화책을 모두 적용해도 제품이 안전함을 보장하지 않는다'는 면책 문구가 있다(주의 사항). 단일 출처."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-010 원문에서 '노드가 잘못된 데이터를 채널에 씀' 위협의 완화책에 잘못된 메시지 이벤트 기록·사용자 통지가, 구성 관리 위협의 완화책에 구성 변경 기록이 있다. 로그 유출·무단 접근도 위협 범주에 있다. 단일 출처."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-009 원문(작성 2019-07, 수정 2020-07)에 다섯 SPI, ROS 2 는 앞의 셋만 사용, 로깅·데이터 태깅은 규격 준수에 필수가 아니어서 모든 DDS 구현이 지원하지는 않음, AES-GCM 이 명시돼 있다. ref-405 도 같은 내용이지만 같은 ROS 계열 문서라 독립 교차 확인으로 보지 않는다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(문구 수정 필요): 환경 변수 3종과 enclaves 하위 파일 구성은 ref-009 원문과 일치한다. 다만 원문의 엄격 모드는 '보안 파일을 찾지 못하면 그 참여자를 실행하지 않는 것'이고, 허용 모드(기본값)는 '보안 없이 실행하는 것'이다. 브리프의 '보안 자료가 없는 참여자를 거부'는 다른 참여자를 거부한다는 뜻으로 읽힐 수 있어 수정을 지시한다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ref-405 원문(github_raw)을 열어 두 부분(ROS 2 요소와 대시보드), TLS·사용자 확인·Keycloak OIDC 역할 기반 접근, 배치 전 private 디렉터리 제거, 'SROS 2 has no support for launch files yet', ROS 2 가 SPI 셋만 사용(로깅 미사용)을 확인했다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(서지·용어 수정 필요): VDA5050_EN.md main(3.0.0)에 'Protocol security needs to be taken into account by broker configuration, but is not addressed within this guideline.' 문장이 있다. 그러나 3.0.0 문서 제목은 'Interface for the Communication between Mobile Robots and a Fleet Control'이며 AGV·master control 표현을 쓰지 않는다. 같은 문서가 인증서 다운로드는 TLS 로 보호하라고 적으므로 '보안을 전혀 다루지 않는다'는 식의 단정은 피해야 한다. '운영자와 통합 사업자가 정해야 한다'는 원문 문장이 아니라 해석이다. 발행일 미확인. 같은 URL 이 실행 2026-09-30-10 의 ref-1079 로도 쓰였다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: IEC(SyC Smart Energy) 공식 페이지에 구역·도관 정의 문장, IEC 62443-3-3 의 보안 수준 4단계와 공격자 역량 대응, FR1~FR7 목록, 7원소 보안 수준 벡터(예: SL=(3,3,3,1,2,1,3)), SL-T 언급이 있다. 발행 기관 자료이나 표준 본문은 아니다. 이 페이지는 목표·역량·달성 수준 구분을 설명하지 않는다(용어 후보 정의 수정 지시)."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: CISA ICSA-22-102-05(2022-04-12). 버전 24 이전 전체, CVE-2022-1066·26423(CWE-862, 8.2), CVE-2022-1070(CWE-300, 9.8, 인증 없이 웹소켓에 접속해 TUG 로봇 제어), XSS 2건(7.6). 영향은 서비스 거부·로봇 기능 전면 제어·민감 정보 노출, 분야 Healthcare and Public Health, 보고자 Cynerio. 단일 출처(정부 권고)."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 같은 권고의 완화책(버전 24 갱신·방화벽 활성 확인, 망 노출 최소화·인터넷 비노출·방화벽 뒤 격리·VPN). 방화벽·VPN 은 시설 IT/OT 쪽 조치이므로 연계 대상으로 서술해야 한다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 출처 실재는 검색 결과로 확인했다(IEEE S&P 2017, 268–286쪽, Quarta 외 6인). core.ac.uk PDF 는 검증에서도 403 이었다(원문 미열람). 검색 결과 요약은 '소프트웨어 취약점과 구조적 결함을 이용해 정밀도·제어 논리 정확성·작업자 안전 요구를 무너뜨릴 수 있다'까지만 보여 주며, '원격 완전 장악'과 '펌웨어 백도어·인증 우회'는 확인하지 못했다. 스니펫 범위로 줄이도록 지시한다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2509.14096(2025-09-17, Mayoral-Vilches) 초록에 Unitree G1, FMX 이중 암호화의 정적 키로 인한 오프라인 구성 복호화, 음성·영상·공간·구동기 상태의 동의 없는 외부 전송이 있다. 저자는 보안 업체(Alias Robotics) 소속이며 단일 출처 기술 보고서다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": true,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: 기사(ref-969)를 다시 열어 점검 주체 KISA·한국소비자원, 2025년 3~7월, 6종, 모바일앱·정책관리·기기보안 40개 항목, 나르왈·드리미·에코백스 제품의 사진 열람·카메라 강제 활성화, 미흡한 사용자 인증, 사용자 ID 로 이름·전화번호 조회를 확인했다. 그러나 '통신 암호화 부족'은 기사에 취약점으로 나오지 않는다(암호화는 기업 대응·전문가 권고로만 언급). KISA 보도자료(kisa.or.kr)와 여러 언론의 검색 결과로 점검 개요는 교차 확인했다(검색 결과 일치, KISA 원문 미열람). 다만 수정 전 주장 전체가 출처와 일치하지 않아 강등한다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 엠에스투데이(2026-03-06) 기사에 과기정통부·KISA 의 로봇 분야 보안모델 고도화판·요구사항 해설서 배포, KISA 지식플랫폼 자료실 무료 배포, 네트워크 연결·원격 업데이트·데이터 수집 위험, 유럽·북미 규제 강화 언급이 있다. 같은 발표에서 스마트선박·우주 분야 보안모델도 함께 배포됐다. 기사 단일 출처, KISA 원문 미열람."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2410.13691(v1 2024-10-17, v2 2024-11-09) 초록에 세 설정(NVIDIA Dolphins 화이트박스, GPT-4o 계획기를 단 Clearpath Jackal 그레이박스, GPT-3.5 를 통합한 Unitree Go2 블랙박스)과 'often achieving 100% attack success rates'가 있다. 연구 환경 결과이며 단일 출처."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2408.03515 초록(GPT-4o, 다중 모달 프롬프트, 약 30.8% 개선)과 HTML 본문(EyeSim VR 시뮬레이터, secure prompting·response-based detection, LiDAR·카메라·사람 지시 입력)을 확인했다. 결과는 시뮬레이션 기준이다. 단일 출처."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2608.00747 초록에 작업 지시 직접 주입·인식 모듈 경유 간접 주입, 적대 행동 유발·작업 완료 감소, 공유 프롬프트 구조를 통한 에이전트 간 전파가 있다. 초록에 정량 수치는 없다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2503.07885(2025-03-10 제출, 2026-03-03 개정, Ravichandran·Robey·Kumar·Pappas·Hassani) 초록에 신뢰 기반 LLM + 시간 논리 제어 합성의 2단계, 위험 계획 실행 92% 초과 → 3% 미만, 안전 계획 성능 유지, 시뮬레이션·실물 실험이 있다. 게재처 미확인. 단일 출처."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: OWASP GenAI LLM01:2025 페이지에서 직접·간접 주입 정의, 완화책 7가지, '확실한 예방법이 있는지 불분명' 문구를 확인했다. 판 표기는 2025, 발행일 미확인."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인: IES 해설(2026-08-27 갱신)에서 2027-01-20 전면 적용, 규정 준수에 결정적인 하드웨어·소프트웨어의 변조 보호, 안전 소프트웨어 식별과 개입 증거 기록, 출시 뒤 올린 안전 소프트웨어 판 추적 로그 5년 보관을 확인했다. 독립 해설(Nemko·Rockwell Automation 등)의 검색 결과 요약과 일치해 교차 확인했다(두 번째 출처는 검색 결과 기준). EUR-Lex 원문은 검증에서도 본문이 비어 열람하지 못했다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 2403.09567 초록에 ROS 기반 이동 로봇용 블록체인 변조 방지 블랙박스형 요소, 그 기록 위 LLM 자연어 설명, 세 시나리오 주행 평가와 책임성·설명 지표가 있다. 성능·지연 수치는 없다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지(종합). 문구 수정 필요: 강등된 f10 에 기대어 '제어기가 로봇 전면 제어로 이어졌다'고 쓰지 않는다. '높은 확률로 탈옥'은 f14 의 연구 환경 결과에만 근거하며 f16 에는 성공률 수치가 없다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지(종합). 문구 수정 필요: f8 은 '로봇 기능 전면 제어가 가능하다'까지이며 '그 플릿의 로봇 전체가 제어권을 잃는다'는 과장이다. f13 의 KISA 해설서는 참고 자료이지 제품 요건이 아니므로 '제품 요건으로 만든다'는 f19(EU 규정)에만 쓴다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 분류 원문 19장 경계와 맞다. 근거 finding(f1·f2·f4~f7·f17~f20)이 모두 확인됐다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. '연계 대상:'으로 로봇 제어기·펌웨어(f10·f11)와 현장 망 방화벽·VPN(f9)을 구분해 범위 경계에 맞다. f10 은 강등된 범위로만 인용한다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "추정 유지. 연결 영역의 번호·이름이 부록 A 원문 명칭과 모두 일치한다. L. AI·학습 기술 교차 규칙대로 44. 로봇 기반 모델·언어 모델 계획과 연결했고, C. 채팅 기반 구성·운영의 13. 대화형 기능의 신뢰·기반, 12. 채팅으로 업무 지시·오케스트레이션과도 연결했다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-031(VDA 5050 3.0.0, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md)은 실행 2026-09-30-10 브리프의 ref-1079 와 URL 이 같다. 퍼블리셔가 같은 URL 을 기존 id 로 합칠 때 두 제목이 서로 다르다(둘 다 3.0.0 원문 제목 'Interface for the Communication between Mobile Robots and a Fleet Control'과도 다름).",
+      "참고문헌 id 충돌 가능성: 이번 브리프의 ref-1105~ref-405 은 실행 2026-09-30-09 브리프가 다른 출처(DeepFleet, POGEMA, CJ대한통운 등)에 이미 쓴 id 다(예: ref-1105 IEC 62443 대 DeepFleet, ref-1107 CISA 대 POGEMA, ref-031 VDA 5050 대 CJ대한통운). 퍼블리셔 확인이 필요하다.",
+      "f5(Open-RMF 대시보드의 OIDC·역할 기반 접근 통제)는 51. 인증·권한·격리의 명령 권한·사용자 인증 내용과 겹칠 수 있다. 51. 인증·권한·격리 페이지 본문은 요약만 입력돼 각주 재사용 여부를 확인하지 못했다.",
+      "두 번째 페이지 제안(13. 대화형 기능의 신뢰·기반)의 기존 본문이 입력에 없어 f14~f18 과의 중복·모순 검사를 하지 못했다."
+    ]
+  },
+  "terminology": {
+    "ok": false,
+    "conflicts": [
+      "용어 후보 'STRIDE 위협 분류' 정의의 '빠짐없이 떠올리도록'은 측정 근거 없는 완전 표현이다(공통 규칙 12).",
+      "용어 후보 '보안 수준' 정의의 '목표·역량·달성 수준을 구분'은 근거 출처(ref-1105)에 없다. 그 페이지는 SL-T(목표)만 언급한다.",
+      "용어 후보 '변조 탐지 로그' 정의의 '앞 기록의 해시를 잇거나 외부에 고정'은 어느 finding 에도 근거가 없다(f20 은 블록체인 기반 변조 방지만 말한다). 기존 용어 '감사 추적 (Audit Trail)'과의 관계도 밝혀야 한다.",
+      "용어 후보 '간접 프롬프트 주입'은 기존 용어 '프롬프트 주입 (Prompt Injection)'의 하위 개념이다. 따로 등록한다면 기존 항목과 표기·정의를 맞추고 서로 연결해야 한다."
+    ]
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f10: [사실] → [추정]으로 강등한다. 본문에는 검색 결과 요약으로 확인된 범위(산업용 로봇 제어기의 소프트웨어 취약점과 구조적 결함으로 제어 정확성과 작업자 안전 요구를 무너뜨릴 수 있음을 보였다)만 쓰고, '원격 완전 장악'과 '펌웨어 백도어·인증 우회'는 뺀다 — 원문(ref-1114)을 검증에서도 열지 못했고 검색 결과에 해당 구절이 없다.",
+    "ref-1114: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 해당 항목에 source_unopened: true 를 넣는다 — 원문 PDF 가 403 이어서 열지 못했다.",
+    "f12: '통신 암호화 부족'을 빼고 [사실] → [추정]으로 강등한다. 남길 내용은 점검 주체·기간·6종·40개 항목과, 나르왈·드리미·에코백스 제품의 사진 열람·카메라 강제 활성화, 미흡한 사용자 인증, 개인정보 조회뿐이다 — 기사(ref-969)는 통신 암호화 부족을 취약점으로 싣지 않는다.",
+    "f6·ref-031: 참고문헌 제목을 'VDA 5050 — Interface for the Communication between Mobile Robots and a Fleet Control (VDA5050_EN.md, 3.0.0)'으로 고친다. 본문의 '플릿 관리 시스템–무인운반차'는 '플릿 관제–이동 로봇'으로 바꾼다. 원문 문장 그대로 '프로토콜 보안은 브로커 구성에서 고려해야 하지만 이 지침은 다루지 않는다'로 쓰고, '운영자와 통합 사업자가 정해야 한다'는 [추정]으로 떼어 쓰거나 뺀다 — 3.0.0 원문 제목·용어와 다르고, 뒷부분은 원문에 없는 해석이다.",
+    "f4: 엄격 모드를 '보안 파일을 찾지 못하면 그 참여자를 실행하지 않는 모드'로, 허용 모드를 '보안 파일이 없으면 보안 기능 없이 실행하는 기본 모드'로 고쳐 쓴다 — ref-009 원문의 정의와 맞추기 위해서다.",
+    "f21: 강등된 f10 을 근거로 '제어기가 로봇 전면 제어로 이어졌다'고 쓰지 않고, 전면 제어 사례는 f8 에만 근거한다. '높은 확률로 탈옥'은 '연구 환경에서 높은 공격 성공률이 보고됐다(f14)'로 바꾼다 — f16 에는 성공률 수치가 없다.",
+    "f22: '플릿 서버 하나가 뚫리면 그 플릿의 로봇 전체가 제어권을 잃는다'를 '플릿 서버 취약점이 로봇 기능 전면 제어로 이어질 수 있다(f8)'로 줄인다. KISA 해설서(f13)는 '제품 요건'이 아니라 참고 자료로 쓴다 — CISA 권고와 기사가 뒷받침하는 범위를 넘는다.",
+    "3·5·6·9절: f9(방화벽·VPN·망 격리)와 f10·f11(제어기·펌웨어·제조사 원격 측정)을 ROP 가 직접 하는 대책처럼 쓰지 않는다. 사례·위협 근거로만 쓰고 9절에서 f24 에 따라 '연계 대상'으로 짧게 다룬다 — 분류 원문 19장의 로봇 자체 지능·제어, 시설·설비 제어 경계다.",
+    "f19: 근거가 업계 해설(IES, 2026-08-27 갱신)임을 본문이나 각주에 밝히고, 확인하지 못한 규정 조항 번호는 쓰지 않는다 — EUR-Lex 원문을 열지 못했다.",
+    "용어 후보 'STRIDE 위협 분류': 정의에서 '빠짐없이 떠올리도록 돕는'을 빼고 '여섯 범주로 위협을 분류하는'처럼 쓴다 — 측정 근거 없는 완전 표현이다.",
+    "용어 후보 '보안 수준': 정의에서 '목표·역량·달성 수준을 구분하고'를 뺀다 — ref-1105 에 근거가 없고 SL-T 만 언급된다.",
+    "용어 후보 '변조 탐지 로그': 정의에서 '앞 기록의 해시를 잇거나 외부에 고정해'를 빼고, f20 이 뒷받침하는 범위(블록체인 같은 수단으로 기록이 고쳐지면 드러나게 하는 기록)로 줄인다. 기존 용어 '감사 추적'과 연결한다 — 해시 체인 방식은 브리프에 근거가 없다.",
+    "용어 후보 '간접 프롬프트 주입': 새로 등록한다면 기존 용어 '프롬프트 주입 (Prompt Injection)'의 하위 개념으로 표기하고 두 항목을 서로 연결한다. 정의는 f18(OWASP)의 구분을 따른다 — 기존 용어와 뜻이 겹친다.",
+    "두 번째 페이지 제안(docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md): 스토리텔러 입력에 그 페이지의 현재 본문이 있을 때만 6·8·11절을 갱신하고, 같은 주장이 이미 있으면 기존 각주를 다시 쓴다. 본문이 입력에 없으면 이번 실행에서 갱신하지 않고 다음 실행 후보로 남긴다 — 검증에서 중복·모순을 확인하지 못했다.",
+    "11절: oq-144 는 해결로 바꾸지 않는다. f15·f17 은 시뮬레이션·실험실 결과인 부분 근거로만 적는다 — 현장 시험 결과가 없다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 1차 조건부 승인. 확인 23건, 미확인 2건, 교차 확인 2건. 강등: f10 사실 → 추정(원문 미열람이고, 검색 결과 요약에 '원격 완전 장악·펌웨어 백도어·인증 우회'가 없음), f12 사실 → 추정('통신 암호화 부족'이 출처에 없음). 원문 미열람 출처: ref-1114(Quarta 외, 검증에서도 403). 주의: 사실 주장의 대부분은 단일 출처다(정부 권고·오픈소스 설계 문서·arXiv 초록). 교차 확인은 두 건뿐이다. 하나는 EU 기계류 규정 요구(f19, 업계 해설과 독립 해설의 검색 결과)이고, 다른 하나는 KISA·한국소비자원 로봇청소기 점검 개요(f12, 기사와 KISA 보도자료의 검색 결과)다. LLM 탈옥·주입 공격과 방어 수치(f14·f15·f17)는 연구·시뮬레이션 환경의 결과다. 3절(왜 중요한가)과 9절(책임 경계)은 추정 종합이다. ROP 2 위협 모델(ref-010)은 원문에 초안(DRAFT) 문서로 표시돼 있다. VDA 5050 3.0.0 의 원문 제목은 'Mobile Robots and a Fleet Control'이고, 같은 URL 이 실행 2026-09-30-10 의 ref-1079 로도 쓰였다. 참고문헌 id ref-1105~ref-405 은 실행 2026-09-30-09 브리프가 다른 출처에 쓴 id 와 겹치므로 퍼블리셔 확인이 필요하다. 브리프에서 webfetch 로 연 출처는 fetch_url 이 비어 있지만, 검증에서 모두 열어 내용을 확인했다(ref-1114 제외). 13. 대화형 기능의 신뢰·기반과 51. 인증·권한·격리 페이지 본문이 입력에 없어 두 페이지와의 중복 검사는 하지 못했다. oq-144 는 해결로 인정하지 않는다(부분 근거 f15·f17). 정정 요청 없음. 검증 검색 3회(리서치 16회와 합쳐 19회/30).",
+  "retry_reason": null
+}
