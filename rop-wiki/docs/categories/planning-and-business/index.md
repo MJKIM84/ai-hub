@@ -28,7 +28,7 @@ sources: [ref-002, ref-023, ref-031, ref-044, ref-049, ref-060, ref-098, ref-101
 | 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 | 페이지 | 현재 상태 |
 |---|---|---|---|---|
 | **1. 기술·시장·업체 동향** | 카테고리마다 연구·기사·업체 발표를 모으고, 제품·업체·로봇 종류의 지형을 정리한다 | 어떤 연구·제품·업체가 로봇 오케스트레이션의 흐름을 바꾸고 있는가? | [1. 기술·시장·업체 동향](technology-market-and-vendor-trends.md) | published |
-| **2. 사용 사례·요구·책임 범위** | 로봇에게 맡길 일과 현장 유형별 요구, 플랫폼이 직접 맡을 범위와 외부에 맡길 범위를 정한다 | 로봇에게 어떤 일을 맡기고, 플랫폼은 그중 어디까지 직접 책임질 것인가? | [2. 사용 사례·요구·책임 범위](use-cases-requirements-and-scope.md) | seed |
+| **2. 사용 사례·요구·책임 범위** | 로봇에게 맡길 일과 현장 유형별 요구, 플랫폼이 직접 맡을 범위와 외부에 맡길 범위를 정한다 | 로봇에게 어떤 일을 맡기고, 플랫폼은 그중 어디까지 직접 책임질 것인가? | [2. 사용 사례·요구·책임 범위](use-cases-requirements-and-scope.md) | published |
 | **3. 경제성·조달·사업 모델** | 투자 효과를 따지고, 로봇·플랫폼을 골라 계약하고, 과금 방식을 정한다 | 도입 비용을 넘는 효과가 나오며, 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가? | [3. 경제성·조달·사업 모델](economics-procurement-and-business-models.md) | seed |
 
 [분류원문]
@@ -129,10 +129,11 @@ flowchart LR
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 40건이다(논문 12건 · 기사·보고서 13건 · 업체 발표 1건 · 표준·오픈소스·기관 자료 14건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 55건이다(논문 15건 · 기사·보고서 19건 · 업체 발표 1건 · 표준·오픈소스·기관 자료 20건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
+- [ref-1104](../../references/ref-1104.md) — Friese, C., Klebbe, R., & Heimann-Steinert, A. (JMIR Nursing), Nurses' Evaluation of a Service Robot for Inpatient Care: Technology Acceptance Study (발행 2026-04-14)
 - [ref-060](../../references/ref-060.md) — Lee, Y. 외(Digital Health), Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments (발행 2026)
 - [ref-165](../../references/ref-165.md) — Autonomous Robots 게재 서베이(arXiv 2502.03814) 저자, Large Language Models for Multi-Robot Systems: A Survey (발행 2025-02)
 - [ref-133](../../references/ref-133.md) — Lorenz, Otto, & Gendreau (Networks, Wiley), Picking Operations in Warehouses With Dynamically Arriving Orders: How Good is Reoptimization? (발행 2025)
@@ -140,24 +141,23 @@ flowchart LR
 - [ref-102](../../references/ref-102.md) — Springer(FAIM 2025 발표 논문, 저자 미확인), Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics (발행 2025)
 - [ref-146](../../references/ref-146.md) — Omega 게재 논문(저자 미확인), The role of energy consumption in robotic mobile fulfillment systems: Performance evaluation and operating policies with dynamic priority (발행 2024)
 - [ref-115](../../references/ref-115.md) — Production & Manufacturing Research 게재 논문(저자 미확인, Chalmers 공개본), Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes (발행 2023)
-- [ref-121](../../references/ref-121.md) — Blondin, M., Mazowiecki, F., & Offtermatt, P. (LICS 2022), The complexity of soundness in workflow nets (발행 2022)
-- [ref-098](../../references/ref-098.md) — Zou, B., Gong, Y., de Koster, R., & Xu, X., Evaluating battery charging and swapping strategies in a robotic mobile fulfillment system (발행 2018)
-- [ref-149](../../references/ref-149.md) — Springer(학술대회 발표 논문, 저자 미확인), Material Movement Analysis for Warehouse Business Process Improvement with Process Mining: A Case Study (발행 2015)
-- 그 밖에 2건
+- [ref-1201](../../references/ref-1201.md) — 곽경민, 박범, 고은지, 윤철주, 김경훈 (로봇학회논문지 17(4)), 급속 확산되는 물류현장의 로봇적용 사례 (발행 2022-11)
+- [ref-1198](../../references/ref-1198.md) — Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (Frontiers in Robotics and AI), Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test (발행 2022-08-23)
+- 그 밖에 5건
 
 **기사·보고서**
 
 - [ref-909](../../references/ref-909.md) — 서울신문, 부품 배치 '척척' 무거운 짐도 '사뿐'… 아틀라스 2.5만대 로봇 학교 간다 (발행 2026-09-23)
 - [ref-908](../../references/ref-908.md) — 아시아경제, CJ대한통운, 물류업계 최초 AI 휴머노이드 상용화 '첫발' (발행 2026-09-03)
 - [ref-901](../../references/ref-901.md) — International Federation of Robotics (IFR), Robot Density Surges in Europe, Asia, and Americas (발행 2026-04-08)
+- [ref-1200](../../references/ref-1200.md) — 아시아경제, 호텔 룸서비스도 카카오모빌리티 로봇이…"가동률 ... (제목 일부만 확인) (발행 2026-03-16)
 - [ref-903](../../references/ref-903.md) — 로봇신문 (한국로봇산업진흥원 '2024년 국내 로봇산업 실태조사 결과 보고서' 요약), [Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약 (발행 2026-01-25)
 - [ref-902](../../references/ref-902.md) — International Federation of Robotics (IFR), Top 5 Global Robotics Trends 2026 (발행 2026-01-08)
 - [ref-870](../../references/ref-870.md) — 로봇신문, [기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 ‘피지컬 AI’ 시대의 서막 (발행 2025-11-09)
 - [ref-899](../../references/ref-899.md) — International Federation of Robotics (IFR), World Robotics 2025 report – SERVICE ROBOTS – released by IFR (발행 2025-10-07)
+- [ref-1197](../../references/ref-1197.md) — International Federation of Robotics (IFR), Service Robots See Global Growth Boom (발행 2025-10)
 - [ref-900](../../references/ref-900.md) — International Federation of Robotics (IFR), World Robotics 2025 report – INDUSTRIAL ROBOTS – released by IFR (발행 2025-09-25)
-- [ref-905](../../references/ref-905.md) — Interact Analysis (Ash Sharma), Mobile Robot Market Forecast Revised Downward (발행 2025-07)
-- [ref-002](../../references/ref-002.md) — ISA, Update to ISA-95 Standard Addresses Integration of Enterprise and Manufacturing Control Systems (발행 2025)
-- 그 밖에 3건
+- 그 밖에 9건
 
 **업체 발표**
 
@@ -166,26 +166,26 @@ flowchart LR
 **표준·오픈소스·기관 자료**
 
 - [ref-130](../../references/ref-130.md) — OPC Foundation, UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv) (발행 2024-01-31)
+- [ref-991](../../references/ref-991.md) — 대한민국 정책브리핑 (산업통상자원부·경찰청), ‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 등 활용 (발행 2023-11-16)
 - [ref-129](../../references/ref-129.md) — MESA International, B2MML-BatchML/Schema/B2MML-TransactionProfile.xsd (발행 2023)
 - [ref-044](../../references/ref-044.md) — GS1, gs1/EPCIS — Ontology/CBV.ttl (Core Business Vocabulary ontology 2.0) (발행 2021-09-30)
+- [ref-1195](../../references/ref-1195.md) — 산업통상자원부 (KDI 경제정보센터 게재), 로봇활용 표준공정모델로 제조산업 전 분야에 로봇보급 본격 착수 (발행 2020-06-25)
+- [ref-1203](../../references/ref-1203.md) — ISO / IEC / IEEE, ISO/IEC/IEEE 29148:2018 Systems and software engineering — Life cycle processes — Requirements engineering (발행 2018)
+- [ref-947](../../references/ref-947.md) — 한국로봇산업진흥원, 서비스로봇 실증사업 (발행 미확인)
+- [ref-937](../../references/ref-937.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), ROMI-H \| Changi General Hospital (발행 미확인)
 - [ref-391](../../references/ref-391.md) — MassRobotics, What Is the MassRobotics AMR Interoperability Standard? (발행 미확인)
 - [ref-148](../../references/ref-148.md) — Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/robot_state.json (발행 미확인)
-- [ref-125](../../references/ref-125.md) — Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_request.json (발행 미확인)
-- [ref-111](../../references/ref-111.md) — Open Robotics (open-rmf), rmf_api_msgs — rmf_api_msgs/schemas/task_state.json (발행 미확인)
-- [ref-105](../../references/ref-105.md) — Open Robotics (open-rmf), fleet_adapter_template — fleet_adapter_template/config.yaml (발행 미확인)
-- [ref-104](../../references/ref-104.md) — Open Robotics (open-rmf), rmf_demos — Demonstrations of Open-RMF (README) (발행 미확인)
-- [ref-101](../../references/ref-101.md) — Merschformann, M. (RAWSim-O GitHub), RAWSim-O: A simulation framework for Robotic Mobile Fulfillment Systems (README) (발행 미확인)
-- 그 밖에 4건
+- 그 밖에 10건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-29 · 갱신 · [1. 기술·시장·업체 동향](technology-market-and-vendor-trends.md) — 섹션 3~11 신규 작성(IFR·국내 실태조사 통계, 제품 지형 세 층, 물류창고·제조 공장·기타 사례 3건, 표준 3건, 자료 10건, 경계 2행, 연결 9개, 열린 질문 4건), 프런트매터 related_areas·tags·confidence·sources·last_run 채움, 13절 각주. 2차: 11절 첫 문장 괄호 정리, 4절 'IT/OT 융합' 표기 통일, 5절 사례 제목의 AMR·RMAC 과 9절 IFR 약어 풀이 (실행 2026-09-29-10)
-- 2026-09-29 · 생성 · [1. 기술·시장·업체 동향 — 대표 접근법과 기술](../../topics/2026/2026-09-29-area01-s6.md) — 자동 분리: 1. 기술·시장·업체 동향 의 "6. 대표 접근법과 기술" 절(2,471자)을 옮겼다. 2차: '시장 통계 추적' 첫 단락을 세 단락으로 나눔(내용·태그·각주 동일) (실행 2026-09-29-10)
-- 2026-09-29 · 생성 · [1. 기술·시장·업체 동향 — 대표 연구와 자료](../../topics/2026/2026-09-29-area01-s8.md) — 자동 분리: 1. 기술·시장·업체 동향 의 "8. 대표 연구와 자료" 절(1,493자)을 옮겼다. 2차: IFR 동향 항목의 'IT/OT 융합' 표기 통일 (실행 2026-09-29-10)
-- 2026-09-29 · 생성 · [1. 기술·시장·업체 동향 — 왜 중요한가](../../topics/2026/2026-09-29-area01-s3.md) — 자동 분리: 1. 기술·시장·업체 동향 의 "3. 왜 중요한가" 절(1,175자)을 옮겼다. 2차: IFR 동향 문장의 'IT/OT 융합' 표기 통일 (실행 2026-09-29-10)
-- 2026-09-29 · 생성 · [1. 기술·시장·업체 동향 — 핵심 개념과 용어](../../topics/2026/2026-09-29-area01-s4.md) — 자동 분리: 1. 기술·시장·업체 동향 의 "4. 핵심 개념과 용어" 절(1,162자)을 옮겼다. 2차: 용어 항목 제목·세 줄 요약·3절 첫 문장의 'IT/OT 융합' 표기 통일 (실행 2026-09-29-10)
+- 2026-09-30 · 갱신 · [2. 사용 사례·요구·책임 범위](use-cases-requirements-and-scope.md) — 섹션 3~11 신규 작성(현장 유형 사례 7건: 병원 3·상업 시설·제조 공장·물류창고·실외, 표준·프레임워크 8건, 자료 6건, 경계 3행, 연결 17개, 열린 질문 5건), 프런트매터 채움, 13절 각주 17건. 2차: f26·f28·f18 태그 보완, f21 발표 표현, RoMi-H 유형, 물류 흐름 대응 문장 삭제, 약어 풀어쓰기 (실행 2026-09-30-14)
+- 2026-09-30 · 생성 · [2. 사용 사례·요구·책임 범위 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area02-s7.md) — 자동 분리: 2. 사용 사례·요구·책임 범위 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,504자)을 옮겼다 (실행 2026-09-30-14)
+- 2026-09-30 · 생성 · [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](../../topics/2026/2026-09-30-area02-s10.md) — 자동 분리: 2. 사용 사례·요구·책임 범위 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,149자)을 옮겼다 (실행 2026-09-30-14)
+- 2026-09-30 · 생성 · [2. 사용 사례·요구·책임 범위 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area02-s6.md) — 자동 분리: 2. 사용 사례·요구·책임 범위 의 "6. 대표 접근법과 기술" 절(963자)을 옮겼다 (실행 2026-09-30-14)
+- 2026-09-30 · 생성 · [2. 사용 사례·요구·책임 범위 — 대표 연구와 자료](../../topics/2026/2026-09-30-area02-s8.md) — 자동 분리: 2. 사용 사례·요구·책임 범위 의 "8. 대표 연구와 자료" 절(954자)을 옮겼다 (실행 2026-09-30-14)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

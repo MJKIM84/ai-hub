@@ -21,6 +21,13 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 핵심 개념과 용어](2026/2026-09-30-area02-s4.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 대표 접근법과 기술](2026/2026-09-30-area02-s6.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area02-s7.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 대표 연구와 자료](2026/2026-09-30-area02-s8.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결](2026/2026-09-30-area14-s10.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 열린 질문](2026/2026-09-30-area14-s11.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 왜 중요한가](2026/2026-09-30-area14-s3.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |

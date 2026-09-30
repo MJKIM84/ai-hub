@@ -260,8 +260,13 @@ version: 1
 | oq-238 | 에이전트 투명성이나 계획 분할 시각화 같은 설명 가능한 표시를 실제 운영 중인 로봇 플릿 관제 화면에 적용해 운영자의 상황 인식과 대응 시간을 현장에서 측정한 연구가 있는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
 | oq-239 | 병원의 특수 물품(마약류·검체 등) 로봇 배송 이력처럼 보관 의무가 걸릴 수 있는 실행 기록의 보관 기간과 무결성 요건을 국내 법령·지침이 정하고 있는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
 | oq-240 | 공정 산업의 ISA-101 처럼 다중 로봇 관제 화면에 특화된 화면 설계 표준이나 지침이 있는가, 아니면 공정 HMI 표준을 옮겨 써야 하는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
+| oq-241 | 로봇 오케스트레이션 도입 계약에서 운영자·통합자·로봇 제조사·플랫폼 사업자 사이의 운영 책임을 나누는 책임 분담표나 표준 계약 조항을 공개한 사례가 있는가? | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 2026-09-30 | 2026-09-30-14 | 열림 | — |
+| oq-242 | 병원 검체 이송 같은 업무에서 로봇·컨베이어·사람 운반을 같은 조건으로 비교해 로봇에게 맡길 업무를 정한 정량 연구가 있는가? | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-30 | 2026-09-30-14 | 열림 | — |
+| oq-243 | IEC 62559 사용 사례 템플릿이나 ISO/IEC/IEEE 29148 요구 명세 형식을 다중 로봇·로봇 오케스트레이션 사용 사례 정의에 적용한 사례가 있는가? | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[24. 작업·워크플로 모델링](categories/planning-and-optimization/task-and-workflow-modeling.md) | 2026-09-30 | 2026-09-30-14 | 열림 | — |
+| oq-244 | 싱가포르 RoMi-H 처럼 공공 조달에서 상호운용 플랫폼 연동을 로봇 도입 요구 조건으로 둔 한국 공공병원·공공기관 사례가 있는가? | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-14 | 열림 | — |
+| oq-245 | 가정·공동주택과 기타 현장(공공시설·연구실 등)에서 여러 로봇에게 맡길 일과 요구를 사용자와 함께 도출한 연구나 실증 사례가 있는가? | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md)<br>[65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md)<br>[67. 기타 현장](categories/site-type-applications/other-sites.md) | 2026-09-30 | 2026-09-30-14 | 열림 | — |
 
-상태별 건수: 열림 239건, 조사 중 1건
+상태별 건수: 열림 244건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

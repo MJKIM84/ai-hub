@@ -20,6 +20,29 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-14 | 갱신 | [docs/categories/planning-and-business/use-cases-requirements-and-scope.md](categories/planning-and-business/use-cases-requirements-and-scope.md) | 섹션 3~11 신규 작성(현장 유형 사례 7건: 병원 3·상업 시설·제조 공장·물류창고·실외, 표준·프레임워크 8건, 자료 6건, 경계 3행, 연결 17개, 열린 질문 5건), 프런트매터 채움, 13절 각주 17건. 2차: f26·f28·f18 태그 보완, f21 발표 표현, RoMi-H 유형, 물류 흐름 대응 문장 삭제, 약어 풀어쓰기 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s7.md](topics/2026/2026-09-30-area02-s7.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,504자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s10.md](topics/2026/2026-09-30-area02-s10.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,149자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s6.md](topics/2026/2026-09-30-area02-s6.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "6. 대표 접근법과 기술" 절(963자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s8.md](topics/2026/2026-09-30-area02-s8.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "8. 대표 연구와 자료" 절(954자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s3.md](topics/2026/2026-09-30-area02-s3.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "3. 왜 중요한가" 절(897자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s4.md](topics/2026/2026-09-30-area02-s4.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "4. 핵심 개념과 용어" 절(878자)을 옮겼다 |
+| 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s11.md](topics/2026/2026-09-30-area02-s11.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "11. 열린 질문" 절(669자)을 옮겼다 |
+| 2026-09-30-14 | 요약 | [docs/categories/planning-and-business/use-cases-requirements-and-scope.md](categories/planning-and-business/use-cases-requirements-and-scope.md) | 2. 사용 사례·요구·책임 범위: 섹션 3~11 신규 작성(병원·상업 시설·제조 공장·물류창고·실외 사례 7건, 표준·프레임워크 8건, 연결 17개, 열린 질문 5건), 1차 조건부 승인 수정 15건·2차 수정 7건 이행 |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1104.md](references/ref-1104.md) | 참고문헌 ref-1104 등록: Nurses' Evaluation of a Service Robot for Inpatient Care: Te… |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1195.md](references/ref-1195.md) | 참고문헌 ref-1195 등록: 로봇활용 표준공정모델로 제조산업 전 분야에 로봇보급 본격 착수 |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1196.md](references/ref-1196.md) | 참고문헌 ref-1196 등록: “제조 로봇 표준공정 모델 적용 사업 국내를 넘어 ... (제목 일부만 확인) |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1197.md](references/ref-1197.md) | 참고문헌 ref-1197 등록: Service Robots See Global Growth Boom |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1198.md](references/ref-1198.md) | 참고문헌 ref-1198 등록: Scalable and heterogenous mobile robot fleet-based task auto… |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1199.md](references/ref-1199.md) | 참고문헌 ref-1199 등록: 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인) |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1200.md](references/ref-1200.md) | 참고문헌 ref-1200 등록: 호텔 룸서비스도 카카오모빌리티 로봇이…"가동률 ... (제목 일부만 확인) |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1201.md](references/ref-1201.md) | 참고문헌 ref-1201 등록: 급속 확산되는 물류현장의 로봇적용 사례 |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1202.md](references/ref-1202.md) | 참고문헌 ref-1202 등록: IEC 62559 - use case methodology |
+| 2026-09-30-14 | 생성 | [docs/references/ref-1203.md](references/ref-1203.md) | 참고문헌 ref-1203 등록: ISO/IEC/IEEE 29148:2018 Systems and software engineering — L… |
+| 2026-09-30-14 | 생성 | [docs/glossary/use-case-template.md](glossary/use-case-template.md) | 용어집 항목 사용 사례 템플릿 |
+| 2026-09-30-14 | 생성 | [docs/glossary/stakeholder-requirements-specification.md](glossary/stakeholder-requirements-specification.md) | 용어집 항목 이해관계자 요구사항 명세 |
+| 2026-09-30-14 | 생성 | [docs/glossary/robot-standard-process-model.md](glossary/robot-standard-process-model.md) | 용어집 항목 로봇활용 표준공정모델 |
+| 2026-09-30-14 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-13 | 갱신 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 영역 심화: 3~11절 신규 작성, 13절 각주 정의 15건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 15건 반영). 2차: 3절 첫 문장을 태그 없는 연결 문장으로, 4절 도입 문장의 [사실] 태그 제거, 9절 '상용 예로'를 '6절에서 예로'로 고침 |
 | 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s6.md](topics/2026/2026-09-30-area37-s6.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '국내 상용 예로'를 '국내 예로(연구 과제 페이지 기준)'로 고침 |
 | 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s8.md](topics/2026/2026-09-30-area37-s8.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "8. 대표 연구와 자료" 절을 옮겼다(2차 재실행에서 변경 없음) |

@@ -1,0 +1,422 @@
+{
+  "duration_api_ms": 286672,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.091978,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 137708,
+    "cache_read_input_tokens": 1393775,
+    "output_tokens": 23413,
+    "output_tokens_details": {
+      "thinking_tokens": 9494
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 137708,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15319,
+        "cache_read_input_tokens": 223952,
+        "cache_creation_input_tokens": 2222,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2222
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 201568,
+      "outputTokens": 6335,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.243243,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 23413,
+      "cacheReadInputTokens": 1393775,
+      "cacheCreationInputTokens": 137708,
+      "webSearchRequests": 0,
+      "costUSD": 1.848735,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9494,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 20,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-14\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IFR 뉴스 페이지(World Robotics 2025 서비스 로봇 편)를 열어 약 20만 대(+9%), 운송·물류 102,900대(+14%), 접객 42,000대 이상(-11%), 전문 청소 25,000대 이상(+34%), 농업 19,500대(-6%)를 대조했다. 집계 주체인 IFR의 1차 발표라서 단일 출처지만 [사실]을 유지한다. 본문에 2024년 판매 기준과 IFR 발표임을 밝힌다.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 인력 부족이 주요 동기라는 문장과 운송·물류 RaaS 42% 성장이 같은 IFR 페이지에 있다. 직접 인용은 이 출처에서 1회만 한다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"원문 미열람(ISO 페이지 403). 검색 결과로 ISO OBP 항목과 제목·기관이 일치함을 확인했다. 요구 공정·정보 항목·StRS(수용 기준 포함, 구현 방법 없음) 서술은 스니펫 범위 안이다. 신뢰도는 medium이 상한이다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: IEC SyC Smart Energy 페이지에 기원(IEC PAS 62559:2008, IntelliGrid), 2부(2015) 템플릿, 3부(2017) XML 직렬화, 4부 기업 프로젝트 적용 지침이 있다. 1부(2019)는 브리프에 없지만 문제되지 않는다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. evidence_excerpt의 'Industrie 4.0'은 IEC 페이지에 없다. 페이지가 드는 적용 분야는 스마트그리드·스마트시티·스마트홈/빌딩·AAL이며, 로봇 적용 언급은 없다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: The Robot Report(2023-10-26)에서 위험성평가를 통합자가 한다는 인용과 사용 정보 제공, 사용자의 교육·안전 작업, 개조한 사용자가 제조사·통합자 역할을 맡는다는 내용을 대조했다. 표준 원문은 미열람이고 전문지 기사 기준이다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-031.txt(VDA 5050 3.0.0)의 5.3절(관제 기능), 5.4절(로봇 기능), 2절(범위 밖 항목: 안전 요구, 교통 관리 로직, 다른 통신 인터페이스, 프로젝트·시운전 절차, 운영 책임, 사이버보안)과 일치한다. 발행일은 미확인이며 3.0.0 판을 기준으로 적는다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-004.txt(rmf-core.md)의 Fleet adapter type 표(Full Control, Traffic Light, Read Only, No Interface)와 일치한다. 공유 공간당 Read Only 플릿은 최대 1개이고, 인터페이스 없음은 교착 가능성이 크다는 서술도 원문에 있다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f7·f8을 근거로 한 추정이며 두 근거 모두 원문으로 확인했다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PMC 본문에서 샤리테 RoMi 프로젝트, 반휴머노이드 로봇, 정보 전달·물품 배달·음료 배급, 간호 인력의 적용 시나리오·능력 요구·평가 기준 공동 개발을 확인했다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: n=30, 상관계수 rs 0.740·0.628·0.505·-0.516과 투명한 전달·직접 체험 결론이 원문과 같다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"핵심 내용 확인: 병원 직원과 협업해 검체 운반을 과제로 정했고, 중환자실에서 검사실로 운반했으며, 검사실 직원이 꺼낸 뒤 터치스크린으로 확인했다. 다만 병원 현장에는 TIAGo 한 종만 투입했고 TIAGo·Jackal 이기종 관리는 시험 환경에서 확인했으므로 '이기종 로봇 플릿은 RMF로 조율했다'는 문구를 정정해야 한다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 반자동문(RFID·근접 센서), 좁은 복도·혼잡, 문 열기 장치 전원 소진이 원문에 있다. 저자들은 'Safe integration of legacy infrastructure'와 혼잡 시 안전 구역 대기(RMF 미지원)를 과제로 들었다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인: ZDNet(2024-09-19)과 비즈한국(2025-04-10) 두 매체가 모두 약제·검체 운반, 물품 배송, 환자 안내를 전해 교차 확인했다. 두 기사가 전하는 업무 목록은 일부 다르다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ZDNet은 7종 73대와 누적 35,492건(2022-08~2024-05 말)과 전용 승강기를, 비즈한국은 11종 77대를 전한다. 기준 시점이 다른 두 값을 모두 제시하고 한쪽을 고르지 않는다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"의견 유지. 기사는 발언자를 '상급종합병원의 A 교수'(익명)로 적었고, 검체 이송은 컨베이어·인력 운송이 더 빠르고 안전하며 병원 물류가 복잡하다고 전한다. '시간에 민감한 업무'라는 표현은 기사에 없다(기사에는 '시간이 중요하지 않은 업무'라는 표현이 있다). 발언자 표기와 문구를 정정해야 한다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 기사는 한국보건산업진흥원의 '디지털시대 의료서비스 혁신을 위한 스마트병원 육성방안 연구' 보고서를 인용해 경사 구간, 수동문, 건물이 나뉜 경우 건물마다 다른 회사 승강기를 든다. 보고서 원문은 미확인(재인용)이다. '구역마다 다른 승강기 시스템'은 기사 표현에 맞게 고쳐야 한다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: CGH CHART 페이지에 상호운용 요구 문장, 네 도메인(Machine·Control·Central·Integration), 2018-07 발표와 2019-10-31 ROSCon 공개가 있다. 페이지 발행일은 미확인이다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"부분 강등. 로보티즈(제조)·카카오모빌리티(플랫폼·배송 서비스 운영)·호텔(서비스 적용·운영)의 역할 분담은 기사 보도로 확인했으므로 [사실](기사 보도)로 둘 수 있다. 플랫폼 기능 목록(QR 주문, 수요–공급 예측, 이기종 통합 관제, 인프라·보안·장애 관리, 운영 컨설팅)은 회사 설명이므로 [추정]으로 낮추고 '벤더 주장'을 병기한다. 기사 표현은 '매칭'이 아니라 '실시간 수요–공급 예측 알고리즘'이다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 기사도 모든 수치를 회사 발표로 적는다. 추정·벤더 주장 표시가 적절하다. 측정 기간과 산정 방법은 미공개다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 산업통상자원부 보도자료(2020-06-25)에 표준공정모델 14개, 뿌리·섬유·식음료·자동차 업종, 60개 기업, 패키지 지원 문구, 지원단 6개 기관이 있다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 로봇신문 기사 제목은 '제조 로봇 표준공정 모델 적용 사업 국내를 넘어 해외 공장까지 진출'(2025-09-15)이다. 64종, 148건, 수요기업 135·공급기업 89, 베트남 적용이 기사와 같다. 기관 수치이며 low를 유지한다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 한국로봇산업진흥원 페이지에서 수요처 주관·로봇기업 참여, 국비는 도입 비용의 50% 이내, 민간 부담은 총사업비의 50% 이상, 수요기관 부담은 25% 이상임을 확인했다. 지원 분야는 '물류·웨어러블·의료·기타'가 아니라 물류(제조공장·유통물류·음식점·실외배송)·웨어러블·의료(수술·재활)·협동로봇·언택트 서비스로 게시돼 있어 정정해야 한다. 게시일은 미확인이며 확인일(2026-09-30)을 기준으로 한다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 로봇학회논문지 17(4), 2022-11-30 초록에 계약물류·택배·풀필먼트, 이송·핸들링·지원(하차 자동화·웨어러블 슈트) 분류, 물류 특성에 맞는 기술·운영 방법 선택이 있다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 정책브리핑(2023-11-16, 산업통상자원부·경찰청)에서 11-17 시행, 500kg·15km/h 이하, 16개 시험항목, 배달·순찰 허용, 보험·공제 가입 의무, 범칙금 3만 원을 확인했다. '연계 대상:' 표시가 적절하다.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지, 문구 정정 필요. f14에 실외 배송이 있어 '실내' 한정은 근거가 없다. f16 인용은 정정한 발언자 표기('상급종합병원의 한 교수 의견')에 맞춘다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 근거 finding(f3·f4·f7·f8·f10·f11·f18)은 모두 확인했다. '플릿 연동 수준'은 용어집 표기 '플릿 제어 수준'으로 통일한다.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 분류 원문 19장 경계(시설·설비 제어, 업종별 조건, 로봇 자체 지능)에 맞게 연계 대상을 구분했다.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 연결 영역의 번호와 이름이 부록 A와 일치한다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"ref-031(VDA 5050 VDA5050_EN.md)은 같은 날 실행 2026-09-30-13의 ref-1170과 URL이 같다. 이번 페이지는 기존 id인 ref-031을 쓰고, 두 id는 퍼블리셔가 합친다.\",\"ref-004는 참고문헌 목록에 등록된 URL을 입력으로 받지 못했다. 이번 실행이 인용한 RMF Core Overview 장(rmf-core.html)과 같은 문서인지 확인이 필요하다.\",\"f8의 네 단계는 용어집 fleet-control-level(플릿 제어 수준)과 같은 개념이다. 새로 정의하지 말고 용어집에 링크한다.\",\"f18 RoMi-H, f2 RaaS, f25 운행안전인증, f6 위험성평가·사용 정보는 용어집에 이미 있다(robotic-middleware-for-healthcare, robot-as-a-service, outdoor-mobile-robot-operational-safety-certification, risk-assessment, information-for-use). 새로 등록하지 않고 링크한다.\"]},\"terminology\":{\"ok\":false,\"conflicts\":[\"브리프 f8·f9·f27·f29와 페이지 제안의 '플릿 연동 수준'은 용어집의 '플릿 제어 수준(Fleet Control Level)'과 다른 표기다. 용어집 표기로 통일한다.\",\"용어 후보 '사용 사례 템플릿'의 정의에 있는 '목표·시나리오와 함께'는 이번에 확인한 IEC 페이지 범위(사용 사례·행위자 목록·요구사항 목록 템플릿)를 넘는다. 템플릿 세부 필드는 미확인이다.\"]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f19: 역할 분담(로보티즈 제조, 카카오모빌리티 플랫폼·배송 서비스 운영, 호텔 서비스 적용·운영)만 [사실](아시아경제 보도)로 쓴다. 플랫폼 기능 목록은 [추정]으로 강등하고 '벤더 주장'을 병기한다. '수요–공급 매칭'은 기사 표현인 '실시간 수요–공급 예측 알고리즘'으로 고친다 — 기능 설명의 출처가 회사 발표이고 독립 확인이 없다.\",\"f16: 발언자를 '의대 교수'에서 '상급종합병원의 한 교수(기사에 익명 표기)'로 고친다. 내용은 '검체 이송은 컨베이어·인력 운송이 더 빠르고 안전하며 병원 물류가 복잡해 로봇이 맡기 어렵다'는 [의견]으로 쓰고 '시간에 민감한 업무'라는 표현은 쓰지 않는다 — 비즈한국 원문과 대조한 결과다.\",\"f26: '반복적인 비임상·실내 운반'에서 '실내'를 빼고, f16 인용은 정정한 발언자 표기에 맞춘다 — f14에 실외 배송이 포함돼 있다.\",\"f12: '이기종 로봇 플릿은 RMF로 조율했다'를 '병원 현장에는 TIAGo를 투입했고, RMF로 TIAGo·Jackal 이기종 로봇을 관리하는 것은 시험 환경에서 확인했다'로 고친다 — Valner 외 원문 기준이다.\",\"f17: '건물 구역마다 다른 승강기 시스템'을 '건물이 나뉜 경우 건물마다 다른 회사의 승강기가 설치돼 통신 연동이 어렵다'로 고친다. 인용된 보고서를 한국보건산업진흥원의 '디지털시대 의료서비스 혁신을 위한 스마트병원 육성방안 연구'로 밝히고 '보고서 원문 미확인(기사 재인용)'을 병기한다.\",\"f23: 지원 분야를 '물류(제조공장·유통물류·음식점·실외배송)·웨어러블·의료(수술·재활)·협동로봇·언택트 서비스'로 고친다. 민간 부담 50% 이상과 수요기관 부담 25% 이상은 '총사업비 대비'로 적고, 기준일은 확인일 2026-09-30으로 둔다 — 한국로봇산업진흥원 게시 내용과 대조했다.\",\"f5: 본문에 'Industrie 4.0'을 적용 분야로 쓰지 않는다. IEC 페이지가 드는 분야는 스마트그리드·스마트시티·스마트홈/빌딩·능동형 생활 보조(AAL)다.\",\"f3(ref-1207): 본문에서 ISO/IEC/IEEE 29148의 내용은 '검색 결과 요약 기준'임을 밝힌다. ref-1207 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates의 ref-1207 항목에 source_unopened: true를 넣는다 — ISO 페이지 403으로 원문을 열지 못했다.\",\"f6: 본문에서 ANSI/A3 R15.08-2의 역할 규정은 'The Robot Report 기사(2023-10-26)에 따르면'으로 출처를 밝히고 '표준 원문 미열람'을 적는다. 이 내용은 48. 안전·위험 관리, 50. 안전 표준·인증·사고 조사로 연결하는 연계 대상으로만 짧게 다룬다.\",\"f7(ref-031): VDA 5050 내용은 '3.0.0 판 기준'임을 본문에 밝히고 기존 ref-031 각주를 재사용한다(새 id를 만들지 않는다).\",\"f8(ref-004): 각주는 docs/references/ref-004.md의 '각주 형식' 줄을 그대로 쓰고, 본문에 인용 위치(Programming Multiple Robots with ROS 2의 RMF Core Overview 장)를 밝힌다.\",\"용어: '플릿 연동 수준'을 모두 '플릿 제어 수준(Fleet Control Level)'으로 바꾸고 용어집 fleet-control-level에 링크한다. RoMi-H·서비스형 로봇·실외이동로봇 운행안전인증·위험성평가·사용 정보도 기존 용어집 항목에 링크하고 새로 등록하지 않는다.\",\"용어 후보 '사용 사례 템플릿'의 정의를 'IEC 62559-2가 정한 양식으로, 사용 사례·행위자 목록·요구사항 목록을 구조화해 기록하게 한다'로 줄이고 '목표·시나리오'는 뺀다 — 템플릿 세부 필드는 미확인이다.\",\"열린 질문 2번의 '시간에 민감한 업무에서'를 '검체 이송 같은 업무에서'로 고친다 — f16 정정에 맞춘다.\",\"5절: 현장 유형을 병원(f10~f18, f18은 싱가포르 공공 의료기관의 조달 제약)·상업 시설(f19·f20)·제조 공장(f21·f22)·물류창고(f24)·실외(f25, 연계 대상으로 표시)로 나눠 쓰고, 가정·기타 현장 사례는 찾지 못했음을 적는다. f15의 두 규모 수치는 보도 시점과 함께 둘 다 제시한다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 29건, 미확인 0건, 교차 확인 1건(f14). 강등: f19의 플랫폼 기능 목록 부분을 사실 → 추정(벤더 주장)으로 낮췄다. 역할 분담 보도는 [사실]로 둔다. 원문 미열람 출처: ref-1207(ISO/IEC/IEEE 29148, 검색 결과 일치로 실재 확인). 정정한 문구: f12(병원 현장은 TIAGo 한 종, 이기종 관리는 시험 환경), f16(발언자 '상급종합병원의 한 교수'), f17(건물마다 다른 회사 승강기), f23(지원 분야), f26('실내' 삭제). 주의: 핵심 수치와 사례가 대부분 단일 출처다. 한국 병원·호텔 사례는 기사 중심이고 카카오모빌리티 성과 수치는 벤더 주장이다. ANSI/A3 R15.08-2는 전문지 기사 기준이다. 플랫폼 책임 범위에 관한 결론(f9·f26·f27·f28)은 추정이다. 가정·기타 현장 사례는 찾지 못했다. ref-031은 같은 날 등록된 ref-1170과 URL이 같아 퍼블리셔가 합쳐야 한다. ref-004는 등록된 URL과 이번에 인용한 RMF Core Overview 장이 같은 문서인지 확인하지 못했다. 정정 요청과 해결 제안된 열린 질문은 없다. 검증 검색 1회(리서치와 합쳐 17회/30).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-14",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IFR 뉴스 페이지(World Robotics 2025 서비스 로봇 편)를 열어 약 20만 대(+9%), 운송·물류 102,900대(+14%), 접객 42,000대 이상(-11%), 전문 청소 25,000대 이상(+34%), 농업 19,500대(-6%)를 대조했다. 집계 주체인 IFR의 1차 발표라서 단일 출처지만 [사실]을 유지한다. 본문에 2024년 판매 기준과 IFR 발표임을 밝힌다."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 인력 부족이 주요 동기라는 문장과 운송·물류 RaaS 42% 성장이 같은 IFR 페이지에 있다. 직접 인용은 이 출처에서 1회만 한다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "원문 미열람(ISO 페이지 403). 검색 결과로 ISO OBP 항목과 제목·기관이 일치함을 확인했다. 요구 공정·정보 항목·StRS(수용 기준 포함, 구현 방법 없음) 서술은 스니펫 범위 안이다. 신뢰도는 medium이 상한이다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: IEC SyC Smart Energy 페이지에 기원(IEC PAS 62559:2008, IntelliGrid), 2부(2015) 템플릿, 3부(2017) XML 직렬화, 4부 기업 프로젝트 적용 지침이 있다. 1부(2019)는 브리프에 없지만 문제되지 않는다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. evidence_excerpt의 'Industrie 4.0'은 IEC 페이지에 없다. 페이지가 드는 적용 분야는 스마트그리드·스마트시티·스마트홈/빌딩·AAL이며, 로봇 적용 언급은 없다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: The Robot Report(2023-10-26)에서 위험성평가를 통합자가 한다는 인용과 사용 정보 제공, 사용자의 교육·안전 작업, 개조한 사용자가 제조사·통합자 역할을 맡는다는 내용을 대조했다. 표준 원문은 미열람이고 전문지 기사 기준이다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-031.txt(VDA 5050 3.0.0)의 5.3절(관제 기능), 5.4절(로봇 기능), 2절(범위 밖 항목: 안전 요구, 교통 관리 로직, 다른 통신 인터페이스, 프로젝트·시운전 절차, 운영 책임, 사이버보안)과 일치한다. 발행일은 미확인이며 3.0.0 판을 기준으로 적는다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-004.txt(rmf-core.md)의 Fleet adapter type 표(Full Control, Traffic Light, Read Only, No Interface)와 일치한다. 공유 공간당 Read Only 플릿은 최대 1개이고, 인터페이스 없음은 교착 가능성이 크다는 서술도 원문에 있다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f7·f8을 근거로 한 추정이며 두 근거 모두 원문으로 확인했다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PMC 본문에서 샤리테 RoMi 프로젝트, 반휴머노이드 로봇, 정보 전달·물품 배달·음료 배급, 간호 인력의 적용 시나리오·능력 요구·평가 기준 공동 개발을 확인했다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: n=30, 상관계수 rs 0.740·0.628·0.505·-0.516과 투명한 전달·직접 체험 결론이 원문과 같다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "핵심 내용 확인: 병원 직원과 협업해 검체 운반을 과제로 정했고, 중환자실에서 검사실로 운반했으며, 검사실 직원이 꺼낸 뒤 터치스크린으로 확인했다. 다만 병원 현장에는 TIAGo 한 종만 투입했고 TIAGo·Jackal 이기종 관리는 시험 환경에서 확인했으므로 '이기종 로봇 플릿은 RMF로 조율했다'는 문구를 정정해야 한다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 반자동문(RFID·근접 센서), 좁은 복도·혼잡, 문 열기 장치 전원 소진이 원문에 있다. 저자들은 'Safe integration of legacy infrastructure'와 혼잡 시 안전 구역 대기(RMF 미지원)를 과제로 들었다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인: ZDNet(2024-09-19)과 비즈한국(2025-04-10) 두 매체가 모두 약제·검체 운반, 물품 배송, 환자 안내를 전해 교차 확인했다. 두 기사가 전하는 업무 목록은 일부 다르다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ZDNet은 7종 73대와 누적 35,492건(2022-08~2024-05 말)과 전용 승강기를, 비즈한국은 11종 77대를 전한다. 기준 시점이 다른 두 값을 모두 제시하고 한쪽을 고르지 않는다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "의견 유지. 기사는 발언자를 '상급종합병원의 A 교수'(익명)로 적었고, 검체 이송은 컨베이어·인력 운송이 더 빠르고 안전하며 병원 물류가 복잡하다고 전한다. '시간에 민감한 업무'라는 표현은 기사에 없다(기사에는 '시간이 중요하지 않은 업무'라는 표현이 있다). 발언자 표기와 문구를 정정해야 한다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 기사는 한국보건산업진흥원의 '디지털시대 의료서비스 혁신을 위한 스마트병원 육성방안 연구' 보고서를 인용해 경사 구간, 수동문, 건물이 나뉜 경우 건물마다 다른 회사 승강기를 든다. 보고서 원문은 미확인(재인용)이다. '구역마다 다른 승강기 시스템'은 기사 표현에 맞게 고쳐야 한다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: CGH CHART 페이지에 상호운용 요구 문장, 네 도메인(Machine·Control·Central·Integration), 2018-07 발표와 2019-10-31 ROSCon 공개가 있다. 페이지 발행일은 미확인이다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "부분 강등. 로보티즈(제조)·카카오모빌리티(플랫폼·배송 서비스 운영)·호텔(서비스 적용·운영)의 역할 분담은 기사 보도로 확인했으므로 [사실](기사 보도)로 둘 수 있다. 플랫폼 기능 목록(QR 주문, 수요–공급 예측, 이기종 통합 관제, 인프라·보안·장애 관리, 운영 컨설팅)은 회사 설명이므로 [추정]으로 낮추고 '벤더 주장'을 병기한다. 기사 표현은 '매칭'이 아니라 '실시간 수요–공급 예측 알고리즘'이다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 기사도 모든 수치를 회사 발표로 적는다. 추정·벤더 주장 표시가 적절하다. 측정 기간과 산정 방법은 미공개다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 산업통상자원부 보도자료(2020-06-25)에 표준공정모델 14개, 뿌리·섬유·식음료·자동차 업종, 60개 기업, 패키지 지원 문구, 지원단 6개 기관이 있다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 로봇신문 기사 제목은 '제조 로봇 표준공정 모델 적용 사업 국내를 넘어 해외 공장까지 진출'(2025-09-15)이다. 64종, 148건, 수요기업 135·공급기업 89, 베트남 적용이 기사와 같다. 기관 수치이며 low를 유지한다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 한국로봇산업진흥원 페이지에서 수요처 주관·로봇기업 참여, 국비는 도입 비용의 50% 이내, 민간 부담은 총사업비의 50% 이상, 수요기관 부담은 25% 이상임을 확인했다. 지원 분야는 '물류·웨어러블·의료·기타'가 아니라 물류(제조공장·유통물류·음식점·실외배송)·웨어러블·의료(수술·재활)·협동로봇·언택트 서비스로 게시돼 있어 정정해야 한다. 게시일은 미확인이며 확인일(2026-09-30)을 기준으로 한다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 로봇학회논문지 17(4), 2022-11-30 초록에 계약물류·택배·풀필먼트, 이송·핸들링·지원(하차 자동화·웨어러블 슈트) 분류, 물류 특성에 맞는 기술·운영 방법 선택이 있다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 정책브리핑(2023-11-16, 산업통상자원부·경찰청)에서 11-17 시행, 500kg·15km/h 이하, 16개 시험항목, 배달·순찰 허용, 보험·공제 가입 의무, 범칙금 3만 원을 확인했다. '연계 대상:' 표시가 적절하다."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지, 문구 정정 필요. f14에 실외 배송이 있어 '실내' 한정은 근거가 없다. f16 인용은 정정한 발언자 표기('상급종합병원의 한 교수 의견')에 맞춘다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 근거 finding(f3·f4·f7·f8·f10·f11·f18)은 모두 확인했다. '플릿 연동 수준'은 용어집 표기 '플릿 제어 수준'으로 통일한다."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 분류 원문 19장 경계(시설·설비 제어, 업종별 조건, 로봇 자체 지능)에 맞게 연계 대상을 구분했다."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 연결 영역의 번호와 이름이 부록 A와 일치한다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "ref-031(VDA 5050 VDA5050_EN.md)은 같은 날 실행 2026-09-30-13의 ref-1170과 URL이 같다. 이번 페이지는 기존 id인 ref-031을 쓰고, 두 id는 퍼블리셔가 합친다.",
+        "ref-004는 참고문헌 목록에 등록된 URL을 입력으로 받지 못했다. 이번 실행이 인용한 RMF Core Overview 장(rmf-core.html)과 같은 문서인지 확인이 필요하다.",
+        "f8의 네 단계는 용어집 fleet-control-level(플릿 제어 수준)과 같은 개념이다. 새로 정의하지 말고 용어집에 링크한다.",
+        "f18 RoMi-H, f2 RaaS, f25 운행안전인증, f6 위험성평가·사용 정보는 용어집에 이미 있다(robotic-middleware-for-healthcare, robot-as-a-service, outdoor-mobile-robot-operational-safety-certification, risk-assessment, information-for-use). 새로 등록하지 않고 링크한다."
+      ]
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "브리프 f8·f9·f27·f29와 페이지 제안의 '플릿 연동 수준'은 용어집의 '플릿 제어 수준(Fleet Control Level)'과 다른 표기다. 용어집 표기로 통일한다.",
+        "용어 후보 '사용 사례 템플릿'의 정의에 있는 '목표·시나리오와 함께'는 이번에 확인한 IEC 페이지 범위(사용 사례·행위자 목록·요구사항 목록 템플릿)를 넘는다. 템플릿 세부 필드는 미확인이다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f19: 역할 분담(로보티즈 제조, 카카오모빌리티 플랫폼·배송 서비스 운영, 호텔 서비스 적용·운영)만 [사실](아시아경제 보도)로 쓴다. 플랫폼 기능 목록은 [추정]으로 강등하고 '벤더 주장'을 병기한다. '수요–공급 매칭'은 기사 표현인 '실시간 수요–공급 예측 알고리즘'으로 고친다 — 기능 설명의 출처가 회사 발표이고 독립 확인이 없다.",
+      "f16: 발언자를 '의대 교수'에서 '상급종합병원의 한 교수(기사에 익명 표기)'로 고친다. 내용은 '검체 이송은 컨베이어·인력 운송이 더 빠르고 안전하며 병원 물류가 복잡해 로봇이 맡기 어렵다'는 [의견]으로 쓰고 '시간에 민감한 업무'라는 표현은 쓰지 않는다 — 비즈한국 원문과 대조한 결과다.",
+      "f26: '반복적인 비임상·실내 운반'에서 '실내'를 빼고, f16 인용은 정정한 발언자 표기에 맞춘다 — f14에 실외 배송이 포함돼 있다.",
+      "f12: '이기종 로봇 플릿은 RMF로 조율했다'를 '병원 현장에는 TIAGo를 투입했고, RMF로 TIAGo·Jackal 이기종 로봇을 관리하는 것은 시험 환경에서 확인했다'로 고친다 — Valner 외 원문 기준이다.",
+      "f17: '건물 구역마다 다른 승강기 시스템'을 '건물이 나뉜 경우 건물마다 다른 회사의 승강기가 설치돼 통신 연동이 어렵다'로 고친다. 인용된 보고서를 한국보건산업진흥원의 '디지털시대 의료서비스 혁신을 위한 스마트병원 육성방안 연구'로 밝히고 '보고서 원문 미확인(기사 재인용)'을 병기한다.",
+      "f23: 지원 분야를 '물류(제조공장·유통물류·음식점·실외배송)·웨어러블·의료(수술·재활)·협동로봇·언택트 서비스'로 고친다. 민간 부담 50% 이상과 수요기관 부담 25% 이상은 '총사업비 대비'로 적고, 기준일은 확인일 2026-09-30으로 둔다 — 한국로봇산업진흥원 게시 내용과 대조했다.",
+      "f5: 본문에 'Industrie 4.0'을 적용 분야로 쓰지 않는다. IEC 페이지가 드는 분야는 스마트그리드·스마트시티·스마트홈/빌딩·능동형 생활 보조(AAL)다.",
+      "f3(ref-1207): 본문에서 ISO/IEC/IEEE 29148의 내용은 '검색 결과 요약 기준'임을 밝힌다. ref-1207 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates의 ref-1207 항목에 source_unopened: true를 넣는다 — ISO 페이지 403으로 원문을 열지 못했다.",
+      "f6: 본문에서 ANSI/A3 R15.08-2의 역할 규정은 'The Robot Report 기사(2023-10-26)에 따르면'으로 출처를 밝히고 '표준 원문 미열람'을 적는다. 이 내용은 48. 안전·위험 관리, 50. 안전 표준·인증·사고 조사로 연결하는 연계 대상으로만 짧게 다룬다.",
+      "f7(ref-031): VDA 5050 내용은 '3.0.0 판 기준'임을 본문에 밝히고 기존 ref-031 각주를 재사용한다(새 id를 만들지 않는다).",
+      "f8(ref-004): 각주는 docs/references/ref-004.md의 '각주 형식' 줄을 그대로 쓰고, 본문에 인용 위치(Programming Multiple Robots with ROS 2의 RMF Core Overview 장)를 밝힌다.",
+      "용어: '플릿 연동 수준'을 모두 '플릿 제어 수준(Fleet Control Level)'으로 바꾸고 용어집 fleet-control-level에 링크한다. RoMi-H·서비스형 로봇·실외이동로봇 운행안전인증·위험성평가·사용 정보도 기존 용어집 항목에 링크하고 새로 등록하지 않는다.",
+      "용어 후보 '사용 사례 템플릿'의 정의를 'IEC 62559-2가 정한 양식으로, 사용 사례·행위자 목록·요구사항 목록을 구조화해 기록하게 한다'로 줄이고 '목표·시나리오'는 뺀다 — 템플릿 세부 필드는 미확인이다.",
+      "열린 질문 2번의 '시간에 민감한 업무에서'를 '검체 이송 같은 업무에서'로 고친다 — f16 정정에 맞춘다.",
+      "5절: 현장 유형을 병원(f10~f18, f18은 싱가포르 공공 의료기관의 조달 제약)·상업 시설(f19·f20)·제조 공장(f21·f22)·물류창고(f24)·실외(f25, 연계 대상으로 표시)로 나눠 쓰고, 가정·기타 현장 사례는 찾지 못했음을 적는다. f15의 두 규모 수치는 보도 시점과 함께 둘 다 제시한다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 29건, 미확인 0건, 교차 확인 1건(f14). 강등: f19의 플랫폼 기능 목록 부분을 사실 → 추정(벤더 주장)으로 낮췄다. 역할 분담 보도는 [사실]로 둔다. 원문 미열람 출처: ref-1207(ISO/IEC/IEEE 29148, 검색 결과 일치로 실재 확인). 정정한 문구: f12(병원 현장은 TIAGo 한 종, 이기종 관리는 시험 환경), f16(발언자 '상급종합병원의 한 교수'), f17(건물마다 다른 회사 승강기), f23(지원 분야), f26('실내' 삭제). 주의: 핵심 수치와 사례가 대부분 단일 출처다. 한국 병원·호텔 사례는 기사 중심이고 카카오모빌리티 성과 수치는 벤더 주장이다. ANSI/A3 R15.08-2는 전문지 기사 기준이다. 플랫폼 책임 범위에 관한 결론(f9·f26·f27·f28)은 추정이다. 가정·기타 현장 사례는 찾지 못했다. ref-031은 같은 날 등록된 ref-1170과 URL이 같아 퍼블리셔가 합쳐야 한다. ref-004는 등록된 URL과 이번에 인용한 RMF Core Overview 장이 같은 문서인지 확인하지 못했다. 정정 요청과 해결 제안된 열린 질문은 없다. 검증 검색 1회(리서치와 합쳐 17회/30).",
+    "retry_reason": null
+  },
+  "ttft_ms": 12779,
+  "type": "result",
+  "duration_ms": 254361,
+  "uuid": "70edf464-c056-4671-8204-9f3c007d8192",
+  "ttft_stream_ms": 2083,
+  "time_to_request_ms": 93,
+  "time_to_request_phases_ms": {
+    "other": 37,
+    "system_prompt": 19,
+    "turn_start_resume": 0,
+    "process_user_input": 18,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 5
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 43,
+  "time_to_request_cpu_ms": 126,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 2083,
+  "time_to_request_from_spawn_ms": 1056268,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790742357352.6687,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 255.6
+}

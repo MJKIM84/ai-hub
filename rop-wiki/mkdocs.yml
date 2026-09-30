@@ -356,6 +356,13 @@ nav:
       - 14. 도면·BIM에서 지도 만들기 — 왜 중요한가: topics/2026/2026-09-30-area14-s3.md
       - 14. 도면·BIM에서 지도 만들기 — 열린 질문: topics/2026/2026-09-30-area14-s11.md
       - 14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area14-s10.md
+      - 2. 사용 사례·요구·책임 범위 — 대표 연구와 자료: topics/2026/2026-09-30-area02-s8.md
+      - 2. 사용 사례·요구·책임 범위 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area02-s7.md
+      - 2. 사용 사례·요구·책임 범위 — 대표 접근법과 기술: topics/2026/2026-09-30-area02-s6.md
+      - 2. 사용 사례·요구·책임 범위 — 핵심 개념과 용어: topics/2026/2026-09-30-area02-s4.md
+      - 2. 사용 사례·요구·책임 범위 — 왜 중요한가: topics/2026/2026-09-30-area02-s3.md
+      - 2. 사용 사례·요구·책임 범위 — 열린 질문: topics/2026/2026-09-30-area02-s11.md
+      - 2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area02-s10.md
       - 65. 가정·공동주택 — 대표 연구와 자료: topics/2026/2026-09-29-area65-s8.md
       - 65. 가정·공동주택 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-29-area65-s7.md
       - 65. 가정·공동주택 — 대표 접근법과 기술: topics/2026/2026-09-29-area65-s6.md
@@ -705,6 +712,7 @@ nav:
     - 로봇 친화형 건축물 인증 (Robot-Friendly Building Certification): glossary/robot-friendly-building-certification.md
     - 로봇·자동화 핵심 온톨로지 (Core Ontology for Robotics and Automation (CORA)): glossary/cora.md
     - 로봇–작업 적합도 행렬 (Robot–Task Fitness Matrix): glossary/robot-task-fitness-matrix.md
+    - 로봇활용 표준공정모델 (Robot Standard Process Model (Korea)): glossary/robot-standard-process-model.md
     - 리틀의 법칙 (Little's Law): glossary/littles-law.md
     - 매터 (Matter (Connectivity Standards Alliance smart home standard)): glossary/matter.md
     - 메시지 큐잉 원격 측정 전송 (Message Queuing Telemetry Transport (MQTT)): glossary/mqtt.md
@@ -744,6 +752,7 @@ nav:
     - 사건 기반 재스케줄링 (Event-driven Rescheduling): glossary/event-driven-rescheduling.md
     - 사건 트레이스 (Event Trace): glossary/event-trace.md
     - 사람 참여 루프 (Human-in-the-Loop (HITL)): glossary/human-in-the-loop.md
+    - 사용 사례 템플릿 (Use Case Template (IEC 62559-2)): glossary/use-case-template.md
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
     - 사전 실행 계획 검증 (Pre-execution Plan Verification): glossary/pre-execution-plan-verification.md
@@ -835,6 +844,7 @@ nav:
     - 이동형 영상정보처리기기 (Mobile Video Information Processing Device): glossary/mobile-video-information-processing-device.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 이중 시스템 구조 (Dual-system Architecture (System 1 / System 2)): glossary/dual-system-architecture.md
+    - 이해관계자 요구사항 명세 (Stakeholder Requirements Specification (StRS)): glossary/stakeholder-requirements-specification.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 인프라 장착 센서 (Infrastructure-mounted Sensing): glossary/infrastructure-mounted-sensing.md
     - 일정 안정성 (Schedule Stability): glossary/schedule-stability.md
@@ -1147,6 +1157,7 @@ nav:
     - ref-1101 — PROJECTS — Robot Fleet Management (NARCHON): references/ref-1101.md
     - ref-1102 — ARC brain 개요 - 사용 가이드: references/ref-1102.md
     - ref-1103 — 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다: references/ref-1103.md
+    - 'ref-1104 — Nurses'' Evaluation of a Service Robot for Inpatient Care: Technology Acceptance Study': references/ref-1104.md
     - ref-111 — rmf_api_msgs — rmf_api_msgs/schemas/task_state.json: references/ref-111.md
     - ref-112 — About the Business Process Model And Notation Specification Version 2.0: references/ref-112.md
     - 'ref-113 — Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)': references/ref-113.md
@@ -1158,7 +1169,17 @@ nav:
     - ref-118 — B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd: references/ref-118.md
     - ? 'ref-119 — IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management'
       : references/ref-119.md
+    - ref-1195 — 로봇활용 표준공정모델로 제조산업 전 분야에 로봇보급 본격 착수: references/ref-1195.md
+    - ref-1196 — “제조 로봇 표준공정 모델 적용 사업 국내를 넘어 ... (제목 일부만 확인): references/ref-1196.md
+    - ref-1197 — Service Robots See Global Growth Boom: references/ref-1197.md
+    - ? ref-1198 — Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test
+      : references/ref-1198.md
+    - ref-1199 — 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인): references/ref-1199.md
     - ref-120 — Robot Localization in Floor Plans Using a Room Layout Edge Extraction Network: references/ref-120.md
+    - ref-1200 — 호텔 룸서비스도 카카오모빌리티 로봇이…"가동률 ... (제목 일부만 확인): references/ref-1200.md
+    - ref-1201 — 급속 확산되는 물류현장의 로봇적용 사례: references/ref-1201.md
+    - ref-1202 — IEC 62559 - use case methodology: references/ref-1202.md
+    - ref-1203 — ISO/IEC/IEEE 29148:2018 Systems and software engineering — Life cycle processes — Requirements engineering: references/ref-1203.md
     - ref-121 — The complexity of soundness in workflow nets: references/ref-121.md
     - ref-122 — OCEL (Object-Centric Event Log) 2.0 Specification: references/ref-122.md
     - ref-123 — SCOR Model — Fulfill F1.3 Pick Product: references/ref-123.md
