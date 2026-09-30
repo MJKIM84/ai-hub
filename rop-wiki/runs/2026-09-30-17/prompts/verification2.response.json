@@ -1,0 +1,153 @@
+{
+  "duration_api_ms": 78748,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.0220012,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 102730,
+    "cache_read_input_tokens": 88466,
+    "output_tokens": 9123,
+    "output_tokens_details": {
+      "thinking_tokens": 7262
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 102730,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 9123,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 102730,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 102730
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 9123,
+      "cacheReadInputTokens": 88466,
+      "cacheCreationInputTokens": 102730,
+      "webSearchRequests": 0,
+      "costUSD": 1.0220012,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7262,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-17\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"Open-RMF 시뮬레이션(ref-406)은 분리된 6절 주제 페이지에서 '배치 전 시험·규모 평가'로만 서술하고, 엔진 설명은 34. 시뮬레이션·예측용 디지털 트윈으로 넘겼다. 1차에서 지적한 중복을 처리했다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f12 문구를 고친다(수용 기준은 프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다). 원문 미열람 출처: ref-1167. 이 출처는 브리프가 미열람으로 기록했지만, 검증자가 arXiv 초록을 열어 f9 수치를 확인했다. ref-1172(Rosenberger 외)는 검증자가 PMC·MDPI 재열람에 실패해 검색 결과로 서지만 확인했으므로 f2·f3 세부는 리서치의 원문 열람 기록에 의존한다. 주의: 모든 주장이 단일 출처이고, 핵심 질문 답(f20)과 책임 경계(f23·f24)는 추정이다. 물류창고(f15)·현대자동차그룹(f17) 사례는 벤더 주장이며, 18%·5주 수치는 기준선이 공개되지 않았다. 여러 제조사 로봇 플릿을 대상으로 한 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다(oq-132·oq-156 미해결). 상업 시설·가정·실외 로봇 현장 사례는 없다. 정정 요청 없음. 검증 검색 1회를 써서 실행 누계는 20회/30회다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 코드 통과 기준. docs_tree 입력이 없어 경로를 따로 대조하지는 않았다). 1차 수정 지시 11건은 세부영역 페이지와 자동 분리된 주제 페이지 7건에 모두 반영됐다. f12 문구를 고쳤다(4·6·7·11절, 용어집, standards_updates). f15·f17 에 '벤더 주장'을 병기하고 f15 의 기준선이 공개되지 않았음을 적었다. f7 은 5절과 현장 유형 매트릭스에서 빼고 연계 대상으로만 두었다. 5절 첫머리에 설비 제어 코드가 연계 대상이라는 문장을 두었다. f18 이 시뮬레이션 시험 사례임을 밝혔다. f11·f14 에 의견의 주체를 적었다. ref-1167 각주에 '(원문 미열람)'을 붙이고 source_unopened 를 true 로 했다. oq-132·oq-156 은 열림으로 두었다. site_matrix_updates 는 5절 표에서 채운 칸(병원 5칸·제조 공장 5칸·물류창고 4칸·기타 5칸)과 같다. 자동 분리된 주제 페이지 7건은 원 절 내용을 그대로 옮긴 것으로 확인했다. 사소한 의견: 세부영역 페이지 프런트매터 sources 에 있는 ref-599 는 분리 뒤 본문에서 인용되지 않는다(분리된 3·6·8·10절 주제 페이지에서만 인용된다). pages.json diff_summary 는 각주를 16건이라 적었지만 세부영역 페이지에 정의된 각주는 15건이다. 제조 공장·기타 사례의 예외·성과 칸은 '수치 미제시'·'기록 재생 미포함' 같은 한계 서술이어서, 매트릭스 칸이 채워졌다고 해서 성과 근거가 있다는 뜻은 아니다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-17",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "Open-RMF 시뮬레이션(ref-406)은 분리된 6절 주제 페이지에서 '배치 전 시험·규모 평가'로만 서술하고, 엔진 설명은 34. 시뮬레이션·예측용 디지털 트윈으로 넘겼다. 1차에서 지적한 중복을 처리했다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f12 문구를 고친다(수용 기준은 프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다). 원문 미열람 출처: ref-1167. 이 출처는 브리프가 미열람으로 기록했지만, 검증자가 arXiv 초록을 열어 f9 수치를 확인했다. ref-1172(Rosenberger 외)는 검증자가 PMC·MDPI 재열람에 실패해 검색 결과로 서지만 확인했으므로 f2·f3 세부는 리서치의 원문 열람 기록에 의존한다. 주의: 모든 주장이 단일 출처이고, 핵심 질문 답(f20)과 책임 경계(f23·f24)는 추정이다. 물류창고(f15)·현대자동차그룹(f17) 사례는 벤더 주장이며, 18%·5주 수치는 기준선이 공개되지 않았다. 여러 제조사 로봇 플릿을 대상으로 한 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다(oq-132·oq-156 미해결). 상업 시설·가정·실외 로봇 현장 사례는 없다. 정정 요청 없음. 검증 검색 1회를 써서 실행 누계는 20회/30회다. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 코드 통과 기준. docs_tree 입력이 없어 경로를 따로 대조하지는 않았다). 1차 수정 지시 11건은 세부영역 페이지와 자동 분리된 주제 페이지 7건에 모두 반영됐다. f12 문구를 고쳤다(4·6·7·11절, 용어집, standards_updates). f15·f17 에 '벤더 주장'을 병기하고 f15 의 기준선이 공개되지 않았음을 적었다. f7 은 5절과 현장 유형 매트릭스에서 빼고 연계 대상으로만 두었다. 5절 첫머리에 설비 제어 코드가 연계 대상이라는 문장을 두었다. f18 이 시뮬레이션 시험 사례임을 밝혔다. f11·f14 에 의견의 주체를 적었다. ref-1167 각주에 '(원문 미열람)'을 붙이고 source_unopened 를 true 로 했다. oq-132·oq-156 은 열림으로 두었다. site_matrix_updates 는 5절 표에서 채운 칸(병원 5칸·제조 공장 5칸·물류창고 4칸·기타 5칸)과 같다. 자동 분리된 주제 페이지 7건은 원 절 내용을 그대로 옮긴 것으로 확인했다. 사소한 의견: 세부영역 페이지 프런트매터 sources 에 있는 ref-599 는 분리 뒤 본문에서 인용되지 않는다(분리된 3·6·8·10절 주제 페이지에서만 인용된다). pages.json diff_summary 는 각주를 16건이라 적었지만 세부영역 페이지에 정의된 각주는 15건이다. 제조 공장·기타 사례의 예외·성과 칸은 '수치 미제시'·'기록 재생 미포함' 같은 한계 서술이어서, 매트릭스 칸이 채워졌다고 해서 성과 근거가 있다는 뜻은 아니다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 65036,
+  "type": "result",
+  "duration_ms": 78874,
+  "uuid": "1a1962b1-d003-48d6-84bc-040e7db917cc",
+  "ttft_stream_ms": 1511,
+  "time_to_request_ms": 110,
+  "time_to_request_phases_ms": {
+    "other": 60,
+    "system_prompt": 16,
+    "turn_start_resume": 0,
+    "process_user_input": 15,
+    "init_message": 4,
+    "engine_pickup": 0,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 60,
+  "time_to_request_cpu_ms": 119,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1511,
+  "time_to_request_from_spawn_ms": 6825896,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790748126915.3623,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 80.2
+}

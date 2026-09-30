@@ -1,0 +1,686 @@
+{
+  "run_id": "2026-09-30-17",
+  "outline": [
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "설치 전 가상 시운전은 설비 제어 분야에서 정립되어 있으나 여러 제조사 로봇 플릿 전체의 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인되지 않았다. [추정][^ref-1126]",
+      "planned_findings": [
+        "f20",
+        "f5",
+        "f11",
+        "f9"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1400,
+      "summary": "가상 시운전(VDI/VDE 3693), MiL·SiL·HiL, 로그 재생, 비반응 재생의 한계, 현실 격차, SRCC, NASA-STD-7009B 신뢰도 평가를 정리한다. [사실][^ref-1126]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f6",
+        "f8",
+        "f9",
+        "f10",
+        "f12"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 2700,
+      "summary": "병원(실제 기록 기반 승강기 탑승 실패 재현), 제조 공장(분산 제어 가상 시운전), 물류창고(벤더 주장 에뮬레이션), 기타(대학 건물 시뮬레이션 시험) 사례를 여섯 항목으로 정리한다. [사실][^ref-943]",
+      "planned_findings": [
+        "f13",
+        "f14",
+        "f3",
+        "f16",
+        "f17",
+        "f15",
+        "f18",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1900,
+      "summary": "가상 시운전은 MiL·SiL·HiL 과 Open-RMF 시뮬레이션·혼합 현실 도구로, 기록 재현은 rosbag2 재생과 기록 기반 초기화로, 차이 관리는 SRCC·현실 격차 기법·수용 기준으로 접근한다. [사실][^ref-1130]",
+      "planned_findings": [
+        "f2",
+        "f3",
+        "f4",
+        "f19",
+        "f6",
+        "f7",
+        "f8",
+        "f13",
+        "f9",
+        "f10",
+        "f21",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 900,
+      "summary": "VDI/VDE 3693 Blatt 1, NASA-STD-7009B, Open-RMF 시뮬레이션, rosbag2, VDA 5050 3.0.0(시운전 절차는 범위 밖), Waymax(연계 대상), VirTooS 를 표로 정리한다. [사실][^ref-1126]",
+      "planned_findings": [
+        "f1",
+        "f12",
+        "f4",
+        "f6",
+        "f5",
+        "f7",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1100,
+      "summary": "분산 가상 시운전, SRCC, 현실 격차 조사, 형식 검증 조사, 병원 기록 기반 재현, 국내 가상 플랜트, 조합형 시나리오 연구를 소개한다. [사실][^ref-1130]",
+      "planned_findings": [
+        "f3",
+        "f9",
+        "f10",
+        "f11",
+        "f13",
+        "f16",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 1100,
+      "summary": "ROP는 인터페이스 가상 대응물을 붙인 SiL 시험 환경·재생 가능한 실행 기록·재현 구성·차이 지표와 수용 승인 기록을 맡고, 엔진·로봇 제어·설비 제어 코드·차량 기록 시뮬레이션은 연계 대상으로 보인다. [추정][^ref-406]",
+      "planned_findings": [
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1500,
+      "summary": "33·34번(시나리오·엔진), 18·37번(재현 원천 기록), 11번(대화형 재현), 14·15·20·22·25·38·47·54·55번과 현장 영역 61·62·63·67번에 연결한다. [추정][^ref-406]",
+      "planned_findings": [
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 1100,
+      "summary": "oq-132·oq-156 은 부분 근거만 있어 열림으로 두고, 플릿 수준 가상 시운전 사례·비반응 재생·독립 효과 측정·병원 임계값 일반화의 새 질문 4건을 올린다. [추정][^ref-1133]",
+      "planned_findings": [
+        "f21",
+        "f22",
+        "f1",
+        "f8",
+        "f15",
+        "f14"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성(현장 유형 사례 4건: 병원·제조 공장·물류창고·기타), 13절 각주 16건, 1차 조건부 승인 수정 11건 반영"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"6. 대표 접근법과 기술\" 절(1,605자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"4. 핵심 개념과 용어\" 절(1,262자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"8. 대표 연구와 자료\" 절(1,238자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"11. 열린 질문\" 절(1,205자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,078자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(836자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area36-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 36. 가상 시운전·실제 상황 재현 의 \"3. 왜 중요한가\" 절(661자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 36. 가상 시운전·실제 상황 재현 | 영역 심화: 3~11절 신규 작성(현장 유형 사례 4건: 병원·제조 공장·물류창고·기타), 각주 16건, 1차 조건부 승인 수정 11건 반영 | run 2026-09-30-17",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 36. 가상 시운전·실제 상황 재현: 영역 심화 초안(VDI/VDE 3693·MiL·SiL·HiL, rosbag2 기록 재생, 현실 일치 판정 후보, 병원·제조 공장·물류창고·기타 사례)",
+    "category_recent": "2026-09-30 — 36. 가상 시운전·실제 상황 재현: 3~11절 신규 작성, 현장 유형 사례 4건(병원 실제 기록 기반 승강기 실패 재현 포함), oq-132·oq-156 부분 근거 추가",
+    "area_recent": "2026-09-30 — 36. 가상 시운전·실제 상황 재현: 영역 심화로 3~11절을 처음 작성했다(신뢰도 medium, 벤더 주장 2건 표시)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "software-in-the-loop",
+      "term_ko": "소프트웨어 인 더 루프",
+      "term_en": "Software-in-the-Loop (SiL)",
+      "definition": "실제 제어 언어로 작성한 제어 코드를 대상 하드웨어와 분리해 돌리며 설비 시뮬레이션과 연결해 시험하는 가상 시운전 구성이다.",
+      "description": "Rosenberger 외(2023)가 VDI 3693 에 따라 MiL·SiL·HiL 로 나눈 시험 구성 가운데 하나다. 관련 용어: 가상 시운전.",
+      "related_areas": [
+        36,
+        55
+      ],
+      "sources": [
+        "ref-1130"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "hardware-in-the-loop",
+      "term_ko": "하드웨어 인 더 루프",
+      "term_en": "Hardware-in-the-Loop (HiL)",
+      "definition": "실제 대상 하드웨어(가상 머신·컨테이너로 가상화한 하드웨어 포함)를 설비 시뮬레이션과 연결해 제어 프로그램과 하드웨어를 함께 시험하는 가상 시운전 구성이다.",
+      "description": "Rosenberger 외(2023)가 VDI 3693 에 따라 구분한 시험 구성 가운데 실제 하드웨어에 가장 가까운 구성이다.",
+      "related_areas": [
+        36,
+        55
+      ],
+      "sources": [
+        "ref-1130"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "sim-vs-real-correlation-coefficient",
+      "term_ko": "시뮬레이션–현실 상관 계수",
+      "term_en": "Sim-vs-Real Correlation Coefficient (SRCC)",
+      "definition": "여러 방법·설정을 비교할 때 시뮬레이션에서의 성능 차이가 실제 로봇에서의 성능 차이와 얼마나 같은 방향으로 나타나는지를 상관계수로 재는 시뮬레이션 예측력 지표다.",
+      "description": "Kadian 외(2020)가 제안했다. LoCoBot PointGoal 주행에서 성공률 기준 0.18 이던 값을 시뮬레이터 조정으로 0.844 로 높였다(원문 미열람, 초록 기준). 관련 용어: 현실 격차.",
+      "related_areas": [
+        36,
+        34,
+        54
+      ],
+      "sources": [
+        "ref-1127"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "models-and-simulations-credibility-assessment",
+      "term_ko": "모델·시뮬레이션 신뢰도 평가",
+      "term_en": "Models and Simulations Credibility Assessment (NASA-STD-7009)",
+      "definition": "NASA-STD-7009B 가 모델·시뮬레이션의 개발·사용 단계에서 요구하는 신뢰도 평가로, 결과를 쓰기 위한 수용 기준을 프로젝트가 정하고 위임된 기술 권한자가 승인한다.",
+      "description": "기존 용어 '시뮬레이션 모델 검증·타당성 확인'(verification-and-validation-of-simulation-models)과 연결해 본다. 신뢰도 요소와 점수 척도는 원문에서 확인하지 못했다.",
+      "related_areas": [
+        36,
+        54
+      ],
+      "sources": [
+        "ref-1133"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "관제와 AGV·AMR 사이 통신 인터페이스를 정한 VDA 5050 공식 명세(현재 main 은 3.0.0). 시운전·검증·인수 절차는 범위 밖에 둔다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1126",
+      "org": "VDI/VDE (VDI/VDE-Gesellschaft Mess- und Automatisierungstechnik)",
+      "title": "VDI/VDE 3693 Blatt 1 - Virtual commissioning - Model types, terms, and definitions",
+      "published": "2025-05",
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdivde-3693-blatt-1-virtual-commissioning-model-types-terms-and-definitions",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "가상 시운전의 정의와 수명주기 내 위치, 시험 구성·시험 방법·모델 유형·시뮬레이션 구성을 다루는 VDI/VDE 지침 2025-05 개정판의 공식 소개 페이지. 표준 본문은 유료로 열람하지 않았다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-831",
+      "org": "ROS 2 (Open Robotics 외, ros2/rosbag2 저장소)",
+      "title": "rosbag2 README",
+      "published": null,
+      "url": "https://github.com/ros2/rosbag2",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "ROS 2 토픽 기록·재생 도구 rosbag2 의 공식 README. /clock 발행, 재생 제어 서비스, MCAP·SQLite3 저장 형식을 설명한다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1127",
+      "org": "Kadian, A., Truong, J., Gokaslan, A., Clegg, A., Wijmans, E., Lee, S., Savva, M., Chernova, S., & Batra, D. (arXiv / IEEE RA-L)",
+      "title": "Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?",
+      "published": "2020-08",
+      "url": "https://arxiv.org/abs/1912.06321",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 시뮬레이션 평가가 실제 성능을 예측하는 정도를 재는 SRCC 지표를 제안하고 LoCoBot PointGoal 주행에서 시뮬레이터 조정으로 SRCC 를 0.18 에서 0.844 로 높였다. arXiv 초록 기준.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1128",
+      "org": "Gulino, C., Fu, J., Luo, W. 외 (Waymo, arXiv)",
+      "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
+      "published": "2023-10-12",
+      "url": "https://arxiv.org/abs/2310.08710",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "실제 주행 기록으로 다중 에이전트 시나리오를 초기화·재생하고 행동 모델로 상호작용을 넣는 가속 자율주행 시뮬레이터. arXiv 초록만 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-406",
+      "org": "Open Robotics",
+      "title": "Simulation — Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 배치를 Gazebo·Ignition 으로 시뮬레이션하는 방법(도면 기반 세계 생성, 로봇·문·승강기·작업셀·군중 플러그인)과 배치 전 시험의 목적을 설명하는 장.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-943",
+      "org": "Lee 외 (Digital Health, SAGE)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "고려대학교 구로병원의 실제 약품 배송 로봇 기록 122건과 승강기 데이터로 승강기 가동률 임계값을 찾고 몬테카를로 시뮬레이션으로 탑승 실패 기제를 재현한 연구. 전문을 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1129",
+      "org": "Drudi, A., Pichierri, L., Testa, A., & Notarstefano, G. (arXiv)",
+      "title": "VirTooS: A ROS 2 - Unity Virtualization Toolkit for Fleet Management of Autonomous Mobile Robots",
+      "published": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26066",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "실제·가상 로봇이 함께 움직이는 혼합 현실 환경에서 AMR 플릿 관리(작업 배정) 실험을 하는 ROS 2–Unity 도구. arXiv 초록만 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1130",
+      "org": "Rosenberger, J., Selig, A., Ristic, M., Bühren, M., & Schramm, D. (Sensors 23(7):3545)",
+      "title": "Virtual Commissioning of Distributed Systems in the Industrial Internet of Things",
+      "published": "2023-03-28",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10099255/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "VDI 3693 의 MiL·SiL·HiL 구분을 바탕으로 가상 시운전을 분산 에지 시스템으로 넓히는 구조 3가지를 제안하고 팔레타이징 설비 시뮬레이션으로 시험했다. 전문을 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-599",
+      "org": "Luckcuck, M., Farrell, M., Dennis, L., Dixon, C., & Fisher, M. (ACM Computing Surveys 52(5))",
+      "title": "Formal Specification and Verification of Autonomous Robotic Systems: A Survey",
+      "published": "2019",
+      "url": "https://arxiv.org/abs/1807.00048",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자율 로봇 시스템의 형식 명세·검증 기법과 과제를 정리한 조사 논문. 시험·시뮬레이션만으로는 인증 증거가 부족하다고 본다. arXiv 초록만 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-741",
+      "org": "Aljalbout, E., Xing, J., Romero, A. 외 (arXiv)",
+      "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best Practices",
+      "published": "2025-10-23",
+      "url": "https://arxiv.org/abs/2510.20808",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "로봇 공학의 현실 격차 원인과 대응 기법(영역 무작위화, 현실→시뮬레이션, 추상화, 공동 학습), 평가 지표를 정리한 조사 논문. arXiv 초록만 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1131",
+      "org": "최성욱, 박상철, 왕지남 (아주대학교, 대한산업공학회 추계학술대회)",
+      "title": "자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스",
+      "published": "2008-11",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01943794",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자동차 차체 생산라인의 PLC 코드를 실제 PLC 와 가상 공정 시뮬레이터의 연동으로 검증하는 가상 플랜트 구축 절차를 제안한 국내 학술대회 논문. DBpia 초록만 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1132",
+      "org": "현대자동차그룹",
+      "title": "가상의 디지털 공간에 세운 쌍둥이 공장",
+      "published": "2023-11-21",
+      "url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000122330",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "현대자동차그룹이 HMGICS 디지털 트윈 가상 공장으로 설비·로봇 배치 변경을 가상에서 먼저 검증한다고 소개하는 회사 콘텐츠. 정량 수치는 없다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1133",
+      "org": "NASA",
+      "title": "NASA-STD-7009B Standard for Models and Simulations",
+      "published": "2024-03-05",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "모델·시뮬레이션의 개발·수용·사용 요구와 신뢰도 평가를 정한 NASA 표준의 공식 페이지(개정 B, 현행). 수용 기준은 프로그램·프로젝트가 정하고 위임된 기술 권한자가 승인한다. 표준 본문 PDF 는 열지 않았다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1134",
+      "org": "Ortega, A., Parra, S., Schneider, S., & Hochgeschwender, N. (Frontiers in Robotics and AI)",
+      "title": "Composable and executable scenarios for simulation-based testing of mobile robots",
+      "published": "2024-08-02",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1363281/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "도면 DSL·초기 자세·동적 객체·과제·수용 기준을 조합해 이동로봇 시뮬레이션 시험 시나리오를 만드는 방법을 제안하고 대학 건물에서 평가했다. 전문을 읽었다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    },
+    {
+      "id": "ref-1165",
+      "org": "Rockwell Automation",
+      "title": "Emulation Technology Speeds Up Warehouse Automation",
+      "published": "2024-08-28",
+      "url": "https://www.rockwellautomation.com/en-ca/company/news/case-studies/warehouse-design-digital.html",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "Bastian Solutions 가 물류센터 구축에서 컨베이어·피킹 모듈·PLC·I/O 모듈과 제어 프로그램을 에뮬레이션으로 설치 전 검증했다는 벤더 사례. 성과 수치(18%·5주)는 벤더 주장이며 기준선은 공개되지 않았다.",
+      "cited_by": [
+        "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "여러 제조사 로봇 플릿을 지휘하는 플랫폼 수준에서 VDI/VDE 3693 의 MiL·SiL·HiL 구성을 적용해 오케스트레이션 논리와 플릿 어댑터를 설치 전에 가상 시운전한 절차나 공개 사례가 있는가?",
+      "areas": [
+        36,
+        20,
+        55
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "실제 운영 기록을 재생해 재현한 상황에서 배차 정책이나 로봇 수를 바꿔 비교할 때, 기록된 다른 로봇·사람이 바뀐 조건에 반응하지 않는 문제를 로봇 플릿 재현에서 어떻게 다루는가?",
+      "areas": [
+        36,
+        19,
+        33
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "물류창고·공장 가상 시운전의 효과(프로젝트 기간·현장 시운전 기간 단축)를 벤더 사례가 아닌 독립 연구가 같은 기준선으로 측정한 결과가 있는가?",
+      "areas": [
+        36,
+        3
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "한 병원의 실제 기록으로 찾은 승강기 가동률 임계값 같은 운영 기준이 다른 병원 구조·승강기 제어 정책을 재현한 시뮬레이션에서도 유지되는지 검증한 연구가 있는가?",
+      "areas": [
+        36,
+        63,
+        22
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "시작 조건",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "제약",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "시작 조건",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "작업 대상",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "기타",
+      "item": "시작 조건",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "기타",
+      "item": "작업 대상",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "기타",
+      "item": "완료·인계",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    },
+    {
+      "site_type": "기타",
+      "item": "예외·성과",
+      "link": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시",
+      "title": "36. 가상 시운전·실제 상황 재현"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "VDI/VDE 3693 Blatt 1 가상 시운전 — 모델 유형·용어·정의 (2025-05 개정판)",
+      "kind": "표준",
+      "org": "VDI/VDE (VDI/VDE-Gesellschaft Mess- und Automatisierungstechnik)",
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdivde-3693-blatt-1-virtual-commissioning-model-types-terms-and-definitions",
+      "related_areas": [
+        36,
+        55
+      ],
+      "summary": "가상 시운전을 체계적으로 정의하고 자동화 설비·기계의 수명주기 안에 위치시키며, 기본 시험 구성·시험 방법·모델 유형·시뮬레이션 구성을 다루는 지침이다. 본문은 유료이며 공식 소개 페이지 기준으로 확인했다.",
+      "ref_id": "ref-1126"
+    },
+    {
+      "name": "NASA-STD-7009B Standard for Models and Simulations",
+      "kind": "표준",
+      "org": "NASA",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "related_areas": [
+        36,
+        54
+      ],
+      "summary": "모델·시뮬레이션의 개발·수용·사용 요구·권고·기준과 신뢰도 평가를 정한 현행 표준(문서일 2024-03-05)이다. 수용 기준은 프로그램·프로젝트가 정하고 위임된 기술 권한자가 승인한다.",
+      "ref_id": "ref-1133"
+    }
+  ],
+  "additional_research_requests": [
+    "6절 '실행 전 계획 검증': 계획을 실행하지 않고 정적으로 검사하는 도구(VAL 등)의 검증 항목을 원문에서 확인한 근거가 없어 전용 서술을 넣지 못했다. 도구 문서·논문 원문 확인이 필요하다.",
+    "4·6절: NASA-STD-7009B 의 신뢰도 요소·점수 척도는 검색 요약에만 있어 넣지 못했다. 표준 본문 PDF 열람으로 확인이 필요하다.",
+    "5절: 상업 시설·가정·실외 로봇 현장의 가상 시운전·실제 상황 재현 사례를 찾지 못했다. 이 현장 유형의 사례 조사가 필요하다.",
+    "5·6절: 여러 제조사 로봇 플릿을 대상으로 한 가상 시운전 공개 사례(Kulkarni 창고 로봇 가상 시운전, Siemens·Wipro 사례)와 Striffler·Voigt(2023) 리뷰는 신규 출처 상한·접근 실패로 넣지 못했다. 다음 실행에서 확인이 필요하다.",
+    "3·4·6절: 이번 페이지의 모든 주장이 단일 출처이므로 핵심 주장(가상 시운전 정의·MiL·SiL·HiL 구분, SRCC 수치)의 교차 확인 출처가 필요하다.",
+    "7절: 국내 가상 시운전 표준(KS)이나 공공 지침이 있는지 확인이 필요하다."
+  ],
+  "fixes_applied": [
+    "f12 문구 수정 — 4절 용어 목록, 6절 차이 관리, 7절 표, 11절 oq-132 설명에서 '수용 기준은 프로그램·프로젝트가 정하고 위임된 NASA 기술 권한자(Technical Authority)가 승인한다'로 쓰고 '결과를 쓰기 전에'를 뺐다.",
+    "f15 — 5절 물류창고 사례 작업 대상을 'PLC·I/O 모듈과 제어 프로그램'으로 쓰고, 모든 칸과 서술에 '[추정] 벤더 주장'을 병기했으며, 18%·5주 수치에 기준선·측정 방법 미공개를 함께 적었다.",
+    "f17 — 5절 제조 공장 서술의 현대자동차그룹 문장에 '[추정] 벤더 주장'을 병기하고 정량 수치를 밝히지 않았음을 적었다.",
+    "f7 — 5절에 실외 사례로 넣지 않고 site_matrix_updates 에서도 뺐으며, 6절 운영 기록 기반 재현과 7절 표에서 '연계 대상'으로만 짧게 다뤘다.",
+    "f3·f15·f16 — 5절 첫 단락에 설비 제어 코드(PLC·컨베이어) 가상 시운전이 분류 원문 19장 '시설·설비 제어' 연계 대상이며 ROP 에는 방법 근거로만 쓴다는 문장을 [추정] 태그와 각주로 두었다(f24).",
+    "f18 — 5절 기타 사례 서술에 실측 지도로 만든 대학 건물의 시뮬레이션 시험 사례이며 현장 배치나 현장 기록 재생이 아님을 밝혔다.",
+    "f11·f14 — [의견] 문장마다 주체를 문장 안에 밝혔다(3·6·8절 'Luckcuck 외', 5절 병원 사례 'Lee 외 저자들').",
+    "ref-1127 — 13절 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-1127 에 source_unopened: true 를 넣었으며, 페이지 신뢰도는 medium 을 넘지 않는다.",
+    "용어집 '모델·시뮬레이션 신뢰도 평가' — 정의를 'NASA-STD-7009B 가 개발·사용 단계에서 요구하는 신뢰도 평가, 수용 기준은 프로젝트가 정하고 위임된 기술 권한자가 승인' 수준으로 줄이고 설명에 기존 용어 '시뮬레이션 모델 검증·타당성 확인'과의 연결을 적었다(4절 본문에도 링크).",
+    "5절 — 상업 시설·가정 사례를 찾지 못했고 실외는 자율주행 방법 참고(f7)뿐이라는 문장을 절 끝에 두었고, site_matrix_updates 는 물류창고·제조 공장·병원·기타 칸만 냈다.",
+    "3절·9절 — 핵심 질문의 답(f20)과 직접 범위·연계 대상(f23·f24)을 [추정] 태그와 '~로 보인다' 표현으로 서술했고, 11절에서 oq-132·oq-156 을 부분 근거(f21·f22)와 함께 '열림'으로 두었다(open_question_updates 에 해결 처리 없음).",
+    "분량 초과 자동 분리: 36. 가상 시운전·실제 상황 재현 본문 11,353자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,449자"
+  ]
+}

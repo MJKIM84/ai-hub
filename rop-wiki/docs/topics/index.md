@@ -47,6 +47,13 @@ version: 1
 | 2026-09-30 | [33. 시나리오 모델·편집 — 대표 접근법과 기술](2026/2026-09-30-area33-s6.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
 | 2026-09-30 | [33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area33-s7.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
 | 2026-09-30 | [33. 시나리오 모델·편집 — 대표 연구와 자료](2026/2026-09-30-area33-s8.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 다른 연구영역과의 연결](2026/2026-09-30-area36-s10.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 열린 질문](2026/2026-09-30-area36-s11.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 왜 중요한가](2026/2026-09-30-area36-s3.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 핵심 개념과 용어](2026/2026-09-30-area36-s4.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 대표 접근법과 기술](2026/2026-09-30-area36-s6.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area36-s7.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 대표 연구와 자료](2026/2026-09-30-area36-s8.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
 | 2026-09-30 | [37. 관제 화면·실행 기록 — 다른 연구영역과의 연결](2026/2026-09-30-area37-s10.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
 | 2026-09-30 | [37. 관제 화면·실행 기록 — 핵심 개념과 용어](2026/2026-09-30-area37-s4.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
 | 2026-09-30 | [37. 관제 화면·실행 기록 — 대표 접근법과 기술](2026/2026-09-30-area37-s6.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |

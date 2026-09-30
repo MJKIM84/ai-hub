@@ -350,6 +350,13 @@ nav:
       - 37. 관제 화면·실행 기록 — 대표 접근법과 기술: topics/2026/2026-09-30-area37-s6.md
       - 37. 관제 화면·실행 기록 — 핵심 개념과 용어: topics/2026/2026-09-30-area37-s4.md
       - 37. 관제 화면·실행 기록 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area37-s10.md
+      - 36. 가상 시운전·실제 상황 재현 — 대표 연구와 자료: topics/2026/2026-09-30-area36-s8.md
+      - 36. 가상 시운전·실제 상황 재현 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area36-s7.md
+      - 36. 가상 시운전·실제 상황 재현 — 대표 접근법과 기술: topics/2026/2026-09-30-area36-s6.md
+      - 36. 가상 시운전·실제 상황 재현 — 핵심 개념과 용어: topics/2026/2026-09-30-area36-s4.md
+      - 36. 가상 시운전·실제 상황 재현 — 왜 중요한가: topics/2026/2026-09-30-area36-s3.md
+      - 36. 가상 시운전·실제 상황 재현 — 열린 질문: topics/2026/2026-09-30-area36-s11.md
+      - 36. 가상 시운전·실제 상황 재현 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area36-s10.md
       - 33. 시나리오 모델·편집 — 대표 연구와 자료: topics/2026/2026-09-30-area33-s8.md
       - 33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area33-s7.md
       - 33. 시나리오 모델·편집 — 대표 접근법과 기술: topics/2026/2026-09-30-area33-s6.md
@@ -739,6 +746,7 @@ nav:
     - 모델 대체·라우팅 희석 (Model Substitution / Routing Dilution): glossary/model-substitution-and-routing-dilution.md
     - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모델 컨텍스트 프로토콜 (Model Context Protocol (MCP)): glossary/model-context-protocol.md
+    - 모델·시뮬레이션 신뢰도 평가 (Models and Simulations Credibility Assessment (NASA-STD-7009)): glossary/models-and-simulations-credibility-assessment.md
     - 모바일 매니퓰레이터 (Mobile Manipulator): glossary/mobile-manipulator.md
     - 모방 학습 (Imitation Learning): glossary/imitation-learning.md
     - 목표 조건 (Goal Condition): glossary/goal-condition.md
@@ -792,6 +800,7 @@ nav:
     - 셀 생산 방식 (Cell-based Production): glossary/cell-based-production.md
     - 셔틀 기반 저장·회수 시스템 (Shuttle-Based Storage and Retrieval System (SBS/RS)): glossary/shuttle-based-storage-and-retrieval-system.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
+    - 소프트웨어 인 더 루프 (Software-in-the-Loop (SiL)): glossary/software-in-the-loop.md
     - 속도·분리 감시 (Speed and Separation Monitoring (SSM)): glossary/speed-and-separation-monitoring.md
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
     - 수행 가능 동작 (Performable Action (Open-RMF perform_action)): glossary/performable-action.md
@@ -809,6 +818,7 @@ nav:
     - 시나리오 재구성 (Scenario Reconstruction): glossary/scenario-reconstruction.md
     - 시뮬레이션 기술 형식 (Simulation Description Format (SDFormat)): glossary/simulation-description-format.md
     - 시뮬레이션 모델 검증·타당성 확인 (Verification and Validation (V&V) of Simulation Models): glossary/verification-and-validation-of-simulation-models.md
+    - 시뮬레이션–현실 상관 계수 (Sim-vs-Real Correlation Coefficient (SRCC)): glossary/sim-vs-real-correlation-coefficient.md
     - 시스템 이론적 프로세스 분석 (System-Theoretic Process Analysis (STPA)): glossary/stpa.md
     - 시장 기반 작업 배정 (Market-based Task Allocation): glossary/market-based-task-allocation.md
     - 신경-기호 AI (Neuro-symbolic AI): glossary/neuro-symbolic-ai.md
@@ -928,6 +938,7 @@ nav:
     - '플릿 제어 수준 (Fleet Control Level (Open-RMF: Full Control / Traffic Light / Read Only))': glossary/fleet-control-level.md
     - 핀옵스 (FinOps): glossary/finops.md
     - 필터 마스크 (Filter Mask (Nav2 costmap filter)): glossary/filter-mask.md
+    - 하드웨어 인 더 루프 (Hardware-in-the-Loop (HiL)): glossary/hardware-in-the-loop.md
     - 합의 기반 번들 알고리즘 (Consensus-Based Bundle Algorithm (CBBA)): glossary/consensus-based-bundle-algorithm.md
     - 해제 구역 (Release Zone): glossary/release-zone.md
     - 핵심 업무 어휘 (Core Business Vocabulary (CBV)): glossary/cbv.md
@@ -1204,11 +1215,21 @@ nav:
     - ref-1123 — [단독] 산업용 로봇 재해 위험 제조업보다 두 배 ... (제목 일부만 확인): references/ref-1123.md
     - ref-1124 — ‘로봇이 사람을 박스로 인식’ 고성 농산물유통센터서 40대 압착 사망: references/ref-1124.md
     - ref-1125 — 오뚜기에스에프 끼임사고, 기본 예방조치 안 지켰다: references/ref-1125.md
+    - ref-1126 — VDI/VDE 3693 Blatt 1 - Virtual commissioning - Model types, terms, and definitions: references/ref-1126.md
+    - 'ref-1127 — Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?': references/ref-1127.md
+    - 'ref-1128 — Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research': references/ref-1128.md
+    - 'ref-1129 — VirTooS: A ROS 2 - Unity Virtualization Toolkit for Fleet Management of Autonomous Mobile Robots': references/ref-1129.md
     - 'ref-113 — Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)': references/ref-113.md
+    - ref-1130 — Virtual Commissioning of Distributed Systems in the Industrial Internet of Things: references/ref-1130.md
+    - ref-1131 — 자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스: references/ref-1131.md
+    - ref-1132 — 가상의 디지털 공간에 세운 쌍둥이 공장: references/ref-1132.md
+    - ref-1133 — NASA-STD-7009B Standard for Models and Simulations: references/ref-1133.md
+    - ref-1134 — Composable and executable scenarios for simulation-based testing of mobile robots: references/ref-1134.md
     - ref-114 — A BPMN-driven framework for Multi-Robot System development: references/ref-114.md
     - ? 'ref-115 — Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes'
       : references/ref-115.md
     - 'ref-116 — Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis': references/ref-116.md
+    - ref-1165 — Emulation Technology Speeds Up Warehouse Automation: references/ref-1165.md
     - ref-117 — B2MML-BatchML — Schema/B2MML-Common.xsd: references/ref-117.md
     - ref-118 — B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd: references/ref-118.md
     - ? 'ref-119 — IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management'

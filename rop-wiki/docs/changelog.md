@@ -20,6 +20,30 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-17 | 갱신 | [docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | 영역 심화: 3~11절 신규 작성(현장 유형 사례 4건: 병원·제조 공장·물류창고·기타), 13절 각주 16건, 1차 조건부 승인 수정 11건 반영 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s6.md](topics/2026/2026-09-30-area36-s6.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "6. 대표 접근법과 기술" 절(1,605자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s4.md](topics/2026/2026-09-30-area36-s4.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "4. 핵심 개념과 용어" 절(1,262자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s8.md](topics/2026/2026-09-30-area36-s8.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "8. 대표 연구와 자료" 절(1,238자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s11.md](topics/2026/2026-09-30-area36-s11.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "11. 열린 질문" 절(1,205자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s10.md](topics/2026/2026-09-30-area36-s10.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,078자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s7.md](topics/2026/2026-09-30-area36-s7.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "7. 관련 표준·프레임워크·오픈소스" 절(836자)을 옮겼다 |
+| 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s3.md](topics/2026/2026-09-30-area36-s3.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "3. 왜 중요한가" 절(661자)을 옮겼다 |
+| 2026-09-30-17 | 요약 | [docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | 36. 가상 시운전·실제 상황 재현: 영역 심화: 3~11절 신규 작성(현장 유형 사례 4건: 병원·제조 공장·물류창고·기타), 각주 16건, 1차 조건부 승인 수정 11건 반영 |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1126.md](references/ref-1126.md) | 참고문헌 ref-1126 등록: VDI/VDE 3693 Blatt 1 - Virtual commissioning - Model types,… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1127.md](references/ref-1127.md) | 참고문헌 ref-1127 등록: Sim2Real Predictivity: Does Evaluation in Simulation Predict… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1128.md](references/ref-1128.md) | 참고문헌 ref-1128 등록: Waymax: An Accelerated, Data-Driven Simulator for Large-Scal… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1129.md](references/ref-1129.md) | 참고문헌 ref-1129 등록: VirTooS: A ROS 2 - Unity Virtualization Toolkit for Fleet Ma… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1130.md](references/ref-1130.md) | 참고문헌 ref-1130 등록: Virtual Commissioning of Distributed Systems in the Industri… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1131.md](references/ref-1131.md) | 참고문헌 ref-1131 등록: 자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스 |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1132.md](references/ref-1132.md) | 참고문헌 ref-1132 등록: 가상의 디지털 공간에 세운 쌍둥이 공장 |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1133.md](references/ref-1133.md) | 참고문헌 ref-1133 등록: NASA-STD-7009B Standard for Models and Simulations |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1134.md](references/ref-1134.md) | 참고문헌 ref-1134 등록: Composable and executable scenarios for simulation-based tes… |
+| 2026-09-30-17 | 생성 | [docs/references/ref-1165.md](references/ref-1165.md) | 참고문헌 ref-1165 등록: Emulation Technology Speeds Up Warehouse Automation |
+| 2026-09-30-17 | 생성 | [docs/glossary/software-in-the-loop.md](glossary/software-in-the-loop.md) | 용어집 항목 소프트웨어 인 더 루프 |
+| 2026-09-30-17 | 생성 | [docs/glossary/hardware-in-the-loop.md](glossary/hardware-in-the-loop.md) | 용어집 항목 하드웨어 인 더 루프 |
+| 2026-09-30-17 | 생성 | [docs/glossary/sim-vs-real-correlation-coefficient.md](glossary/sim-vs-real-correlation-coefficient.md) | 용어집 항목 시뮬레이션–현실 상관 계수 |
+| 2026-09-30-17 | 생성 | [docs/glossary/models-and-simulations-credibility-assessment.md](glossary/models-and-simulations-credibility-assessment.md) | 용어집 항목 모델·시뮬레이션 신뢰도 평가 |
+| 2026-09-30-17 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-30-15 | 갱신 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed → draft: 3~11절 첫 작성(표준·인증 개정 현황, 제조 공장·물류창고·실외·가정·기타 사례, 사고 기록·조사 방법, 책임 경계, 연결 17건, 열린 질문 7건). 2차 수정: 7절 머리 문장을 f1·f3 의 구체 사실로 교체, 프런트매터 sources 를 각주 정의와 일치 |
 | 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s7.md](topics/2026/2026-09-30-area50-s7.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 머리 문장을 f1·f3 의 구체 사실로 교체 |
 | 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s4.md](topics/2026/2026-09-30-area50-s4.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "4. 핵심 개념과 용어" 절(1,007자)을 옮겼다 |

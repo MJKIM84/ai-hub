@@ -1,0 +1,738 @@
+{
+  "run_id": "2026-09-30-17",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 36,
+    "area_name": "36. 가상 시운전·실제 상황 재현",
+    "category": "I. 설계·시뮬레이션"
+  },
+  "gaps": [
+    "섹션 3. 왜 중요한가 비어 있음",
+    "섹션 4. 핵심 개념과 용어 비어 있음 — 가상 시운전의 시험 구성(MiL·SiL·HiL), 에뮬레이션, 로그 재생·비반응 재생, 시뮬레이션–현실 상관 지표, 모델·시뮬레이션 신뢰도 평가 용어 없음",
+    "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 물류창고·제조 공장·병원·기타 현장의 가상 시운전·재현 사례와 여섯 항목 정리 없음",
+    "섹션 6. 대표 접근법과 기술 비어 있음 — 실행 전 계획 검증, 가상 시운전, 운영 기록 기반 재현, 시뮬레이션–현실 차이 관리의 근거 없음",
+    "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — VDI/VDE 3693, NASA-STD-7009, Open-RMF 시뮬레이션, rosbag2, VDA 5050 범위 위치 없음",
+    "섹션 8. 대표 연구와 자료 비어 있음",
+    "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+    "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+    "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-132, oq-156 반영 필요",
+    "프런트매터 related_areas·sources 비어 있음"
+  ],
+  "research_questions": [
+    "설치 전에 가상으로 시운전하고, 실제로 있었던 문제를 시뮬레이션에서 다시 볼 수 있는가? [분류원문]",
+    "가상 시운전은 표준·문헌에서 어떻게 정의되고 어떤 시험 구성(MiL·SiL·HiL)을 쓰며, 분산 시스템·여러 로봇으로 어떻게 넓혀지는가? (섹션 4·6·7 겨냥)",
+    "여러 로봇의 관제·오케스트레이션을 설치 전에 가상 환경에서 시험하는 도구와 현장 사례(물류창고·제조 공장·병원·기타)는 무엇인가? (섹션 5·7 겨냥, 한국 사례 우선)",
+    "운영 기록(로그)으로 시뮬레이션의 초기 상태와 사건을 다시 구성하는 방법과 그 한계는 무엇인가? (섹션 6·8 겨냥)",
+    "재현한 시뮬레이션이 실제 기록과 '맞는다'고 판정할 지표와 허용 기준, 승인 주체는 무엇인가? (oq-132, 섹션 6·11 겨냥)",
+    "실행 전 계획 검증과 시뮬레이션 검증·실기 검증 단계에 대응하는 기존 검증 수준·신뢰도 평가 체계가 있는가? (oq-156, 섹션 6·7 겨냥)",
+    "가상 시운전·재현에서 ROP가 직접 맡을 것과 시뮬레이션 엔진·설비 업체·로봇 제조사에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "VDI/VDE 3693 Blatt 1 은 2025-05 개정판(39쪽, 독·영)에서 가상 시운전(virtual commissioning)을 체계적으로 정의하고 자동화 설비·기계의 수명주기 안에 위치시키며, 기본 시험 구성, 시험 방법, 필요한 모델 유형, 시뮬레이션 구성을 보완했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1126"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "VDI 공식 소개 페이지: 발행 2025-05, 'a clear and systematic definition of virtual commissioning' 제공, 시험 구성·시험 방법·모델 유형·시뮬레이션 구성 부분을 개정·보완. 대상 독자는 시운전·자동화·소프트웨어 엔지니어 등. 표준 본문은 유료로 미열람.",
+      "as_of": "2025-05",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "Rosenberger 외(Sensors 2023)는 VDI 3693 에 따라 가상 시운전 시험 구성을 자동화 모델만 쓰는 모델 인 더 루프(MiL), 실제 제어 언어 코드를 하드웨어와 분리해 돌리는 소프트웨어 인 더 루프(SiL), 실제 대상 하드웨어(가상 머신·컨테이너로 가상화한 하드웨어 포함)를 쓰는 하드웨어 인 더 루프(HiL)로 구분한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1130"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "MiL: 가장 추상적, 자동화 모델만 필요 / SiL: IEC 61131 코드 사용, 하드웨어와 독립 실행 / HiL: 실제 대상 하드웨어와 올바른 프로그래밍 언어, 가상화된 하드웨어(VM·컨테이너)도 포함.",
+      "as_of": "2023-03-28",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f3",
+      "claim": "제조 공장 사례: Rosenberger 외(Sensors 2023)는 가상 시운전을 제어 루프에서 분산 에지 컴퓨팅 시스템 전체로 넓혀, 물리 설비 시뮬레이션과 응용 사이의 직접 피드백 루프로 여러 장치를 함께 시험하는 구조 3가지를 제안하고, 끝단 팔레타이징 포장 설비 시뮬레이션에 실제 제어기 3대와 가상화 인스턴스 9대를 붙여 시험했으나, 시운전 기간·비용 절감 수치는 제시하지 않았고 비실시간 시뮬레이션이라는 한계를 밝혔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1130"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "구조: 단일 장치+네트워크 / 다수 장치+단일 시뮬레이션 / 다수 분산 시뮬레이션. 사례: palletizing portal packaging system, ctrlX CORE 3대+가상 9대. 한계: 비실시간, 스마트 계약 시험 미완, 단일 시나리오.",
+      "as_of": "2023-03-28",
+      "site_type": "제조 공장",
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f4",
+      "claim": "Open-RMF 의 시뮬레이션 문서는 traffic_editor 로 도면에 교통 정보·경유점·공유 자원을 주석한 뒤 building_map_generator 가 Gazebo·Ignition 세계와 플릿 어댑터용 주행 그래프를 자동 생성하고, 로봇(slotcar)·문·승강기·작업셀(디스펜서·인제스터)·군중(Menge) 플러그인으로 배치 전 시험, 로봇 추가 시 규모 평가, 드문 실패 상황 검토를 할 수 있다고 설명한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "'Long running simulations can instill confidence in facility owners prior to deployment.' 플러그인: slotcar 로봇, 문, 승강기(층간 캐빈·승강로 문), 작업셀, Menge 군중 시뮬레이션.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f5",
+      "claim": "VDA 5050 3.0.0 명세는 프로젝트 관리, 통합 방법, 시운전 작업 흐름, 검증·인수 절차를 포함하는 '프로젝트 조정·수행 절차'를 명세 범위 밖에 두므로, 이 인터페이스 규격을 따르는 것만으로 여러 제조사 로봇의 시운전 절차가 정해지지는 않는다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "범위 밖: 'commissioning workflows, validation and acceptance procedures' 를 포함한 Project Coordination and Implementation Procedures, 안전 요구, 교통 관리 로직, 운영 책임 배분, 사이버보안. (재인용: 2026-09-30-14)",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f6",
+      "claim": "ROS 2 의 rosbag2 는 토픽 메시지를 시각과 함께 기록하고 재생하며, --clock 옵션으로 재생 세션 동안 /clock 을 발행해 재생 데이터에 맞춘 시뮬레이션 시각을 주고, 일시정지·재개·탐색·속도 조정·한 메시지씩 진행 같은 재생 제어 서비스를 제공하며 기본 저장 형식은 MCAP 이다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-831"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "공식 저장소 README: '/clock is published only while a playback session is active.' 재생 제어: pause, resume, seek, set-rate, play_next. 저장 백엔드: MCAP 기본, SQLite3 선택.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f7",
+      "claim": "연계 대상: 자율주행 분야의 Waymax(Gulino 외, 2023)는 Waymo Open Motion Dataset 같은 실제 주행 기록으로 다중 에이전트 시나리오를 초기화하거나 재생하고, 단순 재생을 넘어 상호작용이 가능하도록 학습된 행동 모델과 규칙 기반 행동 모델을 함께 넣은 가속 시뮬레이터다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1128"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 실제 주행 데이터로 'initialize or play back a diverse set of multi-agent simulated scenarios', 학습·수작성 행동 모델로 시뮬레이션 안의 상호작용을 지원. TPU·GPU 가속. 초록만 확인.",
+      "as_of": "2023-10-12",
+      "site_type": "실외",
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "기록된 궤적을 그대로 재생하는 방식은 주변 에이전트가 바뀐 조건에 반응하지 않으므로, 실제 운영 기록으로 재현한 상황에서 배차 정책이나 로봇 수를 바꿔 비교하려면 주변 로봇·사람을 반응형 행동 모델로 바꾸는 단계가 필요할 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1128",
+        "ref-831"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "Waymax 가 재생 외에 상호작용용 행동 모델을 둔 설계(f7)와 rosbag2 재생이 기록된 메시지를 시각대로 다시 발행하는 방식(f6)에서 도출한 추정. 로봇 플릿에서 이를 검증한 자료는 찾지 못함.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f9",
+      "claim": "Kadian 외(2020)는 시뮬레이션에서의 성능 개선이 실제 성능 개선으로 이어지는지를 재는 시뮬레이션–현실 상관 계수(SRCC)를 제안하고, LoCoBot 의 PointGoal 주행에서 성공률 기준 SRCC 가 0.18 로 낮았던 원인이 에이전트가 충돌 동역학을 악용해 벽을 따라 미끄러지는 것임을 찾아 시뮬레이터 설정을 조정해 0.844 로 높였다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "SRCC_Succ 0.18 → 0.844. 원인: agents 'abusing collision dynamics to slide along walls'. 과제: embodied PointGoal navigation, 로봇: LoCoBot. arXiv 초록 기준(IEEE RA-L 2020 게재).",
+      "as_of": "2020-08",
+      "site_type": null,
+      "flow_item": "예외·성과",
+      "source_unopened": true
+    },
+    {
+      "id": "f10",
+      "claim": "Aljalbout 외(2025)는 시뮬레이션이 추상화와 근사로 이루어져 현실과의 차이(현실 격차)를 피할 수 없다고 보고, 영역 무작위화, 현실→시뮬레이션 전이, 상태·행동 추상화, 시뮬레이션–현실 공동 학습 같은 대응 기법과 현실 격차 평가 지표를 정리했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-741"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 'simulations consist of abstractions and approximations that inevitably introduce discrepancies'. 대상: 보행·주행·조작. Annual Review of Control, Robotics, and Autonomous Systems 2026 게재 예정. 초록만 확인.",
+      "as_of": "2025-10-23",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f11",
+      "claim": "Luckcuck 외(ACM Computing Surveys 2019)는 자율 로봇이 복잡하고 혼성적이며 안전에 중요한 시스템이어서 시험과 시뮬레이션만으로는 정확성을 보장하거나 인증에 충분한 증거를 내기 어렵다고 보고, 형식 명세·검증 기법을 보완 수단으로 정리했다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-599"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 'testing and simulation alone are insufficient to ensure the correctness of, or provide sufficient evidence for the certification of, autonomous robotics.'",
+      "as_of": "2019",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f12",
+      "claim": "NASA-STD-7009B '모델·시뮬레이션 표준'(문서일 2024-03-05, 현행)은 모델·시뮬레이션을 개발·수용·사용하는 요구·권고·기준을 정하고, 개정판에서 개발·사용 단계의 신뢰도 평가 산출물에 초점을 두며, 결과를 쓰기 전에 수용 기준을 위임된 기술 권한자가 정의·승인하도록 한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1133"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "NASA 표준 페이지: 7009B, ACTIVE, 문서일 2024-03-05. 'requirements, recommendations, and criteria with which M&S may be developed, accepted, and used'. 수용 기준은 위임된 Technical Authority 가 정의·승인.",
+      "as_of": "2024-03-05",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f13",
+      "claim": "병원 사례: 고려대학교 구로병원의 약품 배송 로봇 연구(Lee 외, Digital Health 2026-03)는 2025-06-18~29 의 실제 배송 122건에서 로봇 원격측정 기록과 승강기 시스템 데이터를 모아 승강기 가동률(EOR) 59.01% 를 임계값으로 찾았고(이하에서 배송 성공률 95.5%, 90% 초과에서 실패 집중), 측정한 점유율로 모수를 정한 몬테카를로 시뮬레이션으로 승강기 탑승 실패 기제를 재현했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "실제 로그: 로봇 텔레메트리+승강기 데이터, 현장 관찰 보완. ROC 로 EOR 임계 59.01%. 실패는 승객·화물이 진입을 막는 승강기 차단이 주. 시뮬레이션은 완전한 디지털 트윈이 아닌 승강기 탑승 기하 모형.",
+      "as_of": "2026-03",
+      "site_type": "병원",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f14",
+      "claim": "같은 연구의 저자들은 여러 병원 시험이 어려울 때 병원별 구조·통행 구성·승강기 제어 정책을 재현한 병원 디지털 트윈으로 현장 배치 전에 결과의 일반화 가능성을 부하 시험할 수 있다고 제안하고, 승강기 가동률을 혼잡 인지 배차의 제어 신호로 쓰자고 했다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-943"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "저자 제안: 'hospital digital twins to stress-test generalizability before field deployment'. 승강기 가동률(EOR)을 배차 제어 신호로 사용.",
+      "as_of": "2026-03",
+      "site_type": "병원",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f15",
+      "claim": "물류창고 사례(벤더 주장): Rockwell Automation 사례 소개에 따르면 통합자 Bastian Solutions 는 미국 남부의 약 30만 제곱피트 규모 물류센터 구축에서 컨베이어·피킹 모듈·PLC·I/O 매핑·제어 코드를 에뮬레이션으로 설치 전에 검증해 전체 프로젝트 기간을 18% 줄이고 현장 시운전을 5주 단축했다고 한다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1165"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: 에뮬레이션으로 'resolve issues pre-installation, which reduces risk and speeds up commissioning'. 프로젝트 기간 18% 감소, 시운전 5주 절감. 측정 방법·기준선 미공개.",
+      "as_of": "2024-08-28",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과",
+      "vendor_claim": true
+    },
+    {
+      "id": "f16",
+      "claim": "제조 공장 사례: 최성욱·박상철·왕지남(2008, 대한산업공학회 추계학술대회)은 자동차 차체 생산라인의 PLC 코드를 검증하려고 설비 상태·사건을 이산 사건 모델로 정의하고, 실제 PLC 하드웨어와 3D CAD·디지털 목업 기반 가상 공정 시뮬레이터를 양방향 통신으로 연동하는 가상 플랜트 구축 절차를 제안해 라인 안정화 기간과 비용을 줄이는 것을 목표로 했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1131"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스, 803~808쪽. 하드웨어 PLC 와 가상 공정 시뮬레이터의 co-simulation. 초록 기준.",
+      "as_of": "2008-11",
+      "site_type": "제조 공장",
+      "flow_item": "작업 대상"
+    },
+    {
+      "id": "f17",
+      "claim": "제조 공장 사례(벤더 주장): 현대자동차그룹은 싱가포르 혁신센터(HMGICS)에서 디지털 트윈 가상 공장으로 설비·로봇 배치 변경을 실제 생산을 멈추지 않고 가상에서 먼저 검증한다고 소개하나, 시운전 기간 단축 같은 수치는 밝히지 않았다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1132"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "벤더 주장: '생산을 중단하지 않고도 생산 라인을 검증하고 미래의 운영 결과값을 도출할 수 있다'. 정량 수치 없음.",
+      "as_of": "2023-11-21",
+      "site_type": "제조 공장",
+      "flow_item": "제약",
+      "vendor_claim": true
+    },
+    {
+      "id": "f18",
+      "claim": "기타(대학 건물) 사례: Ortega 외(Frontiers in Robotics and AI 2024-08)는 도면 DSL 로 만든 실내 환경, 동적 객체의 초기 자세, 시간·거리 조건으로 움직이는 문 같은 동적 요소, 주행 과제, 위치 추정 오차·충돌 회피 같은 수용 기준을 조합해 실행 가능한 이동로봇 시험 시나리오를 만드는 방법을 제안하고, 실측 점유 격자로 모델링한 대학 건물 1층에서 평가했으나 현장 기록의 재생은 다루지 않았다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1134"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "JSON-LD 기반 조합형 모델과 FloorPlan DSL, Gazebo 플러그인. 저자들은 시뮬레이션 환경 제작을 'modelling is time-consuming' 으로 인식되는 문제로 지적.",
+      "as_of": "2024-08-02",
+      "site_type": "기타",
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f19",
+      "claim": "VirTooS(Drudi 외, 2026-08 arXiv)는 ROS 2 와 Unity 를 결합해 실제 로봇과 가상 로봇이 같은 환경에서 상호작용하는 혼합 현실 실험으로 자율이동로봇(AMR) 플릿 관리(작업 배정) 전략을 시험하는 도구로, 가상·실제 센서를 함께 쓸 수 있으나 초록에는 정량 결과가 없다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1129"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: task assignment 실험을 'seamless interaction among real and virtual robots' 환경에서 수행. ChoiRbot 기반, 소스 공개 예정. 가상 시운전·VDA 5050 언급 없음.",
+      "as_of": "2026-08-26",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f20",
+      "claim": "확인한 자료를 종합하면 핵심 질문(설치 전에 가상으로 시운전하고 실제로 있었던 문제를 시뮬레이션에서 다시 볼 수 있는가)에 대해, 설치 전 가상 시운전은 제조·물류 설비 제어 분야에서 VDI/VDE 3693 과 MiL·SiL·HiL 구성으로 정립되어 있고 다중 로봇 쪽에는 Open-RMF 시뮬레이션·혼합 현실 도구가 있으며, 운영 기록 재생 도구(rosbag2)와 기록 기반 시나리오 초기화(Waymax)도 있지만, 여러 제조사 로봇 플릿 전체를 대상으로 한 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1126",
+        "ref-1130",
+        "ref-406",
+        "ref-1129",
+        "ref-831",
+        "ref-1128",
+        "ref-031",
+        "ref-1127"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1·f2(표준·시험 구성), f4·f19(다중 로봇 도구), f6·f7(기록 재생·기록 기반 초기화), f5(VDA 5050 은 시운전 절차 범위 밖), f9(예측력은 측정해야 함)를 종합한 추정.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f21",
+      "claim": "재현 시뮬레이션의 현실 일치 판정(oq-132)에는 비교한 여러 설정의 시뮬레이션 성능과 실제 성능 사이 상관을 보는 SRCC 같은 예측력 지표와, 결과 사용 전에 수용 기준을 권한자가 정의·승인하게 하는 NASA-STD-7009B 방식, 시나리오마다 수용 기준을 명시하는 방식을 조합할 수 있을 것으로 보이나, 로봇 플릿 재현에 이를 적용해 허용 기준을 정한 사례는 찾지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1127",
+        "ref-1133",
+        "ref-1134"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f9(SRCC), f12(수용 기준 승인 주체), f18(시나리오별 수용 기준)에서 도출. 사건 순서 유사도·시각 오차 지표의 로봇 플릿 적용 근거는 미확인.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "완료·인계"
+    },
+    {
+      "id": "f22",
+      "claim": "분류 원문의 지원 단계 표시 가운데 시뮬레이션 검증·실기 검증 단계(oq-156)는 VDI/VDE 3693 의 MiL·SiL·HiL 시험 구성과 NASA-STD-7009B 의 신뢰도 평가에 부분적으로 대응시킬 수 있을 것으로 보이나, 문서 확인·구조화·어댑터 연결까지 이어지는 단계를 한 체계로 정한 기존 성숙도 체계는 이번 조사에서 찾지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1126",
+        "ref-1130",
+        "ref-1133"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f1·f2(시험 구성 단계), f12(신뢰도 평가·수용 승인)에서 도출. 문서→구조화→어댑터 단계와의 대응 근거는 없음.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f23",
+      "claim": "확인한 자료를 종합하면 36. 가상 시운전·실제 상황 재현에서 ROP가 직접 맡을 범위는 제조사 플릿·문·승강기 인터페이스의 가상 대응물을 붙여 오케스트레이션 논리와 운영 정책을 설치 전에 SiL 방식으로 시험하는 환경, 재생 가능한 형태로 시각이 맞춰진 오케스트레이션 수준 실행 기록, 기록에서 시뮬레이션 초기 상태와 사건을 구성하는 기능, 재현 결과와 실제의 차이 지표와 수용 승인 기록의 관리로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-406",
+        "ref-831",
+        "ref-1130",
+        "ref-1127",
+        "ref-1133",
+        "ref-031"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f4(RMF 플러그인이 문·승강기·로봇을 가상화), f6(기록·/clock 재생), f2·f3(SiL·분산 가상 시운전), f9·f12(차이 지표·수용 승인), f5(규격이 시운전 절차를 정하지 않음)에서 도출.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f24",
+      "claim": "연계 대상: 분류 원문 19장 기준으로 물리·센서 시뮬레이션 엔진과 시뮬레이션 자산, 로봇 내부 주행·인식 제어의 현실 격차 보정은 시뮬레이션 도구·로봇 제조사가, 컨베이어·PLC·승강기 제어 코드의 에뮬레이션과 가상 시운전은 설비 업체·통합자가, 자율주행 차량의 기록 기반 시뮬레이션은 해당 업계가 맡으므로, ROP는 이들의 가상 모델·에뮬레이터와 연결되는 인터페이스와 시험 결과를 받아 들이는 쪽을 맡는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1130",
+        "ref-1131",
+        "ref-1165",
+        "ref-741",
+        "ref-1128",
+        "ref-406"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f3·f15·f16(설비 제어 코드 가상 시운전은 설비·통합자 영역), f10(로봇 자체 제어의 현실 격차), f7(차량 기록 시뮬레이션), f4(연결용 플러그인 구조)에서 도출.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f25",
+      "claim": "이 영역은 시나리오 형식의 33. 시나리오 모델·편집(f18), 시뮬레이션 엔진과 가정한 미래 실험의 34. 시뮬레이션·예측용 디지털 트윈(f4·f10), 재현의 원천 기록을 주는 18. 실시간 세계 상태·데이터 일관성과 37. 관제 화면·실행 기록(f6), 대화로 재현을 요청하는 11. 채팅으로 실제 상황 시뮬레이션 재현, 도면에서 시뮬레이션 세계를 만드는 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델(f4), 플릿 어댑터의 20. 로봇·제조사 관제 연동(f4·f5), 문·승강기의 22. 설비·건물 시스템 연동(f4·f13), 배차 정책의 25. 작업 배정 — MRTA(f13·f19), 원인 분석의 38. 모니터링·이상 탐지·원인 분석(f13), 계획 검증·형식 검증의 54. 시험·형식 검증·벤치마크(f11·f12), 현장 시운전의 55. 현장 조사·설치·시운전(f1·f15), 현실 격차 보정 학습의 47. AI·학습·적응과 모델 운영(f10), 적용 현장인 61. 물류창고(f15)·62. 제조 공장(f3·f16·f17)·63. 병원·의료(f13·f14)·67. 기타 현장(f18)과 이어진다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1134",
+        "ref-406",
+        "ref-741",
+        "ref-831",
+        "ref-031",
+        "ref-943",
+        "ref-1129",
+        "ref-599",
+        "ref-1133",
+        "ref-1126",
+        "ref-1165",
+        "ref-1130",
+        "ref-1131",
+        "ref-1132"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "각 연결의 근거 finding 을 괄호로 표기. 11. 채팅으로 실제 상황 시뮬레이션 재현 연결은 분류 원문 C 주석(재현은 33·36번과 짝)에 따른 것.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-1126",
+      "org": "VDI/VDE (VDI/VDE-Gesellschaft Mess- und Automatisierungstechnik)",
+      "title": "VDI/VDE 3693 Blatt 1 - Virtual commissioning - Model types, terms, and definitions",
+      "published": "2025-05",
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdivde-3693-blatt-1-virtual-commissioning-model-types-terms-and-definitions",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "가상 시운전의 정의와 수명주기 내 위치, 시험 구성·시험 방법·모델 유형·시뮬레이션 구성을 다루는 VDI/VDE 지침 2025-05 개정판의 공식 소개 페이지. 표준 본문은 유료로 열람하지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-831",
+      "org": "ROS 2 (Open Robotics 외, ros2/rosbag2 저장소)",
+      "title": "rosbag2 README",
+      "published": null,
+      "url": "https://github.com/ros2/rosbag2",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "ROS 2 토픽 기록·재생 도구 rosbag2 의 공식 README. /clock 발행, 재생 제어 서비스, MCAP·SQLite3 저장 형식을 설명한다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/ros2/rosbag2/rolling/README.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1127",
+      "org": "Kadian, A., Truong, J., Gokaslan, A., Clegg, A., Wijmans, E., Lee, S., Savva, M., Chernova, S., & Batra, D. (arXiv / IEEE RA-L)",
+      "title": "Sim2Real Predictivity: Does Evaluation in Simulation Predict Real-World Performance?",
+      "published": "2020-08",
+      "url": "https://arxiv.org/abs/1912.06321",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "시뮬레이션 평가가 실제 성능을 예측하는 정도를 재는 SRCC 지표를 제안하고 LoCoBot PointGoal 주행에서 시뮬레이터 조정으로 SRCC 를 0.18 에서 0.844 로 높였다. arXiv 초록만 읽었다.",
+      "fetched": false,
+      "fetched_via": null,
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1128",
+      "org": "Gulino, C., Fu, J., Luo, W. 외 (Waymo, arXiv)",
+      "title": "Waymax: An Accelerated, Data-Driven Simulator for Large-Scale Autonomous Driving Research",
+      "published": "2023-10-12",
+      "url": "https://arxiv.org/abs/2310.08710",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "실제 주행 기록으로 다중 에이전트 시나리오를 초기화·재생하고 행동 모델로 상호작용을 넣는 가속 자율주행 시뮬레이터. arXiv 초록만 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-406",
+      "org": "Open Robotics",
+      "title": "Simulation — Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 배치를 Gazebo·Ignition 으로 시뮬레이션하는 방법(도면 기반 세계 생성, 로봇·문·승강기·작업셀·군중 플러그인)과 배치 전 시험의 목적을 설명하는 장.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/simulation.md",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-943",
+      "org": "Lee 외 (Digital Health, SAGE)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "고려대학교 구로병원의 실제 약품 배송 로봇 기록 122건과 승강기 데이터로 승강기 가동률 임계값을 찾고 몬테카를로 시뮬레이션으로 탑승 실패 기제를 재현한 연구. 전문을 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1129",
+      "org": "Drudi, A., Pichierri, L., Testa, A., & Notarstefano, G. (arXiv)",
+      "title": "VirTooS: A ROS 2 - Unity Virtualization Toolkit for Fleet Management of Autonomous Mobile Robots",
+      "published": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26066",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "실제·가상 로봇이 함께 움직이는 혼합 현실 환경에서 AMR 플릿 관리(작업 배정) 실험을 하는 ROS 2–Unity 도구. arXiv 초록만 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1130",
+      "org": "Rosenberger, J., Selig, A., Ristic, M., Bühren, M., & Schramm, D. (Sensors 23(7):3545)",
+      "title": "Virtual Commissioning of Distributed Systems in the Industrial Internet of Things",
+      "published": "2023-03-28",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10099255/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "VDI 3693 의 MiL·SiL·HiL 구분을 바탕으로 가상 시운전을 분산 에지 시스템으로 넓히는 구조 3가지를 제안하고 팔레타이징 설비 시뮬레이션으로 시험했다. 전문을 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-599",
+      "org": "Luckcuck, M., Farrell, M., Dennis, L., Dixon, C., & Fisher, M. (ACM Computing Surveys 52(5))",
+      "title": "Formal Specification and Verification of Autonomous Robotic Systems: A Survey",
+      "published": "2019",
+      "url": "https://arxiv.org/abs/1807.00048",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자율 로봇 시스템의 형식 명세·검증 기법과 과제를 정리한 조사 논문. 시험·시뮬레이션만으로는 인증 증거가 부족하다고 본다. arXiv 초록만 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-741",
+      "org": "Aljalbout, E., Xing, J., Romero, A. 외 (arXiv)",
+      "title": "The Reality Gap in Robotics: Challenges, Solutions, and Best Practices",
+      "published": "2025-10-23",
+      "url": "https://arxiv.org/abs/2510.20808",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "로봇 공학의 현실 격차 원인과 대응 기법(영역 무작위화, 현실→시뮬레이션, 추상화, 공동 학습), 평가 지표를 정리한 조사 논문. arXiv 초록만 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1131",
+      "org": "최성욱, 박상철, 왕지남 (아주대학교, 대한산업공학회 추계학술대회)",
+      "title": "자동차 차체생산라인의 PLC 코드 검증을 위한 가상플랜트 구축 프로세스",
+      "published": "2008-11",
+      "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE01943794",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자동차 차체 생산라인의 PLC 코드를 실제 PLC 와 가상 공정 시뮬레이터의 연동으로 검증하는 가상 플랜트 구축 절차를 제안한 국내 학술대회 논문. DBpia 초록만 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1132",
+      "org": "현대자동차그룹",
+      "title": "가상의 디지털 공간에 세운 쌍둥이 공장",
+      "published": "2023-11-21",
+      "url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000122330",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "현대자동차그룹이 HMGICS 디지털 트윈 가상 공장으로 설비·로봇 배치 변경을 가상에서 먼저 검증한다고 소개하는 회사 콘텐츠. 정량 수치는 없다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://www.hyundaimotorgroup.com/ko/story/CONT0000000000122330",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1133",
+      "org": "NASA",
+      "title": "NASA-STD-7009B Standard for Models and Simulations",
+      "published": "2024-03-05",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "모델·시뮬레이션의 개발·수용·사용 요구와 신뢰도 평가를 정한 NASA 표준의 공식 페이지(개정 B, 현행). 표준 본문 PDF 는 열지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1134",
+      "org": "Ortega, A., Parra, S., Schneider, S., & Hochgeschwender, N. (Frontiers in Robotics and AI)",
+      "title": "Composable and executable scenarios for simulation-based testing of mobile robots",
+      "published": "2024-08-02",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1363281/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "도면 DSL·초기 자세·동적 객체·과제·수용 기준을 조합해 이동로봇 시뮬레이션 시험 시나리오를 만드는 방법을 제안하고 대학 건물에서 평가했다. 전문을 읽었다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1165",
+      "org": "Rockwell Automation",
+      "title": "Emulation Technology Speeds Up Warehouse Automation",
+      "published": "2024-08-28",
+      "url": "https://www.rockwellautomation.com/en-ca/company/news/case-studies/warehouse-design-digital.html",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "Bastian Solutions 가 물류센터 구축에서 컨베이어·피킹 모듈·PLC 제어 코드를 에뮬레이션으로 설치 전 검증했다는 벤더 사례. 성과 수치는 벤더 주장이다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "관제와 AGV·AMR 사이 통신 인터페이스를 정한 VDA 5050 공식 명세(현재 main 은 3.0.0). 시운전·검증·인수 절차는 범위 밖에 둔다.",
+      "fetched": true,
+      "fetched_via": "github_raw",
+      "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md",
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "rationale": "섹션 3: f20(핵심 질문 답, 추정), f5(규격이 시운전 절차를 정하지 않음), f11(시험·시뮬레이션만으로는 증거 부족이라는 의견) / 섹션 4: 가상 시운전 정의 f1, MiL·SiL·HiL f2, 로그 재생·/clock f6, 비반응 재생 f8(추정), SRCC f9, 현실 격차 f10, 신뢰도 평가·수용 승인 f12 / 섹션 5: 물류창고 — f15(예외·성과, 벤더 주장 병기), 제조 공장 — f3(수행 자원)·f16(작업 대상: PLC 코드)·f17(벤더 주장 병기), 병원 — f13(예외·성과: 실제 기록 기반 승강기 실패 재현)·f14(제약, 의견), 기타(대학 건물) — f18(완료·인계: 수용 기준). 상업 시설·가정·실외 로봇 현장 사례는 찾지 못했음을 명시(f7 은 자율주행 방법 참고로만) / 섹션 6: 실행 전 계획 검증 f11, 가상 시운전 f1~f4·f19, 운영 기록 기반 재현 f6~f8·f13, 시뮬레이션–현실 차이 관리 f9·f10·f21 / 섹션 7: VDI/VDE 3693 f1, NASA-STD-7009B f12, Open-RMF 시뮬레이션 f4, rosbag2·MCAP f6, VDA 5050 범위 f5, Waymax f7, VirTooS f19 / 섹션 8: f3·f9·f10·f11·f13·f16·f18 / 섹션 9: f23(직접 범위), f24(연계 대상) / 섹션 10: f25 — 11, 14, 15, 18, 20, 22, 25, 33, 34, 37, 38, 47, 54, 55, 61, 62, 63, 67. 18. 실시간 세계 상태·데이터 일관성은 재현의 원천 기록, 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래 실험으로 구분해 서술 / 섹션 11: 기존 oq-132(f21 로 부분 근거)·oq-156(f22 로 부분 근거) 미해결 유지와 open_questions_new 4건. 다음 실행 후보: 63. 병원·의료 페이지 5절에 f13·f14, 55. 현장 조사·설치·시운전 페이지에 f1·f2·f15 반영."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "소프트웨어 인 더 루프",
+      "term_en": "Software-in-the-Loop (SiL)",
+      "definition": "실제 제어 언어로 작성한 제어 프로그램을 대상 하드웨어 없이 가상 제어기에서 돌려 설비 시뮬레이션 모델과 연결해 시험하는 가상 시운전 구성이다."
+    },
+    {
+      "term_ko": "하드웨어 인 더 루프",
+      "term_en": "Hardware-in-the-Loop (HiL)",
+      "definition": "나중에 현장에 쓸 실제 제어 하드웨어(또는 그 가상화 인스턴스)를 설비 시뮬레이션 모델과 연결해 제어 프로그램과 하드웨어·통신을 함께 시험하는 가상 시운전 구성이다."
+    },
+    {
+      "term_ko": "시뮬레이션–현실 상관 계수",
+      "term_en": "Sim-vs-Real Correlation Coefficient (SRCC)",
+      "definition": "여러 방법·설정을 비교할 때 시뮬레이션에서의 성능 차이가 실제 로봇에서의 성능 차이와 얼마나 같은 방향으로 나타나는지를 상관계수로 재는 시뮬레이션 예측력 지표다."
+    },
+    {
+      "term_ko": "모델·시뮬레이션 신뢰도 평가",
+      "term_en": "Models and Simulations Credibility Assessment (NASA-STD-7009)",
+      "definition": "모델·시뮬레이션 결과를 의사결정에 쓰기 전에 검증·타당성 확인 등 신뢰도 요소를 평가하고 미리 승인된 수용 기준과 대조하는 절차다."
+    }
+  ],
+  "open_questions_new": [
+    "여러 제조사 로봇 플릿을 지휘하는 플랫폼 수준에서 VDI/VDE 3693 의 MiL·SiL·HiL 구성을 적용해 오케스트레이션 논리와 플릿 어댑터를 설치 전에 가상 시운전한 절차나 공개 사례가 있는가? | 관련 영역: 36. 가상 시운전·실제 상황 재현, 20. 로봇·제조사 관제 연동, 55. 현장 조사·설치·시운전 | 근거: f1 | 종류: 일반",
+    "실제 운영 기록을 재생해 재현한 상황에서 배차 정책이나 로봇 수를 바꿔 비교할 때, 기록된 다른 로봇·사람이 바뀐 조건에 반응하지 않는 문제를 로봇 플릿 재현에서 어떻게 다루는가? | 관련 영역: 36. 가상 시운전·실제 상황 재현, 19. 사람·보행자 모델, 33. 시나리오 모델·편집 | 근거: f8 | 종류: 일반",
+    "물류창고·공장 가상 시운전의 효과(프로젝트 기간·현장 시운전 기간 단축)를 벤더 사례가 아닌 독립 연구가 같은 기준선으로 측정한 결과가 있는가? | 관련 영역: 36. 가상 시운전·실제 상황 재현, 3. 경제성·조달·사업 모델 | 근거: f15 | 종류: 일반",
+    "한 병원의 실제 기록으로 찾은 승강기 가동률 임계값 같은 운영 기준이 다른 병원 구조·승강기 제어 정책을 재현한 시뮬레이션에서도 유지되는지 검증한 연구가 있는가? | 관련 영역: 36. 가상 시운전·실제 상황 재현, 63. 병원·의료, 22. 설비·건물 시스템 연동 | 근거: f14 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 16,
+    "cross_checked_count": 0,
+    "unverified": [
+      "oq-132 미해결: 로봇 플릿 재현에 사건 순서 유사도·시각 오차·처리량 오차 지표와 허용 기준을 적용한 자료를 찾지 못함(f21 로 후보만 제시)",
+      "oq-156 미해결: 문서 확인→구조화→시뮬레이션 연결→어댑터 연결→시뮬레이션 검증→실기 검증을 한 체계로 정한 기존 성숙도 체계를 찾지 못함(f22)",
+      "NASA-STD-7009 신뢰도 평가 척도(요소 8개, 0~4 점수, 전체 신뢰도는 최저 점수)는 검색 요약에만 있어 넣지 않음",
+      "Striffler·Voigt(2023) 가상 시운전 종합 리뷰(Journal of Manufacturing Systems 71)는 ScienceDirect 403 으로 열지 못해 넣지 않음",
+      "Kulkarni(IISE) 창고 로봇 가상 시운전 논문 소개 페이지 403, Siemens Ferrero·Wipro PARI 사례는 신규 출처 상한으로 넣지 않음",
+      "VAL(PDDL 계획 검증기) 논문 PDF 추출 실패, 공식 저장소 README 에 검증 항목 설명이 없어 실행 전 계획 검증의 전용 근거를 넣지 못함",
+      "Waymax 의 로그 재생 대 IDM 반응형 에이전트 모드 구분은 검색 요약에만 있어 초록 범위로 한정(f7)",
+      "f15 Bastian Solutions 수치(18%, 5주)는 벤더 주장이며 측정 방법·기준선 미확인",
+      "f17 현대자동차그룹 콘텐츠 제목은 검색 결과 제목 기준, 정량 수치 없음",
+      "f16 최성욱 외 2008 논문은 초록만 확인",
+      "f9·f10·f11 은 arXiv 초록만 확인",
+      "상업 시설·가정·실외 로봇 현장의 가상 시운전·재현 사례를 찾지 못함",
+      "국내 가상 시운전 표준(KS)이나 공공 지침은 찾지 못함"
+    ],
+    "scope_violations": [
+      "f3·f15·f16: PLC·컨베이어 제어 코드의 가상 시운전은 원문 19장 '시설·설비 제어' 연계 대상이므로 방법 근거로만 쓰고 f24 에서 '연계 대상: '으로 구분함",
+      "f7: 자율주행 차량 기록 기반 시뮬레이션은 원문 19장 '업종별 조건'(실외 차량) 연계 대상이므로 claim 을 '연계 대상: '으로 시작하고 재현 방법의 참고로만 제안함",
+      "f9·f10: 로봇 주행·조작 정책의 현실 격차 보정은 원문 19장 '로봇 자체 지능·제어' 연계 대상이며, ROP 에는 예측력 지표 개념만 가져오는 것으로 f23·f24 에서 구분함"
+    ],
+    "budget_used": {
+      "queries": 19,
+      "sources": 15
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 검색 19회/30, 신규 출처 15건/15(ref-1126~ref-1165, 예약 구간 안)로 신규 출처 상한에 도달해 Siemens Ferrero·Wipro PARI 가상 시운전 사례, Siemens Plant Simulation AGV 가상 시운전 블로그, Striffler·Voigt 리뷰를 출처로 넣지 못했다. 재사용 1건(ref-031): 값은 이전 브리프 2026-09-30-14 출처 표를 따랐고 이번에 GitHub 공식 저장소 원문을 다시 열어 시운전·검증·인수 절차가 범위 밖임을 확인했다. 원문 열람: 16건 모두 열었으나(webfetch 13, github_raw 3) ref-1127·ref-1128·ref-1129·ref-599·ref-741 는 arXiv 초록, ref-1131 는 DBpia 초록, ref-1126·ref-1133 은 표준 공식 소개 페이지만 읽었다. ScienceDirect·CRB·Strathprints PDF·IEEE CSDL 은 열지 못했다. 교차 확인 0건(주장마다 독립 출처 2곳을 찾지 못함). 벤더 주장 2건(f15·f17)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문에는 f20 으로 답했고 결론은 '설치 전 가상 시운전은 설비 제어 분야에서 표준·시험 구성이 정립되어 있고 다중 로봇 시뮬레이션·기록 재생 도구도 있으나, 여러 제조사 플릿 전체의 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다'는 추정이다. 현장 유형 사례는 물류창고(f15, 벤더)·제조 공장(f3·f16·f17)·병원(f13·f14, 한국)·기타(f18, 대학 건물)이며 상업 시설·가정은 찾지 못했고 실외는 자율주행 방법 참고(f7)뿐이다. 국내 자료는 고려대 구로병원 연구(ref-943), 아주대 학술대회 논문(ref-1131), 현대자동차그룹 콘텐츠(ref-1132)다. 18. 실시간 세계 상태·데이터 일관성은 재현의 원천 기록으로, 34. 시뮬레이션·예측용 디지털 트윈은 엔진·가정한 미래 실험으로 구분해 f25 에 적었다. L. AI·학습 기술 관련은 현실 격차 보정 학습(f10)을 47. AI·학습·적응과 모델 운영과 함께 제안했다. 용어집에 이미 있는 가상 시운전·로그 재생·현실 격차·시나리오 재구성·사전 실행 계획 검증·백 파일·MCAP·디지털 섀도·시뮬레이션 모델 검증·타당성 확인·승강기 가동률은 후보로 내지 않았다. 기존 열린 질문 oq-132·oq-156 은 부분 근거(f21·f22)만 있어 해결 제안하지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+  }
+}
