@@ -46,6 +46,13 @@ version: 1
 | 2026-09-30 | [43. 데이터·관측성·배포 — 핵심 개념과 용어](2026/2026-09-30-area43-s4.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
 | 2026-09-30 | [43. 데이터·관측성·배포 — 대표 접근법과 기술](2026/2026-09-30-area43-s6.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
 | 2026-09-30 | [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area43-s7.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 다른 연구영역과의 연결](2026/2026-09-30-area44-s10.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 열린 질문](2026/2026-09-30-area44-s11.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 왜 중요한가](2026/2026-09-30-area44-s3.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 핵심 개념과 용어](2026/2026-09-30-area44-s4.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술](2026/2026-09-30-area44-s6.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area44-s7.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료](2026/2026-09-30-area44-s8.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

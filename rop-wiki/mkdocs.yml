@@ -292,6 +292,13 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료: topics/2026/2026-09-30-area44-s8.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area44-s7.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술: topics/2026/2026-09-30-area44-s6.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 핵심 개념과 용어: topics/2026/2026-09-30-area44-s4.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 왜 중요한가: topics/2026/2026-09-30-area44-s3.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 열린 질문: topics/2026/2026-09-30-area44-s11.md
+      - 44. 로봇 기반 모델·언어 모델 계획 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area44-s10.md
       - 43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area43-s7.md
       - 43. 데이터·관측성·배포 — 대표 접근법과 기술: topics/2026/2026-09-30-area43-s6.md
       - 43. 데이터·관측성·배포 — 핵심 개념과 용어: topics/2026/2026-09-30-area43-s4.md
@@ -618,6 +625,7 @@ nav:
     - 과소명세 (Underspecification): glossary/underspecification.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
     - 관측성 (Observability): glossary/observability.md
+    - 교차 형태 학습 (Cross-embodiment Learning): glossary/cross-embodiment-learning.md
     - 교착 (Deadlock): glossary/deadlock.md
     - 구성 코파일럿 (Configuration Copilot): glossary/configuration-copilot.md
     - 구역 집합 (Zone Set (VDA 5050 zoneSet)): glossary/zone-set.md
@@ -655,6 +663,7 @@ nav:
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
     - 런타임 검증 (Runtime Verification): glossary/runtime-verification.md
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
+    - 로봇 기반 모델 (Robot Foundation Model): glossary/robot-foundation-model.md
     - 로봇 밀도 (Robot Density): glossary/robot-density.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
     - 로봇 친화형 건축물 인증 (Robot-Friendly Building Certification): glossary/robot-friendly-building-certification.md
@@ -777,6 +786,7 @@ nav:
     - 이동 병목 탐지 (Shifting Bottleneck Detection (Active Period Method)): glossary/shifting-bottleneck-detection-active-period-method.md
     - 이동형 영상정보처리기기 (Mobile Video Information Processing Device): glossary/mobile-video-information-processing-device.md
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
+    - 이중 시스템 구조 (Dual-system Architecture (System 1 / System 2)): glossary/dual-system-architecture.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
     - 일정 안정성 (Schedule Stability): glossary/schedule-stability.md
     - 자동 시뮬레이션 모델 생성 (Automatic Simulation Model Generation (ASMG)): glossary/automatic-simulation-model-generation.md
@@ -1013,7 +1023,15 @@ nav:
     - 'ref-1042 — Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconciliation, and more': references/ref-1042.md
     - ref-1043 — Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots: references/ref-1043.md
     - 'ref-1044 — Ocado''s digital twins and simulations: driving efficiencies and innovation at scale': references/ref-1044.md
+    - 'ref-1045 — RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control': references/ref-1045.md
+    - 'ref-1046 — OpenVLA: An Open-Source Vision-Language-Action Model': references/ref-1046.md
+    - 'ref-1047 — π0.5: a Vision-Language-Action Model with Open-World Generalization': references/ref-1047.md
+    - 'ref-1048 — Open X-Embodiment: Robotic Learning Datasets and RT-X Models': references/ref-1048.md
+    - 'ref-1049 — GR00T N1: An Open Foundation Model for Generalist Humanoid Robots': references/ref-1049.md
     - ref-105 — fleet_adapter_template — fleet_adapter_template/config.yaml: references/ref-105.md
+    - ref-1050 — K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과: references/ref-1050.md
+    - ref-1051 — BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg: references/ref-1051.md
+    - ref-1052 — VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입: references/ref-1052.md
     - ref-106 — 인증스마트물류센터: references/ref-106.md
     - ref-107 — 물류시설의 개발 및 운영에 관한 법률: references/ref-107.md
     - ref-108 — AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템을 중심으로 -: references/ref-108.md

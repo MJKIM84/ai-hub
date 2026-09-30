@@ -33,7 +33,7 @@ version: 1
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
-| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 3 | 0 | 0 | 6 | 0 | 0 | 9 |
+| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 2 | 0 | 0 | 14 | 0 | 0 | 16 |
 | [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
@@ -144,7 +144,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | seed | — | 2026-09-28 | 1 |
+| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | 2026-09-30 | 2 |
 | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | seed | — | 2026-09-28 | 1 |
 | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | seed | — | 2026-09-28 | 1 |
 | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-09-25 | 2 |
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 111회 중 최종 통과 109회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 109, None 2
-- 2차 검증 판정: 통과 109, None 2
+- 실행 112회 중 최종 통과 110회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 110, None 2
+- 2차 검증 판정: 통과 110, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 453 |
+| 논문 | 458 |
 | 오픈소스 문서 | 200 |
 | 표준 | 165 |
-| 기사 | 76 |
+| 기사 | 78 |
 | 정부·연구기관 | 76 |
-| 벤더 문서 | 58 |
+| 벤더 문서 | 59 |
 | 업계 보고서 | 16 |
 
-신뢰도: medium 783건, high 184건, low 77건
+신뢰도: medium 789건, high 184건, low 79건
 
 ### 현장 유형 매트릭스 채움률
 
-- 37/119 칸 (31%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 39/119 칸 (33%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

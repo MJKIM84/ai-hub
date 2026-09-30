@@ -20,6 +20,27 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-07 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 영역 심화: seed → draft, 3~11절 신규 작성(자동 분리 후 요약·링크), 각주 15건, 1차 수정 지시 10건 이행. 2차: 5절 도입 문장을 가정 [사실]과 제조 공장·물류창고 [추정] 벤더 주장으로 분리, 5절에 VLA(용어집 링크)·PoC, 7절에 PDDL 풀어쓰기 |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s6.md](topics/2026/2026-09-30-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,491자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s4.md](topics/2026/2026-09-30-area44-s4.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "4. 핵심 개념과 용어" 절(1,296자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s8.md](topics/2026/2026-09-30-area44-s8.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차: RT-2 '출발점' 평가 삭제·f1·f3 범위로 재서술, LLM+P 문장을 분리해 [사실]`[^ref-092]` 부여(각주 정의·sources 추가), [의견]은 Kambhampati 외 주장에만 |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s10.md](topics/2026/2026-09-30-area44-s10.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(953자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s7.md](topics/2026/2026-09-30-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(651자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s3.md](topics/2026/2026-09-30-area44-s3.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "3. 왜 중요한가" 절(584자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s11.md](topics/2026/2026-09-30-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(527자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 요약 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 44. 로봇 기반 모델·언어 모델 계획: 영역 심화: 3~11절 신규 작성(VLA·교차 형태 학습, 언어 모델 계획 검증·불확실도 기반 도움 요청, 가정·제조 공장·물류창고 사례), 각주 15건, 1차 수정 지시 10건·2차 수정 지시 4건 이행 |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1045.md](references/ref-1045.md) | 참고문헌 ref-1045 등록: RT-2: Vision-Language-Action Models Transfer Web Knowledge t… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1046.md](references/ref-1046.md) | 참고문헌 ref-1046 등록: OpenVLA: An Open-Source Vision-Language-Action Model |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1047.md](references/ref-1047.md) | 참고문헌 ref-1047 등록: π0.5: a Vision-Language-Action Model with Open-World General… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1048.md](references/ref-1048.md) | 참고문헌 ref-1048 등록: Open X-Embodiment: Robotic Learning Datasets and RT-X Models |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1049.md](references/ref-1049.md) | 참고문헌 ref-1049 등록: GR00T N1: An Open Foundation Model for Generalist Humanoid R… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1050.md](references/ref-1050.md) | 참고문헌 ref-1050 등록: K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과 |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1051.md](references/ref-1051.md) | 참고문헌 ref-1051 등록: BMW Group advances the use of Physical AI in production with… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1052.md](references/ref-1052.md) | 참고문헌 ref-1052 등록: VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입 |
+| 2026-09-30-07 | 생성 | [docs/glossary/robot-foundation-model.md](glossary/robot-foundation-model.md) | 용어집 항목 로봇 기반 모델 |
+| 2026-09-30-07 | 생성 | [docs/glossary/cross-embodiment-learning.md](glossary/cross-embodiment-learning.md) | 용어집 항목 교차 형태 학습 |
+| 2026-09-30-07 | 생성 | [docs/glossary/dual-system-architecture.md](glossary/dual-system-architecture.md) | 용어집 항목 이중 시스템 구조 |
+| 2026-09-30-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-06 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 섹션 3~11 신규 작성(seed → draft): 기록 형식·관측성·배포·비용 관리 접근법, 병원·물류창고 적용 사례, 책임 경계, 연결 영역 17개, 열린 질문 6건 |
 | 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s6.md](topics/2026/2026-09-30-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,750자)을 옮겼다 |
 | 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s10.md](topics/2026/2026-09-30-area43-s10.md) | 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,115자)을 옮겼다 |
