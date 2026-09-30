@@ -298,6 +298,13 @@ nav:
       - 52. 통신 보호·위협 관리·감사 — 왜 중요한가: topics/2026/2026-09-30-area52-s3.md
       - 52. 통신 보호·위협 관리·감사 — 열린 질문: topics/2026/2026-09-30-area52-s11.md
       - 52. 통신 보호·위협 관리·감사 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area52-s10.md
+      - 50. 안전 표준·인증·사고 조사 — 대표 연구와 자료: topics/2026/2026-09-30-area50-s8.md
+      - 50. 안전 표준·인증·사고 조사 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area50-s7.md
+      - 50. 안전 표준·인증·사고 조사 — 대표 접근법과 기술: topics/2026/2026-09-30-area50-s6.md
+      - 50. 안전 표준·인증·사고 조사 — 핵심 개념과 용어: topics/2026/2026-09-30-area50-s4.md
+      - 50. 안전 표준·인증·사고 조사 — 왜 중요한가: topics/2026/2026-09-30-area50-s3.md
+      - 50. 안전 표준·인증·사고 조사 — 열린 질문: topics/2026/2026-09-30-area50-s11.md
+      - 50. 안전 표준·인증·사고 조사 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area50-s10.md
       - 49. 사람 근접 안전 — 대표 연구와 자료: topics/2026/2026-09-30-area49-s8.md
       - 49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area49-s7.md
       - 49. 사람 근접 안전 — 대표 접근법과 기술: topics/2026/2026-09-30-area49-s6.md
@@ -845,6 +852,7 @@ nav:
     - 위치 체크 디지트 (Location Check Digit): glossary/location-check-digit.md
     - 위험성평가 (Risk Assessment (ISO 12100)): glossary/risk-assessment.md
     - 유사 변환 (Similarity Transformation): glossary/similarity-transformation.md
+    - 윤리적 블랙박스 (Ethical Black Box (EBB)): glossary/ethical-black-box.md
     - 음성 피킹 (Voice-Directed Picking (Voice Picking)): glossary/voice-picking.md
     - 의도 인식 (Intent Recognition (Intent Detection)): glossary/intent-recognition.md
     - 의료 로봇 미들웨어 RoMi-H (Robotic Middleware for Healthcare (RoMi-H)): glossary/robotic-middleware-for-healthcare.md
@@ -867,9 +875,11 @@ nav:
     - 자율 실험실 (Self-driving Laboratory (Autonomous Laboratory)): glossary/self-driving-laboratory.md
     - 작업 분해 (Task Decomposition): glossary/task-decomposition.md
     - 작업장 스케줄링 문제 (Job Shop Scheduling Problem (JSSP)): glossary/job-shop-scheduling-problem.md
+    - 잠금·표지 (Lockout/Tagout (LOTO)): glossary/lockout-tagout.md
     - 잠재 실패 (Latent Failure): glossary/latent-failure.md
     - 장애 주입 (Fault Injection): glossary/fault-injection.md
     - 적합성 시험 (Conformance Test): glossary/conformance-test.md
+    - 적합성 추정 (Presumption of Conformity): glossary/presumption-of-conformity.md
     - 전자 제품 코드 정보 서비스 (EPCIS): glossary/epcis.md
     - 전제·유지·사후 조건 (Pre-, Hold-, Post-condition): glossary/pre-hold-post-condition.md
     - 절제 실험 (Ablation Study): glossary/ablation-study.md
@@ -1181,7 +1191,19 @@ nav:
     - 'ref-1112 — When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems': references/ref-1112.md
     - ref-1113 — A Study on Prompt Injection Attack Against LLM-Integrated Mobile Robotic Systems: references/ref-1113.md
     - ref-1114 — An Experimental Security Analysis of an Industrial Robot Controller: references/ref-1114.md
+    - ref-1115 — ISO 10218 industrial robot safety standard receives major overhaul: references/ref-1115.md
+    - ref-1116 — New standards for industrial robots EN ISO 10218-1 and -2: references/ref-1116.md
+    - ref-1117 — ISO/FDIS 13482 Robotics — Safety requirements for service robots: references/ref-1117.md
+    - ref-1118 — 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시: references/ref-1118.md
+    - 'ref-1119 — Robot Accident Investigation: a case study in Responsible Robotics': references/ref-1119.md
     - ref-112 — About the Business Process Model And Notation Specification Version 2.0: references/ref-112.md
+    - 'ref-1120 — An Ethical Black Box for Social Robots: a draft Open Standard': references/ref-1120.md
+    - ? 'ref-1121 — Role-Play as Responsible Robotics: The Virtual Witness Testimony Role-Play Interview for Investigating Hazardous Human-Robot Interactions'
+      : references/ref-1121.md
+    - 'ref-1122 — Robot-related injuries in the workplace: An analysis of OSHA Severe Injury Reports': references/ref-1122.md
+    - ref-1123 — [단독] 산업용 로봇 재해 위험 제조업보다 두 배 ... (제목 일부만 확인): references/ref-1123.md
+    - ref-1124 — ‘로봇이 사람을 박스로 인식’ 고성 농산물유통센터서 40대 압착 사망: references/ref-1124.md
+    - ref-1125 — 오뚜기에스에프 끼임사고, 기본 예방조치 안 지켰다: references/ref-1125.md
     - 'ref-113 — Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)': references/ref-113.md
     - ref-114 — A BPMN-driven framework for Multi-Robot System development: references/ref-114.md
     - ? 'ref-115 — Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes'

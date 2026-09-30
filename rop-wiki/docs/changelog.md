@@ -20,6 +20,30 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-15 | 갱신 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed → draft: 3~11절 첫 작성(표준·인증 개정 현황, 제조 공장·물류창고·실외·가정·기타 사례, 사고 기록·조사 방법, 책임 경계, 연결 17건, 열린 질문 7건). 2차 수정: 7절 머리 문장을 f1·f3 의 구체 사실로 교체, 프런트매터 sources 를 각주 정의와 일치 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s7.md](topics/2026/2026-09-30-area50-s7.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 머리 문장을 f1·f3 의 구체 사실로 교체 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s4.md](topics/2026/2026-09-30-area50-s4.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "4. 핵심 개념과 용어" 절(1,007자)을 옮겼다 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s6.md](topics/2026/2026-09-30-area50-s6.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 역할별 표준 적합성 경로의 브리프 밖 한계 문장을 f16 사실 문장으로 교체 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s11.md](topics/2026/2026-09-30-area50-s11.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "11. 열린 질문" 절(978자)을 옮겼다 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s10.md](topics/2026/2026-09-30-area50-s10.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(974자)을 옮겼다 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s8.md](topics/2026/2026-09-30-area50-s8.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "8. 대표 연구와 자료" 절(859자)을 옮겼다 |
+| 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s3.md](topics/2026/2026-09-30-area50-s3.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "3. 왜 중요한가" 절을 옮겼다. 2차 수정: 3절 세 번째 단락의 태그 없는 단정 문장을 뒤 [추정] 문장에 합침 |
+| 2026-09-30-15 | 요약 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | 50. 안전 표준·인증·사고 조사: seed → draft: 3~11절 첫 작성(ISO 10218:2025·ISO/FDIS 13482·R15.08-2·실외이동로봇 운행안전인증·KS B 7317, 사고 기록·조사 방법, 5개 현장 유형 사례), 각주 17건, 새 열린 질문 4건 |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1115.md](references/ref-1115.md) | 참고문헌 ref-1115 등록: ISO 10218 industrial robot safety standard receives major ov… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1116.md](references/ref-1116.md) | 참고문헌 ref-1116 등록: New standards for industrial robots EN ISO 10218-1 and -2 |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1117.md](references/ref-1117.md) | 참고문헌 ref-1117 등록: ISO/FDIS 13482 Robotics — Safety requirements for service ro… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1118.md](references/ref-1118.md) | 참고문헌 ref-1118 등록: 실외이동로봇 운행안전인증 절차 및 기준 등에 관한 고시 |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1119.md](references/ref-1119.md) | 참고문헌 ref-1119 등록: Robot Accident Investigation: a case study in Responsible Ro… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1120.md](references/ref-1120.md) | 참고문헌 ref-1120 등록: An Ethical Black Box for Social Robots: a draft Open Standar… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1121.md](references/ref-1121.md) | 참고문헌 ref-1121 등록: Role-Play as Responsible Robotics: The Virtual Witness Testi… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1122.md](references/ref-1122.md) | 참고문헌 ref-1122 등록: Robot-related injuries in the workplace: An analysis of OSHA… |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1123.md](references/ref-1123.md) | 참고문헌 ref-1123 등록: [단독] 산업용 로봇 재해 위험 제조업보다 두 배 ... (제목 일부만 확인) |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1124.md](references/ref-1124.md) | 참고문헌 ref-1124 등록: ‘로봇이 사람을 박스로 인식’ 고성 농산물유통센터서 40대 압착 사망 |
+| 2026-09-30-15 | 생성 | [docs/references/ref-1125.md](references/ref-1125.md) | 참고문헌 ref-1125 등록: 오뚜기에스에프 끼임사고, 기본 예방조치 안 지켰다 |
+| 2026-09-30-15 | 생성 | [docs/glossary/ethical-black-box.md](glossary/ethical-black-box.md) | 용어집 항목 윤리적 블랙박스 |
+| 2026-09-30-15 | 생성 | [docs/glossary/lockout-tagout.md](glossary/lockout-tagout.md) | 용어집 항목 잠금·표지 |
+| 2026-09-30-15 | 생성 | [docs/glossary/presumption-of-conformity.md](glossary/presumption-of-conformity.md) | 용어집 항목 적합성 추정 |
+| 2026-09-30-15 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-30-14 | 갱신 | [docs/categories/planning-and-business/use-cases-requirements-and-scope.md](categories/planning-and-business/use-cases-requirements-and-scope.md) | 섹션 3~11 신규 작성(현장 유형 사례 7건: 병원 3·상업 시설·제조 공장·물류창고·실외, 표준·프레임워크 8건, 자료 6건, 경계 3행, 연결 17개, 열린 질문 5건), 프런트매터 채움, 13절 각주 17건. 2차: f26·f28·f18 태그 보완, f21 발표 표현, RoMi-H 유형, 물류 흐름 대응 문장 삭제, 약어 풀어쓰기 |
 | 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s7.md](topics/2026/2026-09-30-area02-s7.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,504자)을 옮겼다 |
 | 2026-09-30-14 | 생성 | [docs/topics/2026/2026-09-30-area02-s10.md](topics/2026/2026-09-30-area02-s10.md) | 자동 분리: 2. 사용 사례·요구·책임 범위 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,149자)을 옮겼다 |

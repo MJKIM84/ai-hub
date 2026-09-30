@@ -34,7 +34,7 @@ version: 1
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 1 | 0 | 0 | 18 | 0 | 0 | 19 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
-| [M. 안전](categories/safety/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
+| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
@@ -155,7 +155,7 @@ version: 1
 |---|---|---|---|---|
 | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
 | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-09-30 | 2 |
-| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed | — | 2026-09-28 | 1 |
+| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | 2026-09-30 | 2 |
 
 **N. 보안·개인정보**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 119회 중 최종 통과 117회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 117, None 2
-- 2차 검증 판정: 통과 117, None 2
+- 실행 120회 중 최종 통과 118회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 118, None 2
+- 2차 검증 판정: 통과 118, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 494 |
+| 논문 | 498 |
 | 오픈소스 문서 | 208 |
-| 표준 | 171 |
-| 기사 | 86 |
-| 정부·연구기관 | 79 |
+| 표준 | 172 |
+| 기사 | 90 |
+| 정부·연구기관 | 80 |
 | 벤더 문서 | 66 |
-| 업계 보고서 | 19 |
+| 업계 보고서 | 20 |
 
-신뢰도: medium 833건, high 204건, low 86건
+신뢰도: medium 839건, high 206건, low 89건
 
 ### 현장 유형 매트릭스 채움률
 
-- 57/119 칸 (48%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 60/119 칸 (50%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

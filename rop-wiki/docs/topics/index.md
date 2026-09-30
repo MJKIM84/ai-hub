@@ -92,6 +92,13 @@ version: 1
 | 2026-09-30 | [49. 사람 근접 안전 — 대표 접근법과 기술](2026/2026-09-30-area49-s6.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
 | 2026-09-30 | [49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area49-s7.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
 | 2026-09-30 | [49. 사람 근접 안전 — 대표 연구와 자료](2026/2026-09-30-area49-s8.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 다른 연구영역과의 연결](2026/2026-09-30-area50-s10.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 열린 질문](2026/2026-09-30-area50-s11.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 왜 중요한가](2026/2026-09-30-area50-s3.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 핵심 개념과 용어](2026/2026-09-30-area50-s4.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 대표 접근법과 기술](2026/2026-09-30-area50-s6.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area50-s7.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 대표 연구와 자료](2026/2026-09-30-area50-s8.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
 | 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 다른 연구영역과의 연결](2026/2026-09-30-area52-s10.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
 | 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 열린 질문](2026/2026-09-30-area52-s11.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
 | 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 왜 중요한가](2026/2026-09-30-area52-s3.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |

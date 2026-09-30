@@ -1,0 +1,151 @@
+{
+  "duration_api_ms": 39114,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 0.9010292000000001,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 99071,
+    "cache_read_input_tokens": 88466,
+    "output_tokens": 4538,
+    "output_tokens_details": {
+      "thinking_tokens": 3062
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 99071,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4538,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 99071,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 99071
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 4538,
+      "cacheReadInputTokens": 88466,
+      "cacheCreationInputTokens": 99071,
+      "webSearchRequests": 0,
+      "costUSD": 0.9010292000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3062,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-15\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인 / 2차 통과. 확인 20건, 미확인 1건, 교차 확인 1건(f1: The Robot Report·IBF Solutions). 강등: f15 사실 → 일부 강등. 재가동 전 확인 절차가 없었다는 부분은 수사 쟁점으로만 쓰고, LOTO 미실시와 조사 현황만 보도 기준 사실로 둔다. 원문 미열람 출처: ref-1084, ref-991. 브리프 기준으로는 미열람이었고, 검증 중에 열어 내용을 확인했다. 주의: 안전 표준 서술은 ISO·ANSI 원문이 아니라 전문지·컨설팅사·국가 표준기관의 해설과 프로젝트 정보에 기댄다. ISO·ANSI 원문은 403으로 열리지 않았다. ISO 13482 개정판은 발행 전 FDIS 단계다. 실외이동로봇 운행안전인증의 심사항목 수는 인증기관 페이지(8개)와 행정예고 보도·정책브리핑(16가지)이 달라 둘 다 제시했고, oq-186·oq-230은 아직 풀리지 않았다. 국내 산업용 로봇 재해 통계(2011~2015)는 기사를 통한 재인용이며 보고서 원문은 확인하지 못했다. 2026-09 고성 식품 공장 사고는 조사 중이고 원인이 확정되지 않았다. 병원·상업 시설 사례는 찾지 못했다. 정정 요청 없음. / 2차 통과(재검증 1회차). 드리프트 없음. 직전 2차에서 지적한 3건은 모두 처리됐다: 6절의 브리프 밖 한계 문장은 f16 사실 문장으로 바꿨고, 7절 머리 문장은 f1·f3의 구체 사실로 바꿔 태그 상향을 해소했으며, 3절의 태그 없는 단정은 [추정] 문장에 합쳤다. 세부영역 페이지 프런트매터 sources 15건은 본문 각주 참조·정의와 일치한다. 1차 수정 지시 13건의 이행 상태도 유지됐다. [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과). 참고(수정 지시 아님): FDIS 약어는 세부영역 페이지 7절과 분리 주제 페이지에서 풀어 쓰지 않은 채 처음 나온다. reference_updates 의 cited_by 는 여러 출처에서 세부영역 페이지만 적고 분리 주제 페이지를 빠뜨렸으므로, 참고문헌 페이지의 인용 페이지 목록은 퍼블리셔 자동 영역이 실제 인용으로 다시 만드는지 확인이 필요하다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-15",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인 / 2차 통과. 확인 20건, 미확인 1건, 교차 확인 1건(f1: The Robot Report·IBF Solutions). 강등: f15 사실 → 일부 강등. 재가동 전 확인 절차가 없었다는 부분은 수사 쟁점으로만 쓰고, LOTO 미실시와 조사 현황만 보도 기준 사실로 둔다. 원문 미열람 출처: ref-1084, ref-991. 브리프 기준으로는 미열람이었고, 검증 중에 열어 내용을 확인했다. 주의: 안전 표준 서술은 ISO·ANSI 원문이 아니라 전문지·컨설팅사·국가 표준기관의 해설과 프로젝트 정보에 기댄다. ISO·ANSI 원문은 403으로 열리지 않았다. ISO 13482 개정판은 발행 전 FDIS 단계다. 실외이동로봇 운행안전인증의 심사항목 수는 인증기관 페이지(8개)와 행정예고 보도·정책브리핑(16가지)이 달라 둘 다 제시했고, oq-186·oq-230은 아직 풀리지 않았다. 국내 산업용 로봇 재해 통계(2011~2015)는 기사를 통한 재인용이며 보고서 원문은 확인하지 못했다. 2026-09 고성 식품 공장 사고는 조사 중이고 원인이 확정되지 않았다. 병원·상업 시설 사례는 찾지 못했다. 정정 요청 없음. / 2차 통과(재검증 1회차). 드리프트 없음. 직전 2차에서 지적한 3건은 모두 처리됐다: 6절의 브리프 밖 한계 문장은 f16 사실 문장으로 바꿨고, 7절 머리 문장은 f1·f3의 구체 사실로 바꿔 태그 상향을 해소했으며, 3절의 태그 없는 단정은 [추정] 문장에 합쳤다. 세부영역 페이지 프런트매터 sources 15건은 본문 각주 참조·정의와 일치한다. 1차 수정 지시 13건의 이행 상태도 유지됐다. [분류원문] 보존, 섹션 순서 준수, 링크 유효(형식 검증 통과). 참고(수정 지시 아님): FDIS 약어는 세부영역 페이지 7절과 분리 주제 페이지에서 풀어 쓰지 않은 채 처음 나온다. reference_updates 의 cited_by 는 여러 출처에서 세부영역 페이지만 적고 분리 주제 페이지를 빠뜨렸으므로, 참고문헌 페이지의 인용 페이지 목록은 퍼블리셔 자동 영역이 실제 인용으로 다시 만드는지 확인이 필요하다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 28366,
+  "type": "result",
+  "duration_ms": 39253,
+  "uuid": "8e9531da-1a01-4a07-b35c-c3401fb69762",
+  "ttft_stream_ms": 1566,
+  "time_to_request_ms": 117,
+  "time_to_request_phases_ms": {
+    "other": 40,
+    "system_prompt": 37,
+    "turn_start_resume": 0,
+    "process_user_input": 17,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 67,
+  "time_to_request_cpu_ms": 142,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1566,
+  "time_to_request_from_spawn_ms": 6797977,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790748098889.4434,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 40.6
+}
