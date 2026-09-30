@@ -25,7 +25,7 @@ version: 1
 | **병원** | 2 | 3 | 5 | 2 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 1 | 2 | 1 |
 | **상업 시설** | 2 | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 |
 | **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 1 | 2 | 비어 있음 | 1 | 1 |
-| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 1 | 1 |
+| **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 2 | 1 |
 | **기타** | 1 | 2 | 비어 있음 | 2 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 1 |
 
 열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 74/119 칸.
@@ -109,7 +109,7 @@ version: 1
 - **L. AI·학습 기술**: [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
 - **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시), [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md#5-적용-사례-현장-유형-명시)
 - **N. 보안·개인정보**: [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시)
-- **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시)
+- **P. 거버넌스·법규·사회**: [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md#5-적용-사례-현장-유형-명시), [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [66. 실외](categories/site-type-applications/outdoor.md#5-적용-사례-현장-유형-명시)
 
 ### 기타

@@ -1,0 +1,859 @@
+{
+  "duration_api_ms": 537091,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.041086599999999,
+  "usage": {
+    "input_tokens": 58,
+    "cache_creation_input_tokens": 92360,
+    "cache_read_input_tokens": 4459878,
+    "output_tokens": 39196,
+    "output_tokens_details": {
+      "thinking_tokens": 12471
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 92360,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 27666,
+        "cache_read_input_tokens": 175155,
+        "cache_creation_input_tokens": 510,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 510
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 58,
+      "outputTokens": 39196,
+      "cacheReadInputTokens": 4459878,
+      "cacheCreationInputTokens": 92360,
+      "webSearchRequests": 0,
+      "costUSD": 2.4150076,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12471,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 363979,
+      "outputTokens": 16420,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 18,
+      "costUSD": 0.626079,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 46,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-23\",\"date\":\"2026-09-30\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":59,\"area_name\":\"59. 법·규제·보험·라이선스\",\"category\":\"P. 거버넌스·법규·사회\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 운행안전인증, 운용자, 책임보험·공제, 제조물(소프트웨어 포함 여부), 사이버복원력법 보고 의무, SBOM·SPDX, 패키지 라이선스 선언 용어 없음\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 실외(한국 보도 통행 로봇, 미국 주법 개인 배송 장치)·산업 사업장(산업용 로봇 안전검사) 사례와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 인증·보험 조건의 운영 제약 반영, 사고·취약점 보고 체계, 라이선스 선언·SBOM 관리 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 지능형로봇법·도로교통법, 산업안전보건법 안전검사, EU 기계류 규정, EU 제조물책임지침, 한국 제조물책임법, 인공지능 기본법, EU 사이버복원력법, 개인정보보호법 제25조의2, ROS 2 REP 2004, SPDX(ISO/IEC 5962) 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-143, oq-173, oq-186, oq-187, oq-231, oq-239, oq-249, oq-250, oq-262 반영 필요\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가? [분류원문]\",\"실외에서 로봇을 운행할 때 한국(지능형로봇법·도로교통법의 운행안전인증·운용자 의무·보험)과 해외(미국 주법의 개인 배송 장치)는 무엇을 요구하며, 운행안전인증의 심사항목과 인증 대상은 어떻게 정해져 있는가? (섹션 5·7 겨냥, oq-186·oq-187 관련, 한국 자료 우선)\",\"로봇 사고의 책임을 정하는 제조물 책임 법제는 소프트웨어·AI를 어떻게 다루는가(EU 개정 제조물책임지침, 한국 제조물책임법)? (섹션 4·6·7 겨냥)\",\"AI 규제와 사이버보안 규제(한국 인공지능 기본법, EU 사이버복원력법)는 로봇 운영 사업자에게 어떤 의무와 시행 일정을 두는가? (섹션 7 겨냥, oq-143 관련)\",\"산업 사업장에서 로봇을 쓸 때 적용되는 기계·안전 규제(산업안전보건법 안전검사, EU 기계류 규정)는 무엇인가? (섹션 5·7 겨냥)\",\"오픈소스·SDK·3D 자산의 라이선스를 지키기 위한 선언·목록화 수단(ROS 2 패키지 라이선스 규칙, SPDX·SBOM, 시뮬레이션 모델 데이터베이스의 라이선스 표기)은 무엇인가? (섹션 6·7 겨냥)\",\"법·규제·보험·라이선스에서 ROP가 직접 맡을 것과 제조사·운영자·보험사·법무에 맡길 것의 경계는 어디이며 어느 영역(개인정보 법 포함, oq-262 관련)과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"한국에서는 개정 지능형로봇법과 도로교통법이 2023-11-17부터 시행되어, 운행안전인증을 받은 질량 500kg 이하·최고속도 15km/h 이하의 실외이동로봇이 보행자 지위로 보도를 통행할 수 있게 되었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1234\",\"ref-1241\"],\"cross_checked\":true,\"confidence\":\"high\",\"evidence_excerpt\":\"정책브리핑(산업통상자원부·경찰청, 2023-11-16): 2023-11-17 시행, 대상 질량 500kg 이하·15km/h 이하, 16가지 시험항목. 한국로봇산업진흥원 인증 안내도 최대 속도 15km/h 이하·최대 질량 500kg 이하를 대상 요건으로 둔다.\",\"as_of\":\"2023-11-16\",\"site_type\":\"실외\",\"flow_item\":\"제약\"},{\"id\":\"f2\",\"claim\":\"개정 도로교통법은 실외이동로봇을 조작·관리하는 운용자에게 정확한 조작과 안전한 운용 의무를 두고, 로봇도 신호위반·무단횡단 금지 같은 보행자 교통규칙을 지키게 하며, 안전운용의무 위반에는 범칙금(3만원)을 부과할 수 있게 했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1234\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"운용자에게 로봇에 대한 정확한 조작 및 안전한 운용 의무를 부과하고, 신호위반·무단횡단 금지 등 도로교통법을 준수해야 하며 위반 시 범칙금 3만 원 등이 부과된다(2023-11-16 정책브리핑).\",\"as_of\":\"2023-11-16\",\"site_type\":\"실외\",\"flow_item\":\"수행 자원\"},{\"id\":\"f3\",\"claim\":\"한국에서 운행안전인증을 받은 실외이동로봇을 보도에서 운영하는 자는 인적·물적 손해 배상을 위한 보험 또는 공제에 가입해야 하며, 정부는 한국로봇산업협회를 손해보장사업 실시기관으로 지정했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1234\",\"ref-1240\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"정책브리핑: 보도 운영자에게 \\\"보험 또는 공제 가입 의무를 부과\\\", 한국로봇산업협회를 손해보장사업 실시기관으로 지정. 지디넷코리아(2024-02-08)도 실외 이동로봇 운영 주체의 의무 가입 보험으로 보도.\",\"as_of\":\"2023-11-16\",\"site_type\":\"실외\",\"flow_item\":\"제약\"},{\"id\":\"f4\",\"claim\":\"실외 사례(한국): 한국로봇산업협회는 2024-02 실외이동로봇 손해배상책임 단체보험을 내놓아 로봇 1대당 약 500만원 수준이던 보험료를 30만원대로 낮췄다고 밝혔고, 첫 가입 기업은 뉴빌리티·로보티즈였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1240\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사 보도: 협회가 민관 협력으로 단체보험을 출시, 기존 대당 약 500만원에서 약 30만원대로 94% 인하, 첫 가입 기업 뉴빌리티·로보티즈(2024-02-08). 보장 한도는 기사에 없음.\",\"as_of\":\"2024-02-08\",\"site_type\":\"실외\",\"flow_item\":\"예외·성과\"},{\"id\":\"f5\",\"claim\":\"한국로봇산업진흥원 안내에 따르면 실외이동로봇 운행안전인증은 지능형로봇법 제40조의2에 근거하며, 인증 대상은 실외이동로봇과 그 운행에 필요한 관제장치 조합의 일체이고, 현재 심사항목은 규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치의 8개다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1241\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"인증 대상은 \\\"실외이동로봇과 그 운행에 필요한 관제장치 조합의 일체\\\". 심사항목 8개, 절차는 서류심사→제품심사→인증표시, 처리기간 신청일부터 30일 이내. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"실외\",\"flow_item\":\"수행 자원\"},{\"id\":\"f6\",\"claim\":\"2023-07 한국로봇산업진흥원이 행정예고한 실외이동로봇 운행 안전기준은 16가지 항목으로, 질량별 속도 제한, 폭 80cm(보도 폭 250cm 이상이면 120cm), 5도 경사로 안정성, 비상정지, 장애물 회피, 횡단보도 신호 준수, 알림음 55~73dB, 등화장치 온도 60도 이하, 방수 IPX4 이상 등을 담았다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1242\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사 보도(2023-07-28): 16가지 안전기준, 의견 제출 마감 2023-08-28(국민참여입법센터). 항목 전체 목록은 기사에 없음.\",\"as_of\":\"2023-07-28\",\"site_type\":\"실외\",\"flow_item\":\"제약\"},{\"id\":\"f7\",\"claim\":\"f5와 f6을 비교하면 실외이동로봇 운행안전인증의 심사 체계가 제정 당시 16가지 안전기준에서 현재 8개 심사항목으로 재편된 것으로 보이나, 개정 시점·근거 고시와 알림음·등화장치·경사로 같은 기존 기준이 어느 항목에 흡수됐는지는 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1241\",\"ref-1242\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"인증기관 안내 페이지는 8개 항목을 나열하고(2026-09-30 확인), 2023-07 기사는 16가지 기준을 전한다. 개정 고시 원문은 열지 못함(oq-186 관련).\",\"as_of\":\"2026-09-30\",\"site_type\":\"실외\",\"flow_item\":\"제약\"},{\"id\":\"f8\",\"claim\":\"실외 사례(미국): 버지니아주법 §46.2-908.1:1은 개인 배송 장치(PDD)가 보도·횡단보도에서 시속 10마일 이하로 운행하고 운영자를 식별하는 표시를 달게 하며, 운영자에게 장치 운행으로 생긴 손해에 대해 최소 10만 달러의 일반배상책임 보험을 유지하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1248\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"운영자는 \\\"general liability coverage of at least $100,000\\\"의 보험을 유지해야 하고, 보도·횡단보도 속도 10mph 이하, 운영자 식별 표시 필요. 지방정부는 추가 안전 요건을 둘 수 있음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"실외\",\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"EU 개정 제조물책임지침(Directive (EU) 2024/2853)은 2026-12-09 이후 시장에 출시되거나 사용이 개시된 제품에 적용되며, 독립형 소프트웨어·디지털 제조 파일·통합 디지털 요소를 제품에 포함하고, 출시 뒤 제품을 실질적으로 변경한 자를 제조자로 볼 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1235\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"will apply to products placed on the Union market or put into service after December 9, 2026\\\"; 제품 범위에 stand-alone software, digital manufacturing files, integrated digital elements 포함; 실질적 변경자는 제조자로 간주될 수 있음(Gibson Dunn, 2026-03-23).\",\"as_of\":\"2026-03-23\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f10\",\"claim\":\"같은 지침에서는 결함 있는 소프트웨어나 필요한 보안 업데이트 미제공도 책임 원인이 될 수 있고, 청구인이 그럴듯한 청구를 하면 피고에게 증거 공개를 명할 수 있으며, 공개 의무 불이행 등의 경우 결함이 추정된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1235\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"책임은 결함 소프트웨어, 안전하지 않은 디지털 기능, 필요한 보안 업데이트 미제공에서 생길 수 있고, 피고의 증거 공개 의무와 반증 가능한 결함 추정이 처음 도입됐다(Gibson Dunn 요약).\",\"as_of\":\"2026-03-23\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f11\",\"claim\":\"한국 제조물책임법은 제조물을 제조되거나 가공된 동산으로 정의해 소프트웨어를 명시적으로 포함하지 않으므로, 사람의 개입 없이 동작한 자율 시스템 사고에서 소프트웨어 개발자가 제조물 책임을 지는지가 쟁점으로 남아 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1243\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"현행법은 제조물을 제조·가공된 동산으로 정의해 자율주행차 사고 같은 소프트웨어 기인 사고를 명확히 포섭하지 못하며, 무과실책임 적용 여부가 쟁점이라고 설명(김·장 법률사무소, 2024-07).\",\"as_of\":\"2024-07\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f12\",\"claim\":\"EU 기계류 규정(Regulation (EU) 2023/1230)은 2027-01-20부터 적용되며, 출시된 기계에 실질적 변경을 한 자를 제조자로 보아 제조자 의무를 지게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1359\",\"ref-1350\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"2023-06-14 채택, 2027-01-20 적용. 실질적 변경은 새 위험을 만들거나 기존 위험을 키워 새로운 중요한 보호 조치가 필요한 변경. (재인용: 2026-09-30-22)\",\"as_of\":\"2023-06-14\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f13\",\"claim\":\"한국 인공지능 기본법은 2026-01-22 시행되었고, 정부는 최종 의사결정 권한을 사람이 가지는 경우 고영향 인공지능 분류에서 제외된다고 설명하며, 과태료 등 규제를 최소 1년 이상 유예하고 지원데스크를 운영한다고 밝혔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1245\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"정책브리핑: 2026-01-22 시행, 생성형 AI 결과물·딥페이크 표시 의무, 사람이 최종 결정 권한을 유지하면 고영향 분류에서 제외, \\\"최소 1년 이상 규제를 유예\\\", 인공지능기본법 지원데스크 운영. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f14\",\"claim\":\"EU 사이버복원력법(CRA)에 따라 2026-09-11부터 디지털 요소 제품의 제조자는 실제 악용되는 취약점과 중대한 보안 사고를 ENISA 단일 보고 플랫폼을 통해 24시간 안에 조기 경보, 72시간 안에 통지, 이후 최종 보고(취약점은 수정 조치 후 14일, 중대 사고는 1개월)해야 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1236\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"보고 의무는 2026-09-11 시작, 조기 경보 24시간·통지 72시간·최종 보고 14일 또는 1개월, 단일 보고 플랫폼(SRP) 운영. 페이지는 오픈소스 스튜어드의 보고 의무 준수 시점을 2027-12-11로 적는다.\",\"as_of\":\"2026-09-11\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f15\",\"claim\":\"한국 개인정보보호법 제25조의2는 착용형·휴대형·부착·거치형 이동형 영상정보처리기기로 공개된 장소에서 사람을 촬영할 때 불빛·소리·안내판·안내방송 등으로 촬영 사실을 표시하게 하고, 표시했는데 거부 의사가 없는 경우 등에 한해 촬영을 허용한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1244\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"촬영 사실은 \\\"불빛, 소리, 안내판, 안내서면, 안내방송 또는 이에 준하는 수단\\\"으로 표시. 근거는 법 제25조의2·시행령 제27조. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f16\",\"claim\":\"고용노동부는 2017-10-29부터 산업용 로봇과 컨베이어를 산업안전보건법상 안전검사 대상에 추가해, 이미 쓰던 설비는 2018-12-31까지 최초 안전검사를 받게 했고, 그 근거로 최근 5년간 산업용 로봇 재해자 221명을 들었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1247\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"보도자료(2017-10-26): 설비 자동화·무인화로 재해 증가가 예상되어 신규 선정, 기존 설비는 2018-12-31까지 최초 검사, 최근 5년 산업용 로봇 사고 221명·컨베이어 1,008명. 정기 검사 주기는 보도자료 본문에서 확인하지 못함.\",\"as_of\":\"2017-10-26\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"ROS 2 개발자 가이드는 각 패키지에 LICENSE 파일(대개 Apache 2.0, 기존 허용형 라이선스가 있으면 예외)을 두고 모든 소스 파일에 라이선스·저작권 문구를 넣어 자동 린터(ament_copyright)로 검사하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1246\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Each source file must have a license and copyright statement, checked with an automated linter.\\\" 예외 예시로 rviz 의 3조항 BSD. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f18\",\"claim\":\"ROS 2 패키지 품질 등급을 정한 REP 2004(2019-12-17 작성, Active)는 품질 수준 1~4 패키지에 선언된 라이선스와 프로젝트 안의 저작권 명시·모든 저자 표기를 요구하고, 수준 5에는 권장만 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1237\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"수준 1~4 요구: \\\"Must have a declared license or set of licenses\\\", 저작권 명시와 저자 표기. 패키지는 품질 선언 문서로 충족 근거를 적는다.\",\"as_of\":\"2019-12-17\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f19\",\"claim\":\"SPDX는 소프트웨어 자재명세서(SBOM)의 출처·라이선스·보안 정보를 교환하는 개방 표준으로 ISO/IEC 5962:2021로 인정되었고, SPDX 라이선스 목록은 라이선스 식별자·예외·라이선스 표현식 문법을 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1238\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"recognized as the international open standard for security, license compliance, and other software supply chain artifacts as ISO/IEC 5962:2021\\\"; Linux Foundation 호스팅 프로젝트. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f20\",\"claim\":\"Gazebo(클래식) 모델 데이터베이스 규칙은 database.config 의 license 요소로 데이터베이스 안 모델의 라이선스를 지정하고 CC BY 3.0 Unported를 권장하며, 각 모델의 model.config 에 작성자 이름·이메일을 필수로 적게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1239\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"database.config 의 license: 데이터베이스 안 모델의 라이선스, Creative Commons Attribution 3.0 Unported 권장. model.config 에는 저작자 이름과 이메일. 개별 model.config 의 라이선스 필드는 요구하지 않음. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"작업 대상\"},{\"id\":\"f21\",\"claim\":\"확인한 자료를 종합하면 핵심 질문(이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가)의 답은 현장마다 다르며, 실외는 운행 규정·운행안전인증·운용자 의무·의무 보험(한국 f1~f5, 미국 버지니아 f8), 산업 사업장은 기계 안전 규제(한국 안전검사 f16, EU 기계류 규정 f12), 공통으로 AI·사이버보안·개인정보 규제(f13·f14·f15), 사고 책임 법제(f9~f11), 오픈소스·3D 자산 라이선스(f17~f20)가 겹치는 구조로 보이고, 병원·상업 시설·가정 실내 로봇에 특화된 운행 규정은 이번 조사에서 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1234\",\"ref-1241\",\"ref-1248\",\"ref-1247\",\"ref-1359\",\"ref-1245\",\"ref-1236\",\"ref-1244\",\"ref-1235\",\"ref-1243\",\"ref-1246\",\"ref-1238\",\"ref-1239\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 finding 종합. 실내 서비스 로봇 사람 근접 기준(oq-231)과 승강기 탑승 KS(oq-173)는 이번 실행에서 다루지 못함.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"확인한 자료를 종합하면 59. 법·규제·보험·라이선스에서 ROP가 직접 맡을 범위는 로봇별 인증·보험 상태와 인증 조건(관제장치 조합, 속도·질량·운행 구역)을 등록 정보와 작업·경로 제약으로 반영하고, 사고·취약점 보고와 책임 판단에 필요한 실행 기록을 남기며, 촬영 표시 같은 규제 상태를 운영 조건으로 확인하고, 플랫폼 배포물의 라이선스·SBOM 목록을 관리하는 일로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1241\",\"ref-1234\",\"ref-1236\",\"ref-1244\",\"ref-1238\",\"ref-1246\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f5 인증 대상이 로봇+관제장치 조합, f14 보고 기한 24·72시간, f15 촬영 표시, f17·f19 라이선스 선언·SBOM 에서 도출.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f23\",\"claim\":\"연계 대상: 분류 원문 19장의 업종별 조건 경계에 따라 인증 취득과 법적 적합성 판단(제조사·운영자), 보험 계약과 보상(운영자·보험사·협회), 제조물 책임 판정(당사자·법원), 개인정보 처리 적법성 판단(개인정보처리자), 사업장 안전검사(사업주)는 외부가 맡고, ROP는 그 결과를 작업·경로·권한 제약으로 받아 반영하고 근거 기록을 제공하는 쪽인 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1241\",\"ref-1240\",\"ref-1243\",\"ref-1235\",\"ref-1244\",\"ref-1247\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"원문 19장 '업종별 조건: 해당 조건을 작업·경로·권한 제약으로 반영'과 각 finding 의 의무 주체(운용자·운영자·제조자·사업주)에서 도출.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f24\",\"claim\":\"이 영역은 인증·안전검사의 50. 안전 표준·인증·사고 조사(f5·f16), 실외 운행 규정의 66. 실외(f1~f8), 촬영 표시의 53. 개인정보·영상 데이터(f15), 실질적 변경·책임 배분의 58. 다사업자 책임·계약·데이터(f9·f12), AI 규제의 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영(f13), 취약점 보고의 52. 통신 보호·위협 관리·감사(f14), 라이선스·SBOM·보안 업데이트의 57. 자산·소프트웨어 수명주기 관리(f10·f17~f19), 인증 정보 등록의 4. 이기종 로봇 등록(f5), 운행 구역 규정의 16. 장소 의미·지도 관리(f6), 3D 자산 라이선스의 36. 가상 시운전·실제 상황 재현(f20), 보험료 부담의 3. 경제성·조달·사업 모델(f4)과 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1241\",\"ref-1247\",\"ref-1234\",\"ref-1244\",\"ref-1235\",\"ref-1359\",\"ref-1245\",\"ref-1236\",\"ref-1246\",\"ref-1237\",\"ref-1238\",\"ref-1242\",\"ref-1239\",\"ref-1240\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 finding 의 대상과 의무를 해당 세부영역에 대응시킨 종합.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1234\",\"org\":\"대한민국 정책브리핑 (산업통상자원부·경찰청)\",\"title\":\"‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 (제목 일부만 확인)\",\"published\":\"2023-11-16\",\"url\":\"https://www.korea.kr/news/policyNewsView.do?newsId=148922726\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"개정 지능형로봇법·도로교통법 2023-11-17 시행으로 운행안전인증 실외이동로봇의 보도 통행 허용, 운용자 의무·범칙금, 보험·공제 가입 의무와 한국로봇산업협회 손해보장사업을 알린 정부 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1235\",\"org\":\"Gibson Dunn\",\"title\":\"EU Product Liability Directive: Responding to Software, AI and Complex Supply Chains\",\"published\":\"2026-03-23\",\"url\":\"https://www.gibsondunn.com/eu-product-liability-directive-responding-to-software-ai-and-complex-supply-chains/\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"EU 개정 제조물책임지침(2024/2853)의 적용 시점(2026-12-09 이후 출시 제품), 소프트웨어 포함 제품 범위, 실질적 변경자 책임, 보안 업데이트 책임, 증거 공개·결함 추정을 정리한 법률사무소 해설. EUR-Lex 원문은 본문이 비어 열지 못해 대신 사용.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1236\",\"org\":\"European Commission (Shaping Europe's digital future)\",\"title\":\"Cyber Resilience Act - Reporting obligations\",\"published\":\"2026-09-11\",\"url\":\"https://digital-strategy.ec.europa.eu/en/policies/cra-reporting\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"EU 사이버복원력법의 취약점·중대 사고 보고 의무(2026-09-11 시작, 24시간·72시간·최종 보고)와 ENISA 단일 보고 플랫폼, 오픈소스 스튜어드 적용 시점을 안내하는 집행위원회 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1237\",\"org\":\"ROS (ros-infrastructure/rep)\",\"title\":\"REP 2004 -- Package Quality Categories\",\"published\":\"2019-12-17\",\"url\":\"https://ros.org/reps/rep-2004.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"ROS 2 패키지 품질 등급 1~5와 등급별 요구(라이선스 선언, 저작권·저자 표기 포함)를 정한 ROS 개선 제안 문서. ros.org 는 봇 차단 페이지가 떠 공식 저장소 원본을 열었다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros-infrastructure/rep/master/rep-2004.rst\"},{\"id\":\"ref-1238\",\"org\":\"SPDX Project (Linux Foundation)\",\"title\":\"SPDX Overview\",\"published\":null,\"url\":\"https://spdx.dev/about/overview/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"SBOM 정보(출처·라이선스·보안)를 교환하는 개방 표준 SPDX 와 ISO/IEC 5962:2021 인정, SPDX 라이선스 목록을 소개하는 공식 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1239\",\"org\":\"Open Robotics (Gazebo Classic)\",\"title\":\"Gazebo : Tutorial : Model structure and requirements\",\"published\":null,\"url\":\"https://classic.gazebosim.org/tutorials?tut=model_structure\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"Gazebo 모델 데이터베이스의 파일 구조와 database.config·model.config 요소(라이선스, 작성자 정보)를 설명하는 공식 튜토리얼.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1240\",\"org\":\"지디넷코리아\",\"title\":\"\\\"실외 이동로봇 필수보험 94% 저렴하게\\\"\",\"published\":\"2024-02-08\",\"url\":\"https://zdnet.co.kr/view/?no=20240208201432\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한국로봇산업협회가 실외이동로봇 손해배상책임 단체보험을 출시해 보험료를 대당 약 500만원에서 30만원대로 낮췄고 첫 가입 기업이 뉴빌리티·로보티즈라고 전한 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1241\",\"org\":\"한국로봇산업진흥원\",\"title\":\"실외이동로봇 운행안전인증\",\"published\":null,\"url\":\"https://www.kiria.org/portal/cert/portalCertEstiSafe.do\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"운행안전인증의 법적 근거(지능형로봇법 제40조의2), 인증 대상(실외이동로봇과 관제장치 조합), 8개 심사항목, 절차·처리기간을 안내하는 인증기관 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1242\",\"org\":\"지디넷코리아\",\"title\":\"실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인)\",\"published\":\"2023-07-28\",\"url\":\"https://zdnet.co.kr/view/?no=20230728173101\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한국로봇산업진흥원이 행정예고한 실외이동로봇 운행 안전기준 16가지 항목의 주요 수치(속도·폭·경사·알림음·방수 등)를 전한 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1243\",\"org\":\"김·장 법률사무소\",\"title\":\"인공지능, 소프트웨어 결함으로 인한 제조물책임의 … (제목 일부만 확인)\",\"published\":\"2024-07\",\"url\":\"https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=29930\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"한국 제조물책임법의 제조물 정의가 소프트웨어·AI 기인 사고를 포섭하는지, 해외 입법과 EU 제조물책임지침 동향을 다룬 법률사무소 뉴스레터(웹 요약만 열람, PDF 본문 미열람).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1244\",\"org\":\"법제처 찾기쉬운 생활법령정보\",\"title\":\"개인정보보호 > 개인정보의 처리단계별 보호방안 (이동형 영상정보처리기기) (제목 일부만 확인)\",\"published\":null,\"url\":\"https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1257&ccfNo=2&cciNo=3&cnpClsNo=3\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"개인정보보호법 제25조의2·시행령 제27조의 이동형 영상정보처리기기 정의, 공개된 장소 촬영 허용 요건, 촬영 사실 표시 방법을 설명하는 법제처 생활법령 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1245\",\"org\":\"대한민국 정책브리핑 (과학기술정보통신부)\",\"title\":\"'인공지능기본법' 22일 시행…생성형 AI 결과물 … (제목 일부만 확인)\",\"published\":null,\"url\":\"https://www.korea.kr/news/policyNewsView.do?newsId=148958380\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"인공지능 기본법 2026-01-22 시행, 생성형 AI·딥페이크 표시, 고영향 AI 판단(사람의 최종 결정 권한 시 제외), 최소 1년 규제 유예, 지원데스크를 알린 정부 보도. 고영향 AI 정의에 연산량 기준을 섞은 요약이 나와 그 부분은 쓰지 않았다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1246\",\"org\":\"Open Robotics (ROS 2 Documentation)\",\"title\":\"ROS 2 developer guide\",\"published\":null,\"url\":\"https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Developer-Guide.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"ROS 2 핵심 패키지 개발 규칙. 패키지 LICENSE 파일(대개 Apache 2.0), 소스 파일별 라이선스·저작권 문구, 자동 린터 검사를 정한다. 공식 문서 저장소 원본을 열었다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/ros2/ros2_documentation/rolling/source/The-ROS2-Project/Contributing/Developer-Guide.rst\"},{\"id\":\"ref-1247\",\"org\":\"고용노동부\",\"title\":\"산업용 로봇과 컨베이어도 안전검사 필수\",\"published\":\"2017-10-26\",\"url\":\"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=8135\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"2017-10-29부터 산업용 로봇·컨베이어를 안전검사 대상에 추가하고 기존 설비의 최초 검사 기한(2018-12-31)과 재해 통계를 밝힌 정부 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1248\",\"org\":\"Commonwealth of Virginia (Code of Virginia)\",\"title\":\"§ 46.2-908.1:1. Personal delivery devices\",\"published\":null,\"url\":\"https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-908.1:1/\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"버지니아주 개인 배송 장치(PDD)의 운행 장소, 속도(보도 10mph 이하), 운영자 식별 표시, 최소 10만 달러 일반배상책임 보험을 정한 주법 조문.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1350\",\"org\":\"European Parliament and Council of the European Union (EUR-Lex)\",\"title\":\"Regulation (EU) 2023/1230 of the European Parliament and of the Council of 14 June 2023 on machinery\",\"published\":\"2023-06-14\",\"url\":\"https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"EU 기계류 규정 원문. 실질적 변경을 한 자의 제조자 의무와 2027-01-20 적용을 정한다. 이번 실행에서 다시 열지 않았다(재사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1359\",\"org\":\"European Agency for Safety and Health at Work (EU-OSHA)\",\"title\":\"Regulation 2023/1230/EU - machinery\",\"published\":null,\"url\":\"https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"EU 기계류 규정의 채택·적용 시점과 주요 내용을 소개하는 EU-OSHA 페이지. 이번 실행에서 다시 열지 않았다(재사용).\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f21(핵심 질문 답, 추정), f9·f11(소프트웨어 사고 책임의 법적 공백·변화), f14(보고 기한) / 섹션 4: 운행안전인증·관제장치 조합 f1·f5, 운용자 f2, 책임보험·공제 f3, 제조물(소프트웨어 포함 여부) f9·f11, 실질적 변경 f9·f12, 사이버복원력법 보고 f14, 이동형 영상정보처리기기 f15, 라이선스 선언·SBOM f17~f19 / 섹션 5: 실외 — f1·f5(제약·수행 자원, 한국)·f2(수행 자원)·f3(제약)·f4(예외·성과)·f6·f7(제약), f8(제약, 미국 버지니아). 산업 사업장 안전검사 f16 은 출처가 현장 유형을 밝히지 않아 현장 유형 미명시로 서술. 물류창고·제조 공장·병원·상업 시설·가정 사례는 찾지 못했음을 명시 / 섹션 6: 인증·보험 조건의 운영 제약 반영 f5·f3·f8, 사고·취약점 보고 체계 f14·f10, 라이선스 선언·자동 검사·SBOM f17~f20 / 섹션 7: 지능형로봇법·도로교통법 f1~f7, 버지니아 PDD 주법 f8, EU 제조물책임지침 f9·f10, 한국 제조물책임법 f11, EU 기계류 규정 f12, 인공지능 기본법 f13, EU 사이버복원력법 f14, 개인정보보호법 제25조의2 f15, 산업안전보건법 안전검사 f16, ROS 2 개발자 가이드·REP 2004 f17·f18, SPDX(ISO/IEC 5962) f19, Gazebo 모델 라이선스 f20 / 섹션 8: f9·f11·f14 / 섹션 9: f22(직접 범위), f23(연계 대상) / 섹션 10: f24 — 3, 4, 13, 16, 36, 47, 50, 52, 53, 57, 58, 66 / 섹션 11: 기존 oq-143·oq-173·oq-186·oq-187·oq-231·oq-239·oq-249·oq-250·oq-262(모두 미해결 유지; oq-186 은 f5·f6·f7 로 현재 8개 항목만 확인, oq-143 은 f13 으로 부분 근거)와 open_questions_new 5건. 다음 실행 후보: 66. 실외 페이지에 f1~f8, 57. 자산·소프트웨어 수명주기 관리 페이지에 f17~f19 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"제조물책임\",\"term_en\":\"Product Liability\",\"definition\":\"제조물의 결함으로 생명·신체·재산에 손해가 생겼을 때 제조업자 등이 과실과 관계없이 배상 책임을 지는 제도로, 한국은 제조물책임법, EU는 개정 제조물책임지침(2024/2853)이 정하며 EU 지침은 소프트웨어를 제품에 포함한다.\"},{\"term_ko\":\"사이버복원력법\",\"term_en\":\"Cyber Resilience Act (CRA)\",\"definition\":\"디지털 요소를 가진 제품의 사이버보안 요구사항과 제조자의 취약점·중대 사고 보고 의무(2026-09-11부터)를 정한 EU 규정이다.\"},{\"term_ko\":\"소프트웨어 자재명세서\",\"term_en\":\"Software Bill of Materials (SBOM)\",\"definition\":\"소프트웨어를 이루는 구성 요소와 그 출처·버전·라이선스·보안 정보를 기계가 읽을 수 있게 나열한 목록으로, SPDX(ISO/IEC 5962:2021) 같은 형식으로 교환한다.\"},{\"term_ko\":\"오픈소스 소프트웨어 스튜어드\",\"term_en\":\"Open-source Software Steward\",\"definition\":\"EU 사이버복원력법에서 상업 활동에 쓰이는 자유·오픈소스 소프트웨어의 개발을 체계적·지속적으로 지원하는 법인으로, 제조자보다 가벼운 사이버보안·보고 의무를 진다.\"}],\"open_questions_new\":[\"한국 실외이동로봇 책임보험·공제의 최저 가입금액(사망·부상·재물 한도)을 정한 산업통상자원부령 조항과 금액은 무엇인가? | 관련 영역: 59. 법·규제·보험·라이선스, 66. 실외 | 근거: f3 | 종류: 일반\",\"EU 개정 제조물책임지침에서 여러 제조사 로봇에 명령을 내리는 오케스트레이션 소프트웨어는 결함 제품이나 관련 서비스로 다뤄지는가, 그 소프트웨어의 설정·기능 변경이 실질적 변경에 해당해 플랫폼 사업자가 제조자로 간주될 수 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터 | 근거: f9 | 종류: 일반\",\"국내 제조물책임법에 소프트웨어를 제조물로 포함하는 개정안이 발의되거나 통과되었는가, 그리고 로봇 관제·오케스트레이션 소프트웨어의 결함 사고에 관한 국내 판례가 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터 | 근거: f11 | 종류: 일반\",\"로봇 오케스트레이션 플랫폼이 EU 사이버복원력법의 디지털 요소 제품 제조자에 해당하는가, 해당하면 로봇 제조사와 플랫폼 사업자 사이에 취약점 보고 의무를 어떻게 나누는가? | 관련 영역: 59. 법·규제·보험·라이선스, 52. 통신 보호·위협 관리·감사, 57. 자산·소프트웨어 수명주기 관리 | 근거: f14 | 종류: 일반\",\"시뮬레이션·가상 시운전에 쓰는 3D 자산(로봇 모델·건물 모델)의 라이선스와 저작자 표기를 자산 단위로 추적하는 표준 방법이 있으며, SPDX 로 3D 자산의 라이선스를 기술한 사례가 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 36. 가상 시운전·실제 상황 재현, 57. 자산·소프트웨어 수명주기 관리 | 근거: f20 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":17,\"cross_checked_count\":2,\"unverified\":[\"f3 실외이동로봇 책임보험 가입금액(사망 1억5천만원·부상 3천만원·재물 10억원)은 검색 요약에만 있고 시행규칙 원문을 열지 못해 finding 에서 뺌\",\"f4 단체보험 보장 한도 미확인\",\"f7 운행안전인증 심사항목이 16가지에서 8개로 바뀐 개정 시점·근거 고시 미확인(oq-186). 검색 요약에 '다시 16개로 재정의'라는 서술이 있었으나 인증기관 페이지(2026-09-30 확인)는 8개를 나열해 확인되지 않은 요약은 쓰지 않음\",\"f9·f10 EU 제조물책임지침은 EUR-Lex 원문·PDF 본문이 비어 열지 못해 법률사무소 해설 기준. 오픈소스 예외 조항 미확인\",\"f11 김·장 뉴스레터 PDF 본문 미열람, 웹 요약 기준\",\"f13 고영향 인공지능의 법정 영역 목록과 사업자 책무 조문은 시행령·가이드라인 원문을 열지 못해 미확인(신·김 뉴스레터 403)\",\"f14 오픈소스 스튜어드 보고 의무 시점(2027-12-11)은 집행위원회 페이지 한 곳 기준이며, 제조자 보고 의무 시점과 같다고 적은 다른 요약과 교차 확인하지 못함\",\"f15 개인정보보호법 제25조의2 시행일은 출처 요약이 2023-09-15(검색 요약)와 2024-12-03(생활법령 페이지 요약)으로 달라 finding 에 넣지 않음\",\"f16 산업용 로봇 정기 안전검사 주기(최초 3년 이내, 이후 2년)는 검색 요약에만 있고 안전보건공단 페이지가 비어 확인하지 못함\",\"Open-RMF 저장소 라이선스는 GitHub 페이지 403·raw 경로 404 로 확인하지 못해 넣지 않음\",\"일본 원격조작형 소형차 신고제(2023-04 시행)는 1차 출처를 열지 않아 넣지 않음\",\"병원·상업 시설·가정 실내 로봇의 운행 규정, 승강기 탑승 KS(oq-173), 실내 사람 근접 기준(oq-231)은 이번에 조사하지 못함\"],\"scope_violations\":[\"f16: 산업용 로봇 안전검사는 사업주의 설비 안전 의무이고 원문 19장 '시설·설비 제어'·'업종별 조건' 쪽이므로 규제 사례로만 쓰고 ROP 직접 범위로 서술하지 않음(f23 연계 대상)\",\"f9·f10·f11: 제조물 책임의 법적 판정은 당사자·법원 몫이므로 ROP 가 제공할 기록의 근거로만 쓰고 f23 에서 연계 대상으로 둠\",\"f15: 영상 촬영 적법성 판단은 53. 개인정보·영상 데이터와 겹치므로 이 영역에서는 규제 목록으로만 다룸\",\"f8: 미국 주법은 한국 현장에 바로 적용되지 않으므로 해외 비교 사례로만 제안\"],\"budget_used\":{\"queries\":17,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-1234~ref-1248, 예약 구간 안)로 신규 출처 상한에 도달했다. 재사용 2건: ref-1350·ref-1359(EU 기계류 규정, 이전 브리프 2026-09-30-22 출처 표 값 사용, 이번에 다시 열지 않아 fetched false). 참고문헌 목록 요약에 행이 없어 같은 URL 이 이미 있으면 퍼블리셔 병합 필요. 원문 열람: 신규 15건 모두 열었다(webfetch 13, github_raw 2). ros.org(봇 차단)는 ros-infrastructure/rep, docs.ros.org 는 ros2/ros2_documentation 공식 저장소 원본을 열었다. EUR-Lex(본문 비어 있음)·신·김 뉴스레터(403)·안전보건공단 포털(본문 비어 있음)·Open-RMF GitHub(403)는 열지 못해 출처로 쓰지 않았다. 교차 확인 2건(f1: 정책브리핑·한국로봇산업진흥원, f3: 정책브리핑·지디넷코리아). 벤더 주장 없음. 분류 원문 핵심 질문에는 f21 로 답했고 결론은 '현장마다 다르며 실외는 운행 규정·인증·운용자 의무·의무 보험, 산업 사업장은 기계 안전 규제, 공통으로 AI·사이버보안·개인정보 규제, 제조물 책임, 오픈소스·3D 자산 라이선스가 겹친다'는 추정이다. 현장 유형 사례는 실외(f1~f7 한국, f8 미국)뿐이고 f16(산업용 로봇 안전검사)은 출처가 현장 유형을 밝히지 않아 null 로 두었다. 물류창고·제조 공장·병원·상업 시설·가정 사례는 찾지 못했다. 국내 자료는 정책브리핑(ref-1234·ref-1245)·한국로봇산업진흥원(ref-1241)·고용노동부(ref-1247)·법제처 생활법령(ref-1244)·김·장(ref-1243)·지디넷코리아(ref-1240·ref-1242)다. 기존 열린 질문 9건은 해결하지 못했다(oq-186 은 현재 8개 심사항목만 확인, 개정 시점·흡수 관계 미확인; oq-187 은 인증 대상이 로봇과 관제장치 조합이라는 전제만 재확인; oq-143 은 f13 이 사람의 최종 결정 권한 시 고영향 제외라는 정부 설명만 제공해 부분 근거). L. AI·학습 기술 관련은 f13(인공지능 기본법)을 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영에 연결 제안했다(f24). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. 용어집에 이미 있는 고영향 인공지능·실외이동로봇 운행안전인증·개인 배송 장치·이동형 영상정보처리기기·원격 조작형 소형차·위험성평가는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-30-23",
+    "date": "2026-09-30",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 59,
+      "area_name": "59. 법·규제·보험·라이선스",
+      "category": "P. 거버넌스·법규·사회"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 운행안전인증, 운용자, 책임보험·공제, 제조물(소프트웨어 포함 여부), 사이버복원력법 보고 의무, SBOM·SPDX, 패키지 라이선스 선언 용어 없음",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 실외(한국 보도 통행 로봇, 미국 주법 개인 배송 장치)·산업 사업장(산업용 로봇 안전검사) 사례와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 인증·보험 조건의 운영 제약 반영, 사고·취약점 보고 체계, 라이선스 선언·SBOM 관리 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — 지능형로봇법·도로교통법, 산업안전보건법 안전검사, EU 기계류 규정, EU 제조물책임지침, 한국 제조물책임법, 인공지능 기본법, EU 사이버복원력법, 개인정보보호법 제25조의2, ROS 2 REP 2004, SPDX(ISO/IEC 5962) 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-143, oq-173, oq-186, oq-187, oq-231, oq-239, oq-249, oq-250, oq-262 반영 필요",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가? [분류원문]",
+      "실외에서 로봇을 운행할 때 한국(지능형로봇법·도로교통법의 운행안전인증·운용자 의무·보험)과 해외(미국 주법의 개인 배송 장치)는 무엇을 요구하며, 운행안전인증의 심사항목과 인증 대상은 어떻게 정해져 있는가? (섹션 5·7 겨냥, oq-186·oq-187 관련, 한국 자료 우선)",
+      "로봇 사고의 책임을 정하는 제조물 책임 법제는 소프트웨어·AI를 어떻게 다루는가(EU 개정 제조물책임지침, 한국 제조물책임법)? (섹션 4·6·7 겨냥)",
+      "AI 규제와 사이버보안 규제(한국 인공지능 기본법, EU 사이버복원력법)는 로봇 운영 사업자에게 어떤 의무와 시행 일정을 두는가? (섹션 7 겨냥, oq-143 관련)",
+      "산업 사업장에서 로봇을 쓸 때 적용되는 기계·안전 규제(산업안전보건법 안전검사, EU 기계류 규정)는 무엇인가? (섹션 5·7 겨냥)",
+      "오픈소스·SDK·3D 자산의 라이선스를 지키기 위한 선언·목록화 수단(ROS 2 패키지 라이선스 규칙, SPDX·SBOM, 시뮬레이션 모델 데이터베이스의 라이선스 표기)은 무엇인가? (섹션 6·7 겨냥)",
+      "법·규제·보험·라이선스에서 ROP가 직접 맡을 것과 제조사·운영자·보험사·법무에 맡길 것의 경계는 어디이며 어느 영역(개인정보 법 포함, oq-262 관련)과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "한국에서는 개정 지능형로봇법과 도로교통법이 2023-11-17부터 시행되어, 운행안전인증을 받은 질량 500kg 이하·최고속도 15km/h 이하의 실외이동로봇이 보행자 지위로 보도를 통행할 수 있게 되었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1234",
+          "ref-1241"
+        ],
+        "cross_checked": true,
+        "confidence": "high",
+        "evidence_excerpt": "정책브리핑(산업통상자원부·경찰청, 2023-11-16): 2023-11-17 시행, 대상 질량 500kg 이하·15km/h 이하, 16가지 시험항목. 한국로봇산업진흥원 인증 안내도 최대 속도 15km/h 이하·최대 질량 500kg 이하를 대상 요건으로 둔다.",
+        "as_of": "2023-11-16",
+        "site_type": "실외",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f2",
+        "claim": "개정 도로교통법은 실외이동로봇을 조작·관리하는 운용자에게 정확한 조작과 안전한 운용 의무를 두고, 로봇도 신호위반·무단횡단 금지 같은 보행자 교통규칙을 지키게 하며, 안전운용의무 위반에는 범칙금(3만원)을 부과할 수 있게 했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1234"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "운용자에게 로봇에 대한 정확한 조작 및 안전한 운용 의무를 부과하고, 신호위반·무단횡단 금지 등 도로교통법을 준수해야 하며 위반 시 범칙금 3만 원 등이 부과된다(2023-11-16 정책브리핑).",
+        "as_of": "2023-11-16",
+        "site_type": "실외",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f3",
+        "claim": "한국에서 운행안전인증을 받은 실외이동로봇을 보도에서 운영하는 자는 인적·물적 손해 배상을 위한 보험 또는 공제에 가입해야 하며, 정부는 한국로봇산업협회를 손해보장사업 실시기관으로 지정했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1234",
+          "ref-1240"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "정책브리핑: 보도 운영자에게 \"보험 또는 공제 가입 의무를 부과\", 한국로봇산업협회를 손해보장사업 실시기관으로 지정. 지디넷코리아(2024-02-08)도 실외 이동로봇 운영 주체의 의무 가입 보험으로 보도.",
+        "as_of": "2023-11-16",
+        "site_type": "실외",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f4",
+        "claim": "실외 사례(한국): 한국로봇산업협회는 2024-02 실외이동로봇 손해배상책임 단체보험을 내놓아 로봇 1대당 약 500만원 수준이던 보험료를 30만원대로 낮췄다고 밝혔고, 첫 가입 기업은 뉴빌리티·로보티즈였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1240"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사 보도: 협회가 민관 협력으로 단체보험을 출시, 기존 대당 약 500만원에서 약 30만원대로 94% 인하, 첫 가입 기업 뉴빌리티·로보티즈(2024-02-08). 보장 한도는 기사에 없음.",
+        "as_of": "2024-02-08",
+        "site_type": "실외",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f5",
+        "claim": "한국로봇산업진흥원 안내에 따르면 실외이동로봇 운행안전인증은 지능형로봇법 제40조의2에 근거하며, 인증 대상은 실외이동로봇과 그 운행에 필요한 관제장치 조합의 일체이고, 현재 심사항목은 규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치의 8개다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1241"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "인증 대상은 \"실외이동로봇과 그 운행에 필요한 관제장치 조합의 일체\". 심사항목 8개, 절차는 서류심사→제품심사→인증표시, 처리기간 신청일부터 30일 이내. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "실외",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f6",
+        "claim": "2023-07 한국로봇산업진흥원이 행정예고한 실외이동로봇 운행 안전기준은 16가지 항목으로, 질량별 속도 제한, 폭 80cm(보도 폭 250cm 이상이면 120cm), 5도 경사로 안정성, 비상정지, 장애물 회피, 횡단보도 신호 준수, 알림음 55~73dB, 등화장치 온도 60도 이하, 방수 IPX4 이상 등을 담았다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1242"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사 보도(2023-07-28): 16가지 안전기준, 의견 제출 마감 2023-08-28(국민참여입법센터). 항목 전체 목록은 기사에 없음.",
+        "as_of": "2023-07-28",
+        "site_type": "실외",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f7",
+        "claim": "f5와 f6을 비교하면 실외이동로봇 운행안전인증의 심사 체계가 제정 당시 16가지 안전기준에서 현재 8개 심사항목으로 재편된 것으로 보이나, 개정 시점·근거 고시와 알림음·등화장치·경사로 같은 기존 기준이 어느 항목에 흡수됐는지는 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1241",
+          "ref-1242"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "인증기관 안내 페이지는 8개 항목을 나열하고(2026-09-30 확인), 2023-07 기사는 16가지 기준을 전한다. 개정 고시 원문은 열지 못함(oq-186 관련).",
+        "as_of": "2026-09-30",
+        "site_type": "실외",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f8",
+        "claim": "실외 사례(미국): 버지니아주법 §46.2-908.1:1은 개인 배송 장치(PDD)가 보도·횡단보도에서 시속 10마일 이하로 운행하고 운영자를 식별하는 표시를 달게 하며, 운영자에게 장치 운행으로 생긴 손해에 대해 최소 10만 달러의 일반배상책임 보험을 유지하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1248"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "운영자는 \"general liability coverage of at least $100,000\"의 보험을 유지해야 하고, 보도·횡단보도 속도 10mph 이하, 운영자 식별 표시 필요. 지방정부는 추가 안전 요건을 둘 수 있음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "실외",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "EU 개정 제조물책임지침(Directive (EU) 2024/2853)은 2026-12-09 이후 시장에 출시되거나 사용이 개시된 제품에 적용되며, 독립형 소프트웨어·디지털 제조 파일·통합 디지털 요소를 제품에 포함하고, 출시 뒤 제품을 실질적으로 변경한 자를 제조자로 볼 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1235"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"will apply to products placed on the Union market or put into service after December 9, 2026\"; 제품 범위에 stand-alone software, digital manufacturing files, integrated digital elements 포함; 실질적 변경자는 제조자로 간주될 수 있음(Gibson Dunn, 2026-03-23).",
+        "as_of": "2026-03-23",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f10",
+        "claim": "같은 지침에서는 결함 있는 소프트웨어나 필요한 보안 업데이트 미제공도 책임 원인이 될 수 있고, 청구인이 그럴듯한 청구를 하면 피고에게 증거 공개를 명할 수 있으며, 공개 의무 불이행 등의 경우 결함이 추정된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1235"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "책임은 결함 소프트웨어, 안전하지 않은 디지털 기능, 필요한 보안 업데이트 미제공에서 생길 수 있고, 피고의 증거 공개 의무와 반증 가능한 결함 추정이 처음 도입됐다(Gibson Dunn 요약).",
+        "as_of": "2026-03-23",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f11",
+        "claim": "한국 제조물책임법은 제조물을 제조되거나 가공된 동산으로 정의해 소프트웨어를 명시적으로 포함하지 않으므로, 사람의 개입 없이 동작한 자율 시스템 사고에서 소프트웨어 개발자가 제조물 책임을 지는지가 쟁점으로 남아 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1243"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "현행법은 제조물을 제조·가공된 동산으로 정의해 자율주행차 사고 같은 소프트웨어 기인 사고를 명확히 포섭하지 못하며, 무과실책임 적용 여부가 쟁점이라고 설명(김·장 법률사무소, 2024-07).",
+        "as_of": "2024-07",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f12",
+        "claim": "EU 기계류 규정(Regulation (EU) 2023/1230)은 2027-01-20부터 적용되며, 출시된 기계에 실질적 변경을 한 자를 제조자로 보아 제조자 의무를 지게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1359",
+          "ref-1350"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "2023-06-14 채택, 2027-01-20 적용. 실질적 변경은 새 위험을 만들거나 기존 위험을 키워 새로운 중요한 보호 조치가 필요한 변경. (재인용: 2026-09-30-22)",
+        "as_of": "2023-06-14",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f13",
+        "claim": "한국 인공지능 기본법은 2026-01-22 시행되었고, 정부는 최종 의사결정 권한을 사람이 가지는 경우 고영향 인공지능 분류에서 제외된다고 설명하며, 과태료 등 규제를 최소 1년 이상 유예하고 지원데스크를 운영한다고 밝혔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1245"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "정책브리핑: 2026-01-22 시행, 생성형 AI 결과물·딥페이크 표시 의무, 사람이 최종 결정 권한을 유지하면 고영향 분류에서 제외, \"최소 1년 이상 규제를 유예\", 인공지능기본법 지원데스크 운영. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f14",
+        "claim": "EU 사이버복원력법(CRA)에 따라 2026-09-11부터 디지털 요소 제품의 제조자는 실제 악용되는 취약점과 중대한 보안 사고를 ENISA 단일 보고 플랫폼을 통해 24시간 안에 조기 경보, 72시간 안에 통지, 이후 최종 보고(취약점은 수정 조치 후 14일, 중대 사고는 1개월)해야 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1236"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "보고 의무는 2026-09-11 시작, 조기 경보 24시간·통지 72시간·최종 보고 14일 또는 1개월, 단일 보고 플랫폼(SRP) 운영. 페이지는 오픈소스 스튜어드의 보고 의무 준수 시점을 2027-12-11로 적는다.",
+        "as_of": "2026-09-11",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f15",
+        "claim": "한국 개인정보보호법 제25조의2는 착용형·휴대형·부착·거치형 이동형 영상정보처리기기로 공개된 장소에서 사람을 촬영할 때 불빛·소리·안내판·안내방송 등으로 촬영 사실을 표시하게 하고, 표시했는데 거부 의사가 없는 경우 등에 한해 촬영을 허용한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1244"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "촬영 사실은 \"불빛, 소리, 안내판, 안내서면, 안내방송 또는 이에 준하는 수단\"으로 표시. 근거는 법 제25조의2·시행령 제27조. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f16",
+        "claim": "고용노동부는 2017-10-29부터 산업용 로봇과 컨베이어를 산업안전보건법상 안전검사 대상에 추가해, 이미 쓰던 설비는 2018-12-31까지 최초 안전검사를 받게 했고, 그 근거로 최근 5년간 산업용 로봇 재해자 221명을 들었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1247"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "보도자료(2017-10-26): 설비 자동화·무인화로 재해 증가가 예상되어 신규 선정, 기존 설비는 2018-12-31까지 최초 검사, 최근 5년 산업용 로봇 사고 221명·컨베이어 1,008명. 정기 검사 주기는 보도자료 본문에서 확인하지 못함.",
+        "as_of": "2017-10-26",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "ROS 2 개발자 가이드는 각 패키지에 LICENSE 파일(대개 Apache 2.0, 기존 허용형 라이선스가 있으면 예외)을 두고 모든 소스 파일에 라이선스·저작권 문구를 넣어 자동 린터(ament_copyright)로 검사하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1246"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Each source file must have a license and copyright statement, checked with an automated linter.\" 예외 예시로 rviz 의 3조항 BSD. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f18",
+        "claim": "ROS 2 패키지 품질 등급을 정한 REP 2004(2019-12-17 작성, Active)는 품질 수준 1~4 패키지에 선언된 라이선스와 프로젝트 안의 저작권 명시·모든 저자 표기를 요구하고, 수준 5에는 권장만 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1237"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "수준 1~4 요구: \"Must have a declared license or set of licenses\", 저작권 명시와 저자 표기. 패키지는 품질 선언 문서로 충족 근거를 적는다.",
+        "as_of": "2019-12-17",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f19",
+        "claim": "SPDX는 소프트웨어 자재명세서(SBOM)의 출처·라이선스·보안 정보를 교환하는 개방 표준으로 ISO/IEC 5962:2021로 인정되었고, SPDX 라이선스 목록은 라이선스 식별자·예외·라이선스 표현식 문법을 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1238"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"recognized as the international open standard for security, license compliance, and other software supply chain artifacts as ISO/IEC 5962:2021\"; Linux Foundation 호스팅 프로젝트. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f20",
+        "claim": "Gazebo(클래식) 모델 데이터베이스 규칙은 database.config 의 license 요소로 데이터베이스 안 모델의 라이선스를 지정하고 CC BY 3.0 Unported를 권장하며, 각 모델의 model.config 에 작성자 이름·이메일을 필수로 적게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1239"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "database.config 의 license: 데이터베이스 안 모델의 라이선스, Creative Commons Attribution 3.0 Unported 권장. model.config 에는 저작자 이름과 이메일. 개별 model.config 의 라이선스 필드는 요구하지 않음. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 자료를 종합하면 핵심 질문(이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가)의 답은 현장마다 다르며, 실외는 운행 규정·운행안전인증·운용자 의무·의무 보험(한국 f1~f5, 미국 버지니아 f8), 산업 사업장은 기계 안전 규제(한국 안전검사 f16, EU 기계류 규정 f12), 공통으로 AI·사이버보안·개인정보 규제(f13·f14·f15), 사고 책임 법제(f9~f11), 오픈소스·3D 자산 라이선스(f17~f20)가 겹치는 구조로 보이고, 병원·상업 시설·가정 실내 로봇에 특화된 운행 규정은 이번 조사에서 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1234",
+          "ref-1241",
+          "ref-1248",
+          "ref-1247",
+          "ref-1359",
+          "ref-1245",
+          "ref-1236",
+          "ref-1244",
+          "ref-1235",
+          "ref-1243",
+          "ref-1246",
+          "ref-1238",
+          "ref-1239"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 finding 종합. 실내 서비스 로봇 사람 근접 기준(oq-231)과 승강기 탑승 KS(oq-173)는 이번 실행에서 다루지 못함.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "확인한 자료를 종합하면 59. 법·규제·보험·라이선스에서 ROP가 직접 맡을 범위는 로봇별 인증·보험 상태와 인증 조건(관제장치 조합, 속도·질량·운행 구역)을 등록 정보와 작업·경로 제약으로 반영하고, 사고·취약점 보고와 책임 판단에 필요한 실행 기록을 남기며, 촬영 표시 같은 규제 상태를 운영 조건으로 확인하고, 플랫폼 배포물의 라이선스·SBOM 목록을 관리하는 일로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1241",
+          "ref-1234",
+          "ref-1236",
+          "ref-1244",
+          "ref-1238",
+          "ref-1246"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f5 인증 대상이 로봇+관제장치 조합, f14 보고 기한 24·72시간, f15 촬영 표시, f17·f19 라이선스 선언·SBOM 에서 도출.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f23",
+        "claim": "연계 대상: 분류 원문 19장의 업종별 조건 경계에 따라 인증 취득과 법적 적합성 판단(제조사·운영자), 보험 계약과 보상(운영자·보험사·협회), 제조물 책임 판정(당사자·법원), 개인정보 처리 적법성 판단(개인정보처리자), 사업장 안전검사(사업주)는 외부가 맡고, ROP는 그 결과를 작업·경로·권한 제약으로 받아 반영하고 근거 기록을 제공하는 쪽인 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1241",
+          "ref-1240",
+          "ref-1243",
+          "ref-1235",
+          "ref-1244",
+          "ref-1247"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "원문 19장 '업종별 조건: 해당 조건을 작업·경로·권한 제약으로 반영'과 각 finding 의 의무 주체(운용자·운영자·제조자·사업주)에서 도출.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f24",
+        "claim": "이 영역은 인증·안전검사의 50. 안전 표준·인증·사고 조사(f5·f16), 실외 운행 규정의 66. 실외(f1~f8), 촬영 표시의 53. 개인정보·영상 데이터(f15), 실질적 변경·책임 배분의 58. 다사업자 책임·계약·데이터(f9·f12), AI 규제의 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영(f13), 취약점 보고의 52. 통신 보호·위협 관리·감사(f14), 라이선스·SBOM·보안 업데이트의 57. 자산·소프트웨어 수명주기 관리(f10·f17~f19), 인증 정보 등록의 4. 이기종 로봇 등록(f5), 운행 구역 규정의 16. 장소 의미·지도 관리(f6), 3D 자산 라이선스의 36. 가상 시운전·실제 상황 재현(f20), 보험료 부담의 3. 경제성·조달·사업 모델(f4)과 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1241",
+          "ref-1247",
+          "ref-1234",
+          "ref-1244",
+          "ref-1235",
+          "ref-1359",
+          "ref-1245",
+          "ref-1236",
+          "ref-1246",
+          "ref-1237",
+          "ref-1238",
+          "ref-1242",
+          "ref-1239",
+          "ref-1240"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 finding 의 대상과 의무를 해당 세부영역에 대응시킨 종합.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1234",
+        "org": "대한민국 정책브리핑 (산업통상자원부·경찰청)",
+        "title": "‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 (제목 일부만 확인)",
+        "published": "2023-11-16",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922726",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "개정 지능형로봇법·도로교통법 2023-11-17 시행으로 운행안전인증 실외이동로봇의 보도 통행 허용, 운용자 의무·범칙금, 보험·공제 가입 의무와 한국로봇산업협회 손해보장사업을 알린 정부 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1235",
+        "org": "Gibson Dunn",
+        "title": "EU Product Liability Directive: Responding to Software, AI and Complex Supply Chains",
+        "published": "2026-03-23",
+        "url": "https://www.gibsondunn.com/eu-product-liability-directive-responding-to-software-ai-and-complex-supply-chains/",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "EU 개정 제조물책임지침(2024/2853)의 적용 시점(2026-12-09 이후 출시 제품), 소프트웨어 포함 제품 범위, 실질적 변경자 책임, 보안 업데이트 책임, 증거 공개·결함 추정을 정리한 법률사무소 해설. EUR-Lex 원문은 본문이 비어 열지 못해 대신 사용.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1236",
+        "org": "European Commission (Shaping Europe's digital future)",
+        "title": "Cyber Resilience Act - Reporting obligations",
+        "published": "2026-09-11",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "EU 사이버복원력법의 취약점·중대 사고 보고 의무(2026-09-11 시작, 24시간·72시간·최종 보고)와 ENISA 단일 보고 플랫폼, 오픈소스 스튜어드 적용 시점을 안내하는 집행위원회 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1237",
+        "org": "ROS (ros-infrastructure/rep)",
+        "title": "REP 2004 -- Package Quality Categories",
+        "published": "2019-12-17",
+        "url": "https://ros.org/reps/rep-2004.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "ROS 2 패키지 품질 등급 1~5와 등급별 요구(라이선스 선언, 저작권·저자 표기 포함)를 정한 ROS 개선 제안 문서. ros.org 는 봇 차단 페이지가 떠 공식 저장소 원본을 열었다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros-infrastructure/rep/master/rep-2004.rst"
+      },
+      {
+        "id": "ref-1238",
+        "org": "SPDX Project (Linux Foundation)",
+        "title": "SPDX Overview",
+        "published": null,
+        "url": "https://spdx.dev/about/overview/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "SBOM 정보(출처·라이선스·보안)를 교환하는 개방 표준 SPDX 와 ISO/IEC 5962:2021 인정, SPDX 라이선스 목록을 소개하는 공식 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1239",
+        "org": "Open Robotics (Gazebo Classic)",
+        "title": "Gazebo : Tutorial : Model structure and requirements",
+        "published": null,
+        "url": "https://classic.gazebosim.org/tutorials?tut=model_structure",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "Gazebo 모델 데이터베이스의 파일 구조와 database.config·model.config 요소(라이선스, 작성자 정보)를 설명하는 공식 튜토리얼.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1240",
+        "org": "지디넷코리아",
+        "title": "\"실외 이동로봇 필수보험 94% 저렴하게\"",
+        "published": "2024-02-08",
+        "url": "https://zdnet.co.kr/view/?no=20240208201432",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한국로봇산업협회가 실외이동로봇 손해배상책임 단체보험을 출시해 보험료를 대당 약 500만원에서 30만원대로 낮췄고 첫 가입 기업이 뉴빌리티·로보티즈라고 전한 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1241",
+        "org": "한국로봇산업진흥원",
+        "title": "실외이동로봇 운행안전인증",
+        "published": null,
+        "url": "https://www.kiria.org/portal/cert/portalCertEstiSafe.do",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "운행안전인증의 법적 근거(지능형로봇법 제40조의2), 인증 대상(실외이동로봇과 관제장치 조합), 8개 심사항목, 절차·처리기간을 안내하는 인증기관 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1242",
+        "org": "지디넷코리아",
+        "title": "실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (제목 일부만 확인)",
+        "published": "2023-07-28",
+        "url": "https://zdnet.co.kr/view/?no=20230728173101",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한국로봇산업진흥원이 행정예고한 실외이동로봇 운행 안전기준 16가지 항목의 주요 수치(속도·폭·경사·알림음·방수 등)를 전한 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1243",
+        "org": "김·장 법률사무소",
+        "title": "인공지능, 소프트웨어 결함으로 인한 제조물책임의 … (제목 일부만 확인)",
+        "published": "2024-07",
+        "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=29930",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "한국 제조물책임법의 제조물 정의가 소프트웨어·AI 기인 사고를 포섭하는지, 해외 입법과 EU 제조물책임지침 동향을 다룬 법률사무소 뉴스레터(웹 요약만 열람, PDF 본문 미열람).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1244",
+        "org": "법제처 찾기쉬운 생활법령정보",
+        "title": "개인정보보호 > 개인정보의 처리단계별 보호방안 (이동형 영상정보처리기기) (제목 일부만 확인)",
+        "published": null,
+        "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1257&ccfNo=2&cciNo=3&cnpClsNo=3",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "개인정보보호법 제25조의2·시행령 제27조의 이동형 영상정보처리기기 정의, 공개된 장소 촬영 허용 요건, 촬영 사실 표시 방법을 설명하는 법제처 생활법령 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1245",
+        "org": "대한민국 정책브리핑 (과학기술정보통신부)",
+        "title": "'인공지능기본법' 22일 시행…생성형 AI 결과물 … (제목 일부만 확인)",
+        "published": null,
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958380",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "인공지능 기본법 2026-01-22 시행, 생성형 AI·딥페이크 표시, 고영향 AI 판단(사람의 최종 결정 권한 시 제외), 최소 1년 규제 유예, 지원데스크를 알린 정부 보도. 고영향 AI 정의에 연산량 기준을 섞은 요약이 나와 그 부분은 쓰지 않았다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1246",
+        "org": "Open Robotics (ROS 2 Documentation)",
+        "title": "ROS 2 developer guide",
+        "published": null,
+        "url": "https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Developer-Guide.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "ROS 2 핵심 패키지 개발 규칙. 패키지 LICENSE 파일(대개 Apache 2.0), 소스 파일별 라이선스·저작권 문구, 자동 린터 검사를 정한다. 공식 문서 저장소 원본을 열었다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/ros2/ros2_documentation/rolling/source/The-ROS2-Project/Contributing/Developer-Guide.rst"
+      },
+      {
+        "id": "ref-1247",
+        "org": "고용노동부",
+        "title": "산업용 로봇과 컨베이어도 안전검사 필수",
+        "published": "2017-10-26",
+        "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=8135",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "2017-10-29부터 산업용 로봇·컨베이어를 안전검사 대상에 추가하고 기존 설비의 최초 검사 기한(2018-12-31)과 재해 통계를 밝힌 정부 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1248",
+        "org": "Commonwealth of Virginia (Code of Virginia)",
+        "title": "§ 46.2-908.1:1. Personal delivery devices",
+        "published": null,
+        "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-908.1:1/",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "버지니아주 개인 배송 장치(PDD)의 운행 장소, 속도(보도 10mph 이하), 운영자 식별 표시, 최소 10만 달러 일반배상책임 보험을 정한 주법 조문.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1350",
+        "org": "European Parliament and Council of the European Union (EUR-Lex)",
+        "title": "Regulation (EU) 2023/1230 of the European Parliament and of the Council of 14 June 2023 on machinery",
+        "published": "2023-06-14",
+        "url": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj/eng",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "EU 기계류 규정 원문. 실질적 변경을 한 자의 제조자 의무와 2027-01-20 적용을 정한다. 이번 실행에서 다시 열지 않았다(재사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1359",
+        "org": "European Agency for Safety and Health at Work (EU-OSHA)",
+        "title": "Regulation 2023/1230/EU - machinery",
+        "published": null,
+        "url": "https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "EU 기계류 규정의 채택·적용 시점과 주요 내용을 소개하는 EU-OSHA 페이지. 이번 실행에서 다시 열지 않았다(재사용).",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f21(핵심 질문 답, 추정), f9·f11(소프트웨어 사고 책임의 법적 공백·변화), f14(보고 기한) / 섹션 4: 운행안전인증·관제장치 조합 f1·f5, 운용자 f2, 책임보험·공제 f3, 제조물(소프트웨어 포함 여부) f9·f11, 실질적 변경 f9·f12, 사이버복원력법 보고 f14, 이동형 영상정보처리기기 f15, 라이선스 선언·SBOM f17~f19 / 섹션 5: 실외 — f1·f5(제약·수행 자원, 한국)·f2(수행 자원)·f3(제약)·f4(예외·성과)·f6·f7(제약), f8(제약, 미국 버지니아). 산업 사업장 안전검사 f16 은 출처가 현장 유형을 밝히지 않아 현장 유형 미명시로 서술. 물류창고·제조 공장·병원·상업 시설·가정 사례는 찾지 못했음을 명시 / 섹션 6: 인증·보험 조건의 운영 제약 반영 f5·f3·f8, 사고·취약점 보고 체계 f14·f10, 라이선스 선언·자동 검사·SBOM f17~f20 / 섹션 7: 지능형로봇법·도로교통법 f1~f7, 버지니아 PDD 주법 f8, EU 제조물책임지침 f9·f10, 한국 제조물책임법 f11, EU 기계류 규정 f12, 인공지능 기본법 f13, EU 사이버복원력법 f14, 개인정보보호법 제25조의2 f15, 산업안전보건법 안전검사 f16, ROS 2 개발자 가이드·REP 2004 f17·f18, SPDX(ISO/IEC 5962) f19, Gazebo 모델 라이선스 f20 / 섹션 8: f9·f11·f14 / 섹션 9: f22(직접 범위), f23(연계 대상) / 섹션 10: f24 — 3, 4, 13, 16, 36, 47, 50, 52, 53, 57, 58, 66 / 섹션 11: 기존 oq-143·oq-173·oq-186·oq-187·oq-231·oq-239·oq-249·oq-250·oq-262(모두 미해결 유지; oq-186 은 f5·f6·f7 로 현재 8개 항목만 확인, oq-143 은 f13 으로 부분 근거)와 open_questions_new 5건. 다음 실행 후보: 66. 실외 페이지에 f1~f8, 57. 자산·소프트웨어 수명주기 관리 페이지에 f17~f19 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "제조물책임",
+        "term_en": "Product Liability",
+        "definition": "제조물의 결함으로 생명·신체·재산에 손해가 생겼을 때 제조업자 등이 과실과 관계없이 배상 책임을 지는 제도로, 한국은 제조물책임법, EU는 개정 제조물책임지침(2024/2853)이 정하며 EU 지침은 소프트웨어를 제품에 포함한다."
+      },
+      {
+        "term_ko": "사이버복원력법",
+        "term_en": "Cyber Resilience Act (CRA)",
+        "definition": "디지털 요소를 가진 제품의 사이버보안 요구사항과 제조자의 취약점·중대 사고 보고 의무(2026-09-11부터)를 정한 EU 규정이다."
+      },
+      {
+        "term_ko": "소프트웨어 자재명세서",
+        "term_en": "Software Bill of Materials (SBOM)",
+        "definition": "소프트웨어를 이루는 구성 요소와 그 출처·버전·라이선스·보안 정보를 기계가 읽을 수 있게 나열한 목록으로, SPDX(ISO/IEC 5962:2021) 같은 형식으로 교환한다."
+      },
+      {
+        "term_ko": "오픈소스 소프트웨어 스튜어드",
+        "term_en": "Open-source Software Steward",
+        "definition": "EU 사이버복원력법에서 상업 활동에 쓰이는 자유·오픈소스 소프트웨어의 개발을 체계적·지속적으로 지원하는 법인으로, 제조자보다 가벼운 사이버보안·보고 의무를 진다."
+      }
+    ],
+    "open_questions_new": [
+      "한국 실외이동로봇 책임보험·공제의 최저 가입금액(사망·부상·재물 한도)을 정한 산업통상자원부령 조항과 금액은 무엇인가? | 관련 영역: 59. 법·규제·보험·라이선스, 66. 실외 | 근거: f3 | 종류: 일반",
+      "EU 개정 제조물책임지침에서 여러 제조사 로봇에 명령을 내리는 오케스트레이션 소프트웨어는 결함 제품이나 관련 서비스로 다뤄지는가, 그 소프트웨어의 설정·기능 변경이 실질적 변경에 해당해 플랫폼 사업자가 제조자로 간주될 수 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터 | 근거: f9 | 종류: 일반",
+      "국내 제조물책임법에 소프트웨어를 제조물로 포함하는 개정안이 발의되거나 통과되었는가, 그리고 로봇 관제·오케스트레이션 소프트웨어의 결함 사고에 관한 국내 판례가 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 58. 다사업자 책임·계약·데이터 | 근거: f11 | 종류: 일반",
+      "로봇 오케스트레이션 플랫폼이 EU 사이버복원력법의 디지털 요소 제품 제조자에 해당하는가, 해당하면 로봇 제조사와 플랫폼 사업자 사이에 취약점 보고 의무를 어떻게 나누는가? | 관련 영역: 59. 법·규제·보험·라이선스, 52. 통신 보호·위협 관리·감사, 57. 자산·소프트웨어 수명주기 관리 | 근거: f14 | 종류: 일반",
+      "시뮬레이션·가상 시운전에 쓰는 3D 자산(로봇 모델·건물 모델)의 라이선스와 저작자 표기를 자산 단위로 추적하는 표준 방법이 있으며, SPDX 로 3D 자산의 라이선스를 기술한 사례가 있는가? | 관련 영역: 59. 법·규제·보험·라이선스, 36. 가상 시운전·실제 상황 재현, 57. 자산·소프트웨어 수명주기 관리 | 근거: f20 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 17,
+      "cross_checked_count": 2,
+      "unverified": [
+        "f3 실외이동로봇 책임보험 가입금액(사망 1억5천만원·부상 3천만원·재물 10억원)은 검색 요약에만 있고 시행규칙 원문을 열지 못해 finding 에서 뺌",
+        "f4 단체보험 보장 한도 미확인",
+        "f7 운행안전인증 심사항목이 16가지에서 8개로 바뀐 개정 시점·근거 고시 미확인(oq-186). 검색 요약에 '다시 16개로 재정의'라는 서술이 있었으나 인증기관 페이지(2026-09-30 확인)는 8개를 나열해 확인되지 않은 요약은 쓰지 않음",
+        "f9·f10 EU 제조물책임지침은 EUR-Lex 원문·PDF 본문이 비어 열지 못해 법률사무소 해설 기준. 오픈소스 예외 조항 미확인",
+        "f11 김·장 뉴스레터 PDF 본문 미열람, 웹 요약 기준",
+        "f13 고영향 인공지능의 법정 영역 목록과 사업자 책무 조문은 시행령·가이드라인 원문을 열지 못해 미확인(신·김 뉴스레터 403)",
+        "f14 오픈소스 스튜어드 보고 의무 시점(2027-12-11)은 집행위원회 페이지 한 곳 기준이며, 제조자 보고 의무 시점과 같다고 적은 다른 요약과 교차 확인하지 못함",
+        "f15 개인정보보호법 제25조의2 시행일은 출처 요약이 2023-09-15(검색 요약)와 2024-12-03(생활법령 페이지 요약)으로 달라 finding 에 넣지 않음",
+        "f16 산업용 로봇 정기 안전검사 주기(최초 3년 이내, 이후 2년)는 검색 요약에만 있고 안전보건공단 페이지가 비어 확인하지 못함",
+        "Open-RMF 저장소 라이선스는 GitHub 페이지 403·raw 경로 404 로 확인하지 못해 넣지 않음",
+        "일본 원격조작형 소형차 신고제(2023-04 시행)는 1차 출처를 열지 않아 넣지 않음",
+        "병원·상업 시설·가정 실내 로봇의 운행 규정, 승강기 탑승 KS(oq-173), 실내 사람 근접 기준(oq-231)은 이번에 조사하지 못함"
+      ],
+      "scope_violations": [
+        "f16: 산업용 로봇 안전검사는 사업주의 설비 안전 의무이고 원문 19장 '시설·설비 제어'·'업종별 조건' 쪽이므로 규제 사례로만 쓰고 ROP 직접 범위로 서술하지 않음(f23 연계 대상)",
+        "f9·f10·f11: 제조물 책임의 법적 판정은 당사자·법원 몫이므로 ROP 가 제공할 기록의 근거로만 쓰고 f23 에서 연계 대상으로 둠",
+        "f15: 영상 촬영 적법성 판단은 53. 개인정보·영상 데이터와 겹치므로 이 영역에서는 규제 목록으로만 다룸",
+        "f8: 미국 주법은 한국 현장에 바로 적용되지 않으므로 해외 비교 사례로만 제안"
+      ],
+      "budget_used": {
+        "queries": 17,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 17회/30, 신규 출처 15건/15(ref-1234~ref-1248, 예약 구간 안)로 신규 출처 상한에 도달했다. 재사용 2건: ref-1350·ref-1359(EU 기계류 규정, 이전 브리프 2026-09-30-22 출처 표 값 사용, 이번에 다시 열지 않아 fetched false). 참고문헌 목록 요약에 행이 없어 같은 URL 이 이미 있으면 퍼블리셔 병합 필요. 원문 열람: 신규 15건 모두 열었다(webfetch 13, github_raw 2). ros.org(봇 차단)는 ros-infrastructure/rep, docs.ros.org 는 ros2/ros2_documentation 공식 저장소 원본을 열었다. EUR-Lex(본문 비어 있음)·신·김 뉴스레터(403)·안전보건공단 포털(본문 비어 있음)·Open-RMF GitHub(403)는 열지 못해 출처로 쓰지 않았다. 교차 확인 2건(f1: 정책브리핑·한국로봇산업진흥원, f3: 정책브리핑·지디넷코리아). 벤더 주장 없음. 분류 원문 핵심 질문에는 f21 로 답했고 결론은 '현장마다 다르며 실외는 운행 규정·인증·운용자 의무·의무 보험, 산업 사업장은 기계 안전 규제, 공통으로 AI·사이버보안·개인정보 규제, 제조물 책임, 오픈소스·3D 자산 라이선스가 겹친다'는 추정이다. 현장 유형 사례는 실외(f1~f7 한국, f8 미국)뿐이고 f16(산업용 로봇 안전검사)은 출처가 현장 유형을 밝히지 않아 null 로 두었다. 물류창고·제조 공장·병원·상업 시설·가정 사례는 찾지 못했다. 국내 자료는 정책브리핑(ref-1234·ref-1245)·한국로봇산업진흥원(ref-1241)·고용노동부(ref-1247)·법제처 생활법령(ref-1244)·김·장(ref-1243)·지디넷코리아(ref-1240·ref-1242)다. 기존 열린 질문 9건은 해결하지 못했다(oq-186 은 현재 8개 심사항목만 확인, 개정 시점·흡수 관계 미확인; oq-187 은 인증 대상이 로봇과 관제장치 조합이라는 전제만 재확인; oq-143 은 f13 이 사람의 최종 결정 권한 시 고영향 제외라는 정부 설명만 제공해 부분 근거). L. AI·학습 기술 관련은 f13(인공지능 기본법)을 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영에 연결 제안했다(f24). 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. 용어집에 이미 있는 고영향 인공지능·실외이동로봇 운행안전인증·개인 배송 장치·이동형 영상정보처리기기·원격 조작형 소형차·위험성평가는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 7258,
+  "type": "result",
+  "duration_ms": 488744,
+  "uuid": "c7767215-522d-410f-915a-e85150e5169c",
+  "ttft_stream_ms": 1764,
+  "time_to_request_ms": 103,
+  "time_to_request_phases_ms": {
+    "other": 54,
+    "system_prompt": 13,
+    "turn_start_resume": 0,
+    "process_user_input": 14,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "autocompact": 3,
+    "query_setup": 0,
+    "tool_schema_build": 6,
+    "message_normalization": 1,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 53,
+  "time_to_request_cpu_ms": 132,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1765,
+  "time_to_request_from_spawn_ms": 11373436,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790752672950.9058,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 491.6
+}

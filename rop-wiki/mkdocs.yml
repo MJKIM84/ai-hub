@@ -299,6 +299,13 @@ nav:
       - 60. 노동·수용성·접근성 — 왜 중요한가: topics/2026/2026-09-30-area60-s3.md
       - 60. 노동·수용성·접근성 — 열린 질문: topics/2026/2026-09-30-area60-s11.md
       - 60. 노동·수용성·접근성 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area60-s10.md
+      - 59. 법·규제·보험·라이선스 — 대표 연구와 자료: topics/2026/2026-09-30-area59-s8.md
+      - 59. 법·규제·보험·라이선스 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area59-s7.md
+      - 59. 법·규제·보험·라이선스 — 대표 접근법과 기술: topics/2026/2026-09-30-area59-s6.md
+      - 59. 법·규제·보험·라이선스 — 핵심 개념과 용어: topics/2026/2026-09-30-area59-s4.md
+      - 59. 법·규제·보험·라이선스 — 왜 중요한가: topics/2026/2026-09-30-area59-s3.md
+      - 59. 법·규제·보험·라이선스 — 열린 질문: topics/2026/2026-09-30-area59-s11.md
+      - 59. 법·규제·보험·라이선스 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area59-s10.md
       - 58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area58-s7.md
       - 58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술: topics/2026/2026-09-30-area58-s6.md
       - 58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어: topics/2026/2026-09-30-area58-s4.md
@@ -838,6 +845,7 @@ nav:
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용 후 평가 (Post-Occupancy Evaluation (POE)): glossary/post-occupancy-evaluation.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
+    - 사이버복원력법 (Cyber Resilience Act (CRA)): glossary/cyber-resilience-act.md
     - 사전 실행 계획 검증 (Pre-execution Plan Verification): glossary/pre-execution-plan-verification.md
     - 사회적 내비게이션 (Social Robot Navigation (Human-aware Navigation)): glossary/social-robot-navigation.md
     - 사회적 힘 모델 (Social Force Model): glossary/social-force-model.md
@@ -861,6 +869,7 @@ nav:
     - 소프트 랜딩 (Soft Landings (BSRIA BG 54)): glossary/soft-landings.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
     - 소프트웨어 인 더 루프 (Software-in-the-Loop (SiL)): glossary/software-in-the-loop.md
+    - 소프트웨어 자재명세서 (Software Bill of Materials (SBOM)): glossary/software-bill-of-materials.md
     - 속도·분리 감시 (Speed and Separation Monitoring (SSM)): glossary/speed-and-separation-monitoring.md
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
     - 수명주기 비용 분석 (Life Cycle Costing (LCC, IEC 60300-3-3)): glossary/life-cycle-costing.md
@@ -965,6 +974,7 @@ nav:
     - 정보 전달 명세 (Information Delivery Specification (IDS)): glossary/information-delivery-specification.md
     - 제약 디코딩 (Constrained Decoding): glossary/constrained-decoding.md
     - 제어 장벽 함수 (Control Barrier Function (CBF)): glossary/control-barrier-function.md
+    - 제조물책임 (Product Liability): glossary/product-liability.md
     - 조립라인 공급 문제 (Assembly Line Feeding Problem (ALFP)): glossary/assembly-line-feeding-problem.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
     - 주문 배치 (Order Batching): glossary/order-batching.md
@@ -1408,7 +1418,19 @@ nav:
     - ref-1224 — ISO/IEC Guide 71:2014 Guide for addressing accessibility in standards: references/ref-1224.md
     - 'ref-1225 — Advanced robotics and automation: implications for occupational safety and health': references/ref-1225.md
     - 'ref-1226 — Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety': references/ref-1226.md
+    - 'ref-1227 — EU Product Liability Directive: Responding to Software, AI and Complex Supply Chains': references/ref-1227.md
+    - ref-1228 — Cyber Resilience Act - Reporting obligations: references/ref-1228.md
+    - ref-1229 — REP 2004 -- Package Quality Categories: references/ref-1229.md
     - ref-123 — SCOR Model — Fulfill F1.3 Pick Product: references/ref-123.md
+    - ref-1230 — SPDX Overview: references/ref-1230.md
+    - 'ref-1231 — Gazebo : Tutorial : Model structure and requirements': references/ref-1231.md
+    - ref-1232 — "실외 이동로봇 필수보험 94% 저렴하게": references/ref-1232.md
+    - ref-1233 — 인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점: references/ref-1233.md
+    - ref-1234 — 개인정보보호 > 개인정보의 처리단계별 보호방안 (이동형 영상정보처리기기) (제목 일부만 확인): references/ref-1234.md
+    - ref-1235 — '인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무: references/ref-1235.md
+    - ref-1236 — ROS 2 developer guide: references/ref-1236.md
+    - ref-1237 — 산업용 로봇과 컨베이어도 안전검사 필수: references/ref-1237.md
+    - ref-1238 — § 46.2-908.1:1. Personal delivery devices: references/ref-1238.md
     - ref-124 — 스마트물류센터 인증제 안내: references/ref-124.md
     - ref-125 — rmf_api_msgs — rmf_api_msgs/schemas/task_request.json: references/ref-125.md
     - ref-126 — rmf_api_msgs — rmf_api_msgs/schemas/cancel_task_request.json: references/ref-126.md

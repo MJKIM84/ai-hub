@@ -48,6 +48,31 @@ version: 1
 | 2026-09-30-24 | 생성 | [docs/glossary/kiosk-accessibility.md](glossary/kiosk-accessibility.md) | 용어집 항목 무인정보단말기 접근성 |
 | 2026-09-30-24 | 생성 | [docs/glossary/curb-cut.md](glossary/curb-cut.md) | 용어집 항목 연석 경사로 |
 | 2026-09-30-24 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-30-23 | 갱신 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 영역 심화: 3~11절 첫 작성(seed → draft), 13절 각주 16건, 프런트매터 related_areas·tags·sources·confidence·last_run 채움(2차 수정: 열린 질문 12건, 구축자 의견 표시, 7절 각주 보강, SBOM 풀어쓰기, 8절 문장 정리) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s7.md](topics/2026/2026-09-30-area59-s7.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다(2차 수정: 요약 문장 각주 보강, ROS 2 행 표현, ENISA·SBOM 풀어쓰기) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s11.md](topics/2026/2026-09-30-area59-s11.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "11. 열린 질문" 절을 옮겼다(2차 수정: 기존 열린 질문 12건, oq-275·oq-279·oq-282 추가) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s4.md](topics/2026/2026-09-30-area59-s4.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 수정: 구축자 의견 표시, ENISA 풀어쓰기) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s6.md](topics/2026/2026-09-30-area59-s6.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "6. 대표 접근법과 기술" 절을 옮겼다(2차 수정: SBOM 풀어쓰기) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s10.md](topics/2026/2026-09-30-area59-s10.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다(2차 수정: SBOM 풀어쓰기) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s3.md](topics/2026/2026-09-30-area59-s3.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "3. 왜 중요한가" 절을 옮겼다(2차 수정: 구축자 의견 표시) |
+| 2026-09-30-23 | 생성 | [docs/topics/2026/2026-09-30-area59-s8.md](topics/2026/2026-09-30-area59-s8.md) | 자동 분리: 59. 법·규제·보험·라이선스 의 "8. 대표 연구와 자료" 절을 옮겼다(2차 수정: 첫 문장 정리) |
+| 2026-09-30-23 | 요약 | [docs/categories/governance-law-and-society/law-regulation-insurance-and-licensing.md](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 59. 법·규제·보험·라이선스: 영역 심화 3~11절 첫 작성(한국·미국 실외 로봇 운행 규정·보험, EU·한국 제조물 책임, AI·사이버보안·개인정보·산업안전 규제, ROS 2·SPDX·Gazebo 라이선스 규칙), 새 열린 질문 5건 |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1227.md](references/ref-1227.md) | 참고문헌 ref-1227 등록: EU Product Liability Directive: Responding to Software, AI a… |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1228.md](references/ref-1228.md) | 참고문헌 ref-1228 등록: Cyber Resilience Act - Reporting obligations |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1229.md](references/ref-1229.md) | 참고문헌 ref-1229 등록: REP 2004 -- Package Quality Categories |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1230.md](references/ref-1230.md) | 참고문헌 ref-1230 등록: SPDX Overview |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1231.md](references/ref-1231.md) | 참고문헌 ref-1231 등록: Gazebo : Tutorial : Model structure and requirements |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1232.md](references/ref-1232.md) | 참고문헌 ref-1232 등록: "실외 이동로봇 필수보험 94% 저렴하게" |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1233.md](references/ref-1233.md) | 참고문헌 ref-1233 등록: 인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점 |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1234.md](references/ref-1234.md) | 참고문헌 ref-1234 등록: 개인정보보호 > 개인정보의 처리단계별 보호방안 (이동형 영상정보처리기기) (제목 일부만 확인) |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1235.md](references/ref-1235.md) | 참고문헌 ref-1235 등록: '인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무 |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1236.md](references/ref-1236.md) | 참고문헌 ref-1236 등록: ROS 2 developer guide |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1237.md](references/ref-1237.md) | 참고문헌 ref-1237 등록: 산업용 로봇과 컨베이어도 안전검사 필수 |
+| 2026-09-30-23 | 생성 | [docs/references/ref-1238.md](references/ref-1238.md) | 참고문헌 ref-1238 등록: § 46.2-908.1:1. Personal delivery devices |
+| 2026-09-30-23 | 생성 | [docs/glossary/product-liability.md](glossary/product-liability.md) | 용어집 항목 제조물책임 |
+| 2026-09-30-23 | 생성 | [docs/glossary/cyber-resilience-act.md](glossary/cyber-resilience-act.md) | 용어집 항목 사이버복원력법 |
+| 2026-09-30-23 | 생성 | [docs/glossary/software-bill-of-materials.md](glossary/software-bill-of-materials.md) | 용어집 항목 소프트웨어 자재명세서 |
+| 2026-09-30-23 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 11건 추가·갱신 |
 | 2026-09-30-22 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 계약·버전·폐기 규칙·SLA·감사 이력, 책임 경계, 연결 14건, 열린 질문 8건+새 질문 5건), 13절 각주, 1차 조건부 승인 수정 17건 반영, 2차 수정: 9절 표 셋째 행 경계 칸을 '원문 19장 다섯 경계 밖'으로 고침 |
 | 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s6.md](topics/2026/2026-09-30-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(2,613자)을 옮겼다 |
 | 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s11.md](topics/2026/2026-09-30-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,824자)을 옮겼다 |
