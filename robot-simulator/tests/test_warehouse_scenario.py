@@ -110,3 +110,24 @@ def test_person_detour_does_not_replace_reserved_straight_departure_near_donor()
     observation = dict(pose=dict(x=10.688,y=3,z=.3,yaw=0),sampled_at=1.)
     assert not owner.pedestrian_safety.detour(rid,observation,1.,[])
     assert execution['route'] is route
+
+
+def test_close_handoff_departure_keeps_heading_until_rotation_envelope_is_clear():
+    import math
+    from robot_platform.orchestration import Orchestrator
+    from robot_platform.navigation import radius
+    sample = example('warehouse-cooperation')
+    owner = Orchestrator(sample, lambda *args: None)
+    robot = owner.robots['cart']
+    pose = dict(x=9.848, y=3., z=.3, yaw=0.)
+    obs = dict(pose=pose, sampled_at=1.)
+    peer = dict(pose=dict(x=9.5,y=3.8,z=.3,yaw=0.),sampled_at=1.)
+    target = dict(x=11.2,y=3.,z=.3,yaw=0.)
+    route = owner._peer_detour(robot,obs,target,'floor-1',{'cart':obs,'receiver':peer},1.)
+    assert route and route[0]['x'] > pose['x']
+    assert abs(route[0]['y']-pose['y']) < 1e-8
+    envelope = radius(robot)+radius(owner.robots['receiver'])+owner.policy.safety_distance
+    assert math.hypot(route[0]['x']-9.5,route[0]['y']-3.8) >= envelope+.3
+    # Facing into the peer cannot be made safe by a center-only radial escape.
+    obs['pose'] = dict(pose,yaw=math.pi/2)
+    assert owner._peer_detour(robot,obs,target,'floor-1',{'cart':obs,'receiver':peer},1.) is None
