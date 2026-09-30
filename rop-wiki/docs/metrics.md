@@ -22,7 +22,7 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 기획·사업](categories/planning-and-business/index.md) | 1 | 0 | 0 | 16 | 0 | 0 | 17 |
+| [A. 기획·사업](categories/planning-and-business/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
@@ -48,7 +48,7 @@ version: 1
 |---|---|---|---|---|
 | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | 2026-09-29 | 2 |
 | [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | 2026-09-30 | 2 |
-| [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | seed | — | 2026-09-28 | 1 |
+| [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | 2026-09-30 | 2 |
 
 **B. 로봇 온톨로지**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 123회 중 최종 통과 121회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 121, None 2
-- 2차 검증 판정: 통과 121, None 2
+- 실행 124회 중 최종 통과 122회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 122, None 2
+- 2차 검증 판정: 통과 122, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 513 |
-| 오픈소스 문서 | 208 |
-| 표준 | 175 |
-| 기사 | 95 |
-| 정부·연구기관 | 86 |
-| 벤더 문서 | 69 |
-| 업계 보고서 | 21 |
+| 논문 | 517 |
+| 오픈소스 문서 | 209 |
+| 표준 | 176 |
+| 기사 | 97 |
+| 정부·연구기관 | 87 |
+| 벤더 문서 | 70 |
+| 업계 보고서 | 23 |
 
-신뢰도: medium 857건, high 215건, low 95건
+신뢰도: medium 866건, high 216건, low 97건
 
 ### 현장 유형 매트릭스 채움률
 

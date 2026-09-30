@@ -390,6 +390,13 @@ nav:
       - 14. 도면·BIM에서 지도 만들기 — 왜 중요한가: topics/2026/2026-09-30-area14-s3.md
       - 14. 도면·BIM에서 지도 만들기 — 열린 질문: topics/2026/2026-09-30-area14-s11.md
       - 14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area14-s10.md
+      - 3. 경제성·조달·사업 모델 — 대표 연구와 자료: topics/2026/2026-09-30-area03-s8.md
+      - 3. 경제성·조달·사업 모델 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area03-s7.md
+      - 3. 경제성·조달·사업 모델 — 대표 접근법과 기술: topics/2026/2026-09-30-area03-s6.md
+      - 3. 경제성·조달·사업 모델 — 핵심 개념과 용어: topics/2026/2026-09-30-area03-s4.md
+      - 3. 경제성·조달·사업 모델 — 왜 중요한가: topics/2026/2026-09-30-area03-s3.md
+      - 3. 경제성·조달·사업 모델 — 열린 질문: topics/2026/2026-09-30-area03-s11.md
+      - 3. 경제성·조달·사업 모델 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area03-s10.md
       - 2. 사용 사례·요구·책임 범위 — 대표 연구와 자료: topics/2026/2026-09-30-area02-s8.md
       - 2. 사용 사례·요구·책임 범위 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area02-s7.md
       - 2. 사용 사례·요구·책임 범위 — 대표 접근법과 기술: topics/2026/2026-09-30-area02-s6.md
@@ -820,6 +827,7 @@ nav:
     - 소프트웨어 인 더 루프 (Software-in-the-Loop (SiL)): glossary/software-in-the-loop.md
     - 속도·분리 감시 (Speed and Separation Monitoring (SSM)): glossary/speed-and-separation-monitoring.md
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
+    - 수명주기 비용 분석 (Life Cycle Costing (LCC, IEC 60300-3-3)): glossary/life-cycle-costing.md
     - 수행 가능 동작 (Performable Action (Open-RMF perform_action)): glossary/performable-action.md
     - 스마트물류센터 인증 (Smart Logistics Center Certification): glossary/smart-logistics-center-certification.md
     - 스마트병원 선도모델 (Smart Hospital Leading Model): glossary/smart-hospital-leading-model.md
@@ -928,6 +936,7 @@ nav:
     - 집계 이벤트 (AggregationEvent): glossary/aggregation-event.md
     - 차량 소요대수 산정 (Fleet Sizing): glossary/fleet-sizing.md
     - 차선 폐쇄 (Lane Closure): glossary/lane-closure.md
+    - 총소유비용 (Total Cost of Ownership (TCO)): glossary/total-cost-of-ownership.md
     - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
     - 최적성 간격 (Optimality Gap): glossary/optimality-gap.md
     - 출처 근거 연결 (Source Grounding): glossary/source-grounding.md
@@ -941,6 +950,7 @@ nav:
     - 탈옥 (Jailbreak): glossary/jailbreak.md
     - 통과 가능성 (Traversability): glossary/traversability.md
     - 통합 로봇 기술 형식 (Unified Robot Description Format (URDF)): glossary/urdf.md
+    - 투자 회수 기간 (Payback Period): glossary/payback-period.md
     - 파놉틱 심볼 스포팅 (Panoptic Symbol Spotting): glossary/panoptic-symbol-spotting.md
     - 파놉틱 품질 (Panoptic Quality (PQ)): glossary/panoptic-quality.md
     - 판독 지점 (Read Point (EPCIS readPoint)): glossary/read-point.md
@@ -956,6 +966,7 @@ nav:
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - '플릿 제어 수준 (Fleet Control Level (Open-RMF: Full Control / Traffic Light / Read Only))': glossary/fleet-control-level.md
+    - 피킹량 기반 과금 (Pay-per-pick): glossary/pay-per-pick.md
     - 핀옵스 (FinOps): glossary/finops.md
     - 필터 마스크 (Filter Mask (Nav2 costmap filter)): glossary/filter-mask.md
     - 하드웨어 인 더 루프 (Hardware-in-the-Loop (HiL)): glossary/hardware-in-the-loop.md
@@ -1272,9 +1283,23 @@ nav:
       : references/ref-1155.md
     - ref-1156 — Autonomous Mobile Robots (AMR): references/ref-1156.md
     - ref-1157 — 산업안전보건기준에 관한 규칙 제222조(교시 등): references/ref-1157.md
+    - ref-1158 — Research Opportunities for Advancing Measurement Science for Manufacturing Robotics (NIST GCR 24-054): references/ref-1158.md
+    - 'ref-1159 — Towards industrial robots as a service (IRaaS): Flexibility, usability, safety and business models': references/ref-1159.md
     - 'ref-116 — Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis': references/ref-116.md
+    - ref-1160 — Profit Maximization for a Robotics-as-a-Service Model: references/ref-1160.md
+    - ? ref-1161 — Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios
+      : references/ref-1161.md
+    - ? ref-1162 — Cobot selection using hybrid AHP-TOPSIS based multi-criteria decision making technique for fuel filter assembly process
+      : references/ref-1162.md
+    - 'ref-1163 — Buying vs. RaaS: What''s the Best Strategy for Investing in Warehouse Robotics?': references/ref-1163.md
+    - ref-1164 — '30만원 vs 200만원' 인건비 부담…서빙로봇 판 커진다: references/ref-1164.md
     - ref-1165 — Emulation Technology Speeds Up Warehouse Automation: references/ref-1165.md
+    - ref-1166 — 조달청, 2026년 혁신제품 시범구매 기본계획 발표: references/ref-1166.md
+    - 'ref-1167 — IEC 60300-3-3:2017 Dependability management - Part 3-3: Application guide - Life cycle costing': references/ref-1167.md
+    - ref-1168 — rmf_ros2/rmf_fleet_adapter/package.xml: references/ref-1168.md
+    - 'ref-1169 — 협동로봇: 중소기업 스마트 제조의 시작점': references/ref-1169.md
     - ref-117 — B2MML-BatchML — Schema/B2MML-Common.xsd: references/ref-117.md
+    - 'ref-1170 — 2026 Intralogistics Robotics Survey: Robotics moves into the mainstream': references/ref-1170.md
     - ref-118 — B2MML-BatchML — Schema/B2MML-OperationsDefinition.xsd: references/ref-118.md
     - ? 'ref-119 — IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management'
       : references/ref-119.md

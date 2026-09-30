@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-19 | 갱신 | [docs/categories/planning-and-business/economics-procurement-and-business-models.md](categories/planning-and-business/economics-procurement-and-business-models.md) | 섹션 3~11 신규 작성(현장 유형 사례 5건: 물류창고·제조 공장·병원 2·상업 시설, 표준·제도 6건, 자료 8건, 경계 2행, 연결 16개, 열린 질문 9건), 프런트매터 채움, 13절 각주. 2차: 3절 첫 문장을 설문 범위로 한정, ref-031 접근일 2026-09-30 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s6.md](topics/2026/2026-09-30-area03-s6.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "6. 대표 접근법과 기술" 절(1,380자)을 옮겼다. 2차: ref-031 접근일 2026-09-30 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s8.md](topics/2026/2026-09-30-area03-s8.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "8. 대표 연구와 자료" 절(1,281자)을 옮겼다 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s11.md](topics/2026/2026-09-30-area03-s11.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "11. 열린 질문" 절(1,265자)을 옮겼다 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s10.md](topics/2026/2026-09-30-area03-s10.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,106자)을 옮겼다. 2차: ref-031 접근일 2026-09-30 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s7.md](topics/2026/2026-09-30-area03-s7.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절(857자)을 옮겼다. 2차: ref-031 접근일 2026-09-30 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s4.md](topics/2026/2026-09-30-area03-s4.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "4. 핵심 개념과 용어" 절(817자)을 옮겼다 |
+| 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s3.md](topics/2026/2026-09-30-area03-s3.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "3. 왜 중요한가" 절(795자)을 옮겼다. 2차: 세 줄 요약·본문 첫 문장을 설문 범위로 한정, ref-031 접근일 2026-09-30 |
+| 2026-09-30-19 | 요약 | [docs/categories/planning-and-business/economics-procurement-and-business-models.md](categories/planning-and-business/economics-procurement-and-business-models.md) | 3. 경제성·조달·사업 모델: 섹션 3~11 신규 작성(투자 판단 기준·도입 방식 설문, 현장 유형 사례 5건: 물류창고·제조 공장·병원 2·상업 시설, 표준·제도 6건, 자료 8건, 경계 2행, 연결 16개, 열린 질문 9건), 1차 수정 지시 14건·2차 수정 지시 2건(3절 첫 문장 설문 범위 한정, ref-031 접근일) 이행 |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1158.md](references/ref-1158.md) | 참고문헌 ref-1158 등록: Research Opportunities for Advancing Measurement Science for… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1159.md](references/ref-1159.md) | 참고문헌 ref-1159 등록: Towards industrial robots as a service (IRaaS): Flexibility,… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1160.md](references/ref-1160.md) | 참고문헌 ref-1160 등록: Profit Maximization for a Robotics-as-a-Service Model |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1161.md](references/ref-1161.md) | 참고문헌 ref-1161 등록: Application management and effectiveness analysis of intelli… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1162.md](references/ref-1162.md) | 참고문헌 ref-1162 등록: Cobot selection using hybrid AHP-TOPSIS based multi-criteria… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1163.md](references/ref-1163.md) | 참고문헌 ref-1163 등록: Buying vs. RaaS: What's the Best Strategy for Investing in W… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1164.md](references/ref-1164.md) | 참고문헌 ref-1164 등록: '30만원 vs 200만원' 인건비 부담…서빙로봇 판 커진다 |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1166.md](references/ref-1166.md) | 참고문헌 ref-1166 등록: 조달청, 2026년 혁신제품 시범구매 기본계획 발표 |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1167.md](references/ref-1167.md) | 참고문헌 ref-1167 등록: IEC 60300-3-3:2017 Dependability management - Part 3-3: Appl… |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1168.md](references/ref-1168.md) | 참고문헌 ref-1168 등록: rmf_ros2/rmf_fleet_adapter/package.xml |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1169.md](references/ref-1169.md) | 참고문헌 ref-1169 등록: 협동로봇: 중소기업 스마트 제조의 시작점 |
+| 2026-09-30-19 | 생성 | [docs/references/ref-1170.md](references/ref-1170.md) | 참고문헌 ref-1170 등록: 2026 Intralogistics Robotics Survey: Robotics moves into the… |
+| 2026-09-30-19 | 생성 | [docs/glossary/total-cost-of-ownership.md](glossary/total-cost-of-ownership.md) | 용어집 항목 총소유비용 |
+| 2026-09-30-19 | 생성 | [docs/glossary/life-cycle-costing.md](glossary/life-cycle-costing.md) | 용어집 항목 수명주기 비용 분석 |
+| 2026-09-30-19 | 생성 | [docs/glossary/payback-period.md](glossary/payback-period.md) | 용어집 항목 투자 회수 기간 |
+| 2026-09-30-19 | 생성 | [docs/glossary/pay-per-pick.md](glossary/pay-per-pick.md) | 용어집 항목 피킹량 기반 과금 |
+| 2026-09-30-19 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-30-18 | 갱신 | [docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | 영역 심화: 3~11절 신규 작성, 13절 각주 정의 16건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 16건 반영). 2차 재실행에서 이 페이지 본문은 변경 없음 |
 | 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s6.md](topics/2026/2026-09-30-area40-s6.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "6. 대표 접근법과 기술" 절(1,472자)을 옮겼다. 2차: '전담 운영 조직' 소제목의 호텔 문장에서 출처에 없는 '전담 조직 없이'를 뺌 |
 | 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s7.md](topics/2026/2026-09-30-area40-s7.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다(2차 재실행에서 변경 없음) |

@@ -20,10 +20,10 @@ version: 1
 <!-- auto:site-matrix:start -->
 | 현장 유형 / 대분류 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **물류창고** | 2 | 9 | 12 | 1 | 4 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 3 | 1 | 3 | 비어 있음 | 1 |
-| **제조 공장** | 2 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 1 | 3 | 1 | 1 | 비어 있음 | 비어 있음 | 1 |
-| **병원** | 1 | 3 | 5 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
-| **상업 시설** | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
+| **물류창고** | 3 | 9 | 12 | 1 | 4 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 3 | 1 | 3 | 비어 있음 | 1 |
+| **제조 공장** | 3 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 1 | 3 | 1 | 1 | 비어 있음 | 비어 있음 | 1 |
+| **병원** | 2 | 3 | 5 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
+| **상업 시설** | 2 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
 | **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
 | **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 비어 있음 | 1 |
 | **기타** | 1 | 2 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
@@ -32,7 +32,7 @@ version: 1
 
 ### 물류창고
 
-- **A. 기획·사업**: [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md#5-적용-사례-현장-유형-명시), [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시)
+- **A. 기획·사업**: [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md#5-적용-사례-현장-유형-명시), [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시), [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시)
 - **B. 로봇 온톨로지**: [단계 3. 구현 가설 설계 — q3-04 시뮬레이션 초기값](tracks/floorplan-recognition/stage-3-implementation-hypothesis.md#q3-04), [단계 4. 지도 변환 보정과 현장 정합](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-01), [단계 4. 지도 변환 보정과 현장 정합](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-03), [단계 4. 지도 변환 보정과 현장 정합](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-02), [단계 5. 검증 방법과 가설 판정](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-01), [단계 4. 지도 변환 보정과 현장 정합](tracks/floorplan-recognition/stage-4-map-conversion-and-site-alignment.md#q4-04), [단계 5. 검증 방법과 가설 판정](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-02), [단계 5. 검증 방법과 가설 판정](tracks/floorplan-recognition/stage-5-verification-and-hypotheses.md#q5-03), [5. 로봇 능력·작업 온톨로지](categories/robot-ontology/robot-capability-and-task-representation.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [단계 3. 업무 지시 구현 가설 설계](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-01), [단계 3. 업무 지시 구현 가설 설계 — q3-04 지시 변경 반영](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-04), [단계 3. 업무 지시 구현 가설 설계](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-02), [단계 3. 업무 지시 구현 가설 설계 — q3-03](tracks/chat-based-configuration-and-operation/stage-3-implementation-hypothesis.md#q3-03), [단계 4. 오해석 방지와 확인 절차](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md#q4-01), [단계 5. 업무 지시 검증과 가설 판정](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-01), [단계 5. 업무 지시 검증과 가설 판정](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-02), [단계 4. 오해석 방지와 확인 절차](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md#q4-02), [단계 4. 오해석 방지와 확인 절차](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md#q4-03), [단계 4. 오해석 방지와 확인 절차](tracks/chat-based-configuration-and-operation/stage-4-misinterpretation-safeguards.md#q4-04), [단계 5. 업무 지시 검증과 가설 판정](tracks/chat-based-configuration-and-operation/stage-5-verification-and-hypotheses.md#q5-03), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시)
 - **D. 공간·지도 모델**: [6. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md#5-적용-사례-현장-유형-명시)
@@ -51,7 +51,7 @@ version: 1
 
 ### 제조 공장
 
-- **A. 기획·사업**: [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md#5-적용-사례-현장-유형-명시), [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시)
+- **A. 기획·사업**: [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md#5-적용-사례-현장-유형-명시), [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시), [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시)
@@ -62,7 +62,7 @@ version: 1
 
 ### 병원
 
-- **A. 기획·사업**: [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시)
+- **A. 기획·사업**: [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시), [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시)
 - **B. 로봇 온톨로지**: [4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md#5-적용-사례-현장-유형-명시), [6. 온톨로지 기반 시스템·로봇 연동](categories/robot-ontology/ontology-based-system-and-robot-integration.md#5-적용-사례-현장-유형-명시), [7. 온톨로지 검증·변경 관리](categories/robot-ontology/ontology-verification-and-change-management.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시), [9. 채팅으로 시나리오 구성](categories/chat-based-configuration-and-operation/chat-scenario-composition.md#5-적용-사례-현장-유형-명시), [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md#5-적용-사례-현장-유형-명시)
 - **D. 공간·지도 모델**: [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시), [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시)
@@ -76,7 +76,7 @@ version: 1
 
 ### 상업 시설
 
-- **A. 기획·사업**: [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시)
+- **A. 기획·사업**: [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시), [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시)
 - **J. 현장 운영·관제**: [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시)

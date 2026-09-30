@@ -1,0 +1,829 @@
+{
+  "duration_api_ms": 574357,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 4.1895658000000005,
+  "usage": {
+    "input_tokens": 98,
+    "cache_creation_input_tokens": 106735,
+    "cache_read_input_tokens": 8078464,
+    "output_tokens": 40761,
+    "output_tokens_details": {
+      "thinking_tokens": 13941
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 106735,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 27140,
+        "cache_read_input_tokens": 189246,
+        "cache_creation_input_tokens": 794,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 794
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 98,
+      "outputTokens": 40761,
+      "cacheReadInputTokens": 8078464,
+      "cacheCreationInputTokens": 106735,
+      "webSearchRequests": 0,
+      "costUSD": 3.2851847999999992,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 13941,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 633041,
+      "outputTokens": 16268,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 19,
+      "costUSD": 0.9043810000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 54,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-19\",\"date\":\"2026-09-30\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":3,\"area_name\":\"3. 경제성·조달·사업 모델\",\"category\":\"A. 기획·사업\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 총소유비용(TCO)·수명주기 비용·투자 회수 기간·사용량 기반 과금·서비스형 로봇 계약 구조 용어 없음\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 물류창고·제조 공장·병원·상업 시설의 도입 효과·과금·조달 사례와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 투자 판단 기준, 수명주기 비용 분석, 다기준 선정, 과금 모델, 공공 실증·조달 방식 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — IEC 60300-3-3, VDA 5050 목적, Open-RMF 라이선스, 국내 지원·조달 제도 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-129, oq-160, oq-162 반영 필요\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"도입 비용을 넘는 효과가 나오며, 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가? [분류원문]\",\"로봇 도입의 투자 판단에 쓰는 기준(투자수익률·회수 기간·총소유비용)과 비용 항목·분석 방법(수명주기 비용 표준 등)은 무엇인가? (섹션 4·6·7 겨냥)\",\"서비스형 로봇(RaaS)·구독·작업당 과금 같은 사업 모델은 어떻게 구성되고, 과금 근거가 되는 사용량은 무엇으로 재는가? (섹션 4·6·9 겨냥)\",\"로봇·플랫폼 선정과 조달은 어떤 방법(다기준 의사결정, 시범 실증, 공공 조달)과 조건(개방 인터페이스, 인증 통합자)으로 이루어지는가? (섹션 5·6·7 겨냥, 한국 제도 우선)\",\"물류창고·제조 공장·병원·상업 시설 등 현장 유형별로 도입 효과와 비용을 정량 보고한 사례는 무엇이며 근거 수준은 어떤가? (섹션 3·5·8 겨냥)\",\"국내 로봇산업 통계는 관제·오케스트레이션 소프트웨어와 서비스형 로봇 매출을 따로 집계하는가, 시장 규모 자료의 산정 방법은 공개되어 있는가? (oq-162, oq-160, 섹션 8·11 겨냥)\",\"경제성·조달·사업 모델에서 ROP가 직접 맡을 것과 재무·구매·업무 시스템에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (oq-129 포함, 섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Modern Materials Handling 의 2026 사내 물류 로봇 설문(응답 166명, 2026-03~04)에서 로봇 투자 결정 요인은 투자수익률(ROI) 63%, 회수 기간 52%, 총소유비용(TCO) 47%, 공정 성과 41% 순이었다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1299\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"Peerless Research Group·MHI 등과 한 설문. 응답자 166명(제조 29%, 운송·창고 21%, 도매 14%, 소매 12%). 결정 요인 ROI 63%, payback time 52%, TCO 47%, process performance 41%.\",\"as_of\":\"2026-06-01\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f2\",\"claim\":\"같은 설문에서 로봇 도입 방식은 하드웨어 구매와 소프트웨어 구독을 섞은 하이브리드 53%, 전액 자본 지출 구매 37%, 서비스형 로봇(RaaS) 11%였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1299\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"도입 방식: hybrid(하드웨어 구매 + 소프트웨어 구독) 53%, full CapEx 37%, RaaS 11%. 표본 166명, 방법론 세부는 기사 수준으로만 공개.\",\"as_of\":\"2026-06-01\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f3\",\"claim\":\"같은 설문에서 로봇 투자가 사업 목표를 달성했다는 응답은 74%였고, 11%는 투자수익률·신뢰성·통합 비용 관련 목표에 못 미쳤다고 답했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1299\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"74% met business goals; 94% 가 가동 속도 기대 충족·초과; 11% 가 ROI, reliability, integration costs 목표 미달.\",\"as_of\":\"2026-06-01\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f4\",\"claim\":\"NIST GCR 24-054 보고서는 로봇 도입의 가장 큰 과제로 투자수익률을 찾고 달성하는 일을 들고, 서비스형 로봇으로 초기 투자와 위험을 줄이는 방식이 매력적이라고 서술한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1285\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약 기준: 'top challenge to pursuing robotics was identifying and achieving ROI', RaaS 로 장비 지출과 위험을 줄이는 것이 매력적이라는 서술. 이전 MMH 설문의 ROI 70%·회수 기간 64%·TCO 60% 인용. PDF 본문 추출 실패.\",\"as_of\":\"2024\",\"site_type\":null,\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f5\",\"claim\":\"IEC 60300-3-3:2017(신뢰성 관리 — 적용 지침 — 수명주기 비용, 3판)은 수명주기 비용(LCC) 개념과 적용을 안내하며 특히 품목의 신뢰성(dependability)과 관련된 비용을 강조하는 국제 표준이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1296\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"IEC 웹스토어 개요: 3.0판 2017-01-27 발행. 'particularly highlights the costs associated with the dependability of an item.' 경영자·엔지니어·재무·계약자 대상. 표준 본문은 유료라 미열람.\",\"as_of\":\"2017-01-27\",\"site_type\":null,\"flow_item\":null,\"source_unopened\":true},{\"id\":\"f6\",\"claim\":\"Buerkle 외(Robotics and Computer-Integrated Manufacturing 81, 2023)는 산업용 로봇 서비스(IRaaS)를 유연성·사용성·안전·사업 모델(시간 기반·사용량 기반) 네 요소로 제안하고, 중소기업의 로봇 도입 장벽으로 큰 초기 투자, 총소유비용의 불확실성, 전문성 부족을 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1286\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"검색 요약 기준: IRaaS 네 요소 Flexibility·Usability·Safety·Business Models(Time-based, Usage-based). 장벽: large initial investment, TCO 불확실성, lack of expertise. 원문 403.\",\"as_of\":\"2023-06\",\"site_type\":\"제조 공장\",\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f7\",\"claim\":\"Lee·Aswani(2025, arXiv)는 서비스형 로봇 제공자가 작업마다 가격을 제시하고 고객이 수락·거절하며 로봇이 작업 후 확률적으로 열화하는 상황에서, 가격 결정과 로봇 교체 결정을 함께 최적화하는 마르코프 결정 과정 모델을 제시했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1287\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'jobs arrive sequentially, and for each, the provider must decide on a price, which the customer can accept or reject.' 데이터 기반 수요 추정 + MDP 로 가격·교체 정책 산출.\",\"as_of\":\"2025-09-30\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f8\",\"claim\":\"물류창고 사례(벤더 주장): AutoStore 의 피킹량 기반 서비스형 로봇 모델은 알루미늄 저장 그리드를 고객이 먼저 사고, 로봇·포트(작업대)·소프트웨어는 피킹량에 따라 월 요금을 내는 구독으로 쓰게 하며, 보통 3~5년 최소 계약과 가동 로봇·포트 수에 따른 월 최소 요금을 둔다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1292\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 그리드는 전체 시스템 비용의 약 20~40%로 선구매, 로봇·포트·소프트웨어는 피킹량 기반 월 과금, 최소 계약 3~5년. 'This volume-based pricing approach makes robotics more accessible' (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\",\"vendor_claim\":true},{\"id\":\"f9\",\"claim\":\"상업 시설 사례(한국): 지디넷코리아(2023-03)는 식당 서빙로봇 렌털 요금이 월 30만원대로 월 최저임금 수준 인건비 200만원대와 비교되며, 브이디컴퍼니(월 29만9천원 상품)·비로보틱스(3년 사용 후 소유권 결정하는 유예형)·알지티 등이 렌털 상품을 내놓았다고 보도했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1293\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사: '월 요금을 30만원대 수준으로 낮췄다'. 구매·렌털 선택형, 유예형은 3년 사용 후 소유권 결정, 12개월 무상 수리. 인건비 절감 효과 수치는 업체·기사 주장 수준.\",\"as_of\":\"2023-03\",\"site_type\":\"상업 시설\",\"flow_item\":\"수행 자원\"},{\"id\":\"f10\",\"claim\":\"병원 사례: Li 외(Scientific Reports 16, 2026-04)는 중국 3차 병원의 약품·검체 배송에 자율이동로봇 10대를 6개월 병행 대조로 평가해, 배송 시간이 수작업 대비 32~36% 줄고 인력 19명보다 7.3배 많은 배송을 했으며 10년 수명주기 동안 692.8만 위안 절감을 추정했다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1290\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록 기준: 단일 기관 병행 대조, 10대 AMR, 배송 시간 32~36% 단축(p<0.001), 7.3배 배송 횟수, 10년 절감 6.928 million RMB, 민감도 분석으로 경제성 확인. 비용 항목·할인율은 본문 미확인.\",\"as_of\":\"2026-04\",\"site_type\":\"병원\",\"flow_item\":\"예외·성과\"},{\"id\":\"f11\",\"claim\":\"병원 사례(싱가포르): 창이종합병원의 CHART 는 RoMi-H(의료 로봇 미들웨어) 통합을 맡을 시스템 통합자를 연 2회 등재 프로그램으로 평가·인증하며, 공공 의료기관은 로봇·소프트웨어·IoT 연동에 등재된 통합자를 쓰게 되어 있다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1289\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"CHART 운영, 연 2회, 기술 역량·배포 지식 평가, 2025-05-01 시행. 'Integration to RoMi-H facilitates interoperability of diverse systems and devices.'\",\"as_of\":\"2025-05\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f12\",\"claim\":\"한국로봇산업진흥원의 서비스로봇 실증사업(2020년부터)은 물류·웨어러블·의료·협동로봇·언택트 서비스 분야에 로봇 도입 비용의 50% 이내를 국비로 지원하고 민간 부담 50% 이상(수요기관 25% 이상)을 요구하며, 서류·발표·현장 평가로 과제를 뽑고 중간 점검과 최종 평가를 거친다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1288\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"사업 안내 페이지: '로봇 도입 비용 50% 이내 국비 지원', 민간부담금 총사업비 50% 이상(현금), 수요기관 25% 이상. 절차: 공모→서류→발표→현장→최종평가→협약→중간점검→최종평가.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f13\",\"claim\":\"연계 대상: 조달청의 2026년 혁신제품 시범구매 기본계획은 예산을 전년 529억원에서 839억원으로 늘리고 로봇·드론·스마트팩토리 같은 AI 융복합 제품을 중점으로 하며, 조달청이 혁신제품을 사서 공공기관에 제공한 뒤 시범 사용 후 관리·활용 여부를 점검하는 방식이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1295\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"전자신문 2025-12-18: 예산 529억→839억원, AI 융복합제품(로봇·드론·스마트팩토리) 중점, 시범사용 이후 관리·활용 점검과 성과 중심 관리체계.\",\"as_of\":\"2025-12-18\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f14\",\"claim\":\"로봇신문이 요약한 2024년 국내 로봇산업 실태조사(2024년 말 기준)에서 로봇산업 매출은 6조1695억원이며 제조업용 로봇 3조1075억원, 로봇부품 및 소프트웨어 1조9810억원, 전문서비스용 로봇 6423억원, 개인서비스용 로봇 4386억원으로 나뉜다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1294\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"산업통상부·한국로봇산업진흥원·한국AI·로봇산업협회 조사(2025-07~09 실시). 로봇부품 및 소프트웨어 세부 상위 항목은 구동용 부품 5414억원, 제어용 부품 4841억원, 기타 부품 2910억원.\",\"as_of\":\"2026-01\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"같은 실태조사 요약에는 관제·오케스트레이션 소프트웨어나 서비스형 로봇(임대·구독) 매출을 따로 집계한 항목이 나타나지 않아, 국내 공식 통계만으로 관제 소프트웨어 시장 규모를 추적하기는 어려울 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1294\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사 요약의 분류는 제조업용·전문서비스용·개인서비스용·로봇부품 및 소프트웨어뿐이고 소프트웨어 세부 품목은 확인되지 않음. 보고서 원문 품목 분류표는 미확인.\",\"as_of\":\"2026-01\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"VDA 5050 3.0.0 명세는 이동로봇을 플릿 관제에 연결하는 복잡도를 줄이고 여러 제조사의 이기종 이동로봇 플릿이 같은 공간에서 조율되어 운영되게 하는 것을 목표로 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-031\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"목표: 'to reduce complexity when connecting mobile robots to a fleet control system', 서로 다른 제조사 이기종 플릿의 공동 운영, 항법 방식과 무관한 범용 인터페이스.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f17\",\"claim\":\"Open-RMF 의 플릿 어댑터 패키지(rmf_fleet_adapter 2.14.0)는 Apache License 2.0 으로 배포된다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1297\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"package.xml 의 license 태그: 'Apache License 2.0', version 2.14.0 (main 브랜치, 확인일 기준).\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"제조 공장 사례(한국, 벤더 주장 인용): 한국무역협회 보고서(2021-11)는 협동로봇 가격이 전통 산업용 로봇의 25~30% 수준이고 투자 회수 기간이 약 195일이라고 제시하나, 회수 기간 수치는 장비 제조사 자료에 기댄 것이다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1298\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 회수 기간 약 195일(출처: 장비 제조사). '비용도 전통 산업용 로봇의 25~30% 수준으로 저렴'. 측정 방법·기준선 미공개.\",\"as_of\":\"2021-11-22\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f19\",\"claim\":\"제조 공장 사례: Sivalingam·Subramaniam(Heliyon, 2024-02)은 디젤 연료 필터 조립 공정에 쓸 협동로봇 12종을 비용을 포함한 가중 기준으로 비교해 고르는 AHP–TOPSIS 혼합 다기준 의사결정 방법을 적용했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1291\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'The choice of a suitable collaborative robot (cobot) for a real-time industrial process is one of the obstacles to effective robot implementation in terms of energy and cost.' 12종 비교.\",\"as_of\":\"2024-02\",\"site_type\":\"제조 공장\",\"flow_item\":\"수행 자원\"},{\"id\":\"f20\",\"claim\":\"확인한 자료를 종합하면 핵심 질문(도입 비용을 넘는 효과가 나오며 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가)에 대해, 현장은 투자수익률·회수 기간·총소유비용을 주 판단 기준으로 쓰고 구매·하이브리드·서비스형 로봇으로 조달 방식이 나뉘며 병원·식당·창고의 효과 수치가 보고되지만 대부분 단일 사례·벤더 수치여서 같은 기준선의 독립 비교는 부족하고, 이기종 통합 비용과 잠금을 줄이려 개방 인터페이스·인증 통합자를 조달 조건으로 두는 사례가 있는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1299\",\"ref-1285\",\"ref-1296\",\"ref-1292\",\"ref-1290\",\"ref-1293\",\"ref-1298\",\"ref-1289\",\"ref-031\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1~f3(결정 요인·조달 방식·통합 비용 미달), f8·f9·f10·f18(현장 사례 수치, 벤더·단일 사례 중심), f11·f16(개방 인터페이스·통합자 인증) 종합.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"확인한 자료를 종합하면 3. 경제성·조달·사업 모델에서 ROP가 직접 맡을 범위는 사용량 기반 과금과 투자 효과 판단의 근거가 되는 계량 데이터(작업 완료 수·피킹 수·가동 시간 등)와 도입 전후 성과 기준선의 기록·제공, 로봇 선정 때 필요한 능력·인터페이스 적합성 정보 제공, 개방 인터페이스 준수로 로봇 교체·추가 비용을 낮추는 구조로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1292\",\"ref-1299\",\"ref-1286\",\"ref-031\",\"ref-1291\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"피킹량 기반 월 과금(f8), 사용량 기반 사업 모델(f6), 통합 비용 미달(f3), 이기종 연결 복잡도 감소 목표(f16), 선정 기준(f19) 종합.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f22\",\"claim\":\"연계 대상: 분류 원문 19장 기준으로 자본 예산·회계 처리·구매 계약·요금 청구·정부 지원 신청은 재무·구매·전사 자원 계획 쪽이, 로봇 하드웨어 가격과 정비는 제조사·통합자가 맡으므로, ROP는 그들에게 사용량·성과 데이터를 넘기고 계약 조건(최소 요금·계약 기간)을 운영 제약으로 받는 쪽을 맡는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1292\",\"ref-1288\",\"ref-1295\",\"ref-1296\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"최소 계약 3~5년·월 최소 요금(f8), 국비 지원·민간 부담 구조(f12), 공공 시범구매(f13), 수명주기 비용 분석 대상자(f5) 종합.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f23\",\"claim\":\"이 영역은 시장 통계의 1. 기술·시장·업체 동향(f14·f15), 수용 기준의 2. 사용 사례·요구·책임 범위(f20), 대수 산정 비용의 35. 처리능력·규모·배치 설계(oq-129), 성과 기준선의 39. 운영 성과 측정·개선(f3·f21), 개방 인터페이스의 21. 상호운용 표준·적합성과 20. 로봇·제조사 관제 연동(f16·f11·f3), 선정 기준의 5. 로봇 능력·작업 표현(f19), 계약 조건의 58. 다사업자 책임·계약·데이터(f8), 라이선스의 59. 법·규제·보험·라이선스(f17), 교체·수명주기 비용의 57. 자산·소프트웨어 수명주기 관리(f5·f7), 과금 데이터 전달의 23. 업무 시스템 연동(f22), 인력 대체 논의의 60. 노동·수용성·접근성(f9), 적용 현장인 61. 물류창고(f8)·62. 제조 공장(f6·f18·f19)·63. 병원·의료(f10·f11)·64. 상업 시설(f9)과 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1294\",\"ref-1299\",\"ref-031\",\"ref-1289\",\"ref-1291\",\"ref-1292\",\"ref-1297\",\"ref-1296\",\"ref-1287\",\"ref-1293\",\"ref-1290\",\"ref-1298\",\"ref-1286\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 연결의 근거 finding 을 괄호로 표시. 35. 처리능력·규모·배치 설계 연결은 기존 열린 질문 oq-129 에 기댐.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-031\",\"org\":\"VDA / VDMA (VDA5050 GitHub)\",\"title\":\"VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050\",\"published\":null,\"url\":\"https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"VDA 5050 공식 명세(현재 main 은 3.0.0). 이번 실행에서 이기종 플릿 연결 복잡도 감소라는 명세 목표를 확인했다.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md\"},{\"id\":\"ref-1285\",\"org\":\"NIST (National Institute of Standards and Technology)\",\"title\":\"NIST Grant/Contractor Report NIST GCR 24-054\",\"published\":\"2024\",\"url\":\"https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958147\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. PDF 는 받았으나 본문 텍스트를 추출하지 못해 검색 요약 범위만 썼다. 로봇 도입의 ROI 과제와 서비스형 로봇의 초기 투자 완화를 다룬 NIST 위탁 보고서다.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1286\",\"org\":\"Buerkle, A., Eaton, W., Al-Yacoub, A., Zimmer, M., Kinnell, P., Henshaw, M., Coombes, M., Chen, W.-H., & Lohse, N. (Robotics and Computer-Integrated Manufacturing 81)\",\"title\":\"Towards industrial robots as a service (IRaaS): Flexibility, usability, safety and business models\",\"published\":\"2023-06\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0736584522001661\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. 출판사·저장소 모두 403 이며 서지는 Semantic Scholar API 로 확인했다. 이동형 산업용 로봇을 빌려 쓰는 IRaaS 패러다임과 시간·사용량 기반 사업 모델을 제안한다.\",\"source_unopened\":true,\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1287\",\"org\":\"Lee, J. S., & Aswani, A. (arXiv)\",\"title\":\"Profit Maximization for a Robotics-as-a-Service Model\",\"published\":\"2025-09-30\",\"url\":\"https://arxiv.org/abs/2509.26595\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"서비스형 로봇 제공자의 작업별 가격 결정과 열화 로봇 교체 결정을 마르코프 결정 과정으로 함께 최적화하는 프리프린트(초록 확인).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/abs/2509.26595\"},{\"id\":\"ref-1288\",\"org\":\"한국로봇산업진흥원\",\"title\":\"서비스로봇 실증사업\",\"published\":null,\"url\":\"https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"로봇 도입 비용 50% 이내 국비 지원, 민간 부담 구조, 선정·평가 절차를 안내하는 한국로봇산업진흥원 사업 소개 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do\"},{\"id\":\"ref-1289\",\"org\":\"Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART)\",\"title\":\"RoMi-H Empanelment Programme 2025\",\"published\":\"2025-05\",\"url\":\"https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"RoMi-H 통합을 맡을 시스템 통합자를 연 2회 평가·등재하는 CHART 프로그램 안내(2025-05-01 시행).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste\"},{\"id\":\"ref-1290\",\"org\":\"Li, M., Liu, X., Gao, Y., Sun, Y., Li, P., Zhou, L., Wei, M., & Li, L. (Scientific Reports 16)\",\"title\":\"Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios\",\"published\":\"2026-04\",\"url\":\"https://www.nature.com/articles/s41598-026-49800-9\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"중국 3차 병원의 약품·검체 배송 AMR 10대를 6개월 병행 대조로 평가하고 10년 경제성을 추정한 연구(Europe PMC 초록 확인, 본문 미확인).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC13276296&resultType=core&format=json\"},{\"id\":\"ref-1291\",\"org\":\"Sivalingam, C. S., & Subramaniam, S. K. (Heliyon)\",\"title\":\"Cobot selection using hybrid AHP-TOPSIS based multi-criteria decision making technique for fuel filter assembly process\",\"published\":\"2024-02\",\"url\":\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10882119/\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"연료 필터 조립 공정용 협동로봇 12종을 AHP–TOPSIS 로 선정한 사례 연구(Europe PMC 초록 확인).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC10882119&resultType=core&format=json\"},{\"id\":\"ref-1292\",\"org\":\"AutoStore\",\"title\":\"Buying vs. RaaS: What's the Best Strategy for Investing in Warehouse Robotics?\",\"published\":null,\"url\":\"https://www.autostoresystem.com/insights/buying-vs-raas-whats-the-best-strategy-for-investing-in-warehouse-robotics\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"구매와 피킹량 기반 서비스형 로봇(pay-per-pick) 모델을 비교하고 선구매 그리드·구독 대상·최소 계약 조건을 설명하는 벤더 글.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.autostoresystem.com/insights/buying-vs-raas-whats-the-best-strategy-for-investing-in-warehouse-robotics\"},{\"id\":\"ref-1293\",\"org\":\"지디넷코리아 (신영빈)\",\"title\":\"'30만원 vs 200만원' 인건비 부담…서빙로봇 판 커진다\",\"published\":\"2023-03\",\"url\":\"https://zdnet.co.kr/view/?no=20230307165036\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"국내 식당 서빙로봇 렌털 요금(월 30만원대)과 업체별 렌털·유예형 상품을 인건비와 비교한 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://zdnet.co.kr/view/?no=20230307165036\"},{\"id\":\"ref-1294\",\"org\":\"로봇신문\",\"title\":\"[Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약\",\"published\":\"2026-01\",\"url\":\"https://www.irobotnews.com/news/articleView.html?idxno=44544\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"2024년 말 기준 국내 로봇산업 실태조사의 매출·분류 결과를 요약한 기사. 보고서 원문은 미확인.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.irobotnews.com/news/articleView.html?idxno=44544\"},{\"id\":\"ref-1295\",\"org\":\"전자신문\",\"title\":\"조달청, 2026년 혁신제품 시범구매 기본계획 발표\",\"published\":\"2025-12-18\",\"url\":\"https://www.etnews.com/20251218000194\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"조달청 2026년 혁신제품 시범구매 예산 확대(839억원)와 로봇 등 AI 융복합 제품 중점, 시범사용 후 점검 방식을 전한 기사.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.etnews.com/20251218000194\"},{\"id\":\"ref-1296\",\"org\":\"IEC (International Electrotechnical Commission)\",\"title\":\"IEC 60300-3-3:2017 Dependability management - Part 3-3: Application guide - Life cycle costing\",\"published\":\"2017-01-27\",\"url\":\"https://webstore.iec.ch/en/publication/31206\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. 유료 표준이라 IEC 웹스토어의 공식 개요 페이지만 열었다. 수명주기 비용 개념과 적용, 신뢰성 관련 비용을 다루는 적용 지침 3판.\",\"source_unopened\":true,\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://webstore.iec.ch/en/publication/31206\"},{\"id\":\"ref-1297\",\"org\":\"Open-RMF (open-rmf/rmf_ros2 저장소)\",\"title\":\"rmf_ros2/rmf_fleet_adapter/package.xml\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/package.xml\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"Open-RMF 플릿 어댑터 패키지 정의 파일. 버전 2.14.0, 라이선스 Apache License 2.0.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_fleet_adapter/package.xml\"},{\"id\":\"ref-1298\",\"org\":\"한국무역협회 (KDI 경제정보센터 게재)\",\"title\":\"협동로봇: 중소기업 스마트 제조의 시작점\",\"published\":\"2021-11-22\",\"url\":\"https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000159915&datecount=&issus=S&pg=&pp=20\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"중소 제조기업의 협동로봇 도입을 다룬 한국무역협회 보고서 소개. 가격 비율과 제조사 자료 기반 회수 기간을 제시한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000159915&datecount=&issus=S&pg=&pp=20\"},{\"id\":\"ref-1299\",\"org\":\"Modern Materials Handling (Bridget McCrea; Peerless Research Group·MHI 조사)\",\"title\":\"2026 Intralogistics Robotics Survey: Robotics moves into the mainstream\",\"published\":\"2026-06-01\",\"url\":\"https://www.mmh.com/article/2026_intralogistics_robotics_survey_robotics_moves_into_the_mainstream\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"사내 물류 로봇 도입 설문(응답 166명)의 투자 결정 요인, 도입 방식(구매·하이브리드·RaaS), 목표 달성 여부를 보고한 기사형 설문 보고.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://www.mmh.com/article/2026_intralogistics_robotics_survey_robotics_moves_into_the_mainstream\"}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/planning-and-business/economics-procurement-and-business-models.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f20(핵심 질문 답, 추정), f1·f3(ROI·회수 기간·TCO 가 판단 기준이고 11% 는 통합 비용 등 목표 미달), f4(ROI 가 최대 과제) / 섹션 4: TCO·ROI·회수 기간 f1, 수명주기 비용 f5, 서비스형 로봇·사용량 기반 과금 f6·f8(벤더 주장 병기), 동적 가격·교체 f7 / 섹션 5: 물류창고 — f8(수행 자원, 벤더 주장), 제조 공장 — f6(제약)·f18(예외·성과, 벤더 주장)·f19(수행 자원), 병원 — f10(예외·성과)·f11(수행 자원, 싱가포르), 상업 시설 — f9(수행 자원, 한국 식당). 가정·실외·기타 사례는 찾지 못했음을 명시 / 섹션 6: 투자 판단 기준 f1·f2, 수명주기 비용 분석 f5, 다기준 선정 f19, 과금 모델 f2·f6·f7·f8·f9, 공공 실증·조달 f12·f13, 개방 인터페이스·인증 통합자 조건 f11·f16 / 섹션 7: IEC 60300-3-3 f5(원문 미열람), VDA 5050 목적 f16, Open-RMF 라이선스 f17, 서비스로봇 실증사업 f12, 조달청 혁신제품 시범구매 f13(연계 대상) / 섹션 8: f1~f3·f6·f7·f10·f19 / 섹션 9: f21(직접 범위), f22(연계 대상) / 섹션 10: f23 — 1, 2, 5, 20, 21, 23, 35, 39, 57, 58, 59, 60, 61, 62, 63, 64 / 섹션 11: 기존 oq-129(미해결), oq-160(미해결), oq-162(f14·f15 로 부분 근거, 미해결 유지)와 open_questions_new 5건. 다음 실행 후보: 63. 병원·의료 페이지 5절에 f10·f11, 64. 상업 시설 페이지에 f9, 62. 제조 공장 페이지에 f18·f19 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"총소유비용\",\"term_en\":\"Total Cost of Ownership (TCO)\",\"definition\":\"장비를 사는 비용뿐 아니라 설치·통합·교육·운영·정비·폐기까지 보유 기간 전체에 드는 비용을 합한 투자 판단 지표이다.\"},{\"term_ko\":\"수명주기 비용 분석\",\"term_en\":\"Life Cycle Costing (LCC, IEC 60300-3-3)\",\"definition\":\"품목의 획득부터 운영·정비·개선·폐기까지 수명주기 전체 비용을 산정해 대안을 비교하는 방법으로, IEC 60300-3-3 이 신뢰성 관련 비용을 중심으로 적용 지침을 준다.\"},{\"term_ko\":\"투자 회수 기간\",\"term_en\":\"Payback Period\",\"definition\":\"도입으로 얻는 순절감·순수익의 누적액이 초기 투자액과 같아지기까지 걸리는 기간이다.\"},{\"term_ko\":\"피킹량 기반 과금\",\"term_en\":\"Pay-per-pick\",\"definition\":\"자동화 창고 설비나 로봇의 사용료를 실제 처리한 피킹 수(물동량)에 따라 매기는 사용량 기반 과금 방식이다.\"}],\"open_questions_new\":[\"ROP 같은 다중 제조사 오케스트레이션 플랫폼의 과금 단위(로봇당·작업당·현장당·구독)를 비교하거나 공개한 자료가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 41. 플랫폼 아키텍처·외부 API | 근거: f2 | 종류: 일반\",\"사용량 기반 서비스형 로봇 계약에서 과금·최소 요금·가동률 미달을 판정하는 계량 데이터를 누가 측정하고, 여러 사업자가 함께 쓰는 현장에서 그 값을 어떻게 합의하는가? | 관련 영역: 3. 경제성·조달·사업 모델, 58. 다사업자 책임·계약·데이터, 39. 운영 성과 측정·개선 | 근거: f8 | 종류: 일반\",\"병원 배송 로봇 경제성 평가의 비용 항목·할인율·인건비 산정 방식을 비교 가능한 기준으로 정리한 연구가 있으며, 국내 병원 인건비 조건에서도 같은 결론이 나오는가? | 관련 영역: 3. 경제성·조달·사업 모델, 63. 병원·의료 | 근거: f10 | 종류: 일반\",\"국내 공공·민간 로봇 조달에서 VDA 5050 같은 개방 인터페이스 적합성이나 통합자 인증을 입찰 요구조건으로 명시한 사례가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 21. 상호운용 표준·적합성 | 근거: f16 | 종류: 일반\",\"이기종 로봇 통합 비용이 로봇 도입 총소유비용에서 차지하는 비중과, 공통 인터페이스·오케스트레이션 플랫폼이 그 비용을 얼마나 줄이는지 측정한 독립 연구가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 20. 로봇·제조사 관제 연동 | 근거: f3 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":16,\"cross_checked_count\":0,\"unverified\":[\"f4 NIST GCR 24-054 는 PDF 본문 추출 실패로 검색 요약 범위만 사용, 제목·저자 세부 미확인\",\"f6 Buerkle 외 2023 원문·초록 모두 열지 못함(403, API 초록 없음), 검색 요약 범위만 사용\",\"f10 Li 외 2026 은 초록만 확인해 비용 항목·할인율·회수 기간 미확인\",\"f14·f15 실태조사 보고서 원문 품목 분류표 미확인(기사 요약 기준)\",\"f1~f3 설문 방법론(표본 추출·가중) 미공개\",\"f8 AutoStore 그리드 비용 비중 20~40% 는 벤더 주장이며 독립 확인 실패\",\"f18 협동로봇 회수 기간 195일은 제조사 자료 인용, 측정 기준 미확인\",\"IRaaS 기술·시스템 요구(Mabkhot 외, Procedia CIRP 130, 2024)는 서지만 확인하고 초록을 얻지 못해 넣지 않음\",\"Forrester TEI(Locus Robotics 위탁) PDF 추출 실패로 넣지 않음\",\"플릿 관리 소프트웨어 로봇당 월 요금(검색 요약의 $50~500)은 제3자 블로그뿐이고 InOrbit 공식 페이지에 가격이 없어 넣지 않음\",\"하나금융경영연구소 RaaS 보고서(국회도서관 국가전략정보포털)는 요약 내용의 사례 신뢰성이 낮아 넣지 않음\",\"싱가포르 보건부가 RoMi-H 를 공공 의료기관 통합 플랫폼으로 인정했다는 내용은 검색 요약과 CGH 소개 페이지 표현이 달라 finding 으로 내지 않음\",\"가정·실외·기타 현장의 경제성·과금 사례를 찾지 못함\",\"oq-160 시장 규모 산정 방법론 공개 독립 출처를 찾지 못함\",\"oq-129 채팅 기반 대수 결정과 비용 목적 설정 주체에 관한 자료를 찾지 못함\"],\"scope_violations\":[\"f12·f13: 정부 지원 신청·공공 조달은 원문 19장 '상위 업무 시스템'의 재무·구매 쪽 연계 대상에 가까워 f13 은 '연계 대상: '으로 표시하고 f22 에서 ROP 직접 범위와 구분함\",\"f8·f9: 로봇 하드웨어 가격·렌털 조건은 제조사·서비스 사업자의 사업 조건으로 참고 사례로만 쓰고, ROP 직접 범위는 f21 에서 계량 데이터 제공으로 한정함\",\"f10: 병원 AMR 의 경로 계획 알고리즘(Dijkstra·A*·DWA)은 원문 19장 '로봇 자체 지능·제어' 쪽이라 claim 에서 빼고 경제성 결과만 씀\"],\"budget_used\":{\"queries\":19,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 19회/30, 신규 출처 15건/15(ref-1285~ref-1299, 예약 구간 안)로 신규 출처 상한에 도달해 CGH RoMi-H 소개 페이지, Mabkhot 외(2024), 하나금융경영연구소 보고서를 출처로 넣지 않았다. 재사용 1건(ref-031): 참고문헌 목록 요약에 행이 없어 값은 이전 브리프 2026-09-30-18 출처 표를 따랐고, 이번에 GitHub 공식 저장소 원문을 다시 열어 명세 목표 문장을 확인했다. 원문 열람: 16건 중 14건을 열었다(webfetch 12, github_raw 2). ref-1285(PDF 추출 실패)·ref-1286(403)은 fetched false·원문 미열람이며, ref-1296 은 유료 표준이라 공식 개요 페이지만 열어 원문 미열람으로 표시했다. ref-1290·ref-1291 은 PMC 가 캡차로 막혀 Europe PMC API 로 초록만 읽었다. 교차 확인 0건(주요 수치마다 독립 출처 2곳을 찾지 못함; NIST 보고서가 인용한 이전 MMH 설문 수치는 2026 설문과 연도가 달라 교차 확인으로 보지 않음). 벤더 주장 2건(f8·f18)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문에는 f20 으로 답했고 결론은 '판단 기준(ROI·회수 기간·TCO)과 조달 방식(구매·하이브리드·RaaS)은 확인되나 현장 효과 수치는 단일 사례·벤더 중심이어서 같은 기준선의 독립 비교가 부족하다'는 추정이다. 현장 유형 사례는 물류창고(f8, 벤더)·제조 공장(f6·f18·f19)·병원(f10 중국, f11 싱가포르)·상업 시설(f9, 한국 식당)이며 가정·실외·기타는 찾지 못했다. 국내 자료는 한국로봇산업진흥원(ref-1288)·로봇신문(ref-1294)·전자신문(ref-1295)·지디넷코리아(ref-1293)·한국무역협회(ref-1298)다. 기존 열린 질문 oq-162 는 f14·f15 로 부분 근거(요약 기사상 관제 소프트웨어 별도 집계 항목 없음)만 있어 해결 제안하지 않았고, oq-129·oq-160 은 새 근거가 없다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. L. AI·학습 기술 관련 finding 은 없다(f7 의 데이터 기반 가격 결정은 운영 연구 모델로 보고 L 영역 연결을 제안하지 않음). 용어집에 이미 있는 서비스형 로봇·서비스 수준 협약·핀옵스·기술 성숙도·차량 소요대수 산정·등재 프로그램·의료 로봇 미들웨어 RoMi-H 는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-30-19",
+    "date": "2026-09-30",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 3,
+      "area_name": "3. 경제성·조달·사업 모델",
+      "category": "A. 기획·사업"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 총소유비용(TCO)·수명주기 비용·투자 회수 기간·사용량 기반 과금·서비스형 로봇 계약 구조 용어 없음",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 물류창고·제조 공장·병원·상업 시설의 도입 효과·과금·조달 사례와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 투자 판단 기준, 수명주기 비용 분석, 다기준 선정, 과금 모델, 공공 실증·조달 방식 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — IEC 60300-3-3, VDA 5050 목적, Open-RMF 라이선스, 국내 지원·조달 제도 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-129, oq-160, oq-162 반영 필요",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "도입 비용을 넘는 효과가 나오며, 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가? [분류원문]",
+      "로봇 도입의 투자 판단에 쓰는 기준(투자수익률·회수 기간·총소유비용)과 비용 항목·분석 방법(수명주기 비용 표준 등)은 무엇인가? (섹션 4·6·7 겨냥)",
+      "서비스형 로봇(RaaS)·구독·작업당 과금 같은 사업 모델은 어떻게 구성되고, 과금 근거가 되는 사용량은 무엇으로 재는가? (섹션 4·6·9 겨냥)",
+      "로봇·플랫폼 선정과 조달은 어떤 방법(다기준 의사결정, 시범 실증, 공공 조달)과 조건(개방 인터페이스, 인증 통합자)으로 이루어지는가? (섹션 5·6·7 겨냥, 한국 제도 우선)",
+      "물류창고·제조 공장·병원·상업 시설 등 현장 유형별로 도입 효과와 비용을 정량 보고한 사례는 무엇이며 근거 수준은 어떤가? (섹션 3·5·8 겨냥)",
+      "국내 로봇산업 통계는 관제·오케스트레이션 소프트웨어와 서비스형 로봇 매출을 따로 집계하는가, 시장 규모 자료의 산정 방법은 공개되어 있는가? (oq-162, oq-160, 섹션 8·11 겨냥)",
+      "경제성·조달·사업 모델에서 ROP가 직접 맡을 것과 재무·구매·업무 시스템에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (oq-129 포함, 섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Modern Materials Handling 의 2026 사내 물류 로봇 설문(응답 166명, 2026-03~04)에서 로봇 투자 결정 요인은 투자수익률(ROI) 63%, 회수 기간 52%, 총소유비용(TCO) 47%, 공정 성과 41% 순이었다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1299"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "Peerless Research Group·MHI 등과 한 설문. 응답자 166명(제조 29%, 운송·창고 21%, 도매 14%, 소매 12%). 결정 요인 ROI 63%, payback time 52%, TCO 47%, process performance 41%.",
+        "as_of": "2026-06-01",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f2",
+        "claim": "같은 설문에서 로봇 도입 방식은 하드웨어 구매와 소프트웨어 구독을 섞은 하이브리드 53%, 전액 자본 지출 구매 37%, 서비스형 로봇(RaaS) 11%였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1299"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "도입 방식: hybrid(하드웨어 구매 + 소프트웨어 구독) 53%, full CapEx 37%, RaaS 11%. 표본 166명, 방법론 세부는 기사 수준으로만 공개.",
+        "as_of": "2026-06-01",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f3",
+        "claim": "같은 설문에서 로봇 투자가 사업 목표를 달성했다는 응답은 74%였고, 11%는 투자수익률·신뢰성·통합 비용 관련 목표에 못 미쳤다고 답했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1299"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "74% met business goals; 94% 가 가동 속도 기대 충족·초과; 11% 가 ROI, reliability, integration costs 목표 미달.",
+        "as_of": "2026-06-01",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f4",
+        "claim": "NIST GCR 24-054 보고서는 로봇 도입의 가장 큰 과제로 투자수익률을 찾고 달성하는 일을 들고, 서비스형 로봇으로 초기 투자와 위험을 줄이는 방식이 매력적이라고 서술한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1285"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약 기준: 'top challenge to pursuing robotics was identifying and achieving ROI', RaaS 로 장비 지출과 위험을 줄이는 것이 매력적이라는 서술. 이전 MMH 설문의 ROI 70%·회수 기간 64%·TCO 60% 인용. PDF 본문 추출 실패.",
+        "as_of": "2024",
+        "site_type": null,
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f5",
+        "claim": "IEC 60300-3-3:2017(신뢰성 관리 — 적용 지침 — 수명주기 비용, 3판)은 수명주기 비용(LCC) 개념과 적용을 안내하며 특히 품목의 신뢰성(dependability)과 관련된 비용을 강조하는 국제 표준이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1296"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "IEC 웹스토어 개요: 3.0판 2017-01-27 발행. 'particularly highlights the costs associated with the dependability of an item.' 경영자·엔지니어·재무·계약자 대상. 표준 본문은 유료라 미열람.",
+        "as_of": "2017-01-27",
+        "site_type": null,
+        "flow_item": null,
+        "source_unopened": true
+      },
+      {
+        "id": "f6",
+        "claim": "Buerkle 외(Robotics and Computer-Integrated Manufacturing 81, 2023)는 산업용 로봇 서비스(IRaaS)를 유연성·사용성·안전·사업 모델(시간 기반·사용량 기반) 네 요소로 제안하고, 중소기업의 로봇 도입 장벽으로 큰 초기 투자, 총소유비용의 불확실성, 전문성 부족을 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1286"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "검색 요약 기준: IRaaS 네 요소 Flexibility·Usability·Safety·Business Models(Time-based, Usage-based). 장벽: large initial investment, TCO 불확실성, lack of expertise. 원문 403.",
+        "as_of": "2023-06",
+        "site_type": "제조 공장",
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f7",
+        "claim": "Lee·Aswani(2025, arXiv)는 서비스형 로봇 제공자가 작업마다 가격을 제시하고 고객이 수락·거절하며 로봇이 작업 후 확률적으로 열화하는 상황에서, 가격 결정과 로봇 교체 결정을 함께 최적화하는 마르코프 결정 과정 모델을 제시했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1287"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'jobs arrive sequentially, and for each, the provider must decide on a price, which the customer can accept or reject.' 데이터 기반 수요 추정 + MDP 로 가격·교체 정책 산출.",
+        "as_of": "2025-09-30",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f8",
+        "claim": "물류창고 사례(벤더 주장): AutoStore 의 피킹량 기반 서비스형 로봇 모델은 알루미늄 저장 그리드를 고객이 먼저 사고, 로봇·포트(작업대)·소프트웨어는 피킹량에 따라 월 요금을 내는 구독으로 쓰게 하며, 보통 3~5년 최소 계약과 가동 로봇·포트 수에 따른 월 최소 요금을 둔다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1292"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 그리드는 전체 시스템 비용의 약 20~40%로 선구매, 로봇·포트·소프트웨어는 피킹량 기반 월 과금, 최소 계약 3~5년. 'This volume-based pricing approach makes robotics more accessible' (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원",
+        "vendor_claim": true
+      },
+      {
+        "id": "f9",
+        "claim": "상업 시설 사례(한국): 지디넷코리아(2023-03)는 식당 서빙로봇 렌털 요금이 월 30만원대로 월 최저임금 수준 인건비 200만원대와 비교되며, 브이디컴퍼니(월 29만9천원 상품)·비로보틱스(3년 사용 후 소유권 결정하는 유예형)·알지티 등이 렌털 상품을 내놓았다고 보도했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1293"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사: '월 요금을 30만원대 수준으로 낮췄다'. 구매·렌털 선택형, 유예형은 3년 사용 후 소유권 결정, 12개월 무상 수리. 인건비 절감 효과 수치는 업체·기사 주장 수준.",
+        "as_of": "2023-03",
+        "site_type": "상업 시설",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f10",
+        "claim": "병원 사례: Li 외(Scientific Reports 16, 2026-04)는 중국 3차 병원의 약품·검체 배송에 자율이동로봇 10대를 6개월 병행 대조로 평가해, 배송 시간이 수작업 대비 32~36% 줄고 인력 19명보다 7.3배 많은 배송을 했으며 10년 수명주기 동안 692.8만 위안 절감을 추정했다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1290"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록 기준: 단일 기관 병행 대조, 10대 AMR, 배송 시간 32~36% 단축(p<0.001), 7.3배 배송 횟수, 10년 절감 6.928 million RMB, 민감도 분석으로 경제성 확인. 비용 항목·할인율은 본문 미확인.",
+        "as_of": "2026-04",
+        "site_type": "병원",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f11",
+        "claim": "병원 사례(싱가포르): 창이종합병원의 CHART 는 RoMi-H(의료 로봇 미들웨어) 통합을 맡을 시스템 통합자를 연 2회 등재 프로그램으로 평가·인증하며, 공공 의료기관은 로봇·소프트웨어·IoT 연동에 등재된 통합자를 쓰게 되어 있다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1289"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "CHART 운영, 연 2회, 기술 역량·배포 지식 평가, 2025-05-01 시행. 'Integration to RoMi-H facilitates interoperability of diverse systems and devices.'",
+        "as_of": "2025-05",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f12",
+        "claim": "한국로봇산업진흥원의 서비스로봇 실증사업(2020년부터)은 물류·웨어러블·의료·협동로봇·언택트 서비스 분야에 로봇 도입 비용의 50% 이내를 국비로 지원하고 민간 부담 50% 이상(수요기관 25% 이상)을 요구하며, 서류·발표·현장 평가로 과제를 뽑고 중간 점검과 최종 평가를 거친다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1288"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "사업 안내 페이지: '로봇 도입 비용 50% 이내 국비 지원', 민간부담금 총사업비 50% 이상(현금), 수요기관 25% 이상. 절차: 공모→서류→발표→현장→최종평가→협약→중간점검→최종평가.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f13",
+        "claim": "연계 대상: 조달청의 2026년 혁신제품 시범구매 기본계획은 예산을 전년 529억원에서 839억원으로 늘리고 로봇·드론·스마트팩토리 같은 AI 융복합 제품을 중점으로 하며, 조달청이 혁신제품을 사서 공공기관에 제공한 뒤 시범 사용 후 관리·활용 여부를 점검하는 방식이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1295"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "전자신문 2025-12-18: 예산 529억→839억원, AI 융복합제품(로봇·드론·스마트팩토리) 중점, 시범사용 이후 관리·활용 점검과 성과 중심 관리체계.",
+        "as_of": "2025-12-18",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f14",
+        "claim": "로봇신문이 요약한 2024년 국내 로봇산업 실태조사(2024년 말 기준)에서 로봇산업 매출은 6조1695억원이며 제조업용 로봇 3조1075억원, 로봇부품 및 소프트웨어 1조9810억원, 전문서비스용 로봇 6423억원, 개인서비스용 로봇 4386억원으로 나뉜다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1294"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "산업통상부·한국로봇산업진흥원·한국AI·로봇산업협회 조사(2025-07~09 실시). 로봇부품 및 소프트웨어 세부 상위 항목은 구동용 부품 5414억원, 제어용 부품 4841억원, 기타 부품 2910억원.",
+        "as_of": "2026-01",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "같은 실태조사 요약에는 관제·오케스트레이션 소프트웨어나 서비스형 로봇(임대·구독) 매출을 따로 집계한 항목이 나타나지 않아, 국내 공식 통계만으로 관제 소프트웨어 시장 규모를 추적하기는 어려울 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1294"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사 요약의 분류는 제조업용·전문서비스용·개인서비스용·로봇부품 및 소프트웨어뿐이고 소프트웨어 세부 품목은 확인되지 않음. 보고서 원문 품목 분류표는 미확인.",
+        "as_of": "2026-01",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "VDA 5050 3.0.0 명세는 이동로봇을 플릿 관제에 연결하는 복잡도를 줄이고 여러 제조사의 이기종 이동로봇 플릿이 같은 공간에서 조율되어 운영되게 하는 것을 목표로 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "목표: 'to reduce complexity when connecting mobile robots to a fleet control system', 서로 다른 제조사 이기종 플릿의 공동 운영, 항법 방식과 무관한 범용 인터페이스.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f17",
+        "claim": "Open-RMF 의 플릿 어댑터 패키지(rmf_fleet_adapter 2.14.0)는 Apache License 2.0 으로 배포된다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1297"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "package.xml 의 license 태그: 'Apache License 2.0', version 2.14.0 (main 브랜치, 확인일 기준).",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "제조 공장 사례(한국, 벤더 주장 인용): 한국무역협회 보고서(2021-11)는 협동로봇 가격이 전통 산업용 로봇의 25~30% 수준이고 투자 회수 기간이 약 195일이라고 제시하나, 회수 기간 수치는 장비 제조사 자료에 기댄 것이다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1298"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 회수 기간 약 195일(출처: 장비 제조사). '비용도 전통 산업용 로봇의 25~30% 수준으로 저렴'. 측정 방법·기준선 미공개.",
+        "as_of": "2021-11-22",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f19",
+        "claim": "제조 공장 사례: Sivalingam·Subramaniam(Heliyon, 2024-02)은 디젤 연료 필터 조립 공정에 쓸 협동로봇 12종을 비용을 포함한 가중 기준으로 비교해 고르는 AHP–TOPSIS 혼합 다기준 의사결정 방법을 적용했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1291"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'The choice of a suitable collaborative robot (cobot) for a real-time industrial process is one of the obstacles to effective robot implementation in terms of energy and cost.' 12종 비교.",
+        "as_of": "2024-02",
+        "site_type": "제조 공장",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f20",
+        "claim": "확인한 자료를 종합하면 핵심 질문(도입 비용을 넘는 효과가 나오며 어떤 로봇과 플랫폼을 어떤 조건으로 들일 것인가)에 대해, 현장은 투자수익률·회수 기간·총소유비용을 주 판단 기준으로 쓰고 구매·하이브리드·서비스형 로봇으로 조달 방식이 나뉘며 병원·식당·창고의 효과 수치가 보고되지만 대부분 단일 사례·벤더 수치여서 같은 기준선의 독립 비교는 부족하고, 이기종 통합 비용과 잠금을 줄이려 개방 인터페이스·인증 통합자를 조달 조건으로 두는 사례가 있는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1299",
+          "ref-1285",
+          "ref-1296",
+          "ref-1292",
+          "ref-1290",
+          "ref-1293",
+          "ref-1298",
+          "ref-1289",
+          "ref-031"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1~f3(결정 요인·조달 방식·통합 비용 미달), f8·f9·f10·f18(현장 사례 수치, 벤더·단일 사례 중심), f11·f16(개방 인터페이스·통합자 인증) 종합.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 자료를 종합하면 3. 경제성·조달·사업 모델에서 ROP가 직접 맡을 범위는 사용량 기반 과금과 투자 효과 판단의 근거가 되는 계량 데이터(작업 완료 수·피킹 수·가동 시간 등)와 도입 전후 성과 기준선의 기록·제공, 로봇 선정 때 필요한 능력·인터페이스 적합성 정보 제공, 개방 인터페이스 준수로 로봇 교체·추가 비용을 낮추는 구조로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1292",
+          "ref-1299",
+          "ref-1286",
+          "ref-031",
+          "ref-1291"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "피킹량 기반 월 과금(f8), 사용량 기반 사업 모델(f6), 통합 비용 미달(f3), 이기종 연결 복잡도 감소 목표(f16), 선정 기준(f19) 종합.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f22",
+        "claim": "연계 대상: 분류 원문 19장 기준으로 자본 예산·회계 처리·구매 계약·요금 청구·정부 지원 신청은 재무·구매·전사 자원 계획 쪽이, 로봇 하드웨어 가격과 정비는 제조사·통합자가 맡으므로, ROP는 그들에게 사용량·성과 데이터를 넘기고 계약 조건(최소 요금·계약 기간)을 운영 제약으로 받는 쪽을 맡는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1292",
+          "ref-1288",
+          "ref-1295",
+          "ref-1296"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "최소 계약 3~5년·월 최소 요금(f8), 국비 지원·민간 부담 구조(f12), 공공 시범구매(f13), 수명주기 비용 분석 대상자(f5) 종합.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f23",
+        "claim": "이 영역은 시장 통계의 1. 기술·시장·업체 동향(f14·f15), 수용 기준의 2. 사용 사례·요구·책임 범위(f20), 대수 산정 비용의 35. 처리능력·규모·배치 설계(oq-129), 성과 기준선의 39. 운영 성과 측정·개선(f3·f21), 개방 인터페이스의 21. 상호운용 표준·적합성과 20. 로봇·제조사 관제 연동(f16·f11·f3), 선정 기준의 5. 로봇 능력·작업 표현(f19), 계약 조건의 58. 다사업자 책임·계약·데이터(f8), 라이선스의 59. 법·규제·보험·라이선스(f17), 교체·수명주기 비용의 57. 자산·소프트웨어 수명주기 관리(f5·f7), 과금 데이터 전달의 23. 업무 시스템 연동(f22), 인력 대체 논의의 60. 노동·수용성·접근성(f9), 적용 현장인 61. 물류창고(f8)·62. 제조 공장(f6·f18·f19)·63. 병원·의료(f10·f11)·64. 상업 시설(f9)과 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1294",
+          "ref-1299",
+          "ref-031",
+          "ref-1289",
+          "ref-1291",
+          "ref-1292",
+          "ref-1297",
+          "ref-1296",
+          "ref-1287",
+          "ref-1293",
+          "ref-1290",
+          "ref-1298",
+          "ref-1286"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 연결의 근거 finding 을 괄호로 표시. 35. 처리능력·규모·배치 설계 연결은 기존 열린 질문 oq-129 에 기댐.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-031",
+        "org": "VDA / VDMA (VDA5050 GitHub)",
+        "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+        "published": null,
+        "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "VDA 5050 공식 명세(현재 main 은 3.0.0). 이번 실행에서 이기종 플릿 연결 복잡도 감소라는 명세 목표를 확인했다.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md"
+      },
+      {
+        "id": "ref-1285",
+        "org": "NIST (National Institute of Standards and Technology)",
+        "title": "NIST Grant/Contractor Report NIST GCR 24-054",
+        "published": "2024",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958147",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. PDF 는 받았으나 본문 텍스트를 추출하지 못해 검색 요약 범위만 썼다. 로봇 도입의 ROI 과제와 서비스형 로봇의 초기 투자 완화를 다룬 NIST 위탁 보고서다.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1286",
+        "org": "Buerkle, A., Eaton, W., Al-Yacoub, A., Zimmer, M., Kinnell, P., Henshaw, M., Coombes, M., Chen, W.-H., & Lohse, N. (Robotics and Computer-Integrated Manufacturing 81)",
+        "title": "Towards industrial robots as a service (IRaaS): Flexibility, usability, safety and business models",
+        "published": "2023-06",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0736584522001661",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. 출판사·저장소 모두 403 이며 서지는 Semantic Scholar API 로 확인했다. 이동형 산업용 로봇을 빌려 쓰는 IRaaS 패러다임과 시간·사용량 기반 사업 모델을 제안한다.",
+        "source_unopened": true,
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1287",
+        "org": "Lee, J. S., & Aswani, A. (arXiv)",
+        "title": "Profit Maximization for a Robotics-as-a-Service Model",
+        "published": "2025-09-30",
+        "url": "https://arxiv.org/abs/2509.26595",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "서비스형 로봇 제공자의 작업별 가격 결정과 열화 로봇 교체 결정을 마르코프 결정 과정으로 함께 최적화하는 프리프린트(초록 확인).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/abs/2509.26595"
+      },
+      {
+        "id": "ref-1288",
+        "org": "한국로봇산업진흥원",
+        "title": "서비스로봇 실증사업",
+        "published": null,
+        "url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "로봇 도입 비용 50% 이내 국비 지원, 민간 부담 구조, 선정·평가 절차를 안내하는 한국로봇산업진흥원 사업 소개 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do"
+      },
+      {
+        "id": "ref-1289",
+        "org": "Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART)",
+        "title": "RoMi-H Empanelment Programme 2025",
+        "published": "2025-05",
+        "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "RoMi-H 통합을 맡을 시스템 통합자를 연 2회 평가·등재하는 CHART 프로그램 안내(2025-05-01 시행).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste"
+      },
+      {
+        "id": "ref-1290",
+        "org": "Li, M., Liu, X., Gao, Y., Sun, Y., Li, P., Zhou, L., Wei, M., & Li, L. (Scientific Reports 16)",
+        "title": "Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios",
+        "published": "2026-04",
+        "url": "https://www.nature.com/articles/s41598-026-49800-9",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "중국 3차 병원의 약품·검체 배송 AMR 10대를 6개월 병행 대조로 평가하고 10년 경제성을 추정한 연구(Europe PMC 초록 확인, 본문 미확인).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC13276296&resultType=core&format=json"
+      },
+      {
+        "id": "ref-1291",
+        "org": "Sivalingam, C. S., & Subramaniam, S. K. (Heliyon)",
+        "title": "Cobot selection using hybrid AHP-TOPSIS based multi-criteria decision making technique for fuel filter assembly process",
+        "published": "2024-02",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10882119/",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "연료 필터 조립 공정용 협동로봇 12종을 AHP–TOPSIS 로 선정한 사례 연구(Europe PMC 초록 확인).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC10882119&resultType=core&format=json"
+      },
+      {
+        "id": "ref-1292",
+        "org": "AutoStore",
+        "title": "Buying vs. RaaS: What's the Best Strategy for Investing in Warehouse Robotics?",
+        "published": null,
+        "url": "https://www.autostoresystem.com/insights/buying-vs-raas-whats-the-best-strategy-for-investing-in-warehouse-robotics",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "구매와 피킹량 기반 서비스형 로봇(pay-per-pick) 모델을 비교하고 선구매 그리드·구독 대상·최소 계약 조건을 설명하는 벤더 글.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.autostoresystem.com/insights/buying-vs-raas-whats-the-best-strategy-for-investing-in-warehouse-robotics"
+      },
+      {
+        "id": "ref-1293",
+        "org": "지디넷코리아 (신영빈)",
+        "title": "'30만원 vs 200만원' 인건비 부담…서빙로봇 판 커진다",
+        "published": "2023-03",
+        "url": "https://zdnet.co.kr/view/?no=20230307165036",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "국내 식당 서빙로봇 렌털 요금(월 30만원대)과 업체별 렌털·유예형 상품을 인건비와 비교한 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://zdnet.co.kr/view/?no=20230307165036"
+      },
+      {
+        "id": "ref-1294",
+        "org": "로봇신문",
+        "title": "[Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약",
+        "published": "2026-01",
+        "url": "https://www.irobotnews.com/news/articleView.html?idxno=44544",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "2024년 말 기준 국내 로봇산업 실태조사의 매출·분류 결과를 요약한 기사. 보고서 원문은 미확인.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.irobotnews.com/news/articleView.html?idxno=44544"
+      },
+      {
+        "id": "ref-1295",
+        "org": "전자신문",
+        "title": "조달청, 2026년 혁신제품 시범구매 기본계획 발표",
+        "published": "2025-12-18",
+        "url": "https://www.etnews.com/20251218000194",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "조달청 2026년 혁신제품 시범구매 예산 확대(839억원)와 로봇 등 AI 융복합 제품 중점, 시범사용 후 점검 방식을 전한 기사.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.etnews.com/20251218000194"
+      },
+      {
+        "id": "ref-1296",
+        "org": "IEC (International Electrotechnical Commission)",
+        "title": "IEC 60300-3-3:2017 Dependability management - Part 3-3: Application guide - Life cycle costing",
+        "published": "2017-01-27",
+        "url": "https://webstore.iec.ch/en/publication/31206",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. 유료 표준이라 IEC 웹스토어의 공식 개요 페이지만 열었다. 수명주기 비용 개념과 적용, 신뢰성 관련 비용을 다루는 적용 지침 3판.",
+        "source_unopened": true,
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://webstore.iec.ch/en/publication/31206"
+      },
+      {
+        "id": "ref-1297",
+        "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+        "title": "rmf_ros2/rmf_fleet_adapter/package.xml",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/package.xml",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "Open-RMF 플릿 어댑터 패키지 정의 파일. 버전 2.14.0, 라이선스 Apache License 2.0.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_ros2/main/rmf_fleet_adapter/package.xml"
+      },
+      {
+        "id": "ref-1298",
+        "org": "한국무역협회 (KDI 경제정보센터 게재)",
+        "title": "협동로봇: 중소기업 스마트 제조의 시작점",
+        "published": "2021-11-22",
+        "url": "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000159915&datecount=&issus=S&pg=&pp=20",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "중소 제조기업의 협동로봇 도입을 다룬 한국무역협회 보고서 소개. 가격 비율과 제조사 자료 기반 회수 기간을 제시한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000159915&datecount=&issus=S&pg=&pp=20"
+      },
+      {
+        "id": "ref-1299",
+        "org": "Modern Materials Handling (Bridget McCrea; Peerless Research Group·MHI 조사)",
+        "title": "2026 Intralogistics Robotics Survey: Robotics moves into the mainstream",
+        "published": "2026-06-01",
+        "url": "https://www.mmh.com/article/2026_intralogistics_robotics_survey_robotics_moves_into_the_mainstream",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "사내 물류 로봇 도입 설문(응답 166명)의 투자 결정 요인, 도입 방식(구매·하이브리드·RaaS), 목표 달성 여부를 보고한 기사형 설문 보고.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://www.mmh.com/article/2026_intralogistics_robotics_survey_robotics_moves_into_the_mainstream"
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f20(핵심 질문 답, 추정), f1·f3(ROI·회수 기간·TCO 가 판단 기준이고 11% 는 통합 비용 등 목표 미달), f4(ROI 가 최대 과제) / 섹션 4: TCO·ROI·회수 기간 f1, 수명주기 비용 f5, 서비스형 로봇·사용량 기반 과금 f6·f8(벤더 주장 병기), 동적 가격·교체 f7 / 섹션 5: 물류창고 — f8(수행 자원, 벤더 주장), 제조 공장 — f6(제약)·f18(예외·성과, 벤더 주장)·f19(수행 자원), 병원 — f10(예외·성과)·f11(수행 자원, 싱가포르), 상업 시설 — f9(수행 자원, 한국 식당). 가정·실외·기타 사례는 찾지 못했음을 명시 / 섹션 6: 투자 판단 기준 f1·f2, 수명주기 비용 분석 f5, 다기준 선정 f19, 과금 모델 f2·f6·f7·f8·f9, 공공 실증·조달 f12·f13, 개방 인터페이스·인증 통합자 조건 f11·f16 / 섹션 7: IEC 60300-3-3 f5(원문 미열람), VDA 5050 목적 f16, Open-RMF 라이선스 f17, 서비스로봇 실증사업 f12, 조달청 혁신제품 시범구매 f13(연계 대상) / 섹션 8: f1~f3·f6·f7·f10·f19 / 섹션 9: f21(직접 범위), f22(연계 대상) / 섹션 10: f23 — 1, 2, 5, 20, 21, 23, 35, 39, 57, 58, 59, 60, 61, 62, 63, 64 / 섹션 11: 기존 oq-129(미해결), oq-160(미해결), oq-162(f14·f15 로 부분 근거, 미해결 유지)와 open_questions_new 5건. 다음 실행 후보: 63. 병원·의료 페이지 5절에 f10·f11, 64. 상업 시설 페이지에 f9, 62. 제조 공장 페이지에 f18·f19 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "총소유비용",
+        "term_en": "Total Cost of Ownership (TCO)",
+        "definition": "장비를 사는 비용뿐 아니라 설치·통합·교육·운영·정비·폐기까지 보유 기간 전체에 드는 비용을 합한 투자 판단 지표이다."
+      },
+      {
+        "term_ko": "수명주기 비용 분석",
+        "term_en": "Life Cycle Costing (LCC, IEC 60300-3-3)",
+        "definition": "품목의 획득부터 운영·정비·개선·폐기까지 수명주기 전체 비용을 산정해 대안을 비교하는 방법으로, IEC 60300-3-3 이 신뢰성 관련 비용을 중심으로 적용 지침을 준다."
+      },
+      {
+        "term_ko": "투자 회수 기간",
+        "term_en": "Payback Period",
+        "definition": "도입으로 얻는 순절감·순수익의 누적액이 초기 투자액과 같아지기까지 걸리는 기간이다."
+      },
+      {
+        "term_ko": "피킹량 기반 과금",
+        "term_en": "Pay-per-pick",
+        "definition": "자동화 창고 설비나 로봇의 사용료를 실제 처리한 피킹 수(물동량)에 따라 매기는 사용량 기반 과금 방식이다."
+      }
+    ],
+    "open_questions_new": [
+      "ROP 같은 다중 제조사 오케스트레이션 플랫폼의 과금 단위(로봇당·작업당·현장당·구독)를 비교하거나 공개한 자료가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 41. 플랫폼 아키텍처·외부 API | 근거: f2 | 종류: 일반",
+      "사용량 기반 서비스형 로봇 계약에서 과금·최소 요금·가동률 미달을 판정하는 계량 데이터를 누가 측정하고, 여러 사업자가 함께 쓰는 현장에서 그 값을 어떻게 합의하는가? | 관련 영역: 3. 경제성·조달·사업 모델, 58. 다사업자 책임·계약·데이터, 39. 운영 성과 측정·개선 | 근거: f8 | 종류: 일반",
+      "병원 배송 로봇 경제성 평가의 비용 항목·할인율·인건비 산정 방식을 비교 가능한 기준으로 정리한 연구가 있으며, 국내 병원 인건비 조건에서도 같은 결론이 나오는가? | 관련 영역: 3. 경제성·조달·사업 모델, 63. 병원·의료 | 근거: f10 | 종류: 일반",
+      "국내 공공·민간 로봇 조달에서 VDA 5050 같은 개방 인터페이스 적합성이나 통합자 인증을 입찰 요구조건으로 명시한 사례가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 21. 상호운용 표준·적합성 | 근거: f16 | 종류: 일반",
+      "이기종 로봇 통합 비용이 로봇 도입 총소유비용에서 차지하는 비중과, 공통 인터페이스·오케스트레이션 플랫폼이 그 비용을 얼마나 줄이는지 측정한 독립 연구가 있는가? | 관련 영역: 3. 경제성·조달·사업 모델, 20. 로봇·제조사 관제 연동 | 근거: f3 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 16,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f4 NIST GCR 24-054 는 PDF 본문 추출 실패로 검색 요약 범위만 사용, 제목·저자 세부 미확인",
+        "f6 Buerkle 외 2023 원문·초록 모두 열지 못함(403, API 초록 없음), 검색 요약 범위만 사용",
+        "f10 Li 외 2026 은 초록만 확인해 비용 항목·할인율·회수 기간 미확인",
+        "f14·f15 실태조사 보고서 원문 품목 분류표 미확인(기사 요약 기준)",
+        "f1~f3 설문 방법론(표본 추출·가중) 미공개",
+        "f8 AutoStore 그리드 비용 비중 20~40% 는 벤더 주장이며 독립 확인 실패",
+        "f18 협동로봇 회수 기간 195일은 제조사 자료 인용, 측정 기준 미확인",
+        "IRaaS 기술·시스템 요구(Mabkhot 외, Procedia CIRP 130, 2024)는 서지만 확인하고 초록을 얻지 못해 넣지 않음",
+        "Forrester TEI(Locus Robotics 위탁) PDF 추출 실패로 넣지 않음",
+        "플릿 관리 소프트웨어 로봇당 월 요금(검색 요약의 $50~500)은 제3자 블로그뿐이고 InOrbit 공식 페이지에 가격이 없어 넣지 않음",
+        "하나금융경영연구소 RaaS 보고서(국회도서관 국가전략정보포털)는 요약 내용의 사례 신뢰성이 낮아 넣지 않음",
+        "싱가포르 보건부가 RoMi-H 를 공공 의료기관 통합 플랫폼으로 인정했다는 내용은 검색 요약과 CGH 소개 페이지 표현이 달라 finding 으로 내지 않음",
+        "가정·실외·기타 현장의 경제성·과금 사례를 찾지 못함",
+        "oq-160 시장 규모 산정 방법론 공개 독립 출처를 찾지 못함",
+        "oq-129 채팅 기반 대수 결정과 비용 목적 설정 주체에 관한 자료를 찾지 못함"
+      ],
+      "scope_violations": [
+        "f12·f13: 정부 지원 신청·공공 조달은 원문 19장 '상위 업무 시스템'의 재무·구매 쪽 연계 대상에 가까워 f13 은 '연계 대상: '으로 표시하고 f22 에서 ROP 직접 범위와 구분함",
+        "f8·f9: 로봇 하드웨어 가격·렌털 조건은 제조사·서비스 사업자의 사업 조건으로 참고 사례로만 쓰고, ROP 직접 범위는 f21 에서 계량 데이터 제공으로 한정함",
+        "f10: 병원 AMR 의 경로 계획 알고리즘(Dijkstra·A*·DWA)은 원문 19장 '로봇 자체 지능·제어' 쪽이라 claim 에서 빼고 경제성 결과만 씀"
+      ],
+      "budget_used": {
+        "queries": 19,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 19회/30, 신규 출처 15건/15(ref-1285~ref-1299, 예약 구간 안)로 신규 출처 상한에 도달해 CGH RoMi-H 소개 페이지, Mabkhot 외(2024), 하나금융경영연구소 보고서를 출처로 넣지 않았다. 재사용 1건(ref-031): 참고문헌 목록 요약에 행이 없어 값은 이전 브리프 2026-09-30-18 출처 표를 따랐고, 이번에 GitHub 공식 저장소 원문을 다시 열어 명세 목표 문장을 확인했다. 원문 열람: 16건 중 14건을 열었다(webfetch 12, github_raw 2). ref-1285(PDF 추출 실패)·ref-1286(403)은 fetched false·원문 미열람이며, ref-1296 은 유료 표준이라 공식 개요 페이지만 열어 원문 미열람으로 표시했다. ref-1290·ref-1291 은 PMC 가 캡차로 막혀 Europe PMC API 로 초록만 읽었다. 교차 확인 0건(주요 수치마다 독립 출처 2곳을 찾지 못함; NIST 보고서가 인용한 이전 MMH 설문 수치는 2026 설문과 연도가 달라 교차 확인으로 보지 않음). 벤더 주장 2건(f8·f18)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문에는 f20 으로 답했고 결론은 '판단 기준(ROI·회수 기간·TCO)과 조달 방식(구매·하이브리드·RaaS)은 확인되나 현장 효과 수치는 단일 사례·벤더 중심이어서 같은 기준선의 독립 비교가 부족하다'는 추정이다. 현장 유형 사례는 물류창고(f8, 벤더)·제조 공장(f6·f18·f19)·병원(f10 중국, f11 싱가포르)·상업 시설(f9, 한국 식당)이며 가정·실외·기타는 찾지 못했다. 국내 자료는 한국로봇산업진흥원(ref-1288)·로봇신문(ref-1294)·전자신문(ref-1295)·지디넷코리아(ref-1293)·한국무역협회(ref-1298)다. 기존 열린 질문 oq-162 는 f14·f15 로 부분 근거(요약 기사상 관제 소프트웨어 별도 집계 항목 없음)만 있어 해결 제안하지 않았고, oq-129·oq-160 은 새 근거가 없다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. L. AI·학습 기술 관련 finding 은 없다(f7 의 데이터 기반 가격 결정은 운영 연구 모델로 보고 L 영역 연결을 제안하지 않음). 용어집에 이미 있는 서비스형 로봇·서비스 수준 협약·핀옵스·기술 성숙도·차량 소요대수 산정·등재 프로그램·의료 로봇 미들웨어 RoMi-H 는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 10675,
+  "type": "result",
+  "duration_ms": 605207,
+  "uuid": "cedc2266-0c09-4a74-bf63-7215c3ac26c5",
+  "ttft_stream_ms": 1097,
+  "time_to_request_ms": 81,
+  "time_to_request_phases_ms": {
+    "other": 31,
+    "system_prompt": 14,
+    "turn_start_resume": 0,
+    "process_user_input": 13,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 1,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 1,
+    "client_creation": 11
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 29,
+  "time_to_request_cpu_ms": 115,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1098,
+  "time_to_request_from_spawn_ms": 6371360,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790747672438.8323,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 606.5
+}

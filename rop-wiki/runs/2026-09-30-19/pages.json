@@ -1,0 +1,659 @@
+{
+  "run_id": "2026-09-30-19",
+  "outline": [
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "2026년 사내 물류 로봇 설문(응답 166명)에서 투자 결정 요인 상위는 투자수익률·회수 기간·총소유비용이었다. [사실][^ref-1170] 효과 수치는 단일 사례·벤더 중심이라 같은 기준선의 독립 비교가 부족한 것으로 보인다. [추정][^ref-1161]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "투자수익률·회수 기간·총소유비용·수명주기 비용 분석·서비스형 로봇·하이브리드 도입·피킹량 기반 과금·작업별 가격 결정을 정리한다. [사실][^ref-1170]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 2200,
+      "summary": "물류창고(벤더 계약 설명)·제조 공장(한국 보고서, 선정 사례)·병원(중국, 싱가포르)·상업 시설(한국) 사례를 여섯 항목으로 정리하고 가정·실외·기타 사례는 찾지 못했음을 밝힌다. [사실][^ref-1161]",
+      "planned_findings": [
+        "f6",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f18",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1500,
+      "summary": "로봇 도입 방식은 구매·하이브리드·서비스형 로봇으로 나뉘며 현재 사용자 기준 37%·53%·11%다. [사실][^ref-1170] 수명주기 비용 분석, 다기준 선정, 과금 모델, 외부 지원·조달 제도, 개방 인터페이스 조건을 다룬다.",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f11",
+        "f12",
+        "f13",
+        "f16",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 800,
+      "summary": "수명주기 비용 지침 IEC 60300-3-3과 VDA 5050·Open-RMF 라이선스·RoMi-H 등재 프로그램, 그리고 연계 대상인 국내 실증·조달 제도를 표로 정리한다. [사실][^ref-1167]",
+      "planned_findings": [
+        "f5",
+        "f11",
+        "f12",
+        "f13",
+        "f16",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1000,
+      "summary": "업계 설문, NIST 보고서, IRaaS·RaaS 가격 연구, 병원 AMR 경제성 연구, 협동로봇 선정 연구, 국내 보고서·통계를 소개한다. [사실][^ref-1170]",
+      "planned_findings": [
+        "f1",
+        "f4",
+        "f6",
+        "f7",
+        "f10",
+        "f14",
+        "f18",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 700,
+      "summary": "ROP는 사용량·성과 계량 데이터와 기준선, 선정용 능력·인터페이스 정보를 맡고, 예산·회계·구매·청구·지원 신청은 재무·구매 쪽, 하드웨어 가격·정비는 제조사·통합자 쪽 연계 대상으로 보인다. [추정][^ref-1163]",
+      "planned_findings": [
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1300,
+      "summary": "성과 측정·연동·계약·라이선스·현장 유형 영역과 16개 연결을 정리한다. [추정][^ref-1170]",
+      "planned_findings": [
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 1000,
+      "summary": "기존 oq-129·oq-160·oq-162·oq-257을 열림으로 유지하고(oq-162는 부분 근거) 새 질문 5건을 올린다. [추정][^ref-903]",
+      "planned_findings": [
+        "f14",
+        "f15"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/planning-and-business/economics-procurement-and-business-models.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(현장 유형 사례 5건: 물류창고·제조 공장·병원 2·상업 시설, 표준·제도 6건, 자료 8건, 경계 2행, 연결 16개, 열린 질문 9건), 프런트매터 채움, 13절 각주. 2차: 3절 첫 문장을 설문 범위로 한정, ref-031 접근일 2026-09-30"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"6. 대표 접근법과 기술\" 절(1,380자)을 옮겼다. 2차: ref-031 접근일 2026-09-30"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"8. 대표 연구와 자료\" 절(1,281자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"11. 열린 질문\" 절(1,265자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,106자)을 옮겼다. 2차: ref-031 접근일 2026-09-30"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(857자)을 옮겼다. 2차: ref-031 접근일 2026-09-30"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"4. 핵심 개념과 용어\" 절(817자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area03-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 3. 경제성·조달·사업 모델 의 \"3. 왜 중요한가\" 절(795자)을 옮겼다. 2차: 세 줄 요약·본문 첫 문장을 설문 범위로 한정, ref-031 접근일 2026-09-30"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 3. 경제성·조달·사업 모델 | 섹션 3~11 신규 작성(투자 판단 기준·도입 방식 설문, 현장 유형 사례 5건: 물류창고·제조 공장·병원 2·상업 시설, 표준·제도 6건, 자료 8건, 경계 2행, 연결 16개, 열린 질문 9건), 1차 수정 지시 14건·2차 수정 지시 2건(3절 첫 문장 설문 범위 한정, ref-031 접근일) 이행 | run 2026-09-30-19",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 3. 경제성·조달·사업 모델: 섹션 3~11 신규 작성(투자 판단 기준과 구매·하이브리드·서비스형 로봇 도입 방식, 물류창고·제조 공장·병원·상업 시설 사례 5건, 국내 실증·조달 제도는 연계 대상으로 정리)",
+    "category_recent": "2026-09-30 — 3. 경제성·조달·사업 모델: 섹션 3~11 신규 작성(현장 유형 사례 5건, 표준·제도 6건, 자료 8건, 연결 16개, 열린 질문 9건)",
+    "area_recent": "2026-09-30 — 3. 경제성·조달·사업 모델: 영역 심화로 섹션 3~11 신규 작성, 새 열린 질문 5건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "total-cost-of-ownership",
+      "term_ko": "총소유비용",
+      "term_en": "Total Cost of Ownership (TCO)",
+      "definition": "장비를 사는 비용만이 아니라 보유·운영 기간 전체에 드는 비용을 합해 보는 투자 판단 지표이다.",
+      "description": "2026년 사내 물류 로봇 설문에서 로봇 투자 결정 요인 3위(47%)였고, 중소기업에는 총소유비용의 불확실성이 도입 장벽으로 꼽힌다.",
+      "related_areas": [
+        3,
+        39,
+        57
+      ],
+      "sources": [
+        "ref-1170",
+        "ref-1159"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "life-cycle-costing",
+      "term_ko": "수명주기 비용 분석",
+      "term_en": "Life Cycle Costing (LCC, IEC 60300-3-3)",
+      "definition": "품목의 수명주기 비용을 산정하는 방법으로, IEC 60300-3-3 이 그 개념과 적용을 안내하며 특히 신뢰성 관련 비용을 강조한다.",
+      "description": "IEC 60300-3-3:2017 은 3판이며 유료 표준이라 공식 개요만 확인했다.",
+      "related_areas": [
+        3,
+        57
+      ],
+      "sources": [
+        "ref-1167"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "payback-period",
+      "term_ko": "투자 회수 기간",
+      "term_en": "Payback Period",
+      "definition": "도입으로 얻는 순절감·순수익의 누적액이 초기 투자액과 같아지기까지 걸리는 기간이다.",
+      "description": "2026년 사내 물류 로봇 설문에서 투자수익률 다음으로 많이 꼽힌 로봇 투자 결정 요인(52%)이다.",
+      "related_areas": [
+        3,
+        39
+      ],
+      "sources": [
+        "ref-1170"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "pay-per-pick",
+      "term_ko": "피킹량 기반 과금",
+      "term_en": "Pay-per-pick",
+      "definition": "자동화 창고 설비나 로봇의 사용료를 실제 처리한 피킹 수(물동량)에 따라 매기는 사용량 기반 과금 방식이다.",
+      "description": "벤더 설명에 따르면 저장 그리드는 선구매하고 로봇·포트·소프트웨어를 피킹량 기반 월 구독으로 쓰며 최소 계약 기간과 월 최소 요금을 둔다(벤더 주장).",
+      "related_areas": [
+        3,
+        58,
+        61
+      ],
+      "sources": [
+        "ref-1163"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "VDA 5050 공식 명세(현재 main 은 3.0.0). 이기종 플릿 연결 복잡도 감소라는 명세 목표를 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1158",
+      "org": "Messina, E. & Saidi, K. S. (NIST, National Institute of Standards and Technology)",
+      "title": "Research Opportunities for Advancing Measurement Science for Manufacturing Robotics (NIST GCR 24-054)",
+      "published": "2024-06-07",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=958147",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. PDF 본문 텍스트를 추출하지 못해 검색 요약 범위만 썼다. 로봇 도입의 최대 과제로 투자수익률을 들고 서비스형 로봇의 초기 투자·위험 완화를 서술한 NIST 위탁 보고서다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1159",
+      "org": "Buerkle, A., Eaton, W., Al-Yacoub, A., Zimmer, M., Kinnell, P., Henshaw, M., Coombes, M., Chen, W.-H., & Lohse, N. (Robotics and Computer-Integrated Manufacturing 81)",
+      "title": "Towards industrial robots as a service (IRaaS): Flexibility, usability, safety and business models",
+      "published": "2023-06",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0736584522001661",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 출판사·저장소 모두 403 이며 서지는 검색 결과로 확인했다. 산업용 로봇을 빌려 쓰는 IRaaS 패러다임과 시간·사용량 기반 사업 모델을 제안하고 중소기업 도입 장벽을 든다.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1160",
+      "org": "Lee, J. S., & Aswani, A. (arXiv)",
+      "title": "Profit Maximization for a Robotics-as-a-Service Model",
+      "published": "2025-09-30",
+      "url": "https://arxiv.org/abs/2509.26595",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "서비스형 로봇 제공자의 작업별 가격 결정과 열화 로봇 교체 결정을 마르코프 결정 과정으로 함께 최적화하는 프리프린트(초록 확인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-947",
+      "org": "한국로봇산업진흥원",
+      "title": "서비스로봇 실증사업",
+      "published": null,
+      "url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreIntro.do",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "물류·웨어러블·의료·돌봄 4대 분야와 협동로봇·언택트서비스에 로봇 도입 비용 50% 이내 국비 지원, 민간 부담 구조, 선정·평가 절차를 안내하는 사업 소개 페이지.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": "2025-05",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "RoMi-H 통합을 맡을 시스템 통합자를 연 2회 평가·등재하는 CHART 프로그램 안내(2025-05-01 시행).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1161",
+      "org": "Li, M., Liu, X., Gao, Y., Sun, Y., Li, P., Zhou, L., Wei, M., & Li, L. (Scientific Reports 16)",
+      "title": "Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios",
+      "published": "2026-04",
+      "url": "https://www.nature.com/articles/s41598-026-49800-9",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "중국 3차 병원의 약품·검체 배송 AMR 10대를 6개월 병행 대조로 평가하고 10년 경제성을 추정한 연구(초록 확인, 본문 미확인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1162",
+      "org": "Sivalingam, C. S., & Subramaniam, S. K. (Heliyon)",
+      "title": "Cobot selection using hybrid AHP-TOPSIS based multi-criteria decision making technique for fuel filter assembly process",
+      "published": "2024-02-15",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10882119/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "연료 필터 조립 공정용 협동로봇 12종을 AHP–TOPSIS 로 선정한 사례 연구(초록 확인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1163",
+      "org": "AutoStore",
+      "title": "Buying vs. RaaS: What's the Best Strategy for Investing in Warehouse Robotics?",
+      "published": null,
+      "url": "https://www.autostoresystem.com/insights/buying-vs-raas-whats-the-best-strategy-for-investing-in-warehouse-robotics",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "구매와 피킹량 기반 서비스형 로봇 모델을 비교하고 선구매 그리드·구독 대상·최소 계약 조건을 설명하는 벤더 글(벤더 주장).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1164",
+      "org": "지디넷코리아 (신영빈)",
+      "title": "'30만원 vs 200만원' 인건비 부담…서빙로봇 판 커진다",
+      "published": "2023-03-08",
+      "url": "https://zdnet.co.kr/view/?no=20230307165036",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "국내 식당 서빙로봇 렌털 요금(월 30만원대)과 업체별 렌털·유예형 상품을 인건비와 비교한 기사.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-903",
+      "org": "로봇신문",
+      "title": "[Cover Story] '2024년 국내 로봇산업 실태 조사 결과 보고서' 요약",
+      "published": "2026-01-25",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=44544",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "2024년 말 기준 국내 로봇산업 실태조사의 매출·분류 결과를 요약한 기사. 보고서 원문은 미확인.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1166",
+      "org": "전자신문",
+      "title": "조달청, 2026년 혁신제품 시범구매 기본계획 발표",
+      "published": "2025-12-18",
+      "url": "https://www.etnews.com/20251218000194",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "조달청 2026년 혁신제품 시범구매 예산 확대(839억원)와 로봇 등 AI 융복합 제품 중점, 시범사용 후 점검 방식을 전한 기사.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1167",
+      "org": "IEC (International Electrotechnical Commission)",
+      "title": "IEC 60300-3-3:2017 Dependability management - Part 3-3: Application guide - Life cycle costing",
+      "published": "2017-01-27",
+      "url": "https://webstore.iec.ch/en/publication/31206",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 유료 표준이라 IEC 웹스토어의 공식 개요 페이지만 열었다. 수명주기 비용 개념과 적용, 신뢰성 관련 비용을 다루는 적용 지침 3판.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1168",
+      "org": "Open-RMF (open-rmf/rmf_ros2 저장소)",
+      "title": "rmf_ros2/rmf_fleet_adapter/package.xml",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_ros2/blob/main/rmf_fleet_adapter/package.xml",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 플릿 어댑터 패키지 정의 파일. 버전 2.14.0, 라이선스 Apache License 2.0.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1169",
+      "org": "한국무역협회 (KDI 경제정보센터 게재)",
+      "title": "협동로봇: 중소기업 스마트 제조의 시작점",
+      "published": "2021-11-22",
+      "url": "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000159915&datecount=&issus=S&pg=&pp=20",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "중소 제조기업의 협동로봇 도입을 다룬 한국무역협회 보고서 소개. 제조사 자료 기반의 가격 비율(전통 산업용 로봇의 25~30%)을 인용한다. KDI 게재일 2021-11-22, 한국무역협회 원게시일 2021-11-17.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    },
+    {
+      "id": "ref-1170",
+      "org": "Modern Materials Handling (Bridget McCrea; Peerless Research Group·MHI 조사)",
+      "title": "2026 Intralogistics Robotics Survey: Robotics moves into the mainstream",
+      "published": "2026-06-01",
+      "url": "https://www.mmh.com/article/2026_intralogistics_robotics_survey_robotics_moves_into_the_mainstream",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "사내 물류 로봇 도입 설문(응답 166명)의 투자 결정 요인, 도입 방식(구매·하이브리드·RaaS), 목표 달성 여부를 보고한 기사형 설문 보고.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/planning-and-business/economics-procurement-and-business-models.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "ROP 같은 다중 제조사 오케스트레이션 플랫폼의 과금 단위(로봇당·작업당·현장당·구독)를 비교하거나 공개한 자료가 있는가?",
+      "areas": [
+        3,
+        41
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "사용량 기반 서비스형 로봇 계약에서 과금·최소 요금·가동률 미달을 판정하는 계량 데이터를 누가 측정하고, 여러 사업자가 함께 쓰는 현장에서 그 값을 어떻게 합의하는가?",
+      "areas": [
+        3,
+        58,
+        39
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "병원 배송 로봇 경제성 평가의 비용 항목·할인율·인건비 산정 방식을 비교 가능한 기준으로 정리한 연구가 있으며, 국내 병원 인건비 조건에서도 같은 결론이 나오는가?",
+      "areas": [
+        3,
+        63
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 공공·민간 로봇 조달에서 VDA 5050 같은 개방 인터페이스 적합성이나 통합자 인증을 입찰 요구조건으로 명시한 사례가 있는가?",
+      "areas": [
+        3,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "이기종 로봇 통합 비용이 로봇 도입 총소유비용에서 차지하는 비중과, 공통 인터페이스·오케스트레이션 플랫폼이 그 비용을 얼마나 줄이는지 측정한 독립 연구가 있는가?",
+      "areas": [
+        3,
+        20
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "제약",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "제약",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "수행 자원",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "예외·성과",
+      "link": "docs/categories/planning-and-business/economics-procurement-and-business-models.md#5-적용-사례-현장-유형-명시",
+      "title": "3. 경제성·조달·사업 모델"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "IEC 60300-3-3:2017 신뢰성 관리 — 적용 지침 — 수명주기 비용",
+      "kind": "표준",
+      "org": "IEC(International Electrotechnical Commission)",
+      "url": "https://webstore.iec.ch/en/publication/31206",
+      "related_areas": [
+        3,
+        57
+      ],
+      "summary": "수명주기 비용 분석의 개념과 적용을 안내하고 품목의 신뢰성 관련 비용을 강조하는 적용 지침 3판(2017-01-27). 유료 표준이라 공식 개요만 확인했다.",
+      "ref_id": "ref-1167"
+    }
+  ],
+  "additional_research_requests": [
+    "5절: 가정·실외·기타 현장 유형에서 로봇 도입 비용·과금·조달 방식을 보고한 사례가 필요하다. 이번 조사에서 찾지 못해 네 현장 유형만 썼다.",
+    "3·6절: 투자 결정 요인·도입 방식 비율(MMH 2026 설문)을 교차 확인할 독립 설문이나 통계가 필요하다. 현재 핵심 수치가 모두 단일 출처이며, 설문을 넘어 '현장 일반'의 판단 기준으로 서술하려면 추가 근거가 있어야 한다.",
+    "5절 병원 사례: Li 외(2026) 본문의 비용 항목·할인율·회수 기간을 확인해야 경제성 결과를 다른 현장과 비교할 수 있다.",
+    "6·7절: IEC 60300-3-3 본문 또는 공개 해설로 수명주기 비용 항목 구성과 로봇 도입 적용 사례를 확인할 필요가 있다.",
+    "5절 물류창고 사례: AutoStore 그리드 비용 비중(20~40%)과 피킹량 기반 과금 조건을 독립 출처로 확인해야 벤더 주장 표시를 뗄 수 있다.",
+    "5절 제조 공장 사례: 협동로봇 투자 회수 기간을 측정 기준과 함께 보고한 독립 자료가 필요하다(1차 검증에서 195일 수치를 삭제함).",
+    "11절 oq-162: 2024년 국내 로봇산업 실태조사 보고서 원문의 품목 분류표로 관제 소프트웨어 별도 집계 여부를 확인해야 한다.",
+    "6절: 싱가포르 보건부가 RoMi-H 를 공공 의료기관 통합 플랫폼으로 인정했는지 공식 출처로 확인하면 개방 플랫폼 조달 조건 서술을 보강할 수 있다."
+  ],
+  "fixes_applied": [
+    "f3 목표 달성 비율 — 3절 둘째 단락에 사업 목표 달성 74%·미달 21%·모름 5%를 함께 쓰고, 11%는 투자수익률·신뢰성·통합 비용 목표를 놓친 별도 성과 항목으로 따로 적었다.",
+    "f2 모집단 기준 — 6절 첫 문장에 도입 방식 비율(하이브리드 53%·전액 구매 37%·서비스형 로봇 11%)이 '현재 로봇을 쓰는 응답자' 기준임을 밝혔다.",
+    "f18 195일 삭제 — 투자 회수 기간 195일을 본문·표·5절 사례 어디에도 쓰지 않고, 가격 비율 25~30% 인용만 5절 제조 공장 표의 예외·성과 칸과 8절에 [추정]으로 남겼다.",
+    "f20 종합 서술 — 3절 셋째 단락의 종합 추정에서 195일 수치를 근거나 예시로 쓰지 않았다.",
+    "ref-1158 서지 — 13절 각주, 8절 목록, reference_updates 의 제목을 'Research Opportunities for Advancing Measurement Science for Manufacturing Robotics (NIST GCR 24-054)'로, 기관에 Messina, E. & Saidi, K. S. 를, 발행일을 2024-06-07로 고쳤다.",
+    "f12 지원 분야 — 6절 공공 실증·조달 소제목에 '물류·웨어러블·의료·돌봄 4대 분야와 협동로봇·언택트서비스'로 썼다.",
+    "발행일 — 13절 각주와 reference_updates 에서 ref-1164 을 2023-03-08, ref-903 를 2026-01-25, ref-1162 을 2024-02-15 로 적었다(5절 서술에도 반영).",
+    "ref-1169 날짜 — 13절 각주 발행일을 2021-11-22(KDI 게재일)로 두고, 8절 서술에 한국무역협회 원게시일 2021-11-17을 확인했다고 남겼다.",
+    "원문 미열람 표시 — 13절의 ref-1158·ref-1159·ref-1167 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 세 항목에 source_unopened: true 를 넣었다.",
+    "f12·f13 경계 — 6절 소제목을 '공공 실증·조달(외부 제도, 연계 대상)'로 두고, 7절 표 유형 칸과 표 아래 문장, 9절 표 외부 칸에서 두 제도를 재무·구매 쪽 연계 대상으로만 다뤘다.",
+    "벤더 주장 병기 — f8 을 쓴 4절 피킹량 기반 과금, 5절 물류창고 표·서술, 6절 과금 목록과 f18 을 쓴 5절 제조 공장 예외·성과 칸·8절에 '[추정] 벤더 주장'을 유지했다.",
+    "5절 현장 유형 — 물류창고(f8)·제조 공장(f6·f18·f19)·병원(f10 중국, f11 싱가포르)·상업 시설(f9 한국)로 나누고 사례마다 국가(미특정·미확인 포함)를 밝혔으며, 가정·실외·기타 사례를 찾지 못했다고 절 첫머리에 적고 site_matrix_updates 는 네 현장 유형 칸만 냈다.",
+    "용어집 수명주기 비용 분석 — 정의를 '품목의 수명주기 비용을 산정하는 방법으로, IEC 60300-3-3 이 개념과 적용을 안내하며 특히 신뢰성 관련 비용을 강조한다'로 한정하고 획득~폐기 단계 나열을 뺐다.",
+    "11절 기존 질문 — oq-129·oq-160·oq-162 를 모두 '열림'으로 유지하고, oq-162 에는 f14·f15 가 요약 기사 기준의 부분 근거이며 보고서 원문은 미확인임을 적었다(open_question_updates 에 해결 변경을 내지 않음).",
+    "분량 초과 자동 분리: 3. 경제성·조달·사업 모델 본문 10,415자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 4,016자",
+    "2차: 3절 첫 문장 태그 상향 — (가) 방식으로 설문 범위에 한정해 '2026년 사내 물류 로봇 설문(응답 166명)에서 로봇 투자 결정 요인 상위 세 가지는 투자수익률(ROI)·투자 회수 기간·총소유비용(TCO)이었다. [사실][^ref-1170]'로 고쳤다. 세부영역 페이지 3절 첫 문장, 주제 페이지 2026-09-30-area03-s3 의 '1. 세 줄 요약' 첫 항목과 '3. 본문' 첫 문장을 같은 문장으로 맞췄고, 본문 둘째 문장은 같은 설문을 가리키도록 '이 설문(2026년 3~4월 조사)'으로 이었으며, outline 의 3절 요약도 설문 범위로 고쳤다.",
+    "2차: ref-031 접근일 — 세부영역 페이지 13절과 주제 페이지 area03-s3·s6·s7·s10 의 출처 절에서 ref-031 각주의 접근일을 '접근일 2026-09-30'으로 바꿨다."
+  ]
+}
