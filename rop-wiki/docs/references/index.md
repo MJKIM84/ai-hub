@@ -145,7 +145,16 @@ version: 1
 | [ref-1020](ref-1020.md) | 국토지리정보원 | 실내공간정보 | 미확인 | 정부·연구기관 | high | 2026-09-30 | <https://www.ngii.go.kr/kor/content.do?sq=324> |
 | [ref-1021](ref-1021.md) | Narayana, M., Kolling, A., Nardelli, L., & Fong, P. (IROS 2020) | Lifelong update of semantic maps in dynamic environments | 2020-10 | 논문 | medium | 2026-09-30 | <https://arxiv.org/abs/2010.08846> |
 | [ref-1022](ref-1022.md) | Stefanini, E., Ciancolini, E., Settimi, A., & Pallottino, L. (Sensors 23(13):6066) | Safe and Robust Map Updating for Long-Term Operations in Dynamic Environments | 2023-06-30 | 논문 | high | 2026-09-30 | <https://pmc.ncbi.nlm.nih.gov/articles/PMC10346461/> |
+| [ref-1023](ref-1023.md) | NAVER Corp. | 로보틱스 l NAVER Corp. | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://www.navercorp.com/tech/robotics> |
+| [ref-1024](ref-1024.md) | AsyncAPI Initiative | AsyncAPI Specification 3.1.0 | 미확인 | 표준 | high | 2026-09-30 | <https://www.asyncapi.com/docs/reference/specification/v3.1.0> |
+| [ref-1025](ref-1025.md) | OpenAPI Initiative | OpenAPI Specification v3.1.0 | 2021-02-15 | 표준 | high | 2026-09-30 | <https://spec.openapis.org/oas/v3.1.0> |
+| [ref-1026](ref-1026.md) | 뉴스핌 | 카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다 | 2026-05-13 | 기사 | low | 2026-09-30 | <https://www.newspim.com/news/view/20260512001077> |
+| [ref-1027](ref-1027.md) | Singhal, A., Kejriwal, N., Pallav, P., Choudhury, S., Sinha, R., & Kumar, S. (arXiv) | Managing a Fleet of Autonomous Mobile Robots (AMR) using Cloud Robotics Platform | 2017-06 | 논문 | medium | 2026-09-30 | <https://arxiv.org/abs/1706.08931> |
+| [ref-1028](ref-1028.md) | Open Robotics (open-rmf) | rmf_api_msgs — README | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <https://github.com/open-rmf/rmf_api_msgs> |
+| [ref-1029](ref-1029.md) | InOrbit | Contents — InOrbit Developer Portal | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://developer.inorbit.ai/docs> |
 | [ref-102](ref-102.md) | Springer(FAIM 2025 발표 논문, 저자 미확인) | Simulation-Driven Approach for Dimensioning AMR Fleets in Distribution Centre Logistics | 2025 | 논문 | medium | 2026-09-25 | <https://link.springer.com/chapter/10.1007/978-3-032-07675-5_69> |
+| [ref-1030](ref-1030.md) | Locus Robotics | Seamless Integrations with LocusOne Robotics | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://locusrobotics.com/locusone/automated-warehouse-software/integrations> |
+| [ref-1031](ref-1031.md) | Chen, K., Hari, K., Chung, T. 외 (IROS 2024, arXiv) | FogROS2-FT: Fault Tolerant Cloud Robotics | 2024-12 | 논문 | medium | 2026-09-30 | <https://arxiv.org/abs/2412.05408> |
 | [ref-103](ref-103.md) | PMC 게재 논문(저자 미확인) | The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments | 미확인 | 논문 | medium | 2026-09-25 | <https://pmc.ncbi.nlm.nih.gov/articles/PMC11946681/> |
 | [ref-104](ref-104.md) | Open Robotics (open-rmf) | rmf_demos — Demonstrations of Open-RMF (README) | 미확인 | 오픈소스 문서 | high | 2026-09-25 | <https://github.com/open-rmf/rmf_demos> |
 | [ref-105](ref-105.md) | Open Robotics (open-rmf) | fleet_adapter_template — fleet_adapter_template/config.yaml | 미확인 | 오픈소스 문서 | high | 2026-09-25 | <https://github.com/open-rmf/fleet_adapter_template/blob/main/fleet_adapter_template/config.yaml> |

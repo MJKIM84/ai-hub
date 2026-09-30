@@ -20,6 +20,29 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-05 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 섹션 3~11 신규 작성(seed → draft): 판단 배치 혼합 구조, 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건. 1차 조건부 승인 수정 17건과 2차 수정 5건(3절 일반화 2건 좁힘, 4절 도입 단락, [의견] 주체 표시, 약어 풀이) 이행 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s6.md](topics/2026/2026-09-30-area41-s6.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(3,254자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s4.md](topics/2026/2026-09-30-area41-s4.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "4. 핵심 개념과 용어" 절(1,132자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s7.md](topics/2026/2026-09-30-area41-s7.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(962자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s10.md](topics/2026/2026-09-30-area41-s10.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(879자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s3.md](topics/2026/2026-09-30-area41-s3.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "3. 왜 중요한가" 절(844자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s8.md](topics/2026/2026-09-30-area41-s8.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "8. 대표 연구와 자료" 절(832자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s11.md](topics/2026/2026-09-30-area41-s11.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "11. 열린 질문" 절(571자)을 옮겼다 |
+| 2026-09-30-05 | 요약 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 41. 플랫폼 아키텍처·외부 API: 섹션 3~11 신규 작성(로봇·현장 서버·클라우드 혼합 배치, REST·이벤트·웹훅·SDK 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건), 1차 조건부 승인 수정 17건·2차 수정 5건 이행 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1023.md](references/ref-1023.md) | 참고문헌 ref-1023 등록: 로보틱스 l NAVER Corp. |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1024.md](references/ref-1024.md) | 참고문헌 ref-1024 등록: AsyncAPI Specification 3.1.0 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1025.md](references/ref-1025.md) | 참고문헌 ref-1025 등록: OpenAPI Specification v3.1.0 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1026.md](references/ref-1026.md) | 참고문헌 ref-1026 등록: 카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1027.md](references/ref-1027.md) | 참고문헌 ref-1027 등록: Managing a Fleet of Autonomous Mobile Robots (AMR) using Clo… |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1028.md](references/ref-1028.md) | 참고문헌 ref-1028 등록: rmf_api_msgs — README |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1029.md](references/ref-1029.md) | 참고문헌 ref-1029 등록: Contents — InOrbit Developer Portal |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1030.md](references/ref-1030.md) | 참고문헌 ref-1030 등록: Seamless Integrations with LocusOne Robotics |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1031.md](references/ref-1031.md) | 참고문헌 ref-1031 등록: FogROS2-FT: Fault Tolerant Cloud Robotics |
+| 2026-09-30-05 | 생성 | [docs/glossary/openapi-specification.md](glossary/openapi-specification.md) | 용어집 항목 OpenAPI 명세 |
+| 2026-09-30-05 | 생성 | [docs/glossary/asyncapi-specification.md](glossary/asyncapi-specification.md) | 용어집 항목 AsyncAPI 명세 |
+| 2026-09-30-05 | 생성 | [docs/glossary/webhook.md](glossary/webhook.md) | 용어집 항목 웹훅 |
+| 2026-09-30-05 | 생성 | [docs/glossary/cloud-robotics.md](glossary/cloud-robotics.md) | 용어집 항목 클라우드 로보틱스 |
+| 2026-09-30-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-04 | 갱신 | [docs/categories/space-and-map-model/place-semantics-and-map-management.md](categories/space-and-map-model/place-semantics-and-map-management.md) | 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 장소 목록·지도 버전·구역 집합·차선 폐쇄, 책임 경계, 연결 14개 영역, 열린 질문 9건), 13절 각주, 프런트매터 갱신. 2차 수정: 8절 첫 문장을 이번 브리프 자료 범위로 한정하고 ref-1017 각주 정의 추가 |
 | 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s6.md](topics/2026/2026-09-30-area16-s6.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "6. 대표 접근법과 기술" 절(2,190자)을 옮겼다 |
 | 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s11.md](topics/2026/2026-09-30-area16-s11.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "11. 열린 질문" 절(1,766자)을 옮겼다 |

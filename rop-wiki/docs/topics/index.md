@@ -33,6 +33,13 @@ version: 1
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 접근법과 기술](2026/2026-09-30-area16-s6.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area16-s7.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 연구와 자료](2026/2026-09-30-area16-s8.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결](2026/2026-09-30-area41-s10.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 열린 질문](2026/2026-09-30-area41-s11.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 왜 중요한가](2026/2026-09-30-area41-s3.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 핵심 개념과 용어](2026/2026-09-30-area41-s4.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](2026/2026-09-30-area41-s6.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area41-s7.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 대표 연구와 자료](2026/2026-09-30-area41-s8.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

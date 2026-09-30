@@ -292,6 +292,13 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 41. 플랫폼 아키텍처·외부 API — 대표 연구와 자료: topics/2026/2026-09-30-area41-s8.md
+      - 41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area41-s7.md
+      - 41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술: topics/2026/2026-09-30-area41-s6.md
+      - 41. 플랫폼 아키텍처·외부 API — 핵심 개념과 용어: topics/2026/2026-09-30-area41-s4.md
+      - 41. 플랫폼 아키텍처·외부 API — 왜 중요한가: topics/2026/2026-09-30-area41-s3.md
+      - 41. 플랫폼 아키텍처·외부 API — 열린 질문: topics/2026/2026-09-30-area41-s11.md
+      - 41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결: topics/2026/2026-09-30-area41-s10.md
       - 16. 장소 의미·지도 관리 — 대표 연구와 자료: topics/2026/2026-09-30-area16-s8.md
       - 16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area16-s7.md
       - 16. 장소 의미·지도 관리 — 대표 접근법과 기술: topics/2026/2026-09-30-area16-s6.md
@@ -561,6 +568,7 @@ nav:
     - AGV 기술 데이터 서브모델 (Technical Data for AGV in Intralogistics (IDTA 02047)): glossary/agv-technical-data-submodel.md
     - AI 관리 시스템 (Artificial Intelligence Management System (AIMS)): glossary/artificial-intelligence-management-system.md
     - AMR 협업 피킹 (AMR-assisted Order Picking): glossary/amr-assisted-order-picking.md
+    - AsyncAPI 명세 (AsyncAPI Specification): glossary/asyncapi-specification.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
@@ -571,6 +579,7 @@ nav:
     - JSON 스키마 (JSON Schema): glossary/json-schema.md
     - LLM 에이전트 (LLM Agent): glossary/llm-agent.md
     - LLM-모듈로 프레임워크 (LLM-Modulo Framework): glossary/llm-modulo-framework.md
+    - OpenAPI 명세 (OpenAPI Specification (OAS)): glossary/openapi-specification.md
     - SiLA 2 (Standardization in Lab Automation 2 (SiLA 2)): glossary/sila-2.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
@@ -745,6 +754,7 @@ nav:
     - 원격 조작 (Teleoperation): glossary/teleoperation.md
     - 원격 조작형 소형차 (Remote-controlled Small Vehicle (遠隔操作型小型車)): glossary/remote-controlled-small-vehicle.md
     - 웨이브리스 출고 지시 (Waveless Order Release): glossary/waveless-order-release.md
+    - 웹훅 (Webhook): glossary/webhook.md
     - 위상 지도 (Topological Map): glossary/topological-map.md
     - 위치 체크 디지트 (Location Check Digit): glossary/location-check-digit.md
     - 위험성평가 (Risk Assessment (ISO 12100)): glossary/risk-assessment.md
@@ -794,6 +804,7 @@ nav:
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
     - 층 정렬 기준점 (Fiducial (Level Alignment Fiducial)): glossary/level-alignment-fiducial.md
     - 침범 후 시간 (Post-Encroachment Time (PET)): glossary/post-encroachment-time.md
+    - 클라우드 로보틱스 (Cloud Robotics): glossary/cloud-robotics.md
     - 클릭 수 지표 (Number of Clicks (NoC)): glossary/number-of-clicks.md
     - 키 입력 수준 모델 (Keystroke-Level Model (KLM)): glossary/keystroke-level-model.md
     - 탈옥 (Jailbreak): glossary/jailbreak.md
@@ -967,7 +978,16 @@ nav:
     - ref-1020 — 실내공간정보: references/ref-1020.md
     - ref-1021 — Lifelong update of semantic maps in dynamic environments: references/ref-1021.md
     - ref-1022 — Safe and Robust Map Updating for Long-Term Operations in Dynamic Environments: references/ref-1022.md
+    - ref-1023 — 로보틱스 l NAVER Corp.: references/ref-1023.md
+    - ref-1024 — AsyncAPI Specification 3.1.0: references/ref-1024.md
+    - ref-1025 — OpenAPI Specification v3.1.0: references/ref-1025.md
+    - ref-1026 — 카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다: references/ref-1026.md
+    - ref-1027 — Managing a Fleet of Autonomous Mobile Robots (AMR) using Cloud Robotics Platform: references/ref-1027.md
+    - ref-1028 — rmf_api_msgs — README: references/ref-1028.md
+    - ref-1029 — Contents — InOrbit Developer Portal: references/ref-1029.md
     - ref-103 — The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments: references/ref-103.md
+    - ref-1030 — Seamless Integrations with LocusOne Robotics: references/ref-1030.md
+    - 'ref-1031 — FogROS2-FT: Fault Tolerant Cloud Robotics': references/ref-1031.md
     - ref-104 — rmf_demos — Demonstrations of Open-RMF (README): references/ref-104.md
     - ref-105 — fleet_adapter_template — fleet_adapter_template/config.yaml: references/ref-105.md
     - ref-106 — 인증스마트물류센터: references/ref-106.md

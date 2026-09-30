@@ -32,7 +32,7 @@ version: 1
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 2 | 0 | 0 | 6 | 0 | 0 | 8 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 1 | 0 | 0 | 14 | 0 | 0 | 15 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 3 | 0 | 0 | 6 | 0 | 0 | 9 |
 | [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
@@ -136,7 +136,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | seed | — | 2026-09-28 | 1 |
+| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-09-30 | 2 |
 | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
 | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | seed | — | 2026-09-28 | 1 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 109회 중 최종 통과 107회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 107, None 2
-- 2차 검증 판정: 통과 107, None 2
+- 실행 110회 중 최종 통과 108회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 108, None 2
+- 2차 검증 판정: 통과 108, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 447 |
-| 오픈소스 문서 | 194 |
-| 표준 | 162 |
+| 논문 | 449 |
+| 오픈소스 문서 | 195 |
+| 표준 | 164 |
+| 기사 | 76 |
 | 정부·연구기관 | 76 |
-| 기사 | 75 |
-| 벤더 문서 | 53 |
+| 벤더 문서 | 56 |
 | 업계 보고서 | 15 |
 
-신뢰도: medium 770건, high 176건, low 76건
+신뢰도: medium 775건, high 179건, low 77건
 
 ### 현장 유형 매트릭스 채움률
 
-- 34/119 칸 (29%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 37/119 칸 (31%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

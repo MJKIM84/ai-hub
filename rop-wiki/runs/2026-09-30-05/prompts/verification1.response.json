@@ -1,0 +1,389 @@
+{
+  "duration_api_ms": 301542,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.9901364000000004,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 128821,
+    "cache_read_input_tokens": 1119137,
+    "output_tokens": 25141,
+    "output_tokens_details": {
+      "thinking_tokens": 12510
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 128821,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 14384,
+        "cache_read_input_tokens": 216900,
+        "cache_creation_input_tokens": 387,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 387
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 193788,
+      "outputTokens": 5817,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.23287299999999997,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 25141,
+      "cacheReadInputTokens": 1119137,
+      "cacheCreationInputTokens": 128821,
+      "webSearchRequests": 0,
+      "costUSD": 1.7572633999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12510,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 24,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-05\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. raw README 재열람: API 엔드포인트·웹 대시보드 사용, /docs 경로와 공개 문서 사이트(open-rmf.github.io/rmf-web/docs/api-server)의 API 정의, TortoiseORM 기반 PostgreSQL·SQLite·MySQL·MariaDB, 기본 메모리 SQLite, Aerich 마이그레이션은 확인. 그러나 README 에 'REST'·'OpenAPI' 라는 말이 없고 evidence_excerpt('REST 엔드포인트와 OpenAPI 문서')가 원문과 다르다. 발행일 미확인.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(ref-1023 raw README). OpenID Connect, 독립 검증 가능한 JWT 전제, preferred_username 클레임, 첫 로그인 시 권한 없는 사용자 자동 생성, 관리자는 모든 그룹에 모든 동작 가능. 다만 README 는 권한을 '역할·동작·권한 그룹' 세 값으로 정한다고 적으므로 '사용자–역할–권한 그룹 3단 구조' 표현은 고친다(required_fixes). 인용 1회.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. README 는 'C++·python 구성 요소와 웹 인터페이스를 잇는 json 메시지 스키마 모음'과 datamodel-code-generator 모델 생성을 적고 스키마 이름은 task_state 만 든다. 작업 요청(task_request·robot_task_request)과 플릿 상태(fleet_state.json, raw 열람으로 존재 확인) 스키마는 저장소 schemas 폴더 기준이다. 발행일 미확인.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(입력 원문 data/source_texts/ref-004.txt). 살아 있는 교통 일정 DB, 모든 플릿 관리자의 예상 경로 보고, 충돌 통지 후 협상과 제3자 판정, 4개 제어 수준, 재사용 C++ API(파이썬 바인딩)는 Full Control 용이며 Read Only 는 예비 ROS 2 메시지 API, Traffic Light 는 재사용 API 없음. 책 장의 발행일 미확인이며 현재 Open-RMF 구현과 다를 수 있다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(입력 원문 ref-031, 3.0.0). MQTT 3.1.1 최소, JSON, 주제 이름 8종. 단, interfaceName/majorVersion/… 주제 계층은 '로컬 브로커용 제안'이며 클라우드 브로커에서는 조정될 수 있다고 명세가 적으므로 '정하며'를 고친다. visualization·zoneSet·responses 는 선택 주제. 명세 발행일 미확인(3.0.0 판 기준).\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(입력 원문 ref-031 2장 Scope). 주변 설비·기반 시설 구성 요소·외부 IT 시스템 인터페이스 제외 문구 일치. 인용 1회.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(spec.openapis.org, 2021-02-15). 정의 문구와 webhooks 필드('API 일부로 받을 수 있는 수신 웹훅') 확인. '3.1.0 에서 새로 들어갔다'는 열람한 명세 본문에서 확인하지 못해 삭제 지시.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(asyncapi.com 3.1.0). 프로토콜 중립, 채널·동작(send/receive)·메시지·서버·바인딩, Apache 2.0, OpenAPI Initiative 작업 차용 문구 확인. 발행일 미확인.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv 초록). v1 2022-05-19, v2 2022-11-27, v3 2023-04-24. 수치(SLAM 50%, 파지 14→1.2초, 모션 계획 45배, 영상 전송 97%)는 v3 초록 기준 저자 보고이며 단일 출처. evidence_excerpt 의 'v2, 2023-04'는 v3 이므로 기준판 표기를 고친다. ICRA 판 28배 표기와의 차이는 미확인.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv 2412.05408, 2024-12-06 제출, IROS 2024). 복제·라우팅·첫 응답 방식, 모션 계획 P99 5.53배·비용 2.2배, 객체 검출 2.0배, 의미 분할 2.1배, 스팟 인스턴스 확인. 수치는 저자 보고.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"교차 확인(ref-1032 초록 + ref-1031 초록·HTML 본문, 발행 주체 다름). 두 연구 모두 중앙 계산 자원이 플릿 조율·전역 계획을 맡는다. 로봇 쪽 역할은 연구마다 다르다: Singhal 외는 로봇이 이동·장애물 회피를 자율로 하고, Brorsson 외 본문은 현장 클라우드가 작업 일정과 궤적까지 계산하고 로봇은 궤적 추종과 필요 시 온보드 자율을 맡는다. '국지 주행 같은' 표현은 좁혀 쓰게 지시.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(arXiv 2512.15215, 2025-12-17 제출). 초록은 기반 시설 감지·현장 클라우드·온보드 자율의 기준 아키텍처, 대형 상용차 제조 현장 실배치, 사용자 경험 평가를 적고 HTML 본문이 RAIL 이라는 이름을 쓴다. 현장 클라우드를 '지연·연결 문제를 다루는' 층이라 한 수식어는 초록·본문에서 확인되지 않아(본문은 연결 장애 대비를 온보드 자율 쪽에 둔다) 삭제 지시.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(CGH CHART 페이지). OMG DDS, 기계·제어·중앙·통합 네 영역, 2018-07 국가 보건 IT 서밋 발표, 2019-10-31 ROSCon 2019 출범 확인. 발행일 미확인. 특정 병원의 배치 결과가 아니라 공공 의료기관용 미들웨어 구조임에 유의.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(네이버 로보틱스 페이지). ARC brain·eye·mind 역할과 '100여 대의 로봇이 클라우드로 제어' 문구 확인. 벤더 주장 [추정] 유지. 기사 문구(40여 대)와의 차이는 기사 원문 미열람으로 미확인.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(MiR 제품 페이지). Windows Server·가상화·클라우드, ERP/MES/WMS 용 REST API, 이벤트 기반 구조, IEC 62443-4-2(SL-C 3) 정합, SSO·감사 기록·세분 권한 확인. 같은 페이지 안에서 '최대 100대'와 '100대 넘는 배치' 표현이 엇갈린다. 벤더 주장 [추정] 유지.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(InOrbit 개발자 문서). REST·스트리밍 API, 사고 알림 웹훅과 수신 API, 서비스 사용자·역할 기반 API 키, Robot SDK(C++·Python), 로봇별 에이전트 없는 Edge SDK, 임베드, Slack·PagerDuty 등 연동 확인. 벤더 주장 [추정] 유지.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(Locus 통합 페이지). WMS 와 API 연결, 주문 수신·피킹 효율 최적화, 기존망과 분리된 전용 WiFi 설치·유지 확인. 배치 위치(클라우드/현장) 언급 없음. 벤더 주장 [추정] 유지.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(같은 Locus 페이지). 확인을 WMS 로 실시간 회신, UPH·LPH·로봇·작업자 생산성 데이터 제공 확인. 벤더 주장 [추정] 유지.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(뉴스핌 기사). 태스크 추상화, 통합 제어 인터페이스(표준 API), 재할당, 통합 연동 백본(건물·ERP·물류 자동화), 청소·안내·물류로 확장 확인. 기사 페이지 표기 발행일은 2026-05-13 이며 제목 전체는 \\\"카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다\\\"이다(발행일·제목 정정 지시). 벤더 주장(기사 전언) [추정] 유지.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인(로봇신문, 2025-11-09 입력, 이정환 기자). '50대 이상 로봇을 동시 제어', 엘리베이터 탑승 기능, '국내 첫 이기종 로봇 통합관제 솔루션' 확인. 기사는 '50대 이상'과 '이기종'을 따로 적으므로 '서로 다른 제조사 로봇 50대 이상'으로 합친 표현은 고친다. 제목 전체·발행일 정정 지시. 벤더 주장(기사 전언) [추정] 유지.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"종합 [추정] 유지. 근거 finding 은 대부분 확인됐으나 f1 이 강등됐으므로 'REST(OpenAPI 로 기술)' 근거에서 f1 을 빼고 f7·f15·f16 으로 한정한다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"종합 [추정] 유지. 근거 f6·f10·f15·f17 모두 확인. f15·f17 은 벤더 주장이므로 '제조사 관제마다 자체 REST API 를 낸다'는 벤더 자료 기준임을 밝힌다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"종합 [추정] 유지. 원문 19장의 '인터페이스와 실행 보장' 방향과 맞다. 근거 finding 확인.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"종합 [추정] 유지. 다만 42. 분산 시스템·통신·컴퓨팅 구조는 외부 연계 대상이 아니라 ROP 의 다른 세부영역이므로, 클라우드 제공자 인프라(외부 연계)와 현장 네트워크 설계(42번 영역에서 다룸)를 나눠 쓰게 지시.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"종합 [추정] 유지. 연결 대상 영역 번호·이름이 부록 A 와 일치. f1 을 43. 데이터·관측성·배포 근거로 쓸 때 강등된 f1 의 README 확인 범위(DB 설정)만 쓴다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"참고문헌 id 충돌: 이번 브리프의 ref-1024(FogROS2)·ref-1026(RoMi-H)·ref-1027(AsyncAPI)·ref-1028(OpenAPI)·ref-1031(Brorsson 외)·ref-1032(Singhal 외)·ref-1033(rmf_api_msgs)·ref-1035(MiR)·ref-1036(Locus)·ref-1037(FogROS2-FT)가 같은 날 이전 브리프 2026-09-30-03·2026-09-30-04 에서 다른 출처(엔지니어링데일리, IMDF Unit·Glossary, OGC IMDF, osmAG, osmAG-LLM, IEEE 1873, 국토지리정보원, Narayana 외, Stefanini 외)에 이미 쓰였다. URL 이 달라 퍼블리셔의 같은 URL 병합으로 풀리지 않으므로 게시 전 id 재배정 확인이 필요하다(스토리텔러가 고칠 사항은 아님)\",\"42. 분산 시스템·통신·컴퓨팅 구조 페이지(게시됨, 옛 11번 영역 '클라우드·현장 서버·로봇의 역할 분담' 본문 포함)와 f9·f10·f11·f12 의 역할 분담·장애 대응 내용이 겹칠 수 있다. 입력은 요약본뿐이라 기존 각주와의 중복은 확인하지 못했다\",\"f4(Open-RMF 교통 일정·플릿 어댑터 제어 수준)는 용어집 '플릿 어댑터'·'플릿 제어 수준'·'오픈 RMF' 정의와 같은 내용이며 ref-004 는 기존 각주를 재사용한다\",\"f14(네이버 1784 사옥)는 2026-09-30-04 브리프 f18(ref-956, 로봇 친화형 건축물 인증)과 같은 건물을 다른 측면으로 다룬다. 충돌은 없다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f1: [사실] → [추정]으로 강등하고, 'REST'·'OpenAPI 형식' 표현을 빼고 README 가 적은 범위(웹 대시보드가 쓰는 API 엔드포인트, /docs 경로와 공개 문서 사이트의 API 정의, TortoiseORM 기반 PostgreSQL·SQLite·MySQL·MariaDB 와 기본 메모리 SQLite)로만 쓴다 — ref-1023 README 에 REST·OpenAPI 라는 말이 없고 브리프 발췌가 원문과 다르다.\",\"f2: '사용자–역할–권한 그룹의 3단 구조' 를 '역할·동작·권한 그룹 세 값으로 권한을 정하는 구조' 로 고친다 — ref-1023 README 의 표현이다.\",\"f3: 작업 요청·플릿 상태 스키마를 쓸 때 README 가 이름으로 드는 것은 작업 상태(task_state)뿐이고 나머지는 저장소 스키마 파일 기준임을 본문 서술로 밝힌다.\",\"f5: 주제 계층 interfaceName/majorVersion/manufacturer/serialNumber/topic 을 '정한다'가 아니라 '로컬 브로커용으로 제안하며 클라우드 브로커에서는 조정될 수 있고, 주제 이름은 필수다'로 고치고, visualization·zoneSet·responses 는 선택 주제임을 쓰며 기준 판(3.0.0)을 밝힌다 — ref-031 4.2·4.3절.\",\"f7: '3.1.0 에서 webhooks 필드가 새로 들어갔다'를 '3.1.0 에는 API 가 받을 수 있는 수신 웹훅을 기술하는 webhooks 필드가 있다'로 고친다 — 열람한 명세 본문에 도입 판 언급이 없다. 용어집 후보 'OpenAPI 명세' 정의의 '3.1.0 부터'도 같은 이유로 '3.1.0 은'으로 고친다.\",\"f9: 기준판 표기를 'arXiv v3(2023-04-24) 초록 기준, 저자 보고'로 쓰고, 모션 계획 가속 배수는 판에 따라 다를 수 있다(미확인)고 병기한다 — 브리프 발췌의 'v2, 2023-04'는 v3 이다.\",\"f11: 로봇 쪽 역할을 '국지 주행 같은 온보드 자율 기능' 대신 '온보드 실행·자율 기능(범위는 연구마다 다름)'으로 좁혀 쓴다 — ref-1031 본문은 현장 클라우드가 궤적까지 계산하고 로봇은 추종과 필요 시 온보드 자율을 맡는다고 적어 ref-1032 와 로봇 쪽 범위가 다르다.\",\"f12: 현장 클라우드 앞의 수식어 '지연·연결 문제를 다루는'을 삭제한다 — ref-1031 초록·본문에서 확인되지 않는다.\",\"f19·ref-1029: 발행일을 기사 페이지 표기인 2026-05-13 으로, 제목을 \\\"카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다\\\"로 고치고 '(제목 일부만 확인)'을 뗀다. f19 의 기준일도 같게 쓴다.\",\"f20·ref-1030: 제목을 \\\"[기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 '피지컬 AI' 시대의 서막\\\"으로, 발행일·기준일을 2025-11-09 로 고치고, '서로 다른 제조사 로봇 50대 이상'을 '50대 이상 로봇 동시 제어'와 '국내 첫 이기종 로봇 통합관제 솔루션이라는 주장'으로 나눠 쓴다 — 기사 원문이 두 내용을 따로 적는다.\",\"f15: 지원 대수를 본문에 쓰면 같은 페이지의 '최대 100대'와 '100대 넘는 배치' 두 표현을 모두 [추정] 벤더 주장으로 제시하고 한쪽을 고르지 않는다.\",\"f21: 'REST(OpenAPI 로 기술)' 부분의 근거에서 f1 을 빼고 f7·f15·f16 으로 한정한다 — f1 이 강등됐다.\",\"f24: 42. 분산 시스템·통신·컴퓨팅 구조를 외부 연계 대상으로 쓰지 않는다. 클라우드 제공자 인프라는 외부 연계 대상, 현장 네트워크 설계는 42. 분산 시스템·통신·컴퓨팅 구조 영역에서 다룬다고 나눠 쓴다 — 42번은 ROP 의 세부영역이다.\",\"5·6·9절 f14: 네이버 ARC 사례는 [추정] 벤더 주장으로 쓰고, 위치 추정·이동 계획을 클라우드에 두는 것은 원문 19장의 로봇 자체 지능 경계를 제품 전략으로 옮긴 사례로만 서술한다(ROP 직접 범위로 쓰지 않는다).\",\"5절: 병원 사례(f13)는 특정 병원의 배치 결과가 아니라 공공 의료기관용 미들웨어 구조임을 밝히고, 사례마다 여섯 항목 가운데 근거가 없는 칸은 채우지 않고 '미확인'으로 둔다.\",\"11절 열린 질문 1: '클라우드나 5G 연결' 에서 '5G'를 뺀다 — 근거 f14 에 5G 언급이 없다(5G 는 브리프가 원문 미열람으로 제외했다).\",\"13절: ref-004·ref-031 은 기존 참고문헌 페이지(docs/references/ref-004.md, ref-031.md)의 '각주 형식' 줄을 그대로 쓰고 새 각주를 만들지 않는다.\"],\"confidence\":\"low\",\"verification_note\":\"판정: 1차 조건부 승인. 확인 24건, 미확인 1건, 교차 확인 1건(f11). 강등: f1 사실 → 추정(README 에 REST·OpenAPI 표현 없음). 원문 미열람 출처: 없음(17건 모두 열람·대조; ref-004·ref-031 은 입력 원문 텍스트, 논문은 arXiv 초록 기준이고 ref-1031 은 HTML 본문도 확인). 주의: 사실 finding 은 f11 을 빼면 모두 단일 출처이고, 핵심 결론(판단 배치의 혼합 구조, 외부 API 조합, 직접 범위)은 종합 [추정]이며, 제품·국내 사례(f14~f20)는 벤더 주장 또는 기사 전언이다. FogROS2·FogROS2-FT 수치는 저자 보고다. 상업 시설·가정·실외 사례와 국내 표준은 찾지 못했다. 이번 브리프의 신규 참고문헌 id 10건이 같은 날 이전 브리프(2026-09-30-03·04)의 다른 출처 id 와 겹치므로 게시 전 id 재배정 확인이 필요하다. 검증 검색 1회(누적 18/30), 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-05",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. raw README 재열람: API 엔드포인트·웹 대시보드 사용, /docs 경로와 공개 문서 사이트(open-rmf.github.io/rmf-web/docs/api-server)의 API 정의, TortoiseORM 기반 PostgreSQL·SQLite·MySQL·MariaDB, 기본 메모리 SQLite, Aerich 마이그레이션은 확인. 그러나 README 에 'REST'·'OpenAPI' 라는 말이 없고 evidence_excerpt('REST 엔드포인트와 OpenAPI 문서')가 원문과 다르다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(ref-1023 raw README). OpenID Connect, 독립 검증 가능한 JWT 전제, preferred_username 클레임, 첫 로그인 시 권한 없는 사용자 자동 생성, 관리자는 모든 그룹에 모든 동작 가능. 다만 README 는 권한을 '역할·동작·권한 그룹' 세 값으로 정한다고 적으므로 '사용자–역할–권한 그룹 3단 구조' 표현은 고친다(required_fixes). 인용 1회."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. README 는 'C++·python 구성 요소와 웹 인터페이스를 잇는 json 메시지 스키마 모음'과 datamodel-code-generator 모델 생성을 적고 스키마 이름은 task_state 만 든다. 작업 요청(task_request·robot_task_request)과 플릿 상태(fleet_state.json, raw 열람으로 존재 확인) 스키마는 저장소 schemas 폴더 기준이다. 발행일 미확인."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(입력 원문 data/source_texts/ref-004.txt). 살아 있는 교통 일정 DB, 모든 플릿 관리자의 예상 경로 보고, 충돌 통지 후 협상과 제3자 판정, 4개 제어 수준, 재사용 C++ API(파이썬 바인딩)는 Full Control 용이며 Read Only 는 예비 ROS 2 메시지 API, Traffic Light 는 재사용 API 없음. 책 장의 발행일 미확인이며 현재 Open-RMF 구현과 다를 수 있다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(입력 원문 ref-031, 3.0.0). MQTT 3.1.1 최소, JSON, 주제 이름 8종. 단, interfaceName/majorVersion/… 주제 계층은 '로컬 브로커용 제안'이며 클라우드 브로커에서는 조정될 수 있다고 명세가 적으므로 '정하며'를 고친다. visualization·zoneSet·responses 는 선택 주제. 명세 발행일 미확인(3.0.0 판 기준)."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(입력 원문 ref-031 2장 Scope). 주변 설비·기반 시설 구성 요소·외부 IT 시스템 인터페이스 제외 문구 일치. 인용 1회."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(spec.openapis.org, 2021-02-15). 정의 문구와 webhooks 필드('API 일부로 받을 수 있는 수신 웹훅') 확인. '3.1.0 에서 새로 들어갔다'는 열람한 명세 본문에서 확인하지 못해 삭제 지시."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(asyncapi.com 3.1.0). 프로토콜 중립, 채널·동작(send/receive)·메시지·서버·바인딩, Apache 2.0, OpenAPI Initiative 작업 차용 문구 확인. 발행일 미확인."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv 초록). v1 2022-05-19, v2 2022-11-27, v3 2023-04-24. 수치(SLAM 50%, 파지 14→1.2초, 모션 계획 45배, 영상 전송 97%)는 v3 초록 기준 저자 보고이며 단일 출처. evidence_excerpt 의 'v2, 2023-04'는 v3 이므로 기준판 표기를 고친다. ICRA 판 28배 표기와의 차이는 미확인."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv 2412.05408, 2024-12-06 제출, IROS 2024). 복제·라우팅·첫 응답 방식, 모션 계획 P99 5.53배·비용 2.2배, 객체 검출 2.0배, 의미 분할 2.1배, 스팟 인스턴스 확인. 수치는 저자 보고."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "교차 확인(ref-1032 초록 + ref-1031 초록·HTML 본문, 발행 주체 다름). 두 연구 모두 중앙 계산 자원이 플릿 조율·전역 계획을 맡는다. 로봇 쪽 역할은 연구마다 다르다: Singhal 외는 로봇이 이동·장애물 회피를 자율로 하고, Brorsson 외 본문은 현장 클라우드가 작업 일정과 궤적까지 계산하고 로봇은 궤적 추종과 필요 시 온보드 자율을 맡는다. '국지 주행 같은' 표현은 좁혀 쓰게 지시."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(arXiv 2512.15215, 2025-12-17 제출). 초록은 기반 시설 감지·현장 클라우드·온보드 자율의 기준 아키텍처, 대형 상용차 제조 현장 실배치, 사용자 경험 평가를 적고 HTML 본문이 RAIL 이라는 이름을 쓴다. 현장 클라우드를 '지연·연결 문제를 다루는' 층이라 한 수식어는 초록·본문에서 확인되지 않아(본문은 연결 장애 대비를 온보드 자율 쪽에 둔다) 삭제 지시."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(CGH CHART 페이지). OMG DDS, 기계·제어·중앙·통합 네 영역, 2018-07 국가 보건 IT 서밋 발표, 2019-10-31 ROSCon 2019 출범 확인. 발행일 미확인. 특정 병원의 배치 결과가 아니라 공공 의료기관용 미들웨어 구조임에 유의."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(네이버 로보틱스 페이지). ARC brain·eye·mind 역할과 '100여 대의 로봇이 클라우드로 제어' 문구 확인. 벤더 주장 [추정] 유지. 기사 문구(40여 대)와의 차이는 기사 원문 미열람으로 미확인."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(MiR 제품 페이지). Windows Server·가상화·클라우드, ERP/MES/WMS 용 REST API, 이벤트 기반 구조, IEC 62443-4-2(SL-C 3) 정합, SSO·감사 기록·세분 권한 확인. 같은 페이지 안에서 '최대 100대'와 '100대 넘는 배치' 표현이 엇갈린다. 벤더 주장 [추정] 유지."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(InOrbit 개발자 문서). REST·스트리밍 API, 사고 알림 웹훅과 수신 API, 서비스 사용자·역할 기반 API 키, Robot SDK(C++·Python), 로봇별 에이전트 없는 Edge SDK, 임베드, Slack·PagerDuty 등 연동 확인. 벤더 주장 [추정] 유지."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(Locus 통합 페이지). WMS 와 API 연결, 주문 수신·피킹 효율 최적화, 기존망과 분리된 전용 WiFi 설치·유지 확인. 배치 위치(클라우드/현장) 언급 없음. 벤더 주장 [추정] 유지."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(같은 Locus 페이지). 확인을 WMS 로 실시간 회신, UPH·LPH·로봇·작업자 생산성 데이터 제공 확인. 벤더 주장 [추정] 유지."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(뉴스핌 기사). 태스크 추상화, 통합 제어 인터페이스(표준 API), 재할당, 통합 연동 백본(건물·ERP·물류 자동화), 청소·안내·물류로 확장 확인. 기사 페이지 표기 발행일은 2026-05-13 이며 제목 전체는 \"카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다\"이다(발행일·제목 정정 지시). 벤더 주장(기사 전언) [추정] 유지."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인(로봇신문, 2025-11-09 입력, 이정환 기자). '50대 이상 로봇을 동시 제어', 엘리베이터 탑승 기능, '국내 첫 이기종 로봇 통합관제 솔루션' 확인. 기사는 '50대 이상'과 '이기종'을 따로 적으므로 '서로 다른 제조사 로봇 50대 이상'으로 합친 표현은 고친다. 제목 전체·발행일 정정 지시. 벤더 주장(기사 전언) [추정] 유지."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "종합 [추정] 유지. 근거 finding 은 대부분 확인됐으나 f1 이 강등됐으므로 'REST(OpenAPI 로 기술)' 근거에서 f1 을 빼고 f7·f15·f16 으로 한정한다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "종합 [추정] 유지. 근거 f6·f10·f15·f17 모두 확인. f15·f17 은 벤더 주장이므로 '제조사 관제마다 자체 REST API 를 낸다'는 벤더 자료 기준임을 밝힌다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "종합 [추정] 유지. 원문 19장의 '인터페이스와 실행 보장' 방향과 맞다. 근거 finding 확인."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "종합 [추정] 유지. 다만 42. 분산 시스템·통신·컴퓨팅 구조는 외부 연계 대상이 아니라 ROP 의 다른 세부영역이므로, 클라우드 제공자 인프라(외부 연계)와 현장 네트워크 설계(42번 영역에서 다룸)를 나눠 쓰게 지시."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "종합 [추정] 유지. 연결 대상 영역 번호·이름이 부록 A 와 일치. f1 을 43. 데이터·관측성·배포 근거로 쓸 때 강등된 f1 의 README 확인 범위(DB 설정)만 쓴다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "참고문헌 id 충돌: 이번 브리프의 ref-1024(FogROS2)·ref-1026(RoMi-H)·ref-1027(AsyncAPI)·ref-1028(OpenAPI)·ref-1031(Brorsson 외)·ref-1032(Singhal 외)·ref-1033(rmf_api_msgs)·ref-1035(MiR)·ref-1036(Locus)·ref-1037(FogROS2-FT)가 같은 날 이전 브리프 2026-09-30-03·2026-09-30-04 에서 다른 출처(엔지니어링데일리, IMDF Unit·Glossary, OGC IMDF, osmAG, osmAG-LLM, IEEE 1873, 국토지리정보원, Narayana 외, Stefanini 외)에 이미 쓰였다. URL 이 달라 퍼블리셔의 같은 URL 병합으로 풀리지 않으므로 게시 전 id 재배정 확인이 필요하다(스토리텔러가 고칠 사항은 아님)",
+        "42. 분산 시스템·통신·컴퓨팅 구조 페이지(게시됨, 옛 11번 영역 '클라우드·현장 서버·로봇의 역할 분담' 본문 포함)와 f9·f10·f11·f12 의 역할 분담·장애 대응 내용이 겹칠 수 있다. 입력은 요약본뿐이라 기존 각주와의 중복은 확인하지 못했다",
+        "f4(Open-RMF 교통 일정·플릿 어댑터 제어 수준)는 용어집 '플릿 어댑터'·'플릿 제어 수준'·'오픈 RMF' 정의와 같은 내용이며 ref-004 는 기존 각주를 재사용한다",
+        "f14(네이버 1784 사옥)는 2026-09-30-04 브리프 f18(ref-956, 로봇 친화형 건축물 인증)과 같은 건물을 다른 측면으로 다룬다. 충돌은 없다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f1: [사실] → [추정]으로 강등하고, 'REST'·'OpenAPI 형식' 표현을 빼고 README 가 적은 범위(웹 대시보드가 쓰는 API 엔드포인트, /docs 경로와 공개 문서 사이트의 API 정의, TortoiseORM 기반 PostgreSQL·SQLite·MySQL·MariaDB 와 기본 메모리 SQLite)로만 쓴다 — ref-1023 README 에 REST·OpenAPI 라는 말이 없고 브리프 발췌가 원문과 다르다.",
+      "f2: '사용자–역할–권한 그룹의 3단 구조' 를 '역할·동작·권한 그룹 세 값으로 권한을 정하는 구조' 로 고친다 — ref-1023 README 의 표현이다.",
+      "f3: 작업 요청·플릿 상태 스키마를 쓸 때 README 가 이름으로 드는 것은 작업 상태(task_state)뿐이고 나머지는 저장소 스키마 파일 기준임을 본문 서술로 밝힌다.",
+      "f5: 주제 계층 interfaceName/majorVersion/manufacturer/serialNumber/topic 을 '정한다'가 아니라 '로컬 브로커용으로 제안하며 클라우드 브로커에서는 조정될 수 있고, 주제 이름은 필수다'로 고치고, visualization·zoneSet·responses 는 선택 주제임을 쓰며 기준 판(3.0.0)을 밝힌다 — ref-031 4.2·4.3절.",
+      "f7: '3.1.0 에서 webhooks 필드가 새로 들어갔다'를 '3.1.0 에는 API 가 받을 수 있는 수신 웹훅을 기술하는 webhooks 필드가 있다'로 고친다 — 열람한 명세 본문에 도입 판 언급이 없다. 용어집 후보 'OpenAPI 명세' 정의의 '3.1.0 부터'도 같은 이유로 '3.1.0 은'으로 고친다.",
+      "f9: 기준판 표기를 'arXiv v3(2023-04-24) 초록 기준, 저자 보고'로 쓰고, 모션 계획 가속 배수는 판에 따라 다를 수 있다(미확인)고 병기한다 — 브리프 발췌의 'v2, 2023-04'는 v3 이다.",
+      "f11: 로봇 쪽 역할을 '국지 주행 같은 온보드 자율 기능' 대신 '온보드 실행·자율 기능(범위는 연구마다 다름)'으로 좁혀 쓴다 — ref-1031 본문은 현장 클라우드가 궤적까지 계산하고 로봇은 추종과 필요 시 온보드 자율을 맡는다고 적어 ref-1032 와 로봇 쪽 범위가 다르다.",
+      "f12: 현장 클라우드 앞의 수식어 '지연·연결 문제를 다루는'을 삭제한다 — ref-1031 초록·본문에서 확인되지 않는다.",
+      "f19·ref-1029: 발행일을 기사 페이지 표기인 2026-05-13 으로, 제목을 \"카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다\"로 고치고 '(제목 일부만 확인)'을 뗀다. f19 의 기준일도 같게 쓴다.",
+      "f20·ref-1030: 제목을 \"[기업 최전선을 가다-클로봇] 로봇 소프트웨어로 쓰는 '피지컬 AI' 시대의 서막\"으로, 발행일·기준일을 2025-11-09 로 고치고, '서로 다른 제조사 로봇 50대 이상'을 '50대 이상 로봇 동시 제어'와 '국내 첫 이기종 로봇 통합관제 솔루션이라는 주장'으로 나눠 쓴다 — 기사 원문이 두 내용을 따로 적는다.",
+      "f15: 지원 대수를 본문에 쓰면 같은 페이지의 '최대 100대'와 '100대 넘는 배치' 두 표현을 모두 [추정] 벤더 주장으로 제시하고 한쪽을 고르지 않는다.",
+      "f21: 'REST(OpenAPI 로 기술)' 부분의 근거에서 f1 을 빼고 f7·f15·f16 으로 한정한다 — f1 이 강등됐다.",
+      "f24: 42. 분산 시스템·통신·컴퓨팅 구조를 외부 연계 대상으로 쓰지 않는다. 클라우드 제공자 인프라는 외부 연계 대상, 현장 네트워크 설계는 42. 분산 시스템·통신·컴퓨팅 구조 영역에서 다룬다고 나눠 쓴다 — 42번은 ROP 의 세부영역이다.",
+      "5·6·9절 f14: 네이버 ARC 사례는 [추정] 벤더 주장으로 쓰고, 위치 추정·이동 계획을 클라우드에 두는 것은 원문 19장의 로봇 자체 지능 경계를 제품 전략으로 옮긴 사례로만 서술한다(ROP 직접 범위로 쓰지 않는다).",
+      "5절: 병원 사례(f13)는 특정 병원의 배치 결과가 아니라 공공 의료기관용 미들웨어 구조임을 밝히고, 사례마다 여섯 항목 가운데 근거가 없는 칸은 채우지 않고 '미확인'으로 둔다.",
+      "11절 열린 질문 1: '클라우드나 5G 연결' 에서 '5G'를 뺀다 — 근거 f14 에 5G 언급이 없다(5G 는 브리프가 원문 미열람으로 제외했다).",
+      "13절: ref-004·ref-031 은 기존 참고문헌 페이지(docs/references/ref-004.md, ref-031.md)의 '각주 형식' 줄을 그대로 쓰고 새 각주를 만들지 않는다."
+    ],
+    "confidence": "low",
+    "verification_note": "판정: 1차 조건부 승인. 확인 24건, 미확인 1건, 교차 확인 1건(f11). 강등: f1 사실 → 추정(README 에 REST·OpenAPI 표현 없음). 원문 미열람 출처: 없음(17건 모두 열람·대조; ref-004·ref-031 은 입력 원문 텍스트, 논문은 arXiv 초록 기준이고 ref-1031 은 HTML 본문도 확인). 주의: 사실 finding 은 f11 을 빼면 모두 단일 출처이고, 핵심 결론(판단 배치의 혼합 구조, 외부 API 조합, 직접 범위)은 종합 [추정]이며, 제품·국내 사례(f14~f20)는 벤더 주장 또는 기사 전언이다. FogROS2·FogROS2-FT 수치는 저자 보고다. 상업 시설·가정·실외 사례와 국내 표준은 찾지 못했다. 이번 브리프의 신규 참고문헌 id 10건이 같은 날 이전 브리프(2026-09-30-03·04)의 다른 출처 id 와 겹치므로 게시 전 id 재배정 확인이 필요하다. 검증 검색 1회(누적 18/30), 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 9853,
+  "type": "result",
+  "duration_ms": 248761,
+  "uuid": "401d1aec-f0c9-4b71-aee7-9122cfecb31d",
+  "ttft_stream_ms": 1533,
+  "time_to_request_ms": 110,
+  "time_to_request_phases_ms": {
+    "other": 50,
+    "system_prompt": 16,
+    "turn_start_resume": 0,
+    "process_user_input": 18,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 6,
+    "message_normalization": 2,
+    "client_creation": 11
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 60,
+  "time_to_request_cpu_ms": 144,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1534,
+  "time_to_request_from_spawn_ms": 70189,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790726375060.9285,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 250.0
+}

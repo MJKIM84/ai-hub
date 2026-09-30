@@ -225,8 +225,12 @@ version: 1
 | oq-203 | 공사·청소·감염 관리 같은 임시 통제 구역을 누가 선언·승인하고 언제 해제하는지, VDA 5050 구역 집합이나 Open-RMF 차선 폐쇄를 쓰는 운영 절차를 공개한 병원·상업 시설 사례가 있는가? | [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md)<br>[40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-30 | 2026-09-30-04 | 열림 | — |
 | oq-204 | IMDF·IndoorGML 같은 실내 지도 표준의 장소 이름·대체 이름을 로봇 작업 목적지나 대화형 지시의 장소 해석에 직접 쓰는 로봇 관제 제품이나 연구가 있는가? | [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md)<br>[12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md) | 2026-09-30 | 2026-09-30-04 | 열림 | — |
 | oq-205 | 국토지리정보원 실내공간정보(지하철·철도역사 등)를 로봇 운영 지도나 장소 목록의 출발점으로 쓴 국내 사례가 있는가? | [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md)<br>[67. 기타 현장](categories/site-type-applications/other-sites.md) | 2026-09-30 | 2026-09-30-04 | 열림 | — |
+| oq-206 | 네이버 ARC 처럼 위치 추정·이동 계획까지 클라우드에서 하는 구조에서 클라우드 연결이 끊기면 로봇과 현장 서버가 어디까지 계속 동작하는지 공개한 자료나 사례가 있는가? | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | 2026-09-30 | 2026-09-30-05 | 열림 | — |
+| oq-207 | 로봇 관제 플랫폼의 외부 API 버전 관리와 하위 호환(주 버전 표기, 폐기 예고 기간) 정책을 공개한 오픈소스·제품 사례가 있는가? | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-09-30 | 2026-09-30-05 | 열림 | — |
+| oq-208 | 로봇 플랫폼이 외부로 내보내는 웹훅·이벤트 스트림의 전달 보장(재시도, 순서, 중복 제거)을 정한 공통 기준이나 제품 문서가 있는가? | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[29. 명령·작업 실행의 신뢰성](categories/execution-collaboration-and-recovery/command-and-task-execution-reliability.md) | 2026-09-30 | 2026-09-30-05 | 열림 | — |
+| oq-209 | 국내에 클라우드 로봇·이기종 로봇 통합관제 플랫폼의 참조 구조나 외부 API 를 정한 TTA·KS 표준이 있는가? | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-05 | 열림 | — |
 
-상태별 건수: 열림 204건, 조사 중 1건
+상태별 건수: 열림 208건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 
