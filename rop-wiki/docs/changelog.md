@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-06 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 섹션 3~11 신규 작성(seed → draft): 기록 형식·관측성·배포·비용 관리 접근법, 병원·물류창고 적용 사례, 책임 경계, 연결 영역 17개, 열린 질문 6건 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s6.md](topics/2026/2026-09-30-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,750자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s10.md](topics/2026/2026-09-30-area43-s10.md) | 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,115자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s7.md](topics/2026/2026-09-30-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,055자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s4.md](topics/2026/2026-09-30-area43-s4.md) | 자동 분리: 43. 데이터·관측성·배포 의 "4. 핵심 개념과 용어" 절(975자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s11.md](topics/2026/2026-09-30-area43-s11.md) | 자동 분리: 43. 데이터·관측성·배포 의 "11. 열린 질문" 절(889자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s3.md](topics/2026/2026-09-30-area43-s3.md) | 자동 분리: 43. 데이터·관측성·배포 의 "3. 왜 중요한가" 절(743자)을 옮겼다 |
+| 2026-09-30-06 | 요약 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 43. 데이터·관측성·배포: 섹션 3~11 신규 작성(seed → draft): 기록·관측성·배포·비용 접근법, 병원·물류창고 적용 사례, 책임 경계, 열린 질문 6건. 1차 조건부 승인 수정 15건 이행 |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1032.md](references/ref-1032.md) | 참고문헌 ref-1032 등록: ros2_tracing: Multipurpose Low-Overhead Framework for Real-T… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1033.md](references/ref-1033.md) | 참고문헌 ref-1033 등록: ros2probe: Non-intrusive, Kernel-selective Observability for… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1034.md](references/ref-1034.md) | 참고문헌 ref-1034 등록: Iron Irwini (iron) |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1035.md](references/ref-1035.md) | 참고문헌 ref-1035 등록: MCAP as the ROS 2 Default Bag Format |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1036.md](references/ref-1036.md) | 참고문헌 ref-1036 등록: Specification Status Summary |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1037.md](references/ref-1037.md) | 참고문헌 ref-1037 등록: semantic-conventions-genai/docs/gen-ai/gen-ai-token-metrics.… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1038.md](references/ref-1038.md) | 참고문헌 ref-1038 등록: ros-opentelemetry — ROS2 x OpenTelemetry README |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1039.md](references/ref-1039.md) | 참고문헌 ref-1039 등록: Enhancing the Resilience of ROS 2-Based Multi-Robot Systems… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1040.md](references/ref-1040.md) | 참고문헌 ref-1040 등록: mender — README |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1041.md](references/ref-1041.md) | 참고문헌 ref-1041 등록: FinOps Phases |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1042.md](references/ref-1042.md) | 참고문헌 ref-1042 등록: Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconcilia… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1043.md](references/ref-1043.md) | 참고문헌 ref-1043 등록: Design and Evaluation of LLM Chaining-Based Task Planning fo… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1044.md](references/ref-1044.md) | 참고문헌 ref-1044 등록: Ocado's digital twins and simulations: driving efficiencies… |
+| 2026-09-30-06 | 생성 | [docs/glossary/observability.md](glossary/observability.md) | 용어집 항목 관측성 |
+| 2026-09-30-06 | 생성 | [docs/glossary/opentelemetry.md](glossary/opentelemetry.md) | 용어집 항목 오픈텔레메트리 |
+| 2026-09-30-06 | 생성 | [docs/glossary/mcap.md](glossary/mcap.md) | 용어집 항목 MCAP |
+| 2026-09-30-06 | 생성 | [docs/glossary/finops.md](glossary/finops.md) | 용어집 항목 핀옵스 |
+| 2026-09-30-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-30-05 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 섹션 3~11 신규 작성(seed → draft): 판단 배치 혼합 구조, 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건. 1차 조건부 승인 수정 17건과 2차 수정 5건(3절 일반화 2건 좁힘, 4절 도입 단락, [의견] 주체 표시, 약어 풀이) 이행 |
 | 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s6.md](topics/2026/2026-09-30-area41-s6.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(3,254자)을 옮겼다 |
 | 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s4.md](topics/2026/2026-09-30-area41-s4.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "4. 핵심 개념과 용어" 절(1,132자)을 옮겼다 |

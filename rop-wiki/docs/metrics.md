@@ -32,7 +32,7 @@ version: 1
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 1 | 0 | 0 | 14 | 0 | 0 | 15 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 3 | 0 | 0 | 6 | 0 | 0 | 9 |
 | [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
@@ -138,7 +138,7 @@ version: 1
 |---|---|---|---|---|
 | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-09-30 | 2 |
 | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
-| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | seed | — | 2026-09-28 | 1 |
+| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-09-30 | 2 |
 
 **L. AI·학습 기술**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 110회 중 최종 통과 108회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 108, None 2
-- 2차 검증 판정: 통과 108, None 2
+- 실행 111회 중 최종 통과 109회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 109, None 2
+- 2차 검증 판정: 통과 109, None 2
 
 ### 반려·보류 건수
 
@@ -209,15 +209,15 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 449 |
-| 오픈소스 문서 | 195 |
-| 표준 | 164 |
+| 논문 | 453 |
+| 오픈소스 문서 | 200 |
+| 표준 | 165 |
 | 기사 | 76 |
 | 정부·연구기관 | 76 |
-| 벤더 문서 | 56 |
-| 업계 보고서 | 15 |
+| 벤더 문서 | 58 |
+| 업계 보고서 | 16 |
 
-신뢰도: medium 775건, high 179건, low 77건
+신뢰도: medium 783건, high 184건, low 77건
 
 ### 현장 유형 매트릭스 채움률
 

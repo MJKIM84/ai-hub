@@ -3361,6 +3361,92 @@
       "ref_id": "ref-304",
       "run_id": "2026-09-30-05",
       "date": "2026-09-30"
+    },
+    {
+      "name": "MCAP (rosbag2 기본 기록 형식, ROS 2 Iron 부터)",
+      "org": "Foxglove (ROS 2 채택: Open Robotics)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        37,
+        38
+      ],
+      "url": "https://foxglove.dev/blog/mcap-as-the-ros2-default-bag-format",
+      "summary": "여러 채널의 시간 표시 메시지를 메시지 정의와 함께 담는 기록 형식. ROS 2 Iron Irwini(2023-05-23)부터 rosbag2 의 기본 기록 형식이다.",
+      "ref_id": "ref-1035",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "OpenTelemetry 생성형 AI 의미 규약 — 토큰 지표",
+      "org": "OpenTelemetry (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        13,
+        47
+      ],
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "summary": "언어 모델 호출의 입력·출력·캐시·추론 토큰 카운터와 호출별 토큰 히스토그램을 정의한다. 2026-09-30 확인 기준 모두 개발 단계.",
+      "ref_id": "ref-1037",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ros-opentelemetry",
+      "org": "szobov (GitHub, 개인 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        38
+      ],
+      "url": "https://github.com/szobov/ros-opentelemetry",
+      "summary": "ROS 2 메시지의 사용자 정의 필드로 추적 문맥을 전파해 토픽·서비스·액션을 가로지르는 분산 추적과 로그 연결을 제공하는 라이브러리. 라이선스 표기 미확인.",
+      "ref_id": "ref-1038",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Mender (OTA 업데이트 관리자)",
+      "org": "Northern.tech (mendersoftware)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        57
+      ],
+      "url": "https://github.com/mendersoftware/mender",
+      "summary": "임베디드 리눅스·사물인터넷 장치용 클라이언트–서버 방식 무선 업데이트 관리자. A/B 루트 파일시스템 분할과 이미지 단위 원자적 배포, Apache 2.0.",
+      "ref_id": "ref-1040",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FinOps 프레임워크 (FinOps Phases)",
+      "org": "FinOps Foundation",
+      "kind": "프레임워크",
+      "related_areas": [
+        43,
+        3
+      ],
+      "url": "https://www.finops.org/framework/phases/",
+      "summary": "기술 비용·사용량 데이터를 정보·최적화·운영 세 단계로 반복 관리하는 방식. 대상에 공용 클라우드·SaaS·AI 서비스를 포함한다.",
+      "ref_id": "ref-1041",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FOCUS 1.2 (FinOps 청구 데이터 명세)",
+      "org": "FinOps Foundation",
+      "kind": "표준",
+      "related_areas": [
+        43,
+        3
+      ],
+      "url": "https://www.finops.org/insights/focus-1-2-available/",
+      "summary": "2025-05-29 비준. SaaS·PaaS 청구 데이터를 클라우드 비용과 같은 스키마에 넣고 가상 통화(크레딧·토큰)·다중 통화·InvoiceId 를 더했다(발표 글 기준, 명세 본문 미열람).",
+      "ref_id": "ref-1042",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
     }
   ]
 }

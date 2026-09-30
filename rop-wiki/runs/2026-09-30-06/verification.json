@@ -1,0 +1,251 @@
+{
+  "run_id": "2026-09-30-06",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 초록 페이지 열람. 저자·제목·IEEE RA-L 7(3) pp. 6511-6518, 2022-07 일치. LTTng 사용, OS 추적과 결합, 모든 ROS 2 계측을 켰을 때 종단 간 메시지 지연 오버헤드 평균 0.0033 ms 가 초록에 있다. 단일 출처(저자 보고), 실험 조건은 초록 기준."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 초록 둘째 문장과 인용 구절이 글자 단위로 일치. ref-1032 의 직접 인용은 이 1회만 쓴다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 초록·HTML 열람. 저자 Yu·Lee·Choi·Park, 2026-06-09 제출 일치. 도메인 참여 관찰자의 탐색 부담·역직렬화 비용, 탐색 패킷으로 통신 상태 복원, 사용자 지정 토픽만 커널 안 필터(eBPF)로 수집, CPU 최대 7배·메모리 최대 28배 감소, 포화 시 손실 0 대 38.5% 가 본문·초록에 있다. 동료 심사 전 프리프린트이므로 본문에 그 사실을 밝힌다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인: ROS 2 문서 Iron 릴리스 노트(github_raw)에서 출시일 2023-05-23, 'mcap' 기본 형식 전환 문장, 서비스 호출로 원격 기록 일시 정지·재개·분할 기능을 확인. Foxglove 블로그(2022-12-22)도 Iron 부터 MCAP 기본값을 알린다. 다만 Foxglove 는 MCAP 개발사이므로 교차 확인은 'MCAP 기본값 전환'에만 해당하고 원격 기록 제어는 릴리스 노트 단일 출처다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Foxglove 블로그(James Smith, 2022-12-22) 열람. SQLite3 resilient 모드 안전성과 write optimized 모드 처리량 동시 제공, zstd·lz4 선택, 메시지 정의 내장(자기 완결) 문구 일치. 벤더 주장 표시·추정 태그 적정."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: OpenTelemetry 명세 상태 요약 열람. 추적 API·SDK·프로토콜 stable, 지표 SDK mixed, 로그 Bridge API·SDK·프로토콜 stable, 프로파일 프로토콜 development, 장기 지원 문장 일치. 페이지에 발행·갱신일 없음 — 기준일은 확인일 2026-09-30."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: semantic-conventions-genai 저장소 원문(github_raw) 열람. 카운터 5종(gen_ai.client.inference.usage.*)·히스토그램 2종(gen_ai.client.inference.operation.*), 단위 {token}, 필수 속성 gen_ai.operation.name·gen_ai.provider.name(카운터는 gen_ai.token.modality 추가), 모두 Development 일치. 이전 이름(gen_ai.client.token.usage)과의 관계는 미확인 — 이름 변경을 단정하지 않는다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: README 열람. inject_trace_context()/extract_trace_context(), 사용자 정의 메시지에 TraceMetadata 필드 추가, C++·Python 패키지, 추적 ID 를 넣는 로거(RCLCPP_ERROR_TRACED, wrap_logger) 일치. 라이선스 표기 없음. 개인 관리 저장소이므로 채택 현황은 주장하지 않는다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: PMC 본문 열람. Sensors 25:5067, 2025-08-14. Jetson Nano 5대(TurtleBot4 탑재) 작업 노드 + 노트북 마스터, K3s v1.27.4, ROS 2 Galactic. F5(LSTM 파드 5개 종료)에서 K3s 자동 재시작 후 오차 약 0.12~0.14 m 로 무장애와 비슷. LSTM 보정 없음은 한 로봇 기준 0.661 m. 복구 시간 미보고. 실험실 환경이므로 현장 유형 적용 사례로 쓰지 않는다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Mender README(github_raw) 열람. IoT·임베디드 리눅스용 오픈소스 OTA 관리자, 클라이언트–서버, dual A/B rootfs 원자적 이미지 배포, 전원 상실 대비 롤백, 루트 파일시스템·애플리케이션·파일·컨테이너 업데이트, Update Modules, Apache 2.0 일치. README 는 상용 제공사(Northern.tech) 문서이므로 '전원이 끊겨도 되돌릴 수 있다'는 신뢰성 부분은 README 의 설명으로 서술한다. '연계 대상:' 표시 적정."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. ref-766 페이지는 고시명·제2023-6호·2023-09-22 시행까지 일치하나 검증 열람에서 제8조 조문 본문이 표시되지 않았다(동적 로딩). 1년/2년·월 1회 문구는 검색 요약으로만 확인. 또한 검증 검색에서 이 고시가 개인정보보호위원회고시 제2025-9호(국가법령정보센터 기준 2025-10-31)로 다시 개정됐고, 접속기록 점검 주기를 내부관리계획으로 정하게 바꾸는 개정(유예 후 시행)이 보도됐다 — 2023-6호 조문을 현행 기준으로 서술할 수 없다(최신성)."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: FinOps Phases 페이지 열람. Inform·Optimize·Operate 세 단계, 사용량 최적화와 요금 최적화 구분, 기술 범주에 Public Cloud·SaaS·AI services 등 일치. 발행일 표시 없음 — 기준일 확인일."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: FinOps 재단 발표 글 열람. FOCUS 1.2 비준 2025-05-29, 글 게시 2025-06-03(저자 Mike Fuller 외). 새 열 7개(InvoiceId, BillingAccountType, SubAccountType, PricingCurrency 외 3), SaaS·PaaS 통합, 크레딧·토큰 등 가상 통화, 기존 AWS·Microsoft·Google Cloud·Oracle Cloud 와 새로 Alibaba Cloud·Databricks·Grafana 지원 일치. 브리프 published 가 null — 2025-06-03 이다. 명세 본문이 아닌 발행 기관의 발표 글."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: arXiv 초록·HTML 열람(2026-09-24 제출). 'Cloud APIs incur per-request cost …' 문장, 네트워크 지연, 프롬프트 약 45% 감소, 로컬 모델 Qwen2.5-14B·Cogito-14B, 최대 37%p 개선, 클라우드 모델 Claude Sonnet 4.6, GPSR 명령 100개, Toyota HSR 10개 중 6개 일치. 비용 금액 미보고. 프리프린트. L. AI·학습 기술 교차 규칙에 따라 44·47 과 연결."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: PMC 본문 열람. Digital Health, 2026-03-31, 고려대학교 구로병원, 비응급 임무 122건(2025-06-18~29), 응급실 직원의 웹 애플리케이션 요청으로 시작 일치."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인(부분 표현 수정): 원문 성공 정의는 '로봇이 전체 경로를 마치고 사람 개입 없이 약품을 인계'이다. '간호사가 받는 것'은 검증 열람에서 정의 문장 안에 확인되지 않았으므로 정의의 일부로 쓰지 않는다(required_fixes)."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 로봇 시스템 로그(1 Hz, 승강기 호출·탑승·문 동작), 승강기 통신 로그, 관찰자 사례 기록지(탑승객 수·화물 수·성공 여부) 일치. 저자는 탑승객 수가 로봇 탑재 센서로는 얻을 수 없어 관찰자 기록에 의존했다고 밝힌다. flow_item '작업 대상'은 배송 작업의 대상(약품)과 맞지 않으므로 적용 사례 표에서는 예외·성과(실패 원인 분석 자료)로 둔다(required_fixes)."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 전체 성공률 87.03%, EOR 59% 미만 95.52%, 실패 14건(승강기 막힘 8·복도 주행 4·통신 오류 2), 인용 문장 일치. 다만 원문은 분모를 122건이라 하는데 122건 중 14건 실패면 약 88.5%가 되어 원문 수치 사이에 불일치가 있다(87.03%는 108건 기준 계산과 맞음). 수치는 저자 보고대로만 옮긴다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Ocado 글(2025-06-04) 열람. 인용 구절, 초당 10회 로봇 통신, 12개월에 창고 운영 270년 분량 시뮬레이션 일치. 정확한 제목은 'Ocado's digital twins and simulations: driving efficiencies and innovation at scale'. 벤더 주장 표시·추정 태그 적정. 34. 시뮬레이션·예측용 디지털 트윈의 내용을 배포 전 검증 근거로만 쓴다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 입력 data/source_texts/ref-762.txt 와 raw README 에서 tortoise-orm 경유 PostgreSQL·SQLite·MySQL·MariaDB 지원, 기본 in-memory SQLite 일치. 2026-09-30-05 브리프 f1 과 같은 주장 — 기존 ref-762 각주 재사용."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 괄호 안 finding 의 종합 추정으로 추정 태그 적정. 근거 finding 가운데 f5·f19 는 벤더 주장이므로 서술 시 그 부분에 벤더 주장임을 유지한다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 종합 추정. 다만 근거 f11 이 강등됐으므로 '접속기록 보존·점검 의무' 부분은 판(2023-09-22 시행 판 기준)과 현행 여부 미확인을 밝혀 쓴다(required_fixes)."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 종합 추정. 분류 원문 19장 경계와 1절 리스트업 네 항목에 맞는다. 보존 정책 근거 f11 은 강등된 추정임을 유지한다."
+    },
+    {
+      "finding_id": "f24",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 종합 추정. 로봇 운영체제·펌웨어 OTA 와 로봇 내부 실행 추적을 제조사에, 청구 데이터 생성을 클라우드 사업자에, 승강기 통신 로그를 설비 제어에 둔 구분이 원문 19장 표와 맞다."
+    },
+    {
+      "finding_id": "f25",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 연결 영역 번호·이름이 부록 A 와 일치(3, 13, 22, 34, 37, 38, 39, 41, 42, 44, 47, 52, 53, 54, 57, 61, 63). L. AI·학습 기술 교차 규칙(44·47)과 18/34 구분 준수."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "f20 은 2026-09-30-05 브리프 f1(41. 플랫폼 아키텍처·외부 API)과 같은 주장이다 — 새 각주를 만들지 않고 ref-762 를 재사용한다(브리프가 이미 재사용).",
+      "f15~f18 의 고려대학교 구로병원 실증은 용어집 '승강기 가동률 (Elevator Operating Rate (EOR))' 항목과 같은 연구일 가능성이 있다 — 같은 URL 이 참고문헌에 이미 있으면 퍼블리셔가 기존 id 로 합치며, 본문 용어는 용어집의 '승강기 가동률'을 쓴다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f11: [사실] → [추정]으로 강등하고 본문에 '「개인정보의 안전성 확보조치 기준」 제2023-6호(2023-09-22 시행 판) 기준이며 이후 개정 여부와 현행 조문은 미확인'을 밝힌다. '월 1회 이상 점검'을 현행 의무처럼 쓰지 않는다 — 검증 열람에서 조문 본문이 확인되지 않았고 이후 개정 고시가 확인됐다.",
+    "f11·ref-766: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-766 에 source_unopened: true 를 넣는다 — 법령 페이지에서 제8조 조문 본문이 열람되지 않았다.",
+    "11절 열린 질문과 open_question_updates 에 '로봇 플랫폼에 적용될 수 있는 현행 「개인정보의 안전성 확보조치 기준」(2023-6호 이후 개정판)의 접속기록 보관 기간·점검 주기 조항이 2023-6호와 같은가? | 관련 영역: 43. 데이터·관측성·배포, 53. 개인정보·영상 데이터 | 근거: f11 | 종류: 일반' 을 더하고, additional_research_requests 에 '개인정보보호위원회고시 제2025-9호 제8조와 부칙 시행일 확인'을 넣는다.",
+    "f22: 3절 서술에서 '개인정보를 다루는 시스템은 접속기록 보존·점검 의무를 진다' 부분을 '2023-09-22 시행 판 기준 접속기록 보관 의무가 있었다(현행 조문 미확인)'로 한정한다 — 근거 f11 이 강등됐다.",
+    "f16: 5절 병원 사례의 완료·인계 칸에서 성공 정의를 '로봇이 사람 개입 없이 전체 경로를 마치고 약품을 인계'로 쓰고 '간호사가 받는 것'을 정의의 일부로 쓰지 않는다 — 원문 정의 문장에서 수령인이 확인되지 않았다.",
+    "f17: 5절 병원 사례에서 로봇·승강기 로그와 관찰 기록지를 '작업 대상' 칸이 아니라 '예외·성과' 칸(실패 원인 분석 자료)에 두고, 작업 대상 칸은 f15·f16 이 근거하는 약품으로 둔다. site_matrix_updates 의 item 도 그에 맞춘다 — 배송 작업의 대상은 약품이다.",
+    "f18: 성공률·실패 건수는 저자 보고대로만 옮기고 분모를 새로 계산해 덧붙이지 않는다. 11절에 '구로병원 실증의 전체 성공률 87.03% 가 122건 중 실패 14건과 맞지 않는데(약 88.5%) 성공률의 분모는 무엇인가? | 관련 영역: 43. 데이터·관측성·배포, 63. 병원·의료 | 근거: f18 | 종류: 일반' 을 올린다 — 원문 수치 사이에 불일치가 있다.",
+    "5절: 병원 사례의 수행 자원·제약, 물류창고 사례(f19)의 시작 조건·작업 대상·수행 자원·제약·완료·인계는 '미확인'으로 두고, 제조 공장·상업 시설·가정·실외 사례를 찾지 못했음을 밝힌다. f9(실험실)·f14(평가 실험)는 현장 유형 적용 사례로 쓰지 않는다.",
+    "f5·f19: [추정]에 '벤더 주장'을 병기한 채 유지하고, f21 에서 f19 에 기댄 '배포 전 시뮬레이션 검증' 부분도 벤더 주장 근거임을 밝힌다.",
+    "f10: '업데이트 중 전원이 끊겨도 동작하던 상태로 되돌릴 수 있다'는 부분은 'Mender README 는 …라고 설명한다'처럼 출처의 설명으로 서술한다 — 상용 제공사 문서이고 독립 확인이 없다.",
+    "f3·f14: 본문에 arXiv 프리프린트(동료 심사 전)임을 밝힌다.",
+    "ref-1042: reference_updates 의 발행일을 2025-06-03 으로 적고(FOCUS 1.2 비준일 2025-05-29 는 본문 기준일로 유지), 유형은 발행 기관의 발표 글이며 명세 본문 미열람임을 각주에 밝힌다.",
+    "ref-1044: 참고문헌 제목을 'Ocado's digital twins and simulations: driving efficiencies and innovation at scale' 로 고친다 — 원문 제목과 다르다.",
+    "11절 열린 질문 셋째 항목: '토큰 지표가 개발 단계에서 이름이 바뀌고 있는데'를 '개발 단계인 토큰 지표의 이름(gen_ai.client.inference.usage.* 와 다른 문서의 gen_ai.client.token.usage)이 바뀌었는지 미확인인데'로 고쳐 단정을 없앤다 — 이름 변경은 브리프에서 미확인이다.",
+    "10절: f7·f14 는 교차 규칙에 따라 44. 로봇 기반 모델·언어 모델 계획, 47. AI·학습·적응과 모델 운영과 13. 대화형 기능의 신뢰·기반에 번호와 이름을 함께 써서 연결하고, f19 는 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)에만 연결하며 18. 실시간 세계 상태·데이터 일관성과 섞지 않는다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 확인 24건, 미확인 1건, 교차 확인 1건. 강등: f11 사실 → 추정(법령 페이지에서 조문 본문 미확인, 검증 중 이후 개정 고시(개인정보보호위원회고시 제2025-9호) 확인으로 현행 여부 미확인). 원문 미열람 출처: ref-766(조문 본문). 주의: 3. 왜 중요한가와 9. 책임 경계를 이루는 핵심 주장(f22·f23·f24)은 종합 추정이고, 6절 근거 대부분이 단일 출처이며 교차 확인은 f4(ROS 2 Iron 부터 MCAP 기본값) 1건뿐이다. f3·f14 는 동료 심사 전 프리프린트, f5·f19 는 벤더 주장이다. 구로병원 실증(f18)은 원문의 성공률과 실패 건수의 분모가 서로 맞지 않는다. 현장 유형 사례는 병원·물류창고(벤더 주장)뿐이다. 참고: ref-762 는 이번 실행에서 다시 열지 않았다고 적혀 있으나 fetched: true 로 기록됐다(입력 원문 텍스트로 검증함). 여러 출처의 fetch_url 이 비어 있다. 정정 요청 없음. 검증 검색 3회 사용.",
+  "retry_reason": null
+}

@@ -1,0 +1,170 @@
+{
+  "run_id": "2026-09-30-06",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 43,
+    "area_name": "43. 데이터·관측성·배포",
+    "category": "K. 플랫폼 아키텍처·인프라"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 22,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1737.0,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 43. 데이터·관측성·배포 | 섹션 3~11 신규 작성(seed → draft): 기록·관측성·배포·비용 접근법, 병원·물류창고 적용 사례, 책임 경계, 열린 질문 6건. 1차 조건부 승인 수정 15건 이행 | run 2026-09-30-06",
+  "notes": [
+    "참고문헌 생성: references/ref-1032.md",
+    "참고문헌 생성: references/ref-1033.md",
+    "참고문헌 생성: references/ref-1034.md",
+    "참고문헌 생성: references/ref-1035.md",
+    "참고문헌 생성: references/ref-1036.md",
+    "참고문헌 생성: references/ref-1037.md",
+    "참고문헌 생성: references/ref-1038.md",
+    "참고문헌 생성: references/ref-1039.md",
+    "참고문헌 생성: references/ref-1040.md",
+    "참고문헌 생성: references/ref-1041.md",
+    "참고문헌 생성: references/ref-1042.md",
+    "참고문헌 생성: references/ref-1043.md",
+    "참고문헌 생성: references/ref-1044.md",
+    "용어집 생성: glossary/observability.md",
+    "용어집 생성: glossary/opentelemetry.md",
+    "용어집 생성: glossary/mcap.md",
+    "용어집 생성: glossary/finops.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 6,
+    "open_questions": 6,
+    "flow_cells": 5,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 10:01:59 KST",
+  "usage": {
+    "input_tokens": 102,
+    "cache_creation_input_tokens": 405789,
+    "cache_read_input_tokens": 7261755,
+    "output_tokens": 126142,
+    "cost_usd": 8.5469,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.6574,
+        "output_tokens": 39348,
+        "cache_read_input_tokens": 5647536,
+        "cache_creation_input_tokens": 101020
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.8825,
+        "output_tokens": 23760,
+        "cache_read_input_tokens": 1442831,
+        "cache_creation_input_tokens": 93888
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 2.0045,
+        "output_tokens": 53636,
+        "cache_read_input_tokens": 71891,
+        "cache_creation_input_tokens": 114672
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 0.9286,
+        "output_tokens": 8590,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 92388
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0526,
+        "output_tokens": 491,
+        "cache_read_input_tokens": 5472,
+        "cache_creation_input_tokens": 2340
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0213,
+        "output_tokens": 317,
+        "cache_read_input_tokens": 5559,
+        "cache_creation_input_tokens": 1481
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-30-area43-s6.md",
+        "chars": 2750
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-30-area43-s10.md",
+        "chars": 1115
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-30-area43-s7.md",
+        "chars": 1055
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-30-area43-s4.md",
+        "chars": 975
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-30-area43-s11.md",
+        "chars": 889
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-30-area43-s3.md",
+        "chars": 743
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 1
+}

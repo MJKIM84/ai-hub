@@ -292,6 +292,12 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area43-s7.md
+      - 43. 데이터·관측성·배포 — 대표 접근법과 기술: topics/2026/2026-09-30-area43-s6.md
+      - 43. 데이터·관측성·배포 — 핵심 개념과 용어: topics/2026/2026-09-30-area43-s4.md
+      - 43. 데이터·관측성·배포 — 왜 중요한가: topics/2026/2026-09-30-area43-s3.md
+      - 43. 데이터·관측성·배포 — 열린 질문: topics/2026/2026-09-30-area43-s11.md
+      - 43. 데이터·관측성·배포 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area43-s10.md
       - 41. 플랫폼 아키텍처·외부 API — 대표 연구와 자료: topics/2026/2026-09-30-area41-s8.md
       - 41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area41-s7.md
       - 41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술: topics/2026/2026-09-30-area41-s6.md
@@ -579,6 +585,7 @@ nav:
     - JSON 스키마 (JSON Schema): glossary/json-schema.md
     - LLM 에이전트 (LLM Agent): glossary/llm-agent.md
     - LLM-모듈로 프레임워크 (LLM-Modulo Framework): glossary/llm-modulo-framework.md
+    - MCAP (MCAP): glossary/mcap.md
     - OpenAPI 명세 (OpenAPI Specification (OAS)): glossary/openapi-specification.md
     - SiLA 2 (Standardization in Lab Automation 2 (SiLA 2)): glossary/sila-2.md
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
@@ -610,6 +617,7 @@ nav:
     - 과도한 에이전시 (Excessive Agency): glossary/excessive-agency.md
     - 과소명세 (Underspecification): glossary/underspecification.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
+    - 관측성 (Observability): glossary/observability.md
     - 교착 (Deadlock): glossary/deadlock.md
     - 구성 코파일럿 (Configuration Copilot): glossary/configuration-copilot.md
     - 구역 집합 (Zone Set (VDA 5050 zoneSet)): glossary/zone-set.md
@@ -741,6 +749,7 @@ nav:
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
+    - 오픈텔레메트리 (OpenTelemetry (OTel)): glossary/opentelemetry.md
     - 온톨로지 진화 (Ontology Evolution): glossary/ontology-evolution.md
     - 온톨로지 채우기 (Ontology Population): glossary/ontology-population.md
     - 온톨로지 피트폴 (Ontology Pitfall): glossary/ontology-pitfall.md
@@ -824,6 +833,7 @@ nav:
     - 플릿 관리 시스템 (Fleet Management System (FMS)): glossary/fleet-management-system.md
     - 플릿 어댑터 (Fleet Adapter): glossary/fleet-adapter.md
     - '플릿 제어 수준 (Fleet Control Level (Open-RMF: Full Control / Traffic Light / Read Only))': glossary/fleet-control-level.md
+    - 핀옵스 (FinOps): glossary/finops.md
     - 필터 마스크 (Filter Mask (Nav2 costmap filter)): glossary/filter-mask.md
     - 합의 기반 번들 알고리즘 (Consensus-Based Bundle Algorithm (CBBA)): glossary/consensus-based-bundle-algorithm.md
     - 해제 구역 (Release Zone): glossary/release-zone.md
@@ -988,7 +998,21 @@ nav:
     - ref-103 — The Path Planning Problem of Robotic Delivery in Multi-Floor Hotel Environments: references/ref-103.md
     - ref-1030 — Seamless Integrations with LocusOne Robotics: references/ref-1030.md
     - 'ref-1031 — FogROS2-FT: Fault Tolerant Cloud Robotics': references/ref-1031.md
+    - 'ref-1032 — ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2': references/ref-1032.md
+    - 'ref-1033 — ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware': references/ref-1033.md
+    - ref-1034 — Iron Irwini (iron): references/ref-1034.md
+    - ref-1035 — MCAP as the ROS 2 Default Bag Format: references/ref-1035.md
+    - ref-1036 — Specification Status Summary: references/ref-1036.md
+    - ref-1037 — semantic-conventions-genai/docs/gen-ai/gen-ai-token-metrics.md: references/ref-1037.md
+    - ref-1038 — ros-opentelemetry — ROS2 x OpenTelemetry README: references/ref-1038.md
+    - ? 'ref-1039 — Enhancing the Resilience of ROS 2-Based Multi-Robot Systems with Kubernetes: A Case Study on UWB-Based Relative Positioning'
+      : references/ref-1039.md
     - ref-104 — rmf_demos — Demonstrations of Open-RMF (README): references/ref-104.md
+    - ref-1040 — mender — README: references/ref-1040.md
+    - ref-1041 — FinOps Phases: references/ref-1041.md
+    - 'ref-1042 — Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconciliation, and more': references/ref-1042.md
+    - ref-1043 — Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots: references/ref-1043.md
+    - 'ref-1044 — Ocado''s digital twins and simulations: driving efficiencies and innovation at scale': references/ref-1044.md
     - ref-105 — fleet_adapter_template — fleet_adapter_template/config.yaml: references/ref-105.md
     - ref-106 — 인증스마트물류센터: references/ref-106.md
     - ref-107 — 물류시설의 개발 및 운영에 관한 법률: references/ref-107.md
