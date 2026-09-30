@@ -1,0 +1,384 @@
+{
+  "duration_api_ms": 297530,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.7325222,
+  "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 89196,
+    "cache_read_input_tokens": 1407441,
+    "output_tokens": 23264,
+    "output_tokens_details": {
+      "thinking_tokens": 11329
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 89196,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11097,
+        "cache_read_input_tokens": 174477,
+        "cache_creation_input_tokens": 3185,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3185
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 18,
+      "outputTokens": 23264,
+      "cacheReadInputTokens": 1407441,
+      "cacheCreationInputTokens": 89196,
+      "webSearchRequests": 0,
+      "costUSD": 1.4604081999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 11329,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 240224,
+      "outputTokens": 6378,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.27211399999999997,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 24,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-08\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2601.04819 초록 열람(2026-01-08 v1, 저자 일치). 평면도 120장·질의응답 192쌍·OCR 최대 0.95·심볼 개수 세기 'often 0.40-0.55' 일치. 원문이 '흔히(often)'로 적었으므로 수치 앞에 '대개'를 붙인다. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 1904.01920 초록 열람(2019-04-03). 5,000장·80개 이상 범주·다각형 조밀 주석·다중 작업 CNN 일치. 수집 지역·성능 수치는 넣지 않은 것이 맞다.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2105.07147 초록 열람. 1만 장 이상·주거~상업 건물·30개 범주·벡터 그래픽·CNN-GCN 일치. 발행일 2021-11-29 는 v2 개정일이며 v1 은 2021-05-15 이므로 각주에 판을 밝힌다. 용어는 용어집 표기 '파놉틱 심볼 스포팅'으로 맞춘다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PMC 본문 열람. Sensors 22(7), 2022-03-25, 쇼핑몰 평면도 25장·1,340개 방, 분할 92.54%·인식 90.56%·전체 83.81%, 안내판(디렉터리) 문자 인식·2단계 영역 성장, 활용처로 실내 로봇 주행 일치. 논문 평가 결과이며 로봇 현장 배치가 아니다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: AI Hub 페이지 열람. 2022년·에이치씨아이플러스(주)·48,033장(평면 41,556·단면 3,262·입면 1,595·구조 1,620)·아파트·연립다세대·단독주택·구조 8·공간 12·객체 5종·YOLOv5 mAP 90.33%·DeepLabV3+ mIoU 71.2%·OCR CER 4.95%·과학기술정보통신부 표기 일치. 데이터 자원이지 가정 현장 적용 사례가 아니다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"열린 질문 이동\",\"note\":\"부분 불일치: 검증 열람에서 공간 12종 전체(거실·침실·주방·현관·발코니·화장실·실외기룸·드레스룸·다목적공간·엘리베이터홀·계단실·엘리베이터)가 보였다. 엘리베이터홀·엘리베이터 공간 라벨이 있으므로 '승강기 앞 대기 구역 같은 클래스는 없다'는 예시는 뒷받침되지 않는다. 충전 위치 클래스는 공개된 공간·객체 목록에 없지만, 구조 8종 가운데 출입문·창호·벽체를 뺀 5종은 여전히 미확인이다. 따라서 본문 주장으로 쓰지 않고 oq-197 의 부분 근거로만 쓴다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2412.07626 초록 열람(v1 2024-12-10, v2 2025-03-25, CVPR 2025). 9개 문서 출처·19개 레이아웃 범주·15개 속성 라벨·파이프라인과 VLM 비교 일치.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: GitHub raw README 열람. v1.6(2026-04-10)·1,651쪽·10개 문서 유형·영어·간체 중국어·혼합, TeleOCR 96.91·0.0267·96.82, '연구 목적 전용, 상업 사용 불가' 일치. 순위표는 저장소 게시 값이므로 기준일을 함께 적는다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2501.17887 초록과 HTML 본문 열람(2025-01-27). 소속 'IBM Research, Rüschlikon'은 HTML 본문에서 확인했다. DocLayNet·TableFormer·MIT·일반 하드웨어·LangChain·LlamaIndex·spaCy 통합 일치.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2403.17209 초록 열람. IEEE Access 게재·'semantic node'·유효 생성률 62~79% 일치. 2024-06-24 는 arXiv v4 개정일이고 IEEE Access 게재일은 미확인이므로 각주에 이를 밝힌다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv HTML 본문 열람(2026-09-07). 4개 제조사 200쌍, 전기공학·유체동력 분야, 검색 DB 40쌍, 51.8%→71.7%, 원문에서 정답 값을 찾을 수 있는 속성 56.2%(전체 속성 기준), 전문가 검토를 남긴다는 결론 일치. 참고로 evidence_excerpt 의 '이전 오답의 22.4%'는 원문상 '전체 속성의 22.4%'이다(주장 문장에는 없다).\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f10·f11 을 종합한 [추정]이다. 두 수치는 지표가 다르고(유효 생성률과 속성 추출 정확도) 대상이 로봇 매뉴얼이 아닌 일반 데이터시트라는 단서를 같은 문장에 함께 둔다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: GitHub raw README 열람. 원문 위치 연결, 자체 완결 HTML 시각화, Apache 2.0, 'not an officially supported Google product', Gemini·OpenAI·Ollama 지원 일치. 발행일은 미확인. 범용 도구이므로 oq-147(로봇 매뉴얼·URDF 능력 항목)의 해결 근거는 아니다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2606.17073 초록 열람(2026-06-10, LAAS). URDF 식별자를 LLM 으로 해석해 온톨로지를 채우는 방법이며, 초록에 정량 결과가 없다는 점이 일치한다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv HTML 본문 열람(v1 2025-12-17). ArUco 표식 코너로 x·y·θ를 1 Hz 로 계산해 오도메트리와 융합, 640×360 저해상도 영상의 이진 분할, 5 cm 격자, 겹치는 시야는 '대개 가장 가까운' 카메라 하나를 쓴다는 점 일치.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"대부분 확인: 카메라 15대·약 8 m·대당 약 60 m²·로봇 6대·머플러·약 150 m·주기 약 7분은 일치한다. 다만 원문은 'up to 130 transport operations are performed per day'이므로 '하루 약 130회'를 '하루 최대 130회'로 고친다. 현장은 대형 상용차(트럭) 최종 조립 공장이다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: HTML 본문에서 하드웨어 비동기화로 인한 시간 차, 가림·센서 고장·제한된 범위, 작업자·독점 제품·기밀 공정 촬영 우려 문장을 확인했다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2606.06762 초록 열람(2026-06-04). 보정하지 않은 화소 단위 위상 카메라 그래프, 외부 계산만 사용, 로봇 4대·카메라 30대·27 m 통로 6개, 첫 현장 시연이라는 주장 일치. 원문은 겹치는 카메라 구역을 '배타적 자원(exclusive resources)'으로 관리해 충돌·교착을 막는다고 하므로 '순차 배정' 표현을 고친다. 저자 스스로 '첫 시연'이라 밝힌 것이므로 저자 주장으로 표기한다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv HTML 본문 열람(2026-05-18). SEE 16→37 노드·재현율 0.12→0.27, 고정 카메라 3대 F1 0.421(복잡한 아파트)·0.516(가구 배치 방), '30단계 능동 탐색의 재현율에 못 미치지만 주요 구조는 잡는다'는 저자 결론 일치. 모든 실험이 시뮬레이션(Habitat·ReplicaCAD)이다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"핵심 내용 확인: 초록 원문(v2 2025-07-10)에서 공유 3차원 장면 그래프(개방형 객체 지도 포함)를 통한 다중 로봇 장면 그래프 융합, 공유 장면 그래프·로봇 능력의 문맥으로 운영자 의도를 PDDL 목표로 바꾸는 방식, 대규모 실외 실제 작업 평가를 확인했다. 초록에 '대응점으로 정합' 표현은 없고, 초록 페이지에 소속 표기(MIT 등)도 없다. 이 두 부분을 고친다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"근거 finding 을 종합한 [추정]이다. 지표·데이터가 서로 달라(OCR 정확도, 종합 점수, 속성 추출 정확도, 검출 정확도, F1) 직접 비교할 수 없다는 단서를 함께 둔다. f1 수치 앞에는 '대개'를 붙인다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"근거 finding 을 종합한 [추정]이다. 문서·도면 해석 오류가 실제 실행 실패로 이어진 사례 자료는 없다는 한계를 유지한다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"영역 정의와 근거를 종합한 [추정]이다. 융합 결과가 표현하는 현재 상태는 18. 실시간 세계 상태·데이터 일관성에 둔다는 구분이 적절하다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"분류 원문 19장 기준의 연계 대상 구분([추정])이며 적절하다. 카메라망 소유·운영 주체는 출처가 밝히지 않았다는 점을 유지한다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"교차 규칙(매뉴얼 해석은 4·55, 도면 해석은 14)을 적용한 연결 [추정]이다. 다만 19. 사람·보행자 모델 연결의 근거인 f15 는 사람 인식·보행자 추적을 다루지 않으므로 이 연결은 뺀다. 34. 시뮬레이션·예측용 디지털 트윈에 연결하지 않은 것은 적절하다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":false,\"conflicts\":[\"f3·gaps·4절 제안의 '패놉틱 심볼 스포팅'은 용어집 panoptic-symbol-spotting 의 표기 '파놉틱 심볼 스포팅(Panoptic Symbol Spotting)'과 다르다.\"]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f3 및 4절: '패놉틱 심볼 스포팅'을 용어집 표기 '파놉틱 심볼 스포팅(Panoptic Symbol Spotting)'으로 고치고 용어집 페이지(docs/glossary/panoptic-symbol-spotting.md)에 링크한다 — 용어집과 표기가 충돌한다.\",\"f1·f21: 심볼 이해·개수 세기 정확도 '0.40~0.55' 앞에 '대개'를 붙인다 — ref-1088 초록이 'often 0.40-0.55'로 적었다.\",\"f16: '하루 약 130회 운반'을 '하루 최대 130회 운반'으로 고친다 — ref-308 원문이 'up to 130 transport operations are performed per day'이다.\",\"f20: '로봇마다 만든 장면 그래프와 개방형 객체 지도를 대응점으로 정합해'를 '개방형 객체 지도를 담은 공유 3차원 장면 그래프로 여러 로봇의 장면 그래프를 융합하고'로 고친다. 저자 표기의 'MIT 등'은 빼고 저자명(Strader 외)만 쓴다 — ref-1084 초록에 '대응점' 표현과 소속 표기가 없다.\",\"f18: '카메라 시야가 겹치는 구역을 공유 자원으로 순차 배정해 교착을 막는'을 '겹치는 카메라 구역을 배타적 자원으로 관리해 충돌·교착을 막는'으로 고친다. '첫 현장 시연'은 저자가 밝힌 주장으로 쓴다. 9절에서는 로봇에 주행 장비를 두지 않는 이 방식을 ROP 기본 범위가 아니라 원문 19장의 '경계는 제품 전략에 따라 이동할 수 있다'에 해당하는 사례로 서술한다 — 원문이 'exclusive resources'라고 했고, 범위 경계를 지키기 위해서다.\",\"f6: 본문 주장으로 쓰지 않는다. '승강기 앞 대기 구역' 예시도 쓰지 않는다. 11절 oq-197 항목에 부분 근거로만 적는다: 주거 3종(아파트·연립다세대·단독주택)만 있음(f5), 공간 12종에 엘리베이터홀·엘리베이터·계단실 라벨이 있음(ref-1077, 검증 열람 확인), 공개된 공간·객체 목록에 충전 위치 클래스는 없음, 구조 8종 가운데 출입문·창호·벽체를 뺀 5종은 미확인 — 검증 열람에서 공간 라벨 전체가 확인되어 f6 의 예시와 어긋난다.\",\"oq-197: 해결로 바꾸지 않고 열림 상태로 둔다. 45번 페이지 11절과 14. 도면·BIM에서 지도 만들기 페이지 11절 모두 같다 — 구조 라벨 5종이 미확인이고 f6 이 열린 질문으로 옮겨졌다. page_proposals 1번의 11절 목록에 oq-197 을 oq-147·oq-196 과 함께 넣는다.\",\"oq-196·oq-147: 해결로 바꾸지 않는다. oq-196 에는 f3(상업 건물 포함 데이터셋)·f4(쇼핑몰 평면도 83.81~92.54%)를, oq-147 에는 f13(범용 도구 LangExtract, 로봇 문서 전용 아님)을 부분 근거로 적는다.\",\"5절: f5 를 가정 현장 적용 사례로 쓰지 않고 7·8절의 데이터 자원으로 옮긴다. site_matrix_updates 에 '가정' 칸을 넣지 않는다. 5절에는 병원·가정 현장 적용 사례를 찾지 못했다고 밝힌다 — f5 는 로봇 작업이 없는 도면 데이터셋이어서 여섯 항목을 채울 수 없다.\",\"5절 상업 시설 사례(f4): 쇼핑몰 평면도 25장에 대한 논문 평가 결과이며 로봇 현장 배치가 아님을 밝힌다. '실내 로봇 주행'은 저자가 든 활용처로 쓴다. 14. 도면·BIM에서 지도 만들기 페이지 5절에서도 같다.\",\"f12·f21: 같은 문단에 '수치들은 서로 다른 데이터·지표라 직접 비교할 수 없고, 데이터시트 연구는 로봇 매뉴얼이 아닌 일반 제품 데이터시트를 대상으로 했다'는 단서를 둔다. 이 단서는 브리프의 evidence_excerpt 에 있는 한계다.\",\"10절(f25): 19. 사람·보행자 모델 연결을 뺀다 — 근거 f15 는 사람 인식·보행자 추적을 다루지 않는다(ref-308 에 보행자 전용 추적 보고 없음).\",\"6·10절: f15·f19 의 융합 결과(현재 공간 상태)는 18. 실시간 세계 상태·데이터 일관성에 연결하고 34. 시뮬레이션·예측용 디지털 트윈에는 연결하지 않는다 — f19 의 시뮬레이션은 평가 환경일 뿐 가정한 미래를 실험하는 것이 아니다.\",\"각주 발행일: ref-1085 는 '2021-11-29(v2 개정, v1 2021-05-15)', ref-1080 은 '2025-03-25(v2, v1 2024-12-10)', ref-1087 은 '2024-06-24(arXiv v4, IEEE Access 게재일 미확인)', ref-308 은 '2025-12-17'로 적는다. ref-1077·ref-1089 는 발행일을 '미확인'으로 둔다 — 검증 열람에서 판·날짜를 확인했다.\",\"용어 후보 '인프라 장착 센서' 정의에서 '사람'을 인식 대상으로 단정하지 말고 '위치·장애물 등'으로 적는다 — 근거 f15 는 사람 인식을 보고하지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 24건, 미확인 1건, 교차 확인 0건. 강등: 없음(f6 은 열린 질문으로 옮김. 검증 열람에서 AI Hub 공간 라벨 12종 전체를 확인했는데 엘리베이터홀·엘리베이터가 있어 f6 의 예시와 어긋났다). 원문 미열람 출처: 없음. 검증에서 출처 16건을 모두 다시 열었다(논문 다수는 초록 페이지, ref-1078·ref-1083·ref-1086·ref-308·ref-1082 는 본문). 이번 검증은 검색 없이 열람만으로 했다. 문구 정정: f1(대개 0.40~0.55), f16(하루 최대 130회), f18(배타적 자원), f20(대응점 정합·MIT 표기 삭제). 주의: 핵심 수치는 모두 단일 출처다. 문서 파싱·속성 추출·도면 심볼 인식·장면 인식의 수치는 지표와 데이터가 달라 직접 비교할 수 없다. 한국어 문서, 로봇 매뉴얼, 병원·공장·물류창고 같은 비주거 도면에서 측정한 자료는 없다. 병원·가정의 현장 적용 사례도 찾지 못했다. 3절(왜 중요한가)과 9절(책임 경계)은 [추정] 종합이다. oq-197 해결 불인정(구조 라벨 5종 미확인). oq-196·oq-147 은 부분 근거만 있어 열림을 유지한다. 14. 도면·BIM에서 지도 만들기 페이지의 현재 본문이 입력에 없어 그 페이지와의 중복 검사는 하지 못했다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-08",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2601.04819 초록 열람(2026-01-08 v1, 저자 일치). 평면도 120장·질의응답 192쌍·OCR 최대 0.95·심볼 개수 세기 'often 0.40-0.55' 일치. 원문이 '흔히(often)'로 적었으므로 수치 앞에 '대개'를 붙인다. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 1904.01920 초록 열람(2019-04-03). 5,000장·80개 이상 범주·다각형 조밀 주석·다중 작업 CNN 일치. 수집 지역·성능 수치는 넣지 않은 것이 맞다."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2105.07147 초록 열람. 1만 장 이상·주거~상업 건물·30개 범주·벡터 그래픽·CNN-GCN 일치. 발행일 2021-11-29 는 v2 개정일이며 v1 은 2021-05-15 이므로 각주에 판을 밝힌다. 용어는 용어집 표기 '파놉틱 심볼 스포팅'으로 맞춘다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PMC 본문 열람. Sensors 22(7), 2022-03-25, 쇼핑몰 평면도 25장·1,340개 방, 분할 92.54%·인식 90.56%·전체 83.81%, 안내판(디렉터리) 문자 인식·2단계 영역 성장, 활용처로 실내 로봇 주행 일치. 논문 평가 결과이며 로봇 현장 배치가 아니다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: AI Hub 페이지 열람. 2022년·에이치씨아이플러스(주)·48,033장(평면 41,556·단면 3,262·입면 1,595·구조 1,620)·아파트·연립다세대·단독주택·구조 8·공간 12·객체 5종·YOLOv5 mAP 90.33%·DeepLabV3+ mIoU 71.2%·OCR CER 4.95%·과학기술정보통신부 표기 일치. 데이터 자원이지 가정 현장 적용 사례가 아니다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "열린 질문 이동",
+        "note": "부분 불일치: 검증 열람에서 공간 12종 전체(거실·침실·주방·현관·발코니·화장실·실외기룸·드레스룸·다목적공간·엘리베이터홀·계단실·엘리베이터)가 보였다. 엘리베이터홀·엘리베이터 공간 라벨이 있으므로 '승강기 앞 대기 구역 같은 클래스는 없다'는 예시는 뒷받침되지 않는다. 충전 위치 클래스는 공개된 공간·객체 목록에 없지만, 구조 8종 가운데 출입문·창호·벽체를 뺀 5종은 여전히 미확인이다. 따라서 본문 주장으로 쓰지 않고 oq-197 의 부분 근거로만 쓴다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2412.07626 초록 열람(v1 2024-12-10, v2 2025-03-25, CVPR 2025). 9개 문서 출처·19개 레이아웃 범주·15개 속성 라벨·파이프라인과 VLM 비교 일치."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: GitHub raw README 열람. v1.6(2026-04-10)·1,651쪽·10개 문서 유형·영어·간체 중국어·혼합, TeleOCR 96.91·0.0267·96.82, '연구 목적 전용, 상업 사용 불가' 일치. 순위표는 저장소 게시 값이므로 기준일을 함께 적는다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2501.17887 초록과 HTML 본문 열람(2025-01-27). 소속 'IBM Research, Rüschlikon'은 HTML 본문에서 확인했다. DocLayNet·TableFormer·MIT·일반 하드웨어·LangChain·LlamaIndex·spaCy 통합 일치."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2403.17209 초록 열람. IEEE Access 게재·'semantic node'·유효 생성률 62~79% 일치. 2024-06-24 는 arXiv v4 개정일이고 IEEE Access 게재일은 미확인이므로 각주에 이를 밝힌다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv HTML 본문 열람(2026-09-07). 4개 제조사 200쌍, 전기공학·유체동력 분야, 검색 DB 40쌍, 51.8%→71.7%, 원문에서 정답 값을 찾을 수 있는 속성 56.2%(전체 속성 기준), 전문가 검토를 남긴다는 결론 일치. 참고로 evidence_excerpt 의 '이전 오답의 22.4%'는 원문상 '전체 속성의 22.4%'이다(주장 문장에는 없다)."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f10·f11 을 종합한 [추정]이다. 두 수치는 지표가 다르고(유효 생성률과 속성 추출 정확도) 대상이 로봇 매뉴얼이 아닌 일반 데이터시트라는 단서를 같은 문장에 함께 둔다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: GitHub raw README 열람. 원문 위치 연결, 자체 완결 HTML 시각화, Apache 2.0, 'not an officially supported Google product', Gemini·OpenAI·Ollama 지원 일치. 발행일은 미확인. 범용 도구이므로 oq-147(로봇 매뉴얼·URDF 능력 항목)의 해결 근거는 아니다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2606.17073 초록 열람(2026-06-10, LAAS). URDF 식별자를 LLM 으로 해석해 온톨로지를 채우는 방법이며, 초록에 정량 결과가 없다는 점이 일치한다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv HTML 본문 열람(v1 2025-12-17). ArUco 표식 코너로 x·y·θ를 1 Hz 로 계산해 오도메트리와 융합, 640×360 저해상도 영상의 이진 분할, 5 cm 격자, 겹치는 시야는 '대개 가장 가까운' 카메라 하나를 쓴다는 점 일치."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "대부분 확인: 카메라 15대·약 8 m·대당 약 60 m²·로봇 6대·머플러·약 150 m·주기 약 7분은 일치한다. 다만 원문은 'up to 130 transport operations are performed per day'이므로 '하루 약 130회'를 '하루 최대 130회'로 고친다. 현장은 대형 상용차(트럭) 최종 조립 공장이다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: HTML 본문에서 하드웨어 비동기화로 인한 시간 차, 가림·센서 고장·제한된 범위, 작업자·독점 제품·기밀 공정 촬영 우려 문장을 확인했다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2606.06762 초록 열람(2026-06-04). 보정하지 않은 화소 단위 위상 카메라 그래프, 외부 계산만 사용, 로봇 4대·카메라 30대·27 m 통로 6개, 첫 현장 시연이라는 주장 일치. 원문은 겹치는 카메라 구역을 '배타적 자원(exclusive resources)'으로 관리해 충돌·교착을 막는다고 하므로 '순차 배정' 표현을 고친다. 저자 스스로 '첫 시연'이라 밝힌 것이므로 저자 주장으로 표기한다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv HTML 본문 열람(2026-05-18). SEE 16→37 노드·재현율 0.12→0.27, 고정 카메라 3대 F1 0.421(복잡한 아파트)·0.516(가구 배치 방), '30단계 능동 탐색의 재현율에 못 미치지만 주요 구조는 잡는다'는 저자 결론 일치. 모든 실험이 시뮬레이션(Habitat·ReplicaCAD)이다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "핵심 내용 확인: 초록 원문(v2 2025-07-10)에서 공유 3차원 장면 그래프(개방형 객체 지도 포함)를 통한 다중 로봇 장면 그래프 융합, 공유 장면 그래프·로봇 능력의 문맥으로 운영자 의도를 PDDL 목표로 바꾸는 방식, 대규모 실외 실제 작업 평가를 확인했다. 초록에 '대응점으로 정합' 표현은 없고, 초록 페이지에 소속 표기(MIT 등)도 없다. 이 두 부분을 고친다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "근거 finding 을 종합한 [추정]이다. 지표·데이터가 서로 달라(OCR 정확도, 종합 점수, 속성 추출 정확도, 검출 정확도, F1) 직접 비교할 수 없다는 단서를 함께 둔다. f1 수치 앞에는 '대개'를 붙인다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "근거 finding 을 종합한 [추정]이다. 문서·도면 해석 오류가 실제 실행 실패로 이어진 사례 자료는 없다는 한계를 유지한다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "영역 정의와 근거를 종합한 [추정]이다. 융합 결과가 표현하는 현재 상태는 18. 실시간 세계 상태·데이터 일관성에 둔다는 구분이 적절하다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "분류 원문 19장 기준의 연계 대상 구분([추정])이며 적절하다. 카메라망 소유·운영 주체는 출처가 밝히지 않았다는 점을 유지한다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "교차 규칙(매뉴얼 해석은 4·55, 도면 해석은 14)을 적용한 연결 [추정]이다. 다만 19. 사람·보행자 모델 연결의 근거인 f15 는 사람 인식·보행자 추적을 다루지 않으므로 이 연결은 뺀다. 34. 시뮬레이션·예측용 디지털 트윈에 연결하지 않은 것은 적절하다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": false,
+      "conflicts": [
+        "f3·gaps·4절 제안의 '패놉틱 심볼 스포팅'은 용어집 panoptic-symbol-spotting 의 표기 '파놉틱 심볼 스포팅(Panoptic Symbol Spotting)'과 다르다."
+      ]
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f3 및 4절: '패놉틱 심볼 스포팅'을 용어집 표기 '파놉틱 심볼 스포팅(Panoptic Symbol Spotting)'으로 고치고 용어집 페이지(docs/glossary/panoptic-symbol-spotting.md)에 링크한다 — 용어집과 표기가 충돌한다.",
+      "f1·f21: 심볼 이해·개수 세기 정확도 '0.40~0.55' 앞에 '대개'를 붙인다 — ref-1088 초록이 'often 0.40-0.55'로 적었다.",
+      "f16: '하루 약 130회 운반'을 '하루 최대 130회 운반'으로 고친다 — ref-308 원문이 'up to 130 transport operations are performed per day'이다.",
+      "f20: '로봇마다 만든 장면 그래프와 개방형 객체 지도를 대응점으로 정합해'를 '개방형 객체 지도를 담은 공유 3차원 장면 그래프로 여러 로봇의 장면 그래프를 융합하고'로 고친다. 저자 표기의 'MIT 등'은 빼고 저자명(Strader 외)만 쓴다 — ref-1084 초록에 '대응점' 표현과 소속 표기가 없다.",
+      "f18: '카메라 시야가 겹치는 구역을 공유 자원으로 순차 배정해 교착을 막는'을 '겹치는 카메라 구역을 배타적 자원으로 관리해 충돌·교착을 막는'으로 고친다. '첫 현장 시연'은 저자가 밝힌 주장으로 쓴다. 9절에서는 로봇에 주행 장비를 두지 않는 이 방식을 ROP 기본 범위가 아니라 원문 19장의 '경계는 제품 전략에 따라 이동할 수 있다'에 해당하는 사례로 서술한다 — 원문이 'exclusive resources'라고 했고, 범위 경계를 지키기 위해서다.",
+      "f6: 본문 주장으로 쓰지 않는다. '승강기 앞 대기 구역' 예시도 쓰지 않는다. 11절 oq-197 항목에 부분 근거로만 적는다: 주거 3종(아파트·연립다세대·단독주택)만 있음(f5), 공간 12종에 엘리베이터홀·엘리베이터·계단실 라벨이 있음(ref-1077, 검증 열람 확인), 공개된 공간·객체 목록에 충전 위치 클래스는 없음, 구조 8종 가운데 출입문·창호·벽체를 뺀 5종은 미확인 — 검증 열람에서 공간 라벨 전체가 확인되어 f6 의 예시와 어긋난다.",
+      "oq-197: 해결로 바꾸지 않고 열림 상태로 둔다. 45번 페이지 11절과 14. 도면·BIM에서 지도 만들기 페이지 11절 모두 같다 — 구조 라벨 5종이 미확인이고 f6 이 열린 질문으로 옮겨졌다. page_proposals 1번의 11절 목록에 oq-197 을 oq-147·oq-196 과 함께 넣는다.",
+      "oq-196·oq-147: 해결로 바꾸지 않는다. oq-196 에는 f3(상업 건물 포함 데이터셋)·f4(쇼핑몰 평면도 83.81~92.54%)를, oq-147 에는 f13(범용 도구 LangExtract, 로봇 문서 전용 아님)을 부분 근거로 적는다.",
+      "5절: f5 를 가정 현장 적용 사례로 쓰지 않고 7·8절의 데이터 자원으로 옮긴다. site_matrix_updates 에 '가정' 칸을 넣지 않는다. 5절에는 병원·가정 현장 적용 사례를 찾지 못했다고 밝힌다 — f5 는 로봇 작업이 없는 도면 데이터셋이어서 여섯 항목을 채울 수 없다.",
+      "5절 상업 시설 사례(f4): 쇼핑몰 평면도 25장에 대한 논문 평가 결과이며 로봇 현장 배치가 아님을 밝힌다. '실내 로봇 주행'은 저자가 든 활용처로 쓴다. 14. 도면·BIM에서 지도 만들기 페이지 5절에서도 같다.",
+      "f12·f21: 같은 문단에 '수치들은 서로 다른 데이터·지표라 직접 비교할 수 없고, 데이터시트 연구는 로봇 매뉴얼이 아닌 일반 제품 데이터시트를 대상으로 했다'는 단서를 둔다. 이 단서는 브리프의 evidence_excerpt 에 있는 한계다.",
+      "10절(f25): 19. 사람·보행자 모델 연결을 뺀다 — 근거 f15 는 사람 인식·보행자 추적을 다루지 않는다(ref-308 에 보행자 전용 추적 보고 없음).",
+      "6·10절: f15·f19 의 융합 결과(현재 공간 상태)는 18. 실시간 세계 상태·데이터 일관성에 연결하고 34. 시뮬레이션·예측용 디지털 트윈에는 연결하지 않는다 — f19 의 시뮬레이션은 평가 환경일 뿐 가정한 미래를 실험하는 것이 아니다.",
+      "각주 발행일: ref-1085 는 '2021-11-29(v2 개정, v1 2021-05-15)', ref-1080 은 '2025-03-25(v2, v1 2024-12-10)', ref-1087 은 '2024-06-24(arXiv v4, IEEE Access 게재일 미확인)', ref-308 은 '2025-12-17'로 적는다. ref-1077·ref-1089 는 발행일을 '미확인'으로 둔다 — 검증 열람에서 판·날짜를 확인했다.",
+      "용어 후보 '인프라 장착 센서' 정의에서 '사람'을 인식 대상으로 단정하지 말고 '위치·장애물 등'으로 적는다 — 근거 f15 는 사람 인식을 보고하지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 24건, 미확인 1건, 교차 확인 0건. 강등: 없음(f6 은 열린 질문으로 옮김. 검증 열람에서 AI Hub 공간 라벨 12종 전체를 확인했는데 엘리베이터홀·엘리베이터가 있어 f6 의 예시와 어긋났다). 원문 미열람 출처: 없음. 검증에서 출처 16건을 모두 다시 열었다(논문 다수는 초록 페이지, ref-1078·ref-1083·ref-1086·ref-308·ref-1082 는 본문). 이번 검증은 검색 없이 열람만으로 했다. 문구 정정: f1(대개 0.40~0.55), f16(하루 최대 130회), f18(배타적 자원), f20(대응점 정합·MIT 표기 삭제). 주의: 핵심 수치는 모두 단일 출처다. 문서 파싱·속성 추출·도면 심볼 인식·장면 인식의 수치는 지표와 데이터가 달라 직접 비교할 수 없다. 한국어 문서, 로봇 매뉴얼, 병원·공장·물류창고 같은 비주거 도면에서 측정한 자료는 없다. 병원·가정의 현장 적용 사례도 찾지 못했다. 3절(왜 중요한가)과 9절(책임 경계)은 [추정] 종합이다. oq-197 해결 불인정(구조 라벨 5종 미확인). oq-196·oq-147 은 부분 근거만 있어 열림을 유지한다. 14. 도면·BIM에서 지도 만들기 페이지의 현재 본문이 입력에 없어 그 페이지와의 중복 검사는 하지 못했다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 4429,
+  "type": "result",
+  "duration_ms": 240300,
+  "uuid": "0de5064f-f7d7-4829-9075-dd6846ee05f2",
+  "ttft_stream_ms": 1052,
+  "time_to_request_ms": 75,
+  "time_to_request_phases_ms": {
+    "other": 30,
+    "system_prompt": 13,
+    "turn_start_resume": 0,
+    "process_user_input": 12,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 1,
+    "query_setup": 1,
+    "tool_schema_build": 4,
+    "message_normalization": 2,
+    "client_creation": 7
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 25,
+  "time_to_request_cpu_ms": 102,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1052,
+  "time_to_request_from_spawn_ms": 5305711,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790731610650.6677,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 241.5
+}

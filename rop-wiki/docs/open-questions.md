@@ -244,8 +244,12 @@ version: 1
 | oq-222 | 학습된 배정·경로 정책을 현장에 쓸 때 분포 이동을 감지해 탐색·규칙 기반 정책으로 되돌리는 기준을 정한 연구나 제품이 있는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
 | oq-223 | 46. 예측·학습 기반 최적화의 수요 예측(작업 요청·물동량 예측)과 분류 원문 19장이 외부 연계로 둔 수요예측(상위 업무 시스템)의 경계를 어떻게 나눌 것인가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[23. 업무 시스템 연동](categories/integration/business-system-integration.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
 | oq-224 | 국내 물류창고·병원·공장에서 로봇 배정·경로에 강화학습·모방학습 같은 학습 기반 방법을 적용한 공개 사례나 연구가 있는가? | [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-09-30 | 2026-09-30-09 | 열림 | — |
+| oq-225 | OmniDocBench 같은 공개 문서 파싱 벤치마크에 한국어 문서가 없는데, 한국어 로봇 매뉴얼·설비 도면을 파싱·추출할 때의 정확도를 측정한 자료가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[4. 이기종 로봇 등록](categories/robot-ontology/heterogeneous-robot-registration.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
+| oq-226 | 일반 제품 데이터시트가 아니라 로봇 매뉴얼(능력·실행 조건·오류 코드)을 대상으로 LLM 추출 정확도를 측정한 공개 벤치마크나 연구가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
+| oq-227 | 하드웨어 동기화가 없는 고정 카메라와 로봇 인식 결과를 하나의 현재 공간 상태로 합칠 때 허용할 시간 차와 좌표 정합 기준을 정한 연구나 제품 문서가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
+| oq-228 | 플랫폼이 시설 CCTV 영상을 로봇 운영용 장면 인식에 쓸 때 국내 개인정보 보호 법령의 고정형 영상정보처리기기 규정상 목적 외 이용이나 안내 의무가 문제 되는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
 
-상태별 건수: 열림 223건, 조사 중 1건
+상태별 건수: 열림 227건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

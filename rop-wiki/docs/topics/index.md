@@ -53,6 +53,13 @@ version: 1
 | 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술](2026/2026-09-30-area44-s6.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
 | 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area44-s7.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
 | 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료](2026/2026-09-30-area44-s8.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 다른 연구영역과의 연결](2026/2026-09-30-area45-s10.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 열린 질문](2026/2026-09-30-area45-s11.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 왜 중요한가](2026/2026-09-30-area45-s3.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 핵심 개념과 용어](2026/2026-09-30-area45-s4.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 대표 접근법과 기술](2026/2026-09-30-area45-s6.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area45-s7.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 대표 연구와 자료](2026/2026-09-30-area45-s8.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 다른 연구영역과의 연결](2026/2026-09-30-area46-s10.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 열린 질문](2026/2026-09-30-area46-s11.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 왜 중요한가](2026/2026-09-30-area46-s3.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |

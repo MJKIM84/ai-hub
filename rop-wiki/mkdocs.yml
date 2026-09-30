@@ -299,6 +299,13 @@ nav:
       - 46. 예측·학습 기반 최적화 — 왜 중요한가: topics/2026/2026-09-30-area46-s3.md
       - 46. 예측·학습 기반 최적화 — 열린 질문: topics/2026/2026-09-30-area46-s11.md
       - 46. 예측·학습 기반 최적화 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area46-s10.md
+      - 45. 문서·도면·장면 이해 — 대표 연구와 자료: topics/2026/2026-09-30-area45-s8.md
+      - 45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area45-s7.md
+      - 45. 문서·도면·장면 이해 — 대표 접근법과 기술: topics/2026/2026-09-30-area45-s6.md
+      - 45. 문서·도면·장면 이해 — 핵심 개념과 용어: topics/2026/2026-09-30-area45-s4.md
+      - 45. 문서·도면·장면 이해 — 왜 중요한가: topics/2026/2026-09-30-area45-s3.md
+      - 45. 문서·도면·장면 이해 — 열린 질문: topics/2026/2026-09-30-area45-s11.md
+      - 45. 문서·도면·장면 이해 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area45-s10.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료: topics/2026/2026-09-30-area44-s8.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area44-s7.md
       - 44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술: topics/2026/2026-09-30-area44-s6.md
@@ -692,6 +699,7 @@ nav:
     - 목표 조건 (Goal Condition): glossary/goal-condition.md
     - 무선 업데이트 (Over-the-Air Update (OTA)): glossary/over-the-air-update.md
     - 무충돌 복제 데이터 타입 (Conflict-free Replicated Data Type (CRDT)): glossary/crdt.md
+    - 문서 레이아웃 분석 (Document Layout Analysis): glossary/document-layout-analysis.md
     - 물류 단위 일련 코드 (Serial Shipping Container Code (SSCC)): glossary/sscc.md
     - 미션 명세 패턴 (Mission Specification Pattern): glossary/mission-specification-pattern.md
     - 반개방형 대기행렬 네트워크 (Semi-Open Queueing Network (SOQN)): glossary/semi-open-queueing-network.md
@@ -799,6 +807,7 @@ nav:
     - 이산 사건 시뮬레이션 (Discrete Event Simulation (DES)): glossary/discrete-event-simulation.md
     - 이중 시스템 구조 (Dual-system Architecture (System 1 / System 2)): glossary/dual-system-architecture.md
     - 인클레이브 (Enclave (SROS 2)): glossary/enclave.md
+    - 인프라 장착 센서 (Infrastructure-mounted Sensing): glossary/infrastructure-mounted-sensing.md
     - 일정 안정성 (Schedule Stability): glossary/schedule-stability.md
     - 자동 시뮬레이션 모델 생성 (Automatic Simulation Model Generation (ASMG)): glossary/automatic-simulation-model-generation.md
     - 자동화 편향 (Automation Bias): glossary/automation-bias.md
@@ -830,6 +839,7 @@ nav:
     - 차선 폐쇄 (Lane Closure): glossary/lane-closure.md
     - 최근접 차량 우선 규칙 (Nearest Vehicle First (NVF) Rule): glossary/nearest-vehicle-first-rule.md
     - 최적성 간격 (Optimality Gap): glossary/optimality-gap.md
+    - 출처 근거 연결 (Source Grounding): glossary/source-grounding.md
     - 충돌 기반 탐색 (Conflict-Based Search (CBS)): glossary/conflict-based-search.md
     - 충전 상태 (State of Charge (SOC)): glossary/state-of-charge.md
     - 층 정렬 기준점 (Fiducial (Level Alignment Fiducial)): glossary/level-alignment-fiducial.md
@@ -847,6 +857,7 @@ nav:
     - 편집 비용 (Edit Cost): glossary/edit-cost.md
     - 평면도 인식 (Floor Plan Recognition): glossary/floor-plan-recognition.md
     - 포그 컴퓨팅 (Fog Computing): glossary/fog-computing.md
+    - 표 구조 인식 (Table Structure Recognition): glossary/table-structure-recognition.md
     - 풋월 (Put Wall): glossary/put-wall.md
     - 프로세스 마이닝 (Process Mining): glossary/process-mining.md
     - 프롬프트 주입 (Prompt Injection): glossary/prompt-injection.md
@@ -1058,7 +1069,19 @@ nav:
     - ref-1062 — Model-Based Reinforcement Learning for Heterogeneous Multi-Robot Task Assignment Under Distribution Shifts: references/ref-1062.md
     - ref-1063 — 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명: references/ref-1063.md
     - ref-1064 — Guidance Graph Optimization for Lifelong Multi-Agent Path Finding: references/ref-1064.md
+    - ref-1065 — Multi-Robot Planning and Control from CCTV Camera Networks in a Real Warehouse: references/ref-1065.md
+    - ref-1066 — A High-Precision Method for Segmentation and Recognition of Shopping Mall Plans: references/ref-1066.md
+    - 'ref-1067 — OmniDocBench: Benchmarking Diverse PDF Document Parsing with Comprehensive Annotations': references/ref-1067.md
+    - 'ref-1068 — Docling: An Efficient Open-Source Toolkit for AI-driven Document Conversion': references/ref-1068.md
+    - ref-1069 — RGB-only Active 3D Scene Graph Generation for Indoor Mobile Robots: references/ref-1069.md
     - ref-107 — 물류시설의 개발 및 운영에 관한 법률: references/ref-107.md
+    - ref-1070 — Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs: references/ref-1070.md
+    - ? 'ref-1071 — AAS-RAIL: Improving Information Extraction for Asset Administration Shells through Retrieval-Augmented In-Context Learning'
+      : references/ref-1071.md
+    - ? 'ref-1072 — Generation of Asset Administration Shell with Large Language Model Agents: Toward Semantic Interoperability in Digital Twins in the Context of Industry 4.0'
+      : references/ref-1072.md
+    - 'ref-1073 — AECV-Bench: Benchmarking Multimodal Models on Architectural and Engineering Drawings Understanding': references/ref-1073.md
+    - ref-1074 — LangExtract — README: references/ref-1074.md
     - ref-108 — AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템을 중심으로 -: references/ref-108.md
     - ref-109 — A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse: references/ref-109.md
     - ref-110 — Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2: references/ref-110.md

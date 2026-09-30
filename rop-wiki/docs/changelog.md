@@ -46,6 +46,30 @@ version: 1
 | 2026-09-30-09 | 생성 | [docs/glossary/imitation-learning.md](glossary/imitation-learning.md) | 용어집 항목 모방 학습 |
 | 2026-09-30-09 | 생성 | [docs/glossary/guidance-graph.md](glossary/guidance-graph.md) | 용어집 항목 안내 그래프 |
 | 2026-09-30-09 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-30-08 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 영역 심화: 3~11절 신규 작성(문서 파싱·데이터시트 속성 추출·도면 인식·고정 카메라와 로봇 인식 융합, 상업 시설·제조 공장·물류창고·실외 적용 사례), 각주 16건, 새 열린 질문 4건. 2차: 10절 첫 문장의 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s6.md](topics/2026/2026-09-30-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,104자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s11.md](topics/2026/2026-09-30-area45-s11.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,145자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s7.md](topics/2026/2026-09-30-area45-s7.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,004자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s10.md](topics/2026/2026-09-30-area45-s10.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차: 세 줄 요약 첫 항목과 본문 첫 문장의 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s4.md](topics/2026/2026-09-30-area45-s4.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "4. 핵심 개념과 용어" 절(862자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s8.md](topics/2026/2026-09-30-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(798자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s3.md](topics/2026/2026-09-30-area45-s3.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "3. 왜 중요한가" 절(729자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 요약 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 45. 문서·도면·장면 이해: 영역 심화: 3~11절 신규 작성(문서 파싱·데이터시트 속성 추출·도면 인식·고정 카메라와 로봇 인식 융합, 현장 유형 사례 4건), 각주 16건, 새 열린 질문 4건. 2차: 10절 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1065.md](references/ref-1065.md) | 참고문헌 ref-1065 등록: Multi-Robot Planning and Control from CCTV Camera Networks i… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1066.md](references/ref-1066.md) | 참고문헌 ref-1066 등록: A High-Precision Method for Segmentation and Recognition of… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1067.md](references/ref-1067.md) | 참고문헌 ref-1067 등록: OmniDocBench: Benchmarking Diverse PDF Document Parsing with… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1068.md](references/ref-1068.md) | 참고문헌 ref-1068 등록: Docling: An Efficient Open-Source Toolkit for AI-driven Docu… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1069.md](references/ref-1069.md) | 참고문헌 ref-1069 등록: RGB-only Active 3D Scene Graph Generation for Indoor Mobile… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1070.md](references/ref-1070.md) | 참고문헌 ref-1070 등록: Language-Grounded Hierarchical Planning and Execution with M… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1071.md](references/ref-1071.md) | 참고문헌 ref-1071 등록: AAS-RAIL: Improving Information Extraction for Asset Adminis… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1072.md](references/ref-1072.md) | 참고문헌 ref-1072 등록: Generation of Asset Administration Shell with Large Language… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1073.md](references/ref-1073.md) | 참고문헌 ref-1073 등록: AECV-Bench: Benchmarking Multimodal Models on Architectural… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1074.md](references/ref-1074.md) | 참고문헌 ref-1074 등록: LangExtract — README |
+| 2026-09-30-08 | 생성 | [docs/glossary/document-layout-analysis.md](glossary/document-layout-analysis.md) | 용어집 항목 문서 레이아웃 분석 |
+| 2026-09-30-08 | 생성 | [docs/glossary/table-structure-recognition.md](glossary/table-structure-recognition.md) | 용어집 항목 표 구조 인식 |
+| 2026-09-30-08 | 생성 | [docs/glossary/source-grounding.md](glossary/source-grounding.md) | 용어집 항목 출처 근거 연결 |
+| 2026-09-30-08 | 생성 | [docs/glossary/infrastructure-mounted-sensing.md](glossary/infrastructure-mounted-sensing.md) | 용어집 항목 인프라 장착 센서 |
+| 2026-09-30-08 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-30-07 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 영역 심화: seed → draft, 3~11절 신규 작성(자동 분리 후 요약·링크), 각주 15건, 1차 수정 지시 10건 이행. 2차: 5절 도입 문장을 가정 [사실]과 제조 공장·물류창고 [추정] 벤더 주장으로 분리, 5절에 VLA(용어집 링크)·PoC, 7절에 PDDL 풀어쓰기 |
 | 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s6.md](topics/2026/2026-09-30-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,491자)을 옮겼다(2차 재실행에서 변경 없음) |
 | 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s4.md](topics/2026/2026-09-30-area44-s4.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "4. 핵심 개념과 용어" 절(1,296자)을 옮겼다(2차 재실행에서 변경 없음) |

@@ -3518,6 +3518,65 @@
       "ref_id": "ref-1060",
       "run_id": "2026-09-30-09",
       "date": "2026-09-30"
+    },
+    {
+      "name": "Docling (AI 기반 문서 변환 오픈소스 도구)",
+      "org": "IBM Research",
+      "kind": "오픈소스",
+      "related_areas": [
+        45,
+        4,
+        55
+      ],
+      "url": "https://arxiv.org/abs/2501.17887",
+      "summary": "여러 문서 형식을 하나의 구조화 표현으로 바꾸는 MIT 라이선스 도구로, 레이아웃 분석에 DocLayNet 기반 모델, 표 구조 인식에 TableFormer 를 쓴다.",
+      "ref_id": "ref-1068",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "LangExtract (원문 위치 근거를 붙이는 LLM 정보 추출 라이브러리)",
+      "org": "Google (google/langextract)",
+      "kind": "오픈소스",
+      "related_areas": [
+        45,
+        4,
+        7
+      ],
+      "url": "https://github.com/google/langextract",
+      "summary": "LLM 으로 비정형 텍스트에서 구조화 정보를 추출하면서 항목마다 원문 위치를 연결하고 HTML 검토 화면을 만드는 Apache 2.0 라이브러리. 구글 공식 지원 제품은 아니다.",
+      "ref_id": "ref-1074",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "AECV-Bench (건축·엔지니어링 도면 이해 벤치마크)",
+      "org": "Kondratenko, A. 외 (arXiv 2601.04819)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        45,
+        14,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2601.04819",
+      "summary": "평면도 120장 개수 세기와 질의응답 192쌍으로 멀티모달 모델의 도면 이해를 평가하며, 글자 인식은 최대 0.95, 심볼 이해·개수 세기는 대개 0.40~0.55 로 보고했다.",
+      "ref_id": "ref-1073",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FloorPlanCAD (파놉틱 심볼 스포팅용 CAD 평면도 데이터셋)",
+      "org": "Fan, Z. 외 (arXiv 2105.07147)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        45,
+        14
+      ],
+      "url": "https://arxiv.org/abs/2105.07147",
+      "summary": "주거·상업 건물 CAD 평면도 1만 장 이상을 벡터 그래픽으로 담고 30개 범주를 주석한 데이터셋으로, 파놉틱 심볼 스포팅 과제와 기준 방법을 제시했다.",
+      "ref_id": "ref-067",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
     }
   ]
 }

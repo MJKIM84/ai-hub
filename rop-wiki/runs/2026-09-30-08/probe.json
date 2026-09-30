@@ -1,0 +1,65 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": true,
+  "web_fetch_mirror_available": true,
+  "fetch_mode": "full",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-30 10:18:35 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "The search returned GS1 sources describing EPCIS as a standard for capturing and sharing supply chain visibility event data, with version 2.0 adding JSON-LD and REST support.",
+      "elapsed_sec": 12.6,
+      "num_turns": 3,
+      "usage": {
+        "step": "probe-search",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1167,
+        "cache_read_input_tokens": 6687,
+        "output_tokens": 212,
+        "cost_usd": 0.038,
+        "seconds": 12.6,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch": {
+      "available": true,
+      "detail": "The fetch worked; the page title is an unfilled template, \"{{CURIEPREFIX.toUpperCase()}} Linked Data Model\", which is likely the EPCIS/CBV Linked Data Model.",
+      "elapsed_sec": 8.6,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 212,
+        "cache_read_input_tokens": 6857,
+        "output_tokens": 258,
+        "cost_usd": 0.0104,
+        "seconds": 8.6,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch_mirror": {
+      "available": true,
+      "detail": "일반 열람 가능 또는 미러 점검 URL 없음"
+    },
+    "web_fetch_curl": {
+      "available": true,
+      "status": 200,
+      "detail": "curl 200"
+    }
+  }
+}
