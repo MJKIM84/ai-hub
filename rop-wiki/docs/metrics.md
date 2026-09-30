@@ -37,7 +37,7 @@ version: 1
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
-| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -178,7 +178,7 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | seed | — | 2026-09-28 | 1 |
+| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-09-30 | 2 |
 | [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | seed | — | 2026-09-28 | 1 |
 | [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | seed | — | 2026-09-28 | 1 |
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 126회 중 최종 통과 124회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 124, None 2
-- 2차 검증 판정: 통과 124, None 2
+- 실행 127회 중 최종 통과 125회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 125, None 2
+- 2차 검증 판정: 통과 125, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 526 |
-| 오픈소스 문서 | 211 |
-| 표준 | 176 |
-| 기사 | 100 |
-| 정부·연구기관 | 91 |
+| 논문 | 527 |
+| 오픈소스 문서 | 212 |
+| 표준 | 178 |
+| 기사 | 102 |
+| 정부·연구기관 | 98 |
 | 벤더 문서 | 71 |
 | 업계 보고서 | 24 |
 
-신뢰도: medium 876건, high 222건, low 101건
+신뢰도: medium 882건, high 227건, low 103건
 
 ### 현장 유형 매트릭스 채움률
 
-- 70/119 칸 (59%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 72/119 칸 (61%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

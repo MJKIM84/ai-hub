@@ -292,6 +292,12 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area58-s7.md
+      - 58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술: topics/2026/2026-09-30-area58-s6.md
+      - 58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어: topics/2026/2026-09-30-area58-s4.md
+      - 58. 다사업자 책임·계약·데이터 — 왜 중요한가: topics/2026/2026-09-30-area58-s3.md
+      - 58. 다사업자 책임·계약·데이터 — 열린 질문: topics/2026/2026-09-30-area58-s11.md
+      - 58. 다사업자 책임·계약·데이터 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area58-s10.md
       - 56. 운영 이관·확대·교육 — 대표 연구와 자료: topics/2026/2026-09-30-area56-s8.md
       - 56. 운영 이관·확대·교육 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area56-s7.md
       - 56. 운영 이관·확대·교육 — 대표 접근법과 기술: topics/2026/2026-09-30-area56-s6.md
@@ -675,6 +681,7 @@ nav:
     - AGV 기술 데이터 서브모델 (Technical Data for AGV in Intralogistics (IDTA 02047)): glossary/agv-technical-data-submodel.md
     - AI 관리 시스템 (Artificial Intelligence Management System (AIMS)): glossary/artificial-intelligence-management-system.md
     - AMR 협업 피킹 (AMR-assisted Order Picking): glossary/amr-assisted-order-picking.md
+    - API 폐기 정책 (API Deprecation Policy): glossary/api-deprecation-policy.md
     - AsyncAPI 명세 (AsyncAPI Specification): glossary/asyncapi-specification.md
     - B2MML (Business To Manufacturing Markup Language (B2MML)): glossary/b2mml.md
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
@@ -752,6 +759,7 @@ nav:
     - 다중 플릿 오케스트레이션 (Multi-Fleet Orchestration): glossary/multi-fleet-orchestration.md
     - 대조적 설명 (Contrastive Explanation): glossary/contrastive-explanation.md
     - 대체 이름 (Alternative Name (IMDF alt_name)): glossary/alternative-name.md
+    - 데이터 보유자 (Data Holder (EU Data Act)): glossary/data-holder.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
     - 동력·힘 제한 (Power and Force Limiting (PFL)): glossary/power-and-force-limiting.md
@@ -781,6 +789,7 @@ nav:
     - 명시적 확인·암시적 확인 (Explicit / Implicit Confirmation): glossary/explicit-implicit-confirmation.md
     - 명확화 질문 (Clarification Question (Follow-up Clarification)): glossary/clarification-question.md
     - 모델 검사 (Model Checking): glossary/model-checking.md
+    - 모델 계약 조항 (Model Contractual Terms (MCTs)): glossary/model-contractual-terms.md
     - 모델 대체·라우팅 희석 (Model Substitution / Routing Dilution): glossary/model-substitution-and-routing-dilution.md
     - 모델 레지스트리 (Model Registry): glossary/model-registry.md
     - 모델 컨텍스트 프로토콜 (Model Context Protocol (MCP)): glossary/model-context-protocol.md
@@ -870,6 +879,7 @@ nav:
     - 신호 시간 논리 (Signal Temporal Logic (STL)): glossary/signal-temporal-logic.md
     - 실내 지도 데이터 형식 (Indoor Mapping Data Format (IMDF)): glossary/indoor-mapping-data-format.md
     - 실외이동로봇 운행안전인증 (Outdoor Mobile Robot Operational Safety Certification): glossary/outdoor-mobile-robot-operational-safety-certification.md
+    - 실질적 변경 (Substantial Modification): glossary/substantial-modification.md
     - 실패 설명 (Failure Explanation): glossary/failure-explanation.md
     - 안내 그래프 (Guidance Graph): glossary/guidance-graph.md
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
@@ -1343,6 +1353,11 @@ nav:
     - ? 'ref-119 — IEC 62264-3:2016 - Enterprise-control system integration — Part 3: Activity models of manufacturing operations management'
       : references/ref-119.md
     - ref-1190 — 한국로봇산업진흥원, 450억 규모 '2026년 로봇활용 제조혁신 지원사업' 착수: references/ref-1190.md
+    - ref-1191 — Data Act explained: references/ref-1191.md
+    - ? ref-1192 — Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts
+      : references/ref-1192.md
+    - ref-1193 — 산업데이터 만든 자에게 사용·수익권 부여: references/ref-1193.md
+    - ref-1194 — 산업통상부_산업데이터 계약 가이드라인_20230109: references/ref-1194.md
     - ref-1195 — 로봇활용 표준공정모델로 제조산업 전 분야에 로봇보급 본격 착수: references/ref-1195.md
     - ref-1196 — “제조 로봇 표준공정 모델 적용 사업 국내를 넘어 ... (제목 일부만 확인): references/ref-1196.md
     - ref-1197 — Service Robots See Global Growth Boom: references/ref-1197.md
@@ -1354,7 +1369,18 @@ nav:
     - ref-1201 — 급속 확산되는 물류현장의 로봇적용 사례: references/ref-1201.md
     - ref-1202 — IEC 62559 - use case methodology: references/ref-1202.md
     - ref-1203 — ISO/IEC/IEEE 29148:2018 Systems and software engineering — Life cycle processes — Requirements engineering: references/ref-1203.md
+    - ref-1204 — Kubernetes Deprecation Policy: references/ref-1204.md
+    - ? 'ref-1205 — ISO/IEC 19086-1:2016 Information technology - Cloud computing - Service level agreement (SLA) framework - Part 1: Overview and concepts'
+      : references/ref-1205.md
+    - ? ref-1206 — IEC 62443-2-4:2023 Security for industrial automation and control systems - Security program requirements for IACS service providers
+      : references/ref-1206.md
+    - ref-1207 — 21 CFR § 11.10 - Controls for closed systems: references/ref-1207.md
+    - 'ref-1208 — Liability Allocation in Autonomous Industrial Systems: Who Pays when the AI is Wrong?': references/ref-1208.md
+    - 'ref-1209 — Article 25: Responsibilities Along the AI Value Chain | EU Artificial Intelligence Act': references/ref-1209.md
     - ref-121 — The complexity of soundness in workflow nets: references/ref-121.md
+    - 'ref-1210 — Article 26: Obligations of Deployers of High-Risk AI Systems | EU Artificial Intelligence Act': references/ref-1210.md
+    - ref-1211 — 공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까: references/ref-1211.md
+    - ref-1212 — Regulation 2023/1230/EU - machinery: references/ref-1212.md
     - ref-122 — OCEL (Object-Centric Event Log) 2.0 Specification: references/ref-122.md
     - ref-123 — SCOR Model — Fulfill F1.3 Pick Product: references/ref-123.md
     - ref-124 — 스마트물류센터 인증제 안내: references/ref-124.md

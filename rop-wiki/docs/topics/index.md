@@ -147,6 +147,12 @@ version: 1
 | 2026-09-30 | [56. 운영 이관·확대·교육 — 대표 접근법과 기술](2026/2026-09-30-area56-s6.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
 | 2026-09-30 | [56. 운영 이관·확대·교육 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area56-s7.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
 | 2026-09-30 | [56. 운영 이관·확대·교육 — 대표 연구와 자료](2026/2026-09-30-area56-s8.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 다른 연구영역과의 연결](2026/2026-09-30-area58-s10.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 열린 질문](2026/2026-09-30-area58-s11.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 왜 중요한가](2026/2026-09-30-area58-s3.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](2026/2026-09-30-area58-s4.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](2026/2026-09-30-area58-s6.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area58-s7.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

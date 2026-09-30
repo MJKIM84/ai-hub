@@ -1,0 +1,364 @@
+{
+  "duration_api_ms": 267704,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.9809117999999997,
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 125630,
+    "cache_read_input_tokens": 1535364,
+    "output_tokens": 21317,
+    "output_tokens_details": {
+      "thinking_tokens": 9138
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 125630,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15718,
+        "cache_read_input_tokens": 212965,
+        "cache_creation_input_tokens": 1131,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1131
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 182465,
+      "outputTokens": 5986,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 3,
+      "costUSD": 0.24239499999999997,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 16,
+      "outputTokens": 21317,
+      "cacheReadInputTokens": 1535364,
+      "cacheCreationInputTokens": 125630,
+      "webSearchRequests": 0,
+      "costUSD": 1.7385168,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9138,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 22,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-22\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1345 열람 확인(EC, Data Act explained, 최종 갱신 2025-12-15). 연결 제품 데이터 접근·이용·이전, 데이터 보유자–사용자 계약, 사용자 동의 없는 비개인 데이터 이용 금지, 2025-09-12 적용 모두 원문에 있다. 근거 발췌의 '설계 의무 2026-09-12'는 이 페이지에 없어 본문에 쓰지 않도록 지시했다. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1345 열람 확인. 제3자 공유(DMA 게이트키퍼 제외), 'always unfair'·'presumed unfair' 불공정 조항 목록, 2027-01-12 전환 요금 완전 폐지가 원문과 일치한다. 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1346 열람 확인(EC, 2025-11-19, 권고 초안). 모델 계약 조항 4벌과 클라우드 표준 계약 조항 6개(Switching & Exit, Termination, Security & Business continuity, Non-Dispersion, Non-Amendment, Liability)의 이름·구성이 일치하고, 합리적 보상 지침은 추후 발표 예정으로 되어 있다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1347 열람 확인(지디넷코리아, 2022-03-15). 산업데이터 생성 투자자의 사용·수익권, 7월 시행, 계약 체결 권고와 정부 지침 마련, 지침 방향이 기사에 있다. 법 조문을 직접 확인한 것이 아니라 산업통상자원부 발표를 전한 기사 1건에 기대므로 신뢰도는 low 그대로 둔다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1348 열람 확인(공공데이터포털, 등록 2023-04-05, 수정 2025-12-09, 432쪽). 목차 구성과 '유의사항, 표준계약서, 업종별 사례' 안내가 일치한다. ref-1347은 가이드라인 목차를 뒷받침하지 않으므로 f5 근거에서 빼게 했다. 가이드라인 본문 PDF는 열지 않았다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-031 원문(data/source_texts/ref-031.txt, VDA 5050 3.0.0)으로 확인했다. 1장의 의미적 버전 문장(주 버전은 'typically' 호환을 깨는 변경), 4.2절 토픽 구조 interfaceName/majorVersion/manufacturer/serialNumber/topic과 예 vda5050/v3/KIT/0001/order, GitHub 저장소를 통한 변경 제안이 모두 원문에 있다. 기준일은 확인일 2026-09-30이다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1349 열람 확인. Rule #1(API 그룹 버전을 올려야만 제거), Rule #2(왕복 변환 시 정보 무손실), GA는 주 버전 안에서 제거 불가, 베타는 폐기 뒤 9개월 또는 3개 부 릴리스(둘 중 긴 쪽) 뒤 제거, v1.19부터 Warning 헤더·k8s.io/deprecated 감사 주석·apiserver_requested_deprecated_apis 지표가 원문과 일치한다. 발행일이 없어 확인일 기준이다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증에서 IEC 웹스토어 소개 페이지를 열어 확인했다(2016-09-21, 1판). 초록에 '표준 SLA 구조나 표준 SLO 세트를 제시하지 않는다'는 문장이 있다. 표준 본문은 유료라 원문 미열람이다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"BSI 페이지를 열어 제목과 발행일(2023-12-15)을 확인했다. 통합·유지보수 중 IACS 서비스 제공자가 자산 소유자에게 제공하는 보안 프로세스 요구, 자산 소유자·서비스 제공자·제품 공급자 역할 구분, 4.1.4 프로파일은 IEC 웹스토어·IECEE 검색 요약 범위에서 확인된다. 표준 본문은 원문 미열람이다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1359(EU-OSHA)를 열어 채택일 2023-06-14, 적용일 2027-01-20, 자율 이동 기계·AI 안전 기능 포괄, 'substantial modification' 명확화 언급을 확인했다. 실질적 변경을 한 자를 제조자로 보는 제18조와 정의(새 위험 발생·기존 위험 증가로 새로운 중요한 보호 조치가 필요한 변경, 적합성에 영향이 없는 수리·정비 제외)는 EUR-Lex 본문이 비어 열리지 않아 EUR-Lex 검색 요약에서만 확인했다(ref-1350 원문 미열람). 핵심 규칙은 ref-1350 하나에 기대므로 교차 확인은 안 된 것으로 본다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1356 열람 확인(FLI의 EU AI법 조문 게재본으로, 공식 관보본이 아니다). 제공자 지위 이전의 세 경우, 최초 제공자 협력 의무, 서면 계약에 'necessary information, capabilities, technical access and other assistance' 명시, 오픈소스 예외, AI Office 자발적 모델 계약 조건이 원문과 일치한다. 셋째 경우는 '고위험이 아닌 AI 시스템(범용 AI 포함)의 용도를 바꿔 고위험이 되게 하는 것'이므로 그렇게 좁혀 쓰도록 지시했다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1357 열람 확인(FLI 게재본). 제26조 제5항의 운영 감시·위험 의심 시 통지·사용 중단, 중대 사고 시 '먼저 제공자에게' 즉시 통지, 제6항의 자기 통제 아래 있는 자동 생성 로그를 최소 6개월 보관(다른 법이 있으면 예외)이 원문과 일치한다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1353 열람 확인(Cornell LII 게재본). 21 CFR 11.10(e) 문구가 주장과 일치한다. FDA 규제 대상 전자기록에 적용되는 규정이므로 감사 추적 요구의 참고 사례로만 쓰게 했다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"SSRN은 검증에서도 403이다. 검색 결과(SSRN 목록, 2026-05-22 게재·2026-05-01 작성, 14쪽)와 private-law-theory.org 소개 글에서 OEM·통합자·AI 공급자·운영자 사이 책임 배분과 RPLF 세 원칙(통제·예견 가능성·정보 비대칭)을 확인했다. 소개 글은 같은 원고를 요약한 것이라 독립 출처가 아니다. 동료심사 전 원고의 저자 의견이므로 [의견]을 유지하고 저자를 밝히게 했다. 원문 미열람.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"검증에서 ref-1289를 열어 확인했다(2025-05-01, 갱신 2026-08-24). 'bi-annual' 통합자 평가·재평가 등재 프로그램이 있고, 공공 의료의 로봇·소프트웨어·IoT 통합은 RoMi-H를 거쳐 등재·인증된 통합자가 맡는다고 적혀 있다. 브리프의 원문 미열람 표시는 그대로 둔다. 2026-09-30-19·2026-09-30-21 브리프와 같은 출처이므로 ref-1289를 재사용한다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. ref-1354를 열어 보니 기관명이 '한국승강기협회'가 아니라 '대한승강기협회'다. 기사가 말하는 것은 협회·ETRI·뉴빌리티가 과기정통부 선정 과제 '실내외 자율주행 로봇 상호연동 표준개발'을 위해 연 승강기기업 간담회(2023-05-16)에 현대엘리베이터·오티스·TK엘리베이터·미쓰비시엘리베이터와 한국승강기공업협동조합 등이 참석했다는 것이다. '제조사가 참여한 과제로 표준을 만들고 있다'는 과장이다. API 실시간 연동과 2024-12-31 목표는 기사에 있다. 책임 분담 내용은 기사에 없다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1358 열람 확인(한국아파트신문 사설, 입력 2026-09-14). 사례 4건(시흥 현대위아 주차로봇 2세트, 송파 순찰로봇 2대, 타워팰리스 사족보행 경비로봇 기술검증, 부산 강서구 물품 운반 로봇)과 한병도 의원이 대표 발의한 이동로봇 특별법안(개인정보 처리·책임 분담·책임보험)이 사설에 있다. 제목 전체는 '공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까'다. 법안 원문은 미확인이다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1358에서 관리영역과 책임이 넓어질 수 있다는 문장을 확인했다. 한국아파트신문 사설의 의견임을 밝히게 했다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f6·f7·f8·f3·f9·f15·f10·f11을 종합한 추정이다. 근거 finding이 모두 확인됐다. 참고로 ref-031 원문 2장은 VDA 5050이 운영자·통합자·제조사·관제 제공자 사이의 운영 책임을 배분하지 않는다고 명시한다. 이 문장은 브리프 finding이 아니어서 이번 페이지에 쓸 수 없다. 다음 실행 후보로만 남긴다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"직접 범위에 대한 추정이다. 근거 f6·f7·f13·f12·f1~f3·f8이 확인됐다. 원문 19장 경계 안에 있다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"'연계 대상:'으로 표시한 추정이며 원문 19장 경계(시설·설비 제어, 로봇 자체 지능·제어)와 맞는다. f16이 추정으로 강등됐으므로 승강기 쪽 근거는 강등된 f16 범위로만 쓴다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"연결 제안이며 세부영역 번호와 명칭이 부록 A와 일치한다. L. AI·학습 기술 교차 규칙(47. AI·학습·적응과 모델 운영 연결)을 지켰다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 없다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f15(ref-1289 RoMi-H 등재 프로그램)는 2026-09-30-19·2026-09-30-21 브리프와 같은 출처다 — ref-1289 id를 재사용한다\",\"f6(ref-031 VDA 5050)는 여러 이전 브리프의 출처다 — ref-031 id를 재사용한다\",\"f10·f11·f12는 59. 법·규제·보험·라이선스의 법·규제 대응 범위와 겹친다 — 이 페이지에서는 변경 승인·책임 분담·감사 이력의 근거로만 쓰고 59와 연결한다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f16: [사실] → [추정]으로 강등한다. 기관명을 '대한승강기협회'로 바로잡는다. '승강기 제조사가 참여한 과제로 표준을 만들고 있다'는 쓰지 않는다. 대신 '대한승강기협회·ETRI·뉴빌리티가 과기정통부 선정 과제 「실내외 자율주행 로봇 상호연동 표준개발」을 위해 연 간담회(2023-05-16)에 현대엘리베이터·오티스·TK엘리베이터·미쓰비시엘리베이터 등이 참석했고, 과제는 API 기반 실시간 연동 표준과 2024-12-31까지의 표준·협의체·테스트베드를 목표로 했다'는 범위로 좁혀 쓴다 — 이유: ref-1354 원문은 협회명이 다르고 제조사 참여를 간담회 참석으로만 적는다.\",\"f16은 현장 유형이 없으므로 5절 적용 사례로 세우지 않는다. 6절(변경 승인·책임 분담)이나 10절의 22. 설비·건물 시스템 연동 연결에서만 쓴다 — 이유: 5절 사례는 현장 유형 하나를 이름으로 밝혀야 한다. 5절에는 병원(f15)과 가정(f17·f18) 사례만 두고, 물류창고·제조 공장·상업 시설·실외 사례는 이번 조사에서 찾지 못했다고 적는다.\",\"ref-1358 각주의 제목을 '공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까'로 고치고 '(제목 일부만 확인)'을 뺀다 — 이유: 검증에서 원문 제목 전체를 확인했다.\",\"ref-1289 각주의 발행일을 2025-05-01로 적는다 — 이유: 원문 페이지 날짜가 2025-05-01이고 2026-08-24에 갱신됐다. 브리프가 원문 미열람으로 표시했으므로 각주의 ' (원문 미열람)'과 reference_updates의 source_unopened: true는 유지한다.\",\"f1: 근거 발췌에 있는 '설계 의무 2026-09-12' 날짜를 본문에 쓰지 않는다 — 이유: ref-1345 페이지에 없는 날짜다.\",\"f5: 각주는 ref-1348만 단다. ref-1347은 f4에만 단다 — 이유: 지디넷코리아 기사는 가이드라인의 목차·쪽수를 뒷받침하지 않는다.\",\"f10: 실질적 변경의 정의와 '변경한 자를 제조자로 본다'는 규칙은 f10 주장 문장 범위를 넘지 않게 쓰고, 이 부분의 각주는 ref-1350으로 단다. 채택일·적용일은 ref-1359로 단다 — 이유: EUR-Lex 본문은 열리지 않아 검색 요약에서만 확인됐다.\",\"원문 미열람 표시: ref-1289·ref-1350·ref-1351·ref-1352·ref-1355의 각주 정의에서 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 같은 항목에 source_unopened: true를 넣는다 — 이유: 브리프에서 이 출처들은 fetched false이고, 유료 표준은 소개 페이지만 열었으며, SSRN은 403이다.\",\"f11: 제공자 지위가 넘어가는 셋째 경우를 '고위험이 아닌 AI 시스템(범용 AI 시스템 포함)의 용도를 바꿔 고위험 AI 시스템이 되게 하는 경우'로 좁혀 쓴다 — 이유: ref-1356 원문 조건이 그렇다. '용도를 바꾸면'은 일반화다.\",\"f14: 'Shaik(SSRN, 2026, 동료심사 전 원고)의 제안'으로 누구의 의견인지 밝혀 [의견]으로 쓴다. 원고가 드는 2024년 독일 자동차 공장 사고 사례는 쓰지 않는다 — 이유: 저자 주장이며 독립 확인되지 않았다.\",\"f18: '한국아파트신문 사설(2026-09-14)의 의견'임을 문장에 밝혀 [의견]으로 쓴다 — 이유: [의견]은 의견 주체를 밝혀야 한다.\",\"f13: 7절에서는 21 CFR Part 11을 'FDA 규제 대상 전자기록에 적용되는 규정으로, 감사 추적 요구의 참고 사례'로만 쓰고, 병원 현장의 의무로 서술하지 않는다 — 이유: 적용 범위가 FDA 규제 기록에 한정된다.\",\"f10·f11·f12: 법적 의무의 판정과 이행은 9절에서 f21의 연계 대상(계약 당사자·법무, 59. 법·규제·보험·라이선스)으로 두고, ROP가 이 법적 의무를 직접 진다는 식으로 쓰지 않는다 — 이유: 원문 19장 경계와 59와의 중복을 피하기 위해서다.\",\"11절: 이 영역에 걸린 기존 열린 질문에 oq-265(ANSI/A3 R15.08-3-2026의 사용자 운영 절차·교육·변경 관리를 여러 제조사 로봇 현장에서 누가 이행하는가)를 더해 모두 7건(oq-145·oq-149·oq-185·oq-241·oq-249·oq-259·oq-265)을 미해결로 싣는다 — 이유: 입력 열린 질문 목록에서 영역 58에 걸린 질문인데 브리프가 빠뜨렸다.\",\"용어집 후보 '데이터 보유자'의 정의에서 '사용자와의 계약 없이 비개인 데이터를 활용할 수 없다'를 '사용자의 동의 없이 비개인 데이터를 이용할 수 없고, 데이터 권리를 사용자와의 계약으로 정해야 한다'로 고친다 — 이유: ref-1345 원문 표현이 'without the user's agreement'와 'must have a contract'로 나뉘어 있다.\",\"f6: '의미적 버전'은 기존 용어집 항목 '의미적 버전 관리 (Semantic Versioning (SemVer))'에 링크하고 새 용어로 등록하지 않는다. 주 버전 변경은 명세 표현대로 '대개(typically) 호환을 깨는 변경'으로 쓴다 — 이유: 용어 일관성과 원문의 한정 표현을 지키기 위해서다.\",\"ref-1356·ref-1357 각주의 기관 표기에 'EU AI법 조문 비공식 게재본'임을 드러낸다(예: 'Future of Life Institute (EU AI법 조문 게재본)') — 이유: 공식 관보(EUR-Lex)가 아니다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 21건, 미확인 1건(f16), 교차 확인 0건. 강등: f16 사실 → 추정(기관명이 대한승강기협회로 다르고, 제조사 참여를 간담회 참석 이상으로 과장했다). 원문 미열람 출처: ref-1289(검증 중 원문 일치 확인), ref-1350(EUR-Lex 본문을 열지 못해 검색 요약으로 확인), ref-1351·ref-1352(유료 표준, 소개 페이지·검색 요약), ref-1355(SSRN 403, 검색 요약). 주의: 사실 주장이 모두 단일 출처다. 핵심 질문(누가 연동 오류를 고치고 변경을 승인하는가)의 답과 ROP 직접 범위는 추정(f19·f20·f21)이다. 이를 한 번에 정한 공개 표준이나 책임 분담표는 찾지 못했다(oq-241 미해결). EU AI법 조문은 비공식 게재본(artificialintelligenceact.eu)으로 확인했고, 21 CFR Part 11은 FDA 규제 기록에 한정되는 참고 사례다. 적용 사례는 병원(싱가포르)과 가정(한국 공동주택)뿐이며 물류창고·제조 공장·상업 시설·실외 사례는 없다. 브리프에서 webfetch로 연 출처 11건의 fetch_url이 비어 있었지만, 검증에서 다시 열어 내용 일치를 확인했다. 검색 3회를 썼다(리서치 15회와 합쳐 18회/30). 참고: VDA 5050 3.0.0 원문(ref-031) 2장은 운영자·통합자·제조사·관제 제공자 사이의 운영 책임을 배분하지 않는다고 명시한다. 이번 브리프 finding이 아니므로 다음 실행 후보로 둔다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-22",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1345 열람 확인(EC, Data Act explained, 최종 갱신 2025-12-15). 연결 제품 데이터 접근·이용·이전, 데이터 보유자–사용자 계약, 사용자 동의 없는 비개인 데이터 이용 금지, 2025-09-12 적용 모두 원문에 있다. 근거 발췌의 '설계 의무 2026-09-12'는 이 페이지에 없어 본문에 쓰지 않도록 지시했다. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1345 열람 확인. 제3자 공유(DMA 게이트키퍼 제외), 'always unfair'·'presumed unfair' 불공정 조항 목록, 2027-01-12 전환 요금 완전 폐지가 원문과 일치한다. 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1346 열람 확인(EC, 2025-11-19, 권고 초안). 모델 계약 조항 4벌과 클라우드 표준 계약 조항 6개(Switching & Exit, Termination, Security & Business continuity, Non-Dispersion, Non-Amendment, Liability)의 이름·구성이 일치하고, 합리적 보상 지침은 추후 발표 예정으로 되어 있다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1347 열람 확인(지디넷코리아, 2022-03-15). 산업데이터 생성 투자자의 사용·수익권, 7월 시행, 계약 체결 권고와 정부 지침 마련, 지침 방향이 기사에 있다. 법 조문을 직접 확인한 것이 아니라 산업통상자원부 발표를 전한 기사 1건에 기대므로 신뢰도는 low 그대로 둔다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1348 열람 확인(공공데이터포털, 등록 2023-04-05, 수정 2025-12-09, 432쪽). 목차 구성과 '유의사항, 표준계약서, 업종별 사례' 안내가 일치한다. ref-1347은 가이드라인 목차를 뒷받침하지 않으므로 f5 근거에서 빼게 했다. 가이드라인 본문 PDF는 열지 않았다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-031 원문(data/source_texts/ref-031.txt, VDA 5050 3.0.0)으로 확인했다. 1장의 의미적 버전 문장(주 버전은 'typically' 호환을 깨는 변경), 4.2절 토픽 구조 interfaceName/majorVersion/manufacturer/serialNumber/topic과 예 vda5050/v3/KIT/0001/order, GitHub 저장소를 통한 변경 제안이 모두 원문에 있다. 기준일은 확인일 2026-09-30이다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1349 열람 확인. Rule #1(API 그룹 버전을 올려야만 제거), Rule #2(왕복 변환 시 정보 무손실), GA는 주 버전 안에서 제거 불가, 베타는 폐기 뒤 9개월 또는 3개 부 릴리스(둘 중 긴 쪽) 뒤 제거, v1.19부터 Warning 헤더·k8s.io/deprecated 감사 주석·apiserver_requested_deprecated_apis 지표가 원문과 일치한다. 발행일이 없어 확인일 기준이다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증에서 IEC 웹스토어 소개 페이지를 열어 확인했다(2016-09-21, 1판). 초록에 '표준 SLA 구조나 표준 SLO 세트를 제시하지 않는다'는 문장이 있다. 표준 본문은 유료라 원문 미열람이다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "BSI 페이지를 열어 제목과 발행일(2023-12-15)을 확인했다. 통합·유지보수 중 IACS 서비스 제공자가 자산 소유자에게 제공하는 보안 프로세스 요구, 자산 소유자·서비스 제공자·제품 공급자 역할 구분, 4.1.4 프로파일은 IEC 웹스토어·IECEE 검색 요약 범위에서 확인된다. 표준 본문은 원문 미열람이다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1359(EU-OSHA)를 열어 채택일 2023-06-14, 적용일 2027-01-20, 자율 이동 기계·AI 안전 기능 포괄, 'substantial modification' 명확화 언급을 확인했다. 실질적 변경을 한 자를 제조자로 보는 제18조와 정의(새 위험 발생·기존 위험 증가로 새로운 중요한 보호 조치가 필요한 변경, 적합성에 영향이 없는 수리·정비 제외)는 EUR-Lex 본문이 비어 열리지 않아 EUR-Lex 검색 요약에서만 확인했다(ref-1350 원문 미열람). 핵심 규칙은 ref-1350 하나에 기대므로 교차 확인은 안 된 것으로 본다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1356 열람 확인(FLI의 EU AI법 조문 게재본으로, 공식 관보본이 아니다). 제공자 지위 이전의 세 경우, 최초 제공자 협력 의무, 서면 계약에 'necessary information, capabilities, technical access and other assistance' 명시, 오픈소스 예외, AI Office 자발적 모델 계약 조건이 원문과 일치한다. 셋째 경우는 '고위험이 아닌 AI 시스템(범용 AI 포함)의 용도를 바꿔 고위험이 되게 하는 것'이므로 그렇게 좁혀 쓰도록 지시했다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1357 열람 확인(FLI 게재본). 제26조 제5항의 운영 감시·위험 의심 시 통지·사용 중단, 중대 사고 시 '먼저 제공자에게' 즉시 통지, 제6항의 자기 통제 아래 있는 자동 생성 로그를 최소 6개월 보관(다른 법이 있으면 예외)이 원문과 일치한다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1353 열람 확인(Cornell LII 게재본). 21 CFR 11.10(e) 문구가 주장과 일치한다. FDA 규제 대상 전자기록에 적용되는 규정이므로 감사 추적 요구의 참고 사례로만 쓰게 했다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "SSRN은 검증에서도 403이다. 검색 결과(SSRN 목록, 2026-05-22 게재·2026-05-01 작성, 14쪽)와 private-law-theory.org 소개 글에서 OEM·통합자·AI 공급자·운영자 사이 책임 배분과 RPLF 세 원칙(통제·예견 가능성·정보 비대칭)을 확인했다. 소개 글은 같은 원고를 요약한 것이라 독립 출처가 아니다. 동료심사 전 원고의 저자 의견이므로 [의견]을 유지하고 저자를 밝히게 했다. 원문 미열람."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "검증에서 ref-1289를 열어 확인했다(2025-05-01, 갱신 2026-08-24). 'bi-annual' 통합자 평가·재평가 등재 프로그램이 있고, 공공 의료의 로봇·소프트웨어·IoT 통합은 RoMi-H를 거쳐 등재·인증된 통합자가 맡는다고 적혀 있다. 브리프의 원문 미열람 표시는 그대로 둔다. 2026-09-30-19·2026-09-30-21 브리프와 같은 출처이므로 ref-1289를 재사용한다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. ref-1354를 열어 보니 기관명이 '한국승강기협회'가 아니라 '대한승강기협회'다. 기사가 말하는 것은 협회·ETRI·뉴빌리티가 과기정통부 선정 과제 '실내외 자율주행 로봇 상호연동 표준개발'을 위해 연 승강기기업 간담회(2023-05-16)에 현대엘리베이터·오티스·TK엘리베이터·미쓰비시엘리베이터와 한국승강기공업협동조합 등이 참석했다는 것이다. '제조사가 참여한 과제로 표준을 만들고 있다'는 과장이다. API 실시간 연동과 2024-12-31 목표는 기사에 있다. 책임 분담 내용은 기사에 없다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1358 열람 확인(한국아파트신문 사설, 입력 2026-09-14). 사례 4건(시흥 현대위아 주차로봇 2세트, 송파 순찰로봇 2대, 타워팰리스 사족보행 경비로봇 기술검증, 부산 강서구 물품 운반 로봇)과 한병도 의원이 대표 발의한 이동로봇 특별법안(개인정보 처리·책임 분담·책임보험)이 사설에 있다. 제목 전체는 '공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까'다. 법안 원문은 미확인이다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1358에서 관리영역과 책임이 넓어질 수 있다는 문장을 확인했다. 한국아파트신문 사설의 의견임을 밝히게 했다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f6·f7·f8·f3·f9·f15·f10·f11을 종합한 추정이다. 근거 finding이 모두 확인됐다. 참고로 ref-031 원문 2장은 VDA 5050이 운영자·통합자·제조사·관제 제공자 사이의 운영 책임을 배분하지 않는다고 명시한다. 이 문장은 브리프 finding이 아니어서 이번 페이지에 쓸 수 없다. 다음 실행 후보로만 남긴다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "직접 범위에 대한 추정이다. 근거 f6·f7·f13·f12·f1~f3·f8이 확인됐다. 원문 19장 경계 안에 있다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "'연계 대상:'으로 표시한 추정이며 원문 19장 경계(시설·설비 제어, 로봇 자체 지능·제어)와 맞는다. f16이 추정으로 강등됐으므로 승강기 쪽 근거는 강등된 f16 범위로만 쓴다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "연결 제안이며 세부영역 번호와 명칭이 부록 A와 일치한다. L. AI·학습 기술 교차 규칙(47. AI·학습·적응과 모델 운영 연결)을 지켰다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 없다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f15(ref-1289 RoMi-H 등재 프로그램)는 2026-09-30-19·2026-09-30-21 브리프와 같은 출처다 — ref-1289 id를 재사용한다",
+        "f6(ref-031 VDA 5050)는 여러 이전 브리프의 출처다 — ref-031 id를 재사용한다",
+        "f10·f11·f12는 59. 법·규제·보험·라이선스의 법·규제 대응 범위와 겹친다 — 이 페이지에서는 변경 승인·책임 분담·감사 이력의 근거로만 쓰고 59와 연결한다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f16: [사실] → [추정]으로 강등한다. 기관명을 '대한승강기협회'로 바로잡는다. '승강기 제조사가 참여한 과제로 표준을 만들고 있다'는 쓰지 않는다. 대신 '대한승강기협회·ETRI·뉴빌리티가 과기정통부 선정 과제 「실내외 자율주행 로봇 상호연동 표준개발」을 위해 연 간담회(2023-05-16)에 현대엘리베이터·오티스·TK엘리베이터·미쓰비시엘리베이터 등이 참석했고, 과제는 API 기반 실시간 연동 표준과 2024-12-31까지의 표준·협의체·테스트베드를 목표로 했다'는 범위로 좁혀 쓴다 — 이유: ref-1354 원문은 협회명이 다르고 제조사 참여를 간담회 참석으로만 적는다.",
+      "f16은 현장 유형이 없으므로 5절 적용 사례로 세우지 않는다. 6절(변경 승인·책임 분담)이나 10절의 22. 설비·건물 시스템 연동 연결에서만 쓴다 — 이유: 5절 사례는 현장 유형 하나를 이름으로 밝혀야 한다. 5절에는 병원(f15)과 가정(f17·f18) 사례만 두고, 물류창고·제조 공장·상업 시설·실외 사례는 이번 조사에서 찾지 못했다고 적는다.",
+      "ref-1358 각주의 제목을 '공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까'로 고치고 '(제목 일부만 확인)'을 뺀다 — 이유: 검증에서 원문 제목 전체를 확인했다.",
+      "ref-1289 각주의 발행일을 2025-05-01로 적는다 — 이유: 원문 페이지 날짜가 2025-05-01이고 2026-08-24에 갱신됐다. 브리프가 원문 미열람으로 표시했으므로 각주의 ' (원문 미열람)'과 reference_updates의 source_unopened: true는 유지한다.",
+      "f1: 근거 발췌에 있는 '설계 의무 2026-09-12' 날짜를 본문에 쓰지 않는다 — 이유: ref-1345 페이지에 없는 날짜다.",
+      "f5: 각주는 ref-1348만 단다. ref-1347은 f4에만 단다 — 이유: 지디넷코리아 기사는 가이드라인의 목차·쪽수를 뒷받침하지 않는다.",
+      "f10: 실질적 변경의 정의와 '변경한 자를 제조자로 본다'는 규칙은 f10 주장 문장 범위를 넘지 않게 쓰고, 이 부분의 각주는 ref-1350으로 단다. 채택일·적용일은 ref-1359로 단다 — 이유: EUR-Lex 본문은 열리지 않아 검색 요약에서만 확인됐다.",
+      "원문 미열람 표시: ref-1289·ref-1350·ref-1351·ref-1352·ref-1355의 각주 정의에서 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 같은 항목에 source_unopened: true를 넣는다 — 이유: 브리프에서 이 출처들은 fetched false이고, 유료 표준은 소개 페이지만 열었으며, SSRN은 403이다.",
+      "f11: 제공자 지위가 넘어가는 셋째 경우를 '고위험이 아닌 AI 시스템(범용 AI 시스템 포함)의 용도를 바꿔 고위험 AI 시스템이 되게 하는 경우'로 좁혀 쓴다 — 이유: ref-1356 원문 조건이 그렇다. '용도를 바꾸면'은 일반화다.",
+      "f14: 'Shaik(SSRN, 2026, 동료심사 전 원고)의 제안'으로 누구의 의견인지 밝혀 [의견]으로 쓴다. 원고가 드는 2024년 독일 자동차 공장 사고 사례는 쓰지 않는다 — 이유: 저자 주장이며 독립 확인되지 않았다.",
+      "f18: '한국아파트신문 사설(2026-09-14)의 의견'임을 문장에 밝혀 [의견]으로 쓴다 — 이유: [의견]은 의견 주체를 밝혀야 한다.",
+      "f13: 7절에서는 21 CFR Part 11을 'FDA 규제 대상 전자기록에 적용되는 규정으로, 감사 추적 요구의 참고 사례'로만 쓰고, 병원 현장의 의무로 서술하지 않는다 — 이유: 적용 범위가 FDA 규제 기록에 한정된다.",
+      "f10·f11·f12: 법적 의무의 판정과 이행은 9절에서 f21의 연계 대상(계약 당사자·법무, 59. 법·규제·보험·라이선스)으로 두고, ROP가 이 법적 의무를 직접 진다는 식으로 쓰지 않는다 — 이유: 원문 19장 경계와 59와의 중복을 피하기 위해서다.",
+      "11절: 이 영역에 걸린 기존 열린 질문에 oq-265(ANSI/A3 R15.08-3-2026의 사용자 운영 절차·교육·변경 관리를 여러 제조사 로봇 현장에서 누가 이행하는가)를 더해 모두 7건(oq-145·oq-149·oq-185·oq-241·oq-249·oq-259·oq-265)을 미해결로 싣는다 — 이유: 입력 열린 질문 목록에서 영역 58에 걸린 질문인데 브리프가 빠뜨렸다.",
+      "용어집 후보 '데이터 보유자'의 정의에서 '사용자와의 계약 없이 비개인 데이터를 활용할 수 없다'를 '사용자의 동의 없이 비개인 데이터를 이용할 수 없고, 데이터 권리를 사용자와의 계약으로 정해야 한다'로 고친다 — 이유: ref-1345 원문 표현이 'without the user's agreement'와 'must have a contract'로 나뉘어 있다.",
+      "f6: '의미적 버전'은 기존 용어집 항목 '의미적 버전 관리 (Semantic Versioning (SemVer))'에 링크하고 새 용어로 등록하지 않는다. 주 버전 변경은 명세 표현대로 '대개(typically) 호환을 깨는 변경'으로 쓴다 — 이유: 용어 일관성과 원문의 한정 표현을 지키기 위해서다.",
+      "ref-1356·ref-1357 각주의 기관 표기에 'EU AI법 조문 비공식 게재본'임을 드러낸다(예: 'Future of Life Institute (EU AI법 조문 게재본)') — 이유: 공식 관보(EUR-Lex)가 아니다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 21건, 미확인 1건(f16), 교차 확인 0건. 강등: f16 사실 → 추정(기관명이 대한승강기협회로 다르고, 제조사 참여를 간담회 참석 이상으로 과장했다). 원문 미열람 출처: ref-1289(검증 중 원문 일치 확인), ref-1350(EUR-Lex 본문을 열지 못해 검색 요약으로 확인), ref-1351·ref-1352(유료 표준, 소개 페이지·검색 요약), ref-1355(SSRN 403, 검색 요약). 주의: 사실 주장이 모두 단일 출처다. 핵심 질문(누가 연동 오류를 고치고 변경을 승인하는가)의 답과 ROP 직접 범위는 추정(f19·f20·f21)이다. 이를 한 번에 정한 공개 표준이나 책임 분담표는 찾지 못했다(oq-241 미해결). EU AI법 조문은 비공식 게재본(artificialintelligenceact.eu)으로 확인했고, 21 CFR Part 11은 FDA 규제 기록에 한정되는 참고 사례다. 적용 사례는 병원(싱가포르)과 가정(한국 공동주택)뿐이며 물류창고·제조 공장·상업 시설·실외 사례는 없다. 브리프에서 webfetch로 연 출처 11건의 fetch_url이 비어 있었지만, 검증에서 다시 열어 내용 일치를 확인했다. 검색 3회를 썼다(리서치 15회와 합쳐 18회/30). 참고: VDA 5050 3.0.0 원문(ref-031) 2장은 운영자·통합자·제조사·관제 제공자 사이의 운영 책임을 배분하지 않는다고 명시한다. 이번 브리프 finding이 아니므로 다음 실행 후보로 둔다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 5259,
+  "type": "result",
+  "duration_ms": 226476,
+  "uuid": "f03ba6cd-dee0-4d5d-9e59-60f16216f75d",
+  "ttft_stream_ms": 1637,
+  "time_to_request_ms": 95,
+  "time_to_request_phases_ms": {
+    "other": 41,
+    "system_prompt": 12,
+    "turn_start_resume": 0,
+    "process_user_input": 21,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 5
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 45,
+  "time_to_request_cpu_ms": 120,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1637,
+  "time_to_request_from_spawn_ms": 11373234,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790752673020.7498,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 228.8
+}

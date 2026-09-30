@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-22 | 갱신 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 계약·버전·폐기 규칙·SLA·감사 이력, 책임 경계, 연결 14건, 열린 질문 8건+새 질문 5건), 13절 각주, 1차 조건부 승인 수정 17건 반영, 2차 수정: 9절 표 셋째 행 경계 칸을 '원문 19장 다섯 경계 밖'으로 고침 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s6.md](topics/2026/2026-09-30-area58-s6.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "6. 대표 접근법과 기술" 절(2,613자)을 옮겼다 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s11.md](topics/2026/2026-09-30-area58-s11.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "11. 열린 질문" 절(1,824자)을 옮겼다 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s7.md](topics/2026/2026-09-30-area58-s7.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,269자)을 옮겼다 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s10.md](topics/2026/2026-09-30-area58-s10.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,155자)을 옮겼다 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s4.md](topics/2026/2026-09-30-area58-s4.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "4. 핵심 개념과 용어" 절(1,005자)을 옮겼다 |
+| 2026-09-30-22 | 생성 | [docs/topics/2026/2026-09-30-area58-s3.md](topics/2026/2026-09-30-area58-s3.md) | 자동 분리: 58. 다사업자 책임·계약·데이터 의 "3. 왜 중요한가" 절(649자)을 옮겼다 |
+| 2026-09-30-22 | 요약 | [docs/categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 58. 다사업자 책임·계약·데이터: 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 접근 계약·인터페이스 버전·폐기 규칙·서비스 수준·감사 이력, 책임 경계, 새 열린 질문 5건), 1차 조건부 승인 수정 17건·2차 수정 2건 반영 |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1191.md](references/ref-1191.md) | 참고문헌 ref-1191 등록: Data Act explained |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1192.md](references/ref-1192.md) | 참고문헌 ref-1192 등록: Draft Recommendation on non-binding model contractual terms… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1193.md](references/ref-1193.md) | 참고문헌 ref-1193 등록: 산업데이터 만든 자에게 사용·수익권 부여 |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1194.md](references/ref-1194.md) | 참고문헌 ref-1194 등록: 산업통상부_산업데이터 계약 가이드라인_20230109 |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1204.md](references/ref-1204.md) | 참고문헌 ref-1204 등록: Kubernetes Deprecation Policy |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1205.md](references/ref-1205.md) | 참고문헌 ref-1205 등록: ISO/IEC 19086-1:2016 Information technology - Cloud computin… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1206.md](references/ref-1206.md) | 참고문헌 ref-1206 등록: IEC 62443-2-4:2023 Security for industrial automation and co… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1207.md](references/ref-1207.md) | 참고문헌 ref-1207 등록: 21 CFR § 11.10 - Controls for closed systems |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1208.md](references/ref-1208.md) | 참고문헌 ref-1208 등록: Liability Allocation in Autonomous Industrial Systems: Who P… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1209.md](references/ref-1209.md) | 참고문헌 ref-1209 등록: Article 25: Responsibilities Along the AI Value Chain \| EU A… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1210.md](references/ref-1210.md) | 참고문헌 ref-1210 등록: Article 26: Obligations of Deployers of High-Risk AI Systems… |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1211.md](references/ref-1211.md) | 참고문헌 ref-1211 등록: 공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까 |
+| 2026-09-30-22 | 생성 | [docs/references/ref-1212.md](references/ref-1212.md) | 참고문헌 ref-1212 등록: Regulation 2023/1230/EU - machinery |
+| 2026-09-30-22 | 생성 | [docs/glossary/data-holder.md](glossary/data-holder.md) | 용어집 항목 데이터 보유자 |
+| 2026-09-30-22 | 생성 | [docs/glossary/substantial-modification.md](glossary/substantial-modification.md) | 용어집 항목 실질적 변경 |
+| 2026-09-30-22 | 생성 | [docs/glossary/model-contractual-terms.md](glossary/model-contractual-terms.md) | 용어집 항목 모델 계약 조항 |
+| 2026-09-30-22 | 생성 | [docs/glossary/api-deprecation-policy.md](glossary/api-deprecation-policy.md) | 용어집 항목 API 폐기 정책 |
+| 2026-09-30-22 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 8건 추가·갱신 |
 | 2026-09-30-21 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | 영역 심화: seed → draft, 섹션 3~11 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건 반영). 2차 수정: 5절 조사 범위·검증 상태 진술의 태그 제거, 한림대학교성심병원 서술 범위 축소, 물류창고 표에서 벤더 주장 분리, [의견]에 구축자 의견 병기 |
 | 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s10.md](topics/2026/2026-09-30-area56-s10.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,417자)을 옮겼다 |
 | 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s6.md](topics/2026/2026-09-30-area56-s6.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "6. 대표 접근법과 기술" 절(1,317자)을 옮겼다 |
