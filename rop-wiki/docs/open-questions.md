@@ -291,8 +291,11 @@ version: 1
 | oq-269 | 병원 배송 로봇 경제성 평가의 비용 항목·할인율·인건비 산정 방식을 비교 가능한 기준으로 정리한 연구가 있으며, 국내 병원 인건비 조건에서도 같은 결론이 나오는가? | [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-30 | 2026-09-30-19 | 열림 | — |
 | oq-270 | 국내 공공·민간 로봇 조달에서 VDA 5050 같은 개방 인터페이스 적합성이나 통합자 인증을 입찰 요구조건으로 명시한 사례가 있는가? | [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-19 | 열림 | — |
 | oq-271 | 이기종 로봇 통합 비용이 로봇 도입 총소유비용에서 차지하는 비중과, 공통 인터페이스·오케스트레이션 플랫폼이 그 비용을 얼마나 줄이는지 측정한 독립 연구가 있는가? | [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md)<br>[20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-30 | 2026-09-30-19 | 열림 | — |
+| oq-272 | 여러 제조사 로봇과 설비 센서가 각자 감지한 사람 위치를 하나의 사람 흐름 모델로 합칠 때 좌표·시각·신뢰도·익명화 형식을 정한 공개 규격이나 구현이 있는가? | [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-09-30 | 2026-09-30-20 | 열림 | — |
+| oq-273 | 병원·상업 시설·물류창고에서 시간대별 사람 혼잡을 로봇 작업 시간 추정과 배정·스케줄링에 반영해 처리 시간이나 지연 변화를 측정한 현장 연구가 있는가? | [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[26. 작업 순서·스케줄링](categories/planning-and-optimization/task-sequencing-and-scheduling.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md) | 2026-09-30 | 2026-09-30-20 | 열림 | — |
+| oq-274 | 기지국 기반 인파관리지원시스템 같은 공공 인파 밀집 데이터를 실외 배송로봇의 경로·운행 제한에 연동한 국내 사례나 데이터 제공 조건이 있는가? | [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[66. 실외](categories/site-type-applications/outdoor.md) | 2026-09-30 | 2026-09-30-20 | 열림 | — |
 
-상태별 건수: 열림 270건, 조사 중 1건
+상태별 건수: 열림 273건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

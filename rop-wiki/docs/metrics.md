@@ -26,7 +26,7 @@ version: 1
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
-| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
+| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
@@ -84,7 +84,7 @@ version: 1
 |---|---|---|---|---|
 | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | published | medium | 2026-09-25 | 4 |
 | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | 2026-09-25 | 2 |
-| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | seed | — | 2026-09-28 | 1 |
+| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-09-30 | 2 |
 
 **F. 연동**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 124회 중 최종 통과 122회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 122, None 2
-- 2차 검증 판정: 통과 122, None 2
+- 실행 125회 중 최종 통과 123회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 123, None 2
+- 2차 검증 판정: 통과 123, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 517 |
-| 오픈소스 문서 | 209 |
+| 논문 | 524 |
+| 오픈소스 문서 | 210 |
 | 표준 | 176 |
-| 기사 | 97 |
-| 정부·연구기관 | 87 |
+| 기사 | 98 |
+| 정부·연구기관 | 90 |
 | 벤더 문서 | 70 |
 | 업계 보고서 | 23 |
 
-신뢰도: medium 866건, high 216건, low 97건
+신뢰도: medium 874건, high 219건, low 98건
 
 ### 현장 유형 매트릭스 채움률
 
-- 63/119 칸 (53%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 66/119 칸 (55%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

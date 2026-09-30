@@ -20,6 +20,31 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-20 | 갱신 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 영역 심화: 섹션 3~11 신규 작성(현장 유형 사례 4건: 물류창고·병원·상업 시설·기타), 13절 각주, 1차 조건부 승인 수정 16건 이행, 2차 수정: 5절 기타 사례 제약 칸을 비교 지표로 바로잡음·완료·인계 칸 두 곳 미확인·병원 서술의 검증 상태 문장 태그 제거, 7절 요약 문장을 사실·추정으로 분리 |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s6.md](topics/2026/2026-09-30-area19-s6.md) | 자동 분리: 19. 사람·보행자 모델 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 장기 시공간 흐름 지도 첫 문장을 ref-1171 확인 범위(전형적 움직임 패턴 지도)로 고침 |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s4.md](topics/2026/2026-09-30-area19-s4.md) | 자동 분리: 19. 사람·보행자 모델 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s7.md](topics/2026/2026-09-30-area19-s7.md) | 자동 분리: 19. 사람·보행자 모델 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 요약·첫 문장을 REP-155 사실 문장과 종합 판단 추정 문장으로 나눔 |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s8.md](topics/2026/2026-09-30-area19-s8.md) | 자동 분리: 19. 사람·보행자 모델 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: Helbing·Molnár 항목에서 '보행자 시뮬레이션에 널리 쓰이는' 삭제 |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s10.md](topics/2026/2026-09-30-area19-s10.md) | 자동 분리: 19. 사람·보행자 모델 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s11.md](topics/2026/2026-09-30-area19-s11.md) | 자동 분리: 19. 사람·보행자 모델 의 "11. 열린 질문" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s3.md](topics/2026/2026-09-30-area19-s3.md) | 자동 분리: 19. 사람·보행자 모델 의 "3. 왜 중요한가" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-20 | 요약 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 19. 사람·보행자 모델: 영역 심화: 3~11절 신규 작성(현장 유형 사례 4건), 1차 조건부 승인 수정 16건·2차 수정 7건 이행 |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1171.md](references/ref-1171.md) | 참고문헌 ref-1171 등록: Survey of maps of dynamics for mobile robots |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1172.md](references/ref-1172.md) | 참고문헌 ref-1172 등록: Human Motion Trajectory Prediction: A Survey |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1173.md](references/ref-1173.md) | 참고문헌 ref-1173 등록: REP 155 -- Conventions, Topics, Interfaces for Perception in… |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1174.md](references/ref-1174.md) | 참고문헌 ref-1174 등록: Social force model for pedestrian dynamics |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1175.md](references/ref-1175.md) | 참고문헌 ref-1175 등록: THÖR: Human-Robot Navigation Data Collection and Accurate Mo… |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1176.md](references/ref-1176.md) | 참고문헌 ref-1176 등록: ATC shopping center tracking dataset |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1177.md](references/ref-1177.md) | 참고문헌 ref-1177 등록: 29일부터 인파관리지원시스템 본격 운영…다중운집 인파사고 예방 |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1178.md](references/ref-1178.md) | 참고문헌 ref-1178 등록: Toward Benchmarking of Long-Term Spatio-Temporal Maps of Ped… |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1179.md](references/ref-1179.md) | 참고문헌 ref-1179 등록: HuNavSim: A ROS 2 Human Navigation Simulator for Benchmarkin… |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1180.md](references/ref-1180.md) | 참고문헌 ref-1180 등록: Concluding ILIAD |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1181.md](references/ref-1181.md) | 참고문헌 ref-1181 등록: 로봇과 인간이 공존하는 병원…약 배달 로봇에 길 비켜주고 엘리베이터도 잡아줘 |
+| 2026-09-30-20 | 생성 | [docs/references/ref-1182.md](references/ref-1182.md) | 참고문헌 ref-1182 등록: Will I bother here? - A robot anticipating its influence on… |
+| 2026-09-30-20 | 생성 | [docs/glossary/social-force-model.md](glossary/social-force-model.md) | 용어집 항목 사회적 힘 모델 |
+| 2026-09-30-20 | 생성 | [docs/glossary/human-motion-trajectory-prediction.md](glossary/human-motion-trajectory-prediction.md) | 용어집 항목 사람 움직임 궤적 예측 |
+| 2026-09-30-20 | 생성 | [docs/glossary/social-robot-navigation.md](glossary/social-robot-navigation.md) | 용어집 항목 사회적 내비게이션 |
+| 2026-09-30-20 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
 | 2026-09-30-19 | 갱신 | [docs/categories/planning-and-business/economics-procurement-and-business-models.md](categories/planning-and-business/economics-procurement-and-business-models.md) | 섹션 3~11 신규 작성(현장 유형 사례 5건: 물류창고·제조 공장·병원 2·상업 시설, 표준·제도 6건, 자료 8건, 경계 2행, 연결 16개, 열린 질문 9건), 프런트매터 채움, 13절 각주. 2차: 3절 첫 문장을 설문 범위로 한정, ref-031 접근일 2026-09-30 |
 | 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s6.md](topics/2026/2026-09-30-area03-s6.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "6. 대표 접근법과 기술" 절(1,380자)을 옮겼다. 2차: ref-031 접근일 2026-09-30 |
 | 2026-09-30-19 | 생성 | [docs/topics/2026/2026-09-30-area03-s8.md](topics/2026/2026-09-30-area03-s8.md) | 자동 분리: 3. 경제성·조달·사업 모델 의 "8. 대표 연구와 자료" 절(1,281자)을 옮겼다 |

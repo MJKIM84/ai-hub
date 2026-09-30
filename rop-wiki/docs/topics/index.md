@@ -47,6 +47,13 @@ version: 1
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 접근법과 기술](2026/2026-09-30-area16-s6.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area16-s7.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 연구와 자료](2026/2026-09-30-area16-s8.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 다른 연구영역과의 연결](2026/2026-09-30-area19-s10.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 열린 질문](2026/2026-09-30-area19-s11.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 왜 중요한가](2026/2026-09-30-area19-s3.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 핵심 개념과 용어](2026/2026-09-30-area19-s4.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 대표 접근법과 기술](2026/2026-09-30-area19-s6.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area19-s7.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 대표 연구와 자료](2026/2026-09-30-area19-s8.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
 | 2026-09-30 | [33. 시나리오 모델·편집 — 다른 연구영역과의 연결](2026/2026-09-30-area33-s10.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
 | 2026-09-30 | [33. 시나리오 모델·편집 — 열린 질문](2026/2026-09-30-area33-s11.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
 | 2026-09-30 | [33. 시나리오 모델·편집 — 왜 중요한가](2026/2026-09-30-area33-s3.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
