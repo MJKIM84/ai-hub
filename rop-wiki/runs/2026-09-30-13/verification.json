@@ -1,0 +1,204 @@
+{
+  "run_id": "2026-09-30-13",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: raw README(github_raw) 열람. 패키지별로 DoorState·LiftState 상태, 플릿 상태의 로봇 위치, 닫힌 차선 회색·속도 제한 차선 좁은 폭, 일정 궤적 초록 선, BuildingMap 평면도, 장애물을 RViz 마커로 표시하고 start_duration·query_duration 으로 조회 기간을 정한다. 단일 출처(프로젝트 자체 문서), 발행일 미확인."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: rmf-web README 열람. 'web-based interface for users to visualize and control all aspects of Open-RMF deployments', 기본 API 서버는 internal non-persistent database를 쓰고 RMF_API_SERVER_CONFIG 설정 파일로 영속 저장을 구성한다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: task_state.json 열람. status 값 12개는 $defs/status에 정의되고 task_state가 이를 참조한다. original_estimate_millis·estimate_millis·assigned_to·phases·completed·active·pending·interruptions·cancellation·killed 필드가 있다. 최상위 필수 필드는 booking 하나뿐이다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: task_log.json(제목 'Task Event Log', 작업·단계·사건 3계층)과 log_entry.json(seq·tier·unix_millis_time·text 모두 필수, tier 4값, seq는 단조 증가하다가 오버플로 때 순환)을 열람했다. 두 파일이 같은 저장소라 독립 교차 확인은 아니다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 공식 저장소 main(3.0.0) 원문 열람. visualization 토픽 용도는 'High frequency communication of position and planned path'이고, state는 'published when relevant events occur or at least every 30 seconds'이다. 브리프 self_check가 적은 30초 문구 미검증 항목은 이번 검증에서 해소됐다. URL이 이전 브리프(2026-09-30-10)의 ref-1079와 같다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: mcap.dev/spec 열람. 개요 문장이 인용과 일치한다. Schema·Channel·Message·Chunk·Message Index·Chunk Index·Attachment·Metadata·Summary Offset 레코드가 있고, 색인으로 시각 기준 조회를 하며 압축은 선택이다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: Foxglove 재생 문서 열람. 시간축 탐색·속도 조절·구간 자르기·사건 생성과 검색·반복 재생·lookback·로그 시각 순서 전달이 적혀 있다. 벤더 문서라 [추정]과 '벤더 주장' 병기를 유지한다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정: arXiv 초록을 열람했다. 궤적이 겹치지 않는 시간 구간 이미지로 설명하는 개념은 초록이 'a recent work introduces'라고 밝힌 선행 연구(Almagor·Lahijanian, AAMAS 2020)의 것이다. NP-난해성도 이 논문이 새로 증명한 결과가 아니라 배경으로 적혀 있다. 따라서 'NP-난해임을 보인 뒤'는 귀속 오류다. 이 논문의 기여는 CBS의 제약 트리와 하위 A* 탐색에 설명 가능성 제약을 더한 것과 계획 시간–설명 가능성 절충 분석이다. XG-CBS라는 이름은 초록에 없으나 검색 결과(ICAPS 논문집 PDF)에서 확인했다. ICAPS 2022, arXiv 제출 2022-02-20."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "사실 → 추정. 원문 미열람(출판사 403): UCF STARS 초록 페이지와 검색 결과(Ingenta·T&F)로 실재를 확인했다(19권 3호 259–282쪽, 2018). 초록은 SAT 모델을 세 연구 프로그램(자율 분대원, 사람과 여러 하위 로봇 사이의 중재자, 계획 추천 에이전트)에 적용했다고 적는다. 초록이 드는 효과는 공유 이해와 신뢰 보정에 효과적이라는 것이다. 'IMPACT·두 시스템'과 '투명할수록 운영자 수행이 일관되게 나아졌다'는 열람한 초록에서 확인되지 않았다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: PMC는 reCAPTCHA, MDPI는 403이라 Europe PMC 전문 XML로 열람했다(epub 2017-07-27). 드론 2대·지상 로봇 1대, 화재 감시·진압 임무 8개, 운영자 24명, 실험실 5.35×6.70×5.00 m를 확인했다. SAGAT 순서는 PVRI>VRI>CI>PCI(관습·VR 묶음 비교 p=0.042), NASA-TLX 순서는 VRI<PVRI<CI<PCI다. 예측 요소는 유의하지 않고 관습형에서 부하를 늘렸다. evidence_excerpt의 SAGAT·NASA-TLX 수치(16.25·638 등)는 확인하지 못했다. 원문 요약 도구가 다른 수치(백분율)를 돌려줘 수치는 쓰지 않는다. 설계 요건(정보 선별·주의 유도·상태 통합·지도)은 본문과 대체로 맞는다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: ISA 발행 기관 페이지 열람. ISA-101.01-2015, ISA-TR101.01-2022(HMI Philosophy), ISA-TR101.02-2019(HMI Usability and Performance)를 확인했다. 설계·구현·운영·지속 개선 수명주기와 'continuous, batch and discrete industries'도 확인했다. 표준 본문은 유료라 열지 않았다(소개 페이지 기준)."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 불일치. 태그는 이미 [추정](벤더 주장)이라 더 낮출 태그가 없으므로, 뒷받침되지 않는 구절을 삭제하는 것으로 처분한다. 연구 과제 페이지 열람 결과 BPMN 2.0 워크플로, 실시간 이상 감지와 알람, 운영 리포팅·데이터 시각화, 엘리베이터·자동문·스크린도어 등 인프라 연동, 층별·존별 트래픽 관리를 확인했다. 적용처 '건물·상업 시설'은 페이지에 없다(실내외 환경, 다양한 환경만 나온다). site_type '상업 시설'은 근거가 없다. 발행일 미확인."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 네이버클라우드 사용 가이드 열람(최종 수정 2026-09-17). 다중 로봇 제어·충돌 방지, 실시간 모니터링과 알림, 태스크·운영 이력 조회, 제3자 로봇 등록, 엘리베이터·자동문 연동, 맵 에디터, 알림 설정이 적혀 있다. 벤더 주장 병기를 유지한다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인: 아주경제 기사(2025-04-07) 열람. 제목 '현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다'가 일치한다. 한림대학교성심병원(안양) 협약식, 병원 맞춤형 배송 로봇·관제 시스템, 안면 인식 인증, 특수물품 배송 이력 관리를 확인했다. 협약 단계 보도이며 운영 결과는 없다. 단일 기사라 신뢰도 low를 유지한다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "종합 추정으로 유지한다. f8·f9 강등 뒤에도 '설명 표시는 연구 수준, 현장 평가 자료 미확인'이라는 결론은 성립한다. 검색 범위 한정 문구를 유지한다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "태그는 이미 [추정]이라 더 낮출 태그가 없으므로 구절 삭제·재서술로 처분한다. 'f9: 투명할수록 운영자 수행이 나아진다'는 f9 강등으로 근거를 잃었다. 'f10: 정보량이 많을수록 상황 인식과 작업 부하가 나빠진다'는 Roldán 외의 실험 결과가 아니라 그들이 제시한 설계 요건이다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "종합 추정으로 유지한다. f7·f12·f13은 벤더 주장이므로 범위 예시로만 쓴다. 설비는 상태 표시만 하고 제어는 설비 쪽에 두는 서술이라 원문 19장 경계와 맞는다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "연계 대상 서술로 유지한다. VDA 5050 visualization·state 분리(f5)와 플릿 관리자 보고 위치 표시(f1)가 근거로 확인된다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "연결 목록으로 유지한다. 다만 '64. 상업 시설(f12)'은 f12의 상업 시설 근거가 없어 빼야 한다(수정 지시). 나머지 연결은 finding 근거와 맞는다. 18번(현재 상태)과 36번(과거 기록 재현)은 34번과 섞이지 않았다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": false,
+    "overlaps": [
+      "ref-031(VDA 5050 VDA5050_EN.md, main 3.0.0)은 이전 브리프 2026-09-30-10의 ref-1079와 URL이 같다(https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md)",
+      "oq-131(열림)은 이 영역의 조사 질문 4와 겹친다. 이번 브리프는 해결 근거가 없어 미해결 유지로 제안했고 이는 타당하다",
+      "용어집에 이미 있는 MCAP·상황 인식 기반 에이전트 투명성·오픈 RMF·VDA 5050·감사 추적·관측성은 후보로 내지 않았다(중복 없음)"
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f8: [사실] → [추정]으로 강등하고, 'NP-난해임을 보인 뒤'를 삭제한다. '선행 연구가 제안한 시간 구간 이미지 설명 개념을 받아 CBS의 제약 트리와 A* 탐색에 설명 가능성 제약을 더한 XG-CBS를 제안하고 계획 시간과 설명 가능성의 절충을 분석했다'로 고쳐 쓴다 — ref-1098 초록이 설명 개념과 NP-난해성을 선행 연구의 것으로 적는다.",
+    "f9: [사실] → [추정]으로 강등한다. 본문은 'SAT 모델을 세 연구 프로그램(자율 분대원, 사람과 여러 하위 로봇의 중재자, 계획 추천 에이전트)에 적용했고 공유 이해와 신뢰 보정에 효과적이라고 정리했다'로 줄인다. 'IMPACT·두 시스템'과 '투명할수록 수행이 일관되게 나아졌다'는 넣지 않는다 — 열람 가능한 초록에서 확인되지 않았다.",
+    "ref-477: 페이지 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 ref-477 항목에 source_unopened: true를 넣는다 — 출판사 페이지 403으로 원문을 열지 못했다.",
+    "f10: evidence_excerpt의 SAGAT·NASA-TLX 수치(16.25·16.46·14.91·14.33·638·740·853·915)는 본문에 쓰지 않는다. 인터페이스 순서(상황 인식 PVRI>VRI>CI>PCI, 부하 VRI<PVRI<CI<PCI), VR 묶음 차이(p=0.042), '예측 요소 효과는 유의하지 않았고 관습형 인터페이스에서는 부하가 수치상 늘었다'만 쓴다 — 검증 열람에서 수치를 재현하지 못했다.",
+    "f12: '적용처로 건물·상업 시설을 든다'를 삭제하고, 연동 설비는 원문 표기대로 '엘리베이터·자동문·스크린도어 등', 운영 환경은 '실내외 환경의 층별·존별 트래픽 관리'로 적는다. [추정]과 '벤더 주장' 병기를 유지한다 — ref-1101 페이지에 상업 시설 적용처가 없다.",
+    "5절(적용 사례): f12를 상업 시설 사례로 쓰지 않고 site_matrix_updates에 '상업 시설' 칸을 넣지 않는다. f12는 6·7절의 벤더 사례로만 쓴다 — 현장 유형 근거가 없다.",
+    "5절(적용 사례): 병원 사례(f14)는 2025-04-07 보도 기준 협약·개발 계획 단계이며 운영 결과가 확인되지 않았음을 밝힌다. 여섯 항목 가운데 근거 없는 칸(시작 조건·제약·예외·성과 등)은 '미확인'으로 둔다. 물류창고·제조 공장·상업 시설·가정·실외·기타 사례는 찾지 못했다고 적는다.",
+    "f16(3절): '(f9) 에이전트의 판단이 투명할수록 운영자 수행이 나아지며'를 삭제한다. '(f10) 정보량이 많을수록 상황 인식과 작업 부하가 나빠지고'는 'Roldán 외가 다중 로봇 인터페이스 요건으로 정보 선별과 관련 정보로의 주의 유도를 들었다'로 바꾼다. [추정]은 유지한다 — f9 강등, f10은 실험 결과가 아니라 설계 요건이다.",
+    "f19(10절): '64. 상업 시설(f12)' 연결을 삭제한다 — f12에 상업 시설 근거가 없다.",
+    "f7·f12·f13: 페이지 어디에 쓰든(6·7·9절 포함) [추정]과 '벤더 주장'을 함께 적는다 — 제조사·서비스 제공자 문서이고 독립 교차 확인이 없다.",
+    "ref-031: 이전 실행의 ref-1079와 URL이 같으므로, ref-1079가 참고문헌에 등록돼 있으면 각주와 프런트매터 sources에서 ref-1079를 재사용하고 ref-1170은 reference_updates에 새로 넣지 않는다 — 같은 출처에는 기존 각주를 재사용한다.",
+    "용어 후보 '상황 인식': 정의에서 '지각·이해·예측' 3단계 설명을 빼고, '운영자가 임무 환경의 상황을 파악하는 정도로, 관제 화면 평가에서 SAGAT 같은 질의 기법으로 측정한다' 수준으로 줄인다 — 3단계 정의를 뒷받침하는 finding이 없다.",
+    "용어 후보 'HMI 철학': 정의를 'ISA-101 계열이 기술 보고서 ISA-TR101.01-2022로 다루는 HMI 설계 원칙 문서' 수준으로 줄이고, '한 조직의 … 원칙과 규칙을 정해 둔 상위 문서'라는 내용 설명은 뺀다 — ISA 소개 페이지는 제목만 확인해 준다.",
+    "ref-1103: 제목 뒤의 '(제목은 검색 결과 기준)'을 지운다 — 검증 열람에서 기사 제목 '현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다'를 확인했다.",
+    "11절(열린 질문): oq-131은 해결로 바꾸지 않고 열림으로 유지한다. open_questions_new 4건은 형식이 맞으므로 그대로 등록한다 — 해결 근거 finding이 없다."
+  ],
+  "confidence": "low",
+  "verification_note": "판정: 조건부 승인. 확인 15건, 미확인 4건(f8·f9·f12·f16), 교차 확인 0건. 강등: f8 사실 → 추정(설명 개념과 NP-난해성을 선행 연구에 잘못 귀속), f9 사실 → 추정(열람 가능한 초록에서 수행 향상 결과 미확인), f12·f16은 이미 추정이라 뒷받침되지 않는 구절을 삭제. 원문 미열람 출처: ref-477. 주의: 핵심 내용은 모두 단일 출처이고 절반가량이 종합 추정이다. 관제 화면 요소는 Open-RMF·VDA 5050·MCAP 같은 공개 구현·명세 문서 기준이며, 설명 가능한 표시의 효과는 실험실·알고리즘 연구에 한정된다. 현장 사례는 병원 1건(협약 단계 보도)뿐이다. Roldán 외의 SAGAT·NASA-TLX 수치는 검증 열람에서 재현하지 못해 순서와 유의성만 싣는다. 나콘·ARC brain·Foxglove 기능은 벤더 주장이다. ref-1170은 이전 실행 ref-1079와 같은 URL이다. 정정 요청 없음. oq-131은 미해결 유지.",
+  "retry_reason": null
+}

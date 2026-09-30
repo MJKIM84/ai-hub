@@ -256,8 +256,12 @@ version: 1
 | oq-234 | 형식 판이 바뀔 때 개별 시나리오 인스턴스를 옮기고 호환성을 검사하는 버전 관리 규칙을 공개한 로봇 시뮬레이션 도구나 표준이 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
 | oq-235 | ARIAC 처럼 장애·긴급 요청을 시각·발생 횟수 조건으로 선언하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애까지 일반화한 시나리오 형식이 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
 | oq-236 | 국내 아파트·병원·물류센터·호텔을 본뜬 다중 로봇 시나리오 예제 라이브러리를 공개한 기관이나 프로젝트가 있는가? | [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md)<br>[65. 가정·공동주택](categories/site-type-applications/home-and-apartment.md) | 2026-09-30 | 2026-09-30-12 | 열림 | — |
+| oq-237 | 여러 제조사 로봇의 작업 상태와 실행 로그를 한 화면·한 기록 형식으로 모을 때 공통 작업 상태 값과 로그 수준을 정한 표준이나 공개 규약이 Open-RMF 작업 상태 스키마 말고도 있는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
+| oq-238 | 에이전트 투명성이나 계획 분할 시각화 같은 설명 가능한 표시를 실제 운영 중인 로봇 플릿 관제 화면에 적용해 운영자의 상황 인식과 대응 시간을 현장에서 측정한 연구가 있는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[31. 사람–로봇 협업](categories/execution-collaboration-and-recovery/human-robot-collaboration.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
+| oq-239 | 병원의 특수 물품(마약류·검체 등) 로봇 배송 이력처럼 보관 의무가 걸릴 수 있는 실행 기록의 보관 기간과 무결성 요건을 국내 법령·지침이 정하고 있는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
+| oq-240 | 공정 산업의 ISA-101 처럼 다중 로봇 관제 화면에 특화된 화면 설계 표준이나 지침이 있는가, 아니면 공정 HMI 표준을 옮겨 써야 하는가? | [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md)<br>[38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | 2026-09-30 | 2026-09-30-13 | 열림 | — |
 
-상태별 건수: 열림 235건, 조사 중 1건
+상태별 건수: 열림 239건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

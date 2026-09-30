@@ -333,6 +333,10 @@ nav:
       - 41. 플랫폼 아키텍처·외부 API — 왜 중요한가: topics/2026/2026-09-30-area41-s3.md
       - 41. 플랫폼 아키텍처·외부 API — 열린 질문: topics/2026/2026-09-30-area41-s11.md
       - 41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결: topics/2026/2026-09-30-area41-s10.md
+      - 37. 관제 화면·실행 기록 — 대표 연구와 자료: topics/2026/2026-09-30-area37-s8.md
+      - 37. 관제 화면·실행 기록 — 대표 접근법과 기술: topics/2026/2026-09-30-area37-s6.md
+      - 37. 관제 화면·실행 기록 — 핵심 개념과 용어: topics/2026/2026-09-30-area37-s4.md
+      - 37. 관제 화면·실행 기록 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area37-s10.md
       - 33. 시나리오 모델·편집 — 대표 연구와 자료: topics/2026/2026-09-30-area33-s8.md
       - 33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area33-s7.md
       - 33. 시나리오 모델·편집 — 대표 접근법과 기술: topics/2026/2026-09-30-area33-s6.md
@@ -614,6 +618,7 @@ nav:
     - CAP 정리 (CAP Theorem): glossary/cap-theorem.md
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
     - ECLASS (ECLASS): glossary/eclass.md
+    - HMI 철학 (HMI Philosophy (ISA-TR101.01)): glossary/hmi-philosophy.md
     - IEC 공통 데이터 사전 (IEC Common Data Dictionary (IEC CDD)): glossary/iec-common-data-dictionary.md
     - IT/OT 융합 (IT/OT Convergence): glossary/it-ot-convergence.md
     - IndoorGML (IndoorGML): glossary/indoorgml.md
@@ -693,6 +698,7 @@ nav:
     - 래스터–벡터 변환 (Raster-to-Vector Conversion): glossary/raster-to-vector-conversion.md
     - 런타임 검증 (Runtime Verification): glossary/runtime-verification.md
     - 레이아웃 교환 형식 (Layout Interchange Format (LIF)): glossary/layout-interchange-format.md
+    - 로그 재생 (Log Playback): glossary/log-playback.md
     - 로봇 기반 모델 (Robot Foundation Model): glossary/robot-foundation-model.md
     - 로봇 밀도 (Robot Density): glossary/robot-density.md
     - 로봇 이동형 풀필먼트 시스템 (Robotic Mobile Fulfillment System (RMFS)): glossary/robotic-mobile-fulfillment-system.md
@@ -747,6 +753,7 @@ nav:
     - 상태 기반 정비 (Condition-Based Maintenance (CBM)): glossary/condition-based-maintenance.md
     - 상품-대-사람 (Goods-to-Person (GTP)): glossary/goods-to-person.md
     - 상황 상태 추적 (Situation State Tracking): glossary/situation-state-tracking.md
+    - 상황 인식 (Situation Awareness (SA)): glossary/situation-awareness.md
     - 상황 인식 기반 에이전트 투명성 (Situation Awareness-based Agent Transparency (SAT)): glossary/situation-awareness-based-agent-transparency.md
     - 서비스 삼자 관계 (Service Triad (service robot, customer, frontline employee)): glossary/service-triad.md
     - 서비스 수준 협약 (Service Level Agreement (SLA)): glossary/service-level-agreement.md
@@ -754,6 +761,7 @@ nav:
     - 선형 시간 논리 (Linear Temporal Logic (LTL)): glossary/linear-temporal-logic.md
     - 선후 제약 (Precedence Constraint): glossary/precedence-constraint.md
     - 설계–준공 편차 (As-planned vs As-built Deviation): glossary/as-planned-vs-as-built-deviation.md
+    - 설명 가능한 다중 에이전트 경로 찾기 (Explainable Multi-Agent Path Finding (Explainable MAPF)): glossary/explainable-mapf.md
     - 셀 생산 방식 (Cell-based Production): glossary/cell-based-production.md
     - 셔틀 기반 저장·회수 시스템 (Shuttle-Based Storage and Retrieval System (SBS/RS)): glossary/shuttle-based-storage-and-retrieval-system.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
@@ -1127,7 +1135,18 @@ nav:
     - ref-1090 — Groot2: references/ref-1090.md
     - ref-1091 — MAPF Benchmarks: references/ref-1091.md
     - ref-1092 — SDFormat (Simulation Description Format): references/ref-1092.md
+    - ref-1093 — rmf_visualization — README: references/ref-1093.md
+    - ref-1094 — rmf_api_msgs schemas — task_log.json (Task Event Log): references/ref-1094.md
+    - ref-1095 — rmf_api_msgs schemas — log_entry.json: references/ref-1095.md
+    - ref-1096 — MCAP Format Specification: references/ref-1096.md
+    - ref-1097 — Playback — Foxglove Documentation: references/ref-1097.md
+    - ref-1098 — Conflict-Based Search for Explainable Multi-Agent Path Finding: references/ref-1098.md
+    - 'ref-1099 — Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction': references/ref-1099.md
     - ref-110 — Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2: references/ref-110.md
+    - ref-1100 — ISA-101 Series of Standards: references/ref-1100.md
+    - ref-1101 — PROJECTS — Robot Fleet Management (NARCHON): references/ref-1101.md
+    - ref-1102 — ARC brain 개요 - 사용 가이드: references/ref-1102.md
+    - ref-1103 — 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다: references/ref-1103.md
     - ref-111 — rmf_api_msgs — rmf_api_msgs/schemas/task_state.json: references/ref-111.md
     - ref-112 — About the Business Process Model And Notation Specification Version 2.0: references/ref-112.md
     - 'ref-113 — Messages | Camunda 8 Docs (camunda-docs: docs/components/concepts/messages.md)': references/ref-113.md

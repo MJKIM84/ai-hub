@@ -222,7 +222,18 @@ version: 1
 | [ref-1090](ref-1090.md) | BehaviorTree.CPP 프로젝트 (behaviortree.dev) | Groot2 | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://www.behaviortree.dev/groot/> |
 | [ref-1091](ref-1091.md) | Moving AI Lab (Sturtevant 외) | MAPF Benchmarks | 미확인 | 오픈소스 문서 | medium | 2026-09-30 | <https://movingai.com/benchmarks/mapf/index.html> |
 | [ref-1092](ref-1092.md) | Open Source Robotics Foundation | SDFormat (Simulation Description Format) | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <http://sdformat.org/> |
+| [ref-1093](ref-1093.md) | Open Robotics (open-rmf/rmf_visualization) | rmf_visualization — README | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <https://github.com/open-rmf/rmf_visualization> |
+| [ref-1094](ref-1094.md) | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs schemas — task_log.json (Task Event Log) | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json> |
+| [ref-1095](ref-1095.md) | Open Robotics (open-rmf/rmf_api_msgs) | rmf_api_msgs schemas — log_entry.json | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/log_entry.json> |
+| [ref-1096](ref-1096.md) | MCAP 프로젝트 (Foxglove) | MCAP Format Specification | 미확인 | 오픈소스 문서 | high | 2026-09-30 | <https://mcap.dev/spec> |
+| [ref-1097](ref-1097.md) | Foxglove | Playback — Foxglove Documentation | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://docs.foxglove.dev/docs/visualization/playback> |
+| [ref-1098](ref-1098.md) | Kottinger, J., Almagor, S., & Lahijanian, M. (arXiv, ICAPS 2022) | Conflict-Based Search for Explainable Multi-Agent Path Finding | 2022-02 | 논문 | medium | 2026-09-30 | <https://arxiv.org/abs/2202.09930> |
+| [ref-1099](ref-1099.md) | Roldán, J. J., Peña-Tapia, E., Martín-Barrio, A. 외 (Sensors 17(8)) | Multi-Robot Interfaces and Operator Situational Awareness: Study of the Impact of Immersion and Prediction | 2017-07-27 | 논문 | high | 2026-09-30 | <https://pmc.ncbi.nlm.nih.gov/articles/PMC5579739/> |
 | [ref-109](ref-109.md) | Stark, H.-G. 외 | A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse | 2024-06 | 논문 | medium | 2026-09-25 | <https://arxiv.org/abs/2406.17003> |
+| [ref-1100](ref-1100.md) | ISA (International Society of Automation) | ISA-101 Series of Standards | 미확인 | 표준 | medium | 2026-09-30 | <https://www.isa.org/standards-and-publications/isa-standards/isa-101-standards> |
+| [ref-1101](ref-1101.md) | 현대자동차그룹 로보틱스랩 | PROJECTS — Robot Fleet Management (NARCHON) | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://robotics.hyundai.com/projects/research/view.do?seq=102> |
+| [ref-1102](ref-1102.md) | 네이버클라우드 | ARC brain 개요 - 사용 가이드 | 미확인 | 벤더 문서 | medium | 2026-09-30 | <https://guide.ncloud-docs.com/docs/arc-brain-overview> |
+| [ref-1103](ref-1103.md) | 아주경제 | 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다 | 2025-04-07 | 기사 | low | 2026-09-30 | <https://www.ajunews.com/view/20250407084333272> |
 | [ref-110](ref-110.md) | Open Robotics | Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2 | 미확인 | 오픈소스 문서 | high | 2026-09-25 | <https://osrf.github.io/ros2multirobotbook/task_new.html> |
 | [ref-111](ref-111.md) | Open Robotics (open-rmf) | rmf_api_msgs — rmf_api_msgs/schemas/task_state.json | 미확인 | 오픈소스 문서 | high | 2026-09-25 | <https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_state.json> |
 | [ref-112](ref-112.md) | OMG(Object Management Group) | About the Business Process Model And Notation Specification Version 2.0 | 미확인 | 표준 | medium | 2026-09-25 | <https://www.omg.org/spec/BPMN/2.0/About-BPMN> |

@@ -20,6 +20,28 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-13 | 갱신 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 영역 심화: 3~11절 신규 작성, 13절 각주 정의 15건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 15건 반영). 2차: 3절 첫 문장을 태그 없는 연결 문장으로, 4절 도입 문장의 [사실] 태그 제거, 9절 '상용 예로'를 '6절에서 예로'로 고침 |
+| 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s6.md](topics/2026/2026-09-30-area37-s6.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차: '국내 상용 예로'를 '국내 예로(연구 과제 페이지 기준)'로 고침 |
+| 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s8.md](topics/2026/2026-09-30-area37-s8.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "8. 대표 연구와 자료" 절을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s4.md](topics/2026/2026-09-30-area37-s4.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "4. 핵심 개념과 용어" 절을 옮겼다. 2차: 세 줄 요약·본문 첫 문장에서 [사실] 태그와 각주를 뗀 연결 문장으로 바꿈 |
+| 2026-09-30-13 | 생성 | [docs/topics/2026/2026-09-30-area37-s10.md](topics/2026/2026-09-30-area37-s10.md) | 자동 분리: 37. 관제 화면·실행 기록 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차: 짝 엔진을 번호와 이름으로 표기, 39. 운영 성과 측정·개선 항목의 '실제 소요 시간' 드리프트 수정 |
+| 2026-09-30-13 | 요약 | [docs/categories/field-operations-and-monitoring/control-screen-and-execution-records.md](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | 37. 관제 화면·실행 기록: 영역 심화: 3~11절 신규 작성(Open-RMF 시각화·작업 상태·로그 스키마, VDA 5050 시각화 토픽, MCAP, ISA-101, 설명 가능한 표시 연구, 병원 사례), 1차 조건부 승인 수정 15건과 2차 수정 6건 반영 |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1093.md](references/ref-1093.md) | 참고문헌 ref-1093 등록: rmf_visualization — README |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1094.md](references/ref-1094.md) | 참고문헌 ref-1094 등록: rmf_api_msgs schemas — task_log.json (Task Event Log) |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1095.md](references/ref-1095.md) | 참고문헌 ref-1095 등록: rmf_api_msgs schemas — log_entry.json |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1096.md](references/ref-1096.md) | 참고문헌 ref-1096 등록: MCAP Format Specification |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1097.md](references/ref-1097.md) | 참고문헌 ref-1097 등록: Playback — Foxglove Documentation |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1098.md](references/ref-1098.md) | 참고문헌 ref-1098 등록: Conflict-Based Search for Explainable Multi-Agent Path Findi… |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1099.md](references/ref-1099.md) | 참고문헌 ref-1099 등록: Multi-Robot Interfaces and Operator Situational Awareness: S… |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1100.md](references/ref-1100.md) | 참고문헌 ref-1100 등록: ISA-101 Series of Standards |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1101.md](references/ref-1101.md) | 참고문헌 ref-1101 등록: PROJECTS — Robot Fleet Management (NARCHON) |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1102.md](references/ref-1102.md) | 참고문헌 ref-1102 등록: ARC brain 개요 - 사용 가이드 |
+| 2026-09-30-13 | 생성 | [docs/references/ref-1103.md](references/ref-1103.md) | 참고문헌 ref-1103 등록: 현대차그룹 로보틱스 솔루션, 일선 병원에 도입된다 |
+| 2026-09-30-13 | 생성 | [docs/glossary/explainable-mapf.md](glossary/explainable-mapf.md) | 용어집 항목 설명 가능한 다중 에이전트 경로 찾기 |
+| 2026-09-30-13 | 생성 | [docs/glossary/hmi-philosophy.md](glossary/hmi-philosophy.md) | 용어집 항목 HMI 철학 |
+| 2026-09-30-13 | 생성 | [docs/glossary/log-playback.md](glossary/log-playback.md) | 용어집 항목 로그 재생 |
+| 2026-09-30-13 | 생성 | [docs/glossary/situation-awareness.md](glossary/situation-awareness.md) | 용어집 항목 상황 인식 |
+| 2026-09-30-13 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
 | 2026-09-30-12 | 갱신 | [docs/categories/design-and-simulation/scenario-model-and-editing.md](categories/design-and-simulation/scenario-model-and-editing.md) | 영역 심화: 3~11절 신규 작성(현장 유형 사례 5건: 상업 시설·병원·실외·가정·제조 공장), 1차 조건부 승인 수정 13건 반영, 13절 각주 15건. 2차 수정: 4절 요약 태그 [추정]으로 정정, 5절 병원·제조 공장 사례 서술의 사실·추정 분리 |
 | 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s7.md](topics/2026/2026-09-30-area33-s7.md) | 자동 분리: 33. 시나리오 모델·편집 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,795자)을 옮겼다 |
 | 2026-09-30-12 | 생성 | [docs/topics/2026/2026-09-30-area33-s10.md](topics/2026/2026-09-30-area33-s10.md) | 자동 분리: 33. 시나리오 모델·편집 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,571자)을 옮겼다 |
