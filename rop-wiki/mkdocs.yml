@@ -353,6 +353,13 @@ nav:
       - 41. 플랫폼 아키텍처·외부 API — 왜 중요한가: topics/2026/2026-09-30-area41-s3.md
       - 41. 플랫폼 아키텍처·외부 API — 열린 질문: topics/2026/2026-09-30-area41-s11.md
       - 41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결: topics/2026/2026-09-30-area41-s10.md
+      - 40. 운영 절차·요청 창구 — 대표 연구와 자료: topics/2026/2026-09-30-area40-s8.md
+      - 40. 운영 절차·요청 창구 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area40-s7.md
+      - 40. 운영 절차·요청 창구 — 대표 접근법과 기술: topics/2026/2026-09-30-area40-s6.md
+      - 40. 운영 절차·요청 창구 — 핵심 개념과 용어: topics/2026/2026-09-30-area40-s4.md
+      - 40. 운영 절차·요청 창구 — 왜 중요한가: topics/2026/2026-09-30-area40-s3.md
+      - 40. 운영 절차·요청 창구 — 열린 질문: topics/2026/2026-09-30-area40-s11.md
+      - 40. 운영 절차·요청 창구 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area40-s10.md
       - 37. 관제 화면·실행 기록 — 대표 연구와 자료: topics/2026/2026-09-30-area37-s8.md
       - 37. 관제 화면·실행 기록 — 대표 접근법과 기술: topics/2026/2026-09-30-area37-s6.md
       - 37. 관제 화면·실행 기록 — 핵심 개념과 용어: topics/2026/2026-09-30-area37-s4.md
@@ -653,6 +660,7 @@ nav:
     - DDS 보안 규격 (DDS-Security): glossary/dds-security.md
     - ECLASS (ECLASS): glossary/eclass.md
     - HMI 철학 (HMI Philosophy (ISA-TR101.01)): glossary/hmi-philosophy.md
+    - I-PASS 인계 프로그램 (I-PASS Handoff Program): glossary/i-pass-handoff-program.md
     - IEC 공통 데이터 사전 (IEC Common Data Dictionary (IEC CDD)): glossary/iec-common-data-dictionary.md
     - IT/OT 융합 (IT/OT Convergence): glossary/it-ot-convergence.md
     - IndoorGML (IndoorGML): glossary/indoorgml.md
@@ -697,6 +705,7 @@ nav:
     - 과소명세 (Underspecification): glossary/underspecification.md
     - 관리형 노드 (Managed Node (ROS 2 Lifecycle Node)): glossary/managed-node.md
     - 관측성 (Observability): glossary/observability.md
+    - 교대 인수인계 (Shift Handover): glossary/shift-handover.md
     - 교차 형태 학습 (Cross-embodiment Learning): glossary/cross-embodiment-learning.md
     - 교착 (Deadlock): glossary/deadlock.md
     - 구성 코파일럿 (Configuration Copilot): glossary/configuration-copilot.md
@@ -845,6 +854,7 @@ nav:
     - 에이전틱 AI (Agentic AI): glossary/agentic-ai.md
     - 역량 질문 (Competency Question (CQ)): glossary/competency-question.md
     - 역할 기반 접근 통제 (Role-Based Access Control (RBAC)): glossary/role-based-access-control.md
+    - 역할 모호성 (Role Ambiguity): glossary/role-ambiguity.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
     - 영상정보 원본 활용 규제샌드박스 실증특례 (Regulatory Sandbox Special Demonstration Exemption for Raw Video Use): glossary/raw-video-regulatory-sandbox-exemption.md
@@ -1249,8 +1259,19 @@ nav:
     - 'ref-1145 — Seeing Less Is Not Seeing Safely: Privacy Leakage from Task-Scoped Robot Perception Exports': references/ref-1145.md
     - ref-1146 — The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting: references/ref-1146.md
     - ref-1147 — Guidelines 3/2019 on processing of personal data through video devices: references/ref-1147.md
+    - ref-1148 — Human Factors Briefing Note No. 8 — Safety-Critical Communications: references/ref-1148.md
+    - ref-1149 — Improving shift handover and maximising its value to the business: references/ref-1149.md
     - ? 'ref-115 — Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes'
       : references/ref-115.md
+    - 'ref-1150 — The perils of hotel technology: The robot usage resistance model': references/ref-1150.md
+    - 'ref-1151 — Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction': references/ref-1151.md
+    - ref-1152 — “딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인): references/ref-1152.md
+    - 'ref-1153 — ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications': references/ref-1153.md
+    - ref-1154 — Meet the Robot That Nurses Unplugged: references/ref-1154.md
+    - ? ref-1155 — Improving Patient Handoffs and Transitions through Adaptation and Implementation of I-PASS Across Multiple Handoff Settings
+      : references/ref-1155.md
+    - ref-1156 — Autonomous Mobile Robots (AMR): references/ref-1156.md
+    - ref-1157 — 산업안전보건기준에 관한 규칙 제222조(교시 등): references/ref-1157.md
     - 'ref-116 — Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis': references/ref-116.md
     - ref-1165 — Emulation Technology Speeds Up Warehouse Automation: references/ref-1165.md
     - ref-117 — B2MML-BatchML — Schema/B2MML-Common.xsd: references/ref-117.md

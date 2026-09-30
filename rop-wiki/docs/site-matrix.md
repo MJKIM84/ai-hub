@@ -22,13 +22,13 @@ version: 1
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | **물류창고** | 2 | 9 | 12 | 1 | 4 | 4 | 5 | 4 | 3 | 2 | 3 | 4 | 3 | 1 | 3 | 비어 있음 | 1 |
 | **제조 공장** | 2 | 비어 있음 | 3 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 비어 있음 | 1 | 3 | 1 | 1 | 비어 있음 | 비어 있음 | 1 |
-| **병원** | 1 | 3 | 5 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 1 | 2 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
-| **상업 시설** | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
+| **병원** | 1 | 3 | 5 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 2 | 2 | 2 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
+| **상업 시설** | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
 | **가정** | 비어 있음 | 1 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 1 | 2 | 비어 있음 | 비어 있음 | 1 |
 | **실외** | 1 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 비어 있음 | 1 | 2 | 1 | 비어 있음 | 비어 있음 | 1 |
 | **기타** | 1 | 2 | 비어 있음 | 2 | 비어 있음 | 비어 있음 | 비어 있음 | 비어 있음 | 1 | 비어 있음 | 1 | 1 | 1 | 비어 있음 | 비어 있음 | 비어 있음 | 1 |
 
-열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 62/119 칸.
+열 머리의 문자는 대분류다(A. 기획·사업, B. 로봇 온톨로지, C. 채팅 기반 구성·운영, D. 공간·지도 모델, E. 사물·사람·실시간 상태, F. 연동, G. 계획·최적화, H. 실행·협업·예외 복구, I. 설계·시뮬레이션, J. 현장 운영·관제, K. 플랫폼 아키텍처·인프라, L. AI·학습 기술, M. 안전, N. 보안·개인정보, O. 검증·도입·수명주기, P. 거버넌스·법규·사회, Q. 현장 유형별 적용). 아직 사례가 없는 칸은 "비어 있음"으로 표시한다. 채움률: 63/119 칸.
 
 ### 물류창고
 
@@ -67,7 +67,7 @@ version: 1
 - **C. 채팅 기반 구성·운영**: [8. 채팅으로 맵 작성](categories/chat-based-configuration-and-operation/chat-map-authoring.md#5-적용-사례-현장-유형-명시), [10. 채팅으로 로봇 구성](categories/chat-based-configuration-and-operation/chat-robot-configuration.md#5-적용-사례-현장-유형-명시), [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md#5-적용-사례-현장-유형-명시), [9. 채팅으로 시나리오 구성](categories/chat-based-configuration-and-operation/chat-scenario-composition.md#5-적용-사례-현장-유형-명시), [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md#5-적용-사례-현장-유형-명시)
 - **D. 공간·지도 모델**: [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시), [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시), [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md#5-적용-사례-현장-유형-명시)
-- **J. 현장 운영·관제**: [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시)
+- **J. 현장 운영·관제**: [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md#5-적용-사례-현장-유형-명시), [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시)
 - **K. 플랫폼 아키텍처·인프라**: [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md#5-적용-사례-현장-유형-명시), [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시)
 - **L. AI·학습 기술**: [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md#5-적용-사례-현장-유형-명시)
 - **M. 안전**: [49. 사람 근접 안전](categories/safety/human-proximity-safety.md#5-적용-사례-현장-유형-명시)
@@ -79,6 +79,7 @@ version: 1
 - **A. 기획·사업**: [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md#5-적용-사례-현장-유형-명시)
 - **C. 채팅 기반 구성·운영**: [13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md#5-적용-사례-현장-유형-명시)
 - **I. 설계·시뮬레이션**: [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md#5-적용-사례-현장-유형-명시)
+- **J. 현장 운영·관제**: [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시)
 - **L. AI·학습 기술**: [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md#5-적용-사례-현장-유형-명시)
 - **Q. 현장 유형별 적용**: [64. 상업 시설](categories/site-type-applications/commercial-facilities.md#5-적용-사례-현장-유형-명시)
 

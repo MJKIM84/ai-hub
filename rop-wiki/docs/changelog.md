@@ -20,6 +20,29 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-18 | 갱신 | [docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | 영역 심화: 3~11절 신규 작성, 13절 각주 정의 16건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 16건 반영). 2차 재실행에서 이 페이지 본문은 변경 없음 |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s6.md](topics/2026/2026-09-30-area40-s6.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "6. 대표 접근법과 기술" 절(1,472자)을 옮겼다. 2차: '전담 운영 조직' 소제목의 호텔 문장에서 출처에 없는 '전담 조직 없이'를 뺌 |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s7.md](topics/2026/2026-09-30-area40-s7.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,355자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s4.md](topics/2026/2026-09-30-area40-s4.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "4. 핵심 개념과 용어" 절(1,134자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s8.md](topics/2026/2026-09-30-area40-s8.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "8. 대표 연구와 자료" 절(938자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s11.md](topics/2026/2026-09-30-area40-s11.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "11. 열린 질문" 절(843자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s10.md](topics/2026/2026-09-30-area40-s10.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(840자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-18 | 생성 | [docs/topics/2026/2026-09-30-area40-s3.md](topics/2026/2026-09-30-area40-s3.md) | 자동 분리: 40. 운영 절차·요청 창구 의 "3. 왜 중요한가" 절(528자)을 옮겼다. 2차: 3절 끝 [의견] 문장을 의견 주체(구축자 의견)를 밝히고 출처에 없는 '개별 성능만큼' 비교를 뺀 문장으로 바꿈 |
+| 2026-09-30-18 | 요약 | [docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | 40. 운영 절차·요청 창구: 영역 심화: 3~11절 신규 작성(요청 창구·역할 기반 권한·교대 인수인계, 병원·상업 시설 사례), 1차 조건부 승인 수정 16건 반영, 2차 드리프트 2건(6절 '전담 조직 없이' 삭제, 3절 의견 주체 명시) 수정 |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1148.md](references/ref-1148.md) | 참고문헌 ref-1148 등록: Human Factors Briefing Note No. 8 — Safety-Critical Communic… |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1149.md](references/ref-1149.md) | 참고문헌 ref-1149 등록: Improving shift handover and maximising its value to the bus… |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1150.md](references/ref-1150.md) | 참고문헌 ref-1150 등록: The perils of hotel technology: The robot usage resistance m… |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1151.md](references/ref-1151.md) | 참고문헌 ref-1151 등록: Robots in Organizations: The Role of Workflow, Social, and E… |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1152.md](references/ref-1152.md) | 참고문헌 ref-1152 등록: “딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인) |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1153.md](references/ref-1153.md) | 참고문헌 ref-1153 등록: ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1154.md](references/ref-1154.md) | 참고문헌 ref-1154 등록: Meet the Robot That Nurses Unplugged |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1155.md](references/ref-1155.md) | 참고문헌 ref-1155 등록: Improving Patient Handoffs and Transitions through Adaptatio… |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1156.md](references/ref-1156.md) | 참고문헌 ref-1156 등록: Autonomous Mobile Robots (AMR) |
+| 2026-09-30-18 | 생성 | [docs/references/ref-1157.md](references/ref-1157.md) | 참고문헌 ref-1157 등록: 산업안전보건기준에 관한 규칙 제222조(교시 등) |
+| 2026-09-30-18 | 생성 | [docs/glossary/shift-handover.md](glossary/shift-handover.md) | 용어집 항목 교대 인수인계 |
+| 2026-09-30-18 | 생성 | [docs/glossary/i-pass-handoff-program.md](glossary/i-pass-handoff-program.md) | 용어집 항목 I-PASS 인계 프로그램 |
+| 2026-09-30-18 | 생성 | [docs/glossary/role-ambiguity.md](glossary/role-ambiguity.md) | 용어집 항목 역할 모호성 |
+| 2026-09-30-18 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-30-17 | 갱신 | [docs/categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | 영역 심화: 3~11절 신규 작성(현장 유형 사례 4건: 병원·제조 공장·물류창고·기타), 13절 각주 16건, 1차 조건부 승인 수정 11건 반영 |
 | 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s6.md](topics/2026/2026-09-30-area36-s6.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "6. 대표 접근법과 기술" 절(1,605자)을 옮겼다 |
 | 2026-09-30-17 | 생성 | [docs/topics/2026/2026-09-30-area36-s4.md](topics/2026/2026-09-30-area36-s4.md) | 자동 분리: 36. 가상 시운전·실제 상황 재현 의 "4. 핵심 개념과 용어" 절(1,262자)을 옮겼다 |
