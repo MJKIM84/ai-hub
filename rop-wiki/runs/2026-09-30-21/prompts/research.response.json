@@ -1,0 +1,898 @@
+{
+  "duration_api_ms": 587162,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.5841955999999997,
+  "usage": {
+    "input_tokens": 68,
+    "cache_creation_input_tokens": 97987,
+    "cache_read_input_tokens": 5368298,
+    "output_tokens": 43880,
+    "output_tokens_details": {
+      "thinking_tokens": 15245
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 97987,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 29291,
+        "cache_read_input_tokens": 180879,
+        "cache_creation_input_tokens": 413,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 413
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 68,
+      "outputTokens": 43880,
+      "cacheReadInputTokens": 5368298,
+      "cacheCreationInputTokens": 97987,
+      "webSearchRequests": 0,
+      "costUSD": 2.7354275999999995,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 15245,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 562193,
+      "outputTokens": 15315,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 21,
+      "costUSD": 0.848768,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 55,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-21\",\"date\":\"2026-09-30\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":56,\"area_name\":\"56. 운영 이관·확대·교육\",\"category\":\"O. 검증·도입·수명주기\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 초기 운영 지원(ELS)·운영 인수·파일럿 연옥·현장 지원 인력·법정 특별교육 용어 없음\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 병원·제조 공장·물류창고·상업 시설·실외의 이관·확대·교육 사례와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 전담 조직→사용 부서 이관, 초기 운영 지원, 시범→단계적 확대, 현장 대면 지원→원격 지원, 디지털 작업 안내, 견습·재직자 교육 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ITIL 서비스 전환, ANSI/A3 R15.08-3, 산업안전보건법 시행규칙 특별교육, 국내 인력양성·실증 사업 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 0건\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가? [분류원문]\",\"구축 팀에서 운영 팀(또는 사용 부서)으로 운영을 넘기는 절차와 판정 기준은 무엇이며, 초기 운영 지원(Early Life Support) 같은 전환 기간 개념은 어떻게 정의되는가? (섹션 4·6·7 겨냥)\",\"시범 운영에서 여러 현장·더 많은 로봇으로 넓히는 방식은 무엇이며, 시범에서 멈추는(파일럿 연옥) 원인과 새 현장·새 로봇을 더한 사례는 무엇인가? (섹션 3·5·6 겨냥)\",\"로봇 운영자·현장 작업자 교육과 변화 관리는 어떤 방법(작업자 초기 참여, 현장 지원 인력, 디지털 작업 안내, 견습)으로 이루어지고, 교육을 요구하는 표준·법령·국내 제도(ANSI/A3 R15.08-3, 산업안전보건법 시행규칙 특별교육, 한국로봇산업진흥원 인력양성·실증 사업)는 무엇인가? (섹션 6·7 겨냥, 한국 자료 우선)\",\"병원·제조 공장·물류창고·상업 시설·실외 현장에서 운영 이관·확대·교육 사례와 확대에 따른 사람 지원 부담은 어떻게 보고되었는가? (섹션 5·8 겨냥)\",\"56. 운영 이관·확대·교육에서 ROP가 직접 맡을 것과 사업주·로봇 SI·교육기관·인사 조직에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"병원 사례(한국): 한림대학교성심병원 커맨드센터장은 로봇 도입 초기에는 커맨드센터 같은 전담 조직이 필요하지만 도입과 유지는 다르므로 안정화 뒤에는 실제 사용 부서로 관리를 넘겨야 한다고 발표했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1315\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"청년의사 2023-06-21 기사: 이미연 센터장은 \\\"도입과 유지는 다르기 때문에\\\" 안정화 후에는 실제 사용 부서로 관리를 이관해야 한다고 설명(학회 발표 보도).\",\"as_of\":\"2023-06-21\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f2\",\"claim\":\"병원 사례(한국): 같은 발표에서 센터장은 기존 업무가 있는 직원에게 로봇 관련 일을 나눠 맡기면 감당할 수 없어, 업무를 줄이려는 로봇 도입이 오히려 인력 수요를 만들 수 있다고 지적했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1315\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기존 업무가 있는 직원에게 로봇 업무를 분담하면 일이 너무 많아 할 수 없다는 발언, 일을 줄이려는 도입이 인력 필요를 만들 수 있다는 우려(기사 요약).\",\"as_of\":\"2023-06-21\",\"site_type\":\"병원\",\"flow_item\":\"예외·성과\"},{\"id\":\"f3\",\"claim\":\"병원 사례(한국): 한림대학교성심병원의 로봇 운용 규모는 2024-09 보도 기준 7종 73대에서 2025-04 보도 기준 11종 77대로 늘었고, 약제팀이 약품 배송 로봇을 가장 적극적으로 쓰지만 한 교수는 병원 물류를 로봇이 맡기에는 아직 너무 복잡하고 다양하다고 평가했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1316\",\"ref-1261\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"비즈한국 2025-04-10: 11종 77대 사용, 약제팀의 '약제나르미' 배송. 장애요인으로 억 단위 비용, 경사·수동 문·승강기 호환 문제. 7종 73대는 지디넷코리아 2024-09-19 보도(재인용: 2026-09-30-18).\",\"as_of\":\"2025-04-10\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f4\",\"claim\":\"병원 사례(미국): Birkhoff 외(Delaware Journal of Public Health, 2024-12)에 따르면 ChristianaCare 의 900병상 3차 병원은 2022-04 협동로봇 2대를 배송에 투입하면서 배치 전 이메일·웨비나 교육을 하고, 필요할 때 임상 로봇 담당자(Clinical Robot Associate, CRA)가 사용 지점에서 대면 실습 교육을 했으나, 드물게 쓰는 직원은 서랍 사용 방법에 불확실성을 보였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1317\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"even though clinicians and staff members were sent basic education, they may require more educational touch points\\\" — 빈번 사용자(약제 기사)는 숙달, 요청은 병원 곳곳의 아이패드 키오스크로 접수.\",\"as_of\":\"2024-12\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f5\",\"claim\":\"병원 사례(미국): 같은 연구의 7주 관찰(배치 약 6개월 뒤) 동안 89건 배송에서 CRA 가 107회 개입했고 그중 72회가 승강기 지원이었으며, 저자들은 확대를 위해 현장 대면 지원에서 원격 지원으로의 전환, 반복 교육, 로봇을 직무 위협이 아닌 팀원으로 알리는 내부 소통을 권고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1317\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"관찰 23회·배송 89건, CRA 개입 107회(승강기 72회). 권고: 대면 지원에서 원격 지원으로 전환, 반복 교육, 인력 메시지, CRA 감독을 줄이기 전 자율성 향상.\",\"as_of\":\"2024-12\",\"site_type\":\"병원\",\"flow_item\":\"예외·성과\"},{\"id\":\"f6\",\"claim\":\"제조 공장 사례(스웨덴): Schnell·Holm(SPS2022, 2022)은 중소 제조기업의 협동로봇 도입 과제를 안전·성과·전략·참여·교육으로 정리하고, 처음부터 작업자를 참여시키면 새 기술과 바뀐 작업에 대한 수용과 이해가 나아지며 누구나 배우고 쓰기 쉬운 시스템을 고르는 것이 중요하다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1322\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"문헌 검토와 기업 직원·연구자 면담. 성공 요인: 초기 작업자 참여, 'easy to learn and easy to use for everyone' 인 시스템 선택, 작업과 협동로봇 능력의 정합(초록 기준).\",\"as_of\":\"2022-04\",\"site_type\":\"제조 공장\",\"flow_item\":\"수행 자원\"},{\"id\":\"f7\",\"claim\":\"제조 공장 사례: Narayanan 외(arXiv, 2026-06)의 청바지 봉제 로봇 작업셀 현장 배치에서는 휴대폰·태블릿·머리 착용 디스플레이로 볼 수 있는 디지털 작업 지시·단계별 안내·작업셀 옆 QR 접근·설정과 재구성 문제 해결 지원을 운영자 교육 자료로 만들었고, 운영자 교육 필요는 개발보다 배치 단계에서 주로 드러났다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1318\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"these needs became clear primarily during deployment rather than during development\\\" — 본 생산 옆 병렬 라인에서 2D 주머니 작업 70회·3D 봉제 50회 시험(각 90% 성공).\",\"as_of\":\"2026-06-15\",\"site_type\":\"제조 공장\",\"flow_item\":\"수행 자원\"},{\"id\":\"f8\",\"claim\":\"제조 공장 사례: 같은 배치에서 연구진은 디지털 트윈의 가상 작업셀로 로봇·고정구·인계 지점 배치를 다듬으면서 운영자의 접근 경로와 적재·하역 접근 구역을 사전에 평가했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1318\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"가상 작업셀로 로봇·고정구·테이블·인계 지점 배치를 반복 조정하고 운영자 접근 경로와 적재·하역 구역을 평가해 사람 참여 작업 흐름 통합을 확인(논문 본문 요약).\",\"as_of\":\"2026-06-15\",\"site_type\":\"제조 공장\",\"flow_item\":\"제약\"},{\"id\":\"f9\",\"claim\":\"물류창고 사례(미국): Amazon 의 메카트로닉스·로봇 견습 과정(Mechatronics and Robotics Apprenticeship)은 미국 노동부에 등록된 과정으로, 12주 교실 교육 뒤 1년간 현장 학습을 거쳐 직원을 로봇·메카트로닉스 기술 정비 인력으로 전환하며, 1단계 수료 시 시급이 최대 약 40% 오른다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1323\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"1단계: 대학 협력 12주 교실 교육 + 1년 현장 학습, 2단계(우수자): 추가 교실 교육 + 약 2년 현장 학습. 협력 대학 4곳 명시. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f10\",\"claim\":\"물류창고 사례: Supply Chain Dive(2023-05) 보도에 따르면 DHL Supply Chain 은 2017년 Locus Robotics 와 협력을 시작해 전 세계에 자율이동로봇 3,000대(북미 2,000대 이상)를 배치했고, 1,500개 창고·물류센터 가운데 여러 현장에 5,000대를 추가 배치할 계획이다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1324\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"협력 시작 2017, 3,000대 배치(북미 2,000대 이상), 2022년 말 피킹 보조 로봇 2,000대, 5,000대 추가 배치 계획. 확대 전개 방식(현장별 절차)은 기사에 없음.\",\"as_of\":\"2023-05-11\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f11\",\"claim\":\"물류창고 사례(벤더 주장): Hai Robotics 는 Geely 자동차 부품 창고가 소수의 상자 처리 로봇(ACR)으로 시범 운영해 성능을 확인한 뒤 31대로 넓혔다고 소개하고, 시범 → 고부가 영역부터 수작업과 병행한 확대 → 전면 통합의 3단계 도입을 권한다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1325\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 소수 ACR 시범 후 \\\"scaled up to 31 robots to support full-scale operations\\\". 단계적 도입이 운영자의 적응과 업무 흐름 조정을 돕는다고 서술.\",\"as_of\":\"2025-11-17\",\"site_type\":\"물류창고\",\"flow_item\":\"시작 조건\",\"vendor_claim\":true},{\"id\":\"f12\",\"claim\":\"세계경제포럼(WEF) Global Lighthouse Network 백서는 제조 생태계 기업의 70% 이상이 첨단 제조 기술을 시도하면서도 투자 수익이나 측정 가능한 운영 핵심성과지표 개선을 얻지 못하는 '파일럿 연옥(pilot purgatory)'에 머물러 있다고 서술한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1329\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약 기준: 70% 이상이 pilot purgatory — ROI 나 운영 KPI 의 측정 가능한 개선 없이 첨단 제조 기술 도입을 시도하는 상태. PDF 본문 추출 실패. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"source_unopened\":true},{\"id\":\"f13\",\"claim\":\"ITIL 용어집은 초기 운영 지원(Early Life Support, ELS)을 배포가 끝난 뒤 서비스가 운영으로 완전히 인수되기 전의 단계로 정의하고, 이 기간에 서비스 제공자가 핵심성과지표·서비스 수준·모니터링 임계값을 검토·개선하고 장애·문제 관리에 추가 자원을 둘 수 있다고 설명한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1326\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약 기준: ELS 는 배포 끝과 운영 완전 인수 전 사이의 서비스 전환(Service Transition) 단계. KPI·서비스 수준·모니터링 임계값 검토, 장애·문제 관리 추가 자원. PDF 추출 실패. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"완료·인계\",\"source_unopened\":true},{\"id\":\"f14\",\"claim\":\"법제처 법령해석(안건 23-0872, 2023-11-21 회신)은 산업안전보건법 시행규칙 별표 5의 특별교육 대상 '로봇작업'이 산업용 로봇에 한정되지 않는다고 보았고, 그 교육 내용으로 로봇의 기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서를 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1320\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"별표 5 제1호라목 '로봇작업'과 제5호카목 '산업용 로봇'을 구분해 규정한 점을 근거로 범위 제한 없음. 법령해석은 행정부 내부 지침으로 법원 판결의 기속력은 없다고 명시.\",\"as_of\":\"2023-11-21\",\"site_type\":null,\"flow_item\":\"제약\"},{\"id\":\"f15\",\"claim\":\"연계 대상: 한국로봇산업진흥원의 로봇융복합 산업인력양성사업(재직자)은 고용노동부 국가인적자원개발 컨소시엄 사업으로 국내 로봇(관련) 기업 재직자에게 맞춤형 교육을 제공하며, 우선지원 대상기업은 교육비 100%, 대기업은 80%를 지원하고 같은 과정을 10명 이상 요청하면 기업 맞춤 교육을 연다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1319\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"운영기관 한국로봇산업진흥원, 전담기관 한국산업인력공단, 협력기관 부천산업진흥재단. 수료 시 직업능력개발 포털 인정. 대상은 로봇 기업 재직자(도입 현장 운영자 전용 과정 여부 미확인). (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f16\",\"claim\":\"제조 공장 사례(한국): 한국로봇산업진흥원의 첨단제조로봇 실증사업은 수요기업이 로봇시스템을 도입할 제조 현장을 운영하고, 공급기업(로봇 SI)이 현장 로봇시스템 설치·기술지원·직원 교육·유지보수와 사후관리를 맡도록 역할을 나눈다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1321\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"목적: \\\"로봇공정모델 실증을 통한 첨단제조로봇 활용기술 시장 확산\\\". 공급기업(로봇SI) 역할에 설치·기술지원·직원 교육·유지보수·사후관리, 현장 성능검증 지원 포함. (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"제조 공장\",\"flow_item\":\"수행 자원\"},{\"id\":\"f17\",\"claim\":\"물류창고 사례(스웨덴): Nilsson 외(Safety Science 187, 2025-07)의 물류기업 두 곳 비교 사례연구에서 한 곳은 신규 직원에게 음성 피킹 시스템과 창고 공정을 익히는 5일 입문 교육, 멘토 배정, 현장 기술자 지원을 두었고 전자상거래 기업은 1~2일의 덜 구조화된 교육이었으며, 알고리즘 관리로 인한 신체·심리 부담은 전자상거래 기업에서 더 컸다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1327\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"검색 요약 기준: 관찰·반구조화 면담, 5일 입문 교육(pick-2-voice)과 멘토·현장 기술자 vs 1~2일 교육. 로봇이 아닌 음성 피킹·알고리즘 관리 시스템 사례. 원문 403·연결 끊김으로 미열람.\",\"as_of\":\"2025-07\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\",\"source_unopened\":true},{\"id\":\"f18\",\"claim\":\"실외 사례(중국): Hu 외(Frontiers in Robotics and AI, 2022)는 COVID-19 기간 Alibaba 자율 배송 로봇 200대 이상이 52개 도시 160개 이상 지역에서 운행된 사례를 바탕으로, 원격 운영자가 로봇과 협업(telecollaboration)해 대규모 배치를 안전하게 앞당기는 틀을 제시하고 한 운영자가 여러 로봇을 동시에 감독하는 것을 목표로 둔다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1328\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"\\\"Ideally, one operator can supervise multiple robots simultaneously via telecollaboration.\\\" 운영자 대 로봇 비율의 구체 수치와 원격 운영자 교육은 논문에 없음.\",\"as_of\":\"2022\",\"site_type\":\"실외\",\"flow_item\":\"수행 자원\"},{\"id\":\"f19\",\"claim\":\"상업 시설 사례: Fu·Zheng·Wong(2022)이 면담한 중국 고급 호텔 직원들은 로봇이 어느 부서 소속인지 불분명해 정비 책임과 부서 간 소통 부담이 생겼고, 근무 중 로봇 교육·동료 교육·고장 처리 같은 추가 업무가 로봇 사용 저항으로 이어졌다고 답했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1260\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"호텔 직원 19명 면담, 역할 모호성과 교육·고장 대응 추가 업무가 사용 저항 요인. (재인용: 2026-09-30-18)\",\"as_of\":\"2022\",\"site_type\":\"상업 시설\",\"flow_item\":\"수행 자원\"},{\"id\":\"f20\",\"claim\":\"병원 사례(한국): 한림대학교성심병원은 전담 부서인 커맨드센터가 여러 종류의 서비스 로봇을 통합 관제로 운영해 의료진이 로봇을 직접 운용하지 않아도 되게 했고, 커맨드센터는 사용 시나리오 개발·업무 프로세스 조율·실시간 모니터링과 문제 대응을 맡는다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1261\",\"ref-1262\"],\"cross_checked\":true,\"confidence\":\"low\",\"evidence_excerpt\":\"지디넷코리아·로봇신문 두 보도가 커맨드센터의 통합 관제·시나리오 개발·프로세스 조율·문제 대응 역할을 일치해 서술. (재인용: 2026-09-30-18)\",\"as_of\":\"2024-09-19\",\"site_type\":\"병원\",\"flow_item\":\"수행 자원\"},{\"id\":\"f21\",\"claim\":\"ANSI/A3 R15.08-3-2026(산업용 이동로봇 안전 요구사항 제3부)은 사용자가 제조사·통합자가 준 정보를 적용해 산업용 이동로봇 응용과 운영 환경을 안전하게 운용·정비하기 위한 요구사항을 정하며, 위험성평가와 응용·운영 환경의 변경 관리, 수명주기 전반의 인원 안전을 강조한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1265\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"사용자 측 운용·정비 요구, 변경 관리, 수명주기 인원 안전 강조(ANSI 블로그 검색 요약). 교육 조항 세부는 미확인. (재인용: 2026-09-30-18)\",\"as_of\":\"2026-04-23\",\"site_type\":null,\"flow_item\":\"제약\",\"source_unopened\":true},{\"id\":\"f22\",\"claim\":\"확인한 자료를 종합하면 핵심 질문(시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가)에 대해, 현장은 도입 초기에 전담 조직·현장 지원 인력이 운영을 맡다가 안정화 뒤 사용 부서·원격 지원으로 넘기고, 시범 뒤 단계적으로 대수·현장을 늘리며, 공급자(SI) 교육·법정 특별교육·현장 대면 지원·디지털 작업 안내·견습 과정으로 사람을 준비시키는 것으로 보이나, 이관 시점을 판정하는 정량 기준이나 교육 효과를 비교한 공개 표준·연구는 확인하지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1315\",\"ref-1317\",\"ref-1326\",\"ref-1324\",\"ref-1325\",\"ref-1329\",\"ref-1321\",\"ref-1320\",\"ref-1318\",\"ref-1323\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1·f5(전담 조직→사용 부서, 대면→원격 지원), f13(ELS), f10·f11·f12(단계적 확대와 파일럿 연옥), f7·f9·f14·f16(교육 수단) 종합. 이관 판정 기준·교육 효과 정량 비교 자료는 찾지 못함.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"확인한 자료를 종합하면 56. 운영 이관·확대·교육에서 ROP가 직접 맡을 범위는 이관 판단에 쓰는 운영 지표(사람 개입 횟수와 원인, 예외 추이, 핵심성과지표·모니터링 임계값)의 기록·제공, 구축 팀에서 운영 팀·사용 부서로의 역할·권한 전환, 새 현장·새 로봇 추가 때 재사용할 구성의 복제, 운영자용 단계별 안내와 교육·연습용 모드 제공으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1317\",\"ref-1326\",\"ref-1315\",\"ref-1318\",\"ref-1328\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"CRA 개입 107회 기록(f5)이 원격 지원 전환 판단 근거가 되고, ELS 의 KPI·임계값 검토(f13), 전담 조직→사용 부서 이관(f1), 디지털 작업 안내(f7), 원격 협업(f18)에서 도출한 추정.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"완료·인계\"},{\"id\":\"f24\",\"claim\":\"연계 대상: 분류 원문 19장 기준으로 법정 안전보건교육의 실시·기록(사업주), 인력 편성·직무 전환·임금(인사 조직), 로봇 설치·직원 교육·유지보수·사후관리 계약(로봇 SI·제조사), 기술 인력 양성 과정(교육기관·정부 사업)은 외부가 맡으므로, ROP는 교육 이수 여부를 권한·작업 제약으로 받아 반영하고 운영 데이터를 넘기는 쪽을 맡는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1320\",\"ref-1321\",\"ref-1319\",\"ref-1323\",\"ref-1327\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f14(법정 특별교육), f16(SI 의 교육·사후관리), f15(재직자 인력양성), f9(사내 견습), f17(사내 입문 교육)에서 도출.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"수행 자원\"},{\"id\":\"f25\",\"claim\":\"이 영역은 인수 시험 뒤 이관이 이어지는 55. 현장 조사·설치·시운전(f16), 교체·버전 변경 후 재교육의 57. 자산·소프트웨어 수명주기 관리(f21), 전담 조직과 교대의 40. 운영 절차·요청 창구(f1·f20), 초기 운영 지원 지표의 39. 운영 성과 측정·개선(f13), 개입 기록의 38. 모니터링·이상 탐지·원인 분석과 37. 관제 화면·실행 기록(f5), 새 로봇 추가의 4. 이기종 로봇 등록(f10), 확대 규모의 35. 처리능력·규모·배치 설계(f11·f18), 운영자 접근 사전 평가의 36. 가상 시운전·실제 상황 재현(f8), 승강기 지원 부담의 22. 설비·건물 시스템 연동(f5), 권한 전환의 51. 인증·권한·격리(f23), 사용자 표준의 50. 안전 표준·인증·사고 조사(f21), 법정 교육의 59. 법·규제·보험·라이선스(f14), 수용성과 업무 부담의 60. 노동·수용성·접근성(f2·f19), SI 사후관리 책임의 58. 다사업자 책임·계약·데이터(f16), 시범 투자 판단의 3. 경제성·조달·사업 모델(f12), 원격 감독의 31. 사람–로봇 협업(f18), 적용 현장인 61. 물류창고(f9~f11·f17)·62. 제조 공장(f6~f8·f16)·63. 병원·의료(f1~f5·f20)·64. 상업 시설(f19)·66. 실외(f18)와 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1321\",\"ref-1265\",\"ref-1315\",\"ref-1261\",\"ref-1326\",\"ref-1317\",\"ref-1324\",\"ref-1325\",\"ref-1328\",\"ref-1318\",\"ref-1320\",\"ref-1316\",\"ref-1260\",\"ref-1329\",\"ref-1323\",\"ref-1327\",\"ref-1322\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"각 연결은 괄호 안 finding 에 근거한 추정. C. 채팅 기반 구성·운영 영역과의 연결 근거는 이번 조사에서 찾지 못함.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1315\",\"org\":\"청년의사 (곽성순)\",\"title\":\"'안내하고 물건 옮기고' 병원에 들어온 로봇은 잘하고 있을까\",\"published\":\"2023-06-21\",\"url\":\"http://www.docdocdoc.co.kr/news/articleView.html?idxno=3007011\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한림대학교성심병원 커맨드센터장 발표 보도. 도입 초기 전담 조직 필요, 안정화 뒤 사용 부서로 관리 이관, 기존 인력에 로봇 업무 분담의 어려움을 전한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1316\",\"org\":\"비즈한국 (김초영)\",\"title\":\"병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까\",\"published\":\"2025-04-10\",\"url\":\"https://bizhankook.com/articles/29394.html\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한림대학교성심병원의 11종 77대 로봇 운용, 약제팀 활용, 의료진의 유보적 평가와 비용·건물 구조 장애요인을 보도한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1317\",\"org\":\"Birkhoff, S. S., Merring, P., Spence, A., Bassett, W., & Roth, S. C. (Delaware Journal of Public Health)\",\"title\":\"Integrating Collaborative Robots into a Complex Hospital Setting: A Qualitative Descriptive Study\",\"published\":\"2024-12\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11892717/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"ChristianaCare 병원 배송 협동로봇 2대의 관찰 연구. 직원 교육 방식, 임상 로봇 담당자의 개입 횟수, 원격 지원 전환과 반복 교육 권고를 담는다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1318\",\"org\":\"Narayanan, G., Ajith, A., Zornow, J., Calle, C., Herrero Lugo, A., Susa Rincon, J. L., Wen, C., & Solowjow, E. (arXiv)\",\"title\":\"A Deployment Case Study in Robotic Apparel Automation: Digital Twin Integration, Interoperability, and Workforce Enablement\",\"published\":\"2026-06-15\",\"url\":\"https://arxiv.org/abs/2606.16078\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"청바지 봉제 로봇 작업셀의 현장 배치 사례. 디지털 트윈으로 운영자 접근 평가, 디지털 작업 안내 기반 운영자 교육, 배치 단계에서 드러난 교육 필요를 보고한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2606.16078\"},{\"id\":\"ref-1319\",\"org\":\"한국로봇산업진흥원\",\"title\":\"로봇융복합 산업인력양성사업(재직자)\",\"published\":null,\"url\":\"https://kiria.org/portal/culture/portalCulRoInduManpower.do\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"고용노동부 국가인적자원개발 컨소시엄으로 로봇 기업 재직자 맞춤형 교육을 운영하는 사업 안내. 교육비 지원 비율과 운영 구조를 밝힌다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1320\",\"org\":\"법제처\",\"title\":\"민원인 - 유해하거나 위험한 작업에 필요한 안전보건교육을 추가로 해야 하는 로봇작업이 산업용 로봇을 사용하는 작업으로 한정되는지 여부(안건번호 23-0872)\",\"published\":\"2023-11-21\",\"url\":\"https://www.moleg.go.kr/lawinfo/nwLwAnInfo.mo?mid=a10106020000&cs_seq=438638&currentPage=1&keyField=&keyWord=&sort=date\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"산업안전보건법 시행규칙 별표 5 특별교육 대상 로봇작업의 범위를 해석한 법령해석례. 산업용 로봇 한정이 아니라고 보고 교육 내용 항목을 적시한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1321\",\"org\":\"한국로봇산업진흥원\",\"title\":\"첨단제조로봇 실증사업\",\"published\":null,\"url\":\"https://www.kiria.org/portal/bizsupt/portalBsuptRoCreProduct.do\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"로봇공정모델 실증 사업 안내. 수요기업과 공급기업(로봇 SI)의 역할(설치·기술지원·직원 교육·유지보수·사후관리)을 나눈다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1322\",\"org\":\"Schnell, M., & Holm, M. (SPS2022, Advances in Transdisciplinary Engineering 21)\",\"title\":\"Challenges for Manufacturing SMEs in the Introduction of Collaborative Robots\",\"published\":\"2022-04\",\"url\":\"https://ebooks.iospress.nl/DOI/10.3233/ATDE220137\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"스웨덴 중소 제조기업의 협동로봇 도입 과제(안전·성과·전략·참여·교육)와 성공 요인을 문헌과 면담으로 정리한 학회 논문. 초록 페이지만 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1323\",\"org\":\"Amazon\",\"title\":\"New Amazon program offers free career training in robotics\",\"published\":null,\"url\":\"https://www.aboutamazon.com/news/workplace/new-amazon-program-offers-free-career-training-in-robotics\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"Amazon 사내 메카트로닉스·로봇 견습 과정의 구조(12주 교실 교육, 1년 현장 학습, 2단계 과정)와 임금 인상, 협력 대학을 소개하는 회사 발표.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1324\",\"org\":\"Supply Chain Dive (Alejandra Carranza)\",\"title\":\"DHL Supply Chain, Locus Robotics plan to deploy 5K robots worldwide\",\"published\":\"2023-05-11\",\"url\":\"https://www.supplychaindive.com/news/DHL-Supply-Chain-Locus-Robotics-expand-agreement-5K-autonomous-mobile-robots/649965/\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"DHL Supply Chain 의 Locus 자율이동로봇 협력(2017년 시작), 3,000대 배치 현황과 5,000대 추가 배치 계획을 보도한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1325\",\"org\":\"Hai Robotics\",\"title\":\"A Guide to Implementing Warehouse Robotics for Low-Risk Warehouse Automation\",\"published\":\"2025-11-17\",\"url\":\"https://www.hairobotics.com/blog/guide-implementing-warehouse-robotics-low-risk-warehouse-automation\",\"type\":\"벤더 문서\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"창고 로봇의 시범→단계적 확대→전면 통합 도입을 권하고 Geely 창고의 시범 후 31대 확대 사례를 소개하는 벤더 글.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1326\",\"org\":\"AXELOS (Boston University 게재본)\",\"title\":\"ITIL® glossary and abbreviations English\",\"published\":null,\"url\":\"https://www.bu.edu/tech/files/2018/10/ITIL%C2%AE-glossary-and-abbreviations.pdf\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. ITIL 용어집으로 초기 운영 지원(Early Life Support)과 서비스 전환 용어를 정의한다. PDF 본문 추출에 실패해 검색 요약 범위만 사용.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-1327\",\"org\":\"Nilsson, K. H., Matilla-Santander, N., Lee, M. K., Brulin, E., Bodin, T., & Håkansta, C. (Safety Science 187)\",\"title\":\"Algorithmic management and occupational health: A comparative case study of organizational practices in logistics\",\"published\":\"2025-07\",\"url\":\"https://www.sciencedirect.com/science/article/pii/S0925753525000888\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. 스웨덴 물류기업 두 곳의 알고리즘 관리 실무를 비교한 사례연구로 신규 직원 교육 방식과 작업 부담 차이를 다룬다. 403·연결 끊김으로 검색 요약만 확인.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-1328\",\"org\":\"Hu, Z., Zhang, Y., Li, Q., & Lv, C. (Frontiers in Robotics and AI)\",\"title\":\"Human–Machine Telecollaboration Accelerates the Safe Deployment of Large-Scale Autonomous Robots During the COVID-19 Pandemic\",\"published\":\"2022\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC9043527/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"Alibaba 자율 배송 로봇 200대 이상의 대규모 배치를 원격 운영자–로봇 협업으로 안전하게 앞당긴 틀을 제시하는 논문.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1329\",\"org\":\"World Economic Forum (McKinsey & Company 협력)\",\"title\":\"Global Lighthouse Network: Insights from the Forefront of the Fourth Industrial Revolution\",\"published\":null,\"url\":\"https://www3.weforum.org/docs/WEF_Global_Lighthouse_Network.pdf\",\"type\":\"업계 보고서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. 첨단 제조 기술을 대규모로 확산한 '등대 공장' 사례를 다루는 백서로, 제조 기업 70% 이상이 파일럿 연옥에 있다고 서술한다. PDF 본문 추출 실패로 검색 요약만 확인.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true},{\"id\":\"ref-1260\",\"org\":\"Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)\",\"title\":\"The perils of hotel technology: The robot usage resistance model\",\"published\":\"2022\",\"url\":\"https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/\",\"type\":\"논문\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"중국 고급 호텔 직원 면담으로 로봇 사용 저항 요인(역할 모호성, 교육·고장 대응 추가 업무)을 모델화한 연구.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1261\",\"org\":\"지디넷코리아\",\"title\":\"로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 (제목 일부만 확인)\",\"published\":\"2024-09-19\",\"url\":\"https://zdnet.co.kr/view/?no=20240919162124\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한림대학교성심병원 커맨드센터의 서비스 로봇 통합 운영과 누적 사용 건수를 보도한 기사.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1262\",\"org\":\"로봇신문\",\"title\":\"국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (제목 일부만 확인)\",\"published\":\"2024-04\",\"url\":\"http://www.irobotnews.com/news/articleView.html?idxno=34601\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"한림대학교성심병원의 로봇 운영 조직(커맨드센터)과 요청 방식을 소개한 기사.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null},{\"id\":\"ref-1265\",\"org\":\"ANSI (The ANSI Blog)\",\"title\":\"ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications\",\"published\":null,\"url\":\"https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"원문 미열람. 산업용 이동로봇 안전 요구사항 제3부(사용자 측 운용·정비 요구)의 소개 글.\",\"fetched\":false,\"fetched_via\":null,\"fetch_url\":null,\"source_unopened\":true}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f22(핵심 질문 답, 추정), f12(파일럿 연옥, 원문 미열람), f2·f5(이관·확대 시 사람 부담) / 섹션 4: 초기 운영 지원 f13(원문 미열람), 파일럿 연옥 f12, 현장 지원 인력(CRA) f4, 로봇작업 특별교육 f14 / 섹션 5: 병원 — f1·f2·f3·f20(한국 한림대학교성심병원), f4·f5(미국 ChristianaCare); 제조 공장 — f6(스웨덴 중소기업), f7·f8(봉제 작업셀), f16(한국 실증사업); 물류창고 — f9(Amazon 견습), f10(DHL 확대), f11(벤더 주장 병기), f17(원문 미열람, 로봇이 아닌 음성 피킹); 상업 시설 — f19(호텔); 실외 — f18(배송 로봇). 가정·기타 사례는 찾지 못했음을 명시 / 섹션 6: 전담 조직→사용 부서 이관 f1·f20, 초기 운영 지원 f13, 대면→원격 지원 전환 f5·f18, 시범→단계적 확대 f10·f11·f12, 작업자 초기 참여 f6, 디지털 작업 안내·가상 작업셀 f7·f8, 견습·입문 교육 f9·f17 / 섹션 7: ITIL f13, ANSI/A3 R15.08-3 f21(원문 미열람), 산업안전보건법 시행규칙 별표 5 특별교육 f14, 한국로봇산업진흥원 인력양성 f15·실증사업 f16 / 섹션 8: f4·f5·f6·f7·f17·f18·f19 / 섹션 9: f23(직접 범위), f24(연계 대상) / 섹션 10: f25 — 3, 4, 22, 31, 35, 36, 37, 38, 39, 40, 50, 51, 55, 57, 58, 59, 60, 61, 62, 63, 64, 66 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 63. 병원·의료 페이지 5절에 f1·f4·f5, 62. 제조 공장 페이지에 f6·f16, 66. 실외 페이지에 f18 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"초기 운영 지원\",\"term_en\":\"Early Life Support (ELS, ITIL)\",\"definition\":\"새로 배포되거나 바뀐 서비스를 운영 조직이 완전히 인수하기 전까지 구축 측이 함께 남아 성과 지표·서비스 수준·모니터링 임계값을 점검하고 장애 대응을 보강하는 전환 기간이다.\"},{\"term_ko\":\"파일럿 연옥\",\"term_en\":\"Pilot Purgatory\",\"definition\":\"새 기술의 시범 운영은 거듭하지만 투자 수익이나 측정 가능한 운영 개선을 얻지 못해 전사·다현장 확대로 넘어가지 못하는 상태를 가리키는 말이다.\"},{\"term_ko\":\"특별안전보건교육\",\"term_en\":\"Special Occupational Safety and Health Training (Korea)\",\"definition\":\"한국 산업안전보건법 시행규칙이 로봇작업 같은 유해·위험 작업에 배치되는 근로자에게 정기 교육과 별도로 실시하게 하는 작업별 안전보건교육이다.\"}],\"open_questions_new\":[\"구축 팀·전담 조직에서 운영 팀·사용 부서로 로봇 운영을 넘기는 시점을 사람 개입률·예외 건수·핵심성과지표 안정 같은 정량 기준으로 판정한 공개 사례나 지침이 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 55. 현장 조사·설치·시운전 | 근거: f13 | 종류: 일반\",\"로봇 운영자·현장 사용자 교육 방식(웨비나, 현장 대면 지원, 디지털 작업 안내)에 따른 사용 오류·개입 감소 효과를 비교 측정한 연구가 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 60. 노동·수용성·접근성 | 근거: f4 | 종류: 일반\",\"여러 로봇 SI·제조사가 각자 교육·사후관리를 맡는 현장에서 운영자 통합 교육과 단일 지원 창구를 누가 맡으며 계약에 어떻게 적는가? | 관련 영역: 56. 운영 이관·확대·교육, 58. 다사업자 책임·계약·데이터 | 근거: f16 | 종류: 일반\",\"로봇 대수와 현장 수가 늘 때 현장 지원·원격 감독 인력 규모를 어떤 기준(운영자 대 로봇 비율, 개입률)으로 산정하는지 공개한 연구나 사례가 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 35. 처리능력·규모·배치 설계 | 근거: f18 | 종류: 일반\",\"산업안전보건법 시행규칙의 로봇작업 특별교육이 물류창고 자율이동로봇·병원 서비스 로봇 운영자에게 실제로 어떻게 적용되며 교육 시간과 기록 의무는 무엇인가? | 관련 영역: 56. 운영 이관·확대·교육, 59. 법·규제·보험·라이선스 | 근거: f14 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":19,\"cross_checked_count\":1,\"unverified\":[\"f12 WEF 백서 PDF 본문 추출 실패, 70% 수치는 검색 요약 기준이며 McKinsey 2020 설문(74% 미확대)은 McKinsey 사이트 연결 끊김으로 확인하지 못해 넣지 않음\",\"f13 ITIL 용어집 PDF 두 곳 모두 본문 추출 실패, 정의는 검색 요약 기준\",\"f17 Nilsson 외 2025 원문 403·연결 끊김, 교육 기간 수치는 검색 요약 기준이고 같은 검색의 작업자·노조 사전 참여 내용은 이 논문 것인지 확인하지 못해 제외\",\"f14 특별교육 시간(16시간 이상 등)은 검색 요약에만 있고 법령 원문 별표를 열지 못해 넣지 않음\",\"f10 DHL 교육 시간 80% 단축 주장은 1차 출처(DHL 보도자료) 연결 끊김으로 확인하지 못해 넣지 않음\",\"f6 Schnell·Holm 2022 은 초록만 확인, 면담 기업 수 미확인(스웨덴 5개 기업 면담 요약은 다른 학위논문 검색 요약이라 제외)\",\"f15 한국로봇산업진흥원 재직자 교육이 로봇 도입 현장 운영자용 과정을 포함하는지 미확인\",\"f18 운영자 대 로봇 비율(1:3, 1:7 등)은 MDPI 논문 403 으로 확인하지 못해 넣지 않음\",\"f21 ANSI/A3 R15.08-3 의 교육 관련 조항 세부 미확인\",\"가정·기타 현장의 운영 이관·교육 사례를 찾지 못함\"],\"scope_violations\":[\"f9: Amazon 견습 과정은 로봇 자체 정비 인력 양성으로 원문 19장 '로봇 자체 지능·제어'·제조사 쪽에 가까워 적용 사례로만 쓰고 ROP 직접 범위는 f23 에서 운영 지표·권한 전환·안내 제공으로 한정함\",\"f14·f15·f16: 법정 안전보건교육, 정부 인력양성·실증 사업, SI 사후관리는 사업주·정부·공급기업 몫이라 f15 는 '연계 대상: '으로 표시하고 f24 에서 ROP 직접 범위와 구분함\",\"f18: 원격 운영자의 로봇 원격 조작은 로봇 제조사·운영사 기능이므로 확대 시 감독 인력 부담의 사례로만 씀\",\"f17: 음성 피킹·알고리즘 관리 시스템 사례로 로봇 사례가 아니므로 물류창고 교육 관행의 참고로만 제안\"],\"budget_used\":{\"queries\":23,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 23회/30, 신규 출처 15건/15(ref-1315~ref-1329, 예약 구간 안)로 신규 출처 상한에 도달해 McKinsey Industry 4.0 설문, MDPI 배송 로봇 이해관계자 분석, 산업안전보건법 시행규칙 별표 원문을 출처로 넣지 않았다. 원문 열람: 신규 15건 중 12건을 열었고(webfetch 12), ref-1326(ITIL 용어집)·ref-1329(WEF 백서)는 PDF 추출 실패, ref-1327 은 403·연결 끊김으로 fetched false·원문 미열람이다. McKinsey·DHL·diva-portal·sdcexec·MDPI·ISO 는 이번 환경에서 403·연결 끊김이었다. ref-1322 는 초록 페이지만 읽었다. 재사용 4건(ref-1260·ref-1261·ref-1262·ref-1265): 참고문헌 목록 요약에 행이 없어 값은 이전 브리프 2026-09-30-18 출처 표를 따랐고 이번에 다시 열지 않았다(fetched false; ref-1265 는 원래 원문 미열람). 교차 확인 1건(f20, 이전 브리프의 두 기사 일치). 벤더 주장 1건(f11)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문에는 f22 로 답했고 결론은 '전담 조직·현장 지원 인력이 초기 운영을 맡다가 사용 부서·원격 지원으로 넘기고, 시범 뒤 단계적으로 확대하며, 공급자 교육·법정 교육·현장 대면 지원·디지털 안내·견습으로 사람을 준비시키나, 이관 판정 기준과 교육 효과를 정량 비교한 공개 자료는 확인하지 못했다'는 추정이다. 현장 유형 사례는 병원(한국·미국)·제조 공장(스웨덴·한국·봉제)·물류창고(미국·스웨덴·벤더)·상업 시설(호텔)·실외(중국 배송)이며 가정·기타는 찾지 못했다. 국내 자료는 청년의사·비즈한국·한국로봇산업진흥원 2건·법제처 법령해석이다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았고, f8 의 가상 작업셀 운영자 접근 평가는 36. 가상 시운전·실제 상황 재현 쪽으로 연결을 제안했다. L. AI·학습 기술 관련 finding 은 없다. 용어집에 이미 있는 기술 성숙도·서비스 수준 협약·원격 조작·감독 제어·로봇활용 표준공정모델·스마트병원 선도모델은 후보로 내지 않았다. 기존 열린 질문 가운데 이 영역에 걸린 것이 없어 해결 제안은 없다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-30-21",
+    "date": "2026-09-30",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 56,
+      "area_name": "56. 운영 이관·확대·교육",
+      "category": "O. 검증·도입·수명주기"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 초기 운영 지원(ELS)·운영 인수·파일럿 연옥·현장 지원 인력·법정 특별교육 용어 없음",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 병원·제조 공장·물류창고·상업 시설·실외의 이관·확대·교육 사례와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 전담 조직→사용 부서 이관, 초기 운영 지원, 시범→단계적 확대, 현장 대면 지원→원격 지원, 디지털 작업 안내, 견습·재직자 교육 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ITIL 서비스 전환, ANSI/A3 R15.08-3, 산업안전보건법 시행규칙 특별교육, 국내 인력양성·실증 사업 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 0건",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가? [분류원문]",
+      "구축 팀에서 운영 팀(또는 사용 부서)으로 운영을 넘기는 절차와 판정 기준은 무엇이며, 초기 운영 지원(Early Life Support) 같은 전환 기간 개념은 어떻게 정의되는가? (섹션 4·6·7 겨냥)",
+      "시범 운영에서 여러 현장·더 많은 로봇으로 넓히는 방식은 무엇이며, 시범에서 멈추는(파일럿 연옥) 원인과 새 현장·새 로봇을 더한 사례는 무엇인가? (섹션 3·5·6 겨냥)",
+      "로봇 운영자·현장 작업자 교육과 변화 관리는 어떤 방법(작업자 초기 참여, 현장 지원 인력, 디지털 작업 안내, 견습)으로 이루어지고, 교육을 요구하는 표준·법령·국내 제도(ANSI/A3 R15.08-3, 산업안전보건법 시행규칙 특별교육, 한국로봇산업진흥원 인력양성·실증 사업)는 무엇인가? (섹션 6·7 겨냥, 한국 자료 우선)",
+      "병원·제조 공장·물류창고·상업 시설·실외 현장에서 운영 이관·확대·교육 사례와 확대에 따른 사람 지원 부담은 어떻게 보고되었는가? (섹션 5·8 겨냥)",
+      "56. 운영 이관·확대·교육에서 ROP가 직접 맡을 것과 사업주·로봇 SI·교육기관·인사 조직에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "병원 사례(한국): 한림대학교성심병원 커맨드센터장은 로봇 도입 초기에는 커맨드센터 같은 전담 조직이 필요하지만 도입과 유지는 다르므로 안정화 뒤에는 실제 사용 부서로 관리를 넘겨야 한다고 발표했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1315"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "청년의사 2023-06-21 기사: 이미연 센터장은 \"도입과 유지는 다르기 때문에\" 안정화 후에는 실제 사용 부서로 관리를 이관해야 한다고 설명(학회 발표 보도).",
+        "as_of": "2023-06-21",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f2",
+        "claim": "병원 사례(한국): 같은 발표에서 센터장은 기존 업무가 있는 직원에게 로봇 관련 일을 나눠 맡기면 감당할 수 없어, 업무를 줄이려는 로봇 도입이 오히려 인력 수요를 만들 수 있다고 지적했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1315"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기존 업무가 있는 직원에게 로봇 업무를 분담하면 일이 너무 많아 할 수 없다는 발언, 일을 줄이려는 도입이 인력 필요를 만들 수 있다는 우려(기사 요약).",
+        "as_of": "2023-06-21",
+        "site_type": "병원",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f3",
+        "claim": "병원 사례(한국): 한림대학교성심병원의 로봇 운용 규모는 2024-09 보도 기준 7종 73대에서 2025-04 보도 기준 11종 77대로 늘었고, 약제팀이 약품 배송 로봇을 가장 적극적으로 쓰지만 한 교수는 병원 물류를 로봇이 맡기에는 아직 너무 복잡하고 다양하다고 평가했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1316",
+          "ref-1261"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "비즈한국 2025-04-10: 11종 77대 사용, 약제팀의 '약제나르미' 배송. 장애요인으로 억 단위 비용, 경사·수동 문·승강기 호환 문제. 7종 73대는 지디넷코리아 2024-09-19 보도(재인용: 2026-09-30-18).",
+        "as_of": "2025-04-10",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f4",
+        "claim": "병원 사례(미국): Birkhoff 외(Delaware Journal of Public Health, 2024-12)에 따르면 ChristianaCare 의 900병상 3차 병원은 2022-04 협동로봇 2대를 배송에 투입하면서 배치 전 이메일·웨비나 교육을 하고, 필요할 때 임상 로봇 담당자(Clinical Robot Associate, CRA)가 사용 지점에서 대면 실습 교육을 했으나, 드물게 쓰는 직원은 서랍 사용 방법에 불확실성을 보였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1317"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"even though clinicians and staff members were sent basic education, they may require more educational touch points\" — 빈번 사용자(약제 기사)는 숙달, 요청은 병원 곳곳의 아이패드 키오스크로 접수.",
+        "as_of": "2024-12",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f5",
+        "claim": "병원 사례(미국): 같은 연구의 7주 관찰(배치 약 6개월 뒤) 동안 89건 배송에서 CRA 가 107회 개입했고 그중 72회가 승강기 지원이었으며, 저자들은 확대를 위해 현장 대면 지원에서 원격 지원으로의 전환, 반복 교육, 로봇을 직무 위협이 아닌 팀원으로 알리는 내부 소통을 권고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1317"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "관찰 23회·배송 89건, CRA 개입 107회(승강기 72회). 권고: 대면 지원에서 원격 지원으로 전환, 반복 교육, 인력 메시지, CRA 감독을 줄이기 전 자율성 향상.",
+        "as_of": "2024-12",
+        "site_type": "병원",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f6",
+        "claim": "제조 공장 사례(스웨덴): Schnell·Holm(SPS2022, 2022)은 중소 제조기업의 협동로봇 도입 과제를 안전·성과·전략·참여·교육으로 정리하고, 처음부터 작업자를 참여시키면 새 기술과 바뀐 작업에 대한 수용과 이해가 나아지며 누구나 배우고 쓰기 쉬운 시스템을 고르는 것이 중요하다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1322"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "문헌 검토와 기업 직원·연구자 면담. 성공 요인: 초기 작업자 참여, 'easy to learn and easy to use for everyone' 인 시스템 선택, 작업과 협동로봇 능력의 정합(초록 기준).",
+        "as_of": "2022-04",
+        "site_type": "제조 공장",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f7",
+        "claim": "제조 공장 사례: Narayanan 외(arXiv, 2026-06)의 청바지 봉제 로봇 작업셀 현장 배치에서는 휴대폰·태블릿·머리 착용 디스플레이로 볼 수 있는 디지털 작업 지시·단계별 안내·작업셀 옆 QR 접근·설정과 재구성 문제 해결 지원을 운영자 교육 자료로 만들었고, 운영자 교육 필요는 개발보다 배치 단계에서 주로 드러났다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1318"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"these needs became clear primarily during deployment rather than during development\" — 본 생산 옆 병렬 라인에서 2D 주머니 작업 70회·3D 봉제 50회 시험(각 90% 성공).",
+        "as_of": "2026-06-15",
+        "site_type": "제조 공장",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f8",
+        "claim": "제조 공장 사례: 같은 배치에서 연구진은 디지털 트윈의 가상 작업셀로 로봇·고정구·인계 지점 배치를 다듬으면서 운영자의 접근 경로와 적재·하역 접근 구역을 사전에 평가했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1318"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "가상 작업셀로 로봇·고정구·테이블·인계 지점 배치를 반복 조정하고 운영자 접근 경로와 적재·하역 구역을 평가해 사람 참여 작업 흐름 통합을 확인(논문 본문 요약).",
+        "as_of": "2026-06-15",
+        "site_type": "제조 공장",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f9",
+        "claim": "물류창고 사례(미국): Amazon 의 메카트로닉스·로봇 견습 과정(Mechatronics and Robotics Apprenticeship)은 미국 노동부에 등록된 과정으로, 12주 교실 교육 뒤 1년간 현장 학습을 거쳐 직원을 로봇·메카트로닉스 기술 정비 인력으로 전환하며, 1단계 수료 시 시급이 최대 약 40% 오른다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1323"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "1단계: 대학 협력 12주 교실 교육 + 1년 현장 학습, 2단계(우수자): 추가 교실 교육 + 약 2년 현장 학습. 협력 대학 4곳 명시. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f10",
+        "claim": "물류창고 사례: Supply Chain Dive(2023-05) 보도에 따르면 DHL Supply Chain 은 2017년 Locus Robotics 와 협력을 시작해 전 세계에 자율이동로봇 3,000대(북미 2,000대 이상)를 배치했고, 1,500개 창고·물류센터 가운데 여러 현장에 5,000대를 추가 배치할 계획이다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1324"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "협력 시작 2017, 3,000대 배치(북미 2,000대 이상), 2022년 말 피킹 보조 로봇 2,000대, 5,000대 추가 배치 계획. 확대 전개 방식(현장별 절차)은 기사에 없음.",
+        "as_of": "2023-05-11",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f11",
+        "claim": "물류창고 사례(벤더 주장): Hai Robotics 는 Geely 자동차 부품 창고가 소수의 상자 처리 로봇(ACR)으로 시범 운영해 성능을 확인한 뒤 31대로 넓혔다고 소개하고, 시범 → 고부가 영역부터 수작업과 병행한 확대 → 전면 통합의 3단계 도입을 권한다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1325"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 소수 ACR 시범 후 \"scaled up to 31 robots to support full-scale operations\". 단계적 도입이 운영자의 적응과 업무 흐름 조정을 돕는다고 서술.",
+        "as_of": "2025-11-17",
+        "site_type": "물류창고",
+        "flow_item": "시작 조건",
+        "vendor_claim": true
+      },
+      {
+        "id": "f12",
+        "claim": "세계경제포럼(WEF) Global Lighthouse Network 백서는 제조 생태계 기업의 70% 이상이 첨단 제조 기술을 시도하면서도 투자 수익이나 측정 가능한 운영 핵심성과지표 개선을 얻지 못하는 '파일럿 연옥(pilot purgatory)'에 머물러 있다고 서술한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1329"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약 기준: 70% 이상이 pilot purgatory — ROI 나 운영 KPI 의 측정 가능한 개선 없이 첨단 제조 기술 도입을 시도하는 상태. PDF 본문 추출 실패. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "source_unopened": true
+      },
+      {
+        "id": "f13",
+        "claim": "ITIL 용어집은 초기 운영 지원(Early Life Support, ELS)을 배포가 끝난 뒤 서비스가 운영으로 완전히 인수되기 전의 단계로 정의하고, 이 기간에 서비스 제공자가 핵심성과지표·서비스 수준·모니터링 임계값을 검토·개선하고 장애·문제 관리에 추가 자원을 둘 수 있다고 설명한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1326"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약 기준: ELS 는 배포 끝과 운영 완전 인수 전 사이의 서비스 전환(Service Transition) 단계. KPI·서비스 수준·모니터링 임계값 검토, 장애·문제 관리 추가 자원. PDF 추출 실패. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "완료·인계",
+        "source_unopened": true
+      },
+      {
+        "id": "f14",
+        "claim": "법제처 법령해석(안건 23-0872, 2023-11-21 회신)은 산업안전보건법 시행규칙 별표 5의 특별교육 대상 '로봇작업'이 산업용 로봇에 한정되지 않는다고 보았고, 그 교육 내용으로 로봇의 기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서를 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1320"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "별표 5 제1호라목 '로봇작업'과 제5호카목 '산업용 로봇'을 구분해 규정한 점을 근거로 범위 제한 없음. 법령해석은 행정부 내부 지침으로 법원 판결의 기속력은 없다고 명시.",
+        "as_of": "2023-11-21",
+        "site_type": null,
+        "flow_item": "제약"
+      },
+      {
+        "id": "f15",
+        "claim": "연계 대상: 한국로봇산업진흥원의 로봇융복합 산업인력양성사업(재직자)은 고용노동부 국가인적자원개발 컨소시엄 사업으로 국내 로봇(관련) 기업 재직자에게 맞춤형 교육을 제공하며, 우선지원 대상기업은 교육비 100%, 대기업은 80%를 지원하고 같은 과정을 10명 이상 요청하면 기업 맞춤 교육을 연다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1319"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "운영기관 한국로봇산업진흥원, 전담기관 한국산업인력공단, 협력기관 부천산업진흥재단. 수료 시 직업능력개발 포털 인정. 대상은 로봇 기업 재직자(도입 현장 운영자 전용 과정 여부 미확인). (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f16",
+        "claim": "제조 공장 사례(한국): 한국로봇산업진흥원의 첨단제조로봇 실증사업은 수요기업이 로봇시스템을 도입할 제조 현장을 운영하고, 공급기업(로봇 SI)이 현장 로봇시스템 설치·기술지원·직원 교육·유지보수와 사후관리를 맡도록 역할을 나눈다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1321"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "목적: \"로봇공정모델 실증을 통한 첨단제조로봇 활용기술 시장 확산\". 공급기업(로봇SI) 역할에 설치·기술지원·직원 교육·유지보수·사후관리, 현장 성능검증 지원 포함. (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "제조 공장",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f17",
+        "claim": "물류창고 사례(스웨덴): Nilsson 외(Safety Science 187, 2025-07)의 물류기업 두 곳 비교 사례연구에서 한 곳은 신규 직원에게 음성 피킹 시스템과 창고 공정을 익히는 5일 입문 교육, 멘토 배정, 현장 기술자 지원을 두었고 전자상거래 기업은 1~2일의 덜 구조화된 교육이었으며, 알고리즘 관리로 인한 신체·심리 부담은 전자상거래 기업에서 더 컸다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1327"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "검색 요약 기준: 관찰·반구조화 면담, 5일 입문 교육(pick-2-voice)과 멘토·현장 기술자 vs 1~2일 교육. 로봇이 아닌 음성 피킹·알고리즘 관리 시스템 사례. 원문 403·연결 끊김으로 미열람.",
+        "as_of": "2025-07",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원",
+        "source_unopened": true
+      },
+      {
+        "id": "f18",
+        "claim": "실외 사례(중국): Hu 외(Frontiers in Robotics and AI, 2022)는 COVID-19 기간 Alibaba 자율 배송 로봇 200대 이상이 52개 도시 160개 이상 지역에서 운행된 사례를 바탕으로, 원격 운영자가 로봇과 협업(telecollaboration)해 대규모 배치를 안전하게 앞당기는 틀을 제시하고 한 운영자가 여러 로봇을 동시에 감독하는 것을 목표로 둔다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1328"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "\"Ideally, one operator can supervise multiple robots simultaneously via telecollaboration.\" 운영자 대 로봇 비율의 구체 수치와 원격 운영자 교육은 논문에 없음.",
+        "as_of": "2022",
+        "site_type": "실외",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f19",
+        "claim": "상업 시설 사례: Fu·Zheng·Wong(2022)이 면담한 중국 고급 호텔 직원들은 로봇이 어느 부서 소속인지 불분명해 정비 책임과 부서 간 소통 부담이 생겼고, 근무 중 로봇 교육·동료 교육·고장 처리 같은 추가 업무가 로봇 사용 저항으로 이어졌다고 답했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1260"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "호텔 직원 19명 면담, 역할 모호성과 교육·고장 대응 추가 업무가 사용 저항 요인. (재인용: 2026-09-30-18)",
+        "as_of": "2022",
+        "site_type": "상업 시설",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f20",
+        "claim": "병원 사례(한국): 한림대학교성심병원은 전담 부서인 커맨드센터가 여러 종류의 서비스 로봇을 통합 관제로 운영해 의료진이 로봇을 직접 운용하지 않아도 되게 했고, 커맨드센터는 사용 시나리오 개발·업무 프로세스 조율·실시간 모니터링과 문제 대응을 맡는다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1261",
+          "ref-1262"
+        ],
+        "cross_checked": true,
+        "confidence": "low",
+        "evidence_excerpt": "지디넷코리아·로봇신문 두 보도가 커맨드센터의 통합 관제·시나리오 개발·프로세스 조율·문제 대응 역할을 일치해 서술. (재인용: 2026-09-30-18)",
+        "as_of": "2024-09-19",
+        "site_type": "병원",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f21",
+        "claim": "ANSI/A3 R15.08-3-2026(산업용 이동로봇 안전 요구사항 제3부)은 사용자가 제조사·통합자가 준 정보를 적용해 산업용 이동로봇 응용과 운영 환경을 안전하게 운용·정비하기 위한 요구사항을 정하며, 위험성평가와 응용·운영 환경의 변경 관리, 수명주기 전반의 인원 안전을 강조한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1265"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "사용자 측 운용·정비 요구, 변경 관리, 수명주기 인원 안전 강조(ANSI 블로그 검색 요약). 교육 조항 세부는 미확인. (재인용: 2026-09-30-18)",
+        "as_of": "2026-04-23",
+        "site_type": null,
+        "flow_item": "제약",
+        "source_unopened": true
+      },
+      {
+        "id": "f22",
+        "claim": "확인한 자료를 종합하면 핵심 질문(시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가)에 대해, 현장은 도입 초기에 전담 조직·현장 지원 인력이 운영을 맡다가 안정화 뒤 사용 부서·원격 지원으로 넘기고, 시범 뒤 단계적으로 대수·현장을 늘리며, 공급자(SI) 교육·법정 특별교육·현장 대면 지원·디지털 작업 안내·견습 과정으로 사람을 준비시키는 것으로 보이나, 이관 시점을 판정하는 정량 기준이나 교육 효과를 비교한 공개 표준·연구는 확인하지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1315",
+          "ref-1317",
+          "ref-1326",
+          "ref-1324",
+          "ref-1325",
+          "ref-1329",
+          "ref-1321",
+          "ref-1320",
+          "ref-1318",
+          "ref-1323"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1·f5(전담 조직→사용 부서, 대면→원격 지원), f13(ELS), f10·f11·f12(단계적 확대와 파일럿 연옥), f7·f9·f14·f16(교육 수단) 종합. 이관 판정 기준·교육 효과 정량 비교 자료는 찾지 못함.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "확인한 자료를 종합하면 56. 운영 이관·확대·교육에서 ROP가 직접 맡을 범위는 이관 판단에 쓰는 운영 지표(사람 개입 횟수와 원인, 예외 추이, 핵심성과지표·모니터링 임계값)의 기록·제공, 구축 팀에서 운영 팀·사용 부서로의 역할·권한 전환, 새 현장·새 로봇 추가 때 재사용할 구성의 복제, 운영자용 단계별 안내와 교육·연습용 모드 제공으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1317",
+          "ref-1326",
+          "ref-1315",
+          "ref-1318",
+          "ref-1328"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "CRA 개입 107회 기록(f5)이 원격 지원 전환 판단 근거가 되고, ELS 의 KPI·임계값 검토(f13), 전담 조직→사용 부서 이관(f1), 디지털 작업 안내(f7), 원격 협업(f18)에서 도출한 추정.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "완료·인계"
+      },
+      {
+        "id": "f24",
+        "claim": "연계 대상: 분류 원문 19장 기준으로 법정 안전보건교육의 실시·기록(사업주), 인력 편성·직무 전환·임금(인사 조직), 로봇 설치·직원 교육·유지보수·사후관리 계약(로봇 SI·제조사), 기술 인력 양성 과정(교육기관·정부 사업)은 외부가 맡으므로, ROP는 교육 이수 여부를 권한·작업 제약으로 받아 반영하고 운영 데이터를 넘기는 쪽을 맡는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1320",
+          "ref-1321",
+          "ref-1319",
+          "ref-1323",
+          "ref-1327"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f14(법정 특별교육), f16(SI 의 교육·사후관리), f15(재직자 인력양성), f9(사내 견습), f17(사내 입문 교육)에서 도출.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f25",
+        "claim": "이 영역은 인수 시험 뒤 이관이 이어지는 55. 현장 조사·설치·시운전(f16), 교체·버전 변경 후 재교육의 57. 자산·소프트웨어 수명주기 관리(f21), 전담 조직과 교대의 40. 운영 절차·요청 창구(f1·f20), 초기 운영 지원 지표의 39. 운영 성과 측정·개선(f13), 개입 기록의 38. 모니터링·이상 탐지·원인 분석과 37. 관제 화면·실행 기록(f5), 새 로봇 추가의 4. 이기종 로봇 등록(f10), 확대 규모의 35. 처리능력·규모·배치 설계(f11·f18), 운영자 접근 사전 평가의 36. 가상 시운전·실제 상황 재현(f8), 승강기 지원 부담의 22. 설비·건물 시스템 연동(f5), 권한 전환의 51. 인증·권한·격리(f23), 사용자 표준의 50. 안전 표준·인증·사고 조사(f21), 법정 교육의 59. 법·규제·보험·라이선스(f14), 수용성과 업무 부담의 60. 노동·수용성·접근성(f2·f19), SI 사후관리 책임의 58. 다사업자 책임·계약·데이터(f16), 시범 투자 판단의 3. 경제성·조달·사업 모델(f12), 원격 감독의 31. 사람–로봇 협업(f18), 적용 현장인 61. 물류창고(f9~f11·f17)·62. 제조 공장(f6~f8·f16)·63. 병원·의료(f1~f5·f20)·64. 상업 시설(f19)·66. 실외(f18)와 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1321",
+          "ref-1265",
+          "ref-1315",
+          "ref-1261",
+          "ref-1326",
+          "ref-1317",
+          "ref-1324",
+          "ref-1325",
+          "ref-1328",
+          "ref-1318",
+          "ref-1320",
+          "ref-1316",
+          "ref-1260",
+          "ref-1329",
+          "ref-1323",
+          "ref-1327",
+          "ref-1322"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "각 연결은 괄호 안 finding 에 근거한 추정. C. 채팅 기반 구성·운영 영역과의 연결 근거는 이번 조사에서 찾지 못함.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1315",
+        "org": "청년의사 (곽성순)",
+        "title": "'안내하고 물건 옮기고' 병원에 들어온 로봇은 잘하고 있을까",
+        "published": "2023-06-21",
+        "url": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3007011",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한림대학교성심병원 커맨드센터장 발표 보도. 도입 초기 전담 조직 필요, 안정화 뒤 사용 부서로 관리 이관, 기존 인력에 로봇 업무 분담의 어려움을 전한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1316",
+        "org": "비즈한국 (김초영)",
+        "title": "병원에 늘어나는 '로봇', 의사·간호사도 편해졌을까",
+        "published": "2025-04-10",
+        "url": "https://bizhankook.com/articles/29394.html",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한림대학교성심병원의 11종 77대 로봇 운용, 약제팀 활용, 의료진의 유보적 평가와 비용·건물 구조 장애요인을 보도한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1317",
+        "org": "Birkhoff, S. S., Merring, P., Spence, A., Bassett, W., & Roth, S. C. (Delaware Journal of Public Health)",
+        "title": "Integrating Collaborative Robots into a Complex Hospital Setting: A Qualitative Descriptive Study",
+        "published": "2024-12",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11892717/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "ChristianaCare 병원 배송 협동로봇 2대의 관찰 연구. 직원 교육 방식, 임상 로봇 담당자의 개입 횟수, 원격 지원 전환과 반복 교육 권고를 담는다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1318",
+        "org": "Narayanan, G., Ajith, A., Zornow, J., Calle, C., Herrero Lugo, A., Susa Rincon, J. L., Wen, C., & Solowjow, E. (arXiv)",
+        "title": "A Deployment Case Study in Robotic Apparel Automation: Digital Twin Integration, Interoperability, and Workforce Enablement",
+        "published": "2026-06-15",
+        "url": "https://arxiv.org/abs/2606.16078",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "청바지 봉제 로봇 작업셀의 현장 배치 사례. 디지털 트윈으로 운영자 접근 평가, 디지털 작업 안내 기반 운영자 교육, 배치 단계에서 드러난 교육 필요를 보고한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2606.16078"
+      },
+      {
+        "id": "ref-1319",
+        "org": "한국로봇산업진흥원",
+        "title": "로봇융복합 산업인력양성사업(재직자)",
+        "published": null,
+        "url": "https://kiria.org/portal/culture/portalCulRoInduManpower.do",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "고용노동부 국가인적자원개발 컨소시엄으로 로봇 기업 재직자 맞춤형 교육을 운영하는 사업 안내. 교육비 지원 비율과 운영 구조를 밝힌다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1320",
+        "org": "법제처",
+        "title": "민원인 - 유해하거나 위험한 작업에 필요한 안전보건교육을 추가로 해야 하는 로봇작업이 산업용 로봇을 사용하는 작업으로 한정되는지 여부(안건번호 23-0872)",
+        "published": "2023-11-21",
+        "url": "https://www.moleg.go.kr/lawinfo/nwLwAnInfo.mo?mid=a10106020000&cs_seq=438638&currentPage=1&keyField=&keyWord=&sort=date",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "산업안전보건법 시행규칙 별표 5 특별교육 대상 로봇작업의 범위를 해석한 법령해석례. 산업용 로봇 한정이 아니라고 보고 교육 내용 항목을 적시한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1321",
+        "org": "한국로봇산업진흥원",
+        "title": "첨단제조로봇 실증사업",
+        "published": null,
+        "url": "https://www.kiria.org/portal/bizsupt/portalBsuptRoCreProduct.do",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "로봇공정모델 실증 사업 안내. 수요기업과 공급기업(로봇 SI)의 역할(설치·기술지원·직원 교육·유지보수·사후관리)을 나눈다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1322",
+        "org": "Schnell, M., & Holm, M. (SPS2022, Advances in Transdisciplinary Engineering 21)",
+        "title": "Challenges for Manufacturing SMEs in the Introduction of Collaborative Robots",
+        "published": "2022-04",
+        "url": "https://ebooks.iospress.nl/DOI/10.3233/ATDE220137",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "스웨덴 중소 제조기업의 협동로봇 도입 과제(안전·성과·전략·참여·교육)와 성공 요인을 문헌과 면담으로 정리한 학회 논문. 초록 페이지만 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1323",
+        "org": "Amazon",
+        "title": "New Amazon program offers free career training in robotics",
+        "published": null,
+        "url": "https://www.aboutamazon.com/news/workplace/new-amazon-program-offers-free-career-training-in-robotics",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "Amazon 사내 메카트로닉스·로봇 견습 과정의 구조(12주 교실 교육, 1년 현장 학습, 2단계 과정)와 임금 인상, 협력 대학을 소개하는 회사 발표.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1324",
+        "org": "Supply Chain Dive (Alejandra Carranza)",
+        "title": "DHL Supply Chain, Locus Robotics plan to deploy 5K robots worldwide",
+        "published": "2023-05-11",
+        "url": "https://www.supplychaindive.com/news/DHL-Supply-Chain-Locus-Robotics-expand-agreement-5K-autonomous-mobile-robots/649965/",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "DHL Supply Chain 의 Locus 자율이동로봇 협력(2017년 시작), 3,000대 배치 현황과 5,000대 추가 배치 계획을 보도한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1325",
+        "org": "Hai Robotics",
+        "title": "A Guide to Implementing Warehouse Robotics for Low-Risk Warehouse Automation",
+        "published": "2025-11-17",
+        "url": "https://www.hairobotics.com/blog/guide-implementing-warehouse-robotics-low-risk-warehouse-automation",
+        "type": "벤더 문서",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "창고 로봇의 시범→단계적 확대→전면 통합 도입을 권하고 Geely 창고의 시범 후 31대 확대 사례를 소개하는 벤더 글.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1326",
+        "org": "AXELOS (Boston University 게재본)",
+        "title": "ITIL® glossary and abbreviations English",
+        "published": null,
+        "url": "https://www.bu.edu/tech/files/2018/10/ITIL%C2%AE-glossary-and-abbreviations.pdf",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. ITIL 용어집으로 초기 운영 지원(Early Life Support)과 서비스 전환 용어를 정의한다. PDF 본문 추출에 실패해 검색 요약 범위만 사용.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1327",
+        "org": "Nilsson, K. H., Matilla-Santander, N., Lee, M. K., Brulin, E., Bodin, T., & Håkansta, C. (Safety Science 187)",
+        "title": "Algorithmic management and occupational health: A comparative case study of organizational practices in logistics",
+        "published": "2025-07",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925753525000888",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. 스웨덴 물류기업 두 곳의 알고리즘 관리 실무를 비교한 사례연구로 신규 직원 교육 방식과 작업 부담 차이를 다룬다. 403·연결 끊김으로 검색 요약만 확인.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1328",
+        "org": "Hu, Z., Zhang, Y., Li, Q., & Lv, C. (Frontiers in Robotics and AI)",
+        "title": "Human–Machine Telecollaboration Accelerates the Safe Deployment of Large-Scale Autonomous Robots During the COVID-19 Pandemic",
+        "published": "2022",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9043527/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "Alibaba 자율 배송 로봇 200대 이상의 대규모 배치를 원격 운영자–로봇 협업으로 안전하게 앞당긴 틀을 제시하는 논문.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1329",
+        "org": "World Economic Forum (McKinsey & Company 협력)",
+        "title": "Global Lighthouse Network: Insights from the Forefront of the Fourth Industrial Revolution",
+        "published": null,
+        "url": "https://www3.weforum.org/docs/WEF_Global_Lighthouse_Network.pdf",
+        "type": "업계 보고서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. 첨단 제조 기술을 대규모로 확산한 '등대 공장' 사례를 다루는 백서로, 제조 기업 70% 이상이 파일럿 연옥에 있다고 서술한다. PDF 본문 추출 실패로 검색 요약만 확인.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      },
+      {
+        "id": "ref-1260",
+        "org": "Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)",
+        "title": "The perils of hotel technology: The robot usage resistance model",
+        "published": "2022",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/",
+        "type": "논문",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "중국 고급 호텔 직원 면담으로 로봇 사용 저항 요인(역할 모호성, 교육·고장 대응 추가 업무)을 모델화한 연구.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1261",
+        "org": "지디넷코리아",
+        "title": "로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 (제목 일부만 확인)",
+        "published": "2024-09-19",
+        "url": "https://zdnet.co.kr/view/?no=20240919162124",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한림대학교성심병원 커맨드센터의 서비스 로봇 통합 운영과 누적 사용 건수를 보도한 기사.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1262",
+        "org": "로봇신문",
+        "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (제목 일부만 확인)",
+        "published": "2024-04",
+        "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "한림대학교성심병원의 로봇 운영 조직(커맨드센터)과 요청 방식을 소개한 기사.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1265",
+        "org": "ANSI (The ANSI Blog)",
+        "title": "ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications",
+        "published": null,
+        "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "원문 미열람. 산업용 이동로봇 안전 요구사항 제3부(사용자 측 운용·정비 요구)의 소개 글.",
+        "fetched": false,
+        "fetched_via": null,
+        "fetch_url": null,
+        "source_unopened": true
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f22(핵심 질문 답, 추정), f12(파일럿 연옥, 원문 미열람), f2·f5(이관·확대 시 사람 부담) / 섹션 4: 초기 운영 지원 f13(원문 미열람), 파일럿 연옥 f12, 현장 지원 인력(CRA) f4, 로봇작업 특별교육 f14 / 섹션 5: 병원 — f1·f2·f3·f20(한국 한림대학교성심병원), f4·f5(미국 ChristianaCare); 제조 공장 — f6(스웨덴 중소기업), f7·f8(봉제 작업셀), f16(한국 실증사업); 물류창고 — f9(Amazon 견습), f10(DHL 확대), f11(벤더 주장 병기), f17(원문 미열람, 로봇이 아닌 음성 피킹); 상업 시설 — f19(호텔); 실외 — f18(배송 로봇). 가정·기타 사례는 찾지 못했음을 명시 / 섹션 6: 전담 조직→사용 부서 이관 f1·f20, 초기 운영 지원 f13, 대면→원격 지원 전환 f5·f18, 시범→단계적 확대 f10·f11·f12, 작업자 초기 참여 f6, 디지털 작업 안내·가상 작업셀 f7·f8, 견습·입문 교육 f9·f17 / 섹션 7: ITIL f13, ANSI/A3 R15.08-3 f21(원문 미열람), 산업안전보건법 시행규칙 별표 5 특별교육 f14, 한국로봇산업진흥원 인력양성 f15·실증사업 f16 / 섹션 8: f4·f5·f6·f7·f17·f18·f19 / 섹션 9: f23(직접 범위), f24(연계 대상) / 섹션 10: f25 — 3, 4, 22, 31, 35, 36, 37, 38, 39, 40, 50, 51, 55, 57, 58, 59, 60, 61, 62, 63, 64, 66 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 63. 병원·의료 페이지 5절에 f1·f4·f5, 62. 제조 공장 페이지에 f6·f16, 66. 실외 페이지에 f18 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "초기 운영 지원",
+        "term_en": "Early Life Support (ELS, ITIL)",
+        "definition": "새로 배포되거나 바뀐 서비스를 운영 조직이 완전히 인수하기 전까지 구축 측이 함께 남아 성과 지표·서비스 수준·모니터링 임계값을 점검하고 장애 대응을 보강하는 전환 기간이다."
+      },
+      {
+        "term_ko": "파일럿 연옥",
+        "term_en": "Pilot Purgatory",
+        "definition": "새 기술의 시범 운영은 거듭하지만 투자 수익이나 측정 가능한 운영 개선을 얻지 못해 전사·다현장 확대로 넘어가지 못하는 상태를 가리키는 말이다."
+      },
+      {
+        "term_ko": "특별안전보건교육",
+        "term_en": "Special Occupational Safety and Health Training (Korea)",
+        "definition": "한국 산업안전보건법 시행규칙이 로봇작업 같은 유해·위험 작업에 배치되는 근로자에게 정기 교육과 별도로 실시하게 하는 작업별 안전보건교육이다."
+      }
+    ],
+    "open_questions_new": [
+      "구축 팀·전담 조직에서 운영 팀·사용 부서로 로봇 운영을 넘기는 시점을 사람 개입률·예외 건수·핵심성과지표 안정 같은 정량 기준으로 판정한 공개 사례나 지침이 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 55. 현장 조사·설치·시운전 | 근거: f13 | 종류: 일반",
+      "로봇 운영자·현장 사용자 교육 방식(웨비나, 현장 대면 지원, 디지털 작업 안내)에 따른 사용 오류·개입 감소 효과를 비교 측정한 연구가 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 60. 노동·수용성·접근성 | 근거: f4 | 종류: 일반",
+      "여러 로봇 SI·제조사가 각자 교육·사후관리를 맡는 현장에서 운영자 통합 교육과 단일 지원 창구를 누가 맡으며 계약에 어떻게 적는가? | 관련 영역: 56. 운영 이관·확대·교육, 58. 다사업자 책임·계약·데이터 | 근거: f16 | 종류: 일반",
+      "로봇 대수와 현장 수가 늘 때 현장 지원·원격 감독 인력 규모를 어떤 기준(운영자 대 로봇 비율, 개입률)으로 산정하는지 공개한 연구나 사례가 있는가? | 관련 영역: 56. 운영 이관·확대·교육, 35. 처리능력·규모·배치 설계 | 근거: f18 | 종류: 일반",
+      "산업안전보건법 시행규칙의 로봇작업 특별교육이 물류창고 자율이동로봇·병원 서비스 로봇 운영자에게 실제로 어떻게 적용되며 교육 시간과 기록 의무는 무엇인가? | 관련 영역: 56. 운영 이관·확대·교육, 59. 법·규제·보험·라이선스 | 근거: f14 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 19,
+      "cross_checked_count": 1,
+      "unverified": [
+        "f12 WEF 백서 PDF 본문 추출 실패, 70% 수치는 검색 요약 기준이며 McKinsey 2020 설문(74% 미확대)은 McKinsey 사이트 연결 끊김으로 확인하지 못해 넣지 않음",
+        "f13 ITIL 용어집 PDF 두 곳 모두 본문 추출 실패, 정의는 검색 요약 기준",
+        "f17 Nilsson 외 2025 원문 403·연결 끊김, 교육 기간 수치는 검색 요약 기준이고 같은 검색의 작업자·노조 사전 참여 내용은 이 논문 것인지 확인하지 못해 제외",
+        "f14 특별교육 시간(16시간 이상 등)은 검색 요약에만 있고 법령 원문 별표를 열지 못해 넣지 않음",
+        "f10 DHL 교육 시간 80% 단축 주장은 1차 출처(DHL 보도자료) 연결 끊김으로 확인하지 못해 넣지 않음",
+        "f6 Schnell·Holm 2022 은 초록만 확인, 면담 기업 수 미확인(스웨덴 5개 기업 면담 요약은 다른 학위논문 검색 요약이라 제외)",
+        "f15 한국로봇산업진흥원 재직자 교육이 로봇 도입 현장 운영자용 과정을 포함하는지 미확인",
+        "f18 운영자 대 로봇 비율(1:3, 1:7 등)은 MDPI 논문 403 으로 확인하지 못해 넣지 않음",
+        "f21 ANSI/A3 R15.08-3 의 교육 관련 조항 세부 미확인",
+        "가정·기타 현장의 운영 이관·교육 사례를 찾지 못함"
+      ],
+      "scope_violations": [
+        "f9: Amazon 견습 과정은 로봇 자체 정비 인력 양성으로 원문 19장 '로봇 자체 지능·제어'·제조사 쪽에 가까워 적용 사례로만 쓰고 ROP 직접 범위는 f23 에서 운영 지표·권한 전환·안내 제공으로 한정함",
+        "f14·f15·f16: 법정 안전보건교육, 정부 인력양성·실증 사업, SI 사후관리는 사업주·정부·공급기업 몫이라 f15 는 '연계 대상: '으로 표시하고 f24 에서 ROP 직접 범위와 구분함",
+        "f18: 원격 운영자의 로봇 원격 조작은 로봇 제조사·운영사 기능이므로 확대 시 감독 인력 부담의 사례로만 씀",
+        "f17: 음성 피킹·알고리즘 관리 시스템 사례로 로봇 사례가 아니므로 물류창고 교육 관행의 참고로만 제안"
+      ],
+      "budget_used": {
+        "queries": 23,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 23회/30, 신규 출처 15건/15(ref-1315~ref-1329, 예약 구간 안)로 신규 출처 상한에 도달해 McKinsey Industry 4.0 설문, MDPI 배송 로봇 이해관계자 분석, 산업안전보건법 시행규칙 별표 원문을 출처로 넣지 않았다. 원문 열람: 신규 15건 중 12건을 열었고(webfetch 12), ref-1326(ITIL 용어집)·ref-1329(WEF 백서)는 PDF 추출 실패, ref-1327 은 403·연결 끊김으로 fetched false·원문 미열람이다. McKinsey·DHL·diva-portal·sdcexec·MDPI·ISO 는 이번 환경에서 403·연결 끊김이었다. ref-1322 는 초록 페이지만 읽었다. 재사용 4건(ref-1260·ref-1261·ref-1262·ref-1265): 참고문헌 목록 요약에 행이 없어 값은 이전 브리프 2026-09-30-18 출처 표를 따랐고 이번에 다시 열지 않았다(fetched false; ref-1265 는 원래 원문 미열람). 교차 확인 1건(f20, 이전 브리프의 두 기사 일치). 벤더 주장 1건(f11)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문에는 f22 로 답했고 결론은 '전담 조직·현장 지원 인력이 초기 운영을 맡다가 사용 부서·원격 지원으로 넘기고, 시범 뒤 단계적으로 확대하며, 공급자 교육·법정 교육·현장 대면 지원·디지털 안내·견습으로 사람을 준비시키나, 이관 판정 기준과 교육 효과를 정량 비교한 공개 자료는 확인하지 못했다'는 추정이다. 현장 유형 사례는 병원(한국·미국)·제조 공장(스웨덴·한국·봉제)·물류창고(미국·스웨덴·벤더)·상업 시설(호텔)·실외(중국 배송)이며 가정·기타는 찾지 못했다. 국내 자료는 청년의사·비즈한국·한국로봇산업진흥원 2건·법제처 법령해석이다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았고, f8 의 가상 작업셀 운영자 접근 평가는 36. 가상 시운전·실제 상황 재현 쪽으로 연결을 제안했다. L. AI·학습 기술 관련 finding 은 없다. 용어집에 이미 있는 기술 성숙도·서비스 수준 협약·원격 조작·감독 제어·로봇활용 표준공정모델·스마트병원 선도모델은 후보로 내지 않았다. 기존 열린 질문 가운데 이 영역에 걸린 것이 없어 해결 제안은 없다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 5177,
+  "type": "result",
+  "duration_ms": 665790,
+  "uuid": "d2558e70-1054-404d-98c7-9a0a876fd40e",
+  "ttft_stream_ms": 860,
+  "time_to_request_ms": 89,
+  "time_to_request_phases_ms": {
+    "other": 36,
+    "system_prompt": 18,
+    "turn_start_resume": 0,
+    "process_user_input": 13,
+    "init_message": 7,
+    "engine_pickup": 0,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 39,
+  "time_to_request_cpu_ms": 134,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 861,
+  "time_to_request_from_spawn_ms": 8831730,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790750132785.139,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 667.1
+}

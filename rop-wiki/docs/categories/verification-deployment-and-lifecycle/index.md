@@ -28,7 +28,7 @@ version: 2
 |---|---|---|---|---|
 | **54. 시험·형식 검증·벤치마크** | 시험 설계·장애 주입·회귀 시험·형식 검증·벤치마크·재현 실험 | 업데이트 후 정상 상황뿐 아니라 장애 상황도 여전히 처리되는가? | [54. 시험·형식 검증·벤치마크](testing-formal-verification-and-benchmarking.md) | published |
 | **55. 현장 조사·설치·시운전** | 현장 조사, 설치·설정, 교정, 시운전, 인수 시험 | 새 현장에 설치하고 시운전할 때 반복 작업을 얼마나 줄일 수 있는가? | [55. 현장 조사·설치·시운전](site-survey-installation-and-commissioning.md) | published |
-| **56. 운영 이관·확대·교육** | 운영 이관·지원, 단계적 확대, 교육·변화 관리 | 시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가? | [56. 운영 이관·확대·교육](operations-handover-scale-out-and-training.md) | seed |
+| **56. 운영 이관·확대·교육** | 운영 이관·지원, 단계적 확대, 교육·변화 관리 | 시범 운영을 넓히면서 운영을 누구에게 어떻게 넘기고 사람을 어떻게 준비시킬 것인가? | [56. 운영 이관·확대·교육](operations-handover-scale-out-and-training.md) | published |
 | **57. 자산·소프트웨어 수명주기 관리** | 정비·고장 예측, 버전 관리, 장비 교체, 폐기 | 제조사 펌웨어가 바뀌면 어떤 현장과 기능을 다시 검증해야 할까? | [57. 자산·소프트웨어 수명주기 관리](asset-and-software-lifecycle-management.md) | published |
 
 [분류원문]
@@ -171,26 +171,31 @@ NIST의 ARIAC처럼 변화하는 제조 환경에서 로봇의 계획·인식·�
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 65건이다(논문 20건 · 기사·보고서 3건 · 업체 발표 4건 · 표준·오픈소스·기관 자료 38건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 82건이다(논문 26건 · 기사·보고서 8건 · 업체 발표 5건 · 표준·오픈소스·기관 자료 43건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
 - [ref-493](../../references/ref-493.md) — Lott, J., & Honary, V.(University of San Diego), Decentralized Multi-Robot Task Allocation Under Degraded Communication: A Benchmark of Performance, Reliability, and Computation (발행 2026-09)
 - [ref-609](../../references/ref-609.md) — von Berg, B., Aichernig, B. K., & Wedenik, F., BDD-Based Deadlock Avoidance for Automated Guided Vehicles in Warehouse Logistics (Case Study Paper) (발행 2026-05)
+- [ref-1161](../../references/ref-1161.md) — Li, M., Liu, X., Gao, Y., Sun, Y., Li, P., Zhou, L., Wei, M., & Li, L. (Scientific Reports 16), Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios (발행 2026-04)
 - [ref-403](../../references/ref-403.md) — Li, J., Li, S., Chu, J., Li, W., & Chen, D.(UT Austin), Fleet-Level Battery-Health-Aware Scheduling for Autonomous Mobile Robots (발행 2026-03)
+- [ref-1187](../../references/ref-1187.md) — Pasparakis, A., De Vries, J., & De Koster, R. (Logistics Research 19(1)), In control or under control? Human–robot collaboration in warehouse order picking (발행 2026-02-24)
 - [ref-604](../../references/ref-604.md) — Yan, J., Zhang, Y., Liu, Z., Zhang, H., Jiang, H., Chen, J., Smith, S. F., & Li, J., Lifelong Scalable Multi-Agent Realistic Testbed and A Comprehensive Study on Design Choices in Lifelong AGV Fleet Management Systems (발행 2026-02-17)
 - [ref-163](../../references/ref-163.md) — 노주형, 강규리, 김연찬, 심현철(로봇학회 논문지), 탐사 및 엘리베이터 연계를 이용한 완전 자율 다층 실내 지도 구축 시스템 (발행 2026)
 - [ref-553](../../references/ref-553.md) — Lei, Y., Liu, H., Li, N. 외, Condition monitoring and fault diagnosis of industrial robots: A review (Science China Technological Sciences 68, 1110301) (발행 2025)
+- [ref-1189](../../references/ref-1189.md) — Pietrantoni, L. 외 (Frontiers in Robotics and AI), Integrating collaborative robots in manufacturing, logistics, and agriculture: Expert perspectives on technical, safety, and human factors (발행 2024-12-02)
 - [ref-465](../../references/ref-465.md) — Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., Toward a Method to Generate Capability Ontologies from Natural Language Descriptions (발행 2024-06)
-- [ref-269](../../references/ref-269.md) — Heselden, J. R., & Das, G. P., Unified Map Handling for Robotic Systems: Enhancing Interoperability and Efficiency Across Diverse Environments (발행 2024-04)
-- [ref-603](../../references/ref-603.md) — IDM Lab (USC) 게재 초록, 저자 미확인, The League of Robot Runners: Competition Goals, Designs, and Implementation [System Demonstration] (발행 2024)
-- [ref-521](../../references/ref-521.md) — Le, T. V., & Fan, R., Digital twins for logistics and supply chain systems: Literature review, conceptual framework, research potential, and practical challenges (발행 2024)
-- 그 밖에 10건
+- 그 밖에 16건
 
 **기사·보고서**
 
 - [ref-466](../../references/ref-466.md) — 부산일보, KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’ (발행 2026-07-24)
 - [ref-557](../../references/ref-557.md) — 네이트 뉴스(원 매체 미확인), 클라우드 기반 OTA로 로봇이 진화하다…2026 SDR 과제 킥오프 워크숍 현장 (발행 2026-07-23)
+- [ref-1190](../../references/ref-1190.md) — 로봇신문, 한국로봇산업진흥원, 450억 규모 '2026년 로봇활용 제조혁신 지원사업' 착수 (발행 2026-05-12)
+- [ref-1184](../../references/ref-1184.md) — 주간한국, 한림대성심병원, 장애인 고용 연계 병원 로봇 운영 … (제목 일부만 확인) (발행 2025-07-23)
+- [ref-1199](../../references/ref-1199.md) — ZDNet Korea, 로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 ... (제목 일부만 확인) (발행 2024-09-19)
+- [ref-944](../../references/ref-944.md) — 로봇신문, 국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (발행 2024-04-15)
+- [ref-1185](../../references/ref-1185.md) — BSRIA (NBS 출판물 색인), BSRIA Guide BG 54/2018 Soft landings framework 2018. Six phases for better buildings (발행 2018-08)
 - [ref-558](../../references/ref-558.md) — 한국로봇사용자협회, 협동로봇 설치 작업장 안전인증 안내 (발행 미확인)
 
 **업체 발표**
@@ -199,30 +204,31 @@ NIST의 ARIAC처럼 변화하는 제조 환경에서 로봇의 계획·인식·�
 - [ref-559](../../references/ref-559.md) — 세이프틱스(Safetics), 로봇 시스템 위험성평가 가이드 (발행 미확인)
 - [ref-556](../../references/ref-556.md) — Amazon Web Services (aws-samples GitHub), ros2-ota-firmware-updates — README (발행 미확인)
 - [ref-481](../../references/ref-481.md) — Siemens Digital Industries Software, Virtual commissioning with Siemens solutions reduces launch time by three weeks (발행 미확인)
+- [ref-1188](../../references/ref-1188.md) — Locus Robotics, Locus Origin: Collaborative Robots Warehouse (발행 미확인)
 
 **표준·오픈소스·기관 자료**
 
 - [ref-518](../../references/ref-518.md) — ISO, ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition (발행 2026)
+- [ref-872](../../references/ref-872.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025 (발행 2025-05-01)
 - [ref-552](../../references/ref-552.md) — ISO, ISO 55000:2024 - Asset management — Vocabulary, overview and principles (발행 2024-07)
+- [ref-959](../../references/ref-959.md) — 한국노동연구원 (박수민 외), 음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 (발행 2024)
+- [ref-1183](../../references/ref-1183.md) — 법제처, 로봇작업의 범위 - 산업용 로봇으로 한정되는지 여부 (안건번호 법제처-23-0872) (발행 2023-11-21)
 - [ref-046](../../references/ref-046.md) — VDMA (Intralogistics-2X-LIF GitHub), Layout-Interchange-Format — README (Repository for the Layout Interchange Format (LIF) developed by the VDMA) (발행 2023-09)
 - [ref-555](../../references/ref-555.md) — European Union (EUR-Lex), Regulation (EU) 2023/1230 of the European Parliament and of the Council on machinery (발행 2023-06)
 - [ref-470](../../references/ref-470.md) — ISO, ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems (발행 2023-06)
 - [ref-204](../../references/ref-204.md) — ASTM International, Standard Test Method for Confirming the Docking Performance of A-UGVs (ASTM F3499-21) (발행 2021)
 - [ref-551](../../references/ref-551.md) — ISO, ISO 17359:2018 - Condition monitoring and diagnostics of machines — General guidelines (발행 2018)
-- [ref-554](../../references/ref-554.md) — IEC, IEC TR 62443-2-3:2015 Security for industrial automation and control systems - Part 2-3: Patch management in the IACS environment (발행 2015-06)
-- [ref-607](../../references/ref-607.md) — 한국로봇산업진흥원(KIRIA), 시험평가 \| KIRIA 첨단로봇 실증지원 디지털 플랫폼 (발행 미확인)
-- [ref-606](../../references/ref-606.md) — 한국표준협회 KSSN(국가표준인증종합정보센터), KS B ISO 18646-1 로봇 — 서비스 로봇의 성능 기준 및 관련 시험방법 — 제1부 : 바퀴형 로봇의 이동능력 (발행 미확인)
-- 그 밖에 28건
+- 그 밖에 33건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-25 · 갱신 · [O. 검증·도입·수명주기](index.md) — '다른 대분류와의 연결' 절 신규 작성(A·B·C·D·E·G 연결, 근거 미확보 연결 5건, 각주 41건) (실행 2026-09-25-67)
-- 2026-09-25 · 요약 · [O. 검증·도입·수명주기](index.md) — F. 도입·검증·유지관리: 다른 대분류와의 연결 절 신규 작성(A·B·C·D·E·G 연결, f6·f18 강등 반영, 근거 미확보 연결 5건 명시) (실행 2026-09-25-67)
-- 2026-09-25 · 갱신 · [57. 자산·소프트웨어 수명주기 관리](asset-and-software-lifecycle-management.md) — 영역 심화: seed → draft, 섹션 3~11 신규 작성(버전·지도·배터리·배포 복구·재평가, 가상 시나리오 2건), 페이지 상태 자동 영역 추가. 2차 수정: 7절 첫 문장 [추정]·각주 보강, 8절 대표 연구 분류·평가 [의견]화, 8절 ref-556 항목 롤백 문구 정정 (실행 2026-09-25-61)
-- 2026-09-25 · 생성 · [57. 자산·소프트웨어 수명주기 관리 — 핵심 개념과 용어](../../topics/2026/2026-09-25-area24-s4.md) — 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "4. 핵심 개념과 용어" 절(1,365자)을 옮겼다(2차 수정 없음) (실행 2026-09-25-61)
-- 2026-09-25 · 생성 · [57. 자산·소프트웨어 수명주기 관리 — 대표 접근법과 기술](../../topics/2026/2026-09-25-area24-s6.md) — 자동 분리: 24. 자산·소프트웨어 수명주기 관리 의 "6. 대표 접근법과 기술" 절(1,327자)을 옮겼다. 2차 수정: 부품 진단 연계 대상 문장을 [추정]과 각주로 고치고, 5·9절 참조를 원 세부영역 페이지 절 링크로 바꿈 (실행 2026-09-25-61)
+- 2026-09-30 · 갱신 · [56. 운영 이관·확대·교육](operations-handover-scale-out-and-training.md) — 영역 심화: seed → draft, 섹션 3~11 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건 반영). 2차 수정: 5절 조사 범위·검증 상태 진술의 태그 제거, 한림대학교성심병원 서술 범위 축소, 물류창고 표에서 벤더 주장 분리, [의견]에 구축자 의견 병기 (실행 2026-09-30-21)
+- 2026-09-30 · 생성 · [56. 운영 이관·확대·교육 — 다른 연구영역과의 연결](../../topics/2026/2026-09-30-area56-s10.md) — 자동 분리: 56. 운영 이관·확대·교육 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,417자)을 옮겼다 (실행 2026-09-30-21)
+- 2026-09-30 · 생성 · [56. 운영 이관·확대·교육 — 대표 접근법과 기술](../../topics/2026/2026-09-30-area56-s6.md) — 자동 분리: 56. 운영 이관·확대·교육 의 "6. 대표 접근법과 기술" 절(1,317자)을 옮겼다 (실행 2026-09-30-21)
+- 2026-09-30 · 생성 · [56. 운영 이관·확대·교육 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area56-s4.md) — 자동 분리: 56. 운영 이관·확대·교육 의 "4. 핵심 개념과 용어" 절(1,122자)을 옮겼다 (실행 2026-09-30-21)
+- 2026-09-30 · 생성 · [56. 운영 이관·확대·교육 — 대표 연구와 자료](../../topics/2026/2026-09-30-area56-s8.md) — 자동 분리: 56. 운영 이관·확대·교육 의 "8. 대표 연구와 자료" 절(1,044자)을 옮겼다 (실행 2026-09-30-21)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

@@ -3,15 +3,15 @@ title: "로봇활용 표준공정모델 (Robot Standard Process Model (Korea))"
 type: glossary
 term_ko: 로봇활용 표준공정모델
 term_en: Robot Standard Process Model (Korea)
-definition: 업종별 제조 공정에 로봇을 적용하는 방법을 표준화한 국내 참조 모델로, 수요기업이 공정을 골라 로봇 도입·실증에 쓰도록 정부 지원 사업과 연계해 개발·보급된다.
-related_areas: [2, 62]
+definition: 산업안전보건법 시행규칙 별표 5 가 정한 유해·위험 작업(로봇작업 포함)의 근로자에게 사업주가 추가로 실시하는 안전보건교육이다.
+related_areas: [2, 50, 56, 59, 62]
 tags: []
 status: published
 confidence: medium
 created: 2026-09-30
 updated: 2026-09-30
-sources: [ref-1195, ref-1196]
-version: 1
+sources: [ref-1183, ref-1195, ref-1196]
+version: 2
 ---
 
 [홈](../index.md) › [용어집](index.md) › 로봇활용 표준공정모델
@@ -26,11 +26,11 @@ version: 1
 
 ## 한 줄 정의
 
-업종별 제조 공정에 로봇을 적용하는 방법을 표준화한 국내 참조 모델로, 수요기업이 공정을 골라 로봇 도입·실증에 쓰도록 정부 지원 사업과 연계해 개발·보급된다. [추정][^ref-1195][^ref-1196]
+산업안전보건법 시행규칙 별표 5 가 정한 유해·위험 작업(로봇작업 포함)의 근로자에게 사업주가 추가로 실시하는 안전보건교육이다. [추정][^ref-1183]
 
 ## 설명
 
-산업통상자원부는 2020년 뿌리·섬유·식음료·자동차 업종의 표준공정모델 14종을 개발하고 60개 기업을 지원한다고 발표했다.
+로봇작업 교육 내용은 로봇의 기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서이며, 법제처 해석(2023-11-21)상 로봇작업은 산업용 로봇 작업에 한정되지 않는다.
 
 ## 관련 영역
 
@@ -39,7 +39,6 @@ version: 1
 
 ## 출처
 
-[^ref-1195]: 산업통상자원부 (KDI 경제정보센터 게재), 로봇활용 표준공정모델로 제조산업 전 분야에 로봇보급 본격 착수, 2020-06-25, https://eiec.kdi.re.kr/policy/materialView.do?datecount=&num=202113&pg=&pp=20&recommend=&topic=C, 접근일 2026-09-30
-[^ref-1196]: 로봇신문, “제조 로봇 표준공정 모델 적용 사업 국내를 넘어 ... (제목 일부만 확인), 2025-09-15, https://www.irobotnews.com/news/articleView.html?idxno=42376, 접근일 2026-09-30
 
 - 참고문헌 페이지: [ref-1195](../references/ref-1195.md), [ref-1196](../references/ref-1196.md)
+[^ref-1183]: 법제처, 로봇작업의 범위 - 산업용 로봇으로 한정되는지 여부 (안건번호 법제처-23-0872), 2023-11-21, https://opinion.lawmaking.go.kr/nl4li/lsItptEmp/438638, 접근일 2026-09-30

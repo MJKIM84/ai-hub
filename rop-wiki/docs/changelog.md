@@ -20,6 +20,27 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-21 | 갱신 | [docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | 영역 심화: seed → draft, 섹션 3~11 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건 반영). 2차 수정: 5절 조사 범위·검증 상태 진술의 태그 제거, 한림대학교성심병원 서술 범위 축소, 물류창고 표에서 벤더 주장 분리, [의견]에 구축자 의견 병기 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s10.md](topics/2026/2026-09-30-area56-s10.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,417자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s6.md](topics/2026/2026-09-30-area56-s6.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "6. 대표 접근법과 기술" 절(1,317자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s4.md](topics/2026/2026-09-30-area56-s4.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "4. 핵심 개념과 용어" 절(1,122자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s8.md](topics/2026/2026-09-30-area56-s8.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "8. 대표 연구와 자료" 절(1,044자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s7.md](topics/2026/2026-09-30-area56-s7.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "7. 관련 표준·프레임워크·오픈소스" 절(824자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s11.md](topics/2026/2026-09-30-area56-s11.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "11. 열린 질문" 절(779자)을 옮겼다 |
+| 2026-09-30-21 | 생성 | [docs/topics/2026/2026-09-30-area56-s3.md](topics/2026/2026-09-30-area56-s3.md) | 자동 분리: 56. 운영 이관·확대·교육 의 "3. 왜 중요한가" 절(676자)을 옮겼다 |
+| 2026-09-30-21 | 요약 | [docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | 56. 운영 이관·확대·교육: 영역 심화: seed → draft, 3~11절 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건과 2차 수정 6건 반영) |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1183.md](references/ref-1183.md) | 참고문헌 ref-1183 등록: 로봇작업의 범위 - 산업용 로봇으로 한정되는지 여부 (안건번호 법제처-23-0872) |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1184.md](references/ref-1184.md) | 참고문헌 ref-1184 등록: 한림대성심병원, 장애인 고용 연계 병원 로봇 운영 … (제목 일부만 확인) |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1185.md](references/ref-1185.md) | 참고문헌 ref-1185 등록: BSRIA Guide BG 54/2018 Soft landings framework 2018. Six pha… |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1186.md](references/ref-1186.md) | 참고문헌 ref-1186 등록: fleet_adapter_template README |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1187.md](references/ref-1187.md) | 참고문헌 ref-1187 등록: In control or under control? Human–robot collaboration in wa… |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1188.md](references/ref-1188.md) | 참고문헌 ref-1188 등록: Locus Origin: Collaborative Robots Warehouse |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1189.md](references/ref-1189.md) | 참고문헌 ref-1189 등록: Integrating collaborative robots in manufacturing, logistics… |
+| 2026-09-30-21 | 생성 | [docs/references/ref-1190.md](references/ref-1190.md) | 참고문헌 ref-1190 등록: 한국로봇산업진흥원, 450억 규모 '2026년 로봇활용 제조혁신 지원사업' 착수 |
+| 2026-09-30-21 | 생성 | [docs/glossary/soft-landings.md](glossary/soft-landings.md) | 용어집 항목 소프트 랜딩 |
+| 2026-09-30-21 | 갱신 | [docs/glossary/robot-standard-process-model.md](glossary/robot-standard-process-model.md) | 용어집 항목 특별안전보건교육 |
+| 2026-09-30-21 | 생성 | [docs/glossary/post-occupancy-evaluation.md](glossary/post-occupancy-evaluation.md) | 용어집 항목 사용 후 평가 |
+| 2026-09-30-21 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
 | 2026-09-30-20 | 갱신 | [docs/categories/objects-people-and-live-state/people-and-pedestrian-model.md](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 영역 심화: 섹션 3~11 신규 작성(현장 유형 사례 4건: 물류창고·병원·상업 시설·기타), 13절 각주, 1차 조건부 승인 수정 16건 이행, 2차 수정: 5절 기타 사례 제약 칸을 비교 지표로 바로잡음·완료·인계 칸 두 곳 미확인·병원 서술의 검증 상태 문장 태그 제거, 7절 요약 문장을 사실·추정으로 분리 |
 | 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s6.md](topics/2026/2026-09-30-area19-s6.md) | 자동 분리: 19. 사람·보행자 모델 의 "6. 대표 접근법과 기술" 절을 옮겼다. 2차 수정: 장기 시공간 흐름 지도 첫 문장을 ref-1171 확인 범위(전형적 움직임 패턴 지도)로 고침 |
 | 2026-09-30-20 | 생성 | [docs/topics/2026/2026-09-30-area19-s4.md](topics/2026/2026-09-30-area19-s4.md) | 자동 분리: 19. 사람·보행자 모델 의 "4. 핵심 개념과 용어" 절을 옮겼다(2차 재실행에서 변경 없음) |

@@ -36,7 +36,7 @@ version: 1
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
-| [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
+| [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
@@ -171,7 +171,7 @@ version: 1
 |---|---|---|---|---|
 | [54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | published | medium | 2026-09-25 | 2 |
 | [55. 현장 조사·설치·시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | published | medium | 2026-09-25 | 2 |
-| [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | seed | — | 2026-09-28 | 1 |
+| [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | 2026-09-30 | 2 |
 | [57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | published | medium | 2026-09-25 | 2 |
 
 **P. 거버넌스·법규·사회**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 125회 중 최종 통과 123회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 123, None 2
-- 2차 검증 판정: 통과 123, None 2
+- 실행 126회 중 최종 통과 124회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 124, None 2
+- 2차 검증 판정: 통과 124, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 524 |
-| 오픈소스 문서 | 210 |
+| 논문 | 526 |
+| 오픈소스 문서 | 211 |
 | 표준 | 176 |
-| 기사 | 98 |
-| 정부·연구기관 | 90 |
-| 벤더 문서 | 70 |
-| 업계 보고서 | 23 |
+| 기사 | 100 |
+| 정부·연구기관 | 91 |
+| 벤더 문서 | 71 |
+| 업계 보고서 | 24 |
 
-신뢰도: medium 874건, high 219건, low 98건
+신뢰도: medium 876건, high 222건, low 101건
 
 ### 현장 유형 매트릭스 채움률
 
-- 66/119 칸 (55%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 70/119 칸 (59%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
