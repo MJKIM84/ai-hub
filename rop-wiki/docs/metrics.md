@@ -34,7 +34,7 @@ version: 1
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
-| [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
+| [M. 안전](categories/safety/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
@@ -154,7 +154,7 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
-| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | seed | — | 2026-09-28 | 1 |
+| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-09-30 | 2 |
 | [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed | — | 2026-09-28 | 1 |
 
 **N. 보안·개인정보**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 114회 중 최종 통과 112회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 112, None 2
-- 2차 검증 판정: 통과 112, None 2
+- 실행 115회 중 최종 통과 113회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 113, None 2
+- 2차 검증 판정: 통과 113, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 475 |
-| 오픈소스 문서 | 201 |
+| 논문 | 482 |
+| 오픈소스 문서 | 202 |
 | 표준 | 166 |
-| 기사 | 79 |
+| 기사 | 81 |
 | 정부·연구기관 | 76 |
-| 벤더 문서 | 61 |
+| 벤더 문서 | 62 |
 | 업계 보고서 | 16 |
 
-신뢰도: medium 805건, high 189건, low 80건
+신뢰도: medium 811건, high 192건, low 82건
 
 ### 현장 유형 매트릭스 채움률
 
-- 43/119 칸 (36%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 45/119 칸 (38%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

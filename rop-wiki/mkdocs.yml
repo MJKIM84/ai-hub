@@ -292,6 +292,13 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 49. 사람 근접 안전 — 대표 연구와 자료: topics/2026/2026-09-30-area49-s8.md
+      - 49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area49-s7.md
+      - 49. 사람 근접 안전 — 대표 접근법과 기술: topics/2026/2026-09-30-area49-s6.md
+      - 49. 사람 근접 안전 — 핵심 개념과 용어: topics/2026/2026-09-30-area49-s4.md
+      - 49. 사람 근접 안전 — 왜 중요한가: topics/2026/2026-09-30-area49-s3.md
+      - 49. 사람 근접 안전 — 열린 질문: topics/2026/2026-09-30-area49-s11.md
+      - 49. 사람 근접 안전 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area49-s10.md
       - 46. 예측·학습 기반 최적화 — 대표 연구와 자료: topics/2026/2026-09-30-area46-s8.md
       - 46. 예측·학습 기반 최적화 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area46-s7.md
       - 46. 예측·학습 기반 최적화 — 대표 접근법과 기술: topics/2026/2026-09-30-area46-s6.md
@@ -667,6 +674,7 @@ nav:
     - 대체 이름 (Alternative Name (IMDF alt_name)): glossary/alternative-name.md
     - 도면 교환 형식 (Drawing Exchange Format (DXF)): glossary/drawing-exchange-format.md
     - 동결 구간 (Frozen Horizon (Frozen Zone)): glossary/frozen-horizon.md
+    - 동력·힘 제한 (Power and Force Limiting (PFL)): glossary/power-and-force-limiting.md
     - 등각 예측 (Conformal Prediction): glossary/conformal-prediction.md
     - 등재 프로그램 (Empanelment Programme): glossary/empanelment-programme.md
     - 디스펜서·인제스터 (Dispenser / Ingestor): glossary/dispenser-ingestor.md
@@ -710,6 +718,7 @@ nav:
     - 버전 IRI (Version IRI (owl:versionIRI)): glossary/version-iri.md
     - 보상 트랜잭션 (Compensating Transaction): glossary/compensating-transaction.md
     - 보안 구역과 도관 (Zones and Conduits (IEC 62443)): glossary/zones-and-conduits.md
+    - 보호 분리 거리 (Protective Separation Distance): glossary/protective-separation-distance.md
     - 분산 추적 (Distributed Tracing): glossary/distributed-tracing.md
     - 불확실도 정렬 (Uncertainty Alignment): glossary/uncertainty-alignment.md
     - 브레인리스 로봇 (Brainless Robot): glossary/brainless-robot.md
@@ -740,6 +749,7 @@ nav:
     - 셀 생산 방식 (Cell-based Production): glossary/cell-based-production.md
     - 셔틀 기반 저장·회수 시스템 (Shuttle-Based Storage and Retrieval System (SBS/RS)): glossary/shuttle-based-storage-and-retrieval-system.md
     - 소프트웨어 명판 (Software Nameplate (IDTA 02007)): glossary/software-nameplate.md
+    - 속도·분리 감시 (Speed and Separation Monitoring (SSM)): glossary/speed-and-separation-monitoring.md
     - 속성 기반 접근 통제 (Attribute-Based Access Control (ABAC)): glossary/attribute-based-access-control.md
     - 수행 가능 동작 (Performable Action (Open-RMF perform_action)): glossary/performable-action.md
     - 스마트물류센터 인증 (Smart Logistics Center Certification): glossary/smart-logistics-center-certification.md
@@ -787,6 +797,7 @@ nav:
     - 우선순위 상속·되돌림 (Priority Inheritance with Backtracking (PIBT)): glossary/priority-inheritance-with-backtracking.md
     - 운용 구역 (Operating Zone (ISO 3691-4)): glossary/operating-zone.md
     - 운용 모드 (Operating Mode (VDA 5050 operatingMode)): glossary/operating-mode.md
+    - 움직임 지도 (Maps of Dynamics (MoD)): glossary/maps-of-dynamics.md
     - 워크플로 넷 (Workflow Net (WF-net)): glossary/workflow-net.md
     - 원격 조작 (Teleoperation): glossary/teleoperation.md
     - 원격 조작형 소형차 (Remote-controlled Small Vehicle (遠隔操作型小型車)): glossary/remote-controlled-small-vehicle.md
@@ -827,6 +838,7 @@ nav:
     - 정보 나이 (Age of Information (AoI)): glossary/age-of-information.md
     - 정보 전달 명세 (Information Delivery Specification (IDS)): glossary/information-delivery-specification.md
     - 제약 디코딩 (Constrained Decoding): glossary/constrained-decoding.md
+    - 제어 장벽 함수 (Control Barrier Function (CBF)): glossary/control-barrier-function.md
     - 조립라인 공급 문제 (Assembly Line Feeding Problem (ALFP)): glossary/assembly-line-feeding-problem.md
     - 종합설비효율 (Overall Equipment Effectiveness (OEE)): glossary/overall-equipment-effectiveness.md
     - 주문 배치 (Order Batching): glossary/order-batching.md
@@ -1082,7 +1094,19 @@ nav:
       : references/ref-1072.md
     - 'ref-1073 — AECV-Bench: Benchmarking Multimodal Models on Architectural and Engineering Drawings Understanding': references/ref-1073.md
     - ref-1074 — LangExtract — README: references/ref-1074.md
+    - ref-1075 — Implementing Speed and Separation Monitoring in Collaborative Robot Workcells: references/ref-1075.md
+    - ? 'ref-1076 — Evolution of Safety Requirements in Industrial Robotics: Comparative Analysis of ISO 10218-1/2 (2011 vs. 2025) and Integration of ISO/TS 15066'
+      : references/ref-1076.md
+    - ref-1077 — nav2_collision_monitor — README: references/ref-1077.md
+    - ref-1078 — "협동로봇 충돌 안전 계산하고 써야죠": references/ref-1078.md
+    - ref-1079 — Principles and Guidelines for Evaluating Social Robot Navigation Algorithms: references/ref-1079.md
     - ref-108 — AGV 기반 제조물류시스템의 성능평가를 위한 해석적 모형에 관한 연구 - 반도체 Tandem 레이아웃 시스템을 중심으로 -: references/ref-108.md
+    - ref-1080 — Ever wonder how people and robots team up on your Amazon order?: references/ref-1080.md
+    - ref-1081 — Navigation benchmarking for autonomous mobile robots in hospital environments: references/ref-1081.md
+    - ref-1082 — Safe Human Robot Navigation in Warehouse Scenario: references/ref-1082.md
+    - ref-1083 — Efficient Human-Aware Task Allocation for Multi-Robot Systems in Shared Environments: references/ref-1083.md
+    - ref-1084 — New AMR safety standard available with release of ANSI/A3 R15.08-2: references/ref-1084.md
+    - ref-1085 — Empirical Prediction of Pedestrian Comfort in Mobile Robot Pedestrian Encounters: references/ref-1085.md
     - ref-109 — A Page-Rank-like Approach to Optimal Placement of Charging Stations in a Warehouse: references/ref-109.md
     - ref-110 — Tasks in RMF (task_new) - Programming Multiple Robots with ROS 2: references/ref-110.md
     - ref-111 — rmf_api_msgs — rmf_api_msgs/schemas/task_state.json: references/ref-111.md

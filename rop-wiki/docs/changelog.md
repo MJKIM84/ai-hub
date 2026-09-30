@@ -20,6 +20,32 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-10 | 갱신 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | seed → draft: 3~11절 첫 작성(보호 분리 거리 계산, 로봇 측·플릿 수준 감속·정지, 적용 유형별 표준·인증, 물류창고·병원·실외 사례, 책임 경계, 연결 16건, 열린 질문 4건), 각주 15건 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s6.md](topics/2026/2026-09-30-area49-s6.md) | 자동 분리: 49. 사람 근접 안전 의 "6. 대표 접근법과 기술" 절(1,762자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s7.md](topics/2026/2026-09-30-area49-s7.md) | 자동 분리: 49. 사람 근접 안전 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,599자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s8.md](topics/2026/2026-09-30-area49-s8.md) | 자동 분리: 49. 사람 근접 안전 의 "8. 대표 연구와 자료" 절(1,128자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s10.md](topics/2026/2026-09-30-area49-s10.md) | 자동 분리: 49. 사람 근접 안전 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,041자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s4.md](topics/2026/2026-09-30-area49-s4.md) | 자동 분리: 49. 사람 근접 안전 의 "4. 핵심 개념과 용어" 절(888자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s11.md](topics/2026/2026-09-30-area49-s11.md) | 자동 분리: 49. 사람 근접 안전 의 "11. 열린 질문" 절(579자)을 옮겼다 |
+| 2026-09-30-10 | 생성 | [docs/topics/2026/2026-09-30-area49-s3.md](topics/2026/2026-09-30-area49-s3.md) | 자동 분리: 49. 사람 근접 안전 의 "3. 왜 중요한가" 절(545자)을 옮겼다 |
+| 2026-09-30-10 | 요약 | [docs/categories/safety/human-proximity-safety.md](categories/safety/human-proximity-safety.md) | 49. 사람 근접 안전: seed → draft: 3~11절 첫 작성(보호 분리 거리 계산, 로봇 측·플릿 수준 감속·정지, 적용 유형별 표준·인증, 물류창고·병원·실외 사례, 책임 경계), 각주 15건, 열린 질문 4건 |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1075.md](references/ref-1075.md) | 참고문헌 ref-1075 등록: Implementing Speed and Separation Monitoring in Collaborativ… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1076.md](references/ref-1076.md) | 참고문헌 ref-1076 등록: Evolution of Safety Requirements in Industrial Robotics: Com… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1077.md](references/ref-1077.md) | 참고문헌 ref-1077 등록: nav2_collision_monitor — README |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1078.md](references/ref-1078.md) | 참고문헌 ref-1078 등록: "협동로봇 충돌 안전 계산하고 써야죠" |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1079.md](references/ref-1079.md) | 참고문헌 ref-1079 등록: Principles and Guidelines for Evaluating Social Robot Naviga… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1080.md](references/ref-1080.md) | 참고문헌 ref-1080 등록: Ever wonder how people and robots team up on your Amazon ord… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1081.md](references/ref-1081.md) | 참고문헌 ref-1081 등록: Navigation benchmarking for autonomous mobile robots in hosp… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1082.md](references/ref-1082.md) | 참고문헌 ref-1082 등록: Safe Human Robot Navigation in Warehouse Scenario |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1083.md](references/ref-1083.md) | 참고문헌 ref-1083 등록: Efficient Human-Aware Task Allocation for Multi-Robot System… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1084.md](references/ref-1084.md) | 참고문헌 ref-1084 등록: New AMR safety standard available with release of ANSI/A3 R1… |
+| 2026-09-30-10 | 생성 | [docs/references/ref-1085.md](references/ref-1085.md) | 참고문헌 ref-1085 등록: Empirical Prediction of Pedestrian Comfort in Mobile Robot P… |
+| 2026-09-30-10 | 생성 | [docs/glossary/speed-and-separation-monitoring.md](glossary/speed-and-separation-monitoring.md) | 용어집 항목 속도·분리 감시 |
+| 2026-09-30-10 | 생성 | [docs/glossary/protective-separation-distance.md](glossary/protective-separation-distance.md) | 용어집 항목 보호 분리 거리 |
+| 2026-09-30-10 | 생성 | [docs/glossary/power-and-force-limiting.md](glossary/power-and-force-limiting.md) | 용어집 항목 동력·힘 제한 |
+| 2026-09-30-10 | 생성 | [docs/glossary/maps-of-dynamics.md](glossary/maps-of-dynamics.md) | 용어집 항목 움직임 지도 |
+| 2026-09-30-10 | 생성 | [docs/glossary/control-barrier-function.md](glossary/control-barrier-function.md) | 용어집 항목 제어 장벽 함수 |
+| 2026-09-30-10 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
 | 2026-09-30-09 | 갱신 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 영역 심화: 섹션 3~11 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 프런트매터 related_areas·tags·sources·confidence 추가(2차 재실행: 이 페이지 본문 변경 없음) |
 | 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s6.md](topics/2026/2026-09-30-area46-s6.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(1,868자)을 옮겼다. 2차: DeepFleet·34. 시뮬레이션·예측용 디지털 트윈 구분 문장의 태그를 [의견]에서 [추정]으로 되돌렸다 |
 | 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s8.md](topics/2026/2026-09-30-area46-s8.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(1,712자)을 옮겼다 |

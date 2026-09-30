@@ -248,8 +248,12 @@ version: 1
 | oq-226 | 일반 제품 데이터시트가 아니라 로봇 매뉴얼(능력·실행 조건·오류 코드)을 대상으로 LLM 추출 정확도를 측정한 공개 벤치마크나 연구가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
 | oq-227 | 하드웨어 동기화가 없는 고정 카메라와 로봇 인식 결과를 하나의 현재 공간 상태로 합칠 때 허용할 시간 차와 좌표 정합 기준을 정한 연구나 제품 문서가 있는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
 | oq-228 | 플랫폼이 시설 CCTV 영상을 로봇 운영용 장면 인식에 쓸 때 국내 개인정보 보호 법령의 고정형 영상정보처리기기 규정상 목적 외 이용이나 안내 의무가 문제 되는가? | [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | 2026-09-30 | 2026-09-30-08 | 열림 | — |
+| oq-229 | 플릿 관제가 내리는 구역별 속도 제한·진입 금지는 안전 등급이 아닌 소프트웨어 기능인데, 이것을 위험성 평가에서 위험 감소 조치로 인정받으려면 로봇의 안전 등급 보호 필드 설정과 어떻게 맞추고 누가 검증하는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
+| oq-230 | 출처 충돌: 실외이동로봇 운행안전인증의 심사 항목 수를 인증기관 페이지는 8개 항목으로, 기사는 16가지로 전하는데 어느 쪽이 항목 단위이며 세부 항목 목록은 무엇인가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
+| oq-231 | 국내 병원·상업 시설·공동주택 실내에서 운행하는 서비스 로봇의 사람 근접 속도·거리 기준을 정한 법령·표준·인증이 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
+| oq-232 | 착용형 장치나 출입 통제 신호로 얻은 사람 위치를 제조사가 다른 여러 로봇 플릿에 동시에 전달해 감속·정지시키는 표준 인터페이스나 사례가 있는가? | [49. 사람 근접 안전](categories/safety/human-proximity-safety.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-09-30 | 2026-09-30-10 | 열림 | — |
 
-상태별 건수: 열림 227건, 조사 중 1건
+상태별 건수: 열림 231건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

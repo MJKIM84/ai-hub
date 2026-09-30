@@ -1,0 +1,175 @@
+{
+  "run_id": "2026-09-30-10",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 49,
+    "area_name": "49. 사람 근접 안전",
+    "category": "M. 안전"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 13,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 1683.9,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 49. 사람 근접 안전 | seed → draft: 3~11절 첫 작성(보호 분리 거리 계산, 로봇 측·플릿 수준 감속·정지, 적용 유형별 표준·인증, 물류창고·병원·실외 사례, 책임 경계), 각주 15건, 열린 질문 4건 | run 2026-09-30-10",
+  "notes": [
+    "참고문헌 생성: references/ref-1075.md",
+    "참고문헌 생성: references/ref-1076.md",
+    "참고문헌 생성: references/ref-1077.md",
+    "참고문헌 생성: references/ref-1078.md",
+    "참고문헌 생성: references/ref-1079.md",
+    "참고문헌 생성: references/ref-1080.md",
+    "참고문헌 생성: references/ref-1081.md",
+    "참고문헌 생성: references/ref-1082.md",
+    "참고문헌 생성: references/ref-1083.md",
+    "참고문헌 생성: references/ref-1084.md",
+    "참고문헌 생성: references/ref-1085.md",
+    "용어집 생성: glossary/speed-and-separation-monitoring.md",
+    "용어집 생성: glossary/protective-separation-distance.md",
+    "용어집 생성: glossary/power-and-force-limiting.md",
+    "용어집 생성: glossary/maps-of-dynamics.md",
+    "용어집 생성: glossary/control-barrier-function.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 5,
+    "references": 11,
+    "standards": 1,
+    "open_questions": 4,
+    "flow_cells": 13,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 13:44:15 KST",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 560806,
+    "cache_read_input_tokens": 3833041,
+    "output_tokens": 131691,
+    "cost_usd": 8.6392,
+    "calls": 6,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.0957,
+        "output_tokens": 36932,
+        "cache_read_input_tokens": 2842631,
+        "cache_creation_input_tokens": 164666
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.2898,
+        "output_tokens": 22042,
+        "cache_read_input_tokens": 823359,
+        "cache_creation_input_tokens": 178475
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 2.1225,
+        "output_tokens": 58894,
+        "cache_read_input_tokens": 71891,
+        "cache_creation_input_tokens": 116282
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 1.0267,
+        "output_tokens": 13120,
+        "cache_read_input_tokens": 88466,
+        "cache_creation_input_tokens": 93325
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-30-area49-s6.md",
+        "chars": 1762
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-30-area49-s7.md",
+        "chars": 1599
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-30-area49-s8.md",
+        "chars": 1128
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-30-area49-s10.md",
+        "chars": 1041
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-30-area49-s4.md",
+        "chars": 888
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-30-area49-s11.md",
+        "chars": 579
+      },
+      {
+        "from": "docs/categories/safety/human-proximity-safety.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-30-area49-s3.md",
+        "chars": 545
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 14,
+  "cross_checked_findings": 1
+}
