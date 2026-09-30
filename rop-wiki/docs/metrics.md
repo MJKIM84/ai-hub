@@ -35,7 +35,7 @@ version: 1
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
-| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 1 | 0 | 0 | 15 | 0 | 0 | 16 |
+| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
 | [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
@@ -163,7 +163,7 @@ version: 1
 |---|---|---|---|---|
 | [51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md) | published | medium | 2026-09-25 | 2 |
 | [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | 2026-09-30 | 2 |
-| [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | seed | — | 2026-09-28 | 1 |
+| [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | published | medium | 2026-09-30 | 2 |
 
 **O. 검증·도입·수명주기**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 121회 중 최종 통과 119회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 119, None 2
-- 2차 검증 판정: 통과 119, None 2
+- 실행 122회 중 최종 통과 120회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 120, None 2
+- 2차 검증 판정: 통과 120, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 504 |
+| 논문 | 509 |
 | 오픈소스 문서 | 208 |
 | 표준 | 174 |
-| 기사 | 90 |
-| 정부·연구기관 | 80 |
+| 기사 | 93 |
+| 정부·연구기관 | 84 |
 | 벤더 문서 | 68 |
-| 업계 보고서 | 20 |
+| 업계 보고서 | 21 |
 
-신뢰도: medium 843건, high 210건, low 91건
+신뢰도: medium 852건, high 212건, low 93건
 
 ### 현장 유형 매트릭스 채움률
 
-- 61/119 칸 (51%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 62/119 칸 (52%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

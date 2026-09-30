@@ -44,6 +44,32 @@ version: 1
 | 2026-09-30-17 | 생성 | [docs/glossary/sim-vs-real-correlation-coefficient.md](glossary/sim-vs-real-correlation-coefficient.md) | 용어집 항목 시뮬레이션–현실 상관 계수 |
 | 2026-09-30-17 | 생성 | [docs/glossary/models-and-simulations-credibility-assessment.md](glossary/models-and-simulations-credibility-assessment.md) | 용어집 항목 모델·시뮬레이션 신뢰도 평가 |
 | 2026-09-30-17 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-30-16 | 갱신 | [docs/categories/security-and-privacy/privacy-and-video-data.md](categories/security-and-privacy/privacy-and-video-data.md) | seed → draft: 3~11절 첫 작성(제25조의2·이동형 안내서, 목적별 이용·가명처리, 가림·저해상도·출력 필드 기술, 가정·병원·실외 사례, 책임 경계, 연결 16개 영역, 열린 질문 11건), 13절 각주, 1차 수정 15건·2차 수정 4건 반영 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s6.md](topics/2026/2026-09-30-area53-s6.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "6. 대표 접근법과 기술" 절(1,883자)을 옮겼다 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s11.md](topics/2026/2026-09-30-area53-s11.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "11. 열린 질문" 절을 옮겼다. 2차 수정: 기존 질문 7건을 등록 문장 그대로 옮기고 부분 근거 메모 2건에 [추정]·각주, EDPB 풀어쓰기 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s8.md](topics/2026/2026-09-30-area53-s8.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: Xu·Ayday 항목의 플랫폼 필드 설계 연결 문장을 [추정]으로 분리 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s4.md](topics/2026/2026-09-30-area53-s4.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "4. 핵심 개념과 용어" 절(1,008자)을 옮겼다 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s10.md](topics/2026/2026-09-30-area53-s10.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차 수정: EDPB 풀어쓰기 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s7.md](topics/2026/2026-09-30-area53-s7.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: EDPB·GDPR 풀어쓰기 |
+| 2026-09-30-16 | 생성 | [docs/topics/2026/2026-09-30-area53-s3.md](topics/2026/2026-09-30-area53-s3.md) | 자동 분리: 53. 개인정보·영상 데이터 의 "3. 왜 중요한가" 절을 옮겼다. 2차 수정: SNS 풀어쓰기 |
+| 2026-09-30-16 | 요약 | [docs/categories/security-and-privacy/privacy-and-video-data.md](categories/security-and-privacy/privacy-and-video-data.md) | 53. 개인정보·영상 데이터: seed → draft: 3~11절 첫 작성(제25조의2·이동형 안내서, 목적별 이용·가명처리, 가림·저해상도·출력 필드 기술, 가정·병원·실외 사례, 책임 경계), 1차 수정 15건·2차 수정 4건 반영 |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1135.md](references/ref-1135.md) | 참고문헌 ref-1135 등록: [현재 안내서] 이동형 영상정보처리기기를 위한 개인영상정보 보호ㆍ활용 안내서(2024.9.) |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1136.md](references/ref-1136.md) | 참고문헌 ref-1136 등록: "자율주행차·로봇 카메라 촬영 시 외부에 표시해야" |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1137.md](references/ref-1137.md) | 참고문헌 ref-1137 등록: 개인정보 포털 — 이동형 영상정보처리기기 제도 및 신청방법 안내 |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1138.md](references/ref-1138.md) | 참고문헌 ref-1138 등록: 자율주행차·이동형 로봇 개발에 ‘영상데이터’ 원본 활용 허용 |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1139.md](references/ref-1139.md) | 참고문헌 ref-1139 등록: 개인정보보호위원회, 비정형데이터 가명처리 관련 가명정보 처리 가이드라인 개정 (뉴스레터) |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1140.md](references/ref-1140.md) | 참고문헌 ref-1140 등록: 로봇청소기가 우리집 사진 찍어 외부 유출?…6종 ... (제목 일부만 확인) |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1141.md](references/ref-1141.md) | 참고문헌 ref-1141 등록: "로봇청소기 개인정보 관리 대체로 안전…미흡 사례 ... (제목 일부만 확인) |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1142.md](references/ref-1142.md) | 참고문헌 ref-1142 등록: EgoBlur: Responsible Innovation in Aria |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1143.md](references/ref-1143.md) | 참고문헌 ref-1143 등록: Real-Time Privacy Preservation for Robot Visual Perception |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1144.md](references/ref-1144.md) | 참고문헌 ref-1144 등록: Designing Privacy-Preserving Visual Perception for Robot Nav… |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1145.md](references/ref-1145.md) | 참고문헌 ref-1145 등록: Seeing Less Is Not Seeing Safely: Privacy Leakage from Task-… |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1146.md](references/ref-1146.md) | 참고문헌 ref-1146 등록: The Privacy-Preserving Capabilities of a Service Robot in a… |
+| 2026-09-30-16 | 생성 | [docs/references/ref-1147.md](references/ref-1147.md) | 참고문헌 ref-1147 등록: Guidelines 3/2019 on processing of personal data through vid… |
+| 2026-09-30-16 | 생성 | [docs/glossary/pseudonymisation.md](glossary/pseudonymisation.md) | 용어집 항목 가명처리 |
+| 2026-09-30-16 | 생성 | [docs/glossary/face-obfuscation.md](glossary/face-obfuscation.md) | 용어집 항목 얼굴 가림 |
+| 2026-09-30-16 | 생성 | [docs/glossary/raw-video-regulatory-sandbox-exemption.md](glossary/raw-video-regulatory-sandbox-exemption.md) | 용어집 항목 영상정보 원본 활용 규제샌드박스 실증특례 |
+| 2026-09-30-16 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
 | 2026-09-30-15 | 갱신 | [docs/categories/safety/safety-standards-certification-and-incident-investigation.md](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed → draft: 3~11절 첫 작성(표준·인증 개정 현황, 제조 공장·물류창고·실외·가정·기타 사례, 사고 기록·조사 방법, 책임 경계, 연결 17건, 열린 질문 7건). 2차 수정: 7절 머리 문장을 f1·f3 의 구체 사실로 교체, 프런트매터 sources 를 각주 정의와 일치 |
 | 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s7.md](topics/2026/2026-09-30-area50-s7.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "7. 관련 표준·프레임워크·오픈소스" 절을 옮겼다. 2차 수정: 1절·3절 머리 문장을 f1·f3 의 구체 사실로 교체 |
 | 2026-09-30-15 | 생성 | [docs/topics/2026/2026-09-30-area50-s4.md](topics/2026/2026-09-30-area50-s4.md) | 자동 분리: 50. 안전 표준·인증·사고 조사 의 "4. 핵심 개념과 용어" 절(1,007자)을 옮겼다 |

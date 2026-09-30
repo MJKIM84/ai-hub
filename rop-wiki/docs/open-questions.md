@@ -278,8 +278,12 @@ version: 1
 | oq-256 | 실제 운영 기록을 재생해 재현한 상황에서 배차 정책이나 로봇 수를 바꿔 비교할 때, 기록된 다른 로봇·사람이 바뀐 조건에 반응하지 않는 문제를 로봇 플릿 재현에서 어떻게 다루는가? | [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md)<br>[19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | 2026-09-30 | 2026-09-30-17 | 열림 | — |
 | oq-257 | 물류창고·공장 가상 시운전의 효과(프로젝트 기간·현장 시운전 기간 단축)를 벤더 사례가 아닌 독립 연구가 같은 기준선으로 측정한 결과가 있는가? | [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md)<br>[3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | 2026-09-30 | 2026-09-30-17 | 열림 | — |
 | oq-258 | 한 병원의 실제 기록으로 찾은 승강기 가동률 임계값 같은 운영 기준이 다른 병원 구조·승강기 제어 정책을 재현한 시뮬레이션에서도 유지되는지 검증한 연구가 있는가? | [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md)<br>[63. 병원·의료](categories/site-type-applications/hospital-and-healthcare.md)<br>[22. 설비·건물 시스템 연동](categories/integration/facility-and-building-system-integration.md) | 2026-09-30 | 2026-09-30-17 | 열림 | — |
+| oq-259 | 여러 제조사 로봇의 영상과 위치 정보를 모아 관제하는 플랫폼 사업자는 개인정보 보호법상 이동형 영상정보처리기기 운영자인가, 현장 운영 사업자의 수탁자인가, 그리고 촬영 표시·거부 의사 처리 의무는 누구에게 있는가? | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | 2026-09-30 | 2026-09-30-16 | 열림 | — |
+| oq-260 | 로봇이 플랫폼·클라우드·로그로 내보내는 인지 출력(객체 목록·의미 지도·궤적)의 재식별 위험을 측정하는 공개 평가 기준이나 벤치마크가 있는가? | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | 2026-09-30 | 2026-09-30-16 | 열림 | — |
+| oq-261 | 피촬영자가 한 로봇에 밝힌 촬영 거부 의사를 같은 현장의 다른 로봇과 플랫폼 기록에 공통으로 반영하는 방법이나 운영 사례가 있는가? | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | 2026-09-30 | 2026-09-30-16 | 열림 | — |
+| oq-262 | 유럽데이터보호이사회(European Data Protection Board, EDPB) 영상 장치 지침 3/2019 를 이동 로봇 카메라에 적용한 유럽 감독기관의 결정이나 해석 사례가 있으며, 보존 기간 권고는 무엇인가? | [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md)<br>[59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | 2026-09-30 | 2026-09-30-16 | 열림 | — |
 
-상태별 건수: 열림 257건, 조사 중 1건
+상태별 건수: 열림 261건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

@@ -292,6 +292,13 @@ nav:
       - 66. 실외 — 왜 중요한가: topics/2026/2026-09-30-area66-s3.md
       - 66. 실외 — 열린 질문: topics/2026/2026-09-30-area66-s11.md
       - 66. 실외 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area66-s10.md
+      - 53. 개인정보·영상 데이터 — 대표 연구와 자료: topics/2026/2026-09-30-area53-s8.md
+      - 53. 개인정보·영상 데이터 — 관련 표준·프레임워크·오픈소스: topics/2026/2026-09-30-area53-s7.md
+      - 53. 개인정보·영상 데이터 — 대표 접근법과 기술: topics/2026/2026-09-30-area53-s6.md
+      - 53. 개인정보·영상 데이터 — 핵심 개념과 용어: topics/2026/2026-09-30-area53-s4.md
+      - 53. 개인정보·영상 데이터 — 왜 중요한가: topics/2026/2026-09-30-area53-s3.md
+      - 53. 개인정보·영상 데이터 — 열린 질문: topics/2026/2026-09-30-area53-s11.md
+      - 53. 개인정보·영상 데이터 — 다른 연구영역과의 연결: topics/2026/2026-09-30-area53-s10.md
       - 52. 통신 보호·위협 관리·감사 — 대표 연구와 자료: topics/2026/2026-09-30-area52-s8.md
       - 52. 통신 보호·위협 관리·감사 — 대표 접근법과 기술: topics/2026/2026-09-30-area52-s6.md
       - 52. 통신 보호·위협 관리·감사 — 핵심 개념과 용어: topics/2026/2026-09-30-area52-s4.md
@@ -661,6 +668,7 @@ nav:
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
     - pass^k 지표 (pass^k): glossary/pass-k.md
+    - 가명처리 (Pseudonymisation): glossary/pseudonymisation.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
     - 간접 프롬프트 주입 (Indirect Prompt Injection): glossary/indirect-prompt-injection.md
     - 감독 제어 (Supervisory Control): glossary/supervisory-control.md
@@ -831,6 +839,7 @@ nav:
     - 안전 구간 경로 계획 (Safe Interval Path Planning (SIPP)): glossary/safe-interval-path-planning.md
     - 어포던스 (Affordance): glossary/affordance.md
     - 언어 유도 평면도 생성 (Language-guided Floor Plan Generation): glossary/language-guided-floor-plan-generation.md
+    - 얼굴 가림 (Face Obfuscation): glossary/face-obfuscation.md
     - 업무 연속성 관리 시스템 (Business Continuity Management System (BCMS)): glossary/business-continuity-management-system.md
     - 업무 위치 (Business Location (EPCIS bizLocation)): glossary/business-location.md
     - 에이전틱 AI (Agentic AI): glossary/agentic-ai.md
@@ -838,6 +847,7 @@ nav:
     - 역할 기반 접근 통제 (Role-Based Access Control (RBAC)): glossary/role-based-access-control.md
     - 연결 이벤트 (AssociationEvent): glossary/association-event.md
     - 연합 형성 (Coalition Formation): glossary/coalition-formation.md
+    - 영상정보 원본 활용 규제샌드박스 실증특례 (Regulatory Sandbox Special Demonstration Exemption for Raw Video Use): glossary/raw-video-regulatory-sandbox-exemption.md
     - 예지 정비 (Predictive Maintenance): glossary/predictive-maintenance.md
     - 오류 선언 (Error Declaration (EPCIS errorDeclaration)): glossary/epcis-error-declaration.md
     - 오픈 RMF (Open-RMF): glossary/open-rmf.md
@@ -1225,7 +1235,20 @@ nav:
     - ref-1132 — 가상의 디지털 공간에 세운 쌍둥이 공장: references/ref-1132.md
     - ref-1133 — NASA-STD-7009B Standard for Models and Simulations: references/ref-1133.md
     - ref-1134 — Composable and executable scenarios for simulation-based testing of mobile robots: references/ref-1134.md
+    - ref-1135 — [현재 안내서] 이동형 영상정보처리기기를 위한 개인영상정보 보호ㆍ활용 안내서(2024.9.): references/ref-1135.md
+    - ref-1136 — "자율주행차·로봇 카메라 촬영 시 외부에 표시해야": references/ref-1136.md
+    - ref-1137 — 개인정보 포털 — 이동형 영상정보처리기기 제도 및 신청방법 안내: references/ref-1137.md
+    - ref-1138 — 자율주행차·이동형 로봇 개발에 ‘영상데이터’ 원본 활용 허용: references/ref-1138.md
+    - ref-1139 — 개인정보보호위원회, 비정형데이터 가명처리 관련 가명정보 처리 가이드라인 개정 (뉴스레터): references/ref-1139.md
     - ref-114 — A BPMN-driven framework for Multi-Robot System development: references/ref-114.md
+    - ref-1140 — 로봇청소기가 우리집 사진 찍어 외부 유출?…6종 ... (제목 일부만 확인): references/ref-1140.md
+    - ref-1141 — "로봇청소기 개인정보 관리 대체로 안전…미흡 사례 ... (제목 일부만 확인): references/ref-1141.md
+    - 'ref-1142 — EgoBlur: Responsible Innovation in Aria': references/ref-1142.md
+    - ref-1143 — Real-Time Privacy Preservation for Robot Visual Perception: references/ref-1143.md
+    - ref-1144 — Designing Privacy-Preserving Visual Perception for Robot Navigation Based on User Privacy Preferences: references/ref-1144.md
+    - 'ref-1145 — Seeing Less Is Not Seeing Safely: Privacy Leakage from Task-Scoped Robot Perception Exports': references/ref-1145.md
+    - ref-1146 — The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting: references/ref-1146.md
+    - ref-1147 — Guidelines 3/2019 on processing of personal data through video devices: references/ref-1147.md
     - ? 'ref-115 — Throughput bottleneck detection in manufacturing: a systematic review of the literature on methods and operationalization modes'
       : references/ref-115.md
     - 'ref-116 — Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis': references/ref-116.md

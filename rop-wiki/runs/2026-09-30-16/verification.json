@@ -1,0 +1,235 @@
+{
+  "run_id": "2026-09-30-16",
+  "stage": "first",
+  "verdict": "조건부 승인",
+  "retry_reason": null,
+  "claim_checks": [
+    {
+      "finding_id": "f1",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 개인정보 포털(ref-1137)을 열어 정의(착용·휴대하거나 이동 가능한 물체에 부착·거치)와 예시(스마트안경·스마트폰·드론·자율주행차, 배달로봇)를 확인했다. 안내서 게시글(ref-1135)도 '드론, 로봇 등'을 명시한다. 두 출처 모두 개인정보보호위원회라서 독립 교차 확인은 아니다. 정의 문구에 '거치'가 빠져 있으니 원문대로 '부착·거치'로 적는다."
+    },
+    {
+      "finding_id": "f2",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": true,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. 공개된 장소에서 업무 목적 촬영을 원칙적으로 제한하는 것, 동의하거나 거부 의사를 밝히지 않은 경우의 예외, 불빛·소리·안내판 표시는 ref-1137(열람)과 ref-588(열람) 두 곳에서 확인했다. 반면 '목욕실 등 사생활 침해 우려가 큰 장소 촬영 금지' 구절은 인용한 두 출처 어디에도 없다(포털 페이지 미기재, 김·장 뉴스레터에도 없음). 이 구절은 비공식 법령 DB 검색 결과에만 나온다. 처리: 이 구절만 떼어 [추정]으로 강등하고 '법령 원문 미확인'을 표시하며, 나머지 문장은 [사실]로 유지한다."
+    },
+    {
+      "finding_id": "f3",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인. 개인정보보호위원회 게시판(ref-1135)에서 게시일 2024-10-14와 안내서 제목(2024.9.)을 열어 확인했고, 정보통신신문(ref-1136, 2024-10-14)이 같은 공개를 보도했다. 발행 주체가 서로 다르다."
+    },
+    {
+      "finding_id": "f4",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 김·장 뉴스레터(ref-588)를 열어 opt-out('일종의 Opt-out 방식임'), 다중 채널 표시, 기획·설계 단계의 목적 명확화·최소 수집, 보관·파기 단계의 보호책임자 지정·운영방침 공개·보유기간 설정을 확인했다. 안내서 PDF 원문이 아니라 법률사무소의 2차 요약에 기댄 단일 출처라는 점을 본문에 밝힌다. 뉴스레터 발행일은 2024-10-14로 확인했다."
+    },
+    {
+      "finding_id": "f5",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인하되 문구를 정정해야 한다. 원문은 '가명·익명처리 없이 AI 학습 등에 활용하는 것은 예측 가능성이 있다고 보기 어려움'이며, 원본이 필요하면 규제샌드박스(실증특례)를 활용하라고 한다. 이 맥락은 자율주행차 같은 고속 이동 기기다. 따라서 '동의 없이 … 허용되지 않는다'를 '가명·익명처리 없이 AI 학습에 쓰는 것은 예측 가능성이 있다고 보기 어렵고, 원본이 필요하면 규제샌드박스를 활용해야 한다'로 고친다. 사고 원인 파악·보험 처리 이용 부분은 원문과 일치한다."
+    },
+    {
+      "finding_id": "f6",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인. 김·장(ref-588)에서 '자율주행차와 같이 고속 이동하면서 영상을 촬영하는 경우', 익명·가명처리로 권리행사 가능성 최소화, 규제샌드박스 활용을 확인했다. 정보통신신문(ref-1136)에서 원칙적 가명처리(얼굴 모자이크)와 원본 필수 시 규제샌드박스 예외를 확인했다. 두 출처 모두 안내서의 2차 요약이라는 점을 밝힌다."
+    },
+    {
+      "finding_id": "f7",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 정보통신신문(ref-1136)을 열어 자율주행차·배달로봇의 외부 촬영 표시와 위탁 시 보호책임자 지정·정기 점검·교육을 확인했다. 기사 제목 전체('자율주행차·로봇 카메라 촬영 시 외부에 표시해야')도 확인했다. 외부 표시는 운영 사업자의 의무이므로 본문에서는 연계 대상으로 서술한다."
+    },
+    {
+      "finding_id": "f8",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 정책브리핑(ref-1138, 2023-11-15)에서 영상정보 원본 활용 규제샌드박스 실증특례를 이번 달부터 운영하고 연내 9개 기업 승인을 추진한다는 내용을 확인했다. '서비스 고도화 목적에 한해'의 '한해'는 원문에서 한정 표현으로 확인하지 못했으므로 빼거나 완화한다. 2023년 발표이므로 기준일을 밝힌다."
+    },
+    {
+      "finding_id": "f9",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 세종 뉴스레터(ref-1139)를 열어 2024-02-05 개정, 비정형 데이터 포함, 목적·환경·민감도에 따른 위험 판단, 기술 신뢰성 문서화, 처리 후 자체 검수를 확인했다. 영상정보 처리 방법으로 '이미지 필터링, 이미지 암호화, 얼굴 합성, 인페인팅, AI 이용 영상정보 가명처리'가 나열돼 있다. 가이드라인 원문이 아니라 법률사무소 요약이다. 뉴스레터 발행일은 2024-02-08이다."
+    },
+    {
+      "finding_id": "f10",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. 경향신문(ref-1140, 2025-09-02)에서 한국인터넷진흥원·한국소비자원의 6종 점검, 나르왈·드리미·에코백스의 사용자 인증 절차 미비로 인한 집 사진 노출·카메라 강제 활성화 위험, 삼성·LG의 접근 통제·업데이트 양호를 확인했다. 기관 보도자료는 열지 못해 기사 단일 출처이므로 신뢰도 low를 유지한다. 제품 보안 취약점은 제조사 쪽 연계 대상이다."
+    },
+    {
+      "finding_id": "f11",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": true,
+      "tag_decision": "유지",
+      "note": "확인. 아시아경제(ref-1141, 2026-09-14)를 열어 5개 사업자, 침해 위험 미확인, 실시간 영상 암호화·앱 직접 전송, 음성 미저장, 동의·계약 이행 구분, 사전 선택권, 국외 이전 고지, 국내대리인 미흡을 확인했다. 검증 검색에서 여러 매체(이투데이·보안뉴스·SBS Biz 등) 요약이 같은 내용을 전하는 것을 확인했다(해당 기사 원문은 미열람). 장애물 사진 삭제 조건은 검색 요약상 '다음 청소 때, 이용자가 조회한 뒤, 또는 24시간 후'이고 브랜드별로 다르므로 '이용자 조회 뒤'를 더하고 '브랜드별로 다름'을 밝힌다."
+    },
+    {
+      "finding_id": "f12",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. MIT Technology Review(ref-968, 2022-12-19, Eileen Guo)를 열어 개발용 Roomba J7, 15장, 화장실의 여성·아동, Scale AI → 베네수엘라 작업자 → Facebook·Discord, 200만 장 이상 공유, 동의서와 '녹화 중' 라벨을 근거로 든 점을 확인했다. 단일 탐사 보도다."
+    },
+    {
+      "finding_id": "f13",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2308.13093 초록(v1 2023-08-24, v2 2023-09-06)에서 얼굴·번호판 검출 뒤 가우시안 블러, Casual Conversations V2 평가, Project Aria 1인칭 영상을 확인했다. 기기·데이터 수집 쪽 처리이므로 본문에서는 기술 근거로만 쓴다."
+    },
+    {
+      "finding_id": "f14",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2505.05519 초록(2025-05-08, Choi 외)에서 PCVS, 논리 명세, 등각 예측 기반 이론적 하한, 여러 데이터셋에서 95% 이상 명세 만족, 가린 영상으로도 로봇이 정상 동작함을 확인했다. 프리프린트 단일 출처다. 용어집의 '등각 예측(conformal-prediction)'에 연결한다."
+    },
+    {
+      "finding_id": "f15",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인. arXiv 2604.06382 초록(v1 2026-04-07, 개정 2026-06-30)에서 시각적 추상화와 촬영 시점 저해상도화 선호, 해상도가 프라이버시 수준과 로봇 근접도에 따라 달라진다는 점, 사용자 설정 거리–해상도 정책을 확인했다. 프리프린트다."
+    },
+    {
+      "finding_id": "f16",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "확인하되 두 가지를 정정한다. (1) 초록은 결과가 시뮬레이션 120개 장면(AI2-THOR·ProcTHOR)에서 나왔다고 밝히므로 본문에 시뮬레이션 결과임을 명시한다. (2) 0.077은 '추정 정확도'가 아니라 목표 범주 macro-F1(1.000 → 0.077)이다. 나머지 수치(1.000, 0.898, 0.532~0.970, 0.995)와 결론 문구는 초록과 일치한다."
+    },
+    {
+      "finding_id": "f17",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "원문 미열람(ACM 403). 검색 결과로 실재와 요약 내용(비대상자 얼굴 가림은 안정적, 정면 시 환자 인식, 자세·가림·조명 변화로 신뢰도 저하, 의사 진료실 모의 시나리오)을 확인했다. 서지를 정정한다: 정확한 제목은 'The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting', 저자는 Sarfraz, B. M., Saplacan Lindblom, D., Baselizadeh, A., Torresen, J., 발행일은 2026-03-16(HRI Companion '26)이다. 모의 실험임을 명시하고 신뢰도는 medium 이하다."
+    },
+    {
+      "finding_id": "f18",
+      "source_exists": true,
+      "supports_claim": false,
+      "cross_checked": false,
+      "tag_decision": "강등",
+      "note": "부분 뒷받침. EDPB 페이지를 열어 지침 3/2019 제목과 최종판(2.0) 채택(2020-01)을 확인했다. 그러나 '처리의 적법 근거, 투명성, 정보주체 권리, 기술적 보호조치를 다룬다'는 목록은 연 페이지에 없다(PDF 본문 추출 실패, 페이지 주제 태그는 Technology·Biometrics·Law enforcement). 처리: 목록 구절을 [추정]으로 강등해 '다루는 범위 세부는 원문 미확인'으로 표시하거나 삭제하고, 채택 사실만 [사실]로 유지한다."
+    },
+    {
+      "finding_id": "f19",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. f12·f7·f5의 종합이며 근거 출처는 모두 열람 확인했다. f5 문구 정정(가명·익명처리 없는 AI 학습)에 맞춰 근거 서술을 맞춘다."
+    },
+    {
+      "finding_id": "f20",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 핵심 질문의 답이다. 근거 finding의 정정(f5 문구, f16 시뮬레이션)을 반영한다. 핵심 질문의 '사람의 위치 정보' 부분은 전용 자료를 찾지 못했다는 한계를 본문에 명시한다."
+    },
+    {
+      "finding_id": "f21",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 다만 '촬영 금지 장소(화장실·탈의실 등)' 예시는 f2에서 강등된 구절(인용 출처 미확인)에 기대므로, '사생활 침해 우려 장소'로 일반화하고 법령 원문 미확인을 표시하거나 예시를 뺀다."
+    },
+    {
+      "finding_id": "f22",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 원문 19장의 책임 경계(로봇 자체 지능·제어, 업종별 조건)에 맞게 연계 대상을 구분했다."
+    },
+    {
+      "finding_id": "f23",
+      "source_exists": true,
+      "supports_claim": true,
+      "cross_checked": false,
+      "tag_decision": "유지",
+      "note": "[추정] 유지. 연결 영역의 번호와 이름이 부록 A 원문 명칭과 일치한다(16·19·37·43·45·47·50·51·52·54·58·59·60·63·65·66). L. AI·학습 기술 교차 규칙에 따라 45·47에 연결한 것도 적절하다."
+    }
+  ],
+  "category_fit": {
+    "ok": true,
+    "reassign_to": null
+  },
+  "scope_boundary": {
+    "ok": true,
+    "issues": []
+  },
+  "duplication": {
+    "ok": true,
+    "overlaps": [
+      "51. 인증·권한·격리 페이지의 옛 정의('영상·작업자 데이터 보호')가 이 영역의 출발점이다. 충돌은 없으며 10절에서 연결만 한다.",
+      "용어 '이동형 영상정보처리기기'(mobile-video-information-processing-device)는 용어집에 이미 있으므로 새로 등록하지 않고 링크한다. '등각 예측'(conformal-prediction)도 기존 용어로 링크한다."
+    ]
+  },
+  "terminology": {
+    "ok": true,
+    "conflicts": []
+  },
+  "quotation_check": {
+    "ok": true
+  },
+  "corrections_applied": [],
+  "corrections_rejected": [],
+  "required_fixes": [
+    "f2: '목욕실 등 사생활 침해 우려가 큰 장소에서의 촬영 금지' 구절을 [사실] 문장에서 떼어 [추정]으로 강등하고 '법령 원문 미확인'을 병기한다. 공개 장소 촬영 제한·예외·표시 방법 문장은 [사실][^ref-1137][^ref-588]으로 유지한다. 이유: 인용한 ref-1137·ref-588 어느 쪽에도 해당 구절이 없다.",
+    "f21: 9절의 '촬영 금지 장소(화장실·탈의실 등)' 예시를 '사생활 침해 우려 장소'로 바꾸고 해당 법령 조항은 원문 미확인이라고 적는다. 이유: 근거인 f2 구절이 강등됐다.",
+    "f5: '동의 없이 인공지능 학습에 쓰는 것은 … 허용되지 않는다'를 '가명·익명처리 없이 인공지능 학습에 쓰는 것은 예측 가능성이 있다고 보기 어렵고, 원본이 필요하면 규제샌드박스(실증특례)를 활용해야 한다'로 고치고, 자율주행차 등 고속 이동 기기 맥락임을 밝힌다. 이유: ref-588 원문 표현이 그렇다.",
+    "f16: 결과가 시뮬레이션(AI2-THOR·ProcTHOR, 120개 장면)에서 나왔음을 본문에 명시하고, '목표 범주 추정 정확도가 0.077'을 '목표 범주 macro-F1 이 1.000에서 0.077로'로 고친다. 이유: ref-1145 초록의 지표와 실험 환경.",
+    "f18: '처리의 적법 근거, 투명성, 정보주체 권리, 기술적 보호조치를 다룬다' 구절을 삭제하거나 [추정]·'원문 미확인'으로 표시하고, 지침 최종판 채택(2020-01)만 [사실]로 둔다. 이유: 연 EDPB 페이지가 이 목록을 뒷받침하지 않는다.",
+    "f11: 장애물 사진 삭제 조건을 '브랜드별로 다음 청소 때, 이용자가 조회한 뒤, 또는 24시간 후 삭제'로 고친다. 이유: 검증 검색 결과의 복수 매체 요약.",
+    "f8: '서비스 고도화 목적에 한해'의 '한해'를 빼거나 '목적으로'로 완화한다. 이유: ref-1139에서 한정 표현을 확인하지 못했다.",
+    "f1: 정의를 원문대로 '부착·거치하여'로 적는다. 이유: ref-1137 원문 문구.",
+    "ref-588: 발행일을 2024-10-14로 채운다(각주의 '미확인'을 바꾸고 reference_updates 의 published 도 같이 고친다). 이유: 김·장 뉴스레터 페이지 확인.",
+    "ref-1139: 발행일을 2024-02-08로 채운다. 이유: 세종 뉴스레터 페이지 확인.",
+    "ref-1146: 제목을 'The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting'로, 기관·저자를 'Sarfraz, B. M., Saplacan Lindblom, D., Baselizadeh, A., & Torresen, J. (HRI Companion '26)'로, 발행일을 2026-03-16으로 고치고, 각주 접근일 뒤 ' (원문 미열람)'과 reference_updates 의 source_unopened: true 를 유지한다. 이유: 검증 검색 결과의 ACM 서지.",
+    "ref-1136: 제목의 '(제목 일부만 확인)'을 지우고 '\"자율주행차·로봇 카메라 촬영 시 외부에 표시해야\"'로 적는다. 이유: 기사 페이지에서 전체 제목을 확인했다.",
+    "6절·9절: 기기 쪽 얼굴 검출·가림(f13·f14·f17)과 모바일앱 인증(f10)은 분류 원문 19장 '로봇 자체 지능·제어' 쪽의 연계 대상으로 서술하고, ROP 직접 범위는 f21 추정 범위(등록 정보 기록, 목적별 데이터 흐름·보유 기간, 출력 필드 축소, 거부 의사 전달)로 한정한다. 이유: 범위 경계 규칙 4.",
+    "용어집 후보 '영상정보 원본 활용 규제샌드박스 실증특례'의 정의에서 '안전조치를 조건으로'와 '한시적'을 빼거나 미확인으로 둔다. 이유: f8 출처에 안전조치 항목과 기간이 없다.",
+    "5절: 현장 유형 사례는 가정(f10~f12), 병원(f17, 모의 실험임 명시), 실외(f7)만 쓰고 물류창고·제조 공장·상업 시설·기타 사례는 찾지 못했다고 적는다. site_matrix_updates 는 이 세 칸(가정|N, 병원|N, 실외|N)만 낸다."
+  ],
+  "confidence": "medium",
+  "verification_note": "판정: 조건부 승인. 확인 21건, 미확인 2건(f2·f18 부분 뒷받침), 교차 확인 4건(f2·f3·f6·f11). 강등: f2 의 '목욕실 등 촬영 금지' 구절 사실 → 추정(인용 출처에 없음), f18 의 지침 다루는 범위 구절 사실 → 추정(원문 미확인). 원문 미열람 출처: ref-1146(ACM 403, 검색 결과로 서지 확인). 주의: 안내서(2024.9.)와 가명정보 처리 가이드라인의 세부 내용은 원문 PDF가 아니라 법률사무소 뉴스레터와 기사의 2차 요약에 근거한다. 기술 연구(f13~f16)는 프리프린트 초록 기준이고, f16 은 시뮬레이션 결과, f17 은 모의 진료실 실험이다. 로봇청소기 점검 사례(f10·f11)는 기사 근거다. 사람의 위치 정보 최소 수집·궤적 익명화 전용 자료는 찾지 못했다. 물류창고·제조 공장·상업 시설·기타 현장 사례는 없다. 이 영역의 기존 열린 질문 7건(oq-143·oq-171·oq-181·oq-185·oq-211·oq-214·oq-228)은 해결 제안 없이 열림으로 유지한다. 정정 요청 없음. 검증 검색 3회(리서치 15회와 합쳐 18/30)."
+}
