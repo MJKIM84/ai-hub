@@ -1,0 +1,65 @@
+{
+  "web_search_available": true,
+  "web_fetch_available": true,
+  "web_fetch_mirror_available": true,
+  "fetch_mode": "full",
+  "probe_url": "https://ref.gs1.org/epcis/",
+  "mirror_probe_url": "https://raw.githubusercontent.com/VDA5050/VDA5050/main/VDA5050_EN.md",
+  "checked_at": "2026-09-30 09:33:27 KST",
+  "details": {
+    "web_search": {
+      "available": true,
+      "detail": "EPCIS is GS1's standard for capturing and sharing supply-chain visibility event data, and version 2.0 adds JSON and REST API support.",
+      "elapsed_sec": 14.7,
+      "num_turns": 3,
+      "usage": {
+        "step": "probe-search",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 2340,
+        "cache_read_input_tokens": 5472,
+        "output_tokens": 491,
+        "cost_usd": 0.0526,
+        "seconds": 14.7,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch": {
+      "available": true,
+      "detail": "Fetched successfully; the page title is 'EPCIS and CBV Linked Data Model', but the raw title came back with an unfilled template placeholder.",
+      "elapsed_sec": 9.6,
+      "num_turns": 3,
+      "method": "claude -p --tools WebFetch",
+      "usage": {
+        "step": "probe-fetch",
+        "role": null,
+        "attempt": 1,
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 1481,
+        "cache_read_input_tokens": 5559,
+        "output_tokens": 317,
+        "cost_usd": 0.0213,
+        "seconds": 9.6,
+        "num_turns": 3,
+        "models": [
+          "claude-opus-5-5",
+          "claude-haiku-4-5-20251001"
+        ]
+      }
+    },
+    "web_fetch_mirror": {
+      "available": true,
+      "detail": "일반 열람 가능 또는 미러 점검 URL 없음"
+    },
+    "web_fetch_curl": {
+      "available": true,
+      "status": 200,
+      "detail": "curl 200"
+    }
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "run_id": "2026-09-30-03",
+  "outline": [
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 650,
+      "summary": "도면·BIM은 여러 제조사 로봇 지도를 묶는 공통 기준 좌표이자 문·승강기·충전 위치 같은 공용 자원 목록의 출발점이 될 수 있다. [추정][^ref-079][^ref-213]",
+      "planned_findings": [
+        "f22",
+        "f1",
+        "f8",
+        "f21",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 750,
+      "summary": "층 정렬 기준점, IFC 공간·공간 경계, 운송 요소, 점유 격자·포즈 그래프 지도, 설계–준공 편차, 도면 기준 지도 정합이 이 영역의 핵심 용어다. [사실][^ref-079][^ref-156][^ref-081]",
+      "planned_findings": [
+        "f3",
+        "f9",
+        "f10",
+        "f16",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 900,
+      "summary": "병원(타르투 대학병원 평면도 주석·격자 지도 정합·검체 운반)과 기타(대학 건물 BIM 기반 위치 추정 연구 시험, 연계 대상) 두 사례를 여섯 항목으로 정리하고 근거 없는 칸은 미확인으로 둔다. [사실][^ref-869][^ref-1017]",
+      "planned_findings": [
+        "f7",
+        "f8",
+        "f15"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1200,
+      "summary": "평면도 인식, BIM·CAD에서 로봇 지도로 변환, 축척 보정과 도면 기준 정합, 설계–준공 편차 확인의 네 갈래로 접근법을 정리한다. [추정][^ref-1015][^ref-081][^ref-079]",
+      "planned_findings": [
+        "f12",
+        "f13",
+        "f16",
+        "f18",
+        "f1",
+        "f2",
+        "f3",
+        "f5",
+        "f6",
+        "f19",
+        "f17",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 450,
+      "summary": "IFC 4.3의 IfcSpace·IfcTransportElement와 Open-RMF 교통 편집기·플릿 어댑터 좌표 변환이 이 영역과 직접 닿는다. [사실][^ref-156][^ref-079]",
+      "planned_findings": [
+        "f9",
+        "f10",
+        "f1",
+        "f6"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 500,
+      "summary": "CubiCasa5K·Raster-to-Vector·FloorPlanCAD·AI Hub 건축 도면 데이터와 BIM 기반 지도·위치 추정 연구, 병원 현장 시험이 대표 자료다. [사실][^ref-063][^ref-1019]",
+      "planned_findings": [
+        "f11",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f7"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 700,
+      "summary": "ROP는 도면 초안·축척·좌표 변환 등록·차이 표시와 사람 승인을 맡고, SLAM·위치 추정과 승강기 운행 제어, BIM 저작은 연계 대상으로 본다. [추정][^ref-153][^ref-1017]",
+      "planned_findings": [
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 650,
+      "summary": "8, 15, 16, 18, 22, 27, 28, 45, 55, 63번 영역(번호와 이름 함께)과 건축 도면 자동 인식 트랙에 연결한다. [추정][^ref-079]",
+      "planned_findings": [
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 600,
+      "summary": "oq-126·oq-193을 열림으로 유지하고 비주거 도면 인식 성능, AI Hub 라벨 범위, 정합 대응점 기준, 공공 BIM 인계 절차의 새 질문 4건을 싣는다.",
+      "planned_findings": [
+        "f12",
+        "f14",
+        "f6",
+        "f20"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합·편차 확인, 책임 경계, 연결 10개 영역, 열린 질문 6건), 13절 각주 15건, 프런트매터 갱신"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"6. 대표 접근법과 기술\" 절(1,924자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"4. 핵심 개념과 용어\" 절(1,094자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"8. 대표 연구와 자료\" 절(949자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"11. 열린 질문\" 절(880자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(825자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area14-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 14. 도면·BIM에서 지도 만들기 의 \"3. 왜 중요한가\" 절(747자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 14. 도면·BIM에서 지도 만들기 | 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합), 1차 조건부 승인 수정 13건 이행 | run 2026-09-30-03",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 14. 도면·BIM에서 지도 만들기: 영역 심화로 3~11절 작성(평면도 인식·BIM→지도 변환·도면 기준 정합, 병원 적용 사례)",
+    "category_recent": "2026-09-30 — 14. 도면·BIM에서 지도 만들기: 영역 심화로 3~11절 작성, 15. 지도·공간·위치 모델과 좌표 정합 역할을 나눔",
+    "area_recent": "2026-09-30 — 14. 도면·BIM에서 지도 만들기: 영역 심화 3~11절 신규 작성, 각주 15건, 새 열린 질문 4건"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "level-alignment-fiducial",
+      "term_ko": "층 정렬 기준점",
+      "term_en": "Fiducial (Level Alignment Fiducial)",
+      "definition": "기둥처럼 여러 층에서 수직으로 같은 위치에 있다고 기대되는 지점에 찍는 표식으로, 대응시킨 기준점들로 층 사이의 이동·회전·축척 변환을 계산하는 데 쓴다.",
+      "description": "Open-RMF 교통 편집기는 층마다 찍은 기준점을 대응시켜 층 사이 변환을 자동으로 계산한다.",
+      "related_areas": [
+        14,
+        15
+      ],
+      "sources": [
+        "ref-079"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "space-boundary",
+      "term_ko": "공간 경계",
+      "term_en": "Space Boundary (IfcRelSpaceBoundary)",
+      "definition": "IFC 에서 공간(IfcSpace)을 둘러싼 벽·슬래브 같은 물리적 요소나 가상 경계와 그 공간을 잇는 관계로, 공간의 범위와 인접 관계를 정의한다.",
+      "description": "IFC 4.3 개발 저장소(ifc4.3-main) 문서 기준이며 게시판(ADD2)과 문구가 다를 수 있다.",
+      "related_areas": [
+        14,
+        16
+      ],
+      "sources": [
+        "ref-156"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "as-planned-vs-as-built-deviation",
+      "term_ko": "설계–준공 편차",
+      "term_en": "As-planned vs As-built Deviation",
+      "definition": "설계 단계에서 만든 건물 모델과 실제 지어진 상태 사이의 차이 자체로, BIM 을 로봇 지도로 쓸 때 위치 추정 오차의 원인이 된다.",
+      "description": "스캔과 모델을 비교하는 방법인 스캔 대 BIM 비교(Scan-vs-BIM)와 달리, 이 용어는 비교 방법이 아니라 모델과 실제 사이의 차이를 가리킨다. BIM 과 현실의 차이(Scan-BIM 편차)는 가구·잡동사니와 이 설계–준공 차이에서 생긴다고 보고됐다.",
+      "related_areas": [
+        14,
+        16,
+        18
+      ],
+      "sources": [
+        "ref-081"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-079",
+      "org": "Open Robotics",
+      "title": "Traffic Editor - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 교통 편집기 장. 평면도 이미지 위 벽·문·승강기·차선·충전 위치 주석, 측정선으로 축척 설정, 기준점(fiducial)으로 층 정렬, 로봇 지도 레이어 정합을 설명한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-153",
+      "org": "Open Robotics",
+      "title": "Fleet Adapter Tutorial (integration_fleets_adapter_tutorial) - Programming Multiple Robots with ROS 2",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/integration_fleets_adapter_tutorial.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "플릿 어댑터 작성 튜토리얼. 로봇 좌표계와 RMF 좌표계의 대응 지점(reference_coordinates, 4개 이상 권장)으로 nudged 라이브러리가 회전·축척·이동 변환을 추정하는 방법을 설명한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-156",
+      "org": "buildingSMART International",
+      "title": "IfcSpace — IFC 4.3 documentation (IFC4.3.x-development, ifc4.3-main)",
+      "published": null,
+      "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcSpace.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "IFC 4.3 의 공간 요소 IfcSpace 정의(기능을 가진 경계 있는 면적·부피, 층 소속, 공간 경계 관계). 개발 브랜치 문서라 게시된 IFC 4.3 ADD2 판과 문구가 다를 수 있다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-213",
+      "org": "buildingSMART International",
+      "title": "IfcTransportElement — IFC 4.3 documentation (IFC4.3.x-development, ifc4.3-main)",
+      "published": null,
+      "url": "https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcProductExtension/Entities/IfcTransportElement.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "IFC 4.3 의 운송 요소 IfcTransportElement 정의. 승강기·에스컬레이터·무빙워크를 포함한다. 개발 브랜치 문서라 게시판과 문구가 다를 수 있다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-063",
+      "org": "Kalervo, A., Ylioinas, J., Häikiö, M., Karhu, A., & Kannala, J.",
+      "title": "CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis",
+      "published": "2019-04",
+      "url": "https://arxiv.org/abs/1904.01920",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "평면도 이미지 5,000장을 80개 이상 범주로 다각형 주석한 데이터셋과 다중 작업 CNN 평면도 해석 모델. arXiv 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1015",
+      "org": "Liu, C., Wu, J., Kohli, P., & Furukawa, Y. (ICCV 2017)",
+      "title": "Raster-to-Vector: Revisiting Floorplan Transformation",
+      "published": "2017",
+      "url": "https://art-programmer.github.io/floorplan-transformation.html",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "래스터 평면도를 접합점 검출 신경망과 정수 계획법으로 벡터 평면도로 바꾸는 방법. 약 90% 정밀도·재현율은 저자 보고. 저자 프로젝트 페이지 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-067",
+      "org": "Fan, Z., Zhu, L., Li, H., Chen, X., Zhu, S., & Tan, P. (ICCV 2021)",
+      "title": "FloorPlanCAD: A Large-Scale CAD Drawing Dataset for Panoptic Symbol Spotting",
+      "published": "2021-05",
+      "url": "https://arxiv.org/abs/2105.07147",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "주거·상업 건물 벡터 CAD 평면도 1만 장 이상, 30개 범주의 파놉틱 심볼 스포팅 데이터셋과 CNN–GCN 방법. arXiv 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1017",
+      "org": "Hendrikx, R. W. M., Pauwels, P., Torta, E., Bruyninckx, H. P. J., & van de Molengraft, M. J. G. (ICRA 2021)",
+      "title": "Connecting Semantic Building Information Models and Robotics: An application to 2D LiDAR-based localization",
+      "published": "2021",
+      "url": "https://research.tue.nl/en/publications/connecting-semantic-building-information-models-and-robotics-an-a/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "IFC BIM 의 의미 요소를 로봇 세계 모델로 바꿔 2D LiDAR 위치 추정에 쓰는 방법. 대형 대학 건물에서 시험. 에인트호번 공대 연구 포털 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-081",
+      "org": "Vega Torres, M. A., Braun, A., & Borrmann, A. (ECPPM 2022)",
+      "title": "Occupancy Grid Map to Pose Graph-based Map: Robust BIM-based 2D-LiDAR Localization for Lifelong Indoor Navigation in Changing and Dynamic Environments",
+      "published": "2022-09",
+      "url": "https://arxiv.org/abs/2308.05443",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "BIM 에서 구조 요소만의 2D 점유 격자 지도를 자동 생성해 포즈 그래프 지도로 바꾸고 Scan-BIM 편차에 강건한 위치 추정을 보인 연구. arXiv 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1019",
+      "org": "AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주)",
+      "title": "건축 도면 데이터",
+      "published": "2023-07-26",
+      "url": "https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "2022년 구축된 건축 도면 인공지능 학습용 데이터(48,033장, 구조·공간·객체 라벨과 OCR). 개방일 2023-07-26, 최종개방 2023-12-15. 데이터 소개 페이지를 열어 확인했다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-817",
+      "org": "모빌리오(Mobilio Robotics)",
+      "title": "[최초 공개] 산업용 순찰 로봇, 도면 연동과 센서 … (모빌리오 통합 대시보드 솔루션)",
+      "published": "2026-08-24",
+      "url": "https://mobilio.io/ko/%EB%AA%A8%EB%B9%8C%EB%A6%AC%EC%98%A4-%ED%86%B5%ED%95%A9-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%EC%86%94%EB%A3%A8%EC%85%98",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "산업용 순찰 로봇 웹 관제 솔루션 소개 글. LiDAR 지도와 CAD·BIM 도면의 기준점 정합 기능을 주장한다(벤더 주장, 독립 확인 없음). 제목 전체는 확인하지 못했다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-869",
+      "org": "Valner, R. 외 (Frontiers in Robotics and AI)",
+      "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+      "published": "2022-08-23",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.922835/full",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "타르투 대학병원에서 Open-RMF 기반 이기종 로봇 플릿으로 검체 운반을 시험한 현장 연구. 평면도 주석과 로봇 격자 지도 정합 절차를 기술한다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-083",
+      "org": "Zhang, J., Wu, S., Ma, X., & Schwertfeger, S. (arXiv)",
+      "title": "Generation of Indoor Open Street Maps for Robot Navigation from CAD Files",
+      "published": "2025-07",
+      "url": "https://arxiv.org/abs/2507.00552",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "건축 CAD 파일에서 로봇 항법용 계층형 위상·거리 OSM 실내 지도를 자동 생성하는 파이프라인(프리프린트, 2026-03 개정). arXiv 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-221",
+      "org": "Vega Torres, M. A., Braun, A., & Borrmann, A. (ISARC 2023)",
+      "title": "BIM-SLAM: Integrating BIM Models in Multi-session SLAM for Lifelong Mapping using 3D LiDAR",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.15870",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "BIM 에서 만든 세션 데이터를 다중 세션 SLAM 으로 실제 LiDAR 와 정렬하고 BIM 에 없는 요소를 검출하는 방법. ISARC 2023 발표, arXiv 게시 2024-08. 초록 기준.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1024",
+      "org": "엔지니어링데일리",
+      "title": "\"설계부터 100% 도입\" 건설산업 BIM 활성화 로드맵 공개",
+      "published": "2020-12-28",
+      "url": "https://www.engdaily.com/news/articleView.html?idxno=12613",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "국토교통부 건설산업 BIM 활성화 로드맵(설계부터 BIM 100% 도입, 조사·설계·발주·조달·시공·감리·유지관리 등 전 생애주기 적용, LH 공동주택 의무화 후 확대)을 전한 기사. 기사 승인일 2020-12-28, 국토교통부 공개일 2020-12-29. 국토교통부 원문은 열지 못했다.",
+      "cited_by": [
+        "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "Raster-to-Vector 의 약 90% 정밀도·재현율 같은 보고된 평면도 인식 성능이 병원·공장·물류창고 같은 비주거 시설 도면에서도 확인됐는가?",
+      "areas": [
+        14,
+        45
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "AI Hub 건축 도면 데이터의 라벨(구조 8종·공간 12종·객체 5종)에 충전 위치처럼 로봇 운영에 필요한 클래스가 들어 있는가, 비주거 건물 도면은 얼마나 포함되는가?",
+      "areas": [
+        14,
+        45
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "도면과 로봇 지도의 정합에 쓰는 대응점 수(Open-RMF 4개 이상 권장, 벤더 주장 3개 이상)와 허용 오차를 정한 공통 기준이나 검수 절차가 있는가?",
+      "areas": [
+        14,
+        15,
+        55
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "국내 공공건축 BIM 적용 확대로 만들어지는 IFC 모델을 준공 뒤 유지관리 단계에서 로봇 운영 지도로 넘겨받는 절차나 요구 수준(공간·문·승강기 정보)이 정해져 있는가?",
+      "areas": [
+        14,
+        22
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "기타",
+      "item": "작업 대상",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    },
+    {
+      "site_type": "기타",
+      "item": "예외·성과",
+      "link": "docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md#5-적용-사례-현장-유형-명시",
+      "title": "14. 도면·BIM에서 지도 만들기"
+    }
+  ],
+  "standards_updates": [],
+  "additional_research_requests": [
+    "5절 적용 사례: 물류창고·제조 공장·상업 시설에서 도면·BIM 기반 로봇 지도를 실제로 쓴 독립 출처 사례(벤더 주장 외)가 필요하다 — 현재 병원 1건과 기타(연구 시험) 1건뿐이다.",
+    "5절 병원 사례: 타르투 대학병원 시험의 시작 조건(검체 운반 요청 방식)과 완료·인계(수령 확인) 근거가 필요하다 — 두 칸을 미확인으로 두었다.",
+    "9·11절: 도면–로봇 지도 정합 결과를 누가 언제 승인·확정하는지(oq-126) 다룬 제품 문서·현장 절차 자료가 필요하다.",
+    "3절: 국토교통부 BIM 활성화 로드맵 원문 보도자료(2020-12-29)와 이후 이행 상황 자료가 필요하다 — 현재 기사 단독 출처라 [추정]으로 강등했다.",
+    "7절: IFC 4.3 ADD2 게시판(또는 ISO 16739-1:2024)의 IfcSpace·IfcTransportElement 문구 확인이 필요하다 — 현재 개발 저장소 문서 기준이다.",
+    "11절: 건설 현장 등 변하는 공간에서 로봇 지도와 BIM 의 동기화 주기·국내 사례(oq-193) 자료가 필요하다.",
+    "다음 실행 후보: 15. 지도·공간·위치 모델 페이지에 대응점 기반 좌표 변환(reference_coordinates, nudged) 반영, 45. 문서·도면·장면 이해 페이지에 CubiCasa5K·Raster-to-Vector·FloorPlanCAD·AI Hub 건축 도면 데이터 반영."
+  ],
+  "fixes_applied": [
+    "f20 강등 — 3절의 국토교통부 BIM 로드맵 문장을 [추정]으로 쓰고 '조사·설계·발주·조달·시공·감리·유지관리 등 전 생애주기', 'LH 공동주택'으로 고쳤으며 '2020-12 발표 기준이며 이후 이행 상황은 미확인'을 덧붙였다.",
+    "ref-1024 정정 — 13절 각주의 발행일을 2020-12-28, 제목을 '\"설계부터 100% 도입\" 건설산업 BIM 활성화 로드맵 공개'로 고치고 reference_updates 의 published 를 2020-12-28 로 넣었으며, 3절 문장에 기사 날짜(2020-12-28)와 2020-12 기준을 적었다.",
+    "ref-1019·f14 정정 — 13절 각주 발행일을 2023-07-26 으로, reference_updates 의 published 를 2023-07-26 으로 넣고, 8절 AI Hub 문장의 기준일을 '2023-12-15 최종개방 기준'으로 적었다.",
+    "f16 경계 — 6절에서 BIM→점유 격자·포즈 그래프 지도 생성은 접근법으로 쓰고, AMCL 대비 강건성은 별도 문장으로 로봇 자체 지능·제어 쪽 연구 결과이자 연계 대상이라고 밝혔으며, 9절 직접 범위에는 넣지 않고 연계 열에 '위치 추정과 그 성능'으로만 두었다.",
+    "Scan-BIM 편차 용어 — 4절에서 'Scan-BIM 편차'를 처음 쓰는 자리에 용어집 스캔 대 BIM 비교(Scan-vs-BIM) 링크를 달고, 설계–준공 편차가 비교 방법이 아니라 모델과 실제의 차이 자체임을 본문과 glossary_updates 정의·설명에서 구분했다.",
+    "f5·f6 중복 방지 — 6절 '축척 보정과 도면 기준 정합' 소절 첫머리에 도면을 기준 좌표로 쓰는 정합 절차로 한정한다고 밝히고 7절 표도 '도면 기준 좌표계 사이 변환'으로 적었으며, 좌표계 통합 일반론은 10절에서 15. 지도·공간·위치 모델로 연결만 했다.",
+    "5절 사례 칸 — 병원 사례의 시작 조건·완료·인계를 '미확인'으로 두고, 기타 사례는 상용 운영이 아닌 대학 건물 위치 추정 연구 시험이자 연계 대상임을 제목·서술에 밝히고 근거 없는 시작 조건·제약·완료·인계를 '미확인'으로 두었으며, site_matrix_updates 는 실제로 채운 칸(병원 4칸, 기타 3칸)만 냈다.",
+    "f19 — 6절 제품 사례로만 쓰고 '[추정] 벤더 주장'을 병기했으며, 5절 사례와 site_matrix_updates 근거로 쓰지 않았다.",
+    "f9·f10 — 7절 표 아래에 IFC 4.3 두 행이 buildingSMART 개발 저장소(ifc4.3-main) 문서 기준이며 게시된 IFC 4.3 ADD2 판과 문구가 다를 수 있음을 밝혔다.",
+    "f12 — 6절에서 약 90% 정밀도·재현율과 수십만 장 변환을 '저자들이 보고했으며 교차 확인되지 않은 저자 보고'로만 서술하고 일반화하지 않았다.",
+    "open_questions_new 1번 — '주로 주거용 도면 기준인데' 전제를 빼고 '보고된 평면도 인식 성능이 병원·공장·물류창고 같은 비주거 시설 도면에서도 확인됐는가?' 형식으로 11절과 open_question_updates 에 옮겼다.",
+    "open_questions_new 2번 — '승강기·계단'을 빼고 '충전 위치처럼 로봇 운영에 필요한 클래스'로 좁혀 11절과 open_question_updates 에 옮겼다.",
+    "oq-126·oq-193 — 해결로 바꾸지 않고 11절에 '상태: 열림'으로 싣고 확인된 근거와 아직 답하지 못한 부분을 한 문장씩 덧붙였으며, open_question_updates 에 상태 변경을 내지 않았다.",
+    "분량 초과 자동 분리: 14. 도면·BIM에서 지도 만들기 본문 9,434자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,887자"
+  ]
+}

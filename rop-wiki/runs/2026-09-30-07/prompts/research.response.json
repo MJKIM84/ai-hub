@@ -1,0 +1,831 @@
+{
+  "duration_api_ms": 393470,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.8396092,
+  "usage": {
+    "input_tokens": 24,
+    "cache_creation_input_tokens": 70385,
+    "cache_read_input_tokens": 1632691,
+    "output_tokens": 32646,
+    "output_tokens_details": {
+      "thinking_tokens": 9831
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 70385,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 24738,
+        "cache_read_input_tokens": 150528,
+        "cache_creation_input_tokens": 3162,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3162
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 24,
+      "outputTokens": 32646,
+      "cacheReadInputTokens": 1632691,
+      "cacheCreationInputTokens": 70385,
+      "webSearchRequests": 0,
+      "costUSD": 1.5426342,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9831,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 192115,
+      "outputTokens": 8972,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 6,
+      "costUSD": 0.296975,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 27,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-07\",\"date\":\"2026-09-30\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":44,\"area_name\":\"44. 로봇 기반 모델·언어 모델 계획\",\"category\":\"L. AI·학습 기술\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 로봇 기반 모델, 교차 구현체 학습, 체화 추론 용어 없음(VLA·LLM 에이전트·LLM-모듈로·불확실도 정렬은 용어집에 있음)\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 가정·제조 공장·물류창고 사례와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 어포던스 결합 계획, PDDL 변환, 다중 로봇 분해·배정, 오케스트레이터–행동 모델 분리 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — Open X-Embodiment 데이터셋, OpenVLA 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 0건\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"범용 로봇 모델과 언어 모델은 오케스트레이션의 무엇을 바꾸는가? [분류원문]\",\"시각–언어–행동(VLA) 모델 같은 로봇 기반 모델의 대표 모델·공개 데이터셋·오픈소스는 무엇이며, 서로 다른 로봇 사이의 학습 전이(교차 구현체 학습)는 어떻게 보고되는가? (섹션 4·6·7·8 겨냥)\",\"언어 모델로 작업을 계획·분해하는 대표 방법(스킬 가치 함수 결합, PDDL 변환 후 고전 계획기 사용, 다중 로봇 분해·연합·배정, 오케스트레이터–행동 모델 분리)은 무엇이며 어떤 결과를 보고하는가? (섹션 6·8 겨냥)\",\"언어 모델 계획의 한계(자체 검증 불가, 환각, 지연, 실행 계층 실패)와 이를 보완하는 외부 검증기·불확실도 기반 도움 요청 방법은 무엇인가? (섹션 3·6·11 겨냥)\",\"가정·제조 공장·물류창고·병원 등 현장에서 로봇 기반 모델·범용 로봇(휴머노이드)을 쓴 사례는 무엇이며 여섯 항목으로 어떻게 정리되는가? (섹션 5 겨냥)\",\"한국의 로봇 기반 모델·휴머노이드 정책과 연구 동향은 무엇인가? (섹션 3·8 겨냥, 한국 자료 우선)\",\"44. 로봇 기반 모델·언어 모델 계획에서 ROP가 직접 맡을 것과 로봇 제조사·모델 제공자에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Ahn 외의 SayCan(arXiv 2204.01691, 2022-04)은 대규모 언어 모델의 고수준 의미 지식에 사전 학습된 로봇 스킬의 가치 함수를 결합해, 언어 모델이 제안한 단계 가운데 현재 상황에서 실행 가능한 스킬을 고르게 함으로써 모바일 매니퓰레이터에서 길고 추상적인 자연어 지시를 수행하게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1053\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 스킬에 딸린 가치 함수로 언어를 물리 세계에 접지하고, 로봇을 언어 모델의 'hands and eyes'로 둔다. 모바일 매니퓰레이터에서 장기·추상 지시로 평가. v2(2022-08)에서 PaLM 결과·다국어 지시 추가. 초록에 과업 수·성공률 수치 없음.\",\"as_of\":\"2022-04-04\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"Brohan 외의 RT-2(arXiv 2307.15818, 2023-07)는 로봇 행동을 텍스트 토큰으로 표현해 로봇 궤적 데이터와 인터넷 규모 시각–언어 과제(시각 질의응답 등)로 사전 학습 시각–언어 모델을 함께 미세조정한 시각–언어–행동(VLA) 모델로, 6,000회 평가 시행에서 새 물체 일반화와 학습 데이터에 없던 의미 추론(가장 작은·가까운 물체 고르기 등)을 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1054\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 행동을 텍스트 토큰으로 표현해 자연어 토큰과 같은 방식으로 학습 세트에 넣는다. 6,000 evaluation trials, 새 물체 일반화, 사고 사슬(chain-of-thought)로 다단계 의미 추론.\",\"as_of\":\"2023-07-28\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"Open X-Embodiment 협업(arXiv 2310.08864, 2023-10)은 21개 기관이 22종 로봇에서 모은 527개 스킬·160,266개 과업의 데이터를 표준 형식으로 합쳤고, 이 데이터로 학습한 대용량 모델 RT-X 가 다른 로봇의 경험을 활용해 여러 로봇의 능력을 높이는 양의 전이를 보였다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1055\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 21 institutions, 22 robots, 527 skills, 160,266 tasks. RT-X 가 positive transfer 를 보이며 다른 플랫폼의 경험으로 여러 로봇의 능력을 개선. 최신 개정 2025-05-14.\",\"as_of\":\"2023-10-13\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"Kim 외의 OpenVLA(arXiv 2406.09246, 2024-06)는 실제 로봇 시연 97만 건으로 학습한 70억 매개변수 공개 VLA 모델로, 29개 과업에서 비공개 RT-2-X(550억 매개변수)보다 절대 과업 성공률이 16.5%p 높았고, 저랭크 적응(LoRA)·양자화로 소비자용 GPU 에서 미세조정할 수 있으며 체크포인트·미세조정 노트북·PyTorch 코드를 공개했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1056\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 970k real-world robot demonstrations, Llama 2 + DINOv2·SigLIP 시각 인코더, RT-2-X(55B) 대비 29개 과업 절대 성공률 +16.5%, 매개변수 7배 적음, LoRA·양자화 미세조정, 체크포인트·코드 공개. 모델 라이선스는 확인하지 않음.\",\"as_of\":\"2024-06-13\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f5\",\"claim\":\"Physical Intelligence 외의 π0.5(arXiv 2504.16054, 2025-04)는 여러 로봇·웹 데이터·의미적 하위 과업 예측을 함께 학습한 VLA 모델로, 학습 데이터에서 제외된 새 가정집에서 부엌·침실 정리 같은 장기·정교한 조작 과업을 종단 간 학습 시스템으로 수행했다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1057\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 이질적 과업 공동 학습(co-training)으로 일반화, 학습에 없던 새 가정에서 kitchen·bedroom 정리 같은 장기·정교 조작 수행. 관측·언어 지시·물체 검출·의미적 하위 과업 예측·저수준 동작을 결합.\",\"as_of\":\"2025-04-22\",\"site_type\":\"가정\",\"flow_item\":\"작업 대상\"},{\"id\":\"f6\",\"claim\":\"Google DeepMind 의 Gemini Robotics 1.5 보고서(arXiv 2510.03342, 2025-10)는 체화 추론 모델 Gemini Robotics-ER 1.5 를 오케스트레이터로 두어 지시를 실행 단계로 분해하고 성공 여부를 판정해 다음 단계로 넘기며 웹 검색 같은 디지털 도구를 쓰게 하고, VLA 모델 Gemini Robotics 1.5 를 자연어 명령을 받는 행동 도구로 두는 에이전트 구조를 제시하며, 동작 전이(Motion Transfer)로 ALOHA·양팔 Franka·Apollo 휴머노이드의 데이터를 함께 학습한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1062\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"본문(HTML): 오케스트레이터가 과업 분해, 'performs success detection to decide when to switch to the next step', 도구 사용, 진행도 추정을 맡고 VLA 는 오케스트레이터가 부르는 도구로 동작. 동작 전이 대상은 ALOHA·Bi-arm Franka·Apollo.\",\"as_of\":\"2025-10-02\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f7\",\"claim\":\"Liu 외의 LLM+P(arXiv 2304.11477, 2023-04)는 자연어 문제 기술을 언어 모델로 PDDL 로 바꾸고 고전 계획기로 해를 구한 뒤 다시 자연어로 옮기는 방식으로, 논문이 정한 벤치마크 문제 대부분에서 최적해를 낸 반면 언어 모델 단독은 대부분의 문제에서 실행 가능한 계획조차 내지 못했다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1058\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 자연어→PDDL→고전 계획기→자연어의 3단계. 'LLM+P is able to provide optimal solutions for most problems, while LLMs fail to provide even feasible plans for most problems.' 벤치마크 도메인 수는 초록에 없음.\",\"as_of\":\"2023-04-22\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f8\",\"claim\":\"Kambhampati 외(ICML 2024, arXiv 2402.01817)는 자기회귀 언어 모델이 스스로 계획하거나 자기 검증을 할 수 없다고 보고, 언어 모델을 '근사적 지식 원천'으로 쓰되 외부 모델 기반 검증기와 양방향으로 묶는 LLM-모듈로(LLM-Modulo) 프레임워크를 제안한다.\",\"tag\":\"의견\",\"source_ids\":[\"ref-1059\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록(입장 논문): 'auto-regressive LLMs cannot, by themselves, do planning or self-verification'. 언어 모델을 universal approximate knowledge sources 로 보고 외부 검증기와 결합, 검증용 모델 획득에도 언어 모델을 쓴다.\",\"as_of\":\"2024-02-02\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f9\",\"claim\":\"Ren 외의 KnowNo(CoRL 2023, arXiv 2307.01928)는 등각 예측(conformal prediction)으로 언어 모델 계획기의 불확실도를 재어 모호할 때만 사람에게 도움을 요청하게 함으로써, 모델 미세조정 없이 과업 완료에 통계적 보장을 주면서 사람 도움을 최소화했다고 시뮬레이션과 실제 로봇 과업에서 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1060\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'confidently hallucinated predictions' 문제를 다루며, 공간·수치·선호·언어 모호성이 있는 다단계 계획에서 과업 완료의 통계적 보장과 사람 도움 최소화, 미세조정 불필요.\",\"as_of\":\"2023-07-04\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f10\",\"claim\":\"Kannan 외의 SMART-LLM(IROS 2024, arXiv 2309.10062)은 프로그램 형태의 언어 모델 프롬프트로 상위 지시를 작업 분해·연합 형성·작업 배정의 세 단계를 거쳐 다중 로봇 실행 계획으로 바꾸며, 지시 복잡도 4범주의 벤치마크를 만들어 시뮬레이션과 실제 로봇으로 검증했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1061\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 'task decomposition, coalition formation, and task allocation, all guided by programmatic LLM prompts', few-shot 프롬프트, 4개 복잡도 범주 벤치마크, 시뮬레이션·실로봇 검증. 정량 결과는 초록에 없음.\",\"as_of\":\"2023-09-18\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f11\",\"claim\":\"Li 외의 다중 로봇 시스템용 언어 모델 조사 논문(arXiv 2502.03814, 2025-02, 2026-05 v5)은 적용을 상위 작업 배정·중간 수준 경로 계획·하위 동작 생성·사람 개입의 네 수준으로 나누고, 수학적 추론 한계·환각·지연·견고한 벤치마크 부재를 적용의 제약으로 든다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1063\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: high-level task allocation, mid-level motion planning, low-level action generation, human intervention 의 네 범주. 적용 분야는 가정 로봇·건설·편대 제어·표적 추적·로봇 게임. 과제는 수학적 추론·환각·지연·벤치마크.\",\"as_of\":\"2025-02-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f12\",\"claim\":\"Bruno·Sim·Hagiwara(arXiv 2609.29043, 2026-09)는 지시 분류와 행동 생성을 두 단계로 나눈 언어 모델 연쇄 계획으로 추론당 프롬프트 길이를 약 45% 줄이고 로컬 모델의 계획 성공을 최대 37%p 높였지만, Toyota HSR 실제 로봇 실험에서는 10개 과업 중 6개만 끝까지 성공해 실행 계층 실패가 남은 주 병목이었다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1051\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 약 45% 프롬프트 길이 감소, 로컬 모델 +37%p, 실로봇(Toyota Human Support Robot)에서 6/10 과업 완전 성공, 'execution-layer failures identified as the primary remaining bottleneck'. IEEE GCCE 2026 채택. (재인용: 2026-09-30-06)\",\"as_of\":\"2026-09-24\",\"site_type\":null,\"flow_item\":\"예외·성과\"},{\"id\":\"f13\",\"claim\":\"산업통상자원부는 2025-04-10 로봇 기업·부품 기업·AI 연구진·수요 기업이 참여하는 휴머노이드 연구·개발 연합체 'K-휴머노이드 연합'을 출범시켰다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1064\",\"ref-1065\"],\"cross_checked\":true,\"confidence\":\"medium\",\"evidence_excerpt\":\"정책브리핑 보도자료(2025-04-10, 산업통상자원부) 제목 'K-휴머노이드 연합 출범'. 메트로신문 같은 날 기사가 산업부 주최 출범과 약 40개 단체 참여를 적음. 참여 기관 수는 기사마다 달라(약 40개, 50여 곳) 확정하지 않음.\",\"as_of\":\"2025-04-10\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"메트로신문 보도에 따르면 K-휴머노이드 연합에서 서울대 AI 연구소·KAIST·고려대 등이 2028년까지 로봇 AI 파운데이션 모델을 구축하고, 정부는 2030년까지 민관 합산 1조 원 이상 투자와 제조업 환경을 모사한 실증 기반 마련을 계획한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1065\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"기사(2025-04-10): 로봇 AI 파운데이션 모델 2028년까지 구축(서울대 AI 연구소·KAIST·고려대 등), 민관 1조 원 이상(2025~2030), 제조업 모사 실증 인프라, 무게 60kg 이하·자유도 50 이상 목표. 정책브리핑 본문에서는 이 수치를 확인하지 못함(첨부 문서 미열람).\",\"as_of\":\"2025-04-10\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"BMW 그룹 발표에 따르면 제조 공장인 미국 Spartanburg 공장에서 Figure 02 휴머노이드가 차체 용접용 판금 부품 삽입을 맡았고, 후속 Figure 03 은 물류 구역에서 용기에 섞여 들어온 부품을 집어 순서 대차에 정렬해 조립 공정에 순서대로(JIS) 공급하는 일을 맡으며 자동 견인 열차·Smart Transport Robot 과 부품 전달을 연동한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1066\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"BMW 보도자료(2026-06-25): Figure 02 는 sheet-metal part insertion for welding, Figure 03 은 미분류 부품을 sequencing trolleys 에 정렬하는 just in sequence 공급, tugger train·Smart Transport Robot 연동. 사용된 AI 모델 이름은 보도자료에 없음.\",\"as_of\":\"2026-06-25\",\"site_type\":\"제조 공장\",\"flow_item\":\"작업 대상\"},{\"id\":\"f16\",\"claim\":\"같은 BMW 발표는 Figure 02 가 Spartanburg 공장에서 10개월 동안 운영되며 BMW X3 30,000대 이상의 생산을 지원했다고 밝힌다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1066\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: BMW 보도자료가 Figure 02 가 ten months 동안 30,000대 이상 X3 생산을 지원했다고 적음. 검색 요약의 다른 기사들은 11개월·1,250시간·부품 90,000개 이상으로 적어 기간이 엇갈림(기사 원문 미열람).\",\"as_of\":\"2026-06-25\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\",\"vendor_claim\":true},{\"id\":\"f17\",\"claim\":\"GXO 는 2024-06-27 Agility Robotics 와 다년 서비스형 로봇(RaaS) 계약을 맺고, 물류창고인 SPANX 물류센터에서 2023년 개념 검증에 이어 이족 휴머노이드 Digit 가 자율이동로봇(AMR)에서 토트를 받아 컨베이어에 올리는 반복 작업을 맡게 했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1067\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"GXO 보도자료(2024-06-27): SPANX 시설, Digit 가 AMR 에서 토트를 옮겨 컨베이어에 올림, RaaS 계약, 2023 개념 검증 선행, 기존 AMR·협동로봇과 함께 운영. 흐름 단계는 출하 전 운반 공정으로 보이나 보도자료가 명시하지 않음.\",\"as_of\":\"2024-06-27\",\"site_type\":\"물류창고\",\"flow_item\":\"수행 자원\"},{\"id\":\"f18\",\"claim\":\"같은 GXO 발표는 Agility 의 클라우드 자동화 플랫폼 Agility Arc 가 시설 지도 작성·작업 흐름 정의부터 운영 관리·문제 해결까지 Digit 운영을 조율한다고 적지만, 로봇 기반 모델이나 언어 모델의 사용은 언급하지 않는다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1067\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: Agility Arc 가 'facility mapping and workflow definition to operational management and troubleshooting'을 맡는다고 보도자료가 적음. AI·언어 모델 언급 없음.\",\"as_of\":\"2024-06-27\",\"site_type\":\"물류창고\",\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f19\",\"claim\":\"확인한 자료를 종합하면 핵심 질문(범용 로봇 모델과 언어 모델이 오케스트레이션의 무엇을 바꾸는가)에 대해, 로봇 쪽에서는 여러 로봇 데이터로 학습한 VLA 가 자연어 수준 명령을 받아 저수준 동작을 스스로 만들며(f2~f6) 오케스트레이터에 넘기는 작업 단위가 좌표·경로에서 자연어·스킬 수준으로 올라가고, 플랫폼 쪽에서는 언어 모델이 지시를 분해·배정 계획으로 바꾸지만(f1·f7·f10) 단독 계획·자기 검증이 불안정하므로(f8·f11·f12) 형식 계획기·외부 검증기·불확실도 기반 도움 요청·성공 판정을 계획과 실행 사이에 두는 구조가 공통으로 제시되는 것으로 보인다(f6·f7·f9).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1054\",\"ref-1055\",\"ref-1056\",\"ref-1057\",\"ref-1062\",\"ref-1053\",\"ref-1058\",\"ref-1061\",\"ref-1059\",\"ref-1063\",\"ref-1051\",\"ref-1060\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1~f12 종합. 단일 출처 주장들의 종합이며 현장 운영 규모의 검증 자료는 찾지 못함.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"확인한 자료를 종합하면 이 영역이 중요한 까닭은, 공개 데이터셋과 공개 VLA 모델로 여러 제조사 로봇이 같은 기반 모델을 쓸 수 있게 되고(f3·f4), 휴머노이드가 제조 공장·물류창고 실작업에 들어오며(f15·f17) 국내에서도 로봇 AI 파운데이션 모델에 정책 투자가 이뤄지는 반면(f13·f14), 언어 모델 계획은 환각·지연·실행 실패 같은 한계가 보고되어(f11·f12) 이종 로봇 오케스트레이션이 이를 어떻게 받아들일지 정해야 하기 때문이다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1055\",\"ref-1056\",\"ref-1066\",\"ref-1067\",\"ref-1064\",\"ref-1065\",\"ref-1063\",\"ref-1051\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f3·f4·f11~f15·f17 종합.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"확인한 자료를 종합하면 44. 로봇 기반 모델·언어 모델 계획에서 ROP 가 직접 맡을 범위는 언어 모델이 만든 작업 계획의 표현과 형식 계획기·능력 모델에 비춘 사전 검증(f7·f8), 불확실할 때 사람 확인을 요청하는 기준(f9), 다중 로봇 분해·배정 결과의 수용(f10), 로봇 기반 모델을 탑재한 로봇에 자연어·스킬 수준 명령을 보내고 성공 판정·진행 상태를 돌려받는 인터페이스(f6·f12)다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1058\",\"ref-1059\",\"ref-1060\",\"ref-1061\",\"ref-1062\",\"ref-1051\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f6~f10·f12 종합. 분류 원문 4장 주석(사람이 확인·승인한 계획만 실행)과 같은 방향.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"연계 대상: 분류 원문 19장 기준으로 VLA 모델의 학습과 저수준 동작 생성(f2·f4·f5·f6), 휴머노이드의 파지·조작(f15·f17)은 로봇 자체 지능·제어에 속해 로봇 제조사·모델 개발사에 맡기고, 이종 제조사를 잇는 ROP 는 이들이 제공하는 명령 인터페이스·실행 조건·성공 판정 신호를 받는 쪽을 맡을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1054\",\"ref-1056\",\"ref-1057\",\"ref-1062\",\"ref-1066\",\"ref-1067\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"원문 19장 '로봇 자체 지능·제어' 경계(센서 인식·파지·모터·관절 제어는 연계 대상)에 f2·f4~f6·f15·f17 을 대응시킨 추정.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"이 영역은 자연어 지시를 계획으로 바꾸는 12. 채팅으로 업무 지시·오케스트레이션(f7·f10)과 13. 대화형 기능의 신뢰·기반(f8·f9), 계획 표현의 24. 작업·워크플로 모델링(f7), 다중 로봇 배정의 25. 작업 배정 — MRTA(f10·f11), 스킬 가치 함수·능력 표현의 5. 로봇 능력·작업 표현(f1·f6), 교차 구현체 학습의 4. 이기종 로봇 등록(f3), 실행 실패의 29. 명령·작업 실행의 신뢰성(f12), 도움 요청의 31. 사람–로봇 협업(f9), AI 결과 실행 기준의 47. AI·학습·적응과 모델 운영(f8·f9), 벤치마크의 54. 시험·형식 검증·벤치마크(f11), 업체·정책 동향의 1. 기술·시장·업체 동향(f13~f17), 적용 현장인 61. 물류창고(f17)·62. 제조 공장(f15)·65. 가정·공동주택(f5)과 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1058\",\"ref-1061\",\"ref-1059\",\"ref-1060\",\"ref-1063\",\"ref-1053\",\"ref-1062\",\"ref-1055\",\"ref-1051\",\"ref-1064\",\"ref-1066\",\"ref-1067\",\"ref-1057\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1~f17 에서 도출한 영역 연결. 분류 원문 4장 주석의 '업무 지시는 25·26번' 짝 규칙과 13장 교차 규칙을 따름.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1053\",\"org\":\"Ahn, M., Brohan, A., Brown, N. 외 (arXiv)\",\"title\":\"Do As I Can, Not As I Say: Grounding Language in Robotic Affordances\",\"published\":\"2022-04\",\"url\":\"https://arxiv.org/abs/2204.01691\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"SayCan. 언어 모델의 고수준 계획을 사전 학습 스킬의 가치 함수로 접지해 모바일 매니퓰레이터의 장기 자연어 지시를 수행한다. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1054\",\"org\":\"Brohan, A., Brown, N., Carbajal, J. 외 (arXiv)\",\"title\":\"RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control\",\"published\":\"2023-07\",\"url\":\"https://arxiv.org/abs/2307.15818\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"행동을 텍스트 토큰으로 표현해 시각–언어 모델을 로봇 데이터와 웹 데이터로 함께 미세조정한 VLA 모델. 6,000회 평가 시행. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1055\",\"org\":\"Open X-Embodiment Collaboration (arXiv)\",\"title\":\"Open X-Embodiment: Robotic Learning Datasets and RT-X Models\",\"published\":\"2023-10\",\"url\":\"https://arxiv.org/abs/2310.08864\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"21개 기관·22종 로봇·527개 스킬·160,266개 과업의 표준화 데이터셋과 교차 구현체 모델 RT-X. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1056\",\"org\":\"Kim, M. J., Pertsch, K., Karamcheti, S. 외 (arXiv)\",\"title\":\"OpenVLA: An Open-Source Vision-Language-Action Model\",\"published\":\"2024-06\",\"url\":\"https://arxiv.org/abs/2406.09246\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"실제 로봇 시연 97만 건으로 학습한 70억 매개변수 공개 VLA. RT-2-X 대비 29개 과업 절대 성공률 +16.5%p, LoRA 미세조정, 체크포인트·코드 공개. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1057\",\"org\":\"Physical Intelligence, Black, K., Brown, N. 외 (arXiv)\",\"title\":\"π0.5: a Vision-Language-Action Model with Open-World Generalization\",\"published\":\"2025-04\",\"url\":\"https://arxiv.org/abs/2504.16054\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"이질적 데이터 공동 학습 VLA 로 학습에 없던 새 가정집에서 부엌·침실 정리 같은 장기 조작을 수행. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1058\",\"org\":\"Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P. (arXiv)\",\"title\":\"LLM+P: Empowering Large Language Models with Optimal Planning Proficiency\",\"published\":\"2023-04\",\"url\":\"https://arxiv.org/abs/2304.11477\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"자연어 문제를 PDDL 로 바꿔 고전 계획기로 풀고 자연어로 되돌리는 방법. 언어 모델 단독 대비 최적해 비율 향상 보고. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1059\",\"org\":\"Kambhampati, S., Valmeekam, K., Guan, L. 외 (ICML 2024, arXiv)\",\"title\":\"LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks\",\"published\":\"2024-02\",\"url\":\"https://arxiv.org/abs/2402.01817\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"자기회귀 언어 모델은 단독으로 계획·자기 검증을 못 한다는 입장과 외부 검증기와 결합하는 LLM-모듈로 프레임워크 제안(PMLR 235). 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1060\",\"org\":\"Ren, A. Z., Dixit, A., Bodrova, A. 외 (CoRL 2023, arXiv)\",\"title\":\"Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners\",\"published\":\"2023-07\",\"url\":\"https://arxiv.org/abs/2307.01928\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"KnowNo. 등각 예측으로 언어 모델 계획기의 불확실도를 재어 필요할 때만 사람 도움을 요청, 과업 완료의 통계적 보장. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1061\",\"org\":\"Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C. (IROS 2024, arXiv)\",\"title\":\"SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models\",\"published\":\"2023-09\",\"url\":\"https://arxiv.org/abs/2309.10062\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"작업 분해·연합 형성·작업 배정 3단계를 언어 모델 프롬프트로 수행하는 다중 로봇 계획, 4범주 벤치마크와 시뮬레이션·실로봇 검증. 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1062\",\"org\":\"Gemini Robotics Team, Google DeepMind (arXiv)\",\"title\":\"Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer\",\"published\":\"2025-10\",\"url\":\"https://arxiv.org/abs/2510.03342\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"체화 추론 모델(ER 1.5)을 오케스트레이터로, VLA(GR 1.5)를 행동 도구로 두는 에이전트 구조와 ALOHA·양팔 Franka·Apollo 간 동작 전이. 초록과 HTML 본문 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":\"https://arxiv.org/html/2510.03342\"},{\"id\":\"ref-1063\",\"org\":\"Li, P., An, Z., Abrar, S., & Zhou, L. (arXiv)\",\"title\":\"Large Language Models for Multi-Robot Systems: A Survey\",\"published\":\"2025-02\",\"url\":\"https://arxiv.org/abs/2502.03814\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"다중 로봇 시스템의 언어 모델 적용을 작업 배정·경로 계획·동작 생성·사람 개입으로 분류하고 환각·지연·벤치마크 부재 등 과제를 정리한 조사 논문(2026-05 v5). 초록 페이지 열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1064\",\"org\":\"산업통상자원부 (대한민국 정책브리핑)\",\"title\":\"K-휴머노이드 연합 출범\",\"published\":\"2025-04-10\",\"url\":\"https://www.korea.kr/briefing/pressReleaseView.do?newsId=156683522\",\"type\":\"정부·연구기관\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"산업통상자원부 보도자료 게시 페이지. 연합 출범 사실과 제조·물류 실증 계획 언급까지만 본문에서 확인했고 세부 수치는 첨부 문서(미열람)에 있다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1065\",\"org\":\"메트로신문\",\"title\":\"K-휴머노이드 연합 공식 출범…2030년 휴머노이드 최강국 목표\",\"published\":\"2025-04-10\",\"url\":\"https://www.metroseoul.co.kr/article/20250410500722\",\"type\":\"기사\",\"reliability\":\"low\",\"accessed\":\"2026-09-30\",\"summary\":\"K-휴머노이드 연합 출범 기사. 약 40개 단체 참여, 2028년까지 로봇 AI 파운데이션 모델 구축, 2030년까지 민관 1조 원 이상 투자 계획을 전한다.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1066\",\"org\":\"BMW Group\",\"title\":\"BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg\",\"published\":\"2026-06-25\",\"url\":\"https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"BMW Spartanburg 공장의 Figure 02 판금 부품 삽입 운영 결과와 Figure 03 부품 순서 정렬(JIS) 물류 투입 계획을 알리는 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1067\",\"org\":\"GXO Logistics\",\"title\":\"GXO signs industry-first multi-year agreement with Agility Robotics\",\"published\":\"2024-06-27\",\"url\":\"https://gxo.com/news_article/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics/\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"SPANX 물류센터에서 Digit 휴머노이드가 AMR 의 토트를 컨베이어에 옮기는 RaaS 다년 계약과 Agility Arc 플랫폼 조율을 알리는 보도자료.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1051\",\"org\":\"Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv)\",\"title\":\"Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots\",\"published\":\"2026-09\",\"url\":\"https://arxiv.org/abs/2609.29043\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"두 단계 언어 모델 연쇄 계획으로 프롬프트 길이를 줄여 로컬 모델 계획 성공을 높이고, Toyota HSR 실로봇에서 실행 계층 실패가 주 병목임을 보고. 초록 페이지 재열람.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f20(왜 중요한가), f19(핵심 질문 답, 추정) / 섹션 4: VLA·행동 토큰화 f2, 교차 구현체 학습 f3, 체화 추론·오케스트레이터 f6, 어포던스 접지 f1, LLM-모듈로 f8, 불확실도 정렬·등각 예측 f9 / 섹션 5: 가정 — f5(작업 대상: 새 집의 부엌·침실), 제조 공장 — f15(작업 대상)·f16(예외·성과, 벤더 주장 병기, 기간 불일치 명시), 물류창고 — f17(수행 자원)·f18(Agility Arc 조율, 벤더 주장 병기, 기반 모델 사용 미확인). 병원·상업 시설·실외 사례는 찾지 못함을 명시 / 섹션 6: 스킬 가치 함수 결합 f1, PDDL 변환과 고전 계획기 f7, 다중 로봇 분해·연합·배정 f10, 오케스트레이터–VLA 분리 f6, 불확실도 기반 도움 요청 f9, 연쇄 계획과 실행 계층 실패 f12, 외부 검증기 f8 / 섹션 7: Open X-Embodiment 데이터셋 f3, OpenVLA f4 / 섹션 8: f1~f12, 국내 정책 f13·f14 / 섹션 9: f21(직접 범위), f22(연계 대상) / 섹션 10: f23 — 1, 4, 5, 12, 13, 24, 25, 29, 31, 47, 54, 61, 62, 65 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 47. AI·학습·적응과 모델 운영 페이지에 f8·f9 반영, 12. 채팅으로 업무 지시·오케스트레이션 페이지에 f7·f10 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"로봇 기반 모델\",\"term_en\":\"Robot Foundation Model\",\"definition\":\"여러 로봇·과업·웹 데이터로 대규모 사전 학습해 미세조정이나 지시만으로 다양한 로봇 과업에 쓰이도록 만든 범용 모델로, 시각–언어–행동 모델이 대표적이다.\"},{\"term_ko\":\"교차 구현체 학습\",\"term_en\":\"Cross-embodiment Learning\",\"definition\":\"형태·센서·구동기가 다른 여러 로봇의 데이터를 한 모델에 함께 학습시켜 한 로봇의 경험이 다른 로봇의 능력 향상으로 이어지게 하는 학습 방식이다.\"},{\"term_ko\":\"체화 추론\",\"term_en\":\"Embodied Reasoning\",\"definition\":\"물리 환경의 시각·공간 정보를 이해해 과업을 계획·분해하고 진행도와 성공 여부를 판단하는 추론 능력으로, 로봇 오케스트레이터 역할의 모델에 요구된다.\"},{\"term_ko\":\"행동 토큰화\",\"term_en\":\"Action Tokenization\",\"definition\":\"로봇의 연속 동작 명령을 이산 토큰으로 바꿔 언어 모델이 텍스트 토큰과 같은 방식으로 동작을 출력하게 하는 표현 방법이다.\"}],\"open_questions_new\":[\"로봇 기반 모델(VLA)을 탑재한 이종 제조사 로봇의 능력을 ROP 가 등록할 때 받아들일 자연어 명령 범위·실행 조건·성공 판정 신호를 기술하는 표준이나 공개 사례가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 5. 로봇 능력·작업 표현 | 근거: f6 | 종류: 일반\",\"물류창고·제조 공장의 휴머노이드 실배치(GXO SPANX, BMW Spartanburg)에서 로봇 기반 모델·언어 모델이 실제로 어느 계층(동작 생성·작업 계획·관제)에 쓰였는지 공개한 자료가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 61. 물류창고, 62. 제조 공장 | 근거: f18 | 종류: 일반\",\"설비 연동·다중 로봇·시간 제약이 있는 현장 조건에서 언어 모델 작업 계획의 성공률과 실행 성공률을 함께 비교하는 공통 벤치마크가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 54. 시험·형식 검증·벤치마크 | 근거: f11 | 종류: 일반\",\"K-휴머노이드 연합의 로봇 AI 파운데이션 모델 개발이 이종 로봇 관제 플랫폼과의 연동 인터페이스나 공개 여부를 다루는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 1. 기술·시장·업체 동향 | 근거: f14 | 종류: 일반\",\"병원 현장에서 언어 모델 기반 작업 계획·오케스트레이션을 시뮬레이션이 아닌 실제 운영에 적용하고 결과를 보고한 사례가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 63. 병원·의료 | 근거: f12 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":16,\"cross_checked_count\":1,\"unverified\":[\"f1·f2·f3·f4·f5·f7·f9·f10·f11·f12 는 논문 초록 기준이며 본문 실험 조건 미확인(f6 만 HTML 본문 일부 열람)\",\"f1 SayCan 의 과업 수·성공률 수치는 초록에 없어 넣지 않음\",\"f4 OpenVLA 모델 가중치 라이선스 미확인(arXiv 페이지의 CC BY 4.0 은 논문 라이선스일 수 있어 넣지 않음)\",\"f13 참여 기관 수: 메트로신문 약 40개, 검색 요약의 다른 기사 50여 곳으로 엇갈려 확정하지 않음\",\"f14 투자 규모·목표 연도는 기사 1건 기준이며 정책브리핑 첨부 보도자료(HWP·PDF) 미열람\",\"f16 Figure 02 운영 기간: BMW 보도자료 10개월, 검색 요약의 기사들 11개월·1,250시간으로 엇갈림(기사 원문 미열람)\",\"f17 GXO 배치의 물류창고 흐름 단계(출하 등)는 보도자료가 명시하지 않음\",\"병원 LLM 오케스트레이션 논문(MDPI Applied Sciences 16(11):5320)은 403 으로 열지 못해 넣지 않음\",\"SayCan·RT-2 등 초기 연구의 동료심사 게재판(CoRL 등)과 arXiv 판의 수치 차이 미확인\"],\"scope_violations\":[\"f2·f4·f5·f6: VLA 의 저수준 동작 생성은 원문 19장의 로봇 자체 지능·제어(연계 대상)에 해당하므로 로봇 기반 모델 동향의 근거로만 쓰고 f22 에서 연계 대상으로 구분함\",\"f15·f17: 휴머노이드의 파지·조작은 로봇 제조사 영역이며, ROP 관점은 자동 견인 열차·AMR·컨베이어와의 인계와 조율(f15·f17·f18)만 다룸\",\"f14: 휴머노이드 하드웨어 사양 목표(무게·자유도)는 ROP 범위 밖이라 claim 에서 뺌\"],\"budget_used\":{\"queries\":6,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 6회/30, 신규 출처 15건/15(출처 상한 도달)로 LLM 로봇 탈옥(RoboPAIR)·Code as Policies·NVIDIA GR00T N1·openpi 저장소 같은 후보는 넣지 못했다. 신규 출처 id: 실행 컨텍스트의 예약 구간은 ref-1045 부터이나, 입력의 같은 날 이전 브리프 2026-09-30-06 이 ref-1045~ref-1052 를 다른 출처에 이미 썼으므로 충돌을 피하려고 예약 구간 안의 ref-1053~ref-1067 을 순서대로 썼다. 재사용 1건(ref-1051, 2026-09-30-06 브리프의 출처, 이번에 다시 열어 HSR 실로봇 결과를 추가 확인). 원문 열람: 16건 모두 webfetch 로 열었다(논문은 초록 페이지, Gemini Robotics 1.5 는 HTML 본문 일부, 정책브리핑은 본문만 열고 첨부 미열람). 교차 확인 1건(f13: 정책브리핑과 메트로신문, 정부 쪽이 보도자료 페이지라 신뢰도 medium). 벤더 성능 주장 f16·f18 은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문(범용 로봇 모델과 언어 모델은 오케스트레이션의 무엇을 바꾸는가)에는 f19 로 답했고 결론은 '로봇 쪽은 VLA 로 작업 단위가 자연어·스킬 수준으로 올라가고, 플랫폼 쪽은 언어 모델 계획을 형식 계획기·외부 검증기·불확실도 기반 도움 요청·성공 판정으로 감싸는 구조'라는 추정이다. 현장 유형 사례는 가정(f5)·제조 공장(f15·f16)·물류창고(f17·f18)이며 병원·상업 시설·실외 사례는 찾지 못했다. 국내 자료는 산업통상자원부 정책브리핑(ref-1064)·메트로신문(ref-1065) 두 건이다. L. AI·학습 기술 교차 규칙에 따라 학습 기반 배정 관련 f10 은 25. 작업 배정 — MRTA 와, AI 결과 실행 기준 관련 f8·f9 는 47. AI·학습·적응과 모델 운영과 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았다. 용어집에 이미 있는 비전 언어 행동 모델·어포던스·LLM 에이전트·LLM-모듈로 프레임워크·불확실도 정렬·등각 예측·작업 분해·연합 형성·환각·PDDL 은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 이 영역에 걸린 기존 열린 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-30-07",
+    "date": "2026-09-30",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 44,
+      "area_name": "44. 로봇 기반 모델·언어 모델 계획",
+      "category": "L. AI·학습 기술"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 로봇 기반 모델, 교차 구현체 학습, 체화 추론 용어 없음(VLA·LLM 에이전트·LLM-모듈로·불확실도 정렬은 용어집에 있음)",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 가정·제조 공장·물류창고 사례와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 어포던스 결합 계획, PDDL 변환, 다중 로봇 분해·배정, 오케스트레이터–행동 모델 분리 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — Open X-Embodiment 데이터셋, OpenVLA 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 0건",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "범용 로봇 모델과 언어 모델은 오케스트레이션의 무엇을 바꾸는가? [분류원문]",
+      "시각–언어–행동(VLA) 모델 같은 로봇 기반 모델의 대표 모델·공개 데이터셋·오픈소스는 무엇이며, 서로 다른 로봇 사이의 학습 전이(교차 구현체 학습)는 어떻게 보고되는가? (섹션 4·6·7·8 겨냥)",
+      "언어 모델로 작업을 계획·분해하는 대표 방법(스킬 가치 함수 결합, PDDL 변환 후 고전 계획기 사용, 다중 로봇 분해·연합·배정, 오케스트레이터–행동 모델 분리)은 무엇이며 어떤 결과를 보고하는가? (섹션 6·8 겨냥)",
+      "언어 모델 계획의 한계(자체 검증 불가, 환각, 지연, 실행 계층 실패)와 이를 보완하는 외부 검증기·불확실도 기반 도움 요청 방법은 무엇인가? (섹션 3·6·11 겨냥)",
+      "가정·제조 공장·물류창고·병원 등 현장에서 로봇 기반 모델·범용 로봇(휴머노이드)을 쓴 사례는 무엇이며 여섯 항목으로 어떻게 정리되는가? (섹션 5 겨냥)",
+      "한국의 로봇 기반 모델·휴머노이드 정책과 연구 동향은 무엇인가? (섹션 3·8 겨냥, 한국 자료 우선)",
+      "44. 로봇 기반 모델·언어 모델 계획에서 ROP가 직접 맡을 것과 로봇 제조사·모델 제공자에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Ahn 외의 SayCan(arXiv 2204.01691, 2022-04)은 대규모 언어 모델의 고수준 의미 지식에 사전 학습된 로봇 스킬의 가치 함수를 결합해, 언어 모델이 제안한 단계 가운데 현재 상황에서 실행 가능한 스킬을 고르게 함으로써 모바일 매니퓰레이터에서 길고 추상적인 자연어 지시를 수행하게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1053"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 스킬에 딸린 가치 함수로 언어를 물리 세계에 접지하고, 로봇을 언어 모델의 'hands and eyes'로 둔다. 모바일 매니퓰레이터에서 장기·추상 지시로 평가. v2(2022-08)에서 PaLM 결과·다국어 지시 추가. 초록에 과업 수·성공률 수치 없음.",
+        "as_of": "2022-04-04",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "Brohan 외의 RT-2(arXiv 2307.15818, 2023-07)는 로봇 행동을 텍스트 토큰으로 표현해 로봇 궤적 데이터와 인터넷 규모 시각–언어 과제(시각 질의응답 등)로 사전 학습 시각–언어 모델을 함께 미세조정한 시각–언어–행동(VLA) 모델로, 6,000회 평가 시행에서 새 물체 일반화와 학습 데이터에 없던 의미 추론(가장 작은·가까운 물체 고르기 등)을 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1054"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 행동을 텍스트 토큰으로 표현해 자연어 토큰과 같은 방식으로 학습 세트에 넣는다. 6,000 evaluation trials, 새 물체 일반화, 사고 사슬(chain-of-thought)로 다단계 의미 추론.",
+        "as_of": "2023-07-28",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "Open X-Embodiment 협업(arXiv 2310.08864, 2023-10)은 21개 기관이 22종 로봇에서 모은 527개 스킬·160,266개 과업의 데이터를 표준 형식으로 합쳤고, 이 데이터로 학습한 대용량 모델 RT-X 가 다른 로봇의 경험을 활용해 여러 로봇의 능력을 높이는 양의 전이를 보였다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1055"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 21 institutions, 22 robots, 527 skills, 160,266 tasks. RT-X 가 positive transfer 를 보이며 다른 플랫폼의 경험으로 여러 로봇의 능력을 개선. 최신 개정 2025-05-14.",
+        "as_of": "2023-10-13",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "Kim 외의 OpenVLA(arXiv 2406.09246, 2024-06)는 실제 로봇 시연 97만 건으로 학습한 70억 매개변수 공개 VLA 모델로, 29개 과업에서 비공개 RT-2-X(550억 매개변수)보다 절대 과업 성공률이 16.5%p 높았고, 저랭크 적응(LoRA)·양자화로 소비자용 GPU 에서 미세조정할 수 있으며 체크포인트·미세조정 노트북·PyTorch 코드를 공개했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1056"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 970k real-world robot demonstrations, Llama 2 + DINOv2·SigLIP 시각 인코더, RT-2-X(55B) 대비 29개 과업 절대 성공률 +16.5%, 매개변수 7배 적음, LoRA·양자화 미세조정, 체크포인트·코드 공개. 모델 라이선스는 확인하지 않음.",
+        "as_of": "2024-06-13",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f5",
+        "claim": "Physical Intelligence 외의 π0.5(arXiv 2504.16054, 2025-04)는 여러 로봇·웹 데이터·의미적 하위 과업 예측을 함께 학습한 VLA 모델로, 학습 데이터에서 제외된 새 가정집에서 부엌·침실 정리 같은 장기·정교한 조작 과업을 종단 간 학습 시스템으로 수행했다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1057"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 이질적 과업 공동 학습(co-training)으로 일반화, 학습에 없던 새 가정에서 kitchen·bedroom 정리 같은 장기·정교 조작 수행. 관측·언어 지시·물체 검출·의미적 하위 과업 예측·저수준 동작을 결합.",
+        "as_of": "2025-04-22",
+        "site_type": "가정",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f6",
+        "claim": "Google DeepMind 의 Gemini Robotics 1.5 보고서(arXiv 2510.03342, 2025-10)는 체화 추론 모델 Gemini Robotics-ER 1.5 를 오케스트레이터로 두어 지시를 실행 단계로 분해하고 성공 여부를 판정해 다음 단계로 넘기며 웹 검색 같은 디지털 도구를 쓰게 하고, VLA 모델 Gemini Robotics 1.5 를 자연어 명령을 받는 행동 도구로 두는 에이전트 구조를 제시하며, 동작 전이(Motion Transfer)로 ALOHA·양팔 Franka·Apollo 휴머노이드의 데이터를 함께 학습한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1062"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "본문(HTML): 오케스트레이터가 과업 분해, 'performs success detection to decide when to switch to the next step', 도구 사용, 진행도 추정을 맡고 VLA 는 오케스트레이터가 부르는 도구로 동작. 동작 전이 대상은 ALOHA·Bi-arm Franka·Apollo.",
+        "as_of": "2025-10-02",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f7",
+        "claim": "Liu 외의 LLM+P(arXiv 2304.11477, 2023-04)는 자연어 문제 기술을 언어 모델로 PDDL 로 바꾸고 고전 계획기로 해를 구한 뒤 다시 자연어로 옮기는 방식으로, 논문이 정한 벤치마크 문제 대부분에서 최적해를 낸 반면 언어 모델 단독은 대부분의 문제에서 실행 가능한 계획조차 내지 못했다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1058"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 자연어→PDDL→고전 계획기→자연어의 3단계. 'LLM+P is able to provide optimal solutions for most problems, while LLMs fail to provide even feasible plans for most problems.' 벤치마크 도메인 수는 초록에 없음.",
+        "as_of": "2023-04-22",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f8",
+        "claim": "Kambhampati 외(ICML 2024, arXiv 2402.01817)는 자기회귀 언어 모델이 스스로 계획하거나 자기 검증을 할 수 없다고 보고, 언어 모델을 '근사적 지식 원천'으로 쓰되 외부 모델 기반 검증기와 양방향으로 묶는 LLM-모듈로(LLM-Modulo) 프레임워크를 제안한다.",
+        "tag": "의견",
+        "source_ids": [
+          "ref-1059"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록(입장 논문): 'auto-regressive LLMs cannot, by themselves, do planning or self-verification'. 언어 모델을 universal approximate knowledge sources 로 보고 외부 검증기와 결합, 검증용 모델 획득에도 언어 모델을 쓴다.",
+        "as_of": "2024-02-02",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f9",
+        "claim": "Ren 외의 KnowNo(CoRL 2023, arXiv 2307.01928)는 등각 예측(conformal prediction)으로 언어 모델 계획기의 불확실도를 재어 모호할 때만 사람에게 도움을 요청하게 함으로써, 모델 미세조정 없이 과업 완료에 통계적 보장을 주면서 사람 도움을 최소화했다고 시뮬레이션과 실제 로봇 과업에서 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1060"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'confidently hallucinated predictions' 문제를 다루며, 공간·수치·선호·언어 모호성이 있는 다단계 계획에서 과업 완료의 통계적 보장과 사람 도움 최소화, 미세조정 불필요.",
+        "as_of": "2023-07-04",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f10",
+        "claim": "Kannan 외의 SMART-LLM(IROS 2024, arXiv 2309.10062)은 프로그램 형태의 언어 모델 프롬프트로 상위 지시를 작업 분해·연합 형성·작업 배정의 세 단계를 거쳐 다중 로봇 실행 계획으로 바꾸며, 지시 복잡도 4범주의 벤치마크를 만들어 시뮬레이션과 실제 로봇으로 검증했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1061"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 'task decomposition, coalition formation, and task allocation, all guided by programmatic LLM prompts', few-shot 프롬프트, 4개 복잡도 범주 벤치마크, 시뮬레이션·실로봇 검증. 정량 결과는 초록에 없음.",
+        "as_of": "2023-09-18",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f11",
+        "claim": "Li 외의 다중 로봇 시스템용 언어 모델 조사 논문(arXiv 2502.03814, 2025-02, 2026-05 v5)은 적용을 상위 작업 배정·중간 수준 경로 계획·하위 동작 생성·사람 개입의 네 수준으로 나누고, 수학적 추론 한계·환각·지연·견고한 벤치마크 부재를 적용의 제약으로 든다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1063"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: high-level task allocation, mid-level motion planning, low-level action generation, human intervention 의 네 범주. 적용 분야는 가정 로봇·건설·편대 제어·표적 추적·로봇 게임. 과제는 수학적 추론·환각·지연·벤치마크.",
+        "as_of": "2025-02-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f12",
+        "claim": "Bruno·Sim·Hagiwara(arXiv 2609.29043, 2026-09)는 지시 분류와 행동 생성을 두 단계로 나눈 언어 모델 연쇄 계획으로 추론당 프롬프트 길이를 약 45% 줄이고 로컬 모델의 계획 성공을 최대 37%p 높였지만, Toyota HSR 실제 로봇 실험에서는 10개 과업 중 6개만 끝까지 성공해 실행 계층 실패가 남은 주 병목이었다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1051"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 약 45% 프롬프트 길이 감소, 로컬 모델 +37%p, 실로봇(Toyota Human Support Robot)에서 6/10 과업 완전 성공, 'execution-layer failures identified as the primary remaining bottleneck'. IEEE GCCE 2026 채택. (재인용: 2026-09-30-06)",
+        "as_of": "2026-09-24",
+        "site_type": null,
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f13",
+        "claim": "산업통상자원부는 2025-04-10 로봇 기업·부품 기업·AI 연구진·수요 기업이 참여하는 휴머노이드 연구·개발 연합체 'K-휴머노이드 연합'을 출범시켰다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1064",
+          "ref-1065"
+        ],
+        "cross_checked": true,
+        "confidence": "medium",
+        "evidence_excerpt": "정책브리핑 보도자료(2025-04-10, 산업통상자원부) 제목 'K-휴머노이드 연합 출범'. 메트로신문 같은 날 기사가 산업부 주최 출범과 약 40개 단체 참여를 적음. 참여 기관 수는 기사마다 달라(약 40개, 50여 곳) 확정하지 않음.",
+        "as_of": "2025-04-10",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "메트로신문 보도에 따르면 K-휴머노이드 연합에서 서울대 AI 연구소·KAIST·고려대 등이 2028년까지 로봇 AI 파운데이션 모델을 구축하고, 정부는 2030년까지 민관 합산 1조 원 이상 투자와 제조업 환경을 모사한 실증 기반 마련을 계획한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1065"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "기사(2025-04-10): 로봇 AI 파운데이션 모델 2028년까지 구축(서울대 AI 연구소·KAIST·고려대 등), 민관 1조 원 이상(2025~2030), 제조업 모사 실증 인프라, 무게 60kg 이하·자유도 50 이상 목표. 정책브리핑 본문에서는 이 수치를 확인하지 못함(첨부 문서 미열람).",
+        "as_of": "2025-04-10",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "BMW 그룹 발표에 따르면 제조 공장인 미국 Spartanburg 공장에서 Figure 02 휴머노이드가 차체 용접용 판금 부품 삽입을 맡았고, 후속 Figure 03 은 물류 구역에서 용기에 섞여 들어온 부품을 집어 순서 대차에 정렬해 조립 공정에 순서대로(JIS) 공급하는 일을 맡으며 자동 견인 열차·Smart Transport Robot 과 부품 전달을 연동한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1066"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "BMW 보도자료(2026-06-25): Figure 02 는 sheet-metal part insertion for welding, Figure 03 은 미분류 부품을 sequencing trolleys 에 정렬하는 just in sequence 공급, tugger train·Smart Transport Robot 연동. 사용된 AI 모델 이름은 보도자료에 없음.",
+        "as_of": "2026-06-25",
+        "site_type": "제조 공장",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f16",
+        "claim": "같은 BMW 발표는 Figure 02 가 Spartanburg 공장에서 10개월 동안 운영되며 BMW X3 30,000대 이상의 생산을 지원했다고 밝힌다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1066"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: BMW 보도자료가 Figure 02 가 ten months 동안 30,000대 이상 X3 생산을 지원했다고 적음. 검색 요약의 다른 기사들은 11개월·1,250시간·부품 90,000개 이상으로 적어 기간이 엇갈림(기사 원문 미열람).",
+        "as_of": "2026-06-25",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과",
+        "vendor_claim": true
+      },
+      {
+        "id": "f17",
+        "claim": "GXO 는 2024-06-27 Agility Robotics 와 다년 서비스형 로봇(RaaS) 계약을 맺고, 물류창고인 SPANX 물류센터에서 2023년 개념 검증에 이어 이족 휴머노이드 Digit 가 자율이동로봇(AMR)에서 토트를 받아 컨베이어에 올리는 반복 작업을 맡게 했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1067"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "GXO 보도자료(2024-06-27): SPANX 시설, Digit 가 AMR 에서 토트를 옮겨 컨베이어에 올림, RaaS 계약, 2023 개념 검증 선행, 기존 AMR·협동로봇과 함께 운영. 흐름 단계는 출하 전 운반 공정으로 보이나 보도자료가 명시하지 않음.",
+        "as_of": "2024-06-27",
+        "site_type": "물류창고",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f18",
+        "claim": "같은 GXO 발표는 Agility 의 클라우드 자동화 플랫폼 Agility Arc 가 시설 지도 작성·작업 흐름 정의부터 운영 관리·문제 해결까지 Digit 운영을 조율한다고 적지만, 로봇 기반 모델이나 언어 모델의 사용은 언급하지 않는다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1067"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: Agility Arc 가 'facility mapping and workflow definition to operational management and troubleshooting'을 맡는다고 보도자료가 적음. AI·언어 모델 언급 없음.",
+        "as_of": "2024-06-27",
+        "site_type": "물류창고",
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f19",
+        "claim": "확인한 자료를 종합하면 핵심 질문(범용 로봇 모델과 언어 모델이 오케스트레이션의 무엇을 바꾸는가)에 대해, 로봇 쪽에서는 여러 로봇 데이터로 학습한 VLA 가 자연어 수준 명령을 받아 저수준 동작을 스스로 만들며(f2~f6) 오케스트레이터에 넘기는 작업 단위가 좌표·경로에서 자연어·스킬 수준으로 올라가고, 플랫폼 쪽에서는 언어 모델이 지시를 분해·배정 계획으로 바꾸지만(f1·f7·f10) 단독 계획·자기 검증이 불안정하므로(f8·f11·f12) 형식 계획기·외부 검증기·불확실도 기반 도움 요청·성공 판정을 계획과 실행 사이에 두는 구조가 공통으로 제시되는 것으로 보인다(f6·f7·f9).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1054",
+          "ref-1055",
+          "ref-1056",
+          "ref-1057",
+          "ref-1062",
+          "ref-1053",
+          "ref-1058",
+          "ref-1061",
+          "ref-1059",
+          "ref-1063",
+          "ref-1051",
+          "ref-1060"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1~f12 종합. 단일 출처 주장들의 종합이며 현장 운영 규모의 검증 자료는 찾지 못함.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "확인한 자료를 종합하면 이 영역이 중요한 까닭은, 공개 데이터셋과 공개 VLA 모델로 여러 제조사 로봇이 같은 기반 모델을 쓸 수 있게 되고(f3·f4), 휴머노이드가 제조 공장·물류창고 실작업에 들어오며(f15·f17) 국내에서도 로봇 AI 파운데이션 모델에 정책 투자가 이뤄지는 반면(f13·f14), 언어 모델 계획은 환각·지연·실행 실패 같은 한계가 보고되어(f11·f12) 이종 로봇 오케스트레이션이 이를 어떻게 받아들일지 정해야 하기 때문이다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1055",
+          "ref-1056",
+          "ref-1066",
+          "ref-1067",
+          "ref-1064",
+          "ref-1065",
+          "ref-1063",
+          "ref-1051"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f3·f4·f11~f15·f17 종합.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 자료를 종합하면 44. 로봇 기반 모델·언어 모델 계획에서 ROP 가 직접 맡을 범위는 언어 모델이 만든 작업 계획의 표현과 형식 계획기·능력 모델에 비춘 사전 검증(f7·f8), 불확실할 때 사람 확인을 요청하는 기준(f9), 다중 로봇 분해·배정 결과의 수용(f10), 로봇 기반 모델을 탑재한 로봇에 자연어·스킬 수준 명령을 보내고 성공 판정·진행 상태를 돌려받는 인터페이스(f6·f12)다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1058",
+          "ref-1059",
+          "ref-1060",
+          "ref-1061",
+          "ref-1062",
+          "ref-1051"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f6~f10·f12 종합. 분류 원문 4장 주석(사람이 확인·승인한 계획만 실행)과 같은 방향.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "연계 대상: 분류 원문 19장 기준으로 VLA 모델의 학습과 저수준 동작 생성(f2·f4·f5·f6), 휴머노이드의 파지·조작(f15·f17)은 로봇 자체 지능·제어에 속해 로봇 제조사·모델 개발사에 맡기고, 이종 제조사를 잇는 ROP 는 이들이 제공하는 명령 인터페이스·실행 조건·성공 판정 신호를 받는 쪽을 맡을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1054",
+          "ref-1056",
+          "ref-1057",
+          "ref-1062",
+          "ref-1066",
+          "ref-1067"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "원문 19장 '로봇 자체 지능·제어' 경계(센서 인식·파지·모터·관절 제어는 연계 대상)에 f2·f4~f6·f15·f17 을 대응시킨 추정.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "이 영역은 자연어 지시를 계획으로 바꾸는 12. 채팅으로 업무 지시·오케스트레이션(f7·f10)과 13. 대화형 기능의 신뢰·기반(f8·f9), 계획 표현의 24. 작업·워크플로 모델링(f7), 다중 로봇 배정의 25. 작업 배정 — MRTA(f10·f11), 스킬 가치 함수·능력 표현의 5. 로봇 능력·작업 표현(f1·f6), 교차 구현체 학습의 4. 이기종 로봇 등록(f3), 실행 실패의 29. 명령·작업 실행의 신뢰성(f12), 도움 요청의 31. 사람–로봇 협업(f9), AI 결과 실행 기준의 47. AI·학습·적응과 모델 운영(f8·f9), 벤치마크의 54. 시험·형식 검증·벤치마크(f11), 업체·정책 동향의 1. 기술·시장·업체 동향(f13~f17), 적용 현장인 61. 물류창고(f17)·62. 제조 공장(f15)·65. 가정·공동주택(f5)과 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1058",
+          "ref-1061",
+          "ref-1059",
+          "ref-1060",
+          "ref-1063",
+          "ref-1053",
+          "ref-1062",
+          "ref-1055",
+          "ref-1051",
+          "ref-1064",
+          "ref-1066",
+          "ref-1067",
+          "ref-1057"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1~f17 에서 도출한 영역 연결. 분류 원문 4장 주석의 '업무 지시는 25·26번' 짝 규칙과 13장 교차 규칙을 따름.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1053",
+        "org": "Ahn, M., Brohan, A., Brown, N. 외 (arXiv)",
+        "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+        "published": "2022-04",
+        "url": "https://arxiv.org/abs/2204.01691",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "SayCan. 언어 모델의 고수준 계획을 사전 학습 스킬의 가치 함수로 접지해 모바일 매니퓰레이터의 장기 자연어 지시를 수행한다. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1054",
+        "org": "Brohan, A., Brown, N., Carbajal, J. 외 (arXiv)",
+        "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+        "published": "2023-07",
+        "url": "https://arxiv.org/abs/2307.15818",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "행동을 텍스트 토큰으로 표현해 시각–언어 모델을 로봇 데이터와 웹 데이터로 함께 미세조정한 VLA 모델. 6,000회 평가 시행. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1055",
+        "org": "Open X-Embodiment Collaboration (arXiv)",
+        "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+        "published": "2023-10",
+        "url": "https://arxiv.org/abs/2310.08864",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "21개 기관·22종 로봇·527개 스킬·160,266개 과업의 표준화 데이터셋과 교차 구현체 모델 RT-X. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1056",
+        "org": "Kim, M. J., Pertsch, K., Karamcheti, S. 외 (arXiv)",
+        "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+        "published": "2024-06",
+        "url": "https://arxiv.org/abs/2406.09246",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "실제 로봇 시연 97만 건으로 학습한 70억 매개변수 공개 VLA. RT-2-X 대비 29개 과업 절대 성공률 +16.5%p, LoRA 미세조정, 체크포인트·코드 공개. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1057",
+        "org": "Physical Intelligence, Black, K., Brown, N. 외 (arXiv)",
+        "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+        "published": "2025-04",
+        "url": "https://arxiv.org/abs/2504.16054",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "이질적 데이터 공동 학습 VLA 로 학습에 없던 새 가정집에서 부엌·침실 정리 같은 장기 조작을 수행. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1058",
+        "org": "Liu, B., Jiang, Y., Zhang, X., Liu, Q., Zhang, S., Biswas, J., & Stone, P. (arXiv)",
+        "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+        "published": "2023-04",
+        "url": "https://arxiv.org/abs/2304.11477",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "자연어 문제를 PDDL 로 바꿔 고전 계획기로 풀고 자연어로 되돌리는 방법. 언어 모델 단독 대비 최적해 비율 향상 보고. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1059",
+        "org": "Kambhampati, S., Valmeekam, K., Guan, L. 외 (ICML 2024, arXiv)",
+        "title": "LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks",
+        "published": "2024-02",
+        "url": "https://arxiv.org/abs/2402.01817",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "자기회귀 언어 모델은 단독으로 계획·자기 검증을 못 한다는 입장과 외부 검증기와 결합하는 LLM-모듈로 프레임워크 제안(PMLR 235). 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1060",
+        "org": "Ren, A. Z., Dixit, A., Bodrova, A. 외 (CoRL 2023, arXiv)",
+        "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+        "published": "2023-07",
+        "url": "https://arxiv.org/abs/2307.01928",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "KnowNo. 등각 예측으로 언어 모델 계획기의 불확실도를 재어 필요할 때만 사람 도움을 요청, 과업 완료의 통계적 보장. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1061",
+        "org": "Kannan, S. S., Venkatesh, V. L. N., & Min, B.-C. (IROS 2024, arXiv)",
+        "title": "SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models",
+        "published": "2023-09",
+        "url": "https://arxiv.org/abs/2309.10062",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "작업 분해·연합 형성·작업 배정 3단계를 언어 모델 프롬프트로 수행하는 다중 로봇 계획, 4범주 벤치마크와 시뮬레이션·실로봇 검증. 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1062",
+        "org": "Gemini Robotics Team, Google DeepMind (arXiv)",
+        "title": "Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer",
+        "published": "2025-10",
+        "url": "https://arxiv.org/abs/2510.03342",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "체화 추론 모델(ER 1.5)을 오케스트레이터로, VLA(GR 1.5)를 행동 도구로 두는 에이전트 구조와 ALOHA·양팔 Franka·Apollo 간 동작 전이. 초록과 HTML 본문 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": "https://arxiv.org/html/2510.03342"
+      },
+      {
+        "id": "ref-1063",
+        "org": "Li, P., An, Z., Abrar, S., & Zhou, L. (arXiv)",
+        "title": "Large Language Models for Multi-Robot Systems: A Survey",
+        "published": "2025-02",
+        "url": "https://arxiv.org/abs/2502.03814",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "다중 로봇 시스템의 언어 모델 적용을 작업 배정·경로 계획·동작 생성·사람 개입으로 분류하고 환각·지연·벤치마크 부재 등 과제를 정리한 조사 논문(2026-05 v5). 초록 페이지 열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1064",
+        "org": "산업통상자원부 (대한민국 정책브리핑)",
+        "title": "K-휴머노이드 연합 출범",
+        "published": "2025-04-10",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156683522",
+        "type": "정부·연구기관",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "산업통상자원부 보도자료 게시 페이지. 연합 출범 사실과 제조·물류 실증 계획 언급까지만 본문에서 확인했고 세부 수치는 첨부 문서(미열람)에 있다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1065",
+        "org": "메트로신문",
+        "title": "K-휴머노이드 연합 공식 출범…2030년 휴머노이드 최강국 목표",
+        "published": "2025-04-10",
+        "url": "https://www.metroseoul.co.kr/article/20250410500722",
+        "type": "기사",
+        "reliability": "low",
+        "accessed": "2026-09-30",
+        "summary": "K-휴머노이드 연합 출범 기사. 약 40개 단체 참여, 2028년까지 로봇 AI 파운데이션 모델 구축, 2030년까지 민관 1조 원 이상 투자 계획을 전한다.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1066",
+        "org": "BMW Group",
+        "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg",
+        "published": "2026-06-25",
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg?language=en",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "BMW Spartanburg 공장의 Figure 02 판금 부품 삽입 운영 결과와 Figure 03 부품 순서 정렬(JIS) 물류 투입 계획을 알리는 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1067",
+        "org": "GXO Logistics",
+        "title": "GXO signs industry-first multi-year agreement with Agility Robotics",
+        "published": "2024-06-27",
+        "url": "https://gxo.com/news_article/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics/",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "SPANX 물류센터에서 Digit 휴머노이드가 AMR 의 토트를 컨베이어에 옮기는 RaaS 다년 계약과 Agility Arc 플랫폼 조율을 알리는 보도자료.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1051",
+        "org": "Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv)",
+        "title": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
+        "published": "2026-09",
+        "url": "https://arxiv.org/abs/2609.29043",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "두 단계 언어 모델 연쇄 계획으로 프롬프트 길이를 줄여 로컬 모델 계획 성공을 높이고, Toyota HSR 실로봇에서 실행 계층 실패가 주 병목임을 보고. 초록 페이지 재열람.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f20(왜 중요한가), f19(핵심 질문 답, 추정) / 섹션 4: VLA·행동 토큰화 f2, 교차 구현체 학습 f3, 체화 추론·오케스트레이터 f6, 어포던스 접지 f1, LLM-모듈로 f8, 불확실도 정렬·등각 예측 f9 / 섹션 5: 가정 — f5(작업 대상: 새 집의 부엌·침실), 제조 공장 — f15(작업 대상)·f16(예외·성과, 벤더 주장 병기, 기간 불일치 명시), 물류창고 — f17(수행 자원)·f18(Agility Arc 조율, 벤더 주장 병기, 기반 모델 사용 미확인). 병원·상업 시설·실외 사례는 찾지 못함을 명시 / 섹션 6: 스킬 가치 함수 결합 f1, PDDL 변환과 고전 계획기 f7, 다중 로봇 분해·연합·배정 f10, 오케스트레이터–VLA 분리 f6, 불확실도 기반 도움 요청 f9, 연쇄 계획과 실행 계층 실패 f12, 외부 검증기 f8 / 섹션 7: Open X-Embodiment 데이터셋 f3, OpenVLA f4 / 섹션 8: f1~f12, 국내 정책 f13·f14 / 섹션 9: f21(직접 범위), f22(연계 대상) / 섹션 10: f23 — 1, 4, 5, 12, 13, 24, 25, 29, 31, 47, 54, 61, 62, 65 / 섹션 11: open_questions_new 5건. 다음 실행 후보: 47. AI·학습·적응과 모델 운영 페이지에 f8·f9 반영, 12. 채팅으로 업무 지시·오케스트레이션 페이지에 f7·f10 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "로봇 기반 모델",
+        "term_en": "Robot Foundation Model",
+        "definition": "여러 로봇·과업·웹 데이터로 대규모 사전 학습해 미세조정이나 지시만으로 다양한 로봇 과업에 쓰이도록 만든 범용 모델로, 시각–언어–행동 모델이 대표적이다."
+      },
+      {
+        "term_ko": "교차 구현체 학습",
+        "term_en": "Cross-embodiment Learning",
+        "definition": "형태·센서·구동기가 다른 여러 로봇의 데이터를 한 모델에 함께 학습시켜 한 로봇의 경험이 다른 로봇의 능력 향상으로 이어지게 하는 학습 방식이다."
+      },
+      {
+        "term_ko": "체화 추론",
+        "term_en": "Embodied Reasoning",
+        "definition": "물리 환경의 시각·공간 정보를 이해해 과업을 계획·분해하고 진행도와 성공 여부를 판단하는 추론 능력으로, 로봇 오케스트레이터 역할의 모델에 요구된다."
+      },
+      {
+        "term_ko": "행동 토큰화",
+        "term_en": "Action Tokenization",
+        "definition": "로봇의 연속 동작 명령을 이산 토큰으로 바꿔 언어 모델이 텍스트 토큰과 같은 방식으로 동작을 출력하게 하는 표현 방법이다."
+      }
+    ],
+    "open_questions_new": [
+      "로봇 기반 모델(VLA)을 탑재한 이종 제조사 로봇의 능력을 ROP 가 등록할 때 받아들일 자연어 명령 범위·실행 조건·성공 판정 신호를 기술하는 표준이나 공개 사례가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 5. 로봇 능력·작업 표현 | 근거: f6 | 종류: 일반",
+      "물류창고·제조 공장의 휴머노이드 실배치(GXO SPANX, BMW Spartanburg)에서 로봇 기반 모델·언어 모델이 실제로 어느 계층(동작 생성·작업 계획·관제)에 쓰였는지 공개한 자료가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 61. 물류창고, 62. 제조 공장 | 근거: f18 | 종류: 일반",
+      "설비 연동·다중 로봇·시간 제약이 있는 현장 조건에서 언어 모델 작업 계획의 성공률과 실행 성공률을 함께 비교하는 공통 벤치마크가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 54. 시험·형식 검증·벤치마크 | 근거: f11 | 종류: 일반",
+      "K-휴머노이드 연합의 로봇 AI 파운데이션 모델 개발이 이종 로봇 관제 플랫폼과의 연동 인터페이스나 공개 여부를 다루는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 1. 기술·시장·업체 동향 | 근거: f14 | 종류: 일반",
+      "병원 현장에서 언어 모델 기반 작업 계획·오케스트레이션을 시뮬레이션이 아닌 실제 운영에 적용하고 결과를 보고한 사례가 있는가? | 관련 영역: 44. 로봇 기반 모델·언어 모델 계획, 63. 병원·의료 | 근거: f12 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 16,
+      "cross_checked_count": 1,
+      "unverified": [
+        "f1·f2·f3·f4·f5·f7·f9·f10·f11·f12 는 논문 초록 기준이며 본문 실험 조건 미확인(f6 만 HTML 본문 일부 열람)",
+        "f1 SayCan 의 과업 수·성공률 수치는 초록에 없어 넣지 않음",
+        "f4 OpenVLA 모델 가중치 라이선스 미확인(arXiv 페이지의 CC BY 4.0 은 논문 라이선스일 수 있어 넣지 않음)",
+        "f13 참여 기관 수: 메트로신문 약 40개, 검색 요약의 다른 기사 50여 곳으로 엇갈려 확정하지 않음",
+        "f14 투자 규모·목표 연도는 기사 1건 기준이며 정책브리핑 첨부 보도자료(HWP·PDF) 미열람",
+        "f16 Figure 02 운영 기간: BMW 보도자료 10개월, 검색 요약의 기사들 11개월·1,250시간으로 엇갈림(기사 원문 미열람)",
+        "f17 GXO 배치의 물류창고 흐름 단계(출하 등)는 보도자료가 명시하지 않음",
+        "병원 LLM 오케스트레이션 논문(MDPI Applied Sciences 16(11):5320)은 403 으로 열지 못해 넣지 않음",
+        "SayCan·RT-2 등 초기 연구의 동료심사 게재판(CoRL 등)과 arXiv 판의 수치 차이 미확인"
+      ],
+      "scope_violations": [
+        "f2·f4·f5·f6: VLA 의 저수준 동작 생성은 원문 19장의 로봇 자체 지능·제어(연계 대상)에 해당하므로 로봇 기반 모델 동향의 근거로만 쓰고 f22 에서 연계 대상으로 구분함",
+        "f15·f17: 휴머노이드의 파지·조작은 로봇 제조사 영역이며, ROP 관점은 자동 견인 열차·AMR·컨베이어와의 인계와 조율(f15·f17·f18)만 다룸",
+        "f14: 휴머노이드 하드웨어 사양 목표(무게·자유도)는 ROP 범위 밖이라 claim 에서 뺌"
+      ],
+      "budget_used": {
+        "queries": 6,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 6회/30, 신규 출처 15건/15(출처 상한 도달)로 LLM 로봇 탈옥(RoboPAIR)·Code as Policies·NVIDIA GR00T N1·openpi 저장소 같은 후보는 넣지 못했다. 신규 출처 id: 실행 컨텍스트의 예약 구간은 ref-1045 부터이나, 입력의 같은 날 이전 브리프 2026-09-30-06 이 ref-1045~ref-1052 를 다른 출처에 이미 썼으므로 충돌을 피하려고 예약 구간 안의 ref-1053~ref-1067 을 순서대로 썼다. 재사용 1건(ref-1051, 2026-09-30-06 브리프의 출처, 이번에 다시 열어 HSR 실로봇 결과를 추가 확인). 원문 열람: 16건 모두 webfetch 로 열었다(논문은 초록 페이지, Gemini Robotics 1.5 는 HTML 본문 일부, 정책브리핑은 본문만 열고 첨부 미열람). 교차 확인 1건(f13: 정책브리핑과 메트로신문, 정부 쪽이 보도자료 페이지라 신뢰도 medium). 벤더 성능 주장 f16·f18 은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문(범용 로봇 모델과 언어 모델은 오케스트레이션의 무엇을 바꾸는가)에는 f19 로 답했고 결론은 '로봇 쪽은 VLA 로 작업 단위가 자연어·스킬 수준으로 올라가고, 플랫폼 쪽은 언어 모델 계획을 형식 계획기·외부 검증기·불확실도 기반 도움 요청·성공 판정으로 감싸는 구조'라는 추정이다. 현장 유형 사례는 가정(f5)·제조 공장(f15·f16)·물류창고(f17·f18)이며 병원·상업 시설·실외 사례는 찾지 못했다. 국내 자료는 산업통상자원부 정책브리핑(ref-1064)·메트로신문(ref-1065) 두 건이다. L. AI·학습 기술 교차 규칙에 따라 학습 기반 배정 관련 f10 은 25. 작업 배정 — MRTA 와, AI 결과 실행 기준 관련 f8·f9 는 47. AI·학습·적응과 모델 운영과 연결하도록 제안했다. 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈은 다루지 않았다. 용어집에 이미 있는 비전 언어 행동 모델·어포던스·LLM 에이전트·LLM-모듈로 프레임워크·불확실도 정렬·등각 예측·작업 분해·연합 형성·환각·PDDL 은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음. 이 영역에 걸린 기존 열린 질문 없음."
+    }
+  },
+  "ttft_ms": 15376,
+  "type": "result",
+  "duration_ms": 340807,
+  "uuid": "f66eb6dc-93bd-484c-8f38-19bee92f150e",
+  "ttft_stream_ms": 1046,
+  "time_to_request_ms": 91,
+  "time_to_request_phases_ms": {
+    "other": 36,
+    "system_prompt": 20,
+    "turn_start_resume": 0,
+    "process_user_input": 14,
+    "init_message": 4,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 41,
+  "time_to_request_cpu_ms": 121,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1047,
+  "time_to_request_from_spawn_ms": 4229887,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790730534723.4285,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 342.1
+}

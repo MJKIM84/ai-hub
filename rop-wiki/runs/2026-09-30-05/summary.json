@@ -1,0 +1,172 @@
+{
+  "run_id": "2026-09-30-05",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 41,
+    "area_name": "41. 플랫폼 아키텍처·외부 API",
+    "category": "K. 플랫폼 아키텍처·인프라"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 9,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "73d8364",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2138.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 41. 플랫폼 아키텍처·외부 API | 섹션 3~11 신규 작성(로봇·현장 서버·클라우드 혼합 배치, REST·이벤트·웹훅·SDK 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건), 1차 조건부 승인 수정 17건·2차 수정 5건 이행 | run 2026-09-30-05",
+  "notes": [
+    "참고문헌 생성: references/ref-1023.md",
+    "참고문헌 생성: references/ref-1024.md",
+    "참고문헌 생성: references/ref-1025.md",
+    "참고문헌 생성: references/ref-1026.md",
+    "참고문헌 생성: references/ref-1027.md",
+    "참고문헌 생성: references/ref-1028.md",
+    "참고문헌 생성: references/ref-1029.md",
+    "참고문헌 생성: references/ref-1030.md",
+    "참고문헌 생성: references/ref-1031.md",
+    "용어집 생성: glossary/openapi-specification.md",
+    "용어집 생성: glossary/asyncapi-specification.md",
+    "용어집 생성: glossary/webhook.md",
+    "용어집 생성: glossary/cloud-robotics.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 9,
+    "standards": 3,
+    "open_questions": 4,
+    "flow_cells": 10,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 09:26:46 KST",
+  "usage": {
+    "input_tokens": 72,
+    "cache_creation_input_tokens": 703458,
+    "cache_read_input_tokens": 4738345,
+    "output_tokens": 184730,
+    "cost_usd": 11.2136,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.8002,
+        "output_tokens": 38021,
+        "cache_read_input_tokens": 3287463,
+        "cache_creation_input_tokens": 87049
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.9901,
+        "output_tokens": 25141,
+        "cache_read_input_tokens": 1119137,
+        "cache_creation_input_tokens": 128821
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.2861,
+        "output_tokens": 97955,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 287274
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.072,
+        "output_tokens": 23205,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 196561
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0463,
+        "output_tokens": 190,
+        "cache_read_input_tokens": 5472,
+        "cache_creation_input_tokens": 2310
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0189,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 5559,
+        "cache_creation_input_tokens": 1443
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-30-area41-s6.md",
+        "chars": 3254
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-30-area41-s4.md",
+        "chars": 1132
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "7. 관련 표준·프레임워크·오픈소스",
+        "to": "docs/topics/2026/2026-09-30-area41-s7.md",
+        "chars": 962
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-30-area41-s10.md",
+        "chars": 879
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-30-area41-s3.md",
+        "chars": 844
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-30-area41-s8.md",
+        "chars": 832
+      },
+      {
+        "from": "docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-30-area41-s11.md",
+        "chars": 571
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 17,
+  "cross_checked_findings": 1
+}

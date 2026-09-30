@@ -21,6 +21,52 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결](2026/2026-09-30-area14-s10.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 열린 질문](2026/2026-09-30-area14-s11.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 왜 중요한가](2026/2026-09-30-area14-s3.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 핵심 개념과 용어](2026/2026-09-30-area14-s4.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 접근법과 기술](2026/2026-09-30-area14-s6.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 대표 연구와 자료](2026/2026-09-30-area14-s8.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 다른 연구영역과의 연결](2026/2026-09-30-area16-s10.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 열린 질문](2026/2026-09-30-area16-s11.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 핵심 개념과 용어](2026/2026-09-30-area16-s4.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 접근법과 기술](2026/2026-09-30-area16-s6.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area16-s7.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 연구와 자료](2026/2026-09-30-area16-s8.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결](2026/2026-09-30-area41-s10.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 열린 질문](2026/2026-09-30-area41-s11.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 왜 중요한가](2026/2026-09-30-area41-s3.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 핵심 개념과 용어](2026/2026-09-30-area41-s4.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 대표 접근법과 기술](2026/2026-09-30-area41-s6.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area41-s7.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 대표 연구와 자료](2026/2026-09-30-area41-s8.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 다른 연구영역과의 연결](2026/2026-09-30-area43-s10.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 열린 질문](2026/2026-09-30-area43-s11.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 왜 중요한가](2026/2026-09-30-area43-s3.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 핵심 개념과 용어](2026/2026-09-30-area43-s4.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 대표 접근법과 기술](2026/2026-09-30-area43-s6.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [43. 데이터·관측성·배포 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area43-s7.md) | [43. 데이터·관측성·배포](../categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 다른 연구영역과의 연결](2026/2026-09-30-area44-s10.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 열린 질문](2026/2026-09-30-area44-s11.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 왜 중요한가](2026/2026-09-30-area44-s3.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 핵심 개념과 용어](2026/2026-09-30-area44-s4.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 접근법과 기술](2026/2026-09-30-area44-s6.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area44-s7.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [44. 로봇 기반 모델·언어 모델 계획 — 대표 연구와 자료](2026/2026-09-30-area44-s8.md) | [44. 로봇 기반 모델·언어 모델 계획](../categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 다른 연구영역과의 연결](2026/2026-09-30-area45-s10.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 열린 질문](2026/2026-09-30-area45-s11.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 왜 중요한가](2026/2026-09-30-area45-s3.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 핵심 개념과 용어](2026/2026-09-30-area45-s4.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 대표 접근법과 기술](2026/2026-09-30-area45-s6.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area45-s7.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [45. 문서·도면·장면 이해 — 대표 연구와 자료](2026/2026-09-30-area45-s8.md) | [45. 문서·도면·장면 이해](../categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 다른 연구영역과의 연결](2026/2026-09-30-area46-s10.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 열린 질문](2026/2026-09-30-area46-s11.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 왜 중요한가](2026/2026-09-30-area46-s3.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 핵심 개념과 용어](2026/2026-09-30-area46-s4.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 대표 접근법과 기술](2026/2026-09-30-area46-s6.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area46-s7.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [46. 예측·학습 기반 최적화 — 대표 연구와 자료](2026/2026-09-30-area46-s8.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

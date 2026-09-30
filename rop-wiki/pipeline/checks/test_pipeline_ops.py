@@ -426,6 +426,15 @@ class LeadSentenceTest(unittest.TestCase):
         self.assertEqual(v._first_sentence("A가 있다. [사실] 짧다.[^r] 뒤."), "A가 있다. [사실]")
         self.assertEqual(v._first_sentence("평범한 문장이다. [사실][^r1][^r2] 다음이다."), "평범한 문장이다. [사실][^r1][^r2]")
 
+    def test_list_section_uses_first_item_only(self):
+        """목록으로 시작하는 절은 첫 항목만 요약하고 다음 항목을 이어 붙이지 않는다."""
+        from lib import validate as v
+        t = "- **클라우드 로보틱스**: 로봇 계산을 클라우드로 옮기는 방식\n- **오프로딩**: 계산을 넘기는 일이다. [사실][^r1]\n"
+        self.assertEqual(v._first_sentence(t), "**클라우드 로보틱스**: 로봇 계산을 클라우드로 옮기는 방식")
+        self.assertEqual(v._lead_sentences(t), "**클라우드 로보틱스**: 로봇 계산을 클라우드로 옮기는 방식")
+        t2 = "1. 첫 항목이다. [사실][^r1]\n2. 둘째다. [사실][^r2]\n"
+        self.assertEqual(v._lead_sentences(t2), "첫 항목이다. [사실][^r1]")
+
 
 if __name__ == "__main__":
     unittest.main()

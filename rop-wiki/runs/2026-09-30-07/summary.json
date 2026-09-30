@@ -1,0 +1,127 @@
+{
+  "run_id": "2026-09-30-07",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 44,
+    "area_name": "44. 로봇 기반 모델·언어 모델 계획",
+    "category": "L. AI·학습 기술"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 8,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "b9310f5",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 5,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2280.9,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 44. 로봇 기반 모델·언어 모델 계획 | 영역 심화: 3~11절 신규 작성(VLA·교차 형태 학습, 언어 모델 계획 검증·불확실도 기반 도움 요청, 가정·제조 공장·물류창고 사례), 각주 15건, 1차 수정 지시 10건·2차 수정 지시 4건 이행 | run 2026-09-30-07",
+  "notes": [
+    "참고문헌 생성: references/ref-1045.md",
+    "참고문헌 생성: references/ref-1046.md",
+    "참고문헌 생성: references/ref-1047.md",
+    "참고문헌 생성: references/ref-1048.md",
+    "참고문헌 생성: references/ref-1049.md",
+    "참고문헌 생성: references/ref-1050.md",
+    "참고문헌 생성: references/ref-1051.md",
+    "참고문헌 생성: references/ref-1052.md",
+    "용어집 생성: glossary/robot-foundation-model.md",
+    "용어집 생성: glossary/cross-embodiment-learning.md",
+    "용어집 생성: glossary/dual-system-architecture.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 8,
+    "standards": 3,
+    "open_questions": 4,
+    "flow_cells": 9,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 10:46:33 KST",
+  "usage": {
+    "input_tokens": 76,
+    "cache_creation_input_tokens": 679563,
+    "cache_read_input_tokens": 4483562,
+    "output_tokens": 206830,
+    "cost_usd": 11.1667,
+    "calls": 9,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 3.5473,
+        "output_tokens": 60130,
+        "cache_read_input_tokens": 3424370,
+        "cache_creation_input_tokens": 137969
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.2754,
+        "output_tokens": 19132,
+        "cache_read_input_tokens": 724934,
+        "cache_creation_input_tokens": 79030
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.4199,
+        "output_tokens": 107998,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 278890
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.8772,
+        "output_tokens": 19162,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 182318
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.038,
+        "output_tokens": 191,
+        "cache_read_input_tokens": 6687,
+        "cache_creation_input_tokens": 1200
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0089,
+        "output_tokens": 217,
+        "cache_read_input_tokens": 6857,
+        "cache_creation_input_tokens": 156
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 0
+}

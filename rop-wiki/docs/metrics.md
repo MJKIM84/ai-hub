@@ -25,15 +25,15 @@ version: 1
 | [A. 기획·사업](categories/planning-and-business/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
-| [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
+| [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
 | [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
-| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 2 | 0 | 0 | 6 | 0 | 0 | 8 |
-| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 3 | 0 | 0 | 6 | 0 | 0 | 9 |
+| [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
+| [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
 | [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
 | [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
@@ -74,9 +74,9 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | seed | — | 2026-09-28 | 1 |
+| [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | 2026-09-30 | 2 |
 | [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | published | medium | 2026-09-25 | 2 |
-| [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md) | seed | — | 2026-09-28 | 1 |
+| [16. 장소 의미·지도 관리](categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | 2026-09-30 | 2 |
 
 **E. 사물·사람·실시간 상태**
 
@@ -136,17 +136,17 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | seed | — | 2026-09-28 | 1 |
+| [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | 2026-09-30 | 2 |
 | [42. 분산 시스템·통신·컴퓨팅 구조](categories/platform-architecture-and-infrastructure/distributed-systems-communication-and-computing.md) | published | low | 2026-09-25 | 2 |
-| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | seed | — | 2026-09-28 | 1 |
+| [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | published | low | 2026-09-30 | 2 |
 
 **L. AI·학습 기술**
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | seed | — | 2026-09-28 | 1 |
-| [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | seed | — | 2026-09-28 | 1 |
-| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | seed | — | 2026-09-28 | 1 |
+| [44. 로봇 기반 모델·언어 모델 계획](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | published | medium | 2026-09-30 | 2 |
+| [45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | published | medium | 2026-09-30 | 2 |
+| [46. 예측·학습 기반 최적화](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | 2026-09-30 | 2 |
 | [47. AI·학습·적응과 모델 운영](categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) | published | medium | 2026-09-25 | 2 |
 
 **M. 안전**
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 107회 중 최종 통과 105회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 105, None 2
-- 2차 검증 판정: 통과 105, None 2
+- 실행 114회 중 최종 통과 112회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 112, None 2
+- 2차 검증 판정: 통과 112, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 441 |
-| 오픈소스 문서 | 194 |
-| 표준 | 158 |
-| 기사 | 74 |
-| 정부·연구기관 | 74 |
-| 벤더 문서 | 53 |
-| 업계 보고서 | 15 |
+| 논문 | 475 |
+| 오픈소스 문서 | 201 |
+| 표준 | 166 |
+| 기사 | 79 |
+| 정부·연구기관 | 76 |
+| 벤더 문서 | 61 |
+| 업계 보고서 | 16 |
 
-신뢰도: medium 764건, high 170건, low 75건
+신뢰도: medium 805건, high 189건, low 80건
 
 ### 현장 유형 매트릭스 채움률
 
-- 31/119 칸 (26%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 43/119 칸 (36%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

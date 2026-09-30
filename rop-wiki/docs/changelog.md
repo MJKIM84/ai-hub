@@ -20,6 +20,163 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-09-30-09 | 갱신 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 영역 심화: 섹션 3~11 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 프런트매터 related_areas·tags·sources·confidence 추가(2차 재실행: 이 페이지 본문 변경 없음) |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s6.md](topics/2026/2026-09-30-area46-s6.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "6. 대표 접근법과 기술" 절(1,868자)을 옮겼다. 2차: DeepFleet·34. 시뮬레이션·예측용 디지털 트윈 구분 문장의 태그를 [의견]에서 [추정]으로 되돌렸다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s8.md](topics/2026/2026-09-30-area46-s8.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "8. 대표 연구와 자료" 절(1,712자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s4.md](topics/2026/2026-09-30-area46-s4.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "4. 핵심 개념과 용어" 절(1,029자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s10.md](topics/2026/2026-09-30-area46-s10.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(942자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s11.md](topics/2026/2026-09-30-area46-s11.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "11. 열린 질문" 절(669자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s3.md](topics/2026/2026-09-30-area46-s3.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "3. 왜 중요한가" 절(613자)을 옮겼다 |
+| 2026-09-30-09 | 생성 | [docs/topics/2026/2026-09-30-area46-s7.md](topics/2026/2026-09-30-area46-s7.md) | 자동 분리: 46. 예측·학습 기반 최적화 의 "7. 관련 표준·프레임워크·오픈소스" 절(463자)을 옮겼다. 2차: League of Robot Runners 행에서 대회 성격 서술(브리프 밖)을 뺐다 |
+| 2026-09-30-09 | 요약 | [docs/categories/ai-and-learning/prediction-and-learning-based-optimization.md](categories/ai-and-learning/prediction-and-learning-based-optimization.md) | 46. 예측·학습 기반 최적화: 영역 심화: 3~11절 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 1차 수정 지시 11건·2차 수정 지시 2건 이행 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1053.md](references/ref-1053.md) | 참고문헌 ref-1053 등록: DeepFleet: Multi-Agent Foundation Models for Mobile Robots |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1054.md](references/ref-1054.md) | 참고문헌 ref-1054 등록: Amazon builds first foundation model for multirobot coordina… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1055.md](references/ref-1055.md) | 참고문헌 ref-1055 등록: MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1056.md](references/ref-1056.md) | 참고문헌 ref-1056 등록: POGEMA: A Benchmark Platform for Cooperative Multi-Agent Pat… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1057.md](references/ref-1057.md) | 참고문헌 ref-1057 등록: AI-Enabled Predictive Maintenance Framework for Autonomous M… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1058.md](references/ref-1058.md) | 참고문헌 ref-1058 등록: Multi-Parameter Predictive Model of Mobile Robot's Battery D… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1059.md](references/ref-1059.md) | 참고문헌 ref-1059 등록: 현대차, '로봇 고장' AI로 잡는다…5일전 90%이상 감지 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1060.md](references/ref-1060.md) | 참고문헌 ref-1060 등록: ISO 13381-1:2025 Condition monitoring and diagnostics of mac… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1061.md](references/ref-1061.md) | 참고문헌 ref-1061 등록: Smart "Predict, then Optimize" |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1062.md](references/ref-1062.md) | 참고문헌 ref-1062 등록: Model-Based Reinforcement Learning for Heterogeneous Multi-R… |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1063.md](references/ref-1063.md) | 참고문헌 ref-1063 등록: 'AI 혁신 기술'이 이끄는 CJ대한통운의 스마트 물류 혁명 |
+| 2026-09-30-09 | 생성 | [docs/references/ref-1064.md](references/ref-1064.md) | 참고문헌 ref-1064 등록: Guidance Graph Optimization for Lifelong Multi-Agent Path Fi… |
+| 2026-09-30-09 | 생성 | [docs/glossary/decision-focused-learning.md](glossary/decision-focused-learning.md) | 용어집 항목 결정 중심 학습 |
+| 2026-09-30-09 | 생성 | [docs/glossary/predictive-maintenance.md](glossary/predictive-maintenance.md) | 용어집 항목 예지 정비 |
+| 2026-09-30-09 | 생성 | [docs/glossary/imitation-learning.md](glossary/imitation-learning.md) | 용어집 항목 모방 학습 |
+| 2026-09-30-09 | 생성 | [docs/glossary/guidance-graph.md](glossary/guidance-graph.md) | 용어집 항목 안내 그래프 |
+| 2026-09-30-09 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 2건 추가·갱신 |
+| 2026-09-30-08 | 갱신 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 영역 심화: 3~11절 신규 작성(문서 파싱·데이터시트 속성 추출·도면 인식·고정 카메라와 로봇 인식 융합, 상업 시설·제조 공장·물류창고·실외 적용 사례), 각주 16건, 새 열린 질문 4건. 2차: 10절 첫 문장의 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s6.md](topics/2026/2026-09-30-area45-s6.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "6. 대표 접근법과 기술" 절(2,104자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s11.md](topics/2026/2026-09-30-area45-s11.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "11. 열린 질문" 절(1,145자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s7.md](topics/2026/2026-09-30-area45-s7.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,004자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s10.md](topics/2026/2026-09-30-area45-s10.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절을 옮겼다. 2차: 세 줄 요약 첫 항목과 본문 첫 문장의 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s4.md](topics/2026/2026-09-30-area45-s4.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "4. 핵심 개념과 용어" 절(862자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s8.md](topics/2026/2026-09-30-area45-s8.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "8. 대표 연구와 자료" 절(798자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 생성 | [docs/topics/2026/2026-09-30-area45-s3.md](topics/2026/2026-09-30-area45-s3.md) | 자동 분리: 45. 문서·도면·장면 이해 의 "3. 왜 중요한가" 절(729자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-08 | 요약 | [docs/categories/ai-and-learning/document-drawing-and-scene-understanding.md](categories/ai-and-learning/document-drawing-and-scene-understanding.md) | 45. 문서·도면·장면 이해: 영역 심화: 3~11절 신규 작성(문서 파싱·데이터시트 속성 추출·도면 인식·고정 카메라와 로봇 인식 융합, 현장 유형 사례 4건), 각주 16건, 새 열린 질문 4건. 2차: 10절 영역 호칭을 번호와 이름으로 고침 |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1065.md](references/ref-1065.md) | 참고문헌 ref-1065 등록: Multi-Robot Planning and Control from CCTV Camera Networks i… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1066.md](references/ref-1066.md) | 참고문헌 ref-1066 등록: A High-Precision Method for Segmentation and Recognition of… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1067.md](references/ref-1067.md) | 참고문헌 ref-1067 등록: OmniDocBench: Benchmarking Diverse PDF Document Parsing with… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1068.md](references/ref-1068.md) | 참고문헌 ref-1068 등록: Docling: An Efficient Open-Source Toolkit for AI-driven Docu… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1069.md](references/ref-1069.md) | 참고문헌 ref-1069 등록: RGB-only Active 3D Scene Graph Generation for Indoor Mobile… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1070.md](references/ref-1070.md) | 참고문헌 ref-1070 등록: Language-Grounded Hierarchical Planning and Execution with M… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1071.md](references/ref-1071.md) | 참고문헌 ref-1071 등록: AAS-RAIL: Improving Information Extraction for Asset Adminis… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1072.md](references/ref-1072.md) | 참고문헌 ref-1072 등록: Generation of Asset Administration Shell with Large Language… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1073.md](references/ref-1073.md) | 참고문헌 ref-1073 등록: AECV-Bench: Benchmarking Multimodal Models on Architectural… |
+| 2026-09-30-08 | 생성 | [docs/references/ref-1074.md](references/ref-1074.md) | 참고문헌 ref-1074 등록: LangExtract — README |
+| 2026-09-30-08 | 생성 | [docs/glossary/document-layout-analysis.md](glossary/document-layout-analysis.md) | 용어집 항목 문서 레이아웃 분석 |
+| 2026-09-30-08 | 생성 | [docs/glossary/table-structure-recognition.md](glossary/table-structure-recognition.md) | 용어집 항목 표 구조 인식 |
+| 2026-09-30-08 | 생성 | [docs/glossary/source-grounding.md](glossary/source-grounding.md) | 용어집 항목 출처 근거 연결 |
+| 2026-09-30-08 | 생성 | [docs/glossary/infrastructure-mounted-sensing.md](glossary/infrastructure-mounted-sensing.md) | 용어집 항목 인프라 장착 센서 |
+| 2026-09-30-08 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 4건 추가·갱신 |
+| 2026-09-30-07 | 갱신 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 영역 심화: seed → draft, 3~11절 신규 작성(자동 분리 후 요약·링크), 각주 15건, 1차 수정 지시 10건 이행. 2차: 5절 도입 문장을 가정 [사실]과 제조 공장·물류창고 [추정] 벤더 주장으로 분리, 5절에 VLA(용어집 링크)·PoC, 7절에 PDDL 풀어쓰기 |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s6.md](topics/2026/2026-09-30-area44-s6.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "6. 대표 접근법과 기술" 절(1,491자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s4.md](topics/2026/2026-09-30-area44-s4.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "4. 핵심 개념과 용어" 절(1,296자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s8.md](topics/2026/2026-09-30-area44-s8.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차: RT-2 '출발점' 평가 삭제·f1·f3 범위로 재서술, LLM+P 문장을 분리해 [사실]`[^ref-092]` 부여(각주 정의·sources 추가), [의견]은 Kambhampati 외 주장에만 |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s10.md](topics/2026/2026-09-30-area44-s10.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(953자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s7.md](topics/2026/2026-09-30-area44-s7.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "7. 관련 표준·프레임워크·오픈소스" 절(651자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s3.md](topics/2026/2026-09-30-area44-s3.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "3. 왜 중요한가" 절(584자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 생성 | [docs/topics/2026/2026-09-30-area44-s11.md](topics/2026/2026-09-30-area44-s11.md) | 자동 분리: 44. 로봇 기반 모델·언어 모델 계획 의 "11. 열린 질문" 절(527자)을 옮겼다(2차 재실행에서 변경 없음) |
+| 2026-09-30-07 | 요약 | [docs/categories/ai-and-learning/robot-foundation-models-and-llm-planning.md](categories/ai-and-learning/robot-foundation-models-and-llm-planning.md) | 44. 로봇 기반 모델·언어 모델 계획: 영역 심화: 3~11절 신규 작성(VLA·교차 형태 학습, 언어 모델 계획 검증·불확실도 기반 도움 요청, 가정·제조 공장·물류창고 사례), 각주 15건, 1차 수정 지시 10건·2차 수정 지시 4건 이행 |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1045.md](references/ref-1045.md) | 참고문헌 ref-1045 등록: RT-2: Vision-Language-Action Models Transfer Web Knowledge t… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1046.md](references/ref-1046.md) | 참고문헌 ref-1046 등록: OpenVLA: An Open-Source Vision-Language-Action Model |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1047.md](references/ref-1047.md) | 참고문헌 ref-1047 등록: π0.5: a Vision-Language-Action Model with Open-World General… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1048.md](references/ref-1048.md) | 참고문헌 ref-1048 등록: Open X-Embodiment: Robotic Learning Datasets and RT-X Models |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1049.md](references/ref-1049.md) | 참고문헌 ref-1049 등록: GR00T N1: An Open Foundation Model for Generalist Humanoid R… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1050.md](references/ref-1050.md) | 참고문헌 ref-1050 등록: K-휴머노이드 연합, 출범 3주 만에 협약 4건 성과 |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1051.md](references/ref-1051.md) | 참고문헌 ref-1051 등록: BMW Group advances the use of Physical AI in production with… |
+| 2026-09-30-07 | 생성 | [docs/references/ref-1052.md](references/ref-1052.md) | 참고문헌 ref-1052 등록: VLA 이식한 로보티즈 'AI 워커', 물류 현장 난제 해결사로 전격 투입 |
+| 2026-09-30-07 | 생성 | [docs/glossary/robot-foundation-model.md](glossary/robot-foundation-model.md) | 용어집 항목 로봇 기반 모델 |
+| 2026-09-30-07 | 생성 | [docs/glossary/cross-embodiment-learning.md](glossary/cross-embodiment-learning.md) | 용어집 항목 교차 형태 학습 |
+| 2026-09-30-07 | 생성 | [docs/glossary/dual-system-architecture.md](glossary/dual-system-architecture.md) | 용어집 항목 이중 시스템 구조 |
+| 2026-09-30-07 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-30-06 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 섹션 3~11 신규 작성(seed → draft): 기록 형식·관측성·배포·비용 관리 접근법, 병원·물류창고 적용 사례, 책임 경계, 연결 영역 17개, 열린 질문 6건 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s6.md](topics/2026/2026-09-30-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,750자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s10.md](topics/2026/2026-09-30-area43-s10.md) | 자동 분리: 43. 데이터·관측성·배포 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(1,115자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s7.md](topics/2026/2026-09-30-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,055자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s4.md](topics/2026/2026-09-30-area43-s4.md) | 자동 분리: 43. 데이터·관측성·배포 의 "4. 핵심 개념과 용어" 절(975자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s11.md](topics/2026/2026-09-30-area43-s11.md) | 자동 분리: 43. 데이터·관측성·배포 의 "11. 열린 질문" 절(889자)을 옮겼다 |
+| 2026-09-30-06 | 생성 | [docs/topics/2026/2026-09-30-area43-s3.md](topics/2026/2026-09-30-area43-s3.md) | 자동 분리: 43. 데이터·관측성·배포 의 "3. 왜 중요한가" 절(743자)을 옮겼다 |
+| 2026-09-30-06 | 요약 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 43. 데이터·관측성·배포: 섹션 3~11 신규 작성(seed → draft): 기록·관측성·배포·비용 접근법, 병원·물류창고 적용 사례, 책임 경계, 열린 질문 6건. 1차 조건부 승인 수정 15건 이행 |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1032.md](references/ref-1032.md) | 참고문헌 ref-1032 등록: ros2_tracing: Multipurpose Low-Overhead Framework for Real-T… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1033.md](references/ref-1033.md) | 참고문헌 ref-1033 등록: ros2probe: Non-intrusive, Kernel-selective Observability for… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1034.md](references/ref-1034.md) | 참고문헌 ref-1034 등록: Iron Irwini (iron) |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1035.md](references/ref-1035.md) | 참고문헌 ref-1035 등록: MCAP as the ROS 2 Default Bag Format |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1036.md](references/ref-1036.md) | 참고문헌 ref-1036 등록: Specification Status Summary |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1037.md](references/ref-1037.md) | 참고문헌 ref-1037 등록: semantic-conventions-genai/docs/gen-ai/gen-ai-token-metrics.… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1038.md](references/ref-1038.md) | 참고문헌 ref-1038 등록: ros-opentelemetry — ROS2 x OpenTelemetry README |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1039.md](references/ref-1039.md) | 참고문헌 ref-1039 등록: Enhancing the Resilience of ROS 2-Based Multi-Robot Systems… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1040.md](references/ref-1040.md) | 참고문헌 ref-1040 등록: mender — README |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1041.md](references/ref-1041.md) | 참고문헌 ref-1041 등록: FinOps Phases |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1042.md](references/ref-1042.md) | 참고문헌 ref-1042 등록: Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconcilia… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1043.md](references/ref-1043.md) | 참고문헌 ref-1043 등록: Design and Evaluation of LLM Chaining-Based Task Planning fo… |
+| 2026-09-30-06 | 생성 | [docs/references/ref-1044.md](references/ref-1044.md) | 참고문헌 ref-1044 등록: Ocado's digital twins and simulations: driving efficiencies… |
+| 2026-09-30-06 | 생성 | [docs/glossary/observability.md](glossary/observability.md) | 용어집 항목 관측성 |
+| 2026-09-30-06 | 생성 | [docs/glossary/opentelemetry.md](glossary/opentelemetry.md) | 용어집 항목 오픈텔레메트리 |
+| 2026-09-30-06 | 생성 | [docs/glossary/mcap.md](glossary/mcap.md) | 용어집 항목 MCAP |
+| 2026-09-30-06 | 생성 | [docs/glossary/finops.md](glossary/finops.md) | 용어집 항목 핀옵스 |
+| 2026-09-30-06 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 6건 추가·갱신 |
+| 2026-09-30-05 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 섹션 3~11 신규 작성(seed → draft): 판단 배치 혼합 구조, 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건. 1차 조건부 승인 수정 17건과 2차 수정 5건(3절 일반화 2건 좁힘, 4절 도입 단락, [의견] 주체 표시, 약어 풀이) 이행 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s6.md](topics/2026/2026-09-30-area41-s6.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "6. 대표 접근법과 기술" 절(3,254자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s4.md](topics/2026/2026-09-30-area41-s4.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "4. 핵심 개념과 용어" 절(1,132자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s7.md](topics/2026/2026-09-30-area41-s7.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "7. 관련 표준·프레임워크·오픈소스" 절(962자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s10.md](topics/2026/2026-09-30-area41-s10.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(879자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s3.md](topics/2026/2026-09-30-area41-s3.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "3. 왜 중요한가" 절(844자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s8.md](topics/2026/2026-09-30-area41-s8.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "8. 대표 연구와 자료" 절(832자)을 옮겼다 |
+| 2026-09-30-05 | 생성 | [docs/topics/2026/2026-09-30-area41-s11.md](topics/2026/2026-09-30-area41-s11.md) | 자동 분리: 41. 플랫폼 아키텍처·외부 API 의 "11. 열린 질문" 절(571자)을 옮겼다 |
+| 2026-09-30-05 | 요약 | [docs/categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | 41. 플랫폼 아키텍처·외부 API: 섹션 3~11 신규 작성(로봇·현장 서버·클라우드 혼합 배치, REST·이벤트·웹훅·SDK 외부 API 조합, 병원·제조 공장·물류창고·기타 적용 사례 4건, 책임 경계, 열린 질문 4건), 1차 조건부 승인 수정 17건·2차 수정 5건 이행 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1023.md](references/ref-1023.md) | 참고문헌 ref-1023 등록: 로보틱스 l NAVER Corp. |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1024.md](references/ref-1024.md) | 참고문헌 ref-1024 등록: AsyncAPI Specification 3.1.0 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1025.md](references/ref-1025.md) | 참고문헌 ref-1025 등록: OpenAPI Specification v3.1.0 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1026.md](references/ref-1026.md) | 참고문헌 ref-1026 등록: 카카오모빌리티, 로봇-인프라-사용자 연결 '플랫폼 생태계' 구축한다 |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1027.md](references/ref-1027.md) | 참고문헌 ref-1027 등록: Managing a Fleet of Autonomous Mobile Robots (AMR) using Clo… |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1028.md](references/ref-1028.md) | 참고문헌 ref-1028 등록: rmf_api_msgs — README |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1029.md](references/ref-1029.md) | 참고문헌 ref-1029 등록: Contents — InOrbit Developer Portal |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1030.md](references/ref-1030.md) | 참고문헌 ref-1030 등록: Seamless Integrations with LocusOne Robotics |
+| 2026-09-30-05 | 생성 | [docs/references/ref-1031.md](references/ref-1031.md) | 참고문헌 ref-1031 등록: FogROS2-FT: Fault Tolerant Cloud Robotics |
+| 2026-09-30-05 | 생성 | [docs/glossary/openapi-specification.md](glossary/openapi-specification.md) | 용어집 항목 OpenAPI 명세 |
+| 2026-09-30-05 | 생성 | [docs/glossary/asyncapi-specification.md](glossary/asyncapi-specification.md) | 용어집 항목 AsyncAPI 명세 |
+| 2026-09-30-05 | 생성 | [docs/glossary/webhook.md](glossary/webhook.md) | 용어집 항목 웹훅 |
+| 2026-09-30-05 | 생성 | [docs/glossary/cloud-robotics.md](glossary/cloud-robotics.md) | 용어집 항목 클라우드 로보틱스 |
+| 2026-09-30-05 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-30-04 | 갱신 | [docs/categories/space-and-map-model/place-semantics-and-map-management.md](categories/space-and-map-model/place-semantics-and-map-management.md) | 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 장소 목록·지도 버전·구역 집합·차선 폐쇄, 책임 경계, 연결 14개 영역, 열린 질문 9건), 13절 각주, 프런트매터 갱신. 2차 수정: 8절 첫 문장을 이번 브리프 자료 범위로 한정하고 ref-1017 각주 정의 추가 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s6.md](topics/2026/2026-09-30-area16-s6.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "6. 대표 접근법과 기술" 절(2,190자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s11.md](topics/2026/2026-09-30-area16-s11.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "11. 열린 질문" 절(1,766자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s7.md](topics/2026/2026-09-30-area16-s7.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,125자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s8.md](topics/2026/2026-09-30-area16-s8.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "8. 대표 연구와 자료" 절을 옮겼다. 2차 수정: 1절·3절 첫 문장을 이번 브리프 자료 범위로 한정 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s4.md](topics/2026/2026-09-30-area16-s4.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "4. 핵심 개념과 용어" 절(866자)을 옮겼다 |
+| 2026-09-30-04 | 생성 | [docs/topics/2026/2026-09-30-area16-s10.md](topics/2026/2026-09-30-area16-s10.md) | 자동 분리: 16. 장소 의미·지도 관리 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(732자)을 옮겼다 |
+| 2026-09-30-04 | 요약 | [docs/categories/space-and-map-model/place-semantics-and-map-management.md](categories/space-and-map-model/place-semantics-and-map-management.md) | 16. 장소 의미·지도 관리: 영역 심화: 3~11절 신규 작성(병원·가정·기타 적용 사례, 지도 버전·구역 집합·차선 폐쇄·장소 이름 모델, 책임 경계, 연결 14개 영역, 새 열린 질문 6건), 각주 16건 |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1014.md](references/ref-1014.md) | 참고문헌 ref-1014 등록: Unit - Indoor Mapping Data Format |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1015.md](references/ref-1015.md) | 참고문헌 ref-1015 등록: Glossary - Indoor Mapping Data Format |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1016.md](references/ref-1016.md) | 참고문헌 ref-1016 등록: Indoor Mapping Data Format (1.0.0) — OGC Community Standard… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1017.md](references/ref-1017.md) | 참고문헌 ref-1017 등록: osmAG: Hierarchical Semantic Topometric Area Graph Maps in t… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1018.md](references/ref-1018.md) | 참고문헌 ref-1018 등록: osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via S… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1019.md](references/ref-1019.md) | 참고문헌 ref-1019 등록: IEEE 1873-2015 — IEEE Standard for Robot Map Data Representa… |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1020.md](references/ref-1020.md) | 참고문헌 ref-1020 등록: 실내공간정보 |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1021.md](references/ref-1021.md) | 참고문헌 ref-1021 등록: Lifelong update of semantic maps in dynamic environments |
+| 2026-09-30-04 | 생성 | [docs/references/ref-1022.md](references/ref-1022.md) | 참고문헌 ref-1022 등록: Safe and Robust Map Updating for Long-Term Operations in Dyn… |
+| 2026-09-30-04 | 생성 | [docs/glossary/map-version.md](glossary/map-version.md) | 용어집 항목 지도 버전 |
+| 2026-09-30-04 | 생성 | [docs/glossary/alternative-name.md](glossary/alternative-name.md) | 용어집 항목 대체 이름 |
+| 2026-09-30-04 | 생성 | [docs/glossary/semantic-map.md](glossary/semantic-map.md) | 용어집 항목 의미 지도 |
+| 2026-09-30-04 | 생성 | [docs/glossary/3d-scene-graph.md](glossary/3d-scene-graph.md) | 용어집 항목 3차원 장면 그래프 |
+| 2026-09-30-04 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 3건 추가·갱신 |
+| 2026-09-30-03 | 갱신 | [docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합, 책임 경계, 연결 10개 영역, 열린 질문 6건), 13절 각주 15건. 2차 수정: 3절 f20·f21 문장과 9절 f24 문장에 태그·각주 추가, 4절 설계–준공 편차 설명의 [의견] 각주를 떼고 용어 사용 설명으로 바꿈, 8절 BIM-SLAM 항목에 '연계 대상' 표시 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s6.md](topics/2026/2026-09-30-area14-s6.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "6. 대표 접근법과 기술" 절(1,924자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s4.md](topics/2026/2026-09-30-area14-s4.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "4. 핵심 개념과 용어" 절(1,101자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s8.md](topics/2026/2026-09-30-area14-s8.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "8. 대표 연구와 자료" 절(1,017자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s11.md](topics/2026/2026-09-30-area14-s11.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "11. 열린 질문" 절(880자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s10.md](topics/2026/2026-09-30-area14-s10.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)" 절(825자)을 옮겼다 |
+| 2026-09-30-03 | 생성 | [docs/topics/2026/2026-09-30-area14-s3.md](topics/2026/2026-09-30-area14-s3.md) | 자동 분리: 14. 도면·BIM에서 지도 만들기 의 "3. 왜 중요한가" 절(748자)을 옮겼다 |
+| 2026-09-30-03 | 요약 | [docs/categories/space-and-map-model/maps-from-floor-plans-and-bim.md](categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | 14. 도면·BIM에서 지도 만들기: 영역 심화: 3~11절 신규 작성(병원·기타 적용 사례, 평면도 인식·BIM 변환·도면 기준 정합), 1차 조건부 승인 수정 13건과 2차 수정 4건 이행 |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1010.md](references/ref-1010.md) | 참고문헌 ref-1010 등록: Raster-to-Vector: Revisiting Floorplan Transformation |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1011.md](references/ref-1011.md) | 참고문헌 ref-1011 등록: Connecting Semantic Building Information Models and Robotics… |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1012.md](references/ref-1012.md) | 참고문헌 ref-1012 등록: 건축 도면 데이터 |
+| 2026-09-30-03 | 생성 | [docs/references/ref-1013.md](references/ref-1013.md) | 참고문헌 ref-1013 등록: "설계부터 100% 도입" 건설산업 BIM 활성화 로드맵 공개 |
+| 2026-09-30-03 | 생성 | [docs/glossary/level-alignment-fiducial.md](glossary/level-alignment-fiducial.md) | 용어집 항목 층 정렬 기준점 |
+| 2026-09-30-03 | 생성 | [docs/glossary/space-boundary.md](glossary/space-boundary.md) | 용어집 항목 공간 경계 |
+| 2026-09-30-03 | 생성 | [docs/glossary/as-planned-vs-as-built-deviation.md](glossary/as-planned-vs-as-built-deviation.md) | 용어집 항목 설계–준공 편차 |
 | 2026-09-30-02 | 갱신 | [docs/categories/site-type-applications/other-sites.md](categories/site-type-applications/other-sites.md) | 섹션 3~11 신규 작성(seed → draft): 현장 유형 기타 사례 4건(Equinor CCS 시설 점검, 건설 현장 점검, 농업 로봇 통합 관리·운반, 네이버 1784 사내 배달)을 여섯 항목으로 정리, 접근법 6가지, 표준 5건, 책임 경계, 연결 영역 17개, 열린 질문 5건. 2차 수정: 출처 5건 제목 정정, 9절 태그 추가, BIM·라이다·RMF 첫 등장 풀어 쓰기. 2차 재검증 수정: 9절 RMF 풀이를 Robotics Middleware Framework 로 정정 |
 | 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s6.md](topics/2026/2026-09-30-area67-s6.md) | 자동 분리: 67. 기타 현장 의 "6. 대표 접근법과 기술" 절(1,209자)을 옮겼다. 2차 수정: 출처 제목 정정(ref-995·1000·1002·1006·1007) |
 | 2026-09-30-02 | 생성 | [docs/topics/2026/2026-09-30-area67-s7.md](topics/2026/2026-09-30-area67-s7.md) | 자동 분리: 67. 기타 현장 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,102자)을 옮겼다. ref-004 각주 줄은 참고문헌 페이지가 입력에 없어 이전 값을 유지했다(퍼블리셔 대조 요청) |

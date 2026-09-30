@@ -1,0 +1,690 @@
+{
+  "run_id": "2026-09-30-06",
+  "outline": [
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "공개 자료를 종합하면 플랫폼 자체를 관리해야 하는 까닭은 기록의 한계, 관찰의 부담, 실패 원인 분석, 언어 모델 호출 비용, 기록 보관 의무 다섯 가지로 모인다. [추정][^ref-1032][^ref-1033][^ref-943][^ref-1043][^ref-766]",
+      "planned_findings": [
+        "f22",
+        "f2",
+        "f3",
+        "f17",
+        "f14",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "기록은 백 파일과 MCAP, 관찰은 OpenTelemetry 신호와 실행 추적, 배포는 A/B 분할 업데이트, 비용은 FinOps·FOCUS 가 기본 용어다. [사실][^ref-1034][^ref-1036][^ref-1041]",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f6",
+        "f1",
+        "f8",
+        "f7",
+        "f10",
+        "f12",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1300,
+      "summary": "병원(고려대학교 구로병원 약품 배송 로봇 실증의 로봇·승강기 로그 기반 실패 분석)과 물류창고(Ocado 의 배포 전 시뮬레이션 검증, 벤더 주장) 두 사례이며 다른 현장 유형 사례는 찾지 못했다. [사실][^ref-943]",
+      "planned_findings": [
+        "f15",
+        "f16",
+        "f17",
+        "f18",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 2200,
+      "summary": "자기 기술형 기록 형식과 기록 DB, OpenTelemetry 기반 플랫폼 관찰과 저부하 로봇 내부 추적, 컨테이너 자동 재시작·A/B 롤백·배포 전 검증, 표준 청구 데이터와 토큰 지표를 쓰는 FinOps 주기의 조합이 공통 형태로 보인다. [추정][^ref-1034][^ref-1036][^ref-1039][^ref-1042]",
+      "planned_findings": [
+        "f21",
+        "f4",
+        "f5",
+        "f20",
+        "f6",
+        "f8",
+        "f1",
+        "f3",
+        "f9",
+        "f10",
+        "f19",
+        "f12",
+        "f13",
+        "f7",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 800,
+      "summary": "rosbag2·MCAP, ros2_tracing, ros2probe, OpenTelemetry 명세와 생성형 AI 토큰 지표, ros-opentelemetry, K3s, Mender(연계 대상), FinOps 프레임워크, FOCUS 1.2 와 2023-6호 개인정보 고시(현행 미확인). [사실][^ref-1034][^ref-1036][^ref-1042]",
+      "planned_findings": [
+        "f4",
+        "f1",
+        "f3",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f12",
+        "f13",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 700,
+      "summary": "ros2_tracing(2022), ros2probe(2026 프리프린트), K3s 다중 로봇 복원력 연구(2025), 서비스 로봇 LLM 연쇄 계획(2026 프리프린트), 구로병원 약품 배송 실증(2026)이 대표 자료다. [사실][^ref-1032][^ref-943]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f9",
+        "f14",
+        "f15",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 900,
+      "summary": "ROP 는 플랫폼 서비스의 관찰·보존, 작업 단위 추적 문맥과 로봇·설비 기록의 수집 인터페이스, 플랫폼 배포·롤백, 비용 계측을 맡고 로봇 펌웨어 OTA·로봇 내부 추적·승강기 로그 생성·청구 데이터 생성은 연계 대상으로 보인다. [추정][^ref-1036][^ref-1040][^ref-943]",
+      "planned_findings": [
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1100,
+      "summary": "관제·분석(37·38·39), 아키텍처·통신(41·42), 수명주기·시험(54·57), 시뮬레이션(34), 보안·개인정보(52·53), 비용(3), 언어 모델(13·44·47), 설비(22), 현장(61·63)과 이어진다. [추정][^ref-943]",
+      "planned_findings": [
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 900,
+      "summary": "이종 기록·추적 연결, 텔레메트리 보존 기준, 토큰 지표 이름 고정, 무중단 순차 배포 기준, 현행 개인정보 고시 조항, 구로병원 성공률 분모 여섯 질문을 올린다.",
+      "planned_findings": [
+        "f8",
+        "f11",
+        "f7",
+        "f10",
+        "f18"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "섹션 3~11 신규 작성(seed → draft): 기록 형식·관측성·배포·비용 관리 접근법, 병원·물류창고 적용 사례, 책임 경계, 연결 영역 17개, 열린 질문 6건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"6. 대표 접근법과 기술\" 절(2,750자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,115자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,055자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"4. 핵심 개념과 용어\" 절(975자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"11. 열린 질문\" 절(889자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area43-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 43. 데이터·관측성·배포 의 \"3. 왜 중요한가\" 절(743자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 43. 데이터·관측성·배포 | 섹션 3~11 신규 작성(seed → draft): 기록·관측성·배포·비용 접근법, 병원·물류창고 적용 사례, 책임 경계, 열린 질문 6건. 1차 조건부 승인 수정 15건 이행 | run 2026-09-30-06",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 43. 데이터·관측성·배포: 섹션 3~11 신규 작성(MCAP·OpenTelemetry·A/B 롤백·FinOps 접근법, 병원·물류창고 적용 사례, 책임 경계, 열린 질문 6건)",
+    "category_recent": "2026-09-30 — 43. 데이터·관측성·배포: 섹션 3~11 신규 작성(seed → draft). 기록 형식·플랫폼 관찰·배포 롤백·비용 계측과 책임 경계 정리",
+    "area_recent": "2026-09-30 — 43. 데이터·관측성·배포: 섹션 3~11 신규 작성, 1차 조건부 승인 수정 15건 이행 (실행 2026-09-30-06)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "observability",
+      "term_ko": "관측성",
+      "term_en": "Observability",
+      "definition": "시스템이 내보내는 로그·지표·추적 같은 원격 측정 데이터만으로 내부 상태와 오류·성능 원인을 알아낼 수 있는 정도, 또는 그것을 가능하게 하는 수집·분석 체계다.",
+      "related_areas": [
+        43,
+        37,
+        38
+      ],
+      "sources": [
+        "ref-1036"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "opentelemetry",
+      "term_ko": "오픈텔레메트리",
+      "term_en": "OpenTelemetry (OTel)",
+      "definition": "추적·지표·로그를 생성·수집·전송하는 API·SDK·전송 프로토콜(OTLP)과 의미 규약을 정한 벤더 중립 오픈소스 관측성 표준 프로젝트다.",
+      "related_areas": [
+        43,
+        38,
+        47
+      ],
+      "sources": [
+        "ref-1036",
+        "ref-1037"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "mcap",
+      "term_ko": "MCAP",
+      "term_en": "MCAP",
+      "definition": "여러 채널의 시간 표시 메시지를 스키마와 함께 담는 자기 기술형 로깅 파일 형식으로, ROS 2 Iron 부터 rosbag2 의 기본 기록 형식이다.",
+      "related_areas": [
+        43,
+        37,
+        38
+      ],
+      "sources": [
+        "ref-1034",
+        "ref-1035"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "finops",
+      "term_ko": "핀옵스",
+      "term_en": "FinOps",
+      "definition": "클라우드·SaaS·AI 서비스 비용과 사용량 데이터를 정보·최적화·운영 단계로 반복 관리하며 엔지니어링·재무·사업 팀이 비용 책임을 나누는 운영 방식이다.",
+      "related_areas": [
+        43,
+        3
+      ],
+      "sources": [
+        "ref-1041"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-762",
+      "org": "Open Robotics (open-rmf)",
+      "title": "rmf-web/packages/api-server/README.md",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 웹 API 서버의 REST 엔드포인트·OpenAPI 문서·기록 DB·인증 구조 설명.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ]
+    },
+    {
+      "id": "ref-1032",
+      "org": "Bédard, C., Lütkebohle, I., & Dagenais, M. (IEEE RA-L, arXiv)",
+      "title": "ros2_tracing: Multipurpose Low-Overhead Framework for Real-Time Tracing of ROS 2",
+      "published": "2022-07",
+      "url": "https://arxiv.org/abs/2201.00393",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "LTTng 기반 ROS 2 계측·추적 도구 모음. 종단 간 메시지 지연 증가 평균 0.0033 ms 보고. 초록 페이지만 열람.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1033",
+      "org": "Yu, J., Lee, S., Choi, Y., & Park, K.-J. (arXiv)",
+      "title": "ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware",
+      "published": "2026-06",
+      "url": "https://arxiv.org/abs/2606.10746",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "ROS 2 도메인에 참여하지 않고 커널 필터로 선택한 토픽만 관찰하는 프레임워크(동료 심사 전 프리프린트). 관찰자 CPU·메모리 감소와 포화 시 무손실 보고. 초록 기준.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1034",
+      "org": "Open Robotics (ROS 2 Documentation)",
+      "title": "Iron Irwini (iron)",
+      "published": "2023-05-23",
+      "url": "https://docs.ros.org/en/rolling/Releases/Release-Iron-Irwini.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "ROS 2 Iron 릴리스 노트. rosbag2 기본 기록 형식을 mcap 으로 바꾸고 원격 기록 제어 서비스 등을 더함.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1035",
+      "org": "Foxglove",
+      "title": "MCAP as the ROS 2 Default Bag Format",
+      "published": "2022-12-22",
+      "url": "https://foxglove.dev/blog/mcap-as-the-ros2-default-bag-format",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Iron 부터 MCAP 이 ROS 2 기본 백 형식이 된다는 발표와 SQLite3 대비 장점(벤더 주장).",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1036",
+      "org": "OpenTelemetry (CNCF)",
+      "title": "Specification Status Summary",
+      "published": null,
+      "url": "https://opentelemetry.io/docs/specs/status/",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "OpenTelemetry 신호(추적·지표·로그·배기지·프로파일)별 API·SDK·프로토콜 안정성 상태.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1037",
+      "org": "OpenTelemetry (open-telemetry/semantic-conventions-genai)",
+      "title": "semantic-conventions-genai/docs/gen-ai/gen-ai-token-metrics.md",
+      "published": null,
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "생성형 AI 추론 토큰 지표(입력·출력·캐시·추론 토큰 카운터와 호출별 히스토그램)의 의미 규약. 개발 단계.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1038",
+      "org": "szobov (GitHub)",
+      "title": "ros-opentelemetry — ROS2 x OpenTelemetry README",
+      "published": null,
+      "url": "https://github.com/szobov/ros-opentelemetry",
+      "type": "오픈소스 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "ROS 2 C++·Python 노드에 OpenTelemetry 분산 추적·로그 연결을 넣는 개인 관리 오픈소스 라이브러리. 라이선스 표기 미확인.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1039",
+      "org": "Zhang, J., Yu, X., & Westerlund, T. (Sensors 25(16):5067)",
+      "title": "Enhancing the Resilience of ROS 2-Based Multi-Robot Systems with Kubernetes: A Case Study on UWB-Based Relative Positioning",
+      "published": "2025-08-14",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390455/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "K3s 로 컨테이너화한 ROS 2 노드를 다중 로봇에서 운영하고 파드 장애 시 자동 재시작으로 위치 정확도를 유지함을 보인 실험실 연구. PMC 본문 열람.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1040",
+      "org": "Northern.tech (mendersoftware)",
+      "title": "mender — README",
+      "published": null,
+      "url": "https://github.com/mendersoftware/mender",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "임베디드 리눅스용 오픈소스 OTA 업데이트 관리자. A/B 루트 파일시스템 분할과 자동 롤백(README 설명).",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-766",
+      "org": "개인정보보호위원회 (국가법령정보센터)",
+      "title": "개인정보의 안전성 확보조치 기준 (개인정보보호위원회고시 제2023-6호)",
+      "published": "2023-09-22",
+      "url": "https://www.law.go.kr/admRulLsInfoP.do?chrClsCd=010202&admRulSeq=2100000229672",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람(제8조 조문 본문). 개인정보처리자의 안전성 확보조치 고시 2023-6호 판. 접속기록 보관 기간 등은 검색 요약 기준이며 이후 개정 고시(제2025-9호)가 있어 현행 조문 미확인.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1041",
+      "org": "FinOps Foundation",
+      "title": "FinOps Phases",
+      "published": null,
+      "url": "https://www.finops.org/framework/phases/",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "FinOps 프레임워크의 정보·최적화·운영 세 단계 설명.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1042",
+      "org": "FinOps Foundation",
+      "title": "Introducing FOCUS 1.2: SaaS/PaaS Support, Invoice Reconciliation, and more",
+      "published": "2025-06-03",
+      "url": "https://www.finops.org/insights/focus-1-2-available/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "발행 기관의 발표 글(명세 본문 미열람). 청구 데이터 명세 FOCUS 1.2(2025-05-29 비준)의 새 기능(SaaS·PaaS, 가상 통화, InvoiceId, 다중 통화)과 지원 사업자 발표.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-943",
+      "org": "Lee, Y., Kim, S.-E., Kim, J. S. 외 (Digital Health 12)",
+      "title": "Feasibility of autonomous medication delivery robots considering elevator utilization in high-traffic hospital environments",
+      "published": "2026-03-31",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13039597/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "고려대학교 구로병원 약품 배송 로봇 122건 실증. 로봇·승강기 로그와 수기 기록으로 승강기 가동률과 실패의 관계 분석. PMC 본문 열람.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1043",
+      "org": "Bruno, L. D. M., Sim, J., & Hagiwara, Y. (arXiv)",
+      "title": "Design and Evaluation of LLM Chaining-Based Task Planning for General Purpose Service Robots",
+      "published": "2026-09",
+      "url": "https://arxiv.org/abs/2609.29043",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "두 단계 LLM 연쇄 계획으로 프롬프트 길이를 줄이고 로컬·클라우드 모델을 비교한 서비스 로봇 연구(동료 심사 전 프리프린트). 클라우드 API 비용·지연을 동기로 듦.",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1044",
+      "org": "Ocado Group",
+      "title": "Ocado's digital twins and simulations: driving efficiencies and innovation at scale",
+      "published": "2025-06-04",
+      "url": "https://www.ocadogroup.com/newsroom/stories/digital-twins-and-simulations",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Ocado 가 창고 로봇 알고리즘·운영 변경을 시뮬레이션·디지털 트윈에서 먼저 시험한다는 회사 글(벤더 주장).",
+      "cited_by": [
+        "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "서로 다른 제조사 로봇의 기록(MCAP·제조사 로그)과 플랫폼 서비스의 분산 추적을 하나의 작업 식별자로 이어 원인 분석에 쓴 공개 사례나 표준이 있는가?",
+      "areas": [
+        43,
+        38
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 플랫폼이 수집하는 텔레메트리·주행 기록·영상의 보존 기간을 정한 국내 기준이나 운영 사례가 개인정보 접속기록 규정 밖에도 있는가?",
+      "areas": [
+        43,
+        53
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "개발 단계인 토큰 지표의 이름(gen_ai.client.inference.usage.* 와 다른 문서의 gen_ai.client.token.usage)이 바뀌었는지 미확인인데, 언어 모델 호출 비용 계측을 안정 판이 나오기 전까지 어떤 기준으로 고정할 것인가?",
+      "areas": [
+        43,
+        13
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "운행 중인 로봇 작업을 끊지 않고 현장 서버·로봇에 플랫폼 소프트웨어를 순차 배포하고 되돌리는 시점·기준을 공개한 로봇 관제 제품이나 연구가 있는가?",
+      "areas": [
+        43,
+        57
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 플랫폼에 적용될 수 있는 현행 「개인정보의 안전성 확보조치 기준」(2023-6호 이후 개정판)의 접속기록 보관 기간·점검 주기 조항이 2023-6호와 같은가?",
+      "areas": [
+        43,
+        53
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "구로병원 실증의 전체 성공률 87.03% 가 122건 중 실패 14건과 맞지 않는데(약 88.5%) 성공률의 분모는 무엇인가?",
+      "areas": [
+        43,
+        63
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시",
+      "title": "43. 데이터·관측성·배포"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시",
+      "title": "43. 데이터·관측성·배포"
+    },
+    {
+      "site_type": "병원",
+      "item": "완료·인계",
+      "link": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시",
+      "title": "43. 데이터·관측성·배포"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시",
+      "title": "43. 데이터·관측성·배포"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md#5-적용-사례-현장-유형-명시",
+      "title": "43. 데이터·관측성·배포"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "MCAP (rosbag2 기본 기록 형식, ROS 2 Iron 부터)",
+      "kind": "오픈소스",
+      "org": "Foxglove (ROS 2 채택: Open Robotics)",
+      "url": "https://foxglove.dev/blog/mcap-as-the-ros2-default-bag-format",
+      "related_areas": [
+        43,
+        37,
+        38
+      ],
+      "summary": "여러 채널의 시간 표시 메시지를 메시지 정의와 함께 담는 기록 형식. ROS 2 Iron Irwini(2023-05-23)부터 rosbag2 의 기본 기록 형식이다.",
+      "ref_id": "ref-1035"
+    },
+    {
+      "name": "OpenTelemetry 생성형 AI 의미 규약 — 토큰 지표",
+      "kind": "오픈소스",
+      "org": "OpenTelemetry (CNCF)",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "related_areas": [
+        43,
+        13,
+        47
+      ],
+      "summary": "언어 모델 호출의 입력·출력·캐시·추론 토큰 카운터와 호출별 토큰 히스토그램을 정의한다. 2026-09-30 확인 기준 모두 개발 단계.",
+      "ref_id": "ref-1037"
+    },
+    {
+      "name": "ros-opentelemetry",
+      "kind": "오픈소스",
+      "org": "szobov (GitHub, 개인 저장소)",
+      "url": "https://github.com/szobov/ros-opentelemetry",
+      "related_areas": [
+        43,
+        38
+      ],
+      "summary": "ROS 2 메시지의 사용자 정의 필드로 추적 문맥을 전파해 토픽·서비스·액션을 가로지르는 분산 추적과 로그 연결을 제공하는 라이브러리. 라이선스 표기 미확인.",
+      "ref_id": "ref-1038"
+    },
+    {
+      "name": "Mender (OTA 업데이트 관리자)",
+      "kind": "오픈소스",
+      "org": "Northern.tech (mendersoftware)",
+      "url": "https://github.com/mendersoftware/mender",
+      "related_areas": [
+        43,
+        57
+      ],
+      "summary": "임베디드 리눅스·사물인터넷 장치용 클라이언트–서버 방식 무선 업데이트 관리자. A/B 루트 파일시스템 분할과 이미지 단위 원자적 배포, Apache 2.0.",
+      "ref_id": "ref-1040"
+    },
+    {
+      "name": "FinOps 프레임워크 (FinOps Phases)",
+      "kind": "프레임워크",
+      "org": "FinOps Foundation",
+      "url": "https://www.finops.org/framework/phases/",
+      "related_areas": [
+        43,
+        3
+      ],
+      "summary": "기술 비용·사용량 데이터를 정보·최적화·운영 세 단계로 반복 관리하는 방식. 대상에 공용 클라우드·SaaS·AI 서비스를 포함한다.",
+      "ref_id": "ref-1041"
+    },
+    {
+      "name": "FOCUS 1.2 (FinOps 청구 데이터 명세)",
+      "kind": "표준",
+      "org": "FinOps Foundation",
+      "url": "https://www.finops.org/insights/focus-1-2-available/",
+      "related_areas": [
+        43,
+        3
+      ],
+      "summary": "2025-05-29 비준. SaaS·PaaS 청구 데이터를 클라우드 비용과 같은 스키마에 넣고 가상 통화(크레딧·토큰)·다중 통화·InvoiceId 를 더했다(발표 글 기준, 명세 본문 미열람).",
+      "ref_id": "ref-1042"
+    }
+  ],
+  "additional_research_requests": [
+    "3·7·9·11절: 개인정보보호위원회고시 제2025-9호 제8조와 부칙 시행일 확인 — 현행 접속기록 보관 기간·점검 주기 조항이 2023-6호와 같은지 알아야 강등된 보존 의무 서술을 [사실]로 바로잡을 수 있다.",
+    "5절 병원 사례: 구로병원 약품 배송 로봇 실증의 수행 자원(로봇·간호사·승강기 역할 분담)과 제약(승강기·시간·구역 제약) — 여섯 항목 가운데 두 칸이 미확인이다. 수령인(간호사) 확인 여부와 성공률 분모도 원문에서 재확인이 필요하다.",
+    "5절 물류창고 사례: Ocado 또는 다른 창고의 배포 전 검증 사례에서 시작 조건·작업 대상·수행 자원·제약·완료·인계 — 벤더 글 외 독립 출처가 없고 다섯 칸이 미확인이다.",
+    "5절: 제조 공장·상업 시설·가정·실외·기타 현장에서 운영 데이터 수집·관측성·소프트웨어 배포(롤백 포함)를 다룬 사례 — 이번 조사에서 찾지 못했다.",
+    "6·11절: OpenTelemetry 생성형 AI 토큰 지표의 이전 이름(gen_ai.client.token.usage)과 현재 이름(gen_ai.client.inference.usage.*)의 관계와 변경 시점.",
+    "6·7절: FOCUS 1.2 명세 본문(PDF) 열람 — 발표 글만 근거로 했다.",
+    "6·11절: 이종 제조사 로봇 기록과 플랫폼 분산 추적을 한 작업 식별자로 잇는 공개 사례·표준, 운행 중 로봇 작업을 끊지 않는 순차 배포·롤백 기준을 공개한 관제 제품·연구.",
+    "6·8절: ros2_tracing·ros2probe·LLM 연쇄 계획 논문의 본문 실험 조건(초록 기준 서술을 보강하기 위해).",
+    "다음 실행 제안: 38. 모니터링·이상 탐지·원인 분석 페이지에 ros2_tracing·ros2probe·구로병원 로그 분석 결과 반영, 57. 자산·소프트웨어 수명주기 관리 페이지에 Mender A/B 업데이트 반영."
+  ],
+  "fixes_applied": [
+    "f11 강등 — 3·7·9·10절의 접속기록 문장을 모두 [추정]으로 쓰고 7절에 '제2023-6호(2023-09-22 시행 판) 기준이며 이후 개정 여부와 현행 조문(점검 주기 포함)은 미확인'을 밝혔으며 '월 1회 이상 점검'은 본문에서 뺐다.",
+    "ref-766 원문 미열람 — 13절 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-766 에 source_unopened: true 와 신뢰도 medium 을 넣었다.",
+    "현행 고시 열린 질문 — 11절과 open_question_updates 에 현행 「개인정보의 안전성 확보조치 기준」 접속기록 조항 질문(관련 영역 43·53)을 더하고 additional_research_requests 에 '개인정보보호위원회고시 제2025-9호 제8조와 부칙 시행일 확인'을 넣었다.",
+    "f22 한정 — 3절 다섯째 까닭을 '2023-09-22 시행 판 기준 접속기록 보관 의무가 있었다(현행 조문 미확인)'로 한정해 [추정]으로 썼다.",
+    "f16 — 5절 병원 사례 완료·인계 칸을 '로봇이 사람 개입 없이 전체 경로를 마치고 약품을 인계'로 쓰고 간호사 수령은 정의에 넣지 않았다.",
+    "f17 — 로봇·승강기 로그와 관찰 기록지를 병원 사례의 예외·성과 칸과 서술에 두고 작업 대상 칸은 약품으로 썼으며 site_matrix_updates 도 시작 조건·작업 대상·완료·인계·예외·성과로 맞췄다.",
+    "f18 — 성공률·실패 건수를 '저자 보고'로만 옮기고 분모를 계산해 덧붙이지 않았으며, 11절과 open_question_updates 에 성공률 분모 질문(관련 영역 43·63)을 지시 문구대로 올렸다.",
+    "5절 미확인 — 병원 사례의 수행 자원·제약과 물류창고 사례의 시작 조건·작업 대상·수행 자원·제약·완료·인계를 '미확인'으로 두고, 제조 공장·상업 시설·가정·실외 사례를 찾지 못했음을 밝혔으며 K3s 실험실 연구와 LLM 계획 평가 실험은 적용 사례로 쓰지 않았다.",
+    "f5·f19 벤더 주장 — MCAP 장점과 Ocado 문장을 모두 '[추정] 벤더 주장'으로 쓰고, 6절 첫머리 종합 추정에서 배포 전 시뮬레이션 검증이 벤더 주장 근거임을 별도 문장으로 밝혔다(9·10절에도 같은 한정).",
+    "f10 — 6절에서 'Mender README 는 업데이트 중 전원이 끊겨도 동작하던 상태로 되돌릴 수 있다고 설명한다'처럼 출처의 설명으로 서술하고 '연계 대상:'으로 시작했다.",
+    "f3·f14 — 3·6·8절에서 ros2probe 와 LLM 연쇄 계획 연구를 '동료 심사 전 arXiv 프리프린트'로 밝혔다.",
+    "ref-1042 — reference_updates 의 발행일을 2025-06-03 으로 적고 본문 기준일은 비준일 2025-05-29 로 유지했으며, 각주에 '발행 기관의 발표 글, 명세 본문 미열람'을 밝혔다.",
+    "ref-1044 — 참고문헌과 각주의 제목을 'Ocado's digital twins and simulations: driving efficiencies and innovation at scale' 로 고쳤다.",
+    "11절 셋째 질문 — '개발 단계인 토큰 지표의 이름(gen_ai.client.inference.usage.* 와 다른 문서의 gen_ai.client.token.usage)이 바뀌었는지 미확인인데'로 고쳐 이름 변경 단정을 없앴고 open_question_updates 에도 같은 문구로 냈다.",
+    "10절 교차 규칙 — 토큰 지표·LLM 호출 비용을 44. 로봇 기반 모델·언어 모델 계획, 47. AI·학습·적응과 모델 운영, 13. 대화형 기능의 신뢰·기반에 번호와 이름으로 연결하고, Ocado 사례는 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)에만 연결했으며 18. 실시간 세계 상태·데이터 일관성은 연결하지 않았다.",
+    "분량 초과 자동 분리: 43. 데이터·관측성·배포 본문 10,414자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,745자"
+  ]
+}

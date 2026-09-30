@@ -272,6 +272,9 @@ _LEAD_SENT = (r"^(.+?다\.(?:\s*\[(?:사실|추정|의견|분류원문|가설|�
               r"(?:[ \t]+[^\s\[\].][^\[\]\n.]{0,30}?(?=\[\^))?(?:\[\^[^\]]+\])*)")
 
 
+_LIST_ITEM = re.compile(r"^(?:[-*+]|\d+[.)])\s+")
+
+
 def _first_sentence(text: str) -> str:
     """절 본문의 첫 문장(태그·각주 포함). 요약이 없을 때 대신 쓴다."""
     t = _COMMENT.sub("", text).strip()
@@ -279,7 +282,16 @@ def _first_sentence(text: str) -> str:
         para = para.strip()
         if not para or para.startswith(("|", "#", "```", "!!!", ">")):
             continue
-        para = re.sub(r"^[-*]\s+", "", para)
+        if _LIST_ITEM.match(para):
+            # 목록으로 시작하는 절은 첫 항목만 쓴다 — 항목이 '다.'로 끝나지 않으면 다음 항목까지 이어 붙어
+            # 요약이 ' - '로 이어진 한 줄이 됐다(2026-09-30 41번 2차 검증 지적).
+            lines = para.split("\n")
+            item = [lines[0]]
+            for ln in lines[1:]:
+                if _LIST_ITEM.match(ln.strip()) or not ln.strip():
+                    break
+                item.append(ln)
+            para = _LIST_ITEM.sub("", "\n".join(item), count=1)
         m = re.search(_LEAD_SENT, para, re.S)
         return (m.group(1) if m else para.split("\n")[0]).strip()
     return ""
@@ -293,6 +305,9 @@ def _lead_sentences(text: str, max_sentences: int = 2, max_chars: int = 300) -> 
     out = first
     rest_src = _COMMENT.sub("", text).strip()
     pos = rest_src.find(first)
+    head = rest_src[:pos].rstrip() if pos >= 0 else ""
+    if head.endswith(("-", "*", "+")) or re.search(r"(?:^|\n)\s*\d+[.)]$", head):
+        return out   # 목록 첫 항목이면 다음 항목을 둘째 문장으로 붙이지 않는다
     if pos >= 0 and max_sentences > 1:
         rest = rest_src[pos + len(first):]
         para_end = re.search(r"\n\s*\n", rest)

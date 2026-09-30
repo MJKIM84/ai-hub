@@ -1,0 +1,130 @@
+{
+  "run_id": "2026-09-30-08",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 45,
+    "area_name": "45. 문서·도면·장면 이해",
+    "category": "L. AI·학습 기술"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "fffc61d",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 3438.4,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 45. 문서·도면·장면 이해 | 영역 심화: 3~11절 신규 작성(문서 파싱·데이터시트 속성 추출·도면 인식·고정 카메라와 로봇 인식 융합, 현장 유형 사례 4건), 각주 16건, 새 열린 질문 4건. 2차: 10절 영역 호칭을 번호와 이름으로 고침 | run 2026-09-30-08",
+  "notes": [
+    "참고문헌 생성: references/ref-1065.md",
+    "참고문헌 생성: references/ref-1066.md",
+    "참고문헌 생성: references/ref-1067.md",
+    "참고문헌 생성: references/ref-1068.md",
+    "참고문헌 생성: references/ref-1069.md",
+    "참고문헌 생성: references/ref-1070.md",
+    "참고문헌 생성: references/ref-1071.md",
+    "참고문헌 생성: references/ref-1072.md",
+    "참고문헌 생성: references/ref-1073.md",
+    "참고문헌 생성: references/ref-1074.md",
+    "용어집 생성: glossary/document-layout-analysis.md",
+    "용어집 생성: glossary/table-structure-recognition.md",
+    "용어집 생성: glossary/source-grounding.md",
+    "용어집 생성: glossary/infrastructure-mounted-sensing.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 10,
+    "standards": 4,
+    "open_questions": 4,
+    "flow_cells": 12,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 11:15:31 KST",
+  "usage": {
+    "input_tokens": 92,
+    "cache_creation_input_tokens": 678957,
+    "cache_read_input_tokens": 6111100,
+    "output_tokens": 183731,
+    "cost_usd": 11.3965,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.1017,
+        "output_tokens": 36700,
+        "cache_read_input_tokens": 4369401,
+        "cache_creation_input_tokens": 90404
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.7325,
+        "output_tokens": 23264,
+        "cache_read_input_tokens": 1407441,
+        "cache_creation_input_tokens": 89196
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.6258,
+        "output_tokens": 111872,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 294954
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.8881,
+        "output_tokens": 11425,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 203024
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.038,
+        "output_tokens": 212,
+        "cache_read_input_tokens": 6687,
+        "cache_creation_input_tokens": 1167
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0104,
+        "output_tokens": 258,
+        "cache_read_input_tokens": 6857,
+        "cache_creation_input_tokens": 212
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 0
+}

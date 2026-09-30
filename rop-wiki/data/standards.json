@@ -3276,6 +3276,307 @@
       "ref_id": "ref-1004",
       "run_id": "2026-09-30-02",
       "date": "2026-09-30"
+    },
+    {
+      "name": "IEEE 1873-2015 Robot Map Data Representation for Navigation",
+      "org": "IEEE Standards Association (IEEE RAS)",
+      "kind": "표준",
+      "related_areas": [
+        16,
+        15,
+        21
+      ],
+      "url": "https://standards.ieee.org/standard/1873-2015.html",
+      "summary": "항법하는 이동 로봇의 2차원 메트릭·위상 지도 데이터 모델·형식을 정한 표준(2015-10-26 발행). 2026-03-26 비활성 보류(Inactive-Reserved) 상태가 됐다.",
+      "ref_id": "ref-1019",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "osmAG (OSM 형식 계층형 위상·거리 의미 지도)",
+      "org": "Feng, D. 외 (arXiv)",
+      "kind": "프레임워크",
+      "related_areas": [
+        16,
+        15
+      ],
+      "url": "https://arxiv.org/abs/2309.04791",
+      "summary": "OpenStreetMap XML 위에 실내·실외 다층 환경의 계층형 위상·거리 의미 지도를 담는 파일 형식과 ROS 연동 C++ 라이브러리. 초록 기준.",
+      "ref_id": "ref-1017",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open-RMF 차선 요청 메시지(rmf_fleet_msgs LaneRequest)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        16,
+        27
+      ],
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "summary": "플릿 이름(fleet_name)과 열 차선(open_lanes)·닫을 차선(close_lanes)의 차선 번호 배열로 이루어진 메시지 정의.",
+      "ref_id": "ref-569",
+      "run_id": "2026-09-30-04",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "OpenAPI Specification 3.1.0",
+      "org": "OpenAPI Initiative",
+      "kind": "표준",
+      "related_areas": [
+        41,
+        23
+      ],
+      "url": "https://spec.openapis.org/oas/v3.1.0",
+      "summary": "HTTP API 를 사람과 컴퓨터가 함께 이해하도록 기술하는 언어 중립 표준 형식(2021-02-15). 3.1.0 에는 수신 웹훅을 기술하는 webhooks 필드가 있다.",
+      "ref_id": "ref-1025",
+      "run_id": "2026-09-30-05",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "AsyncAPI Specification 3.1.0",
+      "org": "AsyncAPI Initiative",
+      "kind": "표준",
+      "related_areas": [
+        41,
+        21
+      ],
+      "url": "https://www.asyncapi.com/docs/reference/specification/v3.1.0",
+      "summary": "MQTT·AMQP·WebSocket·Kafka 등 메시지 기반 API 를 채널·동작·메시지·서버·바인딩으로 기술하는 프로토콜 중립 명세. Apache 2.0 라이선스.",
+      "ref_id": "ref-1024",
+      "run_id": "2026-09-30-05",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FogROS2 (클라우드·포그 로보틱스 플랫폼)",
+      "org": "Ichnowski, J., Chen, K., Dharmarajan, K. 외",
+      "kind": "오픈소스",
+      "related_areas": [
+        41,
+        42
+      ],
+      "url": "https://arxiv.org/abs/2205.09778",
+      "summary": "연산 능력이 제한된 로봇이 ROS 2 노드를 원격 클라우드로 옮겨 실행하게 하는 ROS 2 배포판 포함 플랫폼. SLAM·파지·모션 계획 가속을 저자가 보고했다(arXiv v3 초록 기준).",
+      "ref_id": "ref-304",
+      "run_id": "2026-09-30-05",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "MCAP (rosbag2 기본 기록 형식, ROS 2 Iron 부터)",
+      "org": "Foxglove (ROS 2 채택: Open Robotics)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        37,
+        38
+      ],
+      "url": "https://foxglove.dev/blog/mcap-as-the-ros2-default-bag-format",
+      "summary": "여러 채널의 시간 표시 메시지를 메시지 정의와 함께 담는 기록 형식. ROS 2 Iron Irwini(2023-05-23)부터 rosbag2 의 기본 기록 형식이다.",
+      "ref_id": "ref-1035",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "OpenTelemetry 생성형 AI 의미 규약 — 토큰 지표",
+      "org": "OpenTelemetry (CNCF)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        13,
+        47
+      ],
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "summary": "언어 모델 호출의 입력·출력·캐시·추론 토큰 카운터와 호출별 토큰 히스토그램을 정의한다. 2026-09-30 확인 기준 모두 개발 단계.",
+      "ref_id": "ref-1037",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ros-opentelemetry",
+      "org": "szobov (GitHub, 개인 저장소)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        38
+      ],
+      "url": "https://github.com/szobov/ros-opentelemetry",
+      "summary": "ROS 2 메시지의 사용자 정의 필드로 추적 문맥을 전파해 토픽·서비스·액션을 가로지르는 분산 추적과 로그 연결을 제공하는 라이브러리. 라이선스 표기 미확인.",
+      "ref_id": "ref-1038",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Mender (OTA 업데이트 관리자)",
+      "org": "Northern.tech (mendersoftware)",
+      "kind": "오픈소스",
+      "related_areas": [
+        43,
+        57
+      ],
+      "url": "https://github.com/mendersoftware/mender",
+      "summary": "임베디드 리눅스·사물인터넷 장치용 클라이언트–서버 방식 무선 업데이트 관리자. A/B 루트 파일시스템 분할과 이미지 단위 원자적 배포, Apache 2.0.",
+      "ref_id": "ref-1040",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FinOps 프레임워크 (FinOps Phases)",
+      "org": "FinOps Foundation",
+      "kind": "프레임워크",
+      "related_areas": [
+        43,
+        3
+      ],
+      "url": "https://www.finops.org/framework/phases/",
+      "summary": "기술 비용·사용량 데이터를 정보·최적화·운영 세 단계로 반복 관리하는 방식. 대상에 공용 클라우드·SaaS·AI 서비스를 포함한다.",
+      "ref_id": "ref-1041",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FOCUS 1.2 (FinOps 청구 데이터 명세)",
+      "org": "FinOps Foundation",
+      "kind": "표준",
+      "related_areas": [
+        43,
+        3
+      ],
+      "url": "https://www.finops.org/insights/focus-1-2-available/",
+      "summary": "2025-05-29 비준. SaaS·PaaS 청구 데이터를 클라우드 비용과 같은 스키마에 넣고 가상 통화(크레딧·토큰)·다중 통화·InvoiceId 를 더했다(발표 글 기준, 명세 본문 미열람).",
+      "ref_id": "ref-1042",
+      "run_id": "2026-09-30-06",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open X-Embodiment 데이터셋·RT-X 모델",
+      "org": "Open X-Embodiment Collaboration",
+      "kind": "오픈소스",
+      "related_areas": [
+        44,
+        4,
+        5
+      ],
+      "url": "https://arxiv.org/abs/2310.08864",
+      "summary": "21개 기관이 모은 22종 로봇의 데이터(527개 스킬, 160,266개 작업)를 표준 형식으로 공개하고, 이 데이터로 학습한 RT-X 모델이 교차 형태 전이를 보였다고 보고했다.",
+      "ref_id": "ref-1048",
+      "run_id": "2026-09-30-07",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "OpenVLA",
+      "org": "Kim, M. J., Pertsch, K., Karamcheti, S. 외",
+      "kind": "오픈소스",
+      "related_areas": [
+        44
+      ],
+      "url": "https://arxiv.org/abs/2406.09246",
+      "summary": "실제 로봇 시연 97만 건으로 학습한 70억 매개변수 공개 VLA 모델로, 체크포인트·미세조정 노트북·PyTorch 코드를 공개했다. 라이선스는 미확인.",
+      "ref_id": "ref-1046",
+      "run_id": "2026-09-30-07",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "GR00T N1",
+      "org": "NVIDIA",
+      "kind": "오픈소스",
+      "related_areas": [
+        44
+      ],
+      "url": "https://arxiv.org/abs/2503.14734",
+      "summary": "시각–언어 모듈(System 2)과 확산 트랜스포머(System 1)를 나눈 이중 시스템 구조의 휴머노이드용 공개 기반 모델이다.",
+      "ref_id": "ref-1049",
+      "run_id": "2026-09-30-07",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "POGEMA (협동 다중 에이전트 경로 찾기 벤치마크 플랫폼)",
+      "org": "Skrynnik, A. 외 (ICLR 2025)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        27,
+        46,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2407.14931",
+      "summary": "고전·학습·혼합 MAPF 방법을 같은 조건에서 비교하는 벤치마크 플랫폼. 고전 MAPF 에서 LaCAM, 지속형 MAPF 에서 RHCR 가 앞서고 MARL 방법이 크게 뒤처진다는 비교 결과를 보고했다.",
+      "ref_id": "ref-1056",
+      "run_id": "2026-09-30-09",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ISO 13381-1:2025 기계 상태 감시·진단 — 예지 — Part 1: 일반 지침과 요구사항",
+      "org": "ISO (ISO/TC 108)",
+      "kind": "표준",
+      "related_areas": [
+        38,
+        46,
+        57
+      ],
+      "url": "https://www.iso.org/standard/88029.html",
+      "summary": "원문 미열람. 기계 상태 감시·진단의 예지 일반 지침 3판(2015년 2판 대체). 이해관계자가 예지 개념을 공유하고 정확한 예지에 필요한 데이터·특성·절차를 정하게 하는 것이 목적이다.",
+      "ref_id": "ref-1060",
+      "run_id": "2026-09-30-09",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Docling (AI 기반 문서 변환 오픈소스 도구)",
+      "org": "IBM Research",
+      "kind": "오픈소스",
+      "related_areas": [
+        45,
+        4,
+        55
+      ],
+      "url": "https://arxiv.org/abs/2501.17887",
+      "summary": "여러 문서 형식을 하나의 구조화 표현으로 바꾸는 MIT 라이선스 도구로, 레이아웃 분석에 DocLayNet 기반 모델, 표 구조 인식에 TableFormer 를 쓴다.",
+      "ref_id": "ref-1068",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "LangExtract (원문 위치 근거를 붙이는 LLM 정보 추출 라이브러리)",
+      "org": "Google (google/langextract)",
+      "kind": "오픈소스",
+      "related_areas": [
+        45,
+        4,
+        7
+      ],
+      "url": "https://github.com/google/langextract",
+      "summary": "LLM 으로 비정형 텍스트에서 구조화 정보를 추출하면서 항목마다 원문 위치를 연결하고 HTML 검토 화면을 만드는 Apache 2.0 라이브러리. 구글 공식 지원 제품은 아니다.",
+      "ref_id": "ref-1074",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "AECV-Bench (건축·엔지니어링 도면 이해 벤치마크)",
+      "org": "Kondratenko, A. 외 (arXiv 2601.04819)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        45,
+        14,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2601.04819",
+      "summary": "평면도 120장 개수 세기와 질의응답 192쌍으로 멀티모달 모델의 도면 이해를 평가하며, 글자 인식은 최대 0.95, 심볼 이해·개수 세기는 대개 0.40~0.55 로 보고했다.",
+      "ref_id": "ref-1073",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "FloorPlanCAD (파놉틱 심볼 스포팅용 CAD 평면도 데이터셋)",
+      "org": "Fan, Z. 외 (arXiv 2105.07147)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        45,
+        14
+      ],
+      "url": "https://arxiv.org/abs/2105.07147",
+      "summary": "주거·상업 건물 CAD 평면도 1만 장 이상을 벡터 그래픽으로 담고 30개 범주를 주석한 데이터셋으로, 파놉틱 심볼 스포팅 과제와 기준 방법을 제시했다.",
+      "ref_id": "ref-067",
+      "run_id": "2026-09-30-08",
+      "date": "2026-09-30"
     }
   ]
 }

@@ -1,0 +1,132 @@
+{
+  "run_id": "2026-09-30-09",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 46,
+    "area_name": "46. 예측·학습 기반 최적화",
+    "category": "L. AI·학습 기술"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 12,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "2b1a236",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 14
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2507.7,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 46. 예측·학습 기반 최적화 | 영역 심화: 3~11절 신규 작성(학습 기반 배정·경로, 결정 중심 학습, 배터리·고장 예측, 현장 사례 4종), 각주 14건, 1차 수정 지시 11건·2차 수정 지시 2건 이행 | run 2026-09-30-09",
+  "notes": [
+    "참고문헌 생성: references/ref-1053.md",
+    "참고문헌 생성: references/ref-1054.md",
+    "참고문헌 생성: references/ref-1055.md",
+    "참고문헌 생성: references/ref-1056.md",
+    "참고문헌 생성: references/ref-1057.md",
+    "참고문헌 생성: references/ref-1058.md",
+    "참고문헌 생성: references/ref-1059.md",
+    "참고문헌 생성: references/ref-1060.md",
+    "참고문헌 생성: references/ref-1061.md",
+    "참고문헌 생성: references/ref-1062.md",
+    "참고문헌 생성: references/ref-1063.md",
+    "참고문헌 생성: references/ref-1064.md",
+    "용어집 생성: glossary/decision-focused-learning.md",
+    "용어집 생성: glossary/predictive-maintenance.md",
+    "용어집 생성: glossary/imitation-learning.md",
+    "용어집 생성: glossary/guidance-graph.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 12,
+    "standards": 2,
+    "open_questions": 5,
+    "flow_cells": 17,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 11:01:01 KST",
+  "usage": {
+    "input_tokens": 70,
+    "cache_creation_input_tokens": 629534,
+    "cache_read_input_tokens": 4289984,
+    "output_tokens": 178151,
+    "cost_usd": 10.2791,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.5928,
+        "output_tokens": 36016,
+        "cache_read_input_tokens": 3078497,
+        "cache_creation_input_tokens": 84454
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.2776,
+        "output_tokens": 14372,
+        "cache_read_input_tokens": 877229,
+        "cache_creation_input_tokens": 74848
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.4509,
+        "output_tokens": 108763,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 280867
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.9056,
+        "output_tokens": 18276,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 188091
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0433,
+        "output_tokens": 505,
+        "cache_read_input_tokens": 6687,
+        "cache_creation_input_tokens": 1119
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0089,
+        "output_tokens": 219,
+        "cache_read_input_tokens": 6857,
+        "cache_creation_input_tokens": 155
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 13,
+  "cross_checked_findings": 0
+}
