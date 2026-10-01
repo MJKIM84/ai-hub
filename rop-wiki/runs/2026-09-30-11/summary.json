@@ -1,0 +1,167 @@
+{
+  "run_id": "2026-09-30-11",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 52,
+    "area_name": "52. 통신 보호·위협 관리·감사",
+    "category": "N. 보안·개인정보"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "2655d3a",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 4542.8,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 52. 통신 보호·위협 관리·감사 | seed → draft: 3~11절 첫 작성(통신 인증·암호화, 위협 모델, LLM 입력 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 사례), 각주 17건 | run 2026-09-30-11",
+  "notes": [
+    "참고문헌 생성: references/ref-1105.md",
+    "참고문헌 생성: references/ref-1106.md",
+    "참고문헌 생성: references/ref-1107.md",
+    "참고문헌 생성: references/ref-1108.md",
+    "참고문헌 생성: references/ref-1109.md",
+    "참고문헌 생성: references/ref-1110.md",
+    "참고문헌 생성: references/ref-1111.md",
+    "참고문헌 생성: references/ref-1112.md",
+    "참고문헌 생성: references/ref-1113.md",
+    "참고문헌 생성: references/ref-1114.md",
+    "용어집 생성: glossary/stride-threat-classification.md",
+    "용어집 생성: glossary/indirect-prompt-injection.md",
+    "용어집 생성: glossary/security-level-iec-62443.md",
+    "용어집 생성: glossary/tamper-evident-log.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 10,
+    "standards": 3,
+    "open_questions": 5,
+    "flow_cells": 9,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 14:47:02 KST",
+  "usage": {
+    "input_tokens": 96,
+    "cache_creation_input_tokens": 779573,
+    "cache_read_input_tokens": 6776834,
+    "output_tokens": 214309,
+    "cost_usd": 12.7523,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.6798,
+        "output_tokens": 62116,
+        "cache_read_input_tokens": 4857195,
+        "cache_creation_input_tokens": 104497
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.5954,
+        "output_tokens": 36298,
+        "cache_read_input_tokens": 1592231,
+        "cache_creation_input_tokens": 166436
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.189,
+        "output_tokens": 88580,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 298577
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.1836,
+        "output_tokens": 26612,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 202005
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "6. 대표 접근법과 기술",
+        "to": "docs/topics/2026/2026-09-30-area52-s6.md",
+        "chars": 2109
+      },
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "8. 대표 연구와 자료",
+        "to": "docs/topics/2026/2026-09-30-area52-s8.md",
+        "chars": 1206
+      },
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+        "to": "docs/topics/2026/2026-09-30-area52-s10.md",
+        "chars": 1102
+      },
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "3. 왜 중요한가",
+        "to": "docs/topics/2026/2026-09-30-area52-s3.md",
+        "chars": 1079
+      },
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "11. 열린 질문",
+        "to": "docs/topics/2026/2026-09-30-area52-s11.md",
+        "chars": 1063
+      },
+      {
+        "from": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+        "section": "4. 핵심 개념과 용어",
+        "to": "docs/topics/2026/2026-09-30-area52-s4.md",
+        "chars": 1031
+      }
+    ],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 16,
+  "cross_checked_findings": 0
+}

@@ -1,0 +1,131 @@
+{
+  "run_id": "2026-09-30-23",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 59,
+    "area_name": "59. 법·규제·보험·라이선스",
+    "category": "P. 거버넌스·법규·사회"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 12,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "49766ce",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 7958.4,
+  "first_retries": 0,
+  "second_retries": 2,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 59. 법·규제·보험·라이선스 | 영역 심화 3~11절 첫 작성(한국·미국 실외 로봇 운행 규정·보험, EU·한국 제조물 책임, AI·사이버보안·개인정보·산업안전 규제, ROS 2·SPDX·Gazebo 라이선스 규칙), 새 열린 질문 5건 | run 2026-09-30-23",
+  "notes": [
+    "참고문헌 생성: references/ref-1227.md",
+    "참고문헌 생성: references/ref-1228.md",
+    "참고문헌 생성: references/ref-1229.md",
+    "참고문헌 생성: references/ref-1230.md",
+    "참고문헌 생성: references/ref-1231.md",
+    "참고문헌 생성: references/ref-1232.md",
+    "참고문헌 생성: references/ref-1233.md",
+    "참고문헌 생성: references/ref-1234.md",
+    "참고문헌 생성: references/ref-1235.md",
+    "참고문헌 생성: references/ref-1236.md",
+    "참고문헌 생성: references/ref-1237.md",
+    "참고문헌 생성: references/ref-1238.md",
+    "용어집 생성: glossary/product-liability.md",
+    "용어집 생성: glossary/cyber-resilience-act.md",
+    "용어집 생성: glossary/software-bill-of-materials.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 12,
+    "standards": 11,
+    "open_questions": 5,
+    "flow_cells": 3,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 18:30:16 KST",
+  "usage": {
+    "input_tokens": 92,
+    "cache_creation_input_tokens": 1071638,
+    "cache_read_input_tokens": 6039395,
+    "output_tokens": 269510,
+    "cost_usd": 16.0565,
+    "calls": 10,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.0411,
+        "output_tokens": 39196,
+        "cache_read_input_tokens": 4459878,
+        "cache_creation_input_tokens": 92360
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6273,
+        "output_tokens": 22880,
+        "cache_read_input_tokens": 1091752,
+        "cache_creation_input_tokens": 89632
+      },
+      "storyteller": {
+        "calls": 3,
+        "cost_usd": 8.1996,
+        "output_tokens": 182210,
+        "cache_read_input_tokens": 215673,
+        "cache_creation_input_tokens": 564033
+      },
+      "verification2": {
+        "calls": 3,
+        "cost_usd": 3.084,
+        "output_tokens": 24521,
+        "cache_read_input_tokens": 265398,
+        "cache_creation_input_tokens": 317555
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 2
+}

@@ -1,0 +1,709 @@
+{
+  "run_id": "2026-09-30-21",
+  "outline": [
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "단계적 인계 틀·단계적 시험 교훈·전담 운영 조직과 교육 사례·법정 로봇작업 특별교육은 있으나 다중 제조사 로봇 플랫폼의 이관 완료 기준·확대 절차 공개 표준은 확인되지 않았다. [추정][^ref-1318][^ref-1198]",
+      "planned_findings": [
+        "f24",
+        "f15",
+        "f14",
+        "f16",
+        "f4"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1000,
+      "summary": "소프트 랜딩(BSRIA BG 54/2018)은 인계 전·초기 사후 지원·연장 사후 지원을 포함한 여섯 단계 틀이고, 로봇작업 특별교육은 산업용 로봇에 한정되지 않는다. [사실][^ref-1318][^ref-1315]",
+      "planned_findings": [
+        "f5",
+        "f1",
+        "f2",
+        "f12",
+        "f16",
+        "f10",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 2600,
+      "summary": "병원(에스토니아·한국 사례와 싱가포르·중국 근거), 상업 시설, 물류창고(피킹), 제조 공장, 기타(학교 급식실) 사례를 여섯 항목으로 정리했고 가정·실외 사례는 찾지 못했다. [사실][^ref-1198][^ref-1317]",
+      "planned_findings": [
+        "f7",
+        "f8",
+        "f9",
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f17",
+        "f18",
+        "f16",
+        "f19",
+        "f21",
+        "f22",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1400,
+      "summary": "단계적 인계·사후 지원, 시뮬레이션→유사 공간→실제 구역 순 단계 시험, 설정 기반 플릿 추가, 전담 조직과 운영 인력 교육, 참여형 변화 관리·역할 배정이 대표 접근이다. [추정][^ref-1318][^ref-1198]",
+      "planned_findings": [
+        "f5",
+        "f6",
+        "f7",
+        "f15",
+        "f18",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f22",
+        "f19",
+        "f20",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 800,
+      "summary": "별표 5 로봇작업 특별교육, ANSI/A3 R15.08-3-2026, BSRIA BG 54/2018, Open-RMF fleet_adapter_template, VDA 5050 3.0.0 팩트시트, RoMi-H 등재 프로그램이 관련된다. [사실][^ref-1315][^ref-1319]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f23",
+        "f5",
+        "f10",
+        "f11",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 900,
+      "summary": "병원 현장 시험(Valner 외 2022), 병동별 수용 차이(Mutlu·Forlizzi 2008), 호텔 사용 저항(Fu 외 2022), 협업 피킹 역할(Pasparakis 외 2026), 전문가 조사(Pietrantoni 외 2024), 급식 로봇 보고서(한국노동연구원 2024)가 대표 자료다. [사실][^ref-1198][^ref-1323]",
+      "planned_findings": [
+        "f3",
+        "f7",
+        "f14",
+        "f16",
+        "f19",
+        "f20",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 900,
+      "summary": "ROP는 설정 기반 로봇·현장 추가, 이관용 상태·설정·기록, 역할·권한, 확대 전후 성과 기록, 교육·시험용 시뮬레이션을 맡고 법정 교육·조작 교육·통합·인력 편성은 외부와 연계하는 것으로 보인다. [추정][^ref-1319][^ref-1315]",
+      "planned_findings": [
+        "f25",
+        "f26",
+        "f1",
+        "f2",
+        "f23",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1500,
+      "summary": "이관 직전의 55. 현장 조사·설치·시운전, 새 로봇 추가의 4. 이기종 로봇 등록·20. 로봇·제조사 관제 연동, 수용성의 60. 노동·수용성·접근성, 적용 현장인 Q. 현장 유형별 적용 영역들과 이어진다. [추정][^ref-1198][^ref-1319]",
+      "planned_findings": [
+        "f27"
+      ]
+    },
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 700,
+      "summary": "서비스 로봇 운영 인력의 법정 교육 적용, 이관 완료 기준, 현장 간 재사용 비율, 관제 인력 직무 표준, 운영 책임 조직 위치(oq-266)가 열려 있다. [추정][^ref-1315]",
+      "planned_findings": [
+        "f4",
+        "f6",
+        "f10",
+        "f13"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: seed → draft, 섹션 3~11 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건 반영), 각주 18건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,411자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"6. 대표 접근법과 기술\" 절(1,317자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"4. 핵심 개념과 용어\" 절(1,116자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"8. 대표 연구와 자료\" 절(1,044자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(824자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"11. 열린 질문\" 절(779자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area56-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 56. 운영 이관·확대·교육 의 \"3. 왜 중요한가\" 절(676자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 56. 운영 이관·확대·교육 | 영역 심화: seed → draft, 3~11절 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 조건부 승인 수정 14건 반영) | run 2026-09-30-21",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 56. 운영 이관·확대·교육: 영역 심화 초안 작성(단계적 인계·사후 지원, 단계적 시험·확대, 설정 기반 플릿 추가, 운영 인력 교육, 로봇작업 특별교육, 현장 유형 사례 5종)",
+    "category_recent": "2026-09-30 — 56. 운영 이관·확대·교육: 3~11절 신규 작성(병원·상업 시설·물류창고·제조 공장·기타 사례, 이관 완료 기준 공개 표준 미확인)",
+    "area_recent": "2026-09-30 — 56. 운영 이관·확대·교육: 영역 심화, seed → draft, 섹션 3~11 신규 작성(실행 2026-09-30-21)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "soft-landings",
+      "term_ko": "소프트 랜딩",
+      "term_en": "Soft Landings (BSRIA BG 54)",
+      "definition": "건축 프로젝트를 착수·요구 정의, 설계, 시공, 인계 전, 초기 사후 지원, 연장 사후 지원과 사용 후 평가의 여섯 단계로 나누어 시설을 운영 단계로 단계적으로 넘기는 BSRIA 프레임워크이다.",
+      "description": "BG 54/2018(2018-08)이 2014년판을 대체했다. 출판물 색인 설명 기준이며 가이드 본문은 미열람이다. 로봇 운영 이관에 적용한 공개 사례는 확인되지 않았다.",
+      "related_areas": [
+        56,
+        55
+      ],
+      "sources": [
+        "ref-1318"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "special-occupational-safety-and-health-training",
+      "term_ko": "특별안전보건교육",
+      "term_en": "Special Occupational Safety and Health Training (Korea)",
+      "definition": "산업안전보건법 시행규칙 별표 5 가 정한 유해·위험 작업(로봇작업 포함)의 근로자에게 사업주가 추가로 실시하는 안전보건교육이다.",
+      "description": "로봇작업 교육 내용은 로봇의 기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서이며, 법제처 해석(2023-11-21)상 로봇작업은 산업용 로봇 작업에 한정되지 않는다.",
+      "related_areas": [
+        56,
+        50,
+        59
+      ],
+      "sources": [
+        "ref-1315"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "post-occupancy-evaluation",
+      "term_ko": "사용 후 평가",
+      "term_en": "Post-Occupancy Evaluation (POE)",
+      "definition": "시설이나 시스템을 넘겨받아 실제로 쓰기 시작한 뒤 성능과 사용자 경험을 점검해 개선점을 찾는 평가이다.",
+      "description": "BSRIA 소프트 랜딩 프레임워크에서는 연장 사후 지원 단계와 함께 묶인다.",
+      "related_areas": [
+        56,
+        39
+      ],
+      "sources": [
+        "ref-1318"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "VDA 5050 명세 원문(3.0.0). 이번에는 팩트시트 메시지의 목적과 factsheetRequest 즉시 동작을 확인했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1150",
+      "org": "Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)",
+      "title": "The perils of hotel technology: The robot usage resistance model",
+      "published": "2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 중국 고급 호텔 직원 면담으로 로봇 사용 저항 요인(역할 모호성, 추가 업무 등)을 정리한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1199",
+      "org": "지디넷코리아",
+      "title": "로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 (제목 일부만 확인)",
+      "published": "2024-09-19",
+      "url": "https://zdnet.co.kr/view/?no=20240919162124",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 한림대학교성심병원 커맨드센터의 서비스 로봇 통합 운영을 다룬 기사.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-944",
+      "org": "로봇신문",
+      "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (제목 일부만 확인)",
+      "published": "2024-04",
+      "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 한림대학교성심병원의 서비스 로봇 운영과 커맨드센터 역할을 다룬 기사.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1151",
+      "org": "Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008)",
+      "title": "Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction",
+      "published": "2008-03",
+      "url": "https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 병원 배송 로봇 TUG 의 병동별 수용 차이를 민족지로 분석한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1153",
+      "org": "ANSI (The ANSI Blog)",
+      "title": "ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications",
+      "published": null,
+      "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 산업용 이동로봇 응용의 사용자 측 운용·정비 요구사항을 정한 ANSI/A3 R15.08-3-2026 소개 글.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-872",
+      "org": "Changi General Hospital — Centre for Healthcare Assistive & Robotics Technology (CHART)",
+      "title": "RoMi-H Empanelment Programme 2025",
+      "published": "2025-05-01",
+      "url": "https://www.cgh.com.sg/news/robotics/empanelment-for-robotic-middleware-for-healthcare--romi-h--syste",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. RoMi-H 배치 역량을 연 2회 평가해 통합자를 인증하고 명단을 공개하는 싱가포르 병원 프로그램 안내(2026-08-24 갱신).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1161",
+      "org": "Li, M., Liu, X., Gao, Y., Sun, Y., Li, P., Zhou, L., Wei, M., & Li, L. (Scientific Reports 16)",
+      "title": "Application management and effectiveness analysis of intelligent logistics robots in hospital drug and specimen delivery scenarios",
+      "published": "2026-04",
+      "url": "https://www.nature.com/articles/s41598-026-49800-9",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 중국 3차 병원의 약품·검체 배송 AMR 10대를 6개월 병행 대조로 평가한 연구.",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1315",
+      "org": "법제처",
+      "title": "로봇작업의 범위 - 산업용 로봇으로 한정되는지 여부 (안건번호 법제처-23-0872)",
+      "published": "2023-11-21",
+      "url": "https://opinion.lawmaking.go.kr/nl4li/lsItptEmp/438638",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "산업안전보건법 시행규칙 별표 5 특별교육 대상 로봇작업이 산업용 로봇 작업으로 한정되지 않는다는 법령해석과 로봇작업 교육내용.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1198",
+      "org": "Valner, R., Masnavi, H., Rybalskii, I., Põlluäär, R., Kõiv, E., Aabloo, A., Kruusamäe, K., & Singh, A. K. (Frontiers in Robotics and AI)",
+      "title": "Scalable and heterogenous mobile robot fleet-based task automation in crowded hospital environments—a field test",
+      "published": "2022-08-23",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9445435/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "타르투 대학병원에서 RMF 기반 플릿 체계로 TIAGo 를 배치해 혈액 검체를 운반한 현장 시험과 교훈. 이기종 로봇 관리는 시험 환경에서 검증했다.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1317",
+      "org": "주간한국",
+      "title": "한림대성심병원, 장애인 고용 연계 병원 로봇 운영 … (제목 일부만 확인)",
+      "published": "2025-07-23",
+      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7120747",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한림대성심병원과 한국장애인고용공단 경기남부직업능력개발원의 병원 로봇 운영 인력 양성 협약(2025-07-18) 보도.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1318",
+      "org": "BSRIA (NBS 출판물 색인)",
+      "title": "BSRIA Guide BG 54/2018 Soft landings framework 2018. Six phases for better buildings",
+      "published": "2018-08",
+      "url": "https://www.thenbs.com/PublicationIndex/documents/details?Pub=BSRIA&DocId=324192",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "건물 인계와 사후 지원을 여섯 단계로 정리한 BSRIA 소프트 랜딩 프레임워크의 출판물 색인 설명(본문은 유료, 색인 페이지만 열람).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1319",
+      "org": "Open-RMF (open-rmf/fleet_adapter_template 저장소)",
+      "title": "fleet_adapter_template README",
+      "published": null,
+      "url": "https://github.com/open-rmf/fleet_adapter_template",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Python 기반 full_control 플릿 어댑터 참조 템플릿과 config.yaml 구성, 새 플릿 연동 절차.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1320",
+      "org": "Pasparakis, A., De Vries, J., & De Koster, R. (Logistics Research 19(1))",
+      "title": "In control or under control? Human–robot collaboration in warehouse order picking",
+      "published": "2026-02-24",
+      "url": "https://doi.org/10.1108/LORE-03-2025-0028",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "실험 창고에서 사람 선도·로봇 선도 협업 피킹의 생산성·정확도를 비교한 연구(초록·요약 확인).",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1321",
+      "org": "Locus Robotics",
+      "title": "Locus Origin: Collaborative Robots Warehouse",
+      "published": null,
+      "url": "https://locusrobotics.com/locusone/fleet/locus-origin-collaborative-robot",
+      "type": "벤더 문서",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "Locus Origin 협업 피킹 로봇 제품 페이지. 신규 작업자 교육 시간과 다국어 지원에 관한 벤더 주장.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-959",
+      "org": "한국노동연구원",
+      "title": "음식업 서비스 로봇 도입이 직무와 작업장 안전에 미치는 영향 (연구보고서 2024-13)",
+      "published": "2024",
+      "url": "https://repository.kli.re.kr/bitstream/2021.oak/11632/2/(%EC%97%B0%EA%B5%AC%EB%B3%B4%EA%B3%A0)2024-13_%EC%9D%8C%EC%8B%9D%EC%97%85%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A1%9C%EB%B4%87%20%EB%8F%84%EC%9E%85%EC%9D%B4%EC%A7%81%EB%AC%B4%EC%99%80%20%EC%9E%91%EC%97%85%EC%9E%A5%20%EC%95%88%EC%A0%84%EC%97%90%20%EB%AF%B8%EC%B9%98%EB%8A%94%20%EC%98%81%ED%96%A5.pdf",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 급식·조리 로봇 도입이 직무와 작업장 안전에 미친 영향을 분석하고 안전 관리체계·교육 필요를 지적한 보고서(403 으로 열지 못해 검색 요약 기준).",
+      "source_unopened": true,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1323",
+      "org": "Pietrantoni, L. 외 (Frontiers in Robotics and AI)",
+      "title": "Integrating collaborative robots in manufacturing, logistics, and agriculture: Expert perspectives on technical, safety, and human factors",
+      "published": "2024-12-02",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11646840/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "유럽 9개국 전문가 31명의 혼합 방법 조사로 협동로봇 통합의 기술·안전·인적 요인(교육, 변화 저항)을 정리한 연구.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    },
+    {
+      "id": "ref-1324",
+      "org": "로봇신문",
+      "title": "한국로봇산업진흥원, 450억 규모 '2026년 로봇활용 제조혁신 지원사업' 착수",
+      "published": "2026-05-12",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=46336",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "2026년 로봇활용 제조혁신 지원사업(국비 450억원)의 지원 내용과 선정기업 통합교육 보도.",
+      "source_unopened": false,
+      "cited_by": [
+        "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md"
+      ]
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "서비스 로봇(서빙·배송·조리 로봇)을 운영하는 인력에게 산업안전보건법 시행규칙 별표 5 로봇작업 특별교육이 실제로 어떻게 적용되며, 고용노동부 지침이나 사례가 있는가?",
+      "areas": [
+        56,
+        59,
+        50
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "여러 제조사 로봇을 묶는 오케스트레이션 플랫폼을 구축 팀에서 운영 팀으로 넘길 때의 완료 기준(운영 인수 조건, 초기 사후 지원 기간, 지원 책임 이전 시점)을 정한 공개 표준이나 사례가 있는가?",
+      "areas": [
+        56,
+        55
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "한 현장의 시범 운영을 다른 현장으로 넓힐 때 재사용되는 설정(지도·플릿 어댑터·능력 정의)과 현장마다 다시 해야 하는 작업의 비율이나 소요 시간을 측정한 연구가 있는가?",
+      "areas": [
+        56,
+        55,
+        4
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 관제 요원·운영 인력의 직무 역량과 교육 과정을 정한 국가직무능력표준(NCS)이나 공개 교육 표준이 있는가?",
+      "areas": [
+        56,
+        40,
+        60
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "병원",
+      "item": "완료·인계",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "수행 자원",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "예외·성과",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "작업 대상",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "수행 자원",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "물류창고",
+      "item": "예외·성과",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "시작 조건",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "수행 자원",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "기타",
+      "item": "수행 자원",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    },
+    {
+      "site_type": "기타",
+      "item": "제약",
+      "link": "docs/categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md#5-적용-사례-현장-유형-명시",
+      "title": "56. 운영 이관·확대·교육"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "BSRIA BG 54/2018 Soft Landings Framework (소프트 랜딩 프레임워크)",
+      "kind": "프레임워크",
+      "org": "BSRIA",
+      "url": "https://www.thenbs.com/PublicationIndex/documents/details?Pub=BSRIA&DocId=324192",
+      "related_areas": [
+        56,
+        55
+      ],
+      "summary": "건축 프로젝트를 착수·요구 정의부터 인계 전, 초기 사후 지원, 연장 사후 지원과 사용 후 평가까지 여섯 단계로 나눈 인계 틀(2018-08, 2014년판 대체). 출판물 색인 설명 기준이며 로봇 분야 적용 사례는 미확인이다.",
+      "ref_id": "ref-1318"
+    },
+    {
+      "name": "산업안전보건법 시행규칙 별표 5 로봇작업 특별교육",
+      "kind": "프레임워크",
+      "org": "법제처(법령해석 법제처-23-0872 경유)",
+      "url": "https://opinion.lawmaking.go.kr/nl4li/lsItptEmp/438638",
+      "related_areas": [
+        56,
+        50,
+        59
+      ],
+      "summary": "로봇작업 특별교육 내용(기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서)을 정하며, 법제처 해석(2023-11-21)상 대상 로봇작업은 산업용 로봇 작업에 한정되지 않는다.",
+      "ref_id": "ref-1315"
+    }
+  ],
+  "additional_research_requests": [
+    "7절: 산업안전보건법 시행규칙 별표 4 의 로봇작업 특별교육 시간(국가법령정보센터 별표 원문) — 교육 기준의 핵심 수치이나 이번 브리프에서 확인하지 못했다.",
+    "4·6절: BSRIA BG 54/2018 본문의 초기·연장 사후 지원 기간과 활동 — 색인 설명만 확인되어 기간을 미확인으로 두었다.",
+    "6절: ITIL 4 초기 운영 지원(Early Life Support)·하이퍼케어 개념의 공식 자료 — 소프트웨어 운영 이관 틀로 비교가 필요하나 공식 자료를 열지 못했다.",
+    "5절: 가정·실외 현장의 로봇 운영 이관·확대·교육 사례 — 두 현장 유형의 사례가 없다.",
+    "5절: Mutlu·Forlizzi(2008) 연구 병원의 소재 국가와 연구 기간 — 이번 확인 범위에 없어 미확인으로 두었다.",
+    "5·8절: 한국노동연구원 연구보고서 2024-13 원문의 교육 관련 세부 제언(비상정지 버튼 활용 교육, 로봇 청소 시 안전, 정기 교육) — 원문 미열람으로 본문에서 뺐다.",
+    "5절: 한림대학교성심병원 커맨드센터가 실시간 모니터링·문제 대응을 맡는지에 대한 1차 자료 — 두 기사에서 확인하지 못했다.",
+    "9절: 여러 제조사 로봇 플랫폼의 운영 이관 완료 기준·확대 절차를 정한 공개 표준이나 사례 — 책임 경계가 추정으로만 남아 있다."
+  ],
+  "fixes_applied": [
+    "f9 범위 축소 — 5절 병원 사례(타르투) 수행 자원 칸·서술과 6절 설정 기반 플릿 추가, 8절 Valner 항목에서 '병원에서 서로 다른 로봇을 함께 조율'을 삭제하고, 이기종 관리(TIAGo·Clearpath Jackal)는 시험 환경 검증·병원 배치는 TIAGo·여러 배송 로봇의 병원 적용은 아직, 로봇 특성은 RMF 플릿 어댑터 설정 파일에 기술, FreeFleet 은 전용 플릿 관리자가 없는 로봇용으로 좁혀 썼다(검증 노트가 원문과 일치한다고 확인한 범위만 [사실]로 둠).",
+    "f7 표현 수정 — 5절 서술에 'RMF 기반 플릿 체계로 TIAGo 로봇을 병원에 배치하면서'로 쓰고 수행 자원 칸도 TIAGo 로봇으로 적어 병원 배치 로봇이 TIAGo 였음을 드러냈다.",
+    "f17 범위 축소 — 5절 병원 보충 서술과 7절 표에서 공공 의료기관의 등재 통합자 의무 사용 문구를 빼고 'CHART 가 연 2회 RoMi-H 배치 역량을 평가해 통합자를 인증하고 명단을 공개해 공공 의료기관이 제안요청(RFP/RFI)에 활용하게 한다'로 썼으며, ref-872 발행일을 2025-05-01 로 각주·reference_updates 에 적었다.",
+    "f3 부분 강등 — 5절 기타(학교 급식실) 사례·8절에 검색 요약으로 확인된 부분(산업용·협동로봇 안전기준 밖, 식품위생법상 위생 규제만, 조리로봇 작업장 노동자 안전 관리체계 부재, 로봇 활용 교육 필요)만 [사실]로 쓰고, 비상정지 버튼 교육·청소 시 안전·정기 교육 병행 제언은 본문에서 빼고 '세부 제언 미확인'으로 적었으며, 현장 유형은 기타(학교 급식실)로 두고 다른 현장 유형으로 옮기지 않았다.",
+    "f12 역할 수정 — 4·5·6절에서 커맨드센터 역할을 '로봇 운영 인프라 설정·변경, 시나리오별 프로세스 가이드, 병원 맞춤형 프로세스 구축, 활용 효과 정량 평가'로 쓰고 실시간 모니터링·문제 대응은 미확인으로 두었으며, 7종 73대는 2024 보도 기준임을 밝혔다.",
+    "f13·ref-1317 날짜 수정 — 각주 발행일을 2025-07-23 으로 바꾸고 5·6절 본문 기준일을 2025-07-23 보도로, 11종 77대는 2025-07 보도 기준으로 밝혔다.",
+    "f19·ref-1320 수정 — 발행일을 2026-02-24 로 각주·본문·reference_updates 에 고치고 '네덜란드' 장소 표현을 뺐다.",
+    "f23·ref-1153 날짜 수정 — 7절 표에 '발행일 미확인, 확인일 2026-09-30, 원문 미열람'으로 적고 2026-04-23 기준일을 쓰지 않았다(각주 발행일 미확인).",
+    "f11·ref-031 인용 — 페이지 전체에서 ref-031 직접 인용은 6절 한 곳('assist set-up of the mobile robot in fleet control')만 두고 4·7절은 재서술했으며, 판을 VDA 5050 3.0.0 으로 밝혔다.",
+    "원문 미열람 표기 — ref-1150, ref-1199, ref-944, ref-1151, ref-1153, ref-872, ref-1161, ref-959 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 와 '원문 미열람. ' 요약 첫머리를 넣었다.",
+    "f21 벤더 주장 — 5절 물류창고 사례(수행 자원 칸·서술)와 6절 참여형 변화 관리에서 '[추정] 벤더 주장'을 병기하고 독립 측정이 없음을 밝혀 교육 시간 효과를 사실처럼 쓰지 않았다.",
+    "9절 경계 — 법정 특별교육 실시(f1·f2), 사용자 측 운용·정비 요구(f23), 조리로봇 청소·비상정지 안전(f3)을 표의 '외부와 연계하는 것' 칸에 '연계 대상'으로 짧게 두고 ROP 직접 범위 칸에는 역할·권한 반영과 기록 제공만 적었다.",
+    "용어 '특별안전보건교육' 정의 — glossary_updates 정의에서 '작업 내용을 바꿀 때'를 빼고 '별표 5 가 정한 유해·위험 작업(로봇작업 포함)의 근로자에게 사업주가 추가로 실시하는 안전보건교육'으로 f1·f2 범위만 썼다.",
+    "5절 현장 유형 명시 — 병원(에스토니아 타르투·한국 한림대학교성심병원 표, 싱가포르 2025-05-01·중국 2026-04 보충 서술, TUG 연구는 국가 미확인 명시)·상업 시설·물류창고(피킹)·제조 공장·기타(학교 급식실) 사례마다 현장 유형 줄을 두고 기준일을 밝혔으며, 절 첫머리에 가정·실외 사례를 찾지 못했음을 적었다.",
+    "분량 초과 자동 분리: 56. 운영 이관·확대·교육 본문 11,512자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 5,288자"
+  ]
+}

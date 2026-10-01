@@ -27,9 +27,9 @@ sources: [ref-004, ref-009, ref-010, ref-031, ref-051, ref-076, ref-090, ref-104
 <!-- auto:category-area-table:start -->
 | 세부 연구영역 | 무엇을 연구하는가 | 핵심 질문 | 페이지 | 현재 상태 |
 |---|---|---|---|---|
-| **58. 다사업자 책임·계약·데이터** | 책임과 변경 승인, 데이터 소유권, API 변경 정책, 서비스 수준·감사 이력 | 제조사·플랫폼·설비업체 중 누가 연동 오류를 고치고 변경을 승인할까? | [58. 다사업자 책임·계약·데이터](multi-party-responsibility-contracts-and-data.md) | seed |
-| **59. 법·규제·보험·라이선스** | 법·규제 대응, 보험·사고 책임, 오픈소스·라이선스 | 이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가? | [59. 법·규제·보험·라이선스](law-regulation-insurance-and-licensing.md) | seed |
-| **60. 노동·수용성·접근성** | 노동 영향·사회적 수용성, 고령자·장애인·어린이 접근성 | 로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가? | [60. 노동·수용성·접근성](labor-acceptance-and-accessibility.md) | seed |
+| **58. 다사업자 책임·계약·데이터** | 책임과 변경 승인, 데이터 소유권, API 변경 정책, 서비스 수준·감사 이력 | 제조사·플랫폼·설비업체 중 누가 연동 오류를 고치고 변경을 승인할까? | [58. 다사업자 책임·계약·데이터](multi-party-responsibility-contracts-and-data.md) | published |
+| **59. 법·규제·보험·라이선스** | 법·규제 대응, 보험·사고 책임, 오픈소스·라이선스 | 이 현장에서 로봇을 운영하려면 어떤 법·규제·보험·라이선스를 지켜야 하는가? | [59. 법·규제·보험·라이선스](law-regulation-insurance-and-licensing.md) | published |
+| **60. 노동·수용성·접근성** | 노동 영향·사회적 수용성, 고령자·장애인·어린이 접근성 | 로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가? | [60. 노동·수용성·접근성](labor-acceptance-and-accessibility.md) | published |
 
 [분류원문]
 <!-- auto:category-area-table:end -->
@@ -188,7 +188,7 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 ## 이 대분류의 자료
 
 <!-- auto:category-sources:start -->
-이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 69건이다(논문 17건 · 기사·보고서 3건 · 업체 발표 2건 · 표준·오픈소스·기관 자료 47건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
+이 대분류의 페이지가 인용했거나 이 대분류 영역과 연결된 출처는 모두 114건이다(논문 24건 · 기사·보고서 11건 · 업체 발표 2건 · 표준·오픈소스·기관 자료 77건). 유형은 참고문헌의 출처 유형을 따르며, 업체 발표는 '벤더 문서' 유형이다. 묶음마다 발행일이 최근인 것부터 10건까지 보이고, 전체 목록은 [참고문헌](../../references/index.md)에 있다.
 
 **논문**
 
@@ -196,19 +196,27 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 - [ref-531](../../references/ref-531.md) — arXiv 2607.05683 저자(미확인), Deep Reinforcement Learning for Dynamic Battery Management of Autonomous Order Pickers (발행 2026-07)
 - [ref-711](../../references/ref-711.md) — Tang, G. 외(arXiv 2606.31339), Verification-Gated Agentic Mission-State Governance for Intelligent Industrial Multi-Robot Systems (발행 2026-06)
 - [ref-239](../../references/ref-239.md) — Dussard, B., & Sarthou, G. (LAAS-CNRS), Extracting Semantics: LLM-Guided Automatic Population of Robot Ontology from URDF (발행 2026-06)
+- [ref-1208](../../references/ref-1208.md) — Shaik, A. S. (SSRN), Liability Allocation in Autonomous Industrial Systems: Who Pays when the AI is Wrong? (발행 2026-05-01)
 - [ref-417](../../references/ref-417.md) — Obi, I., Venkatesh, V. L. N., Wang, W., Wang, R., Suh, D., Amosa, T. I., Jo, W., & Min, B.-C.(Purdue University SMART Lab), Pre-Execution Safety Gate & Task Safety Contracts for LLM-Controlled Robot Systems (발행 2026-04)
+- [ref-1226](../../references/ref-1226.md) — Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics), Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety (발행 2026)
 - [ref-168](../../references/ref-168.md) — Kaitha, S., & Yu, S. 외(arXiv 2512.02810), Phase-Adaptive LLM Framework with Multi-Stage Validation for Construction Robot Task Allocation: A Systematic Benchmark Against Traditional Optimization Algorithms (발행 2025-12)
 - [ref-199](../../references/ref-199.md) — arXiv 2410.21415 저자(미확인), Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding (발행 2024-10)
 - [ref-076](../../references/ref-076.md) — DeFazio, D., Mehta, H., Wang, M., Yang, P., Blackburn, J., & Zhang, S., Vision Language Models Can Parse Floor Plan Maps (발행 2024-09)
-- [ref-465](../../references/ref-465.md) — Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., Toward a Method to Generate Capability Ontologies from Natural Language Descriptions (발행 2024-06)
-- [ref-238](../../references/ref-238.md) — Vieira da Silva, L. M., Köcher, A., Gehlhoff, F., & Fay, A., On the Use of Large Language Models to Generate Capability Ontologies (발행 2024-04)
-- 그 밖에 7건
+- 그 밖에 14건
 
 **기사·보고서**
 
+- [ref-1211](../../references/ref-1211.md) — 한국아파트신문 (사설), 공동주택에 밀려오는 로봇, 또 다른 관리책임은 없을까 (발행 2026-09-14)
 - [ref-466](../../references/ref-466.md) — 부산일보, KTL·통합물류협회 ‘물류로봇 시험인증’ 협력 강화 ‘맞손’ (발행 2026-07-24)
+- [ref-1227](../../references/ref-1227.md) — Gibson Dunn, EU Product Liability Directive: Responding to Software, AI and Complex Supply Chains (발행 2026-03-23)
+- [ref-1215](../../references/ref-1215.md) — 한국경제, 로봇이 제조업 일자리 뺏는다? 청년·고숙련 … (제목 일부만 확인) (발행 2025-04-01)
+- [ref-1222](../../references/ref-1222.md) — 의협신문, "로봇이 병원을 돌아다닌다"…의료서비스로봇 5만건 돌파 (발행 2025-01-21)
+- [ref-1233](../../references/ref-1233.md) — 김·장 법률사무소, 인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점 (발행 2024-07-05)
+- [ref-1232](../../references/ref-1232.md) — 지디넷코리아, "실외 이동로봇 필수보험 94% 저렴하게" (발행 2024-02-08)
+- [ref-992](../../references/ref-992.md) — 지디넷코리아, 실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 (발행 2023-07-28)
+- [ref-1193](../../references/ref-1193.md) — 지디넷코리아, 산업데이터 만든 자에게 사용·수익권 부여 (발행 2022-03-15)
 - [ref-317](../../references/ref-317.md) — 전기신문, 승강기협회 '로봇-승강기 연동 표준개발'로 승강기 4차산업 견인 (발행 미확인)
-- [ref-316](../../references/ref-316.md) — 건설기술신문, 승강기협, 엘리베이터-로봇 연동 단체표준 제정 (발행 미확인)
+- 그 밖에 1건
 
 **업체 발표**
 
@@ -217,24 +225,27 @@ G. 안전·보안·지능·거버넌스의 네 세부영역은 나머지 여섯 
 
 **표준·오픈소스·기관 자료**
 
+- [ref-1228](../../references/ref-1228.md) — European Commission (Shaping Europe's digital future), Cyber Resilience Act - Reporting obligations (발행 2026-09-11)
+- [ref-1217](../../references/ref-1217.md) — 대한민국 정책브리핑 (보건복지부), 장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행 (발행 2026-01-28)
+- [ref-1235](../../references/ref-1235.md) — 대한민국 정책브리핑 (과학기술정보통신부), '인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무 (발행 2026-01-21)
 - [ref-518](../../references/ref-518.md) — ISO, ISO 23247-6:2026 — Automation systems and integration — Digital twin framework for manufacturing — Part 6: Digital twin composition (발행 2026)
+- [ref-1191](../../references/ref-1191.md) — European Commission (Shaping Europe's digital future), Data Act explained (발행 2025-12-15)
+- [ref-1192](../../references/ref-1192.md) — European Commission (Shaping Europe's digital future), Draft Recommendation on non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts (발행 2025-11-19)
+- [ref-1213](../../references/ref-1213.md) — George Mason University Costello College of Business, Warehouse automation hasn't made workers safer — it's just reshuffled risk (발행 2025-08-26)
 - [ref-710](../../references/ref-710.md) — 한국지능형로봇표준포럼(KOROS), KOROS 1148-8:2025 서비스 로봇을 위한 모듈 - 제2-8부 : 소프트웨어 모듈용 정보모델 상호운용성 시험 절차 (발행 2025-06-04)
+- [ref-872](../../references/ref-872.md) — Changi General Hospital, Centre for Healthcare Assistive & Robotics Technology (CHART), RoMi-H Empanelment Programme 2025 (발행 2025-05-01)
 - [ref-567](../../references/ref-567.md) — Open-RMF (open-rmf/rmf GitHub), [Feature request]: Fire alarm separation for different fleets · Issue #658 · open-rmf/rmf (발행 2025-04-04)
-- [ref-561](../../references/ref-561.md) — 대한민국 정책브리핑(중소벤처기업부), 이동식 협동로봇 ‘안전기준 산업표준’ 제정…상용화 길 열어 (발행 2024-11-03)
-- [ref-475](../../references/ref-475.md) — 중소벤처기업부(대한민국 정책브리핑), ｢대구 이동식 협동로봇 규제자유특구｣ 산업표준 제정으로, 이동식 협동로봇 상용화 길 열렸다! (발행 2024-11)
-- [ref-240](../../references/ref-240.md) — ISO, ISO 22166-201:2024 - Robotics — Modularity for service robots — Part 201: Common information model for modules (발행 2024-02)
-- [ref-130](../../references/ref-130.md) — OPC Foundation, UA-Nodeset ISA95-JOBCONTROL — opc.ua.isa95-jobcontrol.nodeset2 (NodeSet2.xml·documentation.csv) (발행 2024-01-31)
-- [ref-472](../../references/ref-472.md) — A3(Association for Advancing Automation), ANSI/A3 R15.08-2 Safety Standard for Industrial Mobile Robot Systems and Applications Now Available (발행 2023-10)
-- [ref-473](../../references/ref-473.md) — 고용노동부, 고정식 이동식 산업용 로봇의 협동작업 안전 가이드 배포 (발행 2023-07)
-- [ref-470](../../references/ref-470.md) — ISO, ISO 3691-4:2023 - Industrial trucks — Safety requirements and verification — Part 4: Driverless industrial trucks and their systems (발행 2023-06)
-- 그 밖에 37건
+- 그 밖에 67건
 <!-- auto:category-sources:end -->
 
 ## 최근 업데이트
 
 <!-- auto:category-recent:start -->
-- 2026-09-25 · 갱신 · [P. 거버넌스·법규·사회](index.md) — '다른 대분류와의 연결' 절 첫 작성: A~F 대분류와의 연결 45건, C·E 페이지 보강 후보 표시, 아직 다루지 않은 연결 목록, 절 끝 각주 정의 (실행 2026-09-25-73)
-- 2026-09-25 · 요약 · [P. 거버넌스·법규·사회](index.md) — G. 안전·보안·지능·거버넌스: '다른 대분류와의 연결' 절 첫 작성(A~F 대분류와의 연결 45건, 교차 확인 없음, 아직 다루지 않은 연결 목록) (실행 2026-09-25-73)
+- 2026-09-30 · 갱신 · [60. 노동·수용성·접근성](labor-acceptance-and-accessibility.md) — 영역 심화: 3~11절 첫 작성(물류창고·병원·실외 적용 사례 4건, 수용성 모델·노동자 참여 절차·접근성 의무, 책임 경계, 연결 15개 영역, 열린 질문 8건), 각주 15건. 2차 수정: 6절 의견 주체 명시, 5절 물류창고 수행 자원 칸 드리프트 제거, 7절 도입 문장, 10절 요약 첫 문장 (실행 2026-09-30-24)
+- 2026-09-30 · 생성 · [60. 노동·수용성·접근성 — 대표 연구와 자료](../../topics/2026/2026-09-30-area60-s8.md) — 자동 분리: 60. 노동·수용성·접근성 의 "8. 대표 연구와 자료" 절(1,290자)을 옮겼다 (실행 2026-09-30-24)
+- 2026-09-30 · 생성 · [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](../../topics/2026/2026-09-30-area60-s7.md) — 자동 분리: 60. 노동·수용성·접근성 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,060자)을 옮겼다 (실행 2026-09-30-24)
+- 2026-09-30 · 생성 · [60. 노동·수용성·접근성 — 열린 질문](../../topics/2026/2026-09-30-area60-s11.md) — 자동 분리: 60. 노동·수용성·접근성 의 "11. 열린 질문" 절(1,002자)을 옮겼다 (실행 2026-09-30-24)
+- 2026-09-30 · 생성 · [60. 노동·수용성·접근성 — 핵심 개념과 용어](../../topics/2026/2026-09-30-area60-s4.md) — 자동 분리: 60. 노동·수용성·접근성 의 "4. 핵심 개념과 용어" 절(985자)을 옮겼다 (실행 2026-09-30-24)
 <!-- auto:category-recent:end -->
 
 ## 참고 자료

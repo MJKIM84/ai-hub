@@ -1,0 +1,127 @@
+{
+  "run_id": "2026-09-30-12",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 33,
+    "area_name": "33. 시나리오 모델·편집",
+    "category": "I. 설계·시뮬레이션"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 7,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "5616261",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 16,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2605.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 33. 시나리오 모델·편집 | 영역 심화: 3~11절 신규 작성(현장 유형 사례 5건), 1차 조건부 승인 수정 13건 반영(MAPF 벤치마크 수치 주장 강등 등), 2차 수정 3건 반영(4절 요약·5절 해석 문장 태그를 추정으로 정정) | run 2026-09-30-12",
+  "notes": [
+    "참고문헌 생성: references/ref-1086.md",
+    "참고문헌 생성: references/ref-1087.md",
+    "참고문헌 생성: references/ref-1088.md",
+    "참고문헌 생성: references/ref-1089.md",
+    "참고문헌 생성: references/ref-1090.md",
+    "참고문헌 생성: references/ref-1091.md",
+    "참고문헌 생성: references/ref-1092.md",
+    "용어집 생성: glossary/asam-openscenario.md",
+    "용어집 생성: glossary/behavior-domain-definition-language.md",
+    "용어집 생성: glossary/simulation-description-format.md",
+    "용어집 생성: glossary/falsification.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 7,
+    "standards": 5,
+    "open_questions": 4,
+    "flow_cells": 17,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 14:00:18 KST",
+  "usage": {
+    "input_tokens": 64,
+    "cache_creation_input_tokens": 744356,
+    "cache_read_input_tokens": 3848695,
+    "output_tokens": 187867,
+    "cost_usd": 11.1182,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 2.4371,
+        "output_tokens": 36760,
+        "cache_read_input_tokens": 2689274,
+        "cache_creation_input_tokens": 84370
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.2827,
+        "output_tokens": 16286,
+        "cache_read_input_tokens": 903904,
+        "cache_creation_input_tokens": 81714
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.277,
+        "output_tokens": 115729,
+        "cache_read_input_tokens": 71891,
+        "cache_creation_input_tokens": 368504
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.0169,
+        "output_tokens": 18389,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 201710
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 0
+}

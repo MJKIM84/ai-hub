@@ -1,0 +1,378 @@
+{
+  "duration_api_ms": 282608,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.6272894000000002,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 89632,
+    "cache_read_input_tokens": 1091752,
+    "output_tokens": 22880,
+    "output_tokens_details": {
+      "thinking_tokens": 10093
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 89632,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 12925,
+        "cache_read_input_tokens": 177574,
+        "cache_creation_input_tokens": 524,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 524
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 181132,
+      "outputTokens": 6619,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 2,
+      "costUSD": 0.234227,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 22880,
+      "cacheReadInputTokens": 1091752,
+      "cacheCreationInputTokens": 89632,
+      "webSearchRequests": 0,
+      "costUSD": 1.3930624,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 10093,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 25,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-23\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1234(산업통상자원부·경찰청 공동 발표, 2023-11-16)를 직접 열어 2023-11-17 시행, 질량 500kg 이하·15km/h 이하, 운행안전인증 로봇에 보행자 지위를 부여한다는 문장을 확인했다. ref-1241(한국로봇산업진흥원)에서도 최대 속도 15km/h 이하·최대 질량 500kg 이하 요건을 확인해 두 출처로 교차 확인했다. 시행일은 ref-1234 단독이지만 정부 1차 자료다.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1234 에 운용자의 정확한 조작·안전한 운용 의무, 로봇도 보행자와 같이 신호위반·무단횡단 금지 등 도로교통법을 지켜야 한다는 문장, 위반 시 범칙금 3만 원이 있다. 정부 1차 자료 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1234 에 보도 운영자의 보험·공제 가입 의무 부과와 한국로봇산업협회의 손해보장사업 실시기관 지정이 있고, ref-1240(지디넷코리아, 2024-02-08)이 '운영 주체는 의무적으로 공제(보험)에 가입해야 한다'고 보도해 교차 확인했다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정. ref-1240 에서 약 500만원대 → 30만원대(94% 할인), 1호 가입 기업 뉴빌리티·로보티즈를 확인했다. 다만 보험료 수치는 상품을 낸 한국로봇산업협회의 발표를 옮긴 기사 한 건뿐이고 독립 확인이 없다. 기사는 이 상품을 '공제상품'이라고도 부른다. 보장 한도는 미확인이다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1241 인증기관 페이지(2026-09-30 확인)에서 근거(지능형로봇법 제40조의2), 8개 심사항목(규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치), 서류심사→제품심사→인증표시 절차, 신청일부터 30일 이내 처리를 확인했다. 인증 대상의 페이지 표현은 '배송 등을 위하여 자율주행(원격제어 포함)으로 운행할 수 있는 지능형 로봇 및 그 운행에 필요한 관제장치 조합'이고, 브리프 발췌의 '…조합의 일체'라는 문구는 확인하지 못해 직접 인용하지 않는다. 발행일은 미확인이다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1242 를 열어 질량별 속도(230kg 초과 5km/h, 100kg 초과 10km/h, 그 이하 15km/h), 폭 80cm(보도 폭 250cm 이상이면 120cm), 5도 경사, 비상정지, 장애물 회피, 횡단보도 신호 대기, 알림음 55~73dB, 등화장치 표면온도 60도 이하, IPX4 이상, 의견 제출 마감 2023-08-28 을 확인했다. 기사는 행정예고 주체를 한국로봇산업진흥원이 아니라 산업통상자원부로 적으므로 주체를 고쳐야 한다. 제목 전체는 '실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 심사'다. 행정예고안(2023-07) 기준 내용이라는 기준일을 밝힌다.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 인증기관 페이지(8개 항목, 2026-09-30 확인)와 2023-07 기사(16가지)의 차이가 확인된다. ref-1234(2023-11-16)도 시행 시점에 '16가지 시험항목'으로 검증한다고 밝혀 추정의 전제가 강해진다. 개정 시점·고시와 흡수 관계는 미확인이므로 oq-186 은 열린 채로 둔다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1248 버지니아주법 원문에서 보도·횡단보도 10mph 이하, 잘 보이는 운영자 식별 수단, 'general liability coverage of at least $100,000' 보험 유지를 확인했다. 지방정부는 도로 운행에 추가 안전 요건을 둘 수 있으나, 제한 속도 25mph 이하 도로에서의 사용을 금지할 수는 없다. 해외 비교 사례다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":true,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1235(Gibson Dunn, 2026-03-23)에서 2026-12-09 이후 출시·사용 개시 제품에 적용, 독립형 소프트웨어·디지털 제조 파일·통합 디지털 요소 포함, 실질적 변경자의 제조자 간주를 확인했다. 검증에서 연 CMS 해설(2024-12-04, 브리프 출처 아님)도 같은 내용이어서 교차 확인은 했지만, EUR-Lex 원문은 열리지 않아 법률사무소 해설 기준이다.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1235 에 보안 업데이트 미제공에 따른 책임, 증거 공개 불이행 시 반증 가능한 결함 추정이 있다. 증거 공개·결함 추정은 CMS 해설로도 확인했지만, 보안 업데이트 책임은 ref-1235 단독이다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1243 웹 요약에서 제조물 정의('제조되거나 가공된 동산')와, 자율주행차 소프트웨어 결함 사고에서 인간 개입이 없거나 최소화된 경우 개발자의 제조물책임이 핵심 쟁점이라는 서술을 확인했다. 정확한 제목은 '인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점', 발행일은 2024-07-05 다. '쟁점으로 남아 있다'는 2024-07 기준이다. PDF 본문은 미열람이다.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1359(EU-OSHA)를 검증에서 열어 채택 2023-06-14·적용 2027-01-20 을 확인했다. 다만 이 페이지는 실질적 변경자의 제조자 간주를 직접 말하지 않는다. 제18조 내용은 EUR-Lex(ref-1350) 검색 결과 요약과 일치하지만 PDF 본문이 비어 원문 미열람이다. 이전 실행 2026-09-30-22 의 f10 과 같은 주장이므로 같은 참고문헌 id 를 재사용한다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1245(과학기술정보통신부, 2026-01-21)에서 2026-01-22 시행, 최종 의사결정에 사람이 개입하면 고영향AI 대상에서 제외, '최소 1년 이상 규제를 유예'(사실조사·과태료 계도기간), 인공지능기본법 지원데스크 운영을 확인했다. 브리프의 발행일 null 과 as_of 2026-09-30 은 2026-01-21 로 고쳐야 한다. 정확한 제목은 ''인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무'다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1236(집행위원회, 최종 갱신 2026-09-11)에서 제조자 보고 의무 2026-09-11 시작, 24시간 조기 경보·72시간 통지·최종 보고(취약점은 수정 조치 후 14일, 중대 사고는 72시간 통지 후 1개월), ENISA 가 세운 단일 보고 플랫폼, 오픈소스 스튜어드 2027-12-11 을 확인했다. 집행기관 1차 자료 단일 출처.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1244(법제처 생활법령)에서 착용형·휴대형·부착·거치형 정의, 촬영 사실을 표시했는데 거부 의사가 없는 경우 등의 허용 요건, '불빛, 소리, 안내판, 안내서면, 안내방송 또는 그 밖에 이에 준하는 수단' 표시를 확인했다. 페이지가 드는 근거는 법 제25조의2·시행령 제22조·제27조의2 이며, 브리프 발췌의 '시행령 제27조'와 다르다. 시행일은 넣지 않는다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1247(2017-10-26)에서 2017-10-29 시행, 기존 설비 2018-12-31 까지 최초 안전검사, 최근 5년 산업용 로봇 221명·컨베이어 1,008명 재해를 확인했다. 정기검사 주기는 본문에 없어 미확인이다. 출처가 현장 유형을 밝히지 않는다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1246 원본(github_raw)에서 'Each package must have a LICENSE file, typically the Apache 2.0 license, unless the package has an existing permissive license (e.g. rviz uses three-clause BSD)'와 소스 파일별 라이선스·저작권 문구의 자동 린터 검사를 확인했다. 요약에서 확인된 도구 이름은 ament_lint_common 이고 'ament_copyright'는 확인하지 못했으므로 도구 이름을 빼게 한다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1237 원본(Created 17-Dec-2019, Active)에서 수준 1~4 의 'Must have a declared license or set of licenses'·저작권 명시와 저자 표기, 수준 5 의 강한 권장을 확인했다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1238 에서 ISO/IEC 5962:2021 인정 문장, SBOM 정보(출처·라이선스·보안) 교환 개방 표준, 라이선스 목록의 식별자·예외·표현식 문법을 확인했다. 발행일은 미확인이다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인. ref-1239 에서 database.config 의 CC BY 3.0 Unported 권장, model.config 의 작성자 이름·이메일 필수, 개별 model.config 에 라이선스 필드가 없음을 확인했다. Gazebo 클래식 기준임을 밝힌다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 인용한 finding 들의 종합이며 과장이 없다. 병원·상업 시설·가정 실내 규정을 확인하지 못했다는 한계를 함께 적었다. 원문 핵심 질문에 답하는 finding 이다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. f5(인증 대상이 로봇과 관제장치의 조합)·f14·f15·f17·f19 에서 도출한 직접 범위 제안이며 범위 경계 위반이 없다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 분류 원문 19장 '업종별 조건' 경계에 맞게 인증·보험·책임 판정·개인정보 적법성·안전검사를 연계 대상으로 두었다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 연결 영역이 모두 부록 A 번호·이름과 맞고, 교차 규칙에 따라 AI 규제(f13)를 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영 양쪽에 연결했다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f12(EU 기계류 규정의 실질적 변경·적용일)는 이전 실행 2026-09-30-22 의 f10(58. 다사업자 책임·계약·데이터)과 같은 주장이다 — 같은 참고문헌 id(ref-1350·ref-1359)를 재사용하고, 58. 다사업자 책임·계약·데이터 페이지와 연결만 한다\",\"open_questions_new 2번(EU 제조물책임지침에서 오케스트레이션 소프트웨어의 실질적 변경)은 2026-09-30-22 브리프의 새 질문(오케스트레이션 설정 변경이 EU 기계류 규정의 실질적 변경인가)과 가깝지만, 대상 법이 달라 중복으로 보지 않는다\",\"f12·f14 는 oq-249(EU 기계류 규정 기록 요구의 플랫폼 적용)와 관련된다 — 해결 근거는 아니다\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"ref-1234: 각주 제목을 '‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 로봇 허용'으로 쓰고 '(제목 일부만 확인)'을 뺀다 — 검증에서 원문을 열어 전체 제목과 산업통상자원부·경찰청 공동 발표(2023-11-16)를 확인했다.\",\"ref-1242·f6: 각주 제목을 '실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 심사'로 고치고, 본문에서 행정예고 주체를 '한국로봇산업진흥원'이 아니라 '산업통상자원부'로 쓴다. 기준일은 '2023-07 행정예고안 기준'으로 밝힌다 — 기사 원문이 산업통상자원부를 행정예고 주체로 적는다.\",\"ref-1245·f13: 각주 발행일을 2026-01-21 로, 제목을 ''인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무'로 쓰고, f13 문장의 기준일도 2026-01-21 로 쓴다 — 원문의 발행일이 2026-01-21 이다.\",\"ref-1243·f11: 각주 제목을 '인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점', 발행일을 2024-07-05 로 쓰고, '쟁점으로 남아 있다'는 서술에 '2024-07 기준'을 붙인다 — 원문 페이지에서 확인한 값이다.\",\"f4: [사실]을 [추정]으로 강등하고, '한국로봇산업협회 발표를 전한 기사(ref-1240) 기준'임과 보장 한도 미확인을 함께 적는다 — 보험료 수치(약 500만원대 → 30만원대, 94%)는 상품 출시 주체의 발표를 옮긴 기사 한 건뿐이다.\",\"f5: 인증 대상은 '…조합의 일체'를 직접 인용하지 말고 '배송 등을 위해 자율주행(원격제어 포함)으로 운행하는 지능형 로봇과 그 운행에 필요한 관제장치의 조합'으로 재서술한다 — 인증기관 페이지에서 '일체'라는 문구를 확인하지 못했다.\",\"f15: 근거 조항을 '개인정보 보호법 제25조의2와 같은 법 시행령(생활법령 페이지가 드는 제22조·제27조의2)'으로 쓰고 '시행령 제27조'라고 쓰지 않는다. 시행일은 쓰지 않는다 — 출처 페이지의 조항 표기가 브리프 발췌와 다르고, 시행일은 출처끼리 충돌한다.\",\"f17: 'ament_copyright'라는 도구 이름을 빼고 '자동 린터로 검사한다'고만 쓴다 — 확인한 원문 요약은 ament_lint_common 을 들고 있고 ament_copyright 는 확인되지 않았다.\",\"f12: 제18조(실질적 변경자의 제조자 간주) 문장에는 ref-1350 각주를 붙이고, ref-1350·ref-1359 두 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이며 reference_updates 의 두 항목에 source_unopened: true 를 넣는다. 58. 다사업자 책임·계약·데이터 페이지와 같은 참고문헌 id 를 재사용한다 — 리서치에서 두 출처를 다시 열지 않았고(fetched false), EU-OSHA 페이지는 적용일만 뒷받침한다.\",\"f9·f10: 본문에 'EUR-Lex 원문이 아니라 법률사무소 해설(Gibson Dunn, 2026-03-23) 기준'임을 밝힌다 — 지침 원문 본문을 열지 못했다.\",\"f16: 5절 '적용 사례 (현장 유형 명시)'에 현장 유형 미명시 사례로 넣지 말고, 7절(관련 표준·프레임워크·오픈소스)의 산업안전보건법 안전검사 항목으로만 쓴다 — 출처가 현장 유형을 밝히지 않아 여섯 항목 사례를 세울 수 없다.\",\"5절: 현장 유형은 '실외'로만 쓴다(한국 f1~f7, 미국 버지니아 f8). f8 은 해외 비교 사례로 한국 현장에 바로 적용되지 않음을 밝히고, 물류창고·제조 공장·병원·상업 시설·가정 사례는 이번 조사에서 찾지 못했다고 적는다. site_matrix_updates 는 실외 칸만 낸다 — 브리프 근거가 실외뿐이다.\",\"glossary_candidates '오픈소스 소프트웨어 스튜어드': 용어집에 등록하지 않는다 — 정의의 '법인'·'제조자보다 가벼운 의무' 부분을 뒷받침하는 finding 이 없다(f14 는 보고 의무 시점만 담는다).\",\"glossary_candidates '제조물책임': 정의에서 '과실과 관계없이'를 빼고 f9·f11 이 뒷받침하는 범위(제조물 결함으로 생긴 손해의 배상 책임, 한국 제조물책임법은 제조·가공된 동산을 제조물로 정의, EU 개정 지침은 소프트웨어를 제품에 포함)로 쓴다 — 무과실 책임을 뒷받침하는 finding 이 없다.\",\"11절: 기존 oq-143·oq-173·oq-186·oq-187·oq-231·oq-239·oq-249·oq-250·oq-262 는 모두 열림으로 둔다. oq-186 에는 2023-11-16 정책브리핑(ref-1234)도 '16가지 시험항목'을 밝혔다는 점을 f7 과 함께 적을 수 있다 — 해결을 인정할 finding 이 없다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 3건(f1·f3·f9). 강등: f4 사실 → 추정(보험료 인하 수치가 협회 발표를 옮긴 기사 한 건뿐). 원문 미열람 출처: ref-1350, ref-1359(이전 실행에서 재사용했고 이번 리서치에서 다시 열지 않음. 검증에서 ref-1359 는 열어 적용일만 확인했고, ref-1350 은 EUR-Lex 본문이 비어 검색 결과 일치로만 확인). 주의: 사실 주장은 대부분 정부·기관 1차 자료 단일 출처다. EU 제조물책임지침(f9·f10)은 지침 원문이 아니라 법률사무소 해설 기준이다. 실외이동로봇 운행안전인증 심사항목이 16가지에서 8개로 바뀐 시점과 근거(oq-186)는 확인하지 못했다. 한국 제조물책임법의 소프트웨어 포섭 쟁점(f11)은 2024-07 기준이다. 현장 유형 사례는 실외뿐이며 병원·상업 시설·가정 실내 로봇 규정은 확인하지 못했다. 검증에서 f6 의 행정예고 주체(산업통상자원부)와 ref-1234·ref-1242·ref-1243·ref-1245 의 제목·발행일을 정정하도록 지시했다. 미사용 출처 없음. 정정 요청 없음. 해결 인정한 열린 질문 없음. 검증 검색 2회를 썼다(리서치와 합쳐 19/30).\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-23",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. ref-1234(산업통상자원부·경찰청 공동 발표, 2023-11-16)를 직접 열어 2023-11-17 시행, 질량 500kg 이하·15km/h 이하, 운행안전인증 로봇에 보행자 지위를 부여한다는 문장을 확인했다. ref-1241(한국로봇산업진흥원)에서도 최대 속도 15km/h 이하·최대 질량 500kg 이하 요건을 확인해 두 출처로 교차 확인했다. 시행일은 ref-1234 단독이지만 정부 1차 자료다."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1234 에 운용자의 정확한 조작·안전한 운용 의무, 로봇도 보행자와 같이 신호위반·무단횡단 금지 등 도로교통법을 지켜야 한다는 문장, 위반 시 범칙금 3만 원이 있다. 정부 1차 자료 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. ref-1234 에 보도 운영자의 보험·공제 가입 의무 부과와 한국로봇산업협회의 손해보장사업 실시기관 지정이 있고, ref-1240(지디넷코리아, 2024-02-08)이 '운영 주체는 의무적으로 공제(보험)에 가입해야 한다'고 보도해 교차 확인했다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정. ref-1240 에서 약 500만원대 → 30만원대(94% 할인), 1호 가입 기업 뉴빌리티·로보티즈를 확인했다. 다만 보험료 수치는 상품을 낸 한국로봇산업협회의 발표를 옮긴 기사 한 건뿐이고 독립 확인이 없다. 기사는 이 상품을 '공제상품'이라고도 부른다. 보장 한도는 미확인이다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1241 인증기관 페이지(2026-09-30 확인)에서 근거(지능형로봇법 제40조의2), 8개 심사항목(규격 및 운행속도·겉모양·동적 특성·주변 인식·비상정지·방수 성능·횡단보도 통행·관제장치), 서류심사→제품심사→인증표시 절차, 신청일부터 30일 이내 처리를 확인했다. 인증 대상의 페이지 표현은 '배송 등을 위하여 자율주행(원격제어 포함)으로 운행할 수 있는 지능형 로봇 및 그 운행에 필요한 관제장치 조합'이고, 브리프 발췌의 '…조합의 일체'라는 문구는 확인하지 못해 직접 인용하지 않는다. 발행일은 미확인이다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1242 를 열어 질량별 속도(230kg 초과 5km/h, 100kg 초과 10km/h, 그 이하 15km/h), 폭 80cm(보도 폭 250cm 이상이면 120cm), 5도 경사, 비상정지, 장애물 회피, 횡단보도 신호 대기, 알림음 55~73dB, 등화장치 표면온도 60도 이하, IPX4 이상, 의견 제출 마감 2023-08-28 을 확인했다. 기사는 행정예고 주체를 한국로봇산업진흥원이 아니라 산업통상자원부로 적으므로 주체를 고쳐야 한다. 제목 전체는 '실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 심사'다. 행정예고안(2023-07) 기준 내용이라는 기준일을 밝힌다."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 인증기관 페이지(8개 항목, 2026-09-30 확인)와 2023-07 기사(16가지)의 차이가 확인된다. ref-1234(2023-11-16)도 시행 시점에 '16가지 시험항목'으로 검증한다고 밝혀 추정의 전제가 강해진다. 개정 시점·고시와 흡수 관계는 미확인이므로 oq-186 은 열린 채로 둔다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1248 버지니아주법 원문에서 보도·횡단보도 10mph 이하, 잘 보이는 운영자 식별 수단, 'general liability coverage of at least $100,000' 보험 유지를 확인했다. 지방정부는 도로 운행에 추가 안전 요건을 둘 수 있으나, 제한 속도 25mph 이하 도로에서의 사용을 금지할 수는 없다. 해외 비교 사례다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": true,
+        "tag_decision": "유지",
+        "note": "확인. ref-1235(Gibson Dunn, 2026-03-23)에서 2026-12-09 이후 출시·사용 개시 제품에 적용, 독립형 소프트웨어·디지털 제조 파일·통합 디지털 요소 포함, 실질적 변경자의 제조자 간주를 확인했다. 검증에서 연 CMS 해설(2024-12-04, 브리프 출처 아님)도 같은 내용이어서 교차 확인은 했지만, EUR-Lex 원문은 열리지 않아 법률사무소 해설 기준이다."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1235 에 보안 업데이트 미제공에 따른 책임, 증거 공개 불이행 시 반증 가능한 결함 추정이 있다. 증거 공개·결함 추정은 CMS 해설로도 확인했지만, 보안 업데이트 책임은 ref-1235 단독이다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1243 웹 요약에서 제조물 정의('제조되거나 가공된 동산')와, 자율주행차 소프트웨어 결함 사고에서 인간 개입이 없거나 최소화된 경우 개발자의 제조물책임이 핵심 쟁점이라는 서술을 확인했다. 정확한 제목은 '인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점', 발행일은 2024-07-05 다. '쟁점으로 남아 있다'는 2024-07 기준이다. PDF 본문은 미열람이다."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1359(EU-OSHA)를 검증에서 열어 채택 2023-06-14·적용 2027-01-20 을 확인했다. 다만 이 페이지는 실질적 변경자의 제조자 간주를 직접 말하지 않는다. 제18조 내용은 EUR-Lex(ref-1350) 검색 결과 요약과 일치하지만 PDF 본문이 비어 원문 미열람이다. 이전 실행 2026-09-30-22 의 f10 과 같은 주장이므로 같은 참고문헌 id 를 재사용한다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1245(과학기술정보통신부, 2026-01-21)에서 2026-01-22 시행, 최종 의사결정에 사람이 개입하면 고영향AI 대상에서 제외, '최소 1년 이상 규제를 유예'(사실조사·과태료 계도기간), 인공지능기본법 지원데스크 운영을 확인했다. 브리프의 발행일 null 과 as_of 2026-09-30 은 2026-01-21 로 고쳐야 한다. 정확한 제목은 ''인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무'다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1236(집행위원회, 최종 갱신 2026-09-11)에서 제조자 보고 의무 2026-09-11 시작, 24시간 조기 경보·72시간 통지·최종 보고(취약점은 수정 조치 후 14일, 중대 사고는 72시간 통지 후 1개월), ENISA 가 세운 단일 보고 플랫폼, 오픈소스 스튜어드 2027-12-11 을 확인했다. 집행기관 1차 자료 단일 출처."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1244(법제처 생활법령)에서 착용형·휴대형·부착·거치형 정의, 촬영 사실을 표시했는데 거부 의사가 없는 경우 등의 허용 요건, '불빛, 소리, 안내판, 안내서면, 안내방송 또는 그 밖에 이에 준하는 수단' 표시를 확인했다. 페이지가 드는 근거는 법 제25조의2·시행령 제22조·제27조의2 이며, 브리프 발췌의 '시행령 제27조'와 다르다. 시행일은 넣지 않는다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1247(2017-10-26)에서 2017-10-29 시행, 기존 설비 2018-12-31 까지 최초 안전검사, 최근 5년 산업용 로봇 221명·컨베이어 1,008명 재해를 확인했다. 정기검사 주기는 본문에 없어 미확인이다. 출처가 현장 유형을 밝히지 않는다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1246 원본(github_raw)에서 'Each package must have a LICENSE file, typically the Apache 2.0 license, unless the package has an existing permissive license (e.g. rviz uses three-clause BSD)'와 소스 파일별 라이선스·저작권 문구의 자동 린터 검사를 확인했다. 요약에서 확인된 도구 이름은 ament_lint_common 이고 'ament_copyright'는 확인하지 못했으므로 도구 이름을 빼게 한다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1237 원본(Created 17-Dec-2019, Active)에서 수준 1~4 의 'Must have a declared license or set of licenses'·저작권 명시와 저자 표기, 수준 5 의 강한 권장을 확인했다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1238 에서 ISO/IEC 5962:2021 인정 문장, SBOM 정보(출처·라이선스·보안) 교환 개방 표준, 라이선스 목록의 식별자·예외·표현식 문법을 확인했다. 발행일은 미확인이다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인. ref-1239 에서 database.config 의 CC BY 3.0 Unported 권장, model.config 의 작성자 이름·이메일 필수, 개별 model.config 에 라이선스 필드가 없음을 확인했다. Gazebo 클래식 기준임을 밝힌다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 인용한 finding 들의 종합이며 과장이 없다. 병원·상업 시설·가정 실내 규정을 확인하지 못했다는 한계를 함께 적었다. 원문 핵심 질문에 답하는 finding 이다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. f5(인증 대상이 로봇과 관제장치의 조합)·f14·f15·f17·f19 에서 도출한 직접 범위 제안이며 범위 경계 위반이 없다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 분류 원문 19장 '업종별 조건' 경계에 맞게 인증·보험·책임 판정·개인정보 적법성·안전검사를 연계 대상으로 두었다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 연결 영역이 모두 부록 A 번호·이름과 맞고, 교차 규칙에 따라 AI 규제(f13)를 13. 대화형 기능의 신뢰·기반과 47. AI·학습·적응과 모델 운영 양쪽에 연결했다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f12(EU 기계류 규정의 실질적 변경·적용일)는 이전 실행 2026-09-30-22 의 f10(58. 다사업자 책임·계약·데이터)과 같은 주장이다 — 같은 참고문헌 id(ref-1350·ref-1359)를 재사용하고, 58. 다사업자 책임·계약·데이터 페이지와 연결만 한다",
+        "open_questions_new 2번(EU 제조물책임지침에서 오케스트레이션 소프트웨어의 실질적 변경)은 2026-09-30-22 브리프의 새 질문(오케스트레이션 설정 변경이 EU 기계류 규정의 실질적 변경인가)과 가깝지만, 대상 법이 달라 중복으로 보지 않는다",
+        "f12·f14 는 oq-249(EU 기계류 규정 기록 요구의 플랫폼 적용)와 관련된다 — 해결 근거는 아니다"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "ref-1234: 각주 제목을 '‘실외이동로봇’ 보도 통행 가능해진다…배달·순찰 로봇 허용'으로 쓰고 '(제목 일부만 확인)'을 뺀다 — 검증에서 원문을 열어 전체 제목과 산업통상자원부·경찰청 공동 발표(2023-11-16)를 확인했다.",
+      "ref-1242·f6: 각주 제목을 '실외 배달로봇 '시속 15km 이하로'...16가지 안전기준 심사'로 고치고, 본문에서 행정예고 주체를 '한국로봇산업진흥원'이 아니라 '산업통상자원부'로 쓴다. 기준일은 '2023-07 행정예고안 기준'으로 밝힌다 — 기사 원문이 산업통상자원부를 행정예고 주체로 적는다.",
+      "ref-1245·f13: 각주 발행일을 2026-01-21 로, 제목을 ''인공지능기본법' 22일 시행…생성형 AI 결과물 '워터마크' 표시 의무'로 쓰고, f13 문장의 기준일도 2026-01-21 로 쓴다 — 원문의 발행일이 2026-01-21 이다.",
+      "ref-1243·f11: 각주 제목을 '인공지능, 소프트웨어 결함으로 인한 제조물책임의 주요 쟁점 및 시사점', 발행일을 2024-07-05 로 쓰고, '쟁점으로 남아 있다'는 서술에 '2024-07 기준'을 붙인다 — 원문 페이지에서 확인한 값이다.",
+      "f4: [사실]을 [추정]으로 강등하고, '한국로봇산업협회 발표를 전한 기사(ref-1240) 기준'임과 보장 한도 미확인을 함께 적는다 — 보험료 수치(약 500만원대 → 30만원대, 94%)는 상품 출시 주체의 발표를 옮긴 기사 한 건뿐이다.",
+      "f5: 인증 대상은 '…조합의 일체'를 직접 인용하지 말고 '배송 등을 위해 자율주행(원격제어 포함)으로 운행하는 지능형 로봇과 그 운행에 필요한 관제장치의 조합'으로 재서술한다 — 인증기관 페이지에서 '일체'라는 문구를 확인하지 못했다.",
+      "f15: 근거 조항을 '개인정보 보호법 제25조의2와 같은 법 시행령(생활법령 페이지가 드는 제22조·제27조의2)'으로 쓰고 '시행령 제27조'라고 쓰지 않는다. 시행일은 쓰지 않는다 — 출처 페이지의 조항 표기가 브리프 발췌와 다르고, 시행일은 출처끼리 충돌한다.",
+      "f17: 'ament_copyright'라는 도구 이름을 빼고 '자동 린터로 검사한다'고만 쓴다 — 확인한 원문 요약은 ament_lint_common 을 들고 있고 ament_copyright 는 확인되지 않았다.",
+      "f12: 제18조(실질적 변경자의 제조자 간주) 문장에는 ref-1350 각주를 붙이고, ref-1350·ref-1359 두 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이며 reference_updates 의 두 항목에 source_unopened: true 를 넣는다. 58. 다사업자 책임·계약·데이터 페이지와 같은 참고문헌 id 를 재사용한다 — 리서치에서 두 출처를 다시 열지 않았고(fetched false), EU-OSHA 페이지는 적용일만 뒷받침한다.",
+      "f9·f10: 본문에 'EUR-Lex 원문이 아니라 법률사무소 해설(Gibson Dunn, 2026-03-23) 기준'임을 밝힌다 — 지침 원문 본문을 열지 못했다.",
+      "f16: 5절 '적용 사례 (현장 유형 명시)'에 현장 유형 미명시 사례로 넣지 말고, 7절(관련 표준·프레임워크·오픈소스)의 산업안전보건법 안전검사 항목으로만 쓴다 — 출처가 현장 유형을 밝히지 않아 여섯 항목 사례를 세울 수 없다.",
+      "5절: 현장 유형은 '실외'로만 쓴다(한국 f1~f7, 미국 버지니아 f8). f8 은 해외 비교 사례로 한국 현장에 바로 적용되지 않음을 밝히고, 물류창고·제조 공장·병원·상업 시설·가정 사례는 이번 조사에서 찾지 못했다고 적는다. site_matrix_updates 는 실외 칸만 낸다 — 브리프 근거가 실외뿐이다.",
+      "glossary_candidates '오픈소스 소프트웨어 스튜어드': 용어집에 등록하지 않는다 — 정의의 '법인'·'제조자보다 가벼운 의무' 부분을 뒷받침하는 finding 이 없다(f14 는 보고 의무 시점만 담는다).",
+      "glossary_candidates '제조물책임': 정의에서 '과실과 관계없이'를 빼고 f9·f11 이 뒷받침하는 범위(제조물 결함으로 생긴 손해의 배상 책임, 한국 제조물책임법은 제조·가공된 동산을 제조물로 정의, EU 개정 지침은 소프트웨어를 제품에 포함)로 쓴다 — 무과실 책임을 뒷받침하는 finding 이 없다.",
+      "11절: 기존 oq-143·oq-173·oq-186·oq-187·oq-231·oq-239·oq-249·oq-250·oq-262 는 모두 열림으로 둔다. oq-186 에는 2023-11-16 정책브리핑(ref-1234)도 '16가지 시험항목'을 밝혔다는 점을 f7 과 함께 적을 수 있다 — 해결을 인정할 finding 이 없다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 24건, 미확인 0건, 교차 확인 3건(f1·f3·f9). 강등: f4 사실 → 추정(보험료 인하 수치가 협회 발표를 옮긴 기사 한 건뿐). 원문 미열람 출처: ref-1350, ref-1359(이전 실행에서 재사용했고 이번 리서치에서 다시 열지 않음. 검증에서 ref-1359 는 열어 적용일만 확인했고, ref-1350 은 EUR-Lex 본문이 비어 검색 결과 일치로만 확인). 주의: 사실 주장은 대부분 정부·기관 1차 자료 단일 출처다. EU 제조물책임지침(f9·f10)은 지침 원문이 아니라 법률사무소 해설 기준이다. 실외이동로봇 운행안전인증 심사항목이 16가지에서 8개로 바뀐 시점과 근거(oq-186)는 확인하지 못했다. 한국 제조물책임법의 소프트웨어 포섭 쟁점(f11)은 2024-07 기준이다. 현장 유형 사례는 실외뿐이며 병원·상업 시설·가정 실내 로봇 규정은 확인하지 못했다. 검증에서 f6 의 행정예고 주체(산업통상자원부)와 ref-1234·ref-1242·ref-1243·ref-1245 의 제목·발행일을 정정하도록 지시했다. 미사용 출처 없음. 정정 요청 없음. 해결 인정한 열린 질문 없음. 검증 검색 2회를 썼다(리서치와 합쳐 19/30).",
+    "retry_reason": null
+  },
+  "ttft_ms": 2618,
+  "type": "result",
+  "duration_ms": 234155,
+  "uuid": "47e30d27-fdc7-4b0d-abd6-dab0c88b8597",
+  "ttft_stream_ms": 1333,
+  "time_to_request_ms": 123,
+  "time_to_request_phases_ms": {
+    "other": 52,
+    "system_prompt": 16,
+    "turn_start_resume": 0,
+    "process_user_input": 14,
+    "init_message": 14,
+    "engine_pickup": 1,
+    "autocompact": 3,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 2,
+    "client_creation": 16
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 69,
+  "time_to_request_cpu_ms": 103,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1333,
+  "time_to_request_from_spawn_ms": 12516225,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790753815852.9075,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 236.6
+}

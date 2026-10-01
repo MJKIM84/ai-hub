@@ -1,0 +1,624 @@
+{
+  "run_id": "2026-09-30-18",
+  "outline": [
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 700,
+      "summary": "여러 제조사 로봇을 한 관제에서 운영할 때의 요청 접수·교대 인수인계 절차를 정한 공개 표준은 확인되지 않았고 현장마다 따로 정해지는 것으로 보인다. [추정][^ref-125][^ref-1153][^ref-1157][^ref-1199][^ref-1150]",
+      "planned_findings": [
+        "f20",
+        "f12",
+        "f17",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "작업 요청 스키마, 역할 기반 권한, 호출 버튼, 교대 인수인계, I-PASS, 역할 모호성을 정리한다. [사실][^ref-125][^ref-762][^ref-1148][^ref-1149][^ref-1155][^ref-1150]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f19",
+        "f6",
+        "f8",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1500,
+      "summary": "병원(한림대학교성심병원 커맨드센터, TUG 배송 로봇, Moxi)과 상업 시설(호텔 배송 로봇, 호텔 직원 면담) 사례만 세우고 다른 현장 유형은 근거를 찾지 못했다고 밝힌다. [사실][^ref-1199][^ref-944][^ref-1151][^ref-1152]",
+      "planned_findings": [
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1300,
+      "summary": "요청 형식 통일, 역할 기반 권한, 임시 통제 구역 기록, 구조화된 교대 인수인계, 전담 운영 조직의 다섯 접근을 정리한다. [사실][^ref-125][^ref-762][^ref-569][^ref-1149]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f14",
+        "f17",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 900,
+      "summary": "Open-RMF 작업 요청·API 서버·차선 요청 메시지, VDA 5050 3.0.0판, ANSI/A3 R15.08-3-2026, 산업안전보건기준에 관한 규칙 제222조, HSE 지침을 표로 둔다. [사실][^ref-125][^ref-031][^ref-1153][^ref-1157]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f6",
+        "f10",
+        "f11"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 700,
+      "summary": "교대 인수인계(HSE, Brazier·Pacitti, I-PASS)와 로봇 수용(Mutlu·Forlizzi, Fu 외) 연구 다섯 건. [사실][^ref-1148][^ref-1149][^ref-1155][^ref-1151][^ref-1150]",
+      "planned_findings": [
+        "f6",
+        "f7",
+        "f8",
+        "f12",
+        "f17"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 800,
+      "summary": "ROP는 요청 접수·권한·상태 알림·통제 구역 기록·인수인계 요약을, 업무 시스템·인력 제도·교시 작업 지침·승강기 제어는 연계 대상으로 둔다. [추정][^ref-125][^ref-762][^ref-1157]",
+      "planned_findings": [
+        "f21",
+        "f22",
+        "f10",
+        "f3"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1100,
+      "summary": "12, 16, 22, 23, 24, 25, 31, 32, 37, 38, 48, 50, 51, 56, 58, 60, 63, 64번 영역과의 연결. [추정][^ref-125][^ref-569]",
+      "planned_findings": [
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 700,
+      "summary": "oq-203 미해결 유지와 새 질문 네 건(관제 교대 인계 항목, 대리 입력 방식 비교, R15.08-3 이행 주체, 운영 책임 조직 비교).",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f9",
+        "f11",
+        "f15",
+        "f17"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "영역 심화: 3~11절 신규 작성, 13절 각주 정의 16건, 프런트매터 related_areas·tags·confidence·sources·last_run 채움(1차 조건부 승인 수정 16건 반영). 2차 재실행에서 이 페이지 본문은 변경 없음"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"6. 대표 접근법과 기술\" 절(1,472자)을 옮겼다. 2차: '전담 운영 조직' 소제목의 호텔 문장에서 출처에 없는 '전담 조직 없이'를 뺌"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"7. 관련 표준·프레임워크·오픈소스\" 절(1,355자)을 옮겼다(2차 재실행에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"4. 핵심 개념과 용어\" 절(1,134자)을 옮겼다(2차 재실행에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"8. 대표 연구와 자료\" 절(938자)을 옮겼다(2차 재실행에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"11. 열린 질문\" 절(843자)을 옮겼다(2차 재실행에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(840자)을 옮겼다(2차 재실행에서 변경 없음)"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area40-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 40. 운영 절차·요청 창구 의 \"3. 왜 중요한가\" 절(528자)을 옮겼다. 2차: 3절 끝 [의견] 문장을 의견 주체(구축자 의견)를 밝히고 출처에 없는 '개별 성능만큼' 비교를 뺀 문장으로 바꿈"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 40. 운영 절차·요청 창구 | 영역 심화: 3~11절 신규 작성(요청 창구·역할 기반 권한·교대 인수인계, 병원·상업 시설 사례), 1차 조건부 승인 수정 16건 반영, 2차 드리프트 2건(6절 '전담 조직 없이' 삭제, 3절 의견 주체 명시) 수정 | run 2026-09-30-18",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 40. 운영 절차·요청 창구: 3~11절 신규 작성. 요청 창구 형식·역할 기반 권한·교대 인수인계 근거와 병원·상업 시설 사례를 정리했고, 다중 제조사 관제의 요청 접수·교대 절차를 정한 공개 표준은 확인하지 못했다",
+    "category_recent": "2026-09-30 — 40. 운영 절차·요청 창구: 영역 심화로 3~11절 신규 작성(병원·상업 시설 사례, 책임 경계, 열린 질문 4건 추가)",
+    "area_recent": "2026-09-30 — 40. 운영 절차·요청 창구: 3~11절 신규 작성, 1차 조건부 승인 수정 16건 반영. 2차: 분리된 6절·3절 주제 페이지의 드리프트 2건 수정 (실행 2026-09-30-18)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "shift-handover",
+      "term_ko": "교대 인수인계",
+      "term_en": "Shift Handover",
+      "definition": "연속 운영 현장에서 나가는 근무조가 들어오는 근무조에게 설비·작업 상태와 위험 정보를 넘기는 절차로, 대면 논의·양방향(수신 확인) 대화·교대 일지 기록이 권고된다.",
+      "description": "공정 산업 지침(HSE Briefing Note No. 8, 2005)과 Brazier·Pacitti(2008)의 권고에 근거한다. 로봇 관제 교대에 옮기는 것은 추정이며 로봇 관제 전용 공개 절차는 확인되지 않았다.",
+      "related_areas": [
+        40,
+        37,
+        56
+      ],
+      "sources": [
+        "ref-1148",
+        "ref-1149"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "i-pass-handoff-program",
+      "term_ko": "I-PASS 인계 프로그램",
+      "term_en": "I-PASS Handoff Program",
+      "definition": "질병 중증도·환자 요약·할 일 목록·상황 인식과 비상 계획·수신자의 요약 확인 다섯 항목으로 의료진 인계를 구조화한 프로그램이다.",
+      "description": "Blazin 외(2020)가 Starmer 외 연구의 의료 오류 23%·예방 가능한 유해 사건 30% 감소를 인용한 2차 서술이며 교차 확인되지 않았다. 로봇 운영 사례가 아닌 의료진 인계 연구다.",
+      "related_areas": [
+        40,
+        63
+      ],
+      "sources": [
+        "ref-1155"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "role-ambiguity",
+      "term_ko": "역할 모호성",
+      "term_en": "Role Ambiguity",
+      "definition": "로봇 같은 새 설비의 운영·정비 책임이 어느 부서·사람에게 있는지 불분명한 상태로, Fu 외(2022) 호텔 직원 면담에서 사용 저항 요인과 함께 보고되었다.",
+      "related_areas": [
+        40,
+        56,
+        58,
+        60
+      ],
+      "sources": [
+        "ref-1150"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 GitHub)",
+      "title": "VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "VDA 5050 공식 명세 원문(3.0.0판, 공식 저장소 main). 플릿 관제와 이동로봇 간 통신을 정의하며 사용자 요청 접수 방법과 프로젝트 조정·수행 절차는 범위 밖에 둔다.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-125",
+      "org": "Open-RMF (open-rmf/rmf_api_msgs 저장소)",
+      "title": "rmf_api_msgs/schemas/task_request.json",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_request.json",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 작업 요청 JSON 스키마. category·description 필수, requester·labels·요청 시각·가장 이른 시작 시각·priority·fleet_name 선택.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-762",
+      "org": "Open-RMF (open-rmf/rmf-web 저장소)",
+      "title": "rmf-web/packages/api-server/README.md",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf-web/blob/main/packages/api-server/README.md",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 웹 대시보드용 API 서버 설명. OpenID Connect JWT 인증, 역할·동작·권한 그룹 기반 권한, 여러 관계형 데이터베이스 지원(기본값 메모리 내 SQLite).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-569",
+      "org": "Open-RMF (open-rmf/rmf_internal_msgs 저장소)",
+      "title": "rmf_fleet_msgs/msg/LaneRequest.msg",
+      "published": null,
+      "url": "https://github.com/open-rmf/rmf_internal_msgs/blob/main/rmf_fleet_msgs/msg/LaneRequest.msg",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 차선 열기·닫기 요청 메시지 정의. fleet_name, open_lanes, close_lanes 세 필드.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1148",
+      "org": "UK Health and Safety Executive (HSE) (humanfactors101.com 게재본)",
+      "title": "Human Factors Briefing Note No. 8 — Safety-Critical Communications",
+      "published": "2005",
+      "url": "https://humanfactors101.com/wp-content/uploads/2016/04/human-factors-briefing-note-safety-critical-communications.pdf",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람(검증에서 PDF 본문 추출 실패, 검색 결과 일치로 확인). HSE 인적 요인 지침. 교대 인수인계를 대면 논의·양방향(수신 확인) 대화·교대 일지 기록으로 하도록 권고. 제3자 사이트 게재본.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1149",
+      "org": "Brazier, A., & Pacitti, B. (IChemE Hazards XX)",
+      "title": "Improving shift handover and maximising its value to the business",
+      "published": "2008",
+      "url": "https://www.icheme.org/media/9743/xx-paper-48.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "공정 산업 교대 인수인계의 실패 원인(정보 누락, 비구조화, 문서화 부족)과 구조화된 일지·대면·양방향 대화·체크리스트 권고.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1150",
+      "org": "Fu, S., Zheng, X., & Wong, I. A. (International Journal of Hospitality Management)",
+      "title": "The perils of hotel technology: The robot usage resistance model",
+      "published": "2022",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8786597/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "중국 고급 호텔 직원 19명 면담으로 로봇 사용 저항 요인(역할·부서 소속 모호, 추가 업무, 사용성 등)을 도출.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1199",
+      "org": "지디넷코리아",
+      "title": "로봇이 병원에서 뭘 할 수 있는지 답을 찾는 사람들 (제목 일부만 확인)",
+      "published": "2024-09-19",
+      "url": "https://zdnet.co.kr/view/?no=20240919162124",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한림대학교성심병원 커맨드센터의 7종 73대 서비스 로봇 운영, 2022-08~2024-05 누적 35,492건 보도(2024년 보도 기준).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-944",
+      "org": "로봇신문",
+      "title": "국내 최고의 서비스 로봇 활용 병원 '한림대학교성심병원' (제목 일부만 확인)",
+      "published": "2024-04",
+      "url": "http://www.irobotnews.com/news/articleView.html?idxno=34601",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한림대학교성심병원 커맨드센터가 7종 73대 로봇을 통합관제로 운영하며 시나리오 개발·업무 조율·모니터링·문제 대응을 맡고, 안내 데스크·부서 담당자가 요청을 받아 로봇 서비스를 제공한다는 보도.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1151",
+      "org": "Mutlu, B., & Forlizzi, J. (ACM/IEEE HRI 2008)",
+      "title": "Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction",
+      "published": "2008-03",
+      "url": "https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람(검증에서 PDF 본문 추출 실패, 검색 결과 일치로 확인). 병원 배송 로봇 TUG 의 15개월 민족지 연구. 병동별 업무 흐름·사회적·환경 요인에 따라 수용이 크게 달랐음.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1152",
+      "org": "한국일보",
+      "title": "“딩동~ 물건 왔어요” 호텔서 주문하면 로봇이 … (제목 일부만 확인)",
+      "published": "2017-04-18",
+      "url": "https://www.hankookilbo.com/news/article/201704180418820469",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "뉴욕 알로프트 호텔의 Savioke Relay 배송 로봇 운용 보도(객실 전화 요청, 주문 물건·객실 번호는 사람이 확인해 처리, 승강기 연동, 도착 시 객실 전화 자동 알림).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1153",
+      "org": "ANSI (The ANSI Blog)",
+      "title": "ANSI/A3 R15.08-3-2026: Industrial Mobile Robot Applications",
+      "published": null,
+      "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 산업용 이동로봇 안전 요구사항 제3부(사용) 소개. 사용자 요구사항, 위험성평가, 응용·현재 운영 환경 변경 관리, 2026-04-23 발행·77쪽(검색 요약 기준).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1154",
+      "org": "Proof News (Varsha Bansal)",
+      "title": "Meet the Robot That Nurses Unplugged",
+      "published": "2026-06-09",
+      "url": "https://www.proofnews.org/moxi/",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "MultiCare 계열 두 병원의 Moxi 로봇 운용 문제(길 잃음, 승강기 버튼을 스스로 누르지 못함, 상시 동행 필요)와 간호사 반응 보도.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1155",
+      "org": "Blazin, L. J. 외 (Pediatric Quality & Safety)",
+      "title": "Improving Patient Handoffs and Transitions through Adaptation and Implementation of I-PASS Across Multiple Handoff Settings",
+      "published": "2020-07",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7382547/",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "I-PASS 구조화 인계를 여러 인계 상황에 적용한 연구. 원 연구(Starmer 외)의 오류 23%·예방 가능 유해 사건 30% 감소를 인용한 2차 서술과 I-PASS 구성 요소.",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1156",
+      "org": "OMRON Industrial Automation Europe",
+      "title": "Autonomous Mobile Robots (AMR)",
+      "published": null,
+      "url": "https://industrial.omron.eu/en/products/autonomous-mobile-robot",
+      "type": "벤더 문서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "OMRON AMR 제품 페이지. 버튼으로 AMR 을 지정 위치로 부르는 Mobile I/O Box 와 MobilePlanner 소개(벤더 주장).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1157",
+      "org": "고용노동부 (국가법령정보센터)",
+      "title": "산업안전보건기준에 관한 규칙 제222조(교시 등)",
+      "published": "2025-09-01",
+      "url": "https://www.law.go.kr/LSW/lsLawLinkInfo.do?lsJoLnkSeq=1000727281&chrClsCd=010202",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "산업용 로봇 교시 등 작업 시 조작방법·속도·신호방법·이상 시 조치·재가동 조치 지침을 정하고 작업 중 표시를 하도록 한 조문(시행 2025-09-01 판).",
+      "cited_by": [
+        "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "여러 제조사 로봇을 한 관제에서 운영할 때 교대 인수인계로 넘길 항목(열린 작업, 폐쇄 구역, 수동 모드 로봇, 미해결 예외)을 정한 공개 절차나 체크리스트가 있는가?",
+      "areas": [
+        40,
+        37
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "병원·호텔에서 안내 데스크·프런트 담당자가 로봇 요청을 대신 입력하는 방식과 현장 사용자가 직접 요청하는 방식의 처리 시간·오류·업무 부담을 비교한 연구가 있는가?",
+      "areas": [
+        40,
+        63,
+        64
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "ANSI/A3 R15.08-3-2026 이 사용자에게 요구하는 운영 절차·교육·변경 관리 항목은 무엇이며, 여러 제조사 로봇을 함께 쓰는 현장에서 누가 이를 이행하는가?",
+      "areas": [
+        40,
+        50,
+        58
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇 운영 책임을 전담 운영 조직(커맨드센터), 사용 부서, 시설·IT 부서 가운데 어디에 두는 것이 역할 모호성과 사용 저항을 줄이는지 비교한 연구가 있는가?",
+      "areas": [
+        40,
+        56,
+        60
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "시작 조건",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "시작 조건",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "작업 대상",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "수행 자원",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    },
+    {
+      "site_type": "상업 시설",
+      "item": "완료·인계",
+      "link": "docs/categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md#5-적용-사례-현장-유형-명시",
+      "title": "40. 운영 절차·요청 창구"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "ANSI/A3 R15.08-3-2026 산업용 이동로봇 안전 요구사항 제3부: IMR 응용의 사용",
+      "kind": "표준",
+      "org": "ANSI / A3(Association for Advancing Automation)",
+      "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+      "related_areas": [
+        40,
+        48,
+        50
+      ],
+      "summary": "2026-04-23 발행(검색 요약 기준, 원문 미열람). 사용자가 제조사·통합자가 준 정보를 적용해 산업용 이동로봇 응용과 운영 환경을 안전하게 운용·정비하기 위한 요구사항을 정하며, 위험성평가와 응용·현재 운영 환경의 변경 관리를 강조한다.",
+      "ref_id": "ref-1153"
+    },
+    {
+      "name": "HSE Human Factors Briefing Note No. 8 — Safety-Critical Communications",
+      "kind": "프레임워크",
+      "org": "UK Health and Safety Executive (HSE)",
+      "url": "https://humanfactors101.com/wp-content/uploads/2016/04/human-factors-briefing-note-safety-critical-communications.pdf",
+      "related_areas": [
+        40,
+        37
+      ],
+      "summary": "2005년 공정 산업 인적 요인 지침(제3자 게재본, 원문 미열람). 교대 인수인계를 대면 논의·양방향(수신 확인) 대화·교대 일지 기록으로 하도록 권고한다.",
+      "ref_id": "ref-1148"
+    }
+  ],
+  "additional_research_requests": [
+    "5절 적용 사례: 물류창고·제조 공장·가정(아파트 입주민 앱 로봇 호출 등)·실외·기타 현장의 로봇 요청 창구와 운영 조직 사례가 없어 병원·상업 시설 사례만 세웠다. 현장 유형 편중을 줄이기 위해 근거 자료가 필요하다.",
+    "5절 병원 사례(한림대학교성심병원)의 작업 대상·제약·완료·인계 칸이 미확인이다. 요청 대상 업무 구성과 완료 확인 방식을 밝힌 자료가 필요하다. 2024년 이후 규모 변화(검색 요약의 11종 77대)도 출처 확인이 필요하다.",
+    "5절 병원 TUG 사례(ref-1151)의 요청 시작·적재·알림 응답 절차가 원문 미확인이라 [추정]으로 썼다. 원문 본문 확인이 필요하다.",
+    "11절 oq-203: VDA 5050 3.0.0(ref-031)의 RELEASE 구역 허가·만료(leaseExpiry) 절차가 임시 통제 구역 선언·해제에 주는 근거를 확인해야 한다(1차 검증 노트 제안).",
+    "6·8절: I-PASS 수치(Starmer 외, NEJM 2014)는 2차 서술만 근거라 원 연구 원문 확인이 필요하다. 로봇 관제 교대 인수인계 항목을 정한 공개 절차·표준도 계속 찾아야 한다.",
+    "7절: ANSI/A3 R15.08-3-2026 원문(또는 공식 요약)을 열어 사용자 운영 절차·교육 요구 항목을 확인해야 한다.",
+    "6절 요청 접수: ISO/IEC 20000-1:2018 서비스 요청 관리 조항과 Diligent Moxi 요청 창구(키오스크·문자·음성 버튼)를 공식 자료로 확인하면 요청 창구 접근을 보강할 수 있다.",
+    "퍼블리셔 확인 요청: 자동 분리 뒤 원 페이지 13절 각주 정의는 15건(ref-1156 은 분리된 4·6절 주제 페이지에만 인용)인데 원 페이지 프런트매터 sources 는 16건이다. 2차 검증 노트가 코드 분리로 생긴 차이로 판단해 퍼블리셔 담당 확인 사항으로 남겼으므로, 이번 재실행에서는 지시 범위 밖이라 고치지 않았다."
+  ],
+  "fixes_applied": [
+    "f13 강등 — 5절 병원 TUG 사례의 시작 조건·수행 자원 칸을 [추정]으로 쓰고 '원문 세부 절차 미확인'을 병기했다.",
+    "ref-1153·ref-1148·ref-1151 — 13절 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 해당 항목에 source_unopened: true 를 넣었다.",
+    "f6 — '충분한 시간을 두어'를 빼고 4·6·8절에서 대면 논의, 양방향(수신 확인) 대화, 교대 일지 기록 권고로만 썼다.",
+    "f7 — 6·8절의 실패 원인을 '교대 기록(문서화) 부족'으로 고쳤다.",
+    "f12 — 3·5·8절에서 '통행이 많은 곳에서의 주행 중단'으로 고쳤다.",
+    "f16 — 5절 상업 시설 사례의 시작 조건을 '주문한 물건과 객실 번호는 사람이 확인해 처리했다(주문 접수는 자동화되지 않음)'로 좁혔다.",
+    "f18 — 5절 Moxi 서술을 '승강기 버튼을 스스로 누르지 못해'로 고쳤다.",
+    "f2 — 6절에 '여러 관계형 데이터베이스(PostgreSQL·SQLite·MySQL·MariaDB)를 지원하고 기본값은 메모리 내 SQLite'로 고치고, 4·6절에서 용어집 역할 기반 접근 통제 항목에 링크했다.",
+    "f8 — I-PASS 는 4절과 8절(및 6절에서 4절 참조)에만 쓰고 5절 사례와 site_matrix_updates 에서 뺐으며, 수치가 Starmer 외 원 연구를 Blazin 외가 인용한 2차 서술이고 교차 확인되지 않았음을 본문에 밝혔다.",
+    "f6·f7·f8 — 공정 산업·의료의 인계 방법 참고로만 서술하고, 로봇 관제 교대로 옮길 수 있다는 내용은 6절 끝의 f9 [추정] 문장으로만 썼다.",
+    "f10 — 7절 표에 적용 대상이 산업용 로봇의 교시 등 작업임을 밝혀 관련 법령으로 두고, 9절 표·본문에서 사업주·제조사가 맡는 연계 대상으로 썼다.",
+    "f3 — 6·7절에서 VDA 5050 을 '3.0.0판(공식 저장소 main, 발행일 미확인)'으로 판을 밝혀 썼다.",
+    "f11 — 7절에 발행일 2026-04-23·77쪽을 기준일로 남기고 내용은 사용자 요구사항·위험성평가·변경 관리·수명주기 인원 안전(검색 요약 기준) 범위로만 썼으며 원문 미열람을 표시했다.",
+    "f14·f15 — 3·5·6절의 한림대학교성심병원 규모(7종 73대)와 누적 사용 건수에 '2024년 보도 기준'을 밝히고 그 뒤의 규모 변화는 쓰지 않았다.",
+    "5절 — 사례를 병원(f12·f13·f14·f15·f18)과 상업 시설(f16·f17)로만 세우고, 다른 현장 유형은 근거 자료를 찾지 못했다고 밝혔으며 f19·f10 을 사례로 세우지 않았고 site_matrix_updates 를 병원·상업 시설 칸으로 한정했다.",
+    "glossary '역할 모호성' — 정의를 'Fu 외(2022) 호텔 직원 면담에서 사용 저항 요인과 함께 보고되었다'로 한정해 glossary_updates 와 4절에 썼다.",
+    "분량 초과 자동 분리: 40. 운영 절차·요청 창구 본문 9,825자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 3,707자",
+    "2차: 6절 '전담 운영 조직' 소제목의 '전담 조직 없이' 드리프트 — docs/topics/2026/2026-09-30-area40-s6.md 3절 문장을 '반면 로봇의 부서 소속이 불분명했던 호텔에서는 정비 책임과 부서 간 소통 부담이 보고되었다. [사실][^ref-1150]'으로 고쳤다.",
+    "2차: 3절 끝 [의견] 문장의 주체 누락·브리프 밖 비교 — docs/topics/2026/2026-09-30-area40-s3.md 3절 끝 문장을 '같은 로봇도 요청을 받고 로봇을 책임지는 방식에 따라 현장 수용이 달랐다는 점을 이 영역을 따로 다루는 이유로 본다(구축자 의견). [의견][^ref-1151][^ref-1150]'으로 바꿔 '개별 성능만큼' 비교를 뺐다."
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "run_id": "2026-09-30-11",
+  "outline": [
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 1100,
+      "summary": "ROP는 여러 제조사 플릿 서버·브로커·로봇을 한곳에 잇기 때문에 연결 하나가 뚫리면 공격이 로봇 동작으로 이어질 수 있다. [추정][^ref-1109][^ref-031]",
+      "planned_findings": [
+        "f22",
+        "f21",
+        "f8",
+        "f14",
+        "f16",
+        "f13",
+        "f19"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 900,
+      "summary": "이 영역의 용어는 통신 보호(DDS 보안 규격·인클레이브), 위협 관리(STRIDE·구역과 도관·보안 수준), 입력 보안(프롬프트 주입·탈옥), 감사 기록(감사 추적·변조 탐지 로그)으로 나뉜다. [의견]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f4",
+        "f7",
+        "f18",
+        "f14",
+        "f2",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 1300,
+      "summary": "병원 자율이동로봇 플릿 서버 취약점(CISA 2022), 가정 로봇청소기 보안 점검(KISA·한국소비자원 2025), 제조 공장 산업용 로봇 제어기 분석(2017) 세 사례를 여섯 항목으로 정리한다. [사실][^ref-1109]",
+      "planned_findings": [
+        "f8",
+        "f9",
+        "f12",
+        "f10"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 1700,
+      "summary": "통신 인증·암호화, 위협 모델과 취약점 관리, 대화·문서 입력 방어, 변조 탐지 감사 기록의 네 접근을 겹치는 방향으로 보인다. [추정][^ref-700][^ref-1108]",
+      "planned_findings": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f1",
+        "f7",
+        "f9",
+        "f18",
+        "f17",
+        "f15",
+        "f2",
+        "f19",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 700,
+      "summary": "통신 보호는 ROS 2 계열 문서와 IEC 62443, 입력 보안은 OWASP LLM01, 감사 기록은 EU 기계류 규정이 주요 기준이다. [추정][^ref-009][^ref-1105][^ref-1108][^ref-1111]",
+      "planned_findings": [
+        "f1",
+        "f3",
+        "f5",
+        "f6",
+        "f7",
+        "f18",
+        "f19",
+        "f13"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 900,
+      "summary": "실제 취약점 공개(CISA), 로봇 제어기·휴머노이드 분석, LLM 제어 로봇 탈옥·주입 공격, 가드레일 방어, 블록체인 감사 기록 연구가 대표 자료다. [사실][^ref-1109][^ref-857]",
+      "planned_findings": [
+        "f8",
+        "f10",
+        "f11",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 700,
+      "summary": "ROP는 자신이 여는 연결·전체 위협 모델·입력 방어·감사 기록을 맡고, 로봇 제어기·펌웨어와 현장 망 보안은 연계 대상으로 둔다. [추정][^ref-405][^ref-1109]",
+      "planned_findings": [
+        "f23",
+        "f24"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1100,
+      "summary": "인증·개인정보, 채팅 입력, 플릿 연동, 기록·모니터링, 언어 모델 계획, 안전, 수명주기, 규제, 현장 유형 영역과 이어진다. [추정][^ref-1109]",
+      "planned_findings": [
+        "f25"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 800,
+      "summary": "oq-144는 시뮬레이션·실험실 수준의 부분 근거만 있어 열림으로 두고, 브로커 보안 프로파일·에이전트 간 전파 방어·감사 기록 비용·EU 규정 적용 범위·KISA 요구 항목 다섯 질문을 새로 연다.",
+      "planned_findings": [
+        "f6",
+        "f15",
+        "f16",
+        "f17",
+        "f19",
+        "f20",
+        "f13"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "seed → draft: 3~11절 첫 작성(통신 인증·암호화, 위협 모델·IEC 62443, LLM 탈옥·프롬프트 주입 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 적용 사례, 책임 경계, 연결 19개 영역, 열린 질문), 13절 각주 17건"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"6. 대표 접근법과 기술\" 절(2,128자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"8. 대표 연구와 자료\" 절(1,196자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절(1,102자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"11. 열린 질문\" 절(1,063자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"3. 왜 중요한가\" 절(1,039자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area52-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 52. 통신 보호·위협 관리·감사 의 \"4. 핵심 개념과 용어\" 절(1,031자)을 옮겼다"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 52. 통신 보호·위협 관리·감사 | seed → draft: 3~11절 첫 작성(통신 인증·암호화, 위협 모델, LLM 입력 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 사례), 각주 17건 | run 2026-09-30-11",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 52. 통신 보호·위협 관리·감사: 3~11절 첫 작성(SROS 2·Open-RMF 통신 보호, ROS 2 위협 모델·IEC 62443, LLM 탈옥·프롬프트 주입 방어, 변조 탐지 감사 기록, 병원·가정·제조 공장 사례)",
+    "category_recent": "2026-09-30 — 52. 통신 보호·위협 관리·감사: seed → draft, 3~11절 첫 작성과 병원·가정·제조 공장 적용 사례, 열린 질문 5건 추가",
+    "area_recent": "2026-09-30 — 52. 통신 보호·위협 관리·감사: 3~11절 첫 작성, 각주 17건, 새 열린 질문 5건(oq-144 는 열림 유지)"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "stride-threat-classification",
+      "term_ko": "STRIDE 위협 분류",
+      "term_en": "STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege)",
+      "definition": "위조·변조·부인·정보 노출·서비스 거부·권한 상승 여섯 범주로 시스템 위협을 분류하는 위협 모델링 분류로, ROS 2 위협 모델이 로봇 시스템에 적용했다.",
+      "description": "ROS 2 Robotic Systems Threat Model 은 STRIDE 로 위협을 분류하고 DREAD 로 위험을 평가하며 TurtleBot 3·MARA 에 적용했다.",
+      "related_areas": [
+        52
+      ],
+      "sources": [
+        "ref-010"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "indirect-prompt-injection",
+      "term_ko": "간접 프롬프트 주입",
+      "term_en": "Indirect Prompt Injection",
+      "definition": "프롬프트 주입(Prompt Injection)의 하위 유형으로, 사용자가 직접 입력하지 않은 웹 페이지·파일·인식 결과 같은 외부 내용에 숨은 지시가 언어 모델의 행동을 바꾸는 공격이다.",
+      "description": "상위 용어: 프롬프트 주입(glossary/prompt-injection.md). OWASP LLM01:2025 는 사용자 입력이 직접 모델 행동을 바꾸는 직접 주입과 이를 구분한다. 다중 에이전트 로봇 시스템 연구는 인식 모듈을 거친 간접 주입이 로봇 행동을 오염시킬 수 있음을 보였다.",
+      "related_areas": [
+        52,
+        13
+      ],
+      "sources": [
+        "ref-1108",
+        "ref-1115"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "security-level-iec-62443",
+      "term_ko": "보안 수준",
+      "term_en": "Security Level (SL, IEC 62443)",
+      "definition": "IEC 62443 에서 구역·도관이 견뎌야 할 공격자 역량에 따라 SL1~SL4 로 매기는 보호 등급으로, 일곱 기본 요구별 벡터로 표현할 수 있다.",
+      "description": "관련 용어: 보안 구역과 도관(glossary/zones-and-conduits.md).",
+      "related_areas": [
+        52,
+        22
+      ],
+      "sources": [
+        "ref-1105"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "tamper-evident-log",
+      "term_ko": "변조 탐지 로그",
+      "term_en": "Tamper-evident Log",
+      "definition": "블록체인 같은 수단으로 기록이 나중에 고쳐지면 드러나게 만든 로그로, 책임 추적용 감사 기록의 무결성을 높이는 데 쓴다.",
+      "description": "감사 추적(Audit Trail, glossary/audit-trail.md)의 기록 무결성을 높이는 방식이다. Fernández-Becerra 외는 ROS 기반 이동 로봇의 행동 기록에 블록체인 변조 방지를 적용한 블랙박스형 요소를 제안했다.",
+      "related_areas": [
+        52,
+        37
+      ],
+      "sources": [
+        "ref-1112"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-009",
+      "org": "Open Robotics (ROS 2 Design, Kyle Fazzari)",
+      "title": "ROS 2 DDS-Security integration",
+      "published": null,
+      "url": "https://design.ros2.org/articles/ros2_dds_security.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "DDS-Security 의 다섯 플러그인 인터페이스와 ROS 2(SROS 2)가 쓰는 인증·접근 통제·암호 세 가지, 보안 환경 변수와 키 저장소 구조를 설명하는 ROS 2 설계 문서.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-010",
+      "org": "Open Robotics (ROS 2 Design, Moulard·Hortala·Perez 외)",
+      "title": "ROS 2 Robotic Systems Threat Model",
+      "published": null,
+      "url": "https://design.ros2.org/articles/ros2_threat_model.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "STRIDE·DREAD 로 ROS 2 로봇 시스템의 통신·소프트웨어·하드웨어·로그 위협과 완화책을 정리하고 TurtleBot 3·MARA 에 적용한 위협 모델 문서.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1105",
+      "org": "IEC (SyC Smart Energy)",
+      "title": "IEC 62443",
+      "published": null,
+      "url": "https://syc-se.iec.ch/deliveries/cybersecurity-guidelines/security-standards-and-best-practices/iec-62443/",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "IEC 공식 사이트의 IEC 62443 소개. 구역·도관, 보안 수준 SL1~SL4, 일곱 기본 요구를 설명한다. 표준 본문은 아니다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-857",
+      "org": "Robey, A., Ravichandran, Z., Kumar, V., Hassani, H., & Pappas, G. J. (arXiv)",
+      "title": "Jailbreaking LLM-Controlled Robots",
+      "published": "2024-10",
+      "url": "https://arxiv.org/abs/2410.13691",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "LLM 제어 로봇을 탈옥하는 RoboPAIR 공격을 세 로봇 설정에서 시연하고 자주 100% 성공률을 보고한 프리프린트.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-700",
+      "org": "Ravichandran, Z., Robey, A. 외 (arXiv)",
+      "title": "Safety Guardrails for LLM-Enabled Robots",
+      "published": "2025-03",
+      "url": "https://arxiv.org/abs/2503.07885",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "신뢰 기반 LLM 과 시간 논리 제어 합성으로 이뤄진 RoboGuard 가드레일이 탈옥 공격 아래 위험 계획 실행을 92% 이상에서 3% 미만으로 줄였다고 보고한 프리프린트.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1108",
+      "org": "OWASP GenAI Security Project",
+      "title": "LLM01:2025 Prompt Injection",
+      "published": null,
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "직접·간접 프롬프트 주입의 정의와 최소 권한·사람 승인·외부 내용 분리 등 일곱 가지 완화책을 정리한 OWASP LLM 상위 10 위험 항목.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1109",
+      "org": "CISA (미국 사이버보안·기반시설보안청)",
+      "title": "Aethon TUG Home Base Server (ICSA-22-102-05)",
+      "published": "2022-04-12",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-102-05",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "병원 자율이동로봇 TUG 의 플릿 서버 취약점 5건(인가 누락, 웹소켓 무인증 제어, XSS)과 완화책을 공개한 ICS 권고.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1110",
+      "org": "Mayoral-Vilches, V. (Alias Robotics, arXiv)",
+      "title": "The Cybersecurity of a Humanoid Robot",
+      "published": "2025-09-17",
+      "url": "https://arxiv.org/abs/2509.14096",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Unitree G1 휴머노이드의 정적 키 암호화 결함과 동의 없는 원격 측정 전송을 분석한 기술 보고서.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1111",
+      "org": "IES (Integrated Equipment Services)",
+      "title": "Machinery Regulation Guide",
+      "published": "2026-08-27",
+      "url": "https://www.ies.co.uk/reference-library/machinery-regulation-guide",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "EU 기계류 규정 (EU) 2023/1230 의 변조 방지·개입 증거 기록·안전 소프트웨어 판 추적 로그 5년 보관·2027-01-20 적용을 해설한 업계 안내서.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1112",
+      "org": "Fernández-Becerra, L., González-Santamarta, M. Á., Guerrero-Higueras, Á. M., Rodríguez-Lera, F. J., & Matellán Olivera, V. (arXiv)",
+      "title": "Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models",
+      "published": "2024-03",
+      "url": "https://arxiv.org/abs/2403.09567",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "ROS 기반 이동 로봇의 행동 기록을 블록체인으로 변조 방지하는 블랙박스형 책임 추적과 LLM 설명 생성 구조를 제안한 프리프린트.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-969",
+      "org": "바이라인네트워크 (곽중희)",
+      "title": "‘로봇청소기’ 다수 제품 보안 취약…대응방안은?",
+      "published": "2025-10-31",
+      "url": "https://byline.network/2025/10/31-283/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "KISA·한국소비자원의 로봇청소기 6종 40개 항목 보안 점검 결과와 대응방안을 전한 기사. KISA 공지 제목과 내용이 일치한다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1114",
+      "org": "엠에스투데이",
+      "title": "선박·위성·로봇까지 해킹 표적…정부, ‘피지컬 AI’ 산업 보안 기준 제시",
+      "published": "2026-03-06",
+      "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=100755",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "과기정통부·KISA 가 로봇 보안모델 고도화판과 사이버보안 요구사항 해설서를 KISA 지식플랫폼으로 배포했다고 전한 기사.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1115",
+      "org": "Nagaraja, N., Bagari, A., & Bahsi, H. (arXiv)",
+      "title": "When Prompts Control Robots: Prompt Injection Attacks in Multi-Agent Robotic Systems",
+      "published": "2026-08",
+      "url": "https://arxiv.org/abs/2608.00747",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "LLM 기반 다중 에이전트 로봇 시스템에서 직접·간접 프롬프트 주입과 에이전트 간 전파를 체계적으로 분석한 프리프린트.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1116",
+      "org": "Zhang, W., Kong, X., Dewitt, C., Braunl, T., & Hong, J. B. (arXiv)",
+      "title": "A Study on Prompt Injection Attack Against LLM-Integrated Mobile Robotic Systems",
+      "published": "2024-08",
+      "url": "https://arxiv.org/abs/2408.03515",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "GPT-4o 통합 이동 로봇 주행 시뮬레이션에서 프롬프트 주입 영향과 보안 프롬프트·응답 기반 탐지 방어(약 30.8% 개선)를 보고한 프리프린트.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-031",
+      "org": "VDA / VDMA (VDA5050 공식 저장소)",
+      "title": "VDA 5050 — Interface for the Communication between Mobile Robots and a Fleet Control (VDA5050_EN.md, 3.0.0)",
+      "published": null,
+      "url": "https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md",
+      "type": "표준",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "이동 로봇–플릿 관제 통신 규격 3.0.0 원문. 프로토콜 보안은 브로커 구성에서 고려해야 하지만 이 지침은 다루지 않는다고 적는다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-405",
+      "org": "Open Robotics (Programming Multiple Robots with ROS 2)",
+      "title": "Security",
+      "published": null,
+      "url": "https://osrf.github.io/ros2multirobotbook/security.html",
+      "type": "오픈소스 문서",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "Open-RMF 의 ROS 2 부분(SROS 2 키 저장소·인클레이브)과 웹 대시보드(TLS·Keycloak OIDC·역할 기반 접근 통제) 보안을 설명하는 공식 책의 보안 장.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1119",
+      "org": "Quarta, D., Pogliani, M., Polino, M., Maggi, F., Zanchettin, A. M., & Zanero, S. (IEEE S&P 2017)",
+      "title": "An Experimental Security Analysis of an Industrial Robot Controller",
+      "published": "2017",
+      "url": "https://files01.core.ac.uk/download/pdf/84891817.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 산업용 로봇 제어기의 소프트웨어 취약점과 구조적 결함이 제어 정확성과 작업자 안전 요구를 무너뜨릴 수 있음을 실험으로 보인 IEEE 보안 학회 논문(검색 결과 요약 기준).",
+      "cited_by": [
+        "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md"
+      ],
+      "source_unopened": true
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "여러 제조사 플릿 관리 서버와 VDA 5050 브로커·Open-RMF 어댑터를 잇는 ROP 에서 브로커·API 의 상호 인증과 TLS 설정의 최소 요구를 정한 공개 보안 프로파일이 있는가?",
+      "areas": [
+        52,
+        20,
+        21
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "LLM 에이전트 여러 개가 로봇을 나눠 맡을 때 한 에이전트에 주입된 지시가 다른 에이전트로 퍼지지 않게 에이전트 간 메시지에 신뢰 경계를 두는 방어의 효과를 잰 연구가 있는가?",
+      "areas": [
+        52,
+        13,
+        12
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "명령·승인 감사 기록을 해시 체인·블록체인으로 변조 탐지 가능하게 남길 때 수백 대 로봇 규모의 명령 빈도에서 지연·저장 비용을 측정한 자료가 있는가?",
+      "areas": [
+        52,
+        37
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "EU 기계류 규정의 개입 증거 기록·안전 소프트웨어 추적 로그 요구가 개별 기계 밖에서 여러 로봇을 지시하는 오케스트레이션 플랫폼에도 미치는가, 미친다면 기록 책임은 누구에게 있는가?",
+      "areas": [
+        52,
+        59,
+        58
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "KISA 로봇 보안모델(고도화)과 사이버보안 요구사항 해설서는 로봇 통신 암호화·감사 기록·원격 업데이트에 어떤 요구 항목을 두며 다중 로봇 관제 플랫폼을 대상에 포함하는가?",
+      "areas": [
+        52,
+        59
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "병원",
+      "item": "제약",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "가정",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "가정",
+      "item": "수행 자원",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "가정",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    },
+    {
+      "site_type": "제조 공장",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/communication-protection-threat-management-and-audit.md#5-적용-사례-현장-유형-명시",
+      "title": "52. 통신 보호·위협 관리·감사"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection)",
+      "kind": "프레임워크",
+      "org": "OWASP GenAI Security Project",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "related_areas": [
+        52,
+        13
+      ],
+      "summary": "직접·간접 프롬프트 주입을 구분하고 출력 형식 검증·최소 권한·고위험 행동의 사람 승인·외부 내용 분리 등 완화책을 제시하며, 확실한 예방법은 아직 불분명하다고 밝힌다.",
+      "ref_id": "ref-1108"
+    },
+    {
+      "name": "EU 기계류 규정 (EU) 2023/1230 (변조 보호·개입 증거 기록, 업계 해설 기준)",
+      "kind": "프레임워크",
+      "org": "European Union (IES 해설 경유)",
+      "url": "https://www.ies.co.uk/reference-library/machinery-regulation-guide",
+      "related_areas": [
+        52,
+        59,
+        50
+      ],
+      "summary": "2027-01-20 전면 적용. 규정 준수에 결정적인 하드웨어·소프트웨어의 변조 보호, 개입 증거 기록, 출시 후 안전 소프트웨어 판 추적 로그 5년 보관을 요구한다(업계 해설 기준, 규정 원문 미열람).",
+      "ref_id": "ref-1111"
+    },
+    {
+      "name": "KISA 로봇 분야 보안모델 고도화판·사이버보안 요구사항 해설서",
+      "kind": "프레임워크",
+      "org": "과학기술정보통신부·한국인터넷진흥원(KISA)",
+      "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=100755",
+      "related_areas": [
+        52,
+        59
+      ],
+      "summary": "2026년 3월 KISA 지식플랫폼 자료실로 무료 배포된, 로봇 제품 개발·수출 때 참고할 보안 자료(기사 기준, 원문 미열람).",
+      "ref_id": "ref-1114"
+    }
+  ],
+  "additional_research_requests": [
+    "13. 대화형 기능의 신뢰·기반 페이지(docs/categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) 6·8·11절 반영: 1차 검증 지시대로 현재 본문이 입력에 없어 이번 실행에서 갱신하지 않았다. 다음 실행에서 그 페이지 본문을 입력에 넣고 RoboPAIR·다중 에이전트 주입(ref-857·ref-1115), RoboGuard·보안 프롬프트 방어·OWASP LLM01(ref-700·ref-1116·ref-1108)과의 중복을 확인해 반영할 것.",
+    "5절 적용 사례: 물류창고·상업 시설·실외 현장의 로봇 통신 보호·위협·감사 사례(예: 물류창고 AMR 플릿 관리 소프트웨어 취약점 권고)를 찾지 못했다. 현장 유형 균형을 위해 필요하다.",
+    "4·6·7절: IEC 62443-3-3 의 감사 관련 요구(감사 대상 사건, 부인 방지, 감사 정보 보호 등)를 원문 또는 공식 자료로 확인해야 감사 기록 요구를 표준 근거로 쓸 수 있다.",
+    "5·8절: Quarta 외(ref-1119) 원문을 열어 공격 유형과 원격 장악 여부를 확인하면 [추정]을 [사실]로 되돌릴 근거가 된다.",
+    "6·7절: EU 기계류 규정 (EU) 2023/1230 원문(EUR-Lex)을 열어 변조 보호·개입 증거 기록·추적 로그 요구의 조항 번호와 문구를 확인할 것(현재 업계 해설 기준).",
+    "7·11절: KISA 로봇 보안모델 고도화판·사이버보안 요구사항 해설서 원문의 요구 항목(통신 암호화·감사 기록·원격 업데이트)과 대상 범위를 확인할 것.",
+    "퍼블리셔 확인 요청: 이번 브리프의 ref-1105~ref-405 이 실행 2026-09-30-09 브리프의 다른 출처 id 와 겹치고, ref-031(VDA 5050 3.0.0)은 실행 2026-09-30-10 의 ref-1079 와 URL 이 같다. id 병합·재부여 시 이 페이지의 각주 id 도 함께 바꿔야 한다."
+  ],
+  "fixes_applied": [
+    "f10 강등 — 5절 제조 공장 사례의 작업 대상·예외·성과 칸과 8절 Quarta 외 항목을 [추정]으로 쓰고, 검색 결과 요약으로 확인된 범위(소프트웨어 취약점과 구조적 결함으로 제어 정확성과 작업자 안전 요구를 무너뜨릴 수 있음)만 남겼으며 '원격 완전 장악'·'펌웨어 백도어·인증 우회'는 뺐다.",
+    "ref-1119 — 13절 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates 의 ref-1119 항목에 source_unopened: true 를 넣고 요약을 '원문 미열람.'으로 시작했다.",
+    "f12 — '통신 암호화 부족'을 빼고 5절 가정 사례의 작업 대상·수행 자원·예외·성과 문장을 [추정]으로 강등했으며, 점검 주체·기간·6종·40개 항목과 나르왈·드리미·에코백스 제품의 사진 열람·카메라 강제 활성화, 미흡한 사용자 인증, 개인정보 조회만 남겼다.",
+    "f6·ref-031 — 13절 각주와 reference_updates 의 제목을 'VDA 5050 — Interface for the Communication between Mobile Robots and a Fleet Control (VDA5050_EN.md, 3.0.0)'으로 고쳤고, 본문(3·6·7절)에서 '플릿 관제–이동 로봇'으로 쓰며, 6절에서 원문 문장 그대로 '프로토콜 보안은 브로커 구성에서 고려해야 하지만 이 지침은 다루지 않는다'를 [사실]로, '운영자와 통합 사업자가 정해야 한다'는 별도 문장 [추정]으로 떼어 썼다.",
+    "f4 — 6절에서 엄격 모드를 '보안 파일을 찾지 못한 참여자를 실행하지 않는 모드', 허용 모드를 '보안 파일이 없으면 보안 기능 없이 실행하는 기본 모드'로 고쳐 썼다.",
+    "f21 — 3절 마지막 단락의 종합 문장에서 f10(제어기) 근거를 빼고 전면 제어 사례는 CISA 권고(ref-1109)에만 기대게 했으며, '높은 확률로 탈옥'을 '연구 환경에서 높은 공격 성공률이 보고됐다'로 바꿨다.",
+    "f22 — 3절에서 '플릿 서버 취약점이 로봇 기능 전면 제어로 이어질 수 있음'으로 줄였고, KISA 해설서는 '제품 개발·수출 때 참고할 자료로 배포'로만 서술해 '제품 요건' 표현을 쓰지 않았다(EU 규정은 '요구한다'로만 썼다).",
+    "3·5·6·9절 — f9 의 방화벽·VPN·망 격리는 5절 제약 칸과 6절에서 '시설 IT/OT 쪽 연계 대상'으로 표시했고, f10·f11 의 제어기·펌웨어·제조사 원격 측정은 사례·위협 근거로만 쓰고 9절 표의 '연계 대상:' 칸에 짧게 두었다.",
+    "f19 — 3·6·7절에서 근거가 업계 해설(IES, 2026-08-27 갱신)임을 밝히고, 6절에 규정 원문을 열지 못해 조항 번호는 적지 않는다고 적었다.",
+    "용어 후보 'STRIDE 위협 분류' — glossary_updates 정의에서 '빠짐없이 떠올리도록 돕는'을 빼고 '여섯 범주로 시스템 위협을 분류하는'으로 썼다.",
+    "용어 후보 '보안 수준' — glossary_updates 정의에서 '목표·역량·달성 수준을 구분하고'를 뺐다.",
+    "용어 후보 '변조 탐지 로그' — glossary_updates 정의에서 '앞 기록의 해시를 잇거나 외부에 고정해'를 빼고 '블록체인 같은 수단으로 기록이 고쳐지면 드러나게 만든 로그'로 줄였으며, 설명에 기존 용어 '감사 추적(Audit Trail)'과의 관계와 링크를 적었다.",
+    "용어 후보 '간접 프롬프트 주입' — glossary_updates 정의를 기존 용어 '프롬프트 주입(Prompt Injection)'의 하위 유형으로 표기하고 f18(OWASP)의 직접·간접 구분을 따랐으며, 설명에 상위 용어 링크를 적었다(4절 본문에서도 프롬프트 주입 항목 안에서 간접 주입을 설명했다).",
+    "두 번째 페이지 제안(13. 대화형 기능의 신뢰·기반) — 현재 본문이 입력에 없어 이번 실행에서 갱신하지 않았고, additional_research_requests 에 다음 실행 후보로 남겼다.",
+    "11절 — oq-144 를 '열림'으로 두고 f15·f17 을 시뮬레이션·실험실 수준의 부분 근거로만 적었으며, open_question_updates 에 해결 갱신을 넣지 않았다.",
+    "분량 초과 자동 분리: 52. 통신 보호·위협 관리·감사 본문 10,657자 > 기준 4,000자 → 6개 절을 주제 페이지로 옮김, 남은 본문 3,919자"
+  ]
+}

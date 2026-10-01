@@ -1,0 +1,382 @@
+{
+  "duration_api_ms": 228615,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.8249026000000002,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 124940,
+    "cache_read_input_tokens": 1327933,
+    "output_tokens": 18903,
+    "output_tokens_details": {
+      "thinking_tokens": 6754
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 124940,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 13925,
+        "cache_read_input_tokens": 212036,
+        "cache_creation_input_tokens": 1370,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1370
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 18903,
+      "cacheReadInputTokens": 1327933,
+      "cacheCreationInputTokens": 124940,
+      "webSearchRequests": 0,
+      "costUSD": 1.6432226,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6754,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 149025,
+      "outputTokens": 4531,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.18168,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 21,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-17\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: VDI 공식 페이지(WebFetch)에서 발행 2025-05, 39쪽, 독·영, 가상 시운전의 체계적 정의·수명주기 내 위치, 기본 시험 구성·시험 방법·모델 유형·시뮬레이션 구성의 개정·보완 문구가 일치한다. 발행 기관 자료이며 표준 본문(유료)은 열지 않았다. 단일 출처.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"ref-1172 는 검증자가 PMC(reCAPTCHA)·MDPI(403)로 다시 열지 못해 검색 결과로 서지(Rosenberger 외, Sensors 23(7):3545, 2023-03-28)와 HiL·가상 시운전 주제만 확인했다. MiL·SiL·HiL 세부 정의는 리서치의 원문 열람 기록(fetched: true, PMC 전문)에 의존한다. 단일 출처.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"서지와 '분산 스트림 처리 시스템을 HiL 로 연결한 산업 설비 시뮬레이션으로 시험' 은 검색 결과로 확인했다. 구조 3가지, 제어기 3대·가상 인스턴스 9대, 비실시간 한계, 절감 수치 부재는 검증자 재열람 실패로 리서치 열람 기록 기준이다. PLC·설비 제어 코드의 가상 시운전은 원문 19장 '시설·설비 제어' 연계 대상이다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: GitHub 원본(src/simulation.md)에서 traffic_editor 주석(경유점·교통 차선·문·승강기 같은 공유 자원), building_map_generator 의 Gazebo/Ignition 세계·주행 그래프 생성, slotcar·문·승강기·작업셀(TeleportDispenser/Ingestor)·Menge 군중 플러그인, 'Long running simulations can instill confidence…' 문구, 참여 대수·새 플릿 도입 평가, 드물지만 결과가 심각한 경계 사례 검토가 확인된다. 발행일 없음(기준일은 접근일).\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 입력 원문 data/source_texts/ref-031.txt(VDA 5050 3.0.0) 2장 Scope 가 'Project Coordination and Implementation Procedures'(commissioning workflows, validation and acceptance procedures 포함)와 안전 요구·교통 관리 로직·운영 책임·사이버보안을 범위 밖으로 둔다. 기존 각주 ref-031 을 다시 쓴다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: rosbag2 README(raw, rolling 브랜치)에 '/clock is published only while a playback session is active', ~/pause·~/resume·~/seek·~/set_rate·~/play_next 서비스, 기본 저장 형식 mcap·sqlite3 플러그인이 있다. 문서 발행일 없음(기준일은 접근일).\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록(2023-10-12)에 Waymo Open Motion Dataset 같은 실제 주행 데이터로 다중 에이전트 시나리오를 'initialize or play back' 하고, 학습·수작성 행동 모델로 상호작용을 지원한다고 나온다. 자율주행 차량은 원문 19장 '업종별 조건'의 연계 대상이며 로봇 현장 사례가 아니다.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f6·f7 에서 끌어낸 추정으로 태그가 맞다. 로봇 플릿에서 검증한 자료가 없다는 한계가 브리프에 적혀 있다.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 검증자가 arXiv 초록을 열었다. SRCC_Succ 0.18 → 0.844, LoCoBot PointGoal 주행, 벽을 따라 미끄러지는 충돌 동역학 악용이 초록에 있고, IEEE RA-L 2020, 개정 2020-08-17 이다. 브리프가 이 출처를 fetched: false·source_unopened: true 로 적었으므로 페이지 각주는 원문 미열람 표기를 유지한다(R-1: 검증자는 표시를 올리지 않는다).\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록(2025-10-23, Annual Review of Control, Robotics, and Autonomous Systems 2026 게재 예정)에 추상화·근사로 생기는 불일치(현실 격차), 영역 무작위화·현실→시뮬레이션·상태·행동 추상화·공동 학습, 평가 지표, 보행·주행·조작이 나온다. 초록 범위다.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록에 'testing and simulation alone are insufficient to ensure the correctness of, or provide sufficient evidence for the certification of, autonomous robotics' 가 있다. 저자들의 견해이므로 [의견]이 맞고, 누구의 의견인지(Luckcuck 외) 본문에 밝혀야 한다. 발행 2019(ACM Computing Surveys 52(5)).\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"NASA 표준 페이지(WebFetch)에서 7009B, ACTIVE, 문서일 2024-03-05, M&S 개발·수용·사용의 요구·권고·기준, 개정 B 가 개발·사용 단계의 신뢰도 평가 산출물에 중점을 둔다는 점을 확인했다. 다만 원문은 수용 기준을 '프로그램·프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다'고 적는다. 권한자가 '정의·승인'한다는 브리프 표현은 부정확하므로 문구를 고친다. '결과를 쓰기 전에'는 페이지에서 확인하지 못했다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: PMC 전문(Lee 외, Digital Health, 2026-03-31)에서 고려대학교 구로병원, 2025-06-18~29 배송 122건, 로봇 기록·승강기 텔레메트리, ROC 로 정한 EOR 임계 59.01%, 그 아래 성공률 95.52%, 90% 초과에서 실패 집중, 승강기 출입 차단이 주 실패 기제, 측정한 점유 수로 모수를 정한 몬테카를로 시뮬레이션이 일치한다. 단일 출처.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 저자들이 현장별 구조·통행 구성·승강기 제어 정책을 재현하는 시뮬레이션 기반 디지털 트윈으로 배치 전 검증을 하자고 제안하고, EOR 임계값을 혼잡 모드 배차 규칙으로 쓰자고 한다. 저자 제안이므로 [의견]이 맞다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Rockwell 사례 페이지(2024-08-28)에 Bastian Solutions, 미국 남부 30만 제곱피트 물류센터, 컨베이어·피킹 모듈, Allen-Bradley PLC·I/O 모듈, Emulate3D 에뮬레이션으로 설치 전 문제 해결, 프로젝트 기간 18% 감소, 현장 시운전 약 5주 단축이 있다. 'I/O 매핑'은 페이지에 없고 'I/O 모듈'만 있다. 벤더 주장이며 [추정]·vendor_claim 표시가 맞다. 기준선·측정 방법은 공개되지 않았다.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: DBpia 초록에 아주대 연구진, 자동차 차체 생산라인 PLC 코드 검증용 가상 플랜트, 이산 사건 모델로 설비 상태·사건 정의, 실제 PLC 하드웨어와 3D CAD 기반 가상 공정 시뮬레이터의 실시간 연동 시뮬레이션, 라인 안정화까지의 기간·비용 절감 목표가 있다. 학술대회명·803~808쪽·2008-11 은 검증자 조회 요약에 나타나지 않아 브리프 기록 기준이다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 현대자동차그룹 콘텐츠(2023-11-21) '가상의 디지털 공간에 세운 쌍둥이 공장'에 '생산을 중단하지 않고도 생산 라인을 검증하고 미래의 운영 결과값을 도출할 수 있는 것이다'와 설비·자동화 로봇 배치를 바꿀 때 가상 시뮬레이션으로 검증한다는 문장이 있다. 정량 수치는 없다. 벤더 주장으로 [추정]이 맞다.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Frontiers 전문(2024-08-02)에서 FloorPlan DSL·JSON-LD 조합 모델, 시간·거리 조건으로 움직이는 문 플러그인, 자동 생성 경유점 과제, 수용 기준(위치 추정 오차 0.35 m 등), 실측 점유 격자로 모델링한 대학 건물 1층, 'modelling is time-consuming'(참여자 발언)을 확인했다. 현장 기록 재생은 다루지 않는다. 현장 배치가 아니라 시뮬레이션 시험 사례다.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 초록(2026-08-26)에 ROS 2·Unity 혼합 현실 가상 실험, 실제·가상 로봇, 작업 배정 시연, 가상·실제 센서(LiDAR), ChoiRbot, 공개 예정이 있다. 초록 범위다.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f1·f2·f4·f5·f6·f7·f9·f19 를 종합한 추정이며, 근거 finding 들이 모두 살아남았다. 핵심 질문의 답으로 [추정]을 유지한다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f9·f12·f18 에서 끌어낸 추정이다. f12 문구를 고친 뒤에도(수용 기준은 프로젝트가 정하고 권한자가 승인) 추정은 성립한다. oq-132 는 해결하지 않은 채 둔다.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"f1·f2·f12 에서 끌어낸 추정이며, 기존 성숙도 체계를 찾지 못했다는 한계가 적혀 있다. oq-156 은 해결하지 않은 채 둔다.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"직접 범위를 인터페이스 가상 대응물·실행 기록·재현 구성·차이 지표 관리로 한정한 추정이다. 원문 19장과 맞는다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"'연계 대상:'으로 시작하며 설비 제어 가상 시운전(설비 업체·통합자), 엔진·로봇 제어의 현실 격차(도구·제조사), 차량 기록 시뮬레이션(해당 업계)을 원문 19장 기준으로 나눴다.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"연결 영역의 번호·이름이 부록 A 와 일치한다. 18. 실시간 세계 상태·데이터 일관성(원천 기록)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 나눴고, 11. 채팅으로 실제 상황 시뮬레이션 재현(C 주석)과 47. AI·학습·적응과 모델 운영(L 교차 규칙) 연결도 있다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f4(Open-RMF 시뮬레이션, ref-1169)는 34. 시뮬레이션·예측용 디지털 트윈 페이지의 시뮬레이션 엔진 서술과 겹칠 수 있다. 36. 가상 시운전·실제 상황 재현에서는 '배치 전 시험·규모 평가' 쪽으로만 쓰고 엔진 설명은 34번 연결로 넘긴다\",\"용어집에 승강기 가동률(EOR)이 이미 있으므로 ref-1170 이 다른 페이지(22. 설비·건물 시스템 연동, 63. 병원·의료 등)에 이미 인용됐을 수 있다. 같은 URL 이면 퍼블리셔가 기존 id 로 합친다\",\"용어집의 가상 시운전·로그 재생·현실 격차·시뮬레이션 모델 검증·타당성 확인 항목과 뜻이 겹치지 않게, 새 용어 후보는 SiL·HiL·SRCC·NASA 신뢰도 평가 네 개로 한정한다(브리프가 이미 그렇게 했다)\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"f12: 본문 문장을 '수용 기준은 프로그램·프로젝트가 정하고 위임된 NASA 기술 권한자(Technical Authority)가 승인한다'로 고치고, 확인되지 않은 '결과를 쓰기 전에'는 뺀다. f21 과 11절 열린 질문 설명에서 f12 를 인용할 때도 같은 표현을 쓴다 — ref-1177 공식 페이지는 권한자를 승인 주체로만 적는다.\",\"f15: 5절 물류창고 사례 문장에서 'PLC·I/O 매핑·제어 코드'를 'PLC·I/O 모듈과 제어 프로그램'으로 고치고, [추정] 옆에 '벤더 주장'을 병기하며, 18%·5주는 기준선·측정 방법이 공개되지 않았다고 함께 적는다 — ref-1179 는 Rockwell 사례 페이지이며 'I/O 매핑'이라는 말이 없다.\",\"f17: 5절 제조 공장 사례에서 [추정] 옆에 '벤더 주장'을 병기하고 정량 수치가 없음을 밝힌다 — ref-1176 은 현대자동차그룹 자사 콘텐츠다.\",\"f7: 5절 적용 사례에 '실외' 현장 사례로 넣지 않고 site_matrix_updates 에도 넣지 않는다. 6절(운영 기록 기반 재현의 방법 참고)과 7절에서 '연계 대상'으로만 짧게 다룬다 — 자율주행 차량 기록 시뮬레이션은 로봇 현장 사례가 아니고 원문 19장 업종별 조건의 연계 대상이다.\",\"f3·f15·f16: 5절에서 이 세 사례를 적을 때 설비 제어 코드(PLC·컨베이어)의 가상 시운전이 원문 19장 '시설·설비 제어' 연계 대상이며, ROP에는 방법 근거로만 쓴다는 한 문장을 둔다(f24 인용) — ROP 직접 범위처럼 읽히지 않게 하려는 것이다.\",\"f18: 5절 기타 현장 사례에서 이것이 실측 지도로 만든 대학 건물의 시뮬레이션 시험 사례이며 현장 배치나 현장 기록 재생이 아님을 밝힌다 — 논문은 로그 재생을 다루지 않는다.\",\"f11·f14: [의견] 문장에 의견의 주체(f11은 Luckcuck 외, f14는 Lee 외 저자들)를 문장 안에 밝힌다 — 공통 규칙 5.3.\",\"ref-1167: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-1167 항목에 source_unopened: true 를 넣는다. f9 에 기댄 문장(4·6·8절, f21)의 신뢰도를 medium 보다 높이지 않는다 — 브리프가 이 출처를 미열람으로 기록했다.\",\"glossary_candidates '모델·시뮬레이션 신뢰도 평가': 정의에서 확인되지 않은 '검증·타당성 확인 등 신뢰도 요소를 평가'를 빼고 'NASA-STD-7009B 가 모델·시뮬레이션의 개발·사용 단계에서 요구하는 신뢰도 평가로, 결과를 쓰기 위한 수용 기준을 프로젝트가 정하고 위임된 기술 권한자가 승인한다' 수준으로 줄인다. 기존 용어집 항목 '시뮬레이션 모델 검증·타당성 확인'과 연결한다 — 신뢰도 요소 8개·점수 척도는 검색 요약에만 있다.\",\"5절: 상업 시설·가정 현장 사례는 찾지 못했고, 실외는 자율주행 방법 참고(f7)만 있다는 점을 적는다. site_matrix_updates 는 물류창고(f15)·제조 공장(f3·f16·f17)·병원(f13·f14)·기타(f18) 칸만 낸다 — 브리프 self_check 와 맞춘다.\",\"3절·9절: 핵심 질문의 답(f20)과 직접 범위·연계 대상(f23·f24)은 [추정] 태그를 유지해 서술하고 단정 표현을 쓰지 않는다. oq-132·oq-156 은 해결로 바꾸지 않고 11절에 부분 근거(f21·f22)와 함께 '열림'으로 둔다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 1차 조건부 승인. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f12 문구를 고친다(수용 기준은 프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다). 원문 미열람 출처: ref-1167. 이 출처는 브리프가 미열람으로 기록했지만, 검증자가 arXiv 초록을 열어 f9 수치를 확인했다. ref-1172(Rosenberger 외)는 검증자가 PMC·MDPI 재열람에 실패해 검색 결과로 서지만 확인했으므로 f2·f3 세부는 리서치의 원문 열람 기록에 의존한다. 주의: 모든 주장이 단일 출처이고, 핵심 질문 답(f20)과 책임 경계(f23·f24)는 추정이다. 물류창고(f15)·현대자동차그룹(f17) 사례는 벤더 주장이며, 18%·5주 수치는 기준선이 공개되지 않았다. 여러 제조사 로봇 플릿을 대상으로 한 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다(oq-132·oq-156 미해결). 상업 시설·가정·실외 로봇 현장 사례는 없다. 정정 요청 없음. 검증 검색 1회를 써서 실행 누계는 20회/30회다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-09-30-17",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: VDI 공식 페이지(WebFetch)에서 발행 2025-05, 39쪽, 독·영, 가상 시운전의 체계적 정의·수명주기 내 위치, 기본 시험 구성·시험 방법·모델 유형·시뮬레이션 구성의 개정·보완 문구가 일치한다. 발행 기관 자료이며 표준 본문(유료)은 열지 않았다. 단일 출처."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "ref-1172 는 검증자가 PMC(reCAPTCHA)·MDPI(403)로 다시 열지 못해 검색 결과로 서지(Rosenberger 외, Sensors 23(7):3545, 2023-03-28)와 HiL·가상 시운전 주제만 확인했다. MiL·SiL·HiL 세부 정의는 리서치의 원문 열람 기록(fetched: true, PMC 전문)에 의존한다. 단일 출처."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "서지와 '분산 스트림 처리 시스템을 HiL 로 연결한 산업 설비 시뮬레이션으로 시험' 은 검색 결과로 확인했다. 구조 3가지, 제어기 3대·가상 인스턴스 9대, 비실시간 한계, 절감 수치 부재는 검증자 재열람 실패로 리서치 열람 기록 기준이다. PLC·설비 제어 코드의 가상 시운전은 원문 19장 '시설·설비 제어' 연계 대상이다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: GitHub 원본(src/simulation.md)에서 traffic_editor 주석(경유점·교통 차선·문·승강기 같은 공유 자원), building_map_generator 의 Gazebo/Ignition 세계·주행 그래프 생성, slotcar·문·승강기·작업셀(TeleportDispenser/Ingestor)·Menge 군중 플러그인, 'Long running simulations can instill confidence…' 문구, 참여 대수·새 플릿 도입 평가, 드물지만 결과가 심각한 경계 사례 검토가 확인된다. 발행일 없음(기준일은 접근일)."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 입력 원문 data/source_texts/ref-031.txt(VDA 5050 3.0.0) 2장 Scope 가 'Project Coordination and Implementation Procedures'(commissioning workflows, validation and acceptance procedures 포함)와 안전 요구·교통 관리 로직·운영 책임·사이버보안을 범위 밖으로 둔다. 기존 각주 ref-031 을 다시 쓴다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: rosbag2 README(raw, rolling 브랜치)에 '/clock is published only while a playback session is active', ~/pause·~/resume·~/seek·~/set_rate·~/play_next 서비스, 기본 저장 형식 mcap·sqlite3 플러그인이 있다. 문서 발행일 없음(기준일은 접근일)."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록(2023-10-12)에 Waymo Open Motion Dataset 같은 실제 주행 데이터로 다중 에이전트 시나리오를 'initialize or play back' 하고, 학습·수작성 행동 모델로 상호작용을 지원한다고 나온다. 자율주행 차량은 원문 19장 '업종별 조건'의 연계 대상이며 로봇 현장 사례가 아니다."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f6·f7 에서 끌어낸 추정으로 태그가 맞다. 로봇 플릿에서 검증한 자료가 없다는 한계가 브리프에 적혀 있다."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 검증자가 arXiv 초록을 열었다. SRCC_Succ 0.18 → 0.844, LoCoBot PointGoal 주행, 벽을 따라 미끄러지는 충돌 동역학 악용이 초록에 있고, IEEE RA-L 2020, 개정 2020-08-17 이다. 브리프가 이 출처를 fetched: false·source_unopened: true 로 적었으므로 페이지 각주는 원문 미열람 표기를 유지한다(R-1: 검증자는 표시를 올리지 않는다)."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록(2025-10-23, Annual Review of Control, Robotics, and Autonomous Systems 2026 게재 예정)에 추상화·근사로 생기는 불일치(현실 격차), 영역 무작위화·현실→시뮬레이션·상태·행동 추상화·공동 학습, 평가 지표, 보행·주행·조작이 나온다. 초록 범위다."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록에 'testing and simulation alone are insufficient to ensure the correctness of, or provide sufficient evidence for the certification of, autonomous robotics' 가 있다. 저자들의 견해이므로 [의견]이 맞고, 누구의 의견인지(Luckcuck 외) 본문에 밝혀야 한다. 발행 2019(ACM Computing Surveys 52(5))."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "NASA 표준 페이지(WebFetch)에서 7009B, ACTIVE, 문서일 2024-03-05, M&S 개발·수용·사용의 요구·권고·기준, 개정 B 가 개발·사용 단계의 신뢰도 평가 산출물에 중점을 둔다는 점을 확인했다. 다만 원문은 수용 기준을 '프로그램·프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다'고 적는다. 권한자가 '정의·승인'한다는 브리프 표현은 부정확하므로 문구를 고친다. '결과를 쓰기 전에'는 페이지에서 확인하지 못했다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: PMC 전문(Lee 외, Digital Health, 2026-03-31)에서 고려대학교 구로병원, 2025-06-18~29 배송 122건, 로봇 기록·승강기 텔레메트리, ROC 로 정한 EOR 임계 59.01%, 그 아래 성공률 95.52%, 90% 초과에서 실패 집중, 승강기 출입 차단이 주 실패 기제, 측정한 점유 수로 모수를 정한 몬테카를로 시뮬레이션이 일치한다. 단일 출처."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 저자들이 현장별 구조·통행 구성·승강기 제어 정책을 재현하는 시뮬레이션 기반 디지털 트윈으로 배치 전 검증을 하자고 제안하고, EOR 임계값을 혼잡 모드 배차 규칙으로 쓰자고 한다. 저자 제안이므로 [의견]이 맞다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Rockwell 사례 페이지(2024-08-28)에 Bastian Solutions, 미국 남부 30만 제곱피트 물류센터, 컨베이어·피킹 모듈, Allen-Bradley PLC·I/O 모듈, Emulate3D 에뮬레이션으로 설치 전 문제 해결, 프로젝트 기간 18% 감소, 현장 시운전 약 5주 단축이 있다. 'I/O 매핑'은 페이지에 없고 'I/O 모듈'만 있다. 벤더 주장이며 [추정]·vendor_claim 표시가 맞다. 기준선·측정 방법은 공개되지 않았다."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: DBpia 초록에 아주대 연구진, 자동차 차체 생산라인 PLC 코드 검증용 가상 플랜트, 이산 사건 모델로 설비 상태·사건 정의, 실제 PLC 하드웨어와 3D CAD 기반 가상 공정 시뮬레이터의 실시간 연동 시뮬레이션, 라인 안정화까지의 기간·비용 절감 목표가 있다. 학술대회명·803~808쪽·2008-11 은 검증자 조회 요약에 나타나지 않아 브리프 기록 기준이다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 현대자동차그룹 콘텐츠(2023-11-21) '가상의 디지털 공간에 세운 쌍둥이 공장'에 '생산을 중단하지 않고도 생산 라인을 검증하고 미래의 운영 결과값을 도출할 수 있는 것이다'와 설비·자동화 로봇 배치를 바꿀 때 가상 시뮬레이션으로 검증한다는 문장이 있다. 정량 수치는 없다. 벤더 주장으로 [추정]이 맞다."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Frontiers 전문(2024-08-02)에서 FloorPlan DSL·JSON-LD 조합 모델, 시간·거리 조건으로 움직이는 문 플러그인, 자동 생성 경유점 과제, 수용 기준(위치 추정 오차 0.35 m 등), 실측 점유 격자로 모델링한 대학 건물 1층, 'modelling is time-consuming'(참여자 발언)을 확인했다. 현장 기록 재생은 다루지 않는다. 현장 배치가 아니라 시뮬레이션 시험 사례다."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 초록(2026-08-26)에 ROS 2·Unity 혼합 현실 가상 실험, 실제·가상 로봇, 작업 배정 시연, 가상·실제 센서(LiDAR), ChoiRbot, 공개 예정이 있다. 초록 범위다."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f1·f2·f4·f5·f6·f7·f9·f19 를 종합한 추정이며, 근거 finding 들이 모두 살아남았다. 핵심 질문의 답으로 [추정]을 유지한다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f9·f12·f18 에서 끌어낸 추정이다. f12 문구를 고친 뒤에도(수용 기준은 프로젝트가 정하고 권한자가 승인) 추정은 성립한다. oq-132 는 해결하지 않은 채 둔다."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "f1·f2·f12 에서 끌어낸 추정이며, 기존 성숙도 체계를 찾지 못했다는 한계가 적혀 있다. oq-156 은 해결하지 않은 채 둔다."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "직접 범위를 인터페이스 가상 대응물·실행 기록·재현 구성·차이 지표 관리로 한정한 추정이다. 원문 19장과 맞는다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "'연계 대상:'으로 시작하며 설비 제어 가상 시운전(설비 업체·통합자), 엔진·로봇 제어의 현실 격차(도구·제조사), 차량 기록 시뮬레이션(해당 업계)을 원문 19장 기준으로 나눴다."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "연결 영역의 번호·이름이 부록 A 와 일치한다. 18. 실시간 세계 상태·데이터 일관성(원천 기록)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 나눴고, 11. 채팅으로 실제 상황 시뮬레이션 재현(C 주석)과 47. AI·학습·적응과 모델 운영(L 교차 규칙) 연결도 있다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f4(Open-RMF 시뮬레이션, ref-1169)는 34. 시뮬레이션·예측용 디지털 트윈 페이지의 시뮬레이션 엔진 서술과 겹칠 수 있다. 36. 가상 시운전·실제 상황 재현에서는 '배치 전 시험·규모 평가' 쪽으로만 쓰고 엔진 설명은 34번 연결로 넘긴다",
+        "용어집에 승강기 가동률(EOR)이 이미 있으므로 ref-1170 이 다른 페이지(22. 설비·건물 시스템 연동, 63. 병원·의료 등)에 이미 인용됐을 수 있다. 같은 URL 이면 퍼블리셔가 기존 id 로 합친다",
+        "용어집의 가상 시운전·로그 재생·현실 격차·시뮬레이션 모델 검증·타당성 확인 항목과 뜻이 겹치지 않게, 새 용어 후보는 SiL·HiL·SRCC·NASA 신뢰도 평가 네 개로 한정한다(브리프가 이미 그렇게 했다)"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "f12: 본문 문장을 '수용 기준은 프로그램·프로젝트가 정하고 위임된 NASA 기술 권한자(Technical Authority)가 승인한다'로 고치고, 확인되지 않은 '결과를 쓰기 전에'는 뺀다. f21 과 11절 열린 질문 설명에서 f12 를 인용할 때도 같은 표현을 쓴다 — ref-1177 공식 페이지는 권한자를 승인 주체로만 적는다.",
+      "f15: 5절 물류창고 사례 문장에서 'PLC·I/O 매핑·제어 코드'를 'PLC·I/O 모듈과 제어 프로그램'으로 고치고, [추정] 옆에 '벤더 주장'을 병기하며, 18%·5주는 기준선·측정 방법이 공개되지 않았다고 함께 적는다 — ref-1179 는 Rockwell 사례 페이지이며 'I/O 매핑'이라는 말이 없다.",
+      "f17: 5절 제조 공장 사례에서 [추정] 옆에 '벤더 주장'을 병기하고 정량 수치가 없음을 밝힌다 — ref-1176 은 현대자동차그룹 자사 콘텐츠다.",
+      "f7: 5절 적용 사례에 '실외' 현장 사례로 넣지 않고 site_matrix_updates 에도 넣지 않는다. 6절(운영 기록 기반 재현의 방법 참고)과 7절에서 '연계 대상'으로만 짧게 다룬다 — 자율주행 차량 기록 시뮬레이션은 로봇 현장 사례가 아니고 원문 19장 업종별 조건의 연계 대상이다.",
+      "f3·f15·f16: 5절에서 이 세 사례를 적을 때 설비 제어 코드(PLC·컨베이어)의 가상 시운전이 원문 19장 '시설·설비 제어' 연계 대상이며, ROP에는 방법 근거로만 쓴다는 한 문장을 둔다(f24 인용) — ROP 직접 범위처럼 읽히지 않게 하려는 것이다.",
+      "f18: 5절 기타 현장 사례에서 이것이 실측 지도로 만든 대학 건물의 시뮬레이션 시험 사례이며 현장 배치나 현장 기록 재생이 아님을 밝힌다 — 논문은 로그 재생을 다루지 않는다.",
+      "f11·f14: [의견] 문장에 의견의 주체(f11은 Luckcuck 외, f14는 Lee 외 저자들)를 문장 안에 밝힌다 — 공통 규칙 5.3.",
+      "ref-1167: 각주 정의의 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 의 ref-1167 항목에 source_unopened: true 를 넣는다. f9 에 기댄 문장(4·6·8절, f21)의 신뢰도를 medium 보다 높이지 않는다 — 브리프가 이 출처를 미열람으로 기록했다.",
+      "glossary_candidates '모델·시뮬레이션 신뢰도 평가': 정의에서 확인되지 않은 '검증·타당성 확인 등 신뢰도 요소를 평가'를 빼고 'NASA-STD-7009B 가 모델·시뮬레이션의 개발·사용 단계에서 요구하는 신뢰도 평가로, 결과를 쓰기 위한 수용 기준을 프로젝트가 정하고 위임된 기술 권한자가 승인한다' 수준으로 줄인다. 기존 용어집 항목 '시뮬레이션 모델 검증·타당성 확인'과 연결한다 — 신뢰도 요소 8개·점수 척도는 검색 요약에만 있다.",
+      "5절: 상업 시설·가정 현장 사례는 찾지 못했고, 실외는 자율주행 방법 참고(f7)만 있다는 점을 적는다. site_matrix_updates 는 물류창고(f15)·제조 공장(f3·f16·f17)·병원(f13·f14)·기타(f18) 칸만 낸다 — 브리프 self_check 와 맞춘다.",
+      "3절·9절: 핵심 질문의 답(f20)과 직접 범위·연계 대상(f23·f24)은 [추정] 태그를 유지해 서술하고 단정 표현을 쓰지 않는다. oq-132·oq-156 은 해결로 바꾸지 않고 11절에 부분 근거(f21·f22)와 함께 '열림'으로 둔다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 1차 조건부 승인. 확인 25건, 미확인 0건, 교차 확인 0건. 강등: 없음. 대신 f12 문구를 고친다(수용 기준은 프로젝트가 정하고 위임된 NASA 기술 권한자가 승인한다). 원문 미열람 출처: ref-1167. 이 출처는 브리프가 미열람으로 기록했지만, 검증자가 arXiv 초록을 열어 f9 수치를 확인했다. ref-1172(Rosenberger 외)는 검증자가 PMC·MDPI 재열람에 실패해 검색 결과로 서지만 확인했으므로 f2·f3 세부는 리서치의 원문 열람 기록에 의존한다. 주의: 모든 주장이 단일 출처이고, 핵심 질문 답(f20)과 책임 경계(f23·f24)는 추정이다. 물류창고(f15)·현대자동차그룹(f17) 사례는 벤더 주장이며, 18%·5주 수치는 기준선이 공개되지 않았다. 여러 제조사 로봇 플릿을 대상으로 한 가상 시운전 절차 표준과 재현 결과의 현실 일치 판정 기준은 확인하지 못했다(oq-132·oq-156 미해결). 상업 시설·가정·실외 로봇 현장 사례는 없다. 정정 요청 없음. 검증 검색 1회를 써서 실행 누계는 20회/30회다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 4830,
+  "type": "result",
+  "duration_ms": 195532,
+  "uuid": "799a1326-3064-446a-a5ec-88e4e19c3e89",
+  "ttft_stream_ms": 1548,
+  "time_to_request_ms": 89,
+  "time_to_request_phases_ms": {
+    "other": 36,
+    "system_prompt": 14,
+    "turn_start_resume": 0,
+    "process_user_input": 17,
+    "init_message": 5,
+    "engine_pickup": 0,
+    "autocompact": 4,
+    "query_setup": 1,
+    "tool_schema_build": 4,
+    "message_normalization": 2,
+    "client_creation": 6
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 39,
+  "time_to_request_cpu_ms": 112,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 1549,
+  "time_to_request_from_spawn_ms": 5442118,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790746742126.9202,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 197.6
+}

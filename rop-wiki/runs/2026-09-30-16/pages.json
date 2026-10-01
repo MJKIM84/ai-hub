@@ -1,0 +1,711 @@
+{
+  "run_id": "2026-09-30-16",
+  "outline": [
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "3. 왜 중요한가",
+      "budget_chars": 900,
+      "summary": "로봇 영상은 촬영 장치보다 학습·라벨링 위탁 같은 이차 이용 경로에서 유출 위험이 커지는 것으로 보여, 이차 이용 목적과 위탁 사슬의 접근 범위를 수집 시점부터 정해 둘 필요가 있다. [추정][^ref-968][^ref-1136][^ref-588]",
+      "planned_findings": [
+        "f19",
+        "f12",
+        "f10",
+        "f20"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "4. 핵심 개념과 용어",
+      "budget_chars": 1000,
+      "summary": "이동형 영상정보처리기기, 촬영 사실 표시, 촬영 거부(opt-out), 가명처리, 원본 활용 실증특례, 얼굴 가림, 작업 한정 인지 출력, 등각 예측을 정리한다. [사실][^ref-1137][^ref-588]",
+      "planned_findings": [
+        "f1",
+        "f2",
+        "f4",
+        "f9",
+        "f8",
+        "f13",
+        "f16",
+        "f14"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "5. 적용 사례 (현장 유형 명시)",
+      "budget_chars": 2400,
+      "summary": "가정(로봇청소기 영상 유출·점검), 병원(모의 진료실 얼굴 가림), 실외(배달로봇 외부 표시) 사례를 여섯 항목으로 정리하고, 물류창고·제조 공장·상업 시설·기타 사례는 찾지 못했음을 밝힌다. [사실][^ref-1141][^ref-1146][^ref-1136]",
+      "planned_findings": [
+        "f10",
+        "f11",
+        "f12",
+        "f17",
+        "f7",
+        "f4",
+        "f5"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "6. 대표 접근법과 기술",
+      "budget_chars": 2200,
+      "summary": "촬영 표시·거부 수용, 목적별 이용 구분·가명처리, 검출 후 가림, 명세 기반 실시간 가림, 촬영 시점 저해상도화, 인지 출력 필드 설계가 제안되었고 각각 인식 오류나 재식별 위험의 한계가 보고되었다. [추정][^ref-588][^ref-1142][^ref-1145]",
+      "planned_findings": [
+        "f2",
+        "f4",
+        "f5",
+        "f6",
+        "f9",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "7. 관련 표준·프레임워크·오픈소스",
+      "budget_chars": 800,
+      "summary": "개인정보 보호법 제25조의2, 이동형 영상정보처리기기 안내서(2024.9.), 가명정보 처리 가이드라인(2024-02 개정), 원본 활용 실증특례, 유럽데이터보호이사회(EDPB) 지침 3/2019, EgoBlur 를 표로 정리한다. [사실][^ref-1135][^ref-1139][^ref-1147]",
+      "planned_findings": [
+        "f2",
+        "f3",
+        "f8",
+        "f9",
+        "f13",
+        "f18"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "8. 대표 연구와 자료",
+      "budget_chars": 1000,
+      "summary": "EgoBlur, PCVS, 거리–해상도 선호 연구, 작업 한정 인지 출력 유출 연구, 병원 모의 실험 논문, Roomba 영상 유출 탐사 보도를 요약한다. [사실][^ref-1142][^ref-1145]",
+      "planned_findings": [
+        "f12",
+        "f13",
+        "f14",
+        "f15",
+        "f16",
+        "f17",
+        "f21"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준)",
+      "budget_chars": 900,
+      "summary": "ROP는 등록 정보 기록, 목적별 데이터 흐름·보유 기간, 출력 필드 축소, 거부 의사 전달을 맡고, 기기 쪽 가림·앱 인증(제조사), 외부 표시·보호책임자(운영 사업자), 특례 승인(개인정보보호위원회)은 연계 대상으로 보인다. [추정][^ref-588][^ref-1140]",
+      "planned_findings": [
+        "f21",
+        "f22"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)",
+      "budget_chars": 1200,
+      "summary": "16·19·37·43·45·47·50·51·52·54·58·59·60·63·65·66 영역과 번호·이름으로 연결한다. [추정][^ref-1140][^ref-1145]",
+      "planned_findings": [
+        "f23"
+      ]
+    },
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "section": "11. 열린 질문",
+      "budget_chars": 1400,
+      "summary": "기존 열린 질문 7건을 등록 문장 그대로 열림으로 유지하고(부분 근거 메모는 [추정]과 각주), 새 질문 4건(플랫폼 사업자 지위, 인지 출력 재식별 평가 기준, 거부 의사 공유, 유럽데이터보호이사회 지침 적용 사례)을 올린다.",
+      "planned_findings": [
+        "f4",
+        "f5",
+        "f6",
+        "f11",
+        "f16",
+        "f18",
+        "f22"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "docs/categories/security-and-privacy/privacy-and-video-data.md",
+      "action": "update",
+      "status": "draft",
+      "diff_summary": "seed → draft: 3~11절 첫 작성(제25조의2·이동형 안내서, 목적별 이용·가명처리, 가림·저해상도·출력 필드 기술, 가정·병원·실외 사례, 책임 경계, 연결 16개 영역, 열린 질문 11건), 13절 각주, 1차 수정 15건·2차 수정 4건 반영"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s6.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"6. 대표 접근법과 기술\" 절(1,883자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s11.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"11. 열린 질문\" 절을 옮겼다. 2차 수정: 기존 질문 7건을 등록 문장 그대로 옮기고 부분 근거 메모 2건에 [추정]·각주, EDPB 풀어쓰기"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s8.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"8. 대표 연구와 자료\" 절을 옮겼다. 2차 수정: Xu·Ayday 항목의 플랫폼 필드 설계 연결 문장을 [추정]으로 분리"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s4.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"4. 핵심 개념과 용어\" 절(1,008자)을 옮겼다"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s10.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기)\" 절을 옮겼다. 2차 수정: EDPB 풀어쓰기"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s7.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"7. 관련 표준·프레임워크·오픈소스\" 절을 옮겼다. 2차 수정: EDPB·GDPR 풀어쓰기"
+    },
+    {
+      "path": "docs/topics/2026/2026-09-30-area53-s3.md",
+      "action": "create",
+      "status": "draft",
+      "diff_summary": "자동 분리: 53. 개인정보·영상 데이터 의 \"3. 왜 중요한가\" 절을 옮겼다. 2차 수정: SNS 풀어쓰기"
+    }
+  ],
+  "changelog_entry": "2026-09-30 | 53. 개인정보·영상 데이터 | seed → draft: 3~11절 첫 작성(제25조의2·이동형 안내서, 목적별 이용·가명처리, 가림·저해상도·출력 필드 기술, 가정·병원·실외 사례, 책임 경계), 1차 수정 15건·2차 수정 4건 반영 | run 2026-09-30-16",
+  "index_updates": {
+    "home_recent": "2026-09-30 — 53. 개인정보·영상 데이터: seed → draft, 3~11절 첫 작성(이동형 영상정보처리기기 촬영 표시·거부, 가명처리·원본 활용 특례, 얼굴 가림·저해상도·인지 출력 필드 기술, 가정·병원·실외 사례)",
+    "category_recent": "2026-09-30 — 53. 개인정보·영상 데이터: seed → draft, 3~11절 첫 작성과 각주(개인정보 보호법 제25조의2, 이동형 안내서, 가림 기술 연구, 로봇청소기 점검 사례)",
+    "area_recent": "2026-09-30 — 53. 개인정보·영상 데이터: 3~11절 첫 작성, 1차 수정 15건(목욕실 촬영 금지 구절·EDPB 범위 강등, f5·f16 문구 정정)과 2차 수정 4건(8절 해석 문장 [추정], 11절 등록 문장 일치·메모 태그, 약어 풀어쓰기) 반영"
+  },
+  "glossary_updates": [
+    {
+      "action": "new",
+      "slug": "pseudonymisation",
+      "term_ko": "가명처리",
+      "term_en": "Pseudonymisation",
+      "definition": "추가 정보 없이는 특정 개인을 알아볼 수 없도록 개인정보의 일부를 삭제·대체하는 처리로, 한국 가명정보 처리 가이드라인은 2024년 개정에서 영상·이미지·음성 같은 비정형 데이터로 대상을 넓혔다.",
+      "description": "개정 가이드라인은 영상·이미지 처리 방법으로 필터링·암호화·합성 얼굴·인페인팅·AI 기반 처리를 제시한다(법률사무소 요약 기준).",
+      "related_areas": [
+        53,
+        45,
+        47
+      ],
+      "sources": [
+        "ref-1139"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "face-obfuscation",
+      "term_ko": "얼굴 가림",
+      "term_en": "Face Obfuscation",
+      "definition": "영상에서 얼굴을 검출한 뒤 블러·모자이크·합성 얼굴 등으로 가려 신원을 알아볼 수 없게 하는 처리로, 로봇 영상의 저장·전송·학습 전에 쓰인다.",
+      "description": "예로 EgoBlur는 1인칭 영상의 행인 얼굴과 차량 번호판을 가우시안 블러로 가리며, 병원 모의 실험에서는 자세·가림·조명 변화가 인식 신뢰도를 낮추는 한계가 보고되었다.",
+      "related_areas": [
+        53,
+        45,
+        63
+      ],
+      "sources": [
+        "ref-1142",
+        "ref-1139",
+        "ref-1136",
+        "ref-1146"
+      ]
+    },
+    {
+      "action": "new",
+      "slug": "raw-video-regulatory-sandbox-exemption",
+      "term_ko": "영상정보 원본 활용 규제샌드박스 실증특례",
+      "term_en": "Regulatory Sandbox Special Demonstration Exemption for Raw Video Use",
+      "definition": "자율주행차·이동형 로봇 서비스 고도화 목적으로 가명처리하지 않은 영상 원본을 개발에 쓰도록 개인정보보호위원회가 기업별로 승인하는 규제샌드박스 특례로, 2023-11 운영이 발표되었다.",
+      "description": "안전조치 항목과 특례 기간은 확인한 출처에 없어 미확인이다. 이동형 기기 안내서는 연구 목적상 원본이 불가피할 때 이 특례를 검토하게 한다.",
+      "related_areas": [
+        53,
+        59,
+        47
+      ],
+      "sources": [
+        "ref-1138",
+        "ref-588"
+      ]
+    }
+  ],
+  "reference_updates": [
+    {
+      "id": "ref-1135",
+      "org": "개인정보보호위원회",
+      "title": "[현재 안내서] 이동형 영상정보처리기기를 위한 개인영상정보 보호ㆍ활용 안내서(2024.9.)",
+      "published": "2024-10-14",
+      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=G010030000&nttId=10679",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "개인정보보호위원회 안내서 게시글. 제25조의2 신설에 따라 드론·로봇 등 이동형 기기로 공개된 장소에서 개인 식별 영상을 촬영할 수 있는 경우와 보호·활용 기준을 안내한다고 설명한다(PDF 본문은 열지 않음).",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-588",
+      "org": "김·장 법률사무소",
+      "title": "‘이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서’ 공개 (뉴스레터)",
+      "published": "2024-10-14",
+      "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=30477",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "2024-10-14 공개된 안내서의 요지를 정리한 법률사무소 뉴스레터. 촬영 표시 다중 채널, 촬영 거부의 opt-out 성격, 단계별 준수사항, 사고 영상 이용과 가명·익명처리 없는 AI 학습 구분, 익명·가명처리 권고를 설명한다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1136",
+      "org": "정보통신신문",
+      "title": "\"자율주행차·로봇 카메라 촬영 시 외부에 표시해야\"",
+      "published": "2024-10-14",
+      "url": "https://www.koit.co.kr/news/articleView.html?idxno=125844",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "안내서 공개 보도. 자율주행차·배달로봇 외부 촬영 표시, AI 개발 전 얼굴 모자이크, 위탁 처리 시 보호책임자·정기 점검을 전한다. 내용이 개인정보보호위원회 게시 안내서와 일치해 medium.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1137",
+      "org": "개인정보보호위원회 (개인정보 포털)",
+      "title": "개인정보 포털 — 이동형 영상정보처리기기 제도 및 신청방법 안내",
+      "published": null,
+      "url": "https://www.privacy.go.kr/front/contents/cntntsView.do?contsNo=286",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "이동형 영상정보처리기기의 정의, 공개 장소 업무 목적 촬영 제한과 예외, 불빛·소리·안내판 등 촬영 표시, 드론의 인터넷 공지 방식을 안내한다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1138",
+      "org": "개인정보보호위원회 (대한민국 정책브리핑)",
+      "title": "자율주행차·이동형 로봇 개발에 ‘영상데이터’ 원본 활용 허용",
+      "published": "2023-11-15",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922669",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자율주행차·이동형 로봇 서비스 고도화 목적의 영상정보 원본 활용 규제샌드박스 실증특례를 11월부터 운영하고 연내 9개 기업 승인을 추진한다는 정책 보도. 보도자료 성격이라 medium.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1139",
+      "org": "법무법인(유) 세종",
+      "title": "개인정보보호위원회, 비정형데이터 가명처리 관련 가명정보 처리 가이드라인 개정 (뉴스레터)",
+      "published": "2024-02-08",
+      "url": "https://www.shinkim.com/kor/media/newsletter/2342",
+      "type": "업계 보고서",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "2024-02 개정 가명정보 처리 가이드라인의 비정형 데이터(영상·이미지·음성·텍스트) 가명처리 기준과 처리 방법, 시나리오를 요약한 법률사무소 뉴스레터.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1140",
+      "org": "경향신문",
+      "title": "로봇청소기가 우리집 사진 찍어 외부 유출?…6종 ... (제목 일부만 확인)",
+      "published": "2025-09-02",
+      "url": "https://www.khan.co.kr/article/202509021447001",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한국소비자원·한국인터넷진흥원의 로봇청소기 6종 보안 점검 결과 보도. 3개 제품의 사용자 인증 미비로 집 내부 사진 노출·카메라 강제 활성화 위험을 전한다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1141",
+      "org": "아시아경제",
+      "title": "\"로봇청소기 개인정보 관리 대체로 안전…미흡 사례 ... (제목 일부만 확인)",
+      "published": "2026-09-14",
+      "url": "https://view.asiae.co.kr/article/2026091410054053414",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "개인정보보호위원회의 로봇청소기 5개 사업자 점검 결과 보도. 영상·음성·사진 침해 위험 미확인, 영상 직접 전송·사진 브랜드별 삭제, 동의 구분·국외 이전 고지 등 미흡 사항을 전한다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-968",
+      "org": "MIT Technology Review",
+      "title": "A Roomba recorded a woman on the toilet. How did screenshots end up on Facebook?",
+      "published": "2022-12-19",
+      "url": "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/",
+      "type": "기사",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "개발용 Roomba J7 이 찍은 가정 내 사적 이미지가 라벨링 위탁 사슬을 거쳐 SNS 에 유출된 경위를 밝힌 탐사 보도. 사건의 1차 보도라 medium.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1142",
+      "org": "Raina, N., Somasundaram, G., Zheng, K. 외 (Meta Reality Labs, arXiv)",
+      "title": "EgoBlur: Responsible Innovation in Aria",
+      "published": "2023-08-24",
+      "url": "https://arxiv.org/abs/2308.13093",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "1인칭 영상의 행인 얼굴·차량 번호판을 검출해 가우시안 블러로 가리는 익명화 모델을 공개한 프리프린트. 초록만 확인.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1143",
+      "org": "Choi, M. 외 (arXiv)",
+      "title": "Real-Time Privacy Preservation for Robot Visual Perception",
+      "published": "2025-05-08",
+      "url": "https://arxiv.org/abs/2505.05519",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "논리 명세와 등각 예측으로 민감 객체를 실시간으로 가리는 PCVS 방법을 제안한 프리프린트. 초록만 확인.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1144",
+      "org": "Huang, X., Pan, S., Reinhardt, D., & Bennewitz, M. (arXiv)",
+      "title": "Designing Privacy-Preserving Visual Perception for Robot Navigation Based on User Privacy Preferences",
+      "published": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.06382",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "두 사용자 연구로 이동 서비스 로봇 카메라의 선호 가림 방식과 거리–해상도 관계를 밝히고 사용자 설정 정책을 제안한 프리프린트. 초록만 확인.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1145",
+      "org": "Xu, Y., & Ayday, E. (arXiv)",
+      "title": "Seeing Less Is Not Seeing Safely: Privacy Leakage from Task-Scoped Robot Perception Exports",
+      "published": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.03055",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "가정용 로봇의 작업 한정 인지 출력이 과업 성능이 같아도 재식별 위험이 크게 다름을 시뮬레이션(AI2-THOR·ProcTHOR, 120개 장면)으로 보인 프리프린트. 초록만 확인.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1146",
+      "org": "Sarfraz, B. M., Saplacan Lindblom, D., Baselizadeh, A., & Torresen, J. (HRI Companion '26)",
+      "title": "The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting",
+      "published": "2026-03-16",
+      "url": "https://doi.org/10.1145/3776734.3794481",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 의사·환자 얼굴 인식과 비대상자 얼굴 가림을 진료실 모의 시나리오로 실험한 HRI 2026 컴패니언 논문으로, 검색 결과 요약으로만 확인했다(ACM 페이지 403).",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": true
+    },
+    {
+      "id": "ref-1147",
+      "org": "European Data Protection Board (EDPB)",
+      "title": "Guidelines 3/2019 on processing of personal data through video devices",
+      "published": "2020-01",
+      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-32019-processing-personal-data-through-video_en",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "GDPR 을 영상 장치 처리에 적용하는 EDPB 지침 최종판의 소개 페이지. PDF 본문 추출에 실패해 소개 페이지 범위(제목·최종판 채택)만 확인했다.",
+      "cited_by": [
+        "docs/categories/security-and-privacy/privacy-and-video-data.md"
+      ],
+      "source_unopened": false
+    }
+  ],
+  "open_question_updates": [
+    {
+      "action": "new",
+      "question": "여러 제조사 로봇의 영상과 위치 정보를 모아 관제하는 플랫폼 사업자는 개인정보 보호법상 이동형 영상정보처리기기 운영자인가, 현장 운영 사업자의 수탁자인가, 그리고 촬영 표시·거부 의사 처리 의무는 누구에게 있는가?",
+      "areas": [
+        53,
+        58
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "로봇이 플랫폼·클라우드·로그로 내보내는 인지 출력(객체 목록·의미 지도·궤적)의 재식별 위험을 측정하는 공개 평가 기준이나 벤치마크가 있는가?",
+      "areas": [
+        53,
+        54
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "피촬영자가 한 로봇에 밝힌 촬영 거부 의사를 같은 현장의 다른 로봇과 플랫폼 기록에 공통으로 반영하는 방법이나 운영 사례가 있는가?",
+      "areas": [
+        53,
+        19
+      ],
+      "status": "열림",
+      "link": null
+    },
+    {
+      "action": "new",
+      "question": "유럽데이터보호이사회(European Data Protection Board, EDPB) 영상 장치 지침 3/2019 를 이동 로봇 카메라에 적용한 유럽 감독기관의 결정이나 해석 사례가 있으며, 보존 기간 권고는 무엇인가?",
+      "areas": [
+        53,
+        59
+      ],
+      "status": "열림",
+      "link": null
+    }
+  ],
+  "site_matrix_updates": [
+    {
+      "site_type": "가정",
+      "item": "시작 조건",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "가정",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "가정",
+      "item": "수행 자원",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "가정",
+      "item": "제약",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "가정",
+      "item": "완료·인계",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "가정",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "병원",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "병원",
+      "item": "수행 자원",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "병원",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "시작 조건",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "작업 대상",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "수행 자원",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "제약",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "완료·인계",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    },
+    {
+      "site_type": "실외",
+      "item": "예외·성과",
+      "link": "docs/categories/security-and-privacy/privacy-and-video-data.md#5-적용-사례-현장-유형-명시",
+      "title": "53. 개인정보·영상 데이터"
+    }
+  ],
+  "standards_updates": [
+    {
+      "name": "개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한)",
+      "kind": "프레임워크",
+      "org": "개인정보보호위원회",
+      "url": "https://www.privacy.go.kr/front/contents/cntntsView.do?contsNo=286",
+      "related_areas": [
+        53,
+        59
+      ],
+      "summary": "업무 목적으로 공개된 장소에서 이동형 기기로 사람을 촬영하는 것을 원칙적으로 제한하고, 동의 등의 경우와 촬영 사실을 표시했는데도 거부 의사가 없는 경우를 허용하며, 불빛·소리·안내판 등으로 촬영 사실을 표시하게 하는 법령 조항이다.",
+      "ref_id": "ref-1137"
+    },
+    {
+      "name": "이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서(2024.9.)",
+      "kind": "프레임워크",
+      "org": "개인정보보호위원회",
+      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=G010030000&nttId=10679",
+      "related_areas": [
+        53,
+        59,
+        66
+      ],
+      "summary": "2024-10-14 게시된 안내서로, 드론·로봇 등 이동형 기기로 공개된 장소에서 개인 식별 영상을 촬영할 수 있는 경우와 수집·이용 시 보호·활용 기준을 제시한다.",
+      "ref_id": "ref-1135"
+    },
+    {
+      "name": "가명정보 처리 가이드라인(2024-02 개정, 비정형 데이터 포함)",
+      "kind": "프레임워크",
+      "org": "개인정보보호위원회",
+      "url": "https://www.shinkim.com/kor/media/newsletter/2342",
+      "related_areas": [
+        53,
+        45,
+        47
+      ],
+      "summary": "영상·이미지·음성·텍스트 같은 비정형 데이터의 가명처리 기준(식별 위험 판단, 기술 신뢰성 문서화, 처리 후 자체 검증)과 영상 처리 방법을 제시한다(법률사무소 요약 기준).",
+      "ref_id": "ref-1139"
+    },
+    {
+      "name": "영상정보 원본 활용 규제샌드박스 실증특례",
+      "kind": "프레임워크",
+      "org": "개인정보보호위원회",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922669",
+      "related_areas": [
+        53,
+        59,
+        47
+      ],
+      "summary": "자율주행차·이동형 로봇 서비스 고도화 목적으로 영상정보 원본 활용을 허용하는 특례로, 2023-11 운영과 연내 9개 기업 승인 추진이 발표되었다.",
+      "ref_id": "ref-1138"
+    },
+    {
+      "name": "EDPB Guidelines 3/2019 on processing of personal data through video devices",
+      "kind": "프레임워크",
+      "org": "European Data Protection Board (EDPB)",
+      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-32019-processing-personal-data-through-video_en",
+      "related_areas": [
+        53,
+        59
+      ],
+      "summary": "일반 개인정보 보호법(GDPR)을 영상 장치의 개인정보 처리에 적용하는 지침으로 최종판을 2020-01 채택했다. 다루는 범위 세부는 원문 미확인.",
+      "ref_id": "ref-1147"
+    },
+    {
+      "name": "EgoBlur",
+      "kind": "오픈소스",
+      "org": "Meta Reality Labs",
+      "url": "https://arxiv.org/abs/2308.13093",
+      "related_areas": [
+        53,
+        45
+      ],
+      "summary": "1인칭 영상에서 행인 얼굴과 차량 번호판을 검출해 가우시안 블러로 가리는 익명화 모델로 2023년 공개되었다.",
+      "ref_id": "ref-1142"
+    }
+  ],
+  "additional_research_requests": [
+    "6절·9절: 개인정보 보호법 제25조의2 조문 원문(국가법령정보센터)으로 '목욕실 등 사생활 침해 우려가 큰 장소 촬영 금지' 구절의 존재와 문구를 확인해야 한다. 현재 인용 출처에 없어 [추정]·법령 원문 미확인으로 두었다.",
+    "4·6절: 이동형 영상정보처리기기 안내서(2024.9.) PDF 원문으로 opt-out·다중 채널 표시·사고 영상·AI 학습 판단을 확인해 법률사무소 요약 의존을 줄일 필요가 있다.",
+    "7절: 유럽데이터보호이사회(EDPB) 지침 3/2019 본문(PDF)에서 다루는 범위(적법 근거·투명성·정보주체 권리·보존 기간·가정 예외)를 확인해야 한다. 검증에서 해당 구절을 삭제했다.",
+    "3·6절: 핵심 질문의 '사람의 위치 정보' 부분(보행자 위치 최소 수집, 궤적 익명화)을 직접 다룬 자료가 없어 본문에 넣지 못했다.",
+    "5절: 물류창고·제조 공장·상업 시설·기타 현장의 로봇 영상·작업자 데이터 보호 사례를 찾지 못해 해당 현장 유형 사례를 쓰지 못했다.",
+    "7절: 가명정보 처리 가이드라인(2024-02 개정) 원문(발행 기관 개인정보보호위원회 게시 URL)과 ISO 31700-1:2023(소비재 개인정보 중심 설계)을 확인하면 표와 표준 목록 URL을 보강할 수 있다.",
+    "5절 병원 사례: HRI 2026 컴패니언 논문 원문으로 시작 조건·제약·완료·인계 칸(현재 미확인)을 채울 근거가 필요하다.",
+    "11절 oq-171·oq-181·oq-214: 병원·세대 내부의 '공개된 장소' 해당 여부 해석과 안전성 확보조치 기준 개정판 조항 조사가 필요하다.",
+    "다음 실행 후보: 65. 가정·공동주택 페이지 5절에 로봇청소기 점검·유출 사례(ref-1140·ref-1141·ref-968), 63. 병원·의료 페이지에 모의 진료실 얼굴 가림 실험(ref-1146) 반영을 제안한다(예산으로 이번 실행에서는 미룸)."
+  ],
+  "fixes_applied": [
+    "f2 목욕실 등 촬영 금지 구절 강등 — 6절 '촬영 사실 표시와 거부 의사 수용'에서 공개 장소 촬영 제한·예외·표시 방법 문장은 [사실][^ref-1137][^ref-588]으로 두고, 목욕실 등 촬영 금지 구절은 별도 문장으로 떼어 [추정]과 '법령 원문 미확인'을 병기했다.",
+    "f21 촬영 금지 장소 예시 변경 — 9절 표 '업종별 조건' 행의 '촬영 금지 장소(화장실·탈의실 등)'를 '사생활 침해 우려 장소(해당 법령 조항은 원문 미확인)'로 바꿨고, 10절 16. 장소 의미·지도 관리 연결도 '촬영 제한이 필요한 장소'로 일반화했다.",
+    "f5 문구 정정 — 5절 실외 사례 예외·성과 칸과 6절 '목적별 이용 구분과 가명처리'에서 '가명·익명처리 없이 인공지능 학습에 쓰는 것은 예측 가능성이 있다고 보기 어렵고, 원본이 필요하면 규제샌드박스(실증특례)를 활용해야 한다'로 고치고 자율주행차 등 고속 이동 기기 맥락임을 밝혔다. 3절 종합 문장도 '가명·익명처리 없는 인공지능 학습'으로 맞췄다.",
+    "f16 정정 — 6절 '인지 출력 필드 설계'에 시뮬레이션(AI2-THOR·ProcTHOR, 120개 장면) 결과임을 명시하고 '목표 범주 macro-F1 이 1.000에서 0.077로'로 고쳤으며, 8절 요약에도 시뮬레이션임을 밝혔다.",
+    "f18 범위 구절 삭제 — 7절 표 EDPB 행에서 '적법 근거·투명성·정보주체 권리·기술적 보호조치' 목록을 삭제하고 최종판 채택(2020-01)만 [사실]로 두었으며 '다루는 범위 세부는 원문 미확인'을 적었다.",
+    "f11 삭제 조건 정정 — 5절 가정 사례 완료·인계 칸을 '장애물 인식 사진은 브랜드별로 다음 청소 때, 이용자가 조회한 뒤, 또는 24시간 후 삭제'로 고쳤다.",
+    "f8 한정 표현 완화 — 4절 용어와 7절 표, 용어집 정의에서 '서비스 고도화 목적에 한해'를 '서비스 고도화 목적으로'로 바꿨다.",
+    "f1 정의 문구 — 4절 이동형 영상정보처리기기 정의를 원문대로 '부착·거치하여'로 적었다.",
+    "ref-588 발행일 — 13절 각주의 발행일을 2024-10-14로 채우고 reference_updates 의 published 도 2024-10-14로 고쳤다.",
+    "ref-1139 발행일 — 13절 각주와 reference_updates 의 발행일을 2024-02-08로 채웠다.",
+    "ref-1146 서지 정정 — 제목을 'The Privacy-Preserving Capabilities of a Service Robot in a Scenario-Based Healthcare Setting', 기관·저자를 'Sarfraz, B. M., Saplacan Lindblom, D., Baselizadeh, A., & Torresen, J. (HRI Companion '26)', 발행일을 2026-03-16으로 13절 각주·8절·reference_updates 에 반영하고, 각주 접근일 뒤 ' (원문 미열람)'과 source_unopened: true 를 유지했다.",
+    "ref-1136 제목 — '(제목 일부만 확인)'을 지우고 '\"자율주행차·로봇 카메라 촬영 시 외부에 표시해야\"'로 13절 각주와 reference_updates 에 적었다.",
+    "6·9절 범위 경계 — 6절 '검출 후 가림'과 5절 가정·병원 사례 서술에서 기기 쪽 얼굴 검출·가림과 모바일앱 인증을 분류 원문 19장 '로봇 자체 지능·제어' 쪽 연계 대상으로 서술하고, 9절 ROP 직접 범위를 등록 정보 기록·목적별 데이터 흐름·보유 기간·출력 필드 축소·거부 의사 전달로 한정했다.",
+    "용어집 실증특례 정의 — '안전조치를 조건으로'와 '한시적'을 정의에서 빼고, description 에 안전조치 항목과 특례 기간은 미확인이라고 적었다.",
+    "5절 현장 유형 — 가정(f10~f12), 병원(f17, 모의 실험임 명시), 실외(f7)만 사례로 쓰고 물류창고·제조 공장·상업 시설·기타 사례는 찾지 못했다고 절 첫머리에 적었으며, site_matrix_updates 는 가정·병원·실외 세 현장 유형 칸만 냈다.",
+    "분량 초과 자동 분리: 53. 개인정보·영상 데이터 본문 11,190자 > 기준 4,000자 → 7개 절을 주제 페이지로 옮김, 남은 본문 3,997자",
+    "2차: 8절 Xu·Ayday 태그 — 분리 페이지 2026-09-30-area53-s8.md 에서 '시뮬레이션으로 보였다'까지를 [사실][^ref-1145]로 두고, '이 결과는 플랫폼이 로봇에서 받는 데이터의 필드 설계와 직접 이어지는 것으로 보인다'를 별도 문장으로 떼어 [추정][^ref-1145]로 표시했다.",
+    "2차: 11절 등록 문장 일치 — 분리 페이지 2026-09-30-area53-s11.md 의 oq-143·oq-171·oq-181·oq-185·oq-211·oq-214·oq-228 질문 문장을 docs/open-questions.md 등록 문장 그대로 옮기고(oq-171 괄호 문구, oq-181 '그리고 이에 대한 개인정보보호위원회 해석이나 가이드라인이 있는가', oq-185 '(1X NEO 등)', oq-228 '국내 개인정보 보호 법령의' 복원), 이번 실행의 메모는 질문 문장 뒤 별도 문장으로 두었다.",
+    "2차: 11절 메모 태그·각주 — oq-181 뒤 로봇청소기 점검 부분 근거 메모에 [추정][^ref-1141]를, oq-228 뒤 안내서 사고 영상·인공지능 학습 판단 부분 근거 메모에 [추정][^ref-588]을 붙이고, 분리 페이지 8. 출처에 두 각주 정의를 두었으며 프런트매터 sources 를 [ref-588, ref-1141]로 채웠다.",
+    "2차: 약어 풀어쓰기 — 7절 분리 페이지 표에서 EDPB 를 '유럽데이터보호이사회(European Data Protection Board, EDPB)', GDPR 을 '일반 개인정보 보호법(General Data Protection Regulation, GDPR)'으로, 10절 분리 페이지 59번 연결과 11절 분리 페이지 새 질문(및 open_question_updates 의 같은 질문)에서 EDPB 를 같은 방식으로, 3절 분리 페이지의 SNS 를 '소셜 네트워크 서비스(SNS)'로 풀어 썼다."
+  ]
+}

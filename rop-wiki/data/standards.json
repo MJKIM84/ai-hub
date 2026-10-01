@@ -3577,6 +3577,811 @@
       "ref_id": "ref-067",
       "run_id": "2026-09-30-08",
       "date": "2026-09-30"
+    },
+    {
+      "name": "Nav2 Collision Monitor (nav2_collision_monitor)",
+      "org": "Open Navigation (ros-navigation/navigation2)",
+      "kind": "오픈소스",
+      "related_areas": [
+        49,
+        27
+      ],
+      "url": "https://github.com/ros-navigation/navigation2/blob/main/nav2_collision_monitor/README.md",
+      "summary": "컨트롤러 속도 명령을 거르는 독립 노드로, 영역별 정지·감속·속도 제한과 충돌까지 남은 시간 기반 접근 모델을 두며 여러 영역이 걸리면 가장 강한 조치를 쓴다. 하드 실시간 안전 인증을 제공하지 않는다고 밝힌다.",
+      "ref_id": "ref-1077",
+      "run_id": "2026-09-30-10",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ASAM OpenSCENARIO XML (1.4.0)",
+      "org": "ASAM e.V.",
+      "kind": "표준",
+      "related_areas": [
+        33,
+        34,
+        54
+      ],
+      "url": "https://www.asam.net/standards/detail/openscenario-xml/",
+      "summary": "주행·교통 시뮬레이터의 동적 내용(여러 개체의 동기화된 기동)을 .xosc XML 로 기술하고 카탈로그·매개변수화로 재사용하는 표준. 2026-05-19 에 1.4.0 판이 나왔고 도로망은 OpenDRIVE 에 맡긴다.",
+      "ref_id": "ref-1088",
+      "run_id": "2026-09-30-12",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "SDFormat (Simulation Description Format)",
+      "org": "Open Source Robotics Foundation",
+      "kind": "오픈소스",
+      "related_areas": [
+        33,
+        34
+      ],
+      "url": "http://sdformat.org/",
+      "summary": "로봇(기구학·동역학·센서)과 환경(조명·지형·도로·3D 모델), 물리 설정을 시뮬레이터·시각화·제어용으로 기술하는 XML 형식. Gazebo 에서 시작했고 Apache 2.0 으로 공개된다.",
+      "ref_id": "ref-1092",
+      "run_id": "2026-09-30-12",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "BEHAVIOR-1K (BDDL 활동 명세·OmniGibson)",
+      "org": "Stanford 등 (Li, C. 외)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        33,
+        54,
+        65
+      ],
+      "url": "https://arxiv.org/abs/2403.09227",
+      "summary": "설문으로 고른 일상 가정 활동 1,000개를 BDDL 로 명세하고 장면 50개·객체 9,000개 이상을 OmniGibson 시뮬레이터에 구현한 벤치마크.",
+      "ref_id": "ref-971",
+      "run_id": "2026-09-30-12",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Moving AI MAPF 벤치마크",
+      "org": "Moving AI Lab (Sturtevant 외)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        27,
+        33,
+        54
+      ],
+      "url": "https://movingai.com/benchmarks/mapf/index.html",
+      "summary": "격자 지도마다 출발·도착 쌍을 담은 .scen 시나리오 파일을 무작위형 25개·균등형 25개씩 공개한 다중 에이전트 경로 찾기 벤치마크. 지도 수·총 파일 수는 미확인.",
+      "ref_id": "ref-1091",
+      "run_id": "2026-09-30-12",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Arena-Bench",
+      "org": "Kästner, L. 외 (RA-L 2022)",
+      "kind": "평가 프로그램",
+      "related_areas": [
+        33,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2206.05728",
+      "summary": "동적 환경의 시나리오·월드 생성 도구와 평가 지표로 여러 로봇 플랫폼의 모델 기반·학습 기반 주행 계획기를 같은 시나리오에서 비교하는 벤치마크 모음.",
+      "ref_id": "ref-726",
+      "run_id": "2026-09-30-12",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ISA-101 시리즈 (ISA-101.01-2015, ISA-TR101.01-2022 HMI 철학, ISA-TR101.02-2019 HMI 사용성과 성능)",
+      "org": "ISA(International Society of Automation)",
+      "kind": "표준",
+      "related_areas": [
+        37,
+        38
+      ],
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-101-standards",
+      "summary": "공정 자동화 시스템의 HMI 표준 계열로, 설계·구현·운영·지속 개선의 HMI 수명주기를 다루며 연속·배치·이산 산업에 적용된다고 밝힌다(발행 기관 소개 페이지 기준, 본문 유료).",
+      "ref_id": "ref-1100",
+      "run_id": "2026-09-30-13",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open-RMF rmf_visualization",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        37,
+        15,
+        22
+      ],
+      "url": "https://github.com/open-rmf/rmf_visualization",
+      "summary": "층 평면도 위에 플릿 관리자가 보고한 로봇 위치, 문·승강기 상태, 주행 그래프, 예측 일정 궤적을 겹쳐 표시하는 시각화 패키지 묶음.",
+      "ref_id": "ref-1093",
+      "run_id": "2026-09-30-13",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open-RMF 작업 로그 스키마(rmf_api_msgs task_log·log_entry)",
+      "org": "Open Robotics (open-rmf)",
+      "kind": "오픈소스",
+      "related_areas": [
+        37,
+        38,
+        43
+      ],
+      "url": "https://github.com/open-rmf/rmf_api_msgs/blob/main/rmf_api_msgs/schemas/task_log.json",
+      "summary": "작업·단계·사건 3계층 로그와 순번·중요도 tier·밀리초 시각·본문을 필수로 둔 로그 항목을 정의한 JSON 스키마.",
+      "ref_id": "ref-1094",
+      "run_id": "2026-09-30-13",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "IEC 62559 사용 사례 방법론 (Part 1~4)",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        2,
+        24
+      ],
+      "url": "https://syc-se.iec.ch/deliveries/iec-62559-use-cases/",
+      "summary": "IEC PAS 62559:2008(IntelliGrid)에서 나온 사용 사례 방법론. 2부(2015)는 사용 사례·행위자 목록·요구사항 목록 템플릿, 3부(2017)는 XML 직렬화, 4부는 표준화·기업 프로젝트 모범 사례를 다룬다.",
+      "ref_id": "ref-1202",
+      "run_id": "2026-09-30-14",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ISO/IEC/IEEE 29148:2018 요구공학",
+      "org": "ISO / IEC / IEEE",
+      "kind": "표준",
+      "related_areas": [
+        2
+      ],
+      "url": "https://www.iso.org/standard/72089.html",
+      "summary": "원문 미열람. 시스템·소프트웨어 수명주기 전체에 걸친 요구사항 도출·분석·문서화·검증·관리 공정과 이해관계자 요구사항 명세(StRS) 등 산출 정보 항목을 규정한다(검색 결과 요약 기준).",
+      "ref_id": "ref-1203",
+      "run_id": "2026-09-30-14",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "로봇활용 표준공정모델",
+      "org": "산업통상자원부",
+      "kind": "프레임워크",
+      "related_areas": [
+        2,
+        62
+      ],
+      "url": "https://eiec.kdi.re.kr/policy/materialView.do?datecount=&num=202113&pg=&pp=20&recommend=&topic=C",
+      "summary": "업종별 제조 공정에 로봇을 적용하는 국내 참조 모델. 산업통상자원부는 2020년 뿌리·섬유·식음료·자동차 업종의 표준공정모델 14종을 개발하고 컨설팅·실증 보급·교육·협동로봇 안전인증과 묶어 60개 기업을 지원한다고 발표했다.",
+      "ref_id": "ref-1195",
+      "run_id": "2026-09-30-14",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection)",
+      "org": "OWASP GenAI Security Project",
+      "kind": "프레임워크",
+      "related_areas": [
+        52,
+        13
+      ],
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "summary": "직접·간접 프롬프트 주입을 구분하고 출력 형식 검증·최소 권한·고위험 행동의 사람 승인·외부 내용 분리 등 완화책을 제시하며, 확실한 예방법은 아직 불분명하다고 밝힌다.",
+      "ref_id": "ref-1106",
+      "run_id": "2026-09-30-11",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU 기계류 규정 (EU) 2023/1230 (변조 보호·개입 증거 기록, 업계 해설 기준)",
+      "org": "European Union (IES 해설 경유)",
+      "kind": "프레임워크",
+      "related_areas": [
+        52,
+        59,
+        50
+      ],
+      "url": "https://www.ies.co.uk/reference-library/machinery-regulation-guide",
+      "summary": "2027-01-20 전면 적용. 규정 준수에 결정적인 하드웨어·소프트웨어의 변조 보호, 안전 관련 소프트웨어 식별과 개입 증거 기록, 출시 후 안전 소프트웨어 판 추적 로그 5년 보관을 요구한다(업계 해설 기준, 규정 원문 미열람).",
+      "ref_id": "ref-1109",
+      "run_id": "2026-09-30-11",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "KISA 로봇 분야 보안모델 고도화판·사이버보안 요구사항 해설서",
+      "org": "과학기술정보통신부·한국인터넷진흥원(KISA)",
+      "kind": "프레임워크",
+      "related_areas": [
+        52,
+        59
+      ],
+      "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=100755",
+      "summary": "2026년 3월 KISA 지식플랫폼 자료실로 무료 배포된, 로봇 제품 개발·수출 때 참고할 보안 자료(기사 기준, 원문 미열람).",
+      "ref_id": "ref-1111",
+      "run_id": "2026-09-30-11",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "윤리적 블랙박스(EBB) 공개 표준 초안 (An Ethical Black Box for Social Robots: a draft Open Standard)",
+      "org": "Winfield, A. F. T., van Maris, A., Salvini, P., & Jirotka, M. (arXiv)",
+      "kind": "프레임워크",
+      "related_areas": [
+        50,
+        37,
+        38
+      ],
+      "url": "https://arxiv.org/abs/2205.06564",
+      "summary": "사회적 로봇의 센서·구동기·제어 결정 데이터를 안전하게 기록해 사고·아차 사고 조사를 돕는 기록 장치의 논의용 첫 공개 표준 초안(2022). 데이터 형식·보존 기간은 미확인.",
+      "ref_id": "ref-1120",
+      "run_id": "2026-09-30-15",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "VDI/VDE 3693 Blatt 1 가상 시운전 — 모델 유형·용어·정의 (2025-05 개정판)",
+      "org": "VDI/VDE (VDI/VDE-Gesellschaft Mess- und Automatisierungstechnik)",
+      "kind": "표준",
+      "related_areas": [
+        36,
+        55
+      ],
+      "url": "https://www.vdi.de/en/home/vdi-standards/details/vdivde-3693-blatt-1-virtual-commissioning-model-types-terms-and-definitions",
+      "summary": "가상 시운전을 체계적으로 정의하고 자동화 설비·기계의 수명주기 안에 위치시키며, 기본 시험 구성·시험 방법·모델 유형·시뮬레이션 구성을 다루는 지침이다. 본문은 유료이며 공식 소개 페이지 기준으로 확인했다.",
+      "ref_id": "ref-1126",
+      "run_id": "2026-09-30-17",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "NASA-STD-7009B Standard for Models and Simulations",
+      "org": "NASA",
+      "kind": "표준",
+      "related_areas": [
+        36,
+        54
+      ],
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+      "summary": "모델·시뮬레이션의 개발·수용·사용 요구·권고·기준과 신뢰도 평가를 정한 현행 표준(문서일 2024-03-05)이다. 수용 기준은 프로그램·프로젝트가 정하고 위임된 기술 권한자가 승인한다.",
+      "ref_id": "ref-1133",
+      "run_id": "2026-09-30-17",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "개인정보 보호법 제25조의2(이동형 영상정보처리기기의 운영 제한)",
+      "org": "개인정보보호위원회",
+      "kind": "프레임워크",
+      "related_areas": [
+        53,
+        59
+      ],
+      "url": "https://www.privacy.go.kr/front/contents/cntntsView.do?contsNo=286",
+      "summary": "업무 목적으로 공개된 장소에서 이동형 기기로 사람을 촬영하는 것을 원칙적으로 제한하고, 동의 등의 경우와 촬영 사실을 표시했는데도 거부 의사가 없는 경우를 허용하며, 불빛·소리·안내판 등으로 촬영 사실을 표시하게 하는 법령 조항이다.",
+      "ref_id": "ref-1137",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "이동형 영상정보처리기기를 위한 개인영상정보 보호·활용 안내서(2024.9.)",
+      "org": "개인정보보호위원회",
+      "kind": "프레임워크",
+      "related_areas": [
+        53,
+        59,
+        66
+      ],
+      "url": "https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS217&mCode=G010030000&nttId=10679",
+      "summary": "2024-10-14 게시된 안내서로, 드론·로봇 등 이동형 기기로 공개된 장소에서 개인 식별 영상을 촬영할 수 있는 경우와 수집·이용 시 보호·활용 기준을 제시한다.",
+      "ref_id": "ref-1135",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "가명정보 처리 가이드라인(2024-02 개정, 비정형 데이터 포함)",
+      "org": "개인정보보호위원회",
+      "kind": "프레임워크",
+      "related_areas": [
+        53,
+        45,
+        47
+      ],
+      "url": "https://www.shinkim.com/kor/media/newsletter/2342",
+      "summary": "영상·이미지·음성·텍스트 같은 비정형 데이터의 가명처리 기준(식별 위험 판단, 기술 신뢰성 문서화, 처리 후 자체 검증)과 영상 처리 방법을 제시한다(법률사무소 요약 기준).",
+      "ref_id": "ref-1139",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "영상정보 원본 활용 규제샌드박스 실증특례",
+      "org": "개인정보보호위원회",
+      "kind": "프레임워크",
+      "related_areas": [
+        53,
+        59,
+        47
+      ],
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922669",
+      "summary": "자율주행차·이동형 로봇 서비스 고도화 목적으로 영상정보 원본 활용을 허용하는 특례로, 2023-11 운영과 연내 9개 기업 승인 추진이 발표되었다.",
+      "ref_id": "ref-1138",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EDPB Guidelines 3/2019 on processing of personal data through video devices",
+      "org": "European Data Protection Board (EDPB)",
+      "kind": "프레임워크",
+      "related_areas": [
+        53,
+        59
+      ],
+      "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-32019-processing-personal-data-through-video_en",
+      "summary": "일반 개인정보 보호법(GDPR)을 영상 장치의 개인정보 처리에 적용하는 지침으로 최종판을 2020-01 채택했다. 다루는 범위 세부는 원문 미확인.",
+      "ref_id": "ref-1147",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EgoBlur",
+      "org": "Meta Reality Labs",
+      "kind": "오픈소스",
+      "related_areas": [
+        53,
+        45
+      ],
+      "url": "https://arxiv.org/abs/2308.13093",
+      "summary": "1인칭 영상에서 행인 얼굴과 차량 번호판을 검출해 가우시안 블러로 가리는 익명화 모델로 2023년 공개되었다.",
+      "ref_id": "ref-1142",
+      "run_id": "2026-09-30-16",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ANSI/A3 R15.08-3-2026 산업용 이동로봇 안전 요구사항 제3부: IMR 응용의 사용",
+      "org": "ANSI / A3(Association for Advancing Automation)",
+      "kind": "표준",
+      "related_areas": [
+        40,
+        48,
+        50
+      ],
+      "url": "https://blog.ansi.org/ansi/ansi-a3-r15-08-3-2026-industrial-mobile-robot/",
+      "summary": "2026-04-23 발행(검색 요약 기준, 원문 미열람). 사용자가 제조사·통합자가 준 정보를 적용해 산업용 이동로봇 응용과 운영 환경을 안전하게 운용·정비하기 위한 요구사항을 정하며, 위험성평가와 응용·현재 운영 환경의 변경 관리를 강조한다.",
+      "ref_id": "ref-1153",
+      "run_id": "2026-09-30-18",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "HSE Human Factors Briefing Note No. 8 — Safety-Critical Communications",
+      "org": "UK Health and Safety Executive (HSE)",
+      "kind": "프레임워크",
+      "related_areas": [
+        40,
+        37
+      ],
+      "url": "https://humanfactors101.com/wp-content/uploads/2016/04/human-factors-briefing-note-safety-critical-communications.pdf",
+      "summary": "2005년 공정 산업 인적 요인 지침(제3자 게재본, 원문 미열람). 교대 인수인계를 대면 논의·양방향(수신 확인) 대화·교대 일지 기록으로 하도록 권고한다.",
+      "ref_id": "ref-1148",
+      "run_id": "2026-09-30-18",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "IEC 60300-3-3:2017 신뢰성 관리 — 적용 지침 — 수명주기 비용",
+      "org": "IEC(International Electrotechnical Commission)",
+      "kind": "표준",
+      "related_areas": [
+        3,
+        57
+      ],
+      "url": "https://webstore.iec.ch/en/publication/31206",
+      "summary": "수명주기 비용 분석의 개념과 적용을 안내하고 품목의 신뢰성 관련 비용을 강조하는 적용 지침 3판(2017-01-27). 유료 표준이라 공식 개요만 확인했다.",
+      "ref_id": "ref-1167",
+      "run_id": "2026-09-30-19",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "REP 155 Conventions, Topics, Interfaces for Perception in Human-Robot Interaction (ROS4HRI)",
+      "org": "ROS (ros-infrastructure/rep)",
+      "kind": "프레임워크",
+      "related_areas": [
+        19,
+        18,
+        53
+      ],
+      "url": "https://github.com/ros-infrastructure/rep/blob/master/rep-0155.rst",
+      "summary": "사람을 영속 person ID 와 얼굴·몸·음성 ID 로 표현하고 사람별 좌표 프레임과 위치 신뢰도, 익명 사람 표시를 정한 ROS 규약 제안이다. 2022-01-11 작성, 원문 상태 Draft이며 최종 채택 여부는 미확인이다.",
+      "ref_id": "ref-1173",
+      "run_id": "2026-09-30-20",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "HuNavSim (ROS 2 사람 보행 시뮬레이터)",
+      "org": "Pérez-Higueras, N., Otero, R., Caballero, F., & Merino, L.",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        34,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2305.01303",
+      "summary": "ROS 2 기반으로 Gazebo 같은 로봇 시뮬레이터와 함께 이동로봇 주변 사람의 보행 행동을 시뮬레이션하고 사회적 내비게이션 벤치마킹 지표 묶음을 제공한다.",
+      "ref_id": "ref-1179",
+      "run_id": "2026-09-30-20",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Open-RMF CrowdSim (Menge 기반 군중 시뮬레이션)",
+      "org": "Open Robotics",
+      "kind": "오픈소스",
+      "related_areas": [
+        19,
+        34
+      ],
+      "url": "https://osrf.github.io/ros2multirobotbook/simulation.html",
+      "summary": "Open-RMF 시뮬레이션의 선택 기능으로 rmf_traffic_editor 에서 켜며 Menge 엔진이 사람 에이전트를 제어한다.",
+      "ref_id": "ref-406",
+      "run_id": "2026-09-30-20",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "사회적 내비게이션 평가 원칙·지침 (Principles and Guidelines for Evaluating Social Robot Navigation Algorithms)",
+      "org": "Francis, A. 외",
+      "kind": "프레임워크",
+      "related_areas": [
+        19,
+        54
+      ],
+      "url": "https://arxiv.org/abs/2306.16740",
+      "summary": "사회적 내비게이션 원칙 여덟 가지와 지표·시나리오·데이터셋·시뮬레이터 사용 지침, 결과 비교용 지표 프레임워크를 제안한다(2023-09).",
+      "ref_id": "ref-1079",
+      "run_id": "2026-09-30-20",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "BSRIA BG 54/2018 Soft Landings Framework (소프트 랜딩 프레임워크)",
+      "org": "BSRIA",
+      "kind": "프레임워크",
+      "related_areas": [
+        56,
+        55
+      ],
+      "url": "https://www.thenbs.com/PublicationIndex/documents/details?Pub=BSRIA&DocId=324192",
+      "summary": "건축 프로젝트를 착수·요구 정의부터 인계 전, 초기 사후 지원, 연장 사후 지원과 사용 후 평가까지 여섯 단계로 나눈 인계 틀(2018-08, 2014년판 대체). 출판물 색인 설명 기준이며 로봇 분야 적용 사례는 미확인이다.",
+      "ref_id": "ref-1185",
+      "run_id": "2026-09-30-21",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "산업안전보건법 시행규칙 별표 5 로봇작업 특별교육",
+      "org": "법제처(법령해석 법제처-23-0872 경유)",
+      "kind": "프레임워크",
+      "related_areas": [
+        56,
+        50,
+        59
+      ],
+      "url": "https://opinion.lawmaking.go.kr/nl4li/lsItptEmp/438638",
+      "summary": "로봇작업 특별교육 내용(기본원리·구조와 작업방법, 이상 발생 시 응급조치, 안전시설과 안전기준, 조작방법과 작업순서)을 정하며, 법제처 해석(2023-11-21)상 대상 로봇작업은 산업용 로봇 작업에 한정되지 않는다. 시행규칙 소관 부처는 미확인이다.",
+      "ref_id": "ref-1183",
+      "run_id": "2026-09-30-21",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU 데이터법 (Regulation (EU) 2023/2854, Data Act)",
+      "org": "European Union (European Commission 해설)",
+      "kind": "프레임워크",
+      "related_areas": [
+        58,
+        53,
+        59
+      ],
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained",
+      "summary": "2025-09-12부터 적용. 연결 제품 사용자의 데이터 접근·이용·이전과 제3자 공유, 데이터 보유자의 사용자 계약 의무, 기업 간 불공정 조항 무효, 데이터 처리 서비스 전환 요금 폐지(2027-01-12)를 정한다.",
+      "ref_id": "ref-1191",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU 데이터법 모델 계약 조항·클라우드 표준 계약 조항 권고 초안",
+      "org": "European Commission",
+      "kind": "프레임워크",
+      "related_areas": [
+        58
+      ],
+      "url": "https://digital-strategy.ec.europa.eu/en/library/draft-recommendation-non-binding-model-contractual-terms-data-access-and-use-and-non-binding",
+      "summary": "2025-11-19 권고 초안. 데이터 접근·이용 계약용 구속력 없는 모델 계약 조항 네 벌과 클라우드 표준 계약 조항 여섯 개(전환·이탈, 해지, 보안·업무 연속성, 비분산, 일방 변경 금지, 책임)를 제시한다.",
+      "ref_id": "ref-1192",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "산업데이터 계약 가이드라인",
+      "org": "산업통상부",
+      "kind": "프레임워크",
+      "related_areas": [
+        58
+      ],
+      "url": "https://www.data.go.kr/data/15113186/fileData.do",
+      "summary": "산업데이터 거래 당사자를 위한 유의사항·표준계약서·업종별 사례를 안내하는 432쪽 가이드라인(공공데이터포털 등록 2023-04-05). 본문 미열람.",
+      "ref_id": "ref-1194",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Kubernetes Deprecation Policy (API 폐기 정책)",
+      "org": "The Kubernetes Authors",
+      "kind": "오픈소스",
+      "related_areas": [
+        58,
+        57,
+        41
+      ],
+      "url": "https://kubernetes.io/docs/reference/using-api/deprecation-policy/",
+      "summary": "API 요소는 API 그룹 버전을 올려야만 제거하고, 왕복 변환 정보 보존, 안정도별 유지 기간(베타 9개월 또는 3개 부 릴리스), 폐기 API 사용 시 경고 헤더·감사 주석·지표를 남기게 하는 규칙.",
+      "ref_id": "ref-1204",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ISO/IEC 19086-1:2016 클라우드 SLA 프레임워크 — Part 1: 개요와 개념",
+      "org": "ISO/IEC (JTC 1)",
+      "kind": "표준",
+      "related_areas": [
+        58,
+        39
+      ],
+      "url": "https://webstore.iec.ch/en/publication/25920",
+      "summary": "클라우드 서비스 수준 협약의 공통 구성 요소(개요, 서비스 계약과 SLA의 관계, 개념, 용어)를 정하며, 표준 SLA 구조나 서비스 수준 목표 세트는 정하지 않는다. 원문 미열람.",
+      "ref_id": "ref-1205",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "IEC 62443-2-4:2023 IACS 서비스 제공자 보안 프로그램 요구사항",
+      "org": "IEC",
+      "kind": "표준",
+      "related_areas": [
+        58,
+        52,
+        55
+      ],
+      "url": "https://knowledge.bsigroup.com/products/security-for-industrial-automation-and-control-systems-security-program-requirements-for-iacs-service-providers-1",
+      "summary": "산업 자동화·제어 시스템 서비스 제공자가 통합·유지보수 중 자산 소유자에게 제공할 보안 관련 프로세스 요구와 역할 구분을 정한다. 원문 미열람.",
+      "ref_id": "ref-1206",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU AI법 제25조(AI 가치사슬 책임)·제26조(고위험 AI 배포자 의무)",
+      "org": "European Union (Future of Life Institute 비공식 게재본 경유)",
+      "kind": "프레임워크",
+      "related_areas": [
+        58,
+        47,
+        59
+      ],
+      "url": "https://artificialintelligenceact.eu/article/25/",
+      "summary": "제25조는 고위험 AI 시스템에 실질적 변경 등을 한 자를 제공자로 보고 공급자와의 서면 계약을 요구하며, 제26조는 배포자에게 자동 생성 로그 최소 6개월 보관과 감시·통지 의무를 지운다.",
+      "ref_id": "ref-1209",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "21 CFR Part 11 §11.10 폐쇄형 시스템 통제(감사 추적)",
+      "org": "U.S. Food and Drug Administration",
+      "kind": "프레임워크",
+      "related_areas": [
+        58,
+        37,
+        52
+      ],
+      "url": "https://www.law.cornell.edu/cfr/text/21/11.10",
+      "summary": "FDA 규제 대상 전자기록에 적용되는 규정으로, (e)항이 보안이 적용된 컴퓨터 생성 타임스탬프 감사 추적을 요구한다. 감사 추적 요구의 참고 사례로 쓴다.",
+      "ref_id": "ref-1207",
+      "run_id": "2026-09-30-22",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ISO/IEC Guide 71:2014 표준의 접근성 반영 지침(2판)",
+      "org": "ISO/IEC",
+      "kind": "표준",
+      "related_areas": [
+        60
+      ],
+      "url": "https://www.iso.org/standard/57385.html",
+      "summary": "사람이 쓰는 제품·서비스·건축 환경을 다루는 표준에 접근성 요구를 넣도록 표준 개발자에게 지침을 주며 장애인·어린이·고령자의 접근성 요구를 주로 다룬다(원문 미열람).",
+      "ref_id": "ref-1224",
+      "run_id": "2026-09-30-24",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "장애인차별금지법에 따른 무인정보단말기 접근성 의무(2026-01-28 전면 시행)",
+      "org": "보건복지부",
+      "kind": "프레임워크",
+      "related_areas": [
+        60,
+        59,
+        37
+      ],
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958690",
+      "summary": "모든 무인정보단말기 설치·운영 사업자에게 '디지털취약계층의 정보 접근 및 이용 편의 증진을 위한 고시'의 검증 기준을 충족하는 장애인 접근 가능 기기 제공을 의무화하고, 소규모 시설에는 대체 수단을 허용한다.",
+      "ref_id": "ref-1217",
+      "run_id": "2026-09-30-24",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "근로자참여 및 협력증진에 관한 법률 제20조(협의 사항)",
+      "org": "대한민국 국회",
+      "kind": "프레임워크",
+      "related_areas": [
+        60,
+        53,
+        59
+      ],
+      "url": "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0",
+      "summary": "신기계·기술 도입과 사업장 내 근로자 감시 설비 설치 등을 노사협의회 협의 사항으로 둔다(법률 제16320호, 2019-07-17 시행 기준).",
+      "ref_id": "ref-1220",
+      "run_id": "2026-09-30-24",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "독일 사업장조직법(BetrVG) 제87조 공동결정권",
+      "org": "Bundesministerium der Justiz",
+      "kind": "프레임워크",
+      "related_areas": [
+        60,
+        53,
+        59
+      ],
+      "url": "https://www.gesetze-im-internet.de/betrvg/__87.html",
+      "summary": "노동자의 행동·성과 감시용 기술 장치의 도입·적용에 사업장협의회 공동결정권을 두고, 합의가 안 되면 중재위원회가 결정한다.",
+      "ref_id": "ref-1219",
+      "run_id": "2026-09-30-24",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "지능형로봇법·도로교통법 개정(실외이동로봇 보도 통행·운용자 의무·보험 의무, 2023-11-17 시행)",
+      "org": "산업통상자원부·경찰청",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        66
+      ],
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148922726",
+      "summary": "운행안전인증을 받은 질량 500kg 이하·15km/h 이하 실외이동로봇의 보도 통행을 허용하고, 운용자 의무·범칙금, 보도 운영자의 보험·공제 가입 의무를 둔 개정 법령.",
+      "ref_id": "ref-991",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "버지니아주법 §46.2-908.1:1 개인 배송 장치(Personal Delivery Devices)",
+      "org": "Commonwealth of Virginia",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        66
+      ],
+      "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-908.1:1/",
+      "summary": "개인 배송 장치의 보도·횡단보도 속도(10mph 이하), 운영자 식별 표시, 최소 10만 달러 일반배상책임 보험을 정한 미국 주법 조문(해외 비교).",
+      "ref_id": "ref-1238",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU 개정 제조물책임지침 (Directive (EU) 2024/2853)",
+      "org": "European Union (Gibson Dunn 해설 경유)",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        58,
+        57
+      ],
+      "url": "https://www.gibsondunn.com/eu-product-liability-directive-responding-to-software-ai-and-complex-supply-chains/",
+      "summary": "2026-12-09 이후 출시·사용 개시 제품에 적용되며 독립형 소프트웨어를 제품에 포함하고 실질적 변경자를 제조자로 볼 수 있게 한다(법률사무소 해설 기준).",
+      "ref_id": "ref-1227",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "한국 제조물책임법",
+      "org": "대한민국 (김·장 법률사무소 해설 경유)",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        58
+      ],
+      "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=29930",
+      "summary": "제조물을 제조되거나 가공된 동산으로 정의해 소프트웨어 기인 자율 시스템 사고의 개발자 책임이 쟁점으로 남아 있다(2024-07 기준).",
+      "ref_id": "ref-1233",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "인공지능 기본법 (2026-01-22 시행)",
+      "org": "과학기술정보통신부",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        13,
+        47
+      ],
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958380",
+      "summary": "사람이 최종 의사결정 권한을 가지면 고영향 인공지능 분류에서 제외된다는 정부 설명과 최소 1년 이상 규제 유예, 지원데스크 운영을 알린 한국 AI 법(2026-01-21 발표 기준).",
+      "ref_id": "ref-1235",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "EU 사이버복원력법(CRA) 보고 의무",
+      "org": "European Commission",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        52,
+        57
+      ],
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting",
+      "summary": "2026-09-11부터 디지털 요소 제품 제조자가 실제 악용되는 취약점과 중대 보안 사고를 유럽연합 사이버보안청(ENISA) 단일 보고 플랫폼으로 24시간·72시간·최종 보고하게 한다.",
+      "ref_id": "ref-1228",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "산업안전보건법 안전검사 (산업용 로봇·컨베이어)",
+      "org": "고용노동부",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        50
+      ],
+      "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=8135",
+      "summary": "2017-10-29부터 산업용 로봇과 컨베이어를 안전검사 대상에 추가하고 기존 설비는 2018-12-31까지 최초 안전검사를 받게 했다. 정기 검사 주기는 미확인.",
+      "ref_id": "ref-1237",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "ROS 2 개발자 가이드 (패키지 라이선스·저작권 규칙)",
+      "org": "Open Robotics (ROS 2 Documentation)",
+      "kind": "오픈소스",
+      "related_areas": [
+        59,
+        57
+      ],
+      "url": "https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Developer-Guide.html",
+      "summary": "LICENSE 파일(대개 Apache 2.0)을 패키지마다 두고, 소스 파일마다 라이선스·저작권 문구를 넣어 자동 린터로 검사한다.",
+      "ref_id": "ref-1236",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "REP 2004 Package Quality Categories",
+      "org": "ROS (ros-infrastructure/rep)",
+      "kind": "프레임워크",
+      "related_areas": [
+        59,
+        57
+      ],
+      "url": "https://ros.org/reps/rep-2004.html",
+      "summary": "ROS 2 패키지 품질 수준 1~4에 선언된 라이선스와 저작권 명시·저자 표기를 요구하고 수준 5에는 권장한다.",
+      "ref_id": "ref-1229",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "SPDX (ISO/IEC 5962:2021)",
+      "org": "SPDX Project (Linux Foundation)",
+      "kind": "표준",
+      "related_areas": [
+        59,
+        57
+      ],
+      "url": "https://spdx.dev/about/overview/",
+      "summary": "소프트웨어 자재명세서(SBOM)의 출처·라이선스·보안 정보를 교환하는 개방 표준이며, 라이선스 목록은 식별자·예외·표현식 문법을 제공한다.",
+      "ref_id": "ref-1230",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
+    },
+    {
+      "name": "Gazebo(클래식) 모델 구조·요구사항 (모델 데이터베이스 라이선스 표기)",
+      "org": "Open Robotics (Gazebo Classic)",
+      "kind": "오픈소스",
+      "related_areas": [
+        59,
+        36
+      ],
+      "url": "https://classic.gazebosim.org/tutorials?tut=model_structure",
+      "summary": "database.config 의 license 요소로 모델 데이터베이스의 라이선스를 지정하고 CC BY 3.0 Unported를 권장하며, model.config 에 작성자 이름·이메일을 필수로 적게 한다.",
+      "ref_id": "ref-1231",
+      "run_id": "2026-09-30-23",
+      "date": "2026-09-30"
     }
   ]
 }

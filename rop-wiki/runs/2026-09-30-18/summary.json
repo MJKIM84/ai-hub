@@ -1,0 +1,129 @@
+{
+  "run_id": "2026-09-30-18",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 40,
+    "area_name": "40. 운영 절차·요청 창구",
+    "category": "J. 현장 운영·관제"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 7,
+  "pages_updated": 1,
+  "new_sources": 10,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "7b32eef",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 26,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 5404.5,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 40. 운영 절차·요청 창구 | 영역 심화: 3~11절 신규 작성(요청 창구·역할 기반 권한·교대 인수인계, 병원·상업 시설 사례), 1차 조건부 승인 수정 16건 반영, 2차 드리프트 2건(6절 '전담 조직 없이' 삭제, 3절 의견 주체 명시) 수정 | run 2026-09-30-18",
+  "notes": [
+    "참고문헌 생성: references/ref-1148.md",
+    "참고문헌 생성: references/ref-1149.md",
+    "참고문헌 생성: references/ref-1150.md",
+    "참고문헌 생성: references/ref-1151.md",
+    "참고문헌 생성: references/ref-1152.md",
+    "참고문헌 생성: references/ref-1153.md",
+    "참고문헌 생성: references/ref-1154.md",
+    "참고문헌 생성: references/ref-1155.md",
+    "참고문헌 생성: references/ref-1156.md",
+    "참고문헌 생성: references/ref-1157.md",
+    "용어집 생성: glossary/shift-handover.md",
+    "용어집 생성: glossary/i-pass-handoff-program.md",
+    "용어집 생성: glossary/role-ambiguity.md"
+  ],
+  "counts": {
+    "create": 7,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 3,
+    "references": 10,
+    "standards": 2,
+    "open_questions": 4,
+    "flow_cells": 7,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 16:08:56 KST",
+  "usage": {
+    "input_tokens": 110,
+    "cache_creation_input_tokens": 741444,
+    "cache_read_input_tokens": 7998847,
+    "output_tokens": 179207,
+    "cost_usd": 12.9913,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 4.2211,
+        "output_tokens": 39063,
+        "cache_read_input_tokens": 6558637,
+        "cache_creation_input_tokens": 102825
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 2.5233,
+        "output_tokens": 27423,
+        "cache_read_input_tokens": 1112802,
+        "cache_creation_input_tokens": 150832
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 4.3366,
+        "output_tokens": 98687,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 291762
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.8058,
+        "output_tokens": 13331,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 187967
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 15,
+  "cross_checked_findings": 2
+}

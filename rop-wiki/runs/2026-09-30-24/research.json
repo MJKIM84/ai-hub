@@ -1,0 +1,672 @@
+{
+  "run_id": "2026-09-30-24",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 60,
+    "area_name": "60. 노동·수용성·접근성",
+    "category": "P. 거버넌스·법규·사회"
+  },
+  "gaps": [
+    "섹션 3. 왜 중요한가 비어 있음",
+    "섹션 4. 핵심 개념과 용어 비어 있음 — 기술 수용 모델(UTAUT·Almere 모델), 노사협의·공동결정, 근로자 감시 설비, 무인정보단말기 접근성, 연석 경사로 용어 없음",
+    "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 물류창고(부상·감시 우려), 병원(작업 흐름 적합성·종사자·환자 만족도), 실외(휠체어 이용자와 보도 로봇) 사례와 여섯 항목 정리 없음",
+    "섹션 6. 대표 접근법과 기술 비어 있음 — 수용성 측정 모델, 참여 설계(co-design), 직무 설계, 노동자 참여 절차 근거 없음",
+    "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ISO/IEC Guide 71, 장애인차별금지법 무인정보단말기 의무, 근로자참여법 제20조, 독일 사업장조직법 제87조 위치 없음",
+    "섹션 8. 대표 연구와 자료 비어 있음 — 로봇의 고용·임금 효과(미국·한국), 창고 로봇과 부상, 병원 로봇 민족지 연구 없음",
+    "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+    "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+    "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 oq-146, oq-188, oq-266 반영 필요",
+    "프런트매터 related_areas·sources 비어 있음"
+  ],
+  "research_questions": [
+    "로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가? [분류원문]",
+    "로봇 도입은 고용·임금과 일하는 방식(작업 속도·부상·직무 내용)을 어떻게 바꾸는가(미국·한국 실증 연구, 물류창고 부상 자료)? (섹션 3·5·8 겨냥)",
+    "일하는 사람과 이용하는 사람의 로봇 수용성은 어떤 모델로 측정하고, 어떤 요인(작업 흐름 적합성, 감시·데이터, 사회적 상호작용)이 좌우하는가(병원·돌봄·물류창고 사례)? (섹션 4·5·6 겨냥)",
+    "고령자·장애인·어린이가 로봇 서비스를 안전하게 쓰고 피할 수 있게 하는 표준·법 의무(ISO/IEC Guide 71, 장애인차별금지법 무인정보단말기 접근성)는 무엇인가? (섹션 7 겨냥, 한국 자료 우선)",
+    "보도 로봇이 휠체어 이용자 등 보행 약자의 통행을 막지 않게 하는 설계·운영 기준이나 사례가 있는가? (섹션 5·6 겨냥, oq-188 관련)",
+    "로봇 도입과 작업자 데이터 수집에 노동자 참여·협의를 요구하는 법 절차(한국 근로자참여법, 독일 사업장조직법)는 무엇인가? (섹션 6·7 겨냥, oq-266 관련)",
+    "노동·수용성·접근성에서 ROP가 직접 맡을 것과 사용자·노사·제조사·법무에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "claim": "EU-OSHA(유럽 산업안전보건청)는 2022-06-16 보고서 'Advanced robotics and automation: implications for occupational safety and health'에서 사람과 협업할 수 있는 로봇 시스템의 확산이 노동자의 안전·건강·웰빙과 고용 조건에 주는 영향을 다뤘다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1225"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "EU-OSHA 게시 페이지: 'The specific focus is how increasing use of robotic systems that could also collaborate with humans, impacts workers' (2022-06-16 게시).",
+      "as_of": "2022-06-16",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f2",
+      "claim": "EU-OSHA 게시 페이지 요약은 첨단 로봇의 심리사회적 위험으로 고용 불안, 작업 강도 증가, 의사결정 자율성 감소, 탈숙련, 로봇에 대한 신뢰 문제를 들고, 도입 결정에 노동자 참여·인간 중심 설계·교육을 권고하는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1225"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "게시 페이지 요약 기준이며 보고서 PDF 본문은 열리지 않아(인코딩 오류) 위험 목록과 권고 문구를 원문에서 확인하지 못했다.",
+      "as_of": "2022-06-16",
+      "site_type": null,
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f3",
+      "claim": "물류창고 사례(미국 아마존 풀필먼트 센터): Burtch·Greenwood·Ravindran(ILR Review, 2025)은 로봇 풀필먼트 센터에서 기존 센터보다 중대 부상이 40% 줄고 비중대 부상이 77% 늘었다고 보고했고, 작업자 온라인 게시글에서는 로봇 센터의 피킹 목표량이 2~3배 높다는 진술이 나왔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1213"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "GMU 뉴스(2025-08-26): 로봇 센터 중대 부상 40% 감소, 비중대 부상 77% 증가, 작업자 게시글 수천 건 분석. 논문 DOI 10.1177/00197939251333754(원문 403으로 미열람).",
+      "as_of": "2025-08-26",
+      "site_type": "물류창고",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f4",
+      "claim": "같은 연구진은 창고 자동화가 위험 작업을 없애는 대신 남은 작업의 다양성을 줄이고 작업 속도를 높여 반복성 긴장 손상 같은 비중대 부상을 늘리므로, 위험이 사라지기보다 재분배되며 직무 설계로 대응해야 한다고 해석한다.",
+      "tag": "의견",
+      "source_ids": [
+        "ref-1213"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "GMU 뉴스 제목 'Warehouse automation hasn't made workers safer — it's just reshuffled risk'; 빠른 작업 속도와 단조로운 작업이 새로운 건강 위험을 만든다는 저자 해석.",
+      "as_of": "2025-08-26",
+      "site_type": "물류창고",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f5",
+      "claim": "물류창고 사례: Malik·Brandão·Coopamootoo(International Journal of Social Robotics, 2026)는 창고 작업자 12명 반구조화 면담에서 로봇 운영에 딸린 데이터 감시에 대한 우려와 더 주체적인 협업에 대한 요구를 확인하고, 수동 무시(override)·개인정보 통제·감시 활동 알림 같은 작업자 중심 요구를 제시했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1226"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록 요약: 작업자 12명 면담, 'data surveillance' 우려, 'a spectrum of worker-centered requirements and visions'(수동 무시·개인정보 통제·감시 알림).",
+      "as_of": "2026",
+      "site_type": "물류창고",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f6",
+      "claim": "Acemoglu·Restrepo(NBER 작업논문 w23285, 2017-03; Journal of Political Economy 2020 게재)는 1990~2007년 미국 통근권역 자료로 노동자 1천 명당 로봇 1대가 늘면 고용률이 약 0.18~0.34%p, 임금이 0.25~0.5% 낮아진다고 추정했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1223"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "NBER 초록: 'one more robot per thousand workers reduces the employment to population ratio by about 0.18-0.34 percentage points and wages by 0.25-0.5 percent'(1990-2007, 산업용 로봇).",
+      "as_of": "2017-03",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f7",
+      "claim": "한국노동연구원 보고서 '기술 혁신과 노동시장 변화'(2024-12)를 전한 보도에 따르면, 노동자 1천 명당 로봇 6.6대 증가(로봇 노출도 한 단계)마다 고숙련 제조업 노동자의 임금은 2.5%, 고용률은 0.55%p 올랐으나 저숙련 제조업 노동자 임금은 4.5~4.9% 줄었고 45~54세 고용률은 0.37%p 낮아졌다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1215",
+        "ref-1216"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "수치는 한국경제 보도(2025-04-01) 기준. 보고서의 존재·발행기관·발행월(2024-12)은 국회 정책정보 페이지로 확인했으나 수치는 보고서 원문에서 확인하지 못함.",
+      "as_of": "2025-04-01",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f8",
+      "claim": "병원 사례(미국): Mutlu·Forlizzi(HRI 2008)의 자율 배송 로봇 TUG 민족지 연구에서 내과 병동은 방해에 대한 낮은 허용도, 인식된 비용과 이득의 불일치, 붐비는 통로의 운행 중단 때문에 로봇이 작업 흐름을 해치고 직원 저항을 불렀지만 산후 병동은 로봇을 작업 흐름과 사회적 맥락에 통합했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1151"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "논문 PDF 일부와 초록 기준: 작업 환경과 방해 가능성(interruptability)이 서비스 로봇 평가를 좌우하는 요인이라는 결론.",
+      "as_of": "2008",
+      "site_type": "병원",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f9",
+      "claim": "병원 사례(한국): 한림대성심병원은 2022-08~2024-12 의료서비스로봇 11종 77대를 도입해 51,092건을 사용했고, 2023년 하반기 간호사 109명 조사에서 90% 이상이 단순업무 경감, 94%가 계속 사용을 희망했으며, 입원환자 147명 중 93.9%가 영상 안내가 도움이 됐고 99%가 로봇에 거부감이 없다고 답했다고 보도됐다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1222"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "의협신문(2025-01-21) 보도 기준. 병원 자체 만족도 조사이며 조사 방법은 공개되지 않음. 다른 보도는 병동 간호사 99명 중 91.9%로 적어 표본 구분 미확인.",
+      "as_of": "2025-01-21",
+      "site_type": "병원",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f10",
+      "claim": "Heerink 외(International Journal of Social Robotics 2(4), 2010)의 Almere 모델은 통합 기술 수용 이론(UTAUT)에 사회적 상호작용 변수를 더해 고령자의 보조 소셜 에이전트 수용성을 설명하며, 요양시설과 가정에서 세 가지 에이전트로 시험해 사용 의도 분산의 59~79%, 실제 사용 분산의 49~59%를 설명했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1218"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "초록: 'accounting for 59-79% of the variance in usage intentions and 49-59% of the variance in actual use'(요양시설·가정, 세 소셜 에이전트).",
+      "as_of": "2010",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f11",
+      "claim": "김소라(주관성 연구 63, 2023)는 Q방법론으로 노인 이용자·가족·돌봄서비스 종사자의 돌봄로봇 인식을 '불가피한 대체재', '상호보완적 동반자', '열등한 보조재', '불완전한 경쟁자'의 네 유형으로 나눴다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1221"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "KCI 초록 기준: 네 인식 유형 가운데 '불가피한 대체재 인식 유형'의 설명력이 가장 크다.",
+      "as_of": "2023",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f12",
+      "claim": "실외 사례(미국): Han 외(CHI 2024)는 이동장애인 15명과 로봇 실무자 8명 면담, 4회의 공동설계 워크숍으로 보도 로봇이 들어오면 이동장애인이 보도 공간을 두고 경쟁한다고 느끼고, 실무자는 기업이 문제가 생긴 뒤에야 접근성을 다룬다고 인정했으며, 두 집단 모두 처음부터 접근성을 통합해야 한다고 보았음을 보고했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "arXiv 2404.05050(CHI '24): 'feel they have to compete for space on the sidewalk when robots are introduced'.",
+      "as_of": "2024-04-07",
+      "site_type": "실외",
+      "flow_item": "제약"
+    },
+    {
+      "id": "f13",
+      "claim": "같은 연구가 출발점으로 삼은 사례에서 배송 로봇이 연석 경사로에 멈춰 휠체어 이용자의 횡단 후 통행을 막았고 이용자가 이를 공개하자 업체가 로봇 운행을 잠시 중단했으며, 참여자들은 연석 경사로로 다가오는 사람을 감지하면 로봇이 자동으로 경로를 다시 계획하고 스스로 비켜 주차하는 기능을 제안했다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1214"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "논문 본문: 로봇이 연석 경사로(curb cut)에서 정지해 통행을 막은 사건, 업체의 일시 운행 중단, 'automatically replan when detecting people approaching curb cuts' 제안.",
+      "as_of": "2024-04-07",
+      "site_type": "실외",
+      "flow_item": "예외·성과"
+    },
+    {
+      "id": "f14",
+      "claim": "ISO/IEC Guide 71:2014(2판, 2014-12)는 사람이 쓰는 제품·서비스·건축 환경을 다루는 표준에 접근성 요구를 넣도록 표준 개발자에게 지침을 주며 장애인·어린이·고령자의 접근성 요구를 주로 다룬다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1224"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "ISO 소개 요약(검색 결과): 표준 개발자 대상 지침, 'persons with disabilities, children and older persons'. 원문·ISO 페이지 403으로 미열람.",
+      "as_of": "2014-12",
+      "site_type": null,
+      "flow_item": "제약",
+      "source_unopened": true
+    },
+    {
+      "id": "f15",
+      "claim": "한국에서는 2026-01-28부터 무인정보단말기를 설치·운영하는 모든 사업자가 디지털 접근성 지침의 검증 기준을 충족하는 장애인 접근 가능 기기를 제공해야 하며, 바닥면적 50㎡ 미만 시설·소상공인·테이블 주문형 기기는 보조기기·보조 인력·호출벨 등으로 대신할 수 있고, 위반은 장애인 차별에 해당한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1217"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "보건복지부 정책브리핑(2026-01-28): 접근성 갖춘 무인정보단말기 설치 의무 전면 시행, 소규모 시설 대체 수단 허용.",
+      "as_of": "2026-01-28",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f16",
+      "claim": "한국 근로자참여 및 협력증진에 관한 법률 제20조 제1항은 노사협의회가 협의할 사항으로 근로자의 채용·배치 및 교육훈련(제2호), 신기계·기술의 도입 또는 작업 공정의 개선(제9호), 사업장 내 근로자 감시 설비의 설치(제14호)를 둔다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1220"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "제20조 제1항 제9호 '신기계·기술의 도입 또는 작업 공정의 개선', 제14호 '사업장 내 근로자 감시 설비의 설치'(법률 제16320호, 2019-07-17 시행).",
+      "as_of": "2019-07-17",
+      "site_type": null,
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f17",
+      "claim": "독일 사업장조직법(BetrVG) 제87조 제1항 제6호는 법률·단체협약 규정이 없는 한 노동자의 행동이나 성과를 감시하도록 정해진 기술 장치의 도입과 적용에 사업장협의회의 공동결정권을 두고, 합의가 안 되면 중재위원회(Einigungsstelle)가 결정한다.",
+      "tag": "사실",
+      "source_ids": [
+        "ref-1219"
+      ],
+      "cross_checked": false,
+      "confidence": "medium",
+      "evidence_excerpt": "§87 Abs.1 Nr.6: 'Einführung und Anwendung von technischen Einrichtungen, die dazu bestimmt sind, das Verhalten oder die Leistung der Arbeitnehmer zu überwachen'.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "시작 조건"
+    },
+    {
+      "id": "f18",
+      "claim": "f5·f16·f17을 종합하면 로봇 작업과 연결해 개별 작업자의 처리량·위치·행동 데이터를 남기는 오케스트레이션 기능은 한국에서는 노사협의회 협의 사항(신기계 도입, 근로자 감시 설비), 독일에서는 공동결정 대상 감시 장치로 다뤄질 수 있어 도입 전에 노동자 참여 절차가 필요할 가능성이 있으나, 해당 여부는 법적 판단으로 확인하지 못했다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1226",
+        "ref-1220",
+        "ref-1219"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "조문과 작업자 면담 결과를 결합한 추론이며 로봇·플랫폼 로그에 적용한 판례·행정해석은 찾지 못함.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f19",
+      "claim": "확인한 자료를 종합하면 핵심 질문(로봇 도입이 일하는 사람과 이용하는 사람 모두에게 받아들여지는가)의 답은 한 가지가 아니며, 일하는 사람 쪽은 작업 흐름 적합성(f8)·작업 속도와 직무 설계(f3·f4)·데이터 감시(f5)·고용과 숙련 효과(f6·f7)가, 이용하는 사람 쪽은 사회적 상호작용 요인(f10·f11)과 보행 약자의 공간·접근성(f12·f13·f15)이 수용 여부를 가르는 것으로 보이고, 기관 자체 설문은 높은 만족도를 보고한다(f9).",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1151",
+        "ref-1213",
+        "ref-1226",
+        "ref-1223",
+        "ref-1215",
+        "ref-1218",
+        "ref-1221",
+        "ref-1214",
+        "ref-1217",
+        "ref-1222"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "여러 현장(물류창고·병원·실외·돌봄)의 개별 연구를 종합한 판단이며 같은 현장에서 노동자와 이용자 수용성을 함께 측정한 연구는 찾지 못함.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    },
+    {
+      "id": "f20",
+      "claim": "확인한 자료를 종합하면 60. 노동·수용성·접근성에서 ROP가 직접 맡을 범위는 로봇과 사람의 작업 분담·작업 속도(목표량) 설정을 드러내고 조정할 수 있게 하는 것, 작업자 데이터 수집 범위 표시·감시 알림·수동 무시 같은 작업자 통제 수단을 제공하는 것, 연석 경사로·통로에서 보행 약자에게 양보하고 멈추지 않는 대기 위치 규칙을 경로·작업 제약으로 반영하는 것, 운영자·이용자 화면의 접근성을 갖추는 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1213",
+        "ref-1226",
+        "ref-1214",
+        "ref-1217"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "f3·f5·f13·f15 에서 나온 요구를 분류 원문 19장 경계에 맞춰 플랫폼 기능으로 옮긴 추론.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "제약"
+    },
+    {
+      "id": "f21",
+      "claim": "연계 대상: 분류 원문 19장 기준으로 고용·임금·재교육 정책, 노사협의·공동결정 절차와 근로자 감시 설비의 적법성 판단(사업주·노동자 대표·법무), 장애인차별금지법 등 접근성 법적 적합성 판단(운영자·법무), 로봇 본체의 물리적 접근성 설계(높이·음성 조작 등 제조사)는 외부가 맡고, ROP는 그 결정을 작업·경로·권한 제약과 화면 설계로 받아 반영하고 근거 기록을 제공하는 쪽인 것으로 보인다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1220",
+        "ref-1219",
+        "ref-1217",
+        "ref-1214",
+        "ref-1215"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "법 조문(f16·f17)·접근성 의무(f15)·공동설계 제안(f13)의 주체를 기준으로 나눈 추론.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": "수행 자원"
+    },
+    {
+      "id": "f22",
+      "claim": "이 영역은 작업 분담·속도의 31. 사람–로봇 협업과 25. 작업 배정 — MRTA(f3·f4), 부상의 49. 사람 근접 안전(f3), 작업자 데이터 감시의 53. 개인정보·영상 데이터(f5·f18), 보행 약자와 대기 위치의 19. 사람·보행자 모델과 16. 장소 의미·지도 관리(f12·f13), 목표량 지표의 39. 운영 성과 측정·개선(f3), 교육·도입 절차의 56. 운영 이관·확대·교육(f2·f8), 화면 접근성의 37. 관제 화면·실행 기록과 13. 대화형 기능의 신뢰·기반(f15), 법 의무의 59. 법·규제·보험·라이선스(f15·f16·f17), 효과 추정의 3. 경제성·조달·사업 모델(f6·f7), 적용 현장인 61. 물류창고·63. 병원·의료·66. 실외(f3·f5·f8·f9·f12)와 이어진다.",
+      "tag": "추정",
+      "source_ids": [
+        "ref-1213",
+        "ref-1226",
+        "ref-1214",
+        "ref-1225",
+        "ref-1151",
+        "ref-1217",
+        "ref-1220",
+        "ref-1219",
+        "ref-1223",
+        "ref-1215",
+        "ref-1222"
+      ],
+      "cross_checked": false,
+      "confidence": "low",
+      "evidence_excerpt": "각 연결은 괄호 안 finding 의 주제에서 도출한 추론이다.",
+      "as_of": "2026-09-30",
+      "site_type": null,
+      "flow_item": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "ref-1213",
+      "org": "George Mason University Costello College of Business",
+      "title": "Warehouse automation hasn't made workers safer — it's just reshuffled risk",
+      "published": "2025-08-26",
+      "url": "https://business.gmu.edu/news/2025-08/warehouse-automation-hasnt-made-workers-safer-its-just-reshuffled-risk",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Burtch·Greenwood·Ravindran 의 ILR Review 논문(Lucy and the Chocolate Factory, DOI 10.1177/00197939251333754)을 소개하는 대학 뉴스. 아마존 로봇 센터의 중대 부상 40% 감소·비중대 부상 77% 증가를 전한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1214",
+      "org": "Han, H. Z. 외 (Carnegie Mellon University) — CHI '24",
+      "title": "Co-design Accessible Public Robots: Insights from People with Mobility Disability, Robotic Practitioners and Their Collaborations",
+      "published": "2024-04-07",
+      "url": "https://arxiv.org/abs/2404.05050",
+      "type": "논문",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "이동장애인 15명·로봇 실무자 8명 면담과 공동설계 워크숍 4회로 보도 로봇의 접근성 문제와 설계안을 도출한 CHI 2024 논문.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://arxiv.org/html/2404.05050v1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1215",
+      "org": "한국경제",
+      "title": "로봇이 제조업 일자리 뺏는다? 청년·고숙련 … (제목 일부만 확인)",
+      "published": "2025-04-01",
+      "url": "https://www.hankyung.com/article/2025040138391",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한국노동연구원 '기술 혁신과 노동시장 변화' 보고서의 로봇 노출도별 임금·고용 효과 수치를 전한 기사.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1216",
+      "org": "한국노동연구원 (국회 정책정보 포털 NABIS 게재)",
+      "title": "기술 혁신과 노동시장 변화",
+      "published": "2024-12",
+      "url": "https://www.nabis.go.kr/issuReportDetailView.do?menucd=130&gbnCode=P52&refCode=10&poIdx=16861",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "자동화·로봇 도입·AI 가 지역 고용과 인적자본에 주는 영향을 분석한 한국노동연구원 보고서(2024-12)의 소개 페이지. 세부 수치는 페이지에 없다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1217",
+      "org": "대한민국 정책브리핑 (보건복지부)",
+      "title": "장애인 접근성 갖춘 무인정보단말기 설치 의무화 전면 시행",
+      "published": "2026-01-28",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958690",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "2026-01-28부터 모든 무인정보단말기 설치·운영 사업자에게 장애인 접근성 기기 제공을 의무화하고 소규모 시설의 대체 수단을 허용한 조치를 알린 보도자료.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1218",
+      "org": "Heerink, M., Kröse, B., Evers, V., Wielinga, B. (International Journal of Social Robotics)",
+      "title": "Assessing acceptance of assistive social agent technology by older adults: the Almere model",
+      "published": "2010",
+      "url": "https://doi.org/10.1007/s12369-010-0068-5",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "UTAUT 에 사회적 상호작용 변수를 더한 고령자용 보조 소셜 에이전트 수용성 모델(Almere 모델)을 제안·검증한 논문. 암스테르담대 저장소 초록만 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://dare.uva.nl/search?identifier=d2099065-f734-4cc1-bf00-46333c2c77c1",
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1151",
+      "org": "Mutlu, B., Forlizzi, J. (HRI 2008)",
+      "title": "Robots in Organizations: The Role of Workflow, Social, and Environmental Factors in Human-Robot Interaction",
+      "published": "2008",
+      "url": "https://pages.cs.wisc.edu/~bilge/pubs/2008/HRI08-Mutlu.pdf",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "병원 자율 배송 로봇 TUG 도입을 민족지로 조사해 병동별 작업 흐름·방해 허용도·환경이 수용과 저항을 가른다는 점을 보인 논문. PDF 는 일부만 읽혔다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1219",
+      "org": "Bundesministerium der Justiz (gesetze-im-internet.de)",
+      "title": "Betriebsverfassungsgesetz § 87 Mitbestimmungsrechte",
+      "published": null,
+      "url": "https://www.gesetze-im-internet.de/betrvg/__87.html",
+      "type": "정부·연구기관",
+      "reliability": "high",
+      "accessed": "2026-09-30",
+      "summary": "독일 사업장조직법 제87조. 노동자 행동·성과 감시용 기술 장치의 도입·적용에 대한 사업장협의회 공동결정권(제1항 제6호)과 중재위원회 결정(제2항)을 정한다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1220",
+      "org": "대한민국 국회 (법률 제16320호, 케이스노트 게재)",
+      "title": "근로자참여 및 협력증진에 관한 법률 제20조(협의 사항)",
+      "published": "2019-04-16",
+      "url": "https://casenote.kr/%EB%B2%95%EB%A0%B9/%EA%B7%BC%EB%A1%9C%EC%9E%90%EC%B0%B8%EC%97%AC_%EB%B0%8F_%ED%98%91%EB%A0%A5%EC%A6%9D%EC%A7%84%EC%97%90_%EA%B4%80%ED%95%9C_%EB%B2%95%EB%A5%A0/%EC%A0%9C20%EC%A1%B0",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "노사협의회 협의 사항(채용·배치·교육훈련, 신기계·기술 도입, 근로자 감시 설비 설치 등 17개 호)을 정한 조문. 국가법령정보센터 본문이 열리지 않아 법령 게재 사이트로 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1221",
+      "org": "김소라 (주관성 연구, 한국주관성연구학회)",
+      "title": "돌봄로봇에 대한 돌봄서비스 종사자와 사용자의 인식 유형 연구",
+      "published": "2023",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002970146",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "Q방법론으로 노인 이용자·가족·돌봄 종사자의 돌봄로봇 인식을 네 유형으로 분류한 국내 논문. KCI 초록만 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1222",
+      "org": "의협신문",
+      "title": "\"로봇이 병원을 돌아다닌다\"…의료서비스로봇 5만건 돌파",
+      "published": "2025-01-21",
+      "url": "https://www.doctorsnews.co.kr/news/articleView.html?idxno=158208",
+      "type": "기사",
+      "reliability": "low",
+      "accessed": "2026-09-30",
+      "summary": "한림대성심병원의 의료서비스로봇 11종 77대 도입·사용 5만 건과 간호사·입원환자 만족도 조사 결과를 전한 기사(병원 발표 기반).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1223",
+      "org": "Acemoglu, D., Restrepo, P. (NBER)",
+      "title": "Robots and Jobs: Evidence from US Labor Markets",
+      "published": "2017-03",
+      "url": "https://www.nber.org/papers/w23285",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "1990~2007년 미국 통근권역 자료로 산업용 로봇이 고용과 임금을 낮춘다고 추정한 NBER 작업논문(2020년 Journal of Political Economy 게재).",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1224",
+      "org": "ISO/IEC",
+      "title": "ISO/IEC Guide 71:2014 Guide for addressing accessibility in standards",
+      "published": "2014-12",
+      "url": "https://www.iso.org/standard/57385.html",
+      "type": "표준",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "원문 미열람. 표준 개발자가 장애인·어린이·고령자의 접근성 요구를 표준에 반영하도록 돕는 지침(2판). ISO 페이지 403 으로 검색 결과 요약만 확인.",
+      "source_unopened": true,
+      "fetched": false,
+      "fetched_via": null,
+      "fetch_url": null
+    },
+    {
+      "id": "ref-1225",
+      "org": "European Agency for Safety and Health at Work (EU-OSHA)",
+      "title": "Advanced robotics and automation: implications for occupational safety and health",
+      "published": "2022-06-16",
+      "url": "https://osha.europa.eu/en/publications/advanced-robotics-and-automation-implications-occupational-safety-and-health",
+      "type": "정부·연구기관",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "협업 가능한 로봇 시스템의 확산이 노동자의 안전·건강·웰빙에 주는 영향을 다룬 EU-OSHA 보고서의 게시 페이지. 보고서 PDF 는 읽히지 않았다.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": null,
+      "source_unopened": false
+    },
+    {
+      "id": "ref-1226",
+      "org": "Malik, M. A. B., Brandão, M., Coopamootoo, K. (International Journal of Social Robotics)",
+      "title": "Towards Worker-Centered Warehouse Robots: A User Study on Privacy, Inclusivity and Safety",
+      "published": "2026",
+      "url": "https://doi.org/10.1007/s12369-026-01359-1",
+      "type": "논문",
+      "reliability": "medium",
+      "accessed": "2026-09-30",
+      "summary": "창고 작업자 12명 면담으로 로봇 운영의 데이터 감시 우려와 작업자 중심 요구(수동 무시·개인정보 통제·감시 알림)를 정리한 논문. 학술 색인(OUCI)의 초록만 확인.",
+      "fetched": true,
+      "fetched_via": "webfetch",
+      "fetch_url": "https://ouci.dntb.gov.ua/en/works/lRrprVOa/",
+      "source_unopened": false
+    }
+  ],
+  "page_proposals": [
+    {
+      "action": "update",
+      "path": "docs/categories/governance-law-and-society/labor-acceptance-and-accessibility.md",
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "rationale": "섹션 3: f19(핵심 질문 답, 추정), f3·f4(위험 재분배), f6·f7(고용·임금 효과), f12(보행 약자 공간 경쟁) / 섹션 4: 기술 수용 모델 UTAUT·Almere 모델 f10, 돌봄로봇 인식 유형 f11, 노사협의 협의 사항·근로자 감시 설비 f16, 공동결정 f17, 무인정보단말기 접근성 f15, 연석 경사로 f13, 접근성 대상 집단 f14 / 섹션 5: 물류창고 — f3(예외·성과), f4·f5(제약), 병원 — f8(예외·성과, 미국), f9(예외·성과, 한국), 실외 — f12(제약)·f13(예외·성과). 제조 공장·상업 시설·가정 사례는 찾지 못했음을 명시(f7 은 현장 사례가 아니라 산업 통계) / 섹션 6: 수용성 측정 모델 f10·f11, 참여 설계 f12·f13, 직무 설계 f4, 노동자 참여 절차 f2·f16·f17·f18 / 섹션 7: ISO/IEC Guide 71 f14(원문 미열람), 장애인차별금지법 무인정보단말기 의무 f15, 근로자참여법 제20조 f16, 독일 사업장조직법 제87조 f17 / 섹션 8: f1·f3·f6·f7·f8·f10·f12 / 섹션 9: f20(직접 범위), f21(연계 대상) / 섹션 10: f22 — 3, 13, 16, 19, 25, 31, 37, 39, 49, 53, 56, 59, 61, 63, 66 / 섹션 11: 기존 oq-146·oq-188·oq-266(모두 미해결 유지; oq-188 은 f13 이 해외 사례만 제공, oq-266 은 f8 이 병동 단위 차이만 제공)과 open_questions_new 4건. 다음 실행 후보: 61. 물류창고 페이지에 f3·f5, 66. 실외 페이지에 f12·f13, 63. 병원·의료 페이지에 f8·f9 반영."
+    }
+  ],
+  "glossary_candidates": [
+    {
+      "term_ko": "통합 기술 수용 이론",
+      "term_en": "Unified Theory of Acceptance and Use of Technology (UTAUT)",
+      "definition": "성과 기대·노력 기대·사회적 영향·촉진 조건으로 기술 사용 의도와 실제 사용을 설명하는 기술 수용 모델로, 로봇 수용성 연구의 출발점으로 널리 쓰인다."
+    },
+    {
+      "term_ko": "알메러 모델",
+      "term_en": "Almere Model",
+      "definition": "UTAUT 에 사회적 존재감·신뢰 같은 사회적 상호작용 변수를 더해 고령자의 보조 소셜 로봇·에이전트 수용성을 측정하도록 만든 모델이다(Heerink 외, 2010)."
+    },
+    {
+      "term_ko": "무인정보단말기 접근성",
+      "term_en": "Kiosk Accessibility (Unmanned Information Terminal Accessibility)",
+      "definition": "키오스크 같은 무인정보단말기를 시각·이동 등 장애가 있는 사람도 동등하게 쓸 수 있게 하는 요건으로, 한국은 장애인차별금지법에 따라 2026-01-28부터 모든 설치 사업자에게 의무화했다."
+    },
+    {
+      "term_ko": "연석 경사로",
+      "term_en": "Curb Cut (Curb Ramp)",
+      "definition": "보도와 차도 사이 턱을 경사로로 낮춘 부분으로, 휠체어·유모차 이용자가 횡단할 때 반드시 지나야 하므로 로봇이 이곳에 멈추면 통행을 막는다."
+    }
+  ],
+  "open_questions_new": [
+    "서비스 로봇 본체에 달린 터치스크린·주문 화면이나 운영자·이용자용 채팅 화면이 장애인차별금지법상 무인정보단말기에 해당해 접근성 의무를 지는가? | 관련 영역: 60. 노동·수용성·접근성, 59. 법·규제·보험·라이선스, 64. 상업 시설 | 근거: f15 | 종류: 일반",
+    "오케스트레이션 플랫폼이 로봇 작업과 연결해 개별 작업자의 처리량·위치를 기록하는 기능이 근로자참여법 제20조의 근로자 감시 설비나 독일 사업장조직법 제87조의 감시 장치에 해당해 도입 전 노사협의·공동결정 대상이 되는가? | 관련 영역: 60. 노동·수용성·접근성, 53. 개인정보·영상 데이터, 59. 법·규제·보험·라이선스 | 근거: f18 | 종류: 일반",
+    "로봇 도입 뒤 늘어난 작업 속도(피킹 목표량)와 비중대 부상 증가를 오케스트레이션의 작업 배정·속도 정책(휴식·작업 순환 반영)으로 줄인 사례나 연구가 있는가? | 관련 영역: 60. 노동·수용성·접근성, 31. 사람–로봇 협업, 25. 작업 배정 — MRTA | 근거: f3 | 종류: 일반",
+    "국내 병원·물류창고에서 로봇 도입 뒤 종사자 수용성과 직무 변화를 기관 자체 설문이 아닌 독립 연구로 조사한 자료가 있는가? | 관련 영역: 60. 노동·수용성·접근성, 63. 병원·의료, 61. 물류창고 | 근거: f9 | 종류: 일반"
+  ],
+  "open_questions_resolved": [],
+  "self_check": {
+    "source_count": 15,
+    "cross_checked_count": 0,
+    "unverified": [
+      "f2 EU-OSHA 보고서 PDF 본문이 읽히지 않아 심리사회적 위험 목록과 권고를 원문에서 확인하지 못함(게시 페이지 요약 기준, 추정·low)",
+      "f3 ILR Review 논문 원문(SAGE·SSRN 403) 미열람 — 대학 뉴스 기준이며 데이터 출처(OSHA 사업장 부상 보고 2016~2020)는 검색 요약에만 있어 claim 에서 뺌",
+      "f6 JPE 게재본 수치(고용률 0.2%p·임금 0.42%)는 검색 요약에만 있어 NBER 작업논문 범위값으로 적음",
+      "f7 한국노동연구원 보고서 수치는 보도 기준이며 보고서 원문 미열람. 저자 한글 이름 미확인",
+      "f9 간호사 조사 표본이 보도마다 다름(109명 90% 이상 / 병동 99명 91.9%) — 두 보도가 같은 병원 발표에서 나와 독립 교차 확인 불가",
+      "f14 ISO/IEC Guide 71 원문·ISO 페이지 403 으로 미열람",
+      "f16 국가법령정보센터 본문이 열리지 않아 법령 게재 사이트로 확인",
+      "시각장애인과 공원 청소 로봇 현장 연구(ACM 2026, 10.1145/3776734.3794493)는 ACM 403 과 출처 상한으로 넣지 않음",
+      "oq-146(국내 음성 지시 인식률)·oq-188(국내 대기 위치·점자블록 기준)·oq-266(운영 책임 조직 비교) 근거를 찾지 못함",
+      "제조 공장·상업 시설·가정 현장의 노동·수용성·접근성 사례 미확인"
+    ],
+    "scope_violations": [
+      "f6·f7: 로봇의 고용·임금 효과는 노동시장 정책 영역이므로 배경 근거로만 쓰고 ROP 직접 범위로 서술하지 않음(f21 연계 대상)",
+      "f16·f17·f18: 노사협의·공동결정 절차와 감시 설비 적법성 판단은 사업주·노동자 대표·법무의 몫이며 59. 법·규제·보험·라이선스와 겹치므로 규칙 목록으로만 제안",
+      "f15: 접근성 법 의무 적합성 판단은 운영자·법무 몫이며 로봇에 적용되는지는 열린 질문으로 보냄",
+      "f13: 로봇 본체의 물리적 접근성 설계(높이 조절·음성 조작)는 제조사 영역이므로 ROP 몫은 경로·대기 위치 제약으로 한정(f20·f21)"
+    ],
+    "budget_used": {
+      "queries": 20,
+      "sources": 15
+    },
+    "limits": "web_fetch_available: true · fetch_mode full. 검색 20회/30, 신규 출처 15건/15(ref-1213~ref-1226, 예약 구간 안)로 신규 출처 상한에 도달해 시각장애인·공공 로봇 현장 연구, 제조 공장 사례 추가 조사를 하지 못했다. 재사용 출처 없음(참고문헌 목록 요약에 이 영역 인용 0건). 원문 열람: 15건 중 14건을 webfetch 로 열었고 ISO/IEC Guide 71(ref-1224)만 403 으로 미열람이다. 다만 ref-1218·ref-1221·ref-1226 은 초록만, ref-1151 은 PDF 일부만, ref-1225 은 게시 페이지만 읽었다. 교차 확인 0건(한림대성심병원 수치는 같은 병원 발표에서 나온 두 보도라 독립 아님). 벤더 주장 없음. 분류 원문 핵심 질문에는 f19 로 답했고 결론은 '한 가지 답은 없고, 일하는 사람 쪽은 작업 흐름 적합성·작업 속도·데이터 감시·고용 효과가, 이용하는 사람 쪽은 사회적 상호작용과 보행 약자 접근성이 수용을 가르며 기관 자체 설문은 높은 만족을 보고한다'는 추정이다. 현장 유형 사례는 물류창고(f3·f4·f5, 미국·영국계 연구), 병원(f8 미국, f9 한국), 실외(f12·f13 미국)이고 돌봄(f10·f11)은 출처가 현장 유형을 하나로 밝히지 않아 null 로 두었다. 제조 공장·상업 시설·가정 사례는 찾지 못했다. 국내 자료는 한국경제·국회 정책정보(한국노동연구원 보고서)·정책브리핑·근로자참여법·KCI 논문·의협신문이다. 기존 열린 질문 oq-146·oq-188·oq-266 은 해결하지 못했다(oq-188 은 f13 이 해외 연석 경사로 사례만, oq-266 은 f8 이 병동 단위 수용 차이만 제공). L. AI·학습 기술 관련 finding 은 없고, 18. 실시간 세계 상태·데이터 일관성과 34. 시뮬레이션·예측용 디지털 트윈 관련 주장은 내지 않았다. 용어집에 이미 있는 역할 모호성·자동화 편향·공공 영역 이동로봇·서비스 삼자 관계·이동형 영상정보처리기기는 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+  }
+}

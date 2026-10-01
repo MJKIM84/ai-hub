@@ -22,22 +22,22 @@ version: 1
 
 | 대분류 | seed | draft | verified | published | needs_update | deprecated | 합계 |
 |---|---|---|---|---|---|---|---|
-| [A. 기획·사업](categories/planning-and-business/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
+| [A. 기획·사업](categories/planning-and-business/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
 | [B. 로봇 온톨로지](categories/robot-ontology/index.md) | 0 | 0 | 0 | 29 | 0 | 0 | 29 |
 | [C. 채팅 기반 구성·운영](categories/chat-based-configuration-and-operation/index.md) | 0 | 0 | 0 | 48 | 0 | 0 | 48 |
 | [D. 공간·지도 모델](categories/space-and-map-model/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
-| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 1 | 0 | 0 | 13 | 0 | 0 | 14 |
+| [E. 사물·사람·실시간 상태](categories/objects-people-and-live-state/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [F. 연동](categories/integration/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [G. 계획·최적화](categories/planning-and-optimization/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
 | [H. 실행·협업·예외 복구](categories/execution-collaboration-and-recovery/index.md) | 0 | 0 | 0 | 24 | 0 | 0 | 24 |
-| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 2 | 0 | 0 | 11 | 0 | 0 | 13 |
-| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 2 | 0 | 0 | 13 | 0 | 0 | 15 |
+| [I. 설계·시뮬레이션](categories/design-and-simulation/index.md) | 0 | 0 | 0 | 27 | 0 | 0 | 27 |
+| [J. 현장 운영·관제](categories/field-operations-and-monitoring/index.md) | 0 | 0 | 0 | 26 | 0 | 0 | 26 |
 | [K. 플랫폼 아키텍처·인프라](categories/platform-architecture-and-infrastructure/index.md) | 0 | 0 | 0 | 21 | 0 | 0 | 21 |
 | [L. AI·학습 기술](categories/ai-and-learning/index.md) | 0 | 0 | 0 | 30 | 0 | 0 | 30 |
-| [M. 안전](categories/safety/index.md) | 2 | 0 | 0 | 7 | 0 | 0 | 9 |
-| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 2 | 0 | 0 | 8 | 0 | 0 | 10 |
-| [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 1 | 0 | 0 | 17 | 0 | 0 | 18 |
-| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| [M. 안전](categories/safety/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [N. 보안·개인정보](categories/security-and-privacy/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
+| [O. 검증·도입·수명주기](categories/verification-deployment-and-lifecycle/index.md) | 0 | 0 | 0 | 25 | 0 | 0 | 25 |
+| [P. 거버넌스·법규·사회](categories/governance-law-and-society/index.md) | 0 | 0 | 0 | 23 | 0 | 0 | 23 |
 | [Q. 현장 유형별 적용](categories/site-type-applications/index.md) | 0 | 0 | 0 | 56 | 0 | 0 | 56 |
 
 세부영역 페이지와 그 영역을 주 영역으로 하는 주제 페이지를 함께 센다.
@@ -47,8 +47,8 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [1. 기술·시장·업체 동향](categories/planning-and-business/technology-market-and-vendor-trends.md) | published | medium | 2026-09-29 | 2 |
-| [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md) | seed | — | 2026-09-28 | 1 |
-| [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | seed | — | 2026-09-28 | 1 |
+| [2. 사용 사례·요구·책임 범위](categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | 2026-09-30 | 2 |
+| [3. 경제성·조달·사업 모델](categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | 2026-09-30 | 2 |
 
 **B. 로봇 온톨로지**
 
@@ -84,7 +84,7 @@ version: 1
 |---|---|---|---|---|
 | [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | published | medium | 2026-09-25 | 4 |
 | [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | published | low | 2026-09-25 | 2 |
-| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | seed | — | 2026-09-28 | 1 |
+| [19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | 2026-09-30 | 2 |
 
 **F. 연동**
 
@@ -118,19 +118,19 @@ version: 1
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | seed | — | 2026-09-28 | 1 |
+| [33. 시나리오 모델·편집](categories/design-and-simulation/scenario-model-and-editing.md) | published | low | 2026-09-30 | 2 |
 | [34. 시뮬레이션·예측용 디지털 트윈](categories/design-and-simulation/simulation-and-predictive-digital-twin.md) | published | medium | 2026-09-25 | 2 |
 | [35. 처리능력·규모·배치 설계](categories/design-and-simulation/capacity-sizing-and-layout-design.md) | published | medium | 2026-09-25 | 2 |
-| [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | seed | — | 2026-09-28 | 1 |
+| [36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | 2026-09-30 | 2 |
 
 **J. 현장 운영·관제**
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | seed | — | 2026-09-28 | 1 |
+| [37. 관제 화면·실행 기록](categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | 2026-09-30 | 2 |
 | [38. 모니터링·이상 탐지·원인 분석](categories/field-operations-and-monitoring/monitoring-anomaly-detection-and-root-cause-analysis.md) | published | low | 2026-09-25 | 2 |
 | [39. 운영 성과 측정·개선](categories/field-operations-and-monitoring/operational-performance-measurement-and-improvement.md) | published | medium | 2026-09-26 | 3 |
-| [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | seed | — | 2026-09-28 | 1 |
+| [40. 운영 절차·요청 창구](categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | 2026-09-30 | 2 |
 
 **K. 플랫폼 아키텍처·인프라**
 
@@ -154,16 +154,16 @@ version: 1
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [48. 안전·위험 관리](categories/safety/safety-and-risk-management.md) | published | medium | 2026-09-26 | 3 |
-| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | seed | — | 2026-09-28 | 1 |
-| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | seed | — | 2026-09-28 | 1 |
+| [49. 사람 근접 안전](categories/safety/human-proximity-safety.md) | published | medium | 2026-09-30 | 2 |
+| [50. 안전 표준·인증·사고 조사](categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | 2026-09-30 | 2 |
 
 **N. 보안·개인정보**
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
 | [51. 인증·권한·격리](categories/security-and-privacy/authentication-authorization-and-isolation.md) | published | medium | 2026-09-25 | 2 |
-| [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | seed | — | 2026-09-28 | 1 |
-| [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | seed | — | 2026-09-28 | 1 |
+| [52. 통신 보호·위협 관리·감사](categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | 2026-09-30 | 2 |
+| [53. 개인정보·영상 데이터](categories/security-and-privacy/privacy-and-video-data.md) | published | medium | 2026-09-30 | 2 |
 
 **O. 검증·도입·수명주기**
 
@@ -171,16 +171,16 @@ version: 1
 |---|---|---|---|---|
 | [54. 시험·형식 검증·벤치마크](categories/verification-deployment-and-lifecycle/testing-formal-verification-and-benchmarking.md) | published | medium | 2026-09-25 | 2 |
 | [55. 현장 조사·설치·시운전](categories/verification-deployment-and-lifecycle/site-survey-installation-and-commissioning.md) | published | medium | 2026-09-25 | 2 |
-| [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | seed | — | 2026-09-28 | 1 |
+| [56. 운영 이관·확대·교육](categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | 2026-09-30 | 2 |
 | [57. 자산·소프트웨어 수명주기 관리](categories/verification-deployment-and-lifecycle/asset-and-software-lifecycle-management.md) | published | medium | 2026-09-25 | 2 |
 
 **P. 거버넌스·법규·사회**
 
 | 세부영역 | 상태 | 신뢰도 | 마지막 갱신 | 버전 |
 |---|---|---|---|---|
-| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | seed | — | 2026-09-28 | 1 |
-| [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | seed | — | 2026-09-28 | 1 |
-| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | seed | — | 2026-09-28 | 1 |
+| [58. 다사업자 책임·계약·데이터](categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | 2026-09-30 | 2 |
+| [59. 법·규제·보험·라이선스](categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | 2026-09-30 | 2 |
+| [60. 노동·수용성·접근성](categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | 2026-09-30 | 2 |
 
 **Q. 현장 유형별 적용**
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 114회 중 최종 통과 112회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 112, None 2
-- 2차 검증 판정: 통과 112, None 2
+- 실행 129회 중 최종 통과 127회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 127, None 2
+- 2차 검증 판정: 통과 127, None 2
 
 ### 반려·보류 건수
 
@@ -209,19 +209,19 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 475 |
-| 오픈소스 문서 | 201 |
-| 표준 | 166 |
-| 기사 | 79 |
-| 정부·연구기관 | 76 |
-| 벤더 문서 | 61 |
-| 업계 보고서 | 16 |
+| 논문 | 532 |
+| 오픈소스 문서 | 215 |
+| 표준 | 180 |
+| 정부·연구기관 | 109 |
+| 기사 | 105 |
+| 벤더 문서 | 71 |
+| 업계 보고서 | 26 |
 
-신뢰도: medium 805건, high 189건, low 80건
+신뢰도: medium 895건, high 237건, low 106건
 
 ### 현장 유형 매트릭스 채움률
 
-- 43/119 칸 (36%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 74/119 칸 (62%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 

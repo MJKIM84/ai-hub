@@ -21,6 +21,20 @@ version: 1
 <!-- auto:topics-index:start -->
 | 날짜 | 제목 | 주 연구영역 | 상태 | 신뢰도 | 트랙 |
 |---|---|---|---|---|---|
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 다른 연구영역과의 연결](2026/2026-09-30-area02-s10.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 열린 질문](2026/2026-09-30-area02-s11.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 왜 중요한가](2026/2026-09-30-area02-s3.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 핵심 개념과 용어](2026/2026-09-30-area02-s4.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 대표 접근법과 기술](2026/2026-09-30-area02-s6.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area02-s7.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [2. 사용 사례·요구·책임 범위 — 대표 연구와 자료](2026/2026-09-30-area02-s8.md) | [2. 사용 사례·요구·책임 범위](../categories/planning-and-business/use-cases-requirements-and-scope.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 다른 연구영역과의 연결](2026/2026-09-30-area03-s10.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 열린 질문](2026/2026-09-30-area03-s11.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 왜 중요한가](2026/2026-09-30-area03-s3.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 핵심 개념과 용어](2026/2026-09-30-area03-s4.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 대표 접근법과 기술](2026/2026-09-30-area03-s6.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area03-s7.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
+| 2026-09-30 | [3. 경제성·조달·사업 모델 — 대표 연구와 자료](2026/2026-09-30-area03-s8.md) | [3. 경제성·조달·사업 모델](../categories/planning-and-business/economics-procurement-and-business-models.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 다른 연구영역과의 연결](2026/2026-09-30-area14-s10.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 열린 질문](2026/2026-09-30-area14-s11.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
 | 2026-09-30 | [14. 도면·BIM에서 지도 만들기 — 왜 중요한가](2026/2026-09-30-area14-s3.md) | [14. 도면·BIM에서 지도 만들기](../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) | published | medium | — |
@@ -33,6 +47,38 @@ version: 1
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 접근법과 기술](2026/2026-09-30-area16-s6.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area16-s7.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
 | 2026-09-30 | [16. 장소 의미·지도 관리 — 대표 연구와 자료](2026/2026-09-30-area16-s8.md) | [16. 장소 의미·지도 관리](../categories/space-and-map-model/place-semantics-and-map-management.md) | published | medium | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 다른 연구영역과의 연결](2026/2026-09-30-area19-s10.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 열린 질문](2026/2026-09-30-area19-s11.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 왜 중요한가](2026/2026-09-30-area19-s3.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 핵심 개념과 용어](2026/2026-09-30-area19-s4.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 대표 접근법과 기술](2026/2026-09-30-area19-s6.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area19-s7.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [19. 사람·보행자 모델 — 대표 연구와 자료](2026/2026-09-30-area19-s8.md) | [19. 사람·보행자 모델](../categories/objects-people-and-live-state/people-and-pedestrian-model.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 다른 연구영역과의 연결](2026/2026-09-30-area33-s10.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 열린 질문](2026/2026-09-30-area33-s11.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 왜 중요한가](2026/2026-09-30-area33-s3.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 핵심 개념과 용어](2026/2026-09-30-area33-s4.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 대표 접근법과 기술](2026/2026-09-30-area33-s6.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area33-s7.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [33. 시나리오 모델·편집 — 대표 연구와 자료](2026/2026-09-30-area33-s8.md) | [33. 시나리오 모델·편집](../categories/design-and-simulation/scenario-model-and-editing.md) | published | low | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 다른 연구영역과의 연결](2026/2026-09-30-area36-s10.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 열린 질문](2026/2026-09-30-area36-s11.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 왜 중요한가](2026/2026-09-30-area36-s3.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 핵심 개념과 용어](2026/2026-09-30-area36-s4.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 대표 접근법과 기술](2026/2026-09-30-area36-s6.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area36-s7.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [36. 가상 시운전·실제 상황 재현 — 대표 연구와 자료](2026/2026-09-30-area36-s8.md) | [36. 가상 시운전·실제 상황 재현](../categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | published | medium | — |
+| 2026-09-30 | [37. 관제 화면·실행 기록 — 다른 연구영역과의 연결](2026/2026-09-30-area37-s10.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-09-30 | [37. 관제 화면·실행 기록 — 핵심 개념과 용어](2026/2026-09-30-area37-s4.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-09-30 | [37. 관제 화면·실행 기록 — 대표 접근법과 기술](2026/2026-09-30-area37-s6.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-09-30 | [37. 관제 화면·실행 기록 — 대표 연구와 자료](2026/2026-09-30-area37-s8.md) | [37. 관제 화면·실행 기록](../categories/field-operations-and-monitoring/control-screen-and-execution-records.md) | published | low | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 다른 연구영역과의 연결](2026/2026-09-30-area40-s10.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 열린 질문](2026/2026-09-30-area40-s11.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 왜 중요한가](2026/2026-09-30-area40-s3.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 핵심 개념과 용어](2026/2026-09-30-area40-s4.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 대표 접근법과 기술](2026/2026-09-30-area40-s6.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area40-s7.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
+| 2026-09-30 | [40. 운영 절차·요청 창구 — 대표 연구와 자료](2026/2026-09-30-area40-s8.md) | [40. 운영 절차·요청 창구](../categories/field-operations-and-monitoring/operating-procedures-and-request-channels.md) | published | medium | — |
 | 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 다른 연구영역과의 연결](2026/2026-09-30-area41-s10.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
 | 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 열린 질문](2026/2026-09-30-area41-s11.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
 | 2026-09-30 | [41. 플랫폼 아키텍처·외부 API — 왜 중요한가](2026/2026-09-30-area41-s3.md) | [41. 플랫폼 아키텍처·외부 API](../categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md) | published | low | — |
@@ -67,6 +113,60 @@ version: 1
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 대표 접근법과 기술](2026/2026-09-30-area46-s6.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area46-s7.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
 | 2026-09-30 | [46. 예측·학습 기반 최적화 — 대표 연구와 자료](2026/2026-09-30-area46-s8.md) | [46. 예측·학습 기반 최적화](../categories/ai-and-learning/prediction-and-learning-based-optimization.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 다른 연구영역과의 연결](2026/2026-09-30-area49-s10.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 열린 질문](2026/2026-09-30-area49-s11.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 왜 중요한가](2026/2026-09-30-area49-s3.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 핵심 개념과 용어](2026/2026-09-30-area49-s4.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 대표 접근법과 기술](2026/2026-09-30-area49-s6.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area49-s7.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [49. 사람 근접 안전 — 대표 연구와 자료](2026/2026-09-30-area49-s8.md) | [49. 사람 근접 안전](../categories/safety/human-proximity-safety.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 다른 연구영역과의 연결](2026/2026-09-30-area50-s10.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 열린 질문](2026/2026-09-30-area50-s11.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 왜 중요한가](2026/2026-09-30-area50-s3.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 핵심 개념과 용어](2026/2026-09-30-area50-s4.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 대표 접근법과 기술](2026/2026-09-30-area50-s6.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area50-s7.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [50. 안전 표준·인증·사고 조사 — 대표 연구와 자료](2026/2026-09-30-area50-s8.md) | [50. 안전 표준·인증·사고 조사](../categories/safety/safety-standards-certification-and-incident-investigation.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 다른 연구영역과의 연결](2026/2026-09-30-area52-s10.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 열린 질문](2026/2026-09-30-area52-s11.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 왜 중요한가](2026/2026-09-30-area52-s3.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 핵심 개념과 용어](2026/2026-09-30-area52-s4.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 대표 접근법과 기술](2026/2026-09-30-area52-s6.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [52. 통신 보호·위협 관리·감사 — 대표 연구와 자료](2026/2026-09-30-area52-s8.md) | [52. 통신 보호·위협 관리·감사](../categories/security-and-privacy/communication-protection-threat-management-and-audit.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 다른 연구영역과의 연결](2026/2026-09-30-area53-s10.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 열린 질문](2026/2026-09-30-area53-s11.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 왜 중요한가](2026/2026-09-30-area53-s3.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 핵심 개념과 용어](2026/2026-09-30-area53-s4.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 대표 접근법과 기술](2026/2026-09-30-area53-s6.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area53-s7.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [53. 개인정보·영상 데이터 — 대표 연구와 자료](2026/2026-09-30-area53-s8.md) | [53. 개인정보·영상 데이터](../categories/security-and-privacy/privacy-and-video-data.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 다른 연구영역과의 연결](2026/2026-09-30-area56-s10.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 열린 질문](2026/2026-09-30-area56-s11.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 왜 중요한가](2026/2026-09-30-area56-s3.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 핵심 개념과 용어](2026/2026-09-30-area56-s4.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 대표 접근법과 기술](2026/2026-09-30-area56-s6.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area56-s7.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [56. 운영 이관·확대·교육 — 대표 연구와 자료](2026/2026-09-30-area56-s8.md) | [56. 운영 이관·확대·교육](../categories/verification-deployment-and-lifecycle/operations-handover-scale-out-and-training.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 다른 연구영역과의 연결](2026/2026-09-30-area58-s10.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 열린 질문](2026/2026-09-30-area58-s11.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 왜 중요한가](2026/2026-09-30-area58-s3.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 핵심 개념과 용어](2026/2026-09-30-area58-s4.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 대표 접근법과 기술](2026/2026-09-30-area58-s6.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [58. 다사업자 책임·계약·데이터 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area58-s7.md) | [58. 다사업자 책임·계약·데이터](../categories/governance-law-and-society/multi-party-responsibility-contracts-and-data.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 다른 연구영역과의 연결](2026/2026-09-30-area59-s10.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 열린 질문](2026/2026-09-30-area59-s11.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 왜 중요한가](2026/2026-09-30-area59-s3.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 핵심 개념과 용어](2026/2026-09-30-area59-s4.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 대표 접근법과 기술](2026/2026-09-30-area59-s6.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area59-s7.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [59. 법·규제·보험·라이선스 — 대표 연구와 자료](2026/2026-09-30-area59-s8.md) | [59. 법·규제·보험·라이선스](../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 다른 연구영역과의 연결](2026/2026-09-30-area60-s10.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 열린 질문](2026/2026-09-30-area60-s11.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 왜 중요한가](2026/2026-09-30-area60-s3.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 핵심 개념과 용어](2026/2026-09-30-area60-s4.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 대표 접근법과 기술](2026/2026-09-30-area60-s6.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 관련 표준·프레임워크·오픈소스](2026/2026-09-30-area60-s7.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
+| 2026-09-30 | [60. 노동·수용성·접근성 — 대표 연구와 자료](2026/2026-09-30-area60-s8.md) | [60. 노동·수용성·접근성](../categories/governance-law-and-society/labor-acceptance-and-accessibility.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 다른 연구영역과의 연결](2026/2026-09-30-area66-s10.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 열린 질문](2026/2026-09-30-area66-s11.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |
 | 2026-09-30 | [66. 실외 — 왜 중요한가](2026/2026-09-30-area66-s3.md) | [66. 실외](../categories/site-type-applications/outdoor.md) | published | medium | — |

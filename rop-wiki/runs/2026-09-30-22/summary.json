@@ -1,0 +1,133 @@
+{
+  "run_id": "2026-09-30-22",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 58,
+    "area_name": "58. 다사업자 책임·계약·데이터",
+    "category": "P. 거버넌스·법규·사회"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "medium",
+  "pages_created": 6,
+  "pages_updated": 1,
+  "new_sources": 13,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "2024461",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 15,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 6605.6,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 58. 다사업자 책임·계약·데이터 | 영역 심화: 3~11절 첫 작성(병원·가정 적용 사례, 데이터 접근 계약·인터페이스 버전·폐기 규칙·서비스 수준·감사 이력, 책임 경계, 새 열린 질문 5건), 1차 조건부 승인 수정 17건·2차 수정 2건 반영 | run 2026-09-30-22",
+  "notes": [
+    "참고문헌 생성: references/ref-1191.md",
+    "참고문헌 생성: references/ref-1192.md",
+    "참고문헌 생성: references/ref-1193.md",
+    "참고문헌 생성: references/ref-1194.md",
+    "참고문헌 생성: references/ref-1204.md",
+    "참고문헌 생성: references/ref-1205.md",
+    "참고문헌 생성: references/ref-1206.md",
+    "참고문헌 생성: references/ref-1207.md",
+    "참고문헌 생성: references/ref-1208.md",
+    "참고문헌 생성: references/ref-1209.md",
+    "참고문헌 생성: references/ref-1210.md",
+    "참고문헌 생성: references/ref-1211.md",
+    "참고문헌 생성: references/ref-1212.md",
+    "용어집 생성: glossary/data-holder.md",
+    "용어집 생성: glossary/substantial-modification.md",
+    "용어집 생성: glossary/model-contractual-terms.md",
+    "용어집 생성: glossary/api-deprecation-policy.md"
+  ],
+  "counts": {
+    "create": 6,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 13,
+    "standards": 8,
+    "open_questions": 5,
+    "flow_cells": 7,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 17:43:09 KST",
+  "usage": {
+    "input_tokens": 118,
+    "cache_creation_input_tokens": 790848,
+    "cache_read_input_tokens": 8331491,
+    "output_tokens": 203446,
+    "cost_usd": 13.0059,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.4704,
+        "output_tokens": 40347,
+        "cache_read_input_tokens": 6280265,
+        "cache_creation_input_tokens": 91333
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.9809,
+        "output_tokens": 21317,
+        "cache_read_input_tokens": 1535364,
+        "cache_creation_input_tokens": 125630
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 5.3113,
+        "output_tokens": 124239,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 349715
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 2.1388,
+        "output_tokens": 16840,
+        "cache_read_input_tokens": 365386,
+        "cache_creation_input_tokens": 216112
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 12,
+  "cross_checked_findings": 0
+}

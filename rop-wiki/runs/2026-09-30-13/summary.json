@@ -1,0 +1,131 @@
+{
+  "run_id": "2026-09-30-13",
+  "date": "2026-09-30",
+  "run_type": "area_deep_dive",
+  "target": {
+    "area_no": 37,
+    "area_name": "37. 관제 화면·실행 기록",
+    "category": "J. 현장 운영·관제"
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 4,
+  "pages_updated": 1,
+  "new_sources": 11,
+  "parked": false,
+  "published": true,
+  "committed": true,
+  "commit": "e02e1a5",
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 17,
+    "sources": 15
+  },
+  "budget": {
+    "max_search_queries": 30,
+    "max_sources_per_run": 15,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2606.0,
+  "first_retries": 0,
+  "second_retries": 1,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-09-30 | 37. 관제 화면·실행 기록 | 영역 심화: 3~11절 신규 작성(Open-RMF 시각화·작업 상태·로그 스키마, VDA 5050 시각화 토픽, MCAP, ISA-101, 설명 가능한 표시 연구, 병원 사례), 1차 조건부 승인 수정 15건과 2차 수정 6건 반영 | run 2026-09-30-13",
+  "notes": [
+    "참고문헌 생성: references/ref-1093.md",
+    "참고문헌 생성: references/ref-1094.md",
+    "참고문헌 생성: references/ref-1095.md",
+    "참고문헌 생성: references/ref-1096.md",
+    "참고문헌 생성: references/ref-1097.md",
+    "참고문헌 생성: references/ref-1098.md",
+    "참고문헌 생성: references/ref-1099.md",
+    "참고문헌 생성: references/ref-1100.md",
+    "참고문헌 생성: references/ref-1101.md",
+    "참고문헌 생성: references/ref-1102.md",
+    "참고문헌 생성: references/ref-1103.md",
+    "용어집 생성: glossary/explainable-mapf.md",
+    "용어집 생성: glossary/hmi-philosophy.md",
+    "용어집 생성: glossary/log-playback.md",
+    "용어집 생성: glossary/situation-awareness.md"
+  ],
+  "counts": {
+    "create": 4,
+    "update": 1,
+    "deprecate": 0,
+    "glossary": 4,
+    "references": 11,
+    "standards": 3,
+    "open_questions": 4,
+    "flow_cells": 3,
+    "backlog": 0,
+    "corrections": 0
+  },
+  "updated_at": "2026-09-30 14:15:07 KST",
+  "usage": {
+    "input_tokens": 106,
+    "cache_creation_input_tokens": 610789,
+    "cache_read_input_tokens": 7192718,
+    "output_tokens": 153819,
+    "cost_usd": 10.3475,
+    "calls": 8,
+    "by_step": {
+      "research": {
+        "calls": 1,
+        "cost_usd": 3.1108,
+        "output_tokens": 33408,
+        "cache_read_input_tokens": 5308859,
+        "cache_creation_input_tokens": 90682
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 1.6936,
+        "output_tokens": 21813,
+        "cache_read_input_tokens": 1556451,
+        "cache_creation_input_tokens": 84975
+      },
+      "storyteller": {
+        "calls": 2,
+        "cost_usd": 3.7944,
+        "output_tokens": 80033,
+        "cache_read_input_tokens": 143782,
+        "cache_creation_input_tokens": 270627
+      },
+      "verification2": {
+        "calls": 2,
+        "cost_usd": 1.6442,
+        "output_tokens": 17862,
+        "cache_read_input_tokens": 176932,
+        "cache_creation_input_tokens": 156447
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0688,
+        "output_tokens": 485,
+        "cache_read_input_tokens": 3313,
+        "cache_creation_input_tokens": 4458
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0357,
+        "output_tokens": 218,
+        "cache_read_input_tokens": 3381,
+        "cache_creation_input_tokens": 3600
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 14,
+  "cross_checked_findings": 0
+}

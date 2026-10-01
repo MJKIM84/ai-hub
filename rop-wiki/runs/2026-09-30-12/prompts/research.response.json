@@ -1,0 +1,859 @@
+{
+  "duration_api_ms": 495813,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 2.4371478,
+  "usage": {
+    "input_tokens": 36,
+    "cache_creation_input_tokens": 84370,
+    "cache_read_input_tokens": 2689274,
+    "output_tokens": 36760,
+    "output_tokens_details": {
+      "thinking_tokens": 12437
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 84370,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 27626,
+        "cache_read_input_tokens": 166933,
+        "cache_creation_input_tokens": 742,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 742
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 36,
+      "outputTokens": 36760,
+      "cacheReadInputTokens": 2689274,
+      "cacheCreationInputTokens": 84370,
+      "webSearchRequests": 0,
+      "costUSD": 1.9481588,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 12437,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 290904,
+      "outputTokens": 13617,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 13,
+      "costUSD": 0.48898899999999995,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "is_error": false,
+  "num_turns": 37,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-09-30-12\",\"date\":\"2026-09-30\",\"run_type\":\"area_deep_dive\",\"target\":{\"area_no\":33,\"area_name\":\"33. 시나리오 모델·편집\",\"category\":\"I. 설계·시뮬레이션\"},\"gaps\":[\"섹션 3. 왜 중요한가 비어 있음\",\"섹션 4. 핵심 개념과 용어 비어 있음 — 시나리오 기술 언어, 정적 환경과 동적 내용의 분리, 매개변수화·카탈로그, 장애 주입 선언, 반증 기반 시험 용어 없음\",\"섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 상업 시설(호텔·공항)·병원(클리닉)·실외(캠퍼스)·가정(가정 활동)·제조 공장(배터리 생산) 시나리오 예제와 여섯 항목 정리 없음\",\"섹션 6. 대표 접근법과 기술 비어 있음 — 확률적 시나리오 언어, 건물 주석 편집기, 행동 트리·BPMN 같은 미션 형식, LLM 기반 환경·시나리오 생성 근거 없음\",\"섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ASAM OpenSCENARIO, SDFormat, VDMA LIF, Open-RMF rmf_demos·traffic-editor, BEHAVIOR-1K·BDDL, NIST ARIAC, MovingAI MAPF 벤치마크, Groot2 위치 없음\",\"섹션 8. 대표 연구와 자료 비어 있음\",\"섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음\",\"섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음\",\"섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 oq-131·oq-135 반영 필요\",\"프런트매터 related_areas·sources 비어 있음\"],\"research_questions\":[\"현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가? [분류원문]\",\"로봇 시뮬레이션·자율 시스템 시험에서 쓰는 시나리오 기술 형식·언어는 무엇이며 환경·개체·작업·사건·장애를 어떻게 나누어 담고 판(버전)을 어떻게 관리하는가? (섹션 4·6·7 겨냥)\",\"현장 유형별(호텔·병원·공장·가정·실외·물류창고) 시나리오 예제·템플릿 라이브러리로 공개된 것은 무엇이고 각각 무엇을 담는가? (섹션 5·7 겨냥, 한국 자료 우선)\",\"사람이 화면에서 시나리오·워크플로·미션을 그리고 고치는 편집기와 미션 기술 형식(행동 트리·상태 기계·BPMN 등)은 무엇이며 비교 연구는 무엇을 말하는가? (섹션 6·7·8 겨냥)\",\"언어 모델로 시뮬레이션 환경·시나리오를 자동 생성하는 연구는 무엇을 입력으로 받아 무엇을 만들고 어떻게 평가했는가? (섹션 6·8 겨냥, 9. 채팅으로 시나리오 구성과의 연결)\",\"oq-131 플릿 관제 실행 기록을 시나리오 사양으로 바꾸는 공개 형식·변환 규칙, oq-135 시나리오 구성 시 되물어야 할 항목의 표준 목록이 있는가? (섹션 11 겨냥)\",\"33. 시나리오 모델·편집에서 ROP가 직접 맡을 것과 시뮬레이션 엔진·로봇 제조사·설비 쪽에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)\"],\"findings\":[{\"id\":\"f1\",\"claim\":\"Vin 외의 Scenic 3.0(CAV 2023)은 자율 시스템·로봇의 환경을 모델링하는 확률적 프로그래밍 언어 Scenic 에 3차원 기하, 가림을 고려한 광선 추적 기반 가시성 판정을 갖춘 정밀 형상 모델, 선형 시간 논리(LTL)로 쓰는 시간 요구사항을 더해 반증(falsification) 기반 시험에 쓸 수 있게 했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1135\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: Scenic 3.0 은 3D 기하 지원, 박스 대신 복잡한 형상의 정밀 모델과 가림을 반영한 광선 추적 가시성, LTL 로 표현한 임의의 시간 요구를 추가했고, Scenic 2 로는 정확히 모델링할 수 없던 사례를 보였다.\",\"as_of\":\"2023-07\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f2\",\"claim\":\"ASAM OpenSCENARIO XML 은 주행·교통 시뮬레이터의 동적 내용(차량·보행자 등 여러 개체의 동기화된 기동)을 계층 구조의 XML 파일(.xosc)로 기술하는 표준으로, 2026-05-19 에 1.4.0 판이 나왔고, 기동·동작·궤적을 카탈로그로 묶고 시나리오 전체를 매개변수화해 시나리오 파일을 대량으로 만들지 않고도 시험을 자동화할 수 있게 한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1141\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"공식 소개: 1.4.0 판(2026-05-19), 파일 형식 xosc. \\\"complete scenario descriptions support parameterization, which allows test automation without the need to create a large amount of scenario files\\\"\",\"as_of\":\"2026-05-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f3\",\"claim\":\"ASAM 은 도로망은 OpenDRIVE, 노면 형상은 OpenCRG 로 따로 기술하고 OpenSCENARIO XML 은 그 위의 동적 내용만 담게 나누며, 병행 표준 OpenSCENARIO DSL 은 대규모 검증용, XML 은 예측 가능한 정밀 시나리오용으로 역할을 구분한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1141\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"공식 소개: OpenSCENARIO XML 은 도로망용 OpenDRIVE, 노면용 OpenCRG 와 함께 쓰이며, DSL 은 대규모 자율주행 검증을, XML 은 V&V 용 정밀 시나리오를 겨냥한다.\",\"as_of\":\"2026-05-19\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f4\",\"claim\":\"Open-RMF 의 rmf_demos 는 호텔 월드로 로비와 객실 2개 층, 승강기 2대, 여러 문, 로봇 플릿 3개(로봇 4대)가 층을 오가며 순찰(loop)·청소 작업을 하는 다중 플릿 시나리오를 예제로 제공한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1136\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: Hotel World — 로비와 객실 2개 층, 승강기 2대, 문 여러 개, 플릿 3개(로봇 4대). 작업: Loop, Clean. 실행 예: dispatch_clean -cs clean_lobby (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"상업 시설\",\"flow_item\":\"수행 자원\"},{\"id\":\"f5\",\"claim\":\"rmf_demos 의 공항 터미널 월드는 차선·목적지·로봇이 많은 대형 지도에서 여러 플릿과 설비·이용자의 상호작용을 보이며, 선택적으로 군중 시뮬레이션을 켜고 사람이 직접 모는 읽기 전용(read_only) 카트를 함께 두고 순찰·배송·청소 작업을 실행한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1136\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: Airport Terminal World — 대규모 환경, 여러 플릿, use_crowdsim:=1 로 군중 시뮬레이션 추가, 수동 조작 read_only 카트. 작업: Loop, Delivery, Clean (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"상업 시설\",\"flow_item\":\"제약\"},{\"id\":\"f6\",\"claim\":\"rmf_demos 의 클리닉 월드는 승강기 2대가 있는 2개 층 시설에서 역할이 다른 로봇 플릿 2개가 층을 오가며 간호 스테이션 사이를 순찰하는 병원형 시나리오 예제다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1136\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: Clinic World — 2개 층, 승강기 2대, 역할이 다른 플릿 2개. 예: dispatch_patrol -p L1_left_nurse_center L2_right_nurse_center -n 5 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"병원\",\"flow_item\":\"제약\"},{\"id\":\"f7\",\"claim\":\"rmf_demos 의 캠퍼스 월드는 차선을 GPS WGS84 좌표로 행성 규모에 주석한 넓은 캠퍼스에서 여러 배송 로봇이 장거리 순찰을 하는 실외 시나리오 예제이고, 제조·물류 월드는 컨베이어·고정 매니퓰레이터 작업셀과 여러 AMR 플릿의 연동을 영상으로만 보인다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1136\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: Campus World — WGS84 좌표의 행성 규모 데모, 배송 로봇 여러 대. Manufacturing & Logistics World — 작업셀(컨베이어, 고정 매니퓰레이터)과 AMR 플릿, 영상 기반 데모 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"실외\",\"flow_item\":\"작업 대상\"},{\"id\":\"f8\",\"claim\":\"rmf_demos 에서 시나리오는 월드(건물 구성·차선·승강기·문·충전 위치)를 띄운 뒤 dispatch_patrol·dispatch_delivery·dispatch_clean 같은 명령으로 작업을 따로 넣는 구조이며, 디스패처가 플릿 어댑터들 사이의 작업 입찰을 조율한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1136\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 월드는 traffic editor 로 차선·웨이포인트를 정의하고 승강기·문·충전소를 건물 구성에 주석하며, 작업은 dispatch_* 명령으로 넣고 dispatcher 노드가 플릿 어댑터 간 입찰을 조율한다 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":\"시작 조건\"},{\"id\":\"f9\",\"claim\":\"Open-RMF 의 traffic-editor 는 시설 지도 위에 벽·문(여닫이·미닫이·양문)·층·승강기, 최대 9개 그래프의 교통 차선, 충전·주차·대기·도킹·시뮬레이션 로봇 생성 위치 같은 웨이포인트 속성, 층 정렬용 기준점을 그려 넣는 GUI 편집기로, 결과를 .building.yaml 파일로 저장하고 building_map_generator 가 이를 물리 시뮬레이션 월드로 자동 생성한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1137\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"책 traffic-editor 장: 층별 정점·벽·차선·문·승강기·모델 배치를 담은 .building.yaml 로 저장하며 GUI 편집과 프로그램 접근을 모두 지원하고, 2D 주석에서 3D 시뮬레이션 월드를 만든다. \\\"Traffic conventions for multi-robot systems do not exist\\\" (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f10\",\"claim\":\"Stanford 등의 BEHAVIOR-1K(arXiv 2403.09227, 예비판 CoRL 2022)는 '로봇이 무엇을 해 주길 바라는가' 설문으로 고른 일상 가정 활동 1,000개를 행동 영역 정의 언어(BDDL)로 형식 명세하고, 주택·정원·식당·사무실 등 장면 50개와 물리·의미 속성을 주석한 객체 9,000개 이상, 강체·변형체·액체를 다루는 OmniGibson 시뮬레이터 위에 구현한 활동 라이브러리다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1138\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: 1,000개 일상 활동, 장면 50개(주택·정원·식당·사무실 등), 객체 9,000개 이상, BDDL 로 활동 명세, OmniGibson 에서 강체·변형체·액체 시뮬레이션. 활동은 장기 과제이고 복잡한 조작 기술에 의존한다.\",\"as_of\":\"2024-03\",\"site_type\":\"가정\",\"flow_item\":\"작업 대상\"},{\"id\":\"f11\",\"claim\":\"NIST ARIAC 문서의 시나리오는 전기차 배터리 생산 시설로, 배터리 셀 4개를 트레이에 담는 키팅과 셀 4개와 상하 케이스로 모듈을 조립하는 두 작업을 주문으로 받고, 우선순위가 높은 주문이 남아 있으면 경기 상태가 '주문 완료'로 바뀌지 않게 정한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1140\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ARIAC 문서 scenario: EV 배터리 생산 시설, 키트는 셀 4개를 트레이에 담은 묶음, 모듈은 셀 4개와 상하 케이스를 용접 연결한 단위. 셀 전압 허용치 ±0.2 V (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"제조 공장\",\"flow_item\":\"작업 대상\"},{\"id\":\"f12\",\"claim\":\"NIST ARIAC 는 컨베이어 고장(START_TIME·DURATION), 전압 시험기 고장(시작·지속·대상 TESTER), 진공 그리퍼 파지 실패(TOOL·몇 번째 파지인지 GRASP_OCCURRENCE), 긴급 주문(START_TIME·ID) 네 가지 민첩성 과제를 매개변수로 선언해, 장애와 긴급 요청을 시각 또는 발생 횟수 조건으로 시나리오에 주입한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1139\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"ARIAC 문서 challenges: Conveyor Malfunction, Voltage Tester Malfunction, Vacuum Tool Malfunction, High Priority Order 네 과제. 컨베이어·시험기 고장은 경과 초로, 진공 그리퍼는 \\\"which grasp attempt will fail\\\" 로 발동 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":\"제조 공장\",\"flow_item\":\"예외·성과\"},{\"id\":\"f13\",\"claim\":\"Kästner 외의 Arena-Bench(RA-L 2022)는 동적 환경의 시나리오·월드 생성 도구와 평가 지표를 갖춘 벤치마크 모음으로, 3차원 환경에서 여러 로봇 플랫폼의 모델 기반·학습 기반 주행 계획기를 같은 시나리오로 비교하고 실물 로봇 배치까지 보였다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1142\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"a benchmark suite to train, test, and evaluate navigation planners on different robotic platforms within 3D environments\\\" — 동적 평가 시나리오 설계 도구와 평가 지표 포함.\",\"as_of\":\"2022-06\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f14\",\"claim\":\"Shcherbyna 외의 Arena 4.0(arXiv 2409.12471)은 대규모 언어 모델과 확산 모델로 텍스트 설명이나 2D 평면 배치에서 사람이 있는 주행 환경을 생성하고, 의미 주석이 달린 3D 자산 데이터베이스로 객체를 배치하며, 사용자 연구에서 이전 판보다 사용성·효율이 나아졌다고 보고했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1143\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: LLM 과 확산 모델로 텍스트나 2D 평면 배치에서 사람 중심 환경을 동적으로 생성, 의미 주석 3D 자산 DB, ROS 2 이전, 사용자 연구로 사용성·효율 개선 확인, CC BY 4.0 공개.\",\"as_of\":\"2024-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f15\",\"claim\":\"Yang 외의 Holodeck(CVPR 2024)은 GPT-4 가 텍스트 설명에서 평면 배치·재질·문과 창을 정하고 공간 관계 제약을 만들어 최적화로 Objaverse 3D 자산을 배치하는 방식으로 오락실·스파·박물관 같은 상호작용 가능한 환경을 자동 생성하며, 주거 장면에서 평가자가 절차적 생성 기준선보다 선호했고 사람이 만든 데이터 없이 음악실·어린이집 같은 새 장면의 주행 학습에 썼다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1144\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: AI2-THOR 기반, GPT-4 로 장면 의미와 공간 관계 제약 생성 후 최적화 배치, 주거 장면 인간 평가에서 절차적 기준선보다 선호, 음악실·어린이집 제로샷 주행.\",\"as_of\":\"2023-12\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f16\",\"claim\":\"행동 트리 편집기 Groot2 는 끌어놓기로 트리를 만들며 XML 을 실시간으로 미리 보고, 실행 중인 BehaviorTree.CPP 실행기에 붙어 상태를 보여 주고 전이를 로그로 기록해 속도를 바꿔 재생하며, 유료판에서 블랙보드 표시·중단점·장애 주입을 제공한다고 밝힌다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1145\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"벤더 주장: 무료판은 편집·모니터링을 노드 20개까지, PRO(연 590유로 유동 라이선스)는 블랙보드 시각화, 대화형 중단점, 장애 주입, 대형 트리 노드 검색 제공. 로그를 열어 여러 속도로 재생 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null,\"vendor_claim\":true},{\"id\":\"f17\",\"claim\":\"Filippone·Pettinari·Pelliccione(IEEE TSE, arXiv 2603.15427)는 단일·다중 로봇 미션 기술 형식으로 행동 트리·상태 기계·계층적 작업 네트워크(HTN)·BPMN 을 제어 구조·표현력·도구 지원 측면에서 비교하며, 미션을 명세하는 표준이나 널리 받아들여진 형식이 없고 미션은 로봇 전문가가 아닌 도메인 전문가가 정의하는 경우가 많다고 지적했다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1146\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"초록: \\\"there is no standard or widely accepted formalism for specifying missions in single- or multi-robot systems\\\" — 네 형식의 장단점을 비교해 탄력적인 미션 설계 형식 선택을 돕는다.\",\"as_of\":\"2026-03\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f18\",\"claim\":\"Moving AI 연구실의 MAPF 벤치마크는 도시·게임·창고형·무작위·미로·방 등 격자 지도 36개마다 출발·도착 쌍을 담은 .scen 시나리오 파일을 무작위형 25개·균등형 25개씩 두어 모두 1,800개의 시나리오 파일을 공개한 재사용 가능한 시나리오 라이브러리다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1147\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"벤치마크 페이지: 지도 36개, 지도마다 random 25·even 25 시나리오(.scen), 총 1,800개 파일. 창고 지도는 통로 배치를 격자로 추상화한 것이다 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f19\",\"claim\":\"SDFormat(Simulation Description Format)은 로봇 시뮬레이터·시각화·제어용으로 로봇(기구학·동역학·센서)과 환경(조명·지형·OpenStreetMap 도로·3D 모델), 물리 설정을 기술하는 XML 형식으로, Gazebo 에서 시작했고 Open Source Robotics Foundation 이 Apache 2.0 으로 관리한다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1148\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"공식 사이트: \\\"an XML format that describes objects and environments for robot simulators, visualization, and control\\\" — 라이브러리 libsdformat 16.0.0 (발행일 미확인, 확인일 기준)\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f20\",\"claim\":\"VDMA 의 레이아웃 교환 형식(LIF) 1.0.0(2023-09)은 무인운반차 통합업체가 주행 경로 레이아웃(간선·노드·스테이션)을 제3자 상위 관제 시스템에 처음 넘길 때 쓰는 비구속적 교환 형식이며, VDA 5050 인터페이스 정의의 영향을 받아 만들어졌다.\",\"tag\":\"사실\",\"source_ids\":[\"ref-1149\"],\"cross_checked\":false,\"confidence\":\"medium\",\"evidence_excerpt\":\"README: 판 1.0.0(2023-09), 목적은 \\\"initial transfer of a track layout to a central (third-party) master control system\\\", VDA5050 의 영향, 비구속적 접근이라는 면책 문구.\",\"as_of\":\"2023-09\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f21\",\"claim\":\"확인한 형식들은 공통으로 정적 환경(SDFormat 월드, Open-RMF .building.yaml, VDMA LIF 레이아웃, OpenDRIVE 도로망)과 동적 내용(작업 명령, OpenSCENARIO 스토리보드, ARIAC 주문·장애 과제, BDDL 활동)을 나누어 기술하며, 형식 자체의 판(OpenSCENARIO XML 1.4.0, LIF 1.0.0)은 두지만 개별 시나리오 인스턴스의 버전 관리 방식은 확인한 자료에서 찾지 못했다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1148\",\"ref-1137\",\"ref-1149\",\"ref-1141\",\"ref-1136\",\"ref-1139\",\"ref-1138\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f3·f8·f9·f10·f12·f19·f20 의 종합. 시나리오 인스턴스 버전 관리 규칙은 어느 출처에도 없었다.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f22\",\"claim\":\"확인한 자료를 종합하면 핵심 질문(현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가)에 대해, 공개 형식은 분야별로 나뉘어(자율주행 OpenSCENARIO, 가정 활동 BDDL, 시설 다중 로봇 Open-RMF 건물 파일과 작업 명령, 제조 ARIAC 과제 설정, MAPF .scen) 환경·로봇·사람·물품·작업·정책·물리·장애를 한 형식으로 담는 공통 표준은 찾지 못했고 미션 기술에도 표준이 없으며(f17), 재사용은 매개변수화·카탈로그(f2), 확률 분포 표본 추출(f1), 현장 유형별 예제 월드(f4~f7), 대규모 활동·시나리오 라이브러리(f10·f18), 언어 모델 생성(f14·f15)으로 이루어지는 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1141\",\"ref-1138\",\"ref-1136\",\"ref-1139\",\"ref-1147\",\"ref-1146\",\"ref-1135\",\"ref-1143\",\"ref-1144\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1·f2·f4~f10·f12·f14·f15·f17·f18 의 종합 판단.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f23\",\"claim\":\"확인한 자료를 종합하면 이 영역이 중요한 까닭은, 계획기·정책을 같은 조건에서 비교하려면 고정된 시나리오 파일이 있어야 하고(f13·f18), 장애·긴급 요청을 시나리오에 선언해야 예외 대응 시험을 반복할 수 있으며(f12), 매개변수화가 없으면 조건별 시나리오 파일이 불어나고(f2), 비전문가가 미션과 환경을 정의해야 하는데 공통 형식이 없기 때문이다(f17).\",\"tag\":\"추정\",\"source_ids\":[\"ref-1142\",\"ref-1147\",\"ref-1139\",\"ref-1141\",\"ref-1146\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f12·f13·f17·f18 의 종합 판단.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f24\",\"claim\":\"확인한 자료를 종합하면 33. 시나리오 모델·편집에서 ROP가 직접 맡을 범위는 환경 참조·로봇 구성·사람 흐름·작업·정책·장애 주입을 묶은 버전 있는 시나리오 모델(f8·f12·f21), 현장 유형별 예제 라이브러리(f4~f7), 시설 주석·작업·미션을 그리는 편집기와 미션 형식 선택(f9·f16·f17), 시나리오를 여러 시뮬레이터 형식으로 내보내는 변환(f9·f19)으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1136\",\"ref-1139\",\"ref-1137\",\"ref-1145\",\"ref-1146\",\"ref-1148\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f4~f9·f12·f16·f17·f19·f21 의 종합 판단.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f25\",\"claim\":\"연계 대상: 분류 원문 19장 기준으로 물리·센서 시뮬레이션 엔진과 로봇 기구학·센서 모델(SDFormat 로봇 기술, f19)은 시뮬레이터·로봇 제조사 쪽에, 컨베이어·작업셀 같은 설비 제어(f7·f12)는 설비 쪽에, 도로 교통 시나리오 표준(f2·f3)은 자율주행 분야에 속하므로, ROP 는 이들을 참조·변환해 시나리오에 묶는 역할을 맡을 것으로 보인다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1148\",\"ref-1136\",\"ref-1139\",\"ref-1141\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f2·f3·f7·f12·f19 와 분류 원문 19장 경계의 종합 판단.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null},{\"id\":\"f26\",\"claim\":\"이 영역은 시나리오를 대화로 만드는 9. 채팅으로 시나리오 구성(f14·f15)과 11. 채팅으로 실제 상황 시뮬레이션 재현, 시나리오를 실행하는 34. 시뮬레이션·예측용 디지털 트윈(f19), 기록 재생·재현의 36. 가상 시운전·실제 상황 재현(f16), 규모 산정의 35. 처리능력·규모·배치 설계, 건물·레이아웃 주석의 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델(f9·f20), 군중·보행자의 19. 사람·보행자 모델(f5·f14), 승강기 연동의 22. 설비·건물 시스템 연동(f4·f6), 미션 형식의 24. 작업·워크플로 모델링(f17), 장애 주입의 32. 예외 복구·재계획·업무 연속성(f12), 경로 시나리오의 27. 다중 로봇 경로·교통 관리 — MAPF(f18), 언어 모델 생성의 44. 로봇 기반 모델·언어 모델 계획(f15), 벤치마크의 54. 시험·형식 검증·벤치마크(f1·f13·f18), 적용 현장인 62. 제조 공장(f11·f12)·63. 병원·의료(f6)·64. 상업 시설(f4·f5)·65. 가정·공동주택(f10)·66. 실외(f7)와 이어진다.\",\"tag\":\"추정\",\"source_ids\":[\"ref-1143\",\"ref-1144\",\"ref-1148\",\"ref-1145\",\"ref-1137\",\"ref-1149\",\"ref-1136\",\"ref-1146\",\"ref-1139\",\"ref-1147\",\"ref-1135\",\"ref-1142\",\"ref-1140\",\"ref-1138\"],\"cross_checked\":false,\"confidence\":\"low\",\"evidence_excerpt\":\"f1~f20 의 연결 판단.\",\"as_of\":\"2026-09-30\",\"site_type\":null,\"flow_item\":null}],\"sources\":[{\"id\":\"ref-1135\",\"org\":\"Vin, E., Kashiwa, S., Rhea, M., Fremont, D. J., Kim, E., Dreossi, T., Ghosh, S., Yue, X., Sangiovanni-Vincentelli, A. L., & Seshia, S. A. (CAV 2023, arXiv)\",\"title\":\"3D Environment Modeling for Falsification and Beyond with Scenic 3.0\",\"published\":\"2023-07\",\"url\":\"https://arxiv.org/abs/2307.03325\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"확률적 시나리오 언어 Scenic 의 3.0 판. 3D 기하, 가림 고려 가시성, LTL 시간 요구를 더해 반증 기반 시험에 쓴다(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1136\",\"org\":\"Open-RMF (open-rmf/rmf_demos)\",\"title\":\"rmf_demos — README\",\"published\":null,\"url\":\"https://github.com/open-rmf/rmf_demos\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"호텔·사무실·공항 터미널·클리닉·캠퍼스·제조·물류 데모 월드와 작업 명령(dispatch_*)으로 구성된 Open-RMF 예제 시나리오 모음.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/open-rmf/rmf_demos/main/README.md\"},{\"id\":\"ref-1137\",\"org\":\"Open Robotics (osrf/ros2multirobotbook)\",\"title\":\"Programming Multiple Robots with ROS 2 — Traffic Editor\",\"published\":null,\"url\":\"https://osrf.github.io/ros2multirobotbook/traffic-editor.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"시설 지도에 벽·문·승강기·차선·웨이포인트 속성을 주석해 .building.yaml 로 저장하고 시뮬레이션 월드를 생성하는 GUI 편집기 설명.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md\"},{\"id\":\"ref-1138\",\"org\":\"Li, C., Zhang, R., Wong, J. 외 (Stanford, arXiv)\",\"title\":\"BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation\",\"published\":\"2024-03\",\"url\":\"https://arxiv.org/abs/2403.09227\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"BDDL 로 명세한 일상 가정 활동 1,000개, 장면 50개, 객체 9,000개 이상을 OmniGibson 에 구현한 벤치마크(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1139\",\"org\":\"NIST (usnistgov/ARIAC_docs)\",\"title\":\"ARIAC Documentation — Challenges\",\"published\":null,\"url\":\"https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"컨베이어·전압 시험기·진공 그리퍼 고장과 긴급 주문의 네 민첩성 과제와 발동 매개변수 설명.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/challenges.rst\"},{\"id\":\"ref-1140\",\"org\":\"NIST (usnistgov/ARIAC_docs)\",\"title\":\"ARIAC Documentation — Scenario\",\"published\":null,\"url\":\"https://pages.nist.gov/ARIAC_docs/en/latest/pages/scenario.html\",\"type\":\"정부·연구기관\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"전기차 배터리 생산 시설 시나리오의 키팅·모듈 조립 작업, 주문과 우선순위, 품질 허용치 설명.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/scenario.rst\"},{\"id\":\"ref-1141\",\"org\":\"ASAM e.V.\",\"title\":\"ASAM OpenSCENARIO® XML\",\"published\":null,\"url\":\"https://www.asam.net/standards/detail/openscenario-xml/\",\"type\":\"표준\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"주행·교통 시뮬레이터의 동적 내용을 기술하는 XML 표준의 공식 소개. 1.4.0 판(2026-05-19), 카탈로그·매개변수화, OpenDRIVE·DSL 과의 관계.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1142\",\"org\":\"Kästner, L., Bhuiyan, T., Le, T. A. 외 (RA-L 2022, arXiv)\",\"title\":\"Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments\",\"published\":\"2022-06\",\"url\":\"https://arxiv.org/abs/2206.05728\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"동적 환경 시나리오·월드 생성 도구와 평가 지표로 주행 계획기를 비교하는 벤치마크 모음(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1143\",\"org\":\"Shcherbyna, V. 외 (arXiv)\",\"title\":\"Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation\",\"published\":\"2024-09\",\"url\":\"https://arxiv.org/abs/2409.12471\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"LLM·확산 모델로 텍스트·2D 평면 배치에서 사람 중심 주행 환경을 생성하는 ROS 2 플랫폼(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1144\",\"org\":\"Yang, Y., Sun, F.-Y., Weihs, L. 외 (CVPR 2024, arXiv)\",\"title\":\"Holodeck: Language Guided Generation of 3D Embodied AI Environments\",\"published\":\"2023-12\",\"url\":\"https://arxiv.org/abs/2312.09067\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"GPT-4 와 공간 관계 제약 최적화로 텍스트에서 상호작용 가능한 3D 환경을 생성(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1145\",\"org\":\"BehaviorTree.CPP 프로젝트 (behaviortree.dev)\",\"title\":\"Groot2\",\"published\":null,\"url\":\"https://www.behaviortree.dev/groot/\",\"type\":\"벤더 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"행동 트리 편집·모니터링·로그 재생 도구 Groot2 의 기능과 무료·PRO 판 차이를 소개하는 제품 페이지.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1146\",\"org\":\"Filippone, G., Pettinari, S., & Pelliccione, P. (IEEE TSE, arXiv)\",\"title\":\"Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis\",\"published\":\"2026-03\",\"url\":\"https://arxiv.org/abs/2603.15427\",\"type\":\"논문\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"행동 트리·상태 기계·HTN·BPMN 을 미션 기술 형식으로 비교한 연구(초록 기준).\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1147\",\"org\":\"Moving AI Lab (Sturtevant 외)\",\"title\":\"MAPF Benchmarks\",\"published\":null,\"url\":\"https://movingai.com/benchmarks/mapf/index.html\",\"type\":\"오픈소스 문서\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"격자 지도 36개와 지도당 .scen 시나리오 50개를 공개한 다중 에이전트 경로 찾기 벤치마크.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1148\",\"org\":\"Open Source Robotics Foundation\",\"title\":\"SDFormat (Simulation Description Format)\",\"published\":null,\"url\":\"http://sdformat.org/\",\"type\":\"오픈소스 문서\",\"reliability\":\"high\",\"accessed\":\"2026-09-30\",\"summary\":\"로봇 시뮬레이터·시각화·제어용으로 로봇과 환경을 기술하는 XML 형식의 공식 사이트.\",\"fetched\":true,\"fetched_via\":\"webfetch\",\"fetch_url\":null},{\"id\":\"ref-1149\",\"org\":\"VDMA (Intralogistics-2X-LIF)\",\"title\":\"Layout Interchange Format (LIF) — README\",\"published\":\"2023-09\",\"url\":\"https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format\",\"type\":\"표준\",\"reliability\":\"medium\",\"accessed\":\"2026-09-30\",\"summary\":\"무인운반차 통합업체가 주행 레이아웃을 제3자 상위 관제에 넘기는 VDMA 교환 형식 1.0.0 저장소 README.\",\"fetched\":true,\"fetched_via\":\"github_raw\",\"fetch_url\":\"https://raw.githubusercontent.com/Intralogistics-2X-LIF/Layout-Interchange-Format/main/README.md\"}],\"page_proposals\":[{\"action\":\"update\",\"path\":\"docs/categories/design-and-simulation/scenario-model-and-editing.md\",\"sections\":[\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\"],\"rationale\":\"섹션 3: f23(왜 중요한가), f22(핵심 질문 답, 추정) / 섹션 4: 확률적 시나리오 언어·반증 f1, 매개변수화·카탈로그 f2, 정적 환경과 동적 내용 분리 f3·f21, 장애 주입 선언 f12, 미션 기술 형식 f17 / 섹션 5: 상업 시설 — f4(호텔, 수행 자원)·f5(공항 터미널, 제약: 군중·수동 카트), 병원 — f6(클리닉, 제약: 층간 승강기), 실외 — f7(캠퍼스, 작업 대상: WGS84 공간), 가정 — f10(일상 활동 라이브러리), 제조 공장 — f11(배터리 생산 작업 대상)·f12(장애 주입 예외·성과). 물류창고는 f18 격자 지도와 f20 레이아웃 형식뿐이고 실제 현장 사례는 찾지 못함을 명시 / 섹션 6: 확률적 언어 f1, 건물 주석 편집 f9, 월드+작업 명령 구조 f8, 미션 형식 비교 f17, 행동 트리 편집·재생 f16(벤더 주장 병기), 언어 모델 기반 환경 생성 f14·f15 / 섹션 7: ASAM OpenSCENARIO f2·f3, SDFormat f19, VDMA LIF f20, Open-RMF rmf_demos·traffic-editor f4~f9, BEHAVIOR-1K·BDDL f10, NIST ARIAC f11·f12, MovingAI MAPF f18, Arena f13·f14, Groot2 f16 / 섹션 8: f1·f10·f13·f14·f15·f17 / 섹션 9: f24(직접 범위), f25(연계 대상) / 섹션 10: f26 — 9, 11, 14, 15, 19, 22, 24, 27, 32, 34, 35, 36, 44, 54, 62, 63, 64, 65, 66 / 섹션 11: 기존 oq-131·oq-135(미해결)와 open_questions_new 4건. 다음 실행 후보: 9. 채팅으로 시나리오 구성 페이지에 f14·f15, 36. 가상 시운전·실제 상황 재현 페이지에 f12·f16 반영.\"}],\"glossary_candidates\":[{\"term_ko\":\"오픈시나리오\",\"term_en\":\"ASAM OpenSCENARIO\",\"definition\":\"ASAM 이 관리하는 주행·교통 시뮬레이션 시나리오 기술 표준으로, 여러 개체의 동기화된 기동을 XML(.xosc) 또는 DSL 로 기술하고 카탈로그·매개변수화로 시나리오를 재사용하게 한다.\"},{\"term_ko\":\"행동 영역 정의 언어\",\"term_en\":\"Behavior Domain Definition Language (BDDL)\",\"definition\":\"BEHAVIOR 벤치마크가 가정 활동을 시뮬레이션된 물리 상태와 연결된 논리 술어로 형식 명세하는 데 쓰는 도메인 특화 언어다.\"},{\"term_ko\":\"시뮬레이션 기술 형식\",\"term_en\":\"Simulation Description Format (SDFormat)\",\"definition\":\"Gazebo 에서 시작해 Open Source Robotics Foundation 이 관리하는, 로봇과 환경·물리 설정을 시뮬레이터·시각화·제어용으로 기술하는 XML 형식이다.\"},{\"term_ko\":\"반증 기반 시험\",\"term_en\":\"Falsification\",\"definition\":\"시나리오 공간을 탐색해 시스템이 명세(예: 시간 논리 요구)를 어기는 반례 시나리오를 찾아내는 시뮬레이션 기반 검증 방법이다.\"}],\"open_questions_new\":[\"환경·로봇·사람·물품·작업·정책·물리·장애를 담는 ROP 시나리오 형식을 SDFormat·Open-RMF 건물 파일·OpenSCENARIO 같은 기존 형식을 조합해 만들 것인가, 새로 정의하고 각 형식으로 내보낼 것인가? | 관련 영역: 33. 시나리오 모델·편집, 34. 시뮬레이션·예측용 디지털 트윈 | 근거: f21 | 종류: 일반\",\"형식 판이 바뀔 때 개별 시나리오 인스턴스를 옮기고 호환성을 검사하는 버전 관리 규칙을 공개한 로봇 시뮬레이션 도구나 표준이 있는가? | 관련 영역: 33. 시나리오 모델·편집, 57. 자산·소프트웨어 수명주기 관리 | 근거: f21 | 종류: 일반\",\"ARIAC 처럼 장애·긴급 요청을 시각·발생 횟수 조건으로 선언하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애까지 일반화한 시나리오 형식이 있는가? | 관련 영역: 33. 시나리오 모델·편집, 32. 예외 복구·재계획·업무 연속성 | 근거: f12 | 종류: 일반\",\"국내 아파트·병원·물류센터·호텔을 본뜬 다중 로봇 시나리오 예제 라이브러리를 공개한 기관이나 프로젝트가 있는가? | 관련 영역: 33. 시나리오 모델·편집, 65. 가정·공동주택 | 근거: f4 | 종류: 일반\"],\"open_questions_resolved\":[],\"self_check\":{\"source_count\":15,\"cross_checked_count\":0,\"unverified\":[\"f10 BDDL 이 활동을 초기 조건·목표 조건 쌍으로 정의한다는 세부 구조는 검색 요약에만 있어 claim 에 넣지 않음\",\"f1 Scenic 이 한 프로그램에서 표본 추출로 여러 장면을 만든다는 설명과 로봇 적용 사례(암석 지대)는 검색 요약에만 있어 넣지 않음\",\"f15 Holodeck 3D 자산 수(약 5만 개)는 검색 요약에만 있어 넣지 않음\",\"f13 Arena 시나리오 편집기의 끌어놓기 배치·보행자 웨이포인트 기능은 검색 요약에만 있어 넣지 않음\",\"f16 Groot2 기능은 제품 페이지뿐이며 독립 출처로 교차 확인하지 못함\",\"f2 OpenSCENARIO XML 1.4.0 명세 본문은 열지 않았고 공식 소개 페이지 기준\",\"oq-131 미해결: 플릿 실행 기록을 시나리오로 바꾸는 공개 형식은 찾지 못함(찾은 JoyAI-Sim arXiv 2606.16776 은 탁상 조작 과제 재구성이라 제외)\",\"oq-135 미해결: 시나리오 구성 시 되물을 항목의 표준 목록은 이번 조사에서 찾지 못함(검색하지 못함)\",\"물류창고 실제 현장의 시나리오 예제·템플릿 사례와 국내 자료는 찾지 못함\",\"Bourr·Tiezzi 의 BPMN→X-Klaim 변환(arXiv 2311.04126)은 철회된 논문이라 제외\",\"Moskovskaya 외 안내 로봇 LLM 시나리오 생성(arXiv 2509.10317)은 대화 행동 대본 의미의 시나리오라 제외\"],\"scope_violations\":[\"f19: SDFormat 의 로봇 기구학·센서 기술은 로봇 제조사·시뮬레이터 쪽 내용이므로 형식 참조 근거로만 쓰고 f25 에서 연계 대상으로 구분함\",\"f2·f3: OpenSCENARIO 는 자율주행 도로 시나리오 표준이므로 ROP 직접 범위가 아니라 참조 설계 사례로만 제안함\",\"f7·f12: 컨베이어·작업셀 설비 제어는 설비 쪽 연계 대상이며 시나리오에 장애를 선언하는 방식만 근거로 씀\",\"f8·f21: 시나리오는 34. 시뮬레이션·예측용 디지털 트윈이 실행할 가정한 미래의 입력이며 18. 실시간 세계 상태·데이터 일관성의 현재 상태 표현과 섞지 않음\",\"f14·f15: 언어 모델 기반 생성은 L. AI·학습 기술(44. 로봇 기반 모델·언어 모델 계획)과 9. 채팅으로 시나리오 구성에도 연결하도록 제안함\"],\"budget_used\":{\"queries\":16,\"sources\":15},\"limits\":\"web_fetch_available: true · fetch_mode full. 검색 16회/30, 신규 출처 15건/15(ref-1135~ref-1149, 예약 구간 안)로 출처 상한에 도달해 물류창고 실제 현장 시나리오와 국내 자료, oq-135 조사를 더 하지 못했다. 재사용 출처 없음: NIST ARIAC 는 공통 규칙상 ref-008 이지만 입력 참고문헌 요약에 ref-008 의 등록 URL·제목이 없어 이번에 연 개별 문서 페이지(challenges·scenario)를 새 id(ref-1139·ref-1140)로 적었다. 같은 URL 이면 퍼블리셔가 합치고, 다르면 ref-008 과의 관계를 검증에서 확인해 주기 바란다. 원문 열람: 15건 모두 열었다(webfetch 10건, github_raw 5건). 논문은 모두 초록 페이지 기준이다. VDMA LIF 지침 PDF 는 본문 추출에 실패해 공식 저장소 README 로 대신했다. 교차 확인 0건: 각 형식·사례가 한 출처에만 기술되어 있어 finding 신뢰도는 medium 이하로 두었다. Groot2 기능(f16)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문(현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가)에는 f22 로 답했고 결론은 '공개 형식은 분야별로 나뉘고 공통 표준은 없으며, 재사용은 매개변수화·표본 추출·예제 라이브러리·언어 모델 생성으로 이루어진다'는 추정이다. 현장 유형 사례는 상업 시설(f4·f5)·병원(f6)·실외(f7)·가정(f10)·제조 공장(f11·f12)이며 물류창고는 격자 지도 벤치마크(f18)와 레이아웃 교환 형식(f20)만 있고 현장 사례는 찾지 못했다. 국내 자료는 한국어 검색 2회에서 이 영역에 맞는 것을 찾지 못했다(찾은 한국지능시스템학회 시뮬레이터 리뷰는 시나리오 정의를 다루지 않아 제외). 기존 열린 질문 oq-131·oq-135 는 해결 근거가 없어 해결 제안하지 않았다. 용어집에 이미 있는 행동 트리·BPMN·HTN·레이아웃 교환 형식·가상 시운전·시나리오 재구성·미션 명세 패턴은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음.\"}}",
+  "structured_output": {
+    "run_id": "2026-09-30-12",
+    "date": "2026-09-30",
+    "run_type": "area_deep_dive",
+    "target": {
+      "area_no": 33,
+      "area_name": "33. 시나리오 모델·편집",
+      "category": "I. 설계·시뮬레이션"
+    },
+    "gaps": [
+      "섹션 3. 왜 중요한가 비어 있음",
+      "섹션 4. 핵심 개념과 용어 비어 있음 — 시나리오 기술 언어, 정적 환경과 동적 내용의 분리, 매개변수화·카탈로그, 장애 주입 선언, 반증 기반 시험 용어 없음",
+      "섹션 5. 적용 사례 (현장 유형 명시) 비어 있음 — 상업 시설(호텔·공항)·병원(클리닉)·실외(캠퍼스)·가정(가정 활동)·제조 공장(배터리 생산) 시나리오 예제와 여섯 항목 정리 없음",
+      "섹션 6. 대표 접근법과 기술 비어 있음 — 확률적 시나리오 언어, 건물 주석 편집기, 행동 트리·BPMN 같은 미션 형식, LLM 기반 환경·시나리오 생성 근거 없음",
+      "섹션 7. 관련 표준·프레임워크·오픈소스 비어 있음 — ASAM OpenSCENARIO, SDFormat, VDMA LIF, Open-RMF rmf_demos·traffic-editor, BEHAVIOR-1K·BDDL, NIST ARIAC, MovingAI MAPF 벤치마크, Groot2 위치 없음",
+      "섹션 8. 대표 연구와 자료 비어 있음",
+      "섹션 9. ROP가 직접 맡는 것과 외부와 연계하는 것 (책임 경계 기준) 비어 있음",
+      "섹션 10. 다른 연구영역과의 연결 (번호와 이름을 함께 표기) 비어 있음",
+      "섹션 11. 열린 질문 비어 있음 — 이 영역에 걸린 기존 열린 질문 oq-131·oq-135 반영 필요",
+      "프런트매터 related_areas·sources 비어 있음"
+    ],
+    "research_questions": [
+      "현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가? [분류원문]",
+      "로봇 시뮬레이션·자율 시스템 시험에서 쓰는 시나리오 기술 형식·언어는 무엇이며 환경·개체·작업·사건·장애를 어떻게 나누어 담고 판(버전)을 어떻게 관리하는가? (섹션 4·6·7 겨냥)",
+      "현장 유형별(호텔·병원·공장·가정·실외·물류창고) 시나리오 예제·템플릿 라이브러리로 공개된 것은 무엇이고 각각 무엇을 담는가? (섹션 5·7 겨냥, 한국 자료 우선)",
+      "사람이 화면에서 시나리오·워크플로·미션을 그리고 고치는 편집기와 미션 기술 형식(행동 트리·상태 기계·BPMN 등)은 무엇이며 비교 연구는 무엇을 말하는가? (섹션 6·7·8 겨냥)",
+      "언어 모델로 시뮬레이션 환경·시나리오를 자동 생성하는 연구는 무엇을 입력으로 받아 무엇을 만들고 어떻게 평가했는가? (섹션 6·8 겨냥, 9. 채팅으로 시나리오 구성과의 연결)",
+      "oq-131 플릿 관제 실행 기록을 시나리오 사양으로 바꾸는 공개 형식·변환 규칙, oq-135 시나리오 구성 시 되물어야 할 항목의 표준 목록이 있는가? (섹션 11 겨냥)",
+      "33. 시나리오 모델·편집에서 ROP가 직접 맡을 것과 시뮬레이션 엔진·로봇 제조사·설비 쪽에 맡길 것의 경계는 어디이며 어느 영역과 연결되는가? (섹션 9·10 겨냥)"
+    ],
+    "findings": [
+      {
+        "id": "f1",
+        "claim": "Vin 외의 Scenic 3.0(CAV 2023)은 자율 시스템·로봇의 환경을 모델링하는 확률적 프로그래밍 언어 Scenic 에 3차원 기하, 가림을 고려한 광선 추적 기반 가시성 판정을 갖춘 정밀 형상 모델, 선형 시간 논리(LTL)로 쓰는 시간 요구사항을 더해 반증(falsification) 기반 시험에 쓸 수 있게 했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1135"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: Scenic 3.0 은 3D 기하 지원, 박스 대신 복잡한 형상의 정밀 모델과 가림을 반영한 광선 추적 가시성, LTL 로 표현한 임의의 시간 요구를 추가했고, Scenic 2 로는 정확히 모델링할 수 없던 사례를 보였다.",
+        "as_of": "2023-07",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f2",
+        "claim": "ASAM OpenSCENARIO XML 은 주행·교통 시뮬레이터의 동적 내용(차량·보행자 등 여러 개체의 동기화된 기동)을 계층 구조의 XML 파일(.xosc)로 기술하는 표준으로, 2026-05-19 에 1.4.0 판이 나왔고, 기동·동작·궤적을 카탈로그로 묶고 시나리오 전체를 매개변수화해 시나리오 파일을 대량으로 만들지 않고도 시험을 자동화할 수 있게 한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1141"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "공식 소개: 1.4.0 판(2026-05-19), 파일 형식 xosc. \"complete scenario descriptions support parameterization, which allows test automation without the need to create a large amount of scenario files\"",
+        "as_of": "2026-05-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f3",
+        "claim": "ASAM 은 도로망은 OpenDRIVE, 노면 형상은 OpenCRG 로 따로 기술하고 OpenSCENARIO XML 은 그 위의 동적 내용만 담게 나누며, 병행 표준 OpenSCENARIO DSL 은 대규모 검증용, XML 은 예측 가능한 정밀 시나리오용으로 역할을 구분한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1141"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "공식 소개: OpenSCENARIO XML 은 도로망용 OpenDRIVE, 노면용 OpenCRG 와 함께 쓰이며, DSL 은 대규모 자율주행 검증을, XML 은 V&V 용 정밀 시나리오를 겨냥한다.",
+        "as_of": "2026-05-19",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f4",
+        "claim": "Open-RMF 의 rmf_demos 는 호텔 월드로 로비와 객실 2개 층, 승강기 2대, 여러 문, 로봇 플릿 3개(로봇 4대)가 층을 오가며 순찰(loop)·청소 작업을 하는 다중 플릿 시나리오를 예제로 제공한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1136"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: Hotel World — 로비와 객실 2개 층, 승강기 2대, 문 여러 개, 플릿 3개(로봇 4대). 작업: Loop, Clean. 실행 예: dispatch_clean -cs clean_lobby (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "상업 시설",
+        "flow_item": "수행 자원"
+      },
+      {
+        "id": "f5",
+        "claim": "rmf_demos 의 공항 터미널 월드는 차선·목적지·로봇이 많은 대형 지도에서 여러 플릿과 설비·이용자의 상호작용을 보이며, 선택적으로 군중 시뮬레이션을 켜고 사람이 직접 모는 읽기 전용(read_only) 카트를 함께 두고 순찰·배송·청소 작업을 실행한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1136"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: Airport Terminal World — 대규모 환경, 여러 플릿, use_crowdsim:=1 로 군중 시뮬레이션 추가, 수동 조작 read_only 카트. 작업: Loop, Delivery, Clean (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "상업 시설",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f6",
+        "claim": "rmf_demos 의 클리닉 월드는 승강기 2대가 있는 2개 층 시설에서 역할이 다른 로봇 플릿 2개가 층을 오가며 간호 스테이션 사이를 순찰하는 병원형 시나리오 예제다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1136"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: Clinic World — 2개 층, 승강기 2대, 역할이 다른 플릿 2개. 예: dispatch_patrol -p L1_left_nurse_center L2_right_nurse_center -n 5 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "병원",
+        "flow_item": "제약"
+      },
+      {
+        "id": "f7",
+        "claim": "rmf_demos 의 캠퍼스 월드는 차선을 GPS WGS84 좌표로 행성 규모에 주석한 넓은 캠퍼스에서 여러 배송 로봇이 장거리 순찰을 하는 실외 시나리오 예제이고, 제조·물류 월드는 컨베이어·고정 매니퓰레이터 작업셀과 여러 AMR 플릿의 연동을 영상으로만 보인다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1136"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: Campus World — WGS84 좌표의 행성 규모 데모, 배송 로봇 여러 대. Manufacturing & Logistics World — 작업셀(컨베이어, 고정 매니퓰레이터)과 AMR 플릿, 영상 기반 데모 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "실외",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f8",
+        "claim": "rmf_demos 에서 시나리오는 월드(건물 구성·차선·승강기·문·충전 위치)를 띄운 뒤 dispatch_patrol·dispatch_delivery·dispatch_clean 같은 명령으로 작업을 따로 넣는 구조이며, 디스패처가 플릿 어댑터들 사이의 작업 입찰을 조율한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1136"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 월드는 traffic editor 로 차선·웨이포인트를 정의하고 승강기·문·충전소를 건물 구성에 주석하며, 작업은 dispatch_* 명령으로 넣고 dispatcher 노드가 플릿 어댑터 간 입찰을 조율한다 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": "시작 조건"
+      },
+      {
+        "id": "f9",
+        "claim": "Open-RMF 의 traffic-editor 는 시설 지도 위에 벽·문(여닫이·미닫이·양문)·층·승강기, 최대 9개 그래프의 교통 차선, 충전·주차·대기·도킹·시뮬레이션 로봇 생성 위치 같은 웨이포인트 속성, 층 정렬용 기준점을 그려 넣는 GUI 편집기로, 결과를 .building.yaml 파일로 저장하고 building_map_generator 가 이를 물리 시뮬레이션 월드로 자동 생성한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1137"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "책 traffic-editor 장: 층별 정점·벽·차선·문·승강기·모델 배치를 담은 .building.yaml 로 저장하며 GUI 편집과 프로그램 접근을 모두 지원하고, 2D 주석에서 3D 시뮬레이션 월드를 만든다. \"Traffic conventions for multi-robot systems do not exist\" (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f10",
+        "claim": "Stanford 등의 BEHAVIOR-1K(arXiv 2403.09227, 예비판 CoRL 2022)는 '로봇이 무엇을 해 주길 바라는가' 설문으로 고른 일상 가정 활동 1,000개를 행동 영역 정의 언어(BDDL)로 형식 명세하고, 주택·정원·식당·사무실 등 장면 50개와 물리·의미 속성을 주석한 객체 9,000개 이상, 강체·변형체·액체를 다루는 OmniGibson 시뮬레이터 위에 구현한 활동 라이브러리다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1138"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: 1,000개 일상 활동, 장면 50개(주택·정원·식당·사무실 등), 객체 9,000개 이상, BDDL 로 활동 명세, OmniGibson 에서 강체·변형체·액체 시뮬레이션. 활동은 장기 과제이고 복잡한 조작 기술에 의존한다.",
+        "as_of": "2024-03",
+        "site_type": "가정",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f11",
+        "claim": "NIST ARIAC 문서의 시나리오는 전기차 배터리 생산 시설로, 배터리 셀 4개를 트레이에 담는 키팅과 셀 4개와 상하 케이스로 모듈을 조립하는 두 작업을 주문으로 받고, 우선순위가 높은 주문이 남아 있으면 경기 상태가 '주문 완료'로 바뀌지 않게 정한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1140"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ARIAC 문서 scenario: EV 배터리 생산 시설, 키트는 셀 4개를 트레이에 담은 묶음, 모듈은 셀 4개와 상하 케이스를 용접 연결한 단위. 셀 전압 허용치 ±0.2 V (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "제조 공장",
+        "flow_item": "작업 대상"
+      },
+      {
+        "id": "f12",
+        "claim": "NIST ARIAC 는 컨베이어 고장(START_TIME·DURATION), 전압 시험기 고장(시작·지속·대상 TESTER), 진공 그리퍼 파지 실패(TOOL·몇 번째 파지인지 GRASP_OCCURRENCE), 긴급 주문(START_TIME·ID) 네 가지 민첩성 과제를 매개변수로 선언해, 장애와 긴급 요청을 시각 또는 발생 횟수 조건으로 시나리오에 주입한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1139"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "ARIAC 문서 challenges: Conveyor Malfunction, Voltage Tester Malfunction, Vacuum Tool Malfunction, High Priority Order 네 과제. 컨베이어·시험기 고장은 경과 초로, 진공 그리퍼는 \"which grasp attempt will fail\" 로 발동 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": "제조 공장",
+        "flow_item": "예외·성과"
+      },
+      {
+        "id": "f13",
+        "claim": "Kästner 외의 Arena-Bench(RA-L 2022)는 동적 환경의 시나리오·월드 생성 도구와 평가 지표를 갖춘 벤치마크 모음으로, 3차원 환경에서 여러 로봇 플랫폼의 모델 기반·학습 기반 주행 계획기를 같은 시나리오로 비교하고 실물 로봇 배치까지 보였다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1142"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"a benchmark suite to train, test, and evaluate navigation planners on different robotic platforms within 3D environments\" — 동적 평가 시나리오 설계 도구와 평가 지표 포함.",
+        "as_of": "2022-06",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f14",
+        "claim": "Shcherbyna 외의 Arena 4.0(arXiv 2409.12471)은 대규모 언어 모델과 확산 모델로 텍스트 설명이나 2D 평면 배치에서 사람이 있는 주행 환경을 생성하고, 의미 주석이 달린 3D 자산 데이터베이스로 객체를 배치하며, 사용자 연구에서 이전 판보다 사용성·효율이 나아졌다고 보고했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1143"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: LLM 과 확산 모델로 텍스트나 2D 평면 배치에서 사람 중심 환경을 동적으로 생성, 의미 주석 3D 자산 DB, ROS 2 이전, 사용자 연구로 사용성·효율 개선 확인, CC BY 4.0 공개.",
+        "as_of": "2024-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f15",
+        "claim": "Yang 외의 Holodeck(CVPR 2024)은 GPT-4 가 텍스트 설명에서 평면 배치·재질·문과 창을 정하고 공간 관계 제약을 만들어 최적화로 Objaverse 3D 자산을 배치하는 방식으로 오락실·스파·박물관 같은 상호작용 가능한 환경을 자동 생성하며, 주거 장면에서 평가자가 절차적 생성 기준선보다 선호했고 사람이 만든 데이터 없이 음악실·어린이집 같은 새 장면의 주행 학습에 썼다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1144"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: AI2-THOR 기반, GPT-4 로 장면 의미와 공간 관계 제약 생성 후 최적화 배치, 주거 장면 인간 평가에서 절차적 기준선보다 선호, 음악실·어린이집 제로샷 주행.",
+        "as_of": "2023-12",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f16",
+        "claim": "행동 트리 편집기 Groot2 는 끌어놓기로 트리를 만들며 XML 을 실시간으로 미리 보고, 실행 중인 BehaviorTree.CPP 실행기에 붙어 상태를 보여 주고 전이를 로그로 기록해 속도를 바꿔 재생하며, 유료판에서 블랙보드 표시·중단점·장애 주입을 제공한다고 밝힌다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1145"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "벤더 주장: 무료판은 편집·모니터링을 노드 20개까지, PRO(연 590유로 유동 라이선스)는 블랙보드 시각화, 대화형 중단점, 장애 주입, 대형 트리 노드 검색 제공. 로그를 열어 여러 속도로 재생 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null,
+        "vendor_claim": true
+      },
+      {
+        "id": "f17",
+        "claim": "Filippone·Pettinari·Pelliccione(IEEE TSE, arXiv 2603.15427)는 단일·다중 로봇 미션 기술 형식으로 행동 트리·상태 기계·계층적 작업 네트워크(HTN)·BPMN 을 제어 구조·표현력·도구 지원 측면에서 비교하며, 미션을 명세하는 표준이나 널리 받아들여진 형식이 없고 미션은 로봇 전문가가 아닌 도메인 전문가가 정의하는 경우가 많다고 지적했다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1146"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "초록: \"there is no standard or widely accepted formalism for specifying missions in single- or multi-robot systems\" — 네 형식의 장단점을 비교해 탄력적인 미션 설계 형식 선택을 돕는다.",
+        "as_of": "2026-03",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f18",
+        "claim": "Moving AI 연구실의 MAPF 벤치마크는 도시·게임·창고형·무작위·미로·방 등 격자 지도 36개마다 출발·도착 쌍을 담은 .scen 시나리오 파일을 무작위형 25개·균등형 25개씩 두어 모두 1,800개의 시나리오 파일을 공개한 재사용 가능한 시나리오 라이브러리다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1147"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "벤치마크 페이지: 지도 36개, 지도마다 random 25·even 25 시나리오(.scen), 총 1,800개 파일. 창고 지도는 통로 배치를 격자로 추상화한 것이다 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f19",
+        "claim": "SDFormat(Simulation Description Format)은 로봇 시뮬레이터·시각화·제어용으로 로봇(기구학·동역학·센서)과 환경(조명·지형·OpenStreetMap 도로·3D 모델), 물리 설정을 기술하는 XML 형식으로, Gazebo 에서 시작했고 Open Source Robotics Foundation 이 Apache 2.0 으로 관리한다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1148"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "공식 사이트: \"an XML format that describes objects and environments for robot simulators, visualization, and control\" — 라이브러리 libsdformat 16.0.0 (발행일 미확인, 확인일 기준)",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f20",
+        "claim": "VDMA 의 레이아웃 교환 형식(LIF) 1.0.0(2023-09)은 무인운반차 통합업체가 주행 경로 레이아웃(간선·노드·스테이션)을 제3자 상위 관제 시스템에 처음 넘길 때 쓰는 비구속적 교환 형식이며, VDA 5050 인터페이스 정의의 영향을 받아 만들어졌다.",
+        "tag": "사실",
+        "source_ids": [
+          "ref-1149"
+        ],
+        "cross_checked": false,
+        "confidence": "medium",
+        "evidence_excerpt": "README: 판 1.0.0(2023-09), 목적은 \"initial transfer of a track layout to a central (third-party) master control system\", VDA5050 의 영향, 비구속적 접근이라는 면책 문구.",
+        "as_of": "2023-09",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f21",
+        "claim": "확인한 형식들은 공통으로 정적 환경(SDFormat 월드, Open-RMF .building.yaml, VDMA LIF 레이아웃, OpenDRIVE 도로망)과 동적 내용(작업 명령, OpenSCENARIO 스토리보드, ARIAC 주문·장애 과제, BDDL 활동)을 나누어 기술하며, 형식 자체의 판(OpenSCENARIO XML 1.4.0, LIF 1.0.0)은 두지만 개별 시나리오 인스턴스의 버전 관리 방식은 확인한 자료에서 찾지 못했다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1148",
+          "ref-1137",
+          "ref-1149",
+          "ref-1141",
+          "ref-1136",
+          "ref-1139",
+          "ref-1138"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f3·f8·f9·f10·f12·f19·f20 의 종합. 시나리오 인스턴스 버전 관리 규칙은 어느 출처에도 없었다.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f22",
+        "claim": "확인한 자료를 종합하면 핵심 질문(현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가)에 대해, 공개 형식은 분야별로 나뉘어(자율주행 OpenSCENARIO, 가정 활동 BDDL, 시설 다중 로봇 Open-RMF 건물 파일과 작업 명령, 제조 ARIAC 과제 설정, MAPF .scen) 환경·로봇·사람·물품·작업·정책·물리·장애를 한 형식으로 담는 공통 표준은 찾지 못했고 미션 기술에도 표준이 없으며(f17), 재사용은 매개변수화·카탈로그(f2), 확률 분포 표본 추출(f1), 현장 유형별 예제 월드(f4~f7), 대규모 활동·시나리오 라이브러리(f10·f18), 언어 모델 생성(f14·f15)으로 이루어지는 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1141",
+          "ref-1138",
+          "ref-1136",
+          "ref-1139",
+          "ref-1147",
+          "ref-1146",
+          "ref-1135",
+          "ref-1143",
+          "ref-1144"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1·f2·f4~f10·f12·f14·f15·f17·f18 의 종합 판단.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f23",
+        "claim": "확인한 자료를 종합하면 이 영역이 중요한 까닭은, 계획기·정책을 같은 조건에서 비교하려면 고정된 시나리오 파일이 있어야 하고(f13·f18), 장애·긴급 요청을 시나리오에 선언해야 예외 대응 시험을 반복할 수 있으며(f12), 매개변수화가 없으면 조건별 시나리오 파일이 불어나고(f2), 비전문가가 미션과 환경을 정의해야 하는데 공통 형식이 없기 때문이다(f17).",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1142",
+          "ref-1147",
+          "ref-1139",
+          "ref-1141",
+          "ref-1146"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f12·f13·f17·f18 의 종합 판단.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f24",
+        "claim": "확인한 자료를 종합하면 33. 시나리오 모델·편집에서 ROP가 직접 맡을 범위는 환경 참조·로봇 구성·사람 흐름·작업·정책·장애 주입을 묶은 버전 있는 시나리오 모델(f8·f12·f21), 현장 유형별 예제 라이브러리(f4~f7), 시설 주석·작업·미션을 그리는 편집기와 미션 형식 선택(f9·f16·f17), 시나리오를 여러 시뮬레이터 형식으로 내보내는 변환(f9·f19)으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1136",
+          "ref-1139",
+          "ref-1137",
+          "ref-1145",
+          "ref-1146",
+          "ref-1148"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f4~f9·f12·f16·f17·f19·f21 의 종합 판단.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f25",
+        "claim": "연계 대상: 분류 원문 19장 기준으로 물리·센서 시뮬레이션 엔진과 로봇 기구학·센서 모델(SDFormat 로봇 기술, f19)은 시뮬레이터·로봇 제조사 쪽에, 컨베이어·작업셀 같은 설비 제어(f7·f12)는 설비 쪽에, 도로 교통 시나리오 표준(f2·f3)은 자율주행 분야에 속하므로, ROP 는 이들을 참조·변환해 시나리오에 묶는 역할을 맡을 것으로 보인다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1148",
+          "ref-1136",
+          "ref-1139",
+          "ref-1141"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f2·f3·f7·f12·f19 와 분류 원문 19장 경계의 종합 판단.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      },
+      {
+        "id": "f26",
+        "claim": "이 영역은 시나리오를 대화로 만드는 9. 채팅으로 시나리오 구성(f14·f15)과 11. 채팅으로 실제 상황 시뮬레이션 재현, 시나리오를 실행하는 34. 시뮬레이션·예측용 디지털 트윈(f19), 기록 재생·재현의 36. 가상 시운전·실제 상황 재현(f16), 규모 산정의 35. 처리능력·규모·배치 설계, 건물·레이아웃 주석의 14. 도면·BIM에서 지도 만들기·15. 지도·공간·위치 모델(f9·f20), 군중·보행자의 19. 사람·보행자 모델(f5·f14), 승강기 연동의 22. 설비·건물 시스템 연동(f4·f6), 미션 형식의 24. 작업·워크플로 모델링(f17), 장애 주입의 32. 예외 복구·재계획·업무 연속성(f12), 경로 시나리오의 27. 다중 로봇 경로·교통 관리 — MAPF(f18), 언어 모델 생성의 44. 로봇 기반 모델·언어 모델 계획(f15), 벤치마크의 54. 시험·형식 검증·벤치마크(f1·f13·f18), 적용 현장인 62. 제조 공장(f11·f12)·63. 병원·의료(f6)·64. 상업 시설(f4·f5)·65. 가정·공동주택(f10)·66. 실외(f7)와 이어진다.",
+        "tag": "추정",
+        "source_ids": [
+          "ref-1143",
+          "ref-1144",
+          "ref-1148",
+          "ref-1145",
+          "ref-1137",
+          "ref-1149",
+          "ref-1136",
+          "ref-1146",
+          "ref-1139",
+          "ref-1147",
+          "ref-1135",
+          "ref-1142",
+          "ref-1140",
+          "ref-1138"
+        ],
+        "cross_checked": false,
+        "confidence": "low",
+        "evidence_excerpt": "f1~f20 의 연결 판단.",
+        "as_of": "2026-09-30",
+        "site_type": null,
+        "flow_item": null
+      }
+    ],
+    "sources": [
+      {
+        "id": "ref-1135",
+        "org": "Vin, E., Kashiwa, S., Rhea, M., Fremont, D. J., Kim, E., Dreossi, T., Ghosh, S., Yue, X., Sangiovanni-Vincentelli, A. L., & Seshia, S. A. (CAV 2023, arXiv)",
+        "title": "3D Environment Modeling for Falsification and Beyond with Scenic 3.0",
+        "published": "2023-07",
+        "url": "https://arxiv.org/abs/2307.03325",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "확률적 시나리오 언어 Scenic 의 3.0 판. 3D 기하, 가림 고려 가시성, LTL 시간 요구를 더해 반증 기반 시험에 쓴다(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1136",
+        "org": "Open-RMF (open-rmf/rmf_demos)",
+        "title": "rmf_demos — README",
+        "published": null,
+        "url": "https://github.com/open-rmf/rmf_demos",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "호텔·사무실·공항 터미널·클리닉·캠퍼스·제조·물류 데모 월드와 작업 명령(dispatch_*)으로 구성된 Open-RMF 예제 시나리오 모음.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/open-rmf/rmf_demos/main/README.md"
+      },
+      {
+        "id": "ref-1137",
+        "org": "Open Robotics (osrf/ros2multirobotbook)",
+        "title": "Programming Multiple Robots with ROS 2 — Traffic Editor",
+        "published": null,
+        "url": "https://osrf.github.io/ros2multirobotbook/traffic-editor.html",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "시설 지도에 벽·문·승강기·차선·웨이포인트 속성을 주석해 .building.yaml 로 저장하고 시뮬레이션 월드를 생성하는 GUI 편집기 설명.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/osrf/ros2multirobotbook/master/src/traffic-editor.md"
+      },
+      {
+        "id": "ref-1138",
+        "org": "Li, C., Zhang, R., Wong, J. 외 (Stanford, arXiv)",
+        "title": "BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation",
+        "published": "2024-03",
+        "url": "https://arxiv.org/abs/2403.09227",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "BDDL 로 명세한 일상 가정 활동 1,000개, 장면 50개, 객체 9,000개 이상을 OmniGibson 에 구현한 벤치마크(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1139",
+        "org": "NIST (usnistgov/ARIAC_docs)",
+        "title": "ARIAC Documentation — Challenges",
+        "published": null,
+        "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/challenges.html",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "컨베이어·전압 시험기·진공 그리퍼 고장과 긴급 주문의 네 민첩성 과제와 발동 매개변수 설명.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/challenges.rst"
+      },
+      {
+        "id": "ref-1140",
+        "org": "NIST (usnistgov/ARIAC_docs)",
+        "title": "ARIAC Documentation — Scenario",
+        "published": null,
+        "url": "https://pages.nist.gov/ARIAC_docs/en/latest/pages/scenario.html",
+        "type": "정부·연구기관",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "전기차 배터리 생산 시설 시나리오의 키팅·모듈 조립 작업, 주문과 우선순위, 품질 허용치 설명.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/usnistgov/ARIAC_docs/main/docs/pages/scenario.rst"
+      },
+      {
+        "id": "ref-1141",
+        "org": "ASAM e.V.",
+        "title": "ASAM OpenSCENARIO® XML",
+        "published": null,
+        "url": "https://www.asam.net/standards/detail/openscenario-xml/",
+        "type": "표준",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "주행·교통 시뮬레이터의 동적 내용을 기술하는 XML 표준의 공식 소개. 1.4.0 판(2026-05-19), 카탈로그·매개변수화, OpenDRIVE·DSL 과의 관계.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1142",
+        "org": "Kästner, L., Bhuiyan, T., Le, T. A. 외 (RA-L 2022, arXiv)",
+        "title": "Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments",
+        "published": "2022-06",
+        "url": "https://arxiv.org/abs/2206.05728",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "동적 환경 시나리오·월드 생성 도구와 평가 지표로 주행 계획기를 비교하는 벤치마크 모음(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1143",
+        "org": "Shcherbyna, V. 외 (arXiv)",
+        "title": "Arena 4.0: A Comprehensive ROS2 Development and Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation",
+        "published": "2024-09",
+        "url": "https://arxiv.org/abs/2409.12471",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "LLM·확산 모델로 텍스트·2D 평면 배치에서 사람 중심 주행 환경을 생성하는 ROS 2 플랫폼(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1144",
+        "org": "Yang, Y., Sun, F.-Y., Weihs, L. 외 (CVPR 2024, arXiv)",
+        "title": "Holodeck: Language Guided Generation of 3D Embodied AI Environments",
+        "published": "2023-12",
+        "url": "https://arxiv.org/abs/2312.09067",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "GPT-4 와 공간 관계 제약 최적화로 텍스트에서 상호작용 가능한 3D 환경을 생성(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1145",
+        "org": "BehaviorTree.CPP 프로젝트 (behaviortree.dev)",
+        "title": "Groot2",
+        "published": null,
+        "url": "https://www.behaviortree.dev/groot/",
+        "type": "벤더 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "행동 트리 편집·모니터링·로그 재생 도구 Groot2 의 기능과 무료·PRO 판 차이를 소개하는 제품 페이지.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1146",
+        "org": "Filippone, G., Pettinari, S., & Pelliccione, P. (IEEE TSE, arXiv)",
+        "title": "Formalisms for Robotic Mission Specification and Execution: A Comparative Analysis",
+        "published": "2026-03",
+        "url": "https://arxiv.org/abs/2603.15427",
+        "type": "논문",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "행동 트리·상태 기계·HTN·BPMN 을 미션 기술 형식으로 비교한 연구(초록 기준).",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1147",
+        "org": "Moving AI Lab (Sturtevant 외)",
+        "title": "MAPF Benchmarks",
+        "published": null,
+        "url": "https://movingai.com/benchmarks/mapf/index.html",
+        "type": "오픈소스 문서",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "격자 지도 36개와 지도당 .scen 시나리오 50개를 공개한 다중 에이전트 경로 찾기 벤치마크.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1148",
+        "org": "Open Source Robotics Foundation",
+        "title": "SDFormat (Simulation Description Format)",
+        "published": null,
+        "url": "http://sdformat.org/",
+        "type": "오픈소스 문서",
+        "reliability": "high",
+        "accessed": "2026-09-30",
+        "summary": "로봇 시뮬레이터·시각화·제어용으로 로봇과 환경을 기술하는 XML 형식의 공식 사이트.",
+        "fetched": true,
+        "fetched_via": "webfetch",
+        "fetch_url": null
+      },
+      {
+        "id": "ref-1149",
+        "org": "VDMA (Intralogistics-2X-LIF)",
+        "title": "Layout Interchange Format (LIF) — README",
+        "published": "2023-09",
+        "url": "https://github.com/Intralogistics-2X-LIF/Layout-Interchange-Format",
+        "type": "표준",
+        "reliability": "medium",
+        "accessed": "2026-09-30",
+        "summary": "무인운반차 통합업체가 주행 레이아웃을 제3자 상위 관제에 넘기는 VDMA 교환 형식 1.0.0 저장소 README.",
+        "fetched": true,
+        "fetched_via": "github_raw",
+        "fetch_url": "https://raw.githubusercontent.com/Intralogistics-2X-LIF/Layout-Interchange-Format/main/README.md"
+      }
+    ],
+    "page_proposals": [
+      {
+        "action": "update",
+        "path": "docs/categories/design-and-simulation/scenario-model-and-editing.md",
+        "sections": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "rationale": "섹션 3: f23(왜 중요한가), f22(핵심 질문 답, 추정) / 섹션 4: 확률적 시나리오 언어·반증 f1, 매개변수화·카탈로그 f2, 정적 환경과 동적 내용 분리 f3·f21, 장애 주입 선언 f12, 미션 기술 형식 f17 / 섹션 5: 상업 시설 — f4(호텔, 수행 자원)·f5(공항 터미널, 제약: 군중·수동 카트), 병원 — f6(클리닉, 제약: 층간 승강기), 실외 — f7(캠퍼스, 작업 대상: WGS84 공간), 가정 — f10(일상 활동 라이브러리), 제조 공장 — f11(배터리 생산 작업 대상)·f12(장애 주입 예외·성과). 물류창고는 f18 격자 지도와 f20 레이아웃 형식뿐이고 실제 현장 사례는 찾지 못함을 명시 / 섹션 6: 확률적 언어 f1, 건물 주석 편집 f9, 월드+작업 명령 구조 f8, 미션 형식 비교 f17, 행동 트리 편집·재생 f16(벤더 주장 병기), 언어 모델 기반 환경 생성 f14·f15 / 섹션 7: ASAM OpenSCENARIO f2·f3, SDFormat f19, VDMA LIF f20, Open-RMF rmf_demos·traffic-editor f4~f9, BEHAVIOR-1K·BDDL f10, NIST ARIAC f11·f12, MovingAI MAPF f18, Arena f13·f14, Groot2 f16 / 섹션 8: f1·f10·f13·f14·f15·f17 / 섹션 9: f24(직접 범위), f25(연계 대상) / 섹션 10: f26 — 9, 11, 14, 15, 19, 22, 24, 27, 32, 34, 35, 36, 44, 54, 62, 63, 64, 65, 66 / 섹션 11: 기존 oq-131·oq-135(미해결)와 open_questions_new 4건. 다음 실행 후보: 9. 채팅으로 시나리오 구성 페이지에 f14·f15, 36. 가상 시운전·실제 상황 재현 페이지에 f12·f16 반영."
+      }
+    ],
+    "glossary_candidates": [
+      {
+        "term_ko": "오픈시나리오",
+        "term_en": "ASAM OpenSCENARIO",
+        "definition": "ASAM 이 관리하는 주행·교통 시뮬레이션 시나리오 기술 표준으로, 여러 개체의 동기화된 기동을 XML(.xosc) 또는 DSL 로 기술하고 카탈로그·매개변수화로 시나리오를 재사용하게 한다."
+      },
+      {
+        "term_ko": "행동 영역 정의 언어",
+        "term_en": "Behavior Domain Definition Language (BDDL)",
+        "definition": "BEHAVIOR 벤치마크가 가정 활동을 시뮬레이션된 물리 상태와 연결된 논리 술어로 형식 명세하는 데 쓰는 도메인 특화 언어다."
+      },
+      {
+        "term_ko": "시뮬레이션 기술 형식",
+        "term_en": "Simulation Description Format (SDFormat)",
+        "definition": "Gazebo 에서 시작해 Open Source Robotics Foundation 이 관리하는, 로봇과 환경·물리 설정을 시뮬레이터·시각화·제어용으로 기술하는 XML 형식이다."
+      },
+      {
+        "term_ko": "반증 기반 시험",
+        "term_en": "Falsification",
+        "definition": "시나리오 공간을 탐색해 시스템이 명세(예: 시간 논리 요구)를 어기는 반례 시나리오를 찾아내는 시뮬레이션 기반 검증 방법이다."
+      }
+    ],
+    "open_questions_new": [
+      "환경·로봇·사람·물품·작업·정책·물리·장애를 담는 ROP 시나리오 형식을 SDFormat·Open-RMF 건물 파일·OpenSCENARIO 같은 기존 형식을 조합해 만들 것인가, 새로 정의하고 각 형식으로 내보낼 것인가? | 관련 영역: 33. 시나리오 모델·편집, 34. 시뮬레이션·예측용 디지털 트윈 | 근거: f21 | 종류: 일반",
+      "형식 판이 바뀔 때 개별 시나리오 인스턴스를 옮기고 호환성을 검사하는 버전 관리 규칙을 공개한 로봇 시뮬레이션 도구나 표준이 있는가? | 관련 영역: 33. 시나리오 모델·편집, 57. 자산·소프트웨어 수명주기 관리 | 근거: f21 | 종류: 일반",
+      "ARIAC 처럼 장애·긴급 요청을 시각·발생 횟수 조건으로 선언하는 방식을 여러 제조사 로봇 플릿과 승강기·문 같은 설비 장애까지 일반화한 시나리오 형식이 있는가? | 관련 영역: 33. 시나리오 모델·편집, 32. 예외 복구·재계획·업무 연속성 | 근거: f12 | 종류: 일반",
+      "국내 아파트·병원·물류센터·호텔을 본뜬 다중 로봇 시나리오 예제 라이브러리를 공개한 기관이나 프로젝트가 있는가? | 관련 영역: 33. 시나리오 모델·편집, 65. 가정·공동주택 | 근거: f4 | 종류: 일반"
+    ],
+    "open_questions_resolved": [],
+    "self_check": {
+      "source_count": 15,
+      "cross_checked_count": 0,
+      "unverified": [
+        "f10 BDDL 이 활동을 초기 조건·목표 조건 쌍으로 정의한다는 세부 구조는 검색 요약에만 있어 claim 에 넣지 않음",
+        "f1 Scenic 이 한 프로그램에서 표본 추출로 여러 장면을 만든다는 설명과 로봇 적용 사례(암석 지대)는 검색 요약에만 있어 넣지 않음",
+        "f15 Holodeck 3D 자산 수(약 5만 개)는 검색 요약에만 있어 넣지 않음",
+        "f13 Arena 시나리오 편집기의 끌어놓기 배치·보행자 웨이포인트 기능은 검색 요약에만 있어 넣지 않음",
+        "f16 Groot2 기능은 제품 페이지뿐이며 독립 출처로 교차 확인하지 못함",
+        "f2 OpenSCENARIO XML 1.4.0 명세 본문은 열지 않았고 공식 소개 페이지 기준",
+        "oq-131 미해결: 플릿 실행 기록을 시나리오로 바꾸는 공개 형식은 찾지 못함(찾은 JoyAI-Sim arXiv 2606.16776 은 탁상 조작 과제 재구성이라 제외)",
+        "oq-135 미해결: 시나리오 구성 시 되물을 항목의 표준 목록은 이번 조사에서 찾지 못함(검색하지 못함)",
+        "물류창고 실제 현장의 시나리오 예제·템플릿 사례와 국내 자료는 찾지 못함",
+        "Bourr·Tiezzi 의 BPMN→X-Klaim 변환(arXiv 2311.04126)은 철회된 논문이라 제외",
+        "Moskovskaya 외 안내 로봇 LLM 시나리오 생성(arXiv 2509.10317)은 대화 행동 대본 의미의 시나리오라 제외"
+      ],
+      "scope_violations": [
+        "f19: SDFormat 의 로봇 기구학·센서 기술은 로봇 제조사·시뮬레이터 쪽 내용이므로 형식 참조 근거로만 쓰고 f25 에서 연계 대상으로 구분함",
+        "f2·f3: OpenSCENARIO 는 자율주행 도로 시나리오 표준이므로 ROP 직접 범위가 아니라 참조 설계 사례로만 제안함",
+        "f7·f12: 컨베이어·작업셀 설비 제어는 설비 쪽 연계 대상이며 시나리오에 장애를 선언하는 방식만 근거로 씀",
+        "f8·f21: 시나리오는 34. 시뮬레이션·예측용 디지털 트윈이 실행할 가정한 미래의 입력이며 18. 실시간 세계 상태·데이터 일관성의 현재 상태 표현과 섞지 않음",
+        "f14·f15: 언어 모델 기반 생성은 L. AI·학습 기술(44. 로봇 기반 모델·언어 모델 계획)과 9. 채팅으로 시나리오 구성에도 연결하도록 제안함"
+      ],
+      "budget_used": {
+        "queries": 16,
+        "sources": 15
+      },
+      "limits": "web_fetch_available: true · fetch_mode full. 검색 16회/30, 신규 출처 15건/15(ref-1135~ref-1149, 예약 구간 안)로 출처 상한에 도달해 물류창고 실제 현장 시나리오와 국내 자료, oq-135 조사를 더 하지 못했다. 재사용 출처 없음: NIST ARIAC 는 공통 규칙상 ref-008 이지만 입력 참고문헌 요약에 ref-008 의 등록 URL·제목이 없어 이번에 연 개별 문서 페이지(challenges·scenario)를 새 id(ref-1139·ref-1140)로 적었다. 같은 URL 이면 퍼블리셔가 합치고, 다르면 ref-008 과의 관계를 검증에서 확인해 주기 바란다. 원문 열람: 15건 모두 열었다(webfetch 10건, github_raw 5건). 논문은 모두 초록 페이지 기준이다. VDMA LIF 지침 PDF 는 본문 추출에 실패해 공식 저장소 README 로 대신했다. 교차 확인 0건: 각 형식·사례가 한 출처에만 기술되어 있어 finding 신뢰도는 medium 이하로 두었다. Groot2 기능(f16)은 vendor_claim: true·태그 추정·'벤더 주장: ' 첫머리로 냈다. 분류 원문 핵심 질문(현장·로봇·사람·작업을 담은 시나리오를 어떻게 표현하고 다시 쓸 것인가)에는 f22 로 답했고 결론은 '공개 형식은 분야별로 나뉘고 공통 표준은 없으며, 재사용은 매개변수화·표본 추출·예제 라이브러리·언어 모델 생성으로 이루어진다'는 추정이다. 현장 유형 사례는 상업 시설(f4·f5)·병원(f6)·실외(f7)·가정(f10)·제조 공장(f11·f12)이며 물류창고는 격자 지도 벤치마크(f18)와 레이아웃 교환 형식(f20)만 있고 현장 사례는 찾지 못했다. 국내 자료는 한국어 검색 2회에서 이 영역에 맞는 것을 찾지 못했다(찾은 한국지능시스템학회 시뮬레이터 리뷰는 시나리오 정의를 다루지 않아 제외). 기존 열린 질문 oq-131·oq-135 는 해결 근거가 없어 해결 제안하지 않았다. 용어집에 이미 있는 행동 트리·BPMN·HTN·레이아웃 교환 형식·가상 시운전·시나리오 재구성·미션 명세 패턴은 후보로 내지 않았다. 입력 누락 없음. 정정 요청 없음. 우선 지정 질문 없음."
+    }
+  },
+  "ttft_ms": 14799,
+  "type": "result",
+  "duration_ms": 418819,
+  "uuid": "9746d199-0a56-4484-95f6-38cc099134b9",
+  "ttft_stream_ms": 908,
+  "time_to_request_ms": 103,
+  "time_to_request_phases_ms": {
+    "other": 37,
+    "system_prompt": 32,
+    "turn_start_resume": 0,
+    "process_user_input": 15,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "tool_schema_build": 5,
+    "message_normalization": 1,
+    "client_creation": 5
+  },
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 53,
+  "time_to_request_cpu_ms": 145,
+  "time_to_request_major_faults": 0,
+  "first_content_frame_ms": 909,
+  "time_to_request_from_spawn_ms": 513102,
+  "warm_spare_claimed": false,
+  "time_origin_ms": 1790741813946.148,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 420.1
+}
