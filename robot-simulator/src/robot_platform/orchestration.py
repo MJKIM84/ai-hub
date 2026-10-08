@@ -231,8 +231,26 @@ class Orchestrator:
             disks.append((peer['pose']['x'],peer['pose']['y'],radius(robot)+radius(self.robots[rid])+self.policy.safety_distance))
         start=obs['pose']
         inside=[disk for disk in disks if math.hypot(start['x']-disk[0],start['y']-disk[1])<disk[2]]
+        # Local routes need tracking room in addition to the required peer
+        # clearance. Their waypoints use a tighter arrival tolerance below;
+        # otherwise accepting a nearby grid corner can cut through the disk.
+        planning_disks=[(x,y,r+.12) for x,y,r in disks]
         if not inside:
-            return self.planner.path(start,target,floor_id,robot,peer_disks=disks)
+            route=self.planner.path(start,target,floor_id,robot,peer_disks=planning_disks)
+            if route is not None:return route
+            # An approved route may already be inside the extra tracking
+            # buffer while still outside every required rotation envelope.
+            # Turning there is safe; move outward through checked free space
+            # before requesting the buffered route. Never reduce a peer disk.
+            for x,y,r in planning_disks:
+                distance=math.hypot(start['x']-x,start['y']-y)
+                if distance>=r or distance<=0:continue
+                escape=dict(start,x=x+(start['x']-x)/distance*(r+.2),
+                    y=y+(start['y']-y)/distance*(r+.2))
+                if not self.planner.path_clear(start,[escape],floor_id,robot,peer_disks=disks):continue
+                onward=self.planner.path(escape,target,floor_id,robot,peer_disks=planning_disks)
+                if onward is not None:return [escape,*onward]
+            return None
         outside=[disk for disk in disks if disk not in inside]
         # Circle envelopes include in-place rotation; leave a margin larger
         # than waypoint arrival tolerance before turning back toward the goal.
@@ -252,7 +270,7 @@ class Orchestrator:
             escape=dict(x=start['x']+dx,y=start['y']+dy,z=start['z'],yaw=start['yaw'])
             if not self.planner.path_clear(start,[escape],floor_id,robot):continue
             if not path_clear_of_disks(start,[escape],outside):continue
-            onward=self.planner.path(escape,target,floor_id,robot,peer_disks=disks)
+            onward=self.planner.path(escape,target,floor_id,robot,peer_disks=planning_disks)
             if onward is not None:return [escape,*onward]
         return None
 
@@ -375,7 +393,7 @@ class Orchestrator:
             score,rid,route,trip=min(candidates,key=lambda c:(c[0],c[1]))
             if task.item_id:self.reservations.request("item:"+task.item_id,rid)
             record.update(status="running",robot_id=rid,started_at=time,reason=f"{self.policy.assignment} 정책 · 점수 {score:.2f}",progress_at=time)
-            self.robot_states[rid].update(status="manipulating" if task.kind=="manipulate" else "working",task_id=task.id,path=route,reason=record["reason"],peer_replans={})
+            self.robot_states[rid].update(status="manipulating" if task.kind=="manipulate" else "working",task_id=task.id,path=route,reason=record["reason"],peer_replans={},peer_route=False)
             self.robot_states[rid]["command_epoch"]+=1
             if trip:
                 receipt=self.facilities.request(trip["elevator_id"],rid,trip["source_floor"],trip["dest_floor"],trip["mass"],trip["envelope"])
@@ -400,7 +418,7 @@ class Orchestrator:
             if facility_command is not None:
                 commands[rid]=facility_command;continue
             path=state["path"]
-            tolerance=ARRIVAL_TOLERANCE_M if robot.model_id=='agv' else .22
+            tolerance=ARRIVAL_TOLERANCE_M if robot.model_id=='agv' else .06 if state.get('peer_route') else .22
             if robot.model_id=='agv':
                 stamp=obs.get('sampled_at')
                 if (not isinstance(stamp,(int,float)) or not math.isfinite(stamp) or stamp>time+1e-9
@@ -478,7 +496,8 @@ class Orchestrator:
                 trip=state.get("trip")
                 target=trip["staging"] if trip else record["spec"].destination.model_dump()
                 floor=trip["source_floor"] if trip else record["spec"].floor_id
-                new=self._route(robot,obs,target,floor)
+                new=(self._peer_detour(robot,obs,target,floor,observations,time)
+                     if state.get('peer_route') else self._route(robot,obs,target,floor))
                 if new is not None:
                     state["path"]=path=new;record["progress_at"]=time
                     self.emit("replan",rid,"장시간 진행 정체로 경로 재계획",{})
@@ -493,7 +512,13 @@ class Orchestrator:
                 distance=math.hypot(other["pose"]["x"]-obs["pose"]["x"],other["pose"]["y"]-obs["pose"]["y"])
                 ahead=dx*(other["pose"]["x"]-obs["pose"]["x"])+dy*(other["pose"]["y"]-obs["pose"]["y"])>0
                 other_state=self.robot_states[other_id]
-                if ahead and distance<radius(robot)+radius(self.robots[other_id])+self.policy.safety_distance:
+                clearance=radius(robot)+radius(self.robots[other_id])+self.policy.safety_distance
+                # Detect an occupied next leg before driving inside the peer's
+                # rotation envelope. A center-distance-only stop happens too
+                # late to safely turn away from a stationary handoff arm.
+                occupied_leg=not path_clear_of_disks(obs['pose'],[path[0]],
+                    [(other['pose']['x'],other['pose']['y'],clearance)])
+                if ahead and (distance<clearance or occupied_leg):
                     def rank(robot_id,robot_state):
                         assignment=self.tasks.get(robot_state["task_id"])
                         started=assignment["started_at"] if assignment else robot_state["last_command"].get("requested_at",time)
@@ -514,7 +539,7 @@ class Orchestrator:
                     floor=trip['source_floor'] if trip else record['spec'].floor_id
                     alternate=self._peer_detour(robot,obs,target,floor,observations,time)
                     if alternate is not None:
-                        state['path']=alternate;record['progress_at']=time
+                        state['path']=alternate;state['peer_route']=True;record['progress_at']=time
                         self.emit('peer_detour',rid,'관측된 로봇 점유를 피해 승인된 목적지로 국소 재계획',
                             {'task_id':record['id'],'blocking_robot':wait,'attempt':attempt['count']+1,'path':deepcopy(alternate),'sampled_at':obs['sampled_at']})
                 elif record and attempt['count']>=3:
@@ -527,6 +552,7 @@ class Orchestrator:
                     state["reason"]="거리 센서의 전방 장애물 관측으로 제동";continue
             state["reason"]="관측 기반 경로 추종"
             if robot.model_id=='agv':speed=min(speed,math.hypot(dx,dy)*.8)
+            elif state.get('peer_route'):speed=min(speed,math.hypot(dx,dy)*1.8)
             turn_limit=.12 if robot.model_id=='agv' else .65
             commands[rid]=dict(v=speed*max(0,math.cos(turn)) if abs(turn)<turn_limit else 0.,w=max(-.65,min(.65,turn*1.8)),mode="walk" if robot.model_id=="spot" else "drive")
         # Every base-motion branch (including charging, facilities and peers)

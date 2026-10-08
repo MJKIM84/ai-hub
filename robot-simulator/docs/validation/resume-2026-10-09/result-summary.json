@@ -1,0 +1,2731 @@
+{
+  "run_id": "55ff62f210954349b32e2d78afccabf9",
+  "status": "completed",
+  "sim_seconds": 282.93200000062285,
+  "source_unchanged": true,
+  "tasks": [
+    {
+      "id": "delivery",
+      "name": "AMR A · 입고 상차 → 공용 작업대 인계",
+      "status": "completed",
+      "started_at": 0.20000000000000015,
+      "completed_at": 83.91999999998582,
+      "reason": "물리적 인계·최종 배치·양측 접촉 해제 확인"
+    },
+    {
+      "id": "return-delivery",
+      "name": "AMR B · 작업대 인수 → 출고 운반·하차",
+      "status": "completed",
+      "started_at": 196.40000000020967,
+      "completed_at": 282.93000000062284,
+      "reason": "물리적 인계·최종 배치·양측 접촉 해제 확인"
+    },
+    {
+      "id": "spot-patrol",
+      "name": "Spot 입고 선반 순찰 · 이동·도착",
+      "status": "completed",
+      "started_at": 0.20000000000000015,
+      "completed_at": 76.40000000000335,
+      "reason": "목표 관측 도달 및 정지 확인"
+    },
+    {
+      "id": "inbound-depart",
+      "name": "AMR A · 팔 작업 반경 밖으로 직선 이탈",
+      "status": "completed",
+      "started_at": 83.99999999998563,
+      "completed_at": 103.59999999993995,
+      "reason": "목표 관측 도달 및 정지 확인"
+    },
+    {
+      "id": "inbound-clear",
+      "name": "AMR A · 인계 완료 후 입고 구역 복귀",
+      "status": "completed",
+      "started_at": 103.79999999993949,
+      "completed_at": 177.200000000118,
+      "reason": "목표 관측 도달 및 정지 확인"
+    },
+    {
+      "id": "outbound-approach",
+      "name": "AMR B · A 복귀 확인 후 공용 작업대 접근",
+      "status": "completed",
+      "started_at": 177.40000000011895,
+      "completed_at": 196.20000000020872,
+      "reason": "목표 관측 도달 및 정지 확인"
+    },
+    {
+      "id": "spot-return",
+      "name": "Spot 순찰 복귀 · 이동·도착",
+      "status": "completed",
+      "started_at": 76.60000000000288,
+      "completed_at": 142.19999999995088,
+      "reason": "목표 관측 도달 및 정지 확인"
+    }
+  ],
+  "contacts": 18,
+  "near_misses": 6,
+  "contact_pairs": {
+    "box / donor": 1,
+    "box / cart": 8,
+    "box / receiver": 2,
+    "box / outbound-cart": 6,
+    "box / final-arm": 1
+  },
+  "near_events": [
+    {
+      "seq": 123,
+      "time": 20.379999999999583,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "donor",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "cart",
+        "clearance_m": 0.0008906622047096802,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    },
+    {
+      "seq": 349,
+      "time": 56.180000000022694,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "cart",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "receiver",
+        "clearance_m": 0.24992364493601893,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    },
+    {
+      "seq": 476,
+      "time": 88.49999999997515,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "cart",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "receiver",
+        "clearance_m": 0.00417231492800052,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    },
+    {
+      "seq": 1962,
+      "time": 206.35000000025718,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "receiver",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "outbound-cart",
+        "clearance_m": 0.24956155938150226,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    },
+    {
+      "seq": 2229,
+      "time": 245.71000000044512,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "receiver",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "outbound-cart",
+        "clearance_m": 0.0005050299632965993,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    },
+    {
+      "seq": 2268,
+      "time": 254.11000000048523,
+      "kind": "near_miss",
+      "severity": "warning",
+      "entity_id": "final-arm",
+      "message": "동작 공간 사이 안전 여유 부족",
+      "details": {
+        "other": "outbound-cart",
+        "clearance_m": 0.2497691829748886,
+        "requested_clearance_m": 0.25,
+        "basis": "circumscribed planar motion envelopes"
+      }
+    }
+  ],
+  "loaded": [
+    {
+      "seq": 103,
+      "time": 15.120000000001719,
+      "kind": "cooperation_loaded",
+      "severity": "info",
+      "entity_id": "cart",
+      "message": "물품 지지·해제·상차 팔 후퇴 확인 후 운반차 소유 이전",
+      "details": {
+        "task_id": "delivery",
+        "proof": {
+          "task_id": "delivery",
+          "donor_id": "donor",
+          "carrier_id": "cart",
+          "item_id": "box",
+          "target": [
+            1.9,
+            3.55,
+            0.6599580299828572
+          ],
+          "opening": 0.1,
+          "payload_estimate": 0.0,
+          "hold": true,
+          "release_settle": false,
+          "status": "completed",
+          "phase": "loaded",
+          "code": "loading_verified",
+          "reason": "최종 지지·물품 안정·그리퍼 해제·후퇴를 관측했습니다",
+          "report": {
+            "task_id": "delivery",
+            "donor_id": "donor",
+            "carrier_id": "cart",
+            "item_id": "box",
+            "state": "loaded",
+            "sampled_at": 15.050000000001695
+          },
+          "evidence": {
+            "source": "observations",
+            "workflow_version": "observed-donor-carrier-loading-0.3",
+            "events": [
+              {
+                "event": "source_confirmed",
+                "sampled_at": 0.10000000000000007,
+                "phase": "await_source"
+              },
+              {
+                "event": "donor_grip_verified",
+                "sampled_at": 4.949999999999677,
+                "phase": "lift"
+              },
+              {
+                "event": "carrier_load_released",
+                "sampled_at": 13.050000000001027,
+                "phase": "retreat"
+              },
+              {
+                "event": "loading_verified",
+                "sampled_at": 15.050000000001695,
+                "phase": "loaded"
+              }
+            ],
+            "task_id": "delivery",
+            "item_id": "box",
+            "donor_id": "donor",
+            "carrier_id": "cart",
+            "donor_grip": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "delivery",
+              "item_id": "box",
+              "donor_id": "donor",
+              "carrier_id": "cart",
+              "donor_sampled_at": 11.700000000000577,
+              "carrier_sampled_at": 11.700000000000577,
+              "sampled_at": 11.700000000000577,
+              "confirmed_at": 11.700000000000577,
+              "robot_id": "donor",
+              "bilateral_contact": true,
+              "finger_contacts": [
+                "left",
+                "right"
+              ],
+              "lifted": true,
+              "lift_height_m": 0.40005669997396015,
+              "minimum_lift_height_m": 0.08,
+              "item_speed_m_s": 1.759341596346168e-05,
+              "maximum_item_speed_m_s": 0.035,
+              "tool_error_m": 0.006704381823132542,
+              "maximum_tool_error_m": 0.02,
+              "stable_since": 8.899999999999642,
+              "stable_duration_s": 2.800000000000935,
+              "minimum_stable_duration_s": 0.3,
+              "source_item_position": [
+                1.9,
+                3.55,
+                0.059857598385611256
+              ],
+              "item_position": [
+                2.26897096474348,
+                3.1709941917822277,
+                0.4599142983595714
+              ]
+            },
+            "loaded": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "delivery",
+              "item_id": "box",
+              "donor_id": "donor",
+              "carrier_id": "cart",
+              "donor_sampled_at": 15.050000000001695,
+              "carrier_sampled_at": 15.050000000001695,
+              "sampled_at": 15.050000000001695,
+              "confirmed_at": 15.050000000001695,
+              "upward_support_force_N": 9.81000000079044,
+              "minimum_support_force_N": 5.886,
+              "supported": true,
+              "item_local_position": [
+                -0.24812554648418145,
+                0.17081687284278882,
+                0.05997033805147112
+              ],
+              "item_relative_speed": 7.953464105647272e-09,
+              "footprint_inside": true,
+              "height_good": true,
+              "height_error_m": 2.966194852888071e-05,
+              "donor_contact": false,
+              "support_geom": "cart/chassis",
+              "item_mass_kg": 1.0,
+              "support_size": [
+                0.8,
+                0.65
+              ],
+              "item_size": [
+                0.12,
+                0.2,
+                0.12
+              ],
+              "maximum_relative_speed": 0.06,
+              "maximum_height_error_m": 0.025,
+              "donor_released": true,
+              "carrier_released": true,
+              "donor_bilateral_contact": false,
+              "carrier_bilateral_contact": false,
+              "donor_finger_contacts": [],
+              "carrier_finger_contacts": [],
+              "retreat_target": [
+                1.9,
+                3.55,
+                0.6599580299828572
+              ],
+              "donor_tool_position": [
+                1.900008903175797,
+                3.549998406241179,
+                0.6599552465451065
+              ],
+              "retreat_error_m": 9.463304505540724e-06,
+              "maximum_retreat_error_m": 0.02,
+              "stable_since": 14.550000000001528,
+              "stable_duration_s": 0.500000000000167,
+              "minimum_stable_duration_s": 0.5
+            },
+            "arm_workflow_version": "observed-receive-place-0.6",
+            "retreat_reachability": {
+              "accepted": true,
+              "target": [
+                1.9,
+                3.55,
+                0.6599580299828572
+              ],
+              "sampled_at": 15.050000000001695,
+              "minimum_reach_margin_m": 0.015,
+              "solution": {
+                "joint_targets": [
+                  1.2220253232109897,
+                  0.6393756691033153,
+                  0.7910439327111227,
+                  1.7111730517753552
+                ],
+                "reach_margin_m": 0.057635252234202405,
+                "joint_margin_rad": 1.0888269482246447,
+                "wrist_distance_m": 0.6923647477657976,
+                "arm_base_local_target": [
+                  0.19999999999999996,
+                  0.5499999999999998,
+                  0.35995802998285725
+                ],
+                "arm_base_position": [
+                  1.7,
+                  3.0,
+                  0.3
+                ],
+                "orientation_source": "observed_quaternion_tilt_pose_yaw"
+              }
+            },
+            "donor_sampled_at": 15.050000000001695,
+            "carrier_sampled_at": 15.050000000001695,
+            "item_position": [
+              2.268970239333668,
+              3.17099335663234,
+              0.45992732377093815
+            ],
+            "donor_released": true,
+            "carrier_released": true,
+            "destination": [
+              2.268500260573763,
+              3.170000018561504,
+              0.39995802998285723
+            ],
+            "arm": {
+              "source": "observations",
+              "workflow_version": "observed-receive-place-0.6",
+              "research_profile": {
+                "grasp_above_center_m": 0.1,
+                "approach_above_grasp_m": 0.1,
+                "lift_above_grasp_m": 0.12,
+                "lift_toward_base_m": 0.02,
+                "maximum_placement_overtravel_m": 0.012
+              },
+              "events": [
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 0.25000000000000017,
+                  "phase": "approach"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 2.5999999999999353,
+                  "phase": "ready"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 2.6999999999999242,
+                  "phase": "descend"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 3.299999999999858,
+                  "phase": "grasp"
+                },
+                {
+                  "event": "grasp_confirmed",
+                  "sampled_at": 3.6499999999998196,
+                  "phase": "grasp"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 3.6499999999998196,
+                  "phase": "grasped"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 3.7499999999998086,
+                  "phase": "lift"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 4.949999999999677,
+                  "phase": "received"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 5.049999999999666,
+                  "phase": "clearance"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 6.64999999999949,
+                  "phase": "translate"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 8.349999999999458,
+                  "phase": "lower"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 11.700000000000577,
+                  "phase": "release"
+                },
+                {
+                  "event": "release_settings_observed",
+                  "sampled_at": 11.80000000000061,
+                  "phase": "release"
+                },
+                {
+                  "event": "release_confirmed",
+                  "sampled_at": 12.200000000000744,
+                  "phase": "release"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 12.200000000000744,
+                  "phase": "retract"
+                },
+                {
+                  "event": "placement_verified",
+                  "sampled_at": 13.050000000001027,
+                  "phase": "placed"
+                }
+              ],
+              "research_profile_scope": "legacy_unplanned_fixture_defaults",
+              "grasp_height_source": "compiled_wrist_capsule_and_observed_item",
+              "manage_load_transfer": false,
+              "geometry_mode": "compiled_observed_planning",
+              "sampled_at": 13.050000000001027,
+              "tool_position": [
+                2.2647628233838173,
+                3.1697700833056475,
+                0.6600920031992067
+              ],
+              "item_position": [
+                2.2689702652533015,
+                3.1709933517229434,
+                0.4599273237711387
+              ],
+              "item_speed": 1.3168188339633952e-08,
+              "bilateral_contact": false,
+              "motion_plan": {
+                "source": "observations_and_compiled_geometry",
+                "version": "observed-arm-motion-plan-2",
+                "robot_id": "donor",
+                "sampled_at": 8.349999999999458,
+                "geometry_version": "research-arm-kinematics-2",
+                "source_item_position": [
+                  2.2714862739473345,
+                  3.166564287517206,
+                  0.5252328668088249
+                ],
+                "destination_bottom": [
+                  2.268500260573763,
+                  3.170000018561504,
+                  0.39995802998285723
+                ],
+                "item_size": [
+                  0.12,
+                  0.2,
+                  0.12
+                ],
+                "held_offset": [
+                  0.0036083224962286664,
+                  0.00016562733120339956,
+                  -0.1343643414706448
+                ],
+                "minimum_reach_margin_m": 0.015,
+                "minimum_joint_margin_rad": 0.02,
+                "execution_reach_margin_m": 0.015,
+                "subsequent_pose_sample_reserve_m": 0.0,
+                "position_noise_std_m": 0.0,
+                "already_held": true,
+                "approach_completed": false,
+                "planning_stage": "already_lifted",
+                "rejected_candidates": [],
+                "collision_scope": "Known item versus wrist capsule, palm, and fingers; no other-link/environment/peer swept-volume model or initial rest-to-staging joint observation.",
+                "item_yaw_model": "observed quaternion OBB 15-axis separating gaps",
+                "source_item_quaternion": [
+                  0.8003603553682164,
+                  -0.003954657982069171,
+                  0.0027821661822791913,
+                  -0.5994997262605208
+                ],
+                "observed_body_pose": {
+                  "x": 1.7,
+                  "y": 3.0,
+                  "z": 0.0,
+                  "yaw": 0.0
+                },
+                "observed_body_quaternion": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "observed_upright": 1.0,
+                "observed_tool_position": [
+                  2.267877951451106,
+                  3.166398660186003,
+                  0.6595972082794697
+                ],
+                "observed_tool_quaternion": [
+                  -0.00033329488569598485,
+                  -0.142037692012206,
+                  0.9898611926301095,
+                  -4.782532811286374e-05
+                ],
+                "held_wrist_clearance_m": 0.029324383787505945,
+                "minimum_finger_vertical_overlap_m": 0.05664366174413249,
+                "required_finger_vertical_overlap_m": 0.02,
+                "held_offset_tool_local": [
+                  -0.0035997848868988347,
+                  -0.0008556987103130424,
+                  0.1343619477790304
+                ],
+                "held_offset_at_destination": [
+                  0.003693732206123167,
+                  0.0002168268992197539,
+                  -0.13436194777903038
+                ],
+                "accepted": true,
+                "approach_finger_clearance_m": 0.01,
+                "retract_clearance_status": "requires_fresh_placed_item_and_actual_finger_positions",
+                "nominal_lift_m": null,
+                "sweeps": [
+                  {
+                    "segment": "lift_to_clearance",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.052115463844628396,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "clearance_to_translate",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.052115463844628396,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "translate_to_lower",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.05379479274675458,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "released_retract",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.05379479274675458,
+                    "nominal_item_clearance_m": 0.029324383787492234,
+                    "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                  }
+                ],
+                "targets": {
+                  "grasp": [
+                    2.267877951451106,
+                    3.166398660186003,
+                    0.6595972082794697
+                  ],
+                  "approach": null,
+                  "lift": [
+                    2.267877951451106,
+                    3.166398660186003,
+                    0.6595972082794697
+                  ],
+                  "clearance": [
+                    2.267877951451106,
+                    3.166398660186003,
+                    0.6599580299828572
+                  ],
+                  "translate": [
+                    2.26480652836764,
+                    3.169783191662284,
+                    0.6599580299828572
+                  ],
+                  "lower": [
+                    2.26480652836764,
+                    3.169783191662284,
+                    0.5943199777618876
+                  ],
+                  "retract": [
+                    2.26480652836764,
+                    3.169783191662284,
+                    0.6599580299828572
+                  ]
+                },
+                "solutions": {
+                  "grasp": {
+                    "joint_targets": [
+                      0.28503936723908124,
+                      0.6622952221162883,
+                      0.753122241542976,
+                      1.7261751899305287
+                    ],
+                    "reach_margin_m": 0.05230667322671123,
+                    "joint_margin_rad": 1.0738248100694712,
+                    "wrist_distance_m": 0.6976933267732888,
+                    "arm_base_local_target": [
+                      0.5678779514511059,
+                      0.1663986601860028,
+                      0.35959720827946967
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "lift": {
+                    "joint_targets": [
+                      0.28503936723908124,
+                      0.6622952221162883,
+                      0.753122241542976,
+                      1.7261751899305287
+                    ],
+                    "reach_margin_m": 0.05230667322671123,
+                    "joint_margin_rad": 1.0738248100694712,
+                    "wrist_distance_m": 0.6976933267732888,
+                    "arm_base_local_target": [
+                      0.5678779514511059,
+                      0.1663986601860028,
+                      0.35959720827946967
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "clearance": {
+                    "joint_targets": [
+                      0.28503936723908124,
+                      0.6625002625002487,
+                      0.7517277263404354,
+                      1.727364664749109
+                    ],
+                    "reach_margin_m": 0.05211546384462851,
+                    "joint_margin_rad": 1.0726353352508908,
+                    "wrist_distance_m": 0.6978845361553715,
+                    "arm_base_local_target": [
+                      0.5678779514511059,
+                      0.1663986601860028,
+                      0.35995802998285725
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "translate": {
+                    "joint_targets": [
+                      0.29201097691463923,
+                      0.6553785754739649,
+                      0.7638925066129288,
+                      1.7223215715028992
+                    ],
+                    "reach_margin_m": 0.05379479274675458,
+                    "joint_margin_rad": 1.0776784284971006,
+                    "wrist_distance_m": 0.6962052072532454,
+                    "arm_base_local_target": [
+                      0.56480652836764,
+                      0.16978319166228406,
+                      0.35995802998285725
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "lower": {
+                    "joint_targets": [
+                      0.29201097691463923,
+                      0.6438787446642351,
+                      0.971473370868173,
+                      1.526240538057385
+                    ],
+                    "reach_margin_m": 0.08634090413621731,
+                    "joint_margin_rad": 1.273759461942615,
+                    "wrist_distance_m": 0.6636590958637827,
+                    "arm_base_local_target": [
+                      0.56480652836764,
+                      0.16978319166228406,
+                      0.2943199777618876
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "retract": {
+                    "joint_targets": [
+                      0.29201097691463923,
+                      0.6553785754739649,
+                      0.7638925066129288,
+                      1.7223215715028992
+                    ],
+                    "reach_margin_m": 0.05379479274675458,
+                    "joint_margin_rad": 1.0776784284971006,
+                    "wrist_distance_m": 0.6962052072532454,
+                    "arm_base_local_target": [
+                      0.56480652836764,
+                      0.16978319166228406,
+                      0.35995802998285725
+                    ],
+                    "arm_base_position": [
+                      1.7,
+                      3.0,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  }
+                },
+                "commanded_opening_m": 0.1,
+                "nominal_open_finger_gap_m": 0.0013809621030939911,
+                "open_finger_uncertainty_covered": true
+              },
+              "target_validation": {
+                "sampled_at": 13.00000000000101,
+                "target": [
+                  2.26480652836764,
+                  3.169783191662284,
+                  0.6599580299828572
+                ],
+                "joint_targets": [
+                  0.29201097691463923,
+                  0.6553785754739649,
+                  0.7638925066129288,
+                  1.7223215715028992
+                ],
+                "reach_margin_m": 0.05379479274675458,
+                "joint_margin_rad": 1.0776784284971006,
+                "wrist_distance_m": 0.6962052072532454,
+                "arm_base_local_target": [
+                  0.56480652836764,
+                  0.16978319166228406,
+                  0.35995802998285725
+                ],
+                "arm_base_position": [
+                  1.7,
+                  3.0,
+                  0.3
+                ],
+                "orientation_source": "observed_quaternion_tilt_pose_yaw"
+              },
+              "motion_plan_history": [
+                {
+                  "sampled_at": 0.25000000000000017,
+                  "source_item_position": [
+                    1.9,
+                    3.55,
+                    0.059972689522380405
+                  ],
+                  "destination_bottom": [
+                    2.268500260573763,
+                    3.170000018561504,
+                    0.39995802998285723
+                  ],
+                  "held_offset": [
+                    0.0,
+                    0.0,
+                    -0.12
+                  ],
+                  "targets": {
+                    "grasp": [
+                      1.9,
+                      3.55,
+                      0.1799726895223804
+                    ],
+                    "approach": [
+                      1.9,
+                      3.55,
+                      0.2599726895223804
+                    ],
+                    "lift": [
+                      1.8931651387382658,
+                      3.531204131530231,
+                      0.29997268952238043
+                    ],
+                    "clearance": [
+                      1.8931651387382658,
+                      3.531204131530231,
+                      0.6599580299828572
+                    ],
+                    "translate": [
+                      2.268500260573763,
+                      3.170000018561504,
+                      0.6599580299828572
+                    ],
+                    "lower": [
+                      2.268500260573763,
+                      3.170000018561504,
+                      0.5799580299828572
+                    ],
+                    "retract": [
+                      2.268500260573763,
+                      3.170000018561504,
+                      0.6599580299828572
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "approach_to_grasp",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.15451195725611888,
+                      "nominal_item_clearance_m": 0.015000000000000055,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "grasp_to_lift",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.15451195725611888,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 23,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.07445611236030181,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 25,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.050742181643891215,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.050742181643891215,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.050742181643891215,
+                      "nominal_item_clearance_m": 0.015000000000000055,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "grasp_geometry": {
+                    "height_above_item_center_m": 0.12,
+                    "observed_item_vertical_half_extent_m": 0.06,
+                    "wrist_downward_extension_m": 0.045,
+                    "settling_overtravel_reserve_m": 0.015,
+                    "wrist_geom_name": "donor/arm-link-3"
+                  },
+                  "planning_stage": "before_approach",
+                  "version": "observed-arm-motion-plan-2"
+                },
+                {
+                  "sampled_at": 3.6499999999998196,
+                  "source_item_position": [
+                    1.9,
+                    3.55,
+                    0.059972689522380405
+                  ],
+                  "destination_bottom": [
+                    2.268500260573763,
+                    3.170000018561504,
+                    0.39995802998285723
+                  ],
+                  "held_offset": [
+                    0.0012311329106144964,
+                    0.00085286028086351,
+                    -0.1192305365556633
+                  ],
+                  "targets": {
+                    "grasp": [
+                      1.8996574396179238,
+                      3.5498072317581526,
+                      0.17922787479053653
+                    ],
+                    "approach": null,
+                    "lift": [
+                      1.8928308069889659,
+                      3.531008373097339,
+                      0.29922787479053653
+                    ],
+                    "clearance": [
+                      1.8928308069889659,
+                      3.531008373097339,
+                      0.6599580299828572
+                    ],
+                    "translate": [
+                      2.266959360471814,
+                      3.170441164278819,
+                      0.6599580299828572
+                    ],
+                    "lower": [
+                      2.266959360471814,
+                      3.170441164278819,
+                      0.5791871997509368
+                    ],
+                    "retract": [
+                      2.266959360471814,
+                      3.170441164278819,
+                      0.6599580299828572
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "grasp_to_lift",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.1546668587994039,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 23,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.07470557800889877,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 25,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.051886792234866363,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.051886792234866363,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.051886792234866363,
+                      "nominal_item_clearance_m": 0.014230262705858629,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "planning_stage": "confirmed_grasp",
+                  "version": "observed-arm-motion-plan-2"
+                },
+                {
+                  "sampled_at": 5.049999999999666,
+                  "source_item_position": [
+                    1.8933564493257315,
+                    3.5324178197651275,
+                    0.17390484646875154
+                  ],
+                  "destination_bottom": [
+                    2.268500260573763,
+                    3.170000018561504,
+                    0.39995802998285723
+                  ],
+                  "held_offset": [
+                    0.0005309230340442284,
+                    0.0014530063678250826,
+                    -0.1252642279284089
+                  ],
+                  "targets": {
+                    "grasp": [
+                      1.8928255262916873,
+                      3.5309648133973024,
+                      0.29916907439716045
+                    ],
+                    "approach": null,
+                    "lift": [
+                      1.8928255262916873,
+                      3.5309648133973024,
+                      0.29916907439716045
+                    ],
+                    "clearance": [
+                      1.8928255262916873,
+                      3.5309648133973024,
+                      0.6599580299828572
+                    ],
+                    "translate": [
+                      2.2669953928922624,
+                      3.1695531926863922,
+                      0.6599580299828572
+                    ],
+                    "lower": [
+                      2.2669953928922624,
+                      3.1695531926863922,
+                      0.5852219738181521
+                    ],
+                    "retract": [
+                      2.2669953928922624,
+                      3.1695531926863922,
+                      0.6599580299828572
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 23,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.0747413380011368,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 25,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.05207378279649322,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.05207378279649322,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.05207378279649322,
+                      "nominal_item_clearance_m": 0.020260153024701702,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "planning_stage": "already_lifted",
+                  "version": "observed-arm-motion-plan-2"
+                }
+              ],
+              "held_offset_error_m": 0.016509155488761383,
+              "held_offset_limit_m": 0.025,
+              "destination_support_force_N": 9.810000000627952,
+              "destination_supported": true,
+              "minimum_support_force_N": 5.886,
+              "release_settle": {
+                "sampled_at": 12.200000000000744,
+                "requested_since": 11.7700000000006,
+                "delivered_settings_since": 11.80000000000061,
+                "atomic_settle_requested": true,
+                "delivered_settings_confirmed": true,
+                "atomic_settle_confirmed": true,
+                "observed_control_mode": "release_settle",
+                "observed_commanded_opening": 0.1,
+                "observed_payload_estimate_kg": 0.0,
+                "observed_finger_positions_m": {
+                  "left": 0.09999999801313114,
+                  "right": 0.09999999984075425
+                },
+                "command_settings_source": "delayed_controller_feedback",
+                "physical_release_confirmed": true
+              },
+              "retract_validation": {
+                "source": "observations_and_compiled_geometry",
+                "sampled_at": 12.200000000000744,
+                "original_planned_end": [
+                  2.26480652836764,
+                  3.169783191662284,
+                  0.6599580299828572
+                ],
+                "candidates": [
+                  {
+                    "name": "planned",
+                    "source": "observations_and_compiled_geometry",
+                    "sampled_at": 12.200000000000744,
+                    "begin": [
+                      2.2645652699994727,
+                      3.169686706794764,
+                      0.5954174519374074
+                    ],
+                    "end": [
+                      2.26480652836764,
+                      3.169783191662284,
+                      0.6599580299828572
+                    ],
+                    "item_position": [
+                      2.2689702762505046,
+                      3.1709933496089304,
+                      0.4599273237712429
+                    ],
+                    "item_quaternion": [
+                      0.8024425642675658,
+                      9.355021503472676e-07,
+                      -2.854018159120822e-06,
+                      -0.5967293616394884
+                    ],
+                    "minimum_clearance_m": 0.001,
+                    "minimum_reach_margin_m": 0.015,
+                    "observed_finger_positions_m": {
+                      "left": 0.09999999801313114,
+                      "right": 0.09999999984075425
+                    },
+                    "observed_start_clearance": {
+                      "gap_m": 0.030490150769533472,
+                      "limiting_gripper_box": "wrist_capsule",
+                      "wrist_capsule_clearance_m": 0.030490150769533472,
+                      "item_center_tool_frame": [
+                        -0.0027865398648031225,
+                        -1.659984357541849e-05,
+                        0.13553937120271067
+                      ],
+                      "tool_position": [
+                        2.2645652699994727,
+                        3.169686706794764,
+                        0.5954174519374074
+                      ],
+                      "tool_quaternion": [
+                        0.006600281134634186,
+                        -0.14546480040811965,
+                        0.9893409353467262,
+                        0.0009704526959157405
+                      ],
+                      "item_quaternion": [
+                        0.8024425642675658,
+                        9.355021503472676e-07,
+                        -2.854018159120822e-06,
+                        -0.5967293616394884
+                      ]
+                    },
+                    "observed_joint_positions_rad": [
+                      0.29197205064901655,
+                      0.6365133347562706,
+                      0.9807740468054396,
+                      1.5109626451726392
+                    ],
+                    "observed_joint_targets_rad": [
+                      0.2919720505778824,
+                      0.6365170268553063,
+                      0.9807756144839056,
+                      1.5109626155554385
+                    ],
+                    "checking_start": "delivered_joint_targets",
+                    "accepted": true,
+                    "samples": 60,
+                    "observed_item_clearance_m": 0.030490150769533472,
+                    "planned_path_clearance_m": 0.03048744418246431,
+                    "sweeps": [
+                      {
+                        "start": "observed_joints",
+                        "samples": 30,
+                        "minimum_clearance_m": 0.030490172107994276,
+                        "certified_intervals": 4,
+                        "certified_clearance_lower_bound_m": 0.006921410443630482,
+                        "actual_joint_path_margins": {
+                          "reach_margin_m": 0.05379479274675458,
+                          "joint_margin_rad": 1.0776784284971006,
+                          "minimum_wrist_distance_m": 0.6620319252987683,
+                          "maximum_wrist_distance_m": 0.6962052072532454,
+                          "model": "exact elbow extrema over linear joint interpolation"
+                        }
+                      },
+                      {
+                        "start": "delivered_joint_targets",
+                        "samples": 30,
+                        "minimum_clearance_m": 0.03048744418246431,
+                        "certified_intervals": 4,
+                        "certified_clearance_lower_bound_m": 0.006919394035154985,
+                        "actual_joint_path_margins": {
+                          "reach_margin_m": 0.05379479274675458,
+                          "joint_margin_rad": 1.0776784284971006,
+                          "minimum_wrist_distance_m": 0.6620316498315296,
+                          "maximum_wrist_distance_m": 0.6962052072532454,
+                          "model": "exact elbow extrema over linear joint interpolation"
+                        }
+                      }
+                    ],
+                    "joint_step_limit_rad": 0.01,
+                    "path_model": "joint interpolation with bounded continuous geometric clearance; actual dynamics require physical contact audit"
+                  }
+                ],
+                "begin": [
+                  2.2645652699994727,
+                  3.169686706794764,
+                  0.5954174519374074
+                ],
+                "end": [
+                  2.26480652836764,
+                  3.169783191662284,
+                  0.6599580299828572
+                ],
+                "item_position": [
+                  2.2689702762505046,
+                  3.1709933496089304,
+                  0.4599273237712429
+                ],
+                "item_quaternion": [
+                  0.8024425642675658,
+                  9.355021503472676e-07,
+                  -2.854018159120822e-06,
+                  -0.5967293616394884
+                ],
+                "minimum_clearance_m": 0.001,
+                "minimum_reach_margin_m": 0.015,
+                "observed_finger_positions_m": {
+                  "left": 0.09999999801313114,
+                  "right": 0.09999999984075425
+                },
+                "observed_start_clearance": {
+                  "gap_m": 0.030490150769533472,
+                  "limiting_gripper_box": "wrist_capsule",
+                  "wrist_capsule_clearance_m": 0.030490150769533472,
+                  "item_center_tool_frame": [
+                    -0.0027865398648031225,
+                    -1.659984357541849e-05,
+                    0.13553937120271067
+                  ],
+                  "tool_position": [
+                    2.2645652699994727,
+                    3.169686706794764,
+                    0.5954174519374074
+                  ],
+                  "tool_quaternion": [
+                    0.006600281134634186,
+                    -0.14546480040811965,
+                    0.9893409353467262,
+                    0.0009704526959157405
+                  ],
+                  "item_quaternion": [
+                    0.8024425642675658,
+                    9.355021503472676e-07,
+                    -2.854018159120822e-06,
+                    -0.5967293616394884
+                  ]
+                },
+                "observed_joint_positions_rad": [
+                  0.29197205064901655,
+                  0.6365133347562706,
+                  0.9807740468054396,
+                  1.5109626451726392
+                ],
+                "observed_joint_targets_rad": [
+                  0.2919720505778824,
+                  0.6365170268553063,
+                  0.9807756144839056,
+                  1.5109626155554385
+                ],
+                "checking_start": "delivered_joint_targets",
+                "accepted": true,
+                "samples": 60,
+                "observed_item_clearance_m": 0.030490150769533472,
+                "planned_path_clearance_m": 0.03048744418246431,
+                "sweeps": [
+                  {
+                    "start": "observed_joints",
+                    "samples": 30,
+                    "minimum_clearance_m": 0.030490172107994276,
+                    "certified_intervals": 4,
+                    "certified_clearance_lower_bound_m": 0.006921410443630482,
+                    "actual_joint_path_margins": {
+                      "reach_margin_m": 0.05379479274675458,
+                      "joint_margin_rad": 1.0776784284971006,
+                      "minimum_wrist_distance_m": 0.6620319252987683,
+                      "maximum_wrist_distance_m": 0.6962052072532454,
+                      "model": "exact elbow extrema over linear joint interpolation"
+                    }
+                  },
+                  {
+                    "start": "delivered_joint_targets",
+                    "samples": 30,
+                    "minimum_clearance_m": 0.03048744418246431,
+                    "certified_intervals": 4,
+                    "certified_clearance_lower_bound_m": 0.006919394035154985,
+                    "actual_joint_path_margins": {
+                      "reach_margin_m": 0.05379479274675458,
+                      "joint_margin_rad": 1.0776784284971006,
+                      "minimum_wrist_distance_m": 0.6620316498315296,
+                      "maximum_wrist_distance_m": 0.6962052072532454,
+                      "model": "exact elbow extrema over linear joint interpolation"
+                    }
+                  }
+                ],
+                "joint_step_limit_rad": 0.01,
+                "path_model": "joint interpolation with bounded continuous geometric clearance; actual dynamics require physical contact audit",
+                "selected_candidate": "planned",
+                "selected_target": [
+                  2.26480652836764,
+                  3.169783191662284,
+                  0.6599580299828572
+                ]
+              },
+              "retract_safety": {
+                "sampled_at": 13.050000000001027,
+                "own_contact": false,
+                "released": true,
+                "destination_supported": true,
+                "support_force_N": 9.810000000627952,
+                "item_speed_m_s": 1.3168188339633952e-08
+              }
+            },
+            "upward_support_force_N": 9.81000000079044,
+            "minimum_support_force_N": 5.886,
+            "supported": true,
+            "item_local_position": [
+              -0.24812554648418145,
+              0.17081687284278882,
+              0.05997033805147112
+            ],
+            "item_relative_speed": 7.953464105647272e-09,
+            "footprint_inside": true,
+            "height_good": true,
+            "height_error_m": 2.966194852888071e-05,
+            "donor_contact": false,
+            "load_transfer": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "delivery",
+              "item_id": "box",
+              "donor_id": "donor",
+              "carrier_id": "cart",
+              "donor_sampled_at": 11.700000000000577,
+              "carrier_sampled_at": 11.700000000000577,
+              "sampled_at": 11.700000000000577,
+              "confirmed_at": 11.700000000000577,
+              "active": true,
+              "support_geom": "cart/chassis",
+              "upward_support_force_N": 13.950502054634455,
+              "height_error_m": 4.229253281112788e-05,
+              "item_relative_speed": 6.659643261369794e-06,
+              "footprint_inside": true,
+              "bilateral_contact": true,
+              "contact_since": 8.999999999999675,
+              "contact_duration_s": 2.7000000000009017,
+              "minimum_contact_duration_s": 0.15,
+              "desired_payload_estimate_kg": 0.0,
+              "payload_estimate_kg": 0.0,
+              "observed_command_feedback_valid": true,
+              "observed_commanded_opening": 0.0,
+              "observed_payload_estimate_kg": 0.0,
+              "observed_command_settings_source": "donor_delayed_controller_feedback",
+              "maximum_rate_kg_s": 0.5,
+              "command_sample_interval_s": 0.0500000000000167,
+              "release_ready_since": 11.20000000000041,
+              "maximum_release_payload_kg": 0.02,
+              "minimum_release_dwell_s": 0.25
+            }
+          },
+          "resource_intent": {
+            "retain": [
+              "task:delivery",
+              "item:box",
+              "robot:donor",
+              "robot:cart"
+            ],
+            "release": [],
+            "donor_custody": null,
+            "loading_commit": {
+              "task_id": "delivery",
+              "item_id": "box",
+              "donor_id": "donor",
+              "carrier_id": "cart",
+              "from_robot": "donor",
+              "to_robot": "cart",
+              "donor_sampled_at": 15.050000000001695,
+              "carrier_sampled_at": 15.050000000001695,
+              "confirmed_at": 15.050000000001695
+            }
+          },
+          "execution_id": "bec97722877347e29d6eb344972794cf"
+        }
+      }
+    },
+    {
+      "seq": 2171,
+      "time": 238.78000000041203,
+      "kind": "cooperation_loaded",
+      "severity": "info",
+      "entity_id": "outbound-cart",
+      "message": "물품 지지·해제·상차 팔 후퇴 확인 후 운반차 소유 이전",
+      "details": {
+        "task_id": "return-delivery",
+        "proof": {
+          "task_id": "return-delivery",
+          "donor_id": "receiver",
+          "carrier_id": "outbound-cart",
+          "item_id": "box",
+          "target": [
+            8.95,
+            4.0,
+            0.6599625952961387
+          ],
+          "opening": 0.1,
+          "payload_estimate": 0.0,
+          "hold": true,
+          "release_settle": false,
+          "status": "completed",
+          "phase": "loaded",
+          "code": "loading_verified",
+          "reason": "최종 지지·물품 안정·그리퍼 해제·후퇴를 관측했습니다",
+          "report": {
+            "task_id": "return-delivery",
+            "donor_id": "receiver",
+            "carrier_id": "outbound-cart",
+            "item_id": "box",
+            "state": "loaded",
+            "sampled_at": 238.7100000004117
+          },
+          "evidence": {
+            "source": "observations",
+            "workflow_version": "observed-donor-carrier-loading-0.3",
+            "events": [
+              {
+                "event": "source_confirmed",
+                "sampled_at": 223.66000000033983,
+                "phase": "await_source"
+              },
+              {
+                "event": "donor_grip_verified",
+                "sampled_at": 226.36000000035273,
+                "phase": "lift"
+              },
+              {
+                "event": "carrier_load_released",
+                "sampled_at": 235.26000000039522,
+                "phase": "retreat"
+              },
+              {
+                "event": "loading_verified",
+                "sampled_at": 238.7100000004117,
+                "phase": "loaded"
+              }
+            ],
+            "task_id": "return-delivery",
+            "item_id": "box",
+            "donor_id": "receiver",
+            "carrier_id": "outbound-cart",
+            "donor_grip": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "return-delivery",
+              "item_id": "box",
+              "donor_id": "receiver",
+              "carrier_id": "outbound-cart",
+              "donor_sampled_at": 233.96000000038902,
+              "carrier_sampled_at": 233.96000000038902,
+              "sampled_at": 233.96000000038902,
+              "confirmed_at": 233.96000000038902,
+              "robot_id": "receiver",
+              "bilateral_contact": true,
+              "finger_contacts": [
+                "left",
+                "right"
+              ],
+              "lifted": true,
+              "lift_height_m": 0.1999411455776911,
+              "minimum_lift_height_m": 0.08,
+              "item_speed_m_s": 9.806363371685193e-05,
+              "maximum_item_speed_m_s": 0.035,
+              "tool_error_m": 0.007691614297397816,
+              "maximum_tool_error_m": 0.02,
+              "stable_since": 231.1100000003754,
+              "stable_duration_s": 2.8500000000136083,
+              "minimum_stable_duration_s": 0.3,
+              "source_item_position": [
+                8.947532516646117,
+                3.9973023416564266,
+                0.25997269919433796
+              ],
+              "item_position": [
+                9.514185963557736,
+                3.150123306511352,
+                0.45991384477202907
+              ]
+            },
+            "loaded": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "return-delivery",
+              "item_id": "box",
+              "donor_id": "receiver",
+              "carrier_id": "outbound-cart",
+              "donor_sampled_at": 238.7100000004117,
+              "carrier_sampled_at": 238.7100000004117,
+              "sampled_at": 238.7100000004117,
+              "confirmed_at": 238.7100000004117,
+              "upward_support_force_N": 9.809999999815657,
+              "minimum_support_force_N": 5.886,
+              "supported": true,
+              "item_local_position": [
+                -0.26606329251714106,
+                0.17060567043905056,
+                0.059970240941508046
+              ],
+              "item_relative_speed": 8.12839224975786e-09,
+              "footprint_inside": true,
+              "height_good": true,
+              "height_error_m": 2.9759058491951595e-05,
+              "donor_contact": false,
+              "support_geom": "outbound-cart/chassis",
+              "item_mass_kg": 1.0,
+              "support_size": [
+                0.8,
+                0.65
+              ],
+              "item_size": [
+                0.12,
+                0.2,
+                0.12
+              ],
+              "maximum_relative_speed": 0.06,
+              "maximum_height_error_m": 0.025,
+              "donor_released": true,
+              "carrier_released": true,
+              "donor_bilateral_contact": false,
+              "carrier_bilateral_contact": false,
+              "donor_finger_contacts": [],
+              "carrier_finger_contacts": [],
+              "retreat_target": [
+                8.95,
+                4.0,
+                0.6599625952961387
+              ],
+              "donor_tool_position": [
+                8.949991495181097,
+                3.9999960412480746,
+                0.659955943719892
+              ],
+              "retreat_error_m": 1.1499875126971128e-05,
+              "maximum_retreat_error_m": 0.02,
+              "stable_since": 238.2100000004093,
+              "stable_duration_s": 0.5000000000023874,
+              "minimum_stable_duration_s": 0.5
+            },
+            "arm_workflow_version": "observed-receive-place-0.6",
+            "retreat_reachability": {
+              "accepted": true,
+              "target": [
+                8.95,
+                4.0,
+                0.6599625952961387
+              ],
+              "sampled_at": 238.7100000004117,
+              "minimum_reach_margin_m": 0.015,
+              "solution": {
+                "joint_targets": [
+                  -1.9195673303788037,
+                  0.639377914957455,
+                  0.7910269667607355,
+                  1.7111877718716024
+                ],
+                "reach_margin_m": 0.05763281279493371,
+                "joint_margin_rad": 0.8804326696211962,
+                "wrist_distance_m": 0.6923671872050663,
+                "arm_base_local_target": [
+                  -0.2000000000000003,
+                  -0.5500000000000007,
+                  0.35996259529613867
+                ],
+                "arm_base_position": [
+                  9.5,
+                  3.8,
+                  0.3
+                ],
+                "orientation_source": "observed_quaternion_tilt_pose_yaw"
+              }
+            },
+            "donor_sampled_at": 238.7100000004117,
+            "carrier_sampled_at": 238.7100000004117,
+            "item_position": [
+              9.514594784454932,
+              3.1500287383890146,
+              0.4599270628785088
+            ],
+            "donor_released": true,
+            "carrier_released": true,
+            "destination": [
+              9.531523875254264,
+              3.1508923759852947,
+              0.39996259529613865
+            ],
+            "arm": {
+              "source": "observations",
+              "workflow_version": "observed-receive-place-0.6",
+              "research_profile": {
+                "grasp_above_center_m": 0.1,
+                "approach_above_grasp_m": 0.1,
+                "lift_above_grasp_m": 0.12,
+                "lift_toward_base_m": 0.02,
+                "maximum_placement_overtravel_m": 0.012
+              },
+              "events": [
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 223.7600000003403,
+                  "phase": "approach"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 224.06000000034174,
+                  "phase": "ready"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 224.16000000034222,
+                  "phase": "descend"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 224.7600000003451,
+                  "phase": "grasp"
+                },
+                {
+                  "event": "grasp_confirmed",
+                  "sampled_at": 225.11000000034676,
+                  "phase": "grasp"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 225.11000000034676,
+                  "phase": "grasped"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 225.21000000034724,
+                  "phase": "lift"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 226.36000000035273,
+                  "phase": "received"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 226.4600000003532,
+                  "phase": "clearance"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 227.41000000035774,
+                  "phase": "translate"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 230.61000000037302,
+                  "phase": "lower"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 233.96000000038902,
+                  "phase": "release"
+                },
+                {
+                  "event": "release_settings_observed",
+                  "sampled_at": 234.0600000003895,
+                  "phase": "release"
+                },
+                {
+                  "event": "release_confirmed",
+                  "sampled_at": 234.4600000003914,
+                  "phase": "release"
+                },
+                {
+                  "event": "phase_entered",
+                  "sampled_at": 234.4600000003914,
+                  "phase": "retract"
+                },
+                {
+                  "event": "placement_verified",
+                  "sampled_at": 235.26000000039522,
+                  "phase": "placed"
+                }
+              ],
+              "research_profile_scope": "legacy_unplanned_fixture_defaults",
+              "grasp_height_source": "compiled_wrist_capsule_and_observed_item",
+              "manage_load_transfer": false,
+              "geometry_mode": "compiled_observed_planning",
+              "sampled_at": 235.26000000039522,
+              "tool_position": [
+                9.520122389998672,
+                3.1752395854961866,
+                0.6604802157554578
+              ],
+              "item_position": [
+                9.514299346086391,
+                3.1500965845437072,
+                0.4599270626387018
+              ],
+              "item_speed": 8.794527436682915e-05,
+              "bilateral_contact": false,
+              "motion_plan": {
+                "source": "observations_and_compiled_geometry",
+                "version": "observed-arm-motion-plan-2",
+                "robot_id": "receiver",
+                "sampled_at": 230.61000000037302,
+                "geometry_version": "research-arm-kinematics-2",
+                "source_item_position": [
+                  9.548192587981887,
+                  3.1685485597178853,
+                  0.5270131018472494
+                ],
+                "destination_bottom": [
+                  9.531523875254264,
+                  3.1508923759852947,
+                  0.39996259529613865
+                ],
+                "item_size": [
+                  0.12,
+                  0.2,
+                  0.12
+                ],
+                "held_offset": [
+                  0.01086051376066166,
+                  -0.003865519656108596,
+                  -0.13249854572266428
+                ],
+                "minimum_reach_margin_m": 0.015,
+                "minimum_joint_margin_rad": 0.02,
+                "execution_reach_margin_m": 0.015,
+                "subsequent_pose_sample_reserve_m": 0.0,
+                "position_noise_std_m": 0.0,
+                "already_held": true,
+                "approach_completed": false,
+                "planning_stage": "already_lifted",
+                "rejected_candidates": [
+                  {
+                    "waypoint": "translate",
+                    "target": [
+                      9.520768690420663,
+                      3.155172902660692,
+                      0.6599625952961387
+                    ],
+                    "code": "reach_margin"
+                  },
+                  {
+                    "waypoint": "placement_path",
+                    "code": "reach_margin"
+                  }
+                ],
+                "collision_scope": "Known item versus wrist capsule, palm, and fingers; no other-link/environment/peer swept-volume model or initial rest-to-staging joint observation.",
+                "item_yaw_model": "observed quaternion OBB 15-axis separating gaps",
+                "source_item_quaternion": [
+                  0.7277957155712282,
+                  0.0026090976757838827,
+                  0.0025888869795512885,
+                  -0.6857841399957334
+                ],
+                "observed_body_pose": {
+                  "x": 9.5,
+                  "y": 3.8,
+                  "z": 0.0,
+                  "yaw": -1.5707963267948963
+                },
+                "observed_body_quaternion": [
+                  0.7071067811865476,
+                  0.0,
+                  0.0,
+                  -0.7071067811865475
+                ],
+                "observed_upright": 1.0,
+                "observed_tool_position": [
+                  9.537332074221226,
+                  3.172414079373994,
+                  0.6595116475699137
+                ],
+                "observed_tool_quaternion": [
+                  -0.00033214491844533355,
+                  0.6857913564393164,
+                  0.7277980538308267,
+                  0.0003129743380818546
+                ],
+                "held_wrist_clearance_m": 0.02746449807517791,
+                "minimum_finger_vertical_overlap_m": 0.05800179805555039,
+                "required_finger_vertical_overlap_m": 0.02,
+                "held_offset_tool_local": [
+                  -0.004624533281824566,
+                  0.010611814234568235,
+                  0.13249437992063864
+                ],
+                "held_offset_at_destination": [
+                  0.01075518483360016,
+                  -0.004280526675397002,
+                  -0.13249437992063862
+                ],
+                "accepted": true,
+                "approach_finger_clearance_m": 0.01,
+                "retract_clearance_status": "requires_fresh_placed_item_and_actual_finger_positions",
+                "nominal_lift_m": null,
+                "sweeps": [
+                  {
+                    "segment": "lift_to_clearance",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.02052752385583123,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "clearance_to_translate",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.02052752385583123,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "translate_to_lower",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.023570934616654493,
+                    "nominal_item_clearance_m": null,
+                    "clearance_status": "required_now"
+                  },
+                  {
+                    "segment": "released_retract",
+                    "samples": 11,
+                    "joint_step_limit_rad": 0.04,
+                    "minimum_reach_margin_m": 0.023570934616654493,
+                    "nominal_item_clearance_m": 0.007388564425443264,
+                    "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                  }
+                ],
+                "targets": {
+                  "grasp": [
+                    9.537332074221226,
+                    3.172414079373994,
+                    0.6595116475699137
+                  ],
+                  "approach": null,
+                  "lift": [
+                    9.537332074221226,
+                    3.172414079373994,
+                    0.6595116475699137
+                  ],
+                  "clearance": [
+                    9.537332074221226,
+                    3.172414079373994,
+                    0.6599625952961387
+                  ],
+                  "translate": [
+                    9.52012486119816,
+                    3.175162537072863,
+                    0.6599625952961387
+                  ],
+                  "lower": [
+                    9.520768690420663,
+                    3.155172902660692,
+                    0.5924569752167772
+                  ],
+                  "retract": [
+                    9.52012486119816,
+                    3.175162537072863,
+                    0.6599625952961387
+                  ]
+                },
+                "solutions": {
+                  "grasp": {
+                    "joint_targets": [
+                      0.05941518635290355,
+                      0.8191459248534793,
+                      0.47269372393564196,
+                      1.8497530048006718
+                    ],
+                    "reach_margin_m": 0.020756125001051173,
+                    "joint_margin_rad": 0.950246995199328,
+                    "wrist_distance_m": 0.7292438749989488,
+                    "arm_base_local_target": [
+                      0.6275859206260059,
+                      0.037332074221225614,
+                      0.35951164756991366
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "lift": {
+                    "joint_targets": [
+                      0.05941518635290355,
+                      0.8191459248534793,
+                      0.47269372393564196,
+                      1.8497530048006718
+                    ],
+                    "reach_margin_m": 0.020756125001051173,
+                    "joint_margin_rad": 0.950246995199328,
+                    "wrist_distance_m": 0.7292438749989488,
+                    "arm_base_local_target": [
+                      0.6275859206260059,
+                      0.037332074221225614,
+                      0.35951164756991366
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "clearance": {
+                    "joint_targets": [
+                      0.05941518635290355,
+                      0.8198318112361116,
+                      0.4700711831977912,
+                      1.8516896591558902
+                    ],
+                    "reach_margin_m": 0.02052752385583112,
+                    "joint_margin_rad": 0.9483103408441096,
+                    "wrist_distance_m": 0.7294724761441689,
+                    "arm_base_local_target": [
+                      0.6275859206260059,
+                      0.037332074221225614,
+                      0.35996259529613867
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "translate": {
+                    "joint_targets": [
+                      0.03219702366862504,
+                      0.8016521949309473,
+                      0.5038891283989149,
+                      1.836051330259931
+                    ],
+                    "reach_margin_m": 0.023570934616654382,
+                    "joint_margin_rad": 0.9639486697400688,
+                    "wrist_distance_m": 0.7264290653833456,
+                    "arm_base_local_target": [
+                      0.6248374629271369,
+                      0.020124861198160676,
+                      0.35996259529613867
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "lower": {
+                    "joint_targets": [
+                      0.032197023668624605,
+                      0.8362410324674111,
+                      0.6362424325831164,
+                      1.6691091885392655
+                    ],
+                    "reach_margin_m": 0.0374597935399652,
+                    "joint_margin_rad": 1.1308908114607343,
+                    "wrist_distance_m": 0.7125402064600348,
+                    "arm_base_local_target": [
+                      0.644827097339308,
+                      0.020768690420663063,
+                      0.2924569752167772
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  },
+                  "retract": {
+                    "joint_targets": [
+                      0.03219702366862504,
+                      0.8016521949309473,
+                      0.5038891283989149,
+                      1.836051330259931
+                    ],
+                    "reach_margin_m": 0.023570934616654382,
+                    "joint_margin_rad": 0.9639486697400688,
+                    "wrist_distance_m": 0.7264290653833456,
+                    "arm_base_local_target": [
+                      0.6248374629271369,
+                      0.020124861198160676,
+                      0.35996259529613867
+                    ],
+                    "arm_base_position": [
+                      9.5,
+                      3.8,
+                      0.3
+                    ],
+                    "orientation_source": "observed_quaternion_tilt_pose_yaw"
+                  }
+                },
+                "commanded_opening_m": 0.1,
+                "nominal_open_finger_gap_m": 0.0013809621030939911,
+                "open_finger_uncertainty_covered": true
+              },
+              "target_validation": {
+                "sampled_at": 235.21000000039498,
+                "target": [
+                  9.52012486119816,
+                  3.175162537072863,
+                  0.6599625952961387
+                ],
+                "joint_targets": [
+                  0.03219702366862504,
+                  0.8016521949309473,
+                  0.5038891283989149,
+                  1.836051330259931
+                ],
+                "reach_margin_m": 0.023570934616654382,
+                "joint_margin_rad": 0.9639486697400688,
+                "wrist_distance_m": 0.7264290653833456,
+                "arm_base_local_target": [
+                  0.6248374629271369,
+                  0.020124861198160676,
+                  0.35996259529613867
+                ],
+                "arm_base_position": [
+                  9.5,
+                  3.8,
+                  0.3
+                ],
+                "orientation_source": "observed_quaternion_tilt_pose_yaw"
+              },
+              "motion_plan_history": [
+                {
+                  "sampled_at": 223.7600000003403,
+                  "source_item_position": [
+                    8.94753251664411,
+                    3.9973023416506623,
+                    0.25997269919433796
+                  ],
+                  "destination_bottom": [
+                    9.531523875254264,
+                    3.1508923759852947,
+                    0.39996259529613865
+                  ],
+                  "held_offset": [
+                    0.0,
+                    0.0,
+                    -0.12000000000192
+                  ],
+                  "targets": {
+                    "grasp": [
+                      8.94753251664411,
+                      3.9973023416506623,
+                      0.379972699196258
+                    ],
+                    "approach": [
+                      8.94753251664411,
+                      3.9973023416506623,
+                      0.459972699196258
+                    ],
+                    "lift": [
+                      8.966367435580725,
+                      3.9905758396881916,
+                      0.499972699196258
+                    ],
+                    "clearance": [
+                      8.966367435580725,
+                      3.9905758396881916,
+                      0.6599625952961387
+                    ],
+                    "translate": [
+                      9.530553719787182,
+                      3.170868832086658,
+                      0.6599625952961387
+                    ],
+                    "lower": [
+                      9.531523875254264,
+                      3.1508923759852947,
+                      0.5799625952980586
+                    ],
+                    "retract": [
+                      9.530553719787182,
+                      3.170868832086658,
+                      0.6599625952961387
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "approach_to_grasp",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.13923060599070003,
+                      "nominal_item_clearance_m": 0.015000000001919964,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "grasp_to_lift",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.14570586723904633,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 12,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.07327613726143412,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 51,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.01951257495348091,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.01951257495348091,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.01951257495348091,
+                      "nominal_item_clearance_m": 0.015000000001920075,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "grasp_geometry": {
+                    "height_above_item_center_m": 0.12000000000192,
+                    "observed_item_vertical_half_extent_m": 0.06000000000192,
+                    "wrist_downward_extension_m": 0.045,
+                    "settling_overtravel_reserve_m": 0.015,
+                    "wrist_geom_name": "receiver/arm-link-3"
+                  },
+                  "planning_stage": "before_approach",
+                  "version": "observed-arm-motion-plan-2"
+                },
+                {
+                  "sampled_at": 225.11000000034676,
+                  "source_item_position": [
+                    8.94753251664411,
+                    3.9973023416506623,
+                    0.25997269919433796
+                  ],
+                  "destination_bottom": [
+                    9.531523875254264,
+                    3.1508923759852947,
+                    0.39996259529613865
+                  ],
+                  "held_offset": [
+                    -0.00021378203186195321,
+                    0.001291024280872577,
+                    -0.11890668393047732
+                  ],
+                  "targets": {
+                    "grasp": [
+                      8.947682369553327,
+                      3.996060866500809,
+                      0.37888077607842685
+                    ],
+                    "approach": null,
+                    "lift": [
+                      8.96653009415198,
+                      3.989370330090823,
+                      0.49888077607842685
+                    ],
+                    "clearance": [
+                      8.96653009415198,
+                      3.989370330090823,
+                      0.6599625952961387
+                    ],
+                    "translate": [
+                      9.531612610330894,
+                      3.171909942090269,
+                      0.6599625952961387
+                    ],
+                    "lower": [
+                      9.532617964408203,
+                      3.1519352264933143,
+                      0.5788668734426148
+                    ],
+                    "retract": [
+                      9.531612610330894,
+                      3.171909942090269,
+                      0.6599625952961387
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "grasp_to_lift",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.1466075564118079,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 12,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.07374295990174118,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 51,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020363926402184873,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020363926402184873,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020363926402184873,
+                      "nominal_item_clearance_m": 0.013906675034452282,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "planning_stage": "confirmed_grasp",
+                  "version": "observed-arm-motion-plan-2"
+                },
+                {
+                  "sampled_at": 226.4600000003532,
+                  "source_item_position": [
+                    8.965799785252397,
+                    3.9907952444824524,
+                    0.37681581020385263
+                  ],
+                  "destination_bottom": [
+                    9.531523875254264,
+                    3.1508923759852947,
+                    0.39996259529613865
+                  ],
+                  "held_offset": [
+                    -0.0007413860228560054,
+                    0.0014293220679872931,
+                    -0.12203798465739385
+                  ],
+                  "targets": {
+                    "grasp": [
+                      8.966541171275253,
+                      3.989365922414465,
+                      0.4988537948612465
+                    ],
+                    "approach": null,
+                    "lift": [
+                      8.966541171275253,
+                      3.989365922414465,
+                      0.4988537948612465
+                    ],
+                    "clearance": [
+                      8.966541171275253,
+                      3.989365922414465,
+                      0.6599625952961387
+                    ],
+                    "translate": [
+                      9.531557940184769,
+                      3.172107669735634,
+                      0.6599625952961387
+                    ],
+                    "lower": [
+                      9.532561875257581,
+                      3.1521328827688206,
+                      0.5820004829087991
+                    ],
+                    "retract": [
+                      9.531557940184769,
+                      3.172107669735634,
+                      0.6599625952961387
+                    ]
+                  },
+                  "sweeps": [
+                    {
+                      "segment": "lift_to_clearance",
+                      "samples": 12,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.07375293240228042,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "clearance_to_translate",
+                      "samples": 51,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020536495832878976,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "translate_to_lower",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020536495832878976,
+                      "nominal_item_clearance_m": null,
+                      "clearance_status": "required_now"
+                    },
+                    {
+                      "segment": "released_retract",
+                      "samples": 11,
+                      "joint_step_limit_rad": 0.04,
+                      "minimum_reach_margin_m": 0.020536495832878976,
+                      "nominal_item_clearance_m": 0.0169010355080374,
+                      "clearance_status": "pending_actual_placed_item_and_finger_positions"
+                    }
+                  ],
+                  "minimum_reach_margin_m": 0.015,
+                  "planning_stage": "already_lifted",
+                  "version": "observed-arm-motion-plan-2"
+                }
+              ],
+              "held_offset_error_m": 0.016096233838800086,
+              "held_offset_limit_m": 0.025,
+              "destination_support_force_N": 9.810000000045143,
+              "destination_supported": true,
+              "minimum_support_force_N": 5.886,
+              "release_settle": {
+                "sampled_at": 234.4600000003914,
+                "requested_since": 234.03000000038935,
+                "delivered_settings_since": 234.0600000003895,
+                "atomic_settle_requested": true,
+                "delivered_settings_confirmed": true,
+                "atomic_settle_confirmed": true,
+                "observed_control_mode": "release_settle",
+                "observed_commanded_opening": 0.1,
+                "observed_payload_estimate_kg": 0.0,
+                "observed_finger_positions_m": {
+                  "left": 0.09999939469598029,
+                  "right": 0.10000005943125449
+                },
+                "command_settings_source": "delayed_controller_feedback",
+                "physical_release_confirmed": true
+              },
+              "retract_validation": {
+                "source": "observations_and_compiled_geometry",
+                "sampled_at": 234.4600000003914,
+                "original_planned_end": [
+                  9.52012486119816,
+                  3.175162537072863,
+                  0.6599625952961387
+                ],
+                "candidates": [
+                  {
+                    "name": "planned",
+                    "source": "observations_and_compiled_geometry",
+                    "sampled_at": 234.4600000003914,
+                    "begin": [
+                      9.520747086289292,
+                      3.1558025799680496,
+                      0.593527266106292
+                    ],
+                    "end": [
+                      9.52012486119816,
+                      3.175162537072863,
+                      0.6599625952961387
+                    ],
+                    "item_position": [
+                      9.514230759422983,
+                      3.150112332411729,
+                      0.45992706258306304
+                    ],
+                    "item_quaternion": [
+                      0.7184193629922718,
+                      1.7081536405210815e-06,
+                      -2.5608964887949555e-06,
+                      -0.6956102492547824
+                    ],
+                    "minimum_clearance_m": 0.001,
+                    "minimum_reach_margin_m": 0.015,
+                    "observed_finger_positions_m": {
+                      "left": 0.09999939469598029,
+                      "right": 0.10000005943125449
+                    },
+                    "observed_start_clearance": {
+                      "gap_m": 0.01130076486425663,
+                      "limiting_gripper_box": "finger_negative",
+                      "wrist_capsule_clearance_m": 0.028600170364976155,
+                      "item_center_tool_frame": [
+                        -0.003608254475696593,
+                        -0.006696115730437944,
+                        0.13366375106322662
+                      ],
+                      "tool_position": [
+                        9.520747086289292,
+                        3.1558025799680496,
+                        0.593527266106292
+                      ],
+                      "tool_quaternion": [
+                        0.0050244648766174385,
+                        0.6956160035024066,
+                        0.7183797462006785,
+                        -0.00486525155489903
+                      ],
+                      "item_quaternion": [
+                        0.7184193629922718,
+                        1.7081536405210815e-06,
+                        -2.5608964887949555e-06,
+                        -0.6956102492547824
+                      ]
+                    },
+                    "observed_joint_positions_rad": [
+                      0.03219453927318762,
+                      0.8247887690084776,
+                      0.6543741867870437,
+                      1.648441516611707
+                    ],
+                    "observed_joint_targets_rad": [
+                      0.03218901040853433,
+                      0.824793225507503,
+                      0.6543760424521975,
+                      1.6484414808100034
+                    ],
+                    "checking_start": "delivered_joint_targets",
+                    "accepted": true,
+                    "samples": 102,
+                    "observed_item_clearance_m": 0.01130076486425663,
+                    "planned_path_clearance_m": 0.011298568937954362,
+                    "sweeps": [
+                      {
+                        "start": "observed_joints",
+                        "samples": 51,
+                        "minimum_clearance_m": 0.011298568937954362,
+                        "certified_intervals": 16,
+                        "certified_clearance_lower_bound_m": 0.004990038216208513,
+                        "actual_joint_path_margins": {
+                          "reach_margin_m": 0.023570934616654382,
+                          "joint_margin_rad": 0.9639486697400688,
+                          "minimum_wrist_distance_m": 0.7103943397519943,
+                          "maximum_wrist_distance_m": 0.7264290653833456,
+                          "model": "exact elbow extrema over linear joint interpolation"
+                        }
+                      },
+                      {
+                        "start": "delivered_joint_targets",
+                        "samples": 51,
+                        "minimum_clearance_m": 0.011298568937954362,
+                        "certified_intervals": 16,
+                        "certified_clearance_lower_bound_m": 0.004989750358848907,
+                        "actual_joint_path_margins": {
+                          "reach_margin_m": 0.023570934616654382,
+                          "joint_margin_rad": 0.9639486697400688,
+                          "minimum_wrist_distance_m": 0.7103941171620576,
+                          "maximum_wrist_distance_m": 0.7264290653833456,
+                          "model": "exact elbow extrema over linear joint interpolation"
+                        }
+                      }
+                    ],
+                    "joint_step_limit_rad": 0.01,
+                    "path_model": "joint interpolation with bounded continuous geometric clearance; actual dynamics require physical contact audit"
+                  }
+                ],
+                "begin": [
+                  9.520747086289292,
+                  3.1558025799680496,
+                  0.593527266106292
+                ],
+                "end": [
+                  9.52012486119816,
+                  3.175162537072863,
+                  0.6599625952961387
+                ],
+                "item_position": [
+                  9.514230759422983,
+                  3.150112332411729,
+                  0.45992706258306304
+                ],
+                "item_quaternion": [
+                  0.7184193629922718,
+                  1.7081536405210815e-06,
+                  -2.5608964887949555e-06,
+                  -0.6956102492547824
+                ],
+                "minimum_clearance_m": 0.001,
+                "minimum_reach_margin_m": 0.015,
+                "observed_finger_positions_m": {
+                  "left": 0.09999939469598029,
+                  "right": 0.10000005943125449
+                },
+                "observed_start_clearance": {
+                  "gap_m": 0.01130076486425663,
+                  "limiting_gripper_box": "finger_negative",
+                  "wrist_capsule_clearance_m": 0.028600170364976155,
+                  "item_center_tool_frame": [
+                    -0.003608254475696593,
+                    -0.006696115730437944,
+                    0.13366375106322662
+                  ],
+                  "tool_position": [
+                    9.520747086289292,
+                    3.1558025799680496,
+                    0.593527266106292
+                  ],
+                  "tool_quaternion": [
+                    0.0050244648766174385,
+                    0.6956160035024066,
+                    0.7183797462006785,
+                    -0.00486525155489903
+                  ],
+                  "item_quaternion": [
+                    0.7184193629922718,
+                    1.7081536405210815e-06,
+                    -2.5608964887949555e-06,
+                    -0.6956102492547824
+                  ]
+                },
+                "observed_joint_positions_rad": [
+                  0.03219453927318762,
+                  0.8247887690084776,
+                  0.6543741867870437,
+                  1.648441516611707
+                ],
+                "observed_joint_targets_rad": [
+                  0.03218901040853433,
+                  0.824793225507503,
+                  0.6543760424521975,
+                  1.6484414808100034
+                ],
+                "checking_start": "delivered_joint_targets",
+                "accepted": true,
+                "samples": 102,
+                "observed_item_clearance_m": 0.01130076486425663,
+                "planned_path_clearance_m": 0.011298568937954362,
+                "sweeps": [
+                  {
+                    "start": "observed_joints",
+                    "samples": 51,
+                    "minimum_clearance_m": 0.011298568937954362,
+                    "certified_intervals": 16,
+                    "certified_clearance_lower_bound_m": 0.004990038216208513,
+                    "actual_joint_path_margins": {
+                      "reach_margin_m": 0.023570934616654382,
+                      "joint_margin_rad": 0.9639486697400688,
+                      "minimum_wrist_distance_m": 0.7103943397519943,
+                      "maximum_wrist_distance_m": 0.7264290653833456,
+                      "model": "exact elbow extrema over linear joint interpolation"
+                    }
+                  },
+                  {
+                    "start": "delivered_joint_targets",
+                    "samples": 51,
+                    "minimum_clearance_m": 0.011298568937954362,
+                    "certified_intervals": 16,
+                    "certified_clearance_lower_bound_m": 0.004989750358848907,
+                    "actual_joint_path_margins": {
+                      "reach_margin_m": 0.023570934616654382,
+                      "joint_margin_rad": 0.9639486697400688,
+                      "minimum_wrist_distance_m": 0.7103941171620576,
+                      "maximum_wrist_distance_m": 0.7264290653833456,
+                      "model": "exact elbow extrema over linear joint interpolation"
+                    }
+                  }
+                ],
+                "joint_step_limit_rad": 0.01,
+                "path_model": "joint interpolation with bounded continuous geometric clearance; actual dynamics require physical contact audit",
+                "selected_candidate": "planned",
+                "selected_target": [
+                  9.52012486119816,
+                  3.175162537072863,
+                  0.6599625952961387
+                ]
+              },
+              "retract_safety": {
+                "sampled_at": 235.26000000039522,
+                "own_contact": false,
+                "released": true,
+                "destination_supported": true,
+                "support_force_N": 9.810000000045143,
+                "item_speed_m_s": 8.794527436682915e-05
+              }
+            },
+            "upward_support_force_N": 9.809999999815657,
+            "minimum_support_force_N": 5.886,
+            "supported": true,
+            "item_local_position": [
+              -0.26606329251714106,
+              0.17060567043905056,
+              0.059970240941508046
+            ],
+            "item_relative_speed": 8.12839224975786e-09,
+            "footprint_inside": true,
+            "height_good": true,
+            "height_error_m": 2.9759058491951595e-05,
+            "donor_contact": false,
+            "load_transfer": {
+              "source": "observations",
+              "workflow_version": "observed-donor-carrier-loading-0.3",
+              "task_id": "return-delivery",
+              "item_id": "box",
+              "donor_id": "receiver",
+              "carrier_id": "outbound-cart",
+              "donor_sampled_at": 233.96000000038902,
+              "carrier_sampled_at": 233.96000000038902,
+              "sampled_at": 233.96000000038902,
+              "confirmed_at": 233.96000000038902,
+              "active": true,
+              "support_geom": "outbound-cart/chassis",
+              "upward_support_force_N": 13.990597296284612,
+              "height_error_m": 4.257790711303944e-05,
+              "item_relative_speed": 1.1712160761653361e-05,
+              "footprint_inside": true,
+              "bilateral_contact": true,
+              "contact_since": 231.26000000037612,
+              "contact_duration_s": 2.700000000012892,
+              "minimum_contact_duration_s": 0.15,
+              "desired_payload_estimate_kg": 0.0,
+              "payload_estimate_kg": 0.0,
+              "observed_command_feedback_valid": true,
+              "observed_commanded_opening": 0.0,
+              "observed_payload_estimate_kg": 0.0,
+              "observed_command_settings_source": "donor_delayed_controller_feedback",
+              "maximum_rate_kg_s": 0.5,
+              "command_sample_interval_s": 0.05000000000023874,
+              "release_ready_since": 233.46000000038663,
+              "maximum_release_payload_kg": 0.02,
+              "minimum_release_dwell_s": 0.25
+            }
+          },
+          "resource_intent": {
+            "retain": [
+              "task:return-delivery",
+              "item:box",
+              "robot:receiver",
+              "robot:outbound-cart"
+            ],
+            "release": [],
+            "donor_custody": null,
+            "loading_commit": {
+              "task_id": "return-delivery",
+              "item_id": "box",
+              "donor_id": "receiver",
+              "carrier_id": "outbound-cart",
+              "from_robot": "receiver",
+              "to_robot": "outbound-cart",
+              "donor_sampled_at": 238.7100000004117,
+              "carrier_sampled_at": 238.7100000004117,
+              "confirmed_at": 238.7100000004117
+            }
+          },
+          "execution_id": "863f8d86106d46db84d3af8150fa82f2"
+        }
+      }
+    }
+  ],
+  "min_person_clearance": {
+    "donor": 1.8184193167208889,
+    "cart": 0.6151255721436372,
+    "receiver": 0.6279199247081269,
+    "final-arm": 0.8661398570849386,
+    "spot-patrol": 2.301205042933671,
+    "outbound-cart": 0.6252205452131078
+  },
+  "final_items": [
+    {
+      "id": "box",
+      "name": "시험 물품 · 1kg 상자",
+      "position": [
+        12.946471853283125,
+        3.9942611040513913,
+        0.2599726991943379
+      ],
+      "owner": null,
+      "custody": "observed_released",
+      "damaged": false,
+      "sampled_at": 282.93200000062285,
+      "basis": "simulation_physics_state"
+    }
+  ]
+}
