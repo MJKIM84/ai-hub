@@ -46,6 +46,12 @@ version: 1
 | 2026-10-09-02 | 생성 | [docs/glossary/localization-score.md](glossary/localization-score.md) | 용어집 항목 위치추정 품질 점수 |
 | 2026-10-09-02 | 생성 | [docs/glossary/map-distribution.md](glossary/map-distribution.md) | 용어집 항목 지도 배포 |
 | 2026-10-09-02 | 생성 | [docs/glossary/integrity-risk.md](glossary/integrity-risk.md) | 용어집 항목 무결성 위험 |
+| 2026-10-09-01 | 갱신 | [docs/categories/chat-based-configuration-and-operation/index.md](categories/chat-based-configuration-and-operation/index.md) | '다른 대분류와의 연결' 절 신규 작성(16개 대분류와의 연결, 각주 66건, 1차 조건부 승인 수정 14건 이행). 2차 수정: 원문 미열람 표시 정정, 번호·문자만 쓴 호칭 수정, 벤더 주장 표기 위치 수정, 긴 글머리표를 세부영역별 하위 글머리표로 나눔 |
+| 2026-10-09-01 | 요약 | [docs/categories/chat-based-configuration-and-operation/index.md](categories/chat-based-configuration-and-operation/index.md) | C. 채팅 기반 구성·운영: '다른 대분류와의 연결' 절 신규 작성(16개 대분류와의 연결, 각주 66건, 1차 조건부 승인 수정 14건·2차 수정 7건 이행) |
+| 2026-10-09-01 | 생성 | [docs/references/ref-1239.md](references/ref-1239.md) | 참고문헌 ref-1239 등록: semantic-conventions-genai — README |
+| 2026-10-09-01 | 생성 | [docs/references/ref-1240.md](references/ref-1240.md) | 참고문헌 ref-1240 등록: Semantic conventions for generative AI metrics (docs/gen-ai/… |
+| 2026-10-09-01 | 생성 | [docs/glossary/safety-guardrail.md](glossary/safety-guardrail.md) | 용어집 항목 안전 가드레일 |
+| 2026-10-09-01 | 생성 | [docs/glossary/opentelemetry-genai-semantic-conventions.md](glossary/opentelemetry-genai-semantic-conventions.md) | 용어집 항목 생성형 AI 의미 규약 |
 
 ### 2026-09-30
 

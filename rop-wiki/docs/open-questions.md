@@ -321,8 +321,10 @@ version: 1
 | oq-299 | 비전 언어 모델의 평면도 해석이 큰 개방 구역에서 성능이 떨어진다는 보고가 물류창고·제조 공장처럼 넓은 개방 구역이 많은 비주거 시설 도면에서 어떤 오류로 나타나는가? | [14. 도면·BIM에서 지도 만들기](categories/space-and-map-model/maps-from-floor-plans-and-bim.md)<br>[45. 문서·도면·장면 이해](categories/ai-and-learning/document-drawing-and-scene-understanding.md)<br>[61. 물류창고](categories/site-type-applications/warehouse.md) | 2026-10-09 | 2026-10-09-02 | 열림 | — |
 | oq-300 | 플랫폼 관제 서비스를 다중 클라우드 복제나 컨테이너 자동 재시작으로 운영하면서, 재시작 뒤 진행 중인 로봇 작업 상태를 잃지 않고 이어 간 공개 사례나 구성이 있는가? | [43. 데이터·관측성·배포](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md)<br>[41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[32. 예외 복구·재계획·업무 연속성](categories/execution-collaboration-and-recovery/exception-recovery-replanning-and-business-continuity.md) | 2026-10-09 | 2026-10-09-06 | 열림 | — |
 | oq-301 | 로봇 오케스트레이션 플랫폼의 외부 API 를 OpenAPI·AsyncAPI 로 기술해 연동 적합성 시험의 기준으로 쓴 공개 시험 도구나 절차가 있는가? | [41. 플랫폼 아키텍처·외부 API](categories/platform-architecture-and-infrastructure/platform-architecture-and-external-api.md)<br>[21. 상호운용 표준·적합성](categories/integration/interoperability-standards-and-conformance.md) | 2026-10-09 | 2026-10-09-06 | 열림 | — |
+| oq-302 | RoboGuard 처럼 안전 규칙을 시간 논리 제약으로 바꿔 언어 모델 계획을 고치는 안전 가드레일을 다중 로봇 오케스트레이션의 승인 전 검사에 두면 사람 승인 부담을 얼마나 줄일 수 있으며, 가드레일이 계획을 수정했을 때 무엇을 사람에게 다시 승인받아야 하는가? | [12. 채팅으로 업무 지시·오케스트레이션](categories/chat-based-configuration-and-operation/chat-task-instruction-and-orchestration.md)<br>[48. 안전·위험 관리](categories/safety/safety-and-risk-management.md)<br>[13. 대화형 기능의 신뢰·기반](categories/chat-based-configuration-and-operation/conversational-trust-and-foundations.md) | 2026-10-09 | 2026-10-09-01 | 열림 | — |
+| oq-303 | 대화로 실제 상황을 재현할 때 운영 기록에 남은 사람 흐름·혼잡을 시뮬레이션의 보행자 모델 입력으로 옮긴 연구나 사례가 있는가? | [11. 채팅으로 실제 상황 시뮬레이션 재현](categories/chat-based-configuration-and-operation/chat-real-situation-simulation-replay.md)<br>[19. 사람·보행자 모델](categories/objects-people-and-live-state/people-and-pedestrian-model.md)<br>[36. 가상 시운전·실제 상황 재현](categories/design-and-simulation/virtual-commissioning-and-real-situation-replay.md) | 2026-10-09 | 2026-10-09-01 | 열림 | — |
 
-상태별 건수: 열림 300건, 조사 중 1건
+상태별 건수: 열림 302건, 조사 중 1건
 
 **트랙 전용 질문(트랙 백로그)**
 

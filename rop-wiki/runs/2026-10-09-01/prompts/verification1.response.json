@@ -1,0 +1,635 @@
+{
+  "duration_api_ms": 281924,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.5988906000000003,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 327751,
+    "cache_read_input_tokens": 2133597,
+    "output_tokens": 25159,
+    "output_tokens_details": {
+      "thinking_tokens": 10528
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 327751,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15637,
+        "cache_read_input_tokens": 414431,
+        "cache_creation_input_tokens": 2114,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2114
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 101347,
+      "outputTokens": 13601,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 3,
+      "costUSD": 0.046935199999999996,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6723,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 12,
+      "outputTokens": 25159,
+      "cacheReadInputTokens": 2133597,
+      "cacheCreationInputTokens": 327751,
+      "webSearchRequests": 0,
+      "costUSD": 3.5519553999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 10528,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 15,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-01\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8. 채팅으로 맵 작성 페이지 10절에 실린 검증된 주장(사실·추정 분리)과 같다. ref-083 은 이번 검증에서 다시 열지 않았다(원문 미열람). 추정 유지.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: data/source_texts/ref-079 원문에 두 점 사이 실제 거리(미터)로 축척 설정, 층·승강기·문·벽·차선과 is_charger·is_parking_spot 꼭짓점 속성이 있다. 단일 출처이나 문서 구조에 관한 진술이라 사실 유지. 발행일 미확인.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8번 페이지 7절의 추정과 같다(oq-124). ref-046 원문 미열람. 공식 변환 규칙 부재는 '확인하지 못함'으로 쓴다.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8번 페이지 5·9절과 같다. 승강기 호출·버튼 조작은 분류 원문 19장 시설·설비 제어 경계의 연계 대상으로 짧게 다룬다. ref-104 는 이번에 다시 열지 않았다.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8번 페이지 3절의 추정과 같다. ref-787·ref-812 원문 미열람. 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기, 방법은 45. 문서·도면·장면 이해)대로 두 영역에 함께 연결한다.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8번 페이지 5절의 벤더 주장(모빌리오, 2026-08-24)과 같다. vendor_claim true, 추정 유지. 본문에서 '벤더 주장' 병기 필요. 원문 미열람.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: B. 로봇 온톨로지 대분류 페이지에 같은 각주로 실린 검증된 주장이다. ref-079 원문 발췌에 충전·주차 꼭짓점 속성과 building_map_generator 가 있다(주행 그래프 내보내기 부분은 발췌 범위 밖이며 기존 검증을 따른다).\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 8번 페이지 5절 실외 사례의 사실 문장과 같다(대한공간정보학회지 2022-06). 원문 미열람.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: SENT Map 은 실재하는 연구(8번 페이지 인용). 16. 장소 의미·지도 관리와의 연결은 추정이며 oq-204 와 함께 둔다. 원문 미열람.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Holodeck 은 실재하는 연구. 로봇 현장 지도에 쓴 사례가 없다는 단서를 유지한다. 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험) 쪽 연결로만 쓴다. 원문 미열람.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 9번 페이지 9절의 추정과 같다. ref-843·ref-844 원문 미열람.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: data/source_texts/ref-125 에 시각·순서 관련 필드로 unix_millis_earliest_start_time·priority 만 있고 마감·선후 필드가 없다. G. 계획·최적화 대분류 연결 절과 같은 각주를 재사용한다.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-110(compose·PickUp·DropOff)과 ref-125(기한 필드 없음) 원문과 맞는다. 9번 페이지 7·10절의 추정(oq-137)과 같다.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: data/source_texts/ref-110 원문이 RequestLift 단계는 RMF 가 내부에서 쓰며 필요할 때 자동으로 넣는다고 적는다. 승강기 호출 자체는 연계 대상으로 표시한다.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-049 원문 필드는 time·request_guid·source_guid·status 뿐이다(그 아래 '커스텀 워크셀 메시지 필드' 주석이 있어 확장 여지는 있다). ref-110 의 PickUp·DropOff 단계도 원문과 맞는다. 추정 유지.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"사실 → 추정: ref-847 은 기존 게시 참고문헌이지만 이번 검증에서는 Springer 열람이 인증 리디렉트로 막혔다. 검색 2회에서도 제목·내용이 확인되지 않아 검색 결과 요약 범위를 다시 확인하지 못했다. 이미 게시된 9번 페이지는 같은 내용을 [추정](원문 미열람)으로 실었으므로 그 수준에 맞춘다. 실행 전 사람 승인 절차가 있었는지는 미확인으로 둔다.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 12번 페이지 9절의 추정과 같다(oq-140). ref-677 원문 미열람.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지 6절에 두 독립 그룹의 사실로 실린 주장이다. 이번 검증에서 두 출처를 다시 열지 않았으므로 cross_checked 는 false 로 적는다. 핵심 수치가 아니므로 사실 유지. ref-351·ref-864 원문 미열람.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 10번 페이지 10절의 추정과 같다(원문 주석의 로봇 구성 짝 엔진, 5. 로봇 능력·작업 표현). ref-229·ref-201 원문 미열람.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ref-228 원문에 protocolFeatures.mobileRobotActions 와 필수 필드 loadSpecification 이 있다(loadSets 는 발췌 범위 밖이며 기존 검증을 따른다). ref-105 원문에 task_capabilities·actions 가 있다. 서로 다른 인터페이스의 사례로 서술한다.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 10번 페이지 5절 물류창고 사례의 사실과 같다(Cal Poly 석사논문, 2026-06). 단일 학위논문의 시뮬레이션 결과임을 밝힌다. 원문 미열람.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 10번 페이지 5절 제조 공장 사례의 벤더 주장과 같다(폴라리스3D 블로그 2026-06-12). vendor_claim true, 추정 유지. '벤더 주장' 병기 필요. 원문 미열람.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2606.08214 초록(2026-06-06 제출)에 Unity3D 트윈에서 운영자가 계획을 검토·수정·재검증한 뒤 실기 실행한다는 내용과 '검증·순서·실행은 결정적' 문구가 있다. 정량 결과는 초록에 없다. 각주 발행일은 기존 참고문헌 줄(2026-06-06)을 쓴다.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 10번 페이지 5절에 사실로 실린 수치와 같다. 출처가 현장 유형을 명시하지 않고 가상 라인이므로 대분류 페이지에서는 현장 사례로 단정하지 않는다. 원문 미열람.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 10절의 추정과 같다. 원문 주석의 짝 엔진(36. 가상 시운전·실제 상황 재현) 연결이다. ref-825·ref-826 원문 미열람.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 6절과 같다. 18. 실시간 세계 상태·데이터 일관성(현재 상태 표현)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 원문 주석대로 구분했다. ref-832·ref-824 원문 미열람. 19. 사람·보행자 모델 연결의 근거는 아니다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 9절의 추정과 같다(oq-131). rosbag2 한 대 기록 재생은 연계 대상. ref-828·ref-831 원문 미열람. ref-828 기준일 2020.\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 5절 제조 공장 사례의 사실과 같다. '최대 3.5배'는 저자 보고값이고 실제 운영 기록 재현이 아님을 병기한다. 원문 미열람(초록 기준).\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 5절 병원 사례의 사실과 같다(Electronics 14(24), 2025-12-17). 정량 결과는 미확인. 원문 미열람.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 10·11절의 추정과 같다(oq-132). 원문 미열람.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 11번 페이지 3절의 사실과 같다(서베이 2025-03-04). 원문 미열람.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 10·12번 페이지에 사실로 실린 SMART-LLM 의 3단계 구조다. 각주 발행일은 기존 참고문헌 줄(2023-09-18)을 쓴다. 원문 미열람.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 12번 페이지 10절의 구축자 추정과 같다. 원문 주석의 짝 엔진(25. 작업 배정 — MRTA·26. 작업 순서·스케줄링) 연결이다. 원문 미열람.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: Discourse 게시글(작성 2026-06-25, 발표 2026-07-02)을 열어 확인했다. Nayantra MCP 서버가 Open-RMF REST API 를 LLM 이 부를 수 있는 도구로 노출하고, 평문 지시를 여러 단계의 RMF 임무로 바꿔 Nav2·Isaac Sim 창고에서 실행한다. 승인·접근통제·인증 언급은 없다. 발표 예고 게시글 기준이며 발표 영상 내용은 미확인이다. 직접 인용 1회는 짧은 구절이다.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: MCP 명세의 동의 책임은 13번 페이지 9절에 사실로 실려 있다. ref-854 게시글에 승인 언급이 없음을 이번에 확인했다. 추정 유지(oq-141). ref-856 원문 미열람.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: VerifyLLM(ref-753, 원문 미열람)과 KTH 초록(ref-674, 이번에 열람)이 실행 전 검증 구조를 뒷받침한다. 12번 페이지 9절의 추정과 같다.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2505.00820 초록(2025-05-01)에 로봇별 LLM 에이전트, 필요할 때만 개입하는 사람 감독, 시뮬레이션 성공률 4.76% 향상이 있다. 초록은 실세계 시험도 언급하지만 승인 절차 세부는 없다. 단일 출처의 저자 보고값임을 밝힌다.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: data/source_texts/ref-111 에 status 열거값, 시작·종료 시각, cancellation·killed·interruptions 기록이 있다. 추정 유지.\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 12번 페이지 5절 실외 사례의 사실과 같다(2025-09-19). 원문 미열람(초록 기준).\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2306.15724 초록(v1 2023-06-27, CoRL 2023)에 다중 감각 관측의 계층 요약, LLM 실패 추론, 언어 계획기의 수정, RoboFail 데이터셋이 있다. 교차 규칙대로 장애 분석은 38. 모니터링·이상 탐지·원인 분석에 적용되는 방법으로 L. AI·학습 기술과 양쪽에 연결한다.\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 12번 페이지 8·11절에 사실로 실린 서베이 내용과 같다. 각주는 기존 참고문헌 줄을 쓴다. 원문 미열람.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: ETRI·KAIST 동향 논문은 실재하는 게시 참고문헌이다. '국내 운영 사례 미확인'은 부재를 확정하는 표현이 아니라 조사 범위의 한계로 쓴다(oq-142). 원문 미열람.\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지 3절에 세 발행 주체의 사실로 실린 주장이다. 이번 검증에서 세 출처를 다시 열지 않았으므로 cross_checked 는 false 로 적는다. 원문 미열람.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2503.07885 를 열어 확인했다(v1 2025-03-10, v2 2026-03-03). 신뢰 근간 LLM 이 안전 규칙을 시간 논리 제약 같은 사양으로 접지하고, 시간 논리 제어 합성으로 사용자 선호를 최소한으로 어기며 충돌을 해소한다. 최악 조건 탈옥 공격에서 위험 계획 실행이 '92% 초과'에서 '3% 미만'으로 줄었다(시뮬레이션·실세계). 프리프린트이고 단일 출처 저자 보고값이며, v1 수치와 다르므로 판을 밝힌다.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지 9절의 추정과 같다. ref-867 원문 미열람.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: EU AI Act 제12조(기록 보존)는 13번 페이지 7절에 사실로 실려 있다. 해당 여부는 열린 질문(oq-143)이며, 법 적용 판단은 59. 법·규제·보험·라이선스 쪽 연계 대상으로 둔다. 원문 미열람.\"},{\"finding_id\":\"f47\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 개인정보보호위원회 안내서는 실재하는 게시 참고문헌이다. 구체 조항을 확인하지 않았으므로 추정 유지. 원문 미열람.\"},{\"finding_id\":\"f48\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: raw README 에 GenAI 클라이언트의 스팬·지표·이벤트와 MCP·공급자별 규약이 있다. gen-ai-metrics.md 의 지표 9종(gen_ai.invoke_agent.tool_calls·inference_calls·duration, gen_ai.execute_tool.duration 등)은 모두 Development 이고, gen_ai.client.token.usage 는 이 문서에 정의되지 않으며 토큰 지표는 Inference Token Metrics 문서의 gen_ai.client.inference.usage.* 로 안내한다. 확인일 2026-10-09. 개발 단계라 바뀔 수 있다(oq-212).\"},{\"finding_id\":\"f49\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지의 IRIS 인용과 같다(oq-145). 추정 유지, 원문 미열람.\"},{\"finding_id\":\"f50\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지 9절(ref-866)과 10번 페이지(ref-759 로컬 LLM)에 근거가 있다. 음성 인식 강건성은 공급자 몫(연계 대상)이라는 범위 표시를 유지한다. 원문 미열람.\"},{\"finding_id\":\"f51\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: τ-bench·Embodied Agent Interface 는 13번 페이지에 실린 공개 벤치마크다. 로봇 구성 대화 전용 벤치마크는 미확인(oq-127). 원문 미열람.\"},{\"finding_id\":\"f52\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 13번 페이지 5절 상업 시설 사례의 사실과 같다(Frontiers 2025-04-29). 원문 미열람.\"},{\"finding_id\":\"f53\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: 정책브리핑(보건복지부, 2026-01-28)을 열어 확인했다. 단계적 의무화를 거쳐 기존 기기까지 전면 적용되고, 50㎡ 미만 소규모 근린생활시설·소상공인·테이블 주문형 소형 기기는 보조기기(소프트웨어)·보조 인력·호출벨 가운데 하나로 이행한다. 위치 음성 안내 같은 정당한 편의도 정한다. 로봇·채팅 화면 해당 여부는 기사에 없다. 같은 URL 이 브리프 2026-09-30-24 의 ref-1268 로 쓰였으므로 퍼블리셔 병합 대상이다.\"},{\"finding_id\":\"f54\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"확인: arXiv 2410.16804 초록(2024-10-22, IROS 2024)에 'bring-me' 작업, 환경 데이터로 확장한 온톨로지에 LLM 상식을 더해 환각과 사용자 질의를 줄인다는 내용이 있다. 정량 결과는 초록에 없다.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":false,\"overlaps\":[\"참고문헌 id 충돌 위험: 이 브리프는 ref-1239~ref-1242 를 새 id 로 썼다. 그런데 브리프 2026-09-30-23 이 같은 번호를 다른 출처(ref-1239 Gazebo 모델 구조, ref-1240 지디넷코리아 보험 기사 등)에 줬고, 용어집에 그 두 실행의 용어 후보(제조물책임·사이버복원력법·소프트웨어 자재명세서·무인정보단말기 접근성 등)가 이미 있어 게시됐을 가능성이 있다. 입력의 참고문헌 색인은 '전체 1238건'이라 서로 맞지 않는다.\",\"ref-1242(정책브리핑 무인정보단말기, newsId=148958690)는 브리프 2026-09-30-24 의 ref-1268 과 URL 이 같다. 기존 id 가 있으면 그 id 로 합쳐야 한다.\",\"f53 의 내용은 60. 노동·수용성·접근성 브리프(2026-09-30-24) f15 와 같은 사실이다. 이 대분류 페이지에서는 연결 근거로만 짧게 쓴다.\",\"ref-847 근거 주장의 태그가 게시 페이지끼리 다르다(9. 채팅으로 시나리오 구성 5절은 [추정], 12. 채팅으로 업무 지시·오케스트레이션 5절은 [사실]). 이번 f16 은 [추정]으로 맞춘다.\",\"f7·f12·f15·f20·f38 은 A. 기획·사업·B. 로봇 온톨로지·F. 연동·G. 계획·최적화 대분류 페이지의 '이전 분류 기준' 연결 절에 이미 실린 검증된 주장이다. 새 각주를 만들지 말고 같은 각주 id 를 재사용한다.\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"page_proposals 의 절 이름: patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 대분류 페이지 정본 H2 문자열 '다른 대분류와의 연결'(번호 없음)로 쓴다 — 퍼블리셔 검사 CATEGORY_SECTIONS 와 입력 페이지의 H2 가 번호 없는 제목이다.\",\"f16: [사실] → [추정]으로 강등하고 '원문 미열람(검색 결과 요약 기준)'과 '실행 전 사람 승인 절차 유무는 미확인'을 함께 적는다 — 이번 검증에서 ref-847 을 다시 열거나 검색으로 확인하지 못했다. 이미 게시된 9. 채팅으로 시나리오 구성 페이지도 같은 내용을 [추정]으로 실었다.\",\"f6·f22: 본문 문장에 [추정] 태그와 함께 '벤더 주장'을 병기한다 — 출처가 각각 모빌리오·폴라리스3D 업체 문서이고 독립 확인이 없다.\",\"f4·f14: 승강기 호출·버튼 조작 같은 실제 설비 제어는 분류 원문 19장 '시설·설비 제어' 경계의 연계 대상이라고 짧게 밝힌다. ROP 몫은 지도 요소 등록·통과 제약 반영·단계 완료 확인으로만 쓴다.\",\"f46·f47·f53: 법 적용 여부(고위험·고영향 AI 해당, 개인정보 처리 적법성, 무인정보단말기 해당)는 운영자·법무가 판단할 연계 대상으로 쓴다. f53 은 '로봇 현장 단말·채팅 화면이 무인정보단말기에 해당하는지는 출처에 없다'는 단서를 붙여 P. 거버넌스·법규·사회의 60. 노동·수용성·접근성 연결 근거로만 짧게 쓴다.\",\"f53: 기존 기기 적용은 '단계적 의무화를 거쳐 기존 기기까지 전면 적용'으로 쓴다(정책브리핑 부제). reference_updates 의 ref-1242 는 URL 이 같은 기존 참고문헌(브리프 2026-09-30-24 의 ref-1268)이 있으면 그 id 로 합치라는 메모를 남긴다.\",\"f44: RoboGuard 수치는 arXiv v2(2026-03-03) 초록 기준이며 v1 과 수치가 다르다는 점, 프리프린트이고 단일 출처의 저자 보고값(시뮬레이션·실세계 실험)이라는 점을 병기한다. ref-1239 각주 발행일은 2025-03-10(v1)으로 쓰고 v2 개정일 2026-03-03 을 덧붙인다.\",\"f48: OpenTelemetry 생성형 AI 지표는 모두 개발(Development) 단계라 이름·정의가 바뀔 수 있다는 점과 확인일 2026-10-09 를 본문에 남긴다. 토큰 지표 이름 차이는 oq-212 로 연결한다.\",\"f34: Nayantra 내용은 발표 예고 게시글(2026-06-25) 기준이며 발표 영상 내용은 확인하지 않았다고 적는다. '승인·접근통제를 언급하지 않는다'는 게시글 범위의 진술로만 쓴다.\",\"f24·f28: 대분류 페이지에서 f24(Ko·Lin)를 특정 현장 유형 사례로 단정하지 않는다(출처가 현장 유형을 밝히지 않은 가상 라인이다). f28 의 '최대 3.5배'는 저자 보고값이며 실제 운영 기록 재현이 아니라고 병기한다.\",\"f26: 18. 실시간 세계 상태·데이터 일관성(현재 상태를 표현)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)의 구분을 그대로 유지한다. E. 사물·사람·실시간 상태의 19. 사람·보행자 모델은 f26 으로 연결하지 말고 '아직 다루지 않은 연결'에 둔다.\",\"각주: 재사용 출처는 참고문헌 페이지의 '각주 형식' 줄을 그대로 복사한다(예: ref-674 발행일 2026-06-06, ref-090 2023-09-18). source_unopened 가 true 인 출처(ref-083·046·104·787·812·817·811·786·815·843·844·847·677·351·864·229·201·822·823·759·825·826·832·824·828·831·838·830·837·827·090·242·059·856·753·850·165·851·848·855·857·859·867·863·862·865·866·738·858·868)는 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. data/source_texts 원문이 있는 ref-079·ref-125·ref-110·ref-049·ref-228·ref-105·ref-111 에는 원문 미열람 표시를 붙이지 않는다.\",\"open_questions_new 1번(RoboGuard 안전 가드레일): 기존 oq-139(승인 부담)·oq-144(탈옥 방어 효과)와 관련 질문임을 본문 열린 질문 항목에 함께 적는다. f44 는 oq-144 의 부분 진전일 뿐 해결로 바꾸지 않는다.\",\"모든 연결 서술과 mermaid 도식에서 대분류는 문자와 이름(예: 'G. 계획·최적화'), 세부영역은 번호와 이름을 함께 쓴다. 원문 주석의 짝 엔진(14·15, 33·36, 5, 25·26)을 먼저 서술하고 '사람이 확인·승인한 계획만 실행' 주석을 연결 축으로 쓰는 브리프 계획을 따른다. 다른 대분류 페이지(A·B·F·G)의 이전 분류 기준 연결 절은 이번 patches 에서 고치지 않는다.\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 53건, 미확인 1건, 교차 확인 0건(이번 검증에서 직접 대조한 기준이다. f18·f43 은 13. 대화형 기능의 신뢰·기반 페이지 검증에서 이미 교차 확인됐다). 강등: f16 사실 → 추정(ref-847 을 이번에 열람·검색으로 다시 확인하지 못했다). 원문 미열람 출처: ref-083, ref-046, ref-104, ref-787, ref-812, ref-817, ref-811, ref-786, ref-815, ref-843, ref-844, ref-847, ref-677, ref-351, ref-864, ref-229, ref-201, ref-822, ref-823, ref-759, ref-825, ref-826, ref-832, ref-824, ref-828, ref-831, ref-838, ref-830, ref-837, ref-827, ref-090, ref-242, ref-059, ref-856, ref-753, ref-850, ref-165, ref-851, ref-848, ref-855, ref-857, ref-859, ref-867, ref-863, ref-862, ref-865, ref-866, ref-738, ref-858, ref-868. 이번 검증에서 직접 연 출처: ref-1239(RoboGuard v2), ref-1240·ref-1241(OpenTelemetry 생성형 AI 의미 규약), ref-1242(정책브리핑), ref-854(Discourse), ref-849(HMCF), ref-453(REFLECT), ref-674(KTH), ref-818(Nakajima·Miura). 나머지 재사용 출처는 게시된 8. 채팅으로 맵 작성 ~ 13. 대화형 기능의 신뢰·기반 페이지와 A·B·F·G 대분류 연결 절의 검증 결과에 기댔다. 주의: 대분류 연결 근거 대부분이 단일 출처의 재인용이고 54건 가운데 26건이 [추정]이다. 브리프 출처 항목 가운데 ref-079·ref-125·ref-110·ref-049·ref-228·ref-105·ref-111 은 fetched true 인데 summary 가 '원문 미열람.'으로 시작해 서로 맞지 않는다. 입력에 원문 텍스트가 있으므로 열람으로 본다. 새 참고문헌 id ref-1239~ref-1242 는 브리프 2026-09-30-23·24 가 다른 출처에 쓴 번호와 겹칠 수 있다. ref-1242 는 브리프 2026-09-30-24 의 ref-1268 과 URL 이 같으므로 퍼블리셔가 id 충돌과 병합을 확인해야 한다. oq-144 는 f44 로 부분 진전했지만 해결로 보지 않는다. 미사용 출처 없음. 정정 요청 없음. 검증 검색 3회(ref-847 확인 시도 3회, 모두 미일치)·열람 10회.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-01",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8. 채팅으로 맵 작성 페이지 10절에 실린 검증된 주장(사실·추정 분리)과 같다. ref-083 은 이번 검증에서 다시 열지 않았다(원문 미열람). 추정 유지."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: data/source_texts/ref-079 원문에 두 점 사이 실제 거리(미터)로 축척 설정, 층·승강기·문·벽·차선과 is_charger·is_parking_spot 꼭짓점 속성이 있다. 단일 출처이나 문서 구조에 관한 진술이라 사실 유지. 발행일 미확인."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8번 페이지 7절의 추정과 같다(oq-124). ref-046 원문 미열람. 공식 변환 규칙 부재는 '확인하지 못함'으로 쓴다."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8번 페이지 5·9절과 같다. 승강기 호출·버튼 조작은 분류 원문 19장 시설·설비 제어 경계의 연계 대상으로 짧게 다룬다. ref-104 는 이번에 다시 열지 않았다."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8번 페이지 3절의 추정과 같다. ref-787·ref-812 원문 미열람. 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기, 방법은 45. 문서·도면·장면 이해)대로 두 영역에 함께 연결한다."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8번 페이지 5절의 벤더 주장(모빌리오, 2026-08-24)과 같다. vendor_claim true, 추정 유지. 본문에서 '벤더 주장' 병기 필요. 원문 미열람."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: B. 로봇 온톨로지 대분류 페이지에 같은 각주로 실린 검증된 주장이다. ref-079 원문 발췌에 충전·주차 꼭짓점 속성과 building_map_generator 가 있다(주행 그래프 내보내기 부분은 발췌 범위 밖이며 기존 검증을 따른다)."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 8번 페이지 5절 실외 사례의 사실 문장과 같다(대한공간정보학회지 2022-06). 원문 미열람."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: SENT Map 은 실재하는 연구(8번 페이지 인용). 16. 장소 의미·지도 관리와의 연결은 추정이며 oq-204 와 함께 둔다. 원문 미열람."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Holodeck 은 실재하는 연구. 로봇 현장 지도에 쓴 사례가 없다는 단서를 유지한다. 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험) 쪽 연결로만 쓴다. 원문 미열람."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 9번 페이지 9절의 추정과 같다. ref-843·ref-844 원문 미열람."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: data/source_texts/ref-125 에 시각·순서 관련 필드로 unix_millis_earliest_start_time·priority 만 있고 마감·선후 필드가 없다. G. 계획·최적화 대분류 연결 절과 같은 각주를 재사용한다."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-110(compose·PickUp·DropOff)과 ref-125(기한 필드 없음) 원문과 맞는다. 9번 페이지 7·10절의 추정(oq-137)과 같다."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: data/source_texts/ref-110 원문이 RequestLift 단계는 RMF 가 내부에서 쓰며 필요할 때 자동으로 넣는다고 적는다. 승강기 호출 자체는 연계 대상으로 표시한다."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-049 원문 필드는 time·request_guid·source_guid·status 뿐이다(그 아래 '커스텀 워크셀 메시지 필드' 주석이 있어 확장 여지는 있다). ref-110 의 PickUp·DropOff 단계도 원문과 맞는다. 추정 유지."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "사실 → 추정: ref-847 은 기존 게시 참고문헌이지만 이번 검증에서는 Springer 열람이 인증 리디렉트로 막혔다. 검색 2회에서도 제목·내용이 확인되지 않아 검색 결과 요약 범위를 다시 확인하지 못했다. 이미 게시된 9번 페이지는 같은 내용을 [추정](원문 미열람)으로 실었으므로 그 수준에 맞춘다. 실행 전 사람 승인 절차가 있었는지는 미확인으로 둔다."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 12번 페이지 9절의 추정과 같다(oq-140). ref-677 원문 미열람."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지 6절에 두 독립 그룹의 사실로 실린 주장이다. 이번 검증에서 두 출처를 다시 열지 않았으므로 cross_checked 는 false 로 적는다. 핵심 수치가 아니므로 사실 유지. ref-351·ref-864 원문 미열람."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 10번 페이지 10절의 추정과 같다(원문 주석의 로봇 구성 짝 엔진, 5. 로봇 능력·작업 표현). ref-229·ref-201 원문 미열람."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ref-228 원문에 protocolFeatures.mobileRobotActions 와 필수 필드 loadSpecification 이 있다(loadSets 는 발췌 범위 밖이며 기존 검증을 따른다). ref-105 원문에 task_capabilities·actions 가 있다. 서로 다른 인터페이스의 사례로 서술한다."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 10번 페이지 5절 물류창고 사례의 사실과 같다(Cal Poly 석사논문, 2026-06). 단일 학위논문의 시뮬레이션 결과임을 밝힌다. 원문 미열람."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 10번 페이지 5절 제조 공장 사례의 벤더 주장과 같다(폴라리스3D 블로그 2026-06-12). vendor_claim true, 추정 유지. '벤더 주장' 병기 필요. 원문 미열람."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2606.08214 초록(2026-06-06 제출)에 Unity3D 트윈에서 운영자가 계획을 검토·수정·재검증한 뒤 실기 실행한다는 내용과 '검증·순서·실행은 결정적' 문구가 있다. 정량 결과는 초록에 없다. 각주 발행일은 기존 참고문헌 줄(2026-06-06)을 쓴다."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 10번 페이지 5절에 사실로 실린 수치와 같다. 출처가 현장 유형을 명시하지 않고 가상 라인이므로 대분류 페이지에서는 현장 사례로 단정하지 않는다. 원문 미열람."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 10절의 추정과 같다. 원문 주석의 짝 엔진(36. 가상 시운전·실제 상황 재현) 연결이다. ref-825·ref-826 원문 미열람."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 6절과 같다. 18. 실시간 세계 상태·데이터 일관성(현재 상태 표현)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래 실험)을 원문 주석대로 구분했다. ref-832·ref-824 원문 미열람. 19. 사람·보행자 모델 연결의 근거는 아니다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 9절의 추정과 같다(oq-131). rosbag2 한 대 기록 재생은 연계 대상. ref-828·ref-831 원문 미열람. ref-828 기준일 2020."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 5절 제조 공장 사례의 사실과 같다. '최대 3.5배'는 저자 보고값이고 실제 운영 기록 재현이 아님을 병기한다. 원문 미열람(초록 기준)."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 5절 병원 사례의 사실과 같다(Electronics 14(24), 2025-12-17). 정량 결과는 미확인. 원문 미열람."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 10·11절의 추정과 같다(oq-132). 원문 미열람."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 11번 페이지 3절의 사실과 같다(서베이 2025-03-04). 원문 미열람."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 10·12번 페이지에 사실로 실린 SMART-LLM 의 3단계 구조다. 각주 발행일은 기존 참고문헌 줄(2023-09-18)을 쓴다. 원문 미열람."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 12번 페이지 10절의 구축자 추정과 같다. 원문 주석의 짝 엔진(25. 작업 배정 — MRTA·26. 작업 순서·스케줄링) 연결이다. 원문 미열람."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: Discourse 게시글(작성 2026-06-25, 발표 2026-07-02)을 열어 확인했다. Nayantra MCP 서버가 Open-RMF REST API 를 LLM 이 부를 수 있는 도구로 노출하고, 평문 지시를 여러 단계의 RMF 임무로 바꿔 Nav2·Isaac Sim 창고에서 실행한다. 승인·접근통제·인증 언급은 없다. 발표 예고 게시글 기준이며 발표 영상 내용은 미확인이다. 직접 인용 1회는 짧은 구절이다."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: MCP 명세의 동의 책임은 13번 페이지 9절에 사실로 실려 있다. ref-854 게시글에 승인 언급이 없음을 이번에 확인했다. 추정 유지(oq-141). ref-856 원문 미열람."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: VerifyLLM(ref-753, 원문 미열람)과 KTH 초록(ref-674, 이번에 열람)이 실행 전 검증 구조를 뒷받침한다. 12번 페이지 9절의 추정과 같다."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2505.00820 초록(2025-05-01)에 로봇별 LLM 에이전트, 필요할 때만 개입하는 사람 감독, 시뮬레이션 성공률 4.76% 향상이 있다. 초록은 실세계 시험도 언급하지만 승인 절차 세부는 없다. 단일 출처의 저자 보고값임을 밝힌다."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: data/source_texts/ref-111 에 status 열거값, 시작·종료 시각, cancellation·killed·interruptions 기록이 있다. 추정 유지."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 12번 페이지 5절 실외 사례의 사실과 같다(2025-09-19). 원문 미열람(초록 기준)."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2306.15724 초록(v1 2023-06-27, CoRL 2023)에 다중 감각 관측의 계층 요약, LLM 실패 추론, 언어 계획기의 수정, RoboFail 데이터셋이 있다. 교차 규칙대로 장애 분석은 38. 모니터링·이상 탐지·원인 분석에 적용되는 방법으로 L. AI·학습 기술과 양쪽에 연결한다."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 12번 페이지 8·11절에 사실로 실린 서베이 내용과 같다. 각주는 기존 참고문헌 줄을 쓴다. 원문 미열람."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: ETRI·KAIST 동향 논문은 실재하는 게시 참고문헌이다. '국내 운영 사례 미확인'은 부재를 확정하는 표현이 아니라 조사 범위의 한계로 쓴다(oq-142). 원문 미열람."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지 3절에 세 발행 주체의 사실로 실린 주장이다. 이번 검증에서 세 출처를 다시 열지 않았으므로 cross_checked 는 false 로 적는다. 원문 미열람."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2503.07885 를 열어 확인했다(v1 2025-03-10, v2 2026-03-03). 신뢰 근간 LLM 이 안전 규칙을 시간 논리 제약 같은 사양으로 접지하고, 시간 논리 제어 합성으로 사용자 선호를 최소한으로 어기며 충돌을 해소한다. 최악 조건 탈옥 공격에서 위험 계획 실행이 '92% 초과'에서 '3% 미만'으로 줄었다(시뮬레이션·실세계). 프리프린트이고 단일 출처 저자 보고값이며, v1 수치와 다르므로 판을 밝힌다."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지 9절의 추정과 같다. ref-867 원문 미열람."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: EU AI Act 제12조(기록 보존)는 13번 페이지 7절에 사실로 실려 있다. 해당 여부는 열린 질문(oq-143)이며, 법 적용 판단은 59. 법·규제·보험·라이선스 쪽 연계 대상으로 둔다. 원문 미열람."
+      },
+      {
+        "finding_id": "f47",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 개인정보보호위원회 안내서는 실재하는 게시 참고문헌이다. 구체 조항을 확인하지 않았으므로 추정 유지. 원문 미열람."
+      },
+      {
+        "finding_id": "f48",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: raw README 에 GenAI 클라이언트의 스팬·지표·이벤트와 MCP·공급자별 규약이 있다. gen-ai-metrics.md 의 지표 9종(gen_ai.invoke_agent.tool_calls·inference_calls·duration, gen_ai.execute_tool.duration 등)은 모두 Development 이고, gen_ai.client.token.usage 는 이 문서에 정의되지 않으며 토큰 지표는 Inference Token Metrics 문서의 gen_ai.client.inference.usage.* 로 안내한다. 확인일 2026-10-09. 개발 단계라 바뀔 수 있다(oq-212)."
+      },
+      {
+        "finding_id": "f49",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지의 IRIS 인용과 같다(oq-145). 추정 유지, 원문 미열람."
+      },
+      {
+        "finding_id": "f50",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지 9절(ref-866)과 10번 페이지(ref-759 로컬 LLM)에 근거가 있다. 음성 인식 강건성은 공급자 몫(연계 대상)이라는 범위 표시를 유지한다. 원문 미열람."
+      },
+      {
+        "finding_id": "f51",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: τ-bench·Embodied Agent Interface 는 13번 페이지에 실린 공개 벤치마크다. 로봇 구성 대화 전용 벤치마크는 미확인(oq-127). 원문 미열람."
+      },
+      {
+        "finding_id": "f52",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 13번 페이지 5절 상업 시설 사례의 사실과 같다(Frontiers 2025-04-29). 원문 미열람."
+      },
+      {
+        "finding_id": "f53",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: 정책브리핑(보건복지부, 2026-01-28)을 열어 확인했다. 단계적 의무화를 거쳐 기존 기기까지 전면 적용되고, 50㎡ 미만 소규모 근린생활시설·소상공인·테이블 주문형 소형 기기는 보조기기(소프트웨어)·보조 인력·호출벨 가운데 하나로 이행한다. 위치 음성 안내 같은 정당한 편의도 정한다. 로봇·채팅 화면 해당 여부는 기사에 없다. 같은 URL 이 브리프 2026-09-30-24 의 ref-1268 로 쓰였으므로 퍼블리셔 병합 대상이다."
+      },
+      {
+        "finding_id": "f54",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "확인: arXiv 2410.16804 초록(2024-10-22, IROS 2024)에 'bring-me' 작업, 환경 데이터로 확장한 온톨로지에 LLM 상식을 더해 환각과 사용자 질의를 줄인다는 내용이 있다. 정량 결과는 초록에 없다."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": false,
+      "overlaps": [
+        "참고문헌 id 충돌 위험: 이 브리프는 ref-1239~ref-1242 를 새 id 로 썼다. 그런데 브리프 2026-09-30-23 이 같은 번호를 다른 출처(ref-1239 Gazebo 모델 구조, ref-1240 지디넷코리아 보험 기사 등)에 줬고, 용어집에 그 두 실행의 용어 후보(제조물책임·사이버복원력법·소프트웨어 자재명세서·무인정보단말기 접근성 등)가 이미 있어 게시됐을 가능성이 있다. 입력의 참고문헌 색인은 '전체 1238건'이라 서로 맞지 않는다.",
+        "ref-1242(정책브리핑 무인정보단말기, newsId=148958690)는 브리프 2026-09-30-24 의 ref-1268 과 URL 이 같다. 기존 id 가 있으면 그 id 로 합쳐야 한다.",
+        "f53 의 내용은 60. 노동·수용성·접근성 브리프(2026-09-30-24) f15 와 같은 사실이다. 이 대분류 페이지에서는 연결 근거로만 짧게 쓴다.",
+        "ref-847 근거 주장의 태그가 게시 페이지끼리 다르다(9. 채팅으로 시나리오 구성 5절은 [추정], 12. 채팅으로 업무 지시·오케스트레이션 5절은 [사실]). 이번 f16 은 [추정]으로 맞춘다.",
+        "f7·f12·f15·f20·f38 은 A. 기획·사업·B. 로봇 온톨로지·F. 연동·G. 계획·최적화 대분류 페이지의 '이전 분류 기준' 연결 절에 이미 실린 검증된 주장이다. 새 각주를 만들지 말고 같은 각주 id 를 재사용한다."
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "page_proposals 의 절 이름: patches 의 section 을 '5. 다른 대분류와의 연결'이 아니라 대분류 페이지 정본 H2 문자열 '다른 대분류와의 연결'(번호 없음)로 쓴다 — 퍼블리셔 검사 CATEGORY_SECTIONS 와 입력 페이지의 H2 가 번호 없는 제목이다.",
+      "f16: [사실] → [추정]으로 강등하고 '원문 미열람(검색 결과 요약 기준)'과 '실행 전 사람 승인 절차 유무는 미확인'을 함께 적는다 — 이번 검증에서 ref-847 을 다시 열거나 검색으로 확인하지 못했다. 이미 게시된 9. 채팅으로 시나리오 구성 페이지도 같은 내용을 [추정]으로 실었다.",
+      "f6·f22: 본문 문장에 [추정] 태그와 함께 '벤더 주장'을 병기한다 — 출처가 각각 모빌리오·폴라리스3D 업체 문서이고 독립 확인이 없다.",
+      "f4·f14: 승강기 호출·버튼 조작 같은 실제 설비 제어는 분류 원문 19장 '시설·설비 제어' 경계의 연계 대상이라고 짧게 밝힌다. ROP 몫은 지도 요소 등록·통과 제약 반영·단계 완료 확인으로만 쓴다.",
+      "f46·f47·f53: 법 적용 여부(고위험·고영향 AI 해당, 개인정보 처리 적법성, 무인정보단말기 해당)는 운영자·법무가 판단할 연계 대상으로 쓴다. f53 은 '로봇 현장 단말·채팅 화면이 무인정보단말기에 해당하는지는 출처에 없다'는 단서를 붙여 P. 거버넌스·법규·사회의 60. 노동·수용성·접근성 연결 근거로만 짧게 쓴다.",
+      "f53: 기존 기기 적용은 '단계적 의무화를 거쳐 기존 기기까지 전면 적용'으로 쓴다(정책브리핑 부제). reference_updates 의 ref-1242 는 URL 이 같은 기존 참고문헌(브리프 2026-09-30-24 의 ref-1268)이 있으면 그 id 로 합치라는 메모를 남긴다.",
+      "f44: RoboGuard 수치는 arXiv v2(2026-03-03) 초록 기준이며 v1 과 수치가 다르다는 점, 프리프린트이고 단일 출처의 저자 보고값(시뮬레이션·실세계 실험)이라는 점을 병기한다. ref-1239 각주 발행일은 2025-03-10(v1)으로 쓰고 v2 개정일 2026-03-03 을 덧붙인다.",
+      "f48: OpenTelemetry 생성형 AI 지표는 모두 개발(Development) 단계라 이름·정의가 바뀔 수 있다는 점과 확인일 2026-10-09 를 본문에 남긴다. 토큰 지표 이름 차이는 oq-212 로 연결한다.",
+      "f34: Nayantra 내용은 발표 예고 게시글(2026-06-25) 기준이며 발표 영상 내용은 확인하지 않았다고 적는다. '승인·접근통제를 언급하지 않는다'는 게시글 범위의 진술로만 쓴다.",
+      "f24·f28: 대분류 페이지에서 f24(Ko·Lin)를 특정 현장 유형 사례로 단정하지 않는다(출처가 현장 유형을 밝히지 않은 가상 라인이다). f28 의 '최대 3.5배'는 저자 보고값이며 실제 운영 기록 재현이 아니라고 병기한다.",
+      "f26: 18. 실시간 세계 상태·데이터 일관성(현재 상태를 표현)과 34. 시뮬레이션·예측용 디지털 트윈(가정한 미래를 실험)의 구분을 그대로 유지한다. E. 사물·사람·실시간 상태의 19. 사람·보행자 모델은 f26 으로 연결하지 말고 '아직 다루지 않은 연결'에 둔다.",
+      "각주: 재사용 출처는 참고문헌 페이지의 '각주 형식' 줄을 그대로 복사한다(예: ref-674 발행일 2026-06-06, ref-090 2023-09-18). source_unopened 가 true 인 출처(ref-083·046·104·787·812·817·811·786·815·843·844·847·677·351·864·229·201·822·823·759·825·826·832·824·828·831·838·830·837·827·090·242·059·856·753·850·165·851·848·855·857·859·867·863·862·865·866·738·858·868)는 각주 접근일 뒤에 ' (원문 미열람)'을 붙이고 reference_updates 에 source_unopened: true 를 넣는다. data/source_texts 원문이 있는 ref-079·ref-125·ref-110·ref-049·ref-228·ref-105·ref-111 에는 원문 미열람 표시를 붙이지 않는다.",
+      "open_questions_new 1번(RoboGuard 안전 가드레일): 기존 oq-139(승인 부담)·oq-144(탈옥 방어 효과)와 관련 질문임을 본문 열린 질문 항목에 함께 적는다. f44 는 oq-144 의 부분 진전일 뿐 해결로 바꾸지 않는다.",
+      "모든 연결 서술과 mermaid 도식에서 대분류는 문자와 이름(예: 'G. 계획·최적화'), 세부영역은 번호와 이름을 함께 쓴다. 원문 주석의 짝 엔진(14·15, 33·36, 5, 25·26)을 먼저 서술하고 '사람이 확인·승인한 계획만 실행' 주석을 연결 축으로 쓰는 브리프 계획을 따른다. 다른 대분류 페이지(A·B·F·G)의 이전 분류 기준 연결 절은 이번 patches 에서 고치지 않는다."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 53건, 미확인 1건, 교차 확인 0건(이번 검증에서 직접 대조한 기준이다. f18·f43 은 13. 대화형 기능의 신뢰·기반 페이지 검증에서 이미 교차 확인됐다). 강등: f16 사실 → 추정(ref-847 을 이번에 열람·검색으로 다시 확인하지 못했다). 원문 미열람 출처: ref-083, ref-046, ref-104, ref-787, ref-812, ref-817, ref-811, ref-786, ref-815, ref-843, ref-844, ref-847, ref-677, ref-351, ref-864, ref-229, ref-201, ref-822, ref-823, ref-759, ref-825, ref-826, ref-832, ref-824, ref-828, ref-831, ref-838, ref-830, ref-837, ref-827, ref-090, ref-242, ref-059, ref-856, ref-753, ref-850, ref-165, ref-851, ref-848, ref-855, ref-857, ref-859, ref-867, ref-863, ref-862, ref-865, ref-866, ref-738, ref-858, ref-868. 이번 검증에서 직접 연 출처: ref-1239(RoboGuard v2), ref-1240·ref-1241(OpenTelemetry 생성형 AI 의미 규약), ref-1242(정책브리핑), ref-854(Discourse), ref-849(HMCF), ref-453(REFLECT), ref-674(KTH), ref-818(Nakajima·Miura). 나머지 재사용 출처는 게시된 8. 채팅으로 맵 작성 ~ 13. 대화형 기능의 신뢰·기반 페이지와 A·B·F·G 대분류 연결 절의 검증 결과에 기댔다. 주의: 대분류 연결 근거 대부분이 단일 출처의 재인용이고 54건 가운데 26건이 [추정]이다. 브리프 출처 항목 가운데 ref-079·ref-125·ref-110·ref-049·ref-228·ref-105·ref-111 은 fetched true 인데 summary 가 '원문 미열람.'으로 시작해 서로 맞지 않는다. 입력에 원문 텍스트가 있으므로 열람으로 본다. 새 참고문헌 id ref-1239~ref-1242 는 브리프 2026-09-30-23·24 가 다른 출처에 쓴 번호와 겹칠 수 있다. ref-1242 는 브리프 2026-09-30-24 의 ref-1268 과 URL 이 같으므로 퍼블리셔가 id 충돌과 병합을 확인해야 한다. oq-144 는 f44 로 부분 진전했지만 해결로 보지 않는다. 미사용 출처 없음. 정정 요청 없음. 검증 검색 3회(ref-847 확인 시도 3회, 모두 미일치)·열람 10회.",
+    "retry_reason": null
+  },
+  "ttft_ms": 69418,
+  "type": "result",
+  "duration_ms": 253418,
+  "uuid": "310c2abb-6819-43b0-b42e-beb7e5e933dd",
+  "ttft_stream_ms": 1532,
+  "time_to_request_ms": 123,
+  "time_to_request_phases_ms": {
+    "other": 25,
+    "system_prompt": 11,
+    "resume_other": 0,
+    "process_user_input": 9,
+    "input_attachments": 31,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 7,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 16
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 73,
+  "time_to_request_cpu_ms": 194,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "mcp_resources",
+    "slowest_producer_ms": 10,
+    "cpu_ms": 63,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1533,
+  "time_to_request_from_spawn_ms": 877557,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791507144887.6418,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 255.2
+}
