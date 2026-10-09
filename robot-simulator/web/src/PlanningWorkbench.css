@@ -37,10 +37,10 @@
   padding: 20px;
   border-radius: 8px;
   min-width: 0;
-  position: sticky;
-  top: 110px;
-  max-height: calc(100vh - 135px);
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 12px;
 }
 .planner-chat-title {
   display: flex;
@@ -94,13 +94,16 @@
   display: grid;
   gap: 14px;
   padding: 18px 0;
-  max-height: 400px;
-  overflow: auto;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  min-width: 0;
 }
 /* Planning is place selection, not the editor's marquee gesture. */
 .planner-map .plan-object:is(.kind-room,.kind-corridor) .plan-hit-target,
 .planner-map .plan-object:is(.kind-room,.kind-corridor) .plan-geometry {pointer-events:all}
 .planner-message {
+  min-width: 0;
+  max-width: 100%;
   padding: 12px;
   background: #f2f5f6;
   border-radius: 6px;
@@ -146,8 +149,9 @@
   overflow: hidden;
   background: #fff;
 }
-.planner-map > .plan-view {
+.planner-map > .map-view {
   height: 100%;
+  min-height: 0;
 }
 .planner-reference-detail {
   display: flex;
@@ -750,4 +754,142 @@
 }
 .ontology-verification > details {
   padding: 10px 0;
+}
+
+
+/* Each desktop pane owns its scroll. The composer stays outside the transcript. */
+.planner-chat-body {
+  min-width: 0;
+  min-height: 0;
+  max-height: 50dvh;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+}
+.planner-chat-title,
+.planner-composer {
+  flex-shrink: 0;
+}
+.planner-chat .planner-composer {
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border, #d8dfe6);
+  background: var(--surface, #fff);
+}
+.planner-composer > label:first-child {
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+.planner-composer > label:first-child select {
+  flex: 1;
+  width: auto;
+  font-size: 12px;
+}
+.planner-composer textarea {
+  height: 72px;
+  min-height: 64px;
+  max-height: 120px;
+  resize: vertical;
+}
+.planner-messages .planner-references button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.planner-chat-body:focus-visible,
+.planner-main:focus-visible {
+  outline: 2px solid #336b9a;
+  outline-offset: -2px;
+}
+.planner-main > .scenario-draft {
+  margin-top: 16px;
+}
+.planner-map-heading {
+  flex-wrap: wrap;
+}
+@media (min-width: 1001px) {
+  .content.page-planner {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .page-planner > .page-heading,
+  .page-planner > .footer {
+    flex-shrink: 0;
+  }
+  .page-planner > div:has(> .planning-workbench):not([hidden]) {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+  }
+  .page-planner .planning-workbench {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+  }
+  .page-planner .planning-heading {
+    flex-shrink: 0;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+  .page-planner .planning-heading h2,
+  .page-planner .planning-heading .eyebrow {
+    display: none;
+  }
+  .page-planner .planning-heading p {
+    font-size: 13px;
+  }
+  /* Expanded setup stays reachable without squeezing the conversation to zero. */
+  .page-planner .planning-workbench:has(> :is(.planner-connection, .ontology-panel)) {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .page-planner .planning-workbench:has(> :is(.planner-connection, .ontology-panel)) > .planning-heading {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: var(--color-surface, #f8fafb);
+  }
+  .page-planner .planning-workbench > :is(.planner-connection, .ontology-panel) {
+    flex-shrink: 0;
+    margin-bottom: 12px;
+  }
+  .page-planner .planning-workbench:has(> :is(.planner-connection, .ontology-panel)) > .planner-columns {
+    flex: 0 0 max(420px, calc(100dvh - 280px));
+  }
+  .page-planner .planner-columns {
+    flex: 1;
+    min-height: 0;
+    align-items: stretch;
+    overflow: hidden;
+  }
+  .page-planner .planner-chat {
+    position: static;
+    max-height: none;
+    padding: 14px;
+    overflow: hidden;
+  }
+  .page-planner .planner-chat-body {
+    flex: 1;
+    max-height: none;
+  }
+  .page-planner .planner-main {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-gutter: stable;
+    padding-right: 4px;
+  }
+  .page-planner .planner-map {
+    height: clamp(240px, 42dvh, 450px);
+  }
+}
+@media (min-width: 851px) and (max-width: 1000px) {
+  .planner-columns {
+    grid-template-columns: 1fr;
+  }
 }

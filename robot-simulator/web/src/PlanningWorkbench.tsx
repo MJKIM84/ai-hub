@@ -273,7 +273,11 @@ export default function PlanningWorkbench({
   const currentProject = useRef(project);
   const messagesRef = useRef<HTMLDivElement>(null);
   useEffect(()=>{
-    if(messagesRef.current) messagesRef.current.scrollTop=messagesRef.current.scrollHeight;
+    const container = messagesRef.current;
+    const latest = container?.querySelector(".planner-message:last-child");
+    if (container && latest) {
+      container.scrollTop += latest.getBoundingClientRect().bottom - container.getBoundingClientRect().bottom;
+    }
   },[plan?.id,plan?.conversation?.length]);
   currentProject.current = project;
   useEffect(() => {
@@ -607,6 +611,7 @@ export default function PlanningWorkbench({
               {assistantStatusLabel(settings)}
             </span>
           </div>
+          <div className="planner-chat-body" ref={messagesRef} tabIndex={0} aria-label="대화와 계획 기록">
           {!settings?.configured && (
             <div className="planner-empty">
               <strong>자연어 모델을 연결하세요</strong>
@@ -619,7 +624,7 @@ export default function PlanningWorkbench({
               </button>
             </div>
           )}
-          <div className="planner-messages" aria-live="polite" ref={messagesRef}>
+          <div className="planner-messages" aria-live="polite">
             {plan?.conversation?.map((m, i) => (
               <article key={i} className={`planner-message ${m.role}`}>
                 <small>
@@ -660,40 +665,6 @@ export default function PlanningWorkbench({
               </p>
             )}
           </div>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              void submit();
-            }}
-          >
-            <label>
-              요청 유형
-              <select value={mode} onChange={(e) => setMode(e.target.value)}>
-                {designerAvailable && <option value="design">대화로 복합 시나리오 구성</option>}
-                <option value="auto">질문 / 계획 자동 구분</option>
-                <option value="question">질문만 · 실행 초안 승인 불가</option>
-                <option value="plan">작업 계획 요청</option>
-              </select>
-            </label>
-            <label>
-              한국어 질문 또는 지시
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="실제 장소와 물품을 포함해 목표를 설명하세요"
-                rows={4}
-                maxLength={12000}
-              />
-            </label>
-            <button
-              className="primary"
-              disabled={
-                !!busy || !connected || !message.trim() || !settings?.configured
-              }
-            >
-              <Send size={15} /> 요청 보내기
-            </button>
-          </form>
           <details className="planner-manual">
             <summary>기존 작업으로 직접 계획</summary>
             <p>
@@ -740,23 +711,43 @@ export default function PlanningWorkbench({
                 </div>)}
               </details>)}
           </div>
+          </div>
+          <form className="planner-composer" aria-label="계획 요청 입력"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void submit();
+            }}
+          >
+            <label>
+              요청 유형
+              <select value={mode} onChange={(e) => setMode(e.target.value)}>
+                {designerAvailable && <option value="design">대화로 복합 시나리오 구성</option>}
+                <option value="auto">질문 / 계획 자동 구분</option>
+                <option value="question">질문만 · 실행 초안 승인 불가</option>
+                <option value="plan">작업 계획 요청</option>
+              </select>
+            </label>
+            <label>
+              한국어 질문 또는 지시
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="실제 장소와 물품을 포함해 목표를 설명하세요"
+                rows={4}
+                maxLength={12000}
+              />
+            </label>
+            <button
+              className="primary"
+              disabled={
+                !!busy || !connected || !message.trim() || !settings?.configured
+              }
+            >
+              <Send size={15} /> 요청 보내기
+            </button>
+          </form>
         </aside>
-        <div className="planner-main">
-          {designerAvailable && (mode === 'design' || plan?.intent.scenario) && <ScenarioDraftPanel
-            draft={plan?.intent.scenario} tasks={plan?.intent.tasks??[]} steps={plan?.compiled.steps??[]} project={preview}
-            version={plan?.version} busy={!!busy} dirty={dirty} selectedPlace={selected}
-            onAnswer={answers=>void submit(answers)} onSave={()=>void revise()} onReviewMap={onReviewMap} onReference={id=>{if(id.startsWith('document:')){setFocusedDocumentId(id.slice(9));setOntologyOpen(true);}else focus(id);}}
-            onDestination={(taskId,placeId)=>{if(plan)void act('목적지 변경과 경로 재검증 중',async()=>accept(await request<Plan>(`/plans/${plan.id}/scenario`,'POST',{
-              version:plan.version,project,selection,task_id:taskId,destination_id:placeId,
-            })));}} />}
-
-          {plan?.input_receipt && <details className="scenario-input-receipt"><summary>모델에 전달한 기준 정보</summary>
-            <p>지도 v{plan.input_receipt.map_version} · {plan.input_receipt.model_execution?.provider??'응답 연결 기록 없음'} / {plan.input_receipt.model_execution?.model??'모델 확인 필요'}</p>
-            {plan.input_receipt.project_hash!==plan.source_project_hash && <p>이후 화면에서 구성이 바뀌었습니다. 마지막 모델 입력과 현재 초안이 다릅니다.</p>}
-            <p>요청 당시 환경·로봇·물품·선택 구성, 문서 능력 및 공간 근거를 함께 전달했습니다. 답변 내용은 별도로 실행 검증합니다.</p>
-            <small>구성 식별값 {plan.input_receipt.project_hash.slice(0,12)} · 근거 식별값 {plan.input_receipt.ontology_hash.slice(0,12)}</small>
-          </details>}
-          {designerAvailable && <ScenarioSampleForm onUse={async next=>{await onUseScenarioProject(next);newScenario();}} onEdit={onReviewMap}/>}
+        <div className="planner-main" tabIndex={0} aria-label="지도와 계획 검토">
           <div className="planner-map-heading">
             <strong>
               {livePlan && tab === "results"
@@ -811,6 +802,21 @@ export default function PlanningWorkbench({
               </button>
             </div>
           )}
+          {designerAvailable && (mode === 'design' || plan?.intent.scenario) && <ScenarioDraftPanel
+            draft={plan?.intent.scenario} tasks={plan?.intent.tasks??[]} steps={plan?.compiled.steps??[]} project={preview}
+            version={plan?.version} busy={!!busy} dirty={dirty} selectedPlace={selected}
+            onAnswer={answers=>void submit(answers)} onSave={()=>void revise()} onReviewMap={onReviewMap} onReference={id=>{if(id.startsWith('document:')){setFocusedDocumentId(id.slice(9));setOntologyOpen(true);}else focus(id);}}
+            onDestination={(taskId,placeId)=>{if(plan)void act('목적지 변경과 경로 재검증 중',async()=>accept(await request<Plan>(`/plans/${plan.id}/scenario`,'POST',{
+              version:plan.version,project,selection,task_id:taskId,destination_id:placeId,
+            })));}} />}
+
+          {plan?.input_receipt && <details className="scenario-input-receipt"><summary>모델에 전달한 기준 정보</summary>
+            <p>지도 v{plan.input_receipt.map_version} · {plan.input_receipt.model_execution?.provider??'응답 연결 기록 없음'} / {plan.input_receipt.model_execution?.model??'모델 확인 필요'}</p>
+            {plan.input_receipt.project_hash!==plan.source_project_hash && <p>이후 화면에서 구성이 바뀌었습니다. 마지막 모델 입력과 현재 초안이 다릅니다.</p>}
+            <p>요청 당시 환경·로봇·물품·선택 구성, 문서 능력 및 공간 근거를 함께 전달했습니다. 답변 내용은 별도로 실행 검증합니다.</p>
+            <small>구성 식별값 {plan.input_receipt.project_hash.slice(0,12)} · 근거 식별값 {plan.input_receipt.ontology_hash.slice(0,12)}</small>
+          </details>}
+          {designerAvailable && <ScenarioSampleForm onUse={async next=>{await onUseScenarioProject(next);newScenario();}} onEdit={onReviewMap}/>}
           {!plan ? (
             <div className="planner-empty">
               <h3>목표를 입력하면 검토할 계획이 여기에 표시됩니다</h3>
