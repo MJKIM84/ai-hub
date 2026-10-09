@@ -1,0 +1,167 @@
+{
+  "duration_api_ms": 28911,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 1.1109027999999999,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 127652,
+    "cache_read_input_tokens": 88794,
+    "output_tokens": 3596,
+    "output_tokens_details": {
+      "thinking_tokens": 1683
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 127652,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3596,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 127652,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 127652
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 3596,
+      "cacheReadInputTokens": 88794,
+      "cacheCreationInputTokens": 127652,
+      "webSearchRequests": 0,
+      "costUSD": 1.1109027999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 1683,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 2,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-06\",\"stage\":\"second\",\"verdict\":\"통과\",\"claim_checks\":[],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[]},\"duplication\":{\"ok\":true,\"overlaps\":[]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":true},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 52건, 미확인 2건(f21·f30), 교차 확인 0건. 강등: f21 사실 → 추정(1 Hz 를 로봇 시스템 로그에 잘못 붙임 — 원문대로 승강기–로봇 통신 로그로 정정하면 사실 유지 가능), f30 사실 → 추정(ref-374 를 이번에 열지 못했고 SQLite 백업 제안 부분 미확인). 원문 미열람 출처: ref-282, ref-300, ref-304, ref-306, ref-307, ref-308, ref-309, ref-310, ref-374, ref-401, ref-493, ref-766, ref-831, ref-854, ref-937, ref-943, ref-1023, ref-1024, ref-1025, ref-1030, ref-1031, ref-1032, ref-1033, ref-1034, ref-1036, ref-1037, ref-1039, ref-1040, ref-1041, ref-1042, ref-1043, ref-1044, ref-1120(브리프 기준). 이 가운데 검증 중 ref-282·ref-300·ref-304·ref-308·ref-493·ref-831·ref-854·ref-937·ref-943·ref-1024·ref-1025·ref-1031·ref-1032·ref-1033·ref-1034·ref-1037·ref-1039·ref-1040·ref-1041·ref-1042·ref-1043·ref-1120 은 원문·초록을 열어 해당 진술을 확인했고, ref-766 은 검색 결과로만 확인했으며, ref-306·ref-307·ref-309·ref-310·ref-374·ref-401·ref-1023·ref-1030·ref-1036·ref-1044 는 열지 않았다. 주의: 이 절의 연결은 모두 단일 출처이거나 게시된 세부영역·대분류 페이지의 재인용이고, 연결 해석 22건은 [추정]이다. 벤더 주장 6건(f4·f5·f13·f20·f33·f53)은 독립 확인되지 않았다. 상업 시설·가정·실외 현장 근거가 없다. 게시된 43. 데이터·관측성·배포 5절에도 f21 과 같은 1 Hz 귀속 오류가 있어 다음 갱신 실행에서 정정이 필요하다. ros2_tracing 이 ref-1032·ref-1361 로, 구로병원 논문이 ref-943·ref-060 으로 참고문헌에 이중 등록돼 있다. 구로병원 논문의 성공률 87.03% 는 실패 14건/122건(약 88.5%)과 맞지 않는다(oq-215). 정정 요청 없음. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증에서 직전 2차 수정 지시 5건의 이행을 모두 확인했다: 홈 최근 업데이트 문자열의 세부영역 번호+이름 표기, 추가 조사 요청 다섯째 항목의 번호만 쓴 호칭 제거, L. AI·학습 기술 항목의 적용 대상 세부영역(41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 43. 데이터·관측성·배포) 링크, 약어 첫 등장 풀어 쓰기(MQTT·SaaS·PaaS·UWB·DDS), ref-766 참고문헌 제목 일치. 이번 수정은 표기만 바꿨고 주장·태그·각주는 바뀌지 않았다. 'MQTT 유언(Last Will)' 표기도 용어집 새 항목과 같은 '유언 메시지'로 맞춰졌다. 1차 수정 지시 18건은 모두 이행됐다. 사소한 의견: 'ROS 2'·'HTTP'·'UTC' 같은 일반 약어는 풀어 쓰지 않았으나 게시를 막을 사안은 아니다. 이번 2차 재검증에서는 도구를 쓰지 않았다.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-06",
+    "stage": "second",
+    "verdict": "통과",
+    "claim_checks": [],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": []
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": []
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": true
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 52건, 미확인 2건(f21·f30), 교차 확인 0건. 강등: f21 사실 → 추정(1 Hz 를 로봇 시스템 로그에 잘못 붙임 — 원문대로 승강기–로봇 통신 로그로 정정하면 사실 유지 가능), f30 사실 → 추정(ref-374 를 이번에 열지 못했고 SQLite 백업 제안 부분 미확인). 원문 미열람 출처: ref-282, ref-300, ref-304, ref-306, ref-307, ref-308, ref-309, ref-310, ref-374, ref-401, ref-493, ref-766, ref-831, ref-854, ref-937, ref-943, ref-1023, ref-1024, ref-1025, ref-1030, ref-1031, ref-1032, ref-1033, ref-1034, ref-1036, ref-1037, ref-1039, ref-1040, ref-1041, ref-1042, ref-1043, ref-1044, ref-1120(브리프 기준). 이 가운데 검증 중 ref-282·ref-300·ref-304·ref-308·ref-493·ref-831·ref-854·ref-937·ref-943·ref-1024·ref-1025·ref-1031·ref-1032·ref-1033·ref-1034·ref-1037·ref-1039·ref-1040·ref-1041·ref-1042·ref-1043·ref-1120 은 원문·초록을 열어 해당 진술을 확인했고, ref-766 은 검색 결과로만 확인했으며, ref-306·ref-307·ref-309·ref-310·ref-374·ref-401·ref-1023·ref-1030·ref-1036·ref-1044 는 열지 않았다. 주의: 이 절의 연결은 모두 단일 출처이거나 게시된 세부영역·대분류 페이지의 재인용이고, 연결 해석 22건은 [추정]이다. 벤더 주장 6건(f4·f5·f13·f20·f33·f53)은 독립 확인되지 않았다. 상업 시설·가정·실외 현장 근거가 없다. 게시된 43. 데이터·관측성·배포 5절에도 f21 과 같은 1 Hz 귀속 오류가 있어 다음 갱신 실행에서 정정이 필요하다. ros2_tracing 이 ref-1032·ref-1361 로, 구로병원 논문이 ref-943·ref-060 으로 참고문헌에 이중 등록돼 있다. 구로병원 논문의 성공률 87.03% 는 실패 14건/122건(약 88.5%)과 맞지 않는다(oq-215). 정정 요청 없음. / 2차 통과. 드리프트 없음, [분류원문] 보존, 섹션 순서 준수, 링크 유효. 재검증에서 직전 2차 수정 지시 5건의 이행을 모두 확인했다: 홈 최근 업데이트 문자열의 세부영역 번호+이름 표기, 추가 조사 요청 다섯째 항목의 번호만 쓴 호칭 제거, L. AI·학습 기술 항목의 적용 대상 세부영역(41. 플랫폼 아키텍처·외부 API, 42. 분산 시스템·통신·컴퓨팅 구조, 43. 데이터·관측성·배포) 링크, 약어 첫 등장 풀어 쓰기(MQTT·SaaS·PaaS·UWB·DDS), ref-766 참고문헌 제목 일치. 이번 수정은 표기만 바꿨고 주장·태그·각주는 바뀌지 않았다. 'MQTT 유언(Last Will)' 표기도 용어집 새 항목과 같은 '유언 메시지'로 맞춰졌다. 1차 수정 지시 18건은 모두 이행됐다. 사소한 의견: 'ROS 2'·'HTTP'·'UTC' 같은 일반 약어는 풀어 쓰지 않았으나 게시를 막을 사안은 아니다. 이번 2차 재검증에서는 도구를 쓰지 않았다.",
+    "retry_reason": null
+  },
+  "ttft_ms": 16472,
+  "type": "result",
+  "duration_ms": 29102,
+  "uuid": "60445b19-d518-4d42-9d00-d6616e4bcbbd",
+  "ttft_stream_ms": 795,
+  "time_to_request_ms": 104,
+  "time_to_request_phases_ms": {
+    "other": 30,
+    "system_prompt": 13,
+    "resume_other": 1,
+    "process_user_input": 4,
+    "input_attachments": 10,
+    "input_hooks": 3,
+    "tool_pool_refresh": 2,
+    "init_message": 5,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 0,
+    "model_gates": 1,
+    "tool_schema_build": 7,
+    "message_normalization": 2,
+    "client_creation": 5,
+    "request_build": 16
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 54,
+  "time_to_request_cpu_ms": 136,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "queued_commands",
+    "slowest_producer_ms": 5,
+    "cpu_ms": 10,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 796,
+  "time_to_request_from_spawn_ms": 6495017,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791512762374.2817,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 30.8
+}
