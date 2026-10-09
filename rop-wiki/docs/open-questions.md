@@ -365,7 +365,7 @@ version: 1
 
 **트랙 전용 질문(트랙 백로그)**
 
-- 매뉴얼 기반 로봇 기능 온톨로지: [질문 백로그](tracks/manual-capability-ontology/question-backlog.md) (열린 질문 45건)
+- 매뉴얼 기반 로봇 기능 온톨로지: [질문 백로그](tracks/manual-capability-ontology/question-backlog.md) (열린 질문 46건)
 - 채팅 기반 구성·운영: [질문 백로그](tracks/chat-based-configuration-and-operation/question-backlog.md) (열린 질문 66건)
 - 건축 도면 자동 인식: [질문 백로그](tracks/floorplan-recognition/question-backlog.md) (열린 질문 35건)
 <!-- auto:open-questions:end -->

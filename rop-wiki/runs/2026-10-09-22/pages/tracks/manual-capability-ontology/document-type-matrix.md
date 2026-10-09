@@ -5,7 +5,7 @@ subtype: matrix
 track: manual-capability-ontology
 related_areas: [5, 18, 47, 55]
 tags: [문서 유형 매트릭스, 제조사 문서, 정보 항목, 공개 문서 샘플, 암묵지, 단계 2 산출물]
-status: published
+status: draft
 confidence: low
 created: 2026-09-24
 updated: 2026-10-09

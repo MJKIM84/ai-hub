@@ -20,6 +20,12 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | q2-04 답함(신뢰도 low, 3절 {#q2-04} 소절 신설), q2-02에 기계가독 형식의 단위 표기·자유 텍스트 보강과 OmniDocBench 문서 유형·교차 규칙 문구 정정, q2-03 재인용 확인, 4·5·6·7·8·9절과 상태 줄 갱신, 후속 질문 2건(q3-09·q4-17) |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/document-type-matrix.md](tracks/manual-capability-ontology/document-type-matrix.md) | 5절 '문서에 없는 정보'를 정보 항목별로 처음 작성(통합·시운전과 운용 중 상태 보고·관측만 보완 경로로 기록, 제조사 문의·커뮤니티 미확인), 3절에 팩트시트 단위 표기·자유 텍스트 메모 추가(채운 칸 9 / 64 유지), 각주 ref-228·ref-230 접근일 갱신과 ref-230 원문 미열람 표시 제거, 상태 줄·이력 갱신 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/index.md](tracks/manual-capability-ontology/index.md) | 상태 줄의 마지막 트랙 실행을 2026-10-09로 갱신, 6절의 문서 유형 매트릭스·질문 백로그 줄에 실행 2026-10-09-22 변동 기록 |
+| 2026-10-09-22 | 요약 | [docs/tracks/manual-capability-ontology/stage-2-document-types.md](tracks/manual-capability-ontology/stage-2-document-types.md) | 매뉴얼 기반 로봇 기능 온톨로지 단계 2: q2-04 답함(신뢰도 low, 통합 설정·어댑터 코드·운용 중 상태 보고로 보완되는 정보), q2-02 기계가독 형식의 단위 표기·자유 텍스트 보강, 문서 유형 매트릭스 5절 첫 작성, 후속 질문 q3-09·q4-17 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/question-backlog.md](tracks/manual-capability-ontology/question-backlog.md) | 백로그 항목 5건 갱신 |
+| 2026-10-09-22 | 갱신 | [docs/tracks/manual-capability-ontology/log.md](tracks/manual-capability-ontology/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-19 | 갱신 | [docs/categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md](categories/platform-architecture-and-infrastructure/data-observability-and-deployment.md) | 5절 병원 사례 수행 자원·제약 행 채움과 성공률 분모 재확인, 6·7·8·9·10·11절에 2026-10-09 갱신 소절(Mender 상태 스크립트·단계적 배포(벤더 주장)·배포 시점 판단, W3C Trace Context·메시지 흐름 인과 분석, OpenTelemetry 상태·생성형 AI 토큰 지표 재확인, 개인정보 고시 개정 보도·EU AI Act 로그 보관 연계, 열린 질문 부분 근거와 새 질문 3건), 13절 각주 갱신. 2차 수정: 6·7·10·11절 갱신 소절에 2026-09-30 주제 페이지 링크 복원, 7절 기준일 문구 명확화 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s6.md](topics/2026/2026-10-09-area43-s6.md) | 자동 분리: 43. 데이터·관측성·배포 의 "6. 대표 접근법과 기술" 절(2,358자)을 옮겼다 |
 | 2026-10-09-19 | 생성 | [docs/topics/2026/2026-10-09-area43-s7.md](topics/2026/2026-10-09-area43-s7.md) | 자동 분리: 43. 데이터·관측성·배포 의 "7. 관련 표준·프레임워크·오픈소스" 절(1,654자)을 옮겼다 |

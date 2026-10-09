@@ -4,7 +4,7 @@ type: track
 track: manual-capability-ontology
 related_areas: [5, 18, 20, 21, 22, 25, 28, 29, 47, 48, 54, 55, 57]
 tags: [온톨로지, 매뉴얼, 로봇 능력, 중점 연구 트랙, 확장 아이디어]
-status: published
+status: draft
 created: 2026-09-24
 updated: 2026-10-09
 sources: [ref-004]
@@ -116,9 +116,9 @@ version: 7
 | 단계 | 상태 | 열린 질문 수 | 완료 조건 충족 여부 |
 |---|---|---|---|
 | [단계 1. 기존 능력 표현 모델과 표준 조사](stage-1-existing-models-and-standards.md) | 진행 중 | 0 | 미충족 |
-| [단계 2. 로봇 문서 유형과 정보 구조 조사](stage-2-document-types.md) | 대기 | 5 | 미충족 |
-| [단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조사](stage-3-extraction-methods.md) | 대기 | 9 | 미충족 |
-| [단계 4. 온톨로지를 실행에 연결하는 방법 조사](stage-4-execution-grounding.md) | 대기 | 16 | 미충족 |
+| [단계 2. 로봇 문서 유형과 정보 구조 조사](stage-2-document-types.md) | 대기 | 6 | 미충족 |
+| [단계 3. 비정형 문서에서 온톨로지를 추출하는 방법 조사](stage-3-extraction-methods.md) | 대기 | 8 | 미충족 |
+| [단계 4. 온톨로지를 실행에 연결하는 방법 조사](stage-4-execution-grounding.md) | 대기 | 15 | 미충족 |
 | [단계 5. 완전성과 정확성을 검증하는 방법 조사](stage-5-completeness-verification.md) | 대기 | 7 | 미충족 |
 | [단계 6. 변경 관리·운영·거버넌스 조사](stage-6-lifecycle-governance.md) | 대기 | 7 | 미충족 |
 | [단계 7. ROP 활용 시나리오 종합과 가설 판정](stage-7-rop-scenarios-and-hypotheses.md) | 대기 | 2 | 미충족 |
@@ -142,11 +142,11 @@ version: 7
 <!-- auto:track-recent-runs:start -->
 | 실행 id | 날짜 | 단계 | 판정(1차 / 2차) | 생성 / 갱신 | 일일 로그 |
 |---|---|---|---|---|---|
-| 2026-10-09-22 | 2026-10-09 | 단계 2. 로봇 문서 유형과 정보 구조 조사 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../changelog.md) |
 | 2026-09-25-57 | 2026-09-25 | 단계 2. 로봇 문서 유형과 정보 구조 조사 | 조건부 승인 / 통과 | 0 / 5 | [로그](../../changelog.md) |
 | 2026-09-25-53 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../changelog.md) |
 | 2026-09-25-47 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 3 | [로그](../../changelog.md) |
 | 2026-09-25-45 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 2 | [로그](../../changelog.md) |
+| 2026-09-25-41 | 2026-09-25 | 단계 1. 기존 능력 표현 모델과 표준 조사 | 조건부 승인 / 통과 | 0 / 2 | [로그](../../changelog.md) |
 <!-- auto:track-recent-runs:end -->
 
 ## 8. 참고 자료

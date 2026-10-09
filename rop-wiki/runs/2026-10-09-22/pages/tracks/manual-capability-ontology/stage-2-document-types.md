@@ -5,7 +5,7 @@ track: manual-capability-ontology
 stage: 2
 related_areas: [5, 18, 45, 47, 55]
 tags: [제조사 문서, 문서 유형, 정보 형태, 공개 문서 샘플, 암묵지, 벤더 주장]
-status: published
+status: draft
 confidence: low
 created: 2026-09-24
 updated: 2026-10-09

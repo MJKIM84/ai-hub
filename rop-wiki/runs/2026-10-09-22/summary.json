@@ -1,0 +1,122 @@
+{
+  "run_id": "2026-10-09-22",
+  "date": "2026-10-09",
+  "run_type": "track",
+  "target": {
+    "area_no": 5,
+    "area_name": "5. 로봇 능력·작업 표현",
+    "category": "B. 로봇 온톨로지",
+    "slug": "manual-capability-ontology",
+    "stage": 2,
+    "question_ids": [
+      "q2-02",
+      "q2-03",
+      "q2-04"
+    ]
+  },
+  "verdict_first": "조건부 승인",
+  "verdict_second": "통과",
+  "confidence": "low",
+  "pages_created": 0,
+  "pages_updated": 3,
+  "new_sources": 0,
+  "parked": false,
+  "published": true,
+  "committed": false,
+  "commit": null,
+  "built": true,
+  "web_fetch_available": true,
+  "web_fetch_override": null,
+  "budget_used": {
+    "queries": 0,
+    "sources": 0
+  },
+  "budget": {
+    "max_search_queries": 40,
+    "max_sources_per_run": 20,
+    "new_topic_pages": 1,
+    "page_updates": 2,
+    "max_retries": 2
+  },
+  "duration_sec": 2397.4,
+  "first_retries": 0,
+  "second_retries": 0,
+  "end_state": "게시 완료",
+  "changelog_entry": "2026-10-09 | 매뉴얼 기반 로봇 기능 온톨로지 단계 2 | q2-04 답함(신뢰도 low, 통합 설정·어댑터 코드·운용 중 상태 보고로 보완되는 정보), q2-02 기계가독 형식의 단위 표기·자유 텍스트 보강, 문서 유형 매트릭스 5절 첫 작성, 후속 질문 q3-09·q4-17 | run 2026-10-09-22",
+  "notes": [],
+  "counts": {
+    "create": 0,
+    "update": 3,
+    "deprecate": 0,
+    "glossary": 0,
+    "references": 0,
+    "standards": 0,
+    "open_questions": 0,
+    "flow_cells": 0,
+    "backlog": 5,
+    "corrections": 0
+  },
+  "updated_at": "2026-10-09 19:44:46 KST",
+  "usage": {
+    "input_tokens": 84,
+    "cache_creation_input_tokens": 1507221,
+    "cache_read_input_tokens": 13582932,
+    "output_tokens": 176288,
+    "cost_usd": 18.6743,
+    "calls": 7,
+    "by_step": {
+      "research": {
+        "calls": 2,
+        "cost_usd": 9.1215,
+        "output_tokens": 64240,
+        "cache_read_input_tokens": 12522604,
+        "cache_creation_input_tokens": 624119
+      },
+      "verification1": {
+        "calls": 1,
+        "cost_usd": 3.3656,
+        "output_tokens": 28756,
+        "cache_read_input_tokens": 891781,
+        "cache_creation_input_tokens": 323671
+      },
+      "storyteller": {
+        "calls": 1,
+        "cost_usd": 3.6983,
+        "output_tokens": 68420,
+        "cache_read_input_tokens": 71882,
+        "cache_creation_input_tokens": 289438
+      },
+      "verification2": {
+        "calls": 1,
+        "cost_usd": 2.3915,
+        "output_tokens": 14401,
+        "cache_read_input_tokens": 88794,
+        "cache_creation_input_tokens": 260720
+      },
+      "probe-web_search": {
+        "calls": 1,
+        "cost_usd": 0.0591,
+        "output_tokens": 243,
+        "cache_read_input_tokens": 3992,
+        "cache_creation_input_tokens": 5190
+      },
+      "probe-web_fetch": {
+        "calls": 1,
+        "cost_usd": 0.0383,
+        "output_tokens": 228,
+        "cache_read_input_tokens": 3879,
+        "cache_creation_input_tokens": 4083
+      }
+    }
+  },
+  "format_check": {
+    "stage": "pages",
+    "ok": true,
+    "errors": [],
+    "patched": [],
+    "splits": [],
+    "area_body_limit": 4000
+  },
+  "fetched_sources": 4,
+  "cross_checked_findings": 0
+}

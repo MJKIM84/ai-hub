@@ -1,0 +1,52 @@
+{
+  "role": "researcher",
+  "step": "research",
+  "cmd": [
+    "claude",
+    "-p",
+    "--output-format",
+    "json",
+    "--permission-mode",
+    "dontAsk",
+    "--no-session-persistence",
+    "--append-system-prompt-file",
+    "/home/user/ai-hub/rop-wiki/runs/.cache/system/researcher-e90ce8b81cf3.md",
+    "--json-schema",
+    "<json-schema>",
+    "--tools",
+    "WebSearch,WebFetch",
+    "--allowedTools",
+    "WebSearch,WebFetch",
+    "--max-turns",
+    "60",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high"
+  ],
+  "prompt_chars": 423374,
+  "system_prompt": "researcher-e90ce8b81cf3.md",
+  "system_sha": "e90ce8b81cf3",
+  "num_turns": 47,
+  "duration_ms": 581542,
+  "elapsed_sec": 583.9,
+  "total_cost_usd": 6.4544007999999975,
+  "stop_reason": "tool_use",
+  "terminal_reason": "completed",
+  "subtype": "success",
+  "is_error": false,
+  "input_tokens": 64,
+  "output_tokens": 45458,
+  "cache_read_input_tokens": 12438971,
+  "cache_creation_input_tokens": 339773,
+  "server_tool_use": {
+    "web_search_requests": 0,
+    "web_fetch_requests": 0
+  },
+  "model_usage": [
+    "claude-opus-5-5",
+    "claude-haiku-5-5"
+  ],
+  "permission_denials": [],
+  "exit_code": 0
+}
