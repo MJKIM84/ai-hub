@@ -9,9 +9,9 @@ status: published
 confidence: low
 created: 2026-09-25
 updated: 2026-10-09
-sources: [ref-031, ref-062, ref-063, ref-064, ref-065, ref-066, ref-067, ref-068, ref-069, ref-070, ref-071, ref-072, ref-073, ref-074, ref-075, ref-076, ref-077, ref-078, ref-079, ref-080, ref-081, ref-082, ref-083, ref-084, ref-085, ref-086, ref-109, ref-120, ref-220, ref-221, ref-222, ref-223, ref-224, ref-225, ref-226, ref-227, ref-046, ref-212, ref-213, ref-214, ref-215, ref-216, ref-217, ref-218, ref-219, ref-241, ref-105, ref-163, ref-265, ref-266, ref-267, ref-268, ref-269, ref-270, ref-271, ref-273, ref-274, ref-1012, ref-1329, ref-1330, ref-1331, ref-1332, ref-1367, ref-1368, ref-1369, ref-1370, ref-1371, ref-1372, ref-1373, ref-1374]
+sources: [ref-031, ref-062, ref-063, ref-064, ref-065, ref-066, ref-067, ref-068, ref-069, ref-070, ref-071, ref-072, ref-073, ref-074, ref-075, ref-076, ref-077, ref-078, ref-079, ref-080, ref-081, ref-082, ref-083, ref-084, ref-085, ref-086, ref-109, ref-120, ref-220, ref-221, ref-222, ref-223, ref-224, ref-225, ref-226, ref-227, ref-046, ref-212, ref-213, ref-214, ref-215, ref-216, ref-217, ref-218, ref-219, ref-241, ref-105, ref-163, ref-265, ref-266, ref-267, ref-268, ref-269, ref-270, ref-271, ref-273, ref-274, ref-1012, ref-1329, ref-1330, ref-1331, ref-1332, ref-1367, ref-1368, ref-1369, ref-1370, ref-1371, ref-1372, ref-1373, ref-1374, ref-1422]
 last_run: 2026-10-09
-version: 6
+version: 7
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [건축 도면 자동 인식](index.md) › 단계 1. 선행 연구·제품 사례 조사
@@ -330,6 +330,14 @@ LIF 해설을 낸 관제 소프트웨어 업체 ScaliRo는 다중 제조사 프�
 
 확인한 정량 자료는 대학 건물의 자율 다층 지도 작성 시간과 해외 물류센터의 단계 구분 없는 전체 구현 기간뿐이라, q1-08 은 부분적으로만 답할 수 있는 것으로 보인다. [추정][^ref-163][^ref-1369][^ref-1373] 빠진 부분은 4절 남은 불확실성에 적었다.
 
+### q1-08 보강: 해외 업체의 현장 설정 기간 주장과 추가 검색 결과 (실행 2026-10-09-26)
+
+이 소절은 위 [q1-08 부분 답](#q1-08)에 덧붙인 것이며, q1-08 은 여전히 부분 답이다.
+
+연계 대상: Robotics 24/7 기사(2025-03-12)는 자율이동로봇(Autonomous Mobile Robot, AMR) 현장 설정(commissioning)이 흔히 수개월의 수작업이 드는 병목이라고 서술한다. [추정][^ref-1422] 같은 기사는 RGo Robotics 가 3D 비전 기반 지능형 지도 작성으로 현장 설정 기간을 수개월에서 며칠로 줄인다고 밝혔다고 전하며, 이는 RGo 측 주장이고 도면(CAD) 사용 언급은 없다. [추정] 벤더 주장[^ref-1422] 3D 비전 지도 작성은 분류 원문 19장의 로봇 자체 지능·제어 쪽 연계 대상이다.
+
+이번 추가 검색(한국어 4회, 한국로봇산업진흥원 실증·국내 물류센터 도입 기사 대상 포함)에서도 국내 물류센터의 지도 작성·공용 자원 등록·제조사별 좌표 정렬 시간을 단계별로 공개한 공공·학술 자료는 찾지 못했다(부재 확인 아님). 새로 확인한 것은 해외 업체의 주장뿐이어서 국내 근거가 되지 않는다. [추정][^ref-1422]
+
 ## 4. 결론과 남은 불확실성
 
 **결론**
@@ -532,6 +540,8 @@ LIF 해설을 낸 관제 소프트웨어 업체 ScaliRo는 다중 제조사 프�
 [^ref-1373]: Logistics Matters, Fulfillment centre deploys AMRs in 12 days, 2022-10-26, https://www.logisticsmatters.co.uk/?p=1091, 접근일 2026-10-09 (원문 미열람)
 [^ref-1374]: Ganon, K., Alper, M., Mikulinsky, R., & Averbuch-Elor, H. (WACV 2025), WAFFLE: Multimodal Floorplan Understanding in the Wild, 2024-12, https://arxiv.org/abs/2412.00955, 접근일 2026-10-09
 
+[^ref-1422]: Robotics 24/7, RGo Robotics introduces AI-powered Intelligent Mapping system, 2025-03-12, https://www.robotics247.com/article/rgo-robotics-introduces-ai-powered-intelligent-mapping-system, 접근일 2026-10-09
+
 ## 9. 이력
 
 실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.
@@ -549,3 +559,5 @@ LIF 해설을 낸 관제 소프트웨어 업체 ScaliRo는 다중 제조사 프�
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |
 |---|---|---|---|---|---|
 | 2026-10-09 | 2026-10-09-21 | q1-05, q1-06 (q1-08 부분 답) | q2-10, q3-12 | 없음(v1.2 유지) | 6 |
+
+실행 2026-10-09-26(단계 2 진행 중)에서 3절에 'q1-08 보강' 소절을 덧붙였다(답한 질문 없음, q1-08 조사 중 유지, 온톨로지 변경 없음).

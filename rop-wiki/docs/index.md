@@ -125,7 +125,7 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 |---|---|---|---|---|---|
 | 매뉴얼 기반 로봇 기능 온톨로지 | [단계 1. 기존 능력 표현 모델과 표준 조사](tracks/manual-capability-ontology/stage-1-existing-models-and-standards.md) (1 / 7) | active | 44 | q2-05 — 언어·문서 버전·옵션 장비에 따라 같은 기종의 정보가 어떻게 달라지는가? ([답](tracks/manual-capability-ontology/stage-2-document-types.md#q2-05)) | [트랙 개요](tracks/manual-capability-ontology/index.md) |
 | 채팅 기반 구성·운영 | [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) (1 / 10) | active | 66 | q2-04 — 분해 결과의 중간 표현(PDDL, LTL, 행동 트리, 의존 DAG) 가운데 업무 분해·배정 설계 초안의 작업 모델과 로봇 관제 인터페이스(VDA 5050 주문, Open-RMF 작업)로 옮기기 쉬운 것은 무엇이고 옮길 때 무엇이 빠지는가? (q1-01 에서 파생) ([답](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md#q2-04)) | [트랙 개요](tracks/chat-based-configuration-and-operation/index.md) |
-| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 35 | q1-06 — 물류 로봇 관제 제품 가운데 CAD·BIM 도면에서 문·승강기·충전 위치를 자동으로 가져와 지도와 공용 자원 목록을 만드는 기능을 공개 매뉴얼·API 문서로 확인할 수 있는 것이 있는가? ([답](tracks/floorplan-recognition/stage-1-prior-work-and-products.md#q1-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
+| 건축 도면 자동 인식 | [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) (1 / 5) | active | 37 | q2-06 — 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가? (q1-03 에서 파생) ([답](tracks/floorplan-recognition/stage-2-data-and-standards.md#q2-06)) | [트랙 개요](tracks/floorplan-recognition/index.md) |
 <!-- auto:home-track-status:end -->
 
 ## 표기 범례
@@ -148,11 +148,11 @@ ROP가 직접 소유하지 않고 외부 시스템과 연계하는 영역을 원
 ## 최근 업데이트
 
 <!-- auto:home-recent:start -->
-- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) — q2-04 답함(3절 '### q2-04' 소절 신설, 중간 표현별 대응표는 이 위키 구성), 상태 줄·2절·4절·5절(q3-17)·6절(검증 판정 행별: 조건 1 충족·미승인, 조건 2 미충족·미승인, 전환 아니오)·7절·8절·9절 갱신 (실행 2026-10-09-25)
-- 2026-10-09 · 갱신 · [단계 1. 선행 연구·제품 사례 조사](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) — 되돌아온 질문 q1-05·q1-06 답함(3절 두 소제목, 신뢰도 low, 물류창고 사례 표), 상태 줄·프런트매터 sources(6건 추가)·2절(도입 문단 q1-01 출처 서술 유지)·4절·5절(q1-05 답함, q4-20·q5-20 추가)·6절 전환 줄·8절·9절(이력 표 맨 위 행, 버전 6) 갱신 (실행 2026-10-09-25)
-- 2026-10-09 · 갱신 · [업무 분해·배정 설계 초안](tracks/chat-based-configuration-and-operation/task-model-draft.md) — 초안 v0.9 → v1.0: 작업 개념 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모 추가(상태 확정 유지, 관계 추가 없음), 6절에 q2-04 답 링크와 질문 2건 추가 (실행 2026-10-09-25)
-- 2026-10-09 · 갱신 · [아이디어 2. 채팅 기반 구성·운영](ideas/chat-based-configuration-and-operation.md) — 3절에 물류·산업 지향 연구 갱신 소절(G3 서술은 실행 2026-09-25 기준임을 밝힘), 4절에 '중간 표현과 로봇 관제 인터페이스 대응' 소절 추가(결론은 추정) (실행 2026-10-09-25)
-- 2026-10-09 · 갱신 · [채팅 기반 구성·운영](tracks/chat-based-configuration-and-operation/index.md) — 상태 줄을 '현재 단계: 단계 2. 필요한 데이터와 표준 조사 · 마지막 트랙 실행: 2026-10-09'로 고치고, 6절에 '현재 단계는 단계 3' 서술이 각 실행 시점 기준임과 실행 2026-10-09-25 결과를 덧붙임 (실행 2026-10-09-25)
+- 2026-10-09 · 갱신 · [단계 2. 필요한 데이터와 표준 조사](tracks/floorplan-recognition/stage-2-data-and-standards.md) — q2-04·q2-06 답함(3절 소제목 신설, q2-02 표 갱신 칸 병기), 2절 표·상태 줄 갱신, 4절 결론·불확실성 보강, 후속 질문 3건, 6절 완료 조건(전환 아니오), 출처·이력 추가. 2차: q2-04 소절의 충전 위치 소절 위치 표기와 2절 첫 문단 표현 수정 (실행 2026-10-09-26)
+- 2026-10-09 · 갱신 · [공간 그래프 스키마 초안](tracks/floorplan-recognition/space-graph-schema-draft.md) — v1.2 → v1.3: 충전 위치에 속성 'BIM 표현(후보)' 추가(2절 보충 표), 6절 충전소 항목 범위 한정·RECHARGER·IDS 근거 보강 (실행 2026-10-09-26)
+- 2026-10-09 · 갱신 · [아이디어 3. 건축 도면 자동 인식](ideas/floorplan-recognition.md) — 3절에 공개 데이터셋 비교표 갱신 소절(CubiCasa5K·AI Hub 행, q2-04), 4절에 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구 소절(q2-06, BIM 소절 셋째 항목 범위 한정) 추가 (실행 2026-10-09-26)
+- 2026-10-09 · 갱신 · [단계 1. 선행 연구·제품 사례 조사](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) — 3절 끝에 q1-08 보강 소절(f25·f26) 추가, 출처 ref-1422, 이력 메모. 2차: 머리말 패치로 프런트매터 sources 에 ref-1422 추가 (실행 2026-10-09-26)
+- 2026-10-09 · 갱신 · [건축 도면 자동 인식](tracks/floorplan-recognition/index.md) — 6절에 실행 2026-10-09-26 요약 문단 추가(스키마 초안 v1.3, q2-04·q2-06 답함). 상태 줄은 이미 최신이라 바꾸지 않음 (실행 2026-10-09-26)
 - 전체 목록: [변경 이력](changelog.md)
 <!-- auto:home-recent:end -->
 

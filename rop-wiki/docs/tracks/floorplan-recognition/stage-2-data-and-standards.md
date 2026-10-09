@@ -3,22 +3,22 @@ title: "단계 2. 필요한 데이터와 표준 조사"
 type: track-stage
 track: floorplan-recognition
 stage: 2
-related_areas: [15, 21, 22, 47]
+related_areas: [14, 15, 21, 22, 45, 47, 59]
 tags: [BIM, IFC, IndoorGML, 실내 공간 표준, 지도 형식, CAD 레이어, DXF, VDA 5050, LIF]
 status: published
-confidence: medium
+confidence: low
 created: 2026-09-25
-updated: 2026-09-25
-sources: [ref-156, ref-157, ref-158, ref-214, ref-331, ref-332, ref-333, ref-334, ref-335, ref-336, ref-337, ref-338, ref-339, ref-340, ref-341, ref-342, ref-343, ref-344, ref-345, ref-346, ref-347, ref-348, ref-349, ref-419, ref-420, ref-421, ref-422, ref-423, ref-424, ref-425, ref-426, ref-427, ref-428, ref-429, ref-430, ref-431, ref-432, ref-433, ref-434, ref-435, ref-436, ref-213, ref-215, ref-063, ref-066, ref-067, ref-069, ref-070, ref-073, ref-074, ref-078, ref-081, ref-084, ref-031, ref-046, ref-079, ref-105, ref-212, ref-227, ref-440, ref-441, ref-442]
-last_run: 2026-09-25
-version: 4
+updated: 2026-10-09
+sources: [ref-156, ref-157, ref-158, ref-214, ref-331, ref-332, ref-333, ref-334, ref-335, ref-336, ref-337, ref-338, ref-339, ref-340, ref-341, ref-342, ref-343, ref-344, ref-345, ref-346, ref-347, ref-348, ref-349, ref-419, ref-420, ref-421, ref-422, ref-423, ref-424, ref-425, ref-426, ref-427, ref-428, ref-429, ref-430, ref-431, ref-432, ref-433, ref-434, ref-435, ref-436, ref-213, ref-215, ref-063, ref-066, ref-067, ref-069, ref-070, ref-073, ref-074, ref-078, ref-081, ref-084, ref-031, ref-046, ref-079, ref-105, ref-212, ref-227, ref-440, ref-441, ref-442, ref-062, ref-1012, ref-1352, ref-1353, ref-1354, ref-1355, ref-1356, ref-1357, ref-1358, ref-1359, ref-1360, ref-1361, ref-1362, ref-1363, ref-1364, ref-1365, ref-1366, ref-1421]
+last_run: 2026-10-09
+version: 5
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [건축 도면 자동 인식](index.md) › 단계 2. 필요한 데이터와 표준 조사
 
 # 단계 2. 필요한 데이터와 표준 조사
 
-> 단계 상태: 진행 중 · 열린 질문: 5건 · 답한 질문: 3건 · 완료 조건: 미충족 · 마지막 실행: 2026-09-25
+> 단계 상태: 진행 중 · 열린 질문: 6건 · 답한 질문: 5건 · 완료 조건: 미충족 · 마지막 실행: 2026-10-09
 
 ## 1. 이 단계에서 밝힐 것
 
@@ -28,18 +28,21 @@ version: 4
 
 ## 2. 질문 목록
 
-이 단계의 시작 질문 3개(q2-01~q2-03)와 앞선 트랙 실행에서 이 단계로 들어온 후속 질문 5개(q2-04·q2-06·q2-07·q2-08·q2-09)다. q2-01은 사용자 요청의 시작 질문 문구 그대로이고, q2-02·q2-03은 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 "조사 중"은 이 표에서 "열림"으로 표시하고 "폐기"(q2-05)는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커를 적는다. 제기 근거 칸에는 finding id(실행 id 병기) 또는 "사용자"만 쓴다.
+이 단계의 시작 질문 3개(q2-01~q2-03)와 앞선 트랙 실행과 이번 실행(2026-10-09-26)에서 이 단계로 들어온 후속 질문 8개(q2-04·q2-06·q2-07·q2-08·q2-09·q2-10·q2-11·q2-12)다. q2-01은 사용자 요청의 시작 질문 문구 그대로이고, q2-02·q2-03은 구축자가 이 단계의 밝힐 것에서 정한 시작 질문이다. [가정] 상태와 답 위치는 [질문 백로그](question-backlog.md)와 일치시키며, 백로그의 "조사 중"은 이 표에서 "열림"으로 표시하고 "폐기"(q2-05)는 표에서 빼고 백로그에만 남긴다. 답은 3절의 질문 id로 시작하는 소제목에 실리고, 답 위치 칸에는 그 앵커를 적는다. 제기 근거 칸에는 finding id(실행 id 병기) 또는 "사용자"만 쓴다. 되돌아온 단계 1 질문 q1-08(조사 중)은 [단계 1](stage-1-prior-work-and-products.md)에서 다룬다.
 
 | id | 질문 | 상태 | 제기 근거 | 답한 실행 id | 답 위치 |
 |---|---|---|---|---|---|
 | q2-01 | 공간 그래프를 표현하는 기존 표준(예: BIM·IFC, 실내 공간 표준)은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-28 | [답](#q2-01) |
 | q2-02 | 도면 입력 형식(벡터 CAD, BIM 모델, 래스터 스캔)마다 벽·문·엘리베이터·계단·충전 위치 정보가 어떻게 들어 있고 무엇이 빠지는가? | 답함 | 사용자 | 2026-09-25-36 | [답](#q2-02) |
 | q2-03 | 층별 지도와 공용 자원 목록을 로봇 관제와 ROP가 받아들이는 형식(제조사 지도 형식, 지도 교환 형식)은 무엇이 있는가? | 답함 | 사용자 | 2026-09-25-44 | [답](#q2-03) |
-| q2-04 | AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가? | 열림 | f17, 실행 2026-09-25-05 | | |
-| q2-06 | 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가? (q1-03 에서 파생) | 열림 | f10, 실행 2026-09-25-19 | | |
+| q2-04 | AI Hub 건축 도면 데이터와 CubiCasa5K 의 클래스 목록에 계단·엘리베이터가 포함되는지, 그리고 상업적 이용 조건은 무엇인가? | 답함 | f17, 실행 2026-09-25-05 | 2026-10-09-26 | [답](#q2-04) |
+| q2-06 | 로봇 충전소·작업 스테이션처럼 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담으려면 사용자 정의 유형·속성 세트로 표현해야 하는가, 이를 정한 IDS·속성 세트 관례나 사례가 있는가? (q1-03 에서 파생) | 답함 | f10, 실행 2026-09-25-19 | 2026-10-09-26 | [답](#q2-06) |
 | q2-07 | IndoorGML 2.0 Part 1 발행판은 문·엘리베이터·계단 같은 연결과 수직 이동을 NavigableBoundary·TransferSpace 등 어떤 클래스로 표현하며, 1.x 의 ConnectionSpace·TransitionSpace 구성과 무엇이 달라졌는가? (q2-01 에서 파생) | 열림 | f4, 실행 2026-09-25-28 | | |
 | q2-08 | 국내 실무 건축 CAD 도면은 KS F 1542·건설CALS 전자도면 작성표준의 레이어 체계를 얼마나 따르며, 그 표준 레이어·심벌 코드에 문·계단·승강기·충전 위치를 구분하는 코드가 있는가? (q2-02 에서 파생) | 열림 | f15, 실행 2026-09-25-36 | | |
 | q2-09 | 실무 IFC 모델에서 엘리베이터·문·계단이 IfcBuildingElementProxy 로 내보내지는 경우를 어떻게 찾아 보정하며(IDS 검사, 이름·형상 규칙 등), 그 빈도를 보고한 자료가 있는가? (q2-02 에서 파생) | 열림 | f7, 실행 2026-09-25-36 | | |
+| q2-10 | 물류센터·창고 평면도 인식에 필요한 학습 데이터(랙·도크·충전 구역·작업 스테이션·엘리베이터 라벨, 규모)를 어떻게 마련하는가 — 소량 직접 주석으로 미세조정, 절차적 합성 평면도 사전학습, 산업단지를 포함한 비주거 CAD 데이터셋(ArchCAD-400K 등) 활용 가운데 무엇이 가능하며 각각의 이용 조건(비상업 제한)은 어떤가? (q1-05 에서 파생) | 열림 | f9, 실행 2026-10-09-21 | | |
+| q2-11 | 로봇 충전기를 IFC 4.3 의 전기 저장 장치 유형 값 RECHARGER(배터리 충전기 일반 정의, 속성은 공급 정격 전류뿐)로 표현할지 USERDEFINED·ObjectType 으로 표현할지 정하는 기준은 무엇이며, 실무 IFC 모델에서 로봇·차량 충전기가 실제로 어느 쪽으로 내보내지는가? (q2-06 에서 파생) (관련: q2-09) | 열림 | f14, 실행 2026-10-09-26 | | |
+| q2-12 | AI Hub 건축 도면 데이터의 엘리베이터·엘리베이터홀·계단실 라벨(아파트 코어 기준)로 학습한 모델이 물류센터·병원 같은 비주거 도면의 화물용 승강기·계단실을 얼마나 인식하는가, 라벨 정의서는 계단실과 엘리베이터 영역을 어떤 기준으로 그리는가? (q2-04 에서 파생) (관련: q1-05, q2-10, oq-341) | 열림 | f1, 실행 2026-10-09-26 | | |
 
 ## 3. 조사 결과
 
@@ -256,6 +259,72 @@ MiR Fleet Enterprise 문서(1.2판, 2025-01, 유통사 게재본)가 CAD 평면�
 
 연계 대상: 격자 지도 생성과 위치추정은 로봇 자체 지능·제어 쪽이고, 이종 제조사를 연결하는 ROP 는 도면 기반 결과를 레이아웃·구역·공용 자원 설정으로 변환·전달하고 지도 판을 관리하는 쪽을 맡는 경계가 될 것으로 보인다. 이는 [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) 9절의 경계 표와 같은 취지다. [추정][^ref-440][^ref-031][^ref-212]
 
+### q2-04 AI Hub 건축 도면 데이터와 CubiCasa5K 의 계단·엘리베이터 클래스와 상업적 이용 조건 {#q2-04}
+
+확인한 자료를 이 위키가 종합하면, 승강기·계단 영역을 바로 학습할 수 있는 공개 라벨은 AI Hub 건축 도면 데이터 쪽(엘리베이터·엘리베이터홀·계단실 공간 라벨, 계단 단독 클래스 없음, 주거 도면 기준)이고, CubiCasa5K 는 원 주석 범주에 엘리베이터·계단실·계단이 있어도 공식 학습 매핑에서는 일반 방으로 합치거나 쓰지 않으며, 두 자료 모두 충전 위치 라벨은 없는 것으로 보인다. CubiCasa5K 는 비상업(CC BY-NC-SA 4.0) 조건이라 상용 이용에는 권리자의 별도 허락이 필요할 것으로 보인다(법적 판단 아님). [추정][^ref-1012][^ref-1354][^ref-1353][^ref-1352]
+
+실행 2026-10-09-26 은 일반 웹 페이지와 공식 저장소 원문을 열 수 있는 환경이었고 아래 출처는 원문을 열어 확인했다. 출처마다 발행 주체 한 곳의 자료여서 교차 확인된 주장은 없다.
+
+#### 클래스 구성
+
+AI Hub 건축 도면 데이터(1.1 판 2023-12-15 기준)의 라벨은 구조 8종(여닫이문·미닫이문·기타문, 여닫이창·미닫이창·기타창, 철근콘크리트벽·기타벽), 공간 12종(거실·침실·주방·현관·발코니·화장실·실외기룸·드레스룸·기타(다목적공간)·엘리베이터홀·계단실·엘리베이터), 객체 5종(변기·세면대·싱크대·욕조·가스레인지)이며, 계단 단독 클래스와 충전 위치 같은 로봇 운영 클래스는 없다. [사실][^ref-1012] 도면 48,033장은 모두 주거 유형(아파트 38,521, 연립다세대 4,859, 단독주택 4,653)이다(2023-07-26 기준). [사실][^ref-1012]
+
+CubiCasa5K 의 Zenodo 레코드(1.0 판, 2019-03-28 게시)는 라이선스를 CC BY-NC-SA 4.0 으로 표기한다. [사실][^ref-1353] 공식 코드(floortrans/loaders/house.py, master 브랜치, 확인일 2026-10-09)는 원 방 범주에 Elevator·StairWell·Stairs 를 두지만 학습용 매핑에서 Elevator·StairWell 을 일반 방으로 합치고 Stairs 는 매핑에 없으며 그 처리 블록은 주석 처리해, 기본 학습 라벨에는 계단·엘리베이터가 따로 남지 않는다. [사실][^ref-1354] 공식 저장소 README 는 5,000장·80개 이상 범주의 다각형 주석을 적지만 계단·엘리베이터와 라이선스는 언급하지 않는다(확인일 2026-10-09). [사실][^ref-062]
+
+따라서 q2-02 표의 'CubiCasa5K 계단 라벨 있음'은 원 주석 범주 수준의 서술로 보이며, 원 SVG 에 계단·엘리베이터 주석이 실제로 몇 개 있는지는 미확인이어서 [열린 질문](../../open-questions.md)으로 올렸다. [추정][^ref-1354]
+
+#### 이용 조건
+
+AI Hub 건축 도면 데이터 소개 페이지는 내국인만 데이터 신청이 가능하고 승인 뒤 API 로 내려받게 하며, 데이터셋 고유 이용 조건 문구 없이 이용정책·이용약관 링크만 둔다(확인일 2026-10-09). [사실][^ref-1012]
+
+AI허브 데이터 이용정책 원문은 개방 AI데이터를 영리·비영리 연구·개발 목적으로 활용할 수 있다고 하면서도 인공지능 학습모델의 학습용으로만 쓰게 하고, 데이터셋 판매 등 상업적 이용은 수행기관과 별도 협의하게 하며, 승인 없는 제3자 열람·제공·양도·대여·판매를 금지하고, 한국지능정보사회진흥원 사업결과임을 2차적 저작물에도 밝히게 하며, 국외 소재 법인·단체·개인의 이용에는 별도 합의를 요구한다(판·갱신일 미확인, 확인일 2026-10-09). [사실][^ref-1352]
+
+이와 달리 다른 데이터셋(경기도 고양시 어린이 음성맥락 인식 데이터)의 공공데이터포털 페이지는 'AI허브 데이터로 학습한 AI 모델·서비스는 자유롭게 배포·활용할 수 있고 영리적 판매·활용도 제한하지 않으나 사용을 명시해야 하며, 사전 협의 없는 데이터 재가공 배포는 원칙적으로 불가'라고 옮겨 적는다. 건축 도면 데이터가 아닌 다른 데이터셋 페이지의 2차 기술이다(수정일 2026-06-16). [사실][^ref-1355] 원 정책의 '판매 등 상업적 이용은 별도 협의'와 2차 기술의 '영리 판매·활용 제한 없음'은 대상(데이터와 모델)이 다를 수 있으나 운영기관 확인 전이어서 한쪽을 고르지 않고 둘 다 두며 열린 질문으로 올렸다. [추정][^ref-1352][^ref-1355]
+
+이를 종합하면, 원 이용정책은 데이터 자체의 제3자 제공·판매와 국외 이용을 제한하고 상업적 판매는 별도 협의로 두되 이용자가 이 데이터로 학습시킨 모델의 배포·상업 이용은 직접 말하지 않으므로, 상용 ROP 가 이 데이터로 학습한 도면 인식 모델을 쓰는 것은 가능해 보이나 데이터의 가공·재배포·해외 활용은 별도 합의가, 모델 배포 조건은 운영기관 확인이 필요해 보인다. 이는 이 위키의 종합이며 법적 판단이 아니다. [추정][^ref-1352][^ref-1355][^ref-1012]
+
+#### q2-02 표의 갱신 칸
+
+q2-02 표의 기존 칸은 지우지 않고, 이번 결과를 아래와 같이 병기한다(같은 내용을 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 비교표에도 실었다).
+
+| 요소 | 입력 형식 | 기존 칸(유지) | 병기 내용 |
+|---|---|---|---|
+| 엘리베이터 | 래스터 스캔 | 공개 데이터셋 라벨 미확인(추정) | AI Hub 건축 도면 데이터에 엘리베이터·엘리베이터홀·계단실 공간 라벨 있음(주거 도면 기준, 계단 단독 클래스 없음)[^ref-1012] |
+| 계단 | 래스터 스캔 | CubiCasa5K·Kratochvila 외 라벨 있음 | CubiCasa5K 는 원 주석 범주(Elevator·StairWell·Stairs) 기준이며 공식 학습 매핑에서는 계단 제외, 계단실·엘리베이터는 일반 방으로 합침[^ref-1354], 라이선스 CC BY-NC-SA 4.0[^ref-1353] |
+| 충전 위치 | BIM(IFC 4.3) | 확인한 콘센트·전기기기 유형 열거에 충전 설비 값 없음 | 이 칸은 콘센트·전기기기 유형 열거 기준이며, 전기 저장 장치 유형 값 RECHARGER(배터리 충전기 일반 정의, 차량·로봇 언급 없음, 개발 브랜치 기준)와 그 속성 세트(IFC4.3_ADD2 작업 초안)가 있어 로봇 충전기 표현의 후보(추정)[^ref-1358][^ref-1360] |
+
+위 q2-02 의 '충전 위치' 소절과 4절 결론의 '충전 위치는 세 입력 형식 모두에서 표준 표현이 확인되지 않아'도 BIM 쪽은 같은 콘센트·전기기기 유형 열거 기준이었다. [추정][^ref-214][^ref-215]
+
+### q2-06 IFC 4.3 표준 유형 값에 없는 운영 시설을 BIM 에 담는 방법과 IDS·속성 세트 관례 {#q2-06}
+
+확인한 규칙을 이 위키가 종합하면, IFC 4.3 에는 배터리 충전기 일반을 뜻하는 전기 저장 장치 유형 값 RECHARGER 가 있어 로봇 충전기 본체 표현의 후보가 될 수 있으나 도킹 이름·접근 자세 같은 로봇 운영 정보는 표준 속성에 없으므로, 운영 속성은 'Pset_' 접두어가 없는 프로젝트 속성 세트에 담고, 맞는 유형이 없을 때는 관련 엔터티나 IfcBuildingElementProxy 의 USERDEFINED·ObjectType 으로 유형을 나타내며, 이를 [정보 전달 명세(Information Delivery Specification, IDS)](../../glossary/information-delivery-specification.md)의 엔터티 패싯·속성 패싯·값 제한으로 납품 요구로 적어 검사하는 경로가 표준이 허용하는 것으로 보인다. 로봇 충전소·작업 스테이션용 공개 IDS·속성 세트·bSDD 분류 관례나 실제 사례는 이번 검색 범위에서 찾지 못했다(부재 확인 아님). [추정][^ref-1358][^ref-1360][^ref-1359][^ref-1357][^ref-1356][^ref-213][^ref-1361][^ref-1363][^ref-1364][^ref-1365][^ref-1366][^ref-1421]
+
+근거는 IFC 4.3 개발 브랜치(ifc4.3-main) 원본과 IFC4.3_ADD2 개발 빌드 문서이며, 게시판 IFC 4.3 ADD2 와 문구가 다를 수 있다. 충전기의 충전 제어 자체는 분류 원문 19장의 시설·설비 제어 쪽 연계 대상이며, 여기서는 BIM 에서 충전 위치를 표현·식별하는 수단으로만 다룬다.
+
+#### 프록시와 사용자 정의 유형
+
+IFC 4.3 문서는 IfcBuildingElementProxy 를 IfcBuiltElement 하위 유형과 같은 기능의 프록시로 정의해 명세가 아직 정의하지 않은 특수 건축 요소나 의미 정의에 대응시킬 수 없는 요소에 쓰게 하고, PredefinedType 이 USERDEFINED 이면 ObjectType 을 반드시 주게 하며, IFC4.3.0.0 부터 공간 자리표시·예비 공간에는 쓰지 말고 IfcVirtualElement 를 쓰라고 한다(확인일 2026-10-09). [사실][^ref-1356] IfcTransportElement 에도 USERDEFINED 이면 ObjectType 을 요구하는 형식 제약(CorrectPredefinedType)이 있으며, 이 관찰은 이 한 엔터티에 한정한다. [사실][^ref-213]
+
+#### 전기 저장 장치와 RECHARGER 값
+
+IfcElectricFlowStorageDevice 는 전기 에너지를 저장하고 점진적으로 내보내는 장치로 정의되고(IFC4 신규 엔터티) 충전 입력·출력 포트를 두며, USERDEFINED 이면 ObjectType 을 요구한다. [사실][^ref-1359] 그 유형 열거(IfcElectricFlowStorageDeviceTypeEnum)는 USERDEFINED·NOTDEFINED 를 포함한 11개 값 가운데 BATTERY·UPS 등과 함께 RECHARGER 를 두고, RECHARGER 를 2차 전지에 에너지를 넣는 배터리 충전기 일반으로 정의하며 차량·로봇 충전은 언급하지 않는다(개발 브랜치 기준). [사실][^ref-1358] RECHARGER 유형에 쓰는 속성 세트 Pset_ElectricFlowStorageDeviceTypeRecharger 는 공급 정격 전류(NominalSupplyCurrent) 하나만 담고 IFC4.3_ADD2 신규 자원으로 적혀 있으며, IFC4.3_ADD2 개발 빌드(buildingSMART Working Draft, 빌드 2026-10-08) 문서여서 게시판 IFC 4.3 ADD2 공식판 포함 여부는 미확인이다. [사실][^ref-1360] 콘센트·전기기기 유형 열거에는 충전 값이 없다(같은 발행 주체라 독립 교차 확인 아님). [사실][^ref-214][^ref-215] 원문이 로봇·차량 충전을 말하지 않으므로 로봇 충전기를 RECHARGER 로 표현하는 것은 후보에 그친다. [추정][^ref-1358][^ref-1360]
+
+#### 사용자 정의 속성 세트
+
+IfcPropertySet 은 'Pset_' 접두어를 명세 정의 세트에만 쓰게 하고, 속성 세트를 개별 객체에는 IfcRelDefinesByProperties(역속성 DefinesOccurrence)로, 유형 객체에는 직접 연결(역속성 DefinesType)로 붙여 같은 유형의 객체가 공유하게 한다. [사실][^ref-1357]
+
+#### IDS
+
+buildingSMART 는 IDS 를 정보 요구사항을 컴퓨터가 해석할 수 있게 정의해 IFC 모델의 자동 적합성 검사를 가능하게 하는 표준으로 소개하며, 2024-06-01 승인된 IDS 1.0 은 객체·분류·재료·속성·값의 전달을 지정하되 기하는 다루지 않고, buildingSMART 데이터 사전(bSDD)을 IDS 작성용 공유 속성 라이브러리로 설명한다. [사실][^ref-1361] 사용자 매뉴얼은 명세를 적용 대상과 요구로 나누고 엔터티·속성·분류·재료·부분(partOf) 같은 패싯으로 구성하며 값 제한으로 열거·패턴·범위·길이를 지원한다(같은 저장소 문서). [사실][^ref-1362][^ref-1365] 엔터티 패싯은 predefinedType 에 사용자 정의 문자열도 허용하고 USERDEFINED 이면 ObjectType(유형은 ElementType)을 읽어 대조한다. [사실][^ref-1363] 속성 패싯은 사용자 정의 세트를 허용하되 'Pset_'·'Qto_' 접두어는 표준 세트에만 쓰게 하고, 기수를 REQUIRED·OPTIONAL·PROHIBITED 로 두며, 측정값은 SI 단위로 다룬다. [사실][^ref-1364]
+
+#### 실무 관례와 연구
+
+뉴질랜드 Masterspec 의 Open BIM Object standard(OBOS) V1.0 은 IFC4 Add2 에 맞는 IfcElementType 이 없는 객체를 IfcBuildingElementProxy·USERDEFINED 로 내보내고 유형 이름을 'ElementType' 속성에 넣게 한다(발행일 미확인). 로봇 충전소 대상 규정은 아니다. [사실][^ref-1366]
+
+Pauwels 외(Advanced Engineering Informatics 56, 101959, 2023-04)는 BIM 에서 건물 데이터 로컬 저장소를 거쳐 로봇으로 가는 RDF·JSON 데이터 흐름을 만들고, 건물 데이터 모델 표준화에 모델링 가이드라인과 로봇 세계 모델이 필요하다고 제시했다(초록 기준). [사실][^ref-1421] 연계 대상: 이 데이터로 대학 건물에서 한 주행 시험은 로봇 자체 지능·제어 쪽이다. 논문의 건물 디지털 트윈은 현재 상태를 담는 건물 데이터 저장소 의미로 [18. 실시간 세계 상태·데이터 일관성](../../categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) 쪽이며 [34. 시뮬레이션·예측용 디지털 트윈](../../categories/design-and-simulation/simulation-and-predictive-digital-twin.md)과 구분한다. [추정][^ref-1421]
+
+검증이 승인한 대로 [공간 그래프 스키마 초안](space-graph-schema-draft.md)의 충전 위치에 속성 'BIM 표현(후보)'을 더해 v1.2 → v1.3 으로 올렸고, IDS 납품 요구 방식은 추정이라 그 초안 6절 항목 보강으로 두었다. 작업 스테이션에 대응하는 IFC 유형 값은 조사하지 않았다.
+
 ## 4. 결론과 남은 불확실성
 
 **결론**
@@ -288,6 +357,20 @@ MiR Fleet Enterprise 문서(1.2판, 2025-01, 유통사 게재본)가 CAD 평면�
 - Open-RMF 경유점 속성·플릿 어댑터 설정·건물 지도 메시지, 제3자 LIF 스키마는 이번 실행에서 다시 열지 않은 재인용이다.
 - 표준에 대응시킨 관계(엣지) 유형은 아직 스키마 초안에 없다.
 
+**결론 추가(실행 2026-10-09-26)**
+- 위 결론의 '충전 위치는 세 입력 형식 모두에서 표준 표현이 확인되지 않아'는 BIM 쪽이 콘센트·전기기기 유형 열거 기준이었으며, 전기 저장 장치 유형 값 RECHARGER(배터리 충전기 일반 정의, 차량·로봇 언급 없음, 개발 브랜치 기준)와 그 속성 세트(IFC4.3_ADD2 작업 초안, 공식판 포함 미확인)를 확인했다. [사실][^ref-1358][^ref-1360] 로봇 충전기를 이 값으로 표현하는 것은 후보에 그친다. [추정][^ref-1358][^ref-1360]
+- AI Hub 건축 도면 데이터는 엘리베이터·엘리베이터홀·계단실을 공간 라벨로 두고 계단 단독·로봇 운영 클래스는 없으며 도면은 모두 주거 유형이다. [사실][^ref-1012]
+- CubiCasa5K 는 원 주석 범주에 엘리베이터·계단실·계단이 있으나 공식 학습 매핑에서는 일반 방으로 합치거나 쓰지 않으며 라이선스는 CC BY-NC-SA 4.0 이다. [사실][^ref-1354][^ref-1353]
+- 이 데이터로 학습시킨 모델의 상용 배포 조건은 원 이용정책과 다른 데이터셋 페이지의 2차 기술이 달라 운영기관 확인이 필요해 보인다(법적 판단 아님). [추정][^ref-1352][^ref-1355]
+- 표준 밖 운영 시설은 USERDEFINED·ObjectType 과 'Pset_' 가 아닌 프로젝트 속성 세트로 표현하고 IDS 로 검사하는 경로가 표준이 허용하는 것으로 보이나, 로봇 충전소용 공개 관례는 찾지 못했다(부재 확인 아님). [추정][^ref-1356][^ref-1357][^ref-1363][^ref-1364][^ref-1366]
+- 실행 2026-10-09-26 에서 스키마 초안을 v1.2 → v1.3 으로 올렸다(충전 위치 속성 'BIM 표현(후보)'). IDS 방식은 6절 항목 보강으로 두고 작업 스테이션에는 적용하지 않았다.
+
+**남은 불확실성 추가**
+- 공개 래스터 데이터셋의 엘리베이터 라벨(q2-04)은 AI Hub 에서 확인했으나 주거 도면 기준이며, 건축 도면 데이터에 데이터셋별 별도 이용 조건이 있는지와 이용정책의 판·갱신일은 미확인이다.
+- CubiCasa5K 원 SVG 의 계단·엘리베이터 실제 주석 개수는 미확인이다(코드 범주 기준 관찰).
+- RECHARGER 와 속성 세트는 개발 브랜치·작업 초안 기준이며, 실무 IFC 모델의 로봇 충전기 표현은 미확인이다(q2-11). 작업 스테이션의 IFC 유형 값은 조사하지 않았다(q3-13).
+- Pauwels 외(2023-04)는 초록만 열람했다. 되돌아온 단계 1 질문 q1-08 은 부분 답으로 남는다.
+
 ## 5. 이 단계가 낳은 후속 질문
 
 | 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |
@@ -305,16 +388,26 @@ q4-07 은 q4-03(도면 좌표계와 로봇별 지도 좌표계 정렬)·q4-04(�
 
 q3-06 은 q3-02(공간 그래프 노드·엣지 단위)와 관련되지만, 공용 자원 목록을 관제에 내보낼 기준 형식을 묻는 점이 다르다.
 
+실행 2026-10-09-26 의 후속 질문:
+
+| 새 질문 id | 질문 | 보낼 단계 | 근거 finding id | 상태 |
+|---|---|---|---|---|
+| q3-13 | ROP 가 BIM 납품 요구로 쓸 로봇 운영 시설용 IDS(충전 위치는 IfcElectricFlowStorageDevice RECHARGER 또는 관련 엔터티·IfcBuildingElementProxy 의 USERDEFINED·ObjectType 값으로, 작업 스테이션은 대응 유형을 정한 뒤, 'Pset_' 가 아닌 프로젝트 속성 세트에 접근 자세·도킹 이름·상호작용 노드 속성을 REQUIRED 로 요구하는 형태)를 어떤 항목으로 정의하며, 설계·시공 측이 그 값을 채울 수 있는가, 채울 수 없으면 어느 단계에서 누가 보완하는가? (q2-06 에서 파생) | 단계 3. 구현 가설 설계 | f24 (실행 2026-10-09-26) | 열림 |
+| q2-11 | 로봇 충전기를 RECHARGER 로 표현할지 USERDEFINED·ObjectType 으로 표현할지 정하는 기준과 실무 IFC 모델의 실제 내보내기 방식(2절 표 참조, 관련: q2-09) | 단계 2. 필요한 데이터와 표준 조사 | f14 (실행 2026-10-09-26) | 열림 |
+| q2-12 | AI Hub 엘리베이터·엘리베이터홀·계단실 라벨로 학습한 모델의 비주거 도면 승강기·계단실 인식과 라벨 정의 기준(2절 표 참조, 관련: q1-05, q2-10, oq-341) | 단계 2. 필요한 데이터와 표준 조사 | f1 (실행 2026-10-09-26) | 열림 |
+
+q3-13 은 q3-06·q2-09 와 관련되지만 납품 요구 항목과 값을 채우는 주체를 묻는 점이 다르고, q2-12 는 q1-05·q2-10 과 관련되지만 AI Hub 라벨의 비주거 전이와 라벨 정의 기준을 묻는 점이 다르다.
+
 ## 6. 완료 조건 충족 현황
 
 충족 여부는 리서치 에이전트의 자체 평가를 스토리텔러 에이전트가 옮겨 적은 값이고, 최종 판정은 내용 검증 에이전트가 한다. 둘이 다르면 검증 판정을 따른다.
 
 | 완료 조건 | 충족 여부 | 근거 | 검증 판정 |
 |---|---|---|---|
-| 입력 형식별 정보 항목과 표준·형식 목록이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "4. 필요한 데이터와 표준" 절에 실림 | 충족 | 표준 목록(q2-01, 실행 2026-09-25-28), 입력 형식별 정보 항목(q2-02, 실행 2026-09-25-36), 관제·ROP 수용 형식(q2-03, 실행 2026-09-25-44)이 4절에 실렸다 | 미승인 |
-| 표준과 대응시킨 노드·엣지 유형이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)의 개념·관계 목록 표에 반영됨 | 미충족 | 노드 쪽은 v0.4(공간 노드·층의 표준 대응 클래스 후보), v0.5(문·계단의 BIM 대응 클래스, 엘리베이터 유형 값), v0.6(층별 지도의 교환 형식 후보)으로 반영했으나, 관계(엣지) 쪽 표준 대응은 없다 | 미충족 · 미승인 |
+| 입력 형식별 정보 항목과 표준·형식 목록이 [아이디어 3. 건축 도면 자동 인식](../../ideas/floorplan-recognition.md)의 "4. 필요한 데이터와 표준" 절에 실림 | 충족 | 표준 목록(q2-01), 입력 형식별 정보 항목(q2-02), 관제·ROP 수용 형식(q2-03), 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구(q2-06, 실행 2026-10-09-26)가 4절에 실렸다 | 미승인 |
+| 표준과 대응시킨 노드·엣지 유형이 [공간 그래프 스키마 초안](space-graph-schema-draft.md)의 개념·관계 목록 표에 반영됨 | 미충족 | 노드 쪽은 v0.4~v0.6 과 v1.3(충전 위치 BIM 표현 후보)으로 반영했으나 관계(엣지) 쪽 표준 대응은 없다 | 미충족 · 미승인 |
 
-다음 단계로 전환: 아니오(관계(엣지) 쪽 표준 대응 없음; 열린 질문 q2-04·q2-06·q2-07·q2-08·q2-09)
+다음 단계로 전환: 아니오(관계(엣지) 쪽 표준 대응 없음; 열린 질문 q2-07·q2-08·q2-09·q2-10과 이번에 등록한 단계 2 질문 2건; 되돌아온 단계 1 질문 q1-08 조사 중)
 
 ## 7. 관련 세부영역
 
@@ -324,6 +417,12 @@ q3-06 은 q3-02(공간 그래프 노드·엣지 단위)와 관련되지만, 공�
 - [15. 지도·공간·위치 모델](../../categories/space-and-map-model/map-space-and-location-model.md) — 분류 개정 전 원문 10장이 건축 도면 기반 이동 지도의 중심 연구영역으로 두며, BIM·CAD에서 이동 공간을 만들고 층·목적지를 정렬하는 일 자체다. 실행 2026-09-25-28은 7. 관련 표준·프레임워크·오픈소스 절과 11. 열린 질문 절에, 실행 2026-09-25-36은 7. 관련 표준·프레임워크·오픈소스 절(도면 입력 형식별로 담기는 공간 정보와 빠지는 정보)과 8. 대표 연구와 자료 절(도면 해석 AI 연구)에 반영을 제안했다. 실행 2026-09-25-44는 7. 관련 표준·프레임워크·오픈소스 절(로봇 관제가 받는 지도·구역·레이아웃 형식)과 9. ROP가 직접 맡는 것과 외부와 연계하는 것 절(형식 변환·지도 판 관리는 기존 경계 문장과 각주를 재사용)에 반영을 제안했다.
 - [47. AI·학습·적응과 모델 운영](../../categories/ai-and-learning/ai-learning-adaptation-and-model-operations.md) — 분류 개정 전 원문 8장의 교차 규칙에 따라 도면 해석은 이 영역의 방법이 15. 지도·공간·위치 모델에 적용되는 것이다. 실행 2026-09-25-36은 8. 대표 연구와 자료 절에 CAD 레이어·블록 기반 자동 라벨링, 텍스트 결합 심볼 스포팅, 래스터 축척 문자 인식 연구를 반영하도록 제안했다. 실행 2026-09-25-44의 반영 제안은 없다.
 - [22. 설비·건물 시스템 연동](../../categories/integration/facility-and-building-system-integration.md) — 인식한 문·엘리베이터가 설비·건물 시스템 연동 지점이 된다. 실행 2026-09-25-44의 반영 제안은 없다.
+
+- [14. 도면·BIM에서 지도 만들기](../../categories/space-and-map-model/maps-from-floor-plans-and-bim.md) — 트랙의 중심 영역이다. 실행 2026-10-09-26은 7. 관련 표준·프레임워크·오픈소스 절(IDS 1.0, IFC 프록시·사용자 정의 속성 세트·RECHARGER 유형 값), 8. 대표 연구와 자료 절(AI Hub·CubiCasa5K 의 계단·엘리베이터 라벨과 라이선스), 11. 열린 질문 절(oq-197 해결 근거)에 반영을 제안했다.
+- [45. 문서·도면·장면 이해](../../categories/ai-and-learning/document-drawing-and-scene-understanding.md) — 분류 원문 13장의 교차 규칙(도면 해석은 14. 도면·BIM에서 지도 만들기에 적용)에 따라 도면 해석 학습 데이터의 클래스 구성과 이용 조건을 8. 대표 연구와 자료 절에 반영하도록 제안했다.
+- [59. 법·규제·보험·라이선스](../../categories/governance-law-and-society/law-regulation-insurance-and-licensing.md) — AI허브 원 이용정책과 2차 기술의 차이, CC BY-NC-SA 4.0 평면도 데이터셋의 상용 이용 제약을 7절에 반영하도록 제안했다(법적 판단 아님).
+
+실행 2026-10-09-26은 위 21. 상호운용 표준·적합성의 7절에도 IDS 1.0 의 패싯·값 제한·기수 구조와 IFC 사용자 정의 속성 세트 명명 규칙을 반영하도록 제안했다.
 
 ## 8. 출처
 
@@ -392,12 +491,32 @@ q3-06 은 q3-02(공간 그래프 노드·엣지 단위)와 관련되지만, 공�
 [^ref-441]: Open Robotics (open-rmf), rmf_traffic_editor — README, 미확인, https://github.com/open-rmf/rmf_traffic_editor, 접근일 2026-09-25
 [^ref-442]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050 — json_schemas/zoneSet.schema, 미확인, https://github.com/VDA5050/VDA5050/blob/main/json_schemas/zoneSet.schema, 접근일 2026-09-25
 
+[^ref-062]: CubiCasa (Kalervo, A. 외), CubiCasa5k — README (CubiCasa5K: A Dataset and an Improved Multi-Task Model for Floorplan Image Analysis), 미확인, https://github.com/CubiCasa/CubiCasa5k, 접근일 2026-10-09
+[^ref-1012]: AI Hub (한국지능정보사회진흥원) — 구축 주관 에이치씨아이플러스(주), 건축 도면 데이터, 2023-07-26, https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71465, 접근일 2026-10-09
+[^ref-1352]: AI Hub (한국지능정보사회진흥원), AI 허브 이용정책 (데이터 이용정책), 미확인, https://www.aihub.or.kr/intrcn/guid/usagepolicy.do?currMenu=151&topMenu=105, 접근일 2026-10-09
+[^ref-1353]: Zenodo (CubiCasa), CubiCasa5k, 2019-03-28, https://zenodo.org/record/2613548, 접근일 2026-10-09
+[^ref-1354]: CubiCasa (CubiCasa/CubiCasa5k GitHub), CubiCasa5k — floortrans/loaders/house.py, 미확인, https://github.com/CubiCasa/CubiCasa5k/blob/master/floortrans/loaders/house.py, 접근일 2026-10-09
+[^ref-1355]: 경기도 고양시(공공데이터포털), 경기도 고양시 어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용) 20240105, 2025-08-16, https://www.data.go.kr/data/15146382/fileData.do, 접근일 2026-10-09
+[^ref-1356]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md, 접근일 2026-10-09
+[^ref-1357]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md, 접근일 2026-10-09
+[^ref-1358]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricFlowStorageDeviceTypeEnum.md, 접근일 2026-10-09
+[^ref-1359]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Entities/IfcElectricFlowStorageDevice.md, 접근일 2026-10-09
+[^ref-1360]: buildingSMART International, Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 documentation (IFC4X3_ADD2 development build, 개발 빌드 경로로 이동), 미확인, https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_ElectricFlowStorageDeviceTypeRecharger.htm, 접근일 2026-10-09
+[^ref-1361]: buildingSMART International, Information Delivery Specification (IDS), 미확인, https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/, 접근일 2026-10-09
+[^ref-1362]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/README.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/README.md, 접근일 2026-10-09
+[^ref-1363]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/entity-facet.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/entity-facet.md, 접근일 2026-10-09
+[^ref-1364]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/property-facet.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/property-facet.md, 접근일 2026-10-09
+[^ref-1365]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/restrictions.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/restrictions.md, 접근일 2026-10-09
+[^ref-1366]: Construction Information Limited (Masterspec, 뉴질랜드), 4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0), 미확인, https://masterspec.co.nz/43-IFC-Properties/7266/, 접근일 2026-10-09
+[^ref-1421]: Pauwels, P., de Koning, R., Hendrikx, B., & Torta, E. (Advanced Engineering Informatics 56, 101959), Live semantic data from building digital twins for robot navigation: Overview of data transfer methods, 2023-04, https://research.tue.nl/en/publications/live-semantic-data-from-building-digital-twins-for-robot-navigati/, 접근일 2026-10-09
+
 ## 9. 이력
 
 실행 id `build-2026-09-25`는 확장 아이디어 편입 때의 트랙 시드 생성을 나타내며, 파이프라인 실행이 아니므로 일일 로그가 없다.
 
 | 날짜 | 실행 id | 답한 질문 | 새 질문 | 초안 변경 | 버전 |
 |---|---|---|---|---|---|
+| 2026-10-09 | 2026-10-09-26 | q2-04, q2-06 | q2-11, q2-12, q3-13 | v1.2 → v1.3 | 5 |
 | 2026-09-25 | 2026-09-25-44 | q2-03 | q4-07, q3-06 | v0.5 → v0.6 | 4 |
 | 2026-09-25 | 2026-09-25-36 | q2-02 | q2-08, q2-09 | v0.4 → v0.5 | 3 |
 | 2026-09-25 | 2026-09-25-28 | q2-01 | q2-07, q3-05 | v0.3 → v0.4 | 2 |

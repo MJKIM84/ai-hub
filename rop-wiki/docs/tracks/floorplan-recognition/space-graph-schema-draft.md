@@ -2,24 +2,24 @@
 title: "공간 그래프 스키마 초안"
 type: ontology-draft
 track: floorplan-recognition
-ontology_version: '1.2'
+ontology_version: '1.3'
 related_areas: [5, 15, 18, 21, 22, 27, 28, 34, 35, 47, 54, 55, 57]
 tags: [공간 그래프, 스키마, 층별 지도, 공용 자원, 확장 아이디어]
 status: published
 confidence: low
 created: 2026-09-25
-updated: 2026-09-25
-sources: [ref-031, ref-063, ref-064, ref-065, ref-068, ref-069, ref-070, ref-071, ref-072, ref-078, ref-079, ref-080, ref-081, ref-082, ref-084, ref-085, ref-086, ref-223, ref-224, ref-046, ref-212, ref-213, ref-214, ref-215, ref-216, ref-156, ref-331, ref-332, ref-333, ref-334, ref-336, ref-338, ref-339, ref-343, ref-348, ref-419, ref-420, ref-421, ref-422, ref-426, ref-427, ref-428, ref-432, ref-435, ref-073, ref-346, ref-440, ref-441, ref-442, ref-536, ref-640, ref-414, ref-413, ref-642, ref-573, ref-574, ref-461, ref-229, ref-228, ref-283, ref-575, ref-315, ref-406, ref-629, ref-153, ref-644, ref-645, ref-648, ref-569, ref-651, ref-221, ref-653, ref-652, ref-654, ref-649, ref-105, ref-230, ref-667, ref-286, ref-670, ref-345, ref-668, ref-162, ref-687, ref-688, ref-689]
-last_run: 2026-09-25
-version: 14
+updated: 2026-10-09
+sources: [ref-031, ref-063, ref-064, ref-065, ref-068, ref-069, ref-070, ref-071, ref-072, ref-078, ref-079, ref-080, ref-081, ref-082, ref-084, ref-085, ref-086, ref-223, ref-224, ref-046, ref-212, ref-213, ref-214, ref-215, ref-216, ref-156, ref-331, ref-332, ref-333, ref-334, ref-336, ref-338, ref-339, ref-343, ref-348, ref-419, ref-420, ref-421, ref-422, ref-426, ref-427, ref-428, ref-432, ref-435, ref-073, ref-346, ref-440, ref-441, ref-442, ref-536, ref-640, ref-414, ref-413, ref-642, ref-573, ref-574, ref-461, ref-229, ref-228, ref-283, ref-575, ref-315, ref-406, ref-629, ref-153, ref-644, ref-645, ref-648, ref-569, ref-651, ref-221, ref-653, ref-652, ref-654, ref-649, ref-105, ref-230, ref-667, ref-286, ref-670, ref-345, ref-668, ref-162, ref-687, ref-688, ref-689, ref-1356, ref-1357, ref-1358, ref-1359, ref-1360, ref-1361, ref-1363, ref-1364, ref-1366]
+last_run: 2026-10-09
+version: 15
 ---
 
 [홈](../../index.md) › 중점 연구 트랙 › [건축 도면 자동 인식](index.md) › 공간 그래프 스키마 초안
 
-# 공간 그래프 스키마 초안 (v1.2)
+# 공간 그래프 스키마 초안 (v1.3)
 
 <!-- auto:page-status:start -->
-> 초안 버전: v1.2 · 페이지 상태: published · 신뢰도: low · 페이지 버전: 14 · 마지막 갱신: 2026-09-25 · 마지막 실행: 2026-09-25
+> 초안 버전: v1.3 · 페이지 상태: published · 신뢰도: low · 페이지 버전: 15 · 마지막 갱신: 2026-10-09 · 마지막 실행: 2026-10-09
 <!-- auto:page-status:end -->
 
 ## 1. 목적과 범위
@@ -56,6 +56,14 @@ v0은 확장 아이디어 3의 정의 문구(아래 인용)에 나오는 요소�
 
 개념은 번호나 코드로 부르지 않고 이름으로 부른다. 상태 값은 초안(시드) / 제안(검증 승인 전) / 확정(검증 승인) / 폐기(이유 병기)이며, 폐기한 개념은 표에서 지우지 않고 상태만 바꾼다. 속성의 "(단계 n에서 확정)"은 그 단계의 조사 결과로 정한다는 뜻이다. v0.1(실행 2026-09-25-05)의 추가·확정은 내용 검증 에이전트가 승인한 변경만 반영한 것이다. v0.2(실행 2026-09-25-11)에서는 검증이 승인한 대로 층간 정렬 기준점을 추가하고 층별 지도·평면도를 확정했으며, 벤더 주장(MiR Fleet 축척 요건)과 추정(입력 형식별 자동화 수준 종합)은 근거 칸에 넣지 않았다. 문에 통과 방향·문 유형·통과 비용 속성을 더하는 제안은 반영하지 않고 6절 질문으로 두었다. v0.3(실행 2026-09-25-19)에서는 검증이 승인한 대로 작업 스테이션을 추가하고, 충전 위치에 접근 지점 속성을, 엘리베이터에 BIM 대응 클래스 속성을 더해 두 시드 개념을 확정했다. 충전 위치·작업 스테이션의 정보 출처 속성과 작업 스테이션을 공용 자원에 포함할지는 반영하지 않고 6절 질문으로 두었다. v0.4(실행 2026-09-25-28)에서는 검증이 승인한 대로 공간 노드와 층에 표준 대응 클래스(후보) 속성을 더하고 층을 확정했으며, 주제 레이어 개념을 더해 확정했다. 주제 레이어의 정의는 IndoorGML의 주제 레이어·레이어 간 연결이 근거인 범위로 한정했다. 문에 표준 대응 클래스를 더하는 제안과 주제 레이어로 로봇 주행 레이어와 사람 동선 레이어를 나눌지는 반영하지 않고 6절 질문으로 두었다. v0.5(실행 2026-09-25-36)에서는 검증이 승인한 대로 문에 BIM 대응 클래스(IfcDoor) 속성과 폭·여닫는 방식의 IFC 원천을, 계단에 BIM 대응 클래스(IfcStair) 속성을 더하고, 엘리베이터의 BIM 대응 클래스에 유형 열거 값 ELEVATOR를 확정했으며, 평면도에 길이 단위·축척 정보 속성을 더했다. 문의 BIM 대응 클래스는 IFC 한 표준에 한정한 것이며, IndoorGML 2.0에서 문을 어느 클래스로 표현하는지에 대한 6절 질문은 그대로 남는다. 계단이 잇는 층의 도출(추정)과 래스터 평면도의 축척 복원 방식은 반영하지 않고 6절 질문으로 두었다. v0.6(실행 2026-09-25-44)에서는 검증이 승인한 대로 층별 지도에 교환 형식(후보) 속성을 더하고 행 상태는 확정을 유지했다. 지도 판(mapVersion·layoutVersion) 속성은 6절의 지도 버전 질문을 근거 없이 결정하게 되어 반영하지 않고 그 항목의 근거를 보강했으며, VDA 5050 구역 집합을 공간 그래프 개념으로 두는 제안은 제안된 이름('제한 구역')이 근거의 우선·벌점·방향 유형과 맞지 않고 1절 범위와의 관계도 정해지지 않아 반영하지 않고 6절 질문으로 두었다. v0.7(실행 2026-09-25-58)에서는 검증이 승인한 대로 경유점과 주행 차선을 추가·확정하고, 공용 자원에 상호 배제 여부 속성을 더해 시드 개념을 확정했다. 두 새 개념의 정의는 좌표 경유점과 두 경유점을 잇는 주행 엣지로만 두었고 속성은 finding이 확인한 것만 넣었다. 공용 자원의 점유 요소(자원이 걸친 경유점·차선·구역) 속성은 추정 근거여서 반영하지 않았고, 경유점·주행 차선과 공간 노드의 관계와 경유점을 공간 노드와 다른 개념으로 둘지는 관계 변경 제안이 없어 6절 질문으로 두었다. v0.8(실행 2026-09-25-65)에서는 검증이 승인한 대로 문에 자동 구동 여부(Pset_DoorCommon.HasDrive)·장애인 접근 가능(HandicapAccessible) 속성을, 계단에 단 높이·디딤판 길이·단 수(Pset_StairCommon) 속성을 더하고 두 행의 상태는 확정을 유지했다. 두 속성 세트의 정의는 공식 문서 검색 요약 기준이다(원문 미열람). 개념 '통과 요구 조건'을 더하는 제안은 아이디어 정의 문구 밖 개념이고 관계가 정해지지 않았으며 매뉴얼 기반 로봇 기능 온톨로지 트랙의 '작업 요구'·'제약'·'실행 조건' 개념과의 중복 여부를 확인할 수 없어 반영하지 않고 6절 질문으로 두었다. v0.9(실행 2026-09-25-70)에서는 검증이 승인한 형태대로, 층에는 새 속성을 두지 않고 기존 속성 '높이 기준(단계 4에서 확정)'에 값 후보 'Open-RMF traffic-editor 층 고도(elevation, 미터)'를 병기했으며(단계 4 결정은 앞당기지 않음), 문에는 새 속성 '구동 유형'을 두지 않고 기존 속성 '여닫는 방식'의 값 후보로 Open-RMF 문 유형(hinged·double_hinged·sliding·double_sliding)을 더하고 '동작 범위(motion_degrees·motion_direction)' 속성을 추가했고, 엘리베이터에 '칸 치수(Open-RMF 승강기 칸 폭·깊이, 미터)' 속성을 추가했다. 세 행의 상태는 확정을 유지했다. 이번 문 값 후보는 통과 비용이 아니라 설비 동작 재현용이며, v0.2에서 반영하지 않은 문 유형·통과 비용 속성 제안과는 별개다. 로봇 스폰 위치·주문 흐름·초기 재고를 스키마 안의 개념으로 둘지는 6절 질문으로 두었다. v1.0(실행 2026-09-25-72)에서는 검증이 승인한 대로 층별 지도의 기존 속성 '교환 형식(후보)' 가운데 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터(해상도·원점·점유/빈 공간 임계값)'를 더하고 행 상태는 확정을 유지했다. 층별 지도에 '로봇 지도 좌표계 변환(제조사·플릿별 회전·축척·이동, 대응 경유점, 변환 오차 추정값)' 속성을 더하는 제안은 6절의 정렬 정보 질문(q4-03)을 근거 없이 결정하게 되어 반영하지 않고 그 항목의 근거 보강으로 두었다. v1.1(실행 2026-09-25-76)에서는 검증이 승인한 대로 층에 속성 '시스템별 층 식별자(별칭)'를 더하고 값 후보를 Open-RMF 건물 지도 층 이름·승강기 층 이름 문자열, VDA 5050 mapId, IMDF 순번(ordinal)·약칭(short_name)으로 두었으며 행 상태는 확정을 유지했다. MassRobotics planarDatum 은 층 필드가 아니라 로봇이 참조하는 기준면 id 로만 정의되므로 이 속성 값에 넣지 않고 6절 층·장소 식별자 대응 항목의 메모로 두었다. 기준 키를 무엇으로 둘지는 정의에 넣지 않았다. 개념 '좌표계 정렬(Coordinate Alignment)'을 더하는 제안은 반영하지 않고 6절 정렬 정보 항목의 근거 보강으로 두었다. v1.2(실행 2026-09-25-78)에서는 검증이 승인한 대로 평면도의 기존 속성 '버전'에 값 후보 '상태(용도 적합성) 코드·개정 코드(영국 BIM Framework 지침, ISO 19650-2 영국 국가 부속서 기준, 후보)'를 병기하고, IFC 입력은 요소 GlobalId 로 판 사이 요소를 대응시킬 수 있다는 메모(IfcDiff 의 GlobalId 일관성 가정)를 두었으며 행 상태는 확정을 유지했다. 상태·개정 코드의 세부 값은 업체 블로그 요약 근거라 넣지 않았다. 층별 지도에 속성 '판 식별자(후보)'(VDA 5050 mapId·mapVersion, 제3자 LIF 스키마의 layoutVersion, Open-RMF 건물 지도의 판 필드 부재)를 더하는 제안은 실행 2026-09-25-44 에서 반영하지 않은 '지도 판' 속성과 같은 대상이고, 이번 종합이 판 대응표를 별도 개념으로 두는 쪽을 가리켜 6절 지도 버전 질문을 근거 없이 결정하게 되므로 반영하지 않고 그 항목의 근거 보강으로 두었다.
 
+**v1.3 에서 속성을 더한 개념** — 위 표의 충전 위치 행(상태 확정 유지)에 아래 속성을 더한다.
+
+| 개념 | 더한 속성 | 근거 출처 | 상태 |
+|---|---|---|---|
+| 충전 위치(Charging Location) | BIM 표현(후보) — 후보 1: IFC 4.3 IfcElectricFlowStorageDevice의 PredefinedType RECHARGER(배터리 충전기 일반 정의, 차량·로봇 언급 없음, 개발 브랜치 기준; 속성 세트 Pset_ElectricFlowStorageDeviceTypeRecharger는 공급 정격 전류만 담는 IFC4.3_ADD2 작업 초안) / 후보 2: 맞는 유형이 없을 때 관련 엔터티 또는 IfcBuildingElementProxy의 USERDEFINED와 ObjectType 값(실무 관례 OBOS, IFC4 Add2 기준; 콘센트·전기기기 열거에는 충전 값 없음) / 도킹 이름·접근 자세 같은 운영 속성은 Pset_ 접두어 없는 프로젝트 속성 세트 | finding f11·f13·f14·f15·f16·f17·f22 (실행 2026-10-09-26)[^ref-1356][^ref-1359][^ref-1358][^ref-1360][^ref-214][^ref-215][^ref-1357][^ref-1366] | 확정 |
+
+v1.3(실행 2026-10-09-26)에서는 검증이 승인한 대로 충전 위치에 속성 'BIM 표현(후보)'을 더하고 행 상태는 확정을 유지했다. RECHARGER 는 원문이 로봇·차량 충전을 말하지 않아 후보에 그치며, IDS 납품 요구 방식(추정)과 로봇 충전소용 공개 관례를 찾지 못한 점은 정의에 넣지 않고 6절 항목 보강으로 두었다. 작업 스테이션에는 적용하지 않았다(대응 유형 미조사).
+
 ## 3. 관계 목록 표
 
 | 주어 | 관계 | 목적어 | 근거 |
@@ -76,6 +84,8 @@ v0은 확장 아이디어 3의 정의 문구(아래 인용)에 나오는 요소�
 경유점·주행 차선과 공간 노드 사이의 관계(포함 관계 등)도 v0.7에서 승인된 관계 변경이 없어 넣지 않았다(6절). v0.9와 v1.0에서도 관계 변경은 없었다.
 
 v1.1과 v1.2에서도 관계 변경은 없었다.
+
+v1.3에서도 관계 변경은 없었다.
 
 ## 4. 다이어그램
 
@@ -188,6 +198,18 @@ v0을 아이디어 정의에서 도출하는 과정과 v0.1 갱신(실행 2026-0
 [^ref-688]: Open Robotics (open-rmf), rmf_building_map_msgs — rmf_building_map_msgs/msg/BuildingMap.msg, 미확인, https://github.com/open-rmf/rmf_building_map_msgs/blob/main/rmf_building_map_msgs/msg/BuildingMap.msg, 접근일 2026-09-25
 [^ref-689]: UK BIM Framework, Information management according to BS EN ISO 19650 Guidance Part C: Facilitating the common data environment (workflow and technical solutions), Edition 1, 2020-09, https://ukbimframework.org/wp-content/uploads/2020/09/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf, 접근일 2026-09-25 (원문 미열람)
 
+- 위 '로봇 충전소는 이번에 확인한 IFC 4.3 유형 값(개발 브랜치 기준)에 없어 …' 항목의 범위 한정과 근거 보강(q2-06은 실행 2026-10-09-26에서 답했으나 이 항목은 해결로 바꾸지 않는다): 그 항목은 콘센트·전기기기 유형 열거 기준이었다. [사실][^ref-214][^ref-215] 전기 저장 장치 유형 열거(IfcElectricFlowStorageDeviceTypeEnum, 개발 브랜치 기준)는 USERDEFINED·NOTDEFINED 를 포함한 11개 값 가운데 배터리 충전기 일반을 뜻하는 RECHARGER 를 두고 차량·로봇 충전은 언급하지 않는다. [사실][^ref-1358] RECHARGER 용 속성 세트는 공급 정격 전류 하나만 담는 IFC4.3_ADD2 개발 빌드(buildingSMART Working Draft) 문서이며 게시판 IFC 4.3 ADD2 공식판 포함 여부는 미확인이다. [사실][^ref-1360] 그래서 로봇 충전기의 RECHARGER 표현은 후보에 그치고, v1.3 에서 충전 위치의 'BIM 표현(후보)' 속성으로만 반영했다. [추정][^ref-1358][^ref-1360] [정보 전달 명세(Information Delivery Specification, IDS)](../../glossary/information-delivery-specification.md)의 엔터티 패싯은 사용자 정의 predefinedType 을 허용하고 USERDEFINED 이면 ObjectType 을 대조하며, 속성 패싯은 'Pset_' 가 아닌 사용자 정의 속성 세트를 필수(REQUIRED) 기수로 요구할 수 있다. [사실][^ref-1363][^ref-1364] 이를 묶어 충전 위치·작업 스테이션의 유형과 운영 속성을 IDS 납품 요구로 적어 검사하는 경로가 표준이 허용하는 것으로 보이나, 로봇 충전소·작업 스테이션용 공개 IDS·속성 세트·bSDD 분류 관례나 사례는 이번 검색 범위에서 찾지 못했다(부재 확인 아님). [추정][^ref-1361][^ref-1363][^ref-1364][^ref-1366][^ref-1356] 이 방식은 추정이라 개념 정의에 넣지 않았다. — 관련: q2-06, q2-11, q3-13
+
+[^ref-1356]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/shared/IfcSharedBldgElements/Entities/IfcBuildingElementProxy.md, 접근일 2026-10-09
+[^ref-1357]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/core/IfcKernel/Entities/IfcPropertySet.md, 접근일 2026-10-09
+[^ref-1358]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Types/IfcElectricFlowStorageDeviceTypeEnum.md, 접근일 2026-10-09
+[^ref-1359]: buildingSMART (IFC4.3.x-development GitHub), IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음), 미확인, https://github.com/buildingSMART/IFC4.3.x-development/blob/ifc4.3-main/docs/schemas/domain/IfcElectricalDomain/Entities/IfcElectricFlowStorageDevice.md, 접근일 2026-10-09
+[^ref-1360]: buildingSMART International, Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 documentation (IFC4X3_ADD2 development build, 개발 빌드 경로로 이동), 미확인, https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/Pset_ElectricFlowStorageDeviceTypeRecharger.htm, 접근일 2026-10-09
+[^ref-1361]: buildingSMART International, Information Delivery Specification (IDS), 미확인, https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/, 접근일 2026-10-09
+[^ref-1363]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/entity-facet.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/entity-facet.md, 접근일 2026-10-09
+[^ref-1364]: buildingSMART (buildingSMART/IDS GitHub), IDS — Documentation/UserManual/property-facet.md, 미확인, https://github.com/buildingSMART/IDS/blob/development/Documentation/UserManual/property-facet.md, 접근일 2026-10-09
+[^ref-1366]: Construction Information Limited (Masterspec, 뉴질랜드), 4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0), 미확인, https://masterspec.co.nz/43-IFC-Properties/7266/, 접근일 2026-10-09
+
 ## 7. 버전 이력
 
 아래 표는 퍼블리셔가 원천 데이터 `data/tracks/floorplan-recognition/space_graph_versions.json`에서 만든다. [가정]
@@ -208,6 +230,7 @@ v0을 아이디어 정의에서 도출하는 과정과 v0.1 갱신(실행 2026-0
 | 1.0 | 2026-09-25 | v0.9 → v1.0: 층별 지도 교환 형식(후보)의 Nav2 격자 지도 값에 딸린 속성 '내비게이션 지도 메타데이터(해상도·원점·점유/빈 공간 임계값)' 추가(f1); 거부: 층별 지도 속성 '로봇 지도 좌표계 변환'(f5 → 6절 정렬 정보 질문 근거 보강, q4-03). 버전 이력 행: 1.0 | 2026-09-25-72 |
 | 1.1 | 2026-09-25 | v1.0 → v1.1: 층 속성 '시스템별 층 식별자(별칭)' 추가(f6·f9·f10·f11, MassRobotics planarDatum 제외 — 6절 메모); 거부: 개념 '좌표계 정렬'(f1·f2·f5·f6·f8 → 6절 정렬 정보 항목 근거 보강). 버전 이력 행: 1.1 \| 2026-09-25 \| 층 속성 '시스템별 층 식별자(별칭)' 추가(f6·f9·f10·f11), 거부: 개념 '좌표계 정렬'(6절 근거 보강) \| 2026-09-25-76 | 2026-09-25-76 |
 | 1.2 | 2026-09-25 | v1.1 → v1.2: 평면도 '버전' 값 후보(상태·개정 코드, 후보)와 IFC GlobalId 대응 메모 추가(f7·f9); 거부: 층별 지도 '판 식별자(후보)'(f1·f3·f5·f6 → 6절 지도 버전 항목 근거 보강). 버전 이력 행: 1.2 \| 2026-09-25 \| 평면도 '버전' 값 후보(상태·개정 코드)와 IFC GlobalId 대응 메모 추가(f7·f9), 거부: 층별 지도 '판 식별자(후보)'(6절 근거 보강) \| 2026-09-25-78 | 2026-09-25-78 |
+| 1.3 | 2026-10-09 | v1.2 → v1.3: 개념 '충전 위치'에 속성 'BIM 표현(후보)' 추가(f11·f13·f14·f15·f16·f17·f22), 거부 없음(IDS 납품 요구 방식 f24 는 6절 항목 보강). 버전 이력 행: 1.3 · 2026-10-09 · 충전 위치 속성 'BIM 표현(후보)' 추가(f11·f13·f14·f15·f16·f17·f22) · 2026-10-09-26 | 2026-10-09-26 |
 <!-- auto:ontology-version-history:end -->
 
 [^ref-031]: VDA / VDMA (VDA5050 GitHub), VDA5050/VDA5050_EN.md — Official Specification document for the VDA 5050, 미확인, https://github.com/VDA5050/VDA5050/blob/main/VDA5050_EN.md, 접근일 2026-09-25

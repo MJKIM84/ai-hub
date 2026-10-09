@@ -756,6 +756,7 @@ nav:
     - VDA 5050 (VDA 5050): glossary/vda-5050.md
     - VDA 5050 팩트시트 (VDA 5050 factsheet): glossary/vda-5050-factsheet.md
     - WES/WCS/WMS/MES/TMS: glossary/wes-wcs-wms-mes-tms.md
+    - buildingSMART 데이터 사전 (buildingSMART Data Dictionary (bSDD)): glossary/buildingsmart-data-dictionary.md
     - pass^k 지표 (pass^k): glossary/pass-k.md
     - 가명처리 (Pseudonymisation): glossary/pseudonymisation.md
     - 가상 시운전 (Virtual Commissioning): glossary/virtual-commissioning.md
@@ -764,6 +765,7 @@ nav:
     - 감사 추적 (Audit Trail): glossary/audit-trail.md
     - 개인 배송 장치 (Personal Delivery Device (PDD)): glossary/personal-delivery-device.md
     - 객체 중심 이벤트 로그 (Object-Centric Event Log (OCEL)): glossary/ocel.md
+    - 건물 요소 프록시 (Building Element Proxy (IfcBuildingElementProxy)): glossary/building-element-proxy.md
     - 건물 위상 온톨로지 (Building Topology Ontology (BOT)): glossary/building-topology-ontology.md
     - 건물 정보 모델링 (Building Information Modeling (BIM)): glossary/building-information-modeling.md
     - 결정 중심 학습 (Decision-Focused Learning): glossary/decision-focused-learning.md
@@ -897,6 +899,7 @@ nav:
     - 사용 정보 (Information for Use (Instructions for Use)): glossary/information-for-use.md
     - 사용 후 평가 (Post-Occupancy Evaluation (POE)): glossary/post-occupancy-evaluation.md
     - 사용자 시뮬레이터 (User Simulator): glossary/user-simulator.md
+    - 사용자 정의 속성 세트 (User-defined Property Set): glossary/user-defined-property-set.md
     - 사이버복원력법 (Cyber Resilience Act (CRA)): glossary/cyber-resilience-act.md
     - 사전 실행 계획 검증 (Pre-execution Plan Verification): glossary/pre-execution-plan-verification.md
     - 사회적 내비게이션 (Social Robot Navigation (Human-aware Navigation)): glossary/social-robot-navigation.md
@@ -1656,8 +1659,24 @@ nav:
     - ref-135 — SCOR Digital Standard — Introduction and Front Matter (SCOR Version 14.0, 2025): references/ref-135.md
     - 'ref-1350 — Interoperability Interest Group June 5, 2025: Execution of Workflow Diagrams': references/ref-1350.md
     - ref-1351 — crossflow — README: references/ref-1351.md
+    - ref-1352 — AI 허브 이용정책 (데이터 이용정책): references/ref-1352.md
+    - ref-1353 — CubiCasa5k: references/ref-1353.md
+    - ref-1354 — CubiCasa5k — floortrans/loaders/house.py: references/ref-1354.md
+    - ref-1355 — 경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105: references/ref-1355.md
+    - ref-1356 — IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1356.md
+    - ref-1357 — IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1357.md
+    - ref-1358 — IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1358.md
+    - ref-1359 — IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3 ADD2와 문구가 다를 수 있음): references/ref-1359.md
     - ? 'ref-136 — Integrated Fleet Management of Mobile Robots for Enhancing Industrial Efficiency: A Case Study on Interoperability in Multi-Brand Environments Within the Automotive Sector'
       : references/ref-136.md
+    - ? ref-1360 — Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 documentation (IFC4X3_ADD2 development build, 개발 빌드 경로로 이동)
+      : references/ref-1360.md
+    - ref-1361 — Information Delivery Specification (IDS): references/ref-1361.md
+    - ref-1362 — IDS — Documentation/UserManual/README.md: references/ref-1362.md
+    - ref-1363 — IDS — Documentation/UserManual/entity-facet.md: references/ref-1363.md
+    - ref-1364 — IDS — Documentation/UserManual/property-facet.md: references/ref-1364.md
+    - ref-1365 — IDS — Documentation/UserManual/restrictions.md: references/ref-1365.md
+    - ref-1366 — 4.0 Object Properties & Property Grouping — 4.3 IFC properties (Open BIM Object standard (OBOS) V1.0): references/ref-1366.md
     - ref-1367 — Import BIM To Indoor Dataset (Indoors): references/ref-1367.md
     - ref-1368 — IFC Import (Pathfinder How-To): references/ref-1368.md
     - ref-1369 — CEVA deploys Automated Mobile Robots at its Melbourne site: references/ref-1369.md
@@ -1690,6 +1709,8 @@ nav:
     - 'ref-140 — SCOR Model — Performance: Reliability RL.1.1 Perfect Customer Order Fulfillment': references/ref-140.md
     - ref-141 — WERC DC Measures Survey - 2025: references/ref-141.md
     - 'ref-142 — Overall Equipment Effectiveness: consistency of ISO standard with literature': references/ref-142.md
+    - 'ref-1421 — Live semantic data from building digital twins for robot navigation: Overview of data transfer methods': references/ref-1421.md
+    - ref-1422 — RGo Robotics introduces AI-powered Intelligent Mapping system: references/ref-1422.md
     - ref-143 — Little’s Law – A Practical Approach to Understanding Production System Performance: references/ref-143.md
     - 'ref-144 — Robotized and Automated Warehouse Systems: Review and Recent Developments': references/ref-144.md
     - ref-145 — Analytical models for collaborative autonomous mobile robot solutions in fulfillment centers: references/ref-145.md

@@ -20,6 +20,35 @@ version: 1
 
 | 실행 id | 동작 | 페이지 | 요약 |
 |---|---|---|---|
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | q2-04·q2-06 답함(3절 소제목 신설, q2-02 표 갱신 칸 병기), 2절 표·상태 줄 갱신, 4절 결론·불확실성 보강, 후속 질문 3건, 6절 완료 조건(전환 아니오), 출처·이력 추가. 2차: q2-04 소절의 충전 위치 소절 위치 표기와 2절 첫 문단 표현 수정 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/space-graph-schema-draft.md](tracks/floorplan-recognition/space-graph-schema-draft.md) | v1.2 → v1.3: 충전 위치에 속성 'BIM 표현(후보)' 추가(2절 보충 표), 6절 충전소 항목 범위 한정·RECHARGER·IDS 근거 보강 |
+| 2026-10-09-26 | 갱신 | [docs/ideas/floorplan-recognition.md](ideas/floorplan-recognition.md) | 3절에 공개 데이터셋 비교표 갱신 소절(CubiCasa5K·AI Hub 행, q2-04), 4절에 표준 밖 운영 시설의 IFC 표현과 IDS 납품 요구 소절(q2-06, BIM 소절 셋째 항목 범위 한정) 추가 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/stage-1-prior-work-and-products.md](tracks/floorplan-recognition/stage-1-prior-work-and-products.md) | 3절 끝에 q1-08 보강 소절(f25·f26) 추가, 출처 ref-1422, 이력 메모. 2차: 머리말 패치로 프런트매터 sources 에 ref-1422 추가 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/index.md](tracks/floorplan-recognition/index.md) | 6절에 실행 2026-10-09-26 요약 문단 추가(스키마 초안 v1.3, q2-04·q2-06 답함). 상태 줄은 이미 최신이라 바꾸지 않음 |
+| 2026-10-09-26 | 요약 | [docs/tracks/floorplan-recognition/stage-2-data-and-standards.md](tracks/floorplan-recognition/stage-2-data-and-standards.md) | 건축 도면 자동 인식 단계 2: q2-04·q2-06 답함, q1-08 보강(조사 중 유지), 공간 그래프 스키마 초안 v1.2 → v1.3, 후속 질문 3건 |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1352.md](references/ref-1352.md) | 참고문헌 ref-1352 등록: AI 허브 이용정책 (데이터 이용정책) |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1353.md](references/ref-1353.md) | 참고문헌 ref-1353 등록: CubiCasa5k |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1354.md](references/ref-1354.md) | 참고문헌 ref-1354 등록: CubiCasa5k — floortrans/loaders/house.py |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1355.md](references/ref-1355.md) | 참고문헌 ref-1355 등록: 경기도 고양시_어린이 음성맥락 인식률 향상을 위한 방송 음성 및 자연어 처리(AI학습용)_20240105 |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1356.md](references/ref-1356.md) | 참고문헌 ref-1356 등록: IFC 4.3 — IfcBuildingElementProxy (개발 브랜치 ifc4.3-main 원본, 게시… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1357.md](references/ref-1357.md) | 참고문헌 ref-1357 등록: IFC 4.3 — IfcPropertySet (개발 브랜치 ifc4.3-main 원본, 게시판 IFC 4.3… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1358.md](references/ref-1358.md) | 참고문헌 ref-1358 등록: IFC 4.3 — IfcElectricFlowStorageDeviceTypeEnum (개발 브랜치 ifc4.… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1359.md](references/ref-1359.md) | 참고문헌 ref-1359 등록: IFC 4.3 — IfcElectricFlowStorageDevice (개발 브랜치 ifc4.3-main 원… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1360.md](references/ref-1360.md) | 참고문헌 ref-1360 등록: Pset_ElectricFlowStorageDeviceTypeRecharger — IFC 4.3.2.0 do… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1361.md](references/ref-1361.md) | 참고문헌 ref-1361 등록: Information Delivery Specification (IDS) |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1362.md](references/ref-1362.md) | 참고문헌 ref-1362 등록: IDS — Documentation/UserManual/README.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1363.md](references/ref-1363.md) | 참고문헌 ref-1363 등록: IDS — Documentation/UserManual/entity-facet.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1364.md](references/ref-1364.md) | 참고문헌 ref-1364 등록: IDS — Documentation/UserManual/property-facet.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1365.md](references/ref-1365.md) | 참고문헌 ref-1365 등록: IDS — Documentation/UserManual/restrictions.md |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1366.md](references/ref-1366.md) | 참고문헌 ref-1366 등록: 4.0 Object Properties & Property Grouping — 4.3 IFC properti… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1421.md](references/ref-1421.md) | 참고문헌 ref-1421 등록: Live semantic data from building digital twins for robot nav… |
+| 2026-10-09-26 | 생성 | [docs/references/ref-1422.md](references/ref-1422.md) | 참고문헌 ref-1422 등록: RGo Robotics introduces AI-powered Intelligent Mapping syste… |
+| 2026-10-09-26 | 생성 | [docs/glossary/buildingsmart-data-dictionary.md](glossary/buildingsmart-data-dictionary.md) | 용어집 항목 buildingSMART 데이터 사전 |
+| 2026-10-09-26 | 생성 | [docs/glossary/building-element-proxy.md](glossary/building-element-proxy.md) | 용어집 항목 건물 요소 프록시 |
+| 2026-10-09-26 | 생성 | [docs/glossary/user-defined-property-set.md](glossary/user-defined-property-set.md) | 용어집 항목 사용자 정의 속성 세트 |
+| 2026-10-09-26 | 갱신 | [docs/standards/index.md](standards/index.md) | 표준·프레임워크 1건 추가·갱신 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/question-backlog.md](tracks/floorplan-recognition/question-backlog.md) | 백로그 항목 7건 갱신 |
+| 2026-10-09-26 | 갱신 | [docs/tracks/floorplan-recognition/log.md](tracks/floorplan-recognition/log.md) | 트랙 로그 항목 추가(단계 2) |
 | 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md](tracks/chat-based-configuration-and-operation/stage-2-data-and-standards.md) | q2-04 답함(3절 '### q2-04' 소절 신설, 중간 표현별 대응표는 이 위키 구성), 상태 줄·2절·4절·5절(q3-17)·6절(검증 판정 행별: 조건 1 충족·미승인, 조건 2 미충족·미승인, 전환 아니오)·7절·8절·9절 갱신 |
 | 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md](tracks/chat-based-configuration-and-operation/stage-1-prior-work-and-products.md) | 되돌아온 질문 q1-05·q1-06 답함(3절 두 소제목, 신뢰도 low, 물류창고 사례 표), 상태 줄·프런트매터 sources(6건 추가)·2절(도입 문단 q1-01 출처 서술 유지)·4절·5절(q1-05 답함, q4-20·q5-20 추가)·6절 전환 줄·8절·9절(이력 표 맨 위 행, 버전 6) 갱신 |
 | 2026-10-09-25 | 갱신 | [docs/tracks/chat-based-configuration-and-operation/task-model-draft.md](tracks/chat-based-configuration-and-operation/task-model-draft.md) | 초안 v0.9 → v1.0: 작업 개념 속성 '선후관계'를 작업 사이 선행 의존(표현 형식 후보: 의존 그래프)으로 정리하고 외부 표현 메모 추가(상태 확정 유지, 관계 추가 없음), 6절에 q2-04 답 링크와 질문 2건 추가 |
