@@ -454,6 +454,16 @@ class CategoryRefsSectionTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             V.apply_patches(self.PAGE, [{"section": "템플릿에 없는 절", "action": "append", "content": "x"}])
 
+    def test_preamble_patch_replaces_status_line(self):
+        page = ("---\ntitle: \"T\"\ntype: track\nstatus: published\n---\n[홈](../../index.md) › T\n\n# T\n\n"
+                "> 트랙 상태: active · 현재 단계: 단계 3. X · 마지막 트랙 실행: 2026-09-25\n\n도입.\n\n## 1. 컨셉\n\n본문.\n")
+        new_pre = "[홈](../../index.md) › T\n\n# T\n\n> 트랙 상태: active · 현재 단계: 단계 2. Y · 마지막 트랙 실행: 2026-10-09\n\n도입."
+        out = V.apply_patches(page, [{"section": "머리말", "action": "replace", "content": new_pre}])
+        body = fm.parse(out)[1]
+        self.assertIn("단계 2. Y · 마지막 트랙 실행: 2026-10-09", body)
+        self.assertNotIn("2026-09-25", body)
+        self.assertIn("도입.\n\n## 1. 컨셉\n\n본문.", body)
+
 
 if __name__ == "__main__":
     unittest.main()
