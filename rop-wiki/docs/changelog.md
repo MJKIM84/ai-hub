@@ -16,6 +16,17 @@ version: 1
 ## 이력
 
 <!-- auto:changelog:start -->
+### 2026-10-09
+
+| 실행 id | 동작 | 페이지 | 요약 |
+|---|---|---|---|
+| 2026-10-09-03 | 갱신 | [docs/categories/objects-people-and-live-state/index.md](categories/objects-people-and-live-state/index.md) | '다른 대분류와의 연결' 절 신규 작성(15개 대분류와의 연결, 아직 다루지 않은 연결 목록), '참고 자료' 절에 각주 정의 39건 추가 |
+| 2026-10-09-03 | 요약 | [docs/categories/objects-people-and-live-state/index.md](categories/objects-people-and-live-state/index.md) | E. 사물·사람·실시간 상태: '다른 대분류와의 연결' 절 신규 작성(15개 대분류 연결·아직 다루지 않은 연결 목록, f7·f41 강등 반영, 각주 39건 추가) |
+| 2026-10-09-03 | 생성 | [docs/references/ref-1299.md](references/ref-1299.md) | 참고문헌 ref-1299 등록: ST Engineering Aethon Launches Zena RX, Redefining Secure De… |
+| 2026-10-09-03 | 생성 | [docs/references/ref-1300.md](references/ref-1300.md) | 참고문헌 ref-1300 등록: 엘리베이터 타는 배달로봇과의 조우 |
+| 2026-10-09-03 | 생성 | [docs/references/ref-1301.md](references/ref-1301.md) | 참고문헌 ref-1301 등록: 내년 2월 자율주행 로봇이 아파트 내에서 배달 음식 나른다 |
+| 2026-10-09-03 | 생성 | [docs/references/ref-1302.md](references/ref-1302.md) | 참고문헌 ref-1302 등록: Supporting a Human-Aware World Model through Sensor Fusion |
+
 ### 2026-09-30
 
 | 실행 id | 동작 | 페이지 | 요약 |

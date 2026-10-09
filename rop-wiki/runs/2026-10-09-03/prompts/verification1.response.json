@@ -1,0 +1,611 @@
+{
+  "duration_api_ms": 243916,
+  "stop_reason": "tool_use",
+  "session_id": "b2c62282-70bb-5741-8eab-947ffbdd2756",
+  "total_cost_usd": 3.8008343000000013,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 388540,
+    "cache_read_input_tokens": 1147997,
+    "output_tokens": 22004,
+    "output_tokens_details": {
+      "thinking_tokens": 8020
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 388540,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15148,
+        "cache_read_input_tokens": 387176,
+        "cache_creation_input_tokens": 1364,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1364
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 70379,
+      "outputTokens": 11530,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 1,
+      "costUSD": 0.0228029,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 6989,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    },
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 22004,
+      "cacheReadInputTokens": 1147997,
+      "cacheCreationInputTokens": 388540,
+      "webSearchRequests": 0,
+      "costUSD": 3.7780314,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8020,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 12,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"run_id\":\"2026-10-09-03\",\"stage\":\"first\",\"verdict\":\"조건부 승인\",\"claim_checks\":[{\"finding_id\":\"f1\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. factsheet.schema(입력 원문) 필수 항목 loadSpecification과 state.schema loadId 설명(raw 재열람, 'barcode or RFID' 예시)으로 확인. 공통 어휘 부재는 oq-023과 일치.\"},{\"finding_id\":\"f2\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"nature.com은 로그인 리다이렉트로 열지 못함. 검색 결과(PMC·HAL)의 저자·제목·발행일(2025-10-02)·요지(제조사 명세 능력과 실제 성능을 구분·연결하는 RCO, 제조 분야)가 브리프와 일치. 원문 미열람이라 medium 상한, 제조 분야 대상임을 본문에 밝혀야 함.\"},{\"finding_id\":\"f3\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. robot_state.json(입력 원문)의 status·battery·issues·location 필드 확인, oq-024 연결 적절.\"},{\"finding_id\":\"f4\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"Discourse 게시글 열람(게시 2026-06-25, 발표 2026-07-02). MCP 서버가 Open-RMF REST API를 LLM 호출 도구로 노출, 평이한 영어 지시를 다단계 RMF 임무로 바꿔 Open-RMF를 거쳐 Nav2로 보냄, Isaac Sim 창고 시연, 시스템 이름 Nayantra 모두 확인. 발표 안내문이므로 발표 내용 자체는 미확인이며 발표자(@shashank_br)가 시스템 Nayantra를 소개하는 형식임. 상태 질의 기능 언급 없음 확인. 단일 출처 medium.\"},{\"finding_id\":\"f5\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. robot_state.json status 7종·issues·unix_millis_time 확인, MCP 안내문에 상태 질의 언급 없음 재확인.\"},{\"finding_id\":\"f6\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 게시된 19. 사람·보행자 모델 페이지 11절의 추정 문장과 oq-256 재인용. 36. 가상 시운전·실제 상황 재현 연결(34가 아님) 적절.\"},{\"finding_id\":\"f7\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"state.schema raw 재열람: localizationScore·deviationRange(미터) 필드 존재는 사실이나 두 필드 모두 선택 필드이고 스키마가 'Only for logging and visualization purposes'로 적는다. '보고된 위치를 얼마나 믿을지 판단에 쓴다'는 해석은 스키마 의도와 어긋나므로 그 부분은 [추정](ROP 쪽 설계 판단)으로 낮춘다. mapId 설명은 'Unique identification of the map'.\"},{\"finding_id\":\"f8\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. B. 로봇 온톨로지 페이지 연결 절의 같은 추정 재인용(ref-162 원문 미열람, ref-031). oq-029 연결.\"},{\"finding_id\":\"f9\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 5절 물류창고 사례·6절 움직임 지도 정의(2차 수정된 범위 '전형적 움직임 패턴 지도')와 일치. 이번 실행 재열람 없음(ref-1171 원문 미열람, ref-1180 이번 미열람). 용어집 maps-of-dynamics(움직임 지도)와 일치.\"},{\"finding_id\":\"f10\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 5절 병원 사례(조선비즈 2024-07-12, 기사 1건 기준)와 일치. 이번 실행 재열람 없음.\"},{\"finding_id\":\"f11\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"state.schema raw 재열람: loads 설명, loadId('e.g., barcode or RFID', 식별 못 하면 생략 가능), loadPosition(어느 적재 장치를 쓰는지) 확인. GS1 키 형식 미지정은 oq-007과 일치.\"},{\"finding_id\":\"f12\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"입력 원문 ref-023(Full Delivery 절차: DispenserResult·IngestorResult를 받을 때까지 요청 반복)과 ref-049(time·request_guid·source_guid·status ACKNOWLEDGED/SUCCESS/FAILED) 확인. 두 출처는 같은 발행 주체라 독립 교차 확인 아님.\"},{\"finding_id\":\"f13\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. IngestorResult에 화물 식별자·당사자 필드가 없음을 입력 원문으로 확인. ref-014·ref-015 원문 미열람. oq-001·oq-061 연결.\"},{\"finding_id\":\"f14\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"18 페이지 5절 시나리오 2 예외·성과 칸에 게시된 사실(원문 미열람, 소매 매장 조건). 본문에 '소매 매장 조건이며 물류센터 값이 아니다' 단서를 반드시 유지.\"},{\"finding_id\":\"f15\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. loadId·EPCIS errorDeclaration·재고 기록 부정확성 종합 추론, oq-036 연결.\"},{\"finding_id\":\"f16\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"입력 원문 DoorState.msg(door_time, door_name, current_mode)·LiftState.msg(lift_time 'when the information in this message was generated', current_floor, destination_floor, door_state, motion_state, current_mode, session_id) 확인. 두 정의 모두 허용 경과 시간 필드 없음. oq-034 연결.\"},{\"finding_id\":\"f17\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"입력 원문 robot_state.json(unix_millis_time, status 7종, battery 0.0~1.0, issues)과 state.schema timestamp(ISO8601) 확인. 두 출처는 서로 다른 사실을 다룸.\"},{\"finding_id\":\"f18\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. f17 두 시각 표현에서 도출, oq-035 연결.\"},{\"finding_id\":\"f19\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"CBV.ttl 입력 원문에서 arriving·accepting 정의 확인(receiving은 발췌 밖이나 A·B 페이지에 같은 각주로 게시됨). VDA 5050 drop 완료 정의는 A·B 페이지 게시 사실 재인용. 두 출처는 서로 다른 사실을 다룸.\"},{\"finding_id\":\"f20\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"robot_state.json battery 0.0~1.0(입력 원문), state.schema powerSupply.stateOfCharge 'State of Charge in %'(raw 재열람) 확인.\"},{\"finding_id\":\"f21\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. G. 계획·최적화 페이지에 게시된 같은 추정(ref-104 원문 미열람). 18 현재 상태 표현과 34 가정한 미래 실험 구분 유지.\"},{\"finding_id\":\"f22\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 5절 기타(UTBM) 사례 수치와 일치, '매우 작은 표본' 단서 포함. 이번 실행 재열람 없음.\"},{\"finding_id\":\"f23\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 19 페이지 병원·상업 시설 사례에서 효과 수치 미확인으로 게시된 내용과 일치, oq-273 연결.\"},{\"finding_id\":\"f24\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. B. 로봇 온톨로지 페이지 연결 절의 같은 추정 재인용, oq-001·oq-006.\"},{\"finding_id\":\"f25\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 17 페이지 8절·B 페이지 연결 절의 추정 재인용(ref-024 원문 미열람, 2009), oq-003.\"},{\"finding_id\":\"f26\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"이전 브리프 2026-09-25-60 f5의 사실 재인용(ref-492 EPCIS 1.2 원문 미열람). 이번 입력 원문 EPCIS.ttl(ref-045, 2.0)도 ErrorDeclaration이 이전 이벤트를 수정하지 않고 오류로 선언한다고 정의해 내용과 부합. 근거 문구의 '옛 E. 협업·현장 운영' 이름은 본문에 쓰지 않는다.\"},{\"finding_id\":\"f27\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"18 페이지 5절·F. 연동 페이지 연결 절에 같은 각주로 게시된 사실(VDA 5050 3.0.0, 공식 저장소 main 기준).\"},{\"finding_id\":\"f28\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"바이로이트 대학 저장소 열람: 제목·저자·RAAD 2017(Springer, pp. 665-672) 일치. 정보마다 확실도 값을 붙이고 전역 센서가 보고한 사람 존재로 시간에 따라 조정하며 로컬 센서와 결합함을 초록으로 확인. 로컬 센서는 'eye-in-hand' 카메라(손목 카메라 아님). 시제품 실험이며 현장 유형 미명시.\"},{\"finding_id\":\"f29\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. f28이 고정 작업 공간 연구이고 이동로봇 현장 적용 미확인이라는 단서 포함.\"},{\"finding_id\":\"f30\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 18 페이지 10절·B 페이지 연결 절의 추정 재인용(ref-290·ref-291 원문 미열람, 제조 대상). 18·34 구분 원문 규칙과 맞음.\"},{\"finding_id\":\"f31\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 5절(상업 시설)·7절에 게시된 사실. ref-1182 원문 미열람(검색 결과 기준). 가정한 미래 실험(34) 쪽 연결로 서술 적절.\"},{\"finding_id\":\"f32\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 입력 원문 robot_state.json·DoorState·LiftState 필드와 A·B 페이지 같은 추정 종합.\"},{\"finding_id\":\"f33\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"Sparkplug 원문(입력)에서 NDEATH 뒤 지표 STALE 표시 확인. ROS 2 QoS(ref-282, 이번 원문 미열람)와 VDA 5050 MQTT 유언(ref-031)은 B·F 페이지에 같은 각주로 게시된 사실. 세 출처는 각각 한 장치만 다룸.\"},{\"finding_id\":\"f34\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. eventTime·recordTime 구분은 18 페이지 4절 게시 사실, 43 쪽 적용은 추론.\"},{\"finding_id\":\"f35\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 19 페이지 3·6절 추정 재인용(ref-1172 이번 미열람). L. AI·학습 기술 교차 규칙에 따라 46과 적용 대상 19 양쪽 연결.\"},{\"finding_id\":\"f36\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"LiftState.msg 입력 원문: MODE_UNKNOWN~MODE_EMERGENCY 6종, 'We can only set human or agv mode' 확인. 승강기 안전 제어는 원문 19장 시설·설비 제어 경계의 연계 대상으로 서술해야 함.\"},{\"finding_id\":\"f37\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 19 페이지 9절 책임 경계 표 재인용. 사람 검출·안전 정지·국소 회피는 로봇 자체 지능·제어의 연계 대상.\"},{\"finding_id\":\"f38\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"REP-155 raw 재열람: Status Draft, Created 11-Jan-2022, person ID는 고유하고 영구 연결(MUST), 얼굴·몸·음성 ID는 /humans/candidate_matches 후보 대응, 익명 사람 표현 확인. 문서에 privacy·consent·GDPR·personal data 언급 없음 확인.\"},{\"finding_id\":\"f39\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 19 페이지 9절 추정 재인용, oq-261·oq-272 연결.\"},{\"finding_id\":\"f40\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"Newswire 보도자료 열람: ST Engineering Aethon, 2024-04-29, 'biometric security and staff pin codes', 'Only authorized staff can retrieve the delivery', 독립 잠금 칸 4개 확인. 추적·감사 기록·알림 언급 없음 확인. 벤더 주장(vendor_claim true)으로 [추정] 유지, 독립 확인 없음. 잠금·생체 인식은 로봇 제조사 기능(연계 대상).\"},{\"finding_id\":\"f41\",\"source_exists\":true,\"supports_claim\":false,\"cross_checked\":false,\"tag_decision\":\"강등\",\"note\":\"바이라인네트워크 2019-10-17 기사 열람: 잠실 본사 시범, 라이더가 주문번호 앞 네 자리·목적 층 입력, 고객이 전화번호 뒤 네 자리 입력으로 음식칸 개방, 두 승강기 중 먼저 오는 것 호출·자리 없으면 다음 승강기 대기, 배민라이더스 주문만 대상은 확인. 그러나 '고객에게 전화를 걸고'는 기사에 없고 '고객을 호출'로만 나온다. 단일 기사(low)이므로 [추정]으로 낮추고 전화 부분은 삭제.\"},{\"finding_id\":\"f42\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"경향신문 2020-07-03(곽희양) 열람: 포레나 영등포, 30층·182세대·오피스텔 111실, 이듬해 2월 완공, 라이더·고객 모두 로봇 화면 비밀번호로 적재함 개방, 문자·전화 도착 알림 확인. 계획 단계 보도이며 실제 운영 방식은 미확인이라는 단서 필수. 단일 기사 low.\"},{\"finding_id\":\"f43\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. f40~f42 종합. 세 출처 모두 인증 결과의 기록·전송 방식을 다루지 않음 확인(f40 추적·감사 언급 없음). oq-180·oq-184 연결, 해결 아님.\"},{\"finding_id\":\"f44\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 7·8절에 게시된 자료(Francis 외 2023 평가 지침, Vintr 외 2022 벤치마크). 이번 실행 재열람 없음.\"},{\"finding_id\":\"f45\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"arXiv 초록 열람: 이동장애인 15명·실무자 8명 면담, 공동설계 워크숍 4회, 보도 공간 경쟁, 연석 경사로 부족 같은 기존 장벽, 사후 대응 인정, 처음부터 통합 강조 모두 확인(arXiv 2024-04-07, CHI '24). 60 페이지 브리프 f12와 같은 내용이므로 같은 각주 재사용.\"},{\"finding_id\":\"f46\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. 국내 기준 미확인 단서 포함, oq-188 연결.\"},{\"finding_id\":\"f47\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"추정 유지. CBV source/destination 유형은 17 페이지 4절 게시 사실, 58 쪽 적용은 추론.\"},{\"finding_id\":\"f48\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 9절 업종별 조건 행에 연계 대상으로 게시된 사실과 일치. 외부 공공 시스템이므로 '연계 대상'으로 짧게 서술, 로봇 연동 사례 미확인(oq-274).\"},{\"finding_id\":\"f49\",\"source_exists\":true,\"supports_claim\":true,\"cross_checked\":false,\"tag_decision\":\"유지\",\"note\":\"19 페이지 5절의 사례 목록과 일치(실외·제조 공장·가정 사례 없음으로 게시). 세 출처는 서로 다른 사례라 교차 확인 아님.\"}],\"category_fit\":{\"ok\":true,\"reassign_to\":null},\"scope_boundary\":{\"ok\":true,\"issues\":[\"f36: 승강기 화재·비상 모드 제어와 설비 안전 제어는 원문 19장 '시설·설비 제어' 경계의 연계 대상 — ROP는 최신 모드 확인과 작업·경로 제약 반영만 맡는 것으로 서술해야 한다\",\"f37: 사람 검출·안전 정지·국소 회피는 '로봇 자체 지능·제어' 경계의 연계 대상 — ROP는 대기·속도 규칙 요청·관리만으로 서술\",\"f40: 잠금 칸·생체 인식·PIN 인증은 로봇 제조사 기능(연계 대상) — ROP 몫은 인증 결과 수신·기록으로 한정\",\"f48: 행정안전부 인파관리지원시스템은 외부 공공 시스템 — '연계 대상'으로 짧게만 서술\"]},\"duplication\":{\"ok\":true,\"overlaps\":[\"f12·f19·f24·f25·f33·f8은 B. 로봇 온톨로지 페이지(이전 분류 기준) 연결 절과 같은 주장 — 같은 각주 id 재사용\",\"f12·f16·f27·f33은 F. 연동 페이지 연결 절과 같은 주장 — 같은 각주 재사용\",\"f19·f32는 A. 기획·사업 페이지 연결 절과 같은 주장 — 같은 각주 재사용\",\"f21·f36은 G. 계획·최적화 페이지 연결 절과 같은 주장 — 같은 각주 재사용\",\"f9·f10·f22·f31·f37·f44·f48·f49는 19. 사람·보행자 모델 페이지에 게시된 사실·추정의 재인용 — 태그·단서 그대로 유지\",\"f45는 60. 노동·수용성·접근성 브리프(2026-09-30-24) f12와 같은 출처·내용 — ref-1265 각주 재사용\",\"새 열린 질문 1(병원 수령인 인증 결과 기록)은 oq-180(식당·호텔)·oq-184(공동주택)와 주제가 인접하나 현장 유형이 달라 중복 아님 — 본문에서 세 질문을 함께 언급\"]},\"terminology\":{\"ok\":true,\"conflicts\":[]},\"quotation_check\":{\"ok\":false,\"issues\":[\"ref-1299(f40) evidence_excerpt에 직접 인용 두 구절('biometric security and staff pin codes', 'Only authorized staff can retrieve the delivery')이 있음 — 페이지에서는 출처당 직접 인용 1회 이하\",\"ref-051(f7·f11)·ref-286 등 스키마 설명문을 여러 finding에서 원문 그대로 인용 — 페이지에서는 필드 이름만 쓰고 설명은 재서술\"]},\"corrections_applied\":[],\"corrections_rejected\":[],\"required_fixes\":[\"page_proposals 절 이름: 대분류 페이지의 절 제목은 번호 없는 '다른 대분류와의 연결'이다 — patches의 section을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 쓰고 '아직 작성되지 않음(에이전트가 채운다).' 문장을 replace 한다(대분류 정본 제목에 번호가 없다).\",\"참고 자료 절: 연결 절에서 새로 쓰는 각주(ref-014 등 브리프 출처 39건 가운데 실제로 인용한 것)의 정의를 '참고 자료' 절 끝에 append 패치로 더한다 — 현재 이 절에는 ref-003 정의만 있어 각주 정의가 빠진다. 기존 ref-003 줄은 고치지 않는다.\",\"각주 정의 형식: 참고문헌 페이지의 '각주 형식' 줄을 복사하되, 이번 실행에서 원문을 열지 않은 출처(ref-014, ref-015, ref-024, ref-041, ref-104, ref-162, ref-282, ref-290, ref-291, ref-292, ref-492, ref-1079, ref-1128, ref-1171, ref-1172, ref-1177, ref-1178, ref-1179, ref-1180, ref-1181, ref-1182)에 접근일 2026-10-09를 쓰려면 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 해당 항목에 source_unopened: true를 넣는다 — 이번 실행 열람 여부와 각주 표시가 어긋나지 않게 한다.\",\"f7: 'VDA 5050 상태 스키마에 위치추정 품질(localizationScore)·미터 단위 편차 범위(deviationRange)·지도 식별자(mapId)가 있다'는 [사실]로 두되, 앞의 두 필드는 선택 필드이고 스키마가 기록·시각화 용도로만 쓴다고 적는다는 단서를 붙이고, '보고된 위치를 얼마나 믿을지 판단하는 데 쓴다'는 부분은 [추정](ROP 쪽 설계 판단)으로 분리한다 — 스키마가 이 필드를 판단 로직용으로 두지 않는다(ref-051 원문). oq-028을 함께 단다.\",\"f41: '고객에게 전화를 걸고'를 지우고 '목적 층에서 고객을 호출하며'로 고친 뒤 문장 전체를 [추정]으로 낮추고 '기사 1건 기준'을 남긴다 — 바이라인네트워크 기사(ref-1300)에는 전화 방식이 나오지 않는다.\",\"f40: [추정]에 '벤더 주장'을 병기하고(제조사 보도자료, 독립 확인 없음), 잠금 칸·생체 인식·PIN 인증은 로봇 제조사 기능으로 연계 대상이며 ROP 몫은 인증 결과 수신·기록이라는 경계를 같은 항목에 적는다. 이 출처의 직접 인용은 1회 이하로 줄인다.\",\"f42: '2020-07 계획 단계 보도이며 실제 운영 방식은 확인하지 못했다'는 단서를 문장에 넣는다 — 경향신문 기사는 준공 전 도입 계획을 전한다.\",\"f4: 출처가 2026-06-25 게시된 발표 안내문(2026-07-02 Interop SIG)임을 밝히고 Nayantra를 MCP 서버·에이전트로 이루어진 시스템 이름으로 적으며, 상태 질의 기능은 안내문에 없다는 점(f5)과 함께 쓴다 — 발표 내용 자체는 열람하지 않았다.\",\"f2: Naqvi 외 연구가 제조 분야 대상이고 원문 미열람(검색 결과 기준)임을 문장 또는 각주에 밝힌다. B. 로봇 온톨로지 페이지의 같은 출처 연결이 [추정]으로 쓰였으므로, 이 연구의 존재·구분 방식만 [사실]로 쓰고 배정 기준 쟁점은 f3처럼 [추정]으로 둔다.\",\"f14: '한 소매업체 37개 매장 조건이며 물류센터 값이 아니다'라는 단서를 그대로 유지한다(18 페이지 게시 문장과 동일).\",\"f28: 로컬 센서를 '손목 카메라'가 아니라 '손 장착(eye-in-hand) 카메라'로 쓰고, 조립용 시제품 실험이며 현장 유형이 명시되지 않았음을 밝힌다 — 바이로이트 저장소 초록 표현.\",\"f36·f37·f48: 승강기 안전 제어, 사람 검출·안전 정지·국소 회피, 공공 인파관리지원시스템은 원문 19장 경계의 '연계 대상'으로 짧게만 쓰고 ROP 직접 범위처럼 서술하지 않는다.\",\"18·34 구분: f21·f30·f31 연결에서 18. 실시간 세계 상태·데이터 일관성은 현재 상태를 표현하고 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래를 실험한다는 구분을 문장에 유지하고, f6은 34가 아니라 36. 가상 시운전·실제 상황 재현·11. 채팅으로 실제 상황 시뮬레이션 재현과 연결한다.\",\"L. AI·학습 기술 교차 규칙: f35(46. 예측·학습 기반 최적화 ↔ 19. 사람·보행자 모델) 하나만 있음을 밝히고, 45. 문서·도면·장면 이해와 18·19의 연결(oq-227)은 근거가 없어 '아직 다루지 않은 연결'에 넣는다.\",\"명칭 표기: 대분류는 새 17개 대분류의 문자+이름(예: 'H. 실행·협업·예외 복구', 'N. 보안·개인정보')으로만 쓰고, 근거 발췌에 남은 옛 이름('옛 E. 협업·현장 운영', 'B. 공통 정보·환경 모델' 등)과 옛 영역 번호를 본문·도식·링크 텍스트에 쓰지 않는다. 세부영역은 항상 번호와 이름을 함께 쓴다.\",\"인용 길이: 페이지에서 스키마·보도자료 설명문은 필드 이름만 쓰고 재서술하며, 출처당 직접 인용은 1회 이하로 한다(특히 ref-1299, ref-051).\",\"아직 다루지 않은 연결: A. 기획·사업 전체, 18·19 ↔ 45. 문서·도면·장면 이해(oq-227), 17 ↔ 54. 시험·형식 검증·벤치마크·55. 현장 조사·설치·시운전·57. 자산·소프트웨어 수명주기 관리, 37. 관제 화면·실행 기록·40. 운영 절차·요청 창구, 52. 통신 보호·위협 관리·감사, 59. 법·규제·보험·라이선스를 별도 소절로 적는다.\",\"중복 연결: A·B·F·G 대분류 페이지에 이미 같은 각주로 실린 연결(f8·f12·f16·f19·f21·f24·f25·f27·f32·f33·f36)은 새 각주를 만들지 않고 같은 ref id를 쓰며, 같은 연결이 상대 대분류 페이지에도 있음을 링크로 밝힌다.\",\"open_questions_new: 두 항목을 그대로 등록하되, 질문 1의 본문 언급 위치에서 인접한 oq-180·oq-184를 함께 링크한다. oq-180·oq-184는 해결로 바꾸지 않는다(f41·f42는 인증 수단만 부분 근거, 완료 이벤트 기록 미확인).\"],\"confidence\":\"medium\",\"verification_note\":\"판정: 조건부 승인. 확인 47건, 미확인 2건, 교차 확인 0건. 강등: f7 사실 → 위치 신뢰 판단 부분만 추정(VDA 5050 스키마가 localizationScore·deviationRange를 기록·시각화 용도의 선택 필드로 둠), f41 사실 → 추정(기사에 '전화' 방식 없음, 해당 부분 삭제). 원문 미열람 출처: ref-014, ref-015, ref-024, ref-041, ref-104, ref-162, ref-282, ref-290, ref-291, ref-292, ref-492, ref-1079, ref-1128, ref-1171, ref-1172, ref-1177, ref-1178, ref-1179, ref-1180, ref-1181, ref-1182(이번 실행 기준, 다수는 게시 페이지 재인용). 주의: 연결의 절반 가까이가 추정이고 사실 주장도 모두 단일 출처라 교차 확인이 없다. 수령인 확인 사례 셋(병원 Zena RX는 벤더 주장, 사무 건물·공동주택 딜리타워는 2019·2020 기사 1건씩, 공동주택은 계획 단계)은 인증 결과를 업무 시스템에 기록하는 방식을 다루지 않는다. A. 기획·사업과 45. 문서·도면·장면 이해 연결은 근거가 없다. 검증은 원문 9건 열람(Discourse·Newswire·바이라인네트워크·경향신문·바이로이트 대학 저장소·REP-155·VDA 5050 state.schema·arXiv)과 검색 1회(Naqvi 외, nature.com 열람 실패)로 했다. 정정 요청 없음.\",\"retry_reason\":null}",
+  "structured_output": {
+    "run_id": "2026-10-09-03",
+    "stage": "first",
+    "verdict": "조건부 승인",
+    "claim_checks": [
+      {
+        "finding_id": "f1",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. factsheet.schema(입력 원문) 필수 항목 loadSpecification과 state.schema loadId 설명(raw 재열람, 'barcode or RFID' 예시)으로 확인. 공통 어휘 부재는 oq-023과 일치."
+      },
+      {
+        "finding_id": "f2",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "nature.com은 로그인 리다이렉트로 열지 못함. 검색 결과(PMC·HAL)의 저자·제목·발행일(2025-10-02)·요지(제조사 명세 능력과 실제 성능을 구분·연결하는 RCO, 제조 분야)가 브리프와 일치. 원문 미열람이라 medium 상한, 제조 분야 대상임을 본문에 밝혀야 함."
+      },
+      {
+        "finding_id": "f3",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. robot_state.json(입력 원문)의 status·battery·issues·location 필드 확인, oq-024 연결 적절."
+      },
+      {
+        "finding_id": "f4",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "Discourse 게시글 열람(게시 2026-06-25, 발표 2026-07-02). MCP 서버가 Open-RMF REST API를 LLM 호출 도구로 노출, 평이한 영어 지시를 다단계 RMF 임무로 바꿔 Open-RMF를 거쳐 Nav2로 보냄, Isaac Sim 창고 시연, 시스템 이름 Nayantra 모두 확인. 발표 안내문이므로 발표 내용 자체는 미확인이며 발표자(@shashank_br)가 시스템 Nayantra를 소개하는 형식임. 상태 질의 기능 언급 없음 확인. 단일 출처 medium."
+      },
+      {
+        "finding_id": "f5",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. robot_state.json status 7종·issues·unix_millis_time 확인, MCP 안내문에 상태 질의 언급 없음 재확인."
+      },
+      {
+        "finding_id": "f6",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 게시된 19. 사람·보행자 모델 페이지 11절의 추정 문장과 oq-256 재인용. 36. 가상 시운전·실제 상황 재현 연결(34가 아님) 적절."
+      },
+      {
+        "finding_id": "f7",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "state.schema raw 재열람: localizationScore·deviationRange(미터) 필드 존재는 사실이나 두 필드 모두 선택 필드이고 스키마가 'Only for logging and visualization purposes'로 적는다. '보고된 위치를 얼마나 믿을지 판단에 쓴다'는 해석은 스키마 의도와 어긋나므로 그 부분은 [추정](ROP 쪽 설계 판단)으로 낮춘다. mapId 설명은 'Unique identification of the map'."
+      },
+      {
+        "finding_id": "f8",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. B. 로봇 온톨로지 페이지 연결 절의 같은 추정 재인용(ref-162 원문 미열람, ref-031). oq-029 연결."
+      },
+      {
+        "finding_id": "f9",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 5절 물류창고 사례·6절 움직임 지도 정의(2차 수정된 범위 '전형적 움직임 패턴 지도')와 일치. 이번 실행 재열람 없음(ref-1171 원문 미열람, ref-1180 이번 미열람). 용어집 maps-of-dynamics(움직임 지도)와 일치."
+      },
+      {
+        "finding_id": "f10",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 5절 병원 사례(조선비즈 2024-07-12, 기사 1건 기준)와 일치. 이번 실행 재열람 없음."
+      },
+      {
+        "finding_id": "f11",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "state.schema raw 재열람: loads 설명, loadId('e.g., barcode or RFID', 식별 못 하면 생략 가능), loadPosition(어느 적재 장치를 쓰는지) 확인. GS1 키 형식 미지정은 oq-007과 일치."
+      },
+      {
+        "finding_id": "f12",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "입력 원문 ref-023(Full Delivery 절차: DispenserResult·IngestorResult를 받을 때까지 요청 반복)과 ref-049(time·request_guid·source_guid·status ACKNOWLEDGED/SUCCESS/FAILED) 확인. 두 출처는 같은 발행 주체라 독립 교차 확인 아님."
+      },
+      {
+        "finding_id": "f13",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. IngestorResult에 화물 식별자·당사자 필드가 없음을 입력 원문으로 확인. ref-014·ref-015 원문 미열람. oq-001·oq-061 연결."
+      },
+      {
+        "finding_id": "f14",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "18 페이지 5절 시나리오 2 예외·성과 칸에 게시된 사실(원문 미열람, 소매 매장 조건). 본문에 '소매 매장 조건이며 물류센터 값이 아니다' 단서를 반드시 유지."
+      },
+      {
+        "finding_id": "f15",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. loadId·EPCIS errorDeclaration·재고 기록 부정확성 종합 추론, oq-036 연결."
+      },
+      {
+        "finding_id": "f16",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "입력 원문 DoorState.msg(door_time, door_name, current_mode)·LiftState.msg(lift_time 'when the information in this message was generated', current_floor, destination_floor, door_state, motion_state, current_mode, session_id) 확인. 두 정의 모두 허용 경과 시간 필드 없음. oq-034 연결."
+      },
+      {
+        "finding_id": "f17",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "입력 원문 robot_state.json(unix_millis_time, status 7종, battery 0.0~1.0, issues)과 state.schema timestamp(ISO8601) 확인. 두 출처는 서로 다른 사실을 다룸."
+      },
+      {
+        "finding_id": "f18",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. f17 두 시각 표현에서 도출, oq-035 연결."
+      },
+      {
+        "finding_id": "f19",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "CBV.ttl 입력 원문에서 arriving·accepting 정의 확인(receiving은 발췌 밖이나 A·B 페이지에 같은 각주로 게시됨). VDA 5050 drop 완료 정의는 A·B 페이지 게시 사실 재인용. 두 출처는 서로 다른 사실을 다룸."
+      },
+      {
+        "finding_id": "f20",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "robot_state.json battery 0.0~1.0(입력 원문), state.schema powerSupply.stateOfCharge 'State of Charge in %'(raw 재열람) 확인."
+      },
+      {
+        "finding_id": "f21",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. G. 계획·최적화 페이지에 게시된 같은 추정(ref-104 원문 미열람). 18 현재 상태 표현과 34 가정한 미래 실험 구분 유지."
+      },
+      {
+        "finding_id": "f22",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 5절 기타(UTBM) 사례 수치와 일치, '매우 작은 표본' 단서 포함. 이번 실행 재열람 없음."
+      },
+      {
+        "finding_id": "f23",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 19 페이지 병원·상업 시설 사례에서 효과 수치 미확인으로 게시된 내용과 일치, oq-273 연결."
+      },
+      {
+        "finding_id": "f24",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. B. 로봇 온톨로지 페이지 연결 절의 같은 추정 재인용, oq-001·oq-006."
+      },
+      {
+        "finding_id": "f25",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 17 페이지 8절·B 페이지 연결 절의 추정 재인용(ref-024 원문 미열람, 2009), oq-003."
+      },
+      {
+        "finding_id": "f26",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "이전 브리프 2026-09-25-60 f5의 사실 재인용(ref-492 EPCIS 1.2 원문 미열람). 이번 입력 원문 EPCIS.ttl(ref-045, 2.0)도 ErrorDeclaration이 이전 이벤트를 수정하지 않고 오류로 선언한다고 정의해 내용과 부합. 근거 문구의 '옛 E. 협업·현장 운영' 이름은 본문에 쓰지 않는다."
+      },
+      {
+        "finding_id": "f27",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "18 페이지 5절·F. 연동 페이지 연결 절에 같은 각주로 게시된 사실(VDA 5050 3.0.0, 공식 저장소 main 기준)."
+      },
+      {
+        "finding_id": "f28",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "바이로이트 대학 저장소 열람: 제목·저자·RAAD 2017(Springer, pp. 665-672) 일치. 정보마다 확실도 값을 붙이고 전역 센서가 보고한 사람 존재로 시간에 따라 조정하며 로컬 센서와 결합함을 초록으로 확인. 로컬 센서는 'eye-in-hand' 카메라(손목 카메라 아님). 시제품 실험이며 현장 유형 미명시."
+      },
+      {
+        "finding_id": "f29",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. f28이 고정 작업 공간 연구이고 이동로봇 현장 적용 미확인이라는 단서 포함."
+      },
+      {
+        "finding_id": "f30",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 18 페이지 10절·B 페이지 연결 절의 추정 재인용(ref-290·ref-291 원문 미열람, 제조 대상). 18·34 구분 원문 규칙과 맞음."
+      },
+      {
+        "finding_id": "f31",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 5절(상업 시설)·7절에 게시된 사실. ref-1182 원문 미열람(검색 결과 기준). 가정한 미래 실험(34) 쪽 연결로 서술 적절."
+      },
+      {
+        "finding_id": "f32",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 입력 원문 robot_state.json·DoorState·LiftState 필드와 A·B 페이지 같은 추정 종합."
+      },
+      {
+        "finding_id": "f33",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "Sparkplug 원문(입력)에서 NDEATH 뒤 지표 STALE 표시 확인. ROS 2 QoS(ref-282, 이번 원문 미열람)와 VDA 5050 MQTT 유언(ref-031)은 B·F 페이지에 같은 각주로 게시된 사실. 세 출처는 각각 한 장치만 다룸."
+      },
+      {
+        "finding_id": "f34",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. eventTime·recordTime 구분은 18 페이지 4절 게시 사실, 43 쪽 적용은 추론."
+      },
+      {
+        "finding_id": "f35",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 19 페이지 3·6절 추정 재인용(ref-1172 이번 미열람). L. AI·학습 기술 교차 규칙에 따라 46과 적용 대상 19 양쪽 연결."
+      },
+      {
+        "finding_id": "f36",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "LiftState.msg 입력 원문: MODE_UNKNOWN~MODE_EMERGENCY 6종, 'We can only set human or agv mode' 확인. 승강기 안전 제어는 원문 19장 시설·설비 제어 경계의 연계 대상으로 서술해야 함."
+      },
+      {
+        "finding_id": "f37",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 19 페이지 9절 책임 경계 표 재인용. 사람 검출·안전 정지·국소 회피는 로봇 자체 지능·제어의 연계 대상."
+      },
+      {
+        "finding_id": "f38",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "REP-155 raw 재열람: Status Draft, Created 11-Jan-2022, person ID는 고유하고 영구 연결(MUST), 얼굴·몸·음성 ID는 /humans/candidate_matches 후보 대응, 익명 사람 표현 확인. 문서에 privacy·consent·GDPR·personal data 언급 없음 확인."
+      },
+      {
+        "finding_id": "f39",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 19 페이지 9절 추정 재인용, oq-261·oq-272 연결."
+      },
+      {
+        "finding_id": "f40",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "Newswire 보도자료 열람: ST Engineering Aethon, 2024-04-29, 'biometric security and staff pin codes', 'Only authorized staff can retrieve the delivery', 독립 잠금 칸 4개 확인. 추적·감사 기록·알림 언급 없음 확인. 벤더 주장(vendor_claim true)으로 [추정] 유지, 독립 확인 없음. 잠금·생체 인식은 로봇 제조사 기능(연계 대상)."
+      },
+      {
+        "finding_id": "f41",
+        "source_exists": true,
+        "supports_claim": false,
+        "cross_checked": false,
+        "tag_decision": "강등",
+        "note": "바이라인네트워크 2019-10-17 기사 열람: 잠실 본사 시범, 라이더가 주문번호 앞 네 자리·목적 층 입력, 고객이 전화번호 뒤 네 자리 입력으로 음식칸 개방, 두 승강기 중 먼저 오는 것 호출·자리 없으면 다음 승강기 대기, 배민라이더스 주문만 대상은 확인. 그러나 '고객에게 전화를 걸고'는 기사에 없고 '고객을 호출'로만 나온다. 단일 기사(low)이므로 [추정]으로 낮추고 전화 부분은 삭제."
+      },
+      {
+        "finding_id": "f42",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "경향신문 2020-07-03(곽희양) 열람: 포레나 영등포, 30층·182세대·오피스텔 111실, 이듬해 2월 완공, 라이더·고객 모두 로봇 화면 비밀번호로 적재함 개방, 문자·전화 도착 알림 확인. 계획 단계 보도이며 실제 운영 방식은 미확인이라는 단서 필수. 단일 기사 low."
+      },
+      {
+        "finding_id": "f43",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. f40~f42 종합. 세 출처 모두 인증 결과의 기록·전송 방식을 다루지 않음 확인(f40 추적·감사 언급 없음). oq-180·oq-184 연결, 해결 아님."
+      },
+      {
+        "finding_id": "f44",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 7·8절에 게시된 자료(Francis 외 2023 평가 지침, Vintr 외 2022 벤치마크). 이번 실행 재열람 없음."
+      },
+      {
+        "finding_id": "f45",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "arXiv 초록 열람: 이동장애인 15명·실무자 8명 면담, 공동설계 워크숍 4회, 보도 공간 경쟁, 연석 경사로 부족 같은 기존 장벽, 사후 대응 인정, 처음부터 통합 강조 모두 확인(arXiv 2024-04-07, CHI '24). 60 페이지 브리프 f12와 같은 내용이므로 같은 각주 재사용."
+      },
+      {
+        "finding_id": "f46",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. 국내 기준 미확인 단서 포함, oq-188 연결."
+      },
+      {
+        "finding_id": "f47",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "추정 유지. CBV source/destination 유형은 17 페이지 4절 게시 사실, 58 쪽 적용은 추론."
+      },
+      {
+        "finding_id": "f48",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 9절 업종별 조건 행에 연계 대상으로 게시된 사실과 일치. 외부 공공 시스템이므로 '연계 대상'으로 짧게 서술, 로봇 연동 사례 미확인(oq-274)."
+      },
+      {
+        "finding_id": "f49",
+        "source_exists": true,
+        "supports_claim": true,
+        "cross_checked": false,
+        "tag_decision": "유지",
+        "note": "19 페이지 5절의 사례 목록과 일치(실외·제조 공장·가정 사례 없음으로 게시). 세 출처는 서로 다른 사례라 교차 확인 아님."
+      }
+    ],
+    "category_fit": {
+      "ok": true,
+      "reassign_to": null
+    },
+    "scope_boundary": {
+      "ok": true,
+      "issues": [
+        "f36: 승강기 화재·비상 모드 제어와 설비 안전 제어는 원문 19장 '시설·설비 제어' 경계의 연계 대상 — ROP는 최신 모드 확인과 작업·경로 제약 반영만 맡는 것으로 서술해야 한다",
+        "f37: 사람 검출·안전 정지·국소 회피는 '로봇 자체 지능·제어' 경계의 연계 대상 — ROP는 대기·속도 규칙 요청·관리만으로 서술",
+        "f40: 잠금 칸·생체 인식·PIN 인증은 로봇 제조사 기능(연계 대상) — ROP 몫은 인증 결과 수신·기록으로 한정",
+        "f48: 행정안전부 인파관리지원시스템은 외부 공공 시스템 — '연계 대상'으로 짧게만 서술"
+      ]
+    },
+    "duplication": {
+      "ok": true,
+      "overlaps": [
+        "f12·f19·f24·f25·f33·f8은 B. 로봇 온톨로지 페이지(이전 분류 기준) 연결 절과 같은 주장 — 같은 각주 id 재사용",
+        "f12·f16·f27·f33은 F. 연동 페이지 연결 절과 같은 주장 — 같은 각주 재사용",
+        "f19·f32는 A. 기획·사업 페이지 연결 절과 같은 주장 — 같은 각주 재사용",
+        "f21·f36은 G. 계획·최적화 페이지 연결 절과 같은 주장 — 같은 각주 재사용",
+        "f9·f10·f22·f31·f37·f44·f48·f49는 19. 사람·보행자 모델 페이지에 게시된 사실·추정의 재인용 — 태그·단서 그대로 유지",
+        "f45는 60. 노동·수용성·접근성 브리프(2026-09-30-24) f12와 같은 출처·내용 — ref-1265 각주 재사용",
+        "새 열린 질문 1(병원 수령인 인증 결과 기록)은 oq-180(식당·호텔)·oq-184(공동주택)와 주제가 인접하나 현장 유형이 달라 중복 아님 — 본문에서 세 질문을 함께 언급"
+      ]
+    },
+    "terminology": {
+      "ok": true,
+      "conflicts": []
+    },
+    "quotation_check": {
+      "ok": false,
+      "issues": [
+        "ref-1299(f40) evidence_excerpt에 직접 인용 두 구절('biometric security and staff pin codes', 'Only authorized staff can retrieve the delivery')이 있음 — 페이지에서는 출처당 직접 인용 1회 이하",
+        "ref-051(f7·f11)·ref-286 등 스키마 설명문을 여러 finding에서 원문 그대로 인용 — 페이지에서는 필드 이름만 쓰고 설명은 재서술"
+      ]
+    },
+    "corrections_applied": [],
+    "corrections_rejected": [],
+    "required_fixes": [
+      "page_proposals 절 이름: 대분류 페이지의 절 제목은 번호 없는 '다른 대분류와의 연결'이다 — patches의 section을 '5. 다른 대분류와의 연결'이 아니라 '다른 대분류와의 연결'로 쓰고 '아직 작성되지 않음(에이전트가 채운다).' 문장을 replace 한다(대분류 정본 제목에 번호가 없다).",
+      "참고 자료 절: 연결 절에서 새로 쓰는 각주(ref-014 등 브리프 출처 39건 가운데 실제로 인용한 것)의 정의를 '참고 자료' 절 끝에 append 패치로 더한다 — 현재 이 절에는 ref-003 정의만 있어 각주 정의가 빠진다. 기존 ref-003 줄은 고치지 않는다.",
+      "각주 정의 형식: 참고문헌 페이지의 '각주 형식' 줄을 복사하되, 이번 실행에서 원문을 열지 않은 출처(ref-014, ref-015, ref-024, ref-041, ref-104, ref-162, ref-282, ref-290, ref-291, ref-292, ref-492, ref-1079, ref-1128, ref-1171, ref-1172, ref-1177, ref-1178, ref-1179, ref-1180, ref-1181, ref-1182)에 접근일 2026-10-09를 쓰려면 접근일 뒤에 ' (원문 미열람)'을 붙이고, reference_updates의 해당 항목에 source_unopened: true를 넣는다 — 이번 실행 열람 여부와 각주 표시가 어긋나지 않게 한다.",
+      "f7: 'VDA 5050 상태 스키마에 위치추정 품질(localizationScore)·미터 단위 편차 범위(deviationRange)·지도 식별자(mapId)가 있다'는 [사실]로 두되, 앞의 두 필드는 선택 필드이고 스키마가 기록·시각화 용도로만 쓴다고 적는다는 단서를 붙이고, '보고된 위치를 얼마나 믿을지 판단하는 데 쓴다'는 부분은 [추정](ROP 쪽 설계 판단)으로 분리한다 — 스키마가 이 필드를 판단 로직용으로 두지 않는다(ref-051 원문). oq-028을 함께 단다.",
+      "f41: '고객에게 전화를 걸고'를 지우고 '목적 층에서 고객을 호출하며'로 고친 뒤 문장 전체를 [추정]으로 낮추고 '기사 1건 기준'을 남긴다 — 바이라인네트워크 기사(ref-1300)에는 전화 방식이 나오지 않는다.",
+      "f40: [추정]에 '벤더 주장'을 병기하고(제조사 보도자료, 독립 확인 없음), 잠금 칸·생체 인식·PIN 인증은 로봇 제조사 기능으로 연계 대상이며 ROP 몫은 인증 결과 수신·기록이라는 경계를 같은 항목에 적는다. 이 출처의 직접 인용은 1회 이하로 줄인다.",
+      "f42: '2020-07 계획 단계 보도이며 실제 운영 방식은 확인하지 못했다'는 단서를 문장에 넣는다 — 경향신문 기사는 준공 전 도입 계획을 전한다.",
+      "f4: 출처가 2026-06-25 게시된 발표 안내문(2026-07-02 Interop SIG)임을 밝히고 Nayantra를 MCP 서버·에이전트로 이루어진 시스템 이름으로 적으며, 상태 질의 기능은 안내문에 없다는 점(f5)과 함께 쓴다 — 발표 내용 자체는 열람하지 않았다.",
+      "f2: Naqvi 외 연구가 제조 분야 대상이고 원문 미열람(검색 결과 기준)임을 문장 또는 각주에 밝힌다. B. 로봇 온톨로지 페이지의 같은 출처 연결이 [추정]으로 쓰였으므로, 이 연구의 존재·구분 방식만 [사실]로 쓰고 배정 기준 쟁점은 f3처럼 [추정]으로 둔다.",
+      "f14: '한 소매업체 37개 매장 조건이며 물류센터 값이 아니다'라는 단서를 그대로 유지한다(18 페이지 게시 문장과 동일).",
+      "f28: 로컬 센서를 '손목 카메라'가 아니라 '손 장착(eye-in-hand) 카메라'로 쓰고, 조립용 시제품 실험이며 현장 유형이 명시되지 않았음을 밝힌다 — 바이로이트 저장소 초록 표현.",
+      "f36·f37·f48: 승강기 안전 제어, 사람 검출·안전 정지·국소 회피, 공공 인파관리지원시스템은 원문 19장 경계의 '연계 대상'으로 짧게만 쓰고 ROP 직접 범위처럼 서술하지 않는다.",
+      "18·34 구분: f21·f30·f31 연결에서 18. 실시간 세계 상태·데이터 일관성은 현재 상태를 표현하고 34. 시뮬레이션·예측용 디지털 트윈은 가정한 미래를 실험한다는 구분을 문장에 유지하고, f6은 34가 아니라 36. 가상 시운전·실제 상황 재현·11. 채팅으로 실제 상황 시뮬레이션 재현과 연결한다.",
+      "L. AI·학습 기술 교차 규칙: f35(46. 예측·학습 기반 최적화 ↔ 19. 사람·보행자 모델) 하나만 있음을 밝히고, 45. 문서·도면·장면 이해와 18·19의 연결(oq-227)은 근거가 없어 '아직 다루지 않은 연결'에 넣는다.",
+      "명칭 표기: 대분류는 새 17개 대분류의 문자+이름(예: 'H. 실행·협업·예외 복구', 'N. 보안·개인정보')으로만 쓰고, 근거 발췌에 남은 옛 이름('옛 E. 협업·현장 운영', 'B. 공통 정보·환경 모델' 등)과 옛 영역 번호를 본문·도식·링크 텍스트에 쓰지 않는다. 세부영역은 항상 번호와 이름을 함께 쓴다.",
+      "인용 길이: 페이지에서 스키마·보도자료 설명문은 필드 이름만 쓰고 재서술하며, 출처당 직접 인용은 1회 이하로 한다(특히 ref-1299, ref-051).",
+      "아직 다루지 않은 연결: A. 기획·사업 전체, 18·19 ↔ 45. 문서·도면·장면 이해(oq-227), 17 ↔ 54. 시험·형식 검증·벤치마크·55. 현장 조사·설치·시운전·57. 자산·소프트웨어 수명주기 관리, 37. 관제 화면·실행 기록·40. 운영 절차·요청 창구, 52. 통신 보호·위협 관리·감사, 59. 법·규제·보험·라이선스를 별도 소절로 적는다.",
+      "중복 연결: A·B·F·G 대분류 페이지에 이미 같은 각주로 실린 연결(f8·f12·f16·f19·f21·f24·f25·f27·f32·f33·f36)은 새 각주를 만들지 않고 같은 ref id를 쓰며, 같은 연결이 상대 대분류 페이지에도 있음을 링크로 밝힌다.",
+      "open_questions_new: 두 항목을 그대로 등록하되, 질문 1의 본문 언급 위치에서 인접한 oq-180·oq-184를 함께 링크한다. oq-180·oq-184는 해결로 바꾸지 않는다(f41·f42는 인증 수단만 부분 근거, 완료 이벤트 기록 미확인)."
+    ],
+    "confidence": "medium",
+    "verification_note": "판정: 조건부 승인. 확인 47건, 미확인 2건, 교차 확인 0건. 강등: f7 사실 → 위치 신뢰 판단 부분만 추정(VDA 5050 스키마가 localizationScore·deviationRange를 기록·시각화 용도의 선택 필드로 둠), f41 사실 → 추정(기사에 '전화' 방식 없음, 해당 부분 삭제). 원문 미열람 출처: ref-014, ref-015, ref-024, ref-041, ref-104, ref-162, ref-282, ref-290, ref-291, ref-292, ref-492, ref-1079, ref-1128, ref-1171, ref-1172, ref-1177, ref-1178, ref-1179, ref-1180, ref-1181, ref-1182(이번 실행 기준, 다수는 게시 페이지 재인용). 주의: 연결의 절반 가까이가 추정이고 사실 주장도 모두 단일 출처라 교차 확인이 없다. 수령인 확인 사례 셋(병원 Zena RX는 벤더 주장, 사무 건물·공동주택 딜리타워는 2019·2020 기사 1건씩, 공동주택은 계획 단계)은 인증 결과를 업무 시스템에 기록하는 방식을 다루지 않는다. A. 기획·사업과 45. 문서·도면·장면 이해 연결은 근거가 없다. 검증은 원문 9건 열람(Discourse·Newswire·바이라인네트워크·경향신문·바이로이트 대학 저장소·REP-155·VDA 5050 state.schema·arXiv)과 검색 1회(Naqvi 외, nature.com 열람 실패)로 했다. 정정 요청 없음.",
+    "retry_reason": null
+  },
+  "ttft_ms": 46294,
+  "type": "result",
+  "duration_ms": 213203,
+  "uuid": "51cc202b-33b9-4dcf-9cba-8e5fcc202259",
+  "ttft_stream_ms": 1277,
+  "time_to_request_ms": 168,
+  "time_to_request_phases_ms": {
+    "other": 26,
+    "system_prompt": 14,
+    "resume_other": 0,
+    "process_user_input": 11,
+    "input_attachments": 64,
+    "input_hooks": 4,
+    "tool_pool_refresh": 3,
+    "init_message": 6,
+    "engine_pickup": 1,
+    "message_prep": 1,
+    "model_config_wait": 1,
+    "autocompact": 2,
+    "query_setup": 1,
+    "model_gates": 0,
+    "tool_schema_build": 7,
+    "message_normalization": 3,
+    "client_creation": 6,
+    "request_build": 18
+  },
+  "turn_start_resume_kind": "none",
+  "process_turn_index": 0,
+  "time_to_request_loop_lag_ms": 66,
+  "time_to_request_cpu_ms": 234,
+  "time_to_request_major_faults": 0,
+  "input_attachments_detail": {
+    "slowest_producer": "at_mentioned_files",
+    "slowest_producer_ms": 30,
+    "cpu_ms": 91,
+    "major_faults": 0
+  },
+  "first_content_frame_ms": 1277,
+  "time_to_request_from_spawn_ms": 790355,
+  "warm_spare_claimed": false,
+  "flag_fetch_kick": "not_asked_warm",
+  "time_origin_ms": 1791507057743.4905,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "_exit_code": 0,
+  "_elapsed_sec": 214.6
+}

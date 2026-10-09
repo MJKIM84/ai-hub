@@ -16,7 +16,7 @@ version: 1
 ## 지표
 
 <!-- auto:metrics:start -->
-기준일: 2026-09-30
+기준일: 2026-10-09
 
 ### 영역별 페이지 상태 분포
 
@@ -196,9 +196,9 @@ version: 1
 
 ### 검증 통과율
 
-- 실행 129회 중 최종 통과 127회 (통과율 98%)
-- 1차 검증 판정: 조건부 승인 127, None 2
-- 2차 검증 판정: 통과 127, None 2
+- 실행 130회 중 최종 통과 128회 (통과율 98%)
+- 1차 검증 판정: 조건부 승인 128, None 2
+- 2차 검증 판정: 통과 128, None 2
 
 ### 반려·보류 건수
 
@@ -209,27 +209,27 @@ version: 1
 
 | 유형 | 건수 |
 |---|---|
-| 논문 | 532 |
+| 논문 | 533 |
 | 오픈소스 문서 | 215 |
 | 표준 | 180 |
 | 정부·연구기관 | 109 |
-| 기사 | 105 |
-| 벤더 문서 | 71 |
+| 기사 | 107 |
+| 벤더 문서 | 72 |
 | 업계 보고서 | 26 |
 
-신뢰도: medium 895건, high 237건, low 106건
+신뢰도: medium 896건, high 237건, low 109건
 
 ### 현장 유형 매트릭스 채움률
 
-- 74/119 칸 (62%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
+- 75/119 칸 (63%) — [현장 유형 × 대분류 적용 사례 매트릭스](site-matrix.md)
 
 ### 마지막 갱신이 오래된 영역 상위 5
 
 | 세부영역 | 마지막 갱신 | 경과일 | 상태 |
 |---|---|---|---|
-| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 5 | published |
-| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 5 | published |
-| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 5 | published |
-| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 5 | published |
-| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 5 | published |
+| [5. 로봇 능력·작업 표현](categories/robot-ontology/robot-capability-and-task-representation.md) | 2026-09-25 | 14 | published |
+| [15. 지도·공간·위치 모델](categories/space-and-map-model/map-space-and-location-model.md) | 2026-09-25 | 14 | published |
+| [17. 작업 대상·자산 식별과 인계 추적](categories/objects-people-and-live-state/work-object-and-asset-identification-and-handover-tracking.md) | 2026-09-25 | 14 | published |
+| [18. 실시간 세계 상태·데이터 일관성](categories/objects-people-and-live-state/real-time-world-state-and-data-consistency.md) | 2026-09-25 | 14 | published |
+| [20. 로봇·제조사 관제 연동](categories/integration/robot-and-vendor-fleet-manager-integration.md) | 2026-09-25 | 14 | published |
 <!-- auto:metrics:end -->
